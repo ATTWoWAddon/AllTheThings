@@ -171,6 +171,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 					}),
 				},
 			}),
+			q(25286, {	-- Words for Delivery (for level 75 and below)
+				["sourceQuest"] = 25283,	-- Prepping the Speech
+				["altQuests"] = { 25500 },	-- Words for Delivery (1/2)
+				["providers"] = {
+					{ "n", 39678 },	-- Toby Zeigear
+					{ "i", 52731 },	-- Mekkatorque's Speech
+				},
+				["coord"] = { 49.32, 48.27, DUN_MOROGH },
+			}),
 			q(25500, {	-- Words for Delivery (1/2)
 				["sourceQuest"] = 25283,	-- Prepping the Speech
 				["altQuests"] = { 25286 },	-- Words for Delivery (for level 75 and below)

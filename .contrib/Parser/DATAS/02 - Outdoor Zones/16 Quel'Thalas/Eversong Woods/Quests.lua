@@ -421,7 +421,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 250888 },	-- Solwin Brightstitch
 						["coord"] = { 46.9, 35.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
-							i(258127),	-- Pattern: Blood Elf Drapery (RECIPE!)
+							i(258127),	-- Pattern: Silvermoon Curtains (RECIPE!)
 						},
 					}),
 					---

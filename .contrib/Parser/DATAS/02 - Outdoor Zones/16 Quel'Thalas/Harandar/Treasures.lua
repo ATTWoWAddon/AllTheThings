@@ -5,6 +5,7 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.HARANDAR, {
 		n(TREASURES, {
+			i(259362),	-- Pattern: Haranir Canopy Bed (RECIPE!)
 			header(HEADERS.Achievement, 61052, {	-- Dust 'Em Off
 				--Renown 2 set of Glowing Moth (some of them could be wrong)
 				--Alex: there should be 120 in total, whoever do this in Blizz - was it fun to implement this?
@@ -367,13 +368,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.HARANDAR, {
-			n(TREASURES, {
-				-- Temp placement, will/should move to a proper achievement header
-				q(94550),	-- Triggered after interracting with 'Vista Point' (didn't get an objectID) at 53.5, 58.6. Part of the achievement Harandar: The Highest Peaks
-			}),
-		}),
-	}),
-}));
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+-- 	m(MAP.MIDNIGHT.QUELTHALAS, {
+-- 		m(MAP.MIDNIGHT.HARANDAR, {
+-- 			n(TREASURES, {
+
+-- 			}),
+-- 		}),
+-- 	}),
+-- }));

@@ -4524,6 +4524,7 @@ i(250142, 4882);	-- Azure Sporebat
 i(250148, 4879);	-- Blistercreepling
 i(260942, 4951);	-- Bubbly Snapling
 i(205017, 3519);	-- Byrn
+i(246314, 4974);	-- Dali
 i(238793, 4790);	-- Devouring Runt
 i(250143, 4883);	-- Dragonhawk Mosswing
 i(259224, 4928);	-- Dragonhawk Munchkin
@@ -4546,6 +4547,8 @@ i(232856, 4633);	-- Scruff
 i(250147, 4886);	-- Silkcrawler
 i(258660, 4912);	-- Silvermoon Broom
 i(269028, 5012);	-- Sootpaw
+i(262390, 4953);	-- Sporbie
+i(267838, 5003);	-- Sunwing Hatchling
 i(250140, 4880);	-- Swamp Biter
 i(251001, 4890);	-- Vibrant Manaling
 i(250138, 4877);	-- Violet Chick
@@ -4581,7 +4584,6 @@ i(251002, 4889);	-- Nether Familia
 i(262392, 4961);	-- Nibblesworth
 i(240840, 4803);	-- Niblet
 i(262391, 4958);	-- Ominous Dominus
-i(246314, 4974);	-- Painter Frog
 i(258903, 4927);	-- Percival
 i(260730, 4948);	-- Perturbed Sporebat
 i(262763, 4964);	-- Plump Mandrake
@@ -4590,11 +4592,9 @@ i(265609, 4985);	-- Princess Bloodshed
 i(264366, 4975);	-- Razeshi C.
 i(262343, 4960);	-- Saka'saka
 i(262769, 4966);	-- Screechy Mandrake
-i(262390, 4953);	-- Sporbie
 i(262342, 4956);	-- Spormilian
 i(0, 4943);			-- Star the Lucky Dragon
 i(251004, 3364);	-- Striped Snakebiter
-i(267838, 5003);	-- Sunwing Hatchling
 i(259337, 4929);	-- Vermillion Grovecrawler
 i(264434, 4976);	-- Voldy
 i(221495, 4497);	-- Waddles

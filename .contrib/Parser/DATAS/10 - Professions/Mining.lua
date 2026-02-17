@@ -1455,6 +1455,13 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			}),
 		}),--]]
 		n(TREASURES, {
+			o(525908, {	-- Amani Expert's Chisel
+				["coord"] = { 33.3, 65.9, 2536 },	-- Atal'Aman Outdoor
+				["questID"] = 89149,
+				["groups"] = {
+					i(238601),	-- Amani Expert's Chisel
+				},
+			}),
 			o(525909, {	-- Glimmering Void Pearl
 				["coord"] = { 28.8, 38.5, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 89148,
@@ -1474,6 +1481,13 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				["questID"] = 89144,
 				["groups"] = {
 					i(238596),	-- Miner's Guide to Voidstorm
+				},
+			}),
+			o(525910, {	-- Solid Ore Punchers
+				["coord"] = { 38.0, 45.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89147,
+				["groups"] = {
+					i(238599),	-- Solid Ore Punchers
 				},
 			}),
 			o(525906, {	-- Spare Expedition Torch

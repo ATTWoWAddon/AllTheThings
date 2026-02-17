@@ -879,6 +879,9 @@ MID_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		r(1236075),	-- Enchant Shoulders - Nature's Grace
 		r(1236090),	-- Enchant Shoulders - Thalassian Recovery
 	}),
+	filter(CONSUMABLES, {
+		r(1236491),	-- Thalassian Phoenix Oil
+	}),
 	n(DECOR, {
 		r(1246904),	-- Ensorcelled Broom
 		r(1246905),	-- Font of Gleaming Water
@@ -887,7 +890,6 @@ MID_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		r(1280401),	-- Dawn Shatter
 		r(1236098),	-- Illusory Adornment - Blooming Light
 		r(1280394),	-- Radiant Shatter
-		r(1236491),	-- Thalassian Phoenix Oil
 	}),
 	filter(PROFESSION_EQUIPMENT, {
 		r(1236486),	-- Runed Refulgent Copper Rod

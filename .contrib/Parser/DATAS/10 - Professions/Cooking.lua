@@ -654,9 +654,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42795, {	-- Cooking at Midnight
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
-				["groups"] = {
-				},
+				i(263999),	-- Midnight Cook's Shop Sign (DECOR!)
 			}),
 		}),
 	})),

@@ -1044,12 +1044,6 @@ MID_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		r(1229866),	-- Evercore Wrist Latch
 		r(1229862),	-- Evercore Zoomshroud
 	}),
-	filter(MISC, {
-		r(1229858),	-- Consistent Cogwheel
-		r(1229859),	-- Flux Cogwheel
-		r(1229857),	-- Greased Cogwheel
-		r(1229856),	-- Perfected Cogwheel
-	}),
 	filter(PROFESSION_EQUIPMENT, {
 		r(1229898),	-- Farstrider Clampers
 		r(1229900),	-- Farstrider Fabric Cutters
@@ -1060,6 +1054,10 @@ MID_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		r(1229896),	-- Junker's Multitool
 	}),
 	filter(REAGENTS, {
+		r(1229858),	-- Consistent Cogwheel
+		r(1229859),	-- Flux Cogwheel
+		r(1229857),	-- Greased Cogwheel
+		r(1229856),	-- Perfected Cogwheel
 		r(1229755),	-- Song Gear
 		r(1229853),	-- Soul Sprocket
 	}),

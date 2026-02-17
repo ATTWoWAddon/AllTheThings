@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92404,
 				["groups"] = {
 					i(264621),	-- Bad Zed's Worst Channeler
+					i(264536),	-- Zedling Summoning Collar
 				},
 			}),
 			n(250826, {	-- Banuran
@@ -29,6 +30,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92366,
 				["groups"] = {
 					i(264560),	-- Sharpclaw Gauntlets
+					i(264543),	-- Snapdragon Pantaloons
 				},
 			}),
 			n(250683, {	-- Coralfang
@@ -42,6 +44,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 63.2, 50.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 92391,
 				["groups"] = {
+					i(265027),	-- Lucky Lynx Locket
 					i(264573),	-- Taskmaster's Sadistic Shoulderguards
 				},
 			}),
@@ -50,12 +53,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 93561,
 				["groups"] = {
 					i(264624),	-- Fang of the Dame
+					i(265027),	-- Lucky Lynx Locket
 				},
 			}),
 			n(255302, {	-- Duskburn
 				["coord"] = { 42.3, 69.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 93550,
 				["groups"] = {
+					--i(251791),	-- Holy Retributor's Order
 					i(264569),	-- Void-Gorged Kickers
 				},
 			}),
@@ -78,6 +83,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 59.1, 79.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 92399,
 				["groups"] = {
+					i(251788),	-- Gift of Light
 					i(264575),	-- Hexwood Helm
 				},
 			}),
@@ -108,12 +114,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 91280,
 				["groups"] = {
 					i(264613),	-- Steelbark Bulwark
+					i(264520),	-- Warden's Leycrook
 				},
 			}),
 			n(250780, {	-- Waverly
 				["cr"] = 250788,	-- Lovely Sunflower
 				["coord"] = { 34.8, 21.0, MAP.MIDNIGHT.EVERSONG_WOODS },
-				["questID"] = 89580,
+				["questID"] = 89580,	-- TODO: Blizzard bug - share questID with Tiny Vermin rare
 				["groups"] = {
 					i(264608),	-- String of Lovely Blossoms
 				},
@@ -125,6 +132,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			n(RARES, {
+				q(94690, {	-- Weekly reputation: Bad Zed
+					["name"] = "Bad Zed weekly reputation obtained.",
+				}),
 				q(94692, {	-- Weekly reputation: Banuran
 					["name"] = "Banuran weekly reputation obtained.",
 				}),
@@ -157,6 +167,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				}),
 				q(94684, {	-- Weekly reputation: Overfester Hydra
 					["name"] = "Overfester Hydra weekly reputation obtained.",
+				}),
+				q(94689, {	-- Weekly reputation: Terrinor
+					["name"] = "Terrinor weekly reputation obtained.",
 				}),
 				q(94681, {	-- Weekly reputation: Warden of Weeds
 					["name"] = "Warden of Weeds weekly reputation obtained.",

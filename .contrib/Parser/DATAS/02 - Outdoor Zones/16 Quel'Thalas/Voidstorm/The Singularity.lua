@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				title(753, {	-- <Name>, the Singular
 					["minReputation"] = { FACTION_THE_SINGULARITY, 20 },
 				}),
-				--[[n(QUESTS, sharedData({
+				n(QUESTS, sharedData({
 					["provider"] = { "n", 248328 },	-- Void Researcher Anomander <Renown Quartermaster>
 					["coord"] = { 52.6, 72.9, MAP.MIDNIGHT.VOIDSTORM },
 				}, bubbleDownRep(FACTION_THE_SINGULARITY, {
@@ -24,6 +24,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --
 					}, {	-- RENOWN 4 --
+						q(94469),	-- A Handful of Voidlight Marl
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
 					}, {	-- RENOWN 7 --
@@ -42,7 +43,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 20 --
 						------ Paragon ------
 					},
-				}))),--]]
+				}))),
 				n(VENDORS, {
 					n(248328, {	-- Void Researcher Anomander <Renown Quartermaster>
 						["coord"] = { 52.6, 72.9, MAP.MIDNIGHT.VOIDSTORM },

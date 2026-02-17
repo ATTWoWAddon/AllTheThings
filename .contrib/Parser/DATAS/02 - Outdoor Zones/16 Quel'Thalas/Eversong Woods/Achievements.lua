@@ -69,9 +69,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--["coord"] = { X, Y, Z },
 			})),
 			ach(61957),	-- Sojourner of Eversong Woods
-			ach(62186, {	-- The Party Must Go On
-				i(251909),	-- Eversong Feast Platter (DECOR!)
-			}),
 			pvp(ach(61221)),	-- Tour of Duty: Eversong Woods
 			ach(61960, {	-- Treasures of Eversong Woods
 				i(269028),	-- Sootpaw (PET!)

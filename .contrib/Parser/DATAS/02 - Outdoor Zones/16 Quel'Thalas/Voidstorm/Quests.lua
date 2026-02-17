@@ -1112,6 +1112,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--spell(1225312),	-- Amassing Voidlust
 				},
 			}),
+			q(94790, {	-- Research Console: Exploring the Void
+				["sourceQuests"] = { 93970 },	-- Researching the Storm
+				["provider"] = { "n", 248328 },	-- Void Researcher Anomander
+				["coord"] = { 52.6, 72.9, MAP.MIDNIGHT.VOIDSTORM },
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(3400),	-- Uncontaminated Void Sample
+				},
+			}),
 			--questchainID 6001 (A More Potent Foe) TODO: bugged in 63967, could be dh only but something vent wrong?
 			--'This Questline contains the story of Leona Darkstrider becoming the first Devourer Demon Hunter'
 			q(92505, {	-- Truth of the Past
@@ -1171,6 +1180,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isDaily"] = true,
 				["groups"] = {
 					i(262967),	-- Domanaar Dueling Flag (QI!)
+				},
+			}),
+			-- Voidforge
+			q(94623, {	-- Building the Voidforge
+				--["sourceQuests"] = { ??? },	-- ???
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				["groups"] = {
+					--spell(1276894),	-- Transmute Elemental Voidcore
+					--spell(1277384),	-- The Voidforge
+					i(265695),	-- Elementary Voidcore Shard (QI!)
+				},
+			}),
+			q(94625, {	-- An Elementary Voidcore
+				["sourceQuests"] = { 94623 },	-- Building the Voidforge
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				--["isWeekly"] = true,	-- TODO: likely will be on live
+				["repeatable"] = true,	-- TODO: beta only?
+				["groups"] = {
+					--spell(1276894),	-- Transmute Elemental Voidcore
+					i(265695),	-- Elementary Voidcore Shard (QI!)
 				},
 			}),
 		}),

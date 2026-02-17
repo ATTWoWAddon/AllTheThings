@@ -1550,7 +1550,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198246, {	-- Khaz'gorite Encased Samophlange
 				["requireSkill"] = ENGINEERING,
 				-- #if AFTER 12.0.0
-				["collectible"] = false,
+				["ItemAppearanceModifierID"] = 6
 				-- #endif
 			}),
 			i(198234, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Draconium Clamps
@@ -3013,7 +3013,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193485, {	-- Protective Gloves
 				["requireSkill"] = ENGINEERING,
 				-- #if AFTER 12.0.0
-				["collectible"] = false,
+				["ItemAppearanceModifierID"] = 6
 				-- #endif
 			}),
 			i(193489, {["requireSkill"] = SKINNING}),	-- Reinforced Pack

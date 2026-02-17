@@ -2627,3 +2627,121 @@ i(257033, 1261081);	-- Blackrock Bunkbed
 i(257058, 1261122);	-- Orcish Sleeping Cot
 --- NYI---
 i(0, 1269498);		-- Snowfall Tribe Scare-Totem
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471012);		-- Midnight Leatherworking
+i(0, 1237560);		-- Apprentice Jeweler's Apron
+i(0, 1237551);		-- Apprentice Smith's Apron
+i(0, 1265672);		-- Artisan Leatherworker's Moxie
+i(0, 1237548);		-- Chemist's Cap
+i(0, 1265681);		-- Concentration
+i(0, 1246937);		-- Embossed Sin'dorei Fur Rug
+i(0, 1237557);		-- Eversong Botanist's Satchel
+i(0, 1237563);		-- Hideworker's Cover
+i(0, 1237573);		-- Infused Scalewoven Hide
+i(0, 1265707);		-- Ingenuity
+i(0, 1265620);		-- Knowledge
+i(0, 1246938);		-- Leather-Bound Haranir Wall Shelf
+i(0, 1265607);		-- Multicraft
+i(0, 1265657);		-- Quality
+i(0, 471046);		-- Recraft Equipment
+i(0, 1265699);		-- Resourcefulness
+i(0, 1237572);		-- Scalewoven Hide
+i(0, 1237530);		-- Scout's Polished Gauntlets
+i(0, 1237532);		-- Scout's Polished Legguards
+i(0, 1237531);		-- Scout's Polished Skullcap
+i(0, 1237533);		-- Scout's Polished Spaulders
+i(0, 1237534);		-- Scout's Polished Wrap
+i(0, 1237529);		-- Scout's Scaled Boots
+i(0, 1237535);		-- Scout's Scaled Bracers
+i(0, 1237528);		-- Scout's Scaled Vest
+i(0, 1237575);		-- Silvermoon Weapon Wrap
+i(0, 1237574);		-- Sin'dorei Armor Banding
+i(0, 1265691);		-- Skill
+i(0, 1237566);		-- Skinner's Backpack
+i(0, 1237569);		-- Skinner's Cap
+i(0, 1237500);		-- Smuggler's Leather Footpads
+i(0, 1237499);		-- Smuggler's Leather Tunic
+i(0, 1237506);		-- Smuggler's Leather Wristbands
+i(0, 1237505);		-- Smuggler's Reinforced Binding
+i(0, 1237501);		-- Smuggler's Reinforced Gloves
+i(0, 1237502);		-- Smuggler's Reinforced Hood
+i(0, 1237503);		-- Smuggler's Reinforced Pants
+i(0, 1237504);		-- Smuggler's Reinforced Shoulderguards
+i(0, 1265665);		-- Sparks
+i(0, 1237546);		-- Thalassian Scout Armor Kit
+i(0, 1237554);		-- Tinker's Handguard
+i(0, 1237547);		-- Void-touched Drums
+--- ITEM ---
+i(256637, 1237516);	-- Axe-Flingin' Bands
+i(256645, 1237577);	-- Blessed Pango Charm
+i(256669, 1237570);	-- Eversong Hunter's Headcover
+i(256647, 1237544);	-- Forest Hunter's Armor Kit
+i(259362, 1246939);	-- Haranir Canopy Bed
+i(256625, 1237489);	-- Hexwoven Strand
+i(259365, 1246943);	-- Plush Haranir Leather Pillow
+i(256642, 1237578);	-- Primal Spore Binding
+i(256653, 1237515);	-- Ranger-General's Grips
+i(256636, 1237486);	-- Row Walker's Deflectors
+i(256640, 1237487);	-- Row Walker's Insurance
+i(256638, 1237488);	-- Row Walker's Swiftgrips
+i(259457, 1246940);	-- Simple Haranir Table
+i(256655, 1237549);	-- Sin'dorei Alchemist's Hat
+i(256660, 1237555);	-- Sin'dorei Engineer's Gloves
+i(256659, 1237552);	-- Sin'dorei Forgemaster's Cover
+i(256662, 1237558);	-- Sin'dorei Herbalist's Backpack
+i(256666, 1237567);	-- Sin'dorei Hunter's Pack
+i(256670, 1237561);	-- Sin'dorei Jeweler's Cover
+i(256665, 1237564);	-- Sin'dorei Leathershaper's Smock
+i(259371, 1246941);	-- Stitched Haranir Rug
+i(259368, 1246942);	-- Sturdy Haranir Chair
+i(256658, 1237550);	-- Thalassian Alchemist's Mixcap
+i(256646, 1237523);	-- Thalassian Competitor's Chain Cowl
+i(256654, 1237527);	-- Thalassian Competitor's Chain Cuffs
+i(256644, 1237525);	-- Thalassian Competitor's Chain Epaulets
+i(256649, 1237526);	-- Thalassian Competitor's Chain Girdle
+i(256643, 1237522);	-- Thalassian Competitor's Chain Grips
+i(256641, 1237524);	-- Thalassian Competitor's Chain Leggings
+i(256633, 1237521);	-- Thalassian Competitor's Chain Stompers
+i(256634, 1237520);	-- Thalassian Competitor's Chain Tunic
+i(256631, 1237496);	-- Thalassian Competitor's Leather Belt
+i(256626, 1237490);	-- Thalassian Competitor's Leather Boots
+i(256627, 1237491);	-- Thalassian Competitor's Leather Chestpiece
+i(256628, 1237492);	-- Thalassian Competitor's Leather Gloves
+i(256632, 1237493);	-- Thalassian Competitor's Leather Mask
+i(256630, 1237495);	-- Thalassian Competitor's Leather Shoulderpads
+i(256629, 1237494);	-- Thalassian Competitor's Leather Trousers
+i(256635, 1237497);	-- Thalassian Competitor's Leather Wristwraps
+i(256667, 1237562);	-- Thalassian Gemshaper's Grand Cover
+i(256663, 1237559);	-- Thalassian Herbtender's Cradle
+i(256668, 1237565);	-- Thalassian Hideshaper's Regalia
+i(256657, 1237553);	-- Thalassian Ironbender's Regalia
+i(256661, 1237556);	-- Thalassian Scrapmaster's Gauntlets
+i(256664, 1237571);	-- Thalassian Wildseeker's Stridercap
+i(256671, 1237568);	-- Thalassian Wildseeker's Workbag
+i(256656, 1237519);	-- World Tender's Barkclasp
+i(256650, 1237518);	-- World Tender's Rootslippers
+i(256652, 1237517);	-- World Tender's Trunkplate
+i(256639, 1237498);	-- World Tree Rootwraps
+--- SPECIALIZATION ---
+i(0, 1237545);		-- Blood Knight's Armor Kit
+i(0, 1237579);		-- Devouring Banding
+i(0, 1237541);		-- Farstrider's Brilliant Plumes
+i(0, 1237543);		-- Farstrider's Plated Bracers
+i(0, 1237537);		-- Farstrider's Razor Talons
+i(0, 1237540);		-- Farstrider's Reinforced Faulds
+i(0, 1237536);		-- Farstrider's Scouting Vest
+i(0, 1237538);		-- Farstrider's Sharpened Claws
+i(0, 1237542);		-- Farstrider's Trophy Belt
+i(0, 1237539);		-- Farstrider's Unwavering Visage
+i(0, 1237507);		-- Silvermoon Agent's Coat
+i(0, 1237510);		-- Silvermoon Agent's Cover
+i(0, 1237514);		-- Silvermoon Agent's Deflectors
+i(0, 1237509);		-- Silvermoon Agent's Handwraps
+i(0, 1237511);		-- Silvermoon Agent's Leggings
+i(0, 1237512);		-- Silvermoon Agent's Mantle
+i(0, 1237508);		-- Silvermoon Agent's Sneakers
+i(0, 1237513);		-- Silvermoon Agent's Utility Belt

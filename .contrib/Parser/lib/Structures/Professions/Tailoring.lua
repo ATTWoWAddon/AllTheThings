@@ -1083,3 +1083,77 @@ TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(446929),	-- Weavercloth Bolt
 	}),
 });
+MID_TAILORING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+	r(471015),	-- Midnight Tailoring
+	r(1265674),	-- Artisan Tailor's Moxie
+	r(1265682),	-- Concentration
+	r(1265708),	-- Ingenuity
+	r(1265621),	-- Knowledge
+	r(1265608),	-- Multicraft
+	r(1265658),	-- Quality
+	r(471047),	-- Recraft Equipment
+	r(1265700),	-- Resourcefulness
+	r(1265683),	-- Skill
+	r(1265666),	-- Sparks
+	n(ARMOR, {
+		r(1228953),	-- Courtly Belt
+		r(1228958),	-- Courtly Cloak
+		r(1228952),	-- Courtly Gloves
+		r(1228951),	-- Courtly Helm
+		r(1228956),	-- Courtly Pants
+		r(1228955),	-- Courtly Robes
+		r(1228959),	-- Courtly Shoulders
+		r(1228957),	-- Courtly Slippers
+		r(1228954),	-- Courtly Wrists
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(1228976),	-- Bright Linen Spellthread
+	}),
+	filter(BAGS, {
+		r(1228979),	-- Arcanoweave Reagent Rucksack
+		r(1228978),	-- Bright Linen Reagent Satchel
+		r(1228977),	-- Imbued Bright Linen Backpack
+		r(1228980),	-- Sunfire Silk Backpack
+	}),
+	filter(COSMETIC, {
+		r(1280545),	-- Blood-Tempered Cape
+		r(1280544),	-- Farstrider's Embroidered Cover
+		r(1280543),	-- Scout's Cape
+		r(1280542),	-- Silvermoon Agent's Drape
+		r(1280541),	-- Smuggler's Cloak
+		r(1280546),	-- Spellbreaker's Shroud
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(1228968),	-- Bright Linen Alchemy Apron
+		r(1228970),	-- Bright Linen Enchanting Hat
+		r(1228971),	-- Bright Linen Fishing Hat
+		r(1228972),	-- Bright Linen Herbalism Hat
+		r(1228973),	-- Bright Linen Tailoring Robe
+		r(1228969),	-- Chef's Bright Linen Cooking Chapeau
+	}),
+	filter(MISC, {
+		r(1228941),	-- Bright Linen Bandage
+	}),
+	filter(REAGENTS, {
+		r(1228939),	-- Bright Linen Bolt
+		r(1228940),	-- Imbued Bright Linen Bolt
+	}),
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

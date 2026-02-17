@@ -41,8 +41,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		--	["lore"] = "Located on the surface of Khaz Algar, the Isle of Dorn is a lush and verdant paradise with sweeping vistas, cascading waterfalls, and majestic mountains. It is also the ancestral home to the titan-forged Earthen—a race made of living stone imbued with the essence of Azeroth's worldsoul.",
 			["timeline"] = { ADDED_12_0_X_LAUNCH },
 			["maps"] = {
-				2526,	-- Voidlands_Micro_Abundance_A
-				2527,	-- Voidlands_Micro_Abundance_B
+				2526,	-- Lair of Predaxas
+				2527,	-- Lair of Predaxas
 			},
 		}),
 		m(MAP.MIDNIGHT.ZULAMAN, {

@@ -947,3 +947,57 @@ i(248013, 1245993);	-- Dornic Mine and Cheese Platter
 i(260556, 1266560);	-- Hungry Human's Platter
 --- NYI ---
 i(0, 1245945);		-- [DNT] TWW Cooking Decor Template
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471005);		-- Midnight Cooking
+i(0, 1226183);		-- Arcano Cutlets
+i(0, 1226194);		-- Argentleaf Tea
+i(0, 1226197);		-- Azeroot Tea
+i(0, 1226192);		-- Bloodthistle-Wrapped Cutlets
+i(0, 1226198);		-- Bloom Skewers
+i(0, 1226169);		-- Blooming Feast
+i(0, 1226172);		-- Braised Blood Hunter
+i(0, 1226176);		-- Buttered Root Crab
+i(0, 1226170);		-- Champion's Bento
+i(0, 1226173);		-- Crimson Calamari
+i(0, 1226188);		-- Eversong Pudding
+i(0, 1226166);		-- Farstrider Rations
+i(0, 1226182);		-- Fel-Kissed Filet
+i(0, 1226190);		-- Felberry Figs
+i(0, 1226202);		-- Forager's Medley
+i(0, 1226187);		-- Fried Bloomtail
+i(0, 1226177);		-- Glitter Skewers
+i(0, 1226175);		-- Harandar Celebration
+i(0, 1226191);		-- Hearthflame Supper
+i(0, 1232247);		-- Hearty Feast
+i(0, 1226167);		-- Hearty Food
+i(0, 1259654);		-- Impossibly Royal Roast
+i(0, 1226193);		-- Mana Lily Tea
+i(0, 1226199);		-- Mana-Infused Stew
+i(0, 1265601);		-- Multicraft
+i(0, 1226178);		-- Null and Void Plate
+i(0, 1226204);		-- Portable Snack
+i(0, 1226168);		-- Quel'dorei Medley
+i(0, 1226203);		-- Quick Sandwich
+i(0, 1265693);		-- Resourcefulness
+i(0, 1226171);		-- Royal Roast
+i(0, 1226195);		-- Sanguithorn Tea
+i(0, 1257796);		-- Silvermoon Parade
+i(0, 1226201);		-- Silvermoon Standard
+i(0, 1265687);		-- Skill
+i(0, 1226185);		-- Spellfire Filet
+i(0, 1226200);		-- Spiced Biscuits
+i(0, 1226179);		-- Sun-Seared Lumifin
+i(0, 1226189);		-- Sunwell Delight
+i(0, 1226174);		-- Tasty Smoked Tetra
+i(0, 1259655);		-- Thalassian Filet
+i(0, 1226196);		-- Tranquility Bloom Tea
+i(0, 1226184);		-- Twilight Angler's Medley
+i(0, 1226180);		-- Void-Kissed Fish Rolls
+i(0, 1226181);		-- Warped Wise Wings
+i(0, 1226186);		-- Wise Tails
+--- ITEM ---
+i(263473, 1259660);	-- Flora Frenzy

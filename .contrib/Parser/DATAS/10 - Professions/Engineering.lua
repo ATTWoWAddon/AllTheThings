@@ -1461,7 +1461,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			o(525938, {	-- Handy Wrench
-				["coord"] = { 34.2, 87.8, MAP.MIDNIGHT.ZUL_AMAN },
+				["coord"] = { 34.2, 87.8, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 89140,
 				["groups"] = {
 					i(238563),	-- Handy Wrench

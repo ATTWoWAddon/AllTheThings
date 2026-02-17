@@ -120,6 +120,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(262586),	-- Primeval Arcane Remnant (QI!/QS!)
 		}),
 		filter(RECIPES, {
+			i(259366),	-- Design: Replica Haranir Mural (RECIPE!)
+			i(256718),	-- Design: Stabilizing Gemstone Bandolier (RECIPE!)
 			i(256747),	-- Formula: Enchant Boots - Shaladrassil's Roots (RECIPE!)
 			i(256738),	-- Formula: Enchant Helm - Empowered Hex of Leeching (RECIPE!)
 			i(256753),	-- Formula: Enchant Helm - Empowered Rune of Avoidance (RECIPE!)
@@ -127,6 +129,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(256748),	-- Formula: Enchant Shoulders - Amirdrassil's Grace (RECIPE!)
 			i(256740),	-- Formula: Enchant Shoulders - Akil'zon's Swiftness (RECIPE!)
 			i(259370),	-- Formula: Rootflame Campfire (RECIPE!)
+			i(258126),	-- Pattern: Arcanoweave Cord (RECIPE!)
+			i(256637),	-- Pattern: Axe-Flingin' Bands (RECIPE!)
+			i(259365),	-- Pattern: Plush Haranir Leather Pillow (RECIPE!)
+			i(256638),	-- Pattern: Row Walker's Swiftgrips (RECIPE!)
+			i(258025),	-- Pattern: Sunfire Silk Lining (RECIPE!)
+			i(256650),	-- Pattern: World Tender's Rootslippers (RECIPE!)
 			i(247425),	-- Recipe: Riftstone (RECIPE!)
 			i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)
 		}),
@@ -356,15 +364,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						i(252265),	-- Hexed Potatoad Mucus (TOY!)
 					},
 				}),
-
 			}),
 			n(REWARDS, {
+				filter(COSMETIC, {
+					i(264855),	-- Vilebranch Deathseer (COSMETIC!)
+				}),
 				n(DECOR, {
 					i(267009),	-- Amani Training Dummy (DECOR!)
 					i(264258),	-- Blossoming Forge (DECOR!)
 					i(263042),	-- Rootlight Lamppost (DECOR!)
 				}),
 				filter(MISC, {
+					i(262965),	-- Delver's Delight (TODO: should be questID)
 				}),
 			}),
 		},
@@ -400,7 +411,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
+				filter(BATTLE_PETS, {
+					i(262390),	-- Sporbie (PET!)
+				}),
 				n(DECOR, {
+					i(264329),	-- Amani Dining Table (DECOR!)
 					i(264330),	-- Amani Hanging Brazier (DECOR!)
 					i(267009),	-- Amani Training Dummy (DECOR!)
 					i(264258),	-- Blossoming Forge (DECOR!)
@@ -472,10 +487,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						i(245526),	-- Bloodmarked Phasebound Visor (COSMETIC!)
 					},
 				}),
-				--o(XXXX, {	-- Sturdy Chest	-- TODO: missing objectID
-				--	["coord"] = { 39.0, 41.9, SHADOWGUARD_POINT },	-- TODO: coords off, since data from delve when map was missing
-				--	["questID"] = 94025,
-				--}),
+				o(618281, {	-- Sturdy Chest
+					["coord"] = { 58.2, 41.5, SHADOWGUARD_POINT },
+					["questID"] = 94025,
+				}),
+				o(618295, {	-- Sturdy Chest
+					["coord"] = { 58.6, 60.4, SHADOWGUARD_POINT },
+					["questID"] = 94044,
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
@@ -483,6 +502,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 				filter(COSMETIC, {
 					i(264848),	-- Sunlit Vinepouch (COSMETIC!)
+					i(264854),	-- Vilebranch Soulseer (COSMETIC!)
 				}),
 				filter(MISC, {
 				}),
@@ -526,7 +546,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(264329),	-- Amani Dining Table (DECOR!)
 					i(264330),	-- Amani Hanging Brazier (DECOR!)
+					i(267009),	-- Amani Training Dummy (DECOR!)
 				}),
 				filter(COSMETIC, {
 					i(264851),	-- Voidtouched Twilight Spaulder (COSMETIC!)

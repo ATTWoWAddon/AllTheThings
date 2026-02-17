@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--			}),
 			--		},
 			--	}),
+			q(93899),	-- Slayer's Rise (TODO: Picked up from adventure journal, diidn't find proper source for it)
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 254971 },	-- Zerella
@@ -59,8 +60,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(256634),	-- Pattern: Thalassian Competitor's Chain Tunic (RECIPE!)
 							i(256880),	-- Pattern: Thalassian Competitor's Cloth Bands (RECIPE!)
 							i(256891),	-- Pattern: Thalassian Competitor's Cloth Cloak (RECIPE!)
-							i(256888),	-- Pattern: Thalassian Competitor's Cloth Hood (RECIPE!)
 							i(256887),	-- Pattern: Thalassian Competitor's Cloth Gloves (RECIPE!)
+							i(256888),	-- Pattern: Thalassian Competitor's Cloth Hood (RECIPE!)
 							i(256889),	-- Pattern: Thalassian Competitor's Cloth Leggings (RECIPE!)
 							i(256884),	-- Pattern: Thalassian Competitor's Cloth Sash (RECIPE!)
 							i(256890),	-- Pattern: Thalassian Competitor's Cloth Shoulderpads (RECIPE!)

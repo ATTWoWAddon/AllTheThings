@@ -1026,7 +1026,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			o(525947, {	-- Loa-Blessed Dust
-				["coord"] = { 40.4, 51.1, MAP.MIDNIGHT.ZUL_AMAN },
+				["coord"] = { 40.4, 51.1, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 89106,
 				["groups"] = {
 					i(238554),	-- Loa-Blessed Dust

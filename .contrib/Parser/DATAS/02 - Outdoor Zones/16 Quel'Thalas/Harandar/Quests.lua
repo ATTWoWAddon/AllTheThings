@@ -1241,14 +1241,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			-- WANTED
 			q(91998, {	-- WANTED: Muckmire's Choking Vines
-				--["sourceQuests"] = { X },	-- 
+				--["sourceQuests"] = { X },	--
 				["qg"] = 249361,	-- Shul'ka Li'tya
 				["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
 				["isWeekly"] = true,	-- Probably? Blue !
 				["groups"] = { i(249404) },	-- Choking Vines (QI!)
 			}),
 			q(91982, {	-- WANTED: Toadshade's Petals
-				--["sourceQuests"] = { X },	-- 
+				--["sourceQuests"] = { X },	--
 				["qg"] = 249361,	-- Shul'ka Li'tya
 				["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
 				["isWeekly"] = true,	-- Probably? Blue !

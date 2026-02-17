@@ -76,9 +76,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(256660),	-- Pattern: Sin'dorei Engineer's Gloves (RECIPE!)
 							i(256659),	-- Pattern: Sin'dorei Forgemaster's Cover (RECIPE!)
 							i(256662),	-- Pattern: Sin'dorei Herbalist's Backpack (RECIPE!)
+							i(256666),	-- Pattern: Sin'dorei Hunter's Pack (RECIPE!)
 							i(256670),	-- Pattern: Sin'dorei Jeweler's Cover (RECIPE!)
 							i(256665),	-- Pattern: Sin'dorei Leathershaper's Smock (RECIPE!)
-							i(256666),	-- Pattern: Sin'dorei Hunter's Pack (RECIPE!)
 							i(259371),	-- Pattern: Stitched Haranir Rug (RECIPE!)
 							i(259368),	-- Pattern: Sturdy Haranir Chair (RECIPE!)
 							i(256658),	-- Pattern: Thalassian Alchemist's Mixcap (RECIPE!)
@@ -313,33 +313,34 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(241451, {	-- Eriden <Blacksmithing Supplies>
 					["coord"] = { 43.6, 51.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(243060),	-- Luminant Flux
 						i(263998, {	-- Midnight Blacksmith's Shop Sign (DECOR!)
 							["sourceAchievement"] = 42792,	-- Blacksmithing at Midnight
 						}),
+						i(243060),	-- Luminant Flux
 					},
 				}),
 			}),
-			--[[
 			prof(COOKING, {
-				n(219104, {	-- Athodas <Cooking Trainer>
-					["coord"] = { 44.2, 45.8, DORNOGAL },
-					["groups"] = TWW_COOKING,
+				n(257913, {	-- Sylann <Cooking Trainer>
+					["coord"] = { 56.4, 69.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_COOKING,
 				}),
-				n(219103, {	-- Kronzon <Cooking Supplies>
-					["coord"] = { 43.6, 45.6, DORNOGAL },
+				n(257914, {	-- Quelis <Cooking Supplies>
+					["coord"] = { 56.4, 69.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(222701),	-- Clumped Flour
-						i(222697),	-- Coreway Dust
-						i(222696),	-- Crunchy Peppers
-						i(224762),	-- Delver's Waterskin
-						i(222700),	-- Granulated Spices
-						i(222699),	-- Khaz Algar Tomato
-						i(222695),	-- Twined Herbs
+						i(263999, {	-- Midnight Cook's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42795,	-- Cooking at Midnight
+						}),
+						i(242643),	-- A Big Ol' Stick of Butter
+						i(242641),	-- Cooking Spirits
+						i(242644),	-- Mana-Wyrm Essence
+						i(242646),	-- Pouch of Spices
+						i(242645),	-- Ripened Vegetable Assortment
+						i(242647),	-- Tavern Fixings
+						i(242642),	-- Thalassian Herbs
 					},
 				}),
 			}),
-			--]]
 			prof(ENCHANTING, {
 				n(254051, {	-- Jennara <Proprietress of Positively Jenchanting>
 					["coord"] = { 39.5, 51.0, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -367,10 +368,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(241453, {	-- Yatheon <Engineering Supplies>
 					["coord"] = { 43.5, 53.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(253302),	-- Malleable Warframe
 						i(264001, {	-- Midnight Engineer's Shop Sign (DECOR!)
 							["sourceAchievement"] = 42798,	-- Engineering at Midnight
 						}),
+						i(253302),	-- Malleable Warframe
 						i(253303),	-- Pile of Junk
 					},
 				}),
@@ -403,27 +404,43 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(243555, {	-- Lelorian <Inscription Supplies>
 					["coord"] = { 46.7, 51.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(245881),	-- Lexicologist's Vellum
 						i(264004, {	-- Midnight Scribe's Shop Sign (DECOR!)
 							["sourceAchievement"] = 42796,	-- Inscribing at Midnight
 						}),
+						i(245881),	-- Lexicologist's Vellum
 						i(245882),	-- Thalassian Songwater
 					},
 				}),
 			}),
-			--[[
 			prof(JEWELCRAFTING, {
-				n(219087, {	-- Makir <Jewelcrafting Trainer>
-					["coord"] = { 49.5, 70.8, DORNOGAL },
-					["groups"] = TWW_JEWELCRAFTING,
+				n(243345, {	-- Amin <Jewelcrafting Trainer>
+					["coord"] = { 48.2, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_JEWELCRAFTING,
+				}),
+				n(243346, {	-- Gelanthis <Jewelcrafting Supplies>
+					["coord"] = { 48.0, 55.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(264005, {	-- Midnight Jewelcrafter's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42789,	-- Jewelcrafting at Midnight
+						}),
+					},
 				}),
 			}),
 			prof(LEATHERWORKING, {
-				n(219080, {	-- Marbb <Leatherworking Trainer>
-					["coord"] = { 54.3, 58.4, DORNOGAL },
-					["groups"] = TWW_LEATHERWORKING,
+				n(243500, {	-- Talmar <Leatherworking Trainer>
+					["coord"] = { 43.1, 55.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_LEATHERWORKING,
+				}),
+				n(243531, {	-- Zaralda <Leatherworking Supplies>
+					["coord"] = { 43.1, 56.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(264006, {	-- Midnight Leatherworker's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42786,	-- Leatherworking at Midnight
+						}),
+					},
 				}),
 			}),
+			--[[
 			prof(MINING, {
 				n(219097, {	-- Tarib <Mining Trainer>
 					["coord"] = { 52.6, 52.6, DORNOGAL },
@@ -436,13 +453,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = TWW_SKINNING,
 				}),
 			}),
+			--]]
 			prof(TAILORING, {
-				n(219094, {	-- Kotag <Tailoring Trainer>
-					["coord"] = { 54.7, 64.7, DORNOGAL },
-					["groups"] = TWW_TAILORING,
+				n(243352, {	-- Galana <Tailoring Trainer>
+					["coord"] = { 48.2, 54.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_TAILORING,
+				}),
+				n(243353, {	-- Deynna <Tailoring Supplies>
+					["coord"] = { 48.2, 54.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(264174, {	-- Midnight Tailor's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42794,	-- Tailoring at Midnight
+						}),
+						i(251691),	-- Embroidery Floss
+						i(251665),	-- Silverleaf Thread
+					},
 				}),
 			}),
-			--]]
 		}),
 	}),
 }));

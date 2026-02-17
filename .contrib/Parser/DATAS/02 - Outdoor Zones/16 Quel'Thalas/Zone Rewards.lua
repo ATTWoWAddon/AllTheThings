@@ -57,6 +57,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(256987),	-- Ironvine Bulwark
 			i(257011),	-- Thornwood Slasher
 			i(256990),	-- Verdant Tracker's Edge
+			i(256991),	-- Vinewrapped Mallet
 			i(257013),	-- Viridescent Crusher
 		}),
 		--

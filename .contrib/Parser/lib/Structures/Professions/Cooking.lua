@@ -402,3 +402,53 @@ TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(445084),	-- Unseasoned Field Steak
 	r(445094),	-- Zesty Nibblers
 });
+MID_COOKING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+	r(471005),	-- Midnight Cooking
+	r(818),		-- Cooking Fire
+	r(1226183),	-- Arcano Cutlets
+	r(1226194),	-- Argentleaf Tea
+	r(1226197),	-- Azeroot Tea
+	r(1226192),	-- Bloodthistle-Wrapped Cutlets
+	r(1226198),	-- Bloom Skewers
+	r(1226169),	-- Blooming Feast
+	r(1226172),	-- Braised Blood Hunter
+	r(1226176),	-- Buttered Root Crab
+	r(1226170),	-- Champion's Bento
+	r(1226173),	-- Crimson Calamari
+	r(1226188),	-- Eversong Pudding
+	r(1226166),	-- Farstrider Rations
+	r(1226182),	-- Fel-Kissed Filet
+	r(1226190),	-- Felberry Figs
+	r(1226202),	-- Forager's Medley
+	r(1226187),	-- Fried Bloomtail
+	r(1226177),	-- Glitter Skewers
+	r(1226175),	-- Harandar Celebration
+	r(1226191),	-- Hearthflame Supper
+	r(1232247),	-- Hearty Feast
+	r(1226167),	-- Hearty Food
+	r(1259654),	-- Impossibly Royal Roast
+	r(1226193),	-- Mana Lily Tea
+	r(1226199),	-- Mana-Infused Stew
+	r(1265601),	-- Multicraft
+	r(1226178),	-- Null and Void Plate
+	r(1226204),	-- Portable Snack
+	r(1226168),	-- Quel'dorei Medley
+	r(1226203),	-- Quick Sandwich
+	r(1265693),	-- Resourcefulness
+	r(1226171),	-- Royal Roast
+	r(1226195),	-- Sanguithorn Tea
+	r(1257796),	-- Silvermoon Parade
+	r(1226201),	-- Silvermoon Standard
+	r(1265687),	-- Skill
+	r(1226185),	-- Spellfire Filet
+	r(1226200),	-- Spiced Biscuits
+	r(1226179),	-- Sun-Seared Lumifin
+	r(1226189),	-- Sunwell Delight
+	r(1226174),	-- Tasty Smoked Tetra
+	r(1259655),	-- Thalassian Filet
+	r(1226196),	-- Tranquility Bloom Tea
+	r(1226184),	-- Twilight Angler's Medley
+	r(1226180),	-- Void-Kissed Fish Rolls
+	r(1226181),	-- Warped Wise Wings
+	r(1226186),	-- Wise Tails
+});

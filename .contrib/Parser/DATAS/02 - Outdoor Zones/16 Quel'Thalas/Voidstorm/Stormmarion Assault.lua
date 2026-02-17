@@ -22,6 +22,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["isWeekly"] = true,	-- TODO: Blizzard bug, it unflagged in next event but it's not spawn chest).
 					["groups"] = {
 						i(256761),	-- Formula: Enchant Shoulders - Voidtouched (RECIPE!)
+						i(258134),	-- Pattern: Voidstrider Saddlebag (RECIPE!)
 						i(267396),	-- Technique: Restful Bronze Bench (RECIPE!)
 					},
 				}),

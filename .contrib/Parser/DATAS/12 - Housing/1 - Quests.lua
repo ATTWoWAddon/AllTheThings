@@ -172,12 +172,12 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(92734),	-- Triggered after entering Razorwind and Founders Point
 				q(93629),	-- Triggered after completing 'Time to Decorate'
 				q(94392),	-- Triggered after talking to flora decor
-				q(94701),	-- Triggered after completing 'Home at Last' (94455)
+				q(94701),	-- Triggered after completing 'Home at Last' (94455) / Alex: TODO: Blizzard bug - Weekly reputation: Poacher Rav'ik
 				-- q(94703),	-- Unflagged after talking to Local Decor vendor
-				q(94706),	-- Triggered after skipping tutorial
-				q(94707),	-- Triggered after completing 'This Old Hearth' (94379)
-				q(94709),	-- Triggered after entering house (tutorial?)
-				q(94714),	-- Triggered after completing 'Feathering the Nest' (94210) / Alex: Weekly reputation: Ha'kalawe (blame Blizzard for it)
+				q(94706),	-- Triggered after skipping tutorial / Alex: TODO: Blizzard bug - Weekly reputation: The Devouring Invader
+				q(94707),	-- Triggered after completing 'This Old Hearth' (94379) / Alex: TODO: Blizzard bug - Weekly reputation: Elder Oaktalon
+				q(94709),	-- Triggered after entering house (tutorial?) / Alex: TODO: Blizzard bug - Weekly reputation: The Decaying Diamondback
+				q(94714),	-- Triggered after completing 'Feathering the Nest' (94210) / Alex: TODO: Blizzard bug - Weekly reputation: The Decaying Diamondback
 				-- q(94750),	-- Unflagged after talking to Elven Decor vendor
 				-- q(91029),	-- Triggered after talking to Xiz'ro <Lumberjack> (added in 11.1.7, probably not housing related?)
 				q(95166,{isDaily=true}),	-- Pet the Dog (245551)

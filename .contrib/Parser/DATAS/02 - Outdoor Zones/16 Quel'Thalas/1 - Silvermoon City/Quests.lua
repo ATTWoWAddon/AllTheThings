@@ -89,6 +89,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93758),	-- Nexus-Point Xenas
 				q(93757),	-- Voidscar Arena
 			})),
+			-- Housing
+			n(QUESTS, sharedData({
+				["provider"] = { "n", 260957 },	-- Vaeli
+				["coord"] = { 49.5, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
+			}, {
+				q(95440),	-- Housewarming
+			})),
 		}),
 	}),
 }));
@@ -97,7 +105,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 			n(QUESTS, {
 				q(93067),	-- "Stay a while and listen" objectID 551501 (In Memoriam) @ 35.2, 70.3
-				q(90806),	-- Midnight adventure mode // World Quests & Adventure Mode (spellID 1234841) & Unlock Content Scaling (spellID 1234839)
 				q(94419, {["timeline"]={ADDED_12_0_X_SEASONSTART,REMOVED_12_1_0}}),	-- player recieve 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 			}),
 		}),

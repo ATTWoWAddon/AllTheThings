@@ -1646,7 +1646,7 @@ TWW_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(435371),	-- Radiant Loupes
 		r(435375),	-- Right-Handed Magnifying Glass
 		r(435377),	-- Storyteller's Glasses
-		}),
+	}),
 	filter(REAGENTS, {
 		r(435325),	-- Decorative Lens
 		r(435324),	-- Engraved Gemcutter
@@ -1655,3 +1655,75 @@ TWW_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(435326),	-- Marbled Stone
 	}),
 });
+MID_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+	r(471011),	-- Midnight Jewelcrafting
+	r(1231127),	-- Midnight Prospecting
+	r(471045),	-- Recraft Equipment
+	r(1265671),	-- Artisan Jewelcrafter's Moxie
+	r(1265680),	-- Concentration
+	r(1265706),	-- Ingenuity
+	r(1265619),	-- Knowledge
+	r(1265606),	-- Multicraft
+	r(1265656),	-- Quality
+	r(1265698),	-- Resourcefulness
+	r(1265690),	-- Skill
+	r(1265664),	-- Sparks
+	n(ARMOR, {
+		r(1230489),	-- Gleaming Copper Band
+		r(1230490),	-- Nocturnal Charm
+	}),
+	n(DECOR, {
+		r(1246895),	-- Brilliant Phoenix Harp
+		r(1246889),	-- Tenebrous Ren'dorei Armillary
+	}),
+	filter(GEMS, {
+		r(1230455),	-- Deadly Amethyst
+		r(1230463),	-- Deadly Garnet
+		r(1230447),	-- Deadly Lapis
+		r(1230439),	-- Deadly Peridot
+		r(1230467),	-- Flawless Deadly Garnet
+		r(1230460),	-- Flawless Masterful Amethyst
+		r(1230442),	-- Flawless Quick Peridot
+		r(1230453),	-- Flawless Versatile Lapis
+		r(1230456),	-- Masterful Amethyst
+		r(1230464),	-- Masterful Garnet
+		r(1230448),	-- Masterful Lapis
+		r(1230440),	-- Masterful Peridot
+		r(1230454),	-- Quick Amethyst
+		r(1230462),	-- Quick Garnet
+		r(1230446),	-- Quick Lapis
+		r(1230437),	-- Quick Peridot
+		r(1230457),	-- Versatile Amethyst
+		r(1230465),	-- Versatile Garnet
+		r(1230449),	-- Versatile Lapis
+		r(1230441),	-- Versatile Peridot
+	}),
+	filter(MISC, {
+		r(1230499),	-- Monologuer's Chalice
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(1230494),	-- Bold Biographer's Bifocals
+		r(1230493),	-- Fantastic Font Focuser
+		r(1230491),	-- Silvermoon Focusing Shard
+		r(1230492),	-- Silvermoon Loupes
+	}),
+	filter(REAGENTS, {
+		r(1230474),	-- Kaleidoscopic Prism
+		r(1230475),	-- Sin'dorei Lens
+		r(1230476),	-- Sunglass Vial
+	}),
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+

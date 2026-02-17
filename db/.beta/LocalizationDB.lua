@@ -744,8 +744,6 @@ L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which
 L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
 L.SOCIAL_PROGRESS = "Social Progress";
-L.SOFT_RESERVES = "Soft Reserves";
-L.SOFT_RESERVES_DESCRIPTION = "The soft reservation list submitted by your raid group. This is managed through the Master Looter, should they have ATT installed. If not, this feature will not function.\n\nML: Members of your raid without ATT installed can whisper you '!sr <itemlink>' or '!sr <itemID>' to Soft Reserve an item.";
 L.SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation (" .. SHIFT_KEY_TEXT .. " Right Click) to sort by the total progress of each group (instead of by Name)";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Conduits";
@@ -1667,6 +1665,12 @@ localize(L.HEADER_NAMES, {
 	[-719] = "Draconic Endeavor",
 	[-720] = "Mechagnome Endeavor",
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
+	[-722] = "Diablo II: Resurrected - Reign of Warlock",
+	[-724] = "Elders of Eastern Kingdoms",
+	[-725] = "Elders of Kalimdor",
+	[-726] = "Elders of the Alliance",
+	[-727] = "Elders of the Dungeons",
+	[-728] = "Elders of the Horde",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1778,6 +1782,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-712] = "Contains things that can be obtained only by characters that are not max level.",
 	[-713] = "Contains things that can be obtained only by max level characters.",
 	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
+	[-722] = "Granted to owners of Diablo II: Resurrected - Reign of Warlock.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2359,6 +2364,12 @@ localize(L.HEADER_ICONS, {
 	[-719] = 7301738,
 	[-720] = 7301741,
 	[-721] = 450908,
+	[-722] = 1529348,
+	[-724] = 135982,
+	[-725] = 135982,
+	[-726] = 135982,
+	[-727] = 135982,
+	[-728] = 135982,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -2570,7 +2581,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=8,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=15,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=15,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=22,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=22,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=1,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=3,["monthDay"]=1,["weekday"]=1,["year"]=2026}),
@@ -2622,7 +2632,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=31,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=31,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=2,["monthDay"]=14,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -4168,7 +4179,9 @@ _.FlightPathNames = {
 	[3127] = "Amani'Zar Village, Zul'Aman",
 	[3128] = "Atal'Aman, Zul'Aman",
 	[3129] = "Shadebasin Watch, Zul'Aman",
+	[3130] = "Witherbark Bluffs, Zul'Aman",
 	[3131] = "Sanctum of Light, Silvermoon City",
+	[3132] = "The Royal Exchange, Silvermoon City",
 	[3133] = "Fairbreeze Village, Eversong Woods",
 	[3134] = "Tranquillien, Eversong Woods",
 	[3145] = "Tazavesh, the Veiled Market",
@@ -24321,8 +24334,8 @@ L.QUEST_NAMES = {
 	[83259] = "TWW Weekly Enchanting Treasure #2",
 	[83260] = "TWW Weekly Engineering Treasure #1",
 	[83261] = "TWW Weekly Engineering Treasure #2",
-	[83262] = "TWW Weekly Inscription Treasure #2",
-	[83264] = "TWW Weekly Inscription Treasure #1",
+	[83262] = "MID Weekly Inscription Treasure #2",
+	[83264] = "MID Weekly Inscription Treasure #1",
 	[83265] = "TWW Weekly Jewelcrafting Treasure #1",
 	[83266] = "TWW Weekly Jewelcrafting Treasure #2",
 	[83267] = "TWW Weekly Leatherworking Treasure #1",
@@ -24337,6 +24350,14 @@ L.QUEST_NAMES = {
 	[83305] = "Answer 6: From the letters of Mereldar.",
 	[83488] = "Rak-Ush Stagshell World Quests Unlocked.",
 	[83724] = "|cFFFFFFFFStep 3|r: Return to the Grimoire",
+	[83725] = "TWW Inscription Order: Alchemy",
+	[83726] = "TWW Inscription Order: Blacksmith",
+	[83727] = "TWW Inscription Order: Enchanting",
+	[83728] = "TWW Inscription Order: Engineering",
+	[83730] = "TWW Inscription Order: Inscription",
+	[83731] = "TWW Inscription Order: Jewelcrafting",
+	[83732] = "TWW Inscription Order: Leatherworking",
+	[83735] = "TWW Inscription Order: Tailoring",
 	[83741] = "|cFFFFFFFFStep 1|r: Interact with the Fleshy Grimoire",
 	[83744] = "|cFFFFFFFFStep 2D|r: Find Another You in Wildcamp Or'lay",
 	[83745] = "|cFFFFFFFFStep 2C|r: Find Another You in Faerin's Advance",
@@ -24596,19 +24617,38 @@ L.QUEST_NAMES = {
 	[92627] = "An Arrested Development",
 	[92651] = "Deathless Attempt Finished",
 	[93399] = "We are all frustrated, Danath.",
+	[93916] = "Sealing Orb unlocked.",
+	[93917] = "Sealing Orb unlocked.",
+	[93918] = "Sealing Orb unlocked.",
+	[93919] = "Sealing Orb unlocked.",
 	[94681] = "Warden of Weeds weekly reputation obtained.",
 	[94682] = "Harried Hawkstrider weekly reputation obtained.",
+	[94683] = "Necrohexxer Raz'ka weekly reputation obtained.",
 	[94684] = "Overfester Hydra weekly reputation obtained.",
 	[94685] = "Bloated Snapdragon weekly reputation obtained.",
 	[94686] = "Cre'van weekly reputation obtained.",
 	[94687] = "Coralfang weekly reputation obtained.",
 	[94688] = "Lady Liminus weekly reputation obtained.",
+	[94689] = "Terrinor weekly reputation obtained.",
+	[94690] = "Bad Zed weekly reputation obtained.",
 	[94692] = "Banuran weekly reputation obtained.",
 	[94693] = "Lost Guardian weekly reputation obtained.",
 	[94694] = "Duskburn weekly reputation obtained.",
 	[94695] = "Malfunctioning Construct weekly reputation obtained.",
 	[94696] = "Dame Bloodshed weekly reputation obtained.",
+	[94697] = "The Snapping Scourge weekly reputation obtained.",
+	[94698] = "Skullcrusher Harak weekly reputation obtained.",
+	[94699] = "Lightwood Borer weekly reputation obtained.",
+	[94700] = "Mrrlokk weekly reputation obtained.",
+	[94701] = "Poacher Rav'ik weekly reputation obtained.",
+	[94702] = "Spinefrill weekly reputation obtained.",
+	[94703] = "Oophaga weekly reputation obtained.",
 	[94704] = "Tiny Vermin weekly reputation obtained.",
+	[94706] = "The Devouring Invader weekly reputation obtained.",
+	[94707] = "Elder Oaktalon weekly reputation obtained.",
+	[94708] = "Depthborn Eelamental weekly reputation obtained.",
+	[94709] = "The Decaying Diamondback weekly reputation obtained.",
+	[94710] = "Ash'an the Empowered weekly reputation obtained.",
 	[94712] = "Rhazul weekly reputation obtained.",
 	[94713] = "Chironex weekly reputation obtained.",
 	[94714] = "Ha'kalawe weekly reputation obtained.",
@@ -24639,6 +24679,19 @@ L.QUEST_NAMES = {
 	[94762] = "Rakshur the Bonegrinder weekly reputation obtained.",
 	[94763] = "Ravengerus weekly reputation obtained.",
 	[94828] = "Become a Mind Seeker",
+	[95048] = "MID Weekly Enchanting Disenchant #1",
+	[95049] = "MID Weekly Enchanting Disenchant #2",
+	[95050] = "MID Weekly Enchanting Disenchant #3",
+	[95051] = "MID Weekly Enchanting Disenchant #4",
+	[95052] = "MID Weekly Enchanting Disenchant #5",
+	[95053] = "MID Weekly Enchanting Disenchant #6",
+	[95127] = "MID Inscription Order: Alchemy",
+	[95128] = "MID Inscription Order: Blacksmith",
+	[95129] = "MID Inscription Order: Enchanting",
+	[95131] = "MID Inscription Order: Inscription",
+	[95133] = "MID Inscription Order: Jewelcrafting",
+	[95134] = "MID Inscription Order: Leatherworking",
+	[95137] = "MID Inscription Order: Tailoring",
 }
 L.SOURCE_NAMES = {
 	[90628] = "Monel-Hardened Breastplate",
@@ -25266,6 +25319,11 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Netherportal",
 	[-709] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
 	[-710] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-724] = "Die Urahnen der Östlichen Königreiche",
+	[-725] = "Die Urahnen von Kalimdor",
+	[-726] = "Die Urahnen der Allianz",
+	[-727] = "Die Urahnen der Dungeons",
+	[-728] = "Die Urahnen der Horde",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -32539,6 +32597,11 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Portail de Néant",
 	[-709] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
 	[-710] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-724] = "Les Anciens des royaumes de l'Est",
+	[-725] = "Les Anciens de Kalimdor",
+	[-726] = "Les Anciens de l'Alliance",
+	[-727] = "Les Anciens des donjons",
+	[-728] = "Les Anciens de la Horde",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -39428,6 +39491,11 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Portale Fatuo",
 	[-709] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-724] = "Anziani dei Regni Orientali",
+	[-725] = "Anziani di Kalimdor",
+	[-726] = "Anziani dell'Alleanza",
+	[-727] = "Anziani delle Spedizioni",
+	[-728] = "Anziani dell'Orda",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -45693,6 +45761,11 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Portal Etéreo",
 	[-709] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-724] = "Anciãos dos Reinos do Leste",
+	[-725] = "Anciãos de Kalimdor",
+	[-726] = "Anciãos da Aliança",
+	[-727] = "Anciãos das Masmorras",
+	[-728] = "Anciãos da Horda",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -53129,6 +53202,11 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Врата Пустоты",
 	[-709] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
 	[-710] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-724] = "Предки Восточных королевств",
+	[-725] = "Предки Калимдора",
+	[-726] = "Предки Альянса",
+	[-727] = "Предки в подземельях",
+	[-728] = "Предки Орды",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -60103,6 +60181,11 @@ localize(L.HEADER_NAMES, {
 	[-696] = "황천의 차원문",
 	[-709] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-724] = "동부 왕국의 장로",
+	[-725] = "칼림도어의 장로",
+	[-726] = "얼라이언스의 장로",
+	[-727] = "던전의 장로",
+	[-728] = "호드의 장로",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -66778,8 +66861,6 @@ L.SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Aj
 L.SKIP_CUTSCENES_CHECKBOX = "Saltar automáticamente cinemáticas";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres que ATT salte todas las cinemáticas automáticamente por ti.";
 L.SOCIAL_PROGRESS = "Progreso social";
-L.SOFT_RESERVES = "Reserva anticipada";
-L.SOFT_RESERVES_DESCRIPTION = "La lista de reserva anticipada enviada por tu grupo de banda. Esta se gestiona a través del Maestro Saqueador, si tiene instalado ATT. De lo contrario, esta función no funcionará.\n\nML: Los miembros de tu banda sin ATT instalado pueden susurrar \"!sr <itemlink>\" o \"!sr <itemID>\" para reservar un objeto.";
 L.SORT_BY_PROGRESS_CHECKBOX = "Ordenar por pogreso";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres la operación de 'Ordenar' (" .. SHIFT_KEY_TEXT .. " + clic derecho) para ordenar sobre el total de progreso de cada grupo (en vez de por nombre)";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Conductos";
@@ -67183,6 +67264,11 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Portal abisal",
 	[-709] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-724] = "Ancestros de los Reinos del Este",
+	[-725] = "Ancestros de Kalimdor",
+	[-726] = "Ancestros de la Alianza",
+	[-727] = "Ancestros de las mazmorras",
+	[-728] = "Ancestros de la Horda",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -74130,6 +74216,7 @@ localize(L.HEADER_NAMES, {
 	[-656] = "Gremio de luchadores",
 	[-674] = "Abismos MID T1",
 	[-710] = "|cFFFFFFFFStep 1:|rNota sospechosa",
+	[-727] = "Ancestros de los calabozos",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-29] = "Contiene cosas que se otorgan como recompensa al completar este evento.",
@@ -75072,8 +75159,6 @@ L.SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响�
 L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想让 ATT 代表你自动跳过所有场景动画请启用此选项。";
 L.SOCIAL_PROGRESS = "社交进度";
-L.SOFT_RESERVES = "软保留";
-L.SOFT_RESERVES_DESCRIPTION = "这是由团队提交的软保留物品列表。该功能需由队长通过 ATT 插件管理。若队长未安装 ATT，则此功能无法生效。\n\n队长：未安装 ATT 的队员可私聊你“!sr <物品链接>”或“!sr <物品 ID>”来软保留某件物品。";
 L.SORT_BY_PROGRESS_CHECKBOX = "按进度排序";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（" .. SHIFT_KEY_TEXT .. "右键）按每个组的总进度排序（而不是按名称）请启用此选项";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 导灵器";
@@ -75507,6 +75592,11 @@ localize(L.HEADER_NAMES, {
 	[-708] = "雷蛇",
 	[-709] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
 	[-710] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-724] = "东部王国的长者",
+	[-725] = "卡利姆多的长者",
+	[-726] = "联盟的长者",
+	[-727] = "地下城中的长者",
+	[-728] = "部落的长者",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",
@@ -82055,7 +82145,6 @@ L.SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響�
 L.SKIP_CUTSCENES_CHECKBOX = "自動跳過過場動畫";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想讓 ATT 代替你自動跳過所有過場動畫請啟用此選項。";
 L.SOCIAL_PROGRESS = "社交進度";
-L.SOFT_RESERVES = "軟保留";
 L.SORT_BY_PROGRESS_CHECKBOX = "按進度排序";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（" .. SHIFT_KEY_TEXT .. "右鍵）按每個組的總進度排序（而不是按名稱）請啟用此選項";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 導靈器";
@@ -82348,6 +82437,11 @@ localize(L.HEADER_NAMES, {
 	[-694] = "燃燒的遠征：經典週年紀念版 - 外域升級",
 	[-696] = "虛空傳送門",
 	[-703] = "暗黑破壞神IV：憎恨之王",
+	[-724] = "東部王國的長者",
+	[-725] = "卡林多的長者",
+	[-726] = "聯盟的長者",
+	[-727] = "地城中的長者",
+	[-728] = "部落的長者",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成探究時獎勵的東西。",

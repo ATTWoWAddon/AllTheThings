@@ -355,6 +355,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(21326),	-- Defender of the Timbermaw
 					},
 				}),
+				q(6131, {	-- Timbermaw Ally (old version, deprecated)
+					["timeline"] = { ADDED_1_11_1, REMOVED_2_2_0 },	-- Added source https://www.wowhead.com/quest=6131/timbermaw-ally, removed source https://warcraft.wiki.gg/wiki/Timbermaw_Ally (guess based on when new quest was added)
+				}),
 				q(8460, {	-- Timbermaw Ally
 					["altQuests"] = { 6131 },	-- Timbermaw Ally (old version, deprecated)
 					["qg"] = 11554,	-- Grazle

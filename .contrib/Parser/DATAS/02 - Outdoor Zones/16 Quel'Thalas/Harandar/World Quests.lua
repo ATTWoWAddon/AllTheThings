@@ -21,6 +21,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(252246),	-- Sweet Beetle Wings (QI!)
 					},
 				}),
+				q(92162, {	-- A Refined Potadpalate
+					["coord"] = { 36.2, 46.1, MAP.MIDNIGHT.HARANDAR },
+				}),
 				q(92582, {	-- Apply to Roots
 					["coord"] = { 41.4, 32.3, MAP.MIDNIGHT.HARANDAR },
 					["groups"] = { i(269603) },	-- Verdant Stalker Sludge (QI!)

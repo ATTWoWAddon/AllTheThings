@@ -1329,7 +1329,7 @@ MID_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		r(1229624),	-- Blood-Tempered Leggings
 		r(1229622),	-- Blood-Tempered Pauldrons
 	}),
-	filter(MISC, {
+	filter(CONSUMABLES, {
 		r(1230760),	-- Refulgent Razorstone
 		r(1230764),	-- Refulgent Repair Hammer
 		r(1230759),	-- Refulgent Weightstone

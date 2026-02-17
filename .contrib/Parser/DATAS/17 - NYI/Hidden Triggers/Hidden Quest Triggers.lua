@@ -766,10 +766,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		--hqt(86534),	-- temporary until 11.2.7 to prevent a parser warning due to bad blizz data
-		q(94708, { ["isDaily"] = true, ["timeline"] = { ADDED_12_0_0 } }),	-- Triggers after completing Blingtron 6000 (40753), and possibly other blingtrons too?
-		q(94710, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
+		q(94708, { ["isDaily"] = true, ["timeline"] = { ADDED_12_0_0 } }),	-- Alex: TODO: Blizzard bug - Weekly reputation: Depthborn Eelamental
+		q(94710, { ["timeline"] = { ADDED_12_0_0 } }),						-- Alex: TODO: Blizzard bug - Weekly reputation: Ash'an the Empowered
 		q(94711, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
-		q(94713, { ["timeline"] = { ADDED_12_0_0 } }),						-- Alex: Weekly reputation: Chironex, Blizzard at their best as always. TODO - remove with Midnight launch from here.
+		q(94713, { ["timeline"] = { ADDED_12_0_0 } }),						-- Alex: Weekly reputation: Chironex, Blizzard at their best as always. TODO: Blizzard bug, remove with Midnight reales.
 		q(95270, { ["isDaily"] = true, ["timeline"] = { ADDED_11_2_7 } }),	-- Triggeres literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
 	})),
 
