@@ -724,5 +724,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = 
 		i(74844, {	-- Red Blossom Leek
 			["description"] = "Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",
 		}),
+		currency(395, {	-- Justice Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+		}),
+		currency(396, {	-- Valor Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+		}),
 	}),
 })));

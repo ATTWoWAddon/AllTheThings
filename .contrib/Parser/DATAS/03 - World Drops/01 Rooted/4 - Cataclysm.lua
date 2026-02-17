@@ -745,6 +745,13 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		i(66961, {	-- Mindbender Bloom
 			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 		}),
+		-- These get moved to MOP World Drops with MOP
+		currency(395, {	-- Justice Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+		}),
+		currency(396, {	-- Valor Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+		}),
 		-- #endif
 	}),
 	filter(RECIPES, {
