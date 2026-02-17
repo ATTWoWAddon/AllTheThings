@@ -3,14 +3,14 @@
 -----------------------------------------------------
 root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
-		ach(18769),	-- Disenchantment IV
-		ach(18768),	-- Disenchantment III
-		ach(18767),	-- Disenchantment II
 		ach(18766),	-- Disenchantment I
-		ach(18871),	-- Enchantment IV
-		ach(18870),	-- Enchantment III
-		ach(18869),	-- Enchantment II
+		ach(18767),	-- Disenchantment II
+		ach(18768),	-- Disenchantment III
+		ach(18769),	-- Disenchantment IV
 		ach(18868),	-- Enchantment I
+		ach(18869),	-- Enchantment II
+		ach(18870),	-- Enchantment III
+		ach(18871),	-- Enchantment IV
 		ach(18785, {	-- Shattered Expectations
 			crit(61106, {	-- Crystalline Shatter
 				["providers"] = {
@@ -60,19 +60,19 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		}),
 		ach(18789, {	-- Simply Enchanting
 			crit(61136, {	-- Enchanted Thorium Bar
-				["cost"] = {{ "i", 12655, 20 }},	-- 20x Enchanted Thorium Bar
+				["cost"] = { { "i", 12655, 20 } },	-- 20x Enchanted Thorium Bar
 			}),
 			crit(61137, {	-- Enchanted Leather
-				["cost"] = {{ "i", 12810, 20 }},	-- 20x Enchanted Leather
+				["cost"] = { { "i", 12810, 20 } },	-- 20x Enchanted Leather
 			}),
 			crit(61138, {	-- Enchanted Elethium Bar
-				["cost"] = {{ "i", 172437, 20 }},	-- 20x Enchanted Elethium Bar
+				["cost"] = { { "i", 172437, 20 } },	-- 20x Enchanted Elethium Bar
 			}),
 			crit(61139, {	-- Enchanted Heavy Callous Hide
-				["cost"] = {{ "i", 172438, 20 }},	-- 20x Enchanted Heavy Callous Hide
+				["cost"] = { { "i", 172438, 20 } },	-- 20x Enchanted Heavy Callous Hide
 			}),
 			crit(61140, {	-- Enchanted Lightless Silk
-				["cost"] = {{ "i", 172439, 20 }},	-- 20x Enchanted Lightless Silk
+				["cost"] = { { "i", 172439, 20 } },	-- 20x Enchanted Lightless Silk
 			}),
 		}),
 	})),
@@ -503,7 +503,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 					{ 41.4, 61.0, OHNAHRAN_PLAINS },
 					{ 56.8, 75.6, OHNAHRAN_PLAINS },
 				},
-				["cost"] = {{ "i", 201601, 2 }},	-- 2x Runed Serevite Rod
+				["cost"] = { { "i", 201601, 2 } },	-- 2x Runed Serevite Rod
 				["_drop"] = { "g" },
 			}),
 			q(70251, {	-- Hidden Profession Master Enchanting
@@ -515,7 +515,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
+				["cost"] = { { "i", 191784, 1 } },	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["groups"] = {
 					i(190456),	-- Artisan's Mettle
@@ -528,7 +528,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["groups"] = {
 				i(198610),	-- Enchanter's Script
 			},
-		},{
+		}, {
 			------ Requires 25 Skill ------
 			q(66935, {	-- Crystal Quill Pens
 				["description"] = "Requires 25 Skill.",
@@ -631,7 +631,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 } } }, {
 				r(389547),	-- Burning Devotion
 				r(391302),	-- Crystalline Shatter
 				r(389301),	-- Devotion of Avoidance
@@ -768,7 +768,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["groups"] = {
 				currency(PROFESSION_KNOWLEDGE.DF.ENCHANTING),
 			},
-		},{
+		}, {
 			i(198610),	-- Enchanter's Script
 			q(74110, {	-- DF Inscription Order: Enchanting
 				["name"] = "DF Inscription Order: Enchanting",
@@ -807,14 +807,14 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["groups"] = {
 				i(227667),	-- Algari Enchanter's Folio
 			},
-		},{
+		}, {
 			q(84086),	-- A Rare Necessity
 			q(84084),	-- Just a Pinch
 			q(84085),	-- The Power of Potential
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 } } }, {
 				r(445378),	-- Algari Ingenuity
 				r(445403),	-- Authority of Fiery Resolve
 				r(445336),	-- Authority of Storms
@@ -914,7 +914,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["groups"] = {
 				currency(PROFESSION_KNOWLEDGE.TWW.ENCHANTING),
 			},
-		},{
+		}, {
 			i(227667),	-- Algari Enchanter's Folio
 			q(83727, {	-- TWW Inscription Order: Enchanting
 				["name"] = "TWW Inscription Order: Enchanting",
@@ -974,13 +974,13 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["groups"] = {
 				i(263464),	-- Thalassian Enchanter's Folio
 			},
-		},{
+		}, {
 			q(93699),	-- A Ray of Sunlight
 			q(93698),	-- Splintered Radiance
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 } } }, {
 				r(1236057),	-- Enchant Boots - Lynx's Dexterity
 				r(1236069),	-- Enchant Chest - Mark of the Worldsoul
 				r(1236071),	-- Enchant Helm - Empowered Blessing of Speed
@@ -1059,7 +1059,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["groups"] = {
 				currency(PROFESSION_KNOWLEDGE.MID.ENCHANTING),
 			},
-		},{
+		}, {
 			i(263464),	-- Thalassian Enchanter's Folio
 			q(95129, {	-- MID Inscription Order: Enchanting
 				["name"] = "MID Inscription Order: Enchanting",

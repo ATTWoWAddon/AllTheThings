@@ -2306,6 +2306,8 @@ i(254735, 1258573);	-- Thunderhoof Celestial
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(257219, 1261357);	-- Amani Blessed Bear
+i(250889, 1251630);	-- Amani Windcaller
 i(252011, 1253924);	-- Brilliant Petalwing
 i(252014, 1253929);	-- Cerulean Sporeglider
 i(257145, 1261298);	-- Crimson Dragonhawk
@@ -2329,10 +2331,8 @@ i(257223, 1261360);	-- [DNT] 12.0 Shadowpine Bear
 i(0, 1252141);	-- [DNT] Jellyfish
 i(222988, 447173);	-- [PH] Firefly2Mount (Green)
 i(260896, 1267004);	-- Accented Pseudoshell
-i(257219, 1261357);	-- Amani Blessed Bear
 i(257152, 1261316);	-- Amani Sharptalon
 i(250782, 1251433);	-- Amani Sunfeather
-i(250889, 1251630);	-- Amani Windcaller
 i(260893, 1266993);	-- Arboreal Pseudoshell
 i(263222, 1268949);	-- Arcanovoid Construct
 i(246590, 1242904);	-- Ashes of Belo'ren

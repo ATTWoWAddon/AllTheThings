@@ -1267,6 +1267,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(92712),	-- after turn in questID 86929 (The Council Assembles), could be some phase swtiches or faction renown?
 				-- Legends Never Die Achievement
 				q(89266, name(HEADERS.NPC,241213)),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
+				q(91049, name(HEADERS.NPC,243491)),	-- Triggered after chosing 'Cauldron of Echoes' during 'Lost Legends' (89268)
 				q(91516, name(HEADERS.NPC,243540)),	-- Triggered after chosing 'The Echoless Flame' during 'Lost Legends' (89268)
 				q(91517, name(HEADERS.NPC,243542)),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
 				q(91455, name(HEADERS.NPC,243514)),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)

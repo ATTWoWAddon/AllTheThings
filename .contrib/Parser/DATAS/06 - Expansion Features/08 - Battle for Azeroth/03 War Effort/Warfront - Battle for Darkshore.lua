@@ -651,7 +651,10 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						o(320515, {	-- Darkshore Cache
 							["questID"] = 54909,
-							["coord"] = { 50.5, 22.8, DARKSHORE },
+							["coords"] = {
+								{ 49.2, 25.5, DARKSHORE },
+								{ 50.5, 22.8, DARKSHORE },
+							},
 						}),
 						o(320516, {	-- Darkshore Cache
 							["questID"] = 54910,

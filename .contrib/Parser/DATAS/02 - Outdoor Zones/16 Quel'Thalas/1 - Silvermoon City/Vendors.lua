@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 42.1, 58.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(259996, {	-- Quel'Thalas Equipment Chest
-						["cost"] = { { "c", VOIDLIGHT_MARL, 750 }, },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
 						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },	-- TODO: fix timeline if not up with season
 					}),
 				},

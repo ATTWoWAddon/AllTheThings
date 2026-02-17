@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(572819, {	-- Void-Shielded Tomb
 				["coord"] = { 25.7, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 92414,
-				["cost"] = { { "i", 251519, 1 }, },	-- 1x Key of Fused Darkness
+				["cost"] = { { "i", 251519, 1 } },	-- 1x Key of Fused Darkness
 				["groups"] = {
 					o(572906, {	-- Key of Fused Darkness
 						["coord"] = { 26.0, 68.7, MAP.MIDNIGHT.VOIDSTORM },

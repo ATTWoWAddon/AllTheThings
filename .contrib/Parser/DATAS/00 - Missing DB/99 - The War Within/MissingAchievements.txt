@@ -104,7 +104,6 @@ ach(62249),	-- Skinning-on-Demand
 ach(62250),	-- Dedicated to the Craft: Herbalism
 ach(62251),	-- Dedicated to the Craft: Mining
 ach(62252),	-- Dedicated to the Craft: Skinning
-ach(62263),	-- Amani Tribe Champion
 ach(62265),	-- The Singularity Champion
 ach(62271),	-- Abyss Anglers: Trench Berserker
 ach(62272),	-- Abyss Anglers: Certified Depthdiver

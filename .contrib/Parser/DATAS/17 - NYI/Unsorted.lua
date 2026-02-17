@@ -73,7 +73,7 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				i(237505),	-- Artisan's Moxie
 				i(238215),	-- Essence of Prey
-					-- PvP reagent
+				-- PvP reagent
 				i(246496),	-- Remnant of Anguish
 
 				-- Prof Tools
@@ -94,14 +94,7 @@ root(ROOTS.Unsorted, {
 				i(247788),	-- Ingenious Identity \\ Ingenuious Identity \\ [PH] Perception Finishing Reagent
 
 				i(256136),	-- Professor Instructaur's Brain Pertaining to Midnight
-				-- Prof Knowledge From Something
-				i(250922),	-- Whisper of the Loa: Leatherworking
-				i(250923),	-- Whisper of the Loa: Herbalism
-				i(250924),	-- Whisper of the Loa: Mining
 
-
-				-- Cooking
-				i(251630),	-- Recipe: Braised Blood Hunter
 				-- Inscription?
 				i(251919),	-- Inscribe: Blood
 				i(251920),	-- Inscribe: Rot
@@ -609,7 +602,6 @@ root(ROOTS.Unsorted, {
 				i(242251),	-- [NYI] Magical Broom Pet
 				i(250135),	-- Akil Fledgling
 				i(250141),	-- Purple Swamp Leech
-				i(250863),	-- Naloki
 				i(251002),	-- Nether Familiar
 				i(251003),	-- Wrathful Wyrm
 				i(251004),	-- Striped Snakebiter
@@ -675,7 +667,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(TOYS, {
 				i(250320),	-- Lightgraft
-				i(250974),	-- Akil'zon's Updraft
 				i(251633),	-- Bursting Bounty Bundle
 				i(251903),	-- Potatoad Egg
 				i(257736),	-- Lightcalled Hearthstone \\ [DNT] [PH] 12.0 Holy Hearthstone
@@ -684,7 +675,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(250782),	-- Amani Sunfeather \\ [DNT] Amani Eagle Orange
 				-- Both Mounts?
-				i(250889),	-- Amani Windcaller
 				i(250921),	-- Amani Blessed Bear
 
 				i(253587),	-- Scale of Aln'sharan
@@ -693,7 +683,6 @@ root(ROOTS.Unsorted, {
 				i(260231),	-- [DNT] 12.0 White Hawkstrider
 				i(252017),	-- Ruddy Sporeglider
 				i(256423),	-- Untainted Grove Crawler
-				i(257219),	-- Amani Blessed Bear
 			}),
 			n(PVP, {
 				i(255357),	-- Galactic Gladiator's Silk Robe
@@ -1161,10 +1150,6 @@ root(ROOTS.Unsorted, {
 				i(242635),	-- Twilight's Blade - Armor - Tabard \\ Twilight's Blade Tabard
 				i(246726),	-- Greatsword of Returning Light
 				i(248933),	-- Burden of War
-				i(250799),	-- Loa-Blessed Cloak
-				i(250800),	-- Loa-Blessed Tabard
-				i(250801),	-- Loa-Blessed Shoulderguards
-				i(250855),	-- Crown of the Loa-Speaker
 				i(253389),	-- Manaforge Raider's Umbral Ward (MAIN HAND SLOT)
 				i(253402),	-- Scorching
 				i(253582),	-- Fangfin Flailer
@@ -1438,7 +1423,6 @@ root(ROOTS.Unsorted, {
 			i(262871),	-- Snowy Dunecloth Vest
 			i(262872),	-- Sunny Dunecloth Vest
 
-
 			-- Inscr
 			i(262908),	-- Milling
 
@@ -1528,7 +1512,6 @@ root(ROOTS.Unsorted, {
 			i(263448),	-- Eversong Bow
 			-- Cache
 			i(263433),	-- Overflowing Silvermoon Trove
-
 
 			-- QI
 			i(263446),	-- Spare Murloc Suit
@@ -1685,7 +1668,6 @@ root(ROOTS.Unsorted, {
 			i(264469),	-- Ashbound Tribute Cloak
 			i(264470),	-- Ash-Tied Offering
 
-
 			-- Lockbox
 			i(264475),	-- Umbral Tin Lockbox
 
@@ -1798,17 +1780,7 @@ root(ROOTS.Unsorted, {
 			i(249768),	-- Fungarian Barrel
 			i(251980),	-- Fungarian Sack
 			i(253443),	-- Replica Sky's Hope
-			i(256924),	-- Hash'ey Heartbroth Cauldron
-			i(256926),	-- Empty Amani Cauldron
-			i(256927),	-- Carved Idol of Nalorakk, Loa of War \\ Carved Idol of Nalorakk
-			i(256933),	-- Carved Idol of Jan'alai, Loa of Fire \\ Carved Idol of Jan'alai
-			i(256934),	-- Boiling Amani Cauldron
-			i(258290),	-- Carved Idol of Halazzi, Loa of the Hunt \\ Carved Idol of Halazzi
-			i(258549),	-- Burning Amani Pinecone
-			i(260202),	-- Visage of Akil'zon, Loa of Victory \\ Visage of Akil'zon
-			i(260514),	-- Visage of Nalorakk, Loa of War \\ Visage of Nalorakk
-			i(260515),	-- Visage of Halazzi, Loa of the Hunt \\ Visage of Halazzi
-			i(260516),	-- Visage of Jan'alai, Loa of Fire \\ Visage of Jan'alai
+
 			-- Mount
 			i(246735),	-- Rootstalker Grimlynx
 			i(252012),	-- Vibrant Petalwing
@@ -1823,7 +1795,6 @@ root(ROOTS.Unsorted, {
 			i(260635),	-- Sanguine Harrower
 
 			-- Decor
-
 			i(262614),	-- Harandar Runestone
 			i(263019),	-- Haranir Pennant
 			i(263020),	-- Ward of the Shul'ka
@@ -1833,20 +1804,10 @@ root(ROOTS.Unsorted, {
 			i(263041),	-- Replica Root of the World
 			i(263194),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce
 			i(263195),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost
-			i(263318),	-- Simple Amani Basket
-			i(263320),	-- Rope-Bound Amani Basket \\ Rope-bound Amani Basket
-
-
-
-
 			i(264002),	-- Midnight Fisher's Shop Sign
 			i(264003),	-- Midnight Herbalist's Shop Sign
-
-
-
 			i(264172),	-- Midnight Miner's Shop Sign
 			i(264173),	-- Midnight Skinner's Shop Sign
-
 			i(264178),	-- Harandar Charcuterie Board
 			i(264243),	-- Firm Haranir Pillow
 			i(264245),	-- Warm Haranir Blanket
@@ -1854,8 +1815,6 @@ root(ROOTS.Unsorted, {
 			i(264268),	-- Rutaani Birdbath
 			i(264269),	-- Rutaani Bird Perch
 			i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 \\ [DNT] [AUTOGEN] Decor 15505 Item
-			i(264333),	-- Amani Incense Burner
-			i(264350),	-- Carved Idol of Akil'zon, Loa of Victory \\ Carved Idol of Akil'zon
 
 			-- Wonder if these are rare drops?
 			i(264519),	-- Repurposed Voidwalker's Chestplate
@@ -1956,7 +1915,6 @@ root(ROOTS.Unsorted, {
 			i(265368),	-- Twilight Destroyer
 			i(265554),	-- Reinforced Amani Haft
 			i(265562),	-- Amani Warrior's Spear
-			-- Pet
 			-- Pvp
 			i(265609),	-- Princess Bloodshed
 
@@ -2111,12 +2069,8 @@ root(ROOTS.Unsorted, {
 			-- Alchemy
 			i(241292),	-- Draught of Rampant Abandon
 
-
-			-- Prof Cooking
-
 			-- Decor
 			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
-
 			i(250797),	-- Spring Blossom Ceiling Light
 			i(250798),	-- Spring Blossom Shelf
 			i(250868),	-- Crimson Crystal Column
@@ -2148,13 +2102,6 @@ root(ROOTS.Unsorted, {
 			i(258538),	-- Barebone Rope Charm
 			i(258568),	-- Spring Blossom Window
 			i(258569),	-- Spring Blossom Gazebo
-
-
-
-
-
-
-
 			i(263230),	-- Magister's Bookshelf
 			i(263290),	-- Spring Blossom Tree
 			i(263291),	-- Spring Blossom Pond
@@ -2162,8 +2109,6 @@ root(ROOTS.Unsorted, {
 			i(264252),	-- Zul'Aman Forest Hammock
 			i(264254),	-- Three-Tier Zul'Aman Shelf
 			i(264655),	-- Amani Slate Bench
-			-- Decor Prof
-
 
 			-- Boon
 			i(267235),	-- Boon of Vitality
@@ -2187,8 +2132,6 @@ root(ROOTS.Unsorted, {
 
 			-- Prof
 			i(267393),	-- Radiant Shatter
-
-
 			i(267401),	-- Dawn Shatter
 
 			-- Armor
@@ -2227,10 +2170,6 @@ root(ROOTS.Unsorted, {
 			i(267627),	-- Decorative Tavern Cheese
 			i(267628),	-- Historian's Tome
 
-			-- Armor
-			i(267642),	-- Worn Amani Heartstring Pendant
-			i(267643),	-- Worn Amani Totemstring
-
 			-- Misc
 			i(267650),	-- Blood Knight Training Manual
 			i(267652),	-- Silver Hand Squire's Libram
@@ -2244,11 +2183,6 @@ root(ROOTS.Unsorted, {
 			i(268032),	-- Conjured Illusory Adornment - Blooming Light
 			i(268033),	-- Conjured Illusory Adornment - Nature's Embrace
 			i(268034),	-- Conjured Illusory Adornment - Voidtouched
-
-
-
-
-
 
 			-- Misc
 			i(268025),	-- Heavy Stein
@@ -3319,8 +3253,6 @@ root(ROOTS.Unsorted, {
 				i(161903),	-- Dread Combatant's Badge \\ PH Combatant's Badge
 				i(161904),	-- Dread Combatant's Drape \\ PH Combatant's Drape
 				i(161905),	-- Dread Combatant's Cape \\ PH Combatant's Cape
-
-
 				i(162003),	-- Dread Combatant's Pummeler \\ PH Combatant's Pummeler
 				i(162014),	-- PH Gladiator's Reprieve
 				i(162015),	-- PH Gladiator's Reprieve
@@ -3605,7 +3537,6 @@ root(ROOTS.Unsorted, {
 				i(159224),	-- Zuldazar Hearthstone
 				i(159678),	-- Century Sauce
 				i(159783),	-- Kane's Coin Purse
-
 				i(159843),	-- Recruit Alliance Troop
 				i(159844),	-- Recruit Horde Troop
 				i(159962),	-- Set Keystone: Time Trial 3
@@ -3931,14 +3862,11 @@ root(ROOTS.Unsorted, {
 				i(153659),	-- Glyph of (NEEDS NAME)
 				i(153660),	-- Glyph of (NEEDS NAME)
 				i(154170),	-- RE-USE ME \\ Mallet of Thunderous Skins \\ Curved Diamond Awl Blade \\ Leatherworking Tool (NEEDS NAME)
-
-
 				i(154709),	-- RE-USE \\ Needle (NEEDS NAME)(DNT) \\ Needle (NEEDS NAME)
 				i(156632),	-- Silas' Stone of Transportation \\ Silus' Stone of Transportation
 				i(156633),	-- Silas' Potion of Prosperity \\ Silas' Potion of Luck \\ Silus' Potion of Luck
 				i(156634),	-- Silas' Vial of Continuous Curing \\ Silas' Phial of Perpetual Potential \\ Silus' Phial of Perpetual Potential
 				i(158292),	-- PH Cooking Reward \\ Mostly Intact Shell - PH Turtle Rare
-
 				i(158383),	-- Tidespray Pet Bandage \\ Sun-Bleached Pet Bandage
 				i(160059),	-- Amber Tanning Oil
 				i(160399),	-- Wild Flour
@@ -4478,7 +4406,6 @@ root(ROOTS.Unsorted, {
 			i(164645),	-- Challenge Card: Zaxx Dreadslice
 			i(164647),	-- Challenge Card: Marcus
 			i(164721),	-- Challenge Card: Robe-Robber Robert
-
 			i(164772),	-- Kul Tiran Orphan Whistle
 			i(164934),	-- Super Soul Splinter
 			i(164939),	-- Overstuffed Silkweave Purse

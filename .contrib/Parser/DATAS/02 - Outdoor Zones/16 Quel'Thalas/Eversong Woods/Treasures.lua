@@ -161,26 +161,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 38.1, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["questID"] = 93570,
 			}),
-			--Vista Point Flags / High Peaks
-			o(619621, {	-- Vista Point Flag
-				["coord"] = { 20.2, 79.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["questID"] = 94536,
-			}),
-			o(619647, {	-- Vista Point Flag
-				["coord"] = { 40.4, 10.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-				["questID"] = 94537,
-			}),
-			o(619648, {	-- Vista Point Flag
-				["coord"] = { 37.4, 47.9, MAP.MIDNIGHT.EVERSONG_WOODS },
-				["questID"] = 94538,
-			}),
-			o(619649, {	-- Vista Point Flag
-				["coord"] = { 54.6, 51.0, MAP.MIDNIGHT.EVERSONG_WOODS },
-				["questID"] = 94539,
-			}),
-			o(619650, {	-- Vista Point Flag
-				["coord"] = { 50.3, 84.2, MAP.MIDNIGHT.EVERSONG_WOODS },
-				["questID"] = 94540,
+			header(HEADERS.Achievement, 62288, {	-- Eversong Woods: The Highest Peaks
+				o(619621, {	-- Vista Point Flag
+					["coord"] = { 20.2, 79.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["questID"] = 94536,
+				}),
+				o(619647, {	-- Vista Point Flag
+					["coord"] = { 40.4, 10.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 94537,
+				}),
+				o(619648, {	-- Vista Point Flag
+					["coord"] = { 37.4, 47.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 94538,
+				}),
+				o(619649, {	-- Vista Point Flag
+					["coord"] = { 54.6, 51.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 94539,
+				}),
+				o(619650, {	-- Vista Point Flag
+					["coord"] = { 50.3, 84.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 94540,
+				}),
 			}),
 		}),
 	}),
