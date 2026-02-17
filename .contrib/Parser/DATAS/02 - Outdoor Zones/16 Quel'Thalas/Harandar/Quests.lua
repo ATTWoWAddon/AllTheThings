@@ -67,6 +67,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["qg"] = 133362,	-- Ambassador Moorgard
 				["coord"] = { 53.1, 15.3, STORMWIND_CITY },
 			}),
+			header(HEADERS.Achievement, 62290, {	-- Harandar: The Highest Peaks
+				q(94546),	-- Telescope Placed
+				q(94547),	-- Telescope Placed
+				q(94548),	-- Telescope Placed
+				q(94549),	-- Telescope Placed
+				q(94550, {	-- Telescope Placed
+					["coord"] = { 53.5, 58.6, MAP.MIDNIGHT.HARANDAR },
+				}),
+			}),
 			-- After "Choosing a Path", New Haranir choose a level up Campaign at Chromie
 			header(HEADERS.Achievement, 41804, {	-- One Does Not Simply Walk Into Harandar
 				header(HEADERS.AchCriteria, 41804.01, {	-- Of Caves and Cradles
@@ -1241,14 +1250,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			-- WANTED
 			q(91998, {	-- WANTED: Muckmire's Choking Vines
-				--["sourceQuests"] = { X },	-- 
+				--["sourceQuests"] = { X },	--
 				["qg"] = 249361,	-- Shul'ka Li'tya
 				["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
 				["isWeekly"] = true,	-- Probably? Blue !
 				["groups"] = { i(249404) },	-- Choking Vines (QI!)
 			}),
 			q(91982, {	-- WANTED: Toadshade's Petals
-				--["sourceQuests"] = { X },	-- 
+				--["sourceQuests"] = { X },	--
 				["qg"] = 249361,	-- Shul'ka Li'tya
 				["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
 				["isWeekly"] = true,	-- Probably? Blue !
