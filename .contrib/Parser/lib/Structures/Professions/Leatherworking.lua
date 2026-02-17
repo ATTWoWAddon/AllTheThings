@@ -1460,7 +1460,7 @@ TWW_LEATHERWORKING = sharedData({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(444077),	-- Writhing Hide
 	}),
 });
-TWW_LEATHERWORKING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_LEATHERWORKING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	r(471012),	-- Midnight Leatherworking
 	r(1265672),	-- Artisan Leatherworker's Moxie
 	r(1265681),	-- Concentration
