@@ -1801,6 +1801,11 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	if not accountWideData.Transmog then accountWideData.Transmog = {}; end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 
+	-- Notify Event Handlers that Saved Variable Data is available.
+	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
+	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
+	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
+
 	-- Clean up unused saved variables if they become deprecated after being pushed to Git
 	accountWideData.Campsite = nil
 	accountWideData.WarbandScene = nil
@@ -1891,11 +1896,6 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 
 	-- Initialize Settings
 	app.Settings:Initialize();
-
-	-- Notify Event Handlers that Saved Variable Data is available.
-	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
-	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
-	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
 	
 	-- Cache the data for the first time
 	-- TODO: Move the logic here rather than in GetDatabaseRoot itself. (this will prevent windows from killing things)
