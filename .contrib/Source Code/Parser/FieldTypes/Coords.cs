@@ -66,9 +66,48 @@ namespace ATT.FieldTypes
             {
                 Merge(newList);
             }
+            else if (value is Dictionary<long, object> newCoordFormat)
+            {
+                Merge(newCoordFormat);
+            }
             else
             {
                 LogError($"Invalid Format for merging 'coords' data: {ToJSON(value)}", _data);
+            }
+        }
+
+        private void Merge(Dictionary<long, object> newCoordFormat)
+        {
+            foreach (var keyValuePair in newCoordFormat)
+            {
+                if (keyValuePair.Value is List<object> coords)
+                {
+                    foreach (var coordObj in coords)
+                    {
+                        if (coordObj is List<object> coordData)
+                        {
+                            var coord = new Coord();
+                            coord.MapID = (int)keyValuePair.Key;
+                            if (coordData[0].TryConvert(out double eDouble, warnOnConvert: true))
+                            {
+                                coord.X = (float)eDouble;
+                            }
+                            else
+                            {
+                                LogError($"Invalid Numeric Format for Merge - {eDouble}:{coords[0]}", _data);
+                            }
+                            if (coordData[1].TryConvert(out eDouble, warnOnConvert: true))
+                            {
+                                coord.Y = (float)eDouble;
+                            }
+                            else
+                            {
+                                LogError($"Invalid Numeric Format for Merge - {eDouble}:{coords[1]}", _data);
+                            }
+                            Merge(coord);
+                        }
+                    }
+                }
             }
         }
 
