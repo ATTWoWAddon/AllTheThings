@@ -1,8 +1,8 @@
 local _, app = ...;
 
 -- Global locals
-local pairs, rawget
-	= pairs, rawget
+local next, rawget
+	= next, rawget
 
 -- CRIEVE NOTE: This might look weird, but keeping this out of the scope made it run really quite fast.
 local CacheFields;
@@ -39,7 +39,7 @@ local ArrayAppend = app.ArrayAppend
 app.SearchForFieldInAllCaches = function(field, id)
 	-- Returns: A table containing all groups which contain the provided id for a given field from all established data caches.
 	local groups = {};
-	for _,cache in pairs(AllCaches) do
+	for _,cache in next,AllCaches do
 		ArrayAppend(groups, cache[field][id]);
 	end
 	return groups;
@@ -48,7 +48,7 @@ app.SearchForManyInAllCaches = function(field, ids)
 	-- Returns: A table containing all groups which contain the provided each of the provided ids for a given field from all established data caches.
 	local groups = {};
 	local fieldCache;
-	for _,cache in pairs(AllCaches) do
+	for _,cache in next,AllCaches do
 		fieldCache = cache[field];
 		for i=1,#ids do
 			ArrayAppend(groups, fieldCache[ids[i]]);
@@ -300,11 +300,11 @@ local function VerifyRecursion(group, checked)
 		checked = { };
 		-- print("test",group.key,group[group.key]);
 	end
-	for k,o in pairs(checked) do
+	for k,o in next,checked do
 		if o.key ~= nil and o.key == group.key and o[o.key] == group[group.key] then
 			-- print("Infinite .parent Recursion Found:");
 			-- print the parent chain to the loop point
-			-- for a,b in pairs(checked) do
+			-- for a,b in next,checked do
 				-- print(b.key,b[b.key],b,"=>");
 			-- end
 			-- print(group.key,group[group.key],group);
@@ -321,11 +321,11 @@ end
 app.VerifyCache = function(cache)
 	-- Verify that the current cache does not have any recursive issues.
 	print("VerifyCache Starting...");
-	for i,keyCache in pairs(cache or currentCache) do
+	for i,keyCache in next,(cache or currentCache) do
 		print("Cache", i);
-		for k,valueCache in pairs(keyCache) do
+		for k,valueCache in next,keyCache do
 			-- print("valueCache",k);
-			for o,group in pairs(valueCache) do
+			for o,group in next,valueCache do
 				-- print("group",o);
 				if not VerifyRecursion(group) then
 					print("Caused infinite .parent recursion",group.key,group[group.key]);
@@ -348,7 +348,7 @@ local mapKeyUncachers;
 local function _CacheFields(group)
 	local mapKeys
 	local hasG = rawget(group, "g")
-	for key,value in pairs(group) do
+	for key,value in next,group do
 		local _converter = fieldConverters[key];
 		if _converter and _converter(group, value) then
 			if mapKeys then mapKeys[key] = value
@@ -361,7 +361,7 @@ local function _CacheFields(group)
 		end
 	end
 	if mapKeys then
-		for key,value in pairs(mapKeys) do
+		for key,value in next,mapKeys do
 			mapKeyUncachers[key](group, value);
 		end
 	end
@@ -417,13 +417,13 @@ fieldConverters.maps = function(group, value)
 end
 fieldConverters.flightpathID = function(group, value)
 	CacheField(group, "flightpathID", value);
-	for mapID,_ in pairs(currentMapGroup) do
+	for mapID,_ in next,currentMapGroup do
 		CacheField(group, "flightPathsByMapID", mapID);
 	end
 end
 fieldConverters.coords = function(group, coords)
 	if not IsKeyIgnoredForCoord[group.key](group) then
-		for mapID,_ in pairs(coords) do
+		for mapID,_ in next,coords do
 			cacheMapID(group, mapID);
 		end
 		return true;
@@ -449,7 +449,7 @@ mapKeyUncachers = {
 		end
 	end,
 	["coords"] = function(group, coords)
-		for mapID,_ in pairs(coords) do
+		for mapID,_ in next,coords do
 			uncacheMap(group, mapID);
 		end
 	end,
@@ -525,7 +525,7 @@ local function zoneTextAreasRunner(group, value)
 	local mapIDs, info = {}, nil;
 	local coords = group.coords
 	if coords then
-		for parentMapID,_ in pairs(coords) do
+		for parentMapID,_ in next,coords do
 			if not mapIDs[parentMapID] then
 				mapIDs[parentMapID] = 1;
 				info = C_Map_GetMapInfo(parentMapID);
@@ -558,7 +558,7 @@ local function zoneTextAreasRunner(group, value)
 			end
 		end
 	end
-	for parentMapID,_ in pairs(mapIDs) do
+	for parentMapID,_ in next,mapIDs do
 		local areaIDs = MapRemapping[parentMapID].areaIDs;
 		for i=1,#value do
 			areaIDs[value[i]] = mapID;
@@ -567,7 +567,7 @@ local function zoneTextAreasRunner(group, value)
 end
 local function findOriginalMapID(group)
 	if group.coords then
-		for mapID,_ in pairs(group.coords) do
+		for mapID,_ in next,group.coords do
 			return mapID;
 		end
 	end
@@ -726,7 +726,7 @@ fieldConverters.otherQuestData = function(group, otherFactionData)
 	if otherFactionData.__type then
 		_CacheFields(otherFactionData)
 	else
-		for key,value in pairs(otherFactionData) do
+		for key,value in next,otherFactionData do
 			_converter = fieldConverters[key]
 			if _converter and not IgnoredOtherFactionFields[key] then
 				_converter(group, value)
