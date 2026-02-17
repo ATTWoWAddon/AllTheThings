@@ -125,6 +125,36 @@ local function CalculateIndent(indent)
 	end
 	return str;
 end
+local function ConvertCoordsForGroup(group)
+	if group.g then
+		for i,o in ipairs(group.g) do
+			ConvertCoordsForGroup(o);
+		end
+	end
+	local coords = group.coords;
+	if coords then
+		-- Check to see if it has the old format.
+		if #coords > 0 then
+			-- Yup, it sure is. let's update that.
+			local newCoords = {};
+			for i,coord in ipairs(coords) do
+				local coordsForMap = newCoords[coord[3]];
+				if not coordsForMap then
+					coordsForMap = {};
+					newCoords[coord[3]] = coordsForMap;
+				end
+				tinsert(coordsForMap, { coord[1], coord[2] });
+			end
+			group.coords = newCoords;
+			--[[
+			print("OLD COORDS:");
+			DevTools_Dump(coords);
+			print("NEW COORDS:");
+			DevTools_Dump(newCoords);
+			]]--
+		end
+	end
+end
 local function GetMoneyString(amount)
 	if amount > 0 then
 		local formatted
@@ -181,7 +211,7 @@ local function ExportKeyValue(key, value)
 			for i,o in ipairs(coordsForMap) do
 				str = str .. "\t\t{ " .. o[1] .. ", " .. o[2] .. " },\n";
 			end
-			str = str .. "\t},";
+			str = str .. "\t},\n";
 		end
 		str = str .. "},";
 	elseif key == "cost" then
@@ -427,6 +457,7 @@ app:CreateWindow("Debugger", {
 	OnLoad = function(self, settings)
 		self.rawData = app.LocalizeGlobal("AllTheThingsDebugData", true);
 		self.data.g = CloneClassInstance(self.rawData);
+		ConvertCoordsForGroup(self.data);
 		for i=#self.data.options,1,-1 do
 			tinsert(self.data.g, 1, self.data.options[i]);
 		end
@@ -561,6 +592,7 @@ app:CreateWindow("Debugger", {
 								if not err and func then
 									local data,success = func();
 									if data and success then
+										ConvertCoordsForGroup(data);
 										MergeObject(self.data.g, CloneObject(data));
 										MergeObject(self.rawData, data);
 										self:Update(true);
