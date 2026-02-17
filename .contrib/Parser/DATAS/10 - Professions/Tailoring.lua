@@ -2,8 +2,6 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local EMBROIDERED_DEEP_SEA_SATIN = 158378;
-local DF_TAILORING_KNOWLEDGE = 2026;
-local TWW_TAILORING_KNOWLEDGE = 2795;
 root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAILORING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18888),	-- Quite the Quilt IV
@@ -1007,7 +1005,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_TAILORING_KNOWLEDGE, 1 }}, }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.TAILORING, 1 }}, }, {
 				r(376556),	-- Azureweave Bolt
 				r(376502),	-- Azureweave Mantle
 				r(376500),	-- Azureweave Robe
@@ -1141,7 +1139,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_TAILORING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.TAILORING),
 			},
 		},{
 			i(198609),	-- Tailoring Examples
@@ -1186,21 +1184,20 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228779),	-- Algari Tailor's Notebook
-			},
-		},{
+		n(QUESTS, {
 			q(84132, {	-- Tailoring Services Requested
+				["sourceQuests"] = { 84281 },	-- Crafting Orders: Tailoring
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228779),	-- Algari Tailor's Notebook
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_TAILORING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.TAILORING, 1 }} }, {
 				r(446940),	-- Consecrated Cloak
 				r(446939),	-- Consecrated Cord
 				r(446938),	-- Consecrated Cuffs
@@ -1289,9 +1286,15 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_TAILORING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.TAILORING),
 			},
 		},{
+			i(228779),	-- Algari Tailor's Notebook
+			q(83735, {	-- TWW Inscription Order: Tailoring
+				["name"] = "TWW Inscription Order: Tailoring",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222547 },	-- Algari Treatise on Tailoring
+			}),
 			q(83270, {	-- TWW Weekly Tailoring Knowledgepoint #1
 				["name"] = "TWW Weekly Tailoring Treasure #1",
 				["provider"] =  { "i", 225220 },	-- Chitin Needle
@@ -1305,27 +1308,23 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42794, {	-- Tailoring at Midnight
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
+				i(264174),	-- Midnight Tailor's Shop Sign (DECOR!)
+			}),
+		}),
+		n(QUESTS, {
+			q(93696, {	-- Tailoring Services Requested
+				["sourceQuests"] = { 93730 },	-- Crafting Orders: Tailoring
+				["provider"] = { "n", 243352 },	-- Galana <Tailoring Trainer>
+				["coord"] = { 48.2, 54.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
 				["groups"] = {
+					i(263460),	-- Thalassian Tailor's Notebook
 				},
 			}),
 		}),
-		--[[
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228779),	-- Algari Tailor's Notebook
-			},
-		},{
-			q(84132, {	-- Tailoring Services Requested
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-			}),
-		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_TAILORING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.TAILORING, 1 }} }, {
 				r(446940),	-- Consecrated Cloak
 				r(446939),	-- Consecrated Cord
 				r(446938),	-- Consecrated Cuffs
@@ -1414,18 +1413,26 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_TAILORING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.TAILORING),
 			},
 		},{
-			q(83270, {	-- TWW Weekly Tailoring Knowledgepoint #1
-				["name"] = "TWW Weekly Tailoring Treasure #1",
-				["provider"] =  { "i", 225220 },	-- Chitin Needle
+			i(263460),	-- Thalassian Tailor's Notebook
+			q(95137, {	-- MID Inscription Order: Tailoring
+				["name"] = "MID Inscription Order: Tailoring",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245756 },	-- Thalassian Treatise on Tailoring
 			}),
-			q(83269, {	-- TWW Weekly Tailoring Knowledgepoint #2
-				["name"] = "TWW Weekly Tailoring Treasure #2",
-				["provider"] =  { "i", 225221 },	-- Spool of Webweave
+			--[[ Needs QuestIDs
+			q(83270, {	-- MID Weekly Tailoring Knowledgepoint #1
+				["name"] = "MID Weekly Tailoring Treasure #1",
+				["provider"] =  { "i", 259202 },	-- Embroidered Memento
 			}),
-		})),--]]
+			q(83269, {	-- MID Weekly Tailoring Knowledgepoint #2
+				["name"] = "MID Weekly Tailoring Treasure #2",
+				["provider"] =  { "i", 259203 },	-- Finely Woven Lynx Collar
+			}),
+			--]]
+		})),
 	})),
 })));
 

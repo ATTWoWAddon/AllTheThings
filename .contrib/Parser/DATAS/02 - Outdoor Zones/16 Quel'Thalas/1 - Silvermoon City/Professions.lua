@@ -76,9 +76,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(256660),	-- Pattern: Sin'dorei Engineer's Gloves (RECIPE!)
 							i(256659),	-- Pattern: Sin'dorei Forgemaster's Cover (RECIPE!)
 							i(256662),	-- Pattern: Sin'dorei Herbalist's Backpack (RECIPE!)
+							i(256666),	-- Pattern: Sin'dorei Hunter's Pack (RECIPE!)
 							i(256670),	-- Pattern: Sin'dorei Jeweler's Cover (RECIPE!)
 							i(256665),	-- Pattern: Sin'dorei Leathershaper's Smock (RECIPE!)
-							i(256666),	-- Pattern: Sin'dorei Hunter's Pack (RECIPE!)
 							i(259371),	-- Pattern: Stitched Haranir Rug (RECIPE!)
 							i(259368),	-- Pattern: Sturdy Haranir Chair (RECIPE!)
 							i(256658),	-- Pattern: Thalassian Alchemist's Mixcap (RECIPE!)
@@ -411,19 +411,35 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 			}),
-			--[[
 			prof(JEWELCRAFTING, {
-				n(219087, {	-- Makir <Jewelcrafting Trainer>
-					["coord"] = { 49.5, 70.8, DORNOGAL },
-					["groups"] = TWW_JEWELCRAFTING,
+				n(243345, {	-- Amin <Jewelcrafting Trainer>
+					["coord"] = { 48.2, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_JEWELCRAFTING,
+				}),
+				n(243346, {	-- Gelanthis <Jewelcrafting Supplies>
+					["coord"] = { 48.0, 55.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(264005, {	-- Midnight Jewelcrafter's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42789,	-- Jewelcrafting at Midnight
+						}),
+					},
 				}),
 			}),
 			prof(LEATHERWORKING, {
-				n(219080, {	-- Marbb <Leatherworking Trainer>
-					["coord"] = { 54.3, 58.4, DORNOGAL },
-					["groups"] = TWW_LEATHERWORKING,
+				n(243500, {	-- Talmar <Leatherworking Trainer>
+					["coord"] = { 43.1, 55.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_LEATHERWORKING,
+				}),
+				n(243531, {	-- Zaralda <Leatherworking Supplies>
+					["coord"] = { 43.1, 56.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(264006, {	-- Midnight Leatherworker's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42786,	-- Leatherworking at Midnight
+						}),
+					},
 				}),
 			}),
+			--[[
 			prof(MINING, {
 				n(219097, {	-- Tarib <Mining Trainer>
 					["coord"] = { 52.6, 52.6, DORNOGAL },
@@ -436,13 +452,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = TWW_SKINNING,
 				}),
 			}),
+			--]]
 			prof(TAILORING, {
-				n(219094, {	-- Kotag <Tailoring Trainer>
-					["coord"] = { 54.7, 64.7, DORNOGAL },
-					["groups"] = TWW_TAILORING,
+				n(243352, {	-- Galana <Tailoring Trainer>
+					["coord"] = { 48.2, 54.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_TAILORING,
+				}),
+				n(243353, {	-- Deynna <Tailoring Supplies>
+					["coord"] = { 48.2, 54.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(251691),	-- Embroidery Floss
+						i(264174, {	-- Midnight Tailor's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42794,	-- Tailoring at Midnight
+						}),
+						i(251665),	-- Silverleaf Thread
+					},
 				}),
 			}),
-			--]]
 		}),
 	}),
 }));

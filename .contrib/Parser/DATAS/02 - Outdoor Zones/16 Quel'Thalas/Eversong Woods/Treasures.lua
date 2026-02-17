@@ -5,6 +5,8 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 		n(TREASURES, {
+			i(259369),	-- Design: Resplendent Highborne Statue (RECIPE!)
+			i(258131),	-- Pattern: Luxurious Silvermoon Lounge Cushion (RECIPE!)
 			header(HEADERS.Achievement, 62185, {	-- Ever Painting
 				o(621762),	-- Anar'alah Belore
 				o(621700),	-- Babble and Brook

@@ -897,11 +897,303 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(268365),	-- Thalassian Competitor's Staff
 		}),
 	}),
-	--[[prof(JEWELCRAFTING, {
+	prof(JEWELCRAFTING, {
+		n(DISCOVERY, {
+			r(1231132),	-- Midnight Crushing
+		}),
+		header(HEADERS.Spell, 1231127, {	-- Midnight Prospecting
+			i(242554),	-- Amani Lapis+
+			i(242722),	-- Amani Lapis++
+			i(242788),	-- Duskshrouded Stone+
+			i(242789),	-- Duskshrouded Stone++
+			i(242608),	-- Eversong Diamond+
+			i(242712),	-- Eversong Diamond++
+			i(242612),	-- Flawless Amani Lapis+
+			i(242727),	-- Flawless Amani Lapis++
+			i(242610),	-- Flawless Harandar Peridot+
+			i(242726),	-- Flawless Harandar Peridot++
+			i(242613),	-- Flawless Sanguine Garnet+
+			i(242724),	-- Flawless Sanguine Garnet++
+			i(242611),	-- Flawless Tenebrous Amethyst+
+			i(242725),	-- Flawless Tenebrous Amethyst++
+			i(242607),	-- Harandar Peridot+
+			i(242720),	-- Harandar Peridot++
+			i(242553),	-- Sanguine Garnet+
+			i(242723),	-- Sanguine Garnet++
+			i(242606),	-- Tenebrous Amethyst+
+			i(242721),	-- Tenebrous Amethyst++
+		}),
+		header(HEADERS.Spell, 1231132, {	-- Midnight Crushing
+			i(242786),	-- Crystalline Glass+
+			i(242787),	-- Crystalline Glass++
+			i(242620),	-- Glimmering Gemdust+
+			i(242621),	-- Glimmering Gemdust++
+		}),
+		n(DECOR, {
+			i(262471),	-- Bejeweled Sin'dorei Lyre (DECOR!)
+			i(262469),	-- Brilliant Phoenix Harp (DECOR!)
+			i(262613),	-- Replica Haranir Mural (DECOR!)
+			i(248965),	-- Resplendent Highborne Statue (DECOR!)
+			i(262454),	-- Shining Sin'dorei Hourglass (DECOR!)
+			i(262461),	-- Tenebrous Ren'dorei Armillary (DECOR!)
+		}),
+		filter(FINGER_F, {
+			i(240947),	-- Gleaming Copper Band
+			i(251513),	-- Loa Worshiper's Band
+			i(240949),	-- Masterwork Sin'dorei Band
+			i(241140),	-- Signet of Azerothian Blessings
+			i(240951),	-- Thalassian Competitor's Signet
+		}),
+		filter(GEMS, {
+			i(241143),	-- Cognitive Heliotrope
+			i(240865),	-- Deadly Amethyst+
+			i(240866),	-- Deadly Amethyst++
+			i(240871),	-- Deadly Garnet+
+			i(240872),	-- Deadly Garnet++
+			i(240881),	-- Deadly Lapis+
+			i(240882),	-- Deadly Lapis++
+			i(240857),	-- Deadly Peridot+
+			i(240858),	-- Deadly Peridot++
+			i(241142),	-- Determined Heliotrope
+			i(241144),	-- Enduring
+			i(240897),	-- Flawless Deadly Amethyst+
+			i(240898),	-- Flawless Deadly Amethyst++
+			i(240903),	-- Flawless Deadly Garnet+
+			i(240904),	-- Flawless Deadly Garnet++
+			i(240913),	-- Flawless Deadly Lapis+
+			i(240914),	-- Flawless Deadly Lapis++
+			i(240889),	-- Flawless Deadly Peridot+
+			i(240890),	-- Flawless Deadly Peridot++
+			i(240895),	-- Flawless Masterful Amethyst+
+			i(240896),	-- Flawless Masterful Amethyst++
+			i(240907),	-- Flawless Masterful Garnet+
+			i(240908),	-- Flawless Masterful Garnet++
+			i(240917),	-- Flawless Masterful Lapis+
+			i(240918),	-- Flawless Masterful Lapis++
+			i(240891),	-- Flawless Masterful Peridot+
+			i(240892),	-- Flawless Masterful Peridot++
+			i(240899),	-- Flawless Quick Amethyst+
+			i(240900),	-- Flawless Quick Amethyst++
+			i(240905),	-- Flawless Quick Garnet+
+			i(240906),	-- Flawless Quick Garnet++
+			i(240915),	-- Flawless Quick Lapis+
+			i(240916),	-- Flawless Quick Lapis++
+			i(240887),	-- Flawless Quick Peridot+
+			i(240888),	-- Flawless Quick Peridot++
+			i(240901),	-- Flawless Versatile Amethyst+
+			i(240902),	-- Flawless Versatile Amethyst++
+			i(240909),	-- Flawless Versatile Garnet+
+			i(240910),	-- Flawless Versatile Garnet++
+			i(240911),	-- Flawless Versatile Lapis+
+			i(240912),	-- Flawless Versatile Lapis++
+			i(240893),	-- Flawless Versatile Peridot+
+			i(240894),	-- Flawless Versatile Peridot++
+			i(240982),	-- Indecipherable Eversong Diamond+
+			i(240983),	-- Indecipherable Eversong Diamond++
+			i(240863),	-- Masterful Amethyst+
+			i(240864),	-- Masterful Amethyst++
+			i(240875),	-- Masterful Garnet+
+			i(240876),	-- Masterful Garnet++
+			i(240885),	-- Masterful Lapis+
+			i(240886),	-- Masterful Lapis++
+			i(240859),	-- Masterful Peridot+
+			i(240860),	-- Masterful Peridot++
+			i(240966),	-- Powerful Eversong Diamond+
+			i(240967),	-- Powerful Eversong Diamond++
+			i(240867),	-- Quick Amethyst+
+			i(240868),	-- Quick Amethyst++
+			i(240873),	-- Quick Garnet+
+			i(240874),	-- Quick Garnet++
+			i(240883),	-- Quick Lapis+
+			i(240884),	-- Quick Lapis++
+			i(240855),	-- Quick Peridot+
+			i(240856),	-- Quick Peridot++
+			i(240970),	-- Stoic Eversong Diamond+
+			i(240971),	-- Stoic Eversong Diamond++
+			i(240968),	-- Telluric Eversong Diamond+
+			i(240969),	-- Telluric Eversong Diamond++
+			i(240869),	-- Versatile Amethyst+
+			i(240870),	-- Versatile Amethyst++
+			i(240877),	-- Versatile Garnet+
+			i(240878),	-- Versatile Garnet++
+			i(240879),	-- Versatile Lapis+
+			i(240880),	-- Versatile Lapis++
+			i(240861),	-- Versatile Peridot+
+			i(240862),	-- Versatile Peridot++
+		}),
+		filter(MISC, {
+			i(241131),	-- Amani Lapis Prism+
+			i(241132),	-- Amani Lapis Prism++
+			i(241137),	-- Harandar Peridot Prism+
+			i(241138),	-- Harandar Peridot Prism++
+			i(241141),	-- Monologuer's Chalice
+			i(241135),	-- Sanguine Garnet Prism+
+			i(241136),	-- Sanguine Garnet Prism++
+			i(241133),	-- Tenebrous Amethyst Prism+
+			i(241134),	-- Tenebrous Amethyst Prism++
+		}),
+		filter(NECK_F, {
+			i(240950),	-- Masterwork Sin'dorei Amulet
+			i(240948),	-- Nocturnal Charm
+			i(240952),	-- Thalassian Competitor's Amulet
+			i(241139),	-- Thalassian Phoenix Torque
+			i(251073),	-- Voidstone Shielding Array
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(246527),	-- Attuned Thalassian Rune-Prism
+			i(240953),	-- Bold Biographer's Bifocals
+			i(240954),	-- Fantastic Font Focuser
+			i(246524),	-- Flawless Text Scrutinizers
+			i(240958),	-- Improved Right-Handed Magnifying Glass
+			i(246526),	-- Mage-Eye Precision Loupes
+			i(240956),	-- Silvermoon Focusing Shard
+			i(240955),	-- Silvermoon Loupes
+			i(240960),	-- Sin'dorei Enchanter's Crystal
+			i(240959),	-- Sin'dorei Jeweler's Loupes
+			i(240957),	-- Sin'dorei Scribe's Spectacles
+			i(246525),	-- Thalassian Scribe's Crystalline Lens
+		}),
+		filter(REAGENTS, {
+			i(240974),	-- Kaleidoscopic Prism+
+			i(240975),	-- Kaleidoscopic Prism++
+			i(251487),	-- Prismatic Focusing Iris+
+			i(251488),	-- Prismatic Focusing Iris++
+			i(240972),	-- Sin'dorei Lens+
+			i(240973),	-- Sin'dorei Lens++
+			i(251489),	-- Stabilizing Gemstone Bandolier+
+			i(251490),	-- Stabilizing Gemstone Bandolier++
+			i(240990),	-- Sunglass Vial+
+			i(240991),	-- Sunglass Vial++
+		}),
 	}),
 	prof(LEATHERWORKING, {
+		n(ARMOR, {
+			filter(LEATHER, {
+				i(244606),	-- Hexwoven Strand
+				i(244612),	-- Row Walker's Deflectors
+				i(244613),	-- Row Walker's Insurance
+				i(244614),	-- Row Walker's Swiftgrips
+				i(244570),	-- Silvermoon Agent's Coat
+				i(244571),	-- Silvermoon Agent's Cover
+				i(244576),	-- Silvermoon Agent's Deflectors
+				i(244575),	-- Silvermoon Agent's Handwraps
+				i(244574),	-- Silvermoon Agent's Leggings
+				i(244572),	-- Silvermoon Agent's Mantle
+				i(244569),	-- Silvermoon Agent's Sneakers
+				i(244573),	-- Silvermoon Agent's Utility Belt
+				i(244585),	-- Smuggler's Leather Footpads
+				i(244587),	-- Smuggler's Leather Tunic
+				i(244586),	-- Smuggler's Leather Wristbands
+				i(244595),	-- Smuggler's Reinforced Binding
+				i(244593),	-- Smuggler's Reinforced Gloves
+				i(244591),	-- Smuggler's Reinforced Hood
+				i(244594),	-- Smuggler's Reinforced Pants
+				i(244592),	-- Smuggler's Reinforced Shoulderguards
+				i(244557),	-- Thalassian Competitor's Leather Belt
+				i(244553),	-- Thalassian Competitor's Leather Boots
+				i(244554),	-- Thalassian Competitor's Leather Chestpiece
+				i(244559),	-- Thalassian Competitor's Leather Gloves
+				i(244555),	-- Thalassian Competitor's Leather Mask
+				i(244556),	-- Thalassian Competitor's Leather Shoulderpads
+				i(244558),	-- Thalassian Competitor's Leather Trousers
+				i(244560),	-- Thalassian Competitor's Leather Wristwraps
+				i(244601),	-- World Tree Rootwraps
+			}),
+			filter(MAIL, {
+				i(244605),	-- Axe-Flingin' Bands
+				i(244580),	-- Farstrider's Brilliant Plumes
+				i(244584),	-- Farstrider's Plated Bracers
+				i(244577),	-- Farstrider's Razor Talons
+				i(244582),	-- Farstrider's Reinforced Faulds
+				i(244578),	-- Farstrider's Scouting Vest
+				i(244583),	-- Farstrider's Sharpened Claws
+				i(244581),	-- Farstrider's Trophy Belt
+				i(244579),	-- Farstrider's Unwavering Visage
+				i(244602),	-- Ranger-General's Grips
+				i(244598),	-- Scout's Polished Gauntlets
+				i(244599),	-- Scout's Polished Legguards
+				i(244596),	-- Scout's Polished Skullcap
+				i(244597),	-- Scout's Polished Spaulders
+				i(244600),	-- Scout's Polished Wrap
+				i(244588),	-- Scout's Scaled Boots
+				i(244589),	-- Scout's Scaled Bracers
+				i(244590),	-- Scout's Scaled Ves
+				i(244563),	-- Thalassian Competitor's Chain Cowl
+				i(244568),	-- Thalassian Competitor's Chain Cuffs
+				i(244564),	-- Thalassian Competitor's Chain Epaulets
+				i(244565),	-- Thalassian Competitor's Chain Girdle
+				i(244567),	-- Thalassian Competitor's Chain Grips
+				i(244566),	-- Thalassian Competitor's Chain Leggings
+				i(244561),	-- Thalassian Competitor's Chain Stompers
+				i(244562),	-- Thalassian Competitor's Chain Tunic
+				i(244611),	-- World Tender's Barkclasp
+				i(244610),	-- World Tender's Rootslippers
+				i(244609),	-- World Tender's Trunkplate
+			}),
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(244642),	-- Blood Knight's Armor Kit+
+			i(244643),	-- Blood Knight's Armor Kit++
+			i(244640),	-- Forest Hunter's Armor Kit+
+			i(244641),	-- Forest Hunter's Armor Kit++
+			i(244644),	-- Thalassian Scout Armor Kit+
+			i(244645),	-- Thalassian Scout Armor Kit++
+		}),
+		n(DECOR, {
+			i(262449),	-- Embossed Sin'dorei Fur Rug (DECOR!)
+			i(265791),	-- Haranir Canopy Bed (DECOR!)
+			i(253457),	-- Leather-Bound Haranir Wall Shelf (DECOR!)
+			i(264244),	-- Plush Haranir Leather Pillow (DECOR!)
+			i(262589),	-- Simple Haranir Table (DECOR!)
+			i(262600),	-- Stitched Haranir Rug (DECOR!)
+			i(243090),	-- Sturdy Haranir Chair (DECOR!)
+		}),
+		filter(MISC, {
+			i(244639),	-- Void-Touched Drums
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(244629),	-- Apprentice Jeweler's Apron
+			i(244627),	-- Apprentice Smith's Apron
+			i(244620),	-- Chemist's Cap
+			i(244615),	-- Eversong Botanist's Satchel
+			i(244623),	-- Eversong Hunter's Headcover
+			i(244619),	-- Hideworker's Cover
+			i(244626),	-- Sin'dorei Alchemist's Hat
+			i(244624),	-- Sin'dorei Engineer's Gloves
+			i(244628),	-- Sin'dorei Forgemaster's Cover
+			i(244621),	-- Sin'dorei Herbalist's Backpack
+			i(244622),	-- Sin'dorei Hunter's Pack
+			i(244630),	-- Sin'dorei Jeweler's Cover
+			i(244625),	-- Sin'dorei Leathershaper's Smock
+			i(244616),	-- Skinner's Backpack
+			i(244617),	-- Skinner's Cap
+			i(244812),	-- Thalassian Alchemist's Mixcap
+			i(244814),	-- Thalassian Gemshaper's Grand Cover
+			i(244807),	-- Thalassian Herbtender's Cradle
+			i(244811),	-- Thalassian Hideshaper's Regalia
+			i(244813),	-- Thalassian Ironbender's Regalia
+			i(244810),	-- Thalassian Scrapmaster's Gauntlets
+			i(244809),	-- Thalassian Wildseeker's Stridercap
+			i(244808),	-- Thalassian Wildseeker's Workbag
+			i(244618),	-- Tinker's Handguard
+		}),
+		filter(REAGENTS, {
+			i(244603),	-- Blessed Pango Charm+
+			i(244604),	-- Blessed Pango Charm++
+			i(244674),	-- Devouring Banding+
+			i(244675),	-- Devouring Banding++
+			i(244633),	-- Infused Scalewoven Hide+
+			i(244634),	-- Infused Scalewoven Hide++
+			i(244607),	-- Primal Spore Binding+
+			i(244608),	-- Primal Spore Binding++
+			i(244631),	-- Scalewoven Hide+
+			i(244632),	-- Scalewoven Hide++
+			i(244637),	-- Silvermoon Weapon Wrap+
+			i(244638),	-- Silvermoon Weapon Wrap++
+			i(244635),	-- Sin'dorei Armor Banding+
+			i(244636),	-- Sin'dorei Armor Banding++
+		}),
 	}),
-	--]]
 	prof(MINING, {
 		n(DISCOVERY, {
 			-- Section I - Refulgent Copper
@@ -966,8 +1258,109 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(265530),	-- Plans: Ornamental Silvermoon Hanger (RECIPE!)
 	}),
 	--[[prof(SKINNING, {
-	}),
+	}),--]]
 	prof(TAILORING, {
+		n(ARMOR, {
+			i(239656),	-- Adherent's Silken Shroud
+			i(239660),	-- Arcanoweave Bracers
+			i(239661),	-- Arcanoweave Cloak
+			i(239664),	-- Arcanoweave Cord
+			i(239662),	-- Arcanoweave Treads
+			i(239670),	-- Courtly Belt
+			i(239674),	-- Courtly Cloak
+			i(239669),	-- Courtly Gloves
+			i(239668),	-- Courtly Helm
+			i(239676),	-- Courtly Pants
+			i(239672),	-- Courtly Robes
+			i(239675),	-- Courtly Shoulders
+			i(239673),	-- Courtly Slippers
+			i(239671),	-- Courtly Wrists
+			i(239648),	-- Martyr's Bindings
+			i(239652),	-- Martyr's Crown
+			i(239653),	-- Martyr's Gloves
+			i(239651),	-- Martyr's Leggings
+			i(239650),	-- Martyr's Mantle
+			i(239654),	-- Martyr's Slippers
+			i(239655),	-- Martyr's Vestments
+			i(239649),	-- Martyr's Waistwrap
+			i(239657),	-- Sunfire Bracers
+			i(239658),	-- Sunfire Cloak
+			i(239663),	-- Sunfire Sash
+			i(239659),	-- Sunfire Treads
+			i(239677),	-- Thalassian Competitor's Cloth Bands
+			i(239678),	-- Thalassian Competitor's Cloth Cloak
+			i(239679),	-- Thalassian Competitor's Cloth Gloves
+			i(239680),	-- Thalassian Competitor's Cloth Hood
+			i(239681),	-- Thalassian Competitor's Cloth Leggings
+			i(239682),	-- Thalassian Competitor's Cloth Sash
+			i(239683),	-- Thalassian Competitor's Cloth Shoulderpads
+			i(239684),	-- Thalassian Competitor's Cloth Treads
+			i(239685),	-- Thalassian Competitor's Cloth Tunic
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(240154),	-- Arcanoweave Spellthread+
+			i(240155),	-- Arcanoweave Spellthread++
+			i(240156),	-- Bright Linen Spellthread+
+			i(240157),	-- Bright Linen Spellthread++
+			i(240094),	-- Sunfire Silk Spellthread+
+			i(240133),	-- Sunfire Silk Spellthread++
+		}),
+		filter(COSMETIC, {
+			i(267448),	-- Blood-Tempered Cape
+			i(267447),	-- Farstrider's Embroidered Cover
+			i(267446),	-- Scout's Cape
+			i(267445),	-- Silvermoon Agent's Drape
+			i(267444),	-- Smuggler's Cloak
+			i(267449),	-- Spellbreaker's Shroud
+		}),
+		n(DECOR, {
+			i(262593),	-- Chic Silvermoon Pillow (DECOR!)
+			i(262352),	-- Lush Telogrus Carpet (DECOR!)
+			i(262591),	-- Luxurious Silvermoon Lounge Cushion (DECOR!)
+			i(262592),	-- Plush Silvermoon Bed (DECOR!)
+			i(262599),	-- Silvermoon Curtains (DECOR!)
+			i(262611),	-- Voidstrider Saddlebag (DECOR!)
+		}),
+		filter(MISC, {
+			i(240158),	-- Arcanoweave Reagent Rucksack
+			i(239711),	-- Bright Linen Bandage+
+			i(239713),	-- Bright Linen Bandage++
+			i(240159),	-- Bright Linen Reagent Satchel
+			i(240160),	-- Imbued Bright Linen Backpack
+			i(240161),	-- Sunfire Silk Backpack
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(239641),	-- Bright Linen Alchemy Apron
+			i(239643),	-- Bright Linen Enchanting Hat
+			i(239644),	-- Bright Linen Fishing Hat
+			i(239645),	-- Bright Linen Herbalism Hat
+			i(239646),	-- Bright Linen Tailoring Robe
+			i(239642),	-- Chef's Bright Linen Cooking Chapeau
+			i(239635),	-- Elegant Artisan's Alchemy Coveralls
+			i(239636),	-- Elegant Artisan's Cooking Hat
+			i(239637),	-- Elegant Artisan's Enchanting Hat
+			i(239638),	-- Elegant Artisan's Fishing Hat
+			i(239639),	-- Elegant Artisan's Herbalism Hat
+			i(239640),	-- Elegant Artisan's Tailoring Robe
+			i(267052),	-- Thalassian Alchemy Coveralls
+			i(267054),	-- Thalassian Chef's Chapeau
+			i(267056),	-- Thalassian Enchanter's Bonnet
+			i(267060),	-- Thalassian Herbalist's Cowl
+			i(267062),	-- Thalassian Tailor's Threads
+		}),
+		filter(REAGENTS, {
+			i(239198),	-- Arcanoweave Bolt+
+			i(239200),	-- Arcanoweave Bolt++
+			i(240166),	-- Arcanoweave Lining+
+			i(240167),	-- Arcanoweave Lining++
+			i(239700),	-- Bright Linen Bolt+
+			i(239701),	-- Bright Linen Bolt++
+			i(239702),	-- Imbued Bright Linen Bolt+
+			i(239703),	-- Imbued Bright Linen Bolt++
+			i(239201),	-- Sunfire Silk Bolt+
+			i(239202),	-- Sunfire Silk Bolt++
+			i(240164),	-- Sunfire Silk Lining+
+			i(240165),	-- Sunfire Silk Lining++
+		}),
 	}),
-	--]]
 })));

@@ -57,9 +57,15 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(228732, {	-- Flicker of Inscription Knowledge
 					currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION),
 				}),
-				i(228734),	-- Flicker of Jewelcrafting Knowledge
-				i(228736),	-- Flicker of Leatherworking Knowledge
-				i(228738),	-- Flicker of Tailoring Knowledge
+				i(228734, {	-- Flicker of Jewelcrafting Knowledge
+					currency(PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING),
+				}),
+				i(228736, {	-- Flicker of Leatherworking Knowledge
+					currency(PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING),
+				}),
+				i(228738, {	-- Flicker of Tailoring Knowledge
+					currency(PROFESSION_KNOWLEDGE.TWW.TAILORING),
+				}),
 				i(228725, {	-- Glimmer of Alchemy Knowledge
 					currency(PROFESSION_KNOWLEDGE.TWW.ALCHEMY),
 				}),
@@ -75,9 +81,15 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(228733, {	-- Glimmer of Inscription Knowledge
 					currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION),
 				}),
-				i(228735),	-- Glimmer of Jewelcrafting Knowledge
-				i(228737),	-- Glimmer of Leatherworking Knowledge
-				i(228739),	-- Glimmer of Tailoring Knowledge
+				i(228735, {	-- Glimmer of Jewelcrafting Knowledge
+					currency(PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING),
+				}),
+				i(228737, {	-- Glimmer of Leatherworking Knowledge
+					currency(PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING),
+				}),
+				i(228739, {	-- Glimmer of Tailoring Knowledge
+					currency(PROFESSION_KNOWLEDGE.TWW.TAILORING),
+				}),
 				i(225671),	-- Stack of Pentagold Reviews
 				i(225672),	-- Unraveled Instructions
 			})),
@@ -97,9 +109,15 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(246328, {	-- Flicker of Midnight Inscription Knowledge
 					currency(PROFESSION_KNOWLEDGE.MID.INSCRIPTION),
 				}),
-				i(246330),	-- Flicker of Midnight Jewelcrafting Knowledge
-				i(246332),	-- Flicker of Midnight Leatherworking Knowledge
-				i(246334),	-- Flicker of Midnight Tailoring Knowledge
+				i(246330, {	-- Flicker of Midnight Jewelcrafting Knowledge
+					currency(PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING),
+				}),
+				i(246332, {	-- Flicker of Midnight Leatherworking Knowledge
+					currency(PROFESSION_KNOWLEDGE.MID.LEATHERWORKING),
+				}),
+				i(246334, {	-- Flicker of Midnight Tailoring Knowledge
+					currency(PROFESSION_KNOWLEDGE.MID.TAILORING),
+				}),
 				i(246321, {	-- Glimmer of Midnight Alchemy Knowledge
 					currency(PROFESSION_KNOWLEDGE.MID.ALCHEMY),
 				}),
@@ -115,9 +133,15 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(246329, {	-- Glimmer of Midnight Inscription Knowledge
 					currency(PROFESSION_KNOWLEDGE.MID.INSCRIPTION),
 				}),
-				i(246331),	-- Glimmer of Midnight Jewelcrafting Knowledge
-				i(246333),	-- Glimmer of Midnight Leatherworking Knowledge
-				i(246335),	-- Glimmer of Midnight Tailoring Knowledge
+				i(246331, {	-- Glimmer of Midnight Jewelcrafting Knowledge
+					currency(PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING),
+				}),
+				i(246333, {	-- Glimmer of Midnight Leatherworking Knowledge
+					currency(PROFESSION_KNOWLEDGE.MID.LEATHERWORKING),
+				}),
+				i(246335, {	-- Glimmer of Midnight Tailoring Knowledge
+					currency(PROFESSION_KNOWLEDGE.MID.TAILORING),
+				}),
 			})),
 		}),
 	},

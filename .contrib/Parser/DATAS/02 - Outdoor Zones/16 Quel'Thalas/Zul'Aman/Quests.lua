@@ -501,6 +501,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 87317 },	-- Denial Denied
 						["provider"] = { "n", 237956 },	-- Kulzi
 						["coord"] = { 38.8, 44.8, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(256645),	-- Pattern: Blessed Pango Charm (RECIPE!)
+						},
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61452.02, {	-- [PH] Logging Camp

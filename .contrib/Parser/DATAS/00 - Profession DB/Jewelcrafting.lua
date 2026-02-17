@@ -2466,3 +2466,100 @@ i(0, 1260492);		-- Zandalari Skullfire Lamp
 --- ITEM ---
 i(257031, 1261075);	-- Draenethyst Sconce
 i(257030, 1261071);	-- Draenic Basin
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+i(0, 471011);		-- Midnight Jewelcrafting
+i(0, 1231127);		-- Midnight Prospecting
+i(0, 1265671);		-- Artisan Jewelcrafter's Moxie
+i(0, 1230494);		-- Bold Biographer's Bifocals
+i(0, 1246895);		-- Brilliant Phoenix Harp
+i(0, 1265680);		-- Concentration
+i(0, 1230455);		-- Deadly Amethyst
+i(0, 1230463);		-- Deadly Garnet
+i(0, 1230447);		-- Deadly Lapis
+i(0, 1230439);		-- Deadly Peridot
+i(0, 1230493);		-- Fantastic Font Focuser
+i(0, 1230467);		-- Flawless Deadly Garnet
+i(0, 1230460);		-- Flawless Masterful Amethyst
+i(0, 1230442);		-- Flawless Quick Peridot
+i(0, 1230453);		-- Flawless Versatile Lapis
+i(0, 1230489);		-- Gleaming Copper Band
+i(0, 1265706);		-- Ingenuity
+i(0, 1230474);		-- Kaleidoscopic Prism
+i(0, 1265619);		-- Knowledge
+i(0, 1230456);		-- Masterful Amethyst
+i(0, 1230464);		-- Masterful Garnet
+i(0, 1230448);		-- Masterful Lapis
+i(0, 1230440);		-- Masterful Peridot
+i(0, 1230499);		-- Monologuer's Chalice
+i(0, 1265606);		-- Multicraft
+i(0, 1230490);		-- Nocturnal Charm
+i(0, 1265656);		-- Quality
+i(0, 1230454);		-- Quick Amethyst
+i(0, 1230462);		-- Quick Garnet
+i(0, 1230446);		-- Quick Lapis
+i(0, 1230437);		-- Quick Peridot
+i(0, 471045);		-- Recraft Equipment
+i(0, 1265698);		-- Resourcefulness
+i(0, 1230491);		-- Silvermoon Focusing Shard
+i(0, 1230492);		-- Silvermoon Loupes
+i(0, 1230475);		-- Sin'dorei Lens
+i(0, 1265690);		-- Skill
+i(0, 1265664);		-- Sparks
+i(0, 1230476);		-- Sunglass Vial
+i(0, 1246889);		-- Tenebrous Ren'dorei Armillary
+i(0, 1230457);		-- Versatile Amethyst
+i(0, 1230465);		-- Versatile Garnet
+i(0, 1230449);		-- Versatile Lapis
+i(0, 1230441);		-- Versatile Peridot
+--- ITEM ---
+i(256701, 1242464);	-- Attuned Thalassian Rune-Prism
+i(259363, 1246891);	-- Bejeweled Sin'dorei Lyre
+i(256712, 1230501);	-- Cognitive Heliotrope
+i(256706, 1230500);	-- Determined Heliotrope
+i(256710, 1230502);	-- Enduring Heliotrope
+i(256705, 1242463);	-- Flawless Text Scrutinizers
+i(256713, 1230497);	-- Improved Right-Handed Magnifying Glass
+i(256714, 1230473);	-- Indecipherable Eversong Diamond
+i(256717, 1230479);	-- Loa Worshiper's Band
+i(256707, 1242461);	-- Mage-Eye Precision Loupes
+i(256704, 1230470);	-- Powerful Eversong Diamond
+i(256716, 1230477);	-- Prismatic Focusing Iris
+i(259366, 1246893);	-- Replica Haranir Mural
+i(259369, 1246892);	-- Resplendent Highborne Statue
+i(259372, 1246894);	-- Shining Sin'dorei Hourglass
+i(256700, 1230487);	-- Signet of Azerothian Blessings
+i(256699, 1230495);	-- Sin'dorei Enchanter's Crystal
+i(256709, 1230496);	-- Sin'dorei Jeweler's Loupes
+i(256703, 1230498);	-- Sin'dorei Scribe's Spectacles
+i(256718, 1230478);	-- Stabilizing Gemstone Bandolier
+i(256720, 1230472);	-- Stoic Eversong Diamond
+i(256708, 1230471);	-- Telluric Eversong Diamond
+i(256719, 1230504);	-- Thalassian Competitor's Amulet
+i(256702, 1230503);	-- Thalassian Competitor's Signet
+i(256715, 1230488);	-- Thalassian Phoenix Torque
+i(256711, 1242462);	-- Thalassian Scribe's Crystalline Lens
+i(256721, 1251983);	-- Voidstone Shielding Array
+--- DISCOVERY ---
+i(0, 1231132);		-- Midnight Crushing
+--- SPECIALIZATION ---
+i(0, 1230482);		-- Amani Lapis Prism
+i(0, 1230459);		-- Flawless Deadly Amethyst
+i(0, 1230451);		-- Flawless Deadly Lapis
+i(0, 1230443);		-- Flawless Deadly Peridot
+i(0, 1230468);		-- Flawless Masterful Garnet
+i(0, 1230452);		-- Flawless Masterful Lapis
+i(0, 1230444);		-- Flawless Masterful Peridot
+i(0, 1230458);		-- Flawless Quick Amethyst
+i(0, 1230466);		-- Flawless Quick Garnet
+i(0, 1230450);		-- Flawless Quick Lapis
+i(0, 1230461);		-- Flawless Versatile Amethyst
+i(0, 1230469);		-- Flawless Versatile Garnet
+i(0, 1230445);		-- Flawless Versatile Peridot
+i(0, 1230481);		-- Harandar Peridot Prism
+i(0, 1230486);		-- Masterwork Sin'dorei Amulet
+i(0, 1230485);		-- Masterwork Sin'dorei Band
+i(0, 1230484);		-- Sanguine Garnet Prism
+i(0, 1230483);		-- Tenebrous Amethyst Prism

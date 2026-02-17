@@ -21,17 +21,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 			-- Inscription
 			i(259196),	-- Brilliant Phoenix Ink
 			i(259197),	-- Loa-Blessed Rune
-			--[[
 			-- Jewelcrafting
-			i(225225),	-- Deepstone Fragment
-			i(225224),	-- Diaphanous Gem Shards
+			i(259199),	-- Harandar Stone Sample
+			i(259198),	-- Void-Touched Eversong Diamond Fragments
 			-- Leatherworking
-			i(225222),	-- Stone-Leather Swatch
-			i(225223),	-- Sturdy Nerubian Carapace
+			i(259200),	-- Amani Tanning Oil
+			i(259201),	-- Thalassian Mana Oil
 			-- Tailoring
-			i(225220),	-- Chitin Needle
-			i(225221),	-- Spool of Webweave
-			--]]
+			i(259202),	-- Embroidered Memento
+			i(259203),	-- Finely Woven Lynx Collar
 		},
 	}),
 })));

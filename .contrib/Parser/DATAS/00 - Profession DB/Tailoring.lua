@@ -1921,3 +1921,98 @@ i(0, 1260475);		-- Zanchuli Tapestry
 i(257109, 1261231);	-- Argussian Circular Rug
 i(258486, 1263360);	-- Beloved Elekk Plushie
 i(257110, 1261232);	-- Karabor Bed
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+i(0, 1228979);		-- Arcanoweave Reagent Rucksack
+i(0, 1265674);		-- Artisan Tailor's Moxie
+i(0, 1280545);		-- Blood-Tempered Cape
+i(0, 1228968);		-- Bright Linen Alchemy Apron
+i(0, 1228941);		-- Bright Linen Bandage
+i(0, 1228939);		-- Bright Linen Bolt
+i(0, 1228970);		-- Bright Linen Enchanting Hat
+i(0, 1228971);		-- Bright Linen Fishing Hat
+i(0, 1228972);		-- Bright Linen Herbalism Hat
+i(0, 1228978);		-- Bright Linen Reagent Satchel
+i(0, 1228976);		-- Bright Linen Spellthread
+i(0, 1228973);		-- Bright Linen Tailoring Robe
+i(0, 1228969);		-- Chef's Bright Linen Cooking Chapeau
+i(0, 1265682);		-- Concentration
+i(0, 1228953);		-- Courtly Belt
+i(0, 1228958);		-- Courtly Cloak
+i(0, 1228952);		-- Courtly Gloves
+i(0, 1228951);		-- Courtly Helm
+i(0, 1228956);		-- Courtly Pants
+i(0, 1228955);		-- Courtly Robes
+i(0, 1228959);		-- Courtly Shoulders
+i(0, 1228957);		-- Courtly Slippers
+i(0, 1228954);		-- Courtly Wrists
+i(0, 1280544);		-- Farstrider's Embroidered Cover
+i(0, 1228977);		-- Imbued Bright Linen Backpack
+i(0, 1228940);		-- Imbued Bright Linen Bolt
+i(0, 1265708);		-- Ingenuity
+i(0, 1265621);		-- Knowledge
+i(0, 471015);		-- Midnight Tailoring
+i(0, 1265608);		-- Multicraft
+i(0, 1265658);		-- Quality
+i(0, 471047);		-- Recraft Equipment
+i(0, 1265700);		-- Resourcefulness
+i(0, 1280543);		-- Scout's Cape
+i(0, 1280542);		-- Silvermoon Agent's Drape
+i(0, 1265683);		-- Skill
+i(0, 1280541);		-- Smuggler's Cloak
+i(0, 1265666);		-- Sparks
+i(0, 1280546);		-- Spellbreaker's Shroud
+i(0, 1228980);		-- Sunfire Silk Backpack
+--- SPECIALIZATION ---
+i(0, 1228950);		-- Adherent's Silken Shroud
+i(0, 1227926);		-- Arcanoweave Bolt
+i(0, 1228984);		-- Arcanoweave Bracers
+i(0, 1228985);		-- Arcanoweave Cloak
+i(0, 1228986);		-- Arcanoweave Treads
+i(0, 1228945);		-- Martyr's Bindings
+i(0, 1228942);		-- Martyr's Crown
+i(0, 1228943);		-- Martyr's Gloves
+i(0, 1228947);		-- Martyr's Leggings
+i(0, 1228949);		-- Martyr's Mantle
+i(0, 1228948);		-- Martyr's Slippers
+i(0, 1228946);		-- Martyr's Vestments
+i(0, 1228944);		-- Martyr's Waistwrap
+i(0, 1228981);		-- Sunfire Bracers
+i(0, 1228982);		-- Sunfire Cloak
+i(0, 1228060);		-- Sunfire Silk Bolt
+i(0, 1228983);		-- Sunfire Treads
+--- ITEM ---
+i(258126, 1228988);	-- Arcanoweave Cord
+i(258033, 1228961);	-- Arcanoweave Lining
+i(258124, 1228975);	-- Arcanoweave Spellthread
+i(258133, 1246919);	-- Chic Silvermoon Pillow
+i(258035, 1228962);	-- Elegant Artisan's Alchemy Coveralls
+i(258036, 1228963);	-- Elegant Artisan's Cooking Hat
+i(258037, 1228964);	-- Elegant Artisan's Enchanting Hat
+i(258038, 1228965);	-- Elegant Artisan's Fishing Hat
+i(258039, 1228966);	-- Elegant Artisan's Herbalism Hat
+i(258040, 1228967);	-- Elegant Artisan's Tailoring Robe
+i(258128, 1229001);	-- Lush Telogrus Carpet
+i(258131, 1229002);	-- Luxurious Silvermoon Lounge Cushion
+i(258132, 1229003);	-- Plush Silvermoon Bed
+i(258127, 1229000);	-- Silvermoon Curtains
+i(258125, 1228987);	-- Sunfire Sash
+i(258025, 1228960);	-- Sunfire Silk Lining
+i(258123, 1228974);	-- Sunfire Silk Spellthread
+i(267053, 1279123);	-- Thalassian Alchemy Coveralls
+i(267055, 1279124);	-- Thalassian Chef's Chapeau
+i(256880, 1228989);	-- Thalassian Competitor's Cloth Bands
+i(256891, 1228990);	-- Thalassian Competitor's Cloth Cloak
+i(256887, 1228991);	-- Thalassian Competitor's Cloth Gloves
+i(256888, 1228992);	-- Thalassian Competitor's Cloth Hood
+i(256889, 1228993);	-- Thalassian Competitor's Cloth Leggings
+i(256884, 1228994);	-- Thalassian Competitor's Cloth Sash
+i(256890, 1228995);	-- Thalassian Competitor's Cloth Shoulderpads
+i(256886, 1228996);	-- Thalassian Competitor's Cloth Treads
+i(256885, 1228997);	-- Thalassian Competitor's Cloth Tunic
+i(267057, 1279125);	-- Thalassian Enchanter's Bonnet
+i(267061, 1279128);	-- Thalassian Herbalist's Cowl
+i(267063, 1279129);	-- Thalassian Tailor's Threads
+i(258134, 1246929);	-- Voidstrider Saddlebag
