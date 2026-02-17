@@ -67,15 +67,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["qg"] = 133362,	-- Ambassador Moorgard
 				["coord"] = { 53.1, 15.3, STORMWIND_CITY },
 			}),
-			header(HEADERS.Achievement, 62290, {	-- Harandar: The Highest Peaks
-				q(94546),	-- Telescope Placed
-				q(94547),	-- Telescope Placed
-				q(94548),	-- Telescope Placed
-				q(94549),	-- Telescope Placed
-				q(94550, {	-- Telescope Placed
-					["coord"] = { 53.5, 58.6, MAP.MIDNIGHT.HARANDAR },
-				}),
-			}),
 			-- After "Choosing a Path", New Haranir choose a level up Campaign at Chromie
 			header(HEADERS.Achievement, 41804, {	-- One Does Not Simply Walk Into Harandar
 				header(HEADERS.AchCriteria, 41804.01, {	-- Of Caves and Cradles
