@@ -130,6 +130,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	filter(MISC, {
 	}),
 	filter(REAGENTS, {
+		i(236963),	-- Bright Linen+
+		i(236965),	-- Bright Linen++
+		i(237015),	-- Sunfire Silk+
+		i(237016),	-- Sunfire Silk++
+		i(237017),	-- Arcanoweave+
+		i(237018),	-- Arcanoweave++
 		i(251285),	-- Petrified Root (TODO: probably delves only)
 		i(242640),	-- Plant Protein
 		i(242639),	-- Practically Pork

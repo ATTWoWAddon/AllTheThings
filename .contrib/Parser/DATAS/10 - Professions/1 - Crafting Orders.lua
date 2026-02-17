@@ -94,6 +94,10 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(225672),	-- Unraveled Instructions
 			})),
 			expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+				i(246447),	-- Apprentice's Scribbles
+				i(246450),	-- Artisan's Consortium Gold Star
+				i(246585),	-- Artisan's Consortium Payout
+				i(246448),	-- Artisan's Ledger
 				i(246320, {	-- Flicker of Midnight Alchemy Knowledge
 					currency(PROFESSION_KNOWLEDGE.MID.ALCHEMY),
 				}),
@@ -142,6 +146,7 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(246335, {	-- Glimmer of Midnight Tailoring Knowledge
 					currency(PROFESSION_KNOWLEDGE.MID.TAILORING),
 				}),
+				i(246449),	-- Mentor's Helpful Handiwork
 			})),
 		}),
 	},

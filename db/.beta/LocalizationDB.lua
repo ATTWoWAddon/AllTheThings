@@ -1666,11 +1666,6 @@ localize(L.HEADER_NAMES, {
 	[-720] = "Mechagnome Endeavor",
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
 	[-722] = "Diablo II: Resurrected - Reign of Warlock",
-	[-724] = "Elders of Eastern Kingdoms",
-	[-725] = "Elders of Kalimdor",
-	[-726] = "Elders of the Alliance",
-	[-727] = "Elders of the Dungeons",
-	[-728] = "Elders of the Horde",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2365,11 +2360,6 @@ localize(L.HEADER_ICONS, {
 	[-720] = 7301741,
 	[-721] = 450908,
 	[-722] = 1529348,
-	[-724] = 135982,
-	[-725] = 135982,
-	[-726] = 135982,
-	[-727] = 135982,
-	[-728] = 135982,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -25319,11 +25309,6 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Netherportal",
 	[-709] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
 	[-710] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
-	[-724] = "Die Urahnen der Östlichen Königreiche",
-	[-725] = "Die Urahnen von Kalimdor",
-	[-726] = "Die Urahnen der Allianz",
-	[-727] = "Die Urahnen der Dungeons",
-	[-728] = "Die Urahnen der Horde",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -32597,11 +32582,6 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Portail de Néant",
 	[-709] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
 	[-710] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
-	[-724] = "Les Anciens des royaumes de l'Est",
-	[-725] = "Les Anciens de Kalimdor",
-	[-726] = "Les Anciens de l'Alliance",
-	[-727] = "Les Anciens des donjons",
-	[-728] = "Les Anciens de la Horde",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -39491,11 +39471,6 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Portale Fatuo",
 	[-709] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
-	[-724] = "Anziani dei Regni Orientali",
-	[-725] = "Anziani di Kalimdor",
-	[-726] = "Anziani dell'Alleanza",
-	[-727] = "Anziani delle Spedizioni",
-	[-728] = "Anziani dell'Orda",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -45761,11 +45736,6 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Portal Etéreo",
 	[-709] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
-	[-724] = "Anciãos dos Reinos do Leste",
-	[-725] = "Anciãos de Kalimdor",
-	[-726] = "Anciãos da Aliança",
-	[-727] = "Anciãos das Masmorras",
-	[-728] = "Anciãos da Horda",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -53202,11 +53172,6 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Врата Пустоты",
 	[-709] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
 	[-710] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
-	[-724] = "Предки Восточных королевств",
-	[-725] = "Предки Калимдора",
-	[-726] = "Предки Альянса",
-	[-727] = "Предки в подземельях",
-	[-728] = "Предки Орды",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -60181,11 +60146,6 @@ localize(L.HEADER_NAMES, {
 	[-696] = "황천의 차원문",
 	[-709] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
-	[-724] = "동부 왕국의 장로",
-	[-725] = "칼림도어의 장로",
-	[-726] = "얼라이언스의 장로",
-	[-727] = "던전의 장로",
-	[-728] = "호드의 장로",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -67264,11 +67224,6 @@ localize(L.HEADER_NAMES, {
 	[-696] = "Portal abisal",
 	[-709] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r Nota llamativa",
-	[-724] = "Ancestros de los Reinos del Este",
-	[-725] = "Ancestros de Kalimdor",
-	[-726] = "Ancestros de la Alianza",
-	[-727] = "Ancestros de las mazmorras",
-	[-728] = "Ancestros de la Horda",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -74216,7 +74171,6 @@ localize(L.HEADER_NAMES, {
 	[-656] = "Gremio de luchadores",
 	[-674] = "Abismos MID T1",
 	[-710] = "|cFFFFFFFFStep 1:|rNota sospechosa",
-	[-727] = "Ancestros de los calabozos",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-29] = "Contiene cosas que se otorgan como recompensa al completar este evento.",
@@ -75592,11 +75546,6 @@ localize(L.HEADER_NAMES, {
 	[-708] = "雷蛇",
 	[-709] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
 	[-710] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
-	[-724] = "东部王国的长者",
-	[-725] = "卡利姆多的长者",
-	[-726] = "联盟的长者",
-	[-727] = "地下城中的长者",
-	[-728] = "部落的长者",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",
@@ -82437,11 +82386,6 @@ localize(L.HEADER_NAMES, {
 	[-694] = "燃燒的遠征：經典週年紀念版 - 外域升級",
 	[-696] = "虛空傳送門",
 	[-703] = "暗黑破壞神IV：憎恨之王",
-	[-724] = "東部王國的長者",
-	[-725] = "卡林多的長者",
-	[-726] = "聯盟的長者",
-	[-727] = "地城中的長者",
-	[-728] = "部落的長者",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成探究時獎勵的東西。",

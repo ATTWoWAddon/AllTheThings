@@ -376,6 +376,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- Season 3
 				},
 			}),
+			n(243160, {	-- Zalle <Reagents>
+				["coord"] = { 44.9, 55.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					i(188152),	-- Gateway Control Shard
+				},
+			}),
 		}),
 	}),
 }));
