@@ -16,6 +16,9 @@ root(ROOTS.Unsorted, {
 				i(268534),	-- Sanctum's Decree
 			}),
 			n(DECOR, {
+				-- Housing
+				i(269010),	-- Essence of Lumber
+
 				i(253497),	-- Embroidered Sunfury Chair
 				i(256042),	-- Silvermoon Bench
 				i(256043),	-- Silvermoon Fencepost
@@ -33,6 +36,23 @@ root(ROOTS.Unsorted, {
 				i(267645),	-- Dreamrift Vanquisher's Argent Trophy
 				i(267646),	-- March on Quel'Danas Vanquisher's Argent Trophy
 				i(268049),	-- Voidspire Vanquisher's Argent Trophy
+				i(258268),	-- Waxmaster's Candle Rack
+				i(264343),	-- Cosmic Void Gravitational Orb
+				i(264483),	-- Cosmic Void Campfire
+				i(250793),	-- Lush Garden Trellis
+				i(250794),	-- Colorful White Noblegarden Egg
+				i(250795),	-- Colorful Blue Noblegarden Egg
+				i(250796),	-- Colorful Purple Noblegarden Egg
+				i(252419),	-- Lush Garden Fungal Basin
+				i(253546),	-- Lush Garden Butterfly Sconce
+				i(253547),	-- Spring Blossom Wreath
+				i(254417),	-- Spring Blossom Hanging Chair
+				i(258294),	-- Lush Garden Gnome-Like Statue
+				i(258567),	-- Lush Garden Fungal Chair
+				i(258888),	-- Lush Garden Fungal Fountain
+				i(246857),	-- "Shu'halo Perspective" Painting
+				i(259354),	-- Brown Paper Sack
+				i(269269),	-- Devouring Ritual Spire \\ Devouring Host Ritual Spire
 			}),
 			filter(MISC, {
 				i(257024),	-- A Lost Hunting Knife
@@ -44,6 +64,7 @@ root(ROOTS.Unsorted, {
 				i(268112),	-- Argunite Beacon
 				i(268115),	-- Overbaked Donut
 				i(268116),	-- Twin-Flame Holder
+				i(259221),	-- Eagle Talon
 
 				-- Midnight Preseason
 				i(268485),	-- Victorious Stormarion Pinnacle Cache
@@ -54,6 +75,14 @@ root(ROOTS.Unsorted, {
 
 				-- Cache
 				i(268545),	-- Preyseeker's Adventurer Chest
+				i(269701),	-- Surplus Bag of Party Favors
+				i(269702),	-- Overflowing Abundant Satchel
+				i(269704),	-- Victorious Stormarion Cache
+
+				-- prey
+				i(269005),	-- Preyseeker's Glinting Coin Pouch
+				i(269006),	-- Preyseeker's Gleaming Coin Pouch
+				i(269007),	-- Preyseeker's Glittering Coin Pouch
 			}),
 			filter(QUEST_ITEMS, {
 				i(246129),	-- Outsider's Gear
@@ -64,9 +93,53 @@ root(ROOTS.Unsorted, {
 				i(253210),	-- Soothsayer's Signet
 				i(253211),	-- Smuggler's Signet
 				i(268551),	-- Scroll of Reflection
+				i(248723),	-- Stolen Documents
+				i(269022),	-- Healing Waters of Ahl'ua
+				i(269023),	-- Phytogenic Poison Part
 			}),
 			n(SPECIAL, {
 				i(268274),	-- Blinky's Collar
+			}),
+			filter(TOYS, {
+				i(268695),	-- Camera \\ Pin-o-Matic Camera \\ Test Sharing Camera
+				i(268728),	-- Saptor Salve
+			}),
+			n(WEAPONS, {
+				i(268921),	-- Staff of the Great Dark
+				i(269972),	-- Arathi Miner's Pickaxe
+				i(269973),	-- Warglaive of Unyielding Will
+				i(269974),	-- Earthen Traveler's Crusher
+				i(269978),	-- Earthen Traveler's Breaker
+				i(269979),	-- Grateful Goblin's Glaive
+				i(269980),	-- Tuskcarver's Warglaive
+				i(269981),	-- Paintmaker's Edge
+				i(269982),	-- Spore-Touched Glaive
+				i(269985),	-- Azure Guardian's Sword
+				i(269986),	-- Dreamer's Spellblade
+				i(269987),	-- Vault Guard's Axe
+				i(269988),	-- Peacekeeper's Axe
+			}),
+			n(SPECIAL, {
+				-- Haranir Class Trial?
+				i(270430),	-- Windpetal Haranir Crook
+				i(270431),	-- Haranir Footlocker
+				i(270433),	-- Dawnroot Haranir Quarterstaff
+				i(270439),	-- Wildgrove Haranir Spear
+				i(270440),	-- Rootbound Haranir Handaxe
+				i(270441),	-- Thornpierce Haranir Chopper
+				i(270442),	-- Rootbound Haranir Chopper
+				i(270443),	-- Wildbloom Haranir Bastion
+				i(270444),	-- Wildbloom Haranir Carver
+			}),
+			filter(MOUNTS, {
+				-- Pet/Mount?
+				i(268730),	-- Nether-Warped Egg \\ Void-Touched Egg
+			}),
+			n(PROFESSIONS, {
+				-- Cooking
+				i(268680),	-- Hearty Flora Frenzy
+				-- BS
+				i(265538),	-- Plans: Ornate Crafter's Tongs
 			}),
 		})),
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
@@ -583,6 +656,23 @@ root(ROOTS.Unsorted, {
 				i(265016),	-- Echo of Radiance
 				-- Lockbox
 				i(264475),	-- Umbral Tin Lockbox
+
+				--misc
+				i(263354),	-- Filling the Void in Your Heart
+				i(263379),	-- Personal Advertising Platform
+				i(263380),	-- Recruitment Pamphlets
+				-- DElve
+				i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
+				-- Cache
+				i(250117),	-- Cache of Quel'Thalas Treasures
+				-- Abundance
+				i(250755),	-- Pouch of Mystic Grindings
+				--Arcantina
+				i(250872),	-- Scarred Spear
+				--Delve?
+				i(257379),	-- Player Experience
+				-- Boon?
+				i(260910),	-- Boon of Vitality
 			}),
 			filter(QUEST_ITEMS, {
 				i(235651),	-- Conveniently-Shaped Claw
@@ -795,6 +885,9 @@ root(ROOTS.Unsorted, {
 				i(265035),	-- Medusa \\ [PH] Purple Siphoid
 				i(265609),	-- Princess Bloodshed
 				i(264366),	-- Razeshi C.
+				i(260341),	-- Star the Lucky Dragon
+				i(260360),	-- Gummi the Glow Wyrm
+				i(262881),	-- Lil' Staropod
 			}),
 			n(SPECIAL, {
 				-- Abundance
@@ -936,8 +1029,14 @@ root(ROOTS.Unsorted, {
 				i(257447),	-- Prowling Shredclaw
 				i(257448),	-- Frenzied Shredclaw
 				i(257176),	-- Duskbrute Harrower
+				i(262438),	-- Fantastical Goblin Waveshredder
+				i(262661),	-- Ghastropod
+				i(262909),	-- Hypo-Speed X6000
+				i(264273),	-- Fel Spirehawk
 			}),
 			n(PVP, {
+				i(255269),	-- Galactic Aspirant's Chain Sabatons
+				i(255288),	-- Galactic Aspirant's Chain Belt
 				i(255357),	-- Galactic Gladiator's Silk Robe
 				i(255358),	-- Galactic Gladiator's Silk Gown
 				i(255359),	-- Galactic Gladiator's Silk Slippers
@@ -1806,6 +1905,10 @@ root(ROOTS.Unsorted, {
 				i(267004),	-- Twinblade of the Devourer
 				i(260382),	-- Sentinel's Night Bow
 				i(260386),	-- Farstrider's Forest Bow
+				i(262585),	-- Pristine Lunch Bag
+				i(262587),	-- Brown Lunch Bag
+				i(262588),	-- Sack Lunch
+				i(262660),	-- Egg Farmer's Backpack
 			}),
 			n(DECOR, {
 				i(260727),	-- Alliance Doormat
@@ -1911,6 +2014,30 @@ root(ROOTS.Unsorted, {
 				i(266887),	-- Voidspire Vanquisher's Gleaming Trophy
 				-- Promo?
 				i(267265),	-- Counterfeit Dark Heart of Galakrond
+
+				i(255643),	-- Silvermoon Barrel
+				i(264717),	-- Amani Warding Hex
+				i(263383),	-- Corked Bottle of Liquid Mystery
+				i(264278),	-- Sturdy Portable Ice Chest
+				i(264279),	-- Tall Corked Bottle of Liquid Mystery
+				i(264280),	-- Short Corked Bottle of Liquid Mystery
+				i(264281),	-- Preserved Gift of Gilneas
+				i(264282),	-- Bluebird's Golden Cage
+				i(264283),	-- Backboard and Hoop Playset
+				i(264384),	-- Zapmaster Viewer 3000
+				i(264396),	-- Naturally Elegant Doormat
+				i(264397),	-- Simply Adorned Vase and Flowers
+				i(253254),	-- Lunar Celebrant's Cradle
+				i(253255),	-- Lunar Celebrant's Wide Pillow Roll
+				i(253256),	-- Lunar Celebrant's Pillow Roll
+				i(253290),	-- Lunar Celebrant's Ornate Vanity
+				i(253291),	-- Lunar Celebrant's Compact
+				i(253292),	-- Lunar Celebrant's Bamboo Canister
+				i(253293),	-- Lunar Celebrant's Tea Tray
+				i(253294),	-- Lunar Celebrant's Teacup
+				i(253295),	-- Lunar Celebrant's Teapot
+				i(253297),	-- Lunar Celebrant's Vase with Maple Branch
+				i(258742),	-- Scroll of the Adherent
 			}),
 			n(RARES, {
 				i(264519),	-- Repurposed Voidwalker's Chestplate
@@ -1986,6 +2113,7 @@ root(ROOTS.Unsorted, {
 				i(264911),	-- Forest Hunter's Arc
 				i(264913),	-- Focused Netherslicer
 			}),
+
 			--[[ Save if Darkal Needs
 			header(HEADERS.LFGDungeon, 3160, {	-- Crown of the Cosmos
 				-- Order
