@@ -715,6 +715,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	filter(MISC, {
+		currency(738),	-- Lesser Charm of Good Fortune
 		i(89112),	-- Mote of Harmony
 		i(74849, {	-- Pink Turnip
 			["description"] = "Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",
