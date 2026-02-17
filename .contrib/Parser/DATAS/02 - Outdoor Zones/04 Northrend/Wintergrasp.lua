@@ -643,13 +643,12 @@ root(ROOTS.Zones, {
 						["lvl"] = 75,
 					}),
 				}),
-				-- #if BEFORE 4.0.1
 				n(REWARDS, {
 					currency(161, {	-- Stone Keeper's Shard
-						["description"] = "While your faction controls Wintergrasp on your layer, this will drop from killing bosses in dungeons and RDF.",
+						["description"] = "While your faction controls Wintergrasp on your layer, this will drop from killing bosses in Wrath dungeons and RDF.",
+						["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
 					});
 				}),
-				-- #endif
 				n(VENDORS, {
 					["description"] = "These vendors will only show if your faction controls Wintergrasp.",
 					["groups"] = {
