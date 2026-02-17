@@ -1925,6 +1925,7 @@ i(257110, 1261232);	-- Karabor Bed
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+--- TRAINER ---
 i(0, 1228979);		-- Arcanoweave Reagent Rucksack
 i(0, 1265674);		-- Artisan Tailor's Moxie
 i(0, 1280545);		-- Blood-Tempered Cape

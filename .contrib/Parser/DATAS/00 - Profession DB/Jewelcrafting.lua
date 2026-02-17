@@ -2470,6 +2470,7 @@ i(257030, 1261071);	-- Draenic Basin
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+--- TRAINER ---
 i(0, 471011);		-- Midnight Jewelcrafting
 i(0, 1231127);		-- Midnight Prospecting
 i(0, 1265671);		-- Artisan Jewelcrafter's Moxie

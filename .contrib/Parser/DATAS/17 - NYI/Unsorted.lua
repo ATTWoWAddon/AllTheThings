@@ -498,53 +498,22 @@ root(ROOTS.Unsorted, {
 			i(242251),	-- [NYI] Magical Broom Pet
 
 			-- Cooking
-			i(242272),	-- Quel'dorei Medley
-			i(242273),	-- Blooming Feast
-			i(242274),	-- Champion's Bento
-			i(242275),	-- Royal Roast
-			i(242276),	-- Braised Blood Hunter
-			i(242277),	-- Crimson Calamari
-			i(242278),	-- Tasty Smoked Tetra
-			i(242279),	-- Baked Lucky Loa
-			i(242280),	-- Buttered Root Crab
-			i(242281),	-- Glitter Skewers
-			i(242282),	-- Null and Void Plate
-			i(242283),	-- Sun-Seared Lumifin
-			i(242284),	-- Void-Kissed Fish Rolls
-			i(242285),	-- Warped Wise Wings
-			i(242286),	-- Fel-Kissed Filet
-			i(242287),	-- Arcano Cutlets
-			i(242288),	-- Twilight Angler's Medley
-			i(242289),	-- Spellfire Filet
-			i(242290),	-- Wise Tails
-			i(242291),	-- Fried Bloomtail
-			i(242292),	-- Eversong Pudding
-			i(242293),	-- Sunwell Delight
-			i(242294),	-- Felberry Figs
-			i(242295),	-- Hearthflame Supper
-			i(242296),	-- Bloodthistle-wrapped Cutlets
-			i(242297),	-- Mana Lily Tea \\ Bloompetal Tea
-			i(242298),	-- Argentleaf Tea \\ Peacebloom Tea
-			i(242299),	-- Sanguithorn Tea \\ Bloodthisle Tea
-			i(242300),	-- Tranquility Bloom Tea \\ Mageroyal Tea
-			i(242301),	-- Azeroot Tea \\ Earthroot Tea
-			i(242302),	-- Bloom Skewers
-			i(242303),	-- Mana-Infused Stew
-			i(242304),	-- Spiced Biscuits
-			i(242305),	-- Silvermoon Standard
-			i(242306),	-- Forager's Medley
-			i(242307),	-- Quick Sandwich
-			i(242308),	-- Portable Snack
-			i(242309),	-- Farstrider Rations
 			i(242530),	-- [PH] Vegetarian Recipe
 			i(242531),	-- [PH] Vegetarian Recipe
 			i(242532),	-- [PH] Vegetarian Recipe
-			i(242641),	-- Cooking Spirits
-			i(242642),	-- Thalassian Herbs
-			i(242643),	-- A Big Ol' Stick of Butter
-			i(242645),	-- Ripened Vegetable Assortment
-			i(242646),	-- Pouch of Spices
-			i(242647),	-- Tavern Fixings
+
+			i(242279),	-- Baked Lucky Loa
+
+
+
+
+
+
+
+			i(266986),	-- Hearty Quel'dorei Medley
+
+
+
 
 			-- JC
 
@@ -553,39 +522,12 @@ root(ROOTS.Unsorted, {
 			i(242635),	-- Twilight's Blade - Armor - Tabard \\ Twilight's Blade Tabard
 
 			-- Cooking
-			i(242744),	-- Hearty Quel'dorei Medley
-			i(242745),	-- Hearty Blooming Feast
-			i(242746),	-- Hearty Champion's Bento
-			i(242747),	-- Hearty Royal Roast
-			i(242748),	-- Hearty Braised Blood Hunter
-			i(242749),	-- Hearty Crimson Calamari
-			i(242750),	-- Hearty Tasty Smoked Tetra
+
+
 			i(242751),	-- Hearty Rootland Surprise
-			i(242752),	-- Hearty Buttered Root Crab
-			i(242753),	-- Hearty Glitter Skewers
-			i(242754),	-- Hearty Null and Void Plate
-			i(242755),	-- Hearty Sun-Seared Lumifin
-			i(242756),	-- Hearty Void-Kissed Fish Rolls
-			i(242757),	-- Hearty Warped Wise Wings
-			i(242758),	-- Hearty Fel-Kissed Filet
-			i(242759),	-- Hearty Arcano Cutlets
-			i(242760),	-- Hearty Twilight Angler's Medley
-			i(242761),	-- Hearty Spellfire Filet
-			i(242762),	-- Hearty Wise Tails
-			i(242763),	-- Hearty Fried Bloomtail
-			i(242764),	-- Hearty Eversong Pudding
-			i(242765),	-- Hearty Sunwell Delight
-			i(242766),	-- Hearty Felberry Figs
-			i(242767),	-- Hearty Hearthflame Supper
-			i(242768),	-- Hearty Bloodthistle-Wrapped Cutlets
-			i(242769),	-- Hearty Bloom Skewers
-			i(242770),	-- Hearty Mana-Infused Stew
-			i(242771),	-- Hearty Spiced Biscuits
-			i(242772),	-- Hearty Silvermoon Standard
-			i(242773),	-- Hearty Forager's Medley
-			i(242774),	-- Hearty Quick Sandwich
-			i(242775),	-- Hearty Portable Snack
-			i(242776),	-- Hearty Farstrider Rations
+
+
+
 
 			-- JC
 
@@ -1168,7 +1110,7 @@ root(ROOTS.Unsorted, {
 			i(253402),	-- Scorching Polearm
 
 			-- COoking
-			i(253403),	-- Thalassian Filet
+
 
 			-- Anglers
 			i(253516),	-- Depthdiver's Used Tank \\ Oxygen Tank II
@@ -1510,10 +1452,10 @@ root(ROOTS.Unsorted, {
 
 
 			-- Cooking
-			i(255845),	-- Silvermoon Parade
-			i(255846),	-- Rootland Celebration
-			i(255847),	-- Impossibly Royal Roast
-			i(255848),	-- Flora Frenzy
+
+
+
+
 
 			-- PvP
 			i(256553),	-- Galactic Equipment Chest
@@ -2685,7 +2627,7 @@ root(ROOTS.Unsorted, {
 			i(263318),	-- Simple Amani Basket
 			i(263320),	-- Rope-Bound Amani Basket \\ Rope-bound Amani Basket
 
-			i(263999),	-- Midnight Cook's Shop Sign
+
 
 
 			i(264002),	-- Midnight Fisher's Shop Sign
@@ -2948,10 +2890,7 @@ root(ROOTS.Unsorted, {
 			i(266982),	-- Tabard of the Nebulous Collapsed Star
 			i(266983),	-- Pauldrons of the Nebulous Collapsed Star
 			i(266984),	-- Shawl of the Nebulous Collapsed Star
-			i(266985),	-- Hearty Silvermoon Parade
-			i(266986),	-- Hearty Quel'dorei Medley
-			i(266996),	-- Hearty Rootland Celebration
-			i(267000),	-- Hearty Flora Frenzy
+
 			i(267004),	-- Twinblade of the Devourer
 			i(267005),	-- Rakan's Totem
 			i(267040),	-- Sea Caller
@@ -2965,7 +2904,6 @@ root(ROOTS.Unsorted, {
 
 
 			-- Prof Cooking
-			i(242644),	-- Mana-Wyrm Essence
 
 			-- Decor
 			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)

@@ -205,10 +205,86 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(237916),	-- Thalassian Competitor's Sword
 		}),
 	}),
-	--[[
 	prof(COOKING, {
+		i(242287),	-- Arcano Cutlets
+		i(242298),	-- Argentleaf Tea
+		i(242301),	-- Azeroot Tea
+		i(242296),	-- Bloodthistle-wrapped Cutlets
+		i(242302),	-- Bloom Skewers
+		i(242273),	-- Blooming Feast
+		i(242276),	-- Braised Blood Hunter
+		i(242280),	-- Buttered Root Crab
+		i(242274),	-- Champion's Bento
+		i(242277),	-- Crimson Calamari
+		i(242292),	-- Eversong Pudding
+		i(242309),	-- Farstrider Rations
+		i(242286),	-- Fel-Kissed Filet
+		i(242294),	-- Felberry Figs
+		i(255848),	-- Flora Frenzy
+		i(242306),	-- Forager's Medley
+		i(242291),	-- Fried Bloomtail
+		i(242281),	-- Glitter Skewers
+		i(242295),	-- Hearthflame Supper
+		i(242759),	-- Hearty Arcano Cutlets
+		i(242768),	-- Hearty Bloodthistle-Wrapped Cutlets
+		i(242769),	-- Hearty Bloom Skewers
+		i(242745),	-- Hearty Blooming Feast
+		i(242748),	-- Hearty Braised Blood Hunter
+		i(242752),	-- Hearty Buttered Root Crab
+		i(242746),	-- Hearty Champion's Bento
+		i(242749),	-- Hearty Crimson Calamari
+		i(242764),	-- Hearty Eversong Pudding
+		i(242776),	-- Hearty Farstrider Rations
+		i(242758),	-- Hearty Fel-Kissed Filet
+		i(242766),	-- Hearty Felberry Figs
+		i(267000),	-- Hearty Flora Frenzy
+		i(242773),	-- Hearty Forager's Medley
+		i(242763),	-- Hearty Fried Bloomtail
+		i(242753),	-- Hearty Glitter Skewers
+		i(242767),	-- Hearty Hearthflame Supper
+		i(268679),	-- Hearty Impossibly Royal Roast
+		i(242770),	-- Hearty Mana-Infused Stew
+		i(242754),	-- Hearty Null and Void Plate
+		i(242775),	-- Hearty Portable Snack
+		i(242744),	-- Hearty Quel'dorei Medley
+		i(242774),	-- Hearty Quick Sandwich
+		i(266996),	-- Hearty Rootland Celebration
+		i(242747),	-- Hearty Royal Roast
+		i(266985),	-- Hearty Silvermoon Parade
+		i(242772),	-- Hearty Silvermoon Standard
+		i(242761),	-- Hearty Spellfire Filet
+		i(242771),	-- Hearty Spiced Biscuits
+		i(242755),	-- Hearty Sun-Seared Lumifin
+		i(242765),	-- Hearty Sunwell Delight
+		i(242750),	-- Hearty Tasty Smoked Tetra
+		i(242760),	-- Hearty Twilight Angler's Medley
+		i(242756),	-- Hearty Void-Kissed Fish Rolls
+		i(242757),	-- Hearty Warped Wise Wings
+		i(242762),	-- Hearty Wise Tails
+		i(255847),	-- Impossibly Royal Roast
+		i(242297),	-- Mana Lily Tea
+		i(242303),	-- Mana-Infused Stew
+		i(242282),	-- Null and Void Plate
+		i(242308),	-- Portable Snack
+		i(242272),	-- Quel'dorei Medley
+		i(242307),	-- Quick Sandwich
+		i(255846),	-- Rootland Celebration
+		i(242275),	-- Royal Roast
+		i(242299),	-- Sanguithorn Tea
+		i(255845),	-- Silvermoon Parade
+		i(242305),	-- Silvermoon Standard
+		i(242289),	-- Spellfire Filet
+		i(242304),	-- Spiced Biscuits
+		i(242283),	-- Sun-Seared Lumifin
+		i(242293),	-- Sunwell Delight
+		i(242278),	-- Tasty Smoked Tetra
+		i(253403),	-- Thalassian Filet
+		i(242300),	-- Tranquility Bloom Tea
+		i(242288),	-- Twilight Angler's Medley
+		i(242284),	-- Void-Kissed Fish Rolls
+		i(242285),	-- Warped Wise Wings
+		i(242290),	-- Wise Tails
 	}),
-	--]]
 	prof(ENCHANTING, {
 		header(HEADERS.Spell, 1280952, {	-- Disenchant
 			i(267655),	-- Brimming Mana Shard

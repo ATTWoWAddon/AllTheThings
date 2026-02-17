@@ -2631,6 +2631,7 @@ i(0, 1269498);		-- Snowfall Tribe Scare-Totem
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+--- TRAINER ---
 i(0, 471012);		-- Midnight Leatherworking
 i(0, 1237560);		-- Apprentice Jeweler's Apron
 i(0, 1237551);		-- Apprentice Smith's Apron

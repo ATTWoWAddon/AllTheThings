@@ -313,33 +313,34 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(241451, {	-- Eriden <Blacksmithing Supplies>
 					["coord"] = { 43.6, 51.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(243060),	-- Luminant Flux
 						i(263998, {	-- Midnight Blacksmith's Shop Sign (DECOR!)
 							["sourceAchievement"] = 42792,	-- Blacksmithing at Midnight
 						}),
+						i(243060),	-- Luminant Flux
 					},
 				}),
 			}),
-			--[[
 			prof(COOKING, {
-				n(219104, {	-- Athodas <Cooking Trainer>
-					["coord"] = { 44.2, 45.8, DORNOGAL },
-					["groups"] = TWW_COOKING,
+				n(257913, {	-- Sylann <Cooking Trainer>
+					["coord"] = { 56.4, 69.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_COOKING,
 				}),
-				n(219103, {	-- Kronzon <Cooking Supplies>
-					["coord"] = { 43.6, 45.6, DORNOGAL },
+				n(257914, {	-- Quelis <Cooking Supplies>
+					["coord"] = { 56.4, 69.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(222701),	-- Clumped Flour
-						i(222697),	-- Coreway Dust
-						i(222696),	-- Crunchy Peppers
-						i(224762),	-- Delver's Waterskin
-						i(222700),	-- Granulated Spices
-						i(222699),	-- Khaz Algar Tomato
-						i(222695),	-- Twined Herbs
+						i(263999, {	-- Midnight Cook's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42795,	-- Cooking at Midnight
+						}),
+						i(242643),	-- A Big Ol' Stick of Butter
+						i(242641),	-- Cooking Spirits
+						i(242644),	-- Mana-Wyrm Essence
+						i(242646),	-- Pouch of Spices
+						i(242645),	-- Ripened Vegetable Assortment
+						i(242647),	-- Tavern Fixings
+						i(242642),	-- Thalassian Herbs
 					},
 				}),
 			}),
-			--]]
 			prof(ENCHANTING, {
 				n(254051, {	-- Jennara <Proprietress of Positively Jenchanting>
 					["coord"] = { 39.5, 51.0, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -367,10 +368,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(241453, {	-- Yatheon <Engineering Supplies>
 					["coord"] = { 43.5, 53.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(253302),	-- Malleable Warframe
 						i(264001, {	-- Midnight Engineer's Shop Sign (DECOR!)
 							["sourceAchievement"] = 42798,	-- Engineering at Midnight
 						}),
+						i(253302),	-- Malleable Warframe
 						i(253303),	-- Pile of Junk
 					},
 				}),
@@ -403,10 +404,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(243555, {	-- Lelorian <Inscription Supplies>
 					["coord"] = { 46.7, 51.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(245881),	-- Lexicologist's Vellum
 						i(264004, {	-- Midnight Scribe's Shop Sign (DECOR!)
 							["sourceAchievement"] = 42796,	-- Inscribing at Midnight
 						}),
+						i(245881),	-- Lexicologist's Vellum
 						i(245882),	-- Thalassian Songwater
 					},
 				}),
@@ -461,10 +462,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(243353, {	-- Deynna <Tailoring Supplies>
 					["coord"] = { 48.2, 54.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(251691),	-- Embroidery Floss
 						i(264174, {	-- Midnight Tailor's Shop Sign (DECOR!)
 							["sourceAchievement"] = 42794,	-- Tailoring at Midnight
 						}),
+						i(251691),	-- Embroidery Floss
 						i(251665),	-- Silverleaf Thread
 					},
 				}),
