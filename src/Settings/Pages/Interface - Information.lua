@@ -2,8 +2,8 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Global locals
-local pairs, ipairs, tonumber, math_floor, select, type, tostring, tinsert, tremove, RETRIEVING_DATA
-	= pairs, ipairs, tonumber, math.floor, select, type, tostring, tinsert, tremove, RETRIEVING_DATA;
+local pairs, ipairs, tonumber, math_floor, math_min, select, type, tostring, tinsert, tremove, RETRIEVING_DATA
+	= pairs, ipairs, tonumber, math.floor, math.min, select, type, tostring, tinsert, tremove, RETRIEVING_DATA;
 local Colorize = app.Modules.Color.Colorize;
 local GetCoordString = app.Modules.Color.GetCoordString;
 local GetPatchString = app.Modules.Color.GetPatchString;
@@ -670,69 +670,47 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
+	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, maxcoords = 10, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			local coords = reference.coords;
-			if not coords then return; end
-
-			local coordCount = #coords;
-			if coordCount < 1 then return; end
-
-			local maxCoords = 10;
-			local currentMapID, j = app.CurrentMapID, 0
-			local othercoords
-			for i,coord in ipairs(coords) do
-				local mapID = coord[3] or currentMapID;
-				if mapID ~= currentMapID then
-					if not othercoords then othercoords = { coord }
-					else othercoords[#othercoords + 1] = coord end
-				else
-					local x, y = coord[1], coord[2];
-					tinsert(tooltipInfo, {
-						left = j == 0 and t.text,
-						right = GetCoordString(x, y),
-						r = 1, g = 1, b = 1
-					});
-					j = j + 1;
-					if j >= maxCoords then
-						local remainingCoords = coordCount - maxCoords
-						if remainingCoords > 0 then
-							tinsert(tooltipInfo, {
-								right = (L.AND_MORE):format(remainingCoords),
-								r = 1, g = 1, b = 1
-							});
-						end
-						break;
+			if coords then
+				local coordList = {};
+				local currentMapID = app.CurrentMapID;
+				if coords[currentMapID] then
+					for i,coord in ipairs(coords[currentMapID]) do
+						tinsert(coordList, { right = GetCoordString(coord[1], coord[2]) });
 					end
 				end
-			end
-			-- include coords from other maps if any and not at the limit
-			if othercoords and j < maxCoords then
-				local str
 				local showMapID = app.Settings:GetTooltipSetting("mapID");
-				for i,coord in ipairs(othercoords) do
-					local x, y = coord[1], coord[2];
-					local mapID = coord[3] or currentMapID;
-					str = app.GetMapName(mapID);
-					if showMapID then
-						str = str .. " (" .. mapID .. ")";
-					end
-					str = str .. ": ";
-					tinsert(tooltipInfo, {
-						left = j == 0 and t.text,
-						right = str .. GetCoordString(x, y),
-						r = 1, g = 1, b = 1
-					});
-					j = j + 1;
-					if j >= maxCoords then
-						local remainingCoords = coordCount - maxCoords
-						if remainingCoords > 0 then
-							tinsert(tooltipInfo, {
-								right = (L.AND_MORE):format(remainingCoords),
-								r = 1, g = 1, b = 1
-							});
+				for mapID,coordsForMap in pairs(coords) do
+					if mapID ~= currentMapID then
+						for i,coord in ipairs(coordsForMap) do
+							local str = app.GetMapName(mapID);
+							if showMapID then str = str .. " (" .. mapID .. ")"; end
+							tinsert(coordList, { right = str .. ": " .. GetCoordString(coord[1], coord[2]) });
 						end
-						break;
+					end
+				end
+				
+				local count = #coordList;
+				if count > 0 then
+					coordList[1].left = t.text;
+					
+					-- Force white string entries.
+					for i=1,math_min(t.maxcoords, count) do
+						local coord = coordList[i];
+						coord.r = 1;
+						coord.g = 1;
+						coord.b = 1;
+						tinsert(tooltipInfo, coord);
+					end
+					
+					local remainingCoords = count - t.maxcoords;
+					if remainingCoords > 0 then
+						tinsert(tooltipInfo, {
+							right = (L.AND_MORE):format(remainingCoords),
+							r = 1, g = 1, b = 1
+						});
 					end
 				end
 			end
@@ -798,11 +776,10 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local maps = reference.maps or reference.maps_disp
 			if not maps or #maps == 0 then
-				local coords = reference.coords
-				if coords and #coords > 0 then
+				if reference.coords then
 					maps = {}
-					for _,coord in ipairs(coords) do
-						maps[#maps + 1] = coord[3]
+					for mapID,_ in pairs(reference.coords) do
+						maps[#maps + 1] = mapID;
 					end
 				end
 			end

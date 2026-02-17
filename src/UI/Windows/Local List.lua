@@ -14,12 +14,8 @@ function LocalMapFilter(group)
 		if group.mapID == __currentMapID then
 			return true;
 		end
-	elseif group.coords then
-		for i,coord in ipairs(group.coords) do
-			if coord[3] == __currentMapID then
-				return true;
-			end
-		end
+	elseif group.coords and group.coords[__currentMapID] then
+		return true;
 	end
 	if group.maps and contains(group.maps, __currentMapID) then
 		return true;

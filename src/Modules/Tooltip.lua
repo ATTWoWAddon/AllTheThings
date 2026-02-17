@@ -74,14 +74,12 @@ if app.IsRetail then
 				-- app.PrintDebug("Checking results",#searchResults,objectID)
 				for j,searchResult in ipairs(searchResults) do
 					if InGame(searchResult) then
-						if searchResult.coords then
-							for k,coord in ipairs(searchResult.coords) do
-								if coord[3] == mapID then
-									dist = distance(px, py, coord[1], coord[2]);
-									if dist and dist < closestDistance then
-										closestDistance = dist;
-										closestObjectID = objectID;
-									end
+						if searchResult.coords and searchResult.coords[mapID] then
+							for _,coord in ipairs(searchResult.coords[mapID]) do
+								dist = distance(px, py, coord[1], coord[2]);
+								if dist and dist < closestDistance then
+									closestDistance = dist;
+									closestObjectID = objectID;
 								end
 							end
 						end
@@ -134,14 +132,12 @@ else
 				searchResults = SearchForField("objectID", objectID);
 				if searchResults and #searchResults > 0 then
 					for j,searchResult in ipairs(searchResults) do
-						if searchResult.coords then
-							for k,coord in ipairs(searchResult.coords) do
-								if coord[3] == mapID then
-									dist = distance(px, py, coord[1], coord[2]);
-									if dist and dist < closestDistance then
-										closestDistance = dist;
-										closestInstance = searchResult;
-									end
+						if searchResult.coords and searchResult.coords[mapID] then
+							for _,coord in ipairs(searchResult.coords[mapID]) do
+								dist = distance(px, py, coord[1], coord[2]);
+								if dist and dist < closestDistance then
+									closestDistance = dist;
+									closestInstance = searchResult;
 								end
 							end
 						end

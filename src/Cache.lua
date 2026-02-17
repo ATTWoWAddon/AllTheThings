@@ -423,8 +423,8 @@ fieldConverters.flightpathID = function(group, value)
 end
 fieldConverters.coords = function(group, coords)
 	if not IsKeyIgnoredForCoord[group.key](group) then
-		for i=1,#coords do
-			cacheMapID(group, coords[i][3]);
+		for mapID,_ in pairs(coords) do
+			cacheMapID(group, mapID);
 		end
 		return true;
 	end
@@ -449,8 +449,8 @@ mapKeyUncachers = {
 		end
 	end,
 	["coords"] = function(group, coords)
-		for i=1,#coords do
-			uncacheMap(group, coords[i][3]);
+		for mapID,_ in pairs(coords) do
+			uncacheMap(group, mapID);
 		end
 	end,
 };
@@ -522,12 +522,11 @@ local function zoneTextAreasRunner(group, value)
 	if name then L.MAP_ID_TO_ZONE_TEXT[mapID] = name end
 
 	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
-	local mapIDs, parentMapID, info = {}, nil, nil;
+	local mapIDs, info = {}, nil;
 	local coords = group.coords
 	if coords then
-		for i=1,#coords do
-			parentMapID = coords[i][3];
-			if parentMapID and not mapIDs[parentMapID] then
+		for parentMapID,_ in pairs(coords) do
+			if not mapIDs[parentMapID] then
 				mapIDs[parentMapID] = 1;
 				info = C_Map_GetMapInfo(parentMapID);
 				if info and info.parentMapID then
@@ -536,7 +535,7 @@ local function zoneTextAreasRunner(group, value)
 			end
 		end
 	else
-		parentMapID = app.GetRelativeValue(group.parent, "mapID");
+		local parentMapID = app.GetRelativeValue(group.parent, "mapID");
 		if parentMapID then
 			mapIDs[parentMapID] = 1;
 			info = C_Map_GetMapInfo(parentMapID);
@@ -566,10 +565,18 @@ local function zoneTextAreasRunner(group, value)
 		end
 	end
 end
+local function findOriginalMapID(group)
+	if group.coords then
+		for mapID,_ in pairs(group.coords) do
+			return mapID;
+		end
+	end
+	return app.GetRelativeValue(group.parent, "mapID");
+end
 local function zoneTextNamesRunner(group, value)
 	--if true then return; end
 	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
-	local originalMapID = (group.coords and group.coords[1][3]) or app.GetRelativeValue(group.parent, "mapID");
+	local originalMapID = findOriginalMapID(group);
 	if originalMapID then
 		local mapID = group.mapID;
 		if not mapID then

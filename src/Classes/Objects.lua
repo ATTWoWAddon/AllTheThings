@@ -125,8 +125,18 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		for i=1,#g do
 			o = g[i]
 			-- show collected coords of all sub-objects which are not saved
-			if o.objectID and o.coords and not o.saved then
-				ArrayAppend(unsaved, o.coords)
+			if o.objectID and not o.saved then
+				local coords = o.coords;
+				if coords then
+					for mapID,coordsForMap in pairs(coords) do
+						local unsavedByMap = unsaved[mapID];
+						if not unsavedByMap then
+							unsavedByMap = {};
+							unsaved[mapID] = unsavedByMap;
+						end
+						ArrayAppend(unsavedByMap, coordsForMap)
+					end
+				end
 			end
 		end
 		return unsaved

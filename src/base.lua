@@ -179,15 +179,7 @@ local function GetBestMapForGroup(group, currentMapID)
 			return mapID;
 		end
 
-		local coords = group.coords;
-		if coords then
-			for i=1,#coords do
-				mapID = coords[i][3];
-				if mapID == currentMapID then
-					return mapID;
-				end
-			end
-		end
+		if group.coords and group.coords[currentMapID] then return currentMapID; end
 		local maps = group.maps;
 		if maps then
 			for i=1,#maps do

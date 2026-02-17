@@ -236,9 +236,9 @@ local function Check_coords(objRef, maxCoordDistance)
 	local dist, sameMap
 	local closest = 9999
 	maxCoordDistance = MapPrecisionOverrides[mapID] or maxCoordDistance or 1
-	for _,coord in ipairs(coords) do
-		if mapID == coord[3] then
-			sameMap = mapID
+	if coords[mapID] then
+		sameMap = mapID
+		for i,coord in ipairs(coords[mapID]) do
 			dist = app.distance(px, py, coord[1], coord[2])
 			-- app.PrintDebug("coords @",dist)
 			if dist < closest then closest = dist end

@@ -302,7 +302,8 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 end));
 
 -- Exploration Class
-local ExplorationAreaPositionDB = app.ExplorationAreaPositionDB or {};
+-- TEMPORARILY DISABLED DB!!
+local ExplorationAreaPositionDB = {};--app.ExplorationAreaPositionDB or {};
 local KEY, CACHE, CLASSNAME = "explorationID", "Exploration", "Exploration"
 app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	CACHE = function() return CACHE end,
@@ -310,7 +311,7 @@ app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 		return C_Map_GetAreaInfo(t[KEY]) or UNKNOWN;
 	end,
 	description = function(t)
-		if t.coords and #t.coords > 0 then
+		if t.coords then
 			if not TomTom then
 				return "You can use Alt+Right Click to plot the coordinates with TomTom installed. If this refuses to be marked collected for you in ATT, try reloading your UI or relogging.";
 			else
@@ -359,15 +360,15 @@ local function CheckHitsForMap(grid, mapID, saved)
 end
 local function CheckHitsForExploration(exploration, saved)
 	if exploration and exploration.coords and not saved[exploration.explorationID] then
-		local grid = {}
-		local mapID
 		-- convert the coords into a grid for our common method
-		for _,coord in ipairs(exploration.coords) do
-			grid[#grid + 1] = CreateVector2D(coord[1] / 100, coord[2] / 100)
-			if not mapID then mapID = coord[3] end
+		for mapID,coordsForMap in pairs(exploration.coords) do
+			-- Find all points on the grid that have explored an area and make note of them.
+			local grid = {}
+			for _,coord in ipairs(coordsForMap) do
+				grid[#grid + 1] = CreateVector2D(coord[1] / 100, coord[2] / 100)
+			end
+			pcall(CheckHitsForMap, grid, mapID, saved);
 		end
-		-- Find all points on the grid that have explored an area and make note of them.
-		pcall(CheckHitsForMap, grid, mapID, saved);
 		-- app.print("Checking ExplorationID " .. explorationID .. "...");
 		return true;
 	end
@@ -416,7 +417,7 @@ end, {
 	"NOTE: This operation (when providing the 'robust' parameter) should only be needed once per Character as Exploration is otherwise updated when new areas are explored.",
 })
 local function CollectibleForExploration(t)
-	return t.coords and #t.coords > 0;
+	return t.coords;
 end
 local function CheckExplorationForNode(exploration)
 	local saved = {}
@@ -672,41 +673,52 @@ end, {
 
 -- Harvesting
 local ExplorationDB, FilterInGame
-local function GetAvgCoord(coords)
-	local x_avg, y_avg = 0,0
-	local mapID
-	for _,coord in ipairs(coords) do
-		x_avg = x_avg + coord[1]
-		y_avg = y_avg + coord[2]
-		if not mapID then mapID = coord[3] end
+local function GetAvgCoords(coords)
+	local newCoords = {};
+	for mapID,coordsForMap in pairs(coords) do
+		local x_total, y_total = 0,0
+		local total = #coordsForMap;
+		for i=1,total do
+			x_total = x_total + coordsForMap[i][1]
+			y_total = y_total + coordsForMap[i][2]
+		end
+		newCoords[mapID] = {
+			math_floor(100 * x_total / total) / 100,
+			math_floor(100 * y_total / total) / 100
+		};
 	end
-
-	x_avg = math_floor(100 * x_avg / #coords) / 100
-	y_avg = math_floor(100 * y_avg / #coords) / 100
-	return {x_avg,y_avg,mapID}
+	return newCoords;
 end
-local function GetBestCoord(coords)
-	local avg_coord = GetAvgCoord(coords)
-	-- app.PrintDebug("Find Best coord to",avg_coord[1],avg_coord[2],"from",#coords)
-	-- grab a real coord which is closest to the avg coord (in case the avg coord is somehow outside the set of valid coords)
-	local minDistance = 999
+local function GetBestCoords(coords)
+	local bestCoords = {};
 	local checkCoord, checkDistance
-	local bestCoord = coords[1]
-	for i=2,#coords,1 do
-		checkCoord = coords[i]
-		checkDistance = distance(checkCoord[1], checkCoord[2], avg_coord[1], avg_coord[2])
-		if checkDistance < minDistance then
-			bestCoord = checkCoord
-			minDistance = checkDistance
-			-- once we've narrowed down within a coord from the avg_coord, just return
-			if checkDistance < 1 then
-				-- app.PrintDebug("Quick Best coord:",bestCoord[1],bestCoord[2],bestCoord[3])
-				return GetAvgCoord({bestCoord})
+	for mapID,avg_coord in pairs(GetAvgCoords(coords)) do
+		local coordsForMap = coords[mapID];
+		if coordsForMap and #coordsForMap > 0 then
+			-- app.PrintDebug("Find Best coord to",avg_coord[1],avg_coord[2],"from",#coordsForMap)
+			-- grab a real coord which is closest to the avg coord (in case the avg coord is somehow outside the set of valid coords)
+			local bestCoord = coordsForMap[1]
+			local minDistance = distance(bestCoord[1], bestCoord[2], avg_coord[1], avg_coord[2])
+			if minDistance >= 1 then
+				for i=2,#coordsForMap,1 do
+					checkCoord = coordsForMap[i]
+					checkDistance = distance(checkCoord[1], checkCoord[2], avg_coord[1], avg_coord[2])
+					if checkDistance < minDistance then
+						minDistance = checkDistance
+						bestCoord = checkCoord
+						-- once we've narrowed down within a coord from the avg_coord, just return
+						if checkDistance < 1 then
+							-- app.PrintDebug("Quick Best coord:",bestCoord[1],bestCoord[2],bestCoord[3])
+							break;
+						end
+					end
+				end
 			end
+			-- app.PrintDebug("Final Best coord:",bestCoord[1],bestCoord[2],bestCoord[3])
+			bestCoords[mapID] = {bestCoord};
 		end
 	end
-	-- app.PrintDebug("Final Best coord:",bestCoord[1],bestCoord[2],bestCoord[3])
-	return GetAvgCoord({bestCoord})
+	return bestCoords;
 end
 local function PrintReportedAreaSummary()
 	local reportedAreas = {};
@@ -754,37 +766,24 @@ local function OnClickForExplorationHeader(row, button)
 end
 local function GenerateHitsForMap(grid, mapID)
 	if mapID == 594 or mapID == 2091 then return nil, nil; end	-- Shattrath City messing up Talador, War of the Shifting Sands messing up Silithus
-	local any, hits, valid = false, setmetatable({}, app.MetaTable.AutoTable), setmetatable({}, app.MetaTable.AutoTable)
-	local explored, mapInfo, coords
+	local any, areaHits = false, setmetatable({}, app.MetaTable.AutoTableOfTables);
+	local explored, subMapID, mapInfo
 	for _,pos in ipairs(grid) do
 		explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
 		if explored and #explored > 0 then
-			local coord = {pos.x * 100, pos.y * 100, mapID};
 			mapInfo = C_Map_GetMapInfoAtPosition(mapID, pos.x, pos.y)
-			-- areaID often extends outside of the actual map where we check for areaID, so confine to coords
-			-- which actually are placed within the bounds of the same map
-			if mapInfo and mapInfo.mapID == mapID then
-				coords = valid
-			else
-				coords = hits
-			end
+			subMapID = mapInfo and mapInfo.mapID or mapID;
+			local coord = {pos.x * 100, pos.y * 100};
 			for _,areaID in ipairs(explored) do
-				tinsert(coords[areaID], coord)
+				tinsert(areaHits[areaID][subMapID], coord)
 			end
 			any = true;
-		end
-	end
-	-- if there are any areaID with no 'valid' on-map coordinates returned, then just copy those into the valid one and return that
-	for areaID,coords in pairs(hits) do
-		if #valid[areaID] == 0 then
-			-- app.PrintDebug("Copied invalid areaID coords",areaID,#coords)
-			valid[areaID] = coords
 		end
 	end
 	if not any then
 		app.print("No Exploration Areas Found in",app:SearchLink(app.SearchForObject("mapID",mapID,"key")))
 	end
-	return any, valid
+	return any, areaHits
 end
 local function IncorporateHitsIntoDBs(hits, mapID, reportedAreasByID)
 	-- For each of these fresh hits, add it to our raw positional DB.
@@ -799,8 +798,15 @@ local function IncorporateHitsIntoDBs(hits, mapID, reportedAreasByID)
 		tinsert(ExplorationDB[mapID], areaID)
 
 		-- Record the best coordinates
-		if #coords > 0 then
-			ExplorationAreaPositionDB[areaID] = {GetBestCoord(coords)}
+		local any = false;
+		for m,coordsForMap in pairs(coords) do
+			if #coordsForMap > 0 then
+				any = true;
+				break;
+			end
+		end
+		if any then
+			ExplorationAreaPositionDB[areaID] = GetBestCoords(coords)
 			count = count + 1
 		else
 			app.print("No coords found!",areaID)
@@ -908,7 +914,14 @@ local function HarvestExploration()
 	-- Clean up areaID's with no coords
 	local emptyAreaIDs = {}
 	for areaID,coords in pairs(ExplorationAreaPositionDB) do
-		if #coords == 0 then
+		local any = false;
+		for mapID,coordsForMap in pairs(coords) do
+			if #coordsForMap > 0 then
+				any = true;
+				break;
+			end
+		end
+		if not any then
 			emptyAreaIDs[areaID] = true
 		end
 	end
@@ -958,7 +971,7 @@ app.ChatCommands.Add("harvest-map", function(args)
 	local i = 6033345
 	local tempGroup = {visible=true,text=app.GetMapName(mapID)}
 	for areaID,coords in pairs(hits) do
-		app.NestObject(tempGroup, app.CreateExploration(areaID, {coords=simplify and {GetBestCoord(coords)} or coords,icon=i}))
+		app.NestObject(tempGroup, app.CreateExploration(areaID, {coords=(simplify and GetBestCoords(coords) or coords),icon=i}))
 		i = i + 1
 		if i > 6033354 then i = 6033345 end
 	end

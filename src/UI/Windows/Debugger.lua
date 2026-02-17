@@ -176,8 +176,12 @@ local function ExportKeyValue(key, value)
 		str = str .. "},";
 	elseif key == "coords" then
 		str = str .. "{\n";
-		for i,o in ipairs(value) do
-			str = str .. "\t{ " .. o[1] .. ", " .. o[2] .. ", " .. o[3] .. " },\n";
+		for mapID,coordsForMap in pairs(value) do
+			str = str .. "\t[" .. mapID .. "] = {\n";
+			for i,o in ipairs(coordsForMap) do
+				str = str .. "\t\t{ " .. o[1] .. ", " .. o[2] .. " },\n";
+			end
+			str = str .. "\t},";
 		end
 		str = str .. "},";
 	elseif key == "cost" then
@@ -408,7 +412,7 @@ app:CreateWindow("Debugger", {
 			local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 			if pos then
 				local px, py = pos:GetXY();
-				info.coords = { { px * 100, py * 100, mapID } };
+				info.coords = { [mapID] = { { px * 100, py * 100 } } };
 			end
 			repeat
 				mapInfo = C_Map_GetMapInfo(mapID);

@@ -197,7 +197,7 @@ app:CreateWindow("WorldQuests", {
 								-- end
 								-- add the map POI coords to our new quest object
 								if poi.x and poi.y then
-									questObject.coords = {{ 100 * poi.x, 100 * poi.y, mapID }}
+									questObject.coords = { [mapID] = { 100 * poi.x, 100 * poi.y }}
 								end
 								NestObject(mapObject, questObject);
 								-- see if need to retry based on missing data
@@ -254,7 +254,7 @@ app:CreateWindow("WorldQuests", {
 							x, y = nil, nil
 						end
 						if x and y then
-							o.coords = {{ 100 * x, 100 * y, mapID }}
+							o.coords = { [mapID] = { 100 * x, 100 * y }}
 						end
 						if not poiMapID or poiMapID == mapID or poi.isPrimaryMapForPOI then
 							NestObject(mapObject, o)

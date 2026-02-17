@@ -136,14 +136,32 @@ namespace ATT.FieldTypes
 
         public object AsExportType()
         {
-            var list = new List<object>();
             var sortedList = new List<Coord>(_coords);
             sortedList.Sort();
+
+            var coordsByMapID = new Dictionary<long, object>();
+            foreach (var coord in sortedList)
+            {
+                if (!coordsByMapID.TryGetValue(coord.MapID, out var coordsObj))
+                {
+                    coordsByMapID[coord.MapID] = coordsObj = new List<object>();
+                }
+                if (coordsObj is List<object> coordsForMapID)
+                {
+                    coordsForMapID.Add(new List<object> { coord.X, coord.Y });
+                }
+            }
+            return coordsByMapID;
+
+            /*
+            // Old Format
+            var list = new List<object>();
             foreach (var coord in sortedList)
             {
                 list.Add(new List<object> { coord.X, coord.Y, coord.MapID });
             }
             return list;
+            */
         }
 
         public void Validate()
