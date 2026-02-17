@@ -2793,7 +2793,8 @@ root(ROOTS.Unsorted, {
 			-- Cosmetic
 			i(265072),	-- Amani Fangstitch Quiver
 
-			-- Wep
+			-- Alch NYi
+			i(241335),	-- Vicious Thalassian Flask of Honor++
 
 			-- Cosmetic
 			i(265363),	-- Twilight Shadowguard's Hatchet
@@ -2967,7 +2968,7 @@ root(ROOTS.Unsorted, {
 			i(242644),	-- Mana-Wyrm Essence
 
 			-- Decor
-			i(246460),	-- Ambient Aethercharged Crystal
+			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
 
 			i(250797),	-- Spring Blossom Ceiling Light
 			i(250798),	-- Spring Blossom Shelf

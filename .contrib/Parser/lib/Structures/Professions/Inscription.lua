@@ -505,12 +505,6 @@ MID_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	r(1265688),	-- Skill
 	r(1265663),	-- Sparks
 	filter(MISC, {
-		r(1230042),	-- Thalassian Missive of the Aurora
-		r(1230041),	-- Thalassian Missive of the Feverflare
-		r(1230040),	-- Thalassian Missive of the Fireflash
-		r(1230039),	-- Thalassian Missive of the Harmonious
-		r(1230038),	-- Thalassian Missive of the Peerless
-		r(1230037),	-- Thalassian Missive of the Quickblade
 		r(1230050),	-- Vantus Rune: Radiant
 	}),
 	filter(PROFESSION_EQUIPMENT, {
@@ -523,6 +517,12 @@ MID_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		r(1230017),	-- Munsell Ink
 		r(1230016),	-- Sienna Ink
 		r(1230019),	-- Soul Cipher
+		r(1230042),	-- Thalassian Missive of the Aurora
+		r(1230041),	-- Thalassian Missive of the Feverflare
+		r(1230040),	-- Thalassian Missive of the Fireflash
+		r(1230039),	-- Thalassian Missive of the Harmonious
+		r(1230038),	-- Thalassian Missive of the Peerless
+		r(1230037),	-- Thalassian Missive of the Quickblade
 	}),
 	n(WEAPONS, {
 		r(1230055),	-- Faunatender's Baton

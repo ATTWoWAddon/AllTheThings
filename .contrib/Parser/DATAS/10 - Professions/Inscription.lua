@@ -5742,7 +5742,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			o(525936, {	-- Leather-Bound Techniques
-				["coord"] = { 40.5, 49.4, MAP.MIDNIGHT.ZUL_AMAN },
+				["coord"] = { 40.5, 49.4, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 89068,
 				["groups"] = {
 					i(238573),	-- Leather-Bound Techniques

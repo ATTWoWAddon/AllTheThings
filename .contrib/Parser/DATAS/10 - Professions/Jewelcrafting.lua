@@ -887,60 +887,60 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		n(TREASURES, {
-			o(455973, {	-- Arathi Sizing Gauges
-				["coord"] = { 47.3, 60.6, HALLOWFALL },
-				["questID"] = 83894,
+			o(525927, {	-- Dual-Function Magnifiers
+				["coord"] = { 28.6, 46.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89124,
 				["groups"] = {
-					i(226320),	-- Arathi Sizing Gauges
+					i(238582),	-- Dual-Function Magnifiers
 				},
 			}),
-			o(455975, {	-- Carved Stone File
-				["coord"] = { 48.5, 35.2, THE_RINGING_DEEPS },
-				["questID"] = 83892,
+			o(525923, {	-- Ethereal Gem Pliers
+				["coord"] = { 54.2, 51.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89128,
 				["groups"] = {
-					i(226318),	-- Carved Stone File
+					i(238586),	-- Ethereal Gem Pliers
 				},
 			}),
-			o(455976, {	-- Earthen Gem Pliers
-				["coord"] = { 34.9, 52.3, DORNOGAL },
-				["questID"] = 83891,
+			o(525926, {	-- Poorly Rounded Vial
+				["coord"] = { 56.6, 40.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89125,
 				["groups"] = {
-					i(226317),	-- Earthen Gem Pliers
+					i(238583),	-- Poorly Rounded Vial
 				},
 			}),
-			o(455977, {	-- Gentle Jewel Hammer
-				["coord"] = { 63.5, 66.8, ISLE_OF_DORN },
-				["questID"] = 83890,
+			o(525925, {	-- Shattered Glass
+				["coord"] = { 62.7, 53.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89126,
 				["groups"] = {
-					i(226316),	-- Gentle Jewel Hammer
+					i(238584),	-- Shattered Glass
 				},
 			}),
-			o(455974, {	-- Jeweler's Delicate Drill
-				["coord"] = { 57.0, 54.6, THE_RINGING_DEEPS },
-				["questID"] = 83893,
+			o(525922, {	-- Sin'dorei Gem Faceters
+				["coord"] = { 39.6, 38.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89129,
 				["groups"] = {
-					i(226319),	-- Jeweler's Delicate Drill
+					i(238587),	-- Sin'dorei Gem Faceters
 				},
 			}),
-			o(455972, {	-- Librarian's Magnifiers
-				["coord"] = { 44.7, 50.9, HALLOWFALL },
-				["questID"] = 83895,
+			o(525929, {	-- Sin'dorei Masterwork Chisel
+				["coord"] = { 50.6, 56.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89122,
 				["groups"] = {
-					i(226321),	-- Librarian's Magnifiers
+					i(238580),	-- Sin'dorei Masterwork Chisel
 				},
 			}),
-			o(455970, {	-- Nerubian Bench Blocks
-				["coord"] = { 56.1, 58.6, AZJ_KAHET },
-				["questID"] = 83897,
+			o(525928, {	-- Speculative Voidstorm Crystal
+				["coord"] = { 30.5, 69.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89123,
 				["groups"] = {
-					i(226323),	-- Nerubian Bench Blocks
+					i(238581),	-- Speculative Voidstorm Crystal
 				},
 			}),
-			o(455971, {	-- Ritual Caster's Crystal
-				["coord"] = { 47.7, 19.4, NERUBAR },
-				["questID"] = 83896,
+			o(525924, {	-- Vintage Soul Gem
+				["coord"] = { 55.4, 48.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89127,
 				["groups"] = {
-					i(226322),	-- Ritual Caster's Crystal
+					i(238585),	-- Vintage Soul Gem
 				},
 			}),
 		}),

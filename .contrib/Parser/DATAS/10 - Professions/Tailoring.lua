@@ -1353,60 +1353,60 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 		n(TREASURES, {
-			o(455941, {	-- Arathi Rotary Cutter
-				["coord"] = { 49.2, 62.3, HALLOWFALL },
-				["questID"] = 83926,
+			o(525905, {	-- A Child's Stuffy
+				["coord"] = { 70.5, 50.9, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89078,
 				["groups"] = {
-					i(226352),	-- Arathi Rotary Cutter
+					i(238612),	-- A Child's Stuffy
 				},
 			}),
-			o(455945, {	-- Dornogal Seam Ripper
-				["coord"] = { 61.4, 18.6, DORNOGAL },
-				["questID"] = 83922,
+			o(525904, {	-- A Really Nice Curtain
+				["coord"] = { 35.9, 61.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89079,
 				["groups"] = {
-					i(226348),	-- Dornogal Seam Ripper
+					i(238613),	-- A Really Nice Curtain
 				},
 			}),
-			o(455944, {	-- Earthen Tape Measure
-				["coord"] = { 56.2, 61.0, ISLE_OF_DORN },
-				["questID"] = 83923,
+			o(525898, {	-- Artisan's Cover Comb
+				["coord"] = { 40.5, 49.4, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89085,
 				["groups"] = {
-					i(226349),	-- Earthen Tape Measure
+					i(238619),	-- Artisan's Cover Comb
 				},
 			}),
-			o(455942, {	-- Eathen Sticher's Snips
-				["coord"] = { 64.2, 60.2, THE_RINGING_DEEPS },
-				["questID"] = 83925,
+			o(525901, {	-- Book of Sin'dorei Stitches
+				["coord"] = { 62.0, 83.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89082,
 				["groups"] = {
-					i(226351),	-- Earthen Stitcher's Snips
+					i(238616),	-- Book of Sin'dorei Stitches
 				},
 			}),
-			o(455938, {	-- Nerubian's Pincushion
-				["coord"] = { 50.2, 16.7, NERUBAR },
-				["questID"] = 83929,
+			o(525899, {	-- Particularly Enchanting Tablecloth
+				["coord"] = { 31.8, 68.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89084,
 				["groups"] = {
-					i(226355),	-- Nerubian's Pincushion
+					i(238618),	-- Particularly Enchanting Tablecloth
 				},
 			}),
-			o(455939, {	-- Nerubian Quilt
-				["coord"] = { 53.2, 53.1, AZJ_KAHET },
-				["questID"] = 83928,
+			o(525900, {	-- Satin Throw Pillow
+				["coord"] = { 61.6, 85.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89083,
 				["groups"] = {
-					i(226354),	-- Nerubian Quilt
+					i(238617),	-- Satin Throw Pillow
 				},
 			}),
-			o(455940, {	-- Royal Outfitter's Protractor
-				["coord"] = { 40.1, 68.1, HALLOWFALL },
-				["questID"] = 83927,
+			o(525903, {	-- Sin'dorei Outfitter's Ruler
+				["coord"] = { 46.3, 34.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89080,
 				["groups"] = {
-					i(226353),	-- Royal Outfitter's Protractor
+					i(238614),	-- Sin'dorei Outfitter's Ruler
 				},
 			}),
-			o(455943, {	-- Runed Earthen Pins
-				["coord"] = { 48.8, 32.8, THE_RINGING_DEEPS },
-				["questID"] = 83924,
+			o(525902, {	-- Wooden Weaving Sword
+				["coord"] = { 69.8, 51.0, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 62655,
 				["groups"] = {
-					i(226350),	-- Runed Earthen Pins
+					i(238615),	-- Wooden Weaving Sword
 				},
 			}),
 		}),

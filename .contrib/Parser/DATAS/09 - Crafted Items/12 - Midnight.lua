@@ -49,8 +49,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(241306),	-- Refreshing Serum++
 			i(241305),	-- Silvermoon Health Potion+
 			i(241304),	-- Silvermoon Health Potion++
-			i(241334),	-- Vicious Thalassian Flask of Honor+
-			i(241335),	-- Vicious Thalassian Flask of Honor++
+			i(241334),	-- Vicious Thalassian Flask of Honor
 			i(241303),	-- Void-Shrouded Tincture+
 			i(241302),	-- Void-Shrouded Tincture++
 			i(241285),	-- Voidlight Potion Cauldron+
@@ -119,15 +118,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(237902),	-- Thalassian Competitor's Plate Sabatons
 			i(237907),	-- Thalassian Competitor's Plate Waistguard
 		}),
-		n(DECOR, {
-			i(262451),	-- Gilded Silvermoon Anvil (DECOR!)
-			i(262457),	-- Gilded Silvermoon Hanger (DECOR!)
-			i(262452),	-- Masterwork Crafting Hammer (DECOR!)
-			i(262456),	-- Ornamental Silvermoon Hanger (DECOR!)
-			i(262460),	-- Ren'dorei Anvil (DECOR!)
-			i(238020),	-- Thalassian Master Repair Hammer (DECOR!)
-		}),
-		filter(MISC, {
+		filter(CONSUMABLES, {
 			i(237372),	-- Refulgent Razorstone+
 			i(237373),	-- Refulgent Razorstone++
 			i(238209),	-- Refulgent Repair Hammer
@@ -136,6 +127,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(237370),	-- Refulgent Whetstone+
 			i(237371),	-- Refulgent Whetstone++
 			i(260232),	-- Thalassian Skeleton Key
+		}),
+		n(DECOR, {
+			i(262451),	-- Gilded Silvermoon Anvil (DECOR!)
+			i(262457),	-- Gilded Silvermoon Hanger (DECOR!)
+			i(262452),	-- Masterwork Crafting Hammer (DECOR!)
+			i(262456),	-- Ornamental Silvermoon Hanger (DECOR!)
+			i(262460),	-- Ren'dorei Anvil (DECOR!)
+		}),
+		filter(MISC, {
+			i(238020),	-- Thalassian Master Repair Hammer
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(238018, {["requireSkill"] = BLACKSMITHING}),	-- Sun-Blessed Blacksmith's Hammer
@@ -277,6 +278,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(244018),	-- Enchant Shoulders - Thalassian Recovery+
 			i(244019),	-- Enchant Shoulders - Thalassian Recovery++
 		}),
+		filter(CONSUMABLES, {
+			i(243735),	-- Oil of Dawn+
+			i(243736),	-- Oil of Dawn++
+			i(243737),	-- Smuggler's Enchanted Edge+
+			i(243738),	-- Smuggler's Enchanted Edge++
+			i(243733),	-- Thalassian Phoenix Oil+
+			i(243734),	-- Thalassian Phoenix Oil++
+		}),
 		n(DECOR, {
 			i(262459),	-- Animated Sin'dorei Hammer (DECOR!)
 			i(262458),	-- Animated Sin'dorei Pick (DECOR!)
@@ -347,17 +356,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(244035),	-- Illusory Adornment - Nature's Embrace++
 			i(244036),	-- Illusory Adornment - Voidtouched+
 			i(244037),	-- Illusory Adornment - Voidtouched++
-			i(243735),	-- Oil of Dawn+
-			i(243736),	-- Oil of Dawn++
-			i(243737),	-- Smuggler's Enchanted Edge+
-			i(243738),	-- Smuggler's Enchanted Edge++
-			i(243733),	-- Thalassian Phoenix Oil+
-			i(243734),	-- Thalassian Phoenix Oil++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(244176),	-- Runed Brilliant Silver Rod
-			i(244177),	-- Runed Dazzling Thorium Rod
-			i(244175),	-- Runed Refulgent Copper Rod
+			i(244176, {["requireSkill"] = ENCHANTING}),	-- Runed Brilliant Silver Rod
+			i(244177, {["requireSkill"] = ENCHANTING}),	-- Runed Dazzling Thorium Rod
+			i(244175, {["requireSkill"] = ENCHANTING}),	-- Runed Refulgent Copper Rod
 		}),
 		n(WEAPON_ENCHANTMENTS, {
 			i(243964),	-- Enchant Tool - Amani Perception+
@@ -484,8 +487,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(244766),	-- Thalassian Competitor's Plate Dunkers
 			i(244738),	-- Thalassian Competitor's Plate Guard
 		}),
+		filter(CONSUMABLES, {
+			i(257749),	-- Laced Zoomshots+
+			i(257750),	-- Laced Zoomshots++
+		}),
 		n(DECOR, {
-			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
+			i(246460),	-- Ambient Aethercharged Crystal (DECOR!)
 			i(262617),	-- Ren'dorei Crafting Framework (DECOR!)
 			i(263049),	-- Ren'dorei Lightpost (DECOR!)
 			i(262465),	-- Ren'dorei Stargazer (DECOR!)
@@ -494,14 +501,42 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(262789),	-- Small Telogrus Lamp (DECOR!)
 		}),
 		filter(MISC, {
+			i(248138),	-- Curious Red Button
+			i(248486),	-- Emergency Soul Link+
+			i(269586),	-- Emergency Soul Link++
+			i(248137),	-- M3DDY
+			i(248409),	-- W-47CH D0G
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(244713, {["requireSkill"] = JEWELCRAFTING}),	-- Farstrider Clampers
+			i(244707, {["requireSkill"] = TAILORING}),	-- Farstrider Fabric Cutters
+			i(244715, {["requireSkill"] = MINING}),	-- Farstrider Hardhat
+			i(244711, {["requireSkill"] = FISHING}),	-- Farstrider Hobbyist Rod
+			i(244719, {["requireSkill"] = MINING}),	-- Farstrider Rock Satchel
+			i(259181, {["requireSkill"] = JEWELCRAFTING}),	-- Giga-Gem Grippers
+			i(259171, {["requireSkill"] = ENGINEERING}),	-- Head-Mounted Beam Bummer
+			i(259175, {["requireSkill"] = MINING}),	-- Heavy-Duty Rock Assister
+			i(244720, {["requireSkill"] = MINING}),	-- Junker's Big Ol' Bag
+			i(244709, {["requireSkill"] = ENGINEERING}),	-- Junker's Junk Visor
+			i(244717, {["requireSkill"] = ENGINEERING}),	-- Junker's Multitool
+			i(259173, {["requireSkill"] = MINING}),	-- Rock Bonkin' Hardhat
+			i(259177, {["requireSkill"] = TAILORING}),	-- Self-Sharpening Sin'dorei Snippers
+			i(244712, {["requireSkill"] = FISHING}),	-- Sin'dorei Angler's Rod
+			i(244714, {["requireSkill"] = JEWELCRAFTING}),	-- Sin'dorei Clampers
+			i(244716, {["requireSkill"] = MINING}),	-- Sin'dorei Gilded Hardhat
+			i(244710, {["requireSkill"] = ENGINEERING}),	-- Sin'dorei Headlamp
+			i(259179, {["requireSkill"] = FISHING}),	-- Sin'dorei Reeler's Rod
+			i(244708, {["requireSkill"] = TAILORING}),	-- Sin'dorei Snippers
+			i(244718, {["requireSkill"] = ENGINEERING}),	-- Turbo-Junker's Multitool v1
+			i(259183, {["requireSkill"] = ENGINEERING}),	-- Turbo-Junker's Multitool v9
+		}),
+		filter(REAGENTS, {
 			i(257735),	-- B0P, Curator of Booms+
 			i(257741),	-- B0P, Curator of Booms++
 			i(248135),	-- B1P, Scorcher of Souls+
 			i(248592),	-- B1P, Scorcher of Souls++
 			i(244703),	-- Consistent Cogwheel+
 			i(244704),	-- Consistent Cogwheel++
-			i(248138),	-- Curious Red Button
-			i(248486),	-- Emergency Soul Link
 			i(244697),	-- Flux Cogwheel+
 			i(244698),	-- Flux Cogwheel++
 			i(244699),	-- Greased Cogwheel+
@@ -510,39 +545,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(255844),	-- HU5H, Nonchalant Pup++
 			i(248132),	-- Kinetic Ankle Primers+
 			i(248133),	-- Kinetic Ankle Primers++
-			i(257749),	-- Laced Zoomshots+
-			i(257750),	-- Laced Zoomshots++
 			i(248130),	-- Lucky Keychain
-			i(248137),	-- M3DDY
 			i(248136),	-- M3DDY, Travel-Sized
 			i(244701),	-- Perfected Cogwheel+
 			i(244702),	-- Perfected Cogwheel++
-			i(248409),	-- W-47CH D0G
-		}),
-		filter(PROFESSION_EQUIPMENT, {
-			i(244713),	-- Farstrider Clampers
-			i(244707),	-- Farstrider Fabric Cutters
-			i(244715),	-- Farstrider Hardhat
-			i(244711),	-- Farstrider Hobbyist Rod
-			i(244719),	-- Farstrider Rock Satchel
-			i(259181),	-- Giga-Gem Grippers
-			i(259171),	-- Head-Mounted Beam Bummer
-			i(259175),	-- Heavy-Duty Rock Assister
-			i(244720),	-- Junker's Big Ol' Bag
-			i(244709),	-- Junker's Junk Visor
-			i(244717),	-- Junker's Multitool
-			i(259173),	-- Rock Bonkin' Hardhat
-			i(259177),	-- Self-Sharpening Sin'dorei Snippers
-			i(244712),	-- Sin'dorei Angler's Rod
-			i(244714),	-- Sin'dorei Clampers
-			i(244716),	-- Sin'dorei Gilded Hardhat
-			i(244710),	-- Sin'dorei Headlamp
-			i(259179),	-- Sin'dorei Reeler's Rod
-			i(244708),	-- Sin'dorei Snippers
-			i(244718),	-- Turbo-Junker's Multitool v1
-			i(259183),	-- Turbo-Junker's Multitool v9
-		}),
-		filter(REAGENTS, {
 			i(243574),	-- Song Gear+
 			i(243575),	-- Song Gear++
 			i(243576),	-- Soul Sprocket+
@@ -738,12 +744,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		header(HEADERS.Spell, 1269575, {	-- Midnight Milling
 			i(245803),	-- Argentleaf Pigment+
 			i(245804),	-- Argentleaf Pigment++
-			i(245866),	-- Mana Lily Pigment+
-			i(245867),	-- Mana Lily Pigment++
+			i(245867),	-- Mana Lily Pigment+
+			i(245866),	-- Mana Lily Pigment++
 			i(245807),	-- Powder Pigment+
 			i(245808),	-- Powder Pigment++
-			i(245864),	-- Sanguithorn Pigment+
-			i(245865),	-- Sanguithorn Pigment++
+			i(245865),	-- Sanguithorn Pigment+
+			i(245864),	-- Sanguithorn Pigment++
 		}),
 		n(DECOR, {
 			i(262464),	-- Floating Void-Touched Tome (DECOR!)
@@ -768,40 +774,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245800),	-- Contract: The Silvermoon Court++
 			i(245793),	-- Contract: The Singularity+
 			i(245794),	-- Contract: The Singularity++
-			i(245871),	-- Darkmoon Sigil: Blood+
-			i(245872),	-- Darkmoon Sigil: Blood++
-			i(245875),	-- Darkmoon Sigil: Hunt+
-			i(245876),	-- Darkmoon Sigil: Hunt++
-			i(245877),	-- Darkmoon Sigil: Rot+
-			i(245878),	-- Darkmoon Sigil: Rot++
-			i(245873),	-- Darkmoon Sigil: Void+
-			i(245874),	-- Darkmoon Sigil: Void++
-			i(245820),	-- Thalassian Missive of Crafting Speed+
-			i(245821),	-- Thalassian Missive of Crafting Speed++
-			i(245826),	-- Thalassian Missive of Deftness+
-			i(245827),	-- Thalassian Missive of Deftness++
-			i(245822),	-- Thalassian Missive of Finesse+
-			i(245823),	-- Thalassian Missive of Finesse++
-			i(245814),	-- Thalassian Missive of Ingenuity+
-			i(245815),	-- Thalassian Missive of Ingenuity++
-			i(245818),	-- Thalassian Missive of Multicraft+
-			i(245819),	-- Thalassian Missive of Multicraft++
-			i(245824),	-- Thalassian Missive of Perception+
-			i(245825),	-- Thalassian Missive of Perception++
-			i(245816),	-- Thalassian Missive of Resourcefulness+
-			i(245817),	-- Thalassian Missive of Resourcefulness++
-			i(245781),	-- Thalassian Missive of the Aurora+
-			i(245782),	-- Thalassian Missive of the Aurora++
-			i(245783),	-- Thalassian Missive of the Feverflare+
-			i(245784),	-- Thalassian Missive of the Feverflare++
-			i(245785),	-- Thalassian Missive of the Fireflash+
-			i(245786),	-- Thalassian Missive of the Fireflash++
-			i(245787),	-- Thalassian Missive of the Harmonious+
-			i(245788),	-- Thalassian Missive of the Harmonious++
-			i(245789),	-- Thalassian Missive of the Peerless+
-			i(245790),	-- Thalassian Missive of the Peerless++
-			i(245791),	-- Thalassian Missive of the Quickblade+
-			i(245792),	-- Thalassian Missive of the Quickblade++
 			i(245755),	-- Thalassian Treatise on Alchemy
 			i(245763),	-- Thalassian Treatise on Blacksmithing
 			i(245759),	-- Thalassian Treatise on Enchanting
@@ -849,25 +821,59 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245845),	-- Eight of Void
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(259205),	-- Gilded Alchemist's Mixing Rod
-			i(259209),	-- Gilded Sin'dorei Quill
-			i(259207),	-- Gilded Sin'dorei Rolling Pin
-			i(245777),	-- Hobbyist Alchemist's Mixing Rod
-			i(245779),	-- Hobbyist Rolling Pin
-			i(245775),	-- Hobbyist Scribe's Quill
-			i(245778),	-- Sin'dorei Alchemist's Mixing Rod
-			i(245776),	-- Sin'dorei Quill
-			i(245780),	-- Sin'dorei Rolling Pin
+			i(259205, {["requireSkill"] = ALCHEMY}),	-- Gilded Alchemist's Mixing Rod
+			i(259209, {["requireSkill"] = INSCRIPTION}),	-- Gilded Sin'dorei Quill
+			i(259207, {["requireSkill"] = COOKING}),	-- Gilded Sin'dorei Rolling Pin
+			i(245777, {["requireSkill"] = ALCHEMY}),	-- Hobbyist Alchemist's Mixing Rod
+			i(245779, {["requireSkill"] = COOKING}),	-- Hobbyist Rolling Pin
+			i(245775, {["requireSkill"] = INSCRIPTION}),	-- Hobbyist Scribe's Quill
+			i(245778, {["requireSkill"] = ALCHEMY}),	-- Sin'dorei Alchemist's Mixing Rod
+			i(245776, {["requireSkill"] = COOKING}),	-- Sin'dorei Quill
+			i(245780, {["requireSkill"] = INSCRIPTION}),	-- Sin'dorei Rolling Pin
 		}),
 		filter(REAGENTS, {
 			i(245764),	-- Codified Azeroot+
 			i(245765),	-- Codified Azeroot++
+			i(245871),	-- Darkmoon Sigil: Blood+
+			i(245872),	-- Darkmoon Sigil: Blood++
+			i(245875),	-- Darkmoon Sigil: Hunt+
+			i(245876),	-- Darkmoon Sigil: Hunt++
+			i(245877),	-- Darkmoon Sigil: Rot+
+			i(245878),	-- Darkmoon Sigil: Rot++
+			i(245873),	-- Darkmoon Sigil: Void+
+			i(245874),	-- Darkmoon Sigil: Void++
 			i(245801),	-- Munsell Ink+
 			i(245802),	-- Munsell Ink++
 			i(245805),	-- Sienna Ink+
 			i(245806),	-- Sienna Ink++
 			i(245766),	-- Soul Cipher+
 			i(245767),	-- Soul Cipher++
+			i(245820),	-- Thalassian Missive of Crafting Speed+
+			i(245821),	-- Thalassian Missive of Crafting Speed++
+			i(245826),	-- Thalassian Missive of Deftness+
+			i(245827),	-- Thalassian Missive of Deftness++
+			i(245822),	-- Thalassian Missive of Finesse+
+			i(245823),	-- Thalassian Missive of Finesse++
+			i(245814),	-- Thalassian Missive of Ingenuity+
+			i(245815),	-- Thalassian Missive of Ingenuity++
+			i(245818),	-- Thalassian Missive of Multicraft+
+			i(245819),	-- Thalassian Missive of Multicraft++
+			i(245824),	-- Thalassian Missive of Perception+
+			i(245825),	-- Thalassian Missive of Perception++
+			i(245816),	-- Thalassian Missive of Resourcefulness+
+			i(245817),	-- Thalassian Missive of Resourcefulness++
+			i(245781),	-- Thalassian Missive of the Aurora+
+			i(245782),	-- Thalassian Missive of the Aurora++
+			i(245783),	-- Thalassian Missive of the Feverflare+
+			i(245784),	-- Thalassian Missive of the Feverflare++
+			i(245785),	-- Thalassian Missive of the Fireflash+
+			i(245786),	-- Thalassian Missive of the Fireflash++
+			i(245787),	-- Thalassian Missive of the Harmonious+
+			i(245788),	-- Thalassian Missive of the Harmonious++
+			i(245789),	-- Thalassian Missive of the Peerless+
+			i(245790),	-- Thalassian Missive of the Peerless++
+			i(245791),	-- Thalassian Missive of the Quickblade+
+			i(245792),	-- Thalassian Missive of the Quickblade++
 		}),
 		filter(TRINKET_F, {
 			i(245855),	-- Darkmoon Deck: Blood
@@ -924,8 +930,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(242721),	-- Tenebrous Amethyst++
 		}),
 		header(HEADERS.Spell, 1231132, {	-- Midnight Crushing
-			i(242786),	-- Crystalline Glass+
-			i(242787),	-- Crystalline Glass++
+			i(242787),	-- Crystalline Glass+
+			i(242786),	-- Crystalline Glass++
 			i(242620),	-- Glimmering Gemdust+
 			i(242621),	-- Glimmering Gemdust++
 		}),
@@ -1022,8 +1028,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(240862),	-- Versatile Peridot++
 		}),
 		filter(MISC, {
-			i(241131),	-- Amani Lapis Prism+
-			i(241132),	-- Amani Lapis Prism++
+			i(241132),	-- Amani Lapis Prism+
+			i(241131),	-- Amani Lapis Prism++
 			i(241137),	-- Harandar Peridot Prism+
 			i(241138),	-- Harandar Peridot Prism++
 			i(241141),	-- Monologuer's Chalice
@@ -1040,18 +1046,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(251073),	-- Voidstone Shielding Array
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(246527),	-- Attuned Thalassian Rune-Prism
-			i(240953),	-- Bold Biographer's Bifocals
-			i(240954),	-- Fantastic Font Focuser
-			i(246524),	-- Flawless Text Scrutinizers
-			i(240958),	-- Improved Right-Handed Magnifying Glass
-			i(246526),	-- Mage-Eye Precision Loupes
-			i(240956),	-- Silvermoon Focusing Shard
-			i(240955),	-- Silvermoon Loupes
-			i(240960),	-- Sin'dorei Enchanter's Crystal
-			i(240959),	-- Sin'dorei Jeweler's Loupes
-			i(240957),	-- Sin'dorei Scribe's Spectacles
-			i(246525),	-- Thalassian Scribe's Crystalline Lens
+			i(246527, {["requireSkill"] = ENCHANTING}),	-- Attuned Thalassian Rune-Prism
+			i(240953, {["requireSkill"] = INSCRIPTION}),	-- Bold Biographer's Bifocals
+			i(240954, {["requireSkill"] = INSCRIPTION}),	-- Fantastic Font Focuser
+			i(246524, {["requireSkill"] = INSCRIPTION}),	-- Flawless Text Scrutinizers
+			i(240958, {["requireSkill"] = INSCRIPTION}),	-- Improved Right-Handed Magnifying Glass
+			i(246526, {["requireSkill"] = JEWELCRAFTING}),	-- Mage-Eye Precision Loupes
+			i(240956, {["requireSkill"] = ENCHANTING}),	-- Silvermoon Focusing Shard
+			i(240955, {["requireSkill"] = JEWELCRAFTING}),	-- Silvermoon Loupes
+			i(240960, {["requireSkill"] = ENCHANTING}),	-- Sin'dorei Enchanter's Crystal
+			i(240959, {["requireSkill"] = JEWELCRAFTING}),	-- Sin'dorei Jeweler's Loupes
+			i(240957, {["requireSkill"] = INSCRIPTION}),	-- Sin'dorei Scribe's Spectacles
+			i(246525, {["requireSkill"] = INSCRIPTION}),	-- Thalassian Scribe's Crystalline Lens
 		}),
 		filter(REAGENTS, {
 			i(240974),	-- Kaleidoscopic Prism+
@@ -1152,30 +1158,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(244639),	-- Void-Touched Drums
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(244629),	-- Apprentice Jeweler's Apron
-			i(244627),	-- Apprentice Smith's Apron
-			i(244620),	-- Chemist's Cap
-			i(244615),	-- Eversong Botanist's Satchel
-			i(244623),	-- Eversong Hunter's Headcover
-			i(244619),	-- Hideworker's Cover
-			i(244626),	-- Sin'dorei Alchemist's Hat
-			i(244624),	-- Sin'dorei Engineer's Gloves
-			i(244628),	-- Sin'dorei Forgemaster's Cover
-			i(244621),	-- Sin'dorei Herbalist's Backpack
-			i(244622),	-- Sin'dorei Hunter's Pack
-			i(244630),	-- Sin'dorei Jeweler's Cover
-			i(244625),	-- Sin'dorei Leathershaper's Smock
-			i(244616),	-- Skinner's Backpack
-			i(244617),	-- Skinner's Cap
-			i(244812),	-- Thalassian Alchemist's Mixcap
-			i(244814),	-- Thalassian Gemshaper's Grand Cover
-			i(244807),	-- Thalassian Herbtender's Cradle
-			i(244811),	-- Thalassian Hideshaper's Regalia
-			i(244813),	-- Thalassian Ironbender's Regalia
-			i(244810),	-- Thalassian Scrapmaster's Gauntlets
-			i(244809),	-- Thalassian Wildseeker's Stridercap
-			i(244808),	-- Thalassian Wildseeker's Workbag
-			i(244618),	-- Tinker's Handguard
+			i(244629, {["requireSkill"] = JEWELCRAFTING}),	-- Apprentice Jeweler's Apron
+			i(244627, {["requireSkill"] = BLACKSMITHING}),	-- Apprentice Smith's Apron
+			i(244620, {["requireSkill"] = ALCHEMY}),	-- Chemist's Cap
+			i(244615, {["requireSkill"] = HERBALISM}),	-- Eversong Botanist's Satchel
+			i(244623, {["requireSkill"] = SKINNING}),	-- Eversong Hunter's Headcover
+			i(244619, {["requireSkill"] = LEATHERWORKING}),	-- Hideworker's Cover
+			i(244626, {["requireSkill"] = ALCHEMY}),	-- Sin'dorei Alchemist's Hat
+			i(244624, {["requireSkill"] = ENGINEERING}),	-- Sin'dorei Engineer's Gloves
+			i(244628, {["requireSkill"] = BLACKSMITHING}),	-- Sin'dorei Forgemaster's Cover
+			i(244621, {["requireSkill"] = HERBALISM}),	-- Sin'dorei Herbalist's Backpack
+			i(244622, {["requireSkill"] = SKINNING}),	-- Sin'dorei Hunter's Pack
+			i(244630, {["requireSkill"] = JEWELCRAFTING}),	-- Sin'dorei Jeweler's Cover
+			i(244625, {["requireSkill"] = LEATHERWORKING}),	-- Sin'dorei Leathershaper's Smock
+			i(244616, {["requireSkill"] = SKINNING}),	-- Skinner's Backpack
+			i(244617, {["requireSkill"] = SKINNING}),	-- Skinner's Cap
+			i(244812, {["requireSkill"] = ALCHEMY}),	-- Thalassian Alchemist's Mixcap
+			i(244814, {["requireSkill"] = JEWELCRAFTING}),	-- Thalassian Gemshaper's Grand Cover
+			i(244807, {["requireSkill"] = HERBALISM}),	-- Thalassian Herbtender's Cradle
+			i(244811, {["requireSkill"] = LEATHERWORKING}),	-- Thalassian Hideshaper's Regalia
+			i(244813, {["requireSkill"] = BLACKSMITHING}),	-- Thalassian Ironbender's Regalia
+			i(244810, {["requireSkill"] = ENGINEERING}),	-- Thalassian Scrapmaster's Gauntlets
+			i(244809, {["requireSkill"] = SKINNING}),	-- Thalassian Wildseeker's Stridercap
+			i(244808, {["requireSkill"] = SKINNING}),	-- Thalassian Wildseeker's Workbag
+			i(244618, {["requireSkill"] = ENGINEERING}),	-- Tinker's Handguard
 		}),
 		filter(REAGENTS, {
 			i(244603),	-- Blessed Pango Charm+
@@ -1297,6 +1303,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(239684),	-- Thalassian Competitor's Cloth Treads
 			i(239685),	-- Thalassian Competitor's Cloth Tunic
 		}),
+		filter(BAGS, {
+			i(240158),	-- Arcanoweave Reagent Rucksack
+			i(240159),	-- Bright Linen Reagent Satchel
+			i(240160),	-- Imbued Bright Linen Backpack
+			i(240161),	-- Sunfire Silk Backpack
+		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(240154),	-- Arcanoweave Spellthread+
 			i(240155),	-- Arcanoweave Spellthread++
@@ -1322,31 +1334,27 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(262611),	-- Voidstrider Saddlebag (DECOR!)
 		}),
 		filter(MISC, {
-			i(240158),	-- Arcanoweave Reagent Rucksack
 			i(239711),	-- Bright Linen Bandage+
 			i(239713),	-- Bright Linen Bandage++
-			i(240159),	-- Bright Linen Reagent Satchel
-			i(240160),	-- Imbued Bright Linen Backpack
-			i(240161),	-- Sunfire Silk Backpack
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(239641),	-- Bright Linen Alchemy Apron
-			i(239643),	-- Bright Linen Enchanting Hat
-			i(239644),	-- Bright Linen Fishing Hat
-			i(239645),	-- Bright Linen Herbalism Hat
-			i(239646),	-- Bright Linen Tailoring Robe
-			i(239642),	-- Chef's Bright Linen Cooking Chapeau
-			i(239635),	-- Elegant Artisan's Alchemy Coveralls
-			i(239636),	-- Elegant Artisan's Cooking Hat
-			i(239637),	-- Elegant Artisan's Enchanting Hat
-			i(239638),	-- Elegant Artisan's Fishing Hat
-			i(239639),	-- Elegant Artisan's Herbalism Hat
-			i(239640),	-- Elegant Artisan's Tailoring Robe
-			i(267052),	-- Thalassian Alchemy Coveralls
-			i(267054),	-- Thalassian Chef's Chapeau
-			i(267056),	-- Thalassian Enchanter's Bonnet
-			i(267060),	-- Thalassian Herbalist's Cowl
-			i(267062),	-- Thalassian Tailor's Threads
+			i(239641, {["requireSkill"] = ALCHEMY}),	-- Bright Linen Alchemy Apron
+			i(239643, {["requireSkill"] = ENCHANTING}),	-- Bright Linen Enchanting Hat
+			i(239644, {["requireSkill"] = FISHING}),	-- Bright Linen Fishing Hat
+			i(239645, {["requireSkill"] = HERBALISM}),	-- Bright Linen Herbalism Hat
+			i(239646, {["requireSkill"] = TAILORING}),	-- Bright Linen Tailoring Robe
+			i(239642, {["requireSkill"] = COOKING}),	-- Chef's Bright Linen Cooking Chapeau
+			i(239635, {["requireSkill"] = ALCHEMY}),	-- Elegant Artisan's Alchemy Coveralls
+			i(239636, {["requireSkill"] = COOKING}),	-- Elegant Artisan's Cooking Hat
+			i(239637, {["requireSkill"] = ENCHANTING}),	-- Elegant Artisan's Enchanting Hat
+			i(239638, {["requireSkill"] = FISHING}),	-- Elegant Artisan's Fishing Hat
+			i(239639, {["requireSkill"] = HERBALISM}),	-- Elegant Artisan's Herbalism Hat
+			i(239640, {["requireSkill"] = TAILORING}),	-- Elegant Artisan's Tailoring Robe
+			i(267052, {["requireSkill"] = ALCHEMY}),	-- Thalassian Alchemy Coveralls
+			i(267054, {["requireSkill"] = COOKING}),	-- Thalassian Chef's Chapeau
+			i(267056, {["requireSkill"] = ENCHANTING}),	-- Thalassian Enchanter's Bonnet
+			i(267060, {["requireSkill"] = HERBALISM}),	-- Thalassian Herbalist's Cowl
+			i(267062, {["requireSkill"] = TAILORING}),	-- Thalassian Tailor's Threads
 		}),
 		filter(REAGENTS, {
 			i(239198),	-- Arcanoweave Bolt+
