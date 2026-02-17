@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnGetDataCache", function(categories)
-local ach,crit,en,flt,h,i,mnt,p,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateItemSource,_.CreateToy;
+local ach,crit,de,en,flt,h,i,mnt,p,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateItemSource,_.CreateToy;
 local a={{70}};
 categories.InGameShop={
 h(-12,{u=3,g={
@@ -422,6 +422,9 @@ s(51433,97213,{awp=50400,f=2,rwp=80300,u=2}),
 s(50108,95474,{awp=50400,f=2,rwp=80300,u=2}),
 s(50109,95475,{awp=50400,f=2,rwp=80300,u=2}),
 s(229447,231290,{awp=110005,f=3,rwp=110007,u=2})}}),
+h(-679,{awp=120001,u=3,g={
+de(14838,{itemID=263052,spellID=1269715,u=3}),
+de(14839,{itemID=263053,spellID=1269716,u=3})}}),
 flt(100,{u=3,g={
 mnt(1226983,{awp=110105,b=1,itemID=238994,lvl=10,u=3}),
 mnt(367875,{awp=100105,itemID=190636,lvl=10,u=3}),

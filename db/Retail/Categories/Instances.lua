@@ -365,7 +365,23 @@ s(7614,19135,{b=1,f=4,lvl=25,u=2}),
 s(7407,18544,{b=1,f=5,lvl=25,u=2}),
 s(7613,19134,{b=1,f=5,lvl=25,u=2}),
 s(7612,19133,{b=1,f=4,lvl=25,u=2}),
-i(18543,{b=1,f=52,lvl=25,u=2})}})}}),
+i(18543,{b=1,f=52,lvl=25,u=2})}}),
+n(14464,{awp=10400,coords={{72.6,20,76},{77,24.2,76},{77.2,16.6,76},{80,24.2,76},{82.6,21,76}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
+s(7424,18673,{f=8,lvl=23,u=2}),
+i(18674,{f=52,lvl=23,u=2}),
+i(19268,{spellID=23679,u=2})}}),
+n(14461,{awp=10400,coords={{44.6,46,78},{45.4,54.8,78},{48.2,41.2,78},{51.6,57.6,78},{53.2,41.8,78},{55.6,57.4,78},{56.6,42.8,78},{56.6,48.2,78}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
+s(7422,18671,{f=23,lvl=23,u=2}),
+s(7423,18672,{f=1,lvl=23,u=2})}}),
+n(14457,{awp=10400,coords={{54.6,42.6,83}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
+r(26279,{itemID=21548,requireSkill=165,skillID=2532,u=2}),
+i(18679,{f=52,lvl=23,u=2}),
+i(18678,{f=51,lvl=23,u=2})}}),
+n(14454,{awp=10400,coords={{17.6,27,81},{26.6,29.6,81},{31,23.6,81},{32.2,17.2,81}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
+s(7425,18676,{f=6,lvl=23,u=2}),
+s(7426,18677,{f=3,lvl=23,u=2}),
+r(26279,{itemID=21548,requireSkill=165,skillID=2532,u=2}),
+i(19268,{spellID=23679,u=2})}})}}),
 inst(741,{coords={{54.18,83.25,33}},crs=a[259],isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",mapID=232,savedInstanceID=409,g={
 ah(17182,{isRaid=1,type="i",g={
 ach(429,{c=a[56],providers={{"i",17182}}}),

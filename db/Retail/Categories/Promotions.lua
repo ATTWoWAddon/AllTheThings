@@ -568,6 +568,8 @@ de(12259,{itemID=259067,spellID=1264392,u=3}),
 de(12258,{itemID=259066,spellID=1264391,u=3}),
 de(12250,{itemID=259058,spellID=1264383,u=3}),
 de(12249,{itemID=259057,spellID=1264382,u=3})}})}}),
+h(-722,{awp=120001,description="These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",u=3,g={
+i(256764,{u=3})}}),
 h(-533,{awp=60203,description="These rewards are available to anyone who purchases Overwatch Origins Collection.",rwp=100002,u=2,g={
 p(1828,{b=1,itemID=134047,npcID=103159,spellID=204148,u=2}),
 ach(11064,{providers={{"n",103159}},u=2})}}),
