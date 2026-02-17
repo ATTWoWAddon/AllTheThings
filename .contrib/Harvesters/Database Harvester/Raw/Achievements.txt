@@ -78,6 +78,10 @@
 62038@@@[DNT] Raid Attunement Achieved - Tempest Keep
 62039@@@[DNT] Raid Attunement Achieved - The Battle for Mount Hyjal
 62040@@@[DNT] Raid Attunement Achieved - Black Temple
+2.5.5.65895
+62503@@@[DNT] TBC Mount Skill Clawback - 113274
+62504@@@[DNT] TBC Mount Skill Clawback - 113275
+62505@@@[DNT] TBC Mount Skill Clawback - 113286
 3.0.1.8303
 1@@@Race/Level Achievement [PH]
 2@@@Class/Level Achievement [PH]
