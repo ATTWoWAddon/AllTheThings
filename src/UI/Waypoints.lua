@@ -167,10 +167,6 @@ local function TryAddGroupWaypoints(group)
 			AddTomTomWaypointCache(coord, group);
 		end
 	end
-	c = group.coord;
-	if c then
-		AddTomTomWaypointCache(c, group);
-	end
 end
 local function AddTomTomParentCoord(group)
 	-- app.PrintDebug("WP:ParentChain")

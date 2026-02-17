@@ -182,8 +182,6 @@ local function ExportKeyValue(key, value)
 			str = str .. "\t{ " .. o[1] .. ", " .. o[2] .. ", " .. o[3] .. " },\n";
 		end
 		str = str .. "},";
-	elseif key == "coord" then
-		str = str .. "{ " .. value[1] .. ", " .. value[2] .. ", " .. value[3] .. " },";
 	elseif key == "cost" then
 		if type(value) == "number" then
 			-- This is simply a gold value

@@ -673,11 +673,7 @@ local InformationTypes = {
 	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			local coords = reference.coords;
-			if not coords then
-				coords = reference.coord;
-				if not coords then return; end
-				coords = { coords };
-			end
+			if not coords then return; end
 
 			local coordCount = #coords;
 			if coordCount < 1 then return; end
@@ -744,11 +740,11 @@ local InformationTypes = {
 	}),
 	CreateInformationType("playerCoord", { text = L.PLAYER_COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
-			local coord = reference.playerCoord;
-			if coord then
+			local playerCoord = reference.playerCoord;
+			if playerCoord then
 				tinsert(tooltipInfo, {
 					left = t.text,
-					right = GetCoordString(coord[1], coord[2]),
+					right = GetCoordString(playerCoord[1], playerCoord[2]),
 					r = 1, g = 1, b = 1
 				});
 			end

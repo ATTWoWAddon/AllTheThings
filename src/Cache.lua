@@ -421,11 +421,6 @@ fieldConverters.flightpathID = function(group, value)
 		CacheField(group, "flightPathsByMapID", mapID);
 	end
 end
-fieldConverters.coord = function(group, coord)
-	if not IsKeyIgnoredForCoord[group.key](group) then
-		return cacheMapID(group, coord[3]);
-	end
-end
 fieldConverters.coords = function(group, coords)
 	if not IsKeyIgnoredForCoord[group.key](group) then
 		for i=1,#coords do
@@ -452,9 +447,6 @@ mapKeyUncachers = {
 		for i=1,#maps do
 			uncacheMap(group, maps[i]);
 		end
-	end,
-	["coord"] = function(group, coord)
-		uncacheMap(group, coord[3]);
 	end,
 	["coords"] = function(group, coords)
 		for i=1,#coords do
@@ -719,7 +711,6 @@ end
 -- we need special handling since the data in the 'otherQuestData' needs to cache against the 'group' not the other data itself
 local IgnoredOtherFactionFields = {
 	coords = true,
-	coord = true,
 	maps = true,
 	g = true,
 };
