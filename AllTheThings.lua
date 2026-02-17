@@ -42,8 +42,8 @@ local print,rawget,rawset,tostring,ipairs,pairs,tonumber,wipe,select,setmetatabl
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- App & Module locals
-local CacheFields, SearchForField, SearchForObject
-	= app.CacheFields, app.SearchForField, app.SearchForObject
+local SearchForField, SearchForObject
+	= app.SearchForField, app.SearchForObject
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local TryColorizeName = app.TryColorizeName;
 local MergeProperties = app.MergeProperties
@@ -1484,7 +1484,7 @@ function app:GetDatabaseRoot()
 	-- app.PrintMemoryUsage()
 	-- app.PrintDebug("Begin Cache Prime")
 	app.AssignChildren(rootData);
-	CacheFields(rootData);
+	app.CacheFields(rootData);
 	-- app.PrintDebugPrior("Ended Cache Prime")
 	-- app.PrintMemoryUsage()
 
@@ -1496,7 +1496,7 @@ function app:GetDatabaseRoot()
 			o.sourceIgnored = nil
 		end
 		tinsert(g, db);
-		CacheFields(db, true, "Achievements")
+		app.CacheFields(db, true, "Achievements")
 		app.AssignChildren(db);
 		db.parent = rootData;
 	end

@@ -669,13 +669,13 @@ end
 --local GetTimePreciseSec = GetTimePreciseSec;
 CacheFields = function(group, skipMapCaching, cacheName)
 	-- app.PrintDebug("CacheFields",app:SearchLink(group),skipMapCaching,cacheName)
-	allowMapCaching = not skipMapCaching
-	--local start = GetTimePreciseSec();
 	if cacheName then
-		AllCaches[cacheName].CacheFields(group)
-	else
-		_CacheFields(group)
+		return AllCaches[cacheName].CacheFields(group, skipMapCaching)
 	end
+	
+	--local start = GetTimePreciseSec();
+	allowMapCaching = not skipMapCaching
+	_CacheFields(group);
 	for i=1,#runners do
 		runners[i]()
 	end

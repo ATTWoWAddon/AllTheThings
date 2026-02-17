@@ -203,7 +203,7 @@ app:CreateWindow("Achievements", {
 										end
 										achievement.g = g;
 									end
-									app.CacheFields(achievement);
+									app.CacheFields(achievement, true);
 
 									-- Put a copy in Unsorted.
 									if unsorted then unsorted:AddUnsortedAchievement(achievement); end
