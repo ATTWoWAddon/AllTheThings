@@ -38,10 +38,21 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 					i(253174),	-- Dried Gilnean Roses (DECOR!)
 					i(253543),	-- Clefthoof Hide Rug (DECOR!)
 					o(572039, {
-						i(250882),	-- Clefthoof Hide (QI!)
+						["questID"] = 92385,
+						["groups"] = {
+							i(250882, {	-- Clefthoof Hide (QI!)
+								["coord"] = { 37.2, 53.0, ARCANTINA },
+
+							}),
+						},
 					}),
 					o(572038, {
-						i(250881),	-- Dried Roses (QI!)
+						["questID"] = 92384,
+						["groups"] = {
+							i(250881, {	-- Dried Roses (QI!)
+								["coord"] = { 41.7, 48.1, ARCANTINA },
+							}),
+						},
 					}),
 				},
 			}),
@@ -59,7 +70,12 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 						},
 					}),
 					o(572035, {
-						i(250878),	-- Weathered Tome (QI!)
+						["questID"] = 92381,
+						["groups"] = {
+							i(250878, {	-- Weathered Tome (QI!)
+								["coord"] = { 62.3, 43.3, ARCANTINA },
+							}),
+						},
 					}),
 				},
 			}),
@@ -69,7 +85,12 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 				["groups"] = {
 					i(253178),	-- Inactive Filigree Moon Lamp (DECOR!)
 					o(613535, {	--
-						i(250874),	-- Corrupted Lantern (QI!)
+						["questID"] = 92377,
+						["groups"] = {
+							i(250874, {	-- Corrupted Lantern (QI!)
+								--["coord"] = { X, Y, ARCANTINA },
+							}),
+						},
 					}),
 				},
 			}),
@@ -93,7 +114,12 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 					i(253176),	-- Ancient Zandalari Ritual Scroll (DECOR!)
 					i(255685),	-- Lan'dalock's Pocket Watch (QI!)
 					o(572032, {	--
-						i(250875),	-- Ancient Zandalari Scroll (QI!)
+						["questID"] = 92378,
+						["groups"] = {
+							i(250875, {	-- Ancient Zandalari Scroll (QI!)
+								["coord"] = { 25.8, 43.4, ARCANTINA },
+							}),
+						},
 					}),
 				},
 			}),
@@ -116,6 +142,23 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 						i(263872),	-- Lucifern (QI!)
 					}),
 				},
+			}),
+			-- Unsorted, these are part of the highly decorated achievement, need to be fitted into the rest of the structure of this file. Do not put them in HQT or you will get parser warnings.
+			q(92380),	-- Defense Fragment
+			q(92376, {	-- Ebon Banner
+				i(250873),	-- Ebon Banner
+			}),
+			q(92379, {	-- Evergreen Vine
+				i(250876),	-- Evergreen Vine
+			}),
+			q(92382, {	-- Heavy Anchor
+				i(250879),	-- Heavy Anchor
+			}),
+			q(92383, {	-- Sandy Tapestry
+				i(250880),	-- Sandy Tapestry
+			}),
+			q(92375, {	-- Scarred Spear
+				i(250877),	-- Scarred Spear
 			}),
 		}),
 		n(TREASURES, sharedData({["isDaily"] = true,}, {
@@ -230,17 +273,13 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 	},
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(ARCANTINA, {
-		["icon"] = [[~_.asset("Arcantina")]],
-		["groups"] = {
-			n(QUESTS, {
-				--Probably worth to redo into hqt or under treasure, idk?
-				q(92378),	-- Ancient Zandalari Scroll (itemID 250875) was placed in Arcantina @ 25.8, 43.4
-				q(92385),	-- Clefthoof Hide] (itemID 250882) was placed in Arcantina @ 37.2, 53.0
-				q(92381),	-- Weathered Tome (itemID 250878) was placed in Arcantina @ 62.3, 43.3
-				q(92384),	-- Dried Roses (itemID 250881) was placed in Arcantina @ 41.7, 48.1
-			}),
-		},
-	}),
-}));
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+-- 	m(ARCANTINA, {
+-- 		["icon"] = [[~_.asset("Arcantina")]],
+-- 		["groups"] = {
+-- 			n(QUESTS, {
+
+-- 			}),
+-- 		},
+-- 	}),
+-- }));

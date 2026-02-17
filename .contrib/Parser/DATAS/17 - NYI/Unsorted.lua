@@ -1333,12 +1333,8 @@ root(ROOTS.Unsorted, {
 			i(250866),	-- Pinn's Cup
 			i(250867),	-- Silverpine Dry Gin
 			i(250871),	-- Gilnean Fog
-			i(250872),	-- Scarred Spear
-			i(250873),	-- Ebon Banner
-			i(250876),	-- Evergreen Vine
 			i(250877),	-- Pylon Fragment
-			i(250879),	-- Heavy Anchor
-			i(250880),	-- Sandy Tapestry
+
 			-- Pet
 			i(250863),	-- Naloki
 
