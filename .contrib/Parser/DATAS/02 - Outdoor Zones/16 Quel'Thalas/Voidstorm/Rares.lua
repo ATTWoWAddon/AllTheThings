@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					257213,	-- Solaria Fusebot
 				},
 				["coord"] = { 28.7, 57.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-				["questID"] = 94461,	--TODO: could be weekly (rep) questID?
+				["questID"] = 94461,
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(264701),	-- Cosmic Bell (TODO: could be Midnight zone reward)
@@ -85,6 +85,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(256926, {	-- Queen o' War
+				["provider"] = { "o", 617692 },	-- Queen o' War
 				["coord"] = { 55.7, 79.4, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93934,
 				["groups"] = {
@@ -105,7 +106,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264589),	-- Voidfused Wing Cloak
 				},
 			}),
-			n(244272, {	-- Screammaxa the Matriarch
+			n(256922, {	-- Screammaxa the Matriarch
 				["coord"] = { 43.7, 51.5, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93966,
 				["groups"] = {
@@ -137,7 +138,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(248700, {	-- Abysslick
 				["coord"] = { 28.2, 66.0, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 94462,
-				["isWeekly"] = true,
 				["groups"] = {
 					i(264596),	-- Voidthread Veil
 				},
@@ -146,7 +146,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 24.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 94463,
 				["cost"] = { { "i", 248680, 3 } },	-- 3x Unstable Focusing Crystal
-				["isWeekly"] = true,
 				["groups"] = {
 					i(264606),	-- Netherlocus Amulet
 				},
@@ -154,7 +153,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(248068, {	-- Nullspiral
 				["coord"] = { 29.8, 67.9, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 94460,
-				["isWeekly"] = true,
 				["groups"] = {
 					i(264531),	-- Shadowthread Slippers
 				},
@@ -162,15 +160,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(248459, {	-- The Many-Broken
 				["coord"] = { 28.8, 70.2, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 94458,
-				["isWeekly"] = true,
 				["groups"] = {
 					i(264651),	-- Resonating Traumatizer
 				},
 			}),
 			n(248791, {	-- Voidseer Orivane
-				["coord"] = { 30.1, 69.3, MAP.MIDNIGHT.VOIDSTORM },
+				["coords"] = {
+					{ 30.1, 69.3, MAP.MIDNIGHT.VOIDSTORM },
+					{ 30.3, 66.5, MAP.MIDNIGHT.VOIDSTORM },
+				},
 				["questID"] = 94459,
-				["isWeekly"] = true,
 				["groups"] = {
 					i(251786),	-- Ever-Collapsing Void Fissure
 				},
@@ -197,6 +196,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94755, {	-- Weekly reputation: Far'thana the Mad
 					["name"] = "Far'thana the Mad weekly reputation obtained.",
 				}),
+				-- TODO: Blizzard bug - Gar'chak Skullcleave & Hardin Steellock missing weekly rep flag questIDs
 				q(94758, {	-- Weekly reputation: Lotus Darkblossom
 					["name"] = "Lotus Darkblossom weekly reputation obtained.",
 				}),
@@ -224,7 +224,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94730, {	-- Weekly reputation: Tremora
 					["name"] = "Tremora weekly reputation obtained.",
 				}),
-				--Stormarion Assault rares seems like weekly?
+				--Stormarion Assault rares missing weekly rep flags
 				--q(YYYYY, {	-- Weekly reputation: Abysslick
 				--	["name"] = "Abysslick weekly reputation obtained.",
 				--}),

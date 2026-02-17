@@ -356,15 +356,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						i(252265),	-- Hexed Potatoad Mucus (TOY!)
 					},
 				}),
-
 			}),
 			n(REWARDS, {
+				filter(COSMETIC, {
+					i(264855),	-- Vilebranch Deathseer (COSMETIC!)
+				}),
 				n(DECOR, {
 					i(267009),	-- Amani Training Dummy (DECOR!)
 					i(264258),	-- Blossoming Forge (DECOR!)
 					i(263042),	-- Rootlight Lamppost (DECOR!)
 				}),
 				filter(MISC, {
+					i(262965),	-- Delver's Delight (TODO: should be questID)
 				}),
 			}),
 		},
@@ -400,7 +403,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
+				filter(BATTLE_PETS, {
+					i(262390),	-- Sporbie (PET!)
+				}),
 				n(DECOR, {
+					i(264329),	-- Amani Dining Table (DECOR!)
 					i(264330),	-- Amani Hanging Brazier (DECOR!)
 					i(267009),	-- Amani Training Dummy (DECOR!)
 					i(264258),	-- Blossoming Forge (DECOR!)
@@ -472,10 +479,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						i(245526),	-- Bloodmarked Phasebound Visor (COSMETIC!)
 					},
 				}),
-				--o(XXXX, {	-- Sturdy Chest	-- TODO: missing objectID
-				--	["coord"] = { 39.0, 41.9, SHADOWGUARD_POINT },	-- TODO: coords off, since data from delve when map was missing
-				--	["questID"] = 94025,
-				--}),
+				o(618281, {	-- Sturdy Chest
+					["coord"] = { 58.2, 41.5, SHADOWGUARD_POINT },
+					["questID"] = 94025,
+				}),
+				o(618295, {	-- Sturdy Chest
+					["coord"] = { 58.6, 60.4, SHADOWGUARD_POINT },
+					["questID"] = 94044,
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
@@ -483,6 +494,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 				filter(COSMETIC, {
 					i(264848),	-- Sunlit Vinepouch (COSMETIC!)
+					i(264854),	-- Vilebranch Soulseer (COSMETIC!)
 				}),
 				filter(MISC, {
 				}),
@@ -526,7 +538,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(264329),	-- Amani Dining Table (DECOR!)
 					i(264330),	-- Amani Hanging Brazier (DECOR!)
+					i(267009),	-- Amani Training Dummy (DECOR!)
 				}),
 				filter(COSMETIC, {
 					i(264851),	-- Voidtouched Twilight Spaulder (COSMETIC!)

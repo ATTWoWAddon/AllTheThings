@@ -58,7 +58,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(268717);	-- Pango Plating (TOY!)
 			}),
 			ach(61452),	-- Sojourner of Zul'Aman
-			ach(62202),	-- Spiritpaw Marathon
+			ach(62202, {	-- Spiritpaw Marathon
+				-- TODO: wasn't automated in 12.0.1.65893
+				["provider"] = { "n", 261115 },	-- Kapara Pup	(TODO: probably required to talk with npc nearby)
+				["coords"] = {
+					{ 32.2, 22.3, MAP.MIDNIGHT.ZULAMAN },
+					{ 51.6, 32.7, MAP.MIDNIGHT.ZULAMAN },
+				},
+				["questID"] = 95450,
+			}),
 			skyriding(ach(61581, {	-- Zul'Aman Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

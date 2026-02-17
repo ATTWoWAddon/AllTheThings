@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--			}),
 			--		},
 			--	}),
+			q(93899),	-- Slayer's Rise (TODO: Picked up from adventure journal, diidn't find proper source for it)
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 254971 },	-- Zerella

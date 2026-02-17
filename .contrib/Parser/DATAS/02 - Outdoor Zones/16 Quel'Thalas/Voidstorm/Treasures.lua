@@ -31,6 +31,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(266075),	-- Harpoon of Extirpation (COSMETIC!)
 				},
 			}),
+			o(613358, {	-- Exaliburn
+				["coord"] = { 28.3, 72.9, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 93498,
+				["groups"] = {
+					i(266099),	-- Extinguished Exaliburn (COSMETIC!)
+				},
+			}),
 			o(613327, {	-- Faindel's Quiver
 				["coord"] = { 43.0, 81.9, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93493,
@@ -43,6 +50,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 93237,
 				["groups"] = {
 					i(257446),	-- Reins of the Insatiable Shredclaw (MOUNT!)
+				},
+			}),
+			o(555250, {	-- Forgotten Researcher's Cache
+				--["coord"] = { Unknown, Unknown, 2526 },	-- Lair of Predaxas
+				["questID"] = 94454,
+				["groups"] = {
+					i(250319),	-- Researcher's Shadowgraft (TOY!)
 				},
 			}),
 			o(613317, {	-- Half-Digested Viscera
@@ -95,10 +109,31 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(246268),	-- A Steamy Romance Novel: Voidlust
 				},
 			}),
+			o(572819, {	-- Void-Shielded Tomb
+				["coord"] = { 25.7, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 92414,
+				["cost"] = { { "i", 251519, 1 }, },	-- 1x Key of Fused Darkness
+				["groups"] = {
+					o(572906, {	-- Key of Fused Darkness
+						["coord"] = { 26.0, 68.7, MAP.MIDNIGHT.VOIDSTORM },
+						['groups'] = {
+							i(251519),	-- Key of Fused Darkness
+						},
+					}),
+				},
+			}),
+			o(620460, {	-- Voidhoarder's Corpse (TODO: Blizzard bug - vignette name as "stormalion cache")
+				["coord"] = { 24.8, 70.0, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94742,
+			}),
 			--Lore
 			o(618558, {	-- Abandoned Telescope
 				["coord"] = { 40.5, 58.6, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 94395,
+			}),
+			o(618554, {	-- Ancient Tablet
+				["coord"] = { 50.3, 87.7, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94394,
 			}),
 			o(618571, {	-- Shadowgraft Harness
 				["coord"] = { 27.8, 54.0, MAP.MIDNIGHT.VOIDSTORM },
@@ -124,6 +159,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(259126),	-- Housing Dye: Void Violet (DECOR!)
 				},
 			}),
+			--Vista Point Flags / High Peaks
+			o(619662, {	-- Vista Point
+				["coord"] = { 36.5, 44.3, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94552,
+			}),
+			o(619663, {	-- Vista Point
+				["coord"] = { 55.5, 67.2, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94553,
+			}),
+			o(619664, {	-- Vista Point
+				["coord"] = { 41.8, 70.2, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94554,
+			}),
+			o(619665, {	-- Vista Point
+				["coord"] = { 37.8, 55.0, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94555,
+			}),
+			--o(XXXXX, {	-- Vista Point	-- TODO: Blizzard bug - there is no 5th as in counter for achievement unless it phased for 90s templates on beta
+			--	["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
+			--	["questID"] = YYYYY,
+			--}),
 		}),
 	}),
 }));
@@ -132,6 +188,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.VOIDSTORM, {
 			n(TREASURES, {
 				q(94005),	-- Stellar Stash (TODO: Blizzard bug - it "ACCEPTED" near treasure but not "COMPLETED", not as WQ either)
+				q(93569),	-- Exaliburn, same as above (some kind of wrapper)
 				--lack of in-game objectIDs
 				q(93812),	-- maligant node #1
 				q(93813),	-- maligant node #2

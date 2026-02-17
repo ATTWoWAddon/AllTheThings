@@ -64,13 +64,8 @@ root(ROOTS.Unsorted, {
 			i(253211),	-- Smuggler's Signet
 
 			-- Misc
-			i(256232),	-- Bunch of Ripe Grapes
-			i(256397),	-- Packet of Instant Yeast
 			i(257024),	-- A Lost Hunting Knife
 			i(257054),	-- A Rolled-Up Pillow
-			i(258768),	-- Battered Safebox Key
-			i(258769),	-- Worn Safebox Key
-			i(258770),	-- Tarnished Safebox Key
 			i(259219),	-- Bear Tooth
 			i(259220),	-- Dragonhawk Feather
 			i(259223),	-- Lynx Claw
@@ -252,7 +247,6 @@ root(ROOTS.Unsorted, {
 			-- Fishing
 			i(238373),	-- Ominous Octopus
 			i(238374),	-- Tender Lumifin
-			i(238382),	-- Gore Guppy
 
 			-- Herb
 			i(238388),	-- Imbued Mulch
@@ -375,8 +369,6 @@ root(ROOTS.Unsorted, {
 
 			-- Mining knowledge
 			i(238597),	-- Spelunker's Lucky Charm
-			i(238599),	-- Solid Ore Punchers
-			i(238601),	-- Amani Expert's Chisel
 
 			-- Skinning Knowledge
 			i(238604),	-- Dornogal Carving Knife
@@ -781,7 +773,6 @@ root(ROOTS.Unsorted, {
 
 			-- Fishing?
 			i(243248),	-- Anomaly Filament
-			i(243342),	-- Bloom Bauble
 
 			-- Enchanting
 			i(243434),	-- Enchant Shoulders - Nature's Embrace
@@ -1285,7 +1276,6 @@ root(ROOTS.Unsorted, {
 			i(250259),	-- Sapling of the Dawnroot
 
 			-- Toy
-			i(250319),	-- Researcher's Shadowgraft
 			i(250320),	-- Lightgraft
 
 			-- QI
@@ -1387,9 +1377,6 @@ root(ROOTS.Unsorted, {
 			-- Armor
 			i(251513),	-- Loa Worshiper's Band
 
-			-- Misc
-			i(251519),	-- Key of Fused Darkness
-
 			-- Inscribe
 
 
@@ -1405,7 +1392,6 @@ root(ROOTS.Unsorted, {
 
 			-- Trinkets
 			i(251785),	-- Void-Reaper's Libram
-			i(251788),	-- Gift of Light
 			i(251789),	-- Consecrated Chalice
 			i(251793),	-- Endosymbiotic Mycelium
 			i(251794),	-- Gris-gris of Confidence
@@ -1537,7 +1523,6 @@ root(ROOTS.Unsorted, {
 			i(254673),	-- Kreynna's Khadgar's Imitation
 			i(254749),	-- Phial of Burrow Balm
 			i(254874),	-- Glowing Moth Dust
-			i(255008),	-- Weathered Eagle Egg \\ [DNT] Abandoned Eagle Egg
 			-- QI
 			i(254665),	-- Void "Ink"
 			i(254671),	-- Talon of the Towering Ultradon
@@ -1801,7 +1786,6 @@ root(ROOTS.Unsorted, {
 			i(255618),	-- Galactic Gladiator's Splitter
 
 			-- Misc
-			i(255680),	-- Forgotten Talon
 			i(255688),	-- Anchor of the Abyss
 
 			-- Engi
@@ -1822,9 +1806,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(256136),	-- Professor Instructaur's Brain Pertaining to Midnight
 			i(256342),	-- Griftah's Fool-Proof Embellishing Powder
-
-			-- Trinket
-			i(256326),	-- Fetid Dartfrog Idol
 
 			-- Mount
 			i(256424),	-- Echo of Aln'sharan
@@ -1876,7 +1857,6 @@ root(ROOTS.Unsorted, {
 			i(256984),	-- Deepvine Chestwrap \\ [PH] WQ - Armor - Cloth CHEST - A
 			i(256988),	-- Lumenbloom Lantern \\ [PH] WQ - Weapon - Offhand INT - A
 			i(256989),	-- Bladed Rootwarden's Stave \\ [PH] WQ - Weapon - 2H Staff AGI - A
-			i(256991),	-- Vinewrapped Mallet \\ [PH] WQ - Weapon - 1H Mace STR - A
 			i(256992),	-- Razorvine Cudgel \\ [PH] WQ - Weapon - 1H Mace AGI - A
 			i(256993),	-- Verdant Tracker's Spike \\ [PH] WQ - Weapon - 1H Dagger AGI - B
 			i(256995),	-- Rootspeaker's Headdress \\ [PH] WQ - Armor - Mail HEAD - A
@@ -1898,9 +1878,6 @@ root(ROOTS.Unsorted, {
 
 			-- QI
 			i(257081),	-- Bloodied Spear Tip
-
-			-- Misc
-			i(257149),	-- Old Tome \\ [DNT] Old Tome
 
 			-- Mount
 			i(257157),	-- [DNT] 12.0 Black Hawkstrider
@@ -2191,9 +2168,6 @@ root(ROOTS.Unsorted, {
 			-- Prey
 			i(259954),	-- [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
 
-			-- Cache
-			i(259996),	-- Quel'Thalas Equipment Chest
-
 			-- Catalyst
 			i(260173),	-- Crystallized Dawnlight Manaflux
 
@@ -2211,17 +2185,6 @@ root(ROOTS.Unsorted, {
 
 
 			-- Misc
-			i(260254),	-- Kale'thas Sunsalad \\ Food 80 01
-			i(260255),	-- Managi Roll \\ Food 80 02
-			i(260256),	-- Luxurious Omelette \\ Food 85 01
-			i(260257),	-- Ghostlands Pepper \\ Food 85 02
-			i(260258),	-- Purified Cordial \\ Drink 80 01
-			i(260259),	-- Everspring Water \\ Drink 80 02
-			i(260260),	-- Springrunner Sparkling \\ Drink 85 01
-			i(260261),	-- Bloom Nectar \\ Drink 85 02
-			i(260262),	-- Fairbreeze Feast \\ Food/Drink 90 01
-			i(260263),	-- Silvermoon Soiree Spread \\ Food/Drink 90 02
-			i(260264),	-- Quel'Danas Rations \\ Food/Drink 90 03
 			i(260267),	-- Steamed Hexx'alor Lobster \\ Food 80 01
 			i(260268),	-- Pango and Mash \\ Food 80 02
 			i(260269),	-- Jerk Boar Jerky \\ Food 85 01
@@ -2425,7 +2388,6 @@ root(ROOTS.Unsorted, {
 			i(260922),	-- Immature Behemoth \\ Preyseeker's Immature Behemoth
 			i(262342),	-- Spormilian
 			i(262343),	-- Treja'saka \\ Saka'saka
-			i(262390),	-- Sporbie
 			i(262391),	-- Ominous Domanus \\ Ominous Dominus
 			i(262392),	-- Nibblesworth
 			i(262394),	-- Ziorg'pharon
@@ -2582,7 +2544,6 @@ root(ROOTS.Unsorted, {
 
 			-- Delve
 			i(262964),	-- Death's Hope
-			i(262965),	-- Delver's Delight
 			i(262966),	-- Budget Friendly
 
 			-- Misc
@@ -2787,8 +2748,6 @@ root(ROOTS.Unsorted, {
 			-- qi
 			i(264009),	-- S.O.S in a Bottle
 			i(264166),	-- Void Artifact Shard
-			-- Crests
-			i(263977),	-- Venerable Satchel of Veteran Dawncrests
 
 			-- cosmetic
 			i(264184),	-- Arsenal: Heirlooms of Atal'Aman
@@ -2879,7 +2838,6 @@ root(ROOTS.Unsorted, {
 
 			-- Misc
 			i(264587),	-- Ani's Trinket Bag
-			i(246383),	-- Sun-Basted Ceviche
 			-- Pet
 			i(264654),	-- Emberwing Hatchling
 
@@ -2931,8 +2889,6 @@ root(ROOTS.Unsorted, {
 			-- Cosmetic
 			i(264847),	-- Dozing Vinepouch
 			i(264852),	-- Bladed Twilight Spaulder
-			i(264854),	-- Vilebranch Soulseer
-			i(264855),	-- Vilebranch Deathseer
 			i(264857),	-- Twilight Fanatic's Cowl
 			i(264859),	-- Twilight Follower's Cowl
 			-- Trinket
@@ -2954,28 +2910,11 @@ root(ROOTS.Unsorted, {
 			i(264972),	-- Voidstorm Victuals
 			i(264988),	-- Endgame Essentials
 			-- Misc
-			i(264973),	-- Goldenmist Gouda
-			i(264981),	-- Goldengrove Juice
-			i(264982),	-- Wine Not
-			i(264983),	-- Sunwell Shot
-			i(264984),	-- Darkwell Draft
-			i(264985),	-- Dawnmosa
-			i(264987),	-- Magister's Mead
-
-			i(264989),	-- Dragonhawk Flight
 			i(264990),	-- Fairbreeze Franciacorta
-			i(264991),	-- Murder Roe
-			i(264992),	-- Blood Knight Burger
-			i(264993),	-- Delicate Dart Legs
-			i(264994),	-- Pickled Bloom Shoots
-			i(264995),	-- Goldenbough Preserves
 			-- Delve
 			i(265014),	-- Echo of Radiance
 			i(265015),	-- Echo of Radiance
 			i(265016),	-- Echo of Radiance
-
-			-- Trinket
-			i(265027),	-- Lucky Lynx Locket
 
 			-- Pet
 			i(265035),	-- Medusa \\ [PH] Purple Siphoid
@@ -3056,28 +2995,22 @@ root(ROOTS.Unsorted, {
 			i(264268),	-- Rutaani Birdbath
 			i(264269),	-- Rutaani Bird Perch
 			i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 \\ [DNT] [AUTOGEN] Decor 15505 Item
-			i(264329),	-- Amani Dining Table
 			i(264333),	-- Amani Incense Burner
 			i(264350),	-- Carved Idol of Akil'zon, Loa of Victory \\ Carved Idol of Akil'zon
 
 			-- Wonder if these are rare drops?
 			i(264519),	-- Repurposed Voidwalker's Chestplate
-			i(264520),	-- Warden's Leycrook
 			i(264522),	-- Striderplume Armbands
 			i(264523),	-- Hydrafang Blade
-			i(264525),	-- Wrapped Antenna Cuffs
 			i(264527),	-- Vile Hexxer's Mantle
 			i(264528),	-- Goop-Coated Leggings
-			i(264529),	-- Cover of the Furbolg Elder
 			i(264532),	-- Robes of Flowing Truths
 			i(264533),	-- Queen's Tentacle Sash
 			i(264534),	-- Bogvine Shoulderguards
 			i(264535),	-- Leggings of the Cosmic Harrower
-			i(264536),	-- Zedling Summoning Collar
 			i(264537),	-- Winged Terror Gloves
 			i(264538),	-- Translucent Membrane Slippers
 			i(264542),	-- Skullcrusher's Mantle
-			i(264543),	-- Snapdragon Pantaloons
 			i(264544),	-- Grounded Death Cap
 			i(264545),	-- Harrower-Claw Grips
 			i(264548),	-- Sash of Cosmic Tranquility
@@ -3088,7 +3021,6 @@ root(ROOTS.Unsorted, {
 			i(264555),	-- Splintered Hexwood Clasps
 			i(264556),	-- Voidforged Cinch
 			i(264557),	-- Borerplate Pauldrons
-			i(264559),	-- Devourer's Visage
 			i(264561),	-- Primal Bonestompers
 			i(264562),	-- Plated Grove Vest
 			i(264563),	-- Eruundi's Wristguards
@@ -3106,7 +3038,6 @@ root(ROOTS.Unsorted, {
 			i(264586),	-- Crustacean Carapace Chestguard
 			i(264588),	-- Shawl of Cosmic Whispers
 			i(264592),	-- Ha'kalawe's Flawless Wing
-			i(264593),	-- Warcloak of the Butcher
 			i(264594),	-- Netherscale Cloak
 			i(264595),	-- Lynxhide Shawl
 			i(264599),	-- Kul'Tiran Signet Ring
@@ -3116,18 +3047,14 @@ root(ROOTS.Unsorted, {
 			i(264607),	-- Spore-Laden Choker
 			i(264609),	-- Gar'chak's Mark of Honor
 			i(264610),	-- Escaped Specimen's ID Tag
-			i(264611),	-- Pendant of Siphoned Vitality
 			i(264612),	-- Tarnished Gold Locket
 			i(264615),	-- Hardin's Backup Blade
 			i(264616),	-- Lightblighted Sapdrinker
-			i(264617),	-- Scourge's Spike
-			i(264618),	-- Strangely Eelastic Blade
 			i(264619),	-- Nethersteel Spellblade
 			i(264620),	-- Pufferspine Spellpierce
 			i(264623),	-- Shredding Fang
 			i(264625),	-- Gale Force Focus
 			i(264626),	-- Scepter of Radiant Conversion
-			i(264627),	-- Rav'ik's Spare Hunting Spear
 			i(264628),	-- Spear of Nothingness
 			i(264630),	-- Colossal Voidsunderer
 			i(264631),	-- Harak's Skullcutter
@@ -3158,16 +3085,9 @@ root(ROOTS.Unsorted, {
 			-- Cosmetic
 			i(265072),	-- Amani Fangstitch Quiver
 
-			-- Misc
-			i(265096),	-- Conjured Souffle
-			i(265097),	-- Conjured Cinnamon Roll
-			i(265098),	-- Conjured Croissant
-			i(265099),	-- Conjured Coffee
-
 			-- Wep
 
 			-- Cosmetic
-			i(265362),	-- Arsenal: Twilight Blade
 			i(265363),	-- Twilight Shadowguard's Hatchet
 			i(265364),	-- Twilight Infiltrator's Blade
 			i(265365),	-- Twilight Duskwhisper Dagger
@@ -3175,7 +3095,6 @@ root(ROOTS.Unsorted, {
 			i(265367),	-- Twilight Fang
 			i(265368),	-- Twilight Destroyer
 			i(265554),	-- Reinforced Amani Haft
-			i(265560),	-- Toughened Amani Leather Wrap
 			i(265562),	-- Amani Warrior's Spear
 			-- Pet
 			-- Pvp
@@ -3189,7 +3108,6 @@ root(ROOTS.Unsorted, {
 			i(265667),	-- Bright Claw
 			i(265668),	-- Har'kuai Mai Tai
 			i(265669),	-- Fermented Rift Water
-			i(265695),	-- Elementary Voidcore Shard
 			i(265710),	-- Elementary Voidcore
 			i(265739),	-- Amani Heartstring Pendant
 			i(265740),	-- Amani Totemstring
@@ -3205,10 +3123,7 @@ root(ROOTS.Unsorted, {
 			i(265779),	-- Heavy Harpoon Cannon
 			i(265781),	-- Amani Spiritdancer's Boneweight
 			i(265790),	-- Cache of Dawncrests
-			i(265801),	-- Savory Anomaly
 			i(265802),	-- Tome of Town Portal
-			i(265803),	-- Bazaar Bites
-			i(265816),	-- Lost Quiver
 			i(265817),	-- Forgotten Songwriter's Quill
 			i(265818),	-- Ruia's Musings, Part 1
 			i(265819),	-- Ruia's Musings, Part 2
@@ -3242,7 +3157,6 @@ root(ROOTS.Unsorted, {
 			i(266095),	-- Obsidian Scale Treads
 			i(266096),	-- Huntress' Moonglaive
 			i(266097),	-- Huntress' Moonblade
-			i(266099),	-- Extinguished Exaliburn
 			i(266102),	-- Ambiguous Rock
 			i(266120),	-- Sisterhood's Crescent
 			i(266121),	-- Sisterhood's Glaive
@@ -3265,7 +3179,6 @@ root(ROOTS.Unsorted, {
 			i(260680),	-- Nesting Materials
 			i(260682),	-- Rusty Tusk Ring
 			i(260690),	-- Gloomy Root
-			i(260694),	-- Foul Kelp
 			i(260695),	-- Rancid Aquatic Remains
 			i(265387),	-- Cuddly Tomato Grrgle
 			i(265388),	-- Cuddly Lemon Grrgle
@@ -3375,10 +3288,7 @@ root(ROOTS.Unsorted, {
 			i(262559),	-- Spare Key
 
 			-- Decor
-			i(253469),	-- Ritual-Cursed Sarcophagus
-			i(255648),	-- Zul'Aman Ancestral Fountain
 			i(256923),	-- Amani Crafter's Tool Rack
-			i(256928),	-- Banner of the Amani Tribe
 			i(257418),	-- Ornate Sin'dorei Sconce
 			i(258535),	-- Simple Bone-Tied Charm
 			i(258536),	-- Windmark Tribal Charm
@@ -3401,21 +3311,13 @@ root(ROOTS.Unsorted, {
 			i(264249),	-- Woodblock Stool
 			i(264252),	-- Zul'Aman Forest Hammock
 			i(264254),	-- Three-Tier Zul'Aman Shelf
-			i(264255),	-- Amani Trophy Frame
-			i(264257),	-- Zul'Aman Armament Rest
-			i(264334),	-- Amani War Drum
-			i(264479),	-- Skyweave Amani Tapestry
-			i(264480),	-- Greenvine Amani Tapestry
-			i(264481),	-- Earthhide Amani Tapestry
 			i(264655),	-- Amani Slate Bench
-			i(264715),	-- Zul'Aman Flame Cradle
 			-- Decor Prof
 
 
 			-- Boon
 			i(267235),	-- Boon of Vitality
 			i(267236),	-- Boon of Speed
-			i(267240),	-- Boon of Fortitude
 			i(267242),	-- Boon of Speed
 			i(267243),	-- Boon of Vitality
 

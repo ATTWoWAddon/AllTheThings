@@ -14,9 +14,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(253488),	-- Diamond Honor Stone
 					i(251911),	-- Eversong Dessert Platter (DECOR!)
 					i(251909),	-- Eversong Feast Platter
-					i(243106),	-- Gemmed Eversong Lantern
-					i(263211),	-- Gilded Eversong Cup
-					i(251912),	-- Goldenmist Grapes
+					i(243106),	-- Gemmed Eversong Lantern (DECOR!)
+					i(263211),	-- Gilded Eversong Cup (DECOR!)
+					i(251912),	-- Goldenmist Grapes (DECOR!)
 					i(246458),	-- Grand Aethercharged Crystal
 					i(244783, {	-- Majestic Lightwood Table
 						["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },

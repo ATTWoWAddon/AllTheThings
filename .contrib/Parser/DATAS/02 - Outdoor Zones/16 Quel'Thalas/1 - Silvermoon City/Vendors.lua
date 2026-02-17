@@ -7,6 +7,15 @@ local THALASSIAN_TOKEN_OF_MERIT_S1 = 258556;
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		n(VENDORS, {
+			n(261303, {	-- Agmera
+				["coord"] = { 42.1, 58.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					i(259996, {	-- Quel'Thalas Equipment Chest
+						["cost"] = { { "c", VOIDLIGHT_MARL, 750 }, },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },	-- TODO: fix timeline if not up with season
+					}),
+				},
+			}),
 			n(259722, {	-- Andra <Thalassian Finery>
 				["coord"] = { 41.7, 66.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = bubbleDownFiltered({
@@ -321,9 +330,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 					}),
 					--- Trade UP
+					i(263977, {	-- Venerable Satchel of Veteran Dawncrests
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Adventurer Crest\nReceive: LFR Crest",
+						["cost"] = { { "c", ADVENTURER_DAWNCREST, 30 } },
+						["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
+					}),
+					i(246751, {	-- Triumphant Satchel of Champion Dawncrests (TODO: Blizzard bug - same item ID as vault vendor)
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+						["cost"] = { { "c", VETERAN_DAWNCREST, 30 } },
+						["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
+					}),
 					--i(XXXX, {	-- ???
-					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
-					--	["cost"] = { { "c", XXXX, YYY } },
+					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
+					--	["cost"] = { { "c", CHAMPION_DAWNCREST, 30 } },
+					--	["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
+					--}),
+					--i(XXXX, {	-- ???
+					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
+					--	["cost"] = { { "c", HERO_DAWNCREST, 30 } },
 					--	["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 					--}),
 				},

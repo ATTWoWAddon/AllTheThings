@@ -149,6 +149,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 							i(251792),	-- Glorious Crusader's Keepsake
 							i(251791),	-- Holy Retributor's Order (also was as wq reward)
 							i(251787),	-- Sealed Chaos Urn
+							i(251784),	-- Sylvan Wakrapuku
 							i(264694),	-- Ultradon Cuirass
 						}),
 					}),
@@ -218,6 +219,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					i(260884),	-- Boon of Abstinence (Rare)
 					i(267241),	-- Boon of Abstinence (Epic)
 					i(260911),	-- Boon of Fortitude (Rare)
+					i(267240),	-- Boon of Fortitude (Epic)
 					i(260878),	-- Boon of Possibilities (Rare)
 					i(267239),	-- Boon of Possibilities (Epic)
 					i(260882),	-- Boon of Potency (Rare)

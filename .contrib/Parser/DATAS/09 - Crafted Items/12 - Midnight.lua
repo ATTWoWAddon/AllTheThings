@@ -570,6 +570,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r(1225266),	-- Bloomtail Minnow
 			r(1225283),	-- Eversong Trout
 			r(1225276),	-- Fungalskin Pike
+			r(1225275),	-- Gore Guppy
 			r(1225267),	-- Hollow Grouper
 			r(1225284),	-- Lucky Loa
 			r(1225270),	-- Lynxfish
@@ -591,6 +592,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(88606, 1225266),	-- Bloomtail Minnow
 			FirstCraft(88620, 1225283),	-- Eversong Trout
 			FirstCraft(88612, 1225276),	-- Fungalskin Pike
+			FirstCraft(88619, 1225275),	-- Gore Guppy
 			FirstCraft(88618, 1225267),	-- Hollow Grouper
 			FirstCraft(88613, 1225284),	-- Lucky Loa
 			FirstCraft(88603, 1225270),	-- Lynxfish
@@ -610,10 +612,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238371),	-- Arcane Wyrmfish
 		i(243302),	-- Aquarius Bloom
 		i(238377),	-- Blood Hunter
+		i(243342),	-- Bloom Bauble
 		i(238369),	-- Bloomtail Minnow
 		i(238489),	-- Definitely Not a Rock
 		i(238383),	-- Eversong Trout
 		i(238375),	-- Fungalskin Pike
+		i(238382),	-- Gore Guppy
 		i(238381),	-- Hollow Grouper
 		i(238376),	-- Lucky Loa
 		i(238366),	-- Lynxfish
@@ -643,7 +647,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r(1224891),	-- Primal Sanguithorn
 			r(1223135),	-- Sanguithorn
 			r(1224901),	-- Voidbound Sanguithorn
-			--r(),	-- Wild Sanguithorn
+			r(1224896),	-- Wild Sanguithorn
 			-- Section III - Azeroot
 			r(1223137),	-- Azeroot
 			r(1224885),	-- Lightfused Azeroot
@@ -680,7 +684,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(87739, 1224891),	-- Primal Sanguithorn
 			FirstCraft(87735, 1223135),	-- Sanguithorn
 			FirstCraft(87740, 1224901),	-- Voidbound Sanguithorn
-			--FirstCraft(XXXXX, YYYYYYY),	-- Wild Sanguithorn
+			FirstCraft(87738, 1224896),	-- Wild Sanguithorn
 			FirstCraft(87741, 1223137),	-- Azeroot
 			FirstCraft(87743, 1224885),	-- Lightfused Azeroot
 			FirstCraft(87742, 1223150),	-- Lush Azeroot

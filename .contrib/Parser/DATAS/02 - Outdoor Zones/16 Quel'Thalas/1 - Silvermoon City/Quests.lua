@@ -89,6 +89,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93758),	-- Nexus-Point Xenas
 				q(93757),	-- Voidscar Arena
 			})),
+			-- Housing
+			n(QUESTS, sharedData({
+				["provider"] = { "n", 260957 },	-- Vaeli
+				["coord"] = { 49.5, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
+			}, {
+				q(95440),	-- Housewarming
+			})),
 		}),
 	}),
 }));
