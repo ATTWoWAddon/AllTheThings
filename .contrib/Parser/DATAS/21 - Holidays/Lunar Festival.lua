@@ -881,9 +881,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["coord"] = { 64.2, 47.0, GRIZZLY_HILLS },
 			}),
 		})),
+		-- #if BEFORE WRATH
 		n(ELDERS_OF_THE_ALLIANCE, bubbleDownSelf({	-- Elders of the Alliance
 			["isYearly"] = true,
 		}, {
+		-- #else
+		header(HEADERS.Achievement, 915, bubbleDownSelf({	-- Elders of the Alliance
+			["isYearly"] = true,
+		}, {
+		-- #endif
 			q(8718, {	-- Bladeswift the Elder
 				-- #if AFTER BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus. The Elder is on the left side of the Cenarion Enclave.",
@@ -923,11 +929,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					{ 21.6, 54.0, STORMWIND_CITY },
 					-- #endif
 				},
-			}),		
+			}),
+		-- #if BEFORE WRATH
 		})),
+		-- #else
+		})),
+		-- #endif
+		-- #if BEFORE WRATH
 		n(ELDERS_OF_THE_HORDE, bubbleDownSelf({	-- Elders of the Horde
 			["isYearly"] = true,
 		}, {
+		-- #else
+		header(HEADERS.Achievement, 914, bubbleDownSelf({	-- Elders of the Horde
+			["isYearly"] = true,
+		}, {
+		-- #endif
 			q(8648, {	-- Darkcore the Elder
 				-- #if AFTER BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron. If Zidormi does not offer any dialogue options, travel towards Western Plaguelands and see if you get phased into pre-BfA Tirisfal.\n\nThe Elder is just inside the front door of the city. Alliance players can fly through the broken roof in front of the room. There are no guards in this area.",
@@ -967,10 +983,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				},
 				["qg"] = 15580,	-- Elder Ezra Wheathoof [Wrath+] / Elder Proudhorn [Classic]
 			}),
+		-- #if BEFORE WRATH
 		})),
+		-- #else
+		})),
+		-- #endif
+		-- #if BEFORE WRATH
 		n(ELDERS_OF_EASTERN_KINGDOMS, bubbleDownSelf({	-- Elders of Eastern Kingdoms
 			["isYearly"] = true,
 		}, {
+		-- #else
+		header(HEADERS.Achievement, 912, bubbleDownSelf({	-- Elders of Eastern Kingdoms
+			["isYearly"] = true,
+		}, {
+		-- #endif
 			q(8647, {	-- Bellowrage the Elder
 				-- #if AFTER WOD
 				["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
@@ -1132,10 +1158,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				},
 			}),
+		-- #if BEFORE WRATH
 		})),
+		-- #else
+		})),
+		-- #endif
+		-- #if BEFORE WRATH
 		n(ELDERS_OF_KALIMDOR, bubbleDownSelf({	-- Elders of Kalimdor
 			["isYearly"] = true,
 		}, {
+		-- #else
+		header(HEADERS.Achievement, 911, bubbleDownSelf({	-- Elders of Eastern Kingdoms
+			["isYearly"] = true,
+		}, {
+		-- #endif
 			q(8715, {	-- Bladeleaf the Elder
 				-- #if AFTER BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil. The Elder is on the left side of the Cenarion Enclave.",
@@ -1340,10 +1376,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				},
 			}),
+		-- #if BEFORE WRATH
 		})),
+		-- #else
+		})),
+		-- #endif
+		-- #if BEFORE WRATH
 		n(ELDERS_OF_THE_DUNGEONS, bubbleDownSelf({	-- Elders of the Dungeons
 			["isYearly"] = true,
 		}, {
+		-- #else
+		header(HEADERS.Achievement, 910, bubbleDownSelf({	-- Elders of the Dungeons
+			["isYearly"] = true,
+		}, {
+		-- #endif
 			q(13067, {	-- Chogan'gada the Elder
 				["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
 				["qg"] = 30538,	-- Elder Chogan'gada
@@ -1479,7 +1525,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["timeline"] = { ADDED_3_0_8 },
 				["maps"] = { HALLS_OF_STONE },
 			}),
+		-- #if BEFORE WRATH
 		})),
+		-- #else
+		})),
+		-- #endif
 	}),
 	n(REWARDS, {
 		i(COIN_OF_ANCESTRY),
