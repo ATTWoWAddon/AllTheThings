@@ -1667,6 +1667,7 @@ localize(L.HEADER_NAMES, {
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
 	[-722] = "Diablo II: Resurrected - Reign of Warlock",
 	[-723] = "Elemental Invasions",
+	[-729] = "Abundance",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2341,7 +2342,9 @@ localize(L.HEADER_ICONS, {
 	[-673] = 2125377,
 	[-674] = 1604168,
 	[-679] = _.asset("interface_decor"),
+	[-681] = 7431083,
 	[-682] = _.asset("category_housing"),
+	[-686] = 132809,
 	[-687] = 1391675,
 	[-691] = 7259806,
 	[-694] = _.asset("expansion_tbc"),
@@ -2363,6 +2366,7 @@ localize(L.HEADER_ICONS, {
 	[-721] = 450908,
 	[-722] = 1529348,
 	[-723] = 538566,
+	[-729] = 237556,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
