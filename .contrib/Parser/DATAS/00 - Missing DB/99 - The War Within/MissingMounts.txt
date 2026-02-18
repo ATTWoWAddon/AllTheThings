@@ -16,10 +16,6 @@ mount(1261349),	-- Giganto Manis
 mount(1261391),	-- Relinquished Scarlet Charger
 12.0.0.64741
 mount(1266703),	-- Lab-grown Stormray
-12.0.0.65560
-mount(1258573),	-- Thunderhoof Celestial
-12.0.0.65699
-mount(1284640),	-- Golden Ashened Cataclysm
 12.0.1.65337
 mount(1270673),	-- Vivacious Chloroceros
 
@@ -30,5 +26,3 @@ Missing in MountDB.lua
 
 12.0.0.63534
 mount(1251665),	-- Amani Blessed Bear
-12.0.0.65699
-mount(1284640),	-- Golden Ashened Cataclysm

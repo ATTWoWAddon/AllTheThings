@@ -72,6 +72,7 @@ i(248741, 1247591);	-- Celestial Riding Crane
 i(248744, 1247597);	-- Celestial Riding Ox
 i(248743, 1247596);	-- Celestial Riding Serpent
 i(248742, 1247598);	-- Celestial Riding Tiger
+i(254735, 1258573);	-- Thunderhoof Celestial (CN ONLY)
 --- NYI? ---
 i(0, 1224647);	-- Meeksi Brewrobber
 i(0, 1224643);	-- Meeksi Gentlepaw
@@ -2293,6 +2294,7 @@ i(260228, 1262840);	-- Galactic Gladiator's Goredrake
 i(246736, 1243598);	-- Ivory Grimlynx
 i(246594, 1243003);	-- Light-Forged Mechsuit
 i(224148, 451487);	-- Retrained Skyrazor
+i(254736, 1258574);	-- Stormgilded Celestial (CN ONLY)
 i(257504, 1261648);	-- Vicious Snaplizard [A]
 i(257502, 1261629);	-- Vicious Snaplizard [H]
 --- UNSORTED ---
@@ -2300,8 +2302,6 @@ i(262438, 1268809);	-- Fantastical Goblin Waveshredder
 i(264273, 1271549);	-- Fel Spirehawk
 i(262661, 1269181);	-- Ghastropod
 i(262909, 1269556);	-- Hypo-Speed X6000
-i(254736, 1258574);	-- Stormgilded Celestial
-i(254735, 1258573);	-- Thunderhoof Celestial
 
 ------------------
 -- PATCH 12.0.1 --
@@ -2315,6 +2315,7 @@ i(257154, 1261322);	-- Crimson Silvermoon Hawkstrider
 i(262502, 1268926);	-- Elven Arcane Guardian
 i(246734, 1243593);	-- Fierce Grimlynx
 i(257142, 1261291);	-- Fiery Dragonhawk
+i(269009, 1284640);	-- Golden Ashened Cataclysm (CN ONLY)
 i(257446, 1261583);	-- Insatiable Shredclaw
 i(257191, 1261336);	-- Preyseeker's Hubris
 i(257193, 1261338);	-- Preyseeker's Nightmare
