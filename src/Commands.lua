@@ -191,6 +191,22 @@ end, {
 	"Allows toggling the debug printing and monitoring of all game events that ATT handles.",
 })
 
+-- Allows a user to open a popout window for their target via /att [t|target]
+app.ChatCommands.Add({"t", "target"}, function(args)
+	local guid = UnitGUID("target");
+	if guid then
+		local npcID = select(6, ("-"):split(guid))
+		if npcID then
+			app.CreatePopoutForSearch("n:" .. npcID)
+		end
+	end
+
+	return true
+end, {
+	"Usage : /att [t|target]",
+	"Allows opening a popout window for your targeted NPC",
+})
+
 -- Allows adding a direct slash command(s) to the game
 -- NOTE: This is not super desirable to add so many slash commands.
 -- Please use app.ChatCommands.Add if possible to add a typical /att [command] [params] structured command with common handling
