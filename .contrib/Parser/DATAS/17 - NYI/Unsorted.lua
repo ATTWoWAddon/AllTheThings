@@ -69,14 +69,14 @@ root(ROOTS.Unsorted, {
 				-- Midnight Preseason
 				i(268485),	-- Victorious Stormarion Pinnacle Cache
 				i(268487),	-- Avid Learner's Supply Pack
-				i(268488),	-- Overflowing Abundant Satchel
+
 				i(268489),	-- Surplus Bag of Party Favors
 				i(268490),	-- Apex Cache
 
 				-- Cache
 				i(268545),	-- Preyseeker's Adventurer Chest
 				i(269701),	-- Surplus Bag of Party Favors
-				i(269702),	-- Overflowing Abundant Satchel
+
 				i(269704),	-- Victorious Stormarion Cache
 
 				-- prey
@@ -665,8 +665,6 @@ root(ROOTS.Unsorted, {
 				i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
 				-- Cache
 				i(250117),	-- Cache of Quel'Thalas Treasures
-				-- Abundance
-				i(250755),	-- Pouch of Mystic Grindings
 				--Arcantina
 				i(250872),	-- Scarred Spear
 				--Delve?
@@ -815,7 +813,6 @@ root(ROOTS.Unsorted, {
 				i(264380),	-- Contract of Service
 				i(265655),	-- Ritual Components
 				i(265710),	-- Elementary Voidcore
-				i(265746),	-- Idol of Abundance \\ [PH] Rat Loa Blessing
 				i(265749),	-- Idol of the Depths \\ [PH] Threshadon Loa Blessing
 				i(266183),	-- Enigmatic Voidclarion
 				i(266440),	-- Idol of Growth
@@ -892,16 +889,7 @@ root(ROOTS.Unsorted, {
 			n(SPECIAL, {
 				-- Abundance
 				i(239611),	-- Pure Loanite
-				i(245345),	-- Fused Vitality
-				-- Prof/Abundance
-				i(250360),	-- Echo of Abundance: Skinning
-				i(250443),	-- Echo of Abundance: Herbalism
-				i(250444),	-- Echo of Abundance: Mining
-				i(250445),	-- Echo of Abundance: Enchanting
 				-- Abundance
-				i(250750),	-- Pouch of Sprouted Clippings
-				i(250753),	-- Bag of Cracked Orebits
-				i(250754),	-- Bag of Wild Skinnings
 				i(252607),	-- Abundant Beacon \\ [TUTORIAL ITEM]
 				i(252608),	-- Unalloyed Abundance \\ [OLD] Unalloyed Abundance
 				-- Eversong event?
@@ -972,7 +960,7 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(TOYS, {
 				i(250320),	-- Lightgraft
-				i(251633),	-- Bursting Bounty Bundle
+
 				i(251903),	-- Potatoad Egg
 				i(257736),	-- Lightcalled Hearthstone \\ [DNT] [PH] 12.0 Holy Hearthstone
 				i(259084),	-- Gift of the Cycle
@@ -981,10 +969,9 @@ root(ROOTS.Unsorted, {
 				i(263975),	-- Feeling Fielder Mk. 7
 				i(264517),	-- Galactic Flag of Victory
 				i(264672),	-- Cosmic Ritual Stone
-				i(266370),	-- Dundun's Abundant Travel Method
+
 			}),
 			filter(MOUNTS, {
-				i(250782),	-- Amani Sunfeather \\ [DNT] Amani Eagle Orange
 				-- Both Mounts?
 				i(250921),	-- Amani Blessed Bear
 
@@ -1021,7 +1008,7 @@ root(ROOTS.Unsorted, {
 				i(257147),	-- Cobalt Dragonhawk
 				i(257152),	-- Amani Sharptalon
 				i(257156),	-- Cerulean Hawkstrider
-				i(257197),	-- Blessed Amani Burrower \\ [DNT] 12.0 Amani Pangolin
+
 				i(257200),	-- Escaped Witherbark Pango
 				i(257223),	-- Ancestral War Bear \\ [DNT] 12.0 Shadowpine Bear
 				i(257444),	-- Hexed Vilefeather Eagle \\ [DNT] 12.0 Hex Eagle Mount
@@ -1502,11 +1489,6 @@ root(ROOTS.Unsorted, {
 				i(260905),	-- Lost Blade of Spacial Descent
 				i(260907),	-- Lost Winter's Hunger
 				i(260908),	-- Lost Frostwolf's Stand
-				i(262578),	-- Amani Stonework Chisel
-				i(262579),	-- Amani Hide Cutter
-				i(262580),	-- Amani Log Splitter
-				i(262581),	-- Amani Rock Hammer
-				i(262582),	-- Amani Gem Clamps
 				i(262715),	-- Simple Mossy Trowel
 				i(262716),	-- Simple Rosy Trowl
 				i(262717),	-- Simple Rooting Trowl
@@ -1641,12 +1623,8 @@ root(ROOTS.Unsorted, {
 				i(266901),	-- Depthdiver's Cloak
 				i(266902),	-- Depthdiver's Tabard
 				i(266903),	-- Depthdiver's Shoulderpads
-				i(266965),	-- Tabard of Amani Abundance
-				i(266966),	-- Mantle of Amani Abundance
-				i(266967),	-- Shawl of Amani Abundance
 				i(266968),	-- Priestess' Starpoint
 				i(266969),	-- Ensemble: Depthdiver Vestments
-				i(266970),	-- Ensemble: Abundant Raiment
 				i(266971),	-- [PH] Hara'ti Cloak - Yellow
 				i(266972),	-- [PH] Hara'ti Shoulders - Yellow
 				i(266973),	-- [PH] Hara'ti Tabard - Yellow
@@ -1744,7 +1722,7 @@ root(ROOTS.Unsorted, {
 				i(250868),	-- Crimson Crystal Column
 				i(250869),	-- Crimson Crystal Core
 				i(250870),	-- Crimson Crystal Fragment
-				i(256923),	-- Amani Crafter's Tool Rack
+
 				i(257418),	-- Ornate Sin'dorei Sconce
 				i(258535),	-- Simple Bone-Tied Charm
 				i(258536),	-- Windmark Tribal Charm
@@ -1754,10 +1732,9 @@ root(ROOTS.Unsorted, {
 				i(258569),	-- Spring Blossom Gazebo
 				i(263290),	-- Spring Blossom Tree
 				i(263291),	-- Spring Blossom Pond
-				i(264249),	-- Woodblock Stool
+
 				i(264252),	-- Zul'Aman Forest Hammock
-				i(264254),	-- Three-Tier Zul'Aman Shelf
-				i(264655),	-- Amani Slate Bench
+
 					-- Raid?
 				i(266885),	-- March on Quel'Danas Vanquisher's Gleaming Trophy
 				i(266886),	-- Dreamrift Vanquisher's Gleaming Trophy

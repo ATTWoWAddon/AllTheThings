@@ -581,7 +581,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(91343, {	-- Ambition's Reward
 						["sourceQuests"] = { 91341 },	-- Unlimited
 						["provider"] = { "n", 239720 },	-- Lucia Nightbreaker
-						["coord"] = { 50.9, 45.3, 2527 },	-- Voidlands_Micro_Abundance_B
+						["coord"] = { 50.9, 45.3, 2527 },	-- Lair of Predaxas
 						["groups"] = {
 							i(264295),	-- [DNT] Cloth Bracers
 							i(264296),	-- [DNT] Leather Bracers
