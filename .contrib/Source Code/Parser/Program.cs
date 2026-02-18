@@ -338,23 +338,24 @@ namespace ATT
                     var directories = Framework.Config["wago-directories"];
                     if (directories != null)
                     {
-                        var filenames = new List<string>();
+                        var shouldLoadDirectly = Debugger.IsAttached || Framework.PreProcessorTags.Contains("ANYCLASSIC");
                         foreach (var wagoDirectory in (string[])directories)
                         {
                             if (!string.IsNullOrWhiteSpace(wagoDirectory))
                             {
+                                // CRIEVE NOTE: I need the directories themselves to run in a specific order.
                                 Trace.WriteLine($"Loading Wago DB CSV files from {wagoDirectory}.");
-                                filenames.AddRange(Directory.GetFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories));
+                                var filenames = Directory.GetFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories).ToList();
+                                filenames.Sort(StringComparer.InvariantCulture);
+                                if (shouldLoadDirectly)
+                                {
+                                    foreach (var filename in filenames) WagoData.LoadFromCSV(filename);
+                                }
+                                else
+                                {
+                                    filenames.AsParallel().ForAll(WagoData.LoadFromCSV);
+                                }
                             }
-                        }
-                        filenames.Sort(StringComparer.InvariantCulture);
-                        if (Debugger.IsAttached)
-                        {
-                            foreach (var filename in filenames) WagoData.LoadFromCSV(filename);
-                        }
-                        else
-                        {
-                            filenames.AsParallel().ForAll(WagoData.LoadFromCSV);
                         }
 
                         if (Errored)
