@@ -297,7 +297,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				["coord"] = { 34.1, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = {
-					--[[ n(CLASSES, {						
+					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(875, i(255549)),	-- Galactic Gladiator's Chestguard
 							conquest(875, i(255550)),	-- Galactic Gladiator's Chestplate
@@ -467,7 +467,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 							conquest(525, i(255587)),	-- Galactic Gladiator's Shawl
 						}),
 						cl(PRIEST, {
-							conquest(875, i(255376)),	-- Galactic Gladiator's Silk Robes
+							conquest(875, i(255376)),	-- Galactic Gladiator's Silk Robe
 							conquest(875, i(255377)),	-- Galactic Gladiator's Silk Vestments
 							conquest(700, i(255378)),	-- Galactic Gladiator's Silk Slippers
 							conquest(700, i(255379)),	-- Galactic Gladiator's Silk Treads
@@ -571,20 +571,20 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 							conquest(525, i(255605)),	-- Galactic Gladiator's Drape
 							conquest(525, i(255606)),	-- Galactic Gladiator's Shawl
 						}),
-					}),]]--
+					}),
 					filter(FINGER_F, {
 						conquest(525, i(255608)),	-- Galactic Gladiator's Band
 						conquest(525, i(255607)),	-- Galactic Gladiator's Ring
 						conquest(525, i(255609)),	-- Galactic Gladiator's Signet
 					}),
-					filter(REAGENTS, {
+					filter(MISC, {
 						i(267572, {	-- Conqueror's Galactic Lacquer
 							["cost"] = { { "c", CONQUEST, 700 } },
 							--["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
 						i(267571, {	-- Conqueror's Galactic Varnish
 							["cost"] = { { "c", CONQUEST, 875 } },
-							--["timeline"] = { ADDED_11_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
+							--["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
 					}),
 					filter(NECK_F, {
@@ -625,7 +625,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						conquest(875, i(255620)),	-- Galactic Gladiator's Warglaive
 					}),
 					--i(256553, {	-- Galactic Equipment Chest
-					--	["timeline"] = { ADDED_12_0_5 },
+					--	["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
 					--}),
 				},
 			}),

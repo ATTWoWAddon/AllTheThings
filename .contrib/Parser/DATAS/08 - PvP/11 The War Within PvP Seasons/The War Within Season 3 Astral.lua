@@ -696,7 +696,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						conquest(525, i(230657)),	-- Astral Gladiator's Bulwark
 					}),
 					i(230722, {	-- Astral Equipment Chest
-						["timeline"] = { ADDED_11_2_5 },
+						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_X_LAUNCH },
 					}),
 				}),
 			}),
