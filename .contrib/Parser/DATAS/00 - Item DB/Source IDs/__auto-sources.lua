@@ -1,4 +1,5 @@
 ﻿--   WARNING: This file is dynamically generated   --
+-- #if NOT ANYCLASSIC
 root("Items.SOURCES",{
 [17]=14,
 [25]=15,
@@ -144827,3 +144828,4 @@ root("Items.SOURCES",{
 [242263]=290175,
 [242264]=290176}
 );
+-- #endif

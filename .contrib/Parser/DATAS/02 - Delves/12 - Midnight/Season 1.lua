@@ -15,7 +15,6 @@ DELVES_MID_S1 = createHeader({
 		tw = "至暗之夜探究第一季",
 	},
 });
--- #if AFTER 12.0.0
 local ALL_REGULAR_DELVES_MID = {
 	ATAL_AMAN,
 	COLLEGIATE_CALAMITY,
@@ -42,7 +41,6 @@ local ALL_THE_DELVES_MID = {
 	TORMENTS_RISE,
 	TWILIGHT_CRYPTS,
 };
--- #endif
 local mapped = function(t)
 	if not t.maps then
 		t.maps = ALL_REGULAR_DELVES_MID

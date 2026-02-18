@@ -11,13 +11,13 @@ MageTowerFilter =
 	ADDED_7_2_0,
 	REMOVED_8_0_1,
 }};
+-- #endif
 local MageTowerFilter92 =
 {["timeline"] = {
 	ADDED_9_2_0,
 	REMOVED_10_0_0,
 	ADDED_10_0_5,
 }};
--- #endif
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	-- Original Legion content
