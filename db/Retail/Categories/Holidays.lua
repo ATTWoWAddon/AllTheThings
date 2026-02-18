@@ -7268,7 +7268,7 @@ q(13030,{coords={{64.2,47,116}},e=18,isYearly=1,qgs={30372},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
 crit(5158,{achID=1396,awp=30002,e=18,id=17})}})}}),
-h(-726,{e=18,isYearly=1,g={
+ah(915,{e=18,isYearly=1,type="a",g={
 q(8718,{coords={{39.3,31.8,89}},description="In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus. The Elder is on the left side of the Cenarion Enclave.",e=18,isYearly=1,qgs={15598},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
@@ -7281,7 +7281,7 @@ q(8646,{coords={{32.1,52.8,37}},e=18,isYearly=1,qgs={15562},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
 crit(1998,{achID=915,awp=30002,e=18,id=4})}})}}),
-h(-728,{e=18,isYearly=1,g={
+ah(914,{e=18,isYearly=1,type="a",g={
 q(8648,{coords={{66.5,38,90}},description="In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron. If Zidormi does not offer any dialogue options, travel towards Western Plaguelands and see if you get phased into pre-BfA Tirisfal.\n\nThe Elder is just inside the front door of the city. Alliance players can fly through the broken roof in front of the room. There are no guards in this area.",e=18,isYearly=1,qgs={15564},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
@@ -7294,7 +7294,7 @@ q(8678,{coords={{72.8,22.8,88}},description="Found on the northern side of The E
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
 crit(1992,{achID=914,awp=30002,e=18,id=3})}})}}),
-h(-724,{e=18,isYearly=1,g={
+ah(912,{e=18,isYearly=1,type="a",g={
 q(8647,{coords={{54.2,49.4,17}},description="In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",e=18,isYearly=1,qgs={15563},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
@@ -7363,7 +7363,7 @@ q(8674,{coords={{40,72.4,210}},e=18,isYearly=1,qgs={15576},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
 crit(1927,{achID=912,awp=30002,e=18,id=7})}})}}),
-h(-725,{e=18,isYearly=1,g={
+ah(911,{e=18,isYearly=1,type="a",g={
 q(8715,{coords={{56.8,53.1,57}},description="In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil. The Elder is on the left side of the Cenarion Enclave.",e=18,isYearly=1,qgs={15595},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
@@ -7448,7 +7448,7 @@ q(8680,{coords={{68.4,69.9,10}},e=18,isYearly=1,qgs={15582},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
 crit(1920,{achID=911,awp=30002,e=18,id=6})}})}}),
-h(-727,{e=18,isYearly=1,g={
+ah(910,{e=18,isYearly=1,type="a",g={
 q(13067,{awp=30008,coords={{57.2,46.6,117}},description="After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",e=18,isYearly=1,maps=a[180],qgs={30538},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),

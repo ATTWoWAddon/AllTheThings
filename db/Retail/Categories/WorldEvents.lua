@@ -7296,7 +7296,6 @@ n(241179,{coords={{45.9,67.9,619}},e=447,u=2,g={
 i(254320,{cost={{"c",3252,5}},description="|cFFE50D12NOT CONSUMED ON USE:|r If you, by any chance, destroyed the one you received from the quest, buy only 1.",e=447,f=55,spellID=1257698,u=2}),
 i(250316,{cost={{"c",3252,5}},e=447,f=55,races={1,2,3,4,5,6,7,8,9,10,11,22,24,25,26,27,28,29,30,31,32,34,35,36,37,52,70,86,91},spellID=1250721,u=2}),
 i(253574,{cost={{"c",3252,5}},e=447,f=55,races={84,85},spellID=1256686,u=2}),
-i(188152,{cost={{"c",3252,5}},e=447,spellID=113902,u=2}),
 i(44922,{c=a[68],cost={{"c",3252,5}},e=447,f=111,lvl=11,spellID=62134,u=2}),
 i(265922,{c=a[225],cost={{"c",3252,5}},e=447,f=200,spellID=125050,u=2}),
 i(265923,{c=a[225],cost={{"c",3252,5}},e=447,f=200,spellID=209997,u=2}),
