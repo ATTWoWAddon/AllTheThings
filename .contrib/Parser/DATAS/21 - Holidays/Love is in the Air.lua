@@ -1158,7 +1158,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(21812),	-- Box of Chocolates
 					i(22218),	-- Handful of Rose Petals
 					i(22200),	-- Silver Shafted Arrow
-					i(34258),	-- Lovely Fireworks
+					i(34258, {	-- Lovely Fireworks
+						["timeline"] = { ADDED_2_3_0 },
+					}),
 				},
 				-- #endif
 			}),
@@ -1180,7 +1182,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(21812),	-- Box of Chocolates
 					i(22218),	-- Handful of Rose Petals
 					i(22200),	-- Silver Shafted Arrow
-					i(34258),	-- Lovely Fireworks
+					i(34258, {	-- Lovely Fireworks
+						["timeline"] = { ADDED_2_3_0 },
+					}),
 				},
 				-- #endif
 			}),
