@@ -5320,6 +5320,124 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			n(TREASURES, {
+				-- #if BEFORE 4.0.3
+				o(176213, {	-- Blood of Heroes
+					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
+					["coords"] = {
+						-- Plaguewood
+						{ 34.5, 25.8, EASTERN_PLAGUELANDS },
+						{ 38.8, 26.7, EASTERN_PLAGUELANDS },
+						{ 33.6, 32.6, EASTERN_PLAGUELANDS },
+						{ 38.5, 31.1, EASTERN_PLAGUELANDS },
+						{ 36.7, 38.1, EASTERN_PLAGUELANDS },
+						{ 38.9, 36.1, EASTERN_PLAGUELANDS },
+						{ 44.9, 32.9, EASTERN_PLAGUELANDS },
+						{ 49.1, 35.5, EASTERN_PLAGUELANDS },
+
+						-- Blackwood Lake
+						{ 47.5, 40.8, EASTERN_PLAGUELANDS },
+						{ 50.3, 45.5, EASTERN_PLAGUELANDS },
+						{ 53.5, 50.7, EASTERN_PLAGUELANDS },
+
+						-- Light's Hope
+						{ 66.1, 53.1, EASTERN_PLAGUELANDS },
+						{ 73.8, 51.1, EASTERN_PLAGUELANDS },
+						{ 76.2, 50.7, EASTERN_PLAGUELANDS },
+						{ 75.6, 55.3, EASTERN_PLAGUELANDS },
+						{ 74.7, 58.7, EASTERN_PLAGUELANDS },
+						{ 78.5, 57.5, EASTERN_PLAGUELANDS },
+						{ 80.5, 59.6, EASTERN_PLAGUELANDS },
+						{ 78.7, 67.3, EASTERN_PLAGUELANDS },
+
+						-- Tirion's House
+						{ 7.1, 50.7, EASTERN_PLAGUELANDS },
+						{ 8.1, 54.4, EASTERN_PLAGUELANDS },
+						{ 14.2, 64.7, EASTERN_PLAGUELANDS },
+						{ 20.0, 60.9, EASTERN_PLAGUELANDS },
+						{ 20.5, 66.9, EASTERN_PLAGUELANDS },
+
+						-- Crypt
+						{ 22.1, 85.0, EASTERN_PLAGUELANDS },
+						{ 24.3, 88.2, EASTERN_PLAGUELANDS },
+						{ 28.8, 85.9, EASTERN_PLAGUELANDS },
+
+						-- Nathanos's House
+						{ 31.5, 73.9, EASTERN_PLAGUELANDS },
+						{ 27.3, 64.0, EASTERN_PLAGUELANDS },
+						{ 30.9, 65.5, EASTERN_PLAGUELANDS },
+						{ 26.7, 69.5, EASTERN_PLAGUELANDS },
+						{ 26.3, 70.5, EASTERN_PLAGUELANDS },
+						{ 26.0, 74.7, EASTERN_PLAGUELANDS },
+						{ 27.1, 75.5, EASTERN_PLAGUELANDS },
+						{ 32.0, 71.0, EASTERN_PLAGUELANDS },
+						{ 34.3, 67.8, EASTERN_PLAGUELANDS },
+						{ 29.2, 78.8, EASTERN_PLAGUELANDS },
+						{ 37.1, 65.7, EASTERN_PLAGUELANDS },
+						{ 37.6, 68.5, EASTERN_PLAGUELANDS },
+						{ 36.9, 70.6, EASTERN_PLAGUELANDS },
+						{ 35.9, 75.8, EASTERN_PLAGUELANDS },
+						{ 24.5, 76.9, EASTERN_PLAGUELANDS },
+						{ 34.0, 80.2, EASTERN_PLAGUELANDS },
+
+						-- Mushroom Kingdom
+						{ 40.0, 49.9, EASTERN_PLAGUELANDS },
+						{ 38.5, 54.0, EASTERN_PLAGUELANDS },
+
+						-- The Infectis Scar
+						{ 41.5, 65.7, EASTERN_PLAGUELANDS },
+						{ 46.3, 64.0, EASTERN_PLAGUELANDS },
+						{ 55.5, 58.7, EASTERN_PLAGUELANDS },
+						{ 41.5, 79.7, EASTERN_PLAGUELANDS },
+						{ 42.5, 75.7, EASTERN_PLAGUELANDS },
+						{ 48.9, 67.2, EASTERN_PLAGUELANDS },
+						{ 46.2, 70.8, EASTERN_PLAGUELANDS },
+						{ 46.5, 74.8, EASTERN_PLAGUELANDS },
+						{ 47.9, 80.0, EASTERN_PLAGUELANDS },
+						{ 50.5, 77.3, EASTERN_PLAGUELANDS },
+						{ 51.8, 70.3, EASTERN_PLAGUELANDS },
+						{ 56.2, 63.9, EASTERN_PLAGUELANDS },
+						{ 59.3, 62.2, EASTERN_PLAGUELANDS },
+						{ 58.5, 64.9, EASTERN_PLAGUELANDS },
+						{ 59.9, 67.5, EASTERN_PLAGUELANDS },
+						{ 57.5, 72.0, EASTERN_PLAGUELANDS },
+						{ 61.8, 70.2, EASTERN_PLAGUELANDS },
+						{ 63.6, 67.7, EASTERN_PLAGUELANDS },
+						{ 67.6, 66.8, EASTERN_PLAGUELANDS },
+
+						-- Lake Mereldar
+						{ 56.5, 76.1, EASTERN_PLAGUELANDS },
+						{ 57.8, 76.2, EASTERN_PLAGUELANDS },
+						{ 59.5, 76.0, EASTERN_PLAGUELANDS },
+						{ 59.2, 80.8, EASTERN_PLAGUELANDS },
+						{ 57.1, 81.9, EASTERN_PLAGUELANDS },
+						{ 59.2, 80.8, EASTERN_PLAGUELANDS },
+						{ 64.7, 81.0, EASTERN_PLAGUELANDS },
+
+						-- Tyr's Hand
+						{ 68.2, 70.6, EASTERN_PLAGUELANDS },
+						{ 70.7, 69.5, EASTERN_PLAGUELANDS },
+						{ 73.4, 69.8, EASTERN_PLAGUELANDS },
+						{ 76.6, 72.5, EASTERN_PLAGUELANDS },
+						{ 69.0, 71.5, EASTERN_PLAGUELANDS },
+						{ 68.3, 74.6, EASTERN_PLAGUELANDS },
+						{ 68.6, 78.5, EASTERN_PLAGUELANDS },
+						{ 68.8, 80.6, EASTERN_PLAGUELANDS },
+						{ 69.0, 83.5, EASTERN_PLAGUELANDS },
+						{ 70.6, 80.8, EASTERN_PLAGUELANDS },
+						{ 71.1, 75.3, EASTERN_PLAGUELANDS },
+						{ 73.6, 76.9, EASTERN_PLAGUELANDS },
+						{ 72.3, 78.5, EASTERN_PLAGUELANDS },
+						{ 76.1, 78.2, EASTERN_PLAGUELANDS },
+						{ 73.3, 82.2, EASTERN_PLAGUELANDS },
+						{ 74.1, 83.8, EASTERN_PLAGUELANDS },
+						{ 74.8, 83.5, EASTERN_PLAGUELANDS },
+					},
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(12938),	-- Blood of Heroes
+					},
+				}),
+				-- #endif
 				o(421153, {	-- Carved Eye
 					["coord"] = { 28.6, 13.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_10_2_5 },
@@ -5755,120 +5873,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				-- #if BEFORE 4.0.3
-				i(12938, {	-- Blood of Heroes
-					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
-					["provider"] = { "o", 176213 },	-- Blood of Heroes
-					["coords"] = {
-						-- Plaguewood
-						{ 34.5, 25.8, EASTERN_PLAGUELANDS },
-						{ 38.8, 26.7, EASTERN_PLAGUELANDS },
-						{ 33.6, 32.6, EASTERN_PLAGUELANDS },
-						{ 38.5, 31.1, EASTERN_PLAGUELANDS },
-						{ 36.7, 38.1, EASTERN_PLAGUELANDS },
-						{ 38.9, 36.1, EASTERN_PLAGUELANDS },
-						{ 44.9, 32.9, EASTERN_PLAGUELANDS },
-						{ 49.1, 35.5, EASTERN_PLAGUELANDS },
-
-						-- Blackwood Lake
-						{ 47.5, 40.8, EASTERN_PLAGUELANDS },
-						{ 50.3, 45.5, EASTERN_PLAGUELANDS },
-						{ 53.5, 50.7, EASTERN_PLAGUELANDS },
-
-						-- Light's Hope
-						{ 66.1, 53.1, EASTERN_PLAGUELANDS },
-						{ 73.8, 51.1, EASTERN_PLAGUELANDS },
-						{ 76.2, 50.7, EASTERN_PLAGUELANDS },
-						{ 75.6, 55.3, EASTERN_PLAGUELANDS },
-						{ 74.7, 58.7, EASTERN_PLAGUELANDS },
-						{ 78.5, 57.5, EASTERN_PLAGUELANDS },
-						{ 80.5, 59.6, EASTERN_PLAGUELANDS },
-						{ 78.7, 67.3, EASTERN_PLAGUELANDS },
-
-						-- Tirion's House
-						{ 7.1, 50.7, EASTERN_PLAGUELANDS },
-						{ 8.1, 54.4, EASTERN_PLAGUELANDS },
-						{ 14.2, 64.7, EASTERN_PLAGUELANDS },
-						{ 20.0, 60.9, EASTERN_PLAGUELANDS },
-						{ 20.5, 66.9, EASTERN_PLAGUELANDS },
-
-						-- Crypt
-						{ 22.1, 85.0, EASTERN_PLAGUELANDS },
-						{ 24.3, 88.2, EASTERN_PLAGUELANDS },
-						{ 28.8, 85.9, EASTERN_PLAGUELANDS },
-
-						-- Nathanos's House
-						{ 31.5, 73.9, EASTERN_PLAGUELANDS },
-						{ 27.3, 64.0, EASTERN_PLAGUELANDS },
-						{ 30.9, 65.5, EASTERN_PLAGUELANDS },
-						{ 26.7, 69.5, EASTERN_PLAGUELANDS },
-						{ 26.3, 70.5, EASTERN_PLAGUELANDS },
-						{ 26.0, 74.7, EASTERN_PLAGUELANDS },
-						{ 27.1, 75.5, EASTERN_PLAGUELANDS },
-						{ 32.0, 71.0, EASTERN_PLAGUELANDS },
-						{ 34.3, 67.8, EASTERN_PLAGUELANDS },
-						{ 29.2, 78.8, EASTERN_PLAGUELANDS },
-						{ 37.1, 65.7, EASTERN_PLAGUELANDS },
-						{ 37.6, 68.5, EASTERN_PLAGUELANDS },
-						{ 36.9, 70.6, EASTERN_PLAGUELANDS },
-						{ 35.9, 75.8, EASTERN_PLAGUELANDS },
-						{ 24.5, 76.9, EASTERN_PLAGUELANDS },
-						{ 34.0, 80.2, EASTERN_PLAGUELANDS },
-
-						-- Mushroom Kingdom
-						{ 40.0, 49.9, EASTERN_PLAGUELANDS },
-						{ 38.5, 54.0, EASTERN_PLAGUELANDS },
-
-						-- The Infectis Scar
-						{ 41.5, 65.7, EASTERN_PLAGUELANDS },
-						{ 46.3, 64.0, EASTERN_PLAGUELANDS },
-						{ 55.5, 58.7, EASTERN_PLAGUELANDS },
-						{ 41.5, 79.7, EASTERN_PLAGUELANDS },
-						{ 42.5, 75.7, EASTERN_PLAGUELANDS },
-						{ 48.9, 67.2, EASTERN_PLAGUELANDS },
-						{ 46.2, 70.8, EASTERN_PLAGUELANDS },
-						{ 46.5, 74.8, EASTERN_PLAGUELANDS },
-						{ 47.9, 80.0, EASTERN_PLAGUELANDS },
-						{ 50.5, 77.3, EASTERN_PLAGUELANDS },
-						{ 51.8, 70.3, EASTERN_PLAGUELANDS },
-						{ 56.2, 63.9, EASTERN_PLAGUELANDS },
-						{ 59.3, 62.2, EASTERN_PLAGUELANDS },
-						{ 58.5, 64.9, EASTERN_PLAGUELANDS },
-						{ 59.9, 67.5, EASTERN_PLAGUELANDS },
-						{ 57.5, 72.0, EASTERN_PLAGUELANDS },
-						{ 61.8, 70.2, EASTERN_PLAGUELANDS },
-						{ 63.6, 67.7, EASTERN_PLAGUELANDS },
-						{ 67.6, 66.8, EASTERN_PLAGUELANDS },
-
-						-- Lake Mereldar
-						{ 56.5, 76.1, EASTERN_PLAGUELANDS },
-						{ 57.8, 76.2, EASTERN_PLAGUELANDS },
-						{ 59.5, 76.0, EASTERN_PLAGUELANDS },
-						{ 59.2, 80.8, EASTERN_PLAGUELANDS },
-						{ 57.1, 81.9, EASTERN_PLAGUELANDS },
-						{ 59.2, 80.8, EASTERN_PLAGUELANDS },
-						{ 64.7, 81.0, EASTERN_PLAGUELANDS },
-
-						-- Tyr's Hand
-						{ 68.2, 70.6, EASTERN_PLAGUELANDS },
-						{ 70.7, 69.5, EASTERN_PLAGUELANDS },
-						{ 73.4, 69.8, EASTERN_PLAGUELANDS },
-						{ 76.6, 72.5, EASTERN_PLAGUELANDS },
-						{ 69.0, 71.5, EASTERN_PLAGUELANDS },
-						{ 68.3, 74.6, EASTERN_PLAGUELANDS },
-						{ 68.6, 78.5, EASTERN_PLAGUELANDS },
-						{ 68.8, 80.6, EASTERN_PLAGUELANDS },
-						{ 69.0, 83.5, EASTERN_PLAGUELANDS },
-						{ 70.6, 80.8, EASTERN_PLAGUELANDS },
-						{ 71.1, 75.3, EASTERN_PLAGUELANDS },
-						{ 73.6, 76.9, EASTERN_PLAGUELANDS },
-						{ 72.3, 78.5, EASTERN_PLAGUELANDS },
-						{ 76.1, 78.2, EASTERN_PLAGUELANDS },
-						{ 73.3, 82.2, EASTERN_PLAGUELANDS },
-						{ 74.1, 83.8, EASTERN_PLAGUELANDS },
-						{ 74.8, 83.5, EASTERN_PLAGUELANDS },
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
 				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
 					["timeline"] = { REMOVED_4_0_3 },
 				})),

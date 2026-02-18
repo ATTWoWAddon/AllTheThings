@@ -3088,6 +3088,82 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
+			-- #if BEFORE 4.0.3
+			n(TREASURES, {
+				i(176213, {	-- Blood of Heroes
+					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
+					["coords"] = {
+						-- Hearthglen
+						{ 54.9, 27.1, WESTERN_PLAGUELANDS },
+						{ 46.8, 34.5, WESTERN_PLAGUELANDS },
+						{ 49.8, 33.3, WESTERN_PLAGUELANDS },
+						{ 56.7, 34.7, WESTERN_PLAGUELANDS },
+
+						-- Spooky Cave
+						{ 66.5, 42.2, WESTERN_PLAGUELANDS },
+						{ 68.0, 44.7, WESTERN_PLAGUELANDS },
+						{ 64.0, 48.7, WESTERN_PLAGUELANDS },
+						{ 68.7, 49.2, WESTERN_PLAGUELANDS },
+						{ 67.0, 53.8, WESTERN_PLAGUELANDS },
+
+						-- Gahrron's Withering
+						{ 64.1, 57.9, WESTERN_PLAGUELANDS },
+						{ 63.2, 59.2, WESTERN_PLAGUELANDS },
+						{ 62.0, 58.5, WESTERN_PLAGUELANDS },
+
+						-- Felstone Field
+						{ 36.5, 53.6, WESTERN_PLAGUELANDS },
+						{ 35.9, 57.5, WESTERN_PLAGUELANDS },
+						{ 38.2, 56.3, WESTERN_PLAGUELANDS },
+						{ 40.8, 57.5, WESTERN_PLAGUELANDS },
+						{ 42.2, 54.8, WESTERN_PLAGUELANDS },
+
+						-- Dalson's Tears
+						{ 44.6, 53.5, WESTERN_PLAGUELANDS },
+						{ 45.9, 51.1, WESTERN_PLAGUELANDS },
+						{ 47.9, 53.1, WESTERN_PLAGUELANDS },
+						{ 52.3, 55.0, WESTERN_PLAGUELANDS },
+						{ 47.0, 69.9, WESTERN_PLAGUELANDS },
+
+						-- The Writhing Haunt
+						{ 53.5, 63.5, WESTERN_PLAGUELANDS },
+						{ 52.3, 66.3, WESTERN_PLAGUELANDS },
+						{ 53.3, 66.2, WESTERN_PLAGUELANDS },
+						{ 55.3, 59.6, WESTERN_PLAGUELANDS },
+						{ 57.8, 66.6, WESTERN_PLAGUELANDS },
+
+						-- Ruins of Andorhal
+						{ 41.5, 62.1, WESTERN_PLAGUELANDS },
+						{ 42.8, 64.2, WESTERN_PLAGUELANDS },
+						{ 44.2, 65.0, WESTERN_PLAGUELANDS },
+						{ 39.7, 69.6, WESTERN_PLAGUELANDS },
+						{ 40.6, 73.1, WESTERN_PLAGUELANDS },
+						{ 43.3, 68.3, WESTERN_PLAGUELANDS },
+						{ 43.7, 70.5, WESTERN_PLAGUELANDS },
+						{ 44.5, 71.7, WESTERN_PLAGUELANDS },
+						{ 45.9, 71.4, WESTERN_PLAGUELANDS },
+						{ 47.6, 70.0, WESTERN_PLAGUELANDS },
+						{ 47.0, 67.1, WESTERN_PLAGUELANDS },
+						{ 49.4, 68.1, WESTERN_PLAGUELANDS },
+
+						-- Caer Darrow
+						{ 63.6, 75.5, WESTERN_PLAGUELANDS },
+						{ 64.9, 74.5, WESTERN_PLAGUELANDS },
+						{ 65.8, 76.8, WESTERN_PLAGUELANDS },
+						{ 68.9, 73.8, WESTERN_PLAGUELANDS },
+						{ 69.5, 78.6, WESTERN_PLAGUELANDS },
+						{ 69.5, 78.6, WESTERN_PLAGUELANDS },
+						{ 68.3, 81.6, WESTERN_PLAGUELANDS },
+						{ 68.7, 79.1, WESTERN_PLAGUELANDS },
+						{ 67.8, 84.6, WESTERN_PLAGUELANDS },
+					},
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(12938),	-- Blood of Heroes
+					},
+				}),
+			}),
+			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_FOUR, i(226413, {	-- Rune of Arcane Specialization
@@ -3186,76 +3262,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				-- #if BEFORE 4.0.3
-				i(12938, {	-- Blood of Heroes
-					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
-					["provider"] = { "o", 176213 },	-- Blood of Heroes
-					["coords"] = {
-						-- Hearthglen
-						{ 54.9, 27.1, WESTERN_PLAGUELANDS },
-						{ 46.8, 34.5, WESTERN_PLAGUELANDS },
-						{ 49.8, 33.3, WESTERN_PLAGUELANDS },
-						{ 56.7, 34.7, WESTERN_PLAGUELANDS },
-
-						-- Spooky Cave
-						{ 66.5, 42.2, WESTERN_PLAGUELANDS },
-						{ 68.0, 44.7, WESTERN_PLAGUELANDS },
-						{ 64.0, 48.7, WESTERN_PLAGUELANDS },
-						{ 68.7, 49.2, WESTERN_PLAGUELANDS },
-						{ 67.0, 53.8, WESTERN_PLAGUELANDS },
-
-						-- Gahrron's Withering
-						{ 64.1, 57.9, WESTERN_PLAGUELANDS },
-						{ 63.2, 59.2, WESTERN_PLAGUELANDS },
-						{ 62.0, 58.5, WESTERN_PLAGUELANDS },
-
-						-- Felstone Field
-						{ 36.5, 53.6, WESTERN_PLAGUELANDS },
-						{ 35.9, 57.5, WESTERN_PLAGUELANDS },
-						{ 38.2, 56.3, WESTERN_PLAGUELANDS },
-						{ 40.8, 57.5, WESTERN_PLAGUELANDS },
-						{ 42.2, 54.8, WESTERN_PLAGUELANDS },
-
-						-- Dalson's Tears
-						{ 44.6, 53.5, WESTERN_PLAGUELANDS },
-						{ 45.9, 51.1, WESTERN_PLAGUELANDS },
-						{ 47.9, 53.1, WESTERN_PLAGUELANDS },
-						{ 52.3, 55.0, WESTERN_PLAGUELANDS },
-						{ 47.0, 69.9, WESTERN_PLAGUELANDS },
-
-						-- The Writhing Haunt
-						{ 53.5, 63.5, WESTERN_PLAGUELANDS },
-						{ 52.3, 66.3, WESTERN_PLAGUELANDS },
-						{ 53.3, 66.2, WESTERN_PLAGUELANDS },
-						{ 55.3, 59.6, WESTERN_PLAGUELANDS },
-						{ 57.8, 66.6, WESTERN_PLAGUELANDS },
-
-						-- Ruins of Andorhal
-						{ 41.5, 62.1, WESTERN_PLAGUELANDS },
-						{ 42.8, 64.2, WESTERN_PLAGUELANDS },
-						{ 44.2, 65.0, WESTERN_PLAGUELANDS },
-						{ 39.7, 69.6, WESTERN_PLAGUELANDS },
-						{ 40.6, 73.1, WESTERN_PLAGUELANDS },
-						{ 43.3, 68.3, WESTERN_PLAGUELANDS },
-						{ 43.7, 70.5, WESTERN_PLAGUELANDS },
-						{ 44.5, 71.7, WESTERN_PLAGUELANDS },
-						{ 45.9, 71.4, WESTERN_PLAGUELANDS },
-						{ 47.6, 70.0, WESTERN_PLAGUELANDS },
-						{ 47.0, 67.1, WESTERN_PLAGUELANDS },
-						{ 49.4, 68.1, WESTERN_PLAGUELANDS },
-
-						-- Caer Darrow
-						{ 63.6, 75.5, WESTERN_PLAGUELANDS },
-						{ 64.9, 74.5, WESTERN_PLAGUELANDS },
-						{ 65.8, 76.8, WESTERN_PLAGUELANDS },
-						{ 68.9, 73.8, WESTERN_PLAGUELANDS },
-						{ 69.5, 78.6, WESTERN_PLAGUELANDS },
-						{ 69.5, 78.6, WESTERN_PLAGUELANDS },
-						{ 68.3, 81.6, WESTERN_PLAGUELANDS },
-						{ 68.7, 79.1, WESTERN_PLAGUELANDS },
-						{ 67.8, 84.6, WESTERN_PLAGUELANDS },
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
 				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
 					["timeline"] = { REMOVED_4_0_3 },
 				})),
