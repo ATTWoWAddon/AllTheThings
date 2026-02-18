@@ -3,7 +3,7 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, {
-	header(HEADERS.Spell, 254763, {	-- Uuna
+	header(HEADERS.Spell, 254763, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Uuna
 		["description"] = "This secret is a prerequisite for Baa'l. It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a rare elite in Antoran Wastes.",
 		["modelScale"] = 1.1,
 		["displayID"] = 76829,
@@ -161,5 +161,5 @@ root(ROOTS.Secrets, {
 				}),
 			}),
 		},
-	}),
+	})),
 });

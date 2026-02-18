@@ -1492,9 +1492,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		},
 	})),
 	header(HEADERS.Quest, 12406, {	-- Candy Bucket Quests
-		n(FACTION_HEADER_NEUTRAL, {
-			["timeline"] = { ADDED_2_0_1 },
-			["groups"] = {
+		["timeline"] = { ADDED_2_0_1 },
+		["groups"] = {
+			n(FACTION_HEADER_NEUTRAL, {
 				candybucket(28955, {	-- Candy Bucket — Badlands, Fuselight, Neutral
 					["provider"] = { "o", 208137 },	-- Candy Bucket, Badlands
 					["coord"] = { 65.9, 35.8, BADLANDS },
@@ -2120,11 +2120,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 61.9, 46.3, THE_RINGING_DEEPS },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
-			},
-		}),
-		n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY }, {
-			["timeline"] = { ADDED_2_0_1 },
-			["groups"] = {
+			}),
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY }, {
 				candybucket(28954, {	-- Candy Bucket — Arathi Highlands, Refuge Point, Alliance
 					["provider"] = { "o", 208120 },	-- Candy Bucket, Arathi Highlands
 					["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
@@ -2569,11 +2566,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 67.2, 49.0, ZANGARMARSH },
 					["timeline"] = { ADDED_2_0_1 },
 				}),
-			},
-		})),
-		n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
-			["timeline"] = { ADDED_2_0_1 },
-			["groups"] = {
+			})),
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
 				candybucket(12380, {	-- Candy Bucket — Arathi Highlands, Hammerfall, Horde
 					["provider"] = { "o", 190082 },	-- Candy Bucket, Arathi Highlands
 					["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
@@ -3000,8 +2994,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						DAZARALOR,
 					},
 				}),
-			},
-		})),
+			})),
+		},
 	}),
 	n(QUESTS, {
 		q(12135, {	-- "Let the Fires Come!" (Alliance)

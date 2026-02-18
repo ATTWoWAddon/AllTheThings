@@ -2,6 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 -- Purely used for alignment of Achievement Categories to match the in-game Achievements UI. Maybe eventually will have an automated way to replace this file
+-- #if NOT ANYCLASSIC
 root(ROOTS.Achievements, {
 	achcat(ACHIEVEMENT_CATEGORY_CHARACTER),
 	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
@@ -200,3 +201,4 @@ root(ROOTS.Achievements, {
 		achcat(ACHIEVEMENT_CATEGORY_LEGION_REMIX_LEGACY, {["timeline"] = {ADDED_12_0_0}}),
 	}),
 });
+-- #endif

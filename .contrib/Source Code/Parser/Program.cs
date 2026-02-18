@@ -315,7 +315,7 @@ namespace ATT
                         }
                         else
                         {
-                            filenames.AsParallel().ForAll(ParseJSONFile);
+                            foreach (var filename in filenames) ParseJSONFile(filename);
                         }
 
                         if (Errored)

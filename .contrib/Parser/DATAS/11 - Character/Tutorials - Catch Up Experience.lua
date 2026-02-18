@@ -1,8 +1,8 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Character, n(TUTORIALS, {
-	m(ARATHI_HIGHLANDS_CATCHUP, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+	m(ARATHI_HIGHLANDS_CATCHUP, {
 		["icon"] = 236712,
 		["maps"] = { 2451 },	-- Arathi Highlands (Catch Up Experience)
 		["lore"] = "Journey through the Arathi Highlands to help refamiliarize yourself with World of Warcraft and receive upgraded gear for your character.",
@@ -551,8 +551,8 @@ root(ROOTS.Character, n(TUTORIALS, {
 				}),
 			})),
 		},
-	})),
-}));
+	}),
+})));
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
