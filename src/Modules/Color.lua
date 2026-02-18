@@ -219,14 +219,10 @@ app.TryColorizeName = function(group, name)
 	-- locked things
 	elseif group.locked then
 		return Colorize(name, colors.Locked);
-	-- lockable things (use breadcrumb color for similar concept)
-	elseif group.lc then
+	-- lockable things / breadcrumbs
+	elseif group.lc or group.isBreadcrumb then
 		return Colorize(name, colors.Breadcrumb)
-	-- breadcrumbs (should always be covered within Quest lib)
-	-- elseif group.isBreadcrumb then
-	-- 	return Colorize(name, colors.Breadcrumb);
-	-- if people REALLY only want to see colors in account/debug then we can comment this in
-	elseif UseMoreColors --and (app.MODE_DEBUG_OR_ACCOUNT)
+	elseif UseMoreColors
 	then
 		-- class color
 		if group.classID then
