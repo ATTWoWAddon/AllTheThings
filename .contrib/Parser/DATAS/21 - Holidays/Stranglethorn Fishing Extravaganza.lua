@@ -89,20 +89,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #endif
 				},
 				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
+				["_drop"] = { "g" },	-- API lists all quest rewards despite not being available in classic
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
 					i(19970),	-- Arcanite Fishing Pole
 					i(19979),	-- Hook of the Master Angler
-					-- #if AFTER 5.1.0
-					i(50287),	-- Boots of the Bay
+					i(50287, {	-- Boots of the Bay
+						["timeline"] = { ADDED_5_1_0 },
+					}),
 					i(50255, {	-- Dread Pirate Ring
 						["timeline"] = { ADDED_5_1_0, REMOVED_6_1_0 },
 					}),
 					i(122529, {	-- Dread Pirate Ring
 						["timeline"] = { ADDED_6_1_0 },
 					}),
-					-- #endif
 				},
 			}),
 			q(8225, {	-- Rare Fish - Brownell's Blue Striped Racer
@@ -168,7 +169,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
-					i(50287),	-- Boots of the Bay
+					i(50287, {	-- Boots of the Bay
+						["timeline"] = { ADDED_5_1_0 },
+					}),
 					i(50255, {	-- Dread Pirate Ring
 						["timeline"] = { ADDED_5_1_0, REMOVED_6_1_0 },
 					}),
@@ -210,7 +213,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				["isWorldQuest"] = true,
 				["groups"] = {
 					i(19970),	-- Arcanite Fishing Pole
-					i(50287),	-- Boots of the Bay,
+					i(50287),	-- Boots of the Bay
 					i(122529),	-- Dread Pirate Ring
 					i(19979),	-- Hook of the Master Angler
 					i(19971),	-- High Test Eternium Fishing Line
