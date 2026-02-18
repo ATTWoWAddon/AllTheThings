@@ -2,8 +2,9 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
+root(ROOTS.PVP, pvp(n(PRESTIGE, {
 	["description"] = "System that was used during Legion Expansion.",
+	["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	["groups"] = {
 		ach(10991, {	-- First Step into a Larger World [1]
 			i(139777, {	-- Strange Crate
@@ -44,7 +45,6 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 						42987,	-- The Victor's Spoils [Horde]
 					},
 					["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 1}},
-					["u"] = REMOVED_FROM_GAME,
 				},
 				--]]
 			},
@@ -88,7 +88,6 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 2,	-- Crest of Heroism
 				["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 2}},
-				["u"] = REMOVED_FROM_GAME,
 			},
 		--]]
 		}),
@@ -112,7 +111,6 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 3,	-- Crest of Carnage
 				["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 3}},
-				["u"] = REMOVED_FROM_GAME,
 			},
 		--]]
 		}),
@@ -132,7 +130,6 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 4,	-- Crest of Devastation
 				["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 4}},
-				["u"] = REMOVED_FROM_GAME,
 			},
 		--]]
 		}),
@@ -155,4 +152,4 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 			i(140407),	-- Prestigious Midnight Courser (MOUNT!)
 		}),
 	},
-}))));
+})));
