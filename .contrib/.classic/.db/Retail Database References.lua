@@ -1,6 +1,3 @@
--- Temporarily needed.
--- #IMPORT: ..\\lib\\zz - Classic Only
-
 -- Dungeons & Raids
 -- #IMPORT: 01 - Dungeons Raids\\01 - Classic\\
 -- #IMPORT: 01 - Dungeons Raids\\02 - Burning Crusade\\

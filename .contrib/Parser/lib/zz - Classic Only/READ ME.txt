@@ -1,3 +1,0 @@
-I'm working on deprecating these files, but to do that, I had to move them here.
-
-These are specifically NOT in the DATAS folder in order to prevent them from executing for non-classic builds.
