@@ -1,7 +1,7 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
-root(ROOTS.Character, n(ALLIED_RACES, {
+root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {
 	q(50239, {	-- A Choice of Allies (A)
 		["qgs"] = {
 			126301,	-- Anduin Wyrnn
@@ -1433,7 +1433,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 	filter(MISC, {
 		i(157787),	-- Large Red Sack
 	}),
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {
 	n(ALLIED_RACES, {
