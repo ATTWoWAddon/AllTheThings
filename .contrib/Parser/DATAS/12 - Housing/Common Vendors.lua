@@ -1,6 +1,7 @@
 ---------------------------------------------
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
+-- #if AFTER 11.2.7
 -- Contains the Vendors who sell common items only differing by Housing Neighborhood
 --[[
 	-- Example layout for setting up a new set of CVIs
@@ -23,6 +24,7 @@
 root(ROOTS.Housing, {
 	n(COMMON_VENDOR_ITEMS, {
 		["description"] = "It is advised to use the |cffffffffNPC Filler for the Mini List|r to allow these Items to fill properly under NPCs within your current Housing Neighborhood.",
+		["timeline"] = { ADDED_11_2_7 },
 	}),
 	n_CommonVendorItems({
 		["crs"] = {
@@ -447,6 +449,7 @@ root(ROOTS.Housing, {
 	n(VENDORS, {
 		n(255654, {	-- Lorisin
 			["coord"] = { 41.6, 61.8, FOUNDERS_POINT },
+			["timeline"] = { ADDED_11_2_7 },
 			["groups"] = {
 				i(262562),	-- Bolt of Pressed Linen
 				i(262563),	-- Bolt of Elegant Silk
@@ -456,3 +459,4 @@ root(ROOTS.Housing, {
 		}),
 	}),
 })
+-- #endif
