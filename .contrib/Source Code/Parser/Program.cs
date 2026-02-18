@@ -290,19 +290,40 @@ namespace ATT
                 string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
 
                 Framework.CurrentParseStage = ParseStage.RawJsonMerge;
+                
                 do
                 {
                     Errored = false;
-                    // Load all of the RAW JSON Data into the database.
-                    var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
-                    files.Sort(StringComparer.InvariantCulture);
-                    foreach (var f in files) ParseJSONFile(f);
 
-                    if (Errored)
+                    // Load all of the RAW JSON Data into the database.
+                    var directories = Framework.Config["json-directories"];
+                    if (directories != null)
                     {
-                        Trace.WriteLine("Please fix the formatting of the above Invalid JSON file(s)");
-                        Trace.WriteLine("Press Enter once you have resolved the issue.");
-                        Framework.WaitForUser();
+                        var filenames = new List<string>();
+                        foreach (var jsonDirectory in (string[])directories)
+                        {
+                            if (!string.IsNullOrWhiteSpace(jsonDirectory))
+                            {
+                                Trace.WriteLine($"Loading JSON files from {jsonDirectory}.");
+                                filenames.AddRange(Directory.GetFiles(jsonDirectory, "*.json", SearchOption.AllDirectories));
+                            }
+                        }
+                        filenames.Sort(StringComparer.InvariantCulture);
+                        if (Debugger.IsAttached)
+                        {
+                            foreach (var filename in filenames) ParseJSONFile(filename);
+                        }
+                        else
+                        {
+                            filenames.AsParallel().ForAll(ParseJSONFile);
+                        }
+
+                        if (Errored)
+                        {
+                            Trace.WriteLine("Please fix the formatting of the above Invalid JSON file(s)");
+                            Trace.WriteLine("Press Enter once you have resolved the issue.");
+                            Framework.WaitForUser();
+                        }
                     }
                 }
                 while (Errored && !Framework.Automated);
@@ -313,7 +334,7 @@ namespace ATT
                 {
                     Errored = false;
 
-                    // Load all of the RAW JSON Data into the database.
+                    // Load all of the Wago Data into the database.
                     var directories = Framework.Config["wago-directories"];
                     if (directories != null)
                     {

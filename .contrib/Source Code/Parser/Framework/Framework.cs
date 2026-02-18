@@ -4157,7 +4157,6 @@ setmetatable(_.HeaderConstants, {
                 IncludeRawNewlines = true;
 
                 CurrentParseStage = ParseStage.ExportAutoSources;
-                Objects.ExportAutoItemSources(Config["root-data"] ?? "./DATAS");
 
                 // Attempt to find some dirty objects and write them to a dynamic file.
                 ObjectHarvester.ExportDirtyObjectsToFilePath($"./DATAS/00 - DB/Dynamic/DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");

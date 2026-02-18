@@ -1261,33 +1261,6 @@ end");
                     WriteIfDifferent(filename, content);
                 }
             }
-
-            public static void ExportAutoItemSources(string directory)
-            {
-                var sourcesDir = Path.Combine(directory, "00 - Item DB", "Source IDs");
-                if (Directory.Exists(sourcesDir))
-                {
-                    var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
-                    foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))
-                    {
-                        if (sourceFile != filename)
-                        {
-                            File.Delete(sourceFile);
-                        }
-                    }
-
-                    StringBuilder data = new StringBuilder(10000);
-                    data.AppendLine("--   WARNING: This file is dynamically generated   --");
-                    data.Append("root(\"Items.SOURCES\",");
-                    AddTableNewLines = true;
-                    data.AppendLine(ExportCompressedLua(Items.AllItemSourceIDs).ToString());
-                    data.Append(");");
-
-                    string content = data.ToString();
-                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
-                    WriteIfDifferent(filename, content);
-                }
-            }
             #endregion
 
             #region Export DB
