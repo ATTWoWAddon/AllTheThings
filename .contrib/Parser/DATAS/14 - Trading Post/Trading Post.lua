@@ -1,6 +1,31 @@
 -------------------------------------
 --     T R A D I N G   P O S T     --
 -------------------------------------
+TRADING_POST_CATEGORY = createHeader({
+	readable = "Trading Post",
+	icon = [[~_.asset("Category_TradingPost")]],
+	constant = "TRADING_POST_CATEGORY",
+	text = {
+		en = [[~TRANSMOG_SOURCE_7]],
+		--[[
+		en = "Trading Post",
+		de = "Handelsposten",
+		es = "Puesto Comercial",
+		mx = "Puesto de venta",
+		fr = "Comptoir",
+		it = "Emporio",
+		pt = "Posto Comercial",
+		ru = "Торговая лавка",
+		ko = "교역소",
+		cn = "商栈",
+		tw = "貿易站",
+		]]--
+	},
+});
+assignRootCategoryHeader(95, ROOTS.TradingPost, TRADING_POST_CATEGORY, {
+	isMinilistHeader = true,
+});
+
 FILLED_TRAVELERS_LOG = createHeader({
 	readable = "Filled Travelers Log",
 	icon = 4696085,

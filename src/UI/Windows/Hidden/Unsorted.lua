@@ -35,7 +35,7 @@ app:CreateWindow("Unsorted", {
 			_unsorted = true,
 			_nosearch = true,
 		}));
-		self:AddEventHandler("OnDataCached", function(self, categories)
+		self:AddEventHandler("OnHiddenDataCached", function(self, categories)
 			self.data.g = categories.Unsorted;
 			tinsert(self.data.g, self.achievementHeader);
 			app.CacheFields(self.data, true);

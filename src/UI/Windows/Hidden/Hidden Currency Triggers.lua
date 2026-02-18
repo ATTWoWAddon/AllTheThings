@@ -18,7 +18,7 @@ app:CreateWindow("Hidden Currency Triggers", {
 			visible = true,
 			_hqt = true,
 		}));
-		self:AddEventHandler("OnDataCached", function(self, categories)
+		self:AddEventHandler("OnHiddenDataCached", function(self, categories)
 			self.data.g = categories.HiddenCurrencyTriggers;
 			app.CacheFields(self.data, true);
 			self:AssignChildren();

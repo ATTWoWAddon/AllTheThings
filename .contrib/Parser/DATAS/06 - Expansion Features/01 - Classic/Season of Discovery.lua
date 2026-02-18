@@ -198,7 +198,10 @@ local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
 	},
 });
 
-root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
+assignRootCategoryHeader(60, ROOTS.SeasonOfDiscovery, SEASON_OF_DISCOVERY_HEADER, applyclassicphase(SOD_PHASE_ONE, {
+	["timeline"] = { REMOVED_2_0_1 },
+}));
+root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["timeline"] = { REMOVED_2_0_1 } }, {
 	n(FACTIONS, {
 		faction(2586, {	-- Azeroth Commerce Authority
 			["OnUpdate"] = OnUpdateFor_ACA_SDL,
@@ -5087,7 +5090,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	q(84407),	-- The Prize Within
 	q(84395),	-- Undead Potatoes
 	]]--
-}))));
+})));
 
 -- Dungeon & Raid Phase Requirements
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {

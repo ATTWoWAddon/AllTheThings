@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace ATT
 {
@@ -430,19 +431,25 @@ namespace ATT
         {
             // Export the Category
             var builder = new Exporter(name);
-            builder.Append("categories.").Append(name).Append("={");
-            foreach (var group in category)
+            builder.Append("categories.").Append(name).Append("=");
+            bool isPrimaryRootCategory = false;
+            if (Framework.RootCategoryHeaders.TryGetValue(name, out var headerObj)
+                && headerObj is Dictionary<string, object> header && header != null)
             {
-                ExportCompressedLua(builder, group);
-                builder.Append(",");
+                header["g"] = category;
+                ExportCompressedLua(builder, header);
+                isPrimaryRootCategory = true;
             }
-            builder.Remove(builder.Length - 1, 1).AppendLine("};").AppendLine("end);");
+            else ExportCompressedLua(builder, category);
+            builder.AppendLine(";").AppendLine("end);");
             builder.Insert(0, "--STRUCTURE_REPLACEMENTS" + Environment.NewLine);
             ExportLocalVariablesForLua(builder);
             builder.Insert(0, new StringBuilder()
                 .AppendLine("---@diagnostic disable: deprecated")
                 .AppendLine("local appName, _ = ...;")
-                .AppendLine("_.AddEventHandler(\"OnGetDataCache\", function(categories)"));
+                .Append("_.AddEventHandler(\"")
+                .Append(isPrimaryRootCategory ? "OnBuildDataCache" : "OnBuildHiddenDataCache")
+                .AppendLine("\", function(categories)"));
             AddTableNewLines = ConfigUseExportNewlines;
             return builder;
         }

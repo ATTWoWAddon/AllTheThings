@@ -47,6 +47,9 @@ local fields = {
 	deathCount = function(t)
 		return ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths or 0;
 	end,
+	SortPriority = function(t)
+		return 199;
+	end,
 	OnUpdate = app.EmptyFunction,
 	OnTooltip = function()
 		return OnTooltipForDeathTracker;

@@ -1,6 +1,7 @@
 using ATT.DB;
 using ATT.DB.Types;
 using ATT.FieldTypes;
+using NLua;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -377,6 +378,16 @@ namespace ATT
         }
 
         /// <summary>
+        /// Assign the root category headers to the Framework's internal reference.
+        /// </summary>
+        /// <param name="rootCategoryHeaders">The root Category Headers.</param>
+        public static void AssignRootCategoryHeaders(Dictionary<string, object> rootCategoryHeaders)
+        {
+            RootCategoryHeaders = rootCategoryHeaders;
+            Trace.WriteLine($"Found {rootCategoryHeaders.Count} Root Category Headers...");
+        }
+
+        /// <summary>
         /// Mark the Custom Header as Required.
         /// This will force it to be included in the export if it exists as a constant.
         /// NOTE: Only headers with a constant defined can be explicitly marked.
@@ -677,8 +688,6 @@ namespace ATT
         /// </summary>
         internal static Dictionary<long, long> ItemAppearanceModifierIDs_ModID { get; private set; } = new Dictionary<long, long>();
 
-        //
-
         /// <summary>
         /// The LocalizationStrings table from main.lua that is used to generate localization strings.
         /// </summary>
@@ -698,6 +707,11 @@ namespace ATT
         /// This contains all of the explicitly assigned phaseIDs to readable
         /// </summary>
         internal static Dictionary<string, long> PhaseIDsByKey { get; } = new Dictionary<string, long>();
+
+        /// <summary>
+        /// All of the Root Category Headers that have been loaded into the database.
+        /// </summary>
+        internal static Dictionary<string, object> RootCategoryHeaders { get; set; } = new Dictionary<string, object>();
 
         /// <summary>
         /// Contains two Keys for sets of field names relating to a 'trackable' nature within ATT
@@ -2022,6 +2036,14 @@ namespace ATT
             var outputFolder = Directory.CreateDirectory($"{addonRootFolder}/db/{dbRootFolder}");
             if (outputFolder.Exists)
             {
+                // Mark references to the Custom Headers in Root Categories
+                foreach(var containerKeyValue in Objects.AllContainers)
+                {
+                    if (containerKeyValue.Value.Count > 0 && Framework.RootCategoryHeaders.TryGetValue(containerKeyValue.Key, out var obj))
+                    {
+                        if (obj is Dictionary<string, object> rootCategoryHeader) Validate_headerID(rootCategoryHeader);
+                    }
+                }
 
                 // DEBUGGING: Output Parsed Data
                 if (DebugMode)

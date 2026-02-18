@@ -18,7 +18,7 @@ app:CreateWindow("Never Implemented", {
 			visible = true,
 			_nyi = true,
 		}));
-		self:AddEventHandler("OnDataCached", function(self, categories)
+		self:AddEventHandler("OnHiddenDataCached", function(self, categories)
 			self.data.g = categories.NeverImplemented;
 			app.CacheFields(self.data, true);
 			app.AssignFieldValue(self.data, "u", 1);

@@ -1215,6 +1215,7 @@ function app:GetDatabaseRoot()
 		preview = app.asset("Discord_2_128"),
 		description = L.DESCRIPTION,
 		font = "GameFontNormalLarge",
+		SortType = "Global",
 		expanded = true,
 		g = g,
 	}, {
@@ -1238,196 +1239,20 @@ function app:GetDatabaseRoot()
 		end
 	});
 	
-	local AllCategories = {};
-	app.HandleEvent("OnGetDataCache", AllCategories, g);
-	app.RemoveAllEventHandlers("OnGetDataCache");
-	--[[
+	-- Build the Categories and assign them to temporary tables.
+	local AllCategories, AllHiddenCategories = {}, {};
+	app.HandleEvent("OnBuildHiddenDataCache", AllHiddenCategories);
+	app.HandleEvent("OnBuildDataCache", AllCategories);
+	app.RemoveAllEventHandlers("OnBuildHiddenDataCache");
+	app.RemoveAllEventHandlers("OnBuildDataCache");
 	for key,category in pairs(AllCategories) do
-		print(key, "LOADED");
+		--print("Found Category:", key);
+		category.RootCategory = key;
+		tinsert(g, category);
 	end
-	]]--
-
-	-----------------------------------------
-	-- P R I M A R Y   C A T E G O R I E S --
-	-----------------------------------------
-	-- Dungeons & Raids
-	tinsert(g, app.CreateRawText(GROUP_FINDER, {
-		icon = app.asset("Category_D&R"),
-		g = AllCategories.Instances,
-	}));
-
-	-- Delves
-	if AllCategories.Delves then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.DELVES, AllCategories.Delves));
-	end
-
-	-- Outdoor Zones
-	if AllCategories.Zones then
-		tinsert(g, app.CreateRawText(BUG_CATEGORY2, {
-			icon = app.asset("Category_Zones"),
-			g = AllCategories.Zones,
-			mapID = 947,
-		}));
-	end
-
-	-- World Drops
-	tinsert(g, app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, {
-		g = AllCategories.WorldDrops or {},
-		RootCategory = "World Drops",
-	}));
-
-	-- Crafted Items
-	local craftables = AllCategories.Craftables;
-	if craftables then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.CRAFTED_ITEMS, {
-			DontEnforceSkillRequirements = true,
-			RootCategory = "Crafted Items",
-			g = craftables,
-		}));
-	end
-
-	-- Professions
-	local ProfessionsHeader = app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, {
-		g = AllCategories.Professions or {},
-		RootCategory = "Professions",
-	});
-	tinsert(g, ProfessionsHeader);
-
-	-- Holidays
-	if AllCategories.Holidays then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, {
-			difficultyID = 19,	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
-			SortType = "EventStart",
-			g = AllCategories.Holidays,
-			RootCategory = "Holidays",
-		}));
-	end
-
-	-- Expansion Features
-	if AllCategories.ExpansionFeatures and #AllCategories.ExpansionFeatures > 0 then
-		tinsert(g, app.CreateRawText(GetCategoryInfo(15301) or EXPANSION_FILTER_TEXT, {
-			icon = app.asset("Category_ExpansionFeatures"),
-			description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.",
-			g = AllCategories.ExpansionFeatures,
-			RootCategory = "Expansion Features",
-		}));
-	end
-
-	-----------------------------------------
-	-- L I M I T E D   C A T E G O R I E S --
-	-----------------------------------------
-	-- Character
-	if AllCategories.Character then
-		local characterCategory = app.CreateRawText(CHARACTER, {
-			icon = app.asset("Category_ItemSets"),
-			g = AllCategories.Character,
-			RootCategory = "Character",
-		});
-		-- Merge Pet Battles into Character (temporary solution until this category is DEAD.)
-		if AllCategories.PetBattles then
-			tinsert(characterCategory.g, app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
-				g = AllCategories.PetBattles,
-			}));
-			AllCategories.PetBattles = nil;
-		end
-		tinsert(g, characterCategory);
-	end
-
-	-- Housing
-	if AllCategories.Housing then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOUSING, {
-			g = AllCategories.Housing,
-			RootCategory = "Housing",
-		}));
-	end
-
-	-- Group Finder
-	if AllCategories.GroupFinder then
-		tinsert(g, app.CreateRawText(DUNGEONS_BUTTON, {
-			icon = app.asset("Category_GroupFinder"),
-			g = AllCategories.GroupFinder,
-			RootCategory = "Group Finder",
-		}));
-	end
-
-	-- PvP
-	if AllCategories.PVP then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PVP, {
-			g = AllCategories.PVP,
-			RootCategory = "PvP",
-		}));
-	end
-
-	-- Season of Discovery
-	if AllCategories.SeasonOfDiscovery then
-		for i,o in ipairs(AllCategories.SeasonOfDiscovery) do
-			tinsert(g, o);
-		end
-	end
-
-	-- Secrets
-	if AllCategories.Secrets then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.SECRETS, {
-			g = AllCategories.Secrets,
-			RootCategory = "Secrets",
-		}));
-	end
-
-	-- Skills
-	if AllCategories.Skills then
-		tinsert(g, app.CreateRawText(SKILLS, {
-			icon = 136105,
-			g = AllCategories.Skills,
-			RootCategory = "Skills",
-		}));
-	end
-
-	-- World Events
-	if AllCategories.WorldEvents then
-		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_7, {
-			icon = app.asset("Category_Event"),
-			description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
-			g = AllCategories.WorldEvents,
-			RootCategory = "World Events",
-		}));
-	end
-
-	---------------------------------------
-	-- M A R K E T   C A T E G O R I E S --
-	---------------------------------------
-	-- Black Market
-	if AllCategories.BlackMarket then
-		local blackMarket = AllCategories.BlackMarket[1];
-		blackMarket.RootCategory = "Black Market";
-		tinsert(g, blackMarket);
-	end
-
-	-- In-Game Store
-	if AllCategories.InGameShop then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, {
-			g = AllCategories.InGameShop,
-			RootCategory = "In-Game Shop",
-		}));
-	end
-
-	-- Promotions
-	if AllCategories.Promotions then
-		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
-			icon = app.asset("Category_Promo"),
-			description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
-			g = AllCategories.Promotions,
-			RootCategory = "Promotions",
-		}));
-	end
-
-	-- Trading Post
-	if AllCategories.TradingPost then
-		tinsert(g, app.CreateRawText(TRANSMOG_SOURCE_7, {
-			icon = app.asset("Category_TradingPost"),
-			g = AllCategories.TradingPost,
-			RootCategory = "Trading Post",
-			isMinilistHeader = true,
-		}));
+	for key,category in pairs(AllHiddenCategories) do
+		--print("Found Hidden Category:", key);
+		category.RootCategory = key;
 	end
 
 	-----------------------------------------
@@ -1445,15 +1270,11 @@ function app:GetDatabaseRoot()
 				keys[suffix] = window;
 			end
 		end
-		local categories = {};
 		for suffix,window in pairs(keys) do
-			tinsert(categories, app.CreateDynamicCategory(suffix, {
+			tinsert(g, app.CreateDynamicCategory(suffix, {
+				SortPriority = 100,
 				sourceIgnored = 1
 			}));
-		end
-		app.Sort(categories, app.SortDefaults.name);
-		for i,category in ipairs(categories) do
-			tinsert(g, category);
 		end
 	end
 
@@ -1468,6 +1289,7 @@ function app:GetDatabaseRoot()
 		r = app.FactionID,
 		collected = 1,
 		nmr = false,
+		SortPriority = 200,
 		OnUpdate = function(self)
 			self.lvl = app.Level;
 			if app.MODE_DEBUG then
@@ -1488,25 +1310,13 @@ function app:GetDatabaseRoot()
 	-- app.PrintDebugPrior("Ended Cache Prime")
 	-- app.PrintMemoryUsage()
 
-	-- Achievements
-	if AllCategories.Achievements then
-		local db = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, AllCategories.Achievements);
-		db.sourceIgnored = 1;	-- everything in this category is now cloned!
-		for _, o in ipairs(db.g) do
-			o.sourceIgnored = nil
-		end
-		tinsert(g, db);
-		app.CacheFields(db, true, "Achievements")
-		app.AssignChildren(db);
-		db.parent = rootData;
-	end
-
 	if app.IsRetail then
 		-- CRIEVE NOTE: This needs to be versioned at the very least before it can be enabled in classic land
 		-- Create Dynamic Groups Button
 		local dynamicHeader = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
 			icon = app.asset("Interface_CreateDynamic"),
 			OnUpdate = app.AlwaysShowUpdate,
+			SortPriority = 1000,
 			sourceIgnored = true,
 			-- ["OnClick"] = function(row, button)
 				-- could implement logic to auto-populate all dynamic groups like before... will see if people complain about individual generation
@@ -1699,8 +1509,11 @@ function app:GetDatabaseRoot()
 		-- app.PrintDebug("Cached data cache")
 		return rootData;
 	end
+	app.HandleEvent("OnHiddenDataCached", AllHiddenCategories);
 	app.HandleEvent("OnDataCached", AllCategories, rootData);
+	app.RemoveAllEventHandlers("OnHiddenDataCached");
 	app.RemoveAllEventHandlers("OnDataCached");
+	AllHiddenCategories = nil;
 	AllCategories = nil;
 	return rootData;
 end

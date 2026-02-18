@@ -23,7 +23,7 @@ app:CreateWindow("Sourceless", {
 			visible = true,
 			_nyi = true,
 		}));
-		self:AddEventHandler("OnDataCached", function(self, categories)
+		self:AddEventHandler("OnHiddenDataCached", function(self, categories)
 			self.data.g = categories.Sourceless;
 			app.CacheFields(self.data, true);
 			self:AssignChildren();

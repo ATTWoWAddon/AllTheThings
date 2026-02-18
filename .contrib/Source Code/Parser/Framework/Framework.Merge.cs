@@ -648,7 +648,7 @@ namespace ATT
             }
         }
 
-        static object ParseAsObject(LuaTable table)
+        public static object ParseAsObject(LuaTable table)
         {
             if (table.Keys.Count > 0)
             {

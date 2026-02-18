@@ -617,16 +617,6 @@ ifclassic = function(classicValue, value)
 	return value;
 end
 -- #endif
-local function ProcessProviderForRetailAsUncollectible(provider)
-	if provider then
-		if provider[1] == "i" then
-			-- TODO: If ya'll actually use Objectives some day I'd be thrilled,
-			-- but if not, this will move that stuff into uncollectible for ya!
-			local itemID = provider[2];
-			root(ROOTS.Uncollectible)[itemID] = { ["itemID"] = itemID };
-		end
-	end
-end
 
 local squishes = {};
 lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
@@ -1411,14 +1401,6 @@ end
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
-profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, t);
-	-- #if NOT ANYCLASSIC
-	bubbleDown({ ["requireSkill"] = skillID }, p);
-	-- #endif
-	root(ROOTS.Professions, p);
-	return p;
-end
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
 	return bubbleDown({ ["pvp"] = true }, t);
 end
@@ -1436,19 +1418,9 @@ qNYI = function (id, t)									-- Create a QUEST Object flagged with the NYI un
 end
 questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
 	t = struct("objectiveID", id, t);
-	if t then
-		-- #if NOT OBJECTIVES
-		-- ProcessProviderForRetailAsUncollectible(t.provider);
-		-- if t.providers then
-		-- 	for i,provider in ipairs(t.providers) do
-		-- 		ProcessProviderForRetailAsUncollectible(provider);
-		-- 	end
-		-- end
-		-- #endif
-		if t.itemID then
-			print("INCORRECT OBJECTIVE FORMAT", id, t.itemID);
-			print("Use a provider entry instead!");
-		end
+	if t and t.itemID then
+		print("INCORRECT OBJECTIVE FORMAT", id, t.itemID);
+		print("Use a provider entry instead!");
 	end
 	return t;
 end
@@ -1466,78 +1438,6 @@ recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
 end
 r = recipe;												-- Create a RECIPE Object (alternative shortcut)
-local function HQTCleanup(data)
-	if data.questID then
-		-- force quests under the HQT section to be the HQT type
-		data.type = "hqt"
-		return
-	end
-end
-local SpecialRoots = {
-	__DropG = function(g)
-		return bubbleDownFiltered({
-			-- keep API data from populating into NYI/Hidden quests
-			["_drop"]={"g"}
-		},FILTERFUNC_questID,g)
-	end,
-	__HiddenQuestTriggers = function(g)
-		return bubbleDownFiltered({
-			-- keep API data from populating into NYI/Hidden quests
-			["_drop"]={"g"}
-		},FILTERFUNC_questID, applyFunc(HQTCleanup, g))
-	end,
-}
-SpecialRoots[ROOTS.HiddenAchievementTriggers] = SpecialRoots.__DropG
-SpecialRoots[ROOTS.HiddenCurrencyTriggers] = SpecialRoots.__DropG
-SpecialRoots[ROOTS.HiddenQuestTriggers] = SpecialRoots.__HiddenQuestTriggers
-SpecialRoots[ROOTS.NeverImplemented] = SpecialRoots.__DropG
-root = function(category, g)							-- Create a ROOT CATEGORY Object
-	if not g then g = g or {}; end
-	-- special global handling for certain categories
-	if SpecialRoots[category] then g = SpecialRoots[category](g) end
-	local o = _[category];
-	if not o then
-		if isarray(g) then
-			o = g;
-		else
-			local isRef = true;
-			for key,value in pairs(g) do
-				if type(key) ~= "number" then
-					isRef = false;
-					break;
-				end
-			end
-			if isRef then
-				o = g;
-			else
-				o = { g };
-			end
-		end
-		_[category] = o;
-	else
-		if isarray(g) then
-			for i,t in ipairs(g) do
-				table.insert(o, t);
-			end
-		else
-			local isRef = true;
-			for key,value in pairs(g) do
-				if type(key) ~= "number" then
-					isRef = false;
-					break;
-				end
-			end
-			if isRef then
-				for key,value in pairs(g) do
-					o[key] = value;
-				end
-			else
-				table.insert(o, g);
-			end
-		end
-	end
-	return o;
-end
 sensemble = function(spellID, t)						-- Create an Ensemble directly from SpellID
 	local i = sp(spellID, t);
 	i.type = "ensembleSpellID"
@@ -1847,6 +1747,153 @@ TempForceMisc = function(t)
 	t.f = MISC
 	return t
 end
+
+-- Root Category Headers
+(function()
+-- Root constants
+-- Usage: ROOTS.[Constant]
+ROOTS = setmetatable({
+	["AchievementDB"] = "AchievementDB",
+	["Achievements"] = "Achievements",
+	["Arcantina"] = "Arcantina",
+	["BlackMarket"] = "BlackMarket",
+	["Character"] = "Character",
+	["Craftables"] = "Craftables",
+	["Delves"] = "Delves",
+	["ExpansionFeatures"] = "ExpansionFeatures",
+	["Factions"] = "Factions",
+	["GroupFinder"] = "GroupFinder",
+	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
+	["HiddenCurrencyTriggers"] = "HiddenCurrencyTriggers",
+	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
+	["Holidays"] = "Holidays",
+	["Housing"] = "Housing",
+	["InGameShop"] = "InGameShop",
+	["Instances"] = "Instances",
+	["ItemDB"] = "ItemDB",
+	["ItemDBConditional"] = "ItemDBConditional",
+	["NeverImplemented"] = "NeverImplemented",
+	["PVP"] = "PVP",
+	["PetBattles"] = "PetBattles",
+	["Professions"] = "Professions",
+	["Promotions"] = "Promotions",
+	["RecipeDB"] = "RecipeDB",
+	["SeasonOfDiscovery"] = "SeasonOfDiscovery",
+	["Secrets"] = "Secrets",
+	["Sourceless"] = "Sourceless",
+	["TradingPost"] = "TradingPost",
+	["Uncollectible"] = "Uncollectible",
+	["Unsorted"] = "Unsorted",
+	["WorldDrops"] = "WorldDrops",
+	["WorldEvents"] = "WorldEvents",
+	["Zones"] = "Zones",
+	--
+	["AprilFools"] = "Special_AprilFools",
+}, {
+	__index = function(t, category)
+		error("Attempting to reference ROOTS." .. category .. ", which is not a valid Root Category.");
+	end,
+});
+
+-- Root Data Processors
+local function HQTCleanup(data)
+	if data.questID then
+		-- force quests under the HQT section to be the HQT type
+		data.type = "hqt"
+		return
+	end
+end
+local function __DropG(g)
+	return bubbleDownFiltered({
+		-- keep API data from populating into NYI/Hidden quests
+		["_drop"]={"g"}
+	},FILTERFUNC_questID,g)
+end
+local function __HiddenQuestTriggers(g)
+	return applyFunc(HQTCleanup, __DropG(g))
+end
+local function ReturnArguments(...)
+	return ...;
+end
+local RootDataProcessors = setmetatable({
+	[ROOTS.HiddenAchievementTriggers] = __DropG,
+	[ROOTS.HiddenCurrencyTriggers] = __DropG,
+	[ROOTS.HiddenQuestTriggers] = __HiddenQuestTriggers,
+	[ROOTS.NeverImplemented] = __DropG
+}, {
+	__index = function(t, key) return ReturnArguments; end,
+});
+
+-- Connect data to a Root Category
+root = function(category, g)							-- Create a ROOT CATEGORY Object
+	g = RootDataProcessors[category](g or {});
+	local o = _[category];
+	if not o then
+		if isarray(g) then
+			o = g;
+		else
+			local isRef = true;
+			for key,value in pairs(g) do
+				if type(key) ~= "number" then
+					isRef = false;
+					break;
+				end
+			end
+			if isRef then
+				o = g;
+			else
+				o = { g };
+			end
+		end
+		_[category] = o;
+	else
+		if isarray(g) then
+			for i,t in ipairs(g) do
+				table.insert(o, t);
+			end
+		else
+			local isRef = true;
+			for key,value in pairs(g) do
+				if type(key) ~= "number" then
+					isRef = false;
+					break;
+				end
+			end
+			if isRef then
+				for key,value in pairs(g) do
+					o[key] = value;
+				end
+			else
+				table.insert(o, g);
+			end
+		end
+	end
+	return o;
+end
+profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
+	local p = prof(skillID, t);
+	-- #if NOT ANYCLASSIC
+	bubbleDown({ ["requireSkill"] = skillID }, p);
+	-- #endif
+	root(ROOTS.Professions, p);
+	return p;
+end
+
+-- Assign a Root Category Header
+local rootCategoryHeaders = {};
+RootCategoryHeaders = rootCategoryHeaders;	-- This is global, so that it can be found by Parser!
+assignRootCategoryHeader = function(priority, category, headerID, data)
+	if not headerID or type(headerID) ~= "number" then
+		print("ROOT CATEGORY: " .. category);
+		print("INVALID ROOT CATEGORY HEADER: You must pass a headerID into the createRootCategoryHeader(priority,category,headerID,data) function.");
+	elseif rootCategoryHeaders[category] then
+		error("ERROR: ROOT CATEGORY HEADER " .. category .. " ALREADY ASSIGNED. Please double check that the root category definitions are unique.");
+	end
+	data = n(headerID, data or {});
+	data.SortPriority = priority;
+	rootCategoryHeaders[category] = data;
+end
+end)();
 
 -- Create a String.
 (function()

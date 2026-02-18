@@ -18,7 +18,7 @@ app:CreateWindow("Hidden Quest Triggers", {
 			visible = true,
 			_hqt = true,
 		}));
-		self:AddEventHandler("OnDataCached", function(self, categories)
+		self:AddEventHandler("OnHiddenDataCached", function(self, categories)
 			self.data.g = categories.HiddenQuestTriggers;
 			app.CacheFields(self.data, true);
 			self:AssignChildren();
