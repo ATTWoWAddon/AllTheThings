@@ -16765,6 +16765,504 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
+			n(SEASON_GALACTIC, {
+				-- All of these items were variants for sets: Catalyst Gladiator, Catalyst Elite, Special effect Gladiator, Special effect Elite
+				-- They were removed during alpha development of Midnight and it is impossible to tell which one is which now
+				cl(DEATHKNIGHT, {
+					itemsource(296595),	-- Relentless Rider's Drape
+					itemsource(296596),	-- Relentless Rider's Drape
+					itemsource(296597),	-- Relentless Rider's Drape
+					itemsource(296598),	-- Relentless Rider's Drape
+					itemsource(296607),	-- Relentless Rider's Manacles
+					itemsource(296608),	-- Relentless Rider's Manacles
+					itemsource(296609),	-- Relentless Rider's Manacles
+					itemsource(296610),	-- Relentless Rider's Manacles
+					itemsource(296619),	-- Relentless Rider's Chain
+					itemsource(296620),	-- Relentless Rider's Chain
+					itemsource(296621),	-- Relentless Rider's Chain
+					itemsource(296622),	-- Relentless Rider's Chain
+					itemsource(296631),	-- Relentless Rider's Dreadthorns
+					itemsource(296632),	-- Relentless Rider's Dreadthorns
+					itemsource(296633),	-- Relentless Rider's Dreadthorns
+					itemsource(296634),	-- Relentless Rider's Dreadthorns
+					itemsource(296643),	-- Relentless Rider's Legguards
+					itemsource(296644),	-- Relentless Rider's Legguards
+					itemsource(296645),	-- Relentless Rider's Legguards
+					itemsource(296646),	-- Relentless Rider's Legguards
+					itemsource(296655),	-- Relentless Rider's Crown
+					itemsource(296656),	-- Relentless Rider's Crown
+					itemsource(296657),	-- Relentless Rider's Crown
+					itemsource(296658),	-- Relentless Rider's Crown
+					itemsource(296667),	-- Relentless Rider's Bonegrasps
+					itemsource(296668),	-- Relentless Rider's Bonegrasps
+					itemsource(296669),	-- Relentless Rider's Bonegrasps
+					itemsource(296670),	-- Relentless Rider's Bonegrasps
+					itemsource(296679),	-- Relentless Rider's Stompers
+					itemsource(296680),	-- Relentless Rider's Stompers
+					itemsource(296681),	-- Relentless Rider's Stompers
+					itemsource(296682),	-- Relentless Rider's Stompers
+					itemsource(296691),	-- Relentless Rider's Cuirass
+					itemsource(296692),	-- Relentless Rider's Cuirass
+					itemsource(296693),	-- Relentless Rider's Cuirass
+					itemsource(296694),	-- Relentless Rider's Cuirass
+				}),
+				cl(DEMONHUNTER, {
+					itemsource(297351),	-- Devouring Reaver's Drape
+					itemsource(297352),	-- Devouring Reaver's Drape
+					itemsource(297353),	-- Devouring Reaver's Drape
+					itemsource(297354),	-- Devouring Reaver's Drape
+					itemsource(297363),	-- Devouring Reaver's Support Straps
+					itemsource(297364),	-- Devouring Reaver's Support Straps
+					itemsource(297365),	-- Devouring Reaver's Support Straps
+					itemsource(297366),	-- Devouring Reaver's Support Straps
+					itemsource(297375),	-- Devouring Reaver's Emblem
+					itemsource(297376),	-- Devouring Reaver's Emblem
+					itemsource(297377),	-- Devouring Reaver's Emblem
+					itemsource(297378),	-- Devouring Reaver's Emblem
+					itemsource(297387),	-- Devouring Reaver's Exhaustplates
+					itemsource(297388),	-- Devouring Reaver's Exhaustplates
+					itemsource(297389),	-- Devouring Reaver's Exhaustplates
+					itemsource(297390),	-- Devouring Reaver's Exhaustplates
+					itemsource(297399),	-- Devouring Reaver's Pistons
+					itemsource(297400),	-- Devouring Reaver's Pistons
+					itemsource(297401),	-- Devouring Reaver's Pistons
+					itemsource(297402),	-- Devouring Reaver's Pistons
+					itemsource(297411),	-- Devouring Reaver's Intake
+					itemsource(297412),	-- Devouring Reaver's Intake
+					itemsource(297413),	-- Devouring Reaver's Intake
+					itemsource(297414),	-- Devouring Reaver's Intake
+					itemsource(297423),	-- Devouring Reaver's Essence Grips
+					itemsource(297424),	-- Devouring Reaver's Essence Grips
+					itemsource(297425),	-- Devouring Reaver's Essence Grips
+					itemsource(297426),	-- Devouring Reaver's Essence Grips
+					itemsource(297435),	-- Devouring Reaver's Soul Flatteners
+					itemsource(297436),	-- Devouring Reaver's Soul Flatteners
+					itemsource(297437),	-- Devouring Reaver's Soul Flatteners
+					itemsource(297438),	-- Devouring Reaver's Soul Flatteners
+					itemsource(297447),	-- Devouring Reaver's Engine
+					itemsource(297448),	-- Devouring Reaver's Engine
+					itemsource(297449),	-- Devouring Reaver's Engine
+					itemsource(297450),	-- Devouring Reaver's Engine
+				}),
+				cl(DRUID, {
+					itemsource(297243),	-- Leafdrape of the Luminous Bloom
+					itemsource(297244),	-- Leafdrape of the Luminous Bloom
+					itemsource(297245),	-- Leafdrape of the Luminous Bloom
+					itemsource(297246),	-- Leafdrape of the Luminous Bloom
+					itemsource(297255),	-- Bindings of the Luminous Bloom
+					itemsource(297256),	-- Bindings of the Luminous Bloom
+					itemsource(297257),	-- Bindings of the Luminous Bloom
+					itemsource(297258),	-- Bindings of the Luminous Bloom
+					itemsource(297267),	-- Barksash of the Luminous Bloom
+					itemsource(297268),	-- Barksash of the Luminous Bloom
+					itemsource(297269),	-- Barksash of the Luminous Bloom
+					itemsource(297270),	-- Barksash of the Luminous Bloom
+					itemsource(297279),	-- Seedpods of the Luminous Bloom
+					itemsource(297280),	-- Seedpods of the Luminous Bloom
+					itemsource(297281),	-- Seedpods of the Luminous Bloom
+					itemsource(297282),	-- Seedpods of the Luminous Bloom
+					itemsource(297291),	-- Phloemwraps of the Luminous Bloom
+					itemsource(297292),	-- Phloemwraps of the Luminous Bloom
+					itemsource(297293),	-- Phloemwraps of the Luminous Bloom
+					itemsource(297294),	-- Phloemwraps of the Luminous Bloom
+					itemsource(297303),	-- Branches of the Luminous Bloom
+					itemsource(297304),	-- Branches of the Luminous Bloom
+					itemsource(297305),	-- Branches of the Luminous Bloom
+					itemsource(297306),	-- Branches of the Luminous Bloom
+					itemsource(297315),	-- Arbortenders of the Luminous Bloom
+					itemsource(297316),	-- Arbortenders of the Luminous Bloom
+					itemsource(297317),	-- Arbortenders of the Luminous Bloom
+					itemsource(297318),	-- Arbortenders of the Luminous Bloom
+					itemsource(297327),	-- Rootslippers of the Luminous Bloom
+					itemsource(297328),	-- Rootslippers of the Luminous Bloom
+					itemsource(297329),	-- Rootslippers of the Luminous Bloom
+					itemsource(297330),	-- Rootslippers of the Luminous Bloom
+					itemsource(297339),	-- Trunk of the Luminous Bloom
+					itemsource(297340),	-- Trunk of the Luminous Bloom
+					itemsource(297341),	-- Trunk of the Luminous Bloom
+					itemsource(297342),	-- Trunk of the Luminous Bloom
+				}),
+				cl(EVOKER, {
+					itemsource(296919),	-- Shroud of the Black Talon
+					itemsource(296920),	-- Shroud of the Black Talon
+					itemsource(296921),	-- Shroud of the Black Talon
+					itemsource(296922),	-- Shroud of the Black Talon
+					itemsource(296931),	-- Bracers of the Black Talon
+					itemsource(296932),	-- Bracers of the Black Talon
+					itemsource(296933),	-- Bracers of the Black Talon
+					itemsource(296934),	-- Bracers of the Black Talon
+					itemsource(296943),	-- Girdle of the Black Talon
+					itemsource(296944),	-- Girdle of the Black Talon
+					itemsource(296945),	-- Girdle of the Black Talon
+					itemsource(296946),	-- Girdle of the Black Talon
+					itemsource(296955),	-- Beacons of the Black Talon
+					itemsource(296956),	-- Beacons of the Black Talon
+					itemsource(296957),	-- Beacons of the Black Talon
+					itemsource(296958),	-- Beacons of the Black Talon
+					itemsource(296967),	-- Greaves of the Black Talon
+					itemsource(296968),	-- Greaves of the Black Talon
+					itemsource(296969),	-- Greaves of the Black Talon
+					itemsource(296970),	-- Greaves of the Black Talon
+					itemsource(296979),	-- Hornhelm of the Black Talon
+					itemsource(296980),	-- Hornhelm of the Black Talon
+					itemsource(296981),	-- Hornhelm of the Black Talon
+					itemsource(296982),	-- Hornhelm of the Black Talon
+					itemsource(296991),	-- Enforcer's Grips of the Black Talon
+					itemsource(296992),	-- Enforcer's Grips of the Black Talon
+					itemsource(296993),	-- Enforcer's Grips of the Black Talon
+					itemsource(296994),	-- Enforcer's Grips of the Black Talon
+					itemsource(297003),	-- Spelltreads of the Black Talon
+					itemsource(297004),	-- Spelltreads of the Black Talon
+					itemsource(297005),	-- Spelltreads of the Black Talon
+					itemsource(297006),	-- Spelltreads of the Black Talon
+					itemsource(297015),	-- Frenzyward of the Black Talon
+					itemsource(297016),	-- Frenzyward of the Black Talon
+					itemsource(297017),	-- Frenzyward of the Black Talon
+					itemsource(297018),	-- Frenzyward of the Black Talon
+				}),
+				cl(HUNTER, {
+					itemsource(296811),	-- Primal Sentry's Spine
+					itemsource(296812),	-- Primal Sentry's Spine
+					itemsource(296813),	-- Primal Sentry's Spine
+					itemsource(296814),	-- Primal Sentry's Spine
+					itemsource(296823),	-- Primal Sentry's Wound Stanchers
+					itemsource(296824),	-- Primal Sentry's Wound Stanchers
+					itemsource(296825),	-- Primal Sentry's Wound Stanchers
+					itemsource(296826),	-- Primal Sentry's Wound Stanchers
+					itemsource(296835),	-- Primal Sentry's Cinch
+					itemsource(296836),	-- Primal Sentry's Cinch
+					itemsource(296837),	-- Primal Sentry's Cinch
+					itemsource(296838),	-- Primal Sentry's Cinch
+					itemsource(296847),	-- Primal Sentry's Trophies
+					itemsource(296848),	-- Primal Sentry's Trophies
+					itemsource(296849),	-- Primal Sentry's Trophies
+					itemsource(296850),	-- Primal Sentry's Trophies
+					itemsource(296859),	-- Primal Sentry's Legguards
+					itemsource(296860),	-- Primal Sentry's Legguards
+					itemsource(296861),	-- Primal Sentry's Legguards
+					itemsource(296862),	-- Primal Sentry's Legguards
+					itemsource(296871),	-- Primal Sentry's Maw
+					itemsource(296872),	-- Primal Sentry's Maw
+					itemsource(296873),	-- Primal Sentry's Maw
+					itemsource(296874),	-- Primal Sentry's Maw
+					itemsource(296883),	-- Primal Sentry's Talonguards
+					itemsource(296884),	-- Primal Sentry's Talonguards
+					itemsource(296885),	-- Primal Sentry's Talonguards
+					itemsource(296886),	-- Primal Sentry's Talonguards
+					itemsource(296895),	-- Primal Sentry's Swiftsteps
+					itemsource(296896),	-- Primal Sentry's Swiftsteps
+					itemsource(296897),	-- Primal Sentry's Swiftsteps
+					itemsource(296898),	-- Primal Sentry's Swiftsteps
+					itemsource(296907),	-- Primal Sentry's Scaleplate
+					itemsource(296908),	-- Primal Sentry's Scaleplate
+					itemsource(296909),	-- Primal Sentry's Scaleplate
+					itemsource(296910),	-- Primal Sentry's Scaleplate
+				}),
+				cl(MAGE, {
+					itemsource(297675),	-- Voidbreaker's Encryption
+					itemsource(297676),	-- Voidbreaker's Encryption
+					itemsource(297677),	-- Voidbreaker's Encryption
+					itemsource(297678),	-- Voidbreaker's Encryption
+					itemsource(297687),	-- Voidbreaker's Bracers
+					itemsource(297688),	-- Voidbreaker's Bracers
+					itemsource(297689),	-- Voidbreaker's Bracers
+					itemsource(297690),	-- Voidbreaker's Bracers
+					itemsource(297699),	-- Voidbreaker's Sage Cord
+					itemsource(297700),	-- Voidbreaker's Sage Cord
+					itemsource(297701),	-- Voidbreaker's Sage Cord
+					itemsource(297702),	-- Voidbreaker's Sage Cord
+					itemsource(297711),	-- Voidbreaker's Leyline Nexi
+					itemsource(297712),	-- Voidbreaker's Leyline Nexi
+					itemsource(297713),	-- Voidbreaker's Leyline Nexi
+					itemsource(297714),	-- Voidbreaker's Leyline Nexi
+					itemsource(297723),	-- Voidbreaker's Britches
+					itemsource(297724),	-- Voidbreaker's Britches
+					itemsource(297725),	-- Voidbreaker's Britches
+					itemsource(297726),	-- Voidbreaker's Britches
+					itemsource(297735),	-- Voidbreaker's Veil
+					itemsource(297736),	-- Voidbreaker's Veil
+					itemsource(297737),	-- Voidbreaker's Veil
+					itemsource(297738),	-- Voidbreaker's Veil
+					itemsource(297747),	-- Voidbreaker's Gloves
+					itemsource(297748),	-- Voidbreaker's Gloves
+					itemsource(297749),	-- Voidbreaker's Gloves
+					itemsource(297750),	-- Voidbreaker's Gloves
+					itemsource(297759),	-- Voidbreaker's Treads
+					itemsource(297760),	-- Voidbreaker's Treads
+					itemsource(297761),	-- Voidbreaker's Treads
+					itemsource(297762),	-- Voidbreaker's Treads
+					itemsource(297771),	-- Voidbreaker's Robe
+					itemsource(297772),	-- Voidbreaker's Robe
+					itemsource(297773),	-- Voidbreaker's Robe
+					itemsource(297774),	-- Voidbreaker's Robe
+				}),
+				cl(MONK, {
+					itemsource(297135),	-- Windwrap of Ra-den's Chosen
+					itemsource(297136),	-- Windwrap of Ra-den's Chosen
+					itemsource(297137),	-- Windwrap of Ra-den's Chosen
+					itemsource(297138),	-- Windwrap of Ra-den's Chosen
+					itemsource(297147),	-- Strikeguards of Ra-den's Chosen
+					itemsource(297148),	-- Strikeguards of Ra-den's Chosen
+					itemsource(297149),	-- Strikeguards of Ra-den's Chosen
+					itemsource(297150),	-- Strikeguards of Ra-den's Chosen
+					itemsource(297159),	-- Stormsigil of Ra-den's Chosen
+					itemsource(297160),	-- Stormsigil of Ra-den's Chosen
+					itemsource(297161),	-- Stormsigil of Ra-den's Chosen
+					itemsource(297162),	-- Stormsigil of Ra-den's Chosen
+					itemsource(297171),	-- Aurastones of Ra-den's Chosen
+					itemsource(297172),	-- Aurastones of Ra-den's Chosen
+					itemsource(297173),	-- Aurastones of Ra-den's Chosen
+					itemsource(297174),	-- Aurastones of Ra-den's Chosen
+					itemsource(297183),	-- Swiftsweepers of Ra-den's Chosen
+					itemsource(297184),	-- Swiftsweepers of Ra-den's Chosen
+					itemsource(297185),	-- Swiftsweepers of Ra-den's Chosen
+					itemsource(297186),	-- Swiftsweepers of Ra-den's Chosen
+					itemsource(297195),	-- Fearsome Visage of Ra-den's Chosen
+					itemsource(297196),	-- Fearsome Visage of Ra-den's Chosen
+					itemsource(297197),	-- Fearsome Visage of Ra-den's Chosen
+					itemsource(297198),	-- Fearsome Visage of Ra-den's Chosen
+					itemsource(297207),	-- Thunderfists of Ra-den's Chosen
+					itemsource(297208),	-- Thunderfists of Ra-den's Chosen
+					itemsource(297209),	-- Thunderfists of Ra-den's Chosen
+					itemsource(297210),	-- Thunderfists of Ra-den's Chosen
+					itemsource(297219),	-- Storm Crashers of Ra-den's Chosen
+					itemsource(297220),	-- Storm Crashers of Ra-den's Chosen
+					itemsource(297221),	-- Storm Crashers of Ra-den's Chosen
+					itemsource(297222),	-- Storm Crashers of Ra-den's Chosen
+					itemsource(297231),	-- Battle Garb of Ra-den's Chosen
+					itemsource(297232),	-- Battle Garb of Ra-den's Chosen
+					itemsource(297233),	-- Battle Garb of Ra-den's Chosen
+					itemsource(297234),	-- Battle Garb of Ra-den's Chosen
+				}),
+				cl(PALADIN, {
+					itemsource(296487),	-- Luminant Verdict's Greatmantle
+					itemsource(296488),	-- Luminant Verdict's Greatmantle
+					itemsource(296489),	-- Luminant Verdict's Greatmantle
+					itemsource(296490),	-- Luminant Verdict's Greatmantle
+					itemsource(296499),	-- Luminant Verdict's Cuffs
+					itemsource(296500),	-- Luminant Verdict's Cuffs
+					itemsource(296501),	-- Luminant Verdict's Cuffs
+					itemsource(296502),	-- Luminant Verdict's Cuffs
+					itemsource(296511),	-- Luminant Verdict's Undaunted Emblem
+					itemsource(296512),	-- Luminant Verdict's Undaunted Emblem
+					itemsource(296513),	-- Luminant Verdict's Undaunted Emblem
+					itemsource(296514),	-- Luminant Verdict's Undaunted Emblem
+					itemsource(296523),	-- Luminant Verdict's Providence Watch
+					itemsource(296524),	-- Luminant Verdict's Providence Watch
+					itemsource(296525),	-- Luminant Verdict's Providence Watch
+					itemsource(296526),	-- Luminant Verdict's Providence Watch
+					itemsource(296535),	-- Luminant Verdict's Greaves
+					itemsource(296536),	-- Luminant Verdict's Greaves
+					itemsource(296537),	-- Luminant Verdict's Greaves
+					itemsource(296538),	-- Luminant Verdict's Greaves
+					itemsource(296547),	-- Luminant Verdict's Unwavering Gaze
+					itemsource(296548),	-- Luminant Verdict's Unwavering Gaze
+					itemsource(296549),	-- Luminant Verdict's Unwavering Gaze
+					itemsource(296550),	-- Luminant Verdict's Unwavering Gaze
+					itemsource(296559),	-- Luminant Verdict's Gauntlets
+					itemsource(296560),	-- Luminant Verdict's Gauntlets
+					itemsource(296561),	-- Luminant Verdict's Gauntlets
+					itemsource(296562),	-- Luminant Verdict's Gauntlets
+					itemsource(296571),	-- Luminant Verdict's Sabatons
+					itemsource(296572),	-- Luminant Verdict's Sabatons
+					itemsource(296573),	-- Luminant Verdict's Sabatons
+					itemsource(296574),	-- Luminant Verdict's Sabatons
+					itemsource(296583),	-- Luminant Verdict's Divine Warplate
+					itemsource(296584),	-- Luminant Verdict's Divine Warplate
+					itemsource(296585),	-- Luminant Verdict's Divine Warplate
+					itemsource(296586),	-- Luminant Verdict's Divine Warplate
+				}),
+				cl(PRIEST, {
+					itemsource(297567),	-- Blind Oath's Shroud
+					itemsource(297568),	-- Blind Oath's Shroud
+					itemsource(297569),	-- Blind Oath's Shroud
+					itemsource(297570),	-- Blind Oath's Shroud
+					itemsource(297579),	-- Blind Oath's Wraps
+					itemsource(297580),	-- Blind Oath's Wraps
+					itemsource(297581),	-- Blind Oath's Wraps
+					itemsource(297582),	-- Blind Oath's Wraps
+					itemsource(297591),	-- Blind Oath's Jeweled Sash
+					itemsource(297592),	-- Blind Oath's Jeweled Sash
+					itemsource(297593),	-- Blind Oath's Jeweled Sash
+					itemsource(297594),	-- Blind Oath's Jeweled Sash
+					itemsource(297603),	-- Blind Oath's Seraphguards
+					itemsource(297604),	-- Blind Oath's Seraphguards
+					itemsource(297605),	-- Blind Oath's Seraphguards
+					itemsource(297606),	-- Blind Oath's Seraphguards
+					itemsource(297615),	-- Blind Oath's Leggings
+					itemsource(297616),	-- Blind Oath's Leggings
+					itemsource(297617),	-- Blind Oath's Leggings
+					itemsource(297618),	-- Blind Oath's Leggings
+					itemsource(297627),	-- Blind Oath's Winged Crest
+					itemsource(297628),	-- Blind Oath's Winged Crest
+					itemsource(297629),	-- Blind Oath's Winged Crest
+					itemsource(297630),	-- Blind Oath's Winged Crest
+					itemsource(297639),	-- Blind Oath's Touch
+					itemsource(297640),	-- Blind Oath's Touch
+					itemsource(297641),	-- Blind Oath's Touch
+					itemsource(297642),	-- Blind Oath's Touch
+					itemsource(297651),	-- Blind Oath's Slippers
+					itemsource(297652),	-- Blind Oath's Slippers
+					itemsource(297653),	-- Blind Oath's Slippers
+					itemsource(297654),	-- Blind Oath's Slippers
+					itemsource(297663),	-- Blind Oath's Raiment
+					itemsource(297664),	-- Blind Oath's Raiment
+					itemsource(297665),	-- Blind Oath's Raiment
+					itemsource(297666),	-- Blind Oath's Raiment
+				}),
+				cl(ROGUE, {
+					itemsource(297027),	-- Disappearing Cloth of the Grim Jest
+					itemsource(297028),	-- Disappearing Cloth of the Grim Jest
+					itemsource(297029),	-- Disappearing Cloth of the Grim Jest
+					itemsource(297030),	-- Disappearing Cloth of the Grim Jest
+					itemsource(297039),	-- Trick Bracers of the Grim Jest
+					itemsource(297040),	-- Trick Bracers of the Grim Jest
+					itemsource(297041),	-- Trick Bracers of the Grim Jest
+					itemsource(297042),	-- Trick Bracers of the Grim Jest
+					itemsource(297051),	-- Toolbelt of the Grim Jest
+					itemsource(297052),	-- Toolbelt of the Grim Jest
+					itemsource(297053),	-- Toolbelt of the Grim Jest
+					itemsource(297054),	-- Toolbelt of the Grim Jest
+					itemsource(297063),	-- Venom Casks of the Grim Jest
+					itemsource(297064),	-- Venom Casks of the Grim Jest
+					itemsource(297065),	-- Venom Casks of the Grim Jest
+					itemsource(297066),	-- Venom Casks of the Grim Jest
+					itemsource(297075),	-- Blade Holsters of the Grim Jest
+					itemsource(297076),	-- Blade Holsters of the Grim Jest
+					itemsource(297077),	-- Blade Holsters of the Grim Jest
+					itemsource(297078),	-- Blade Holsters of the Grim Jest
+					itemsource(297087),	-- Masquerade of the Grim Jest
+					itemsource(297088),	-- Masquerade of the Grim Jest
+					itemsource(297089),	-- Masquerade of the Grim Jest
+					itemsource(297090),	-- Masquerade of the Grim Jest
+					itemsource(297099),	-- Sleight of Hand of the Grim Jest
+					itemsource(297100),	-- Sleight of Hand of the Grim Jest
+					itemsource(297101),	-- Sleight of Hand of the Grim Jest
+					itemsource(297102),	-- Sleight of Hand of the Grim Jest
+					itemsource(297111),	-- Balancing Boots of the Grim Jest
+					itemsource(297112),	-- Balancing Boots of the Grim Jest
+					itemsource(297113),	-- Balancing Boots of the Grim Jest
+					itemsource(297114),	-- Balancing Boots of the Grim Jest
+					itemsource(297123),	-- Fantastic Finery of the Grim Jest
+					itemsource(297124),	-- Fantastic Finery of the Grim Jest
+					itemsource(297125),	-- Fantastic Finery of the Grim Jest
+					itemsource(297126),	-- Fantastic Finery of the Grim Jest
+				}),
+				cl(SHAMAN, {
+					itemsource(296703),	-- Guardian of the Primal Core
+					itemsource(296704),	-- Guardian of the Primal Core
+					itemsource(296705),	-- Guardian of the Primal Core
+					itemsource(296706),	-- Guardian of the Primal Core
+					itemsource(296715),	-- Cuffs of the Primal Core
+					itemsource(296716),	-- Cuffs of the Primal Core
+					itemsource(296717),	-- Cuffs of the Primal Core
+					itemsource(296718),	-- Cuffs of the Primal Core
+					itemsource(296727),	-- Ceinture of the Primal Core
+					itemsource(296728),	-- Ceinture of the Primal Core
+					itemsource(296729),	-- Ceinture of the Primal Core
+					itemsource(296730),	-- Ceinture of the Primal Core
+					itemsource(296739),	-- Tempests of the Primal Core
+					itemsource(296740),	-- Tempests of the Primal Core
+					itemsource(296741),	-- Tempests of the Primal Core
+					itemsource(296742),	-- Tempests of the Primal Core
+					itemsource(296750),	-- Leggings of the Primal Core
+					itemsource(296751),	-- Leggings of the Primal Core
+					itemsource(296756),	-- Leggings of the Primal Core
+					itemsource(296757),	-- Leggings of the Primal Core
+					itemsource(296763),	-- Locus of the Primal Core
+					itemsource(296764),	-- Locus of the Primal Core
+					itemsource(296765),	-- Locus of the Primal Core
+					itemsource(296766),	-- Locus of the Primal Core
+					itemsource(296775),	-- Earthgrips of the Primal Core
+					itemsource(296776),	-- Earthgrips of the Primal Core
+					itemsource(296777),	-- Earthgrips of the Primal Core
+					itemsource(296778),	-- Earthgrips of the Primal Core
+					itemsource(296787),	-- Sollerets of the Primal Core
+					itemsource(296788),	-- Sollerets of the Primal Core
+					itemsource(296789),	-- Sollerets of the Primal Core
+					itemsource(296790),	-- Sollerets of the Primal Core
+					itemsource(296798),	-- Embrace of the Primal Core
+					itemsource(296799),	-- Embrace of the Primal Core
+					itemsource(296804),	-- Embrace of the Primal Core
+					itemsource(296805),	-- Embrace of the Primal Core
+				}),
+				cl(WARLOCK, {
+					itemsource(297459),	-- Abyssal Immolator's Ritual Mantle
+					itemsource(297460),	-- Abyssal Immolator's Ritual Mantle
+					itemsource(297461),	-- Abyssal Immolator's Ritual Mantle
+					itemsource(297462),	-- Abyssal Immolator's Ritual Mantle
+					itemsource(297471),	-- Abyssal Immolator's Shackles
+					itemsource(297472),	-- Abyssal Immolator's Shackles
+					itemsource(297473),	-- Abyssal Immolator's Shackles
+					itemsource(297474),	-- Abyssal Immolator's Shackles
+					itemsource(297483),	-- Abyssal Immolator's Blazing Core
+					itemsource(297484),	-- Abyssal Immolator's Blazing Core
+					itemsource(297485),	-- Abyssal Immolator's Blazing Core
+					itemsource(297486),	-- Abyssal Immolator's Blazing Core
+					itemsource(297495),	-- Abyssal Immolator's Fury
+					itemsource(297496),	-- Abyssal Immolator's Fury
+					itemsource(297497),	-- Abyssal Immolator's Fury
+					itemsource(297498),	-- Abyssal Immolator's Fury
+					itemsource(297507),	-- Abyssal Immolator's Pillars
+					itemsource(297508),	-- Abyssal Immolator's Pillars
+					itemsource(297509),	-- Abyssal Immolator's Pillars
+					itemsource(297510),	-- Abyssal Immolator's Pillars
+					itemsource(297519),	-- Abyssal Immolator's Smoldering Flames
+					itemsource(297520),	-- Abyssal Immolator's Smoldering Flames
+					itemsource(297521),	-- Abyssal Immolator's Smoldering Flames
+					itemsource(297522),	-- Abyssal Immolator's Smoldering Flames
+					itemsource(297531),	-- Abyssal Immolator's Grasps
+					itemsource(297532),	-- Abyssal Immolator's Grasps
+					itemsource(297533),	-- Abyssal Immolator's Grasps
+					itemsource(297534),	-- Abyssal Immolator's Grasps
+					itemsource(297543),	-- Abyssal Immolator's Ashwalkers
+					itemsource(297544),	-- Abyssal Immolator's Ashwalkers
+					itemsource(297545),	-- Abyssal Immolator's Ashwalkers
+					itemsource(297546),	-- Abyssal Immolator's Ashwalkers
+					itemsource(297555),	-- Abyssal Immolator's Dreadrobe
+					itemsource(297556),	-- Abyssal Immolator's Dreadrobe
+					itemsource(297557),	-- Abyssal Immolator's Dreadrobe
+					itemsource(297558),	-- Abyssal Immolator's Dreadrobe
+				}),
+				cl(WARRIOR, {
+					itemsource(296379),	-- Night Ender's Greatmantle
+					itemsource(296380),	-- Night Ender's Greatmantle
+					itemsource(296381),	-- Night Ender's Greatmantle
+					itemsource(296382),	-- Night Ender's Greatmantle
+					itemsource(296391),	-- Night Ender's Warbands
+					itemsource(296392),	-- Night Ender's Warbands
+					itemsource(296393),	-- Night Ender's Warbands
+					itemsource(296394),	-- Night Ender's Warbands
+					itemsource(296403),	-- Night Ender's Girdle
+					itemsource(296404),	-- Night Ender's Girdle
+					itemsource(296405),	-- Night Ender's Girdle
+					itemsource(296406),	-- Night Ender's Girdle
+					itemsource(296415),	-- Night Ender's Pauldrons
+					itemsource(296416),	-- Night Ender's Pauldrons
+					itemsource(296417),	-- Night Ender's Pauldrons
+					itemsource(296418),	-- Night Ender's Pauldrons
+					itemsource(296427),	-- Night Ender's Chausses
+					itemsource(296428),	-- Night Ender's Chausses
+					itemsource(296429),	-- Night Ender's Chausses
+					itemsource(296430),	-- Night Ender's Chausses
+					itemsource(296439),	-- Night Ender's Tusks
+					itemsource(296440),	-- Night Ender's Tusks
+					itemsource(296441),	-- Night Ender's Tusks
+					itemsource(296442),	-- Night Ender's Tusks
+					itemsource(296451),	-- Night Ender's Fists
+					itemsource(296452),	-- Night Ender's Fists
+					itemsource(296453),	-- Night Ender's Fists
+					itemsource(296454),	-- Night Ender's Fists
+					itemsource(296463),	-- Night Ender's Greatboots
+					itemsource(296464),	-- Night Ender's Greatboots
+					itemsource(296465),	-- Night Ender's Greatboots
+					itemsource(296466),	-- Night Ender's Greatboots
+					itemsource(296475),	-- Night Ender's Breastplate
+					itemsource(296476),	-- Night Ender's Breastplate
+					itemsource(296477),	-- Night Ender's Breastplate
+					itemsource(296478),	-- Night Ender's Breastplate
+				}),
+			}),
 		})),
 	}),
 }));
