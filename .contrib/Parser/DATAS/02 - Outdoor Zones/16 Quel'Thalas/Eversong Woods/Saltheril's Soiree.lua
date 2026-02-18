@@ -7,7 +7,7 @@ local BRIMMING_ARCANA = 3379;
 
 SALTHERILS_HAVEN = createHeader({
 	readable = "Saltheril's Soiree",
-	--icon = ,
+	icon = 132809,
 	text = {
 		en = "Saltheril's Soiree",
 	},

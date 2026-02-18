@@ -2343,7 +2343,7 @@ i(257085, 1261155);	-- Augmented Stormray
 i(262707, 1269279);	-- Blooded Snapvine
 i(260894, 1266997);	-- Cabbage Pseudoshell
 i(257156, 1261323);	-- Cerulean Hawkstrider
-i(257156, 1261302);	-- Cobalt Dragonhawk
+i(257147, 1261302);	-- Cobalt Dragonhawk
 i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
 i(263452, 1270523);	-- Comfy Silvermoon Flying Quilt
 i(0, 1261334);	-- Contained Stormarion Defender
