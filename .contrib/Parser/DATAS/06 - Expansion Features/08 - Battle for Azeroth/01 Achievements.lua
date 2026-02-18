@@ -116,9 +116,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				title(377),	-- <Name>, Conqueror of Azeroth
 			},
 		})),
-		un(BLACK_MARKET, ach(14183, {	-- Conspicuous Consumption
+		ach(14183, {	-- Conspicuous Consumption
 			["provider"] = { "i", 163042 },	-- Mighty Caravan Brutosaur
-		})),
+			["timeline"] = { ADDED_8_3_0 },
+			-- #if AFTER 9.0.1
+			["u"] = BLACK_MARKET,
+			-- #endif
+		}),
 		ach(41209, {	-- Dressed to Kill: Battle for Azeroth
 			["timeline"] = { ADDED_11_0_7 },
 			-- Meta Achievement
