@@ -1007,6 +1007,10 @@ ihqt(257601, 93201);				-- Skill Issue: Tailoring
 ihqt(250922, 92371);				-- Whisper of the Loa: Leatherworking
 ihqt(250924, 92372);				-- Whisper of the Loa: Mining
 ihqt(250923, 92373);				-- Whisper of the Loa: Skinning
+ihqt(250445, 92186);				-- Echo of Abundance: Enchanting
+ihqt(250443, 92174);				-- Echo of Abundance: Herbalism
+ihqt(250444, 92187);				-- Echo of Abundance: Mining
+ihqt(250360, 92188);				-- Echo of Abundance: Skinning
 
 ------------
 -- UNUSED --

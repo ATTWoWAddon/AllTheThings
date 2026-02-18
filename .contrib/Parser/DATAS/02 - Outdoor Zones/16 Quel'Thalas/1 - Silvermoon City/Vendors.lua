@@ -10,10 +10,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(261303, {	-- Agmera
 				["coord"] = { 42.1, 58.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
-					i(259996, {	-- Quel'Thalas Equipment Chest
-						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },	-- TODO: fix timeline if not up with season
-					}),
+					-- i(259996, {	-- Quel'Thalas Equipment Chest
+					-- 	["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
+					-- 	["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+					-- 	["sym"] = {
+					-- 		-- All MID Season 1 dungeons (Normal+ difficulty)
+					-- 		{"select", "instanceID"
+					-- 			,1201	-- Algeth'ar Academy
+					-- 			,945	-- TODO: Seat of the Triumvirate (does not work currently)
+					-- 			,476	-- TODO: Skyreach (does not work currently)
+					-- 			,278	-- TODO: Pit of Saron (does not work currently)
+					-- 			,1300	-- Magister's Terrace
+					-- 			,1315	-- Maisara Caverns
+					-- 			,1316	-- Nexus-Point Xenas
+					-- 			,1299	-- Windrunner Spire
+					-- 		},
+					-- 		{"pop"},
+					-- 		{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
+					-- 		{"extract", "itemID"},
+					-- 		{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+					-- 	},
+					-- }),
 				},
 			}),
 			n(259722, {	-- Andra <Thalassian Finery>

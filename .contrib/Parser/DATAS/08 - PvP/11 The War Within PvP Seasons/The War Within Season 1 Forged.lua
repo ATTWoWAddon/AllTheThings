@@ -682,7 +682,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						conquest(875, i(218720)),	-- Forged Gladiator's Warglaive
 					}),
 					i(220378, {	-- Forged Equipment Chest
-						["timeline"] = { ADDED_11_0_5 },
+						["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0_SEASONSTART },
 					}),
 				}),
 			}),

@@ -87,6 +87,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
 					["groups"] = {
 						ach(40366),	-- Mythic: Cinderbrew Meadery
+						ach(61596, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: Cinderbew Meadery Guild Run
 					},
 				}),
 			})),

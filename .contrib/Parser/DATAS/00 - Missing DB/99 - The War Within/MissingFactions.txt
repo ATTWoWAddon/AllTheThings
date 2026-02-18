@@ -1,30 +1,6 @@
 1.14.1.41077
 faction(1041),	-- Frenzy
-11.1.5.59571
-faction(2689),	-- Flame's Radiance (Paragon)
 12.0.0.63534
-faction(2698),	-- Midnight
-faction(2700),	-- DEPRECATED Fungarian Fighting Ring
-faction(2705),	-- Amani Tribe (Paragon)
-faction(2706),	-- Witherbark Tribe
-faction(2709),	-- Vanguard of the Light
-faction(2715),	-- Magisters (Paragon)
-faction(2716),	-- Blood Knights (Paragon)
-faction(2717),	-- Farstriders (Paragon)
-faction(2718),	-- Shades of the Row (Paragon) \\ Shadow of the Row (Paragon) \\ Shadow of the Spire (Paragon)
-faction(2720),	-- Silvermoon City
-faction(2725),	-- The Singularity (Paragon) \\ The Singularity
-faction(2726),	-- Hara'ti (Paragon)
-faction(2727),	-- Silvermoon Court (Paragon)
-faction(2728),	-- PLAYER, Haranir Horde
-faction(2729),	-- PLAYER, Haranir Alliance
-faction(2742),	-- Delves: Season 1
-faction(2744),	-- Valeera Sanguinar
 faction(2764),	-- Preyseeker's Journey \\ Prey: Season 1
 12.0.0.63724
 faction(2770),	-- Slayer's Duellum \\ Domanaar Dominance
-12.0.0.63854
-faction(2774),	-- Slayer's Duellum (Paragon) \\ Domanaar Dominance (Paragon)
-12.0.0.63967
-faction(2780),	-- Shadowpine Tribe
-faction(2781),	-- Revantusk Tribe

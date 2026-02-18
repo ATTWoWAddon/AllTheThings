@@ -89,6 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 215407 },
 					["groups"] = {
 						ach(40375),	-- Mythic: Ara-Kara, City of Echoes
+						ach(61595, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: Ara-Kara, City of Echoes Guild Run
 					},
 				}),
 			}),

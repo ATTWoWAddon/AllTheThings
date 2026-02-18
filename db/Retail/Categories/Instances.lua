@@ -365,23 +365,7 @@ s(7614,19135,{b=1,f=4,lvl=25,u=2}),
 s(7407,18544,{b=1,f=5,lvl=25,u=2}),
 s(7613,19134,{b=1,f=5,lvl=25,u=2}),
 s(7612,19133,{b=1,f=4,lvl=25,u=2}),
-i(18543,{b=1,f=52,lvl=25,u=2})}}),
-n(14464,{awp=10400,coords={{72.6,20,76},{77,24.2,76},{77.2,16.6,76},{80,24.2,76},{82.6,21,76}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
-s(7424,18673,{f=8,lvl=23,u=2}),
-i(18674,{f=52,lvl=23,u=2}),
-i(19268,{spellID=23679,u=2})}}),
-n(14461,{awp=10400,coords={{44.6,46,78},{45.4,54.8,78},{48.2,41.2,78},{51.6,57.6,78},{53.2,41.8,78},{55.6,57.4,78},{56.6,42.8,78},{56.6,48.2,78}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
-s(7422,18671,{f=23,lvl=23,u=2}),
-s(7423,18672,{f=1,lvl=23,u=2})}}),
-n(14457,{awp=10400,coords={{54.6,42.6,83}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
-r(26279,{itemID=21548,requireSkill=165,skillID=2532,u=2}),
-i(18679,{f=52,lvl=23,u=2}),
-i(18678,{f=51,lvl=23,u=2})}}),
-n(14454,{awp=10400,coords={{17.6,27,81},{26.6,29.6,81},{31,23.6,81},{32.2,17.2,81}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
-s(7425,18676,{f=6,lvl=23,u=2}),
-s(7426,18677,{f=3,lvl=23,u=2}),
-r(26279,{itemID=21548,requireSkill=165,skillID=2532,u=2}),
-i(19268,{spellID=23679,u=2})}})}}),
+i(18543,{b=1,f=52,lvl=25,u=2})}})}}),
 inst(741,{coords={{54.18,83.25,33}},crs=a[259],isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",mapID=232,savedInstanceID=409,g={
 ah(17182,{isRaid=1,type="i",g={
 ach(429,{c=a[56],providers={{"i",17182}}}),
@@ -6586,7 +6570,24 @@ i(8707),
 s(3300,9467,{b=1,f=20,lvl=19,spellID=258885}),
 s(89451,151455,{awp=70300,b=1,f=3,lvl=19}),
 s(3301,9469,{b=1,f=6,lvl=19})}}),
-d(24,{sym={{"sub","tw_instance",241}}})}})}),
+d(24,{sym={{"sub","tw_instance",241}}})}}),
+h(-723,{awp=10400,g={
+n(14464,{coords={{72.6,20,76},{77,24.2,76},{77.2,16.6,76},{80,24.2,76},{82.6,21,76}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
+s(7424,18673,{f=8,lvl=23,u=2}),
+i(18674,{f=52,lvl=23,u=2}),
+i(19268,{spellID=23679,u=2})}}),
+n(14461,{coords={{44.6,46,78},{45.4,54.8,78},{48.2,41.2,78},{51.6,57.6,78},{53.2,41.8,78},{55.6,57.4,78},{56.6,42.8,78},{56.6,48.2,78}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
+s(7422,18671,{f=23,lvl=23,u=2}),
+s(7423,18672,{f=1,lvl=23,u=2})}}),
+n(14457,{coords={{54.6,42.6,83}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
+r(26279,{itemID=21548,requireSkill=165,skillID=2532,u=2}),
+i(18679,{f=52,lvl=23,u=2}),
+i(18678,{f=51,lvl=23,u=2})}}),
+n(14454,{coords={{17.6,27,81},{26.6,29.6,81},{31,23.6,81},{32.2,17.2,81}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
+s(7425,18676,{f=6,lvl=23,u=2}),
+s(7426,18677,{f=3,lvl=23,u=2}),
+r(26279,{itemID=21548,requireSkill=165,skillID=2532,u=2}),
+i(19268,{spellID=23679,u=2})}})}})}),
 x(2,{
 h(-12,{awp=20001,g={
 ach(11747,{awp=70200,g={
@@ -60915,7 +60916,8 @@ ach(40374,{
 crit(110298,{achID=61565,awp=120000,id=1})})}})}}),
 d(23,{
 e(2585,{npcID=215407,g={
-ach(40375)}})})}}),
+ach(40375),
+gach(61595,{awp=120000})}})})}}),
 inst(1272,{awp=110002,coords={{76.6,43.8,2248}},maps={2335},savedInstanceID=2661,g={
 h(-45,{
 q(83099,{coords={{75.6,43.5,2248},{50,50,2335}},lvl=80,qgs={216088,226409}})}),
@@ -60961,7 +60963,8 @@ ach(40363,{
 crit(110299,{achID=61565,awp=120000,id=2})})}})}}),
 d(23,{awp=110100,g={
 e(2589,{npcID=218523,g={
-ach(40366)}})}})}}),
+ach(40366),
+gach(61596,{awp=120000})}})}})}}),
 inst(1274,{awp=110002,coords={{46.7,63.4,2255}},maps={2343,2344},savedInstanceID=2669,g={
 h(-45,{
 q(83164,{coords={a[1035]},lvl=70,qgs=a[541]})}),
@@ -61011,7 +61014,8 @@ ach(40377,{
 crit(110300,{achID=61565,awp=120000,id=3})})}})}}),
 d(23,{
 e(2596,{npcID=216658,g={
-ach(40379)}})})}}),
+ach(40379),
+gach(61597,{awp=120000})}})})}}),
 inst(1210,{awp=110002,coords={{55.4,21.6,2214}},maps={2303},savedInstanceID=2651,g={
 h(-45,{
 q(83154,{coords={{42.3,30.3,2214}},lvl=80,qgs={225555},g={
@@ -61057,6 +61061,7 @@ crit(110301,{achID=61565,awp=120000,id=4})})}})}}),
 d(23,{awp=110100,g={
 e(2561,{npcID=208747,g={
 ach(40429),
+gach(61598,{awp=120000}),
 mnt(449264,{b=1,itemID=225548,lvl=10})}})}})}}),
 inst(1303,{awp=110200,coords={{43.8,4.9,2472}},lore="The eco-domes represent the best hope of restoring life to K'aresh. Eco-Dome Al'dani was built on the bones of one of the most sacred sites on K'aresh. A Wastelander invasion has ripped open the dome, exposing it to destruction. Ve'nari has called for help to keep all those resources from being wasted, and K'aresh's greatest hope from being destroyed.",maps={2449},g={
 d(101,{difficulties=a[47],g={
@@ -61092,7 +61097,8 @@ ach(42781,{
 crit(110307,{achID=61565,awp=120000,id=10})})}})}}),
 d(23,{
 e(2677,{npcID=234935,g={
-ach(42782)}})})}}),
+ach(42782),
+gach(61604,{awp=120000})}})})}}),
 inst(1298,{awp=110100,coords={{42.2,39.6,2214}},maps={2387,2388},savedInstanceID=2773,g={
 d(101,{difficulties=a[47],g={
 e(2648,{npcID=226398,g={
@@ -61139,7 +61145,8 @@ crit(110306,{achID=61565,awp=120000,id=9})}),
 s(293021,246274,{awp=110200,b=1,f=5,lvl=68})}})}}),
 d(23,{
 e(2651,{npcID=236950,g={
-ach(41341)}})})}}),
+ach(41341),
+gach(61603,{awp=120000})}})})}}),
 inst(1267,{awp=110002,coords={{41.3,49.3,2215}},maps={2308,2309},savedInstanceID=2649,g={
 d(101,{difficulties=a[47],g={
 e(2571,{npcID=207946,g={
@@ -61184,7 +61191,8 @@ ach(40592,{
 crit(110302,{achID=61565,awp=120000,id=5})})}})}}),
 d(23,{awp=110100,g={
 e(2573,{npcID=207940,g={
-ach(40596)}})}})}}),
+ach(40596),
+gach(61599,{awp=120000})}})}})}}),
 inst(1270,{awp=110002,coords={{54.8,62.9,2215}},maps={2359},savedInstanceID=2662,g={
 h(-45,{
 q(83322,{coords={{40.5,50.8,2215}},lvl=80,qgs={215335},g={
@@ -61228,7 +61236,8 @@ ach(40601,{
 crit(110303,{achID=61565,awp=120000,id=6})})}})}}),
 d(23,{
 e(2593,{npcID=213937,g={
-ach(40604)}})})}}),
+ach(40604),
+gach(61600,{awp=120000})}})})}}),
 inst(1268,{awp=110002,coords={{32.2,34.6,2339}},maps={2315,2316,2317,2318,2319,2320},savedInstanceID=2648,g={
 d(101,{difficulties=a[47],g={
 e(2566,{npcID=209230,g={
@@ -61265,7 +61274,8 @@ ach(40637,{
 crit(110304,{achID=61565,awp=120000,id=7})})}})}}),
 d(23,{awp=110100,g={
 e(2568,{npcID=207207,g={
-ach(40642)}})}})}}),
+ach(40642),
+gach(61601,{awp=120000})}})}})}}),
 inst(1269,{awp=110002,coords={{42.6,8.5,2214}},maps={2341},savedInstanceID=2652,g={
 h(-45,{
 q(83108,{coords={{43.1,31.6,2214}},lvl=73,qgs={225533},sourceQuests={79354}})}),
@@ -61310,6 +61320,7 @@ crit(110305,{achID=61565,awp=120000,id=8})})}})}}),
 d(23,{
 e(2582,{npcID=213119,g={
 ach(40648),
+gach(61602,{awp=120000}),
 i(226683,{b=1,lvl=30,modID=23})}})})}})}),
 x(12,{
 h(-12,{awp=120000,g={
@@ -61911,7 +61922,6 @@ s(296385,249947,{c=a[81],f=3,modID=6}),
 s(296397,249948,{c=a[81],f=7,modID=6})}})}})}}),
 d(109,{difficulties=a[380],g={
 e(2733,{npcID=240435,g={
-i(256648,{f=200}),
 de(15761,{itemID=264497,spellID=1272060}),
 crit(109375,{achID=61366}),
 crit(109375,{achID=61635})}}),
@@ -62517,7 +62527,8 @@ i(249808,{f=53,modID=6,spellID=1258275}),
 s(296051,249303,{f=6,modID=6}),
 s(296159,249330,{f=4,modID=6})}}),
 e(2738,{npcID=244761,g={
-ach(61377),
+ach(61377,{
+title(690)}),
 ach(61625,{rwp=120100}),
 gach(61622,{rwp=120100,g={
 title(676,{collectible=false})}}),
@@ -62563,6 +62574,14 @@ ach(61271,{
 cs(1254555)}),
 ach(61272,{
 cs(1254557)}),
+ach(61591),
+ach(61587),
+ach(61588),
+ach(61589),
+ach(61592),
+ach(61593),
+ach(61594),
+ach(61590),
 ach(61233),
 ach(61235),
 ach(61236),
@@ -62906,6 +62925,7 @@ ach(41288)}})}}),
 d(23,{
 e(2658,{npcID=231636,g={
 ach(41291),
+gach(61621),
 r(1237515,{itemID=256653,requireSkill=165,skillID=2915}),
 r(1228987,{itemID=258125,requireSkill=197,skillID=2918})}})})}}),
 h(-21,{

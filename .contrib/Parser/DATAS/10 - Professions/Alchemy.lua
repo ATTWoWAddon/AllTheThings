@@ -1162,6 +1162,17 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			ach(42788, {	-- Alchemy at Midnight
 				i(263997),	-- Midnight Alchemist's Shop Sign (DECOR!)
 			}),
+			ach(62223),	-- Alchemy-on-Demand
+			ach(62239, {	-- Dedicated to the Craft: Alchemy
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42788,	-- Alchemy at Midnight
+					62223,	-- Alchemy-on-Demand
+				}},
+				["groups"] = {
+					title(741),	-- Thalassian Alchemist <Name>
+				},
+			}),
 		}),
 		n(QUESTS, {
 			q(93690, {	-- Alchemy Services Requested

@@ -1422,6 +1422,17 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			ach(42786, {	-- Leatherworking at Midnight
 				i(264006),	-- Midnight Leatherworker's Shop Sign (DECOR!)
 			}),
+			ach(62237),	-- Leatherworking-on-Demand
+			ach(62245, {	-- Dedicated to the Craft: Leatherworking
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42786,	-- Leatherworking at Midnight
+					62237,	-- Leatherworking-on-Demand
+				}},
+				["groups"] = {
+					title(747),	-- Thalassian Leatherworker <Name>
+				},
+			}),
 		}),
 		n(QUESTS, {
 			q(93695, {	-- Leatherworking Services Requested

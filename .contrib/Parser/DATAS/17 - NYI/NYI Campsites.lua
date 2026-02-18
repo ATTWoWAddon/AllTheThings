@@ -11,5 +11,11 @@ root(ROOTS.NeverImplemented, n(CAMPSITES, {
 			campsite(111),	-- Adventurer's Rest (Test)
 		})),
 	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			campsite(141),	-- Saconway Test 091725
+		})),
+	}),
 }));
 -- #endif

@@ -297,7 +297,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				["coord"] = { 34.1, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = {
-					--[[ n(CLASSES, {						
+					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(875, i(255549)),	-- Galactic Gladiator's Chestguard
 							conquest(875, i(255550)),	-- Galactic Gladiator's Chestplate
@@ -467,7 +467,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 							conquest(525, i(255587)),	-- Galactic Gladiator's Shawl
 						}),
 						cl(PRIEST, {
-							conquest(875, i(255376)),	-- Galactic Gladiator's Silk Robes
+							conquest(875, i(255376)),	-- Galactic Gladiator's Silk Robe
 							conquest(875, i(255377)),	-- Galactic Gladiator's Silk Vestments
 							conquest(700, i(255378)),	-- Galactic Gladiator's Silk Slippers
 							conquest(700, i(255379)),	-- Galactic Gladiator's Silk Treads
@@ -571,20 +571,20 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 							conquest(525, i(255605)),	-- Galactic Gladiator's Drape
 							conquest(525, i(255606)),	-- Galactic Gladiator's Shawl
 						}),
-					}),]]--
+					}),
 					filter(FINGER_F, {
 						conquest(525, i(255608)),	-- Galactic Gladiator's Band
 						conquest(525, i(255607)),	-- Galactic Gladiator's Ring
 						conquest(525, i(255609)),	-- Galactic Gladiator's Signet
 					}),
-					filter(REAGENTS, {
+					filter(MISC, {
 						i(267572, {	-- Conqueror's Galactic Lacquer
 							["cost"] = { { "c", CONQUEST, 700 } },
 							--["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
 						i(267571, {	-- Conqueror's Galactic Varnish
 							["cost"] = { { "c", CONQUEST, 875 } },
-							--["timeline"] = { ADDED_11_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
+							--["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
 					}),
 					filter(NECK_F, {
@@ -625,11 +625,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						conquest(875, i(255620)),	-- Galactic Gladiator's Warglaive
 					}),
 					--i(256553, {	-- Galactic Equipment Chest
-					--	["timeline"] = { ADDED_12_0_5 },
+					--	["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
 					--}),
 				},
 			}),
-			o(456208, {	-- The Catalyst
+			o(532226, {	-- The Catalyst
 				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 				["coord"] = { 40.3, 65.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["modelScale"] = 4,
@@ -644,30 +644,277 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			n(CLASSES, {
 				-- TODO: Only 9 pieces will be obtainable, move rest to NYI Sets when confirmed
 				cl(DEATHKNIGHT, {
+					i(255549),	-- Galactic Gladiator's Chestguard
+					i(255550),	-- Galactic Gladiator's Chestplate
+					i(255551),	-- Galactic Gladiator's Plate Warboots
+					i(255552),	-- Galactic Gladiator's Plate Stompers
+					i(255553),	-- Galactic Gladiator's Plate Gauntlets
+					i(255554),	-- Galactic Gladiator's Plate Handguards
+					i(255555),	-- Galactic Gladiator's Plate Helm
+					i(255556),	-- Galactic Gladiator's Plate Helmet
+					i(255557),	-- Galactic Gladiator's Plate Legguards
+					i(255558),	-- Galactic Gladiator's Plate Wargreaves
+					i(255559),	-- Galactic Gladiator's Plate Shoulders
+					i(255560),	-- Galactic Gladiator's Plate Pauldrons
+					i(255561),	-- Galactic Gladiator's Plate Girdle
+					i(255562),	-- Galactic Gladiator's Plate Greatbelt
+					i(255563),	-- Galactic Gladiator's Plate Wristguards
+					i(255564),	-- Galactic Gladiator's Plate Vambraces
+					i(255565),	-- Galactic Gladiator's Cloak
+					i(255566),	-- Galactic Gladiator's Drape
+					i(255567),	-- Galactic Gladiator's Shawl
 				}),
 				cl(DEMONHUNTER, {
+					i(255435),	-- Galactic Gladiator's Leather Vest
+					i(255436),	-- Galactic Gladiator's Leather Jerkin
+					i(255437),	-- Galactic Gladiator's Leather Boots
+					i(255438),	-- Galactic Gladiator's Leather Treads
+					i(255439),	-- Galactic Gladiator's Leather Gloves
+					i(255440),	-- Galactic Gladiator's Leather Grips
+					i(255441),	-- Galactic Gladiator's Leather Helm
+					i(255442),	-- Galactic Gladiator's Leather Mask
+					i(255443),	-- Galactic Gladiator's Leather Breeches
+					i(255444),	-- Galactic Gladiator's Leather Legwraps
+					i(255445),	-- Galactic Gladiator's Leather Spaulders
+					i(255446),	-- Galactic Gladiator's Leather Shoulderpads
+					i(255447),	-- Galactic Gladiator's Leather Belt
+					i(255448),	-- Galactic Gladiator's Leather Strap
+					i(255449),	-- Galactic Gladiator's Leather Wristwraps
+					i(255450),	-- Galactic Gladiator's Leather Wristguards
+					i(255451),	-- Galactic Gladiator's Cloak
+					i(255452),	-- Galactic Gladiator's Drape
+					i(255453),	-- Galactic Gladiator's Shawl
 				}),
 				cl(DRUID, {
+					i(255415),	-- Galactic Gladiator's Leather Vest
+					i(255416),	-- Galactic Gladiator's Leather Vestments
+					i(255417),	-- Galactic Gladiator's Leather Boots
+					i(255418),	-- Galactic Gladiator's Leather Treads
+					i(255419),	-- Galactic Gladiator's Leather Gloves
+					i(255420),	-- Galactic Gladiator's Leather Grips
+					i(255421),	-- Galactic Gladiator's Leather Helm
+					i(255422),	-- Galactic Gladiator's Leather Mask
+					i(255423),	-- Galactic Gladiator's Leather Breeches
+					i(255424),	-- Galactic Gladiator's Leather Legwraps
+					i(255425),	-- Galactic Gladiator's Leather Spaulders
+					i(255426),	-- Galactic Gladiator's Leather Shoulderpads
+					i(255427),	-- Galactic Gladiator's Leather Belt
+					i(255429),	-- Galactic Gladiator's Leather Strap
+					i(255430),	-- Galactic Gladiator's Leather Wristwraps
+					i(255431),	-- Galactic Gladiator's Leather Wristguards
+					i(255432),	-- Galactic Gladiator's Cloak
+					i(255433),	-- Galactic Gladiator's Drape
+					i(255434),	-- Galactic Gladiator's Shawl
 				}),
 				cl(EVOKER, {
+					i(255492),	-- Galactic Gladiator's Armored Scales
+					i(255493),	-- Galactic Gladiator's Scaleguard
+					i(255494),	-- Galactic Gladiator's Chain Sabatons
+					i(255495),	-- Galactic Gladiator's Chain Boots
+					i(255496),	-- Galactic Gladiator's Chain Gauntlets
+					i(255497),	-- Galactic Gladiator's Chain Handguards
+					i(255498),	-- Galactic Gladiator's Chain Helm
+					i(255499),	-- Galactic Gladiator's Chain Faceguard
+					i(255500),	-- Galactic Gladiator's Chain Leggings
+					i(255501),	-- Galactic Gladiator's Chain Breeches
+					i(255502),	-- Galactic Gladiator's Chain Monnion
+					i(255503),	-- Galactic Gladiator's Chain Shoulderguard
+					i(255504),	-- Galactic Gladiator's Chain Belt
+					i(255505),	-- Galactic Gladiator's Chain Girdle
+					i(255506),	-- Galactic Gladiator's Chain Wristguards
+					i(255507),	-- Galactic Gladiator's Chain Bracers
+					i(255508),	-- Galactic Gladiator's Cloak
+					i(255509),	-- Galactic Gladiator's Drape
+					i(255510),	-- Galactic Gladiator's Shawl
 				}),
 				cl(HUNTER, {
+					i(255511),	-- Galactic Gladiator's Chain Vest
+					i(255512),	-- Galactic Gladiator's Chain Tunic
+					i(255513),	-- Galactic Gladiator's Chain Sabatons
+					i(255514),	-- Galactic Gladiator's Chain Boots
+					i(255515),	-- Galactic Gladiator's Chain Gauntlets
+					i(255516),	-- Galactic Gladiator's Chain Handguards
+					i(255517),	-- Galactic Gladiator's Chain Helm
+					i(255518),	-- Galactic Gladiator's Chain Faceguard
+					i(255519),	-- Galactic Gladiator's Chain Leggings
+					i(255520),	-- Galactic Gladiator's Chain Breeches
+					i(255521),	-- Galactic Gladiator's Chain Monnion
+					i(255522),	-- Galactic Gladiator's Chain Shoulderguard
+					i(255523),	-- Galactic Gladiator's Chain Belt
+					i(255524),	-- Galactic Gladiator's Chain Girdle
+					i(255525),	-- Galactic Gladiator's Chain Wristguards
+					i(255526),	-- Galactic Gladiator's Chain Bracers
+					i(255527),	-- Galactic Gladiator's Cloak
+					i(255528),	-- Galactic Gladiator's Drape
+					i(255529),	-- Galactic Gladiator's Shawl
 				}),
 				cl(MAGE, {
+					i(255357),	-- Galactic Gladiator's Silk Robe
+					i(255358),	-- Galactic Gladiator's Silk Gown
+					i(255359),	-- Galactic Gladiator's Silk Slippers
+					i(255360),	-- Galactic Gladiator's Silk Treads
+					i(255361),	-- Galactic Gladiator's Silk Gloves
+					i(255362),	-- Galactic Gladiator's Silk Handwraps
+					i(255363),	-- Galactic Gladiator's Silk Hat
+					i(255364),	-- Galactic Gladiator's Silk Cap
+					i(255365),	-- Galactic Gladiator's Silk Leggings
+					i(255366),	-- Galactic Gladiator's Silk Trousers
+					i(255367),	-- Galactic Gladiator's Silk Mantle
+					i(255368),	-- Galactic Gladiator's Silk Amice
+					i(255369),	-- Galactic Gladiator's Silk Cord
+					i(255370),	-- Galactic Gladiator's Silk Belt
+					i(255371),	-- Galactic Gladiator's Silk Wristwraps
+					i(255372),	-- Galactic Gladiator's Silk Armbands
+					i(255373),	-- Galactic Gladiator's Cloak
+					i(255374),	-- Galactic Gladiator's Drape
+					i(255375),	-- Galactic Gladiator's Shawl
 				}),
 				cl(MONK, {
+					i(255454),	-- Galactic Gladiator's Leather Vest
+					i(255455),	-- Galactic Gladiator's Leather Jerkin
+					i(255456),	-- Galactic Gladiator's Leather Boots
+					i(255457),	-- Galactic Gladiator's Leather Treads
+					i(255458),	-- Galactic Gladiator's Leather Gloves
+					i(255459),	-- Galactic Gladiator's Leather Grips
+					i(255460),	-- Galactic Gladiator's Leather Helm
+					i(255461),	-- Galactic Gladiator's Leather Mask
+					i(255462),	-- Galactic Gladiator's Leather Breeches
+					i(255463),	-- Galactic Gladiator's Leather Legwraps
+					i(255464),	-- Galactic Gladiator's Leather Spaulders
+					i(255465),	-- Galactic Gladiator's Leather Shoulderpads
+					i(255466),	-- Galactic Gladiator's Leather Belt
+					i(255467),	-- Galactic Gladiator's Leather Strap
+					i(255468),	-- Galactic Gladiator's Leather Wristwraps
+					i(255469),	-- Galactic Gladiator's Leather Wristguards
+					i(255470),	-- Galactic Gladiator's Cloak
+					i(255471),	-- Galactic Gladiator's Drape
+					i(255472),	-- Galactic Gladiator's Shawl
 				}),
 				cl(PALADIN, {
+					i(255568),	-- Galactic Gladiator's Chestguard
+					i(255569),	-- Galactic Gladiator's Chestplate
+					i(255570),	-- Galactic Gladiator's Plate Warboots
+					i(255571),	-- Galactic Gladiator's Plate Stompers
+					i(255572),	-- Galactic Gladiator's Plate Gauntlets
+					i(255573),	-- Galactic Gladiator's Plate Handguards
+					i(255574),	-- Galactic Gladiator's Plate Helm
+					i(255575),	-- Galactic Gladiator's Plate Helmet
+					i(255576),	-- Galactic Gladiator's Plate Legguards
+					i(255578),	-- Galactic Gladiator's Plate Tasses
+					i(255579),	-- Galactic Gladiator's Plate Shoulders
+					i(255580),	-- Galactic Gladiator's Plate Pauldrons
+					i(255581),	-- Galactic Gladiator's Plate Girdle
+					i(255582),	-- Galactic Gladiator's Plate Greatbelt
+					i(255583),	-- Galactic Gladiator's Plate Wristguards
+					i(255584),	-- Galactic Gladiator's Plate Vambraces
+					i(255585),	-- Galactic Gladiator's Cloak
+					i(255586),	-- Galactic Gladiator's Drape
+					i(255587),	-- Galactic Gladiator's Shawl
 				}),
 				cl(PRIEST, {
+					i(255376),	-- Galactic Gladiator's Silk Robe
+					i(255377),	-- Galactic Gladiator's Silk Vestments
+					i(255378),	-- Galactic Gladiator's Silk Slippers
+					i(255379),	-- Galactic Gladiator's Silk Treads
+					i(255380),	-- Galactic Gladiator's Silk Gloves
+					i(255381),	-- Galactic Gladiator's Silk Handwraps
+					i(255382),	-- Galactic Gladiator's Silk Hood
+					i(255383),	-- Galactic Gladiator's Silk Guise
+					i(255384),	-- Galactic Gladiator's Silk Leggings
+					i(255385),	-- Galactic Gladiator's Silk Trousers
+					i(255386),	-- Galactic Gladiator's Silk Mantle
+					i(255387),	-- Galactic Gladiator's Silk Amice
+					i(255388),	-- Galactic Gladiator's Silk Cord
+					i(255389),	-- Galactic Gladiator's Silk Belt
+					i(255390),	-- Galactic Gladiator's Silk Wristwraps
+					i(255391),	-- Galactic Gladiator's Silk Armbands
+					i(255392),	-- Galactic Gladiator's Cloak
+					i(255393),	-- Galactic Gladiator's Drape
+					i(255394),	-- Galactic Gladiator's Shawl
 				}),
 				cl(ROGUE, {
+					i(255473),	-- Galactic Gladiator's Leather Vest
+					i(255474),	-- Galactic Gladiator's Leather Jerkin
+					i(255475),	-- Galactic Gladiator's Leather Boots
+					i(255476),	-- Galactic Gladiator's Leather Treads
+					i(255477),	-- Galactic Gladiator's Leather Gloves
+					i(255478),	-- Galactic Gladiator's Leather Grips
+					i(255479),	-- Galactic Gladiator's Leather Helm
+					i(255480),	-- Galactic Gladiator's Leather Mask
+					i(255481),	-- Galactic Gladiator's Leather Breeches
+					i(255482),	-- Galactic Gladiator's Leather Legwraps
+					i(255483),	-- Galactic Gladiator's Leather Spaulders
+					i(255484),	-- Galactic Gladiator's Leather Shoulderpads
+					i(255485),	-- Galactic Gladiator's Leather Belt
+					i(255486),	-- Galactic Gladiator's Leather Strap
+					i(255487),	-- Galactic Gladiator's Leather Wristwraps
+					i(255488),	-- Galactic Gladiator's Leather Wristguards
+					i(255489),	-- Galactic Gladiator's Cloak
+					i(255490),	-- Galactic Gladiator's Drape
+					i(255491),	-- Galactic Gladiator's Shawl
 				}),
 				cl(SHAMAN, {
+					i(255530),	-- Galactic Gladiator's Chain Vest
+					i(255531),	-- Galactic Gladiator's Chain Tunic
+					i(255532),	-- Galactic Gladiator's Chain Sabatons
+					i(255533),	-- Galactic Gladiator's Chain Boots
+					i(255534),	-- Galactic Gladiator's Chain Gauntlets
+					i(255535),	-- Galactic Gladiator's Chain Handguards
+					i(255536),	-- Galactic Gladiator's Chain Helm
+					i(255537),	-- Galactic Gladiator's Chain Faceguard
+					i(255538),	-- Galactic Gladiator's Chain Leggings
+					i(255539),	-- Galactic Gladiator's Chain Breeches
+					i(255540),	-- Galactic Gladiator's Chain Monnion
+					i(255541),	-- Galactic Gladiator's Chain Shoulderguard
+					i(255542),	-- Galactic Gladiator's Chain Belt
+					i(255543),	-- Galactic Gladiator's Chain Girdle
+					i(255544),	-- Galactic Gladiator's Chain Wristguards
+					i(255545),	-- Galactic Gladiator's Chain Bracers
+					i(255546),	-- Galactic Gladiator's Cloak
+					i(255547),	-- Galactic Gladiator's Drape
+					i(255548),	-- Galactic Gladiator's Shawl
 				}),
 				cl(WARLOCK, {
+					i(255396),	-- Galactic Gladiator's Silk Vestments
+					i(255395),	-- Galactic Gladiator's Silk Raiment
+					i(255397),	-- Galactic Gladiator's Silk Slippers
+					i(255398),	-- Galactic Gladiator's Silk Treads
+					i(255399),	-- Galactic Gladiator's Silk Gloves
+					i(255400),	-- Galactic Gladiator's Silk Handwraps
+					i(255401),	-- Galactic Gladiator's Silk Hood
+					i(255402),	-- Galactic Gladiator's Silk Guise
+					i(255404),	-- Galactic Gladiator's Silk Leggings
+					i(255405),	-- Galactic Gladiator's Silk Trousers
+					i(255406),	-- Galactic Gladiator's Silk Mantle
+					i(255407),	-- Galactic Gladiator's Silk Amice
+					i(255408),	-- Galactic Gladiator's Silk Cord
+					i(255409),	-- Galactic Gladiator's Silk Belt
+					i(255410),	-- Galactic Gladiator's Silk Wristwraps
+					i(255411),	-- Galactic Gladiator's Silk Armbands
+					i(255412),	-- Galactic Gladiator's Cloak
+					i(255413),	-- Galactic Gladiator's Drape
+					i(255414),	-- Galactic Gladiator's Shawl
 				}),
 				cl(WARRIOR, {
+					i(255588),	-- Galactic Gladiator's Chestguard
+					i(255589),	-- Galactic Gladiator's Chestplate
+					i(255590),	-- Galactic Gladiator's Plate Warboots
+					i(255591),	-- Galactic Gladiator's Plate Stompers
+					i(255592),	-- Galactic Gladiator's Plate Gauntlets
+					i(255593),	-- Galactic Gladiator's Plate Handguards
+					i(255594),	-- Galactic Gladiator's Plate Helm
+					i(255595),	-- Galactic Gladiator's Plate Helmet
+					i(255596),	-- Galactic Gladiator's Plate Legguards
+					i(255597),	-- Galactic Gladiator's Plate Wargreaves
+					i(255598),	-- Galactic Gladiator's Plate Shoulders
+					i(255599),	-- Galactic Gladiator's Plate Pauldrons
+					i(255600),	-- Galactic Gladiator's Plate Girdle
+					i(255601),	-- Galactic Gladiator's Plate Greatbelt
+					i(255602),	-- Galactic Gladiator's Plate Wristguards
+					i(255603),	-- Galactic Gladiator's Plate Vambraces
+					i(255604),	-- Galactic Gladiator's Cloak
+					i(255605),	-- Galactic Gladiator's Drape
+					i(255606),	-- Galactic Gladiator's Shawl
 				}),
 			}),
 			n(255844, {	-- Soryn <Elite Conquest Quartermaster>

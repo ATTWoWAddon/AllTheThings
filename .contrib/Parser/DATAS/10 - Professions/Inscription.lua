@@ -5685,6 +5685,17 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			ach(42796, {	-- Inscribing at Midnight
 				i(264004),	-- Midnight Scribe's Shop Sign (DECOR!)
 			}),
+			ach(62235),	-- Inscription-on-Demand
+			ach(62243, {	-- Dedicated to the Craft: Inscription
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42796,	-- Inscribing at Midnight
+					62235,	-- Inscription-on-Demand
+				}},
+				["groups"] = {
+					title(745),	-- Thalassian Scribe <Name>
+				},
+			}),
 		}),
 		n(QUESTS, {
 			q(93693, {	-- Inscription Services Requested

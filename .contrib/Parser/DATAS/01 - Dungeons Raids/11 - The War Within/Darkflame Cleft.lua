@@ -81,6 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 208747 },	-- The Darkness
 					["groups"] = {
 						ach(40429),	-- Mythic: Darkflame Cleft
+						ach(61598, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: Darkflame Cleft Guild Run
 						i(225548),	-- Wick's Lead (MOUNT!)
 					},
 				}),

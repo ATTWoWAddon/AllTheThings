@@ -1415,8 +1415,17 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42791, {	-- Mining at Midnight
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
+				i(264172),	-- Midnight Miner's Shop Sign (DECOR!)
+			}),
+			ach(62248),	-- Mining-on-Demand
+			ach(62251, {	-- Dedicated to the Craft: Mining
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42791,	-- Mining at Midnight
+					62248,	-- Mining-on-Demand
+				}},
 				["groups"] = {
+					title(750),	-- Thalassian Miner <Name>
 				},
 			}),
 		}),

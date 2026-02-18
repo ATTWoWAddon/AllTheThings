@@ -18,14 +18,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["sym"] = {
 							-- All TWW Season 1 dungeons (Normal+ difficulty)
 							{"select", "instanceID"
-								,1271			-- Ara-Kara, City of Echoes
-								,1274			-- City of Threads
-								,71				-- Grim Batol
-								,1184			-- Mists of Tirna Scithe
-								,1023			-- Siege of Boralus
-								,1270			-- The Dawnbreaker
-								,1182			-- The Necrotic Wake
-								,1269			-- The Stonevault
+								,1271	-- Ara-Kara, City of Echoes
+								,1274	-- City of Threads
+								,71		-- Grim Batol
+								,1184	-- Mists of Tirna Scithe
+								,1023	-- Siege of Boralus
+								,1270	-- The Dawnbreaker
+								,1182	-- The Necrotic Wake
+								,1269	-- The Stonevault
 							},
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
@@ -39,14 +39,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["sym"] = {
 							-- All TWW Season 2 dungeons (Normal+ difficulty)
 							{"select", "instanceID"
-								,1272			-- Cinderbrew Meadery
-								,1210			-- Darkflame Cleft
-								,1298			-- Operation: Floodgate
-								,1267			-- Priory of the Sacred Flame
-								,1268			-- The Rookery
-								,1187			-- Theater of Pain
-								,1012			-- The MOTHERLODE!!
-								,1178			-- TODO: Operation: Mechagon (does not work currently)
+								,1272	-- Cinderbrew Meadery
+								,1210	-- Darkflame Cleft
+								,1298	-- Operation: Floodgate
+								,1267	-- Priory of the Sacred Flame
+								,1268	-- The Rookery
+								,1187	-- Theater of Pain
+								,1012	-- The MOTHERLODE!!
+								,1178	-- TODO: Operation: Mechagon (does not work currently)
 							},
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
@@ -60,13 +60,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["sym"] = {
 							-- All TWW Season 3 dungeons (Normal+ difficulty)
 							{"select", "instanceID"
-								,1271			-- Ara-Kara, City of Echoes
-								,1303			-- Eco-Dome Al'dani
-								,1185			-- Halls of Atonement
-								,1298			-- Operation: Floodgate
-								,1267			-- Priory of the Sacred Flame
-								,1194			-- Tazavesh, the Veiled Market
-								,1270			-- The Dawnbreaker
+								,1271	-- Ara-Kara, City of Echoes
+								,1303	-- Eco-Dome Al'dani
+								,1185	-- Halls of Atonement
+								,1298	-- Operation: Floodgate
+								,1267	-- Priory of the Sacred Flame
+								,1194	-- Tazavesh, the Veiled Market
+								,1270	-- The Dawnbreaker
 							},
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},

@@ -69,14 +69,14 @@ root(ROOTS.Unsorted, {
 				-- Midnight Preseason
 				i(268485),	-- Victorious Stormarion Pinnacle Cache
 				i(268487),	-- Avid Learner's Supply Pack
-				i(268488),	-- Overflowing Abundant Satchel
+
 				i(268489),	-- Surplus Bag of Party Favors
 				i(268490),	-- Apex Cache
 
 				-- Cache
 				i(268545),	-- Preyseeker's Adventurer Chest
 				i(269701),	-- Surplus Bag of Party Favors
-				i(269702),	-- Overflowing Abundant Satchel
+
 				i(269704),	-- Victorious Stormarion Cache
 
 				-- prey
@@ -665,8 +665,6 @@ root(ROOTS.Unsorted, {
 				i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
 				-- Cache
 				i(250117),	-- Cache of Quel'Thalas Treasures
-				-- Abundance
-				i(250755),	-- Pouch of Mystic Grindings
 				--Arcantina
 				i(250872),	-- Scarred Spear
 				--Delve?
@@ -815,7 +813,6 @@ root(ROOTS.Unsorted, {
 				i(264380),	-- Contract of Service
 				i(265655),	-- Ritual Components
 				i(265710),	-- Elementary Voidcore
-				i(265746),	-- Idol of Abundance \\ [PH] Rat Loa Blessing
 				i(265749),	-- Idol of the Depths \\ [PH] Threshadon Loa Blessing
 				i(266183),	-- Enigmatic Voidclarion
 				i(266440),	-- Idol of Growth
@@ -848,6 +845,7 @@ root(ROOTS.Unsorted, {
 				i(246209),	-- 12.0 Monster - Arator - Sword1H - Sword_1H_Arator_D_01
 				-- Wep Quest?
 				i(239133),	-- Infinity Blade
+				i(264433),	-- Voidformed Impaler
 			}),
 			filter(BATTLE_PETS, {
 				i(239101),	-- Voidcrawler
@@ -892,16 +890,7 @@ root(ROOTS.Unsorted, {
 			n(SPECIAL, {
 				-- Abundance
 				i(239611),	-- Pure Loanite
-				i(245345),	-- Fused Vitality
-				-- Prof/Abundance
-				i(250360),	-- Echo of Abundance: Skinning
-				i(250443),	-- Echo of Abundance: Herbalism
-				i(250444),	-- Echo of Abundance: Mining
-				i(250445),	-- Echo of Abundance: Enchanting
 				-- Abundance
-				i(250750),	-- Pouch of Sprouted Clippings
-				i(250753),	-- Bag of Cracked Orebits
-				i(250754),	-- Bag of Wild Skinnings
 				i(252607),	-- Abundant Beacon \\ [TUTORIAL ITEM]
 				i(252608),	-- Unalloyed Abundance \\ [OLD] Unalloyed Abundance
 				-- Eversong event?
@@ -972,7 +961,7 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(TOYS, {
 				i(250320),	-- Lightgraft
-				i(251633),	-- Bursting Bounty Bundle
+
 				i(251903),	-- Potatoad Egg
 				i(257736),	-- Lightcalled Hearthstone \\ [DNT] [PH] 12.0 Holy Hearthstone
 				i(259084),	-- Gift of the Cycle
@@ -981,10 +970,9 @@ root(ROOTS.Unsorted, {
 				i(263975),	-- Feeling Fielder Mk. 7
 				i(264517),	-- Galactic Flag of Victory
 				i(264672),	-- Cosmic Ritual Stone
-				i(266370),	-- Dundun's Abundant Travel Method
+
 			}),
 			filter(MOUNTS, {
-				i(250782),	-- Amani Sunfeather \\ [DNT] Amani Eagle Orange
 				-- Both Mounts?
 				i(250921),	-- Amani Blessed Bear
 
@@ -1021,7 +1009,7 @@ root(ROOTS.Unsorted, {
 				i(257147),	-- Cobalt Dragonhawk
 				i(257152),	-- Amani Sharptalon
 				i(257156),	-- Cerulean Hawkstrider
-				i(257197),	-- Blessed Amani Burrower \\ [DNT] 12.0 Amani Pangolin
+
 				i(257200),	-- Escaped Witherbark Pango
 				i(257223),	-- Ancestral War Bear \\ [DNT] 12.0 Shadowpine Bear
 				i(257444),	-- Hexed Vilefeather Eagle \\ [DNT] 12.0 Hex Eagle Mount
@@ -1037,253 +1025,6 @@ root(ROOTS.Unsorted, {
 			n(PVP, {
 				i(255269),	-- Galactic Aspirant's Chain Sabatons
 				i(255288),	-- Galactic Aspirant's Chain Belt
-				i(255357),	-- Galactic Gladiator's Silk Robe
-				i(255358),	-- Galactic Gladiator's Silk Gown
-				i(255359),	-- Galactic Gladiator's Silk Slippers
-				i(255360),	-- Galactic Gladiator's Silk Treads
-				i(255361),	-- Galactic Gladiator's Silk Gloves
-				i(255362),	-- Galactic Gladiator's Silk Handwraps
-				i(255363),	-- Galactic Gladiator's Silk Hat
-				i(255364),	-- Galactic Gladiator's Silk Cap
-				i(255365),	-- Galactic Gladiator's Silk Leggings
-				i(255366),	-- Galactic Gladiator's Silk Trousers
-				i(255367),	-- Galactic Gladiator's Silk Mantle
-				i(255368),	-- Galactic Gladiator's Silk Amice
-				i(255369),	-- Galactic Gladiator's Silk Cord
-				i(255370),	-- Galactic Gladiator's Silk Belt
-				i(255371),	-- Galactic Gladiator's Silk Wristwraps
-				i(255372),	-- Galactic Gladiator's Silk Armbands
-				i(255373),	-- Galactic Gladiator's Cloak
-				i(255374),	-- Galactic Gladiator's Drape
-				i(255375),	-- Galactic Gladiator's Shawl
-				i(255376),	-- Galactic Gladiator's Silk Robe \\ Galactic Gladiator's Silk Robes
-				i(255377),	-- Galactic Gladiator's Silk Vestments
-				i(255378),	-- Galactic Gladiator's Silk Slippers
-				i(255379),	-- Galactic Gladiator's Silk Treads
-				i(255380),	-- Galactic Gladiator's Silk Gloves
-				i(255381),	-- Galactic Gladiator's Silk Handwraps
-				i(255382),	-- Galactic Gladiator's Silk Hood
-				i(255383),	-- Galactic Gladiator's Silk Guise
-				i(255384),	-- Galactic Gladiator's Silk Leggings
-				i(255385),	-- Galactic Gladiator's Silk Trousers
-				i(255386),	-- Galactic Gladiator's Silk Mantle
-				i(255387),	-- Galactic Gladiator's Silk Amice
-				i(255388),	-- Galactic Gladiator's Silk Cord
-				i(255389),	-- Galactic Gladiator's Silk Belt
-				i(255390),	-- Galactic Gladiator's Silk Wristwraps
-				i(255391),	-- Galactic Gladiator's Silk Armbands
-				i(255392),	-- Galactic Gladiator's Cloak
-				i(255393),	-- Galactic Gladiator's Drape
-				i(255394),	-- Galactic Gladiator's Shawl
-				i(255395),	-- Galactic Gladiator's Silk Raiment
-				i(255396),	-- Galactic Gladiator's Silk Vestments
-				i(255397),	-- Galactic Gladiator's Silk Slippers
-				i(255398),	-- Galactic Gladiator's Silk Treads
-				i(255399),	-- Galactic Gladiator's Silk Gloves
-				i(255400),	-- Galactic Gladiator's Silk Handwraps
-				i(255401),	-- Galactic Gladiator's Silk Hood
-				i(255402),	-- Galactic Gladiator's Silk Guise
-				i(255404),	-- Galactic Gladiator's Silk Leggings
-				i(255405),	-- Galactic Gladiator's Silk Trousers
-				i(255406),	-- Galactic Gladiator's Silk Mantle
-				i(255407),	-- Galactic Gladiator's Silk Amice
-				i(255408),	-- Galactic Gladiator's Silk Cord
-				i(255409),	-- Galactic Gladiator's Silk Belt
-				i(255410),	-- Galactic Gladiator's Silk Wristwraps
-				i(255411),	-- Galactic Gladiator's Silk Armbands
-				i(255412),	-- Galactic Gladiator's Cloak
-				i(255413),	-- Galactic Gladiator's Drape
-				i(255414),	-- Galactic Gladiator's Shawl
-				i(255415),	-- Galactic Gladiator's Leather Vest
-				i(255416),	-- Galactic Gladiator's Leather Vestments
-				i(255417),	-- Galactic Gladiator's Leather Boots
-				i(255418),	-- Galactic Gladiator's Leather Treads
-				i(255419),	-- Galactic Gladiator's Leather Gloves
-				i(255420),	-- Galactic Gladiator's Leather Grips
-				i(255421),	-- Galactic Gladiator's Leather Helm
-				i(255422),	-- Galactic Gladiator's Leather Mask
-				i(255423),	-- Galactic Gladiator's Leather Breeches
-				i(255424),	-- Galactic Gladiator's Leather Legwraps
-				i(255425),	-- Galactic Gladiator's Leather Spaulders
-				i(255426),	-- Galactic Gladiator's Leather Shoulderpads
-				i(255427),	-- Galactic Gladiator's Leather Belt
-				i(255429),	-- Galactic Gladiator's Leather Strap
-				i(255430),	-- Galactic Gladiator's Leather Wristwraps
-				i(255431),	-- Galactic Gladiator's Leather Wristguards
-				i(255432),	-- Galactic Gladiator's Cloak
-				i(255433),	-- Galactic Gladiator's Drape
-				i(255434),	-- Galactic Gladiator's Shawl
-				i(255435),	-- Galactic Gladiator's Leather Vest
-				i(255436),	-- Galactic Gladiator's Leather Jerkin
-				i(255437),	-- Galactic Gladiator's Leather Boots
-				i(255438),	-- Galactic Gladiator's Leather Treads
-				i(255439),	-- Galactic Gladiator's Leather Gloves
-				i(255440),	-- Galactic Gladiator's Leather Grips
-				i(255441),	-- Galactic Gladiator's Leather Helm
-				i(255442),	-- Galactic Gladiator's Leather Mask
-				i(255443),	-- Galactic Gladiator's Leather Breeches
-				i(255444),	-- Galactic Gladiator's Leather Legwraps
-				i(255445),	-- Galactic Gladiator's Leather Spaulders
-				i(255446),	-- Galactic Gladiator's Leather Shoulderpads
-				i(255447),	-- Galactic Gladiator's Leather Belt
-				i(255448),	-- Galactic Gladiator's Leather Strap
-				i(255449),	-- Galactic Gladiator's Leather Wristwraps
-				i(255450),	-- Galactic Gladiator's Leather Wristguards
-				i(255451),	-- Galactic Gladiator's Cloak
-				i(255452),	-- Galactic Gladiator's Drape
-				i(255453),	-- Galactic Gladiator's Shawl
-				i(255454),	-- Galactic Gladiator's Leather Vest
-				i(255455),	-- Galactic Gladiator's Leather Jerkin
-				i(255456),	-- Galactic Gladiator's Leather Boots
-				i(255457),	-- Galactic Gladiator's Leather Treads
-				i(255458),	-- Galactic Gladiator's Leather Gloves
-				i(255459),	-- Galactic Gladiator's Leather Grips
-				i(255460),	-- Galactic Gladiator's Leather Helm
-				i(255461),	-- Galactic Gladiator's Leather Mask
-				i(255462),	-- Galactic Gladiator's Leather Breeches
-				i(255463),	-- Galactic Gladiator's Leather Legwraps
-				i(255464),	-- Galactic Gladiator's Leather Spaulders
-				i(255465),	-- Galactic Gladiator's Leather Shoulderpads
-				i(255466),	-- Galactic Gladiator's Leather Belt
-				i(255467),	-- Galactic Gladiator's Leather Strap
-				i(255468),	-- Galactic Gladiator's Leather Wristwraps
-				i(255469),	-- Galactic Gladiator's Leather Wristguards
-				i(255470),	-- Galactic Gladiator's Cloak
-				i(255471),	-- Galactic Gladiator's Drape
-				i(255472),	-- Galactic Gladiator's Shawl
-				i(255473),	-- Galactic Gladiator's Leather Vest
-				i(255474),	-- Galactic Gladiator's Leather Jerkin
-				i(255475),	-- Galactic Gladiator's Leather Boots
-				i(255476),	-- Galactic Gladiator's Leather Treads
-				i(255477),	-- Galactic Gladiator's Leather Gloves
-				i(255478),	-- Galactic Gladiator's Leather Grips
-				i(255479),	-- Galactic Gladiator's Leather Helm
-				i(255480),	-- Galactic Gladiator's Leather Mask
-				i(255481),	-- Galactic Gladiator's Leather Breeches
-				i(255482),	-- Galactic Gladiator's Leather Legwraps
-				i(255483),	-- Galactic Gladiator's Leather Spaulders
-				i(255484),	-- Galactic Gladiator's Leather Shoulderpads
-				i(255485),	-- Galactic Gladiator's Leather Belt
-				i(255486),	-- Galactic Gladiator's Leather Strap
-				i(255487),	-- Galactic Gladiator's Leather Wristwraps
-				i(255488),	-- Galactic Gladiator's Leather Wristguards
-				i(255489),	-- Galactic Gladiator's Cloak
-				i(255490),	-- Galactic Gladiator's Drape
-				i(255491),	-- Galactic Gladiator's Shawl
-				i(255492),	-- Galactic Gladiator's Armored Scales
-				i(255493),	-- Galactic Gladiator's Scaleguard
-				i(255494),	-- Galactic Gladiator's Chain Sabatons
-				i(255495),	-- Galactic Gladiator's Chain Boots
-				i(255496),	-- Galactic Gladiator's Chain Gauntlets
-				i(255497),	-- Galactic Gladiator's Chain Handguards
-				i(255498),	-- Galactic Gladiator's Chain Helm
-				i(255499),	-- Galactic Gladiator's Chain Faceguard
-				i(255500),	-- Galactic Gladiator's Chain Leggings
-				i(255501),	-- Galactic Gladiator's Chain Breeches
-				i(255502),	-- Galactic Gladiator's Chain Monnion
-				i(255503),	-- Galactic Gladiator's Chain Shoulderguard
-				i(255504),	-- Galactic Gladiator's Chain Belt
-				i(255505),	-- Galactic Gladiator's Chain Girdle
-				i(255506),	-- Galactic Gladiator's Chain Wristguards
-				i(255507),	-- Galactic Gladiator's Chain Bracers
-				i(255508),	-- Galactic Gladiator's Cloak
-				i(255509),	-- Galactic Gladiator's Drape
-				i(255510),	-- Galactic Gladiator's Shawl
-				i(255511),	-- Galactic Gladiator's Chain Vest
-				i(255512),	-- Galactic Gladiator's Chain Tunic
-				i(255513),	-- Galactic Gladiator's Chain Sabatons
-				i(255514),	-- Galactic Gladiator's Chain Boots
-				i(255515),	-- Galactic Gladiator's Chain Gauntlets
-				i(255516),	-- Galactic Gladiator's Chain Handguards
-				i(255517),	-- Galactic Gladiator's Chain Helm
-				i(255518),	-- Galactic Gladiator's Chain Faceguard
-				i(255519),	-- Galactic Gladiator's Chain Leggings
-				i(255520),	-- Galactic Gladiator's Chain Breeches
-				i(255521),	-- Galactic Gladiator's Chain Monnion
-				i(255522),	-- Galactic Gladiator's Chain Shoulderguard
-				i(255523),	-- Galactic Gladiator's Chain Belt
-				i(255524),	-- Galactic Gladiator's Chain Girdle
-				i(255525),	-- Galactic Gladiator's Chain Wristguards
-				i(255526),	-- Galactic Gladiator's Chain Bracers
-				i(255527),	-- Galactic Gladiator's Cloak
-				i(255528),	-- Galactic Gladiator's Drape
-				i(255529),	-- Galactic Gladiator's Shawl
-				i(255530),	-- Galactic Gladiator's Chain Vest
-				i(255531),	-- Galactic Gladiator's Chain Tunic
-				i(255532),	-- Galactic Gladiator's Chain Sabatons
-				i(255533),	-- Galactic Gladiator's Chain Boots
-				i(255534),	-- Galactic Gladiator's Chain Gauntlets
-				i(255535),	-- Galactic Gladiator's Chain Handguards
-				i(255536),	-- Galactic Gladiator's Chain Helm
-				i(255537),	-- Galactic Gladiator's Chain Faceguard
-				i(255538),	-- Galactic Gladiator's Chain Leggings
-				i(255539),	-- Galactic Gladiator's Chain Breeches
-				i(255540),	-- Galactic Gladiator's Chain Monnion
-				i(255541),	-- Galactic Gladiator's Chain Shoulderguard
-				i(255542),	-- Galactic Gladiator's Chain Belt
-				i(255543),	-- Galactic Gladiator's Chain Girdle
-				i(255544),	-- Galactic Gladiator's Chain Wristguards
-				i(255545),	-- Galactic Gladiator's Chain Bracers
-				i(255546),	-- Galactic Gladiator's Cloak
-				i(255547),	-- Galactic Gladiator's Drape
-				i(255548),	-- Galactic Gladiator's Shawl
-				i(255549),	-- Galactic Gladiator's Chestguard
-				i(255550),	-- Galactic Gladiator's Chestplate
-				i(255551),	-- Galactic Gladiator's Plate Warboots
-				i(255552),	-- Galactic Gladiator's Plate Stompers
-				i(255553),	-- Galactic Gladiator's Plate Gauntlets
-				i(255554),	-- Galactic Gladiator's Plate Handguards
-				i(255555),	-- Galactic Gladiator's Plate Helm
-				i(255556),	-- Galactic Gladiator's Plate Helmet
-				i(255557),	-- Galactic Gladiator's Plate Legguards
-				i(255558),	-- Galactic Gladiator's Plate Wargreaves
-				i(255559),	-- Galactic Gladiator's Plate Shoulders
-				i(255560),	-- Galactic Gladiator's Plate Pauldrons
-				i(255561),	-- Galactic Gladiator's Plate Girdle
-				i(255562),	-- Galactic Gladiator's Plate Greatbelt
-				i(255563),	-- Galactic Gladiator's Plate Wristguards
-				i(255564),	-- Galactic Gladiator's Plate Vambraces
-				i(255565),	-- Galactic Gladiator's Cloak
-				i(255566),	-- Galactic Gladiator's Drape
-				i(255567),	-- Galactic Gladiator's Shawl
-				i(255568),	-- Galactic Gladiator's Chestguard
-				i(255569),	-- Galactic Gladiator's Chestplate
-				i(255570),	-- Galactic Gladiator's Plate Warboots
-				i(255571),	-- Galactic Gladiator's Plate Stompers
-				i(255572),	-- Galactic Gladiator's Plate Gauntlets
-				i(255573),	-- Galactic Gladiator's Plate Handguards
-				i(255574),	-- Galactic Gladiator's Plate Helm
-				i(255575),	-- Galactic Gladiator's Plate Helmet
-				i(255576),	-- Galactic Gladiator's Plate Legguards
-				i(255578),	-- Galactic Gladiator's Plate Tasses
-				i(255579),	-- Galactic Gladiator's Plate Shoulders
-				i(255580),	-- Galactic Gladiator's Plate Pauldrons
-				i(255581),	-- Galactic Gladiator's Plate Girdle
-				i(255582),	-- Galactic Gladiator's Plate Greatbelt
-				i(255583),	-- Galactic Gladiator's Plate Wristguards
-				i(255584),	-- Galactic Gladiator's Plate Vambraces
-				i(255585),	-- Galactic Gladiator's Cloak
-				i(255586),	-- Galactic Gladiator's Drape
-				i(255587),	-- Galactic Gladiator's Shawl
-				i(255588),	-- Galactic Gladiator's Chestguard
-				i(255589),	-- Galactic Gladiator's Chestplate
-				i(255590),	-- Galactic Gladiator's Plate Warboots
-				i(255591),	-- Galactic Gladiator's Plate Stompers
-				i(255592),	-- Galactic Gladiator's Plate Gauntlets
-				i(255593),	-- Galactic Gladiator's Plate Handguards
-				i(255594),	-- Galactic Gladiator's Plate Helm
-				i(255595),	-- Galactic Gladiator's Plate Helmet
-				i(255596),	-- Galactic Gladiator's Plate Legguards
-				i(255597),	-- Galactic Gladiator's Plate Wargreaves
-				i(255598),	-- Galactic Gladiator's Plate Shoulders
-				i(255599),	-- Galactic Gladiator's Plate Pauldrons
-				i(255600),	-- Galactic Gladiator's Plate Girdle
-				i(255601),	-- Galactic Gladiator's Plate Greatbelt
-				i(255602),	-- Galactic Gladiator's Plate Wristguards
-				i(255603),	-- Galactic Gladiator's Plate Vambraces
-				i(255604),	-- Galactic Gladiator's Cloak
-				i(255605),	-- Galactic Gladiator's Drape
-				i(255606),	-- Galactic Gladiator's Shawl
 				i(255618),	-- Galactic Gladiator's Splitter
 				i(258620),	-- Field Medic's Hazard Payout
 				i(258622),	-- Medal of Conquest
@@ -1657,6 +1398,11 @@ root(ROOTS.Unsorted, {
 				-- Trinket
 				i(262753),	-- Shard of VoidStalker's Bracers
 				i(262754),	-- Void Pearl of Haste
+				-- Some special set?
+				i(266184),	-- Mind-Seeker Robes
+				i(266185),	-- Mind-Seeker Tome
+				i(266186),	-- Mind-Seeker Leggings
+				i(266187),	-- Mind-Seeker Clutches
 			}),
 			filter(COSMETIC, {
 				i(242635),	-- Twilight's Blade - Armor - Tabard \\ Twilight's Blade Tabard
@@ -1749,11 +1495,6 @@ root(ROOTS.Unsorted, {
 				i(260905),	-- Lost Blade of Spacial Descent
 				i(260907),	-- Lost Winter's Hunger
 				i(260908),	-- Lost Frostwolf's Stand
-				i(262578),	-- Amani Stonework Chisel
-				i(262579),	-- Amani Hide Cutter
-				i(262580),	-- Amani Log Splitter
-				i(262581),	-- Amani Rock Hammer
-				i(262582),	-- Amani Gem Clamps
 				i(262715),	-- Simple Mossy Trowel
 				i(262716),	-- Simple Rosy Trowl
 				i(262717),	-- Simple Rooting Trowl
@@ -1888,12 +1629,8 @@ root(ROOTS.Unsorted, {
 				i(266901),	-- Depthdiver's Cloak
 				i(266902),	-- Depthdiver's Tabard
 				i(266903),	-- Depthdiver's Shoulderpads
-				i(266965),	-- Tabard of Amani Abundance
-				i(266966),	-- Mantle of Amani Abundance
-				i(266967),	-- Shawl of Amani Abundance
 				i(266968),	-- Priestess' Starpoint
 				i(266969),	-- Ensemble: Depthdiver Vestments
-				i(266970),	-- Ensemble: Abundant Raiment
 				i(266971),	-- [PH] Hara'ti Cloak - Yellow
 				i(266972),	-- [PH] Hara'ti Shoulders - Yellow
 				i(266973),	-- [PH] Hara'ti Tabard - Yellow
@@ -1952,9 +1689,6 @@ root(ROOTS.Unsorted, {
 				i(263194),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce
 				i(263195),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost
 				i(264002),	-- Midnight Fisher's Shop Sign
-				i(264003),	-- Midnight Herbalist's Shop Sign
-				i(264172),	-- Midnight Miner's Shop Sign
-				i(264173),	-- Midnight Skinner's Shop Sign
 				i(264243),	-- Firm Haranir Pillow
 				i(264245),	-- Warm Haranir Blanket
 				i(264267),	-- Rutaani Birdfeeder
@@ -1994,7 +1728,7 @@ root(ROOTS.Unsorted, {
 				i(250868),	-- Crimson Crystal Column
 				i(250869),	-- Crimson Crystal Core
 				i(250870),	-- Crimson Crystal Fragment
-				i(256923),	-- Amani Crafter's Tool Rack
+
 				i(257418),	-- Ornate Sin'dorei Sconce
 				i(258535),	-- Simple Bone-Tied Charm
 				i(258536),	-- Windmark Tribal Charm
@@ -2004,10 +1738,9 @@ root(ROOTS.Unsorted, {
 				i(258569),	-- Spring Blossom Gazebo
 				i(263290),	-- Spring Blossom Tree
 				i(263291),	-- Spring Blossom Pond
-				i(264249),	-- Woodblock Stool
+
 				i(264252),	-- Zul'Aman Forest Hammock
-				i(264254),	-- Three-Tier Zul'Aman Shelf
-				i(264655),	-- Amani Slate Bench
+
 					-- Raid?
 				i(266885),	-- March on Quel'Danas Vanquisher's Gleaming Trophy
 				i(266886),	-- Dreamrift Vanquisher's Gleaming Trophy
@@ -2113,164 +1846,6 @@ root(ROOTS.Unsorted, {
 				i(264911),	-- Forest Hunter's Arc
 				i(264913),	-- Focused Netherslicer
 			}),
-
-			--[[ Save if Darkal Needs
-			header(HEADERS.LFGDungeon, 3160, {	-- Crown of the Cosmos
-				-- Order
-				-- Back
-				-- Wrist
-				-- Waist
-				-- Shoulder
-				-- Legs
-				-- Head
-				-- Hands
-				-- Feet
-				-- Chest
-
-				-- Warrior
-				i(249947),	-- Night Ender's Greatmantle
-				i(249948),	-- Night Ender's Warbands
-				i(249949),	-- Night Ender's Girdle
-				i(249950),	-- Night Ender's Pauldrons
-				i(249951),	-- Night Ender's Chausses
-				i(249952),	-- Night Ender's Tusks
-				i(249953),	-- Night Ender's Fists
-				i(249954),	-- Night Ender's Greatboots
-				i(249955),	-- Night Ender's Breastplate
-
-				-- Paladin
-				i(249956),	-- Luminant Verdict's Greatmantle
-				i(249957),	-- Luminant Verdict's Cuffs
-				i(249958),	-- Luminant Verdict's Undaunted Emblem
-				i(249959),	-- Luminant Verdict's Providence Watch
-				i(249960),	-- Luminant Verdict's Greaves
-				i(249961),	-- Luminant Verdict's Unwavering Gaze
-				i(249962),	-- Luminant Verdict's Gauntlets
-				i(249963),	-- Luminant Verdict's Sabatons
-				i(249964),	-- Luminant Verdict's Divine Warplate
-
-				-- DK
-				i(249965),	-- Relentless Rider's Drape
-				i(249966),	-- Relentless Rider's Manacles
-				i(249967),	-- Relentless Rider's Chain
-				i(249968),	-- Relentless Rider's Dreadthorns
-				i(249969),	-- Relentless Rider's Legguards
-				i(249970),	-- Relentless Rider's Crown
-				i(249971),	-- Relentless Rider's Bonegrasps
-				i(249972),	-- Relentless Rider's Stompers
-				i(249973),	-- Relentless Rider's Cuirass
-
-				-- Shaman
-				i(249974),	-- Guardian of the Primal Core
-				i(249975),	-- Cuffs of the Primal Core
-				i(249976),	-- Ceinture of the Primal Core
-				i(249977),	-- Tempests of the Primal Core
-				i(249978),	-- Leggings of the Primal Core
-				i(249979),	-- Locus of the Primal Core
-				i(249980),	-- Earthgrips of the Primal Core
-				i(249981),	-- Sollerets of the Primal Core
-				i(249982),	-- Embrace of the Primal Core
-
-				-- Hunter
-				i(249983),	-- Primal Sentry's Spine
-				i(249984),	-- Primal Sentry's Wound Stanchers
-				i(249985),	-- Primal Sentry's Cinch
-				i(249986),	-- Primal Sentry's Trophies
-				i(249987),	-- Primal Sentry's Legguards
-				i(249988),	-- Primal Sentry's Maw
-				i(249989),	-- Primal Sentry's Talonguards
-				i(249990),	-- Primal Sentry's Swiftsteps
-				i(249991),	-- Primal Sentry's Scaleplate
-
-				-- Evoker
-				i(249992),	-- Shroud of the Black Talon
-				i(249993),	-- Bracers of the Black Talon
-				i(249994),	-- Girdle of the Black Talon
-				i(249995),	-- Beacons of the Black Talon
-				i(249996),	-- Greaves of the Black Talon
-				i(249997),	-- Hornhelm of the Black Talon
-				i(249998),	-- Enforcer's Grips of the Black Talon
-				i(249999),	-- Spelltreads of the Black Talon
-				i(250000),	-- Frenzyward of the Black Talon
-
-				-- Rogue
-				i(250001),	-- Disappearing Cloth of the Grim Jest
-				i(250002),	-- Trick Bracers of the Grim Jest
-				i(250003),	-- Toolbelt of the Grim Jest
-				i(250004),	-- Venom Casks of the Grim Jest
-				i(250005),	-- Blade Holsters of the Grim Jest
-				i(250006),	-- Masquerade of the Grim Jest
-				i(250007),	-- Sleight of Hand of the Grim Jest
-				i(250008),	-- Balancing Boots of the Grim Jest
-				i(250009),	-- Fantastic Finery of the Grim Jest
-
-				-- Monk
-				i(250010),	-- Windwrap of Ra-den's Chosen
-				i(250011),	-- Strikeguards of Ra-den's Chosen
-				i(250012),	-- Stormsigil of Ra-den's Chosen
-				i(250013),	-- Aurastones of Ra-den's Chosen
-				i(250014),	-- Swiftsweepers of Ra-den's Chosen
-				i(250015),	-- Fearsome Visage of Ra-den's Chosen
-				i(250016),	-- Thunderfists of Ra-den's Chosen
-				i(250017),	-- Storm Crashers of Ra-den's Chosen
-				i(250018),	-- Battle Garb of Ra-den's Chosen
-
-				-- Druid
-				i(250019),	-- Leafdrape of the Luminous Bloom
-				i(250020),	-- Bindings of the Luminous Bloom
-				i(250021),	-- Barksash of the Luminous Bloom
-				i(250022),	-- Seedpods of the Luminous Bloom
-				i(250023),	-- Phloemwraps of the Luminous Bloom
-				i(250024),	-- Branches  of the Luminous Bloom
-				i(250025),	-- Arbortenders of the Luminous Bloom
-				i(250026),	-- Rootslippers of the Luminous Bloom
-				i(250027),	-- Trunk of the Luminous Bloom
-
-				-- DH
-				i(250028),	-- Devouring Reaver's Drape
-				i(250029),	-- Devouring Reaver's Support Straps
-				i(250030),	-- Devouring Reaver's Emblem
-				i(250031),	-- Devouring Reaver's Exhaustplates
-				i(250032),	-- Devouring Reaver's Pistons
-				i(250033),	-- Devouring Reaver's Intake
-				i(250034),	-- Devouring Reaver's Essence Grips
-				i(250035),	-- Devouring Reaver's Soul Flatteners
-				i(250036),	-- Devouring Reaver's Engine
-
-				-- Warlock
-				i(250037),	-- Abyssal Immolator's Ritual Mantle
-				i(250038),	-- Abyssal Immolator's Shackles
-				i(250039),	-- Abyssal Immolator's Blazing Core
-				i(250040),	-- Abyssal Immolator's Fury
-				i(250041),	-- Abyssal Immolator's Pillars
-				i(250042),	-- Abyssal Immolator's Smoldering Flames
-				i(250043),	-- Abyssal Immolator's Grasps
-				i(250044),	-- Abyssal Immolator's Ashwalkers
-				i(250045),	-- Abyssal Immolator's Dreadrobe
-
-				-- Priest
-				i(250046),	-- Blind Oath's Shroud
-				i(250047),	-- Blind Oath's Wraps
-				i(250048),	-- Blind Oath's Jeweled Sash
-				i(250049),	-- Blind Oath's Seraphguards
-				i(250050),	-- Blind Oath's Leggings
-				i(250051),	-- Blind Oath's Winged Crest
-				i(250052),	-- Blind Oath's Touch
-				i(250053),	-- Blind Oath's Slippers
-				i(250054),	-- Blind Oath's Raiment
-
-				-- Mage
-				i(250055),	-- Voidbreaker's Encryption
-				i(250056),	-- Voidbreaker's Bracers
-				i(250057),	-- Voidbreaker's Sage Cord
-				i(250058),	-- Voidbreaker's Leyline Nexi
-				i(250059),	-- Voidbreaker's Britches
-				i(250060),	-- Voidbreaker's Veil
-				i(250061),	-- Voidbreaker's Gloves
-				i(250062),	-- Voidbreaker's Treads
-				i(250063),	-- Voidbreaker's Robe
-			}),
-			--]]
 		})),
 	}),
 	expansion(EXPANSION.TWW, {

@@ -1274,6 +1274,17 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			ach(42792, {	-- Blacksmithing at Midnight
 				i(263998),	-- Midnight Blacksmith's Shop Sign (DECOR!)
 			}),
+			ach(62232),	-- Blacksmithing-on-Demand
+			ach(62240, {	-- Dedicated to the Craft: Blacksmithing
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42792,	-- Blacksmithing at Midnight
+					62232,	-- Blacksmithing-on-Demand
+				}},
+				["groups"] = {
+					title(742),	-- Thalassian Blacksmith <Name>
+				},
+			}),
 		}),
 		n(QUESTS, {
 			q(93691, {	-- Blacksmithing Services Requested

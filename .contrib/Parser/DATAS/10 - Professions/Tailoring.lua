@@ -1310,6 +1310,17 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			ach(42794, {	-- Tailoring at Midnight
 				i(264174),	-- Midnight Tailor's Shop Sign (DECOR!)
 			}),
+			ach(62238),	-- Tailoring-on-Demand
+			ach(62246, {	-- Dedicated to the Craft: Tailoring
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42794,	-- Tailoring at Midnight
+					62238,	-- Tailoring-on-Demand
+				}},
+				["groups"] = {
+					title(748),	-- Thalassian Tailor <Name>
+				},
+			}),
 		}),
 		n(QUESTS, {
 			q(93696, {	-- Tailoring Services Requested
