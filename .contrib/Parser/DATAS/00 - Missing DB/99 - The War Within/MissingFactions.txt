@@ -3,9 +3,7 @@ faction(1041),	-- Frenzy
 11.1.5.59571
 faction(2689),	-- Flame's Radiance (Paragon)
 12.0.0.63534
-faction(2696),	-- Amani Tribe
 faction(2698),	-- Midnight
-faction(2699),	-- The Singularity
 faction(2700),	-- DEPRECATED Fungarian Fighting Ring
 faction(2705),	-- Amani Tribe (Paragon)
 faction(2706),	-- Witherbark Tribe

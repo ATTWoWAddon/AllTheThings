@@ -798,7 +798,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(253574, {	-- Everlasting Rock
 						["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
 					}),
-					i(188152),	-- Gateway Control Shard
+					--i(188152),	-- Gateway Control Shard
 					i(44922, {	-- Glyph of Stars
 						["classes"] = { DRUID },
 					}),

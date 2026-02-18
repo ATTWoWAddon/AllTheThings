@@ -1781,7 +1781,7 @@ local function CreateRow(container, rows, i)
 
 	-- Indicator is used by the Instance Saves functionality.
 	row.Indicator = row:CreateTexture(nil, "ARTWORK");
-	row.Indicator:SetPoint("RIGHT", row.Texture, "LEFT", -2, 0);
+	row.Indicator:SetPoint("RIGHT", row.Texture, "LEFT", -1, 0);
 	row.Indicator:SetPoint("BOTTOM");
 	row.Indicator:SetPoint("TOP");
 	row.Indicator:SetWidth(rowHeight);

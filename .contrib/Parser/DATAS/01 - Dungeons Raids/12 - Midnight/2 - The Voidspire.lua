@@ -307,7 +307,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(AVERZIAN, {
-					i(256648),	-- Pattern: Devouring Banding (RECIPE!)
 					i(264497),	-- Imperator's Torment Crystal (DECOR!)
 				}),
 				BossOnly(VORASIUS, {

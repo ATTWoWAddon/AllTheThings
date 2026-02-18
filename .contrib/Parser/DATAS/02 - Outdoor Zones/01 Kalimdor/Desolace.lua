@@ -415,7 +415,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5821, {	-- Bodyguard for Hire
 					["qg"] = 11625,	-- Cork Gizelton
-					["coord"] = { 40.4, 79.2, DESOLACE },
+					["coord"] = { 60.2, 38.2, DESOLACE },
 					["timeline"] = { REMOVED_5_0_4 },
 					["lvl"] = 30,
 					["groups"] = {

@@ -3065,3 +3065,5 @@
 20632@@@[DNT] [AUTOGEN] 12VD_Void_Crafting_ChannelingWardrobe01.m2
 12.0.1.65448
 20632@@@Devouring Ritual Spire
+12.0.1.65893
+11287@@@Sanctuary's Horadric Cube

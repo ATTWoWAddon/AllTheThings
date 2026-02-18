@@ -991,7 +991,6 @@ i(5065),	-- y Lieutenant Ring \\ Harpy Lieutenant Ring
 i(5066),	-- ure Plant \\ Fissure Plant
 i(5080),	-- owe's Ledger \\ Gazlowe's Ledger
 i(5082),	-- Kodo Leather \\ Thin Kodo Leather
-i(5088),	-- rol Console Operating Manual \\ Control Console Operating Manual
 i(5090),	-- Deprecated Torn Shirt
 i(5091),	-- test Eric Shirt
 i(5099),	-- of Lakota'mani \\ Hoof of Lakota'mani
@@ -1695,7 +1694,6 @@ i(8945),	-- Libram: Judgement III
 i(8947),	-- Libram: Exorcism VI
 i(8954),	-- Codex of Holy Word: Fortitude
 i(8955),	-- Codex of Fade
-i(8957),	-- efin Halibut \\ Spinefin Halibut
 i(8958),	-- Codex of Mind Blast
 i(8959),	-- Spinefin Halibut \\ Raw Spinefin Halibut
 i(8960),	-- Codex of Cure Disease
@@ -3242,7 +3240,6 @@ i(21533),	-- ssus of Zora's Husk \\ Colossus of Zora's Husk
 i(21534),	-- ssus of Ashi's Husk \\ Colossus of Ashi's Husk
 i(21535),	-- ssus of Regal's Husk \\ Colossus of Regal's Husk
 i(21536),	-- e Stone \\ Elune Stone
-i(21552),	-- ped Yellowtail \\ Striped Yellowtail
 i(21560),	-- l Purple Rocket \\ Small Purple Rocket
 i(21561),	-- l White Rocket \\ Small White Rocket
 i(21562),	-- l Yellow Rocket \\ Small Yellow Rocket
@@ -4691,7 +4688,6 @@ i(27785),	-- ed Deep Peridot \\ Jagged Deep Peridot \\ Notched Deep Peridot
 i(27808),	-- Jump-a-tron 4000 Key
 i(27815),	-- m of the Astral Winds \\ Totem of the Astral Winds
 i(27820),	-- ed Deep Peridot \\ Jagged Deep Peridot \\ Notched Deep Peridot
-i(27859),	-- ar Caps \\ Zangar Caps
 i(27863),	-- Extended Cost Bryanite \\ Brian's Bryanite of Extended Cost
 i(27864),	-- Extended Cost Copying Bryanite \\ Brian's Bryanite of Extended Cost Copying
 i(27886),	-- of the Emerald Queen \\ Idol of the Emerald Queen
@@ -4885,7 +4881,6 @@ i(29429),	-- 's Doom \\ Boom's Doom
 i(29434),	-- e of Justice \\ Badge of Justice
 i(29445),	-- eying Markers \\ Surveying Markers
 i(29447),	-- Zapper \\ Fel Zapper
-i(29453),	-- eggar Mushroom \\ Sporeggar Mushroom
 i(29454),	-- erwine \\ Silverwine
 i(29473),	-- ectorate Igniter \\ Protectorate Igniter
 i(29475),	-- fying Dust \\ Pacifying Dust
@@ -5298,11 +5293,7 @@ i(32639),	-- ed Mossjewel \\ Jagged Mossjewel \\ Unstable Talasite
 i(32642),	-- Raw Darkrune
 i(32646),	-- llion of Karabor \\ Medallion of Karabor
 i(32657),	-- orn's Sparrowhawk Whistle \\ Arthorn's Sparrowhawk Whistle
-i(32667),	-- Ale \\ Bash Ale
-i(32668),	-- Ogris \\ Dos Ogris
 i(32680),	-- erang \\ Booterang
-i(32685),	-- 'la Chicken Fingers \\ Ogri'la Chicken Fingers
-i(32686),	-- o's Fortune Giblets \\ Mingo's Fortune Giblets
 i(32688),	-- dstained Fortune \\ Bloodstained Fortune
 i(32689),	-- dstained Fortune \\ Bloodstained Fortune
 i(32690),	-- dstained Fortune \\ Bloodstained Fortune
@@ -5332,7 +5323,6 @@ i(32729),	-- Monster - Polearm, Epic D 05
 i(32735),	-- Delicate Spencerite \\ Radiant Spencerite
 i(32741),	-- by Arakkoa Disguise \\ Shabby Arakkoa Disguise
 i(32743),	-- Monster - Axe -Doomguard Punisher
-i(32758),	-- e Cologne \\ Brute Cologne
 i(32760),	-- Macho Gnome's Arrow \\ The Macho Gnome's Arrow
 i(32761),	-- Sarge's Bullet \\ The Sarge's Bullet
 i(32762),	-- ster's Brain Juice \\ Rulkster's Brain Juice
@@ -7913,8 +7903,6 @@ i(49313),	-- shed Dragonslayer's Signet \\ Polished Dragonslayer's Signet
 i(49334),	-- e of Onyxia 2.0 \\ Scale of Onyxia 2.0
 i(49335),	-- s' Journal \\ Daros' Journal
 i(49349),	-- Golden Chains
-i(49351),	-- ume Neutralizer \\ Perfume Neutralizer
-i(49352),	-- gne Neutralizer \\ Cologne Neutralizer
 i(49353),	-- Monster - Polearm, Epic D 02 Glow Red Low, On Fire (Onyxia Special)
 i(49357),	-- Monster - Mace, 1H Tauren (Red, Fire)
 i(49372),	-- Permission Slip
@@ -24679,233 +24667,3 @@ i(248941),	-- [DNT] Dreadscar Battle Planning Map - do not use - new asset
 i(268368),	-- Fragmented Memento of Epoch Challenges
 11.2.7.64978
 i(252650),	-- Heartglow Listener
-12.0.0.63534
-i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
-i(250755),	-- Pouch of Mystic Grindings
-i(250807),	-- Selune's Stormarion Core
-i(255269),	-- Galactic Aspirant's Chain Sabatons
-i(255288),	-- Galactic Aspirant's Chain Belt
-i(257379),	-- Player Experience
-12.0.0.63724
-i(260910),	-- Boon of Vitality
-12.0.0.63854
-i(263354),	-- Filling the Void in Your Heart
-i(263379),	-- Personal Advertising Platform
-i(263380),	-- Recruitment Pamphlets
-12.0.0.64975
-i(243090),	-- Sturdy Haranir Chair
-i(246129),	-- Outsider's Gear
-i(246152),	-- Saptor Frill
-i(246693),	-- Self-Pouring Thalassian Sunwine
-i(253457),	-- Leather-Bound Haranir Wall Shelf
-i(253497),	-- Embroidered Sunfury Chair
-i(253508),	-- Harandar Signpost
-i(255643),	-- Silvermoon Barrel
-i(256042),	-- Silvermoon Bench
-i(256043),	-- Silvermoon Fencepost
-i(256172),	-- Silvermoon Fence
-i(256232),	-- Bunch of Ripe Grapes
-i(256397),	-- Packet of Instant Yeast
-i(257054),	-- A Rolled-Up Pillow
-i(258768),	-- Battered Safebox Key
-i(258769),	-- Worn Safebox Key
-i(258770),	-- Tarnished Safebox Key
-i(262450),	-- Ensorcelled Broom
-i(262451),	-- Gilded Silvermoon Anvil
-i(262454),	-- Shining Sin'dorei Hourglass
-i(262455),	-- Font of Gleaming Water
-i(262456),	-- Ornamental Silvermoon Hanger
-i(262457),	-- Gilded Silvermoon Hanger
-i(262460),	-- Ren'dorei Anvil
-i(262468),	-- Ren'dorei Postal Repository
-i(262469),	-- Brilliant Phoenix Harp
-i(262470),	-- Spellbound Tome of Thalassian Magics
-i(262471),	-- Bejeweled Sin'dorei Lyre
-i(262590),	-- Rootflame Campfire
-i(262591),	-- Luxurious Silvermoon Lounge Cushion
-i(262592),	-- Plush Silvermoon Bed
-i(262594),	-- Homely Sin'dorei Shelf
-i(262595),	-- Homely Wall Shelves
-i(262597),	-- Gilded Eversong Book
-i(262599),	-- Silvermoon Curtains
-i(262607),	-- Void Elf Throne
-i(262608),	-- Void Elf Stool
-i(262609),	-- Void Elf Floating Lantern
-i(262616),	-- Lively Songwriter's Quill
-i(262617),	-- Ren'dorei Crafting Framework
-i(262618),	-- Ren'dorei Void Projector
-i(263031),	-- Twisted Rope Coil
-i(263034),	-- Magnificent Towering Bookcase
-i(263211),	-- Gilded Eversong Cup
-i(264244),	-- Plush Haranir Leather Pillow
-i(264344),	-- Cosmic Void Orb
-i(264352),	-- Elegant Elven Bathtub
-i(264353),	-- Empty Elegant Elven Bathtub
-i(264477),	-- Thunder Totem Mailbox
-i(264717),	-- Amani Warding Hex
-i(265031),	-- Consortium Translocation Portal
-i(265653),	-- Elegant Storage Table
-i(265654),	-- Elegant Elven Washbasin
-i(266130),	-- Gilded Silvermoon Gazebo
-i(266235),	-- Razorwind Cactus Large Garden Cluster
-i(266238),	-- Cragthorn Highlands Large Garden Cluster
-i(267645),	-- Dreamrift Vanquisher's Argent Trophy
-i(267646),	-- March on Quel'Danas Vanquisher's Argent Trophy
-i(268049),	-- Voidspire Vanquisher's Argent Trophy
-i(268111),	-- Arkonite Beacon
-i(268112),	-- Argunite Beacon
-i(268115),	-- Overbaked Donut
-i(268116),	-- Twin-Flame Holder
-i(268551),	-- Scroll of Reflection
-12.0.0.65512
-i(260341),	-- Star the Lucky Dragon
-i(260360),	-- Gummi the Glow Wyrm
-i(262438),	-- Fantastical Goblin Waveshredder
-i(262585),	-- Pristine Lunch Bag
-i(262587),	-- Brown Lunch Bag
-i(262588),	-- Sack Lunch
-i(262660),	-- Egg Farmer's Backpack
-i(262661),	-- Ghastropod
-i(262881),	-- Lil' Staropod
-i(262909),	-- Hypo-Speed X6000
-i(263383),	-- Corked Bottle of Liquid Mystery
-i(264273),	-- Fel Spirehawk
-i(264278),	-- Sturdy Portable Ice Chest
-i(264279),	-- Tall Corked Bottle of Liquid Mystery
-i(264280),	-- Short Corked Bottle of Liquid Mystery
-i(264281),	-- Preserved Gift of Gilneas
-i(264282),	-- Bluebird's Golden Cage
-i(264283),	-- Backboard and Hoop Playset
-i(264384),	-- Zapmaster Viewer 3000
-i(264396),	-- Naturally Elegant Doormat
-i(264397),	-- Simply Adorned Vase and Flowers
-12.0.0.65560
-i(253297),	-- Lunar Celebrant's Vase with Maple Branch
-12.0.0.65614
-i(258742),	-- Scroll of the Adherent
-12.0.1.64889
-i(248814),	-- Witherbark Supplies
-i(249775),	-- Bright Berry
-i(249779),	-- Discordant Tune
-i(253210),	-- Soothsayer's Signet
-i(253211),	-- Smuggler's Signet
-i(257024),	-- A Lost Hunting Knife
-i(257145),	-- Crimson Dragonhawk
-i(259219),	-- Bear Tooth
-i(259220),	-- Dragonhawk Feather
-i(259223),	-- Lynx Claw
-i(264251),	-- Depthdiver's Cooking Spit
-i(268274),	-- Blinky's Collar
-i(268365),	-- Thalassian Competitor's Staff
-i(268475),	-- Evercore Dome Dinger
-i(268477),	-- P.O.W. x3
-i(268479),	-- Thalassian Competitor's Rifle
-i(268485),	-- Victorious Stormarion Pinnacle Cache
-i(268487),	-- Avid Learner's Supply Pack
-i(268488),	-- Overflowing Abundant Satchel
-i(268489),	-- Surplus Bag of Party Favors
-i(268490),	-- Apex Cache
-i(268534),	-- Sanctum's Decree
-i(268545),	-- Aspiring Preyseeker's Chest \\ Preyseeker's Adventurer Chest
-12.0.1.64914
-i(248723),	-- Stolen Documents
-i(248964),	-- Cosmic Void Table
-i(258268),	-- Waxmaster's Candle Rack
-i(258744),	-- Skyreach Circular Table
-i(259217),	-- Ambient Aethercharged Crystal
-i(262352),	-- Lush Telogrus Carpet
-i(262462),	-- Dark Void Inkwell
-i(262463),	-- Cosmic Void Ashwell
-i(262464),	-- Floating Void-Touched Tome
-i(262465),	-- Ren'dorei Stargazer
-i(262466),	-- Void Elf Table
-i(262472),	-- Cosmic Kettle
-i(262473),	-- Cosmic Chalice
-i(262600),	-- Stitched Haranir Rug
-i(262602),	-- Ren'dorei Warp Orb
-i(262606),	-- Smoldering Energy Forge
-i(262611),	-- Voidstrider Saddlebag
-i(262612),	-- Sturdy Ren'dorei Cask
-i(263049),	-- Ren'dorei Lightpost
-i(263240),	-- Sturdy Void Elf Crate
-i(263499),	-- Sturdy Void Elf Trunk
-i(264337),	-- Cosmic Void Training Dummy
-i(264339),	-- Cosmic Void Summoning Crystal
-i(264340),	-- Cosmic Barrel
-i(264341),	-- Cosmic Void Crate
-i(264343),	-- Cosmic Void Gravitational Orb
-i(264351),	-- Ornate Void Elf Banner \\ Ornate Cosmic Banner
-i(264483),	-- Cosmic Void Campfire
-i(264508),	-- Sturdy Void Elf Barricade
-i(264509),	-- Void Elf Barrel
-i(264657),	-- Open Sturdy Void Elf Trunk
-i(264659),	-- Cosmic Traveler's Satchel
-i(267082),	-- Ornate Cosmic Table
-i(267209),	-- Open Void Elf Bedroll
-i(268679),	-- Hearty Impossibly Royal Roast
-i(268680),	-- Hearty Flora Frenzy
-12.0.1.65337
-i(246458),	-- Grand Aethercharged Crystal
-i(250793),	-- Lush Garden Trellis
-i(250794),	-- Colorful White Noblegarden Egg
-i(250795),	-- Colorful Blue Noblegarden Egg
-i(250796),	-- Colorful Purple Noblegarden Egg
-i(251914),	-- Sumptuous Berry Pie
-i(252419),	-- Lush Garden Fungal Basin
-i(253546),	-- Lush Garden Butterfly Sconce
-i(253547),	-- Spring Blossom Wreath
-i(254417),	-- Spring Blossom Hanging Chair
-i(258294),	-- Lush Garden Gnome-Like Statue
-i(258567),	-- Lush Garden Fungal Chair
-i(258888),	-- Lush Garden Fungal Fountain
-i(259182),	-- Schematic: Giga-Gem Grippers
-i(262610),	-- Swirling Ritual Pedestal
-i(262790),	-- Restful Bronze Bench
-i(268695),	-- Camera \\ Pin-o-Matic Camera \\ Test Sharing Camera
-i(268728),	-- Saptor Salve
-i(268730),	-- Nether-Warped Egg \\ Void-Touched Egg
-i(268921),	-- Staff of the Great Dark
-i(269005),	-- Preyseeker's Glinting Coin Pouch
-i(269006),	-- Preyseeker's Gleaming Coin Pouch
-i(269007),	-- Preyseeker's Glittering Coin Pouch
-i(269010),	-- Essence of Lumber
-i(269022),	-- Healing Waters of Ahl'ua
-i(269023),	-- Phytogenic Poison Part
-12.0.1.65448
-i(246857),	-- "Shu'halo Perspective" Painting
-i(259172),	-- Schematic: Head-Mounted Beam Bummer
-i(259174),	-- Schematic: Rock Bonkin' Hardhat
-i(259176),	-- Schematic: Heavy-Duty Rock Assister
-i(259178),	-- Schematic: Self-Sharpening Sin'dorei Snippers
-i(259180),	-- Schematic: Sin'dorei Reeler's Rod
-i(259184),	-- Schematic: Turbo-Junker's Multitool v9
-i(259206),	-- Technique: Gilded Alchemist's Mixing Rod
-i(259208),	-- Technique: Gilded Sin'dorei Rolling Pin
-i(259210),	-- Technique: Gilded Sin'dorei Quill
-i(259231),	-- Plans: Sunforged Blacksmith's Toolbox
-i(259233),	-- Plans: Sunforged Leatherworker's Toolset
-i(259235),	-- Plans: Sunforged Needle Set
-i(259237),	-- Plans: Sunforged Blacksmith's Hammer
-i(259317),	-- Plans: Sunforged Sickle
-i(259318),	-- Plans: Sunforged Leatherworker's Knife
-i(259319),	-- Plans: Sunforged Pickaxe
-i(259322),	-- Plans: Sunforged Skinning Knife
-i(259354),	-- Brown Paper Sack
-i(262351),	-- Ornate Cosmic Rug
-i(262589),	-- Simple Haranir Table
-i(264660),	-- Ren'dorei Spired Tent
-i(265528),	-- Plans: Gilded Silvermoon Anvil
-i(265530),	-- Plans: Ornamental Silvermoon Hanger
-i(265532),	-- Plans: Gilded Silvermoon Hanger
-i(265534),	-- Plans: Ren'dorei Anvil
-i(265536),	-- Plans: Masterwork Crafting Hammer
-i(265538),	-- Plans: Ornate Crafter's Tongs
-i(269269),	-- Devouring Host Ritual Spire
-i(269586),	-- Emergency Soul Link
-12.0.1.65617
-i(248137),	-- M3DDY
-i(262789),	-- Small Telogrus Lamp
-i(269701),	-- Surplus Bag of Party Favors
-i(269702),	-- Overflowing Abundant Satchel
-i(269704),	-- Victorious Stormarion Cache
-i(269743),	-- Landro's Golden Loot Box

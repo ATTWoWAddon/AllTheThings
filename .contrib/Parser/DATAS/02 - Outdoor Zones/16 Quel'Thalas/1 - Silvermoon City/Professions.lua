@@ -1,7 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local STABILIZED_DERIVATE = 242651;
+
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		n(PROFESSIONS, {
@@ -9,11 +11,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 45.0, 55.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					filter(RECIPES, {
-						prof(ALCHEMY, sharedData({["cost"] = {{"c", ARTISAN_MOXIE.ALCHEMY, 150}}}, {
+						prof(ALCHEMY, sharedData({ ["cost"] = { { "c", ARTISAN_MOXIE.ALCHEMY, 150 } } }, {
 							i(247499),	-- Recipe: Haranir Preserving Agents (RECIPE!)
 							i(246671),	-- Recipe: Sunsmoke Censer (RECIPE!)
 						})),
-						prof(BLACKSMITHING, sharedData({["cost"] = {{"c", ARTISAN_MOXIE.BLACKSMITHING, 150}}}, {
+						prof(BLACKSMITHING, sharedData({ ["cost"] = { { "c", ARTISAN_MOXIE.BLACKSMITHING, 150 } } }, {
 							i(267281),	-- Plans: Blood Knight's Mercy (RECIPE!)
 							i(267282),	-- Plans: Blood Knight's Warblade (RECIPE!)
 							i(267284),	-- Plans: Bloomforged Claw (RECIPE!)
@@ -32,10 +34,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(259322),	-- Plans: Sunforged Skinning Knife (RECIPE!)
 							i(260246),	-- Plans: Thalassian Skeleton Key (RECIPE!)
 						})),
-						prof(ENCHANTING, sharedData({["cost"] = {{"c", ARTISAN_MOXIE.ENCHANTING, 150}}}, {
+						prof(ENCHANTING, sharedData({ ["cost"] = { { "c", ARTISAN_MOXIE.ENCHANTING, 150 } } }, {
 							i(256742),	-- Formula: Runed Dazzling Thorium Rod (RECIPE!)
 						})),
-						prof(ENGINEERING, sharedData({["cost"] = {{"c", ARTISAN_MOXIE.ENGINEERING, 150}}}, {
+						prof(ENGINEERING, sharedData({ ["cost"] = { { "c", ARTISAN_MOXIE.ENGINEERING, 150 } } }, {
 							i(259182),	-- Schematic: Giga-Gem Grippers (RECIPE!)
 							i(259172),	-- Schematic: Head-Mounted Beam Bummer (RECIPE!)
 							i(259176),	-- Schematic: Heavy-Duty Rock Assister (RECIPE!)
@@ -44,7 +46,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(259180),	-- Schematic: Sin'dorei Reeler's Rod (RECIPE!)
 							i(259184),	-- Schematic: Turbo-Junker's Multitool v9 (RECIPE!)
 						})),
-						prof(INSCRIPTION, sharedData({["cost"] = {{"c", ARTISAN_MOXIE.INSCRIPTION, 150}}}, {
+						prof(INSCRIPTION, sharedData({ ["cost"] = { { "c", ARTISAN_MOXIE.INSCRIPTION, 150 } } }, {
 							i(259206),	-- Technique: Gilded Alchemist's Mixing Rod (RECIPE!)
 							i(258504),	-- Technique: Gilded Eversong Book (RECIPE!)
 							i(259210),	-- Technique: Gilded Sin'dorei Quill (RECIPE!)
@@ -60,7 +62,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(258491),	-- Technique: Thalassian Missive of Perception (RECIPE!)
 							i(258495),	-- Technique: Thalassian Missive of Resourcefulness (RECIPE!)
 						})),
-						prof(JEWELCRAFTING, sharedData({["cost"] = {{"c", ARTISAN_MOXIE.JEWELCRAFTING, 150}}}, {
+						prof(JEWELCRAFTING, sharedData({ ["cost"] = { { "c", ARTISAN_MOXIE.JEWELCRAFTING, 150 } } }, {
 							i(256701),	-- Design: Attuned Thalassian Rune-Prism (RECIPE!)
 							i(256705),	-- Design: Flawless Text Scrutinizers (RECIPE!)
 							i(256713),	-- Design: Improved Right-Handed Magnifying Glass (RECIPE!)
@@ -70,7 +72,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(256703),	-- Design: Sin'dorei Scribe's Spectacles (RECIPE!)
 							i(256711),	-- Design: Thalassian Scribe's Crystalline Lens (RECIPE!)
 						})),
-						prof(LEATHERWORKING, sharedData({["cost"] = {{"c", ARTISAN_MOXIE.LEATHERWORKING, 150}}}, {
+						prof(LEATHERWORKING, sharedData({ ["cost"] = { { "c", ARTISAN_MOXIE.LEATHERWORKING, 150 } } }, {
 							i(256669),	-- Pattern: Eversong Hunter's Headcover (RECIPE!)
 							i(256655),	-- Pattern: Sin'dorei Alchemist's Hat (RECIPE!)
 							i(256660),	-- Pattern: Sin'dorei Engineer's Gloves (RECIPE!)
@@ -90,7 +92,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(256664),	-- Pattern: Thalassian Wildseeker's Stridercap (RECIPE!)
 							i(256671),	-- Pattern: Thalassian Wildseeker's Workbag (RECIPE!)
 						})),
-						prof(TAILORING, sharedData({["cost"] = {{"c", ARTISAN_MOXIE.TAILORING, 150}}}, {
+						prof(TAILORING, sharedData({ ["cost"] = { { "c", ARTISAN_MOXIE.TAILORING, 150 } } }, {
 							i(258133),	-- Pattern: Chic Silvermoon Pillow (RECIPE!)
 							i(258035),	-- Pattern: Elegant Artisan's Alchemy Coveralls (RECIPE!)
 							i(258036),	-- Pattern: Elegant Artisan's Cooking Hat (RECIPE!)
@@ -108,44 +110,44 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					-- Bags
 					i(260534, {	-- Master Alchemist's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.ALCHEMY, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.ALCHEMY, 600 } },
 					}),
 					i(260536, {	-- Master Blacksmith's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.BLACKSMITHING, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.BLACKSMITHING, 600 } },
 					}),
 					i(260537, {	-- Master Enchanter's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.ENCHANTING, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.ENCHANTING, 600 } },
 					}),
 					i(260538, {	-- Master Engineer's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.ENGINEERING, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.ENGINEERING, 600 } },
 					}),
 					i(260539, {	-- Master Herbalist's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.HERBALISM, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.HERBALISM, 600 } },
 					}),
 					i(260542, {	-- Master Leatherworker's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.LEATHERWORKING, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.LEATHERWORKING, 600 } },
 					}),
 					i(260543, {	-- Master Miner's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.MINING, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.MINING, 600 } },
 					}),
 					i(260540, {	-- Master Scribe's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.INSCRIPTION, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.INSCRIPTION, 600 } },
 					}),
 					i(260544, {	-- Master Skinner's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.SKINNING, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.SKINNING, 600 } },
 					}),
 					i(260541, {	-- Master Jewelcrafter's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.JEWELCRAFTING, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.JEWELCRAFTING, 600 } },
 					}),
 					i(260545, {	-- Master Tailor's Surplus Reagents
-						["cost"] = {{"c", ARTISAN_MOXIE.TAILORING, 600}},
+						["cost"] = { { "c", ARTISAN_MOXIE.TAILORING, 600 } },
 					}),
 				},
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 243283 },	-- Captain Flaresworn
 				["coord"] = { 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
-			},{
+			}, {
 				q(93723, {	-- Crafters Needed
 					["groups"] = {
 						i(251324),	-- Basket of Eversong Herbs
@@ -244,9 +246,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							},
 						}),
 						r(1230865, {	-- Lightfused Mana Potion
-							["cost"] = {
-								{ "i", STABILIZED_DERIVATE, 3 },
-							},
+							["cost"] = { { "i", STABILIZED_DERIVATE, 3 } },
 						}),
 						r(1230876, {	-- Flask of the Magisters
 							["cost"] = {
@@ -270,9 +270,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							},
 						}),
 						r(1230861, {	-- Primal Philosopher's Stone
-							["cost"] = {
-								{ "i", STABILIZED_DERIVATE, 5 },
-							},
+							["cost"] = { { "i", STABILIZED_DERIVATE, 5 } },
 						}),
 						r(1230893, {	-- School of Gems
 							["cost"] = {

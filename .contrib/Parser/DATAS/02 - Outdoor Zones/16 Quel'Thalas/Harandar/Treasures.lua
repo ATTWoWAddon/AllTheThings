@@ -264,6 +264,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
 			}),
+			--header(HEADERS.Achievement, 62290, {	-- Harandar: The Highest Peaks
+			-- Exo Note: Adding these back in but commenting them out. Ref: 6ab2244b9c8610ff5864c86b705ca10da55ac30d
+			-- 			 These need the ObjectIDs for Telescopes sourced.
+			--			 For reference, check 'Eversong Woods: The Highest Peaks' in Eversong Treasures.lua
+			--	q(94546),	-- Telescope Placed
+			--	q(94547),	-- Telescope Placed
+			--	q(94548),	-- Telescope Placed
+			--	q(94549),	-- Telescope Placed
+			--	q(94550, {	-- Telescope Placed
+			--		["coord"] = { 53.5, 58.6, MAP.MIDNIGHT.HARANDAR },
+			--	}),
+			--}),
 			o(572998, {	-- Burning Branch of the World Tree
 				["coord"] = { 47.1, 50.2, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92426,

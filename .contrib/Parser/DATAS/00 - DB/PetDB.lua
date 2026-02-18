@@ -4538,6 +4538,7 @@ i(259991, 4930);	-- Lil' Preyseeker
 i(258737, 4913);	-- Moon Darter
 i(221492, 4459);	-- Moss Skipper
 i(250137, 4876);	-- Mud Potadpole
+i(250863, 4888);	-- Naloki
 i(266076, 4881);	-- Nether Siphoner
 i(250145, 4884);	-- Pangolil
 i(244911, 4830);	-- Rhay'Dahr
@@ -4579,7 +4580,6 @@ i(262881, 4968);	-- Lil' Staropod
 i(260585, 4946);	-- Linda the Lucky
 i(262396, 4957);	-- Lost Star
 i(262999, 4971);	-- Luma
-i(250863, 4888);	-- Naloki
 i(251002, 4889);	-- Nether Familia
 i(262392, 4961);	-- Nibblesworth
 i(240840, 4803);	-- Niblet

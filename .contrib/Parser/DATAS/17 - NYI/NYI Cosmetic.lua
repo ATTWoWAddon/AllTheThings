@@ -1117,18 +1117,18 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(252747),	-- Plum Winter Toque
 				i(250293),	-- Red Hot Portable Bakery
 				i(252712),	-- Sepia Winter Toque
+				i(251992),	-- Shadestalker's Hunting Quiver
 				i(252751),	-- Snowy Winter Toque
 				i(251669),	-- Sturdy Wearable Pot Lid
 				i(252752),	-- Sunny Winter Toque
 				i(251985),	-- Trapper's Black Quiver
 				i(251986),	-- Trapper's Blue Quiver
-				i(251987),	-- Trapper's Brown Quiver
 				i(251988),	-- Trapper's Dark Brown Quiver
 				i(251990),	-- Trapper's Light Brown Quiver
 				i(251991),	-- Trapper's Red Quiver
-				i(251992),	-- Trapper's Purple Quiver
 				i(251672),	-- Used Wearable Pot Lid
 				i(252749),	-- Violet Winter Toque
+				i(251987),	-- Wildstalker's Hunting Quiver
 			}),
 			n(SETS, {
 

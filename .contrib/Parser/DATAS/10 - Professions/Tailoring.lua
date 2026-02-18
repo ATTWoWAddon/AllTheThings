@@ -1325,31 +1325,23 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.TAILORING, 1 }} }, {
-				r(446940),	-- Consecrated Cloak
-				r(446939),	-- Consecrated Cord
-				r(446938),	-- Consecrated Cuffs
-				r(446945),	-- Consecrated Gloves
-				r(446941),	-- Consecrated Hood
-				r(446943),	-- Consecrated Leggings
-				r(446944),	-- Consecrated Mantle
-				r(446942),	-- Consecrated Robe
-				r(446937),	-- Consecrated Slippers
-				r(446935),	-- Cool Sunset Bracers
-				r(446928),	-- Dawnweave Bolt
-				r(446977),	-- Dawnweave Reagent Bag
-				r(447001),	-- Daybreak Spellthread
-				r(446979),	-- Duskweave Bag
-				r(446927),	-- Duskweave Bolt
-				r(446932),	-- Gloves of the Woven Dusk
-				r(446930),	-- Grips of the Woven Dawn
-				r(446995),	-- Preserving Embroidery Thread
-				r(446933),	-- Slippers of the Woven Dusk
-				r(447000),	-- Sunset Spellthread
-				r(454431),	-- The Severed Satchel
-				r(446931),	-- Treads of the Woven Dawn
-				r(446934),	-- Warm Sunrise Bracers
-				r(446997),	-- Weavercloth Embroidery Thread
-				r(446999),	-- Weavercloth Spellthread
+				r(1228950),	-- Adherent's Silken Shroud
+				r(1227926),	-- Arcanoweave Bolt
+				r(1228984),	-- Arcanoweave Bracers
+				r(1228985),	-- Arcanoweave Cloak
+				r(1228986),	-- Arcanoweave Treads
+				r(1228945),	-- Martyr's Bindings
+				r(1228942),	-- Martyr's Crown
+				r(1228943),	-- Martyr's Gloves
+				r(1228947),	-- Martyr's Leggings
+				r(1228949),	-- Martyr's Mantle
+				r(1228948),	-- Martyr's Slippers
+				r(1228946),	-- Martyr's Vestments
+				r(1228944),	-- Martyr's Waistwrap
+				r(1228981),	-- Sunfire Bracers
+				r(1228982),	-- Sunfire Cloak
+				r(1228060),	-- Sunfire Silk Bolt
+				r(1228983),	-- Sunfire Treads
 			}),
 		}),
 		n(TREASURES, {

@@ -1535,6 +1535,7 @@ i(258129);	-- Jade Monument
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(250974);	-- Akil'zon's Updraft
 i(262431);	-- Bouncy Mushroom
 i(264805);	-- Brann-O-Vision 3000
 i(267291);	-- Coffer Key Glue
@@ -1561,7 +1562,6 @@ i(256893);	-- Wretched Dredger's Brand
 --- UNSORTED ---
 i(257736);	-- [DNT] [PH] 12.0 Holy Hearthstone
 i(243146);	-- [DNT] Ren'dorei Struggle
-i(250974);	-- Akil'zon's Updraft
 i(251633);	-- Bursting Bounty Bundle
 i(264672);	-- Cosmic Ritual Stone
 i(266370);	-- Dundun's Abundant Travel Method

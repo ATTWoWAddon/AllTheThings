@@ -1437,26 +1437,24 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.LEATHERWORKING, 1 }} }, {
-				r(441460),	-- Blessed Weapon Grip
-				r(441065),	-- Glyph-Etched Binding
-				r(441059),	-- Glyph-Etched Breastplate
-				r(441063),	-- Glyph-Etched Cuisses
-				r(441064),	-- Glyph-Etched Epaulets
-				r(441061),	-- Glyph-Etched Gauntlets
-				r(441062),	-- Glyph-Etched Guise
-				r(441060),	-- Glyph-Etched Stompers
-				r(441066),	-- Glyph-Etched Vambraces
-				r(441058),	-- Rune-Branded Armbands
-				r(441053),	-- Rune-Branded Grasps
-				r(441054),	-- Rune-Branded Hood
-				r(441052),	-- Rune-Branded Kickers
-				r(441055),	-- Rune-Branded Legwraps
-				r(441056),	-- Rune-Branded Mantle
-				r(441051),	-- Rune-Branded Tunic
-				r(441057),	-- Rune-Branded Waistband
-				r(443961),	-- Smoldering Pollen Hauberk
-				r(443951),	-- Weathered Stormfront Vest
-				r(441461),	-- Writhing Armor Banding
+				r(1237545),	-- Blood Knight's Armor Kit
+				r(1237579),	-- Devouring Banding
+				r(1237541),	-- Farstrider's Brilliant Plumes
+				r(1237543),	-- Farstrider's Plated Bracers
+				r(1237537),	-- Farstrider's Razor Talons
+				r(1237540),	-- Farstrider's Reinforced Faulds
+				r(1237536),	-- Farstrider's Scouting Vest
+				r(1237538),	-- Farstrider's Sharpened Claws
+				r(1237542),	-- Farstrider's Trophy Belt
+				r(1237539),	-- Farstrider's Unwavering Visage
+				r(1237507),	-- Silvermoon Agent's Coat
+				r(1237510),	-- Silvermoon Agent's Cover
+				r(1237514),	-- Silvermoon Agent's Deflectors
+				r(1237509),	-- Silvermoon Agent's Handwraps
+				r(1237511),	-- Silvermoon Agent's Leggings
+				r(1237512),	-- Silvermoon Agent's Mantle
+				r(1237508),	-- Silvermoon Agent's Sneakers
+				r(1237513),	-- Silvermoon Agent's Utility Belt
 			}),
 		}),
 		n(TREASURES, {

@@ -49,9 +49,9 @@ local function ColorizeRGB(str, r, g, b)
 end
 
 -- Generates a Color Scale between Red and Green with the Blue Completed color for 100%
-local colors, red, green, h = app.Colors, RGBToHSV(1,0,0), RGBToHSV(0,1,0);
+local red, green, h = RGBToHSV(1,0,0), RGBToHSV(0,1,0);
 local ProgressColors = setmetatable({
-	[1] = colors.Completed,
+	[1] = app.Colors.Completed,
 }, {
 	__index = function(t, p)
 		p = tonumber(p);
@@ -212,37 +212,33 @@ app.TryColorizeName = function(group, name)
 	if IsRetrieving(name) then return name; end
 	-- raid headers
 	if group.isRaid then
-		return Colorize(name, colors.Raid);
+		return Colorize(name, app.Colors.Raid);
 	-- groups which are ignored for progress
 	elseif group.sourceIgnored then
-		return Colorize(name, colors.SourceIgnored);
+		return Colorize(name, app.Colors.SourceIgnored);
 	-- locked things
 	elseif group.locked then
-		return Colorize(name, colors.Locked);
-	-- lockable things (use breadcrumb color for similar concept)
-	elseif group.lc then
-		return Colorize(name, colors.Breadcrumb)
-	-- breadcrumbs (should always be covered within Quest lib)
-	-- elseif group.isBreadcrumb then
-	-- 	return Colorize(name, colors.Breadcrumb);
-	-- if people REALLY only want to see colors in account/debug then we can comment this in
-	elseif UseMoreColors --and (app.MODE_DEBUG_OR_ACCOUNT)
+		return Colorize(name, app.Colors.Locked);
+	-- lockable things / breadcrumbs
+	elseif group.lc or group.isBreadcrumb then
+		return Colorize(name, app.Colors.Breadcrumb)
+	elseif UseMoreColors
 	then
 		-- class color
 		if group.classID then
 			return Colorize(name, app.ClassInfoByID[group.classID].colorStr);
 		elseif group.accountWide then
-			return Colorize(name, colors.Account)
+			return Colorize(name, app.Colors.Account)
 		elseif group.c and #group.c == 1 then
 			return Colorize(name, app.ClassInfoByID[group.c[1]].colorStr);
 		-- faction colors
 		elseif group.r then
 			-- red for Horde
 			if group.r == Horde then
-				return Colorize(name, colors.Horde);
+				return Colorize(name, app.Colors.Horde);
 			-- blue for Alliance
 			elseif group.r == Alliance then
-				return Colorize(name, colors.Alliance);
+				return Colorize(name, app.Colors.Alliance);
 			end
 		-- specific races
 		elseif group.races then
@@ -250,10 +246,10 @@ app.TryColorizeName = function(group, name)
 			local arace = containsAny(group.races, ALLIANCE_ONLY);
 			if hrace and not arace then
 				-- this group requires a horde-only race, and not any alliance race
-				return Colorize(name, colors.Horde);
+				return Colorize(name, app.Colors.Horde);
 			elseif arace and not hrace then
 				-- this group requires a alliance-only race, and not any horde race
-				return Colorize(name, colors.Alliance);
+				return Colorize(name, app.Colors.Alliance);
 			end
 		-- specific raceID
 		elseif group.raceID then
@@ -261,17 +257,17 @@ app.TryColorizeName = function(group, name)
 			local arace = contains(ALLIANCE_ONLY, group.raceID);
 			if hrace and not arace then
 				-- this group requires a horde-only race, and not any alliance race
-				return Colorize(name, colors.Horde);
+				return Colorize(name, app.Colors.Horde);
 			elseif arace and not hrace then
 				-- this group requires a alliance-only race, and not any horde race
-				return Colorize(name, colors.Alliance);
+				return Colorize(name, app.Colors.Alliance);
 			end
 		-- un-acquirable color
 		-- grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
 		elseif not app.CurrentCharacterFilters(group) then
-			return Colorize(name, colors.Unavailable);
+			return Colorize(name, app.Colors.Unavailable);
 		elseif group.questID and app.AccountWideQuestsDB[group.questID] then
-			return Colorize(name, colors.Account)
+			return Colorize(name, app.Colors.Account)
 		end
 	end
 	return name;
@@ -281,11 +277,11 @@ app.GetColoredTimeRemaining = function(t)
 	if t and t > 0 then
 		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(t))
 		if t < 30 then
-			return Colorize(timeLeft, colors.TimeUnder30Min);
+			return Colorize(timeLeft, app.Colors.TimeUnder30Min);
 		elseif t < 120 then
-			return Colorize(timeLeft, colors.TimeUnder2Hr);
+			return Colorize(timeLeft, app.Colors.TimeUnder2Hr);
 		else
-			return Colorize(timeLeft, colors.Time);
+			return Colorize(timeLeft, app.Colors.Time);
 		end
 	end
 end

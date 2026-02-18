@@ -8,8 +8,8 @@ ALCAZ_ISLAND = createHeader({
 	text = {
 		en = "Alcaz Island",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Isla de Alcaz",
+		mx = "Isla de Alcaz",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -21,8 +21,8 @@ ALCAZ_ISLAND = createHeader({
 	description = {
 		en = "Return to Alcaz Island to get to get to the bottom of Dr. Weavil's insidious plans, and perhaps you will take home a nice souvenir.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Regresa a la isla de Alcaz para llegar al fondo de los insidiosos planes del Dr. Weavil, y quizás te lleves a casa un bonito recuerdo.",
+		mx = "Regresa a la isla de Alcaz para llegar al fondo de los insidiosos planes del Dr. Weavil, y quizás te lleves a casa un bonito recuerdo.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -2332,6 +2332,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(11186, {	-- Signs of Treachery?
 					["provider"] = { "i", 33115 },	-- Sealed Letter
+					["coord"] = { 47.0, 46.8, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["cr"] = 23881,	-- Apothecary Cylla

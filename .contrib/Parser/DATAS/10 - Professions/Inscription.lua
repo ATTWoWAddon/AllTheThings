@@ -5264,7 +5264,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(70031, {	-- Artisan's Supply: Chef's Smooth Rolling Pin
 				["provider"] = { "n", 198125 },	-- Isarian Shadowplume
 				["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
-				["cost"] = {{ "i", 191233, 1 }},	-- 1x Chef's Smooth Rolling Pin
+				["cost"] = { { "i", 191233, 1 } },	-- 1x Chef's Smooth Rolling Pin
 				["_drop"] = { "g" },
 			}),
 			q(70254, {	-- Hidden Profession Master Inscription
@@ -5276,7 +5276,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = {{"i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
+				["cost"] = { { "i", 191784, 1 } },	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["groups"] = {
 					i(190456),	-- Artisan's Mettle
@@ -5289,7 +5289,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			["groups"] = {
 				i(198607),	-- Scribe's Glyphs
 			},
-		},{
+		}, {
 			------ Requires 25 Skill ------
 			q(66945, {	-- Icy Ink
 				["description"] = "Requires 25 Skill.",
@@ -5398,7 +5398,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 } } }, {
 				r(383533),	-- Azurescale Sigil
 				r(383536),	-- Bronzescale Sigil
 				r(383512),	-- Bundle O' Cards: Dragon Isles
@@ -5531,7 +5531,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			["groups"] = {
 				currency(PROFESSION_KNOWLEDGE.DF.INSCRIPTION),
 			},
-		},{
+		}, {
 			i(198607),	-- Scribe's Glyphs
 			q(74105, {	-- DF Inscription Order: Inscription
 				["name"] = "DF Inscription Order: Inscription",
@@ -5585,7 +5585,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 } } }, {
 				r(447868),	-- Algari Treatise on Inscription
 				r(444192),	-- Darkmoon Sigil: Evolve
 				r(444193),	-- Darkmoon Sigil: Radiance
@@ -5664,7 +5664,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			["groups"] = {
 				currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION),
 			},
-		},{
+		}, {
 			i(228776),	-- Algari Scribe's Journal
 			q(83730, {	-- TWW Inscription Order: Inscription
 				["name"] = "TWW Inscription Order: Inscription",
@@ -5699,7 +5699,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.INSCRIPTION, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.MID.INSCRIPTION, 1 } } }, {
 				r(1230060),	-- Aln'hara Cane
 				r(1230061),	-- Aln'hara Lantern
 				r(1230059),	-- Aln'hara Pikestaff
@@ -5789,7 +5789,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			["groups"] = {
 				currency(PROFESSION_KNOWLEDGE.MID.INSCRIPTION),
 			},
-		},{
+		}, {
 			i(263457),	-- Thalassian Scribe's Journal
 			q(95131, {	-- MID Inscription Order: Inscription
 				["name"] = "MID Inscription Order: Inscription",

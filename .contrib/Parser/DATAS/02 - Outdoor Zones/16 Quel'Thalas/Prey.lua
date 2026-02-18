@@ -390,6 +390,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 				i(255825),	-- Disarmed Trap
 			}),
 			filter(REAGENTS, {
+				i(251283),	-- Tormented Tantalum
 			}),
 			filter(RECIPES, {
 			}),

@@ -3,10 +3,10 @@
 -----------------------------------------------------
 root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-		ach(18866),	-- Anvil Mastery IV
-		ach(18865),	-- Anvil Mastery III
-		ach(18864),	-- Anvil Mastery II
 		ach(18862),	-- Anvil Mastery I
+		ach(18864),	-- Anvil Mastery II
+		ach(18865),	-- Anvil Mastery III
+		ach(18866),	-- Anvil Mastery IV
 		ach(18851),	-- Skeletons in the Lockbox (automated)
 	})),
 	expansion(EXPANSION.CLASSIC, {
@@ -237,7 +237,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuest"] = 38507,	-- Secrets of Leysmithing
 			["provider"] = { "n", 97261 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-			["cost"] = { { "i", 124103,	10 }, },	-- 10xFoxflower
+			["cost"] = { { "i", 124103,	10 } },	-- 10x Foxflower
 		}),
 		q(38500, {	-- Leysmithing Mastery
 			["sourceQuest"] = 38515,	-- Nature Provides
@@ -277,9 +277,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38513 },	-- The Highmountain Smiths
 			["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 			["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
-			["cost"] = {
-				{ "i", 123893, 1 },	-- 1xLeystone Gauntlets
-			},
+			["cost"] = { { "i", 123893, 1 } },	-- 1x Leystone Gauntlets
 		}),
 		q(39699, {	-- Ironhorn Leysmithing
 			["sourceQuests"] = { 38514 },	-- You Are Not Worthy
@@ -408,8 +406,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
 			["coord"] = { 30.0, 53.4, SURAMAR },
 			["cost"] = {
-				{ "i", 123918, 60 },	-- 60xLeystone Ore
-				{ "i", 123919, 60 },	-- 60xFelslate
+				{ "i", 123918, 60 },	-- 60x Leystone Ore
+				{ "i", 123919, 60 },	-- 60x Felslate
 			},
 		}),
 		q(38528, {	-- Leystone's Potential
@@ -441,16 +439,16 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 			["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
 			["cost"] = {
-				{ "i", 123898, 1 },	-- 1xLeystone Armguards
-				{ "i", 123892, 1 },	-- 1xLeystone Boots
-				{ "i", 123891, 1 },	-- 1xLeystone Breastplate
-				{ "i", 123893, 1 },	-- 1xLeystone Gauntlets
-				{ "i", 123895, 1 },	-- 1xLeystone Greaves
-				{ "i", 123894, 1 },	-- 1xLeystone Helm
-				{ "i", 123896, 1 },	-- 1xLeystone Pauldrons
-				{ "i", 123897, 1 },	-- 1xLeystone Waistguard
-				{ "i", 123898, 1 },	-- 1xLeystone Armguards
-				{ "i", 123898, 1 },	-- 1xLeystone Armguards
+				{ "i", 123898, 1 },	-- 1x Leystone Armguards
+				{ "i", 123892, 1 },	-- 1x Leystone Boots
+				{ "i", 123891, 1 },	-- 1x Leystone Breastplate
+				{ "i", 123893, 1 },	-- 1x Leystone Gauntlets
+				{ "i", 123895, 1 },	-- 1x Leystone Greaves
+				{ "i", 123894, 1 },	-- 1x Leystone Helm
+				{ "i", 123896, 1 },	-- 1x Leystone Pauldrons
+				{ "i", 123897, 1 },	-- 1x Leystone Waistguard
+				{ "i", 123898, 1 },	-- 1x Leystone Armguards
+				{ "i", 123898, 1 },	-- 1x Leystone Armguards
 			},
 			["groups"] = {
 				r(182966),	-- Leystone Helm [Rank 2] (RECIPE!)
@@ -499,7 +497,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123917, 1 } },	-- 1x Demonsteel Armguards
+			["cost"] = { { "i", 123917, 1 } },	-- 1x Demonsteel Armguards
 			["groups"] = {
 				i(123940),	-- Plans: Demonsteel Armguards [Rank 2] (RECIPE!)
 			},
@@ -509,7 +507,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123911, 1 } },	-- 1x Demonsteel Boots
+			["cost"] = { { "i", 123911, 1 } },	-- 1x Demonsteel Boots
 			["groups"] = {
 				i(123946),	-- Plans: Demonsteel Boots [Rank 2] (RECIPE!)
 			},
@@ -519,7 +517,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123910, 1 } },	-- 1x Demonsteel Breastplate
+			["cost"] = { { "i", 123910, 1 } },	-- 1x Demonsteel Breastplate
 			["groups"] = {
 				i(123947),	-- Plans: Demonsteel Breastplate [Rank 2] (RECIPE!)
 			},
@@ -529,7 +527,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123912, 1 } },	-- 1x Demonsteel Gauntlets
+			["cost"] = { { "i", 123912, 1 } },	-- 1x Demonsteel Gauntlets
 			["groups"] = {
 				i(123945),	-- Plans: Demonsteel Gauntlets [Rank 2] (RECIPE!)
 			},
@@ -539,7 +537,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123914, 1 } },	-- 1x Demonsteel Greaves
+			["cost"] = { { "i", 123914, 1 } },	-- 1x Demonsteel Greaves
 			["groups"] = {
 				i(123943),	-- Plans: Demonsteel Greaves [Rank 2] (RECIPE!)
 			},
@@ -549,7 +547,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123913, 1 } },	-- 1x Demonsteel Helm
+			["cost"] = { { "i", 123913, 1 } },	-- 1x Demonsteel Helm
 			["groups"] = {
 				i(123944),	-- Plans: Demonsteel Helm [Rank 2] (RECIPE!)
 			},
@@ -559,7 +557,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123915, 1 } },	-- 1x Demonsteel Pauldrons
+			["cost"] = { { "i", 123915, 1 } },	-- 1x Demonsteel Pauldrons
 			["groups"] = {
 				i(123942),	-- Plans: Demonsteel Pauldrons [Rank 2] (RECIPE!)
 			},
@@ -569,7 +567,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123916, 1 } },	-- 1x Demonsteel Waistguard
+			["cost"] = { { "i", 123916, 1 } },	-- 1x Demonsteel Waistguard
 			["groups"] = {
 				i(123941),	-- Plans: Demonsteel Waistguard [Rank 2] (RECIPE!)
 			},
@@ -648,8 +646,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["provider"] = { "n", 125341 },	-- Khamir
 			["coord"] = { 40.6, 65.6, THE_VINDICAAR_KROKUUN_LOWER },
 			["cost"] = {
-				{ "i", 151564, 42 },	-- 42xEmpyrium
-				{ "i", 151568, 2 },		-- 2xPrimal Sargerite
+				{ "i", 151564, 42 },	-- 42x Empyrium
+				{ "i", 151568, 2 },		-- 2x Primal Sargerite
 			},
 			["groups"] = {
 				r(247710),	-- Empyrial Breastplate [Rank 1] (RECIPE!)
@@ -840,7 +838,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			q(70025, {	-- Artisan's Supply: Draconium Sickle
 				["provider"] = { "n", 192164 },	-- Gringot Coldsteel
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-				["cost"] = {{ "i", 191241, 1 }},	-- Draconium Sickle
+				["cost"] = { { "i", 191241, 1 } },	-- Draconium Sickle
 				["_drop"] = { "g" },
 			}),
 			q(70250, {	-- Hidden Profession Master Blacksmith
@@ -852,7 +850,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
+				["cost"] = { { "i", 191784, 1 } },	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["groups"] = {
 					i(190456),	-- Artisan's Mettle
@@ -865,7 +863,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["groups"] = {
 				i(198606),	-- Blacksmith's Writ
 			},
-		},{
+		}, {
 			------ Requires 25 Skill ------
 			q(70589, {	-- Blacksmithing Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -947,7 +945,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
-				["cost"] = {{ "i", 190484, 3 }},	-- 3x Draconium Sword
+				["cost"] = { { "i", 190484, 3 } },	-- 3x Draconium Sword
 			}),
 			q(77936, {	-- A Warm Harvest
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
@@ -961,7 +959,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, 1 } } }, {
 				r(376700),	-- Illustrious Insight
 				r(371412),	-- Khaz'gorite Blacksmith's Hammer
 				r(371374),	-- Khaz'gorite Blacksmith's Toolbox
@@ -1107,7 +1105,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["groups"] = {
 				currency(PROFESSION_KNOWLEDGE.DF.BLACKSMITHING),
 			},
-		},{
+		}, {
 			i(198606),	-- Blacksmith's Writ
 			q(74109, {	-- DF Inscription Order: Blacksmith
 				["name"] = "DF Inscription Order: Blacksmith",
@@ -1164,7 +1162,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 } } }, {
 				r(450281),	-- Artisan Blacksmith's Hammer
 				r(450282),	-- Artisan Blacksmith's Toolbox
 				r(450238),	-- Charged Claymore
@@ -1290,7 +1288,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, 1 } } }, {
 				r(1229646),	-- Farstrider's Chopper
 				r(1229659),	-- Farstrider's Mercy
 				r(1229658),	-- Spellbreaker's Blade

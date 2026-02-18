@@ -245,6 +245,8 @@
 253791@@@Fortune's Waving Cat
 260685@@@Auspicious Pixiu
 260686@@@Lil' Coalee
+3.80.0.65749
+255051@@@Gilded Fountain
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -2059,7 +2061,6 @@
 259429@@@[PH] Charity Construction Dog
 5.5.3.65302
 149596@@@Ethereal Transmorpher
-255051@@@Gilded Fountain
 5.5.3.65703
 254356@@@Lil' Coalee
 259428@@@Smoldering Courage

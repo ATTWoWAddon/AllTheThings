@@ -6,8 +6,6 @@ fp(3103),	-- Thalassian University Teleport Top
 fp(3104),	-- Quest Path 10509: 12.0 Z3 - Legends - Shrine 03 - Exit Path - (LWB)
 fp(3105),	-- Quest Path 10517: 12.0 Z3 - Legends - Shrine 04 - Exit Path - (LWB)
 fp(3118),	-- Quest Path 10646: 12.0 Dungeon - Domanaar Arena - Portal 1. Cast - BDP
-fp(3130),	-- Witherbark Bluffs, Zul'Aman
-fp(3132),	-- The Royal Exchange, Silvermoon City
 fp(3135),	-- 12.0 Z1 - Isle of Quel'Danas - Flightmaster - Gloaming - SJC
 fp(3142),	-- Quest Path 10834: 12.0 Dungeon - Domanaar Arena - Return Portal 1. Cast - BDP
 fp(3165),	-- Quest Path 11099: 12.0 Z1 - Silvermoon - Teleporters - Bazaar > Mage Academy - SJC

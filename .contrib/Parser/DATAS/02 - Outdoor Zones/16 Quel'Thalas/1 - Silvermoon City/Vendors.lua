@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 42.1, 58.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(259996, {	-- Quel'Thalas Equipment Chest
-						["cost"] = { { "c", VOIDLIGHT_MARL, 750 }, },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
 						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },	-- TODO: fix timeline if not up with season
 					}),
 				},
@@ -374,6 +374,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					-- Season 2
 					-- Season 3
+				},
+			}),
+			n(243160, {	-- Zalle <Reagents>
+				["coord"] = { 44.9, 55.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					i(188152),	-- Gateway Control Shard
 				},
 			}),
 		}),
