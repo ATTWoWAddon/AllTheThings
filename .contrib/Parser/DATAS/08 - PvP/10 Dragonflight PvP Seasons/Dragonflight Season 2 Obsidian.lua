@@ -60,8 +60,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_WARMODE, {
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
+				-- #if AFTER TWW
 				["groups"] = sharedData({ ["timeline"] = { ADDED_10_2_0 } }, {
-					-- #if AFTER TWW
 					moh(5, iensemble(211172)),	-- Arsenal: Scalewarden's Axe
 					moh(5, iensemble(211176)),	-- Arsenal: Scalewarden's Club
 					moh(5, iensemble(211175)),	-- Arsenal: Scalewarden's Mace
@@ -79,8 +79,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					moh(12, iensemble(211139)),	-- Ensemble: Scalewarden's Leather Armor
 					moh(12, iensemble(211136)),	-- Ensemble: Scalewarden's Mail Armor
 					moh(12, iensemble(211134)),	-- Ensemble: Scalewarden's Plate Armo
-					-- #endif
 				}),
+				-- #endif
 			}),
 			n(196191, {	-- Malicia
 				["coord"] = { 43.4, 42.5, VALDRAKKEN },

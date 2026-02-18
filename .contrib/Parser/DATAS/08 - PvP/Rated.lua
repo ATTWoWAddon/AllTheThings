@@ -373,13 +373,15 @@ root(ROOTS.PVP, pvp(n(RATED, {
 		-- #if BEFORE 8.0.1
 		["description"] = "This has a chance to drop from any rated battleground win during Legion.",
 		-- #endif
-		-- Added to Vendor in 10.0.7
-		i(137894),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
-		i(137926),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
-		i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
-			["requireSkill"] = TAILORING,
-		}),
-		i(123950),	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
+		["groups"] = {
+			-- Added to Vendor in 10.0.7
+			i(137894),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+			i(137926),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
+			i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
+				["requireSkill"] = TAILORING,
+			}),
+			i(123950),	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
+		},
 	})),
 	i(103533, {	-- Vicious Saddle
 		-- #if BEFORE 10.0.2

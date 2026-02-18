@@ -6,9 +6,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to SL)
 		ach(15654, bubbleDownSelf({	-- Back from the Beyond (Legacy)
 			["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-			-- #if BEFORE 10.0.2
-			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
-			-- #endif
 		}, {
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -29,6 +26,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				15324,	-- Tower Ranger
 				15648,	-- Walking in Maw-mphis
 			}},
+			-- #if BEFORE 10.0.2
+			["sharedDescription"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+			-- #endif
 			["groups"] = {
 				title(463),	-- Veilstrider <Name>
 			},
