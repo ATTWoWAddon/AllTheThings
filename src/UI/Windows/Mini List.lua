@@ -108,9 +108,13 @@ local subGroupInstanceKeys = {
 	"eventID",
 	"achievementID",
 };
+-- special headers which should always group by top-level for location-based visibility rather than by categorization
+local TopLevelHeaders = {
+	[app.HeaderConstants.RARES] = true,
+}
 -- Headers possible in a hierarchy that should just be ignored
 local ignoredHeaders = app.HeaderData.IGNOREINMINILIST or app.EmptyTable;
-local groups, nested, headerKeys, difficultyGroup, nextParent, headerID, isInInstance, instanceType
+local groups, nested, headerKeys, difficultyGroup, nextParent, headerID, topheader, isInInstance, instanceType
 local rootGroups, mapGroups = {}, {};
 -- TODO -- For now these have to be different. I don't know if __CreateObject works for all Classic scenarios due to explicit key checks
 -- but CloneClassInstance doesn't properly clone the data in a way that cleanly represents the desired Minilist data
@@ -212,6 +216,7 @@ local RetailMapDataStyleMetatable = {
 				-- app.PrintDebug("Mapping:",app:SearchLink(group))
 				nested = nil;
 				difficultyGroup = nil
+				topheader = nil
 
 				-- Get the header chain for the group
 				nextParent = group.parent;
@@ -228,8 +233,13 @@ local RetailMapDataStyleMetatable = {
 					if headerID then
 						-- all Headers implicitly are allowed as visual headers in minilist unless explicitly ignored
 						if not ignoredHeaders[headerID] then
-							group = CreateHeaderData(mapID, group, nextParent);
-							nested = true;
+							-- top-headers get special treatment in that they will become the topheader for the nesting
+							if not topheader and TopLevelHeaders[headerID] then
+								topheader = nextParent
+							else
+								group = CreateHeaderData(mapID, group, nextParent)
+								nested = true
+							end
 						end
 					elseif nextParent.isMinilistHeader then
 						group = CreateHeaderData(mapID, group, nextParent);
@@ -255,6 +265,11 @@ local RetailMapDataStyleMetatable = {
 				-- Battle Pets get an additional raw Filter nesting
 				if not nested and group.key == "speciesID" then
 					group = app.CreateFilter(101, CreateHeaderData(mapID, group));
+				end
+
+				-- Nest the topheader if any at the end
+				if topheader then
+					group = CreateHeaderData(mapID, group, topheader)
 				end
 
 				-- If relative to a difficultyGroup, then merge it into one.
