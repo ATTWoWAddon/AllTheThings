@@ -406,4 +406,17 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 			m(2402),	-- Horde Housing District
 		})),
 	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			-- 2 (Taxi and Adventure)
+			m(2540),	-- Delve_Sunkiller_A
+			m(2567),	-- Eversong Woods
+			m(2480),	-- Harandar
+			m(2569),	-- Isle of Quel'Danas
+			m(2561),	-- Quel'Thalas
+			m(2479),	-- Voidstorm
+			m(2568),	-- Zul'Aman
+		})),
+	}),
 }));

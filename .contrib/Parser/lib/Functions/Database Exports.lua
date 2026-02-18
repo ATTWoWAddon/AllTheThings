@@ -288,6 +288,10 @@ for i,mapID in ipairs({
 	2401,	-- Alliance Housing District
 	2402,	-- Horde Housing District
 	-- #endif
+
+	-- #if AFTER 12.0.0
+	2481,	-- Eastern Kingdoms
+	-- #endif
 })
 do table.insert(FlightPathMapIDs, mapID); end
 end
