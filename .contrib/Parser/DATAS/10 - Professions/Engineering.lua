@@ -1406,6 +1406,17 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			ach(42798, {	-- Engineering at Midnight
 				i(264001),	-- Midnight Engineer's Shop Sign (DECOR!)
 			}),
+			ach(62234),	-- Engineering-on-Demand
+			ach(62242, {	-- Dedicated to the Craft: Engineering
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42798,	-- Engineering at Midnight
+					62234,	-- Engineering-on-Demand
+				}},
+				["groups"] = {
+					title(744),	-- Thalassian Engineer <Name>
+				},
+			}),
 		}),
 		n(QUESTS, {
 			q(93692, {	-- Engineering Services Requested

@@ -948,8 +948,17 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42790, {	-- Skinning at Midnight
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
+				i(264173),	-- Midnight Skinner's Shop Sign (DECOR!)
+			}),
+			ach(62249),	-- Skinning-on-Demand
+			ach(62252, {	-- Dedicated to the Craft: Skinning
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42790,	-- Skinning at Midnight
+					62249,	-- Skinning-on-Demand
+				}},
 				["groups"] = {
+					title(752),	-- Thalassian Skinner <Name>
 				},
 			}),
 		}),

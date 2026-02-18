@@ -767,4 +767,58 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(3204),	-- Quest Path 11298: 11.2.7 Catch Up -  TWW -  Q2 -  Cavern to Awakening Machine (KRB)
 		})),
 	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			fp(3212),	-- 12.0 Silvermoon Thalassian University Teleport Top
+			fp(3186),	-- 12.0 Silvermoon Sunwing Rookery Teleport Intro Base
+			fp(3187),	-- 12.0 Silvermoon Sunwing Rookery Teleport Intro Top
+			fp(3188),	-- 12.0 Silvermoon Sunwing Rookery Teleport Main Base
+			fp(3189),	-- 12.0 Silvermoon Sunwing Rookery Teleport Main Top
+			fp(3218),	-- 12.0 Silvermoon Sunfury Spire Teleport Base
+			fp(3219),	-- 12.0 Silvermoon Sunfury Spire Teleport Top
+			fp(3211),	-- 12.0 Silvermoon Teleport Thalassian University Base
+			fp(3135),	-- 12.0 Z1 - Isle of Quel'Danas - Flightmaster - Gloaming - SJC
+			fp(3093),	-- Quest Path 10497: 12.0 Z3 - Legends - Shrine 01 - Exit Path - (LWB)
+			fp(3101),	-- Quest Path 10502: 12.0 Z3 - Legends - Shrine 02 - Exit Path - (LWB)
+			fp(3104),	-- Quest Path 10509: 12.0 Z3 - Legends - Shrine 03 - Exit Path - (LWB)
+			fp(3105),	-- Quest Path 10517: 12.0 Z3 - Legends - Shrine 04 - Exit Path - (LWB)
+			fp(3118),	-- Quest Path 10646: 12.0 Dungeon - Domanaar Arena - Portal 1. Cast - BDP
+			fp(3142),	-- Quest Path 10834: 12.0 Dungeon - Domanaar Arena - Return Portal 1. Cast - BDP
+			fp(3165),	-- Quest Path 11099: 12.0 Z1 - Silvermoon - Teleporters - Bazaar > Mage Academy - SJC
+			fp(3166),	-- Quest Path 11100: 12.0 Z1 - Silvermoon - Teleporters - Mage Academy > Bazaar - SJC
+			fp(3213),	-- Quest Path 11346: 12.0 Z1 - Eversong - Teleporters - Tranquil Repose - Going Up - Force Taxi - SJC
+			fp(3214),	-- Quest Path 11347: 12.0 Z1 - Eversong - Teleporters - Tranquil Repose - Going Down - Force Taxi - SJC
+			fp(3215),	-- Quest Path 11348: 12.0 Z1 - Eversong - Teleporters - Moon Tower - Going Up - SJC
+			fp(3216),	-- Quest Path 11349: 12.0 Z1 - Eversong - Teleporters - Moon Tower - Going Down - SJC
+			fp(3220),	-- Quest Path 11370: 12.0 Z1 - Fairbreeze - Main Translocator - Going Up - SJC
+			fp(3221),	-- Quest Path 11371: 12.0 Z1 - Fairbreeze - Main Translocator - Going Down - SJC
+			fp(3222),	-- Quest Path 11372: 12.0 Z1 - Eversong - Teleporters - Fairbreeze West - A > B - SJC
+			fp(3223),	-- Quest Path 11373: 12.0 Z1 - Eversong - Teleporters - Fairbreeze West - B > A - SJC
+			fp(3224),	-- Quest Path 11374: 12.0 Z1 - Eversong - Teleporters - Fairbreeze East - A > B - SJC
+			fp(3225),	-- Quest Path 11375: 12.0 Z1 - Eversong - Teleporters - Fairbreeze East - B > A - SJC
+			fp(3226),	-- Quest Path 11376: 12.0 Z1 - Eversong - Teleporters - River Tower - Going Up - SJC
+			fp(3227),	-- Quest Path 11377: 12.0 Z1 - Eversong - Teleporters - River Tower - Going Down - SJC
+			fp(3228),	-- Quest Path 11378: 12.0 Z1 - Eversong - Teleporters - Goldenmist - Going Up - SJC
+			fp(3229),	-- Quest Path 11379: 12.0 Z1 - Eversong - Teleporters - Goldenmist - Going Down - SJC
+			fp(3230),	-- Quest Path 11380: 12.0 Z1 - Silvermoon City - Teleporters - Sunfury Spire - Going Up - SJC
+			fp(3231),	-- Quest Path 11381: 12.0 Z1 - Silvermoon City - Teleporters - Sunfury Spire - Going Down - SJC
+			fp(3102),	-- Thalassian University Teleport Base
+			fp(3103),	-- Thalassian University Teleport Top
+		})),
+
+		-- 12.0.1
+		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+			fp(3234),	-- Quest Path 10393: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport to Top - Missile Teleport Curve Up (RRN)
+			fp(3235),	-- Quest Path 10398: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport Down - Missle Teleport Curve Down (RRN)
+			fp(3232),	-- Quest Path 10760: 12.0 Z1 - Local Story 09 - How to Train Your Protegee Q2c - Teleport to Top - Missile Teleport Curve Up (RRN)
+			fp(3233),	-- Quest Path 10761: 12.0 Z1 - Local Story 02c - How to Train Your Protegee Q02c - Teleport Down - Missle Teleport Curve Down (RRN)
+			fp(3236),	-- Quest Path 11400: 12.0 Z1 - Eversong - Teleporters - Dawning Lane > Rookery - Going Up - Force Taxi - SJC
+			fp(3237),	-- Quest Path 11401: 12.0 Z1 - Eversong - Teleporters - Dawning Lane > Rookery - Going Down - Force Taxi - SJC
+			fp(3238),	-- Quest Path 11402: 12.0 Z1 - Eversong - Teleporters - Upper Rookery - Going Up - Force Taxi - SJC
+			fp(3239),	-- Quest Path 11403: 12.0 Z1 - Eversong - Teleporters - Upper Rookery - Going Down - Force Taxi - SJC
+			fp(3240),	-- Quest Path 11404: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Up - Force Taxi - SJC
+			fp(3241),	-- Quest Path 11405: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Down - Force Taxi - SJC
+		})),
+	}),
 }));

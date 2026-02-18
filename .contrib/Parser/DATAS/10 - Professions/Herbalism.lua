@@ -1550,8 +1550,17 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42793, {	-- Herbalism at Midnight
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
+				i(264003),	-- Midnight Herbalist's Shop Sign (DECOR!)
+			}),
+			ach(62247),	-- Herbalism-on-Demand
+			ach(62250, {	-- Dedicated to the Craft: Herbalism
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42793,	-- Herbalism at Midnight
+					62247,	-- Herbalism-on-Demand
+				}},
 				["groups"] = {
+					title(751),	-- Thalassian Herbalist <Name>
 				},
 			}),
 		}),

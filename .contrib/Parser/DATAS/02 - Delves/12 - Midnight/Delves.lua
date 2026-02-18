@@ -164,6 +164,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		}),
 	})),
 	n(FACTIONS, {
+		faction(2744),	-- Valeera Sanguinar
 	}),
 	n(HIDDEN_QUESTS, {
 		hqt(92087),	-- Unlock Ability 1 - Level 2

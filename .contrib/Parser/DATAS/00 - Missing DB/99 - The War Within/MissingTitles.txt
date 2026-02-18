@@ -77,17 +77,5 @@ title(687),	-- Terrace Terror %s
 title(688),	-- %s the Ominous
 title(689),	-- %s, Fabled Vanquisher of Nullaeus
 title(690),	-- Spirebane %s \\ [PH] VoidspireRaid %s
-12.0.0.64741
-title(741),	-- Thalassian Alchemist %s
-title(742),	-- Thalassian Blacksmith %s
-title(743),	-- Thalassian Enchanter %s
-title(744),	-- Thalassian Engineer %s
-title(745),	-- Thalassian Scribe %s
-title(746),	-- Thalassian Jewelcrafter %s
-title(747),	-- Thalassian Leatherworker %s
-title(748),	-- Thalassian Tailor %s
-title(750),	-- Thalassian Miner %s
-title(751),	-- Thalassian Herbalist %s
-title(752),	-- Thalassian Skinner %s
 12.0.1.64889
 title(755),	-- Preyseeker %s

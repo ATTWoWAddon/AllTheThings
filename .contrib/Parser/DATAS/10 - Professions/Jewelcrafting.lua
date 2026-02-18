@@ -851,6 +851,17 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			ach(42789, {	-- Jewelcrafting at Midnight
 				i(264005),	-- Midnight Jewelcrafter's Shop Sign (DECOR!)
 			}),
+			ach(62236),	-- Jewelcrafting-on-Demand
+			ach(62244, {	-- Dedicated to the Craft: Jewelcrafting
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42789,	-- Jewelcrafting at Midnight
+					62236,	-- Jewelcrafting-on-Demand
+				}},
+				["groups"] = {
+					title(746),	-- Thalassian Jewelcrafter <Name>
+				},
+			}),
 		}),
 		n(QUESTS, {
 			q(93694, {	-- Jewelcrafting Services Requested

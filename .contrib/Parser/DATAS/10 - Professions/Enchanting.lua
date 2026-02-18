@@ -966,6 +966,17 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			ach(42787, {	-- Enchanting at Midnight
 				i(264000),	-- Midnight Enchanter's Shop Sign (DECOR!)
 			}),
+			ach(62233),	-- Enchanting-on-Demand
+			ach(62241, {	-- Dedicated to the Craft: Enchanting
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42787,	-- Enchanting at Midnight
+					62233,	-- Enchanting-on-Demand
+				}},
+				["groups"] = {
+					title(743),	-- Thalassian Enchanter <Name>
+				},
+			}),
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 243349 },	-- Dolothos <Enchanting Trainer>

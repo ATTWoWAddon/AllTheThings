@@ -51,30 +51,8 @@ ach(62220),	-- Abyss Anglers: Proper Procedure
 ach(62221),	-- Abyss Anglers: Fresh Depth Tech
 12.0.0.64499
 ach(62222),	-- Abyss Anglers: The Amani Way
-ach(62223),	-- Alchemy-on-Demand
 12.0.0.64741
 ach(62230),	-- Die in a Delve
-ach(62232),	-- Blacksmithing-on-Demand
-ach(62233),	-- Enchanting-on-Demand
-ach(62234),	-- Engineering-on-Demand
-ach(62235),	-- Inscription-on-Demand
-ach(62236),	-- Jewelcrafting-on-Demand
-ach(62237),	-- Leatherworking-on-Demand
-ach(62238),	-- Tailoring-on-Demand
-ach(62239),	-- Dedicated to the Craft: Alchemy
-ach(62240),	-- Dedicated to the Craft: Blacksmithing
-ach(62241),	-- Dedicated to the Craft: Enchanting
-ach(62242),	-- Dedicated to the Craft: Engineering
-ach(62243),	-- Dedicated to the Craft: Inscription
-ach(62244),	-- Dedicated to the Craft: Jewelcrafting
-ach(62245),	-- Dedicated to the Craft: Leatherworking
-ach(62246),	-- Dedicated to the Craft: Tailoring
-ach(62247),	-- Herbalism-on-Demand
-ach(62248),	-- Mining-on-Demand
-ach(62249),	-- Skinning-on-Demand
-ach(62250),	-- Dedicated to the Craft: Herbalism
-ach(62251),	-- Dedicated to the Craft: Mining
-ach(62252),	-- Dedicated to the Craft: Skinning
 ach(62271),	-- Abyss Anglers: Trench Berserker
 ach(62272),	-- Abyss Anglers: Certified Depthdiver
 12.0.0.65560
