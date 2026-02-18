@@ -22,6 +22,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 47.0, 80.6, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93946,
 				["groups"] = {
+					i(264572),	-- Netherplate Clasp
 					i(264558),	-- Vileblood Resistant Sabatons
 				},
 			}),
@@ -30,6 +31,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 93884,
 				["groups"] = {
 					i(264579),	-- Hungering Wristplates
+					i(264623),	-- Shredding Fang
 				},
 			}),
 			n(245182, {	-- Eruundi
@@ -37,6 +39,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 91047,
 				["groups"] = {
 					i(264600),	-- Ancient Argussian Band
+					i(264563),	-- Eruundi's Wristguards
 				},
 			}),
 			n(256821, {	-- Far'thana the Mad
@@ -55,7 +58,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--["questID"] = XXXX,	-- missing questID
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					--no loot table
+					i(264609),	-- Gar'chak's Mark of Honor
 				},
 			}),
 			n(257199, {	-- Hardin Steellock
@@ -68,6 +71,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(264701),	-- Cosmic Bell (TODO: could be Midnight zone reward)
+					i(264615),	-- Hardin's Backup Blade
 				},
 			}),
 			n(256925, {	-- Lotus Darkblossom
@@ -82,6 +86,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 91051,
 				["groups"] = {
 					i(264574),	-- Netherterror's Legplates
+					i(264551),	-- Nightbrood's Jaw
 				},
 			}),
 			n(256926, {	-- Queen o' War
@@ -90,6 +95,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 93934,
 				["groups"] = {
 					i(264601),	-- Queen's Eye Band
+					i(264533),	-- Queen's Tentacle Sash
 				},
 			}),
 			n(257027, {	-- Rakshur the Bonegrinder
@@ -111,12 +117,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 93966,
 				["groups"] = {
 					i(264583),	-- Barbute of the Winged Hunter
+					i(264545),	-- Harrower-Claw Grips
 				},
 			}),
 			n(244272, {	-- Sundereth the Caller
 				["coord"] = { 29.5, 50.1, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 90805,
 				["groups"] = {
+					i(264619),	-- Nethersteel Spellblade
 					i(264539),	-- Robes of the Voidcaller
 				},
 			}),
@@ -124,6 +132,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 34.1, 82.1, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 91050,
 				["groups"] = {
+					i(264642),	-- Carving Voidscythe
 					i(264565),	-- Voidscale Shoulderpads
 				},
 			}),
