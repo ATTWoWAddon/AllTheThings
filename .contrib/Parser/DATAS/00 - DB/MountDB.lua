@@ -2324,17 +2324,23 @@ i(235658, 1218013);	-- Spring Butterfly
 i(257144, 1261296);	-- Umbral Dragonhawk
 i(263580, 1270675);	-- Vivid Chloroceros
 
+i(257223, 1261360);	-- Ancestral War Bear
+i(257156, 1261323);	-- Cerulean Hawkstrider
+i(257147, 1261302);	-- Cobalt Dragonhawk
 i(250782, 1251433);	-- Amani Sunfeather
 i(257197, 1261348);	-- Blessed Amani Burrower
+i(257152, 1261316);	-- Amani Sharptalon
+i(257200, 1261351);	-- Witherbark Pango
+i(257444, 1261576);	-- Hexed Vilefeather Eagle
 --- UNSORTED ---
 
 i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
-i(257444, 1261576);	-- [DNT] 12.0 Hex Eagle Mount
-i(257223, 1261360);	-- [DNT] 12.0 Shadowpine Bear
+
+
 i(0, 1252141);	-- [DNT] Jellyfish
 i(222988, 447173);	-- [PH] Firefly2Mount (Green)
 i(260896, 1267004);	-- Accented Pseudoshell
-i(257152, 1261316);	-- Amani Sharptalon
+
 
 i(260893, 1266993);	-- Arboreal Pseudoshell
 i(263222, 1268949);	-- Arcanovoid Construct
@@ -2342,8 +2348,7 @@ i(246590, 1242904);	-- Ashes of Belo'ren
 i(257085, 1261155);	-- Augmented Stormray
 i(262707, 1269279);	-- Blooded Snapvine
 i(260894, 1266997);	-- Cabbage Pseudoshell
-i(257156, 1261323);	-- Cerulean Hawkstrider
-i(257147, 1261302);	-- Cobalt Dragonhawk
+
 i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
 i(263452, 1270523);	-- Comfy Silvermoon Flying Quilt
 i(0, 1261334);	-- Contained Stormarion Defender
@@ -2375,4 +2380,4 @@ i(262705, 1269273);	-- Vicious Snapvine
 i(0, 1270673);	-- Vivacious Chloroceros
 i(252012, 1253927);	-- Vibrant Petalwing
 i(0, 1266702);	-- Voidbound Stormray
-i(257200, 1261351);	-- Witherbark Pango
+

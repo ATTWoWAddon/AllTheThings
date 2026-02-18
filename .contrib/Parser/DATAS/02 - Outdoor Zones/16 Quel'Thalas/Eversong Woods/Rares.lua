@@ -1,17 +1,30 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.EVERSONG_WOODS, {
-		i(257156),	-- Cerulean Hawkstrider
-		i(257147),	-- Cobalt Dragonhawk
-	--	n(RARES, sharedData({ ["isDaily"] = true }, {
-	--	})),
-		n(RARES, {
+		n(RARES, sharedData({ ["isDaily"] = true }, {
+			n(COMMON_BOSS_DROPS, sharedData({
+				["crs"] = {
+					250826,	-- Banuran
+					250582,	-- Bloated Snapdragon
+					250683,	-- Coralfang
+					250719,	-- Cre'van
+					255348,	-- Dame Bloodshed
+					255302,	-- Duskburn
+					246633,	-- Harried Hawkstrider
+					250754,	-- Lady Liminus
+					250806,	-- Lost Guardian
+					255329,	-- Malfunctioning Construct
+					240129,	-- Overfester Hydra
+					250876,	-- Terrinor
+					246332,	-- Warden of Weeds
+					250780,	-- Waverly
+				},
+			}, {
+				i(257156),	-- Cerulean Hawkstrider (MOUNT!)
+				i(257147),	-- Cobalt Dragonhawk (MOUNT!)
+			})),
 			n(250841, {	-- Bad Zed
 				["coord"] = { 49.0, 87.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 92404,
@@ -57,6 +70,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 44.8, 38.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 93561,
 				["groups"] = {
+					i(265609),	-- Princess Bloodshed (PET!)
 					i(264624),	-- Fang of the Dame
 					i(265027),	-- Lucky Lynx Locket
 					i(264595),	-- Lynxhide Shawl
@@ -138,7 +152,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264608),	-- String of Lovely Blossoms
 				},
 			}),
-		}),
+		})),
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {

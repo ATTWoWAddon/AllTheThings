@@ -20,6 +20,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(258034),	-- Unstable Arcana (QI!)
 					},
 				}),
+				q(92152, {	-- Battling the Bloom
+					["coord"] = { 39.9, 56.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
 				q(92122, {	-- Beneath the Sunsails
 					["coord"] = { 37.9, 44.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),

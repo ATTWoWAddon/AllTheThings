@@ -4,20 +4,80 @@
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
-		i(256739),	-- Formula: Enchant Ring - Eyes of the Eagle (RECIPE!)
 		n(TREASURES, {
+			i(256739),	-- Formula: Enchant Ring - Eyes of the Eagle (RECIPE!)
 			o(539053, {	-- Abandoned Nest
 				["coord"] = { 42.6, 52.4, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 90799,
 				["groups"] = {
 					i(255680),	-- Forgotten Talon
-					i(255008),	-- Weathered Eagle Egg
+					i(255008, {	-- Weathered Eagle Egg
+						i(255151),	-- Scruffbeak (PET!)
+					}),
 				},
 			}),
 			o(539047, {	-- Abandoned Ritual Skull
 				["coord"] = { 44.7, 44.1, MAP.MIDNIGHT.ZULAMAN },
-				["cost"] = { { "i", 259361, 1000 } },	-- 1000x Vile Essence
-				--["questID"] = XXXX,
+				["cost"] = {{ "i", 259361, 1000 }},	-- 1000xVile Essence
+				["questID"] = 90794,
+				["groups"] = {
+					i(257444),	-- Hexed Vilefeather Eagle (MOUNT!)
+				},
+			}),
+			o(539049, {	-- Bait and Tackle
+				["coord"] = { 21.1, 67.0, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 90795,
+			}),
+			o(539050, {	-- Burrow Bounty
+				["coord"] = { 21.1, 67.0, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 90796,
+				["groups"] = {
+					i(254749),	-- Phial of Burrow Balm
+				},
+			}),
+			o(613727, {	-- Honored Warrior's Cache
+				["coord"] = { 46.8, 81.9, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 93560,
+				["groups"] = {
+					n(255231, {	-- Akil'zon's Chosen
+						["coord"] = { 51.2, 84.9, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(259221),	-- Eagle Talon
+						},
+					}),
+					n(255232, {	-- Halazzi's Chosen
+						["coord"] = { 34.5, 33.5, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(259223),	-- Lynx Claw
+						},
+					}),
+					n(255233, {	-- Jan'alai's Chosen
+						["coord"] = { 54.8, 22.4, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(259220),	-- Dragonhawk Feather
+						},
+					}),
+					n(255171, {	-- Nalorakk's Chosen
+						["coord"] = { 32.7, 83.5, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(259219),	-- Bear Tooth
+						},
+					}),
+				},
+			}),
+			o(539046, {	-- Honored Warrior's Cache
+				["sourceQuests"] = { 93560 },	-- Start Honored Warrior
+				["coord"] = { 46.8, 81.9, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 90793,
+				["providers"] = {
+					{ "i", 259219 },	-- Bear Tooth
+					{ "i", 259220 },	-- Dragonhawk Feather
+					{ "i", 259221 },	-- Eagle Talon
+					{ "i", 259223 },	-- Lynx Claw
+				},
+				["groups"] = {
+					i(257223),	-- Ancestral War Bear (MOUNT!)
+				},
 			}),
 			o(539051, {	-- Mrruk's Mangy Trove
 				["coord"] = { 52.3, 66.0, MAP.MIDNIGHT.ZULAMAN },
@@ -50,11 +110,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(582179, {	-- Twilight Ordinance
 				["coord"] = { 25.4, 64.2, MAP.MIDNIGHT.ZULAMAN },
 				--["questID"] = XXXX,
-			}),
-			o(613727, {	-- Honored Warrior's Cache
-				["provider"] = { "o", 539046 },	-- TODO: could be swapped
-				["coord"] = { 46.8, 81.9, MAP.MIDNIGHT.ZULAMAN },
-				["questID"] = 93560,	-- TODO: seems like flag for additonal things?
 			}),
 			--Lore
 			o(555480, {	-- Inscribed Oar
@@ -135,11 +190,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.ZULAMAN, {
 			n(TREASURES, {
 				--Order doesn't matter, idk if merge under treasure is required.
-				q(93918, {	-- Sealing Orb unlocked 
+				q(93918, {	-- Sealing Orb unlocked
 					["coord"] = { 24.0, 75.7, MAP.MIDNIGHT.ZULAMAN },
 					["name"] = "Sealing Orb unlocked.",
 				}),
-				q(93917, {	-- Sealing Orb unlocked 
+				q(93917, {	-- Sealing Orb unlocked
 					["coord"] = { 24.0, 78.9, MAP.MIDNIGHT.ZULAMAN },
 					["name"] = "Sealing Orb unlocked.",
 				}),
