@@ -52,6 +52,16 @@ end
 root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	n(DELVES_MID_S1, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
+			mapped(ach(61800)),	-- Midnight Delves: Tier 4 (Season 1)
+			mapped(ach(61801)),	-- Midnight Delves: Tier 5 (Season 1)
+			mapped(ach(61802)),	-- Midnight Delves: Tier 6 (Season 1)
+			mapped(ach(61803)),	-- Midnight Delves: Tier 7 (Season 1)
+			mapped(ach(61804)),	-- Midnight Delves: Tier 8 (Season 1)
+			mapped(ach(61805)),	-- Midnight Delves: Tier 9 (Season 1)
+			mapped(ach(61806)),	-- Midnight Delves: Tier 10 (Season 1)
+			mapped(ach(61807, {	-- Midnight Delves: Tier 11 (Season 1)
+				title(550),	-- High Explorer <Name>
+			})),
 		})),
 		n(CURIO, {
 			--Combat

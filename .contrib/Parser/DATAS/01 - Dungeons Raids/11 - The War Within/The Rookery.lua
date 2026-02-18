@@ -69,6 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 207207 },	-- Voidstone Monstrosity
 					["groups"] = {
 						ach(40642),	-- Mythic: The Rookery
+						ach(61601, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: The Rookery Guild Run
 					},
 				}),
 			})),

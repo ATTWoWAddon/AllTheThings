@@ -95,6 +95,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 216658 },	-- Izo, the Grand Splicer
 					["groups"] = {
 						ach(40379),	-- Mythic: City of Threads
+						ach(61597, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: City of Threads Guild Run
 					},
 				}),
 			}),

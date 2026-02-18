@@ -81,6 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 213119 },	-- High Speaker Eirich
 					["groups"] = {
 						ach(40648),	-- Mythic: The Stonevault
+						ach(61602, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: The Stonevault Guild Run
 						i(226683),	-- Malfunctioning Mechsuit (QS!)
 					},
 				}),

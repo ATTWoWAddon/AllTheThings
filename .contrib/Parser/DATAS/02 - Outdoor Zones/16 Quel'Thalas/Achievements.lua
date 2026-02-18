@@ -40,6 +40,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(60891, {	-- The Crimson Rogue
 				["timeline"] = { ADDED_12_0_X_LAUNCH },
 			}),
+			ach(61854, {	-- The Midnight Explorer
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					61855,	-- Explore Eversong Woods
+					61520,	-- Explore Harandar
+					61857,	-- Explore Voidstorm
+					61856,	-- Explore Zul'Aman
+				}},
+			}),
 			ach(42117),	-- The War of Light and Shadow
 			-- EXO NOTE: Abundance Achievements. Dunno what it is yet but they happen across all zones from what I can see. Dunno if a new Header for the event is warranted or just use [maps]. Or both...
 			ach(61941),	-- Abundance: Acolyte of a Glorious Entity

@@ -76,6 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 213937 },	-- Rasha'nan
 					["groups"] = {
 						ach(40604),	-- Mythic: The Dawnbreaker
+						ach(61600, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: The Dawnbreaker Guild Run
 					},
 				}),
 			}),
