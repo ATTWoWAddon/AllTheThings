@@ -26,7 +26,7 @@ ELEMENTAL_INVASIONS = createHeader({
 });
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	n(WORLD_BOSSES, {
+	n(ELEMENTAL_INVASIONS, {
 		["lvl"] = 60,
 		["groups"] = applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_1_4_0, REMOVED_4_0_3 } }, {
 			n(14464, {	-- Avalanchion
