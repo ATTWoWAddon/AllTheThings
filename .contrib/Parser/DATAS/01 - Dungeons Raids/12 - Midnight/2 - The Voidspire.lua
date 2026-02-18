@@ -432,7 +432,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				Boss(COSMOS, {
 					ach(61377, {	-- Mythic: Crown of the Cosmos
-						--title(556),	-- Spirebane <Name> ... Using same ID as Nerubar Palace? Probably 690..
+						title(690),	-- Spirebane <Name>
 					}),
 					ach(61625, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Crown of the Cosmos
 					ach(61622, applyDataSelf({["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Crown of the Cosmos

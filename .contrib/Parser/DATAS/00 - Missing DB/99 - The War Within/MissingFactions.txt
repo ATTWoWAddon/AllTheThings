@@ -4,4 +4,3 @@ faction(1041),	-- Frenzy
 faction(2764),	-- Preyseeker's Journey \\ Prey: Season 1
 12.0.0.63724
 faction(2770),	-- Slayer's Duellum \\ Domanaar Dominance
-12.0.0.63967

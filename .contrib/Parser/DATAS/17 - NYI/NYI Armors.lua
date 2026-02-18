@@ -6009,4 +6009,375 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 		})),
 	}),
+	expansion(EXPANSION.MID, {
+		-- 11.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			header(HEADERS.LFGDungeon, 3095, {	-- March on Quel'Danas
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249328), -- Echoing Void Mantle
+						i(249912), -- Robes of Endless Oblivion
+						i(249376), -- Whisper-Inscribed Sash
+					}),
+					filter(LEATHER, {
+						i(249913),	-- Mask of Darkest Intent
+						i(249322),	-- Radiant Clutchtender's Jerkin
+					}),
+					filter(MAIL, {
+						i(249377),	-- Darkstrider Treads
+						i(249324),	-- Eternal Flame Scaleguards
+						i(249914),	-- Oblivion Guise
+					}),
+					filter(PLATE, {
+						i(249307),	-- Emberborn Grasps
+						i(249915),	-- Extinction Guards
+					}),
+				})),
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249328), -- Echoing Void Mantle
+						i(249912), -- Robes of Endless Oblivion
+						i(249376), -- Whisper-Inscribed Sash
+					}),
+					filter(LEATHER, {
+						i(249913),	-- Mask of Darkest Intent
+						i(249322),	-- Radiant Clutchtender's Jerkin
+					}),
+					filter(MAIL, {
+						i(249377),	-- Darkstrider Treads
+						i(249324),	-- Eternal Flame Scaleguards
+						i(249914),	-- Oblivion Guise
+					}),
+					filter(PLATE, {
+						i(249307),	-- Emberborn Grasps
+						i(249915),	-- Extinction Guards
+					}),
+				})),
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249328), -- Echoing Void Mantle
+						i(249912), -- Robes of Endless Oblivion
+						i(249376), -- Whisper-Inscribed Sash
+					}),
+					filter(LEATHER, {
+						i(249913),	-- Mask of Darkest Intent
+						i(249322),	-- Radiant Clutchtender's Jerkin
+					}),
+					filter(MAIL, {
+						i(249377),	-- Darkstrider Treads
+						i(249324),	-- Eternal Flame Scaleguards
+						i(249914),	-- Oblivion Guise
+					}),
+					filter(PLATE, {
+						i(249307),	-- Emberborn Grasps
+						i(249915),	-- Extinction Guards
+					}),
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249328), -- Echoing Void Mantle
+						i(249912), -- Robes of Endless Oblivion
+						i(249376), -- Whisper-Inscribed Sash
+					}),
+					filter(LEATHER, {
+						i(249913),	-- Mask of Darkest Intent
+						i(249322),	-- Radiant Clutchtender's Jerkin
+					}),
+					filter(MAIL, {
+						i(249377),	-- Darkstrider Treads
+						i(249324),	-- Eternal Flame Scaleguards
+						i(249914),	-- Oblivion Guise
+					}),
+					filter(PLATE, {
+						i(249307),	-- Emberborn Grasps
+						i(249915),	-- Extinction Guards
+					}),
+				})),
+			}),
+			header(HEADERS.LFGDungeon, 3165, {	-- The Dreamrift
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249373), -- Dream-Scorched Striders
+					}),
+					filter(LEATHER, {
+						i(249374),	-- Scorn-Scarred Shul'ka's Belt
+					}),
+					filter(MAIL, {
+						i(249371),	-- Scornbane Waistguard
+					}),
+					filter(PLATE, {
+						i(249381),	-- Greaves of the Unformed
+					}),
+				})),
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249373), -- Dream-Scorched Striders
+					}),
+					filter(LEATHER, {
+						i(249374),	-- Scorn-Scarred Shul'ka's Belt
+					}),
+					filter(MAIL, {
+						i(249371),	-- Scornbane Waistguard
+					}),
+					filter(PLATE, {
+						i(249381),	-- Greaves of the Unformed
+					}),
+				})),
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249373), -- Dream-Scorched Striders
+					}),
+					filter(LEATHER, {
+						i(249374),	-- Scorn-Scarred Shul'ka's Belt
+					}),
+					filter(MAIL, {
+						i(249371),	-- Scornbane Waistguard
+					}),
+					filter(PLATE, {
+						i(249381),	-- Greaves of the Unformed
+					}),
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249373), -- Dream-Scorched Striders
+					}),
+					filter(LEATHER, {
+						i(249374),	-- Scorn-Scarred Shul'ka's Belt
+					}),
+					filter(MAIL, {
+						i(249371),	-- Scornbane Waistguard
+					}),
+					filter(PLATE, {
+						i(249381),	-- Greaves of the Unformed
+					}),
+				})),
+			}),
+			header(HEADERS.LFGDungeon, 3094, {	-- The Voidspire
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249308), -- Despotic Raiment
+						i(249319), -- Endless March Waistwrap
+						i(249329), -- Gaze of the Unrestrained
+						i(249323), -- Leggings of the Devouring Advance
+						i(249305), -- Slippers of the Midnight Flame
+						i(249315), -- Voracious Wristwraps
+						i(249330), -- War Chaplain's Grips
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260371), -- Infernal Greatlock Girdle
+						i(260370), -- Visage of Unseen Truths
+					}),
+					filter(LEATHER, {
+						i(249333),	-- Blooming Barklight Spaulders
+						i(249382),	-- Canopy Walker's Footwraps
+						i(249306),	-- Devouring Night's Visage
+						i(249312),	-- Nightblade's Pantaloons
+						i(249314),	-- Twisted Twilight Sash
+						i(249321),	-- Vaelgor's Fearsome Grasp
+						i(249334),	-- Void-Claimed Shinkickers
+						i(249327),	-- Void-Skinned Bracers
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260372),	-- Nullstrider's Boots
+						i(260373),	-- Power Stance Breeches
+					}),
+					filter(MAIL, {
+						i(249304),	-- Fallen King's Cuffs
+						i(249317),	-- Frenzy's Rebuke
+						i(249318),	-- Nullwalker's Dread Epaulettes
+						i(260375),	-- Raging Storm Sash
+						i(249310),	-- Robes of the Voidbound
+						i(249320),	-- Sabatons of Obscurement
+						i(249325),	-- Untethered Berserker's Grips
+						i(249303),	-- Waistcord of the Judged
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260374),	-- Primal Spark Pauldrons
+					}),
+					filter(PLATE, {
+						i(249316),	-- Crown of the Fractured Tyrant
+						i(249331),	-- Ezzorak's Gloombind
+						i(249380),	-- Hate-Tied Waistchain
+						i(249311),	-- Lightblood Greaves
+						i(249326),	-- Light's March Bracers
+						i(249313),	-- Light-Judged Spaulders
+						i(249332),	-- Parasite Stompers
+						i(249309),	-- Sunbound Breastplate
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260376),	-- Breastplate of the Final Defense
+						i(260377),	-- Fading Dawn Sabatons
+					}),
+				})),
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249308), -- Despotic Raiment
+						i(249319), -- Endless March Waistwrap
+						i(249329), -- Gaze of the Unrestrained
+						i(249323), -- Leggings of the Devouring Advance
+						i(249305), -- Slippers of the Midnight Flame
+						i(249315), -- Voracious Wristwraps
+						i(249330), -- War Chaplain's Grips
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260371), -- Infernal Greatlock Girdle
+						i(260370), -- Visage of Unseen Truths
+					}),
+					filter(LEATHER, {
+						i(249333),	-- Blooming Barklight Spaulders
+						i(249382),	-- Canopy Walker's Footwraps
+						i(249306),	-- Devouring Night's Visage
+						i(249312),	-- Nightblade's Pantaloons
+						i(249314),	-- Twisted Twilight Sash
+						i(249321),	-- Vaelgor's Fearsome Grasp
+						i(249334),	-- Void-Claimed Shinkickers
+						i(249327),	-- Void-Skinned Bracers
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260372),	-- Nullstrider's Boots
+						i(260373),	-- Power Stance Breeches
+					}),
+					filter(MAIL, {
+						i(249304),	-- Fallen King's Cuffs
+						i(249317),	-- Frenzy's Rebuke
+						i(249318),	-- Nullwalker's Dread Epaulettes
+						i(260375),	-- Raging Storm Sash
+						i(249310),	-- Robes of the Voidbound
+						i(249320),	-- Sabatons of Obscurement
+						i(249325),	-- Untethered Berserker's Grips
+						i(249303),	-- Waistcord of the Judged
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260374),	-- Primal Spark Pauldrons
+					}),
+					filter(PLATE, {
+						i(249316),	-- Crown of the Fractured Tyrant
+						i(249331),	-- Ezzorak's Gloombind
+						i(249380),	-- Hate-Tied Waistchain
+						i(249311),	-- Lightblood Greaves
+						i(249326),	-- Light's March Bracers
+						i(249313),	-- Light-Judged Spaulders
+						i(249332),	-- Parasite Stompers
+						i(249309),	-- Sunbound Breastplate
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260376),	-- Breastplate of the Final Defense
+						i(260377),	-- Fading Dawn Sabatons
+					}),
+				})),
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249308), -- Despotic Raiment
+						i(249319), -- Endless March Waistwrap
+						i(249329), -- Gaze of the Unrestrained
+						i(249323), -- Leggings of the Devouring Advance
+						i(249305), -- Slippers of the Midnight Flame
+						i(249315), -- Voracious Wristwraps
+						i(249330), -- War Chaplain's Grips
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260371), -- Infernal Greatlock Girdle
+						i(260370), -- Visage of Unseen Truths
+					}),
+					filter(LEATHER, {
+						i(249333),	-- Blooming Barklight Spaulders
+						i(249382),	-- Canopy Walker's Footwraps
+						i(249306),	-- Devouring Night's Visage
+						i(249312),	-- Nightblade's Pantaloons
+						i(249314),	-- Twisted Twilight Sash
+						i(249321),	-- Vaelgor's Fearsome Grasp
+						i(249334),	-- Void-Claimed Shinkickers
+						i(249327),	-- Void-Skinned Bracers
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260372),	-- Nullstrider's Boots
+						i(260373),	-- Power Stance Breeches
+					}),
+					filter(MAIL, {
+						i(249304),	-- Fallen King's Cuffs
+						i(249317),	-- Frenzy's Rebuke
+						i(249318),	-- Nullwalker's Dread Epaulettes
+						i(260375),	-- Raging Storm Sash
+						i(249310),	-- Robes of the Voidbound
+						i(249320),	-- Sabatons of Obscurement
+						i(249325),	-- Untethered Berserker's Grips
+						i(249303),	-- Waistcord of the Judged
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260374),	-- Primal Spark Pauldrons
+					}),
+					filter(PLATE, {
+						i(249316),	-- Crown of the Fractured Tyrant
+						i(249331),	-- Ezzorak's Gloombind
+						i(249380),	-- Hate-Tied Waistchain
+						i(249311),	-- Lightblood Greaves
+						i(249326),	-- Light's March Bracers
+						i(249313),	-- Light-Judged Spaulders
+						i(249332),	-- Parasite Stompers
+						i(249309),	-- Sunbound Breastplate
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260376),	-- Breastplate of the Final Defense
+						i(260377),	-- Fading Dawn Sabatons
+					}),
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249308), -- Despotic Raiment
+						i(249319), -- Endless March Waistwrap
+						i(249329), -- Gaze of the Unrestrained
+						i(249323), -- Leggings of the Devouring Advance
+						i(249305), -- Slippers of the Midnight Flame
+						i(249315), -- Voracious Wristwraps
+						i(249330), -- War Chaplain's Grips
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260371), -- Infernal Greatlock Girdle
+						i(260370), -- Visage of Unseen Truths
+					}),
+					filter(LEATHER, {
+						i(249333),	-- Blooming Barklight Spaulders
+						i(249382),	-- Canopy Walker's Footwraps
+						i(249306),	-- Devouring Night's Visage
+						i(249312),	-- Nightblade's Pantaloons
+						i(249314),	-- Twisted Twilight Sash
+						i(249321),	-- Vaelgor's Fearsome Grasp
+						i(249334),	-- Void-Claimed Shinkickers
+						i(249327),	-- Void-Skinned Bracers
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260372),	-- Nullstrider's Boots
+						i(260373),	-- Power Stance Breeches
+					}),
+					filter(MAIL, {
+						i(249304),	-- Fallen King's Cuffs
+						i(249317),	-- Frenzy's Rebuke
+						i(249318),	-- Nullwalker's Dread Epaulettes
+						i(260375),	-- Raging Storm Sash
+						i(249310),	-- Robes of the Voidbound
+						i(249320),	-- Sabatons of Obscurement
+						i(249325),	-- Untethered Berserker's Grips
+						i(249303),	-- Waistcord of the Judged
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260374),	-- Primal Spark Pauldrons
+					}),
+					filter(PLATE, {
+						i(249316),	-- Crown of the Fractured Tyrant
+						i(249331),	-- Ezzorak's Gloombind
+						i(249380),	-- Hate-Tied Waistchain
+						i(249311),	-- Lightblood Greaves
+						i(249326),	-- Light's March Bracers
+						i(249313),	-- Light-Judged Spaulders
+						i(249332),	-- Parasite Stompers
+						i(249309),	-- Sunbound Breastplate
+
+						-- Maybe BoE version? Unknown raid currently.
+						i(260376),	-- Breastplate of the Final Defense
+						i(260377),	-- Fading Dawn Sabatons
+					}),
+				})),
+			}),
+		})),
+	}),
 }));

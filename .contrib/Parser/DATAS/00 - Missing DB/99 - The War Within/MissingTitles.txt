@@ -76,6 +76,5 @@ title(686),	-- Maisaran Soultender %s
 title(687),	-- Terrace Terror %s
 title(688),	-- %s the Ominous
 title(689),	-- %s, Fabled Vanquisher of Nullaeus
-title(690),	-- Spirebane %s \\ [PH] VoidspireRaid %s
 12.0.1.64889
 title(755),	-- Preyseeker %s
