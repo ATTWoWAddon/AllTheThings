@@ -297,7 +297,7 @@ namespace ATT
                     return _inhertingFields;
                 }
 
-                string[] fields = Config["InheritingFields"] ?? Array.Empty<string>();
+                string[] fields = Config["InheritingFields"];
                 _inhertingFields = new HashSet<string>(fields);
                 return _inhertingFields;
             }
@@ -316,7 +316,7 @@ namespace ATT
                     return _preprocessorTags;
                 }
 
-                string[] tags = Config["PreProcessorTags"] ?? Array.Empty<string>();
+                string[] tags = Config["PreProcessorTags"];
                 _preprocessorTags = new HashSet<string>(tags);
                 return _preprocessorTags;
             }

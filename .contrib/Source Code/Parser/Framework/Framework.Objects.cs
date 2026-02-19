@@ -1155,15 +1155,12 @@ namespace ATT
                 }
 
                 // Load all of the Wago Data into the database.
-                var extraDatabaseFiles = Framework.Config["extra-database-files"];
-                if (extraDatabaseFiles != null)
+                string[] extraDatabaseFiles = Config["extra-database-files"];
+                foreach (var filename in extraDatabaseFiles)
                 {
-                    foreach (var filename in (string[])extraDatabaseFiles)
-                    {
-                        builder.AppendLine().Append("\t<")
-                            .Append(filename.EndsWith(".xml") ? "Include" : "Script")
-                            .Append(" file=\"").Append(filename).Append("\"/>");
-                    }
+                    builder.AppendLine().Append("\t<")
+                        .Append(filename.EndsWith(".xml") ? "Include" : "Script")
+                        .Append(" file=\"").Append(filename).Append("\"/>");
                 }
 
                 // Now write the Database xml document.
