@@ -1,4 +1,5 @@
-﻿using ATT.DB.Types;
+﻿using ATT.DB;
+using ATT.DB.Types;
 using ATT.FieldTypes;
 using System;
 using System.Collections;
@@ -1139,6 +1140,7 @@ namespace ATT
             {
                 var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers, StringComparer.InvariantCulture);
                 var builder = new StringBuilder("<Ui xmlns=\"http://www.blizzard.com/wow/ui/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.blizzard.com/wow/ui/..\\FrameXML\\UI.xsd\">");
+                builder.AppendLine().Append("\t<Script file=\"LocalizationDB.lua\"/>");
                 var categoryFolder = Path.Combine(directory, "Categories");
                 if (Directory.Exists(categoryFolder)) Directory.Delete(categoryFolder, true);
                 Directory.CreateDirectory(categoryFolder);
@@ -1152,9 +1154,21 @@ namespace ATT
                     }
                 }
 
-                // Now write the Categories xml document.
+                // Load all of the Wago Data into the database.
+                var extraDatabaseFiles = Framework.Config["extra-database-files"];
+                if (extraDatabaseFiles != null)
+                {
+                    foreach (var filename in (string[])extraDatabaseFiles)
+                    {
+                        builder.AppendLine().Append("\t<")
+                            .Append(filename.EndsWith(".xml") ? "Include" : "Script")
+                            .Append(" file=\"").Append(filename).Append("\"/>");
+                    }
+                }
+
+                // Now write the Database xml document.
                 builder.AppendLine().AppendLine("</Ui>");
-                WriteIfDifferent(Path.Combine(directory, "Categories.xml"), builder.ToString());
+                WriteIfDifferent(Path.Combine(directory, "Database.xml"), builder.ToString());
 
                 // Build all categories
                 ConcurrentDictionary<string, Exporter> categoryBuilders = new ConcurrentDictionary<string, Exporter>();

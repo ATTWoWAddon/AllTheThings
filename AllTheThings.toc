@@ -3,7 +3,7 @@
 ## Name: AllTheThings
 ## Author: Crieve
 ## Version: @project-version@
-## Interface: 20505, 30403, 40402, 50503, 120001
+## Interface: 11508, 20505, 30403, 40402, 50503, 120001
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
 ## Category-enUS: Collections
@@ -91,9 +91,8 @@ src\Modules\Vignette.lua
 src\Modules\Contributor.lua
 #src\__test.lua
 
-# Expansion specific localization files
-db\[Game]\LocalizationDB.lua
-db\[Game]\Categories.xml
+# Load Database Files
+db\[Game]\Database.xml
 
 # Load object class templates
 src\Classes\base.lua
