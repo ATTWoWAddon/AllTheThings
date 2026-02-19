@@ -455,51 +455,6 @@ namespace ATT
         }
 
         /// <summary>
-        /// Export the categories to a new string builder instance.
-        /// </summary>
-        /// <param name="categories"></param>
-        /// <returns></returns>
-        public static Exporter ExportCompressedLuaCategories(IDictionary<string, List<object>> categories)
-        {
-            // Export all of the Categories
-            var builder = new Exporter();
-            builder.AppendLine("_.Categories={");
-            foreach (var pair in categories)
-            {
-                if (pair.Value.Count > 0)
-                {
-                    builder.Append(pair.Key).AppendLine("={");
-                    foreach (var group in pair.Value)
-                    {
-                        ExportCompressedLua(builder, group);
-                        builder.Append(",");
-                    }
-                    builder.Remove(builder.Length - 1, 1).AppendLine("};");
-                }
-            }
-            builder.AppendLine("};");
-
-            // Simplify the structure of the string and then export to the builder.
-            if (!Framework.PreProcessorTags.Contains("NOSIMPLIFY"))
-            {
-                var simplifyConfig = Framework.Config["SimplifyStructures"];
-                if (simplifyConfig.Defined)
-                {
-                    int[] simplify = simplifyConfig;
-                    SimplifyStructureForLua(builder, simplify[0], simplify[1]);
-                }
-                else
-                {
-                    SimplifyStructureForLua(builder);
-                }
-            }
-            ExportLocalVariablesForLua(builder);
-            ExportCategoriesHeaderForLua(builder);
-            AddTableNewLines = ConfigUseExportNewlines;
-            return builder;
-        }
-
-        /// <summary>
         /// Export a boolean value to the builder.
         /// NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
         /// </summary>
