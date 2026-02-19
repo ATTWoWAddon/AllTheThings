@@ -628,8 +628,6 @@ root(ROOTS.Unsorted, {
 
 				-- Misc Amani
 				i(254554),	-- Amani Hex Stick
-				-- Catalyst
-				i(260173),	-- Crystallized Dawnlight Manaflux
 
 				-- Boon
 				i(264668),	-- Boon of Speed
@@ -852,9 +850,7 @@ root(ROOTS.Unsorted, {
 				i(251002),	-- Nether Familiar
 				i(251003),	-- Wrathful Wyrm
 				i(251004),	-- Striped Snakebiter
-
 				i(258122),	-- Emerald Hatchling \\ [DNT] [PH] 12.0 Green Baby Hawkstrider
-				i(258189),	-- Do, child of Filo \\ Do, child of Fi'lo
 				i(258739),	-- Chillcrawler
 				i(259337),	-- Munchy \\ Vermillion Grovecrawler
 				i(260306),	-- Distorted Memory
