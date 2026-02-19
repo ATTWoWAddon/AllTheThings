@@ -401,7 +401,6 @@ app:CreateWindow("Tradeskills", {
 			end
 		end
 
-		-- TSM Shenanigans
 		self.TSMCraftingVisible = nil;
 		self.SetTSMCraftingVisible = function(self, visible)
 			visible = not not visible;
@@ -411,6 +410,7 @@ app:CreateWindow("Tradeskills", {
 			self.TSMCraftingVisible = visible;
 			self:SetMovable(true);
 			self:ClearAllPoints();
+			-- TSM compatibility
 			if visible and self.cachedTSMFrame then
 				---@diagnostic disable-next-line: undefined-field
 				local queue = self.cachedTSMFrame.queue;
@@ -437,6 +437,53 @@ app:CreateWindow("Tradeskills", {
 				self:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT", 0, 0);
 				self:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT", 0, 0);
 				self:SetMovable(false);
+
+				if app.IsRetail then
+					-- TODO: Acts a little weird with the auto-show setting
+					if not ProfessionsFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame
+						ProfessionsFrameTabSideBar = CreateFrame("Frame", nil, ProfessionsFrame, "")
+						ProfessionsFrameTabSideBar:SetWidth(1)
+						ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
+						ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
+						ProfessionsFrameTabSideBar.Tabs = {}
+						ProfessionsFrameTabSideBar.numTabs = 0
+						ProfessionsFrameTabSideBar.selTab = 0
+					end
+
+					ProfessionsFrameTabSideBar.numTabs = ProfessionsFrameTabSideBar.numTabs + 1
+					app.TradeskillTab = CreateFrame("Frame", nil, ProfessionsFrameTabSideBar, "AllTheThings_Tab")
+					app.TradeskillTab:SetPoint("TOPLEFT", ProfessionsFrameTabSideBar, "TOPRIGHT", -2, -52)
+					ProfessionsFrameTabSideBar.Tabs[1] = app.TradeskillTab
+
+					local function toggleProfTab()
+						local newState = not self:IsShown()
+						app.TradeskillTab:SetChecked(newState)
+						app.TradeskillTab.Icon:SetTexture("Interface\\Addons\\AllTheThings\\assets\\logo_32x32")
+						app.TradeskillTab.Icon:SetSize(24, 24)
+
+						ProfessionsFrameTabSideBar:ClearAllPoints()
+						if newState then
+							for i = 1, ProfessionsFrameTabSideBar.numTabs do
+								if ProfessionsFrameTabSideBar.selTab == i and i ~= 1 then
+									ProfessionsFrameTabSideBar.Tabs[i]:GetScript("OnMouseUp")(ProfessionsFrameTabSideBar.Tabs[i])
+								end
+							end
+							ProfessionsFrameTabSideBar.selTab = 1
+							self:SetVisible(true)
+
+							ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", self, "TOPRIGHT")
+							ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", self, "BOTTOMRIGHT")
+						else
+							ProfessionsFrameTabSideBar.selTab = 0
+							self:SetVisible(false)
+
+							ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
+							ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
+						end
+					end
+					app.TradeskillTab:SetCustomOnMouseUpHandler(toggleProfTab)
+					toggleProfTab()
+				end
 			else
 				self:SetMovable(false);
 				app.StartCoroutine("TSMWHY", function()

@@ -50,4 +50,11 @@
 	<Script file="Tradeskills.lua"/>
 	<Script file="Retail/Tradeskills.lua"/>
 	<Script file="World Quests.lua"/>
+
+	<Frame name="AllTheThings_Tab" virtual="true" inherits="QuestLogTabButtonTemplate">
+		<KeyValues>
+			<KeyValue key="displayMode" value="QuestLogDisplayMode.Quests" type="global" />
+			<KeyValue key="tooltipText" value="All The Things" type="string" />
+		</KeyValues>
+	</Frame>
 </Ui>

@@ -145,7 +145,7 @@ local function ParseCommand(self, cmd, skipUpdate)
 		cmd = cmd:lower();
 	end
 	LastCmd = cmd;
-	
+
 	local price;
 	if cmd == "cap" or cmd == "goldcap" or cmd == "default" then
 		price = GoldCap;
@@ -164,7 +164,7 @@ local function ParseCommand(self, cmd, skipUpdate)
 	if not price or price <= 0 or price > GoldCap then
 		price = GoldCap;
 	end
-	
+
 	if MaximumPrice ~= price then
 		MaximumPrice = price;
 		if not skipUpdate then
@@ -249,6 +249,53 @@ app:CreateWindow("Auctions", {
 				self:SetWidth(width);
 				if app.Settings:GetTooltipSetting("Auto:AuctionList") then
 					self:Show();
+				end
+
+				if app.IsRetail then
+					-- TODO: Acts a little weird with the auto-show setting
+					if not AuctionHouseFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame
+						AuctionHouseFrameTabSideBar = CreateFrame("Frame", nil, AuctionHouseFrame, "")
+						AuctionHouseFrameTabSideBar:SetWidth(1)
+						AuctionHouseFrameTabSideBar:SetPoint("TOPLEFT", AuctionHouseFrame, "TOPRIGHT")
+						AuctionHouseFrameTabSideBar:SetPoint("BOTTOMLEFT", AuctionHouseFrame, "BOTTOMRIGHT")
+						AuctionHouseFrameTabSideBar.Tabs = {}
+						AuctionHouseFrameTabSideBar.numTabs = 0
+						AuctionHouseFrameTabSideBar.selTab = 0
+					end
+
+					AuctionHouseFrameTabSideBar.numTabs = AuctionHouseFrameTabSideBar.numTabs + 1
+					app.AuctionHouseTab = CreateFrame("Frame", nil, AuctionHouseFrameTabSideBar, "AllTheThings_Tab")
+					app.AuctionHouseTab:SetPoint("TOPLEFT", AuctionHouseFrameTabSideBar, "TOPRIGHT", -2, -52)
+					AuctionHouseFrameTabSideBar.Tabs[1] = app.AuctionHouseTab
+
+					local function toggleAHTab()
+						local newState = not self:IsShown()
+						app.AuctionHouseTab:SetChecked(newState)
+						app.AuctionHouseTab.Icon:SetTexture("Interface\\Addons\\AllTheThings\\assets\\logo_32x32")
+						app.AuctionHouseTab.Icon:SetSize(24, 24)
+
+						AuctionHouseFrameTabSideBar:ClearAllPoints()
+						if newState then
+							for i = 1, AuctionHouseFrameTabSideBar.numTabs do
+								if AuctionHouseFrameTabSideBar.selTab == i and i ~= 1 then
+									AuctionHouseFrameTabSideBar.Tabs[i]:GetScript("OnMouseUp")(AuctionHouseFrameTabSideBar.Tabs[i])
+								end
+							end
+							AuctionHouseFrameTabSideBar.selTab = 1
+							self:SetVisible(true)
+
+							AuctionHouseFrameTabSideBar:SetPoint("TOPLEFT", self, "TOPRIGHT")
+							AuctionHouseFrameTabSideBar:SetPoint("BOTTOMLEFT", self, "BOTTOMRIGHT")
+						else
+							AuctionHouseFrameTabSideBar.selTab = 0
+							self:SetVisible(false)
+
+							AuctionHouseFrameTabSideBar:SetPoint("TOPLEFT", AuctionHouseFrame, "TOPRIGHT")
+							AuctionHouseFrameTabSideBar:SetPoint("BOTTOMLEFT", AuctionHouseFrame, "BOTTOMRIGHT")
+						end
+					end
+					app.AuctionHouseTab:SetCustomOnMouseUpHandler(toggleAHTab)
+					toggleAHTab()
 				end
 			else
 				self:Hide();
