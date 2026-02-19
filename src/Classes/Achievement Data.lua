@@ -407,7 +407,7 @@ local CreateCriteriaType = app.CreateClass("CriteriaType", "__criteriaUID", {
 	["collectible"] = app.ReturnFalse,
 	["collected"] = app.ReturnFalse,
 	["amount"] = function(t) return 0; end,
-	["name"] = function(t) return t.__criteriaUID; end,
+	["name"] = function(t) return UNKNOWN; end,
 	["progress"] = function(t)
 		return math_min(t.current, t.total);
 	end,
