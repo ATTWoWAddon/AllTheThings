@@ -29,15 +29,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					-- EXO NOTE: Abundance Achievements. Dunno what it is yet but they happen across all zones from what I can see. Dunno if a new Header for the event is warranted or just use [maps]. Or both...
 					ach(61941),	-- Abundance: Acolyte of a Glorious Entity
 					ach(62341),	-- Abundance: Ain't Dun Till It's Dun
 					ach(62266),	-- Abundance: An Acolyte no Longer
 					ach(62338),	-- Abundance: Artisan
-					ach(61939),	-- Abundance: Artisan of Floaret	// Note: Harandar
-					ach(61938),	-- Abundance: Artisan of Loaknit	// Note: Zul'Aman
-					ach(61940),	-- Abundance: Artisan of Loanite	// Note: Voidstorm
-					ach(61937),	-- Abundance: Artisan of Mausoloa	// Note: Eversong Woods
+					ach(61939),	-- Abundance: Artisan of Floaret
+					ach(61938),	-- Abundance: Artisan of Loaknit
+					ach(61940),	-- Abundance: Artisan of Loanite
+					ach(61937),	-- Abundance: Artisan of Mausoloa
 					ach(42283),	-- Abundance: Azeroth Runs on Dundun
 					ach(62336),	-- Abundance: Contributer
 					ach(62331),	-- Abundance: Drops of Prosperity
@@ -50,7 +49,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					ach(62330),	-- Abundance: One Bite at a Time
 					ach(62337),	-- Abundance: Professional
 					ach(62268),	-- Abundance: Professionals Only
-					ach(61943),	-- Abundance: Prosperous Plentitude!	// Note: Eversong Woods, Zul'Aman, Harandar, Voidstorm
+					ach(61943),	-- Abundance: Prosperous Plentitude!
 					ach(62329),	-- Abundance: Squash the Competition
 					ach(62325),	-- Abundance: Treasures Aplenty
 					ach(61681),	-- Abundance: You Should See Him in a Crown

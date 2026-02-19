@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			},
 		}),
 		m(MAP.MIDNIGHT.VOIDSTORM, {
-		--	["icon"] = 5770811,
+			["icon"] = 5927657,
 			["lore"] = "It is a world shaped by the Void where predation reigns supreme, and serves as Xal'atath's launching point for her attack on the Sunwell.",
 			["timeline"] = { ADDED_12_0_X_LAUNCH },
 			["maps"] = {
