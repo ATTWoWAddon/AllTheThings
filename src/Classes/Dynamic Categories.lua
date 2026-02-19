@@ -1,13 +1,18 @@
 do
 local ipairs, app = ipairs, select(2, ...);
 local onClickForDynamicCategory = function(row, button)
-	local dynamicWindow = row.ref.dynamicWindow;
-	if dynamicWindow then
+	local window = row.ref.dynamicWindow;
+	if window then
 		if button == "RightButton" then
-			dynamicWindow:Toggle();
+			window:Toggle();
 			return true;
 		elseif not row.ref.g or #row.ref.g < 1 then
-			dynamicWindow:ForceRebuild();
+			if not window:IsShown() then
+				window:ForceRebuild();
+				row.ref.progress = window.data.progress;
+				row.ref.total = window.data.total;
+				row.ref.visible = app.GroupVisibilityFilter(window.data);
+			end
 		end
 	end
 end
@@ -35,7 +40,18 @@ end
 app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 	dynamicWindow = function(t)
 		local window = app:GetWindow(t.suffix);
-		if window then t.dynamicWindow = window; return window; end
+		if window then
+			window:RegisterRefreshCallback(function(TLUG)
+				if t.__lastTLUG ~= TLUG then
+					local w = app.GetRelativeValue(t, "window");
+					t.progress = window.data.progress; t.total = window.data.total;
+					t.visible = app.GroupVisibilityFilter(window.data);
+					app.CallbackHandlers.DelayedCallback(t.expanded and w.Update or w.Redraw, 0.1, w, true);
+				end
+			end);
+			t.dynamicWindow = window;
+			return window;
+		end
 		return app.EmptyTable;
 	end,
 	dynamicWindowData = function(t)
@@ -53,10 +69,9 @@ app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 	end,
 	g = function(t)
 		if t.expanded then
-			local lastG = t.__lastG;
 			local g = t.dynamicWindowData.g;
-			if g and lastG ~= g then
-				t.__lastG = g;
+			if g and t.__lastTLUG ~= t.dynamicWindowData.TLUG then
+				t.__lastTLUG = t.dynamicWindowData.TLUG
 				local newG = app.CloneClassInstance(g);
 				if newG and #newG > 0 then
 					for i,o in ipairs(newG) do

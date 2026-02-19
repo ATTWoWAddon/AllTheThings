@@ -2942,6 +2942,35 @@ end
 function app:CreateWindow(suffix, definition)
 	app.WindowDefinitions[suffix] = definition;
 	if definition then
+		-- Dynamic Categories are neat, but currently only a Classic Feature (for now?)
+		if definition.IsDynamicCategory and app.IsClassic and not definition.DynamicCategoryHeader then
+			app.AddEventHandler("OnBuildDataCache", function(categories)
+				categories["Dynamic" .. suffix] = app.CreateDynamicCategory(suffix, {
+					SortPriority = 100,
+					sourceIgnored = 1
+				});
+			end);
+			definition.DefaultRefresh = function(self, ...)
+				UpdateVisibleRowData(self, ...);
+				if self.RegisteredRefreshCallbacks then
+					local TLUG = self.data.TLUG;
+					if TLUG ~= self.__lastTLUG then
+						self.__lastTLUG = TLUG;
+						for i=1,#self.RegisteredRefreshCallbacks do
+							self.RegisteredRefreshCallbacks[i](TLUG);
+						end
+					end
+				end
+			end
+			definition.RegisterRefreshCallback = function(self, callback)
+				if not self.RegisteredRefreshCallbacks then
+					self.RegisteredRefreshCallbacks = { callback };
+				else
+					self.RegisteredRefreshCallbacks[#self.RegisteredRefreshCallbacks + 1] = callback;
+				end
+			end
+		end
+		
 		if definition.Preload then
 			-- This window still needs to be loaded right away
 			return app:GetWindow(suffix);
@@ -2958,16 +2987,6 @@ function app:CreateWindow(suffix, definition)
 				definition.UsageText or ("Usage: " .. primaryCommand),
 				definition.HelpText or ("Toggles the " .. (definition.SettingsName or suffix) .. " Window.")
 			};
-		end
-		
-		-- Dynamic Categories are neat, but currently only a Classic Feature (for now?)
-		if definition.IsDynamicCategory and app.IsClassic and not definition.DynamicCategoryHeader then
-			app.AddEventHandler("OnBuildDataCache", function(categories)
-				categories["Dynamic" .. suffix] = app.CreateDynamicCategory(suffix, {
-					SortPriority = 100,
-					sourceIgnored = 1
-				});
-			end);
 		end
 	end
 end
