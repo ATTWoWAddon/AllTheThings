@@ -3,32 +3,32 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
---	["icon"] = 5901550,
---	["lore"] = "Khaz Algar, a long-forgotten subterranean continent off the western shores of Pandaria, is home to the earthen capital city of Dornogal. This city will now serve as the new meeting ground for the Alliance and Horde.",
+	["icon"] = 7488399,
+	["lore"] = "Quel'Thalas is a forested area in northern Lordaeron. It is ruled by the blood elves, descendants of the kingdom's Highborne founders, and is known as the Land of Eternal Spring. Its capital is Silvermoon City.",
 	["timeline"] = { ADDED_12_0_X_LAUNCH },
 	["groups"] = {
 		m(MAP.MIDNIGHT.SILVERMOON_CITY, {
-		--	["icon"] = 5901551,
-		--	["lore"] = "The Capital City of the earthen dwarves of Khaz Algar, located in the center of the Isle of Dorn. It was named in honor of the titanic watchers Dornic and Galan and has been isolated within Khaz Algar for a long while, which resulted in the city's earthen developing their own manners and customs.",
+			["icon"] = 135761,
+			["lore"] = "Silvermoon City is the crown jewel of the blood elves and their capital city. It is nestled in the northern reaches of the Eversong Woods (at the northernmost tip of the Eastern Kingdoms) in their ancestral homeland of Quel'Thalas",
 			["isRaid"] = true,
 			["timeline"] = { ADDED_12_0_X_LAUNCH },
 		}),
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			["icon"] = 7301737,
-		--	["lore"] = "Azj-Kahet, the high capital of nerubian society, is home to the last kingdom of living nerubians. Unlike Azjol-Nerub, which was consumed by the Scourge, Azj-Kahet represents nerubian society as it once was—deadly survivors of mythic wars that have played out repeatedly over millennia.",
+			["lore"] = "The blood elves have called the resplendent Eversong Woods home for millennia, but the stewardship of this forested region has not been without its perils.",
 			["timeline"] = { ADDED_12_0_X_LAUNCH },
 		}),
 		m(MAP.MIDNIGHT.HARANDAR, {
 			["icon"] = 7385004,
-		--	["lore"] = "Hallowfall, situated below the Ringing Deeps and above Azj-Kahet, is an enormous cavern bordered by an endless underground sea. Light, warmth, and growth for vegetation are provided by Beledar, a massive crystal sun embedded in the cavern ceiling, creating a bright and lush environment reminiscent of the surface world.",
+			["lore"] = "A bioluminscent primordial jungle, it is an underground cavern where the roots of all World Trees on Azeroth converge, and home to the haranir. The Rift of Aln is also located here.",
 			["timeline"] = { ADDED_12_0_X_LAUNCH },
 			["maps"] = {
 				2576,	-- The Den
 			},
 		}),
 		m(MAP.MIDNIGHT.ISLE_OF_QUELDANAS, {
-		--	["icon"] = 5901551,
-		--	["lore"] = "The Capital City of the earthen dwarves of Khaz Algar, located in the center of the Isle of Dorn. It was named in honor of the titanic watchers Dornic and Galan and has been isolated within Khaz Algar for a long while, which resulted in the city's earthen developing their own manners and customs.",
+			["icon"] = 7454100,
+			["lore"] = "Seven thousand years ago, when Quel'Thalas was founded, Dath'Remar Sunstrider, ruler of the new elven kingdom, created a mystic fountain at a convergence of ley lines on this island off the northern coast of Eversong Woods, utilizing a vial of water stolen from the Well of Eternity sometime before the Great Sundering. As a result, the island - which became known as Quel'Danas - is also known as the Sunwell Isle.",
 			["timeline"] = { ADDED_12_0_X_LAUNCH },
 			["maps"] = {
 				MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO,	-- Isle of Quel'Danas (Intro)
@@ -37,8 +37,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			},
 		}),
 		m(MAP.MIDNIGHT.VOIDSTORM, {
-		--	["icon"] = 5770811,
-		--	["lore"] = "Located on the surface of Khaz Algar, the Isle of Dorn is a lush and verdant paradise with sweeping vistas, cascading waterfalls, and majestic mountains. It is also the ancestral home to the titan-forged Earthen—a race made of living stone imbued with the essence of Azeroth's worldsoul.",
+			["icon"] = 5927657,
+			["lore"] = "It is a world shaped by the Void where predation reigns supreme, and serves as Xal'atath's launching point for her attack on the Sunwell.",
 			["timeline"] = { ADDED_12_0_X_LAUNCH },
 			["maps"] = {
 				2526,	-- Lair of Predaxas
@@ -46,8 +46,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			},
 		}),
 		m(MAP.MIDNIGHT.ZULAMAN, {
-		--	["icon"] = 6921878,
-		--	["lore"] = "K'aresh is the original homeworld of the ethereals and brokers. It was an arid planet, home to a thriving ecosystem and several sentient species, until it was destroyed by the void lord Dimensius the All-Devouring and his forces, forcing the ethereals into exodus in the Twisting Nether.",
+			["icon"] = 7578705,
+			["lore"] = "Zul'Aman is a fortress and a temple city that serves as the capital of the Amani tribe, located in the southeastern portion of Quel'Thalas, on northern Lordaeron. The main temple area is known as Atal'Aman.",
 			["timeline"] = { ADDED_12_0_X_LAUNCH },
 			["maps"] = {
 				2536,	-- Atal'Aman

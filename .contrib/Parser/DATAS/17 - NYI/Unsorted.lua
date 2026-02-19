@@ -33,9 +33,9 @@ root(ROOTS.Unsorted, {
 				i(265653),	-- Elegant Storage Table
 				i(265654),	-- Elegant Elven Washbasin
 				i(266130),	-- Gilded Silvermoon Gazebo
-				i(267645),	-- Dreamrift Vanquisher's Argent Trophy
-				i(267646),	-- March on Quel'Danas Vanquisher's Argent Trophy
-				i(268049),	-- Voidspire Vanquisher's Argent Trophy
+
+
+
 				i(258268),	-- Waxmaster's Candle Rack
 				i(264343),	-- Cosmic Void Gravitational Orb
 				i(264483),	-- Cosmic Void Campfire
@@ -52,19 +52,16 @@ root(ROOTS.Unsorted, {
 				i(258888),	-- Lush Garden Fungal Fountain
 				i(246857),	-- "Shu'halo Perspective" Painting
 				i(259354),	-- Brown Paper Sack
-				i(269269),	-- Devouring Ritual Spire \\ Devouring Host Ritual Spire
 			}),
 			filter(MISC, {
 				i(257024),	-- A Lost Hunting Knife
 				i(257054),	-- A Rolled-Up Pillow
-				i(259219),	-- Bear Tooth
-				i(259220),	-- Dragonhawk Feather
-				i(259223),	-- Lynx Claw
+
 				i(268111),	-- Arkonite Beacon
 				i(268112),	-- Argunite Beacon
 				i(268115),	-- Overbaked Donut
 				i(268116),	-- Twin-Flame Holder
-				i(259221),	-- Eagle Talon
+
 
 				-- Midnight Preseason
 				i(268485),	-- Victorious Stormarion Pinnacle Cache
@@ -408,7 +405,6 @@ root(ROOTS.Unsorted, {
 				i(253012),	-- Set Keystone Map: Magisters' Terrace
 				i(253706),	-- Junk Mail
 				i(254373),	-- Areyn's Elrendar Red
-				i(254749),	-- Phial of Burrow Balm
 				i(254874),	-- Glowing Moth Dust
 				i(255688),	-- Anchor of the Abyss
 				i(256342),	-- Griftah's Fool-Proof Embellishing Powder
@@ -856,7 +852,7 @@ root(ROOTS.Unsorted, {
 				i(251002),	-- Nether Familiar
 				i(251003),	-- Wrathful Wyrm
 				i(251004),	-- Striped Snakebiter
-				i(255151),	-- Scruffbeak \\ [DNT] Baby Amani Eagle (Grey)
+
 				i(258122),	-- Emerald Hatchling \\ [DNT] [PH] 12.0 Green Baby Hawkstrider
 				i(258189),	-- Do, child of Filo \\ Do, child of Fi'lo
 				i(258739),	-- Chillcrawler
@@ -881,7 +877,7 @@ root(ROOTS.Unsorted, {
 				i(264654),	-- Emberwing Hatchling
 				i(264892),	-- Nova \\ [PH] Black Baby Hawkstrider
 				i(265035),	-- Medusa \\ [PH] Purple Siphoid
-				i(265609),	-- Princess Bloodshed
+
 				i(264366),	-- Razeshi C.
 				i(260341),	-- Star the Lucky Dragon
 				i(260360),	-- Gummi the Glow Wyrm
@@ -963,13 +959,13 @@ root(ROOTS.Unsorted, {
 				i(250320),	-- Lightgraft
 
 				i(251903),	-- Potatoad Egg
-				i(257736),	-- Lightcalled Hearthstone \\ [DNT] [PH] 12.0 Holy Hearthstone
+
 				i(259084),	-- Gift of the Cycle
 				i(263198),	-- Valdekar's Special
 				i(253629),	-- Personal Key to the Arcantina
 				i(263975),	-- Feeling Fielder Mk. 7
 				i(264517),	-- Galactic Flag of Victory
-				i(264672),	-- Cosmic Ritual Stone
+
 
 			}),
 			filter(MOUNTS, {
@@ -1006,13 +1002,11 @@ root(ROOTS.Unsorted, {
 				i(246735),	-- Rootstalker Grimlynx
 				i(252012),	-- Vibrant Petalwing
 				i(257085),	-- Augmented Stormray
-				i(257147),	-- Cobalt Dragonhawk
-				i(257152),	-- Amani Sharptalon
-				i(257156),	-- Cerulean Hawkstrider
 
-				i(257200),	-- Escaped Witherbark Pango
-				i(257223),	-- Ancestral War Bear \\ [DNT] 12.0 Shadowpine Bear
-				i(257444),	-- Hexed Vilefeather Eagle \\ [DNT] 12.0 Hex Eagle Mount
+
+
+
+
 				i(260635),	-- Sanguine Harrower
 				i(257447),	-- Prowling Shredclaw
 				i(257448),	-- Frenzied Shredclaw
@@ -1590,8 +1584,6 @@ root(ROOTS.Unsorted, {
 				i(265366),	-- Twilight Executioner
 				i(265367),	-- Twilight Fang
 				i(265368),	-- Twilight Destroyer
-				i(265554),	-- Reinforced Amani Haft
-				i(265562),	-- Amani Warrior's Spear
 				i(265775),	-- Amani Warrior Stave
 				i(265781),	-- Amani Spiritdancer's Boneweight
 				i(266077),	-- Basic Black Quiver
@@ -1720,7 +1712,7 @@ root(ROOTS.Unsorted, {
 				i(265551),	-- Cuddly Cobalt Grrgle
 				i(265552),	-- Cuddly Teal Grrgle
 				i(265553),	-- Cuddly Ochre Grrgle
-				i(265949),	-- March on Quel'Danas Vanquisher's Aureate Trophy
+
 				i(266064),	-- Elegant Cushioned Chaise
 				i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
 				i(250797),	-- Spring Blossom Ceiling Light
@@ -1740,11 +1732,11 @@ root(ROOTS.Unsorted, {
 				i(263291),	-- Spring Blossom Pond
 
 				i(264252),	-- Zul'Aman Forest Hammock
-
+				i(264500),	-- Devouring Host Ritual Engine (DECOR!)
 					-- Raid?
-				i(266885),	-- March on Quel'Danas Vanquisher's Gleaming Trophy
-				i(266886),	-- Dreamrift Vanquisher's Gleaming Trophy
-				i(266887),	-- Voidspire Vanquisher's Gleaming Trophy
+
+
+
 				-- Promo?
 				i(267265),	-- Counterfeit Dark Heart of Galakrond
 
@@ -1774,76 +1766,33 @@ root(ROOTS.Unsorted, {
 			}),
 			n(RARES, {
 				i(264519),	-- Repurposed Voidwalker's Chestplate
-				i(264522),	-- Striderplume Armbands
-				i(264523),	-- Hydrafang Blade
-				i(264527),	-- Vile Hexxer's Mantle
-				i(264528),	-- Goop-Coated Leggings
-				i(264532),	-- Robes of Flowing Truths
-				i(264533),	-- Queen's Tentacle Sash
-				i(264534),	-- Bogvine Shoulderguards
 				i(264535),	-- Leggings of the Cosmic Harrower
-				i(264537),	-- Winged Terror Gloves
-				i(264538),	-- Translucent Membrane Slippers
-				i(264542),	-- Skullcrusher's Mantle
 				i(264544),	-- Grounded Death Cap
-				i(264545),	-- Harrower-Claw Grips
 				i(264548),	-- Sash of Cosmic Tranquility
-				i(264550),	-- Fungal Stalker's Stockings
-				i(264551),	-- Nightbrood's Jaw
-				i(264552),	-- Frogskin Grips
-				i(264554),	-- Frilly Leather Vest
-				i(264555),	-- Splintered Hexwood Clasps
 				i(264556),	-- Voidforged Cinch
 				i(264557),	-- Borerplate Pauldrons
 				i(264561),	-- Primal Bonestompers
-				i(264562),	-- Plated Grove Vest
-				i(264563),	-- Eruundi's Wristguards
-				i(264564),	-- Crab Wrangling Harness
 				i(264567),	-- Rockscale Hood
-				i(264568),	-- Serrated Scale Gauntlets
 				i(264571),	-- Ironleaf Wristguards
-				i(264572),	-- Netherplate Clasp
 				i(264577),	-- Crystalforged Boots
-				i(264578),	-- Stumpy's Terrorplate
-				i(264580),	-- Mrrlokk's Mrgl Grrdle
 				i(264581),	-- Bloombark Spaulders
 				i(264582),	-- Diamondback-Scale Legguards
-				i(264585),	-- Snapper Steppers
 				i(264586),	-- Crustacean Carapace Chestguard
 				i(264588),	-- Shawl of Cosmic Whispers
-				i(264592),	-- Ha'kalawe's Flawless Wing
-				i(264594),	-- Netherscale Cloak
-				i(264595),	-- Lynxhide Shawl
 				i(264599),	-- Kul'Tiran Signet Ring
-				i(264602),	-- Abyss Coral Band
 				i(264604),	-- Sludgy Verdant Signet
 				i(264605),	-- Choker of Unyielding Winds
 				i(264607),	-- Spore-Laden Choker
-				i(264609),	-- Gar'chak's Mark of Honor
 				i(264610),	-- Escaped Specimen's ID Tag
-				i(264612),	-- Tarnished Gold Locket
-				i(264615),	-- Hardin's Backup Blade
-				i(264616),	-- Lightblighted Sapdrinker
-				i(264619),	-- Nethersteel Spellblade
-				i(264620),	-- Pufferspine Spellpierce
-				i(264623),	-- Shredding Fang
 				i(264625),	-- Gale Force Focus
-				i(264626),	-- Scepter of Radiant Conversion
 				i(264628),	-- Spear of Nothingness
 				i(264630),	-- Colossal Voidsunderer
-				i(264631),	-- Harak's Skullcutter
 				i(264634),	-- Spire of Flowing Void
 				i(264637),	-- Cosmic Hunter's Glaive
-				i(264638),	-- Fangs of the Invader
-				i(264640),	-- Sharpened Borer Claw
 				i(264641),	-- Sharpened Skullcleaver
-				i(264642),	-- Carving Voidscythe
 				i(264643),	-- Ash'an's Spare Cleaver
 				i(264646),	-- Specimen Sinew Longbow
-				i(264647),	-- Cre'van's Punisher
 				i(264649),	-- Mindrot Claw-Hammer
-				i(264910),	-- Shell-Cleaving Poleaxe
-				i(264911),	-- Forest Hunter's Arc
 				i(264913),	-- Focused Netherslicer
 			}),
 		})),

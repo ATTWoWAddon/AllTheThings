@@ -300,9 +300,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
-				i(170278),	-- Flower of Fortitude (QI!)
-				i(170279),	-- Flower of Sincerity (QI!)
-				i(170280),	-- Flower of Vigor (QI!)
+				objective(1, {	-- 0/3 Flower of Fortitude
+					["providers"] = {
+						{ "o", 332278 },	-- Flower of Fortitude
+						{ "i", 170278 },	-- Flower of Fortitude (QI!)
+					},
+					["coord"] = { 43.2, 67.3, EVERSONG_WOODS },
+				}),
+				objective(2, {	-- 0/3 Flower of Sincerity
+					["providers"] = {
+						{ "o", 332279 },	-- Flower of Sincerity
+						{ "i", 170279 },	-- Flower of Sincerity (QI!)
+					},
+					["coord"] = { 51.7, 31.9, MULGORE },
+				}),
+				objective(3, {	-- 0/3 Flower of Vigor
+					["providers"] = {
+						{ "o", 332280 },	-- Flower of Vigor
+						{ "i", 170280 },	-- Flower of Vigor (QI!)
+					},
+					["coord"] = { 61.7, 40.0, THE_HINTERLANDS },
+				}),
 				i(170205, {	-- Crown of Boundless Courage
 					["timeline"] = { ADDED_8_3_0 },
 				}),
@@ -315,9 +333,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
-				i(170296),	-- Flower of Compassion (QI!)
-				i(170298),	-- Flower of Reflection (QI!)
-				i(170308),	-- Flower of Solemnity (QI!)
+				objective(1, {	-- 0/3 Flower of Compassion
+					["providers"] = {
+						{ "o", 332287 },	-- Flower of Compassion
+						{ "i", 170296 },	-- Flower of Compassion (QI!)
+					},
+					["coord"] = { 52.2, 48.0, DESOLACE },
+				}),
+				objective(2, {	-- 0/3 Flower of Reflection
+					["providers"] = {
+						{ "o", 332288 },	-- Flower of Reflection
+						{ "i", 170298 },	-- Flower of Reflection (QI!)
+					},
+					["coord"] = { 64.6, 25.9, DUSKWOOD },
+				}),
+				objective(3, {	-- 0/3 Flower of Solemnity
+					["providers"] = {
+						{ "o", 332289 },	-- Flower of Solemnity
+						{ "i", 170308 },	-- Flower of Solemnity (QI!)
+					},
+					["coord"] = { 56.7, 32.9, SILVERPINE_FOREST },
+				}),
 				i(170207, {	-- Crown of Eternal Memorial
 					["timeline"] = { ADDED_8_3_0 },
 				}),
@@ -349,7 +385,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 						{ "o", 332294 },	-- Flower of Generosity
 						{ "i", 170322 },	-- Flower of Generosity (QI!)
 					},
-					["coord"] = { 48.0, 55.0, DUN_MOROGH },
+					["coord"] = { 57.5, 32.5, WINTERSPRING },
 				}),
 				i(169208, {	-- Crown of Everlasting Fortune
 					["timeline"] = { ADDED_8_3_0 },
@@ -363,9 +399,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
-				i(170283),	-- Flower of Felicity (QI!)
-				i(170282),	-- Flower of Peace (QI!)
-				i(170281),	-- Flower of Wealth (QI!)
+				objective(1, {	-- 0/3 Flower of Wealth
+					["providers"] = {
+						{ "o", 332281 },	-- Flower of Wealth
+						{ "i", 170281 },	-- Flower of Wealth (QI!)
+					},
+					["coord"] = { 37.3, 45.4, NORTHERN_BARRENS },
+				}),
+				objective(2, {	-- 0/3 Flower of Peace
+					["providers"] = {
+						{ "o", 332282 },	-- Flower of Peace
+						{ "i", 170282 },	-- Flower of Peace (QI!)
+					},
+					["coord"] = { 47.0, 19.2, THE_CAPE_OF_STRANGLETHORN },
+				}),
+				objective(3, {	-- 0/3 Flower of Felicity
+					["providers"] = {
+						{ "o", 332283 },	-- Flower of Felicity
+						{ "i", 170283 },	-- Flower of Felicity (QI!)
+					},
+					["coord"] = { 66.6, 28.6, UNGORO_CRATER },
+				}),
 				i(170206, {	-- Crown of Infinite Prosperity
 					["timeline"] = { ADDED_8_3_0 },
 				}),

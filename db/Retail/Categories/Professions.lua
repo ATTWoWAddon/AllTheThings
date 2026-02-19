@@ -2245,7 +2245,7 @@ crit(6756,{achID=1563,id=9})}}),
 ach(1797,{awp=30002,rank=75,requireSkill=185}),
 ach(1796,{awp=30002,rank=50,requireSkill=185}),
 ach(1795,{awp=30002,rank=25,requireSkill=185}),
-ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
+ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",43016},{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
 ach(1999,{awp=30002,cost={{"c",81,10},{"c",402,10}},rank=10,requireSkill=185}),
 ach(2000,{awp=30002,cost={{"c",81,25},{"c",402,25}},rank=25,requireSkill=185}),
 ach(2001,{awp=30002,cost={{"c",81,50},{"c",402,50}},rank=50,requireSkill=185}),
@@ -4033,7 +4033,7 @@ cu(3055,{requireSkill=356})}}),
 i(225768,{f=55,requireSkill=356,spellID=456068})}})}}),
 x(12,{awp=120000,requireSkill=356,g={
 h(-12,{requireSkill=356,g={
-ach(42797,{requireSkill=356})}}),
+ach(42797,{cost={{"i",254875,2}},requireSkill=356})}}),
 flt(101,{requireSkill=356,g={
 p(4951,{itemID=260942,npcID=256201,requireSkill=356,spellID=1267090})}})}})}),
 prof(182,{

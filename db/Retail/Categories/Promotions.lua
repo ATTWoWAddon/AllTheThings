@@ -162,7 +162,7 @@ toy(258136))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;
 i(269743,{description="Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",rwp=120100,spellID=1286271,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(251542,{f=55,spellID=1252638})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258135)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269009,{f=100,spellID=1284640})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(1284640,{itemID=269009})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1258574,{itemID=254736})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(255973,{f=106,spellID=1259687})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(46779,{b=1,f=55,spellID=65745})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(

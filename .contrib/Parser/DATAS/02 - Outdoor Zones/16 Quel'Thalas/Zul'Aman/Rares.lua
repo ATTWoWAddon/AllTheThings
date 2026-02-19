@@ -1,16 +1,34 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
-	--	n(RARES, sharedData({ ["isDaily"] = true }, {
-	--	})),
-		n(RARES, {
+		n(RARES, sharedData({ ["isDaily"] = true }, {
+			n(COMMON_BOSS_DROPS, sharedData({
+				["crs"] = {
+					245692,	-- Ash'an the Empowered
+					242027,	-- Depthborn Eelamental
+					242026,	-- Elder Oaktalon
+					242028,	-- Lightwood Borer
+					245975,	-- Mrrlokk
+					242023,	-- Necrohexxer Raz'ka
+					242032,	-- Oophaga
+					247976,	-- Poacher Rav'ik
+					242025,	-- Skullcrusher Harak
+					242031,	-- Spinefrill
+					245691,	-- The Decaying Diamondback
+					242035,	-- The Devouring Invader
+					242024,	-- The Snapping Scourge
+					242033,	-- Tiny Vermin
+					242034,	-- Voidtouched Crustacean
+				},
+			}, {
+				i(257152),	-- Amani Sharptalon (MOUNT!)
+				i(257200),	-- Escaped Witherbark Pango (MOUNT!)
+				i(265554),	-- Reinforced Amani Haft
+				i(265543),	-- Tempered Amani Spearhead
+				i(265560),	-- Toughened Amani Leather Wrap
+			})),
 			n(245692, {	-- Ash'an the Empowered
 				["coord"] = { 45.2, 41.7, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 91073,
@@ -38,13 +56,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 28.9, 24.4, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 89575,
 				["groups"] = {
-					--no loot table
+					i(264640),	-- Sharpened Borer Claw
 				},
 			}),
 			n(245975, {	-- Mrrlokk
 				["coord"] = { 50.9, 65.2, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 91174,
 				["groups"] = {
+					i(264580),	-- Mrrlokk's Mrgl Grrdle
 					i(264570),	-- Reinforced Chainmrrl
 				},
 			}),
@@ -53,6 +72,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89569,
 				["groups"] = {
 					i(264611),	-- Pendant of Siphoned Vitality
+					i(264527),	-- Vile Hexxer's Mantle
 				},
 			}),
 			n(242032, {	-- Oophaga
@@ -60,7 +80,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89579,
 				["groups"] = {
 					i(264541),	-- Egg-Swaddling Sash
-					i(265560),	-- Toughened Amani Leather Wrap
+					i(264528),	-- Goop-Coated Leggings
 				},
 			}),
 			n(247976, {	-- Poacher Rav'ik
@@ -68,6 +88,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 91634,
 				["groups"] = {
 					i(248583),	-- Drum of Renewed Bonds
+					i(264911),	-- Forest Hunter's Arc
 					i(264627),	-- Rav'ik's Spare Hunting Spear
 				},
 			}),
@@ -76,13 +97,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89571,
 				["groups"] = {
 					--i(248583),	-- Drum of Renewed Bonds
+					i(264631),	-- Harak's Skullcutter
+					i(264542),	-- Skullcrusher's Mantle
 				},
 			}),
 			n(242031, {	-- Spinefrill
 				["coord"] = { 30.5, 44.7, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 89578,
 				["groups"] = {
+					i(264554),	-- Frilly Leather Vest
 					i(251783),	-- Lost Idol of the Hash'ey
+					i(264620),	-- Pufferspine Spellpierce
 				},
 			}),
 			n(245691, {	-- The Decaying Diamondback
@@ -97,7 +122,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89583,
 				["groups"] = {
 					i(264559),	-- Devourer's Visage
-					i(265543),	-- Tempered Amani Spearhead
+					i(264638),	-- Fangs of the Invader
 				},
 			}),
 			n(242024, {	-- The Snapping Scourge
@@ -105,6 +130,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89570,
 				["groups"] = {
 					i(264617),	-- Scourge's Spike
+					i(264585),	-- Snapper Steppers
 					i(251784),	-- Sylvan Wakrapuku
 				},
 			}),
@@ -116,7 +142,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264648),	-- Verminscale Gavel
 				},
 			}),
-		}),
+			n(242034, {	-- Voidtouched Crustacean
+				["coord"] = { 21.5, 70.7, MAP.MIDNIGHT.ZULAMAN },
+				--["questID"] = 89580,	-- TODO: Blizzard bug - share questID with Waverly rare
+				["groups"] = {
+					i(264564),	-- Crab Wrangling Harness
+				},
+			}),
+		})),
 	}),
 }));
 

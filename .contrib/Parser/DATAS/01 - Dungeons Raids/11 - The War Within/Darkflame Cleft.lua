@@ -65,6 +65,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						i(221111),	-- Poleaxe of Somber Fate
 						i(219307),	-- Remnant of Darkness
 						i(221114),	-- Shadowspawn Leggings
+						i(258268, {	-- Waxmaster's Candle Rack (DECOR!)
+							["timeline"] = { ADDED_12_0_1 },
+						}),
 					},
 				}),
 			}),

@@ -62,10 +62,11 @@ InstanceHelper.UpgradeMapping = {
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	inst(1314, {	-- The Dreamrift
-		--["coord"] = { X, Y, MAP.MIDNIGHT.HARANDAR },
-		--["maps"] = {
-
-		--},
+		["coord"] = { 61.0, 64.2, MAP.MIDNIGHT.HARANDAR },
+		["maps"] = {
+			2531,	-- The Dreamrift
+			2532,	-- Den of the Undreamt
+		},
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -82,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(61612),	-- Chimaerus the Undreamt God Guild Run
 					i(256750),	-- Formula: Enchant Weapon - Worldsoul Cradle (RECIPE!)
 					i(256656),	-- Pattern: World Tender's Barkclasp (RECIPE!)
-					i(265950),	-- Dreamrift Vanquisher's Aureate Trophy (DECOR!)
+					i(267645, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Dreamrift Vanquisher's Argent Trophy (DECOR!)
 					i(264246),	-- Eerie Iridescent Riftshroom (DECOR!)
 				}),
 			}),
@@ -116,6 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(61488),	-- Heroic: Chimaerus, the Undreamt God
 					ach(61491, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Chimaerus, the Undreamt God
 					ach(61613),	-- Heroic: Chimaerus the Undreamt God Guild Run
+					i(265950, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Dreamrift Vanquisher's Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
@@ -143,6 +145,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 						title(668),	-- <Name>, Famed Slayer of the Undreamt
 					})),
 					ach(61614),	-- Mythic: Chimaerus the Undreamt God Guild Run
+					i(266886, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Dreamrift Vanquisher's Gleaming Trophy (DECOR!)
 				}),
 			}),
 		},

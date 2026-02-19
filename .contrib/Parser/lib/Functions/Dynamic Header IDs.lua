@@ -4,6 +4,7 @@ HeaderAssignments = {
 	["A Greedy Emissary"] = -540,
 	["A Shieldmaiden's Creed"] = -433,
 	["Abomination Factory"] = -165,
+	["Abundance"] = -729,
 	["Achievements"] = -12,
 	["Adventure Guide"] = -13,
 	["Adventures"] = -151,
@@ -708,4 +709,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -729;
+NextHeaderID = -730;
