@@ -1018,7 +1018,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 38.7, 22.7, MAP.MIDNIGHT.ZULAMAN },
 					}),
 				}),
-				header(HEADERS.AchCriteria, 61452.14, {	-- [PH] Hub Culture
+				header(HEADERS.AchCriteria, 61452.14, {	-- Beyond the Walls
+					q(93047, {	-- Butchery Basics
+						["sourceQuests"] = { 86652 },	-- Left in the Shadows
+						["provider"] = { "n", 241072 },	-- Gijaniji
+						["coord"] = { 45.6, 69.4, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(93048, {	-- Got No Rhythm
+						["sourceQuests"] = { 86652 },	-- Left in the Shadows
+						["provider"] = { "n", 254142 },	-- Iklani
+						["coord"] = { 46.8, 66.2, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(93049, {	-- Homework Support
+						["sourceQuests"] = { 93048 },	-- Got No Rhythm
+						["provider"] = { "n", 254144 },	-- An'jali
+						["coord"] = { 46.6, 68.0, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(93050, {	-- Altar History
+						--["sourceQuests"] = { XXX },	-- ???
+						["provider"] = { "n", 254146 },	-- Rakan
+						["coord"] = { 43.5, 68.84, MAP.MIDNIGHT.ZULAMAN },
+					}),
 					q(93051, {	-- The Final Exam
 						--["sourceQuests"] = { XXX },	-- ???
 						["provider"] = { "n", 254136 },	-- Ri'kari
