@@ -81,8 +81,8 @@ app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 				end
 				return newG;
 			end
-			return t.__clonedG;
 		end
+		return t.__clonedG;
 	end,
 	OnClick = function(t)
 		return onClickForDynamicCategory;
