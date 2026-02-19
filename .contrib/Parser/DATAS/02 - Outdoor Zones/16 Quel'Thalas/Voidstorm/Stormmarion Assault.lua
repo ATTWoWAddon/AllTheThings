@@ -4,7 +4,7 @@
 
 STORMMARION_ASSAULT = createHeader({
 	readable = "Stormmarion Assault",
-	icon = 7431083,
+	--icon = ,
 	text = {
 		en = "Stormmarion Assault",
 	},

@@ -61,11 +61,10 @@ InstanceHelper.UpgradeMapping = {
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	inst(1308, {	-- March on Quel'Danas
-		["coord"] = { 52.6, 86.0, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
-		["maps"] = {
-			2533,	-- March on Quel'Danas
-			2534,	-- The Darkwell
-		},
+		--["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
+		--["maps"] = {
+
+		--},
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -88,7 +87,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				ach(61371),	-- Mythic: March on Quel'Danas (automated)
 				-- Multiple Raids this tier... Duplicate Glory and Tier Set Achievements?
-				ach(62352),	-- Nothing to See Here
 				ach(61380, {	-- Glory of the Midnight Raider (automated)
 					i(260887),	-- Tenebrous Harrower (MOUNT!)
 				}),
@@ -102,10 +100,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(264187),	-- Blessed Phoenix Egg (DECOR!)
 				}),
 				BossOnly(LURA, {
-					i(257736),	-- Lightcalled Hearthstone (TOY!)
 					--i(258519),	-- Plans: Magister's Valediction (RECIPE!)
 					i(264492),	-- Chaotic Void Maw (DECOR!)
-					i(267646, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Argent Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
@@ -132,9 +128,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(BELOREN, {
 					ach(61381),	-- Eggsistential Crisis
 				}),
-				BossOnly(LURA, {
-					ach(62406),	-- All the Things She Said
-				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
@@ -158,7 +151,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(BELOREN),
 				BossOnly(LURA, {
 					ach(61626, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Midnight Falls
-					i(265949, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
@@ -199,7 +191,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					})),
 					ach(61611),	-- Mythic: Midnight Falls Guild Run
 					i(246590),	-- Ashes of Belo'ren (MOUNT!)
-					i(266885, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Gleaming Trophy (DECOR!)
 					i(249367, {	-- Chiming Void Curio
 						["sym"] = {
 							{"sub", "instance_tier",1307,DIFFICULTY.RAID.MYTHIC},

@@ -7,8 +7,6 @@ end
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.EVERSONG_WOODS, {
-		i(257156),	-- Cerulean Hawkstrider
-		i(257147),	-- Cobalt Dragonhawk
 	--	n(RARES, sharedData({ ["isDaily"] = true }, {
 	--	})),
 		n(RARES, {
@@ -24,7 +22,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 56.4, 77.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 92403,
 				["groups"] = {
-					i(264552),	-- Frogskin Grips
 					i(264526),	-- Supremely Slimy Sash
 				},
 			}),
@@ -40,7 +37,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 36.4, 36.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 92389,
 				["groups"] = {
-					i(264602),	-- Abyss Coral Band
 					i(264629),	-- Coralfang's Hefty Fin
 				},
 			}),
@@ -48,7 +44,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 63.2, 50.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 92391,
 				["groups"] = {
-					i(264647),	-- Cre'van's Punisher
 					i(265027),	-- Lucky Lynx Locket
 					i(264573),	-- Taskmaster's Sadistic Shoulderguards
 				},
@@ -59,7 +54,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264624),	-- Fang of the Dame
 					i(265027),	-- Lucky Lynx Locket
-					i(264595),	-- Lynxhide Shawl
 				},
 			}),
 			n(255302, {	-- Duskburn
@@ -67,7 +61,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 93550,
 				["groups"] = {
 					--i(251791),	-- Holy Retributor's Order
-					i(264594),	-- Netherscale Cloak
 					i(264569),	-- Void-Gorged Kickers
 				},
 			}),
@@ -75,7 +68,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 45.0, 78.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 91315,
 				["groups"] = {
-					i(264522),	-- Striderplume Armbands
 					i(264521),	-- Striderplume Focus
 				},
 			}),
@@ -84,7 +76,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92393,
 				["groups"] = {
 					i(264645),	-- Aged Farstrider Bow
-					i(264612),	-- Tarnished Gold Locket
 				},
 			}),
 			n(250806, {	-- Lost Guardian
@@ -94,7 +85,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(251788),	-- Gift of Light
 					i(264575),	-- Hexwood Helm
-					i(264555),	-- Splintered Hexwood Clasps
 				},
 			}),
 			n(255329, {	-- Malfunctioning Construct
@@ -109,7 +99,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 54.7, 60.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 92392,
 				["groups"] = {
-					i(264523),	-- Hydrafang Blade
 					i(264524),	-- Lightblighted Verdant Vest
 				},
 			}),
@@ -118,7 +107,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92409,
 				["groups"] = {
 					i(264546),	-- Bat Fur Boots
-					i(264537),	-- Winged Terror Gloves
 				},
 			}),
 			n(246332, {	-- Warden of Weeds
@@ -134,7 +122,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 34.8, 21.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 89580,	-- TODO: Blizzard bug - share questID with Tiny Vermin rare
 				["groups"] = {
-					i(264910),	-- Shell-Cleaving Poleaxe
 					i(264608),	-- String of Lovely Blossoms
 				},
 			}),

@@ -4,7 +4,7 @@
 
 ABUNDANCE = createHeader({
 	readable = "Abundance",
-	icon = 237556,
+	--icon = ,
 	text = {
 		en = "Abundance",
 	},

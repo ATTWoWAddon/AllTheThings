@@ -15,7 +15,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 39.6, 60.8, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92193,
 				["groups"] = {
-					i(264534),	-- Bogvine Shoulderguards
 					i(264540),	-- Mirevine Wristguards
 				},
 			}),
@@ -30,14 +29,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 68.5, 40.6, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92137,
 				["groups"] = {
-					i(264538),	-- Translucent Membrane Slippers
+					--no loot table
 				},
 			}),
 			n(249997, {	-- Chlorokyll
 				["coord"] = { 64.6, 47.9, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92161,
 				["groups"] = {
-					i(264626),	-- Scepter of Radiant Conversion
 					i(264968),	-- Telluric Leyblossom
 				},
 			}),
@@ -46,7 +44,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92176,
 				["groups"] = {
 					i(264644),	-- Crawler's Mindscythe
-					i(264562),	-- Plated Grove Vest
 				},
 			}),
 			n(249849, {	-- Ha'kalawe
@@ -54,14 +51,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92142,
 				["groups"] = {
 					i(264553),	-- Deepspore Leather Galoshes
-					i(264592),	-- Ha'kalawe's Flawless Wing
 				},
 			}),
 			n(250226, {	-- Mindrot
 				["coord"] = { 46.0, 31.3, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92172,
 				["groups"] = {
-					i(264550),	-- Fungal Stalker's Stockings
 					i(251782),	-- Withered Saptor's Paw (midnight zone reward)
 				},
 			}),
@@ -69,7 +64,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 28.2, 81.9, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92190,
 				["groups"] = {
-					i(264616),	-- Lightblighted Sapdrinker
 					i(264591),	-- Radiant Petalwing's Feather
 				},
 			}),
@@ -100,7 +94,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92170,
 				["groups"] = {
 					i(264639),	-- Razorfang Hacker
-					i(264568),	-- Serrated Scale Gauntlets
 					--i(252957),	-- Tangle of Vibrant Vines (TODO: idk if you really want that much source for it, since already midnight zone reward?)
 				},
 			}),
@@ -109,14 +102,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92168,
 				["groups"] = {
 					i(264635),	-- Stumpy's Stump
-					i(264578),	-- Stumpy's Terrorplate
 				},
 			}),
 			n(249902, {	-- Tallcap the Truthspreader
 				["coord"] = { 72.6, 69.2, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92148,
 				["groups"] = {
-					i(264532),	-- Robes of Flowing Truths
 					i(264650),	-- Truthspreader's Truth Spreader
 				},
 			}),

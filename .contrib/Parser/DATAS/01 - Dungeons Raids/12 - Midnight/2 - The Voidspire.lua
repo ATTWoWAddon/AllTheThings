@@ -204,11 +204,10 @@ InstanceHelper.UpgradeMapping = {
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	inst(1307, {	-- The Voidspire
-		["coord"] = { 45.4, 64.0, MAP.MIDNIGHT.VOIDSTORM },
-		["maps"] = {
-			2529,	-- Voidspire
-			2530,	-- Crown of the Cosmos
-		},
+		--["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
+		--["maps"] = {
+
+		--},
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -279,7 +278,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				ach(61370),	-- Mythic: The Voidspire (automated)
 				-- Multiple Raids this tier... Duplicate Glory and Tier Set Achievements?
-				ach(62352),	-- Nothing to See Here
 				ach(61380, {	-- Glory of the Midnight Raider (automated)
 					i(260887),	-- Tenebrous Harrower (MOUNT!)
 				}),
@@ -316,7 +314,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(264498),	-- Voltaic Trigore Egg (DECOR!)
 				}),
 				BossOnly(SALHADAAR, {
-					i(264672),	-- Cosmic Ritual Stone (TOY!)
 					i(258123),	-- Pattern: Sunfire Silk Spellthread (RECIPE!)
 					i(264494),	-- Banded Domanaar Storage Crate (DECOR!)
 				}),
@@ -329,8 +326,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(262957),	-- Tattered Vanguard Banner (DECOR!)
 				}),
 				BossOnly(COSMOS, {
-					i(269269),	-- Devouring Ritual Spire (DECOR!)
-					i(268049, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Argent Trophy (DECOR!)
+					i(264500),	-- Devouring Host Ritual Engine (DECOR!)
+					i(265951),	-- Voidspire Vanquisher's Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
@@ -395,7 +392,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(VANGUARD),
 				BossOnly(COSMOS, {
 					ach(61624, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Crown of the Cosmos
-					i(265951, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
@@ -443,7 +439,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 						title(676),	-- <Name>, Famed Slayer of the Voidspire
 					})),
 					ach(61608),	-- Mythic: Crown of the Cosmos Guild Run
-					i(266887, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- Voidspire Vanquisher's Gleaming Trophy (DECOR!)
 				}),
 			}),
 		},

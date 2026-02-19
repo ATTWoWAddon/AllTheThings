@@ -38,14 +38,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 28.9, 24.4, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 89575,
 				["groups"] = {
-					i(264640),	-- Sharpened Borer Claw
+					--no loot table
 				},
 			}),
 			n(245975, {	-- Mrrlokk
 				["coord"] = { 50.9, 65.2, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 91174,
 				["groups"] = {
-					i(264580),	-- Mrrlokk's Mrgl Grrdle
 					i(264570),	-- Reinforced Chainmrrl
 				},
 			}),
@@ -54,7 +53,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89569,
 				["groups"] = {
 					i(264611),	-- Pendant of Siphoned Vitality
-					i(264527),	-- Vile Hexxer's Mantle
 				},
 			}),
 			n(242032, {	-- Oophaga
@@ -62,7 +60,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89579,
 				["groups"] = {
 					i(264541),	-- Egg-Swaddling Sash
-					i(264528),	-- Goop-Coated Leggings
 					i(265560),	-- Toughened Amani Leather Wrap
 				},
 			}),
@@ -71,7 +68,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 91634,
 				["groups"] = {
 					i(248583),	-- Drum of Renewed Bonds
-					i(264911),	-- Forest Hunter's Arc
 					i(264627),	-- Rav'ik's Spare Hunting Spear
 				},
 			}),
@@ -80,17 +76,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89571,
 				["groups"] = {
 					--i(248583),	-- Drum of Renewed Bonds
-					i(264631),	-- Harak's Skullcutter
-					i(264542),	-- Skullcrusher's Mantle
 				},
 			}),
 			n(242031, {	-- Spinefrill
 				["coord"] = { 30.5, 44.7, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 89578,
 				["groups"] = {
-					i(264554),	-- Frilly Leather Vest
 					i(251783),	-- Lost Idol of the Hash'ey
-					i(264620),	-- Pufferspine Spellpierce
 				},
 			}),
 			n(245691, {	-- The Decaying Diamondback
@@ -105,7 +97,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89583,
 				["groups"] = {
 					i(264559),	-- Devourer's Visage
-					i(264638),	-- Fangs of the Invader
 					i(265543),	-- Tempered Amani Spearhead
 				},
 			}),
@@ -114,7 +105,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89570,
 				["groups"] = {
 					i(264617),	-- Scourge's Spike
-					i(264585),	-- Snapper Steppers
 					i(251784),	-- Sylvan Wakrapuku
 				},
 			}),
@@ -124,13 +114,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264597),	-- Leechtooth Band
 					i(264648),	-- Verminscale Gavel
-				},
-			}),
-			n(242034, {	-- Voidtouched Crustacean
-				["coord"] = { 21.5, 70.7, MAP.MIDNIGHT.ZULAMAN },
-				--["questID"] = 89580,	-- TODO: Blizzard bug - share questID with Waverly rare
-				["groups"] = {
-					i(264564),	-- Crab Wrangling Harness
 				},
 			}),
 		}),

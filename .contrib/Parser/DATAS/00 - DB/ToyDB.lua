@@ -1559,15 +1559,14 @@ i(256881);	-- Steward's Bauble
 i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
 i(256552);	-- Verdant Rutaani Seed
 i(256893);	-- Wretched Dredger's Brand
-i(257736);	-- Lightcalled Hearthstone
+
 i(251633);	-- Bursting Bounty Bundle
 i(266370);	-- Dundun's Abundant Travel Method
-i(264672);	-- Cosmic Ritual Stone
 --- UNSORTED ---
-
+i(257736);	-- [DNT] [PH] 12.0 Holy Hearthstone
 i(243146);	-- [DNT] Ren'dorei Struggle
 
-
+i(264672);	-- Cosmic Ritual Stone
 
 i(263244);	-- Enigmatic Fountain
 i(263975);	-- Feeling Fielder Mk. 7
@@ -1576,11 +1575,11 @@ i(259084);	-- Gift of the Cycle
 i(263871);	-- Holy Pet Leash
 
 i(253629);	-- Personal Key to the Arcantina
-
+i(251903);	-- Potatoad Egg
 i(268728);	-- Saptor Salve
 i(258963);	-- Shroom Jumper's Parachute
 i(268695);	-- Test Sharing Camera
 i(263198);	-- Valdekar's Special
 
-i(251903);	-- Potatoad Egg
+
 i(250320);	-- Lightgraft
