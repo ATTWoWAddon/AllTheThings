@@ -3,8 +3,8 @@ local _, app = ...;
 local contains = app.contains
 
 -- Global locals
-local ipairs, pairs, select, tinsert =
-	  ipairs, pairs, select, tinsert;
+local ipairs, next, pairs, select, tonumber, tinsert =
+	  ipairs, next, pairs, select, tonumber, tinsert;
 local GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetGuildCategoryList, GetCategoryNumAchievements =
 	  GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetGuildCategoryList, GetCategoryNumAchievements;
 
@@ -91,6 +91,44 @@ local function achievementSort(a, b)
 	end
 	return app.SortDefaults.name(a, b);
 end;
+local function UpdateMissingAchievements(self)
+	if GetCategoryList and GetCategoryNumAchievements then
+		for _,categoryID in ipairs(GetCategoryList()) do
+			local numAchievements = GetCategoryNumAchievements(categoryID);
+			if numAchievements and numAchievements > 0 then
+				for i=1,numAchievements,1 do
+					local achievementID, _, _, _, _, _, _, _, _, _, _, isGuildAch, _, _, isStatistic = GetAchievementInfo(categoryID, i);
+					if achievementID and not isStatistic and not self.data.achievements[achievementID] then
+						local achievement = (isGuildAch and app.CreateGuildAchievement or app.CreateAchievement)(achievementID);
+						self.data.achievements[i] = achievement;
+						achievement.parent = getAchievementCategory(self.data.categories, -1);-- achievement.parentCategoryID);
+						achievement.description = "@CRIEVE: This achievement has not been sourced yet.";
+						if not achievement.u or achievement.u ~= 1 then
+							tinsert(achievement.parent.g, achievement);
+						end
+						local numCriteria = GetAchievementNumCriteria(achievementID);
+						if numCriteria > 0 then
+							local g = {};
+							for j=1,numCriteria,1 do
+								local criteriaUID = select(10, GetAchievementCriteriaInfo(achievementID, j));
+								local criteriaObject = app.CreateAchievementCriteria(criteriaUID);
+								criteriaObject.parent = achievement;
+								tinsert(g, criteriaObject);
+							end
+							achievement.g = g;
+						end
+						app.CacheFields(achievement, true);
+
+						-- Put a copy in Unsorted.
+						app:GetWindow("Unsorted"):AddUnsortedAchievement(achievement);
+					end
+				end
+			end
+		end
+	end
+	app.Sort(self.data.g, achievementSort, true);
+	self:Update(true);
+end
 
 -- Implementation
 app:CreateWindow("Achievements", {
@@ -106,8 +144,28 @@ app:CreateWindow("Achievements", {
 			back = 1,
 			g = {},
 			achievements = {},
+			categories = {},
+			CheckForMissingButton = app.CreateRawText("Check for Missing Achievements", {
+				description = "Click this button to check for missing achievements.\n\nWARNING: This is going to be REALLY SLOW!!",
+				icon = 132089,
+				OnClick = function(row, button)
+					-- Only run this once per session.
+					local uma = UpdateMissingAchievements;
+					if uma then
+						UpdateMissingAchievements = nil;
+						uma(self);
+					end
+					local window = app.GetRelativeValue(row.ref, "window");
+					if window ~= self then window:Update(true); end
+					return true;
+				end,
+				OnUpdate = function(data)
+					data.visible = not not UpdateMissingAchievements and app.Debugging;
+					return true;
+				end,
+			}),
 			OnUpdate = function(data)
-				local categories = {};
+				local categories = data.categories;
 				categories[-1] = data;
 				if GetCategoryList then
 					for _,categoryID in ipairs(GetCategoryList()) do
@@ -120,7 +178,7 @@ app:CreateWindow("Achievements", {
 					end
 				end
 				cacheAchievementData(data, categories, data.g);
-				for i,matches in pairs(app.GetFieldContainer("achievementID")) do
+				for i,matches in next,app.GetFieldContainer("achievementID") do
 					if not data.achievements[i] then
 						local mostAccessibleSource;
 						for j,o in ipairs(matches) do
@@ -177,42 +235,9 @@ app:CreateWindow("Achievements", {
 						end
 					end
 				end
-				if GetCategoryList and GetCategoryNumAchievements then
-					local unsorted = app:GetWindow("Unsorted");
-					for _,categoryID in ipairs(GetCategoryList()) do
-						local numAchievements = GetCategoryNumAchievements(categoryID, true);
-						if numAchievements and numAchievements > 0 then
-							for i=1,numAchievements,1 do
-								local achievementID, _, _, _, _, _, _, _, _, _, _, isGuildAch, _, _, isStatistic = GetAchievementInfo(categoryID, i);
-								if achievementID and not isStatistic and not data.achievements[achievementID] then
-									local achievement = (isGuildAch and app.CreateGuildAchievement or app.CreateAchievement)(achievementID);
-									data.achievements[i] = achievement;
-									achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
-									achievement.description = "@CRIEVE: This achievement has not been sourced yet.";
-									if not achievement.u or achievement.u ~= 1 then
-										tinsert(achievement.parent.g, achievement);
-									end
-									local numCriteria = GetAchievementNumCriteria(achievementID);
-									if numCriteria > 0 then
-										local g = {};
-										for j=1,numCriteria,1 do
-											local criteriaUID = select(10, GetAchievementCriteriaInfo(achievementID, j));
-											local criteriaObject = app.CreateAchievementCriteria(criteriaUID);
-											criteriaObject.parent = achievement;
-											tinsert(g, criteriaObject);
-										end
-										achievement.g = g;
-									end
-									app.CacheFields(achievement, true);
-
-									-- Put a copy in Unsorted.
-									if unsorted then unsorted:AddUnsortedAchievement(achievement); end
-								end
-							end
-						end
-					end
-				end
 				app.Sort(data.g, achievementSort, true);
+				tinsert(data.g, 1, data.CheckForMissingButton);
+				data.CheckForMissingButton.parent = data;
 				data.OnUpdate = nil;
 			end
 		}));
