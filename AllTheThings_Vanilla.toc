@@ -1,7 +1,11 @@
-## Title: AllTheThings |cfd9b9b9b(Classic)|r
+## Title: AllTheThings
 ## IconTexture: Interface/Addons/AllTheThings/assets/logo_32x32
 ## Name: AllTheThings
 ## Author: Crieve
+## Version: @project-version@
+## Interface: 11508
+## X-Wago-ID: yQKyY5K7
+## X-Curse-Project-ID: 267285
 ## Category-enUS: Collections
 ## Category-deDE: Kriegsmeutesammlungen
 ## Category-esES: Colecciones de banda guerrera
@@ -24,11 +28,6 @@
 ## Notes-ruRU: Отслеживает вашу коллекцию ездовых животных, питомцев, игрушек, трансмогрификации и многого другого.|nФильтруйте по своему вкусу или попытайтесь собрать все!|n|nНочные сборки и еженедельные обновления.
 ## Notes-zhCN: 追踪你所收藏的坐骑、宠物、玩具、幻化等。。|n按你的喜好筛选，或尝试收集所有物品！|n|n每晚构建，每周更新。
 ## Notes-zhTW: 追蹤你所收藏的坐騎、寵物、玩具、塑形等。。|n依你的喜好篩選，或試著收集所有物品！|n|n每晚構建，每週更新。
-## Version: @project-version@
-## Interface: 11508
-## X-Interface: 11508
-## X-Wago-ID: yQKyY5K7
-## X-Curse-Project-ID: 267285
 ## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
@@ -38,7 +37,7 @@
 src\WoW API Wrappers.lua
 
 # Raw DBs
-db\Classic\ReferenceDB.lua
+db\[Game]\ReferenceDB.lua
 
 # Libs (no dependencies, only app assignment)
 lib\Debugging.lua
@@ -93,17 +92,17 @@ src\Modules\Contributor.lua
 #src\__test.lua
 
 # Expansion specific localization files
-db\Classic\LocalizationDB.lua
-db\Classic\Categories.xml
-db\Classic SOD\LocalizationDB.lua
-db\Classic SOD\Categories.xml
+db\[Game]\LocalizationDB.lua
+db\[Game]\Categories.xml
+db\[Game]SOD\LocalizationDB.lua
+db\[Game]SOD\Categories.xml
 
 # Load object class templates
 src\Classes\base.lua
 src\Classes\Achievement Categories.lua
 src\Classes\Achievement Data.lua
 src\Classes\Achievement.Classic.lua
-# src\Classes\Achievement.lua
+src\Classes\Achievement.lua
 src\Classes\CharacterClass.lua
 src\Classes\Currency.lua
 src\Classes\Difficulty.lua
@@ -126,7 +125,6 @@ src\Classes\Deaths.lua
 src\Classes\Dynamic Categories.lua
 src\Classes\Filter Types.lua
 src\Classes\Gear Sets.lua
-src\Classes\Glyphs.lua
 src\Classes\Illusions.lua
 src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
@@ -142,6 +140,9 @@ src\Classes\Decor.lua
 src\Classes\Heirloom.lua
 src\Classes\Toys.lua
 
+# Classic Specific Modules
+src\Classes\Classic\Mounts & Battle Pets.lua
+
 # Expansion specific source files
 src\Expansions\Warlords.lua
 src\Expansions\Legion.lua
@@ -155,9 +156,6 @@ src\Settings\Settings.xml
 
 # Load primary addon source files
 AllTheThings.lua
-
-# Classic Specific Modules
-src\Classes\Classic\Mounts & Battle Pets.lua
 
 src\UI\Game Tooltip.lua
 src\UI\Instance Difficulty Icon.lua

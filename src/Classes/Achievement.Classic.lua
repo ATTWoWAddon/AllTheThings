@@ -1,4 +1,8 @@
 local _, app = ...
+if app.GameBuildVersion > 40000 then
+	-- Not compatible post-Cata.
+	return;
+end
 local L = app.L
 
 -- Globals

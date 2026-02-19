@@ -1,5 +1,9 @@
-
 local _, app = ...
+if app.GameBuildVersion <= 40000 then
+	-- Not compatible pre-Cata. (TODO: Test in Wrath Classic Anniversary)
+	return;
+end
+
 local L = app.L
 
 -- Globals
@@ -483,6 +487,9 @@ do
 			local achievementID = t.achID or t.parent and t.parent.achievementID
 			t.achievementID = achievementID;
 			return achievementID;
+		end,
+		text = function(t)
+			return L.CRITERIA_FORMAT:format(t.name or RETRIEVING_DATA);
 		end,
 		name = function(t)
 			return cache.GetCachedField(t, "name", default_name) or t.__questname

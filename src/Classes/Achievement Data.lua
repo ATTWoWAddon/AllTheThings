@@ -1,5 +1,9 @@
 do
 local _, app = ...
+if app.GameBuildVersion > 40000 then
+	-- Not compatible post-Cata.
+	return;
+end
 
 -- Cache Achievement Data if it exists.
 local AchievementData = rawget(app.L, "ACHIEVEMENT_DATA");
