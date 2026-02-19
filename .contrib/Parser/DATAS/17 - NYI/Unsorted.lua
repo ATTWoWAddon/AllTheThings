@@ -56,14 +56,12 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				i(257024),	-- A Lost Hunting Knife
 				i(257054),	-- A Rolled-Up Pillow
-				i(259219),	-- Bear Tooth
-				i(259220),	-- Dragonhawk Feather
-				i(259223),	-- Lynx Claw
+
 				i(268111),	-- Arkonite Beacon
 				i(268112),	-- Argunite Beacon
 				i(268115),	-- Overbaked Donut
 				i(268116),	-- Twin-Flame Holder
-				i(259221),	-- Eagle Talon
+
 
 				-- Midnight Preseason
 				i(268485),	-- Victorious Stormarion Pinnacle Cache
@@ -407,7 +405,6 @@ root(ROOTS.Unsorted, {
 				i(253012),	-- Set Keystone Map: Magisters' Terrace
 				i(253706),	-- Junk Mail
 				i(254373),	-- Areyn's Elrendar Red
-				i(254749),	-- Phial of Burrow Balm
 				i(254874),	-- Glowing Moth Dust
 				i(255688),	-- Anchor of the Abyss
 				i(256342),	-- Griftah's Fool-Proof Embellishing Powder
@@ -855,7 +852,7 @@ root(ROOTS.Unsorted, {
 				i(251002),	-- Nether Familiar
 				i(251003),	-- Wrathful Wyrm
 				i(251004),	-- Striped Snakebiter
-				i(255151),	-- Scruffbeak \\ [DNT] Baby Amani Eagle (Grey)
+
 				i(258122),	-- Emerald Hatchling \\ [DNT] [PH] 12.0 Green Baby Hawkstrider
 				i(258189),	-- Do, child of Filo \\ Do, child of Fi'lo
 				i(258739),	-- Chillcrawler
@@ -880,7 +877,7 @@ root(ROOTS.Unsorted, {
 				i(264654),	-- Emberwing Hatchling
 				i(264892),	-- Nova \\ [PH] Black Baby Hawkstrider
 				i(265035),	-- Medusa \\ [PH] Purple Siphoid
-				i(265609),	-- Princess Bloodshed
+
 				i(264366),	-- Razeshi C.
 				i(260341),	-- Star the Lucky Dragon
 				i(260360),	-- Gummi the Glow Wyrm
@@ -1006,12 +1003,10 @@ root(ROOTS.Unsorted, {
 				i(252012),	-- Vibrant Petalwing
 				i(257085),	-- Augmented Stormray
 
-				i(257152),	-- Amani Sharptalon
 
 
-				i(257200),	-- Escaped Witherbark Pango
-				i(257223),	-- Ancestral War Bear \\ [DNT] 12.0 Shadowpine Bear
-				i(257444),	-- Hexed Vilefeather Eagle \\ [DNT] 12.0 Hex Eagle Mount
+
+
 				i(260635),	-- Sanguine Harrower
 				i(257447),	-- Prowling Shredclaw
 				i(257448),	-- Frenzied Shredclaw
@@ -1589,8 +1584,6 @@ root(ROOTS.Unsorted, {
 				i(265366),	-- Twilight Executioner
 				i(265367),	-- Twilight Fang
 				i(265368),	-- Twilight Destroyer
-				i(265554),	-- Reinforced Amani Haft
-				i(265562),	-- Amani Warrior's Spear
 				i(265775),	-- Amani Warrior Stave
 				i(265781),	-- Amani Spiritdancer's Boneweight
 				i(266077),	-- Basic Black Quiver

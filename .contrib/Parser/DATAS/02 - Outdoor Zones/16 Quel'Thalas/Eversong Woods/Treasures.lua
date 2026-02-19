@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 		n(TREASURES, {
@@ -39,7 +38,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			o(617432, {	-- Forgotten Ink and Quill
 				["coord"] = { 43.3, 69.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-				["questID"] = 94747,
+				--["questID"] = 94747,	-- I did not get his //Braghe
+				["questID"] = 93893,
 				["groups"] = {
 					i(262616),	-- Lively Songwriter's Quill (DECOR!)
 				},
@@ -58,7 +58,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			o(617534, {	-- Gilded Arnillary Sphere
 				["coord"] = { 44.6, 45.6, MAP.MIDNIGHT.EVERSONG_WOODS },
-				["questID"] = 94740,
+				--["questID"] = 94740,	-- I did not get his //Braghe
+				["questID"] = 93908,
 				["groups"] = {
 					i(265828),	-- Gilded Armillary Sphere (750g JUNK!)
 					i(262453),	-- Heathlight Armillary (DECOR!)
