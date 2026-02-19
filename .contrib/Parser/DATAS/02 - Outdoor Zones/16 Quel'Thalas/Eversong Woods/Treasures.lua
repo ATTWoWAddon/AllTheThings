@@ -72,7 +72,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(267838),	-- Sunwing Hatchling (PET!)
 					n(257049, {	-- Mischevious Chick
-						["description"] = "If it didn't spawn bowl towards it - zone out and go back.",	-- TODO: Blizzard bug - remove it if they ever manage to fix this
 						["coord"] = { 24.2, 69.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 						["questID"] = 94626,
 						["cost"] = { { "i", 265674, 1 }, },	-- 1x Tasty Meat
@@ -164,7 +163,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			header(HEADERS.Achievement, 62288, {	-- Eversong Woods: The Highest Peaks
 				o(619621, {	-- Vista Point Flag
-					["coord"] = { 20.2, 79.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["coords"] = {	-- Same location but on both maps
+						{ 20.2, 79.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 43.0, 30.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					},
 					["questID"] = 94536,
 				}),
 				o(619647, {	-- Vista Point Flag
@@ -180,7 +182,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 94539,
 				}),
 				o(619650, {	-- Vista Point Flag
-					["coord"] = { 50.3, 84.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["coord"] = { 50.2, 85.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["questID"] = 94540,
 				}),
 			}),

@@ -36,37 +36,40 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(62187),	-- Grand Magister's Sommelier
 			ach(61961),	-- Runestone Rush
 			skyriding(ach(61522, {	-- Skyriding Glyphs: Brightwing Estate
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 65.2, 32.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			skyriding(ach(61525, {	-- Skyriding Glyphs: Daggerspine Point
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 33.4, 65.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			skyriding(ach(61529, {	-- Skyriding Glyphs: Dawnstar Spire
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 62.6, 62.8, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			skyriding(ach(61527, {	-- Skyriding Glyphs: Fairbreeze Village
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 43.2, 46.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			skyriding(ach(61524, {	-- Skyriding Glyphs: Goldenmist Village
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 40.0, 59.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			skyriding(ach(61531, {	-- Skyriding Glyphs: Path of Dawn
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 49.5, 48.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			skyriding(ach(61523, {	-- Skyriding Glyphs: Silvermoon City
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 58.9, 19.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			skyriding(ach(61526, {	-- Skyriding Glyphs: Suncrown Tree
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 58.4, 58.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			skyriding(ach(61530, {	-- Skyriding Glyphs: Sunsail Anchorage
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 39.5, 45.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			skyriding(ach(61521, {	-- Skyriding Glyphs: The Shining Span
-				--["coord"] = { X, Y, Z },
+				["coords"] = {	-- Same location but on both maps
+					{ 51.4, 8.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+					{ 48.3, 6.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
 			})),
 			skyriding(ach(61528, {	-- Skyriding Glyphs: Tranquillien
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 52.5, 67.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 			})),
 			ach(61957),	-- Sojourner of Eversong Woods
 			pvp(ach(61221)),	-- Tour of Duty: Eversong Woods
