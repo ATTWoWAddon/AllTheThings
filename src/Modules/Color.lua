@@ -122,7 +122,7 @@ local function GetPatchString(patch)
 	patch = tonumber(patch)
 	return patch and (floor(patch / 10000) .. "." .. (floor(patch / 100) % 100) .. "." .. (patch % 10))
 end
-local SettingsPrecision, UseMoreColors
+local SettingsPrecision, UseMoreColors = 2, true;
 local function GetPercentageTextDefault(percent)
 	return " (" .. GetNumberWithZeros(percent * 100, SettingsPrecision) .. "%)";
 end
