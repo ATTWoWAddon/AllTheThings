@@ -628,8 +628,6 @@ root(ROOTS.Unsorted, {
 
 				-- Misc Amani
 				i(254554),	-- Amani Hex Stick
-				-- Catalyst
-				i(260173),	-- Crystallized Dawnlight Manaflux
 
 				-- Boon
 				i(264668),	-- Boon of Speed
