@@ -261,9 +261,11 @@ root(ROOTS.Housing, {
 		},
 		["groups"] = {
 			i(253580),	-- Harvesting Hatchet
+			-- #if BEFORE 12.0.0
 			i(251766, {	-- Shadowmoon Lumber
 				["cost"] = { { "i", 242691, 1 } },	-- Olemba Lumber
 			}),
+			-- #endif
 		},
 	}),
 	n_CommonVendorItems({
