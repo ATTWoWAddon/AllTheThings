@@ -25,14 +25,6 @@ ach(62117),	-- Abyss Anglers: Boarhide Catch Sack \\ Abyss Anglers: Placeholder 
 ach(62118),	-- Abyss Anglers: Amazardhide Catch Case \\ Abyss Anglers: Placeholder 2
 ach(62119),	-- Abyss Anglers: Loaknit-Woven Catch Satchel \\ Abyss Anglers: Placeholder 3
 12.0.0.64339
-ach(62145),	-- Dungeon Unlock: Windrunner Spire
-ach(62146),	-- Dungeon Unlock: Murder Row
-ach(62147),	-- Dungeon Unlock: Den of Nalorakk
-ach(62148),	-- Dungeon Unlock: Maisara Caverns
-ach(62149),	-- Dungeon Unlock: The Blinding Vale
-ach(62150),	-- Dungeon Unlock: Nexus-Point Xenas
-ach(62151),	-- Dungeon Unlock: Voidscar Arena
-ach(62152),	-- Dungeon Unlock: Magisters' Terrace
 ach(62191),	-- Call of the Light
 ach(62207),	-- Abyss Anglers: Reinforced Joints
 ach(62208),	-- Abyss Anglers: Depth Grease
@@ -52,11 +44,8 @@ ach(62221),	-- Abyss Anglers: Fresh Depth Tech
 12.0.0.64499
 ach(62222),	-- Abyss Anglers: The Amani Way
 12.0.0.64741
-ach(62230),	-- Die in a Delve
 ach(62271),	-- Abyss Anglers: Trench Berserker
 ach(62272),	-- Abyss Anglers: Certified Depthdiver
-12.0.0.65560
-ach(62415),	-- [DNT] Trading Post - Jan26 - Make Good
 12.0.1.64889
 ach(62273),	-- Echoes of Midnight
 ach(62342),	-- Abyss Anglers: The Finest of Fish
@@ -71,7 +60,5 @@ ach(62400),	-- Craft Your World
 ach(62403),	-- 'Tis But A Scratch
 12.0.1.65617
 ach(62406),	-- All the Things She Said
-12.0.1.65848
-ach(62496),	-- 12.0 Research Console - Mount Tracking - Hidden [DNT]
 12.0.1.65867
 ach(62489),	-- Last Call for Undercoin

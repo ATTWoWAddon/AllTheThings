@@ -4105,6 +4105,22 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(61789),	-- Midnight Tier 11 delves completed
 			ach(61790),	-- Midnight total delves completed
 			ach(61791),	-- Midnight delve completed the most
+
+			-- 12.0.0.64339
+			ach(62145),	-- Dungeon Unlock: Windrunner Spire
+			ach(62146),	-- Dungeon Unlock: Murder Row
+			ach(62147),	-- Dungeon Unlock: Den of Nalorakk
+			ach(62148),	-- Dungeon Unlock: Maisara Caverns
+			ach(62149),	-- Dungeon Unlock: The Blinding Vale
+			ach(62150),	-- Dungeon Unlock: Nexus-Point Xenas
+			ach(62151),	-- Dungeon Unlock: Voidscar Arena
+			ach(62152),	-- Dungeon Unlock: Magisters' Terrace
+
+			-- 12.0.0.64741
+			ach(62230),	-- Die in a Delve
+
+			-- 12.0.0.65560
+			ach(62415),	-- [DNT] Trading Post - Jan26 - Make Good
 		})),
 
 		-- 12.0.1
@@ -4115,6 +4131,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(62294),	-- Champion Dawncrests earned
 			ach(62295),	-- Hero Dawncrests earned
 			ach(62296),	-- Myth Dawncrests earned
+
+			-- 12.0.1.65848
+			ach(62496),	-- 12.0 Research Console - Mount Tracking - Hidden [DNT]
 		})),
 	}),
 });
