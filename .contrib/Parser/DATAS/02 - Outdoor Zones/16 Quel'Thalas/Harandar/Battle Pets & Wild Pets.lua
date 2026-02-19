@@ -22,6 +22,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coords"] = {
 					},
 				}),
+				pet(4497, {	-- Waddles
+					["coords"] = {
+					},
+				}),
 			},
 		}),
 	}),

@@ -2,7 +2,6 @@
 ach(61516),	-- Radiant Singer
 12.0.0.63534
 ach(60888),	-- Pushing My Buttons
-ach(61091),	-- Midnight Safari
 ach(61490),	-- Midnight Season 1: Champion of the Dawn
 12.0.0.63724
 ach(61519),	-- Midnight Season 1: Catalyst Unbound
