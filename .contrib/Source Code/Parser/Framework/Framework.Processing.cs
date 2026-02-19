@@ -2199,16 +2199,6 @@ namespace ATT
                 return;
             }
 
-            // If not processing the Main Achievement Category, then any encountered non-guild Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
-            if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
-            {
-                if (achInfo.TryGetValue("parentCategoryID", out long achCatID))
-                {
-                    DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
-                    //LogDebug($"Duplicated Achievement {achID} into Achievement Category");
-                }
-            }
-
             // don't automate any achievement which is specifically listed under a Difficulty
             if (NestedDifficultyID != 0) return;
 
