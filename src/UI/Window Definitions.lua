@@ -2959,6 +2959,16 @@ function app:CreateWindow(suffix, definition)
 				definition.HelpText or ("Toggles the " .. (definition.SettingsName or suffix) .. " Window.")
 			};
 		end
+		
+		-- Dynamic Categories are neat, but currently only a Classic Feature (for now?)
+		if definition.IsDynamicCategory and app.IsClassic and not definition.DynamicCategoryHeader then
+			app.AddEventHandler("OnBuildDataCache", function(categories)
+				categories["Dynamic" .. suffix] = app.CreateDynamicCategory(suffix, {
+					SortPriority = 100,
+					sourceIgnored = 1
+				});
+			end);
+		end
 	end
 end
 function app:CreateWindowForAddon(addonName, definition)

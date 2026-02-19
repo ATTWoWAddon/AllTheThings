@@ -107,3 +107,8 @@ local function AssignOnUpdateFunction()
 end
 app.AddEventHandler("OnSettingsNeedsRefresh", AssignOnUpdateFunction);
 app.AddEventHandler("OnStartup", AssignOnUpdateFunction);
+
+-- Track Deaths in the Main List
+app.AddEventHandler("OnBuildDataCache", function(categories)
+	categories.Deaths = app.CreateDeathClass();
+end);

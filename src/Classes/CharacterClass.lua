@@ -285,6 +285,27 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 	isMinilistHeader = app.ReturnTrue,
 });
 
+-- Track Yourself in the Main List, but only in Debug Mode!
+app.AddEventHandler("OnBuildDataCache", function(categories)
+	categories.Yourself = app.CreateUnit("player", {
+		description = app.L.DEBUG_LOGIN,
+		races = { app.RaceIndex },
+		c = { app.ClassIndex },
+		r = app.FactionID,
+		collected = 1,
+		nmr = false,
+		SortPriority = 200,
+		OnUpdate = function(self)
+			self.lvl = app.Level;
+			if app.MODE_DEBUG then
+				self.collectible = true;
+			else
+				self.collectible = false;
+			end
+		end
+	});
+end);
+
 -- External API
 app.ClassInfoByClassFile = ClassInfoByClassFile;
 app.ClassInfoByClassName = ClassInfoByClassName;
