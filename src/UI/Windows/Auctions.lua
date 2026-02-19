@@ -252,6 +252,7 @@ app:CreateWindow("Auctions", {
 				end
 
 				if app.IsRetail then
+					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
 					-- TODO: Acts a little weird with the auto-show setting
 					if not AuctionHouseFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame
 						AuctionHouseFrameTabSideBar = CreateFrame("Frame", nil, AuctionHouseFrame, "")
