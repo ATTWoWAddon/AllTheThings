@@ -1551,6 +1551,7 @@ i(267456);	-- Lil' Scoots' Pillow
 i(251491);	-- Magical Pet Clicker
 i(264414);	-- Midnight Delver's Flare Gun
 i(268717);	-- Pango Plating
+i(268695);	-- Pin-o-Matic Camera
 i(263933);	-- Preyseeker's Hearthstone
 i(250319);	-- Researcher's Shadowgraft
 i(264666);	-- Rod of Exanguishation

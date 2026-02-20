@@ -98,7 +98,6 @@ root(ROOTS.Unsorted, {
 				i(268274),	-- Blinky's Collar
 			}),
 			filter(TOYS, {
-				i(268695),	-- Camera \\ Pin-o-Matic Camera \\ Test Sharing Camera
 				i(268728),	-- Saptor Salve
 			}),
 			n(WEAPONS, {
