@@ -5,7 +5,7 @@ local ach,cl,cq,crit,cu,de,en,flt,h,i,ill,mnt,n,o,p,q,s,settings,title,toy,x=_.C
 local a={{"i",116788},{"o",384744},{1},{10},{11},{12},{13},{19.1,82,2023},{2},{201230},{222277},{225347},{3},{35.3,38.2,2339},{38.3,94.9,2112},{4},{49.2,58.3,2025},{5},{56.4,19.3,2022},{6},{68795,72366},{7.4,47.5,2024},{7},{79184},{8},{9}};
 categories.Promotions={
 h(-514,{awp=90005,g={
-mnt(348162,{description="Granted to players by logging in on character of at least level 20.",itemID=258430,u=2}),
+mnt(348162,{b=1,description="Granted to players by logging in on character of at least level 20.",itemID=258430,lvl=10,u=2}),
 toy(187834,{b=1,description="The Great Push: SL Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tormented Banner of the Opportune to use in-game!\nSign-ups close 29 Nov 2021 and The Proving Grounds are on 3-5 Dec (US).",u=2}),
 toy(187957,{awp=90200,b=1,description="Mythic Dungeon International: SL Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 6th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Encrypted Banner of the Opportune to use in-game!\nSign-ups close 28 March 2022 and The Proving Grounds are on 30 March - 5 April (US).",rwp=90200,u=2}),
 s(50108,95474,{awp=90205,description="Obtained through Prime Gaming from June 29th 2022 till July 26th 2022.",f=2,rwp=90207,u=2}),
@@ -14,10 +14,10 @@ title(459,{u=2})}}),
 s(51433,97213,{awp=90205,f=2,u=2}),
 toy(187958,{awp=90207,b=1,description="Break the Meta: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 4 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2022|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S4, and the Shrouded Banner of the Opportune will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on October 4th for US, October 5th for EU & October 6th for KR/TW & lasts for the entire reset of your region.\n\nThis was previously available through The Great Push: SL Season 4.",rwp=100000,u=2}),
 s(50109,95475,{awp=90207,description="Obtained through Prime Gaming from August 24th 2022 till September 20th 2022.",f=2,rwp=90207,u=2}),
-mnt(386452,{awp=90207,description="In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",itemID=258476,rwp=100002,u=2})}}),
+mnt(386452,{awp=90207,b=1,description="In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",itemID=258476,lvl=10,rwp=100002,u=2})}}),
 h(-515,{awp=100000,g={
-mnt(315132,{description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258423,u=2}),
-mnt(381529,{description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258477,u=2}),
+mnt(315132,{b=1,description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258423,lvl=10,u=2}),
+mnt(381529,{b=1,description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258477,lvl=10,u=2}),
 p(169,{awp=100002,b=1,itemID=34493,npcID=25110,rwp=100002,spellID=45127,u=2}),
 mnt(113120,{awp=100002,itemID=79771,lvl=10,rwp=100002,u=2}),
 p(3248,{awp=100002,b=1,description="Obtained by gifting an eligible creator's channel two Twitch subscriptions between November 28th, 03:00 p.m. & December 12th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=190583,npcID=183638,rwp=100002,spellID=367696,u=2}),
@@ -37,7 +37,7 @@ s(169111,190904,{f=2}),
 s(169112,190905,{f=2}),
 s(169113,190906,{f=2}),
 s(169114,190907,{f=2})}}),
-mnt(419567,{awp=100107,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=258425,rwp=110002,u=2}),
+mnt(419567,{awp=100107,b=1,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=258425,lvl=10,rwp=110002,u=2}),
 mnt(400976,{awp=100107,b=1,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=203727,lvl=10,rwp=110002,u=2}),
 p(2623,{awp=100200,description="Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 7th, 10:00 a.m. & November 14th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=258414,npcID=151788,rwp=100200,spellID=294231,u=2}),
 mnt(102488,{awp=100200,itemID=72575,lvl=10,rwp=100200,u=2}),
@@ -47,7 +47,7 @@ toy(67097,{awp=100205,b=1,rwp=100205,u=2}),
 p(4437,{awp=100206,description="Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between March 22, 10:00 a.m. & April 5, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=258483,npcID=218060,rwp=100206,spellID=439994,u=2}),
 p(348,{awp=100207,b=1,itemID=79744,npcID=59020,rwp=100207,spellID=112994,u=2}),
 toy(218128,{awp=100206,b=1,description="The Great Push returns in Dragonflight Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 15 Jun 2024 and The Proving Grounds are on 19-24 June (US).",rwp=100207,u=2}),
-mnt(443660,{awp=100206,b=1,description="Obtained if you set up a 6-Month WoW Subscription.",itemID=219450,lvl=45,rwp=110200,u=2})}}),
+mnt(443660,{awp=100206,b=1,description="Obtained if you set up a 6-Month WoW Subscription.",itemID=219450,lvl=10,rwp=110200,u=2})}}),
 h(-516,{awp=110000,g={
 h(-518,{awp=110007,rwp=110105,u=2,g={
 mnt(367620,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=190539,lvl=10,u=2}),
@@ -60,8 +60,8 @@ mnt(453255,{description="Acquired alongside the purchase of a 80$ Artistan Keyca
 h(-691,{awp=110205,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255159,{itemID=252679,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255179,{itemID=252681,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(449142,{itemID=223471,lvl=45,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(449132,{itemID=223459,lvl=45,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(449142,{itemID=223471,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(449132,{itemID=223459,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=3,g={
 crit(34643,{achID=6185,awp=40300,id=3,u=2})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 p(333,{b=1,itemID=72134,npcID=54730,spellID=102317,u=3}))}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -86,18 +86,18 @@ s(224995,228909,{awp=110005,description="Available to redeem for 300 points at D
 s(224994,228908,{awp=110005,description="Available to redeem for 300 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",f=9,rwp=110007,u=2}),
 p(4618,{awp=110005,b=1,description="Available to redeem for 400 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",itemID=228793,npcID=229901,rwp=110007,spellID=463251,u=2}),
 p(4617,{awp=110005,b=1,description="Available to redeem for 400 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",itemID=228790,npcID=229890,rwp=110007,spellID=463242,u=2}),
-mnt(428067,{awp=110005,b=1,description="Available to redeem for 600 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",itemID=211087,lvl=45,rwp=110007,u=2}),
+mnt(428067,{awp=110005,b=1,description="Available to redeem for 600 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",itemID=211087,lvl=10,rwp=110007,u=2}),
 p(297,{awp=110005,b=1,itemID=68385,npcID=51600,rwp=110007,spellID=95787,u=2}),
 p(4629,{awp=110005,description="Available with the purchase of an Ice Murloc Funko Pop from the Blizzard Gear Store to a US/UK mailing address. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=229366,npcID=198987,spellID=464798,u=3}),
-mnt(449132,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223459,lvl=45,u=2}),
-mnt(449142,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223471,lvl=45,u=2}),
+mnt(449132,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223459,lvl=10,u=2}),
+mnt(449142,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223471,lvl=10,u=2}),
 p(4630,{awp=110005,description="Available with the purchase of a Murloc Thrall plushie from the Blizzard Gear Store. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=229368,npcID=230834,spellID=464808,u=3}),
 mnt(139595,{awp=110007,b=1,itemID=95341,lvl=10,rwp=110105,u=2}),
 s(230822,233207,{awp=110007,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 14th, 10:00 a.m. & February 4th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=3,rwp=110007,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1216542,{awp=110007,b=1,description="Rewarded from the Treasure Workshop.",itemID=235344,lvl=10,rwp=110100,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(235378,{awp=110007,b=1,rwp=110100,spellID=1216746,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(459784,{itemID=227362,lvl=27,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(42777,{itemID=49284,lvl=17,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(459784,{itemID=227362,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(42777,{itemID=49284,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42776,{itemID=49283,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46199,{itemID=49286,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46197,{itemID=49285,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -117,22 +117,22 @@ p(4410,{awp=110105,b=1,description="Obtained through watching Twitch Streamers w
 mnt(1236262,{awp=110107,description="Finish the Pandaren Wandering Isle starting zone in |cFFfe040fMoP Classic|r until you arrive in Orgrimmar/Stormwind to receive this mount in Retail.\n\nPromotion starts on July 1st until July 30th.",rwp=110107,u=2}),
 s(284494,235987,{awp=110107,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between July 14th, 10:00 a.m. & August 11th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=3,rwp=110200,u=2}),
 p(4858,{awp=110200,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 5th, 10:00 a.m. & September 16th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=246451,npcID=246983,rwp=110200,spellID=1242265,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1243589,{awp=110200,description="Rewarded from the Season 3 Shop Bundle.",itemID=246732,rwp=110205,u=2})),
-toy(232307,{awp=110200,description="Arena World Championship: TWW Season 3\n\nSign up on Raider.io for any of the 3 Cups, available until October 22nd 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",rwp=110205,u=2}),
-toy(232303,{awp=110205,description="Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",u=2}),
+mnt(1243589,{awp=110200,b=1,description="Rewarded from the Season 3 Shop Bundle.",itemID=246732,lvl=10,rwp=110205,u=2})),
+toy(232307,{awp=110200,b=1,description="Arena World Championship: TWW Season 3\n\nSign up on Raider.io for any of the 3 Cups, available until October 22nd 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",rwp=110205,u=2}),
+toy(232303,{awp=110205,b=1,description="Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",u=2}),
 p(4856,{awp=110200,description="Included for free with any purchase over $75 from the World of Warcraft Collection on the Blizzard Gear Store. Available from September 8-30, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=246343,npcID=246663,rwp=110200,spellID=1241763,u=2}),
-p(4907,{awp=110200,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 1st, 10:00 a.m. & October 29th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=257515,npcID=254356,rwp=110205,spellID=1261676,u=2}),
-mnt(1245604,{awp=110205,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=247848,u=3}),
-mnt(1234971,{awp=110205,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=243194,u=3}),
+p(4907,{awp=110200,b=1,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 1st, 10:00 a.m. & October 29th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=257515,npcID=254356,rwp=110205,spellID=1261676,u=2}),
+mnt(1245604,{awp=110205,b=1,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=247848,lvl=10,u=3}),
+mnt(1234971,{awp=110205,b=1,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=243194,lvl=10,u=3}),
 en(242480,{awp=110205,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",questID=90654,rwp=110207,spellID=1232446,tmogSetID=4538,u=2,g={
 s(290242,242421,{f=2}),
 s(290265,242450,{f=2})}}),
-p(4908,{awp=110205,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=2}),
+p(4908,{awp=110205,b=1,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=2}),
 s(266784,235343,{awp=110207,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=2,rwp=110207,u=2}),
-mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,u=3})}}),
+mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,lvl=10,u=3})}}),
 h(-669,{awp=120000,g={
 de(15151,{description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369}),
-s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120001}),
+s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120100}),
 h(-708,{rwp=120000,u=2,g={
 mnt(367620,{itemID=190539,lvl=10,u=2}),
 mnt(153489,{b=1,itemID=107951,lvl=10,u=2}),
@@ -146,7 +146,7 @@ toy(256141)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)
 de(9265,{itemID=253244,spellID=1255878})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 de(9273,{itemID=253257,spellID=1255907})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 de(9280,{itemID=253296,spellID=1255997})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269743,{spellID=1286271})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743,{b=1,spellID=1286271})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258840)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 s(298858,253402,{f=29})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 en(257547,{questID=93198,spellID=1261729,tmogSetID=5335,g={
@@ -159,7 +159,7 @@ s(301200,257543,{f=2}),
 s(301201,257544,{f=2}),
 s(301202,257545,{f=3})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258136))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269743,{description="Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",rwp=120100,spellID=1286271,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743,{b=1,description="Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",rwp=120100,spellID=1286271,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(251542,{f=55,spellID=1252638})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258135)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1284640,{itemID=269009})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -168,9 +168,11 @@ i(255973,{f=106,spellID=1259687})),(function(t)if GetCVar("portal")~="CN" then	t
 i(46779,{b=1,f=55,spellID=65745})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42776,{itemID=49283,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46199,{itemID=49286,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(46197,{itemID=49285,lvl=10}))}}))}}),
+mnt(46197,{itemID=49285,lvl=10}))}})),
+ach(62400,{description="\n\nOpen Options\n\nGo to Gameplay → Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection",g={
+toy(268695)}})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
-mnt(51412,{itemID=49282,lvl=17,rwp=100007,u=2}),
+mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
 s(21629,45037,{awp=100100,b=1,f=10,rwp=100100,spellID=63604,u=2}),
 mnt(101573,{awp=100100,itemID=71718,lvl=10,rwp=100105,u=2}),
@@ -232,11 +234,11 @@ p(2777,{awp=80205,itemID=258418,npcID=157715,r=1,spellID=307654,u=2,g={
 crit(46934,{achID=14027,id=4,u=2})}}),
 p(2778,{awp=80205,itemID=258419,npcID=157716,r=2,spellID=307655,u=2,g={
 crit(46933,{achID=14027,id=3,u=2})}}),
-mnt(341821,{awp=90002,itemID=258428,rwp=90200,u=2}),
+mnt(341821,{awp=90002,b=1,itemID=258428,lvl=10,rwp=90200,u=2}),
 p(3053,{awp=90002,itemID=258429,npcID=175203,rwp=90200,spellID=344755,u=2,g={
 crit(51529,{achID=14904,id=2,u=2})}}),
 ach(14904,{awp=90002,rwp=90200,u=2}),
-mnt(358072,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Legendary Pack.",itemID=258427,rwp=100205,u=2}),
+mnt(358072,{awp=100107,b=1,description="Received after buying the Blizzcon 2023 Collection: Legendary Pack.",itemID=258427,lvl=10,rwp=100205,u=2}),
 toy(210042,{awp=100107,b=1,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",rwp=100205,u=2}),
 p(3579,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",itemID=258482,npcID=205467,rwp=100205,spellID=411448,u=2}),
 ach(18250,{awp=100107,providers={{"n",205467}},rwp=100205,u=2})}),
@@ -268,11 +270,11 @@ p(131,{awp=20001,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
 crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
 p(111,{awp=20001,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",u=3,g={
-mnt(346136,{itemID=248090,u=3})}}),
+mnt(346136,{b=1,itemID=248090,lvl=10,u=3})}}),
 h(-694,{awp=110205,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",u=3,g={
-mnt(1256677,{itemID=253573,u=3}),
-toy(254666,{u=3}),
-toy(263489,{u=3}),
+mnt(1256677,{b=1,itemID=253573,lvl=10,u=3}),
+toy(254666,{b=1,u=3}),
+toy(263489,{b=1,u=3}),
 p(4903,{itemID=253699,npcID=252859,spellID=1257069,u=3}),
 mnt(1255246,{itemID=252950,u=3})}}),
 x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
@@ -281,7 +283,7 @@ p(188,{itemID=39286,npcID=28883,rwp=30305,spellID=52615,u=2,g={
 crit(34634,{achID=683,id=3,u=2})}})}}),
 h(-525,{awp=90205,rwp=100107,u=2,g={
 h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",u=2,g={
-mnt(370770,{itemID=258475,u=2})}})}}),
+mnt(370770,{b=1,itemID=258475,lvl=10,u=2})}})}}),
 x(4,{awp=40001,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(5377,{providers={{"i",62540}},rwp=40302,u=2}),
 p(268,{itemID=62540,npcID=46896,rwp=40302,spellID=87344,u=2,g={
@@ -345,14 +347,14 @@ s(106493,172081,{f=2,rwp=90205,u=2}),
 s(106494,172082,{f=2,rwp=90205,u=2}),
 s(106495,172083,{f=2,rwp=90205,u=2})}})}})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Shadowlands Epic Edition.",rwp=90205,u=2,g={
-i(248091,{f=101,spellID=308067,u=2}),
+i(248091,{b=1,f=101,spellID=308067,u=2}),
 toy(172179,{b=1,u=2}),
 ill(6162,{b=1,itemID=172177,questID=57596,u=2})}})}}),
 x(10,{awp=90205,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",rwp=100107,u=2,g={
 p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
 p(3175,{npcID=181535,u=2}),
-mnt(359843,{itemID=248089,u=2}),
+mnt(359843,{b=1,itemID=248089,lvl=10,u=2}),
 ach(17314,{providers={{"s",359843}},u=2}),
 ach(17305,{awp=100005,rwp=100200,u=2})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",rwp=100107,u=2,g={
@@ -366,7 +368,7 @@ s(165614,188260,{f=3})}}),
 s(180744,193610,{f=2,u=2})}})}}),
 x(11,{awp=100107,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased The War Within Heroic Edition.",rwp=110200,u=2,g={
-mnt(417888,{itemID=258479,u=2}),
+mnt(417888,{b=1,itemID=258479,lvl=10,u=2}),
 ach(19027,{providers={{"s",417888}},u=2}),
 en(209336,{questID=78048,spellID=422666,tmogSetID=3128,u=2,g={
 s(190676,209320,{f=2}),
@@ -510,7 +512,7 @@ s(295506,248384,{f=2}),
 s(295507,248385,{f=2}),
 s(295508,248386,{f=2}),
 s(295509,248387,{f=2})}}),
-mnt(1234305,{itemID=243020,lvl=30,u=3})}}),
+mnt(1234305,{itemID=243020,lvl=10,u=3})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Midnight Epic Edition.",u=3,g={
 ach(61402,{providers={{"s",1239138}},u=3}),
 p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
@@ -523,8 +525,8 @@ de(1458,{awp=110207,itemID=244668,spellID=1237798,u=3}),
 de(2231,{awp=110207,itemID=246414,spellID=1242068,u=3}),
 de(1894,{awp=110207,itemID=245939,spellID=1240036,u=3}),
 de(4843,{awp=110207,itemID=248809,spellID=1247795,u=3}),
-mnt(1239138,{itemID=245610,lvl=30,u=3}),
-mnt(1234303,{itemID=243019,lvl=30,u=3}),
+mnt(1239138,{itemID=245610,lvl=10,u=3}),
+mnt(1234303,{itemID=243019,lvl=10,u=3}),
 en(248974,{questID=91953,spellID=1248235,tmogSetID=5164,u=3,g={
 s(295490,248368,{f=3}),
 s(295491,248369,{f=2}),
@@ -569,7 +571,7 @@ de(12258,{itemID=259066,spellID=1264391,u=3}),
 de(12250,{itemID=259058,spellID=1264383,u=3}),
 de(12249,{itemID=259057,spellID=1264382,u=3})}})}}),
 h(-722,{awp=120001,description="These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",u=3,g={
-i(256764,{u=3})}}),
+de(11287,{itemID=256764,spellID=1260747,u=3})}}),
 h(-533,{awp=60203,description="These rewards are available to anyone who purchases Overwatch Origins Collection.",rwp=100002,u=2,g={
 p(1828,{b=1,itemID=134047,npcID=103159,spellID=204148,u=2}),
 ach(11064,{providers={{"n",103159}},u=2})}}),
@@ -846,7 +848,7 @@ h(-542,{awp=50300,u=3,g={
 ach(8345,{providers={{"s",142073}},u=3}),
 mnt(142073,{b=1,itemID=98618,lvl=10,u=3})}}),
 h(-543,{awp=90100,u=3,g={
-mnt(356488,{itemID=258431,u=3}),
+mnt(356488,{b=1,itemID=258431,lvl=10,u=3}),
 ach(15323,{u=3})}}),
 h(-544,{awp=100205,maps={1,84,2112},g={
 h(-12,{
@@ -963,10 +965,10 @@ p(192,{awp=30202,b=1,description="This was awarded to players when they linked t
 ach(9496,{awp=60002,u=2,g={
 crit(25887,{achID=9496,providers={a[1]},u=2}),
 crit(27433,{achID=9496,id=2,providers={a[1]},u=2})}}),
-mnt(171845,{awp=60002,b=1,description="Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",itemID=116788,lvl=17,u=2})}),
+mnt(171845,{awp=60002,b=1,description="Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",itemID=116788,lvl=10,u=2})}),
 h(-548,{
 ach(1436,{awp=30002,providers={{"i",37719}},u=2}),
-mnt(49322,{awp=20403,b=1,itemID=37719,lvl=17,u=2}),
+mnt(49322,{awp=20403,b=1,itemID=37719,lvl=10,u=2}),
 ach(4832,{awp=40001,providers={{"i",54860}},u=2}),
 mnt(75973,{awp=30303,b=1,itemID=54860,lvl=10,u=2}),
 ach(8213,{awp=50004,providers={{"i",83086}},u=2}),
@@ -974,7 +976,7 @@ mnt(121820,{awp=50004,b=1,itemID=83086,lvl=10,u=2}),
 ach(8794,{awp=50402,providers={{"i",106246}},u=2}),
 mnt(149801,{awp=50402,b=1,itemID=106246,lvl=10,u=2}),
 ach(9925,{awp=60002,providers={{"i",118515}},u=2}),
-mnt(171847,{awp=60002,b=1,itemID=118515,lvl=17,u=2}),
+mnt(171847,{awp=60002,b=1,itemID=118515,lvl=10,u=2}),
 ach(3636,{awp=40003,description="Chinese & Taiwan Only",u=2}),
 p(231,{awp=40003,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=46894,npcID=34930,spellID=66520,u=2}),
 p(247,{awp=40003,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=49664,npcID=36910,spellID=69539,u=2}),
@@ -1401,26 +1403,26 @@ flt(50,{u=10,g={
 i(49288,{awp=30200,b=1,f=55,r=1,spellID=68769,u=10}),
 i(49289,{awp=30200,b=1,f=55,r=2,spellID=68768,u=10})}}),
 flt(100,{u=10,g={
-mnt(96503,{awp=40100,itemID=68825,lvl=25,u=10}),
-mnt(51412,{awp=20402,b=1,itemID=38576,lvl=17,rwp=30200,u=2}),
-mnt(51412,{awp=30200,itemID=49282,lvl=17,u=10}),
+mnt(96503,{awp=40100,itemID=68825,lvl=10,u=10}),
+mnt(51412,{awp=20402,b=1,itemID=38576,lvl=10,rwp=30200,u=2}),
+mnt(51412,{awp=30200,itemID=49282,lvl=10,u=10}),
 mnt(74856,{awp=30303,itemID=54069,lvl=10,rwp=40300,u=2}),
 mnt(74856,{awp=40300,b=1,itemID=74269,lvl=10,u=10}),
 mnt(102514,{awp=40300,itemID=72582,lvl=10,u=10}),
 mnt(113120,{awp=40302,itemID=79771,lvl=10,u=10}),
 mnt(136505,{awp=50200,itemID=93671,lvl=10,u=10}),
-mnt(65917,{awp=30200,b=1,itemID=46778,lvl=17,rwp=30200,u=2}),
-mnt(65917,{awp=30200,itemID=49290,lvl=17,u=10}),
-mnt(93623,{awp=40003,itemID=68008,lvl=25,u=10}),
+mnt(65917,{awp=30200,b=1,itemID=46778,lvl=10,rwp=30200,u=2}),
+mnt(65917,{awp=30200,itemID=49290,lvl=10,u=10}),
+mnt(93623,{awp=40003,itemID=68008,lvl=10,u=10}),
 mnt(42776,{awp=20103,b=1,itemID=33224,lvl=10,rwp=30200,u=2}),
 mnt(42776,{awp=30200,itemID=49283,lvl=10,u=10}),
-mnt(42777,{awp=20103,b=1,itemID=33225,lvl=17,rwp=30200,u=2}),
-mnt(42777,{awp=30200,itemID=49284,lvl=17,u=10}),
+mnt(42777,{awp=20103,b=1,itemID=33225,lvl=10,rwp=30200,u=2}),
+mnt(42777,{awp=30200,itemID=49284,lvl=10,u=10}),
 mnt(30174,{b=1,itemID=23720,u=10}),
 mnt(97581,{awp=40100,itemID=69228,lvl=10,u=10}),
 mnt(101573,{awp=40300,itemID=71718,lvl=10,u=10}),
 mnt(102488,{awp=40300,itemID=72575,lvl=10,u=10}),
-mnt(74918,{awp=30305,itemID=54068,lvl=17,u=10}),
+mnt(74918,{awp=30305,itemID=54068,lvl=10,u=10}),
 mnt(46197,{awp=20400,b=1,itemID=35225,lvl=10,rwp=30200,u=2}),
 mnt(46197,{awp=30200,itemID=49285,lvl=10,u=10}),
 mnt(46199,{awp=20400,b=1,itemID=35226,lvl=10,rwp=30200,u=2}),
