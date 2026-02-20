@@ -95,8 +95,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			n(QUESTS, {
-				--q(86645),	-- Hidden Quest [DNT], when you fly into Special Assignment: The Grand Magister's Drink wq zone (@38.7, 64.1). // Gone if you complete Stone Vat treasure in area
-				--q(94815),	-- HIDDEN QUEST - Special Assignment: The Grand Magister's Drink [DNT], pop in area for SA (@38.7, 64.1). // Probably RP part for NPCs in area about wine
+				--q(94815),	-- HIDDEN QUEST - Special Assignment: The Grand Magister's Drink [DNT], pop in area for SA (@38.7, 64.1). // Probably RP part for NPCs in area about wine, wrapper for achievement to test out different wines during SA?
 				hqt(95435),	-- Special Assignment: Shade and Claw was unlocked
 				hqt(92848),	-- Special Assignment: The Grand Magister's Drink was unlocked
 				--Wine picked up in the end of SA: The Grand Magister's Drink

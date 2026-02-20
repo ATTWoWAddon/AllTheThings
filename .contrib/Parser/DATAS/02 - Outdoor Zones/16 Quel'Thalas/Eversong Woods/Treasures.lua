@@ -189,3 +189,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 	}),
 }));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
+			n(TREASURES, {
+				q(86645),	-- Hidden Quest [DNT] // Stone Vat treasure wrapper
+			}),
+		}),
+	}),
+}));
