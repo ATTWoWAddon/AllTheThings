@@ -319,19 +319,13 @@ local function SendVersionAnnounce()
 	SendGroupMessage(msg)
 	SendGuildMessage(msg)
 end
--- this is rather pointless for Retail since at this event there's been no recalculation of the actual
--- progress of the user's data... we've only refreshed the collection
-if app.IsClassic then
-	app.AddEventHandler("OnRefreshComplete", SendProgressAnnounce)
-else
-	app.AddEventHandler("OnWindowUpdated", function(window, didUpdate)
-		-- only the Prime window updates the 'PrimeData' cache
-		if not window or window.Suffix ~= "Prime" then return end
+app.AddEventHandler("OnWindowUpdated", function(window, didUpdate)
+	-- only the Prime window updates the 'PrimeData' cache
+	if not window or window.Suffix ~= "Prime" then return end
 
-		-- announce the updated ATT info on the next frame following an update
-		Callback(SendProgressAnnounce)
-	end)
-end
+	-- announce the updated ATT info on the next frame following an update
+	Callback(SendProgressAnnounce)
+end)
 app.AddEventHandler("OnSavedVariablesAvailable", function()
 	local savedCache = AllTheThingsSavedVariables.PlayerProgressCacheByGUID;
 	if savedCache then
