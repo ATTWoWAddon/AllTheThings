@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 54.6, 35.6, MAP.MIDNIGHT.HARANDAR },
 			})),
 			skyriding(ach(61543, {	-- Skyriding Glyphs: Blossoming Terrace
-				["coord"] = { 60.3, 44.4, MAP.MIDNIGHT.HARANDAR },  
+				["coord"] = { 60.3, 44.4, MAP.MIDNIGHT.HARANDAR },
 			})),
 			skyriding(ach(61549, {	-- Skyriding Glyphs: Fungara Village
 				["coord"] = { 44.6, 62.9, MAP.MIDNIGHT.HARANDAR },
