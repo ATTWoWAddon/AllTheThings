@@ -260,12 +260,15 @@ do
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end);
 	app.AddEventRegistration("ACHIEVEMENT_EARNED", function(id)
-		local state = select(13, GetAchievementInfo(tonumber(id)))
-		if state then
-			app.SetCached(CACHE, id, 1)
+		id = tonumber(id)
+		local completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
+		if completed and CollectionCache.AccountWideAchievements[id] then
 			app.SetAccountCached(CACHE, id, 1)
-			app.UpdateRawID(KEY, id);
+		elseif me then
+			app.SetCached(CACHE, id, 1)
+			app.SetAccountCached(CACHE, id, 2)
 		end
+		app.UpdateRawID(KEY, id);
 	end);
 	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 
