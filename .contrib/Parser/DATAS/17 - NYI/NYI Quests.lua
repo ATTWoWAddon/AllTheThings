@@ -225,6 +225,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(7462, { ["name"] = "The Treasure of the Shen'dralar", }),
 			q(7790, { ["name"] = "The Written Word", }),
 			q(7521, { ["name"] = "Thunderaan the Windseeker", }),
+			q(6131, { ["name"] = "Timbermaw Ally (old version, deprecated)", }),
 			q(9556, { ["name"] = "To The Victor...", }),
 			q(2019, { ["name"] = "Tools of the Trade", }),
 			q(8340, { ["name"] = "Twilight Signet Ring <NYI> <TXT>", }),
