@@ -159,27 +159,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(259126),	-- Housing Dye: Void Violet (DECOR!)
 				},
 			}),
-			--Vista Point Flags / High Peaks
-			o(619662, {	-- Vista Point
-				["coord"] = { 36.5, 44.3, MAP.MIDNIGHT.VOIDSTORM },
-				["questID"] = 94552,
+			header(HEADERS.Achievement, 62291, {	-- Harandar: The Highest Peaks
+				o(619662, {	-- Vista Point
+					["coord"] = { 36.5, 44.3, MAP.MIDNIGHT.VOIDSTORM },
+					["questID"] = 94552,
+				}),
+				o(619663, {	-- Vista Point
+					["coord"] = { 55.5, 67.2, MAP.MIDNIGHT.VOIDSTORM },
+					["questID"] = 94553,
+				}),
+				o(619664, {	-- Vista Point
+					["coord"] = { 41.8, 70.2, MAP.MIDNIGHT.VOIDSTORM },
+					["questID"] = 94554,
+				}),
+				o(619665, {	-- Vista Point
+					["coord"] = { 37.8, 55.0, MAP.MIDNIGHT.VOIDSTORM },
+					["questID"] = 94555,
+				}),
+				--o(XXXXX, {	-- Vista Point
+				--	["coord"] = { 39.7, 61.2, MAP.MIDNIGHT.VOIDSTORM },
+				--	["questID"] = 94551,
+				--}),
 			}),
-			o(619663, {	-- Vista Point
-				["coord"] = { 55.5, 67.2, MAP.MIDNIGHT.VOIDSTORM },
-				["questID"] = 94553,
-			}),
-			o(619664, {	-- Vista Point
-				["coord"] = { 41.8, 70.2, MAP.MIDNIGHT.VOIDSTORM },
-				["questID"] = 94554,
-			}),
-			o(619665, {	-- Vista Point
-				["coord"] = { 37.8, 55.0, MAP.MIDNIGHT.VOIDSTORM },
-				["questID"] = 94555,
-			}),
-			--o(XXXXX, {	-- Vista Point	-- TODO: Blizzard bug - there is no 5th as in counter for achievement unless it phased for 90s templates on beta
-			--	["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
-			--	["questID"] = YYYYY,
-			--}),
 		}),
 	}),
 }));
