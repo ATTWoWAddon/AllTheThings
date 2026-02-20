@@ -1248,6 +1248,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
 			["isWeekly"] = true,	-- Probably? Blue !
 		}, {
+			q(92013, {	-- WANTED: Dionaea's Thorntusks
+				["groups"] = { i(249408) },	-- Thorntusks of Dionaea (QI!)
+			}),
 			q(91970),	-- WANTED: Gelatonius
 			q(91980, {	-- WANTED: Hellebora's Thorn
 				["groups"] = { i(249402) },	-- Hellebora's Thorn (QI!)

@@ -357,7 +357,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["cost"] = { { "c", VETERAN_DAWNCREST, 30 } },
 						["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 					}),
-					--i(XXXX, {	-- ???
+					--i(246752, {	-- Celebratory Pack of Hero Dawncrests (TODO: Blizzard bug - same item ID as vault vendor, speculation)
 					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
 					--	["cost"] = { { "c", CHAMPION_DAWNCREST, 30 } },
 					--	["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },

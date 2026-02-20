@@ -396,7 +396,6 @@ root(ROOTS.Unsorted, {
 				i(245585),	-- Combat Engagement Launcher
 				i(247237),	-- Mold Samples
 				i(249689),	-- Ghostflower Tea with Sunfruit
-				i(250096),	-- Worm Bait
 				i(250877),	-- Pylon Fragment
 				i(252658),	-- Set Keystone Map: Windrunner Spire
 				i(252951),	-- Set Keystone Map: Maisara Caverns
@@ -737,7 +736,6 @@ root(ROOTS.Unsorted, {
 				i(249401),	-- Vial of Gelatinous Ooze
 				i(249406),	-- Gorebarb's Pincers
 				i(249407),	-- Harvested Lightwood
-				i(249408),	-- Thorntusks of Dionaea
 				i(249414),	-- Feelings Journal
 				i(249418),	-- Lightblooming Bulb
 				i(249421),	-- Mana-Fortified Vintage
@@ -1142,7 +1140,6 @@ root(ROOTS.Unsorted, {
 				i(251934),	-- Blessed Signet
 				-- Trinkets
 				i(251785),	-- Void-Reaper's Libram
-				i(251789),	-- Consecrated Chalice
 				i(251793),	-- Endosymbiotic Mycelium
 				i(251794),	-- Gris-gris of Confidence
 				i(251882),	-- Fragmented Light Shard

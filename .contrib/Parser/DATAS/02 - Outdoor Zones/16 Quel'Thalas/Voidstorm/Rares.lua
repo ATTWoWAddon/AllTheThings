@@ -152,6 +152,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(248823, {	-- Blackcore
+				["provider"] = { "n", 248907 },	-- Blackcore (vignette, pop if ready to be summoned?)
 				["coord"] = { 24.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 94463,
 				["cost"] = { { "i", 248680, 3 } },	-- 3x Unstable Focusing Crystal
