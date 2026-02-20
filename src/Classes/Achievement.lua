@@ -252,8 +252,9 @@ do
 		app.SetBatchCached(CACHE, mine, 1)
 		app.SetBatchCached(CACHE, acct)	-- remove acct achieves from character cache
 		app.SetBatchCached(CACHE, none)
-		-- Account Cache (removals handled by Sync)
+		-- Account Cache
 		app.SetBatchAccountCached(CACHE, acct, 1)
+		app.SetBatchAccountCached(CACHE, none)
 		-- app.PrintDebugPrior("OnRefreshCollections.Achievement")
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
