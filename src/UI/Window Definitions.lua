@@ -2209,7 +2209,7 @@ local function UpdateWindow(self, force, trigger)
 		end
 
 		-- app.PrintDebugPrior("Update:Done")
-		app.HandleEvent("OnWindowUpdated", self, didUpdate)
+		app.HandleEvent("OnWindowUpdated", self, self.Suffix, didUpdate)
 		return true;
 	end
 	-- app.PrintDebugPrior("Update:None")

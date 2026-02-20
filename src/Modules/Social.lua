@@ -319,9 +319,9 @@ local function SendVersionAnnounce()
 	SendGroupMessage(msg)
 	SendGuildMessage(msg)
 end
-app.AddEventHandler("OnWindowUpdated", function(window, didUpdate)
+app.AddEventHandler("OnWindowUpdated", function(window, suffix)
 	-- only the Prime window updates the 'PrimeData' cache
-	if not window or window.Suffix ~= "Prime" then return end
+	if not window or suffix ~= "Prime" then return end
 
 	-- announce the updated ATT info on the next frame following an update
 	Callback(SendProgressAnnounce)

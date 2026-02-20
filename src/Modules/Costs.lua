@@ -764,17 +764,17 @@ do
 		end
 	end
 	local function StartUpdating(Collector)
-		local group = Collector.__group
+		local group = Collector.CostGroup
 		Collector.Reset()
 		group.text = (group.__text or "").."  "..BLIZZARD_STORE_PROCESSING
 		group.OnSetVisibility = app.ReturnTrue
-		-- app.PrintDebug("AGC:Start",text)
+		-- app.PrintDebug("AGC:Start",Collector,Collector.WindowGroup.text)
 		app.DirectGroupRefresh(group, true)
 	end
 	local function EndUpdating(Collector)
-		local group = Collector.__group
+		local group = Collector.CostGroup
 		group.text = group.__text
-		-- app.PrintDebug("AGC:End",group.text)
+		-- app.PrintDebug("AGC:End",Collector,Collector.WindowGroup.text)
 		-- app.PrintTable(Collector.Data)
 		-- Build all the cost data which is available to the current filters into the cost group
 		local costItems = group.g
@@ -827,7 +827,7 @@ do
 		Collector.Reset()
 	end
 	local function ScanSubCosts(Collector)
-		-- app.PrintDebug("SSC:Start",Collector.__group.__text)
+		-- app.PrintDebug("SSC:Start",Collector,Collector.WindowGroup.text)
 		local costThing
 		local anyNewCost
 		local CurCostData = app.CloneDictionary(Collector.Data)
@@ -868,35 +868,50 @@ do
 		end
 	end
 
-	api.GetCostCollector = function(group)
+	api.GetCostCollector = function(group, costGroup)
 
-		-- local windowRunner = group.window and group.window:GetRunner()
-		-- app.PrintDebug("New Cost Collector",windowRunner)
 		-- Table which can capture cost information for a collector
+		-- TODO: this-ify Collector stuff to make it a bit easier to use
 		local Collector = {
 			Runner = CollectorRunner,
 			Data = setmetatable({}, __costData),
 			Hashes = {},
 			WindowGroup = group,
+			CostGroup = costGroup,
+			Status = {},
 		}
 
-		Collector.ScanGroups = function(group, costGroup)
-			if costGroup._SettingsRefresh == app._SettingsRefresh then
-				return
-			end
-			wipe(costGroup.g)
-			-- only need to run costs once per settings refresh, otherwise the costs won't change from regular refreshes
-			costGroup._SettingsRefresh = app._SettingsRefresh
-			Collector.__group = costGroup
+		Collector.ScanGroups = function()
+			-- app.PrintDebug("Collector.ScanGroups",Collector,Collector.WindowGroup.text)
+			if not Collector.CheckStatusForScan() then return end
+
+			Collector.UpdateStatus()
+			wipe(Collector.CostGroup.g)
 			local runner = Collector.Runner
 			runner.Run(StartUpdating, Collector)
-			ScanGroups(group, Collector)
+			ScanGroups(Collector.WindowGroup, Collector)
 			runner.Run(ScanSubCosts, Collector)
 		end
 
 		Collector.Reset = function()
 			wipe(Collector.Data)
 			wipe(Collector.Hashes)
+		end
+
+		Collector.CheckStatusForScan = function()
+			-- app.PrintDebug("Collector.CheckStatusForScan",app._SettingsRefresh,Collector.WindowGroup.progress,Collector.WindowGroup.total)
+			-- app.PrintTable(Collector.Status)
+			return Collector.Status.SettingsRefresh ~= app._SettingsRefresh
+				or Collector.Status.Progress ~= Collector.WindowGroup.progress
+				or Collector.Status.Total ~= Collector.WindowGroup.total
+		end
+
+		Collector.UpdateStatus = function()
+			Collector.Status.SettingsRefresh = app._SettingsRefresh
+			Collector.Status.Progress = Collector.WindowGroup.progress
+			Collector.Status.Total = Collector.WindowGroup.total
+			-- app.PrintDebug("Collector.UpdateStatus")
+			-- app.PrintTable(Collector.Status)
 		end
 
 		return Collector
@@ -980,13 +995,7 @@ local function BuildTotalCost(group)
 	-- we need to make sure we have a window reference for this group's Collector
 	-- so that when the window is expired, we know to remove the necessary Handler(s)
 	if group.window then
-
-		local Collector = app.Modules.Costs.GetCostCollector(group)
-
-		group.window.__RefreshCostCollector = function(window, didUpdate)
-			-- app.PrintDebug("RefreshCollector??",group.window.Suffix,window and app:SearchLink(window.data),didUpdate)
-			Collector.ScanGroups(group, costGroup)
-		end
+		group.window.__RefreshCostCollector = app.Modules.Costs.GetCostCollector(group, costGroup)
 	end
 
 	-- We only need one hooked method to attempt to refresh the collector on whichever window triggered the respective events
@@ -995,15 +1004,15 @@ local function BuildTotalCost(group)
 		RefreshCollectorHooked = true
 		-- Event handlers are still called by every Window which triggers these events, so let's just only run the Refresh
 		-- if the Window itself has it assigned, instead of trying to determine if the Window matches the Event Window
-		local function RefreshIfExisting(window, didUpdate)
-			if window and didUpdate and window.__RefreshCostCollector and window.data._fillcomplete then
-				window.__RefreshCostCollector(window, didUpdate)
+		local function RefreshIfExisting(window, suffix)
+			-- app.PrintDebug("Cost.TC.Refresh?",window and window.Suffix,window and window.__RefreshCostCollector,window and window.data._fillcomplete)
+			if window and window.__RefreshCostCollector and window.data._fillcomplete then
+				window.__RefreshCostCollector.ScanGroups()
 			end
 		end
 		app.AddEventHandler("OnWindowUpdated", RefreshIfExisting)
-		-- when called from window fill complete, force it to appear as an update
-		app.AddEventHandler("OnWindowFillComplete", function(window) RefreshIfExisting(window, true) end)
-		-- app.PrintDebug("RefreshCollectorHooked")
+		app.AddEventHandler("OnWindowFillComplete", RefreshIfExisting)
+		-- app.PrintDebug("RefreshCollectorHooked",group.window.Suffix)
 	end
 
 	-- Add the cost group to the popout

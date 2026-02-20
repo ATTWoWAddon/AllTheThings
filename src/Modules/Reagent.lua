@@ -54,14 +54,14 @@ local function BuildReagents(group)
 		RefreshCollectorHooked = true
 		-- Event handlers are still called by every Window which triggers these events, so let's just only run the Refresh
 		-- if the Window itself has it assigned, instead of trying to determine if the Window matches the Event Window
-		local function RefreshIfExisting(window, didUpdate)
+		local function RefreshIfExisting(window, suffix, didUpdate)
 			if window and didUpdate and window.__RefreshReagentCollector and window.data._fillcomplete then
 				window.__RefreshReagentCollector(window, didUpdate)
 			end
 		end
 		app.AddEventHandler("OnWindowUpdated", RefreshIfExisting)
 		-- when called from window fill complete, force it to appear as an update
-		app.AddEventHandler("OnWindowFillComplete", function(window) RefreshIfExisting(window, true) end)
+		app.AddEventHandler("OnWindowFillComplete", function(window) RefreshIfExisting(window, window.Suffix, true) end)
 		-- app.PrintDebug("__RefreshReagentCollector")
 	end
 
