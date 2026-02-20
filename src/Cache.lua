@@ -372,6 +372,7 @@ app.AddGenericFieldConverter = function(field)
 	end
 end
 
+local allowMapCaching = true
 do	-- MapID & ExplorationID Key Cache
 -- Whether or not to ignore the mapID in a coord for a given key.
 local IsKeyIgnoredForCoord = setmetatable({
@@ -393,7 +394,7 @@ IsKeyIgnoredForCoord.headerID = function(group)
 end
 
 -- MapID Caching
-local currentMapGroup, allowMapCaching = {}, true
+local currentMapGroup = {}
 local function cacheMapID(group, mapID)
 	-- already are within a caching group for this mapID or not allowing map caching, don't cache
 	if currentMapGroup[mapID] or not allowMapCaching then return end
@@ -404,7 +405,7 @@ local function cacheMapID(group, mapID)
 		-- app.PrintDebug(">>>map:",mapID,group.key,group[group.key])
 		currentMapGroup[mapID] = group
 	end
-	
+
 	CacheField(group, "mapID", mapID);
 	return true
 end
@@ -590,7 +591,7 @@ local function zoneTextNamesRunner(group, value)
 			-- Manually assign the name of this map since it is not a real mapID.
 			CacheField(group, "mapID", mapID);
 		end
-		
+
 		local names = MapRemapping[originalMapID].names;
 		for i=1,#value do
 			names[value[i]] = mapID;
@@ -671,7 +672,7 @@ CacheFields = function(group, skipMapCaching, cacheName)
 	if cacheName then
 		return AllCaches[cacheName].CacheFields(group, skipMapCaching)
 	end
-	
+
 	--local start = GetTimePreciseSec();
 	allowMapCaching = not skipMapCaching
 	_CacheFields(group);
@@ -679,7 +680,7 @@ CacheFields = function(group, skipMapCaching, cacheName)
 		runners[i]()
 	end
 	app.wipearray(runners);
-	
+
 	-- Execute Post Scripts
 	-- Item Mod ID conversion for bonus IDs
 	if #cacheGroupForModItemID > 0 then
