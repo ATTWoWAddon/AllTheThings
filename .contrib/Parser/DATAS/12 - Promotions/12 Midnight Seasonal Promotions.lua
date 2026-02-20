@@ -119,6 +119,10 @@ root(ROOTS.Promotions, {
 					cnONLY(i(49285)),	-- X-51 Nether-Rocket	
 				},
 			})),
+			ach(62400, {	-- Craft Your World
+				["description"] = "\n\nOpen Options\n\nGo to Gameplay → Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection",
+				["groups"] = { i(268695) },	-- Pin-o-Matic Camera (TOY!)
+			}),
 			-- Season 1
 
 			-- Season 2
