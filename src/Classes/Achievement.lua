@@ -46,10 +46,11 @@ local CollectionCacheFunctions = {
 		local FlagsUtil_IsSet = FlagsUtil.IsSet
 		if not FlagsUtil_IsSet then return achs end
 
-		local maxid = CollectionCache.MaxAchievementID
-		local flags
+		local flags, id
 		local FLAG_AccountWide = ACHIEVEMENT_FLAGS_ACCOUNT
-		for id=1,maxid do
+		local allIds = CollectionCache.RealAchievementIDs
+		for i=1,#allIds do
+			id = allIds[i]
 			flags = select(9,GetAchievementInfo(id))
 			if FlagsUtil_IsSet(tonumber(flags) or 0, FLAG_AccountWide) then
 				achs[id] = true
