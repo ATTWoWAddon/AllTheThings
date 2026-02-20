@@ -41,11 +41,11 @@ root(ROOTS.Promotions, {
 			-- "Pre Season"
 			i(263301, {	-- Cuddly Green Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { "removed 12.0.1.99999" },	-- Removed February 17th, 2026
+				["timeline"] = { "removed 12.0.1.65899" },	-- Removed February 17th, 2026
 			}),
 			i(264241, {	-- Crimson Bow Tie (COSMETIC!)
 				["description"] = "Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",
-				["timeline"] = { "removed 12.1.0.99999" },
+				["timeline"] = { "removed 12.0.7.99999" },
 			}),
 			n(RAZER, sharedDataSelf({
 				["timeline"] = { "removed 12.0.0.65655" },
@@ -73,16 +73,15 @@ root(ROOTS.Promotions, {
 					cnONLY(i(256141)), -- Fortune's Waving Cat (TOY!)
 					cnONLY(i(253244)), -- Lunar Celebrants Aquarium
 					cnONLY(i(253257)), -- Lunar Celebrants Privacy Screen
-					cnONLY(i(253296)), -- Lunar Celebrants Tea Set	
+					cnONLY(i(253296)), -- Lunar Celebrants Tea Set
 					cnONLY(i(269743)), -- Landro's Golden Loot Box (2nd Price as well)
 					-- 2nd Price
 					cnONLY(i(258840)), -- Gilded Fountain (TOY!)
 					cnONLY(i(253402)),	-- Scorching Polearm
-				--	cnONLY(i(269743)), -- Landro's Golden Loot Box 
+				--	cnONLY(i(269743)), -- Landro's Golden Loot Box
 					-- 1st Price
 					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
 					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
-					
 					--[[
 				--	add cnONLY(i()),	-- Azure Dragon Soaring Flame
 					cnONLY(i(258136)), -- Azure Thunder Coil Pillar (TOY!) 	MAYBE OTHER BOX
@@ -116,12 +115,12 @@ root(ROOTS.Promotions, {
 					cnONLY(i(46779)),	-- Path of Cenarius
 					cnONLY(i(49283)),	-- Reins of the Spectral Tiger
 					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME
-					cnONLY(i(49285)),	-- X-51 Nether-Rocket	
+					cnONLY(i(49285)),	-- X-51 Nether-Rocket
 				},
 			})),
 			i(264396, {	-- Naturally Elegant Doormat (DECOR!)
 				["description"] = "\nVisit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' authorize the Account connection.",
-				["timeline"] = { "added 12.0.1.65899" },	-- TODO: Timeline out. Available through September 30, 2026.
+				["timeline"] = { "added 12.0.1.65899", "removed 12.1.0.99999" },	-- TODO: Timeline out. Available through September 30, 2026.
 			}),
 			ach(62400, {	-- Craft Your World
 				["description"] = "\nOpen Options\n\nGo to Gameplay -> Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.",
