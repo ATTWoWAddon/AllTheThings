@@ -120,8 +120,11 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			ach(62400, {	-- Craft Your World
-				["description"] = "\n\nOpen Options\n\nGo to Gameplay → Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection",
+				["description"] = "\n\nOpen Options\n\nGo to Gameplay → Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.",
 				["groups"] = { i(268695) },	-- Pin-o-Matic Camera (TOY!)
+			}),
+			i(264396, {	-- Naturally Elegant Doormat (DECOR!)
+				["description"] = "\n\nVisit |cFFFFD700http://zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' authorize the Account connection.",
 			}),
 			-- Season 1
 

@@ -1703,7 +1703,6 @@ root(ROOTS.Unsorted, {
 				i(265551),	-- Cuddly Cobalt Grrgle
 				i(265552),	-- Cuddly Teal Grrgle
 				i(265553),	-- Cuddly Ochre Grrgle
-
 				i(266064),	-- Elegant Cushioned Chaise
 				i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
 				i(250797),	-- Spring Blossom Ceiling Light
@@ -1711,7 +1710,6 @@ root(ROOTS.Unsorted, {
 				i(250868),	-- Crimson Crystal Column
 				i(250869),	-- Crimson Crystal Core
 				i(250870),	-- Crimson Crystal Fragment
-
 				i(257418),	-- Ornate Sin'dorei Sconce
 				i(258535),	-- Simple Bone-Tied Charm
 				i(258536),	-- Windmark Tribal Charm
@@ -1721,16 +1719,10 @@ root(ROOTS.Unsorted, {
 				i(258569),	-- Spring Blossom Gazebo
 				i(263290),	-- Spring Blossom Tree
 				i(263291),	-- Spring Blossom Pond
-
 				i(264252),	-- Zul'Aman Forest Hammock
 				i(264500),	-- Devouring Host Ritual Engine (DECOR!)
-					-- Raid?
-
-
-
 				-- Promo?
 				i(267265),	-- Counterfeit Dark Heart of Galakrond
-
 				i(255643),	-- Silvermoon Barrel
 				i(264717),	-- Amani Warding Hex
 				i(263383),	-- Corked Bottle of Liquid Mystery
@@ -1741,7 +1733,6 @@ root(ROOTS.Unsorted, {
 				i(264282),	-- Bluebird's Golden Cage
 				i(264283),	-- Backboard and Hoop Playset
 				i(264384),	-- Zapmaster Viewer 3000
-				i(264396),	-- Naturally Elegant Doormat
 				i(264397),	-- Simply Adorned Vase and Flowers
 				i(253254),	-- Lunar Celebrant's Cradle
 				i(253255),	-- Lunar Celebrant's Wide Pillow Roll
