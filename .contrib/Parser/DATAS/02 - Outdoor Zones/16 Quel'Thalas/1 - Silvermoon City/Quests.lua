@@ -88,6 +88,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}, {
 				q(93758),	-- Nexus-Point Xenas
 				q(93757),	-- Voidscar Arena
+				q(93751),	-- Windrunner Spire
 			})),
 			-- Housing
 			n(QUESTS, sharedData({
@@ -95,6 +96,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 49.5, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
 			}, {
+				q(95413),	-- Community Engagement
 				q(95440),	-- Housewarming
 			})),
 		}),

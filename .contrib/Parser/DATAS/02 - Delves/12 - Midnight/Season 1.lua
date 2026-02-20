@@ -153,6 +153,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						}),
 						filter(TRINKET_F, {
 							--TODO: They probably gonna exist outside of season but idk?
+							i(251789),	-- Consecrated Chalice
 							i(251790),	-- Desecrated Chalice
 							i(251792),	-- Glorious Crusader's Keepsake
 							i(251791),	-- Holy Retributor's Order (also was as wq reward)
