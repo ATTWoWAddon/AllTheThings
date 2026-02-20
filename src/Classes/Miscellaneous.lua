@@ -382,6 +382,7 @@ for _,field in ipairs({
 	"isYearly",
 	"repeatable",
 	"requireSkill",
+	"SortPriority",
 	"sym",
 }) do
 	CreateVisualHeader__class[field] = Empty
