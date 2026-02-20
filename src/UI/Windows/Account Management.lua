@@ -408,7 +408,7 @@ local function DefaultAccountWideDataHandler(data, key)
 			local characterData = character[key];
 			if characterData then
 				for index,_ in pairs(characterData) do
-					data[index] = 1;
+					data[index] = 2;
 				end
 			end
 		end

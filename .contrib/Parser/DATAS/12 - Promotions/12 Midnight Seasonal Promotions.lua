@@ -45,7 +45,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(264241, {	-- Crimson Bow Tie (COSMETIC!)
 				["description"] = "Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",
-				["timeline"] = { "removed 12.0.1.99999" },
+				["timeline"] = { "removed 12.1.0.99999" },
 			}),
 			n(RAZER, sharedDataSelf({
 				["timeline"] = { "removed 12.0.0.65655" },
@@ -119,6 +119,10 @@ root(ROOTS.Promotions, {
 					cnONLY(i(49285)),	-- X-51 Nether-Rocket	
 				},
 			})),
+			ach(62400, {	-- Craft Your World
+				["description"] = "\n\nOpen Options\n\nGo to Gameplay → Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection",
+				["groups"] = { i(268695) },	-- Pin-o-Matic Camera (TOY!)
+			}),
 			-- Season 1
 
 			-- Season 2

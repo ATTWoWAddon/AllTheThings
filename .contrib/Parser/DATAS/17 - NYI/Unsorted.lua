@@ -735,8 +735,6 @@ root(ROOTS.Unsorted, {
 				i(248931),	-- Tarnished Vilebranch Coin
 				i(249387),	-- Latent Shadowgraft
 				i(249401),	-- Vial of Gelatinous Ooze
-				i(249402),	-- Hellebora's Thorn
-				i(249405),	-- Luminescent Stalks
 				i(249406),	-- Gorebarb's Pincers
 				i(249407),	-- Harvested Lightwood
 				i(249408),	-- Thorntusks of Dionaea

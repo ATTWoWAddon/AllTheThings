@@ -71,9 +71,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(253618),	-- "The Light Blooms" Painting (DECOR!)
 				}),
 			}),
-			n(252915, {	-- Corlen Hordralin <Master Painter>
+			n(256828, {	-- Dennia Silvertongue
 				["description"] = "This Vendor sells Decor only to players that have purchased 'Midnight Epic Edition' upgrade.",
-				["coord"] = { 50.8, 56.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["coord"] = { 51.1, 56.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(252668, {	-- "The Harbinger" Painting (DECOR!)
 						["cost"] = { { "g", 100000000 } },	-- 10,000g
