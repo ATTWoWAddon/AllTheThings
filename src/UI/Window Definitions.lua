@@ -2978,25 +2978,14 @@ end
 -- Dynamic Popouts for Quest Chains and other Groups
 local OnInitForPopout;
 function app:CreateMiniListForGroup(group)
-	-- Is this an achievement criteria or lacking some achievement information?
+
+	-- This re-directs Criteria popouts to instead popout their Achievement
 	local achievementID = group.achievementID;
 	if achievementID and group.criteriaID then
-		local searchResults = app.SearchForField("achievementID", achievementID);
-		if #searchResults > 0 then
-			local bestResult;
-			for i=1,#searchResults,1 do
-				local searchResult = searchResults[i];
-				if searchResult.achievementID == achievementID and not searchResult.criteriaID then
-					if not bestResult or searchResult.g then
-						bestResult = searchResult;
-					end
-				end
-			end
-			if bestResult then group = bestResult; end
-		end
+		group = app.SearchForObject("achievementID", achievementID, "key") or group
 	end
 
-	-- Is this a quest object or objective?
+	-- This re-directs Objective popouts to instead popout their Quest
 	local questID, parent = group.questID, group.parent;
 	if questID and parent and parent.questID == questID then
 		group = parent;
