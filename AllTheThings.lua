@@ -1226,7 +1226,7 @@ function app:GetDataCache()
 			rawset(t, key, val);
 		end
 	});
-	
+
 	local AllCategories = {};
 	app.HandleEvent("OnGetDataCache", AllCategories, g);
 	app.RemoveAllEventHandlers("OnGetDataCache");
@@ -1531,7 +1531,14 @@ function app:GetDataCache()
 				}),
 
 				-- Achievements
-				app.CreateDynamicHeader("achievementID", SimpleHeaderGroup(app.HeaderConstants.ACHIEVEMENTS)),
+				app.CreateDynamicHeader("achievementID", SimpleHeaderGroup(app.HeaderConstants.ACHIEVEMENTS, {
+					dynamic_searchcriteria = {
+						SearchCriteria = {
+							-- don't include Criteria
+							function(o) return not o.criteriaID end
+						}
+					},
+				})),
 
 				-- Artifacts
 				app.CreateDynamicHeader("artifactID", SimpleHeaderGroup(app.HeaderConstants.ARTIFACTS)),
@@ -1682,7 +1689,7 @@ function app:GetDataCache()
 		dynamicHeader.parent = rootData;
 		app.AssignChildren(dynamicHeader);
 	end
-	
+
 	-- app.PrintMemoryUsage("Finished loading data cache")
 	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()
@@ -1886,7 +1893,7 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
 	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
 	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
-	
+
 	-- Cache the data for the first time
 	-- TODO: Move the logic here rather than in GetDataCache itself. (this will prevent windows from killing things)
 	app:GetDataCache();
