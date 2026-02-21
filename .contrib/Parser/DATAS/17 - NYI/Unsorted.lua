@@ -1642,8 +1642,6 @@ root(ROOTS.Unsorted, {
 				i(263295),	-- Cuddly Lime Grrgle
 				i(263296),	-- Cuddly Orange Grrgle
 				i(263297),	-- Cuddly Cerulean Grrgle
-				i(263298),	-- Cuddly Alliance Blue Grrgle
-				i(263299),	-- Cuddly Horde Red Grrgle
 				i(263300),	-- Cuddly Purple Grrgle
 				i(263302),	-- Cuddly Red Grrgle
 				i(263303),	-- Cuddly Blue Grrgle
