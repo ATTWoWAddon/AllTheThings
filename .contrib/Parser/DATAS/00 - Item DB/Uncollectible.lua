@@ -2602,6 +2602,8 @@ i(260654);	-- Abrasive Sand
 i(260636);	-- Algae Covered Stone
 i(263517);	-- Ancient Text
 i(260641);	-- Arid Tendrils
+i(260292);	-- Asteroid Soup
+i(260298);	-- Astral Apple Pie
 i(260664);	-- Bioluminescent Flower Petals
 i(260608);	-- Bloated Animal Remains
 i(264992);	-- Blood Knight Burger
@@ -2691,14 +2693,19 @@ i(260643);	-- Pile of Feathers
 i(244039);	-- Pitcher Plant Vase
 i(260662);	-- Polished Purple Pebble
 i(260258);	-- Purified Cordial
+i(260295);	-- Purified Storm Water
 i(260660);	-- Putrid Mushroom Spores
 i(260264);	-- Quel'Danas Rations
+i(260290);	-- Quel'Thalas Cheese
 i(242638);	-- Recycle Flasks
 i(242637);	-- Recycle Potions
+i(260289);	-- Ren'dorei Rations
+i(260299);	-- Roasted Abyssal Eel
 i(238477);	-- Rotten Meat
 i(260637);	-- Rotting Insect Eggs
 i(244040);	-- Sack of Seeds
 i(238493);	-- Screaming Rock
+i(260296);	-- Shadeleaf Tea
 i(260605);	-- Shattered Spear Tip
 i(260678);	-- Sharp Obsidian Chunk
 i(260684);	-- Sharp Scales
@@ -2711,6 +2718,7 @@ i(260665);	-- Sizable Tusk
 i(260616);	-- Soft Marine Fungi
 i(246376);	-- Solaarian Sintalia
 i(260260);	-- Springrunner Sparkling
+i(260291);	-- Stargazer Pudding
 i(260659);	-- Stellar Vortex Residue
 i(260620);	-- Stone Droppings
 i(262786);	-- Suntouched Special Reserve
@@ -2727,6 +2735,9 @@ i(260686);	-- Vibrant Wings
 i(244038);	-- Vinetwinted Crate
 i(260615);	-- Void Dust Residue
 i(260677);	-- Void Flakes
+i(260293);	-- Void Port
 i(260691);	-- Void-Tainted Pelt
+i(260297);	-- Voidfarer's Respite
+i(260294);	-- Voidwyrm Absinthe
 i(260645);	-- Water Filled Organ
 i(264982);	-- Wine Not

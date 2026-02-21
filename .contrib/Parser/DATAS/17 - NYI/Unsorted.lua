@@ -23,7 +23,6 @@ root(ROOTS.Unsorted, {
 				i(256042),	-- Silvermoon Bench
 				i(256043),	-- Silvermoon Fencepost
 				i(256172),	-- Silvermoon Fence
-				i(262608),	-- Void Elf Stool
 				i(263031),	-- Twisted Rope Coil
 				i(264251),	-- Depthdiver's Cooking Spit
 				i(264352),	-- Elegant Elven Bathtub
@@ -91,8 +90,6 @@ root(ROOTS.Unsorted, {
 				i(253211),	-- Smuggler's Signet
 				i(268551),	-- Scroll of Reflection
 				i(248723),	-- Stolen Documents
-				i(269022),	-- Healing Waters of Ahl'ua
-				i(269023),	-- Phytogenic Poison Part
 			}),
 			n(SPECIAL, {
 				i(268274),	-- Blinky's Collar
@@ -182,7 +179,6 @@ root(ROOTS.Unsorted, {
 				-- Inscription
 				i(258497),	-- Technique: Technique: Thalassian Missive of Deftness
 				i(258498),	-- Technique: Ren'dorei Sturdy Cask
-				i(258499),	-- Technique: Restful Bronze Bench
 				i(258501),	-- Technique: Sin'dorei Homely Shelf
 				i(258506),	-- Technique: Homely Wall Shelves
 				i(258507),	-- Technique: Wild Hanging Scroll
@@ -402,7 +398,6 @@ root(ROOTS.Unsorted, {
 				i(253010),	-- Set Keystone Map: Nexus-Point Xenas
 				i(253012),	-- Set Keystone Map: Magisters' Terrace
 				i(253706),	-- Junk Mail
-				i(254373),	-- Areyn's Elrendar Red
 				i(254874),	-- Glowing Moth Dust
 				i(255688),	-- Anchor of the Abyss
 				i(256342),	-- Griftah's Fool-Proof Embellishing Powder
@@ -612,17 +607,6 @@ root(ROOTS.Unsorted, {
 				i(260286),	-- Shrooms and Nectar \\ Food/Drink 90 01
 				i(260287),	-- World Roots Banquet \\ Food/Drink 90 02
 				i(260288),	-- Alndust-Infused Feast \\ Food/Drink 90 03
-				i(260289),	-- Ren'dorei Rations \\ Food 80 01
-				i(260290),	-- Quel'Thalas Cheese \\ Food 80 02
-				i(260291),	-- Stargazer Pudding \\ Food 85 01
-				i(260292),	-- Asteroid Soup \\ Food 85 02
-				i(260293),	-- Void Port \\ Drink 80 01
-				i(260294),	-- Voidwyrm Absinthe \\ Drink 80 02
-				i(260295),	-- Purified Storm Water \\ Drink 85 01
-				i(260296),	-- Shadeleaf Tea \\ Drink 85 02
-				i(260297),	-- Voidfarer's Respite \\ Food/Drink 90 01
-				i(260298),	-- Astral Apple Pie \\ Food/Drink 90 02
-				i(260299),	-- Roasted Abyssal Eel \\ Food/Drink 90 03
 
 				-- Misc Amani
 				i(254554),	-- Amani Hex Stick
@@ -762,7 +746,6 @@ root(ROOTS.Unsorted, {
 				i(249732),	-- Vintner's Golden
 				i(250190),	-- Knife Priestess Hezzia's Head
 				i(250705),	-- Naga Missive PH NAME
-				i(251284),	-- Anomaly Inverter
 				i(251899),	-- Anasterian's Book of Law
 				i(251904),	-- Crown of the High King
 				i(252192),	-- Rune Key
@@ -891,17 +874,6 @@ root(ROOTS.Unsorted, {
 				i(243613),	-- Farstriders Reputation
 				i(243614),	-- Magisters Reputation
 				i(243615),	-- Shades of the Row Reputation \\ Shadow of the Spire Reputation
-				-- Eversong?
-				i(254384),	-- Lady Marilin's Arcwine Reserve
-				i(254385),	-- Landraelanis' Muskmelon Draught
-				i(254386),	-- Limien's Arcane Infusion
-				i(254387),	-- Duskwither's Dancing Merlot
-				i(254388),	-- Nara's Essence of Butterfly
-				i(254389),	-- Quarelestra's Sanguine Affair
-				i(254390),	-- Sheri's Laughing Rose
-				i(254391),	-- Vehn's Shimmerveil Blanc
-				i(254394),	-- Zalene's Twilight Claret
-				i(254673),	-- Kreynna's Khadgar's Imitation
 				-- Prey
 				i(258027),	-- Vaunted Preyseeker's Shoulder-Spikes
 				i(258029),	-- Vaunted Preyseeker's Plumed Helm
@@ -1562,7 +1534,6 @@ root(ROOTS.Unsorted, {
 				i(264197),	-- Amani Spiritbark Ward
 				i(264847),	-- Dozing Vinepouch
 				i(264852),	-- Bladed Twilight Spaulder
-				i(264857),	-- Twilight Fanatic's Cowl
 				i(264859),	-- Twilight Follower's Cowl
 				i(264969),	-- Extinction Voulge
 				i(264970),	-- Oblivion's Edge
@@ -1744,11 +1715,8 @@ root(ROOTS.Unsorted, {
 				i(258742),	-- Scroll of the Adherent
 			}),
 			n(RARES, {
-				i(264519),	-- Repurposed Voidwalker's Chestplate
-				i(264535),	-- Leggings of the Cosmic Harrower
 				i(264544),	-- Grounded Death Cap
 				i(264548),	-- Sash of Cosmic Tranquility
-				i(264556),	-- Voidforged Cinch
 				i(264557),	-- Borerplate Pauldrons
 				i(264561),	-- Primal Bonestompers
 				i(264567),	-- Rockscale Hood
@@ -1762,17 +1730,14 @@ root(ROOTS.Unsorted, {
 				i(264604),	-- Sludgy Verdant Signet
 				i(264605),	-- Choker of Unyielding Winds
 				i(264607),	-- Spore-Laden Choker
-				i(264610),	-- Escaped Specimen's ID Tag
 				i(264625),	-- Gale Force Focus
 				i(264628),	-- Spear of Nothingness
-				i(264630),	-- Colossal Voidsunderer
 				i(264634),	-- Spire of Flowing Void
 				i(264637),	-- Cosmic Hunter's Glaive
 				i(264641),	-- Sharpened Skullcleaver
 				i(264643),	-- Ash'an's Spare Cleaver
 				i(264646),	-- Specimen Sinew Longbow
 				i(264649),	-- Mindrot Claw-Hammer
-				i(264913),	-- Focused Netherslicer
 			}),
 		})),
 	}),

@@ -416,6 +416,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				filter(BATTLE_PETS, {
 					i(262390),	-- Sporbie (PET!)
 				}),
+				filter(COSMETIC, {
+					i(264857),	-- Twilight Fanatic's Cowl (COSMETIC!)
+				}),
 				n(DECOR, {
 					i(264329),	-- Amani Dining Table (DECOR!)
 					i(264330),	-- Amani Hanging Brazier (DECOR!)

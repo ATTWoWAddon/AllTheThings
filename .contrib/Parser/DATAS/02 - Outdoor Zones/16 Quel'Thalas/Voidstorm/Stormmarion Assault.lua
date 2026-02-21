@@ -55,6 +55,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["isWeekly"] = true,
 					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 				}),
+				q(92407, {	-- Hidey-Hole
+					--["sourceQuests"] = { 86810 },	-- Harvesting the Void (TODO: ???)
+					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
+					["isWeekly"] = true,
+					["coord"] = { 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					["groups"] = {
+						i(251284),	-- Anomaly Inverter (QI!)
+					},
+				}),
 			}),
 			n(REWARDS, {
 				i(246951),	-- Stormarion Core
@@ -65,6 +74,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(260979),	-- Victorious Stormarion Cache
 				i(260940, {	-- Victorious Stormarion Pinnacle Cache
 					i(265030),	-- Kai (PET!)
+					i(262608),	-- Void Elf Stool (DECOR!)
+					i(258499),	-- Technique: Restful Bronze Bench (RECIPE!)
 				}),
 			}),
 		}),
@@ -75,11 +86,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.VOIDSTORM, {
 			n(STORMMARION_ASSAULT, {
 				n(QUESTS, {
-					q(90962),	-- "Stormarion Assault", Right when it start
+					q(90962, {["repeatable"]=true}),	-- "Stormarion Assault", Right when it start
 					q(90943),	-- "Stormarion Assault", Before Wave 1 preparation?
 					q(91938),	-- Wave 1 started
 					q(91464),	-- Wave 2 preparation started
 					q(91465),	-- Wave 3 preparation started
+					q(93793),	-- fired after completion first Stormarion Assault (Victorious Stormarion Pinnacle Cache was looted?)/ probably WQs unloock in area?
 				}),
 			}),
 		}),

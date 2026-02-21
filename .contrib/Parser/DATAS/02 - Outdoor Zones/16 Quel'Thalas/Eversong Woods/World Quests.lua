@@ -84,7 +84,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(92145, {	-- Special Assignment: The Grand Magister's Drink
 					["coord"] = { 40.7, 61.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {
+						i(254373),	-- Areyn's Elrendar Red
+						i(254387),	-- Duskwither's Dancing Merlot
 						i(253521),	-- Heron's Vision of Cloudwalking
+						i(254673),	-- Kreynna's Khadgar's Imitation
+						i(254384),	-- Lady Marilin's Arcwine Reserve
+						i(254385),	-- Landraelanis' Muskmelon Draught
+						i(254386),	-- Limien's Arcane Infusion
+						i(254388),	-- Nara's Essence of Butterfly
+						i(254389),	-- Quarelestra's Sanguine Affair
+						i(254390),	-- Sheri's Laughing Rose
+						i(254391),	-- Vehn's Shimmerveil Blanc
+						i(254394),	-- Zalene's Twilight Claret
 					},
 				}),
 			}),
@@ -95,11 +106,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			n(QUESTS, {
-				--q(94815),	-- HIDDEN QUEST - Special Assignment: The Grand Magister's Drink [DNT], pop in area for SA (@38.7, 64.1). // Probably RP part for NPCs in area about wine, wrapper for achievement to test out different wines during SA?
+				q(94815),	-- HIDDEN QUEST - Special Assignment: The Grand Magister's Drink [DNT], pop in area for SA (@38.7, 64.1). // Probably RP part for NPCs in area about wine, wrapper for achievement to test out different wines during SA?
 				hqt(95435),	-- Special Assignment: Shade and Claw was unlocked
 				hqt(92848),	-- Special Assignment: The Grand Magister's Drink was unlocked
-				--Wine picked up in the end of SA: The Grand Magister's Drink
-				hqt(93793),	-- Heron's Vision of Cloudwalking / also fired after Stormarion Assault
 			}),
 		}),
 	}),
