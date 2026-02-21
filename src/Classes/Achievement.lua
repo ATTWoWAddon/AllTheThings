@@ -234,16 +234,20 @@ do
 	app.AddEventHandler("OnRefreshCollections", function()
 		local me, completed
 		-- app.PrintDebug("OnRefreshCollections.Achievement")
-		local mine, acct, none = {}, {}, {}
+		local mine, acct, shared, none = {}, {}, {}, {}
 		local allIds = CollectionCache.RealAchievementIDs
 		local id
 		for i=1,#allIds do
 			id = allIds[i]
 			completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
-			if completed and CollectionCache.AccountWideAchievements[id] then
-				acct[id] = true
-			elseif me then
-				mine[id] = true
+			if completed then
+				if CollectionCache.AccountWideAchievements[id] then
+					acct[id] = true
+				elseif me then
+					mine[id] = true
+				else
+					shared[id] = true
+				end
 			else
 				none[id] = true
 			end
@@ -254,6 +258,7 @@ do
 		app.SetBatchCached(CACHE, none)
 		-- Account Cache
 		app.SetBatchAccountCached(CACHE, acct, 1)
+		app.SetBatchAccountCached(CACHE, shared, 3)	-- Dual-Faction achievements, completed for Account, but not any specific character
 		app.SetBatchAccountCached(CACHE, none)
 		-- app.PrintDebugPrior("OnRefreshCollections.Achievement")
 	end);
@@ -264,11 +269,15 @@ do
 	app.AddEventRegistration("ACHIEVEMENT_EARNED", function(id)
 		id = tonumber(id)
 		local completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
-		if completed and CollectionCache.AccountWideAchievements[id] then
-			app.SetAccountCached(CACHE, id, 1)
-		elseif me then
-			app.SetCached(CACHE, id, 1)
-			app.SetAccountCached(CACHE, id, 2)
+		if completed then
+			if CollectionCache.AccountWideAchievements[id] then
+				app.SetAccountCached(CACHE, id, 1)
+			elseif me then
+				app.SetCached(CACHE, id, 1)
+				app.SetAccountCached(CACHE, id, 2)
+			else
+				app.SetAccountCached(CACHE, id, 3)
+			end
 		end
 		app.UpdateRawID(KEY, id);
 	end);
