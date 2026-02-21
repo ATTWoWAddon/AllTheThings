@@ -26,11 +26,11 @@ app:CreateWindow("Never Implemented", {
 		end);
 	end,
 	OnUpdate = function(self, ...)
-		-- Update the groups without forcing Debug Mode.
-		local state = app.Modules.Filter.Get.Unobtainable();
-		app.Modules.Filter.Set.Unobtainable();
+		-- Ignore visibility check
+		local filterVisible = app.Modules.Filter.Get.Visible();
+		app.Modules.Filter.Set.Visible();
 		self:DefaultUpdate(...);
-		app.Modules.Filter.Set.Unobtainable(state);
-		return true
+		app.Modules.Filter.Set.Visible(filterVisible);
+		return true;
 	end
 });
