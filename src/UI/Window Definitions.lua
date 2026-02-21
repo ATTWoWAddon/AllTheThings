@@ -2727,7 +2727,7 @@ local function BuildWindow(suffix)
 					local lastUpdate = debugprofilestop();
 					if onRefresh(self) then self:DefaultRefresh(); end
 					print("Refresh: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
-					-- app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
+					app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
 				end
 			end
 		else
@@ -2746,7 +2746,7 @@ local function BuildWindow(suffix)
 					local lastUpdate = debugprofilestop();
 					self:DefaultRefresh();
 					print("Refresh: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
-					-- app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
+					app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
 				end
 			end
 		else

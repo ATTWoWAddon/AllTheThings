@@ -741,7 +741,7 @@ do
 	local IgnoredTypesForNested = {
 		EnsembleItem = true,
 	}
-	local function ScanGroups(group, Collector)
+	local function ScanGroups(Collector, group)
 		-- ignore costs for and within certain groups
 		if not group.visible or group.sourceIgnored then return end
 
@@ -760,12 +760,12 @@ do
 		if (not group.window and group.filledCost) or IgnoredTypesForNested[groupType] then return end
 
 		for _,o in ipairs(g) do
-			ScanGroups(o, Collector)
+			Collector:ScanGroups(o)
 		end
 	end
 	local function StartUpdating(Collector)
 		local group = Collector.CostGroup
-		Collector.Reset()
+		Collector:Reset()
 		group.text = (group.__text or "").."  "..BLIZZARD_STORE_PROCESSING
 		group.OnSetVisibility = app.ReturnTrue
 		-- app.PrintDebug("AGC:Start",Collector,Collector.WindowGroup.text)
@@ -824,7 +824,7 @@ do
 			group.OnSetVisibility = nil
 		end
 		app.DirectGroupUpdate(group)
-		Collector.Reset()
+		Collector:Reset()
 	end
 	local function ScanSubCosts(Collector)
 		-- app.PrintDebug("SSC:Start",Collector,Collector.WindowGroup.text)
@@ -867,52 +867,59 @@ do
 			Collector.Runner.Run(EndUpdating, Collector)
 		end
 	end
+	local function BeginNewScan(Collector)
+		-- app.PrintDebug("Collector.ScanGroups",Collector,Collector.WindowGroup.text)
+		if not Collector:CheckStatusForScan() then return end
+
+		Collector:UpdateStatus()
+		wipe(Collector.CostGroup.g)
+		local runner = Collector.Runner
+		runner.Run(StartUpdating, Collector)
+		ScanGroups(Collector, Collector.WindowGroup)
+		runner.Run(ScanSubCosts, Collector)
+	end
+	local function Reset(Collector)
+		wipe(Collector.Data)
+		wipe(Collector.Hashes)
+	end
+	local function CheckStatusForScan(Collector)
+		-- app.PrintDebug("Collector.CheckStatusForScan",app._SettingsRefresh,Collector.WindowGroup.progress,Collector.WindowGroup.total)
+		-- app.PrintTable(Collector.Status)
+		return Collector.WindowGroup._fillcomplete
+			and (Collector.Status.SettingsRefresh ~= app._SettingsRefresh
+				or Collector.Status.Progress ~= Collector.WindowGroup.progress
+				or Collector.Status.Total ~= Collector.WindowGroup.total)
+	end
+	local function UpdateStatus(Collector)
+		Collector.Status.SettingsRefresh = app._SettingsRefresh
+		Collector.Status.Progress = Collector.WindowGroup.progress
+		Collector.Status.Total = Collector.WindowGroup.total
+		-- app.PrintDebug("Collector.UpdateStatus")
+		-- app.PrintTable(Collector.Status)
+	end
+
+	local CollectorBase = {
+		Runner = CollectorRunner,
+		ScanGroups = ScanGroups,
+		StartUpdating = StartUpdating,
+		EndUpdating = EndUpdating,
+		ScanSubCosts = ScanSubCosts,
+		BeginNewScan = BeginNewScan,
+		Reset = Reset,
+		CheckStatusForScan = CheckStatusForScan,
+		UpdateStatus = UpdateStatus,
+	}
 
 	api.GetCostCollector = function(group, costGroup)
 
 		-- Table which can capture cost information for a collector
-		-- TODO: this-ify Collector stuff to make it a bit easier to use
-		local Collector = {
-			Runner = CollectorRunner,
+		local Collector = setmetatable({
 			Data = setmetatable({}, __costData),
 			Hashes = {},
 			WindowGroup = group,
 			CostGroup = costGroup,
 			Status = {},
-		}
-
-		Collector.ScanGroups = function()
-			-- app.PrintDebug("Collector.ScanGroups",Collector,Collector.WindowGroup.text)
-			if not Collector.CheckStatusForScan() then return end
-
-			Collector.UpdateStatus()
-			wipe(Collector.CostGroup.g)
-			local runner = Collector.Runner
-			runner.Run(StartUpdating, Collector)
-			ScanGroups(Collector.WindowGroup, Collector)
-			runner.Run(ScanSubCosts, Collector)
-		end
-
-		Collector.Reset = function()
-			wipe(Collector.Data)
-			wipe(Collector.Hashes)
-		end
-
-		Collector.CheckStatusForScan = function()
-			-- app.PrintDebug("Collector.CheckStatusForScan",app._SettingsRefresh,Collector.WindowGroup.progress,Collector.WindowGroup.total)
-			-- app.PrintTable(Collector.Status)
-			return Collector.Status.SettingsRefresh ~= app._SettingsRefresh
-				or Collector.Status.Progress ~= Collector.WindowGroup.progress
-				or Collector.Status.Total ~= Collector.WindowGroup.total
-		end
-
-		Collector.UpdateStatus = function()
-			Collector.Status.SettingsRefresh = app._SettingsRefresh
-			Collector.Status.Progress = Collector.WindowGroup.progress
-			Collector.Status.Total = Collector.WindowGroup.total
-			-- app.PrintDebug("Collector.UpdateStatus")
-			-- app.PrintTable(Collector.Status)
-		end
+		}, { __index = CollectorBase })
 
 		return Collector
 	end
@@ -1006,8 +1013,8 @@ local function BuildTotalCost(group)
 		-- if the Window itself has it assigned, instead of trying to determine if the Window matches the Event Window
 		local function RefreshIfExisting(window, suffix)
 			-- app.PrintDebug("Cost.TC.Refresh?",window and window.Suffix,window and window.__RefreshCostCollector,window and window.data._fillcomplete)
-			if window and window.__RefreshCostCollector and window.data._fillcomplete then
-				window.__RefreshCostCollector.ScanGroups()
+			if window and window.__RefreshCostCollector then
+				window.__RefreshCostCollector:BeginNewScan()
 			end
 		end
 		app.AddEventHandler("OnWindowUpdated", RefreshIfExisting)
