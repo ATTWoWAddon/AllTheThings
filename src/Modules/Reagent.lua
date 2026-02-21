@@ -36,16 +36,8 @@ local function BuildReagents(group)
 	-- keep an unmodified text copy
 	reagentGroup.__text = reagentGroup.text
 
-	-- we need to make sure we have a window reference for this group's Collector
-	-- so that when the window is expired, we know to remove the necessary Handler(s)
 	if group.window then
-
-		local Collector = app.Modules.Reagent.GetReagentCollector(group)
-
-		group.window.__RefreshReagentCollector = function(window, didUpdate)
-			-- app.PrintDebug("RefreshCollector??",group.window.Suffix,window and app:SearchLink(window.data),didUpdate)
-			Collector.ScanGroups(group, reagentGroup)
-		end
+		group.window.__RefreshReagentCollector = app.Modules.Reagent.GetReagentCollector(group, reagentGroup)
 	end
 
 	-- We only need one hooked method to attempt to refresh the collector on whichever window triggered the respective events
@@ -54,15 +46,15 @@ local function BuildReagents(group)
 		RefreshCollectorHooked = true
 		-- Event handlers are still called by every Window which triggers these events, so let's just only run the Refresh
 		-- if the Window itself has it assigned, instead of trying to determine if the Window matches the Event Window
-		local function RefreshIfExisting(window, suffix, didUpdate)
-			if window and didUpdate and window.__RefreshReagentCollector and window.data._fillcomplete then
-				window.__RefreshReagentCollector(window, didUpdate)
+		local function RefreshIfExisting(window, suffix)
+			-- app.PrintDebug("Reagent.TC.Refresh?",window and window.Suffix,window and window.__RefreshReagentCollector,window and window.data._fillcomplete)
+			if window and window.__RefreshReagentCollector then
+				window.__RefreshReagentCollector:BeginNewScan()
 			end
 		end
 		app.AddEventHandler("OnWindowUpdated", RefreshIfExisting)
-		-- when called from window fill complete, force it to appear as an update
-		app.AddEventHandler("OnWindowFillComplete", function(window) RefreshIfExisting(window, window.Suffix, true) end)
-		-- app.PrintDebug("__RefreshReagentCollector")
+		app.AddEventHandler("OnWindowFillComplete", RefreshIfExisting)
+		-- app.PrintDebug("RefreshCollectorHooked",group.window.Suffix)
 	end
 
 	-- Add the cost group to the popout
@@ -142,7 +134,7 @@ do
 	local IgnoredTypesForNested = {
 		EnsembleItem = true,
 	}
-	local function ScanGroups(group, Collector)
+	local function ScanGroups(Collector, group)
 		-- ignore reagents for and within certain groups
 		if not group.visible or group.sourceIgnored then return end
 
@@ -161,28 +153,28 @@ do
 		if (not group.window and group.filledCost) or IgnoredTypesForNested[groupType] then return end
 
 		for _,o in ipairs(g) do
-			ScanGroups(o, Collector)
+			Collector:ScanGroups(o)
 		end
 	end
 	local function StartUpdating(Collector)
-		local group = Collector.__group
-		Collector.Reset()
+		local group = Collector.InfoGroup
+		Collector:Reset()
 		group.text = (group.__text or "").."  "..BLIZZARD_STORE_PROCESSING
 		group.OnSetVisibility = app.ReturnTrue
-		-- app.PrintDebug("StartUpdating",Collector,group.text)
-		app.DirectGroupUpdate(group)
+		-- app.PrintDebug("AGC:Start",Collector,Collector.WindowGroup.text)
+		app.DirectGroupRefresh(group, true)
 	end
 	local function EndUpdating(Collector)
-		local group = Collector.__group
+		local group = Collector.InfoGroup
 		group.text = group.__text
-		-- app.PrintDebug("EndUpdating",Collector,group and group.text)
+		-- app.PrintDebug("AGC:End",Collector,Collector.WindowGroup.text)
+		-- app.PrintTable(Collector.Data)
 
 		-- idea for nesting reagents of each Recipe...
 		-- at end, check all required Recipes to sum Reagents into CreateReagentItem
 		-- CreateReagentItem .g is auto-populated based on ReagentDB Recipe lookup to fill
 		-- all Reagents x CreateReagentItem.count
 
-		-- app.PrintTable(Collector.Data)
 		-- Build all the reagents data
 		local items = group.g
 		-- ItemID / Amount
@@ -201,7 +193,7 @@ do
 			group.OnSetVisibility = nil
 		end
 		app.DirectGroupUpdate(group)
-		Collector.Reset()
+		Collector:Reset()
 	end
 	local function ScanSubReagents(Collector)
 		-- local group = Collector.__group
@@ -255,35 +247,59 @@ do
 			Collector.Runner.Run(EndUpdating, Collector)
 		-- end
 	end
+	local function BeginNewScan(Collector)
+		-- app.PrintDebug("Collector.ScanGroups",Collector,Collector.WindowGroup.text)
+		if not Collector:CheckStatusForScan() then return end
 
-	api.GetReagentCollector = function(group)
+		Collector:UpdateStatus()
+		wipe(Collector.InfoGroup.g)
+		local runner = Collector.Runner
+		runner.Run(StartUpdating, Collector)
+		ScanGroups(Collector, Collector.WindowGroup)
+		runner.Run(ScanSubReagents, Collector)
+	end
+	local function Reset(Collector)
+		wipe(Collector.Data)
+		wipe(Collector.Hashes)
+	end
+	local function CheckStatusForScan(Collector)
+		-- app.PrintDebug("Collector.CheckStatusForScan",app._SettingsRefresh,Collector.WindowGroup.progress,Collector.WindowGroup.total)
+		-- app.PrintTable(Collector.Status)
+		return Collector.WindowGroup._fillcomplete
+			and (Collector.Status.SettingsRefresh ~= app._SettingsRefresh
+				or Collector.Status.Progress ~= Collector.WindowGroup.progress
+				or Collector.Status.Total ~= Collector.WindowGroup.total)
+	end
+	local function UpdateStatus(Collector)
+		Collector.Status.SettingsRefresh = app._SettingsRefresh
+		Collector.Status.Progress = Collector.WindowGroup.progress
+		Collector.Status.Total = Collector.WindowGroup.total
+		-- app.PrintDebug("Collector.UpdateStatus")
+		-- app.PrintTable(Collector.Status)
+	end
+
+	local CollectorBase = {
+		Runner = CollectorRunner,
+		ScanGroups = ScanGroups,
+		StartUpdating = StartUpdating,
+		EndUpdating = EndUpdating,
+		ScanSubReagents = ScanSubReagents,
+		BeginNewScan = BeginNewScan,
+		Reset = Reset,
+		CheckStatusForScan = CheckStatusForScan,
+		UpdateStatus = UpdateStatus,
+	}
+
+	api.GetReagentCollector = function(group, infoGroup)
 
 		-- Table which can capture cost information for a collector
-		local Collector = {
-			Runner = CollectorRunner,
+		local Collector = setmetatable({
 			Data = setmetatable({}, app.MetaTable.AutoTable),
 			Hashes = {},
 			WindowGroup = group,
-		}
-
-		Collector.ScanGroups = function(group, infoGroup)
-			if infoGroup._SettingsRefresh == app._SettingsRefresh then
-				return
-			end
-			wipe(infoGroup.g)
-			-- only need to run once per settings refresh, otherwise the reagents won't change from regular refreshes
-			infoGroup._SettingsRefresh = app._SettingsRefresh
-			Collector.__group = infoGroup
-			local runner = Collector.Runner
-			runner.Run(StartUpdating, Collector)
-			ScanGroups(group, Collector)
-			runner.Run(ScanSubReagents, Collector)
-		end
-
-		Collector.Reset = function()
-			wipe(Collector.Data)
-			wipe(Collector.Hashes)
-		end
+			InfoGroup = infoGroup,
+			Status = {},
+		}, { __index = CollectorBase })
 
 		return Collector
 	end

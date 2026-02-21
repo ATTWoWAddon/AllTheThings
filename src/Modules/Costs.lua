@@ -764,7 +764,7 @@ do
 		end
 	end
 	local function StartUpdating(Collector)
-		local group = Collector.CostGroup
+		local group = Collector.InfoGroup
 		Collector:Reset()
 		group.text = (group.__text or "").."  "..BLIZZARD_STORE_PROCESSING
 		group.OnSetVisibility = app.ReturnTrue
@@ -772,7 +772,7 @@ do
 		app.DirectGroupRefresh(group, true)
 	end
 	local function EndUpdating(Collector)
-		local group = Collector.CostGroup
+		local group = Collector.InfoGroup
 		group.text = group.__text
 		-- app.PrintDebug("AGC:End",Collector,Collector.WindowGroup.text)
 		-- app.PrintTable(Collector.Data)
@@ -872,7 +872,7 @@ do
 		if not Collector:CheckStatusForScan() then return end
 
 		Collector:UpdateStatus()
-		wipe(Collector.CostGroup.g)
+		wipe(Collector.InfoGroup.g)
 		local runner = Collector.Runner
 		runner.Run(StartUpdating, Collector)
 		ScanGroups(Collector, Collector.WindowGroup)
@@ -910,14 +910,14 @@ do
 		UpdateStatus = UpdateStatus,
 	}
 
-	api.GetCostCollector = function(group, costGroup)
+	api.GetCostCollector = function(group, infoGroup)
 
 		-- Table which can capture cost information for a collector
 		local Collector = setmetatable({
 			Data = setmetatable({}, __costData),
 			Hashes = {},
 			WindowGroup = group,
-			CostGroup = costGroup,
+			InfoGroup = infoGroup,
 			Status = {},
 		}, { __index = CollectorBase })
 
@@ -999,8 +999,6 @@ local function BuildTotalCost(group)
 	-- keep an unmodified text copy
 	costGroup.__text = costGroup.text
 
-	-- we need to make sure we have a window reference for this group's Collector
-	-- so that when the window is expired, we know to remove the necessary Handler(s)
 	if group.window then
 		group.window.__RefreshCostCollector = app.Modules.Costs.GetCostCollector(group, costGroup)
 	end
