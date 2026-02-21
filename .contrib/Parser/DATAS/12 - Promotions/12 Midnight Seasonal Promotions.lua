@@ -129,7 +129,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(263298, {	-- Cuddly Alliance Blue Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { "added 12.0.1.99998", "removed 12.0.1.99999" },
+				["timeline"] = { "added 12.0.1.66017", "removed 12.0.1.99999" },
 			}),
 			i(263299, {	-- Cuddly Horde Red Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
