@@ -337,7 +337,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						crit(64703, {	-- Praise
 							["description"] = "Bring Verilas a Mystery Gift (Sealed Letter) from the table.",
 							["provider"] = { "i", 211923 },	-- Sealed Letter
-							["coord"] = { 69.95, 73.32, FERALAS },
+							["coord"] = { 68.95, 73.32, FERALAS },
 						}),
 					},
 				}),
