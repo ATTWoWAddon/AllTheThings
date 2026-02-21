@@ -17,35 +17,10 @@ ach(61799),	-- Let Me Solo Him: Nullaeus
 ach(61808),	-- Fabled Let Me Solo Him: Nullaeus
 ach(61917),	-- "Hold aggro, I got this"
 12.0.0.64228
-ach(62117),	-- Abyss Anglers: Boarhide Catch Sack \\ Abyss Anglers: Placeholder 1
-ach(62118),	-- Abyss Anglers: Amazardhide Catch Case \\ Abyss Anglers: Placeholder 2
-ach(62119),	-- Abyss Anglers: Loaknit-Woven Catch Satchel \\ Abyss Anglers: Placeholder 3
 12.0.0.64339
 ach(62191),	-- Call of the Light
-ach(62207),	-- Abyss Anglers: Reinforced Joints
-ach(62208),	-- Abyss Anglers: Depth Grease
-ach(62209),	-- Abyss Anglers: Pahk Trench Fins
-ach(62210),	-- Abyss Anglers: Depthdiver's Used Tank
-ach(62211),	-- Abyss Anglers: Fathom-Tested Tank
-ach(62212),	-- Abyss Anglers: Nalorakk's Breath Tank
-ach(62213),	-- Abyss Anglers: Shallows Net
-ach(62214),	-- Abyss Anglers: Triple-Thread Net
-ach(62215),	-- Abyss Anglers: Heavy Harpoon Cannon
-ach(62216),	-- Abyss Anglers: Hollowcore Harpoon Turret
-ach(62217),	-- Abyss Anglers: Idol of the Depths
-ach(62218),	-- Abyss Anglers: Even The Best
-ach(62219),	-- Abyss Anglers: No Sea Can Hold Me
-ach(62220),	-- Abyss Anglers: Proper Procedure
-ach(62221),	-- Abyss Anglers: Fresh Depth Tech
-12.0.0.64499
-ach(62222),	-- Abyss Anglers: The Amani Way
-12.0.0.64741
-ach(62271),	-- Abyss Anglers: Trench Berserker
-ach(62272),	-- Abyss Anglers: Certified Depthdiver
 12.0.1.64889
 ach(62273),	-- Echoes of Midnight
-ach(62342),	-- Abyss Anglers: The Finest of Fish
-ach(62343),	-- Abyss Anglers: Legends Lurk Beneath
 ach(62351),	-- Preying For Midnight
 ach(62352),	-- Nothing to See Here
 ach(62383),	-- Gotta Hunt Them All
