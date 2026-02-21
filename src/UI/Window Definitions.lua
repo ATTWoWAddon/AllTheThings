@@ -3187,14 +3187,14 @@ local BaseSearchFilterMetatable = {
 		return false;
 	end,
 };
-local function BuildSearchFilterForClassTypes(uniqueKey, classTypes)
+local function BuildSearchFilterForClassTypes(classTypesKey, classTypes)
 	local searchFilter = SearchFiltersByClassTypes[classTypesKey];
 	if not searchFilter then
 		local filter = {};
 		for i,__type in pairs(classTypes) do filter[__type] = true; end
 		local FilterByClassType = setmetatable(filter, BaseSearchFilterMetatable);
 		searchFilter = function(t) return FilterByClassType[t.__type]; end
-		SearchFiltersByClassTypes[uniqueKey] = searchFilter;
+		SearchFiltersByClassTypes[classTypesKey] = searchFilter;
 	end
 	return searchFilter;
 end
