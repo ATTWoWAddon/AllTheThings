@@ -26,6 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(KASRETH, {
+					ach(61585),	-- You Conduit!
 					i(251201),	-- Corespark Multitool
 					i(251202),	-- Reflux Reflector
 					i(251206),	-- Fluxweave Cloak

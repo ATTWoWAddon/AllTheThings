@@ -1417,6 +1417,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					title(744),	-- Thalassian Engineer <Name>
 				},
 			}),
+			ach(60888),	-- Pushing My Buttons
 		}),
 		n(QUESTS, {
 			q(93692, {	-- Engineering Services Requested

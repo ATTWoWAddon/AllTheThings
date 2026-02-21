@@ -4134,6 +4134,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 12.0.1.65848
 			ach(62496),	-- 12.0 Research Console - Mount Tracking - Hidden [DNT]
+
+			-- 12.0.1.65867
+			ach(62489),	-- Last Call for Undercoin
 		})),
 	}),
 });

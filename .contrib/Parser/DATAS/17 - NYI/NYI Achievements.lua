@@ -685,6 +685,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		-- 11.2.7
 		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
 			ach(51753),	-- Azsuna Matata
+			ach(61516),	-- Radiant Singer
 		})),
 	}),
 	expansion(EXPANSION.MID, {

@@ -14,6 +14,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 	-- TODO: Move this all to Expansion Features instead?
 	n(PREY, {
 		n(ACHIEVEMENTS, {
+			ach(62403),	-- 'Tis But A Scratch
+			ach(62383),	-- Gotta Hunt Them All
 			ach(62142),	-- I Didn't Hear No Bell
 			ach(62136),	-- I'm Good At What I Do
 			ach(62137),	-- I'm Not Trapped In Here With You
@@ -122,6 +124,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			ach(62176, {	-- Prey: The Fallen Farstriders (Nightmare)
 				i(265797),	-- Preyseeker's Farstrider Effigy (DECOR!)
 			}),
+			ach(62351),	-- Preying For Midnight
 			ach(62134),	-- The Deadliest of Prey
 			ach(62143),	-- Trapped In The Middle With You
 			ach(62138),	-- You're Trapped In Here With Me
