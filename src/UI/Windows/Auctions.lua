@@ -253,7 +253,7 @@ app:CreateWindow("Auctions", {
 
 				if app.IsRetail then
 					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
-					-- TODO: Acts a little weird with the auto-show setting
+					self:Hide()
 					if not AuctionHouseFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame
 						AuctionHouseFrameTabSideBar = CreateFrame("Frame", nil, AuctionHouseFrame, "")
 						AuctionHouseFrameTabSideBar:SetWidth(1)
@@ -296,6 +296,7 @@ app:CreateWindow("Auctions", {
 						end
 					end
 					app.AuctionHouseTab:SetCustomOnMouseUpHandler(toggleAHTab)
+					self:Show()	-- Show, then toggle, to set the icon
 					toggleAHTab()
 				end
 			else

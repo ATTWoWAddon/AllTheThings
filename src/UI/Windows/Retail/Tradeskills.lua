@@ -440,7 +440,6 @@ app:CreateWindow("Tradeskills", {
 
 				if app.IsRetail then
 					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
-					-- TODO: Acts a little weird with the auto-show setting
 					if not ProfessionsFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame
 						ProfessionsFrameTabSideBar = CreateFrame("Frame", nil, ProfessionsFrame, "")
 						ProfessionsFrameTabSideBar:SetWidth(1)
@@ -483,6 +482,7 @@ app:CreateWindow("Tradeskills", {
 						end
 					end
 					app.TradeskillTab:SetCustomOnMouseUpHandler(toggleProfTab)
+					self:Show()	-- Show, then toggle, to set the icon
 					toggleProfTab()
 				end
 			else
