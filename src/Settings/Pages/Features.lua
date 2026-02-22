@@ -175,6 +175,6 @@ if app.IsClassic then
 			if window then window:UpdatePosition(); end
 		end
 	end);
-	OpenAuctionListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Auction List when you open the auction house.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Auction List\n\nShortcut Command: /attauctions");
+	OpenAuctionListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Auction List when you open the auction house.\n\nShortcut Command: /attauctions");
 	OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenProfessionList)
 end
