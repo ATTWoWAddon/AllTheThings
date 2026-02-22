@@ -35,6 +35,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			})),
 			ach(62104),	-- Midnight Lore Hunter
 			ach(61839),	-- Midnight Pathfinder
+			ach(61091, {	-- Midnight Safari
+				i(258189),	-- Do, child of Filo
+			}),
 			ach(62057),	-- Midnight: The Highest Peaks
 			ach(61910),	-- Mrglgrgl of Grglmrgl
 			ach(60891, {	-- The Crimson Rogue

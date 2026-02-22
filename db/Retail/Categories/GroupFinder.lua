@@ -523,8 +523,8 @@ q(83023,{lvl=80,repeatable=1,g={
 i(224573,{b=1,g={
 i(224572,{f=55,lvl=80,spellID=453250})}})}})}}),
 x(12,{awp=120000,g={
-i(259086,{
-i(259085,{f=55,spellID=1264426})})}}),
+i(259086,{b=1,g={
+i(259085,{f=55,lvl=90,spellID=1264426})}})}}),
 h(-42,{awp=80205,description="Rewarded from Quest while in Party Sync",g={
 i(171305,{b=1,g={
 cl(6,{

@@ -372,6 +372,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 				n(DECOR, {
 					i(267009),	-- Amani Training Dummy (DECOR!)
+					i(264342),	-- Cosmic Void Cache (DECOR!)
 					i(264258),	-- Blossoming Forge (DECOR!)
 					i(263042),	-- Rootlight Lamppost (DECOR!)
 				}),
@@ -414,6 +415,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(REWARDS, {
 				filter(BATTLE_PETS, {
 					i(262390),	-- Sporbie (PET!)
+				}),
+				filter(COSMETIC, {
+					i(264857),	-- Twilight Fanatic's Cowl (COSMETIC!)
 				}),
 				n(DECOR, {
 					i(264329),	-- Amani Dining Table (DECOR!)
@@ -478,6 +482,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						{ 47.6, 79.3, SHADOWGUARD_POINT },
 						{ 37.6, 51.9, MAP.MIDNIGHT.VOIDSTORM },
 					},
+				}),
+				filter(MISC, {
+					o(570235, {	-- Worm Bait
+						i(250096),	-- Worm Bait (QI!)
+					}),
 				}),
 			}),
 			n(TREASURES, {

@@ -197,6 +197,7 @@ local function InternalUpdateLocation()
 	if mapID == 0 then
 		-- some places really have no mapID, so don't loop infinitely and retain prior values
 		if EmptyMapRetry > 10 and not app.RealMapID then
+			if CurrentMapID == 0 then return end
 			CurrentMapID = 0
 			EmptyMapRetry = 0
 			app.CurrentMapID = 0

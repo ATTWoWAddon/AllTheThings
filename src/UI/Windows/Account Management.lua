@@ -8,6 +8,29 @@ local ipairs, pairs, tonumber, time, type, tinsert, tremove, math_floor, tsort =
 local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed =
 	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed;
 
+-- Suppress the user-visible time played chat print when we request it programmatically.
+-- Inspired by Broker_PlayedTime addon
+local suppressTimePlayed = false;
+if ChatFrameUtil and ChatFrameUtil.DisplayTimePlayed then
+	local _orig_DisplayTimePlayed = ChatFrameUtil.DisplayTimePlayed
+	function ChatFrameUtil.DisplayTimePlayed(chatFrame, totalTime, levelTime)
+		if suppressTimePlayed then
+			suppressTimePlayed = false
+			return
+		end
+		return _orig_DisplayTimePlayed(chatFrame, totalTime, levelTime)
+	end
+else
+	local _orig_ChatFrame_DisplayTimePlayed = ChatFrame_DisplayTimePlayed
+	ChatFrame_DisplayTimePlayed = function(...)
+		if suppressTimePlayed then
+			suppressTimePlayed = false
+			return
+		end
+		return _orig_ChatFrame_DisplayTimePlayed(...)
+	end
+end
+
 -- Temporary cache variables (these get replaced in OnLoad!)
 local AccountWideData, CharacterData, CurrentCharacter, LinkedCharacters, OnlineAccounts, SilentlyLinkedCharacters = {}, {}, {}, {}, {}, {}
 
@@ -34,6 +57,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		currentCharacter.totalTimePlayed = 0;
 	end
 	if (now - (currentCharacter.lastTimePlayedRecorded or 0)) > 3600 then
+		suppressTimePlayed = true;
 		RequestTimePlayed();
 	end
 end)
@@ -384,7 +408,7 @@ local function DefaultAccountWideDataHandler(data, key)
 			local characterData = character[key];
 			if characterData then
 				for index,_ in pairs(characterData) do
-					data[index] = 1;
+					data[index] = 2;
 				end
 			end
 		end
@@ -443,6 +467,10 @@ local function RankSyncCharacterData(data, key)
 		end
 	end
 end
+-- Account-Wide data storage:
+-- 1 = This Thing is Account-Wide collected by Blizzard directly
+-- 2 = This Thing is Account-Wide collected since 1+ Character has directly collected it
+-- 3 = This Thing is Account-Wide collected since it is part of a situation where there's Faction-based differences (2 IDs) but completion of 1 ID is enough for Blizzard to "claim" Account-Wide collection (i.e. dual-Faction Achievements)
 local AccountWideDataHandlers = setmetatable({
 	Deaths = function(data)
 		local deaths = 0;
@@ -1286,6 +1314,7 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 			if character == CurrentCharacter then
 				local now = time();
 				if (now - (character.lastTimePlayedRecorded or 0)) > 3600 then
+					suppressTimePlayed = true;
 					RequestTimePlayed();
 				end
 			end

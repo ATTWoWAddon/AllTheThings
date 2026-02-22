@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			o(555250, {	-- Forgotten Researcher's Cache
-				--["coord"] = { Unknown, Unknown, 2526 },	-- Lair of Predaxas
+				["coord"] = { 23.7, 83.1, 2526 },	-- Lair of Predaxas
 				["questID"] = 94454,
 				["groups"] = {
 					i(250319),	-- Researcher's Shadowgraft (TOY!)
@@ -159,27 +159,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(259126),	-- Housing Dye: Void Violet (DECOR!)
 				},
 			}),
-			--Vista Point Flags / High Peaks
-			o(619662, {	-- Vista Point
-				["coord"] = { 36.5, 44.3, MAP.MIDNIGHT.VOIDSTORM },
-				["questID"] = 94552,
+			header(HEADERS.Achievement, 62291, {	-- Harandar: The Highest Peaks
+				o(619662, {	-- Vista Point
+					["coord"] = { 36.5, 44.3, MAP.MIDNIGHT.VOIDSTORM },
+					["questID"] = 94552,
+				}),
+				o(619663, {	-- Vista Point
+					["coord"] = { 55.5, 67.2, MAP.MIDNIGHT.VOIDSTORM },
+					["questID"] = 94553,
+				}),
+				o(619664, {	-- Vista Point
+					["coord"] = { 41.8, 70.2, MAP.MIDNIGHT.VOIDSTORM },
+					["questID"] = 94554,
+				}),
+				o(619665, {	-- Vista Point
+					["coord"] = { 37.8, 55.0, MAP.MIDNIGHT.VOIDSTORM },
+					["questID"] = 94555,
+				}),
+				o(619661, {	-- Vista Point
+					["coord"] = { 39.7, 61.2, MAP.MIDNIGHT.VOIDSTORM },
+					["questID"] = 94551,
+				}),
 			}),
-			o(619663, {	-- Vista Point
-				["coord"] = { 55.5, 67.2, MAP.MIDNIGHT.VOIDSTORM },
-				["questID"] = 94553,
-			}),
-			o(619664, {	-- Vista Point
-				["coord"] = { 41.8, 70.2, MAP.MIDNIGHT.VOIDSTORM },
-				["questID"] = 94554,
-			}),
-			o(619665, {	-- Vista Point
-				["coord"] = { 37.8, 55.0, MAP.MIDNIGHT.VOIDSTORM },
-				["questID"] = 94555,
-			}),
-			--o(XXXXX, {	-- Vista Point	-- TODO: Blizzard bug - there is no 5th as in counter for achievement unless it phased for 90s templates on beta
-			--	["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
-			--	["questID"] = YYYYY,
-			--}),
 		}),
 	}),
 }));
@@ -187,7 +188,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.VOIDSTORM, {
 			n(TREASURES, {
-				q(94005),	-- Stellar Stash (TODO: Blizzard bug - it "ACCEPTED" near treasure but not "COMPLETED", not as WQ either)
+				q(94005),	-- Stellar Stash, treasure wrapper
 				q(93569),	-- Exaliburn, same as above (some kind of wrapper)
 				--lack of in-game objectIDs
 				q(93812),	-- maligant node #1

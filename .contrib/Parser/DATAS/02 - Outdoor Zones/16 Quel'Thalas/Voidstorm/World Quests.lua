@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93904, {	-- Defying Gravity
 					["coord"] = { 48.0, 78.4, MAP.MIDNIGHT.VOIDSTORM },
 				}),
-				q(93507, {	-- Dispersing Shadows
+				q(93571, {	-- Dispersing Shadows
 					["coord"] = { 31.0, 53.41, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(93507, {	-- Disrupting the Void

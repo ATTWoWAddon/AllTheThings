@@ -77,6 +77,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93071, {	-- Rotten to the Core
 					["coord"] = { 46.4, 66.2, MAP.MIDNIGHT.HARANDAR },
 				}),
+				q(92063, {	-- Special Assignment: A Hunter's Regret
+					["coord"] = { 67.7, 37.2, MAP.MIDNIGHT.HARANDAR },
+				}),
 				q(93013, {	-- Special Assignment: Push Back the Light
 					["coord"] = { 32.7, 77.4, MAP.MIDNIGHT.HARANDAR },
 				}),
@@ -87,6 +90,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 43.2, 61.3, MAP.MIDNIGHT.HARANDAR },
 					["groups"] = {
 						i(260453),	-- Leech Tick (QI!)
+					},
+				}),
+				q(91981, {	-- To Poison and to Heal
+					["coord"] = { 43.6, 54.6, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						o(539208, {	-- Healing Waters of Ahl'ua
+							i(269022),	-- Healing Waters of Ahl'ua (QI!)
+						}),
+						i(269023),	-- Phytogenic Poison Part (QI!)
 					},
 				}),
 				q(91799, {	-- Trial of Flight
@@ -100,6 +112,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.HARANDAR, {
 			n(QUESTS, {
+				hqt(94390),	-- Special Assignment: A Hunter's Regret was unlocked
 				hqt(94391),	-- Special Assignment: Push Back the Light was unlocked
 			}),
 		}),

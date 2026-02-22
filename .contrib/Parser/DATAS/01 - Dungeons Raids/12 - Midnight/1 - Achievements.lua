@@ -10,5 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 		ach(62196, {	-- Midnight Dungeoneer
 			i(FINERY_FUNDS),
 		}),
+		ach(61567),	-- Midnight Dungeon Hero
+		ach(61568),	-- Glory of the Midnight Hero
 	}),
 })));

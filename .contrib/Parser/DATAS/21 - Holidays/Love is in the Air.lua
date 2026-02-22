@@ -3251,10 +3251,14 @@ for i,o in ipairs({
 						["timeline"] = { ADDED_11_0_7 },
 						["isDaily"] = true,
 					}),
-					--q(93466), -- TODO confirm spring butterfly HQT
 					hqt(79104, {	-- Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)
 						["name"] = "Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)",
 						["timeline"] = { ADDED_10_2_5 },
+						["isDaily"] = true,
+					}),
+					hqt(93466, {	-- Increased Spring Butterfly Droprate (Daily Accountwide)
+						["name"] = "Increased Spring Butterfly Droprate (Daily Accountwide)",
+						["timeline"] = { ADDED_12_0_0 },
 						["isDaily"] = true,
 					}),
 					i(50250, {	-- X-45 Heartbreaker (MOUNT!)

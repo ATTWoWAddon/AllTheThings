@@ -111,6 +111,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(245691, {	-- The Decaying Diamondback
+				["provider"] = { "n", 246122 },	-- Worm Wrangler
 				["coord"] = { 46.4, 43.5, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 91072,
 				["groups"] = {

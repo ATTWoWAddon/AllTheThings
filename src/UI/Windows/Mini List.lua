@@ -531,7 +531,9 @@ app:CreateWindow("MiniList", {
 	OnInit = function(self, handlers)
 		self:AddEventHandler("OnCurrentDifficultiesChanged", function(difficulties)
 			-- TODO: this is still excessive AF in Retail. Can't think of a situation where it would actually be needed
-			self:Rebuild();
+			if IsInInstance() then
+				self:Rebuild();
+			end
 		end);
 		app.AddEventHandler("OnWindowFillComplete", function(window)
 			if window.Suffix ~= self.Suffix then return end

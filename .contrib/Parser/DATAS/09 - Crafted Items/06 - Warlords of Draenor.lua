@@ -109,21 +109,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		-- Currently there are no Lumbers in Draenor and Shadowmoon Lumber is bought
-		-- from Lestia Goldenstrike/Xiz'ro in the housing areas
-		--[[
+		-- #if AFTER 12.0.0
 		o_repeated({	-- Shadowmoon Lumber
 			["maps"] = {
-
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				STORMSHIELD,
+				TALADOR,
+				TANAAN_JUNGLE,
+				WARSPEAR,
 			},
 			["groups"] = {
 				-- Objects
-
+				o(628951),	-- [Tanaan Jungle]
+				o(628952),	-- [Ashran/Stormshield/Warspear]
+				o(628949),	-- [Frostfire Ridge]
+				o(628955),	-- [Spires of Arak]
+				o(628954),	-- [Talador]
+				o(628950),	-- [Gorgrond]
+				o(628956),	-- [Shadowmoon Valley]
+				o(628953),	-- [Nagrand]
 				-- Drops
 				i(251766),	-- Shadowmoon Lumber
 			},
 		}),
-		]]--
+		-- #endif
 	})),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {

@@ -13,37 +13,37 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(61922),	-- Ninety Percent is Good Enough
 			ach(61861),	-- Oh, No You Don't!
 			skyriding(ach(61563, {	-- Skyriding Glyphs: Ethereum Refinery
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 38.9, 76.1, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61558, {	-- Skyriding Glyphs: Gnawing Reach
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 54.9, 45.6, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61564, {	-- Skyriding Glyphs: Hanaar Outpost
-				--["coord"] = { X, Y, Z },
+				--["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61562, {	-- Skyriding Glyphs: Masters' Perch
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 45.3, 52.3, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61561, {	-- Skyriding Glyphs: Obscurion Citadel
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 65.1, 71.9, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61560, {	-- Skyriding Glyphs: Shadowguard Point
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 36.0, 37.4, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61557, {	-- Skyriding Glyphs: The Bladeburrows
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 39.9, 71.0, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61559, {	-- Skyriding Glyphs: The Gorging Pit
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 49.2, 87.6, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61556, {	-- Skyriding Glyphs: The Ingress
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 35.7, 61.1, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61555, {	-- Skyriding Glyphs: The Molt
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 37.2, 50.0, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61552, {	-- Skyriding Glyphs: The Voidspire
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 51.3, 62.7, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			ach(61864),	-- Sojourner of Voidstorm
 			ach(62385, {	-- Staring Into The Void

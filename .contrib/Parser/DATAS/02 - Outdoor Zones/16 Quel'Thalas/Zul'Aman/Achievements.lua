@@ -17,37 +17,40 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(62199),	-- Put a Pin in It
 			ach(61455),	-- Shadowpine Scattered
 			skyriding(ach(61540, {	-- Skyriding Glyphs: Amani Pass
-				--["coord"] = { X, Y, Z },
+				["coords"] = {
+					{ 63.8, 81.9, MAP.MIDNIGHT.EVERSONG_WOODS },	-- NOTE: Blizzard bug. While standing on the spot, the game displays you as if you are in Eversong Woods
+					{ 24.8, 54.9, MAP.MIDNIGHT.ZULAMAN },	-- Correct Zul'Aman coordinate
+				},
 			})),
 			skyriding(ach(61537, {	-- Skyriding Glyphs: Nalorakk's Prowl
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 30.4, 84.8, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			skyriding(ach(61542, {	-- Skyriding Glyphs: Revantusk Sedge
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 19.2, 70.7, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			skyriding(ach(61532, {	-- Skyriding Glyphs: Shadebasin Watch
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 42.9, 34.4, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			skyriding(ach(61539, {	-- Skyriding Glyphs: Solemn Valley
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 46.7, 82.2, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			skyriding(ach(61541, {	-- Skyriding Glyphs: Spiritpaw Burrow
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 42.7, 80.1, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			skyriding(ach(61535, {	-- Skyriding Glyphs: Strait of Hexx'alor
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 53.2, 54.5, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			skyriding(ach(61533, {	-- Skyriding Glyphs: Temple of Akil'zon
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 53.6, 80.4, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			skyriding(ach(61534, {	-- Skyriding Glyphs: Temple of Jan'alai
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 51.5, 23.6, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			skyriding(ach(61536, {	-- Skyriding Glyphs: Witherbark Bluffs
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 39.6, 19.7, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			skyriding(ach(61538, {	-- Skyriding Glyphs: Zeb'Alar Lumberyard
-				--["coord"] = { X, Y, Z },
+				["coord"] = { 28.0, 28.5, MAP.MIDNIGHT.ZULAMAN },
 			})),
 			ach(62122, {	-- Tallest Tree in the Forest
 				i(264335),	-- Colossal Amani Stone Visage (DECOR!)

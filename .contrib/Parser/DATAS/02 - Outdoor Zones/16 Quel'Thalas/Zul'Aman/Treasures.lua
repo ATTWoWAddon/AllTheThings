@@ -160,26 +160,30 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--share Forgotten Amani Cache
 				},
 			}),
-			--Vista Point Flags / High Peaks
-			o(619651, {	-- Vista Point Flag
-				["coord"] = { 27.8, 70.0, MAP.MIDNIGHT.ZULAMAN },
-				["questID"] = 94541,
-			}),
-			o(619652, {	-- Vista Point Flag
-				["coord"] = { 53.0, 82.0, MAP.MIDNIGHT.ZULAMAN },
-				["questID"] = 94542,
-			}),
-			o(619653, {	-- Vista Point Flag
-				["coord"] = { 57.7, 21.2, MAP.MIDNIGHT.ZULAMAN },
-				["questID"] = 94543,
-			}),
-			o(619654, {	-- Vista Point Flag
-				["coord"] = { 63.6, 85.1, MAP.MIDNIGHT.EVERSONG_WOODS },	-- TODO: Blizzard bug, don't ask me
-				["questID"] = 94544,
-			}),
-			o(619655, {	-- Vista Point Flag
-				["coord"] = { 41.9, 41.6, MAP.MIDNIGHT.ZULAMAN },
-				["questID"] = 94545,
+			header(HEADERS.Achievement, 62289, {	-- Zul'Aman: The Highest Peaks
+				o(619651, {	-- Vista Point Flag
+					["coord"] = { 27.8, 70.0, MAP.MIDNIGHT.ZULAMAN },
+					["questID"] = 94541,
+				}),
+				o(619652, {	-- Vista Point Flag
+					["coord"] = { 53.0, 82.0, MAP.MIDNIGHT.ZULAMAN },
+					["questID"] = 94542,
+				}),
+				o(619653, {	-- Vista Point Flag
+					["coord"] = { 57.7, 21.2, MAP.MIDNIGHT.ZULAMAN },
+					["questID"] = 94543,
+				}),
+				o(619654, {	-- Vista Point Flag
+					["coords"] = {
+						{ 63.6, 85.1, MAP.MIDNIGHT.EVERSONG_WOODS },	-- NOTE: Blizzard bug. While standing on the spot, the game displays you as if you are in Eversong Woods
+						{ 24.6, 58.3, MAP.MIDNIGHT.ZULAMAN },	-- Correct Zul'Aman coordinate
+					},
+					["questID"] = 94544,
+				}),
+				o(619655, {	-- Vista Point Flag
+					["coord"] = { 41.9, 41.6, MAP.MIDNIGHT.ZULAMAN },
+					["questID"] = 94545,
+				}),
 			}),
 		}),
 	}),

@@ -5,6 +5,10 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
 		n(QUESTS, {
+			q(89388, {	-- Voidstorm
+				["provider"] = { "n", 240523 },	-- Scouting Map
+				["coord"] = { 45.5, 70.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
 			header(HEADERS.Achievement, 41806, {	-- Voidstorm
 				header(HEADERS.AchCriteria, 41806.01, {	-- Into the Abyss
 					q(91084, {	-- Looming Shadows
@@ -1214,6 +1218,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				-- During questing
 				--q(89196),	-- Zone Choice Made (spellID 1254861), same hqt as previously.
 				q(92633),	-- during 90922 (The Fallen Wake), absorb light from n(252619),	-- Fallen Defender
+				q(93515),	-- Triggered after turning 'Magisters' Terrace: Homecoming' (86543)
 			}),
 		}),
 	}),

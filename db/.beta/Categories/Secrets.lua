@@ -337,7 +337,7 @@ o(220820,{coords={{64.7,49.9,71},{22.9,64.4,75}},description="|cFFFFFFFFStep 6:|
 o(19023,{coords={{34.6,50.9,379}},description="|cFFFFFFFFStep 7:|r This step will take us to |cFFFFD700Kun-Lai Summit|r near the |cFFFFD700Shado-Pan Monastery|r. Head to |cFFFFFFFF34.61, 50.88|r. |cFFFFD700Page 2351|r will be between the statue's paws on the platform. Click this to continue. The page reads...\n\n|cFFFFFFFF...bejeweled watcher...|r",isWeekly=1,model=305393,questID=47212,sourceQuests={47211}}),
 o(244678,{coords={{76.4,53.6,249}},description="|cFFFFFFFFStep 8:|r This step will take us to |cFFFFD700Uldum|r. Head to |cFFFFFFFF76.45, 53.67|r. |cFFFFD700Page 5555|r will be on the platform slightly offcenter in front of the left foot of the statue. Click this to continue. The page reads...\n\n|cFFFFFFFF...ray of sunshine...|r",isWeekly=1,model=305393,questID=47213,sourceQuests={47212}}),
 o(269830,{coords={{30.5,27.5,52}},description="|cFFFFFFFFStep 9:|r This step will take us to |cFFFFD700Westfall|r. Head to |cFFFFFFFF30.53, 27.56|r. |cFFFFD700Gift of the Mind-Seekers|r will be on the ground here in a broken boat. Click this to obtain your mount. Congratulations on getting the |cFFFFD700Riddler's Mind-Worm|r.\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving this puzzle.",isWeekly=1,model=942865,questID=47214,sourceQuests={47213},g={
-mnt(243025,{b=1,itemID=147835,lvl=45})}})}}),
+mnt(243025,{b=1,itemID=147835,lvl=10})}})}}),
 h(-505,{awp=100105,description="***Using Debug Mode is recommended.***\n",g={
 h(-12,{
 ach(18644,{sym={{"select","questID",77289,77288,77291,77292,77290,77293,77296,77294,77297,77298,77299,78208,78207,77300,77302,77301,77295}},g={
@@ -645,11 +645,11 @@ o(272487,{coords={{50.9,2.3,83}},description="|cFFFFFFFFSTEP 14:|r DO NOT JUMP I
 p(382,{b=1,itemID=142223,npcID=61087,spellID=231215})}})}}),
 ah(186639,{awp=110200,description="You can use one Cartel Deal per week on your account, across three weeks, equip the granted title then collect each dead drop within Manaforge Omega (Any difficulty) then return to the quartermaster for a new quest awarding your mount.",maps={2460,2461,2462,2463,2464,2465,2466,2467,2468,2469,2470,2471},minReputation=a[28],type="i",g={
 o(555609,{cost={{"i",249702,1}},description="To the right of the first miniboss after Plexus.",maps={2460},minReputation=a[28],questID=92080,g={
-i(249711)}}),
+i(249711,{b=1})}}),
 o(555611,{cost={{"i",249704,1}},description="On a rock past Fractillus near the edge of the map.",maps={2465},minReputation=a[28],questID=92081,g={
-i(249712)}}),
+i(249712,{b=1})}}),
 o(555610,{cost={{"i",249700,1}},description="On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.\n\nThis cannot be looted in a cleared instance!",maps={2463},minReputation=a[28],questID=92079,g={
-i(249710)}}),
+i(249710,{b=1})}}),
 q(92082,{coords={{42,22.1,2371}},lvl=70,qgs={245344},sourceQuests={92079,92080,92081},g={
 toy(249713,{b=1}),
 mnt(353264,{b=1,itemID=186639})}})}}),

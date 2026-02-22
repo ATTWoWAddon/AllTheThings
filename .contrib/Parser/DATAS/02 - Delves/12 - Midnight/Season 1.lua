@@ -52,6 +52,9 @@ end
 root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	n(DELVES_MID_S1, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
+			ach(61808),	-- Fabled Let Me Solo Him: Nullaeus
+			ach(61799),	-- Let Me Solo Him: Nullaeus
+			ach(61798),	-- Lighting the Dark
 			mapped(ach(61800)),	-- Midnight Delves: Tier 4 (Season 1)
 			mapped(ach(61801)),	-- Midnight Delves: Tier 5 (Season 1)
 			mapped(ach(61802)),	-- Midnight Delves: Tier 6 (Season 1)
@@ -62,6 +65,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			mapped(ach(61807, {	-- Midnight Delves: Tier 11 (Season 1)
 				title(550),	-- High Explorer <Name>
 			})),
+			ach(61796),	-- Midnight: Journey's End (Season 1)
+			ach(61797),	-- My Shady Nemesis
 		})),
 		n(CURIO, {
 			--Combat
@@ -155,6 +160,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						}),
 						filter(TRINKET_F, {
 							--TODO: They probably gonna exist outside of season but idk?
+							i(251789),	-- Consecrated Chalice
 							i(251790),	-- Desecrated Chalice
 							i(251792),	-- Glorious Crusader's Keepsake
 							i(251791),	-- Holy Retributor's Order (also was as wq reward)

@@ -3,16 +3,16 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
-	n(TRAINING_GROUNDS, { 
+	n(TRAINING_GROUNDS, {
 		["timeline"] = { ADDED_12_0_0 },
 		["groups"] = {
 			-- #IF AFTER 12.0.0
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 				ach(61958, {	-- Focused Target
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(61959, {	-- Focused Target
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 				}),
 				ach(62107, {	-- Mandatory Training
 					["_noautomation"] = true,	-- nests criteria under Battle for Gilneas map on the same level as TRAINING_GROUNDS
