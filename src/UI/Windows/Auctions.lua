@@ -260,11 +260,9 @@ app:CreateWindow("Auctions", {
 						AuctionHouseFrameTabSideBar:SetPoint("TOPLEFT", AuctionHouseFrame, "TOPRIGHT")
 						AuctionHouseFrameTabSideBar:SetPoint("BOTTOMLEFT", AuctionHouseFrame, "BOTTOMRIGHT")
 						AuctionHouseFrameTabSideBar.Tabs = {}
-						AuctionHouseFrameTabSideBar.numTabs = 0
 						AuctionHouseFrameTabSideBar.selTab = 0
 					end
 
-					AuctionHouseFrameTabSideBar.numTabs = AuctionHouseFrameTabSideBar.numTabs + 1
 					app.AuctionHouseTab = CreateFrame("Frame", nil, AuctionHouseFrameTabSideBar, "AllTheThings_Tab")
 					app.AuctionHouseTab:SetPoint("TOPLEFT", AuctionHouseFrameTabSideBar, "TOPRIGHT", -2, -52)
 					AuctionHouseFrameTabSideBar.Tabs[1] = app.AuctionHouseTab
@@ -277,7 +275,7 @@ app:CreateWindow("Auctions", {
 
 						AuctionHouseFrameTabSideBar:ClearAllPoints()
 						if newState then
-							for i = 1, AuctionHouseFrameTabSideBar.numTabs do
+							for i = 1, #AuctionHouseFrameTabSideBar.Tabs do
 								if AuctionHouseFrameTabSideBar.selTab == i and i ~= 1 then
 									AuctionHouseFrameTabSideBar.Tabs[i]:GetScript("OnMouseUp")(AuctionHouseFrameTabSideBar.Tabs[i])
 								end

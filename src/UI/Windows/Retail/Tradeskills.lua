@@ -446,11 +446,9 @@ app:CreateWindow("Tradeskills", {
 						ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
 						ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
 						ProfessionsFrameTabSideBar.Tabs = {}
-						ProfessionsFrameTabSideBar.numTabs = 0
 						ProfessionsFrameTabSideBar.selTab = 0
 					end
 
-					ProfessionsFrameTabSideBar.numTabs = ProfessionsFrameTabSideBar.numTabs + 1
 					app.TradeskillTab = CreateFrame("Frame", nil, ProfessionsFrameTabSideBar, "AllTheThings_Tab")
 					app.TradeskillTab:SetPoint("TOPLEFT", ProfessionsFrameTabSideBar, "TOPRIGHT", -2, -52)
 					ProfessionsFrameTabSideBar.Tabs[1] = app.TradeskillTab
@@ -463,7 +461,7 @@ app:CreateWindow("Tradeskills", {
 
 						ProfessionsFrameTabSideBar:ClearAllPoints()
 						if newState then
-							for i = 1, ProfessionsFrameTabSideBar.numTabs do
+							for i = 1, #ProfessionsFrameTabSideBar.Tabs do
 								if ProfessionsFrameTabSideBar.selTab == i and i ~= 1 then
 									ProfessionsFrameTabSideBar.Tabs[i]:GetScript("OnMouseUp")(ProfessionsFrameTabSideBar.Tabs[i])
 								end
