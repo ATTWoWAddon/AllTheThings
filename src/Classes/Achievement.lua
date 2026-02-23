@@ -50,10 +50,11 @@ local CollectionCacheFunctions = {
 		local FlagsUtil_IsSet = FlagsUtil.IsSet
 		if not FlagsUtil_IsSet then return achs end
 
-		local maxid = CollectionCache.MaxAchievementID
-		local flags
+		local flags, id
 		local FLAG_AccountWide = ACHIEVEMENT_FLAGS_ACCOUNT
-		for id=1,maxid do
+		local allIds = CollectionCache.RealAchievementIDs
+		for i=1,#allIds do
+			id = allIds[i]
 			flags = select(9,GetAchievementInfo(id))
 			if FlagsUtil_IsSet(tonumber(flags) or 0, FLAG_AccountWide) then
 				achs[id] = true
@@ -237,16 +238,20 @@ do
 	app.AddEventHandler("OnRefreshCollections", function()
 		local me, completed
 		-- app.PrintDebug("OnRefreshCollections.Achievement")
-		local mine, acct, none = {}, {}, {}
+		local mine, acct, shared, none = {}, {}, {}, {}
 		local allIds = CollectionCache.RealAchievementIDs
 		local id
 		for i=1,#allIds do
 			id = allIds[i]
 			completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
-			if completed and CollectionCache.AccountWideAchievements[id] then
-				acct[id] = true
-			elseif me then
-				mine[id] = true
+			if completed then
+				if CollectionCache.AccountWideAchievements[id] then
+					acct[id] = true
+				elseif me then
+					mine[id] = true
+				else
+					shared[id] = true
+				end
 			else
 				none[id] = true
 			end
@@ -255,8 +260,10 @@ do
 		app.SetBatchCached(CACHE, mine, 1)
 		app.SetBatchCached(CACHE, acct)	-- remove acct achieves from character cache
 		app.SetBatchCached(CACHE, none)
-		-- Account Cache (removals handled by Sync)
+		-- Account Cache
 		app.SetBatchAccountCached(CACHE, acct, 1)
+		app.SetBatchAccountCached(CACHE, shared, 3)	-- Dual-Faction achievements, completed for Account, but not any specific character
+		app.SetBatchAccountCached(CACHE, none)
 		-- app.PrintDebugPrior("OnRefreshCollections.Achievement")
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
@@ -264,12 +271,19 @@ do
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end);
 	app.AddEventRegistration("ACHIEVEMENT_EARNED", function(id)
-		local state = select(13, GetAchievementInfo(tonumber(id)))
-		if state then
-			app.SetCached(CACHE, id, 1)
-			app.SetAccountCached(CACHE, id, 1)
-			app.UpdateRawID(KEY, id);
+		id = tonumber(id)
+		local completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
+		if completed then
+			if CollectionCache.AccountWideAchievements[id] then
+				app.SetAccountCached(CACHE, id, 1)
+			elseif me then
+				app.SetCached(CACHE, id, 1)
+				app.SetAccountCached(CACHE, id, 2)
+			else
+				app.SetAccountCached(CACHE, id, 3)
+			end
 		end
+		app.UpdateRawID(KEY, id);
 	end);
 	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 

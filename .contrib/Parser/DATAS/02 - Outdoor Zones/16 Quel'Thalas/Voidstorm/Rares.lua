@@ -30,6 +30,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 35.5, 50.2, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93884,
 				["groups"] = {
+					i(264701),	-- Cosmic Bell
 					i(264579),	-- Hungering Wristplates
 					i(264623),	-- Shredding Fang
 				},
@@ -46,6 +47,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 53.8, 62.7, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93896,
 				["groups"] = {
+					i(264913),	-- Focused Netherslicer
 					i(264912),	-- Void-Channeler's Spire
 				},
 			}),
@@ -102,6 +104,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 46.5, 40.8, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 93953,
 				["groups"] = {
+					i(264630),	-- Colossal Voidsunderer
 					i(264694),	-- Ultradon Cuirass
 				},
 			}),
@@ -109,6 +112,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 48.8, 53.2, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93895,
 				["groups"] = {
+					i(264535),	-- Leggings of the Cosmic Harrower
 					i(264589),	-- Voidfused Wing Cloak
 				},
 			}),
@@ -117,6 +121,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 93966,
 				["groups"] = {
 					i(264583),	-- Barbute of the Winged Hunter
+					i(264701),	-- Cosmic Bell
 					i(264545),	-- Harrower-Claw Grips
 				},
 			}),
@@ -134,12 +139,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264642),	-- Carving Voidscythe
 					i(264565),	-- Voidscale Shoulderpads
+					i(264694),	-- Ultradon Cuirass
 				},
 			}),
 			n(241443, {	-- Tremora
 				["coord"] = { 36.0, 83.3, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 91048,
 				["groups"] = {
+					i(264610),	-- Escaped Specimen's ID Tag
 					i(264565),	-- Voidscale Shoulderpads
 				},
 			}),
@@ -152,12 +159,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(248823, {	-- Blackcore
-				["provider"] = { "n", 248907 },	-- Blackcore (vignette, pop if ready to be summoned?)
+				["providers"] = {
+					{ "n", 248907 },	-- Blackcore (vignette, pop if ready to be summoned?)
+					{ "n", 248825 },	-- Mid phase before actually spawned
+				},
 				["coord"] = { 24.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 94463,
 				["cost"] = { { "i", 248680, 3 } },	-- 3x Unstable Focusing Crystal
 				["groups"] = {
 					i(264606),	-- Netherlocus Amulet
+					i(264519),	-- Repurposed Voidwalker's Chestplate
 				},
 			}),
 			n(248068, {	-- Nullspiral
@@ -182,6 +193,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 94459,
 				["groups"] = {
 					i(251786),	-- Ever-Collapsing Void Fissure
+					i(264556),	-- Voidforged Cinch
 				},
 			}),
 		}),

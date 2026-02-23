@@ -1304,7 +1304,14 @@ function app:GetDatabaseRoot()
 				}),
 
 				-- Achievements
-				app.CreateDynamicHeader("achievementID", SimpleHeaderGroup(app.HeaderConstants.ACHIEVEMENTS)),
+				app.CreateDynamicHeader("achievementID", SimpleHeaderGroup(app.HeaderConstants.ACHIEVEMENTS, {
+					dynamic_searchcriteria = {
+						SearchCriteria = {
+							-- don't include Criteria
+							function(o) return not o.criteriaID end
+						}
+					},
+				})),
 
 				-- Artifacts
 				app.CreateDynamicHeader("artifactID", SimpleHeaderGroup(app.HeaderConstants.ARTIFACTS)),
@@ -1454,7 +1461,7 @@ function app:GetDatabaseRoot()
 		dynamicHeader.parent = rootData;
 		app.AssignChildren(dynamicHeader);
 	end
-	
+
 	-- app.PrintMemoryUsage("Finished loading data cache")
 	-- app.PrintMemoryUsage()
 	app.GetDatabaseRoot = function()
@@ -1662,7 +1669,7 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	
 	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
 	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
-	
+
 	-- Cache the data for the first time
 	-- TODO: Move the logic here rather than in GetDatabaseRoot itself. (this will prevent windows from killing things)
 	app:GetDatabaseRoot();

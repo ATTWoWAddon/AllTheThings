@@ -138,7 +138,7 @@ o(13000032,{description="|cFFFFFFFFSTEP 3:|r Hivemind requires a five-man group.
 ah(156724,{description="Obtaining this monocle requires reading many letters spread around Azeroth.\n\n***You need to interact with all letters in the order listed to progress through the puzzle!***\n",icon=133146,type="i",g={
 o(280815,{coords={{65.6,69.3,111}},description="|cFFFFFFFFLetter 1:|r The start of this puzzle is the |cFFFFD700Letter from Ms. Graham|r with a blue aura behind |cFFFFD700Griftah|r, which can be interacted with. Click it. The letter reads...\r\r|cFFFFFFFFThe key Factor in successul Wasp Ignition is a solid Ad campaign.|r\n",model=1661948,questID=40397}),
 o(280836,{coords={{57.4,27.9,650}},description="|cFFFFFFFFLetter 2:|r Go to |cFFFFFFFF57.4, 27.9|r in |cFFFFD700Highmountain|r. The |cFFFFD700Letter from Ms. Graham|r is located in one of the tents on the box next to the pumpkin. Click it. The letter reads...\n\n|cFFFFFFFFOf all of Gai's cures for Nature, the most liberating is Death.|r\n",model=1661948,questID=40314,sourceQuests={40397}}),
-o(280837,{coords={{47.4,75,47}},description="|cFFFFFFFFLetter 3:|r Go to |cFFFFD700Karazhan (Old)|r in |cFFFFD700Duskwood|r. The third letter is located in |cFFFFD700Medivh's Chambers|r, located after the Chess Event, in the staircase leading to Prince Malchezaar. The letter is on the chair Medivh used to write his scrolls and spells, literally the seat of the guardian. Click it. The letter reads...\n\n|cFFFFFFFFI sat Dumbfounded, watching As the most Subtle Rat reached for the cheese a third time in under an hour.|r\n",model=1661948,questID=40404,sourceQuests={40314}}),
+o(280837,{coords={{47.4,75,42}},description="|cFFFFFFFFLetter 3:|r Go to |cFFFFD700Karazhan (Old)|r in |cFFFFD700Deadwind Pass|r. The third letter is located in |cFFFFD700Medivh's Chambers|r, located after the Chess Event, in the staircase leading to Prince Malchezaar. The letter is on the chair Medivh used to write his scrolls and spells, literally the seat of the guardian. Click it. The letter reads...\n\n|cFFFFFFFFI sat Dumbfounded, watching As the most Subtle Rat reached for the cheese a third time in under an hour.|r\n",model=1661948,questID=40404,sourceQuests={40314}}),
 o(280838,{coords={{45.7,24,64}},description="|cFFFFFFFFLetter 4:|r Go to |cFFFFD700Razorfen Downs|r in |cFFFFD700Thousand Needles|r. The next |cFFFFD700Letter from Ms. Graham|r is located on a hay box behind the second-to-last boss, |cFFFFD700Death Speaker Blackthorn|r. will spawn on the table. Click it. The note reads...\r\r|cFFFFFFFFMs. Sin will accompany you down The longest Streets Of the underworld.|r\n",model=1661948,questID=40252,sourceQuests={40404}}),
 o(280842,{coords={{44.3,47.3,198}},description="|cFFFFFFFFLetter 5:|r Go to |cFFFFFFFF44.3, 47.3|r in |cFFFFD700Mount Hyjal|r. The next |cFFFFD700Letter from Ms. Graham|r is on a table at the highest floor of the tree that serves as her shrine. Click it. The note reads...\r\r|cFFFFFFFFThe Elite champions will rule the World with the mightiest F.C.|r\n",model=1661948,questID=40293,sourceQuests={40252}}),
 o(280843,{coords={{70.8,73.3,118}},description="|cFFFFFFFFLetter 6:|r Go to |cFFFFFFFF70.8, 73.3|r in |cFFFFD700Icecrown|r. The next |cFFFFD700Letter from Ms. Graham|r is on top of a spike at the dam. Click it. The note reads...\r\r|cFFFFFFFFRe: Codex of mastering Sine waves.|r\n",model=1661948,questID=40288,sourceQuests={40293}}),
@@ -337,7 +337,7 @@ o(220820,{coords={{64.7,49.9,71},{22.9,64.4,75}},description="|cFFFFFFFFStep 6:|
 o(19023,{coords={{34.6,50.9,379}},description="|cFFFFFFFFStep 7:|r This step will take us to |cFFFFD700Kun-Lai Summit|r near the |cFFFFD700Shado-Pan Monastery|r. Head to |cFFFFFFFF34.61, 50.88|r. |cFFFFD700Page 2351|r will be between the statue's paws on the platform. Click this to continue. The page reads...\n\n|cFFFFFFFF...bejeweled watcher...|r",isWeekly=1,model=305393,questID=47212,sourceQuests={47211}}),
 o(244678,{coords={{76.4,53.6,249}},description="|cFFFFFFFFStep 8:|r This step will take us to |cFFFFD700Uldum|r. Head to |cFFFFFFFF76.45, 53.67|r. |cFFFFD700Page 5555|r will be on the platform slightly offcenter in front of the left foot of the statue. Click this to continue. The page reads...\n\n|cFFFFFFFF...ray of sunshine...|r",isWeekly=1,model=305393,questID=47213,sourceQuests={47212}}),
 o(269830,{coords={{30.5,27.5,52}},description="|cFFFFFFFFStep 9:|r This step will take us to |cFFFFD700Westfall|r. Head to |cFFFFFFFF30.53, 27.56|r. |cFFFFD700Gift of the Mind-Seekers|r will be on the ground here in a broken boat. Click this to obtain your mount. Congratulations on getting the |cFFFFD700Riddler's Mind-Worm|r.\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving this puzzle.",isWeekly=1,model=942865,questID=47214,sourceQuests={47213},g={
-mnt(243025,{b=1,itemID=147835,lvl=45})}})}}),
+mnt(243025,{b=1,itemID=147835,lvl=10})}})}}),
 h(-505,{awp=100105,description="***Using Debug Mode is recommended.***\n",g={
 h(-12,{
 ach(18644,{sym={{"select","questID",77289,77288,77291,77292,77290,77293,77296,77294,77297,77298,77299,78208,78207,77300,77302,77301,77295}},g={
@@ -645,11 +645,11 @@ o(272487,{coords={{50.9,2.3,83}},description="|cFFFFFFFFSTEP 14:|r DO NOT JUMP I
 p(382,{b=1,itemID=142223,npcID=61087,spellID=231215})}})}}),
 ah(186639,{awp=110200,description="You can use one Cartel Deal per week on your account, across three weeks, equip the granted title then collect each dead drop within Manaforge Omega (Any difficulty) then return to the quartermaster for a new quest awarding your mount.",maps={2460,2461,2462,2463,2464,2465,2466,2467,2468,2469,2470,2471},minReputation=a[28],type="i",g={
 o(555609,{cost={{"i",249702,1}},description="To the right of the first miniboss after Plexus.",maps={2460},minReputation=a[28],questID=92080,g={
-i(249711)}}),
+i(249711,{b=1})}}),
 o(555611,{cost={{"i",249704,1}},description="On a rock past Fractillus near the edge of the map.",maps={2465},minReputation=a[28],questID=92081,g={
-i(249712)}}),
+i(249712,{b=1})}}),
 o(555610,{cost={{"i",249700,1}},description="On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.\n\nThis cannot be looted in a cleared instance!",maps={2463},minReputation=a[28],questID=92079,g={
-i(249710)}}),
+i(249710,{b=1})}}),
 q(92082,{coords={{42,22.1,2371}},lvl=70,qgs={245344},sourceQuests={92079,92080,92081},g={
 toy(249713,{b=1}),
 mnt(353264,{b=1,itemID=186639})}})}}),

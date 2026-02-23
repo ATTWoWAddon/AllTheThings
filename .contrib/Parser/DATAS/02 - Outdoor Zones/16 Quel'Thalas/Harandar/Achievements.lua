@@ -5,6 +5,7 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.HARANDAR, {
 		n(ACHIEVEMENTS, {
+			ach(61917),	-- "Hold aggro, I got this"
 			ach(61344, {	-- Chronicler of the Haranir
 				title(680),	-- <Name>, Chronicler of the Haranir
 			}),
@@ -26,10 +27,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					61544,	-- Skyriding Glyphs: The Cradle
 				}},
 			})),
+			ach(61860),	-- From The Cradle to the Grave
 			ach(62290, {	-- Harandar: The Highest Peaks
 				i(265792),	-- Fungarian Vine Fence (DECOR!)
 			}),
-			ach(61860),	-- From The Cradle to the Grave
+			ach(61706),	-- Herald of the Goddess
 			ach(61264, {	-- Leaf None Behind
 				i(264266),	-- Lightbloom Moss Mound (DECOR!)
 			}),

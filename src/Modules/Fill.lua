@@ -606,7 +606,7 @@ local function HandleOnWindowFillComplete(window)
 
 	window.data._fillcomplete = true
 	AssignGroupFilledTag(window.data)
-	app.HandleEvent("OnWindowFillComplete", window)
+	app.HandleEvent("OnWindowFillComplete", window, window.Suffix)
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 local FillGroups = function(group, options)

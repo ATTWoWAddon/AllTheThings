@@ -74,7 +74,7 @@ local function GetUnobtainableTexture(group)
 		if phase then
 			if not phase.buildVersion and group.itemID then
 				local b = group.b or 0;
-				if b == 2 or b == 0 then	-- BoE or Unbound
+				if u ~= 1 and (b == 2 or b == 0) then	-- BoE or Unbound on non-NYI
 					return L.UNOBTAINABLE_ITEM_TEXTURES[2];
 				end
 			end
@@ -2220,7 +2220,7 @@ local function UpdateWindow(self, force, trigger)
 		end
 
 		-- app.PrintDebugPrior("Update:Done")
-		app.HandleEvent("OnWindowUpdated", self, didUpdate)
+		app.HandleEvent("OnWindowUpdated", self, self.Suffix, didUpdate)
 		return true;
 	end
 	-- app.PrintDebugPrior("Update:None")
@@ -2738,7 +2738,7 @@ local function BuildWindow(suffix)
 					local lastUpdate = debugprofilestop();
 					if onRefresh(self) then self:DefaultRefresh(); end
 					print("Refresh: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
-					-- app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
+					app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
 				end
 			end
 		else
@@ -2757,7 +2757,7 @@ local function BuildWindow(suffix)
 					local lastUpdate = debugprofilestop();
 					self:DefaultRefresh();
 					print("Refresh: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
-					-- app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
+					app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
 				end
 			end
 		else
@@ -3018,25 +3018,14 @@ end
 -- Dynamic Popouts for Quest Chains and other Groups
 local OnInitForPopout;
 function app:CreateMiniListForGroup(group)
-	-- Is this an achievement criteria or lacking some achievement information?
+
+	-- This re-directs Criteria popouts to instead popout their Achievement
 	local achievementID = group.achievementID;
 	if achievementID and group.criteriaID then
-		local searchResults = app.SearchForField("achievementID", achievementID);
-		if #searchResults > 0 then
-			local bestResult;
-			for i=1,#searchResults,1 do
-				local searchResult = searchResults[i];
-				if searchResult.achievementID == achievementID and not searchResult.criteriaID then
-					if not bestResult or searchResult.g then
-						bestResult = searchResult;
-					end
-				end
-			end
-			if bestResult then group = bestResult; end
-		end
+		group = app.SearchForObject("achievementID", achievementID, "key") or group
 	end
 
-	-- Is this a quest object or objective?
+	-- This re-directs Objective popouts to instead popout their Quest
 	local questID, parent = group.questID, group.parent;
 	if questID and parent and parent.questID == questID then
 		group = parent;
@@ -3238,14 +3227,14 @@ local BaseSearchFilterMetatable = {
 		return false;
 	end,
 };
-local function BuildSearchFilterForClassTypes(uniqueKey, classTypes)
+local function BuildSearchFilterForClassTypes(classTypesKey, classTypes)
 	local searchFilter = SearchFiltersByClassTypes[classTypesKey];
 	if not searchFilter then
 		local filter = {};
 		for i,__type in pairs(classTypes) do filter[__type] = true; end
 		local FilterByClassType = setmetatable(filter, BaseSearchFilterMetatable);
 		searchFilter = function(t) return FilterByClassType[t.__type]; end
-		SearchFiltersByClassTypes[uniqueKey] = searchFilter;
+		SearchFiltersByClassTypes[classTypesKey] = searchFilter;
 	end
 	return searchFilter;
 end

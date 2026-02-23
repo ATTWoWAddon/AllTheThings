@@ -1630,9 +1630,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(252199, {	-- Festive Eve
 				["displayID"] = 137218,
 			}),
-			i(252194, {	-- Fishmonger May
-				["displayID"] = 137213,
-			}),
 			i(252195, {	-- Fishstick Keith
 				["displayID"] = 137215,
 			}),

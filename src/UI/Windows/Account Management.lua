@@ -467,6 +467,10 @@ local function RankSyncCharacterData(data, key)
 		end
 	end
 end
+-- Account-Wide data storage:
+-- 1 = This Thing is Account-Wide collected by Blizzard directly
+-- 2 = This Thing is Account-Wide collected since 1+ Character has directly collected it
+-- 3 = This Thing is Account-Wide collected since it is part of a situation where there's Faction-based differences (2 IDs) but completion of 1 ID is enough for Blizzard to "claim" Account-Wide collection (i.e. dual-Faction Achievements)
 local AccountWideDataHandlers = setmetatable({
 	Deaths = function(data)
 		local deaths = 0;

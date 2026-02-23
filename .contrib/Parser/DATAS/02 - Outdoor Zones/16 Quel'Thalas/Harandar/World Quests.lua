@@ -92,6 +92,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(260453),	-- Leech Tick (QI!)
 					},
 				}),
+				q(91981, {	-- To Poison and to Heal
+					["coord"] = { 43.6, 54.6, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						o(539208, {	-- Healing Waters of Ahl'ua
+							i(269022),	-- Healing Waters of Ahl'ua (QI!)
+						}),
+						i(269023),	-- Phytogenic Poison Part (QI!)
+					},
+				}),
 				q(91799, {	-- Trial of Flight
 					["coord"] = { 51.5, 76.8, MAP.MIDNIGHT.HARANDAR },
 				}),

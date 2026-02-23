@@ -35,5 +35,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			["timeline"] = { ADDED_12_0_0 },
 			["groups"] = { i(221492) },	-- Moss Skipper (PET!)
 		}),
+		ach(61566, {	-- Glory of the War Within Hero
+			["timeline"] = { ADDED_12_0_0 },
+		}),
 	}),
 })));

@@ -30,6 +30,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92404,
 				["groups"] = {
 					i(264621),	-- Bad Zed's Worst Channeler
+					i(251788),	-- Gift of Light
 					i(264536),	-- Zedling Summoning Collar
 				},
 			}),
