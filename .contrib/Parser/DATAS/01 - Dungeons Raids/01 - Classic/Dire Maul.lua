@@ -6,23 +6,13 @@ WARPWOOD_QUARTER = createHeader({
 	readable = "Warpwood Quarter",
 	icon = 236292,
 	text = {
-		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (East)"]],
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		fr = [[~DUNGEON_FLOOR_DIREMAUL5.." (Est)"]],
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		ru = [[~DUNGEON_FLOOR_DIREMAUL5.." (Восток)"]],
-		cn = [[~DUNGEON_FLOOR_DIREMAUL5.." (东)"]],
-		tw = [[~DUNGEON_FLOOR_DIREMAUL5.." (東)"]],
+		en = [[~DUNGEON_FLOOR_DIREMAUL5..app.L.EAST]]
 	},
 	description = {
 		en = "This part of the instance can be accessed from the eastern-most portal. (right side)",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Se puede acceder a esta parte de la mazmorra desde el portal más al este. (lado derecho)",
+		mx = "Se puede acceder a esta parte del calabozo desde el portal más al este. (lado derecho)",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -36,23 +26,13 @@ GORDOK_COMMONS = createHeader({
 	readable = "Gordok Commons",
 	icon = 236695,
 	text = {
-		en = [[~DUNGEON_FLOOR_DIREMAUL1.." (North)"]],
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		fr = [[~DUNGEON_FLOOR_DIREMAUL1.." (Nord)"]],
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		ru = [[~DUNGEON_FLOOR_DIREMAUL1.." (Север)"]],
-		cn = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
-		-- tw = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
+		en = [[~DUNGEON_FLOOR_DIREMAUL5..app.L.NORTH]]
 	},
 	description = {
 		en = "This part of the instance can be accessed from the northern-most portal.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Se puede acceder a esta parte de la mazmorra desde el portal más al norte.",
+		mx = "Se puede acceder a esta parte del calabozo desde el portal más al norte.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -66,23 +46,13 @@ CAPITAL_GARDENS = createHeader({
 	readable = "Capital Gardens",
 	icon = 134162,
 	text = {
-		en = [[~DUNGEON_FLOOR_DIREMAUL2.." (West)"]],
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		fr = [[~DUNGEON_FLOOR_DIREMAUL2.." (Ouest)"]],
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		ru = [[~DUNGEON_FLOOR_DIREMAUL2.." (Запад)"]],
-		cn = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
-		-- tw = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
+		en = [[~DUNGEON_FLOOR_DIREMAUL5..app.L.WEST]]
 	},
 	description = {
 		en = "This part of the instance can be accessed from the western-most portal. (left side)",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Se puede acceder a esta parte de la mazmorra desde el portal más al oeste. (lado izquierdo)",
+		mx = "Se puede acceder a esta parte del calabozo desde el portal más al oeste. (lado izquierdo)",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -180,6 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 		-- #if BEFORE MOP
 		["zone-text-areas"] = {
 			2557,	-- Dire Maul
+			2577,	-- Eldreth Row
 			3217,	-- "The Maul" now points to Dire Maul.
 			-- #if AFTER CATA
 			-- This areaID doesn't exist until Cataclysm!
@@ -317,6 +288,46 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
+				}),
+				q(5527, {	-- A Reliquary of Purity
+					["qg"] = 11801,	-- Rabine Saturna
+					["coord"] = { 51.7, 45.1, MOONGLADE },
+					-- ["description"] = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { DIRE_MAUL, SILITHUS },
+					["lvl"] = 56,
+					["groups"] = {
+						objective(1, {	-- 0/1 Reliquary of Purity
+							["providers"] = {
+								{ "i", 22201 },	-- Reliquary of Purity
+								{ "o", 179565 },	-- Dusty Reliquary
+							},
+							["coord"] = { 63.2, 55.4, SILITHUS },
+						}),
+					},
+				}),
+				q(5526, {	-- Shards of the Felvine
+					["sourceQuest"] = 5527,	-- A Reliquary of Purity
+					["qg"] = 11801,	-- Rabine Saturna
+					["coord"] = { 51.7, 45.1, MOONGLADE },
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { DIRE_MAUL },
+					["lvl"] = 56,
+					["groups"] = {
+						objective(1, {	-- 0/1 Sealed Reliquary of Purity
+							["provider"] = { "i", 18540 },	-- Sealed Reliquary of Purity
+							["cost"] = {
+								{ "i", 18539, 1 },	-- Reliquary of Purity
+								{ "i", 18501, 1 },	-- Felvine Shard
+							},
+						}),
+						i(18535, {	-- Milli's Shield
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+						i(18536, {	-- Milli's Lexicon
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				q(84550, {	-- Codex of Defense

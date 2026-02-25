@@ -83,22 +83,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { DRUID },
 					["lvl"] = 16,
 				}),
-				q(5527, {	-- A Reliquary of Purity
-					["qg"] = 11801,	-- Rabine Saturna
-					["coord"] = { 51.7, 45.1, MOONGLADE },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DIRE_MAUL, SILITHUS },
-					["lvl"] = 56,
-					["groups"] = {
-						objective(1, {	-- 0/1 Reliquary of Purity
-							["providers"] = {
-								{ "i", 22201 },	-- Reliquary of Purity
-								{ "o", 179565 },	-- Dusty Reliquary
-							},
-							["coord"] = { 63.2, 55.4, SILITHUS },
-						}),
-					},
-				}),
 				{	-- Aquatic Form
 					["allianceQuestData"] = q(5061, {	-- Aquatic Form [A]
 						["sourceQuest"] = 272,	-- Trial of the Sea Lion [A]
@@ -436,29 +420,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { DRUID },
 					["lvl"] = 70,
 				})),
-				q(5526, {	-- Shards of the Felvine
-					["sourceQuest"] = 5527,	-- A Reliquary of Purity
-					["qg"] = 11801,	-- Rabine Saturna
-					["coord"] = { 51.7, 45.1, MOONGLADE },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DIRE_MAUL },
-					["lvl"] = 56,
-					["groups"] = {
-						objective(1, {	-- 0/1 Sealed Reliquary of Purity
-							["provider"] = { "i", 18540 },	-- Sealed Reliquary of Purity
-							["cost"] = {
-								{ "i", 18539, 1 },	-- Reliquary of Purity
-								{ "i", 18501, 1 },	-- Felvine Shard
-							},
-						}),
-						i(18535, {	-- Milli's Shield
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18536, {	-- Milli's Lexicon
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-					},
-				}),
 				q(28343, {	-- The Breath of Cenarius
 					["sourceQuest"] = 28289,	-- Moonglade Calls
 					["qg"] = 12042,	-- Loganaar
