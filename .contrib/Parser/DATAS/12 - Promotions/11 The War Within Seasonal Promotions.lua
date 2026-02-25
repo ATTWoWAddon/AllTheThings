@@ -19,6 +19,8 @@ THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
 	},
 	description = {
 		en = "These promotions happened during the time The War Within was the most recent expansion.\n\nThey are listed in the order of their first appearance.",
+		es = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe enumeran en el orden de su primera aparición.",
+		mx = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe listan en el orden de su primera aparición.",
 	},
 });
 
@@ -28,8 +30,8 @@ STEELSERIES = createHeader({
 	text = {
 		en = "SteelSeries",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "SteelSeries",
+		mx = "SteelSeries",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -40,6 +42,8 @@ STEELSERIES = createHeader({
 	},
 	description = {
 		en = "Promotion for SteelSeries World of Warcraft Limited Edition Collection.",
+		es = "Promoción de la colección de edición limitada SteelSeries World of Warcraft.",
+		mx = "Promoción de la colección de edición limitada SteelSeries World of Warcraft.",
 	},
 });
 
@@ -49,8 +53,8 @@ RAZER = createHeader({
 	text = {
 		en = "Razer",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Razer",
+		mx = "Razer",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -61,6 +65,8 @@ RAZER = createHeader({
 	},
 	description = {
 		en = "Promotion for Razer Gaming Peripherals World of Warcraft Collection. Purchasing any item will award all three promotional codes.",
+		es = "Promoción de periféricos Razer Gaming de la colección World of Warcraft. Al comprar cualquier artículo, recibirás los tres códigos promocionales.",
+		mx = "Promoción de periféricos Razer Gaming de la colección World of Warcraft. Al comprar cualquier artículo, recibirás los tres códigos promocionales.",
 	},
 });
 TREASURE_OF_AZEROTH = createHeader({
@@ -68,10 +74,14 @@ TREASURE_OF_AZEROTH = createHeader({
 	icon = 7259806,
 	text = {
 		en = "Treasures of Azeroth",
+		es = "Tesoros de Azeroth",
+		mx = "Tesoros de Azeroth",
 		-- cn = "雷蛇",
 	},
 	description = {
 		en = "To celebrate the launch of Titan Reforged servers, Chinese players can participate in The Treasures of Azeroth event, offering brand new rewards. The Rewards are not shared between game types and must be obtained separately in each.",
+		es = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
+		mx = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
 	},
 });
 
@@ -132,12 +142,20 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_0_0, REMOVED_11_0_5 },
 			})),
 			cnONLY(i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
+				-- #if AFTER 11.0.2
+				-- #if BEFORE 12.0.0
 				["description"] = "Rewarded for returning to World of Warcraft in 2024. China Only.",
+				-- #endif
+				-- #endif
 				["timeline"] = { ADDED_11_0_0 },
 				["u"] = REMOVED_FROM_GAME,	-- Probably removed in 2025
 			})),
 			cnONLY(i(210409, {	-- Aura (PET!)
+				-- #if AFTER 11.0.2
+				-- #if BEFORE 12.0.0
 				["description"] = "Rewarded for returning to World of Warcraft in 2024. China Only.",
+				-- #endif
+				-- #endif
 				["timeline"] = { ADDED_11_0_0 },
 				["u"] = REMOVED_FROM_GAME,	-- Probably removed in 2025
 			})),
