@@ -934,7 +934,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(3568, {	-- Seeping Corruption (1/3)
-					["qg"] = 10136,	-- Chemist Fuely
+					["qg"] = 8390,	-- Chemist Cuely
 					["coord"] = { 47.6, 73.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { AZSHARA },
@@ -972,7 +972,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3569, {	-- Seeping Corruption (2/3)
 					["sourceQuest"] = 3568,	-- Seeping Corruption (1/3)
 					["providers"] = {
-						{ "n", 10136 },	-- Chemist Fuely
+						{ "n", 8390 },	-- Chemist Cuely
 						{ "i", 10712 },	-- Cuely's Elixir
 					},
 					["coord"] = { 47.6, 73.0, UNDERCITY },
@@ -982,7 +982,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3570, {	-- Seeping Corruption (3/3)
 					["sourceQuest"] = 3569,	-- Seeping Corruption (2/3)
-					["qg"] = 10136,	-- Chemist Fuely
+					["qg"] = 8390,	-- Chemist Cuely
 					["coord"] = { 47.6, 73.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
