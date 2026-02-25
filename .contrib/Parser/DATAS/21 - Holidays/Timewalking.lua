@@ -620,6 +620,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					i(224757),	-- Master Chef's Gloves
 					i(224758),	-- Stolen Stormwind Helmet
 					i(224759),	-- Pirate's Bracers
+					i(8490),	-- Cat Carrier (Siamese) (PET!)
 				},
 			}),
 		}),
