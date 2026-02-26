@@ -1603,12 +1603,9 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return "quest:"..t.questID
 	end,
 	collectible = CollectibleAsQuest,
-	-- TODO: need to resolve how storage of repeatable Quests is maintained, otherwise any completed quest appears to be collected forever
-	-- even when Blizzard unflags them
-	-- collected = function(t)
-	-- 	return app.TypicalCharacterCollected(CACHE, t.questID)
-	-- end,
-	collected = IsQuestFlaggedCompletedForObject,
+	collected = function(t)
+		return app.TypicalCharacterCollected(CACHE, t.questID)
+	end,
 	altcollected = function(t)
 		local altQuests = t.altQuests;
 		if altQuests then
