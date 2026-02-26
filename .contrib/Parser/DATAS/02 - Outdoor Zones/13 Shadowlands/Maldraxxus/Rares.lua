@@ -69,6 +69,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			header(HEADERS.Achievement, 14372, {	-- Theater of Pain
 				["description"] = "These mobs all spawn in the Theater of Pain, a free-for-all arena in the middle of Maldraxxus.",
 				["questID"] = 62786,	-- seems to trigger on first ToP rare killed each day
+				["isDaily"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
