@@ -129,15 +129,7 @@ do
 		end,
 	},
 	"WithQuest", {
-		trackable = function(t)
-			-- raw repeatable quests can't really be tracked since they immediately unflag
-			return not rawget(t, "repeatable") and t.repeatable
-		end,
-		saved = function(t)
-			return IsQuestFlaggedCompleted(t.questID)
-		end,
-		repeatable = function(t)
-			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
-		end,
+		ImportFrom = "Quest",
+		ImportFields = { "repeatable", "trackable", "saved" },
 	}, (function(t) return t.questID end))
 end

@@ -249,7 +249,9 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 			end
 		else
 			for _,character in pairs(ATTCharacterData) do
-				if character.Quests and character.Quests[id] then
+				if (character.Quests and character.Quests[id])
+					-- perhaps expand into a separate information type instead for previously-completed quests
+					or (character.PriorQuests and character.PriorQuests[id]) then
 					tinsert(knownBy, character);
 				end
 			end
@@ -691,11 +693,11 @@ local InformationTypes = {
 						end
 					end
 				end
-				
+
 				local count = #coordList;
 				if count > 0 then
 					coordList[1].left = t.text;
-					
+
 					-- Force white string entries.
 					for i=1,math_min(t.maxcoords, count) do
 						local coord = coordList[i];
@@ -704,7 +706,7 @@ local InformationTypes = {
 						coord.b = 1;
 						tinsert(tooltipInfo, coord);
 					end
-					
+
 					local remainingCoords = count - t.maxcoords;
 					if remainingCoords > 0 then
 						tinsert(tooltipInfo, {

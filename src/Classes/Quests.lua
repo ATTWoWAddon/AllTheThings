@@ -316,6 +316,7 @@ local CACHE = "Quests"
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	if not currentCharacter.PriorQuests then currentCharacter.PriorQuests = {} end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {} end
 
 	OneTimeQuests = accountWideData.OneTimeQuests
@@ -598,10 +599,8 @@ app.IsQuestAvailable = function(t)
 	)
 end
 
-local function IsQuestSaved(questID)
-	-- NOTE: If Party Sync is supported, this will be replaced!
-	return IsQuestFlaggedCompleted(questID);
-end
+-- NOTE: If Party Sync is supported, this will be replaced!
+local IsQuestSaved = IsQuestFlaggedCompleted
 local function GetQuestIndicator(t)
 	local questID = t.questID;
 	if questID then
@@ -872,7 +871,12 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 	local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 	local MAX = 999999;
 	local UnflaggedQuests = {}
+	local FlaggedQuests = {}
 	local CompleteQuestSequence = {};
+	local FirstRefresh = true
+	local IgnoredUnflagTypes = {
+		ItemWithQuest = true,
+	}
 	local QueryCompletedQuests = function()
 		BatchRefresh = true
 		local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
@@ -884,7 +888,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		local oldReportSetting = DoQuestPrints
 		-- check if Blizzard is being dumb / should we print a summary instead of individual lines
 		local questDiff = #freshCompletes - #CompleteQuestSequence;
-		local manyQuests = #CompleteQuestSequence == 0
+		local manyQuests = FirstRefresh
 		if oldReportSetting and not manyQuests then
 			if questDiff > 50 then
 				manyQuests = true;
@@ -896,9 +900,11 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		end
 		-- don't report quest completions if there's too many or we have yet to get initial quest completion
 		if manyQuests then
+			FirstRefresh = nil
 			DoQuestPrints = nil
 		end
 		wipe(UnflaggedQuests)
+		wipe(FlaggedQuests)
 
 		-- Dual Step tracking method
 		-- app.PrintDebug("DualStep")
@@ -920,6 +926,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 				else
 					-- new completed quest
 					CompletedQuests[n] = true
+					FlaggedQuests[n] = true
 					Ni = Ni + 1
 					n = freshCompletes[Ni] or MAX
 				end
@@ -930,12 +937,35 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		-- app.__CQS = CompleteQuestSequence
 
 		if #RetailDirtyQuests > 0 then
-			CacheQuestsByScope(RetailRawQuests,1)
+			CacheQuestsByScope(FlaggedQuests,1)
 			CacheQuestsByScope(UnflaggedQuests)
 		end
 
 		if manyQuests then
 			DoQuestPrints = oldReportSetting
+		end
+
+		-- add a contrib dialog if any UnflaggedQuests are found to be NOT repeatable, thus indicating an ATT data issue or Blizzard unflagging unexpected quests
+		if app.Contributor and next(UnflaggedQuests) then
+			local inaccurateQuests = {}
+			local ref
+			for questID in pairs(UnflaggedQuests) do
+				ref = Search("questID", questID, "field")
+				-- quest which has become unflagged but was not marked as such in ATT (ignoring HQTs)
+				if ref
+					and not ref.repeatable
+					and not ref.achievementID	-- don't report quests linked to achievements/criteria
+					and not IgnoredUnflagTypes[ref.__type]	-- don't report types of quests we don't care about
+					and not GetRelativeValue(ref, "_hqt") then
+					inaccurateQuests[questID] = true
+				end
+			end
+			if next(inaccurateQuests) then
+				app.Modules.Contributor.AddReportData(
+					"Inaccurate Unflagged Quests",
+					app.UniqueCounter.UnflaggedQuests,
+					inaccurateQuests)
+			end
 		end
 
 		BatchRefresh = nil
@@ -974,10 +1004,26 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		end
 	end
 
-	-- Retail Event Handlers
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
+		-- convert cached quests into the current CompleteQuestSequence so unflagged quests can be properly tracked and reported at startup
+		local priorQuests = currentCharacter.PriorQuests
+		for questID in pairs(currentCharacter.Quests) do
+			CompleteQuestSequence[#CompleteQuestSequence + 1] = questID
+			RetailRawQuests[questID] = 1
+			priorQuests[questID] = 1
+		end
+		app.Sort(CompleteQuestSequence)
+	end)
 	app.AddEventRegistration("LOOT_OPENED", RefreshAllQuestInfo)
 	-- We don't want any reporting/updating of completed quests when ATT starts... simply capture all completed quests
 	app.AddEventHandler("OnStartup", QueryCompletedQuests);
+	app.AddEventHandler("OnStartup", function()
+		-- clean any completed quests from PriorQuests. This should only represent unflagged quests which at one point were completed
+		local priorQuests = app.CurrentCharacter.PriorQuests
+		for questID in pairs(RetailRawQuests) do
+			priorQuests[questID] = nil
+		end
+	end)
 	app.AddEventHandler("OnRecalculate", QueryCompletedQuests);
 	app.AddEventHandler("OnPlayerLevelUp", RefreshAllQuestInfo);
 	app.AddEventHandler("OnReady", function()

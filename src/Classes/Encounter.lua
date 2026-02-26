@@ -5,7 +5,6 @@ local _,app = ...;
 local EJ_GetEncounterInfo = EJ_GetEncounterInfo;
 if EJ_GetEncounterInfo and app.GameBuildVersion >= 60000 then
 	local MAX_CREATURES_PER_ENCOUNTER = 9;
-	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
 	local tinsert, EJ_GetCreatureInfo = tinsert, EJ_GetCreatureInfo;
 	local cache = app.CreateCache("encounterID");
 	local function CacheInfo(t, field)
@@ -48,10 +47,9 @@ if EJ_GetEncounterInfo and app.GameBuildVersion >= 60000 then
 		["icon"] = app.GetRelativeDifficultyIcon,
 	},
 	"WithQuest", {
+		ImportFrom = "Quest",
+		ImportFields = { "saved" },
 		trackable = app.ReturnTrue,
-		saved = function(t)
-			return IsQuestFlaggedCompleted(t.questID);
-		end
 	}, (function(t) return t.questID; end));
 else
 	app.CreateEncounter = function(id, t)

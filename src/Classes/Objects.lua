@@ -5,11 +5,10 @@ local app = select(2, ...);
 
 -- App locals
 local ArrayAppend = app.ArrayAppend;
-local IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompletedForObject;
 
 -- Global locals
-local C_QuestLog_IsOnQuest,setmetatable,rawget
-	= C_QuestLog.IsOnQuest,setmetatable,rawget
+local setmetatable,rawget
+	= setmetatable,rawget
 
 local GenerateGroupsForGenericSubGroup = function(t)
 	-- only load this if we're in a tooltip-level or new window build
@@ -171,15 +170,13 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 },
 function(t) return t.type == "AsGenericObjectContainer" end,
 "AsSubGenericObjectWithQuest", {
+	CACHE = function() return "Quests" end,
+	ImportFrom = "Quest",
+	ImportFields = { "repeatable", "trackable", "saved" },
 	CollectibleType = function() return "QuestsHidden" end,
 	collectible = app.GlobalVariants.AndLockCriteria.collectible,
-	collected = IsQuestFlaggedCompletedForObject,
-	trackable = function(t)
-		-- raw repeatable quests can't really be tracked since they immediately unflag
-		return not rawget(t, "repeatable") and t.repeatable
-	end,
-	saved = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+	collected = function(t)
+		return app.TypicalCharacterCollected("Quests", t.questID, t.CollectibleType)
 	end,
 	variants = {
 		app.GlobalVariants.AndLockCriteria,
@@ -192,15 +189,13 @@ function(t) return t.questID and t.type == "AsSubGenericObject" end,
 },
 function(t) return t.type == "AsSubGenericObject" end,
 "WithQuest", {
+	CACHE = function() return "Quests" end,
+	ImportFrom = "Quest",
+	ImportFields = { "repeatable", "trackable", "saved" },
 	CollectibleType = function() return "QuestsHidden" end,
 	collectible = app.GlobalVariants.AndLockCriteria.collectible,
-	collected = IsQuestFlaggedCompletedForObject,
-	trackable = function(t)
-		-- raw repeatable quests can't really be tracked since they immediately unflag
-		return not rawget(t, "repeatable") and t.repeatable
-	end,
-	saved = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+	collected = function(t)
+		return app.TypicalCharacterCollected("Quests", t.questID, t.CollectibleType)
 	end,
 	variants = {
 		app.GlobalVariants.AndLockCriteria,
