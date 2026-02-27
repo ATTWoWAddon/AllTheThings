@@ -961,10 +961,13 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 				end
 			end
 			if next(inaccurateQuests) then
-				app.Modules.Contributor.AddReportData(
-					"Inaccurate Unflagged Quests",
-					app.UniqueCounter.UnflaggedQuests,
-					inaccurateQuests)
+				-- do this on a 10sec callback to help it be more visible on login in case there is lots of addon startup spam
+				app.CallbackHandlers.DelayedCallback(function()
+					app.Modules.Contributor.AddReportData(
+						"Inaccurate Unflagged Quests",
+						app.UniqueCounter.UnflaggedQuests,
+						inaccurateQuests)
+				end, 10)
 			end
 		end
 
