@@ -126,7 +126,7 @@ jobs:
           "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/05 - Mists of Pandaria.config"
         shell: cmd
 
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         with:
             name: db-output  # Artifact name
             path: db/  # File path to upload
