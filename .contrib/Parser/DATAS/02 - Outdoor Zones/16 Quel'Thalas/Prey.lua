@@ -528,10 +528,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(PREY, {
 			n(QUESTS, {
-				--q(93168),	-- after completion questID 91096 (Prey: Magistrix Emberlash (Normal)), probably end of "tutorial" or first per week?
 				--whatever that rng things are happen
-				--q(95413),	-- "Community Engagement" after zone (Eversong Woods) rare kill during Prey (and unflagged at same frame)
-				--q(95485),	-- same as above but missing quest name
+				--q(95485),	-- after zone (Eversong Woods) rare kill during Prey (and unflagged at same frame)
 				--q(95535),	-- completed/unflagged/completed/unflagged/completed (yes, 3 times), after Lost Guardian was killied during Prey in zone (hard mode)
 				--q(95536),	-- unflagged after looting Minor Coalesced Anguish
 				--q(95537),	-- same as above, but after Banuran was kiiled during Prey in zone (hard mode)
@@ -540,19 +538,23 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 
 				--related to prey bosses kill - counter for something?
 				--doesn't matter on difficulty or whatever boss it was, weekly
-				--q(95000),	-- 1st per week
-				--q(95001),	-- 2nd per week
-				--q(95002),	-- 3rd per week
-				--q(95003),	-- 4th per week
+				q(95000),	-- 1st per week
+				q(95001),	-- 2nd per week
+				q(95002),	-- 3rd per week
+				q(95003),	-- 4th per week
 
 				--Seems like lockout for rewards? Weekly
+				--- Adventures
+				q(93168),	-- Adventurer chest lockout (Normal), 1st
+				--q(93156?),	-- Adventurer chest lockout (Normal), 2nd (after it - Adventures Sack as reward)
 				--- Veteran
-				--q(93169),	-- Veteran chest lockout (Hard mode), 1st
-				--q(93857),	-- Veteran chest lockout (Hard mode), 2nd (after it - Veteran Sack as reward)
+				q(93169),	-- Veteran chest lockout (Hard), 1st
+				q(93857),	-- Veteran chest lockout (Hard), 2nd (after it - Veteran Sack as reward)
 				--q(93858),	-- Veteran Sack was looted, 1st after chest
 				--q(93860),	-- Veteran Sack was looted, 2nd after chest
-				--- Adventures
-				--q(93168),	-- after Praetor Singularis (Normal) was killed
+				--- Nightmare
+				q(93170),	-- Chapmpion chest lockout (Nightmare), 1st
+				--q(93158?),	-- Chapmpion chest lockout (Nightmare), 2nd (after it - Chapmpion Sack as reward)
 			}),
 		}),
 	}),

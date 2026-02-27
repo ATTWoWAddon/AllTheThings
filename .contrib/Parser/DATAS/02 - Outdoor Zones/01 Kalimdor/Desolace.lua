@@ -188,6 +188,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179491, {	-- Waterlogged Footlocker
+					["coord"] = { 36.9, 24.1, DESOLACE },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 150,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66372, {	-- Merda Stronghoof <Master Pet Tamer>
 					["coord"] = { 57.2, 45.8, DESOLACE },

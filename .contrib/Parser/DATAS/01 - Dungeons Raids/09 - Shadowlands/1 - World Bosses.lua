@@ -21,7 +21,7 @@ local EncounterToCRS = {
 	},
 	[MORTANIS] = {
 		167525,	-- Mortanis
-	 },
+	},
 	[NURGASH] = {
 		167526,	-- Nurgash Muckformed
 	},

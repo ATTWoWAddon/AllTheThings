@@ -5,14 +5,6 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(ZONE_DROPS, {
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					-- both of these only have pickpocket comments on Wowhead
-					i(180870),	-- Shadow's Bite
-					i(180868),	-- Fear's Heartpiercer
-				},
-			}),
 			i(179311),	-- Oxxein Lockbox
 			i(187822, {	-- A Defector's Request
 				["timeline"] = { ADDED_9_1_5 },

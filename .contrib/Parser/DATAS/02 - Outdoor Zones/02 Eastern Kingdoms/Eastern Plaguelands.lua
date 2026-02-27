@@ -1553,6 +1553,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179498, {	-- Scarlet Footlocker
+					["coords"] = {
+						{ 80.8, 85.2, EASTERN_PLAGUELANDS },
+						{ 83.8, 80.1, EASTERN_PLAGUELANDS },
+						{ 87.9, 82.3, EASTERN_PLAGUELANDS },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 250,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66512, {	-- Deiza Plaguehorn <Master Pet Tamer>
 					["coord"] = {

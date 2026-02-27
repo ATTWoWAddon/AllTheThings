@@ -66,7 +66,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264506),	-- Stormarion Fragment
 				}),
 				i(248680),	-- Unstable Focusing Crystal
-				i(260979),	-- Victorious Stormarion Cache
+				i(260979, {	-- Victorious Stormarion Cache
+					i(257180),	-- Reins of Contained Stormarion Defender (MOUNT!) TODO: Blizzard bug - missing spellID for it, fix on live
+				}),
 				i(260940, {	-- Victorious Stormarion Pinnacle Cache
 					i(265030),	-- Kai (PET!)
 					i(262608),	-- Void Elf Stool (DECOR!)
@@ -83,11 +85,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.VOIDSTORM, {
 			n(STORMMARION_ASSAULT, {
 				n(QUESTS, {
-					q(90962, {["repeatable"]=true}),	-- "Stormarion Assault", Right when it start
-					q(90943),	-- "Stormarion Assault", Before Wave 1 preparation?
-					q(91938),	-- Wave 1 started
-					q(91464),	-- Wave 2 preparation started
-					q(91465),	-- Wave 3 preparation started
+					q(90962, {["repeatable"]=true}),	-- "Stormarion Assault", Right when it start (Stage 1 of 7)/ (un)flag completed after successful completion of event (wq unlock?)
+					q(90943),	-- "Stormarion Assault", Before Wave 1 preparation? / (un)flag completed right before end of event
+					q(91938),	-- 
+					--q(91463?),	-- Wave 1 started (Stage 2 of 7), no hqt
+					q(91464),	-- Wave 2 preparation started (Stage 3 of 7)
+					q(91465),	-- Wave 3 preparation started (Stage 5 of 7)
 					q(93793),	-- fired after completion first Stormarion Assault (Victorious Stormarion Pinnacle Cache was looted?)/ probably WQs unloock in area?
 				}),
 			}),

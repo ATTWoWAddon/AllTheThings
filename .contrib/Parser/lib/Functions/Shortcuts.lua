@@ -1544,6 +1544,24 @@ petbattles = function(timeline, t)						-- Creates a PET_BATTLES header with pet
 	end
 	return petbattle(n(PET_BATTLES, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
+lockpicking = function(skipRequirement, t)				-- Creates a LOCKPICKING header with Rogue Class Filtering on it. Use this with Outdoor Zones.
+	if not t then
+		t = skipRequirement;
+		skipRequirement = nil;
+	end
+	local obj = prof(LOCKPICKING, t);
+	if not skipRequirement then obj.classes = { ROGUE }; end
+	return obj;
+end
+pickpocketing = function(skipRequirement, t)			-- Creates a PICK POCKET header with Rogue Class Filtering on it. Use this with Outdoor Zones.
+	if not t then
+		t = skipRequirement;
+		skipRequirement = nil;
+	end
+	local obj = header(HEADERS.Spell, 921, t);	-- Pick Pocket
+	if not skipRequirement then obj.classes = { ROGUE }; end
+	return obj;
+end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
 a = function(t)	-- Flag as Alliance Only

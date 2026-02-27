@@ -397,7 +397,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						220870,	-- Holiday Enthusiast
 						-- #endif
 						213769,	-- Holiday Enthusiast
-					 },
+					},
 					["coords"] = {
 						-- #if AFTER TWW
 						{ 46.1, 54.9, DORNOGAL },

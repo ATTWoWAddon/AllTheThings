@@ -374,7 +374,7 @@ local RetailMapDataStyleMetatable = {
 		app.AssignChildren(mapData);
 		mapData._lastshown = GetTimePreciseSec()
 		mapData._firstshow = true
-		app.PrintDebug("Built new map data for",mapID)
+		-- app.PrintDebug("Built new map data for",mapID)
 		return mapData;
 	end,
 };
@@ -404,19 +404,19 @@ local function TrySwapFromCache(self)
 		-- never built, allow rebuild
 		return
 	elseif header._lastshown < expired then
-		app.PrintDebug("Do update for cached map",mapID,header._lastshown,expired)
+		-- app.PrintDebug("Do update for cached map",mapID,header._lastshown,expired)
 		-- we don't necessarily need to wipe the data, it would just need a force update if used again
 		self.HasPendingUpdate = true
 	end
 	-- Update the mapID into the data for external reference in case not a real map
 	header.mapID = self.mapID;
 	self:SetData(header)
-	app.PrintDebug("Loaded Swap Map Data",mapID)
+	-- app.PrintDebug("Loaded Swap Map Data",mapID)
 	-- Reset the Fill if needed
 	if not header._fillcomplete then
 		-- Reset the minilist Runner before filling again
 		self:GetRunner().Reset()
-		app.PrintDebug("Re-fill cached Map",mapID)
+		-- app.PrintDebug("Re-fill cached Map",mapID)
 		app.SetSkipLevel(2);
 		app.FillGroups(header);
 		app.SetSkipLevel(0);
@@ -465,7 +465,7 @@ app:CreateWindow("MiniList", {
 		end
 		-- don't allow bad values
 		mapID = tonumber(mapID) or 0
-		app.PrintDebug("SetMapID",mapID,force)
+		-- app.PrintDebug("SetMapID",mapID,force)
 		if force and mapID ~= 0 then
 			CachedMapData[mapID] = nil
 			self.mapID = nil
@@ -474,7 +474,7 @@ app:CreateWindow("MiniList", {
 			self:Show();
 			return
 		end
-		app.PrintDebug("new map",self.mapID,"=>",mapID);
+		-- app.PrintDebug("new map",self.mapID,"=>",mapID);
 		self.mapID = mapID;
 
 		-- Swap will simply swap the data into the minilist and allow it to Refresh only, since it has already been Updated recently
@@ -512,7 +512,7 @@ app:CreateWindow("MiniList", {
 	RefreshLocation = function(self)
 		-- Acquire the new map ID.
 		local mapID = app.CurrentMapID;
-		app.PrintDebug("RefreshLocation",mapID)
+		-- app.PrintDebug("RefreshLocation",mapID)
 		-- can't really do anything about this from here anymore
 		if not mapID then return end
 		-- don't auto-load minimap to anything higher than a 'Zone' if we are in an instance, unless it has no parent?
@@ -574,7 +574,7 @@ app:CreateWindow("MiniList", {
 
 app.LocationTrigger = function(forceNewMap)
 	local window = app:GetWindow("MiniList", true)
-	app.PrintDebug("app.LocationTrigger",forceNewMap,window)
+	-- app.PrintDebug("app.LocationTrigger",forceNewMap,window)
 	if not window then return end
 
 	if forceNewMap then

@@ -97,6 +97,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			lockpicking({
+				o(123214, {	-- Duskwood Chest
+					["coord"] = { 70.5, 74.0, WESTFALL },
+					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 70,
+					["groups"] = {
+						i(7908),	-- Klaven Mortwake's Journal (QI!)
+					},
+				}),
+			}),
 			petbattles({
 				n(65648, {	-- Old MacDonald <Master Pet Tamer>
 					["coord"] = { 60.8, 18.6, WESTFALL },
@@ -129,44 +140,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(209031, {	-- Discreet Envelope
-						["coord"] = { 48.6, 48.6, WESTFALL },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							590,	-- Defias Looter
-							121,	-- Defias Pathstalker
-							589,	-- Defias Pillager
-							 95,	-- Defias Smuggler
-							504,	-- Defias Trapper
-						},
-						["groups"] = {
-							i(209030, {	-- Equipment Stash Key
-								["classes"] = { ROGUE },
-							}),
-							i(209029, {	-- Message from Emily
-								["classes"] = { ROGUE },
-							}),
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
-						["coords"] = {
-							{ 51.0, 47.0, WESTFALL },
-							{ 51.6, 55.6, WESTFALL },
-						},
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 210549,	-- Defias Scout
-						["groups"] = {
-							recipe(424984),	-- Engrave Gloves - Saber Slash
-						},
-					})),
-				},
+			pickpocketing({
+				i(7923,	{	-- Defias Tower Key (QI!)
+					["description"] = "Can also be killed for the key, though hits hard for lower level rogues.",
+					["coord"] = { 68.6, 72.2, WESTFALL },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 7051,	-- Malformed Defias Drone
+				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209031, {	-- Discreet Envelope
+					["coord"] = { 48.6, 48.6, WESTFALL },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						590,	-- Defias Looter
+						121,	-- Defias Pathstalker
+						589,	-- Defias Pillager
+						 95,	-- Defias Smuggler
+						504,	-- Defias Trapper
+					},
+					["groups"] = {
+						i(209030, {	-- Equipment Stash Key
+							["classes"] = { ROGUE },
+						}),
+						i(209029, {	-- Message from Emily
+							["classes"] = { ROGUE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["coords"] = {
+						{ 51.0, 47.0, WESTFALL },
+						{ 51.6, 55.6, WESTFALL },
+					},
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 210549,	-- Defias Scout
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
+				-- #endif
 			}),
-			-- #endif
 			-- #if AFTER 4.1.0.13726
 			n(PROFESSIONS, {
 				prof(FISHING, {
@@ -255,18 +269,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
 					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map (QS!)
 					["timeline"] = { REMOVED_4_0_3 },
-					["crs"] = {
-						126,	-- Murloc Coastrunner
-						458,	-- Murloc Hunter
-						456,	-- Murloc Minor Oracle
-						513,	-- Murloc Netter
-						517,	-- Murloc Oracle
-						515,	-- Murloc Raider
-						127,	-- Murloc Tidehunter
-						171,	-- Murloc Warrior
-						391,	-- Old Murk-Eye
-						519,	-- Slark
-					},
 					["lvl"] = 10,
 				}),
 				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
@@ -802,13 +804,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Klaven Mortwake's Journal
 							["provider"] = { "i", 7908 },	-- Klaven Mortwake's Journal (QI!)
-							["coord"] = { 71.0, 74.6, WESTFALL },
-							["cr"] = 7053,	-- Klaven Mortwake
 						}),
 						objective(2, {	-- 0/1 Defias Tower Key
 							["provider"] = { "i", 7923 },	-- Defias Tower Key (QI!)
-							["coord"] = { 68.6, 72.2, WESTFALL },
-							["cr"] = 7051,	-- Malformed Defias Drone
 						}),
 						recipe(8681, {	-- Instant Poison
 							["timeline"] = { REMOVED_3_0_2 },
@@ -2118,6 +2116,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { ADDED_4_0_3 },
+				}),
+				i(1357, {	-- Captain Sander's Treasure Map (QS!)
+					["timeline"] = { REMOVED_4_0_3 },
+					["crs"] = {
+						126,	-- Murloc Coastrunner
+						458,	-- Murloc Hunter
+						456,	-- Murloc Minor Oracle
+						513,	-- Murloc Netter
+						517,	-- Murloc Oracle
+						515,	-- Murloc Raider
+						127,	-- Murloc Tidehunter
+						171,	-- Murloc Warrior
+						391,	-- Old Murk-Eye
+						519,	-- Slark
+					},
+					["lvl"] = 10,
 				}),
 				-- #if BEFORE 4.0.3
 				i(769),	-- Chunk of Boar Meat

@@ -234,20 +234,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
-				header(HEADERS.Spell, 921, {	-- Pickpocketing
-					["classes"] = { ROGUE },
-					["groups"] = {
-						i(38268, {	-- Spare Hand
-							["coords"] = {
-								{ 81.0, 42.8, DRAGONBLIGHT },
-								{ 82.6, 68.6, DRAGONBLIGHT },
-							},
-							["crs"] = {
-								27224,	-- Forgotten Knight
-								27401,	-- Risen Wintergarde Miner
-							},
-						}),
-					},
+				pickpocketing({
+					i(38268, {	-- Spare Hand
+						["coords"] = {
+							{ 81.0, 42.8, DRAGONBLIGHT },
+							{ 82.6, 68.6, DRAGONBLIGHT },
+						},
+						["crs"] = {
+							27224,	-- Forgotten Knight
+							27401,	-- Risen Wintergarde Miner
+						},
+					}),
 				}),
 				n(QUESTS, {
 					q(12439, {	-- A Disturbance In The West

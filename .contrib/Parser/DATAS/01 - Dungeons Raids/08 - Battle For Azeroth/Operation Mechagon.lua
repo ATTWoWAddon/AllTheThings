@@ -25,7 +25,7 @@ local EncounterToCRS = {
 		150712,	-- Trixie Tazer
 		153755,	-- Naeno Megacrash
 		153756,	-- Mechacycle
-	 },
+	},
 	[HK8] = { 150190 },	-- HK-8 Aerial Oppression Unit
 	[TUSSLETONKS] = {
 		144244,	-- The Platinum Pummeler

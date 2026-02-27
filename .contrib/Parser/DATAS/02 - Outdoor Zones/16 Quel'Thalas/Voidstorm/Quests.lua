@@ -1211,6 +1211,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(265695),	-- Elementary Voidcore Shard (QI!)
 				},
 			}),
+			q(94675, {	-- Voidforge Reforged
+				["sourceQuests"] = { 94625 },	-- An Elementary Voidcore (TODO: unsure if weekly is good questID as source)
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+			}),
 		}),
 	}),
 }));

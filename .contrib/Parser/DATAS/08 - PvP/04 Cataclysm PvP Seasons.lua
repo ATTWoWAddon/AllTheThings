@@ -61,7 +61,7 @@ root(ROOTS.PVP, {
 					-- #else
 					ADDED_4_3_0
 					-- #endif
-				 },
+				},
 			}, {
 				n(FACTION_HEADER_ALLIANCE, {
 					["races"] = ALLIANCE_ONLY,

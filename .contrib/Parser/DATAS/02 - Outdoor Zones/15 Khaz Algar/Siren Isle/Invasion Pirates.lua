@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 				}),
-				header(HEADERS.Spell, 921, {	-- Pickpocketing
+				pickpocketing({
 					i(234232, {	-- Technique: Glyph of the Ashvane Pistol Shot (RECIPE!)
 						["description"] = "Can be pickpocketed from Pirates.",
 					}),

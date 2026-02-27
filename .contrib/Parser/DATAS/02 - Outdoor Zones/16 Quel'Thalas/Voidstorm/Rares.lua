@@ -31,6 +31,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 39.2, 64.0, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93944,
 				["groups"] = {
+					i(264637),	-- Cosmic Hunter's Glaive
 					i(264549),	-- Ever-Devouring Shoulderguards
 				},
 			}),
@@ -90,6 +91,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264701),	-- Cosmic Bell (TODO: could be Midnight zone reward)
 					i(264615),	-- Hardin's Backup Blade
+					i(264599),	-- Kul'Tiran Signet Ring
 				},
 			}),
 			n(256925, {	-- Lotus Darkblossom
@@ -121,6 +123,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 93953,
 				["groups"] = {
 					i(264630),	-- Colossal Voidsunderer
+					i(264561),	-- Primal Bonestompers
 					i(264694),	-- Ultradon Cuirass
 				},
 			}),
@@ -163,6 +166,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 91048,
 				["groups"] = {
 					i(264610),	-- Escaped Specimen's ID Tag
+					i(264646),	-- Specimen Sinew Longbow
 					i(264565),	-- Voidscale Shoulderpads
 				},
 			}),
@@ -192,12 +196,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 94460,
 				["groups"] = {
 					i(264531),	-- Shadowthread Slippers
+					i(264588),	-- Shawl of Cosmic Whispers
 				},
 			}),
 			n(248459, {	-- The Many-Broken
 				["coord"] = { 28.8, 70.2, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 94458,
 				["groups"] = {
+					i(264577),	-- Crystalforged Boots
 					i(264651),	-- Resonating Traumatizer
 				},
 			}),
@@ -209,6 +215,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 94459,
 				["groups"] = {
 					i(251786),	-- Ever-Collapsing Void Fissure
+					i(264628),	-- Spear of Nothingness
 					i(264556),	-- Voidforged Cinch
 				},
 			}),

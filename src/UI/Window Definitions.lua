@@ -3195,7 +3195,6 @@ OnInitForPopout = function(self, group)
 	else
 		self:SetData(group);
 	end
-	group.back = 1;
 	group.indent = 0;
 
 	app.HandleEvent("OnNewPopoutGroup", self.data)

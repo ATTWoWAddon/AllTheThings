@@ -122,6 +122,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(103815, {	-- Ambermill Strongbox
+					["coord"] = { 63.7, 65.2, SILVERPINE_FOREST },
+					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 1,
+					["groups"] = {
+						i(309),	-- Dalaran Status Report (QI!)
+					},
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(27577, {	-- 7th Legion Battle Plans
 					["sourceQuests"] = {

@@ -122,6 +122,108 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 74.6, 67.0, GHOSTLANDS },
 				})),
 			}),
+			lockpicking({
+				o(181665, {	-- Burial Chest
+					["coords"] = {
+						-- #if AFTER MOP
+						{ 66.4, 28.6, GHOSTLANDS },	-- Amani Catacombs Entrance, East
+						{ 13.7, 36.2, 96 },	-- Amani Catacombs
+						{ 14.9, 29.0, 96 },
+						{ 19.1, 26.5, 96 },
+						{ 26.5, 25.0, 96 },
+						{ 46.6, 24.0, 96 },
+						{ 47.2, 59.5, 96 },
+						{ 53.4, 68.8, 96 },
+						{ 54.1, 46.0, 96 },
+						{ 54.8, 64.1, 96 },
+						{ 55.1, 78.4, 96 },
+						{ 57.6, 27.8, 96 },
+						{ 61.4, 27.7, 96 },
+						{ 65.1, 77.8, 96 },
+						{ 65.2, 47.1, 96 },
+						{ 66.5, 68.0, 96 },
+						{ 66.8, 73.5, 96 },
+						{ 69.9, 39.7, 96 },
+						{ 72.6, 33.2, 96 },
+						{ 91.4, 33.0, 96 },
+						{ 58.1, 27.2, GHOSTLANDS },	-- Amani Catacombs Entrance, West
+						-- #else
+						{ 58.8, 28.6, GHOSTLANDS },
+						{ 62.7, 32.5, GHOSTLANDS },
+						{ 62.9, 28.0, GHOSTLANDS },
+						{ 65.8, 28.5, GHOSTLANDS },
+						-- #endif
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 1,
+					["groups"] = {
+						i(23923),	-- Amani Sacrificial Dagger
+						i(29518),	-- Amani Scimitar
+						i(25874, {	-- Large Throwing Knife
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
+					},
+				}),
+				o(184793, {	-- Primitive Chest
+					["coords"] = {
+						{ 60.3, 73.7, GHOSTLANDS },
+						{ 61.2, 75.5, GHOSTLANDS },
+						{ 61.5, 68.8, GHOSTLANDS },
+						{ 61.6, 67.6, GHOSTLANDS },
+						{ 61.7, 71.3, GHOSTLANDS },
+						{ 61.8, 71.1, GHOSTLANDS },
+						{ 62.3, 66.4, GHOSTLANDS },
+						{ 63.9, 73.0, GHOSTLANDS },
+						{ 64.3, 73.6, GHOSTLANDS },
+						{ 64.5, 79.2, GHOSTLANDS },
+						{ 64.7, 64.1, GHOSTLANDS },
+						{ 64.7, 67.7, GHOSTLANDS },
+						{ 65.1, 58.0, GHOSTLANDS },
+						{ 65.3, 70.3, GHOSTLANDS },
+						{ 65.3, 80.0, GHOSTLANDS },
+						{ 65.4, 66.4, GHOSTLANDS },
+						{ 65.4, 80.1, GHOSTLANDS },
+						{ 66.3, 55.2, GHOSTLANDS },
+						{ 66.7, 60.2, GHOSTLANDS },
+						{ 67.3, 61.2, GHOSTLANDS },
+						{ 67.8, 57.7, GHOSTLANDS },
+						{ 67.9, 50.2, GHOSTLANDS },
+						{ 68.0, 58.1, GHOSTLANDS },
+						{ 68.2, 55.1, GHOSTLANDS },
+						{ 68.5, 54.9, GHOSTLANDS },
+						{ 68.5, 57.4, GHOSTLANDS },
+						{ 68.6, 56.3, GHOSTLANDS },
+						{ 69.2, 52.6, GHOSTLANDS },
+						{ 69.4, 49.3, GHOSTLANDS },
+						{ 69.7, 51.7, GHOSTLANDS },
+						{ 69.9, 50.3, GHOSTLANDS },
+						{ 74.7, 47.0, GHOSTLANDS },
+						{ 75.0, 44.5, GHOSTLANDS },
+						{ 75.6, 43.7, GHOSTLANDS },
+						{ 75.6, 45.5, GHOSTLANDS },
+						{ 76.2, 47.3, GHOSTLANDS },
+						{ 77.2, 42.2, GHOSTLANDS },
+						{ 77.2, 45.0, GHOSTLANDS },
+						{ 77.4, 41.5, GHOSTLANDS },
+						{ 78.9, 37.9, GHOSTLANDS },
+						{ 79.1, 39.5, GHOSTLANDS },
+						{ 80.5, 39.7, GHOSTLANDS },
+						{ 80.8, 39.2, GHOSTLANDS },
+						{ 81.3, 38.6, GHOSTLANDS },
+						{ 81.5, 36.6, GHOSTLANDS },
+						{ 82.1, 37.1, GHOSTLANDS },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 20,
+					["groups"] = {
+						i(23923),	-- Amani Sacrificial Dagger
+						i(29518),	-- Amani Scimitar
+						i(30503, {	-- Archeologist's Shrunken Head (QI!)
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+					},
+				}),
+			}),
 			n(QUESTS, {
 				q(9275, {	-- A Little Dash of Seasoning
 					["sourceQuest"] = 9276,	-- Attack on Zeb'Tela
@@ -1018,13 +1120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Archeologist's Shrunken Head
-							["providers"] = {
-								{ "i",  30503 },	-- Archeologist's Shrunken Head
-								{ "o", 184793 },	-- Primitive Chest
-							},
-							["description"] = "Use your lockpicking skill to open the Primitive Chests.",
-							["timeline"] = { REMOVED_4_0_3 },
-							["coord"] = { 75.6, 43.7, GHOSTLANDS },
+							["provider"] = { "i", 30503 },	-- Archeologist's Shrunken Head
 						}),
 						i(30504, {	-- Leafblade-dagger
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1311,102 +1407,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(TREASURES, {
-				o(181665, {	-- Burial Chest
-					["description"] = "You'll need to pick the locks. Use a Rogue or a Blacksmith with Skeleton Keys. Chests always spawn at fixed locations.",
-					["coords"] = {
-						-- #if AFTER MOP
-						{ 66.4, 28.6, GHOSTLANDS },	-- Amani Catacombs Entrance, East
-						{ 13.7, 36.2, 96 },	-- Amani Catacombs
-						{ 14.9, 29.0, 96 },
-						{ 19.1, 26.5, 96 },
-						{ 26.5, 25.0, 96 },
-						{ 46.6, 24.0, 96 },
-						{ 47.2, 59.5, 96 },
-						{ 53.4, 68.8, 96 },
-						{ 54.1, 46.0, 96 },
-						{ 54.8, 64.1, 96 },
-						{ 55.1, 78.4, 96 },
-						{ 57.6, 27.8, 96 },
-						{ 61.4, 27.7, 96 },
-						{ 65.1, 77.8, 96 },
-						{ 65.2, 47.1, 96 },
-						{ 66.5, 68.0, 96 },
-						{ 66.8, 73.5, 96 },
-						{ 69.9, 39.7, 96 },
-						{ 72.6, 33.2, 96 },
-						{ 91.4, 33.0, 96 },
-						{ 58.1, 27.2, GHOSTLANDS },	-- Amani Catacombs Entrance, West
-						-- #else
-						{ 58.8, 28.6, GHOSTLANDS },
-						{ 62.7, 32.5, GHOSTLANDS },
-						{ 62.9, 28.0, GHOSTLANDS },
-						{ 65.8, 28.5, GHOSTLANDS },
-						-- #endif
-					},
-					["groups"] = {
-						i(23923),	-- Amani Sacrificial Dagger
-						i(29518),	-- Amani Scimitar
-						i(25874, {	-- Large Throwing Knife
-							["timeline"] = { REMOVED_5_0_4 },
-						}),
-					},
-				}),
 				o(19017),	-- Giant Clam
-				o(184793, {	-- Primitive Chest
-					["description"] = "You'll need to pick the locks. Use a Rogue or a Blacksmith with Skeleton Keys. Chests always spawn at fixed locations.",
-					["coords"] = {
-						{ 60.3, 73.7, GHOSTLANDS },
-						{ 61.2, 75.5, GHOSTLANDS },
-						{ 61.5, 68.8, GHOSTLANDS },
-						{ 61.6, 67.6, GHOSTLANDS },
-						{ 61.7, 71.3, GHOSTLANDS },
-						{ 61.8, 71.1, GHOSTLANDS },
-						{ 62.3, 66.4, GHOSTLANDS },
-						{ 63.9, 73.0, GHOSTLANDS },
-						{ 64.3, 73.6, GHOSTLANDS },
-						{ 64.5, 79.2, GHOSTLANDS },
-						{ 64.7, 64.1, GHOSTLANDS },
-						{ 64.7, 67.7, GHOSTLANDS },
-						{ 65.1, 58.0, GHOSTLANDS },
-						{ 65.3, 70.3, GHOSTLANDS },
-						{ 65.3, 80.0, GHOSTLANDS },
-						{ 65.4, 66.4, GHOSTLANDS },
-						{ 65.4, 80.1, GHOSTLANDS },
-						{ 66.3, 55.2, GHOSTLANDS },
-						{ 66.7, 60.2, GHOSTLANDS },
-						{ 67.3, 61.2, GHOSTLANDS },
-						{ 67.8, 57.7, GHOSTLANDS },
-						{ 67.9, 50.2, GHOSTLANDS },
-						{ 68.0, 58.1, GHOSTLANDS },
-						{ 68.2, 55.1, GHOSTLANDS },
-						{ 68.5, 54.9, GHOSTLANDS },
-						{ 68.5, 57.4, GHOSTLANDS },
-						{ 68.6, 56.3, GHOSTLANDS },
-						{ 69.2, 52.6, GHOSTLANDS },
-						{ 69.4, 49.3, GHOSTLANDS },
-						{ 69.7, 51.7, GHOSTLANDS },
-						{ 69.9, 50.3, GHOSTLANDS },
-						{ 74.7, 47.0, GHOSTLANDS },
-						{ 75.0, 44.5, GHOSTLANDS },
-						{ 75.6, 43.7, GHOSTLANDS },
-						{ 75.6, 45.5, GHOSTLANDS },
-						{ 76.2, 47.3, GHOSTLANDS },
-						{ 77.2, 42.2, GHOSTLANDS },
-						{ 77.2, 45.0, GHOSTLANDS },
-						{ 77.4, 41.5, GHOSTLANDS },
-						{ 78.9, 37.9, GHOSTLANDS },
-						{ 79.1, 39.5, GHOSTLANDS },
-						{ 80.5, 39.7, GHOSTLANDS },
-						{ 80.8, 39.2, GHOSTLANDS },
-						{ 81.3, 38.6, GHOSTLANDS },
-						{ 81.5, 36.6, GHOSTLANDS },
-						{ 82.1, 37.1, GHOSTLANDS },
-					},
-					["groups"] = {
-						i(23923),	-- Amani Sacrificial Dagger
-						i(29518),	-- Amani Scimitar
-					},
-				}),
 				o(2847, {	-- Tattered Chest
 					["coords"] = {
 						{ 10.9, 22.7, GHOSTLANDS },

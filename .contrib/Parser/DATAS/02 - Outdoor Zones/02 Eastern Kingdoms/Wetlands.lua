@@ -137,6 +137,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179488, {	-- Battered Footlocker
+					["coords"] = {
+						{ 13.7, 41.6, WETLANDS },
+						{ 16.5, 30.8, WETLANDS },
+						{ 18.4, 39.5, WETLANDS },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 110,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(180662),	-- Schooner Wreckage

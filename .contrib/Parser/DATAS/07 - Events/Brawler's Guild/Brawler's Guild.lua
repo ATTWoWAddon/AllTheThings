@@ -293,8 +293,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					crit(109816, {	-- Akama
 						["providers"] = {
-							 { "i", 94184 },	-- Challenge Card: Akama
-							 { "n", 67588 },	-- Akama
+							{ "i", 94184 },	-- Challenge Card: Akama
+							{ "n", 67588 },	-- Akama
 						},
 					}),
 					crit(109811, {	-- Blackmange
@@ -305,44 +305,44 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					crit(109813, {	-- Blind Hero
 						["providers"] = {
-							 { "i", 97321 },	-- Challenge Card: Blind Hero
-							 { "n", 70794 },	-- Blind Hero
+							{ "i", 97321 },	-- Challenge Card: Blind Hero
+							{ "n", 70794 },	-- Blind Hero
 						},
 					}),
 					crit(109834, {	-- Dark Summoner
 						["providers"] = {
-							 { "i", 94179 },	-- Challenge Card: Blind Hero
-							 { "n", 67678 },	-- Dark Summoner
+							{ "i", 94179 },	-- Challenge Card: Blind Hero
+							{ "n", 67678 },	-- Dark Summoner
 						},
 					}),
 					crit(109812, {	-- Deeken
 						["providers"] = {
-							 { "i", 94173 },	-- Challenge Card: Deeken
-							 { "n", 67451 },	-- Deeken
+							{ "i", 94173 },	-- Challenge Card: Deeken
+							{ "n", 67451 },	-- Deeken
 						},
 					}),
 					crit(109810, {	-- Dominika
 						["providers"] = {
-							 { "i", 94172 },	-- Challenge Card: Dominika
-							 { "n", 67485 },	-- Dominika the Illusionist
+							{ "i", 94172 },	-- Challenge Card: Dominika
+							{ "n", 67485 },	-- Dominika the Illusionist
 						},
 					}),
 					crit(109870, {	-- Fjoll
 						["providers"] = {
-							 { "i", 94175 },	-- Challenge Card: Fjoll
-							 { "n", 67596 },	-- Fjoll
+							{ "i", 94175 },	-- Challenge Card: Fjoll
+							{ "n", 67596 },	-- Fjoll
 						},
 					}),
 					crit(109806, {	-- Fran & Riddoh
 						["providers"] = {
-							 { "i", 94164 },	-- Challenge Card: Fran & Riddoh
-							 { "n", 68297 },	-- Fran/Riddoh Controller
+							{ "i", 94164 },	-- Challenge Card: Fran & Riddoh
+							{ "n", 68297 },	-- Fran/Riddoh Controller
 						},
 					}),
 					crit(109808, {	-- Ixx
 						["providers"] = {
-							 { "i", 94168 },	-- Challenge Card: Ixx
-							 { "n", 68253 },	-- Ixx
+							{ "i", 94168 },	-- Challenge Card: Ixx
+							{ "n", 68253 },	-- Ixx
 						},
 					}),
 					crit(109804, {	-- Johnny Awesome
@@ -353,14 +353,14 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					crit(109800, {	-- Kirrawk
 						["providers"] = {
-							 { "i", 94163 },	-- Challenge Card: Kirrawk
-							 { "n", 67269 },	-- Kirrawk
+							{ "i", 94163 },	-- Challenge Card: Kirrawk
+							{ "n", 67269 },	-- Kirrawk
 						},
 					}),
 					crit(109809, {	-- Leona
 						["providers"] = {
-							 { "i", 94171 },	-- Challenge Card: Leona
-							 { "n", 68377 },	-- Leona Earthwind
+							{ "i", 94171 },	-- Challenge Card: Leona
+							{ "n", 68377 },	-- Leona Earthwind
 						},
 					}),
 					crit(109805, {	-- Mama Stormstout
@@ -371,32 +371,32 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					crit(109820, {	-- Millie Watt
 						["providers"] = {
-							 { "i", 94174 },	-- Challenge Card: Millie Watt
-							 { "n", 67591 },	-- Millie Watt
+							{ "i", 94174 },	-- Challenge Card: Millie Watt
+							{ "n", 67591 },	-- Millie Watt
 						},
 					}),
 					crit(109802, {	-- Nibbleh
 						["providers"] = {
-							 { "i", 97283 },	-- Challenge Card: Nibbleh
-							 { "n", 70656 },	-- Nibbleh
+							{ "i", 97283 },	-- Challenge Card: Nibbleh
+							{ "n", 70656 },	-- Nibbleh
 						},
 					}),
 					crit(109814, {	-- Proboskus
 						["providers"] = {
-							 { "i", 94176 },	-- Challenge Card: Proboskus
-							 { "n", 68252 },	-- Proboskus
+							{ "i", 94176 },	-- Challenge Card: Proboskus
+							{ "n", 68252 },	-- Proboskus
 						},
 					}),
 					crit(109835, {	-- Sanoriak
 						["providers"] = {
-							 { "i", 94167 },	-- Challenge Card: Sanoriak
-							 { "n", 67268 },	-- Sanoriak
+							{ "i", 94167 },	-- Challenge Card: Sanoriak
+							{ "n", 67268 },	-- Sanoriak
 						},
 					}),
 					crit(109831, {	-- T440 Dual-Mode Robot
 						["providers"] = {
-							 { "i", 97559 },	-- Challenge Card: T440 Dual-Mode Robot
-							 { "n", 70983 },	-- T440 Dual-Mode Robot
+							{ "i", 97559 },	-- Challenge Card: T440 Dual-Mode Robot
+							{ "n", 70983 },	-- T440 Dual-Mode Robot
 						},
 					}),
 					crit(109803, {	-- Thog Hammerspace
@@ -407,26 +407,26 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					crit(109807, {	-- Unguloxx
 						["providers"] = {
-							 { "i", 94186 },	-- Challenge Card: Unguloxx
-							 { "n", 68250 },	-- Unguloxx
+							{ "i", 94186 },	-- Challenge Card: Unguloxx
+							{ "n", 68250 },	-- Unguloxx
 						},
 					}),
 					crit(109815, {	-- Vian
 						["providers"] = {
-							 { "i", 93824 },	-- Challenge Card: Vian
-							 { "n", 67579 },	-- Vian the Volatile
+							{ "i", 93824 },	-- Challenge Card: Vian
+							{ "n", 67579 },	-- Vian the Volatile
 						},
 					}),
 					crit(109807, {	-- Vishas
 						["providers"] = {
-							 { "i", 94161 },	-- Challenge Card: Vishas
-							 { "n", 67572 },	-- Dungeon Master Vishas
+							{ "i", 94161 },	-- Challenge Card: Vishas
+							{ "n", 67572 },	-- Dungeon Master Vishas
 						},
 					}),
 					crit(109821, {	-- Yikkan Izu
 						["providers"] = {
-							 { "i", 94183 },	-- Challenge Card: Yikkan Izu
-							 { "n", 68256 },	-- Yikkan Izu
+							{ "i", 94183 },	-- Challenge Card: Yikkan Izu
+							{ "n", 68256 },	-- Yikkan Izu
 						},
 					}),
 				},
@@ -1892,7 +1892,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 						-- #if BEFORE 11.2.7
 						["groups"] = {
-							-- Wouter NOTE: if you're confused like me, fighting bosses with Bag of Chipped Dice still allowed you to fight Season 2 bosses and earn the achievement + shirt
+							-- Wouter NOTE: during Seasons 3 + 4, you could use Bag of Chipped Dice to activate random brawl mode to fight Season 2 bosses and earn their achievement + shirt
+							--		Source: checked a vast amount of Wowhead comments on these shirts
 							ach(9177, {	-- Deck Your Collection [Season 2]
 								["races"] = HORDE_ONLY,
 								["groups"] = {
@@ -2070,7 +2071,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 						-- #if BEFORE 11.2.7
 						["groups"] = {
-							-- Wouter NOTE: if you're confused like me, fighting bosses with Bag of Chipped Dice still allowed you to fight Season 2 bosses and earn the achievement + shirt
+							-- Wouter NOTE: during Seasons 3 + 4, you could use Bag of Chipped Dice to activate random brawl mode to fight Season 2 bosses and earn their achievement + shirt
+							--		Source: checked a vast amount of Wowhead comments on these shirts
 							ach(9176, {	-- Deck Your Collection [Season 2]
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {

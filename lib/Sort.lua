@@ -337,8 +337,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		a = toLowerString(a.text);
-		b = toLowerString(b.text);
+		a = toLowerString(a.name or a.text);
+		b = toLowerString(b.name or b.text);
 		return a < b;
 	end,
 	name = function(a,b)

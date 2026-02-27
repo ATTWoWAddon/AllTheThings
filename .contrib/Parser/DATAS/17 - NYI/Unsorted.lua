@@ -268,7 +268,6 @@ root(ROOTS.Unsorted, {
 					i(238498),	-- [PH] Trophy Coin
 
 					-- Fishing
-					i(241145),	-- Lucky Loa Lure
 					i(241147),	-- Blood Hunter Lure
 					i(241148),	-- Amani Angler's Ward
 					i(241149),	-- Ominous Octopus Lure
@@ -289,8 +288,6 @@ root(ROOTS.Unsorted, {
 					i(237498),	-- Glowing Resilient Seed
 					i(237499),	-- Wild Resilient Seed
 					i(237500),	-- Primal Resilient Seed
-					i(238388),	-- Imbued Mulch
-					i(238389),	-- Empowered Mulch
 
 					-- Prof Knoweldge
 					i(238467),	-- Thalassian Phoenix Ember
@@ -315,10 +312,6 @@ root(ROOTS.Unsorted, {
 					i(245811),	-- Transcribe: Rot
 					i(245812),	-- Transcribe: Hunt
 					i(245813),	-- Transcribe: Void
-				}),
-				prof(MINING, {
-					-- Mining knowledge
-						i(238597),	-- Spelunker's Lucky Charm
 				}),
 				prof(SKINNING, {
 					i(238512),	-- Void-Tempered Leather \\ Thalassian Leather
@@ -392,7 +385,6 @@ root(ROOTS.Unsorted, {
 				i(253012),	-- Set Keystone Map: Magisters' Terrace
 				i(253706),	-- Junk Mail
 				i(254874),	-- Glowing Moth Dust
-				i(255688),	-- Anchor of the Abyss
 				i(256342),	-- Griftah's Fool-Proof Embellishing Powder
 				i(258269),	-- [DNT] Tiny Pouch of Supplies
 				i(258270),	-- [DNT] Small Pouch of Supplies
@@ -558,7 +550,6 @@ root(ROOTS.Unsorted, {
 				i(251286),	-- Bundle of Petrified Roots
 				i(251287),	-- Generous Bundle of Petrified Roots
 				i(251970),	-- Overflowing Amani Trove
-				i(254677),	-- Apex Cache
 				i(256055),	-- Overflowing Hara'ti Trove
 				i(256142),	-- [DNT] TEMPLATE - 12.0 Max Level Campaign - Gear Box
 				i(257347),	-- [DNT] [PH] 12.0 Armor Box
@@ -569,7 +560,6 @@ root(ROOTS.Unsorted, {
 				i(263433),	-- Overflowing Silvermoon Trove
 				i(263465),	-- Surplus Bag of Party Favors
 				i(263466),	-- Overflowing Abundant Satchel
-				i(263467),	-- Avid Learner's Supply Pack
 				i(263468),	-- Stormarion Spoils
 				i(264274),	-- Fabled Adventurer's Cache
 				i(264972),	-- Voidstorm Victuals
@@ -578,17 +568,6 @@ root(ROOTS.Unsorted, {
 				i(267299),	-- Slayer's Duellum Trove
 
 				-- Food
-				i(260267),	-- Steamed Hexx'alor Lobster \\ Food 80 01
-				i(260268),	-- Pango and Mash \\ Food 80 02
-				i(260269),	-- Jerk Boar Jerky \\ Food 85 01
-				i(260270),	-- Bog Legs \\ Food 85 02
-				i(260271),	-- Root Juice \\ Drink 80 01
-				i(260272),	-- Crisp Bluff Bock \\ Drink 80 02
-				i(260273),	-- Tea of Mists and Rain \\ Drink 85 01
-				i(260274),	-- Denshroom Deep Roast \\ Drink 85 02
-				i(260275),	-- Mukleech Curry \\ Food/Drink 90 01
-				i(260276),	-- Akil'stew \\ Food/Drink 90 02
-				i(260277),	-- Sedge Crawler Gumbo \\ Food/Drink 90 03
 				i(260278),	-- Potatoad Salad \\ Food 80 01
 				i(260279),	-- Lightbloomin' Onion \\ Food 80 02
 				i(260280),	-- Sauteed Fungal Tubers \\ Food 85 01
@@ -710,7 +689,6 @@ root(ROOTS.Unsorted, {
 				i(248931),	-- Tarnished Vilebranch Coin
 				i(249387),	-- Latent Shadowgraft
 				i(249401),	-- Vial of Gelatinous Ooze
-				i(249406),	-- Gorebarb's Pincers
 				i(249407),	-- Harvested Lightwood
 				i(249414),	-- Feelings Journal
 				i(249418),	-- Lightblooming Bulb
@@ -1277,7 +1255,6 @@ root(ROOTS.Unsorted, {
 				i(265739),	-- Amani Heartstring Pendant
 				i(265740),	-- Amani Totemstring
 				-- Trinket
-				i(264507),	-- Crucible of Erratic Energies
 				i(264878),	-- Astalor's Anguish Agitator
 				i(265657),	-- Fiber of Living Agony
 				-- Trinket
@@ -1596,29 +1573,17 @@ root(ROOTS.Unsorted, {
 				i(258742),	-- Scroll of the Adherent
 			}),
 			n(RARES, {
-				i(264544),	-- Grounded Death Cap
 				i(264548),	-- Sash of Cosmic Tranquility
 				i(264557),	-- Borerplate Pauldrons
-				i(264561),	-- Primal Bonestompers
-				i(264567),	-- Rockscale Hood
-				i(264571),	-- Ironleaf Wristguards
-				i(264577),	-- Crystalforged Boots
 				i(264581),	-- Bloombark Spaulders
 				i(264582),	-- Diamondback-Scale Legguards
 				i(264586),	-- Crustacean Carapace Chestguard
-				i(264588),	-- Shawl of Cosmic Whispers
-				i(264599),	-- Kul'Tiran Signet Ring
 				i(264604),	-- Sludgy Verdant Signet
 				i(264605),	-- Choker of Unyielding Winds
-				i(264607),	-- Spore-Laden Choker
 				i(264625),	-- Gale Force Focus
-				i(264628),	-- Spear of Nothingness
 				i(264634),	-- Spire of Flowing Void
-				i(264637),	-- Cosmic Hunter's Glaive
 				i(264641),	-- Sharpened Skullcleaver
 				i(264643),	-- Ash'an's Spare Cleaver
-				i(264646),	-- Specimen Sinew Longbow
-				i(264649),	-- Mindrot Claw-Hammer
 			}),
 		})),
 	}),
@@ -1811,7 +1776,6 @@ root(ROOTS.Unsorted, {
 				i(260379),	-- Black Wooden Shortbow
 				i(260380),	-- Blue Wooden Shortbow
 				i(260381),	-- Bronze Wooden Shortbow
-				i(260382),	-- Dark Wooden Shortbow
 				i(260383),	-- Dark Blue Wooden Shortbow
 				i(260384),	-- Dark Red Wooden Shortbow
 				i(260385),	-- Frost Wooden Shortbow

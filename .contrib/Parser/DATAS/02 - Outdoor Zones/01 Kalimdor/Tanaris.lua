@@ -1053,6 +1053,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179496, {	-- Dented Footlocker
+					["coord"] = { 72.6, 45.4, TANARIS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 225,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					n(8736, {	-- Buzzek Bracketswing <Engineering Trainer>

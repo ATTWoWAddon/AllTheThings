@@ -144,8 +144,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(242034, {	-- Voidtouched Crustacean
-				["coord"] = { 21.5, 70.7, MAP.MIDNIGHT.ZULAMAN },
-				--["questID"] = 89580,	-- TODO: Blizzard bug - share questID with Waverly rare
+				["crs"] = {
+					246074,	-- Voidtouched Hatchling
+					249712,	-- Zo'gosh
+				},
+				["coord"] = { 21.4, 70.6, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89581,
 				["groups"] = {
 					i(264564),	-- Crab Wrangling Harness
 				},
@@ -197,8 +201,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94697, {	-- Weekly reputation: The Snapping Scourge
 					["name"] = "The Snapping Scourge weekly reputation obtained.",
 				}),
-				q(94704, {	-- Weekly reputation: Tiny Vermin	-- TODO: Blizzard bug -- could also share questID with Waverly too
-					["name"] = "Tiny Vermin weekly reputation obtained.",
+				--q(94704, {	-- Weekly reputation: Tiny Vermin	-- TODO: Blizzard bug -- could also share questID with Waverly too
+				--	["name"] = "Tiny Vermin weekly reputation obtained.",
+				--}),
+				q(94705, {	-- Weekly reputation: Voidtouched Crustacean
+					["name"] = "Voidtouched Crustacean weekly reputation obtained.",
 				}),
 			}),
 		}),

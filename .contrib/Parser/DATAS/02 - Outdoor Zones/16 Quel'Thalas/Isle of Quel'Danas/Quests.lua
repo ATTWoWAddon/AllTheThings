@@ -229,7 +229,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				-- During questing
 				q(92714),	-- Flag Midnight Promotional (spellID 1257590), after turning in 'Paved in Ash' (86735)
-				q(95535),	-- Triggered after turning in 'Paved in Ash' (86735)
+				--q(95535),	-- Triggered after turning in 'Paved in Ash' (86735) / Alex TODO: possible whatever rng was happening on build and not related here, remove this if it is for it. Double up in Prey.lua
 				q(83817),	-- Triggered after turning in 'Silvermoon Negotiations' (86733)
 			}),
 		}),

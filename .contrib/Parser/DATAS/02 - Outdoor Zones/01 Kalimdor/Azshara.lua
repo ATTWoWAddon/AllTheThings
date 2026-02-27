@@ -161,6 +161,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179497, {	-- Mossy Footlocker
+					["coords"] = {
+						{ 49.6, 37.2, AZSHARA },
+						{ 59.8, 73.5, AZSHARA },
+						{ 80.3, 36.3, AZSHARA },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 225,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(7866, {	-- Peter Galen <Master Dragonscale Leatherworker>

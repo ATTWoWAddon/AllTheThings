@@ -97,6 +97,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179493, {	-- Mossy Footlocker
+					["coords"] = {
+						{ 69.1, 44.6, SWAMP_OF_SORROWS },
+						{ 65.2, 55.8, SWAMP_OF_SORROWS },
+						{ 74.0, 60.4, SWAMP_OF_SORROWS },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 175,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66518, {	-- Everessa <Master Pet Tamer>
 					["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },

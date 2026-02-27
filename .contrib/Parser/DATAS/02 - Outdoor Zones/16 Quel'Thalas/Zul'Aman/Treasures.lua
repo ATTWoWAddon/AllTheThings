@@ -25,11 +25,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			o(539049, {	-- Bait and Tackle
-				["coord"] = { 21.1, 67.0, MAP.MIDNIGHT.ZULAMAN },
+				["coord"] = { 20.8, 66.5, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 90795,
+				["groups"] = {
+					i(241145),	-- Lucky Loa Lure
+					i(255157),	-- Abyss Angler's Fish Log
+				},
 			}),
 			o(539050, {	-- Burrow Bounty
-				["coord"] = { 21.1, 67.0, MAP.MIDNIGHT.ZULAMAN },
+				["coord"] = { 42.0, 47.8, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 90796,
 				["groups"] = {
 					i(254749),	-- Phial of Burrow Balm
@@ -39,27 +43,31 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 46.8, 81.9, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 93560,
 				["groups"] = {
-					n(255231, {	-- Akil'zon's Chosen
-						["coord"] = { 51.2, 84.9, MAP.MIDNIGHT.ZULAMAN },
+					o(613758, {	-- Honored Warrior's Urn
+						["coord"] = { 51.6, 84.9, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
+							n(255231),	-- Akil'zon's Chosen
 							i(259221),	-- Eagle Talon
 						},
 					}),
-					n(255232, {	-- Halazzi's Chosen
+					o(613760, {	-- Honored Warrior's Urn
 						["coord"] = { 34.5, 33.5, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
+							n(255232),	-- Halazzi's Chosen
 							i(259223),	-- Lynx Claw
 						},
 					}),
-					n(255233, {	-- Jan'alai's Chosen
+					o(613757, {	-- Honored Warrior's Urn
 						["coord"] = { 54.8, 22.4, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
+							n(255233),	-- Jan'alai's Chosen
 							i(259220),	-- Dragonhawk Feather
 						},
 					}),
-					n(255171, {	-- Nalorakk's Chosen
+					o(613701, {	-- Honored Warrior's Urn
 						["coord"] = { 32.7, 83.5, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
+							n(255171),	-- Nalorakk's Chosen
 							i(259219),	-- Bear Tooth
 						},
 					}),
@@ -69,11 +77,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["sourceQuests"] = { 93560 },	-- Start Honored Warrior
 				["coord"] = { 46.8, 81.9, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 90793,
-				["providers"] = {
-					{ "i", 259219 },	-- Bear Tooth
-					{ "i", 259220 },	-- Dragonhawk Feather
-					{ "i", 259221 },	-- Eagle Talon
-					{ "i", 259223 },	-- Lynx Claw
+				["cost"] = {
+					{ "i", 259219, 1 },	-- Bear Tooth
+					{ "i", 259220, 1 },	-- Dragonhawk Feather
+					{ "i", 259221, 1 },	-- Eagle Talon
+					{ "i", 259223, 1 },	-- Lynx Claw
 				},
 				["groups"] = {
 					i(257223),	-- Ancestral War Bear (MOUNT!)
@@ -87,10 +95,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(255428),	-- Tolbani's Medicine Satchel
 				},
 			}),
-			--o(539042, {	-- Ruz'avalt's Prized Tackle	-- TODO: Blizzard bug - unable to interact with it
-			--	["coord"] = { X, Y, MAP.MIDNIGHT.ZULAMAN },
-			--	["questID"] = ?????,
-			--}),
+			o(539042, {	-- Ruz'avalt's Prized Tackle	-- TODO: Blizzard bug - unable to interact with it
+				["coord"] = { 44.3, 56.2, MAP.MIDNIGHT.ZULAMAN },
+				--["questID"] = ?????,
+			}),
 			o(539052, {	-- Secret Formula
 				["coord"] = { 40.5, 36.0, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 90798,
@@ -107,12 +115,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					iensemble(265362),	-- Arsenal: Twilight Blade
 				},
 			}),
-			o(582179, {	-- Twilight Ordinance
-				["coord"] = { 25.4, 64.2, MAP.MIDNIGHT.ZULAMAN },
-				--["questID"] = XXXX,
-			}),
 			--Lore
-			o(555480, {	-- Inscribed Oar
+			o(555480, {	-- Inscribed Oar Alex TODO: not here for 90s templates, so either have sourceQuests or not here anymore
 				["coord"] = { 45.7, 70.2, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 91395,
 			}),
@@ -156,6 +160,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			o(583971, {	-- Stonewash Supplies
+				["groups"] = {
+					--share Forgotten Amani Cache
+				},
+			}),
+			o(582179, {	-- Twilight Ordinance
 				["groups"] = {
 					--share Forgotten Amani Cache
 				},

@@ -192,6 +192,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179487, {	-- Waterlogged Footlocker
+					["coord"] = { 13.8, 24.7, ASHENVALE },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 70,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66136, {	-- Analynn <Master Pet Tamer>
 					["coord"] = { 20.2, 29.6, ASHENVALE },

@@ -293,6 +293,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179494, {	-- Dented Footlocker
+					["coords"] = {
+						{ 45.9, 28.3, SEARING_GORGE },
+						{ 37.0, 39.8, SEARING_GORGE },
+						{ 48.5, 43.1, SEARING_GORGE },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 200,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66515, {	-- Kortas Darkhammer <Master Pet Tamer>
 					["coord"] = { 35.4, 27.8, SEARING_GORGE },

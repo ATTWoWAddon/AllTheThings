@@ -196,8 +196,15 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				header(HEADERS.Spell, 1810,	 {	-- Lockpicking
-					o(184740),	-- Wicker Chest
+				lockpicking({
+					o(184740, {	-- Wicker Chest
+						["coords"] = {
+							{ 42.5, 63.5, ZANGARMARSH },
+							{ 48.9, 61.7, ZANGARMARSH },
+						},
+						["requireSkill"] = LOCKPICKING,
+						["learnedAt"] = 300,
+					}),
 				}),
 				petbattles({
 					n(66551, {	-- Ras'an <Master Pet Tamer>

@@ -24,7 +24,7 @@ local AllCaches = setmetatable({}, {
 			currentCache = oldCache;
 		end
 		setmetatable(cache, app.MetaTable.AutoTableOfTables);
-		cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
+		cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate creatureID use eventually)
 		return cache;
 	end,
 });
@@ -834,6 +834,7 @@ fieldConverters.guildAchievementID = cacheAchievementID;
 end
 do	-- HeaderID Key Cache
 -- CRIEVE NOTE: I'm not sure if this one super necessary, maybe only for debugging?
+-- headerID is used by a small amount of symlinks as well currently
 local function cacheHeaderID(group, headerID)
 	CacheField(group, "headerID", headerID);
 end
@@ -913,7 +914,14 @@ do	-- Simple Key Cache
 -- ^(?=.*GetRawField)(?=.*artifactID).*$
 -- ^(?=.*SearchForObject)(?=.*artifactID).*$
 -- ^(?=.*CreateDynamicHeader)(?=.*artifactID).*$
+-- "select",\s?"artifactID"
 
+fieldConverters.catalystID = function(group, value)	-- Referenced in Modules/Catalyst
+	CacheField(group, "catalystID", value);
+end
+fieldConverters.professionID = function(group, value)	-- Used in Tooltips > Summarize Things (AddContainsData)
+	CacheField(group, "professionID", value);
+end
 fieldConverters.up = function(group, up)			-- Referenced in Modules/Upgrade
 	CacheField(group, "up", up);
 end
@@ -939,6 +947,17 @@ end
 fieldConverters.titleID = function(group, value)
 	CacheField(group, "titleID", value);
 end
+
+-- Used by tons of symlinks that I don't have time before expac to try and massage into using other search keys/symlinks
+-- encounterID is primarily used by World Bosses, but searching by NPCID doesn't match a field on the encounter since they use 'crs'
+-- and adjusting symlink logic to additionally do more checks would slow it down
+fieldConverters.encounterID = function(group, value)
+	CacheField(group, "encounterID", value);
+end
+-- expansionID is used by many items which are containers for expansion-wide content availability
+fieldConverters.expansionID = function(group, value)
+	CacheField(group, "expansionID", value);
+end
 end
 
 --[[
@@ -948,12 +967,6 @@ fieldConverters.achievementCategoryID = function(group, value)
 end
 fieldConverters.criteriaID = function(group, value)
 	CacheField(group, "criteriaID", value);
-end
-fieldConverters.encounterID = function(group, value)
-	CacheField(group, "encounterID", value);
-end
-fieldConverters.expansionID = function(group, value)
-	CacheField(group, "expansionID", value);
 end
 fieldConverters.heirloomUnlockID = function(group, value)
 	CacheField(group, "heirloomUnlockID", value);

@@ -48,7 +48,7 @@ local ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS = {
 	["timeline"] = REMOVED_WITH_RERELEASE,
 };
 local ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER = function(t)
-	 return not t.objectiveID;
+	return not t.objectiveID;
 end
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {

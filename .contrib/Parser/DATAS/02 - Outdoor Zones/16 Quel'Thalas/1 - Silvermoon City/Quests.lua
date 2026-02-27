@@ -86,6 +86,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
 			}, {
+				q(93752),	-- Murder Row
 				q(93758),	-- Nexus-Point Xenas
 				q(93757),	-- Voidscar Arena
 				q(93751),	-- Windrunner Spire
@@ -97,7 +98,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWeekly"] = true,
 			}, {
 				q(95413),	-- Community Engagement
+				q(95416),	-- Going Postal
 				q(95440),	-- Housewarming
+			})),
+			-- Unity Against the Void (unsure if worth separate file)
+			n(QUESTS, sharedData({
+				--["provider"] = { "n", 256203 },	-- Vaeli
+				["coord"] = { 49.0, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(254677),	-- Apex Cache
+					-- zone reward
+				},
+			}, {
+				q(93744),	-- Unity Against the Void (fire in addition to player choose quest)
+				q(93767),	-- Midnight: Arcantina
+				q(94457),	-- Midnight: Battlegrounds
+				q(93911),	-- Midnight: Dungeons
+				q(93910),	-- Midnight: Prey
+				q(93889),	-- Midnight: Saltheril's Soiree
+				q(93892),	-- Midnight: Stormarion Assault
+				q(93766),	-- Midnight: World Quests
 			})),
 		}),
 	}),
@@ -107,6 +128,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 			n(QUESTS, {
 				q(93067),	-- "Stay a while and listen" objectID 551501 (In Memoriam) @ 35.2, 70.3
+				q(93275),	-- after turn in Unity Against the Void weekly quest. Could also be spark lockout, idk.
+				q(93789),	-- Apex Cache (season 1) was opened / bpnus roll for something?
 				q(94419, {["timeline"]={ADDED_12_0_X_SEASONSTART,REMOVED_12_1_0}}),	-- player recieve 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 			}),
 		}),

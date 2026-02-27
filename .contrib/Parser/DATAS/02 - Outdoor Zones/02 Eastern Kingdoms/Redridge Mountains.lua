@@ -96,6 +96,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			lockpicking({
+				o(121264, {	-- Lucius's Lockbox
+					["coord"] = { 52.0, 44.9, REDRIDGE_MOUNTAINS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 25,
+					["groups"] = {
+						i(7871),	-- Token of Thievery
+					},
+				}),
+				-- #if BEFORE CATA
+				o(178244, {	-- Practice Lockbox
+					["coord"] = { 51.9, 45.0, REDRIDGE_MOUNTAINS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 1,
+				}),
+				-- #endif
+			}),
 			petbattles({
 				n(65651, {	-- Lindsay <Master Pet Tamer>
 					["coord"] = { 33.3, 52.6, REDRIDGE_MOUNTAINS },
@@ -224,7 +242,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Token of Thievery
 							["provider"] = { "i", 7871 },	-- Token of Thievery (QI!)
-							["coord"] = { 52.0, 44.8, REDRIDGE_MOUNTAINS },
 						}),
 						i(7907, {	-- Certificate of Thievery
 							["description"] = "This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",

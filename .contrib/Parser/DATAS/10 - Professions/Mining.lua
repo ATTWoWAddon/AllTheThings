@@ -1506,6 +1506,13 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					i(238603),	-- Spare Expedition Torch
 				},
 			}),
+			o(525912, {	-- Spelunker's Lucky Charm
+				["coord"] = { 42.0, 46.5, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89145,
+				["groups"] = {
+					i(238597),	-- Spelunker's Lucky Charm
+				},
+			}),
 			o(525907, {	-- Star Metal Deposit
 				["coord"] = { 41.8, 38.2, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 89150,
@@ -1515,7 +1522,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-			["isWeekly"] = true,	-- TODO: Blizzard bug, it is not
+			["isWeekly"] = true,
 			["groups"] = {
 				currency(MID_MINING_KNOWLEDGE),
 			},

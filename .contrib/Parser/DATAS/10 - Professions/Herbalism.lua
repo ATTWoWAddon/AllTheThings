@@ -1575,6 +1575,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		},{
 			q(93700),	-- Experience Tranquility
 			q(93702),	-- The Root of Life
+			q(93703),	-- Sin'dorei Vices
 		})),
 		--[[filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
@@ -1654,7 +1655,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-			["isWeekly"] = true,	-- TODO: Blizzard bug - it is not
+			["isWeekly"] = true,
 			["groups"] = {
 				currency(MID_HERBALISM_KNOWLEDGE),
 			},
@@ -1679,10 +1680,10 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				["name"] = "Midnight Weekly Herbalism Knowledgepoint #5",
 				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			--q(81421, {	-- Midnight Weekly Herbalism Knowledgepoint #6	-- TODO: Blizzard bug, it re-use TWW questID for it and only it is on weekly
-			--	["name"] = "Midnight Weekly Herbalism Knowledgepoint #6",
-			--	["provider"] = { "i", 238466 },	-- Thalassian Phoenix Tail
-			--}),
+			q(81430, {	-- Midnight Weekly Herbalism Knowledgepoint #6
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #6",
+				["provider"] = { "i", 238466 },	-- Thalassian Phoenix Tail
+			}),
 		})),
 	})),
 })));

@@ -28,6 +28,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
 					}, {	-- RENOWN 7 --
+						q(93933, {	-- Guarded Treasures
+							i(264507),	-- Crucible of Erratic Energies
+						}),
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
 					}, {	-- RENOWN 10 --

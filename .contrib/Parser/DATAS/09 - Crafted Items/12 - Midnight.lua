@@ -235,9 +235,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(242749),	-- Hearty Crimson Calamari
 		i(242764),	-- Hearty Eversong Pudding
 		i(242776),	-- Hearty Farstrider Rations
+		i(228721),	-- Hearty Feast
 		i(242758),	-- Hearty Fel-Kissed Filet
 		i(242766),	-- Hearty Felberry Figs
 		i(267000),	-- Hearty Flora Frenzy
+		i(222693),	-- Hearty Food
 		i(242773),	-- Hearty Forager's Medley
 		i(242763),	-- Hearty Fried Bloomtail
 		i(242753),	-- Hearty Glitter Skewers
@@ -748,14 +750,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r(1223146),	-- Lush Argentleaf
 			r(1224887),	-- Primal Argentleaf
 			r(1224897),	-- Voidbound Argentleaf
-			--r(),	-- Wild Argentleaf
+			r(1224892),	-- Wild Argentleaf
 			-- Section V - Mana Lily
 			r(1223139),	-- Mana Lily
 			r(1224884),	-- Lightfused Mana Lily
 			r(1223149),	-- Lush Mana Lily
 			r(1224889),	-- Primal Mana Lily
 			r(1224899),	-- Voidbound Mana Lily
-			--r(),	-- Wild Mana Lily
+			r(12244894),	-- Wild Mana Lily
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = HERBALISM,
@@ -783,19 +785,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(87748, 1223146),	-- Lush Argentleaf
 			FirstCraft(87751, 1224887),	-- Primal Argentleaf
 			FirstCraft(87752, 1224897),	-- Voidbound Argentleaf
-			--FirstCraft(XXXXX, YYYYYYY),	-- Wild Argentleaf
+			FirstCraft(87750, 1224892),	-- Wild Argentleaf
 			FirstCraft(87753, 1223139),	-- Mana Lily
 			FirstCraft(87755, 1224884),	-- Lightfused Mana Lily
 			FirstCraft(87754, 1223149),	-- Lush Mana Lily
 			FirstCraft(87757, 1224889),	-- Primal Mana Lily
 			FirstCraft(87758, 1224899),	-- Voidbound Mana Lily
-			--FirstCraft(XXXXX, YYYYYYY),	-- Wild Mana Lily
+			FirstCraft(87756, 12244894),	-- Wild Mana Lily
 		})),
 		i(236776),	-- Argentleaf+
 		i(236777),	-- Argentleaf++
 		i(236774),	-- Azeroot+
 		i(236775),	-- Azeroot++
 		i(237507),	-- Cloudy Quartz
+		i(238389),	-- Empowered Mulch
+		i(238388),	-- Imbued Mulch
 		i(238387),	-- Magical Mulch
 		i(236778),	-- Mana Lily+
 		i(236779),	-- Mana Lily++
@@ -807,7 +811,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238466),	-- Thalassian Phoenix Tail
 		i(236761),	-- Tranquility Bloom+
 		i(236767),	-- Tranquility Bloom++
-
 	}),
 	prof(INSCRIPTION, {
 		n(DISCOVERY, {

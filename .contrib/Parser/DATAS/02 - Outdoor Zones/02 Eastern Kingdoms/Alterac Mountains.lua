@@ -44,6 +44,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maxReputation"] = { FACTION_SYNDICATE, NEUTRAL },	-- Syndicate, Neutral.
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(105570, {	-- Alliance Strongbox
+					["coords"] = {
+						{ 21.4, 62.3, ALTERAC_MOUNTAINS },
+						{ 12.6, 79.4, ALTERAC_MOUNTAINS },
+					},
+					["races"] = HORDE_ONLY,
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 70,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(214212, {	-- Shadowy Figure

@@ -2270,66 +2270,63 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(203723, {	-- Cutty's Note
-						["coords"] = {
-							{ 57.4, 48.6, ELWYNN_FOREST },
-							{ 71.0, 80.6, ELWYNN_FOREST },
-						},
-						["timeline"] = { REMOVED_2_0_1 },
-						["maps"] = { NORTHSHIRE_VALLEY },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							103,	-- Garrick Padfoot
-							473,	-- Morgan the Collector
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203750, {	-- Elwynn Treasure Map
-						["timeline"] = { REMOVED_2_0_1 },
-						["cost"] = {
-							{ "i", 203787, 1 },	-- Bottom-Left Map Piece
-							{ "i", 203786, 1 },	-- Bottom-Right Map Piece
-							{ "i", 203785, 1 },	-- Top-Left Map Piece
-							{ "i", 203784, 1 },	-- Top-Right Map Piece
-						},
-						["classes"] = { ROGUE },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203787, {	-- Bottom-Left Map Piece
-						["coord"] = { 26.2, 88.6, ELWYNN_FOREST },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 478,	-- Riverpaw Outrunner
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203786, {	-- Bottom-Right Map Piece
-						["coord"] = { 79.2, 57.4, ELWYNN_FOREST },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 46,	-- Murloc Forager
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203785, {	-- Top-Left Map Piece
-						["coord"] = { 68.8, 78.6, ELWYNN_FOREST },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							6866,	-- Defias Bodyguard
-							116,	-- Defias Bandit
-							 38,	-- Defias Thug
-							474,	-- Defias Rogue Wizard
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203784, {	-- Top-Right Map Piece
-						["coord"] = { 39.3, 80.4, ELWYNN_FOREST },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							 40,	-- Kobold Miner
-							475,	-- Kobold Tunneler
-							257,	-- Kobold Worker
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(203723, {	-- Cutty's Note
+					["coords"] = {
+						{ 57.4, 48.6, ELWYNN_FOREST },
+						{ 71.0, 80.6, ELWYNN_FOREST },
+					},
+					["timeline"] = { REMOVED_2_0_1 },
+					["maps"] = { NORTHSHIRE_VALLEY },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						103,	-- Garrick Padfoot
+						473,	-- Morgan the Collector
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203750, {	-- Elwynn Treasure Map
+					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = {
+						{ "i", 203787, 1 },	-- Bottom-Left Map Piece
+						{ "i", 203786, 1 },	-- Bottom-Right Map Piece
+						{ "i", 203785, 1 },	-- Top-Left Map Piece
+						{ "i", 203784, 1 },	-- Top-Right Map Piece
+					},
+					["classes"] = { ROGUE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203787, {	-- Bottom-Left Map Piece
+					["coord"] = { 26.2, 88.6, ELWYNN_FOREST },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 478,	-- Riverpaw Outrunner
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203786, {	-- Bottom-Right Map Piece
+					["coord"] = { 79.2, 57.4, ELWYNN_FOREST },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 46,	-- Murloc Forager
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203785, {	-- Top-Left Map Piece
+					["coord"] = { 68.8, 78.6, ELWYNN_FOREST },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						6866,	-- Defias Bodyguard
+						116,	-- Defias Bandit
+						 38,	-- Defias Thug
+						474,	-- Defias Rogue Wizard
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203784, {	-- Top-Right Map Piece
+					["coord"] = { 39.3, 80.4, ELWYNN_FOREST },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						 40,	-- Kobold Miner
+						475,	-- Kobold Tunneler
+						257,	-- Kobold Worker
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {

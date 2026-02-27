@@ -179,7 +179,6 @@ local function AddContainsData(group, tooltipInfo)
 		local left, right;
 		tinsert(tooltipInfo, { left = L.CONTAINS });
 		local item, entry;
-		local RecursiveParentField = app.GetRelativeValue
 		for i=1,#entries do
 			item = entries[i];
 			entry = item.group;
@@ -237,8 +236,8 @@ local function AddContainsData(group, tooltipInfo)
 				-- Add the Zone name
 				local field, id;
 				for _,v in ipairs(TooltipSourceFields) do
-					id = RecursiveParentField(entry, v, true);
-					-- print("check",v,id)
+					id = GetRelativeValue(entry, v, true);
+					-- app.PrintDebug("check",v,id)
 					if id then
 						field = v;
 						break;
@@ -945,7 +944,7 @@ local function BuildSourceParent(group)
 	local thingCheck = thingKeys[groupKey];
 	local specificSource = SpecificSources[groupKey]
 	if specificSource then
-		 specificSource = specificSource[group[groupKey]];
+		specificSource = specificSource[group[groupKey]];
 	end
 	-- group with some Source-able data can be treated as specific Source
 	if not specificSource and (
@@ -1238,7 +1237,7 @@ function app:GetDatabaseRoot()
 			rawset(t, key, val);
 		end
 	});
-	
+
 	-- Build the Categories and assign them to temporary tables.
 	local AllCategories, AllHiddenCategories = {}, {};
 	app.HandleEvent("OnBuildHiddenDataCache", AllHiddenCategories);
@@ -1254,7 +1253,7 @@ function app:GetDatabaseRoot()
 		--print("Found Hidden Category:", key);
 		category.RootCategory = key;
 	end
-	
+
 	-- app.PrintMemoryUsage()
 	-- app.PrintDebug("Begin Cache Prime")
 	app.AssignChildren(rootData);
@@ -1666,7 +1665,7 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 
 	-- Initialize Settings
 	app.Settings:Initialize();
-	
+
 	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
 	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
 

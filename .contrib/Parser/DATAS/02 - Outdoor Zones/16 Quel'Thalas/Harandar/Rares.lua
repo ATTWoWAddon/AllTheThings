@@ -40,12 +40,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92194,
 				["groups"] = {
 					i(264614),	-- Fungal Cap Guard
+					i(264607),	-- Spore-Laden Choker
 				},
 			}),
 			n(249844, {	-- Chironex
 				["coord"] = { 68.5, 40.6, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92137,
 				["groups"] = {
+					i(264544),	-- Grounded Death Cap
 					i(264538),	-- Translucent Membrane Slippers
 				},
 			}),
@@ -78,6 +80,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92172,
 				["groups"] = {
 					i(264550),	-- Fungal Stalker's Stockings
+					i(264649),	-- Mindrot Claw-Hammer
 					i(251782),	-- Withered Saptor's Paw (midnight zone reward)
 				},
 			}),
@@ -93,6 +96,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 27.2, 70.2, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92191,
 				["groups"] = {
+					i(264567),	-- Rockscale Hood
 					i(264576),	-- Slatescale Grips
 				},
 			}),
@@ -100,6 +104,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 60.0, 46.6, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92154,
 				["groups"] = {
+					i(264571),	-- Ironleaf Wristguards
 					i(264566),	-- Lashtongue's Leaffroggers
 				},
 			}),

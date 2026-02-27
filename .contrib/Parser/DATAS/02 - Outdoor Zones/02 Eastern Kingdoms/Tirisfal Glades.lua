@@ -1075,7 +1075,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if AFTER 10.1.7
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
+			pickpocketing({
 				i(3330, {	-- Dargol's Hauberk
 					["description"] = "Can be pickpocketed from Captain Dargol.",
 					["coords"] = {
@@ -1083,106 +1083,103 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 52.4, 26.6, TIRISFAL_GLADES },
 					},
 					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
-					-- ["cr"] = 1658,	-- Captain Dargol
+					["cr"] = 1658,	-- Captain Dargol
 				}),
 			}),
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(208005, {	-- Agamand Relic Coffer Key
-						["coords"] = {
-							{ 58.8, 38.2, TIRISFAL_GLADES },
-							{ 53.0, 28.8, TIRISFAL_GLADES },
-							{ 46.0, 30.6, TIRISFAL_GLADES },
-							{ 52.8, 56.8, TIRISFAL_GLADES },
-						},
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1674,	-- Rot Hide Gnoll
-							1534,	-- Wailing Ancestor
-							1523,	-- Cracked Skull Soldier
-							1522,	-- Darkeye Bonecaster
-							1526,	-- Ravaged Corpse
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208085, {	-- Scarlet Lieutenant Signet Ring
-						["coords"] = {
-							{ 51.8, 67.4, TIRISFAL_GLADES },
-							{ 79.0, 26.0, TIRISFAL_GLADES },
-						},
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1662,	-- Captain Perrine
-							1665,	-- Captain Melrache
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208007, {	-- Shipwreck Cache Key
-						["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1545,	-- Vile Fin Muckdweller
-							1543,	-- Vile Fin Puddlejumper
-							1544,	-- Vile Fin Minor Oracle
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208034, {	-- Tirisfal Treasure Map
-						["timeline"] = { REMOVED_2_0_1 },
-						["cost"] = {
-							{ "i", 208038, 1 },	-- Bottom-Left Map Piece
-							{ "i", 208037, 1 },	-- Bottom-Right Map Piece
-							{ "i", 208036, 1 },	-- Top-Left Map Piece
-							{ "i", 208035, 1 },	-- Top-Right Map Piece
-						},
-						["classes"] = { ROGUE },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208038, {	-- Bottom-Left Map Piece
-						["coord"] = { 56.6, 44.4, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1941,	-- Rot Hide Graverobber
-							1675,	-- Rot Hide Mongrel
-							1674,	-- Rot Hide Gnoll
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208037, {	-- Bottom-Right Map Piece
-						["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1545,	-- Vile Fin Muckdweller
-							1543,	-- Vile Fin Puddlejumper
-							1544,	-- Vile Fin Minor Oracle
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208036, {	-- Top-Left Map Piece
-						["coord"] = { 37.4, 49.2, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1935,	-- Tirisfal Farmhand
-							1934,	-- Tirisfal Farmer
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208035, {	-- Top-Right Map Piece
-						["coord"] = { 32.8, 50.4, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1535,	-- Scarlet Warrior
-							1536,	-- Scarlet Missionary
-							1538,	-- Scarlet Friar
-							1540,	-- Scarlet Vanguard
-							1537,	-- Scarlet Zealot
-							1539,	-- Scarlet Neophyte
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(208005, {	-- Agamand Relic Coffer Key
+					["coords"] = {
+						{ 58.8, 38.2, TIRISFAL_GLADES },
+						{ 53.0, 28.8, TIRISFAL_GLADES },
+						{ 46.0, 30.6, TIRISFAL_GLADES },
+						{ 52.8, 56.8, TIRISFAL_GLADES },
+					},
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1674,	-- Rot Hide Gnoll
+						1534,	-- Wailing Ancestor
+						1523,	-- Cracked Skull Soldier
+						1522,	-- Darkeye Bonecaster
+						1526,	-- Ravaged Corpse
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208085, {	-- Scarlet Lieutenant Signet Ring
+					["coords"] = {
+						{ 51.8, 67.4, TIRISFAL_GLADES },
+						{ 79.0, 26.0, TIRISFAL_GLADES },
+					},
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1662,	-- Captain Perrine
+						1665,	-- Captain Melrache
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208007, {	-- Shipwreck Cache Key
+					["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1545,	-- Vile Fin Muckdweller
+						1543,	-- Vile Fin Puddlejumper
+						1544,	-- Vile Fin Minor Oracle
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208034, {	-- Tirisfal Treasure Map
+					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = {
+						{ "i", 208038, 1 },	-- Bottom-Left Map Piece
+						{ "i", 208037, 1 },	-- Bottom-Right Map Piece
+						{ "i", 208036, 1 },	-- Top-Left Map Piece
+						{ "i", 208035, 1 },	-- Top-Right Map Piece
+					},
+					["classes"] = { ROGUE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208038, {	-- Bottom-Left Map Piece
+					["coord"] = { 56.6, 44.4, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1941,	-- Rot Hide Graverobber
+						1675,	-- Rot Hide Mongrel
+						1674,	-- Rot Hide Gnoll
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208037, {	-- Bottom-Right Map Piece
+					["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1545,	-- Vile Fin Muckdweller
+						1543,	-- Vile Fin Puddlejumper
+						1544,	-- Vile Fin Minor Oracle
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208036, {	-- Top-Left Map Piece
+					["coord"] = { 37.4, 49.2, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1935,	-- Tirisfal Farmhand
+						1934,	-- Tirisfal Farmer
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208035, {	-- Top-Right Map Piece
+					["coord"] = { 32.8, 50.4, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1535,	-- Scarlet Warrior
+						1536,	-- Scarlet Missionary
+						1538,	-- Scarlet Friar
+						1540,	-- Scarlet Vanguard
+						1537,	-- Scarlet Zealot
+						1539,	-- Scarlet Neophyte
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {

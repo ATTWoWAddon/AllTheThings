@@ -8,8 +8,8 @@ local _, app = ...;
 -- Encapsulates the functionality concerning consistent and complex operations on Lua Tables
 
 -- Global locals
-local ipairs, pairs, select, table_concat
-	= ipairs, pairs, select, table.concat;
+local pairs, select, table_concat,next
+	= pairs, select, table.concat,next
 
 -- App locals
 
@@ -30,7 +30,7 @@ app.containsAny = function(arr, arr2)
 	end
 end
 app.containsValue = function(dict, value)
-	for _,value2 in pairs(dict) do
+	for _,value2 in next,dict do
 		if value2 == value then return true; end
 	end
 end
@@ -122,14 +122,14 @@ app.TableKeyDiff = function(a,b)
 		return
 	end
     -- Check keys in a that are missing in b
-    for k in pairs(a) do
+    for k in next,a do
         if not b[k] then
             return true
         end
     end
 
     -- Check keys in b that are missing in a
-    for k in pairs(b) do
+    for k in next,b do
         if not a[k] then
             return true
         end

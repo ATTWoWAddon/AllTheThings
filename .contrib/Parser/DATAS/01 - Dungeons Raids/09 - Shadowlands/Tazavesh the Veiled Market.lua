@@ -216,7 +216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					}),
 				},
 			}),
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
+			pickpocketing({
 				i(186161),	-- Stygian Lockbox
 			}),
 			-- #if AFTER 9.2.0

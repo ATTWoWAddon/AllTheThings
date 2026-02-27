@@ -121,19 +121,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
-						["coord"] = { 23.3, 72.8, DUSKWOOD },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							215,	-- Defias Night Runner
-							909,	-- Defias Night Blade
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
+					["coord"] = { 23.3, 72.8, DUSKWOOD },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						215,	-- Defias Night Runner
+						909,	-- Defias Night Blade
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {
@@ -254,10 +251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(325, {	-- Armed and Ready
 					["sourceQuest"] = 322,	-- Blessed Arm
-					["providers"] = {
-						{ "n", 1416 },	-- Grimand Elmore
-						{ "i", 7297 },	-- Morbent's Bane
-					},
+					["qg"] = 1416,	-- Grimand Elmore
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -528,6 +522,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
+						objective(1, {	-- 0/15 Pygmy Venom Web Spider slain
+							["provider"] = { "n", 539 },	-- Pygmy Venom Web Spider
+							["coords"] = {
+								{ 90.8, 16.0, DUSKWOOD },
+								{ 52.0, 12.4, DUSKWOOD },
+								{ 27.8, 29.2, DUSKWOOD },
+								{ 13.0, 28.4, DUSKWOOD },
+								{  9.4, 39.8, DUSKWOOD },
+								{ 13.0, 70.6, DUSKWOOD },
+							},
+						}),
 						i(3559, {	-- Night Watch Gauntlets
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -2823,7 +2828,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						-- #if AFTER 10.1.7
-						 48,	-- Skeletal Warrior
+						48,	-- Skeletal Warrior
 						-- #else
 						1110,	-- Skeletal Raider
 						-- #endif

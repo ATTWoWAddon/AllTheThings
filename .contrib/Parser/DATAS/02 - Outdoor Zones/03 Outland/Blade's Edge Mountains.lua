@@ -540,13 +540,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10810, {	-- Damaged Mask
-						["sourceQuest"] = 10753,	-- Culling the Wild
-						["provider"] = { "i", 31384 },	-- Damaged Mask
+						--["sourceQuest"] = 10753,	-- Culling the Wild	// Exo Note: Dunno which quest is preReq, but this one isn't
+						["provider"] = { "i", 31384 },	-- Damaged Mask (QS!)
+						["coord"] = { 71.8, 40.9, BLADES_EDGE_MOUNTAINS },	-- Area where QS! can be looted
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
 					q(10910, {	-- Death's Door
 						["sourceQuest"] = 10821,	-- You're Fired!
-						["qg"] = 22127,	-- Wildlord Antelarion
+						["providers"] = {
+							{ "n", 22127 },	-- Wildlord Antelarion
+							{ "i", 31763 },	-- Druid Signal (PQI!)
+						},
 						["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
@@ -653,11 +657,32 @@ root(ROOTS.Zones, {
 						["qg"] = 22127,	-- Wildlord Antelarion
 						["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(65, 65, 20),
+						["groups"] = {
+							i(31366, {	-- Felsworn Gas Mask (PQI!)
+								["collectible"] = false,
+							}),
+						},
 					}),
 					q(10911, {	-- Fire At Will!
+						["description"] = "Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",
 						["sourceQuest"] = 10904,	-- Harvesting the Fel Ammunition
 						["qg"] = 22423,	-- Evergrove Druid
+						["coord"] = { 63.5, 35.5, BLADES_EDGE_MOUNTAINS },	-- Location of the "?" on the mini-map
 						["lvl"] = lvlsquish(65, 65, 20),
+						["groups"] = {
+							objective(1, {	-- 0/1 South Warp-Gate Destroyed
+								["providers"] = {
+									{ "i", 31807 },	-- Naturalized Ammunition (PQI!)
+									{ "n", 22443 },	-- Death's Door Fel Cannon
+								},
+							}),
+							objective(2, {	-- 0/1 North Warp-Gate Destroyed
+								["providers"] = {
+									{ "i", 31807 },	-- Naturalized Ammunition (PQI!)
+									{ "n", 51612 },	-- Death's Door Fel Cannon
+								},
+							}),
+						},
 					}),
 					q(10581, {	-- Follow the Breadcrumbs
 						["sourceQuest"] = 10580,	-- Where Did Those Darn Gnomes Go?
@@ -695,7 +720,10 @@ root(ROOTS.Zones, {
 					}),
 					q(10594, {	-- Gauging the Resonant Frequency
 						["sourceQuest"] = 10608,	-- Crystal Clear
-						["qg"] = 21755,	-- Nickwinkle the Metro-Gnome
+						["providers"] = {
+							{ "n", 21755 },	-- Nickwinkle the Metro-Gnome
+							{ "i", 30701 },	-- Oscillating Frequency Scanners (PQI!)
+						},
 						["coord"] = { 60.2, 68.9, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
@@ -840,9 +868,22 @@ root(ROOTS.Zones, {
 						},
 					})),
 					q(10904, {	-- Harvesting the Fel Ammunition
+						["description"] = "Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",
 						["sourceQuest"] = 10910,	-- Death's Door
 						["qg"] = 22423,	-- Evergrove Druid
+						["coord"] = { 63.5, 35.5, BLADES_EDGE_MOUNTAINS },	-- Location of the "?" on the mini-map
 						["lvl"] = lvlsquish(65, 65, 20),
+						["groups"] = {
+							objective(1, {	-- 0/5 Fel Cannonball
+								["provider"] = { "i", 31757 },	-- Fel Cannonball
+								["crs"] = {
+									19978,	-- Deathforge Over-Smith
+									19979,	-- Deathforge Technician
+									21516,	-- Death's Watch
+									21519,	-- Death's Might
+								},
+							}),
+						},
 					}),
 					heroscall(q(39199, {	-- Hero's Call: Blade's Edge Mountains!
 						["timeline"] = { ADDED_6_2_0 },
@@ -1128,7 +1169,10 @@ root(ROOTS.Zones, {
 					}),
 					q(10812, {	-- Mystery Mask
 						["sourceQuest"] = 10810,	-- Damaged Mask
-						["qg"] = 22020,	-- O'Mally Zapnabber
+						["providers"] = {
+							{ "n", 22020 },	-- O'Mally Zapnabber
+							{ "i", 31387 },	-- Mystery Mask (PQI!)
+						},
 						["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
@@ -1314,6 +1358,9 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 						["groups"] = {
+							objective(1, {	-- 0/25 Lightning Strikes Absorbed
+								["provider"] = { "i", 30818 },	-- Repolarized Magneto Sphere (PQI!)
+							}),
 							objective(2, {	-- 0/5 Scalewing Lightning Gland
 								["provider"] = { "i", 30849 },	-- Scalewing Lightning Gland
 								["cr"] = 20749,	-- Scalewing Serpent
@@ -1362,9 +1409,10 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Collection of Souls
 								["providers"] = {
-									{ "i", 30890 },	-- Collection of Souls
+									{ "i",  30890 },	-- Collection of Souls
 									{ "o", 185033 },	-- Collection of Souls
 								},
+								["cr"] = 21057,	-- Nexus-Prince Razaan
 							}),
 							i(31456),	-- Gnomish Casting Boots
 							i(30690, {	-- Power Converter (Toy !)
@@ -1534,6 +1582,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 20),
+						["groups"] = {
+							objective(1, {	-- 0/1 Spinning Nether-Weather Vane
+								["provider"] = { "i", 31124 },	-- Nether-Weather Vane (PQI!)
+							}),
+						},
 					}),
 					q(10710, {	-- Test Flight: The Singing Ridge
 						["sourceQuest"] = 10557,	-- Test Flight: The Zephyrium Capacitorium
@@ -1562,16 +1615,16 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/30 Bladespire Ogres killed
 								["providers"] = {
-									{ "n", 19995},	-- Bladespire Brute
-									{ "n", 19998},	-- Bladespire Shaman
-									{ "n", 20334},	-- Bladespire Cook
-									{ "n", 20723},	-- Korgaah
-									{ "n", 20726},	-- Mugdorg
-									{ "n", 20730},	-- Glumdor
-									{ "n", 20731},	-- Droggam
-									{ "n", 20732},	-- Gorr'Dim
-									{ "n", 21296},	-- Bladespire Champion
-									{ "n", 21975},	-- Bladespire Sober Defender
+									{ "n", 19995 },	-- Bladespire Brute
+									{ "n", 19998 },	-- Bladespire Shaman
+									{ "n", 20334 },	-- Bladespire Cook
+									{ "n", 20723 },	-- Korgaah
+									{ "n", 20726 },	-- Mugdorg
+									{ "n", 20730 },	-- Glumdor
+									{ "n", 20731 },	-- Droggam
+									{ "n", 20732 },	-- Gorr'Dim
+									{ "n", 21296 },	-- Bladespire Champion
+									{ "n", 21975 },	-- Bladespire Sober Defender
 								},
 							}),
 							i(31426),	-- Agile Mountain Bracers
@@ -1761,12 +1814,17 @@ root(ROOTS.Zones, {
 						},
 					})),
 					q(10912, {	-- The Hound-Master
+						["description"] = "Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",
 						["sourceQuest"] = 10911,	-- Fire At Will!
 						["qg"] = 22423,	-- Evergrove Druid
+						["coord"] = { 63.5, 35.5, BLADES_EDGE_MOUNTAINS },	-- Location of the "?" on the mini-map
 						["lvl"] = lvlsquish(65, 65, 20),
 						["groups"] = {
 							objective(1, {	-- 0/1 Baelmon the Hound-Master slain
-								["provider"] = { "n", 19747 },	-- Baelmon the Hound-Master
+								["providers"] = {
+									{ "n", 19747 },	-- Baelmon the Hound-Master
+									{ "i", 31809 },	-- Evergrove Wand (PQI!)
+								},
 							}),
 							i(31693),	-- Natasha's Arcane Filament
 							i(31696),	-- Natasha's Battle Chain
@@ -2036,6 +2094,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
+						["groups"] = {
+							objective(1, {	-- 0/15 Razaani Light Orbs trapped
+								["provider"] = { "i", 30852 },	-- Multi-Spectrum Light Trap (PQI!)
+							}),
+						},
 					}),
 					q(10829, {	-- Treebole Must Know
 						["sourceQuest"] = 10825,	-- The Truth Unorbed
@@ -2075,21 +2138,28 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(10609, {	-- What Came First, the Drake or the Egg?
-						["qg"] = 21110,	-- Fizit "Doc" Clocktock
+						["providers"] = {
+							{ "n", 21110 },	-- Fizit "Doc" Clocktock
+							{ "i", 30742 },	-- Temporal Phase Modulator (PQI!)
+						},
 						["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 						["groups"] = {
+							objective(1, {	-- 0/3 Proto-Nether Drake Essence
+								["provider"] = { "i", 30743 },	-- Proto-Nether Drake Essence (QI!)
+							}),
+							objective(2, {	-- 0/3 Adolescent Nether Drake Essence
+								["provider"] = { "i", 30782 },	-- Adolescent Nether Drake Essence (QI!)
+							}),
+							objective(3, {	-- 0/3 Mature Nether Drake Essence
+								["provider"] = { "i", 30783 },	-- Mature Nether Drake Essence (QI!)
+							}),
 							i(31441),	-- Clocktock's Jumpers
 							i(31440),	-- Devolved Drake Girdle
 							i(31438),	-- Fizit's Mantle of Drake Hunting
 							i(31437),	-- Medicinal Drake Essence
 							i(31439),	-- Precise Gloves of Alacrity
-							--
-							i(30782),	-- Adolescent Nether Drake Essence (QI!)
-							i(30783),	-- Mature Nether Drake Essence (QI!)
-							i(30743),	-- Proto-Nether Drake Essence (QI!)
-							i(30742),	-- Temporal Phase Modulator (QI!)
 						},
 					}),
 					q(10747, {	-- Whelps of the Wyrmcult
@@ -2684,6 +2754,9 @@ root(ROOTS.Zones, {
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
+					i(31384, {	-- Damaged Mask (QS!)
+						["cr"] = 21300,	-- Fel Corrupter
+					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31942, {	-- Deathwing Brood Cloak
 						["description"] = "You need to summon the four dragons for 35 Apexis Shards and loot the scale to put the cloak together.",
 						["cost"] = {

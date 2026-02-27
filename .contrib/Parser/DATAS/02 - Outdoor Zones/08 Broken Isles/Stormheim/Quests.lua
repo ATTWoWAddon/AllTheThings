@@ -856,7 +856,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["groups"] = {
 						o(241866, {	-- Soulthorn
-							i(124504),	 -- Soulcap (QI!)
+							i(124504),	-- Soulcap (QI!)
 						}),
 					},
 				}),

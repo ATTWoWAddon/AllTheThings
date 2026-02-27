@@ -197,6 +197,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179486, {	-- Battered Footlocker
+					["coords"] = {
+						{ 75.5, 40.0, HILLSBRAD_FOOTHILLS },
+						{ 79.6, 46.6, HILLSBRAD_FOOTHILLS },
+						{ 83.0, 44.1, HILLSBRAD_FOOTHILLS },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 110,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(180662),	-- Schooner Wreckage

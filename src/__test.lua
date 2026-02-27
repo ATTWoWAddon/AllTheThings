@@ -5,6 +5,8 @@ local CreateObject = app.__CreateObject;
 local api = {}
 app.Modules.Test = api
 
+local Runner = app.CreateRunner("TestRunner")
+
 app.Testraw = function(count)
 
 	local a
@@ -595,36 +597,69 @@ end
 
 function ATTlooptypes(count)
 
-	local ipairs = ipairs
-	local pairs = pairs
+	local ipairs,next,pairs
+		= ipairs,next,pairs
 	local z
-	local t = {}
+	local a = {}
 	for i=1,count do
-		t[i] = i
+		a[i] = i
 	end
+	local function fillRandomKeys(t, count)
+		local c = 0
+		while c < count do
+			local key
+			if math.random() < 0.5 then
+				key = math.random(1, 1e9)                -- numeric key
+			else
+				key = string.char(
+					math.random(97,122),
+					math.random(97,122),
+					math.random(97,122)
+				)                                        -- 3‑letter string key
+			end
+			if not t[key] then
+				c = c + 1
+				t[key] = true
+			end
+		end
+		return t
+	end
+	local t = fillRandomKeys({}, count)
 
-	local function Benchmark()
-		-- 0.01164 @ 1M
+	local function Benchmark(t, ty)
+		app.PrintDebug("Benchmark",ty)
+		-- 13,14,13ms @ 1M Array
+		-- N/A Table
 		app.PrintDebug("for i=1,#t",count)
 		for i=1,#t do
 			z = t[i]
 		end
 		app.PrintDebugPrior("---")
-		-- 0.13135 @ 1M
+		-- 79,80,82ms @ 1M Array
+		-- N/A Table
 		app.PrintDebug("for i,v in ipairs(t)",count)
 		for i,v in ipairs(t) do
 			z = v
 		end
 		app.PrintDebugPrior("---")
-		-- 0.11951 @ 1M
+		-- 79,83,80ms @ 1M Array
+		-- 152,145,144ms @ 1M Table
 		app.PrintDebug("for k,v in pairs(t)",count)
 		for k,v in pairs(t) do
 			z = v
 		end
 		app.PrintDebugPrior("---")
+		-- 87,81,80ms @ 1M Array
+		-- 157,149,142ms @ 1M Table
+		app.PrintDebug("for k,v in next(t)",count)
+		for k,v in next,t do
+			z = v
+		end
+		app.PrintDebugPrior("---")
 	end
 
-	Benchmark();
+	Runner.Run(Benchmark, a, "Array")
+	Runner.Run(Benchmark, t, "Table")
 end
 
 function attestimate_memory_usage(tbl)

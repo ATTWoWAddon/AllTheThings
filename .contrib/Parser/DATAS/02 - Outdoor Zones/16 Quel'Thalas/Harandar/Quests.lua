@@ -519,7 +519,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			header(HEADERS.Achievement, 61574, bubbleDownSelf({ ["isWeekly"] = true }, {	-- Legends Never Die
 				n(REWARDS, {
 					-- Rewarded on every quest completion. Be it the first time or on the repetition.
-					i(269703),	-- Avid Learner's Supply Pack
+					i(269703),	-- Avid Learner's Supply Pack (TODO: different version? pre-season? race specific?)
+					i(263467),	-- Avid Learner's Supply Pack
 				}),
 				q(89268, {	-- Lost Legends
 					["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
@@ -1252,6 +1253,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = { i(249408) },	-- Thorntusks of Dionaea (QI!)
 			}),
 			q(91970),	-- WANTED: Gelatonius
+			q(92012, {	-- WANTED: Gorebarb's Pincers
+				["groups"] = { i(249406) },	-- Gorebarb's Pincers (QI!) 
+			}),
 			q(91980, {	-- WANTED: Hellebora's Thorn
 				["groups"] = { i(249402) },	-- Hellebora's Thorn (QI!)
 			}),
@@ -1287,7 +1291,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91511, name(HEADERS.Item,264262)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'The Echoless Flame'
 				q(91512, name(HEADERS.Item,262906)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Russula's Outreach'
 				q(91456, name(HEADERS.Item,263196)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Aln'hara's Bloom'
-				q(93790),	-- Triggered after completing 'Wey'nan's Ward' (88993) / TODO: Alex: after obtain Fabled Veteran's Cache
 				--
 			}),
 		}),

@@ -1586,6 +1586,9 @@ fp(61,{coords={
 [1440]={{73.2,61.6}}},crs={12616},r=1}),
 fp(58,{coords={
 [1440]={{12.2,33.8}}},crs={11901},r=1})}),
+prof(633,{c={4},g={
+o(179487,{coords={
+[1440]={{13.8,24.7}}},learnedAt=70,requireSkill=633})}}),
 h(-45,{
 q(1025,{coords={
 [1440]={{36.6,49.6}}},lvl=18,qgs={3691},r=2,rwp=40003,sourceQuests={1023},g={
@@ -1933,6 +1936,9 @@ fp(64,{coords={
 [1447]={{11.8,77.6}}},crs={12577},r=2,rwp=40003}),
 fp(44,{coords={
 [1447]={{22,49.6}}},crs={8610},r=1})}),
+prof(633,{c={4},g={
+o(179497,{coords={
+[1447]={{49.6,37.2},{59.8,73.5},{80.3,36.3}}},learnedAt=225,requireSkill=633})}}),
 h(-44,{
 prof(165,{
 n(7866,{coords={
@@ -2503,6 +2509,9 @@ fp(37,{coords={
 [1443]={{64.7,10.5}}},crs={6706},r=2}),
 fp(38,{coords={
 [1443]={{21.6,74}}},crs={6726},r=1})}),
+prof(633,{c={4},g={
+o(179491,{coords={
+[1443]={{36.9,24.1}}},learnedAt=150,requireSkill=633})}}),
 h(-45,{
 q(1431,{coords={
 [1454]={{49.8,47.8}}},lvl=30,qgs={5639},r=1,rwp=40003}),
@@ -3040,8 +3049,7 @@ qo(1,{crs={3126},providers={{"i",15920}}}),
 r(883),
 r(2641),
 r(1515)}}),
-q(830,{coords={
-[1411]={{59.3,57.7}}},cost={{"i",4882,1}},providers={{"i",4881},{"o",3239}},r=1,rwp=40003}),
+q(830,{providers={{"i",4881}},r=1,rwp=40003}),
 q(831,{coords={
 [1411]={{52,43.4}}},providers={{"i",4883}},qgs={3139},r=1,rwp=40003,sourceQuests={830}}),
 q(924,{coords={
@@ -3106,6 +3114,10 @@ h(-48,{(function(t)if _.RaceIndex==8 then	t.minReputation=nil;end	return t;end)(
 n(7953,{coords={
 [1411]={{55.3,75.5}}},minReputation={530,42000},races={2,5,8},g={
 r(10861,{cost=200000,lvl=40})}}))}),
+h(-56,{
+o(3239,{coords={
+[1411]={{59.3,57.7}}},cost={{"i",4882,1}},rwp=40003,g={
+i(4881,{b=1,q=1})}})}),
 h(-58,{
 n(3881,{coords={
 [1411]={{51.2,42.6}}},r=1,g={
@@ -5461,6 +5473,9 @@ fp(29,{coords={
 [1442]={{45.2,59.8}}},crs={4312},r=1}),
 fp(33,{coords={
 [1442]={{36.4,7.2}}},crs={4407},r=2})}),
+prof(633,{c={4},g={
+o(179486,{coords={
+[1442]={{63.5,55.8},{66.2,47.5},{75.4,57.3}}},learnedAt=110,requireSkill=633})}}),
 h(-44,{
 prof(356,{
 o(180662)})}),
@@ -5750,6 +5765,9 @@ fp(39,{coords={
 [1446]={{51,29.2}}},crs={7823},r=2}),
 fp(40,{coords={
 [1446]={{51.6,26.6}}},crs={7824},r=1})}),
+prof(633,{c={4},g={
+o(179496,{coords={
+[1446]={{72.6,45.4}}},learnedAt=225,requireSkill=633})}}),
 h(-44,{
 prof(202,{
 n(8736,{coords={
@@ -6507,6 +6525,19 @@ fp(80,{coords={
 [1413]={{63,37}}},crs={16227}})}),
 prof(356,{
 s(158622,6651,{description="Drops from fishing in the Sludge Fen.",f=23,lvl=7,q=1})}),
+prof(633,{c={4},g={
+o(3714,{coords={
+[1413]={{49.6,83.6}}},r=1,requireSkill=633}),
+o(123330,{coords={
+[1413]={{65,45.4}}},requireSkill=633}),
+o(129127,{coords={
+[1413]={{54.7,5.6}}},cost={{"i",8072,1}},learnedAt=70,requireSkill=633,rwp=40003,g={
+i(8073,{q=1})}}),
+o(123462,{coords={
+[1413]={{65,45.4}}},learnedAt=25,requireSkill=633,rwp=40003,g={
+i(7968,{cost={{"i",7970,1}},crs={7168},description="When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",q=1})}}),
+o(105176,{coords={
+[1413]={{61.8,3.9}}},requireSkill=633})}}),
 h(-45,{
 q(1153,{coords={
 [1413]={{45.1,57.69}}},lvl=25,maps={1441},qgs={3433},r=1,rwp=40003,sourceQuests={893},g={
@@ -6822,7 +6853,7 @@ qo(2,{providers={{"n",7307}}}),
 qo(3,{providers={{"n",7308}}}),
 qo(4,{crs={7288},providers={{"i",8074}}}),
 qo(5,{crs={7287},providers={{"i",8072}}}),
-qo(6,{cost={{"i",8072,1}},providers={{"i",8073},{"o",129127}}}),
+qo(6,{providers={{"i",8073}}}),
 r(9513,{itemID=7678,learnedAt=60,q=1,requireSkill=185,rwp=10300,u=2}),
 r(9513,{awp=10300,b=1,c={4},itemID=18160,learnedAt=60,q=2,requireSkill=185})}}),
 q(3301,{coords={
@@ -6852,8 +6883,8 @@ q(844,{coords={
 qo(1,{crs={3244,3245,3246},providers={{"i",5087}}})}}),
 q(2381,{c={4},coords={
 [1413]={{63,36.4}}},lvl=16,qgs={7161},r=1,rwp=40003,sourceQuests={2382},g={
-qo(1,{coords={
-[1413]={{64.8,45.4}}},crs={7168},providers={{"i",7968},{"o",123462}}}),
+qo(1,{providers={{"i",7968}}}),
+i(7970,{b=1,f=55,q=1}),
 i(7676,{c={4},f=55,lvl=5,q=1})}}),
 q(903,{coords={
 [1413]={{52.23,31.01}}},lvl=10,qgs={3338},r=1,sourceQuests={845},g={
@@ -9975,8 +10006,7 @@ s(157774,4443,{b=1,f=6,filterForRWP=7,q=2}),
 s(156576,2032,{b=1,f=4,q=2})}}),
 q(1999,{c={4},coords={
 [1458]={{83.2,69}}},lvl=16,maps={1421},qgs={6467},races={5},rwp=40003,sourceQuests={1998},g={
-qo(1,{coords={
-[1421]={{63.7,65.3}}},providers={{"i",7309}}})}}),
+qo(1,{providers={{"i",7309}}})}}),
 q(5658,{altQuests={5660,5661,5662,5663},c={5},coords={
 [1411]={{54.2,42.8}},
 [1412]={{47,58.8}},
@@ -10177,6 +10207,9 @@ h(-31,{
 faction(349,{icon=132292,OnTooltip=_.OnTooltipDB.Ravenholdt,g={
 crit(8824,{achID=2336,id=1,u=13})}}),
 faction(70,{description="Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",maxReputation={70,0},minReputation={70,-1}})}),
+prof(633,{c={4},g={
+o(105570,{coords={
+[1416]={{12.6,79.4},{21.4,62.3}}},learnedAt=70,r=1,requireSkill=633})}}),
 h(-44,{
 prof(356,{
 o(180685)})}),
@@ -10756,6 +10789,11 @@ exp(1517)}),
 h(-32,{
 fp(21,{coords={
 [1418]={{4,44.8}}},crs={2861},r=1})}),
+prof(633,{c={4},g={
+o(179490,{coords={
+[1418]={{42.4,29.6}}},learnedAt=150,requireSkill=633}),
+o(179492,{coords={
+[1418]={{41.5,27.3}}},learnedAt=175,requireSkill=633})}}),
 h(-44,{
 prof(165,{
 n(7867,{coords={
@@ -11458,7 +11496,6 @@ exp(136,{
 crit(515,{achID=627,id=1})}),
 exp(804,{
 crit(507,{achID=627,id=1})})}),
-ah(921,{c={4},type="s"}),
 h(-45,{
 q(319,{coords={
 [1426]={{30.2,45.8}}},lvl=2,qgs={1374},r=2,rwp=40003,sourceQuests={318},g={
@@ -11765,7 +11802,7 @@ q(1044,{coords={
 s(158262,5817,{b=1,f=32,q=2}),
 s(158263,5818,{b=1,f=27,q=2})}}),
 q(325,{coords={
-[1453]={{51.8,12.1}}},lvl=20,providers={{"i",7297}},qgs={1416},r=2,rwp=40003,sourceQuests={322},g={
+[1453]={{51.8,12.1}}},lvl=20,qgs={1416},r=2,rwp=40003,sourceQuests={322},g={
 s(158813,7297,{b=1,f=1,q=1})}}),
 q(322,{coords={
 [1437]={{10.6,60.5}}},lvl=20,providers={{"i",2712}},qgs={1217},r=2,rwp=40003,sourceQuests={324,526}}),
@@ -11785,6 +11822,8 @@ q(93,{coords={
 r(3377,{itemID=3683,learnedAt=110,q=1,requireSkill=185})}}),
 q(245,{coords={
 [1431]={{45.1,67}}},lvl=17,qgs={888},r=2,rwp=40003,g={
+qo(1,{coords={
+[1431]={{9.4,39.8},{13,28.4},{13,70.6},{27.8,29.2},{52,12.4},{90.8,16}}},providers={{"n",539}}}),
 s(157369,3559,{b=1,f=6,filterForRWP=7,q=2})}}),
 q(453,{coords={
 [1431]={{73.8,44.4}}},lvl=20,providers={{"i",2161}},qgs={273},r=2,rwp=40003,sourceQuests={266}}),
@@ -12161,6 +12200,9 @@ fp(68,{coords={
 fp(85,{collectible=false,description="If Plaguewood Tower is controlled by your faction, you can fly to this tower."}),
 fp(84,{collectible=false,coords={
 [1423]={{22.2,31.4}}},crs={17209},description="If this tower is controlled by your faction, you can fly from this tower to the other towers your faction controls."})}),
+prof(633,{c={4},g={
+o(179498,{coords={
+[1423]={{80.8,85.2},{83.8,80.1},{87.9,82.3}}},learnedAt=250,requireSkill=633})}}),
 h(-45,{
 q(7621,{c={5},coords={
 [1423]={{20.8,18.4}}},lvl=60,qgs={14494},rwp=40003}),
@@ -13015,6 +13057,9 @@ fp(14,{coords={
 [1424]={{49.4,52.4}}},crs={2432},r=2,rwp=40003}),
 fp(13,{coords={
 [1424]={{60.2,18.6}}},crs={2389},r=1})}),
+prof(633,{c={4},g={
+o(179486,{coords={
+[1424]={{75.5,40},{79.6,46.6},{83,44.1}}},learnedAt=110,requireSkill=633})}}),
 h(-44,{
 prof(356,{
 o(180662)}),
@@ -13681,6 +13726,12 @@ exp(96)}),
 h(-32,{
 fp(5,{coords={
 [1433]={{30.6,59.6}}},crs={931},r=2})}),
+prof(633,{c={4},g={
+o(121264,{coords={
+[1433]={{52,44.9}}},learnedAt=25,requireSkill=633,rwp=40003,g={
+i(7871,{q=1})}}),
+o(178244,{coords={
+[1433]={{51.9,45}}},requireSkill=633})}}),
 h(-44,{
 prof(393,{
 i(7286,{crs={441,14272},q=1})})}),
@@ -13695,8 +13746,7 @@ q(94,{coords={
 [1429]={{65.2,69.8}}},lvl=20,providers={{"i",1083}},qgs={313},r=2,rwp=40003}),
 q(2282,{c={4},coords={
 [1433]={{28.2,52.2}}},lvl=16,providers={{"i",5060}},qgs={6966},r=2,rwp=40003,sourceQuests={2281},g={
-qo(1,{coords={
-[1433]={{52,44.8}}},providers={{"i",7871}}}),
+qo(1,{providers={{"i",7871}}}),
 i(7907,{b=1,description="This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",q=1})}}),
 q(34,{coords={
 [1433]={{21.9,46.4}}},lvl=18,qgs={342},r=2,rwp=40003,g={
@@ -13972,6 +14022,9 @@ fp(74,{coords={
 [1427]={{37.8,30.6}}},crs={2941},r=2}),
 fp(75,{coords={
 [1427]={{34.8,30.6}}},crs={3305},r=1})}),
+prof(633,{c={4},g={
+o(179494,{coords={
+[1427]={{37,39.8},{45.9,28.3},{48.5,43.1}}},learnedAt=200,requireSkill=633})}}),
 h(-44,{
 prof(165,{
 n(7868,{coords={
@@ -14193,6 +14246,10 @@ exp(227)}),
 h(-32,{
 fp(10,{coords={
 [1421]={{45.6,42.6}}},crs={2226},r=1})}),
+prof(633,{c={4},g={
+o(103815,{coords={
+[1421]={{63.7,65.2}}},requireSkill=633,rwp=40003,g={
+i(309)}})}}),
 h(-45,{
 q(530,{coords={
 [1458]={{62,43}}},lvl=10,qgs={2050},r=1,rwp=40003,sourceQuests={441},g={
@@ -15140,6 +15197,9 @@ crit(1227,{achID=782,id=1})})}),
 h(-32,{
 fp(56,{coords={
 [1435]={{46,54.6}}},crs={6026},r=1})}),
+prof(633,{c={4},g={
+o(179493,{coords={
+[1435]={{65.2,55.8},{69.1,44.6},{74,60.4}}},learnedAt=175,requireSkill=633})}}),
 h(-44,{
 prof(171,{
 n(1386,{coords={
@@ -16425,10 +16485,17 @@ crit(1259,{achID=802,id=1})})}),
 h(-32,{
 fp(4,{coords={
 [1436]={{56.6,52.6}}},crs={523},r=2})}),
+prof(633,{c={4},g={
+o(123214,{coords={
+[1436]={{70.5,74}}},learnedAt=70,requireSkill=633,rwp=40003,g={
+i(7908,{q=1})}})}}),
+ah(921,{c={4},type="s",g={
+i(7923,{coords={
+[1436]={{68.6,72.2}}},crs={7051},description="Can also be killed for the key, though hits hard for lower level rogues.",q=1,rwp=40003})}}),
 h(-45,{
 q(6181,{coords={
 [1436]={{56.9,47.2}}},lvl=10,providers={{"i",15998}},qgs={491},races={1},rwp=40003}),
-q(136,{crs={126,127,171,391,456,458,513,515,517,519},lvl=10,providers={{"i",1357}},rwp=40003}),
+q(136,{lvl=10,providers={{"i",1357}},rwp=40003}),
 q(138,{coords={
 [1436]={{25.9,47.77}}},lvl=10,providers={{"i",1358},{"o",35}},rwp=40003,sourceQuests={136}}),
 q(139,{coords={
@@ -16458,10 +16525,8 @@ q(103,{coords={
 [1436]={{30,86}}},cost={{"i",814,5}},lvl=10,qgs={392},rwp=40003}),
 q(2359,{c={4},coords={
 [1436]={{68.5,70.2}}},lvl=20,providers={{"i",8046}},qgs={7024},r=2,rwp=40003,sourceQuests={2360},g={
-qo(1,{coords={
-[1436]={{71,74.6}}},crs={7053},providers={{"i",7908}}}),
-qo(2,{coords={
-[1436]={{68.6,72.2}}},crs={7051},providers={{"i",7923}}}),
+qo(1,{providers={{"i",7908}}}),
+qo(2,{providers={{"i",7923}}}),
 r(8681,{rwp=30002}),
 r(2842,{rwp=30002}),
 r(9513,{itemID=7678,learnedAt=60,q=1,requireSkill=185,rwp=10300,u=2}),
@@ -16628,6 +16693,7 @@ i(3172,{coords={
 [1436]={{54.2,42.6}}},crs={157,454,547},maps={1433},q=1}),
 s(156130,826,{awp=100107,coords={
 [1436]={{31.4,70.4},{48.8,62.6},{54.2,62},{55.4,69.4},{55.8,68.4}}},crs={124},f=21,lvl=10,q=2,rwp=40003}),
+i(1357,{crs={126,127,171,391,456,458,513,515,517,519},lvl=10,q=1,rwp=40003}),
 i(769,{q=1}),
 i(2673,{coords={
 [1436]={{49.4,24.5}}},crs={833,834},description="Only drops from coyotes in Westfall.",q=1}),
@@ -16704,6 +16770,9 @@ crit(1265,{achID=841,id=1})})}),
 h(-32,{
 fp(7,{coords={
 [1437]={{9.6,59.6}}},crs={1571},r=2})}),
+prof(633,{c={4},g={
+o(179488,{coords={
+[1437]={{13.7,41.6},{16.5,30.8},{18.4,39.5}}},learnedAt=110,requireSkill=633})}}),
 h(-44,{
 prof(356,{
 o(180662)}),

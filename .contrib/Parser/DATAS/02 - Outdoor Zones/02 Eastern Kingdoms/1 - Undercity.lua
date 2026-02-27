@@ -1359,7 +1359,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Dalaran Status Report
 							["provider"] = { "i", 7309 },	-- Dalaran Status Report
-							["coord"] = { 63.7, 65.3, SILVERPINE_FOREST },
 						}),
 					},
 				}),

@@ -2601,7 +2601,9 @@ i(243216);	-- Snapped Antennae
 ------------------
 i(238482);	-- A Whole Lot of Nothing
 i(260654);	-- Abrasive Sand
+i(260276);	-- Akil'stew
 i(260636);	-- Algae Covered Stone
+i(255688);	-- Anchor of the Abyss
 i(263517);	-- Ancient Text
 i(260641);	-- Arid Tendrils
 i(260292);	-- Asteroid Soup
@@ -2611,6 +2613,7 @@ i(260608);	-- Bloated Animal Remains
 i(264992);	-- Blood Knight Burger
 i(260670);	-- Bloody Broken Beak
 i(260261);	-- Bloom Nectar
+i(260270);	-- Bog Legs
 i(238483);	-- Bottom Grass
 i(263515);	-- Broken Soulstealing Mirror
 i(266002);	-- Broken Trap Mechanism
@@ -2624,6 +2627,7 @@ i(265099);	-- Conjured Coffee
 i(265098);	-- Conjured Croissant
 i(265096);	-- Conjured Souffle
 i(263516);	-- Cosmic Ritual Bowl
+i(260272);	-- Crisp Bluff Bock
 i(260640);	-- Crooked Bird Talons
 i(260658);	-- Crystal Rock Shard
 i(238484);	-- Damp Washcloth
@@ -2633,6 +2637,7 @@ i(260655);	-- Decaying Humanoid Flesh
 i(260687);	-- Decaying Leather
 i(238488);	-- Definitely a Rock
 i(264993);	-- Delicate Dart Legs
+i(260274);	-- Denshroom Deep Roast
 i(260647);	-- Digested Human Hand
 i(264989);	-- Dragonhawk Flight
 i(260666);	-- Earthy Mushroom
@@ -2664,6 +2669,7 @@ i(260657);	-- Holey Organ
 i(238496);	-- Hunk O' Junk
 i(260688);	-- Insect Exoskeleton
 i(260604);	-- Insect Shedding
+i(260269);	-- Jerk Boar Jerky
 i(260254);	-- Kale'thas Sunsalad
 i(238487);	-- Kickin' Can
 i(260611);	-- Large Bestial Scale
@@ -2683,9 +2689,11 @@ i(260621);	-- Magic Infused Bark
 i(264987);	-- Magister's Mead
 i(260255);	-- Managi Roll
 i(260693);	-- Mossy Lump of Dirt
+i(260275);	-- Mukleech Curry
 i(264991);	-- Murder Roe
 i(238480);	-- Opened Lockbox
 i(260671);	-- Oversized Gland
+i(260268);	-- Pango and Mash
 i(260673);	-- Partially Digested Bracers
 i(260656);	-- Perforated Wing
 i(243845);	-- Petalwrap Sack
@@ -2703,10 +2711,12 @@ i(242638);	-- Recycle Flasks
 i(242637);	-- Recycle Potions
 i(260289);	-- Ren'dorei Rations
 i(260299);	-- Roasted Abyssal Eel
+i(260271);	-- Root Juice
 i(238477);	-- Rotten Meat
 i(260637);	-- Rotting Insect Eggs
 i(244040);	-- Sack of Seeds
 i(238493);	-- Screaming Rock
+i(260277);	-- Sedge Crawler Gumbo
 i(260296);	-- Shadeleaf Tea
 i(260605);	-- Shattered Spear Tip
 i(260678);	-- Sharp Obsidian Chunk
@@ -2721,12 +2731,14 @@ i(260616);	-- Soft Marine Fungi
 i(246376);	-- Solaarian Sintalia
 i(260260);	-- Springrunner Sparkling
 i(260291);	-- Stargazer Pudding
+i(260267);	-- Steamed Hexx'alor Lobster
 i(260659);	-- Stellar Vortex Residue
 i(260620);	-- Stone Droppings
 i(262786);	-- Suntouched Special Reserve
 i(264983);	-- Sunwell Shot
 i(265042);	-- Tarnished Shadow Torque
 i(260648);	-- Tattered Clothes
+i(260273);	-- Tea of Mists and Rain
 i(260309);	-- Thrumming Plant Matter
 i(238944);	-- Torn Material
 i(238479);	-- Torn Caster's Net

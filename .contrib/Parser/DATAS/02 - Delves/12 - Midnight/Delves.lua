@@ -373,6 +373,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
+				filter(BATTLE_PETS, {
+					i(262390),	-- Sporbie (PET!)
+				}),
 				filter(COSMETIC, {
 					i(264855),	-- Vilebranch Deathseer (COSMETIC!)
 				}),
@@ -380,6 +383,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					i(267009),	-- Amani Training Dummy (DECOR!)
 					i(264342),	-- Cosmic Void Cache (DECOR!)
 					i(264258),	-- Blossoming Forge (DECOR!)
+					i(251967),	-- Fungarian Banner (DECOR!)
 					i(263042),	-- Rootlight Lamppost (DECOR!)
 				}),
 				filter(MISC, {
@@ -514,6 +518,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(264330),	-- Amani Hanging Brazier (DECOR!)
 					i(251967),	-- Fungarian Banner (DECOR!)
 				}),
 				filter(COSMETIC, {
@@ -687,6 +692,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(264342),	-- Cosmic Void Cache (DECOR!)
 				}),
 				filter(MISC, {
 				}),
@@ -836,7 +842,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91188),	-- Atal'Aman
 			q(91186),	-- Collegiate Calamity
 			q(91189),	-- Shadow Enclave
-			q(91184),	-- Shadowguard Point / Sunkiller Sanctum
+			q(91184),	-- Shadowguard Point
+			q(91183),	-- Sunkiller Sanctum
 			q(91185),	-- The Grudge Pit
 			q(91187),	-- The Gulf of Memory
 			q(91190),	-- Twilight Crypts

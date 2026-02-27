@@ -34,14 +34,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				["groups"] = {
 					-- #if AFTER 10.1.7
-					header(HEADERS.Spell, 921, {	-- Pickpocketing
+					pickpocketing({
 						i(2109, {	-- Frostmane Chain Vest
-							["timeline"] = { ADDED_10_1_7 },
 							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
-							-- ["cr"] = 706,	-- Frostmane Troll Whelp
-							["coords"] = {
-								{ 32.4, 75.8, DUN_MOROGH },
-							},
+							["coord"] = { 32.4, 75.8, DUN_MOROGH },
+							["timeline"] = { ADDED_10_1_7 },
+							["cr"] = 706,	-- Frostmane Troll Whelp
 						}),
 					}),
 					-- #endif
@@ -2632,77 +2630,74 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					-- #if AFTER 10.1.7
-					i(2109, {	-- Frostmane Chain Vest
-						["timeline"] = { ADDED_10_1_7 },
-						["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
-						-- ["cr"] = 41122,	-- Frostmane Snowstrider
-						["coords"] = {
-							{ 49.0, 35.4, DUN_MOROGH },
-						},
-					}),
-					-- #endif
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note
-						["coord"] = { 78.2, 59.8, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 6123,	-- Dark Iron Spy
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208220, {	-- Dun Morogh Treasure Map
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cost"] = {
-							{ "i", 208219, 1 },	-- Bottom-Left Map Piece
-							{ "i", 208218, 1 },	-- Bottom-Right Map Piece
-							{ "i", 208215, 1 },	-- Top-Left Map Piece
-							{ "i", 208213, 1 },	-- Top-Right Map Piece
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208219, {	-- Bottom-Left Map Piece
-						["coord"] = { 78.2, 59.8, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 6123,	-- Dark Iron Spy
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208218, {	-- Bottom-Right Map Piece
-						["coord"] = { 26.0, 41.8, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 1211,	-- Leper Gnome
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208215, {	-- Top-Left Map Piece
-						["coord"] = { 69.8, 59.0, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1116,	-- Rockjaw Ambusher
-							1718,	-- Rockjaw Raider
-							724,	-- Burly Rockjaw Trogg
-							707,	-- Rockjaw Trogg
-							1115,	-- Rockjaw Skullthumper
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208213, {	-- Top-Right Map Piece
-						["coord"] = { 23.4, 53.8, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1124,	-- Frostmane Shadowcaster
-							1122,	-- Frostmane Hideskinner
-							946,	-- Frostmane Novice
-							1397,	-- Frostmane Seer
-							706,	-- Frostmane Troll Whelp
-							1123,	-- Frostmane Headhunter
-							1121,	-- Frostmane Snowstrider
-						},
-					})),
-					-- #endif
-				},
+			-- #if AFTER 10.1.7
+			pickpocketing({
+				i(2109, {	-- Frostmane Chain Vest
+					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
+					["coord"] = { 49.0, 35.4, DUN_MOROGH },
+					["timeline"] = { ADDED_10_1_7 },
+					["cr"] = 41122,	-- Frostmane Snowstrider
+				}),
 			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note
+					["coord"] = { 78.2, 59.8, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 6123,	-- Dark Iron Spy
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208220, {	-- Dun Morogh Treasure Map
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 208219, 1 },	-- Bottom-Left Map Piece
+						{ "i", 208218, 1 },	-- Bottom-Right Map Piece
+						{ "i", 208215, 1 },	-- Top-Left Map Piece
+						{ "i", 208213, 1 },	-- Top-Right Map Piece
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208219, {	-- Bottom-Left Map Piece
+					["coord"] = { 78.2, 59.8, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 6123,	-- Dark Iron Spy
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208218, {	-- Bottom-Right Map Piece
+					["coord"] = { 26.0, 41.8, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 1211,	-- Leper Gnome
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208215, {	-- Top-Left Map Piece
+					["coord"] = { 69.8, 59.0, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1116,	-- Rockjaw Ambusher
+						1718,	-- Rockjaw Raider
+						724,	-- Burly Rockjaw Trogg
+						707,	-- Rockjaw Trogg
+						1115,	-- Rockjaw Skullthumper
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208213, {	-- Top-Right Map Piece
+					["coord"] = { 23.4, 53.8, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1124,	-- Frostmane Shadowcaster
+						1122,	-- Frostmane Hideskinner
+						946,	-- Frostmane Novice
+						1397,	-- Frostmane Seer
+						706,	-- Frostmane Troll Whelp
+						1123,	-- Frostmane Headhunter
+						1121,	-- Frostmane Snowstrider
+					},
+				})),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
 					["sourceQuest"] = 318,	-- Evershine

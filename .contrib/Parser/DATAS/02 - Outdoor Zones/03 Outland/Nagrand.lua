@@ -224,6 +224,15 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				-- #if BEFORE CATA
+				lockpicking({
+					o(184741, {	-- Dented Footlocker
+						["coord"] = { 71.7, 81.0, NAGRAND },
+						["requireSkill"] = LOCKPICKING,
+						["learnedAt"] = 325,
+					}),
+				}),
+				-- #endif
 				petbattles({
 					n(66552, {	-- Narrok <Master Pet Tamer>
 						["coord"] = { 61.0, 49.4, NAGRAND },

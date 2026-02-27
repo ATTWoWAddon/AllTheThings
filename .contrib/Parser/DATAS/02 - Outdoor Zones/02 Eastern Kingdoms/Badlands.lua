@@ -134,6 +134,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179490, {	-- Battered Footlocker
+					["coord"] = { 42.4, 29.6, BADLANDS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 150,
+				}),
+				o(179492, {	-- Dented Footlocker
+					["coord"] = { 41.5, 27.3, BADLANDS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 175,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(7867, {	-- Thorkaf Dragoneye <Master Dragonscale Leatherworker>

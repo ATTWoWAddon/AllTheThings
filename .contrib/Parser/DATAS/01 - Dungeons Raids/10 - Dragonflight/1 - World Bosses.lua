@@ -20,7 +20,7 @@ local EncounterToCRS = {
 	},
 	[BAZUAL] = {
 		193532,	-- Bazual, The Dreaded Flame
-	 },
+	},
 	[LISKANOTH] = {
 		193533,	-- Liskanoth, The Futurebane
 	},
@@ -55,7 +55,7 @@ local EncounterToLoot = {
 		i(200660),	-- Cinderfang Wrap
 		i(200661),	-- Basalt Brood Stompers
 		i(200761),	-- Smoldering Sulfuron Signet
-	 },
+	},
 	[LISKANOTH] = {
 		i(200745),	-- Horns of the Futurebane
 		i(200763),	-- Frosted Scale Drape
