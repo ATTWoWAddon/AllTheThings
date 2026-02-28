@@ -3230,7 +3230,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				SCARLET_MONASTERY,
 				436,	-- Scarlet Monastery, Crusader's Chapel
 			},
-			["isDaily"] = true,
 			-- #if AFTER WRATH
 			["lvl"] = 75,
 			-- #elseif AFTER TBC
