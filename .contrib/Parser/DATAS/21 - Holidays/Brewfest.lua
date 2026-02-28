@@ -1286,7 +1286,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
-					["isYearly"] = true,
+
 					["groups"] = {
 						i(37892, {	-- Green Brewfest Stein
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
@@ -1309,7 +1309,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
+					-- #if AFTER CATA
 					["isYearly"] = true,
+					-- #endif
 					["groups"] = {
 						i(37892, {	-- Green Brewfest Stein
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
@@ -1933,7 +1935,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
-					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
 							["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
@@ -1955,7 +1956,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
-					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
 							["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
@@ -2192,7 +2192,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
-					["isYearly"] = true,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
 							["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
@@ -2211,7 +2210,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
-					["isYearly"] = true,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
 							["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
