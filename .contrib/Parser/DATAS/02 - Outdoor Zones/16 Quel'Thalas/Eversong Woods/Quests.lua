@@ -1104,7 +1104,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["isBreadcrumb"] = true,
 					}),
 					q(86997, {	-- Spellbook Scuffle
-						["sourceQuests"] = { 94393 },	-- Career Counseling
+						["sourceQuests"] = { 94396 },	-- Down a Peg
 						["provider"] = { "n", 237873 },	-- Tytalor Goldenblade
 						["coord"] = { 39.4, 17.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
