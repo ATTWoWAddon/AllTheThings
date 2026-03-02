@@ -1227,11 +1227,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(7383, {	-- Crown of the Earth (5/6) / Teldrassil: The Burden of the Kaldorei [CATA+]
+				q(934, {	-- Crown of the Earth (5/6)
 					["sourceQuest"] = 933,	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
-					["altQuests"] = { 934 },	-- Crown of the Earth (?/?) did the entire chain and never got this one yet it is marked as completed at the end
 					["qg"] = 3515,	-- Corithras Moonrage
 					["coord"] = { 56.2, 61.7, TELDRASSIL },
+					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER 1.7.0
+					["description"] = "This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",
+					-- #endif
+					["timeline"] = { REMOVED_1_7_0 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Filled Amethyst Phial
+							["providers"] = {
+								{ "i", 18151 },	-- Filled Amethyst Phial
+								{ "i", 18152 },	-- Amethyst Phial
+							},
+							["coord"] = { 38.0, 34.0, TELDRASSIL },
+						}),
+					},
+				}),
+				q(7383, {	-- Crown of the Earth (5/6) / Teldrassil: The Burden of the Kaldorei [CATA+]
+					["sourceQuest"] = 933,	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
+					["qg"] = 3515,	-- Corithras Moonrage
+					["coord"] = { 56.2, 61.7, TELDRASSIL },
+					["timeline"] = { ADDED_1_7_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Amethyst Phial
