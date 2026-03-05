@@ -17,6 +17,8 @@ local GetNumLootItems, GetLootSlotLink, GetLootSourceInfo, GetTaxiMapID, C_TaxiM
 local GetItemID = app.WOWAPI.GetItemID;
 local issecretvalue = app.WOWAPI.issecretvalue;
 local GetItemLinkByGUID = app.WOWAPI.GetItemLinkByGUID;
+local GetMerchantNumItems = app.WOWAPI.GetMerchantNumItems;
+local GetMerchantItemLink = app.WOWAPI.GetMerchantItemLink;
 
 local CloneArray, CloneClassInstance, GetRelativeValue, MergeObject
 	= app.CloneArray, app.CloneClassInstance, app.GetRelativeValue, app.MergeObject;
@@ -697,12 +699,12 @@ app:CreateWindow("Debugger", {
 					return true;
 				end
 
-				local numItems = C_MerchantFrame.GetNumItems();
+				local numItems = GetMerchantNumItems();
 				--print("MERCHANT DETAILS", ty, npcID, numItems);
 
 				local rawGroups = {};
 				for i=1,numItems,1 do
-					local link = C_MerchantFrame.GetItemLink(i);
+					local link = GetMerchantItemLink(i);
 					if link then
 						local merchItemInfo = GetMerchantItemInfoX(i);
 						local cost = merchItemInfo.price;

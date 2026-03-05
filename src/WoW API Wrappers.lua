@@ -129,6 +129,13 @@ else
 end
 ---@diagnostic enable: deprecated
 
+-- Merchant APIs
+local C_MerchantFrame = C_MerchantFrame;
+---@diagnostic disable: deprecated
+AssignAPIWrapper("GetMerchantNumItems", C_MerchantFrame and C_MerchantFrame.GetNumItems, GetMerchantNumItems)
+AssignAPIWrapper("GetMerchantItemLink", C_MerchantFrame and C_MerchantFrame.GetItemLink, GetMerchantItemLink)
+---@diagnostic enable: deprecated
+
 -- Party APIs
 local C_PartyInfo = C_PartyInfo;
 ---@diagnostic disable: deprecated
