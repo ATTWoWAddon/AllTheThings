@@ -519,7 +519,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["crs"] = { 134270 },
 					}),
 					crit(42086, {	-- Sunwalker Ordel
-						["crs"] = { 134270 },
+						["crs"] = { 134271 },
 					}),
 					crit(44167, {	-- Charg "The Boisterous"
 						["crs"] = { 144784 },
@@ -557,7 +557,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["crs"] = { 130620 },
 					}),
 					crit(42091, {	-- Squallshaper Auran
-						["crs"] = { 130621 },
+						["crs"] = { 130622 },
 					}),
 					crit(42092, {	-- Squallshaper Bryson
 						["crs"] = { 130621 },
