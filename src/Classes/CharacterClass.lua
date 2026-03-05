@@ -218,6 +218,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 			name = UnitName(unit);
 			if name then
 				guid = UnitGUID(unit);
+				if guid and app.WOWAPI.issecretvalue(guid) then guid = nil; end
 				className, classFile, classID = UnitClass(unit);
 				raceName, raceFile, raceID = UnitRace(unit);
 			else

@@ -278,7 +278,7 @@ SlashCmdList.ALLTHETHINGSYOU = function(cmd)
 			SendResponseMessage(cmd, (server and server ~= "" and (name .. "-" .. server)) or name);
 		else
 			local guid = UnitGUID("target");
-			if guid then
+			if guid and not app.WOWAPI.issecretvalue(guid) then
 				local cmd = "creatureid:" .. select(6, ("-"):split(guid));
 				app.SetSkipLevel(2);
 				local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true,IgnoreCache=true});

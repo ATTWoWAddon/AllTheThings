@@ -543,6 +543,7 @@ app:CreateWindow("RaidAssistant", {
 							local name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML = GetRaidRosterInfo(raidIndex);
 							if name then
 								local guid = UnitGUID(name);
+								if guid and app.WOWAPI.issecretvalue(guid) then guid = nil; end
 								local member = members[name];
 								if not member then
 									member = app.CreateUnit(guid or name, {

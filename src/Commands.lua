@@ -194,7 +194,7 @@ end, {
 -- Allows a user to open a popout window for their target via /att [t|target]
 app.ChatCommands.Add({"t", "target"}, function(args)
 	local guid = UnitGUID("target");
-	if guid then
+	if guid and not app.WOWAPI.issecretvalue(guid) then
 		local npcID = select(6, ("-"):split(guid))
 		if npcID then
 			app.CreatePopoutForSearch("n:" .. npcID)

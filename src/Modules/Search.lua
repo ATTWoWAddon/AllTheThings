@@ -586,7 +586,7 @@ app.ChatCommands.Add({"search","?"}, function(args)
 	local search = args[2]
 	if not search then
 		local guid = UnitGUID("target");
-		if guid then
+		if guid and not app.WOWAPI.issecretvalue(guid) then
 			local npcID = select(6, ("-"):split(guid))
 			if npcID then
 				search = "n:" .. npcID

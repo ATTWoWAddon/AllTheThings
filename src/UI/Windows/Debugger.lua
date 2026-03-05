@@ -631,7 +631,7 @@ app:CreateWindow("Debugger", {
 		-- Capture Gossip, Merchant, & Flight Master interactions
 		handlers.GOSSIP_SHOW = function(self)
 			local guid = UnitGUID("npc");
-			if guid then
+			if guid and not issecretvalue(guid) then
 				local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
 				if npcID then
 					local info;
@@ -655,7 +655,7 @@ app:CreateWindow("Debugger", {
 			local mapID = GetTaxiMapID() or -1
 			if mapID < 0 then return end
 			local guid = UnitGUID("npc");
-			if guid then
+			if guid and not issecretvalue(guid) then
 				local ot, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
 				if npcID then
 					local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID)
@@ -688,7 +688,7 @@ app:CreateWindow("Debugger", {
 		local function LoadMerchant(self)
 			local guid = UnitGUID("npc");
 			local ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
-			if guid then ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid); end
+			if guid and not issecretvalue(guid) then ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid); end
 			if npcID then
 				npcID = tonumber(npcID);
 
@@ -697,12 +697,12 @@ app:CreateWindow("Debugger", {
 					return true;
 				end
 
-				local numItems = GetMerchantNumItems();
+				local numItems = C_MerchantFrame.GetNumItems();
 				--print("MERCHANT DETAILS", ty, npcID, numItems);
 
 				local rawGroups = {};
 				for i=1,numItems,1 do
-					local link = GetMerchantItemLink(i);
+					local link = C_MerchantFrame.GetItemLink(i);
 					if link then
 						local merchItemInfo = GetMerchantItemInfoX(i);
 						local cost = merchItemInfo.price;
@@ -765,7 +765,7 @@ app:CreateWindow("Debugger", {
 			local itemString = msg:match("item[%-?%d:]+");
 			if itemString then
 				-- print("Looted Item",itemString)
-				if guid then
+				if guid and not issecretvalue(guid) then
 					self:AddObjectWithHeader(app.HeaderConstants.DROPS, { key = "unit", ["unit"] = guid, ["g"] = { { key = "itemID", ["itemID"] = GetItemID(itemString), ["rawlink"] = itemString } } });
 				else
 					self:AddObjectWithHeader(app.HeaderConstants.DROPS, { key = "itemID", ["itemID"] = GetItemID(itemString), ["rawlink"] = itemString });
@@ -845,7 +845,7 @@ app:CreateWindow("Debugger", {
 				guid = UnitGUID(npc);
 			end
 			local ot, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
-			if guid then ot, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid); end
+			if guid and not issecretvalue(guid) then ot, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid); end
 			-- print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, ot, npcID);
 
 			local rawGroups = {};
