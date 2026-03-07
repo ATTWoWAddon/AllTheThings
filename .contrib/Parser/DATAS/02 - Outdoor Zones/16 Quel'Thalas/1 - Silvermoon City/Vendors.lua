@@ -309,14 +309,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 44.1, 62.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					n(DECOR, {
-						i(253612),	-- "Autumnal Eversong" Unframed Painting (DECOR!)
-						i(253606),	-- "Brunch and a Book" Unframed Painting (DECOR!)
-						i(253610),	-- "Isolation" Unframed Painting (DECOR!)
-						i(253613),	-- "Reclamation" Unframed Painting (DECOR!)
-						i(253609),	-- "River's Protectors" Unframed Painting (DECOR!)
-						i(253611),	-- "The Fallen Protectors" Unframed Painting (DECOR!)
-						i(253705),	-- "The Light Blooms" Unframed Painting (DECOR!)
-						i(253704),	-- Fresh Canvas (DECOR!)
+						sharedData({
+							["cost"] = { { "g", 15000000 } },	-- 1,500g
+							["sourceQuest"] = 92710,
+						}, {
+							i(253612),	-- "Autumnal Eversong" Unframed Painting (DECOR!)
+							i(253606),	-- "Brunch and a Book" Unframed Painting (DECOR!)
+							i(253610),	-- "Isolation" Unframed Painting (DECOR!)
+							i(253613),	-- "Reclamation" Unframed Painting (DECOR!)
+							i(253609),	-- "River's Protectors" Unframed Painting (DECOR!)
+							i(253611),	-- "The Fallen Protectors" Unframed Painting (DECOR!)
+							i(253705),	-- "The Light Blooms" Unframed Painting (DECOR!)
+							i(253704),	-- Fresh Canvas (DECOR!)
+						}),
 						i(244656),	-- Silvermoon Painter's Cushion (DECOR!)
 					}),
 				},

@@ -2350,6 +2350,7 @@ local AccountWideQuestsDB = {
 	92638,	-- Feldruid's Scornwing Idol
 	92680,	-- Ensemble: World-Defiler's Battle Armor
 	92681,	-- Ensemble: Zealous Felslingers Battle Armor
+	92710,  -- Quest to unlock Hesta Forlath's paintings
 	92733,	-- Triggered after entering house
 	92857,	-- Ta'readon's Mount Voucher
 	92861,	-- Ensemble: Eredath Lightseeker's Regalia
