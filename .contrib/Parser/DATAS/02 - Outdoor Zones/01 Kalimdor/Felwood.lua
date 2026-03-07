@@ -1665,6 +1665,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
+					["learnedAt"] = 225,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1680,6 +1681,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
+					["learnedAt"] = 225,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -1696,6 +1698,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1711,6 +1714,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -1727,6 +1731,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
 					["requireSkill"] = HERBALISM,
+					["learnedAt"] = 225,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1742,6 +1747,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
 					["requireSkill"] = HERBALISM,
+					["learnedAt"] = 225,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -1758,6 +1764,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
 					["requireSkill"] = HERBALISM,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1773,6 +1780,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
 					["requireSkill"] = HERBALISM,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -1847,6 +1855,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
 					["requireSkill"] = MINING,
+					["learnedAt"] = 225,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1862,6 +1871,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
 					["requireSkill"] = MINING,
+					["learnedAt"] = 225,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -1878,6 +1888,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
 					["requireSkill"] = MINING,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1893,6 +1904,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
 					["requireSkill"] = MINING,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -1909,6 +1921,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
+					["learnedAt"] = 225,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1924,6 +1937,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
+					["learnedAt"] = 225,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -1940,6 +1954,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1955,6 +1970,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
