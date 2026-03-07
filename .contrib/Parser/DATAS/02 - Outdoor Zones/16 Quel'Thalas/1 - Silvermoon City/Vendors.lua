@@ -52,26 +52,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(252915, {	-- Corlen Hordralin <Master Painter>
 				["coord"] = { 44.2, 62.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
-					n(DECOR, sharedData({
-						["cost"] = { { "g", 50000000 } },	-- 5,000g
-						["sourceAchievement"] = 42117,	-- The War of Light and Shadow
-					},{
-						i(253604),	-- "A Bridge Over Calm Waters" Painting (DECOR!)
-						i(253615),	-- "Autumnal Eversong" Painting (DECOR!)
-						i(253614),	-- "Brunch and a Book" Painting (DECOR!)
-						i(253607),	-- "Eversong in Bloom" Painting (DECOR!)
-						i(253605),	-- "Family Portrait" Painting (DECOR!)
-						i(253616),	-- "Isolation" Painting (DECOR!)
-						i(253608),	-- "Nature's Strength" Painting (DECOR!)
-						i(253617),	-- "Reclamation" Painting (DECOR!)
-						i(253620),	-- "River's Protectors" Painting (DECOR!)
-						i(253602),	-- "Silvermoon in Summer" Painting (DECOR!)
-						i(253619),	-- "The Fallen Protectors" Painting (DECOR!)
-						i(253603),	-- "The Last Day of the Semester" Painting (DECOR!)
-						i(253618),	-- "The Light Blooms" Painting (DECOR!)
-					})),
-				},
+				["groups"] = sharedData({
+					["cost"] = { { "g", 50000000 } },	-- 5,000g
+					["sourceAchievement"] = 42117,	-- The War of Light and Shadow
+				},{
+					i(253604),	-- "A Bridge Over Calm Waters" Painting (DECOR!)
+					i(253615),	-- "Autumnal Eversong" Painting (DECOR!)
+					i(253614),	-- "Brunch and a Book" Painting (DECOR!)
+					i(253607),	-- "Eversong in Bloom" Painting (DECOR!)
+					i(253605),	-- "Family Portrait" Painting (DECOR!)
+					i(253616),	-- "Isolation" Painting (DECOR!)
+					i(253608),	-- "Nature's Strength" Painting (DECOR!)
+					i(253617),	-- "Reclamation" Painting (DECOR!)
+					i(253620),	-- "River's Protectors" Painting (DECOR!)
+					i(253602),	-- "Silvermoon in Summer" Painting (DECOR!)
+					i(253619),	-- "The Fallen Protectors" Painting (DECOR!)
+					i(253603),	-- "The Last Day of the Semester" Painting (DECOR!)
+					i(253618),	-- "The Light Blooms" Painting (DECOR!)
+				}),
 			}),
 			n(256828, {	-- Dennia Silvertongue
 				["description"] = "This Vendor sells Decor only to players that have purchased 'Midnight Epic Edition' upgrade.",

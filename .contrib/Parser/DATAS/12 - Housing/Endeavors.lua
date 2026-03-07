@@ -57,11 +57,11 @@ local EndeavorVendorCoords = {
 	{ 54.3, 56.1, RAZORWIND_SHORES },
 }
 
-local i_DecorCoupons = function(itemID, couponCost, params)
-	params = params or {}
-	params.cost = params.cost or {{ "c", COMMUNITY_COUPONS, couponCost }}
+local i_DecorCoupons = function(itemID, couponCost)
 	return
-	i(itemID, params)
+	i(itemID, {
+		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }}
+	})
 end
 
 root(ROOTS.Housing, n(ENDEAVOR, {
@@ -288,14 +288,10 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(253526, 15),	-- Sin'dorei Wine Display (DECOR!)
 					i_DecorCoupons(253599, 15),	-- Artisanal Display Tent (DECOR!)
 					-- Reach the fourth milestone of the endeavor
-					i_DecorCoupons(253802, 30, { -- Deed of Patronage
+					i(253802, { -- Deed of Patronage
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 30 }}
 						["description"] = "Once you've purchased this item, you can talk to Hesta Forlath in Midnight Silvermoon City (/att n:252916) to purchase paintings.\n\nYou can safely delete this item."
 					}),
-					n(QUESTS, {
-						q(92710, { -- Quest to unlock Hesta Forlath's paintings
-							["provider"] = { "i", 253802 }
-						})
-					})
 				},
 			}),
 			-- Weekly Quests
