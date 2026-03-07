@@ -20,6 +20,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(250138, {	-- Violet Chick (PET!)
 				["crs"] = { 249817 },	-- Violet Chick
 				["coords"] = {
+					{ 52.0, 37.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 				},
 			}),
 		}),
