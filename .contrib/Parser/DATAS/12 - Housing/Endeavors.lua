@@ -60,7 +60,7 @@ local EndeavorVendorCoords = {
 local i_DecorCoupons = function(itemID, couponCost)
 	return
 	i(itemID, {
-		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }}
+		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }},
 	})
 end
 
@@ -289,7 +289,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(253599, 15),	-- Artisanal Display Tent (DECOR!)
 					-- Reach the fourth milestone of the endeavor
 					i(253802, { -- Deed of Patronage
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 30 }}
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 30 }},
 						["description"] = "Once you've purchased this item, you can talk to Hesta Forlath in Midnight Silvermoon City (/att n:252916) to purchase paintings.\n\nYou can safely delete this item."
 					}),
 				},
