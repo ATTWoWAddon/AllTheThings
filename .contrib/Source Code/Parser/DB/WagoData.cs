@@ -1,9 +1,11 @@
 ﻿using ATT.DB.Types;
-using Csv;
+using CsvHelper;
 using System;
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -140,11 +142,13 @@ namespace ATT.DB
         /// <param name="path">The path of the CSV file.</param>
         public static void LoadFromCSV(string path)
         {
-            Framework.LogDebug($"Wago.LoadFromCSV: {path}");
+            Trace.WriteLine($"Wago.LoadFromCSV: {path}");
 
             // Parse the filename for the database type and locale, if specified.
-            var filename = path.Substring(path.LastIndexOf('\\') + 1);
+            var filename = path.Substring(path.LastIndexOf(Path.DirectorySeparatorChar) + 1);
             var segments = filename.Split('.', '-', '_'); // Example: Item_enUS.1.15.7.60277
+
+            Trace.WriteLine($"filename: {filename}");
 
             // The Type is always listed first, followed by the locale (Default: enUS)
             string type = segments[0];
@@ -1070,13 +1074,6 @@ namespace ATT.DB
         }
         #endregion
         #region Cache Helper
-        /// <summary>
-        /// The default CSV Options to use for Wago Data Modules.
-        /// </summary>
-        private static readonly CsvOptions DEFAULT_CSV_OPTIONS = new CsvOptions
-        {
-            AllowNewLineInEnclosedFieldValues = true
-        };
 
         /// <summary>
         /// The Cache class retains useful Type-specific data to ensure that the fastest parsing and data storage methods are utilized.
@@ -1180,24 +1177,36 @@ namespace ATT.DB
             /// <exception cref="InvalidProgramException"></exception>
             public static void LoadFromCSV(string content, string locale)
             {
-                foreach (var line in CsvReader.ReadFromText(content, DEFAULT_CSV_OPTIONS))
+                using var reader = new StringReader(content);
+                using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+
+                var records = csv.GetRecords<dynamic>();
+
+                foreach (var record in records)
                 {
                     T obj = (T)Activator.CreateInstance(ParseType);
-                    foreach (var header in line.Headers)
+
+                    // Convert dynamic record to dictionary for easier header/property access
+                    var recordDict = (IDictionary<string, object>)record;
+
+                    foreach (var kvp in recordDict)
                     {
+                        var header = kvp.Key;
+                        var valueObj = kvp.Value?.ToString() ?? "";
+
                         if (AllPropertiesByName.TryGetValue(header, out var property))
                         {
-                            if (line.HasColumn(header))
+                            try
                             {
-                                var value = line[header];
-                                try
-                                {
-                                    property.SetValue(obj, Convert.ChangeType(value, property.PropertyType, System.Globalization.CultureInfo.InvariantCulture));
-                                }
-                                catch (Exception ex)
-                                {
-                                    throw new InvalidProgramException($"Failed converting property {ParseType.Name}.{property.Name} [{property.PropertyType.Name}] from: '{value}' [{value.GetType().Name}]", ex);
-                                }
+                                // Convert to property type
+                                var convertedValue = Convert.ChangeType(valueObj, property.PropertyType, CultureInfo.InvariantCulture);
+                                property.SetValue(obj, convertedValue);
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new InvalidProgramException(
+                                    $"Failed converting property {ParseType.Name}.{property.Name} [{property.PropertyType.Name}] from: '{valueObj}' [{valueObj.GetType().Name}]",
+                                    ex);
                             }
                         }
                         /*
@@ -1207,6 +1216,8 @@ namespace ATT.DB
                         }
                         */
                     }
+
+                    // Add to cache
                     if (CachedData.TryAdd(obj.ID, obj))
                     {
                         //Framework.LogWarn($"WagoData.Load.{ParseType.Name}.Add: {obj.ID}", line.Values);
@@ -1215,6 +1226,7 @@ namespace ATT.DB
                     {
                         //Framework.LogWarn($"WagoData.Load.{ParseType.Name}.Skip: {obj.ID}", line.Values);
                     }
+
                     StoreLocalizedData(obj, locale);
                 }
 
