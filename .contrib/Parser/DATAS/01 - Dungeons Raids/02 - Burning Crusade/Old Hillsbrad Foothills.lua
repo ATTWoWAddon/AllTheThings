@@ -65,7 +65,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
+					-- #if AFTER MOP
 					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE, DRACTHYR_HORDE }, ALL_RACES),
+					-- #else
+					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE, DRACTHYR_HORDE, PANDAREN_NEUTRAL }, ALL_RACES),
+					-- #endif
 					["lvl"] = lvlsquish(66, 66, 15),
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["groups"] = {
