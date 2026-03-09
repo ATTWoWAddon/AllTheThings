@@ -42,13 +42,15 @@ local L = {
 		["Ingénierie"] = 4036,	-- Engineering
 		["Secourisme"] = 3273,	-- First Aid
 
-		-- Spanish (Classic Era)
+		-- Spanish-EU (Classic Era)
+		["Botánica"] = 2366,	-- Herbalism
 		["Costura"] = 3908,	-- Tailoring
+		["Desollar"] = 8613,	-- Skinning
+		["Ganzúa"] = 1809,	-- Lock Pick
 		["Marroquinería"] = 2108,	-- Leatherworking
 
-		["Ganzúa"] = 1809,        -- Lock Pick    -- Required for ES (EU)
-		["Desollar"] = 8613,    -- Skinning        -- Required for ES (EU)
-		["Cнятие шкур"] = 8613,    -- Skinning        -- Required for RU
+		-- Russian
+		["Cнятие шкур"] = 8613,	-- Skinning
 	},
 
 	EXPANSION_DATA = {
