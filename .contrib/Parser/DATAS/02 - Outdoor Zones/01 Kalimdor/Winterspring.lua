@@ -954,11 +954,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["races"] = HORDE_ONLY,
-					["crs"] = {
-						7454,	-- Berserk Owlbeast
-						7452,	-- Crazed Owlbeast
-						7453,	-- Moontouched Owlbeast
-					},
 					["lvl"] = 52,
 				}),
 				q(28609, {	-- Hammer Time
@@ -2055,15 +2050,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5083, {	-- Winterfall Firewater
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
 					["timeline"] = { REMOVED_4_0_3 },
-					["crs"] = {
-						10738,	-- High Chief Winterfall
-						7440,	-- Winterfall Den Watcher
-						7442,	-- Winterfall Pathfinder
-						10916,	-- Winterfall Runner
-						7439,	-- Winterfall Shaman
-						7441,	-- Winterfall Totemic
-						7438,	-- Winterfall Ursa
-					},
 					["lvl"] = 52,
 				}),
 				q(5201, {	-- Winterfall Intrusion
@@ -2657,6 +2643,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12771, {	-- Empty Firewater Flask
 					["timeline"] = { REMOVED_4_0_3 },
+					["crs"] = {
+						10738,	-- High Chief Winterfall
+						7440,	-- Winterfall Den Watcher
+						7442,	-- Winterfall Pathfinder
+						10916,	-- Winterfall Runner
+						7439,	-- Winterfall Shaman
+						7441,	-- Winterfall Totemic
+						7438,	-- Winterfall Ursa
+					},
+				}),
+				i(12558, {	-- Blue-feathered Necklace
+					["timeline"] = { REMOVED_4_0_3 },
+					["crs"] = {
+						7454,	-- Berserk Owlbeast
+						7452,	-- Crazed Owlbeast
+						7453,	-- Moontouched Owlbeast
+					},
 				}),
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill (RECIPE!)
 					["cr"] = 7524,	-- Anguished Highborne
