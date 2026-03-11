@@ -1454,6 +1454,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5601, {	-- Sister Pamela
 					["qg"] = 11629,	-- Jessica Redpath
 					["coord"] = { 61.2, 39.0, WINTERSPRING },
+					["lockCriteria"] = { 1, "questID", 5142 },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),

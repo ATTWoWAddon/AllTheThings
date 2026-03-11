@@ -1496,6 +1496,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5142, {	-- Little Pamela
 					["qg"] = 10927,	-- Marlene Redpath
 					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
+					["lockCriteria"] = { 1, "questID", 5601 },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
