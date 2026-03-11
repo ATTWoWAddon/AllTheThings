@@ -1494,9 +1494,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(5142, {	-- Little Pamela
+					["altQuests"] = { 5601 }, -- Sister Pamela
 					["qg"] = 10927,	-- Marlene Redpath
 					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
-					["lockCriteria"] = { 1, "questID", 5601 },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
@@ -3273,6 +3273,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(16252, {	-- Formula: Enchant Weapon - Crusader
 					["cr"] = 4494,	-- Scarlet Spellbinder
+				}),
+				i(12738, {	-- Dalson Outhouse Key (QI)
+					["description"] = "This item can only be looted after completing the quest 'Mrs. Dalson's Diary (5058)'",
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 10816,	-- Wandering Skeleton
+				}),
+				i(12739, {	-- Dalson Cabinet Key (QI)
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 10836,	-- Farmer Dalson
 				}),
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
