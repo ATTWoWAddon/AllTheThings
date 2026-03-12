@@ -845,8 +845,9 @@ local function ExportDataRecursively(data, styleFuncs, strings, depth)
 				strings[#strings + 1] = str
 			end
 		end
+		local depthShift = styleFuncs.depthShift and styleFuncs.depthShift(data) or 1
 		for i=1,#g do
-			ExportDataRecursively(g[i], styleFuncs, strings, depth + 1)
+			ExportDataRecursively(g[i], styleFuncs, strings, depth + depthShift)
 		end
 		if styleFuncs.afterSub then
 			str = styleFuncs.afterSub(data, depth)
