@@ -1,7 +1,7 @@
 -- App locals
 local appName, app = ...;
-local type,wipe,ipairs,pairs,rawget,select,tinsert,tremove,tonumber, math_floor
-	= type,wipe,ipairs,pairs,rawget,select,tinsert,tremove,tonumber, math.floor
+local type,wipe,ipairs,pairs,rawget,select,tinsert,tonumber, math_floor,setmetatable
+	= type,wipe,ipairs,pairs,rawget,select,tinsert,tonumber, math.floor,setmetatable
 
 -- WoW API Cache
 local C_Map_GetPlayerMapPosition, C_Map_GetMapInfo
@@ -95,6 +95,14 @@ local CleanFields = {
 	__canretry = 1,
 	SortType = 1,
 	OnClick = 1,
+	__FillGroups = 1,
+	_lastshown = 1,
+	_fillcomplete = 1,
+	back = 1,
+	indent = 1,
+	__class = 1,
+	window = 1,
+	__ExportTEMP = 1,
 };
 local function CleanObject(obj)
 	if obj == nil then return end
@@ -193,60 +201,93 @@ local function GetNameFromCost(costType, id, count)
 		return (count > 1 and ("x" .. count .. " ") or "") .. (app.GetNameFromProvider(costType, id) or UNKNOWN);
 	end
 end
-local function ExportKeyValue(key, value)
-	local str = key .. " = ";
-	if key == "providers" then
-		str = str .. "{\n";
+local ExportKeyValueHandlers = {
+	providers = function(key, value)
+		local lines = {"{"};
 		for i,o in ipairs(value) do
-			str = str .. "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },\t-- " .. (app.GetNameFromProvider(o[1], o[2]) or UNKNOWN) .. "\n";
+			lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },\t-- " .. (app.GetNameFromProvider(o[1], o[2]) or UNKNOWN);
 		end
-		str = str .. "},";
-	elseif key == "crs" or key == "qgs" then
-		str = str .. "{\n";
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+	crs = function(key, value)
+		local lines = {"{"};
 		for i,id in ipairs(value) do
-			str = str .. "\t" .. id .. ",\t-- " .. (app.NPCNameFromID[id] or UNKNOWN) .. "\n";
+			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.NPCNameFromID[id] or UNKNOWN);
 		end
-		str = str .. "},";
-	elseif key == "coords" then
-		str = str .. "{\n";
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+	coords = function(key, value)
+		local lines = {"{"};
 		for mapID,coordsForMap in pairs(value) do
-			str = str .. "\t[" .. mapID .. "] = {\n";
+			lines[#lines + 1] = "\t[" .. mapID .. "] = {\t-- " .. (app.GetMapName(mapID) or UNKNOWN)
 			for i,o in ipairs(coordsForMap) do
 				-- floor coords to nearest tenth
-				str = str .. "\t\t{ " .. ("%.1f"):format(app.round(o[1], 1)) .. ", " .. ("%.1f"):format(app.round(o[2], 1)) .. " },\n";
+				lines[#lines + 1] = "\t\t{ " .. ("%.1f"):format(app.round(o[1], 1)) .. ", " .. ("%.1f"):format(app.round(o[2], 1)) .. " },";
 			end
-			str = str .. "\t},\n";
+			lines[#lines + 1] = "\t},";
 		end
-		str = str .. "},";
-	elseif key == "cost" then
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+	cost = function(key, value)
 		if type(value) == "number" then
 			-- This is simply a gold value
-			str = str .. value .. ",\t-- " .. GetMoneyString(value);
+			return value .. ",\t-- " .. GetMoneyString(value);
 		else
 			-- This is the traditional cost format.
-			str = str .. "{\n";
+			local lines = {"{"};
 			for i,o in ipairs(value) do
-				str = str .. "\t{ \"" .. o[1] .. "\", " .. o[2] .. ", " .. (o[3] or 1) .. " },\t-- ".. GetNameFromCost(o[1], o[2], o[3]) .. "\n";
+				lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. ", " .. (o[3] or 1) .. " },\t-- ".. GetNameFromCost(o[1], o[2], o[3]);
 			end
-			str = str .. "},";
+			lines[#lines + 1] = "},";
+			return app.TableConcat(lines, nil, nil, "\n");
 		end
-	elseif key == "r" then
+	end,
+	r = function(key, value)
 		-- "r" is a shortcut for "races", where the whole of the faction can do a thing
-		str = "races = " .. (value == 2 and "ALLIANCE_ONLY" or "HORDE_ONLY") .. ",";
-	else
-		if not DefaultParsing[key] then
-			print("DEFAULT PARSING FOR KEY", key);
-			DefaultParsing[key] = true;
+		return "races = " .. (value == 2 and "ALLIANCE_ONLY" or "HORDE_ONLY") .. ",";
+	end,
+	maps = function(key, value)
+		local lines = {"{"};
+		for i,id in ipairs(value) do
+			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.GetMapName(id) or UNKNOWN);
 		end
-		if type(value) == "string" then
-			if value:find("\"") or value:find("\n") then
-				str = str .. "[[" .. value .. "]],";
-			else
-				str = str .. "\"" .. value .. "\",";
-			end
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+	sourceQuests = function(key, value)
+		local lines = {"{"};
+		for i,id in ipairs(value) do
+			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.GetQuestName(id) or UNKNOWN);
+		end
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+}
+ExportKeyValueHandlers.qgs = ExportKeyValueHandlers.crs
+ExportKeyValueHandlers.nextQuests = ExportKeyValueHandlers.sourceQuests
+
+local function ExportKeyValue(key, value)
+	local handler = ExportKeyValueHandlers[key];
+	if handler then
+		return key .. " = " .. handler(key, value);
+	end
+	-- Default parsing for unrecognized keys
+	if not DefaultParsing[key] then
+		print("DEFAULT PARSING FOR KEY", key);
+		DefaultParsing[key] = true;
+	end
+	local str = key .. " = ";
+	if type(value) == "string" then
+		if value:find("\"") or value:find("\n") then
+			str = str .. "[[" .. value .. "]],";
 		else
-			str = str .. tostring(value) .. ",";
+			str = str .. "\"" .. value .. "\",";
 		end
+	else
+		str = str .. tostring(value) .. ",";
 	end
 	return str;
 end
@@ -310,50 +351,75 @@ app:RegisterDataStyleExporter("raw", {
 	afterExport = function(data) return "} -- End Raw Data" end
 })
 
--- helpers for readable style
 local KnownShortcutsByType = {
 	Currency = "currency",
+	Decor = "i",
+	Exploration = "exploration",
+	FlightPath = "fp",
 	Header = "n",
 	Item = "i",
 	Map = "m",
 	NPC = "n",
 	Objective = "objective",
 	Quest = "q",
+	QuestAsBreadcrumb = "q",
 }
+local KeySwaps
+do
+local function DefaultKeyVal(data) return data[data.key] end
+KeySwaps = setmetatable({
+	Decor = function(data)
+		data.__ExportTEMP.ignore.itemID=1
+		data.__ExportTEMP.ignore.spellID=1
+		return data.itemID
+	end,
+	Header = function(data)
+		local id = data[data.key]
+		for k,i in pairs(app.HeaderConstants) do
+			if i == id then
+				return k
+			end
+		end
+	end,
+}, { __index = function(t,k)
+	return DefaultKeyVal
+end})
+end
 local function FormatReadableKey(data)
-	local hasKey = data and data.key
-	if not hasKey then return end
+	if not data or not data.key then return end
 
-	local id = data[hasKey]
 	local shortcut = KnownShortcutsByType[data.__type]
 	-- unknown key shortcut, fall back to nil so we treat it as unkeyed
 	if not shortcut then return end
 
-	if hasKey == "headerID" then
-		for k,i in pairs(app.HeaderConstants) do
-			if i == id then
-				id = k;
-				break;
-			end
-		end
-	end
-
+	local id = KeySwaps[data.__type](data)
 	return shortcut.."("..(id or UNKNOWN)
 end
 
+local IgnoredForReadable = setmetatable({
+	g = true,
+	name = true,
+	basename = true,
+	text = true,
+}, { __index = CleanFields })
 local function HasUsefulFields(data)
+	if not data then return end
+	if data.__ExportTEMP.useful.fields then return true end
 	for k in pairs(data) do
-		if not CleanFields[k]
-			and k ~= "g"
+		if not IgnoredForReadable[k]
 			and k ~= data.key
+			and not data.__ExportTEMP.ignore[k]
 		then
+			data.__ExportTEMP.useful.fields = true
 			return true
 		end
 	end
 end
 
 local function ReadableBeforeData(data, depth)
-	if not data or data.key == "strKey" then return end
+	if not data then return end
+	data.__ExportTEMP = setmetatable({}, app.MetaTable.AutoTable)
+	if data.key == "strKey" then return end
 	local indent = string.rep("\t", depth)
 	local keyStr = FormatReadableKey(data)
 	local name = data.basename or data.name or data.text
@@ -361,12 +427,14 @@ local function ReadableBeforeData(data, depth)
 	local hasGroups = data.g and #data.g > 0
 	local prefix = indent
 	if keyStr then
+		data.__ExportTEMP.useful.shortcut = 1
 		if anyOther or hasGroups then
 			prefix = prefix .. keyStr .. ", {"
 		else
 			prefix = prefix .. keyStr .. ")"
 		end
 	else
+		data.__ExportTEMP.useful.key = 1
 		prefix = prefix .. "{"
 	end
 	if name then
@@ -379,12 +447,6 @@ local function ReadableBeforeData(data, depth)
 	return prefix
 end
 
-local IgnoredForReadable = setmetatable({
-	g = true,
-	name = true,
-	basename = true,
-	text = true,
-}, { __index = CleanFields })
 local function ReadableMain(data, depth)
 	if data and data.key == "strKey" then return end
 	depth = depth or 0
@@ -393,7 +455,10 @@ local function ReadableMain(data, depth)
 		local datalines = {}
 		local keyindent = "\n" .. indent
 		for key,value in pairs(data) do
-			if not IgnoredForReadable[key] and key ~= data.key then
+			if not IgnoredForReadable[key]
+				and (key ~= data.key or data.__ExportTEMP.useful.key)
+				and not data.__ExportTEMP.ignore[key]
+			then
 				datalines[#datalines + 1] = indent .. ExportKeyValue(key,value):gsub("\n", keyindent)
 			end
 		end
@@ -420,20 +485,23 @@ local function ReadableAfterSub(data, depth)
 end
 
 local function ReadableAfterData(data, depth)
-	if not data or data.key == "strKey" then return end
-	local indent = string.rep("\t", depth)
-	local keyStr = FormatReadableKey(data)
-	local hasGroups = data.g and #data.g > 0
-	if keyStr then
-		if HasUsefulFields(data) or hasGroups then
-			return indent .. "}),"
+	if not data then return end
+	if data.key == "strKey" then
+		data.__ExportTEMP = nil
+		return
+	end
+	local suffix
+	if data.__ExportTEMP.useful.shortcut then
+		if HasUsefulFields(data) or (data.g and #data.g > 0) then
+			suffix = string.rep("\t", depth) .. "}),"
 		else
 			-- simple keyed entry (no other fields, no groups)
-			return
 		end
 	else
-		return indent .. "},"
+		suffix = string.rep("\t", depth) .. "},"
 	end
+	data.__ExportTEMP = nil
+	return suffix
 end
 
 -- register the 'readable' style exporter
