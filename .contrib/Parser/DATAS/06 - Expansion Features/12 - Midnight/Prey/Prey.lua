@@ -21,12 +21,12 @@ PREY = createHeader({
 });
 
 local PREYSEEKER_BOX_SYM = {
-	{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
+	{"select","expansionID",EXPANSION.MID},{"pop"},
 	{"where","headerID",PREY},{"pop"},
 	{"where","headerID",REWARDS},{"pop"},
 	{"where","headerID",ARMOR},{"finalize"},
 
-	{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
+	{"select","expansionID",EXPANSION.MID},{"pop"},
 	{"where","headerID",PREY},{"pop"},
 	{"where","headerID",REWARDS},{"pop"},
 	{"where","headerID",WEAPONS},{"finalize"},
@@ -35,7 +35,7 @@ local PREYSEEKER_BOX_SYM = {
 	{"where","headerID",ZONE_REWARDS},{"pop"},
 	{"where","headerID",ARMOR},{"pop"},
 	{"where","filterID",TRINKET_F},
-},
+}
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(PREY, {
