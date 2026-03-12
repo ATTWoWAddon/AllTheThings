@@ -340,7 +340,7 @@ end
 
 local function ReadableBeforeData(data, depth)
 	if not data or data.key == "strKey" then return end
-	local indent = string.rep("\t", depth>0 and depth-1 or 0)
+	local indent = string.rep("\t", depth)
 	local keyStr = FormatReadableKey(data)
 	local name = data.basename or data.name or data.text
 	local anyOther = false
@@ -393,8 +393,7 @@ local function ReadableBeforeSub(data, depth)
 		-- no non-clean fields (and no keyed value), just let recursion handle children
 		return
 	end
-	local indent1 = indent .. "\t"
-	return "\n" .. indent1 .. "groups = {"
+	return indent .. "\tgroups = {"
 end
 
 local function ReadableAfterSub(data, depth)
@@ -404,13 +403,12 @@ local function ReadableAfterSub(data, depth)
 		if not CleanFields[k] and k ~= "g" then anyOther = true; break end
 	end
 	if not anyOther then return end
-	local indent1 = indent .. "\t"
-	return "\n" .. indent1 .. "},"
+	return indent .. "\t},"
 end
 
 local function ReadableAfterData(data, depth)
 	if not data or data.key == "strKey" then return end
-	local indent = string.rep("\t", depth>0 and depth-1 or 0)
+	local indent = string.rep("\t", depth)
 	local keyStr = FormatReadableKey(data)
 	local anyOther = false
 	for k,v in pairs(data) do
@@ -421,7 +419,7 @@ local function ReadableAfterData(data, depth)
 	local hasGroups = data.g and #data.g > 0
 	if keyStr then
 		if anyOther or hasGroups then
-			return "\n" .. indent .. "}),"
+			return indent .. "}),"
 		else
 			-- simple keyed entry (no other fields, no groups)
 			-- if we added a name comment in beforeData we already included a comma
@@ -433,7 +431,7 @@ local function ReadableAfterData(data, depth)
 			end
 		end
 	else
-		return "\n" .. indent .. "},"
+		return indent .. "},"
 	end
 end
 
