@@ -257,12 +257,13 @@ local function ExportRawDataToString(data, depth)
 	local indent = string.rep("\t", depth)
 	if data then
 		local datalines = {}
+		local keyindent = "\n" .. indent
 		for key,value in pairs(data) do
 			if not CleanFields[key] and key ~= "g" then
-				datalines[#datalines + 1] = indent .. ExportKeyValue(key,value):gsub("\n", "\n" .. indent)
+				datalines[#datalines + 1] = indent .. ExportKeyValue(key,value):gsub("\n", keyindent)
 			end
 		end
-		return app.TableConcat(datalines, nil, nil, "\n")
+		return #datalines > 0 and app.TableConcat(datalines, nil, nil, "\n") or nil
 	end
 	return indent .. "nil,"
 end
@@ -338,17 +339,23 @@ local function FormatReadableKey(data)
 	end
 end
 
+local function HasUsefulFields(data)
+	for k in pairs(data) do
+		if not CleanFields[k]
+			and k ~= "g"
+			and k ~= data.key
+		then
+			return true
+		end
+	end
+end
+
 local function ReadableBeforeData(data, depth)
 	if not data or data.key == "strKey" then return end
 	local indent = string.rep("\t", depth)
 	local keyStr = FormatReadableKey(data)
 	local name = data.basename or data.name or data.text
-	local anyOther = false
-	for k,v in pairs(data) do
-		if not CleanFields[k] and k ~= "g" and k ~= data.key then
-			anyOther = true; break
-		end
-	end
+	local anyOther = HasUsefulFields(data)
 	local hasGroups = data.g and #data.g > 0
 	local prefix = indent
 	if keyStr then
@@ -370,72 +377,57 @@ local function ReadableBeforeData(data, depth)
 	return prefix
 end
 
+local IgnoredForReadable = setmetatable({
+	g = true,
+	name = true,
+	basename = true,
+	text = true,
+}, { __index = CleanFields })
 local function ReadableMain(data, depth)
 	if data and data.key == "strKey" then return end
-	local indent = string.rep("\t", depth)
-	local sub = indent .. "\t"
-	local str = ""
-	for k,v in pairs(data) do
-		-- ignore cleaned fields, groups, the keyed identifier, and name/text fields
-		if not CleanFields[k] and k ~= "g" and k ~= data.key
-			and k ~= "name" and k ~= "basename" and k ~= "text" then
-			str = str .. "\n" .. sub .. ExportKeyValue(k,v):gsub("\n", "\n"..sub)
+	depth = depth or 0
+	local indent = string.rep("\t", depth + 1)
+	if data then
+		local datalines = {}
+		local keyindent = "\n" .. indent
+		for key,value in pairs(data) do
+			if not IgnoredForReadable[key] and key ~= data.key then
+				datalines[#datalines + 1] = indent .. ExportKeyValue(key,value):gsub("\n", keyindent)
+			end
 		end
+		return #datalines > 0 and app.TableConcat(datalines, nil, nil, "\n") or nil
 	end
-	-- strip any leading newline (we'll join entries with a newline anyway)
-	str = str:gsub("^\n", "")
-	if str == "" then
-		return nil
-	end
-	return str
+	return indent .. "nil,"
+end
+
+local function ReadableDepthShift(data)
+	return HasUsefulFields(data) and 2 or 1
 end
 
 local function ReadableBeforeSub(data, depth)
-	local indent = string.rep("\t", depth)
-	local anyOther = false
-	for k in pairs(data) do
-		if not CleanFields[k] and k ~= "g" and k ~= data.key then anyOther = true; break end
-	end
-	if not anyOther then
-		-- only key/ g present, nothing to wrap
+	if not HasUsefulFields(data) then
+		-- only key/g present, nothing to wrap
 		return
 	end
-	return indent .. "\tgroups = {"
+	return string.rep("\t", depth + 1) .. "groups = {"
 end
 
 local function ReadableAfterSub(data, depth)
-	local indent = string.rep("\t", depth)
-	local anyOther = false
-	for k in pairs(data) do
-		if not CleanFields[k] and k ~= "g" and k ~= data.key then anyOther = true; break end
-	end
-	if not anyOther then return end
-	return indent .. "\t},"
+	if not HasUsefulFields(data) then return end
+	return string.rep("\t", depth + 1) .. "},"
 end
 
 local function ReadableAfterData(data, depth)
 	if not data or data.key == "strKey" then return end
 	local indent = string.rep("\t", depth)
 	local keyStr = FormatReadableKey(data)
-	local anyOther = false
-	for k,v in pairs(data) do
-		if not CleanFields[k] and k ~= "g" and k ~= data.key then
-			anyOther = true; break
-		end
-	end
 	local hasGroups = data.g and #data.g > 0
 	if keyStr then
-		if anyOther or hasGroups then
+		if HasUsefulFields(data) or hasGroups then
 			return indent .. "}),"
 		else
 			-- simple keyed entry (no other fields, no groups)
-			-- if we added a name comment in beforeData we already included a comma
-			local name = data.basename or data.name or data.text
-			if name then
-				return ""
-			else
-				return ","
-			end
+			return
 		end
 	else
 		return indent .. "},"
@@ -449,6 +441,7 @@ app:RegisterDataStyleExporter("readable", {
 	afterSub = ReadableAfterSub,
 	beforeData = ReadableBeforeData,
 	afterData = ReadableAfterData,
+	depthShift = ReadableDepthShift,
 	beforeExport = function(data) return "{ -- Readable Data from "..(data and (data.name or (data.window and data.window.Suffix)) or "") end,
 	afterExport = function(data) return "} -- End Readable Data" end,
 })
