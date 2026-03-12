@@ -309,146 +309,144 @@ app:RegisterDataStyleExporter("raw", {
 	afterExport = function(data) return "} -- End Raw Data" end
 })
 
-local function ExportDataToString(data)
-	if data then
-		local id, name;
-		local restore = {};
-		if rawget(data, "basename") then
-			name = data.basename;
-			restore.basename = name;
-			data.basename = nil;
+-- helpers for readable style
+local function FormatReadableKey(data)
+	local hasKey = data and data.key
+	if not hasKey then return nil end
+	local id = data[hasKey]
+	if hasKey == "npcID" then
+		return "n("..id
+	elseif hasKey == "itemID" then
+		return "i("..id
+	elseif hasKey == "mapID" then
+		return "m("..id
+	elseif hasKey == "questID" then
+		return "q("..id
+	elseif hasKey == "objectiveID" then
+		return "objective("..id
+	elseif hasKey == "headerID" then
+		for k,i in pairs(app.HeaderConstants) do
+			if i == id then
+				id = k;
+				break;
+			end
+		end
+		return "n("..id
+	else
+		-- unknown key, fall back to nil so we treat it as unkeyed
+		return nil
+	end
+end
+
+local function ReadableBeforeData(data, depth)
+	if not data or data.key == "strKey" then return end
+	local indent = string.rep("\t", depth>0 and depth-1 or 0)
+	local keyStr = FormatReadableKey(data)
+	local name = data.basename or data.name or data.text
+	local anyOther = false
+	for k,v in pairs(data) do
+		if not CleanFields[k] and k ~= "g" and k ~= data.key then
+			anyOther = true; break
+		end
+	end
+	local hasGroups = data.g and #data.g > 0
+	local prefix = indent
+	if keyStr then
+		if anyOther or hasGroups then
+			prefix = prefix .. keyStr .. ", {"
 		else
-			name = rawget(data, "name");
+			prefix = prefix .. keyStr .. ")"
+		end
+	else
+		prefix = prefix .. "{"
+	end
+	if name then
+		if keyStr and not (anyOther or hasGroups) then
+			prefix = prefix .. ",\t-- " .. name
+		else
+			prefix = prefix .. " -- " .. name
+		end
+	end
+	return prefix
+end
+
+local function ReadableMain(data, depth)
+	if data and data.key == "strKey" then return end
+	local indent = string.rep("\t", depth)
+	local sub = indent .. "\t"
+	local str = ""
+	for k,v in pairs(data) do
+		if not CleanFields[k] and k ~= "g" and k ~= data.key then
+			str = str .. "\n" .. sub .. ExportKeyValue(k,v):gsub("\n", "\n"..sub)
+		end
+	end
+	return str
+end
+
+local function ReadableBeforeSub(data, depth)
+	local indent = string.rep("\t", depth)
+	local anyOther = false
+	for k in pairs(data) do
+		if not CleanFields[k] and k ~= "g" then anyOther = true; break end
+	end
+	if not anyOther then
+		-- no non-clean fields (and no keyed value), just let recursion handle children
+		return
+	end
+	local indent1 = indent .. "\t"
+	return "\n" .. indent1 .. "groups = {"
+end
+
+local function ReadableAfterSub(data, depth)
+	local indent = string.rep("\t", depth)
+	local anyOther = false
+	for k in pairs(data) do
+		if not CleanFields[k] and k ~= "g" then anyOther = true; break end
+	end
+	if not anyOther then return end
+	local indent1 = indent .. "\t"
+	return "\n" .. indent1 .. "},"
+end
+
+local function ReadableAfterData(data, depth)
+	if not data or data.key == "strKey" then return end
+	local indent = string.rep("\t", depth>0 and depth-1 or 0)
+	local keyStr = FormatReadableKey(data)
+	local anyOther = false
+	for k,v in pairs(data) do
+		if not CleanFields[k] and k ~= "g" and k ~= data.key then
+			anyOther = true; break
+		end
+	end
+	local hasGroups = data.g and #data.g > 0
+	if keyStr then
+		if anyOther or hasGroups then
+			return "\n" .. indent .. "}),"
+		else
+			-- simple keyed entry (no other fields, no groups)
+			-- if we added a name comment in beforeData we already included a comma
+			local name = data.basename or data.name or data.text
 			if name then
-				restore.name = name;
-				data.name = nil;
+				return ""
 			else
-				name = rawget(data, "text")
-				if name then
-					restore.text = name;
-					data.text = nil;
-				end
+				return ","
 			end
 		end
-		
-		local hasKey = data.key;
-		if hasKey then
-			id = data[hasKey];
-			restore[hasKey] = id;
-			
-			-- Some classes have 2 parameters and will need to rip out some data to restore later
-			-- Export the shortcut used by the key
-			if hasKey == "npcID" then
-				hasKey = "n(" .. id;
-			elseif hasKey == "itemID" then
-				hasKey = "i(" .. id;
-			elseif hasKey == "mapID" then
-				hasKey = "m(" .. id;
-			elseif hasKey == "questID" then
-				hasKey = "q(" .. id;
-			elseif hasKey == "objectiveID" then
-				hasKey = "objective(" .. id;
-			elseif hasKey == "headerID" then
-				for k,i in pairs(app.HeaderConstants) do
-					if i == id then
-						id = k;
-						break;
-					end
-				end
-				hasKey = "n(" .. id;
-			else
-				-- Unhandled key, just inject it raw.
-				for key,value in pairs(restore) do
-					data[key] = value;
-				end
-				restore = {};
-				hasKey = nil;
-			end
-			if hasKey then
-				if not name then name = data.name; end
-				data[data.key] = nil;
-			end
-		end
-		
-		-- Build the string for non-keyed fields
-		local str = "";
-		local anyKeys;
-		local hasG = data.g;
-		if hasG then
-			restore.g = hasG;
-			data.g = nil;
-		end
-		for key,value in pairs(data) do
-			if not CleanFields[key] then
-				str = str .. "\n\t" .. ExportKeyValue(key,value):gsub("\n", "\n\t");
-				anyKeys = true;
-			end
-		end
-		
-		-- Assign the groups back and export relative groups
-		if hasG and #hasG > 0 then
-			if anyKeys then
-				str = str .. "\n\tgroups = {";
-				for i,o in ipairs(hasG) do
-					str = str .. "\n\t\t" .. (ExportDataToString(o):gsub("\n", "\n\t\t"));
-				end
-				str = str .. "\n\t},";
-			else
-				anyKeys = true;
-				for i,o in ipairs(hasG) do
-					str = str .. "\n\t" .. (ExportDataToString(o):gsub("\n", "\n\t"));
-				end
-			end
-		end
-		
-		-- Restore the silenced fields back to their original values.
-		for key,value in pairs(restore) do
-			data[key] = value;
-		end
-		if anyKeys then
-			if hasKey then
-				if name then
-					return hasKey .. ", {\t-- " .. name .. str .. "\n}),";
-				else
-					return hasKey .. ", {" .. str .. "\n}),";
-				end
-			else
-				if name then
-					return "{\t-- " .. name .. str .. "\n},";
-				else
-					return "{" .. str .. "\n},";
-				end
-			end
-		else
-			if hasKey then
-				if name then
-					return hasKey .. "),\t-- " .. name .. str;
-				else
-					return hasKey .. ")," .. str;
-				end
-			else
-				if name then
-					return "{\t-- " .. name .. str .. "\n},";
-				else
-					return "{" .. str .. "\n},";
-				end
-			end
-		end
-	end
-	return "nil,";
-end
-local function OnClick_ExportData(row, button)
-	-- TODO: It would be neat to be able to export singular objects
-	if button == "LeftButton" and IsAltKeyDown() then
-		local str = ExportDataToString(row.ref);
-		if str then
-			app:ShowPopupDialogWithMultiLineEditBox(str, nil, "Export Results");
-		else
-			app.print("Nothing to export");
-		end
-		return true;
+	else
+		return "\n" .. indent .. "},"
 	end
 end
+
+-- register the 'readable' style exporter
+app:RegisterDataStyleExporter("readable", {
+	main = ReadableMain,
+	beforeSub = ReadableBeforeSub,
+	afterSub = ReadableAfterSub,
+	beforeData = ReadableBeforeData,
+	afterData = ReadableAfterData,
+	beforeExport = function(data) return "{ -- Readable Data from "..(data and (data.name or (data.window and data.window.Suffix)) or "") end,
+	afterExport = function(data) return "} -- End Readable Data" end,
+})
 
 -- Uncomment this section if you need to enable Debugger:
 -- Retail Currently uses [/att debugger] as defined below
@@ -568,24 +566,7 @@ app:CreateWindow("Debugger", {
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
-						local str;
-						for i,o in ipairs(self.data.g) do
-							if o.key ~= "strKey" then
-								local substr = ExportDataToString(CloneObject(o));
-								if substr then
-									if str then
-										str = str .. "\n" .. substr;
-									else
-										str = substr;
-									end
-								end
-							end
-						end
-						if str then
-							app:ShowPopupDialogWithMultiLineEditBox(str, nil, "Export Results");
-						else
-							app.print("Nothing to export");
-						end
+						app:ExportStylizedData(self, "readable");
 						return true;
 					end,
 				}),
