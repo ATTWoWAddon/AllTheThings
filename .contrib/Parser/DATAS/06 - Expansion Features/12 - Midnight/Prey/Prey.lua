@@ -1,12 +1,22 @@
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+-------------------------------------------------------------------
+--	  E X P A N S I O N   F E A T U R E S	M O D U L E	   --
+-------------------------------------------------------------------
 
 PREY = createHeader({
 	readable = "Prey",
 	icon = 237274,
 	text = {
 		en = "Prey",
+		de = "Beutejagd",
+		es = "Presa",
+		mx = "Presa",
+		fr = "Traque",
+		it = "Preda",
+		ko = "사냥감",
+		pt = "Presa",
+		ru = "Добыча",
+		cn = "狩猎",
+		tw = "狩獵",
 	},
 });
 
@@ -25,10 +35,9 @@ local PREYSEEKER_BOX_SYM = {
 	{"where","headerID",ZONE_REWARDS},{"pop"},
 	{"where","headerID",ARMOR},{"pop"},
 	{"where","filterID",TRINKET_F},
-}
+},
 
-root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
-	-- TODO: Move this all to Expansion Features instead?
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(PREY, {
 		n(ACHIEVEMENTS, {
 			ach(62403),	-- 'Tis But A Scratch
@@ -574,38 +583,36 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(MAP.MIDNIGHT.QUELTHALAS, {
-		n(PREY, {
-			n(QUESTS, {
-				--whatever that rng things are happen
-				--q(95485),	-- after zone (Eversong Woods) rare kill during Prey (and unflagged at same frame)
-				--q(95535),	-- completed/unflagged/completed/unflagged/completed (yes, 3 times), after Lost Guardian was killied during Prey in zone (hard mode)
-				--q(95536),	-- unflagged after looting Minor Coalesced Anguish
-				--q(95537),	-- same as above, but after Banuran was kiiled during Prey in zone (hard mode)
-				--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
-				--q(95539), -- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
+	n(PREY, {
+		n(QUESTS, {
+			--whatever that rng things are happen
+			--q(95485),	-- after zone (Eversong Woods) rare kill during Prey (and unflagged at same frame)
+			--q(95535),	-- completed/unflagged/completed/unflagged/completed (yes, 3 times), after Lost Guardian was killied during Prey in zone (hard mode)
+			--q(95536),	-- unflagged after looting Minor Coalesced Anguish
+			--q(95537),	-- same as above, but after Banuran was kiiled during Prey in zone (hard mode)
+			--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
+			--q(95539), -- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
 
-				--related to prey bosses kill - counter for something?
-				--doesn't matter on difficulty or whatever boss it was, weekly
-				q(95000),	-- 1st per week
-				q(95001),	-- 2nd per week
-				q(95002),	-- 3rd per week
-				q(95003),	-- 4th per week
+			--related to prey bosses kill - counter for something?
+			--doesn't matter on difficulty or whatever boss it was, weekly
+			q(95000),	-- 1st per week
+			q(95001),	-- 2nd per week
+			q(95002),	-- 3rd per week
+			q(95003),	-- 4th per week
 
-				--Seems like lockout for rewards? Weekly
-				--- Adventures
-				q(93168),	-- Adventurer chest lockout (Normal), 1st
-				--q(93156?),	-- Adventurer chest lockout (Normal), 2nd (after it - Adventures Sack as reward)
-				--- Veteran
-				q(93169),	-- Veteran chest lockout (Hard), 1st
-				q(93857),	-- Veteran chest lockout (Hard), 2nd (after it - Veteran Sack as reward)
-				--- Nightmare
-				q(93170),	-- Chapmpion chest lockout (Nightmare), 1st
-				--q(93158?),	-- Chapmpion chest lockout (Nightmare), 2nd (after it - Chapmpion Sack as reward)
+			--Seems like lockout for rewards? Weekly
+			--- Adventures
+			q(93168),	-- Adventurer chest lockout (Normal), 1st
+			--q(93156?),	-- Adventurer chest lockout (Normal), 2nd (after it - Adventures Sack as reward)
+			--- Veteran
+			q(93169),	-- Veteran chest lockout (Hard), 1st
+			q(93857),	-- Veteran chest lockout (Hard), 2nd (after it - Veteran Sack as reward)
+			--- Nightmare
+			q(93170),	-- Chapmpion chest lockout (Nightmare), 1st
+			--q(93158?),	-- Chapmpion chest lockout (Nightmare), 2nd (after it - Chapmpion Sack as reward)
 
-				-- Unknown?
-				q(93857),	-- Completed with questID 91098 and 93168
-			}),
+			-- Unknown?
+			q(93857),	-- Completed with questID 91098 and 93168
 		}),
 	}),
 }));
