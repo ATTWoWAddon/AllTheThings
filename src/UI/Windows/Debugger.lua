@@ -250,41 +250,65 @@ local function ExportKeyValue(key, value)
 	end
 	return str;
 end
-local function ExportRawDataToString(data)
+local function ExportRawDataToString(data, depth)
+	-- ignore string-keyed entries; they should not be exported
+	if data and data.key == "strKey" then return end
+	depth = depth or 0
+	local indent = string.rep("\t", depth)
 	if data then
-		local str = "{";
-		local hasG = data.g;
-		if hasG then data.g = nil; end
-		
-		local anyOtherKeys;
+		local datalines = {}
 		for key,value in pairs(data) do
-			if not CleanFields[key] then
-				str = str .. "\n\t" .. ExportKeyValue(key,value):gsub("\n", "\n\t");
-				anyOtherKeys = true;
+			if not CleanFields[key] and key ~= "g" then
+				datalines[#datalines + 1] = indent .. ExportKeyValue(key,value):gsub("\n", "\n" .. indent)
 			end
 		end
-		
-		-- Assign the groups back
-		if hasG then
-			data.g = hasG;
-			if #hasG > 0 then
-				if anyOtherKeys then
-					str = str .. "\n\tg = {";
-					for i,o in ipairs(hasG) do
-						str = str .. "\n\t\t" .. (ExportRawDataToString(o):gsub("\n", "\n\t\t"));
-					end
-					str = str .. "\n\t}";
-				else
-					for i,o in ipairs(hasG) do
-						str = str .. "\n\t" .. (ExportRawDataToString(o):gsub("\n", "\n\t"));
-					end
-				end
-			end
-		end
-		return str .. "\n},";
+		return app.TableConcat(datalines, nil, nil, "\n")
 	end
-	return "nil,";
+	return indent .. "nil,"
 end
+local function RawBeforeSub(data, depth)
+	local indent = string.rep("\t", depth)
+	local anyOtherKeys = false
+	for key in pairs(data) do
+		if not CleanFields[key] then
+			anyOtherKeys = true
+			break
+		end
+	end
+	if anyOtherKeys then
+		return indent .. "g = {"
+	else
+		return indent .. "\t{"
+	end
+end
+local function RawAfterSub(data, depth)
+	local indent = string.rep("\t", depth)
+	local anyOtherKeys = false
+	for key in pairs(data) do
+		if not CleanFields[key] then
+			anyOtherKeys = true
+			break
+		end
+	end
+	if anyOtherKeys then
+		return indent .. "},"
+	else
+		return indent .. "\t},"
+	end
+end
+
+-- register the 'raw' style exporter
+app:RegisterDataStyleExporter("raw", {
+	main = ExportRawDataToString,
+	beforeSub = RawBeforeSub,
+	afterSub = RawAfterSub,
+	-- TODO: if not all items are loaded the .name can be empty, perhaps add a full scan of .name then export once all return??
+	beforeData = function(data, depth) if data and data.key ~= "strKey" then return string.rep("\t", depth>0 and depth-1 or 0).."{"..(data.name and (" -- "..data.name) or "") end end,
+	afterData = function(data, depth) if data and data.key ~= "strKey" then return string.rep("\t", depth>0 and depth-1 or 0).."}," end end,
+	beforeExport = function(data) return "{ -- Raw Data from "..(data and (data.name or (data.window and data.window.Suffix)) or "") end,
+	afterExport = function(data) return "} -- End Raw Data" end
+})
+
 local function ExportDataToString(data)
 	if data then
 		local id, name;
@@ -534,24 +558,7 @@ app:CreateWindow("Debugger", {
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
-						local str;
-						for i,o in ipairs(self.data.g) do
-							if o.key ~= "strKey" then
-								local substr = ExportRawDataToString(CloneObject(o));
-								if substr then
-									if str then
-										str = str .. "\n" .. substr;
-									else
-										str = substr;
-									end
-								end
-							end
-						end
-						if str then
-							app:ShowPopupDialogWithMultiLineEditBox(str, nil, "Export Results");
-						else
-							app.print("Nothing to export");
-						end
+						app:ExportStylizedData(self, "raw");
 						return true;
 					end,
 				}),
