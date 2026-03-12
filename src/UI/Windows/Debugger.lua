@@ -376,9 +376,16 @@ local function ReadableMain(data, depth)
 	local sub = indent .. "\t"
 	local str = ""
 	for k,v in pairs(data) do
-		if not CleanFields[k] and k ~= "g" and k ~= data.key then
+		-- ignore cleaned fields, groups, the keyed identifier, and name/text fields
+		if not CleanFields[k] and k ~= "g" and k ~= data.key
+			and k ~= "name" and k ~= "basename" and k ~= "text" then
 			str = str .. "\n" .. sub .. ExportKeyValue(k,v):gsub("\n", "\n"..sub)
 		end
+	end
+	-- strip any leading newline (we'll join entries with a newline anyway)
+	str = str:gsub("^\n", "")
+	if str == "" then
+		return nil
 	end
 	return str
 end
@@ -387,10 +394,10 @@ local function ReadableBeforeSub(data, depth)
 	local indent = string.rep("\t", depth)
 	local anyOther = false
 	for k in pairs(data) do
-		if not CleanFields[k] and k ~= "g" then anyOther = true; break end
+		if not CleanFields[k] and k ~= "g" and k ~= data.key then anyOther = true; break end
 	end
 	if not anyOther then
-		-- no non-clean fields (and no keyed value), just let recursion handle children
+		-- only key/ g present, nothing to wrap
 		return
 	end
 	return indent .. "\tgroups = {"
@@ -400,7 +407,7 @@ local function ReadableAfterSub(data, depth)
 	local indent = string.rep("\t", depth)
 	local anyOther = false
 	for k in pairs(data) do
-		if not CleanFields[k] and k ~= "g" then anyOther = true; break end
+		if not CleanFields[k] and k ~= "g" and k ~= data.key then anyOther = true; break end
 	end
 	if not anyOther then return end
 	return indent .. "\t},"
