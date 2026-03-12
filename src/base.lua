@@ -793,3 +793,111 @@ app.Modules = {};
 
 -- Global Variables
 AllTheThingsSavedVariables = {};
+
+-- Data style exporters and utility for copying window data via various styles.
+local DataStyleExporters = {};
+
+-- Register a new exporter by name.  If the style already exists or the
+-- provided function is invalid the call is ignored.
+function app:RegisterDataStyleExporter(style, funcs)
+	if type(style) ~= "string" or type(funcs) ~= "table" or type(funcs.main) ~= "function" then
+		app.print("Invalid definition for RegisterDataStyleExporter:", style)
+		return
+	end
+	if DataStyleExporters[style] then
+		app.print("Export Style already defined!",style)
+	end
+	-- Validate optional function keys
+	for key, func in pairs(funcs) do
+		if key ~= "main" and type(func) ~= "function" then
+			app.print("Invalid definition for RegisterDataStyleExporter:", style, "- invalid key:", key)
+			return
+		end
+	end
+	DataStyleExporters[style] = funcs
+end
+
+-- Recursive helper which walks data and its .g subgroups applying the
+-- provided style function and collecting results into the strings array.
+local function ExportDataRecursively(data, styleFuncs, strings, depth)
+	if not data then return end
+	depth = depth or 0
+	local g = data.g
+	if not g or type(g) ~= "table" then
+		g = nil
+	end
+	local str
+	-- run the style exporter and add its result if present
+	if styleFuncs.beforeData then
+		str = styleFuncs.beforeData(data, depth)
+		if str then
+			strings[#strings + 1] = str
+		end
+	end
+	str = styleFuncs.main(data, depth)
+	if str then
+		strings[#strings + 1] = str;
+	end
+	if g then
+		if styleFuncs.beforeSub then
+			str = styleFuncs.beforeSub(data, depth)
+			if str then
+				strings[#strings + 1] = str
+			end
+		end
+		for i=1,#g do
+			ExportDataRecursively(g[i], styleFuncs, strings, depth + 1)
+		end
+		if styleFuncs.afterSub then
+			str = styleFuncs.afterSub(data, depth)
+			if str then
+				strings[#strings + 1] = str;
+			end
+		end
+	end
+	if styleFuncs.afterData then
+		str = styleFuncs.afterData(data, depth)
+		if str then
+			strings[#strings + 1] = str
+		end
+	end
+end
+
+-- Accepts a window (string identifier or table) and an export style key.
+-- The style key is looked up in DataStyleExporters; if missing an error message is
+-- shown.  Data from the window and all nested groups is passed through the
+-- exporter and the resulting strings concatenated and displayed in a multi-
+-- line popup for easy copying.
+function app:ExportStylizedData(window, style)
+	-- style must exist and window must have data
+	local styleFuncs = DataStyleExporters[style]
+	if not styleFuncs then
+		app.print("Export Style not defined!",style)
+		return
+	end
+	-- resolve window string to actual window table if needed
+	if type(window) == "string" then
+		window = app:GetWindow(window)
+	end
+	if not window or not window.data then
+		app.print("Export Window not defined or has no data!")
+		return
+	end
+	local DataStyleStrings = {}
+	if styleFuncs.beforeExport then
+		local str = styleFuncs.beforeExport(window.data)
+		if str then
+			DataStyleStrings[#DataStyleStrings + 1] = str
+		end
+	end
+	ExportDataRecursively(window.data, styleFuncs, DataStyleStrings)
+	if styleFuncs.afterExport then
+		local str = styleFuncs.afterExport(window.data)
+		if str then
+			DataStyleStrings[#DataStyleStrings + 1] = str
+		end
+	end
+	-- join each style string with a newline for readability
+	local out = app.TableConcat(DataStyleStrings, nil, nil, "\n")
+	app:ShowPopupDialogWithMultiLineEditBox(out)
+end
