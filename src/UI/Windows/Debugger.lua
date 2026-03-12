@@ -311,32 +311,34 @@ app:RegisterDataStyleExporter("raw", {
 })
 
 -- helpers for readable style
+local KnownShortcutsByType = {
+	Currency = "currency",
+	Header = "n",
+	Item = "i",
+	Map = "m",
+	NPC = "n",
+	Objective = "objective",
+	Quest = "q",
+}
 local function FormatReadableKey(data)
 	local hasKey = data and data.key
-	if not hasKey then return nil end
+	if not hasKey then return end
+
 	local id = data[hasKey]
-	if hasKey == "npcID" then
-		return "n("..id
-	elseif hasKey == "itemID" then
-		return "i("..id
-	elseif hasKey == "mapID" then
-		return "m("..id
-	elseif hasKey == "questID" then
-		return "q("..id
-	elseif hasKey == "objectiveID" then
-		return "objective("..id
-	elseif hasKey == "headerID" then
+	local shortcut = KnownShortcutsByType[data.__type]
+	-- unknown key shortcut, fall back to nil so we treat it as unkeyed
+	if not shortcut then return end
+
+	if hasKey == "headerID" then
 		for k,i in pairs(app.HeaderConstants) do
 			if i == id then
 				id = k;
 				break;
 			end
 		end
-		return "n("..id
-	else
-		-- unknown key, fall back to nil so we treat it as unkeyed
-		return nil
 	end
+
+	return shortcut.."("..(id or UNKNOWN)
 end
 
 local function HasUsefulFields(data)
