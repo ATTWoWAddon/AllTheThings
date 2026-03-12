@@ -955,12 +955,5 @@ app:CreateWindow("Debugger", {
 		end
 		self:RegisterEvent("QUEST_ACCEPTED");
 	end,
-	OnUpdate = function(self, ...)
-		-- turn off the Visibility filter for the Debugger update
-		local filterVisible = app.Modules.Filter.Get.Visible();
-		app.Modules.Filter.Set.Visible();
-		self:DefaultUpdate(...);
-		app.Modules.Filter.Set.Visible(filterVisible);
-		return true;
-	end,
+	VisibilityFilter = app.ReturnTrue,
 });
