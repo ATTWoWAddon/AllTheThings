@@ -245,7 +245,7 @@ local function ExportKeyValue(key, value)
 				str = str .. "\"" .. value .. "\",";
 			end
 		else
-			str = str .. value .. ",";
+			str = str .. tostring(value) .. ",";
 		end
 	end
 	return str;
