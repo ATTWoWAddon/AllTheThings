@@ -462,7 +462,6 @@ app:CreateWindow("Debugger", {
 		-- Bubble Up the Maps
 		local mapID = app.CurrentMapID;
 		if mapID then
-			header = { key = "mapID", ["mapID"] = mapID, ["g"] = { header } };
 			local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 			if pos then
 				local px, py = pos:GetXY();
@@ -471,7 +470,7 @@ app:CreateWindow("Debugger", {
 			local mapInfo = C_Map_GetMapInfo(mapID);
 			if mapInfo then
 				while mapID and mapID ~= 0 do
-					header = { key = "mapID", ["mapID"] = mapID, ["g"] = { header } };
+					header = { key = "mapID", mapID = mapID, g = { header } }
 					mapInfo = C_Map_GetMapInfo(mapID);
 					mapID = mapInfo and mapInfo.parentMapID or 0;
 				end
