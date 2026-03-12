@@ -212,7 +212,8 @@ local function ExportKeyValue(key, value)
 		for mapID,coordsForMap in pairs(value) do
 			str = str .. "\t[" .. mapID .. "] = {\n";
 			for i,o in ipairs(coordsForMap) do
-				str = str .. "\t\t{ " .. o[1] .. ", " .. o[2] .. " },\n";
+				-- floor coords to nearest tenth
+				str = str .. "\t\t{ " .. ("%.1f"):format(app.round(o[1], 1)) .. ", " .. ("%.1f"):format(app.round(o[2], 1)) .. " },\n";
 			end
 			str = str .. "\t},\n";
 		end
