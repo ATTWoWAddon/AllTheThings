@@ -16,6 +16,14 @@ namespace ATT.DB.Types
         public long TrivialSkillLineRankLow { get; set; }
         public long TrivialSkillLineRankHigh { get; set; }
         [ExportableData("skillID")]
+        public long SkillID
+        {
+            get
+            {
+                Framework.Log($"Exporting SkillLineAbility skillID:{SkillupSkillLineID}, ID:{ID}, requireSkill:{SkillLine}, recipeID:{SpellID}");
+                return SkillupSkillLineID;
+            }
+        }
         public long SkillupSkillLineID { get; set; }
 
         [ExportableData("recipeID")]

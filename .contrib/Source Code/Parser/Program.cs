@@ -553,21 +553,11 @@ namespace ATT
                     Framework.Objects.MERGE_OBJECT_FIELDS =
                         Framework.ParseAsStringDictionary(lua.GetTable("MERGE_OBJECT_FIELDS") ?? throw new InvalidDataException("Missing 'MERGE_OBJECT_FIELDS' Global!"))
                         .ToDictionary(kvp => kvp.Key, kvp => (kvp.Value as List<object>)?.Select(o => o.ToString()).ToArray());
-                    Trace.WriteLine("MERGE_OBJECT_FIELDS:");
-                    foreach (var keyValuePair in Framework.Objects.MERGE_OBJECT_FIELDS)
-                    {
-                        Trace.WriteLine($" {keyValuePair.Key}: {string.Join(", ", keyValuePair.Value)}");
-                    }
-
+                    
                     Framework.Objects.MERGE_FROM_OBJECT_FIELDS =
                         Framework.ParseAsStringDictionary(lua.GetTable("MERGE_FROM_OBJECT_FIELDS") ?? throw new InvalidDataException("Missing 'MERGE_FROM_OBJECT_FIELDS' Global!"))
                         .ToDictionary(kvp => kvp.Key, kvp => (kvp.Value as List<object>)?.Select(o => o.ToString()).ToArray());
-                    Trace.WriteLine("MERGE_FROM_OBJECT_FIELDS:");
-                    foreach (var keyValuePair in Framework.Objects.MERGE_FROM_OBJECT_FIELDS)
-                    {
-                        Trace.WriteLine($" {keyValuePair.Key}: {string.Join(", ", keyValuePair.Value)}");
-                    }
-
+                    
                     Framework.Objects.MAPID_COORD_SHIFTS =
                         Framework.ParseAsDictionary<long>(lua.GetTable("MAPID_COORD_SHIFTS") ?? throw new InvalidDataException("Missing 'MAPID_COORD_SHIFTS' Global!"))
                         .ToDictionary(kvp => kvp.Key, kvp => CoordShift.Create(kvp.Value));
@@ -576,7 +566,7 @@ namespace ATT
                     Framework.SUPPORTED_LOCALES =
                         Framework.ParseAsDictionary<long>(lua.GetTable("SUPPORTED_LOCALES") ?? throw new InvalidDataException("Missing 'SUPPORTED_LOCALES' Global!"))
                         .Select(kvp => kvp.Value?.ToString()).ToArray();
-                    Trace.WriteLine($"SUPPORTED_LOCALES: {string.Join(", ", Framework.SUPPORTED_LOCALES)}");
+                    Framework.Log("SUPPORTED_LOCALES", Framework.SUPPORTED_LOCALES);
 
                     Framework.FIRST_EXPANSION_PATCH =
                         Framework.ParseAsStringDictionary(lua.GetTable("FIRST_EXPANSION_PATCH") ?? throw new InvalidDataException("Missing 'FIRST_EXPANSION_PATCH' Global!"))
@@ -589,7 +579,7 @@ namespace ATT
                     Framework.SORTABLE_FIELDS =
                         Framework.ParseAsDictionary<string>(lua.GetTable("SORTABLE_FIELDS") ?? throw new InvalidDataException("Missing 'SORTABLE_FIELDS' Global!"))
                         ["Fields"].AsTypedEnumerable<string>().ToHashSet();
-                    Trace.WriteLine($"SORTABLE_FIELDS: {string.Join(", ", Framework.SORTABLE_FIELDS)}");
+                    Framework.Log("SORTABLE_FIELDS:", Framework.SORTABLE_FIELDS);
                 }
                 catch (Exception e)
                 {
