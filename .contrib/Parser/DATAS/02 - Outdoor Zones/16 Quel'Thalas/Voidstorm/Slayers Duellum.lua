@@ -28,18 +28,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{		-- Neutral
 							}, {	-- Friendly
 								i(264253, {	-- Galactic Void-Scarred Barricade (DECOR!)
-									["cost"] = {{ "c", VOIDLIGHT_MARL, 750 }},
+									["cost"] = {{ "c", VOIDLIGHT_MARL, 250 }},
 								}),
 							}, {	-- Honored
 								i(264345, {	-- Galactic Commander's Orb (DECOR!)
-									["cost"] = {{ "c", VOIDLIGHT_MARL, 750 }},
+									["cost"] = {{ "c", VOIDLIGHT_MARL, 250 }},
 								}),
 								i(264517, {	-- Galactic Flag of Victory (TOY!)
 									["cost"] = {{ "c", VOIDLIGHT_MARL, 4000 }},
 								}),
 							}, {	-- Revered
 								i(247785, {	-- Galactic Void-Scarred Banner (DECOR!)
-									["cost"] = {{ "c", VOIDLIGHT_MARL, 2500 }},
+									["cost"] = {{ "c", VOIDLIGHT_MARL, 250 }},
 								}),
 								i(265035, {	-- Medusa (PET!)
 									["cost"] = {{ "c", VOIDLIGHT_MARL, 2500 }},

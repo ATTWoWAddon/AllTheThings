@@ -851,9 +851,6 @@ root(ROOTS.Unsorted, {
 				i(264689),	-- Cuddly Sapphire Grrgle
 				i(264690),	-- Cuddly Clover Grrgle
 				i(264691),	-- Cuddly Peach Grrgle
-				i(246959),	-- Sealed Fungal Jar
-				i(249768),	-- Fungarian Barrel
-				i(251980),	-- Fungarian Sack
 				i(263019),	-- Haranir Pennant
 				i(263039),	-- Harandar Flowering Lamp
 				i(263194),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce

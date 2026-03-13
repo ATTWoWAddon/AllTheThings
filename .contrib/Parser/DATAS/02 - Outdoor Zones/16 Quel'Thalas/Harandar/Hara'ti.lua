@@ -176,6 +176,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									},
 								}),
 							}, {	-- RENOWN 7 --
+								i(251980, {	-- Fungarian Sack (DECOR!)
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+								}),
+								i(249768, {	-- Fungarian Barrel (DECOR!)
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+								}),
+								i(246959, {	-- Sealed Fungal Jar (DECOR!)
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+								}),
 							}, {	-- RENOWN 8 --
 							}, {	-- RENOWN 9 --
 							}, {	-- RENOWN 10 --
