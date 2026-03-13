@@ -60,10 +60,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = bubbleDownRep(FACTION_HARATI, {
 							{		-- RENOWN 1 --
 								i(246402, {	-- Hollowed Harandar Gourds (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 								}),
 								i(246408, {	-- Haranir Herb Rack (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 								}),
 							}, {	-- RENOWN 2 --
 								i(267481, {	-- Aspiring Hara'ti Defender's Belt
