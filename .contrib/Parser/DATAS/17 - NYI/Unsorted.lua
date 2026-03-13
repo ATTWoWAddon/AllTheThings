@@ -851,13 +851,6 @@ root(ROOTS.Unsorted, {
 				i(264689),	-- Cuddly Sapphire Grrgle
 				i(264690),	-- Cuddly Clover Grrgle
 				i(264691),	-- Cuddly Peach Grrgle
-				i(263019),	-- Haranir Pennant
-				i(263039),	-- Harandar Flowering Lamp
-				i(263194),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce
-				i(263195),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost
-				i(264267),	-- Rutaani Birdfeeder
-				i(264268),	-- Rutaani Birdbath
-				i(264269),	-- Rutaani Bird Perch
 				i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 \\ [DNT] [AUTOGEN] Decor 15505 Item
 				i(265387),	-- Cuddly Tomato Grrgle
 				i(265388),	-- Cuddly Lemon Grrgle
