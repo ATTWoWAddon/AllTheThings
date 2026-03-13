@@ -7158,8 +7158,19 @@ n(7057,{coords={
 s(3230,9378,{f=21,lvl=15}),
 s(3229,9375,{f=5,lvl=15}),
 s(3233,9382,{f=5,lvl=15})}})}}),
+h(-56,{
+o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
+o(123329,{
+i(7740,{description="Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",rwp=40100,spellID=9594,u=2})}),
 o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",g={
 i(7671)}}),
+o(113757,{description="WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",g={
+i(7669)}}),
+i(7733,{cost={{"i",7741,1},{"i",7740,1}},description="Use this on the Keystone in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",rwp=40100,spellID=9577,u=2}),
+o(142088,{description="Located in the same room as Galgann Firehammer.",g={
+i(5824)}}),
+o(131474,{description="Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",modelScale=3,g={
+i(6064)}})}),
 e(468,{crs={6906,6907,6908},r=1,g={
 s(3251,9400,{b=1,f=32,lvl=15}),
 s(3254,9403,{b=1,f=8,lvl=15}),
@@ -7169,12 +7180,9 @@ s(3252,9401,{b=1,f=25,lvl=15}),
 s(3255,9404,{b=1,f=8,lvl=15,spellID=12438}),
 s(76411,132734,{awp=70003,b=1,f=6,lvl=15}),
 s(3249,9398,{b=1,f=5,lvl=15})}}),
-o(123329,{
-i(7740,{description="Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",rwp=40100,spellID=9594,u=2})}),
 n(6912,{description="This dead Paladin was central in now removed dungeon quests, and remains abandoned on the ground without any purpose.",g={
 i(7886)}}),
 e(467,{npcID=6910,g={
-i(7733,{cost={{"i",7741,1},{"i",7740,1}},description="Use this on the keyhole looking gizmo in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",rwp=40100,spellID=9577,u=2}),
 i(7741,{description="Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",rwp=40100,spellID=9595,u=2}),
 s(76413,132736,{awp=70003,b=1,f=6,lvl=15}),
 s(3240,9389,{b=1,f=5,lvl=15}),
@@ -7182,7 +7190,7 @@ s(3239,9388,{b=1,f=6,lvl=15}),
 s(3241,9390,{b=1,f=4,lvl=15}),
 s(89402,151395,{awp=70300,b=1,f=7,lvl=15}),
 s(3238,9387,{b=1,f=6,lvl=15})}}),
-e(469,{npcID=7228,g={
+e(469,{npcID=7228,providers={{"o",124371}},g={
 s(3259,9408,{b=1,f=28,lvl=15}),
 s(89405,151398,{awp=70300,b=1,f=5,lvl=15}),
 s(89424,151420,{awp=70300,b=1,f=7,lvl=15}),
@@ -7204,10 +7212,6 @@ s(3269,9419,{b=1,f=23,lvl=15,spellID=248274}),
 s(3263,9412,{b=1,f=31,lvl=15,spellID=29633}),
 s(4166,11310,{b=1,f=4,lvl=15}),
 s(4167,11311,{b=1,f=3,lvl=15})}}),
-o(113757,{description="WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",g={
-i(7671)}}),
-o(142088,{description="Located in the same room as Galgann Firehammer.",g={
-i(5824)}}),
 e(472,{npcID=4854,g={
 i(7670),
 s(3267,9416,{b=1,f=29,lvl=15}),
@@ -7222,10 +7226,7 @@ gach(5047,{awp=40003}),
 i(7672),
 s(3268,9418,{b=1,f=26,lvl=15,spellID=248198}),
 s(3264,9413,{b=1,f=24,lvl=15}),
-i(11118,{b=1,f=52,lvl=15})}}),
-o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
-o(131474,{description="Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",modelScale=3,g={
-i(6064)}})}}),
+i(11118,{b=1,f=52,lvl=15})}})}}),
 inst(240,{coords={
 [11]={{55.2,66.1}}},mapID=279,savedInstanceID=43,g={
 h(-45,{
