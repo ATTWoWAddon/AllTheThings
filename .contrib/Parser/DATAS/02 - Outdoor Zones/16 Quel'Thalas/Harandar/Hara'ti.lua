@@ -200,8 +200,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}, {	-- RENOWN 11 --
 							}, {	-- RENOWN 12 --
 								i(263039),	-- Harandar Flowering Lamp (DECOR!)
-								i(263194),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce (DECOR!)
-								i(263195),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost (DECOR!)
+								i(263194),	-- Harandar Glowvine Sconce (DECOR!)
+								i(263195),	-- Harandar Glowvine Lamppost (DECOR!)
 							}, {	-- RENOWN 13 --
 								i(256552, {	-- Verdant Rutaani Seed (TOY!)
 									["cost"] = { { "c", VOIDLIGHT_MARL, 4000 } },
