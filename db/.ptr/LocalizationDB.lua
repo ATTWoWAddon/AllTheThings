@@ -1696,6 +1696,7 @@ localize(L.HEADER_NAMES, {
 	[-739] = COVENANT_SANCTUM_TAB_RENOWN.." 2",
 	[-740] = COVENANT_SANCTUM_TAB_RENOWN.." 4",
 	[-741] = "Void Assaults & Ritual Sites",
+	[-742] = "Ritual Sites",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2412,6 +2413,7 @@ localize(L.HEADER_ICONS, {
 	[-739] = 5015301,
 	[-740] = 5015301,
 	[-741] = 4914669,
+	[-742] = 4914669,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -25552,6 +25554,7 @@ L.QUEST_NAMES = {
 	[93532] = "MID Weekly Enchanting Treasure #2",
 	[93533] = "MID Weekly Enchanting Treasure #1",
 	[93534] = "MID Weekly Engineering Treasure #1",
+	[93535] = "MID Weekly Engineering Treasure #2",
 	[93536] = "MID Weekly Inscription Treasure #1",
 	[93537] = "MID Weekly Inscription Treasure #2",
 	[93538] = "MID Weekly Jewelcrafting Treasure #2",
@@ -25649,6 +25652,7 @@ L.QUEST_NAMES = {
 	[95135] = "MID Inscription Order: Mining",
 	[95136] = "MID Inscription Order: Skinning",
 	[95137] = "MID Inscription Order: Tailoring",
+	[95138] = "MID Inscription Order: Engineering",
 }
 L.SOURCE_NAMES = {
 	[90628] = "Monel-Hardened Breastplate",

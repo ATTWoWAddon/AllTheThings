@@ -76,9 +76,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91800, {	-- Heirlooming Danger
 					["coord"] = { 25.8, 65.2, MAP.MIDNIGHT.ZULAMAN },
 					["groups"] = {
-						o(612932, {	-- Ransacked Heirloom
-							["coord"] = { 23.9, 62.7, MAP.MIDNIGHT.ZULAMAN },
-							["groups"] = { i(258321) },	-- Ransacked Heirloom (QI!)
+						o_repeated({	-- Ransacked Heirloom
+							["coords"] = {
+								{ 23.3, 60.4, MAP.MIDNIGHT.ZULAMAN },
+								{ 23.5, 61.3, MAP.MIDNIGHT.ZULAMAN },
+								{ 23.9, 62.4, MAP.MIDNIGHT.ZULAMAN },
+								{ 24.2, 64.0, MAP.MIDNIGHT.ZULAMAN },
+								{ 24.7, 61.7, MAP.MIDNIGHT.ZULAMAN },
+								{ 24.7, 62.5, MAP.MIDNIGHT.ZULAMAN },
+								{ 25.0, 63.2, MAP.MIDNIGHT.ZULAMAN },
+								{ 25.0, 64.5, MAP.MIDNIGHT.ZULAMAN },
+								{ 25.8, 63.7, MAP.MIDNIGHT.ZULAMAN },
+								{ 26.3, 62.8, MAP.MIDNIGHT.ZULAMAN },
+							},
+							["groups"] = {
+								i(258321),	-- Ransacked Heirloom (QI!)
+								o(612932),	-- Ransacked Heirloom
+								o(612930),	-- Ransacked Heirloom
+							},
 						}),
 					},
 				}),

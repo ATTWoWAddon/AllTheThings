@@ -13246,7 +13246,7 @@ i(140178,{b=1}),
 q(43916,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140178}},repeatable=1,u=2,g={
 i(140152,{b=1,u=2})}}),
 i(140182,{b=1}),
-q(43920,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140182}},repeatable=1,u=2,g={
+q(43919,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140182}},repeatable=1,u=2,g={
 i(140154,{b=1,u=2})}}),
 i(140150,{b=1,skipFill=1,sym={{"select","instanceID",786},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2})}),
 gm(1305,{
@@ -26904,7 +26904,7 @@ crit(49887,{achID=14752,id=4})}}),
 ach(14751,{customCollect={"SL_COV_NEC"},g={
 mnt(332460,{b=1,customCollect={"SL_COV_NEC"},itemID=182074}),
 crit(49885,{achID=14752,id=3})}}),
-ach(14764,{crs={161270,167828},customCollect={"SL_COV_NEC"},description="Possible to find the Great Luckydo when Chordy finds treasure.",providers={{"i",178554}},questID=62596,g={
+ach(14764,{crs={161270,167828},customCollect={"SL_COV_NEC"},description="Possible to find the Great Luckydo when Chordy finds treasure.",providers={{"i",178554},{"i",183804}},questID=62596,g={
 i(183804,{b=1,customCollect={"SL_COV_NEC"},spellID=343042})}}),
 ach(14752,{customCollect={"SL_COV_NEC"},g={
 mnt(332467,{b=1,customCollect={"SL_COV_NEC"},itemID=181820}),
@@ -35204,7 +35204,7 @@ s(193747,210707,{b=1,cost={{"c",2003,600}},f=5,lvl=70,minReputation={2574,14}}),
 s(193741,210701,{b=1,cost={{"c",2003,600}},f=6,lvl=70,minReputation={2574,14}}),
 s(193745,210705,{b=1,cost={{"c",2003,600}},f=7,lvl=70,minReputation={2574,14}}),
 p(4308,{b=1,cost={{"c",2003,375}},itemID=210692,minReputation={2574,15},npcID=212570,questID=78888,spellID=426545}),
-p(4307,{b=1,cost={{"c",2003,375}},itemID=210691,minReputation={2574,15},npcID=212569,questID=78889,spellID=426544}),
+p(4307,{b=1,cost={{"c",2003,375}},itemID=210691,minReputation={2574,15},npcID=212569,providers={{"i",210556},{"i",210692},{"i",210870}},questID=78855,spellID=426544}),
 en(210790,{b=1,cost={{"c",2003,500}},minReputation={2574,16},questID=78599,spellID=427129,tmogSetID=3302,g={
 s(193793,210787,{f=9}),
 s(193794,210788,{f=3}),
@@ -40425,7 +40425,7 @@ crit(71587,{achID=41215,awp=110100,id=7})}}),
 n(235117,{awp=110002,g={
 crit(71590,{achID=41215,awp=110100,id=10})}}),
 crit(71580,{achID=41214,id=2})}})}})})}})}),
-x(12,{awp=120001,g={
+x(12,{awp=120001,maps={2395,2437},g={
 h(-729,{coords={
 [2395]={{56.6,65.8}},
 [2405]={{38.9,53.2}},

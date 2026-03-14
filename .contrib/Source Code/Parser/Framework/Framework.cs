@@ -562,8 +562,7 @@ namespace ATT
                 if (value < _stage) throw new InvalidOperationException($"Do not regress or stagnate in ParseStage tracking: {_stage} => {value}");
 
                 _stage = value;
-                Log($"PARSER STAGE: {_stage.ToString()}...");
-                //Log(_timer.ElapsedMilliseconds.ToString("000000 ") + _stage.ToString() + "...");
+                Log(_timer.ElapsedMilliseconds.ToString("000000 ") + _stage.ToString() + "...");
                 if (Handlers.TryGetValue(_stage, out var handler))
                 {
                     CurrentParseStageHandler = handler;

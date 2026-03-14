@@ -48742,10 +48742,7 @@ crit(108895,{achID=61234,id=1,providers={{"s",393121}},pvp=1}),
 crit(108896,{achID=61234,id=2,providers={{"s",393121}},pvp=1}),
 crit(108897,{achID=61234,id=3,providers={{"s",393121}},pvp=1}),
 crit(108898,{achID=61234,id=4,providers={{"s",393121}},pvp=1})}}),
-ach(61225,{pvp=1,g={
-crit(108862,{achID=61225,id=2,pvp=1,questID=87759}),
-crit(108864,{achID=61225,id=4,pvp=1,questID=91419}),
-crit(108865,{achID=61225,id=5,pvp=1,questID=88992})}}),
+ach(61225,{pvp=1}),
 ach(61238,{pvp=1}),
 ach(61231,{providers={{"s",271400}},pvp=1}),
 ach(61232,{providers={{"s",271400}},pvp=1,g={
@@ -48757,9 +48754,6 @@ title(664,{pvp=1})}}),
 ach(61464,{pvp=1}),
 ach(61465,{pvp=1}),
 ach(61226,{pvp=1,g={
-crit(108862,{achID=61226,id=2,pvp=1,questID=87759}),
-crit(108864,{achID=61226,id=4,pvp=1,questID=91419}),
-crit(108865,{achID=61226,id=5,pvp=1,questID=88992}),
 crit(109641,{achID=61446,id=1,pvp=1})}})}}),
 h(-673,{awp=120001,pvp=1,g={
 h(-12,{pvp=1,g={

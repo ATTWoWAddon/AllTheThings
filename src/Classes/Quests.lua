@@ -647,7 +647,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 	-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
 	local info = {
 		infoText,
-		questChange..": \""..(QuestNameFromID[id] or "???").."\"",
+		questChange..": \""..((questRef and questRef.name) or QuestNameFromID[id] or "???").."\"",
 		OBJREF = questRef,
 	};
 	if checks then
@@ -807,20 +807,22 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 		-- meets current character filters
 		local filter = app.CurrentCharacterFilters(questRef);
 		-- is marked as in the game
-		-- NOTE: Classic doesn't use the Filters Module yet. (TODO)
-		-- The logic is simple enough to where it shouldn't matter.
 		-- This now checks recursively outwards to ensure that an in-game quest isn't buried inside a removed header
 		local inGame = not GetRelativeByFunc(questRef, NotInGame)
 		-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check, or character in party sync
 		local incomplete = (questRef.repeatable or not completed or LastQuestTurnedIn == completed or IsPartySyncActive) or app.IsClassic;
 		-- not missing pre-requisites
 		local metPrereq = not questRef.missingReqs;
-		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange,filter,inGame,incomplete,metPrereq)
+		-- a real quest type
+		local questType = questRef.__type
+		local realQuest = questType:sub(1,5) == "Quest"
+		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange,filter,inGame,incomplete,metPrereq,questType:sub(1,5),realQuest)
 		if forceShow or not (
 			filter
 			and inGame
 			and incomplete
 			and metPrereq
+			and realQuest
 			-- debugging, show link for any accepted quest
 			-- and false
 			)
@@ -830,9 +832,10 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 				InGame = inGame and true or false,
 				Incomplete = incomplete and true or false,
 				PreReq = metPrereq and true or false,
+				RealQuest = realQuest and true or false,
 			};
 			app.Modules.Contributor.AddReportData(
-				questRef.__type,
+				questType,
 				id,
 				BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef, checks),
 				L.REPORT_INACCURATE_QUEST)
@@ -846,7 +849,7 @@ if app.Debugging then
 	-- UNS quest /run ATTC.PrintQuestInfo(24444)
 	-- HQT quest /run ATTC.PrintQuestInfo(49813)
 	-- REG quest /run ATTC.PrintQuestInfo(83083)
-	app.PrintQuestInfo = PrintQuestInfo
+	app.PrintQuestInfo = PrintQuestInfoViaCallback
 	-- /run ATTC.CheckQuestInfo(12345,1)
 	app.CheckQuestInfo = function(questID, isTest)
 		app.CheckInaccurateQuestInfo(Search("questID",questID), "test-show", isTest)

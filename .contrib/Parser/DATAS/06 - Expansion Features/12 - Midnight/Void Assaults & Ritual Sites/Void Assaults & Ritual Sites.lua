@@ -4,6 +4,23 @@
 
 -- Exo Note: These "two" events are intertwined. If someone wants to untangle and separate them, be my guest. They share Quests, Currencies, Achievements...
 
+RITUAL_SITES = createHeader({
+	readable = "Ritual Sites",
+	icon = 4914669,
+	text = {
+		en = "Ritual Sites",
+		--de = "Ritual Sites",
+		--es = "Ritual Sites",
+		--mx = "Ritual Sites",
+		--fr = "Ritual Sites",
+		--it = "Ritual Sites",
+		--ko = "Ritual Sites",
+		--pt = "Ritual Sites",
+		--ru = "Ritual Sites",
+		--cn = "Ritual Sites",
+		--tw = "Ritual Sites",
+	},
+});
 VOID_ASSAULTS_RITUAL_SITES = createHeader({
 	readable = "Void Assaults & Ritual Sites",
 	icon = 4914669,
@@ -34,6 +51,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		n(VOID_ASSAULTS_RITUAL_SITES, {
 			faction(FACTION_RITUAL_SITES),
 			-- Void Rift: Bitter Bark; 30.8, 43.6, Zul'Aman
+			-- Void Ritual: Grizzly 31.6, 71.0, ZulAman
+			-- Swarming Skies: Jan'alai, 53.1, 21.1, Zulaman
 			n(ACHIEVEMENTS, {	-- Achievements do not reward Mounts and Pets. They unlock the ability for you to buy them from the vendor
 				-- Void Assaults
 				ach(62574),	-- Accolade to Rest
@@ -159,7 +178,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				}),
 			}),
 			n(REWARDS, {
-				-- Currency
+				-- Currencies
 				currency(FIELD_ACCOLADE),
 				i(DARK_PARTICLE),
 				-- Gear
@@ -171,7 +190,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					filter(FINGER_F, {
 					}),
 					filter(LEATHER, {
-						i(263792)	-- Vest of the Void Acolyte (Obtained from 263928, Cache of Void-Touched Armaments)
+						i(263792),	-- Vest of the Void Acolyte (Obtained from 263928, Cache of Void-Touched Armaments)
 					}),
 					filter(MAIL, {
 					}),
@@ -190,6 +209,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				}),
 				-- Boxes
 				i(270244),	-- Field Pouch
+				i(270247),	-- Field Satchel
 				i(264914),	-- Ranger's Cache	// Pinnacle Cache - Midnight Season 1
 			}),
 			n(VENDORS, {
@@ -202,7 +222,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						i(263929, {	-- Cache of Void-Touched Armaments (Heroic)
 							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
 						}),
-						i(268996, {	-- Field Accolade	// I suspect this converts into currency on buy
+						i(268996, {	-- Field Accolade (Automatically converts to 1x FIELD_ACCOLADE currency when bought)
 							["cost"] = { { "i", DARK_PARTICLE, 100 } },
 						}),
 					},
@@ -247,7 +267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 							["minReputation"] = { FACTION_RITUAL_SITES, 6 },
 							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
 						}),
-						i(268578, {	-- Void-Touched Hawkstrider (MOUNT!)	--TODO: Item is present but the Mount Spell is NYI. MountDB entry taken from WoWhead
+						i(268578, {	-- Void-Touched Hawkstrider (MOUNT!)
 							["minReputation"] = { FACTION_RITUAL_SITES, 8 },
 							["cost"] = { { "c", FIELD_ACCOLADE, 50 } },
 						}),
@@ -278,13 +298,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}, {
 			})),--]]
 		}),
+		n(RITUAL_SITES, {
+			m(BROKEN_THRONE, {
+				--["icon"] = ,
+				["coord"] = { 29.6, 77.9, MAP.MIDNIGHT.ZULAMAN },
+			}),
+			m(DAGGERSPINE_LANDING, {
+				--["icon"] = ,
+				["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
+			n(EVENT_COMPLETION, {
+				i(269817),	-- Ritual Site Challenge Report: Tendrils (QS!)
+			}),
+			n(QUESTS, {
+				q(95547, {	-- Ritual Site Challenge Report: Tendrils
+					["provider"] = { "i", 269817 },	-- Ritual Site Challenge Report: Tendrils (QS!)
+				}),
+			}),
+			n(REWARDS, {
+				currency(3429),	-- Ritual Site Reports
+				i(271787),	-- Field Accolades
+				i(271786),	-- Ritual Site Reports
+				i(271973),	-- Ritual Spoils (on Broken Throne UI)
+				i(271785),	-- Ritual Spoils (on Daggerspine Landing UI)
+			}),
+		}),
 	},
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
 	n(VOID_ASSAULTS_RITUAL_SITES, {
 		n(QUESTS, {
-			q(92589),	-- <DNT> Last Scenario Step Quest, Triggered after completing 'Void Rift: Bitter Bark' in Zul'Aman
+			q(92589),	-- <DNT> Last Scenario Step Quest, Triggers after completing any Void Ritual
+			q(94456),	-- <DNT> Last Scenario Step Quest, Triggers after completing a Void Incursion
 		}),
 	}),
 })));

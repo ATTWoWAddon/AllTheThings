@@ -60,7 +60,7 @@
 			de = "Leuchtende Motte",
 			fr = "Phalène luminescent",
 			it = "Falena Luminosa",
-			pt = "[Glowing Moth]",
+			pt = "Mariposa Brilhante",
 			ru = "Светящийся мотылек",
 			ko = "빛나는 나방",
 			cn = "发光的飞蛾",
@@ -215,6 +215,9 @@
 			it = "Falena Luminosa",
 			pt = "Mariposa Brilhante",
 			ru = "Светящийся мотылек",
+			ko = "빛나는 나방",
+			cn = "发光的飞蛾",
+			tw = "發光蛾",
 		},
 	},
 })

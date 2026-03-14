@@ -229,6 +229,7 @@ local MapPrecisionOverrides = {
 	[1702] = 2,	-- The Roots
 	[1703] = 5,	-- Heart of the Forest
 	[1912] = 10,	-- The Runecarver's Oubliette
+	[2215] = 0.25,	-- Hallowfall
 	[2328] = 3,	-- The Proscenium
 	[2438] = 5,	-- Scarlet Halls (Arator's Journey)
 	[2541] = 10,	-- Arcantina
@@ -266,9 +267,7 @@ local function Check_coords(objRef, maxCoordDistance)
 		-- quest has an accurate coord on accurate map
 		if closest > maxCoordDistance then
 			local reportData = BuildGenericReportData(objRef, id)
-			-- round to the tenth
-			closest = round(closest, 1)
-			reportData.VerifyOrAddCoords = ("Closest %s Coordinates are off by: %d on mapID: %d"):format(relCoords and "relative" or "existing", closest, mapID)
+			reportData.VerifyOrAddCoords = ("Closest %s Coordinates are off by: %.2f on mapID: %d"):format(relCoords and "relative" or "existing", closest, mapID)
 			AddReportData(objRef.__type,id,reportData)
 			return 1
 		end
@@ -1194,6 +1193,7 @@ MobileDB.GameObject = {
 	[235985] = true,	-- Gold Coins
 	[235986] = true,	-- Gold Coins
 	[235987] = true,	-- Gold Coins
+	[236186] = true,	-- Finalize Garrison Plot
 	[236187] = true,	-- Finalize Garrison Plot
 	[236262] = true,	-- Finalize Garrison Plot
 	[236263] = true,	-- Finalize Garrison Plot
@@ -2013,6 +2013,7 @@ MobileDB.GameObject = {
 	[337238] = true,	-- Crumbled Sinstones
 	[337241] = true,	-- Stashed Equipment
 	[338224] = true,	-- Cache of the Fire Lord
+	[339287] = true,	-- Iron Chains
 	[340023] = true,	-- Diagnostic Console: Uldir (q:58506)
 	[340025] = true,	-- Diagnostic Console: Uldaman (q:58506)
 	[340026] = true,	-- Diagnostic Console: Ulduar (q:58506)
@@ -2752,6 +2753,7 @@ MobileDB.GameObject = {
 	[556425] = true,	-- Darkpine Lumber
 	[556498] = true,	-- Echo of a Wounded Retreat (q:91544)
 	[556704] = true,	-- Darkpine Lumber
+	[557572] = true,	-- Nutrient-Rich Dirt (q:91586)
 	[557988] = true,	-- Darkpine Lumber
 	[558184] = true,	-- Decaying Fighter
 	[558338] = true,	-- Darkpine Lumber
@@ -2879,6 +2881,7 @@ MobileDB.GameObject = {
 	[587443] = true,	-- Ripe Grapes
 	[587913] = true,	-- Shabby Stockpile
 	[588950] = true,	-- Tusk Taker's Taken Tusk Trophy (q:93095)
+	[602746] = true,	-- Lady Selen'vjar Ritual Chest [Daggerspine Landing, Ritual Site]
 	[605174] = true,	-- Haunted Weapon Rack
 	[609858] = true,	-- Budget Friendly (q:93453)
 	[612079] = true,	-- Foul Carcass (q:93397)
@@ -2890,6 +2893,8 @@ MobileDB.GameObject = {
 	[613852] = true,	-- Potion of Unquestionable Strength (q:93569)
 	[613945] = true,	-- Orb of Translocation
 	[614762] = true,	-- UNKNOWN
+	[614787] = true,	-- Summons to Broken Shorw (q:92320)
+	[614804] = true,	-- Corrupted Lantern
 	[614893] = true,	-- Paint Bowl (q:90535)
 	[616052] = true,	-- Flame-Hardened Sap of Teldrassil
 	[616055] = true,	-- Forgotten Cache [Windrunner Spire]
@@ -2902,7 +2907,7 @@ MobileDB.GameObject = {
 	[618495] = true,	-- Nullaeus Cache
 	[618517] = true,	-- Thalassian Lumber
 	[618844] = true,	-- Mislaid Curiosity
-	--[619092] = true,	-- Flyer Crate (q:)
+	[619092] = true,	-- Flyer Crate (q:92138)
 	[619736] = true,	-- Netherstorm Structural Cage
 	[620105] = true,	-- Rookery Cache Key
 	[626980] = true,	-- Belanise Cluster (q:91328)
@@ -2912,6 +2917,7 @@ MobileDB.GameObject = {
 	[628381] = true,	-- Weapon Rack (Arcantina)
 	[630870] = true,	-- Portal to Astalor's Sanctum
 	[638873] = true,	-- Orb of Translocation
+	[650051] = true,	-- Faithbreaker Ger'lok's Ritual Chest [Broken Throne, Ritual Site]
 }
 
 local ReturnEmptyFunctionMeta = { __index = function() return app.ReturnFalse end}

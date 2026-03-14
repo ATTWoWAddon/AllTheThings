@@ -120,6 +120,19 @@ root(ROOTS.Zones, {
 					["questID"] = 44280,
 					["coord"] = { 46.4, 21.6, HIGHMOUNTAIN },
 				}),
+				o(244429, {	-- Totally Safe Treasure Chest
+					["coord"] = { 52.3, 51.4, HIGHMOUNTAIN },
+					["groups"] = {
+						n(97102, {	-- Ram'Pag <The Treasure Worm>
+							["questID"] = 40610,
+							["groups"] = {
+								o(244446, {	-- Actually Safe Treasure Chest
+									["questID"] = 39766,
+								}),
+							},
+						}),
+					},
+				}),
 				o(243688, {	-- Treasure Chest
 					["questID"] = 39466,
 					["coord"] = { 49.6, 37.7, HIGHMOUNTAIN },

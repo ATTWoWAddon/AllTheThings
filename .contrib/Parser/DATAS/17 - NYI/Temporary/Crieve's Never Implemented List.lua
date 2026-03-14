@@ -454,16 +454,6 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 
 	-- TBC
 	-- #if AFTER TBC
-	q(8489),	-- BETA An Intact Converter [Eversong Woods]
-	q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
-	q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
-	q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
-	q(9695),	-- The Sun King's Command [Bloodmyst Isle]
-
-	-- This might be from the Spirit of Competition?
-	q(12186),	-- FLAG: Winner
-	q(12187),	-- FLAG: Participant
-
 	filter(20, {	-- Daggers
 		i(23650),	-- Deprecated: Keanna's Will
 		i(23905),	-- Deprecated: Keanna's Will

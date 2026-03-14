@@ -282,8 +282,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 62.5, 44.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92254,
 					}),
-					o(571265, {	-- Glowing Moth (Unverified, Server restart)
-						["coord"] = { 60.7, 45.4, MAP.MIDNIGHT.HARANDAR },
+					o(571265, {	-- Glowing Moth (R4)
+						["coords"] = {
+							{ 60.3, 46.1, MAP.MIDNIGHT.HARANDAR },	-- Cave Entrance
+							{ 60.7, 45.4, MAP.MIDNIGHT.HARANDAR },	-- Glowing Moth
+						},
 						["questID"] = 92253,
 					}),
 					o(571266, {	-- Glowing Moth (R4)
@@ -361,23 +364,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 39.1, 55.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92266,
 					}),
-				}),
-				-- NYI or now Renown 9?
-				o(571264, {	-- Glowing Moth
-					["coord"] = { 62.5, 44.3, MAP.MIDNIGHT.HARANDAR },
-					["questID"] = 92254,
-				}),
-				o(571169, {	-- Glowing Moth
-					["coord"] = { 61.3, 35.2, MAP.MIDNIGHT.HARANDAR },
-					["questID"] = 92217,
-				}),
-				o(571281, {	-- Glowing Moth
-					["coord"] = { 68.0, 19.9, MAP.MIDNIGHT.HARANDAR },
-					["questID"] = 92257,
-				}),
-				o(571280, {	-- Glowing Moth
-					["coord"] = { 54.5, 52.0, MAP.MIDNIGHT.HARANDAR },
-					["questID"] = 92258,
 				}),
 				-- Renown 9
 				o(571296, {	-- Glowing Moth

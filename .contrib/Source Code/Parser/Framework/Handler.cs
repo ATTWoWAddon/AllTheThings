@@ -63,7 +63,11 @@ namespace ATT
             foreach (var act in ActionSequence)
             {
                 Framework.Log($".. Running '{act.Method.Name}' on {ActionDatas[act].Count} groups");
-                foreach (var data in ActionDatas[act]) act(data);
+                foreach (var data in ActionDatas[act])
+                {
+                    // data.DataBreakPoint("achID", 12896);
+                    act(data);
+                }
             }
         }
     }

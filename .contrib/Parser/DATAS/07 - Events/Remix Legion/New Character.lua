@@ -102,7 +102,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(91851),	-- Triggered after completing 10 WQs in Heroic World Tier and obtaining achievement 'Heroic Broken Isles World Quests I'
 			q(93243),	-- Triggered after completing 'Flow of the Nightmare' (q:43241) bonus objective in Val'sharah
 			q(93195, { ["isDaily"] = true }),	-- Triggered after Flamescale rare 1st kill of the day
-			q(92541, { ["isDaily"] = true }),	-- Triggered after completing a major invasion point daily
 			-- HQTs triggered in M+
 			q(94420, { ["isDaily"] = true }),	-- Triggered after First M+ of each day
 			q(94421),	-- Triggered after First M+ 10 completed

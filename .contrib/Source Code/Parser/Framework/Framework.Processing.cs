@@ -25,6 +25,10 @@ namespace ATT
             (long)Objects.Filters.Cloak
         };
 
+        private static bool NoDataProcessing(IDictionary<string, object> data, IDictionary<string, object> parentData = null) => true;
+
+        private static bool HasSpell(IDictionary<string, object> data) => data.ContainsAnyKey("spellID", "recipeID", "mountID", "_extraSpells");
+
         private static readonly ConcurrentDictionary<ParseStage, Handler> Handlers = new ConcurrentDictionary<ParseStage, Handler>();
 
         /// <summary>
@@ -56,8 +60,7 @@ namespace ATT
         {
             if (CurrentParseStageHandler != null)
             {
-                //Log(_timer.ElapsedMilliseconds.ToString("000000 ") + $" ...with {CurrentParseStageHandler.ActionSequence.Count} Actions...");
-                Log($"   ...with {CurrentParseStageHandler.ActionSequence.Count} Actions...");
+                Log(_timer.ElapsedMilliseconds.ToString("000000 ") + $" ...with {CurrentParseStageHandler.ActionSequence.Count} Actions...");
                 CurrentParseStageHandler.RunActions();
             }
         }
@@ -173,6 +176,7 @@ namespace ATT
             AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignFilterID);
 
             AddHandlerAction(ParseStage.Incorporation, data => data.ContainsKey("speciesID"), Incorporate_Species);
+            AddHandlerAction(ParseStage.Incorporation, data => HasSpell(data) && !data.ContainsKey("_unsorted"), Incorporate_Spell);
             AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Incorporate_Parallel);
 
             if (Objects.MAPID_COORD_SHIFTS.Count > 0)
@@ -940,10 +944,7 @@ namespace ATT
 
             Incorporate_Achievement(data);
             Incorporate_Criteria(data);
-            // Handles Item->Spell->SpellEffect incorporation
             Incorporate_Item(data);
-            // Handles Spell->SpellEffect incorporation
-            Incorporate_Spell(data);
             Incorporate_Ensemble(data);
 
             return true;
@@ -1392,13 +1393,19 @@ namespace ATT
                 return compare != 0 ? compare : a.CompareTo(b);
             });
 
-            // try assigning the best-match quest if it's not already Sourced
-            long questID = possibleQuestIDs[0];
-            if (!Assign_QuestProviderFromData(questID, data))
-                CheckAndAssignQuestID(questID, data);
+            long assignedQuestID = -1;
+            // try assigning the first best-match quest which is not already Sourced
+            foreach (long questID in possibleQuestIDs)
+            {
+                if (!Assign_QuestProviderFromData(questID, data) && CheckAndAssignQuestID(questID, data))
+                {
+                    assignedQuestID = questID;
+                    break;
+                }
+            }
 
             // the rest try assign the data as provider only
-            foreach (long possibleQuestID in possibleQuestIDs.Skip(1))
+            foreach (long possibleQuestID in possibleQuestIDs.Where(q => q != assignedQuestID))
             {
                 Assign_QuestProviderFromData(possibleQuestID, data);
             }
@@ -2221,9 +2228,18 @@ namespace ATT
             {
                 switch (CurrentParentGroup.Value.Key)
                 {
+                    case "npcID":
+                        // don't incorporate criteria if the achievement is listed under a real NPC
+                        if (!doautomation && data.TryGetValue("__parent", out IDictionary<string, object> parentData)
+                            && parentData.TryGetValue("npcID", out long id)
+                            && id > 0)
+                        {
+                            LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under real NPC {id}");
+                            return;
+                        }
+                        break;
                     case "achID":
                     case "headerID":
-                    case "npcID":
 
                     // Crieve added these
                     case "f":
@@ -2239,13 +2255,6 @@ namespace ATT
                         }
                         break;
                 }
-            }
-
-            // don't incorporate criteria if the achievement is listed under a real NPC
-            if (!doautomation && CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0)
-            {
-                LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under real NPC {id}");
-                return;
             }
 
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
@@ -3179,6 +3188,9 @@ namespace ATT
             if (data.ContainsKey("_noautomation")) return;
             if (data.ContainsKey("_Incorporate_Ensemble")) return;
 
+            // Ensembles will be handled specially for now and must incorporate their Spell information ahead of the typical parallel sequence
+            Incorporate_Spell(data);
+
             if (data.TryGetValue("tmogSetID", out long tmogSetID) && WagoData.TryGetValue(tmogSetID, out TransmogSet tmogSet))
             {
                 if (tmogSet.TrackingQuestID > 0)
@@ -3230,7 +3242,7 @@ namespace ATT
                     };
 
                     // since adding a new Item group, run the prior expected logic against it
-                    DataConditionalMerge(nestedEnsemble, data);
+                    DoConditionalDataMerging(nestedEnsemble);
 
                     g.Add(nestedEnsemble);
                 }
@@ -3389,18 +3401,6 @@ namespace ATT
                     }
                 }
             }
-
-            // Finish incorporation of multiple QuestIDs
-            if (data.TryGetValue("_spellQuests", out List<object> spellQuests))
-            {
-                // Only 1 QuestID, just check & assign it directly
-                if (spellQuests.Count == 1 && spellQuests.First().TryConvert(out long assignQuestID))
-                {
-                    CheckAndAssignQuestID(assignQuestID, data);
-                    data.Remove("_spellQuests");
-                }
-                // multiple will be handled in Incorporate action to ensure there is as much Sourced as possible
-            }
         }
 
         private static void Incorporate_SpellEffect(IDictionary<string, object> data, SpellEffect spellEffect)
@@ -3494,7 +3494,7 @@ namespace ATT
             }
         }
 
-        private static void CheckAndAssignQuestID(long questID, IDictionary<string, object> data)
+        private static bool CheckAndAssignQuestID(long questID, IDictionary<string, object> data)
         {
             bool allowMergeQuestID = true;
             // if QuestID is already Sourced elsewhere in ATT, then we need to check what it is sourced as
@@ -3525,7 +3525,10 @@ namespace ATT
             {
                 IncorporateDataField(data, "questID", questID);
                 LogDebug($"INFO: Assigned data 'questID' {questID}", data);
+                return true;
             }
+
+            return false;
         }
 
         private static bool Assign_QuestProviderFromData(long questID, IDictionary<string, object> data)

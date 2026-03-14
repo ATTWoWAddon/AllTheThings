@@ -633,7 +633,6 @@ s(302246,260757,{f=34}),
 s(302248,260763,{f=31}),
 s(302249,260764,{f=31}),
 s(302250,260765,{f=31}),
-s(302295,260907,{f=26,lvl=80}),
 s(302469,262715,{f=25}),
 s(302470,262716,{f=25}),
 s(302471,262717,{f=25}),
@@ -3272,8 +3271,6 @@ q(41774,{c={7},description="Category: |cFFf09f26Shaman Campaign|r"}),
 q(41981,{c={7},description="Category: |cFFf09f26Shaman Campaign|r"}),
 q(42130,{c={6},description="Category: |cFFf09f26Death Knight Campaign|r"}),
 q(43181,{c={9},description="Category: |cFFf09f26Artifact|r"}),
-q(43919,{c={1,2,3,4,5,6,7,8,9,10,11,12,14},description="Type: |cFFf09f26Raid|r\nArea: |cFFf09f26The Nighthold|r",g={
-i(140154)}}),
 q(44196,{c={4},description="Category: |cFFf09f26Rogue Campaign|r"}),
 q(44197,{c={4},description="Category: |cFFf09f26Rogue Campaign|r"}),
 q(44198,{c={4},description="Category: |cFFf09f26Rogue Campaign|r"}),
@@ -3527,8 +3524,6 @@ q(93642,{description="Category: |cFFf09f26World PvP|r",r=1}),
 q(93697,{description="Area: |cFFf09f26Silvermoon City|r",g={
 i(263464)}}),
 q(93701,{description="Area: |cFFf09f26Silvermoon City|r",g={
-i(263462)}}),
-q(93704,{description="Area: |cFFf09f26Silvermoon City|r",g={
 i(263462)}}),
 q(93705,{description="Area: |cFFf09f26Silvermoon City|r",g={
 i(263463)}}),

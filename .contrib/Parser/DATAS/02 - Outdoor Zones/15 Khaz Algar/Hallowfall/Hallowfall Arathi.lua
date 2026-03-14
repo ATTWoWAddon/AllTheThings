@@ -1076,7 +1076,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(434929, {	-- Radiant Remnant
-								["coord"] = { 62.1, 31.7, HALLOWFALL },
+								["coord"] = { 62.2, 31.7, HALLOWFALL },
 								["questID"] = 80586,
 							}),
 							o(434561, {	-- Radiant Remnant
@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 80548,
 							}),
 							o(435009, {	-- Radiant Remnant
-								["coord"] = { 61.3, 31.8, HALLOWFALL },
+								-- ["coord"] = { 61.3, 31.8, HALLOWFALL },	-- re-confirm, could not find
 								["questID"] = 80591,
 							}),
 							o(434564, {	-- Radiant Remnant
@@ -1096,7 +1096,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 80552,
 							}),
 							o(434926, {	-- Radiant Remnant
-								["coord"] = { 64.0, 31.6, HALLOWFALL },
+								["coord"] = { 64.0, 31.7, HALLOWFALL },
 								["questID"] = 80583,
 							}),
 							o(454543, {	-- Radiant Remnant
@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 84344,
 							}),
 							o(454541, {	-- Radiant Remnant
-								["coord"] = { 64.4, 30.2, HALLOWFALL },
+								-- ["coord"] = { 64.4, 30.2, HALLOWFALL },	-- re-confirm, could not find
 								["questID"] = 83517,
 							}),
 							o(434566, {	-- Radiant Remnant
@@ -1168,7 +1168,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 80530,
 							}),
 							o(430344, {	-- Radiant Remnant
-								["coord"] = { 65.7, 20.4, HALLOWFALL },
+								["coord"] = { 65.8, 20.5, HALLOWFALL },
 								["questID"] = 80346,
 							}),
 							o(434567, {	-- Radiant Remnant
@@ -1176,11 +1176,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 80555,
 							}),
 							o(434568, {	-- Radiant Remnant
-								["coord"] = { 64.4, 26.5, HALLOWFALL },
+								["coord"] = { 63.8, 26.4, HALLOWFALL },
 								["questID"] = 80556,
 							}),
 							o(434560, {	-- Radiant Remnant
-								["coord"] = { 65.5, 28.3, HALLOWFALL },
+								-- ["coord"] = { 65.5, 28.3, HALLOWFALL },	-- re-confirm, could not find
 								["questID"] = 80549,
 							}),
 							o(454542, {	-- Radiant Remnant
@@ -1188,7 +1188,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 83518,
 							}),
 							o(434563, {	-- Radiant Remnant
-								["coord"] = { 64.5, 26.8, HALLOWFALL },
+								["coord"] = { 64.6, 26.8, HALLOWFALL },
 								["questID"] = 80551,
 							}),
 							o(434288, {	-- Radiant Remnant
@@ -1200,7 +1200,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 80529,
 							}),
 							o(434930, {	-- Radiant Remnant
-								["coord"] = { 62.6, 32.6, HALLOWFALL },
+								["coord"] = { 62.5, 32.6, HALLOWFALL },
 								["questID"] = 80587,
 							}),
 							o(430284, {	-- Radiant Remnant
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 80347,
 							}),
 							o(434927, {	-- Radiant Remnant
-								["coord"] = { 63.8, 31.0, HALLOWFALL },
+								-- ["coord"] = { 63.8, 31.0, HALLOWFALL },	-- re-confirm, could not find
 								["questID"] = 80584,
 							}),
 							o(434285, {	-- Radiant Remnant

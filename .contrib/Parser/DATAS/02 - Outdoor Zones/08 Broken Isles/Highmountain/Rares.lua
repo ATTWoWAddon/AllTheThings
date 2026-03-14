@@ -205,11 +205,6 @@ root(ROOTS.Zones, {
 						i(131793),	-- Oubdob's Smashin' Sweatband
 					},
 				}),
-				n(97102, {	-- Ram'Pag <The Treasure Worm>
-					["description"] = "Click on the Totally Safe Treasure Chest to spawn Ram'Pag.",
-					["questID"] = 39766,
-					["coord"] = { 52.3, 51.4, HIGHMOUNTAIN },
-				}),
 				n(97579, {	-- Scout Harefoot (Mynta Talonscreech)
 					["description"] = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
 					["questID"] = 39866,

@@ -313,7 +313,6 @@ root(ROOTS.Unsorted, {
 				i(249527),	-- Elder Painting
 				i(249543),	-- Special Remedy
 				i(249553),	-- Lost Mirror
-				i(249687),	-- Poisonous Frog Secretions \\ Poison Frog Secretions
 				i(249688),	-- Felo'melorn Replica
 				i(250705),	-- Naga Missive PH NAME
 				i(251899),	-- Anasterian's Book of Law
@@ -708,7 +707,6 @@ root(ROOTS.Unsorted, {
 				i(260763),	-- Lil' Tan Popper
 				i(260764),	-- Lil' Green Popper
 				i(260765),	-- Lil' Red Popper
-				i(260907),	-- Lost Winter's Hunger
 				i(262715),	-- Simple Mossy Trowel
 				i(262716),	-- Simple Rosy Trowl
 				i(262717),	-- Simple Rooting Trowl

@@ -125,6 +125,7 @@ else
 		if o and #o > 0 then
 			local objects = {};
 			local mapID, px, py = GetPlayerPosition();
+			if not mapID then mapID = app.CurrentMapID; end
 			local closestDistance, closestInstance, dist, searchResults;
 			for i,objectID in ipairs(o) do
 				closestInstance = nil;

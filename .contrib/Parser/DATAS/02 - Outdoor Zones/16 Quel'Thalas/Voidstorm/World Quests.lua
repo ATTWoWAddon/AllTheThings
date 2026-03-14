@@ -57,8 +57,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93507, {	-- Disrupting the Void
 					["coord"] = { 38.8, 45.1, MAP.MIDNIGHT.VOIDSTORM },
 				}),
+				q(91419, {	-- Elemental Dominance
+					-- ["coord"] = { 36.1, 60.3, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+				q(87759, {	-- Encapsulated Void
+					-- ["coord"] = { 36.1, 60.3, MAP.MIDNIGHT.VOIDSTORM },
+				}),
 				q(92546, {	-- Encroaching Predators
 					["coord"] = { 36.1, 60.3, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+				q(88992, {	-- Envisioned Mastery
+					-- ["coord"] = { 36.1, 60.3, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(93397, {	-- Gnawing Hunger
 					["coord"] = { 57.7, 72.7, MAP.MIDNIGHT.VOIDSTORM },

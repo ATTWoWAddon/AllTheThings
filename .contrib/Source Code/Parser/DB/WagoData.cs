@@ -1218,7 +1218,7 @@ namespace ATT.DB
                     StoreLocalizedData(obj, locale);
                 }
 
-                Framework.Log($"INFO: Wago Type {ParseType.Name} Loaded with {CachedData.Count} entries");
+                Framework.LogDebug($"INFO: Wago Type {ParseType.Name} Loaded with {CachedData.Count} entries");
             }
             #endregion
             #region Localized Data Caching + Checking

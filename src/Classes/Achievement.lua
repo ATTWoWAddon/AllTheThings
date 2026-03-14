@@ -479,7 +479,7 @@ do
 				-- criteria with spellID (TODO)
 
 				-- criteria fallback to base achievement name
-				name = "Criteria: "..(select(2, GetAchievementInfo(achievementID)) or "#"..criteriaID)
+				name = select(2, GetAchievementInfo(achievementID)) or "#"..criteriaID
 			end
 		end
 		app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID,name)

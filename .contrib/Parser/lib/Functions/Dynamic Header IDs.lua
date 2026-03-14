@@ -480,6 +480,7 @@ HeaderAssignments = {
 	["Renown 4: Big Moth Hunter I"] = -740,
 	["Rewards"] = -47,
 	["Riding Trainer"] = -48,
+	["Ritual Sites"] = -742,
 	["Rune Engraving"] = -639,
 	["Ruthless Gladiator"] = -257,
 	["S.C.R.A.P."] = -411,
@@ -721,4 +722,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -742;
+NextHeaderID = -743;

@@ -242,12 +242,7 @@ q(94995,{awp=120000,coords={
 i(259115),
 i(259113),
 i(259114),
-i(259126)}}),
-q(92608,{coords={
-[2339]={{53.9,55.7}},
-[2351]={{53.9,55.7}},
-[2352]={{53,37.3}}},lvl=25,qgs={252717},repeatable=1,g={
-i(253316,{spellID=1256057})}})}}),
+i(259126)}})}}),
 h(-22,{awp=110207,description="It is advised to use the |cffffffffNPC Filler for the Mini List|r to allow these Items to fill properly under NPCs within your current Housing Neighborhood.",g={
 de(1452,{crs={255222,255278},itemID=244662,spellID=1237792}),
 de(2092,{crs={255222,255278},itemID=246223,spellID=1241203}),
@@ -721,7 +716,8 @@ cq(92710,{b=1,cost={{"c",3363,30}},description="Once you've purchased this item,
 h(-45,{
 q(92608,{coords={
 [2351]={{53.8,55.6}},
-[2352]={{53,37.2}}},isWeekly=1,lvl=25,qgs={252717}})})})}}),
+[2352]={{53,37.2}}},isWeekly=1,lvl=25,qgs={252717},g={
+i(253316,{spellID=1256057})}})})})}}),
 m(2352,{awp=110207,g={
 h(-30,{
 exp(16704,{collectible=false,coords={

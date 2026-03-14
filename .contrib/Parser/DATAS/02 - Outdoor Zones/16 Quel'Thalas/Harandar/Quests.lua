@@ -258,7 +258,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 240533 },	-- Orweyna
 						["coord"] = { 35.7, 25.3, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
-							o(629603, {
+							o(629603, {	-- Glistening Seed Bag
 								["coord"] = { 34.9, 25.1, MAP.MIDNIGHT.HARANDAR },
 								["groups"] = { i(258623) },	-- Glistening Seed Bag (QI!)
 							}),
@@ -643,54 +643,53 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61739.02, {	-- The Legend of Aln'sharan
-					q(90467, {	-- Tales of the Sky
-						["sourceQuests"] = { 86930 },	-- To Sow the Seed
-						["provider"] = { "n", 242358 },	-- Kuri
-						["coord"] = { 67.8, 27.5, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							o(529370, {	-- Stray Skyshards
-								["coords"] = {
-									{ 67.9, 30.2, MAP.MIDNIGHT.HARANDAR },
-									{ 68.4, 31.7, MAP.MIDNIGHT.HARANDAR },
-									{ 69.2, 30.3, MAP.MIDNIGHT.HARANDAR },
-									{ 69.3, 32.3, MAP.MIDNIGHT.HARANDAR },
-									{ 70.2, 29.9, MAP.MIDNIGHT.HARANDAR },
-									{ 70.2, 32.0, MAP.MIDNIGHT.HARANDAR },
-									{ 70.4, 31.4, MAP.MIDNIGHT.HARANDAR },
-								},
-								["groups"] = { i(240484) },	-- Stray Skyshards (QI!)
-							}),
-						},
-					}),
-					q(90468, {	-- Ugh, Chores!
-						["sourceQuests"] = { 86930 },	-- To Sow the Seed
-						["provider"] = { "n", 242358 },	-- Kuri
-						["coord"] = { 67.8, 27.5, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(240485),	-- Intact Saptor Frond (QI!)
-						},
-					}),
-					q(90469, {	-- Carry On, Wayward Kuri
-						["sourceQuests"] = {
-							90467,	-- Tales of the Sky
-							90468,	-- Ugh, Chores!
-						},
-						["provider"] = { "n", 242689 },	-- Kamari
-						["coord"] = { 69.4, 29.2, MAP.MIDNIGHT.HARANDAR },
-					}),
-					q(90470, {	-- Skyglass Scavenging
-						["sourceQuests"] = { 90469 },	-- Carry On, Wayward Kuri
-						["provider"] = { "n", 242691 },	-- Kuri
-						["coord"] = { 69.7, 26.6, MAP.MIDNIGHT.HARANDAR },
-					}),
-					q(90474, {	-- The Legend of Aln'sharan
-						["sourceQuests"] = { 90470 },	-- Skyglass Scavenging
-						["provider"] = { "n", 242691 },	-- Kuri
-						["coord"] = { 69.7, 26.6, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(255826),	-- Mysterious Skyshards
-						},
-					}),
+					["description"] = "It is recommended you do this Sojourner as soon as possible as it unlocks the |cFF4A54E8Mysterious Skyshards|r to drop from any creature in the zone.",
+					["groups"] = {
+						q(90467, {	-- Tales of the Sky
+							["sourceQuests"] = { 86930 },	-- To Sow the Seed
+							["provider"] = { "n", 242358 },	-- Kuri
+							["coord"] = { 67.8, 27.5, MAP.MIDNIGHT.HARANDAR },
+							["groups"] = {
+								o(529370, {	-- Stray Skyshards
+									["coords"] = {
+										{ 67.9, 30.2, MAP.MIDNIGHT.HARANDAR },
+										{ 68.4, 31.7, MAP.MIDNIGHT.HARANDAR },
+										{ 69.2, 30.3, MAP.MIDNIGHT.HARANDAR },
+										{ 69.3, 32.3, MAP.MIDNIGHT.HARANDAR },
+										{ 70.2, 29.9, MAP.MIDNIGHT.HARANDAR },
+										{ 70.2, 32.0, MAP.MIDNIGHT.HARANDAR },
+										{ 70.4, 31.4, MAP.MIDNIGHT.HARANDAR },
+									},
+									["groups"] = { i(240484) },	-- Stray Skyshards (QI!)
+								}),
+							},
+						}),
+						q(90468, {	-- Ugh, Chores!
+							["sourceQuests"] = { 86930 },	-- To Sow the Seed
+							["provider"] = { "n", 242358 },	-- Kuri
+							["coord"] = { 67.8, 27.5, MAP.MIDNIGHT.HARANDAR },
+							["groups"] = { i(240485) },	-- Intact Saptor Frond (QI!)
+						}),
+						q(90469, {	-- Carry On, Wayward Kuri
+							["sourceQuests"] = {
+								90467,	-- Tales of the Sky
+								90468,	-- Ugh, Chores!
+							},
+							["provider"] = { "n", 242689 },	-- Kamari
+							["coord"] = { 69.4, 29.2, MAP.MIDNIGHT.HARANDAR },
+						}),
+						q(90470, {	-- Skyglass Scavenging
+							["sourceQuests"] = { 90469 },	-- Carry On, Wayward Kuri
+							["provider"] = { "n", 242691 },	-- Kuri
+							["coord"] = { 69.7, 26.6, MAP.MIDNIGHT.HARANDAR },
+						}),
+						q(90474, {	-- The Legend of Aln'sharan
+							["sourceQuests"] = { 90470 },	-- Skyglass Scavenging
+							["provider"] = { "n", 242691 },	-- Kuri
+							["coord"] = { 69.7, 26.6, MAP.MIDNIGHT.HARANDAR },
+							["groups"] = { i(255826) },	-- Mysterious Skyshards
+						}),
+					},
 				}),
 				header(HEADERS.AchCriteria, 61739.03, {	-- Late Bloomers
 					q(90537, {	-- Late Bloomers
@@ -699,7 +698,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 37.0, 26.0, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
 							o(544785, {	-- Empty Seed Sack
-								["coord"] = { 48.7, 32.1, MAP.MIDNIGHT.HARANDAR },
+								["coord"] = { 48.7, 32.2, MAP.MIDNIGHT.HARANDAR },
 								["groups"] = { i(244337) },	-- Empty Seed Sack (QI!)
 							}),
 						},
@@ -713,9 +712,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90537 },	-- Late Bloomers
 						["provider"] = { "n", 243053 },	-- Ney'leia
 						["coord"] = { 48.9, 29.7, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(242226),	-- Stolen Seeds (QI!)
-						},
+						["groups"] = { i(242226) },	-- Stolen Seeds (QI!)
 					}),
 					q(90963, {	-- Caves of the Cleft
 						["sourceQuests"] = {
@@ -748,10 +745,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 49.7, 23.3, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
 							i(246117),	-- Carved Key (QI!)
-							i(263473),	-- Recipe: Flora Frenzy (RECIPE!)
-							o(553808, {	--
-								i(246120),	-- Cultivation Notes (QI!)
+							o(553808, {	-- Gomphusta's Chest
+								["coord"] = { 48.6, 22.4, MAP.MIDNIGHT.HARANDAR },
+								["groups"] = { i(246120) },	-- Cultivation Notes (QI!)
 							}),
+							--
+							i(263473),	-- Recipe: Flora Frenzy (RECIPE!)
 						},
 					}),
 				}),
@@ -765,20 +764,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91346 },	-- Supplicants to The Goddess
 						["provider"] = { "n", 246607 },	-- Greenspeaker Cyenna
 						["coord"] = { 65.4, 28.1, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(246886),	-- Harmonious Lash (QI!)
-						},
+						["groups"] = { i(246886) },	-- Harmonious Lash (QI!)
 					}),
 					q(91360, {	-- Weeding Out the Unwanted
-						["sourceQuests"] = {
-							91359,	-- Fungal Lashers B Gone
-							91346,	-- Supplicants to The Goddess
-						},
+						["sourceQuests"] = { 91346 },	-- Supplicants to The Goddess
 						["provider"] = { "n", 246607 },	-- Greenspeaker Cyenna
 						["coord"] = { 65.4, 28.1, MAP.MIDNIGHT.HARANDAR },
 					}),
 					q(91361, {	-- Back on Duty?
-						["sourceQuest"] = 91360,	-- Weeding Out the Unwanted
+						["sourceQuests"] = {
+							91359,	-- Fungal Lashers B Gone
+							91360,	-- Weeding Out the Unwanted
+						},
 						["provider"] = { "n", 246607 },	-- Greenspeaker Cyenna
 						["coord"] = { 65.4, 28.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
@@ -816,6 +813,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}),
 						},
 					}),
+					q(91086, {	-- Nipping the Buds
+						["sourceQuests"] = { 91063 },	-- The Blooming Lattice
+						["provider"] = { "n", 245639 },	-- Su'meera
+						["coord"] = { 60.8, 29.9, MAP.MIDNIGHT.HARANDAR },
+					}),
 					q(91085, {	-- Petal Bristles
 						["sourceQuests"] = { 91063 },	-- The Blooming Lattice
 						["provider"] = { "n", 245639 },	-- Su'meera
@@ -840,11 +842,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["groups"] = { i(245571) },	-- Petalwing Plume (QI!)
 							}),
 						},
-					}),
-					q(91086, {	-- Nipping the Buds
-						["sourceQuests"] = { 91063 },	-- The Blooming Lattice
-						["provider"] = { "n", 245639 },	-- Su'meera
-						["coord"] = { 60.8, 29.9, MAP.MIDNIGHT.HARANDAR },
 					}),
 					q(91088, {	-- Behind the Falls
 						["sourceQuests"] = {
@@ -890,22 +887,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 247736 },	-- Nayeli
 						["coord"] = { 57.3, 49.0, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(260439),	-- Silence and Shadow Champion's Badge
-						},
+						["groups"] = { i(260439) },	-- Silence and Shadow Champion's Badge
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61739.07, {	-- Harandar's Kitchen
-					q(91587, {	-- Carcass Cuisine
-						["sourceQuests"] = { 86930 },	-- To Sow the Seed
-						["provider"] = { "n", 247936 },	-- Yu'relen
-						["coord"] = { 40.9, 23.2, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(246942),	-- Corpse Rind (QI!)
-						},
-					}),
 					q(91585, {	-- Fresh from the Garden
-						["sourceQuests"] = { 86864 },	-- Watch The Den
+						["sourceQuests"] = { 86930 },	-- To Sow the Seed
 						["provider"] = { "n", 247936 },	-- Yu'relen
 						["coord"] = { 40.9, 23.2, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
@@ -914,14 +901,34 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 					q(91586, {	-- Soil-based Alternatives
-						["sourceQuests"] = { 86864 },	-- Watch The Den
+						["sourceQuests"] = { 86930 },	-- To Sow the Seed
 						["provider"] = { "n", 247936 },	-- Yu'relen
 						["coord"] = { 40.9, 23.2, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
-							o(557572, {	--
-								i(246926),	-- Nutrient Rich Soil (QI!)
+							o(557572, {	-- Nutrient-Rich Dirt
+								["coords"] = {
+									{ 39.3, 24.1, MAP.MIDNIGHT.HARANDAR },
+									{ 39.6, 24.5, MAP.MIDNIGHT.HARANDAR },
+									{ 39.8, 23.9, MAP.MIDNIGHT.HARANDAR },
+									{ 39.8, 24.6, MAP.MIDNIGHT.HARANDAR },
+									{ 39.7, 23.0, MAP.MIDNIGHT.HARANDAR },
+									{ 39.9, 25.8, MAP.MIDNIGHT.HARANDAR },
+									{ 40.3, 23.0, MAP.MIDNIGHT.HARANDAR },
+									{ 40.4, 24.7, MAP.MIDNIGHT.HARANDAR },
+									{ 40.4, 25.3, MAP.MIDNIGHT.HARANDAR },
+									{ 41.4, 25.7, MAP.MIDNIGHT.HARANDAR },
+									{ 41.7, 23.4, MAP.MIDNIGHT.HARANDAR },
+									{ 41.8, 24.9, MAP.MIDNIGHT.HARANDAR },
+								},
+								["groups"] = { i(246926) },	-- Nutrient Rich Soil (QI!)
 							}),
 						},
+					}),
+					q(91587, {	-- Carcass Cuisine
+						["sourceQuests"] = { 86930 },	-- To Sow the Seed
+						["provider"] = { "n", 247936 },	-- Yu'relen
+						["coord"] = { 40.9, 23.2, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(246942) },	-- Corpse Rind (QI!)
 					}),
 					q(91588, {	-- Harandar's Kitchen
 						["sourceQuests"] = {
@@ -936,9 +943,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91588 },	-- Harandar's Kitchen
 						["provider"] = { "n", 247936 },	-- Yu'relen
 						["coord"] = { 40.9, 23.2, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(264178),	-- Harandar Charcuterie Board (DECOR!)
-						},
+						["groups"] = { i(264178) },	-- Harandar Charcuterie Board (DECOR!)
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61739.08, {	-- Silence at Fungara Village
@@ -1237,9 +1242,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 90621,	-- Tiny Heroes' Journeys
 						["qg"] = 243226,	-- Boletus <Fight Promoter>
 						["coord"] = { 71.8, 64.0, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							title(670),	-- <name>, Teacher of Strong
-						},
+						["groups"] = { title(670) },	-- <name>, Teacher of Strong
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61739.15, {	-- Trials of the Shul'ka
@@ -1343,7 +1346,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--Side quests
 			--Leading to villages, could be breadcrumb but they are not?
 			q(93776, {	-- Har'alnor, Village of Twilight
-				["sourceQuests"] = { 86864 },	-- Watch The Den
+				["sourceQuests"] = { 86930 },	-- To Sow the Seed
 				["qg"] = 241655,	-- Hannan
 				["coord"] = { 30.5, 77.2, MAP.MIDNIGHT.HARANDAR },
 			}),
@@ -1354,7 +1357,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					{ 54.2, 53.3, MAP.MIDNIGHT.HARANDAR },
 					{ 71.1, 53.9, 2576 },	-- The Den
 				},
-				["altQuests"] = {	-- Quest gets auto-completed as soon as you accept 'Feeding the Buds'. Since there are several Sojourner quest-chains branching from this one, I assume it works the same for other quests here.	-- Exo
+				["altQuests"] = {	-- Quest gets auto-completed as soon as you accept any of the altQuests
 					92882,	-- A Hunter's Plight
 					90615,	-- Be Grudge You	// This one may not be accurate
 					92694,	-- Dusk Among Pigments
@@ -1363,14 +1366,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			q(93775, {	-- Har'mara, Village of Balance
-				["sourceQuests"] = { 86864 },	-- Watch The Den
+				["sourceQuests"] = { 86930 },	-- To Sow the Seed
 				["provider"] = { "n", 256350 },	-- Ravi
 				["coord"] = { 50.7, 55.7, MAP.MIDNIGHT.HARANDAR },
+				["altQuests"] = {	-- Quest gets auto-completed as soon as you accept any of the altQuests
+					90537,	-- Late Bloomers
+					91587,	-- Carcass Cuisine
+					91585,	-- Fresh from the Garden
+					91586,	-- Soil-based Alternatives
+				},
 			}),
 			q(93771, {	-- Har'kuai, Village of Rain
-				["sourceQuests"] = { 86864 },	-- Watch The Den
+				["sourceQuests"] = { 86930 },	-- To Sow the Seed
 				["provider"] = { "n", 256313 },	-- Kaleo
 				["coord"] = { 51.0, 50.9, MAP.MIDNIGHT.HARANDAR },
+				["altQuests"] = {	-- Quest gets auto-completed as soon as you accept any of the altQuests
+					91346,	-- Supplicants to The Goddess
+					90467,	-- Tales of the Sky
+					91063,	-- The Blooming Lattice
+					90468,	-- Ugh, Chores!
+				},
 			}),
 		}),
 		n(QUESTS, sharedData({

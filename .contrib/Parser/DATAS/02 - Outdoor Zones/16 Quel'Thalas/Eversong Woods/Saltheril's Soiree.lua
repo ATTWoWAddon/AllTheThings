@@ -83,8 +83,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(249691),	-- Holy Sunfire (QI!)
 				}),
 				q(91978, {	-- Taxing the Tideborne
-					o(568550, {	--
-						i(249686),	-- Tideborne Dubloon (QI!)
+					o_repeated({
+						["coords"] = {
+							{ 37.7, 44.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+							{ 37.4, 45.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+							{ 39.0, 42.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+							{ 39.1, 44.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+							{ 39.3, 42.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+							{ 40.2, 45.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+							{ 40.6, 43.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+						},
+						["groups"] = {
+							o(568550),	-- Sack of Coins
+							o(629446),	-- Smuggler's Satchel
+							i(249686),	-- Tideborne Dubloon (QI!)
+						},
 					}),
 				}),
 				q(91973, {	-- Naga Blade
@@ -113,10 +126,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91987, {	-- Potted Lashers
-					["groups"] = { i(249418), },	-- Lightblooming Bulb (QI!)
+					i(249418),	-- Lightblooming Bulb (QI!)
 				}),
 				q(91986, {	-- Put a Little Snap in Their Step
-					["groups"] = { i(249779), },	-- Discordant Tune (QI!)
+					i(249779),	-- Discordant Tune (QI!)
 				}),
 				q(91984, {	-- Sungrub Silk
 					i(249422),	-- Sunsilk (QI!)
@@ -131,10 +144,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91983, {	-- Lovely Plumage
-					["groups"] = {
-						i(249439),	-- Bright Feather (QI!)
-						i(249440),	-- Bright Feather (QI!)
-					},
+					i(249439),	-- Bright Feather (QI!)
+					i(249440),	-- Bright Feather (QI!)
 				}),
 			})),
 			-- Magisters weekly
@@ -145,12 +156,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWeekly"] = true,
 			}, {
 				q(91993, {	-- Diminutive Demand
-					["groups"] = { i(249437), },	-- Wand of Diminutive Proportions (QI!)
+					i(249437),	-- Wand of Diminutive Proportions (QI!)
 				}),
 				q(90573),	-- Fortify the Runestones: Magisters
 				q(89276),	-- Light Snacks
 				q(91997, {	-- Power Clean
-					["groups"] = { i(249452), },	-- Inanimate Broom (QI!)
+					i(249452),	-- Inanimate Broom (QI!)
 				}),
 				q(91995),	-- What Horrible Magic
 			})),
@@ -161,22 +172,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["maxReputation"] = { FACTION_SHADES_OF_THE_ROW, 6 },	-- Luminary
 				["isWeekly"] = true,
 			}, {
+				q(92007, {	-- Begged, Borrowed or Stolen
+					i(249544),	-- Chest of Stolen Valuables (QI!)
+				}),
 				q(92002, {	-- Dangerous Showpieces
-					["groups"] = { i(249528), },	-- Twilight Weaponry (QI!)
+					i(249528),	-- Twilight Weaponry (QI!)
+				}),
+				q(90576),	-- Fortify the Runestone: Shades of the Row
+				q(92004, {	-- Shady Dealings
+					i(249687),	-- Poisonous Frog Secretions (QI!)
 				}),
 				q(92005, {	-- Throw The Dice
 					i(249541),	-- Naga Fang (QI!)
 				}),
-				q(90576),	-- Fortify the Runestone: Shades of the Row
 				q(92006, {	-- We Need a Refill
-					["groups"] = {
-						i(249555),	-- Bloodthistle Brandy (QI!)
-						i(249556),	-- Mana Burner (QI!)
-						i(249557),	-- Sun-Kissed Tranquilla (QI!)
-					},
-				}),
-				q(92007, {	-- Begged, Borrowed or Stolen
-					["groups"] = { i(249544) },	-- Chest of Stolen Valuables (QI!)
+					i(249555),	-- Bloodthistle Brandy (QI!)
+					i(249556),	-- Mana Burner (QI!)
+					i(249557),	-- Sun-Kissed Tranquilla (QI!)
 				}),
 			})),
 			n(BONUS_OBJECTIVES, {

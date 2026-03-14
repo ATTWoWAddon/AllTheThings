@@ -249,7 +249,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 						ach(7057),	-- End of the Line
 						ach(7062),	-- Mine Mine Mine!
-						ach(7099),	-- Five for Five
+						ach(7099, {	-- Five for Five
+							["description"] = "An easy way to do this is via Training Grounds, capping in the following order:\n\n1) Water\n2) Top\n3) Lava\n4) Lava (again)\n5) Water\n\nStay mounted and ignore NPCs until you're in the circle!"
+						}),
 						ach(7100),	-- My Diamonds and Your Rust
 						ach(7102),	-- Escort Service
 						ach(7103),	-- Greed is Good
