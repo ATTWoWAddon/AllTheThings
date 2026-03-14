@@ -20,7 +20,7 @@ namespace ATT.DB.Types
         {
             get
             {
-                Framework.Log($"Exporting SkillLineAbility skillID:{SkillupSkillLineID}, ID:{ID}, requireSkill:{SkillLine}, recipeID:{SpellID}");
+                //Framework.Log($"Exporting SkillLineAbility skillID:{SkillupSkillLineID}, ID:{ID}, requireSkill:{SkillLine}, recipeID:{SpellID}");
                 return SkillupSkillLineID;
             }
         }

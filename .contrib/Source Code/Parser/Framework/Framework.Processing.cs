@@ -707,8 +707,14 @@ namespace ATT
             bool success = true;
 
             // data.DataBreakPoint("_DEBUG", true);
+            bool track = data.TryGetValue("recipeID", out long tempRecipeID) && tempRecipeID == 124638;
+            // Known recipe which loses skillID for some
+            if (track)
+                Log($"Tracking Recipe: {tempRecipeID} before {CurrentParseStage} stage", data);
             if (ProcessingFunction(data, parentData))
             {
+                if (track)
+                    Log($"Tracking Recipe: {tempRecipeID} after {CurrentParseStage} stage", data);
                 // Store the parent relationship
                 data["__parent"] = parentData;
 
