@@ -752,6 +752,8 @@ namespace ATT
                             continue;
                     }
 
+                    const string MergeIntoField = "_sort_g";
+
                     // probably cleaner way to make this chunk re-usable if other merge-filtering is required in future... can't think atm
 
                     // for '_encounterHash' merge into, make sure the merged Encounter matches the specific EventID
@@ -770,7 +772,7 @@ namespace ATT
 
                                 // match EventID when merging
                                 // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                Merge(data, "g", mergeObject);
+                                Merge(data, MergeIntoField, mergeObject);
                             }
                         }
                         else
@@ -785,7 +787,7 @@ namespace ATT
                                 TrackPostProcessMergeKey(key, keyValue);
 
                                 // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                Merge(data, "g", mergeObject);
+                                Merge(data, MergeIntoField, mergeObject);
                             }
                         }
                     }
@@ -816,7 +818,7 @@ namespace ATT
                                     if (isPetBattleHeader) header["pb"] = mergeObject["pb"];
                                     // track the data which is actually being merged into another group
                                     TrackPostProcessMergeKey(key, keyValue);
-                                    Merge(data, "g", header);
+                                    Merge(data, MergeIntoField, header);
                                     continue;
                                 }
                             }
@@ -824,7 +826,7 @@ namespace ATT
                             // track the data which is actually being merged into another group
                             TrackPostProcessMergeKey(key, keyValue);
                             // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                            Merge(data, "g", mergeObject);
+                            Merge(data, MergeIntoField, mergeObject);
                         }
                     }
                 }

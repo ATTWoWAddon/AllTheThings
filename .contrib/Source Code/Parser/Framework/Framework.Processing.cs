@@ -178,6 +178,9 @@ namespace ATT
             AddHandlerAction(ParseStage.Incorporation, data => data.ContainsKey("speciesID"), Incorporate_Species);
             AddHandlerAction(ParseStage.Incorporation, data => HasSpell(data) && !data.ContainsKey("_unsorted"), Incorporate_Spell);
             AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Incorporate_Parallel);
+            // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
+            AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Objects.PostProcessMergeInto);
+            AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Incorporate_sort_g);
 
             if (Objects.MAPID_COORD_SHIFTS.Count > 0)
             {
@@ -969,8 +972,6 @@ namespace ATT
 
             Objects.PerformWipes(data);
 
-            // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
-            Objects.PostProcessMergeInto(data);
 
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
             if (!CheckTimeline(data, parentData))
@@ -1373,7 +1374,6 @@ namespace ATT
         {
             Incorporate__spellQuests(data);
             Incorporate_DataCloning(data);
-            Incorporate_sort_g(data);
         }
 
         private static void Incorporate__spellQuests(IDictionary<string, object> data)
