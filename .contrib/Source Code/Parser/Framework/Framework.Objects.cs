@@ -556,16 +556,23 @@ namespace ATT
             /// Merges shared data from the database into the object.
             /// </summary>
             /// <param name="objectData">The object data to merge shared data into.</param>
-            internal static void MergeSharedDataIntoObject(IDictionary<string, object> data)
+            internal static void MergeSharedDataIntoObject(IDictionary<string, object> data, HashSet<string> reMergeFieldsOnly = null)
             {
                 if (data.ContainsAnyKey(MergeRestrictedFields))
                     return;
 
-                foreach (var container in SharedDataByPrimaryKey.Where(c => MERGE_OBJECT_FIELDS.ContainsKey(c.Key)))
+                HashSet<string> reRunMergeFields = null;
+                foreach (var container in SharedDataByPrimaryKey.Where(c => reMergeFieldsOnly?.Contains(c.Key) ?? MERGE_OBJECT_FIELDS.ContainsKey(c.Key)))
                 {
                     // does this data contain the key?
                     if (!data.TryGetValue(container.Key, out object keyValue))
                         continue;
+
+                    // if we have a re-run added for this field, we can remove it since we're merging in the same pass
+                    if (reRunMergeFields?.Remove(container.Key) ?? false && reRunMergeFields.Count == 0)
+                    {
+                        reRunMergeFields = null;
+                    }
 
                     // get the specific merged object
                     if (!container.Value.TryGetValue(keyValue, out ConcurrentDictionary<string, object> commonData))
@@ -583,6 +590,11 @@ namespace ATT
                             if (!data.TryGetValue(field, out object existingVal))
                             {
                                 data[field] = val;
+                                // If a new field was just merged which itself may have merge data, we will have to re-run that field merge
+                                if (MERGE_OBJECT_FIELDS.ContainsKey(field))
+                                {
+                                    (reRunMergeFields ?? (reRunMergeFields = new HashSet<string>())).Add(field);
+                                }
                             }
                             else if (!Equals(existingVal, val))
                             {
@@ -608,6 +620,12 @@ namespace ATT
                             }
                         }
                     }
+                }
+
+                // re-run merge fields if needed
+                if (reRunMergeFields != null)
+                {
+                    MergeSharedDataIntoObject(data, reRunMergeFields);
                 }
             }
 

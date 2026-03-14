@@ -64,12 +64,12 @@ namespace ATT
                 foreach (var data in ActionDatas[act])
                 {
                     // data.DataBreakPoint("achID", 12896);
-                    bool track = data.TryGetValue("recipeID", out long tempRecipeID) && tempRecipeID == 124638;
+                    bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == Framework.Config["TEMP_itemID"];
                     if (track)
-                        Framework.Log($"Tracking Recipe: {tempRecipeID} change during {act.Method.Name} handler", data);
+                        Framework.Log($"Tracking Item: {tempItemID} change during {act.Method.Name} handler", data);
                     act(data);
                     if (track)
-                        Framework.Log($"Resulting Recipe: {tempRecipeID} after {act.Method.Name} handler", data);
+                        Framework.Log($"Resulting Item: {tempItemID} after {act.Method.Name} handler", data);
                 }
             }
         }
