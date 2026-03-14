@@ -111,6 +111,9 @@ namespace ATT
                 }
             }
 
+            // Pre-run all _drops against the DB
+            Objects.PreDropDBData();
+
             // ItemConversionDB
             var ItemConversionDB = WagoData.GetAll<ItemBonus>().Values.Where(i => i.Type == 37).ToArray();
             if (ItemConversionDB.Length > 0)

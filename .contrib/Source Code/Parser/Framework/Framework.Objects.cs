@@ -473,6 +473,20 @@ namespace ATT
             }
 
             /// <summary>
+            /// Ensures that all DB data performs any _drop values against itself so there's no situation of DB data dropping a field 
+            /// </summary>
+            internal static void PreDropDBData()
+            {
+                foreach (var container in SharedDataByPrimaryKey)
+                {
+                    foreach (var commonDataKvp in container.Value)
+                    {
+                        PreMerge(commonDataKvp.Value, commonDataKvp.Value);
+                    }
+                }
+            }
+
+            /// <summary>
             /// Merges information from the database object into shared object storage.
             /// </summary>
             /// <param name="primaryKey">The primary key of the database module.</param>
