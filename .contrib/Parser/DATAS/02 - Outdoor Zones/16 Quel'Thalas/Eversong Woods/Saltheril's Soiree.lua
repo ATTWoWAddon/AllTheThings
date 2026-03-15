@@ -10,6 +10,7 @@ SALTHERILS_HAVEN = createHeader({
 	icon = 132809,
 	text = {
 		en = "Saltheril's Soiree",
+		cn = "萨瑟利尔的聚会",
 	},
 });
 

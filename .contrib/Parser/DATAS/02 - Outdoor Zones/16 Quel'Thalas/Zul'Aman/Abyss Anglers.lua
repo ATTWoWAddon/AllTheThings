@@ -7,6 +7,7 @@ ABYSS_ANGLERS = createHeader({
 	icon = 2027958,
 	text = {
 		en = "Abyss Anglers",
+		cn = "深渊钓客",
 	},
 });
 

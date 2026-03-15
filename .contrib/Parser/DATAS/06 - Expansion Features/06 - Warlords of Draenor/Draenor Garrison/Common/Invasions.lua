@@ -10,6 +10,7 @@ GARRISON_INVASIONS = createHeader({
 	},
 	description = {
 		en = "To trigger an invasion, you need to do an assault quest or purchase a scouting missive from the garrison quartermaster. \n\nBotani Invasion -- Assault on Lost Veil Anzu, Assault on the Everbloom Wilds \n\nGoren Invasion -- Assault on Magnarok, Assault on the Broken Precipice \n\nIron Horde Invasion -- Assault on Mok'gol Watchpost, Assault on the Iron Siegeworks, Assault on the Pit, Battle in Ashran \n\nOgre Invasion -- Assault on Stonefury Cliffs, Assault on the Gorian Proving Grounds, Challenge at the Ring of Blood \n\nShadow Council Invasion -- Assault on Shattrath Harbor, Assault on the Heart of Shattrath \n\nShadowmoon Invasion -- Assault on Darktide Roost, Assault on Pillars of Fate, Assault on Skettis, Assault on Socrethar's Rise \n\nYou can earn Bronze, Silver, Gold, and Platinum rewards once per week per toon.",
+		cn = "要触发一次入侵事件，你需要完成一个突袭任务，或者从要塞军需官处购买一份侦察信件。\n\n食人魔花入侵：失落面纱安苏突袭战、永恒花海荒野突袭战\n\n戈隆入侵：玛格纳洛克突袭战、破碎悬崖突袭战\n\n钢铁部落入侵：莫戈尔哨站突袭战、钢铁攻城器械突袭战、深渊突袭战、阿什兰之战\n\n食人魔入侵：石怒悬崖突袭战、戈里安试炼场突袭战、鲜血之环挑战\n\n暗影议会入侵：沙塔斯港口突袭战、沙塔斯之心突袭战\n\n影月入侵：暗潮栖木突袭战、命运之柱突袭战、斯克提斯突袭战、索克雷萨高地突袭战\n\n每个角色每周可获得一次青铜、白银、黄金和白金级奖励 ",
 	},
 });
 

@@ -21,6 +21,7 @@ THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
 		en = "These promotions happened during the time The War Within was the most recent expansion.\n\nThey are listed in the order of their first appearance.",
 		es = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe enumeran en el orden de su primera aparición.",
 		mx = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe listan en el orden de su primera aparición.",
+		cn = "这些促销活动均发生在《地心之战》作为最新资料片的时期。\n\n以下按活动首次出现的时间顺序列出",
 	},
 });
 
@@ -44,6 +45,7 @@ STEELSERIES = createHeader({
 		en = "Promotion for SteelSeries World of Warcraft Limited Edition Collection.",
 		es = "Promoción de la colección de edición limitada SteelSeries World of Warcraft.",
 		mx = "Promoción de la colección de edición limitada SteelSeries World of Warcraft.",
+		cn = "赛睿《魔兽世界》限量版系列促销活动",
 	},
 });
 
@@ -67,6 +69,7 @@ RAZER = createHeader({
 		en = "Promotion for Razer Gaming Peripherals World of Warcraft Collection. Purchasing any item will award all three promotional codes.",
 		es = "Promoción de periféricos Razer Gaming de la colección World of Warcraft. Al comprar cualquier artículo, recibirás los tres códigos promocionales.",
 		mx = "Promoción de periféricos Razer Gaming de la colección World of Warcraft. Al comprar cualquier artículo, recibirás los tres códigos promocionales.",
+		cn = "雷蛇《魔兽世界》系列游戏外设促销：购买任意一件，即可获赠全部三个促销兑换码",
 	},
 });
 TREASURE_OF_AZEROTH = createHeader({
@@ -76,12 +79,13 @@ TREASURE_OF_AZEROTH = createHeader({
 		en = "Treasures of Azeroth",
 		es = "Tesoros de Azeroth",
 		mx = "Tesoros de Azeroth",
-		-- cn = "雷蛇",
+		cn = "艾泽拉斯的宝藏",
 	},
 	description = {
 		en = "To celebrate the launch of Titan Reforged servers, Chinese players can participate in The Treasures of Azeroth event, offering brand new rewards. The Rewards are not shared between game types and must be obtained separately in each.",
 		es = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
 		mx = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
+		cn = "为庆祝泰坦重铸服务器上线，中国玩家可参与艾泽拉斯宝藏活动，赢取全新奖励。奖励不跨游戏类型共享，需在各自版本中分别获取",
 	},
 });
 

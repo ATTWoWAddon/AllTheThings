@@ -7,6 +7,7 @@ STORMARION_ASSAULT = createHeader({
 	icon = 7431083,
 	text = {
 		en = "Stormarion Assault",
+		cn = "斯托玛兰突袭战",
 	},
 });
 
