@@ -590,6 +590,7 @@ PHASE_ONE_DIREMAUL = createClassicPhase({
 		en = "This became available with the %s Phase Release of %s.",
 		es = "Esto estuvo disponible con el lanzamiento de la fase %s de %s.",
 		mx = "Esto estuvo disponible con el lanzamiento de la fase %s de %s.",
+		cn = "这在 % s 的 % s 阶段发布时可用了",
 	},
 	lore = {
 		en = "Included Dire Maul.",
@@ -673,7 +674,7 @@ PHASE_FIVE = createClassicPhase({
 		en = "Included Ahn'Qiraj, which was pre-faced by a unique opening event.",
 		es = "Se incluyó Ahn'Qiraj, que fue precedido por un evento de apertura único.",
 		mx = "Se incluyó Ahn'Qiraj, que fue precedido por un evento de apertura único.",
-		cn = "包含安其拉，其前身举办了一场独特的开幕活动。",
+		cn = "包含安其拉，其前身举办了一场独特的开幕活动",
 	},
 });
 PHASE_FIVE_RECIPES = PHASE_FIVE;
@@ -716,7 +717,7 @@ PHASE_FIVE_GONG = createClassicPhase({
 		en = "This was only available up until the Scarab Lords on your server have rung the gong.",
 		es = "Esto solo estuvo disponible hasta que los Señores Escarabajo de tu servidor tocaron el gong.",
 		mx = "Esto solo estuvo disponible hasta que los Señores Escarabajo de tu servidor tocaron el gong.",
-		cn = "这项功能仅在你们服务器上的圣甲虫领主敲响战锣之前有效。",
+		cn = "这项功能仅在你们服务器上的圣甲虫领主敲响战锣之前有效",
 	},
 	lore = {
 		en = "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off.",
@@ -763,7 +764,7 @@ PHASE_FIVE_CATCH_UP = createClassicPhase({
 		en = "This became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.",
 		es = "Esto estuvo disponible cerca del final de la Fase 5 para proporcionar equipo de resistencia a la naturaleza para aquellos que todavía estaban trabajando en AQ40.",
 		mx = "Esto estuvo disponible cerca del final de la Fase 5 para proporcionar equipo de resistencia a la naturaleza para aquellos que todavía estaban trabajando en AQ40.",
-		cn = "这在第五阶段末期推出，目的是为仍在挑战安其拉神殿（AQ40）的玩家提供追赶自然抗性装备。",
+		cn = "这在第五阶段末期推出，目的是为仍在挑战安其拉神殿（AQ40）的玩家提供追赶自然抗性装备",
 	},
 	lore = {
 		en = "If the Catch-Up Gear is available, simply turn this on.",
@@ -787,7 +788,7 @@ PHASE_SIX = createClassicPhase({
 		en = "Included Naxxramas, which was heralded by the Scourge Invasion.",
 		es = "Se Incluyó Naxxramas, que fue anunciado por la Invasión de la Plaga.",
 		mx = "Se Incluyó Naxxramas, que fue anunciado por la Invasión de la Plaga.",
-		cn = "包含纳克萨玛斯，它以天灾入侵为标志。",
+		cn = "包含纳克萨玛斯，它以天灾入侵为标志",
 	},
 });
 PHASE_SIX_CLASS_BOOKS = PHASE_SIX;
@@ -951,7 +952,7 @@ SOD_PHASE_TWO = createClassicPhaseForSOD({
 		en = "Included the Gnomeregan raid, Stranglethorn Vale World PvP, and raised the level cap to 40.",
 		es = "Incluía la banda Gnomeregan, el JvJ del mundo de Vega de tuercespina, y aumento el limite de nivel a 40.",
 		mx = "Incluía la banda Gnomeregan, el JvJ del mundo de Vega de Tuercespina, y aumento el limite de nivel a 40.",
-		cn= "新增了诺莫瑞根团队副本、荆棘谷世界PvP，并将等级上限提升至40级",
+		cn = "新增了诺莫瑞根团队副本、荆棘谷世界PvP，并将等级上限提升至40级",
 	},
 });
 SOD_PHASE_THREE = createClassicPhaseForSOD({
@@ -1231,7 +1232,7 @@ TBC_PHASE_TWO_SKYGUARD = createClassicPhase({
 		en = "This became available with the Skyguard Faction during TBC Classic.",
 		es = "Esto se volvió disponible con la Facción Guardia del cielo durante TBC Classic.",
 		mx = "Esto se volvió disponible con la Facción Guardia del cielo durante TBC Classic.",
-		cn = "在TBC经典版中，天空卫队阵营提供了这项功能。",
+		cn = "在TBC经典版中，天空卫队阵营提供了这项功能",
 	},
 	lore = {
 		en = "If the Skyguard Faction is available on your server, simply turn this on.",
@@ -1394,7 +1395,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B = createClassicPhase({
 		en = "If the Shattered Sun Offensive has already unlocked the Portal on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado el Portal en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado el Portal en tu servidor, simplemente activa esta opción.",
-		cn = "如果破碎残阳已经解锁了服务器上的传送门，只需开启此功能即可。",
+		cn = "如果破碎残阳已经解锁了服务器上的传送门，只需开启此功能即可",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE = createClassicPhase({
@@ -1466,7 +1467,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR = createClassicPhase({
 		en = "If the Shattered Sun Offensive has already unlocked the Harbor and has begun working on the Alch Lab and Monument on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado el puerto en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado el puerto en tu servidor, simplemente activa esta opción.",
-		cn = "如果在你的服务器上，破碎残阳攻势已经解锁了港口，并且已经开始对炼金实验室和纪念碑开展相关工作，那就直接把这个打开"
+		cn = "如果在你的服务器上，破碎残阳攻势已经解锁了港口，并且已经开始对炼金实验室和纪念碑开展相关工作，那就直接把这个打开",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = createClassicPhase({
@@ -1514,7 +1515,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = createClassicPhase({
 		en = "If the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado el laboratorio de alquimia en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado el laboratorio de alquimia en tu servidor, simplemente activa esta opción.",
-		cn = "如果在你的服务器上，破碎残阳攻势已经解锁了炼金实验室，直接打开此项"
+		cn = "如果在你的服务器上，破碎残阳攻势已经解锁了炼金实验室，直接打开此项",
 	},
 });
 TBC_PHASE_FIVE_SCOURGE_INVASION = createClassicPhase({
@@ -1633,7 +1634,7 @@ WRATH_PHASE_TWO_HAMMERPRIO = createClassicPhase({
 		en = "Due to the exclusivity of the Hammer and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Hammer prio, simply turn this on.",
 		es = "Debido a la exclusividad del Martillo y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi ya tienes la prioridad del Martillo, simplemente actívala.",
 		mx = "Debido a la exclusividad del Martillo y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi ya tienes la prioridad del Martillo, simplemente actívala.",
-		cn = "由于这把锤子的独特性，以及优先级并非总是优先给予收藏者而非热衷竞技者，克里夫决定目前设置一个筛选器来减少公会内的纷争，此举是恰当的。\n\n这个筛选器在《大灾变》预补丁之后将默认开启。\n\n如果你确实拥有这把锤子的优先获取权，直接打开此项即可。"
+		cn = "由于这把锤子的独特性，以及优先级并非总是优先给予收藏者而非热衷竞技者，克里夫决定目前设置一个筛选器来减少公会内的纷争，此举是恰当的。\n\n这个筛选器在《大灾变》预补丁之后将默认开启。\n\n如果你确实拥有这把锤子的优先获取权，直接打开此项即可。",
 	},
 });
 WRATH_PHASE_THREE = createClassicPhase({
@@ -1731,7 +1732,7 @@ WRATH_PHASE_FOUR_OPERATION_ZALAZANE = createClassicPhase({
 		en = "Operation Zalazane",
 		es = "Operación Zalazane",
 		mx = "Operación Zalazane",
-		cn  = "扎拉赞恩行动",
+		cn = "扎拉赞恩行动",
 	},
 	description = {
 		en = "This became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.",
@@ -1743,7 +1744,7 @@ WRATH_PHASE_FOUR_OPERATION_ZALAZANE = createClassicPhase({
 		en = "Included Operation Gnomeregan and Zalazane's Fall",
 		es = "Incluía Operación Gnomeregan y La Caída de Zalazane",
 		mx = "Incluía Operación Gnomeregan y La Caída de Zalazane",
-		cn  = "包含诺莫瑞根行动和扎拉赞恩的陨落",
+		cn = "包含诺莫瑞根行动和扎拉赞恩的陨落",
 	},
 });
 WRATH_PHASE_FOUR_ELEMENTAL_INVASION = createClassicPhase({
@@ -1791,7 +1792,7 @@ CATA_PHASE_ONE = createClassicPhase({
 		es = "Fase 1",
 		mx = "Fase 1",
 		tw = "第1階段",
-		cn  = "阶段1",
+		cn = "阶段1",
 	},
 	lore = {
 		en = "Included Bastion of Twilight, Throne of the Four Winds, and Blackwing Descent.",
@@ -1888,7 +1889,7 @@ CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
 		en = "This was not available until the Hour of Twilight during Cataclysm Classic.",
 		es = "Esto no estuvo disponible hasta la Hora del Crepúsculo durante Cataclysm Classic.",
 		mx = "Esto no estuvo disponible hasta la Hora del Crepúsculo durante Cataclysm Classic.",
-		cn = "在《大灾变》经典服中，直到 “暮光审判”（版本更新）时，这个才可用"
+		cn = "在《大灾变》经典服中，直到 “暮光审判”（版本更新）时，这个才可用",
 	},
 	lore = {
 		en = "Included Dragon Soul.",
@@ -1961,7 +1962,7 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV = createClassicPhase({
 	}),
 	text = {
 		en = "Celestial Dungeons (MSV)",
-		cn = "天神地下城（魔古山宝库）"，
+		cn = "天神地下城（魔古山宝库）",
 	},
 	lore = {
 		en = "Included Celestial Dungeons with MSV loot.",
@@ -1981,7 +1982,7 @@ MOP_PHASE_ONE_HEART_OF_FEAR = createClassicPhase({
 	}),
 	text = {
 		en = "Heart of Fear",
-		cn = "恐惧之心"
+		cn = "恐惧之心",
 	},
 	lore = {
 		en = "Included Heart of Fear.",
@@ -2001,11 +2002,11 @@ MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14 = createClassicPhase({
 	}),
 	text = {
 		en = "Sha of Anger (Tier Available)",
-		cn = "怒之煞（套装可获取）"
+		cn = "怒之煞（套装可获取）",
 	},
 	lore = {
 		en = "Included Tier 14 Gear from Sha of Anger.",
-		cn = "包含怒之煞掉落的 T14 套装"
+		cn = "包含怒之煞掉落的 T14 套装",
 	},
 });
 MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF = createClassicPhase({
@@ -2061,7 +2062,7 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES = createClassicPhase({
 	}),
 	text = {
 		en = "Celestial Dungeons (ToES)",
-		cn = "天神地下城（永春台）"
+		cn = "天神地下城（永春台）",
 	},
 	lore = {
 		en = "Included Terrace of Endless Springs LFR gear for Celestial Dungeons.",
@@ -2101,7 +2102,7 @@ MOP_PHASE_RISE_OF_THE_THUNDER_KING = createClassicPhase({
 		en = "Included Throne of Thunder, the Isle of Giants, and the Isle of Thunder.",
 		es = "Incluía el Trono del Trueno, la Isla de los Gigantes y la Isla del Trueno.",
 		mx = "Incluía el Trono del Trueno, la Isla de los Gigantes y la Isla del Trueno.",
-		cn = "包括雷电王座、巨兽岛和雷神岛"
+		cn = "包括雷电王座、巨兽岛和雷神岛",
 	},
 });
 MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS = createClassicPhase({
@@ -2117,11 +2118,11 @@ MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS = createClassicPhase({
 	}),
 	text = {
 		en = "Celestial Dungeons (ToT)",
-		cn = "天神地下城（雷电王座）"
+		cn = "天神地下城（雷电王座）",
 	},
 	lore = {
 		en = "Included Throne of Thunder LFR gear for Celestial Dungeons.",
-		cn = "包含适用于天神地下城的雷电王座随机团队难度装备"
+		cn = "包含适用于天神地下城的雷电王座随机团队难度装备",
 	},
 });
 MOP_PHASE_ESCALATION = createClassicPhase({
@@ -2159,7 +2160,7 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR = createClassicPhase({
 		en = "Included Siege of Orgrimmar and the Timeless Isle.",
 		es = "Incluía Asedio de Orgrimmar y la Isla intemporal.",
 		mx = "Incluía Asedio de Orgrimmar y la Isla intemporal.",
-		cn = "包含围攻奥格瑞玛和永恒岛"
+		cn = "包含围攻奥格瑞玛和永恒岛",
 	},
 });
 MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS = createClassicPhase({
@@ -2175,11 +2176,11 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS = createClassicPhase({
 	}),
 	text = {
 		en = "Celestial Dungeons (SoO)",
-		cn = "天神地下城（围攻奥格瑞玛）"
+		cn = "天神地下城（围攻奥格瑞玛）",
 	},
 	lore = {
 		en = "Included Siege of Orgrimmar LFR gear for Celestial Dungeons.",
-		cn = "包含用于天神地下城的围攻奥格瑞玛随机团队副本装备"
+		cn = "包含用于天神地下城的围攻奥格瑞玛随机团队副本装备",
 	},
 });
 
