@@ -533,12 +533,13 @@ app:CreateWindow("Debugger", {
 		-- Bubble Up the Maps
 		local mapID = app.CurrentMapID;
 		if mapID then
+			local mapInfo = C_Map_GetMapInfo(mapID);
+			header = not mapInfo and { key = "mapID", mapID = mapID, g = { header } } or header
 			local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 			if pos then
 				local px, py = pos:GetXY();
 				info.coords = { [mapID] = { { px * 100, py * 100 } } };
 			end
-			local mapInfo = C_Map_GetMapInfo(mapID);
 			if mapInfo then
 				while mapID and mapID ~= 0 do
 					header = { key = "mapID", mapID = mapID, g = { header } }
