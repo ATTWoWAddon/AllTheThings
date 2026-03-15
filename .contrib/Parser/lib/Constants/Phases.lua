@@ -566,11 +566,13 @@ PHASE_ONE = createClassicPhase({
 		en = "Phase 1",
 		es = "Fase 1",
 		mx = "Fase 1",
+		cn = "阶段1",
 	},
 	lore = {
 		en = "Included Molten Core and Onyxia's Lair.",
 		es = "Incluidos Núcleo de magma y La guarida de Onyxia.",
 		mx = "Incluidos Núcleo de magma y La guarida de Onyxia.",
+		cn = "包含熔火之心和奥妮克希亚的巢穴",
 	},
 });
 PHASE_ONE_DIREMAUL = createClassicPhase({
@@ -582,6 +584,7 @@ PHASE_ONE_DIREMAUL = createClassicPhase({
 		en = "Dire Maul",
 		es = "La masacre",
 		mx = "La masacre",
+		cn = "厄运之槌",
 	},
 	description = {
 		en = "This became available with the %s Phase Release of %s.",
@@ -592,6 +595,7 @@ PHASE_ONE_DIREMAUL = createClassicPhase({
 		en = "Included Dire Maul.",
 		es = "Incluye La masacre",
 		mx = "Incluye La masacre",
+		cn = "包含厄运之槌",
 	},
 });
 PHASE_TWO = createClassicPhase({
@@ -603,11 +607,13 @@ PHASE_TWO = createClassicPhase({
 		en = "Phase 2",
 		es = "Fase 2",
 		mx = "Fase 2",
+		cn = "阶段2",
 	},
 	lore = {
 		en = "Included World PvP and PvP Honor Titles.",
 		es = "Incluidos JvJ de mundo y titulos de honor JvJ.",
 		mx = "Incluidos JvJ de mundo y titulos de honor JvJ.",
+		cn = "包含世界PvP和PvP荣誉称号",
 	},
 });
 PHASE_THREE = createClassicPhase({
@@ -619,11 +625,13 @@ PHASE_THREE = createClassicPhase({
 		en = "Phase 3",
 		es = "Fase 3",
 		mx = "Fase 3",
+		cn = "阶段3",
 	},
 	lore = {
 		en = "Included Blackwing Lair and the completion for Thunderfury.",
 		es = "Incluidos Guarida de Alanegra y la finalización de Trueno furioso",
 		mx = "Incluidos Guarida de Alanegra y la finalización de Trueno furioso",
+		cn  = "包含黑翼之巢和完成的雷霆之怒",
 	},
 });
 PHASE_THREE_DMF_CARDS = PHASE_THREE;
@@ -639,11 +647,13 @@ PHASE_FOUR = createClassicPhase({
 		en = "Phase 4",
 		es = "Fase 4",
 		mx = "Fase 4",
+		cn = "阶段4",
 	},
 	lore = {
 		en = "Included Zul'Gurub and the World Dragons.",
 		es = "Incluidos Zul'Gurub y los dragones del mundo.",
 		mx = "Incluidos Zul'Gurub y los dragones del mundo.",
+		cn = "包含祖尔格拉布和世界巨龙",
 	},
 });
 PHASE_FOUR_DARKIRON_RECIPES = PHASE_FOUR;
@@ -657,11 +667,13 @@ PHASE_FIVE = createClassicPhase({
 		en = "Phase 5",
 		es = "Fase 5",
 		mx = "Fase 5",
+		cn = "阶段5",
 	},
 	lore = {
 		en = "Included Ahn'Qiraj, which was pre-faced by a unique opening event.",
 		es = "Se incluyó Ahn'Qiraj, que fue precedido por un evento de apertura único.",
 		mx = "Se incluyó Ahn'Qiraj, que fue precedido por un evento de apertura único.",
+		cn = "包含安其拉，其前身举办了一场独特的开幕活动。",
 	},
 });
 PHASE_FIVE_RECIPES = PHASE_FIVE;
@@ -675,16 +687,19 @@ PHASE_FIVE_WAR_EFFORT = createClassicPhase({
 		en = "AQ War Effort",
 		es = "Esfuerzo de guerra de AQ",
 		mx = "Esfuerzo de guerra de AQ",
+		cn = "安其拉战争活动",
 	},
 	description = {
 		en = "This was only available during the Ahn'Qiraj War Effort.",
 		es = "Esto solo estuvo disponible durante el esfuerzo de guerra de Ahn'Qiraj.",
 		mx = "Esto solo estuvo disponible durante el esfuerzo de guerra de Ahn'Qiraj.",
+		cn = "这仅在安其拉战争期间可用",
 	},
 	lore = {
 		en = "If the War Effort has been completed on your server, simply turn this off.",
 		es = "Si el esfuerzo de guerra se ha completado en tu servidor, simplemente desactiva esta opción.",
 		mx = "Si el esfuerzo de guerra se ha completado en tu servidor, simplemente desactiva esta opción.",
+		cn = "如果您的服务器上的战争行动已经完成，只需将其关闭即可",
 	},
 });
 PHASE_FIVE_GONG = createClassicPhase({
@@ -695,16 +710,19 @@ PHASE_FIVE_GONG = createClassicPhase({
 		en = "Gates Unopened",
 		es = "Puertas cerradas",
 		mx = "Puertas cerradas",
+		cn = "大门未开启",
 	},
 	description = {
 		en = "This was only available up until the Scarab Lords on your server have rung the gong.",
 		es = "Esto solo estuvo disponible hasta que los Señores Escarabajo de tu servidor tocaron el gong.",
 		mx = "Esto solo estuvo disponible hasta que los Señores Escarabajo de tu servidor tocaron el gong.",
+		cn = "这项功能仅在你们服务器上的圣甲虫领主敲响战锣之前有效。",
 	},
 	lore = {
 		en = "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off.",
 		es = "Si se han abierto las Puertas de Ahn'Qiraj en tu servidor, simplemente desactiva esto.",
 		mx = "Si se han abierto las Puertas de Ahn'Qiraj en tu servidor, simplemente desactiva esto.",
+		cn = "如果您的服务器上已开启安其拉之门，只需将其关闭即可",
 	},
 });
 PHASE_FIVE_WAR = createClassicPhase({
@@ -715,16 +733,19 @@ PHASE_FIVE_WAR = createClassicPhase({
 		en = "10-Hour War",
 		es = "Guerra de 10 horas",
 		mx = "Guerra de 10 horas",
+		cn = "10小时战争",
 	},
 	description = {
 		en = "This was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.",
 		es = "Esto solo estaba disponible durante la Guerra de las 10 horas después de que el/los Señor(es) Escarabajo(s) tocaran el gong.",
 		mx = "Esto solo estaba disponible durante la Guerra de las 10 horas después de que el/los Señor(es) Escarabajo(s) tocaran el gong.",
+		cn = "这仅在十小时战争期间，圣甲虫领主敲响战锣后方可获得",
 	},
 	lore = {
 		en = "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off.",
 		es = "Si se han abierto las Puertas de Ahn'Qiraj en tu servidor, simplemente desactiva esto.",
 		mx = "Si se han abierto las Puertas de Ahn'Qiraj en tu servidor, simplemente desactiva esto.",
+		cn = "如果您的服务器上已开启安其拉之门，只需将其关闭即可",		
 	},
 });
 PHASE_FIVE_CATCH_UP = createClassicPhase({
@@ -736,16 +757,19 @@ PHASE_FIVE_CATCH_UP = createClassicPhase({
 		en = "Catch-Up",
 		es = "Ponerse al día",
 		mx = "Ponerse al día",
+		cn = "追赶",
 	},
 	description = {
 		en = "This became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.",
 		es = "Esto estuvo disponible cerca del final de la Fase 5 para proporcionar equipo de resistencia a la naturaleza para aquellos que todavía estaban trabajando en AQ40.",
 		mx = "Esto estuvo disponible cerca del final de la Fase 5 para proporcionar equipo de resistencia a la naturaleza para aquellos que todavía estaban trabajando en AQ40.",
+		cn = "这在第五阶段末期推出，目的是为仍在挑战安其拉神殿（AQ40）的玩家提供追赶自然抗性装备。",
 	},
 	lore = {
 		en = "If the Catch-Up Gear is available, simply turn this on.",
 		es = "Si el equipo de ponerse al día está disponible, simplemente actívelo",
 		mx = "Si el equipo de ponerse al día está disponible, simplemente actívelo",
+		cn = "如果追赶模式可用，只需将其打开即可",
 	},
 });
 PHASE_SIX = createClassicPhase({
@@ -757,11 +781,13 @@ PHASE_SIX = createClassicPhase({
 		en = "Phase 6",
 		es = "Fase 6",
 		mx = "Fase 6",
+		cn = "阶段6",
 	},
 	lore = {
 		en = "Included Naxxramas, which was heralded by the Scourge Invasion.",
 		es = "Se Incluyó Naxxramas, que fue anunciado por la Invasión de la Plaga.",
 		mx = "Se Incluyó Naxxramas, que fue anunciado por la Invasión de la Plaga.",
+		cn = "包含纳克萨玛斯，它以天灾入侵为标志。",
 	},
 });
 PHASE_SIX_CLASS_BOOKS = PHASE_SIX;
@@ -773,16 +799,19 @@ PHASE_SIX_SCOURGE_INVASION = createClassicPhase({
 		en = "Scourge Invasion",
 		es = "Invasión de la Plaga",
 		mx = "Invasión de la Plaga",
+		cn = "天灾入侵",
 	},
 	description = {
 		en = "This was only available during the Scourge Invasion.",
 		es = "Esto solo estaba disponible durante la Invasión de la Plaga.",
 		mx = "Esto solo estaba disponible durante la Invasión de la Plaga.",
+		cn = "这仅在天灾入侵期间可用",
 	},
 	lore = {
 		en = "If the Scourge Invasion has ended on your server, simply turn this off.",
 		es = "Si la invasión de la Plaga ha finalizado en tu servidor, simplemente desactiva esta opción.",
 		mx = "Si la invasión de la Plaga ha finalizado en tu servidor, simplemente desactiva esta opción.",
+		cn = "如果您的服务器上的天灾入侵已经结束，只需关闭此功能即可",
 	},
 });
 PHASE_SIX_SILITHYST = createClassicPhase({
@@ -794,16 +823,19 @@ PHASE_SIX_SILITHYST = createClassicPhase({
 		en = "Silithyst",
 		es = "Silitista",
 		mx = "Silitista",
+		cn = "水晶尘",
 	},
 	description = {
 		en = "This was only available during the Silithyst Must Flow World PVP Event.",
 		es = "Esto solo estuvo disponible durante el evento JcJ de mundo El silitista debe fluir.",
 		mx = "Esto solo estuvo disponible durante el evento JcJ de mundo El silitista debe fluir.",
+		cn = "这仅在“水晶尘必须流动”世界PVP活动期间可用",
 	},
 	lore = {
 		en = "If the World PVP Event is available, simply turn this on.",
 		es = "Si el evento JcJ de mundo está disponible, simplemente actívelo.",
 		mx = "Si el evento JcJ de mundo está disponible, simplemente actívelo.",
+		cn = "如果世界 PVP 活动可用，只需将其开启即可",
 	},
 });
 PHASE_SIX_CLASSICERA = createClassicPhase({
@@ -815,16 +847,19 @@ PHASE_SIX_CLASSICERA = createClassicPhase({
 		en = "Classic Era",
 		es = "Era Clásica",
 		mx = "Era Clásica",
+		cn = "经典时代",
 	},
 	description = {
 		en = "This was only available after the start of Classic Era.",
 		es = "Esto solo estuvo disponible después del inicio de la Era Clásica.",
 		mx = "Esto solo estuvo disponible después del inicio de la Era Clásica.",
+		cn = "这仅在经典时代开始后才可用",
 	},
 	lore = {
 		en = "If the Classic Era has begun, simply turn this on.",
 		es = "Si la Era Clásica ha comenzado, simplemente active esto.",
 		mx = "Si la Era Clásica ha comenzado, simplemente active esto.",
+		cn = "如果经典时代已经开始，只需打开这个开关即可",
 	},
 });
 
@@ -834,6 +869,7 @@ CurrentClassicExpansion = {
 		es = "Temporada de maestría",
 		mx = "Temporada de maestría",
 		tw = "大師賽季",
+		cn = "赛季服",
 	},
 };
 SOM_PHASE_ONE = createClassicPhase({
@@ -845,16 +881,19 @@ SOM_PHASE_ONE = createClassicPhase({
 		es = "Temporada de maestría",
 		mx = "Temporada de maestría",
 		tw = "大師賽季",
+		cn = "赛季服",
 	},
 	description = {
 		en = "This was only available during Season of Mastery.",
 		es = "Esto solo estuvo disponible durante la Temporada de maestría.",
 		mx = "Esto solo estuvo disponible durante la Temporada de maestría.",
+		cn = "这仅在赛季服期间可用",
 	},
 	lore = {
 		en = "If Season of Mastery is active on your server, simply turn this on.",
 		es = "Si la Temporada de Maestría está activa en tu servidor, simplemente actíva esto.",
 		es = "Si la Temporada de Maestría está activa en tu servidor, simplemente actíva esto.",
+		cn = "如果您的服务器已启用赛季，只需开启此选项即可",
 	},
 });
 
@@ -887,11 +926,13 @@ SOD_PHASE_ONE = createClassicPhaseForSOD({
 		en = "This was not available until Phase 1 of Season of Discovery.",
 		es = "Esto no estuvo disponible hasta la Fase 1 de la Temporada del Descubrimiento.",
 		mx = "Esto no estuvo disponible hasta la Fase 1 de la Temporada de Descubrimiento.",
+		cn = "直到探索季第一阶段才推出此功能",
 	},
 	lore = {
 		en = "Included the Blackfathom Deeps raid, Ashenvale World PvP, and had a level cap of 25.",
 		es = "Incluía la banda Cavernas de Brazanegra, el JvJ del mundo de Vallefresno y tenía un límite de nivel de 25.",
 		mx = "Incluía la banda Cavernas de Brazanegra, el JvJ del mundo de Vallefresno y tenía un límite de nivel de 25.",
+		cn = "包含黑石深渊团队副本、灰谷世界PvP，等级上限为25级",
 	},
 });
 SOD_PHASE_TWO = createClassicPhaseForSOD({
@@ -904,11 +945,13 @@ SOD_PHASE_TWO = createClassicPhaseForSOD({
 		es = "Fase 2",
 		mx = "Fase 2",
 		tw = "第2階段",
+		cn = "阶段2",
 	},
 	lore = {
 		en = "Included the Gnomeregan raid, Stranglethorn Vale World PvP, and raised the level cap to 40.",
 		es = "Incluía la banda Gnomeregan, el JvJ del mundo de Vega de tuercespina, y aumento el limite de nivel a 40.",
 		mx = "Incluía la banda Gnomeregan, el JvJ del mundo de Vega de Tuercespina, y aumento el limite de nivel a 40.",
+		cn= "新增了诺莫瑞根团队副本、荆棘谷世界PvP，并将等级上限提升至40级",
 	},
 });
 SOD_PHASE_THREE = createClassicPhaseForSOD({
@@ -921,11 +964,13 @@ SOD_PHASE_THREE = createClassicPhaseForSOD({
 		es = "Fase 3",
 		mx = "Fase 3",
 		tw = "第3階段",
+		cn = "阶段3",
 	},
 	lore = {
 		en = "Included the Sunken Temple raid and raised the level cap to 50.",
 		es = "Incluía la banda Templo sumergido y aumento el limite de nivel a 50.",
 		mx = "Incluía la banda Templo sumergido y aumento el limite de nivel a 50.",
+		cn = "新增了沉没的神庙副本，并将等级上限提升至50级",
 	},
 });
 SOD_PHASE_FOUR = createClassicPhaseForSOD({
@@ -938,11 +983,13 @@ SOD_PHASE_FOUR = createClassicPhaseForSOD({
 		es = "Fase 4",
 		mx = "Fase 4",
 		tw = "第4階段",
+		cn = "阶段4",
 	},
 	lore = {
 		en = "Included Molten Core, Onyxia's Lair, Demon Fall Canyon, the Storm Cliffs, the Tainted Scar, and raised the level cap to 60.",
 		es = "Incluía Núcleo de magma, La guarida de Onyxia, Barranco del Demonio, Acantilados Tormentosos, Escara Impía, y aumento el limite de nivel a 60.",
 		mx = "Incluía Núcleo de magma, La guarida de Onyxia, Barranco del Demonio, Acantilados de la Tormenta, Escara Impía, y aumento el limite de nivel a 60.",
+		cn = "新增了熔火之心、奥妮克希亚的巢穴、屠魔峡谷、风暴悬崖和腐烂之痕，并将等级上限提升至60级",
 	},
 });
 SOD_PHASE_FIVE = createClassicPhaseForSOD({
@@ -955,11 +1002,13 @@ SOD_PHASE_FIVE = createClassicPhaseForSOD({
 		es = "Fase 5",
 		mx = "Fase 5",
 		tw = "第5階段",
+		cn = "阶段5",
 	},
 	lore = {
 		en = "Included Blackwing Lair, Zul'Gurub, and the new Crystal Vale raid.",
 		es = "Incluía Guarida de Alanegra, Zul'Gurub, y la nueva banda Vega de Cristal.",
 		mx = "Incluía Guarida de Alanegra, Zul'Gurub, y la nueva banda La Vega de Cristal.",
+		cn = "包括黑翼之巢、祖尔格拉布和新的水晶谷团队副本",
 	},
 });
 SOD_PHASE_SIX = createClassicPhaseForSOD({
@@ -972,11 +1021,13 @@ SOD_PHASE_SIX = createClassicPhaseForSOD({
 		es = "Fase 6",
 		mx = "Fase 6",
 		tw = "第6階段",
+		cn = "阶段6",
 	},
 	lore = {
 		en = "Included Ahn'Qiraj, and the new Nightmare Grove raid",
 		es = "Incluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadilla",
 		mx = "Incluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadillas",
+		cn = "包括安其拉和新的梦魇林地团队副本",
 	},
 });
 SOD_PHASE_SEVEN = createClassicPhaseForSOD({
@@ -989,11 +1040,13 @@ SOD_PHASE_SEVEN = createClassicPhaseForSOD({
 		es = "Fase 7",
 		mx = "Fase 7",
 		tw = "第7階段",
+		cn = "阶段7",
 	},
 	lore = {
 		en = "Included Naxxramas, and the new Karazhan Crypts dungeon",
 		es = "Incluía Naxxramas, y la nueva mazmorra Las Criptas de Karazhan",
 		mx = "Incluía Naxxramas, y el nuevo calabozo Las Criptas de Karazhan",
+		cn = "包括纳克萨玛斯和新的卡拉赞地牢地下城",
 	},
 });
 SOD_PHASE_EIGHT = createClassicPhaseForSOD({
@@ -1006,11 +1059,13 @@ SOD_PHASE_EIGHT = createClassicPhaseForSOD({
 		es = "Fase 8",
 		mx = "Fase 8",
 		tw = "第8階段",
+		cn = "阶段8",
 	},
 	lore = {
 		en = "Included Classic+?",
 		es = "Incluía Classic+?",
 		mx = "Incluía Classic+?",
+		cn = "包含经典+?",
 	},
 });
 -- #if SEASON_OF_DISCOVERY
@@ -1081,11 +1136,13 @@ TBC_PHASE_ONE = createClassicPhase({
 		es = "Fase 1",
 		mx = "Fase 1",
 		tw = "第1階段",
+		cn = "阶段1",
 	},
 	lore = {
 		en = "Included Karazhan, Magtheridon's Lair, and Gruul's Lair.",
 		es = "Incluía Karazhan, Guarida de Magtheridon y la Guarida de Gruul.",
 		mx = "Incluía Karazhan, Guarida de Magtheridon y la Guarida de Gruul.",
+		cn = "包括卡拉赞、玛瑟里顿巢穴和格鲁尔的巢穴",
 	},
 });
 TBC_PHASE_ONE_DARKPORTAL = createClassicPhase({
@@ -1100,16 +1157,19 @@ TBC_PHASE_ONE_DARKPORTAL = createClassicPhase({
 		en = "Dark Portal Opens",
 		es = "Apertura del portal oscuro",
 		mx = "Apertura del portal oscuro",
+		cn = "黑暗之门开启",
 	},
 	description = {
 		en = "This was only available during the Opening of the Dark Portal event before the launch of TBC.",
 		es = "Esto solo estuvo disponible durante el evento Apertura del Portal Oscuro antes del lanzamiento de TBC.",
 		mx = "Esto solo estuvo disponible durante el evento Apertura del Portal Oscuro antes del lanzamiento de TBC.",
+		cn = "这仅在《燃烧的远征》上线前的黑暗之门开启活动期间可用",
 	},
 	lore = {
 		en = "If the Dark Portal has been opened on your server, simply turn this off.",
 		es = "Si se ha abierto el Portal Oscuro en tu servidor, simplemente desactíva esto.",
 		mx = "Si se ha abierto el Portal Oscuro en tu servidor, simplemente desactíva esto.",
+		cn = "如果您的服务器上已开启黑暗之门，只需将其关闭即可",
 	},
 });
 TBC_PHASE_TWO = createClassicPhase({
@@ -1123,11 +1183,13 @@ TBC_PHASE_TWO = createClassicPhase({
 		es = "Fase 2",
 		mx = "Fase 2",
 		tw = "第2階段",
+		cn = "阶段2",
 	},
 	lore = {
 		en = "Included Serpentshrine Cavern, Tempest Keep: The Eye, and Swift Druid Flight Forms.",
 		es = "Incluía Caverna Santuario Serpiente, El castillo de la tempestad: El ojo, y la forma de vuelo rápido del druida.",
 		mx = "Incluía Caverna Santuario Serpiente, El castillo de la tempestad: El ojo, y la forma de vuelo rápido del druida.",
+		cn = "包含毒蛇神殿洞穴、风暴要塞：眼睛和迅捷德鲁伊飞行形态",
 	},
 });
 TBC_PHASE_TWO_OGRILA = createClassicPhase({
@@ -1138,16 +1200,19 @@ TBC_PHASE_TWO_OGRILA = createClassicPhase({
 	phaseID = 1801,
 	text = {
 		en = "Ogri'la",
+		cn = "奥格瑞拉",
 	},
 	description = {
 		en = "This became available with the Ogri'la Faction during TBC Classic.",
 		es = "Esto se volvió disponible con la Facción Ogri'la durante TBC Classic.",
 		mx = "Esto se volvió disponible con la Facción Ogri'la durante TBC Classic.",
+		cn = "在TBC经典版中，加入奥格瑞拉阵营后即可获得此功能",
 	},
 	lore = {
 		en = "If the Ogri'la Faction is available on your server, simply turn this on.",
 		es = "Si la facción Ogri'la está disponible en tu servidor, simplemente activa esta opción.",
 		mx = "Si la facción Ogri'la está disponible en tu servidor, simplemente activa esta opción.",
+		cn = "如果您的服务器上有奥格瑞拉阵营，只需开启此选项即可",
 	},
 });
 TBC_PHASE_TWO_SKYGUARD = createClassicPhase({
@@ -1160,16 +1225,19 @@ TBC_PHASE_TWO_SKYGUARD = createClassicPhase({
 		en = "Skyguard",
 		es = "Guardia del cielo",
 		mx = "Guardia del cielo",
+		cn = "天空卫队",
 	},
 	description = {
 		en = "This became available with the Skyguard Faction during TBC Classic.",
 		es = "Esto se volvió disponible con la Facción Guardia del cielo durante TBC Classic.",
 		mx = "Esto se volvió disponible con la Facción Guardia del cielo durante TBC Classic.",
+		cn = "在TBC经典版中，天空卫队阵营提供了这项功能。",
 	},
 	lore = {
 		en = "If the Skyguard Faction is available on your server, simply turn this on.",
 		es = "Si la facción Guardia del cielo está disponible en tu servidor, simplemente activa esta opción.",
 		mx = "Si la facción Guardia del cielo está disponible en tu servidor, simplemente activa esta opción.",
+		cn = "如果您的服务器上有天空卫队阵营，只需将其开启即可",
 	},
 });
 TBC_PHASE_TWO_SWIFTFLIGHTFORM = TBC_PHASE_TWO;
@@ -1184,11 +1252,13 @@ TBC_PHASE_THREE = createClassicPhase({
 		es = "Fase 3",
 		mx = "Fase 3",
 		tw = "第3階段",
+		cn = "阶段3",
 	},
 	lore = {
 		en = "Included Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content.",
 		es = "Incluye la Cima del Hyjal y el Templo Oscuro, además de la gran mayoría del contenido de maximo nivel diario/de facción del juego.",
 		mx = "Incluye la Cima del Hyjal y el Templo Oscuro, además de la gran mayoría del contenido de maximo nivel diario/de facción del juego.",
+		cn = "除了绝大多数的终局日常/阵营内容外，还包括海加尔山峰和黑暗神殿",
 	},
 });
 TBC_PHASE_THREE_NETHERWING = createClassicPhase({
@@ -1201,16 +1271,19 @@ TBC_PHASE_THREE_NETHERWING = createClassicPhase({
 		en = "Netherwing",
 		es = "Ala abisal",
 		mx = "Ala abisal",
+		cn = "灵翼之龙",
 	},
 	description = {
 		en = "This became available with the Netherwing Faction during TBC Classic.",
 		es = "Esto se volvió disponible con la Facción Ala abisal durante TBC Classic.",
 		mx = "Esto se volvió disponible con la Facción Ala abisal durante TBC Classic.",
+		cn = "在TBC经典版中，加入灵翼之龙阵营后即可获得此功能",
 	},
 	lore = {
 		en = "If the Netherwing Faction is available on your server, simply turn this on.",
 		es = "Si la facción Ala abisal está disponible en tu servidor, simplemente activa esta opción.",
 		mx = "Si la facción Ala abisal está disponible en tu servidor, simplemente activa esta opción.",
+		cn = "如果您的服务器上有灵翼之龙阵营，只需将其开启即可",
 	},
 });
 TBC_PHASE_THREE_GLAIVEPRIO = createClassicPhase({
@@ -1222,6 +1295,7 @@ TBC_PHASE_THREE_GLAIVEPRIO = createClassicPhase({
 		en = "Glaive Prio",
 		es = "Prioridad de las gujas",
 		mx = "Prioridad de las gujas",
+		cn = ""
 	},
 	description = {
 		en = "The wielder of this Glaive was prepared!",
@@ -1245,11 +1319,13 @@ TBC_PHASE_FOUR = createClassicPhase({
 		es = "Fase 4",
 		mx = "Fase 4",
 		tw = "第4階段",
+		cn = "阶段4",
 	},
 	lore = {
 		en = "Included Zul'Aman.",
 		es = "Incluía Zul'Aman.",
 		mx = "Incluía Zul'Aman.",
+		cn = "包含祖阿曼",
 	},
 });
 TBC_PHASE_FIVE = createClassicPhase({
@@ -1263,11 +1339,13 @@ TBC_PHASE_FIVE = createClassicPhase({
 		es = "Fase 5",
 		mx = "Fase 5",
 		tw = "第5階段",
+		cn = "阶段5",
 	},
 	lore = {
 		en = "Included Sunwell Plateau and the Isle of Quel'Danas daily content.",
 		es = "Incluye la Meseta del fuente del Sol y contenido diario de la Isla de Quel'Danas.",
 		mx = "Incluye la Meseta del fuente del Sol y contenido diario de la Isla de Quel'Danas.",
+		cn = "包含太阳之井高地和奎尔丹纳斯岛的日常内容",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE = TBC_PHASE_FIVE;
@@ -1280,16 +1358,19 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO = createClassicPhase({
 		en = "Sanctum",
 		es = "Santuario",
 		mx = "Santuario",
+		cn = "圣殿",
 	},
 	description = {
 		en = "This was not available until the Sanctum on the Isle of Quel'Danas was completed.",
 		es = "Esto no estuvo disponible hasta que se completó el Santuario en la Isla de Quel'Danas.",
 		mx = "Esto no estuvo disponible hasta que se completó el Santuario en la Isla de Quel'Danas.",
+		cn = "直到奎尔丹纳斯岛上的圣殿建成后，此项才可用",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Sanctum and has begun working on the Armory and Portal on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado el Santuario y ha comenzado a trabajar en la Armería y el Portal en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado el Santuario y ha comenzado a trabajar en la Armería y el Portal en tu servidor, simplemente activa esta opción.",
+		cn = "如果破碎残阳已经解锁了圣殿，并且已经开始在您的服务器上建造军械库和传送门，只需开启此功能即可",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B = createClassicPhase({
@@ -1299,16 +1380,19 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B = createClassicPhase({
 	phaseID = 2102,
 	text = {
 		en = "Portal",
+		cn = "传送门",
 	},
 	description = {
 		en = "This was not available until the Portal on the Isle of Quel'Danas was completed.",
 		es = "Esto no estuvo disponible hasta que se completó el Portal en la Isla de Quel'Danas.",
 		mx = "Esto no estuvo disponible hasta que se completó el Portal en la Isla de Quel'Danas.",
+		cn = "直到奎尔丹纳斯岛上的传送门建成后，此项才可用",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Portal on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado el Portal en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado el Portal en tu servidor, simplemente activa esta opción.",
+		cn = "如果破碎残阳已经解锁了服务器上的传送门，只需开启此功能即可。",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE = createClassicPhase({
@@ -1320,16 +1404,19 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE = createClassicPhase({
 		en = "Armory",
 		es = "Armería",
 		mx = "Armería",
+		cn = "军械库",
 	},
 	description = {
 		en = "This was not available until the Armory on the Isle of Quel'Danas was completed.",
 		es = "Esto no estuvo disponible hasta que se completó la armería en la Isla de Quel'Danas.",
 		mx = "Esto no estuvo disponible hasta que se completó la armería en la Isla de Quel'Danas.",
+		cn ="直到奎尔丹纳斯岛上的军械库建成后，此项才可用",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Armory and has begun working on the Harbor and Anvil on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado la armería en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado la armería en tu servidor, simplemente activa esta opción.",
+		cn = "如果破碎残阳已经解锁了军械库，并且已经开始在您的服务器上建造港口和铁砧，只需开启此功能即可",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B = createClassicPhase({
@@ -1341,16 +1428,19 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B = createClassicPhase({
 		en = "Anvil",
 		es = "Yunque",
 		mx = "Yunque",
+		cn = "铁砧",
 	},
 	description = {
 		en = "This was not available until the Anvil on the Isle of Quel'Danas was completed.",
 		es = "Esto no estuvo disponible hasta que se completó el yunque en la Isla de Quel'Danas.",
 		mx = "Esto no estuvo disponible hasta que se completó el yunque en la Isla de Quel'Danas.",
+		cn = "直到奎尔丹纳斯岛上的铁砧建成后，此项才可用",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Anvil on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado el yunque en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado el yunque en tu servidor, simplemente activa esta opción.",
+		cn = "如果您的服务器上破碎残阳已经解锁了铁砧，只需开启此功能即可",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR = createClassicPhase({
@@ -1362,16 +1452,19 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR = createClassicPhase({
 		en = "Harbor",
 		es = "Puerto",
 		mx = "Puerto",
+		cn = "港口",
 	},
 	description = {
 		en = "This was not available until the Harbor on the Isle of Quel'Danas was completed.",
 		es = "Esto no estuvo disponible hasta que se completó el puerto en la Isla de Quel'Danas.",
 		mx = "Esto no estuvo disponible hasta que se completó el puerto en la Isla de Quel'Danas.",
+		cn  = "直到奎尔丹纳斯岛港口建成后，此项才可用",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Harbor and has begun working on the Alch Lab and Monument on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado el puerto en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado el puerto en tu servidor, simplemente activa esta opción.",
+		cn = "如果在你的服务器上，破碎残阳攻势已经解锁了港口，并且已经开始对炼金实验室和纪念碑开展相关工作，那就直接把这个打开"
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = createClassicPhase({
@@ -1383,16 +1476,19 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = createClassicPhase({
 		en = "Monument",
 		es = "Monumento",
 		mx = "Monumento",
+		cn = "纪念碑",
 	},
 	description = {
 		en = "This was not available until the Monument on the Isle of Quel'Danas was completed.",
 		es = "Esto no estuvo disponible hasta que se completó el monumento en la Isla de Quel'Danas.",
 		mx = "Esto no estuvo disponible hasta que se completó el monumento en la Isla de Quel'Danas.",
+		cn = "直到奎尔丹纳斯岛的纪念碑建成，此项才可用",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Monument on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado el monumento en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado el monumento en tu servidor, simplemente activa esta opción.",
+		cn = "如果在你的服务器上，破碎残阳攻势已解锁该纪念碑，直接开启此项即可",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = createClassicPhase({
@@ -1404,16 +1500,19 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = createClassicPhase({
 		en = "Alch Lab",
 		es = "Laboratorio de alquimia",
 		mx = "Laboratorio de alquimia",
+		cn = "炼金实验室",
 	},
 	description = {
 		en = "This was not available until the Alch Lab on the Isle of Quel'Danas was completed.",
 		es = "Esto no estuvo disponible hasta que se completó el laboratorio de alquimia en la Isla de Quel'Danas.",
 		mx = "Esto no estuvo disponible hasta que se completó el laboratorio de alquimia en la Isla de Quel'Danas.",
+		cn = "直到奎尔丹纳斯岛的炼金实验室建成，此项才可用",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on.",
 		es = "Si la Ofensiva Sol Devastado ya ha desbloqueado el laboratorio de alquimia en tu servidor, simplemente activa esta opción.",
 		mx = "Si la Ofensiva Sol Devastado ya ha desbloqueado el laboratorio de alquimia en tu servidor, simplemente activa esta opción.",
+		cn = "如果在你的服务器上，破碎残阳攻势已经解锁了炼金实验室，直接打开此项"
 	},
 });
 TBC_PHASE_FIVE_SCOURGE_INVASION = createClassicPhase({
@@ -1424,16 +1523,19 @@ TBC_PHASE_FIVE_SCOURGE_INVASION = createClassicPhase({
 		en = "Scourge Invasion",
 		es = "Invasión de la Plaga",
 		mx = "Invasión de la Plaga",
+		cn = "天灾入侵",
 	},
 	description = {
 		en = "This was only available during the Scourge Invasion.",
 		es = "Esto sólo estaba disponible durante la Invasión de la Plaga.",
 		mx = "Esto sólo estaba disponible durante la Invasión de la Plaga.",
+		cn  = "只有在天灾入侵期间，此项才可用",
 	},
 	lore = {
 		en = "If the Scourge Invasion has ended on your server, simply turn this off.",
 		es = "Si la Invasión de la Plaga ha terminado en tu servidor, simplemente desactiva esta opción.",
 		mx = "Si la Invasión de la Plaga ha terminado en tu servidor, simplemente desactiva esta opción.",
+		cn = "如果在你的服务器上天灾入侵已经结束，直接关闭此项",
 	},
 });
 
@@ -1457,11 +1559,13 @@ WRATH_PHASE_ONE = createClassicPhase({
 		es = "Fase 1",
 		mx = "Fase 1",
 		tw = "第1階段",
+		cn = "阶段1",
 	},
 	lore = {
 		en = "Included Naxxramas, Obsidian Sanctum, and Eye of Eternity.",
 		es = "Incluía Naxxramas, Sagrario obsidiana, y El ojo de la eternidad.",
 		mx = "Incluía Naxxramas, Sagrario obsidiana, y El ojo de la eternidad.",
+		cn = "包含纳克萨玛斯、黑曜石圣殿和永恒之眼",
 	},
 });
 WRATH_PHASE_ONE_REALM_FIRST = createClassicPhase({
@@ -1472,16 +1576,19 @@ WRATH_PHASE_ONE_REALM_FIRST = createClassicPhase({
 		en = "Realm First",
 		es = "Primero del reino",
 		mx = "Primero del reino",
+		cn = "服务器第一",
 	},
 	description = {
 		en = "This was only available for the first player to do the thing on your realm!",
 		es = "¡Esto solo estaba disponible para el primer jugador que hiciera la acción en tu reino!",
 		mx = "¡Esto solo estaba disponible para el primer jugador que hiciera la acción en tu reino!",
+		cn  = "这仅对您服务器上首个完成此事的玩家可用！",
 	},
 	lore = {
 		en = "But if you were realm first, good for you.",
 		es = "Pero si fuiste el primero en el reino, bien por ti.",
 		mx = "Pero si fuiste el primero en el reino, bien por ti.",
+		cn = "但要是你是服务器第一个做到的，那你可真厉害",
 	},
 });
 WRATH_PHASE_TWO = createClassicPhase({
@@ -1494,11 +1601,13 @@ WRATH_PHASE_TWO = createClassicPhase({
 		es = "Fase 2",
 		mx = "Fase 2",
 		tw = "第2階段",
+		cn = "阶段2",
 	},
 	lore = {
 		en = "Included Ulduar.",
 		es = "Incluía Ulduar.",
 		mx = "Incluía Ulduar.",
+		cn = "包含奥杜尔",
 	},
 });
 WRATH_PHASE_TWO_HAMMERPRIO = createClassicPhase({
@@ -1510,16 +1619,19 @@ WRATH_PHASE_TWO_HAMMERPRIO = createClassicPhase({
 		en = "Hammer Prio",
 		es = "Prioridad del martillo",
 		mx = "Prioridad del martillo",
+		cn = "锤子优先",
 	},
 	description = {
 		en = "The wielder of this Hammer was on time!",
 		es = "¡El portador de este martillo llegó a tiempo!",
 		mx = "¡El portador de este martillo llegó a tiempo!",
+		cn = "持有这把锤子的人很准时！",
 	},
 	lore = {
 		en = "Due to the exclusivity of the Hammer and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Hammer prio, simply turn this on.",
 		es = "Debido a la exclusividad del Martillo y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi ya tienes la prioridad del Martillo, simplemente actívala.",
 		mx = "Debido a la exclusividad del Martillo y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi ya tienes la prioridad del Martillo, simplemente actívala.",
+		cn = "由于这把锤子的独特性，以及优先级并非总是优先给予收藏者而非热衷竞技者，克里夫决定目前设置一个筛选器来减少公会内的纷争，此举是恰当的。\n\n这个筛选器在《大灾变》预补丁之后将默认开启。\n\n如果你确实拥有这把锤子的优先获取权，直接打开此项即可。"
 	},
 });
 WRATH_PHASE_THREE = createClassicPhase({
@@ -1532,11 +1644,13 @@ WRATH_PHASE_THREE = createClassicPhase({
 		es = "Fase 3",
 		mx = "Fase 3",
 		tw = "第3階段",
+		cn = "阶段3",
 	},
 	lore = {
 		en = "Included Trial of the Crusader.",
 		es = "Incluía la Prueba del cruzado",
 		mx = "Incluía la Prueba del cruzado",
+		cn = "包含十字军试炼",
 	},
 });
 WRATH_PHASE_FOUR = createClassicPhase({
@@ -1549,11 +1663,13 @@ WRATH_PHASE_FOUR = createClassicPhase({
 		es = "Fase 4",
 		mx = "Fase 4",
 		tw = "第4階段",
+		cn = "阶段4",
 	},
 	lore = {
 		en = "Included Icecrown Citadel.",
 		es = "Incluía La ciudadela corona de hielo",
 		mx = "Incluía La ciudadela corona de hielo",
+		cn = "包含冰冠堡垒",
 	},
 });
 WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
@@ -1565,16 +1681,19 @@ WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
 		en = "Shadowmourne Prio",
 		es = "Prioridad de la Agonía de sombras",
 		mx = "Prioridad de la Agonía de sombras",
+		cn = "影之哀伤优先",
 	},
 	description = {
 		en = "The wielder of Shadowmournes for all the people that don't have it.",
 		es = "El portador de Agonias de sombras para todos los que no la tienen.",
 		mx = "El portador de Agonias de sombras para todos los que no la tienen.",
+		cn = "对于所有还没拥有影之哀伤的人来说",
 	},
 	lore = {
 		en = "Due to the exclusivity of Shadowmourne and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Shadowmourne prio, simply turn this on.",
 		es = "Debido a la exclusividad de Agonía de Sombras y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi de hecho tienes la prioridad de Agonía de Sombras, simplemente actívala.",
 		mx = "Debido a la exclusividad de Agonía de Sombras y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi de hecho tienes la prioridad de Agonía de Sombras, simplemente actívala.",
+		cn  = "由于影之哀伤的独特性，且优先级并非总是优先给予收藏者而非热衷冲分者，克里夫认为当下设置一个筛选器以减少公会内的矛盾较为妥当。\n\n此筛选器在《大灾变》预补丁后将默认开启。\n\n若你确实拥有影之哀伤的获取优先级，直接打开此项即可"
 	},
 });
 WRATH_PHASE_FOUR_RUBYSANCTUM = createClassicPhase({
@@ -1586,16 +1705,19 @@ WRATH_PHASE_FOUR_RUBYSANCTUM = createClassicPhase({
 		en = "Ruby Sanctum",
 		es = "Sagrario rubí",
 		mx = "Sagrario rubí",
+		cn = "红玉圣殿",
 	},
 	description = {
 		en = "This became available with the release of Ruby Sanctum during Wrath Classic.",
 		es = "Esto estuvo disponible con el lanzamiento del Sagrario rubí durante Wrath Classic.",
 		mx = "Esto estuvo disponible con el lanzamiento del Sagrario rubí durante Wrath Classic.",
+		cn = "这在《巫妖王之怒》怀旧服中的红玉圣殿发布时一同推出",
 	},
 	lore = {
 		en = "Included The Ruby Sanctum.",
 		es = "Incluía El sagrario rubí.",
 		mx = "Incluía El sagrario rubí.",
+		cn = "包含红玉圣殿",
 	},
 });
 WRATH_PHASE_FOUR_OPERATION_ZALAZANE = createClassicPhase({
@@ -1607,16 +1729,19 @@ WRATH_PHASE_FOUR_OPERATION_ZALAZANE = createClassicPhase({
 		en = "Operation Zalazane",
 		es = "Operación Zalazane",
 		mx = "Operación Zalazane",
+		cn  = "扎拉赞恩行动",
 	},
 	description = {
 		en = "This became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.",
 		es = "Esto estuvo disponible con el lanzamiento de Operación Gnomeregan y La Caída de Zalazane durante Wrath Classic.",
 		mx = "Esto estuvo disponible con el lanzamiento de Operación Gnomeregan y La Caída de Zalazane durante Wrath Classic.",
+		cn = "这在《巫妖王之怒》怀旧服中 “诺莫瑞根行动” 与 “扎拉赞恩的陨落” 发布时推出",
 	},
 	lore = {
 		en = "Included Operation Gnomeregan and Zalazane's Fall",
 		es = "Incluía Operación Gnomeregan y La Caída de Zalazane",
 		mx = "Incluía Operación Gnomeregan y La Caída de Zalazane",
+		cn  = "包含诺莫瑞根行动和扎拉赞恩的陨落",
 	},
 });
 WRATH_PHASE_FOUR_ELEMENTAL_INVASION = createClassicPhase({
@@ -1628,16 +1753,19 @@ WRATH_PHASE_FOUR_ELEMENTAL_INVASION = createClassicPhase({
 		en = "Elemental Unrest",
 		es = "Inestabilidad elemental",
 		mx = "Inestabilidad elemental",
+		cn = "元素动乱",
 	},
 	description = {
 		en = "This became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.",
 		es = "Esto estuvo disponible con el lanzamiento del evento Inestabilidad elemental previo al parche Cataclysm durante Wrath Classic.",
 		mx = "Esto estuvo disponible con el lanzamiento del evento Inestabilidad elemental previo al parche Cataclysm durante Wrath Classic.",
+		cn = "这在《巫妖王之怒》怀旧服期间，随着 “元素动乱（大灾变预补丁事件）” 的发布而推出",
 	},
 	lore = {
 		en = "The Elemental Unrest Pre-Expansion Event?",
 		es = "¿Inestabilidad elemental evento Pre-parche?",
 		mx = "¿Inestabilidad elemental evento Pre-Expansion?",
+		cn = "元素动乱预资料片事件？",
 	},
 });
 
@@ -1661,11 +1789,13 @@ CATA_PHASE_ONE = createClassicPhase({
 		es = "Fase 1",
 		mx = "Fase 1",
 		tw = "第1階段",
+		cn  = "阶段1",
 	},
 	lore = {
 		en = "Included Bastion of Twilight, Throne of the Four Winds, and Blackwing Descent.",
 		es = "Incluía Bastión del Crepúsculo, Trono de los Cuatro Vientos y Descenso de Alanegra.",
 		mx = "Incluía Bastión del Crepúsculo, Trono de los Cuatro Vientos y Descenso de Alanegra.",
+		cn = "包括暮光堡垒、四风王座和黑翼血环",
 	},
 });
 CATA_PHASE_RISE_OF_THE_ZANDALARI = createClassicPhase({
@@ -1677,16 +1807,19 @@ CATA_PHASE_RISE_OF_THE_ZANDALARI = createClassicPhase({
 		en = "Rise of the Zandalari",
 		es = "La Rebelión de los Zandalari",
 		mx = "La Rebelión de los Zandalari",
+		cn = "赞达拉的崛起",
 	},
 	description = {
 		en = "This was not available until the Rise of the Zandalari during Cataclysm Classic.",
 		es = "Esto no estuvo disponible hasta La Rebelión de los Zandalari durante Cataclysm Classic.",
 		mx = "Esto no estuvo disponible hasta La Rebelión de los Zandalari durante Cataclysm Classic.",
+		cn = "在《大灾变》经典服“赞达拉的崛起”内容推出之前，这些是无法获取/使用的。 "
 	},
 	lore = {
 		en = "Included Zul'Aman and Zul'Gurub Heroic Dungeons.",
 		es = "Incluía las mazmorras heroicas Zul'Aman y Zul'Gurub.",
 		mx = "Incluía los calabozos heroicos Zul'Aman y Zul'Gurub.",
+		cn = "包括祖阿曼和祖尔格拉布英雄难度地下城",
 	},
 });
 CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT = CATA_PHASE_RISE_OF_THE_ZANDALARI;	-- World Boss Loot was originally blue, they got upgraded to Epic later.
@@ -1699,16 +1832,19 @@ CATA_PHASE_MOLTEN_FRONT = createClassicPhase({
 		en = "Molten Front",
 		es = "Frente de magma",
 		mx = "Frente de magma",
+		cn = "熔火前线",
 	},
 	description = {
 		en = "This was not available until the Molten Front became available during Cataclysm Classic.",
 		es = "Esto no estaba disponible hasta que el Frente de Magma estuvo disponible durante Cataclysm Classic.",
 		mx = "Esto no estaba disponible hasta que el Frente de Magma estuvo disponible durante Cataclysm Classic.",
+		cn = "在《大灾变》经典服中，直到熔火前线开放，这个才可用",
 	},
 	lore = {
 		en = "Included the Molten Front Dailies.",
 		es = "Incluía las diarias del Frente de magma.",
 		mx = "Incluía las diarias del Frente de magma.",
+		cn = "包含熔火前线日常任务",
 	},
 });
 CATA_PHASE_RAGE_OF_THE_FIRELANDS = createClassicPhase({
@@ -1720,16 +1856,19 @@ CATA_PHASE_RAGE_OF_THE_FIRELANDS = createClassicPhase({
 		en = "Rage of the Firelands",
 		es = "Furia de las Tierras de Fuego",
 		mx = "Furia de las Tierras de Fuego",
+		cn = "火焰的愤怒",
 	},
 	description = {
 		en = "This was not available until the Rage of the Firelands during Cataclysm Classic.",
 		es = "Esto no estuvo disponible hasta la Furia de las Tierras de Fuego durante Cataclysm Classic.",
 		mx = "Esto no estuvo disponible hasta la Furia de las Tierras de Fuego durante Cataclysm Classic.",
+		cn = "在《大灾变》经典服中，直到火焰的愤怒内容上线，这个才可用",
 	},
 	lore = {
 		en = "Included Firelands.",
 		es = "Incluía Las tierras de fuego",
 		mx = "Incluía Las tierras de fuego",
+		cn  = "包含火源之地",
 	},
 });
 CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
@@ -1741,16 +1880,19 @@ CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
 		en = "Hour of Twilight",
 		es = "La hora del crepúsculo",
 		mx = "La hora del crepúsculo",
+		cn =  "暮光审判",
 	},
 	description = {
 		en = "This was not available until the Hour of Twilight during Cataclysm Classic.",
 		es = "Esto no estuvo disponible hasta la Hora del Crepúsculo durante Cataclysm Classic.",
 		mx = "Esto no estuvo disponible hasta la Hora del Crepúsculo durante Cataclysm Classic.",
+		cn = "在《大灾变》经典服中，直到 “暮光审判”（版本更新）时，这个才可用"
 	},
 	lore = {
 		en = "Included Dragon Soul.",
 		es = "Incluía El alma del dragón",
 		mx = "Incluía El alma del dragón",
+		cn = "包含巨龙之魂",
 	},
 });
 
@@ -1775,11 +1917,13 @@ MOP_PHASE_ONE = createClassicPhase({
 		es = "Fase 1",
 		mx = "Fase 1",
 		tw = "第1階段",
+		cn = "阶段1",
 	},
 	lore = {
 		en = "Included Level 85 Theramore's Fall scenario and the updated talent system.",
 		es = "Incluido la gesta de la Caída de Theramore de nivel 85 y el sistema de talentos actualizado.",
 		mx = "Incluido la gesta de la Caída de Theramore de nivel 85 y el sistema de talentos actualizado.",
+		cn = "包含 85 级的塞拉摩的沦陷场景战役以及更新后的天赋系统",
 	},
 });
 MOP_PHASE_ONE_MOGUSHAN_VAULTS = createClassicPhase({
@@ -1795,9 +1939,11 @@ MOP_PHASE_ONE_MOGUSHAN_VAULTS = createClassicPhase({
 	}),
 	text = {
 		en = "Mogu'shan Vaults",
+		cn = "魔古山宝库",
 	},
 	lore = {
 		en = "Included Mogu'shan Vaults.",
+		cn = "包含魔古山宝库",
 	},
 });
 MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV = createClassicPhase({
@@ -1813,9 +1959,11 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV = createClassicPhase({
 	}),
 	text = {
 		en = "Celestial Dungeons (MSV)",
+		cn = "天神地下城（魔古山宝库）"，
 	},
 	lore = {
 		en = "Included Celestial Dungeons with MSV loot.",
+		cn = "包含掉落魔古山宝库（MSV）战利品的天神地下城",
 	},
 });
 MOP_PHASE_ONE_HEART_OF_FEAR = createClassicPhase({
@@ -1831,9 +1979,11 @@ MOP_PHASE_ONE_HEART_OF_FEAR = createClassicPhase({
 	}),
 	text = {
 		en = "Heart of Fear",
+		cn = "恐惧之心"
 	},
 	lore = {
 		en = "Included Heart of Fear.",
+		cn = "包含恐惧之心",
 	},
 });
 MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14 = createClassicPhase({
@@ -1849,9 +1999,11 @@ MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14 = createClassicPhase({
 	}),
 	text = {
 		en = "Sha of Anger (Tier Available)",
+		cn = "怒之煞（套装可获取）"
 	},
 	lore = {
 		en = "Included Tier 14 Gear from Sha of Anger.",
+		cn = "包含怒之煞掉落的 T14 套装"
 	},
 });
 MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF = createClassicPhase({
@@ -1867,9 +2019,11 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF = createClassicPhase({
 	}),
 	text = {
 		en = "Celestial Dungeons (HOF)",
+		cn = "天神地下城（恐惧之心）",
 	},
 	lore = {
 		en = "Included Heart of Fear LFR gear for Celestial Dungeons.",
+		cn = "包含用于天神地下城的恐惧之心随机团队副本装备",
 	},
 });
 MOP_PHASE_ONE_TERRACE_OF_ENDLESS_SPRINGS = createClassicPhase({
@@ -1885,9 +2039,11 @@ MOP_PHASE_ONE_TERRACE_OF_ENDLESS_SPRINGS = createClassicPhase({
 	}),
 	text = {
 		en = "Terrace of Endless Springs",
+		cn = "永春台",
 	},
 	lore = {
 		en = "Included Terrace of Endless Springs.",
+		cn = "包含永春台",
 	},
 });
 MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES = createClassicPhase({
@@ -1903,9 +2059,11 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES = createClassicPhase({
 	}),
 	text = {
 		en = "Celestial Dungeons (ToES)",
+		cn = "天神地下城（永春台）"
 	},
 	lore = {
 		en = "Included Terrace of Endless Springs LFR gear for Celestial Dungeons.",
+		cn = "包含用于天神地下城的永春台随机团队副本装备",
 	},
 });
 MOP_PHASE_LANDFALL = createClassicPhase({
@@ -1918,9 +2076,11 @@ MOP_PHASE_LANDFALL = createClassicPhase({
 		en = "Landfall",
 		es = "Desembarco",
 		mx = "Desembarco",
+		cn = "夺岛奇兵",
 	},
 	lore = {
 		en = "Includes the Pandaria Campaign quest line in Krasarang Wilds and the Brawler's Guild.",
+		cn = "包括卡桑琅丛林的潘达利亚战役任务线以及搏击俱乐部",
 	},
 });
 MOP_PHASE_RISE_OF_THE_THUNDER_KING = createClassicPhase({
@@ -1933,11 +2093,13 @@ MOP_PHASE_RISE_OF_THE_THUNDER_KING = createClassicPhase({
 		en = "Rise of the Thunder King",
 		es = "El Rey del Trueno",
 		mx = "El Rey del Trueno",
+		cn = "雷神再临",
 	},
 	lore = {
 		en = "Included Throne of Thunder, the Isle of Giants, and the Isle of Thunder.",
 		es = "Incluía el Trono del Trueno, la Isla de los Gigantes y la Isla del Trueno.",
 		mx = "Incluía el Trono del Trueno, la Isla de los Gigantes y la Isla del Trueno.",
+		cn = "包括雷电王座、巨兽岛和雷神岛"
 	},
 });
 MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS = createClassicPhase({
@@ -1953,9 +2115,11 @@ MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS = createClassicPhase({
 	}),
 	text = {
 		en = "Celestial Dungeons (ToT)",
+		cn = "天神地下城（雷电王座）"
 	},
 	lore = {
 		en = "Included Throne of Thunder LFR gear for Celestial Dungeons.",
+		cn = "包含适用于天神地下城的雷电王座随机团队难度装备"
 	},
 });
 MOP_PHASE_ESCALATION = createClassicPhase({
@@ -1968,11 +2132,13 @@ MOP_PHASE_ESCALATION = createClassicPhase({
 		en = "Escalation",
 		es = "Intensificación del Conflicto",
 		mx = "Intensificación del Conflicto",
+		cn = "绝地反击",
 	},
 	lore = {
 		en = "Included Heroic Scenarios, Battlefield: Barrens Scenario, Deepwind Gorge, and the Tiger's Peak arena.",
 		es = "Incluia gestas heroicas, Campo de batalla: Gesta Los Baldíos, Cañón del Céfiro y la arena La cima del Tigre.",
 		mx = "Incluia gestas heroicas, Campo de batalla: Gesta Los Baldíos, Cañón del Céfiro y la arena La cima del Tigre.",
+		cn = "包含英雄场景战役、战场：贫瘠之地场景战役、深风峡谷以及虎踞峰竞技场",
 	},
 });
 MOP_PHASE_SIEGE_OF_ORGRIMMAR = createClassicPhase({
@@ -1985,11 +2151,13 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR = createClassicPhase({
 		en = "Siege of Orgrimmar",
 		es = "Asedio de Orgrimmar",
 		mx = "Asedio de Orgrimmar",
+		cn = "决战奥格瑞玛",
 	},
 	lore = {
 		en = "Included Siege of Orgrimmar and the Timeless Isle.",
 		es = "Incluía Asedio de Orgrimmar y la Isla intemporal.",
 		mx = "Incluía Asedio de Orgrimmar y la Isla intemporal.",
+		cn = "包含围攻奥格瑞玛和永恒岛"
 	},
 });
 MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS = createClassicPhase({
@@ -2005,9 +2173,11 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS = createClassicPhase({
 	}),
 	text = {
 		en = "Celestial Dungeons (SoO)",
+		cn = "天神地下城（围攻奥格瑞玛）"
 	},
 	lore = {
 		en = "Included Siege of Orgrimmar LFR gear for Celestial Dungeons.",
+		cn = "包含用于天神地下城的围攻奥格瑞玛随机团队副本装备"
 	},
 });
 
