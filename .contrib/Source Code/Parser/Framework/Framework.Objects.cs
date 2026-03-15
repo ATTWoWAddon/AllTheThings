@@ -554,12 +554,12 @@ namespace ATT
             /// </summary>
             private static void MergedSharedDataKeyIntoObject(IDictionary<string, object> data, string key, object keyValue)
             {
-                var container = SharedDataByPrimaryKey[key];
+                if (!SharedDataByPrimaryKey.TryGetValue(key, out var container))
+                    return;
                 if (!container.TryGetValue(keyValue, out ConcurrentDictionary<string, object> commonData))
                     return;
-
-                // merge the allowed fields by key into the data object
-                string[] mergeFields = MERGE_OBJECT_FIELDS[key];
+                if (!MERGE_OBJECT_FIELDS.TryGetValue(key, out var mergeFields))
+                    return;
 
                 foreach (var field in mergeFields)
                 {
@@ -597,7 +597,8 @@ namespace ATT
                         continue;
 
                     // merge the allowed fields by key into the data object
-                    MERGE_OBJECT_FIELDS.TryGetValue(container.Key, out string[] mergeFields);
+                    if (!MERGE_OBJECT_FIELDS.TryGetValue(container.Key, out var mergeFields))
+                        continue;
 
                     foreach (var field in mergeFields)
                     {
