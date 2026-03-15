@@ -16,6 +16,6 @@ ALL_ROLES = createHeader({
 		-- TODO: pt = "",
 		ru = "Все роли",
 		cn = "全部职责",
-		-- TODO: tw = "",
+		tw = "所有角色類型",
 	},
 });

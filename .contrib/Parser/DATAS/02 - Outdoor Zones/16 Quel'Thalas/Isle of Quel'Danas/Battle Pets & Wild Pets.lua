@@ -8,6 +8,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["crs"] = { 250571 },	-- Nether Familiar
 				["coords"] = {
 					{ 34.6, 15.5, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+					{ 42.5, 32.5, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+					{ 43.0, 21.9, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+					{ 49.5, 29.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				},
 			}),
 			i(251003, {	-- Wrathful Wyrm (PET!)

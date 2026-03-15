@@ -2,17 +2,18 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-STORMMARION_ASSAULT = createHeader({
-	readable = "Stormmarion Assault",
+STORMARION_ASSAULT = createHeader({
+	readable = "Stormarion Assault",
 	icon = 7431083,
 	text = {
-		en = "Stormmarion Assault",
+		en = "Stormarion Assault",
+		cn = "斯托玛兰突袭战",
 	},
 });
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
-		n(STORMMARION_ASSAULT, {
+		n(STORMARION_ASSAULT, {
 			n(ACHIEVEMENTS, {
 				ach(61913),	-- A Singular Problem
 				ach(61912),	-- Anchoring the Defense
@@ -146,13 +147,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 			}),
+			n(TREASURES, {
+				o(566083, {	-- Stormarion Supplies
+					["description"] = "Spawns randomly around Stormarion Citadel.",
+				}),
+			}),
 		}),
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.VOIDSTORM, {
-			n(STORMMARION_ASSAULT, {
+			n(STORMARION_ASSAULT, {
 				n(QUESTS, {
 					q(90962, {["repeatable"]=true}),	-- "Stormarion Assault", Right when it start (Stage 1 of 7)/ (un)flag completed after successful completion of event (wq unlock?)
 					q(90943),	-- "Stormarion Assault", Before Wave 1 preparation? / (un)flag completed right before end of event

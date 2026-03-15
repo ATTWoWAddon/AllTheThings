@@ -506,6 +506,7 @@ exploration(5691),	-- Darkspear Shore
 exploration(5692),	-- The Deathknell Graves
 exploration(5693),	-- Murkdeep Cavern
 exploration(5694),	-- Keset Pass
+exploration(5695),	-- Ahn'Qiraj: The Fallen Kingdom
 exploration(5697),	-- M.A.C. Diver
 exploration(5698),	-- Tomb of the Sun King
 exploration(5699),	-- The Circle of Life

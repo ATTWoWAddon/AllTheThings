@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86898 },	-- Rise of the Haranir
 						["provider"] = { "n", 255819 },	-- Elder Hagar
 						["coord"] = { 36.6, 68.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-						["isBreadcrumb"] = true,	-- TODO: next quest was up without turn it this one
+						["isBreadcrumb"] = true,
 					}),
 					q(91967, {	-- You Know This Evil?
 						["sourceQuests"] = { 91084 },	-- Looming Shadows
@@ -38,12 +38,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 235405 },	-- Magister Umbric
 						["coord"] = { 35.2, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),
-					q(86557, {	-- A Matter of Strife and Death
-						["sourceQuests"] = { 86549 },	-- No Fear of the Dark
-						["provider"] = { "n", 235486 },	-- Lothraxion
-						["coord"] = { 34.4, 60.5, MAP.MIDNIGHT.VOIDSTORM },
-						["groups"] = { i(264508) },	-- Sturdy Void Elf Barricade (DECOR!)
-					}),
+					------ Stay awhile and listen ------
+					--hqt(, {	-- Stay awhile and listen: Lor'themar Theron
+					--	["name"] = "Stay awhile and listen: Lor'themar Theron",
+					--	["description"] = "Dialogue becomes available during 'No Fear of the Dark' (86549).",
+					--	["sourceQuests"] = { 86543 },	-- Magisters' Terrace: Homecoming
+					--	["provider"] = { "n", 235481 },	-- Lor'themar Theron
+					--	["coord"] = { 35.0, 65.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					--}),
+					--
 					q(86558, {	-- Save a Piece of Mind
 						["sourceQuests"] = { 86549 },	-- No Fear of the Dark
 						["provider"] = { "n", 235411 },	-- Magister Umbric
@@ -55,13 +58,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(260838),	-- Neverending Vortex Striders
 						},
 					}),
+					q(86557, {	-- A Matter of Strife and Death
+						["sourceQuests"] = { 86549 },	-- No Fear of the Dark
+						["provider"] = { "n", 235486 },	-- Lothraxion
+						["coord"] = { 34.4, 60.5, MAP.MIDNIGHT.VOIDSTORM },
+						["groups"] = { i(264508) },	-- Sturdy Void Elf Barricade (DECOR!)
+					}),
 					q(86559, {	-- The Far, Far Frontier
 						["sourceQuests"] = {
 							86557,	-- A Matter of Strife and Death
 							86558,	-- Save a Piece of Mind
 						},
 						["provider"] = { "n", 235522 },	-- Lothraxion
-						["coord"] = { 36.9, 58.6, MAP.MIDNIGHT.VOIDSTORM },
+						["coord"] = { 37.0, 58.6, MAP.MIDNIGHT.VOIDSTORM },
 					}),
 					q(86562, {	-- Dancing with Death
 						["sourceQuests"] = { 86559 },	-- The Far, Far Frontier

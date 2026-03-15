@@ -19,6 +19,7 @@ MIDNIGHT_SEASONAL_PROMOTIONS = createHeader({
 	},
 	description = {
 		en = "These promotions happened during the time Midnight was the most recent expansion.\n\nThey are listed in the order of their first appearance.",
+		cn = "这些促销活动均发生在《至暗之夜（Midnight）》作为最新资料片的时期。以下按活动首次出现的时间顺序列出",
 	},
 });
 
@@ -31,6 +32,7 @@ RAZER = createHeader({
 	},
 	description = {
 		en = "Razer x World of Warcraft Mount Giveaway. Starts on January 21 2025 at 10:00AM PST and ends on January 31, 2026 at 11:59PM PST. No purchase necessary.",
+		cn = "雷蛇 ×《魔兽世界》坐骑抽奖活动,活动时间：2025 年 1 月 21 日太平洋时间上午 10:00 至 2026 年 1 月 31 日太平洋时间晚上 11:59,无需购买即可参与",
 	},
 });
 

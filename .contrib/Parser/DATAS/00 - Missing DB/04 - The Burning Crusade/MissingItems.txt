@@ -498,7 +498,6 @@ i(24238),	-- room Sample \\ Mushroom Sample
 i(24239),	-- e of Materials \\ Crate of Materials
 i(24240),	-- of Mushrooms \\ Box of Mushrooms
 i(24242),	-- Iron Powder \\ Fel Iron Powder
-i(24243),	-- antite Powder \\ Adamantite Powder
 i(24247),	-- rspore Frond \\ Underspore Frond
 i(24248),	-- n of the Black Stalker \\ Brain of the Black Stalker
 i(24269),	-- y Netherweave Net \\ Heavy Netherweave Net
@@ -517,7 +516,6 @@ i(24317),	-- dmyst Water Sample \\ Bloodmyst Water Sample
 i(24318),	-- r Sample Flask \\ Water Sample Flask
 i(24323),	-- slated Sunhawk Missive \\ Translated Sunhawk Missive
 i(24329),	-- Test Robe
-i(24330),	-- n Schematics \\ Drain Schematics
 i(24337),	-- tivating Jewel \\ Deactivating Jewel
 i(24338),	-- fire Spineleaf \\ Hellfire Spineleaf
 i(24355),	-- vine Seeds \\ Ironvine Seeds
@@ -646,7 +644,6 @@ i(25455),	-- phorescent Globe \\ Phosphorescent Globe
 i(25456),	-- ing Spores \\ Glowing Spores
 i(25457),	-- ndescent Spores \\ Incandescent Spores
 i(25458),	-- har Battle Standard \\ Mag'har Battle Standard
-i(25459),	-- nt" Ungula's Mandible \\ "Count" Ungula's Mandible
 i(25460),	-- ding Hollow Supply Crate \\ Bleeding Hollow Supply Crate
 i(25463),	-- of Ivory Tusks \\ Pair of Ivory Tusks
 i(25465),	-- mcrow Amulet \\ Stormcrow Amulet
@@ -927,7 +924,6 @@ i(27807),	-- Elemental Gas \\ Air Elemental Gas
 i(27808),	-- Jump-a-tron 4000 Key
 i(27820),	-- ed Deep Peridot \\ Jagged Deep Peridot \\ Notched Deep Peridot
 i(27841),	-- red Talon of the Matriarch \\ Severed Talon of the Matriarch
-i(27859),	-- ar Caps \\ Zangar Caps
 i(27861),	-- rai's Stolen Goods \\ Lathrai's Stolen Goods
 i(27863),	-- Extended Cost Bryanite \\ Brian's Bryanite of Extended Cost
 i(27864),	-- Extended Cost Copying Bryanite \\ Brian's Bryanite of Extended Cost Copying
@@ -1110,9 +1106,6 @@ i(29338),	-- hsome Remnant \\ Loathsome Remnant
 i(29361),	-- rius' Phylactery \\ Naberius' Phylactery \\ Naberius's Phylactery
 i(29365),	-- hing Hammer \\ Smithing Hammer
 i(29366),	-- ar Access Crystal \\ B'naar Access Crystal
-i(29393),	-- ond Berries \\ Diamond Berries
-i(29394),	-- bread \\ Lyribread
-i(29395),	-- rmead \\ Ethermead
 i(29396),	-- u Access Crystal \\ Coruu Access Crystal
 i(29397),	-- Access Crystal \\ Duro Access Crystal
 i(29402),	-- Jessen's Special Slop OLD
@@ -1123,8 +1116,6 @@ i(29429),	-- 's Doom \\ Boom's Doom
 i(29443),	-- dmaul Brutebane Brew \\ Bloodmaul Brutebane Brew
 i(29445),	-- eying Markers \\ Surveying Markers
 i(29447),	-- Zapper \\ Fel Zapper
-i(29453),	-- eggar Mushroom \\ Sporeggar Mushroom
-i(29454),	-- erwine \\ Silverwine
 i(29459),	-- reum Relay Data \\ Ethereum Relay Data
 i(29461),	-- Bomb Fragment \\ Mana Bomb Fragment
 i(29464),	-- eskin Shale \\ Shaleskin Shale
@@ -1347,7 +1338,6 @@ i(30481),	-- y Soul Fragment \\ Fiery Soul Fragment
 i(30499),	-- htsong Wine \\ Brightsong Wine
 i(30500),	-- en Arakkoa Egg \\ Rotten Arakkoa Egg
 i(30501),	-- le of Bloodthistle \\ Bundle of Bloodthistle
-i(30503),	-- eologist's Shrunken Head \\ Archeologist's Shrunken Head
 i(30506),	-- e Egg \\ Snipe Egg
 i(30507),	-- y Rock \\ Lucky Rock
 i(30508),	-- led Murloc Head \\ Pickled Murloc Head
@@ -1363,8 +1353,6 @@ i(30527),	-- Draenei Tomb Relic
 i(30528),	-- Druid 105 Epic Bear Test Chest
 i(30529),	-- ked Lashh'an Feather \\ Plucked Lashh'an Feather
 i(30530),	-- ful of Feathers \\ Fistful of Feathers
-i(30539),	-- y's Waiver (Signed) \\ Tally's Waiver (Signed)
-i(30540),	-- y's Waiver (Unsigned) \\ Tally's Waiver (Unsigned)
 i(30545),	-- Cavrylin's Medallion
 i(30561),	-- 'nir Crystal \\ Vekh'nir Crystal
 i(30567),	-- ged Vekh'nir Crystal \\ Charged Vekh'nir Crystal
@@ -1416,12 +1404,16 @@ i(30713),	-- Art of Fel Reaver Maintenance \\ The Art of Fel Reaver Maintenance
 i(30716),	-- -Burning Ash \\ Ever-Burning Ash \\ Ever-burning Ash
 i(30717),	-- Harbinger's Pendant
 i(30718),	-- [UNUSED] Metzen and Carnes' Test Robe of Asskicking
+i(30742),	-- oral Phase Modulator \\ Temporal Phase Modulator
+i(30743),	-- o-Nether Drake Essence \\ Proto-Nether Drake Essence
 i(30760),	-- al Draenic Robe \\ Formal Draenic Robe
 i(30765),	-- y Draenic Breastplate \\ Heavy Draenic Breastplate
 i(30771),	-- y Draenic Bracers \\ Heavy Draenic Bracers
 i(30775),	-- red Bone Shield \\ Layered Bone Shield
 i(30777),	-- r Heavy Belt \\ Aldor Heavy Belt
 i(30781),	-- hari Chain Vest \\ Mag'hari Chain Vest
+i(30782),	-- escent Nether Drake Essence \\ Adolescent Nether Drake Essence
+i(30783),	-- re Nether Drake Essence \\ Mature Nether Drake Essence
 i(30784),	-- Mag'hari Gauntlets \\ Worn Mag'hari Gauntlets
 i(30785),	-- roron's Glaive \\ Morgroron's Glaive
 i(30786),	-- zradon's Glaive \\ Makazradon's Glaive
@@ -1509,11 +1501,9 @@ i(31351),	-- onfire Trap \\ Dragonfire Trap
 i(31360),	-- nished Headpiece \\ Unfinished Headpiece
 i(31363),	-- rom's Favor \\ Gorgrom's Favor
 i(31365),	-- gized Headpiece \\ Energized Headpiece
-i(31366),	-- worn Gas Mask \\ Felsworn Gas Mask
 i(31372),	-- nail Flayer Carcass \\ Rocknail Flayer Carcass
 i(31373),	-- nail Flayer Giblets \\ Rocknail Flayer Giblets
 i(31374),	-- Master's Head \\ Worg Master's Head
-i(31384),	-- ged Mask \\ Damaged Mask
 i(31386),	-- f of Parshah \\ Staff of Parshah
 i(31387),	-- ery Mask \\ Mystery Mask
 i(31389),	-- Captured Eye of Grillok
@@ -1697,11 +1687,7 @@ i(32642),	-- Raw Darkrune
 i(32646),	-- llion of Karabor \\ Medallion of Karabor
 i(32657),	-- orn's Sparrowhawk Whistle \\ Arthorn's Sparrowhawk Whistle
 i(32666),	-- ened Hide of Tyrantus \\ Hardened Hide of Tyrantus
-i(32667),	-- Ale \\ Bash Ale
-i(32668),	-- Ogris \\ Dos Ogris
 i(32680),	-- erang \\ Booterang
-i(32685),	-- 'la Chicken Fingers \\ Ogri'la Chicken Fingers
-i(32686),	-- o's Fortune Giblets \\ Mingo's Fortune Giblets
 i(32687),	-- ik's Package \\ Hazzik's Package
 i(32688),	-- dstained Fortune \\ Bloodstained Fortune
 i(32689),	-- dstained Fortune \\ Bloodstained Fortune
@@ -1737,7 +1723,6 @@ i(32735),	-- Delicate Spencerite \\ Radiant Spencerite
 i(32741),	-- by Arakkoa Disguise \\ Shabby Arakkoa Disguise
 i(32742),	-- rsarial Bloodlines \\ Adversarial Bloodlines
 i(32743),	-- Monster - Axe -Doomguard Punisher
-i(32758),	-- e Cologne \\ Brute Cologne
 i(32760),	-- Macho Gnome's Arrow \\ The Macho Gnome's Arrow
 i(32761),	-- Sarge's Bullet \\ The Sarge's Bullet
 i(32762),	-- ster's Brain Juice \\ Rulkster's Brain Juice
@@ -2008,7 +1993,6 @@ i(35231),	-- ury Attack Plans \\ Sunfury Attack Plans
 i(35233),	-- iphase Spectrographic Goggles \\ Multiphase Spectrographic Goggles
 i(35237),	-- of the Crawler \\ Orb of the Crawler
 i(35277),	-- ight Correspondence \\ Twilight Correspondence
-i(35287),	-- nous Bluetail \\ Luminous Bluetail
 i(35314),	-- ially Digested Weeds \\ Partially Digested Weeds
 i(35396),	-- ant 2H Weapon - Major Agility \\ Enchant 2H Weapon - Major Agility
 i(35397),	-- ant 2H Weapon - Savagery \\ Enchant 2H Weapon - Savagery

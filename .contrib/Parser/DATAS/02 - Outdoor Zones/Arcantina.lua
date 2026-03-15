@@ -92,18 +92,18 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LA
 			}),
 			q(92320, {	-- Still Behind Enemy Portals
 				["provider"] = { "n", 250401 },	-- Marius Felbane
-				["coord"] = { 55.8, 63.9, ARCANTINA },
+				["coord"] = { 59.0, 78.0, ARCANTINA },
+				["maps"] = { 2558 },	-- Derelict Legion Vessel
 				["groups"] = {
-					i(253178),	-- Inactive Filigree Moon Lamp (DECOR!)
-					o(613535, {	--
-						["questID"] = 92377,
-						["groups"] = {
-							o(613535, {	-- Dark Evil Corrupted Chest of Tormented Darkness
-								["coord"] = { 49.9, 53.7, 2557 },	-- Derelict Legion Vessel
-								["groups"] = { i(250874) },	-- Corrupted Lantern (QI!)
-							}),
+					o(613535, {	-- Dark Evil Corrupted Chest of Tormented Darkness
+						["coords"] = {
+							{ 49.9, 53.7, 2557 },	-- Derelict Legion Vessel
+							{ 50.1, 53.8, BROKEN_SHORE },
 						},
+						["questID"] = 92377,
+						["groups"] = { i(250874) },	-- Corrupted Lantern (QI!)
 					}),
+					i(253178),	-- Inactive Filigree Moon Lamp (DECOR!)
 				},
 			}),
 			q(92326, {	-- The Fragrance of the Dunes

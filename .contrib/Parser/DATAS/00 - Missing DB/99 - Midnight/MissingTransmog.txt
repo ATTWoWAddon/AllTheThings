@@ -8404,10 +8404,10 @@ s(131329)/i(20838),	-- trider Bow \\ Sunstrider Bow
 s(131330)/i(20839),	-- trider Staff \\ Sunstrider Staff
 s(131331)/i(20840),	-- trider Mace \\ Sunstrider Mace
 s(131332)/i(20841),	-- trider Shield \\ Sunstrider Shield
-s(131340)/i(20849),	-- ne Forged Shortsword \\ Arcane Forged Shortsword
-s(131341)/i(20850),	-- ne Forged Axe \\ Arcane Forged Axe
-s(131342)/i(20851),	-- ne Forged Mace \\ Arcane Forged Mace
-s(131343)/i(20852),	-- ne Forged Dirk \\ Arcane Forged Dirk
+s(131340)/i(20849),	-- Arcane-Forged Shortsword \\ ne Forged Shortsword \\ Arcane Forged Shortsword
+s(131341)/i(20850),	-- Arcane-Forged Axe \\ ne Forged Axe \\ Arcane Forged Axe
+s(131342)/i(20851),	-- Arcane-Forged Mace \\ ne Forged Mace \\ Arcane Forged Mace
+s(131343)/i(20852),	-- Arcane-Forged Dirk \\ ne Forged Dirk \\ Arcane Forged Dirk
 s(131344)/i(20853),	-- Gathering Staff \\ Mana Gathering Staff
 s(131382)/i(20891),	-- hyte's Robe \\ Neophyte's Robe
 s(131383)/i(20892),	-- yte's Robe \\ Acolyte's Robe
@@ -35475,10 +35475,6 @@ s(303353)/i(264448),	-- Featherwoven Promise Band
 s(303634)/i(264969),	-- Extinction Voulge
 12.0.0.64228
 s(303985)/i(265814),	-- Noble's Signet Ring
-12.0.0.64499
-s(304223)/i(266965),	-- Tabard of Amani Abundance
-s(304224)/i(266966),	-- Mantle of Amani Abundance
-s(304225)/i(266967),	-- Shawl of Amani Abundance
 12.0.1.64889
 s(304617)/i(268634),	--
 s(304618)/i(268635),	--
@@ -35507,3 +35503,822 @@ s(307650)/i(249370),	-- Draconic Nullcape \\ 12.0 Raid - Generic - Cloak
 s(304272)/i(267466),	-- Silversun Compact Cape
 s(304273)/i(267467),	-- Silversun Compact Tabard
 s(304274)/i(267468),	-- Silversun Compact Shoulderpads
+12.0.5.66330
+s(62894)/i(113979),	-- The Black Hand \\ Black Hand
+s(64259)/i(115374),	-- Windcrystal Leggings \\ crystal Leggings
+s(64262)/i(115375),	-- Crystalhide Legguards \\ talhide Legguards
+s(64265)/i(115376),	-- Crystal-Leaf Legguards \\ tal-Leaf Legguards
+s(64268)/i(115377),	-- Crystal-Plated Legplates \\ tal-Plated Legplates
+s(64274)/i(115378),	-- Windcrystal Cord \\ crystal Cord
+s(64277)/i(115379),	-- Crystalhide Belt \\ talhide Belt
+s(64280)/i(115380),	-- Crystal-Leaf Chain \\ tal-Leaf Chain
+s(64283)/i(115381),	-- Crystal-Plated Greatbelt \\ tal-Plated Greatbelt
+s(64286)/i(115387),	-- Exceptional Windcrystal Wraps \\ ptional Windcrystal Wraps
+s(64289)/i(115388),	-- Exceptional Crystalhide Grips \\ ptional Crystalhide Grips
+s(64292)/i(115389),	-- Exceptional Crystal-Leaf Gloves \\ ptional Crystal-Leaf Gloves
+s(64295)/i(115390),	-- Exceptional Crystal-Plated Gauntlets \\ ptional Crystal-Plated Gauntlets
+s(64303)/i(115396),	-- Flawless Windcrystal Hood \\ less Windcrystal Hood
+s(64306)/i(115397),	-- Flawless Crystalhide Cowl \\ less Crystalhide Cowl
+s(64309)/i(115398),	-- Flawless Crystal-Leaf Helm \\ less Crystal-Leaf Helm
+s(64312)/i(115399),	-- Flawless Crystal-Plated Greathelm \\ less Crystal-Plated Greathelm
+s(64315)/i(115400),	-- Flawless Windcrystal Bracers \\ less Windcrystal Bracers
+s(64318)/i(115401),	-- Flawless Crystalhide Bracers \\ less Crystalhide Bracers
+s(64321)/i(115402),	-- Flawless Crystal-Leaf Bracers \\ less Crystal-Leaf Bracers
+s(64324)/i(115403),	-- Flawless Crystal-Plated Bracers \\ less Crystal-Plated Bracers
+s(64327)/i(115404),	-- Oana's Observant Gaze \\ 's Observant Gaze
+s(64330)/i(115405),	-- Cowl of Grim Shadows \\ of Grim Shadows
+s(64333)/i(115406),	-- One-Eyed Chain Helm \\ Eyed Chain Helm
+s(64336)/i(115407),	-- Tehax's Penetrating Visage \\ x's Penetrating Visage
+s(64339)/i(115408),	-- Sandals of Marauding \\ als of Marauding
+s(64342)/i(115409),	-- Wall-Climber's Treads \\ -Climber's Treads
+s(64345)/i(115410),	-- Gatecrasher's Chain Boots \\ crasher's Chain Boots
+s(64348)/i(115411),	-- Ozymandias' Burdensome Treads \\ andias' Burdensome Treads
+s(64351)/i(115412),	-- Wall-Breaker's Shoulderpads \\ -Breaker's Shoulderpads
+s(64354)/i(115413),	-- Scaling Hook Spaulders \\ ing Hook Spaulders
+s(64357)/i(115414),	-- Gruntslayer Shoulderguards \\ tslayer Shoulderguards
+s(64360)/i(115415),	-- Spaulders of Primal Ferocity \\ lders of Primal Ferocity
+s(64371)/i(115425),	-- Quadripedal Grips \\ ripedal Grips
+s(64374)/i(115426),	-- Grips of Natural Fury \\ s of Natural Fury
+s(64377)/i(115427),	-- Chainhoof Grips \\ nhoof Grips
+s(64380)/i(115428),	-- Gauntlets of Impenetrability \\ tlets of Impenetrability
+s(64383)/i(115429),	-- Belt of Singing Hooves \\ of Singing Hooves
+s(64386)/i(115430),	-- Cord of Ruination \\ of Ruination
+s(64389)/i(115431),	-- Chain of Natural Fury \\ n of Natural Fury
+s(64392)/i(115432),	-- Waistplate of Bladed Force \\ tplate of Bladed Force
+s(64395)/i(115433),	-- Solarflame Legwraps \\ rflame Legwraps
+s(64398)/i(115434),	-- Down-Lined Leggings \\ -Lined Leggings
+s(64401)/i(115435),	-- Leggings of Flowing Feathers \\ ings of Flowing Feathers
+s(64404)/i(115436),	-- Phoenixfire Legplates \\ nixfire Legplates
+s(64815)/i(116001),	-- Cord of Skulls \\ of Skulls
+s(64882)/i(116026),	-- Bonebreaker Boots \\ breaker Boots
+s(65223)/i(116364),	-- Dagger of Enfeeblement \\ er of Enfeeblement
+s(65277)/i(116391),	-- Blackhand Forgehammer \\ khand Forgehammer
+s(65280)/i(116393),	-- Dagger of the Shattered Crucible \\ er of the Shattered Crucible
+s(65601)/i(116927),	-- Exceptional Windcrystal Leggings \\ ptional Windcrystal Leggings
+s(65604)/i(116928),	-- Exceptional Crystalhide Legguards \\ ptional Crystalhide Legguards
+s(65607)/i(116929),	-- Exceptional Crystal-Leaf Legguards \\ ptional Crystal-Leaf Legguards
+s(65610)/i(116930),	-- Exceptional Crystal-Plated Legplates \\ ptional Crystal-Plated Legplates
+s(65613)/i(116931),	-- Flawless Windcrystal Leggings \\ less Windcrystal Leggings
+s(65616)/i(116932),	-- Flawless Crystalhide Legguards \\ less Crystalhide Legguards
+s(65619)/i(116933),	-- Flawless Crystal-Leaf Legguards \\ less Crystal-Leaf Legguards
+s(65622)/i(116934),	-- Flawless Crystal-Plated Legplates \\ less Crystal-Plated Legplates
+s(65625)/i(116935),	-- Exceptional Windcrystal Cord \\ ptional Windcrystal Cord
+s(65628)/i(116936),	-- Exceptional Crystalhide Belt \\ ptional Crystalhide Belt
+s(65631)/i(116937),	-- Exceptional Crystal-Leaf Chain \\ ptional Crystal-Leaf Chain
+s(65634)/i(116938),	-- Exceptional Crystal-Plated Greatbelt \\ ptional Crystal-Plated Greatbelt
+s(65637)/i(116939),	-- Flawless Windcrystal Cord \\ less Windcrystal Cord
+s(65640)/i(116940),	-- Flawless Crystalhide Belt \\ less Crystalhide Belt
+s(65643)/i(116941),	-- Flawless Crystal-Leaf Chain \\ less Crystal-Leaf Chain
+s(65646)/i(116942),	-- Flawless Crystal-Plated Greatbelt \\ less Crystal-Plated Greatbelt
+s(65649)/i(116943),	-- Windcrystal Wraps \\ crystal Wraps
+s(65652)/i(116944),	-- Crystalhide Grips \\ talhide Grips
+s(65655)/i(116945),	-- Crystal-Leaf Gloves \\ tal-Leaf Gloves
+s(65658)/i(116946),	-- Crystal-Plated Gauntlets \\ tal-Plated Gauntlets
+s(65661)/i(116947),	-- Flawless Windcrystal Wraps \\ less Windcrystal Wraps
+s(65664)/i(116948),	-- Flawless Crystalhide Grips \\ less Crystalhide Grips
+s(65667)/i(116949),	-- Flawless Crystal-Leaf Gloves \\ less Crystal-Leaf Gloves
+s(65670)/i(116950),	-- Flawless Crystal-Plated Gauntlets \\ less Crystal-Plated Gauntlets
+s(65675)/i(116953),	-- Windcrystal Hood \\ crystal Hood
+s(65678)/i(116954),	-- Crystalhide Cowl \\ talhide Cowl
+s(65681)/i(116955),	-- Crystal-Leaf Helm \\ tal-Leaf Helm
+s(65684)/i(116956),	-- Crystal-Plated Greathelm \\ tal-Plated Greathelm
+s(65687)/i(116957),	-- Exceptional Windcrystal Hood \\ ptional Windcrystal Hood
+s(65690)/i(116958),	-- Exceptional Crystalhide Cowl \\ ptional Crystalhide Cowl
+s(65693)/i(116959),	-- Exceptional Crystal-Leaf Helm \\ ptional Crystal-Leaf Helm
+s(65696)/i(116960),	-- Exceptional Crystal-Plated Greathelm \\ ptional Crystal-Plated Greathelm
+s(65699)/i(116961),	-- Exceptional Windcrystal Bracers \\ ptional Windcrystal Bracers
+s(65702)/i(116962),	-- Exceptional Crystalhide Bracers \\ ptional Crystalhide Bracers
+s(65705)/i(116963),	-- Exceptional Crystal-Leaf Bracers \\ ptional Crystal-Leaf Bracers
+s(65708)/i(116964),	-- Exceptional Crystal-Plated Bracers \\ ptional Crystal-Plated Bracers
+s(65711)/i(116965),	-- Windcrystal Bracers \\ crystal Bracers
+s(65714)/i(116966),	-- Crystalhide Bracers \\ talhide Bracers
+s(65717)/i(116967),	-- Crystal-Leaf Bracers \\ tal-Leaf Bracers
+s(65720)/i(116968),	-- Crystal-Plated Bracers \\ tal-Plated Bracers
+s(66788)/i(113945),	-- Flame Infusion Drape \\ e Infusion Drape
+s(66835)/i(116297),	-- Fleshhook Cloak \\ hhook Cloak
+s(67800)/i(120088),	-- Witherleaf Chestguard \\ erleaf Chestguard
+s(67803)/i(120089),	-- Chestguard of Rejuvenation \\ tguard of Rejuvenation
+s(67806)/i(120090),	-- Falling Leaf Breastplate \\ ing Leaf Breastplate
+s(67809)/i(120091),	-- Robes of the Ageless \\ s of the Ageless
+s(67816)/i(120111),	-- Featherflame Sandals \\ herflame Sandals
+s(67819)/i(120112),	-- Phoenix-Rider Boots \\ nix-Rider Boots
+s(67822)/i(120113),	-- Talongrip Spurs \\ ngrip Spurs
+s(67825)/i(120114),	-- Wing-Forged Greatboots \\ -Forged Greatboots
+s(69116)/i(122308),	-- Ethereal Windcrystal Hood \\ real Windcrystal Hood
+s(69119)/i(122309),	-- Ethereal Crystalhide Cowl \\ real Crystalhide Cowl
+s(69122)/i(122310),	-- Ethereal Crystal-Leaf Helm \\ real Crystal-Leaf Helm
+s(69125)/i(122311),	-- Ethereal Crystal-Plated Greathelm \\ real Crystal-Plated Greathelm
+s(69128)/i(122312),	-- Ethereal Windcrystal Bracers \\ real Windcrystal Bracers
+s(69131)/i(122313),	-- Ethereal Crystalhide Bracers \\ real Crystalhide Bracers
+s(69134)/i(122314),	-- Ethereal Crystal-Leaf Bracers \\ real Crystal-Leaf Bracers
+s(69137)/i(122315),	-- Ethereal Crystal-Plated Bracers \\ real Crystal-Plated Bracers
+s(69140)/i(122316),	-- Ethereal Windcrystal Leggings \\ real Windcrystal Leggings
+s(69143)/i(122317),	-- Ethereal Crystalhide Legguards \\ real Crystalhide Legguards
+s(69146)/i(122318),	-- Ethereal Crystal-Leaf Legguards \\ real Crystal-Leaf Legguards
+s(69149)/i(122319),	-- Ethereal Crystal-Plated Legplates \\ real Crystal-Plated Legplates
+s(69152)/i(122320),	-- Ethereal Windcrystal Cord \\ real Windcrystal Cord
+s(69155)/i(122321),	-- Ethereal Crystalhide Belt \\ real Crystalhide Belt
+s(69158)/i(122322),	-- Ethereal Crystal-Leaf Chain \\ real Crystal-Leaf Chain
+s(69161)/i(122323),	-- Ethereal Crystal-Plated Greatbelt \\ real Crystal-Plated Greatbelt
+s(69164)/i(122324),	-- Ethereal Windcrystal Wraps \\ real Windcrystal Wraps
+s(69167)/i(122325),	-- Ethereal Crystalhide Grips \\ real Crystalhide Grips
+s(69170)/i(122326),	-- Ethereal Crystal-Leaf Gloves \\ real Crystal-Leaf Gloves
+s(69173)/i(122327),	-- Ethereal Crystal-Plated Gauntlets \\ real Crystal-Plated Gauntlets
+s(79380)/i(137629),	--
+s(195303)/i(213406),	--
+s(219978)/i(223557),	--
+s(219979)/i(223558),	--
+s(219980)/i(223559),	--
+s(219981)/i(223560),	--
+s(219982)/i(223561),	--
+s(219983)/i(223562),	--
+s(219984)/i(223563),	--
+s(219986)/i(223565),	--
+s(219988)/i(223567),	--
+s(220102)/i(223589),	--
+s(220103)/i(223590),	--
+s(220104)/i(223591),	--
+s(220105)/i(223592),	--
+s(220106)/i(223593),	--
+s(220107)/i(223594),	--
+s(220108)/i(223595),	--
+s(220109)/i(223596),	--
+s(220110)/i(223597),	--
+s(220415)/i(224501),	--
+s(220416)/i(224502),	--
+s(220417)/i(224503),	--
+s(220418)/i(224504),	--
+s(220419)/i(224505),	--
+s(220420)/i(224506),	--
+s(220421)/i(224507),	--
+s(220422)/i(224508),	--
+s(220423)/i(224509),	--
+s(220676)/i(224914),	--
+s(220677)/i(224915),	--
+s(220678)/i(224916),	--
+s(220679)/i(224917),	--
+s(220680)/i(224918),	--
+s(220681)/i(224919),	--
+s(220682)/i(224920),	--
+s(220683)/i(224921),	--
+s(220684)/i(224922),	--
+s(220703)/i(224942),	--
+s(220704)/i(224943),	--
+s(220705)/i(224944),	--
+s(220706)/i(224945),	--
+s(220707)/i(224946),	--
+s(220708)/i(224947),	--
+s(220709)/i(224948),	--
+s(220710)/i(224949),	--
+s(220711)/i(224950),	--
+s(220730)/i(224970),	--
+s(220731)/i(224971),	--
+s(220732)/i(224972),	--
+s(220733)/i(224973),	--
+s(220734)/i(224974),	--
+s(220735)/i(224975),	--
+s(220736)/i(224976),	--
+s(220737)/i(224977),	--
+s(220738)/i(224978),	--
+s(220757)/i(225001),	--
+s(220758)/i(225002),	--
+s(220759)/i(225003),	--
+s(220760)/i(225004),	--
+s(220761)/i(225005),	--
+s(220762)/i(225006),	--
+s(220763)/i(225007),	--
+s(220764)/i(225008),	--
+s(220765)/i(225009),	--
+s(220784)/i(225028),	--
+s(220785)/i(225029),	--
+s(220786)/i(225030),	--
+s(220787)/i(225031),	--
+s(220788)/i(225032),	--
+s(220789)/i(225033),	--
+s(220790)/i(225034),	--
+s(220791)/i(225035),	--
+s(220792)/i(225036),	--
+s(220811)/i(225055),	--
+s(220812)/i(225056),	--
+s(220813)/i(225057),	--
+s(220814)/i(225058),	--
+s(220815)/i(225059),	--
+s(220816)/i(225060),	--
+s(220817)/i(225061),	--
+s(220818)/i(225062),	--
+s(220819)/i(225063),	--
+s(220842)/i(225087),	--
+s(220843)/i(225088),	--
+s(220844)/i(225089),	--
+s(220845)/i(225090),	--
+s(220846)/i(225091),	--
+s(220847)/i(225092),	--
+s(220848)/i(225093),	--
+s(220849)/i(225094),	--
+s(220850)/i(225095),	--
+s(220869)/i(225114),	--
+s(220870)/i(225115),	--
+s(220871)/i(225116),	--
+s(220872)/i(225117),	--
+s(220873)/i(225118),	--
+s(220874)/i(225119),	--
+s(220875)/i(225120),	--
+s(220876)/i(225121),	--
+s(220877)/i(225122),	--
+s(220896)/i(225142),	--
+s(220897)/i(225143),	--
+s(220898)/i(225144),	--
+s(220899)/i(225145),	--
+s(220900)/i(225146),	--
+s(220901)/i(225147),	--
+s(220902)/i(225148),	--
+s(220903)/i(225149),	--
+s(220904)/i(225150),	--
+s(220923)/i(225169),	--
+s(220924)/i(225170),	--
+s(220925)/i(225171),	--
+s(220926)/i(225172),	--
+s(220927)/i(225173),	--
+s(220928)/i(225174),	--
+s(220929)/i(225175),	--
+s(220930)/i(225176),	--
+s(220931)/i(225177),	--
+s(302181)/i(260442),	--
+s(302184)/i(260445),	--
+s(302187)/i(260448),	--
+s(302188)/i(260449),	--
+s(302189)/i(260454),	--
+s(302190)/i(260455),	--
+s(302191)/i(260456),	--
+s(302192)/i(260457),	--
+s(302193)/i(260462),	--
+s(302194)/i(260463),	--
+s(302195)/i(260464),	--
+s(302196)/i(260465),	--
+s(302197)/i(260467),	--
+s(302819)/i(263585),	-- Void Rider's Breastplate
+s(302820)/i(263586),	-- Void Rider's Sabatons
+s(302821)/i(263587),	-- Void Rider's Gloves
+s(302822)/i(263588),	-- Void Rider's Helm
+s(302823)/i(263589),	-- Void Rider's Leggings
+s(302824)/i(263590),	-- Void Rider's Pauldrons
+s(302825)/i(263591),	-- Void Rider's Girdle
+s(302826)/i(263592),	-- Void Rider's Cloak
+s(302827)/i(263593),	-- Void Rider's Vambraces
+s(302828)/i(263594),	-- Voidwalker's Harness
+s(302829)/i(263595),	-- Voidwalker's Sandals
+s(302830)/i(263596),	-- Voidwalker's Gloves
+s(302831)/i(263597),	-- Voidwalker's Skullcap
+s(302832)/i(263598),	-- Voidwalker's Leggings
+s(302833)/i(263599),	-- Voidwalker's Shoulderblades
+s(302834)/i(263600),	-- Voidwalker's Cord
+s(302835)/i(263601),	-- Voidwalker's Cloak
+s(302836)/i(263602),	-- Voidwalker's Bracers
+s(302837)/i(263603),	-- Voidrage Robe
+s(302838)/i(263604),	-- Voidrage Boots
+s(302839)/i(263605),	-- Voidrage Handguards
+s(302840)/i(263606),	-- Voidrage Cover
+s(302841)/i(263607),	-- Voidrage Legguards
+s(302842)/i(263608),	-- Voidrage Pauldrons
+s(302843)/i(263609),	-- Voidrage Belt
+s(302844)/i(263610),	-- Voidrage Cloak
+s(302845)/i(263611),	-- Voidrage Bracers
+s(302846)/i(263612),	-- Voidrage Chestguard
+s(302847)/i(263613),	-- Void-Warder's Breastplate
+s(302848)/i(263614),	-- Void-Warder's Talons
+s(302849)/i(263615),	-- Void-Warder's Claws
+s(302850)/i(263616),	-- Void-Warder's Crown
+s(302851)/i(263617),	-- Void-Warder's Legplates
+s(302852)/i(263618),	-- Void-Warder's Pauldrons
+s(302853)/i(263619),	-- Void-Warder's Girdle
+s(302854)/i(263620),	-- Void-Warder's Cloak
+s(302855)/i(263621),	-- Void-Warder's Vambraces
+s(302856)/i(263622),	-- Voidstalker's Breastplate
+s(302857)/i(263623),	-- Voidstalker's Greaves
+s(302858)/i(263624),	-- Voidstalker's Gauntlets
+s(302859)/i(263625),	-- Voidstalker's Helm
+s(302860)/i(263626),	-- Voidstalker's Legguards
+s(302861)/i(263627),	-- Voidstalker's Spaulders
+s(302862)/i(263628),	-- Voidstalker's Belt
+s(302863)/i(263629),	-- Voidstalker's Cloak
+s(302864)/i(263630),	-- Voidstalker's Bracers
+s(302865)/i(263631),	-- Voidwind Robes
+s(302866)/i(263632),	-- Voidwind Boots
+s(302867)/i(263633),	-- Voidwind Gloves
+s(302868)/i(263634),	-- Voidwind Crown
+s(302869)/i(263635),	-- Voidwind Pants
+s(302870)/i(263636),	-- Voidwind Mantle
+s(302871)/i(263637),	-- Voidwind Belt
+s(302872)/i(263638),	-- Voidwind Cloak
+s(302873)/i(263639),	-- Voidwind Bindings
+s(302874)/i(263640),	-- Voidwind Blouse
+s(302875)/i(263641),	-- Vest of the Void Acolyte
+s(302876)/i(263642),	-- Talons of the Void Acolyte
+s(302877)/i(263643),	-- Grips of the Void Acolyte
+s(302878)/i(263644),	-- Helm of the Void Acolyte
+s(302879)/i(263645),	-- Pants of the Void Acolyte
+s(302880)/i(263646),	-- Spaulders of the Void Acolyte
+s(302881)/i(263647),	-- Cord of the Void Acolyte
+s(302882)/i(263648),	-- Cloak of the Void Acolyte
+s(302883)/i(263649),	-- Bindings of the Void Acolyte
+s(302884)/i(263650),	-- Void's Judgment Breastplate
+s(302885)/i(263651),	-- Void's Judgment Sabatons
+s(302886)/i(263652),	-- Void's Judgment Gauntlets
+s(302887)/i(263653),	-- Void's Judgment Crown
+s(302888)/i(263654),	-- Void's Judgment Legplates
+s(302889)/i(263655),	-- Void's Judgment Spaulders
+s(302890)/i(263656),	-- Void's Judgment Belt
+s(302891)/i(263657),	-- Void's Judgment Cloak
+s(302892)/i(263658),	-- Void's Judgment Bindings
+s(302893)/i(263659),	-- Void's Judgment Greaves
+s(302894)/i(263660),	-- Robes of Voidcendence
+s(302895)/i(263661),	-- Boots of Voidcendence
+s(302896)/i(263662),	-- Handguards of Voidcendence
+s(302897)/i(263663),	-- Halo of Voidcendence
+s(302898)/i(263664),	-- Leggings of Voidcendence
+s(302899)/i(263665),	-- Pauldrons of Voidcendence
+s(302900)/i(263666),	-- Belt of Voidcendence
+s(302901)/i(263667),	-- Cloak of Voidcendence
+s(302902)/i(263668),	-- Bindings of Voidcendence
+s(302903)/i(263669),	-- Blouse of Voidcendence
+s(302904)/i(263670),	-- Voidfang Chestpiece
+s(302905)/i(263671),	-- Voidfang Boots
+s(302906)/i(263672),	-- Voidfang Gloves
+s(302907)/i(263673),	-- Voidfang Hood
+s(302908)/i(263674),	-- Voidfang Pants
+s(302909)/i(263675),	-- Voidfang Spaulders
+s(302910)/i(263676),	-- Voidfang Belt
+s(302911)/i(263677),	-- Voidfang Cloak
+s(302912)/i(263678),	-- Voidfang Bracers
+s(302913)/i(263679),	-- Breastplate of Void Storms
+s(302914)/i(263680),	-- Sabatons of Void Storms
+s(302915)/i(263681),	-- Gauntlets of Void Storms
+s(302916)/i(263682),	-- Helmet of Void Storms
+s(302917)/i(263683),	-- Kilt of Void Storms
+s(302918)/i(263684),	-- Epaulets of Void Storms
+s(302919)/i(263685),	-- Belt of Void Storms
+s(302920)/i(263686),	-- Cloak of Void Storms
+s(302921)/i(263687),	-- Bracers of Void Storms
+s(302922)/i(263688),	-- Greaves of Void Storms
+s(302923)/i(263689),	-- Void Nemesis' Robes
+s(302924)/i(263690),	-- Void Nemesis' Boots
+s(302925)/i(263691),	-- Void Nemesis' Gloves
+s(302926)/i(263692),	-- Void Nemesis' Skullcap
+s(302927)/i(263693),	-- Void Nemesis' Leggings
+s(302928)/i(263694),	-- Void Nemesis' Spaulders
+s(302929)/i(263695),	-- Void Nemesis' Belt
+s(302930)/i(263696),	-- Void Nemesis' Cloak
+s(302931)/i(263697),	-- Void Nemesis' Bracers
+s(302932)/i(263698),	-- Void Nemesis' Blouse
+s(302933)/i(263699),	-- Breastplate of Voidwrath
+s(302934)/i(263700),	-- Sabatons of Voidwrath
+s(302935)/i(263701),	-- Gauntlets of Voidwrath
+s(302936)/i(263702),	-- Helm of Voidwrath
+s(302937)/i(263703),	-- Legplates of Voidwrath
+s(302938)/i(263704),	-- Pauldrons of Voidwrath
+s(302939)/i(263705),	-- Waistband of Voidwrath
+s(302940)/i(263706),	-- Cloak of Voidwrath
+s(302941)/i(263707),	-- Bracelets of Voidwrath
+s(302943)/i(263734),	-- Void Rider's Breastplate
+s(302944)/i(263735),	-- Void Rider's Sabatons
+s(302945)/i(263736),	-- Void Rider's Gloves
+s(302946)/i(263737),	-- Void Rider's Helm
+s(302947)/i(263738),	-- Void Rider's Leggings
+s(302948)/i(263739),	-- Void Rider's Pauldrons
+s(302949)/i(263741),	-- Void Rider's Girdle
+s(302950)/i(263742),	-- Void Rider's Cloak
+s(302951)/i(263743),	-- Void Rider's Vambraces
+s(302952)/i(263744),	-- Voidwalker's Harness
+s(302953)/i(263745),	-- Voidwalker's Sandals
+s(302954)/i(263746),	-- Voidwalker's Gloves
+s(302955)/i(263747),	-- Voidwalker's Skullcap
+s(302956)/i(263748),	-- Voidwalker's Leggings
+s(302957)/i(263749),	-- Voidwalker's Shoulderblades
+s(302958)/i(263750),	-- Voidwalker's Cord
+s(302959)/i(263751),	-- Voidwalker's Cloak
+s(302960)/i(263752),	-- Voidwalker's Bracers
+s(302961)/i(263753),	-- Voidrage Robe
+s(302962)/i(263754),	-- Voidrage Boots
+s(302963)/i(263755),	-- Voidrage Handguards
+s(302964)/i(263756),	-- Voidrage Cover
+s(302965)/i(263757),	-- Voidrage Legguards
+s(302966)/i(263758),	-- Voidrage Pauldrons
+s(302967)/i(263759),	-- Voidrage Belt
+s(302968)/i(263760),	-- Voidrage Cloak
+s(302969)/i(263761),	-- Voidrage Bracers
+s(302970)/i(263762),	-- Voidrage Chestguard
+s(302971)/i(263763),	-- Void-Warder's Breastplate
+s(302972)/i(263764),	-- Void-Warder's Talons
+s(302973)/i(263765),	-- Void-Warder's Claws
+s(302974)/i(263766),	-- Void-Warder's Crown
+s(302975)/i(263767),	-- Void-Warder's Legplates
+s(302976)/i(263768),	-- Void-Warder's Pauldrons
+s(302977)/i(263769),	-- Void-Warder's Girdle
+s(302978)/i(263770),	-- Void-Warder's Cloak
+s(302979)/i(263771),	-- Void-Warder's Vambraces
+s(302980)/i(263772),	-- Voidstalker's Breastplate
+s(302981)/i(263773),	-- Voidstalker's Greaves
+s(302982)/i(263774),	-- Voidstalker's Gauntlets
+s(302983)/i(263775),	-- Voidstalker's Helm
+s(302984)/i(263777),	-- Voidstalker's Legguards
+s(302985)/i(263778),	-- Voidstalker's Spaulders
+s(302986)/i(263779),	-- Voidstalker's Belt
+s(302987)/i(263780),	-- Voidstalker's Cloak
+s(302988)/i(263781),	-- Voidstalker's Bracers
+s(302989)/i(263782),	-- Voidwind Robes
+s(302990)/i(263783),	-- Voidwind Boots
+s(302991)/i(263784),	-- Voidwind Gloves
+s(302992)/i(263785),	-- Voidwind Crown
+s(302993)/i(263786),	-- Voidwind Pants
+s(302994)/i(263787),	-- Voidwind Mantle
+s(302995)/i(263788),	-- Voidwind Belt
+s(302996)/i(263789),	-- Voidwind Cloak
+s(302997)/i(263790),	-- Voidwind Bindings
+s(302998)/i(263791),	-- Voidwind Blouse
+s(302999)/i(263792),	-- Vest of the Void Acolyte
+s(303000)/i(263793),	-- Talons of the Void Acolyte
+s(303001)/i(263794),	-- Grips of the Void Acolyte
+s(303002)/i(263795),	-- Helm of the Void Acolyte
+s(303003)/i(263796),	-- Pants of the Void Acolyte
+s(303004)/i(263797),	-- Spaulders of the Void Acolyte
+s(303005)/i(263798),	-- Cord of the Void Acolyte
+s(303006)/i(263799),	-- Cloak of the Void Acolyte
+s(303007)/i(263800),	-- Bindings of the Void Acolyte
+s(303008)/i(263801),	-- Void's Judgment Breastplate
+s(303009)/i(263802),	-- Void's Judgment Sabatons
+s(303010)/i(263803),	-- Void's Judgment Gauntlets
+s(303011)/i(263804),	-- Void's Judgment Crown
+s(303012)/i(263805),	-- Void's Judgment Legplates
+s(303013)/i(263806),	-- Void's Judgment Spaulders
+s(303014)/i(263807),	-- Void's Judgment Belt
+s(303015)/i(263808),	-- Void's Judgment Cloak
+s(303016)/i(263809),	-- Void's Judgment Bindings
+s(303017)/i(263810),	-- Void's Judgment Greaves
+s(303018)/i(263811),	-- Robes of Voidcendence
+s(303019)/i(263812),	-- Boots of Voidcendence
+s(303020)/i(263813),	-- Handguards of Voidcendence
+s(303021)/i(263814),	-- Halo of Voidcendence
+s(303022)/i(263815),	-- Leggings of Voidcendence
+s(303023)/i(263816),	-- Pauldrons of Voidcendence
+s(303024)/i(263817),	-- Belt of Voidcendence
+s(303025)/i(263818),	-- Cloak of Voidcendence
+s(303026)/i(263819),	-- Bindings of Voidcendence
+s(303027)/i(263820),	-- Blouse of Voidcendence
+s(303028)/i(263821),	-- Voidfang Chestpiece
+s(303029)/i(263823),	-- Voidfang Boots
+s(303030)/i(263824),	-- Voidfang Gloves
+s(303031)/i(263825),	-- Voidfang Hood
+s(303032)/i(263826),	-- Voidfang Pants
+s(303033)/i(263827),	-- Voidfang Spaulders
+s(303034)/i(263828),	-- Voidfang Belt
+s(303035)/i(263829),	-- Voidfang Cloak
+s(303036)/i(263830),	-- Voidfang Bracers
+s(303037)/i(263831),	-- Breastplate of Void Storms
+s(303038)/i(263832),	-- Sabatons of Void Storms
+s(303039)/i(263833),	-- Gauntlets of Void Storms
+s(303040)/i(263834),	-- Helmet of Void Storms
+s(303041)/i(263835),	-- Kilt of Void Storms
+s(303042)/i(263836),	-- Epaulets of Void Storms
+s(303043)/i(263837),	-- Belt of Void Storms
+s(303044)/i(263838),	-- Cloak of Void Storms
+s(303045)/i(263839),	-- Bracers of Void Storms
+s(303046)/i(263840),	-- Greaves of Void Storms
+s(303047)/i(263841),	-- Void Nemesis' Robes
+s(303048)/i(263842),	-- Void Nemesis' Boots
+s(303049)/i(263843),	-- Void Nemesis' Gloves
+s(303050)/i(263844),	-- Void Nemesis' Skullcap
+s(303051)/i(263845),	-- Void Nemesis' Leggings
+s(303052)/i(263846),	-- Void Nemesis' Spaulders
+s(303053)/i(263847),	-- Void Nemesis' Belt
+s(303054)/i(263848),	-- Void Nemesis' Cloak
+s(303055)/i(263849),	-- Void Nemesis' Bracers
+s(303056)/i(263850),	-- Void Nemesis' Blouse
+s(303057)/i(263851),	-- Breastplate of Voidwrath
+s(303058)/i(263852),	-- Sabatons of Voidwrath
+s(303059)/i(263853),	-- Gauntlets of Voidwrath
+s(303060)/i(263854),	-- Helm of Voidwrath
+s(303061)/i(263855),	-- Legplates of Voidwrath
+s(303062)/i(263856),	-- Pauldrons of Voidwrath
+s(303063)/i(263857),	-- Waistband of Voidwrath
+s(303064)/i(263858),	-- Cloak of Voidwrath
+s(303065)/i(263860),	-- Bracelets of Voidwrath
+s(303066)/i(263894),	-- Void-Touched Rifle
+s(303067)/i(263898),	-- Void-Touched Fang
+s(303068)/i(263899),	--
+s(303069)/i(263900),	-- Void-Touched Gutter
+s(303070)/i(263901),	-- Void-Touched Sacrificial Knife
+s(303071)/i(263902),	-- Void-Touched Twinblade
+s(303072)/i(263903),	-- Void-Touched Basher
+s(303073)/i(263904),	-- Void-Touched Gavel
+s(303074)/i(263905),	-- Void-Touched Apprentice's Gavel
+s(303075)/i(263906),	-- Void-Touched Bulwark
+s(303076)/i(263907),	-- Void-Touched Spade
+s(303077)/i(263908),	-- Void-Touched Poleaxe
+s(303078)/i(263909),	-- Void-Touched Sunfury Stave
+s(303079)/i(263910),	-- Void-Touched Beacon Staff
+s(303080)/i(263911),	-- Void-Touched Battle Baton
+s(303081)/i(263912),	-- Void-Touched Magister's Baton
+s(303082)/i(263913),	-- Void-Touched Smasher
+s(303083)/i(263914),	-- Void-Touched Hammer
+s(303084)/i(263915),	-- Void-Touched Torch
+s(303085)/i(263916),	-- Void-Touched Tome
+s(303086)/i(263917),	-- Void-Touched Flaredblade
+s(303087)/i(263918),	-- Void-Touched Guard's Blade
+s(303088)/i(263919),	-- Void-Touched Magister's Sword
+s(303089)/i(263920),	-- Void-Touched Dueling Blade
+s(303090)/i(263921),	-- Void-Touched Sunfury Blade
+s(303091)/i(263922),	-- Void-Touched Mageblade
+s(303092)/i(263923),	-- Void-Touched Greatblade
+s(303094)/i(263924),	-- Void-Touched Greatbow
+s(303097)/i(263925),	-- Void-Touched Foci
+s(303098)/i(263926),	-- Void-Touched Greatwand
+s(303100)/i(263927),	-- Void-Touched Glaiveblade
+s(303191)/i(263941),	-- Void-Touched Rifle
+s(303192)/i(263942),	-- Void-Touched Fang
+s(303193)/i(263943),	-- Void-Touched Gutter
+s(303194)/i(263944),	--
+s(303195)/i(263945),	--
+s(303196)/i(263946),	-- Void-Touched Basher
+s(303197)/i(263947),	--
+s(303198)/i(263948),	--
+s(303199)/i(263949),	-- Void-Touched Bulwark
+s(303200)/i(263950),	-- Void-Touched Spade
+s(303201)/i(263951),	--
+s(303202)/i(263952),	-- Void-Touched Sunfury Stave
+s(303203)/i(263953),	--
+s(303204)/i(263954),	-- Void-Touched Battle Baton
+s(303205)/i(263955),	--
+s(303206)/i(263956),	-- Void-Touched Smasher
+s(303207)/i(263957),	--
+s(303208)/i(263958),	--
+s(303209)/i(263959),	-- Void-Touched Tome
+s(303210)/i(263960),	-- Void-Touched Flaredblade
+s(303211)/i(263961),	--
+s(303212)/i(263962),	--
+s(303213)/i(263963),	-- Void-Touched Dueling Blade
+s(303214)/i(263964),	--
+s(303215)/i(263965),	--
+s(303216)/i(263966),	-- Void-Touched Greatblade
+s(303218)/i(263967),	-- Void-Touched Greatbow
+s(303221)/i(263968),	-- Void-Touched Foci
+s(303222)/i(263969),	-- Void-Touched Greatwand
+s(303224)/i(263970),	-- Void-Touched Glaiveblade
+s(303381)/i(264514),	--
+s(304240)/i(267043),	--
+s(304259)/i(267280),	-- Darkspear Dash Tabard
+s(304561)/i(268424),	-- Gilneas Loyalist Bowler
+s(304562)/i(268425),	-- Gilneas Loyalist Coat
+s(304563)/i(268426),	-- Gilneas Loyalist Belt
+s(304564)/i(268427),	-- Gilneas Loyalist Pants
+s(304565)/i(268428),	-- Gilneas Loyalist Boots
+s(304566)/i(268429),	-- Gilneas Loyalist Bracer
+s(304567)/i(268432),	-- Emberstone Loyalist Bowler
+s(304568)/i(268433),	-- Emberstone Loyalist Coat
+s(304569)/i(268434),	-- Emberstone Loyalist Belt
+s(304570)/i(268435),	-- Emberstone Loyalist Pants
+s(304571)/i(268436),	-- Emberstone Loyalist Boots
+s(304572)/i(268437),	-- Emberstone Loyalist Bracer
+s(304573)/i(268439),	-- Pyrewood Rebel Bowler
+s(304574)/i(268440),	-- Pyrewood Rebel Coat
+s(304575)/i(268441),	-- Pyrewood Rebel Belt
+s(304576)/i(268442),	-- Pyrewood Rebel Pants
+s(304577)/i(268443),	-- Pyrewood Rebel Boots
+s(304578)/i(268444),	-- Pyrewood Rebel Bracer
+s(304579)/i(268446),	-- Ambermill Rebel Bowler
+s(304580)/i(268447),	-- Ambermill Rebel Coat
+s(304581)/i(268448),	-- Ambermill Rebel Belt
+s(304582)/i(268449),	-- Ambermill Rebel Pants
+s(304583)/i(268450),	-- Ambermill Rebel Boots
+s(304584)/i(268451),	-- Ambermill Rebel Bracer
+s(304589)/i(268491),	-- Ambermill Rebel Bonecracker
+s(304590)/i(268492),	-- Pyrewood Rebel Bonecracker
+s(304591)/i(268493),	-- Emberstone Loyalist Bonecracker
+s(304592)/i(268494),	-- Gilneas Loyalist Bonecracker
+s(304593)/i(268495),	-- Ambermill Rebel Knuckleblades
+s(304594)/i(268496),	-- Pyrewood Rebel Knuckleblades
+s(304595)/i(268497),	-- Emberstone Loyalist Knuckleblades
+s(304596)/i(268498),	-- Gilneas Loyalist Knuckleblades
+s(304597)/i(268511),	-- Ambermill Rebel Boltshot
+s(304598)/i(268512),	-- Pyrewood Rebel Boltshot
+s(304599)/i(268513),	-- Emberstone Loyalist Boltshot
+s(304600)/i(268514),	-- Gilneas Loyalist Boltshot
+s(304605)/i(268592),	-- Blue Sunwalker Breastplate
+s(304606)/i(268593),	-- Blue Sunwalker Cloak
+s(304607)/i(268594),	-- Blue Sunwalker Gauntlets
+s(304608)/i(268595),	-- Blue Sunwalker Boots
+s(304609)/i(268596),	-- Blue Sunwalker Legplates
+s(304610)/i(268597),	-- Blue Sunwalker Pants
+s(304611)/i(268598),	-- Blue Sunwalker Girdle
+s(304612)/i(268599),	-- Blue Sunwalker Band
+s(304613)/i(268600),	-- Blue Sunwalker Eagle Mantle
+s(304614)/i(268601),	-- Blue Sunwalker Wing Mantle
+s(304615)/i(268602),	-- Blue Sunwalker Helmet
+s(304616)/i(268603),	-- Blue Sunwalker Tunic
+s(304627)/i(268681),	-- Duskrunner's Painted Hauberk
+s(304628)/i(268682),	-- Duskrunner's Painted Wrap
+s(304629)/i(268683),	-- Duskrunner's Painted Gauntlets
+s(304630)/i(268684),	-- Duskrunner's Painted Striders
+s(304631)/i(268685),	-- Duskrunner's Painted Greaves
+s(304632)/i(268686),	-- Duskrunner's Painted Leggings
+s(304633)/i(268687),	-- Duskrunner's Painted Sash
+s(304634)/i(268688),	-- Duskrunner's Painted Girdle
+s(304635)/i(268689),	-- Duskrunner's Painted Mantle
+s(304636)/i(268690),	-- Duskrunner's Painted Wings
+s(304637)/i(268691),	-- Duskrunner's Painted Mask
+s(304638)/i(268692),	-- Duskrunner's Painted Tunic
+s(304639)/i(268731),	-- Sunbringer's Painted Hauberk
+s(304640)/i(268732),	-- Sunbringer's Painted Wrap
+s(304641)/i(268733),	-- Sunbringer's Painted Gauntlets
+s(304642)/i(268734),	-- Sunbringer's Painted Striders
+s(304643)/i(268735),	-- Sunbringer's Painted Greaves
+s(304644)/i(268736),	-- Sunbringer's Painted Leggings
+s(304645)/i(268737),	-- Sunbringer's Painted Sash
+s(304646)/i(268738),	-- Sunbringer's Painted Girdle
+s(304647)/i(268739),	-- Sunbringer's Painted Mantle
+s(304648)/i(268740),	-- Sunbringer's Painted Wings
+s(304649)/i(268741),	-- Sunbringer's Painted Mask
+s(304650)/i(268742),	-- Sunbringer's Painted Tunic
+s(304651)/i(268744),	-- Ambermill Rebel Leggings
+s(304652)/i(268745),	-- Pyrewood Rebel Leggings
+s(304653)/i(268746),	-- Emberstone Loyalist Leggings
+s(304654)/i(268747),	-- Gilneas Loyalist Leggings
+s(304658)/i(268781),	-- Dawnchaser's Painted Hauberk
+s(304659)/i(268782),	-- Dawnchaser's Painted Wrap
+s(304660)/i(268783),	-- Dawnchaser's Painted Gauntlets
+s(304661)/i(268784),	-- Dawnchaser's Painted Striders
+s(304662)/i(268785),	-- Dawnchaser's Painted Greaves
+s(304663)/i(268786),	-- Dawnchaser's Painted Leggings
+s(304664)/i(268787),	-- Dawnchaser's Painted Sash
+s(304665)/i(268788),	-- Dawnchaser's Painted Girdle
+s(304666)/i(268789),	-- Dawnchaser's Painted Mantle
+s(304667)/i(268790),	-- Dawnchaser's Painted Wings
+s(304668)/i(268791),	-- Dawnchaser's Painted Mask
+s(304669)/i(268792),	-- Dawnchaser's Painted Tunic
+s(304670)/i(268806),	-- Scarred Tabard of Gilneas
+s(304672)/i(268830),	-- Stylish Flowered Brown Cap
+s(304673)/i(268831),	-- Stylish Black Cap
+s(304674)/i(268832),	-- Stylish Brown Top Hat
+s(304708)/i(268884),	-- Blue Sunwalker Totem
+s(304709)/i(268885),	-- Blue Sunwalker Sun Totem
+s(304710)/i(268886),	-- Duskrunner's Painted Sun-Totem
+s(304711)/i(268887),	-- Duskrunner's Painted Sun-Beacon
+s(304712)/i(268888),	-- Sunbringer's Painted Sun-Totem
+s(304713)/i(268889),	-- Sunbringer's Painted Sun-Beacon
+s(304714)/i(268890),	-- White Sunwalker Totem
+s(304715)/i(268891),	-- White Sunwalker Sun Totem
+s(304716)/i(268896),	-- Blue Sunwalker Flamebrand
+s(304717)/i(268897),	-- Duskrunner's Flamebrand
+s(304718)/i(268898),	-- Sunbringer's Flamebrand
+s(304719)/i(268899),	-- Dawnchaser's Flamebrand
+s(304720)/i(268900),	-- Blue Sunwalker Torchblade
+s(304721)/i(268901),	-- Duskrunner's Torchblade
+s(304722)/i(268902),	-- Sunbringer's Torchblade
+s(304723)/i(268903),	-- Dawnchaser's Torchblade
+s(304724)/i(268904),	-- Blue Sunwalker Totemic Greataxe
+s(304725)/i(268905),	-- Duskrunner's Totemic Greataxe
+s(304726)/i(268906),	-- Sunbringer's Totemic Greataxe
+s(304727)/i(268907),	-- Dawnchaser Totemic Greataxe
+s(304728)/i(268908),	-- Blue Sunwalker Totemic Edge
+s(304729)/i(268909),	-- Duskrunner's Totemic Edge
+s(304730)/i(268910),	-- Sunbringer's Totemic Edge
+s(304731)/i(268911),	-- Dawnchaser Totemic Edge
+s(305024)/i(270279),	-- Crown of Midnight Springflowers
+s(305025)/i(270280),	-- Crown of Azure Springflowers
+s(305026)/i(270281),	-- Crown of Sepia Springflowers
+s(305027)/i(270283),	-- Crown of Grassy Springflowers
+s(305028)/i(270284),	-- Crown of Cloudy Springflowers
+s(305029)/i(270285),	-- Crown of Deep Springflowers
+s(305030)/i(270286),	-- Crown of Camo Springflowers
+s(305031)/i(270287),	-- Crown of Brick Springflowers
+s(305032)/i(270288),	-- Crown of Lively Springflowers
+s(305033)/i(270289),	-- Crown of Faded Springflowers
+s(305034)/i(270290),	-- Crown of Carrot Springflowers
+s(305035)/i(270291),	-- Crown of Rosy Springflowers
+s(305036)/i(270292),	-- Crown of Plum Springflowers
+s(305037)/i(270293),	-- Crown of Crimson Springflowers
+s(305038)/i(270294),	-- Crown of Violet Springflowers
+s(305039)/i(270295),	-- Crown of Aquatic Springflowers
+s(305040)/i(270296),	-- Crown of Snowy Springflowers
+s(305041)/i(270297),	-- Crown of Sunny Springflowers
+s(306248)/i(270935),	-- Ranger Recruit's Sabatons
+s(306249)/i(270936),	-- Ranger Recruit's Robes
+s(306250)/i(270937),	-- Ranger Recruit's Breastplate
+s(306251)/i(270938),	-- Ranger Recruit's Chainmail
+s(306252)/i(270939),	-- Ranger Recruit's Jerkin
+s(306253)/i(270940),	-- Ranger Recruit's Gloves
+s(306254)/i(270941),	-- Ranger Recruit's Gauntlets
+s(306255)/i(270942),	-- Ranger Recruit's Mitts
+s(306256)/i(270943),	-- Ranger Recruit's Grips
+s(306257)/i(270944),	-- Ranger Recruit's Crown
+s(306258)/i(270945),	-- Ranger Recruit's Helmet
+s(306259)/i(270946),	-- Ranger Recruit's Hood
+s(306260)/i(270947),	-- Ranger Recruit's Legguards
+s(306261)/i(270948),	-- Ranger Recruit's Pants
+s(306262)/i(270949),	-- Ranger Recruit's Breeches
+s(306263)/i(270950),	-- Ranger Recruit's Tights
+s(306264)/i(270951),	-- Ranger Recruit's Shoulderpads
+s(306265)/i(270952),	-- Ranger Recruit's Pauldrons
+s(306266)/i(270953),	-- Ranger Recruit's Mantle
+s(306267)/i(270954),	-- Ranger Recruit's Spaulders
+s(306268)/i(270955),	-- Ranger Recruit's Girdle
+s(306269)/i(270956),	-- Ranger Recruit's Sash
+s(306270)/i(270957),	-- Ranger Recruit's Waistguard
+s(306271)/i(270958),	-- Ranger Recruit's Belt
+s(306272)/i(270959),	-- Ranger Recruit's Cuffs
+s(306273)/i(270960),	-- Ranger Recruit's Vambraces
+s(306274)/i(270961),	-- Ranger Recruit's Wristguards
+s(306275)/i(270962),	-- Ranger Recruit's Wraps
+s(306276)/i(270966),	-- Ranger Recruit's Cloak
+s(306277)/i(270967),	-- Ranger Recruit's Helm
+s(306278)/i(270968),	-- Ranger Recruit's Slippers
+s(306279)/i(270969),	-- Ranger Recruit's Boots
+s(306280)/i(270970),	-- Ranger Recruit's Treads
+s(306281)/i(270971),	--
+s(306282)/i(270972),	-- Ranger Recruit's Mace
+s(306283)/i(270973),	-- Ranger Recruit's Skullcracker
+s(306284)/i(270974),	-- Ranger Recruit's Blade
+s(306285)/i(270975),	-- Ranger Recruit's Acolyte's Blade
+s(306286)/i(270976),	-- Ranger Recruit's Glaive
+s(306287)/i(270977),	-- Ranger Recruit's Polearm
+s(306288)/i(270978),	-- Ranger Recruit's Shield
+s(306289)/i(270979),	-- Ranger Recruit's Longbow
+s(306290)/i(270980),	--
+s(306291)/i(270981),	-- Ranger Recruit's Fetish
+s(306292)/i(270982),	-- Ranger Recruit's Stiletto
+s(306293)/i(270983),	-- Ranger Recruit's Battle Stave
+s(306294)/i(270984),	-- Ranger Recruit's Staff
+s(306295)/i(270985),	-- Ranger Recruit's Cleaver
+s(306296)/i(270991),	-- Sunfury Great Bulwark
+s(306297)/i(270992),	-- Amani Hex Crest
+s(306298)/i(270993),	-- Twilight Blade Barrier
+s(306299)/i(270994),	-- Deepsea Behemoth Scale
+s(306300)/i(270995),	-- Sin'dorei Crystal Focus
+s(306301)/i(270996),	-- Hex-Horn Buckler
+s(306302)/i(270997),	-- Blood Oath Tome
+s(306303)/i(270998),	-- Fetish of the Vanquished Foe
+s(306304)/i(270999),	-- Forest Berserker's Hatchet
+s(306305)/i(271000),	-- Twilight Gut Ripper
+s(306306)/i(271001),	-- Greataxe of the Forest Tribe
+s(306307)/i(271002),	-- Twilight Berserker's Cleaver
+s(306308)/i(271003),	-- Sunfury Phoenix Bow
+s(306309)/i(271004),	-- Deepcrawler Recurve Bow
+s(306310)/i(271005),	-- Violet Thalassian Greatbow
+s(306311)/i(271006),	-- Forest Stalker's Bow
+s(306312)/i(271007),	-- Twilight Ritualist's Stiletto
+s(306313)/i(271008),	-- Cultist's Sacrificial Kris
+s(306314)/i(271009),	-- Daggerspine Trident Tine
+s(306315)/i(271010),	-- Glistening Sin'dorei Twinblade
+s(306316)/i(271011),	-- Frostdeep Spider's Fang
+s(306317)/i(271012),	-- Forest Tiki Twinblade
+s(306318)/i(271013),	-- Adherent's Wriggling Backstabber
+s(306319)/i(271014),	-- Twilight Scout's Sticher
+s(306320)/i(271015),	-- Deep Fathom Claw
+s(306321)/i(271016),	-- Golden Phoenix's Beak
+s(306322)/i(271017),	-- Twilight Slug Belcher
+s(306323)/i(271018),	-- Deepcrawler Pincher
+s(306324)/i(271019),	-- Sin'dorei Magister's Gavel
+s(306325)/i(271020),	-- Phoenix Wing Basher
+s(306326)/i(271021),	-- Loa Battle Font
+s(306327)/i(271022),	-- Ritual Overseer's Mace
+s(306328)/i(271023),	-- Swingable Piranha
+s(306329)/i(271024),	-- Diseased Piranha Fetish
+s(306330)/i(271025),	-- Twilight Guardian's Maul
+s(306331)/i(271026),	-- Deeplurk Myrmidon's Trident
+s(306332)/i(271027),	-- Deeplurk Battle Trident
+s(306333)/i(271028),	-- Amani War Spear
+s(306334)/i(271029),	-- Fathom-Coral Lightstaff
+s(306335)/i(271030),	-- Living Stave of the Deepdweller
+s(306336)/i(271031),	-- Onyx Bloodknight Stave
+s(306337)/i(271032),	-- Tiki-Bearer's Ritual Staff
+s(306338)/i(271033),	-- Skull-Bearer's Ritual Stave
+s(306339)/i(271034),	-- Ritual Overseer's Polestaff
+s(306340)/i(271035),	-- Deeplurk Sorceress' Stave
+s(306341)/i(271036),	-- Forest Shaman's Voodoo Staff
+s(306342)/i(271037),	-- Battle Shaman's Ritual Staff
+s(306343)/i(271038),	-- Ornate Blade of the Royal Guard
+s(306344)/i(271039),	-- Curved Blade of the Drained Loa
+s(306345)/i(271040),	-- Twilight Captain's Short Sword
+s(306346)/i(271041),	-- Blade of the Deeplurk Honorguard
+s(306347)/i(271042),	-- Myrmidon's Cutlass
+s(306348)/i(271043),	-- Twilight Assassin's Glaive
+s(306349)/i(271044),	-- Deeplurk Shock Wand
+s(306350)/i(271045),	-- Crystal Focus Spellslinger
+s(306351)/i(271046),	-- Voodoo Hex Stick
+s(306352)/i(271047),	-- Spell-Infused Wriggling Tentacles
+s(306353)/i(271048),	-- Wriggling Tentacle Fetish
+s(306354)/i(271049),	-- Ritual Weaver's Spellstick
+s(306355)/i(271050),	-- Forest Hunter's Quiver
+s(307698)/i(271814),	-- Spring Dagger-Tined Rake
+s(307833)/i(272144),	-- Onyx Bloodknight Bladestaff
+s(307924)/i(272316),	-- Spellbreakers Bladelance
+s(307925)/i(272317),	-- Spellbreakers Phoenixglaive
+s(307926)/i(272318),	-- Spellbreaker Phoenixblade
+s(307927)/i(272320),	-- Nullbeacon Rift Channeler
+s(307928)/i(272321),	-- Arcane Ranger's Spellbow
+s(307937)/i(272334),	--
+s(307938)/i(272336),	-- Nullbeacon Rift Smasher
+s(307939)/i(272337),	-- Mage Guard's Spellblade
+s(307940)/i(272338),	-- Mage Guard's Spellsteel
+s(308376)/i(272959),	--
+s(308377)/i(272960),	-- Spellbreakers Shieldwall
+s(308378)/i(272961),	-- Spellbreakers Bladestaff

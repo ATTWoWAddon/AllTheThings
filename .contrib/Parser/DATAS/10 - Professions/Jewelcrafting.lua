@@ -866,8 +866,14 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		n(QUESTS, {
 			q(93694, {	-- Jewelcrafting Services Requested
 				["sourceQuests"] = { 93729 },	-- Crafting Orders: Jewelcrafting
-				["provider"] = { "n", 243345 },	-- Amin <Jewelcrafting Trainer>
-				["coord"] = { 48.2, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["qgs"] = {
+					243345,	-- Amin <Jewelcrafting Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 48.2, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
 				["isWeekly"] = true,
 				["groups"] = {
 					i(263458),	-- Thalassian Jewelcrafter's Notebook

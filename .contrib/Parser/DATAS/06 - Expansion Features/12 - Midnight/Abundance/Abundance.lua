@@ -70,10 +70,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			n(QUESTS, {
 				q(89507, {	-- Abundant Offerings
 					["qgs"] = {
+						257633,	-- Chel the Chip [Eversong Woods]
 						241928,	-- Chel the Chip [Zul'Aman]
 						257632,	-- Chel the Chip [Voidstorm]
 					},
 					["coords"] = {
+						{ 56.7, 65.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 						{ 31.6, 26.7, MAP.MIDNIGHT.ZULAMAN },
 						{ 38.9, 53.2, MAP.MIDNIGHT.VOIDSTORM },
 					},

@@ -11,6 +11,7 @@ CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST = createHeader({
 	},
 	description = {
 		en = "If the following are sorted somewhere, please delete them from this list. Thanks.",
+		cn = "如果以下内容已在别处归类整理，请将它们从本清单中删除。谢谢",
 	},
 });
 root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {

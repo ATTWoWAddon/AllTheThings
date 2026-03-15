@@ -2865,7 +2865,12 @@ s(165047,22713,{b=1,crs={14507,14509,14510,14515,14517},f=23,lvl=60,q=3,u=1609})
 prof(356,{u=1609,g={
 i(19975,{providers={{"o",180369}},q=1,u=1609})}}),
 prof(182,{u=1609,g={
-i(19726,{cost={{"i",19727,1}},q=2,u=1609})}}),
+i(19726,{cost={{"i",19727,1}},providers={{"o",180164},{"o",180165},{"o",180166},{"o",180167},{"o",180168}},q=2,u=1609}),
+o(180168,{learnedAt=270,u=1609}),
+o(180167,{learnedAt=260,u=1609}),
+o(180166,{learnedAt=280,u=1609}),
+o(180165,{learnedAt=210,u=1609}),
+o(180164,{learnedAt=230,u=1609})}}),
 prof(186,{u=1609,g={
 i(19774,{providers={{"o",180215}},q=2,u=1609})}}),
 prof(393,{u=1609,g={
@@ -4146,11 +4151,11 @@ s(164526,21360,{b=1,c={4},f=5,lvl=60,q=4,u=2})}}),
 q(8641,{c={4},cost={{"i",20863,5},{"i",20860,5},{"i",20874,2},{"i",20928,1}},minReputation={910,0},qgs={15502},repeatable=1,u=2,g={
 s(164527,21361,{b=1,c={4},f=5,lvl=60,q=4,u=2})}}),
 q(8638,{c={4},cost={{"i",20865,5},{"i",20861,5},{"i",20881,2},{"i",20929,1}},minReputation={910,9000},qgs={15504},repeatable=1,u=2,g={
-s(164529,21364,{b=1,c={4},f=5,lvl=60,q=4,races={1,2,3,4,5,6,7,8},u=2})}}),
+s(164529,21364,{b=1,c={4},f=5,lvl=60,q=4,u=2})}}),
 q(8640,{c={4},cost={{"i",20862,5},{"i",20858,5},{"i",20875,2},{"i",20927,1}},minReputation={910,3000},qgs={15503},repeatable=1,u=2,g={
 s(164528,21362,{b=1,c={4},f=5,lvl=60,q=4,u=2})}}),
 q(8637,{c={4},cost={{"i",20864,5},{"i",20862,5},{"i",20881,2},{"i",20928,1}},minReputation={910,0},qgs={15503},repeatable=1,u=2,g={
-s(164525,21359,{b=1,c={4},f=5,lvl=60,q=4,races={1,2,3,4,5,6,7,8},u=2})}})}}),
+s(164525,21359,{b=1,c={4},f=5,lvl=60,q=4,u=2})}})}}),
 cl(7,{rwp=11505,u=2,g={
 q(8623,{c={7},cost={{"i",20862,5},{"i",20858,5},{"i",20878,2},{"i",20930,1}},minReputation={910,3000},qgs={15502},repeatable=1,u=2,g={
 s(164535,21372,{b=1,c={7},f=6,lvl=60,q=4,u=2})}}),
@@ -4664,8 +4669,8 @@ s(231144,233679,{b=1,c={5},f=4,lvl=60,q=4,u=1610}),
 s(231148,233683,{b=1,c={5},f=4,lvl=60,q=4,u=1610})}}),
 cl(4,{u=1610,g={
 s(230947,233390,{b=1,c={4},f=5,lvl=60,q=4,u=1610}),
-s(230948,233391,{b=1,c={4},f=5,lvl=60,q=4,races={1,2,3,4,5,6,7,8},u=1610}),
-s(231125,233660,{b=1,c={4},f=5,lvl=60,q=4,races={1,2,3,4,5,6,7,8},u=1610}),
+s(230948,233391,{b=1,c={4},f=5,lvl=60,q=4,u=1610}),
+s(231125,233660,{b=1,c={4},f=5,lvl=60,q=4,u=1610}),
 s(231127,233662,{b=1,c={4},f=5,lvl=60,q=4,u=1610})}}),
 cl(7,{u=1610,g={
 s(231166,233701,{b=1,c={7},f=6,lvl=60,q=4,u=1610}),
@@ -4703,8 +4708,8 @@ cl(5,{u=1610,g={
 s(230952,233395,{b=1,c={5},f=4,lvl=60,q=4,u=1610}),
 s(231145,233680,{b=1,c={5},f=4,lvl=60,q=4,u=1610})}}),
 cl(4,{u=1610,g={
-s(230946,233389,{b=1,c={4},f=5,lvl=60,q=4,races={1,2,3,4,5,6,7,8},u=1610}),
-s(231124,233659,{b=1,c={4},f=5,lvl=60,q=4,races={1,2,3,4,5,6,7,8},u=1610})}}),
+s(230946,233389,{b=1,c={4},f=5,lvl=60,q=4,u=1610}),
+s(231124,233659,{b=1,c={4},f=5,lvl=60,q=4,u=1610})}}),
 cl(7,{u=1610,g={
 s(231164,233699,{b=1,c={7},f=6,lvl=60,q=4,u=1610}),
 s(231169,233704,{b=1,c={7},f=6,lvl=60,q=4,u=1610}),
@@ -6543,7 +6548,10 @@ qo(1,{crs={4809,4810,4811,4812,4813,4814},providers={{"i",5879}},u=2}),
 s(158746,7000,{b=1,f=5,q=2,u=2}),
 s(158745,6998,{b=1,f=4,q=2,u=2})}})}}),
 h(-56,{u=2,g={
-o(19018,{u=2})}}),
+o(19018,{u=2,g={
+s(156647,2143,{f=5,lvl=22,q=1,u=2}),
+i(5500,{q=2,u=2}),
+i(5504,{q=1,u=2})}})}}),
 n(4887,{u=2,g={
 s(158718,6907,{b=1,f=6,lvl=20,q=3,u=2}),
 s(158719,6908,{b=1,f=4,lvl=20,q=2,u=2})}}),
@@ -7920,7 +7928,7 @@ q(7492,{coords={
 [1456]={{41.4,54.2}},
 [1458]={{69.2,49.2}}},isBreadcrumb=1,lvl=54,maps={1444},nextQuests={7489},qgs={10879,10880,10881},r=1,rwp=40003,u=1608}),
 q(5527,{coords={
-[1450]={{51.7,45.1}}},lvl=56,maps={1451},qgs={11801},rwp=40003,u=1608,g={
+[1450]={{51.7,45.1}}},description="The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",lvl=56,maps={1451},qgs={11801},rwp=40003,u=1608,g={
 qo(1,{coords={
 [1451]={{63.2,55.4}}},providers={{"i",22201},{"o",179565}},u=1608})}}),
 q(5526,{coords={
@@ -10979,8 +10987,19 @@ n(7057,{description="This guy spawns outside of the instance in the cave leading
 s(159309,9378,{f=21,lvl=33,q=3}),
 s(159306,9375,{f=5,lvl=33,q=3}),
 s(159312,9382,{f=5,lvl=33,q=2})}})}}),
+h(-56,{
+o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
+o(123329,{
+i(7740,{description="Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",q=1,rwp=40100})}),
 o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",g={
 i(7671,{q=1})}}),
+o(113757,{description="WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",g={
+i(7669,{q=1})}}),
+i(7733,{cost={{"i",7741,1},{"i",7740,1}},description="Use this on the Keystone in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",q=1,rwp=40100}),
+o(142088,{description="Located in the same room as Galgann Firehammer.",g={
+i(5824,{q=1})}}),
+o(131474,{description="Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",modelScale=3,g={
+i(6064,{q=1})}})}),
 n(6906,{description="This dwarf is named after the French Archiologist, René Belloq, from the Raiders of the Lost Ark.",r=1,g={
 i(9399,{f=37,lvl=35,q=2}),
 s(159331,9401,{b=1,f=25,lvl=38,q=3}),
@@ -10993,12 +11012,9 @@ n(6908,{r=1,g={
 s(159334,9404,{b=1,f=8,lvl=37,q=3}),
 s(159333,9403,{f=8,lvl=35,q=1}),
 i(1177,{f=55,q=1})}}),
-o(123329,{
-i(7740,{description="Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",q=1,rwp=40100})}),
 n(6912,{
 i(7886,{q=1})}),
 e(467,{npcID=6910,g={
-i(7733,{cost={{"i",7741,1},{"i",7740,1}},description="Use this on the keyhole looking gizmo in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",q=1,rwp=40100}),
 i(7741,{description="Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",q=1,rwp=40100}),
 s(199519,217307,{b=1,f=5,lvl=36,q=3,u=1606}),
 s(199517,217305,{b=1,f=6,lvl=35,q=3,u=1606}),
@@ -11008,12 +11024,15 @@ s(159319,9389,{b=1,f=5,lvl=36,q=2,rwp=11501,u=2}),
 s(159318,9388,{b=1,f=6,lvl=35,q=2,rwp=11501,u=2}),
 s(159320,9390,{b=1,f=4,lvl=35,q=2,rwp=11501,u=2}),
 s(159317,9387,{b=1,f=7,filterForRWP=6,lvl=40,q=2,rwp=11501,u=2})}}),
-e(469,{cost={{"i",7733,1}},npcID=7228,g={
+o(124371,{coords={
+[230]={{50.7,73.9}}},cost={{"i",7733,1}},g={
+qo(1,{questID=2240,r=2,rwp=40003}),
+e(469,{npcID=7228,g={
 s(200391,217704,{b=1,f=28,lvl=37,q=3,u=1606}),
 s(159338,9408,{b=1,f=28,lvl=37,q=3,rwp=11501,u=2}),
 s(159339,9409,{b=1,f=6,lvl=37,q=3}),
 s(199515,217303,{b=1,f=4,lvl=35,q=3,u=1606}),
-s(159337,9407,{b=1,f=4,lvl=35,q=3,rwp=11501,u=2})}}),
+s(159337,9407,{b=1,f=4,lvl=35,q=3,rwp=11501,u=2})}})}}),
 e(748,{npcID=7023,g={
 i(8053,{q=1})}}),
 e(470,{npcID=7206,g={
@@ -11024,10 +11043,6 @@ s(159348,9419,{b=1,f=23,lvl=41,q=2}),
 s(159342,9412,{b=1,f=31,lvl=42,q=3}),
 s(160251,11310,{b=1,f=4,lvl=42,q=3}),
 s(160252,11311,{b=1,f=3,lvl=41,q=2})}}),
-o(113757,{description="WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",g={
-i(7671,{q=1})}}),
-o(142088,{description="Located in the same room as Galgann Firehammer.",g={
-i(5824,{q=1})}}),
 e(472,{npcID=4854,g={
 i(7670,{q=1}),
 s(219958,223536,{b=1,f=29,lvl=42,q=3,u=1606}),
@@ -11040,12 +11055,10 @@ ach(638),
 i(7672,{q=1}),
 s(159347,9418,{b=1,f=26,lvl=44,q=3}),
 s(159343,9413,{b=1,f=24,lvl=44,q=3}),
-i(11118,{b=1,f=52,lvl=42,q=3})}}),
-o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
-o(131474,{description="Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",modelScale=3,g={
-i(6064,{q=1})}})}}),
+i(11118,{b=1,f=52,lvl=42,q=3})}})}}),
 inst(240,{coords={
-[1413]={{45.9,35.7}}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,savedInstanceID=43,["zone-text-areaID"]=718,["zone-text-names"]={"The Wailing Caverns","Las Cuevas de los Lamentos"},g={
+[1413]={{45.9,35.7}},
+[1414]={{52,55.2}}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,savedInstanceID=43,["zone-text-areaID"]=718,["zone-text-names"]={"The Wailing Caverns","Las Cuevas de los Lamentos"},g={
 h(-45,{description="To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",g={
 q(1487,{coords={
 [1413]={{46,35.7}}},lvl=15,qgs={5768},rwp=40003,g={

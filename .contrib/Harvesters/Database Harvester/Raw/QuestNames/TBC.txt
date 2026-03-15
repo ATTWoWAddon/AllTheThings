@@ -444,3 +444,11 @@
 8939@@@Just Compensation
 8940@@@Just Compensation
 8941@@@Just Compensation
+95158@@@Reset Current Rating - 2v2
+95251@@@Reset Current Rating - 3v3
+95252@@@Reset Current Rating - 5v5
+95455@@@Concerted Efforts
+95457@@@For Great Honor
+95481@@@--
+95496@@@--
+95830@@@--

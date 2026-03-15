@@ -37,6 +37,16 @@ mount(1249659),	-- Sha-scarred Drake \\ Moppy the Drake (FINAL NAME TBD)
 mount(1250045),	-- Ashened Cataclysm \\ Obsidian Worldbreaker Utility (Final Name TBD)
 3.80.0.64393
 mount(1272988),	-- Inarius' Charger
+3.80.0.64859
+mount(1280400),	-- Titan-Reforged Invincible
+3.80.0.65301
+mount(124659),	-- Imperial Quilen
+mount(1283471),	-- Golden Ashened Cataclysm
+mount(1284042),	-- Thunderhoof Celestial
+mount(1284043),	-- Stormgilded Celestial
+mount(1284044),	-- Scorching Imperial Quilen
+3.80.0.65586
+mount(110051),	-- Heart of the Aspects
 
 
 
@@ -55,3 +65,10 @@ mount(1249659),	-- Sha-scarred Drake \\ Moppy the Drake (FINAL NAME TBD)
 mount(1250045),	-- Ashened Cataclysm \\ Obsidian Worldbreaker Utility (Final Name TBD)
 3.80.0.64393
 mount(1272988),	-- Inarius' Charger
+3.80.0.64859
+mount(1280400),	-- Titan-Reforged Invincible
+3.80.0.65301
+mount(1283471),	-- Golden Ashened Cataclysm
+mount(1284042),	-- Thunderhoof Celestial
+mount(1284043),	-- Stormgilded Celestial
+mount(1284044),	-- Scorching Imperial Quilen

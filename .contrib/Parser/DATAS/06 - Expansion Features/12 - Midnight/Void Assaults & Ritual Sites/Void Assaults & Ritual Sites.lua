@@ -267,7 +267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 							["minReputation"] = { FACTION_RITUAL_SITES, 6 },
 							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
 						}),
-						i(268578, {	-- Void-Touched Hawkstrider (MOUNT!)	--TODO: Item is present but the Mount Spell is NYI. MountDB entry taken from WoWhead
+						i(268578, {	-- Void-Touched Hawkstrider (MOUNT!)
 							["minReputation"] = { FACTION_RITUAL_SITES, 8 },
 							["cost"] = { { "c", FIELD_ACCOLADE, 50 } },
 						}),

@@ -20,6 +20,7 @@ CAPTAINS = createHeader({
 	},
 	lore = {
 		en = "These can be farmed infinitely by resetting the boss.",
+		cn = "这些物品可以通过重置首领无限刷取",
 	},
 });
 

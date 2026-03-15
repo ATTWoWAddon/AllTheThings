@@ -672,7 +672,7 @@ s(287430,238356,{b=1,f=4,lvl=55,q=4,u=1611}),
 s(287431,238357,{b=1,f=28,lvl=55,q=4,u=1611})}}),
 n(14686,{description="Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",maps={300},u=1611,g={
 s(287428,238353,{b=1,f=3,lvl=36,q=4,u=1611}),
-s(287429,238354,{b=1,f=27,lvl=36,q=4,races={1,2,3,4,5,6,7,8},u=1611})}}),
+s(287429,238354,{b=1,f=27,lvl=36,q=4,u=1611})}}),
 n(14695,{description="Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",maps={476},u=1611,g={
 s(287432,238358,{b=1,f=1,lvl=57,q=4,u=1611}),
 s(287433,238360,{b=1,f=8,lvl=57,q=4,u=1611}),

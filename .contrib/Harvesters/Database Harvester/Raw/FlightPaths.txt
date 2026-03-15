@@ -2894,3 +2894,6 @@
 3241@@@Quest Path 11405: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Down - Force Taxi - SJC
 12.0.1.65448
 3123@@@Masters' Perch, Voidstorm
+12.0.5.66330
+3201@@@Quest Path 11282: 12.0.5 Event - Prop Hunt - Teleporter - Upper > Lower
+3202@@@Quest Path 11283: 12.0.5 Event - Prop Hunt - Teleporter - Lower > Upper

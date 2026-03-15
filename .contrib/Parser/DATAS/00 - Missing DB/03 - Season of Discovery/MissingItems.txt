@@ -549,7 +549,6 @@ i(227687),	-- Orthas' Favorite Gold Tooth
 i(227689),	-- Partially-Digested Plate Armor
 i(227690),	-- Necrotic Runestone
 i(227724),	-- Bloodstained Commendation
-i(227730),	-- Thorium Brotherhood Contract
 1.15.3.55244
 i(227743),	-- Obsidian Power Core
 i(227745),	-- Family Heirloom
@@ -1088,21 +1087,6 @@ i(236661),	-- Bubbles' Ribcage of Ribaldy
 i(236704),	-- Frosty Wrists
 i(236705),	-- Frosty Gloves
 i(236706),	-- Frosty Vest
-i(236713),	-- Handwraps of Undead Slaying
-i(236714),	-- Gauntlets of Undead Slaying
-i(236715),	-- Handguards of Undead Slaying
-i(236717),	-- Gloves of Undead Cleansing
-i(236720),	-- Gloves of Undead Purification
-i(236723),	-- Gloves of Undead Warding
-i(236726),	-- Handwraps of Undead Cleansing
-i(236729),	-- Handwraps of Undead Purification
-i(236732),	-- Handwraps of Undead Warding
-i(236735),	-- Handguards of Undead Cleansing
-i(236738),	-- Handguards of Undead Warding
-i(236741),	-- Handguards of Undead Purification
-i(236744),	-- Gauntlets of Undead Purification
-i(236747),	-- Gauntlets of Undead Warding
-i(236750),	-- Heart of Doom
 i(236786),	-- Heart of Doom
 i(236871),	-- Creepy Censor Sensors
 i(236872),	-- Schematic: Creepy Censor Sensors
@@ -1122,27 +1106,6 @@ i(237283),	-- Talisman of Ascendance
 i(237348),	-- Monster - Sword, Short Ornate
 i(237386),	-- Wartorn Undermine Supply Crate
 i(237504),	-- Supply Shipment
-1.15.6.58725
-i(237810),	-- Weighted Consecrated Sharpening Stone
-1.15.6.58866
-i(238234),	-- Blessed Wizard Oil
-i(238241),	-- Consecrated Sharpening Stone
-i(238348),	-- The Axe of Severing
-i(238349),	-- Abomination Skin Leggings
-i(238350),	-- Scorn's Focal Dagger
-i(238351),	-- The Frozen Clutch
-i(238352),	-- Scorn's Icy Choker
-i(238353),	-- Mantle of Lady Falther'ess
-i(238354),	-- Lady Falther'ess' Finger
-i(238355),	-- Chains of the Lich
-i(238356),	-- Waistband of Balzaphon
-i(238357),	-- Staff of Balzaphon
-i(238358),	-- Blackwood's Thigh
-i(238360),	-- Lord Blackwood's Buckler
-i(238361),	-- Lord Blackwood's Blade
-i(238362),	-- Bracers of Mending
-i(238363),	-- The Shadow's Grasp
-i(238364),	-- Cloak of Revanchion
 1.15.7.59706
 i(190325),	-- Monster - Incubus Whip Mace1H
 i(237020),	-- Scarlet Insignia

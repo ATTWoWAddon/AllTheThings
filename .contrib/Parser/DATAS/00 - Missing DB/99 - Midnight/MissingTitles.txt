@@ -64,8 +64,6 @@ title(660),	-- [PH] %s
 title(661),	-- [PH] %s
 title(662),	-- [PH] %s
 title(663),	-- [PH] %s
-12.0.0.63724
-title(670),	-- %s, Teacher of Strong \\ %s, Mycelial Mentor
 12.0.0.63967
 title(681),	-- Scourgebane %s
 title(682),	-- %s, Top Student
@@ -88,3 +86,6 @@ title(761),	-- %s, World Apex
 title(762),	-- Azeroth's Top Ten Youth %s
 title(763),	-- Model of the Era %s
 title(764),	-- Big Brother %s
+12.0.5.66330
+title(749),	-- Darkspear Dasher %s
+title(766),	-- %s, Mrglgrgl of Grglmrgl

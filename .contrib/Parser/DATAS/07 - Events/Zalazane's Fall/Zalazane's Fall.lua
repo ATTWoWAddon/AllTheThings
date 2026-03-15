@@ -10,6 +10,7 @@ ZALAZANES_FALL = createHeader({
 	},
 	description = {
 		en = "Zalazane's Fall (also referred to as the Battle to reclaim the Echo Isles) was the final push by Vol'jin and the Darkspear tribe to retake the Echo Isles from the clutches of the evil Zalazane. It was a culminating event for the Horde to occur before the release of the next expansion, Cataclysm. Furthermore, all troll characters created after the liberation of the Echo Isles now have their new starting point there.",
+		cn = "扎拉赞恩的陨落（也被称作夺回回音群岛之战），是沃金与暗矛部族为从邪恶的扎拉赞恩手中夺回回音群岛而发起的最终总攻。这是在下一部资料片《大地的裂变》发布之前，部落所经历的一场重大收尾事件。此外，在回音群岛解放之后创建的所有巨魔角色，其新手出生地也变更为了这里"
 	},
 });
 

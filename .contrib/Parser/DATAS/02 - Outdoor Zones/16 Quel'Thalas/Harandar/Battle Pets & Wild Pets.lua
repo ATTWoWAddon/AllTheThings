@@ -31,6 +31,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(250147, {	-- Silkcrawler (PET!)
 				["crs"] = { 249827 },	-- Silkcrawler
 				["coords"] = {
+					{ 48.6, 58.2, MAP.MIDNIGHT.HARANDAR },
 					{ 50.5, 26.9, MAP.MIDNIGHT.HARANDAR },
 					{ 56.0, 60.9, MAP.MIDNIGHT.HARANDAR },
 					{ 71.7, 53.3, MAP.MIDNIGHT.HARANDAR },

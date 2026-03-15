@@ -88,13 +88,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 3 --
 								i(263205, {	-- Crimson Silvermoon Runner (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(263223, {	-- Gilded Sky-Blue Drapery (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(263206, {	-- Plum Eversong Rug (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 							}, {	-- RENOWN 4 --
 							}, {	-- RENOWN 5 --
@@ -176,19 +176,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 7 --
 								i(257422, {	-- Gilded Sunfury Chair (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(263228, {	-- Grand Lightwood Table (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 								i(245290, {	-- Long Silvermoon Table (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(263229, {	-- Ornate Lightwood Table (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(256040, {	-- Silvermoon Gemmed Chair (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 							}, {	-- RENOWN 8 --
 							}, {	-- RENOWN 9 --
@@ -198,10 +198,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 11 --
 								i(263232, {	-- Floating Spire Shelf (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(263234, {	-- Turning Silvermoon Archives (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 							}, {	-- RENOWN 12 --
 								i(259224, {	-- Dragonhawk Munchkin (PET!)
@@ -217,16 +217,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 15 --
 								i(257421, {	-- Bejeweled Silvermoon Chandelier (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 								i(245985, {	-- Floating Azure Lantern (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(264264, {	-- Gilded Vigil Post (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(264265, {	-- Sanctified Flame Lantern (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 							}, {	-- RENOWN 16 --
 								i(265659, {	-- Silvermoon Court Epaulets (COSMETIC!)
@@ -238,10 +238,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 18 --
 								i(249559, {	-- Reverent Sin'dorei Statue (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 								i(245941, {	-- Silvermoon Sanctum Focus (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 							}, {	-- RENOWN 19 --
 								i(257142, {	-- Fiery Dragonhawk (MOUNT!)

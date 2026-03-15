@@ -10,6 +10,7 @@ DIVERGENT = createHeader({
 	},
 	description = {
 		en = "Low Drop Chance",
+		cn = "低掉率",
 	},
 });
 

@@ -17832,3 +17832,101 @@
 62514@@@Slayer's Rise Dominance
 62516@@@The Voided Gazelle
 62517@@@Rise of the Ultradon Slayer
+12.0.1.66337
+62603@@@[DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season) (copy)
+62612@@@[DNT] Midnight Epic Edition Decor
+62620@@@Allied Race: Haranir (copy)
+12.0.5.66330
+40899@@@Allied Races: Earthen (Hidden Character Achievement)
+61792@@@T-A-G that spells "Gotcha!"
+61793@@@Deployed to the Void
+61878@@@Tagged and Bagged
+61879@@@You're It
+61880@@@It's Cold Here in This Shadow
+61881@@@Hide and Peekless
+61882@@@Null and Avoided
+61883@@@Now You Don't See Me...
+61886@@@The Whole Kit and Caboodle
+61887@@@Disguised to the Nines
+62117@@@Abyss Anglers: Finnow Chum
+62118@@@Abyss Anglers: Plecofin Bait
+62119@@@Abyss Anglers: Murkskimmer Meat
+62221@@@Abyss Anglers: Fresh Depth Nets
+62222@@@Abyss Anglers: Free Transport
+62336@@@Abundance: Contributor
+62343@@@Abyss Anglers: Myths from Beneath
+62450@@@Ritual Sites 101: An Introduction to Basic Magical Rituals
+62451@@@Ritual Sites 200: Intermediate Ritual Practices
+62452@@@Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
+62453@@@Ritual Sites 415: Applied Ritual Strategies
+62454@@@Ritual Sites 505: A Seminar in Void Ritual Nuance
+62498@@@Void Assault: Eversong
+62499@@@Void Assault: Zul'Aman
+62506@@@Abyss Anglers: Pressurized Eyeglass
+62507@@@Void Smasher: Eversong
+62508@@@Void Eradicator: Eversong
+62509@@@Void Bane: Eversong
+62510@@@Void Smasher: Zul'Aman
+62511@@@Void Eradicator: Zul'Aman
+62512@@@Void Bane: Zul'Aman
+62513@@@Outstanding in the Field
+62518@@@Cosmic Exterminator
+62519@@@[DNT] Research Sites: Collection - Bear Pet - Tracking
+62520@@@[DNT] Research Sites: Collection - Bear Mount - Tracking
+62521@@@Ritual Site: Broken Throne
+62522@@@Ritual Site: Daggerspine Point
+62523@@@Ritual Site Mastery: Broken Throne
+62524@@@Ritual Site Challenge: Broken Throne
+62525@@@Ritual Site Extreme: Broken Throne
+62526@@@Ritual Site Mastery: Daggerspine Point
+62527@@@Ritual Site Challenge: Daggerspine Point
+62528@@@Ritual Site Extreme: Daggerspine Point
+62529@@@Ritual Site Starter
+62530@@@Ritual Site Achiever
+62531@@@Ritual Site Adept
+62532@@@Ritual Site Handler
+62533@@@Ritual Site Master
+62534@@@Ritual Site Rogue: Broken Throne
+62535@@@Ritual Site Rogue: Daggerspine Point
+62536@@@Neighborhood Ritual Watch: Broken Throne
+62537@@@Neighborhood Ritual Team: Broken Throne
+62538@@@Neighborhood Ritual Watch: Daggerspine Point
+62539@@@Neighborhood Ritual Team: Daggerspine Point
+62540@@@Challenge: Tendrils
+62541@@@Challenge: Tainted Corpses
+62542@@@Challenge: Manifestations
+62543@@@Challenge: Patrols!
+62544@@@Challenge: Magical Alarm Bells
+62545@@@Challenge: Malevolent Boons
+62546@@@Challenge: Reinforced
+62547@@@Challenge: Embers
+62548@@@Expert Challenge: Tendrils
+62549@@@Expert Challenge: Tainted Corpses
+62550@@@Expert Challenge: Manifestations
+62551@@@Expert Challenge: Patrols!
+62552@@@Expert Challenge: Magical Alarm Bells
+62553@@@Expert Challenge: Malevolent Boons
+62554@@@Expert Challenge: Reinforced
+62555@@@Expert Challenge: Embers
+62556@@@Quick Reflexes
+62558@@@Patrol Ambusher
+62559@@@Malevolence Shrugged
+62560@@@Ember Still Burning
+62561@@@Reinforcement Obliteration
+62562@@@Ritual Site Disruptor
+62563@@@Void Response Team
+62568@@@Void Shmoid
+62569@@@Traces in the Dark
+62570@@@Cosmic Slayer
+62571@@@Everybody Gets One
+62572@@@Battery Bombardment
+62573@@@Air Traffic Controller
+62574@@@Accolade to Rest
+62586@@@[DNT] Research Sites: Collection - Eagle Pet - Tracking
+62587@@@[DNT] Research Sites: Collection - Eagle Mount - Tracking
+62599@@@[DNT] Research Sites: Collection - Hawkstrider Pet - Tracking
+62602@@@[DNT] Research Sites: Collection - Lynx Pet - Tracking
+62603@@@[DNT] <Hidden> Mythic+ Rating > 0 (Midnight, any season)
+62605@@@[DNT] Research Sites: Collection - Snapdragon Pet - Tracking
+62621@@@Challenging Sites
+62622@@@Ritual Renown

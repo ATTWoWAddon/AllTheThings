@@ -26,6 +26,7 @@ COMMUNITY_CLUES_HEADER = createHeader({
 	icon = [[~_.asset("Holiday_SecretsAz")]],
 	text = {
 		en = "Community Clues",
+		cn = "社区线索",
 	},
 });
 -- TODO:

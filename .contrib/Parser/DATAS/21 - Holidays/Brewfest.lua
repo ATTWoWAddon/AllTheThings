@@ -39,6 +39,7 @@ BREWFEST_BANQUET = createHeader({
 	icon = [[~_.asset("Holiday_brewfest")]],
 	text = {
 		en = "Brewfest Banquet",
+		cn = "美酒节宴会",
 	},
 });
 -- Developer note: Use the BREWFEST_TOKEN constant in place of the reward.

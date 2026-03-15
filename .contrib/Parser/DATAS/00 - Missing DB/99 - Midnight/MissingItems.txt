@@ -637,14 +637,12 @@ i(3549),	-- Unused White Leather D03 Gloves
 i(3568),	-- Deprecated Oslow's Toolbox
 i(3580),	-- Deprecated Iron Key
 i(3584),	-- Deprecated Perenolde's Head
-i(3615),	-- en's Head \\ Kurzen's Head
 i(3620),	-- Lillith's Remains
 i(3624),	-- Deprecated QDROP - Ma'ruk Wyrmscale
 i(3660),	-- s of Alterac \\ Tomes of Alterac
 i(3668),	-- Assassin's Contract
 i(3669),	-- tinous Goo \\ Gelatinous Goo
 i(3671),	-- less Skull \\ Lifeless Skull
-i(3672),	-- of Nagaz \\ Head of Nagaz
 i(3673),	-- en Arrow \\ Broken Arrow
 i(3674),	-- mposed Boot \\ Decomposed Boot
 i(3676),	-- y Ichor \\ Slimy Ichor
@@ -691,7 +689,6 @@ i(3922),	-- y's Payment \\ Shaky's Payment
 i(3929),	-- Maury's Loot
 i(3931),	-- oned Spider Fang \\ Poisoned Spider Fang
 i(3960),	-- of Water Elemental Bracers \\ Bag of Water Elemental Bracers
-i(3985),	-- grammed Sash \\ Monogrammed Sash
 i(4028),	-- le of Akiris Reeds \\ Bundle of Akiris Reeds
 i(4030),	-- Holy Relic Water
 i(4031),	-- Hallowed Relic Charm
@@ -704,7 +701,6 @@ i(4093),	-- e Basilisk Tail \\ Large Basilisk Tail
 i(4095),	-- Deprecate Snare Kit
 i(4096),	-- se Gorilla Hair \\ Coarse Gorilla Hair
 i(4097),	-- ped Gorilla Tooth \\ Chipped Gorilla Tooth
-i(4098),	-- fully Folded Note \\ Carefully Folded Note
 i(4099),	-- of Gorilla Hair \\ Tuft of Gorilla Hair
 i(4100),	-- pled Note \\ Crumpled Note
 i(4101),	-- ed Note \\ Ripped Note
@@ -806,7 +802,6 @@ i(4274),	-- Codex of Divine Escape
 i(4275),	-- Codex of Mind Rot
 i(4276),	-- Codex of Shadow Word: Fumble II
 i(4277),	-- Codex of Shadow Word: Befuddle II
-i(4278),	-- er Bloodstone Ore \\ Lesser Bloodstone Ore
 i(4279),	-- Codex of Shadow Word: Pain V
 i(4280),	-- Codex of Holy Word: Shield IV
 i(4281),	-- Codex of Shadow Protection
@@ -871,7 +866,6 @@ i(4587),	-- al Raptor Feathers \\ Tribal Raptor Feathers
 i(4588),	-- tine Raptor Skull \\ Pristine Raptor Skull
 i(4590),	-- ed Yellow Bill \\ Curved Yellow Bill
 i(4591),	-- e Eye \\ Eagle Eye
-i(4595),	-- levine Wine \\ Junglevine Wine
 i(4613),	-- oded Black Box \\ Corroded Black Box
 i(4620),	-- Deprecated Scribbled Note
 i(4622),	-- ed Note to Advisor Belgrum \\ Sealed Note to Advisor Belgrum
@@ -2136,7 +2130,6 @@ i(12438),	-- ee's Letter \\ Tinkee's Letter
 i(12440),	-- Magic Knucklebone (DND)
 i(12445),	-- ok's Package \\ Felnok's Package
 i(12526),	-- TEST Challenge to Urok
-i(12558),	-- -Feathered Necklace \\ Blue-Feathered Necklace \\ Blue-feathered Necklace
 i(12563),	-- ord Goretooth's Command \\ Warlord Goretooth's Command
 i(12564),	-- ssination Note \\ Assassination Note
 i(12585),	-- Stormwind Medallion
@@ -2556,7 +2549,6 @@ i(17058),	-- Oil \\ Fish Oil
 i(17115),	-- Squirrel Token
 i(17116),	-- Squirrel Token
 i(17118),	-- on of Mystery Meat \\ Carton of Mystery Meat
-i(17124),	-- icate Emblem \\ Syndicate Emblem
 i(17125),	-- of Ravenholdt \\ Seal of Ravenholdt
 i(17126),	-- Elegant Letter
 i(17162),	-- Eric Test Item A
@@ -5449,7 +5441,6 @@ i(38381),	-- oned Slider Cider \\ Seasoned Slider Cider
 i(38382),	-- lisk Crystals \\ Basilisk Crystals
 i(38384),	-- erized Gargoyle Teeth \\ Pulverized Gargoyle Teeth
 i(38385),	-- Scaling Stat Test Trinket
-i(38386),	-- y Mire Maggot \\ Muddy Mire Maggot
 i(38391),	-- Scaling Stat Test 1H Sword
 i(38392),	-- Scaling Stat Test 2H Sword
 i(38393),	-- y Spider Egg \\ Spiky Spider Egg
@@ -5515,14 +5506,10 @@ i(38538),	-- Riding Crop
 i(38539),	-- of Gold \\ Sack of Gold
 i(38544),	-- nt Crusade Banner \\ Argent Crusade Banner
 i(38551),	-- kari Offerings \\ Drakkari Offerings
-i(38552),	-- re Water-Poppy \\ Mature Water-Poppy
 i(38553),	-- fern \\ Sandfern
 i(38555),	-- al Crystal Key \\ Ritual Crystal Key
 i(38556),	-- nerating Oil \\ Incinerating Oil
 i(38559),	-- whacker's Jaw \\ Bushwhacker's Jaw
-i(38560),	-- ue Sprayer Parts \\ Plague Sprayer Parts
-i(38562),	-- k of Saronite \\ Chunk of Saronite
-i(38563),	-- Thornwood \\ Dead Thornwood
 i(38564),	-- fern Disguise \\ Sandfern Disguise
 i(38565),	-- Ancient Drakkari Relic
 i(38566),	-- l Spade \\ Steel Spade
@@ -14321,7 +14308,6 @@ i(81201),	-- le Shell \\ Turtle Shell
 i(81202),	-- t Elemental Sphere \\ Inert Elemental Sphere
 i(81203),	-- Down Feather \\ Soft Down Feather
 i(81204),	-- er Velvet \\ Antler Velvet
-i(81205),	-- real Ashes \\ Funereal Ashes
 i(81206),	-- Blood \\ Eel Blood
 i(81207),	-- Quality Crocolisk Leather \\ High Quality Crocolisk Leather
 i(81208),	-- ing Stinger \\ Glowing Stinger
@@ -14471,7 +14457,6 @@ i(82300),	-- Guano \\ Bat Guano
 i(82301),	-- Wool of Bat
 i(82302),	-- Half-Digested Cobra
 i(82311),	-- hin Rations \\ Zouchin Rations
-i(82328),	-- y Carapace \\ Shiny Carapace
 i(82329),	-- Toad Toxin
 i(82330),	-- un Silk \\ Unspun Silk
 i(82332),	-- er's Crossbow \\ Father's Crossbow
@@ -14644,7 +14629,6 @@ i(83128),	-- Defender Ball \\ Brew Defender Ball
 i(83131),	-- Cannon Flare
 i(83137),	-- n Remedy Pouch \\ Hozen Remedy Pouch
 i(83156),	-- bling Stone Shard \\ Trembling Stone Shard
-i(83157),	-- tered Bone Fragment \\ Shattered Bone Fragment
 i(83767),	-- h's Back \\ Krosh's Back
 i(83775),	-- Founding of the Order of the Cloud Serpent
 i(83776),	-- Klaxx Attack
@@ -19840,10 +19824,7 @@ i(114225),	-- Forgotten Apexis Trinket \\ otten Apexis Trinket
 i(114229),	-- Skothwa's Eye \\ hwa's Eye
 i(114238),	-- Spiced Barbed Trout \\ ed Barbed Trout
 i(114241),	-- Tattered Armor Scraps \\ ered Armor Scraps
-i(114242),	-- Abu'Gar's Vitality \\ Gar's Vitality
-i(114243),	-- Abu'Gar's Finest Reel \\ Gar's Finest Reel
 i(114244),	-- GG-117 Micro-Jetpack \\ 17 Micro-Jetpack
-i(114245),	-- Abu'Gar's Favorite Lure \\ Gar's Favorite Lure
 i(114246),	-- "Skyterror" Personal Delivery System \\ terror" Personal Delivery System
 i(114279),	-- Ring \\ 
 i(114280),	-- Ring \\ 
@@ -23705,21 +23686,13 @@ i(248941),	-- [DNT] Dreadscar Battle Planning Map - do not use - new asset
 11.2.7.64877
 i(268368),	-- Fragmented Memento of Epoch Challenges
 12.0.0.63534
-i(258499),	-- Technique: Restful Bronze Bench \\ Technique: Sturdy Bench
 i(259996),	-- Quel'Thalas Equipment Chest
 12.0.0.63854
 i(262734),	-- [DNT] Mace of the Great Dark \\ Mace of the Great Dark
-12.0.0.64499
-i(266965),	-- Tabard of Amani Abundance
-i(266966),	-- Mantle of Amani Abundance
-i(266967),	-- Shawl of Amani Abundance
 12.0.0.64741
 i(262453),	-- Hearthlight Armillary
 12.0.1.66017
 i(271616),	-- Add Keystone Affix: Lindormi's Guidance
-12.0.1.66102
-i(257199),	-- Giganto Manis
-i(263579),	-- Vivacious Chloroceros
 12.0.1.66192
 i(271631),	-- Light Guardian's Reward
 i(271703),	-- Title: Volunteer

@@ -12,6 +12,6 @@ HEALER_ROLE = createHeader({
 		-- TODO: pt = "",
 		ru = "Лекарь",
 		cn = "治疗者",
-		-- TODO: tw = "",
+		tw = "治療者",
 	},
 });

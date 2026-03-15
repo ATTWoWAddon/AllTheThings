@@ -31,6 +31,5 @@ title(29),	-- Gladiator %s
 title(30),	-- Duelist %s
 title(31),	-- Rival %s
 title(32),	-- Challenger %s
-title(41),	-- Battlemaster %s \\ Infernal Gladiator %s
 2.5.1.39399
 title(128),	-- Vanquisher %s

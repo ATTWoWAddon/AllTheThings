@@ -33,7 +33,6 @@ i(10958),	-- 's Necklace \\ Nida's Necklace \\ Hilary's Necklace
 i(11106),	-- -Headed Key \\ Lion-Headed Key \\ Lion-headed Key
 i(12368),	-- i's Gambit \\ Alexi's Gambit \\ Dawn's Gambit
 i(12524),	-- -Feathered Amulet \\ Blue-Feathered Amulet \\ Blue-feathered Amulet
-i(12558),	-- -Feathered Necklace \\ Blue-Feathered Necklace \\ Blue-feathered Necklace
 i(12708),	-- sroads Supply Crate \\ Crossroads Supply Crate \\ Crossroads' Supply Crates
 i(12842),	-- ely-Written Log \\ Crudely-Written Log \\ Crudely-written Log
 i(15586),	-- Fast-Growing Flower \\ Fast-growing Flower
@@ -413,7 +412,6 @@ i(49082),	-- ng Ire Thyme \\ Living Ire Thyme
 i(49088),	-- herblade Trident \\ Slitherblade Trident
 i(49090),	-- d Journal \\ Field Journal
 i(49092),	-- herblade Staff \\ Slitherblade Staff
-i(49094),	-- tone Shard \\ Keystone Shard
 i(49100),	-- gible Tablet Fragment \\ Illegible Tablet Fragment
 i(49102),	-- ent Tablet Fragment \\ Ancient Tablet Fragment
 i(49104),	-- ent Engravings of Neptulon \\ Ancient Engravings of Neptulon
@@ -3365,7 +3363,6 @@ i(62043),	-- o Swampstrider Drumstick \\ Jumbo Swampstrider Drumstick
 i(62054),	-- of the Stars \\ Orbs of the Stars
 i(62056),	-- ed Documents \\ Forged Documents
 i(62057),	-- port Beacon \\ Teleport Beacon
-i(62058),	-- diated Bandages \\ Irradiated Bandages
 i(62059),	-- Gnome Pants \\ Torn Gnome Pants
 i(62060),	-- diated Gnome Boots \\ Irradiated Gnome Boots
 i(62062),	-- ing Sack of Gold \\ Bulging Sack of Gold
@@ -3392,8 +3389,6 @@ i(62277),	-- lting Ichor \\ Revolting Ichor
 i(62278),	-- sible Fang \\ Invisible Fang
 i(62279),	-- ker-Snack Claw \\ Snicker-Snack Claw
 i(62280),	-- Naal Delta Map \\ Vir'Naal Delta Map
-i(62281),	-- ent Elven Etching \\ Ancient Elven Etching
-i(62282),	-- ent Elven Etching \\ Ancient Elven Etching
 i(62284),	-- Wildhammer Spirit Totem
 i(62312),	-- Plans: <Random Blacksmithing Plan>
 i(62313),	-- Burned Recipe Fragments
@@ -3929,6 +3924,11 @@ i(64677),	-- of Bugkill Fumigators \\ Box of Bugkill Fumigators
 i(64678),	-- t Reward Placeholder \\ Quest Reward Placeholder
 i(64679),	-- t Reward Placeholder - Blue \\ Quest Reward Placeholder - Blue
 i(64879),	-- Crafty's Test Item
+i(64928),	-- iator's Silk Trousers \\ Gladiator's Silk Trousers
+i(64929),	-- iator's Silk Robe \\ Gladiator's Silk Robe
+i(64930),	-- iator's Silk Handguards \\ Gladiator's Silk Handguards
+i(64931),	-- iator's Silk Cowl \\ Gladiator's Silk Cowl
+i(64932),	-- iator's Silk Amice \\ Gladiator's Silk Amice
 i(65005),	-- s of Agony \\ Claws of Agony
 i(65006),	-- s of Torment \\ Claws of Torment
 i(65008),	-- owforge's Lightbound Smock \\ Shadowforge's Lightbound Smock
@@ -6423,8 +6423,6 @@ i(70904),	-- Art Template Plate Head - RaidWarrior_J - Red
 i(70905),	-- Art Template Plate Legs - RaidWarrior_J - Red
 i(70906),	-- Art Template Plate Shoulder - RaidWarrior_J - Red
 i(70907),	-- Art Template Plate Wrist - RaidWarrior_J - Red
-i(70909),	-- s of the Vicious War Steed \\ Reins of the Vicious War Steed \\ Vicious War Steed
-i(70910),	-- of the Vicious War Wolf \\ Horn of the Vicious War Wolf \\ Vicious War Wolf
 i(70911),	-- Winter Veil Knife
 i(70924),	-- nal Eye of Elune \\ Eternal Eye of Elune
 i(70925),	-- nal Lunar Pear \\ Eternal Lunar Pear

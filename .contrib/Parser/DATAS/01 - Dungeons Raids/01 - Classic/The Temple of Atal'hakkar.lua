@@ -885,6 +885,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							icon = 136147,
 							text = {
 								en = "Aura of Paralyzing Dread",
+								cn = "痹体恐惧氛围",
 							},
 							description = {
 								en = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
@@ -974,6 +975,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							icon = 237552,
 							text = {
 								en = "Emotional Damage",
+								cn = "心理创伤",
 							},
 						}), {
 							["qg"] = 221477,	-- Field Captain Hannalah

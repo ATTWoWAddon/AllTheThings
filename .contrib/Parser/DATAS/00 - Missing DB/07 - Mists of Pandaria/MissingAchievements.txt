@@ -1,8 +1,6 @@
 5.0.3.15882
 ach(6337),	-- Ossirian kills (Ruins of Ahn'Qiraj)
 ach(6786),	-- Flameweaver Koegler kills (Scarlet Halls)
-ach(6941),	-- Hero of the Horde
-ach(6942),	-- Hero of the Alliance
 5.5.0.61217
 ach(42776),	-- Cataclysmic Gladiator
 5.5.0.61496
@@ -10,3 +8,17 @@ ach(60907),	-- Realm First! Will of the Emperor (10 player)
 ach(60908),	-- Realm First! Grand Empress Shek'zeer (10 player)
 ach(60909),	-- Realm First! Sha of Fear (10 player)
 ach(60910),	-- Realm First! Ra-den (10 player)
+5.5.3.64530
+ach(61977),	-- Stormstout Brewery: Platinum (TRACKER) (Season 3)
+ach(61978),	-- Mogu'shan Palace: Platinum (TRACKER) (Season 3)
+ach(61979),	-- Shado-Pan Monastery: Platinum (TRACKER) (Season 3)
+ach(61980),	-- Gate of the Setting Sun: Platinum (TRACKER) (Season 3)
+ach(61981),	-- Scarlet Halls: Platinum (TRACKER) (Season 3)
+ach(61982),	-- Scarlet Monastery: Platinum (TRACKER) (Season 3)
+ach(61983),	-- Scholomance: Platinum (TRACKER) (Season 3)
+ach(61984),	-- Siege of Niuzao Temple: Platinum (TRACKER) (Season 3)
+ach(61985),	-- Temple of the Jade Serpent: Platinum (TRACKER) (Season 3)
+5.5.3.64857
+ach(62350),	-- Hidden - Mistwalker
+5.5.3.65703
+ach(62399),	-- The Mistwalker

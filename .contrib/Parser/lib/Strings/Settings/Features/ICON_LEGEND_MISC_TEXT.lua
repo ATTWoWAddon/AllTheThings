@@ -7,5 +7,6 @@ createLocalizationString({
 		en = [[~"|T" .. _.asset("Currency") .. ":0|t Used as a currency\n|T" .. _.asset("Interface_Reagent") .. ":0|t Used as a crafting reagent\n|T" .. _.asset("Interface_Catalyst") .. ":0|t Convertible at the Catalyst for a new appearance\n|T" .. _.asset("Interface_Upgrade") .. ":0|t Can be upgraded for a new appearance"]],
 		es = [[~"|T" .. _.asset("Currency") .. ":0|t Usado como una moneda\n|T" .. _.asset("Interface_Reagent") .. ":0|t Usado como un componente de fabricación\n|T" .. _.asset("Interface_Catalyst") .. ":0|t Convertible en el Catalizador para una nueva apariencia\n|T" .. _.asset("Interface_Upgrade") .. ":0|t Se puede mejorar para una nueva apariencia."]],
 		mx = [[~"|T" .. _.asset("Currency") .. ":0|t Usado como una moneda\n|T" .. _.asset("Interface_Reagent") .. ":0|t Usado como un material de fabricación\n|T" .. _.asset("Interface_Catalyst") .. ":0|t Convertible en el Catalizador para una nueva apariencia\n|T" .. _.asset("Interface_Upgrade") .. ":0|t Se puede mejorar para una nueva apariencia."]],
+		cn = [[~"|T" .. _.asset("Currency") .. ":0|t 用作一种货币\n|T" .. _.asset("Interface_Reagent") .. ":0|t 用作制作材料\n|T" .. _.asset("Interface_Catalyst") .. ":0|t 可在催化剂处转换为新外观\n|T" .. _.asset("Interface_Upgrade") .. ":0|t 可升级以获得新外观"]],
 	},
 })

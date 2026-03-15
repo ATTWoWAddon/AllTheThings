@@ -1,8 +1,8 @@
 -- Companion Lib
 local _, app = ...
 
--- Use the Mounts & Battle Pets Lib for Wrath+
-if app.GameBuildVersion > 30000 then
+-- Use the Mounts & Battle Pets Lib for Classic/TBC
+if app.GameBuildVersion >= 30000 then
 	return;
 end
 

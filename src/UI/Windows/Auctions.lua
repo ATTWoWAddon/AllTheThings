@@ -298,6 +298,7 @@ app:CreateWindow("Auctions", {
 
 				if app.IsRetail then
 					app.Settings:SetTooltipSetting("Auto:AuctionList", false)
+					self:SetResizable(false)
 					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
 					self:Hide()
 					if not AuctionHouseFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame

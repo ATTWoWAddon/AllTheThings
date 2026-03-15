@@ -1,0 +1,23 @@
+12.0.1.66337
+ach(62603),	-- [DNT] <Hidden> Mythic+ Rating > 0 (Midnight, any season) \\ [DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season) (copy)
+ach(62612),	-- [DNT] Midnight Epic Edition Decor
+ach(62620),	-- Allied Race: Haranir (copy)
+12.0.5.66330
+ach(61792),	-- T-A-G that spells "Gotcha!"
+ach(61793),	-- Deployed to the Void
+ach(61878),	-- Tagged and Bagged
+ach(61879),	-- You're It
+ach(61880),	-- It's Cold Here in This Shadow
+ach(61881),	-- Hide and Peekless
+ach(61882),	-- Null and Avoided
+ach(61883),	-- Now You Don't See Me...
+ach(61886),	-- The Whole Kit and Caboodle
+ach(61887),	-- Disguised to the Nines
+ach(62506),	-- Abyss Anglers: Pressurized Eyeglass
+ach(62519),	-- [DNT] Research Sites: Collection - Bear Pet - Tracking
+ach(62520),	-- [DNT] Research Sites: Collection - Bear Mount - Tracking
+ach(62586),	-- [DNT] Research Sites: Collection - Eagle Pet - Tracking
+ach(62587),	-- [DNT] Research Sites: Collection - Eagle Mount - Tracking
+ach(62599),	-- [DNT] Research Sites: Collection - Hawkstrider Pet - Tracking
+ach(62602),	-- [DNT] Research Sites: Collection - Lynx Pet - Tracking
+ach(62605),	-- [DNT] Research Sites: Collection - Snapdragon Pet - Tracking

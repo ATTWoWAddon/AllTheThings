@@ -5,3 +5,53 @@ ach(4790),	-- Zalazane's Fall
 ach(42115),	-- 3.4.4 - CN LKC  - Warglaives of Azzinoth - Transmog
 3.4.5.62072
 ach(61022),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy) (copy)
+3.80.0.64859
+ach(61735),	-- [DNT] CN ICC Event Title 1 - Dream Chaser
+ach(61736),	-- [DNT] CN ICC Event Title 2 - Northbound Rush
+ach(61737),	-- [DNT] CN ICC Event Title 3 - Dawn's Vanguard
+ach(61738),	-- [DNT] CN ICC Event Title 4 - The Overlord of Dawn
+ach(61830),	-- 5000 Titanic Embers
+ach(61831),	-- 10000 Titanic Embers
+ach(61889),	-- Molten Core Reforged
+ach(61891),	-- 100000 Titanic Embers
+ach(61920),	-- Realm First! Ember Lord
+ach(61921),	-- Ahead of the Curve: Ragnaros
+ach(61924),	-- Realm First! The Phoenix Fall
+ach(61925),	-- Ahead of the Curve: Kael'thas Sunstrider
+ach(61926),	-- Realm First! Depth's Demise
+ach(61927),	-- Ahead of the Curve: Lady Vashj
+ach(61928),	-- Realm First! Scion of the Necropolis
+ach(61929),	-- Ahead of the Curve: Kel'Thuzad
+ach(61930),	-- Realm First! Spellweaver's Ruin
+ach(61931),	-- Ahead of the Curve: Malygos
+ach(61932),	-- Realm First! Onyx Harbinger
+ach(61933),	-- Ahead of the Curve: Sartharion
+ach(62064),	-- Temple of Ahn'Qiraj Reforged
+ach(62070),	-- Blackwing Lair Reforged
+ach(62071),	-- Ruins of Ahn'Qiraj Reforged
+ach(62072),	-- Zul'Gurub Reforged
+ach(62073),	-- Azuregos Reforged
+ach(62074),	-- Lord Kazzak Reforged
+ach(62075),	-- Dragons of Nightmare Reforged
+ach(62076),	-- Sunwell Plateau Reforged
+ach(62077),	-- The Black Temple Reforged
+ach(62078),	-- The Battle for Mount Hyjal Reforged
+ach(62079),	-- Tempest Keep Reforged
+ach(62080),	-- Serpentshrine Cavern Reforged
+ach(62081),	-- Magtheridon's Lair Reforged
+ach(62082),	-- Gruul's Lair Reforged
+ach(62083),	-- Zul'Aman Reforged
+ach(62084),	-- Karazhan Reforged
+ach(62085),	-- Doomwalker Reforged
+ach(62086),	-- Doom Lord Kazzak Reforged
+ach(62087),	-- Naxxramas Reforged
+ach(62088),	-- Ulduar Reforged
+ach(62089),	-- Trial of the Crusader Reforged
+ach(62090),	-- Icecrown Citadel Reforged
+ach(62091),	-- Ruby Sanctum Reforged
+ach(62092),	-- Eye of Eternity Reforged
+ach(62093),	-- Obsidian Sanctum Reforged
+ach(62094),	-- Vault of Archavon Reforged
+ach(62095),	-- Onyxia's Lair Reforged
+ach(62197),	-- Titanic Embers acquired
+ach(62198),	-- Titanic Fragments acquired

@@ -74,13 +74,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 3 --
 								i(248964, {	-- Cosmic Void Table (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(264509, {	-- Void Elf Barrel (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 								}),
 								i(262607, {	-- Void Elf Throne (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 							}, {	-- RENOWN 4 --
 								i(266979, {	-- Shawl of the Darkened Collapsed Star
@@ -94,10 +94,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 5 --
 								i(262473, {	-- Cosmic Chalice (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 								}),
 								i(263499, {	-- Sturdy Void Elf Trunk (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(268044, {	-- Formula: Endless Codex of the Voidtouched (RECIPE!)
 									["cost"] = {
@@ -151,13 +151,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}, {	-- RENOWN 7 --
 							}, {	-- RENOWN 8 --
 								i(264344, {	-- Cosmic Void Orb (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(262462, {	-- Dark Void Inkwell (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 								}),
 								i(262466, {	-- Void Elf Table (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 							}, {	-- RENOWN 9 --
 								i(262645, {	-- Beyond the Event Horizon: Alchemy (CI!)
@@ -194,13 +194,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}, {	-- RENOWN 11 --
 							}, {	-- RENOWN 12 --
 								i(262463, {	-- Cosmic Void Ashwell (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 								}),
 								i(264351, {	-- Ornate Void Elf Banner (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(262609, {	-- Void Elf Floating Lantern (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 							}, {	-- RENOWN 13 --
 							}, {	-- RENOWN 14 --
@@ -227,13 +227,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 18 --
 								i(264341, {	-- Cosmic Void Crate (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(264339, {	-- Cosmic Void Summoning Crystal (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(264337, {	-- Cosmic Void Training Dummy (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 							}, {	-- RENOWN 19 --
 								i(260696, {	-- Voidbound Stormray (MOUNT!)

@@ -47344,7 +47344,7 @@ ach(7057,{providers={{"s",128720}},pvp=1,g={
 crit(20788,{achID=7106,id=4,pvp=1})}}),
 ach(7062,{pvp=1,g={
 crit(20789,{achID=7106,id=5,pvp=1})}}),
-ach(7099,{providers={{"s",128650}},pvp=1,g={
+ach(7099,{description="An easy way to do this is via Training Grounds, capping in the following order:\n\n1) Water\n2) Top\n3) Lava\n4) Lava (again)\n5) Water\n\nStay mounted and ignore NPCs until you're in the circle!",providers={{"s",128650}},pvp=1,g={
 crit(20790,{achID=7106,id=6,pvp=1})}}),
 ach(7100,{pvp=1,g={
 crit(20791,{achID=7106,id=7,pvp=1})}}),

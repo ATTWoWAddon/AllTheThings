@@ -358,13 +358,37 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51710, {	-- Rise of the Yetis (A)
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(164309),	-- Lost Supplies (QI!)
+					o(302770, {	-- Lost Supplies
+						["coords"] = {
+							{ 43.6, 30.7, DRUSTVAR },
+							{ 44.3, 36.3, DRUSTVAR },
+							{ 45.0, 28.1, DRUSTVAR },
+							{ 45.0, 32.5, DRUSTVAR },
+							{ 45.1, 30.3, DRUSTVAR },
+							{ 45.4, 34.6, DRUSTVAR },
+							{ 45.8, 26.8, DRUSTVAR },
+							{ 46.2, 36.6, DRUSTVAR },
+						},
+						["groups"] = { i(164309) },	-- Lost Supplies (QI!)
+					}),
 				},
 			}),
 			q(51739, {	-- Rise of the Yetis (H)
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					i(164309),	-- Lost Supplies (QI!)
+					o(302770, {	-- Lost Supplies
+						["coords"] = {
+							{ 43.6, 30.7, DRUSTVAR },
+							{ 44.3, 36.3, DRUSTVAR },
+							{ 45.0, 28.1, DRUSTVAR },
+							{ 45.0, 32.5, DRUSTVAR },
+							{ 45.1, 30.3, DRUSTVAR },
+							{ 45.4, 34.6, DRUSTVAR },
+							{ 45.8, 26.8, DRUSTVAR },
+							{ 46.2, 36.6, DRUSTVAR },
+						},
+						["groups"] = { i(164309) },	-- Lost Supplies (QI!)
+					}),
 				},
 			}),
 			petbattle(q(52278, {	-- Rogue Azerite

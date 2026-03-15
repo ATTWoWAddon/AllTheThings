@@ -33,7 +33,6 @@ s(170110)/i(34219),	-- Armor Test Item
 s(170121)/i(34654),	--
 s(170126)/i(34662),	-- zzOLDEnchanted Thorium Spikes
 s(170133)/i(34716),	-- er Cufflinks \\ Silver Cufflinks
-s(170135)/i(34718),	-- k Leather Shoes \\ Black Leather Shoes
 s(170146)/i(34965),	-- Test Copy Unwavering Legguards
 s(170147)/i(34966),	-- Test Two Unwavering Legguards
 s(170150)/i(35559),	--
@@ -804,7 +803,7 @@ s(175904)/i(45752),	--
 s(175905)/i(45754),	--
 s(175906)/i(45759),	--
 s(175907)/i(45763),	--
-s(175944)/i(45860),	-- tal Tiara \\ Crystal Tiara
+s(175941)/i(45854),	-- als of the New Moon \\ Rituals of the New Moon
 s(175960)/i(45889),	--
 s(175961)/i(45890),	--
 s(175962)/i(45891),	--
@@ -1990,3 +1989,59 @@ s(303871)/i(265567),	-- Atiesh, Greatstaff of the Guardian
 s(303872)/i(265568),	-- Atiesh, Greatstaff of the Guardian
 s(303873)/i(265569),	-- Atiesh, Greatstaff of the Guardian
 s(303874)/i(265570),	-- Atiesh, Greatstaff of the Guardian
+3.80.0.65301
+s(304675)/i(268836),	-- Secondhand Cloak
+s(304676)/i(268837),	-- Secondhand Bracers
+s(304677)/i(268838),	-- Secondhand Sash
+s(304678)/i(268839),	-- Secondhand Mantle
+s(304679)/i(268840),	-- Secondhand Pants
+s(304680)/i(268841),	-- Secondhand Cowl
+s(304681)/i(268842),	-- Secondhand Gloves
+s(304682)/i(268843),	-- Secondhand Boots
+s(304683)/i(268844),	-- Secondhand Armor
+s(304684)/i(268845),	-- Secondhand Tunic
+s(304685)/i(268846),	-- Secondhand Bindings
+s(304686)/i(268847),	-- Secondhand Belt
+s(304687)/i(268848),	-- Secondhand Pads
+s(304688)/i(268849),	-- Secondhand Legguards
+s(304689)/i(268850),	-- Secondhand Crown
+s(304690)/i(268851),	-- Secondhand Gloves
+s(304691)/i(268852),	-- Secondhand Boots
+s(304692)/i(268853),	-- Secondhand Armguards
+s(304693)/i(268854),	-- Secondhand Belt
+s(304694)/i(268855),	-- Secondhand Spaulders
+s(304695)/i(268856),	-- Secondhand Leggings
+s(304696)/i(268857),	-- Secondhand Headguard
+s(304697)/i(268858),	-- Secondhand Gauntlets
+s(304698)/i(268859),	-- Secondhand Boots
+s(304699)/i(268860),	-- Secondhand Armor
+s(304700)/i(268861),	-- Secondhand Plate Vambraces
+s(304701)/i(268863),	-- Secondhand Pauldrons
+s(304702)/i(268864),	-- Secondhand Plate Leggings
+s(304703)/i(268865),	-- Secondhand Faceguard
+s(304704)/i(268866),	-- Secondhand Plate Gauntlets
+s(304705)/i(268867),	-- Secondhand Plate Greaves
+s(304706)/i(268868),	-- Secondhand Chestguard
+3.80.0.65586
+s(304788)/i(209521),	-- Secondhand Plate Girdle
+s(304789)/i(268862),	-- Secondhand Plate Girdle
+3.80.0.65990
+s(304956)/i(270116),	-- Grand Marshal's Plate Belt
+s(304966)/i(270128),	-- Grand Marshal's Plate Belt
+s(304967)/i(270129),	-- Grand Marshal's Mail Belt
+s(304968)/i(270130),	-- Grand Marshal's Mail Belt
+s(304969)/i(270131),	-- Grand Marshal's Chain Boots
+s(304970)/i(270134),	-- Grand Marshal's Leather Belt
+s(304971)/i(270135),	-- Grand Marshal's Leather Belt
+s(304972)/i(270137),	-- Grand Marshal's Cloth Belt
+s(304973)/i(270138),	-- Grand Marshal's Cloth Belt
+s(304974)/i(270139),	-- Grand Marshal's Cloth Belt
+s(304975)/i(270142),	-- High Warlord's Plate Belt
+s(304976)/i(270143),	-- High Warlord's Plate Belt
+s(304977)/i(270144),	-- High Warlord's Mail Belt
+s(304978)/i(270145),	-- High Warlord's Mail Belt
+s(304979)/i(270146),	-- High Warlord's Leather Belt
+s(304980)/i(270147),	-- High Warlord's Leather Belt
+s(304981)/i(270152),	-- High Warlord's Cloth Belt
+s(304982)/i(270153),	-- High Warlord's Cloth Belt
+s(304983)/i(270154),	-- High Warlord's Cloth Belt

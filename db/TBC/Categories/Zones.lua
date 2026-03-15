@@ -12571,7 +12571,7 @@ q(637,{coords={
 q(656,{coords={
 [1418]={{51.4,76.8}}},lvl=30,qgs={2785},rwp=40003,sourceQuests={692},g={
 qo(1,{coords={
-[1417]={{62.6,34.6}}},crs={2755},providers={{"i",4472},{"i",4473}}}),
+[1417]={{62.6,34.6}}},crs={2755},providers={{"i",4472},{"i",4473},{"o",138492}}}),
 i(4743,{b=1,f=51,q=3})}}),
 q(665,{coords={
 [1417]={{33.8,80.6}}},lvl=35,qgs={2768},rwp=40003}),
@@ -12828,11 +12828,11 @@ i(4457,{f=55,lvl=25,q=1}),
 r(4094,{itemID=4609,learnedAt=175,q=1,requireSkill=185})}}),
 q(782,{coords={
 [1418]={{2.8,45.8}}},lvl=40,qgs={1068},r=1,rwp=40003,g={
-qo(1,{crs={2944},providers={{"i",4640}}})}}),
+qo(1,{providers={{"i",4640}}})}}),
 q(793,{coords={
 [1418]={{2.8,45.8}}},lvl=40,qgs={1068},r=1,rwp=40003,sourceQuests={782},g={
-qo(1,{crs={2757},providers={{"i",4615}}}),
-qo(2,{crs={2759},providers={{"i",4645}}}),
+qo(1,{providers={{"i",4615}}}),
+qo(2,{providers={{"i",4645}}}),
 s(124162,11193,{b=1,f=5,q=2}),
 i(11196,{b=1,f=51,q=2}),
 s(124163,11194,{b=1,f=6,q=2}),
@@ -12914,24 +12914,12 @@ q(733,{coords={
 qo(1,{crs={2701,2715,2716,2717,2718,2719,2720,2906,2907},providers={{"i",4630}}}),
 s(119797,4652,{b=1,f=8,q=2}),
 s(119798,4653,{b=1,f=6,q=2})}}),
-q(779,{description="This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",lvl=40,providers={{"o",2933}},r=2,repeatable=1,rwp=40003,g={
-qo(1,{coords={
-[1418]={{83.5,32.9}}},providers={{"i",4845},{"o",2842}}}),
-qo(2,{coords={
-[1418]={{72.38,66.94}}},providers={{"i",4844},{"o",2848}}}),
-qo(3,{coords={
-[1418]={{81.27,64.29}}},providers={{"i",4843},{"o",2858}}}),
+q(779,{description="This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",lvl=40,providers={{"i",4843},{"i",4844},{"i",4845},{"o",2933}},r=2,repeatable=1,rwp=40003,g={
 i(4615,{coords={
 [1418]={{82.6,48.8}}},crs={2757},q=1}),
 i(4645,{coords={
 [1418]={{81.4,50.6}}},crs={2759},q=1})}}),
-q(795,{description="This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",lvl=40,providers={{"o",2933}},r=1,repeatable=1,rwp=40003,g={
-qo(1,{coords={
-[1418]={{83.5,32.9}}},providers={{"i",4845},{"o",2842}}}),
-qo(2,{coords={
-[1418]={{72.38,66.94}}},providers={{"i",4844},{"o",2848}}}),
-qo(3,{coords={
-[1418]={{81.27,64.29}}},providers={{"i",4843},{"o",2858}}}),
+q(795,{description="This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",lvl=40,providers={{"i",4843},{"i",4844},{"i",4845},{"o",2933}},r=1,repeatable=1,rwp=40003,g={
 i(4615,{coords={
 [1418]={{82.6,48.8}}},crs={2757},q=1}),
 i(4645,{coords={
@@ -12989,11 +12977,11 @@ q(728,{coords={
 [1418]={{51.4,76.9}}},lvl=30,providers={{"i",4648}},qgs={2785},r=1,rwp=40003,sourceQuests={709}}),
 q(732,{coords={
 [1418]={{61.8,54.2}}},lvl=40,qgs={2888},r=2,rwp=40003,sourceQuests={718},g={
-qo(1,{crs={2944},providers={{"i",4640}}})}}),
+qo(1,{providers={{"i",4640}}})}}),
 q(717,{coords={
 [1418]={{61.8,54.2}}},lvl=40,qgs={2888},r=2,rwp=40003,sourceQuests={732},g={
-qo(1,{crs={2757},providers={{"i",4615}}}),
-qo(2,{crs={2759},providers={{"i",4645}}}),
+qo(1,{providers={{"i",4615}}}),
+qo(2,{providers={{"i",4645}}}),
 s(124162,11193,{b=1,f=5,q=2}),
 s(124163,11194,{b=1,f=6,q=2}),
 s(124164,11195,{b=1,f=7,q=2}),
@@ -13026,6 +13014,16 @@ n(2751,{coords={
 [1418]={{45.6,33.2},{47.8,13.2},{52,28.2}}}}),
 n(2931,{coords={
 [1418]={{3.6,44.2},{34.6,53.8},{37.2,68},{55.8,64.6},{56,57.4}}}})}),
+h(-56,{
+o(2842,{coords={
+[1418]={{83.5,32.9}}},cost={{"i",4640,1}},rwp=40003,g={
+i(4845,{b=1,q=1})}}),
+o(2848,{coords={
+[1418]={{72.38,66.94}}},cost={{"i",4640,1}},rwp=40003,g={
+i(4844,{b=1,q=1})}}),
+o(2858,{coords={
+[1418]={{81.27,64.29}}},cost={{"i",4640,1}},rwp=40003,g={
+i(4843,{b=1,q=1})}})}),
 h(-58,{
 n(9179,{coords={
 [1418]={{42.4,52.5}}},rwp=40003,g={
@@ -13038,6 +13036,7 @@ s(117391,1521,{awp=100107,coords={
 [1418]={{7.6,89.4},{10,92.6}}},crs={2719},f=22,lvl=39,q=2,rwp=40003}),
 i(1993,{crs={2907},f=52,lvl=31,q=2}),
 s(119765,4616,{collectible=false,crs={2739,2740,2743},f=2,filterForRWP=21,q=1,rwp=40003}),
+i(4640,{crs={2944},q=1,rwp=40003}),
 s(118107,2624,{awp=80001,coords={
 [1418]={{9.4,85.4},{9.6,78.6}}},crs={2718},f=4,lvl=37,q=2,rwp=40003})})}}),
 m(33,{lore="Blackrock Mountain is a zone between the Burning Steppes and the Searing Gorge, linking the two regions. This zone is deceptively small and appears empty when first entered - however, it is among the most dangerous places in Azeroth. It was hotly contested between the forces of Ragnaros and his Dark Iron servants on one side and the black dragon Nefarian and his orc minions on the other. This is one of the most important areas in World of Warcraft lore.",lvl=40,maps={34,35},["zone-text-areaID"]=25,g={

@@ -10735,3 +10735,14 @@
 16874@@@Founders Point Camp
 12.0.1.64914
 16875@@@Den of the Undreamt
+12.0.5.66330
+16686@@@Silvermoon City
+16747@@@Speaker's Rest
+16748@@@Ritual Site Outskirts
+16766@@@Broken Throne
+16770@@@Zul'Aman
+16773@@@Silvermoon City
+16796@@@Ritual Site
+16823@@@Daggerspine Point
+16939@@@Ritual Site
+16940@@@Daggerspine Point

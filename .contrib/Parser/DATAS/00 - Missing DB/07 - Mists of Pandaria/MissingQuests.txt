@@ -2,7 +2,6 @@
 q(31153),	-- Tracking Event - Saved Diaani
 q(31154),	-- Tracking Event - Saved Zuulo
 q(31155),	-- Tracking Event - Saved Arekk
-q(31371),	-- Tracking Event: Player Has Completed One Anglers Daily
 5.5.0.60481
 q(32442),	-- Impending Danger
 q(32832),	-- Taran Zhu and Dezco Scene
@@ -16,5 +15,3 @@ q(91576),	--
 q(91577),	--
 q(91578),	--
 q(91580),	--
-5.5.3.64141
-q(94404),	--

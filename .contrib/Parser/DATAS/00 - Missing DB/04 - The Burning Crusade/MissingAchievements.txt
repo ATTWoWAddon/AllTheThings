@@ -2,3 +2,13 @@
 ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
 2.5.4.44833
 ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
+2.5.5.64616
+ach(62036),	-- [DNT] Raid Attunement Achieved - Karazhan
+ach(62037),	-- [DNT] Raid Attunement Achieved - Coilfang: Serpentshrine Cavern
+ach(62038),	-- [DNT] Raid Attunement Achieved - Tempest Keep
+ach(62039),	-- [DNT] Raid Attunement Achieved - The Battle for Mount Hyjal
+ach(62040),	-- [DNT] Raid Attunement Achieved - Black Temple
+2.5.5.65895
+ach(62503),	-- [DNT] TBC Mount Skill Clawback - 113274
+ach(62504),	-- [DNT] TBC Mount Skill Clawback - 113275
+ach(62505),	-- [DNT] TBC Mount Skill Clawback - 113286

@@ -7988,8 +7988,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						MOLTEN_CORE,
 					},
 				}),
-				i(15417),	-- Devilsaur Leather (Sourced in Un'goro Crater)
-				i(15422),	-- Frostsaber Leather (Sourced in Winterspring)
 				applyclassicphase(PHASE_FOUR, i(19767, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Bat Leather (Sourced in Zul'gurub)
 				applyclassicphase(PHASE_FOUR, i(19768, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Tiger Leather (Sourced in Zul'gurub)
 				i(15419, {	-- Warbear Leather
@@ -8017,7 +8015,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				-- Special hides
-				i(12731),	-- Pristine Hide of the Beast (Sourced in Blackrock Spire)
 				i(7428, {	-- Shadowcat Hide
 					["crs"] = {
 						1713,	-- Elder Shadowmaw Panther
@@ -8073,7 +8070,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				}),
 				i(12607),	-- Brilliant Chromatic Scale (Sourced in Blackwing Lair [WOD+] / Blackwing Spire)
-				i(6470),	-- Deviate Scale (Sourced in Wailing Caverns)
 				applyclassicphase(PHASE_FOUR, i(20381, {	-- Dreamscale
 					-- #if AFTER 10.1.5
 					["description"] = "Can be skinned from corrupted creatures of the Green Dragonflight in Temple of Atal'hakkar. Can also be skinned from the Dragons of Nightmare during the Anniversary event.",
@@ -8091,7 +8087,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
 					["maps_disp"] = { TEMPLE_OF_ATALHAKKAR },
 				}),
-				i(7392),	-- Green Whelp Scale (Sourced in Feralas [CATA+] / Swamp of Sorrows)
 				i(15408, {	-- Heavy Scorpid Scale
 					-- #if AFTER 4.0.3
 					["description"] = "Can be skinned from scorpids in Silithus.",
@@ -8103,8 +8098,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						SILITHUS
 					},
 					-- #endif
-					}),
-				i(6471),	-- Perfect Deviate Scale (Sourced in Wailing Caverns)
+				}),
 				i(15414, {	-- Red Dragonscale
 					-- #if AFTER WOD
 					["cr"] = 14020,	-- Chromaggus
@@ -8124,8 +8118,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["coord"] = { 80.0, 48.0, WETLANDS },
 					-- #endif
 				}),
-				i(7287),	-- Red Whelp Scale (Sourced in Wetlands)
-				i(15410),	-- Scale of Onyxia (Sourced in Onyxia's Lair)
 				i(8154, {	-- Scorpid Scale
 					["maps_disp"] = { TANARIS },
 					-- #if AFTER BFA
@@ -8157,17 +8149,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Can be skinned from elite creatures of any Dragonflights around the world.",
 					["maps_disp"] = { TEMPLE_OF_ATALHAKKAR },
 				}),
-				-- Other
-				i(20501),	-- Heavy Silithid Carapace (Sourced in Silithus)
-				i(20500),	-- Light Silithid Carapace (Sourced in Silithus)
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_SIX, i(234006)),	-- Monstrous Silithid Chitin
-				-- #endif
-				i(11512),	-- Patch of Tainted Skin (Sourced in Felwood)
-				i(20498),	-- Silithid Chitin (Sourced in Silithus)
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_SIX, i(234007)),	-- Spiked Silithid Chitin
-				-- #endif
 			}),
 		},
 	}),

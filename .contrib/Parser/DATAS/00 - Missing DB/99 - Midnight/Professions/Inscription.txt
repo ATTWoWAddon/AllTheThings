@@ -545,7 +545,4 @@ r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
 
 
-
-
-Missing in Inscription
-
+Nothing is Missing in Inscription! Good Work!

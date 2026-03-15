@@ -374,6 +374,7 @@ exploration(6678),	-- Dun Morogh
 exploration(6679),	-- Shimmer Ridge
 exploration(6680),	-- Battlefront Provisions
 exploration(6681),	-- Lightning Vein Mine
+exploration(6682),	-- Tanaan Jungle \\ [TEMP] JT
 exploration(6683),	-- Misty Shores
 exploration(6686),	-- Diremoor
 exploration(6687),	-- Court of Bones

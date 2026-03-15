@@ -6039,7 +6039,7 @@ ach(62244,{requireSkill=755,g={
 title(746,{requireSkill=755})}})}}),
 h(-45,{requireSkill=755,g={
 q(93694,{coords={
-[2393]={{48.2,55.1}}},isWeekly=1,lvl=78,qgs={243345},requireSkill=755,sourceQuests={93729},g={
+[2393]={{45,55.2},{48.2,55.1}}},isWeekly=1,lvl=78,qgs={243283,243345},requireSkill=755,sourceQuests={93729},g={
 i(263458,{b=1,isWeekly=1,requireSkill=755,spellID=1270536})}})}}),
 flt(200,{description="These are learned by specialization.",requireSkill=755,g={
 r(1230482,{cost={{"c",3156,1}},learnedAt=60,requireSkill=755,skillID=2914}),

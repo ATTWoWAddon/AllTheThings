@@ -49,7 +49,7 @@ SCARLET_MONASTERY_ARMORY_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Оружейная",
-		cn = "武器库",
+		cn = "军械库",
 		tw = "武器庫",
 	},
 });
@@ -66,7 +66,7 @@ SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Собор",
-		cn = "修道院",
+		cn = "大教堂",
 		tw = "修道院",
 	},
 });

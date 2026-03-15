@@ -5,6 +5,10 @@ local ach,cl,faction,flt,h,i,mnt,p,s,x=_.CreateAchievement,_.CreateCharacterClas
 categories.Character=
 h(-731,{SortPriority=40,g={
 h(-12,{
+ach(889,{rank=2,spellID=33391}),
+ach(891),
+ach(890,{awp=20001,rank=3,spellID=34090,u=17}),
+ach(546),
 ach(523),
 ach(524),
 ach(521),
@@ -166,11 +170,6 @@ faction(891,{collectible=false,r=2}),
 faction(892,{collectible=false,r=1}),
 faction(980,{awp=20001,collectible=false})}}),
 h(-11,{
-h(-12,{
-ach(889,{rank=2,spellID=33391}),
-ach(891),
-ach(890,{awp=20001,rank=3,spellID=34090,u=17}),
-ach(546)}),
 cl(11,{
 h(-88,{
 s(120957,6124,{f=4,filterForRWP=5,q=0,rwp=90105}),

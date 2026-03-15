@@ -12,6 +12,7 @@ local OBSIDIAN_FRAGMENT_EXCHANGE_VENDOR = createHeader({
 	icon = 135241,
 	text = {
 		en = "Obsidian Fragment Exchange",
+		cn = "黑曜碎片",
 	},
 });
 local PROTOCOL_MAPS = {

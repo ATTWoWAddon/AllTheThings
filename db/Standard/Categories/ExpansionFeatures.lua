@@ -40500,8 +40500,9 @@ crit(112550,{achID=62332,id=1})}),
 ach(61681)}),
 h(-45,{
 q(89507,{coords={
+[2395]={{56.7,65.9}},
 [2405]={{38.9,53.2}},
-[2437]={{31.6,26.7}}},isWeekly=1,lvl=80,qgs={241928,257632},g={
+[2437]={{31.6,26.7}}},isWeekly=1,lvl=80,qgs={241928,257632,257633},g={
 i(269702,{f=55,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}}}),
 i(268488,{f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}}}),
 i(263466,{b=1,f=55,lvl=80,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}}})}}),

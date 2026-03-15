@@ -20,6 +20,7 @@ THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
 	},
 	description = {
 		en = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
+		cn = "除了服务器上所有玩家共同努力完成备战任务外，还需要一名玩家制作出流沙节杖 —— 这是一项极为艰巨的任务，在该任务线刚推出时，只有服务器上顶尖的公会才能完成。当备战任务结束，联盟与部落的军队抵达希利苏斯后，流沙节杖可用于敲响甲虫之锣。敲响铜锣后，安其拉之门就会开启。每个服务器上第一个敲响甲虫之锣的玩家将获得 “甲虫之王” 称号（在《燃烧的远征》中，经典旧世的这个称号不会再出现！）以及黑色其拉共鸣水晶坐骑。在随后 10 小时内敲响铜锣的其他玩家也能获得该称号。\n\n尽管在服务器上安其拉之门开启后，玩家仍可完成流沙节杖的任务线，但完成后既不会获得黑色其拉共鸣水晶坐骑，也不会获得 “甲虫之王” 称号。",
 	},
 });
 

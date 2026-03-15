@@ -2,7 +2,7 @@
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ah,cat,cl,flt,h,i,o,prof,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
+local ah,cat,cl,flt,h,i,prof,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
 h(-698,{SortPriority=15,g={
 x(1,{
@@ -3682,17 +3682,9 @@ i(9260,{coords={
 [1446]={{54,93},{74,47}}},crs={7855,7856,7857,7858,7899,7901,7902,15685},f=55,q=1}),
 i(12205,{coords={
 [1445]={{34.1,22.5},{55.2,54.8}}},crs={4376,4377,4378,4379,4415},description="Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",q=1}),
-i(17965,{q=2}),
-o(2744),
-o(19017,{description="Can be found in the sea.",g={
-i(5503,{q=1}),
-i(5498,{q=2})}}),
-o(19018,{
-s(156647,2143,{f=5,lvl=22,q=1}),
-i(5500,{q=2}),
-i(5504,{q=1})}),
 i(8153,{description="Drops from trolls ranging from level 40 to 50.",maps={1425,1434},q=1}),
-i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={221,225,1431,1437,1440},q=1})})}),
+i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={221,225,1431,1437,1440},q=1}),
+i(17965,{q=2})})}),
 ah(1810,{description="These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",type="s",g={
 i(16882,{q=1,sym={{"select","itemID",11968,4999,11984,11994,12054,6375,5002,11969,6454,12006,7360,5972,2601,7092,7364,7363,4350,6390,3611,6044,3608,5578,10424,2882,12007,3396,12008,11967}},g={
 s(157777,4446,{f=20,lvl=21,q=3}),

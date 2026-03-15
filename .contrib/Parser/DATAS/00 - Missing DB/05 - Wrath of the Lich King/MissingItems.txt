@@ -1,7 +1,6 @@
 3.4.0.43659
 i(1100),	-- Monster Bag \\ Codex of Holy Smite III
 i(1254),	-- Lesser Firestone (DEPRECATED) \\ Lesser Firestone
-i(1357),	-- ain Sanders' Treasure Map \\ Captain Sanders' Treasure Map \\ Captain Sander's Treasure Map
 i(1358),	-- ue to Sanders' Treasure \\ A Clue to Sanders' Treasure \\ A Clue to Sander's Treasure
 i(1361),	-- her Clue to Sanders' Treasure \\ Another Clue to Sanders' Treasure \\ Another Clue to Sander's Treasure
 i(1362),	-- l Clue to Sanders' Treasure \\ Final Clue to Sanders' Treasure \\ Final Clue to Sander's Treasure
@@ -232,7 +231,6 @@ i(34713),	-- arr Ritual Object \\ Tuskarr Ritual Object
 i(34714),	-- Tiras Wine \\ Kul Tiras Wine
 i(34715),	-- arr Ritual Object \\ Tuskarr Ritual Object
 i(34716),	-- er Cufflinks \\ Silver Cufflinks
-i(34718),	-- k Leather Shoes \\ Black Leather Shoes
 i(34719),	-- er's Journal \\ Luther's Journal
 i(34720),	-- hus' Note \\ Barthus' Note \\ Barthus's Note
 i(34723),	-- Northrend Fish 01
@@ -272,7 +270,6 @@ i(34786),	-- r Strong Metal Plate \\ Super Strong Metal Plate
 i(34787),	-- ty's Stuff \\ Crafty's Stuff
 i(34800),	-- est Mote \\ Tempest Mote
 i(34801),	-- ty's Shopping List \\ Crafty's Shopping List
-i(34802),	-- ty's Tools \\ Crafty's Tools
 i(34803),	-- Tier 1 Northrend Engineering Widget
 i(34804),	-- ndful of Rocknar's Grit \\ A Handful of Rocknar's Grit
 i(34806),	-- Aeire's Totem \\ Sage Aeire's Totem
@@ -686,7 +683,6 @@ i(37455),	-- BT56 Mail Healer Gloves2
 i(37457),	-- BT55 Mail Physical Legs4
 i(37459),	-- terflash's Homing Bot \\ Quarterflash's Homing Bot
 i(37464),	-- erfin Horn of Distress \\ Winterfin Horn of Distress
-i(37465),	-- ergarde Mine Bomb \\ Wintergarde Mine Bomb
 i(37466),	-- BT59 Plate Physical Chest4
 i(37467),	-- eamy Romance Novel: Forbidden Love \\ A Steamy Romance Novel: Forbidden Love
 i(37469),	-- BT57 Plate Healer Bracer2
@@ -734,7 +730,6 @@ i(37707),	-- Carrot \\ Wild Carrot
 i(37711),	-- Currency Token Test Token 1
 i(37713),	-- le and Thread \\ Needle and Thread
 i(37716),	-- hbang Grenade \\ Flashbang Grenade
-i(37727),	-- Acorn \\ Ruby Acorn
 i(37738),	-- A Handful of Quills
 i(37741),	-- er of Amnesty \\ Letter of Amnesty
 i(37742),	-- Currency Token Test Token 2
@@ -907,7 +902,6 @@ i(38381),	-- oned Slider Cider \\ Seasoned Slider Cider
 i(38382),	-- lisk Crystals \\ Basilisk Crystals
 i(38384),	-- erized Gargoyle Teeth \\ Pulverized Gargoyle Teeth
 i(38385),	-- Scaling Stat Test Trinket
-i(38386),	-- y Mire Maggot \\ Muddy Mire Maggot
 i(38391),	-- Scaling Stat Test 1H Sword
 i(38392),	-- Scaling Stat Test 2H Sword
 i(38393),	-- y Spider Egg \\ Spiky Spider Egg
@@ -980,14 +974,10 @@ i(38538),	-- Riding Crop
 i(38539),	-- of Gold \\ Sack of Gold
 i(38544),	-- nt Crusade Banner \\ Argent Crusade Banner
 i(38551),	-- kari Offerings \\ Drakkari Offerings
-i(38552),	-- re Water-Poppy \\ Mature Water-Poppy
 i(38553),	-- fern \\ Sandfern
 i(38555),	-- al Crystal Key \\ Ritual Crystal Key
 i(38556),	-- nerating Oil \\ Incinerating Oil
 i(38559),	-- whacker's Jaw \\ Bushwhacker's Jaw
-i(38560),	-- ue Sprayer Parts \\ Plague Sprayer Parts
-i(38562),	-- k of Saronite \\ Chunk of Saronite
-i(38563),	-- Thornwood \\ Dead Thornwood
 i(38564),	-- fern Disguise \\ Sandfern Disguise
 i(38565),	-- Ancient Drakkari Relic
 i(38566),	-- l Spade \\ Steel Spade
@@ -1459,7 +1449,6 @@ i(41431),	-- packed Explosive Bundle \\ Hardpacked Explosive Bundle
 i(41503),	-- omaceous Earth \\ Diatomaceous Earth
 i(41504),	-- hee Essence \\ Banshee Essence
 i(41505),	-- im's Charm of Earth \\ Thorim's Charm of Earth
-i(41506),	-- ite Boulder \\ Granite Boulder
 i(41507),	-- o Seaforium Charge \\ Jumbo Seaforium Charge
 i(41514),	-- e of the Wind \\ Voice of the Wind
 i(41518),	-- Charred Glyph \\ red Glyph \\ Glyph of Chain Lightning
@@ -1472,7 +1461,6 @@ i(41538),	-- Charred Glyph \\ red Glyph \\ Glyph of Grounding Totem \\ Glyph of 
 i(41539),	-- Charred Glyph \\ red Glyph \\ Glyph of Spiritwalker's Grace \\ Glyph of Stormstrike
 i(41542),	-- Charred Glyph \\ red Glyph \\ Glyph of Cleansing Waters \\ Glyph of Windfury Weapon
 i(41552),	-- Charred Glyph \\ red Glyph \\ Glyph of Chaining \\ Glyph of Elemental Mastery
-i(41556),	-- Covered Metal \\ Slag Covered Metal
 i(41557),	-- ned Gleaming Ore \\ Refined Gleaming Ore
 i(41558),	-- ous Spark \\ Furious Spark
 i(41584),	-- tbite Bullets \\ Frostbite Bullets
@@ -1688,7 +1676,7 @@ i(42734),	-- red Glyph \\ Charred Glyph \\ Glyph of Arcane Explosion
 i(42739),	-- Charred Glyph \\ red Glyph \\ Glyph of Combustion \\ Glyph of Fireball
 i(42740),	-- red Glyph \\ Charred Glyph \\ Glyph of Fire Blast
 i(42742),	-- d Glyph \\ Faded Glyph \\ Glyph of Frostbolt
-i(42745),	-- Charred Glyph \\ red Glyph \\ Glyph of Splitting Ice \\ Glyph of Ice Lance
+i(42745),	-- Charred Glyph \\ red Glyph \\ Glyph of Splitting Ice \\ Glyph of Frozen Orb \\ Glyph of Ice Lance
 i(42748),	-- Charred Glyph \\ red Glyph \\ Glyph of Rapid Displacement \\ Glyph of Invisibility
 i(42752),	-- Charred Glyph \\ red Glyph \\ Glyph of Polymorph
 i(42753),	-- Charred Glyph \\ red Glyph \\ Glyph of Icy Veins \\ Glyph of Cone of Cold \\ Glyph of Remove Curse
@@ -1704,7 +1692,6 @@ i(42779),	-- ming Chicken Soup \\ Steaming Chicken Soup
 i(42781),	-- Chieftain's Totem \\ The Chieftain's Totem
 i(42782),	-- mhoof's Spear \\ Stormhoof's Spear
 i(42783),	-- mhoof's Mail \\ Stormhoof's Mail
-i(42784),	-- l Proto-Drake Egg \\ Small Proto-Drake Egg
 i(42797),	-- en Proto-Dragon Eggs \\ Stolen Proto-Dragon Eggs
 i(42837),	-- iplining Rod \\ Disciplining Rod
 i(42838),	-- d Harness \\ Runed Harness
@@ -2248,7 +2235,6 @@ i(44807),	-- Indalamar's Holy Hand Grenade
 i(44808),	-- ed Horde Armor \\ Imbued Horde Armor
 i(44809),	-- e Herb Pouch \\ Horde Herb Pouch
 i(44812),	-- ey Shooter \\ Turkey Shooter
-i(44818),	-- egarden Egg \\ Noblegarden Egg
 i(44832),	-- Squirt Gun [PH]
 i(44833),	-- Empty Squirt Gun [PH]
 i(44844),	-- ey Caller \\ Turkey Caller
@@ -2418,7 +2404,6 @@ i(45800),	-- Charred Glyph \\ red Glyph \\ Glyph of Dark Simulacrum \\ Glyph of 
 i(45803),	-- red Glyph \\ Charred Glyph \\ Glyph of Unholy Blight
 i(45806),	-- Charred Glyph \\ red Glyph \\ Glyph of Tranquil Grip \\ Glyph of Howling Blast
 i(45855),	-- ls of the Watchers \\ Sigils of the Watchers
-i(45860),	-- tal Tiara \\ Crystal Tiara
 i(45863),	-- yed Treasure Map \\ Decayed Treasure Map
 i(45896),	-- und Fragments of Val'anyr \\ Unbound Fragments of Val'anyr
 i(45897),	-- rged Hammer of Ancient Kings \\ Reforged Hammer of Ancient Kings
@@ -2543,8 +2528,6 @@ i(49313),	-- shed Dragonslayer's Signet \\ Polished Dragonslayer's Signet
 i(49334),	-- e of Onyxia 2.0 \\ Scale of Onyxia 2.0
 i(49335),	-- s' Journal \\ Daros' Journal
 i(49349),	-- Golden Chains
-i(49351),	-- ume Neutralizer \\ Perfume Neutralizer
-i(49352),	-- gne Neutralizer \\ Cologne Neutralizer
 i(49353),	-- Monster - Polearm, Epic D 02 Glow Red Low, On Fire (Onyxia Special)
 i(49357),	-- Monster - Mace, 1H Tauren (Red, Fire)
 i(49372),	-- Permission Slip
@@ -3448,9 +3431,9 @@ i(264935),	-- Sulfuras, Hand of Ragnaros
 i(264936),	-- Sulfuras, Hand of Ragnaros
 i(264937),	-- Talon of Al'ar
 i(264986),	-- Reins of Inarius' Charger
-i(265028),	-- [PH] TRR Starter Pack
+i(265028),	-- Time Starter Pack \\ [PH] TRR Starter Pack
 i(265029),	-- Enchanted Mooncloth Bag
-i(265036),	-- Band of Titanic Inspiration
+i(265036),	-- Legendary Titan Revelation Emblem \\ Band of Titanic Inspiration
 i(265069),	-- Gravity Render
 i(265070),	-- Eventide Pillar
 i(265333),	-- Dreadboots of Desecration
@@ -3500,3 +3483,111 @@ i(265940),	-- Eye of the Legion
 i(265941),	-- Moonkin Hatchling
 i(265942),	-- Moonkin Hatchling
 i(265944),	-- Ashened Cataclysm
+3.80.0.64859
+i(267402),	-- Reins of Titan-Reforged Invincible
+3.80.0.65301
+i(256141),	-- Fortune's Waving Cat
+i(268295),	-- Glyph of the Trickster
+i(268706),	-- Golden Ashened Cataclysm
+i(268835),	-- Secondhand Necklace
+i(268836),	-- Secondhand Cloak
+i(268837),	-- Secondhand Bracers
+i(268838),	-- Secondhand Sash
+i(268839),	-- Secondhand Mantle
+i(268840),	-- Secondhand Pants
+i(268842),	-- Secondhand Gloves
+i(268843),	-- Secondhand Boots
+i(268844),	-- Secondhand Armor
+i(268845),	-- Secondhand Tunic
+i(268846),	-- Secondhand Bindings
+i(268847),	-- Secondhand Belt
+i(268848),	-- Secondhand Pads
+i(268849),	-- Secondhand Legguards
+i(268851),	-- Secondhand Gloves
+i(268852),	-- Secondhand Boots
+i(268853),	-- Secondhand Armguards
+i(268854),	-- Secondhand Belt
+i(268855),	-- Secondhand Spaulders
+i(268856),	-- Secondhand Leggings
+i(268858),	-- Secondhand Gauntlets
+i(268859),	-- Secondhand Boots
+i(268860),	-- Secondhand Armor
+i(268861),	-- Secondhand Plate Vambraces
+i(268862),	-- Secondhand Plate Girdle
+i(268863),	-- Secondhand Pauldrons
+i(268864),	-- Secondhand Plate Leggings
+i(268865),	-- Secondhand Faceguard
+i(268866),	-- Secondhand Plate Gauntlets
+i(268867),	-- Secondhand Plate Greaves
+i(268868),	-- Secondhand Chestguard
+i(268869),	-- Secondhand Band of Devastation
+i(268922),	-- Thunderhoof Celestial
+i(268923),	-- Stormgilded Celestial
+i(268924),	-- Scorching Imperial Quilen
+i(268925),	-- Auspicious Pixiu
+i(268926),	-- Lil' Coalee
+3.80.0.65586
+i(251542),	-- Azure Drakefire
+i(255973),	-- Sandbox Horse
+i(269721),	-- Lunar Cache
+i(269722),	-- Lunar Key
+3.80.0.65749
+i(258129),	-- Jade Monument
+i(258135),	-- Gilded Coil Spire
+i(258136),	-- Azure Thunder Coil Pillar
+i(258840),	-- Gilded Fountain
+i(269577),	-- Landro's Golden Loot Box
+i(269943),	-- Gyroscopic Grounding Device
+i(269965),	-- Schematic: Gyroscopic Grounding Device
+i(270064),	-- Glyph of Army of the Dead
+3.80.0.65797
+i(209528),	-- Secondhand Faceguard
+i(209529),	-- Secondhand Crown
+i(209530),	-- Secondhand Crown
+i(209531),	-- Secondhand Headguard
+i(209532),	-- Secondhand Cowl
+i(209533),	-- Secondhand Headguard
+i(268841),	-- Secondhand Cowl
+i(268850),	-- Secondhand Crown
+i(268857),	-- Secondhand Headguard
+3.80.0.65889
+i(270314),	-- Scroll of Mass Resurrection
+i(270324),	-- Blessed Parchment
+3.80.0.65990
+i(270116),	-- Grand Marshal's Plate Belt
+i(270128),	-- Grand Marshal's Plate Belt
+i(270129),	-- Grand Marshal's Mail Belt
+i(270130),	-- Grand Marshal's Mail Belt
+i(270131),	-- Grand Marshal's Chain Boots
+i(270134),	-- Grand Marshal's Leather Belt
+i(270135),	-- Grand Marshal's Leather Belt
+i(270137),	-- Grand Marshal's Cloth Belt
+i(270138),	-- Grand Marshal's Cloth Belt
+i(270139),	-- Grand Marshal's Cloth Belt
+i(270142),	-- High Warlord's Plate Belt
+i(270143),	-- High Warlord's Plate Belt
+i(270144),	-- High Warlord's Mail Belt
+i(270145),	-- High Warlord's Mail Belt
+i(270146),	-- High Warlord's Leather Belt
+i(270147),	-- High Warlord's Leather Belt
+i(270152),	-- High Warlord's Cloth Belt
+i(270153),	-- High Warlord's Cloth Belt
+i(270154),	-- High Warlord's Cloth Belt
+i(270177),	-- Ensemble: High Warlord Warrior and Death Knight
+i(270178),	-- Ensemble: Grand Marshal Warrior and Death Knight
+i(270194),	-- Ensemble: Grand Marshal Paladin
+i(270195),	-- Ensemble: Grand Marshal Shaman
+i(270196),	-- Ensemble: Grand Marshal Hunter
+i(270197),	-- Ensemble: Grand Marshal Rogue
+i(270198),	-- Ensemble: Grand Marshal Druid
+i(270199),	-- Ensemble: Grand Marshal Warlock
+i(270200),	-- Ensemble: Grand Marshal Priest
+i(270201),	-- Ensemble: Grand Marshal Mage
+i(270202),	-- Ensemble: High Warlord Paladin
+i(270203),	-- Ensemble: High Warlord Shaman
+i(270204),	-- Ensemble: High Warlord Hunter
+i(270205),	-- Ensemble: High Warlord Rogue
+i(270206),	-- Ensemble: High Warlord Druid
+i(270207),	-- Ensemble: High Warlord Warlock
+i(270208),	-- Ensemble: High Warlord Priest
+i(270209),	-- Ensemble: High Warlord Mage

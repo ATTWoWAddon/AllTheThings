@@ -398,20 +398,6 @@ s(267063)/i(235699),	--
 s(284813)/i(236704),	-- Frosty Wrists
 s(284814)/i(236705),	-- Frosty Gloves
 s(284815)/i(236706),	-- Frosty Vest
-s(284822)/i(236713),	-- Handwraps of Undead Slaying
-s(284823)/i(236714),	-- Gauntlets of Undead Slaying
-s(284824)/i(236715),	-- Handguards of Undead Slaying
-s(284826)/i(236717),	-- Gloves of Undead Cleansing
-s(284829)/i(236720),	-- Gloves of Undead Purification
-s(284832)/i(236723),	-- Gloves of Undead Warding
-s(284835)/i(236726),	-- Handwraps of Undead Cleansing
-s(284838)/i(236729),	-- Handwraps of Undead Purification
-s(284841)/i(236732),	-- Handwraps of Undead Warding
-s(284844)/i(236735),	-- Handguards of Undead Cleansing
-s(284847)/i(236738),	-- Handguards of Undead Warding
-s(284850)/i(236741),	-- Handguards of Undead Purification
-s(284853)/i(236744),	-- Gauntlets of Undead Purification
-s(284856)/i(236747),	-- Gauntlets of Undead Warding
 s(284951)/i(236871),	-- Creepy Censor Sensors
 1.15.6.58658
 s(285174)/i(237275),	-- Icebane Helmet
@@ -420,21 +406,6 @@ s(285176)/i(237278),	-- The Purifier
 s(285177)/i(237281),	-- Bracers of Hope
 s(285178)/i(237282),	-- Bracers of Subterfuge
 s(285226)/i(237348),	-- Monster - Sword, Short Ornate
-1.15.6.58866
-s(287424)/i(238348),	-- The Axe of Severing
-s(287425)/i(238349),	-- Abomination Skin Leggings
-s(287426)/i(238350),	-- Scorn's Focal Dagger
-s(287427)/i(238351),	-- The Frozen Clutch
-s(287428)/i(238353),	-- Mantle of Lady Falther'ess
-s(287429)/i(238354),	-- Lady Falther'ess' Finger
-s(287430)/i(238356),	-- Waistband of Balzaphon
-s(287431)/i(238357),	-- Staff of Balzaphon
-s(287432)/i(238358),	-- Blackwood's Thigh
-s(287433)/i(238360),	-- Lord Blackwood's Buckler
-s(287434)/i(238361),	-- Lord Blackwood's Blade
-s(287435)/i(238362),	-- Bracers of Mending
-s(287436)/i(238363),	-- The Shadow's Grasp
-s(287437)/i(238364),	-- Cloak of Revanchion
 1.15.7.59706
 s(168412)/i(190325),	-- Monster - Incubus Whip Mace1H
 s(287139)/i(237897),	--
@@ -577,12 +548,3 @@ s(291812)/i(243064),	-- Long Staff
 1.15.7.60249
 s(291868)/i(243345),	-- Long Staff
 s(292215)/i(244460),	-- Caladbolg
-1.15.7.60932
-s(292969)/i(246055),	-- Inquisition Grips
-s(292970)/i(246056),	-- Inquisition Armbraces
-s(292971)/i(246057),	-- Inquisition Stompers
-s(292972)/i(246058),	-- Inquisition Plate Pants
-s(292973)/i(246059),	-- Inquisition Cord
-s(292974)/i(246060),	-- Inquisition Cuirass
-s(292975)/i(246061),	-- Inquisition Epaulets
-s(292976)/i(246062),	-- Inquisition Faceguard
