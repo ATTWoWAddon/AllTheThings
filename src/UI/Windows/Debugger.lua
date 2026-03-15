@@ -380,6 +380,7 @@ KeySwaps = setmetatable({
 				return k
 			end
 		end
+		return id
 	end,
 }, { __index = function(t,k)
 	return DefaultKeyVal
