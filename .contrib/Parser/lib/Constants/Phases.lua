@@ -1295,17 +1295,19 @@ TBC_PHASE_THREE_GLAIVEPRIO = createClassicPhase({
 		en = "Glaive Prio",
 		es = "Prioridad de las gujas",
 		mx = "Prioridad de las gujas",
-		cn = ""
+		cn = "战刃优先",
 	},
 	description = {
 		en = "The wielder of this Glaive was prepared!",
 		es = "¡El portador de esta guja estaba preparado!",
 		mx = "¡El portador de esta guja estaba preparado!",
+		cn = "这把战刃的使用者做好了准备！",
 	},
 	lore = {
 		en = "Due to the exclusivity of the Warglaives and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after wrath prepatch.\n\nIf you do actually have Glaive prio, simply turn this on.",
 		es = "Debido a la exclusividad de las Gujas de Guerra y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los sudorosos, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el conflicto entre hermandades.\n\nEste filtro se activará por defecto después del pre-parche de Wrath.\n\nSi ya tienes la prioridad de Gujas, simplemente actívala.",
 		mx = "Debido a la exclusividad de las Gujas de Guerra y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los sudorosos, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el conflicto entre hermandades.\n\nEste filtro se activará por defecto después del pre-parche de Wrath.\n\nSi ya tienes la prioridad de Gujas, simplemente actívala.",
+		cn = "由于埃辛诺斯战刃的独特性，而且在分配时，并不总是优先考虑收藏玩家而非追求高难度玩法的玩家，克里夫觉得目前设置一个筛选机制来减少公会内部矛盾是恰当的。\n\n这个筛选机制在巫妖王之怒前夕补丁上线后将默认开启。\n\n如果你确实拥有战刃优先权，只需打开此功能即可",
 	},
 });
 TBC_PHASE_FOUR = createClassicPhase({
