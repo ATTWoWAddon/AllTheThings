@@ -578,7 +578,7 @@ namespace ATT
             /// Merges shared data from the database into the object.
             /// </summary>
             /// <param name="objectData">The object data to merge shared data into.</param>
-            internal static void MergeSharedDataIntoObject(IDictionary<string, object> data, HashSet<string> reMergeFieldsOnly = null)
+            internal static void MergeSharedDataIntoObject(IDictionary<string, object> data)
             {
                 if (data.ContainsAnyKey(MergeRestrictedFields))
                     return;
@@ -586,7 +586,7 @@ namespace ATT
                 // Combine the common data from all DB keys which are to merge into the Object
                 var combinedCommonData = new Dictionary<string, object>();
                 bool doInheritancePass = false;
-                foreach (var container in SharedDataByPrimaryKey.Where(c => reMergeFieldsOnly?.Contains(c.Key) ?? MERGE_OBJECT_FIELDS.ContainsKey(c.Key)))
+                foreach (var container in SharedDataByPrimaryKey.Where(c => MERGE_OBJECT_FIELDS.ContainsKey(c.Key)))
                 {
                     // does this data contain the key?
                     if (!data.TryGetValue(container.Key, out object keyValue))
