@@ -1696,7 +1696,7 @@ WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
 		en = "Due to the exclusivity of Shadowmourne and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Shadowmourne prio, simply turn this on.",
 		es = "Debido a la exclusividad de Agonía de Sombras y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi de hecho tienes la prioridad de Agonía de Sombras, simplemente actívala.",
 		mx = "Debido a la exclusividad de Agonía de Sombras y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi de hecho tienes la prioridad de Agonía de Sombras, simplemente actívala.",
-		cn  = "由于影之哀伤的独特性，且优先级并非总是优先给予收藏者而非热衷冲分者，克里夫认为当下设置一个筛选器以减少公会内的矛盾较为妥当。\n\n此筛选器在《大灾变》预补丁后将默认开启。\n\n若你确实拥有影之哀伤的获取优先级，直接打开此项即可"
+		cn  = "由于影之哀伤的独特性，且优先级并非总是优先给予收藏者而非热衷冲分者，克里夫认为当下设置一个筛选器以减少公会内的矛盾较为妥当。\n\n此筛选器在《大灾变》预补丁后将默认开启。\n\n若你确实拥有影之哀伤的获取优先级，直接打开此项即可",
 	},
 });
 WRATH_PHASE_FOUR_RUBYSANCTUM = createClassicPhase({
