@@ -432,7 +432,7 @@ local function ReadableBeforeData(data, depth)
 	if data.key == "strKey" then return end
 	local indent = string.rep("\t", depth)
 	local keyStr = FormatReadableKey(data)
-	local name = data.basename or data.name or data.text
+	local name = data.name or data.basename or data.text or UNKNOWN
 	local anyOther = HasUsefulFields(data)
 	local hasGroups = data.g and #data.g > 0
 	local prefix = indent
@@ -856,6 +856,10 @@ app:CreateWindow("Debugger", {
 			local loot, source, kind, lootID, info, dropLink
 			local ot, zero, server_id, instance_id, zone_uid, id, spawn_uid;
 			local slots = GetNumLootItems();
+			local tooltipName = GameTooltipTextLeft1:GetText() or nil
+			-- technically this can be wrong in aoe-loot situations if you loot a rare and it includes loot from
+			-- regular mobs, etc.
+			local classification = UnitClassification("target") or ""
 			for i=1,slots,1 do
 				loot = GetLootSlotLink(i);
 				if loot then
@@ -882,12 +886,11 @@ app:CreateWindow("Debugger", {
 							app.print("Add",kind,"Loot",lootID,"from",ot,id)
 							if ot == "objectID" then
 								info = { key = ot, [ot] = tonumber(id), g = { info }};
-								info.basename = GameTooltipTextLeft1:GetText() or UNKNOWN
+								info.basename = tooltipName
 								app.print('ObjectID: '..info.objectID.. ' || ' .. 'Name: ' .. info.basename)
 								self:AddObjectWithHeader(app.HeaderConstants.TREASURES, info);
 							else
 								info = { key = ot, [ot] = tonumber(id), g = { info }};
-								local classification = UnitClassification("target") or "";
 								if classification == "rare" or classification == "rareelite" then
 									self:AddObjectWithHeader(app.HeaderConstants.RARES, info);
 								elseif classification == "worldboss" then
