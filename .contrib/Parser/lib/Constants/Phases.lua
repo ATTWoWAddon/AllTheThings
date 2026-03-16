@@ -2540,7 +2540,7 @@ WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "由于影之哀伤的唯一性，加上优先级分配时，收藏党并不总能优先于冲进度的玩家，Crieve 认为目前有必要提供一个筛选器，以减少公会内部矛盾。\n\n该筛选器将在大地的裂变前夕版本后默认开启。\n\n如果你确实拥有影之哀伤的拾取优先权，只需将其开启即可",
 		-- TODO: tw = "",
 	},
 });
