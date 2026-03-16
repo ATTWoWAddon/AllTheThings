@@ -368,6 +368,7 @@ local KnownShortcutsByType = {
 	Item = "i",
 	Map = "m",
 	NPC = "n",
+	Object = "o",
 	Objective = "objective",
 	Quest = "q",
 	QuestAsBreadcrumb = "q",
