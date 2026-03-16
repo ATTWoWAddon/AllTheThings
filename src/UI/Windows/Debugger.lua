@@ -856,7 +856,7 @@ app:CreateWindow("Debugger", {
 			local loot, source, kind, lootID, info, dropLink
 			local ot, zero, server_id, instance_id, zone_uid, id, spawn_uid;
 			local slots = GetNumLootItems();
-			local tooltipName = GameTooltipTextLeft1:GetText() or nil
+			local tooltipName = GameTooltipTextLeft1:GetText() or UNKNOWN
 			-- technically this can be wrong in aoe-loot situations if you loot a rare and it includes loot from
 			-- regular mobs, etc.
 			local classification = UnitClassification("target") or ""
