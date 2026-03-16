@@ -291,6 +291,12 @@ local function ExportKeyValue(key, value)
 	end
 	return str;
 end
+local IgnoredForRaw = setmetatable({
+	g = true,
+	name = true,
+	basename = true,
+	text = true,
+}, { __index = CleanFields })
 local function ExportRawDataToString(data, depth)
 	-- ignore string-keyed entries; they should not be exported
 	if data and data.key == "strKey" then return end
@@ -300,7 +306,7 @@ local function ExportRawDataToString(data, depth)
 		local datalines = {}
 		local keyindent = "\n" .. indent
 		for key,value in pairs(data) do
-			if not CleanFields[key] and key ~= "g" then
+			if not IgnoredForRaw[key] then
 				datalines[#datalines + 1] = indent .. ExportKeyValue(key,value):gsub("\n", keyindent)
 			end
 		end
@@ -338,12 +344,14 @@ local function RawAfterSub(data, depth)
 		return indent .. "\t},"
 	end
 end
+local function RawDepthShift(data) return 2 end
 
 -- register the 'raw' style exporter
 app:RegisterDataStyleExporter("raw", {
 	main = ExportRawDataToString,
 	beforeSub = RawBeforeSub,
 	afterSub = RawAfterSub,
+	depthShift = RawDepthShift,
 	-- TODO: if not all items are loaded the .name can be empty, perhaps add a full scan of .name then export once all return??
 	beforeData = function(data, depth) if data and data.key ~= "strKey" then return string.rep("\t", depth>0 and depth-1 or 0).."{"..(data.name and (" -- "..data.name) or "") end end,
 	afterData = function(data, depth) if data and data.key ~= "strKey" then return string.rep("\t", depth>0 and depth-1 or 0).."}," end end,
