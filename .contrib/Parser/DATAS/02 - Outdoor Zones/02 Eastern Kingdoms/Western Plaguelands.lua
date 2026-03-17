@@ -3262,6 +3262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(12738, {	-- Dalson Outhouse Key
 					["coord"] = { 48.0, 49.8, WESTERN_PLAGUELANDS },
+					["sourceQuest"] = 5058,	-- Mrs. Dalson's Diary
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 10816,	-- Wandering Skeleton
 				}),
@@ -3280,15 +3281,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				i(16252, {	-- Formula: Enchant Weapon - Crusader
 					["cr"] = 4494,	-- Scarlet Spellbinder
-				}),
-				i(12738, {	-- Dalson Outhouse Key (QI)
-					["sourceQuest"] = 5058,	-- Mrs. Dalson's Diary
-					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 10816,	-- Wandering Skeleton
-				}),
-				i(12739, {	-- Dalson Cabinet Key (QI)
-					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 10836,	-- Farmer Dalson
 				}),
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
