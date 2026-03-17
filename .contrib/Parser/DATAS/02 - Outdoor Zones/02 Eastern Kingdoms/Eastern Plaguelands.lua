@@ -4289,6 +4289,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER 3.3.0
 					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
 					-- #endif
+					["sourceQuests"] = {
+						6135,	-- Duskwing, Oh How I Hate Thee...
+						6136,	-- The Corpulent One
+					},
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -4303,6 +4307,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 56,
 				}),
 				q(14349, {	-- The Call to Command
+					["sourceQuests"] = {
+						6135,	-- Duskwing, Oh How I Hate Thee...
+						6136,	-- The Corpulent One
+					},
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coords"] = {
 						-- #if AFTER WRATH

@@ -3275,7 +3275,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),
 				i(12738, {	-- Dalson Outhouse Key (QI)
-					["description"] = "This item can only be looted after completing the quest 'Mrs. Dalson's Diary (5058)'",
+					["sourceQuest"] = 5058,	-- Mrs. Dalson's Diary
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 10816,	-- Wandering Skeleton
 				}),
