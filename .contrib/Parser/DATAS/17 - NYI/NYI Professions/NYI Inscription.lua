@@ -339,7 +339,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(217977),	-- Masterful Cypher
 					i(217978),	-- Masterful Cypher
 					i(217979),	-- Masterful Cypher
-					i(222545),	-- Milling
 					i(219603),	-- Patient Alchemist's Mixing Rod
 					i(222139),	-- Patient Alchemist's Mixing Rod
 					i(217974),	-- Quick Cypher
@@ -392,6 +391,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(217980),	-- Versatile Cypher
 					i(217981),	-- Versatile Cypher
 					i(217982),	-- Versatile Cypher
+				})),
+			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					i(245754),	-- Milling
+					i(245774),	-- Vantus Rune: 12.0 Raid
 				})),
 			}),
 		}),
@@ -558,8 +564,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
 				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					r(1230063),	-- Pigments of the Wind
+					-- With SpellID attached
+					i(258508),	-- Technique: Harandar Runestone
 					-- Without SpellID attached
+					i(258506),	-- Technique: Homely Wall Shelves
+					i(258498),	-- Technique: Ren'dorei Sturdy Cask
 					i(267396),	-- Technique: Restful Bronze Bench
+					i(258501),	-- Technique: Sin'dorei Homely Shelf
+					i(258497),	-- Technique: Technique: Thalassian Missive of Deftness
+					i(258507),	-- Technique: Wild Hanging Scroll
 				})),
 			}),
 		}),

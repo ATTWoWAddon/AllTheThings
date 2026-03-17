@@ -2017,3 +2017,8 @@ i(267057, 1279125);	-- Thalassian Enchanter's Bonnet
 i(267061, 1279128);	-- Thalassian Herbalist's Cowl
 i(267063, 1279129);	-- Thalassian Tailor's Threads
 i(258134, 1246929);	-- Voidstrider Saddlebag
+--- NYI ---
+i(0, 1228435);		-- [DNT] 12.0 Tailoring Recipe Spell Template
+i(0, 1279126);		-- [DNT] Thalassian Fisher's Suncover
+i(0, 1228998);		-- Unknown
+i(0, 1228999);		-- Unknown

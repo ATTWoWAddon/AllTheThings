@@ -1218,7 +1218,7 @@ namespace ATT.DB
                     StoreLocalizedData(obj, locale);
                 }
 
-                Framework.Log($"INFO: Wago Type {ParseType.Name} Loaded with {CachedData.Count} entries");
+                Framework.LogDebug($"INFO: Wago Type {ParseType.Name} Loaded with {CachedData.Count} entries");
             }
             #endregion
             #region Localized Data Caching + Checking
@@ -1272,16 +1272,7 @@ namespace ATT.DB
             public static void StoreLocalizedData(T o, string locale)
             {
                 if (LocalizedProperties == null) return;
-                var result = CachedLocalizedPropertyData.GetOrAdd(o.ID, _ => new ConcurrentDictionary<string, ConcurrentDictionary<string, object>>());
-                foreach (var property in LocalizedProperties)
-                {
-                    var value = (string)property.GetValue(o);
-                    if (!string.IsNullOrWhiteSpace(value))
-                    {
-                        var localizedData = result.GetOrAdd(property.Name, _ => new ConcurrentDictionary<string, object>());
-                        localizedData.TryAdd(locale, value.Trim());
-                    }
-                }
+                StoreLocalizedData(locale, o.ID, o);
             }
 
             /// <summary>
@@ -1294,15 +1285,25 @@ namespace ATT.DB
                 if (LocalizedProperties == null) return;
                 foreach (var updatedWagoDataPair in db)
                 {
-                    var result = CachedLocalizedPropertyData.GetOrAdd(updatedWagoDataPair.Key, _ => new ConcurrentDictionary<string, ConcurrentDictionary<string, object>>());
-                    foreach (var property in LocalizedProperties)
+                    StoreLocalizedData(locale, updatedWagoDataPair.Key, updatedWagoDataPair.Value);
+                }
+            }
+
+            /// <summary>
+            /// Store the localized property data for a key and value
+            /// </summary>
+            /// <param name="db">The db.</param>
+            /// <param name="locale">The locale.</param>
+            public static void StoreLocalizedData(string locale, long key, object keyValue)
+            {
+                var result = CachedLocalizedPropertyData.GetOrAdd(key, Framework.NewConcurrentDictionary_string_string_object);
+                foreach (var property in LocalizedProperties)
+                {
+                    var value = (string)property.GetValue(keyValue);
+                    if (!string.IsNullOrWhiteSpace(value))
                     {
-                        var value = (string)property.GetValue(updatedWagoDataPair.Value);
-                        if (!string.IsNullOrWhiteSpace(value))
-                        {
-                            var localizedData = result.GetOrAdd(property.Name, _ => new ConcurrentDictionary<string, object>());
-                            localizedData.TryAdd(locale, value.Trim());
-                        }
+                        var localizedData = result.GetOrAdd(property.Name, Framework.NewConcurrentDictionary_string_object);
+                        localizedData.TryAdd(locale, value.Trim());
                     }
                 }
             }

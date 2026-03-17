@@ -12,6 +12,6 @@ TANK_ROLE = createHeader({
 		-- TODO: pt = "",
 		ru = "Танк",
 		cn = "坦克",
-		-- TODO: tw = "",
+		-- tw = "坦克",
 	},
 });

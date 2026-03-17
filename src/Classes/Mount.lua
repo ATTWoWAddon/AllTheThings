@@ -1,7 +1,7 @@
 
 local app = select(2, ...);
 
--- Use the Mounts & Battle Pets Lib for pre-Wrath Content
+-- Use the Mounts & Battle Pets Lib for Classic/TBC
 if app.GameBuildVersion <= 30000 then
 	return;
 end

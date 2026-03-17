@@ -664,6 +664,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(224437),	-- Pattern: Weaverthread Parachute Kit (RECIPE!)
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					r(1228435),	-- [DNT] 12.0 Tailoring Recipe Spell Template
+					r(1279126),	-- [DNT] Thalassian Fisher's Suncover
+					r(1228998),	-- Unknown
+					r(1228999),	-- Unknown
+				})),
+			}),
 		}),
 	}),
 }));

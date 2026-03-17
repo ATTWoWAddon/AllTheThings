@@ -2451,6 +2451,7 @@ local function BuildWindow(suffix)
 	local definition = app.WindowDefinitions[suffix];
 	if not definition then
 		app.print("No Window Definition Found for",suffix);
+		return
 	else
 		app.WindowDefinitions[suffix] = nil;
 	end

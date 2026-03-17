@@ -6,7 +6,6 @@ local L = app.L;
 local AssignChildren, GetRelativeField, GetRelativeValue, SearchForField, GetRelativeByFunc =
 	app.AssignChildren, app.GetRelativeField, app.GetRelativeValue, app.SearchForField, app.GetRelativeByFunc;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local Colorize = app.Modules.Color.Colorize;
 local Search = app.SearchForObject
 
 -- Global locals
@@ -438,10 +437,10 @@ end
 local BatchRefresh
 -- We can't track unflagged quests with a single meta-table unless we double-assign keys... that's a bit silly
 -- when we can have the original method of using 'CompletedQuests' as a pass-thru to the Raw data
-local RetailRawQuests = {};
+local RawQuests = {};
 local CompletedQuests = setmetatable({}, {
 	__index = function(t, questID)
-		if RetailRawQuests[questID] then return true end
+		if RawQuests[questID] then return true end
 		if C_QuestLog_IsQuestFlaggedCompleted(questID) then
 			t[questID] = true;
 			return true;
@@ -451,12 +450,12 @@ local CompletedQuests = setmetatable({}, {
 	__newindex = function(t, questID, state)
 		if not questID then return end
 		if state then
-			if RetailRawQuests[questID] then return end
+			if RawQuests[questID] then return end
 
-			RetailRawQuests[questID] = state
+			RawQuests[questID] = state
 			PrintQuestInfoViaCallback(questID)
 		else
-			RetailRawQuests[questID] = nil
+			RawQuests[questID] = nil
 			PrintQuestInfoViaCallback(questID, false)
 		end
 		DirtyQuests[#DirtyQuests + 1] = questID
@@ -648,7 +647,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 	-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
 	local info = {
 		infoText,
-		questChange..": \""..(QuestNameFromID[id] or "???").."\"",
+		questChange..": \""..((questRef and questRef.name) or QuestNameFromID[id] or "???").."\"",
 		OBJREF = questRef,
 	};
 	if checks then
@@ -808,20 +807,22 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 		-- meets current character filters
 		local filter = app.CurrentCharacterFilters(questRef);
 		-- is marked as in the game
-		-- NOTE: Classic doesn't use the Filters Module yet. (TODO)
-		-- The logic is simple enough to where it shouldn't matter.
 		-- This now checks recursively outwards to ensure that an in-game quest isn't buried inside a removed header
 		local inGame = not GetRelativeByFunc(questRef, NotInGame)
 		-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check, or character in party sync
 		local incomplete = (questRef.repeatable or not completed or LastQuestTurnedIn == completed or IsPartySyncActive) or app.IsClassic;
 		-- not missing pre-requisites
 		local metPrereq = not questRef.missingReqs;
-		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange,filter,inGame,incomplete,metPrereq)
+		-- a real quest type
+		local questType = questRef.__type
+		local realQuest = questType:sub(1,5) == "Quest"
+		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange,filter,inGame,incomplete,metPrereq,questType:sub(1,5),realQuest)
 		if forceShow or not (
 			filter
 			and inGame
 			and incomplete
 			and metPrereq
+			and realQuest
 			-- debugging, show link for any accepted quest
 			-- and false
 			)
@@ -831,9 +832,10 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 				InGame = inGame and true or false,
 				Incomplete = incomplete and true or false,
 				PreReq = metPrereq and true or false,
+				RealQuest = realQuest and true or false,
 			};
 			app.Modules.Contributor.AddReportData(
-				questRef.__type,
+				questType,
 				id,
 				BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef, checks),
 				L.REPORT_INACCURATE_QUEST)
@@ -847,16 +849,54 @@ if app.Debugging then
 	-- UNS quest /run ATTC.PrintQuestInfo(24444)
 	-- HQT quest /run ATTC.PrintQuestInfo(49813)
 	-- REG quest /run ATTC.PrintQuestInfo(83083)
-	app.PrintQuestInfo = PrintQuestInfo
+	app.PrintQuestInfo = PrintQuestInfoViaCallback
 	-- /run ATTC.CheckQuestInfo(12345,1)
 	app.CheckQuestInfo = function(questID, isTest)
 		app.CheckInaccurateQuestInfo(Search("questID",questID), "test-show", isTest)
 	end
 end
 
-local RefreshAllQuestInfo, RefreshQuestInfo;
+-- This functions differently depending on C_QuestLog_GetAllCompletedQuestIDs existence,
+-- but in both cases it makes updates to CompletedQuests and should handle ATT cache updates
+-- DirtyQuests may be modified after execution wherein further updates can be performed on the changed questID's
+local QueryCompletedQuests
+local Register_CRITERIA_UPDATE = app.EmptyFunction
+app.AddEventHandler("OnReady", function()
+	Register_CRITERIA_UPDATE = function()
+		app:RegisterEvent("CRITERIA_UPDATE");
+	end
+end)
+local function RefreshQuestCompletionState(questID)
+	-- app.PrintDebug("RefreshQuestCompletionState",questID)
+	if questID then
+		questID = tonumber(questID) or questID;
+		CompletedQuests[questID] = true;
+	else
+		-- Batch processing will ignore all the per-instance collection etc. built into CompletedQuests
+		-- because that is a huge overhead. Instead capture the values and assign them all at once
+		QueryCompletedQuests();
+		if #DirtyQuests > 0 then
+			app.UpdateRawIDs("questID", DirtyQuests);
+		end
+	end
+
+	Register_CRITERIA_UPDATE()
+	-- app.PrintDebugPrior("RefreshedQuestCompletionState")
+end
+local RefreshAllQuestInfo = function()
+	app:UnregisterEvent("CRITERIA_UPDATE");
+	app.CallbackHandlers.AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
+end
+local RefreshQuestInfo = function(questID)
+	app:UnregisterEvent("CRITERIA_UPDATE");
+	-- app.PrintDebug("RefreshQuestInfo",questID)
+	if questID then
+		RefreshQuestCompletionState(questID);
+	else
+		RefreshAllQuestInfo();
+	end
+end
 if C_QuestLog_GetAllCompletedQuestIDs then
-	local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 	local MAX = 999999;
 	local UnflaggedQuests = {}
 	local FlaggedQuests = {}
@@ -865,7 +905,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 	local IgnoredUnflagTypes = {
 		ItemWithQuest = true,
 	}
-	local QueryCompletedQuests = function()
+	QueryCompletedQuests = function()
 		BatchRefresh = true
 		local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
 		-- sometimes Blizz pretends that 0 Quests are completed. How silly of them!
@@ -888,9 +928,9 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		end
 		-- don't report quest completions if there's too many or we have yet to get initial quest completion
 		if manyQuests then
-			FirstRefresh = nil
 			DoQuestPrints = nil
 		end
+		wipe(DirtyQuests)
 		wipe(UnflaggedQuests)
 		wipe(FlaggedQuests)
 
@@ -924,12 +964,16 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		-- app.PrintDebugPrior("---")
 		-- app.__CQS = CompleteQuestSequence
 
+		if FirstRefresh then
+			CacheQuestsByScope(RawQuests,1)
+		end
 		if #DirtyQuests > 0 then
 			CacheQuestsByScope(FlaggedQuests,1)
 			CacheQuestsByScope(UnflaggedQuests)
 		end
 
 		if manyQuests then
+			FirstRefresh = nil
 			DoQuestPrints = oldReportSetting
 		end
 
@@ -962,177 +1006,57 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		BatchRefresh = nil
 	end
 
-	local Register_CRITERIA_UPDATE = app.EmptyFunction
-	local function RefreshQuestCompletionState(questID)
-		-- app.PrintDebug("RefreshQuestCompletionState",questID)
-		wipe(DirtyQuests);
-		if questID then
-			questID = tonumber(questID) or questID;
-			CompletedQuests[questID] = true;
-		else
-			-- Batch processing will ignore all the per-instance collection etc. built into CompletedQuests
-			-- because that is a huge overhead. Instead capture the values and assign them all at once
-			QueryCompletedQuests();
-			if #DirtyQuests > 0 then
-				app.UpdateRawIDs("questID", DirtyQuests);
-			end
-		end
-
-		Register_CRITERIA_UPDATE()
-		-- app.PrintDebugPrior("RefreshedQuestCompletionState")
-	end
-	RefreshAllQuestInfo = function()
-		app:UnregisterEvent("CRITERIA_UPDATE");
-		AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
-	end
-	RefreshQuestInfo = function(questID)
-		app:UnregisterEvent("CRITERIA_UPDATE");
-		-- app.PrintDebug("RefreshQuestInfo",questID)
-		if questID then
-			RefreshQuestCompletionState(questID);
-		else
-			RefreshAllQuestInfo();
-		end
-	end
-
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
 		-- convert cached quests into the current CompleteQuestSequence so unflagged quests can be properly tracked and reported at startup
 		local priorQuests = currentCharacter.PriorQuests
 		for questID in pairs(currentCharacter.Quests) do
 			CompleteQuestSequence[#CompleteQuestSequence + 1] = questID
-			RetailRawQuests[questID] = 1
+			RawQuests[questID] = 1
 			priorQuests[questID] = 1
 		end
 		app.Sort(CompleteQuestSequence)
 	end)
 	app.AddEventRegistration("LOOT_OPENED", RefreshAllQuestInfo)
-	-- We don't want any reporting/updating of completed quests when ATT starts... simply capture all completed quests
-	app.AddEventHandler("OnStartup", QueryCompletedQuests);
-	app.AddEventHandler("OnStartup", function()
-		-- clean any completed quests from PriorQuests. This should only represent unflagged quests which at one point were completed
-		local priorQuests = app.CurrentCharacter.PriorQuests
-		for questID in pairs(RetailRawQuests) do
-			priorQuests[questID] = nil
-		end
-	end)
-	app.AddEventHandler("OnRecalculate", QueryCompletedQuests);
 	app.AddEventHandler("OnPlayerLevelUp", RefreshAllQuestInfo);
-	app.AddEventHandler("OnReady", function()
-		Register_CRITERIA_UPDATE = function()
-			app:RegisterEvent("CRITERIA_UPDATE");
-		end
-	end)
 else	-- no C_QuestLog_GetAllCompletedQuestIDs
+	local UpdateQuestIDs = {}
 	---@diagnostic disable-next-line: undefined-global
 	local GetQuestsCompleted = GetQuestsCompleted;
-	local QueryCompletedQuests = function()
+	QueryCompletedQuests = function()
 		-- Mark all previously completed quests.
 		BatchRefresh = true
 		wipe(DirtyQuests);
+		wipe(UpdateQuestIDs)
 		GetQuestsCompleted(CompletedQuests);
 		if #DirtyQuests > 0 then
-			CacheQuestsByScope(CompletedQuests, 1);
+			-- convert DirtyQuests into a table for caching
+			for i=1,#DirtyQuests do
+				UpdateQuestIDs[DirtyQuests[i]] = true
+			end
+			CacheQuestsByScope(UpdateQuestIDs, 1);
 		end
 		BatchRefresh = nil
 	end
-	local function UpdateParentProgress(group)
-		if group.collectible then
-			group.progress = group.progress + 1;
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
+		-- convert cached quests into the current RawQuests so they don't all appear 'dirty' on first refresh
+		local priorQuests = currentCharacter.PriorQuests
+		for questID in pairs(currentCharacter.Quests) do
+			RawQuests[questID] = 1
+			priorQuests[questID] = 1
 		end
-
-		-- Continue on to this object's parent.
-		if group.parent then
-			if group.visible then
-				-- If we were initially visible, then update the parent.
-				UpdateParentProgress(group.parent);
-
-				-- If this group is trackable, then we should show it.
-				if app.GroupVisibilityFilter(group) then
-					group.visible = true;
-				elseif app.ShowTrackableThings(group) then
-					group.visible = not group.saved;
-				else
-					group.visible = false;
-				end
-			end
-		end
-	end
-	local function QuestCompletionHelper(questID)
-		-- Search ATT for the related quests.
-		local searchResults = SearchForField("questID", questID);
-		if #searchResults > 0 then
-			-- Only increase progress for Quests as Collectible users.
-			if app.Settings.Collectibles.Quests then
-				-- Attempt to cleanly refresh the data.
-				for i,result in ipairs(searchResults) do
-					if result.visible and result.parent and result.parent.total then
-						result.marked = true;
-					end
-				end
-				for i,result in ipairs(searchResults) do
-					if result.marked then
-						result.marked = nil;
-						if result.total then
-							-- This is an item that has a relative set of groups
-							UpdateParentProgress(result);
-
-							-- If this is NOT a group...
-							if not result.g and result.collectible then
-								-- If we've collected the item, use the "Show Collected Items" filter.
-								result.visible = app.CollectedItemVisibilityFilter(result);
-							end
-						else
-							UpdateParentProgress(result.parent);
-
-							if result.collectible then
-								-- If we've collected the item, use the "Show Collected Items" filter.
-								result.visible = app.CollectedItemVisibilityFilter(result);
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	RefreshQuestInfo = function(questID)
-		if questID then
-			local quest = SearchForField("questID", questID);
-			if #quest > 0 and not quest[1].repeatable then
-				CompletedQuests[questID] = true;
-			end
-		else
-			-- Refresh all quests.
-			if C_QuestLog_GetAllCompletedQuestIDs then
-				local completedQuests = C_QuestLog_GetAllCompletedQuestIDs();
-				if completedQuests and #completedQuests > 0 then
-					for i,questID in ipairs(completedQuests) do
-						CompletedQuests[questID] = true;
-					end
-				end
-			else
-				GetQuestsCompleted(CompletedQuests);
-			end
-		end
-
-		local any = false;
-		for questID,completed in pairs(DirtyQuests) do
-			QuestCompletionHelper(tonumber(questID));
-			any = true;
-		end
-		if any then
-			wipe(DirtyQuests);
-			app.WipeSearchCache();
-			app.HandleEvent("OnUpdateWindows");
-		end
-	end
-	RefreshAllQuestInfo = function()
-		RefreshQuestInfo();
-	end
-
-	-- Classic Event Handlers
-	app.AddEventHandler("OnRecalculate", QueryCompletedQuests);
-	app.AddEventHandler("OnStartup", QueryCompletedQuests);
+	end)
 end
+
+-- We don't want any reporting/updating of completed quests when ATT starts... simply capture all completed quests
+app.AddEventHandler("OnStartup", QueryCompletedQuests);
+app.AddEventHandler("OnRecalculate", QueryCompletedQuests);
+app.AddEventHandler("OnStartup", function()
+	-- clean any completed quests from PriorQuests. This should only represent unflagged quests which at one point were completed
+	local priorQuests = app.CurrentCharacter.PriorQuests
+	for questID in pairs(RawQuests) do
+		priorQuests[questID] = nil
+	end
+end)
 
 -- World Quest Support Lib
 local C_QuestLog_GetQuestTagInfo, GetWorldQuestIcon = C_QuestLog.GetQuestTagInfo, nil
@@ -1922,18 +1846,7 @@ local softRefresh = function()
 	wipe(LockedBreadcrumbCache)
 	app.CallbackHandlers.AfterCombatOrDelayedCallback(app.WipeSearchCache, 1)
 end;
-if C_QuestLog_GetAllCompletedQuestIDs then
-	-- In Retail, this has a cooldown and OOC protection, plus it actually allows accurate
-	-- triggering of quest status changes without user action.
-	-- Additionally, RefreshAllQuestInfo is extremely efficient for Retail and characters with 25,000 completed
-	-- quests should not notice any FPS stutters even up to 120 FPS
-	app.AddEventRegistration("CRITERIA_UPDATE", RefreshAllQuestInfo)
-else
-	-- Way too spammy to be used without a Callback or combat protection
-	app.AddEventRegistration("CRITERIA_UPDATE", app.WipeSearchCache)
-	-- This triggers in many situations where nothing actually changes... (like opening Quest Log)
-	app.AddEventRegistration("QUEST_LOG_UPDATE", RefreshAllQuestInfo)
-end
+app.AddEventRegistration("CRITERIA_UPDATE", RefreshAllQuestInfo)
 app.AddEventRegistration("BAG_NEW_ITEMS_UPDATED", softRefresh)
 app.AddEventRegistration("QUEST_WATCH_UPDATE", softRefresh)
 app.AddEventRegistration("QUEST_ACCEPTED", function(questLogIndex, questID)

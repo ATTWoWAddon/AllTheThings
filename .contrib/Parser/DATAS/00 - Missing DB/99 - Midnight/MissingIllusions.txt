@@ -1,0 +1,10 @@
+12.0.5.66330
+ill(8674),	-- Internal Testing Visual Enchant
+
+
+
+
+Missing in IllusionDB.lua
+
+12.0.5.66330
+ill(8674),	-- Internal Testing Visual Enchant

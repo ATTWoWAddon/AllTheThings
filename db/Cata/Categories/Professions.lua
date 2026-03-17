@@ -536,10 +536,11 @@ crit(845,{achID=1516,id=1,u=30})}}),
 ach(1517,{maps={114,115,116,117,119,127},requireSkill=356,u=30,g={
 crit(5690,{achID=1516,id=1,u=30})}})}}),
 x(4,{requireSkill=356,g={
-ach(4917,{awp=40003,requireSkill=356,g={
+h(-12,{awp=40003,requireSkill=356,g={
+ach(4917,{requireSkill=356,g={
 crit(63616,{achID=4915,id=1,rwp=80001})}}),
 ach(5851,{awp=40200,r=2,requireSkill=356}),
-ach(5852,{awp=40200,r=1,requireSkill=356,rwp=50004}),
+ach(5852,{awp=40200,r=1,requireSkill=356,rwp=50004})}}),
 ah(67414,{awp=40001,description="Fishing Daily Quest Reward",providers={{"i",67414},{"i",112623}},requireSkill=356,type="i",g={
 p(211,{awp=40003,b=1,itemID=44983,npcID=33226,petTypeID=9,q=3,requireSkill=356,spellID=62561}),
 s(143883,33820,{awp=40003,b=1,f=4,q=3,requireSkill=356}),

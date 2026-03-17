@@ -1885,4 +1885,11 @@ i(0, 1230027);		-- Thalassian Treatise on Mining
 i(0, 1230035);		-- Thalassian Treatise on Skinning
 i(0, 1230033);		-- Thalassian Treatise on Tailoring
 --- NYI ---
+i(0, 1230063);		-- Pigments of the Wind
+i(258508, 1248629);	-- Technique: Harandar Runestone
+i(258506, 0);		-- Homely Wall Shelves
+i(258498, 0);		-- Ren'dorei Sturdy Cask
 i(267396, 0);		-- Restful Bronze Bench
+i(258501, 0);		-- Sin'dorei Homely Shelf
+i(258497, 0);		-- Technique: Thalassian Missive of Deftness
+i(258507, 0);		-- Wild Hanging Scroll

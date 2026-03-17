@@ -23,24 +23,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(259922, {	-- Void Researcher Aemely <Decor Specialist>
 				["coord"] = { 52.7, 72.8, MAP.MIDNIGHT.VOIDSTORM },
 				["groups"] = sharedData({
-					["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+					["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 				}, {
-					i(264340),	-- Cosmic Barrel (DECOR!)
-					i(262472),	-- Cosmic Kettle (DECOR!)
-					i(264659),	-- Cosmic Traveler's Satchel (DECOR!)
-					i(267209),	-- Open Void Elf Bedroll (DECOR!)
-					i(264657, {	-- Open Sturdy Void Elf Trunk (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 2500 }	},
+					i(264340, {	-- Cosmic Barrel (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
+					i(262472, {	-- Cosmic Kettle (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					}),
+					i(264659, { -- Cosmic Traveler's Satchel (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					}),
+					i(267209),	-- Open Void Elf Bedroll (DECOR!)
+					i(264657),	-- Open Sturdy Void Elf Trunk (DECOR!)
 					i(264493),	-- Opened Domanaar Storage Crate (DECOR!)
-					i(262351),	-- Ornate Cosmic Rug (DECOR!) TODO: Blizzard bug - 0 cost, gray quality
+					i(262351),	-- Ornate Cosmic Rug (DECOR!)
 					i(267082),	-- Ornate Cosmic Table (DECOR!)
 					i(262606),	-- Smoldering Energy Forge (DECOR!)
-					i(264508, {	-- Sturdy Void Elf Barricade (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 2500 }	},
-					}),
+					i(264508),	-- Sturdy Void Elf Barricade (DECOR!)
 					i(263240, {	-- Sturdy Void Elf Crate (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 2500 }	},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(264656),	-- Void Elf Weapon Rack (DECOR!)
 				}),

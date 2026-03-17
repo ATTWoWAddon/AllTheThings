@@ -138,7 +138,7 @@ q(29396,{awp=40001,coords={
 [1]={{42.6,17.6}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24497},r=1,sourceQuests={11409},g={
 s(204780,56836,{b=1,e=7,f=2,q=3})}}),
 q(13932,{awp=30002,coords={
-[27]={{53.6,38.6}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24468},r=2,rwp=40001,sourceQuests={11318},u=2,g={
+[27]={{53.6,38.6}}},cost={{"i",33955,1}},e=7,qgs={24468},r=2,rwp=40001,sourceQuests={11318},u=2,g={
 s(145411,37892,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(13931,{awp=30002,coords={
 [1]={{42.6,17.6}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24497},r=1,rwp=40001,sourceQuests={11409},u=2,g={
@@ -196,10 +196,10 @@ q(12191,{awp=20202,coords={
 qo(1,{crs={24108},e=7,providers={{"i",33096}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(11321,{awp=20001,coords={
-[27]={{53.6,38.6}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24468},r=2,rwp=20403,u=2,g={
+[27]={{53.6,38.6}}},cost={{"i",33955,1}},e=7,qgs={24468},r=2,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(11413,{awp=20001,coords={
-[1]={{42.6,17.6}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24497},r=1,rwp=20403,u=2,g={
+[1]={{42.6,17.6}}},cost={{"i",33955,1}},e=7,qgs={24497},r=1,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(12491,{awp=20202,e=7,isYearly=1,lvl=75,providers={{"i",38280}},r=2,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
@@ -228,10 +228,10 @@ q(12318,{awp=20403,coords={
 [1]={{47.9,26.9}},
 [27]={{46.2,52.8}}},e=7,isBreadcrumb=1,lvl=65,nextQuests={12062},qgs={27584,28329},rwp=30303,sourceQuests={11441,11442,11446,11447},u=2}),
 q(12193,{awp=20001,coords={
-[27]={{53.6,38.6}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24468},r=2,rwp=30002,u=2,g={
+[27]={{53.6,38.6}}},cost={{"i",33955,1}},e=7,qgs={24468},r=2,rwp=30002,u=2,g={
 s(143353,33016,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(12194,{awp=20001,coords={
-[1]={{42.6,17.6}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24497},r=1,rwp=30002,u=2,g={
+[1]={{42.6,17.6}}},cost={{"i",33955,1}},e=7,qgs={24497},r=1,rwp=30002,u=2,g={
 s(143353,33016,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(11454,{awp=20001,coords={
 [1]={{44.3,17.5}},
@@ -388,7 +388,7 @@ toy(71137,{awp=40200,b=1,cost={{"i",37829,200}},e=7,q=3}),
 toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3}),
 toy(90427,{awp=50004,b=1,cost={{"i",37829,100}},e=7,q=3})}}),
 h(-219,{e=7})}}),
-n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";for i,item in ipairs(t.g)do	item.u=7;end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";for i,item in ipairs(t.g)do	item.u=7;end	end	end,r=1,sourceQuests={11419},g={
+n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=1,sourceQuests={11419},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=40,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=20,q=3,rwp=20403,u=2})}}),
 n(24501,{awp=20202,coords={
@@ -413,7 +413,7 @@ i(33025,{e=7,f=55,lvl=55,q=1}),
 i(34064,{e=7,f=55,lvl=25,q=1}),
 i(33026,{e=7,f=55,lvl=65,q=1})}}),
 n(24468,{awp=20202,coords={
-[27]={{53.6,38.6}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";for i,item in ipairs(t.g)do	item.u=7;end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";for i,item in ipairs(t.g)do	item.u=7;end	end	end,r=2,sourceQuests={11400},g={
+[27]={{53.6,38.6}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=2,sourceQuests={11400},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=40,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=20,q=3,rwp=20403,u=2})}}),
 n(23533,{awp=20202,coords={
@@ -3020,7 +3020,7 @@ qo(1,{coords={
 [18]={{62,67.8}}},e=16,providers={{"i",68648}}}),
 i(33226,{b=1,e=16,f=55,q=1}),
 crit(17606,{achID=1040,awp=30002,e=16,id=5,r=2})}}),
-q(11392,{awp=20001,e=16,isDaily=1,lvl=75,maps={435,436},providers={{"o",186267}},rwp=30300,sourceQuests={11135,11220},u=2}),
+q(11392,{awp=20001,e=16,lvl=75,maps={435,436},providers={{"o",186267}},rwp=30300,sourceQuests={11135,11220},u=2}),
 q(29144,{awp=40001,coords={
 [37]={{32.2,50.8}}},e=16,isDaily=1,lvl=10,maps={84},qgs={51934},r=2,g={
 qo(1,{e=16,providers={{"i",69191}}}),

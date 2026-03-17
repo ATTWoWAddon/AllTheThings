@@ -1,0 +1,447 @@
+-------------------------------------------------------------------
+--	  E X P A N S I O N   F E A T U R E S	M O D U L E	   --
+-------------------------------------------------------------------
+
+-- Exo Note: These "two" events are intertwined. If someone wants to untangle and separate them, be my guest. They share Quests, Currencies, Achievements...
+
+RITUAL_SITES = createHeader({
+	readable = "Ritual Sites",
+	icon = 4914669,
+	text = {
+		en = "Ritual Sites",
+		--de = "Ritual Sites",
+		--es = "Ritual Sites",
+		--mx = "Ritual Sites",
+		--fr = "Ritual Sites",
+		--it = "Ritual Sites",
+		--ko = "Ritual Sites",
+		--pt = "Ritual Sites",
+		--ru = "Ritual Sites",
+		--cn = "Ritual Sites",
+		--tw = "Ritual Sites",
+	},
+});
+VOID_ASSAULTS_RITUAL_SITES = createHeader({
+	readable = "Void Assaults & Ritual Sites",
+	icon = 4914669,
+	text = {
+		en = "Void Assaults & Ritual Sites",
+		--de = "Void Assaults & Ritual Sites",
+		--es = "Void Assaults & Ritual Sites",
+		--mx = "Void Assaults & Ritual Sites",
+		--fr = "Void Assaults & Ritual Sites",
+		--it = "Void Assaults & Ritual Sites",
+		--ko = "Void Assaults & Ritual Sites",
+		--pt = "Void Assaults & Ritual Sites",
+		--ru = "Void Assaults & Ritual Sites",
+		--cn = "Void Assaults & Ritual Sites",
+		--tw = "Void Assaults & Ritual Sites",
+	},
+});
+
+local FIELD_ACCOLADE = 3405;
+local DARK_PARTICLE = 267051;
+
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
+	["maps"] = {
+		MAP.MIDNIGHT.EVERSONG_WOODS,
+		MAP.MIDNIGHT.ZULAMAN,
+	},
+	["groups"] = {
+		n(VOID_ASSAULTS_RITUAL_SITES, {
+			faction(FACTION_RITUAL_SITES),
+			-- Void Rift: Bitter Bark; 30.8, 43.6, Zul'Aman
+			-- Void Ritual: Grizzly 31.6, 71.0, ZulAman
+			-- Swarming Skies: Jan'alai, 53.1, 21.1, Zulaman
+			n(ACHIEVEMENTS, {	-- Achievements do not reward Mounts and Pets. They unlock the ability for you to buy them from the vendor
+				-- Void Assaults
+				ach(62574),	-- Accolade to Rest
+				ach(62573),	-- Air Traffic Controller
+				ach(62572),	-- Battery Bombardment
+				ach(62518),	-- Cosmic Exterminator
+				ach(62570),	-- Cosmic Slayer
+				ach(62571),	-- Everybody Gets One
+				ach(62513),	-- Outstanding in the Field
+				ach(62569),	-- Traces in the Dark
+				ach(62498),	-- Void Assault: Eversong
+				ach(62499),	-- Void Assault: Zul'Aman
+				ach(62509),	-- Void Bane: Eversong
+				ach(62512),	-- Void Bane: Zul'Aman
+				ach(62508),	-- Void Eradicator: Eversong
+				ach(62511),	-- Void Eradicator: Zul'Aman
+				ach(62563, {	-- Void Response Team
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						62518,	-- Cosmic Exterminator
+						62513,	-- Outstanding in the Field
+						62498,	-- Void Assault: Eversong
+						62499,	-- Void Assault: Zul'Aman
+						62508,	-- Void Eradicator: Eversong
+						62511,	-- Void Eradicator: Zul'Aman
+					}},
+				}),
+				ach(62568),	-- Void Shmoid
+				ach(62507),	-- Void Smasher: Eversong
+				ach(62510),	-- Void Smasher: Zul'Aman
+				-- Ritual Sites
+				ach(62547),	-- Challenge: Embers
+				ach(62544),	-- Challenge: Magical Alarm Bells
+				ach(62545),	-- Challenge: Malevolent Boons
+				ach(62542),	-- Challenge: Manifestations
+				ach(62543),	-- Challenge: Patrols!
+				ach(62546),	-- Challenge: Reinforced
+				ach(62541),	-- Challenge: Tainted Corpses
+				ach(62540),	-- Challenge: Tendrils
+				ach(62621),	-- Challenging Sites
+				ach(62560),	-- Ember Still Burning
+				ach(62555),	-- Expert Challenge: Embers
+				ach(62552),	-- Expert Challenge: Magical Alarm Bells
+				ach(62553),	-- Expert Challenge: Malevolent Boons
+				ach(62550),	-- Expert Challenge: Manifestations
+				ach(62551),	-- Expert Challenge: Patrols!
+				ach(62554),	-- Expert Challenge: Reinforced
+				ach(62549),	-- Expert Challenge: Tainted Corpses
+				ach(62548),	-- Expert Challenge: Tendrils
+				ach(62559),	-- Malevolence Shrugged
+				ach(62537),	-- Neighborhood Ritual Team: Broken Throne
+				ach(62539),	-- Neighborhood Ritual Team: Daggerspine Point
+				ach(62536),	-- Neighborhood Ritual Watch: Broken Throne
+				ach(62538),	-- Neighborhood Ritual Watch: Daggerspine Point
+				ach(62558),	-- Patrol Ambusher
+				ach(62556),	-- Quick Reflexes
+				ach(62561),	-- Reinforcement Obliteration
+				ach(62622),	-- Ritual Renown
+				ach(62530),	-- Ritual Site Achiever
+				ach(62531),	-- Ritual Site Adept
+				ach(62524),	-- Ritual Site Challenge: Broken Throne
+				ach(62527),	-- Ritual Site Challenge: Daggerspine Point
+				ach(62562, {	-- Ritual Site Disruptor
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						62621,	-- Challenging Sites
+						62622,	-- Ritual Renown
+						62452,	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
+					}},
+				}),
+				ach(62525),	-- Ritual Site Extreme: Broken Throne
+				ach(62528),	-- Ritual Site Extreme: Daggerspine Point
+				ach(62532),	-- Ritual Site Handler
+				ach(62533),	-- Ritual Site Master
+				ach(62523),	-- Ritual Site Mastery: Broken Throne
+				ach(62526),	-- Ritual Site Mastery: Daggerspine Point
+				ach(62534),	-- Ritual Site Rogue: Broken Throne
+				ach(62535),	-- Ritual Site Rogue: Daggerspine Point
+				ach(62529),	-- Ritual Site Starter
+				ach(62521),	-- Ritual Site: Broken Throne
+				ach(62522),	-- Ritual Site: Daggerspine Point
+				ach(62450),	-- Ritual Sites 101: An Introduction to Basic Magical Rituals
+				ach(62451),	-- Ritual Sites 200: Intermediate Ritual Practices
+				ach(62452),	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
+				ach(62453),	-- Ritual Sites 415: Applied Ritual Strategies
+				ach(62454),	-- Ritual Sites 505: A Seminar in Void Ritual Nuance
+			}),
+			n(QUESTS, {
+				q(94380, {	-- Ranger Captain's Summons
+					["description"] = "Can be accepted the first time you get into Silvermoon.",
+					["qg"] = 257459,	-- Farstrider Scout (mobileNPC)
+					["maps"] = { MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+				}),
+				q(96080, {	-- Void Strike
+					["sourceQuest"] = 94380,	-- Ranger Captain's Summons
+					["qg"] = 257411,	-- Ranger Captain Lilatha
+					["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(94381, {	-- Outfitting and Allies
+					["sourceQuest"] = 96080,	-- Void Strike
+					["qg"] = 257411,	-- Ranger Captain Lilatha
+					["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(94383, {	-- Ritual Interest
+					["description"] = "Becomes available after accepting 'Outfitting and Allies' (94381).",
+					["sourceQuest"] = 96080,	-- Void Strike
+					["qg"] = 257415,	-- Kul'amara the Fierce
+					["coord"] = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+					-- This quest unlocks the 'Ritual Sites' faction
+				}),
+				q(94382, {	-- Ritual Problems
+					["sourceQuest"] = 94383,	-- Ritual Interest
+					["qg"] = 257416,	-- Lady Darkglen
+					["coord"] = { 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				-- Repeatable Quests
+				q(94386, {	-- Void Assaults: Zul'Aman
+					["sourceQuest"] = 94381,	-- Outfitting and Allies
+					["qg"] = 257415,	-- Kul'amara the Fierce
+					["coord"] = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isWeekly"] = true,	-- Speculation
+				}),
+				-- Sorted but unsorted (not sure what sourceQuest or action for it)
+				q(95550, {	-- Thin Their Ranks
+					--["sourceQuest"] = ???,	-- ???
+					["qg"] = 257411,	-- Ranger Captain Lilatha
+					["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(95552, {	-- Dark Obelisk Investigation
+					--["sourceQuest"] = ???,	-- ???
+					["qg"] = 257416,	-- Lady Darkglen
+					["coord"] = { 47.7, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(95553, {	-- Manifested Density
+					--["sourceQuest"] = ???,	-- ???
+					["qg"] = 257411,	-- Ranger Captain Lilatha
+					["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(95549, {	-- Raising Magical Alarms
+					--["sourceQuest"] = ???,	-- ???
+					["qg"] = 257416,	-- Lady Darkglen
+					["coord"] = { 47.7, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(271094),	-- Lady Darkglen's Device (QI!)
+					},
+				}),
+			}),
+			n(REWARDS, {
+				-- Currencies
+				currency(FIELD_ACCOLADE),
+				i(DARK_PARTICLE),
+				-- Gear
+				n(ARMOR, {
+					filter(BACK_F, {
+					}),
+					filter(CLOTH, {
+					}),
+					filter(FINGER_F, {
+						i(263888),	-- Void-Laced Band
+					}),
+					filter(LEATHER, {
+						--Cache of Void-Touched Armaments (itemID 263928)
+						i(263800),	-- Bindings of the Void Acolyte
+						i(263798),	-- Cord of the Void Acolyte
+						i(263794),	-- Grips of the Void Acolyte
+						i(263795),	-- Helm of the Void Acolyte
+						i(263796),	-- Pants of the Void Acolyte
+						i(263797),	-- Spaulders of the Void Acolyte
+						i(263793),	-- Talons of the Void Acolyte
+						i(263792),	-- Vest of the Void Acolyte
+						i(263752),	-- Voidwalker's Bracers
+						i(263750),	-- Voidwalker's Cord
+						i(263746),	-- Voidwalker's Gloves
+						i(263744),	-- Voidwalker's Harness
+						i(263748),	-- Voidwalker's Leggings
+						i(263745),	-- Voidwalker's Sandals
+						i(263749),	-- Voidwalker's Shoulderblades
+						i(263747),	-- Voidwalker's Skullcap
+					}),
+					filter(MAIL, {
+					}),
+					filter(NECK_F, {
+					}),
+					filter(PLATE, {
+					}),
+				}),
+				n(WEAPONS, {
+				}),
+				filter(MISC, {
+				}),
+				filter(REAGENTS, {
+				}),
+				filter(RECIPES, {
+				}),
+				-- Boxes
+				i(270244),	-- Field Pouch
+				i(270247),	-- Field Satchel
+				i(264914),	-- Ranger's Cache	// Pinnacle Cache - Midnight Season 1
+			}),
+			n(VENDORS, {
+				n(255473, {	-- Maren Silverwing <Quartermaster>
+					["coord"] = { 48.0, 49.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(263928, {	-- Cache of Void-Touched Armaments (Champion)
+							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
+						}),
+						i(263929, {	-- Cache of Void-Touched Armaments (Heroic)
+							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
+						}),
+						i(268996, {	-- Field Accolade (Automatically converts to 1x FIELD_ACCOLADE currency when bought)
+							["cost"] = { { "i", DARK_PARTICLE, 100 } },
+						}),
+					},
+				}),
+				n(255495, {	-- Rae'ana <Historian and Research Supplier>
+					["coord"] = { 47.7, 50.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = sharedData({
+						["minReputation"] = { FACTION_RITUAL_SITES, 3 },
+						["cost"] = { { "c", FIELD_ACCOLADE, 8 } },
+					}, {
+						i(271158, {	-- Dark Obelisk (DECOR!)
+							["cost"] = { { "c", FIELD_ACCOLADE, 40 } },
+						}),
+						i(273142),	-- Runic Parchment (DECOR!)
+						i(273135),	-- Void Elf Floating Desk (DECOR!)
+						i(273159, {	-- Void Elf Scribe's Desk (DECOR!)
+							["cost"] = { { "c", FIELD_ACCOLADE, 24 } },
+						}),
+						i(273157),	-- Void Flame Candle (DECOR!)
+						i(273147),	-- Void Inkwell (DECOR!)
+					}),
+				}),
+				n(255503, {	-- Sergeant Vornin <Animal Handler>
+					["coord"] = { 48.7, 50.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(270989, {	-- Cappy (PET!)
+							["minReputation"] = { FACTION_RITUAL_SITES, 6 },
+							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
+						}),
+						i(264348, {	-- Unbound Manawyrm (MOUNT!)
+							["sourceAchievements"] = {
+								62562,	-- Ritual Site Disruptor
+								62563,	-- Void Response Team
+							},
+							["cost"] = { { "c", FIELD_ACCOLADE, 50 } },
+						}),
+						i(270331, {	-- Void-Infused Mindbreaker Fry (PET!)
+							["minReputation"] = { FACTION_RITUAL_SITES, 6 },
+							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
+						}),
+						i(270330, {	-- Void-Touched Dragonhawk Egg (PET!)
+							["minReputation"] = { FACTION_RITUAL_SITES, 6 },
+							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
+						}),
+						i(268578, {	-- Void-Touched Hawkstrider (MOUNT!)
+							["minReputation"] = { FACTION_RITUAL_SITES, 8 },
+							["cost"] = { { "c", FIELD_ACCOLADE, 50 } },
+						}),
+					},
+				}),
+				n(255476, {	-- Triam Dawnsetter <Cosmetic Equipment Salvager>
+					["coord"] = { 48.2, 49.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = sharedData({
+						["cost"] = { { "c", FIELD_ACCOLADE, 50 } },
+					}, {
+						i(264320),	-- Cache of Void-Touched Belts
+						i(264322),	-- Cache of Void-Touched Boots
+						i(264318),	-- Cache of Void-Touched Bracers
+						i(264317),	-- Cache of Void-Touched Chestpieces
+						i(264316),	-- Cache of Void-Touched Cloaks
+						i(264319),	-- Cache of Void-Touched Gloves
+						i(264314),	-- Cache of Void-Touched Headgear
+						i(264321),	-- Cache of Void-Touched Legwear
+						i(264315),	-- Cache of Void-Touched Shoulderwear
+						i(264323, {	-- Cache of Void-Touched Weapons
+							["cost"] = { { "c", FIELD_ACCOLADE, 100 } },
+						}),
+					}),
+				}),
+			}),
+			--[[n(WORLD_QUESTS, sharedData({
+				["isWorldQuest"] = true,
+			}, {
+			})),--]]
+		}),
+		n(RITUAL_SITES, {
+			m(BROKEN_THRONE, {
+				--["icon"] = ,
+				["coord"] = { 29.6, 77.9, MAP.MIDNIGHT.ZULAMAN },
+				["groups"] = {
+					o(645183, {	-- Ethereal Treasure
+						["coord"] = { 40.9, 56.5, BROKEN_THRONE },
+						["groups"] = {
+							i(271429),	-- Ethereal Treasure (QS!/QI!)
+						},
+					}),
+					o(649209, {	-- Misplaced Ritual Candle
+						["coord"] = { 51.5, 47.9, BROKEN_THRONE },
+						["groups"] = {
+							i(271999),	-- Misplaced Ritual Candle
+						},
+					}),
+					o(645184, {	-- Sculpted Treasure
+						["coord"] = { 47.7, 66.5, BROKEN_THRONE },
+						["groups"] = {
+							i(271430),	-- Sculpted Treasure (QS!/QI!)
+						},
+					}),
+					i(269828, {	-- Void-Corrupted Eagle Talon (MOUNT!)
+						["cost"] = { { "i", 271999, 1 }, },	-- 1x Misplaced Ritual Candle
+					}),
+				},
+			}),
+			m(DAGGERSPINE_LANDING, {
+				--["icon"] = ,
+				["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["groups"] = {
+					i(271644),	-- Ember of Power (QS!/QI!)
+					o(644396, {	-- Tainted Bone Pile
+						["coord"] = { 66.6, 63.7, DAGGERSPINE_LANDING },
+						["groups"] = {
+							i(270562),	-- Tainted Sample (QS!/QI!)
+						},
+					}),
+					o(645182, {	-- Crystalline Treasure
+						--["coord"] = { X, Y, DAGGERSPINE_LANDING },
+						["groups"] = {
+							i(271428),	-- Crystalline Treasure (QS!/QI!)
+						},
+					}),
+					o(645181, {	-- Exquisite Treasure
+						["coord"] = { 58.8, 49.1, DAGGERSPINE_LANDING },
+						["groups"] = {
+							i(271427),	-- Exquisite Treasure (QS!/QI!)
+						},
+					}),
+				},
+			}),
+			n(EVENT_COMPLETION, {
+				i(269817),	-- Ritual Site Challenge Report: Tendrils (QS!)
+			}),
+			n(QUESTS, {
+				q(95551, {	-- Misappropriated Treasures
+					["providers"] = { 
+						--TODO: could be only Exquisite Treasure as started of quest, not sure
+						{ "i", 271428 },	-- Crystalline Treasure (QS!/QI!)
+						{ "i", 271429 },	-- Ethereal Treasure (QS!/QI!)
+						{ "i", 271427 },	-- Exquisite Treasure (QS!/QI!)
+						{ "i", 271430 },	-- Sculpted Treasure (QS!/QI!)
+					},
+				}),
+				q(95547, {	-- Ritual Site Challenge Report: Tendrils
+					["provider"] = { "i", 269817 },	-- Ritual Site Challenge Report: Tendrils (QS!)
+				}),
+				q(95548, {	-- Tainted Sample
+					["provider"] = { "i", 270562 },	-- Tainted Sample (QS!/QI!)
+				}),
+				q(95554, {	-- Questionable Power
+					["provider"] = { "i", 271644 },	-- Ember of Power (QS!/QI!)
+				}),
+			}),
+			n(REWARDS, {
+				currency(3429),	-- Ritual Site Reports
+				i(271787),	-- Field Accolades
+				i(271786),	-- Ritual Site Reports
+				i(271973),	-- Ritual Spoils (on Broken Throne UI)
+				i(271785),	-- Ritual Spoils (on Daggerspine Landing UI)
+			}),
+		}),
+	},
+})));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
+	n(VOID_ASSAULTS_RITUAL_SITES, {
+		n(QUESTS, {
+			q(92589),	-- <DNT> Last Scenario Step Quest, Triggers after completing any Void Ritual
+			q(94456),	-- <DNT> Last Scenario Step Quest, Triggers after completing a Void Incursion
+			-- Daggerspine Landing
+			q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day & week), could be push quest for questID 95547 (Ritual Site Challenge Report: Tendrils)
+			q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_LANDING
+			q(96147),	-- Dark Obelisk @ 64.7, 50.0, DAGGERSPINE_LANDING
+			q(96148),	-- Dark Obelisk @ 61.9, 62.1, DAGGERSPINE_LANDING
+			q(96149),	-- Dark Obelisk @ 63.8, 70.5, DAGGERSPINE_LANDING
+			q(96150),	-- Dark Obelisk @ 39.5, 76.2, DAGGERSPINE_LANDING
+			q(96151),	-- Dark Obelisk @ 35.0, 63.8, DAGGERSPINE_LANDING
+			q(96152),	-- Dark Obelisk @ 50.4, 42.8, DAGGERSPINE_LANDING
+			q(96153),	-- Dark Obelisk @ 44.8, 47.4, DAGGERSPINE_LANDING
+			q(96154),	-- Dark Obelisk @ 42.5, 57.0, DAGGERSPINE_LANDING
+		}),
+	}),
+})));

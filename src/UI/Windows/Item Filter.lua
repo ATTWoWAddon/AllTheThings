@@ -7,11 +7,16 @@ local ipairs, pairs, tinsert, tonumber, tostring
 	= ipairs, pairs, tinsert, tonumber, tostring;
 
 -- Implementation
-local FilterID = 0;
+local __SearchSetup = {
+	field = nil,
+	value = nil,
+	drop = {g=true},
+	criteria = nil
+}
+local SearchSetup
 local function ParseCommand(self, cmd)
 	if cmd and cmd ~= "" then
-		cmd = cmd:lower();
-		
+
 		local text = cmd:lower();
 		local f = tonumber(text);
 		if text ~= "" and tostring(f) ~= text then
@@ -25,11 +30,40 @@ local function ParseCommand(self, cmd)
 				end
 			end
 		end
-		if f and f >= 0 and FilterID ~= f then
-			FilterID = f;
+		-- do a search for a direct filterID
+		if f and f >= 0 and (SearchSetup.value ~= f or SearchSetup.field ~= "f") then
+			SearchSetup.field = "f"
+			SearchSetup.value = f
+			SearchSetup.criteria = nil
 			wipe(self.data.g);
-			collectgarbage();
 			self:Rebuild();
+			return
+		end
+		-- direct field=value search
+		if cmd then
+			local field, value = ("="):split(cmd)
+			value = tonumber(value) or value
+			if value and value ~= "" then
+				-- allows performing a value search when looking for 'nil'
+				if value == "nil" then
+					value = app.Modules.Search.SearchNil
+				-- use proper bool values if specified
+				elseif value == "true" then
+					value = true
+				elseif value == "false" then
+					value = false
+				end
+			else
+				value = true
+			end
+			if SearchSetup.field ~= field or SearchSetup.value ~= value then
+				SearchSetup.field = field
+				SearchSetup.value = value
+				SearchSetup.criteria = nil
+				wipe(self.data.g);
+				self:Rebuild();
+				return
+			end
 		end
 	end
 end
@@ -45,27 +79,35 @@ app:CreateWindow("Item Filter", {
 		end
 	end,
 	OnLoad = function(self, settings)
-		FilterID = settings.FilterID;
+		SearchSetup = settings.SearchSetup or __SearchSetup
+		-- convert old settings values
+		if settings.FilterID then
+			SearchSetup.field = "f"
+			SearchSetup.value = settings.FilterID
+			settings.FilterID = nil
+		end
 	end,
 	OnSave = function(self, settings)
-		settings.FilterID = FilterID;
+		settings.SearchSetup = SearchSetup
 	end,
 	OnInit = function(self, handlers)
 		local options = {
-			app.CreateRawText(RETRIEVING_DATA, {	-- Filter
+			app.CreateRawText(L.ITEM_FILTER_BUTTON_TEXT, {	-- Filter
 				icon = 134941,
-				description = "Press this button to change the filter.\n\nChanging this value will only show items that match the given filter ID.",
+				description = L.ITEM_FILTER_BUTTON_DESCRIPTION,
 				visible = true,
 				priority = 6,
 				OnClick = function(row, button)
-					app:ShowPopupDialogWithEditBox("Please enter a new filter ID", tostring(FilterID), function(cmd)
+					app:ShowPopupDialogWithEditBox(L.ITEM_FILTER_POPUP_TEXT, (SearchSetup.field and SearchSetup.field ~= "f" and SearchSetup.field.."=" or "")..tostring(SearchSetup.value), function(cmd)
 						ParseCommand(self, cmd);
 					end);
 					return true;
 				end,
 				OnUpdate = function(data)
-					if FilterID then
-						data.text = "Filter: " .. (L.FILTER_ID_TYPES[FilterID] or "???") .. " (" .. FilterID .. ")";
+					if SearchSetup.field == "f" and SearchSetup.value then
+						data.text = "Filter: " .. (L.FILTER_ID_TYPES[SearchSetup.value] or "???") .. " (" .. SearchSetup.value .. ")";
+					elseif SearchSetup.field and SearchSetup.value then
+						data.text = "Filter: "..SearchSetup.field.."="..tostring(SearchSetup.value)
 					else
 						data.text = "Click to change the filter";
 					end
@@ -85,16 +127,14 @@ app:CreateWindow("Item Filter", {
 				local g = t.g;
 				if #g < 1 then
 					for i,option in ipairs(options) do
-						option.parent = data;
+						option.parent = t.data;
 						tinsert(g, option);
 					end
-					if FilterID then
-						local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(t)
-							return t.f == FilterID;
-						end);
+					if SearchSetup.value then
+						local results = app:BuildSearchResponseRetailStyle(SearchSetup.field, SearchSetup.value, SearchSetup.drop, SearchSetup.criteria)
 						if results and #results > 0 then
-							for i,result in ipairs(results) do
-								tinsert(g, result);
+							for i=1,#results do
+								g[#g + 1] = results[i]
 							end
 							self:AssignChildren();
 						end
@@ -103,18 +143,19 @@ app:CreateWindow("Item Filter", {
 			end,
 		}));
 	end,
-	OnUpdate = function(self, ...)
-		-- Prevent Quests and Achievements from being collectible within this context.
-		local oldAchievementsCollection = app.Settings.Collectibles.Achievements;
-		local oldQuestCollection = app.Settings.Collectibles.Quests;
-		local oldFilder = app.Modules.Filter.Get.FilterID()
-		app.Modules.Filter.Set.FilterID(false);
-		app.Settings.Collectibles.Achievements = false;
-		app.Settings.Collectibles.Quests = false;
-		self:DefaultUpdate(...);
-		app.Modules.Filter.Set.FilterID(oldFilder);
-		app.Settings.Collectibles.Quests = oldQuestCollection;
-		app.Settings.Collectibles.Achievements = oldAchievementsCollection;
-		return true;
-	end
+	-- This seems really strange to include here, and it's preventing various results from being visible when they otherwise should be
+	-- OnUpdate = function(self, ...)
+	-- 	-- Prevent Quests and Achievements from being collectible within this context.
+	-- 	local oldAchievementsCollection = app.Settings.Collectibles.Achievements;
+	-- 	local oldQuestCollection = app.Settings.Collectibles.Quests;
+	-- 	local oldFilder = app.Modules.Filter.Get.FilterID()
+	-- 	app.Modules.Filter.Set.FilterID(false);
+	-- 	app.Settings.Collectibles.Achievements = false;
+	-- 	app.Settings.Collectibles.Quests = false;
+	-- 	self:DefaultUpdate(...);
+	-- 	app.Modules.Filter.Set.FilterID(oldFilder);
+	-- 	app.Settings.Collectibles.Quests = oldQuestCollection;
+	-- 	app.Settings.Collectibles.Achievements = oldAchievementsCollection;
+	-- 	return true;
+	-- end
 });

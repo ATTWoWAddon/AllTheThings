@@ -768,7 +768,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								},
 							}),
 							i(140182),	-- Glowing Lily (Mythic)
-							q(43920, {	-- High Botanist Tel'arn (Mythic)
+							q(43919, {	-- High Botanist Tel'arn (Mythic)
 								["provider"] = { "i", 140182 },	-- Glowing Lily (Mythic)
 								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,

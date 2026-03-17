@@ -15,6 +15,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(194040),	-- Slateskin Hide
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					i(238609),	-- Arathi Craftsman's Spokeshave
+					i(238608),	-- Arathi Tanning Agent
+					i(238606),	-- Artisan's Drawing Knife
+					i(238611),	-- Carapace Shiner
+					i(238604),	-- Dornogal Carving Knife
+					i(238605),	-- Earthen Worker's Beams
+					i(238607),	-- Fungarian's Rich Tannin
+					i(238610),	-- Nerubian's Slicking Iron
+				})),
+			}),
 		}),
 		n(CRAFTABLES, {
 			expansion(EXPANSION.SL, {

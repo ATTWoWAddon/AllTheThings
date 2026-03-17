@@ -172,7 +172,7 @@ i(202072,{b=1,coords={
 i(202066,{cost={{"i",202073,25}},description="Now that your barrel is half full, the fishing gets harder. You're looking for lava fish now.",requireSkill=356,sourceQuests={72676},spellID=396699,g={
 i(202073,{b=1,coords={
 [2022]={{35.8,64.6}}},description="You'll need 25 of these fish. Keep in mind, they're rarer drops, so this will take longer than the Frigid Floe Fish."})}}),
-q(72808,{cost={{"i",202074,1}},description="Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",requireSkill=356,sourceQuests={72676},g={
+q(72808,{cost={{"i",202074,1}},description="Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",providers={{"i",202068}},requireSkill=356,sourceQuests={72676},g={
 i(202074,{b=1,coords={
 [2025]={{56,44.5}}},description="Just one! But it'll take a while. Having good Perception on your Profession gear may help."}),
 i(202068,{spellID=396698})}}),

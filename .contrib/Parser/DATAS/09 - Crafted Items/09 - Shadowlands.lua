@@ -713,7 +713,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(SKINNING, {
-		spell(8613, {	-- Skinning
+		header(HEADERS.Spell, 308569, {	-- Skinning (Shadowlands)
 			i(172094),	-- Callous Hide
 			i(172095),	-- Callous Hide Scraps
 			i(172089),	-- Desolate Leather

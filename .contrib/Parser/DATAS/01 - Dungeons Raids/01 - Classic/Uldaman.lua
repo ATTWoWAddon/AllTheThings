@@ -625,11 +625,53 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 			}),
-			o(125477, {	-- Conspicuous Urn
-				["description"] = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",
-				["groups"] = {
-					i(7671),	-- Shattered Necklace Topaz
-				},
+			n(TREASURES, {
+				o(141979, {	-- Ancient Treasure
+					["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
+					["modelScale"] = 3,
+					["sym"] = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
+						8029,	-- Plans: Wicked Mithril Bade
+					}},
+				}),
+				o(123329, {	-- Baelog's Chest
+					i(7740, {	-- Gni'kiv Medallion
+						["description"] = "Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",
+						["timeline"] = { REMOVED_4_1_0 },
+					}),
+				}),
+				o(125477, {	-- Conspicuous Urn
+					["description"] = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",
+					["groups"] = {
+						i(7671),	-- Shattered Necklace Topaz
+					},
+				}),
+				o(113757, {	-- Shadowforge Cache
+					["description"] = "WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",
+					["groups"] = {
+						i(7669),	-- Shattered Necklace Ruby
+					},
+				}),
+				i(7733, {	-- Staff of Prehistoria
+					["description"] = "Use this on the Keystone in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",
+					["timeline"] = { REMOVED_4_1_0 },
+					["cost"] = {
+						{ "i", 7740, 1 },	-- Gni'kiv Medallion
+						{ "i", 7741, 1 },	-- The Shaft of Tsol
+					},
+				}),
+				o(142088, {	-- Tablet of Will
+					["description"] = "Located in the same room as Galgann Firehammer.",
+					["groups"] = {
+						i(5824),	-- Tablet of Will
+					},
+				}),
+				o(131474, {	-- The Discs of Norgannon
+					["description"] = "Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",
+					["modelScale"] = 3,
+					["groups"] = {
+						i(6064),	-- Miniature Platinum Discs
+					},
+				}),
 			}),
 			-- #if AFTER 6.0.2
 			e(468, {	-- The Lost Dwarves (Baelog)
@@ -687,12 +729,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			-- #endif
-			o(123329, {	-- Baelog's Chest
-				i(7740, {	-- Gni'kiv Medallion
-					["description"] = "Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",
-					["timeline"] = { REMOVED_4_1_0 },
-				}),
-			}),
 			n(6912, {	-- Remains of a Paladin
 				-- #if AFTER 4.0.3
 				["description"] = "This dead Paladin was central in now removed dungeon quests, and remains abandoned on the ground without any purpose.",
@@ -704,14 +740,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(467, {	-- Revelosh
 				["creatureID"] = 6910,
 				["groups"] = {
-					i(7733, {	-- Staff of Prehistoria
-						["description"] = "Use this on the keyhole looking gizmo in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",
-						["timeline"] = { REMOVED_4_1_0 },
-						["cost"] = {
-							{ "i", 7740, 1 },	-- Gni'kiv Medallion
-							{ "i", 7741, 1 },	-- The Shaft of Tsol
-						},
-					}),
 					i(7741, {	-- The Shaft of Tsol
 						["description"] = "Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",
 						["timeline"] = { REMOVED_4_1_0 },
@@ -747,37 +775,54 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				},
 			}),
-			e(469, {	-- Ironaya
-				["creatureID"] = 7228,
-				-- #if BEFORE 4.1.0
+			-- #if BEFORE 4.1.0
+			o(124371, {	-- Keystone
+				["coord"] = { 50.7, 73.9, ULDAMAN },
 				["cost"] = { { "i", 7733, 1 } },	-- Staff of Prehistoria
-				-- #endif
 				["groups"] = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217704)),	-- Ironshod Bludgeon
-					i(9408, {	-- Ironshod Bludgeon
-						["timeline"] = { REMOVED_1_15_1 },
+					-- #if OBJECTIVES
+					objective(1, {	-- Explore the Hidden Chamger
+						["questID"] = 2240,	-- The Hidden Chamber
+						["timeline"] = { REMOVED_4_0_3 },
+						["races"] = ALLIANCE_ONLY,
 					}),
-					-- #else
-					i(9408),	-- Ironshod Bludgeon
 					-- #endif
-					i(151398, {	-- Hood of the Idle Architect
-						["timeline"] = { ADDED_7_3_0 },
+			-- #endif
+					e(469, {	-- Ironaya
+						-- #if AFTER 4.1.0
+						["provider"] = { "o", 124371 },	-- Keystone
+						-- #endif
+						["creatureID"] = 7228,
+						["groups"] = {
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_TWO, i(217704)),	-- Ironshod Bludgeon
+							i(9408, {	-- Ironshod Bludgeon
+								["timeline"] = { REMOVED_1_15_1 },
+							}),
+							-- #else
+							i(9408),	-- Ironshod Bludgeon
+							-- #endif
+							i(151398, {	-- Hood of the Idle Architect
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+							i(151420, {	-- Vault-Watcher's Breastplate
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+							i(9409),	-- Ironaya's Bracers
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_TWO, i(217303)),	-- Stoneweaver Leggings
+							i(9407, {	-- Stoneweaver Leggings
+								["timeline"] = { REMOVED_1_15_1 },
+							}),
+							-- #else
+							i(9407),	-- Stoneweaver Leggings
+							-- #endif
+						},
 					}),
-					i(151420, {	-- Vault-Watcher's Breastplate
-						["timeline"] = { ADDED_7_3_0 },
-					}),
-					i(9409),	-- Ironaya's Bracers
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217303)),	-- Stoneweaver Leggings
-					i(9407, {	-- Stoneweaver Leggings
-						["timeline"] = { REMOVED_1_15_1 },
-					}),
-					-- #else
-					i(9407),	-- Stoneweaver Leggings
-					-- #endif
+			-- #if BEFORE 4.1.0
 				},
 			}),
+			-- #endif
 			e(748, {	-- Obsidian Sentinel
 				["creatureID"] = 7023,
 				["groups"] = {
@@ -818,18 +863,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(11311),	-- Emberscale Cape
 				},
 			}),
-			o(113757, {	-- Shadowforge Cache
-				["description"] = "WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",
-				["groups"] = {
-					i(7671),	-- Shattered Necklace Topaz
-				},
-			}),
-			o(142088, {	-- Tablet of Will
-				["description"] = "Located in the same room as Galgann Firehammer.",
-				["groups"] = {
-					i(5824),	-- Tablet of Will
-				},
-			}),
 			e(472, {	-- Grimlok
 				["creatureID"] = 4854,
 				["groups"] = {
@@ -867,20 +900,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9418),	-- Stoneslayer
 					i(9413),	-- The Rockpounder
 					i(11118),	-- Archaedic Stone
-				},
-			}),
-			o(141979, {	-- Ancient Treasure
-				["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
-				["modelScale"] = 3,
-				["sym"] = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
-					8029,	-- Plans: Wicked Mithril Bade
-				}},
-			}),
-			o(131474, {	-- The Discs of Norgannon
-				["description"] = "Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",
-				["modelScale"] = 3,
-				["groups"] = {
-					i(6064),	-- Miniature Platinum Discs
 				},
 			}),
 		},

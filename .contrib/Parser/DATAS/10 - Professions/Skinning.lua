@@ -982,8 +982,19 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			--["groups"] = sharedData({ ["cost"] = {{ "c", MID_SKINNING_KNOWLEDGE, 1 }} }, {
-			--}),
+			["groups"] = sharedData({ ["cost"] = {{ "c", MID_SKINNING_KNOWLEDGE, 1 }} }, {
+				r(1226037),	-- Carve Meat
+				r(1225948),	-- Grand Beast Lure
+				r(1225939),	-- Lightbloom Diffuser
+				r(1225943),	-- Majestic Eversong Lure
+				r(1225945),	-- Majestic Harandar Lure
+				r(1225946),	-- Majestic Voidstorm Lure
+				r(1225944),	-- Majestic Zul'Aman Lure
+				r(1225940),	-- Primal Diffuser
+				r(1223388),	-- Sharpen Your Knife
+				r(1225942),	-- Void Diffuser
+				r(1225941),	-- Wild Diffuser
+			}),
 		}),
 		n(TREASURES, {
 			o(525891, {	-- Amani Skinning Knife

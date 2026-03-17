@@ -2076,23 +2076,22 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(TREASURES, {
-					--[[
-					Note: These objects have known flags to mark completion but they never seem to fire.
-						The coords have been added to the "Abu'gar" quest instead.
 					o(233157, {	-- Abu'gar's Vitality
-						["questID"] = 35711,
+						--["questID"] = 35711,
 						["coord"] = { 65.8, 61.1, DRAENOR_NAGRAND },
+						["groups"] = { i(114242) },	-- Abu'Gar's Vitality
 					}),
 					o(233506, {	-- Abu'gar's Missing Reel
-						["questID"] = 36089,
+						--["questID"] = 36089,
 						["coord"] = { 85.4, 38.7, DRAENOR_NAGRAND },
+						["groups"] = { i(114243) },	-- Abu'Gar's Finest Reel
 					}),
 					o(233642, {	-- Abu'Gar's Favorite Lure
-						["questID"] = 36072,
+						--["questID"] = 36072,
 						["coord"] = { 38.4, 49.3, DRAENOR_NAGRAND },
 						["description"] = "Hidden behind some reeds by the bridge.",
+						["groups"] = { i(114245) },	-- Abu'Gar's Favorite Lure
 					}),
-					]]--
 					o(233452, {	-- A Pile of Dirt
 						["questID"] = 35951,
 						["coord"] = { 73.1, 10.8, DRAENOR_NAGRAND },

@@ -13,7 +13,7 @@ MAX_LEVEL_CHARACTERS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "最高等级角色",
-		-- TODO: tw = "",
+		tw = "最高等級角色",
 	},
 	description = {
 		en = "Contains things that can be obtained only by max level characters.",
@@ -26,6 +26,6 @@ MAX_LEVEL_CHARACTERS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含只能由最高等级角色获得的物品。",
-		-- TODO: tw = "",
+		tw = "包含只能由最高等級角色獲得的物品。",
 	},
 });

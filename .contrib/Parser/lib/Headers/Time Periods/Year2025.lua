@@ -12,6 +12,6 @@ YEAR2025 = createHeader({
 		-- TODO: pt = "",
 		ru = "2025 год",
 		cn = "2025年",
-		-- TODO: tw = "",
+		-- tw = "2025年",
 	},
 });

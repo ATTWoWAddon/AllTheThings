@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		cn = "该套装已被你的某个角色使用。",
-		-- TODO: tw = "",
+		cn = "这套服装已被你的某个角色使用过。",
+		tw = "這套服裝已被你的某個角色使用過。",
 	},
 })

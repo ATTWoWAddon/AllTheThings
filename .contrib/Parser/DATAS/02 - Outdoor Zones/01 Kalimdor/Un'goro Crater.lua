@@ -2186,6 +2186,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			n(TREASURES, {
+				i(11315, {	-- Bloodpetal Sprout
+					["provider"] = { "o", 164958 },	-- Bloodpetal Sprout
+				}),
+				i(11184, {	-- Blue Power Crystal
+					["providers"] = {
+						{ "o", 164658 },	-- Blue Power Crystal
+						{ "o", 164778 },	-- Blue Power Crystal
+					},
+				}),
+				i(11185, {	-- Green Power Crystal
+					["providers"] = {
+						{ "o", 164659 },	-- Green Power Crystal
+						{ "o", 164779 },	-- Green Power Crystal
+					},
+				}),
+				i(11186, {	-- Red Power Crystal
+					["providers"] = {
+						{ "o", 164660 },	-- Red Power Crystal
+						{ "o", 164780 },	-- Red Power Crystal
+					},
+				}),
+				i(11018, {	-- Un'Goro Soil
+					["provider"] = { "o", 157936 },	-- Un'Goro Dirt Pile
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				i(11188, {	-- Yellow Power Crystal
+					["providers"] = {
+						{ "o", 164661 },	-- Yellow Power Crystal
+						{ "o", 164781 },	-- Yellow Power Crystal
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>
 					["coord"] = { 43.4, 41.6, UNGORO_CRATER },
@@ -2229,6 +2262,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				i(11116, {	-- A Mangled Journal
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
 				i(142377, {	-- Badly Broken Dark Spear
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
@@ -2243,21 +2279,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6553,	-- Gorishi Reaver
 						6554,	-- Gorishi Stinger
 						6555,	-- Gorishi Tunneler
-					},
-				}),
-				i(11315, {	-- Bloodpetal Sprout
-					["provider"] = { "o", 164958 },	-- Bloodpetal Sprout
-				}),
-				i(11184, {	-- Blue Power Crystal
-					["providers"] = {
-						{ "o", 164658 },	-- Blue Power Crystal
-						{ "o", 164778 },	-- Blue Power Crystal
-					},
-				}),
-				i(11185, {	-- Green Power Crystal
-					["providers"] = {
-						{ "o", 164659 },	-- Green Power Crystal
-						{ "o", 164779 },	-- Green Power Crystal
 					},
 				}),
 				i(12809, {	-- Guardian Stone
@@ -2295,22 +2316,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
-				i(11186, {	-- Red Power Crystal
-					["providers"] = {
-						{ "o", 164660 },	-- Red Power Crystal
-						{ "o", 164780 },	-- Red Power Crystal
-					},
-				}),
-				i(11018, {	-- Un'Goro Soil
-					["provider"] = { "o", 157936 },	-- Un'Goro Dirt Pile
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
-				i(11188, {	-- Yellow Power Crystal
-					["providers"] = {
-						{ "o", 164661 },	-- Yellow Power Crystal
-						{ "o", 164781 },	-- Yellow Power Crystal
-					},
-				}),
 			}),
 		},
 	}),

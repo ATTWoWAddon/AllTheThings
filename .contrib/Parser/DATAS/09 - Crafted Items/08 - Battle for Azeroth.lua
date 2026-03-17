@@ -1434,14 +1434,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(161085),	-- Tattered Map
 	}),
 	prof(SKINNING, {
-		i(154164),	-- Blood-Stained Bone
-		i(154165),	-- Calcified Bone
-		i(152541),	-- Coarse Leather
-		i(168650, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale
-		i(168649, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather
-		i(153051),	-- Mistscale
-		i(153050),	-- Shimmerscale
-		i(154722),	-- Tempest Hide
+		header(HEADERS.Spell, 265855, {	-- Skinning
+			i(154164),	-- Blood-Stained Bone
+			i(154165),	-- Calcified Bone
+			i(152541),	-- Coarse Leather
+			i(168650, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale
+			i(168649, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather
+			i(153051),	-- Mistscale
+			i(153050),	-- Shimmerscale
+			i(154722),	-- Tempest Hide
+		}),
 	}),
 	prof(TAILORING, {
 		n(DISCOVERY, {

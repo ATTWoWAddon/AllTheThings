@@ -176,11 +176,11 @@ s(179893,53496,{b=1,f=8,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFi
 i(53499,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,u=2}),
 s(179894,53497,{b=1,f=3,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,u=2}),
 s(203103,53498,{b=1,f=4,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,u=2}),
-s(179896,53500,{b=1,f=7,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22},u=2})}}),
+s(179896,53500,{b=1,f=7,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,u=2})}}),
 n(41110,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,u=2,g={
 i(53502,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,u=2}),
 i(53503,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,u=2}),
-s(179898,53505,{b=1,f=7,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22},u=2}),
+s(179898,53505,{b=1,f=7,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,u=2}),
 s(179897,53504,{b=1,f=5,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,u=2}),
 i(53501,{b=1,f=52,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,q=4,u=2})}}),
 n(40961,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,u=2,g={

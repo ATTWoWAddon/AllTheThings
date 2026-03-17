@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ah,cat,cl,cu,flt,h,i,o,prof,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
+local ah,cat,cl,cu,flt,h,i,prof,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
 h(-698,{SortPriority=15,g={
 x(1,{
@@ -282,14 +282,14 @@ i(19259,{q=3,u=13})}),
 flt(57,{
 s(117538,1819,{collectible=false,f=57,lvl=17,q=0})}),
 flt(50,{
-i(23197,{c={2,7,11},lvl=60,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},rwp=50004,u=15}),
+i(23197,{c={2,7,11},lvl=60,q=3,rwp=50004,u=15}),
 i(11733,{description="This item is now completely worthless.",f=200,lvl=50,q=2}),
-i(23203,{c={2,6},lvl=60,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},rwp=50004,u=15}),
+i(23203,{c={2,6},lvl=60,q=3,rwp=50004,u=15}),
 i(11736,{description="This item is now completely worthless.",f=200,lvl=50,q=2}),
 i(11732,{description="This item is now completely worthless.",f=200,lvl=50,q=2}),
 i(11734,{description="This item is now completely worthless.",f=200,lvl=50,q=2}),
 i(11737,{description="This item is now completely worthless.",f=200,lvl=50,q=2}),
-i(23199,{c={2,7,11},lvl=60,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},rwp=50004,u=15})}),
+i(23199,{c={2,7,11},lvl=60,q=3,rwp=50004,u=15})}),
 flt(113,{
 i(5765,{f=113,q=1}),
 i(856,{f=113,q=1}),
@@ -3638,17 +3638,9 @@ i(9260,{coords={
 [1446]={{69.4,53.5},{74,47}}},crs={3382,3383,3384,7855,7858,40632,40635,40636,44168},f=55,q=1}),
 i(12205,{coords={
 [1445]={{34.1,22.5},{55.2,54.8}}},crs={4376,4378,4379,4415},description="Drops from spiders in higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",q=1}),
-i(17965,{q=2}),
-o(2744),
-o(19017,{description="Can be found in the sea.",g={
-i(5503,{q=1}),
-i(5498,{q=2})}}),
-o(19018,{
-s(117748,2143,{f=5,lvl=22,q=1}),
-i(5500,{q=2}),
-i(5504,{q=1})}),
 i(8153,{description="Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",q=2}),
-i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={221,225,1431,1437,1440},q=1})})}),
+i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={221,225,1431,1437,1440},q=1}),
+i(17965,{q=2})})}),
 x(2,{u=17,g={
 flt(3,{u=17,g={
 s(135398,25043,{f=3,lvl=70,q=2,u=17}),
@@ -6757,7 +6749,7 @@ s(118058,2567,{f=20,lvl=20,q=3}),
 s(120709,5756,{f=20,lvl=32,q=3})}}),
 i(5760,{q=2,sym={{"select","itemID",12058}}}),
 i(63349,{awp=40001,q=1,g={
-s(211591,68161,{f=25,lvl=85,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22}}),
+s(211591,68161,{f=25,lvl=85,q=4}),
 i(68162,{awp=40003,f=36,lvl=85,q=4,rwp=50004}),
 s(211593,68163,{f=20,lvl=85,q=4})}}),
 i(43622,{awp=30002,q=2}),
@@ -6768,7 +6760,7 @@ i(31952,{awp=20100,q=2}),
 i(5758,{q=2}),
 i(4632,{q=2}),
 i(43575,{awp=30002,q=1,g={
-s(174858,43611,{f=25,lvl=80,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22}}),
+s(174858,43611,{f=25,lvl=80,q=4}),
 i(43612,{f=36,lvl=80,q=4,rwp=50004}),
 s(174860,43613,{f=20,lvl=80,q=4})}}),
 i(4638,{q=2,sym={{"select","itemID",21947,21945,16215,11225,16218,11208,8390,8387,8389,14467,10320,10302,10315,7993,7990,7989,12683,9295,3395}}}),

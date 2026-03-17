@@ -68,10 +68,10 @@ q(12191,{awp=20202,coords={
 qo(1,{crs={24108},e=7,providers={{"i",33096}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(11321,{awp=20001,coords={
-[1426]={{46.4,40.3}}},cost={{"i",33955,1}},description="This quest was only available during the 2007 Brewfest.",e=7,isYearly=1,qgs={24468},r=2,rwp=20403,u=2,g={
+[1426]={{46.4,40.3}}},cost={{"i",33955,1}},description="This quest was only available during the 2007 Brewfest.",e=7,qgs={24468},r=2,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(11413,{awp=20001,coords={
-[1411]={{46.3,14.8}}},cost={{"i",33955,1}},description="This quest was only available during the 2007 Brewfest.",e=7,isYearly=1,qgs={24497},r=1,rwp=20403,u=2,g={
+[1411]={{46.3,14.8}}},cost={{"i",33955,1}},description="This quest was only available during the 2007 Brewfest.",e=7,qgs={24497},r=1,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(12491,{awp=20202,e=7,isYearly=1,lvl=65,providers={{"i",38280}},r=2,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
@@ -98,10 +98,10 @@ q(12318,{awp=20403,coords={
 [1411]={{47.9,26.9}},
 [1426]={{46.2,52.8}}},e=7,isBreadcrumb=1,lvl=65,nextQuests={12062},qgs={27584,28329},rwp=30303,sourceQuests={11441,11442,11446,11447}}),
 q(12193,{awp=20001,coords={
-[1426]={{46.4,40.3}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24468},r=2,rwp=30002,g={
+[1426]={{46.4,40.3}}},cost={{"i",33955,1}},e=7,qgs={24468},r=2,rwp=30002,g={
 s(143353,33016,{b=1,e=7,f=2,filterForRWP=2,q=3})}}),
 q(12194,{awp=20001,coords={
-[1411]={{46.3,14.8}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24497},r=1,rwp=30002,g={
+[1411]={{46.3,14.8}}},cost={{"i",33955,1}},e=7,qgs={24497},r=1,rwp=30002,g={
 s(143353,33016,{b=1,e=7,f=2,filterForRWP=2,q=3})}}),
 q(11454,{awp=20001,coords={
 [1411]={{44.3,17.5}},
@@ -232,7 +232,7 @@ i(33978,{awp=20001,b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=1,rwp=30002})}}),
 flt(102,{e=7,g={
 toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3})}}),
 h(-219,{e=7})}}),
-n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";for i,item in ipairs(t.g)do	item.u=7;end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";for i,item in ipairs(t.g)do	item.u=7;end	end	end,r=1,sourceQuests={11419},g={
+n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=1,sourceQuests={11419},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=60,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=30,q=3,rwp=20403,u=2})}}),
 n(24501,{awp=20202,coords={
@@ -255,7 +255,7 @@ i(33025,{e=7,f=55,lvl=55,q=1}),
 i(34064,{e=7,f=55,lvl=25,q=1}),
 i(33026,{e=7,f=55,lvl=65,q=1})}}),
 n(24468,{awp=20202,coords={
-[1426]={{46.4,40.3}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";for i,item in ipairs(t.g)do	item.u=7;end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";for i,item in ipairs(t.g)do	item.u=7;end	end	end,r=2,sourceQuests={11400},g={
+[1426]={{46.4,40.3}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=2,sourceQuests={11400},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=60,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=30,q=3,rwp=20403,u=2})}}),
 n(23533,{awp=20202,coords={
@@ -1178,7 +1178,7 @@ q(12139,{awp=20001,coords={
 [1941]={{47.2,46.4}}},e=16,isDaily=1,lvl=10,qgs={23973},r=1,g={
 i(20557,{b=1,e=16,f=55,q=1}),
 i(34068,{e=16,f=55,q=1})}}),
-q(11392,{awp=20001,e=16,isDaily=1,lvl=65,maps={435,436},providers={{"o",186267}},rwp=30300,sourceQuests={11135,11220}}),
+q(11392,{awp=20001,e=16,lvl=65,maps={435,436},providers={{"o",186267}},rwp=30300,sourceQuests={11135,11220}}),
 q(11356,{awp=20001,e=16,isBreadcrumb=1,maps={1413,1434,1446,1452,1453,1455,1457,1947,1953,1955},nextQuests={11360,11439,11440},qgs={18927,19148,19171,19172,19173,20102},r=2}),
 q(1658,{coords={
 [1424]={{50,57.2}}},e=16,isYearly=1,lvl=25,maps={1420,1421},qgs={15199},r=2,rwp=40003,g={

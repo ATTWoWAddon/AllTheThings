@@ -16,3 +16,5 @@
 12.0.0.63854
 145@@@Razorwind Shores
 146@@@Founders Point
+12.0.5.66330
+146@@@Founder's Point

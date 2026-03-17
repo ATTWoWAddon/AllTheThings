@@ -4824,40 +4824,20 @@ exploration(15808),	-- Windrunner Spire
 exploration(15829),	-- Magisters' Terrace
 exploration(15915),	-- Warband Camp
 exploration(15920),	-- The Cradle
-exploration(15922),	-- Amirdrassil Roots
-exploration(15923),	-- Nordrassil Roots \\ Jungle Cascades
-exploration(15926),	-- Fungal Cleft
-exploration(15927),	-- Teldrassil Roots
-exploration(15929),	-- Shrine of Ages
-exploration(15934),	-- The Tangleknot
 exploration(15937),	-- Blossoming Terrace
 exploration(15947),	-- Zul'Aman
-exploration(15950),	-- Locus Point
-exploration(15956),	-- Stormarion Keep
 exploration(15958),	-- Masters' Perch
 exploration(15959),	-- Slayer's Rise
-exploration(15961),	-- The Approach
-exploration(15962),	-- Ethereum Refinery
-exploration(15963),	-- Storm Fields
-exploration(15964),	-- The Molt
-exploration(15965),	-- The Bladeburrows
-exploration(15966),	-- Den of Predaxas
-exploration(15967),	-- Ethereum Overcroft
 exploration(15968),	-- Eversong Woods
 exploration(15970),	-- Grief Spire
 exploration(15971),	-- Hate Spire
 exploration(15973),	-- Voidscar Arena \\ Pit of Spite
 exploration(15974),	-- Path of Predation
-exploration(15975),	-- The Bloodplains
 exploration(15976),	-- Stareater Pavilion
 exploration(15977),	-- Shattersky Pavilion
 exploration(15992),	-- North Sanctum
 exploration(15993),	-- West Sanctum
-exploration(15994),	-- Sunsail Anchorage
-exploration(15996),	-- Lightbloom Ath'Ran
 exploration(15997),	-- Saltheril's Haven
-exploration(15998),	-- East Sanctum
-exploration(16000),	-- Runestone Falithas
 exploration(16042),	-- 13doodadtest
 exploration(16043),	-- Windrunner Village
 exploration(16044),	-- Elrendar River
@@ -4865,44 +4845,16 @@ exploration(16045),	-- Runestone Shan'dor
 exploration(16047),	-- Thas'minellia \\ Suncrown Tree
 exploration(16048),	-- Dawnstar Spire
 exploration(16049),	-- Lightbloom Lash'Ra
-exploration(16050),	-- Farstrider Enclave
-exploration(16051),	-- Sanctum of the Sun
-exploration(16053),	-- Zeb'Nowa
-exploration(16054),	-- Thalassian Pass
 exploration(16055),	-- Thalassian Range
-exploration(16056),	-- Ruins of Deatholme
-exploration(16058),	-- Sanctum of the Moon
 exploration(16059),	-- Hollow Grove
-exploration(16060),	-- Daggerspine Landing
 exploration(16061),	-- Daggerspine Point
-exploration(16062),	-- Lake Elrendar
 exploration(16063),	-- Scintilas Falls
 exploration(16064),	-- Tor'Watha
-exploration(16066),	-- Azurebreeze Coast
-exploration(16067),	-- Farstrider Hold
 exploration(16068),	-- Stillwhisper Pond
 exploration(16069),	-- Thuron's Livery
 exploration(16070),	-- Fallen Tree (use Tor'watha)
-exploration(16071),	-- Goldenbough Pass
 exploration(16072),	-- Sunset Strand
-exploration(16073),	-- Path of Dawn
-exploration(16079),	-- The Bazaar
-exploration(16082),	-- Murder Row
-exploration(16083),	-- Walk of Elders
-exploration(16084),	-- The Royal Exchange
-exploration(16085),	-- Court of Blood
-exploration(16086),	-- Court of the Sun
-exploration(16087),	-- Farstrider Square
-exploration(16088),	-- Falconwing Square
-exploration(16089),	-- Dawning Lane
 exploration(16091),	-- Murder Row
-exploration(16094),	-- Augurs' Terrace
-exploration(16095),	-- Lithiel's Landing
-exploration(16096),	-- Thalassian University
-exploration(16097),	-- Gardens of Remembrance
-exploration(16098),	-- Sunwing Rookery
-exploration(16099),	-- Silvermoon Harbor
-exploration(16100),	-- The Shining Span
 exploration(16103),	-- Delve Prototype
 exploration(16170),	-- Scarlet Halls
 exploration(16171),	-- Huntsman's Cloister
@@ -4912,18 +4864,7 @@ exploration(16180),	-- Lithiel's Landing
 exploration(16181),	-- The Illicit Rain
 exploration(16182),	-- Isle of Quel'Danas
 exploration(16187),	-- Akil'zon's Reach
-exploration(16188),	-- Spiritpaw Borough
 exploration(16190),	-- Spiritpaw Backwoods
-exploration(16191),	-- Speaker's Rest
-exploration(16193),	-- Revantusk Sedge
-exploration(16195),	-- Atal'Abasi
-exploration(16196),	-- Funerary Coast
-exploration(16197),	-- Leech Bog
-exploration(16198),	-- Shrine of Kulzi
-exploration(16200),	-- Zeb'Alar Lumberyard
-exploration(16201),	-- Bitterbark
-exploration(16203),	-- Camp Stonewash
-exploration(16204),	-- Shrine of Filo \\ Shrine of Fi'lo \\ Shrine of Baban
 exploration(16205),	-- Sun's Reach Harbor
 exploration(16206),	-- Magisters' Terrace
 exploration(16207),	-- Greengill Coast
@@ -4933,42 +4874,29 @@ exploration(16210),	-- Dawnstar Village
 exploration(16211),	-- Parhelion Plaza
 exploration(16213),	-- Claw's Edge
 exploration(16214),	-- The Fangfall
-exploration(16216),	-- Bastion of Might
 exploration(16217),	-- The Great Sea
 exploration(16218),	-- Shenzar Refinery
 exploration(16219),	-- The Husk
 exploration(16220),	-- Sparring Grounds
 exploration(16221),	-- Hanaar Outpost
 exploration(16222),	-- Shadowridge Outpost
-exploration(16223),	-- Bastion of Valor
-exploration(16235),	-- Duskglow Gloriette
 exploration(16291),	-- Sunstrider Rise
 exploration(16328),	-- Magister Academy
-exploration(16333),	-- Sanctum of Light
 exploration(16334),	-- Zeb'tela Ruins
 exploration(16336),	-- Silver Landing
 exploration(16337),	-- The Thalassian Strait
-exploration(16338),	-- Scintilas Outpost
 exploration(16340),	-- The Voidspire \\ Voidspire
-exploration(16341),	-- Gnawing Reach
 exploration(16342),	-- Isle of Quel'Danas
 exploration(16343),	-- Watha'nan Crypts
-exploration(16344),	-- Vale of Secrets
-exploration(16345),	-- Shrouded Grove
-exploration(16346),	-- Veilroot Clearing
-exploration(16347),	-- Verdant Sepulcher
-exploration(16348),	-- Zul'Aman Depths
 exploration(16351),	-- Tranquil Repose
 exploration(16352),	-- Numazon Crypts
 exploration(16354),	-- Voidstorm
 exploration(16355),	-- Sunfeather Point
 exploration(16356),	-- Sunwell Ramparts
-exploration(16357),	-- Sunfury Spire
 exploration(16359),	-- The Blinding Vale \\ Lightbloom Dungeon
 exploration(16360),	-- Grasping Reach
 exploration(16364),	-- Underground Burrows
 exploration(16365),	-- Atal'Utek \\ Isle of Fangs
-exploration(16367),	-- Solemn Valley
 exploration(16368),	-- Den of Nalorakk
 exploration(16375),	-- Loaknit Den
 exploration(16380),	-- The Skybridge
@@ -4984,14 +4912,11 @@ exploration(16396),	-- 12test
 exploration(16397),	-- Silvermoon Harbor
 exploration(16398),	-- The Shining Span
 exploration(16400),	-- Glimmering Cataract
-exploration(16401),	-- Ahl'ua Wetland
 exploration(16415),	-- Salabria
 exploration(16416),	-- The Starchaser
 exploration(16417),	-- The Crimson Treader
-exploration(16418),	-- Shadebasin Watch
 exploration(16423),	-- Slayer's Rise
 exploration(16425),	-- Voidscar Arena
-exploration(16426),	-- Silverglade Refuge
 exploration(16429),	-- Exiles' Hovel
 exploration(16479),	-- Voidstorm
 exploration(16480),	-- Slayer's Rise
@@ -4999,7 +4924,6 @@ exploration(16481),	-- Pit of Spite
 exploration(16482),	-- The Husk
 exploration(16483),	-- Sparring Grounds
 exploration(16484),	-- Grasping Reach
-exploration(16486),	-- Stormarion Watch
 exploration(16487),	-- Path of Predation
 exploration(16488),	-- Grief Spire
 exploration(16489),	-- Hate Spire
@@ -5014,7 +4938,6 @@ exploration(16497),	-- The Fangfall
 exploration(16498),	-- The Husk
 exploration(16499),	-- Shenzar Refinery
 exploration(16500),	-- Sparring Grounds
-exploration(16501),	-- Night Trench
 exploration(16502),	-- PvP POI Dev Land
 exploration(16504),	-- Glade of Walking Memories
 exploration(16506),	-- Dreth'amar Cavern
@@ -5024,7 +4947,6 @@ exploration(16528),	-- The Shadow Cleft
 exploration(16530),	-- Stillroot Basin
 exploration(16531),	-- The Dreamrift
 exploration(16534),	-- Lair of Predaxas
-exploration(16536),	-- Solaarian Sunbath
 exploration(16538),	-- Isle of Quel'Danas
 exploration(16542),	-- Parhelion Plaza
 exploration(16543),	-- Floaret Grotto \\ Abundant Grotto
@@ -5037,15 +4959,12 @@ exploration(16555),	-- The Sunwell
 exploration(16556),	-- Atal'Aman
 exploration(16557),	-- Twilight Crypts
 exploration(16567),	-- Wit'Kalar Crypt
-exploration(16568),	-- Miststone Wells
-exploration(16570),	-- The Shepherd's Gate
 exploration(16573),	-- Nexus-Point Xenas
 exploration(16574),	-- Corespark Engineway
 exploration(16575),	-- Core Defense Nullward
 exploration(16576),	-- The Nexus Core
 exploration(16578),	-- Sanctum of Light
 exploration(16581),	-- Abundant Voidburrow
-exploration(16582),	-- Encroaching Bloom
 exploration(16583),	-- Nai'theren Grotto
 exploration(16584),	-- Nihil
 exploration(16586),	-- Torntusk Overlook
@@ -5053,27 +4972,18 @@ exploration(16592),	-- Sunkiller Sanctum
 exploration(16594),	-- The Shadow Enclave
 exploration(16595),	-- The Gulf of Memory
 exploration(16596),	-- Torment's Rise
-exploration(16598),	-- The Stump
 exploration(16599),	-- Slayer's Rise
 exploration(16600),	-- Shadow Rise
 exploration(16601),	-- The Sunwell \\ The Darkwell
 exploration(16613),	-- Sunwell Ramparts
-exploration(16618),	-- Hall of Blood
-exploration(16627),	-- Sunwing Sundries
-exploration(16633),	-- The Illicit Rain
-exploration(16634),	-- Astalor's Sanctum
 exploration(16639),	-- Magisters' Terrace
 exploration(16640),	-- Dreamer's Passage
 exploration(16641),	-- The Heart of Rage
 exploration(16642),	-- The Darkway
-exploration(16644),	-- Silvermoon City Inn
-exploration(16645),	-- Wayfarer's Rest
 exploration(16646),	-- Thalassian Pass
-exploration(16647),	-- Den of Indulgence
 exploration(16648),	-- Voidstorm
 exploration(16652),	-- Overrun Hollow
 exploration(16664),	-- Wailing Depths
-exploration(16665),	-- Umbral Atrium
 exploration(16666),	-- Silvermoon City
 exploration(16670),	-- Altar of Malacrass
 exploration(16680),	-- Den of Indulgence
@@ -5091,18 +5001,12 @@ exploration(16799),	-- The Luminous Garden
 exploration(16800),	-- The Gilded Tangle
 exploration(16801),	-- Warden's Retreat
 exploration(16802),	-- Conviction's Crucible
-exploration(16804),	-- The Gorging Pit
 12.0.0.63854
 exploration(16806),	-- Sanctuary of the Mind-Seekers
-exploration(16807),	-- Sun's Reach Harbor
 exploration(16808),	-- Sun's Reach Sanctum
 exploration(16809),	-- Golden Boughs
-exploration(16810),	-- Dawnstar Village
 exploration(16811),	-- Sun's Reach Armory
 exploration(16812),	-- Sunwell Ramparts
-exploration(16813),	-- Parhelion Plaza
-exploration(16814),	-- Magisters' Terrace \\ Magister's Terrace
-exploration(16816),	-- Silver Landing
 exploration(16817),	-- Western Sungrove
 12.0.0.64124
 exploration(16825),	-- Devouring Stronghold
@@ -5128,3 +5032,14 @@ exploration(16873),	-- Razorwind Camp
 exploration(16874),	-- Founders Point Camp
 12.0.1.64914
 exploration(16875),	-- Den of the Undreamt
+12.0.5.66330
+exploration(16686),	-- Silvermoon City
+exploration(16747),	-- Speaker's Rest
+exploration(16748),	-- Ritual Site Outskirts
+exploration(16766),	-- Broken Throne
+exploration(16770),	-- Zul'Aman
+exploration(16773),	-- Silvermoon City
+exploration(16796),	-- Ritual Site
+exploration(16823),	-- Daggerspine Point
+exploration(16939),	-- Ritual Site
+exploration(16940),	-- Daggerspine Point

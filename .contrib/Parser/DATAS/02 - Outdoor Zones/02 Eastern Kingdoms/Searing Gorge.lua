@@ -1468,15 +1468,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11818 },	-- Grimesilt Outhouse Key
 						{ "o", 173265 },	-- Wooden Outhouse
 					},
+					["coord"] = { 65.6, 62.5, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["crs"] = {
-						15692,	-- Dark Iron Kidnapper
-						8566,	-- Dark Iron Lookout
-						8504,	-- Dark Iron Sentry
-						5844,	-- Dark Iron Slaver
-						5840,	-- Dark Iron Steamsmith
-						5846,	-- Dark Iron Taskmaster
-					},
 					["lvl"] = 43,
 				}),
 				q(28035, {	-- The Mountain-Lord's Support
@@ -1990,6 +1983,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(18944, {	-- Incendosaur Scale
 					["cr"] = 9318,	-- Incendosaur
+				}),
+				i(11818, {	-- Grimesilt Outhouse Key
+					["timeline"] = { REMOVED_4_0_3 },
+					["crs"] = {
+						15692,	-- Dark Iron Kidnapper
+						8566,	-- Dark Iron Lookout
+						8504,	-- Dark Iron Sentry
+						5844,	-- Dark Iron Slaver
+						5840,	-- Dark Iron Steamsmith
+						5846,	-- Dark Iron Taskmaster
+					},
 				}),
 				i(142359, {	-- Lava Oil
 					["coord"] = { 48.0, 42.3, SEARING_GORGE },

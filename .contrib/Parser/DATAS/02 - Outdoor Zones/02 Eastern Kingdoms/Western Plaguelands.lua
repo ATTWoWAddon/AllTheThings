@@ -1501,42 +1501,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
+				q(5059, {	-- Locked Away
+					["providers"] = {
+						{ "o", 175925 },	-- Outhouse
+						{ "i",  12738 },	-- Dalson Outhouse Key
+					},
+					["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["repeatable"] = true,
+					["lvl"] = 52,
+					["groups"] = {
+						i(12739, {	-- Dalson Cabinet Key
+							["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
+							["cr"] = 10836,	-- Farmer Dalson
+						}),
+					},
+				}),
 				q(5060, {	-- Locked Away
-					["provider"] = { "o", 175924 },	-- Locked Cabinet
+					["providers"] = {
+						{ "o", 175924 },	-- Locked Cabinet
+						{ "i",  12739 },	-- Dalson Cabinet Key
+					},
 					["coord"] = { 47.4, 49.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
-						q(5059, {	-- Locked Away
-							["providers"] = {
-								{ "o", 175925 },	-- Outhouse
-								{ "i",  12738 },	-- Dalson Outhouse Key
-							},
-							["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
-							["timeline"] = { REMOVED_4_0_3 },
-							["repeatable"] = true,
-							["lvl"] = 52,
-							["groups"] = {
-								objective(1, {	-- 0/1 Dalson Cabinet Key
-									["questID"] = 5060,	-- Locked Away
-									["provider"] = { "i", 12739 },	-- Dalson Cabinet Key
-									["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
-									["cr"] = 10836,	-- Farmer Dalson
-								}),
-							},
-						}),
 						i(13474, {	-- Farmer Dalson's Shotgun
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(13475, {	-- Dalson Family Wedding Ring
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						-- #if OBJECTIVES
-						i(12738, {	-- Dalson Outhouse Key
-							["coord"] = { 48.0, 49.8, WESTERN_PLAGUELANDS },
-							["cr"] = 10816,	-- Wandering Skeleton
-						}),
-						-- #endif
 					},
 				}),
 				q(26936, {	-- Lower the Boom
@@ -2589,13 +2584,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Good Luck Charm
-							["providers"] = {
-								{ "i", 12723 },	-- Good Luck Charm
-								{ "i", 12721 },	-- Good Luck Half-Charm
-								{ "i", 12722 },	-- Good Luck Other-Half-Charm
+							["provider"] = { "i", 12723 },	-- Good Luck Charm
+							["cost"] = {
+								{ "i", 12721, 1 },	-- Good Luck Half-Charm
+								{ "i", 12722, 1 },	-- Good Luck Other-Half-Charm
 							},
-							["coord"] = { 38.6, 56.2, WESTERN_PLAGUELANDS },
-							["cr"] = 10801,	-- Jabbering Ghoul
 						}),
 						i(13473, {	-- Felstone Good Luck Charm
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3091,7 +3084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if BEFORE 4.0.3
 			n(TREASURES, {
-				i(176213, {	-- Blood of Heroes
+				o(176213, {	-- Blood of Heroes
 					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
 					["coords"] = {
 						-- Hearthglen
@@ -3266,11 +3259,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
 					["timeline"] = { REMOVED_4_0_3 },
 				})),
+				-- #endif
+				i(12738, {	-- Dalson Outhouse Key
+					["coord"] = { 48.0, 49.8, WESTERN_PLAGUELANDS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 10816,	-- Wandering Skeleton
+				}),
+				-- #if BEFORE 4.0.3
 				i(13354, {	-- Ectoplasmic Resonator
 					["description"] = "These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
 				}),
+				-- #endif
+				i(12722, {	-- Good Luck Other-Half-Charm
+					["coord"] = { 38.6, 56.2, WESTERN_PLAGUELANDS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 10801,	-- Jabbering Ghoul
+				}),
+				-- #if BEFORE 4.0.3
 				i(16252, {	-- Formula: Enchant Weapon - Crusader
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),

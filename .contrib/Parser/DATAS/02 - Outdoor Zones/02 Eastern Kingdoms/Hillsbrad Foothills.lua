@@ -3708,6 +3708,14 @@ Click Leave vehicle and repeat steps 3-8"]],
 			}),
 			-- #endif
 			n(ZONE_DROPS, {
+				i(3668, {	-- Assassin's Contract
+					["description"] = "The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",
+					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 2434,	-- Shadowy Assassin
+					["lvl"] = 30,
+				}),
 				-- #if AFTER CATA
 				i(3711, {	-- Belamoore's Research Journal
 					["timeline"] = { REMOVED_4_0_3 },

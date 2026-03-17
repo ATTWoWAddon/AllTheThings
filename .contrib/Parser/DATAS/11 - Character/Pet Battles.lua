@@ -18,6 +18,7 @@ PET_BATTLE_DUNGEONS = createHeader({
 		tw = "寵物對戰挑戰",
 	},
 });
+-- Content that requires Pet Battling
 root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 		pvp(n(PVP, {
@@ -669,6 +670,31 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			}),
 		},
 	}),
+	n(WORLD_QUESTS, {
+		["timeline"] = { ADDED_7_0_3 },
+		["groups"] = {
+			n(REWARDS, {
+				i(86143),	-- Battle Pet Bandage
+				i(98715),	-- Marked Flawless Battle Stone
+				i(POLISHED_PET_CHARM),
+				i(116424),	-- Aquatic Battle Training Stone
+				i(116374),	-- Beast Battle Training Stone
+				i(116418),	-- Critter Battle Training Stone
+				i(116419),	-- Dragonkin Battle Training Stone
+				i(116420),	-- Elemental Battle Training Stone
+				i(127755),	-- Fel-Touched Battle Training Stone
+				i(116429),	-- Flawless Battle-Training Stone
+				i(116421),	-- Flying Battle Training Stone
+				i(116416),	-- Humanoid Battle Training Stone
+				i(116422),	-- Magic Battle Training Stone
+				i(116417),	-- Mechanical Battle Training Stone
+				i(116423),	-- Undead Battle Training Stone
+			}),
+		},
+	}),
+})));
+-- Content that does NOT require Pet Battling
+root(ROOTS.Character, n(PET_BATTLES, {
 	n(SPECIAL, {
 		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = sharedData({
@@ -960,29 +986,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			},
 		}),
 	})),
-	n(WORLD_QUESTS, {
-		["timeline"] = { ADDED_7_0_3 },
-		["groups"] = {
-			n(REWARDS, {	
-				i(86143),	-- Battle Pet Bandage
-				i(98715),	-- Marked Flawless Battle Stone
-				i(POLISHED_PET_CHARM),
-				i(116424),	-- Aquatic Battle Training Stone
-				i(116374),	-- Beast Battle Training Stone
-				i(116418),	-- Critter Battle Training Stone
-				i(116419),	-- Dragonkin Battle Training Stone
-				i(116420),	-- Elemental Battle Training Stone
-				i(127755),	-- Fel-Touched Battle Training Stone
-				i(116429),	-- Flawless Battle-Training Stone
-				i(116421),	-- Flying Battle Training Stone
-				i(116416),	-- Humanoid Battle Training Stone
-				i(116422),	-- Magic Battle Training Stone
-				i(116417),	-- Mechanical Battle Training Stone
-				i(116423),	-- Undead Battle Training Stone
-			}),
-		},
-	}),
-})));
+}));
 
 -- #if BEFORE 4.2.0
 root(ROOTS.NeverImplemented, {

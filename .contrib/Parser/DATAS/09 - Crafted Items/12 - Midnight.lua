@@ -993,54 +993,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(266387),	-- Sanctum Magister's Pylon (COSMETIC!)
 		}),
 		n(DISCOVERY, {
-			r(1225274),	-- Blood Hunter
-			r(1225266),	-- Bloomtail Minnow
-			r(1225283),	-- Eversong Trout
-			r(1225276),	-- Fungalskin Pike
-			r(1225275),	-- Gore Guppy
-			r(1225337),	-- Harandar
-			r(1225267),	-- Hollow Grouper
-			r(1225284),	-- Lucky Loa
-			r(1225270),	-- Lynxfish
-			r(1225268),	-- Null Voidfish
-			r(1225273),	-- Ominous Octopus
-			r(1225277),	-- Restored Songfish
-			r(1225269),	-- Root Crab
-			r(1225271),	-- Shimmersiren
-			r(1225272),	-- Shimmer Spinefish
-			r(1225245),	-- Sin'dorei Swarmer
-			r(1225278),	-- Sunwell Fish
-			r(1225281),	-- Tender Lumifin
-			r(1225280),	-- Twisted Tetra
-			r(1225336),	-- Voidstorm
-			r(1225279),	-- Warping Wise
-			r(1225282),	-- Wyrmfish
-			r(1225335),	-- Zul'Aman
+			r_withQuest(1225274, 88614),	-- Blood Hunter
+			r_withQuest(1225266, 88606),	-- Bloomtail Minnow
+			r_withQuest(1225283, 88620),	-- Eversong Trout
+			r_withQuest(1225276, 88612),	-- Fungalskin Pike
+			r_withQuest(1225275, 88619),	-- Gore Guppy
+			r(1225337, {["learnedAt"]=150}),	-- Harandar
+			r_withQuest(1225267, 88618),	-- Hollow Grouper
+			r_withQuest(1225284, 88613),	-- Lucky Loa
+			r_withQuest(1225270, 88603),	-- Lynxfish
+			r_withQuest(1225268, 88617),	-- Null Voidfish
+			r_withQuest(1225273, 88610),	-- Ominous Octopu
+			r_withQuest(1225277, 88609),	-- Restored Songfish
+			r_withQuest(1225269, 88604),	-- Root Crab
+			r_withQuest(1225271, 88615),	-- Shimmersiren
+			r_withQuest(1225272, 88607),	-- Shimmer Spinefish
+			r_withQuest(1225245, 88602),	-- Sin'dorei Swarmer
+			r_withQuest(1225278, 88621),	-- Sunwell Fish
+			r_withQuest(1225281, 88611),	-- Tender Lumifin
+			r_withQuest(1225280, 88605),	-- Twisted Tetra
+			r(1225336, {["learnedAt"]=225}),	-- Voidstorm
+			r_withQuest(1225279, 88616),	-- Warping Wise
+			r_withQuest(1225282, 88608),	-- Wyrmfish
+			r(1225335, {["learnedAt"]=75}),	-- Zul'Aman
 		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = FISHING,
-		},{
-			FirstCraft(88614, 1225274),	-- Blood Hunter
-			FirstCraft(88606, 1225266),	-- Bloomtail Minnow
-			FirstCraft(88620, 1225283),	-- Eversong Trout
-			FirstCraft(88612, 1225276),	-- Fungalskin Pike
-			FirstCraft(88619, 1225275),	-- Gore Guppy
-			FirstCraft(88618, 1225267),	-- Hollow Grouper
-			FirstCraft(88613, 1225284),	-- Lucky Loa
-			FirstCraft(88603, 1225270),	-- Lynxfish
-			FirstCraft(88617, 1225268),	-- Null Voidfish
-			FirstCraft(88610, 1225273),	-- Ominous Octopu
-			FirstCraft(88609, 1225277),	-- Restored Songfish
-			FirstCraft(88604, 1225269),	-- Root Crab
-			FirstCraft(88615, 1225271),	-- Shimmersiren
-			FirstCraft(88607, 1225272),	-- Shimmer Spinefish
-			FirstCraft(88602, 1225245),	-- Sin'dorei Swarmer
-			FirstCraft(88621, 1225278),	-- Sunwell Fish
-			FirstCraft(88611, 1225281),	-- Tender Lumifin
-			FirstCraft(88605, 1225280),	-- Twisted Tetra
-			FirstCraft(88616, 1225279),	-- Warping Wise
-			FirstCraft(88608, 1225282),	-- Wyrmfish
-		})),
 		i(238490, {	-- Ambiguous Rock
 			i(266102),	-- Ambiguous Rock
 		}),
@@ -1086,91 +1062,53 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(HERBALISM, {
 		n(DISCOVERY, {
-			-- Section I - Peacebloom
-			r(1224883),	-- Lightfused Tranquility Bloom
-			r(1223148),	-- Lush Tranquility Bloom
-			r(1224888),	-- Primal Tranquility Bloom
-			r(1223099),	-- Tranquility Bloom
-			r(1224898),	-- Voidbound Tranquility Bloom
-			r(1224893),	-- Wild Tranquility Bloom
-			-- Section II - Sanguithorn
-			r(1224886),	-- Lightfused Sanguithorn
-			r(1223151),	-- Lush Sanguithorn
-			r(1224891),	-- Primal Sanguithorn
-			r(1223135),	-- Sanguithorn
-			r(1224901),	-- Voidbound Sanguithorn
-			r(1224896),	-- Wild Sanguithorn
-			-- Section III - Azeroot
-			r(1223137),	-- Azeroot
-			r(1224885),	-- Lightfused Azeroot
-			r(1223150),	-- Lush Azeroot
-			r(1224890),	-- Primal Azeroot
-			r(1224900),	-- Voidbound Azeroot
-			r(1224895),	-- Wild Azeroot
-			-- Section IV - Argentleaf
-			r(1223138),	-- Argentleaf
-			r(1224882),	-- Lightfused Argentleaf
-			r(1223146),	-- Lush Argentleaf
-			r(1224887),	-- Primal Argentleaf
-			r(1224897),	-- Voidbound Argentleaf
-			r(1224892),	-- Wild Argentleaf
-			-- Section V - Mana Lily
-			r(1223139),	-- Mana Lily
-			r(1224884),	-- Lightfused Mana Lily
-			r(1223149),	-- Lush Mana Lily
-			r(1224889),	-- Primal Mana Lily
-			r(1224899),	-- Voidbound Mana Lily
-			r(1224894),	-- Wild Mana Lily
-			-- Appendix II - Overload
+			r_withQuest(1223138, 87747),	-- Argentleaf
+			r_withQuest(1223137, 87741),	-- Azeroot
+			r_withQuest(1224882, 87749),	-- Lightfused Argentleaf
+			r_withQuest(1224885, 87743),	-- Lightfused Azeroot
+			r_withQuest(1224884, 87755),	-- Lightfused Mana Lily
+			r_withQuest(1224886, 87737),	-- Lightfused Sanguithorn
+			r_withQuest(1224883, 87731),	-- Lightfused Tranquility Bloom
+			r_withQuest(1223146, 87748),	-- Lush Argentleaf
+			r_withQuest(1223150, 87742),	-- Lush Azeroot
+			r_withQuest(1223149, 87754),	-- Lush Mana Lily
+			r_withQuest(1223151, 87736),	-- Lush Sanguithorn
+			r_withQuest(1223148, 87730),	-- Lush Tranquility Bloom
+			r_withQuest(1223139, 87753),	-- Mana Lily
 			r(1225128),	-- Overload Lightfused Herb
 			r(1225137),	-- Overload Primal Herb
 			r(1225144),	-- Overload Voidbound Herb
 			r(1225150),	-- Overload Wild Herb
+			r_withQuest(1224887, 87751),	-- Primal Argentleaf
+			r_withQuest(1224890, 87745),	-- Primal Azeroot
+			r_withQuest(1224889, 87757),	-- Primal Mana Lily
+			r_withQuest(1224891, 87739),	-- Primal Sanguithorn
+			r_withQuest(1224888, 87733),	-- Primal Tranquility Bloom
+			r_withQuest(1223135, 87735),	-- Sanguithorn
+			r_withQuest(1223099, 87729),	-- Tranquility Bloom
+			r_withQuest(1224897, 87752),	-- Voidbound Argentleaf
+			r_withQuest(1224900, 87746),	-- Voidbound Azeroot
+			r_withQuest(1224899, 87758),	-- Voidbound Mana Lily
+			r_withQuest(1224901, 87740),	-- Voidbound Sanguithorn
+			r_withQuest(1224898, 87734),	-- Voidbound Tranquility Bloom
+			r_withQuest(1224892, 87750),	-- Wild Argentleaf
+			r_withQuest(1224895, 87744),	-- Wild Azeroot
+			r_withQuest(1224894, 87756),	-- Wild Mana Lily
+			r_withQuest(1224896, 87738),	-- Wild Sanguithorn
+			r_withQuest(1224893, 87732),	-- Wild Tranquility Bloom
 		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = HERBALISM,
-		},{
-			FirstCraft(87731, 1224883),	-- Lightfused Tranquility Bloom
-			--FirstCraft(XXXXX, 1223148),	-- Lush Tranquility Bloom
-			FirstCraft(87733, 1224888),	-- Primal Tranquility Bloom
-			FirstCraft(87729, 1223099),	-- Tranquility Bloom
-			FirstCraft(87734, 1224898),	-- Voidbound Tranquility Bloom
-			FirstCraft(87732, 1224893),	-- Wild Tranquility Bloom
-			FirstCraft(87737, 1224886),	-- Lightfused Sanguithorn
-			FirstCraft(87736, 1223151),	-- Lush Sanguithorn
-			FirstCraft(87739, 1224891),	-- Primal Sanguithorn
-			FirstCraft(87735, 1223135),	-- Sanguithorn
-			FirstCraft(87740, 1224901),	-- Voidbound Sanguithorn
-			FirstCraft(87738, 1224896),	-- Wild Sanguithorn
-			FirstCraft(87741, 1223137),	-- Azeroot
-			FirstCraft(87743, 1224885),	-- Lightfused Azeroot
-			FirstCraft(87742, 1223150),	-- Lush Azeroot
-			FirstCraft(87745, 1224890),	-- Primal Azeroot
-			FirstCraft(87746, 1224900),	-- Voidbound Azeroot
-			FirstCraft(87744, 1224895),	-- Wild Azeroot
-			FirstCraft(87747, 1223138),	-- Argentleaf
-			FirstCraft(87749, 1224882),	-- Lightfused Argentleaf
-			FirstCraft(87748, 1223146),	-- Lush Argentleaf
-			FirstCraft(87751, 1224887),	-- Primal Argentleaf
-			FirstCraft(87752, 1224897),	-- Voidbound Argentleaf
-			FirstCraft(87750, 1224892),	-- Wild Argentleaf
-			FirstCraft(87753, 1223139),	-- Mana Lily
-			FirstCraft(87755, 1224884),	-- Lightfused Mana Lily
-			FirstCraft(87754, 1223149),	-- Lush Mana Lily
-			FirstCraft(87757, 1224889),	-- Primal Mana Lily
-			FirstCraft(87758, 1224899),	-- Voidbound Mana Lily
-			FirstCraft(87756, 1224894),	-- Wild Mana Lily
-		})),
 		i(236776),	-- Argentleaf+
 		i(236777),	-- Argentleaf++
 		i(236774),	-- Azeroot+
 		i(236775),	-- Azeroot++
 		i(238389),	-- Empowered Mulch
+		i(237498),	-- Glowing Resilient Seed
 		i(238388),	-- Imbued Mulch
 		i(238387),	-- Magical Mulch
 		i(236778),	-- Mana Lily+
 		i(236779),	-- Mana Lily++
 		i(236780),	-- Nocturnal Lotus
+		i(237500),	-- Primal Resilient Seed
 		i(237497),	-- Resilient Seed
 		i(236770),	-- Sanguithorn+
 		i(236771),	-- Sanguithorn++
@@ -1179,21 +1117,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238466),	-- Thalassian Phoenix Tail
 		i(236761),	-- Tranquility Bloom+
 		i(236767),	-- Tranquility Bloom++
+		i(237499),	-- Wild Resilient Seed
 	}),
 	prof(INSCRIPTION, {
-		n(DISCOVERY, {
-			r(1230034),	-- Thalassian Treatise on Alchemy
-			r(1230026),	-- Thalassian Treatise on Blacksmithing
-			r(1230030),	-- Thalassian Treatise on Enchanting
-			r(1230036),	-- Thalassian Treatise on Engineering
-			r(1230028),	-- Thalassian Treatise on Herbalism
-			r(1230029),	-- Thalassian Treatise on Jewelcrafting
-			r(1230031),	-- Thalassian Treatise on Leatherworking
-			r(1230027),	-- Thalassian Treatise on Mining
-			r(1230035),	-- Thalassian Treatise on Skinning
-			r(1230033),	-- Thalassian Treatise on Tailoring
-		}),
-		header(HEADERS.Spell, 1269575, {	-- Midnight Milling
+		salvagerecipe(1269575, 262908, {	-- Midnight Milling
 			i(245803),	-- Argentleaf Pigment+
 			i(245804),	-- Argentleaf Pigment++
 			i(245867),	-- Mana Lily Pigment+
@@ -1202,6 +1129,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245808),	-- Powder Pigment++
 			i(245865),	-- Sanguithorn Pigment+
 			i(245864),	-- Sanguithorn Pigment++
+		}),
+		header(HEADERS.Spell, 1230084, {	-- Transcribe: Blood
+			i(245810),	-- Transcribe: Blood
+		}),
+		header(HEADERS.Spell, 1230082, {	-- Transcribe: Hunt
+			i(245812),	-- Transcribe: Hunt
+		}),
+		header(HEADERS.Spell, 1230080, {	-- Transcribe: Rot
+			i(245811),	-- Transcribe: Rot
+		}),
+		header(HEADERS.Spell, 1230078, {	-- Transcribe: Void
+			i(245813),	-- Transcribe: Void
+		}),
+		n(DISCOVERY, {
+			header(HEADERS.Spell, 1230032, {	-- Algari Treatise on Inscription
+				r(1230034),	-- Thalassian Treatise on Alchemy
+				r(1230026),	-- Thalassian Treatise on Blacksmithing
+				r(1230030),	-- Thalassian Treatise on Enchanting
+				r(1230036),	-- Thalassian Treatise on Engineering
+				r(1230028),	-- Thalassian Treatise on Herbalism
+				r(1230029),	-- Thalassian Treatise on Jewelcrafting
+				r(1230031),	-- Thalassian Treatise on Leatherworking
+				r(1230027),	-- Thalassian Treatise on Mining
+				r(1230035),	-- Thalassian Treatise on Skinning
+				r(1230033),	-- Thalassian Treatise on Tailoring
+			}),
 		}),
 		n(DECOR, {
 			i(262464),	-- Floating Void-Touched Tome (DECOR!)
@@ -1244,7 +1197,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(90393, 1230020);	-- Hobbyist Rolling Pin
 			FirstCraft(90395, 1230022);	-- Hobbyist Scribe's Quill
 			FirstCraft(90390, 1230017);	-- Munsell Ink
-			FirstCraft(90436, 1230063);	-- Pigments of the Wind
 			FirstCraft(90430, 1230057);	-- Rootwarden's Lamp
 			FirstCraft(90389, 1230016);	-- Sienna Ink
 			FirstCraft(90397, 1230024);	-- Sin'dorei Alchemist's Mixing Rod
@@ -1937,61 +1889,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(MINING, {
 		n(DISCOVERY, {
-			-- Section I - Refulgent Copper
-			r(1225351),	-- Lightfused Refulgent Copper
-			r(1225354),	-- Primal Refulgent Copper
-			r(1225343),	-- Refulgent Copper
-			r(1225350),	-- Refulgent Copper Seam
-			r(1225349),	-- Rich Refulgent Copper
-			r(1225352),	-- Voidbound Refulgent Copper
-			r(1225353),	-- Wild Refulgent Copper
-			-- Section II - Brilliant Silver
-			r(1225348),	-- Brilliant Silver
-			r(1225357),	-- Brilliant Silver Seam
-			r(1225359),	-- Lightfused Brilliant Silver
-			r(1225361),	-- Primal Brilliant Silver
-			r(1225355),	-- Rich Brilliant Silver
-			r(1225362),	-- Voidbound Brilliant Silver
-			r(1225363),	-- Wild Brilliant Silver
-			-- Section III - Umbral Tin
-			r(1225367),	-- Lightfused Umbral Tin
-			r(1225369),	-- Primal Umbral Tin
-			r(1225365),	-- Rich Umbral Tin
-			r(1225347),	-- Umbral Tin
-			r(1225366),	-- Umbral Tin Seam
-			r(1225370),	-- Voidbound Umbral Tin
-			r(1225368),	-- Wild Umbral Tin
-			-- Appendix II - Overload
+			r_withQuest(1225348, 88471),	-- Brilliant Silver
+			r_withQuest(1225357, 88466),	-- Brilliant Silver Seam
+			r_withQuest(1225359, 88484),	-- Lightfused Brilliant Silver
+			r_withQuest(1225351, 88487),	-- Lightfused Refulgent Copper
+			r_withQuest(1225367, 88488),	-- Lightfused Umbral Tin
 			r(1225818),	-- Overload Lightfused Deposits
 			r(1225817),	-- Overload Primal Deposits
 			r(1225820),	-- Overload Voidbound Deposits
 			r(1225819),	-- Overload Wild Deposits
+			r_withQuest(1225361, 88490),	-- Primal Brilliant Silver
+			r_withQuest(1225354, 88479),	-- Primal Refulgent Copper
+			r_withQuest(1225369, 88469),	-- Primal Umbral Tin
+			r_withQuest(1225343, 88475),	-- Refulgent Copper
+			r_withQuest(1225350, 88480),	-- Refulgent Copper Seam
+			r_withQuest(1225355, 88491),	-- Rich Brilliant Silver
+			r_withQuest(1225349, 88476),	-- Rich Refulgent Copper
+			r_withQuest(1225365, 88478),	-- Rich Umbral Tin
+			r_withQuest(1225347, 88477),	-- Umbral Tin
+			r_withQuest(1225366, 88481),	-- Umbral Tin Seam
+			r_withQuest(1225362, 88465),	-- Voidbound Brilliant Silver
+			r_withQuest(1225352, 88463),	-- Voidbound Refulgent Copper
+			r_withQuest(1225370, 88470),	-- Voidbound Umbral Tin
+			r_withQuest(1225363, 88472),	-- Wild Brilliant Silver
+			r_withQuest(1225353, 88486),	-- Wild Refulgent Copper
+			r_withQuest(1225368, 88485),	-- Wild Umbral Tin
 		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = MINING,
-		},{
-			FirstCraft(88487, 1225351),	-- Lightfused Refulgent Copper
-			FirstCraft(88479, 1225354),	-- Primal Refulgent Copper
-			FirstCraft(88475, 1225343),	-- Refulgent Copper
-			FirstCraft(88480, 1225350),	-- Refulgent Copper Seam
-			FirstCraft(88476, 1225349),	-- Rich Refulgent Copper
-			FirstCraft(88463, 1225352),	-- Voidbound Refulgent Copper
-			FirstCraft(88486, 1225353),	-- Wild Refulgent Copper
-			FirstCraft(88471, 1225348),	-- Brilliant Silver
-			FirstCraft(88466, 1225357),	-- Brilliant Silver Seam
-			FirstCraft(88484, 1225359),	-- Lightfused Brilliant Silver
-			FirstCraft(88490, 1225361),	-- Primal Brilliant Silver
-			FirstCraft(88491, 1225355),	-- Rich Brilliant Silver
-			FirstCraft(88465, 1225362),	-- Voidbound Brilliant Silver
-			FirstCraft(88472, 1225363),	-- Wild Brilliant Silver
-			FirstCraft(88488, 1225367),	-- Lightfused Umbral Tin
-			FirstCraft(88469, 1225369),	-- Primal Umbral Tin
-			FirstCraft(88478, 1225365),	-- Rich Umbral Tin
-			FirstCraft(88477, 1225347),	-- Umbral Tin
-			FirstCraft(88481, 1225366),	-- Umbral Tin Seam
-			FirstCraft(88470, 1225370),	-- Voidbound Umbral Tin
-			FirstCraft(88485, 1225368),	-- Wild Umbral Tin
-		})),
 		i(237364),	-- Brilliant Silver Ore+
 		i(237365),	-- Brilliant Silver Ore++
 		i(237507),	-- Cloudy Quartz
@@ -2005,38 +1928,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(265530),	-- Plans: Ornamental Silvermoon Hanger (RECIPE!)
 	}),
 	prof(SKINNING, {
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
-		},{
-			FirstSkin(93630, 250826),	-- Skinning Banuran
-			FirstSkin(93631, 250582),	-- Skinning Bloated Snapdragon
-			FirstSkin(95459, 256770),	-- Skinning Bilemaw the Gluttonous
-			FirstSkin(93638, 249844),	-- Skinning Chironex
-			FirstSkin(93633, 255348),	-- Skinning Dame Bloodshed
-			FirstSkin(88545, 245688),	-- Skinning Gloomclaw
-			FirstSkin(95517, 249849),	-- Skinning Ha'kalawe
-			FirstSkin(93632, 246633),	-- Skinning Harried Hawkstrider
-			FirstSkin(88531, 245690),	-- Skinning Lumenfin
-			FirstSkin(88524, 247101),	-- Skinning Netherscythe
-			FirstSkin(93634, 242032),	-- Skinning Oophaga
-			FirstSkin(88542, 253304),	-- Skinning Paingolin
-			FirstSkin(95516, 250321),	-- Skinning Pterrock
-			FirstSkin(95469, 257027),	-- Skinning Rakshur the Bonegrinder
-			FirstSkin(95514, 256808),	-- Skinning Ravengerus
-			FirstSkin(95519, 248741),	-- Skinning Rhazul
-			FirstSkin(95515, 256922),	-- Skinning Screammaxa the Matriarch
-			FirstSkin(95518, 250180),	-- Skinning Serrasa
-			FirstSkin(88526, 245699),	-- Skinning Silverscale
-			FirstSkin(95470, 242031),	-- Skinning Spinefrill
-			FirstSkin(95446, 250876),	-- Skinning Terrinor
-			FirstSkin(93637, 242033),	-- Skinning Tiny Vermin
-			FirstSkin(93639, 238498),	-- Skinning Territorial Voidscythe
-			FirstSkin(93635, 245691),	-- Skinning The Decaying Diamondback
-			FirstSkin(95471, 242035),	-- Skinning The Devouring Invader
-			FirstSkin(93636, 242024),	-- Skinning The Snapping Scourge
-			FirstSkin(88532, 247096),	-- Skinning Umbrafang
-		})),
-		spell(471014, {	-- Midnight Skinning
+		header(HEADERS.Spell, 471014, {	-- Midnight Skinning
 			i(238523),	-- Carving Canine
 			i(238525),	-- Fantastic Fur
 			i(238625),	-- Fine Void-Tempered Hide
@@ -2055,16 +1947,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(238513),	-- Void-Tempered Scales+
 			i(238514),	-- Void-Tempered Scales++
 		}),
+		i(238656),	-- Grand Beast Lure
 		i(238657),	-- Lightbloom Diffuser
-		i(238659),	-- Primal Diffuser
-		i(238660),	-- Void Diffuser
-		i(238658),	-- Wild Diffuser
-		--  Lures
 		i(238652),	-- Majestic Eversong Lure
 		i(238653),	-- Majestic Zul'Aman Lure
 		i(238654),	-- Majestic Harandar Lure
 		i(238655),	-- Majestic Voidstorm Lure
-		i(238656),	-- Grand Beast Lure
+		i(238659),	-- Primal Diffuser
+		i(238531),	-- Radiant Stomach
+		i(238660),	-- Void Diffuser
+		i(238658),	-- Wild Diffuser
 	}),
 	prof(TAILORING, {
 		n(ARMOR, {
@@ -2245,6 +2137,36 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 		}),
 		prof(SKINNING, {
 			q(88522),	-- 20/40 Thorough Tanning (2nd charge)
+			q(88525),	-- 40/40 Thorough Tanning (3rd charge)
 		}),
+		prof(SKINNING, sharedData({ ["isDaily"] = true }, {
+			q(93630, name(HEADERS.NPC, 250826)),	-- Skinning Banuran
+			q(93631, name(HEADERS.NPC, 250582)),	-- Skinning Bloated Snapdragon
+			q(95459, name(HEADERS.NPC, 256770)),	-- Skinning Bilemaw the Gluttonous
+			q(93638, name(HEADERS.NPC, 249844)),	-- Skinning Chironex
+			q(93633, name(HEADERS.NPC, 255348)),	-- Skinning Dame Bloodshed
+			q(88545, name(HEADERS.NPC, 245688)),	-- Skinning Gloomclaw
+			q(95517, name(HEADERS.NPC, 249849)),	-- Skinning Ha'kalawe
+			q(93632, name(HEADERS.NPC, 246633)),	-- Skinning Harried Hawkstrider
+			q(88531, name(HEADERS.NPC, 245690)),	-- Skinning Lumenfin
+			q(88524, name(HEADERS.NPC, 247101)),	-- Skinning Netherscythe
+			q(93634, name(HEADERS.NPC, 242032)),	-- Skinning Oophaga
+			q(88542, name(HEADERS.NPC, 253304)),	-- Skinning Paingolin
+			q(95516, name(HEADERS.NPC, 250321)),	-- Skinning Pterrock
+			q(95469, name(HEADERS.NPC, 257027)),	-- Skinning Rakshur the Bonegrinder
+			q(95514, name(HEADERS.NPC, 256808)),	-- Skinning Ravengerus
+			q(95519, name(HEADERS.NPC, 248741)),	-- Skinning Rhazul
+			q(95515, name(HEADERS.NPC, 256922)),	-- Skinning Screammaxa the Matriarch
+			q(95518, name(HEADERS.NPC, 250180)),	-- Skinning Serrasa
+			q(88526, name(HEADERS.NPC, 245699)),	-- Skinning Silverscale
+			q(95470, name(HEADERS.NPC, 242031)),	-- Skinning Spinefrill
+			q(95446, name(HEADERS.NPC, 250876)),	-- Skinning Terrinor
+			q(93637, name(HEADERS.NPC, 242033)),	-- Skinning Tiny Vermin
+			q(93639, name(HEADERS.NPC, 238498)),	-- Skinning Territorial Voidscythe
+			q(93635, name(HEADERS.NPC, 245691)),	-- Skinning The Decaying Diamondback
+			q(95471, name(HEADERS.NPC, 242035)),	-- Skinning The Devouring Invader
+			q(93636, name(HEADERS.NPC, 242024)),	-- Skinning The Snapping Scourge
+			q(88532, name(HEADERS.NPC, 247096)),	-- Skinning Umbrafang
+		})),
 	}),
 })));

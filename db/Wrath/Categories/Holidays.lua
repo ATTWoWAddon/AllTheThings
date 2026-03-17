@@ -76,11 +76,11 @@ mnt(43900,{awp=20001,b=1,e=7,itemID=33977,lvl=40,q=4}),
 s(177952,49120,{b=1,e=7,f=20,lvl=80,q=4,rwp=40001}),
 s(177690,48663,{e=7,f=23,lvl=80,q=4,rwp=40001}),
 toy(37863,{awp=20001,b=1,e=7,q=3})}}),
-i(49078,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11},rwp=40001}),
+i(49078,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,rwp=40001}),
 i(49116,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,rwp=40001}),
 i(49080,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,rwp=40001}),
 i(49118,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,rwp=40001}),
-i(49074,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11},rwp=40001}),
+i(49074,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,rwp=40001}),
 i(49076,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,rwp=40001}),
 s(145390,37597,{b=1,e=7,f=20,lvl=70,q=4,rwp=30002,u=2}),
 i(37128,{b=1,e=7,f=53,lvl=70,q=4,rwp=30002,u=2}),
@@ -95,10 +95,10 @@ h(-45,{e=7,g={
 ah(18579,{e=7,type="a"}),
 ah(41212,{e=7,type="a"}),
 q(13932,{awp=30002,coords={
-[1426]={{46.4,40.3}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24468},r=2,rwp=40001,sourceQuests={11318},g={
+[1426]={{46.4,40.3}}},cost={{"i",33955,1}},e=7,qgs={24468},r=2,rwp=40001,sourceQuests={11318},g={
 s(145411,37892,{b=1,e=7,f=2,filterForRWP=2,q=3})}}),
 q(13931,{awp=30002,coords={
-[1411]={{46.3,14.8}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24497},r=1,rwp=40001,sourceQuests={11409},g={
+[1411]={{46.3,14.8}}},cost={{"i",33955,1}},e=7,qgs={24497},r=1,rwp=40001,sourceQuests={11409},g={
 s(145411,37892,{b=1,e=7,f=2,filterForRWP=2,q=3})}}),
 q(11293,{awp=20202,coords={
 [1426]={{49,39.8}}},cost={{"i",33306,1}},e=7,isDaily=1,maps={1455},qgs={23627},r=2,rwp=110200,sourceQuests={11318},g={
@@ -145,10 +145,10 @@ q(12191,{awp=20202,coords={
 qo(1,{crs={24108},e=7,providers={{"i",33096}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(11321,{awp=20001,coords={
-[1426]={{46.4,40.3}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24468},r=2,rwp=20403,u=2,g={
+[1426]={{46.4,40.3}}},cost={{"i",33955,1}},e=7,qgs={24468},r=2,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(11413,{awp=20001,coords={
-[1411]={{46.3,14.8}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24497},r=1,rwp=20403,u=2,g={
+[1411]={{46.3,14.8}}},cost={{"i",33955,1}},e=7,qgs={24497},r=1,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(12491,{awp=20202,e=7,isYearly=1,lvl=75,providers={{"i",38280}},r=2,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
@@ -177,10 +177,10 @@ q(12318,{awp=20403,coords={
 [1411]={{47.9,26.9}},
 [1426]={{46.2,52.8}}},e=7,isBreadcrumb=1,lvl=65,nextQuests={12062},qgs={27584,28329},rwp=30303,sourceQuests={11441,11442,11446,11447},u=2}),
 q(12193,{awp=20001,coords={
-[1426]={{46.4,40.3}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24468},r=2,rwp=30002,u=2,g={
+[1426]={{46.4,40.3}}},cost={{"i",33955,1}},e=7,qgs={24468},r=2,rwp=30002,u=2,g={
 s(143353,33016,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(12194,{awp=20001,coords={
-[1411]={{46.3,14.8}}},cost={{"i",33955,1}},e=7,isYearly=1,qgs={24497},r=1,rwp=30002,u=2,g={
+[1411]={{46.3,14.8}}},cost={{"i",33955,1}},e=7,qgs={24497},r=1,rwp=30002,u=2,g={
 s(143353,33016,{b=1,e=7,f=2,filterForRWP=2,q=3,u=2})}}),
 q(11454,{awp=20001,coords={
 [1411]={{44.3,17.5}},
@@ -328,7 +328,7 @@ i(33978,{awp=20001,b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=1,rwp=20403,u=2})
 flt(102,{e=7,g={
 toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3})}}),
 h(-219,{e=7})}}),
-n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";for i,item in ipairs(t.g)do	item.u=7;end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";for i,item in ipairs(t.g)do	item.u=7;end	end	end,r=1,sourceQuests={11419},g={
+n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=1,sourceQuests={11419},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=40,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=20,q=3,rwp=20403,u=2})}}),
 n(24501,{awp=20202,coords={
@@ -353,7 +353,7 @@ i(33025,{e=7,f=55,lvl=55,q=1}),
 i(34064,{e=7,f=55,lvl=25,q=1}),
 i(33026,{e=7,f=55,lvl=65,q=1})}}),
 n(24468,{awp=20202,coords={
-[1426]={{46.4,40.3}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";for i,item in ipairs(t.g)do	item.u=7;end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";for i,item in ipairs(t.g)do	item.u=7;end	end	end,r=2,sourceQuests={11400},g={
+[1426]={{46.4,40.3}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=2,sourceQuests={11400},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=40,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=20,q=3,rwp=20403,u=2})}}),
 n(23533,{awp=20202,coords={
@@ -714,7 +714,7 @@ q(7928,{coords={
 i(19287,{e=1,f=53,lvl=60,q=4,u=13})}}),
 q(13311,{awp=30002,e=1,maxReputation={909,42000},providers={{"i",44158},{"n",30481}},repeatable=1,u=30,g={
 s(175215,44217,{e=1,f=20,lvl=40,q=3,u=30}),
-s(175216,44218,{e=1,f=22,lvl=40,q=3,races={1,2,3,4,5,6,7,8,10,11},u=30}),
+s(175216,44218,{e=1,f=22,lvl=40,q=3,u=30}),
 s(175217,44219,{e=1,f=28,lvl=40,q=3,u=30})}}),
 q(7903,{coords={
 [1412]={{37.5,39.6}},
@@ -1363,7 +1363,7 @@ ach(968,{e=16,r=1})}}),
 n(23682,{awp=20001,description="You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",e=16,lvl=25,maps={435,436},g={
 ach(255,{awp=30002,e=16,rwp=100107}),
 i(54516,{awp=30300,b=1,e=16,q=3,rwp=60002,g={
-i(49426,{b=1,e=16,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11}}),
+i(49426,{b=1,e=16,lvl=80,q=4}),
 ach(980,{awp=20001,e=16,providers={{"i",37012}}}),
 mnt(48025,{awp=20001,b=1,e=16,itemID=37012,lvl=20,q=4}),
 s(194433,211851,{e=16,f=25,lvl=80,q=4,rwp=40001}),
@@ -1376,8 +1376,8 @@ s(143588,33292,{awp=20202,b=1,e=16,f=4,filterForRWP=2,q=3}),
 i(33176,{awp=20202,b=1,e=16,f=100,lvl=60,q=3,rwp=40202}),
 i(37011,{awp=20403,b=1,collectible=false,e=16,f=100,lvl=10,q=3})}}),
 s(177955,49128,{awp=30002,b=1,e=16,f=25,lvl=80,q=4,rwp=30300,u=2}),
-s(177954,49126,{awp=30002,b=1,e=16,f=7,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11},rwp=30300,u=2}),
-i(49121,{awp=30002,b=1,e=16,f=52,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11},rwp=30300,u=2}),
+s(177954,49126,{awp=30002,b=1,e=16,f=7,lvl=80,q=4,rwp=30300,u=2}),
+i(49121,{awp=30002,b=1,e=16,f=52,lvl=80,q=4,rwp=30300,u=2}),
 i(49123,{awp=30002,b=1,e=16,f=52,lvl=80,q=4,rwp=30300,u=2}),
 i(49124,{awp=30002,b=1,e=16,f=52,lvl=80,q=4,rwp=30300,u=2}),
 s(145444,38175,{b=1,e=16,f=25,lvl=70,q=4,rwp=30002,u=2}),
@@ -1836,7 +1836,7 @@ q(12139,{awp=20001,coords={
 i(20557,{b=1,e=16,f=55,q=1}),
 i(34068,{e=16,f=55,q=1}),
 crit(2282,{achID=289,awp=30002,e=16,id=1})}}),
-q(11392,{awp=20001,e=16,isDaily=1,lvl=75,maps={435,436},providers={{"o",186267}},rwp=30300,sourceQuests={11135,11220},u=2}),
+q(11392,{awp=20001,e=16,lvl=75,maps={435,436},providers={{"o",186267}},rwp=30300,sourceQuests={11135,11220},u=2}),
 q(11356,{awp=20001,e=16,isBreadcrumb=1,maps={120,125,1413,1434,1446,1452,1453,1455,1457,1947,1953,1955},nextQuests={11360,11439,11440},qgs={18927,19148,19171,19172,19173,20102},r=2}),
 q(1658,{coords={
 [1424]={{50,57.2}}},e=16,isYearly=1,lvl=25,maps={1420,1421},qgs={15199},r=2,rwp=40003,g={

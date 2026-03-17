@@ -10,7 +10,7 @@ p(107,{awp=11101,b=1,itemID=20371,petTypeID=1,q=3,spellID=24696,u=2}),
 ach(412,{awp=30002,providers={{"i",33079}},u=2}),
 toy(33079,{awp=20103,b=1,q=3,u=2}),
 ach(415,{awp=30002,providers={{"i",43599}},u=2}),
-mnt(58983,{awp=30002,b=1,itemID=43599,lvl=20,q=3,races={1,2,3,4,5,6,7,8,10,11},u=2}),
+mnt(58983,{awp=30002,b=1,itemID=43599,lvl=20,q=3,u=2}),
 ach(3536,{awp=30200,providers={{"i",46802}},u=2}),
 p(228,{awp=30200,b=1,itemID=46802,petTypeID=1,q=3,spellID=66030,u=2})}),
 x(2,{u=3,g={
@@ -45,7 +45,7 @@ mnt(471440,{awp=30400,description="Can be bought for ¥1888 ($265 USD) or a disc
 mnt(1217476,{awp=30400,description="Rewarded from the Treasure Workshop.",rwp=40400,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(235378,{awp=30400,description="Can be bought for ¥200 RMB (~$27 USD) for a limited time in the Ingame Shop.",rwp=40400,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(459784,{itemID=227362,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(42777,{itemID=49284,lvl=40,q=4,races={1,2,3,4,5,6,7,8,10,11},u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(42777,{itemID=49284,lvl=40,q=4,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42776,{itemID=49283,lvl=20,q=3,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46199,{itemID=49286,lvl=70,q=4,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46197,{itemID=49285,lvl=60,q=3,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -174,7 +174,7 @@ mnt(65917,{awp=30200,itemID=49290,lvl=40,q=4,u=2}),
 mnt(42776,{awp=20103,b=1,itemID=33224,lvl=20,q=3,rwp=30200,u=2}),
 mnt(42776,{awp=30200,itemID=49283,lvl=20,q=3,u=2}),
 mnt(42777,{awp=20103,b=1,itemID=33225,lvl=40,q=4,rwp=30200,u=2}),
-mnt(42777,{awp=30200,itemID=49284,lvl=40,q=4,races={1,2,3,4,5,6,7,8,10,11},u=2}),
+mnt(42777,{awp=30200,itemID=49284,lvl=40,q=4,u=2}),
 mnt(30174,{b=1,itemID=23720,q=4,u=2}),
 mnt(74918,{awp=30305,itemID=54068,lvl=40,q=4,u=2}),
 mnt(46197,{awp=20400,b=1,itemID=35225,lvl=60,q=3,rwp=30200,u=2}),

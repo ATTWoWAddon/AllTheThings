@@ -183,7 +183,7 @@ DF_MINING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_
 TWW_MINING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423341),	-- Khaz Algar Mining
 	r(2656),	-- Mining Journal \ Smelting
-	r(439705),	-- Bismuth
+	r_withQuest(439705, 80350), -- Bismuth
 	r(453381),	-- Erosion Polished Slate
 });
 MID_MINING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {

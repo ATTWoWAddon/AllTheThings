@@ -1578,3 +1578,14 @@ i(259240);	-- Sin'dorei Wine
 i(263198);	-- Valdekar's Special
 i(256552);	-- Verdant Rutaani Seed
 i(248485);	-- Wormhole Generator: Quel'Thalas
+
+------------------
+-- PATCH 12.0.5 --
+------------------
+--- Unsorted ---
+i(268456);	-- Animated Bench
+i(268455);	-- Enchanted Hourglass
+i(267472);	-- Gnomatic Projector
+i(272287);	-- Nap Mat
+i(267323);	-- Troll Scroll of Rainbow Roll
+i(272339);	-- Umbral Champion's Illustrious Banner

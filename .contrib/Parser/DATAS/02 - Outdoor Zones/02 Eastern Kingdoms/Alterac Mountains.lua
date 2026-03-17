@@ -134,10 +134,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(522, {	-- Assassin's Contract
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
-					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["cr"] = 2434,	-- Shadowy Assassin
 					["lvl"] = 30,
 				}),
 				q(523, {	-- Baron's Demise

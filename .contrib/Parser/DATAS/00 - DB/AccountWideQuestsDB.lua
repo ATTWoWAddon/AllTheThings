@@ -22,7 +22,6 @@ local AccountWideQuestsDB = {
 
 
 
-
 	------------------------------------------------------------------------------
 	-- PUT NEW QUESTIDS HERE ^^ IF YOU DONT WANT TO CHECK WHERE YOU ARE PUTTING IT
 	------------------------------------------------------------------------------
@@ -827,6 +826,7 @@ local AccountWideQuestsDB = {
 	53749,
 	53750,
 	53751,
+	53956,	-- Quest #53956*
 	54184,
 	54185,
 	54186,
@@ -925,11 +925,13 @@ local AccountWideQuestsDB = {
 	62397,
 	62398,
 	62602,
+	62655,	-- Quest #62655*
 	62708,
 	62709,
 	62710,
 	62711,
 	62745,
+	62749,	-- Quest #62749*
 	62964,
 	62965,
 	62977,
@@ -1121,6 +1123,7 @@ local AccountWideQuestsDB = {
 	72328,
 	72363,
 	72392,
+	72400,	-- Quest #72400*
 	72516,
 	72596,
 	72681,
@@ -1349,6 +1352,7 @@ local AccountWideQuestsDB = {
 	76740,	-- Grimoire of the Void-Touched Fel Imp
 	76741,
 	76742,
+	76743,	-- Grimoire of the Darkfire Imp
 	76745,	-- Grimoire of the Netherbound Imp
 	76747,
 	77179,
@@ -1360,6 +1364,7 @@ local AccountWideQuestsDB = {
 	77221,
 	77236,
 	77241,
+	77246,	-- Quest #77246*
 	77248,
 	77249,
 	77250,
@@ -1523,6 +1528,7 @@ local AccountWideQuestsDB = {
 	79429,
 	79430,
 	79431,
+	79439,	-- Quest #79439*
 	79441,
 	79443,	-- Grimoire of the Blasted Observer
 	79443,	-- Grimoire of the Blasted Observer
@@ -1552,11 +1558,16 @@ local AccountWideQuestsDB = {
 	79582,
 	79583,
 	79622,
+	79629,	-- Quest #79629*
+	79635,	-- Quest #79635*
+	79654,	-- Quest #79654*
+	79658,	-- Quest #79658*
 	79661,
 	79662,
 	79663,
 	79693,
 	79694,
+	79698,	-- Quest #79698*
 	79702,
 	79881,	-- Ensemble: Battlegear of the Lightning Emperor
 	79965,
@@ -1568,6 +1579,7 @@ local AccountWideQuestsDB = {
 	80093,
 	80110,
 	80190,
+	80198,	-- Quest #80198*
 	80199,
 	80201,
 	80262,
@@ -1576,6 +1588,8 @@ local AccountWideQuestsDB = {
 	80384,
 	80436,
 	80450,
+	80451,	-- Quest #80451*
+	80452,	-- Quest #80452*
 	80544,	-- The Weaver
 	80545,	-- The General
 	80546,	-- The Vizier
@@ -1594,8 +1608,12 @@ local AccountWideQuestsDB = {
 	81605,	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
 	81606,	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
 	81607,	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
+	81608,	-- Quest #81608*
+	81623,	-- Quest #81623*
+	81625,	-- Quest #81625*
 	81626,	-- [DNT] General - Level 2 Unlock (spellID 443679) (???)
 	81627,	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
+	81628,	-- Quest #81628*
 	81657,
 	81676,
 	81677,
@@ -1683,11 +1701,14 @@ local AccountWideQuestsDB = {
 	82782,	-- Authenticity in Dress
 	82784,	-- Resonant Performance
 	82809,
+	82833,	-- Quest #82833*
 	82998,	-- Beledar's Attunement
 	83024,	-- The Stormrider's Bond
 	83025,	-- A Sacred Connection
 	83134,	-- Increased Midsummer Fire Festival Special Loot Droprate (Daily Accountwide)
 	83156,
+	83157,	-- Quest #83157*
+	83158,	-- Quest #83158*
 	83180,
 	83193,
 	83235,
@@ -1708,6 +1729,9 @@ local AccountWideQuestsDB = {
 	83329,	-- Level 50 (Brann)
 	83330,	-- Level 60 (Brann)
 	83334,
+	83341,	-- Quest #83341*
+	83342,	-- Quest #83342*
+	83343,	-- Quest #83343*
 	83438,	-- Sturdy Chest
 	83439,	-- Sturdy Chest
 	83440,	-- Sturdy Chest
@@ -1766,6 +1790,7 @@ local AccountWideQuestsDB = {
 	83700,	-- Sturdy Chest
 	83701,	-- Sturdy Chest
 	83702,	-- Sturdy Chest
+	83748,	-- Quest #83748*
 	83826,	-- Luminous Nerubian Catalyst Stone
 	83831,	-- Completed Guest Relations intro quest finished with (84868) A Whiff of Help.
 	84006,	-- Queen's Pheromone
@@ -1861,6 +1886,7 @@ local AccountWideQuestsDB = {
 	84614,	-- Bronze Celebration Token Lockout [from #83468]
 	84629,	-- Bronze Celebration Token Lockout [from #84254]
 	84630,	-- Bronze Celebration Token Lockout [from #84489]
+	84666,	-- Quest #84666*
 	84681,	-- Triggered after turn in questID 84682 (Of Pacts and Patrons) (spellID 463432 - [DNT] Choice Complete Credit)
 	84689,	-- Spymaster's Severed Thread
 	84690,	-- Crypt Lord's Severed Thread
@@ -1873,6 +1899,7 @@ local AccountWideQuestsDB = {
 	84954,	-- Blackwater Cartel Weekly Contract
 	85014,	-- Bronze Celebration Titles: Plaguelands Survivor
 	85015,	-- Bronze Celebration Titles: Grizzly Hills Hiker
+	85111,	-- Quest #85111*
 	85159,	-- Zovex weekly reputation
 	85160,	-- Kereke weekly reputation
 	85161,	-- Rotfist weekly reputation
@@ -1881,6 +1908,15 @@ local AccountWideQuestsDB = {
 	85165,	-- Deathtide weekly reputation
 	85166,	-- Tka'ktath weekly reputation
 	85167,	-- The One Left weekly reputation
+	85200,	-- Quest #85200*
+	85201,	-- Quest #85201*
+	85202,	-- Quest #85202*
+	85203,	-- Quest #85203*
+	85204,	-- Quest #85204*
+	85205,	-- Quest #85205*
+	85206,	-- Quest #85206*
+	85207,	-- Quest #85207*
+	85210,	-- Quest #85210*
 	85218,	-- Bronze Celebration Titles: Classic Enthusiast
 	85219,	-- Bronze Celebration Titles: Outland Enthusiast
 	85220,	-- Bronze Celebration Titles: Northrend Enthusiast
@@ -1979,6 +2015,7 @@ local AccountWideQuestsDB = {
 	86378,	-- Royal Snapdragon Treat
 	86379,	-- Crimson Snapdragon Treat
 	86380,	-- Sandy Snapdragon Treat
+	86441,	-- Quest #86441*
 	86461,	-- Ancient Curiosity: Combat
 	86462,	-- Ancient Curiosity: Utility
 	86468,	-- Triggered with Members Only (89016)
@@ -2067,6 +2104,18 @@ local AccountWideQuestsDB = {
 	87445,	-- Smartest in Town's Attire
 	87448,	-- Craftiest in Town's Attire
 	87496,	-- Benefit Packages
+	87510,	-- Quest #87510*
+	87511,	-- Quest #87511*
+	87512,	-- Quest #87512*
+	87513,	-- Quest #87513*
+	87514,	-- Quest #87514*
+	87515,	-- Quest #87515*
+	87527,	-- Quest #87527*
+	87528,	-- Quest #87528*
+	87529,	-- Quest #87529*
+	87530,	-- Quest #87530*
+	87531,	-- Quest #87531*
+	87532,	-- Quest #87532*
 	87550,	-- Week 2: We're Really Taking Off
 	87551,	-- Week 3: Spread the Word
 	87552,	-- Week 4: They've Heard of You
@@ -2133,6 +2182,10 @@ local AccountWideQuestsDB = {
 	89250,	-- Burning Rubber
 	89251,	-- Running Hot!
 	89252,	-- Need a Jump?
+	89268,	-- Lost Legends
+	89283,	-- Magisters
+	89284,	-- Relic chosen
+	89290,	-- Quest #89290*
 	89331,	-- Flame Fortification
 	89332,	-- Boot Camp
 	89343,	-- The Untethered Void
@@ -2223,6 +2276,7 @@ local AccountWideQuestsDB = {
 	91081,	-- Hellcaller chest tracker
 	91082,	-- Hellcaller chest tracker
 	91083,	-- Hellcaller chest tracker
+	91094,	-- Quest #91094*
 	91142,	-- A Tabard for the Trusted
 	91154,	-- Dissenter Tailtrek
 	91166,	-- Hellcaller chest tracker
@@ -2291,6 +2345,9 @@ local AccountWideQuestsDB = {
 	91893,	-- Ensemble: Untethered Captain's Full-Plate
 	91894,	-- Has rolled for Coren Special Loot (Daily Accountwide)(TWW Version)
 	91894,	-- Has rolled for Coren Special Loot (Daily Accountwide)(TWW Version)
+	91895,	-- Ensemble: Void-Scarred Captain's Plate
+	91897,	-- Ensemble: Void-Scarred Blade's Attire
+	91898,	-- Ensemble: Void-Scarred Seer's Wrappings
 	91914,	-- Ensemble: Bundle of Ethereal Cloaks
 	91915,	-- K'areshi Ribbon Stash
 	91939,	-- Ensemble: Hollow Sentinel's Wingdrapes
@@ -2311,21 +2368,32 @@ local AccountWideQuestsDB = {
 	91969,	-- Time to Decorate
 	92019,	-- Ensemble: Well-Worn Twilight Cultist's Attire
 	92031,	-- Meet the Vandals
+	92032,	-- Quest #92032*
+	92033,	-- Quest #92033*
 	92071,	-- Deal: Cartel Zo
 	92072,	-- Deal: Cartel Ba
 	92073,	-- Deal: Cartel Om
 	92078,	-- A New Recipe!
 	92079,	-- Cartel Zo Dead Drop
 	92080,	-- Cartel Ba Dead Drop
+	92087,	-- Unlock Ability 1 - Level 2
+	92088,	-- Unlock Ability 2 - Level 3
+	92089,	-- Unlock Ability 3 - Level 4
+	92090,	-- Unlock Ability 4 - Level 5
+	92091,	-- Unlock Ability 5 - Level 6
+	92092,	-- Unlock Ability 6 - Level 7
+	92093,	-- Unlock Ability 7 - Level 8
 	92173,	-- Ensemble: Shoulderguards of the Wastelander Seer
 	92175,	-- Ensemble: Ancient Capes of the Reshii
 	92386,	-- A Handful of Voidlight Marl (Amani Tribe)
 	92402,	-- Magical Touch
 	92417,	-- Farm to Table
+	92428,	-- Quest #92428*
 	92429,	-- Alternative Skinning
 	92437,	-- Decor Treasure Hunt
 	92443,	-- Reverse Herb Farming
 	92445,	-- Smelting for Two
+	92486,	-- Quest #92486*
 	92487,	-- Open the first Wriggling Pinnacle Cache
 	92488,	-- Weekly lockout: 600 bonus crystals from The Flame Burns Eternal
 	92572,	-- Furniture Favor
@@ -2337,19 +2405,30 @@ local AccountWideQuestsDB = {
 	92586,	-- Felscorned Scythe of the Unmaker
 	92588,	-- Fallen King's Corrupted Blades
 	92599,	-- Scythe of the Unmaker
+	92608,	-- Landscape Photography
 	92611,	-- Illusion: Felshatter
 	92626,	-- ??
 	92627,	-- An Arrested Development
 	92628,	-- ??
+	92629,	-- Quest #92629*
 	92630,	-- The Pursuit Continues
 	92631,	-- Abhorrent Gauntlet
 	92632,	-- Trial of Wrath
 	92638,	-- Feldruid's Scornwing Idol
+	92654,	-- Quest #92654*
+	92666,	-- Quest #92666*
 	92680,	-- Ensemble: World-Defiler's Battle Armor
 	92681,	-- Ensemble: Zealous Felslingers Battle Armor
 	92710,  -- Hesta Forlath Paintings Unlock
+	92712,	-- Quest #92712*
+	92714,	-- Tracking Quest
 	92733,	-- Triggered after entering house
+	92734,	-- Quest #92734*
+	92756,	-- Level 9
 	92758,	-- Criteria: Buddy System
+	92758,	-- Criteria: Buddy System
+	92759,	-- Level 11
+	92813,	-- Quest #92813*
 	92857,	-- Ta'readon's Mount Voucher
 	92861,	-- Ensemble: Eredath Lightseeker's Regalia
 	92862,	-- Ensemble: Forgotten Conservatory Clothes
@@ -2459,10 +2538,31 @@ local AccountWideQuestsDB = {
 	93151,	-- Decor Treasure Hunt
 	93152,	-- Decor Treasure Hunt
 	93154,	-- Ensemble: Sargerei Commander's Voidscarred Regalia
+	93155,	-- Quest #93155*
 	93200,	-- A Handful of Voidlight Marl (Silvermoon Court)
+	93470,	-- Laments of Wey'nan--Part 1: Finding Hope
+	93471,	-- Laments of Wey'nan--Part 2:  Hunting Purpose
+	93472,	-- Laments of Wey'nan--Part 3: There Must Be More
+	93473,	-- Echoes of Our Past--Part 3: Dangerous Memories
+	93474,	-- Echoes of Our Past--Part 2: Alndust
 	93475,	-- Echoes of Our Past--Part 1: Fading History
+	93476,	-- Seeker's Trail--Part 3: Unending Mission
+	93478,	-- Seeker's Trail--Part 2: Seeking Peace
+	93479,	-- Seeker's Trail--Part 1: Call of Aln'hara
+	93480,	-- Words of Obayo--Part 3: The Silence
+	93481,	-- Words of Obayo--Part 2: The Rift
+	93482,	-- Words of Obayo--Part 1: The Flame
+	93483,	-- Tending the Lands--Part 3: The Cycle
+	93484,	-- Tending the Lands--Part 2: The Plan
+	93485,	-- Tending the Lands--Part 1: The Conflict
+	93515,	-- Quest #93515*
+	93554,	-- Tarnished Mural
 	93556,	-- Ancient Runestone
 	93557,	-- Derelict Mural
+	93558,	-- Forgotten Mural
+	93817,	-- Quest #93817*
+	93818,	-- Quest #93818*
+	93866,	-- Quest #93866*
 	93872,	-- Prey Complete - Normal #1
 	93873,	-- ??
 	93874,	-- Prey Complete - Hard #2
@@ -2470,26 +2570,83 @@ local AccountWideQuestsDB = {
 	93943,	-- Ancient Curiosity: Combat
 	93945,	-- Ancient Curiosity: Utility
 	93965,	-- Pet Wranglin'
+	93965,	-- Pet Wranglin'
+	94001,	-- Sturdy Chest
+	94012,	-- Lost Lil' Strider
+	94014,	-- Sturdy Chest
+	94016,	-- Sturdy Chest
+	94037,	-- Sturdy Chest
+	94039,	-- Sturdy Chest
+	94042,	-- Sturdy Chest
+	94044,	-- Sturdy Chest
 	94210,	-- Feathering the Nest
 	94377,	-- Warden's Companion
 	94378,	-- Duskytooth Fel Snooter
 	94379,	-- This Old Hearth
+	94392,	-- Quest #94392*
 	94415,	-- Plumbing the Void
 	94416,	-- Rehoming Technology
 	94455,	-- Home at Last
 	94469,	-- A Handful of Voidlight Marl (The Singularity)
+	94537,	-- Vista Point
+	94538,	-- Vista Point
+	94539,	-- Vista Point
+	94541,	-- Vista Point
+	94542,	-- Vista Point
+	94544,	-- Vista Point
+	94546,	-- Vista Point
+	94547,	-- Vista Point
+	94548,	-- Vista Point
+	94549,	-- Vista Point
+	94550,	-- Vista Point
+	94551,	-- Vista Point
+	94552,	-- Vista Point
+	94553,	-- Vista Point
+	94554,	-- Vista Point
+	94555,	-- Vista Point
+	94681,	-- Warden of Weeds weekly reputation obtained.
+	94682,	-- Harried Hawkstrider weekly reputation obtained.
+	94683,	-- Necrohexxer Raz'ka weekly reputation obtained.
 	94685,	-- Bloated Snapdragon weekly reputation
 	94687,	-- Coralfang weekly reputation
+	94688,	-- Lady Liminus weekly reputation obtained.
 	94692,	-- Banuran weekly reputation
 	94694,	-- Duskburn weekly reputation
+	94697,	-- The Snapping Scourge weekly reputation obtained.
+	94701,	-- Poacher Rav'ik weekly reputation obtained.
+	94706,	-- The Devouring Invader weekly reputation obtained.
 	94708,	-- Depthborn Eelamental weekly reputation
+	94709,	-- The Decaying Diamondback weekly reputation obtained.
 	94710,	-- Ash'an the Empowered weekly reputation
 	94713,	-- Chionex weekly reputation
+	94714,	-- Ha'kalawe weekly reputation obtained.
+	94716,	-- Queen Lashtongue weekly reputation obtained.
+	94718,	-- Stumpy weekly reputation obtained.
+	94719,	-- Serrasa weekly reputation obtained.
+	94720,	-- Mindrot weekly reputation obtained.
 	94721,	-- Dracaena weekly reputation
+	94722,	-- Treetop weekly reputation obtained.
+	94747,	-- ???
+	94750,	-- Abysslick weekly reputation obtained.
 	94751,	-- Aeonelle Blackstar weekly reputation
 	94753,	-- Blackcore weekly reputation
+	94755,	-- Far'thana the Mad weekly reputation obtained.
+	94758,	-- Lotus Darkblossom weekly reputation obtained.
+	94759,	-- Nightbrood weekly reputation obtained.
+	94760,	-- Nullspiral weekly reputation obtained.
+	94762,	-- Rakshur the Bonegrinder weekly reputation obtained.
+	94764,	-- The Many-Broken weekly reputation obtained.
+	94765,	-- Voidseer Orivane weekly reputation obtained.
+	94816,	-- Fine Fashion Funding
 	94995,	-- To Dye For
+	95000,	-- Quest #95000*
+	95001,	-- Quest #95001*
+	95002,	-- Quest #95002*
+	95003,	-- Quest #95003*
 	95166,	-- Pet the Dog (245551)
+	95324,	-- The War Beyond the Roots
+	96214,	-- Tracking Quest
+	96215,	-- Tracking Quest
 
 	-- Weird partial cases... ??
 	-- 45237,	-- Ensemble: Funerary Plate of the Chosen Dead (Only flags complete for Plate characters)

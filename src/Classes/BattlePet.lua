@@ -10,8 +10,8 @@ local wipe, setmetatable, rawget, select,pairs
 -- Module
 
 -- App
--- Battle Pets are handled in Mounts & Battle Pets for Classic pre-MOP
-if app.GameBuildVersion < 50000 then return; end
+-- Battle Pets are handled in Mounts & Battle Pets for Classic/TBC
+if app.GameBuildVersion < 30000 then return; end
 
 -- BattlePet Lib / Species Lib
 local KEY, CACHE = "speciesID", "BattlePets"

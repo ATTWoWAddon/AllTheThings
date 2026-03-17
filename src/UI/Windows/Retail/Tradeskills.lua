@@ -440,6 +440,7 @@ app:CreateWindow("Tradeskills", {
 
 				if app.IsRetail then
 					app.Settings:SetTooltipSetting("Auto:ProfessionList", false)
+					self:SetResizable(false)
 					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
 					self:Hide()
 					if not ProfessionsFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame
@@ -489,16 +490,24 @@ app:CreateWindow("Tradeskills", {
 					app.TradeskillTab.Icon:SetSize(24, 24)
 
 					if not app.CreatedTabTradeskill then
-						ProfessionsFrame:HookScript("OnHide", function()
-							-- ProfessionsFrameTabSideBar:ClearAllPoints()
-							-- ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
-							-- ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
+						local function hide(self)
 							ProfessionsFrameTabSideBar.selTab = 0
 							app.TradeskillTab:SetChecked(false)
 							app.TradeskillTab.Icon:SetTexture("Interface\\Addons\\AllTheThings\\assets\\logo_32x32")
 							app.TradeskillTab.Icon:SetSize(24, 24)
 							self:Hide()
+						end
+
+						ProfessionsFrame:HookScript("OnHide", function()
+							hide(self)
 						end)
+
+						if C_AddOns.IsAddOnLoaded("TradeSkillMaster") then
+							self:RegisterEvent("TRADE_SKILL_CLOSE")
+							handlers.TRADE_SKILL_CLOSE = function(self)
+								hide(self)
+							end
+						end
 
 						app.CreatedTabTradeskill = true
 					end

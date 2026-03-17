@@ -14,8 +14,6 @@ r(248937),	-- Empyrial Circlet
 r(248938),	-- Empyrial Hesselian Setting
 r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
-10.0.0.44649
-r(382975),	-- Legion Prospecting
 
 
 

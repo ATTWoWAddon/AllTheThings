@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 			n(256828, {	-- Dennia Silvertongue
-				["description"] = "This Vendor sells Decor only to players that have purchased 'Midnight Epic Edition' upgrade.",
+				["description"] = "This Vendor sells additional copies of the Promotional Decor only to players that have obtained it when the Promotion was active.",
 				["coord"] = { 51.1, 56.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(252668, {	-- "The Harbinger" Painting (DECOR!)

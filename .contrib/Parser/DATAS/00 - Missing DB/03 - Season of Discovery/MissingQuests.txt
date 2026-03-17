@@ -459,9 +459,6 @@ q(88717),	-- CLASSIC:Never at Rest
 q(88718),	-- CLASSIC:Never at Rest
 q(88729),	-- CLASSIC:Ramaladni's Icy Grasp
 q(88730),	-- CLASSIC:The Only Song I Know...
-q(88744),	-- CLASSIC:Under the Shadow
-q(88748),	-- CLASSIC:Cracked Necrotic Crystal
-q(88749),	-- CLASSIC:Faint Necrotic Crystal
 1.15.6.58866
 q(88940),	--
 q(88943),	--

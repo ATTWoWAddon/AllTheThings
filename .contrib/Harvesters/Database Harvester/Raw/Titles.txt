@@ -1008,3 +1008,6 @@
 762@@@Azeroth's Top Ten Youth %s
 763@@@Model of the Era %s
 764@@@Big Brother %s
+12.0.5.66330
+749@@@Darkspear Dasher %s
+766@@@%s, Mrglgrgl of Grglmrgl

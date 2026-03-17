@@ -873,8 +873,7 @@ namespace ATT
                 if (dbEntry.Value is IDictionary<string, object> data)
                 {
                     data[keyID] = dbEntry.Key;
-                    Objects.MergeFromDB(keyID, data);
-                    Items.MergeFromDB(data);
+                    DBMerge(data, keyID);
                 }
                 else
                 {
@@ -889,20 +888,25 @@ namespace ATT
             {
                 if (o is IDictionary<string, object> data)
                 {
-                    if (data.TryGetValue(keyID, out long id))
-                    {
-                        Objects.MergeFromDB(keyID, data);
-                        Items.MergeFromDB(data);
-                    }
-                    else
-                    {
-                        LogError($"Trying to merge DB data which doesn't have the expected Merge Key! {keyID}", data);
-                    }
+                    DBMerge(data, keyID);
                 }
                 else
                 {
                     ThrowBadFormatDB(keyID + "DB", o);
                 }
+            }
+        }
+
+        private static void DBMerge(IDictionary<string, object> data, string keyID)
+        {
+            if (data.ContainsKey(keyID))
+            {
+                Objects.MergeFromDB(keyID, data);
+                Items.MergeFromDB(data);
+            }
+            else
+            {
+                LogError($"Trying to merge DB data which doesn't have the expected Merge Key! {keyID}", data);
             }
         }
     }

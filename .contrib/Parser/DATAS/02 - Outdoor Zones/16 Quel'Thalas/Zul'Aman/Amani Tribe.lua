@@ -76,10 +76,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 3 --
 								i(263320, {	-- Rope-Bound Amani Basket (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 								}),
 								i(263318, {	-- Simple Amani Basket (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 								}),
 							}, {	-- RENOWN 4 --
 							}, {	-- RENOWN 5 --
@@ -152,16 +152,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 7 --
 								i(264350, {	-- Carved Idol of Akil'zon, Loa of Victory (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(258290, {	-- Carved Idol of Halazzi, Loa of the Hunt (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(256933, {	-- Carved Idol of Jan'alai, Loa of Fire (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(256927, {	-- Carved Idol of Nalorakk, Loa of War (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 							}, {	-- RENOWN 8 --
 							}, {	-- RENOWN 9 --
@@ -171,10 +171,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 11 --
 								i(264333, {	-- Amani Incense Burner (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 								}),
 								i(258549, {	-- Burning Amani Pinecone (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 							}, {	-- RENOWN 12 --
 								i(250863, {	-- Naloki (PET!)
@@ -187,13 +187,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}, {	-- RENOWN 14 --
 							}, {	-- RENOWN 15 --
 								i(256934, {	-- Boiling Amani Cauldron (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(256926, {	-- Empty Amani Cauldron (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(256924, {	-- Hash'ey Heartbroth Cauldron (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 							}, {	-- RENOWN 16 --
 								i(250801, {	-- Loa-Blessed Shoulderguards (COSMETIC!)
@@ -205,16 +205,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 18 --
 								i(260202, {	-- Visage of Akil'zon, Loa of Victory (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 								i(260515, {	-- Visage of Halazzi, Loa of the Hunt (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 								i(260516, {	-- Visage of Jan'alai, Loa of Fire (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 								i(260514, {	-- Visage of Nalorakk, Loa of War (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 								}),
 							}, {	-- RENOWN 19 --
 								i(250889, {	-- Amani Windcaller (MOUNT!)

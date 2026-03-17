@@ -13173,3 +13173,7 @@
 8684@@@+$k1 Primary Stat and opponent's failed interrupt attempts grant Precognition
 8685@@@+$k1 Primary Stat and +$435550s1% Damage Reduction when affected by Crowd Control
 8686@@@+$k1 Primary Stat and getting snared increases damage of your next attack by $411132s1 per stack
+12.0.5.66330
+7976@@@Enchant Tool - Amani Resourcefulness |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7977@@@Enchant Tool - Amani Resourcefulness |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8674@@@Internal Testing Visual Enchant

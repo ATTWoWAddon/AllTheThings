@@ -125,6 +125,7 @@ else
 		if o and #o > 0 then
 			local objects = {};
 			local mapID, px, py = GetPlayerPosition();
+			if not mapID then mapID = app.CurrentMapID; end
 			local closestDistance, closestInstance, dist, searchResults;
 			for i,objectID in ipairs(o) do
 				closestInstance = nil;
@@ -553,34 +554,36 @@ end
 -- because all kinds of addons create their own tooltips and use them to do weird stuff behind the scenes
 -- and there's no reason for ATT to care when it's not even visible to a player
 local HookableTooltips = {
-	["GameTooltip"]=1,
-	["GameTooltipTooltip"]=1,
-	["EmbeddedItemTooltipTooltip"]=1,
-	["EmbeddedItemTooltip"]=1,	-- did blizz fix the name of this finally?
-	["ItemRefTooltip"]=1,
-	["ShoppingTooltip1"]=1,
-	["ShoppingTooltip2"]=1,
-	["PerksProgramTooltip"]=1,	-- tooltip used for items within the Trading Post UI
-	["EncounterJournalTooltipItem1Tooltip"]=1,	-- various tooltips in Adventure Guide, some are actually useful to attach ATT data
-	["GarrisonShipyardMapMissionTooltipTooltip"]=1,	-- tooltips of Navel missions from WoD Garrison
+	GameTooltip=1,
+	GameTooltipTooltip=1,
+	EmbeddedItemTooltipTooltip=1,
+	EmbeddedItemTooltip=1,	-- did blizz fix the name of this finally?
+	ItemRefTooltip=1,
+	ShoppingTooltip1=1,
+	ShoppingTooltip2=1,
+	PerksProgramTooltip=1,	-- tooltip used for items within the Trading Post UI
+	EncounterJournalTooltipItem1Tooltip=1,	-- various tooltips in Adventure Guide, some are actually useful to attach ATT data
+	GarrisonShipyardMapMissionTooltipTooltip=1,	-- tooltips of Navel missions from WoD Garrison
 	-- other addons which create user-visible tooltips that ATT should attach into
+	-- UIWidgetBaseItemEmbeddedTooltip1 = 1,
 	-- SilverDragon
-	["SilverDragonLootTooltip"]=1,
+	SilverDragonLootTooltip=1,
 	-- RareScanner
-	["LootBarToolTip"]=1,
-	["RSMapItemToolTip"]=1,
+	LootBarToolTip=1,
+	RSMapItemToolTip=1,
 	-- Townlong Yak addons seem to use alternate, automatically appended tooltips now...
-	["NotGameTooltip"]=1,
-	["NotGameTooltip1"]=1,
-	["NotGameTooltip2"]=1,
-	["NotGameTooltip3"]=1,
-	["NotGameTooltip4"]=1,
-	["NotGameTooltip0"]=1,
-	["NotGameTooltip01"]=1,
-	["NotGameTooltip012"]=1,
-	["NotGameTooltip0123"]=1,
+	NotGameTooltip=1,
+	NotGameTooltip1=1,
+	NotGameTooltip2=1,
+	NotGameTooltip3=1,
+	NotGameTooltip4=1,
+	NotGameTooltip0=1,
+	NotGameTooltip01=1,
+	NotGameTooltip012=1,
+	NotGameTooltip0123=1,
 	-- WorldQuestList
 	WQLTooltip = 1,
+	WQLAreaPOITooltipTooltip = 1,
 };
 
 -- Shared Tooltip Functions
@@ -761,7 +764,7 @@ app.WipeTooltipInfoCache = WipeTooltipInfoCache
 -- app.AddEventHandler("OnThingRemoved", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnSettingsRefreshed", WipeTooltipInfoCache);
 local function AttachTooltipSearchResults(tooltip, method, ...)
-	-- app.PrintDebug("AttachTooltipSearchResults",...)
+	-- app.PrintDebug("AttachTooltipSearchResults",SafeGetName(tooltip),...)
 	app.SetSkipLevel(1);
 	local status, group, working = pcall(app.GetCachedSearchResults, method, ...)
 	app.SetSkipLevel(0);
@@ -796,7 +799,7 @@ do
 		npcID = NPCSearchOptions,
 		objectID = NPCSearchOptions,
 	}, { __index = function() return DefaultSearchOptions end})
-	
+
 	-- In Retail, we want to put the Thing being searched into the tooltip. Whether other content should be included
 	-- is based on Fillers and other logic based on that Thing and is not always included based on caching
 	AttachTypicalSearchResults = function(self, field, id)

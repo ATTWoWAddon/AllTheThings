@@ -452,14 +452,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = MID_MINING,
 				}),
 			}),
-			--[[
 			prof(SKINNING, {
-				n(219083, {	-- Ginnad <Skinning Trainer>
-					["coord"] = { 54.3, 57.4, DORNOGAL },
-					["groups"] = TWW_SKINNING,
+				n(243527, {	-- Tyn <Skinning Trainer>
+					["coord"] = { 43.2, 55.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_SKINNING,
 				}),
 			}),
-			--]]
 			prof(TAILORING, {
 				n(243352, {	-- Galana <Tailoring Trainer>
 					["coord"] = { 48.2, 54.0, MAP.MIDNIGHT.SILVERMOON_CITY },

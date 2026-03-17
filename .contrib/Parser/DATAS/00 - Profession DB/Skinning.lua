@@ -126,7 +126,7 @@ i(0, 308569);	-- Skinning (Shadowlands)
 -- PATCH 10.0.0 --
 ------------------
 --- TRAINER ---
-i(0, 366259);	-- Skinning
+i(0, 366259);	-- Skinning (Dragon Isle)
 i(0, 395282);	-- Curious Hide
 i(0, 395706);	-- Dense Hide
 i(0, 392440);	-- Leather Skinning
@@ -192,3 +192,35 @@ i(0, 442655);	-- Supreme Beast Lure
 ------------------
 --- TRAINER ---
 i(0, 469989);	-- Toughened Tempest Pelt
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471014);	-- Midnight Skinning
+i(0, 1265817);	-- Artisan Skinner's Moxie
+i(0, 1265730);	-- Deftness
+i(0, 1250491);	-- Find High-Value Beasts
+i(0, 1225908);	-- Fine Void-Tempered Hide
+i(0, 1265723);	-- Finesse
+i(0, 1277733);	-- High-Value Beasts
+i(0, 1265715);	-- Knowledge
+i(0, 1265727);	-- Perception
+i(0, 1265712);	-- Quality
+i(0, 1265719);	-- Skill
+i(0, 1225902);	-- Void-Tempered Hide
+i(0, 1225901);	-- Void-Tempered Leather
+i(0, 1225903);	-- Void-Tempered Plating
+i(0, 1225897);	-- Void-Tempered Scales
+--- SPECIALIZATION ---
+i(0, 1226037);	-- Carve Meat
+i(0, 1225948);	-- Grand Beast Lure
+i(0, 1225939);	-- Lightbloom Diffuser
+i(0, 1225943);	-- Majestic Eversong Lure
+i(0, 1225945);	-- Majestic Harandar Lure
+i(0, 1225946);	-- Majestic Voidstorm Lure
+i(0, 1225944);	-- Majestic Zul'Aman Lure
+i(0, 1225940);	-- Primal Diffuser
+i(0, 1223388);	-- Sharpen Your Knife
+i(0, 1225942);	-- Void Diffuser
+i(0, 1225941);	-- Wild Diffuser

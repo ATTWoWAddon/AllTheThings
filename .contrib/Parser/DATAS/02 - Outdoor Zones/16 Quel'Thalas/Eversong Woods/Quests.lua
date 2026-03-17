@@ -1343,7 +1343,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			n(QUESTS, {
 				q(93818),	-- After turning in The Line Must be Drawn Here (86710)
-				q(87730),	-- Triggered when the counter reached 100% while on 'Leave Ashes in Your Wake' (90554)
 			}),
 		}),
 	}),

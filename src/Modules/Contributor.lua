@@ -29,7 +29,6 @@ local Reports = setmetatable({}, { __index = function(t,key)
 	t[key] = reportType
 	return reportType
 end})
-app.AddEventHandler("OnReportReset", function() wipe(Reports) end)
 
 -- Allows adding an Event handler function for in-game events when Contributor is enabled
 local function AddEventFunc(event, func)
@@ -229,10 +228,17 @@ local MapPrecisionOverrides = {
 	[1702] = 2,	-- The Roots
 	[1703] = 5,	-- Heart of the Forest
 	[1912] = 10,	-- The Runecarver's Oubliette
+	[2215] = 0.25,	-- Hallowfall
 	[2328] = 3,	-- The Proscenium
+	[2393] = 0.40,	-- Silvermoon City
+	[2395] = 0.20,	-- Eversong Woods
+	[2405] = 0.10,	-- Voidstorm
+	[2413] = 0.20,	-- Harandar
+	[2437] = 0.20,	-- Zul'Aman
 	[2438] = 5,	-- Scarlet Halls (Arator's Journey)
 	[2541] = 10,	-- Arcantina
 	[2477] = 4,	-- Voidscar Cavern, K'aresh
+	[2536] = 0.50,	-- Atal'Aman
 	[2565] = 3,	-- Parhelion Plaza, Isle of Quel'Danas (Intro)
 	[2579] = 2,	-- Wartha'nan Crypts
 	[2583] = 2,	-- Wit'Kalar Crypt
@@ -262,13 +268,14 @@ local function Check_coords(objRef, maxCoordDistance)
 			if dist < closest then closest = dist end
 		end
 	end
+	if DebugPrinting then
+		app.print("Contrib.Coords:",objRef.__type,id,relCoords and "relative" or "existing",("%.2f"):format(closest))
+	end
 	if sameMap then
 		-- quest has an accurate coord on accurate map
 		if closest > maxCoordDistance then
 			local reportData = BuildGenericReportData(objRef, id)
-			-- round to the tenth
-			closest = round(closest, 1)
-			reportData.VerifyOrAddCoords = ("Closest %s Coordinates are off by: %d on mapID: %d"):format(relCoords and "relative" or "existing", closest, mapID)
+			reportData.VerifyOrAddCoords = ("Closest %s Coordinates are off by: %.2f on mapID: %d"):format(relCoords and "relative" or "existing", closest, mapID)
 			AddReportData(objRef.__type,id,reportData)
 			return 1
 		end
@@ -645,11 +652,12 @@ MobileDB.Creature = {
 	[245944] = true,	-- Salandria
 	[247425] = true,	-- Chana
 	[249106] = true,	-- Witherbark Scout (Dak'zor)
-	[249130] = true,	-- Ren'dorei Ghostblade
+	[249130] = true,	-- Ren'dorei Ghostblade (Riftblade Astre)
 	[250295] = true,	-- Valeera Sanguinar
 	[251891] = true,	-- Lingering Shade
 	[252807] = true,	-- Vanguard Paladin
 	[256867] = true,	-- Grieving Amani
+	[257459] = true,	-- Farstrider Scout
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
 -- either by following the player or having player-based decisions that cause them to have any coordinates
@@ -1194,6 +1202,7 @@ MobileDB.GameObject = {
 	[235985] = true,	-- Gold Coins
 	[235986] = true,	-- Gold Coins
 	[235987] = true,	-- Gold Coins
+	[236186] = true,	-- Finalize Garrison Plot
 	[236187] = true,	-- Finalize Garrison Plot
 	[236262] = true,	-- Finalize Garrison Plot
 	[236263] = true,	-- Finalize Garrison Plot
@@ -2013,6 +2022,7 @@ MobileDB.GameObject = {
 	[337238] = true,	-- Crumbled Sinstones
 	[337241] = true,	-- Stashed Equipment
 	[338224] = true,	-- Cache of the Fire Lord
+	[339287] = true,	-- Iron Chains
 	[340023] = true,	-- Diagnostic Console: Uldir (q:58506)
 	[340025] = true,	-- Diagnostic Console: Uldaman (q:58506)
 	[340026] = true,	-- Diagnostic Console: Ulduar (q:58506)
@@ -2752,6 +2762,7 @@ MobileDB.GameObject = {
 	[556425] = true,	-- Darkpine Lumber
 	[556498] = true,	-- Echo of a Wounded Retreat (q:91544)
 	[556704] = true,	-- Darkpine Lumber
+	[557572] = true,	-- Nutrient-Rich Dirt (q:91586)
 	[557988] = true,	-- Darkpine Lumber
 	[558184] = true,	-- Decaying Fighter
 	[558338] = true,	-- Darkpine Lumber
@@ -2769,6 +2780,7 @@ MobileDB.GameObject = {
 	[563491] = true,	-- Moldy Chunks
 	[563492] = true,	-- Containment Ward (q:91506)
 	[564925] = true,	-- Surplus Elementium (wq:91778)
+	[566083] = true,	-- Stormarion Supplies
 	[566093] = true,	-- Locked Strongbox (q:91826)
 	[566768] = true,	-- Cache of the Deathless
 	[567396] = true,	-- Echo of Burning Revenge (q:91544)
@@ -2786,6 +2798,7 @@ MobileDB.GameObject = {
 	[568254] = true,	-- Scattered Supplies (q:91384)
 	[568305] = true,	-- Bamboo Lumber
 	[568405] = true,	-- Bamboo Lumber
+	[568477] = true,	-- Ghostland Pepper (q:91989)
 	[568528] = true,	-- Coldwind Lumber
 	[569408] = true,	-- Coldwind Lumber
 	[569722] = true,	-- Coldwind Lumber
@@ -2800,14 +2813,14 @@ MobileDB.GameObject = {
 	[571213] = true,	-- Olemba Lumber
 	[571345] = true,	-- Olemba Lumber
 	[571604] = true,	-- Weapon Rack (Arcantina)
-	[572474] = true,	-- Arcane Mana Crystal (q:92397)
-	[572475] = true,	-- Weapons Rack (q:92397)
-	[572477] = true,	-- Weapons Rack (q:92397)
-	[572766] = true,	-- Trash Heap (Delves)
 	[572030] = true,	-- Ebon Banner (q:92321)
 	[572094] = true,	-- Olemba Lumber
 	[572129] = true,	-- Olemba Lumber
 	[572254] = true,	-- Ironwood Lumber
+	[572474] = true,	-- Arcane Mana Crystal (q:92397)
+	[572475] = true,	-- Weapons Rack (q:92397)
+	[572477] = true,	-- Weapons Rack (q:92397)
+	[572766] = true,	-- Trash Heap (Delves)
 	[572869] = true,	-- Olemba Lumber
 	[572995] = true,	-- Olemba Lumber
 	[573057] = true,	-- Ironwood Lumber
@@ -2878,6 +2891,7 @@ MobileDB.GameObject = {
 	[587443] = true,	-- Ripe Grapes
 	[587913] = true,	-- Shabby Stockpile
 	[588950] = true,	-- Tusk Taker's Taken Tusk Trophy (q:93095)
+	[602746] = true,	-- Lady Selen'vjar Ritual Chest [Daggerspine Landing, Ritual Site]
 	[605174] = true,	-- Haunted Weapon Rack
 	[609858] = true,	-- Budget Friendly (q:93453)
 	[612079] = true,	-- Foul Carcass (q:93397)
@@ -2889,6 +2903,8 @@ MobileDB.GameObject = {
 	[613852] = true,	-- Potion of Unquestionable Strength (q:93569)
 	[613945] = true,	-- Orb of Translocation
 	[614762] = true,	-- UNKNOWN
+	[614787] = true,	-- Summons to Broken Shorw (q:92320)
+	[614804] = true,	-- Corrupted Lantern
 	[614893] = true,	-- Paint Bowl (q:90535)
 	[616052] = true,	-- Flame-Hardened Sap of Teldrassil
 	[616055] = true,	-- Forgotten Cache [Windrunner Spire]
@@ -2901,7 +2917,7 @@ MobileDB.GameObject = {
 	[618495] = true,	-- Nullaeus Cache
 	[618517] = true,	-- Thalassian Lumber
 	[618844] = true,	-- Mislaid Curiosity
-	--[619092] = true,	-- Flyer Crate (q:)
+	[619092] = true,	-- Flyer Crate (q:92138)
 	[619736] = true,	-- Netherstorm Structural Cage
 	[620105] = true,	-- Rookery Cache Key
 	[626980] = true,	-- Belanise Cluster (q:91328)
@@ -2911,6 +2927,7 @@ MobileDB.GameObject = {
 	[628381] = true,	-- Weapon Rack (Arcantina)
 	[630870] = true,	-- Portal to Astalor's Sanctum
 	[638873] = true,	-- Orb of Translocation
+	[650051] = true,	-- Faithbreaker Ger'lok's Ritual Chest [Broken Throne, Ritual Site]
 }
 
 local ReturnEmptyFunctionMeta = { __index = function() return app.ReturnFalse end}
@@ -3233,7 +3250,13 @@ local function OnPLAYER_SOFT_TARGET_INTERACTION()
 end
 AddEventFunc("PLAYER_SOFT_TARGET_INTERACTION", OnPLAYER_SOFT_TARGET_INTERACTION)
 
+app.AddEventHandler("OnReportReset", function()
+	wipe(Reports)
+	api.LastQUEST_DETAIL = nil
+end)
+
 -- Contribution setup
+api.IgnoreFirstReport = true
 local function Contribute(contrib)
 	app.Contributor = contrib == 1 and true or nil
 	AllTheThingsSavedVariables.Contributor = app.Contributor and 1 or 0
@@ -3246,7 +3269,7 @@ local function Contribute(contrib)
 				app:RegisterFuncEvent(event,func)
 			end
 		end
-	elseif app.IsReady then
+	elseif not api.IgnoreFirstReport then
 		app.print("Not showing ATT contribution information.")
 		if contribModule.Events then
 			for event,func in pairs(contribModule.Events) do
@@ -3255,6 +3278,7 @@ local function Contribute(contrib)
 			end
 		end
 	end
+	api.IgnoreFirstReport = nil
 end
 -- Allows a user to use /att contribute
 -- to opt-in/out of seeing additional reporting/chat/sound functionality to help with refining ATT data

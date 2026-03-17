@@ -1728,7 +1728,6 @@ s(274578)/i(90982),	-- Art Template Mail Hand - Mail_PVPHunter_F_01 - Red
 s(274579)/i(90983),	-- Art Template Mail Head - Mail_PVPHunter_F_01 - Red
 s(274580)/i(90984),	-- Art Template Mail Legs - Mail_PVPHunter_F_01 - Red
 s(274581)/i(90985),	-- Art Template Mail Shoulder - Mail_PVPHunter_F_01 - Red
-s(274582)/i(90986),	-- Bracelet \\ Ruby Bracelet
 s(274583)/i(90987),	-- Art Template Plate Belt - Plate_PVPDeathKnight_F_01 - Alliance
 s(274584)/i(90988),	-- Art Template Plate Boot - Plate_PVPDeathKnight_F_01 - Alliance
 s(274585)/i(90989),	-- Art Template Plate Chest - Plate_PVPDeathKnight_F_01 - Alliance
@@ -2441,188 +2440,8 @@ s(277409)/i(95613),	-- Weapon - Hand_1h_ThunderIsleRaid_D_03 (right hand) - Blue
 s(277410)/i(95614),	-- Weapon - Hand_1h_ThunderIsleRaid_D_03 (right hand) - Brown
 s(277411)/i(95615),	-- Weapon - Hand_1h_ThunderIsleRaid_D_03 (right hand) - Green
 s(277412)/i(95616),	-- Weapon - Hand_1h_ThunderIsleRaid_D_03 (right hand) - Purple
-s(277413)/i(95626),	-- tning-Eye Hood \\ Lightning-Eye Hood
-s(277414)/i(95627),	-- rman's Jingling Leggings \\ Spearman's Jingling Leggings
-s(277415)/i(95628),	-- ic-Shot Shoulderguards \\ Static-Shot Shoulderguards
-s(277416)/i(95629),	-- dbreaker Greatbelt \\ Cloudbreaker Greatbelt
-s(277417)/i(95630),	-- tplate of Violent Detonation \\ Chestplate of Violent Detonation
-s(277418)/i(95631),	-- ers of Constant Implosion \\ Bracers of Constant Implosion
-s(277419)/i(95632),	-- dbreaker's Stormscythe \\ Worldbreaker's Stormscythe
-s(277420)/i(95634),	-- tningweaver Gauntlets \\ Lightningweaver Gauntlets
-s(277421)/i(95635),	-- et's Tormented Leggings \\ Al'set's Tormented Leggings
-s(277422)/i(95636),	-- ure-Split Shoulderwraps \\ Fissure-Split Shoulderwraps
-s(277423)/i(95637),	-- s of Static Bursts \\ Robes of Static Bursts
-s(277424)/i(95639),	-- e of Booming Nights \\ Drape of Booming Nights
-s(277425)/i(95640),	-- blade of the Breaking Storm \\ Soulblade of the Breaking Storm
-s(277426)/i(95642),	-- nitely Conducting Bracers \\ Infinitely Conducting Bracers
-s(277427)/i(95643),	-- tbinder Greatboots \\ Ghostbinder Greatboots
-s(277428)/i(95644),	-- zed Yojamban Carapace \\ Ionized Yojamban Carapace
-s(277429)/i(95645),	-- ewalker's Sandblasted Drape \\ Wastewalker's Sandblasted Drape
-s(277430)/i(95647),	-- k's Maelstrom Staff \\ Jalak's Maelstrom Staff
-s(277431)/i(95648),	-- ings of Multiplicative Strikes \\ Bindings of Multiplicative Strikes
-s(277432)/i(95649),	-- lithuz Sandmail \\ Sul'lithuz Sandmail
-s(277433)/i(95650),	-- en Warlord's Bracers \\ Frozen Warlord's Bracers
-s(277434)/i(95651),	-- dlord's Bloodsoaked Legplates \\ Bloodlord's Bloodsoaked Legplates
-s(277435)/i(95652),	-- ture-Proof Greathelm \\ Puncture-Proof Greathelm
-s(277436)/i(95653),	-- -Rimmed Doomcloak \\ Horn-Rimmed Doomcloak
-s(277437)/i(95655),	-- ecaster's Burning Crown \\ Flamecaster's Burning Crown
-s(277438)/i(95656),	-- inator's Armwraps \\ Vaccinator's Armwraps
-s(277439)/i(95657),	-- mancer's Spiritbinding Spire \\ Dinomancer's Spiritbinding Spire
-s(277440)/i(95660),	-- mlord's Totemic Wand \\ Venomlord's Totemic Wand
-s(277441)/i(95661),	-- s of Rampaging Earth \\ Roots of Rampaging Earth
-s(277442)/i(95662),	-- lders of Dinomancy \\ Spaulders of Dinomancy
-s(277443)/i(95663),	-- uards of Scintillating Scales \\ Legguards of Scintillating Scales
-s(277444)/i(95664),	-- lates of the Vanquished Abomination \\ Armplates of the Vanquished Abomination
-s(277445)/i(95666),	-- -Kura, Kazra'jin's Skullcleaver \\ Kura-Kura, Kazra'jin's Skullcleaver
-s(277446)/i(95667),	-- li's Bloodstained Sandals \\ Mar'li's Bloodstained Sandals
-s(277447)/i(95668),	-- alari Robes of the Final Rite \\ Zandalari Robes of the Final Rite
-s(277448)/i(95670),	-- -Thoth, Sul's Spiritrending Talons \\ Amun-Thoth, Sul's Spiritrending Talons
-s(277449)/i(95671),	-- s of Treacherous Ground \\ Robes of Treacherous Ground
-s(277450)/i(95672),	-- of Gara'jal \\ Gaze of Gara'jal
-s(277451)/i(95673),	-- Ridden Bracers \\ Loa-Ridden Bracers
-s(277452)/i(95674),	-- loaded Bladebreaker Cuirass \\ Overloaded Bladebreaker Cuirass
-s(277453)/i(95675),	-- t, Malakk's Soulburning Greatsword \\ Zerat, Malakk's Soulburning Greatsword
-s(277454)/i(95678),	-- tered Tortoiseshell Longbow \\ Shattered Tortoiseshell Longbow
-s(277455)/i(95679),	-- fall Ribwraps \\ Rockfall Ribwraps
-s(277456)/i(95680),	-- s of Vampiric Cruelty \\ Grips of Vampiric Cruelty
-s(277457)/i(95681),	-- y-Eye Bracers \\ Beady-Eye Bracers
-s(277458)/i(95682),	-- estompers \\ Quakestompers
-s(277459)/i(95683),	-- lderguards of Centripetal Destruction \\ Shoulderguards of Centripetal Destruction
-s(277460)/i(95684),	-- l-Coated Wristplates \\ Shell-Coated Wristplates
-s(277461)/i(95686),	-- lsplitter Greataxe \\ Shellsplitter Greataxe
-s(277462)/i(95687),	-- breaker Greatcloak \\ Beakbreaker Greatcloak
-s(277463)/i(95688),	-- e Shell Bracers \\ Azure Shell Bracers
-s(277464)/i(95689),	-- egaze Hood \\ Stonegaze Hood
-s(277465)/i(95690),	-- tal-Claw Gloves \\ Crystal-Claw Gloves
-s(277466)/i(95691),	-- mershell Cape \\ Shimmershell Cape
-s(277467)/i(95692),	-- os' Discarded Shell \\ Tortos' Discarded Shell
-s(277468)/i(95693),	-- ire Bat-Hide Bracers \\ Vampire Bat-Hide Bracers
-s(277469)/i(95694),	-- s of Concussive Shocks \\ Robes of Concussive Shocks
-s(277470)/i(95695),	-- lders of Quaking Fear \\ Spaulders of Quaking Fear
-s(277471)/i(95696),	-- eshing Abalone Girdle \\ Refreshing Abalone Girdle
-s(277472)/i(95697),	-- os' Shellseizers \\ Tortos' Shellseizers
-s(277473)/i(95698),	-- era's Poisoned Fang \\ Megaera's Poisoned Fang
-s(277474)/i(95700),	-- onblood Bladeshoulders \\ Poisonblood Bladeshoulders
-s(277475)/i(95701),	-- s of Cinderflesh \\ Grips of Cinderflesh
-s(277476)/i(95702),	-- ed Toothbreaker Girdle \\ Plated Toothbreaker Girdle
-s(277477)/i(95703),	-- Proof Greatplate \\ Rot-Proof Greatplate
-s(277478)/i(95706),	-- als of Arcane Fury \\ Sandals of Arcane Fury
-s(277479)/i(95707),	-- ming-Eye Shoulderpads \\ Gleaming-Eye Shoulderpads
-s(277480)/i(95708),	-- tborn Wristwraps \\ Frostborn Wristwraps
-s(277481)/i(95710),	-- sh of the Hydra \\ Fetish of the Hydra
-s(277482)/i(95713),	-- of Smoldering Flesh \\ Hood of Smoldering Flesh
-s(277483)/i(95714),	-- s of the Bifurcated Tongue \\ Links of the Bifurcated Tongue
-s(277484)/i(95715),	-- n of Consuming Magic \\ Chain of Consuming Magic
-s(277485)/i(95716),	-- Scored Treads \\ Ice-Scored Treads
-s(277486)/i(95717),	-- onfeather Greatcloak \\ Pinionfeather Greatcloak
-s(277487)/i(95718),	-- of Cacophonous Cawing \\ Cord of Cacophonous Cawing
-s(277488)/i(95719),	-- of Midnight Down \\ Robe of Midnight Down
-s(277489)/i(95720),	-- gio's Caduceus of Pure Moods \\ Giorgio's Caduceus of Pure Moods
-s(277490)/i(95721),	-- herflight Belt \\ Featherflight Belt
-s(277491)/i(95722),	-- p of the Ruthless Mother \\ Grasp of the Ruthless Mother
-s(277492)/i(95723),	-- n of Potentiated Birth \\ Crown of Potentiated Birth
-s(277493)/i(95724),	-- nrender Chestplate \\ Talonrender Chestplate
-s(277494)/i(95725),	-- Shard Grips \\ Egg-Shard Grips
-s(277495)/i(95728),	-- mu's Baleful Gaze \\ Durumu's Baleful Gaze
-s(277496)/i(95729),	-- son Bloom Legguards \\ Crimson Bloom Legguards
-s(277497)/i(95730),	-- s of the Disintegrator \\ Links of the Disintegrator
-s(277498)/i(95731),	-- rant Chestguard of Torment \\ Aberrant Chestguard of Torment
-s(277499)/i(95732),	-- tic Spike Bracers \\ Caustic Spike Bracers
-s(277500)/i(95733),	-- lates of the Dark Parasite \\ Legplates of the Dark Parasite
-s(277501)/i(95734),	-- ds of the Blind Eye \\ Treads of the Blind Eye
-s(277502)/i(95735),	-- ry Rippers \\ Artery Rippers
-s(277503)/i(95736),	-- forced Mirror-Sheen Cloak \\ Reinforced Mirror-Sheen Cloak
-s(277504)/i(95738),	-- drainer's Sordid Grip \\ Lifedrainer's Sordid Grip
-s(277505)/i(95739),	-- ings of Pulsing Blood \\ Leggings of Pulsing Blood
-s(277506)/i(95740),	-- blain Spaulders \\ Chilblain Spaulders
-s(277507)/i(95741),	-- ly Glare Cape \\ Deadly Glare Cape
-s(277508)/i(95743),	-- al Dagger of the Mind's Eye \\ Ritual Dagger of the Mind's Eye
-s(277509)/i(95744),	-- als of the Starving Eye \\ Sandals of the Starving Eye
-s(277510)/i(95745),	-- -Cover Bracers \\ Vein-Cover Bracers
-s(277511)/i(95746),	-- hatter Gauntlets \\ Iceshatter Gauntlets
-s(277512)/i(95747),	-- lates of Re-Emergence \\ Legplates of Re-Emergence
-s(277513)/i(95749),	-- es of Cushioned Air \\ Gloves of Cushioned Air
-s(277514)/i(95750),	-- ers of Mutagenic Fervor \\ Bracers of Mutagenic Fervor
-s(277515)/i(95751),	-- pse-String Handguards \\ Synapse-String Handguards
-s(277516)/i(95752),	-- ogenic Gauntlets \\ Pathogenic Gauntlets
-s(277517)/i(95753),	-- k Blood Legplates \\ Black Blood Legplates
-s(277518)/i(95754),	-- bolically Boosted Shoulderplates \\ Metabolically Boosted Shoulderplates
-s(277519)/i(95755),	-- a-Scale Bloodcloak \\ Hydra-Scale Bloodcloak
-s(277520)/i(95758),	-- -Spine Bonemace \\ Acid-Spine Bonemace
-s(277521)/i(95759),	-- s of Mutagenic Blood \\ Robes of Mutagenic Blood
-s(277522)/i(95760),	-- x-Breaker Gloves \\ Helix-Breaker Gloves
-s(277523)/i(95761),	-- ings of Ebon Veins \\ Leggings of Ebon Veins
-s(277524)/i(95762),	-- ers of Fragile Bone \\ Bracers of Fragile Bone
-s(277525)/i(95764),	-- ings of the Malformed Sapling \\ Leggings of the Malformed Sapling
-s(277526)/i(95765),	-- r-Mind Helm \\ Clear-Mind Helm
-s(277527)/i(95766),	-- mender Bracers \\ Bonemender Bracers
-s(277528)/i(95767),	-- lders of Primordial Growth \\ Spaulders of Primordial Growth
-s(277529)/i(95768),	-- tshield of the Gloaming \\ Greatshield of the Gloaming
-s(277530)/i(95770),	-- of the Dark Animus \\ Hand of the Dark Animus
-s(277531)/i(95771),	-- of the Crimson Wake \\ Hood of the Crimson Wake
-s(277532)/i(95773),	-- tantly Accelerating Cloak \\ Constantly Accelerating Cloak
-s(277533)/i(95774),	-- me of the Sanguine Ritual \\ Athame of the Sanguine Ritual
-s(277534)/i(95775),	-- dbinder Leggings \\ Worldbinder Leggings
-s(277535)/i(95776),	-- a-Ringed Fingers \\ Anima-Ringed Fingers
-s(277536)/i(95777),	-- er-Swapped Legplates \\ Matter-Swapped Legplates
-s(277537)/i(95778),	-- n of the Golden Golem \\ Crown of the Golden Golem
-s(277538)/i(95780),	-- Qon's Boot Knife \\ Iron Qon's Boot Knife
-s(277539)/i(95781),	-- e of the Quilen \\ Voice of the Quilen
-s(277540)/i(95782),	-- 'zal's Crackling Cord \\ Quet'zal's Crackling Cord
-s(277541)/i(95783),	-- le-Scarred Leggings \\ Saddle-Scarred Leggings
-s(277542)/i(95784),	-- ren's Frozen Footguards \\ Dam'ren's Frozen Footguards
-s(277543)/i(95786),	-- of Arcing Lightning \\ Orb of Arcing Lightning
-s(277544)/i(95787),	-- s of the Storm Cavalry \\ Spurs of the Storm Cavalry
-s(277545)/i(95788),	-- hak's Molten Chain \\ Ro'shak's Molten Chain
-s(277546)/i(95789),	-- -Binder's Fists \\ Rein-Binder's Fists
-s(277547)/i(95790),	-- s Flaming Scimitar \\ Qon's Flaming Scimitar
-s(277548)/i(95791),	-- ai, Bladed Fan of the Consorts \\ Wu-Lai, Bladed Fan of the Empyreans \\ Wu-Lai, Bladed Fan of the Consorts
-s(277549)/i(95792),	-- s of the Moon Lotus \\ Robes of the Moon Lotus
-s(277550)/i(95794),	-- ld of Twinned Despair \\ Shield of Twinned Despair
-s(277551)/i(95795),	-- -Wo, Spire of the Falling Sun \\ Suen-Wo, Spire of the Falling Sun
-s(277552)/i(95796),	-- ers of the Midnight Comet \\ Bracers of the Midnight Comet
-s(277553)/i(95797),	-- le of Night and Day \\ Girdle of Night and Day
-s(277554)/i(95798),	-- l Force Treads \\ Tidal Force Treads
-s(277555)/i(95801),	-- ers of the Night \\ Fingers of the Night
-s(277556)/i(95803),	-- -Dun, Breaker of Hope \\ Shan-Dun, Breaker of Hope
-s(277557)/i(95804),	-- on Slasher Chestguard \\ Fusion Slasher Chestguard
-s(277558)/i(95805),	-- uit-Breaker Chain Leggings \\ Conduit-Breaker Chain Leggings
-s(277559)/i(95806),	-- ed Crown of Lei Shen \\ Doomed Crown of Lei Shen
-s(277560)/i(95807),	-- lates of the Lightning Throne \\ Legplates of the Lightning Throne
-s(277561)/i(95808),	-- lates of Whipping Ionization \\ Legplates of Whipping Ionization
-s(277562)/i(95809),	-- , Harbinger of Terror \\ Uroe, Harbinger of Terror
-s(277563)/i(95810),	-- mate Protection of the Emperor \\ Ultimate Protection of the Emperor
-s(277564)/i(95812),	-- raps of Cardinality \\ Legwraps of Cardinality
-s(277565)/i(95813),	-- es of the Maimed Vizier \\ Gloves of the Maimed Vizier
-s(277566)/i(95815),	-- ll, Rod of the Shattered Throne \\ Torall, Rod of the Shattered Throne
-s(277567)/i(95818),	-- Shen's Orb of Command \\ Lei Shen's Orb of Command
-s(277568)/i(95819),	-- s of Slicing Electricity \\ Grips of Slicing Electricity
-s(277569)/i(95820),	-- ings of the Violent Gale \\ Leggings of the Violent Gale
-s(277570)/i(95821),	-- Shen's Grounded Carapace \\ Lei Shen's Grounded Carapace
-s(277601)/i(95858),	-- cation of the Dawn \\ Invocation of the Dawn
-s(277602)/i(95859),	-- coran, the Vehement Chord \\ Miracoran, the Vehement Chord
-s(277603)/i(95860),	-- s Flickering Dagger \\ Fyn's Flickering Dagger
-s(277604)/i(95861),	-- 's Ancient Kegsmasher \\ Zeeg's Ancient Kegsmasher
-s(277605)/i(95862),	-- wood Spiritstaff \\ Darkwood Spiritstaff
-s(277606)/i(95863),	-- Shoulders of Fire \\ Lost Shoulders of Fire
-s(277607)/i(95864),	-- Shoulders of Healing \\ Lost Shoulders of Healing
-s(277608)/i(95865),	-- Shoulders of Fluidity \\ Lost Shoulders of Fluidity
-s(277609)/i(95866),	-- gast's Exsanguinator \\ Nadagast's Exsanguinator
-s(277610)/i(95867),	-- hud, Graceful Hand of the Savior \\ Jerthud, Graceful Hand of the Savior
-s(277611)/i(95868),	-- otten Mantle of the Moon \\ Forgotten Mantle of the Moon
-s(277612)/i(95869),	-- otten Mantle of the Sun \\ Forgotten Mantle of the Sun
-s(277613)/i(95870),	-- doned Spaulders of Arrowflight \\ Abandoned Spaulders of Arrowflight
-s(277614)/i(95871),	-- doned Spaulders of Renewal \\ Abandoned Spaulders of Renewal
-s(277615)/i(95872),	-- nstructed Holy Shoulderplates \\ Reconstructed Holy Shoulderplates
-s(277616)/i(95873),	-- nstructed Furious Shoulderplates \\ Reconstructed Furious Shoulderplates
-s(277617)/i(95874),	-- nstructed Bloody Shoulderplates \\ Reconstructed Bloody Shoulderplates
-s(277618)/i(95875),	-- tsword of Frozen Hells \\ Greatsword of Frozen Hells
-s(277619)/i(95876),	-- harak, the Swordbreaker \\ Do-tharak, the Swordbreaker
-s(277620)/i(95877),	-- is, Horror in the Night \\ Bo-Ris, Horror in the Night
-s(277621)/i(95878),	-- ge of the Doomed \\ Visage of the Doomed
 s(278661)/i(97112),	-- Art Template Generic Head - Helm_SunCrown_D_01
 s(278662)/i(97125),	-- Monster - Axe (Terracotta Army Axe Boss)(Shadow Enchanted)
-s(278666)/i(97129),	-- Tia, the Scything Star \\ Tia-Tia, the Scything Star
 s(278669)/i(97136),	-- Weapon - Staff_2H_PandarenMonk_C_01 - Red
 s(278670)/i(97137),	-- Weapon - Staff_2H_PandarenMonk_C_01 - Green
 s(278671)/i(97138),	-- Weapon - Staff_2H_PandarenMonk_C_01 - Yellow
@@ -3853,3 +3672,9 @@ s(303977)/i(265774),	-- Platinum Boots of Expeditious Retreat
 s(303980)/i(265783),	-- Tabard of Fury
 s(303981)/i(265784),	-- Tabard of Brilliance
 s(303982)/i(265785),	-- Tabard of the Void
+5.5.3.64857
+s(304601)/i(268554),	-- Miniature Winter Veil Tree
+s(304602)/i(268555),	--
+s(304603)/i(268556),	-- Miniature Winter Veil Tree
+5.5.3.65302
+s(304604)/i(268583),	-- Wrathful Gladiator's Plate Helm

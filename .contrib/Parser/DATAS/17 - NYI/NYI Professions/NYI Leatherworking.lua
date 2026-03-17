@@ -440,6 +440,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 12.0.0
 				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
 					r(1237576),	-- Recraft Equipment
+					-- Without SpellID attached
+					i(256651),	-- Pattern: Blood Knight's Armor Kit
+					i(256648),	-- Pattern: Devouring Banding
 				})),
 			}),
 		}),

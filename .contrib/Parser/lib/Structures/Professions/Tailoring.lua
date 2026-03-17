@@ -1139,21 +1139,3 @@ MID_TAILORING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		r(1228940),	-- Imbued Bright Linen Bolt
 	}),
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

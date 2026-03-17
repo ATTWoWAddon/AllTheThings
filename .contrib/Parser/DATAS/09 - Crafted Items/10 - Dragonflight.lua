@@ -1698,111 +1698,60 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				["groups"] = sharedData({
 					["maps"] = { EMERALD_DREAM }
 				},{
-					r(422293),	-- Overload Overgrown Herb
-					r(421176),	-- Overgrown Bubble Poppy
-					r(421224),	-- Overgrown Hochenblume
-					r(421226),	-- Overgrown Saxifrage
-					r(421227),	-- Overgrown Writhebark
+					r_withQuest(421176, 77824),	-- Overgrown Bubble Poppy
+					r_withQuest(421224, 77823),	-- Overgrown Hochenblume
+					r_withQuest(421226, 77826),	-- Overgrown Saxifrage
+					r_withQuest(421227, 77825),	-- Overgrown Writhebark
+					r_withQuest(422293, 78007),	-- Overload Overgrown Herb
 				}),
 			})),
 			header(HEADERS.Map, ZARALEK_CAVERN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 }, }, {
 				["groups"] = sharedData({
 					["maps"] = { ZARALEK_CAVERN }
 				},{
-					r(405124),	-- Lambent Bubble Poppy
-					r(405123),	-- Lambent Hochenblume
-					r(405126),	-- Lambent Saxifrage
-					r(405127),	-- Lambent Writhebark
-					r(405134),	-- Overload Lambent Herb
+					r_withQuest(405124, 75142),	-- Lambent Bubble Poppy
+					r_withQuest(405123, 75141),	-- Lambent Hochenblume
+					r_withQuest(405126, 75143),	-- Lambent Saxifrage
+					r_withQuest(405127, 75144),	-- Lambent Writhebark
+					r_withQuest(405134, 75138),	-- Overload Lambent Herb
 				}),
 			})),
-			r(391444),	-- Bubble Poppy
-			r(391507),	-- Decayed Bubble Poppy
-			r(391492),	-- Decayed Hochenblume
-			r(391500),	-- Decayed Saxifrage
-			r(391508),	-- Decayed Writhebark
-			r(391509),	-- Frigid Bubble Poppy
-			r(391460),	-- Frigid Hochenblume
-			r(391501),	-- Frigid Saxifrage
-			r(391510),	-- Frigid Writhebark
-			r(391505),	-- Infurious Bubble Poppy
-			r(391498),	-- Infurious Hochenblume
-			r(391499),	-- Infurious Saxifrage
-			r(391506),	-- Infurious Writhebark
-			r(391511),	-- Lush Bubble Poppy
-			r(391415),	-- Lush Hochenblume
-			r(391502),	-- Lush Saxifrage
-			r(391512),	-- Lush Writhebark
-			r(391564),	-- Overload Decayed Herb
-			r(391562),	-- Overload Frigid Herb
-			r(391558),	-- Overload Infurious Herb
-			r(391557),	-- Overload Titan-Touched Herb
-			r(391560),	-- Overload Windswept Herb
-			r(391441),	-- Saxifrage
-			r(391513),	-- Titan-Touched Bubble Poppy
-			r(391496),	-- Titan-Touched Hochenblume
-			r(391503),	-- Titan-Touched Saxifrage
-			r(391514),	-- Titan-Touched Writhebark
-			r(391515),	-- Windswept Bubble Poppy
-			r(391431),	-- Windswept Hochenblume
-			r(391504),	-- Windswept Saxifrage
-			r(391516),	-- Windswept Writhebark
-			r(391447),	-- Writhebark
+			r_withQuest(391444, 71972),	-- Bubble Poppy
+			r_withQuest(391507, 71990),	-- Decayed Bubble Poppy
+			r_withQuest(391492, 71988),	-- Decayed Hochenblume
+			r_withQuest(391500, 71991),	-- Decayed Saxifrage
+			r_withQuest(391508, 71989),	-- Decayed Writhebark
+			r_withQuest(391509, 71982),	-- Frigid Bubble Poppy
+			r_withQuest(391460, 71980),	-- Frigid Hochenblume
+			r_withQuest(391501, 71983),	-- Frigid Saxifrage
+			r_withQuest(391510, 71981),	-- Frigid Writhebark
+			r_withQuest(391505, 71994),	-- Infurious Bubble Poppy
+			r_withQuest(391498, 71992),	-- Infurious Hochenblume
+			r_withQuest(391499, 72341),	-- Infurious Saxifrage
+			r_withQuest(391506, 71993),	-- Infurious Writhebark
+			r_withQuest(391511, 71973),	-- Lush Bubble Poppy
+			r_withQuest(391415, 71969),	-- Lush Hochenblume
+			r_withQuest(391502, 71975),	-- Lush Saxifrage
+			r_withQuest(391512, 71971),	-- Lush Writhebark
+			r_withQuest(391564, 72345),	-- Overload Decayed Herb
+			r_withQuest(391562, 72343),	-- Overload Frigid Herb
+			r_withQuest(391558, 72348),	-- Overload Infurious Herb
+			r_withQuest(391557, 72344),	-- Overload Titan-Touched Herb
+			r_withQuest(391560, 72342),	-- Overload Windswept Herb
+			r_withQuest(391441, 71974),	-- Saxifrage
+			r_withQuest(391513, 71986),	-- Titan-Touched Bubble Poppy
+			r_withQuest(391496, 71984),	-- Titan-Touched Hochenblume
+			r_withQuest(391503, 71987),	-- Titan-Touched Saxifrage
+			r_withQuest(391514, 71985),	-- Titan-Touched Writhebark
+			r_withQuest(391515, 71978),	-- Windswept Bubble Poppy
+			r_withQuest(391431, 71976),	-- Windswept Hochenblume
+			r_withQuest(391504, 71979),	-- Windswept Saxifrage
+			r_withQuest(391516, 71977),	-- Windswept Writhebark
+			r_withQuest(391447, 71970),	-- Writhebark
 		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = HERBALISM,
-		},{
-			-- Bubble Poppy
-			FirstCraft(71972, 391444);	-- Bubble Poppy
-			FirstCraft(71990, 391507);	-- Decayed Bubble Poppy
-			FirstCraft(71982, 391509);	-- Frigid Bubble Poppy
-			FirstCraft(71994, 391505);	-- Infurious Bubble Poppy
-			FirstCraft(75142, 405124, ADDED_10_1_0);	-- Lambent Bubble Poppy
-			FirstCraft(71973, 391511);	-- Lush Bubble Poppy
-			FirstCraft(77824, 421176, ADDED_10_2_0);	-- Overgrown Bubble Poppy
-			FirstCraft(71986, 391513);	-- Titan-Touched Bubble Poppy
-			FirstCraft(71978, 391515);	-- Windswept Bubble Poppy
-			-- Hochenblume
-			FirstCraft(71988, 391492);	-- Decayed Hochenblume
-			FirstCraft(71980, 391460);	-- Frigid Hochenblume
-			FirstCraft(71992, 391498);	-- Infurious Hochenblume
-			FirstCraft(75141, 405123, ADDED_10_1_0);	-- Lambent Hochenblume
-			FirstCraft(71969, 391415);	-- Lush Hochenblume
-			FirstCraft(77823, 421224, ADDED_10_2_0);	-- Overgrown Hochenblume
-			FirstCraft(71984, 391496);	-- Titan-Touched Hochenblume
-			FirstCraft(71976, 391431);	-- Windswept Hochenblume
-			-- Saxifrage
-			FirstCraft(71974, 391441);	-- Saxifrage
-			FirstCraft(71991, 391500);	-- Decayed Saxifrage
-			FirstCraft(71983, 391501);	-- Frigid Saxifrage
-			FirstCraft(72341, 391499);	-- Infurious Saxifrage
-			FirstCraft(75143, 405126, ADDED_10_1_0);	-- Lambent Saxifrage
-			FirstCraft(71975, 391502);	-- Lush Saxifrage
-			FirstCraft(77826, 421226, ADDED_10_2_0);	-- Overgrown Saxifrage
-			FirstCraft(71987, 391503);	-- Titan-Touched Saxifrage
-			FirstCraft(71979, 391504);	-- Windswept Saxifrage
-			-- Writhebark
-			FirstCraft(71970, 391447);	-- Writhebark
-			FirstCraft(71989, 391508);	-- Decayed Writhebark
-			FirstCraft(71981, 391510);	-- Frigid Writhebark
-			FirstCraft(71993, 391506);	-- Infurious Writhebark
-			FirstCraft(75144, 405127, ADDED_10_1_0);	-- Lambent Writhebark
-			FirstCraft(71971, 391512);	-- Lush Writhebark
-			FirstCraft(77825, 421227, ADDED_10_2_0);	-- Overgrown Writhebark
-			FirstCraft(71985, 391514);	-- Titan-Touched Writhebark
-			FirstCraft(71977, 391516);	-- Windswept Writhebark
-			-- Overload
-			FirstCraft(72345, 391564);	-- Overload Decayed Herb
-			FirstCraft(72343, 391562);	-- Overload Frigid Herb
-			FirstCraft(72348, 391558);	-- Overload Infurious Herb
-			FirstCraft(75138, 405134, ADDED_10_1_0);	-- Overload Lambent Herb
-			FirstCraft(78007, 422293, ADDED_10_2_0);	-- Overload Overgrown Herb
-			FirstCraft(72344, 391557);	-- Overload Titan-Touched Herb
-			FirstCraft(72342, 391560);	-- Overload Windswept Herb
-		})),
 	}),
 	prof(INSCRIPTION, {
-		spell(382981, {	-- Dragon Isles Milling
+		salvagerecipe(382981, 198390, {	-- Dragon Isles Milling
 			i(198418),	-- Blazing Pigment+
 			i(198419),	-- Blazing Pigment++
 			i(198420),	-- Blazing Pigment+++
@@ -1817,16 +1766,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198423),	-- Shimmering Pigment+++
 		}),
 		n(DISCOVERY, {
-			r(383522),	-- Draconic Treatise on Alchemy
-			r(383517),	-- Draconic Treatise on Blacksmithing
-			r(383523),	-- Draconic Treatise on Enchanting
-			r(383844),	-- Draconic Treatise on Engineering
-			r(383515),	-- Draconic Treatise on Herbalism
-			r(383524),	-- Draconic Treatise on Jewelcrafting
-			r(383519),	-- Draconic Treatise on Leatherworking
-			r(383516),	-- Draconic Treatise on Mining
-			r(392944),	-- Draconic Treatise on Skinning
-			r(383520),	-- Draconic Treatise on Tailoring
+			header(HEADERS.Spell, 383759, {	-- Draconic Treatise on Inscription
+				r(383522),	-- Draconic Treatise on Alchemy
+				r(383517),	-- Draconic Treatise on Blacksmithing
+				r(383523),	-- Draconic Treatise on Enchanting
+				r(383844),	-- Draconic Treatise on Engineering
+				r(383515),	-- Draconic Treatise on Herbalism
+				r(383524),	-- Draconic Treatise on Jewelcrafting
+				r(383519),	-- Draconic Treatise on Leatherworking
+				r(383516),	-- Draconic Treatise on Mining
+				r(392944),	-- Draconic Treatise on Skinning
+				r(383520),	-- Draconic Treatise on Tailoring
+			}),
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(248118),	-- Literature of the Blue Dragonflight (DECOR!)
@@ -2346,7 +2297,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(JEWELCRAFTING, {
-		spell(374627, {	-- Dragon Isles Prospecting
+		header(HEADERS.Spell, 374627, {	-- Dragon Isles Prospecting
 			i(192852),	-- Alexstraszite+
 			i(192853),	-- Alexstraszite++
 			i(192855),	-- Alexstraszite+++
@@ -3160,194 +3111,36 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			--]]
 		}),
 		n(DISCOVERY, {
-			r(384688),	-- Draconium Deposit
-			r(389458, {["timeline"] = {ADDED_10_0_7}}),	-- Draconium Seam
-			r(389413),	-- Hardened Draconium Deposit
-			r(389463),	-- Hardened Serevite Deposit
-			r(389420),	-- Infurious Draconium Deposit
-			r(389464),	-- Infurious Serevite Deposit
-			r(421247, {["timeline"] = {ADDED_10_2_0}}),	-- Living Draconium Deposit
-			r(421244, {["timeline"] = {ADDED_10_2_0}}),	-- Living Serevite Deposit
-			r(405121, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Draconium Deposit
-			r(405120, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Serevite Deposit
-			r(384690),	-- Molten Draconium Deposit
-			r(389459),	-- Molten Serevite Deposit
-			r(389701),	-- Overload Hardened Node
-			r(389704),	-- Overload Infurious Node
-			r(422809, {["timeline"] = {ADDED_10_2_0}}),	-- Overload Living Deposit
-			r(405131, {["timeline"] = {ADDED_10_1_0}}),	-- Overload Metamorphic Deposit
-			r(389700),	-- Overload Molten Node
-			r(389702),	-- Overload Primal Node
-			r(389703),	-- Overload Titan Node
-			r(389409),	-- Primal Draconium Deposit
-			r(389462),	-- Primal Serevite Deposit
-			r(384693),	-- Rich Draconium Deposit
-			r(389460),	-- Rich Serevite Deposit
-			r(389465, {["timeline"] = {ADDED_10_0_7}}),	-- Serevite Seam
-			r(389406),	-- Titan-Touched Draconium Deposit
-			r(389461),	-- Titan-Touched Serevite Deposit
+			r_withQuest(384688, 71951),	-- Draconium Deposit
+			r_withQuest(389458, 72347, ADDED_10_0_7),	-- Draconium Seam
+			r_withQuest(389413, 71956),	-- Hardened Draconium
+			r_withQuest(389463, 71955),	-- Hardened Serevite
+			r_withQuest(389420, 71962),	-- Infurious Draconium
+			r_withQuest(389464, 71961),	-- Infurious Serevite
+			r_withQuest(421247, 77828, ADDED_10_2_0),	-- Living Draconium Deposit
+			r_withQuest(421244, 77827, ADDED_10_2_0),	-- Living Serevite Deposit
+			r_withQuest(405121, 75140, ADDED_10_1_0),	-- Metamorphic Draconium
+			r_withQuest(405120, 75139, ADDED_10_1_0),	-- Metamorphic Serevite
+			r_withQuest(384690, 71954),	-- Molten Draconium
+			r_withQuest(389459, 71953),	-- Molten Serevite
+			r_withQuest(389701, 71964),	-- Overload Hardened Node
+			r_withQuest(389704, 71967),	-- Overload Infurious Node
+			r_withQuest(422809, 78061, ADDED_10_2_0),	-- Overload Living Deposit
+			r_withQuest(405131, 75137, ADDED_10_1_0),	-- Overload Metamorphic Node
+			r_withQuest(389700, 71963),	-- Overload Molten Node
+			r_withQuest(389702, 71966),	-- Overload Primal Node
+			r_withQuest(389703, 71965),	-- Overload Titan-Touched Node
+			r_withQuest(389409, 71960),	-- Primal Draconium
+			r_withQuest(389462, 71959),	-- Primal Serevite
+			r_withQuest(384693, 71952),	-- Rich Draconium
+			r_withQuest(389460, 71950),	-- Rich Serevite
+			r_withQuest(389465, 72346, ADDED_10_0_7),	-- Serevite Seam
+			r_withQuest(389406, 71958),	-- Titan-Touched Draconium
+			r_withQuest(389461, 71957),	-- Titan-Touched Serevite
 		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = MINING,
-		},{
-			-- Draconium
-			FirstCraft(71951, 384688);	-- Draconium Deposit
-			FirstCraft(72347, 389458, ADDED_10_0_7);	-- Draconium Seam
-			FirstCraft(71956, 389413);	-- Hardened Draconium
-			FirstCraft(71962, 389420);	-- Infurious Draconium
-			FirstCraft(77828, 421247, ADDED_10_2_0);	-- Living Draconium Deposit
-			FirstCraft(75140, 405121, ADDED_10_1_0);	-- Metamorphic Draconium
-			FirstCraft(71954, 384690);	-- Molten Draconium
-			FirstCraft(71960, 389409);	-- Primal Draconium
-			FirstCraft(71952, 384693);	-- Rich Draconium
-			FirstCraft(71958, 389406);	-- Titan-Touched Draconium
-			-- Serevite
-			FirstCraft(72346, 389465, ADDED_10_0_7);	-- Serevite Seam
-			FirstCraft(71955, 389463);	-- Hardened Serevite
-			FirstCraft(71961, 389464);	-- Infurious Serevite
-			FirstCraft(77827, 421244, ADDED_10_2_0);	-- Living Serevite Deposit
-			FirstCraft(75139, 405120, ADDED_10_1_0);	-- Metamorphic Serevite
-			FirstCraft(71953, 389459);	-- Molten Serevite
-			FirstCraft(71959, 389462);	-- Primal Serevite
-			FirstCraft(71950, 389460);	-- Rich Serevite
-			FirstCraft(71957, 389461);	-- Titan-Touched Serevite
-			-- Overload
-			FirstCraft(71964, 389701);	-- Overload Hardened Node
-			FirstCraft(71967, 389704);	-- Overload Infurious Node
-			FirstCraft(78061, 422809, ADDED_10_2_0);	-- Overload Living Deposit
-			FirstCraft(75137, 405131, ADDED_10_1_0);	-- Overload Metamorphic Node
-			FirstCraft(71963, 389700);	-- Overload Molten Node
-			FirstCraft(71966, 389702);	-- Overload Primal Node
-			FirstCraft(71965, 389703);	-- Overload Titan-Touched Node
-		})),
 	}),
 	prof(SKINNING, {
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
-		},{
-			-- TODO: Needs Achievements attached (roughly 1/3 should be attached to achievement criteria)
-			FirstSkin(74204, 193243),	-- Skinning Acrosoth
-			FirstSkin(78824, 210288, ADDED_10_2_0),	-- Skinning Ancient Core Hound
-			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
-			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
-			FirstSkin(74162, 193341),	-- Skinning Angen (Great Hunt)
-			FirstSkin(74225, 190986),	-- Skinning Battlehorn Pyrhus
-			FirstSkin(74217, 193177),	-- Skinning Beakers
-			FirstSkin(74174, 193168),	-- Skinning Biryuk
-			FirstSkin(74122, 197353),	-- Skinning Blisterhide
-			FirstSkin(74141, 190907),	-- Skinning Blitztusk (Grand Hunt)
-			FirstSkin(74551, 201535, ADDED_10_0_5),	-- Skinning Bloodbeak the Ravenous
-			FirstSkin(78340, 210050, ADDED_10_2_0),	-- Skinning Bloodstipe Great Ray
-			FirstSkin(74144, 191450),	-- Skinning Boolk
-			FirstSkin(74124, 193644),	-- Skinning Bouldron
-			FirstSkin(74206, 193658),	-- Skinning Corrupted Proto-Dragon
-			FirstSkin(76534, 201054, ADDED_10_1_0),	-- Skinning Crimson Oldblood
-			FirstSkin(74126, 193645),	-- Skinning Crystalus (Primal Storm)
-			FirstSkin(74229, 190985),	-- Skinning Death's Shadow
-			FirstSkin(74153, 194251),	-- Skinning Degmakh (Grand Hunt)
-			FirstSkin(74164, 195431),	-- Skinning Diluu (Grand Hunt)
-			FirstSkin(74200, 193234),	-- Skinning Eldoren the Reborn
-			FirstSkin(74233, 202441, ADDED_10_0_7),	-- Skinning Elusive Auric Argali
-			FirstSkin(78394, 212090, ADDED_10_2_0),	-- Skinning Elusive Blooming Brierhide
-			FirstSkin(74231, 195518),	-- Skinning Elusive Cliffdweller Vorquin
-			FirstSkin(74234, 204821, ADDED_10_1_0, { i(205451) }),	-- Skinning Elusive Crystalscale Stonecleaver / Flawless Crystal Scale (CI!)
-			FirstSkin(74191, 195492),	-- Skinning Elusive Deepwater Salamanther
-			FirstSkin(74185, 194489),	-- Skinning Elusive Elder Drake
-			FirstSkin(74186, 194491),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
-			FirstSkin(74189, 195472),	-- Skinning Elusive Ferocious Titanfang (Titan-Infused Creature Bait)
-			FirstSkin(74187, 195541),	-- Skinning Elusive Flourishing Quillbloom
-			FirstSkin(74232, 202436, ADDED_10_0_7),	-- Skinning Elusive Frenzied Amberfur
-			FirstSkin(74190, 195509),	-- Skinning Elusive Proto Skyterror
-			FirstSkin(74188, 195465),	-- Skinning Elusive Tempest Lizard
-			FirstSkin(74235, 204831, ADDED_10_1_0),	-- Skinning Elusive Magma Cobra
-			FirstSkin(78397, 212133, ADDED_10_2_0),	-- Skinning Elusive Verdant Gladewarden
-			FirstSkin(75873, 203664, ADDED_10_1_0),	-- Skinning Emberdusk
-			FirstSkin(74224, 193134),	-- Skinning Enkine the Voracious
-			FirstSkin(74146, 194409),	-- Skinning Ergburk
-			FirstSkin(75881, 200725, ADDED_10_0_7),	-- Skinning Faunos
-			FirstSkin(75872, 203660, ADDED_10_1_0),	-- Skinning Flowfy
-			FirstSkin(74130, 193698),	-- Skinning Frigidpelt Den Mother
-			FirstSkin(75884, 200537, ADDED_10_0_7),	-- Skinning Gahz'raxes
-			FirstSkin(74152, 193853),	-- Skinning Galnmor
-			FirstSkin(74193, 193125),	-- Skinning Goremaul the Gluttonous
-			FirstSkin(78333, 209936, ADDED_10_2_0),	-- Skinning Greedy Gessie
-			FirstSkin(74550, 201537, ADDED_10_0_5),	-- Skinning Groffnar
-			FirstSkin(74135, 193251),	-- Skinning Gruffy
-			FirstSkin(74134, 193269),	-- Skinning Grumbletrunk
-			FirstSkin(74180, 187781),	-- Skinning Hamett
-			FirstSkin(74203, 193229),	-- Skinning Henlare
-			FirstSkin(78344, 210075, ADDED_10_2_0),	-- Skinning Henri Snufftail
-			FirstSkin(74179, 188095),	-- Skinning Hunter of the Deep
-			FirstSkin(74125, 193648),	-- Skinning Infernum
-			FirstSkin(74127, 193647),	-- Skinning Karantun
-			FirstSkin(74238, 203625, ADDED_10_1_0),	-- Skinning Karokta
-			FirstSkin(78339, 210046, ADDED_10_2_0),	-- Skinning Keen-eyed Ciana
-			FirstSkin(74147, 194608),	-- Skinning Kholdeg (Grand Hunt)
-			FirstSkin(74145, 194438),	-- Skinning Khomuur (Grand Hunt)
-			FirstSkin(74155, 194761),	-- Skinning Khuumog (Grand Hunt)
-			FirstSkin(74237, 203462, ADDED_10_1_0),	-- Skinning Kob'rok
-			FirstSkin(74169, 197009),	-- Skinning Liskheszaera
-			FirstSkin(75878, 200742, ADDED_10_0_7),	-- Skinning Luttrok
-			FirstSkin(74236, 200111, ADDED_10_1_0),	-- Skinning Magtembo
-			FirstSkin(74182, 195409),	-- Skinning Makhra the Ashtouched
-			FirstSkin(74171, 193212),	-- Skinning Malsegan
-			FirstSkin(78341, 210051, ADDED_10_2_0),	-- Skinning Matriarch Keevah
-			FirstSkin(74208, 193246),	-- Skinning Matriarch Remalla
-			FirstSkin(74161, 193311),	-- Skinning Melkhop (Grand Hunt)
-			FirstSkin(74163, 195430),	-- Skinning Molkeej (Grand Hunt)
-			FirstSkin(78342, 210064, ADDED_10_2_0),	-- Skinning Molten Leadspike
-			FirstSkin(78338, 210045, ADDED_10_2_0),	-- Skinning Moragh the Slothful
-			FirstSkin(74559, 201549, ADDED_10_0_5),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
-			FirstSkin(78343, 210070, ADDED_10_2_0),	-- Skinning Mosa Umbramane
-			FirstSkin(74157, 195093),	-- Skinning Moskhoi (Grand Hunt)
-			FirstSkin(74214, 193735),	-- Skinning Moth'go Deeploom
-			FirstSkin(74131, 193201),	-- Skinning Mucka the Raker
-			FirstSkin(74154, 194225),	-- Skinning Muugurv (Grand Hunt)
-			FirstSkin(74166, 195895),	-- Skinning Nergazurai
-			FirstSkin(74140, 190968),	-- Skinning Norbett (Grand Hunt)
-			FirstSkin(74194, 193130),	-- Skinning Pleasant Alpha
-			FirstSkin(74220, 192737),	-- Skinning Qalashi War Mammoth (War Party Event)
-			FirstSkin(74132, 197371),	-- Skinning Ravenous Tundra Bear
-			FirstSkin(74205, 193143),	-- Skinning Razk'vex the Untamed
-			FirstSkin(74199, 193240),	-- Skinning Riverwalker Tamopo
-			FirstSkin(74196, 193666),	-- Skinning Rokmur
-			FirstSkin(74176, 195223),	-- Skinning Rustlily
-			FirstSkin(74151, 193885),	-- Skinning Salkii
-			FirstSkin(74142, 190161),	-- Skinning Sarana (Grand Hunt)
-			FirstSkin(74555, 201562, ADDED_10_0_5),	-- Skinning Shardwing
-			FirstSkin(74168, 192949),	-- Skinning Skaara
-			FirstSkin(74215, 193708),	-- Skinning Skald the Impaler
-			FirstSkin(74223, 193181),	-- Skinning Skewersnout
-			FirstSkin(74222, 193120),	-- Skinning Smogswog the Firebreather
-			FirstSkin(75879, 200622, ADDED_10_0_7),	-- Skinning Snarfang
-			FirstSkin(74216, 193706),	-- Skinning Snufflegust
-			FirstSkin(74173, 193123),	-- Skinning Steamgill
-			FirstSkin(74167, 193133),	-- Skinning Sunscale Behemoth
-			FirstSkin(74213, 193634),	-- Skinning Swog'ranka
-			FirstSkin(74143, 191103),	-- Skinning Uranto the Swift (Grand Hunt)
-			FirstSkin(74148, 194601),	-- Skinning Zagdech
-			FirstSkin(74149, 194624),	-- Skinning Zumakh (Grand Hunt)
-			FirstSkin(74207, 193258),	-- Skinning Tempestrian
-			FirstSkin(74175, 193163),	-- Skinning Territorial Coastling
-			FirstSkin(74159, 195132),	-- Skinning Tevgai (Grand Hunt)
-			FirstSkin(74201, 191305),	-- Skinning The Great Shellkhan
-			FirstSkin(74177, 195204),	-- Skinning The Jolly Giant
-			FirstSkin(74198, 183984),	-- Skinning The Weeping Vilomah
-			FirstSkin(74218, 193148),	-- Skinning Thunderous Matriarch
-			FirstSkin(74150, 193722),	-- Skinning Tomnu
-			FirstSkin(74156, 194760),	-- Skinning Uurhilt (Grand Hunt)
-			FirstSkin(74183, 192453),	-- Skinning Vaniik the Stormtouched
-			FirstSkin(78345, 210508, ADDED_10_2_0),	-- Skinning Voracious Mikanji
-			FirstSkin(74184, 192364),	-- Skinning Windscale the Stormborn
-			FirstSkin(74195, 193161),	-- Skinning Woolfang
-			FirstSkin(74228, 186859),	-- Skinning Worldcarver A'tir
-			FirstSkin(74158, 195101),	-- Skinning Yaankhi
-			FirstSkin(74160, 195283),	-- Skinning Yamakh
-			FirstSkin(74172, 193140),	-- Skinning Zarizz
-			FirstSkin(74170, 193209),	-- Skinning Zenet Avis
-			FirstSkin(74181, 188451),	-- Skinning Zerimek
-		})),
-		spell(366259, {	-- Skinning
+		header(HEADERS.Spell, 366259, {	-- Skinning (Dragon Isle)
 			i(193213),	-- Adamant Scales+
 			i(193214),	-- Adamant Scales++
 			i(193215),	-- Adamant Scales+++
@@ -3722,9 +3515,137 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 		}),
-		prof(SKINNING, {
-			q(77792, {["timeline"] = {ADDED_10_1_5}}),	-- Dreamscale daily lockout for anniversary world boss (Emeriss, Lethon, Taerar, Ysondre)
-		}),
+		prof(SKINNING, sharedData({ ["isWeekly"] = true }, {
+			q(77792, {	-- Dreamscale daily lockout for anniversary world boss (Emeriss, Lethon, Taerar, Ysondre)
+				["isDaily"] = true,
+				["timeline"] = { ADDED_10_1_5 },
+			}),
+
+			-- TODO: Needs Achievements attached (roughly 1/3 should be attached to achievement criteria)
+			q(74204, name(HEADERS.NPC, 193243)),	-- Skinning Acrosoth
+			q(78824, name(HEADERS.NPC, 210288, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Ancient Core Hound
+			q(74219, name(HEADERS.NPC, 187111)),	-- Skinning Ancient Hornswog
+			q(74197, name(HEADERS.NPC, 193231)),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
+			q(74162, name(HEADERS.NPC, 193341)),	-- Skinning Angen (Great Hunt)
+			q(74225, name(HEADERS.NPC, 190986)),	-- Skinning Battlehorn Pyrhus
+			q(74217, name(HEADERS.NPC, 193177)),	-- Skinning Beakers
+			q(74174, name(HEADERS.NPC, 193168)),	-- Skinning Biryuk
+			q(74122, name(HEADERS.NPC, 197353)),	-- Skinning Blisterhide
+			q(74141, name(HEADERS.NPC, 190907)),	-- Skinning Blitztusk (Grand Hunt)
+			q(74551, name(HEADERS.NPC, 201535, {["timeline"] = { ADDED_10_0_5 }})),	-- Skinning Bloodbeak the Ravenous
+			q(78340, name(HEADERS.NPC, 210050, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Bloodstipe Great Ray
+			q(74144, name(HEADERS.NPC, 191450)),	-- Skinning Boolk
+			q(74124, name(HEADERS.NPC, 193644)),	-- Skinning Bouldron
+			q(74206, name(HEADERS.NPC, 193658)),	-- Skinning Corrupted Proto-Dragon
+			q(76534, name(HEADERS.NPC, 201054, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Crimson Oldblood
+			q(74126, name(HEADERS.NPC, 193645)),	-- Skinning Crystalus (Primal Storm)
+			q(74229, name(HEADERS.NPC, 190985)),	-- Skinning Death's Shadow
+			q(74153, name(HEADERS.NPC, 194251)),	-- Skinning Degmakh (Grand Hunt)
+			q(74164, name(HEADERS.NPC, 195431)),	-- Skinning Diluu (Grand Hunt)
+			q(74200, name(HEADERS.NPC, 193234)),	-- Skinning Eldoren the Reborn
+			q(74233, name(HEADERS.NPC, 202441, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Elusive Auric Argali
+			q(78394, name(HEADERS.NPC, 212090, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Elusive Blooming Brierhide
+			q(74231, name(HEADERS.NPC, 195518)),	-- Skinning Elusive Cliffdweller Vorquin
+			q(74234, name(HEADERS.NPC, 204821, {	-- Skinning Elusive Crystalscale Stonecleaver
+				["timeline"] = { ADDED_10_1_0 },
+				["groups"] = { i(205451), }	-- Flawless Crystal Scale (CI!)
+			})),
+			q(74191, name(HEADERS.NPC, 195492)),	-- Skinning Elusive Deepwater Salamanther
+			q(74185, name(HEADERS.NPC, 194489)),	-- Skinning Elusive Elder Drake
+			q(74186, name(HEADERS.NPC, 194491)),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
+			q(74189, name(HEADERS.NPC, 195472)),	-- Skinning Elusive Ferocious Titanfang (Titan-Infused Creature Bait)
+			q(74187, name(HEADERS.NPC, 195541)),	-- Skinning Elusive Flourishing Quillbloom
+			q(74232, name(HEADERS.NPC, 202436, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Elusive Frenzied Amberfur
+			q(74190, name(HEADERS.NPC, 195509)),	-- Skinning Elusive Proto Skyterror
+			q(74188, name(HEADERS.NPC, 195465)),	-- Skinning Elusive Tempest Lizard
+			q(74235, name(HEADERS.NPC, 204831, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Elusive Magma Cobra
+			q(78397, name(HEADERS.NPC, 212133, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Elusive Verdant Gladewarden
+			q(75873, name(HEADERS.NPC, 203664, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Emberdusk
+			q(74224, name(HEADERS.NPC, 193134)),	-- Skinning Enkine the Voracious
+			q(74146, name(HEADERS.NPC, 194409)),	-- Skinning Ergburk
+			q(75881, name(HEADERS.NPC, 200725, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Faunos
+			q(75872, name(HEADERS.NPC, 203660, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Flowfy
+			q(74130, name(HEADERS.NPC, 193698)),	-- Skinning Frigidpelt Den Mother
+			q(75884, name(HEADERS.NPC, 200537, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Gahz'raxes
+			q(74152, name(HEADERS.NPC, 193853)),	-- Skinning Galnmor
+			q(74193, name(HEADERS.NPC, 193125)),	-- Skinning Goremaul the Gluttonous
+			q(78333, name(HEADERS.NPC, 209936, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Greedy Gessie
+			q(74550, name(HEADERS.NPC, 201537, {["timeline"] = { ADDED_10_0_5 }})),	-- Skinning Groffnar
+			q(74135, name(HEADERS.NPC, 193251)),	-- Skinning Gruffy
+			q(74134, name(HEADERS.NPC, 193269)),	-- Skinning Grumbletrunk
+			q(74180, name(HEADERS.NPC, 187781)),	-- Skinning Hamett
+			q(74203, name(HEADERS.NPC, 193229)),	-- Skinning Henlare
+			q(78344, name(HEADERS.NPC, 210075, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Henri Snufftail
+			q(74179, name(HEADERS.NPC, 188095)),	-- Skinning Hunter of the Deep
+			q(74125, name(HEADERS.NPC, 193648)),	-- Skinning Infernum
+			q(74127, name(HEADERS.NPC, 193647)),	-- Skinning Karantun
+			q(74238, name(HEADERS.NPC, 203625, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Karokta
+			q(78339, name(HEADERS.NPC, 210046, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Keen-eyed Ciana
+			q(74147, name(HEADERS.NPC, 194608)),	-- Skinning Kholdeg (Grand Hunt)
+			q(74145, name(HEADERS.NPC, 194438)),	-- Skinning Khomuur (Grand Hunt)
+			q(74155, name(HEADERS.NPC, 194761)),	-- Skinning Khuumog (Grand Hunt)
+			q(74237, name(HEADERS.NPC, 203462, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Kob'rok
+			q(74169, name(HEADERS.NPC, 197009)),	-- Skinning Liskheszaera
+			q(75878, name(HEADERS.NPC, 200742, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Luttrok
+			q(74236, name(HEADERS.NPC, 200111, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Magtembo
+			q(74182, name(HEADERS.NPC, 195409)),	-- Skinning Makhra the Ashtouched
+			q(74171, name(HEADERS.NPC, 193212)),	-- Skinning Malsegan
+			q(78341, name(HEADERS.NPC, 210051, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Matriarch Keevah
+			q(74208, name(HEADERS.NPC, 193246)),	-- Skinning Matriarch Remalla
+			q(74161, name(HEADERS.NPC, 193311)),	-- Skinning Melkhop (Grand Hunt)
+			q(74163, name(HEADERS.NPC, 195430)),	-- Skinning Molkeej (Grand Hunt)
+			q(78342, name(HEADERS.NPC, 210064, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Molten Leadspike
+			q(78338, name(HEADERS.NPC, 210045, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Moragh the Slothful
+			q(74559, name(HEADERS.NPC, 201549, {["timeline"] = { ADDED_10_0_5 }})),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
+			q(78343, name(HEADERS.NPC, 210070, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Mosa Umbramane
+			q(74157, name(HEADERS.NPC, 195093)),	-- Skinning Moskhoi (Grand Hunt)
+			q(74214, name(HEADERS.NPC, 193735)),	-- Skinning Moth'go Deeploom
+			q(74131, name(HEADERS.NPC, 193201)),	-- Skinning Mucka the Raker
+			q(74154, name(HEADERS.NPC, 194225)),	-- Skinning Muugurv (Grand Hunt)
+			q(74166, name(HEADERS.NPC, 195895)),	-- Skinning Nergazurai
+			q(74140, name(HEADERS.NPC, 190968)),	-- Skinning Norbett (Grand Hunt)
+			q(74194, name(HEADERS.NPC, 193130)),	-- Skinning Pleasant Alpha
+			q(74220, name(HEADERS.NPC, 192737)),	-- Skinning Qalashi War Mammoth (War Party Event)
+			q(74132, name(HEADERS.NPC, 197371)),	-- Skinning Ravenous Tundra Bear
+			q(74205, name(HEADERS.NPC, 193143)),	-- Skinning Razk'vex the Untamed
+			q(74199, name(HEADERS.NPC, 193240)),	-- Skinning Riverwalker Tamopo
+			q(74196, name(HEADERS.NPC, 193666)),	-- Skinning Rokmur
+			q(74176, name(HEADERS.NPC, 195223)),	-- Skinning Rustlily
+			q(74151, name(HEADERS.NPC, 193885)),	-- Skinning Salkii
+			q(74142, name(HEADERS.NPC, 190161)),	-- Skinning Sarana (Grand Hunt)
+			q(74555, name(HEADERS.NPC, 201562, {["timeline"] = { ADDED_10_0_5 }})),	-- Skinning Shardwing
+			q(74168, name(HEADERS.NPC, 192949)),	-- Skinning Skaara
+			q(74215, name(HEADERS.NPC, 193708)),	-- Skinning Skald the Impaler
+			q(74223, name(HEADERS.NPC, 193181)),	-- Skinning Skewersnout
+			q(74222, name(HEADERS.NPC, 193120)),	-- Skinning Smogswog the Firebreather
+			q(75879, name(HEADERS.NPC, 200622, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Snarfang
+			q(74216, name(HEADERS.NPC, 193706)),	-- Skinning Snufflegust
+			q(74173, name(HEADERS.NPC, 193123)),	-- Skinning Steamgill
+			q(74167, name(HEADERS.NPC, 193133)),	-- Skinning Sunscale Behemoth
+			q(74213, name(HEADERS.NPC, 193634)),	-- Skinning Swog'ranka
+			q(74143, name(HEADERS.NPC, 191103)),	-- Skinning Uranto the Swift (Grand Hunt)
+			q(74148, name(HEADERS.NPC, 194601)),	-- Skinning Zagdech
+			q(74149, name(HEADERS.NPC, 194624)),	-- Skinning Zumakh (Grand Hunt)
+			q(74207, name(HEADERS.NPC, 193258)),	-- Skinning Tempestrian
+			q(74175, name(HEADERS.NPC, 193163)),	-- Skinning Territorial Coastling
+			q(74159, name(HEADERS.NPC, 195132)),	-- Skinning Tevgai (Grand Hunt)
+			q(74201, name(HEADERS.NPC, 191305)),	-- Skinning The Great Shellkhan
+			q(74177, name(HEADERS.NPC, 195204)),	-- Skinning The Jolly Giant
+			q(74198, name(HEADERS.NPC, 183984)),	-- Skinning The Weeping Vilomah
+			q(74218, name(HEADERS.NPC, 193148)),	-- Skinning Thunderous Matriarch
+			q(74150, name(HEADERS.NPC, 193722)),	-- Skinning Tomnu
+			q(74156, name(HEADERS.NPC, 194760)),	-- Skinning Uurhilt (Grand Hunt)
+			q(74183, name(HEADERS.NPC, 192453)),	-- Skinning Vaniik the Stormtouched
+			q(78345, name(HEADERS.NPC, 210508, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Voracious Mikanji
+			q(74184, name(HEADERS.NPC, 192364)),	-- Skinning Windscale the Stormborn
+			q(74195, name(HEADERS.NPC, 193161)),	-- Skinning Woolfang
+			q(74228, name(HEADERS.NPC, 186859)),	-- Skinning Worldcarver A'tir
+			q(74158, name(HEADERS.NPC, 195101)),	-- Skinning Yaankhi
+			q(74160, name(HEADERS.NPC, 195283)),	-- Skinning Yamakh
+			q(74172, name(HEADERS.NPC, 193140)),	-- Skinning Zarizz
+			q(74170, name(HEADERS.NPC, 193209)),	-- Skinning Zenet Avis
+			q(74181, name(HEADERS.NPC, 188451)),	-- Skinning Zerimek
+		})),
 		prof(TAILORING, {
 			q(71946),	-- Timeweaving unlocked
 			q(71947),	-- Timeweaving Full maxed out

@@ -543,15 +543,6 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
-12.0.0.63534
-r(1230063),	-- Pigments of the Wind
-r(1248629),	-- Harandar Runestone
 
 
-
-
-Missing in Inscription
-
-12.0.0.63534
-r(1230063),	-- Pigments of the Wind
-r(1248629),	-- Harandar Runestone
+Nothing is Missing in Inscription! Good Work!

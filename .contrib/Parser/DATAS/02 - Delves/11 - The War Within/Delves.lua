@@ -1006,6 +1006,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			filter(MISC, {
 				i(242919, {	-- Cracked Keystone (QS!/QI!/CI!)
 					["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
+					-- #IF AFTER 12.0
+					["repeatable"] = true,	-- this was reset for everyone going into 12.0 (or sometime slightly prior)
+					-- #ENDIF
 				}),
 				i(251543, {	-- Cracked Keystone (QS!/QI!/CI!)
 					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },

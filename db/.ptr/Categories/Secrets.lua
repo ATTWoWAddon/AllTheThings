@@ -2,7 +2,6 @@
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cq,crit,de,en,h,i,m,mnt,n,o,p,prof,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
-local a={{"i",207730},{"i",208092},{"i",228966},{"i",228996},{"n",185556},{"n",97128},{"o",408976},{"o",409166},{1,"questID",77308},{1,"questID",77520},{1,"questID",77521},{1,"questID",77522},{1,"questID",77524},{1,"questID",77578},{1,"questID",77579},{1,"questID",77580},{169414},{169415},{17.1,93.8},{17.8,93.2},{179566},{185562},{20,40},{206864},{207696},{207697},{24.5,60.7},{2736,8},{31.4,51.3},{33.63,58.45},{337},{39.5,58.9},{39.9,77.6},{44.6,20.2},{46.5,46.2},{47.4,48.1},{47.5,46.2},{47.9,46.8},{48,74.8},{50098},{52918},{54.9,28.9},{55.1,19},{56.4,17.5},{58.5,39.1},{60.2,58.7},{60.6,60},{62.8,72.8},{63611},{65.6,69.3},{65.9,43.2},{70},{71.8,62.5},{710,711,712},{72676},{73.2,74.9},{76504},{77203},{84677},{96479}};
 categories.Secrets=
 h(-50,{SortPriority=65,g={
 x(8,{awp=80001,g={
@@ -50,11 +49,11 @@ n(177073,{coords={
 [1543]={{23.1,68.3},{23.7,75.3}}},description="Click the first grapple point at |cFFFFFFFF23.1, 68.3|r and the next grapple point at |cFFFFFFFF23.7, 75.3|r.\n\nUse your |cFF0070ddStygia Dowser|r when you are on the platform covered with green fog, and you will be transformed into a spirit.\n\nEach of the spikes on the platform is topped with a glowing rune. To open the chest, match the runes in the puzzle to the positioning of the runes atop the spikes. With your back to the grapple point, start with the rune to your left and continue, moving clockwise.\n\n|cffde1c1cIf you match the runes incorrectly, you will die and get a debuff that prevents you from trying the puzzle again for 2 hours.|r",questID=63611,g={
 i(185056,{b=1})}}),
 i(185353,{coords={
-[1543]={{24.6,12.5},{27.6,17.3}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to the teleport pad that takes you to Dartanos's platform, and the page is all the way at the back on a table, behind where the rare spawns.",questID=63643,sourceQuests=a[49],spellID=349984,type="ihqt"}),
+[1543]={{24.6,12.5},{27.6,17.3}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to the teleport pad that takes you to Dartanos's platform, and the page is all the way at the back on a table, behind where the rare spawns.",questID=63643,sourceQuests={63611},spellID=349984,type="ihqt"}),
 i(185351,{coords={
-[1543]={{48.8,84.7}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to a cave entrance, and the page is at the back of the cave on the left side.",questID=63641,sourceQuests=a[49],spellID=349982,type="ihqt"}),
+[1543]={{48.8,84.7}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to a cave entrance, and the page is at the back of the cave on the left side.",questID=63641,sourceQuests={63611},spellID=349982,type="ihqt"}),
 i(185352,{coords={
-[1543]={{27.2,72.3}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe page is on the right side of Thanassos' platform.",questID=63642,sourceQuests=a[49],spellID=349983,type="ihqt"}),
+[1543]={{27.2,72.3}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe page is on the right side of Thanassos' platform.",questID=63642,sourceQuests={63611},spellID=349983,type="ihqt"}),
 i(185632,{description="Received after collecting and using all the Rune Codex Pages.",questID=63668,sourceQuests={63641,63642,63643},type="ihqt"}),
 i(185473,{b=1,crs={166398},description="Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters who have collected the |cFFa335eeIntact Rune Codex|r.",questID=63667,sourceQuests={63668},type="ihqt"}),
 n(177392,{coords={
@@ -76,38 +75,46 @@ q(60606,{coords={
 [114]={{43.5,13.9}}},qgs={25197},sourceQuests={60605},g={
 i(180010)}}),
 q(60614,{coords={
-[116]={a[20]}},qgs=a[17],sourceQuests={60606},g={
+[116]={{17.8,93.2}}},qgs={169414},sourceQuests={60606},g={
 i(180025)}}),
 q(60615,{coords={
-[116]={a[20]}},qgs=a[17],sourceQuests={60614}}),
+[116]={{17.8,93.2}}},qgs={169414},sourceQuests={60614}}),
 q(60616,{coords={
-[116]={a[19]}},qgs=a[18],sourceQuests={60615},g={
-i(180026)}}),
+[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60615},g={
+o(352915,{coords={
+[116]={{17.1,93.8}}},g={
+i(180026)}})}}),
 q(60617,{coords={
-[116]={a[19]}},qgs=a[18],sourceQuests={60616}}),
+[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60616}}),
 q(60619,{coords={
-[116]={a[19]}},qgs=a[18],sourceQuests={60617},g={
-i(180031),
-i(180033),
-i(180032)}}),
+[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60617},g={
+o(352926,{coords={
+[116]={{12.7,96.7}}},g={
+i(180031)}}),
+o(352924,{coords={
+[116]={{11.2,95}}},g={
+i(180033)}}),
+o(352925,{coords={
+[116]={{9,94.2}}},g={
+i(180032)}})}}),
 q(60620,{coords={
-[116]={a[19]}},qgs=a[18],sourceQuests={60619},g={
+[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60619},g={
 p(2888,{b=1,itemID=180034,npcID=169514,spellID=329900})}})}}),
 ah(186553,{awp=90105,displayID=100676,modelScale=1.1,type="i",g={
 q(64167,{coords={
-[627]={a[45]}},qgs=a[60],g={
+[627]={{58.5,39.1}}},qgs={96479},g={
 i(187128,{spellID=356054})}}),
 q(64196,{coords={
-[627]={a[45]}},qgs=a[60],sourceQuests={64167},g={
+[627]={{58.5,39.1}}},qgs={96479},sourceQuests={64167},g={
 i(186695,{spellID=354656})}}),
 q(64203,{coords={
-[790]={a[56]}},qgs=a[21],sourceQuests={64196},g={
+[790]={{73.2,74.9}}},qgs={179566},sourceQuests={64196},g={
 i(186730)}}),
 q(64215,{coords={
-[790]={a[56]}},qgs=a[21],sourceQuests={64203},g={
+[790]={{73.2,74.9}}},qgs={179566},sourceQuests={64203},g={
 i(186772,{spellID=354851})}}),
 q(64237,{coords={
-[790]={a[56]}},qgs=a[21],sourceQuests={64215},g={
+[790]={{73.2,74.9}}},qgs={179566},sourceQuests={64215},g={
 p(3107,{b=1,itemID=186553,npcID=179140,spellID=353460})}})}}),
 ah(192485,{awp=90205,type="i",g={
 n(162804,{coords={
@@ -157,22 +164,22 @@ ah(376873,{awp=100002,cost={{"i",202042,1}},description="***Debugg Mode enabled 
 q(72676,{coords={
 [2022]={{19.6,36.5}}},description="Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off."}),
 o(385001,{coords={
-[2022]={a[23]}},description="Once you wake up from your dance hangover, loot the Empty Fish Barrel. It's directly in front of you.",sourceQuests=a[55],g={
-i(202061,{requireSkill=356,sourceQuests=a[55],spellID=396616})}}),
-i(202061,{cost={{"i",202072,100}},description="Time to go fishing! You'll need to fill up the barrel with various fish from around The Dragon Isles.",requireSkill=356,sourceQuests=a[55],spellID=396616,g={
+[2022]={{20,40}}},description="Once you wake up from your dance hangover, loot the Empty Fish Barrel. It's directly in front of you.",sourceQuests={72676},g={
+i(202061,{requireSkill=356,sourceQuests={72676},spellID=396616})}}),
+i(202061,{cost={{"i",202072,100}},description="Time to go fishing! You'll need to fill up the barrel with various fish from around The Dragon Isles.",requireSkill=356,sourceQuests={72676},spellID=396616,g={
 i(202072,{b=1,coords={
 [2024]={{12.4,50}}},description="You'll need 100 of these fish. They can be found in open waters in the Azure Span. After using them with the barrel, you'll receive a Half-Filled Fish Barrel."})}}),
-i(202066,{cost={{"i",202073,25}},description="Now that your barrel is half full, the fishing gets harder. You're looking for lava fish now.",requireSkill=356,sourceQuests=a[55],spellID=396699,g={
+i(202066,{cost={{"i",202073,25}},description="Now that your barrel is half full, the fishing gets harder. You're looking for lava fish now.",requireSkill=356,sourceQuests={72676},spellID=396699,g={
 i(202073,{b=1,coords={
 [2022]={{35.8,64.6}}},description="You'll need 25 of these fish. Keep in mind, they're rarer drops, so this will take longer than the Frigid Floe Fish."})}}),
-q(72808,{cost={{"i",202074,1}},description="Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",requireSkill=356,sourceQuests=a[55],g={
+q(72808,{cost={{"i",202074,1}},description="Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",providers={{"i",202068}},requireSkill=356,sourceQuests={72676},g={
 i(202074,{b=1,coords={
 [2025]={{56,44.5}}},description="Just one! But it'll take a while. Having good Perception on your Profession gear may help."}),
 i(202068,{spellID=396698})}}),
 i(202069,{coords={
-[2022]={a[23]}},description="Head back to where you originally picked up the empty barrel, and place the Overflowing Fish Barrel on the ground.",spellID=396703}),
+[2022]={{20,40}}},description="Head back to where you originally picked up the empty barrel, and place the Overflowing Fish Barrel on the ground.",spellID=396703}),
 q(72738,{coords={
-[2022]={a[23]}},lvl=10,qgs={199563},sourceQuests={72808},g={
+[2022]={{20,40}}},lvl=10,qgs={199563},sourceQuests={72808},g={
 mnt(376873,{b=1,itemID=198870,lvl=10})}})}})}),
 ah(193373,{awp=100007,description="Below is a detailed explanation on how to obtain the Phoenix Wishwing pet.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",type="i",g={
 o(13000040,{description="|cFFFFFFFFStep 1:|r Obtain the Phoenix Ash Talisman from Zektar in Spires of Arak.",providers={{"i",199203}},g={
@@ -193,19 +200,19 @@ q(46952,{awp=70200,coords={
 [582]={{58.8,53.8}},
 [590]={{44.6,84.8}}},description="You need to have an Herb Garden in your garrison. Show the Pebble to Dog by speaking with them. Do not throw the pebble at Dog.",qgs={87553},qis={147420},sourceQuests={30526,34193,36404}}),
 q(83093,{awp=110002,coords={
-[2248]={a[29]}},description="Interacting with the bowl near Dalaran's crash will send Dog running to you.",providers={{"o",452438}},sourceQuests={46952}}),
+[2248]={{31.4,51.3}}},description="Interacting with the bowl near Dalaran's crash will send Dog running to you.",providers={{"o",452438}},sourceQuests={46952}}),
 q(83094,{awp=110002,coords={
-[2248]={a[29]}},description="Interact with Dog to get them as a pet.",qgs={225486},sourceQuests={83093},g={
+[2248]={{31.4,51.3}}},description="Interact with Dog to get them as a pet.",qgs={225486},sourceQuests={83093},g={
 p(4596,{b=1,itemID=224766,npcID=225537,spellID=453741})}})}}),
 ah(156798,{awp=80001,description="Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",displayID=88835,modelScale=1.1,type="i",g={
 o(13000000,{coords={
-[594]={a[50]}},description="|cFFFFFFFFSTEP 1:|r Purchase |cFFFFD700Talisman of True Treasure Tracking|r. This can be bought from |cFFFFD700Griftah|r in |cFFFFD700Shattrath City|r at |cFFFFFFFF65.6, 69.3|r for 35g\n",g={
+[594]={{65.6,69.3}}},description="|cFFFFFFFFSTEP 1:|r Purchase |cFFFFD700Talisman of True Treasure Tracking|r. This can be bought from |cFFFFD700Griftah|r in |cFFFFD700Shattrath City|r at |cFFFFFFFF65.6, 69.3|r for 35g\n",g={
 i(27944,{f=51,spellID=260928})}}),
 o(13000001,{description="|cFFFFFFFFSTEP 2:|r You must wear the talisman to see/interact with many objects in this secret."}),
 o(13000032,{description="|cFFFFFFFFSTEP 3:|r Hivemind requires a five-man group. Four members must each collect a different monocle before the group can continue with the secret.",g={
 ah(156724,{description="Obtaining this monocle requires reading many letters spread around Azeroth.\n\n***You need to interact with all letters in the order listed to progress through the puzzle!***\n",icon=133146,type="i",g={
 o(280815,{coords={
-[111]={a[50]}},description="|cFFFFFFFFLetter 1:|r The start of this puzzle is the |cFFFFD700Letter from Ms. Graham|r with a blue aura behind |cFFFFD700Griftah|r, which can be interacted with. Click it. The letter reads...\r\r|cFFFFFFFFThe key Factor in successul Wasp Ignition is a solid Ad campaign.|r\n",model=1661948,questID=40397}),
+[111]={{65.6,69.3}}},description="|cFFFFFFFFLetter 1:|r The start of this puzzle is the |cFFFFD700Letter from Ms. Graham|r with a blue aura behind |cFFFFD700Griftah|r, which can be interacted with. Click it. The letter reads...\r\r|cFFFFFFFFThe key Factor in successul Wasp Ignition is a solid Ad campaign.|r\n",model=1661948,questID=40397}),
 o(280836,{coords={
 [650]={{57.4,27.9}}},description="|cFFFFFFFFLetter 2:|r Go to |cFFFFFFFF57.4, 27.9|r in |cFFFFD700Highmountain|r. The |cFFFFD700Letter from Ms. Graham|r is located in one of the tents on the box next to the pumpkin. Click it. The letter reads...\n\n|cFFFFFFFFOf all of Gai's cures for Nature, the most liberating is Death.|r\n",model=1661948,questID=40314,sourceQuests={40397}}),
 o(280837,{coords={
@@ -229,69 +236,69 @@ ah(156725,{description="Fish NPCs across Vashj'ir sell sea-themed currencies whi
 o(13000002,{description="Exchange the following items with the NPC until you receive 5 |cFFFFD700Scintillating Murloc Skin Lotion|r.\n",g={
 o(13000003,{description="Exchange the following items with the NPC until you receive 50 |cFFFFD700Glittergill Glitter|r.\n",g={
 o(13000004,{coords={
-[205]={a[34]}},description="|cFFFFFFFFStep 1:|r Purchase 500 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"}),
+[205]={{44.6,20.2}}},description="|cFFFFFFFFStep 1:|r Purchase 500 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"}),
 o(13000005,{coords={
-[204]={a[33]}},description="|cFFFFFFFFStep 2:|r Purchase 100 |cFFFFD700Cavity-Free Great Shark Tooth|r from |cFFFFD700Volatile Violetscale|r at |cFFFFFFFF39.9, 77.6|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\nThe NPC is swimming around near the sea floor of the Underlight Canyon.\n"}),
+[204]={{39.9,77.6}}},description="|cFFFFFFFFStep 2:|r Purchase 100 |cFFFFD700Cavity-Free Great Shark Tooth|r from |cFFFFD700Volatile Violetscale|r at |cFFFFFFFF39.9, 77.6|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\nThe NPC is swimming around near the sea floor of the Underlight Canyon.\n"}),
 o(13000006,{coords={
 [205]={{54.3,24.5}}},description="|cFFFFFFFFStep 3:|r Purchase 50 |cFFFFD700Razoreel Larva|r from |cFFFFD700Manta Stargazer|r at |cFFFFFFFF54.3, 24.5|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\nThe NPC is near the surface, hovering around Shimmering Grotto.\n"}),
 o(13000007,{coords={
 [205]={{69,47.8}}},description="|cFFFFFFFFStep 4:|r Purchase 250 |cFFFFD700Well Fed Doctor Fish|r from |cFFFFD700Lil' Whaley|r at |cFFFFFFFF69.0, 47.86|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\nThe NPC is close to the sea floor, next to the Ruins of Thelserai Temple.\n"}),
 o(13000008,{coords={
-[204]={a[51]}},description="|cFFFFFFFFStep 5:|r Purchase 10 |cFFFFD700Freshly Molted Crab Skin|r from |cFFFFD700Gloomy Bluefin|r at |cFFFFFFFF65.9, 43.2|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\nThe NPC is on the sea floor, swimming to the southwest of the Abyssal Breach.\n"}),
+[204]={{65.9,43.2}}},description="|cFFFFFFFFStep 5:|r Purchase 10 |cFFFFD700Freshly Molted Crab Skin|r from |cFFFFD700Gloomy Bluefin|r at |cFFFFFFFF65.9, 43.2|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\nThe NPC is on the sea floor, swimming to the southwest of the Abyssal Breach.\n"}),
 o(13000009,{coords={
 [201]={{60.3,58.5}}},description="|cFFFFFFFFStep 6:|r Purchase 50 |cFFFFD700Glittergill Glitter|r from |cFFFFD700Ol' Fishbreath|r at |cFFFFFFFF60.3, 58.5|r in |cFFFFD700Kelp'thar Forest|r, Vashj'ir.\nThe NPC is close to the surface, around some plankton in Gnaws' Boneyard.\n"})}}),
 o(13000010,{description="Exchange the following items with the NPC until you receive 40 |cFFFFD700Symbiotic Plankton|r.\n",g={
 o(13000011,{coords={
-[205]={a[34]}},description="|cFFFFFFFFStep 1:|r Purchase 80 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"}),
+[205]={{44.6,20.2}}},description="|cFFFFFFFFStep 1:|r Purchase 80 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"}),
 o(13000012,{coords={
-[204]={a[51]}},description="|cFFFFFFFFStep 2:|r Purchase 2 |cFFFFD700Giant Giant Toenail Clipping|r from |cFFFFD700Gloomy Bluefin|r at |cFFFFFFFF65.9, 43.2|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is on the sea floor, swimming to the southwest of the Abyssal Breach.\n"}),
+[204]={{65.9,43.2}}},description="|cFFFFFFFFStep 2:|r Purchase 2 |cFFFFD700Giant Giant Toenail Clipping|r from |cFFFFD700Gloomy Bluefin|r at |cFFFFFFFF65.9, 43.2|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is on the sea floor, swimming to the southwest of the Abyssal Breach.\n"}),
 o(13000013,{coords={
 [204]={{45.7,17.3}}},description="|cFFFFFFFFStep 3:|r Purchase 4 |cFFFFD700Makrura Eye|r from |cFFFFD700Little Carp|r at |cFFFFFFFF45.8, 17.0|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is near the sea floor, swimming around Deepfin Ridge.\n"}),
 o(13000014,{coords={
-[204]={a[33]}},description="|cFFFFFFFFStep 4:|r Purchase 1 |cFFFFD700Accidentally-Severed Seahorse Fin|r from |cFFFFD700Volatile Violetscale|r at |cFFFFFFFF39.9, 77.6|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is swimming around near the sea floor of the Underlight Canyon.\n"}),
+[204]={{39.9,77.6}}},description="|cFFFFFFFFStep 4:|r Purchase 1 |cFFFFD700Accidentally-Severed Seahorse Fin|r from |cFFFFD700Volatile Violetscale|r at |cFFFFFFFF39.9, 77.6|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is swimming around near the sea floor of the Underlight Canyon.\n"}),
 o(13000015,{coords={
 [205]={{53.8,89.1}}},description="|cFFFFFFFFStep 5:|r Purchase 3 |cFFFFD700Shiny Sea Serpent Scale|r from |cFFFFD700Crimson Angerfish|r at |cFFFFFFFF53.8, 89.1|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is close to the sea floor, swimming to the left of Biel'aran Ridge.\n"}),
 o(13000016,{coords={
 [205]={{53.8,23.4}}},description="|cFFFFFFFFStep 6:|r Purchase 40 |cFFFFD700Symbiotic Plankton|r from |cFFFFD700Manta Stargazer|r at |cFFFFFFFF53.8, 23.4|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is near the surface, hovering around Shimmering Grotto.\n\nYou only need 2 scales, the spare can be left to despawn.\n"})}}),
 o(13000017,{coords={
-[205]={a[34]}},description="Exchange the |cFFFFD700Glittergill Glitter|r and |cFFFFD700Symbiotic Plankton|r for 5 |cFFFFD700Scintillating Murloc Skin Lotion|r with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"})}}),
+[205]={{44.6,20.2}}},description="Exchange the |cFFFFD700Glittergill Glitter|r and |cFFFFD700Symbiotic Plankton|r for 5 |cFFFFD700Scintillating Murloc Skin Lotion|r with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"})}}),
 o(13000018,{description="Exchange the following items with the NPC until you receive 5 |cFFFFD700Potent Gastropod Gloop|r.\n",g={
 o(13000019,{coords={
-[205]={a[34]}},description="|cFFFFFFFFStep 1:|r Purchase 300 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"}),
+[205]={{44.6,20.2}}},description="|cFFFFFFFFStep 1:|r Purchase 300 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"}),
 o(13000020,{coords={
-[201]={a[47]}},description="|cFFFFFFFFStep 2:|r Purchase 30 |cFFFFD700Vantus Black Squid Ink|r from |cFFFFD700Ol' Fishbreath|r at |cFFFFFFFF60.6, 60.0|r in |cFFFFD700Kelp'thar Forest|r, Vashj'ir.\n\nThe NPC is close to the surface, around some plankton in Gnaws' Boneyard.\n"}),
+[201]={{60.6,60}}},description="|cFFFFFFFFStep 2:|r Purchase 30 |cFFFFD700Vantus Black Squid Ink|r from |cFFFFD700Ol' Fishbreath|r at |cFFFFFFFF60.6, 60.0|r in |cFFFFD700Kelp'thar Forest|r, Vashj'ir.\n\nThe NPC is close to the surface, around some plankton in Gnaws' Boneyard.\n"}),
 o(13000021,{coords={
 [204]={{15.3,83.5}}},description="|cFFFFFFFFStep 3:|r Purchase 30 |cFFFFD700Super Slick Eel Slime|r from |cFFFFD700The Blackfish|r at |cFFFFFFFF15.3, 83.5|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is near the southwest corner of the Abandoned Reef.\n"}),
 o(13000022,{coords={
-[204]={a[33]}},description="|cFFFFFFFFStep 4:|r Purchase 3 |cFFFFD700Rock-Encrusted Whelk Shell|r from |cFFFFD700Volatile Violetscale|r at |cFFFFFFFF39.9, 77.6|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is swimming around near the sea floor of the Underlight Canyon.\n"}),
+[204]={{39.9,77.6}}},description="|cFFFFFFFFStep 4:|r Purchase 3 |cFFFFD700Rock-Encrusted Whelk Shell|r from |cFFFFD700Volatile Violetscale|r at |cFFFFFFFF39.9, 77.6|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is swimming around near the sea floor of the Underlight Canyon.\n"}),
 o(13000023,{coords={
 [204]={{45.8,17}}},description="|cFFFFFFFFStep 5:|r Purchase 5 |cFFFFD700Potent Gastropod Gloop|r from |cFFFFD700Little Carp|r at |cFFFFFFFF45.8, 17.0|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is near the sea floor, swimming around Deepfin Ridge.\n"})}}),
 o(13000024,{description="Exchange the following items with the NPC until you receive 5 |cFFFFD700Captured Cavitation Bubble|r.\n",g={
 o(13000025,{coords={
-[205]={a[34]}},description="|cFFFFFFFFStep 1:|r Purchase 1500 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"}),
+[205]={{44.6,20.2}}},description="|cFFFFFFFFStep 1:|r Purchase 1500 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n"}),
 o(13000026,{coords={
 [205]={{69.8,46.6}}},description="|cFFFFFFFFStep 2:|r Purchase 300 |cFFFFD700Very Pretty Coral|r from |cFFFFD700Lil' Whaley|r at |cFFFFFFFF69.8, 46.6|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is close to the sea floor, next to the Ruins of Thelserai Temple.\n"}),
 o(13000027,{coords={
-[201]={a[47]}},description="|cFFFFFFFFStep 3:|r Purchase 100 |cFFFFD700Iridescent Shimmerray Skin|r from |cFFFFD700Ol' Fishbreath|r at |cFFFFFFFF60.6, 60.0|r in |cFFFFD700Kelp'thar Forest|r, Vashj'ir.\n\nThe NPC is close to the surface, around some plankton in Gnaws' Boneyard.\n"}),
+[201]={{60.6,60}}},description="|cFFFFFFFFStep 3:|r Purchase 100 |cFFFFD700Iridescent Shimmerray Skin|r from |cFFFFD700Ol' Fishbreath|r at |cFFFFFFFF60.6, 60.0|r in |cFFFFD700Kelp'thar Forest|r, Vashj'ir.\n\nThe NPC is close to the surface, around some plankton in Gnaws' Boneyard.\n"}),
 o(13000028,{coords={
 [205]={{53.8,88.4}}},description="|cFFFFFFFFStep 4:|r Purchase 20 |cFFFFD700Luxurous Luxscale Scale|r from |cFFFFD700Crimson Angerfish|r at |cFFFFFFFF53.8, 88.4|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is close to the sea floor, swimming to the left of Biel'aran Ridge.\n"}),
 o(13000029,{coords={
 [204]={{16,82.2}}},description="|cFFFFFFFFStep 5:|r Purchase 5 |cFFFFD700Captured Cavitation Bubble|r from |cFFFFD700The Blackfish|r at |cFFFFFFFF16.0, 82.2|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is near the southwest corner of the Abandoned Reef.\n"})}}),
 o(13000030,{coords={
-[205]={a[34]}},description="Exchange the 3 items with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir for the |cFFFFD700Red Crystal Monocle|r.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",g={
+[205]={{44.6,20.2}}},description="Exchange the 3 items with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir for the |cFFFFD700Red Crystal Monocle|r.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",g={
 s(93109,156725,{b=1,f=2,spellID=260929})}})}}),
 ah(156726,{description="Go to |cFFFFD700Halls of Origination|r in |cFFFFD700Uldum|r. After the first boss in Halls of Origination, there is a large room with an elevator. While wearing the |cFFFFD700Talisman of True Treasure Tracking|r, you can click a Stellar Refraction Device that spawns colorful constellations in the room below the elevator.\n\nTo access the puzzle, head north from the elevator and there will be an open way with a staircase to the floor below.\n\nYour objective here is to transform all constellations to the same color. To do this, there are three special refractors that change their colors when clicked on.\n\n|cFFFFD700The Hivemind HoO Puzzle Helper|r addon is recommended to complete this step, as it simply requires you to input the current colors of the constellations, then gives you directions on how to click the refractors to solve it.\n\nWhen all constellations have the same color, a chest will spawn on top of the Stellar Refraction Device containing the |cFFFFFFFFYellow Crystal Monocle|r.\n\n|cFFCC33FFBe careful to not accidentally click the Refraction Device when looting the monocle, as this will restart the puzzle and despawn the chest|r.\n",icon=133146,providers={{"i",27944}},type="i",g={
 o(280886,{questID=50183,g={
 s(93110,156726,{b=1,f=2,sourceQuests={50183},spellID=260930})}})}})}}),
 o(13000033,{description="|cFFFFFFFFSTEP 3:|r Hivemind requires a five-man group. Four members must each collect a different monocle before the group can continue with the secret. You must be in a party and have the same warmode. Four party members with different monocles must go to four different withered in suramar while one stay in Dalaran",g={
 n(132595,{coords={
-[680]={a[53]}},description="Red Monocle",providers={{"i",156725}}}),
+[680]={{71.8,62.5}}},description="Red Monocle",providers={{"i",156725}}}),
 n(132596,{coords={
-[680]={a[53]}},description="Blue Monocle",providers={{"i",156724}}}),
+[680]={{71.8,62.5}}},description="Blue Monocle",providers={{"i",156724}}}),
 n(132597,{coords={
-[680]={a[53]}},description="Green Monocle",providers={{"i",156727}}}),
+[680]={{71.8,62.5}}},description="Green Monocle",providers={{"i",156727}}}),
 n(132598,{coords={
-[680]={a[53]}},description="Yellow Monocle",providers={{"i",156726}}}),
+[680]={{71.8,62.5}}},description="Yellow Monocle",providers={{"i",156726}}}),
 o(280903,{description="The person in Dalaran have to pick up this Toy and will take random damage while doing so. It's important that this TOTAL(Damage+Absorbs+Overkill) damage is recorded."})}}),
 o(13000034,{description="The damage the person took from taking the cat toy is the code. Each cat represent a one order of magnitude in the following order: Mrs. Fluffymuffins > Shadow > Mew > Ash > Bella and each pet counts as one.",g={
 n(132599,{coords={
@@ -377,12 +384,12 @@ i(232007,{f=55,spellID=431}),
 i(262880,{f=55,spellID=11629})})}}),
 ah(40967,{awp=110005,description="***Using Debug Mode is recommended.***\n",type="a",g={
 o(182030,{coords={
-[78]={{44.5,8}}},description="Inside a rotten tree trunk in the far north of Un'Goro Crater. Use your Torch of Pyrreth to reveal it.",providers={a[2]},g={
+[78]={{44.5,8}}},description="Inside a rotten tree trunk in the far north of Un'Goro Crater. Use your Torch of Pyrreth to reveal it.",providers={{"i",208092}},g={
 i(228941,{b=1,spellID=420213})}}),
 q(84685,{coords={
-[2339]={a[42]}},sourceAchievements={40870},type="hqt"}),
+[2339]={{54.9,28.9}}},sourceAchievements={40870},type="hqt"}),
 q(84684,{coords={
-[2339]={a[42]}},description="Find 3 notes scattered around Azj-Kahet then confront Ratts in Pillar-nest Vosh.",lvl=10,qgs={230042},sourceQuests={84685},g={
+[2339]={{54.9,28.9}}},description="Find 3 notes scattered around Azj-Kahet then confront Ratts in Pillar-nest Vosh.",lvl=10,qgs={230042},sourceQuests={84685},g={
 i(228934,{spellID=462610}),
 o(466118,{coords={
 [2255]={{69.3,93.3}}},description="#1. In a cave in Azj'Kahet in the center of 5 Rotglow Settlers.",g={
@@ -394,58 +401,58 @@ o(466120,{coords={
 [2215]={{50.7,86.6}}},description="#3. Underwater in the center of a lake on the right side of the Azj-Kahet-Hallowfall transition.",g={
 i(228937,{spellID=462610})}}),
 o(466128,{coords={
-[2255]={a[43],a[44]}},description="#4. To turn in the quest, enter Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall."}),
+[2255]={{55.1,19},{56.4,17.5}}},description="#4. To turn in the quest, enter Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall."}),
 i(228938,{b=1})}}),
 i(44124,{b=1,cost={{"i",228938,1},{"i",228941,1}},description="Once reformed, go to the entrance of the Karazhan Catacombs in Deadwind Pass and use your Torch of Pyrreth by the gate to teleport into a secret scenario."}),
 m(46,{coords={
-[42]={{46.3,69.1}}},description="Deep into the catacombs the bike is just sitting there out of reach, but is surrounded by 12 basins which can light up with orbs if enough actions are performed.",providers={{"i",44124},a[2]},g={
+[42]={{46.3,69.1}}},description="Deep into the catacombs the bike is just sitting there out of reach, but is surrounded by 12 basins which can light up with orbs if enough actions are performed.",providers={{"i",44124},{"i",208092}},g={
 q(84676,{coords={
 [10]={{55,40.2}},
 [550]={{49.2,48},{74.2,37.5}},
-[1536]={{27.3,61.3}}},crs={82688,175815},description="Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Northern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\n\nFully lights up the 1 O'clock basin.",providers={a[2]},sourceQuests={84684},type="hqt"}),
+[1536]={{27.3,61.3}}},crs={82688,175815},description="Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Northern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\n\nFully lights up the 1 O'clock basin.",providers={{"i",208092}},sourceQuests={84684},type="hqt"}),
 q(84677,{description="Requires the 1 O'clock basin to have been completed to see the obelisk personally.\n1. Acquire the Twitching Eyaball or All-Seeing Eyes toys\n2. Acquire a Perky Pug with either the Dogg-Saron costume from Vashti the Wandering Merchant in Azsuna or the Yipp-Saron costume from Hallow's End (or the AH.)\n3. Bring these items OR find a friend who has them and visit the Ny'Alotha Obelisk above the Seat of Knowledge in the Vale of Eternal Blossoms (BFA).\n4. Have someone summon a perky pug and use the toys, then /pray in front of the obelisk to be granted the Key of Shadows.\n\nThere is a 5-15 minute delay even if you do everything right. Everyone within 10 yards should get the key if anyone in range does it correctly.\n\nFully lights up the 2 O'clock basin",providers={{"n",37865},{"n",153297}},type="hqt",g={
 n(153297,{coords={
 [1530]={{83.7,27.6}}},cost={{"i",116812,1},{"i",229413,1}},providers={{"i",168123},{"i",175140}},g={
 i(53156,{b=1,description="Opens both doors in the room with the Red Button.",spellID=420213})}})}}),
-ah(228967,{description="1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin, fully lighting with 9 orbs.",providers={{"i",53156}},sourceQuests=a[59],type="i",g={
-i(228965,{b=1,sourceQuests=a[59],spellID=3366}),
+ah(228967,{description="1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin, fully lighting with 9 orbs.",providers={{"i",53156}},sourceQuests={84677},type="i",g={
+i(228965,{b=1,sourceQuests={84677},spellID=3366}),
 o(466393,{coords={
-[46]={{48.4,79.5}}},providers={{"i",228965}},sourceQuests=a[59],g={
-toy(228966,{b=1,sourceQuests=a[59]})}}),
+[46]={{48.4,79.5}}},providers={{"i",228965}},sourceQuests={84677},g={
+toy(228966,{b=1,sourceQuests={84677}})}}),
 o(466400,{coords={
-[46]={{48.9,80.3}}},description="Code to open at the adjacent decryption console: 88224646",questID=84757,sourceQuests=a[59],g={
-i(228967,{b=1,sourceQuests=a[59]})}}),
+[46]={{48.9,80.3}}},description="Code to open at the adjacent decryption console: 88224646",questID=84757,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
 o(466413,{coords={
-[46]={{42.9,70.6}}},description="Code to open at the adjacent decryption console: 17112317",questID=84758,sourceQuests=a[59],g={
-i(228967,{b=1,sourceQuests=a[59]})}}),
+[46]={{42.9,70.6}}},description="Code to open at the adjacent decryption console: 17112317",questID=84758,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
 o(466479,{coords={
-[46]={{49.5,65.1}}},description="Code to open at the adjacent decryption console: 1533, 3457, 8265, or 10638",providers={a[3]},questID=84768,sourceQuests=a[59],g={
-i(228967,{b=1,sourceQuests=a[59]})}}),
+[46]={{49.5,65.1}}},description="Code to open at the adjacent decryption console: 1533, 3457, 8265, or 10638",providers={{"i",228966}},questID=84768,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
 o(466495,{coords={
-[46]={{67.4,84.3}}},description="Code to open at the adjacent decryption console: 19019",providers={a[3]},questID=84771,sourceQuests=a[59],g={
-i(228967,{b=1,sourceQuests=a[59]})}}),
+[46]={{67.4,84.3}}},description="Code to open at the adjacent decryption console: 19019",providers={{"i",228966}},questID=84771,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
 o(466484,{coords={
-[46]={{56.3,62.6}}},description="Code to open at the adjacent decryption console: 5661",providers={a[3]},questID=84769,sourceQuests=a[59],g={
-i(228967,{b=1,sourceQuests=a[59]})}}),
+[46]={{56.3,62.6}}},description="Code to open at the adjacent decryption console: 5661",providers={{"i",228966}},questID=84769,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
 o(466420,{coords={
-[46]={{64.9,48.3}}},description="Code to open at the adjacent decryption console: 52233",providers={a[3]},questID=84766,sourceQuests=a[59],g={
-i(228967,{b=1,sourceQuests=a[59]})}}),
+[46]={{64.9,48.3}}},description="Code to open at the adjacent decryption console: 52233",providers={{"i",228966}},questID=84766,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
 o(466497,{coords={
-[46]={{70.3,55.4}}},description="Code to open at the adjacent decryption console: 51567",providers={a[3]},questID=84772,sourceQuests=a[59],g={
-i(228967,{b=1,sourceQuests=a[59]})}}),
+[46]={{70.3,55.4}}},description="Code to open at the adjacent decryption console: 51567",providers={{"i",228966}},questID=84772,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
 o(466489,{coords={
-[46]={{66.3,15.2}}},description="Code to open at the adjacent decryption console: 115",providers={a[3]},questID=84770,sourceQuests=a[59],g={
-i(228967,{b=1,sourceQuests=a[59]})}}),
-ah(84786,{description="In the felcycle room is over a dozen slot machine consoles around the walls, any of them work for this coin. Variations of 777, 888 and 168 are correct answers but the machines only pay out a coin if you are deemed lucky.\nYour luck can be increased by obtaining at least 5 unique lucky things. It's not clear what counts but Blizzard states there are 13 possible lucky sources, some have been listed as a provider for this step. If you see the 'You feel lucky' emote in chat, you should be good, but try at least once anyway, the machine will pay out on first attempt if you're lucky enough, it is not random.\nNo chest will spawn, you will be given the Piece of Hate directly.",providers={{"i",5373},{"i",138382},{"i",138385},{"i",198400},{"i",198857},{"i",200265},{"i",202046}},sourceQuests=a[59],type="q",g={
-i(228967,{b=1,sourceQuests=a[59]}),
-q(84786,{sourceQuests=a[59],type="hqt"})}})}}),
+[46]={{66.3,15.2}}},description="Code to open at the adjacent decryption console: 115",providers={{"i",228966}},questID=84770,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
+ah(84786,{description="In the felcycle room is over a dozen slot machine consoles around the walls, any of them work for this coin. Variations of 777, 888 and 168 are correct answers but the machines only pay out a coin if you are deemed lucky.\nYour luck can be increased by obtaining at least 5 unique lucky things. It's not clear what counts but Blizzard states there are 13 possible lucky sources, some have been listed as a provider for this step. If you see the 'You feel lucky' emote in chat, you should be good, but try at least once anyway, the machine will pay out on first attempt if you're lucky enough, it is not random.\nNo chest will spawn, you will be given the Piece of Hate directly.",providers={{"i",5373},{"i",138382},{"i",138385},{"i",198400},{"i",198857},{"i",200265},{"i",202046}},sourceQuests={84677},type="q",g={
+i(228967,{b=1,sourceQuests={84677}}),
+q(84786,{sourceQuests={84677},type="hqt"})}})}}),
 q(84780,{coords={
 [22]={{52.1,85.1}}},cost={{"i",228987,1}},description="1. Use the Scroll of Fel Binding sold by Vashti the Wandering Merchant in Azsuna (Broken Isles) right outside Uther's Tomb in the Western Plaugelands.\n2. You will die, return to your corpse and fight the Doomguard while inspecting the four writings on the floor of the tomb. Anyone can summon the demon and writings will stay visible as long as it lives.\n\nFully lights up the 4 O'clock basin.",type="hqt"}),
 q(84781,{coords={
 [554]={{43.1,41.4}},
 [555]={{39.6,38.4},{53.3,56.8}}},crs={71876},description="1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Francois, Gizmo the Pure, Glimr, Hungering Claw, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Renny, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Tobias, Wicker Pup",lvl=10,qgs={16445,61087,111984,134406,139770,141941,143189,143730,159783,160704,163897,169514,179008,189117,191381,192343,204367,208643,229779,232048},sourceQuests={84780},g={
 i(228995,{b=1})}}),
-q(84811,{description="Use your Torch of Pyrreth at various alters to summon a Spirit of Collections. Perform several actions to appease the spirits on each alter of acquisition, an action may require summoning a mount, pet, or toy associated with each spirit, emoting in some way, or changing your transmog.\n\nSomeone in your phase can appease a spirit for you if nearby, but they must fulfill each part of a spirit's appeasement themselves. If one person covers mount, and another covers pet for example, it will not work.\n\nEach appeased spirit will add an orb to the 6 O'clock basin, and looting the final chest will light it fully.",providers={a[2]},type="hqt",g={
+q(84811,{description="Use your Torch of Pyrreth at various alters to summon a Spirit of Collections. Perform several actions to appease the spirits on each alter of acquisition, an action may require summoning a mount, pet, or toy associated with each spirit, emoting in some way, or changing your transmog.\n\nSomeone in your phase can appease a spirit for you if nearby, but they must fulfill each part of a spirit's appeasement themselves. If one person covers mount, and another covers pet for example, it will not work.\n\nEach appeased spirit will add an orb to the 6 O'clock basin, and looting the final chest will light it fully.",providers={{"i",208092}},type="hqt",g={
 q(84809,{coords={
 [50]={{77.1,46.3}}},crs={230430},description="Confirmed actions to appease:\nMounts: Any with 'blood' in their name\n\nPets: Any with 'blood' in their name\n\nToys: Throbbing Blood Orb",type="hqt"}),
 q(84807,{coords={
@@ -457,25 +464,25 @@ q(84806,{coords={
 q(84808,{coords={
 [50]={{77.1,44.9}}},crs={230425},description="Confirmed actions to appease:\nOutfit: Be naked\n\nEmotes: /flirt with the spirit targeted\n\nPets: Sister of Temptation\n\nToys: Moroes' Famous Polish, Steamy Romance Novel Kit",type="hqt"}),
 o(466808,{coords={
-[50]={{78.2,47.7}}},description="Appears by the wall nearby the Shadow alter once each spirit has been appeased. Use your goggles to see it.",providers={a[3]},sourceQuests={84781,84806,84807,84808,84809,84810},g={
+[50]={{78.2,47.7}}},description="Appears by the wall nearby the Shadow alter once each spirit has been appeased. Use your goggles to see it.",providers={{"i",228966}},sourceQuests={84781,84806,84807,84808,84809,84810},g={
 i(229007,{b=1,spellID=444913})}})}}),
 q(84823,{description="Empower your owl pet with the Owl statues in Azsuna then enter the Vault of the Wardens to find a Sentry Statue. Use it to solve a puzzle to receive the mirror.\n\nEmpowering your owl will add 4 orbs to the 7 O'clock basin, and solving the sentry puzzle will light it fully.",maps={630,710,711,712},type="hqt",g={
 ah(254262,{coords={
-[630]={{37.1,82.16},{40.52,75.19},{40.54,73.15},{43.24,85.3},{43.66,87.51},{44.18,72.41},{45.97,84.06},{47.48,84.74},{50.45,91.67}}},description="On the Isle of the Watchers in Azsuna are 9 Owl of the Watchers statues, on any shard, only 4 of them will be interactable at any given time.\n\nYou need an owl pet, the Fledgling Warden Owl sold by the Wardens quartermaster on the same island is confirmed to work, but other owls may work too.\n\nSummon your owl and don't let it disappear by flying too far away. Find an interactable statue and sit in the aura it creates with your pet until an audible sound cue plays and a secret magnifying glass icon appears over your head. Do that again for 4 different statue auras, Red, Green, Blue and Purple.\nYou'll know you're done when your owl has a distinct white orb above their head. Unlocks 4 orbs at Basin 7.",providers={a[6]},type="o",g={
+[630]={{37.1,82.16},{40.52,75.19},{40.54,73.15},{43.24,85.3},{43.66,87.51},{44.18,72.41},{45.97,84.06},{47.48,84.74},{50.45,91.67}}},description="On the Isle of the Watchers in Azsuna are 9 Owl of the Watchers statues, on any shard, only 4 of them will be interactable at any given time.\n\nYou need an owl pet, the Fledgling Warden Owl sold by the Wardens quartermaster on the same island is confirmed to work, but other owls may work too.\n\nSummon your owl and don't let it disappear by flying too far away. Find an interactable statue and sit in the aura it creates with your pet until an audible sound cue plays and a secret magnifying glass icon appears over your head. Do that again for 4 different statue auras, Red, Green, Blue and Purple.\nYou'll know you're done when your owl has a distinct white orb above their head. Unlocks 4 orbs at Basin 7.",providers={{"n",97128}},type="o",g={
 q(39353,{description="Unlocks an orb at the 7 O'clock basin.",type="hqt"}),
 q(26741,{description="Unlocks an orb at the 7 O'clock basin.",lvl=10,type="hqt"}),
 q(40721,{description="Unlocks an orb at the 7 O'clock basin.",type="hqt"}),
 q(26704,{description="Unlocks an orb at the 7 O'clock basin.",lvl=10,type="hqt"})}}),
-o(466943,{description="You must first have completed the previous steps with the watcher statues and empowering your owl.\n1. Clear Vault of the Wardens (any difficulty) with your owl pet summoned through to last boss.\n2. Pick up Elune's light from a statue in the corner of Cordana's arena and QUICKLY get back up to the first boss's room.\n3. Backtrack from the first boss room towards the dungeon entrance, enter the newly opened door on your right, the statue will sit in the center.",maps=a[54],providers={a[6]},g={
+o(466943,{description="You must first have completed the previous steps with the watcher statues and empowering your owl.\n1. Clear Vault of the Wardens (any difficulty) with your owl pet summoned through to last boss.\n2. Pick up Elune's light from a statue in the corner of Cordana's arena and QUICKLY get back up to the first boss's room.\n3. Backtrack from the first boss room towards the dungeon entrance, enter the newly opened door on your right, the statue will sit in the center.",maps={710,711,712},providers={{"n",97128}},g={
 i(229046,{b=1,description="Place in the center platform before the last set of stairs leading to Glazer's platform in the Vault of Mirrors.",spellID=464277})}}),
-q(84916,{description="Place in the center platform before the last set of stairs leading to Glazer's platform in the Vault of Mirrors.",maps=a[54],type="hqt"}),
-o(466960,{crs={109300},description="Once you place the Sentry Statue in the Vault of Mirrors, a 5x5 grid of watcher statues will appear. You need to make each statue descend into the floor, but each statue you click will toggle the state of 4 other statues.\n\nThere are addons and website tools to solve this, for your sanity, use one. You may solve this secret in a group.\n\nFully lights up the 7 O'clock basin.",maps=a[54],providers={a[2],a[6]},g={
+q(84916,{description="Place in the center platform before the last set of stairs leading to Glazer's platform in the Vault of Mirrors.",maps={710,711,712},type="hqt"}),
+o(466960,{crs={109300},description="Once you place the Sentry Statue in the Vault of Mirrors, a 5x5 grid of watcher statues will appear. You need to make each statue descend into the floor, but each statue you click will toggle the state of 4 other statues.\n\nThere are addons and website tools to solve this, for your sanity, use one. You may solve this secret in a group.\n\nFully lights up the 7 O'clock basin.",maps={710,711,712},providers={{"i",208092},{"n",97128}},g={
 i(229054,{b=1})}})}}),
 o(466975,{coords={
 [46]={{59.9,42.6}}},description="On the left side of the hallway after the second stairwell.",g={
 q(84829,{cost={{"i",229007,1}},sourceQuests={84811},type="hqt"}),
 q(84830,{cost={{"i",229054,1}},sourceQuests={84823},type="hqt"}),
-q(84837,{description="1. Hit begin on the console, then hit submit. A randomized number of rats will spawn in the catacombs.\n2. Count the number of Rats in the whole catacombs, use a targeting macro to make sure you don't miss one. There will also be Catacombs Rats, those DO NOT COUNT. Kill both types of rats once you are sure of your count so they cannot interfere with pressure plates.\n3. Depending on the number of rats, you need to drag a certain number of statues to a specific pressure plate and stack them, the beacon color will shift from Blue->Green->Yellow->Orange->Purple as a plate has 1->2->3->4->5 entities stack on it.\n4. Head back to the Enigma Machine and submit, you will be electrocuted if you get it wrong, leave and reset the instance if you do, restarting at lock 1. Otherwise, continue counting the next set of rats and submitting results using info from the next column until you've completed all 7 locks.\n\nPlate 1 is at 71.6, 20.1 at the top of the map in the felcycle room\nPlate 2 is at 68.5, 34.2 right at the entrance to the felcycle room\nPlate 3 is at 73.6, 43.0 behind the locked gate on the right of the map, use your Relic of Crystal Connections to teleport to the humming crystal in the room by targeting it\nPlate 4 is at 68.8, 50.9 in the center of the hallway opposite the felcycle room\nPlate 5 is at 73.6, 65.3 in the flooded dead end hallway right as you enter the catacombs\nPlate 6 is at 60.2, 71.6 on the left side of the hallway before the cat room\nPlate 7 is at 47.8, 78.9 in the corner of the room with the Astral chest\n\n[# Rats | Lock 1| Lock 2| Lock 3|\n[1 Rats | 1 > P1 | 1 > P2 | 1 > P3 |\n[2 Rats | 1 > P2 | 1 > P4 | 1 > P6 |\n[3 Rats | 1 > P3 | 1 > P6 | 2 > P2 |\n[4 Rats | 1 > P4 | 2 > P1 | 2 > P5 |\n[5 Rats | 1 > P5 | 2 > P3 | 3 > P1 |\n[6 Rats | 1 > P6 | 2 > P3 | 3 > P4 |\n[7 Rats | 1 > P7 | 2 > P7 | 1 > P1 |\n[8 Rats | 2 > P1 | 3 > P2 | 1 > P4 |\n[9 Rats | 2 > P2 | 3 > P4 | 1 > P7 |\n[10Rats| 2 > P3 | 3 > P6 | 2 > P3 |\nExample: Counting 2 rats during Lock 2, stack 1 statue on pressure plate 4.\n\nFully lights up the 8 O'clock basin.",providers={a[4]},sourceQuests={84829,84830},type="hqt",g={
+q(84837,{description="1. Hit begin on the console, then hit submit. A randomized number of rats will spawn in the catacombs.\n2. Count the number of Rats in the whole catacombs, use a targeting macro to make sure you don't miss one. There will also be Catacombs Rats, those DO NOT COUNT. Kill both types of rats once you are sure of your count so they cannot interfere with pressure plates.\n3. Depending on the number of rats, you need to drag a certain number of statues to a specific pressure plate and stack them, the beacon color will shift from Blue->Green->Yellow->Orange->Purple as a plate has 1->2->3->4->5 entities stack on it.\n4. Head back to the Enigma Machine and submit, you will be electrocuted if you get it wrong, leave and reset the instance if you do, restarting at lock 1. Otherwise, continue counting the next set of rats and submitting results using info from the next column until you've completed all 7 locks.\n\nPlate 1 is at 71.6, 20.1 at the top of the map in the felcycle room\nPlate 2 is at 68.5, 34.2 right at the entrance to the felcycle room\nPlate 3 is at 73.6, 43.0 behind the locked gate on the right of the map, use your Relic of Crystal Connections to teleport to the humming crystal in the room by targeting it\nPlate 4 is at 68.8, 50.9 in the center of the hallway opposite the felcycle room\nPlate 5 is at 73.6, 65.3 in the flooded dead end hallway right as you enter the catacombs\nPlate 6 is at 60.2, 71.6 on the left side of the hallway before the cat room\nPlate 7 is at 47.8, 78.9 in the corner of the room with the Astral chest\n\n[# Rats | Lock 1| Lock 2| Lock 3|\n[1 Rats | 1 > P1 | 1 > P2 | 1 > P3 |\n[2 Rats | 1 > P2 | 1 > P4 | 1 > P6 |\n[3 Rats | 1 > P3 | 1 > P6 | 2 > P2 |\n[4 Rats | 1 > P4 | 2 > P1 | 2 > P5 |\n[5 Rats | 1 > P5 | 2 > P3 | 3 > P1 |\n[6 Rats | 1 > P6 | 2 > P3 | 3 > P4 |\n[7 Rats | 1 > P7 | 2 > P7 | 1 > P1 |\n[8 Rats | 2 > P1 | 3 > P2 | 1 > P4 |\n[9 Rats | 2 > P2 | 3 > P4 | 1 > P7 |\n[10Rats| 2 > P3 | 3 > P6 | 2 > P3 |\nExample: Counting 2 rats during Lock 2, stack 1 statue on pressure plate 4.\n\nFully lights up the 8 O'clock basin.",providers={{"i",228996}},sourceQuests={84829,84830},type="hqt",g={
 n(230653,{coords={
 [46]={{70.6,34.5}}},description="Right of the entrance of the felcycle room."}),
 n(230654,{coords={
@@ -489,7 +496,7 @@ n(230657,{coords={
 n(230596,{description="This is a |cff4caf50VALID|r rat, it counts!"}),
 n(230599,{description="This is an |cffff0000INVALID|r rat, it DOESN'T count!"})}})}}),
 o(467191,{coords={
-[2255]={a[43],{56.1,17.9},a[44]}},description="Return to Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall.\n\nUse your Starry-Eyed goggles to reveal a translucent platform, use your Relic of Crystal Connections on the humming crystal to get up to it.\n\nCode to open at the adjacent decryption console: 84847078.\n\nFully lights the 9 O'clock Basin.",providers={a[3],a[4]},questID=84854,sourceQuests={84837},g={
+[2255]={{55.1,19},{56.1,17.9},{56.4,17.5}}},description="Return to Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall.\n\nUse your Starry-Eyed goggles to reveal a translucent platform, use your Relic of Crystal Connections on the humming crystal to get up to it.\n\nCode to open at the adjacent decryption console: 84847078.\n\nFully lights the 9 O'clock Basin.",providers={{"i",228966},{"i",228996}},questID=84854,sourceQuests={84837},g={
 mnt(428013,{b=1,itemID=229348,lvl=10}),
 ach(40967)}}),
 n(230070,{coords={
@@ -533,8 +540,8 @@ crit(60752,{achID=18646,id=2})}}),
 ach(18645,{
 s(189591,208149,{f=2}),
 crit(60754,{achID=18645,providers={{"i",206696}}}),
-crit(60755,{achID=18645,providers={a[2]}}),
-crit(60756,{achID=18645,providers={a[1]}})}),
+crit(60755,{achID=18645,providers={{"i",208092}}}),
+crit(60756,{achID=18645,providers={{"i",207730}}})}),
 ach(18646,{
 mnt(418078,{b=1,itemID=208152}),
 title(519)}),
@@ -554,13 +561,13 @@ o(405531,{coords={
 [539]={{35.3,49}}},questID=77292,g={
 i(208142,{f=55,spellID=420215})}}),
 o(405529,{coords={
-[109]={{26.2,68.6}}},description="You need three people to each channel their 'Torch of Pyrreth' on each small crystal.",providers={a[2]},questID=77290,g={
+[109]={{26.2,68.6}}},description="You need three people to each channel their 'Torch of Pyrreth' on each small crystal.",providers={{"i",208092}},questID=77290,g={
 i(208142,{f=55,spellID=420215})}}),
 o(405532,{coords={
 [376]={{56.8,21.4}}},questID=77293,g={
 i(208142,{f=55,spellID=420215})}}),
 o(405535,{coords={
-[2024]={{25.2,71.5}}},description="Use your 'Torch of Pyrreth' near the snowmen.",providers={a[2]},questID=77296,g={
+[2024]={{25.2,71.5}}},description="Use your 'Torch of Pyrreth' near the snowmen.",providers={{"i",208092}},questID=77296,g={
 i(208142,{f=55,spellID=420215})}}),
 o(405533,{coords={
 [115]={{63.9,72.6}}},questID=77294,g={
@@ -569,7 +576,7 @@ o(405536,{coords={
 [10]={{46,50.7}}},questID=77297,g={
 i(208142,{f=55,spellID=420215})}}),
 o(405537,{coords={
-[17]={{64.7,55.4}}},description="Use your 'Torch of Pyrreth' on the ritual crystal.",providers={a[2]},questID=77298,g={
+[17]={{64.7,55.4}}},description="Use your 'Torch of Pyrreth' on the ritual crystal.",providers={{"i",208092}},questID=77298,g={
 i(208142,{f=55,spellID=420215})}}),
 o(405538,{coords={
 [107]={{57.8,26.3}}},description="On the island floating in the air.",questID=77299,g={
@@ -597,34 +604,34 @@ o(405534,{coords={
 i(208142,{f=55,spellID=420215})}})}),
 h(-45,{
 q(77202,{coords={
-[2112]={{55,37}}},DisablePartySync=1,isBreadcrumb=1,nextQuests=a[58],qgs={199261},repeatable=1}),
+[2112]={{55,37}}},DisablePartySync=1,isBreadcrumb=1,nextQuests={77203},qgs={199261},repeatable=1}),
 q(77203,{coords={
-[2112]={a[36],{58.88,54.09}}},description="Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",qgs=a[24],sourceQuests={77202},g={
+[2112]={{47.4,48.1},{58.88,54.09}}},description="Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",qgs={206864},sourceQuests={77202},g={
 i(208054,{
 i(208056),
 i(208055)}),
 crit(60849,{achID=18646,id=1})}}),
 q(76735,{coords={
-[114]={a[30]},
-[115]={a[39]},
+[114]={{33.63,58.45}},
+[115]={{48,74.8}},
 [2024]={{12.4,49.2}},
-[2112]={a[36]}},description="Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",lvl=10,qgs=a[24],repeatable=1,sourceQuests=a[58],g={
+[2112]={{47.4,48.1}}},description="Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",lvl=10,qgs={206864},repeatable=1,sourceQuests={77203},g={
 i(207105),
 i(207580,{coords={
 [2024]={{12.4,49.3}}},cost={{"i",207105,1}},providers={{"n",186448}}}),
 i(208190,{coords={
-[115]={a[39]}},cost={{"i",207580,1}},providers={{"n",26194}}}),
+[115]={{48,74.8}}},cost={{"i",207580,1}},providers={{"n",26194}}}),
 n(208182,{coords={
-[114]={a[30]}},description="Spawns after using spear at statue",g={
+[114]={{33.63,58.45}}},description="Spawns after using spear at statue",g={
 i(207594,{b=1,f=55})}}),
 crit(60752,{achID=18646,id=2})}}),
 q(77165,{coords={
-[2112]={a[38]}},lvl=10,qgs=a[25],repeatable=1,g={
+[2112]={{47.9,46.8}}},lvl=10,qgs={207696},repeatable=1,g={
 i(207802,{b=1}),
 i(208416,{coords={
-[2112]={a[35]}},providers={a[5]}}),
+[2112]={{46.5,46.2}}},providers={{"n",185556}}}),
 i(207956,{coords={
-[2112]={a[35]}},cost={{"i",205693,5},{"i",198441,5},{"i",201419,5}},f=55,lvl=65,providers={a[5]},spellID=369166}),
+[2112]={{46.5,46.2}}},cost={{"i",205693,5},{"i",198441,5},{"i",201419,5}},f=55,lvl=65,providers={{"n",185556}},spellID=369166}),
 i(207814,{coords={
 [2112]={{42.2,48.6}}},cost={{"i",207956,5}},providers={{"n",185548}},spellID=417775}),
 i(207812,{coords={
@@ -636,34 +643,34 @@ i(207816,{coords={
 [2112]={{38.9,61.8}}},providers={{"n",198586}},sourceQuests={77230}}),
 i(207827,{cost={{"i",207816,1},{"i",207813,1},{"i",207814,1}}})}}),
 q(77237,{coords={
-[2112]={{26.6,53.9}}},crs=a[26],DisablePartySync=1,lc={1,"questID",78202},lvl=10,providers={{"i",207827}},g={
+[2112]={{26.6,53.9}}},crs={207697},DisablePartySync=1,lc={1,"questID",78202},lvl=10,providers={{"i",207827}},g={
 toy(206696,{b=1})}}),
 q(76504,{coords={
-[2112]={{26.7,53.9},{64.6,53.6}}},cost={{"i",206696,1}},description="Use Toy to accept quest. Follow arrows.",DisablePartySync=1,lc={1,"questID",77513},qgs=a[26],sourceQuests={77237},g={
+[2112]={{26.7,53.9},{64.6,53.6}}},cost={{"i",206696,1}},description="Use Toy to accept quest. Follow arrows.",DisablePartySync=1,lc={1,"questID",77513},qgs={207697},sourceQuests={77237},g={
 i(206944),
 crit(60850,{achID=18646,id=3,questID=77513})}}),
 q(77276,{coords={
-[2112]={a[38]}},isDaily=1,lvl=10,qgs=a[25],repeatable=1,sourceQuests=a[57],g={
+[2112]={{47.9,46.8}}},isDaily=1,lvl=10,qgs={207696},repeatable=1,sourceQuests={76504},g={
 i(208129),
 i(208128),
 o(405489,{coords={
 [2112]={{48.8,47.8}}},g={
 i(208130)}}),
 q(77397,{coords={
-[2112]={a[48]}},cost={{"i",208130,1}},DisablePartySync=1,lc=a[11]})}}),
+[2112]={{62.8,72.8}}},cost={{"i",208130,1}},DisablePartySync=1,lc={1,"questID",77521}})}}),
 q(77277,{coords={
-[2112]={a[48]}},DisablePartySync=1,lc=a[11],lvl=10,qgs={208620},sourceQuests={77397},g={
+[2112]={{62.8,72.8}}},DisablePartySync=1,lc={1,"questID",77521},lvl=10,qgs={208620},sourceQuests={77397},g={
 i(208130),
 crit(60851,{achID=18646,id=4,questID=77521})}}),
 q(77281,{coords={
-[2112]={a[37]}},lvl=10,qgs=a[22],repeatable=1,sourceQuests=a[57],g={
+[2112]={{47.5,46.2}}},lvl=10,qgs={185562},repeatable=1,sourceQuests={76504},g={
 i(208131),
 o(405510,{coords={
-[2022]={{56.6,20.3}}},DisablePartySync=1,lc=a[12],questID=77401}),
+[2022]={{56.6,20.3}}},DisablePartySync=1,lc={1,"questID",77522},questID=77401}),
 o(405511,{coords={
-[2022]={{57.7,23.8}}},DisablePartySync=1,lc=a[12],questID=77402}),
+[2022]={{57.7,23.8}}},DisablePartySync=1,lc={1,"questID",77522},questID=77402}),
 o(405512,{coords={
-[2022]={{57,25.5}}},DisablePartySync=1,lc=a[12],questID=77403}),
+[2022]={{57,25.5}}},DisablePartySync=1,lc={1,"questID",77522},questID=77403}),
 o(405513,{coords={
 [2022]={{54.5,20.3}}},sourceQuests={77401,77402,77403},g={
 i(208135,{spellID=420213})}})}}),
@@ -671,39 +678,39 @@ q(77282,{coords={
 [2022]={{54.6,20.4}}},DisablePartySync=1,lc={1,"questID",78201},lvl=10,providers={{"i",208135}},g={
 toy(208092,{b=1})}}),
 q(77263,{coords={
-[2112]={a[36]}},description="Use Torch of Pyrreth @ 58.5, 23.6 Valdrakken.",DisablePartySync=1,lc=a[12],qgs=a[24],sourceQuests={77282},g={
+[2112]={{47.4,48.1}}},description="Use Torch of Pyrreth @ 58.5, 23.6 Valdrakken.",DisablePartySync=1,lc={1,"questID",77522},qgs={206864},sourceQuests={77282},g={
 o(405515,{coords={
-[2112]={{58.5,23.6}}},providers={a[2]},g={
+[2112]={{58.5,23.6}}},providers={{"i",208092}},g={
 i(208107)}}),
 crit(60852,{achID=18646,id=5,questID=77522})}}),
 q(77284,{coords={
-[2112]={a[38]}},lvl=10,qgs=a[25],repeatable=1,sourceQuests={77263},g={
+[2112]={{47.9,46.8}}},lvl=10,qgs={207696},repeatable=1,sourceQuests={77263},g={
 i(208137)}}),
 q(77286,{coords={
 [2024]={{78.9,32.4}}},DisablePartySync=1,lc={1,"questID",77523},lvl=10,providers={{"o",405523}},qis={208092},g={
 i(208143),
 crit(60853,{achID=18646,id=6,questID=77523})}}),
 q(77303,{coords={
-[2112]={{47.2,46.6}}},lvl=10,qgs=a[22],repeatable=1,g={
+[2112]={{47.2,46.6}}},lvl=10,qgs={185562},repeatable=1,g={
 i(208144),
 o(9000001,{coords={
-[2023]={{32.3,67.9}}},DisablePartySync=1,lc=a[13],providers={a[2]},questID=77405}),
+[2023]={{32.3,67.9}}},DisablePartySync=1,lc={1,"questID",77524},providers={{"i",208092}},questID=77405}),
 o(9000002,{coords={
-[2023]={{31,70.8}}},DisablePartySync=1,lc=a[13],providers={a[2]},questID=77406}),
+[2023]={{31,70.8}}},DisablePartySync=1,lc={1,"questID",77524},providers={{"i",208092}},questID=77406}),
 o(9000003,{coords={
-[2023]={{35.2,65.7}}},DisablePartySync=1,lc=a[13],providers={a[2]},questID=77407}),
+[2023]={{35.2,65.7}}},DisablePartySync=1,lc={1,"questID",77524},providers={{"i",208092}},questID=77407}),
 o(9000004,{coords={
-[2023]={a[32]}},DisablePartySync=1,lc=a[13],providers={a[2]},questID=77404}),
+[2023]={{39.5,58.9}}},DisablePartySync=1,lc={1,"questID",77524},providers={{"i",208092}},questID=77404}),
 o(405546,{coords={
-[2023]={a[32]}},sourceQuests={77404,77405,77406,77407},g={
+[2023]={{39.5,58.9}}},sourceQuests={77404,77405,77406,77407},g={
 i(208145,{spellID=420213})}})}}),
-q(77304,{DisablePartySync=1,lc=a[13],lvl=10,providers={{"i",208145}},g={
+q(77304,{DisablePartySync=1,lc={1,"questID",77524},lvl=10,providers={{"i",208145}},g={
 toy(207730,{b=1})}}),
 q(76456,{coords={
-[2112]={a[36]}},description="Use the Idol. It points towards objectives.",DisablePartySync=1,lc=a[13],qgs=a[24],sourceQuests={77304},g={
+[2112]={{47.4,48.1}}},description="Use the Idol. It points towards objectives.",DisablePartySync=1,lc={1,"questID",77524},qgs={206864},sourceQuests={77304},g={
 crit(60854,{achID=18646,id=7,questID=77524})}}),
 q(76509,{coords={
-[2112]={a[36]}},qgs=a[24],repeatable=1,sourceQuests={76456},g={
+[2112]={{47.4,48.1}}},qgs={206864},repeatable=1,sourceQuests={76456},g={
 i(206948),
 o(404319,{coords={
 [2025]={{57.3,82.1},{58.5,78.4},{58.8,78.2},{59.3,78.8}}},description="Many locations, each location respawns after ~60 seconds.",g={
@@ -712,167 +719,167 @@ i(208146,{cost={{"i",208191,3}}})}}),
 q(77305,{DisablePartySync=1,lc={1,"questID",76508},providers={{"i",208146}},g={
 crit(60855,{achID=18646,id=8,questID=76508})}}),
 q(77653,{coords={
-[2112]={a[38]}},isDaily=1,lvl=10,qgs=a[25],repeatable=1,g={
+[2112]={{47.9,46.8}}},isDaily=1,lvl=10,qgs={207696},repeatable=1,g={
 i(208486),
 o(408226,{coords={
 [2023]={{62.9,57.3}}},g={
 i(208827,{spellID=420213})}})}}),
 o(408224,{coords={
-[2023]={{63.4,57}}},providers={a[2]},questID=77972}),
+[2023]={{63.4,57}}},providers={{"i",208092}},questID=77972}),
 q(77822,{DisablePartySync=1,lc={1,"questID",77576},lvl=10,providers={{"i",208827}},g={
 crit(60856,{achID=18646,id=9,questID=77576})}}),
 q(77829,{coords={
-[2112]={a[38]}},isDaily=1,lvl=10,qgs=a[25],repeatable=1,sourceQuests={77822},g={
+[2112]={{47.9,46.8}}},isDaily=1,lvl=10,qgs={207696},repeatable=1,sourceQuests={77822},g={
 i(208829),
 o(407691,{coords={
-[2022]={{47.6,46.2},{47.9,46.3},{48.1,45.4},{48.3,46.1}}},description="Very tiny rocks. Many locations. Use Idol of Ohn'ahra to find them.",providers={a[1]},g={
+[2022]={{47.6,46.2},{47.9,46.3},{48.1,45.4},{48.3,46.1}}},description="Very tiny rocks. Many locations. Use Idol of Ohn'ahra to find them.",providers={{"i",207730}},g={
 i(208835)}}),
 o(407692,{coords={
 [2022]={{21.3,76.7},{22.7,77.9},{23.1,78.6},{23.1,78.9},{23.8,78.8}}},g={
 i(208836)}})}}),
 q(77831,{coords={
-[2022]={a[27]}},cost={{"i",208092,1},{"i",208836,8},{"i",208835,50}},DisablePartySync=1,lc={1,"questID",77577},lvl=10,qgs={210837},g={
+[2022]={{24.5,60.7}}},cost={{"i",208092,1},{"i",208836,8},{"i",208835,50}},DisablePartySync=1,lc={1,"questID",77577},lvl=10,qgs={210837},g={
 o(408754,{coords={
-[2022]={a[27]}},g={
+[2022]={{24.5,60.7}}},g={
 i(208830)}}),
 en(208831,{b=1,questID=77830,spellID=421255,tmogSetID=3120,g={
-s(190149,208832,{f=28,lvl=a[52]}),
-s(190173,209038,{f=29,lvl=a[52]}),
-s(190174,209039,{f=23,lvl=a[52]}),
-s(190175,209040,{f=1,lvl=a[52]})}}),
+s(190149,208832,{f=28,lvl={70}}),
+s(190173,209038,{f=29,lvl={70}}),
+s(190174,209039,{f=23,lvl={70}}),
+s(190175,209040,{f=1,lvl={70}})}}),
 crit(60857,{achID=18646,id=10,questID=77577})}}),
 q(77865,{coords={
-[2112]={a[36]}},lvl=10,qgs=a[24],repeatable=1,sourceQuests={77277},g={
+[2112]={{47.4,48.1}}},lvl=10,qgs={206864},repeatable=1,sourceQuests={77277},g={
 i(208852),
 i(209061,{coords={
 [2023]={{63.4,41.3}}},cost={{"i",208852,1}},providers={{"n",195543}}}),
 i(208857,{coords={
 [2023]={{81.3,59.3}}},cost={{"i",209061,1}},providers={{"n",191391}}}),
 o(408912,{coords={
-[2023]={{83.8,48.4}}},DisablePartySync=1,lc=a[14],questID=78025}),
+[2023]={{83.8,48.4}}},DisablePartySync=1,lc={1,"questID",77578},questID=78025}),
 o(408914,{coords={
-[2023]={{78.6,83.3}}},DisablePartySync=1,lc=a[14],questID=78026}),
+[2023]={{78.6,83.3}}},DisablePartySync=1,lc={1,"questID",77578},questID=78026}),
 o(408915,{coords={
-[2023]={{60.7,63.4}}},DisablePartySync=1,lc=a[14],questID=78027}),
+[2023]={{60.7,63.4}}},DisablePartySync=1,lc={1,"questID",77578},questID=78027}),
 o(408916,{coords={
-[2023]={{31.6,71.6}}},DisablePartySync=1,lc=a[14],questID=78028}),
+[2023]={{31.6,71.6}}},DisablePartySync=1,lc={1,"questID",77578},questID=78028}),
 o(408918,{coords={
-[2023]={{43.3,48}}},DisablePartySync=1,lc=a[14],questID=78029}),
+[2023]={{43.3,48}}},DisablePartySync=1,lc={1,"questID",77578},questID=78029}),
 o(408939,{coords={
 [2023]={{42.6,50.9}}},cost={{"i",209061,1}},description="In cave.",questID=77578,g={
 crit(60858,{achID=18646,id=11})}})}}),
 q(77897,{coords={
-[2112]={a[38]}},lvl=10,qgs=a[25],repeatable=1,g={
+[2112]={{47.9,46.8}}},lvl=10,qgs={207696},repeatable=1,g={
 i(208888),
 q(78050,{an="o:408976",coords={
-[350]={{32.1,49.3}}},DisablePartySync=1,lc=a[15],providers={a[7]},type="hqt"}),
+[350]={{32.1,49.3}}},DisablePartySync=1,lc={1,"questID",77579},providers={{"o",408976}},type="hqt"}),
 q(78051,{an="o:408976",coords={
-[350]={{36.6,37.1}}},DisablePartySync=1,lc=a[15],providers={a[7]},type="hqt"}),
+[350]={{36.6,37.1}}},DisablePartySync=1,lc={1,"questID",77579},providers={{"o",408976}},type="hqt"}),
 q(78052,{an="o:408976",coords={
-[350]={{47.2,64.4}}},DisablePartySync=1,lc=a[15],providers={a[7]},type="hqt"}),
+[350]={{47.2,64.4}}},DisablePartySync=1,lc={1,"questID",77579},providers={{"o",408976}},type="hqt"}),
 o(408980,{coords={
 [350]={{33.1,50.9}}},description="There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",g={
 i(208889,{spellID=420213})}})}}),
-q(77908,{description="Quest takes place in Old Karazhan Raid",DisablePartySync=1,lc=a[15],lvl=10,providers={{"i",208889}},g={
+q(77908,{description="Quest takes place in Old Karazhan Raid",DisablePartySync=1,lc={1,"questID",77579},lvl=10,providers={{"i",208889}},g={
 crit(60859,{achID=18646,id=12,questID=77579})}}),
 q(77928,{coords={
-[2112]={a[38]}},isDaily=1,lvl=10,qgs=a[25],repeatable=1,g={
+[2112]={{47.9,46.8}}},isDaily=1,lvl=10,qgs={207696},repeatable=1,g={
 i(208929),
 q(78053,{an="o:409012",coords={
-[2112]={{44.1,60.3}}},DisablePartySync=1,lc=a[16],providers={{"o",409012}},type="hqt"}),
+[2112]={{44.1,60.3}}},DisablePartySync=1,lc={1,"questID",77580},providers={{"o",409012}},type="hqt"}),
 q(78054,{an="o:409016",coords={
-[2112]={{73.9,57.4}}},DisablePartySync=1,lc=a[16],providers={{"o",409016}},type="hqt"}),
+[2112]={{73.9,57.4}}},DisablePartySync=1,lc={1,"questID",77580},providers={{"o",409016}},type="hqt"}),
 q(78055,{an="o:409017",coords={
-[2112]={{53,28.4}}},DisablePartySync=1,lc=a[16],providers={{"o",409017}},type="hqt"}),
+[2112]={{53,28.4}}},DisablePartySync=1,lc={1,"questID",77580},providers={{"o",409017}},type="hqt"}),
 q(78056,{an="o:409018",coords={
-[2112]={{37.6,37.1}}},DisablePartySync=1,lc=a[16],providers={{"o",409018}},type="hqt"}),
+[2112]={{37.6,37.1}}},DisablePartySync=1,lc={1,"questID",77580},providers={{"o",409018}},type="hqt"}),
 q(78057,{an="o:409019",coords={
-[2112]={{31.6,70.2}}},DisablePartySync=1,lc=a[16],providers={{"o",409019}},type="hqt"}),
+[2112]={{31.6,70.2}}},DisablePartySync=1,lc={1,"questID",77580},providers={{"o",409019}},type="hqt"}),
 q(78058,{an="o:409020",coords={
-[2112]={{46,41.4}}},DisablePartySync=1,lc=a[16],providers={{"o",409020}},type="hqt"}),
+[2112]={{46,41.4}}},DisablePartySync=1,lc={1,"questID",77580},providers={{"o",409020}},type="hqt"}),
 i(208936)}}),
 q(77934,{coords={
-[2112]={{44.1,60.2}}},description="Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",DisablePartySync=1,lc=a[16],lvl=10,providers={{"i",208936}},sourceQuests={78053,78054,78055,78056,78057,78058},g={
+[2112]={{44.1,60.2}}},description="Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",DisablePartySync=1,lc={1,"questID",77580},lvl=10,providers={{"i",208936}},sourceQuests={78053,78054,78055,78056,78057,78058},g={
 crit(60861,{achID=18646,id=14,questID=77580})}}),
 q(77953,{coords={
-[2112]={a[37]}},lvl=10,qgs=a[22],repeatable=1,sourceQuests={77934},g={
+[2112]={{47.5,46.2}}},lvl=10,qgs={185562},repeatable=1,sourceQuests={77934},g={
 i(208942),
 o(409320,{coords={
 [2025]={{49.5,79.7}}},g={
 q(78108,{an="i:208092",coords={
-[2025]={{50.1,80.9}}},DisablePartySync=1,lc=a[10],providers={a[2]},type="hqt"}),
+[2025]={{50.1,80.9}}},DisablePartySync=1,lc={1,"questID",77520},providers={{"i",208092}},type="hqt"}),
 i(209795,{spellID=423408})}}),
 o(409329,{coords={
 [2025]={{45.9,79.7}}},g={
 q(78109,{an="i:208092",coords={
-[2025]={{46.6,77.6}}},DisablePartySync=1,lc=a[10],providers={a[2]},type="hqt"}),
+[2025]={{46.6,77.6}}},DisablePartySync=1,lc={1,"questID",77520},providers={{"i",208092}},type="hqt"}),
 i(209797,{spellID=423408})}}),
 o(409333,{coords={
 [2025]={{50.1,78}}},g={
 q(78111,{an="i:208092",coords={
-[2025]={{48.6,76.3}}},DisablePartySync=1,lc=a[10],providers={a[2]},type="hqt"}),
+[2025]={{48.6,76.3}}},DisablePartySync=1,lc={1,"questID",77520},providers={{"i",208092}},type="hqt"}),
 i(209799,{spellID=423408})}}),
 i(208944,{cost={{"i",209799,1},{"i",209797,1},{"i",209795,1}}})}}),
 q(77954,{coords={
-[2112]={{47.4,46.7}}},DisablePartySync=1,lc=a[10],lvl=10,providers={{"i",208944}},g={
+[2112]={{47.4,46.7}}},DisablePartySync=1,lc={1,"questID",77520},lvl=10,providers={{"i",208944}},g={
 crit(60860,{achID=18646,id=13,questID=77520})}}),
 q(77957,{coords={
-[2112]={a[36]}},lvl=10,qgs=a[24],repeatable=1,sourceQuests={77954},g={
+[2112]={{47.4,48.1}}},lvl=10,qgs={206864},repeatable=1,sourceQuests={77954},g={
 i(208958),
-q(77974,{description="Unlock the first lock by using your torch at all 8 Tyrhold staute.",DisablePartySync=1,lc=a[9],type="hqt",g={
+q(77974,{description="Unlock the first lock by using your torch at all 8 Tyrhold staute.",DisablePartySync=1,lc={1,"questID",77308},type="hqt",g={
 q(77964,{an="i:208092",coords={
-[2025]={{59.9,61}}},DisablePartySync=1,lc=a[9],providers={a[2]},type="hqt"}),
+[2025]={{59.9,61}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208092}},type="hqt"}),
 q(77960,{an="i:208092",coords={
-[2025]={{57.1,64.4}}},DisablePartySync=1,lc=a[9],providers={a[2]},type="hqt"}),
+[2025]={{57.1,64.4}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208092}},type="hqt"}),
 q(77961,{an="i:208092",coords={
-[2025]={{57.1,62.9}}},DisablePartySync=1,lc=a[9],providers={a[2]},type="hqt"}),
+[2025]={{57.1,62.9}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208092}},type="hqt"}),
 q(77962,{an="i:208092",coords={
-[2025]={{57.9,61.8}}},DisablePartySync=1,lc=a[9],providers={a[2]},type="hqt"}),
+[2025]={{57.9,61.8}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208092}},type="hqt"}),
 q(77963,{an="i:208092",coords={
-[2025]={{57.9,60.5}}},DisablePartySync=1,lc=a[9],providers={a[2]},type="hqt"}),
+[2025]={{57.9,60.5}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208092}},type="hqt"}),
 q(77965,{an="i:208092",coords={
-[2025]={{58,56.9}}},DisablePartySync=1,lc=a[9],providers={a[2]},type="hqt"}),
+[2025]={{58,56.9}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208092}},type="hqt"}),
 q(77966,{an="i:208092",coords={
-[2025]={{57.9,56}}},DisablePartySync=1,lc=a[9],providers={a[2]},type="hqt"}),
+[2025]={{57.9,56}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208092}},type="hqt"}),
 q(77967,{an="i:208092",coords={
-[2025]={{59.8,56.4}}},DisablePartySync=1,lc=a[9],providers={a[2]},type="hqt"})}}),
+[2025]={{59.8,56.4}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208092}},type="hqt"})}}),
 q(77975,{an="s:423792",coords={
-[2025]={{61.1,58.7}}},DisablePartySync=1,lc=a[9],type="hqt"}),
-q(77973,{description="Use your idol at each Ring/Room location to find Broken Urn's",DisablePartySync=1,lc=a[9],type="hqt",g={
+[2025]={{61.1,58.7}}},DisablePartySync=1,lc={1,"questID",77308},type="hqt"}),
+q(77973,{description="Use your idol at each Ring/Room location to find Broken Urn's",DisablePartySync=1,lc={1,"questID",77308},type="hqt",g={
 o(409212,{coords={
-[2025]={{59.8,62.3}}},description="Room on Ring #1",providers={a[1]},g={
+[2025]={{59.8,62.3}}},description="Room on Ring #1",providers={{"i",207730}},g={
 i(208971,{spellID=421892})}}),
 o(409211,{coords={
-[2025]={{59.9,54.7}}},description="Room on Ring #1",providers={a[1]},g={
+[2025]={{59.9,54.7}}},description="Room on Ring #1",providers={{"i",207730}},g={
 i(208970,{spellID=421892})}}),
 o(409200,{coords={
-[2025]={{59.7,54.9}}},description="Room on Ring #3",providers={a[1]},g={
+[2025]={{59.7,54.9}}},description="Room on Ring #3",providers={{"i",207730}},g={
 i(208960)}}),
 o(409214,{coords={
-[2025]={{59.7,62.6}}},description="Room on Ring #3",providers={a[1]},g={
+[2025]={{59.7,62.6}}},description="Room on Ring #3",providers={{"i",207730}},g={
 i(208973)}}),
 o(409209,{coords={
-[2025]={{62,61.9}}},description="Room on Ring #5",providers={a[1]},g={
+[2025]={{62,61.9}}},description="Room on Ring #5",providers={{"i",207730}},g={
 i(208967,{spellID=421891})}}),
 o(409208,{coords={
-[2025]={{61.6,55.1}}},description="Room on Ring #5",providers={a[1]},g={
+[2025]={{61.6,55.1}}},description="Room on Ring #5",providers={{"i",207730}},g={
 i(208966,{spellID=421891})}}),
 i(208969,{cost={{"i",208970,1},{"i",208971,1}}}),
 i(208965,{cost={{"i",208966,1},{"i",208967,1}}}),
 q(77968,{an="o:409166",coords={
-[2025]={{59.3,56.8}}},DisablePartySync=1,lc=a[9],providers={{"i",208960},a[8]},type="hqt"}),
+[2025]={{59.3,56.8}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208960},{"o",409166}},type="hqt"}),
 q(77970,{an="o:409166",coords={
-[2025]={{59.5,60.6}}},DisablePartySync=1,lc=a[9],providers={{"i",208969},a[8]},type="hqt"}),
+[2025]={{59.5,60.6}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208969},{"o",409166}},type="hqt"}),
 q(77971,{an="o:409166",coords={
-[2025]={{61,62.4}}},DisablePartySync=1,lc=a[9],providers={{"i",208973},a[8]},type="hqt"}),
+[2025]={{61,62.4}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208973},{"o",409166}},type="hqt"}),
 q(77969,{an="o:409166",coords={
-[2025]={{61,55}}},DisablePartySync=1,lc=a[9],providers={{"i",208965},a[8]},type="hqt"})}})}}),
+[2025]={{61,55}}},DisablePartySync=1,lc={1,"questID",77308},providers={{"i",208965},{"o",409166}},type="hqt"})}})}}),
 q(77977,{coords={
-[2025]={a[46]}},DisablePartySync=1,lc=a[9],lvl=10,providers={{"o",411936}},sourceQuests={77973,77974,77975},g={
+[2025]={{60.2,58.7}}},DisablePartySync=1,lc={1,"questID",77308},lvl=10,providers={{"o",411936}},sourceQuests={77973,77974,77975},g={
 n(210674,{
 i(209555)}),
 o(409120,{coords={
-[2025]={a[46]}},g={
+[2025]={{60.2,58.7}}},g={
 i(208980)}}),
 crit(60862,{achID=18646,id=15,questID=77308})}})}),
 h(-506,{
@@ -880,15 +887,15 @@ ah(424082,{type="s",g={
 o(408060,{coords={
 [2112]={{32.1,61.9}}}}),
 o(408076,{coords={
-[2112]={{81.6,47.6}}},providers={a[2]}}),
+[2112]={{81.6,47.6}}},providers={{"i",208092}}}),
 o(408079,{coords={
-[50]={{57.6,21.3}}},providers={a[2]}}),
-o(408080,{maps=a[31],providers={a[2]}}),
-o(408081,{maps=a[31],providers={a[2]}}),
-o(408082,{maps=a[31],providers={a[2]}}),
-o(408083,{maps=a[31],providers={a[2]}}),
+[50]={{57.6,21.3}}},providers={{"i",208092}}}),
+o(408080,{maps={337},providers={{"i",208092}}}),
+o(408081,{maps={337},providers={{"i",208092}}}),
+o(408082,{maps={337},providers={{"i",208092}}}),
+o(408083,{maps={337},providers={{"i",208092}}}),
 n(210398,{coords={
-[210]={{58.9,78.1}}},description="Requries 3 people with Torch of Pyrreth to summon.",providers={a[2]},questID=78098,g={
+[210]={{58.9,78.1}}},description="Requries 3 people with Torch of Pyrreth to summon.",providers={{"i",208092}},questID=78098,g={
 i(208984,{b=1,spellID=424084})}}),
 o(409914,{coords={
 [77]={{50.2,25.7}}},description="Takes 4 people. Someone to control the Water Elemental, 3 people to Envelope",questID=78099,g={
@@ -973,12 +980,12 @@ o(9999920,{description="|cFFFFFFFFSTEP 13a:|r Backtrack down the ramp to the now
 o(272487,{coords={
 [83]={{50.9,2.3}}},description="|cFFFFFFFFSTEP 14:|r DO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water. Walk across the water and loot the egg.\n\nCongrats on your new pet!!! \n\n!Don't forget to turn off debug mode now that you are done.",isWeekly=1,modelScale=2,questID=48022,g={
 p(382,{b=1,itemID=142223,npcID=61087,spellID=231215})}})}}),
-ah(186639,{awp=110200,description="You can use one Cartel Deal per week on your account, across three weeks, equip the granted title then collect each dead drop within Manaforge Omega (Any difficulty) then return to the quartermaster for a new quest awarding your mount.",maps={2460,2461,2462,2463,2464,2465,2466,2467,2468,2469,2470,2471},minReputation=a[28],type="i",g={
-o(555609,{cost={{"i",249702,1}},description="To the right of the first miniboss after Plexus.",maps={2460},minReputation=a[28],questID=92080,g={
+ah(186639,{awp=110200,description="You can use one Cartel Deal per week on your account, across three weeks, equip the granted title then collect each dead drop within Manaforge Omega (Any difficulty) then return to the quartermaster for a new quest awarding your mount.",maps={2460,2461,2462,2463,2464,2465,2466,2467,2468,2469,2470,2471},minReputation={2736,8},type="i",g={
+o(555609,{cost={{"i",249702,1}},description="To the right of the first miniboss after Plexus.",maps={2460},minReputation={2736,8},questID=92080,g={
 i(249711,{b=1})}}),
-o(555611,{cost={{"i",249704,1}},description="On a rock past Fractillus near the edge of the map.",maps={2465},minReputation=a[28],questID=92081,g={
+o(555611,{cost={{"i",249704,1}},description="On a rock past Fractillus near the edge of the map.",maps={2465},minReputation={2736,8},questID=92081,g={
 i(249712,{b=1})}}),
-o(555610,{cost={{"i",249700,1}},description="On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.\n\nThis cannot be looted in a cleared instance!",maps={2463},minReputation=a[28],questID=92079,g={
+o(555610,{cost={{"i",249700,1}},description="On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.\n\nThis cannot be looted in a cleared instance!",maps={2463},minReputation={2736,8},questID=92079,g={
 i(249710,{b=1})}}),
 q(92082,{coords={
 [2371]={{42,22.1}}},lvl=70,qgs={245344},sourceQuests={92079,92080,92081},g={
@@ -986,11 +993,11 @@ toy(249713,{b=1}),
 mnt(353264,{b=1,itemID=186639})}})}}),
 ah(254763,{awp=70300,description="This secret is a prerequisite for Baa'l. It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a rare elite in Antoran Wastes.",displayID=76829,modelScale=1.1,type="s",g={
 q(50098,{description="1. Summon Uuna and wait for her to say one of the following lines:\n'|cffffffffMama? Mama! Why is it so dark? It's scary here...|r'\n'|cffffffffCan anybody hear me?|r'\n'|cffffffffC-c-cold...|r'\n",icon=134506,g={
-q(50099,{description="2. |cffffffff/whistle|r at Uuna.\n",sourceQuests=a[40]}),
-q(50100,{description="3. When she asks you questions, |cffffffff/roar|r at her.\n",sourceQuests=a[40]}),
-q(50101,{description="4. Resummon Uuna and |cffffffff/cry|r at her. She will tell you that she wishes she could see you better, but it's too dark where she is.",sourceQuests=a[40]})}}),
+q(50099,{description="2. |cffffffff/whistle|r at Uuna.\n",sourceQuests={50098}}),
+q(50100,{description="3. When she asks you questions, |cffffffff/roar|r at her.\n",sourceQuests={50098}}),
+q(50101,{description="4. Resummon Uuna and |cffffffff/cry|r at her. She will tell you that she wishes she could see you better, but it's too dark where she is.",sourceQuests={50098}})}}),
 q(50102,{coords={
-[111]={{54,44.7}}},description="Take Uuna to A'dal in Shattrath City. The light of the Naaru is too bright, and she will run away.",icon=134506,sourceQuests=a[40]}),
+[111]={{54,44.7}}},description="Take Uuna to A'dal in Shattrath City. The light of the Naaru is too bright, and she will run away.",icon=134506,sourceQuests={50098}}),
 q(50103,{coords={
 [63]={{18.9,41.6}}},description="Take Uuna to the moonlight by Ashenvale's Lake Falathim.",icon=134506,sourceQuests={50102}}),
 q(50104,{coords={
@@ -1069,13 +1076,13 @@ o(294312,{coords={
 q(52917,{description="Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy. Select his dialogue \"It's me, your friend. Got any secrets to tell me about?\"",qgs={138578},sourceQuests={52916}}),
 o(294314,{description="After selecting the Grimmy dialogue, a note appears on his bedstand. Click it. Grimmy's List of Enemies reads:\n\n\"You flaunted your virility, and red was\nnever to my liking\nThough I wanted to slap you, I always\nfound you striking.\n\nYou Always though you knew what was\nbest, but not everyone likes greens,\nThough I waved your way, I pictured\nyour shredded hide in my dreams.\n??\nYour bread was bad, you diseased lout,\nit made me sick.\nI woudl cheerily beat you with a stick.\n??\nLast you, I'm not eve going to think of\na rhyme for you, Mugs.\nI will dance on your grave, you were\nuniquely terrible.\"\n\nGo to each of the following NPCs with Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking, and emote to them.",model=305391,questID=52918,sourceQuests={52917}}),
 n(47121,{coords={
-[241]={{28.5,24.9}}},description="Twilight Highlands\n\n/slap",questID=52822,sourceQuests=a[41]}),
+[241]={{28.5,24.9}}},description="Twilight Highlands\n\n/slap",questID=52822,sourceQuests={52918}}),
 n(36034,{coords={
-[66]={{57.5,47.7}}},description="Desolace\n\n/wave",questID=52823,sourceQuests=a[41]}),
+[66]={{57.5,47.7}}},description="Desolace\n\n/wave",questID=52823,sourceQuests={52918}}),
 n(28792,{coords={
-[121]={{40.6,68.7}}},description="Zul'drak\n\n/cheer",questID=52824,sourceQuests=a[41]}),
+[121]={{40.6,68.7}}},description="Zul'drak\n\n/cheer",questID=52824,sourceQuests={52918}}),
 n(62877,{coords={
-[379]={{44.4,90.3}}},description="Kun-Lai Summit\n\n/dance",questID=52826,sourceQuests=a[41]}),
+[379]={{44.4,90.3}}},description="Kun-Lai Summit\n\n/dance",questID=52826,sourceQuests={52918}}),
 n(138578,{coords={
 [14]={{85.3,73.6}}},description="Return to Grimmy and select his new dialogue\n\n\"I've sent some messages to your enemies, now about those secrets...\"",questID=52919,sourceQuests={52822,52823,52824,52826}}),
 o(294315,{description="After selecting Grimmy's dialogue, a new note appears by the fireplace. Click it. Grimmy's Favorite Recipe reads:\n\n\"A pinch of turmeric and a pound of salt,\nif it comes out poorly it's your own\nfault.\n\nPay attention to the broth, and stir,stir,\nstir!\nThen add a big handful of boar fur.\n\nLast you need a little sour,\nget the kick with a little gunpowder!\"",model=936411,modelScale=0.5,questID=52920,sourceQuests={52919}}),

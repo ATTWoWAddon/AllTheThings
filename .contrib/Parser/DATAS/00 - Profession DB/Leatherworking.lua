@@ -2747,3 +2747,5 @@ i(0, 1237508);		-- Silvermoon Agent's Sneakers
 i(0, 1237513);		-- Silvermoon Agent's Utility Belt
 --- NYI ---
 i(0, 1237576);		-- Recraft Equipment
+i(256651, 0);		-- Pattern: Blood Knight's Armor Kit
+i(256648, 0);		-- Pattern: Devouring Banding

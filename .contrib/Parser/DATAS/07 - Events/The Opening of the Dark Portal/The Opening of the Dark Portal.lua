@@ -20,6 +20,7 @@ THE_OPENING_OF_THE_DARK_PORTAL = createHeader({
 	},
 	description = {
 		en = "The Opening of the Dark Portal was a one-time event that happened between Prepatch and the launch of TBC and subsequentially removed after. The tabard is the only tabard in the game with the Flex emote built into it and is highly covetted by collectors. Highlord Kruul would spawn randomly outside of the major cities and max level zones of the time.",
+		cn = "黑暗之门开启是一次仅发生在《魔兽世界》燃烧的远征（TBC）前夕补丁与正式上线之间的一次性事件，之后便移除了。游戏中，这件公会徽章是唯一内置 “伸展（Flex）” 动作的徽章，深受收藏者觊觎。当时，大领主克鲁尔会随机出现在主要城市外以及满级区域",
 	},
 });
 

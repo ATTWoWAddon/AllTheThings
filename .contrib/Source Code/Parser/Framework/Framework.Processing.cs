@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using static ATT.Export;
 using static ATT.FieldTypes.TimelineEntry;
+using Data = System.Collections.Generic.IDictionary<string, object>;
 
 namespace ATT
 {
@@ -24,6 +25,10 @@ namespace ATT
             (long)Objects.Filters.Cosmetic,
             (long)Objects.Filters.Cloak
         };
+
+        private static bool NoDataProcessing(IDictionary<string, object> data, IDictionary<string, object> parentData = null) => true;
+
+        private static bool HasSpell(IDictionary<string, object> data) => data.ContainsAnyKey("spellID", "recipeID", "mountID", "_extraSpells");
 
         private static readonly ConcurrentDictionary<ParseStage, Handler> Handlers = new ConcurrentDictionary<ParseStage, Handler>();
 
@@ -56,11 +61,29 @@ namespace ATT
         {
             if (CurrentParseStageHandler != null)
             {
-                //Log(_timer.ElapsedMilliseconds.ToString("000000 ") + $" ...with {CurrentParseStageHandler.ActionSequence.Count} Actions...");
-                Log($"   ...with {CurrentParseStageHandler.ActionSequence.Count} Actions...");
+                Log(_timer.ElapsedMilliseconds.ToString("000000 ") + $" ...with {CurrentParseStageHandler.ActionSequence.Count} Actions...");
                 CurrentParseStageHandler.RunActions();
             }
         }
+
+        #region Static Lambdas
+        public static ConcurrentDictionary<long, string> NewConcurrentDictionary_long_string(string _) =>
+            new ConcurrentDictionary<long, string>();
+        public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(object _) =>
+            new ConcurrentDictionary<string, object>();
+        public static ConcurrentDictionary<object, ConcurrentDictionary<string, object>> NewConcurrentDictionary_object_string_object(object _) =>
+            new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>();
+        public static ConcurrentDictionary<string, ConcurrentDictionary<string, object>> NewConcurrentDictionary_string_string_object(long _) =>
+            new ConcurrentDictionary<string, ConcurrentDictionary<string, object>>();
+        public static ConcurrentDictionary<decimal, ConcurrentDataList> NewConcurrentDictionary_decimal_ConcurrentDataList(string _) =>
+            new ConcurrentDictionary<decimal, ConcurrentDataList>();
+        public static ConcurrentDataList NewConcurrentDataList(decimal _) =>
+            new ConcurrentDataList();
+        public static ConcurrentHashSet<decimal> NewConcurrentHashSet_string_decimal(string _) =>
+            new ConcurrentHashSet<decimal>();
+        public static ConcurrentHashSet<Data> NewConcurrentHashSet_long_Data(long _) =>
+            new ConcurrentHashSet<Data>();
+        #endregion
 
         /// <summary>
         /// Process all of the data loaded into the database.
@@ -173,7 +196,11 @@ namespace ATT
             AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignFilterID);
 
             AddHandlerAction(ParseStage.Incorporation, data => data.ContainsKey("speciesID"), Incorporate_Species);
+            AddHandlerAction(ParseStage.Incorporation, data => HasSpell(data) && !data.ContainsKey("_unsorted"), Incorporate_Spell);
             AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Incorporate_Parallel);
+            // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
+            AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Objects.PostProcessMergeInto);
+            AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Incorporate_sort_g);
 
             if (Objects.MAPID_COORD_SHIFTS.Count > 0)
             {
@@ -703,8 +730,13 @@ namespace ATT
             bool success = true;
 
             // data.DataBreakPoint("_DEBUG", true);
+            //bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == Config["TEMP_itemID"];
+            //if (track)
+            //    Log($"Tracking Item: {tempItemID} before {CurrentParseStage} stage", data);
             if (ProcessingFunction(data, parentData))
             {
+                //if (track)
+                //    Log($"Tracking Item: {tempItemID} after {CurrentParseStage} stage", data);
                 // Store the parent relationship
                 data["__parent"] = parentData;
 
@@ -940,10 +972,7 @@ namespace ATT
 
             Incorporate_Achievement(data);
             Incorporate_Criteria(data);
-            // Handles Item->Spell->SpellEffect incorporation
             Incorporate_Item(data);
-            // Handles Spell->SpellEffect incorporation
-            Incorporate_Spell(data);
             Incorporate_Ensemble(data);
 
             return true;
@@ -962,8 +991,6 @@ namespace ATT
 
             Objects.PerformWipes(data);
 
-            // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
-            Objects.PostProcessMergeInto(data);
 
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
             if (!CheckTimeline(data, parentData))
@@ -1104,7 +1131,7 @@ namespace ATT
                 if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objKeyValue.TryConvert(out long id))
                 {
                     // Store the name of this object (or whatever it is) in our table.
-                    NAMES_BY_TYPE.GetOrAdd(objectData.ObjectType, _ => new ConcurrentDictionary<long, string>()).TryAdd(id, name);
+                    NAMES_BY_TYPE.GetOrAdd(objectData.ObjectType, NewConcurrentDictionary_long_string).TryAdd(id, name);
 
                     // only certain types we will auto-localize, so remove the raw 'name' field
                     if (AutoLocalizeType(objectData.ObjectType))
@@ -1366,7 +1393,6 @@ namespace ATT
         {
             Incorporate__spellQuests(data);
             Incorporate_DataCloning(data);
-            Incorporate_sort_g(data);
         }
 
         private static void Incorporate__spellQuests(IDictionary<string, object> data)
@@ -1392,13 +1418,19 @@ namespace ATT
                 return compare != 0 ? compare : a.CompareTo(b);
             });
 
-            // try assigning the best-match quest if it's not already Sourced
-            long questID = possibleQuestIDs[0];
-            if (!Assign_QuestProviderFromData(questID, data))
-                CheckAndAssignQuestID(questID, data);
+            long assignedQuestID = -1;
+            // try assigning the first best-match quest which is not already Sourced
+            foreach (long questID in possibleQuestIDs)
+            {
+                if (!Assign_QuestProviderFromData(questID, data) && CheckAndAssignQuestID(questID, data))
+                {
+                    assignedQuestID = questID;
+                    break;
+                }
+            }
 
             // the rest try assign the data as provider only
-            foreach (long possibleQuestID in possibleQuestIDs.Skip(1))
+            foreach (long possibleQuestID in possibleQuestIDs.Where(q => q != assignedQuestID))
             {
                 Assign_QuestProviderFromData(possibleQuestID, data);
             }
@@ -1577,7 +1609,7 @@ namespace ATT
         {
             if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0)
             {
-                fieldSources.GetOrAdd(id, _ => new ConcurrentHashSet<IDictionary<string, object>>()).Add(data);
+                fieldSources.GetOrAdd(id, NewConcurrentHashSet_long_Data).Add(data);
             }
         }
 
@@ -1594,7 +1626,7 @@ namespace ATT
             {
                 if (data.TryGetValue(kvp.Key, out long id) && id > 0)
                 {
-                    kvp.Value.GetOrAdd(id, _ => new ConcurrentHashSet<IDictionary<string, object>>()).Add(data);
+                    kvp.Value.GetOrAdd(id, NewConcurrentHashSet_long_Data).Add(data);
                 }
                 // TODO: not treating encounters as sources for NPCs currently due to overzealous merging without respect to difficulty
                 // special cases where the id field is not in the data, but we will treat that data as Sourced for that key/id anyway
@@ -2221,9 +2253,18 @@ namespace ATT
             {
                 switch (CurrentParentGroup.Value.Key)
                 {
+                    case "npcID":
+                        // don't incorporate criteria if the achievement is listed under a real NPC
+                        if (!doautomation && data.TryGetValue("__parent", out IDictionary<string, object> parentData)
+                            && parentData.TryGetValue("npcID", out long id)
+                            && id > 0)
+                        {
+                            LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under real NPC {id}");
+                            return;
+                        }
+                        break;
                     case "achID":
                     case "headerID":
-                    case "npcID":
 
                     // Crieve added these
                     case "f":
@@ -2239,13 +2280,6 @@ namespace ATT
                         }
                         break;
                 }
-            }
-
-            // don't incorporate criteria if the achievement is listed under a real NPC
-            if (!doautomation && CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0)
-            {
-                LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under real NPC {id}");
-                return;
             }
 
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
@@ -3179,6 +3213,9 @@ namespace ATT
             if (data.ContainsKey("_noautomation")) return;
             if (data.ContainsKey("_Incorporate_Ensemble")) return;
 
+            // Ensembles will be handled specially for now and must incorporate their Spell information ahead of the typical parallel sequence
+            Incorporate_Spell(data);
+
             if (data.TryGetValue("tmogSetID", out long tmogSetID) && WagoData.TryGetValue(tmogSetID, out TransmogSet tmogSet))
             {
                 if (tmogSet.TrackingQuestID > 0)
@@ -3230,7 +3267,7 @@ namespace ATT
                     };
 
                     // since adding a new Item group, run the prior expected logic against it
-                    DataConditionalMerge(nestedEnsemble, data);
+                    DoConditionalDataMerging(nestedEnsemble);
 
                     g.Add(nestedEnsemble);
                 }
@@ -3389,18 +3426,6 @@ namespace ATT
                     }
                 }
             }
-
-            // Finish incorporation of multiple QuestIDs
-            if (data.TryGetValue("_spellQuests", out List<object> spellQuests))
-            {
-                // Only 1 QuestID, just check & assign it directly
-                if (spellQuests.Count == 1 && spellQuests.First().TryConvert(out long assignQuestID))
-                {
-                    CheckAndAssignQuestID(assignQuestID, data);
-                    data.Remove("_spellQuests");
-                }
-                // multiple will be handled in Incorporate action to ensure there is as much Sourced as possible
-            }
         }
 
         private static void Incorporate_SpellEffect(IDictionary<string, object> data, SpellEffect spellEffect)
@@ -3494,7 +3519,7 @@ namespace ATT
             }
         }
 
-        private static void CheckAndAssignQuestID(long questID, IDictionary<string, object> data)
+        private static bool CheckAndAssignQuestID(long questID, IDictionary<string, object> data)
         {
             bool allowMergeQuestID = true;
             // if QuestID is already Sourced elsewhere in ATT, then we need to check what it is sourced as
@@ -3525,7 +3550,10 @@ namespace ATT
             {
                 IncorporateDataField(data, "questID", questID);
                 LogDebug($"INFO: Assigned data 'questID' {questID}", data);
+                return true;
             }
+
+            return false;
         }
 
         private static bool Assign_QuestProviderFromData(long questID, IDictionary<string, object> data)

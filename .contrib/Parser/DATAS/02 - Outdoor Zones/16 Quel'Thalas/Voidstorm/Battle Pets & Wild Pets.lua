@@ -8,12 +8,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["crs"] = { 249819 },	-- Blistercreepling
 				["coords"] = {
 					{ 31.1, 44.2, MAP.MIDNIGHT.VOIDSTORM },
+					{ 46.9, 88.5, MAP.MIDNIGHT.VOIDSTORM },
+					{ 53.4, 72.5, MAP.MIDNIGHT.VOIDSTORM },
 				},
 			}),
 			i(238793, {	-- Devouring Runt (PET!)
 				["crs"] = { 240014 },	-- Devouring Runt
 				["coords"] = {
 					{ 39.5, 38.2, MAP.MIDNIGHT.VOIDSTORM },
+					{ 41.0, 38.5, MAP.MIDNIGHT.VOIDSTORM },
 				},
 			}),
 			i(251005, {	-- Riftblade Familiar (PET!)
@@ -25,6 +28,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(239101, {	-- Voidcrawler (PET!)
 				["crs"] = { 241439 },	-- Voidcrawler
 				["coords"] = {
+					{ 28.3, 52.9, MAP.MIDNIGHT.VOIDSTORM },
+					{ 29.5, 53.8, MAP.MIDNIGHT.VOIDSTORM },
 					{ 30.5, 66.2, MAP.MIDNIGHT.VOIDSTORM },
 				},
 			}),

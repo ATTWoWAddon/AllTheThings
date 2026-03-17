@@ -9,7 +9,7 @@ MERGE_OBJECT_FIELDS = {
 	speciesID = { "pb","crs","itemID" },
 	instanceID = { "isRaid" },
 	mapID = { "maps" },
-	mountID = { "itemID" },
+	mountID = { "itemID", "_drop" },
 	questID = { "type","sourceQuests","altQuests","isBreadcrumb","c","r","races","lvl","OnTooltip","_type","_area","_category","_text","name","description","nextQuests","isDaily","isMonthly","isYearly","repeatable","g","poiIDs","lc" },
 	itemID = { "_class","_subclass","_inventoryType","ignoreBonus","minReputation","spellID","decorID","crs","mountID","speciesID","recipeID" },
 }

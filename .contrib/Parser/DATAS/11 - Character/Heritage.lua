@@ -1880,15 +1880,16 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(78549),	-- Troll Heritage (spellID 426505)
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(HERITAGE, {
 			q(82788),	-- Arsenal: Earthen Weaponry
 			q(82789),	-- Popped on turn in of Stranger in a Strange Land [A] (81887)
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_2_7 } }, {
 		n(HERITAGE, {
-			q(85050),	-- Triggered after accepting 'Invitation to the Spirit Festival' (84442)
+			q(85049, {races={PANDAREN_HORDE}}),	-- Pandaren Horde trigger for 'Invitation to the Spirit Festival' (84444)
+			q(85050, {races={PANDAREN_HORDE}}),	-- Pandaren Alliance trigger for 'Invitation to the Spirit Festival' (84442)
 			q(93888),	-- New HQT after complete Blood elf heritage quest 'The Fall of the Sunwell' (54096)
 		}),
 	})),

@@ -304,6 +304,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 						{ 53.0, 37.2, FOUNDERS_POINT },	-- Founder's Point
 						{ 53.8, 55.6, RAZORWIND_SHORES },	-- Razorwind Shores
 					},
+					["groups"] = { i(253316) },	-- Scoped Max Falcon Stealth Dragon 90 (QI!)
 				}),
 			})),
 		}),

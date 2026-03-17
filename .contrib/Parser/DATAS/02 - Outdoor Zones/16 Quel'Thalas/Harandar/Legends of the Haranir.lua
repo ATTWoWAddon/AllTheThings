@@ -7,6 +7,16 @@ LEGENDS_OF_THE_HARANIR = createHeader({
 	icon = 7491037,
 	text = {
 		en = "Legends of the Haranir",
+		de = "Legenden der Haranir",
+		es = "Leyendas de los haranir",
+		mx = "Leyendas de los haranir",
+		fr = "Légendes des Haranir",
+		it = "Leggende degli Haranir",
+		ko = "하라니르의 전설",
+		pt = "Lendas dos Haranir",
+		ru = "Легенды хараниров",
+		cn = "哈籁尼尔的传说",
+		tw = "哈拉尼爾的傳說",
 	},
 });
 
@@ -262,6 +272,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
             }),
+		}),
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.HARANDAR, {
+			n(LEGENDS_OF_THE_HARANIR, {
+				q(89266, name(HEADERS.NPC,241213)),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
+				q(91049, name(HEADERS.NPC,243491)),	-- Triggered after chosing 'Cauldron of Echoes' during 'Lost Legends' (89268)
+				q(91516, name(HEADERS.NPC,243540)),	-- Triggered after chosing 'The Echoless Flame' during 'Lost Legends' (89268)
+				q(91517, name(HEADERS.NPC,243542)),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
+				q(91455, name(HEADERS.NPC,243514)),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
+				q(89284, { ["name"] = "Relic chosen" }),	-- Triggered after selecting a Relic during 'Lost Legends' (89268)
+				q(91053, name(HEADERS.Item,263037)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Wey'nan's Ward'
+				q(91054, name(HEADERS.Item,263315)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Bubbling Haranir Cauldron'
+				q(91511, name(HEADERS.Item,264262)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'The Echoless Flame'
+				q(91512, name(HEADERS.Item,262906)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Russula's Outreach'
+				q(91456, name(HEADERS.Item,263196)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Aln'hara's Bloom'
+			}),
 		}),
 	}),
 }));

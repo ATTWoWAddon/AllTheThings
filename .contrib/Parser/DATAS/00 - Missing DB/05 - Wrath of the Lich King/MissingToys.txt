@@ -14,6 +14,34 @@ i(247893),	-- Fandral's Eternal Seed
 i(248263),	-- Azure Sea Boat \\ Fishing Boat Toy
 3.80.0.64393
 i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
+3.80.0.65301
+i(46779),	-- of Cenarius \\ Path of Cenarius
+i(69227),	-- 's Gold \\ Fool's Gold
+i(256141),	-- Fortune's Waving Cat
+3.80.0.65749
+i(258129),	-- Jade Monument
+i(258135),	-- Gilded Coil Spire
+i(258136),	-- Azure Thunder Coil Pillar
+i(258840),	-- Gilded Fountain
+3.80.0.65990
+i(270177),	-- Ensemble: High Warlord Warrior and Death Knight
+i(270178),	-- Ensemble: Grand Marshal Warrior and Death Knight
+i(270194),	-- Ensemble: Grand Marshal Paladin
+i(270195),	-- Ensemble: Grand Marshal Shaman
+i(270196),	-- Ensemble: Grand Marshal Hunter
+i(270197),	-- Ensemble: Grand Marshal Rogue
+i(270198),	-- Ensemble: Grand Marshal Druid
+i(270199),	-- Ensemble: Grand Marshal Warlock
+i(270200),	-- Ensemble: Grand Marshal Priest
+i(270201),	-- Ensemble: Grand Marshal Mage
+i(270202),	-- Ensemble: High Warlord Paladin
+i(270203),	-- Ensemble: High Warlord Shaman
+i(270204),	-- Ensemble: High Warlord Hunter
+i(270205),	-- Ensemble: High Warlord Rogue
+i(270206),	-- Ensemble: High Warlord Druid
+i(270207),	-- Ensemble: High Warlord Warlock
+i(270208),	-- Ensemble: High Warlord Priest
+i(270209),	-- Ensemble: High Warlord Mage
 
 
 
@@ -25,3 +53,24 @@ i(247893),	-- Fandral's Eternal Seed
 i(248263),	-- Azure Sea Boat \\ Fishing Boat Toy
 3.80.0.64393
 i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
+3.80.0.65301
+i(46779),	-- of Cenarius \\ Path of Cenarius
+3.80.0.65990
+i(270177),	-- Ensemble: High Warlord Warrior and Death Knight
+i(270178),	-- Ensemble: Grand Marshal Warrior and Death Knight
+i(270194),	-- Ensemble: Grand Marshal Paladin
+i(270195),	-- Ensemble: Grand Marshal Shaman
+i(270196),	-- Ensemble: Grand Marshal Hunter
+i(270197),	-- Ensemble: Grand Marshal Rogue
+i(270198),	-- Ensemble: Grand Marshal Druid
+i(270199),	-- Ensemble: Grand Marshal Warlock
+i(270200),	-- Ensemble: Grand Marshal Priest
+i(270201),	-- Ensemble: Grand Marshal Mage
+i(270202),	-- Ensemble: High Warlord Paladin
+i(270203),	-- Ensemble: High Warlord Shaman
+i(270204),	-- Ensemble: High Warlord Hunter
+i(270205),	-- Ensemble: High Warlord Rogue
+i(270206),	-- Ensemble: High Warlord Druid
+i(270207),	-- Ensemble: High Warlord Warlock
+i(270208),	-- Ensemble: High Warlord Priest
+i(270209),	-- Ensemble: High Warlord Mage

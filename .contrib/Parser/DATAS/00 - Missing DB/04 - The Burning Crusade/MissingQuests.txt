@@ -107,3 +107,15 @@ q(66991),	--
 2.5.5.64508
 q(93823),	--
 q(93824),	--
+2.5.5.64912
+q(95158),	-- TBC:Reset Current Rating - 2v2
+q(95251),	-- TBC:Reset Current Rating - 3v3
+q(95252),	-- TBC:Reset Current Rating - 5v5
+2.5.5.65463
+q(95455),	-- TBC:Concerted Efforts
+q(95457),	-- TBC:For Great Honor
+q(95481),	--
+2.5.5.65534
+q(95496),	--
+2.5.5.66150
+q(95830),	--

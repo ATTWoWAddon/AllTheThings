@@ -59,12 +59,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 50.9, 50.7, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = bubbleDownRep(FACTION_HARATI, {
 							{		-- RENOWN 1 --
-								i(246402, {	-- Hollowed Harandar Gourds (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
-								}),
-								i(246408, {	-- Haranir Herb Rack (DECOR!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
-								}),
 							}, {	-- RENOWN 2 --
 								i(267481, {	-- Aspiring Hara'ti Defender's Belt
 									["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
@@ -88,6 +82,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									["cost"] = { { "c", VOIDLIGHT_MARL, 3000 } },
 								}),
 							}, {	-- RENOWN 3 --
+								i(246402, {	-- Hollowed Harandar Gourds (DECOR!)
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+								}),
+								i(246408, {	-- Haranir Herb Rack (DECOR!)
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+								}),
 							}, {	-- RENOWN 4 --
 							}, {	-- RENOWN 5 --
 								i(256700, {	-- Design: Signet of Azerothian Blessings (RECIPE!)
@@ -176,6 +176,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									},
 								}),
 							}, {	-- RENOWN 7 --
+								i(251980, {	-- Fungarian Sack (DECOR!)
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+								}),
+								i(249768, {	-- Fungarian Barrel (DECOR!)
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+								}),
+								i(246959, {	-- Sealed Fungal Jar (DECOR!)
+									["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+								}),
 							}, {	-- RENOWN 8 --
 							}, {	-- RENOWN 9 --
 							}, {	-- RENOWN 10 --
@@ -190,6 +199,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 11 --
 							}, {	-- RENOWN 12 --
+								i(263039),	-- Harandar Flowering Lamp (DECOR!)
+								i(263194),	-- Harandar Glowvine Sconce (DECOR!)
+								i(263195),	-- Harandar Glowvine Lamppost (DECOR!)
 							}, {	-- RENOWN 13 --
 								i(256552, {	-- Verdant Rutaani Seed (TOY!)
 									["cost"] = { { "c", VOIDLIGHT_MARL, 4000 } },
@@ -199,6 +211,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
 								}),
 							}, {	-- RENOWN 15 --
+								i(264267),	-- Rutaani Birdfeeder (DECOR!)
+								i(264268),	-- Rutaani Birdbath (DECOR!)
+								i(264269),	-- Rutaani Bird Perch (DECOR!)
 							}, {	-- RENOWN 16 --
 								i(246734, {	-- Fierce Grimlynx (MOUNT!)
 									["cost"] = { { "c", VOIDLIGHT_MARL, 6000 } },
@@ -217,6 +232,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									["cost"] = { { "c", VOIDLIGHT_MARL, 5000 } },
 								}),
 							}, {	-- RENOWN 18 --
+								i(263019),	-- Haranir Pennant (DECOR!)
 							}, {	-- RENOWN 19 --
 								i(252014, {	-- Cerulean Sporeglider (MOUNT!)
 									["cost"] = { { "c", VOIDLIGHT_MARL, 8000 } },

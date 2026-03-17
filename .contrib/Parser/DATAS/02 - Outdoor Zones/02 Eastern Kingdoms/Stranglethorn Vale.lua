@@ -918,7 +918,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
 							["timeline"] = { REMOVED_4_0_3 },
-							["cost"] = { { "i", 4457, 10 } },	-- Barbecued Buzzard Wing
+							["cost"] = {
+								{ "i", 4457, 10 },	-- Barbecued Buzzard Wing
+								{ "i", 4595, 5 },	-- Junglevine Wine
+							},
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Smotts' Cutlass
@@ -926,11 +929,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "i", 3935 },	-- Smotts' Cutlass
 									["coord"] = { 32.5, 81.9, STRANGLETHORN_VALE },
 									["cr"] = 1494,	-- Negolash
-								}),
-								objective(2, {	-- 0/5 Junglevine Wine
-									["provider"] = { "i", 4595 },	-- Junglevine Wine
-									["coord"] = { 40.8, 73.6, STRANGLETHORN_VALE },
-									["cr"] = 2832,	-- Nixxrax Fillamug <Food & Drink>
 								}),
 							},
 						}),
@@ -2117,9 +2115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(8552, {	-- The Monogrammed Sash
 					["altQuests"] = { 620 },	-- The Monogrammed Sash [Old]
 					["provider"] = { "i", 3985 },	-- Monogrammed Sash
-					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 1493,	-- Mok'rash
 					["lvl"] = 35,
 				}),
 				q(3642, {	-- The Pledge of Secrecy
@@ -3088,6 +3084,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
+				n(2832, {	-- Nixxrax Fillamug <Food & Drink>
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.8, 73.6, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 40.8, 73.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
+					["groups"] = {
+						i(4595),	-- Junglevine Wine
+					},
+				}),
 				n(2626, {	-- Old Man Heming <Fisherman>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3644,6 +3652,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1679, {	-- Korg Bat
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 1142,	-- Mosh'Ogg Brute
+				}),
+				i(3985, {	-- Monogrammed Sash
+					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 1493,	-- Mok'rash
+					["lvl"] = 35,
 				}),
 				i(5755, {	-- Onyx Shredder Plate
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },

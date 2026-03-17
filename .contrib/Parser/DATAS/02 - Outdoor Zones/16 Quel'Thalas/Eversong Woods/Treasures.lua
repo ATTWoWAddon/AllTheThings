@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				o(617432, {	-- Forgotten Ink and Quill
 					["coord"] = { 43.3, 69.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["questID"] = 94747,
+					["questID"] = 93893,
 					["groups"] = { i(262616) },	-- Lively Songwriter's Quill (DECOR!)
 				}),
 				o(613697, {	-- Gift of the Phoenix

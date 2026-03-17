@@ -49,7 +49,7 @@ mnt(471440,{awp=30400,description="Can be bought for ¥1888 ($265 USD) or a disc
 mnt(1217476,{awp=30400,description="Rewarded from the Treasure Workshop.",rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(235378,{awp=30400,description="Can be bought for ¥200 RMB (~$27 USD) for a limited time in the Ingame Shop.",rwp=40400,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(459784,{itemID=227362,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(42777,{itemID=49284,lvl=40,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22},u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(42777,{itemID=49284,lvl=40,q=4,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42776,{itemID=49283,lvl=20,q=3,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46199,{itemID=49286,lvl=20,q=4,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46197,{itemID=49285,lvl=20,q=3,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -218,7 +218,7 @@ mnt(93623,{awp=40003,itemID=68008,lvl=60,q=4,u=2}),
 mnt(42776,{awp=20103,b=1,itemID=33224,lvl=20,q=3,rwp=30200,u=2}),
 mnt(42776,{awp=30200,itemID=49283,lvl=20,q=3,u=2}),
 mnt(42777,{awp=20103,b=1,itemID=33225,lvl=40,q=4,rwp=30200,u=2}),
-mnt(42777,{awp=30200,itemID=49284,lvl=40,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22},u=2}),
+mnt(42777,{awp=30200,itemID=49284,lvl=40,q=4,u=2}),
 mnt(30174,{b=1,itemID=23720,q=4,u=2}),
 mnt(97581,{awp=40100,itemID=69228,lvl=20,q=4,u=2}),
 mnt(101573,{awp=40300,itemID=71718,lvl=20,q=4,u=2}),

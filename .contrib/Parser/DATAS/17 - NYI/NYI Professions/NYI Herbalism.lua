@@ -15,6 +15,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(194061),	-- Suffocating Spores
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					i(238564),	-- Ancient Flower
+					i(238565),	-- Dornogal Gardening Scythe
+					i(238566),	-- Earthen Digging Fork
+					i(238567),	-- Fungarian Slicer's Knife
+					i(238568),	-- Arathi Garden Trowel
+					i(238569),	-- Arathi Herb Pruner
+					i(238570),	-- Web-Entangled Lotus
+					i(238571),	-- Tunneler's Shovel
+				})),
+			}),
 		}),
 		n(CRAFTABLES, {
 			expansion(EXPANSION.WOD, {
@@ -23,7 +36,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108334),	-- Arthas' Tears Petal
 				})),
 			}),
-
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
 				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {

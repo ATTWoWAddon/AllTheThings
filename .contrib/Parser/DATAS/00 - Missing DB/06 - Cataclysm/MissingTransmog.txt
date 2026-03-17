@@ -78,7 +78,6 @@ s(201589)/i(38020),	-- DB56 Leather Physical Gloves4
 s(201602)/i(38444),	-- Mail Melee Leatherworking Bracer
 s(201610)/i(39039),	-- QR IC36 Leather Physical Head3 - PH
 s(201856)/i(45175),	-- QA Test Normalized Ranged Weapon
-s(201921)/i(45860),	-- tal Tiara \\ Crystal Tiara
 s(201996)/i(47163),	-- SED]Cool Shades \\ [UNUSED]Cool Shades
 s(201997)/i(47164),	-- SED]Cool Shades \\ [UNUSED]Cool Shades
 s(201998)/i(47165),	-- SED]Jacket and Pants \\ [UNUSED]Jacket and Pants
@@ -1548,7 +1547,6 @@ s(207952)/i(61917),	-- QA PVP Test Warrior DPS Set Helm
 s(207953)/i(61918),	-- QA PVP Test Warrior DPS Set Legs
 s(207954)/i(61919),	-- QA PVP Test Warrior DPS Set Shoulders
 s(207974)/i(62032),	-- Monster - Mace, Wildhammer Stormhammer (Lightning)
-s(207980)/i(62058),	-- diated Bandages \\ Irradiated Bandages
 s(207981)/i(62059),	-- Gnome Pants \\ Torn Gnome Pants
 s(207982)/i(62060),	-- diated Gnome Boots \\ Irradiated Gnome Boots
 s(208137)/i(62232),	-- Great Sword of the Sin'dorei
@@ -1685,6 +1683,11 @@ s(209101)/i(64555),	-- er's Fetch Toy \\ Kibler's Fetch Toy
 s(209234)/i(64759),	-- dthirsty Gladiator's Hatchet \\ Bloodthirsty Gladiator's Hatchet
 s(209321)/i(64871),	-- dthirsty Gladiator's War Edge \\ Bloodthirsty Gladiator's War Edge
 s(209329)/i(64879),	-- Crafty's Test Item
+s(209375)/i(64928),	-- iator's Silk Trousers \\ Gladiator's Silk Trousers
+s(209376)/i(64929),	-- iator's Silk Robe \\ Gladiator's Silk Robe
+s(209377)/i(64930),	-- iator's Silk Handguards \\ Gladiator's Silk Handguards
+s(209378)/i(64931),	-- iator's Silk Cowl \\ Gladiator's Silk Cowl
+s(209379)/i(64932),	-- iator's Silk Amice \\ Gladiator's Silk Amice
 s(209442)/i(65005),	-- s of Agony \\ Claws of Agony
 s(209443)/i(65006),	-- s of Torment \\ Claws of Torment
 s(209445)/i(65008),	-- owforge's Lightbound Smock \\ Shadowforge's Lightbound Smock

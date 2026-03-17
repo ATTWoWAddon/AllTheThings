@@ -110,14 +110,16 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		filter(CONSUMABLES, {
 		}),
 		filter(MISC, {
-			-- Display (reward) only (not actually an item
-			--TODO: move it into Season 1 file, if needed
 			i(254250),	-- Bountiful Coffer
 			i(257387),	-- Bountiful Heavy Trunk
-			--i(232371),	-- Companion Experience (Delver's Call reward) // alpha item
-			i(257382),	-- Companion Experience (Delve reward UI)
-			i(263488),	-- Companion Experience (Delver's Call reward)
 			i(257386),	-- Heavy Trunk (Delve reward UI)
+			i(232371),	-- Companion Experience (Delver's Call reward)
+			i(263488),	-- Companion Experience (Delver's Call reward)
+			i(257383),	-- Companion Experience (Uncommon)
+			i(257384),	-- Companion Experience (Rare)
+			i(257382),	-- Companion Experience (Epic)
+			i(257380),	-- Player Experience (Uncommon)
+			i(257381),	-- Player Experience (Rare)
 			i(257379),	-- Player Experience (Epic)
 			i(265714),	-- Trovehunter's Bounty
 			-- Items and different things
@@ -509,7 +511,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(QUESTS, {
 				q(93384, {	-- Delver's Call: Collegiate Calamity
 					["provider"] = { "o", 612038 },	-- Agitated Tome
-					["coord"] = { 41.6, 61.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["coords"] = {
+						{ 41.6, 61.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 59.5, 60.1, COLLEGIATE_CALAMITY },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -785,7 +790,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["questID"] = 94039,
 				}),
 				o(618279, {	-- Sturdy Chest
-					["coord"] = { 70.2, 29.8, THE_GRUDGE_PIT },
+					["coord"] = { 69.9, 31.6, THE_GRUDGE_PIT },
 					["questID"] = 94022,
 				}),
 				o(618277, {	-- Sturdy Chest

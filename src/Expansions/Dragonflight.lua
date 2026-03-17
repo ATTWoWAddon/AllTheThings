@@ -63,6 +63,9 @@ do
 		collected = function(t)
 			return app.TypicalCharacterCollected(CACHE, t[KEY])
 		end,
+		saved = function(t)
+			return not C_TradeSkillUI_IsRecipeFirstCraft(t[KEY])
+		end,
 	},
 	"WithQuest", {
 		ImportFrom = "Quest",
@@ -77,9 +80,11 @@ do
 	app.AddGenericFieldConverter(KEY);
 	app.AddEventHandler("OnRefreshCollections", function()
 		local saved, none = {}, {}
-		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-			-- If NOT first craft anymore, then it's been completed
-			if not C_TradeSkillUI_IsRecipeFirstCraft(id) then
+		local o
+		for id,cache in pairs(app.GetRawFieldContainer(KEY)) do
+			o = cache[1]
+			-- If saved, then the FC is cached
+			if o.saved then
 				saved[id] = true
 			else
 				none[id] = true
@@ -89,8 +94,5 @@ do
 		-- Character Cache
 		app.SetBatchCached(CACHE, saved, 1)
 		app.SetBatchCached(CACHE, none)
-
-		-- Account Cache (removals handled by Sync)
-		app.SetBatchAccountCached(CACHE, saved, 1)
 	end)
 end

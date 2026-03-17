@@ -2493,3 +2493,27 @@
 1289395@@@Swift Spectral Dragonhawk
 12.0.1.66263
 1261293@@@Peridot Dragonhawk
+12.0.1.66337
+1251697@@@Frostfall Groveglider
+1251762@@@Cindertuft Groveglider
+1251764@@@Gloombough Groveglider
+1251765@@@Blossombranch Groveglider
+12.0.5.66330
+3363@@@Nether-Swept Drake
+1261362@@@Witherbark Warbear Mother
+1271698@@@Unbound Manawyrm
+1282268@@@Gilnean Iron Charger
+1282274@@@Gilnean Copper Charger
+1282275@@@Pyrewood Rebel's Rouncey
+1282276@@@Gilneas Loyalist's Rouncey
+1282450@@@Blossomback Arboon
+1282453@@@Amberback Arboon
+1282471@@@Magister's Spell Bee
+1282936@@@Void-Touched Hawkstrider
+1283906@@@[PH] Giant Eagle Sunwalker Mount Blue
+1283908@@@Dusk-Painted Sun Roc
+1283910@@@Flame-Painted Sun Roc
+1283911@@@[PH] Giant Eagle Sunwalker Mount White
+1286606@@@Void-Corrupted Hex Eagle
+1287357@@@Void-Touched Snapdragon
+1287359@@@Void-Corruped Lynx

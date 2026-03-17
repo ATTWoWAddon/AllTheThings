@@ -11,6 +11,7 @@ CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST = createHeader({
 	},
 	description = {
 		en = "If the following are sorted somewhere, please delete them from this list. Thanks.",
+		cn = "如果以下内容已在别处归类整理，请将它们从本清单中删除。谢谢",
 	},
 });
 root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
@@ -454,16 +455,6 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 
 	-- TBC
 	-- #if AFTER TBC
-	q(8489),	-- BETA An Intact Converter [Eversong Woods]
-	q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
-	q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
-	q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
-	q(9695),	-- The Sun King's Command [Bloodmyst Isle]
-
-	-- This might be from the Spirit of Competition?
-	q(12186),	-- FLAG: Winner
-	q(12187),	-- FLAG: Participant
-
 	filter(20, {	-- Daggers
 		i(23650),	-- Deprecated: Keanna's Will
 		i(23905),	-- Deprecated: Keanna's Will

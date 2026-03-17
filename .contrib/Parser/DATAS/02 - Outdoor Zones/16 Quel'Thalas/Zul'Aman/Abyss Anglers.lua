@@ -7,12 +7,14 @@ ABYSS_ANGLERS = createHeader({
 	icon = 2027958,
 	text = {
 		en = "Abyss Anglers",
+		cn = "深渊钓客",
 	},
 });
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
-		n(ABYSS_ANGLERS, {
+		-- This event was postponed from 12.0.1 launch to 12.0.5
+		n(ABYSS_ANGLERS, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1_LAUNCH, ADDED_12_0_5 }, }, {
 			n(ACHIEVEMENTS, {
 				ach(62118),	-- Abyss Anglers: Amazardhide Catch Case
 				ach(62117),	-- Abyss Anglers: Boarhide Catch Sack
@@ -38,6 +40,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				ach(62271),	-- Abyss Anglers: Trench Berserker
 				ach(62214),	-- Abyss Anglers: Triple-Thread Net
 			}),
-		}),
+			filter(MISC, {
+				-- TODO: Sort or move elsewhere if needed
+				i(265768),	-- Amazardhide Catch Case
+				i(265769),	-- Boarhide Catch Sack
+				i(253627),	-- Depth Grease
+				i(253516),	-- Depthdiver's Used Tank
+				i(253624),	-- Fathom-Tested Tank
+				i(265779),	-- Heavy Harpoon Cannon
+				i(265778),	-- Hollowcore Harpoon Turret
+				i(265767),	-- Loaknit-Woven Catch Satchel
+				i(253625),	-- Nalorakk's Breath Tank
+				i(253628),	-- Pahk Trench Fins
+				i(253626),	-- Reinforced Joints
+				i(265771),	-- Shallows Net
+				i(265770),	-- Triple-Thread Net
+			}),
+		})),
 	}),
 }));

@@ -5598,7 +5598,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(58898),	--
 			q(58899),	--
 			q(58913),	--
-			q(58925),	--
 			q(58935),	--
 			q(58942),	--
 			q(58943),	--
@@ -7888,7 +7887,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(67228),	--
 			q(67749),	--
 			q(68086),	--
-			q(69556),	--
 			q(69853),	--
 			q(69860),	--
 			q(69881),	--
@@ -9985,6 +9983,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
 			q(93969),	-- BETA:Call Shot
 			q(93235),	-- First Craft: M0LL1, Atomic Anomaly
+			q(90436),	-- First Craft: Pigments of the Wind
 		})),
 	}),
 }));

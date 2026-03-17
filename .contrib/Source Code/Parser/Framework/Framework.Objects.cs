@@ -483,12 +483,10 @@ namespace ATT
                 if (databaseObject.TryGetValue(primaryKey, out object keyValue))
                 {
                     // get the container for objects of this key
-                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(primaryKey,
-                        _ => new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>());
+                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(primaryKey, NewConcurrentDictionary_object_string_object);
 
                     // get the specific merged object
-                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue,
-                        _ => new ConcurrentDictionary<string, object>());
+                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue, NewConcurrentDictionary_string_object);
 
                     foreach (var pair in databaseObject)
                     {
@@ -524,12 +522,10 @@ namespace ATT
                         continue;
 
                     // get the container for objects of this key
-                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(mergeObjectFieldPair.Key,
-                        _ => new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>());
+                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(mergeObjectFieldPair.Key, NewConcurrentDictionary_object_string_object);
 
                     // get the specific merged object
-                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue,
-                        _ => new ConcurrentDictionary<string, object>());
+                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue, NewConcurrentDictionary_string_object);
 
                     //if (DebugMode)
                     //    Trace.WriteLine($"Merge>{key}:{keyValue} = {ToJSON(data)}");
@@ -537,10 +533,6 @@ namespace ATT
                     // merge the allowed fields by the key into the merged object
                     foreach (string field in mergeObjectFieldPair.Value)
                     {
-                        // 'g' is never allowed to merge from an object, even if allowed in MERGE_OBJECT_FIELDS to merge into an object from the DB
-                        if (field == "g")
-                            continue;
-
                         if (!objectData.TryGetValue(field, out object val))
                             continue;
 
@@ -553,6 +545,32 @@ namespace ATT
             }
 
             /// <summary>
+            /// Should only be used when a specific known key and keyValue for SharedData allowed by MERGE_OBJECT_FIELDS
+            /// needs to merge
+            /// </summary>
+            private static void MergedSharedDataKeyIntoObject(IDictionary<string, object> data, string key, object keyValue)
+            {
+                if (!SharedDataByPrimaryKey.TryGetValue(key, out var container))
+                    return;
+                if (!container.TryGetValue(keyValue, out ConcurrentDictionary<string, object> commonData))
+                    return;
+                if (!MERGE_OBJECT_FIELDS.TryGetValue(key, out var mergeFields))
+                    return;
+
+                foreach (var field in mergeFields)
+                {
+                    if (commonData.TryGetValue(field, out object val))
+                    {
+                        // don't replace an existing value
+                        if (!data.TryGetValue(field, out object existingVal))
+                        {
+                            data[field] = val;
+                        }
+                    }
+                }
+            }
+
+            /// <summary>
             /// Merges shared data from the database into the object.
             /// </summary>
             /// <param name="objectData">The object data to merge shared data into.</param>
@@ -561,6 +579,9 @@ namespace ATT
                 if (data.ContainsAnyKey(MergeRestrictedFields))
                     return;
 
+                // Combine the common data from all DB keys which are to merge into the Object
+                var combinedCommonData = new Dictionary<string, object>();
+                bool doInheritancePass = false;
                 foreach (var container in SharedDataByPrimaryKey.Where(c => MERGE_OBJECT_FIELDS.ContainsKey(c.Key)))
                 {
                     // does this data contain the key?
@@ -572,41 +593,69 @@ namespace ATT
                         continue;
 
                     // merge the allowed fields by key into the data object
-                    MERGE_OBJECT_FIELDS.TryGetValue(container.Key, out string[] mergeFields);
-
-                    PreMerge(data, commonData);
+                    if (!MERGE_OBJECT_FIELDS.TryGetValue(container.Key, out var mergeFields))
+                        continue;
 
                     foreach (var field in mergeFields)
                     {
                         if (commonData.TryGetValue(field, out object val))
                         {
-                            if (!data.TryGetValue(field, out object existingVal))
+                            if (!combinedCommonData.TryGetValue(field, out object existingVal))
                             {
-                                data[field] = val;
-                            }
-                            else if (!Equals(existingVal, val))
-                            {
-                                // Don't replace existing values with merge DB values
-                                if (existingVal != null && !(existingVal is IEnumerable enumerableVal))
+                                combinedCommonData[field] = val;
+                                // If a new field was just merged which itself may have merge data, we will have to re-run that field merge
+                                if (MERGE_OBJECT_FIELDS.ContainsKey(field))
                                 {
-                                    LogDebugWarn($"Ignoring different value on merge of Object.{field}='{ToJSON(existingVal)}' from DB='{ToJSON(val)}'", data);
-                                }
-                                else
-                                {
-                                    //LogDebugWarn($"Merging different value into Object.{field}='{ToJSON(existingVal)}' from DB='{ToJSON(val)}'", data);
-                                    Merge(data, field, val);
-                                }
-                            }
-
-                            // In some cases, the DB merge may include nested groups, so we need to apply inherited fields if this was the case
-                            if (field == "g" && data.TryGetValue("g", out List<object> groups))
-                            {
-                                foreach (var group in groups.AsTypedEnumerable<IDictionary<string, object>>())
-                                {
-                                    Validate_InheritedFields(group, data);
+                                    // ensure the combined data has the merge source key/val
+                                    combinedCommonData[container.Key] = keyValue;
+                                    MergedSharedDataKeyIntoObject(combinedCommonData, field, val);
                                 }
                             }
                         }
+                    }
+                }
+
+                // the data and final combinedCommonData after merging should perform any _drop against each other
+                PreMerge(combinedCommonData, combinedCommonData);
+                PreMerge(data, combinedCommonData);
+
+                // Then merge common data if any
+                if (combinedCommonData.Count == 0)
+                    return;
+
+                foreach (var kvp in combinedCommonData)
+                {
+                    if (kvp.Key == "g")
+                        doInheritancePass = true;
+
+                    // never replace raw data with DB merge data
+                    if (!data.TryGetValue(kvp.Key, out object existingVal))
+                    {
+                        data[kvp.Key] = kvp.Value;
+                    }
+                    else
+                    {
+                        // Don't replace existing values with merge DB values
+                        if (existingVal != null && !(existingVal is IEnumerable enumerableVal))
+                        {
+                            LogDebugWarn($"Ignoring different value on merge of Object. {kvp.Key}='{ToJSON(existingVal)}' from DB='{ToJSON(kvp.Value)}'", data);
+                        }
+                        else
+                        {
+                            // this allows merging any IEnumerable value
+                            LogDebugWarn($"Merging additional value into Object.{kvp.Key}='{ToJSON(existingVal)}' from DB='{ToJSON(kvp.Value)}'", data);
+                            Merge(data, kvp.Key, kvp.Value);
+                        }
+                    }
+                }
+
+                // merged 'g' needs an inheritance pass
+                if (doInheritancePass && data.TryGetValue("g", out var g))
+                {
+                    foreach (var group in g.AsTypedEnumerable<IDictionary<string, object>>())
+                    {
+                        Validate_InheritedFields(group, data);
+                        // TODO: need to run prior handlers of this stage as well?? seems ok without...
                     }
                 }
             }
@@ -634,8 +683,8 @@ namespace ATT
 
                 //data.DataBreakPoint("criteriaID", 60862);
 
-                var typeObjects = PostProcessMergeIntos.GetOrAdd(key, _ => new ConcurrentDictionary<decimal, ConcurrentDataList>());
-                var mergeObjects = typeObjects.GetOrAdd(keyValue, _ => new ConcurrentDataList());
+                var typeObjects = PostProcessMergeIntos.GetOrAdd(key, NewConcurrentDictionary_decimal_ConcurrentDataList);
+                var mergeObjects = typeObjects.GetOrAdd(keyValue, NewConcurrentDataList);
 
                 //LogDebug($"Post Process Merge Added: {key}:{keyValue}", data);
                 // Processing on groups happens IN PARALLEL so if we are adding content to be post-merged during that pass
@@ -700,6 +749,8 @@ namespace ATT
                             continue;
                     }
 
+                    const string MergeIntoField = "_sort_g";
+
                     // probably cleaner way to make this chunk re-usable if other merge-filtering is required in future... can't think atm
 
                     // for '_encounterHash' merge into, make sure the merged Encounter matches the specific EventID
@@ -718,7 +769,7 @@ namespace ATT
 
                                 // match EventID when merging
                                 // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                Merge(data, "g", mergeObject);
+                                Merge(data, MergeIntoField, mergeObject);
                             }
                         }
                         else
@@ -733,7 +784,7 @@ namespace ATT
                                 TrackPostProcessMergeKey(key, keyValue);
 
                                 // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                Merge(data, "g", mergeObject);
+                                Merge(data, MergeIntoField, mergeObject);
                             }
                         }
                     }
@@ -764,7 +815,7 @@ namespace ATT
                                     if (isPetBattleHeader) header["pb"] = mergeObject["pb"];
                                     // track the data which is actually being merged into another group
                                     TrackPostProcessMergeKey(key, keyValue);
-                                    Merge(data, "g", header);
+                                    Merge(data, MergeIntoField, header);
                                     continue;
                                 }
                             }
@@ -772,7 +823,7 @@ namespace ATT
                             // track the data which is actually being merged into another group
                             TrackPostProcessMergeKey(key, keyValue);
                             // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                            Merge(data, "g", mergeObject);
+                            Merge(data, MergeIntoField, mergeObject);
                         }
                     }
                 }
@@ -780,7 +831,7 @@ namespace ATT
 
             internal static void TrackPostProcessMergeKey(string key, decimal value)
             {
-                var keyValues = PostProcessMergedKeyValues.GetOrAdd(key, _ => new ConcurrentHashSet<decimal>());
+                var keyValues = PostProcessMergedKeyValues.GetOrAdd(key, NewConcurrentHashSet_string_decimal);
 
                 //LogDebug($"Post Process MergeInto Performed: {key}:{value}");
                 keyValues.Add(value);
@@ -2181,13 +2232,8 @@ end");
             /// </summary>
             public static void PreMerge(IDictionary<string, object> entry, IDictionary<string, object> data)
             {
-                // sometimes existing data from harvests may be inaccurate, so may need to clean existing fields which have already merged in
-                if (data.TryGetValue("_drop", out object drops))
-                {
-                    PerformDrops(entry, drops);
-                }
-                // also once contrib data has been merged, we can also prevent other data from merging in as well (Item/Quest API data)
-                else if (entry.TryGetValue("_drop", out drops))
+                // once contrib data has been merged, we can also prevent other data from merging in as well (Item/Quest API data)
+                if (entry.TryGetValue("_drop", out object drops))
                 {
                     PerformDrops(data, drops);
                 }

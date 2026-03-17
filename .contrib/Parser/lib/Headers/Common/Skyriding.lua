@@ -3,6 +3,7 @@ DRAGONRIDING_RACING = createHeader({
 	icon = [[~_.asset("Interface_Racing")]],
 	text = {
 		en = WOWAPI_GetSpellName(400433),
+		tw = "馭天者競速",
 	},
 });
 SKYRIDING = createHeader({

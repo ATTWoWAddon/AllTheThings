@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ah,cat,cl,flt,h,i,o,prof,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
+local ah,cat,cl,flt,h,i,prof,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
 h(-698,{SortPriority=15,g={
 x(1,{
@@ -3614,16 +3614,8 @@ i(9260,{coords={
 [1446]={{54,93},{74,47}}},crs={7855,7856,7857,7858,7899,7901,7902,15685},f=55,q=1}),
 i(12205,{coords={
 [1445]={{34.1,22.5},{55.2,54.8}}},crs={4376,4377,4378,4379,4415},description="Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",q=1}),
-i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={221,225,1431,1437,1440},q=1}),
-o(2744),
-o(19017,{description="Can be found in the sea.",g={
-i(5503,{q=1}),
-i(5498,{q=2})}}),
-o(19018,{
-s(117748,2143,{f=5,lvl=22,q=1}),
-i(5500,{q=2}),
-i(5504,{q=1})}),
 i(8153,{description="Drops from trolls ranging from level 40 to 50.",maps={1425,1434},q=2}),
+i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={221,225,1431,1437,1440},q=1}),
 i(17965,{q=2})})}),
 x(2,{u=17,g={
 flt(3,{u=17,g={
@@ -4879,13 +4871,13 @@ s(170821,36415,{f=3,lvl=79,q=2,u=30}),
 s(170812,36406,{f=3,lvl=70,q=2,u=30}),
 s(171625,37756,{f=3,lvl=74,q=3,u=30})}}),
 flt(102,{u=30,g={
-toy(37254,{b=1,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11},u=30})}}),
+toy(37254,{b=1,lvl=80,q=4,u=30})}}),
 flt(50,{u=30,g={
 i(44663,{crs={32357,32358,32361,32377,32386,32398,32400,32409,32417,32422,32429,32438,32447,32471,32475,32481,32485,32487,32491,32495,32500,32501,32517,32630,33776,35189,38453},description="Drops from any of the Northrend Rares. Contains some gold, Frostweave Cloth and crystallized motes.",q=1,u=30}),
 i(43297,{lvl=77,q=2,requireSkill=755,u=30}),
 i(36812,{description="Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar.",u=30})}}),
 flt(53,{u=30,g={
-i(37835,{f=53,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11},u=30})}}),
+i(37835,{f=53,lvl=80,q=4,u=30})}}),
 flt(52,{u=30,g={
 i(36428,{f=52,lvl=78,q=2,u=30}),
 i(36424,{f=52,lvl=74,q=2,u=30}),
@@ -5322,7 +5314,7 @@ s(171626,37757,{f=4,lvl=75,q=3,u=30}),
 s(171632,37764,{f=5,lvl=72,q=3,u=30}),
 s(171637,37769,{f=5,lvl=77,q=3,u=30}),
 s(171647,37779,{f=6,lvl=77,q=3,u=30}),
-s(175249,44312,{f=7,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11},u=30}),
+s(175249,44312,{f=7,lvl=80,q=4,u=30}),
 s(171640,37772,{f=6,lvl=70,q=3,u=30})}}),
 cat(251,{u=30,g={
 s(171654,37787,{f=7,lvl=75,q=3,u=30}),
@@ -5852,7 +5844,7 @@ s(171657,37790,{f=7,lvl=77,q=3,u=30}),
 s(171652,37785,{f=7,lvl=73,q=3,u=30}),
 s(171646,37778,{f=6,lvl=76,q=3,u=30}),
 s(171630,37762,{f=5,lvl=70,q=3,u=30}),
-s(175246,44309,{f=4,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11},u=30}),
+s(175246,44309,{f=4,lvl=80,q=4,u=30}),
 s(171629,37761,{f=4,lvl=78,q=3,u=30}),
 s(171641,37773,{f=6,lvl=71,q=3,u=30})}}),
 flt(56,{u=30,g={
@@ -5982,7 +5974,7 @@ i(31952,{awp=20100,q=2}),
 i(5758,{q=2}),
 i(4632,{q=2}),
 i(43575,{awp=30002,q=1,g={
-s(174858,43611,{f=25,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11}}),
+s(174858,43611,{f=25,lvl=80,q=4}),
 i(43612,{f=36,lvl=80,q=4,rwp=50004}),
 s(174860,43613,{f=20,lvl=80,q=4})}}),
 i(4638,{q=2,sym={{"select","itemID",21947,21945,16215,11225,16218,11208,8390,8387,8389,14467,10320,10302,10315,7993,7990,7989,12683,9295,3395}}}),

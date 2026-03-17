@@ -1,3 +1,7 @@
+1.15.0.52124
+faction(2588),	-- S03 - Scarlet Crusade Disguise
+1.15.2.53941
+faction(2646),	-- S03 - 50 - Tanaris Arena Opponent
 1.15.3.55112
 faction(2650),	-- S03 - 60 - Western Plaguelands - Mage Runecarving
 1.15.3.55391

@@ -4180,7 +4180,11 @@ i(238562,{b=1,requireSkill=202,spellID=1225666})}})}}),
 h(-246,{requireSkill=202,g={
 i(263456,{b=1,isWeekly=1,requireSkill=202,spellID=1270533,g={
 cu(3153,{requireSkill=202})}}),
+q(95138,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",245809}},requireSkill=202,g={
+cu(3153,{requireSkill=202})}}),
 q(93534,{isWeekly=1,providers={{"i",259194}},requireSkill=202,g={
+cu(3153,{requireSkill=202})}}),
+q(93535,{isWeekly=1,providers={{"i",259195}},requireSkill=202,g={
 cu(3153,{requireSkill=202})}})}})}})}),
 prof(129,{rwp=80001,u=2,g={
 x(1,{awp=30002,requireSkill=129,u=2,g={
@@ -4977,6 +4981,9 @@ q(93702,{coords={
 i(263462,{b=1,requireSkill=182,spellID=1270534})}}),
 q(93703,{coords={
 [2393]={{48.3,51.4}}},isWeekly=1,lvl=78,qgs={243355},requireSkill=182,g={
+i(263462,{b=1,requireSkill=182,spellID=1270534})}}),
+q(93704,{coords={
+[2393]={{48.3,51.4}}},isWeekly=1,lvl=78,qgs={243355},requireSkill=182,g={
 i(263462,{b=1,requireSkill=182,spellID=1270534})}})}}),
 flt(200,{description="These are learned by specialization.",requireSkill=182,g={
 r(1221181,{cost={{"c",3154,1}},requireSkill=182,skillID=2912}),
@@ -5039,7 +5046,7 @@ crit(61609,{achID=18859,id=2,providers={{"n",209635}},r=2}),
 crit(61611,{achID=18859,id=4,providers={{"n",209637}},r=2}),
 crit(61610,{achID=18859,id=3,providers={{"n",209636}},r=2}),
 crit(61613,{achID=18859,id=6,providers={{"n",209639}},r=2})}}),
-ach(18724,{requireSkill=773,sourceQuests={39695}}),
+ach(18724,{providers={{"i",226036},{"i",232935},{"i",232936},{"i",232937},{"i",244147},{"i",244148},{"i",244149}},questID=39695,requireSkill=773}),
 ach(18879,{providers={{"s",419575}},requireSkill=773}),
 ach(18878,{providers={{"s",419575}},requireSkill=773}),
 ach(18877,{providers={{"s",419575}},requireSkill=773}),
@@ -6032,7 +6039,7 @@ ach(62244,{requireSkill=755,g={
 title(746,{requireSkill=755})}})}}),
 h(-45,{requireSkill=755,g={
 q(93694,{coords={
-[2393]={{48.2,55.1}}},isWeekly=1,lvl=78,qgs={243345},requireSkill=755,sourceQuests={93729},g={
+[2393]={{45,55.2},{48.2,55.1}}},isWeekly=1,lvl=78,qgs={243283,243345},requireSkill=755,sourceQuests={93729},g={
 i(263458,{b=1,isWeekly=1,requireSkill=755,spellID=1270536})}})}}),
 flt(200,{description="These are learned by specialization.",requireSkill=755,g={
 r(1230482,{cost={{"c",3156,1}},learnedAt=60,requireSkill=755,skillID=2914}),
@@ -7526,7 +7533,18 @@ i(263461,{b=1,requireSkill=393,spellID=1270539})}}),
 q(93710,{coords={
 [2393]={{43.2,55.6}}},isWeekly=1,lvl=78,qgs={243527},requireSkill=393,g={
 i(263461,{b=1,requireSkill=393,spellID=1270539})}})}}),
-flt(200,{description="These are learned by specialization.",requireSkill=393}),
+flt(200,{description="These are learned by specialization.",requireSkill=393,g={
+r(1226037,{cost={{"c",3159,1}},requireSkill=393,skillID=2917}),
+r(1225948,{cost={{"c",3159,1}},requireSkill=393,skillID=2917}),
+r(1225939,{cost={{"c",3159,1}},requireSkill=393,skillID=2917}),
+r(1225943,{cost={{"c",3159,1}},requireSkill=393,skillID=2917}),
+r(1225945,{cost={{"c",3159,1}},requireSkill=393,skillID=2917}),
+r(1225946,{cost={{"c",3159,1}},requireSkill=393,skillID=2917}),
+r(1225944,{cost={{"c",3159,1}},requireSkill=393,skillID=2917}),
+r(1225940,{cost={{"c",3159,1}},requireSkill=393,skillID=2917}),
+r(1223388,{cost={{"c",3159,1}},requireSkill=393}),
+r(1225942,{cost={{"c",3159,1}},requireSkill=393,skillID=2917}),
+r(1225941,{cost={{"c",3159,1}},requireSkill=393,skillID=2917})}}),
 h(-56,{requireSkill=393,g={
 o(525891,{coords={
 [2437]={{33.1,79.1}}},questID=89172,requireSkill=393,g={

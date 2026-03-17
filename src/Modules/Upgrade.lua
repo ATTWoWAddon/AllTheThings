@@ -366,28 +366,31 @@ local BonusIDNextUnlock = {
 	-- 12274-12281
 
 	-- Veteran
-	[12282] = 12286,
-	[12283] = 12286,
-	[12284] = 12286,
-	[12285] = 12286,
+	-- [12282] = 12286,
+	-- [12283] = 12286,
+	-- [12284] = 12286,
+	-- [12285] = 12286,
 	-- 12286-12289
 
 	-- Champion
-	[12290] = 12294,
-	[12291] = 12294,
-	[12292] = 12294,
-	[12293] = 12294,
+	-- [12290] = 12294,
+	-- [12291] = 12294,
+	-- [12292] = 12294,
+	-- [12293] = 12294,
 	-- 12294-12297
 
 	-- Hero
-	[12350] = 12354,
-	[12351] = 12354,
-	[12352] = 12354,
-	[12353] = 12354,
+	-- [12350] = 12354,
+	-- [12351] = 12354,
+	-- [12352] = 12354,
+	-- [12353] = 12354,
 	-- 12354-12355
 
 	-- Myth
 	-- 12356-12361
+
+	-- Going forward in MID, Upgrade tracks no longer change appearance
+	-- so we will no longer need to track new bonusIDs here
 
 }
 -- Which bonusID nested upgrades are allowed to be nested under an already-upgraded listing

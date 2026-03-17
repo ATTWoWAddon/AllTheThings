@@ -765,11 +765,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--     TWW      --
 	------------------
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		--hqt(86534),	-- temporary until 11.2.7 to prevent a parser warning due to bad blizz data
-		q(94708, { ["isDaily"] = true, ["timeline"] = { ADDED_12_0_0 } }),	-- Alex: TODO: Blizzard bug - Weekly reputation: Depthborn Eelamental
-		q(94710, { ["timeline"] = { ADDED_12_0_0 } }),						-- Alex: TODO: Blizzard bug - Weekly reputation: Ash'an the Empowered
 		q(94711, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
-		q(94713, { ["timeline"] = { ADDED_12_0_0 } }),						-- Alex: Weekly reputation: Chironex, Blizzard at their best as always. TODO: Blizzard bug, remove with Midnight reales.
 		q(95270, { ["isDaily"] = true, ["timeline"] = { ADDED_11_2_7 } }),	-- Triggeres literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
 	})),
 
@@ -988,7 +984,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47495),	-- Insatiable Appetite [UNUSED]
 		q(39044),	-- Unused
 		-- q(50690),	-- Unused - Alex: TWW quest in Hallowfall
-		q(54781),	-- UNUSED - Alex: unflagged with 91938 when I fly into area with Stormmarion Assault in Midnight alpha (spellID 1248080)
+		q(54781),	-- UNUSED - Alex: unflagged with 91938 when I fly into area with Stormarion Assault in Midnight alpha (spellID 1248080)
 		q(37812),	-- UNUSED: Test Race: 1 Marker
 		q(38845),	-- Unused
 		-- q(59038),	-- Got suddenly appeared. Same time as I was chatting. We finished Temple of Jade Serpent, lvl 16, 22, 46 (I'm the 46). Goblin in group with Vulpera Party Sync enabled

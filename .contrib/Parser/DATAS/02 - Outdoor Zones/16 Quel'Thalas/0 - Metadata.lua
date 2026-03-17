@@ -43,6 +43,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["maps"] = {
 				2526,	-- Lair of Predaxas
 				2527,	-- Lair of Predaxas
+				2444,	-- Slayer's Rise (Outdoor)
 			},
 		}),
 		m(MAP.MIDNIGHT.ZULAMAN, {

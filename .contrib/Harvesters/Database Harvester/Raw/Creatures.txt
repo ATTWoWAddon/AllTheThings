@@ -24256,3 +24256,37 @@
 254689@@@Do, Child of Filo
 12.0.1.66263
 248791@@@Voidseer Orivane
+12.0.1.66337
+260377@@@Scouting Table
+260381@@@Scouting Table
+12.0.1.66384
+264213@@@Abysslick
+12.0.5.66330
+61317@@@Long-Tailed Mole
+252608@@@Domanaar Ritualist
+252824@@@[DNT] Invisible Stalker - Void Assaults
+254642@@@Inquisitive Butterfly
+254718@@@Inquisitive Fly Swarm
+255380@@@Twilight Infiltrator
+257186@@@Kill Credit [DNT]
+257187@@@Kill Credit [DNT]
+257188@@@Kill Credit [DNT]
+257335@@@Inquisitive Bee
+259721@@@Twilight Infiltrator
+259755@@@Stablemaster Aelius
+261451@@@Echo of Nalorakk
+261676@@@Void-Scarred Eaglet
+261684@@@Chubs
+262066@@@Overloaded Manaling
+262089@@@Void-Corrupted Snapdragon
+262090@@@Void-Touched Chick
+262092@@@Void-Touched Lynx Kitten
+262422@@@Rescued Dragonhawk Chick
+262427@@@Void-Infused Mindbreaker Fry
+262647@@@Void Portal Bunny
+262786@@@Wriggling Capybara
+262787@@@Cappy
+262788@@@Curious Lynx Kitten
+263227@@@[DNT] Death Bunny
+264250@@@Nina Mear
+264252@@@Mark Mear

@@ -72,7 +72,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 35.0, 59.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
 						o(587126, {	-- Training Rod of Polymorph
-							i(255842),	-- Training Rod of Polymorph (QI!)
+							["coord"] = { 36.5, 56.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+							["groups"] = { i(255842) },	-- Training Rod of Polymorph (QI!)
 						}),
 						o(613517, {	-- Tome of Polymorph
 							["coord"] = { 35.7, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -84,6 +85,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 61.6, 55.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),
 				--
+				q(92139, {	-- Special Assignment: Shade and Claw
+					["coord"] = { 60.2, 81.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
 				q(92145, {	-- Special Assignment: The Grand Magister's Drink
 					["coord"] = { 40.7, 61.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {

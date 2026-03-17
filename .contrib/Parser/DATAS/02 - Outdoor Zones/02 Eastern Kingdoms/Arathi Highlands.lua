@@ -1426,6 +1426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["providers"] = {
 								{ "i", 4473 },	-- Eldritch Shackles
 								{ "i", 4472 },	-- Scroll of Myzrael
+								{ "o", 138492 },	-- Shards of Myzrael
 							},
 							["coord"] = { 62.6, 34.6, ARATHI_HIGHLANDS },
 							["cr"] = 2755,	-- Myzrael

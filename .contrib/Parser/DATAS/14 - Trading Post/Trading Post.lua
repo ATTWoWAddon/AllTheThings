@@ -338,7 +338,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(500, i(190562)),	-- Aldori War Mace
 				traderstender(600, i(190146)),	-- Antoran Felspire
 				traderstender(600, i(190560)),	-- Conquest
-				traderstender(750, iensemble(200915)),	-- Ensemble: Sylvan Stalker’s Leathers
+				traderstender(750, iensemble(200915)),	-- Ensemble: Sylvan Stalker's Leathers
 				traderstender(100, iensemble(190528)),	-- Ensemble: Vagabond's Violet Threads
 				traderstender(100, iensemble(190529)),	-- Ensemble: Wanderer's Violet Trappings
 				traderstender(50, i(190097)),	-- Fabulously Flashy Finery
@@ -1248,7 +1248,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 							traderstender(350, iensemble(200884)),	-- Ensemble: Glorious Dragonrider's Mail
 							traderstender(350, iensemble(210883)),	-- Ensemble: Scarlet Zealots Trappings
 							traderstender(350, iensemble(190799)),	-- Ensemble: Swashbuckling Buccaneer's Slops
-							traderstender(350, iensemble(200915)),	-- Ensemble: Sylvan Stalker’s Leathers
+							traderstender(350, iensemble(200915)),	-- Ensemble: Sylvan Stalker's Leathers
 							traderstender(40, i(190097)),	-- Fabulously Flashy Finery
 							traderstender(70, i(190800)),	-- Gleaming Mail Tabard
 							traderstender(40, i(190063)),	-- Greatcloak of the Virtuous Protector

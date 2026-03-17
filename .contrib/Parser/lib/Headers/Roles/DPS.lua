@@ -12,6 +12,6 @@ DPS_ROLE = createHeader({
 		-- TODO: pt = "",
 		ru = "Боец",
 		cn = "伤害输出",
-		-- TODO: tw = "",
+		tw = "傷害輸出",
 	},
 });

@@ -70,7 +70,6 @@ s(156868)/i(2519),	-- y Shot \\ Heavy Shot
 s(156885)/i(2543),	--
 s(156916)/i(2586),	-- master's Robe \\ Gamemaster's Robe
 s(156945)/i(2664),	-- ner Fang \\ Spinner Fang
-s(157041)/i(2944),	-- ed Eye of Paleth \\ Cursed Eye of Paleth
 s(157042)/i(2946),	-- en Balanced Throwing Dagger \\ Broken Balanced Throwing Dagger \\ Balanced Throwing Dagger
 s(157043)/i(2947),	-- en Small Throwing Knife \\ Broken Small Throwing Knife \\ Small Throwing Knife
 s(157046)/i(2952),	--
@@ -121,7 +120,6 @@ s(157567)/i(3981),	-- pped Gloves \\ Strapped Gloves
 s(157568)/i(3982),	-- pped Pants \\ Strapped Pants
 s(157569)/i(3983),	-- pped Shoulderpads \\ Strapped Shoulderpads
 s(157570)/i(3984),	-- pped Armor \\ Strapped Armor
-s(157571)/i(3985),	-- grammed Sash \\ Monogrammed Sash
 s(157574)/i(3988),	-- e Wall Shield \\ Plate Wall Shield
 s(157577)/i(3991),	-- ed Buckler \\ Plated Buckler
 s(157598)/i(4012),	-- ling Chain Gloves \\ Sterling Chain Gloves
@@ -491,31 +489,4 @@ s(164752)/i(21799),	--
 s(164762)/i(21832),	--
 s(165061)/i(22743),	-- dsail Sash \\ Bloodsail Sash
 s(165068)/i(22751),	--
-s(165148)/i(22999),	-- rd of the Argent Dawn \\ Tabard of the Argent Dawn
-s(165178)/i(23078),	-- tlets of Undead Slaying \\ Gauntlets of Undead Slaying
-s(165179)/i(23081),	-- wraps of Undead Slaying \\ Handwraps of Undead Slaying
-s(165180)/i(23082),	-- guards of Undead Slaying \\ Handguards of Undead Slaying
-s(165181)/i(23084),	-- es of Undead Cleansing \\ Gloves of Undead Cleansing
-s(165182)/i(23085),	-- of Undead Cleansing \\ Robe of Undead Cleansing
-s(165183)/i(23087),	-- stplate of Undead Slaying \\ Breastplate of Undead Slaying
-s(165184)/i(23088),	-- tguard of Undead Slaying \\ Chestguard of Undead Slaying
-s(165185)/i(23089),	-- c of Undead Slaying \\ Tunic of Undead Slaying
-s(165186)/i(23090),	-- ers of Undead Slaying \\ Bracers of Undead Slaying
-s(165187)/i(23091),	-- ers of Undead Cleansing \\ Bracers of Undead Cleansing
-s(165188)/i(23092),	-- tguards of Undead Slaying \\ Wristguards of Undead Slaying
-s(165189)/i(23093),	-- twraps of Undead Slaying \\ Wristwraps of Undead Slaying
-s(165190)/i(23124),	-- f of Balzaphon \\ Staff of Balzaphon
-s(165191)/i(23126),	-- tband of Balzaphon \\ Waistband of Balzaphon
-s(165192)/i(23127),	-- k of Revanchion \\ Cloak of Revanchion
-s(165193)/i(23128),	-- Shadow's Grasp \\ The Shadow's Grasp
-s(165194)/i(23129),	-- ers of Mending \\ Bracers of Mending
-s(165195)/i(23132),	-- Blackwood's Blade \\ Lord Blackwood's Blade
-s(165196)/i(23139),	-- Blackwood's Buckler \\ Lord Blackwood's Buckler
-s(165197)/i(23156),	-- kwood's Thigh \\ Blackwood's Thigh
-s(165198)/i(23168),	-- n's Focal Dagger \\ Scorn's Focal Dagger
-s(165199)/i(23170),	-- Frozen Clutch \\ The Frozen Clutch
-s(165200)/i(23171),	-- Axe of Severing \\ The Axe of Severing
-s(165201)/i(23173),	-- ination Skin Leggings \\ Abomination Skin Leggings
-s(165202)/i(23177),	-- Falther'ess' Finger \\ Lady Falther'ess' Finger
-s(165203)/i(23178),	-- le of Lady Falther'ess \\ Mantle of Lady Falther'ess
 s(165308)/i(171470),	--

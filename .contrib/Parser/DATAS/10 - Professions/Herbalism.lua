@@ -1581,6 +1581,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			q(93700),	-- Experience Tranquility
 			q(93702),	-- The Root of Life
 			q(93703),	-- Sin'dorei Vices
+			q(93704),	-- Traditional Harvests
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

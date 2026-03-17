@@ -1685,7 +1685,6 @@ i(192660);	-- Massive Hydra Claw
 i(192623);	-- Massive Proto-Dragon Claw
 i(192709);	-- Membranous Wing
 i(192714);	-- Mgrrrl
-i(198390);	-- Milling
 i(200841);	-- Miniature Prismatic Disc
 i(192695);	-- Molten Mandible
 i(201466);	-- Mote of Dreams
@@ -2377,10 +2376,6 @@ i(228481);	-- Tiny Fathomclam
 i(227309);	-- Titanshake
 i(220223);	-- Torn Gossamer Scrap
 i(220272);	-- Torn Manuscript Page
-i(222622);	-- Transcribe to Ascension
-i(222625);	-- Transcribe to Radiance
-i(222624);	-- Transcribe to Symbiosis
-i(222623);	-- Transcribe to Vivacity
 i(220300);	-- Translucent Wing
 i(220282);	-- Tuft of Whiskers
 i(213266);	-- Twitching Snack
@@ -2730,7 +2725,6 @@ i(260256);	-- Luxurious Omelette
 i(260621);	-- Magic Infused Bark
 i(264987);	-- Magister's Mead
 i(260255);	-- Managi Roll
-i(262908);	-- Milling
 i(260693);	-- Mossy Lump of Dirt
 i(260275);	-- Mukleech Curry
 i(264991);	-- Murder Roe

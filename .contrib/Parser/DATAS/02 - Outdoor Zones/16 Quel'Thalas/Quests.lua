@@ -408,19 +408,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			header(HEADERS.AchCriteria, 60891.02, {	-- A Favor for the Lion
 				q(91828, {	-- A Favor for the Lion
-					["sourceQuests"] = { 91827 },	-- No Loose Ends (TODO: Nope!)
+					["sourceQuests"] = {
+						91827,	-- No Loose Ends
+						86522,	-- Daylight is Breaking
+					},
 					["provider"] = { "n", 242381 },	-- Valeera Sanguinar
 					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(91829, {	-- One by One
 					["sourceQuests"] = { 91828 },	-- A Favor for the Lion
-					["provider"] = { "n", 248982 },	-- Valeera Sanguinar
+					["qg"] = {
+						248982,	-- Valeera Sanguinar
+						250295,	-- Valeera Sanguinar (mobileNPC)
+					},
 					["coord"] = { 40.4, 71.7, MAP.MIDNIGHT.ZULAMAN },
 				}),
 				q(91830, {	-- Intercepted
 					["sourceQuests"] = { 91828 },	-- A Favor for the Lion
-					["provider"] = { "n", 250295 },	-- Valeera Sanguinar
-					--["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["qg"] = {
+						248982,	-- Valeera Sanguinar
+						250295,	-- Valeera Sanguinar (mobileNPC)
+					},
+					["coord"] = { 40.4, 71.7, MAP.MIDNIGHT.ZULAMAN },
 					["groups"] = {
 						o(567202, {	-- Cult Orders
 							["coords"] = {
@@ -444,8 +453,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				}),
 				q(91831, {	-- Keys Are Optional
 					["sourceQuests"] = { 91828 },	-- A Favor for the Lion
-					["provider"] = { "n", 250295 },	-- Valeera Sanguinar
-					--["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["qg"] = {
+						248982,	-- Valeera Sanguinar
+						250295,	-- Valeera Sanguinar (mobileNPC)
+					},
+					["coord"] = { 40.4, 71.7, MAP.MIDNIGHT.ZULAMAN },
 				}),
 				q(91918, {	-- Delves: Measure Once, Cut Twice
 					["sourceQuests"] = {
@@ -453,48 +465,48 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						91831,	-- Keys Are Optional
 						91829,	-- One by One
 					},
-					["provider"] = { "n", 250295 },	-- Valeera Sanguinar
-					--["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["provider"] = { "n", 250295 },	-- Valeera Sanguinar (mobileNPC)
+					["coord"] = { 40.4, 71.7, MAP.MIDNIGHT.ZULAMAN },	-- Vignette location on the map
 				}),
 			}),
 		}),
 		header(HEADERS.Achievement, 42117, {	-- The War of Light and Shadow
 			header(HEADERS.AchCriteria, 42117.01, {	-- Foothold
 				q(90777, {	-- Feeding the Flame
-					-- ["sourceQuests"] = { XXX },	-- Complete the Midnight storyline
+					["sourceQuests"] = { 86522 },	-- Daylight is Breaking
 					["provider"] = { "n", 235787 },	-- Lor'themar Theron
-					["coord"] = {  45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(88696, {	-- The Devouring Citadel
 					["sourceQuests"] = { 90777 },	-- Feeding the Flame
 					["provider"] = { "n", 247414 },	-- Lady Liadrin
-					["coord"] = {  53.0, 58.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+					["coord"] = { 53.1, 58.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				}),
 				q(88697, {	-- Clarity of Purpose
 					["sourceQuests"] = { 88696 },	-- The Devouring Citadel
 					["provider"] = { "n", 239810 },	-- High Exarch Turalyon
-					["coord"] = {  45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(88698, {	-- Master of Mayhem
 					["sourceQuests"] = { 88697 },	-- Clarity of Purpose
 					["provider"] = { "n", 239828 },	-- Magister Umbric
-					["coord"] = {  45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
-						i(257164),	-- Voidbreaker's Diadem
 						i(257165),	-- Voidbreaker's Casque
-						i(257166),	-- Voidbreaker's Shroud
+						i(257164),	-- Voidbreaker's Diadem
 						i(257167),	-- Voidbreaker's Greathelm
+						i(257166),	-- Voidbreaker's Shroud
 					},
 				}),
 				q(88699, {	-- Powerless
 					["sourceQuests"] = { 88697 },	-- Clarity of Purpose
 					["provider"] = { "n", 239828 },	-- Magister Umbric
-					["coord"] = {  45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(257178),	-- Voidbreaker's Flames
 						i(257179),	-- Voidbreaker's Mantle
-						i(257181),	-- Voidbreaker's Spaulders
 						i(257182),	-- Voidbreaker's Shoulderplates
+						i(257181),	-- Voidbreaker's Spaulders
 					},
 				}),
 				q(88700, {	-- Two Tons of Metal and Holy Fire
@@ -503,23 +515,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						88699,	-- Powerless
 					},
 					["provider"] = { "n", 239810 },	-- High Exarch Turalyon
-					["coord"] = {  45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(262610),	-- Swirling Ritual Pedestal (DECOR!)
-						i(257187),	-- Voidbreaker's Bracers
-						i(257188),	-- Voidbreaker's Wristwraps
-						i(257189),	-- Voidbreaker's Clasps
 						i(257190),	-- Voidbreaker's Armguards
+						i(257187),	-- Voidbreaker's Bracers
+						i(257189),	-- Voidbreaker's Clasps
+						i(257188),	-- Voidbreaker's Wristwraps
 					},
 				}),
 				q(91417, {	-- Seek out Arator
 					["sourceQuests"] = { 88700 },	-- Two Tons of Metal and Holy Fire
 					["provider"] = { "n", 239810 },	-- High Exarch Turalyon
-					["coord"] = {  45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(88701, {	-- The Memory Remains
 					["sourceQuests"] = { 91417 },	-- Seek out Arator
-					["provider"] = { "n", 239827 },	-- Arator
+					["qg"] = {
+						239827,	-- Arator
+						244093,	-- Sunwell Defender / Arator (mobileNPC)
+					},
 					["coord"] = { 46.0, 64.9, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						o(531891, {	-- Vanguard Scout
@@ -533,13 +548,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				}),
 				q(88702, {	-- Aegis of the Redeemer
 					["sourceQuests"] = { 91417 },	-- Seek out Arator
-					["provider"] = { "n", 239827 },	-- Arator
+					["qg"] = {
+						239827,	-- Arator
+						244093,	-- Sunwell Defender / Arator (mobileNPC)
+					},
 					["coord"] = { 46.0, 64.9, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
-						i(257209),	-- Voidbreaker's Leggings
-						i(257210),	-- Voidbreaker's Pants
-						i(257212),	-- Voidbreaker's Legguards
 						i(257213),	-- Voidbreaker's Faulds
+						i(257209),	-- Voidbreaker's Leggings
+						i(257212),	-- Voidbreaker's Legguards
+						i(257210),	-- Voidbreaker's Pants
 					},
 				}),
 				q(91426, {	-- The People's Champion
@@ -547,7 +565,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						88701,	-- The Memory Remains
 						88702,	-- Aegis of the Redeemer
 					},
-					["provider"] = { "n", 244093 },	-- Arator (Mobile)
+					["provider"] = { "n", 244093 },	-- Sunwell Defender / Arator (mobileNPC)
+					["coord"] = { 46.3, 63.2, MAP.MIDNIGHT.VOIDSTORM },	-- Vignette location on the map
 				}),
 				q(88703, {	-- The Night Before
 					["sourceQuests"] = { 91426 },	-- The People's Champion
@@ -559,10 +578,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["provider"] = { "n", 239826 },	-- Alleria Windrunner
 					["coord"] = { 51.7, 65.0, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
+						i(257218),	-- Voidbreaker's Sabatons
 						i(257214),	-- Voidbreaker's Soles
 						i(257216),	-- Voidbreaker's Striders
 						i(257217),	-- Voidbreaker's Waders
-						i(257218),	-- Voidbreaker's Sabatons
 					},
 				}),
 				q(88705, {	-- Killing Blow
@@ -570,9 +589,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["provider"] = { "n", 243886 },	-- Nadia Brighton
 					["coord"] = { 56.3, 65.1, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
+						i(257203),	-- Voidbreaker's Gauntlets
 						i(257201),	-- Voidbreaker's Glovettes
 						i(257202),	-- Voidbreaker's Grasps
-						i(257203),	-- Voidbreaker's Gauntlets
 						i(257204),	-- Voidbreaker's Handguards
 					},
 				}),
@@ -582,13 +601,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["coord"] = { 55.9, 64.8, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(264660),	-- Ren'dorei Spired Tent (DECOR!)
-						i(257183),	-- Voidbreaker's Robe
-						i(257184),	-- Voidbreaker's Jacket
-						i(257185),	-- Voidbreaker's Cuirass
 						i(257186),	-- Voidbreaker's Breastplate
+						i(257185),	-- Voidbreaker's Cuirass
+						i(257184),	-- Voidbreaker's Jacket
+						i(257183),	-- Voidbreaker's Robe
 					},
 				}),
+				------ Stay awhile and listen ------
+				--hqt(XXXXX, {	-- Stay awhile and listen: High Exarch Turalyon
+				--	["name"] = "Stay awhile and listen: High Exarch Turalyon",
+				--	["description"] = "Dialogue becomes available before turning in 'Nothing Stands Forever' (88706).",
+				--	["sourceQuests"] = { 88705 },	-- Killing Blow
+				--	["provider"] = { "n", 239810 },	-- High Exarch Turalyon
+				--	["coord"] = { 45.2, 62.9, MAP.MIDNIGHT.VOIDSTORM },
+				--}),
+				--
 			}),
+			--header(HEADERS.AchCriteria, 42117.02, {	-- The Voidspire
+			--}),
+			--header(HEADERS.AchCriteria, 42117.03, {	-- The Darkwell
+			--}),
+			--header(HEADERS.AchCriteria, 42117.04, {	-- Dawn of a New Well
+			--}),
 		}),
 	}),
 })));

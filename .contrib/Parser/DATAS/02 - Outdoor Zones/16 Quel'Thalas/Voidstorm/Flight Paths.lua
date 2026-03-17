@@ -6,7 +6,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
 		n(FLIGHT_PATHS, {
 			fp(3121, {	-- Howling Ridge, Voidstorm
-				["sourceQuests"] = { 86510 },	-- Domus Penumbra
 				["coord"] = { 51.1, 69.3, MAP.MIDNIGHT.VOIDSTORM },
 				["cr"] = 235703,	-- Riftwalker Mallroil
 			}),

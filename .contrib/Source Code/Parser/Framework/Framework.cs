@@ -562,8 +562,7 @@ namespace ATT
                 if (value < _stage) throw new InvalidOperationException($"Do not regress or stagnate in ParseStage tracking: {_stage} => {value}");
 
                 _stage = value;
-                Log($"PARSER STAGE: {_stage.ToString()}...");
-                //Log(_timer.ElapsedMilliseconds.ToString("000000 ") + _stage.ToString() + "...");
+                Log(_timer.ElapsedMilliseconds.ToString("000000 ") + _stage.ToString() + "...");
                 if (Handlers.TryGetValue(_stage, out var handler))
                 {
                     CurrentParseStageHandler = handler;
@@ -2038,7 +2037,7 @@ namespace ATT
             if (outputFolder.Exists)
             {
                 // Mark references to the Custom Headers in Root Categories
-                foreach(var containerKeyValue in Objects.AllContainers)
+                foreach (var containerKeyValue in Objects.AllContainers)
                 {
                     if (containerKeyValue.Value.Count > 0 && Framework.RootCategoryHeaders.TryGetValue(containerKeyValue.Key, out var obj))
                     {

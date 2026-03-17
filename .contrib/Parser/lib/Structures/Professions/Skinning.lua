@@ -158,3 +158,20 @@ TWW_SKINNING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(442572),	-- Thunderous Hide
 	r(469989, {["timeline"] = {ADDED_11_0_5}}),	-- Toughened Tempest Pelt
 });
+MID_SKINNING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	r(471014), -- Midnight Skinning
+	r(1265817), -- Artisan Skinner's Moxie
+	r(1265730), -- Deftness
+	r(1250491), -- Find High-Value Beasts
+	r(1225908),	-- Fine Void-Tempered Hide
+	r(1265723), -- Finesse
+	r(1277733), -- High-Value Beasts
+	r(1265715), -- Knowledge
+	r(1265727), -- Perception
+	r(1265712), -- Quality
+	r(1265719), -- Skill
+	r(1225902), -- Void-Tempered Hide
+	r(1225901), -- Void-Tempered Leather
+	r(1225903), -- Void-Tempered Plating
+	r(1225897), -- Void-Tempered Scales
+});

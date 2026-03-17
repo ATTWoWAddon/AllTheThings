@@ -24,6 +24,7 @@ SLAYERS_RISE = createHeader({
 	icon = 2125377,
 	text = {
 		en = "Slayer's Rise",
+		cn = "屠戮者高地",
 	},
 });
 WORLD_PVP = createHeader({

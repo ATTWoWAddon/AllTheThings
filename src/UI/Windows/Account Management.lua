@@ -421,6 +421,7 @@ local whiteListedFields = {
 	BattlePets = true,
 	Exploration = true,
 	Factions = true,
+	FirstCrafts = true,
 	FlightPaths = true,
 	Followers = true,
 	GarrisonBuildings = true,

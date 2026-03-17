@@ -12,8 +12,8 @@ LEVELING_CHARACTERS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "升级角色",
-		-- TODO: tw = "",
+		cn = "升级中角色",
+		tw = "升級中角色",
 	},
 	description = {
 		en = "Contains things that can be obtained only by characters that are not max level.",
@@ -26,6 +26,6 @@ LEVELING_CHARACTERS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含只能由未达到最高等级的角色获得的物品。",
-		-- TODO: tw = "",
+		tw = "包含只能由未達到最高等級的角色獲得的物品。",
 	},
 });

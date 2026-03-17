@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ah,cat,cl,cu,flt,h,i,o,prof,q,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
+local ah,cat,cl,cu,flt,h,i,prof,q,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
 h(-698,{SortPriority=15,g={
 x(1,{
@@ -3637,17 +3637,9 @@ i(9260,{coords={
 [71]={{69.4,53.5},{74,47}}},crs={3382,3383,3384,7855,7858,40632,40635,40636,44168},f=55,q=1}),
 i(12205,{coords={
 [70]={{34.1,22.5},{55.2,54.8}}},crs={4376,4378,4379,4415},description="Drops from spiders in higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",q=1}),
-i(17965,{q=2}),
-o(2744),
-o(19017,{description="Can be found in the sea.",g={
-i(5503,{q=1}),
-i(5498,{q=2})}}),
-o(19018,{
-s(117748,2143,{f=5,lvl=22,q=1}),
-i(5500,{q=2}),
-i(5504,{q=1})}),
 i(8153,{description="Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",q=2}),
-i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225},q=1})})}),
+i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225},q=1}),
+i(17965,{q=2})})}),
 x(2,{u=17,g={
 flt(3,{u=17,g={
 s(135398,25043,{f=3,lvl=70,q=2,u=17}),

@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
 		n(ZONE_DROPS, {
 			i(241000, {	-- Cracked Holokey (QS!)
+				["sourceQuests"] = { 86536 },	-- Reliable Enemies
 				["crs"] = {
 					236859,	-- Manaforge Netherdrifter
 					236857,	-- Manaforge Siphoner

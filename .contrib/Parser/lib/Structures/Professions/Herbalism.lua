@@ -151,7 +151,7 @@ TWW_HERBALISM = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(441327),	-- Herb Gathering (Khaz Algar)
 	r(193290),	-- Herbalism Journal
 	r(452269),	-- Deepgrove Rose
-	r(435811),	-- Mycobloom
+	r_withQuest(435811, 79906),	-- Mycobloom
 });
 MID_HERBALISM = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471009),	-- Herb Gathering (Quel'Thalas)

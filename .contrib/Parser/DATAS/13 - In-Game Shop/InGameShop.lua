@@ -205,6 +205,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
+		-- i(267303, {	-- Roofus (PET!)
+		-- 	["description"] = "Part of the charity Roofus Pack."
+		-- 	["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		-- }),
 		i(239082, {	-- Sa'bak's Blessed
 			["timeline"] = { ADDED_11_1_7 },
 		}),
@@ -677,6 +681,18 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(250795),	-- Colorful Dotted Egg (DECOR!)
 		i(250794),	-- Colorful Shroomic Egg (DECOR!)
 		i(250796),	-- Colorful Striped Egg (DECOR!)
+		-- i(xxxxxx, {	-- Dog Bed (DECOR!)
+		-- 	["description"] = "Part of the charity Roofus Pack."
+		-- 	["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		-- }),
+		-- i(xxxxxx, {	-- Dog Bowl (DECOR!)
+		-- 	["description"] = "Part of the charity Roofus Pack."
+		-- 	["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		-- }),
+		-- i(xxxxxx, {	-- Dog House (DECOR!)
+		-- 	["description"] = "Part of the charity Roofus Pack."
+		-- 	["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		-- }),
 		i(260728),	-- Horde Doormat (DECOR!)
 		i(253546),	-- Lush Garden Butterfly Sconce (DECOR!)
 		i(252419),	-- Lush Garden Fungal Basin (DECOR!)
