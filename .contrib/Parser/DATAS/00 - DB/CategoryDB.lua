@@ -306,7 +306,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			ko = "맑은 정신의",
 			pt = "Mente Limpa",
 			ru = "ясного разума",
-			-- cn = "",
+			cn = "清心",
 			-- TODO: tw = "",
 		},
 	},
