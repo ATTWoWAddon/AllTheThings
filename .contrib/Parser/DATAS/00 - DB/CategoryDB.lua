@@ -6828,7 +6828,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			-- TODO: ko = "",
 			-- TODO: pt = "",
 			-- TODO: ru = "",
-			cn =诺森德设计 "",
+			cn = "诺森德设计",
 			-- TODO: tw = "",
 		},
 	},
