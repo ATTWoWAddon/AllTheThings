@@ -1232,7 +1232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Sha'ni's Nose-Ring
 							["provider"] = { "i", 11058 },	-- Sha'ni's Nose-Ring
-							["cr"] = 3822,	-- Krom'Grul
+							["cr"] = 8977,	-- Krom'Grul
 						}),
 						i(11869, {	-- Sha'ni's Ring
 							["timeline"] = { REMOVED_4_0_3 },
