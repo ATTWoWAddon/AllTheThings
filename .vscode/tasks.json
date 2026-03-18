@@ -5,7 +5,7 @@
       "label": "Normalize Lua Table",
       "type": "shell",
       "command": "node",
-      "args": ["${workspaceFolder}/normalize-lua-table.js", "\"${file}\""],
+      "args": ["${workspaceFolder}/.contrib/.tools/normalize-lua-table.js", "\"${file}\""],
       "problemMatcher": [],
       "group": "none"
     }
