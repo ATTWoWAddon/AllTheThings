@@ -693,20 +693,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
 			}),
-			-- #if AFTER TBC
-			q(6568, {	-- Mistress of Deception
-				["sourceQuest"] = 6567,	-- The Champion of the Horde
-				["providers"] = {
-					{ "n", 10182 },	-- Rokaro <Champion of the Horde>
-					{ "i", 16785 },	-- Rokaro's Letter
-				},
-				["coord"] = { 25.6, 70.0, DESOLACE },
-				["timeline"] = { REMOVED_4_0_3 },
-				["maps"] = { WESTERN_PLAGUELANDS },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 55,
-			}),
-			-- #endif
 			q(4866, {	-- Mother's Milk
 				-- #if BEFORE 4.0.3
 				["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
@@ -1074,13 +1060,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 				},
 			}),
-			-- #if BEFORE TBC
-			q(6568, {	-- The Testament of Rexxar
+			q(6568, {	-- The Testament of Rexxar(Classic)/Mistress of Deception(TBC)
 				["sourceQuest"] = 6567,	-- The Champion of the Horde
 				["providers"] = {
-					{ "n", 10182 },	-- Rexxar <Champion of the Horde>
-					{ "i", 16785 },	-- Rexxar's Testament
+					{ "n", 10182 },	-- Rexxar <Champion of the Horde>/Rokaro <Champion of the Horde>
+					{ "i", 16785 },	-- Rexxar's Testament/Rokaro's Letter
 				},
+				-- #if BEFORE TBC
 				["coords"] = {
 					{ 54.0, 3.2, DESOLACE },
 					{ 62.8, 22.6, DESOLACE },
@@ -1092,12 +1078,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ 40.8, 78.6, DESOLACE },
 					{ 42.4, 96.8, DESOLACE },
 				},
+				-- #else
+				["coord"] = { 25.6, 70.0, DESOLACE },
+				-- #endif
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WESTERN_PLAGUELANDS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 			}),
-			-- #endif
 			q(4809, {	-- Chillwind Horns
 				["sourceQuest"] = 4808,	-- Felnok Steelspring
 				["qg"] = 10468,	-- Felnok Steelspring
