@@ -4,6 +4,7 @@ createLocalizationString({
 	export = true,
 	text = {
 		en = "Criteria",
+		ru = "Критерия",
         cn = "条件",
 	},
 })

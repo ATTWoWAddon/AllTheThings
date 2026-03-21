@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		ru = "Профессии",
+		ru = "Профессия",
 		ko = "전문 기술들",
 		cn = "专业",
 		tw = "專業",
