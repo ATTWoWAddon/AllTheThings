@@ -3,6 +3,7 @@ createLocalizationString({
 	constant = "DIFFICULTY",
 	export = true,
 	text = {
-		en = [[~CRF_DIFFICULTY]],
+		en = "Difficulty",
+		cn = "难度",
 	},
 })
