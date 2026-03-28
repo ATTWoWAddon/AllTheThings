@@ -93,7 +93,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			-- Weekly Quests
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
-			},{
+			}, {
 				q(92429, {	-- Alternative Skinning
 					["qgs"] = {
 						251056,	-- Gerath
@@ -278,7 +278,6 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(253523, 5),	-- Astalor's Hookah (DECOR!)
 					i_DecorCoupons(253600, 5),	-- Eversong Crystal Glass (DECOR!)
 					i_DecorCoupons(253522, 5),	-- Thalassian Chest (DECOR!)
-					-- Exo Note: For these, there probably be a sourceQuests or we will need a new system that tracks milestones of the Endeavor as these items are locked behind them
 					-- Reach the first milestone of the endeavor
 					i_DecorCoupons(253524, 10),	-- 590 Quel'Lithien Red Display Bottle (DECOR!)
 					i_DecorCoupons(254235, 5),	-- Sin'dori Artisan's Easel (DECOR!)
@@ -297,7 +296,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			-- Weekly Quests
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
-			},{
+			}, {
 				q(92608, {	-- Landscape Photography
 					["qg"] = 252717,	-- Corlen Hordralin
 					["coords"] = {
