@@ -10,7 +10,7 @@ MAIL_DELIVERY_RACES = createHeader({
 	},
 });
 
-root(ROOTS.Housing,
+root(ROOTS.Housing, {
 	n(QUESTS, {
 		["timeline"] = { ADDED_11_2_7 },
 		["groups"] = {
@@ -193,7 +193,7 @@ root(ROOTS.Housing,
 		q(95411),	-- Desert Dispatch			// Bloom and Shore route
 		q(95412),	-- Runetotem Run			// Runetotem's Bounty route
 	})),
-);
+});
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, {
