@@ -1414,7 +1414,6 @@ root(ROOTS.Unsorted, {
 				i(260733),	-- Murgle's Lil' Fish Stick
 				i(260736),	-- Forest Dweller's Mossy Staff
 				i(260737),	-- Forest Dweller's Dawn Staff
-				i(260738),	-- Forest Dweller's Glowcap Staff
 				i(260739),	-- Forest Dweller's Night Staff
 				i(260741),	-- Big Lil' Blue Whirlwind
 				i(260742),	-- Big Lil' Black Whirlwind
@@ -1426,19 +1425,16 @@ root(ROOTS.Unsorted, {
 				i(260763),	-- Lil' Tan Popper
 				i(260764),	-- Lil' Green Popper
 				i(260765),	-- Lil' Red Popper
-				i(262715),	-- Simple Mossy Trowel
 				i(262716),	-- Simple Rosy Trowl
 				i(262717),	-- Simple Rooting Trowl
 				i(262718),	-- Simple Withering Trowl
 				i(262734),	-- [DNT] Mace of the Great Dark
-				i(262747),	-- Green Dagger-Tined Rake
 				i(262748),	-- [PH] Pink Rake
 				i(262749),	-- [PH] Purple Rake
 				i(262750),	-- [PH] Red Rake
 				i(262758),	-- Pepe's Mobile Home
 				i(262759),	-- Pepe's Portable Home
 				i(262760),	-- Pepe's Traveling Home
-				i(262761),	-- Pepe's Vacation Home
 				i(262819),	-- Midnight Dunecloth Skirt
 				i(262820),	-- Azure Dunecloth Skirt
 				i(262822),	-- Grassy Dunecloth Skirt
@@ -1446,7 +1442,6 @@ root(ROOTS.Unsorted, {
 				i(262824),	-- Deep Dunecloth Skirt
 				i(262825),	-- Camo Dunecloth Skirt
 				i(262826),	-- Brick Dunecloth Skirt
-				i(262827),	-- Lively Dunecloth Skirt
 				i(262828),	-- Faded Dunecloth Skirt
 				i(262829),	-- Carrot Dunecloth Skirt
 				i(262830),	-- Rosy Dunecloth Skirt
@@ -1462,7 +1457,6 @@ root(ROOTS.Unsorted, {
 				i(262842),	-- Deep Dunecloth Belt
 				i(262843),	-- Camo Dunecloth Belt
 				i(262844),	-- Brick Dunecloth Belt
-				i(262845),	-- Lively Dunecloth Belt
 				i(262846),	-- Faded Dunecloth Belt
 				i(262847),	-- Carrot Dunecloth Belt
 				i(262848),	-- Rosy Dunecloth Belt
@@ -1478,7 +1472,6 @@ root(ROOTS.Unsorted, {
 				i(262860),	-- Deep Dunecloth Vest
 				i(262861),	-- Camo Dunecloth Vest
 				i(262862),	-- Brick Dunecloth Vest
-				i(262863),	-- Lively Dunecloth Vest
 				i(262864),	-- Faded Dunecloth Vest
 				i(262865),	-- Rosy Dunecloth Vest
 				i(262866),	-- Carrot Dunecloth Vest
@@ -1504,7 +1497,6 @@ root(ROOTS.Unsorted, {
 				i(266081),	-- Basic Dark Blue Quiver
 				i(266082),	-- Basic Dark Red Quiver
 				i(266083),	-- Basic Frost Quiver
-				i(266084),	-- Farstrider's Forest Quiver
 				i(266085),	-- Basic Ice Quiver
 				i(266086),	-- Basic Light Quiver
 				i(266087),	-- Basic Light Blue Quiver
@@ -1513,7 +1505,6 @@ root(ROOTS.Unsorted, {
 				i(266090),	-- Basic Purple Quiver
 				i(266091),	-- Basic Rugged Quiver
 				i(266092),	-- Basic Sea Green Quiver
-				i(266160),	-- Trapper's Green Slippers
 				i(266901),	-- Depthdiver's Cloak
 				i(266902),	-- Depthdiver's Tabard
 				i(266903),	-- Depthdiver's Shoulderpads
@@ -1526,7 +1517,6 @@ root(ROOTS.Unsorted, {
 				i(266976),	-- [PH] Hara'ti Cloak - Blue
 				i(266977),	-- [PH] Hara'ti Set - Blue
 				i(266978),	-- [PH] Hara'ti Set - Yellow
-				i(260386),	-- Farstrider's Forest Bow
 				i(262585),	-- Pristine Lunch Bag
 				i(262587),	-- Brown Lunch Bag
 				i(262588),	-- Sack Lunch
@@ -1741,7 +1731,6 @@ root(ROOTS.Unsorted, {
 				i(257975),	-- Ensemble: Sorcerer's Cloudy Garb \\ Ensemble: Sorcerer's Cloudy Raiment
 				i(257976),	-- Ensemble: Sorcerer's Deep Garb \\ Ensemble: Sorcerer's Deep Raiment
 				i(257978),	-- Ensemble: Sorcerer's Camo Garb \\ Ensemble: Sorcerer's Camo Raiment
-				i(257987),	-- Ensemble: Sorcerer's Lively Garb \\ Ensemble: Sorcerer's Lively Raiment
 				i(257989),	-- Ensemble: Sorcerer's Faded Garb \\ Ensemble: Sorcerer's Faded Raiment
 				i(257994),	-- Ensemble: Sorcerer's Carrot Garb \\ Ensemble: Sorcerer's Carrot Raiment
 				i(258003),	-- Ensemble: Sorcerer's Plum Garb \\ Ensemble: Sorcerer's Plum Raiment
@@ -1804,7 +1793,6 @@ root(ROOTS.Unsorted, {
 				i(260383),	-- Dark Blue Wooden Shortbow
 				i(260384),	-- Dark Red Wooden Shortbow
 				i(260385),	-- Frost Wooden Shortbow
-				i(260386),	-- Green Wooden Shortbow
 				i(260387),	-- Icey Wooden Shortbow
 				i(260388),	-- Light Wooden Shortbow
 				i(260389),	-- Light Blue Wooden Shortbow
@@ -1819,7 +1807,6 @@ root(ROOTS.Unsorted, {
 				i(260405),	-- South Guard's Silver Chausses
 				i(260412),	-- Rusty Chainkini
 				i(260413),	-- Copper Chainkini
-				i(260416),	-- Gold Chainkini
 				i(260936),	-- Basic Brown Quiver
 			}),
 			n(DECOR, {

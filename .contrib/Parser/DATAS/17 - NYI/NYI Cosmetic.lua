@@ -651,7 +651,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(235034),	-- Vigilante's Aquatic Mask
 				i(235023),	-- Vigilante's Cloudy Mask
 				i(235022),	-- Vigilante's Grassy Mask
-				i(235027),	-- Vigilante's Lively Mask
 				i(235036),	-- Vigilante's Sunny Mask
 				i(234601),	-- Wings of the Icy Rose Monarch
 			}),
@@ -663,17 +662,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232889),	-- Ensemble: Algari Warmonger's Plate Armor
 			}),
 			n(SETS, {
-				------ Forest Dweller's Butterfly Set ------
-				i(235593),	-- Ensemble: Forest Dweller's Butterfly Attire
-				q(86875),	-- Ensemble: Forest Dweller's Butterfly Attire
-				i(235589),	-- Forest Dweller's Butterfly Belt
-				i(235568),	-- Forest Dweller's Butterfly Boots
-				i(235576),	-- Forest Dweller's Butterfly Cap
-				i(235572),	-- Forest Dweller's Butterfly Glove
-				i(235585),	-- Forest Dweller's Butterfly Mantle
-				i(235580),	-- Forest Dweller's Butterfly Pants
-				i(235564),	-- Forest Dweller's Butterfly Tunic
-
 				------ Forest Dweller's Garden Set ------
 				i(235592),	-- Ensemble: Forest Dweller's Garden Attire
 				q(86871),	-- Ensemble: Forest Dweller's Garden Attire
@@ -740,7 +728,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			}),
 			n(WEAPONS, {
 				i(234374),	-- Arathi Holy Standard
-				i(234611),	-- Double-Bladed Butterfly Garden Trowel
 				i(234609),	-- Double-Bladed Forest Garden Trowel
 				i(234370),	-- Flame-Bearing Crozier
 				i(238775, {["sourceID"] = 287817}),	-- Gallagio Raider's Venture Co. Blasthammer
@@ -885,12 +872,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				q(90646),	-- Ensemble: Brick Sweatsuit
 				i(242443),	-- Brick Sweatpants
 				i(242414),	-- Brick Sweatshirt
-
-				------ Camo Sweatsuit Set ------
-				i(242461),	-- Ensemble: Camo Sweatsuit
-				q(90645),	-- Ensemble: Camo Sweatsuit
-				i(242442),	-- Camo Sweatpants
-				i(242413),	-- Camo Sweatshirt
 
 				------ Cloudy Sweatsuit Set ------
 				i(242459),	-- Ensemble: Cloudy Sweatsuit
@@ -1106,7 +1087,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(249717),	-- Golden Food Fanatic Backpack
 				i(252713),	-- Grassy Winter Toque
 				i(250291),	-- Hot and Fresh Portable Bakery
-				i(252743),	-- Lively Winter Toque
 				i(252710),	-- Midnight Winter Toque
 				i(252747),	-- Plum Winter Toque
 				i(250293),	-- Red Hot Portable Bakery
@@ -1119,7 +1099,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(251990),	-- Trapper's Light Brown Quiver
 				i(251991),	-- Trapper's Red Quiver
 				i(251672),	-- Used Wearable Pot Lid
-				i(251987),	-- Wildstalker's Hunting Quiver
 			}),
 			n(SETS, {
 
@@ -1148,26 +1127,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(249738),	-- Seafarer's Winter Pauldrons
 				i(249862),	-- Seafarer's Winter Spaulders
 				i(249739),	-- Seafarer's Winter Tunic
-
-				------ Villager's Forest Set 1 ------
-				i(250888),	-- Ensemble: Villager's Forest Collection
-				q(92367),	-- Ensemble: Villager's Forest Collection
-				i(250885),	-- Villager's Forest Belt
-				i(250884),	-- Villager's Forest Blouse
-				i(250883),	-- Villager's Forest Bonnet
-				i(250890),	-- Villager's Forest Gloves
-				i(250887),	-- Villager's Forest Sabatons
-				i(250886),	-- Villager's Forest Skirt
-
-				------ Villager's Forest Set 2 ------
-				i(249917),	-- Ensemble: Villager's Forest Attire
-				q(92112),	-- Ensemble: Villager's Forest Attire
-				i(249916),	-- Villager's Forest Boots
-				i(249910),	-- Villager's Forest Buckle
-				i(249906),	-- Villager's Forest Cap
-				i(249908),	-- Villager's Forest Handwraps
-				i(249911),	-- Villager's Forest Pants
-				i(249909),	-- Villager's Forest Tunic
 
 				------ Villager's Seaside Set 1 ------
 				i(249932),	-- Ensemble: Villager's Seaside Attire

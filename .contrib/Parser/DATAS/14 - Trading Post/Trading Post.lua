@@ -45,8 +45,8 @@ FILLED_TRAVELERS_LOG = createHeader({
 	description = {
 		en = "This reward is given for filling the Travel Points Progress Bar during the month.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Esta recompensa se otorga por completar la barra de progreso de puntos de viaje durante el mes.",
+		mx = "Esta recompensa se otorga por completar la barra de progreso de puntos de viaje durante el mes.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -2137,7 +2137,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(550, i(263452)),	-- Comfy Silvermoon Flying Quilt (MOUNT!)
 				traderstender(700, i(235650)),	-- Pearlescent Butterfly (MOUNT!)
 				traderstender(700, i(235657)),	-- Ruby Butterfly (MOUNT!)
-				traderstender(325, i(235646)),	-- Shimmermist Free Runner (MOUNT!
+				traderstender(325, i(235646)),	-- Shimmermist Free Runner (MOUNT!)
 			}),
 			filter(COSMETIC, {
 				traderstender(80, i(266122)),	-- Archer's Night Sabre
@@ -2172,6 +2172,45 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(35, i(262869)),	-- Violet Dunecloth Vest
 				traderstender(50, i(252749)),	-- Violet Winter Toque
 				traderstender(225, i(234602)),	-- Wings of the Blood Monarch
+			}),
+		})),
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66192", "removed 12.0.1.99999" } }, {	-- TODO: Timeline out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				iensemble(235593),	-- Ensemble: Forest Dweller's Butterfly Attire
+			}),
+			filter(MOUNTS, {
+				traderstender(450, i(260893)),	-- Arboreal Pseudoshell (MOUNT!)
+				traderstender(325, i(235662)),	-- Emerald Snail (MOUNT!)
+				traderstender(550, i(238897)),	-- Spring Harvesthog (MOUNT!)
+				traderstender(600, i(262705)),	-- Vicious Snapvine (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(250, i(262762)),	-- Grumpy Mandrake (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(125, i(234612)),	-- Double-Bladed Blooming Garden Trowel
+				traderstender(125, i(234611)),	-- Double-Bladed Butterfly Garden Trowel
+				traderstender(125, i(234613)),	-- Double-Bladed Rooted Garden Trowel
+				traderstender(100, iensemble(242461)),	-- Ensemble: Camo Sweatsuit
+				traderstender(380, iensemble(235594)),	-- Ensemble: Forest Dweller's Blooming Attire
+				traderstender(380, iensemble(235595)),	-- Ensemble: Forest Dweller's Rooted Attire
+				traderstender(100, iensemble(257987)),	-- Ensemble: Sorcerer's Lively Garb
+				traderstender(440, iensemble(249917)),	-- Ensemble: Villager's Forest Attire
+				traderstender(440, iensemble(250888)),	-- Ensemble: Villager's Forest Collection
+				traderstender(80, i(260386)),	-- Farstrider's Forest Bow
+				traderstender(100, i(266084)),	-- Farstrider's Forest Quiver
+				traderstender(140, i(260738)),	-- Forest Dweller's Glowcap Staff
+				traderstender(125, i(262747)),	-- Green Dagger-Tined Rake
+				traderstender(100, i(260416)),	-- Gold Chainkini
+				traderstender(30, i(262845)),	-- Lively Dunecloth Belt
+				traderstender(35, i(262863)),	-- Lively Dunecloth Vest
+				traderstender(35, i(262827)),	-- Lively Dunecloth Skirt
+				traderstender(50, i(252743)),	-- Lively Winter Toque
+				traderstender(100, i(262761)),	-- Pepe's Vacation Home
+				traderstender(100, i(262715)),	-- Simple Mossy Trowel
+				traderstender(40, i(266160)),	-- Trapper's Green Slippers
+				traderstender(50, i(235027)),	-- Vigilante's Lively Mask
+				traderstender(100, i(251987)),	-- Wildstalker's Hunting Quiver
 			}),
 		})),
 	}),

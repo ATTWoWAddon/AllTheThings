@@ -4530,7 +4530,6 @@ i(222967, 4475);	-- Webbers
 i(258739, 4914);	-- Chillcrawler
 i(262768, 4965);	-- Chirpy Mandrake
 i(260306, 4942);	-- Distorted Memory
-i(262762, 4963);	-- Grumpy Mandrake
 i(262881, 4968);	-- Lil' Staropod
 i(262763, 4964);	-- Plump Mandrake
 i(262769, 4966);	-- Screechy Mandrake
@@ -4565,6 +4564,7 @@ i(252194, 4897);	-- Fishmonger May
 i(264909, 4982);	-- Flicker
 i(250146, 4885);	-- Gloom Toad
 i(262774, 4967);	-- Gortham
+i(262762, 4963);	-- Grumpy Mandrake
 i(260360, 4944);	-- Gummi the Glow Wyrm
 i(244339, 4816);	-- Hawkstrider Hatchling
 i(262395, 4959);	-- Hexed Bunny

@@ -2295,7 +2295,6 @@ i(224148, 451487);	-- Retrained Skyrazor
 i(254736, 1258574);	-- Stormgilded Celestial (CN ONLY)
 --- UNSORTED ---
 i(260896, 1267004);	-- Accented Pseudoshell
-i(260893, 1266993);	-- Arboreal Pseudoshell
 i(262707, 1269279);	-- Blooded Snapvine
 i(260894, 1266997);	-- Cabbage Pseudoshell
 i(262496, 1268919);	-- Delver's Arcane Golem
@@ -2310,7 +2309,6 @@ i(262909, 1269556);	-- Hypo-Speed X6000
 i(260895, 1267002);	-- Lavender Pseudoshell
 i(257143, 1261293);	-- Peridot Dragonhawk
 i(262708, 1269280);	-- Savage Snapvine
-i(262705, 1269273);	-- Vicious Snapvine
 --- NYI ---
 i(0, 1252141);		-- [DNT] Jellyfish
 i(0, 1238827);		-- Swift Spectral Dragonhawk
@@ -2321,6 +2319,7 @@ i(253587, 0);		-- Scale of Aln'sharan
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(260893, 1266993);	-- Arboreal Pseudoshell
 i(257219, 1261357);	-- Amani Blessed Bear
 i(257152, 1261316);	-- Amani Sharptalon
 i(250782, 1251433);	-- Amani Sunfeather
@@ -2378,6 +2377,7 @@ i(256423, 1260354);	-- Untainted Grove Crawler
 i(252012, 1253927);	-- Vibrant Petalwing
 i(257504, 1261648);	-- Vicious Snaplizard [A]
 i(257502, 1261629);	-- Vicious Snaplizard [H]
+i(262705, 1269273);	-- Vicious Snapvine
 i(263579, 1270673);	-- Vivacious Chlorocoers
 i(263580, 1270675);	-- Vivid Chloroceros
 i(260696, 1266702);	-- Voidbound Stormray
