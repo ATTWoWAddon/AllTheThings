@@ -6,15 +6,16 @@ if app.IsRetail then return; end
 local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
+	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
+	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsTradeSkillLinked;
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
 -- WoW API Cache
 local GetItemID = app.WOWAPI.GetItemID;
 local GetSpellName = app.WOWAPI.GetSpellName;
+local IsSpellKnown = app.WOWAPI.IsSpellKnown;
 local CraftTypeToCraftTypeID = {
 	optimal = 3,
 	medium = 2,

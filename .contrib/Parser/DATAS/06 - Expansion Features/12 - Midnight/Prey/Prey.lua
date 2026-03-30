@@ -37,6 +37,16 @@ local PREYSEEKER_BOX_SYM = {
 	{"where","filterID",TRINKET_F},
 }
 
+local TrapNPCs = {	-- probably a ton of these, it seems unique per target & difficulty
+	247073,	-- Loa-Blessed Trap
+	247070,	-- Gloomy Trap
+	247071,	-- Shimmering Trap
+	247075,	-- Entangled Trap
+	247077,	-- Void-Cursed Trap
+	247078,	-- Void-Warped Trap
+	247076,	-- Anointed Trap
+}
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(PREY, {
 		n(ACHIEVEMENTS, {
@@ -152,7 +162,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			ach(62351),	-- Preying For Midnight
 			ach(62134),	-- The Deadliest of Prey
-			ach(62143),	-- Trapped In The Middle With You
+			ach(62143, {["crs"]=TrapNPCs}),	-- Trapped In The Middle With You
 			ach(62138),	-- You're Trapped In Here With Me
 		}),
 		n(FACTIONS, {
@@ -230,7 +240,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			-- Weekly, up after r4 chain
 			q(94446, {	-- A Nightmarish Task
-				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf
+				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf	 // TODO: need some way to ignore on alts
 				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
@@ -334,18 +344,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			q(91104),	-- Prey: Zadu, Fist of Nalorakk (Normal)
 			q(91228),	-- Prey: Zadu, Fist of Nalorakk (Hard)
 			q(91229),	-- Prey: Zadu, Fist of Nalorakk (Nightmare)
-			q(93872),	-- Prey Complete - Normal #1
-			q(93853),	-- Prey Complete - Normal #2
-			q(93855),	-- Prey Complete - Normal #3
-			q(93856),	-- Prey Complete - Normal #4
-			q(93874),	-- Prey Complete - Hard #1
-			q(93875),	-- Prey Complete - Hard #2
-			q(93858),	-- Prey Complete - Hard #3
-			q(93860),	-- Prey Complete - Hard #4
-			-- q(TODO),	-- Prey Complete - Nightmare #1
-			-- q(TODO),	-- Prey Complete - Nightmare #2
-			-- q(TODO),	-- Prey Complete - Nightmare #3
-			-- q(TODO),	-- Prey Complete - Nightmare #4
 		})),
 		n(REWARDS, {
 			-- Currency
@@ -432,7 +430,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				i(262938),	-- Preyseeker's Champion Sack
 				i(269005),	-- Preyseeker's Glinting Coin Pouch
 				i(262936),	-- Preyseeker's Veteran Sack
-				i(255825),	-- Disarmed Trap
+				i(255825, {["crs"]=TrapNPCs}),	-- Disarmed Trap
 			}),
 			filter(REAGENTS, {
 				i(251283),	-- Tormented Tantalum
@@ -449,7 +447,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			i(262346, {	-- Preyseeker's Champion Chest
 				["sym"] = PREYSEEKER_BOX_SYM,
 			}),
-			i(268545),	-- Aspiring Preyseeker's Chest
+			i(268545, {	-- Aspiring Preyseeker's Chest
+				["sym"] = PREYSEEKER_BOX_SYM,
+			}),
+			i(269006),	-- Preyseeker's Gleaming Coin Pouch
+			i(269007),	-- Preyseeker's Glittering Coin Pouch
 		}),
 		n(VENDORS, {
 			n(258181, {	-- Construct Ali'a <Decor Specialist>
@@ -591,15 +593,22 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(95536),	-- unflagged after looting Minor Coalesced Anguish
 			--q(95537),	-- same as above, but after Banuran was kiiled during Prey in zone (hard mode)
 			--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
-			--q(95539), -- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
+			--q(95539),	-- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
 
-			--related to prey bosses kill - counter for something?
-			--doesn't matter on difficulty or whatever boss it was, weekly
+			-- 1k seasonal journey lockout, weekly
 			q(95000),	-- 1st per week
 			q(95001),	-- 2nd per week
 			q(95002),	-- 3rd per week
 			q(95003),	-- 4th per week
 
+			q(93872),	-- Prey Complete - Normal #1
+			q(93853),	-- Prey Complete - Normal #2
+			q(93855),	-- Prey Complete - Normal #3
+			q(93856),	-- Prey Complete - Normal #4
+			q(93874),	-- Prey Complete - Hard #1
+			q(93875),	-- Prey Complete - Hard #2
+			q(93858),	-- Prey Complete - Hard #3
+			q(93860),	-- Prey Complete - Hard #4
 			--Seems like lockout for rewards? Weekly
 			--- Adventures
 			q(93168),	-- Adventurer chest lockout (Normal), 1st
@@ -609,10 +618,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(93857),	-- Veteran chest lockout (Hard), 2nd (after it - Veteran Sack as reward)
 			--- Nightmare
 			q(93170),	-- Chapmpion chest lockout (Nightmare), 1st
-			--q(93158?),	-- Chapmpion chest lockout (Nightmare), 2nd (after it - Chapmpion Sack as reward)
-
-			-- Unknown?
-			q(93857),	-- Completed with questID 91098 and 93168
+			q(93861),	-- Chapmpion chest lockout (Nightmare), 2nd
+			q(93863),	-- Chapmpion chest lockout (Nightmare), 3rd
+			q(93864),	-- Chapmpion chest lockout (Nightmare), 4th
 		}),
 	}),
 }));

@@ -671,11 +671,9 @@ REMOVED_12_0_1 = "removed 12.0.1.65818";				-- Midnight 12.0.1/Pre-Patch phase 2
 CREATED_12_0_1_LAUNCH = "created 12.0.1.66102";			-- Midnight 12.0.1 Early Access Launch on February 26th, 2026
 ADDED_12_0_1_LAUNCH = "added 12.0.1.66102";				-- Midnight 12.0.1 Early Access Launch on February 26th, 2026
 REMOVED_12_0_1_LAUNCH = "removed 12.0.1.66102";			-- Midnight 12.0.1 Early Access Launch on February 26th, 2026
--- Temporary using X before we know the correct number.
--- We want to show everything already, so leave it all as 12.0.1 for now.
-CREATED_12_0_X_SEASONSTART = "created 12.0.1";			-- Midnight 12.0.x Season 1 launch on March 17th, 2026
-ADDED_12_0_X_SEASONSTART = "added 12.0.1";				-- Midnight 12.0.x Season 1 launch on March 17th, 2026
-REMOVED_12_0_X_SEASONSTART = "removed 12.0.1.99999";	-- Midnight 12.0.x Season 1 launch on March 17th, 2026
+CREATED_12_0_1_SEASONSTART = "created 12.0.1.66431";	-- Midnight 12.0.1 Season 1 launch on March 17th, 2026
+ADDED_12_0_1_SEASONSTART = "added 12.0.1.66431";		-- Midnight 12.0.1 Season 1 launch on March 17th, 2026
+REMOVED_12_0_1_SEASONSTART = "removed 12.0.1.66431";	-- Midnight 12.0.1 Season 1 launch on March 17th, 2026
 
 
 CREATED_12_0_5 = "created 12.0.5";						-- Midnight 12.0.5 launch in spring 2026

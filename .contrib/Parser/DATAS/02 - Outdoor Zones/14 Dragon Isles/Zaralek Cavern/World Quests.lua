@@ -57,10 +57,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75344, {	-- Crystal Cracker
 						["coord"] = { 58.3, 62.3, ZARALEK_CAVERN },
 					}),
-					q(75062, {  -- Crystalline Conundrum
+					q(75062, { 	-- Crystalline Conundrum
 						["coord"] = { 56.9, 63.7, ZARALEK_CAVERN },
 					}),
-					q(75661, {  -- Curative Crystalline Collection
+					q(75661, { 	-- Curative Crystalline Collection
 						["coord"] = { 39.5, 74.3, ZARALEK_CAVERN },
 						["groups"] = {
 							i(203012),	-- Viridian Heartcrystal (QI!)
@@ -85,10 +85,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(204326),	-- Strange Artifact (QI!)
 						},
 					}),
-					petbattle(q(75834, {  -- Delver Mardei
+					petbattle(q(75834, { 	-- Delver Mardei
 						["coord"] = { 65.6, 49.0, ZARALEK_CAVERN },
 					})),
-					petbattle(q(75835, {  -- Do You Even Train?
+					petbattle(q(75835, { 	-- Do You Even Train?
 						["coord"] = { 45.7, 81.5, ZARALEK_CAVERN },
 					})),
 					q(75660, {	-- Ending Their Watch
@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(74985, {	-- Like Moths to a Flame
 						["coord"] = { 49.1, 50.1, ZARALEK_CAVERN },
 					}),
-					q(75350, {  -- Niffen Nabber
+					q(75350, { 	-- Niffen Nabber
 						["coord"] = { 59.2, 73.4, ZARALEK_CAVERN },
 					}),
 					q(75061, {	-- No Mushroom For Ever
@@ -182,10 +182,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75071, {	-- Sniffing Mice are Nice
 						["coord"] = { 51.3, 73.9, ZARALEK_CAVERN },
 					}),
-					q(75058, {  -- Spearheading Acquisition
+					q(75058, { 	-- Spearheading Acquisition
 						["coord"] = { 38.3, 63.1, ZARALEK_CAVERN },
 					}),
-					petbattle(q(75680, {  -- To a Land Down Under
+					petbattle(q(75680, { 	-- To a Land Down Under
 						["coord"] = { 52.3, 65.2, ZARALEK_CAVERN },
 					})),
 					q(74991, {	-- We Have Returned

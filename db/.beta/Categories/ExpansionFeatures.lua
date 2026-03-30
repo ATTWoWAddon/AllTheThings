@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,artifact,aze,cd,cl,cq,crit,cs,cu,d,de,e,en,exp,faction,flt,follower,fp,gb,gm,gt,h,heir,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateAzeriteEssence,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateGarrisonTalent,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,artifact,aze,cd,cl,cq,crit,cs,cu,d,de,e,en,exp,faction,flt,follower,fp,gb,gm,gt,h,heir,hqt,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateAzeriteEssence,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateGarrisonTalent,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
 x(2,{awp=20100,g={
@@ -9939,7 +9939,8 @@ q(37992,{coords={
 crit(27603,{achID=9836,id=4,r=1})}}),
 q(36589,{lvl=10,providers={{"i",116438}},r=1,requireSkill=202}),
 q(38296,{coords={
-[582]={{34.5,33}}},cost={{"i",109129,10},{"i",109127,10},{"i",109128,10},{"i",109126,10},{"i",109125,10}},isDaily=1,lvl=10,qgs={91031,91404},g={
+[582]={{34.5,33}},
+[590]={{40.2,56}}},cost={{"i",109129,10},{"i",109127,10},{"i",109128,10},{"i",109126,10},{"i",109125,10}},isDaily=1,lvl=10,qgs={91031,91404},g={
 i(120945,{b=1})}}),
 q(36953,{isBreadcrumb=1,lvl=20,nextQuests={34566},providers={{"o",232416},{"o",233291},{"o",237022}},r=1}),
 q(34681,{coords={
@@ -13989,11 +13990,11 @@ i(140662,{b=1,c={9},spellID=224312}),
 i(140663,{b=1,c={9},spellID=224313}),
 i(140664,{b=1,c={9},spellID=224314}),
 i(140665,{b=1,c={9},spellID=224315}),
-q(44093,{an="i:140661",c={9},providers={{"i",140661}},type="hqt"}),
-q(44094,{an="i:140662",c={9},providers={{"i",140662}},sourceQuests={44093},type="hqt"}),
-q(44095,{an="i:140663",c={9},providers={{"i",140663}},sourceQuests={44094},type="hqt"}),
-q(44096,{an="i:140664",c={9},providers={{"i",140664}},sourceQuests={44095},type="hqt"}),
-q(44097,{an="i:140665",c={9},providers={{"i",140665}},sourceQuests={44096},type="hqt"}),
+hqt(44093,{an="i:140661",c={9},providers={{"i",140661}}}),
+hqt(44094,{an="i:140662",c={9},providers={{"i",140662}},sourceQuests={44093}}),
+hqt(44095,{an="i:140663",c={9},providers={{"i",140663}},sourceQuests={44094}}),
+hqt(44096,{an="i:140664",c={9},providers={{"i",140664}},sourceQuests={44095}}),
+hqt(44097,{an="i:140665",c={9},providers={{"i",140665}},sourceQuests={44096}}),
 i(139576,{b=1,c={9},f=55,sourceQuests={44097},spellID=225641,g={
 artifact(937,{c={9}})}})}})}}),
 h(-33,{c={9},g={
@@ -15956,8 +15957,8 @@ q(43683,{c={2},coords={
 q(43684,{c={2},coords={
 [22]={{42.4,18.7}}},description="After reading this, you can go kill Large Vile Slime next to Thondroril River in Western Plaguelands.",qgs={111121},sourceQuests={43683}}),
 q(43685,{c={2},cost={{"i",139623,1}},maps={22},qgs={111123},sourceQuests={43684}}),
-q(43688,{an="i:139624",c={2},coords={
-[24]={{49.8,72.2}}},description="You must have the Shard of Darkness in your inventory in order to trigger this dialog.",providers={{"i",139624}},qgs={90259},type="hqt"}),
+hqt(43688,{an="i:139624",c={2},coords={
+[24]={{49.8,72.2}}},description="You must have the Shard of Darkness in your inventory in order to trigger this dialog.",providers={{"i",139624}},qgs={90259}}),
 q(43687,{c={2},coords={
 [24]={{49.8,72.2}}},lvl=10,qgs={90259},sourceQuests={43688},g={
 i(139566,{b=1,c={2},f=55,spellID=220701,g={
@@ -17481,7 +17482,7 @@ de(5126,{c={10},itemID=248958,spellID=1248166})}})}}),
 h(-214,{c={10},g={
 cl(10.268,{
 gt(254,{c={10},coords={
-[709]={{55,56.5}}},description="Click this once per day.",questID=43974,g={
+[709]={{55,56.5}}},description="Click this once per day.",isDaily=1,questID=43974,g={
 i(139561,{b=1,c={10},f=55,spellID=220692,g={
 artifact(959,{c={10}})}}),
 i(140295,{b=1,c={10},f=55,lvl=42,spellID=221558}),
@@ -18255,17 +18256,17 @@ h(-45,{
 q(46205,{coords={
 [630]={{55.1,67.4}}},lvl=10,qgs={117774},repeatable=1,sourceQuests={45795}}),
 q(45838,{awp=70000,lvl=10,repeatable=1,g={
-q(47193,{type="hqt",g={
-crit(36546,{achID=11544,id=1})}})}}),
+hqt(47193,{
+crit(36546,{achID=11544,id=1})})}}),
 q(45840,{awp=70000,lvl=10,repeatable=1,g={
-q(47194,{type="hqt",g={
-crit(36547,{achID=11544,id=2})}})}}),
+hqt(47194,{
+crit(36547,{achID=11544,id=2})})}}),
 q(45839,{awp=70000,lvl=10,repeatable=1,g={
-q(47195,{type="hqt",g={
-crit(36548,{achID=11544,id=3})}})}}),
+hqt(47195,{
+crit(36548,{achID=11544,id=3})})}}),
 q(45812,{awp=70000,lvl=10,repeatable=1,g={
-q(47196,{type="hqt",g={
-crit(36549,{achID=11544,id=4})}})}}),
+hqt(47196,{
+crit(36549,{achID=11544,id=4})})}}),
 q(46199,{coords={
 [630]={{58.4,21.4}}},lvl=10,qgs={119002},repeatable=1,sourceQuests={46205},g={
 i(142004,{b=1,f=55})}}),
@@ -31651,7 +31652,8 @@ crit(50862,{achID=14843,id=4})})}}),
 q(61421,{customCollect={"SL_COV_NFA"},lvl=50,qgs={172275},sourceQuests={61427},g={
 follower(1277,{
 crit(50835,{achID=14843,id=1})})}}),
-q(61424,{customCollect={"SL_COV_NFA"},lvl=50,qgs={172240},sourceQuests={61430},g={
+q(61424,{coords={
+[1778]={{70,55.8}}},customCollect={"SL_COV_NFA"},lvl=50,qgs={172240},sourceQuests={61430},g={
 follower(1280,{
 crit(50838,{achID=14843,id=1})})}}),
 q(62999,{lvl=50,qgs={175649},sourceQuests={62993},g={
@@ -31731,7 +31733,8 @@ crit(50880,{achID=14843,id=3})})}}),
 q(61960,{customCollect={"SL_COV_NEC"},lvl=50,qgs={173401},sourceQuests={62227},g={
 follower(1309,{
 crit(50881,{achID=14843,id=3})})}}),
-q(61426,{customCollect={"SL_COV_NFA"},lvl=50,qgs={172243},g={
+q(61426,{coords={
+[1776]={{62.9,46.9}}},customCollect={"SL_COV_NFA"},lvl=50,qgs={172243},g={
 follower(1282,{
 crit(50840,{achID=14843,id=1})})}}),
 q(62229,{lvl=48,qgs={173750},repeatable=1}),
@@ -39678,8 +39681,8 @@ q(84645,{coords={
 [2372]={{19.3,56.3}}},lvl=80,qgs={235041},sourceQuests={84641}}),
 q(84649,{coords={
 [2372]={{17.5,59.5}}},lvl=80,qgs={229940},sourceQuests={84643,84645}}),
-q(91524,{coords={
-[2372]={{17.4,59.5}}},lc={1,"questID",84650},providers={{"n",229951}},sourceQuests={84649},type="hqt"}),
+hqt(91524,{coords={
+[2372]={{17.4,59.5}}},lc={1,"questID",84650},providers={{"n",229951}},sourceQuests={84649}}),
 q(84650,{coords={
 [2372]={{17.5,59.5}}},lvl=80,qgs={229940},sourceQuests={84649},g={
 i(235345)}}),
@@ -39687,14 +39690,14 @@ q(84651,{coords={
 [2372]={{40.9,53.5}}},lvl=80,qgs={236815},sourceQuests={84650}}),
 q(84652,{coords={
 [2372]={{40.9,53.5}}},lvl=80,qgs={236815},sourceQuests={84650}}),
-q(91532,{coords={
-[2372]={{40.8,53.5}}},lc={1,"questID",84656},providers={{"n",230815}},sourceQuests={84651,84652},type="hqt"}),
+hqt(91532,{coords={
+[2372]={{40.8,53.5}}},lc={1,"questID",84656},providers={{"n",230815}},sourceQuests={84651,84652}}),
 q(84656,{coords={
 [2372]={{40.8,53.5}}},lvl=80,qgs={230815},sourceQuests={84651,84652}}),
 q(84704,{coords={
 [2372]={{69.7,39.2}}},lvl=80,qgs={230145},sourceQuests={84656}}),
-q(91534,{coords={
-[2372]={{69.6,32.8}}},lc={1,"questID",84707},providers={{"n",231759}},sourceQuests={84704},type="hqt"}),
+hqt(91534,{coords={
+[2372]={{69.6,32.8}}},lc={1,"questID",84707},providers={{"n",231759}},sourceQuests={84704}}),
 q(84707,{coords={
 [2372]={{69.5,32.8}}},lvl=80,qgs={231764},sourceQuests={84704}}),
 q(84706,{coords={
@@ -40011,12 +40014,12 @@ i(240185,{cost={{"i",219955,1},{"i",240186,1},{"i",221955,1}}}),
 i(240182,{cost={{"i",221858,3},{"i",240183,1},{"i",219903,1},{"i",221925,1},{"i",221945,1}}}),
 i(240188,{cost={{"i",240189,1},{"i",44501,4}}}),
 i(240179,{cost={{"i",240178,1},{"i",240193,1},{"i",221870,6}}}),
-q(90131,{cost={{"i",240181,1}},providers={{"n",242545}},type="hqt"}),
-q(90523,{cost={{"i",240190,1}},providers={{"n",242545}},type="hqt"}),
-q(90135,{cost={{"i",240185,1}},providers={{"n",242545}},type="hqt"}),
-q(90132,{cost={{"i",240182,1}},providers={{"n",242545}},type="hqt"}),
-q(90133,{cost={{"i",240188,1}},providers={{"n",242545}},type="hqt"}),
-q(90130,{cost={{"i",240179,2}},providers={{"n",242545}},type="hqt"}),
+hqt(90131,{cost={{"i",240181,1}},providers={{"n",242545}}}),
+hqt(90523,{cost={{"i",240190,1}},providers={{"n",242545}}}),
+hqt(90135,{cost={{"i",240185,1}},providers={{"n",242545}}}),
+hqt(90132,{cost={{"i",240182,1}},providers={{"n",242545}}}),
+hqt(90133,{cost={{"i",240188,1}},providers={{"n",242545}}}),
+hqt(90130,{cost={{"i",240179,2}},providers={{"n",242545}}}),
 mnt(428068,{b=1,itemID=211089,lvl=10,qgs={242545},questID=90136,sourceQuests={90130,90131,90132,90133,90135,90523}})}})}),
 h(-58,{
 h(-22,{crs={238544,238545,238546},g={
@@ -40425,7 +40428,7 @@ crit(71587,{achID=41215,awp=110100,id=7})}}),
 n(235117,{awp=110002,g={
 crit(71590,{achID=41215,awp=110100,id=10})}}),
 crit(71580,{achID=41214,id=2})}})}})})}})}),
-x(12,{awp=120001,maps={2395,2437},g={
+x(12,{awp=120001,g={
 h(-729,{coords={
 [2395]={{56.6,65.8}},
 [2405]={{38.9,53.2}},
@@ -40499,22 +40502,23 @@ crit(112533,{achID=62325,id=4,providers={{"n",259997}}}),
 crit(112550,{achID=62332,id=1})}),
 ach(61681)}),
 h(-45,{
-q(89507,{coords={
-[2395]={{56.7,65.9}},
-[2405]={{38.9,53.2}},
-[2437]={{31.6,26.7}}},isWeekly=1,lvl=80,qgs={241928,257632,257633},g={
-i(269702,{f=55,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}}}),
-i(268488,{f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}},u=2}),
-i(263466,{b=1,f=55,lvl=80,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}}})}}),
-q(91933,{coords={
-[2437]={{31.6,26.1}}},lvl=80,qgs={251601},g={
-i(252607,{b=1,spellID=1254734})}}),
 q(91930,{coords={
 [2437]={{45.1,67.6}}},lvl=80,qgs={241924}}),
 q(91932,{coords={
-[2437]={{31.6,26.7}}},lvl=80,qgs={241928}}),
+[2437]={{31.6,26.3}}},lvl=80,qgs={241928},sourceQuests={91930}}),
+q(91933,{coords={
+[2437]={{31.6,26.1}}},lvl=80,qgs={251601},sourceQuests={91932},g={
+i(252607,{b=1,spellID=1254734})}}),
 q(94361,{coords={
-[2437]={{31.6,26.7}}},lvl=80,qgs={241928,242704,251601}}),
+[2437]={{31.6,26.1}}},lvl=80,qgs={241928,242704,251601},sourceQuests={91933}}),
+q(89507,{coords={
+[2395]={{56.7,65.9}},
+[2405]={{38.9,53.2}},
+[2413]={{66.1,61.5}},
+[2437]={{31.6,26.3}}},isWeekly=1,lvl=80,qgs={241928,248658,257632,257633},g={
+i(269702,{f=55,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}}}),
+i(268488,{f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2}),
+i(263466,{b=1,f=55,lvl=80,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}}})}}),
 q(94834,{lvl=83,providers={{"i",265746}}})}),
 h(-58,{coords={
 [2395]={{56.6,65.8}},
@@ -41606,7 +41610,7 @@ crit(105984,{achID=62176,id=1,providers={{"n",247857}}}),
 crit(105985,{achID=62176,id=2,providers={{"n",247860}}})}),
 ach(62351),
 ach(62134),
-ach(62143,{providers={{"s",1242005}},g={
+ach(62143,{crs={247070,247071,247073,247075,247076,247077,247078},providers={{"s",1242005}},g={
 crit(112616,{achID=62351,id=3})}}),
 ach(62138,{providers={{"n",260848}},g={
 crit(112620,{achID=62351,id=7})}})}),
@@ -41820,23 +41824,7 @@ q(91104,{coords={
 q(91228,{coords={
 [2393]={{56.8,65.3}}},isWeekly=1,lvl=90,qgs={245824}}),
 q(91229,{coords={
-[2393]={{56.8,65.3}}},isWeekly=1,lvl=90,qgs={245824}}),
-q(93872,{coords={
-[2393]={{56.8,65.3}}},isWeekly=1,qgs={245824}}),
-q(93853,{coords={
-[2393]={{56.8,65.3}}},isWeekly=1,qgs={245824}}),
-q(93855,{coords={
-[2393]={{56.8,65.3}}},isWeekly=1,qgs={245824}}),
-q(93856,{coords={
-[2393]={{56.8,65.3}}},isWeekly=1,qgs={245824}}),
-q(93874,{coords={
-[2393]={{56.8,65.3}}},isWeekly=1,qgs={245824}}),
-q(93875,{coords={
-[2393]={{56.8,65.3}}},isWeekly=1,qgs={245824}}),
-q(93858,{coords={
-[2393]={{56.8,65.3}}},isWeekly=1,qgs={245824}}),
-q(93860,{coords={
-[2393]={{56.8,65.3}}},isWeekly=1,qgs={245824}})}),
+[2393]={{56.8,65.3}}},isWeekly=1,lvl=90,qgs={245824}})}),
 h(-47,{
 cu(3392),
 h(-88,{
@@ -41911,14 +41899,16 @@ i(262928,{b=1,f=55,lvl=80}),
 i(262938,{b=1,f=55,lvl=80}),
 i(269005,{f=55}),
 i(262936,{b=1,f=55,lvl=80}),
-i(255825,{f=55,spellID=1259472})}),
+i(255825,{crs={247070,247071,247073,247075,247076,247077,247078},f=55,spellID=1259472})}),
 flt(56,{
 i(251283)}),
 flt(200),
 i(257023,{b=1,f=55,lvl=80,sym={{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-88},{"finalize"},{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
 i(257026,{b=1,f=55,lvl=80,sym={{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-88},{"finalize"},{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
 i(262346,{b=1,f=55,lvl=80,sym={{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-88},{"finalize"},{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
-i(268545,{f=55})}),
+i(268545,{f=55,sym={{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-88},{"finalize"},{"select","expansionID",12},{"pop"},{"where","headerID",-671},{"pop"},{"where","headerID",-47},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
+i(269006,{f=55}),
+i(269007,{f=55})}),
 h(-58,{
 n(258181,{coords={
 [2393]={{55.8,66}}},g={

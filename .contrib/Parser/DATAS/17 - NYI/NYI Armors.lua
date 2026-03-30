@@ -79,46 +79,46 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 		}),
 		-- #if SEASON_OF_DISCOVERY
-		i(226851), -- Darkmantle Boots
-		i(226848), -- Darkmantle Legs
-		i(226847), -- Darkmantle Shoulders
-		i(226850), -- Darkmantle Gloves
-		i(226846), -- Darkmantle Waist
-		i(226903), -- Beastmaster's Boots
-		i(226900), -- Beastmaster's Legs
-		i(226899), -- Beastmaster's Shoulders
-		i(226902), -- Beastmaster's Gloves
-		i(226898), -- Beastmaster's Waist
-		i(226999), -- Soulforge Boots
-		i(226996), -- Soulforge Legs
-		i(226995), -- Soulforge Shoulders
-		i(226998), -- Soulforge Gloves
-		i(226994), -- Soulforge Waist
-		i(226967), -- Virtuous Boots
-		i(226964), -- Virtuous Legs
-		i(226963), -- Virtuous Shoulders
-		i(226966), -- Virtuous Gloves
-		i(226962), -- Virtuous Waist
-		i(226821), -- Feralheart Boots
-		i(226818), -- Feralheart Legs
-		i(226817), -- Feralheart Shoulders
-		i(226820), -- Feralheart Gloves
-		i(226816), -- Feralheart Waist
-		i(226927), -- Deathmist Boots
-		i(226924), -- Deathmist Legs
-		i(226923), -- Deathmist Shoulders
-		i(226926), -- Deathmist Gloves
-		i(226922), -- Deathmist Waist
-		i(227039), -- Boots of The Five Thunders
-		i(227036), -- Legs of The Five Thunders
-		i(227035), -- Shoulders of The Five Thunders
-		i(227038), -- Gloves of The Five Thunders
-		i(227034), -- Waist of The Five Thunders
-		i(226879), -- Boots of Heroism
-		i(226876), -- Legs of Heroism
-		i(226875), -- Shoulders of Heroism
-		i(226878), -- Gloves of Heroism
-		i(226874), -- Waist of Heroism
+		i(226851),	-- Darkmantle Boots
+		i(226848),	-- Darkmantle Legs
+		i(226847),	-- Darkmantle Shoulders
+		i(226850),	-- Darkmantle Gloves
+		i(226846),	-- Darkmantle Waist
+		i(226903),	-- Beastmaster's Boots
+		i(226900),	-- Beastmaster's Legs
+		i(226899),	-- Beastmaster's Shoulders
+		i(226902),	-- Beastmaster's Gloves
+		i(226898),	-- Beastmaster's Waist
+		i(226999),	-- Soulforge Boots
+		i(226996),	-- Soulforge Legs
+		i(226995),	-- Soulforge Shoulders
+		i(226998),	-- Soulforge Gloves
+		i(226994),	-- Soulforge Waist
+		i(226967),	-- Virtuous Boots
+		i(226964),	-- Virtuous Legs
+		i(226963),	-- Virtuous Shoulders
+		i(226966),	-- Virtuous Gloves
+		i(226962),	-- Virtuous Waist
+		i(226821),	-- Feralheart Boots
+		i(226818),	-- Feralheart Legs
+		i(226817),	-- Feralheart Shoulders
+		i(226820),	-- Feralheart Gloves
+		i(226816),	-- Feralheart Waist
+		i(226927),	-- Deathmist Boots
+		i(226924),	-- Deathmist Legs
+		i(226923),	-- Deathmist Shoulders
+		i(226926),	-- Deathmist Gloves
+		i(226922),	-- Deathmist Waist
+		i(227039),	-- Boots of The Five Thunders
+		i(227036),	-- Legs of The Five Thunders
+		i(227035),	-- Shoulders of The Five Thunders
+		i(227038),	-- Gloves of The Five Thunders
+		i(227034),	-- Waist of The Five Thunders
+		i(226879),	-- Boots of Heroism
+		i(226876),	-- Legs of Heroism
+		i(226875),	-- Shoulders of Heroism
+		i(226878),	-- Gloves of Heroism
+		i(226874),	-- Waist of Heroism
 		i(226877),	-- Helm of Heroism
 		i(226880),	-- Chest of Heroism
 		i(226901),	-- Beastmaster's Helm
@@ -679,7 +679,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(55577),	-- Frayfeather Vest
 				-- #endif
 				i(65744),	-- Nimble Command Shoulderguards
-				i(54769),	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
+				i(54769),	-- Rough Bronze Bracers	-- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020	-- Gold
 				i(59789),	-- Sea-Snack Footguards
 				i(54783),	-- Silvered Bronze Shoulders
 				i(54781),	-- Thorbia's Gauntlets
@@ -6015,9 +6015,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			header(HEADERS.LFGDungeon, 3095, {	-- March on Quel'Danas
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249328), -- Echoing Void Mantle
-						i(249912), -- Robes of Endless Oblivion
-						i(249376), -- Whisper-Inscribed Sash
+						i(249328),	-- Echoing Void Mantle
+						i(249912),	-- Robes of Endless Oblivion
+						i(249376),	-- Whisper-Inscribed Sash
 					}),
 					filter(LEATHER, {
 						i(249913),	-- Mask of Darkest Intent
@@ -6035,9 +6035,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249328), -- Echoing Void Mantle
-						i(249912), -- Robes of Endless Oblivion
-						i(249376), -- Whisper-Inscribed Sash
+						i(249328),	-- Echoing Void Mantle
+						i(249912),	-- Robes of Endless Oblivion
+						i(249376),	-- Whisper-Inscribed Sash
 					}),
 					filter(LEATHER, {
 						i(249913),	-- Mask of Darkest Intent
@@ -6055,9 +6055,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249328), -- Echoing Void Mantle
-						i(249912), -- Robes of Endless Oblivion
-						i(249376), -- Whisper-Inscribed Sash
+						i(249328),	-- Echoing Void Mantle
+						i(249912),	-- Robes of Endless Oblivion
+						i(249376),	-- Whisper-Inscribed Sash
 					}),
 					filter(LEATHER, {
 						i(249913),	-- Mask of Darkest Intent
@@ -6075,9 +6075,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249328), -- Echoing Void Mantle
-						i(249912), -- Robes of Endless Oblivion
-						i(249376), -- Whisper-Inscribed Sash
+						i(249328),	-- Echoing Void Mantle
+						i(249912),	-- Robes of Endless Oblivion
+						i(249376),	-- Whisper-Inscribed Sash
 					}),
 					filter(LEATHER, {
 						i(249913),	-- Mask of Darkest Intent
@@ -6097,7 +6097,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			header(HEADERS.LFGDungeon, 3165, {	-- The Dreamrift
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249373), -- Dream-Scorched Striders
+						i(249373),	-- Dream-Scorched Striders
 					}),
 					filter(LEATHER, {
 						i(249374),	-- Scorn-Scarred Shul'ka's Belt
@@ -6111,7 +6111,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249373), -- Dream-Scorched Striders
+						i(249373),	-- Dream-Scorched Striders
 					}),
 					filter(LEATHER, {
 						i(249374),	-- Scorn-Scarred Shul'ka's Belt
@@ -6125,7 +6125,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249373), -- Dream-Scorched Striders
+						i(249373),	-- Dream-Scorched Striders
 					}),
 					filter(LEATHER, {
 						i(249374),	-- Scorn-Scarred Shul'ka's Belt
@@ -6139,7 +6139,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249373), -- Dream-Scorched Striders
+						i(249373),	-- Dream-Scorched Striders
 					}),
 					filter(LEATHER, {
 						i(249374),	-- Scorn-Scarred Shul'ka's Belt
@@ -6155,17 +6155,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			header(HEADERS.LFGDungeon, 3094, {	-- The Voidspire
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249308), -- Despotic Raiment
-						i(249319), -- Endless March Waistwrap
-						i(249329), -- Gaze of the Unrestrained
-						i(249323), -- Leggings of the Devouring Advance
-						i(249305), -- Slippers of the Midnight Flame
-						i(249315), -- Voracious Wristwraps
-						i(249330), -- War Chaplain's Grips
+						i(249308),	-- Despotic Raiment
+						i(249319),	-- Endless March Waistwrap
+						i(249329),	-- Gaze of the Unrestrained
+						i(249323),	-- Leggings of the Devouring Advance
+						i(249305),	-- Slippers of the Midnight Flame
+						i(249315),	-- Voracious Wristwraps
+						i(249330),	-- War Chaplain's Grips
 
 						-- Maybe BoE version? Unknown raid currently.
-						i(260371), -- Infernal Greatlock Girdle
-						i(260370), -- Visage of Unseen Truths
+						i(260371),	-- Infernal Greatlock Girdle
+						i(260370),	-- Visage of Unseen Truths
 					}),
 					filter(LEATHER, {
 						i(249333),	-- Blooming Barklight Spaulders
@@ -6211,17 +6211,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249308), -- Despotic Raiment
-						i(249319), -- Endless March Waistwrap
-						i(249329), -- Gaze of the Unrestrained
-						i(249323), -- Leggings of the Devouring Advance
-						i(249305), -- Slippers of the Midnight Flame
-						i(249315), -- Voracious Wristwraps
-						i(249330), -- War Chaplain's Grips
+						i(249308),	-- Despotic Raiment
+						i(249319),	-- Endless March Waistwrap
+						i(249329),	-- Gaze of the Unrestrained
+						i(249323),	-- Leggings of the Devouring Advance
+						i(249305),	-- Slippers of the Midnight Flame
+						i(249315),	-- Voracious Wristwraps
+						i(249330),	-- War Chaplain's Grips
 
 						-- Maybe BoE version? Unknown raid currently.
-						i(260371), -- Infernal Greatlock Girdle
-						i(260370), -- Visage of Unseen Truths
+						i(260371),	-- Infernal Greatlock Girdle
+						i(260370),	-- Visage of Unseen Truths
 					}),
 					filter(LEATHER, {
 						i(249333),	-- Blooming Barklight Spaulders
@@ -6267,17 +6267,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249308), -- Despotic Raiment
-						i(249319), -- Endless March Waistwrap
-						i(249329), -- Gaze of the Unrestrained
-						i(249323), -- Leggings of the Devouring Advance
-						i(249305), -- Slippers of the Midnight Flame
-						i(249315), -- Voracious Wristwraps
-						i(249330), -- War Chaplain's Grips
+						i(249308),	-- Despotic Raiment
+						i(249319),	-- Endless March Waistwrap
+						i(249329),	-- Gaze of the Unrestrained
+						i(249323),	-- Leggings of the Devouring Advance
+						i(249305),	-- Slippers of the Midnight Flame
+						i(249315),	-- Voracious Wristwraps
+						i(249330),	-- War Chaplain's Grips
 
 						-- Maybe BoE version? Unknown raid currently.
-						i(260371), -- Infernal Greatlock Girdle
-						i(260370), -- Visage of Unseen Truths
+						i(260371),	-- Infernal Greatlock Girdle
+						i(260370),	-- Visage of Unseen Truths
 					}),
 					filter(LEATHER, {
 						i(249333),	-- Blooming Barklight Spaulders
@@ -6323,17 +6323,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(249308), -- Despotic Raiment
-						i(249319), -- Endless March Waistwrap
-						i(249329), -- Gaze of the Unrestrained
-						i(249323), -- Leggings of the Devouring Advance
-						i(249305), -- Slippers of the Midnight Flame
-						i(249315), -- Voracious Wristwraps
-						i(249330), -- War Chaplain's Grips
+						i(249308),	-- Despotic Raiment
+						i(249319),	-- Endless March Waistwrap
+						i(249329),	-- Gaze of the Unrestrained
+						i(249323),	-- Leggings of the Devouring Advance
+						i(249305),	-- Slippers of the Midnight Flame
+						i(249315),	-- Voracious Wristwraps
+						i(249330),	-- War Chaplain's Grips
 
 						-- Maybe BoE version? Unknown raid currently.
-						i(260371), -- Infernal Greatlock Girdle
-						i(260370), -- Visage of Unseen Truths
+						i(260371),	-- Infernal Greatlock Girdle
+						i(260370),	-- Visage of Unseen Truths
 					}),
 					filter(LEATHER, {
 						i(249333),	-- Blooming Barklight Spaulders

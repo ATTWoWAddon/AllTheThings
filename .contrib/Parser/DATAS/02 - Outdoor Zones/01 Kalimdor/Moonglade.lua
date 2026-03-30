@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{
 							["recipeID"] = 5487,	-- Bear Form // Dire Bear Form
 							["OnUpdate"] = [[function(t)
-								if _.IsSpellKnown(9634) then
+								if _.IsSpellKnownHelper(9634) then
 									if not _.CurrentCharacter.Spells[5487] then
 										_.CurrentCharacter.Spells[5487] = 2;
 										ATTAccountWideData.Spells[5487] = 1;
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{
 							["recipeID"] = 5487,	-- Bear Form // Dire Bear Form
 							["OnUpdate"] = [[function(t)
-								if _.IsSpellKnown(9634) then
+								if _.IsSpellKnownHelper(9634) then
 									if not _.CurrentCharacter.Spells[5487] then
 										_.CurrentCharacter.Spells[5487] = 2;
 										ATTAccountWideData.Spells[5487] = 1;

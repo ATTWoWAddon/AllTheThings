@@ -993,6 +993,7 @@ ihqt(262645, 93794);				-- Beyond the Event Horizon: Alchemy
 ihqt(262644, 93795);				-- Beyond the Event Horizon: Blacksmithing
 ihqt(262646, 93796);				-- Beyond the Event Horizon: Engineering
 iq(253802, 92710);					-- Deed of Patronage
+iq(262965, 93867);					-- Delver's Delight
 ihqt(250445, 92186);				-- Echo of Abundance: Enchanting
 ihqt(250443, 92174);				-- Echo of Abundance: Herbalism
 ihqt(250444, 92187);				-- Echo of Abundance: Mining

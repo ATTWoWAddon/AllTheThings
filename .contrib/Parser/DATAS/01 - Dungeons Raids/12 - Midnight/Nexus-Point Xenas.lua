@@ -25,8 +25,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 		["maps"] = { 2556 },	-- Nexus-Point Xenas
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
+				ach(61585, {	-- You Conduit!
+					["description"] = "In Kasreth's wing of the dungeon are 5 Corespark Conduits. As a group, stand on all 5 at the same time for a few seconds to spawn a cage holding Gortham. The conduits hurt.",
+					["groups"] = {
+						o(619736, {	-- Netherstorm Structural Cage
+							i(262774),	-- Gortham (PET!)
+						}),
+					},
+				}),
 				BossOnly(KASRETH, {
-					ach(61585),	-- You Conduit!
 					i(251201),	-- Corespark Multitool
 					i(251202),	-- Reflux Reflector
 					i(251206),	-- Fluxweave Cloak
@@ -65,7 +72,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(LOTHRAXION, {
 					ach(61647),	-- Mythic: Nexus-Point Xenas
 					ach(61618),	-- Mythic: Nexus-Point Xenas Guild Run
-					i(262774),	-- Gortham (PET!)
 				}),
 			}),
 		},

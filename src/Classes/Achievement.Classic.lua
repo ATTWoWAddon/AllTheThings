@@ -196,19 +196,6 @@ local function OnTooltipForAchievementCriteriaData(t, tooltipInfo)
 			right = t.achievementData.text or achievementID,
 		});
 	end
-	if t.ShouldShowRelatedThingsInTooltip then
-		local relatedThings = {};
-		t.GetRelatedThings(t.data, relatedThings);
-		if #relatedThings > 0 then
-			tinsert(tooltipInfo, { left = " " });
-			for j,thing in ipairs(relatedThings) do
-				tinsert(tooltipInfo, {
-					left = "  |T" .. thing.icon .. ":0|t " .. thing.text,
-					right = app.GetProgressTextForTooltip(thing)
-				});
-			end
-		end
-	end
 	if not t.collectible and app.GameBuildVersion < 30000 then
 		tinsert(tooltipInfo, {
 			left = "\n \nCRIEVE NOTE: This cannot be collected prior to Wrath Classic as it lacks a permanent collectible state.",
@@ -273,9 +260,6 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 	end,
 	["GetRelatedThings"] = function(t)
 		return t.data.GetRelatedThings;
-	end,
-	["ShouldShowRelatedThingsInTooltip"] = function(t)
-		return t.data.ShouldShowRelatedThingsInTooltip;
 	end,
 	["OnTooltip"] = function(t)
 		return OnTooltipForAchievementCriteriaData;

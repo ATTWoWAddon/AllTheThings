@@ -621,7 +621,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30073,	-- The Emperor
 						["qg"] = 56133,	-- Chen Stormstout
 					}),
-					q(29944, {  -- Leaders Among Breeders
+					q(29944, { 	-- Leaders Among Breeders
 						["sourceQuest"] = 29919,	-- Great Minds Drink Alike
 						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
@@ -1310,7 +1310,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(TREASURES, {
-					o(213460, { -- A Most Famous Bill of Sale
+					o(213460, {	-- A Most Famous Bill of Sale
 						["coord"] = { 55.0, 47.3, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					o(214340, {	-- Boat-Building Instructions

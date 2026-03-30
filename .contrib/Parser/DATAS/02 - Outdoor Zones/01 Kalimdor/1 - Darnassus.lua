@@ -1010,6 +1010,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 5,
 				}),
+				q(9432, {	-- Travel to Astranaar [Draenei]
+					["qg"] = 17105,	-- Emissary Valustraa
+					["coord"] = { 38.6, 81.0, DARNASSUS },
+					["timeline"] = { ADDED_2_0_1 , REMOVED_4_0_3 },
+					["races"] = { DRAENEI },
+					["lvl"] = 18,
+				}),
 				q(730, {	-- Trouble In Darkshore?
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
 					["coord"] = { 31.2, 84.2, DARNASSUS },

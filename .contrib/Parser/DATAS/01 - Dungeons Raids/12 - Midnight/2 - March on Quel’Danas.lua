@@ -54,12 +54,12 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.UpgradeMapping = {
-	[DIFFICULTY.RAID.LFR] = 0,
-	[DIFFICULTY.RAID.NORMAL] = 0,
-	[DIFFICULTY.RAID.HEROIC] = 0,
+	[DIFFICULTY.RAID.LFR] = 3,
+	[DIFFICULTY.RAID.NORMAL] = 5,
+	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
 	inst(1308, {	-- March on Quel'Danas
 		["coord"] = { 52.6, 86.0, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 		["maps"] = {
@@ -105,14 +105,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(257736),	-- Lightcalled Hearthstone (TOY!)
 					--i(258519),	-- Plans: Magister's Valediction (RECIPE!)
 					i(264492),	-- Chaotic Void Maw (DECOR!)
-					i(267646, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Argent Trophy (DECOR!)
+					i(267646, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Argent Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
 				--ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3155, {	-- March on Quel'Danas
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -157,14 +157,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(BELOREN),
 				BossOnly(LURA, {
-					ach(61626, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Midnight Falls
-					i(265949, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Aureate Trophy (DECOR!)
+					ach(61626, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Midnight Falls
+					i(265949, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -193,13 +193,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(61379, {	-- Mythic: Midnight Falls
 						title(678),	-- Dawnbringer <Name>
 					}),
-					ach(61627, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Midnight Falls
-					ach(61623, applyDataSelf({["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Midnight Falls
+					ach(61627, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Midnight Falls
+					ach(61623, applyDataSelf({["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Midnight Falls
 						title(677),	-- <Name>, Famed Slayer of the Dark Naaru
 					})),
 					ach(61611),	-- Mythic: Midnight Falls Guild Run
 					i(246590),	-- Ashes of Belo'ren (MOUNT!)
-					i(266885, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Gleaming Trophy (DECOR!)
+					i(266885, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Gleaming Trophy (DECOR!)
 					i(249367, {	-- Chiming Void Curio
 						["sym"] = {
 							{"sub", "instance_tier",1307,DIFFICULTY.RAID.MYTHIC},

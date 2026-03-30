@@ -2445,7 +2445,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43648),	-- Hidden Appearance Unlocked - Unholy Death Knight
 		})),
 		cl(DEMONHUNTER, bubbleDownSelf({ ["classes"] = { DEMONHUNTER } }, {
-			-- Demon Hunter -- TODO -Darkal
+			-- Demon Hunter	-- TODO -Darkal
 			-- 5 IDs, I can't find the pattern -Darkal
 			q(40817),	-- Twinblades of the Deceiver Chosen - Havoc Artifact chosen first
 
@@ -2574,7 +2574,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43674),	-- Hidden Appearance Unlocked - Enhancement Shaman
 			q(43675),	-- Hidden Appearance Unlocked - Restoration Shaman
 
-			-- I have all of those 3 on the same character which makes no sense -- TODO -Darkal
+			-- I have all of those 3 on the same character which makes no sense	-- TODO -Darkal
 			-- Also I can't find any other 3 IDs for "second or third" -Darkal
 			q(43946),	-- Enhancement Chosen - reported as second
 			q(43947),	-- Elemental Chosen

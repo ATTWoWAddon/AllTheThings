@@ -230,7 +230,7 @@ root(ROOTS.Zones, {
 							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
-					q(11665, {  -- Crocolisks in the City
+					q(11665, { 	-- Crocolisks in the City
 						["qg"] = 25580,	-- Old Man Barlo
 						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 						["maps"] = { IRONFORGE, ORGRIMMAR, STORMWIND_CITY },
@@ -482,7 +482,7 @@ root(ROOTS.Zones, {
 							i(25926),	-- Nexus-Stalker's Band
 						},
 					}),
-					q(10913, {	-- An Improper Burial -- aa
+					q(10913, {	-- An Improper Burial	-- aa
 						["qg"] = 22446,	-- Commander Ra'vaj
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 					}),
@@ -560,7 +560,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(10878, {	-- Before Darkness Falls -- aa
+					q(10878, {	-- Before Darkness Falls	-- aa
 						["qg"] = 22370,	-- Mekeda
 						["coord"] = { 37.6, 50.8, TEROKKAR_FOREST },
 						["groups"] = {
@@ -583,7 +583,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 					}),
-					q(10880, {	-- Cabal Orders -- aa
+					q(10880, {	-- Cabal Orders	-- aa
 						["provider"] = { "i", 31707 },	-- Cabal Orders
 						["crs"] = {
 							21661,	-- Cabal Skirmisher
@@ -608,7 +608,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
 					}),
-					q(10922, {	-- Digging Through Bones -- aa
+					q(10922, {	-- Digging Through Bones	-- aa
 						["qg"] = 22458,	-- Chief Archaeologist Letoll
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 					}),
@@ -632,7 +632,7 @@ root(ROOTS.Zones, {
 							i(25916),	-- Terokkar Axe
 						},
 					}),
-					q(10887, {	-- Escaping the Tomb -- aa
+					q(10887, {	-- Escaping the Tomb	-- aa
 						["qg"] = 22377,	-- Akuno
 						["coord"] = { 30.6, 49.1, TEROKKAR_FOREST },
 						["groups"] = {
@@ -708,7 +708,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = 62,
 					})),
-					q(10227, {	-- I See Dead Draenei -- aa
+					q(10227, {	-- I See Dead Draenei	-- aa
 						["qg"] = 19697,	-- Ha'lei
 						["coord"] = { 35.0, 65.0, TEROKKAR_FOREST },
 					}),
@@ -725,7 +725,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(9951, {	-- It's Watching You! -- aa
+					q(9951, {	-- It's Watching You!	-- aa
 						["qg"] = 18424,	-- Warden Treelos
 						["coords"] = {
 							{ 43.4, 22.4, TEROKKAR_FOREST },
@@ -928,7 +928,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["coord"] = { 52.5, 21.0, SHATTRATH_CITY },
 					}),
-					q(10898, {	-- Skywing -- aa
+					q(10898, {	-- Skywing	-- aa
 						["qg"] = 22424,	-- Skywing
 						["coord"] = { 53.7, 72.3, TEROKKAR_FOREST },
 						["groups"] = {
@@ -1026,7 +1026,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-					q(10873, {	-- Taken in the Night -- aa
+					q(10873, {	-- Taken in the Night	-- aa
 						["qg"] = 22364,	-- Scout Navrin
 						["coord"] = { 31.4, 75.6, TEROKKAR_FOREST },
 					}),
@@ -1058,7 +1058,7 @@ root(ROOTS.Zones, {
 							i(31759),	-- Shani's Crysknife
 						},
 					}),
-					q(10877, {	-- The Dread Relic -- aa
+					q(10877, {	-- The Dread Relic	-- aa
 						["qg"] = 22456,	-- Oakun
 						["coord"] = { 31.0, 76.5, TEROKKAR_FOREST },
 						["groups"] = {
@@ -1177,7 +1177,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(10896, {	-- The Infested Protectors -- aa
+					q(10896, {	-- The Infested Protectors	-- aa
 						["qg"] = 22420,	-- Lakotae
 						["coord"] = { 37.9, 51.7, TEROKKAR_FOREST },
 						["groups"] = {

@@ -1192,7 +1192,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						"questID", 30243,	-- Mantid Under Fire
 					},
 					["groups"] = {
-						objective(1, {	-- 0/3 Shado-Pan Scout information recieved
+						objective(1, {	-- 0/3 Shado-Pan Scout information received
 							["provider"] = { "n", 58930 },	-- Shado-Pan Scout
 							["coords"] = {
 								{ 17.0, 47.0, VALE_OF_ETERNAL_BLOSSOMS },

@@ -2078,7 +2078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				n(771, {  -- Commander Felstrom
+				n(771, { 	-- Commander Felstrom
 					["description"] =
 						-- #if AFTER 10.1.7
 						"Wanders the Raven Hill Cemetary, spawns at the given coordinate.",
@@ -2156,7 +2156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(503, {  -- Lord Malathrom
+				n(503, { 	-- Lord Malathrom
 					["description"] =
 						-- #if AFTER 10.1.7
 						"Spawns in one of multiple locations in the Dawning Wood Catacombs.",
@@ -2182,7 +2182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(521, {  -- Lupos
+				n(521, { 	-- Lupos
 					["description"] =
 						-- #if AFTER 4.0.3
 						"Spawns in one of multiple locations at the eastern end of the Darkened Bank.",
@@ -2229,7 +2229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				n(574, {  -- Naraxis
+				n(574, { 	-- Naraxis
 					["coords"] = {
 						-- #if AFTER 4.0.3
 						{ 86.4, 47.3, DUSKWOOD },
@@ -2246,7 +2246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(534, {  -- Nefaru
+				n(534, { 	-- Nefaru
 					-- #if BEFORE 4.0.3
 					["description"] = "Spawns randomly in the south and south-eastern part of the zone.",
 					-- #endif

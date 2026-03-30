@@ -2914,6 +2914,7 @@ root(ROOTS.Zones, {
 					o(236715, {	-- Odd Skull
 						["questID"] = 36509,
 						["coord"] = { 52.5, 66.9, GORGROND },
+						["groups"] = { i(118717) },	-- Beastskull Vessel
 					}),
 					o(235881, {	-- Petrified Rylak Egg
 						["questID"] = 36521,

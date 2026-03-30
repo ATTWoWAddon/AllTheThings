@@ -3,10 +3,18 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
+	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+		i(258839, {	-- Concealed Catalogue
+			["description"] = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
+			--["sym"] = {{"select","itemID",
+
+			--}},
+		}),
+	})),
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_UMBRAL, bubbleDownSelf({
-			["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }
-		},{
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }
+		}, {
 			ach(61254),	-- Midnight Keystone Explorer: Season One
 			ach(61255, {	-- Midnight Keystone Conqueror: Season One
 				title(655),	-- <Name> the Umbral
@@ -54,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(61594),	-- Keystone Victor: Skyreach
 			ach(61590),	-- Keystone Victor: Windrunner Spire
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
-			-- Have to see what Blizzard does with those kind of achievements -- Goldenshacal October 2025
+			-- Have to see what Blizzard does with those kind of achievements	-- Goldenshacal October 2025
 			ach(61233, {	-- Midnight Season 1: Resilient Keystone 12
 				["_noautomation"] = true,
 			}),
@@ -116,5 +124,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				["collectible"] = false,
 			}),
 		})),
+		cnONLY(filter(TITLES, bubbleDownSelf({
+			["timeline"] = { ADDED_12_0_1 }
+		}, {
+			-- https://www.wowhead.com/news/chinese-community-earns-exclusive-titles-through-mythic-mentorship-380999
+			cnONLY(title(756)),	-- Volunteer <Name>						// 10 Dungeons
+			cnONLY(title(757)),	-- Caring Citizen <Name>				// 50 Dungeons
+			cnONLY(title(758)),	-- <Name>, The Backbone of the Realm	// 100 Dungeons
+			cnONLY(title(759)),	-- <Name>, The Philanthropist			// 200 Dungeons
+			cnONLY(title(760)),	-- <Name>, The Everlasting				// 500 Dungeons
+		}))),
 	}),
 }));

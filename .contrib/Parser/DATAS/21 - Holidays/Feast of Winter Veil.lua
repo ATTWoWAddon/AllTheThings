@@ -2310,7 +2310,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["qgs"] = {
 				220307,	-- Holiday Enthusiast
 				220865,	-- Holiday Enthusiast
-				220870, -- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
 			},
 			["coords"] = {
 				{ 46.0, 55.1, DORNOGAL },
@@ -2325,7 +2325,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["qgs"] = {
 				220307,	-- Holiday Enthusiast
 				220865,	-- Holiday Enthusiast
-				220870, -- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
 			},
 			["coords"] = {
 				{ 46.0, 55.1, DORNOGAL },

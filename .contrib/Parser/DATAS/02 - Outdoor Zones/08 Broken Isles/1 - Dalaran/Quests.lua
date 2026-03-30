@@ -969,7 +969,7 @@ root(ROOTS.Zones, {
 					},
 					["classes"] = { PALADIN },
 				}),
-				q(45412, {	-- Protection: Aid of the Illidari (Warrior) -- this is still obtainable, confirmed in 8.3
+				q(45412, {	-- Protection: Aid of the Illidari (Warrior)	-- this is still obtainable, confirmed in 8.3
 					["sourceQuests"] = {
 						47030,	-- Legion Threat: Dalaran Inflitration
 						44821,	-- In Dire Need

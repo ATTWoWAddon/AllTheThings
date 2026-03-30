@@ -3125,7 +3125,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440922)),	-- Engrave Cloak - Decimation
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440926)),	-- Engrave Cloak - Infernal Armor
-			applyclassicphase(SOD_PHASE_FOUR, recipe(440924)),	-- Engrave Cloak - Mark of Chaos -- BOOTS? Shouldn't this be Cloak?
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440924)),	-- Engrave Cloak - Mark of Chaos	-- BOOTS? Shouldn't this be Cloak?
 		}),
 		classHeader(WARRIOR, {
 			-- Phase 1

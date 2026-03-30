@@ -54,7 +54,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 		n(QUESTS, {
 			q(63214, {	-- Report to Moonberry
 				["sourceQuests"] = {
-					57878,	-- Choosing Your Purpose [Story] -- TODO: confirm this requirement on a Story-Night Fae?
+					57878,	-- Choosing Your Purpose [Story]	-- TODO: confirm this requirement on a Story-Night Fae?
 					62000,	-- Choosing Your Purpose [Skip]
 				},
 				["sourceQuestNumRequired"] = 1,

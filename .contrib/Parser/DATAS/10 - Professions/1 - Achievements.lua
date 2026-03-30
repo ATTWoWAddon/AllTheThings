@@ -77,7 +77,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		ach(18722, { ["timeline"] = { ADDED_10_1_7 } }),		-- Northrend Master of All
-		ach(734, {	-- Professional Grand Master / Professional Northrend Master [BFA] -- 1 Primary Profession at Max
+		ach(734, {	-- Professional Grand Master / Professional Northrend Master [BFA]	-- 1 Primary Profession at Max
 			["timeline"] = { ADDED_3_0_3 },
 		}),
 		ach(732, {	-- Professional Artisan / Professional Classic Master [BFA]
@@ -103,7 +103,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 			}},
 			["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 },
 		}),
-		ach(735, {	-- Working Day and Night / Working In the Cold [BFA] -- Some Primary Professions at Max
+		ach(735, {	-- Working Day and Night / Working In the Cold [BFA]	-- Some Primary Professions at Max
 			["timeline"] = { ADDED_3_0_3 },
 		}),
 	}),

@@ -2510,7 +2510,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					91031,	-- Nicholas Mitrik (Horde)
 					91404,	-- Samantha Scarlet (Alliance)
 				},
-				["coord"] = { 34.5, 33.0, LUNARFALL },
+				["coords"] = {
+					{ 34.5, 33.0, LUNARFALL },
+					{ 40.2, 56.0, FROSTWALL },
+				},
 				["cost"] = {
 					{ "i", 109125, 10 },	-- 10x Fireweed
 					{ "i", 109126, 10 },	-- 10x Gorgrond Flytrap

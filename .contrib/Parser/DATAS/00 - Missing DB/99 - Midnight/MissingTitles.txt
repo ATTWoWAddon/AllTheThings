@@ -77,11 +77,6 @@ title(689),	-- %s, Fabled Vanquisher of Nullaeus
 12.0.1.64889
 title(755),	-- Preyseeker %s
 12.0.1.66192
-title(756),	-- Volunteer %s
-title(757),	-- Caring Citizen %s
-title(758),	-- %s, The Backbone of the Realm
-title(759),	-- %s, The Philanthropist
-title(760),	-- %s, The Everlasting
 title(761),	-- %s, World Apex
 title(762),	-- Azeroth's Top Ten Youth %s
 title(763),	-- Model of the Era %s

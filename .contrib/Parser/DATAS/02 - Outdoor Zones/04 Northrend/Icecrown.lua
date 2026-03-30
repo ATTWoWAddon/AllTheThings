@@ -1790,7 +1790,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12839, {	-- The Grand (Admiral's) Plan
 						["description"] = "Must be in |cFFFFD700Intelligence Gathering|r to loot the quest item from a chest.",
-						["sourceQuest"] = 12838,	-- Intelligence Gathering -- NOTE: this isn't actually a sourceQuest, but you must have it to start this one
+						["sourceQuest"] = 12838,	-- Intelligence Gathering	-- NOTE: this isn't actually a sourceQuest, but you must have it to start this one
 						["provider"] = { "i", 40666 },	-- Note from the Grand Admiral
 						["coord"] = { 9.2, 41.0, ICECROWN },
 					}),

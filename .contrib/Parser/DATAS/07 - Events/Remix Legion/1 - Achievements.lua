@@ -8,7 +8,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		ach(42502),	-- Artifact, Remixed II
 		ach(42503),	-- Artifact, Remixed III
 		ach(42565, {	-- Bringing Order to the Isles
-		-- Added with Phase3 Legion Remix Release -- Gold 5th Nov 2025
+		-- Added with Phase3 Legion Remix Release	-- Gold 5th Nov 2025
 			["description"] = "Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.\n\nDruids can skip some of the dungeon quests.\n\nRogues have to do every single quest, including getting every follower.",
 			["OnTooltip"] = [[function(t, tooltipInfo)
 				tinsert(tooltipInfo, { left = " " });

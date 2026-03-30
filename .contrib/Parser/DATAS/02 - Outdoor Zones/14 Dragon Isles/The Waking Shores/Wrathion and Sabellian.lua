@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 187272 },	-- Forgemaster Bazentus
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 						["repeatable"] = true,
-						["cost"] = { { "i", 191264, 10 } }, -- 10x Restored Obsidian Key
+						["cost"] = { { "i", 191264, 10 } },	-- 10x Restored Obsidian Key
 					}),
 					q(70763, {	-- Worldcarver A'tir
 						["provider"] = { "n", 186859 },	-- Worldcarver A'tir
@@ -986,9 +986,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 	m(DRAGON_ISLES, {
 		m(THE_WAKING_SHORES, {
 			n(WRATHION_SABELLIAN, {
-				q(64277),	-- Triggered when choosing anyone in Allegiance To One (66419) -- triggered for both in 2 weeks
-				q(66808),	-- Triggered when choosing Seballian in Allegiance To One (66419) -- triggered for Seballian only
-				q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419) -- triggered for Wrathion only
+				q(64277),	-- Triggered when choosing anyone in Allegiance To One (66419)	-- triggered for both in 2 weeks
+				q(66808),	-- Triggered when choosing Seballian in Allegiance To One (66419)	-- triggered for Seballian only
+				q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419)	-- triggered for Wrathion only
 				q(67168),	-- Triggered with completion of 'Dragon Eyes' (questID67051) (spellID 377997)
 				q(72378, {["timeline"] = {ADDED_10_0_5}}),	-- Triggered when refusing to activate the Wrathion and Sabellian skip for alts
 				-- q(72112),	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor

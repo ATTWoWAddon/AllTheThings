@@ -82,6 +82,7 @@ local KeyMaps = setmetatable({
 	npc = "npcID",
 	o = "objectID",
 	object = "objectID",
+	pn = "professionnodeID",
 	pvprank = "pvprankID",
 	r = "spellID",
 	recipe = "spellID",
@@ -557,7 +558,7 @@ app.SearchAndOpen = function(search)
 			window:SetVisible(true)
 
 			-- collapse all the groups
-			app.ForceExpandGroupsRecursively(window.data, false)
+			app.ExpandGroupsRecursively(window.data, false, true)
 		end
 		-- force the search results to be visible
 		o.forceShow = true

@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(262472, {	-- Cosmic Kettle (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
-					i(264659, { -- Cosmic Traveler's Satchel (DECOR!)
+					i(264659, {	-- Cosmic Traveler's Satchel (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(267209),	-- Open Void Elf Bedroll (DECOR!)

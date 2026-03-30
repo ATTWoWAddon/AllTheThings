@@ -5740,7 +5740,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				n(164947, { -- Gerald Black <Shady Dealer>
+				n(164947, {	-- Gerald Black <Shady Dealer>
 					["coord"] = { 78.8, 70.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -6358,7 +6358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #if NOT ANYCLASSIC
 				-- Crieve NOTE: This NPC ID wasn't used for TBC Classic, so not sure how this was actually used.
-				n(23446, {	-- Lieutenant Tristia -- BC Vendor for Trinkets
+				n(23446, {	-- Lieutenant Tristia	-- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
 					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,

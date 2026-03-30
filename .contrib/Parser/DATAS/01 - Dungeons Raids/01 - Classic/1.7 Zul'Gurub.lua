@@ -2283,30 +2283,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					},
 				}),
 				n(14517, {	-- High Priestess Jeklik
-					i(230911), -- Jeklik's Crusher
-					i(230913), -- Jeklik's Opaline Talisman
-					i(230912), -- Animist's Spaulders
-					i(230914), -- Peacekeeper Boots
-					i(230916), -- Seafury Boots
-					i(230915), -- Primalist's Band
+					i(230911),	-- Jeklik's Crusher
+					i(230913),	-- Jeklik's Opaline Talisman
+					i(230912),	-- Animist's Spaulders
+					i(230914),	-- Peacekeeper Boots
+					i(230916),	-- Seafury Boots
+					i(230915),	-- Primalist's Band
 					i(232299),	-- Zulian Defender
 				}),
 				n(14507, {	-- High Priest Venoxis
 					applyclassicphase(PHASE_FIVE, i(22216)),	-- Venoxis's Venom Sac
-					i(230865), -- Fang of Venoxis
-					i(230868), -- Zulian Stone Axe
-					i(232311), -- Zulian Tigerhide Cloak
-					i(230864), -- Runed Bloodstained Hauberk
-					i(230866), -- Blooddrenched Footpads
-					i(230867), -- Zanzil's Band
+					i(230865),	-- Fang of Venoxis
+					i(230868),	-- Zulian Stone Axe
+					i(232311),	-- Zulian Tigerhide Cloak
+					i(230864),	-- Runed Bloodstained Hauberk
+					i(230866),	-- Blooddrenched Footpads
+					i(230867),	-- Zanzil's Band
 				}),
 				n(14510, {	-- High Priestess Mar'li
-					i(230918), -- Mar'li's Touch
-					i(230917), -- Flowing Ritual Robes
-					i(230919), -- Bloodstained Greaves (Swapped?)
-					i(230921), -- Band of Jin
-					i(230920), -- Mar'li's Eye
-					i(230922), -- Talisman of Protection
+					i(230918),	-- Mar'li's Touch
+					i(230917),	-- Flowing Ritual Robes
+					i(230919),	-- Bloodstained Greaves (Swapped?)
+					i(230921),	-- Band of Jin
+					i(230920),	-- Mar'li's Eye
+					i(230922),	-- Talisman of Protection
 				}),
 				n(11382, {	-- Bloodlord Mandokir
 					ach(881, {	-- Swift Razzashi Raptor
@@ -2317,19 +2317,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
-					i(230989), -- Bloodlord's Defender
-					i(230991), -- Halberd of Smiting
-					i(230993), -- Mandokir's Sting
-					i(230992), -- Warblade of the Hakkari OH
-					i(230998), -- Hakkari Loa Cloak
-					i(230996), -- Bloodsoaked Pauldrons
-					i(230995), -- Blooddrenched Grips
-					i(230994), -- Animist's Leggings
-					i(230997), -- Bloodtinged Kilt
-					i(230999), -- Overlord's Crimson Band
-					i(231000), -- Primalist's Seal
-					i(231001), -- Zanzil's Seal
-					i(231512), -- Primal Hakkari Idol
+					i(230989),	-- Bloodlord's Defender
+					i(230991),	-- Halberd of Smiting
+					i(230993),	-- Mandokir's Sting
+					i(230992),	-- Warblade of the Hakkari OH
+					i(230998),	-- Hakkari Loa Cloak
+					i(230996),	-- Bloodsoaked Pauldrons
+					i(230995),	-- Blooddrenched Grips
+					i(230994),	-- Animist's Leggings
+					i(230997),	-- Bloodtinged Kilt
+					i(230999),	-- Overlord's Crimson Band
+					i(231000),	-- Primalist's Seal
+					i(231001),	-- Zanzil's Seal
+					i(231512),	-- Primal Hakkari Idol
 				}),
 				o(180368, {	-- Tablet of Madness
 					["description"] = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
@@ -2427,24 +2427,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 							},
 						}),
 						n(15082, {	-- Gri'lek
-							i(231513), -- Gri'lek's Blood
-							i(231274), -- Gri'lek's Grinder
-							i(231273), -- Gri'lek's Carver
+							i(231513),	-- Gri'lek's Blood
+							i(231274),	-- Gri'lek's Grinder
+							i(231273),	-- Gri'lek's Carver
 						}),
 						n(15083, {	-- Hazza'rah
-							i(231516), -- Hazza'rah's Dream Thread
-							i(231276), -- Thoughtblighter
+							i(231516),	-- Hazza'rah's Dream Thread
+							i(231276),	-- Thoughtblighter
 							i(19968),	-- Fiery Retributer Doublecheck
 						}),
 						n(15084, {	-- Renataki
-							i(231514), -- Renataki's Tooth
-							i(231277), -- Pitchfork of Madness
-							i(232309), -- Renataki's Soul Conduit
+							i(231514),	-- Renataki's Tooth
+							i(231277),	-- Pitchfork of Madness
+							i(232309),	-- Renataki's Soul Conduit
 						}),
 						n(15085, {	-- Wushoolay
-							i(231515), -- Wushoolay's Mane
-							i(231279), -- Wushoolay's Poker
-							i(231278), -- Hoodoo Hunting Bow
+							i(231515),	-- Wushoolay's Mane
+							i(231279),	-- Wushoolay's Poker
+							i(231278),	-- Hoodoo Hunting Bow
 						}),
 					},
 				}),
@@ -2457,13 +2457,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					i(19902, {	-- Swift Zulian Tiger (MOUNT!)
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
-					i(230925), -- Thekal's Grasp
-					i(230930), -- Zulian Slicer
-					i(230926), -- Peacekeeper Leggings
-					i(230927), -- Ritualistic Legguards
-					i(230928), -- Seafury Leggings
-					i(230923), -- Betrayer's Boots
-					i(230929), -- Seal of Jin
+					i(230925),	-- Thekal's Grasp
+					i(230930),	-- Zulian Slicer
+					i(230926),	-- Peacekeeper Leggings
+					i(230927),	-- Ritualistic Legguards
+					i(230928),	-- Seafury Leggings
+					i(230923),	-- Betrayer's Boots
+					i(230929),	-- Seal of Jin
 				}),
 				o(180366, {	-- Battered Tackle Box
 					["description"] = "Fishermen with 300 skill can interact with this to receive the quest item.",
@@ -2481,70 +2481,70 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						ach(560, {	-- Deadliest Catch
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_1_0 },
 						}),
-						i(231016), -- Nat Pagle's Fish Terminator
-						i(231272), -- Tigule's Harpoon
+						i(231016),	-- Nat Pagle's Fish Terminator
+						i(231272),	-- Tigule's Harpoon
 						i(19945),	-- Foror's Eyepatch
-						i(231271), -- Nat Pagle's Broken Reel
+						i(231271),	-- Nat Pagle's Broken Reel
 						TOME_OF_POLYMORPH_TURTLE,
 					},
 				}),
 				n(14515, {	-- High Priestess Arlokk
 					["provider"] = { "o", 180526 },	-- Gong of Bethekk
 					["groups"] = {
-						i(230944), -- Panther Hide Sack
-						i(230934), -- Arlokk's Grasp
-						i(230939), -- Will of Arlokk
-						i(230941), -- Arlokk's Hoodoo Stick
-						i(230942), -- Bloodsoaked Greaves
-						i(230943), -- Overlord's Onyx Band
+						i(230944),	-- Panther Hide Sack
+						i(230934),	-- Arlokk's Grasp
+						i(230939),	-- Will of Arlokk
+						i(230941),	-- Arlokk's Hoodoo Stick
+						i(230942),	-- Bloodsoaked Greaves
+						i(230943),	-- Overlord's Onyx Band
 					},
 				}),
 				n(11380, {	-- Jin'do the Hexxer
-					i(231005), -- Jin'do's Bag of Whammies
-					i(231002), -- Jin'do's Hexxer
-					i(231004), -- Jin'do's Judgement
-					i(231013), -- The Hexxer's Cover
-					i(231003), -- Jin'do's Evil Eye
-					i(231012), -- Overlord's Embrace
-					i(231009), -- Blooddrenched Leggings
-					i(231007), -- Bloodstained Coif
-					i(231010), -- Bloodsoaked Gauntlets
-					i(231011), -- Bloodtinged Gloves
-					i(231008), -- Bloodstained Legplates
-					i(231006), -- Animist's Boots
-					i(231512), -- Primal Hakkari Idol
+					i(231005),	-- Jin'do's Bag of Whammies
+					i(231002),	-- Jin'do's Hexxer
+					i(231004),	-- Jin'do's Judgement
+					i(231013),	-- The Hexxer's Cover
+					i(231003),	-- Jin'do's Evil Eye
+					i(231012),	-- Overlord's Embrace
+					i(231009),	-- Blooddrenched Leggings
+					i(231007),	-- Bloodstained Coif
+					i(231010),	-- Bloodsoaked Gauntlets
+					i(231011),	-- Bloodtinged Gloves
+					i(231008),	-- Bloodstained Legplates
+					i(231006),	-- Animist's Boots
+					i(231512),	-- Primal Hakkari Idol
 				}),
 				n(14834, {	-- Hakkar the Soulflayer
 					n(ZG_HAKKAR_HARDMODE, {
 						["description"] = "When you leave a specific Priest or Priestess alive and defeat Hakkar, then there is a guaranteed chance that a piece of rare or epic loot from that boss will drop from Hakkar, including an Item from Hakkar himself.",
 						["groups"] = {
-							i(231512), -- Primal Hakkari Idol (Bonus)
-							i(231856), -- Ancient Hakkari Manslayer (Hakkar)
-							i(231851), -- Arlokk's Grasp
-							i(231858), -- Bloodcaller (Hakkar)
-							i(231867), -- Bloodlord's Defender
-							i(231855), -- Fang of the Faceless
-							i(231874), -- Fang of Venoxis
-							i(231870), -- Halberd of Smiting
+							i(231512),	-- Primal Hakkari Idol (Bonus)
+							i(231856),	-- Ancient Hakkari Manslayer (Hakkar)
+							i(231851),	-- Arlokk's Grasp
+							i(231858),	-- Bloodcaller (Hakkar)
+							i(231867),	-- Bloodlord's Defender
+							i(231855),	-- Fang of the Faceless
+							i(231874),	-- Fang of Venoxis
+							i(231870),	-- Halberd of Smiting
 							i(231861),	-- Jeklik's Crusher
 							i(231847),	-- Gri'lek's Grinder
-							i(231846), -- Gri'lek's Carver
-							i(231852), -- Gurubashi Dwarf Destroyer
-							i(231868), -- Mandokir's Sting
-							i(231866), -- Mar'li's Touch
-							i(231848), -- Nat Pagle's Fish Terminator
-							i(231864), -- Pitchfork of Madness
-							i(232310), -- Renataki's Soul Conduit
-							i(231863), -- Thoughtblighter
-							i(231849), -- Tigule's Harpoon
-							i(231857), -- Touch of Chaos
-							i(231853), -- Warblade of the Hakkari MH BL
-							i(231869), -- Warblade of the Hakkari OH BL
-							i(231850), -- Will of Arlokk
-							i(231876), -- Zulian Slicer
-							i(231875), -- Thekal's Grasp
-							i(231865), -- Zulian Scepter of Rites
-							i(231854), -- Zin'rokh, Destroyer of Worlds
+							i(231846),	-- Gri'lek's Carver
+							i(231852),	-- Gurubashi Dwarf Destroyer
+							i(231868),	-- Mandokir's Sting
+							i(231866),	-- Mar'li's Touch
+							i(231848),	-- Nat Pagle's Fish Terminator
+							i(231864),	-- Pitchfork of Madness
+							i(232310),	-- Renataki's Soul Conduit
+							i(231863),	-- Thoughtblighter
+							i(231849),	-- Tigule's Harpoon
+							i(231857),	-- Touch of Chaos
+							i(231853),	-- Warblade of the Hakkari MH BL
+							i(231869),	-- Warblade of the Hakkari OH BL
+							i(231850),	-- Will of Arlokk
+							i(231876),	-- Zulian Slicer
+							i(231875),	-- Thekal's Grasp
+							i(231865),	-- Zulian Scepter of Rites
+							i(231854),	-- Zin'rokh, Destroyer of Worlds
 							i(231859),	-- Jin'do's Hexxer
 							i(231860),	-- Jin'do's Judgement
 							i(231862),	-- Blazefury Retributer
@@ -2554,20 +2554,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						},
 					}),
 					i(19802),	-- Heart of Hakkar
-					i(231289), -- Aegis of the Blood God
-					i(231293), -- Ancient Hakkari Manslayer
-					i(231296), -- Bloodcaller
-					i(231301), -- Fang of the Faceless
-					i(231302), -- Gurubashi Dwarf Destroyer
-					i(231308), -- Touch of Chaos
-					i(231309), -- Warblade of the Hakkari MH
-					i(231315), -- Zin'rokh, Destroyer of Worlds
-					i(231306), -- Soul Corrupter's Necklace
-					i(231307), -- The Eye of Hakkar
-					i(231300), -- Cloak of Consumption
-					i(231303), -- Peacekeeper Gauntlets
-					i(231305), -- Seafury Gauntlets
-					i(231299), -- Bloodsoaked Legplates
+					i(231289),	-- Aegis of the Blood God
+					i(231293),	-- Ancient Hakkari Manslayer
+					i(231296),	-- Bloodcaller
+					i(231301),	-- Fang of the Faceless
+					i(231302),	-- Gurubashi Dwarf Destroyer
+					i(231308),	-- Touch of Chaos
+					i(231309),	-- Warblade of the Hakkari MH
+					i(231315),	-- Zin'rokh, Destroyer of Worlds
+					i(231306),	-- Soul Corrupter's Necklace
+					i(231307),	-- The Eye of Hakkar
+					i(231300),	-- Cloak of Consumption
+					i(231303),	-- Peacekeeper Gauntlets
+					i(231305),	-- Seafury Gauntlets
+					i(231299),	-- Bloodsoaked Legplates
 				}),
 			}))),
 			-- #endif

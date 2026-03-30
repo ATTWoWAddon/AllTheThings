@@ -1502,7 +1502,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			-- To Master's Perch (Not a breadcrumb)
 			q(93810, {	-- Masters' Perch
-				["sourceQuests"] = { 86565 },	-- No Prayer for the Wicked
+				--["sourceQuests"] = { 86565 },	-- No Prayer for the Wicked
 				["provider"] = { "n", 254765 },	-- Perodius
 				["coord"] = { 51.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
 			}),
@@ -1634,6 +1634,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(93515),	-- Triggered after turning 'Magisters' Terrace: Homecoming' (86543)
 				q(96244),	-- Triggered after turning 'Ambition's Reward' (91343)
 				q(94448),	-- after turn in questID 91694 (Voidscar Arena: Breaking the Triad) TODO: I'm not sure why there wasn't report about it
+				q(95308, name(HEADERS.Item, 260697)),	-- Receiving Lab-grown Stormray when using 'Wings of the Void' 1270742
 			}),
 		}),
 	}),

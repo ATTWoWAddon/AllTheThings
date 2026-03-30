@@ -1088,8 +1088,8 @@ root(ROOTS.Zones, {
 					q(12489, {	-- Welcome to Sholazar Basin
 						["sourceQuests"] = {
 							-- #if AFTER 6.2.0.19953
-							39209,	-- Sholazar Basin -- Adventure Guide
-							39212,	-- Sholazar Basin -- Adventure Guide
+							39209,	-- Sholazar Basin	-- Adventure Guide
+							39212,	-- Sholazar Basin	-- Adventure Guide
 							-- #endif
 							12521,	-- Where in the World is Hemet Nesingwary?
 						},

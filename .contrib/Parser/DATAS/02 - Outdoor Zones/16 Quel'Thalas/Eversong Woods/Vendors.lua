@@ -25,10 +25,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(251912, {	-- Goldenmist Grapes (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
+					i(246458),	-- Grand Aethercharged Crystal (DECOR!)
 					i(244783, {	-- Majestic Lightwood Table (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
 					i(245992),	-- Ornate Silvermoon Candelabra (DECOR!)
+					i(264660, {	-- Ren'dorei Spired Tent (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+					}),
 					i(263231, {	-- Silvermoon Curio Shelves (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
@@ -36,13 +40,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(245282),	-- Silvermoon Library Bookcase (DECOR!)
 					i(244538),	-- Silvermoon Sundial (DECOR!)
 					i(253485),	-- Sin'dorei Honor Stone (DECOR!)
-					i(262610),	-- Swirling Ritual Pedestal (DECOR!)
 					i(264248, {	-- Sin'dorei Storage Jar (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
-					i(264660, {	-- Ren'dorei Spired Tent (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+					i(251914, {	-- Sumptuous Berry Pie (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
+					i(262610),	-- Swirling Ritual Pedestal (DECOR!)
 				}),
 			}),
 		}),

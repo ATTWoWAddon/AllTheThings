@@ -647,7 +647,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["groups"] = {
 						i(225662),	-- Arcane Dust (QI!)
 						i(225895),	-- Frostfire Essence (QI!)
-						o(454205, { -- Radiant Prism Crystals
+						o(454205, {	-- Radiant Prism Crystals
 							i(225663),	-- Radiant Prism Crystals (QI!)
 						}),
 					},
@@ -682,7 +682,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["coord"] = { 61.7, 41.5, ISLE_OF_DORN },
 					["groups"] = {
 						i(225920),	-- Stolen Kirin Tor Artifacts (QI!)
-						o(454707, { -- Bag of Stolen Goods
+						o(454707, {	-- Bag of Stolen Goods
 							["coords"] = {
 								{ 62.1, 40.6, ISLE_OF_DORN },
 								{ 64.3, 41.4, ISLE_OF_DORN },
@@ -742,15 +742,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["provider"] = { "n", 229763 },	-- Lady Jaina Proudmoore
 					["coord"] = { 35.5, 52.4, AZJ_KAHET },
 					["groups"] = {
-						o(465294, { -- Antonidas' Introduction to Arcane Magic
+						o(465294, {	-- Antonidas' Introduction to Arcane Magic
 							["coord"] = { 35.7, 51.4, AZJ_KAHET },
 							["groups"] = { i(228820) },	-- Antonidas' Introduction to Arcane Magic (QI!)
 						}),
-						o(465295, { -- Medivh's Karazhan Schematics
+						o(465295, {	-- Medivh's Karazhan Schematics
 							["coord"] = { 35.1, 51.2, AZJ_KAHET },
 							["groups"] = { i(228821) },	-- Medivh's Karazhan Schematics (QI!)
 						}),
-						o(465300, { -- Thalen Songweaver's Notes
+						o(465300, {	-- Thalen Songweaver's Notes
 							["coord"] = { 36.1, 52.6, AZJ_KAHET },
 							["groups"] = { i(228823) },	-- Thalen Songweaver's Notes (QI!)
 						}),
@@ -896,7 +896,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["sourceQuest"] = 85212,	-- A Void Test of Wills
 					["qg"] = 233885,	-- Alleria Windrunner
 					["coord"] = { 60.8, 28.0, KARESH },
-					["lockCriteria"] = { 1, "questID", 85213 },	-- Off to Tazavesh, Again (completion locks the HQT -- unconfirmed)
+					["lockCriteria"] = { 1, "questID", 85213 },	-- Off to Tazavesh, Again (completion locks the HQT	-- unconfirmed)
 				}),
 				--
 				q(85214, {	-- Here Goes Something
@@ -977,7 +977,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					},
 					["qg"] = 238519,	-- Arator
 					["coord"] = { 30.5, 18.7, THE_MAW },
-					["lockCriteria"] = { 1, "questID", 84944 },	-- Preludes and Preparations (completion locks the HQT -- unconfirmed, but likely)
+					["lockCriteria"] = { 1, "questID", 84944 },	-- Preludes and Preparations (completion locks the HQT	-- unconfirmed, but likely)
 				}),
 				--
 				q(84945, {	-- Repent of the Highborne
@@ -1023,7 +1023,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["sourceQuest"] = 84949,	-- The Eleventh Hour
 					["qg"] = 233567,	-- Arator
 					["coord"] = { 60.7, 92.5, KARESH_TAZAVESH },
-					["lockCriteria"] = { 1, "questID", 84949 },	-- The Eleventh Hour (completion locks the HQT -- unconfirmed)
+					["lockCriteria"] = { 1, "questID", 84949 },	-- The Eleventh Hour (completion locks the HQT	-- unconfirmed)
 				}),
 				--
 			}),

@@ -485,7 +485,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 217565 },	-- Al'kubian
 					["coord"] = { 60.0, 66.2, AZJ_KAHET },
 					["groups"] = {
-						ach(41200, { -- Grand, Gutsy Solutions
+						ach(41200, {	-- Grand, Gutsy Solutions
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(222944),	-- Swollen Brain of Gluttony (QI!)

@@ -29,16 +29,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["qg"] = 245102,	-- Dalnir
 					["coord"] = { 35.3, 23.3, MAP.MIDNIGHT.HARANDAR },
 					["groups"] = {
-						o(553793, {	-- Shield
-							["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = { i(246112) },	-- Alliance Shield (QI!)
-						}),
 						o(553844, {	-- Axe
 							["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
 							["races"] = HORDE_ONLY,
 							["groups"] = { i(246126) },	-- Horde Axe (QI!)
 						}),
+						o(553793, {	-- Shield
+							["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = { i(246112) },	-- Alliance Shield (QI!)
+						}),
+						i(246129),	-- Outsider's Gear (QI!)
 					},
 				}),
 				q(90959, {	-- Traditional Duties
@@ -613,7 +614,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					q(95324, {	-- The War Beyond the Roots
 						["sourceQuests"] = { 86898 },	-- Rise of the Haranir
-						["provider"] = { "n", 255819 }, -- Elder Hagar
+						["provider"] = { "n", 255819 },	-- Elder Hagar
 						["coord"] = { 36.5, 68.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 						["groups"] = {
 							ach(61506, {	-- Allied Race: Haranir
@@ -1347,7 +1348,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					86877,	-- Righteous Pruning
 				},
 				["qg"] = 241655,	-- Hannan
-				["coord"] = { 30.5, 77.2, MAP.MIDNIGHT.HARANDAR },
+				["coord"] = { 33.2, 76.0, MAP.MIDNIGHT.HARANDAR },
 			}),
 			q(93745, {	-- Har'athir, Village of Memory
 				["sourceQuests"] = { 86930 },	-- To Sow the Seed
@@ -1388,7 +1389,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 		}),
 		n(QUESTS, sharedData({
-			["sourceQuests"] = { 86930 },	-- To Sow the Seed
+			-- ["sourceQuests"] = { 86930 },	-- To Sow the Seed (perhaps a different quest is required?)
 			["qg"] = 249361,	-- Shul'ka Li'tya
 			["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
 			["isWeekly"] = true,	-- Probably? Blue !

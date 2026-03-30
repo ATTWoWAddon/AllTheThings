@@ -317,7 +317,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44484),	-- Vendor Beckon Trigger - triggers all classes
 		q(45773, { ["timeline"] = { ADDED_7_2_0 } }),	-- 7.2 Class Hall - Maximillian of Northshire - Aqcuisition - Track Mail Sent
 
-		-- Random -- TODO -Darkal
+		-- Random	-- TODO -Darkal
 
 		q(44295),	-- Tracking Quest - W2 - Spoke to Khadgar
 		q(44297),	-- Tracking Quest - W2 - Jaina Gone
@@ -416,7 +416,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(57108),	-- Looting a bounty in Nazjatar as Alliance (all 3 trigger at the same time)
 		q(57109),	-- Looting a bounty in Nazjatar as Alliance
 		q(57110),	-- Looting a bounty in Nazjatar as Alliance
-		q(53409),	-- not sure what triggered this -- i won an epic BG and also capped on conquest for the week
+		q(53409),	-- not sure what triggered this	-- i won an epic BG and also capped on conquest for the week
 		q(54180),	-- Quest — capping 500 Conquest
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
 		q(55375),	-- Drustvar Secret Supply Chest (playing as Alliance)
@@ -625,7 +625,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(58409),	-- Combining Coalescing Visions 4x
 		q(58994),	-- Triggers when you get your first corrupted item. It procs the "Curious Corruption" quest
 		q(58815),	-- Triggers when completing the blacktalon agent daily for a zone vision
-		q(58085),	-- Triggered upon entering the vision to the Shrine of Seven Stars -- TODO:  verify this. didn't pop up since latest PTR build
+		q(58085),	-- Triggered upon entering the vision to the Shrine of Seven Stars	-- TODO:  verify this. didn't pop up since latest PTR build
 		q(59132),	-- probably "Unwavering Resolve" achievement (upgrade cloak to rank 15)
 
 		-- Horrific Visions
@@ -730,7 +730,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(62814),	-- triggered when opening a crypt with the key
 		q(59495),	-- when using Contract: Atoning Rituals (59594)
 
-		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
+		q(62668),	-- after looting a Dirty Glinting Object	-- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
 		-- q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
 		q(63454),	-- triggers when turning in "Return Lost Souls" (spellID 348839 & 348842 & 348845 & 348848)
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore

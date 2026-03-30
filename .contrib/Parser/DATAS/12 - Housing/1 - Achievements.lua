@@ -77,10 +77,6 @@ root(ROOTS.Housing, n(ACHIEVEMENTS, {
 		ach(62370, {	-- Midnight Lumberjack
 			["timeline"] = { "added 12.0.1" },
 		}),
-		ach(40887, {	-- Fox Friends
-			["timeline"] = { ADDED_12_0_0 },	-- TODO: probably hotfixed in earlier
-			-- i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Coffee Press (DECOR!)
-		}),
 		ach(61211, {	-- Welcome Home
 			["description"] = "Build your own home through Housing",
 			["sourceQuests"] = { 91863 },	-- My First House

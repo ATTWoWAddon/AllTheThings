@@ -502,7 +502,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(3, i(27882)),	-- Gladiator's Scaled Legguards
 				}),
 				cl(PRIEST, {
-					moh(12, iensemble(146615, {	-- Ensemble: Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
+					moh(12, iensemble(146615, {	-- Ensemble: Gladiator's Satin Armor	-- Confirmed August 2021 here+Outdoor BC
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(31410)),	-- Gladiator's Mooncloth Hood
@@ -550,7 +550,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(3, i(31406)),	-- Gladiator's Ringmail Leggings
 				}),
 				cl(WARLOCK, {
-					moh(12, iensemble(146611, {	-- Ensemble: Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
+					moh(12, iensemble(146611, {	-- Ensemble: Gladiator's Felweave Armor	-- Confirmed August 2021 here+Outdoor BC
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(24553)),	-- Gladiator's Dreadweave Hood
@@ -1140,7 +1140,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(3, i(32042)),	-- Merciless Gladiator's Scaled Legguards
 				}),
 				cl(PRIEST, {
-					moh(12, iensemble(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
+					moh(12, iensemble(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor	-- Confirmed August 2021 here+Outdoor BC
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(32016)),	-- Merciless Gladiator's Mooncloth Hood
@@ -1188,7 +1188,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(3, i(32032)),	-- Merciless Gladiator's Ringmail Leggings
 				}),
 				cl(WARLOCK, {
-					moh(12, iensemble(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
+					moh(12, iensemble(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor	-- Confirmed August 2021 here+Outdoor BC
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(31974)),	-- Merciless Gladiator's Dreadweave Hood
@@ -1277,7 +1277,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(2, i(32796)),	-- Veteran's Wyrmhide Boots
 				}),
 				-- Orinally sold Offhand/Neck/Finger by
-				-- Alliance SW: n(23446, {	-- Lieutenant Tristia --  &
+				-- Alliance SW: n(23446, {	-- Lieutenant Tristia	--  &
 				-- Horde OG: n(24520, {	-- Doris Volanthius --
 				filter(NECK_F, {
 					i(33067, {	-- Veteran's Pendant of Conquest
@@ -1612,7 +1612,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(2, i(33916)),	-- Vindicator's Wyrmhide Boots
 				}),
 				-- Orinally sold Offhand/Neck/Finger by
-				-- Alliance SW: n(23446, {	-- Lieutenant Tristia --  &
+				-- Alliance SW: n(23446, {	-- Lieutenant Tristia	--  &
 				-- Horde OG: n(24520, {	-- Doris Volanthius --
 				filter(NECK_F, {
 					i(33920, {	-- Vindicator's Pendant of Conquest

@@ -2383,9 +2383,17 @@ local AccountWideQuestsDB = {
 	92091,	-- Unlock Ability 5 - Level 6
 	92092,	-- Unlock Ability 6 - Level 7
 	92093,	-- Unlock Ability 7 - Level 8
+	92127,	-- Lu-ashal
 	92173,	-- Ensemble: Shoulderguards of the Wastelander Seer
 	92175,	-- Ensemble: Ancient Capes of the Reshii
+	92177,	-- One Hero's Prey
+	92178,	-- Practical Magic
+	92179,	-- Dark Mending
+	92180,	-- Precious Jewels
+	92181,	-- Garden Variety Sacrifices
+	92182,	-- The Sheep or the Wolf
 	92386,	-- A Handful of Voidlight Marl (Amani Tribe)
+	92387,	-- A Cluster of Voidlight Marl
 	92402,	-- Magical Touch
 	92417,	-- Farm to Table
 	92428,	-- Quest #92428*
@@ -2396,6 +2404,7 @@ local AccountWideQuestsDB = {
 	92486,	-- Quest #92486*
 	92487,	-- Open the first Wriggling Pinnacle Cache
 	92488,	-- Weekly lockout: 600 bonus crystals from The Flame Burns Eternal
+	92518,	-- Gravid Potatoad
 	92572,	-- Furniture Favor
 	92573,	-- Sturdy Chest
 	92577,	-- Furniture Favor
@@ -2428,6 +2437,51 @@ local AccountWideQuestsDB = {
 	92758,	-- Criteria: Buddy System
 	92758,	-- Criteria: Buddy System
 	92759,	-- Level 11
+	92760,	-- Level 12
+	92761,	-- Level 13
+	92762,	-- Level 14
+	92763,	-- Level 15
+	92764,	-- Level 16
+	92765,	-- Level 17
+	92766,	-- Level 18
+	92767,	-- Level 19
+	92768,	-- Buddy System II
+	92769,	-- Level 21
+	92770,	-- Level 22
+	92771,	-- Level 23
+	92772,	-- Level 24
+	92773,	-- Level 25
+	92774,	-- Level 26
+	92775,	-- Level 27
+	92776,	-- Level 28
+	92777,	-- Level 29
+	92779,	-- Level 31
+	92780,	-- Level 32
+	92781,	-- Level 33
+	92782,	-- Level 34
+	92783,	-- Level 35
+	92784,	-- Level 36
+	92785,	-- Level 37
+	92786,	-- Level 38
+	92787,	-- Level 39
+	92789,	-- Level 41
+	92790,	-- Level 42
+	92791,	-- Level 43
+	92792,	-- Level 44
+	92793,	-- Level 45
+	92794,	-- Level 46
+	92795,	-- Level 47
+	92796,	-- Level 48
+	92797,	-- Level 49
+	92799,	-- Level 51
+	92800,	-- Level 52
+	92801,	-- Level 53
+	92803,	-- Level 54
+	92804,	-- Level 55
+	92805,	-- Level 56
+	92806,	-- Level 57
+	92807,	-- Level 58
+	92808,	-- Level 59
 	92813,	-- Quest #92813*
 	92857,	-- Ta'readon's Mount Voucher
 	92861,	-- Ensemble: Eredath Lightseeker's Regalia
@@ -2556,17 +2610,24 @@ local AccountWideQuestsDB = {
 	93484,	-- Tending the Lands--Part 2: The Plan
 	93485,	-- Tending the Lands--Part 1: The Conflict
 	93515,	-- Quest #93515*
+	93549,	-- A Cluster of Voidlight Marl
 	93554,	-- Tarnished Mural
 	93556,	-- Ancient Runestone
 	93557,	-- Derelict Mural
 	93558,	-- Forgotten Mural
+	93687,	-- Taste True Power
+	93784,	-- A Gnawing Void of Curiosity
 	93817,	-- Quest #93817*
 	93818,	-- Quest #93818*
+	93819,	-- Quest #93819*
+	93821,	-- Quest #93821*
 	93866,	-- Quest #93866*
 	93872,	-- Prey Complete - Normal #1
 	93873,	-- ??
 	93874,	-- Prey Complete - Hard #2
 	93875,	-- ??
+	93880,	-- Delver's Starter Kit
+	93881,	-- Delver's Cosmetic Surprise Bag
 	93943,	-- Ancient Curiosity: Combat
 	93945,	-- Ancient Curiosity: Utility
 	93965,	-- Pet Wranglin'
@@ -2575,9 +2636,14 @@ local AccountWideQuestsDB = {
 	94012,	-- Lost Lil' Strider
 	94014,	-- Sturdy Chest
 	94016,	-- Sturdy Chest
+	94017,	-- Sturdy Chest
+	94021,	-- Sturdy Chest
+	94023,	-- Sturdy Chest
 	94037,	-- Sturdy Chest
 	94039,	-- Sturdy Chest
+	94041,	-- Sturdy Chest
 	94042,	-- Sturdy Chest
+	94043,	-- Sturdy Chest
 	94044,	-- Sturdy Chest
 	94210,	-- Feathering the Nest
 	94377,	-- Warden's Companion
@@ -2588,12 +2654,16 @@ local AccountWideQuestsDB = {
 	94416,	-- Rehoming Technology
 	94455,	-- Home at Last
 	94469,	-- A Handful of Voidlight Marl (The Singularity)
+	94536,	-- Vista Point
 	94537,	-- Vista Point
 	94538,	-- Vista Point
 	94539,	-- Vista Point
+	94540,	-- Vista Point
 	94541,	-- Vista Point
 	94542,	-- Vista Point
+	94543,	-- Vista Point
 	94544,	-- Vista Point
+	94545,	-- Vista Point
 	94546,	-- Vista Point
 	94547,	-- Vista Point
 	94548,	-- Vista Point
@@ -2604,39 +2674,66 @@ local AccountWideQuestsDB = {
 	94553,	-- Vista Point
 	94554,	-- Vista Point
 	94555,	-- Vista Point
+	94623,	-- Building the Voidforge
+	94671,	-- Finery Funds
 	94681,	-- Warden of Weeds weekly reputation obtained.
 	94682,	-- Harried Hawkstrider weekly reputation obtained.
 	94683,	-- Necrohexxer Raz'ka weekly reputation obtained.
 	94685,	-- Bloated Snapdragon weekly reputation
+	94686,	-- Cre'van weekly reputation obtained.
 	94687,	-- Coralfang weekly reputation
 	94688,	-- Lady Liminus weekly reputation obtained.
+	94689,	-- Terrinor weekly reputation obtained.
+	94690,	-- Bad Zed weekly reputation obtained.
+	94691,	-- Waverly weekly reputation obtained,
 	94692,	-- Banuran weekly reputation
+	94693,	-- Lost Guardian weekly reputation obtained.
 	94694,	-- Duskburn weekly reputation
+	94696,	-- Dame Bloodshed weekly reputation obtained.
 	94697,	-- The Snapping Scourge weekly reputation obtained.
+	94698,	-- Skullcrusher Harak weekly reputation obtained.
+	94700,	-- Mrrlokk weekly reputation obtained.
 	94701,	-- Poacher Rav'ik weekly reputation obtained.
+	94702,	-- Spinefrill weekly reputation obtained.
+	94703,	-- Oophaga weekly reputation obtained.
+	94704,	-- Tiny Vermin weekly reputation obtained.
+	94705,	-- Voidtouched Crustacean weekly reputation obtained.
 	94706,	-- The Devouring Invader weekly reputation obtained.
+	94707,	-- Elder Oaktalon weekly reputation obtained.
 	94708,	-- Depthborn Eelamental weekly reputation
 	94709,	-- The Decaying Diamondback weekly reputation obtained.
 	94710,	-- Ash'an the Empowered weekly reputation
+	94712,	-- Rhazul weekly reputation obtained.
 	94713,	-- Chionex weekly reputation
 	94714,	-- Ha'kalawe weekly reputation obtained.
+	94715,	-- Tallcap the Truthspreader weekly reputation obtained.
 	94716,	-- Queen Lashtongue weekly reputation obtained.
+	94717,	-- Chlorokyll weekly reputation obtained.
 	94718,	-- Stumpy weekly reputation obtained.
 	94719,	-- Serrasa weekly reputation obtained.
 	94720,	-- Mindrot weekly reputation obtained.
 	94721,	-- Dracaena weekly reputation
 	94722,	-- Treetop weekly reputation obtained.
+	94725,	-- Ahl'ua'huhi weekly reputation obtained.
+	94726,	-- Annulus the Worldshaker weekly reputation obtained.
+	94728,	-- Sundereth the Caller weekly reputation obtained.
+	94731,	-- Screammaxa the Matriarch weekly reputation obtained.
+	94732,	-- Bane of the Vilebloods weekly reputation obtained.
 	94747,	-- ???
 	94750,	-- Abysslick weekly reputation obtained.
 	94751,	-- Aeonelle Blackstar weekly reputation
+	94752,	-- Bilemaw the Gluttonous weekly reputation obtained.
 	94753,	-- Blackcore weekly reputation
 	94755,	-- Far'thana the Mad weekly reputation obtained.
 	94758,	-- Lotus Darkblossom weekly reputation obtained.
 	94759,	-- Nightbrood weekly reputation obtained.
 	94760,	-- Nullspiral weekly reputation obtained.
+	94761,	-- Queen o' War weekly reputation obtained.
 	94762,	-- Rakshur the Bonegrinder weekly reputation obtained.
 	94764,	-- The Many-Broken weekly reputation obtained.
 	94765,	-- Voidseer Orivane weekly reputation obtained.
+	94794,	-- Fine Fashion Funding
+	94813,	-- Fine Fashion Funding
 	94816,	-- Fine Fashion Funding
 	94995,	-- To Dye For
 	95000,	-- Quest #95000*
@@ -2645,6 +2742,12 @@ local AccountWideQuestsDB = {
 	95003,	-- Quest #95003*
 	95166,	-- Pet the Dog (245551)
 	95324,	-- The War Beyond the Roots
+	95535,	-- Quest #95535*
+	95536,	-- Quest #95536*
+	95537,	-- Quest #95537*
+	95541,	-- Quest #95541*
+	95542,	-- Quest #95542*
+	95543,	-- Quest #95543*
 	96214,	-- Tracking Quest
 	96215,	-- Tracking Quest
 

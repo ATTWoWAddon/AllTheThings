@@ -67,21 +67,21 @@ local EncounterToLoot = {
 		i(168885),	-- Undercove Crushers
 	};
 	[RADIANCE] = {
-		i(168380), -- Ancient Tempest Striders
-		i(168382), -- Arcanamental Bindings
-		i(168374), -- Belt of Blind Devotion
-		i(168475), -- Bulwark of the Seaborn Avatar
-		i(168375), -- Gloves of Unschackled Arcana
-		i(168381), -- Grips of the Scaled Arcanist
-		i(168336), -- Handmaiden's Cowl of Sacrifice
-		i(168378), -- Leggings of the Stormborn
-		i(168478), -- Monstrosity's Shipbreaker
-		i(169313), -- Phial of the Frigid Tempest
-		i(168372), -- Sea Sculptor's Cuffs
-		i(168355), -- Servitor's Heartguard
-		i(168348), -- Shoulderpads of Frothing Rage
-		i(168388), -- Storm-Tempered Girdle
-		i(168360), -- Warhelm of Dread Waters
+		i(168380),	-- Ancient Tempest Striders
+		i(168382),	-- Arcanamental Bindings
+		i(168374),	-- Belt of Blind Devotion
+		i(168475),	-- Bulwark of the Seaborn Avatar
+		i(168375),	-- Gloves of Unschackled Arcana
+		i(168381),	-- Grips of the Scaled Arcanist
+		i(168336),	-- Handmaiden's Cowl of Sacrifice
+		i(168378),	-- Leggings of the Stormborn
+		i(168478),	-- Monstrosity's Shipbreaker
+		i(169313),	-- Phial of the Frigid Tempest
+		i(168372),	-- Sea Sculptor's Cuffs
+		i(168355),	-- Servitor's Heartguard
+		i(168348),	-- Shoulderpads of Frothing Rage
+		i(168388),	-- Storm-Tempered Girdle
+		i(168360),	-- Warhelm of Dread Waters
 	};
 	[ASHVANE] = {
 		i(169305),	-- Aquipotent Nautilus

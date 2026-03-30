@@ -308,7 +308,7 @@ local RetailMapDataStyleMetatable = {
 					local topGroup = mapG[1]
 					if not topGroup.external
 						-- only shift up certain group types
-						and (topGroup.instanceID or topGroup.classID or topGroup.mapID)
+						and (topGroup.instanceID or topGroup.classID or topGroup.mapID or topGroup.headerID)
 					then
 						mapData.g = nil;
 						-- don't persist the parent links since this will now be a minilist root
@@ -329,6 +329,8 @@ local RetailMapDataStyleMetatable = {
 			else
 				if mapData.classID then
 					mapData = app.CreateCharacterClass(mapData.classID, mapData);
+				elseif mapData.headerID then
+					mapData = app.CreateHeader(mapData.headerID, mapData)
 				else
 					mapData = app.CreateMap(mapData.mapID, mapData);
 				end

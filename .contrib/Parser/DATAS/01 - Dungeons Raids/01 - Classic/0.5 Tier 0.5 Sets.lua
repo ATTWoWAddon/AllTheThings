@@ -49,10 +49,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(226782), -- Feralheart Bindings
-						i(226788), -- Feralheart Bands
-						i(226796), -- Feralheart Wristguards
-						i(226815), -- Feralheart Wrists
+						i(226782),	-- Feralheart Bindings
+						i(226788),	-- Feralheart Bands
+						i(226796),	-- Feralheart Wristguards
+						i(226815),	-- Feralheart Wrists
 					},
 				},
 				{	-- Anthion's Parting Words
@@ -80,27 +80,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["lvl"] = 58,
 					["groups"] = {
 						i(227359, {	-- Feline Boots, Legs, and Shoulders Set
-							i(226794), -- Feralheart Walkers
-							i(226791), -- Feralheart Trousers
-							i(226790), -- Feralheart Epaulets
+							i(226794),	-- Feralheart Walkers
+							i(226791),	-- Feralheart Trousers
+							i(226790),	-- Feralheart Epaulets
 						}),
 						i(227360, {	-- Astral Boots, Legs, and Shoulders Set
 							-- Balance
-							i(226774), -- Feralheart Galoshes
-							i(226779), -- Feralheart Kilt
-							i(226778), -- Feralheart Spaulders
+							i(226774),	-- Feralheart Galoshes
+							i(226779),	-- Feralheart Kilt
+							i(226778),	-- Feralheart Spaulders
 						}),
 						i(227365, {	-- Mender's Boots, Legs, and Shoulders Set
 							-- Restoration
-							i(226781), -- Feralheart Sandals
-							i(226787), -- Feralheart Pants
-							i(226785), -- Feralheart Mantle
+							i(226781),	-- Feralheart Sandals
+							i(226787),	-- Feralheart Pants
+							i(226785),	-- Feralheart Mantle
 						}),
 						i(227361, {	-- Guardian's Boots, Legs, and Shoulders Set
 							-- Feral Tank
-							i(226803), -- Feralheart Treads
-							i(226799), -- Feralheart Legguards
-							i(226798), -- Feralheart Pauldrons
+							i(226803),	-- Feralheart Treads
+							i(226799),	-- Feralheart Legguards
+							i(226798),	-- Feralheart Pauldrons
 						}),
 					},
 				},
@@ -133,25 +133,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227338, { -- Astral Gloves and Belt Set
+						i(227338, {	-- Astral Gloves and Belt Set
 							-- Balance
-							i(226777), -- Feralheart Hands
-							i(226772), -- Feralheart Sash
+							i(226777),	-- Feralheart Hands
+							i(226772),	-- Feralheart Sash
 						}),
-						i(227340, { -- Mender's Gloves and Belt Set
+						i(227340, {	-- Mender's Gloves and Belt Set
 							-- Restoration
-							i(226784), -- Feralheart Gauntlets
-							i(226780), -- Feralheart Cord
+							i(226784),	-- Feralheart Gauntlets
+							i(226780),	-- Feralheart Cord
 						}),
-						i(227337, { -- Feline Gloves and Belt Set
+						i(227337, {	-- Feline Gloves and Belt Set
 							-- Feral DPS
-							i(226793), -- Feralheart Fists
-							i(226789), -- Feralheart Girdle
+							i(226793),	-- Feralheart Fists
+							i(226789),	-- Feralheart Girdle
 						}),
-						i(227339, { -- Guardian's Gloves and Belt Set
+						i(227339, {	-- Guardian's Gloves and Belt Set
 							-- Feral Tank
-							i(226802), -- Feralheart Grips
-							i(226797), -- Feralheart Waistguard
+							i(226802),	-- Feralheart Grips
+							i(226797),	-- Feralheart Waistguard
 						}),
 					},
 				},
@@ -183,25 +183,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227384, { -- Astral Helm and Chestpiece Set
+						i(227384, {	-- Astral Helm and Chestpiece Set
 							-- Balance
-							i(226773), -- Feralheart Cowl
-							i(226776), -- Feralheart Vest
+							i(226773),	-- Feralheart Cowl
+							i(226776),	-- Feralheart Vest
 						}),
-						i(227387, { -- Mender's Helm and Chestpiece Set
+						i(227387, {	-- Mender's Helm and Chestpiece Set
 							-- Restoration
-							i(226786), -- Feralheart Headdress
-							i(226783), -- Feralheart Embrace
+							i(226786),	-- Feralheart Headdress
+							i(226783),	-- Feralheart Embrace
 						}),
-						i(227383, { -- Feline Helm and Chestpiece Set
+						i(227383, {	-- Feline Helm and Chestpiece Set
 							-- Feral DPS
-							i(226792), -- Feralheart Cap
-							i(226795), -- Feralheart Tunic
+							i(226792),	-- Feralheart Cap
+							i(226795),	-- Feralheart Tunic
 						}),
-						i(227385, { -- Guardian's Helm and Chestpiece Set
+						i(227385, {	-- Guardian's Helm and Chestpiece Set
 							-- Feral Tank
-							i(226801), -- Feralheart Faceguard
-							i(226804), -- Feralheart Armor
+							i(226801),	-- Feralheart Faceguard
+							i(226804),	-- Feralheart Armor
 						}),
 					},
 				},
@@ -248,9 +248,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["groups"] = {
 						-- #IF SEASON_OF_DISCOVERY
 						-- Beastmaster Bracers
-						i(226885), -- Beastmaster's Bindings
-						i(226889), -- Beastmaster's Bracers
-						i(226897), -- Beastmaster's Wrists
+						i(226885),	-- Beastmaster's Bindings
+						i(226889),	-- Beastmaster's Bracers
+						i(226897),	-- Beastmaster's Wrists
 						-- #ELSE
 						i(22011),	-- Beastmaster's Bindings
 						-- #ENDIF
@@ -280,17 +280,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227367, { -- Prowler's Boots, Legs, and Shoulders Set
+						i(227367, {	-- Prowler's Boots, Legs, and Shoulders Set
 							-- Melee DPS
-							i(226895), -- Beastmaster's Greaves
-							i(226892), -- Beastmaster's Leggings
-							i(226891), -- Beastmaster's Pauldrons
+							i(226895),	-- Beastmaster's Greaves
+							i(226892),	-- Beastmaster's Leggings
+							i(226891),	-- Beastmaster's Pauldrons
 						}),
-						i(227366, { -- Pursuer's Boots, Legs, and Shoulders Set
+						i(227366, {	-- Pursuer's Boots, Legs, and Shoulders Set
 							-- Ranged DPS
-							i(226881), -- Beastmaster's Treads
-							i(226882), -- Beastmaster's Pants
-							i(226884), -- Beastmaster's Mantle
+							i(226881),	-- Beastmaster's Treads
+							i(226882),	-- Beastmaster's Pants
+							i(226884),	-- Beastmaster's Mantle
 						}),
 					},
 				},
@@ -321,15 +321,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227341, { -- Pursuer's Gloves and Belt Set
+						i(227341, {	-- Pursuer's Gloves and Belt Set
 							-- Ranged DPS
-							i(226883), -- Beastmaster's Gauntlets
-							i(226888), -- Beastmaster's Belt
+							i(226883),	-- Beastmaster's Gauntlets
+							i(226888),	-- Beastmaster's Belt
 						}),
-						i(227342, { -- Prowler's Gloves and Belt Set
+						i(227342, {	-- Prowler's Gloves and Belt Set
 							-- Melee DPS
-							i(226894), -- Beastmaster's Fists
-							i(226890), -- Beastmaster's Waistwrap
+							i(226894),	-- Beastmaster's Fists
+							i(226890),	-- Beastmaster's Waistwrap
 						}),
 					},
 				},
@@ -361,15 +361,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227388, { -- Pursuer's Helm and Chestpiece Set
+						i(227388, {	-- Pursuer's Helm and Chestpiece Set
 							-- Ranged DPS
-							i(226887), -- Beastmaster's Cap
-							i(226886), -- Beastmaster's Tunic
+							i(226887),	-- Beastmaster's Cap
+							i(226886),	-- Beastmaster's Tunic
 						}),
-						i(227389, { -- Prowler's Helm and Chestpiece Set
+						i(227389, {	-- Prowler's Helm and Chestpiece Set
 							-- Melee DPS
-							i(226893), -- Beastmaster's Coif
-							i(226896), -- Beastmaster's Chain
+							i(226893),	-- Beastmaster's Coif
+							i(226896),	-- Beastmaster's Chain
 						}),
 					},
 				},
@@ -416,8 +416,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["groups"] = {
 						-- #IF SEASON_OF_DISCOVERY
 						-- Sorcerer Bracers
-						i(226929), -- Sorcerer's Bindings
-						i(226937), -- Sorcerer's Wrists
+						i(226929),	-- Sorcerer's Bindings
+						i(226937),	-- Sorcerer's Wrists
 						-- #ELSE
 						i(22063),	-- Sorcerer's Bindings
 						-- #ENDIF
@@ -440,14 +440,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["groups"] = {
 						-- #IF SEASON_OF_DISCOVERY
 						-- Sorcerer Boots
-						i(226931), -- Sorcerer's Sandals
-						i(226943), -- Sorcerer's Boots
+						i(226931),	-- Sorcerer's Sandals
+						i(226943),	-- Sorcerer's Boots
 						-- Sorcerer Legs
-						i(226933), -- Sorcerer's Leggings
-						i(226940), -- Sorcerer's Legs
+						i(226933),	-- Sorcerer's Leggings
+						i(226940),	-- Sorcerer's Legs
 						-- Sorcerer Shoulders
-						i(226936), -- Sorcerer's Mantle
-						i(226939), -- Sorcerer's Shoulders
+						i(226936),	-- Sorcerer's Mantle
+						i(226939),	-- Sorcerer's Shoulders
 						-- #ELSE
 						i(22064),	-- Sorcerer's Boots
 						i(22067),	-- Sorcerer's Leggings
@@ -484,8 +484,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(226934), -- Sorcerer's Belt
-						i(226930), -- Sorcerer's Gauntlets
+						i(226934),	-- Sorcerer's Belt
+						i(226930),	-- Sorcerer's Gauntlets
 					},
 				},
 				{	-- Saving the Best for Last
@@ -516,8 +516,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(226935), -- Sorcerer's Crown
-						i(226932), -- Sorcerer's Robes
+						i(226935),	-- Sorcerer's Crown
+						i(226932),	-- Sorcerer's Robes
 					},
 				},
 			}),
@@ -539,10 +539,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						}),
 						-- #IF SEASON_OF_DISCOVERY
 						-- Soulforge Bracers
-						i(226970), -- Soulforge Bracers
-						i(226977), -- Soulforge Bindings
-						i(226985), -- Soulforge Wristguards
-						i(226993), -- Soulforge Wrists
+						i(226970),	-- Soulforge Bracers
+						i(226977),	-- Soulforge Bindings
+						i(226985),	-- Soulforge Wristguards
+						i(226993),	-- Soulforge Wrists
 						-- #ELSE
 						i(22088),	-- Soulforge Bracers
 						-- #ENDIF
@@ -571,23 +571,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						i(227368, { -- Merciful Boots, Legs, and Shoulders Set
+						i(227368, {	-- Merciful Boots, Legs, and Shoulders Set
 							-- Holy
-							i(226983), -- Soulforge Treads
-							i(226980), -- Soulforge Leggings
-							i(226979), -- Soulforge Epaulets
+							i(226983),	-- Soulforge Treads
+							i(226980),	-- Soulforge Leggings
+							i(226979),	-- Soulforge Epaulets
 						}),
-						i(227369, { -- Radiant Boots, Legs, and Shoulders Set
+						i(227369, {	-- Radiant Boots, Legs, and Shoulders Set
 							-- Retribution
-							i(226974), -- Soulforge Warboots
-							i(226972), -- Soulforge Legplates
-							i(226969), -- Soulforge Spaulders
+							i(226974),	-- Soulforge Warboots
+							i(226972),	-- Soulforge Legplates
+							i(226969),	-- Soulforge Spaulders
 						}),
-						i(227370, { -- Divine Will Boots, Legs, and Shoulders Set
+						i(227370, {	-- Divine Will Boots, Legs, and Shoulders Set
 							-- Protection
-							i(226991), -- Soulforge Sabatons
-							i(226988), -- Soulforge Legguards
-							i(226987), -- Soulforge Pauldrons
+							i(226991),	-- Soulforge Sabatons
+							i(226988),	-- Soulforge Legguards
+							i(226987),	-- Soulforge Pauldrons
 						}),
 					},
 				}),
@@ -604,20 +604,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						i(227343, { -- Merciful Gloves and Belt Set
+						i(227343, {	-- Merciful Gloves and Belt Set
 							-- Holy
-							i(226982), -- Soulforge Fists
-							i(226978), -- Soulforge Cord
+							i(226982),	-- Soulforge Fists
+							i(226978),	-- Soulforge Cord
 						}),
-						i(227344, { -- Radiant Gloves and Belt Set
+						i(227344, {	-- Radiant Gloves and Belt Set
 							-- Retribution
-							i(226975), -- Soulforge Gauntlets
-							i(226971), -- Soulforge Belt
+							i(226975),	-- Soulforge Gauntlets
+							i(226971),	-- Soulforge Belt
 						}),
-						i(227345, { -- Divine Will Gloves and Belt Set
+						i(227345, {	-- Divine Will Gloves and Belt Set
 							-- Protection
-							i(226990), -- Soulforge Handguards
-							i(226986), -- Soulforge Waistguard
+							i(226990),	-- Soulforge Handguards
+							i(226986),	-- Soulforge Waistguard
 						}),
 					},
 				}),
@@ -643,20 +643,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						i(227390, { -- Merciful Helm and Chestpiece Set
+						i(227390, {	-- Merciful Helm and Chestpiece Set
 							-- Holy
-							i(226981), -- Soulforge Crown
-							i(226984), -- Soulforge Embrace
+							i(226981),	-- Soulforge Crown
+							i(226984),	-- Soulforge Embrace
 						}),
-						i(227391, { -- Radiant Helm and Chestpiece Set
+						i(227391, {	-- Radiant Helm and Chestpiece Set
 							-- Retribution
-							i(226976), -- Soulforge Greathelm
-							i(226973), -- Soulforge Breastplate
+							i(226976),	-- Soulforge Greathelm
+							i(226973),	-- Soulforge Breastplate
 						}),
-						i(227392, { -- Divine Will Helm and Chestpiece Set
+						i(227392, {	-- Divine Will Helm and Chestpiece Set
 							-- Protection
-							i(226989), -- Soulforge Faceguard
-							i(226992), -- Soulforge Chestguards
+							i(226989),	-- Soulforge Faceguard
+							i(226992),	-- Soulforge Chestguards
 						}),
 					},
 				}),
@@ -703,9 +703,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["groups"] = {
 						-- #IF SEASON_OF_DISCOVERY
 						-- Virtuous Bracers
-						i(226949), -- Virtuous Bracers
-						i(226953), -- Virtuous Wraps
-						i(226961), -- Virtuous Wrists
+						i(226949),	-- Virtuous Bracers
+						i(226953),	-- Virtuous Wraps
+						i(226961),	-- Virtuous Wrists
 						-- #ELSE
 						i(22079),	-- Virtuous Bracers
 						-- #ENDIF
@@ -736,17 +736,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227371, { -- Dawn Boots, Legs, and Shoulders Set
+						i(227371, {	-- Dawn Boots, Legs, and Shoulders Set
 							-- Healer
-							i(226952), -- Virtuous Sandals
-							i(226946), -- Virtuous Skirt
-							i(226951), -- Virtuous Mantle
+							i(226952),	-- Virtuous Sandals
+							i(226946),	-- Virtuous Skirt
+							i(226951),	-- Virtuous Mantle
 						}),
-						i(227372, { -- Twilight Boots, Legs, and Shoulders Set
+						i(227372, {	-- Twilight Boots, Legs, and Shoulders Set
 							-- Shadow
-							i(226959), -- Virtuous Slippers
-							i(226956), -- Virtuous Leggings
-							i(226955), -- Virtuous Epaulets
+							i(226959),	-- Virtuous Slippers
+							i(226956),	-- Virtuous Leggings
+							i(226955),	-- Virtuous Epaulets
 						}),
 					},
 				},
@@ -778,15 +778,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227346, { -- Dawn Gloves and Belt Set
+						i(227346, {	-- Dawn Gloves and Belt Set
 							-- Healer
-							i(226950), -- Virtuous Mitts
-							i(226948), -- Virtuous Belt
+							i(226950),	-- Virtuous Mitts
+							i(226948),	-- Virtuous Belt
 						}),
-						i(227347, { -- Twilight Gloves and Belt Set
+						i(227347, {	-- Twilight Gloves and Belt Set
 							-- Shadow
-							i(226958), -- Virtuous Hands
-							i(226954), -- Virtuous Cord
+							i(226958),	-- Virtuous Hands
+							i(226954),	-- Virtuous Cord
 						}),
 					},
 				},
@@ -818,15 +818,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227393, { -- Dawn Helm and Chestpiece Set
+						i(227393, {	-- Dawn Helm and Chestpiece Set
 							-- Healer
-							i(226947), -- Virtuous Crown
-							i(226945), -- Virtuous Robe
+							i(226947),	-- Virtuous Crown
+							i(226945),	-- Virtuous Robe
 						}),
-						i(227394, { -- Twilight Helm and Chestpiece Set
+						i(227394, {	-- Twilight Helm and Chestpiece Set
 							-- Shadow
-							i(226957), -- Virtuous Cowl
-							i(226960), -- Virtuous Gown
+							i(226957),	-- Virtuous Cowl
+							i(226960),	-- Virtuous Gown
 						}),
 					},
 				},
@@ -873,9 +873,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["groups"] = {
 						-- #IF SEASON_OF_DISCOVERY
 						-- Darkmantle Bracers
-						i(226830), -- Darkmantle Bracers
-						i(226835), -- Darkmantle Wristguards
-						i(226845), -- Darkmantle Wrists
+						i(226830),	-- Darkmantle Bracers
+						i(226835),	-- Darkmantle Wristguards
+						i(226845),	-- Darkmantle Wrists
 						-- #ELSE
 						i(22004),	-- Darkmantle Bracers
 						-- #ENDIF
@@ -896,17 +896,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227373, { -- Thrill's Boots, Legs, and Shoulders Set
+						i(227373, {	-- Thrill's Boots, Legs, and Shoulders Set
 							-- Melee DPS
-							i(226831), -- Darkmantle Footpads
-							i(226827), -- Darkmantle Pants
-							i(226826), -- Darkmantle Spaulders
+							i(226831),	-- Darkmantle Footpads
+							i(226827),	-- Darkmantle Pants
+							i(226826),	-- Darkmantle Spaulders
 						}),
-						i(227374, { -- Battle's Boots, Legs, and Shoulders Set
+						i(227374, {	-- Battle's Boots, Legs, and Shoulders Set
 							-- Tank
-							i(226842), -- Darkmantle Treads
-							i(226838), -- Darkmantle Legguards
-							i(226837), -- Darkmantle Pauldrons
+							i(226842),	-- Darkmantle Treads
+							i(226838),	-- Darkmantle Legguards
+							i(226837),	-- Darkmantle Pauldrons
 						}),
 					},
 				},
@@ -937,15 +937,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227348, { -- Thrill's Gloves and Belt Set
+						i(227348, {	-- Thrill's Gloves and Belt Set
 							-- Melee DPS
-							i(226828), -- Darkmantle Grips
-							i(226832), -- Darkmantle Belt
+							i(226828),	-- Darkmantle Grips
+							i(226832),	-- Darkmantle Belt
 						}),
-						i(227349, { -- Battle's Gloves and Belt Set
+						i(227349, {	-- Battle's Gloves and Belt Set
 							-- Tank
-							i(226840), -- Darkmantle Handguards
-							i(226836), -- Darkmantle Waistguard
+							i(226840),	-- Darkmantle Handguards
+							i(226836),	-- Darkmantle Waistguard
 						}),
 					},
 				},
@@ -977,15 +977,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227395, { -- Thrill's Helm and Chestpiece Set
+						i(227395, {	-- Thrill's Helm and Chestpiece Set
 							-- Melee DPS
-							i(226829), -- Darkmantle Cap
-							i(226825), -- Darkmantle Tunic
+							i(226829),	-- Darkmantle Cap
+							i(226825),	-- Darkmantle Tunic
 						}),
-						i(227396, { -- Battle's Helm and Chestpiece Set
+						i(227396, {	-- Battle's Helm and Chestpiece Set
 							-- Tank
-							i(226841), -- Darkmantle Faceguard
-							i(226843), -- Darkmantle Armor
+							i(226841),	-- Darkmantle Faceguard
+							i(226843),	-- Darkmantle Armor
 						}),
 					},
 				},
@@ -1048,29 +1048,29 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						i(227375, { -- Relief's Boots, Legs, and Shoulders Set
+						i(227375, {	-- Relief's Boots, Legs, and Shoulders Set
 							-- Restoration
-							i(227015), -- Greaves of The Five Thunders
-							i(227012), -- Leggings of The Five Thunders
-							i(227011), -- Mantle of The Five Thunders
+							i(227015),	-- Greaves of The Five Thunders
+							i(227012),	-- Leggings of The Five Thunders
+							i(227011),	-- Mantle of The Five Thunders
 						}),
-						i(227376, { -- Eruption's Boots, Legs, and Shoulders Set
+						i(227376, {	-- Eruption's Boots, Legs, and Shoulders Set
 							-- Elemental
-							i(227007), -- Slippers of The Five Thunders
-							i(227005), -- Kilt of The Five Thunders
-							i(227003), -- Pauldrons of The Five Thunders
+							i(227007),	-- Slippers of The Five Thunders
+							i(227005),	-- Kilt of The Five Thunders
+							i(227003),	-- Pauldrons of The Five Thunders
 						}),
-						i(227377, { -- Impact's Boots, Legs, and Shoulders Set
+						i(227377, {	-- Impact's Boots, Legs, and Shoulders Set
 							-- Enhancement DPS
-							i(227023), -- Treads of The Five Thunders
-							i(227020), -- Legplates of The Five Thunders
-							i(227019), -- Spaulders of The Five Thunders
+							i(227023),	-- Treads of The Five Thunders
+							i(227020),	-- Legplates of The Five Thunders
+							i(227019),	-- Spaulders of The Five Thunders
 						}),
-						i(227378, { -- Resolve's Boots, Legs, and Shoulders Set
+						i(227378, {	-- Resolve's Boots, Legs, and Shoulders Set
 							-- Enhancement Tank
-							i(227031), -- Sabatons of The Five Thunders
-							i(227028), -- Legguards of The Five Thunders
-							i(227027), -- Shoulderguards of The Five Thunders
+							i(227031),	-- Sabatons of The Five Thunders
+							i(227028),	-- Legguards of The Five Thunders
+							i(227027),	-- Shoulderguards of The Five Thunders
 						}),
 					},
 				}),
@@ -1095,25 +1095,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						i(227350, { -- Relief's Gloves and Belt Set
+						i(227350, {	-- Relief's Gloves and Belt Set
 							-- Restoration
-							i(227014), -- Grasp of The Five Thunders
-							i(227010), -- Sash of The Five Thunders
+							i(227014),	-- Grasp of The Five Thunders
+							i(227010),	-- Sash of The Five Thunders
 						}),
-						i(227351, { -- Eruption's Gloves and Belt Set
+						i(227351, {	-- Eruption's Gloves and Belt Set
 							-- Elemental
-							i(227006), -- Gauntlets of The Five Thunders
-							i(227008), -- Cord of The Five Thunders
+							i(227006),	-- Gauntlets of The Five Thunders
+							i(227008),	-- Cord of The Five Thunders
 						}),
-						i(227352, { -- Impact's Gloves and Belt Set
+						i(227352, {	-- Impact's Gloves and Belt Set
 							-- Enhancement DPS
-							i(227022), -- Fists of The Five Thunders
-							i(227018), -- Girdle of The Five Thunders
+							i(227022),	-- Fists of The Five Thunders
+							i(227018),	-- Girdle of The Five Thunders
 						}),
-						i(227353, { -- Resolve's Gloves and Belt Set
+						i(227353, {	-- Resolve's Gloves and Belt Set
 							-- Enhancement Tank
-							i(227030), -- Handguards of The Five Thunders
-							i(227026), -- Waistguard of The Five Thunders
+							i(227030),	-- Handguards of The Five Thunders
+							i(227026),	-- Waistguard of The Five Thunders
 						}),
 					},
 				}),
@@ -1139,25 +1139,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						i(227397, { -- Relief's Helm and Chestpiece Set
+						i(227397, {	-- Relief's Helm and Chestpiece Set
 							-- Restoration
-							i(227013), -- Crown of The Five Thunders
-							i(227016), -- Tunic of The Five Thunders
+							i(227013),	-- Crown of The Five Thunders
+							i(227016),	-- Tunic of The Five Thunders
 						}),
-						i(227398, { -- Eruption's Helm and Chestpiece Set
+						i(227398, {	-- Eruption's Helm and Chestpiece Set
 							-- Elemental
-							i(227002), -- Coif of The Five Thunders
-							i(227004), -- Vest of The Five Thunders
+							i(227002),	-- Coif of The Five Thunders
+							i(227004),	-- Vest of The Five Thunders
 						}),
-						i(227399, { -- Impact's Helm and Chestpiece Set
+						i(227399, {	-- Impact's Helm and Chestpiece Set
 							-- Enhancement DPS
-							i(227021), -- Face of The Five Thunders
-							i(227024), -- Chain of The Five Thunders
+							i(227021),	-- Face of The Five Thunders
+							i(227024),	-- Chain of The Five Thunders
 						}),
-						i(227400, { -- Resolve's Helm and Chestpiece Set
+						i(227400, {	-- Resolve's Helm and Chestpiece Set
 							-- Enhancement Tank
-							i(227029), -- Headpiece of The Five Thunders
-							i(227032), -- Chestguard of The Five Thunders
+							i(227029),	-- Headpiece of The Five Thunders
+							i(227032),	-- Chestguard of The Five Thunders
 						}),
 					},
 				}),
@@ -1203,10 +1203,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["lvl"] = 58,
 					["groups"] = {
 						-- #IF SEASON_OF_DISCOVERY
-						i(226907), -- Deathmist Bracers
-						i(226911), -- Deathmist Wraps
-						i(226913), -- Deathmist Bindings
-						i(226921), -- Deathmist Wrists
+						i(226907),	-- Deathmist Bracers
+						i(226911),	-- Deathmist Wraps
+						i(226913),	-- Deathmist Bindings
+						i(226921),	-- Deathmist Wrists
 						-- #ELSE
 						i(22071),	-- Deathmist Bracers
 						-- #ENDIF
@@ -1227,17 +1227,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227379, { -- Corrupted Boots, Legs, and Shoulders Set
+						i(227379, {	-- Corrupted Boots, Legs, and Shoulders Set
 							-- Ranged DPS
-							i(226908), -- Deathmist Sandals
-							i(226910), -- Deathmist Leggings
-							i(226912), -- Deathmist Mantle
+							i(226908),	-- Deathmist Sandals
+							i(226910),	-- Deathmist Leggings
+							i(226912),	-- Deathmist Mantle
 						}),
-						i(227380, { -- Wicked Boots, Legs, and Shoulders Set
+						i(227380, {	-- Wicked Boots, Legs, and Shoulders Set
 							-- Tank
-							i(226919), -- Deathmist Treads
-							i(226916), -- Deathmist Pants
-							i(226915), -- Deathmist Epaulets
+							i(226919),	-- Deathmist Treads
+							i(226916),	-- Deathmist Pants
+							i(226915),	-- Deathmist Epaulets
 						}),
 					},
 				},
@@ -1260,15 +1260,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227354, { -- Corrupted Gloves and Belt Set
+						i(227354, {	-- Corrupted Gloves and Belt Set
 							-- Ranged DPS
-							i(226918), -- Deathmist Wraps
-							i(226905), -- Deathmist Belt
+							i(226918),	-- Deathmist Wraps
+							i(226905),	-- Deathmist Belt
 						}),
-						i(227355, { -- Wicked Gloves and Belt Set
+						i(227355, {	-- Wicked Gloves and Belt Set
 							-- Tank
-							i(226918), -- Deathmist Grasps
-							i(226914), -- Deathmist Cord
+							i(226918),	-- Deathmist Grasps
+							i(226914),	-- Deathmist Cord
 						}),
 					},
 				},
@@ -1300,15 +1300,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227401, { -- Corrupted Helm and Chestpiece Set
+						i(227401, {	-- Corrupted Helm and Chestpiece Set
 							-- Ranged DPS
-							i(226909), -- Deathmist Mask
-							i(226906), -- Deathmist Robe
+							i(226909),	-- Deathmist Mask
+							i(226906),	-- Deathmist Robe
 						}),
-						i(227402, { -- Wicked Helm and Chestpiece Set
+						i(227402, {	-- Wicked Helm and Chestpiece Set
 							-- Tank
-							i(226917), -- Deathmist Hood
-							i(226920), -- Deathmist Embrace
+							i(226917),	-- Deathmist Hood
+							i(226920),	-- Deathmist Embrace
 						}),
 					},
 				},
@@ -1355,9 +1355,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["groups"] = {
 						-- #IF SEASON_OF_DISCOVERY
 						-- Bracers
-						i(226863), -- Bracers of Heroism
-						i(226865), -- Wristguards of Heroism
-						i(226873), -- Wrists of Heroism
+						i(226863),	-- Bracers of Heroism
+						i(226865),	-- Wristguards of Heroism
+						i(226873),	-- Wrists of Heroism
 						-- #ELSE
 						i(21996),	-- Bracers of Heroism
 						-- #ENDIF
@@ -1388,17 +1388,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227381, { -- Immoveable Boots, Legs, and Shoulders Set
+						i(227381, {	-- Immoveable Boots, Legs, and Shoulders Set
 							-- Tank
-							i(226871), -- Sabatons of Heroism
-							i(226868), -- Legguards of Heroism
-							i(226867), -- Pauldrons of Heroism
+							i(226871),	-- Sabatons of Heroism
+							i(226868),	-- Legguards of Heroism
+							i(226867),	-- Pauldrons of Heroism
 						}),
-						i(227382, { -- Unstoppable Boots, Legs, and Shoulders Set
+						i(227382, {	-- Unstoppable Boots, Legs, and Shoulders Set
 							-- Melee DPS
-							i(226857), -- Battleboots of Heroism
-							i(226859), -- Legplates of Heroism
-							i(226858), -- Spaulders of Heroism
+							i(226857),	-- Battleboots of Heroism
+							i(226859),	-- Legplates of Heroism
+							i(226858),	-- Spaulders of Heroism
 						}),
 					},
 				},
@@ -1430,15 +1430,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(227356, { -- Immoveable Gloves and Belt Set
+						i(227356, {	-- Immoveable Gloves and Belt Set
 							-- Protection
-							i(226870), -- Handguards of Heroism
-							i(226866), -- Waistguard of Heroism
+							i(226870),	-- Handguards of Heroism
+							i(226866),	-- Waistguard of Heroism
 						}),
-						i(227357, { -- Unstoppable Gloves and Belt Set
+						i(227357, {	-- Unstoppable Gloves and Belt Set
 							-- Melee DPS
-							i(226861), -- Gauntlets of Heroism
-							i(226864), -- Belt of Heroism
+							i(226861),	-- Gauntlets of Heroism
+							i(226864),	-- Belt of Heroism
 						}),
 					},
 				},
@@ -1470,15 +1470,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["groups"] = {
-						i(227403, { -- Immoveable Helm and Chestpiece Set
+						i(227403, {	-- Immoveable Helm and Chestpiece Set
 							-- Protection
-							i(226869), -- Faceguard of Heroism
-							i(226872), -- Chestguard of Heroism
+							i(226869),	-- Faceguard of Heroism
+							i(226872),	-- Chestguard of Heroism
 						}),
-						i(227404, { -- Unstoppable Helm and Chestpiece Set
+						i(227404, {	-- Unstoppable Helm and Chestpiece Set
 							-- Melee DPS
-							i(226860), -- Crown of Heroism
-							i(226862), -- Breastplate of Heroism
+							i(226860),	-- Crown of Heroism
+							i(226862),	-- Breastplate of Heroism
 						}),
 					},
 				},

@@ -1467,7 +1467,7 @@ root(ROOTS.Zones, {
 							i(87223),	-- Big Bag of Skins
 						},
 					}),
-					n(50832, {  -- The Yowler
+					n(50832, { 	-- The Yowler
 						["coord"] = { 67.6, 74.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(87225),	-- Big Bag of Food

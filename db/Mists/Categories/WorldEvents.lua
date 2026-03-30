@@ -657,6 +657,25 @@ i(95051,{awp=50200,b=1,f=52,lvl=90,q=4,r=2,rwp=60002,u=51}),
 s(279122,98086,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 s(279118,98082,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 s(279278,98543,{awp=50300,b=1,f=10,q=4,rwp=90002,u=53})}})}})}}),
+h(-723,{awp=10400,lvl=60,rwp=40003,u=2,g={
+n(14464,{coords={
+[76]={{72.6,20},{77,24.2},{77.2,16.6},{80,24.2},{82.6,21}}},description="This is only available during an Elemental Invasion.",u=2,g={
+s(129577,18673,{f=8,lvl=54,q=3,u=2}),
+i(18674,{f=52,lvl=54,q=2,u=2})}}),
+n(14461,{coords={
+[78]={{44.6,46},{45.4,54.8},{48.2,41.2},{51.6,57.6},{53.2,41.8},{55.6,57.4},{56.6,42.8},{56.6,48.2}}},description="This is only available during an Elemental Invasion.",u=2,g={
+s(129575,18671,{f=23,lvl=54,q=3,u=2}),
+s(129576,18672,{f=1,lvl=54,q=2,u=2})}}),
+n(14457,{coords={
+[83]={{54.6,42.6}}},description="This is only available during an Elemental Invasion.",u=2,g={
+r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165,u=2}),
+i(18678,{f=51,lvl=56,q=3,u=2}),
+i(18679,{f=52,lvl=56,q=2,u=2})}}),
+n(14454,{coords={
+[81]={{17.6,27},{26.6,29.6},{31,23.6},{32.2,17.2}}},description="This is only available during an Elemental Invasion.",u=2,g={
+r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165,u=2}),
+s(129580,18676,{f=6,lvl=56,q=3,u=2}),
+s(129581,18677,{f=3,lvl=56,q=2,u=2})}})}}),
 h(-476,{awp=30403,e=444,rwp=40001,u=2,g={
 p(4532,{e=444,npcID=222858,petTypeID=9,spellID=446916,u=2}),
 mnt(446902,{e=444,u=2})}}),

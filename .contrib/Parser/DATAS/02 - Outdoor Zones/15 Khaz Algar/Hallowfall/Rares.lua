@@ -182,34 +182,34 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
 			n(RARES, {
-				q(85164, { -- Weekly reputation: Beledar's Spawn
+				q(85164, {	-- Weekly reputation: Beledar's Spawn
 					["name"] = "Beledar's Spawn weekly reputation obtained.",
 				}),
-				q(85165, { -- Weekly reputation: Deathtide
+				q(85165, {	-- Weekly reputation: Deathtide
 					["name"] = "Deathtide weekly reputation obtained.",
 				}),
-				q(84065, { -- Weekly reputation: Horror of the Shallows
+				q(84065, {	-- Weekly reputation: Horror of the Shallows
 					["name"] = "Horror of the Shallows weekly reputation obtained.",
 				}),
-				q(84063, { -- Weekly reputation: Lytfang the Lost
+				q(84063, {	-- Weekly reputation: Lytfang the Lost
 					["name"] = "Lytfang the Lost weekly reputation obtained.",
 				}),
-				q(84068, { -- Weekly reputation: Pride of Beledar
+				q(84068, {	-- Weekly reputation: Pride of Beledar
 					["name"] = "Pride of Beledar weekly reputation obtained.",
 				}),
-				q(84067, { -- Weekly reputation: Sir Alastair Purefire
+				q(84067, {	-- Weekly reputation: Sir Alastair Purefire
 					["name"] = "Sir Alastair Purefire weekly reputation obtained.",
 				}),
-				q(84062, { -- Weekly reputation: Sloshmuck
+				q(84062, {	-- Weekly reputation: Sloshmuck
 					["name"] = "Sloshmuck weekly reputation obtained.",
 				}),
-				q(84066, { -- Weekly reputation: Strength of Beledar
+				q(84066, {	-- Weekly reputation: Strength of Beledar
 					["name"] = "Strength of Beledar weekly reputation obtained.",
 				}),
-				q(84064, { -- Weekly reputation: The Perchfather
+				q(84064, {	-- Weekly reputation: The Perchfather
 					["name"] = "The Perchfather weekly reputation obtained.",
 				}),
-				q(84061, { -- Weekly reputation: The Taskmaker
+				q(84061, {	-- Weekly reputation: The Taskmaker
 					["name"] = "The Taskmaker weekly reputation obtained.",
 				}),
 			}),

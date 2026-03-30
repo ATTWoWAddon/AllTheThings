@@ -1022,9 +1022,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(247722, {	-- The Headless Horseman's Burning Charger (MOUNT!)
 				["displayID"] = 131408,
 			}),
-			i(246917, {	-- Thunder-ridged Elekk (MOUNT!)
-				["displayID"] = 131302,
-			}),
 		})),
 
 		-- 11.2.5

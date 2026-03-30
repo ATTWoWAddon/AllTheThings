@@ -821,7 +821,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				BossOnly(FRACTILLUS),
 				BossOnly(SALHADAAR),
 				BossOnly(DIMENSIUS, {
-					i(246446, { ["timeline"] = { REMOVED_12_0_X_SEASONSTART } }),	-- Mark of the Twilight Oath (QS!)
+					i(246446, { ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }),	-- Mark of the Twilight Oath (QS!)
 					ach(41624, { ["timeline"] = { REMOVED_12_0_0 } }),	-- Ahead of the Curve: Dimensius, the All-Devouring
 				}),
 			}),
@@ -919,7 +919,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 		["isWeekly"] = true,
 	},{
 		-- All
-		q(91046, name(HEADERS.Item, 245510)),	-- Loombeast Silk chance per week (assumed -- also triggered on alt with no loot)
+		q(91046, name(HEADERS.Item, 245510)),	-- Loombeast Silk chance per week (assumed	-- also triggered on alt with no loot)
 		q(91010, name(HEADERS.Encounter, PLEXUS)),	-- Sentinel Plexus
 		q(91012, name(HEADERS.Encounter, LOOMITHAR)),	-- Loomithar
 		q(91011, name(HEADERS.Encounter, NAAZINDHRI)),	-- Soulbinder Naazindhr

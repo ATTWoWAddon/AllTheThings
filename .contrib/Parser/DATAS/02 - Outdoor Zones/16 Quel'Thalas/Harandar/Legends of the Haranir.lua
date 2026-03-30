@@ -27,10 +27,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				ach(61344, {	-- Chronicler of the Haranir
 					title(680),	-- <Name>, Chronicler of the Haranir
 				}),
-                ach(61574, {	-- Legends Never Die
+				ach(61574, {	-- Legends Never Die
 					i(264259),	-- On'ohia's Call (DECOR!)
 				}),
-                ach(42278),	-- The Empty Cradle
+				ach(42278, {	-- The Empty Cradle
+					["description"] = "Currently requires completing all 7 Legends on ONE character, and due to the account-wide lockout per week of completing 'Lost Legends' (89268) you can only get credit for one legend for one character per week! Choose wisely!",
+				}),
 			}),
 			n(QUESTS, bubbleDownFiltered({ ["isWeekly"] = true },FILTERFUNC_questID,{	-- Legends Never Die
 				q(89268, {	-- Lost Legends
@@ -137,62 +139,50 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--header(HEADERS.AchCriteria, 61574.07, {	-- Sky's Hope
 				--}),
 			})),
-            n(QUESTS, {
-                header(HEADERS.Achievement, 42278, {	-- The Empty Cradle
-                    -- Exo Note: Achievement has 4 criteria, hence I suspect it has 4 quests that need to be completed on the same character. They unlock by Completing the Relic quests from 'Legends Never Die'
-                    q(90733, {	-- The Listener
-                        ["sourceQuests"] = {
-                            88995,	-- Aln'hara's Bloom
-                            88997,	-- Russula's Outreach
-                            88994,	-- The Cauldron of Echoes
-                            88996,	-- The Echoless Flame
-                            88993,	-- Wey'nan's Ward
-                        },
-                        ["sourceQuestNumRequired"] = 1,
-                        ["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
-                        ["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
-                    }),
-                }),
-            }),
+			n(QUESTS, {
+				header(HEADERS.Achievement, 42278, sharedData({	-- The Empty Cradle
+					["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+					["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+					["sourceQuests"] = {
+						91456,	-- Aln'hara's Bloom
+						91512,	-- Russula's Outreach
+						91054,	-- The Cauldron of Echoes
+						91511,	-- The Echoless Flame
+						91053,	-- Wey'nan's Ward
+						-- TODO	-- Root of the World
+						-- TODO	-- Sky's Hope
+					},
+				},{
+					-- Exo Note: Achievement has 4 criteria, hence I suspect it has 4 quests that need to be completed on the same character. They unlock by Completing the Relic quests from 'Legends Never Die'
+					q(90733, {	-- The Listener
+						["sourceQuestNumRequired"] = 1,
+					}),
+					q(90734, {	-- In the Name of the Goddess
+						["sourceQuestNumRequired"] = 3,
+					}),
+					q(90740, {	-- A Legend to Know
+						["sourceQuestNumRequired"] = 5,	-- guessed
+					}),
+					q(90745, {	-- The Empty Cradle
+						["sourceQuestNumRequired"] = 7,	-- guessed
+					}),
+				})),
+			}),
 			n(REWARDS, {
-                i(269703, {	-- Avid Learner's Supply Pack
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",ARMOR},{"finalize"},
-
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",WEAPONS},
-					},
+				i(269703, {	-- Avid Learner's Supply Pack
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
-                i(268487, {	-- Avid Learner's Supply Pack (Pre-Season)
-					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_X_SEASONSTART },
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",ARMOR},{"finalize"},
-
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",WEAPONS},
-					},
+				i(268487, {	-- Avid Learner's Supply Pack (Pre-Season)
+					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
-                i(263467, {	-- Avid Learner's Supply Pack (Season 1)
-					["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",ARMOR},{"finalize"},
-
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",WEAPONS},
-					},
+				i(263467, {	-- Avid Learner's Supply Pack (Season 1)
+					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 			}),
-            n(TREASURES, {
-                ["lore"] = "Discover all of the lore objects found within the Legends of the Haranir relic stories.",
+			n(TREASURES, {
+				["lore"] = "Discover all of the lore objects found within the Legends of the Haranir relic stories.",
 				["description"] = "You need to be on the respective 'Legends Never Die' Quest in order to see the lore objects. You can discover 3 of them per week.",
 				["groups"] = {
 					o(579236, {	-- Echoes of Our Past--Part 1: Fading History
@@ -271,7 +261,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 93480,
 					}),
 				},
-            }),
+			}),
 		}),
 	}),
 }));
@@ -280,17 +270,24 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.HARANDAR, {
 			n(LEGENDS_OF_THE_HARANIR, {
-				q(89266, name(HEADERS.NPC,241213)),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
-				q(91049, name(HEADERS.NPC,243491)),	-- Triggered after chosing 'Cauldron of Echoes' during 'Lost Legends' (89268)
-				q(91516, name(HEADERS.NPC,243540)),	-- Triggered after chosing 'The Echoless Flame' during 'Lost Legends' (89268)
-				q(91517, name(HEADERS.NPC,243542)),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
-				q(91455, name(HEADERS.NPC,243514)),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
-				q(89284, { ["name"] = "Relic chosen" }),	-- Triggered after selecting a Relic during 'Lost Legends' (89268)
-				q(91053, name(HEADERS.Item,263037)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Wey'nan's Ward'
-				q(91054, name(HEADERS.Item,263315)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Bubbling Haranir Cauldron'
-				q(91511, name(HEADERS.Item,264262)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'The Echoless Flame'
-				q(91512, name(HEADERS.Item,262906)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Russula's Outreach'
-				q(91456, name(HEADERS.Item,263196)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Aln'hara's Bloom'
+				-- weekly account-wide lockout
+				q(89284, name(HEADERS.Quest,89268,{isWeekly=true})),	-- Lost Legends (weekly AW lockout)
+				-- weekly per character choice
+				q(89266, name(HEADERS.NPC,241213,{isWeekly=true})),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
+				q(91049, name(HEADERS.NPC,243491,{isWeekly=true})),	-- Triggered after chosing 'Cauldron of Echoes' during 'Lost Legends' (89268)
+				q(91516, name(HEADERS.NPC,243540,{isWeekly=true})),	-- Triggered after chosing 'The Echoless Flame' during 'Lost Legends' (89268)
+				q(91517, name(HEADERS.NPC,243542,{isWeekly=true})),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
+				q(91455, name(HEADERS.NPC,243514,{isWeekly=true})),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
+				-- q(TODO, name(HEADERS.NPC,TODO,{isWeekly=true})),	-- Triggered after chosing 'Root of the World' during 'Lost Legends' (89268)
+				-- q(TODO, name(HEADERS.NPC,TODO,{isWeekly=true})),	-- Triggered after chosing 'Sky's Hope' during 'Lost Legends' (89268)
+				-- one-time per character completions
+				q(91053, name(HEADERS.Quest,88993)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Wey'nan's Ward'
+				q(91054, name(HEADERS.Quest,88994)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Bubbling Haranir Cauldron'
+				q(91511, name(HEADERS.Quest,88996)),	-- The Echoless Flame completed
+				q(91512, name(HEADERS.Quest,88997)),	-- Russula's Outreach completed
+				q(91456, name(HEADERS.Quest,88995)),	-- Aln'hara's Bloom completed
+				-- q(TODO, name(HEADERS.Quest,TODO)),	-- Root of the World completed
+				-- q(TODO, name(HEADERS.Quest,TODO)),	-- Sky's Hope completed
 			}),
 		}),
 	}),

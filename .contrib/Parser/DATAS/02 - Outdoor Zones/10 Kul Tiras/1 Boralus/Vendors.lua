@@ -100,10 +100,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 					i(167858, {	-- Island Expedition Cloak
 						["cost"] = { { "c", 1710, 35 } },	-- 35x Seaferer's Dubloon
 						["groups"] = {
-							i(160332, {	-- Mud-Slicked Capote -- Opening on Alliance
+							i(160332, {	-- Mud-Slicked Capote	-- Opening on Alliance
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(155305, {	-- Golden City Greatcloak -- Opening on Horde
+							i(155305, {	-- Golden City Greatcloak	-- Opening on Horde
 								["races"] = HORDE_ONLY,
 							}),
 						},

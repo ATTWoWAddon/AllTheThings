@@ -109,7 +109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27988),	-- Burnoose of Shifting Ages
 						-- #if AFTER 7.3.5
 						i(27977),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
-						i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
+						i(27873),	-- Moonglade Pants (7.3.5	-- Moved from Aeonus)
 						-- #endif
 						i(27996),	-- Ring of Spiritual Precision
 						i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
@@ -179,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30558),	-- Glimmering Fire Opal
 							i(30556),	-- Glinting Fire Opal
@@ -196,7 +196,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27988),	-- Burnoose of Shifting Ages
 							-- #if AFTER 7.3.5
 							i(27977),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
-							i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
+							i(27873),	-- Moonglade Pants (7.3.5	-- Moved from Aeonus)
 							-- #endif
 							i(27996),	-- Ring of Spiritual Precision
 							i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)

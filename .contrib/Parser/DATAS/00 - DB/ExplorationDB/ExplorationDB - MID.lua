@@ -8,6 +8,7 @@ if true then
     return
 end
 -- #ENDIF
+ExportDB._Compressed.ExplorationAreaPositionDB_SavedVars = true
 ExportDB.ExplorationAreaPositionDB_SavedVars = {
 	[7172] = {
 	[550] = {

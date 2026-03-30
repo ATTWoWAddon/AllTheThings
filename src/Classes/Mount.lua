@@ -139,7 +139,7 @@ do
 	function(t) return t.itemID end)
 	app.AddEventHandler("OnRefreshCollections", function()
 		local acct, char, none = {}, {}, {}
-		local IsSpellKnown = app.IsSpellKnownHelper
+		local IsSpellKnownHelper = app.IsSpellKnownHelper
 		for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			-- somehow, randomly, some players have had a spellID value which exists but isn't a number...
@@ -147,10 +147,10 @@ do
 			if spellID then
 				-- spell check for every mount might not be a necessary fallback anymore
 				-- of all the mounts I don't have, none of them have known spells instead
-				-- if not isCollected and IsSpellKnown(spellID) then
+				-- if not isCollected and IsSpellKnownHelper(spellID) then
 				-- 	app.print("Mount not collected but spell learned:",spellID,GetSpellName(spellID))
 				-- end
-				if isCollected or IsSpellKnown(spellID) then
+				if isCollected or IsSpellKnownHelper(spellID) then
 					if PerCharacterMountSpells[spellID] then
 						char[spellID] = true;
 					else
@@ -166,14 +166,14 @@ do
 
 		-- Spell-based Mounts (don't appear in Mount Journal)
 		for spellID,_ in pairs(PerCharacterMountSpells) do
-			if IsSpellKnown(spellID) then
+			if IsSpellKnownHelper(spellID) then
 				char[spellID] = true
 			else
 				none[spellID] = true
 			end
 		end
 		for _,spellID in ipairs(AccountWideMountSpells) do
-			if IsSpellKnown(spellID) then
+			if IsSpellKnownHelper(spellID) then
 				acct[spellID] = true
 			else
 				none[spellID] = true

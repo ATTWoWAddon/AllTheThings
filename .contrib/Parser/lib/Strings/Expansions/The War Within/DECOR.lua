@@ -3,6 +3,6 @@ createLocalizationString({
 	constant = "DECOR",
 	export = true,
 	text = {
-		en = [[~BINDING_TAG_DECOR]],
+		en = [[~CATALOG_SHOP_TYPE_DECOR]],
 	},
 })

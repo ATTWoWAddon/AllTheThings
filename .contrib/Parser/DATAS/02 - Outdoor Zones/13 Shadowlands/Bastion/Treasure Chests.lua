@@ -277,6 +277,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(174007),	-- Purifying Draught
 				},
 			}),
+			o(334345, {	-- Treasure of Courage
+				["coord"] = { 27.1, 19.5, BASTION },
+			}),
+			o(334344, {	-- Treasure of Humility
+				["coord"] = { 24.7, 20.5, BASTION },
+			}),
+			o(334346, {	-- Treasure of Purity
+				["coord"] = { 26.8, 24.7, BASTION },
+			}),
+			o(334343, {	-- Treasure of Wisdom
+				["coord"] = { 23.7, 25.5, BASTION },
+			}),
 			o(352428, {	-- Vesper of Virtues
 				["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 				["coord"] = { 58.6, 71.4, BASTION },

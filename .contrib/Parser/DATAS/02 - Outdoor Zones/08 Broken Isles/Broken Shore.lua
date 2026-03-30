@@ -1496,7 +1496,7 @@ root(ROOTS.Zones, {
 								i(147222, {	-- Dauntless Cloak
 									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
-										i(147269) -- Unifying Drape
+										i(147269)	-- Unifying Drape
 									},
 								}),
 								i(147215, {	-- Dauntless Gauntlets

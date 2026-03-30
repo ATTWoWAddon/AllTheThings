@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				pet(3547, {	-- Jade Cragviper (PET!)
 					["description"] = "Backline pet only.",
 				}),
-				pet(4571, { -- Pinkskin Burrower (PET!)
+				pet(4571, {	-- Pinkskin Burrower (PET!)
 					["coord"] = { 47.8, 31.6, THE_RINGING_DEEPS },
 				}),
 				pet(4573, {	-- Skittish Sniffler (PET!)

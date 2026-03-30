@@ -575,7 +575,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(59554, {	-- A Fine Journey
 					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["provider"] = { "o", 348558 },	-- Notice
-					["coord"] = { 51.9, 47.7, BASTION },
+					["coords"] = {
+						{ 51.9, 47.7, BASTION },
+						{ 45.3, 59.8, BASTION },
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(57549, {	-- In Agthia's Memory

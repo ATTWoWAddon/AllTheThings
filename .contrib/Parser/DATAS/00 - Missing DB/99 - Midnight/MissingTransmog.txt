@@ -35441,31 +35441,6 @@ s(301513)/i(258585),	-- Sharpeye Gleam
 s(301516)/i(258586),	-- Bloodfeather Chestguard
 s(301519)/i(258587),	-- Spaulders of Scorching Ray
 s(301830)/i(259029),	-- Shadowguard Intelligence
-12.0.0.63724
-s(302107)/i(260370),	-- Visage of Unseen Truths \\ 12.0 Raid - Cloth - Head
-s(302108)/i(260370),	-- Visage of Unseen Truths \\ 12.0 Raid - Cloth - Head
-s(302109)/i(260370),	-- Visage of Unseen Truths \\ 12.0 Raid - Cloth - Head
-s(302111)/i(260371),	-- Infernal Greatlock Girdle \\ 12.0 Raid - Cloth - Waist
-s(302112)/i(260371),	-- Infernal Greatlock Girdle \\ 12.0 Raid - Cloth - Waist
-s(302113)/i(260371),	-- Infernal Greatlock Girdle \\ 12.0 Raid - Cloth - Waist
-s(302115)/i(260372),	-- Nullstrider's Boots \\ 12.0 Raid - Leather - Feet
-s(302116)/i(260372),	-- Nullstrider's Boots \\ 12.0 Raid - Leather - Feet
-s(302117)/i(260372),	-- Nullstrider's Boots \\ 12.0 Raid - Leather - Feet
-s(302119)/i(260373),	-- Power Stance Breeches \\ 12.0 Raid - Leather - Legs
-s(302120)/i(260373),	-- Power Stance Breeches \\ 12.0 Raid - Leather - Legs
-s(302121)/i(260373),	-- Power Stance Breeches \\ 12.0 Raid - Leather - Legs
-s(302123)/i(260374),	-- Primal Spark Pauldrons \\ 12.0 Raid - Mail - Shoulder
-s(302124)/i(260374),	-- Primal Spark Pauldrons \\ 12.0 Raid - Mail - Shoulder
-s(302125)/i(260374),	-- Primal Spark Pauldrons \\ 12.0 Raid - Mail - Shoulder
-s(302127)/i(260375),	-- Raging Storm Sash \\ 12.0 Raid - Mail - Waist
-s(302128)/i(260375),	-- Raging Storm Sash \\ 12.0 Raid - Mail - Waist
-s(302129)/i(260375),	-- Raging Storm Sash \\ 12.0 Raid - Mail - Waist
-s(302131)/i(260376),	-- Breastplate of the Final Defense \\ 12.0 Raid - Plate - Chest
-s(302132)/i(260376),	-- Breastplate of the Final Defense \\ 12.0 Raid - Plate - Chest
-s(302133)/i(260376),	-- Breastplate of the Final Defense \\ 12.0 Raid - Plate - Chest
-s(302135)/i(260377),	-- Fading Dawn Sabatons \\ 12.0 Raid - Plate - Feet
-s(302136)/i(260377),	-- Fading Dawn Sabatons \\ 12.0 Raid - Plate - Feet
-s(302137)/i(260377),	-- Fading Dawn Sabatons \\ 12.0 Raid - Plate - Feet
 12.0.0.63854
 s(302487)/i(262734),	-- [DNT] Mace of the Great Dark \\ Mace of the Great Dark
 12.0.0.63967

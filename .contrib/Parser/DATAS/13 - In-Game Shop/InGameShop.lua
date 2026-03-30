@@ -201,15 +201,15 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 		-- #if ANYCLASSIC
-		i(198665, {	-- Pebble's Pebble
+		i(198665, {	-- Pebble's Pebble (PET!)
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
-		-- i(267303, {	-- Roofus (PET!)
-		-- 	["description"] = "Part of the charity Roofus Pack."
-		-- 	["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
-		-- }),
-		i(239082, {	-- Sa'bak's Blessed
+		i(262982, {	-- Roofus (PET!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(239082, {	-- Sa'bak's Blessed (PET!)
 			["timeline"] = { ADDED_11_1_7 },
 		}),
 		i(151234, {	-- Shadow (PET!)
@@ -619,8 +619,8 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 
 		------ Lavaborn Emerald Attire Set ------
-		iensemble(238428, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Ensemble: Lavaborn Emerald Attire -- Removed July 14, 2025
-		i(238948, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Fel Inferno Helm -- Removed July 14, 2025
+		iensemble(238428, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Ensemble: Lavaborn Emerald Attire	-- Removed July 14, 2025
+		i(238948, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Fel Inferno Helm	-- Removed July 14, 2025
 
 		iensemble(212221, {	-- Ensemble: Sky Witch's Attire
 			["timeline"] = { ADDED_11_0_5, "removed 11.1.0.60037" },	-- Removed March 31, 2025
@@ -681,18 +681,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(250795),	-- Colorful Dotted Egg (DECOR!)
 		i(250794),	-- Colorful Shroomic Egg (DECOR!)
 		i(250796),	-- Colorful Striped Egg (DECOR!)
-		-- i(xxxxxx, {	-- Dog Bed (DECOR!)
-		-- 	["description"] = "Part of the charity Roofus Pack."
-		-- 	["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
-		-- }),
-		-- i(xxxxxx, {	-- Dog Bowl (DECOR!)
-		-- 	["description"] = "Part of the charity Roofus Pack."
-		-- 	["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
-		-- }),
-		-- i(xxxxxx, {	-- Dog House (DECOR!)
-		-- 	["description"] = "Part of the charity Roofus Pack."
-		-- 	["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
-		-- }),
 		i(260728),	-- Horde Doormat (DECOR!)
 		i(253546),	-- Lush Garden Butterfly Sconce (DECOR!)
 		i(252419),	-- Lush Garden Fungal Basin (DECOR!)
@@ -700,6 +688,38 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(258888),	-- Lush Garden Fungal Fountain (DECOR!)
 		i(258294),	-- Lush Garden Gnome-Like Statue (DECOR!)
 		i(250793),	-- Lush Garden Trellis (DECOR!)
+		i(259046, {	-- Paw Pal Bed (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(259045, {	-- Paw Pal Bed and Blanket (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(264275, {	-- Paw Pal House Durotar Roof (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(259094, {	-- Paw Pal House Elwynn Roof (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(264276, {	-- Paw Pal House Eversong Roof (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(259093, {	-- Paw Pal House Frame (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(2264277, {	-- Paw Pal House Shadowglen Roof (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(259044, {	-- Paw Pal Water Dish (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
 		i(250797),	-- Spring Blossom Ceiling Light (DECOR!)
 		i(258569),	-- Spring Blossom Gazebo (DECOR!)
 		i(254417),	-- Spring Blossom Hanging Chair (DECOR!)

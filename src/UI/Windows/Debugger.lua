@@ -1,7 +1,7 @@
 -- App locals
 local appName, app = ...;
-local type,wipe,ipairs,pairs,rawget,select,tinsert,tremove,tonumber, math_floor
-	= type,wipe,ipairs,pairs,rawget,select,tinsert,tremove,tonumber, math.floor
+local type,wipe,ipairs,pairs,rawget,select,tinsert,tonumber, math_floor,setmetatable
+	= type,wipe,ipairs,pairs,rawget,select,tinsert,tonumber, math.floor,setmetatable
 
 -- WoW API Cache
 local C_Map_GetPlayerMapPosition, C_Map_GetMapInfo
@@ -95,6 +95,14 @@ local CleanFields = {
 	__canretry = 1,
 	SortType = 1,
 	OnClick = 1,
+	__FillGroups = 1,
+	_lastshown = 1,
+	_fillcomplete = 1,
+	back = 1,
+	indent = 1,
+	__class = 1,
+	window = 1,
+	__ExportTEMP = 1,
 };
 local function CleanObject(obj)
 	if obj == nil then return end
@@ -193,237 +201,330 @@ local function GetNameFromCost(costType, id, count)
 		return (count > 1 and ("x" .. count .. " ") or "") .. (app.GetNameFromProvider(costType, id) or UNKNOWN);
 	end
 end
-local function ExportKeyValue(key, value)
-	local str = key .. " = ";
-	if key == "providers" then
-		str = str .. "{\n";
+local ExportKeyValueHandlers = {
+	providers = function(key, value)
+		local lines = {"{"};
 		for i,o in ipairs(value) do
-			str = str .. "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },\t-- " .. (app.GetNameFromProvider(o[1], o[2]) or UNKNOWN) .. "\n";
+			lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },\t-- " .. (app.GetNameFromProvider(o[1], o[2]) or UNKNOWN);
 		end
-		str = str .. "},";
-	elseif key == "crs" or key == "qgs" then
-		str = str .. "{\n";
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+	crs = function(key, value)
+		local lines = {"{"};
 		for i,id in ipairs(value) do
-			str = str .. "\t" .. id .. ",\t-- " .. (app.NPCNameFromID[id] or UNKNOWN) .. "\n";
+			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.NPCNameFromID[id] or UNKNOWN);
 		end
-		str = str .. "},";
-	elseif key == "coords" then
-		str = str .. "{\n";
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+	coords = function(key, value)
+		local lines = {"{"};
 		for mapID,coordsForMap in pairs(value) do
-			str = str .. "\t[" .. mapID .. "] = {\n";
+			lines[#lines + 1] = "\t[" .. mapID .. "] = {\t-- " .. (app.GetMapName(mapID) or UNKNOWN)
 			for i,o in ipairs(coordsForMap) do
-				str = str .. "\t\t{ " .. o[1] .. ", " .. o[2] .. " },\n";
+				-- floor coords to nearest tenth
+				lines[#lines + 1] = "\t\t{ " .. ("%.1f"):format(app.round(o[1], 1)) .. ", " .. ("%.1f"):format(app.round(o[2], 1)) .. " },";
 			end
-			str = str .. "\t},\n";
+			lines[#lines + 1] = "\t},";
 		end
-		str = str .. "},";
-	elseif key == "cost" then
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+	cost = function(key, value)
 		if type(value) == "number" then
 			-- This is simply a gold value
-			str = str .. value .. ",\t-- " .. GetMoneyString(value);
+			return value .. ",\t-- " .. GetMoneyString(value);
 		else
 			-- This is the traditional cost format.
-			str = str .. "{\n";
+			local lines = {"{"};
 			for i,o in ipairs(value) do
-				str = str .. "\t{ \"" .. o[1] .. "\", " .. o[2] .. ", " .. (o[3] or 1) .. " },\t-- ".. GetNameFromCost(o[1], o[2], o[3]) .. "\n";
+				lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. ", " .. (o[3] or 1) .. " },\t-- ".. GetNameFromCost(o[1], o[2], o[3]);
 			end
-			str = str .. "},";
+			lines[#lines + 1] = "},";
+			return app.TableConcat(lines, nil, nil, "\n");
 		end
-	elseif key == "r" then
+	end,
+	r = function(key, value)
 		-- "r" is a shortcut for "races", where the whole of the faction can do a thing
-		str = "races = " .. (value == 2 and "ALLIANCE_ONLY" or "HORDE_ONLY") .. ",";
-	else
-		if not DefaultParsing[key] then
-			print("DEFAULT PARSING FOR KEY", key);
-			DefaultParsing[key] = true;
+		return "races = " .. (value == 2 and "ALLIANCE_ONLY" or "HORDE_ONLY") .. ",";
+	end,
+	maps = function(key, value)
+		local lines = {"{"};
+		for i,id in ipairs(value) do
+			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.GetMapName(id) or UNKNOWN);
 		end
-		if type(value) == "string" then
-			if value:find("\"") or value:find("\n") then
-				str = str .. "[[" .. value .. "]],";
-			else
-				str = str .. "\"" .. value .. "\",";
-			end
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+	sourceQuests = function(key, value)
+		local lines = {"{"};
+		for i,id in ipairs(value) do
+			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.GetQuestName(id) or UNKNOWN);
+		end
+		lines[#lines + 1] = "},";
+		return app.TableConcat(lines, nil, nil, "\n");
+	end,
+}
+ExportKeyValueHandlers.qgs = ExportKeyValueHandlers.crs
+ExportKeyValueHandlers.nextQuests = ExportKeyValueHandlers.sourceQuests
+
+local function ExportKeyValue(key, value)
+	local handler = ExportKeyValueHandlers[key];
+	if handler then
+		return key .. " = " .. handler(key, value);
+	end
+	-- Default parsing for unrecognized keys
+	if not DefaultParsing[key] then
+		print("DEFAULT PARSING FOR KEY", key);
+		DefaultParsing[key] = true;
+	end
+	local str = key .. " = ";
+	if type(value) == "string" then
+		if value:find("\"") or value:find("\n") then
+			str = str .. "[[" .. value .. "]],";
 		else
-			str = str .. value .. ",";
+			str = str .. "\"" .. value .. "\",";
 		end
+	else
+		str = str .. tostring(value) .. ",";
 	end
 	return str;
 end
-local function ExportRawDataToString(data)
+local IgnoredForRaw = setmetatable({
+	g = true,
+	name = true,
+	basename = true,
+	text = true,
+}, { __index = CleanFields })
+local function ExportRawDataToString(data, depth)
+	-- ignore string-keyed entries; they should not be exported
+	if data and data.key == "strKey" then return end
+	depth = depth or 0
+	local indent = string.rep("\t", depth)
 	if data then
-		local str = "{";
-		local hasG = data.g;
-		if hasG then data.g = nil; end
-		
-		local anyOtherKeys;
+		local datalines = {}
+		local keyindent = "\n" .. indent
 		for key,value in pairs(data) do
-			if not CleanFields[key] then
-				str = str .. "\n\t" .. ExportKeyValue(key,value):gsub("\n", "\n\t");
-				anyOtherKeys = true;
+			if not IgnoredForRaw[key] then
+				datalines[#datalines + 1] = indent .. ExportKeyValue(key,value):gsub("\n", keyindent)
 			end
 		end
-		
-		-- Assign the groups back
-		if hasG then
-			data.g = hasG;
-			if #hasG > 0 then
-				if anyOtherKeys then
-					str = str .. "\n\tg = {";
-					for i,o in ipairs(hasG) do
-						str = str .. "\n\t\t" .. (ExportRawDataToString(o):gsub("\n", "\n\t\t"));
-					end
-					str = str .. "\n\t}";
-				else
-					for i,o in ipairs(hasG) do
-						str = str .. "\n\t" .. (ExportRawDataToString(o):gsub("\n", "\n\t"));
-					end
-				end
-			end
-		end
-		return str .. "\n},";
+		return #datalines > 0 and app.TableConcat(datalines, nil, nil, "\n") or nil
 	end
-	return "nil,";
+	return indent .. "nil,"
 end
-local function ExportDataToString(data)
+local function RawBeforeSub(data, depth)
+	local indent = string.rep("\t", depth)
+	local anyOtherKeys = false
+	for key in pairs(data) do
+		if not CleanFields[key] then
+			anyOtherKeys = true
+			break
+		end
+	end
+	if anyOtherKeys then
+		return indent .. "g = {"
+	else
+		return indent .. "\t{"
+	end
+end
+local function RawAfterSub(data, depth)
+	local indent = string.rep("\t", depth)
+	local anyOtherKeys = false
+	for key in pairs(data) do
+		if not CleanFields[key] then
+			anyOtherKeys = true
+			break
+		end
+	end
+	if anyOtherKeys then
+		return indent .. "},"
+	else
+		return indent .. "\t},"
+	end
+end
+local function RawDepthShift(data) return 2 end
+
+-- register the 'raw' style exporter
+app:RegisterDataStyleExporter("Raw", {
+	main = ExportRawDataToString,
+	beforeSub = RawBeforeSub,
+	afterSub = RawAfterSub,
+	depthShift = RawDepthShift,
+	-- TODO: if not all items are loaded the .name can be empty, perhaps add a full scan of .name then export once all return??
+	beforeData = function(data, depth) if data and data.key ~= "strKey" then return string.rep("\t", depth>0 and depth-1 or 0).."{"..(data.name and (" -- "..data.name) or "") end end,
+	afterData = function(data, depth) if data and data.key ~= "strKey" then return string.rep("\t", depth>0 and depth-1 or 0).."}," end end,
+	beforeExport = function(data) return "{ -- Raw Data from "..(data and (data.name or (data.window and data.window.Suffix)) or "") end,
+	afterExport = function(data) return "} -- End Raw Data" end
+})
+
+local KnownShortcutsByType = {
+	Currency = "currency",
+	Decor = "i",
+	Exploration = "exploration",
+	FlightPath = "fp",
+	Header = "n",
+	Item = "i",
+	Map = "m",
+	NPC = "n",
+	Object = "o",
+	Objective = "objective",
+	Quest = "q",
+	QuestAsBreadcrumb = "q",
+}
+local KeySwaps
+do
+local function DefaultKeyVal(data) return data[data.key] end
+KeySwaps = setmetatable({
+	Decor = function(data)
+		data.__ExportTEMP.ignore.itemID=1
+		data.__ExportTEMP.ignore.spellID=1
+		return data.itemID
+	end,
+	Header = function(data)
+		local id = data[data.key]
+		for k,i in pairs(app.HeaderConstants) do
+			if i == id then
+				return k
+			end
+		end
+		return id
+	end,
+}, { __index = function(t,k)
+	return DefaultKeyVal
+end})
+end
+local function FormatReadableKey(data)
+	if not data or not data.key then return end
+
+	local shortcut = KnownShortcutsByType[data.__type]
+	-- unknown key shortcut, fall back to nil so we treat it as unkeyed
+	if not shortcut then return end
+
+	local id = KeySwaps[data.__type](data)
+	return shortcut.."("..(id or UNKNOWN)
+end
+
+local IgnoredForReadable = setmetatable({
+	g = true,
+	name = true,
+	basename = true,
+	text = true,
+}, { __index = CleanFields })
+local function HasUsefulFields(data)
+	if not data then return end
+	if data.__ExportTEMP.useful.fields then return true end
+	for k in pairs(data) do
+		if not IgnoredForReadable[k]
+			and k ~= data.key
+			and not data.__ExportTEMP.ignore[k]
+		then
+			data.__ExportTEMP.useful.fields = true
+			return true
+		end
+	end
+end
+
+local function ReadableBeforeData(data, depth)
+	if not data then return end
+	data.__ExportTEMP = setmetatable({}, app.MetaTable.AutoTable)
+	if data.key == "strKey" then return end
+	local indent = string.rep("\t", depth)
+	local keyStr = FormatReadableKey(data)
+	local name = data.name or data.basename or data.text or UNKNOWN
+	local anyOther = HasUsefulFields(data)
+	local hasGroups = data.g and #data.g > 0
+	local prefix = indent
+	if keyStr then
+		data.__ExportTEMP.useful.shortcut = 1
+		if anyOther or hasGroups then
+			prefix = prefix .. keyStr .. ", {"
+		else
+			prefix = prefix .. keyStr .. ")"
+		end
+	else
+		data.__ExportTEMP.useful.key = 1
+		prefix = prefix .. "{"
+	end
+	if name then
+		if keyStr and not (anyOther or hasGroups) then
+			prefix = prefix .. ",\t-- " .. name
+		else
+			prefix = prefix .. " -- " .. name
+		end
+	end
+	return prefix
+end
+
+local function ReadableMain(data, depth)
+	if data and data.key == "strKey" then return end
+	depth = depth or 0
+	local indent = string.rep("\t", depth + 1)
 	if data then
-		local id, name;
-		local restore = {};
-		if rawget(data, "basename") then
-			name = data.basename;
-			restore.basename = name;
-			data.basename = nil;
-		else
-			name = rawget(data, "name");
-			if name then
-				restore.name = name;
-				data.name = nil;
-			else
-				name = rawget(data, "text")
-				if name then
-					restore.text = name;
-					data.text = nil;
-				end
-			end
-		end
-		
-		local hasKey = data.key;
-		if hasKey then
-			id = data[hasKey];
-			restore[hasKey] = id;
-			
-			-- Some classes have 2 parameters and will need to rip out some data to restore later
-			-- Export the shortcut used by the key
-			if hasKey == "npcID" then
-				hasKey = "n(" .. id;
-			elseif hasKey == "itemID" then
-				hasKey = "i(" .. id;
-			elseif hasKey == "mapID" then
-				hasKey = "m(" .. id;
-			elseif hasKey == "questID" then
-				hasKey = "q(" .. id;
-			elseif hasKey == "objectiveID" then
-				hasKey = "objective(" .. id;
-			elseif hasKey == "headerID" then
-				for k,i in pairs(app.HeaderConstants) do
-					if i == id then
-						id = k;
-						break;
-					end
-				end
-				hasKey = "n(" .. id;
-			else
-				-- Unhandled key, just inject it raw.
-				for key,value in pairs(restore) do
-					data[key] = value;
-				end
-				restore = {};
-				hasKey = nil;
-			end
-			if hasKey then
-				if not name then name = data.name; end
-				data[data.key] = nil;
-			end
-		end
-		
-		-- Build the string for non-keyed fields
-		local str = "";
-		local anyKeys;
-		local hasG = data.g;
-		if hasG then
-			restore.g = hasG;
-			data.g = nil;
-		end
+		local datalines = {}
+		local keyindent = "\n" .. indent
 		for key,value in pairs(data) do
-			if not CleanFields[key] then
-				str = str .. "\n\t" .. ExportKeyValue(key,value):gsub("\n", "\n\t");
-				anyKeys = true;
+			if not IgnoredForReadable[key]
+				and (key ~= data.key or data.__ExportTEMP.useful.key)
+				and not data.__ExportTEMP.ignore[key]
+			then
+				datalines[#datalines + 1] = indent .. ExportKeyValue(key,value):gsub("\n", keyindent)
 			end
 		end
-		
-		-- Assign the groups back and export relative groups
-		if hasG and #hasG > 0 then
-			if anyKeys then
-				str = str .. "\n\tgroups = {";
-				for i,o in ipairs(hasG) do
-					str = str .. "\n\t\t" .. (ExportDataToString(o):gsub("\n", "\n\t\t"));
-				end
-				str = str .. "\n\t},";
-			else
-				anyKeys = true;
-				for i,o in ipairs(hasG) do
-					str = str .. "\n\t" .. (ExportDataToString(o):gsub("\n", "\n\t"));
-				end
-			end
-		end
-		
-		-- Restore the silenced fields back to their original values.
-		for key,value in pairs(restore) do
-			data[key] = value;
-		end
-		if anyKeys then
-			if hasKey then
-				if name then
-					return hasKey .. ", {\t-- " .. name .. str .. "\n}),";
-				else
-					return hasKey .. ", {" .. str .. "\n}),";
-				end
-			else
-				if name then
-					return "{\t-- " .. name .. str .. "\n},";
-				else
-					return "{" .. str .. "\n},";
-				end
-			end
-		else
-			if hasKey then
-				if name then
-					return hasKey .. "),\t-- " .. name .. str;
-				else
-					return hasKey .. ")," .. str;
-				end
-			else
-				if name then
-					return "{\t-- " .. name .. str .. "\n},";
-				else
-					return "{" .. str .. "\n},";
-				end
-			end
-		end
+		return #datalines > 0 and app.TableConcat(datalines, nil, nil, "\n") or nil
 	end
-	return "nil,";
+	return indent .. "nil,"
 end
-local function OnClick_ExportData(row, button)
-	-- TODO: It would be neat to be able to export singular objects
-	if button == "LeftButton" and IsAltKeyDown() then
-		local str = ExportDataToString(row.ref);
-		if str then
-			app:ShowPopupDialogWithMultiLineEditBox(str, nil, "Export Results");
-		else
-			app.print("Nothing to export");
-		end
-		return true;
+
+local function ReadableDepthShift(data)
+	return HasUsefulFields(data) and 2 or 1
+end
+
+local function ReadableBeforeSub(data, depth)
+	if not HasUsefulFields(data) then
+		-- only key/g present, nothing to wrap
+		return
 	end
+	return string.rep("\t", depth + 1) .. "groups = {"
 end
+
+local function ReadableAfterSub(data, depth)
+	if not HasUsefulFields(data) then return end
+	return string.rep("\t", depth + 1) .. "},"
+end
+
+local function ReadableAfterData(data, depth)
+	if not data then return end
+	if data.key == "strKey" then
+		data.__ExportTEMP = nil
+		return
+	end
+	local suffix
+	if data.__ExportTEMP.useful.shortcut then
+		if HasUsefulFields(data) or (data.g and #data.g > 0) then
+			suffix = string.rep("\t", depth) .. "}),"
+		else
+			-- simple keyed entry (no other fields, no groups)
+		end
+	else
+		suffix = string.rep("\t", depth) .. "},"
+	end
+	data.__ExportTEMP = nil
+	return suffix
+end
+
+-- register the 'readable' style exporter
+app:RegisterDataStyleExporter("Readable", {
+	main = ReadableMain,
+	beforeSub = ReadableBeforeSub,
+	afterSub = ReadableAfterSub,
+	beforeData = ReadableBeforeData,
+	afterData = ReadableAfterData,
+	depthShift = ReadableDepthShift,
+	beforeExport = function(data) return "{ -- Readable Data from "..(data and (data.name or (data.window and data.window.Suffix)) or "") end,
+	afterExport = function(data) return "} -- End Readable Data" end,
+})
 
 -- Uncomment this section if you need to enable Debugger:
 -- Retail Currently uses [/att debugger] as defined below
@@ -441,16 +542,16 @@ app:CreateWindow("Debugger", {
 		-- Bubble Up the Maps
 		local mapID = app.CurrentMapID;
 		if mapID then
-			header = { key = "mapID", ["mapID"] = mapID, ["g"] = { header } };
+			local mapInfo = C_Map_GetMapInfo(mapID);
+			header = not mapInfo and { key = "mapID", mapID = mapID, g = { header } } or header
 			local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 			if pos then
 				local px, py = pos:GetXY();
 				info.coords = { [mapID] = { { px * 100, py * 100 } } };
 			end
-			local mapInfo = C_Map_GetMapInfo(mapID);
 			if mapInfo then
 				while mapID and mapID ~= 0 do
-					header = { key = "mapID", ["mapID"] = mapID, ["g"] = { header } };
+					header = { key = "mapID", mapID = mapID, g = { header } }
 					mapInfo = C_Map_GetMapInfo(mapID);
 					mapID = mapInfo and mapInfo.parentMapID or 0;
 				end
@@ -533,24 +634,7 @@ app:CreateWindow("Debugger", {
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
-						local str;
-						for i,o in ipairs(self.data.g) do
-							if o.key ~= "strKey" then
-								local substr = ExportRawDataToString(CloneObject(o));
-								if substr then
-									if str then
-										str = str .. "\n" .. substr;
-									else
-										str = substr;
-									end
-								end
-							end
-						end
-						if str then
-							app:ShowPopupDialogWithMultiLineEditBox(str, nil, "Export Results");
-						else
-							app.print("Nothing to export");
-						end
+						app:ExportStylizedData(self, "raw");
 						return true;
 					end,
 				}),
@@ -560,24 +644,7 @@ app:CreateWindow("Debugger", {
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
-						local str;
-						for i,o in ipairs(self.data.g) do
-							if o.key ~= "strKey" then
-								local substr = ExportDataToString(CloneObject(o));
-								if substr then
-									if str then
-										str = str .. "\n" .. substr;
-									else
-										str = substr;
-									end
-								end
-							end
-						end
-						if str then
-							app:ShowPopupDialogWithMultiLineEditBox(str, nil, "Export Results");
-						else
-							app.print("Nothing to export");
-						end
+						app:ExportStylizedData(self, "readable");
 						return true;
 					end,
 				}),
@@ -789,6 +856,10 @@ app:CreateWindow("Debugger", {
 			local loot, source, kind, lootID, info, dropLink
 			local ot, zero, server_id, instance_id, zone_uid, id, spawn_uid;
 			local slots = GetNumLootItems();
+			local tooltipName = GameTooltipTextLeft1:GetText() or UNKNOWN
+			-- technically this can be wrong in aoe-loot situations if you loot a rare and it includes loot from
+			-- regular mobs, etc.
+			local classification = UnitClassification("target") or ""
 			for i=1,slots,1 do
 				loot = GetLootSlotLink(i);
 				if loot then
@@ -815,12 +886,11 @@ app:CreateWindow("Debugger", {
 							app.print("Add",kind,"Loot",lootID,"from",ot,id)
 							if ot == "objectID" then
 								info = { key = ot, [ot] = tonumber(id), g = { info }};
-								info.basename = GameTooltipTextLeft1:GetText() or UNKNOWN
+								info.basename = tooltipName
 								app.print('ObjectID: '..info.objectID.. ' || ' .. 'Name: ' .. info.basename)
 								self:AddObjectWithHeader(app.HeaderConstants.TREASURES, info);
 							else
 								info = { key = ot, [ot] = tonumber(id), g = { info }};
-								local classification = UnitClassification("target") or "";
 								if classification == "rare" or classification == "rareelite" then
 									self:AddObjectWithHeader(app.HeaderConstants.RARES, info);
 								elseif classification == "worldboss" then
@@ -947,12 +1017,5 @@ app:CreateWindow("Debugger", {
 		end
 		self:RegisterEvent("QUEST_ACCEPTED");
 	end,
-	OnUpdate = function(self, ...)
-		-- turn off the Visibility filter for the Debugger update
-		local filterVisible = app.Modules.Filter.Get.Visible();
-		app.Modules.Filter.Set.Visible();
-		self:DefaultUpdate(...);
-		app.Modules.Filter.Set.Visible(filterVisible);
-		return true;
-	end,
+	VisibilityFilter = app.ReturnTrue,
 });

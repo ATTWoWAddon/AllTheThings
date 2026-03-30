@@ -41,6 +41,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
 					}, {	-- RENOWN 14 --
+						q(94470),	-- A Cluster of Voidlight Marl
 					}, {	-- RENOWN 15 --
 					}, {	-- RENOWN 16 --
 					}, {	-- RENOWN 17 --

@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(COMMON_BOSS_DROPS, sharedData({
 				["crs"] = {
+					250841,	-- Bad Zed
 					250826,	-- Banuran
 					250582,	-- Bloated Snapdragon
 					250683,	-- Coralfang

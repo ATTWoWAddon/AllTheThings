@@ -5,7 +5,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 		i(234425, {	-- Forgotten Folio
-			["description"] = "Drops from the last boss of Mythic+ Dungeons. It contains various dungeon dropped profession recipes.",
+			["description"] = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
 			["sym"] = {{"select","itemID",
 				223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
 				223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
@@ -252,7 +252,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 			}),
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
-			-- Have to see what Blizzard does with those kind of achievements -- Goldenshacal 20th August 2025
+			-- Have to see what Blizzard does with those kind of achievements	-- Goldenshacal 20th August 2025
 			ach(42149, {	-- The War Within Season 3: Resilient Keystone 12
 				["_noautomation"] = true,
 			}),

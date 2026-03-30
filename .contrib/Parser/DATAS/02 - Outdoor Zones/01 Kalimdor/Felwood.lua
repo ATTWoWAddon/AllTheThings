@@ -354,20 +354,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- 0/1 Silver Totem of Aquementas
-							["providers"] = {
-								{ "i", 11522 },	-- Silver Totem of Aquementas
-								{ "i", 11617 },	-- Eridan's Supplies
-								{ "i", 11169 },	-- Book of Aquor
-							},
+							["provider"] = { "i", 11522 },	-- Silver Totem of Aquementas
+						}),
+						i(11617, {	-- Eridan's Supplies
+							i(11169, {	-- Book of Aquor
+								["timeline"] = { REMOVED_4_0_3 },
+							}),
+						}),
+						i(11522, {	-- Silver Totem of Aquementas
+							["providers"] = { "i", 11169 },	-- Book of Aquor
+							["timeline"] = { REMOVED_4_0_3 },
 							["coord"] = { 70.0, 49.0, TANARIS },
 							["cr"] = 9453,	-- Aquementas
 						}),
-						-- #if NOT ANYCLASSIC
-						-- CRIEVE NOTE: This item is part of the quest objective above, not needed in Classic. If anywhere, it would ONLY be linked to this one quest. That said, I don't think this is necessary.
-						i(11522, {	-- Silver Totem of Aquementas
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						-- #endif
 					},
 				}),
 				q(28372, {	-- Back to Business

@@ -278,7 +278,7 @@ root(ROOTS.Zones, {
 								["qg"] = 81929,	-- Lieutenant Willem
 								["coord"] = { 39.8, 60.8, SPIRES_OF_ARAK },
 							}),
-							q(37287, {  -- Cleaning House
+							q(37287, { 	-- Cleaning House
 								["sourceQuest"] = 36165,	-- No Time to Waste
 								["qg"] = 84291,	-- Kolrigg Stoktron
 								["coord"] = { 39.5, 61.7, SPIRES_OF_ARAK },
@@ -370,7 +370,7 @@ root(ROOTS.Zones, {
 								["qg"] = 83463,	-- Dusk-Seer Irizzar
 								["coord"] = { 43.8, 48.9, SPIRES_OF_ARAK },
 							}),
-							q(37292, {  -- Not In Your Army
+							q(37292, { 	-- Not In Your Army
 								["sourceQuest"] = 36166,	-- No Time to Waste
 								["qg"] = 84292,	-- Lunzul
 								["coord"] = { 40.1, 42.6, SPIRES_OF_ARAK },
@@ -716,7 +716,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.4, 92.2, SPIRES_OF_ARAK },
 						["groups"] = { i(115533) },	-- Vial of Refined Serum (QI!)
 					}),
-					q(34939, {  -- Declawing The Bloodmane
+					q(34939, { 	-- Declawing The Bloodmane
 						["sourceQuests"] = {
 							34923,	-- The Bloodmane
 							34922,	-- Words of the Raven Mother
@@ -730,7 +730,7 @@ root(ROOTS.Zones, {
 							i(114719),	-- Skysinger Gloves
 						},
 					}),
-					q(35077, {  -- Defungination
+					q(35077, { 	-- Defungination
 						["sourceQuests"] = { 35619, 35620, 36862 },	-- Pinchwhistle Gearworks (Alliance and 2 Horde versions)
 						["qg"] = 81109,	-- Kimzee Pinchwhistle
 						["coord"] = { 61.4, 72.8, SPIRES_OF_ARAK },
@@ -807,7 +807,7 @@ root(ROOTS.Zones, {
 							i(114947),	-- Skywatch Adherent Pendant
 						},
 					}),
-					q(34999, {  -- Hatred Undying
+					q(34999, { 	-- Hatred Undying
 						["sourceQuest"] = 35611,	-- Return to Veil Terokk
 						["qg"] = 81514,	-- Kazu
 						["coord"] = { 61.9, 42.2, SPIRES_OF_ARAK },
@@ -823,7 +823,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = 96,
 					})),
-					q(34656, {  -- Hidden in Plain Sight
+					q(34656, { 	-- Hidden in Plain Sight
 						["sourceQuest"] = 34655,	-- The Shadows of Skettis
 						["qg"] = 79519,	-- Reshad
 						["coord"] = { 43.6, 12.9, SPIRES_OF_ARAK },
@@ -840,7 +840,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.8, 56.7, SPIRES_OF_ARAK },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(35273, {  -- Hot Seat
+					q(35273, { 	-- Hot Seat
 						["icon"] = 1029590,
 						["sourceQuest"] = 35261,	-- Shot Caller
 						["provider"] = { "o", 232353 },	-- Overseer's Chair
@@ -944,7 +944,7 @@ root(ROOTS.Zones, {
 							i(114961),	-- Thornmother Eye
 						},
 					}),
-					q(34829, {  -- New Neighbors
+					q(34829, { 	-- New Neighbors
 						["sourceQuest"] = 34827,	-- Last of the Talonpriests
 						["qg"] = 80232,	-- Talonpriest Ishaal
 						["coord"] = { 47.9, 34.6, SPIRES_OF_ARAK },
@@ -1050,7 +1050,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.4, 24.0, SPIRES_OF_ARAK },
 						["isBreadcrumb"] = true,
 					}),
-					q(35211, {  -- Preventing the Worst
+					q(35211, { 	-- Preventing the Worst
 						["sourceQuests"] = {
 							36384,	-- Field Trial
 							35089,	-- Skimming Off the Top
@@ -1127,7 +1127,7 @@ root(ROOTS.Zones, {
 						["qg"] = 82126,	-- Alice Finn
 						["coord"] = { 37.5, 50.7, SPIRES_OF_ARAK },
 					}),
-					q(35004, {  -- Servants of a Dead God
+					q(35004, { 	-- Servants of a Dead God
 						["sourceQuests"] = {
 							35001,	-- Gaze of the Raven God
 							35002,	-- Sons of Sethe
@@ -1142,7 +1142,7 @@ root(ROOTS.Zones, {
 							i(119058),	-- Hollowblood Scarf
 						},
 					}),
-					q(35012, {  -- Sethe, the Dead God
+					q(35012, { 	-- Sethe, the Dead God
 						["sourceQuests"] = {
 							35011,	-- The False Talon King
 							35003,	-- Ritual Severance
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(34923, {  -- The Bloodmane
+					q(34923, { 	-- The Bloodmane
 						["sourceQuest"] = 35007,	-- Rendezvous with the Ritualists
 						["qg"] = 80740,	-- Ravenspeaker Sekara
 						["coord"] = { 54.8, 54.1, SPIRES_OF_ARAK },
@@ -1325,7 +1325,7 @@ root(ROOTS.Zones, {
 						["qg"] = 81109,	-- Kimzee Pinchwhistle
 						["coord"] = { 61.4, 72.9, SPIRES_OF_ARAK },
 					}),
-					q(35090, {  -- The Right Parts for the Job
+					q(35090, { 	-- The Right Parts for the Job
 						["sourceQuest"] = 35285,	-- Follow that Hotrod!
 						["qg"] = 81972,	-- Kimzee Pinchwhistle
 						["coord"] = { 58.4, 92.2, SPIRES_OF_ARAK },
@@ -1441,7 +1441,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.2, 43.3, SPIRES_OF_ARAK },
 						["races"] = HORDE_ONLY,
 					}),
-					q(35704, {  -- When All Is Aligned
+					q(35704, { 	-- When All Is Aligned
 						["sourceQuest"] = 36085,	-- On Ebon Wings
 						["qg"] = 84262,	-- Reshad
 						["coord"] = { 46.5, 54.3, SPIRES_OF_ARAK },

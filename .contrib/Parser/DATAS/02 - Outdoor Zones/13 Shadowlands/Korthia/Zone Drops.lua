@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["name"] = "Daily Drop #1",
 						["isDaily"] = true,
 					}),
-					hqt(64281, {	-- Daily Drop #2 -- probably collecting the mount, will confirm if no one else does prior
+					hqt(64281, {	-- Daily Drop #2	-- probably collecting the mount, will confirm if no one else does prior
 						["name"] = "Daily Drop #2",
 						["isDaily"] = true,
 					}),

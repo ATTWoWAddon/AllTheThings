@@ -204,6 +204,7 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Grievous Gladiator's Ironskin Armor",213,512,45619,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Leather Armor",214,8,45620,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Plate Armor",215,1,45621,276,15,13301,0,1,4,50200,5220,0
+G'Hanir,4955,1024,0,450,0,0,0,1,10,110205,350,0
 "Grievous Gladiator's Ringmail Armor",216,64,45622,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Satin Armor",217,16,45623,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Scaled Armor",218,2,45624,276,15,13301,0,1,4,50200,5220,0
@@ -3520,6 +3521,19 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Forged Gladiator's Plate Armor",3845,1,86074,274,271,3859,3832,1,10,110000,10401,0
 "Forged Gladiator's Silk Armor",3846,256,86075,274,271,3859,3833,1,10,110000,10401,0
 "<DNT> Loa's Blade-Blessing Cleanup",3847,0,0,67,0,0,0,1,9,100207,10,0
+"Void Nemesis' Raiment",3848,32767,0,0,274,14369,3873,1,11,120005,10,0
+"Enduring Battlegear of Wrath",3849,1,0,1,274,14172,3872,1,10,110005,10,0
+"Void's Judgment Armor",3850,32767,0,0,274,14369,3871,1,11,120005,10,0
+"Enduring Stormrage Armor",3851,1024,0,1,274,14172,3870,1,10,110005,10,0
+"Dragonstalker's Enduring Armor",3852,4,0,1,274,14172,3869,1,10,110005,10,0
+"Voidwind Regalia",3853,32767,0,0,274,14369,3868,1,11,120005,10,0
+"Voidfang Armor",3854,32767,0,0,274,14369,3867,1,11,120005,10,0
+"Void Storms Armor",3855,32767,0,0,274,14369,3866,1,11,120005,10,0
+"Enduring Vestments of Transcendence",3856,16,0,1,274,14172,3865,1,10,110005,10,0
+"Pale Rider's Enduring Armor",3857,32,0,1,274,14172,3864,1,10,110005,10,0
+"Voidwalker's Armor",3858,32767,0,0,274,14369,3863,1,11,120005,10,0
+"Void-Warder's Armor",3859,32767,0,0,274,14369,3862,1,11,120005,10,0
+"Enduring Battlegear of the August Acolyte",3860,512,0,1,274,14172,3861,1,10,110005,10,0
 "Eternal Battlegear of the August Acolyte",3861,512,85847,0,274,14173,0,1,10,110005,10,0
 "Earth-Warder's Eternal Armor",3862,4096,85844,0,274,14173,0,1,10,110005,10,0
 "Netherwalker's Eternal Armor",3863,2048,85842,0,274,14173,0,1,10,110005,10,0
@@ -3560,6 +3574,15 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Tusks of Mannoroth",3898,0,84258,67,0,0,0,1,9,100207,10,0
 "Crests of the Kingdom",3900,0,84828,67,0,0,0,1,10,110005,1640,0
 "Golden Crests of the Kingdom",3901,0,84999,67,0,14130,3900,1,10,110005,1640,0
+"Enduring Stormrage Armor",3902,1024,0,1,274,14172,3870,1,10,110005,10,0
+"Enduring Bloodfang Armor",3903,8,0,1,274,14172,3867,1,10,110005,10,0
+"Dragonstalker's Enduring Armor",3904,4,0,1,274,14172,3869,1,10,110005,10,0
+"Enduring Nemesis Raiment",3905,256,0,1,274,14172,3873,1,10,110005,10,0
+"Enduring Judgment Armor",3906,2,0,1,274,14172,3871,1,10,110005,10,0
+"Enduring Battlegear of Wrath",3907,1,0,1,274,14172,3872,1,10,110005,10,0
+"Enduring Netherwind Regalia",3908,128,0,1,274,14172,3868,1,10,110005,10,0
+"Netherwalker's Enduring Armor",3909,2048,0,1,274,14172,3863,1,10,110005,10,0
+"Earth-Warder's Enduring Armor",3910,4096,0,1,274,14172,3862,1,10,110005,10,0
 "Prowler's Midnight Headgear",3911,0,85118,67,0,0,0,1,10,0,1640,0
 "Prowler's Azure Headgear",3912,0,85119,67,0,0,0,1,10,0,1640,0
 "Prowler's Sepia Headgear",3913,0,85120,67,0,0,0,1,10,0,1640,0
@@ -4008,8 +4031,8 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Vision Manipulator's Vestments",4365,400,0,0,314,14244,0,1,10,110105,4300,0
 "Attire of the Woodland Raccoon",4366,0,87523,258,315,14125,0,1,10,110105,10,0
 "Woodland Attire of the Grey Wolf",4367,0,87524,258,315,14245,4366,1,10,110105,10,0
-"Woodland Attire of the Fox",4368,0,87525,258,315,13965,4366,1,10,110105,10,0
-"Woodland Attire of the Gilneas Fox",4369,0,87526,258,315,14131,4366,1,10,110105,10,0
+"Attire of the Swift Fox",4368,0,87525,258,315,13965,4366,1,10,110105,10,0
+"Attire of the Gilneas Fox",4369,0,87526,258,315,14131,4366,1,10,110105,10,0
 "Stormstout Collection",4370,0,87671,258,328,13968,0,1,10,110105,10,0
 "Undermine Weaponry",4371,0,88773,259,0,14174,0,1,10,110100,5460,0
 "Stormstout Sha-Warped Collection",4372,0,88806,258,328,13966,0,1,10,110105,10,0
@@ -4239,7 +4262,6 @@ Moonspirit,4946,1024,0,450,0,0,0,1,10,110205,350,0
 "Avatar of Ursol",4952,1024,0,450,0,0,0,1,10,110205,350,0
 "Fallen to Nightmare",4953,1024,0,450,0,0,0,1,10,110205,350,0
 Stonepaw,4954,1024,0,450,0,0,0,1,10,110205,350,0
-G'Hanir,4955,1024,0,450,0,0,0,1,10,110205,350,0
 "Warden's Crown",4956,1024,0,450,0,0,0,1,10,110205,350,0
 "Crystalline Awakening",4957,1024,0,450,0,0,0,1,10,110205,350,0
 "Deadwood Keeper",4958,1024,0,450,0,0,0,1,10,110205,350,0
@@ -4380,6 +4402,7 @@ Earth-Warder,5090,1,0,450,0,0,0,1,10,110205,350,0
 "Deathguard's Gaze",5093,1,0,450,0,0,0,1,10,110205,350,0
 "Arm of the Fallen King",5094,1,0,450,0,0,0,1,10,110205,350,0
 "Regalia of the Trust",5095,0,0,0,341,13591,0,1,10,110200,10,0
+"Lana'thel's Crimson Couture",5096,0,91337,258,0,13965,0,1,10,110205,10,0
 "Hollow Sentinel's Vigil",5097,32,0,512,330,2015,5099,1,10,110200,112002,0
 "Hollow Sentinel's Vigil",5098,32,0,0,330,13145,5099,1,10,110200,112003,0
 "Hollow Sentinel's Vigil",5099,32,0,512,330,13193,0,1,10,110200,112001,0
@@ -4585,6 +4608,7 @@ Taeshalach,5305,0,92886,323,0,0,0,1,6,70300,7000,0
 "Halfhill Farmer's Backpack",5332,0,0,131,0,0,0,1,10,0,10,0
 "Chen Stormstout's Keg",5333,0,0,131,0,0,0,1,10,0,10,0
 "Enmity Hood",5334,0,0,131,0,0,0,1,10,0,10,0
+"Scorching Conqueror",5335,0,93198,258,0,13965,0,1,10,110207,10,0
 "Haranir Militia Wear",5336,24575,0,2,354,13989,0,1,11,120000,1000,154267
 "Sorcerer's Midnight Garb",5337,0,93321,67,0,0,0,1,10,110207,10,0
 "Sorcerer's Azure Garb",5338,0,93322,67,0,0,0,1,10,110207,10,0
@@ -4782,6 +4806,12 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Elder Moss Outfit",5548,4164,93960,256,373,14174,5628,1,11,120000,2000,0
 "Rampant Thorn Armor",5549,35,93961,256,373,14174,5629,1,11,120000,2000,0
 "Harandar Weaponry",5550,0,93962,257,373,14174,0,1,11,120000,2000,0
+"Void Rider's Armor",5551,32767,0,0,274,14369,3864,1,11,120005,10,0
+"Voidrage Armor",5552,32767,0,0,274,14369,3870,1,11,120005,10,0
+"Voidstalker's Armor",5553,32767,0,0,274,14369,3869,1,11,120005,10,0
+"Battlegear of the Void Acolyte",5554,32767,0,0,274,14369,3861,1,11,120005,10,0
+"Battlegear of Voidrath",5555,32767,0,0,274,14369,3872,1,11,120005,10,0
+"Vestments of Voidcendence",5556,32767,0,0,274,14369,3865,1,11,120005,10,0
 "Courtier's Crimson Vestments",5557,0,0,0,376,13965,0,1,11,0,0,0
 "Courtier's Viridian Vestments",5558,0,0,0,376,13968,5557,1,11,0,130,0
 "Courtier's Azure Vestments",5559,0,0,0,376,13967,5557,1,11,0,130,0
@@ -4866,14 +4896,22 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Garb of the Hara'ti Seer",5648,0,0,1,384,14122,5650,1,11,120000,1000,0
 "Garb of the Hara'ti Sage",5649,0,0,1,384,13967,5650,1,11,120000,1000,0
 "Garb of the Hara'ti Elder",5650,0,0,1,384,14097,0,1,11,120000,1000,0
-"Scorching Conqueror",5335,0,93198,258,0,13965,0,1,10,110207,10,0
-"Lana'thel's Crimson Couture",5096,0,91337,258,0,13965,0,1,10,110205,10,0
-"Enduring Stormrage Armor",3902,1024,0,1,274,14172,3870,1,10,110005,10,0
-"Enduring Bloodfang Armor",3903,8,0,1,274,14172,3867,1,10,110005,10,0
-"Dragonstalker's Enduring Armor",3904,4,0,1,274,14172,3869,1,10,110005,10,0
-"Enduring Nemesis Raiment",3905,256,0,1,274,14172,3873,1,10,110005,10,0
-"Enduring Judgment Armor",3906,2,0,1,274,14172,3871,1,10,110005,10,0
-"Enduring Battlegear of Wrath",3907,1,0,1,274,14172,3872,1,10,110005,10,0
-"Enduring Netherwind Regalia",3908,128,0,1,274,14172,3868,1,10,110005,10,0
-"Netherwalker's Enduring Armor",3909,2048,0,1,274,14172,3863,1,10,110005,10,0
-"Earth-Warder's Enduring Armor",3910,4096,0,1,274,14172,3862,1,10,110005,10,0
+"Gilneas Loyalist Streetwear",5653,0,95149,258,386,14131,0,1,11,120005,10,0
+"Emberstone Loyalist Streetware",5654,0,95150,258,386,13968,5653,1,11,120005,10,0
+"Pyrewood Rebel Streetwear",5655,0,95151,258,386,14130,5653,1,11,120005,10,0
+"Ambermill Rebel Streetware",5656,0,95152,258,386,14015,5653,1,11,120005,10,0
+"Blue Sunwalker Guard",5657,0,95255,258,387,13967,0,1,11,120005,10,0
+"Duskrunner's Painted Battle Garb",5658,0,95274,258,387,14123,5657,1,11,120005,10,0
+"Sunbringer's Painted Battle Garb",5659,0,95280,258,387,14130,5657,1,11,120005,10,0
+"Dawnchaser's Painted Battle Garb",5660,0,95282,258,387,14120,5657,1,11,120005,10,0
+"Blue Sunwalker Totem",5661,0,95345,259,0,13967,0,1,11,120005,10,0
+"Dark Sunwalker Totem",5662,0,95346,259,0,14123,0,1,11,120005,10,0
+"Gold Sunwalker Totem",5663,0,95347,259,0,14130,0,1,11,120005,10,0
+"White Sunwalker Totem",5664,0,95348,259,0,14120,0,1,11,120005,10,0
+"Arsenal: Drakebreaker's Weapons",5665,0,0,273,0,0,0,1,9,100000,4150,0
+"Arsenal: Hellbloom Weapons",5666,0,0,273,0,0,0,1,9,100200,4150,0
+"Pink Candlelight Kobold Romper",5405,0,93760,258,369,14151,0,1,11,120000,1000,0
+"Blue Candlelight Kobold Romper",5406,0,93761,258,369,13967,5405,1,11,120000,1000,0
+"Brown Candlelight Kobold Romper",5407,0,93762,258,369,14125,5405,1,11,120000,1000,0
+"Tan Candlelight Kobold Romper",5408,0,93763,258,369,14410,5405,1,11,120000,1000,0
+"Silversun Compact Regalia",5651,0,95044,257,385,13590,0,1,11,120000,10,0

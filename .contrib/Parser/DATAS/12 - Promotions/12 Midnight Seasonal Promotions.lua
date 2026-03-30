@@ -72,32 +72,32 @@ root(ROOTS.Promotions, {
 					-- 3rd Price
 					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
 					cnONLY(i(251542)),	-- Azure Drakefire
-					cnONLY(i(256141)), -- Fortune's Waving Cat (TOY!)
-					cnONLY(i(253244)), -- Lunar Celebrants Aquarium
-					cnONLY(i(253257)), -- Lunar Celebrants Privacy Screen
-					cnONLY(i(253296)), -- Lunar Celebrants Tea Set
-					cnONLY(i(269743)), -- Landro's Golden Loot Box (2nd Price as well)
+					cnONLY(i(256141)),	-- Fortune's Waving Cat (TOY!)
+					cnONLY(i(253244)),	-- Lunar Celebrants Aquarium
+					cnONLY(i(253257)),	-- Lunar Celebrants Privacy Screen
+					cnONLY(i(253296)),	-- Lunar Celebrants Tea Set
+					cnONLY(i(269743)),	-- Landro's Golden Loot Box (2nd Price as well)
 					-- 2nd Price
-					cnONLY(i(258840)), -- Gilded Fountain (TOY!)
+					cnONLY(i(258840)),	-- Gilded Fountain (TOY!)
 					cnONLY(i(253402)),	-- Scorching Polearm
-				--	cnONLY(i(269743)), -- Landro's Golden Loot Box
+				--	cnONLY(i(269743)),	-- Landro's Golden Loot Box
 					-- 1st Price
 					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
 					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
 					--[[
 				--	add cnONLY(i()),	-- Azure Dragon Soaring Flame
-					cnONLY(i(258136)), -- Azure Thunder Coil Pillar (TOY!) 	MAYBE OTHER BOX
+					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!) 	MAYBE OTHER BOX
 				--	add cnONLY(i()),	-- Blazing Fire Sandbox Horse
 					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
-					cnONLY(i(253254)), -- Lunar Celebrants Cradle
-					cnONLY(i(253255)), -- Lunar Celebrants Wide Pillow Roll
-					cnONLY(i(253256)), -- Lunar Celebrants Pillow Roll
-					cnONLY(i(253290)), -- Lunar Celebrants Ornate Vanity
-					cnONLY(i(253291)), -- Lunar Celebrants Compact
-					cnONLY(i(253292)), -- Lunar Celebrants Bamboo Canister
-					cnONLY(i(253293)), -- Lunar Celebrants Tea Tray
-					cnONLY(i(253294)), -- Lunar Celebrants Teacup
-					cnONLY(i(253295)), -- Lunar Celebrants Teapot--]]
+					cnONLY(i(253254)),	-- Lunar Celebrants Cradle
+					cnONLY(i(253255)),	-- Lunar Celebrants Wide Pillow Roll
+					cnONLY(i(253256)),	-- Lunar Celebrants Pillow Roll
+					cnONLY(i(253290)),	-- Lunar Celebrants Ornate Vanity
+					cnONLY(i(253291)),	-- Lunar Celebrants Compact
+					cnONLY(i(253292)),	-- Lunar Celebrants Bamboo Canister
+					cnONLY(i(253293)),	-- Lunar Celebrants Tea Tray
+					cnONLY(i(253294)),	-- Lunar Celebrants Teacup
+					cnONLY(i(253295)),	-- Lunar Celebrants Teapot--]]
 				},
 			})),
 			cnONLY(i(269743, {	-- Landro's Golden Loot Box
@@ -111,7 +111,7 @@ root(ROOTS.Promotions, {
 					cnONLY(i(251542)),	-- Azure Drakefire
 					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!) (BOE)
 					cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!) (BOE)
-					cnONLY(i(254736)), -- Stormgilded Celestial (MOUNT!) (BOE)
+					cnONLY(i(254736)),	-- Stormgilded Celestial (MOUNT!) (BOE)
 					cnONLY(i(255973)),	-- Sandbox Horse
 					-- Old Loot
 					cnONLY(i(46779)),	-- Path of Cenarius
@@ -135,15 +135,15 @@ root(ROOTS.Promotions, {
 			}),
 			i(263298, {	-- Cuddly Alliance Blue Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66562" },
 			}),
 			i(263299, {	-- Cuddly Horde Red Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66562" },
 			}),
 			i(252194, {	-- Fishmonger May (PET!)
 				["description"] = "Obtained by gifting an eligible creator's channel two Twitch subscriptions between February 26th, 03:00 p.m. & March 26th, 03:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nSpecial Note: If you buy a sub for yourself and gift one more, that will also reward the pet!",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66562" },
 			}),
 			i(260360, {	-- Gummi the Glow Wyrm (PET!)
 				["description"] = "Trolli + Xbox promotional item. Available between March 1st 2026 - September 30th 2026 by purchasing Trolli Gummi Pop products in any retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Sometime later you should receive a code to your email to redeem on Battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
@@ -151,12 +151,36 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}),
 			-- Season 1
+			i(246917, {	-- Thunder-ridged Elekk (MOUNT!)
+				["description"] = "Available from the pringleswow.de promotion in a limited quantity to the first 3000 players who scanned a QR code found around cities in Germany.",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_LAUNCH },
+			}),
+			i(265545, {	-- Cuddly Void Grrgle (DECOR!)
+				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between March 26th, 3:00 p.m. & April 23rd, 3:00 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed April 23rd, 2026
+			}),
+			i(264283, {	-- Backboard and Hoop Playset (DECOR!)
+				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Horde Board' at craftyourworldpromo.com to receive a code to the email you provided.",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed 6 April 2026 at 11:59pm (BST)
+			}),
+			i(264282, {	-- Bluebird's Golden Cage (DECOR!)
+				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Azeroth Inspiration' at craftyourworldpromo.com to receive a code to the email you provided.",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed 6 April 2026 at 11:59pm (BST)
+			}),
+			i(264281, {	-- Preserved Gift of Gilneas (DECOR!)
+				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Kalimdor Collage' at craftyourworldpromo.com to receive a code to the email you provided.",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.99999" },	-- Removed 6 April 2026 at 11:59pm (BST)
+			}),
+			i(262660, {	-- Egg Farmer's Backpack (COSMETIC!)
+				["description"] = "Available in a limited quantity from ign.com/rewards/claim-a-code-to-get-world-of-warcraft-in-game-content, you'll receive a code to redeem on Battle.net.",
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
+			}),
 
 			-- Season 2
 
 			-- Season 3
 
-		--	i(500001, {	-- The PVE/PVP Banner temporary item -- TEMPLATE
+		--	i(500001, {	-- The PVE/PVP Banner temporary item	-- TEMPLATE
 		--		["sourceID"] = 500001,
 				-- #if BEFORE 11.2.5
 		--	PVE	["description"] = "Mythic Dungeon International: TWW Season 3\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive an exclusive Toy to use in-game!\nSign-ups close 30th September 2025 3PM PDT and The Time Trials are on 1st October 1PM PDT - 6th October (US) 3PM PDT. For more details & requirements check out: Raider.io/tournaments",

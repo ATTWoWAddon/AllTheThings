@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						}),
 					}),
 					n(REWARDS, {
-						i(228210),	-- Firelight Ruby Chip -- this might not belong here idk
+						i(228210),	-- Firelight Ruby Chip	-- this might not belong here idk
 					}),
 					n(TREASURES, {
 						i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)

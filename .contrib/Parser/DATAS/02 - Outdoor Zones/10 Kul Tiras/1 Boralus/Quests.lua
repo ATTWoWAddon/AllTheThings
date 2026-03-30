@@ -714,7 +714,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(57324, {	-- Sail With the Tide
-				-- ["sourceQuests"] = { 57126 },	-- ...And Following Seas -- maybe this one? but it was back in 8.2.5
+				-- ["sourceQuests"] = { 57126 },	-- ...And Following Seas	-- maybe this one? but it was back in 8.2.5
 				["provider"] = { "n", 150633 },	-- Lady Jaina Proudmoore
 				["coord"] = { 69.34, 27.15, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -743,7 +743,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 65.2, 68.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(56043, {	-- Send the Fleet -- also triggered 56881
+			q(56043, {	-- Send the Fleet	-- also triggered 56881
 				["sourceQuests"] = { 56031 },	-- The Wolf's Offensive
 				["provider"] = { "n", 153932 },	-- Genn Greymane
 				["coord"] = { 70.6, 27.2, BORALUS },

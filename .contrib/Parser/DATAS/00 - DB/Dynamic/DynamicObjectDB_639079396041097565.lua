@@ -174,6 +174,16 @@
 		model = 6935639,
 		text = {
 			en = "Forgotten Ink and Quill",
+			de = "Vergessene Tinte und Feder",
+			es = "Tinta y pluma olvidadas",
+			mx = "Tinta y pluma olvidadas",
+			fr = "Encre et plume oubliées",
+			it = "Penna e Inchiostro Dimenticati",
+			ko = "잊힌 잉크와 깃펜",
+			pt = "Tinta e Cálamo Esquecidos",
+			ru = "Забытые перо и чернила",
+			cn = "被遗忘的墨水和羽毛笔",
+			tw = "遺忘的羽毛筆與墨水",
 		},
 	},
 })

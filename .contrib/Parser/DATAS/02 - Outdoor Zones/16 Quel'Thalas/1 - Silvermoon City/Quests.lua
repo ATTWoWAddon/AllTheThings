@@ -11,15 +11,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWeekly"] = true,	-- Presumed
 				["groups"] = {
 					i(265995, {	-- Quel'Thalas Adventurer's Cache
-						["sym"] = { -- [Quel'Thalas Zone Rewards content]
-							{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-							{"where","headerID",ZONE_REWARDS},{"pop"},
-							{"where","headerID",ARMOR},{"finalize"},
-
-							{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-							{"where","headerID",ZONE_REWARDS},{"pop"},
-							{"where","headerID",WEAPONS},
-						},
+						["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 					}),
 				},
 			}),
@@ -44,38 +36,38 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93687, {	-- Taste True Power
 				--["sourceQuests"] = { ??? },	-- ??
 				["provider"] = { "n", 243229 },	-- Eldara Dawnrunner
-				["timeline"] = { ADDED_12_0_X_SEASONSTART },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART },
 				["coord"] = { 40.2, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			-- Crests
 			q(94430, {	-- Adventuring Gear
 				--["sourceQuests"] = { ??? },	-- ??
 				["provider"] = { "n", 239676 },	-- Vaskarn
-				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			q(94417, {	-- Crests of the Dawn
 				["sourceQuests"] = { 94430 },	-- Adventuring Gear
 				["provider"] = { "n", 239676 },	-- Vaskarn
-				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			q(94432, {	-- Veteran Equipment
 				["sourceQuests"] = { 94417 },	-- Crests of the Dawn
 				["provider"] = { "n", 239676 },	-- Vaskarn
-				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			q(94418, {	-- Crest Transmutation
 				["sourceQuests"] = { 94432 },	-- Veteran Equipment
 				["provider"] = { "n", 239676 },	-- Vaskarn
-				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			-- Sparks
 			q(93942, {	-- Spark of Radiance
 				["provider"] = { "i", 232875 },	-- Spark of Radiance
-				["timeline"] = { ADDED_12_0_X_SEASONSTART },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART },
 				["coord"] = { 40.2, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			--
@@ -97,35 +89,39 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 45.4, 70.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["lockCriteria"] = { 1, "lvl", 90 },
 			}),
-			-- PVP 4 part quest
-			q(94835, {	-- Early Morning Training
-				["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreave
-				["coord"] = { 48.9, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+		}),
+		-- PVP 4 part quest
+		n(QUESTS, sharedData({
+			["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreave
+			["coord"] = { 48.9, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+		},{
+			q(94835, {	-- Early Morning Training: Week 1 of 4
 				["groups"] = { i(267076) },	-- Novice Combatant's Medallion
 			}),
-		}),
+			q(94836, {	-- Late Night Training: Week 2 of 4
+				["sourceQuests"] = { 94835 },	-- Early Morning Training: Week 1 of 4
+			}),
+			q(94837, {	-- Midnight Training: Week 3 of 4
+				["sourceQuests"] = { 94836 },	-- Late Night Training: Week 2 of 4
+			}),
+			q(94838, {	-- Final Training: Week 4 of 4
+				["sourceQuests"] = { 94837 },	-- Midnight: Week 3 of 4
+			}),
+		})),
 		-- Dungeons
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 256210 },	-- Halduron Brightwing
 			["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 		}, {
-			q(93752),	-- Murder Row
-			q(93758),	-- Nexus-Point Xenas
-			q(93757),	-- Voidscar Arena
-			q(93751),	-- Windrunner Spire
+			q(93755),	-- Den of Nalorakk
 			q(93753),	-- Magister's Terrace
 			q(93754),	-- Maisara Caverns
-		})),
-		-- Housing
-		n(QUESTS, sharedData({
-			["provider"] = { "n", 260957 },	-- Vaeli
-			["coord"] = { 49.5, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-			["isWeekly"] = true,
-		}, {
-			q(95413),	-- Community Engagement
-			q(95416),	-- Going Postal
-			q(95440),	-- Housewarming
+			q(93752),	-- Murder Row
+			q(93758),	-- Nexus-Point Xenas
+			q(93756),	-- The Blinding Vale
+			q(93757),	-- Voidscar Arena
+			q(93751),	-- Windrunner Spire
 		})),
 		-- Unity Against the Void (unsure if worth separate file)
 		n(QUESTS, sharedData({
@@ -134,28 +130,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["isWeekly"] = true,
 			["groups"] = {
 				i(268490, {	-- Apex Cache (Pre-Season)
-					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_X_SEASONSTART },
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",ARMOR},{"finalize"},
-
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",WEAPONS},
-					},
+					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 				i(254677, {	-- Apex Cache (Season 1)
-					["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",ARMOR},{"finalize"},
-
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",WEAPONS},
-					},
+					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 			},
 		}, {
@@ -183,10 +163,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(93067),	-- "Stay a while and listen" objectID 551501 (In Memoriam) @ 35.2, 70.3
 				q(93275, name(HEADERS.Item,232875,{["isWeekly"]=true})),	-- Weekly lockout for Spark of Radiance
 				q(93789),	-- Apex Cache (season 1) was opened / bonus roll for something?
-				q(94419, {["timeline"]={ADDED_12_0_X_SEASONSTART,REMOVED_12_1_0}}),	-- player recieve 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
+				q(94419, {["timeline"]={ADDED_12_0_1_SEASONSTART,REMOVED_12_1_0}}),	-- player receive 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 				q(94410),	-- After turning in Unity Against the Void? Spark lockout?
 				--
-				q(94836),	-- Late Night Training: Week 2 of 4, after turn in questID 94835 (Early Morning Training (1st week))
 			}),
 		}),
 	}),

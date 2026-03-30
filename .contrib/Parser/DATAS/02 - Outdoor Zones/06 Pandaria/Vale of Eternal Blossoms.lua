@@ -491,7 +491,7 @@ root(ROOTS.Zones, {
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",
 						["timeline"] = { ADDED_5_3_0 },
 						["groups"] = {
-							i(98546),  -- Bulging Heroic Cache of Treasures
+							i(98546), 	-- Bulging Heroic Cache of Treasures
 						},
 					}),
 					-- Wouter NOTE: it's been confirmed by Blizzard that Into the Vale quests will NOT be added to MoP Classic (not deemed important enough to fix)

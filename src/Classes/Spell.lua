@@ -15,9 +15,13 @@ local IsQuestFlaggedCompleted, SearchForField
 local GetSpellLink = app.WOWAPI.GetSpellLink;
 
 -- TODO: some of these deprecated in 11.2, move to WOWAPI
-local IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
 ---@diagnostic disable-next-line: deprecated
-	= app.WOWAPI.IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo, app.WOWAPI.IsSpellKnownOrOverridesKnown
+local GetSpellTabInfo = GetSpellTabInfo
+
+-- WoW API
+local GetNumSpellTabs = app.WOWAPI.GetNumSpellTabs;
+local IsSpellKnown = app.WOWAPI.IsSpellKnown;
+local IsSpellKnownOrOverridesKnown = app.WOWAPI.IsSpellKnownOrOverridesKnown;
 
 local SpellQuestLinks = {
 	-- double check added Mount spells in Mount.lua [PerCharacterMountSpells/AccountWideMountSpells]
@@ -43,13 +47,11 @@ local SpellQuestOverrides = setmetatable({}, { __index = function(t,key)
 end})
 -- Consolidates some spell checking
 ---@param spellID number
----@param rank? number
----@param ignoreHigherRanks? boolean
 ---@return boolean isKnown
 local IsSpellKnownHelper
 -- In 11.2 some spell checking was consolidated
 if app.GameBuildVersion >= 110200 then
-	IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
+	IsSpellKnownHelper = function(spellID)
 		if IsSpellKnown(spellID)
 			or IsSpellKnown(spellID, 1)
 			or IsSpellKnownOrOverridesKnown(spellID, 0, true)
@@ -59,8 +61,8 @@ if app.GameBuildVersion >= 110200 then
 		end
 	end
 else
-	local IsPlayerSpell = app.WOWAPI.IsPlayerSpell
-	IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
+	local IsPlayerSpell = IsPlayerSpell;
+	IsSpellKnownHelper = function(spellID)
 		if IsPlayerSpell(spellID)
 			or IsSpellKnown(spellID)
 			or IsSpellKnown(spellID, 1)
@@ -72,15 +74,15 @@ else
 	end
 end
 app.IsSpellKnownHelper = IsSpellKnownHelper;
-app.IsSpellKnown = IsSpellKnownHelper;
 
 local SpellIDToSpellName = {};
-local SpellNameToSpellID;
+local SpellNameToSpellID = L.SPELL_NAME_TO_SPELL_ID;
+local RankedSpellNames = setmetatable({}, app.MetaTable.AutoTable);
 
 -- WoW API Cache
 local _GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
-local GetSpellName = function(spellID)
+local function GetSpellName(spellID)
 	local spellName = SpellIDToSpellName[spellID];
 	if spellName then return spellName; end
 	spellName = _GetSpellName(spellID);
@@ -91,43 +93,8 @@ local GetSpellName = function(spellID)
 	end
 end
 app.GetSpellName = GetSpellName;
-SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
-	__index = function(t, key)
-		local cache = app.GetFieldContainer("spellID");
-		for spellID,g in pairs(cache) do
-			GetSpellName(spellID);
-		end
-		for _,spellID in pairs(app.SkillDB.SkillToSpell) do
-			GetSpellName(spellID);
-		end
-		for specID,spellID in pairs(app.SkillDB.SpecializationSpells) do
-			GetSpellName(spellID);
-		end
-		local numSpellTabs, offset, lastSpellName, currentSpellRank = GetNumSpellTabs(), select(4, GetSpellTabInfo(1)), "", 1;
-		for spellTabIndex=2,numSpellTabs do
-			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
-			for spellIndex=1,numSpells do
-				local spellName, _, _, _, _, _, spellID = GetSpellInfo(offset + spellIndex, BOOKTYPE_SPELL);
-				if spellName then
-					if lastSpellName == spellName then
-						currentSpellRank = currentSpellRank + 1;
-					else
-						lastSpellName = spellName;
-						currentSpellRank = 1;
-					end
-					---@diagnostic disable-next-line: redundant-parameter
-					GetSpellName(spellID, currentSpellRank);
-					SpellNameToSpellID[spellName] = spellID;
-				-- else
-				-- 	print("GetSpellName:Failed",offset + spellIndex);
-				end
-			end
-			offset = offset + numSpells;
-		end
-		return rawget(t, key);
-	end
-});
 app.SpellNameToSpellID = SpellNameToSpellID;
+
 -- Represents a small lookup of a select set of Profession/Skill-related icons
 local SkillIcons = setmetatable({
 	[2720] = 2915722,	-- Junkyard Tinkering
@@ -194,9 +161,8 @@ do
 			return cache.GetCachedField(t, "icon", CacheInfo) or 136243;	-- Trade_engineering
 		end,
 		saved = function(t)
-			local id = t[KEY];
 			-- character known
-			if app.IsCached(CACHE, id) then return true; end
+			if app.IsCached(CACHE, t[KEY]) then return true; end
 		end,
 		collectible = app.ReturnFalse,
 		collected = function(t)
@@ -214,39 +180,43 @@ do
 		ImportFields = { "name", "link", "icon", "specs", "tsm", "costCollectibles", "AsyncRefreshFunc" },
 	},
 	function(t) return t.itemID end)
-
-	local CheckRecipeLearned
-	if C_TradeSkillUI then
-		-- local C_TradeSkillUI = C_TradeSkillUI
-		CheckRecipeLearned = function(recipeID)
-			-- TODO: currently this bricks the game instantly. thanks blizz
-			-- local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeID)
-			-- app.PrintTable(spellRecipeInfo)
-			-- recipe is learned, so cache that it's learned regardless of being craftable
-			-- if app.TEST and spellRecipeInfo and spellRecipeInfo.learned then
-			-- 	-- Shadowlands recipes are weird...
-			-- 	-- local rank = spellRecipeInfo.unlockedRecipeLevel or 0
-			-- 	-- if rank > 0 then
-			-- 	-- 	-- when the recipeID specifically is available, it will show as available for ALL possible ranks
-			-- 	-- 	-- so we can check if the next known rank is also considered available for this recipeID
-			-- 	-- 	spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeID, rank + 1)
-			-- 	-- 	app.PrintDebug("NextRankCheck",recipeID,rank + 1, spellRecipeInfo.learned)
-			-- 	-- end
-			-- 	return spellRecipeInfo.learned
-			-- end
+	
+	-- Spell Rank Handling
+	local GetSpellRank = GetSpellRank;
+	local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+	local function CacheRankForSpell(spellID, rank)
+		if rank then
+			local spellName = SpellIDToSpellName[spellID] or _GetSpellName(spellID);
+			if not IsRetrieving(spellName) then
+				if not SpellNameToSpellID[spellName] then
+					SpellNameToSpellID[spellName] = spellID;
+					if not SpellIDToSpellName[spellID] then
+						SpellIDToSpellName[spellID] = spellName;
+					end
+				end
+				local rankedSpell = RankedSpellNames[spellName];
+				rankedSpell[rank] = spellID;
+				if (rankedSpell.max or 0) < rank then
+					rankedSpell.max = rank;
+				end
+			end
+		else
+			GetSpellName(spellID);
 		end
-	else
-		CheckRecipeLearned = app.EmptyFunction
 	end
-
 	app.AddEventHandler("OnRefreshCollections", function()
 		local state
 		local saved, none = {}, {}
 		local IsAccountCached = app.IsAccountCached
-		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
+		for id,g in pairs(app.GetRawFieldContainer(KEY)) do
+			-- Cache Spell Names
+			for i,spell in ipairs(g) do
+				CacheRankForSpell(id, spell.rank);
+			end
+			
 			-- Don't cache other cached spells within Spells, they're handled separately
 			if not IsAccountCached("Mounts", id) then
-				state = IsSpellKnownHelper(id) or CheckRecipeLearned(id)
+				state = IsSpellKnownHelper(id)
 				if state ~= nil then
 					saved[id] = true
 				else
@@ -259,6 +229,59 @@ do
 				none[id] = true
 			end
 		end
+		for _,spellID in pairs(app.SkillDB.SkillToSpell) do
+			GetSpellName(spellID);
+		end
+		for specID,spellID in pairs(app.SkillDB.SpecializationSpells) do
+			GetSpellName(spellID);
+		end
+		if GetSpellTabInfo then
+			local lastSpellName, currentSpellRank, lastSpellRank = "", 1, 1;
+			for spellTabIndex=1,GetNumSpellTabs() do
+				local offset, numSlots = select(3, GetSpellTabInfo(spellTabIndex));
+				for spellIndex=offset+1,offset+numSlots do
+					local spellName, _, _, _, _, _, spellID = GetSpellInfo(spellIndex, BOOKTYPE_SPELL);
+					if spellName then
+						saved[spellID] = true
+						currentSpellRank = GetSpellRank(spellID);
+						if not currentSpellRank then
+							if lastSpellName == spellName then
+								currentSpellRank = lastSpellRank + 1;
+							else
+								lastSpellName = spellName;
+								currentSpellRank = 1;
+							end
+						end
+						SpellNameToSpellID[spellName] = spellID;
+						local rankedSpell = RankedSpellNames[spellName];
+						rankedSpell[currentSpellRank] = spellID;
+						if (rankedSpell.max or 0) < currentSpellRank then
+							rankedSpell.max = currentSpellRank;
+						end
+					end
+				end
+			end
+		end
+		
+		-- If we know a higher rank of the spell, then flag all lower ranks of the spell as collected.
+		for spellName,rankedSpell in pairs(RankedSpellNames) do
+			--print("Max Rank", spellName, rankedSpell.max);
+			for i=rankedSpell.max,1,-1 do
+				local id = rankedSpell[i];
+				if id then
+					if saved[id] then
+						--print(" ", i, id, true);
+						for j=i-1,1,-1 do
+							id = rankedSpell[j];
+							if id then saved[id] = true end
+							--print(" ", j, id, true);
+						end
+						break;
+					end
+				end
+			end
+		end
+		
 		-- Character Cache
 		app.SetBatchCached(CACHE, saved, 1)
 		app.SetBatchCached(CACHE, none)

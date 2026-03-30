@@ -2609,8 +2609,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,	-- Can be repeated
 									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236046), -- Cryptstalker Headpiece
-										i(236054), -- Cryptstalker Visor
+										i(236046),	-- Cryptstalker Headpiece
+										i(236054),	-- Cryptstalker Visor
 									},
 								}),
 
@@ -2627,8 +2627,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,	-- Can be repeated
 									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236044), -- Cryptstalker Spaulders
-										i(236052), -- Cryptstalker Pauldrons
+										i(236044),	-- Cryptstalker Spaulders
+										i(236052),	-- Cryptstalker Pauldrons
 									},
 								}),
 
@@ -2645,8 +2645,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,	-- Can be repeated
 									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236043), -- Cryptstalker Tunic
-										i(236058), -- Cryptstalker Breastplate
+										i(236043),	-- Cryptstalker Tunic
+										i(236058),	-- Cryptstalker Breastplate
 									},
 								}),
 
@@ -2663,8 +2663,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,	-- Can be repeated
 									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236042), -- Cryptstalker Wristguards
-										i(236050), -- Cryptstalker Vambraces
+										i(236042),	-- Cryptstalker Wristguards
+										i(236050),	-- Cryptstalker Vambraces
 									},
 								}),
 
@@ -2681,8 +2681,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,	-- Can be repeated
 									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236047), -- Cryptstalker Handguards
-										i(236055), -- Cryptstalker Gauntlets
+										i(236047),	-- Cryptstalker Handguards
+										i(236055),	-- Cryptstalker Gauntlets
 									},
 								}),
 
@@ -2699,8 +2699,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,	-- Can be repeated
 									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236048), -- Cryptstalker Girdle
-										i(236051), -- Cryptstalker Belt
+										i(236048),	-- Cryptstalker Girdle
+										i(236051),	-- Cryptstalker Belt
 									},
 								}),
 
@@ -2717,8 +2717,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,	-- Can be repeated
 									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236045), -- Cryptstalker Legguards
-										i(236053), -- Cryptstalker Leggings
+										i(236045),	-- Cryptstalker Legguards
+										i(236053),	-- Cryptstalker Leggings
 									},
 								}),
 
@@ -2735,159 +2735,159 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,	-- Can be repeated
 									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236049), -- Cryptstalker Boots
-										i(236057), -- Cryptstalker Greaves
+										i(236049),	-- Cryptstalker Boots
+										i(236057),	-- Cryptstalker Greaves
 									},
 								}),
 							}),
 							cl(ROGUE, {
-								q(9079, {  -- Bonescythe Helmet
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16131, -- Rohan the Assassin
-									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+								q(9079, { 	-- Bonescythe Helmet
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16131,	-- Rohan the Assassin
+									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22353, 1 }, -- Desecrated Helmet
-										{ "i", 22373, 15 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 8 }, -- Cured Rugged Hide
-										{ "i", 20725, 1 }, -- Nexus Crystal
-										{ "g", 750000 }, -- 75g
+										{ "i", 22353, 1 },	-- Desecrated Helmet
+										{ "i", 22373, 15 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 8 },	-- Cured Rugged Hide
+										{ "i", 20725, 1 },	-- Nexus Crystal
+										{ "g", 750000 },	-- 75g
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236025), -- Bonescythe Helmet
-										i(236037), -- Bonescythe Mask
+										i(236025),	-- Bonescythe Helmet
+										i(236037),	-- Bonescythe Mask
 									},
 								}),
 
-								q(9080, {  -- Bonescythe Pauldrons
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16131, -- Rohan the Assassin
-									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+								q(9080, { 	-- Bonescythe Pauldrons
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16131,	-- Rohan the Assassin
+									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22354, 1 }, -- Desecrated Pauldrons
-										{ "i", 22373, 12 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 5 }, -- Cured Rugged Hide
-										{ "i", 20725, 1 }, -- Nexus Crystal
-										{ "g", 500000 }, -- 50g
+										{ "i", 22354, 1 },	-- Desecrated Pauldrons
+										{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 5 },	-- Cured Rugged Hide
+										{ "i", 20725, 1 },	-- Nexus Crystal
+										{ "g", 500000 },	-- 50g
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236026), -- Bonescythe Pauldrons
-										i(236035), -- Bonescythe Mantle
+										i(236026),	-- Bonescythe Pauldrons
+										i(236035),	-- Bonescythe Mantle
 									},
 								}),
 
-								q(9077, {  -- Bonescythe Breastplate
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16131, -- Rohan the Assassin
-									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+								q(9077, { 	-- Bonescythe Breastplate
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16131,	-- Rohan the Assassin
+									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22349, 1 }, -- Desecrated Breastplate
-										{ "i", 22373, 25 }, -- Wartorn Leather Scrap
-										{ "i", 12360, 2 }, -- Arcanite Bar
-										{ "i", 15407, 6 }, -- Cured Rugged Hide
+										{ "i", 22349, 1 },	-- Desecrated Breastplate
+										{ "i", 22373, 25 },	-- Wartorn Leather Scrap
+										{ "i", 12360, 2 },	-- Arcanite Bar
+										{ "i", 15407, 6 },	-- Cured Rugged Hide
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236023), -- Bonescythe Breastplate
-										i(236039), -- Bonescythe Chestguard
+										i(236023),	-- Bonescythe Breastplate
+										i(236039),	-- Bonescythe Chestguard
 									},
 								}),
 
-								q(9084, {  -- Bonescythe Bracers
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16131, -- Rohan the Assassin
-									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+								q(9084, { 	-- Bonescythe Bracers
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16131,	-- Rohan the Assassin
+									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22355, 1 }, -- Desecrated Bracers
-										{ "i", 22373, 6 }, -- Wartorn Leather Scrap
-										{ "i", 12360, 1 }, -- Arcanite Bar
-										{ "i", 15407, 2 }, -- Cured Rugged Hide
-										{ "g", 100000 }, -- 10g
+										{ "i", 22355, 1 },	-- Desecrated Bracers
+										{ "i", 22373, 6 },	-- Wartorn Leather Scrap
+										{ "i", 12360, 1 },	-- Arcanite Bar
+										{ "i", 15407, 2 },	-- Cured Rugged Hide
+										{ "g", 100000 },	-- 10g
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236030), -- Bonescythe Bracers
-										i(236040), -- Bonescythe Wristguards
+										i(236030),	-- Bonescythe Bracers
+										i(236040),	-- Bonescythe Wristguards
 									},
 								}),
 
-								q(9082, {  -- Bonescythe Gauntlets
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16131, -- Rohan the Assassin
-									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+								q(9082, { 	-- Bonescythe Gauntlets
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16131,	-- Rohan the Assassin
+									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22357, 1 }, -- Desecrated Gauntlets
-										{ "i", 22373, 8 }, -- Wartorn Leather Scrap
-										{ "i", 12360, 1 }, -- Arcanite Bar
-										{ "i", 15407, 5 }, -- Cured Rugged Hide
+										{ "i", 22357, 1 },	-- Desecrated Gauntlets
+										{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+										{ "i", 12360, 1 },	-- Arcanite Bar
+										{ "i", 15407, 5 },	-- Cured Rugged Hide
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236028), -- Bonescythe Gauntlets
-										i(236038), -- Bonescythe Grips
+										i(236028),	-- Bonescythe Gauntlets
+										i(236038),	-- Bonescythe Grips
 									},
 								}),
 
-								q(9083, {  -- Bonescythe Waistguard
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16131, -- Rohan the Assassin
-									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+								q(9083, { 	-- Bonescythe Waistguard
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16131,	-- Rohan the Assassin
+									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22356, 1 }, -- Desecrated Waistguard
-										{ "i", 22373, 8 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 5 }, -- Cured Rugged Hide
-										{ "i", 20725, 1 }, -- Nexus Crystal
-										{ "g", 150000 }, -- 15g
+										{ "i", 22356, 1 },	-- Desecrated Waistguard
+										{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 5 },	-- Cured Rugged Hide
+										{ "i", 20725, 1 },	-- Nexus Crystal
+										{ "g", 150000 },	-- 15g
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236029), -- Bonescythe Waistguard
-										i(236032), -- Bonescythe Belt
+										i(236029),	-- Bonescythe Waistguard
+										i(236032),	-- Bonescythe Belt
 									},
 								}),
 
-								q(9078, {  -- Bonescythe Legplates
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16131, -- Rohan the Assassin
-									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+								q(9078, { 	-- Bonescythe Legplates
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16131,	-- Rohan the Assassin
+									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22352, 1 }, -- Desecrated Legplates
-										{ "i", 22373, 20 }, -- Wartorn Leather Scrap
-										{ "i", 12360, 1 }, -- Arcanite Bar
-										{ "i", 15407, 8 }, -- Cured Rugged Hide
-										{ "g", 1000000 }, -- 100g
+										{ "i", 22352, 1 },	-- Desecrated Legplates
+										{ "i", 22373, 20 },	-- Wartorn Leather Scrap
+										{ "i", 12360, 1 },	-- Arcanite Bar
+										{ "i", 15407, 8 },	-- Cured Rugged Hide
+										{ "g", 1000000 },	-- 100g
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236024), -- Bonescythe Legplates
-										i(236036), -- Bonescythe Leggings
+										i(236024),	-- Bonescythe Legplates
+										i(236036),	-- Bonescythe Leggings
 									},
 								}),
 
-								q(9081, {  -- Bonescythe Sabatons
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16131, -- Rohan the Assassin
-									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+								q(9081, { 	-- Bonescythe Sabatons
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16131,	-- Rohan the Assassin
+									["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22358, 1 }, -- Desecrated Sabatons
-										{ "i", 22373, 12 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 3 }, -- Cured Rugged Hide
-										{ "i", 20725, 2 }, -- Nexus Crystal
-										{ "g", 250000 }, -- 25g
+										{ "i", 22358, 1 },	-- Desecrated Sabatons
+										{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 3 },	-- Cured Rugged Hide
+										{ "i", 20725, 2 },	-- Nexus Crystal
+										{ "g", 250000 },	-- 25g
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236027), -- Bonescythe Sabatons
-										i(236033), -- Bonescythe Treads
+										i(236027),	-- Bonescythe Sabatons
+										i(236033),	-- Bonescythe Treads
 									},
 								}),
 							}),
@@ -2905,8 +2905,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236103), -- Circlet of Faith
-										i(236110), -- Crown of Faith
+										i(236103),	-- Circlet of Faith
+										i(236110),	-- Crown of Faith
 									},
 								}),
 								q(9114, {	-- Shoulderpads of Faith
@@ -2922,8 +2922,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236102), -- Shoulderpads of Faith
-										i(236108), -- Mantle of Faith
+										i(236102),	-- Shoulderpads of Faith
+										i(236108),	-- Mantle of Faith
 									},
 								}),
 								q(9111, {	-- Robe of Faith
@@ -2939,8 +2939,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236097), -- Robe of Faith
-										i(236114), -- Garb of Faith
+										i(236097),	-- Robe of Faith
+										i(236114),	-- Garb of Faith
 									},
 								}),
 								q(9118, {	-- Bindings of Faith
@@ -2956,8 +2956,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236100), -- Bindings of Faith
-										i(236106), -- Wrists of Faith
+										i(236100),	-- Bindings of Faith
+										i(236106),	-- Wrists of Faith
 									},
 								}),
 								q(9116, {	-- Gloves of Faith
@@ -2972,8 +2972,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236104), -- Gloves of Faith
-										i(236111), -- Hands of Faith
+										i(236104),	-- Gloves of Faith
+										i(236111),	-- Hands of Faith
 									},
 								}),
 								q(9117, {	-- Belt of Faith
@@ -2989,8 +2989,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236098), -- Belt of Faith
-										i(236107), -- Girdle of Faith
+										i(236098),	-- Belt of Faith
+										i(236107),	-- Girdle of Faith
 									},
 								}),
 								q(9112, {	-- Leggings of Faith
@@ -3006,8 +3006,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236101), -- Leggings of Faith
-										i(236109), -- Pants of Faith
+										i(236101),	-- Leggings of Faith
+										i(236109),	-- Pants of Faith
 									},
 								}),
 								q(9115, {	-- Sandals of Faith
@@ -3023,8 +3023,8 @@ applyclassicphase(PHASE_SIX,
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236099), -- Sandals of Faith
-										i(236113), -- Boots of Faith
+										i(236099),	-- Sandals of Faith
+										i(236113),	-- Boots of Faith
 									},
 								}),
 							}),
@@ -3186,448 +3186,448 @@ applyclassicphase(PHASE_SIX,
 								q(9097, {	-- Frostfire Circlet
 									["sourceQuest"] = 9033,	-- Echoes of War
 									["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
 										{ "i", 22367, 1 },	-- Desecrated Circlet
 										{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
 										{ "i", 14342, 3 },	-- Mooncloth
 										{ "i", 20725, 3 },	-- Nexus Crystal
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236083), -- Frostfire Circlet
-										i(236091), -- Frostfire Hood
+										i(236083),	-- Frostfire Circlet
+										i(236091),	-- Frostfire Hood
 									},
 								}),
 
 								q(9098, {	-- Frostfire Shoulderpads
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16116, -- Archmage Angela Dosantos <Brotherhood of the Light>
-									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22368, 1 }, -- Desecrated Shoulderpads
-										{ "i", 22376, 12 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 2 }, -- Mooncloth
-										{ "i", 15407, 3 }, -- Cured Rugged Hide
+										{ "i", 22368, 1 },	-- Desecrated Shoulderpads
+										{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 2 },	-- Mooncloth
+										{ "i", 15407, 3 },	-- Cured Rugged Hide
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236084), -- Frostfire Shoulderpads
-										i(236089), -- Frostfire Mantle
+										i(236084),	-- Frostfire Shoulderpads
+										i(236089),	-- Frostfire Mantle
 									},
 								}),
 
 								q(9095, {	-- Frostfire Robe
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16116, -- Archmage Angela Dosantos <Brotherhood of the Light>
-									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22351, 1 }, -- Desecrated Robe
-										{ "i", 22376, 25 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 4 }, -- Mooncloth
-										{ "i", 20725, 2 }, -- Nexus Crystal
+										{ "i", 22351, 1 },	-- Desecrated Robe
+										{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 4 },	-- Mooncloth
+										{ "i", 20725, 2 },	-- Nexus Crystal
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236081), -- Frostfire Robe
-										i(236095), -- Frostfire Garb
+										i(236081),	-- Frostfire Robe
+										i(236095),	-- Frostfire Garb
 									},
 								}),
 
 								q(9102, {	-- Frostfire Bindings
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16116, -- Archmage Angela Dosantos <Brotherhood of the Light>
-									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22369, 1 }, -- Desecrated Bindings
-										{ "i", 22376, 6 }, -- Wartorn Cloth Scrap
-										{ "i", 12363, 1 }, -- Arcane Crystal
-										{ "i", 20725, 1 }, -- Nexus Crystal
+										{ "i", 22369, 1 },	-- Desecrated Bindings
+										{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
+										{ "i", 12363, 1 },	-- Arcane Crystal
+										{ "i", 20725, 1 },	-- Nexus Crystal
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236077), -- Frostfire Bindings
-										i(236087), -- Frostfire Wristwraps
+										i(236077),	-- Frostfire Bindings
+										i(236087),	-- Frostfire Wristwraps
 									},
 								}),
 
 								q(9100, {	-- Frostfire Gloves
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16116, -- Archmage Angela Dosantos <Brotherhood of the Light>
-									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22371, 1 }, -- Desecrated Gloves
-										{ "i", 22376, 8 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 4 }, -- Mooncloth
+										{ "i", 22371, 1 },	-- Desecrated Gloves
+										{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 4 },	-- Mooncloth
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236082), -- Frostfire Gloves
-										i(236092), -- Frostfire Mitts
+										i(236082),	-- Frostfire Gloves
+										i(236092),	-- Frostfire Mitts
 									},
 								}),
 
 								q(9101, {	-- Frostfire Belt
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16116, -- Archmage Angela Dosantos <Brotherhood of the Light>
-									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22370, 1 }, -- Desecrated Belt
-										{ "i", 22376, 8 }, -- Wartorn Cloth Scrap
-										{ "i", 12363, 2 }, -- Arcane Crystal
-										{ "i", 14342, 2 }, -- Mooncloth
+										{ "i", 22370, 1 },	-- Desecrated Belt
+										{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+										{ "i", 12363, 2 },	-- Arcane Crystal
+										{ "i", 14342, 2 },	-- Mooncloth
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236078), -- Frostfire Belt
-										i(236088), -- Frostfire Waistguard
+										i(236078),	-- Frostfire Belt
+										i(236088),	-- Frostfire Waistguard
 									},
 								}),
 
 								q(9096, {	-- Frostfire Leggings
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16116, -- Archmage Angela Dosantos <Brotherhood of the Light>
-									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22366, 1 }, -- Desecrated Leggings
-										{ "i", 22376, 20 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 4 }, -- Mooncloth
-										{ "i", 20725, 2 }, -- Nexus Crystal
+										{ "i", 22366, 1 },	-- Desecrated Leggings
+										{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 4 },	-- Mooncloth
+										{ "i", 20725, 2 },	-- Nexus Crystal
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236079), -- Frostfire Leggings
-										i(236090), -- Frostfire Pants
+										i(236079),	-- Frostfire Leggings
+										i(236090),	-- Frostfire Pants
 									},
 								}),
 
 								q(9099, {	-- Frostfire Sandals
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16116, -- Archmage Angela Dosantos <Brotherhood of the Light>
-									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+									["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22372, 1 }, -- Desecrated Sandals
-										{ "i", 22376, 12 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 2 }, -- Mooncloth
-										{ "i", 15407, 3 }, -- Cured Rugged Hide
+										{ "i", 22372, 1 },	-- Desecrated Sandals
+										{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 2 },	-- Mooncloth
+										{ "i", 15407, 3 },	-- Cured Rugged Hide
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236080), -- Frostfire Sandals
-										i(236094), -- Frostfire Boots
+										i(236080),	-- Frostfire Sandals
+										i(236094),	-- Frostfire Boots
 									},
 								}),
 							}),
 							cl(WARLOCK, {
 								q(9105, {	-- Plagueheart Circlet
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16133, -- Mataus the Wrathcaster <The Scarlet Crusade>
-									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22367, 1 }, -- Desecrated Circlet
-										{ "i", 22376, 15 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 3 }, -- Mooncloth
-										{ "i", 14344, 3 }, -- Large Brilliant Shard
+										{ "i", 22367, 1 },	-- Desecrated Circlet
+										{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 3 },	-- Mooncloth
+										{ "i", 14344, 3 },	-- Large Brilliant Shard
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236064), -- Plagueheart Circlet
-										i(236072), -- Plagueheart Crown
+										i(236064),	-- Plagueheart Circlet
+										i(236072),	-- Plagueheart Crown
 									},
 								}),
 
 								q(9106, {	-- Plagueheart Shoulderpads
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16133, -- Mataus the Wrathcaster <The Scarlet Crusade>
-									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22368, 1 }, -- Desecrated Shoulderpads
-										{ "i", 22376, 12 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 2 }, -- Mooncloth
-										{ "i", 15407, 3 }, -- Cured Rugged Hide
+										{ "i", 22368, 1 },	-- Desecrated Shoulderpads
+										{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 2 },	-- Mooncloth
+										{ "i", 15407, 3 },	-- Cured Rugged Hide
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236065), -- Plagueheart Shoulderpads
-										i(236070), -- Plagueheart Mantle
+										i(236065),	-- Plagueheart Shoulderpads
+										i(236070),	-- Plagueheart Mantle
 									},
 								}),
 
 								q(9103, {	-- Plagueheart Robe
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16133, -- Mataus the Wrathcaster <The Scarlet Crusade>
-									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22351, 1 }, -- Desecrated Robe
-										{ "i", 22376, 25 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 4 }, -- Mooncloth
-										{ "i", 20725, 2 }, -- Nexus Crystal
+										{ "i", 22351, 1 },	-- Desecrated Robe
+										{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 4 },	-- Mooncloth
+										{ "i", 20725, 2 },	-- Nexus Crystal
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236062), -- Plagueheart Robe
-										i(236076), -- Plagueheart Garb
+										i(236062),	-- Plagueheart Robe
+										i(236076),	-- Plagueheart Garb
 									},
 								}),
 
 								q(9110, {	-- Plagueheart Bindings
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16133, -- Mataus the Wrathcaster <The Scarlet Crusade>
-									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22369, 1 }, -- Desecrated Bindings
-										{ "i", 22376, 6 }, -- Wartorn Cloth Scrap
-										{ "i", 12363, 1 }, -- Arcane Crystal
-										{ "i", 20725, 1 }, -- Nexus Crystal
+										{ "i", 22369, 1 },	-- Desecrated Bindings
+										{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
+										{ "i", 12363, 1 },	-- Arcane Crystal
+										{ "i", 20725, 1 },	-- Nexus Crystal
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236061), -- Plagueheart Bindings
-										i(236068), -- Plagueheart Wristguards
+										i(236061),	-- Plagueheart Bindings
+										i(236068),	-- Plagueheart Wristguards
 									},
 								}),
 
 								q(9108, {	-- Plagueheart Gloves
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16133, -- Mataus the Wrathcaster <The Scarlet Crusade>
-									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22371, 1 }, -- Desecrated Gloves
-										{ "i", 22376, 8 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 4 }, -- Mooncloth
+										{ "i", 22371, 1 },	-- Desecrated Gloves
+										{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 4 },	-- Mooncloth
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236063), -- Plagueheart Gloves
-										i(236073), -- Plagueheart Handguards
+										i(236063),	-- Plagueheart Gloves
+										i(236073),	-- Plagueheart Handguards
 									},
 								}),
 
 								q(9109, {	-- Plagueheart Belt
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16133, -- Mataus the Wrathcaster <The Scarlet Crusade>
-									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22370, 1 }, -- Desecrated Belt
-										{ "i", 22376, 8 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 2 }, -- Mooncloth
-										{ "i", 12363, 2 }, -- Arcane Crystal
+										{ "i", 22370, 1 },	-- Desecrated Belt
+										{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 2 },	-- Mooncloth
+										{ "i", 12363, 2 },	-- Arcane Crystal
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236066), -- Plagueheart Belt
-										i(236069), -- Plagueheart Waistguard
+										i(236066),	-- Plagueheart Belt
+										i(236069),	-- Plagueheart Waistguard
 									},
 								}),
 
 								q(9104, {	-- Plagueheart Leggings
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16133, -- Mataus the Wrathcaster <The Scarlet Crusade>
-									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22366, 1 }, -- Desecrated Leggings
-										{ "i", 22376, 20 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 4 }, -- Mooncloth
-										{ "i", 20725, 2 }, -- Nexus Crystal
+										{ "i", 22366, 1 },	-- Desecrated Leggings
+										{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 4 },	-- Mooncloth
+										{ "i", 20725, 2 },	-- Nexus Crystal
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236060), -- Plagueheart Leggings
-										i(236071), -- Plagueheart Pants
+										i(236060),	-- Plagueheart Leggings
+										i(236071),	-- Plagueheart Pants
 									},
 								}),
 
 								q(9107, {	-- Plagueheart Sandals
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16133, -- Mataus the Wrathcaster <The Scarlet Crusade>
-									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS }, -- Eastern Plaguelands
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+									["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands
 									["cost"] = {
-										{ "i", 22372, 1 }, -- Desecrated Sandals
-										{ "i", 22376, 12 }, -- Wartorn Cloth Scrap
-										{ "i", 14342, 2 }, -- Mooncloth
-										{ "i", 15407, 3 }, -- Cured Rugged Hide
+										{ "i", 22372, 1 },	-- Desecrated Sandals
+										{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+										{ "i", 14342, 2 },	-- Mooncloth
+										{ "i", 15407, 3 },	-- Cured Rugged Hide
 									},
-									["repeatable"] = true, -- Can be repeated
-									["lvl"] = 60, -- Required level
+									["repeatable"] = true,	-- Can be repeated
+									["lvl"] = 60,	-- Required level
 									["groups"] = {
-										i(236059), -- Plagueheart Sandals
-										i(236075), -- Plagueheart Boots
+										i(236059),	-- Plagueheart Sandals
+										i(236075),	-- Plagueheart Boots
 									},
 								}),
 							}),
 							cl(DRUID, {
 								q(9088, {	-- Dreamwalker Headpiece
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16135, -- Rayne <Cenarion Circle>
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16135,	-- Rayne <Cenarion Circle>
 									["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
-										{ "i", 22360, 1 }, -- Desecrated Headpiece
-										{ "i", 22373, 15 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 6 }, -- Cured Rugged Hide
-										{ "i", 20725, 2 }, -- Nexus Crystal
+										{ "i", 22360, 1 },	-- Desecrated Headpiece
+										{ "i", 22373, 15 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 6 },	-- Cured Rugged Hide
+										{ "i", 20725, 2 },	-- Nexus Crystal
 									},
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236182), -- Dreamwalker Headpiece
-										i(236196), -- Dreamwalker Hood
-										i(236205), -- Dreamwalker Headdress
-										i(236214), -- Dreamwalker Cowl
+										i(236182),	-- Dreamwalker Headpiece
+										i(236196),	-- Dreamwalker Hood
+										i(236205),	-- Dreamwalker Headdress
+										i(236214),	-- Dreamwalker Cowl
 									},
 								}),
 
 								q(9089, {	-- Dreamwalker Spaulders
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16135, -- Rayne <Cenarion Circle>
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16135,	-- Rayne <Cenarion Circle>
 									["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
-										{ "i", 22361, 1 }, -- Desecrated Spaulders
-										{ "i", 22373, 12 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 5 }, -- Cured Rugged Hide
-										{ "i", 20725, 1 }, -- Nexus Crystal
+										{ "i", 22361, 1 },	-- Desecrated Spaulders
+										{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 5 },	-- Cured Rugged Hide
+										{ "i", 20725, 1 },	-- Nexus Crystal
 									},
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236189), -- Dreamwalker Spaulders
-										i(236194), -- Dreamwalker Mantle
-										i(236212), -- Dreamwalker Shoulderpads
-										i(236203), -- Dreamwalker Pauldrons
+										i(236189),	-- Dreamwalker Spaulders
+										i(236194),	-- Dreamwalker Mantle
+										i(236212),	-- Dreamwalker Shoulderpads
+										i(236203),	-- Dreamwalker Pauldrons
 									},
 								}),
 
 								q(9086, {	-- Dreamwalker Tunic
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16135, -- Rayne <Cenarion Circle>
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16135,	-- Rayne <Cenarion Circle>
 									["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
-										{ "i", 22350, 1 }, -- Desecrated Tunic
-										{ "i", 22373, 25 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 6 }, -- Cured Rugged Hide
-										{ "i", 20725, 2 }, -- Nexus Crystal
+										{ "i", 22350, 1 },	-- Desecrated Tunic
+										{ "i", 22373, 25 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 6 },	-- Cured Rugged Hide
+										{ "i", 20725, 2 },	-- Nexus Crystal
 									},
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236186), -- Dreamwalker Tunic
-										i(236200), -- Dreamwalker Leathers
-										i(236209), -- Dreamwalker Armor
-										i(236218), -- Dreamwalker Vest
+										i(236186),	-- Dreamwalker Tunic
+										i(236200),	-- Dreamwalker Leathers
+										i(236209),	-- Dreamwalker Armor
+										i(236218),	-- Dreamwalker Vest
 									},
 								}),
 
 								q(9093, {	-- Dreamwalker Wristguards
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16135, -- Rayne <Cenarion Circle>
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16135,	-- Rayne <Cenarion Circle>
 									["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
-										{ "i", 22362, 1 }, -- Desecrated Wristguards
-										{ "i", 22373, 6 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 2 }, -- Cured Rugged Hide
-										{ "i", 12363, 1 }, -- Arcane Crystal
+										{ "i", 22362, 1 },	-- Desecrated Wristguards
+										{ "i", 22373, 6 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 2 },	-- Cured Rugged Hide
+										{ "i", 12363, 1 },	-- Arcane Crystal
 									},
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236183), -- Dreamwalker Wristguards
-										i(236192), -- Dreamwalker Bindings
-										i(236201), -- Dreamwalker Bracers
-										i(236210), -- Dreamwalker Wraps
+										i(236183),	-- Dreamwalker Wristguards
+										i(236192),	-- Dreamwalker Bindings
+										i(236201),	-- Dreamwalker Bracers
+										i(236210),	-- Dreamwalker Wraps
 									},
 								}),
 
 								q(9091, {	-- Dreamwalker Handguards
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16135, -- Rayne <Cenarion Circle>
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16135,	-- Rayne <Cenarion Circle>
 									["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
-										{ "i", 22364, 1 }, -- Desecrated Handguards
-										{ "i", 22373, 8 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 5 }, -- Cured Rugged Hide
-										{ "i", 20725, 1 }, -- Nexus Crystal
+										{ "i", 22364, 1 },	-- Desecrated Handguards
+										{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 5 },	-- Cured Rugged Hide
+										{ "i", 20725, 1 },	-- Nexus Crystal
 									},
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236184), -- Dreamwalker Handguards
-										i(236197), -- Dreamwalker Mitts
-										i(236206), -- Dreamwalker Gauntlets
-										i(236215), -- Dreamwalker Grips
+										i(236184),	-- Dreamwalker Handguards
+										i(236197),	-- Dreamwalker Mitts
+										i(236206),	-- Dreamwalker Gauntlets
+										i(236215),	-- Dreamwalker Grips
 									},
 								}),
 
 								q(9092, {	-- Dreamwalker Girdle
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16135, -- Rayne <Cenarion Circle>
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16135,	-- Rayne <Cenarion Circle>
 									["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
-										{ "i", 22363, 1 }, -- Desecrated Girdle
-										{ "i", 22373, 8 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 2 }, -- Cured Rugged Hide
-										{ "i", 14342, 3 }, -- Mooncloth
+										{ "i", 22363, 1 },	-- Desecrated Girdle
+										{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 2 },	-- Cured Rugged Hide
+										{ "i", 14342, 3 },	-- Mooncloth
 									},
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236187), -- Dreamwalker Girdle
-										i(236193), -- Dreamwalker Cord
-										i(236202), -- Dreamwalker Waistguard
-										i(236211), -- Dreamwalker Sash
+										i(236187),	-- Dreamwalker Girdle
+										i(236193),	-- Dreamwalker Cord
+										i(236202),	-- Dreamwalker Waistguard
+										i(236211),	-- Dreamwalker Sash
 									},
 								}),
 
 								q(9087, {	-- Dreamwalker Legguards
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16135, -- Rayne <Cenarion Circle>
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16135,	-- Rayne <Cenarion Circle>
 									["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
-										{ "i", 22359, 1 }, -- Desecrated Legguards
-										{ "i", 22373, 20 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 8 }, -- Cured Rugged Hide
-										{ "i", 20725, 1 }, -- Nexus Crystal
+										{ "i", 22359, 1 },	-- Desecrated Legguards
+										{ "i", 22373, 20 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 8 },	-- Cured Rugged Hide
+										{ "i", 20725, 1 },	-- Nexus Crystal
 									},
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236188), -- Dreamwalker Legguards
-										i(236195), -- Dreamwalker Kilt
-										i(236204), -- Dreamwalker Leggings
-										i(236213), -- Dreamwalker Trousers
+										i(236188),	-- Dreamwalker Legguards
+										i(236195),	-- Dreamwalker Kilt
+										i(236204),	-- Dreamwalker Leggings
+										i(236213),	-- Dreamwalker Trousers
 									},
 								}),
 
 								q(9090, {	-- Dreamwalker Boots
-									["sourceQuest"] = 9033, -- Echoes of War
-									["qg"] = 16135, -- Rayne <Cenarion Circle>
+									["sourceQuest"] = 9033,	-- Echoes of War
+									["qg"] = 16135,	-- Rayne <Cenarion Circle>
 									["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
-										{ "i", 22365, 1 }, -- Desecrated Boots
-										{ "i", 22373, 12 }, -- Wartorn Leather Scrap
-										{ "i", 15407, 2 }, -- Cured Rugged Hide
-										{ "i", 14342, 3 }, -- Mooncloth
+										{ "i", 22365, 1 },	-- Desecrated Boots
+										{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+										{ "i", 15407, 2 },	-- Cured Rugged Hide
+										{ "i", 14342, 3 },	-- Mooncloth
 									},
 									["repeatable"] = true,
 									["lvl"] = 60,
 									["groups"] = {
-										i(236185), -- Dreamwalker Boots
-										i(236199), -- Dreamwalker Sandals
-										i(236208), -- Dreamwalker Sabatons
-										i(236217), -- Dreamwalker Stompers
+										i(236185),	-- Dreamwalker Boots
+										i(236199),	-- Dreamwalker Sandals
+										i(236208),	-- Dreamwalker Sabatons
+										i(236217),	-- Dreamwalker Stompers
 									},
 								}),
 							}),
@@ -4157,7 +4157,7 @@ applyclassicphase(PHASE_SIX,
 						n(16133, {	-- Mataus the Wrathcaster (WARLOCK)
 							["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
 							["groups"] = {
-								i(236067, {	-- Ring of the Plagueheart   -- Update IDs if needed
+								i(236067, {	-- Ring of the Plagueheart  	-- Update IDs if needed
 									["cost"] = {
 										{ "i", 12938, 1 },	-- Blood of Heroes
 										{ "i", 12363, 3 },	-- Arcane Crystal

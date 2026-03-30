@@ -150,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 										12378,	-- Damned Soul
 										7370,	-- Restless Shade
 										12379,	-- Unliving Caretaker
-										-- 12380,	-- Unliving Resident -- NOTE: This was removed as a drop source sometime during TBC.
+										-- 12380,	-- Unliving Resident	-- NOTE: This was removed as a drop source sometime during TBC.
 										12377,	-- Wailing Spectre
 									},
 								}),

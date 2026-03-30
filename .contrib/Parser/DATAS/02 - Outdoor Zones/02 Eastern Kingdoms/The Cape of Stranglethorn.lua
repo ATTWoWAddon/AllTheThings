@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(31917, {	-- A Tamer's Homecoming (A)
 					["sourceQuest"] = 31728,	-- Bill Buckler
-					["altQuests"] = { 31918 },	-- A Tamer's Homecoming (H) -- CRIEVE NOTE: Check this on MOP Classic
+					["altQuests"] = { 31918 },	-- A Tamer's Homecoming (H)	-- CRIEVE NOTE: Check this on MOP Classic
 					["qg"] = 65656,	-- Bill Buckler
 					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_5_0_4 },

@@ -647,12 +647,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19583)),	-- Windtalker's Wristguards
 						moh(1, i(19584)),	-- Windtalker's Wristguards
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(237820)), -- Outrider's Silk Leggings
-						applyclassicphase(SOD_PHASE_SIX, i(237821)), -- Outrider's Lizardhide Pants
-						applyclassicphase(SOD_PHASE_SIX, i(237822)), -- Outrider's Leather Pants
-						applyclassicphase(SOD_PHASE_SIX, i(237823)), -- Outrider's Mail Leggings
-						applyclassicphase(SOD_PHASE_SIX, i(237824)), -- Outrider's Chain Leggings
-						applyclassicphase(SOD_PHASE_SIX, i(237826)), -- Outrider's Plate Legguards
+						applyclassicphase(SOD_PHASE_SIX, i(237820)),	-- Outrider's Silk Leggings
+						applyclassicphase(SOD_PHASE_SIX, i(237821)),	-- Outrider's Lizardhide Pants
+						applyclassicphase(SOD_PHASE_SIX, i(237822)),	-- Outrider's Leather Pants
+						applyclassicphase(SOD_PHASE_SIX, i(237823)),	-- Outrider's Mail Leggings
+						applyclassicphase(SOD_PHASE_SIX, i(237824)),	-- Outrider's Chain Leggings
+						applyclassicphase(SOD_PHASE_SIX, i(237826)),	-- Outrider's Plate Legguards
 						-- #else
 						applyclassicphase(PHASE_SIX, moh(2, i(22673))),	-- Outrider's Chain Leggings
 						applyclassicphase(TBC_PHASE_ONE, i(30498)),	-- Outrider's Lamellar Legguards [Currently Sold for Gold, may change in the future!]
@@ -776,12 +776,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19583)),	-- Windtalker's Wristguards
 						moh(1, i(19584)),	-- Windtalker's Wristguards
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(237814)), -- Sentinel's Lamellar Legguards
-						applyclassicphase(SOD_PHASE_SIX, i(237815)), -- Sentinel's Silk Leggings
-						applyclassicphase(SOD_PHASE_SIX, i(237817)), -- Sentinel's Lizardhide Pants
-						applyclassicphase(SOD_PHASE_SIX, i(237818)), -- Sentinel's Leather Pants
-						applyclassicphase(SOD_PHASE_SIX, i(237819)), -- Sentinel's Chain Leggings
-						applyclassicphase(SOD_PHASE_SIX, i(237825)), -- Sentinel's Plate Legguards
+						applyclassicphase(SOD_PHASE_SIX, i(237814)),	-- Sentinel's Lamellar Legguards
+						applyclassicphase(SOD_PHASE_SIX, i(237815)),	-- Sentinel's Silk Leggings
+						applyclassicphase(SOD_PHASE_SIX, i(237817)),	-- Sentinel's Lizardhide Pants
+						applyclassicphase(SOD_PHASE_SIX, i(237818)),	-- Sentinel's Leather Pants
+						applyclassicphase(SOD_PHASE_SIX, i(237819)),	-- Sentinel's Chain Leggings
+						applyclassicphase(SOD_PHASE_SIX, i(237825)),	-- Sentinel's Plate Legguards
 						-- #else
 						applyclassicphase(PHASE_SIX, moh(2, i(22748))),	-- Sentinel's Chain Leggings
 						applyclassicphase(TBC_PHASE_ONE, moh(2, i(30497))),	-- Sentinel's Mail Leggings

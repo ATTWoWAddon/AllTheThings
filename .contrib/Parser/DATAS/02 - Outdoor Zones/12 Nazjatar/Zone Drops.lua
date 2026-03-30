@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		i(170183, {	-- Reefwalker Bark
 			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
-				-- there are lots of mobs that have "reefwalker" in their name -- maybe those?  there are also elite ones, so possibly more common from them?
+				-- there are lots of mobs that have "reefwalker" in their name	-- maybe those?  there are also elite ones, so possibly more common from them?
 				152558,	-- Barnacled Reefwalker
 				150568,	-- Deep Reefwalker
 				153025,	-- Emorneth

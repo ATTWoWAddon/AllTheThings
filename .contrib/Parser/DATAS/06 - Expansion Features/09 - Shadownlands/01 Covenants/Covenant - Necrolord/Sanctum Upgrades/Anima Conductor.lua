@@ -66,15 +66,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["isDaily"] = true,
 									["coord"] = { 38.0, 65.6, MALDRAXXUS },
 									["groups"] = {
-										o(1278968766, {	-- Rune -- TODO: proper objectID?
+										o(1278968766, {	-- Rune	-- TODO: proper objectID?
 											["questID"] = 61648,
 											["isDaily"] = true,
 										}),
-										o(1278968767, {	-- Rune -- TODO: proper objectID?
+										o(1278968767, {	-- Rune	-- TODO: proper objectID?
 											["questID"] = 61649,
 											["isDaily"] = true,
 										}),
-										o(1278968768, {	-- Rune -- TODO: proper objectID?
+										o(1278968768, {	-- Rune	-- TODO: proper objectID?
 											["questID"] = 61650,
 											["isDaily"] = true,
 										}),

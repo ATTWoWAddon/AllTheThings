@@ -40,6 +40,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						ach(61219),	-- No Time to Paws
 					},
 				}),
+				q(93053, {	-- Cleaning the Den
+					["coord"] = { 47.8, 51.6, 2576 },	-- The Den
+				}),
 				q(91555, {	-- Defenders of the Vale
 					["coord"] = { 58.7, 52.8, MAP.MIDNIGHT.HARANDAR },
 				}),

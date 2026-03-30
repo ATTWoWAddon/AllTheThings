@@ -739,6 +739,7 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
 			faction(2664),	-- Flynn Fairwind
 			faction(2665),	-- Lillistrasza
+			faction(2663),	-- Meerah
 			faction(2666),	-- Roasts and Boasts
 			faction(2662),	-- [PH] The Power of Friendship
 		})),
@@ -746,24 +747,24 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
-			faction(2705), -- Amani Tribe (Paragon)
-			faction(2716), -- Blood Knights (Paragon)
-			faction(2742), -- Delves: Season 1
-			faction(2700), -- DEPRECATED Fungarian Fighting Ring
-			faction(2717), -- Farstriders (Paragon)
-			faction(2726), -- Hara'ti (Paragon)
-			faction(2715), -- Magisters (Paragon)
-			faction(2729), -- PLAYER, Haranir Alliance
-			faction(2728), -- PLAYER, Haranir Horde
-			faction(2781), -- Revantusk Tribe
-			faction(2718), -- Shades of the Row (Paragon)
-			faction(2780), -- Shadowpine Tribe
-			faction(2720), -- Silvermoon City
-			faction(2727), -- Silvermoon Court (Paragon)
-			faction(2774), -- Slayer's Duellum (Paragon)
-			faction(2725), -- The Singularity (Paragon)
-			faction(2709), -- Vanguard of the Light
-			faction(2706), -- Witherbark Tribe
+			faction(2705),	-- Amani Tribe (Paragon)
+			faction(2716),	-- Blood Knights (Paragon)
+			faction(2742),	-- Delves: Season 1
+			faction(2700),	-- DEPRECATED Fungarian Fighting Ring
+			faction(2717),	-- Farstriders (Paragon)
+			faction(2726),	-- Hara'ti (Paragon)
+			faction(2715),	-- Magisters (Paragon)
+			faction(2729),	-- PLAYER, Haranir Alliance
+			faction(2728),	-- PLAYER, Haranir Horde
+			faction(2781),	-- Revantusk Tribe
+			faction(2718),	-- Shades of the Row (Paragon)
+			faction(2780),	-- Shadowpine Tribe
+			faction(2720),	-- Silvermoon City
+			faction(2727),	-- Silvermoon Court (Paragon)
+			faction(2774),	-- Slayer's Duellum (Paragon)
+			faction(2725),	-- The Singularity (Paragon)
+			faction(2709),	-- Vanguard of the Light
+			faction(2706),	-- Witherbark Tribe
 		})),
 	}),
 }));

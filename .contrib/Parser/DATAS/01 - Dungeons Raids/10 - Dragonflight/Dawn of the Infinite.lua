@@ -1383,7 +1383,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		-- ig(3571),	-- Trogg Beater						(Removed)			Added in 10.1.7 to original Source
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
-		-- CA IS NOT POSSIBLE -- Gold 13.07.2023
+		-- CA IS NOT POSSIBLE	-- Gold 13.07.2023
 		ig(134746),	-- Covert Greatsword				(NYI)
 		ig(134606),	-- Scorching Greatsword				(NYI)
 		-- ig(2014),	-- Black Metal Greatsword			(Removed)(Unique)	Added in 10.1.7 to original Source

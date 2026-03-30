@@ -201,7 +201,7 @@ root(ROOTS.Zones, {
 						-- #else
 						["sourceQuests"] = {
 							12824,	-- Demolitionist Extraordinaire
-							-- 12822,	-- Know No Fear -- TODO: verify. This wasn't required on horde but appears to be required for alliance...?
+							-- 12822,	-- Know No Fear	-- TODO: verify. This wasn't required on horde but appears to be required for alliance...?
 							12867,	-- Baby Stealers
 							12868,	-- Sirana Iceshriek
 							12928,	-- Norgannon's Shell (H)

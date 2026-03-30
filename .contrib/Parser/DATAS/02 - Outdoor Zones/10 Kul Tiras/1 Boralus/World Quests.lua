@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 50,
 				["groups"] = {
-					o(307683,	{ -- Azerite Bombs
+					o(307683,	{	-- Azerite Bombs
 						["groups"] = {
 							i(160667),	-- Unstable Azerite Bomb (QI!)
 						},

@@ -4,6 +4,7 @@
 root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	i(232875),	-- Spark of Radiance
 	n(DECOR, {
+		-- TODO: o_repeated with proper maps and objectIDs like other expacs?
 		o(618517, {	-- Thalassian Lumber
 			["maps"] = {
 				MAP.MIDNIGHT.EVERSONG_WOODS,
@@ -16,8 +17,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		filter(CONSUMABLES, {
 			i(241299),	-- Amani Extract+
 			i(241298),	-- Amani Extract++
-			i(241319),	-- Cauldron of Sin'dorei Flasks+
-			i(241318),	-- Cauldron of Sin'dorei Flasks++
+			i(241319, {	-- Cauldron of Sin'dorei Flasks+
+				i(245927),	-- Fleeting Flask of Thalassian Resistance+
+				i(245930),	-- Fleeting Flask of the Blood Knights+
+				i(245932),	-- Fleeting Flask of the Magisters+
+				i(245928),	-- Fleeting Flask of the Shattered Sun+
+			}),
+			i(241318, {	-- Cauldron of Sin'dorei Flasks++
+				i(245926),	-- Fleeting Flask of Thalassian Resistance++
+				i(245931),	-- Fleeting Flask of the Blood Knights++
+				i(245933),	-- Fleeting Flask of the Magisters++
+				i(245929),	-- Fleeting Flask of the Shattered Sun++
+			}),
 			i(241293),	-- Draught of Rampant Abandon+
 			i(241292),	-- Draught of Rampant Abandon++
 			i(241339),	-- Enlightenment Tonic+
@@ -57,8 +68,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(241334),	-- Vicious Thalassian Flask of Honor
 			i(241303),	-- Void-Shrouded Tincture+
 			i(241302),	-- Void-Shrouded Tincture++
-			i(241285),	-- Voidlight Potion Cauldron+
-			i(241284),	-- Voidlight Potion Cauldron++
+			i(241285, {	-- Voidlight Potion Cauldron+
+				i(245897),	-- Fleeting Light's Potential+
+			}),
+			i(241284, {	-- Voidlight Potion Cauldron++
+				i(245898),	-- Fleeting Light's Potential++
+			}),
 		}),
 		n(DECOR, {
 			i(262355),	-- Entropic Illuminant (DECOR!)
@@ -527,85 +542,85 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
 		},{
-			fc(1236054), -- Enchant Chest - Mark of Nalorakk
-			fc(1236055), -- Enchant Helm - Hex of Leeching
-			fc(1236056), -- Enchant Helm - Empowered Hex of Leeching
-			fc(1236057), -- Enchant Boots - Lynx's Dexterity
-			fc(1236058), -- Enchant Ring - Amani Mastery
-			fc(1236059), -- Enchant Ring - Eyes of the Eagle
-			fc(1236060), -- Enchant Ring - Zul'jin's Mastery
-			fc(1236061), -- Enchant Shoulders - Flight of the Eagle
-			fc(1236062), -- Enchant Shoulders - Akil'zon's Swiftness
-			fc(1236063), -- Enchant Tool - Amani Perception
-			fc(1236064), -- Enchant Tool - Amani Resourcefulness
-			fc(1236065), -- Enchant Weapon - Strength of Halazzi
-			fc(1236066), -- Enchant Weapon - Jan'alai's Precision
-			fc(1236067), -- Enchant Weapon - Berserker's Rage
-			fc(1236068), -- Enchant Chest - Mark of the Rootwarden
-			fc(1236069), -- Enchant Chest - Mark of the Worldsoul
-			fc(1236070), -- Enchant Helm - Blessing of Speed
-			fc(1236071), -- Enchant Helm - Empowered Blessing of Speed
-			fc(1236072), -- Enchant Boots - Shaladrassil's Roots
-			fc(1236073), -- Enchant Ring - Nature's Wrath
-			fc(1236074), -- Enchant Ring - Nature's Fury
-			fc(1236075), -- Enchant Shoulders - Nature's Grace
-			fc(1236076), -- Enchant Shoulders - Amirdrassil's Grace
-			fc(1236077), -- Enchant Tool - Haranir Finesse
-			fc(1236078), -- Enchant Tool - Haranir Multicrafting
-			fc(1236079), -- Enchant Weapon - Worldsoul Cradle
-			fc(1236080), -- Enchant Weapon - Worldsoul Aegis
-			fc(1236081), -- Enchant Weapon - Worldsoul Tenacity
-			fc(1236082), -- Enchant Chest - Mark of the Magister
-			fc(1236083), -- Enchant Helm - Rune of Avoidance
-			fc(1236084), -- Enchant Helm - Empowered Rune of Avoidance
-			fc(1236085), -- Enchant Boots - Farstrider's Hunt
-			fc(1236086), -- Enchant Ring - Thalassian Haste
-			fc(1236087), -- Enchant Ring - Thalassian Versatility
-			fc(1236088), -- Enchant Ring - Silvermoon's Alacrity
-			fc(1236089), -- Enchant Ring - Silvermoon's Tenacity
-			fc(1236090), -- Enchant Shoulders - Thalassian Recovery
-			fc(1236091), -- Enchant Shoulders - Silvermoon's Mending
-			fc(1236092), -- Enchant Tool - Sin'dorei Deftness
-			fc(1236093), -- Enchant Tool - Ren'dorei Ingenuity
-			fc(1236094), -- Enchant Weapon - Flames of the Sin'dorei
-			fc(1236095), -- Enchant Weapon - Acuity of the Ren'dorei
-			fc(1236097), -- Enchant Weapon - Arcane Mastery
-			fc(1236461), -- Gleeful Glamour - Blood Elf
-			fc(1236463), -- Gleeful Glamour - Dark Iron Dwarf
-			fc(1236464), -- Gleeful Glamour - Haranir
-			fc(1236465), -- Gleeful Glamour - Draenei
-			fc(1236466), -- Gleeful Glamour - Dwarf
-			fc(1236467), -- Gleeful Glamour - Gnome
-			fc(1236468), -- Gleeful Glamour - Goblin
-			fc(1236469), -- Gleeful Glamour - Highmountain Tauren
-			fc(1236470), -- Gleeful Glamour - Human
-			fc(1236471), -- Gleeful Glamour - Kul Tiran
-			fc(1236472), -- Gleeful Glamour - Lightforged Draenei
-			fc(1236473), -- Gleeful Glamour - Mag'har Orc
-			fc(1236474), -- Gleeful Glamour - Mechagnome
-			fc(1236475), -- Gleeful Glamour - Night Elf
-			fc(1236476), -- Gleeful Glamour - Nightborne
-			fc(1236477), -- Gleeful Glamour - Orc
-			fc(1236478), -- Gleeful Glamour - Pandaren
-			fc(1236479), -- Gleeful Glamour - Tauren
-			fc(1236480), -- Gleeful Glamour - Troll
-			fc(1236481), -- Gleeful Glamour - Undead
-			fc(1236482), -- Gleeful Glamour - Void Elf
-			fc(1236483), -- Gleeful Glamour - Vulpera
-			fc(1236484), -- Gleeful Glamour - Worgen
-			fc(1236485), -- Gleeful Glamour - Zandalari Troll
-			fc(1236594), -- Gleeful Glamour - Earthen
-			fc(1236098), -- Illusory Adornment - Blooming Light
-			fc(1236099), -- Illusory Adornment - Nature's Embrace [Calls it "Shoulder Enchant" Still]
-			fc(1236100), -- Illusory Adornment - Voidtouched [Calls it "Shoulder Enchant" Still]
-			fc(1236490), -- Magister's Grand Focus
-			fc(1236492), -- Oil of Dawn
-			fc(1236486), -- Runed Refulgent Copper Rod
-			fc(1236487), -- Runed Brilliant Silver Rod
-			fc(1236488), -- Runed Dazzling Thorium Rod
-			fc(1236493), -- Smuggler's Enchanted Edge
-			fc(1236489), -- Thalassian Spellweaver's Wand
-			fc(1236491), -- Thalassian Phoenix Oil
+			fc(1236054),	-- Enchant Chest - Mark of Nalorakk
+			fc(1236055),	-- Enchant Helm - Hex of Leeching
+			fc(1236056),	-- Enchant Helm - Empowered Hex of Leeching
+			fc(1236057),	-- Enchant Boots - Lynx's Dexterity
+			fc(1236058),	-- Enchant Ring - Amani Mastery
+			fc(1236059),	-- Enchant Ring - Eyes of the Eagle
+			fc(1236060),	-- Enchant Ring - Zul'jin's Mastery
+			fc(1236061),	-- Enchant Shoulders - Flight of the Eagle
+			fc(1236062),	-- Enchant Shoulders - Akil'zon's Swiftness
+			fc(1236063),	-- Enchant Tool - Amani Perception
+			fc(1236064),	-- Enchant Tool - Amani Resourcefulness
+			fc(1236065),	-- Enchant Weapon - Strength of Halazzi
+			fc(1236066),	-- Enchant Weapon - Jan'alai's Precision
+			fc(1236067),	-- Enchant Weapon - Berserker's Rage
+			fc(1236068),	-- Enchant Chest - Mark of the Rootwarden
+			fc(1236069),	-- Enchant Chest - Mark of the Worldsoul
+			fc(1236070),	-- Enchant Helm - Blessing of Speed
+			fc(1236071),	-- Enchant Helm - Empowered Blessing of Speed
+			fc(1236072),	-- Enchant Boots - Shaladrassil's Roots
+			fc(1236073),	-- Enchant Ring - Nature's Wrath
+			fc(1236074),	-- Enchant Ring - Nature's Fury
+			fc(1236075),	-- Enchant Shoulders - Nature's Grace
+			fc(1236076),	-- Enchant Shoulders - Amirdrassil's Grace
+			fc(1236077),	-- Enchant Tool - Haranir Finesse
+			fc(1236078),	-- Enchant Tool - Haranir Multicrafting
+			fc(1236079),	-- Enchant Weapon - Worldsoul Cradle
+			fc(1236080),	-- Enchant Weapon - Worldsoul Aegis
+			fc(1236081),	-- Enchant Weapon - Worldsoul Tenacity
+			fc(1236082),	-- Enchant Chest - Mark of the Magister
+			fc(1236083),	-- Enchant Helm - Rune of Avoidance
+			fc(1236084),	-- Enchant Helm - Empowered Rune of Avoidance
+			fc(1236085),	-- Enchant Boots - Farstrider's Hunt
+			fc(1236086),	-- Enchant Ring - Thalassian Haste
+			fc(1236087),	-- Enchant Ring - Thalassian Versatility
+			fc(1236088),	-- Enchant Ring - Silvermoon's Alacrity
+			fc(1236089),	-- Enchant Ring - Silvermoon's Tenacity
+			fc(1236090),	-- Enchant Shoulders - Thalassian Recovery
+			fc(1236091),	-- Enchant Shoulders - Silvermoon's Mending
+			fc(1236092),	-- Enchant Tool - Sin'dorei Deftness
+			fc(1236093),	-- Enchant Tool - Ren'dorei Ingenuity
+			fc(1236094),	-- Enchant Weapon - Flames of the Sin'dorei
+			fc(1236095),	-- Enchant Weapon - Acuity of the Ren'dorei
+			fc(1236097),	-- Enchant Weapon - Arcane Mastery
+			fc(1236461),	-- Gleeful Glamour - Blood Elf
+			fc(1236463),	-- Gleeful Glamour - Dark Iron Dwarf
+			fc(1236464),	-- Gleeful Glamour - Haranir
+			fc(1236465),	-- Gleeful Glamour - Draenei
+			fc(1236466),	-- Gleeful Glamour - Dwarf
+			fc(1236467),	-- Gleeful Glamour - Gnome
+			fc(1236468),	-- Gleeful Glamour - Goblin
+			fc(1236469),	-- Gleeful Glamour - Highmountain Tauren
+			fc(1236470),	-- Gleeful Glamour - Human
+			fc(1236471),	-- Gleeful Glamour - Kul Tiran
+			fc(1236472),	-- Gleeful Glamour - Lightforged Draenei
+			fc(1236473),	-- Gleeful Glamour - Mag'har Orc
+			fc(1236474),	-- Gleeful Glamour - Mechagnome
+			fc(1236475),	-- Gleeful Glamour - Night Elf
+			fc(1236476),	-- Gleeful Glamour - Nightborne
+			fc(1236477),	-- Gleeful Glamour - Orc
+			fc(1236478),	-- Gleeful Glamour - Pandaren
+			fc(1236479),	-- Gleeful Glamour - Tauren
+			fc(1236480),	-- Gleeful Glamour - Troll
+			fc(1236481),	-- Gleeful Glamour - Undead
+			fc(1236482),	-- Gleeful Glamour - Void Elf
+			fc(1236483),	-- Gleeful Glamour - Vulpera
+			fc(1236484),	-- Gleeful Glamour - Worgen
+			fc(1236485),	-- Gleeful Glamour - Zandalari Troll
+			fc(1236594),	-- Gleeful Glamour - Earthen
+			fc(1236098),	-- Illusory Adornment - Blooming Light
+			fc(1236099),	-- Illusory Adornment - Nature's Embrace [Calls it "Shoulder Enchant" Still]
+			fc(1236100),	-- Illusory Adornment - Voidtouched [Calls it "Shoulder Enchant" Still]
+			fc(1236490),	-- Magister's Grand Focus
+			fc(1236492),	-- Oil of Dawn
+			fc(1236486),	-- Runed Refulgent Copper Rod
+			fc(1236487),	-- Runed Brilliant Silver Rod
+			fc(1236488),	-- Runed Dazzling Thorium Rod
+			fc(1236493),	-- Smuggler's Enchanted Edge
+			fc(1236489),	-- Thalassian Spellweaver's Wand
+			fc(1236491),	-- Thalassian Phoenix Oil
 		})),
 		filter(MISC, {
 			i(243773),	-- Gleeful Glamour - Blood Elf+
@@ -2134,6 +2149,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 	n(PROFESSIONS, {
 		prof(TAILORING, {
 			q(89423),	-- 30/30 Arcanoweave Expertise
+			q(89422),	-- 0/20 Arcanoweave Expertise
+			q(89460),	-- 0/20 Sunfire Expertise
 		}),
 		prof(SKINNING, {
 			q(88522),	-- 20/40 Thorough Tanning (2nd charge)

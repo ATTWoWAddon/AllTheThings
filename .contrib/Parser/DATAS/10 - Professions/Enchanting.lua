@@ -987,6 +987,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			},
 		}, {
 			q(93699),	-- A Ray of Sunlight
+			q(93697),	-- Shimmering Melodies
 			q(93698),	-- Splintered Radiance
 		})),
 		filter(RECIPES, {

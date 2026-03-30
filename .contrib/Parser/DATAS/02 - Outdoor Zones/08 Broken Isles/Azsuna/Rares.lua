@@ -7,7 +7,7 @@ root(ROOTS.Zones, {
 		m(AZSUNA, {
 			n(RARES, sharedData({
 				-- #IF AFTER 11.2.5
-				["isDaily"] = true, -- Daily during Legion Remix 2025, and thereafter
+				["isDaily"] = true,	-- Daily during Legion Remix 2025, and thereafter
 				-- #endif
 			}, {
 				n(107657, {	-- Arcanist Shal'iman

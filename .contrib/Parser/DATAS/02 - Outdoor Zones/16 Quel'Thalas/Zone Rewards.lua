@@ -108,35 +108,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 		--
 		i(264274, {	-- Fabled Adventurer's Cache (Pre-Season)
-			["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_X_SEASONSTART },
-			["sym"] = { -- [Quel'Thalas Zone Rewards content]
-				{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-				{"where","headerID",ZONE_REWARDS},{"pop"},
-				{"where","headerID",ARMOR},{"finalize"},
-
-				{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-				{"where","headerID",ZONE_REWARDS},{"pop"},
-				{"where","headerID",WEAPONS},
-			},
+			["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
+			["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 		}),
 		i(260193, {	-- Fabled Veteran's Cache (Season 1)
-			["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
-			["sym"] = { -- [Quel'Thalas Zone Rewards content]
-				{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-				{"where","headerID",ZONE_REWARDS},{"pop"},
-				{"where","headerID",ARMOR},{"finalize"},
-
-				{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-				{"where","headerID",ZONE_REWARDS},{"pop"},
-				{"where","headerID",WEAPONS},
-			},
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 		}),
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(QUESTS, {
-			q(93790),	-- after obtain any epic seasonal chest from outdoor activity (e.g. Fabled Veteran's Cache) first time per week
+			q(93790, name(HEADERS.Item, 260193)),	-- 1st Fabled Veteran's Cache of the week
+			q(93793, name(HEADERS.Item, 260193)),	-- 2nd Fabled Veteran's Cache of the week
 		}),
 	}),
 }));

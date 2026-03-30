@@ -1428,7 +1428,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							follower(986),	-- Meatball
 						},
-					}),--]] -- Linked with the Mission
+					}),--]]	-- Linked with the Mission
 				}),
 			},
 		}),

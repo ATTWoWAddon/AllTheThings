@@ -578,7 +578,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 2870,	-- Against Lord Shalzaru
 					["providers"] = {
 						{ "n", 7877 },	-- Latronicus Moonspear
-						{ "i", 9248 } -- Mysterious Relic
+						{ "i", 9248 }	-- Mysterious Relic
 					},
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },

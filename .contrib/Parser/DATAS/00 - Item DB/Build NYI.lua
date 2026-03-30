@@ -1,5 +1,21 @@
 -- Build NYI
+NODES = createHeader({
+	readable = "Nodes",
+	icon = 1120721,
+	text = {
+		en = "Nodes",
+	},
+});
 root(ROOTS.NeverImplemented, {
+	-- Testing area
+	-- #if AFTER DF
+	n(NODES, {
+		pn(28607),	-- Glassware
+		pn(28608),	-- Extravagancies
+		pn(28609),	-- Prospecting
+		pn(28610),	-- Enterprising
+	}),
+	-- #endif
 	n(ACHIEVEMENTS, {["timeline"] = {CREATED_3_0_2}}),					-- Completed up to 11.2.5
 	n(ARMOR),															-- Not Completed and Not Sorted
 	n(ARTIFACTS),														-- Completed up to 11.2.5

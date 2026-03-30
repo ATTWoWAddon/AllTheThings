@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						["timeline"] = { ADDED_2_3_0 },
 						-- #if AFTER TWW
-						["collectible"] = false,  -- remove when Blizzard fix fish collection
+						["collectible"] = false, 	-- remove when Blizzard fix fish collection
 						-- #endif
 					}),
 				}),
@@ -2259,7 +2259,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 84,
 					-- #elseif AFTER 9.0.3
 					["groups"] = {
-						n(14720, { -- High Overlord Saurfang
+						n(14720, {	-- High Overlord Saurfang
 							["description"] = "Saurfang will not give you any quests after turning in 'Warchied's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'.",
 						}),
 					},
@@ -2497,7 +2497,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
-				n(171691, { -- Alpheus Cain <Shady Dealer>
+				n(171691, {	-- Alpheus Cain <Shady Dealer>
 					["coord"] = { 75.35, 45.8, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
@@ -2763,7 +2763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(24520, {	-- Doris Volanthius <Armor Quartermaster> -- BC Vendor for Trinkets
+				n(24520, {	-- Doris Volanthius <Armor Quartermaster>	-- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
 					["coord"] = { 38.8, 69.8, ORGRIMMAR },
 					["timeline"] = { ADDED_2_3_0 },

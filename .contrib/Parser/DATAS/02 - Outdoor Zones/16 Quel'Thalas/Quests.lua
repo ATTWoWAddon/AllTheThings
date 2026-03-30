@@ -617,11 +617,195 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				--}),
 				--
 			}),
-			--header(HEADERS.AchCriteria, 42117.02, {	-- The Voidspire
+			header(HEADERS.AchCriteria, 42117.02, {	-- The Voidspire
+				q(90690, {	-- Charge of the Vanguard
+					["sourceQuests"] = { 88706 },	-- Nothing Stands Forever
+					["qg"] = 235787,	-- Lor'themar Theron
+					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isBreadcrumb"] = true,
+				}),
+				q(88709, {	-- The Voidspire
+					["sourceQuests"] = { 90690 },	-- Charge of the Vanguard
+					["qg"] = 239810,	-- High Exarch Turalyon
+					["coord"] = { 45.4, 63.0, MAP.MIDNIGHT.VOIDSTORM },
+					["groups"] = {
+						i(257172),	-- Voidbreaker's Cape
+						i(257173),	-- Voidbreaker's Drape
+						i(257174),	-- Voidbreaker's Mantle
+						i(257175),	-- Voidbreaker's Wrap
+					},
+				}),
+				q(90724, {	-- The Broken Sky
+					["sourceQuests"] = { 88709 },	-- The Voidspire
+					["qg"] = 244297,	-- Arator
+					["maps"] = {
+						2529,	-- Voidspire
+						2530,	-- Crown of the Cosmos
+					},
+				}),
+				q(92520, {	-- Wake of the Darkwell
+					["sourceQuests"] = { 90724 },	-- The Broken Sky
+					["qg"] = 235787,	-- Lor'themar Theron
+					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+			}),
+			header(HEADERS.AchCriteria, 42117.03, {	-- Gathering of the Elves
+				q(88920, {	-- The Kaldorei
+					["sourceQuest"] = 92520,	-- Wake of the Darkwell
+					["qg"] = 240267,	-- Arator
+					["coord"] = { 45.9, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(88923, {	-- Children of the Stars
+					["sourceQuest"] = 88920,	-- The Kaldorei
+					["qg"] = 240334,	-- Shandris Feathermoon
+					["coord"] = { 48.3, 70.7, AMIRDRASSIL },
+				}),
+				q(88925, {	-- Awaken the Ancient of War
+					["sourceQuest"] = 88923,	-- Children of the Stars
+					["qg"] = 240334,	-- Shandris Feathermoon
+					["coord"] = { 48.3, 70.7, AMIRDRASSIL },
+					-- Rewards various trinkets. From Midnignt Zone Rewards to Quest Rewards
+				}),
+				q(88927, {	-- Awaken the Ancient Protector
+					["sourceQuest"] = 88923,	-- Children of the Stars
+					["qg"] = 240334,	-- Shandris Feathermoon
+					["coord"] = { 48.3, 70.7, AMIRDRASSIL },
+					["groups"] = {
+						i(257252),	-- Voidbreaker's Bardiche
+						i(257238),	-- Voidbreaker's Dagger
+						i(257289),	-- Voidbreaker's Glaive
+						i(257237),	-- Voidbreaker's Longbow
+						i(257271),	-- Voidbreaker's Longsword
+						i(257250),	-- Voidbreaker's Mace
+						i(257251),	-- Voidbreaker's Poleaxe
+						i(257269),	-- Voidbreaker's Ritual Sword
+						i(257256),	-- Voidbreaker's Staff
+						i(257234),	-- Voidbreaker's Waraxe
+						i(257249),	-- Voidbreaker's War Mace
+					},
+				}),
+				q(88937, {	-- Awaken the Ancient of Lore
+					["sourceQuest"] = 88923,	-- Children of the Stars
+					["qg"] = 240334,	-- Shandris Feathermoon
+					["coord"] = { 48.3, 70.7, AMIRDRASSIL },
+					["groups"] = {
+						i(257687),	-- Voidbreaker's Basher
+						i(257270),	-- Voidbreaker's Blade
+						i(257284),	-- Voidbreaker's Greatsword
+						i(257248),	-- Voidbreaker's Hammer
+						i(257686),	-- Voidbreaker's Kukri
+						i(257242),	-- Voidbreaker's Sight
+						i(257254),	-- Voidbreaker's Spike
+						i(257537),	-- Voidbreaker's Wall
+						i(257688),	-- Voidbreaker's Warbow
+					},
+				}),
+				q(88922, {	-- The Quel'dorei
+					["sourceQuests"] = {
+						88925,	-- Awaken the Ancient of War
+						88927,	-- Awaken the Ancient Protector
+						88937,	-- Awaken the Ancient of Lore
+					},
+					["qg"] = 251335,	-- Arator
+					["coord"] = { 48.3, 70.5, AMIRDRASSIL },
+				}),
+				------ Stay awhile and listen ------
+				--hqt(XXXXX, {	-- Stay awhile and listen: Shandris Feathermoon
+				--	["name"] = "Stay awhile and listen: Shandris Feathermoon",
+				--	["description"] = "Dialogue becomes available after accepting 'The Quel'dorei' (88922).",
+				--	["sourceQuests"] = {
+				--		88925,	-- Awaken the Ancient of War
+				--		88927,	-- Awaken the Ancient Protector
+				--		88937,	-- Awaken the Ancient of Lore
+				--	},
+				--	["qg"] = 240334,	-- Shandris Feathermoon
+				--	["coord"] = { 48.3, 70.7, AMIRDRASSIL },
+				--}),
+				--
+				q(88939, {	-- Rest for the Restless
+					["sourceQuest"] = 88922,	-- The Quel'dorei
+					["qg"] = 240295,	-- Vereesa Windrunner
+					["coord"] = { 31.2, 91.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = { i(258041) },	-- Remains of the Fallen (QI!)
+				}),
+				q(88938, {	-- Symbols of the Past
+					["sourceQuest"] = 88922,	-- The Quel'dorei
+					["qg"] = 240295,	-- Vereesa Windrunner
+					["coord"] = { 31.2, 91.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = {
+						i(251899),	-- Anasterian's Book of Law (QI!)
+						o(573743, {	-- Crown of the High King
+							["coord"] = { 30.2, 90.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["groups"] = { i(251904) },	-- Crown of the High King (QI!)
+						}),
+						--
+						i(264286),	-- Voidbreaker's Choker
+						i(257171),	-- Voidbreaker's Pendant
+					},
+				}),
+				------ Stay awhile and listen ------
+				--hqt(XXXXX, {	-- Stay awhile and listen: Arator
+				--	["name"] = "Stay awhile and listen: Arator",
+				--	["description"] = "Dialogue becomes available after accepting 'Symbols of the Past' (88938).",
+				--	["sourceQuest"] = 88922,	-- The Quel'dorei
+				--	["qg"] = 240296,	-- Arator
+				--	["coord"] = { 31.2, 91.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+				--}),
+				--
+				q(88941, {	-- For Quel'Thalas
+					["sourceQuests"] = {
+						88939,	-- Rest for the Restless
+						88938,	-- Symbols of the Past
+					},
+					["qg"] = 240295,	-- Vereesa Windrunner
+					["coord"] = { 31.2, 91.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = {
+						i(251914),	-- Sumptuous Berry Pie (DECOR!)
+						i(257220),	-- Voidbreaker's Band
+						i(257169),	-- Voidbreaker's Signet
+					},
+				}),
+				q(88928, {	-- The Shal'dorei
+					["sourceQuest"] = 88941,	-- For Quel'Thalas
+					["qg"] = 240255,	-- First Arcanist Thalyssra
+					["coord"] = { 45.7, 70.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(88930, {	-- Drained Mana
+					["sourceQuest"] = 88928,	-- The Shal'dorei
+					["qg"] = 250958,	-- Seneschal Ulen
+					["coord"] = { 70.5, 74.2, SURAMAR },
+					["groups"] = {
+						i(264287),	-- Voidbreaker's Circle
+						i(264288),	-- Voidbreaker's Ring
+					},
+				}),
+				q(88929, {	-- An Illusion!
+					["sourceQuest"] = 88928,	-- The Shal'dorei
+					["qg"] = 240302,	-- First Arcanist Thalyssra
+					["coord"] = { 70.6, 74.3, SURAMAR },
+					["groups"] = { i(248920) },	-- Nightwatch Mask (PQI!)
+				}),
+				q(88919, {	-- Into the Darkway
+					["sourceQuests"] = {
+						88930,	-- Drained Mana
+						88929,	-- An Illusion!
+					},
+					["qg"] = 256046,	-- First Arcanist Thalyssra
+					["coord"] = { 70.6, 74.3, SURAMAR },
+				}),
+				q(88942, {	-- The Elves are Going to War
+					["sourceQuest"] = 88919,	-- Into the Darkway
+					["qg"] = 254654,	-- First Arcanist Thalyssra
+					["coord"] = { 40.4, 32.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						-- Rewards various trinkets. From Midnignt Zone Rewards to Quest Rewards
+						i(246458),	-- Grand Aethercharged Crystal (DECOR!)
+					},
+				}),
+			}),
+			--header(HEADERS.AchCriteria, 42117.04, {	-- The Darkwell
 			--}),
-			--header(HEADERS.AchCriteria, 42117.03, {	-- The Darkwell
-			--}),
-			--header(HEADERS.AchCriteria, 42117.04, {	-- Dawn of a New Well
+			--header(HEADERS.AchCriteria, 42117.05, {	-- Dawn of a New Well
 			--}),
 		}),
 	}),
@@ -636,7 +820,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(89247),	-- [DNT] (spellID 1227720), after accepting questID 86837 (Meet at the Sunwell)
 			--q(89196),	-- unflagged (???), after turn in questID 86839 (To Light's Hope)
 			--q(89247),	-- unflagged (???), after turn in questID 86903 (The Arcantina)
-			--q(94623),	-- Building the Voidforge -- completed with q:92630
+			--q(94623),	-- Building the Voidforge	-- completed with q:92630
 			q(95247, {["timeline"] = {ADDED_12_0_0}}),	-- when picking up q:92630 in Dornogal
 		}),
 	}),

@@ -93,10 +93,10 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			-- Weekly Quests
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
-			},{
+			}, {
 				q(92429, {	-- Alternative Skinning
 					["qgs"] = {
-						251056, -- Gerath
+						251056,	-- Gerath
 						254255,	-- Hera Fer
 					},
 					["coords"] = {
@@ -106,7 +106,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["groups"] = { i(251632) },	-- Biological Vacuum (QI!)
 				}),
 				q(92417, {	-- Farm to Table
-					["qg"] = 250970, -- Yolan Hidor
+					["qg"] = 250970,	-- Yolan Hidor
 					["coords"] = {
 						{ 53.2, 38.0, FOUNDERS_POINT },
 						{ 54.9, 57.3, RAZORWIND_SHORES },
@@ -123,7 +123,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				q(92402, {	-- Magical Touch
-					["qg"] = 254536, -- Gelen Jord
+					["qg"] = 254536,	-- Gelen Jord
 					["coords"] = {
 						{ 52.1, 38.1, FOUNDERS_POINT },
 						-- { X, Y, RAZORWIND_SHORES },
@@ -278,7 +278,6 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(253523, 5),	-- Astalor's Hookah (DECOR!)
 					i_DecorCoupons(253600, 5),	-- Eversong Crystal Glass (DECOR!)
 					i_DecorCoupons(253522, 5),	-- Thalassian Chest (DECOR!)
-					-- Exo Note: For these, there probably be a sourceQuests or we will need a new system that tracks milestones of the Endeavor as these items are locked behind them
 					-- Reach the first milestone of the endeavor
 					i_DecorCoupons(253524, 10),	-- 590 Quel'Lithien Red Display Bottle (DECOR!)
 					i_DecorCoupons(254235, 5),	-- Sin'dori Artisan's Easel (DECOR!)
@@ -288,7 +287,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(253526, 15),	-- Sin'dorei Wine Display (DECOR!)
 					i_DecorCoupons(253599, 15),	-- Artisanal Display Tent (DECOR!)
 					-- Reach the fourth milestone of the endeavor
-					i(253802, { -- Deed of Patronage
+					i(253802, {	-- Deed of Patronage
 						["description"] = "Once you've purchased this item, you can talk to Hesta Forlath in Midnight Silvermoon City (/att n:252916) to purchase paintings.\n\nYou can safely delete this item.",
 						["cost"] = { { "c", COMMUNITY_COUPONS, 30 } },
 					}),
@@ -297,9 +296,9 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			-- Weekly Quests
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
-			},{
+			}, {
 				q(92608, {	-- Landscape Photography
-					["qg"] = 252717, -- Corlen Hordralin
+					["qg"] = 252717,	-- Corlen Hordralin
 					["coords"] = {
 						{ 53.0, 37.2, FOUNDERS_POINT },	-- Founder's Point
 						{ 53.8, 55.6, RAZORWIND_SHORES },	-- Razorwind Shores

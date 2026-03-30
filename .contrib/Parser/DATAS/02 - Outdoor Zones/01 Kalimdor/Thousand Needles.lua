@@ -3131,7 +3131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.2, 50.6, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
-						i(6068, {  -- Recipe: Shadow Oil (RECIPE!)
+						i(6068, { 	-- Recipe: Shadow Oil (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 					},

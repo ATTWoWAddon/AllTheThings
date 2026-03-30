@@ -59,8 +59,8 @@ i(228979, 463866);	-- Sigil of Flowing Waters
 --- ITEM ---
 i(232610, 471400);	-- Magnificent Trollshine
 i(234272, 1213610);	-- Enchanted Repellent
-i(235528, 1217203); -- Enchant Bracer - Agility
-i(235526, 1217189); -- Enchant Bracer - Spell Power
+i(235528, 1217203);	-- Enchant Bracer - Agility
+i(235526, 1217189);	-- Enchant Bracer - Spell Power
 i(233997, 1213616);	-- Enchant Chest - Living Stats
 i(233998, 1213622);	-- Enchant Gloves - Holy Power
 i(233999, 1213626);	-- Enchant Gloves - Arcane Power
@@ -69,7 +69,7 @@ i(234277, 1213635);	-- Enchanted Mushroom
 i(234269, 1213600);	-- Enchanted Stopwatch
 i(234276, 1213633);	-- Enchanted Totem
 i(235133, 1216005);	-- Libram of Righteousness
-i(235134, 1216007); -- Libram of the Exorcist
+i(235134, 1216007);	-- Libram of the Exorcist
 i(235135, 1216010);	-- Libram of Sanctity
 i(235139, 1216020);	-- Idol of Sidereal Wrath
 i(235140, 1216022);	-- Idol of Feline Ferocity
@@ -99,10 +99,10 @@ i(0, 1220624);	-- Enchant Bracer - Greater Spellpower
 ------------------
 -- PATCH 1.15.7 --
 ------------------
-i(241191, 1231128);  -- Enchant Weapon - Grand Crusader
-i(241195, 1231139);  -- Enchant 2H Weapon - Grand Arcanist
-i(241201, 1231164);  -- Enchant Weapon - Grand Sorcerer
-i(242361, 1232172);  -- Enchant 2H Weapon - Grand Inquisitor
+i(241191, 1231128);	-- Enchant Weapon - Grand Crusader
+i(241195, 1231139);	-- Enchant 2H Weapon - Grand Arcanist
+i(241201, 1231164);	-- Enchant Weapon - Grand Sorcerer
+i(242361, 1232172);	-- Enchant 2H Weapon - Grand Inquisitor
 -- #endif
 
 -----------------

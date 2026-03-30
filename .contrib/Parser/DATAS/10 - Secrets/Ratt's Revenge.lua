@@ -440,6 +440,57 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						}),
 					},
 				}),
+				n(182086, {	-- Hek the Hungry Hornswog
+					["description"] = "Feed Hek a Bubblefilled Flounder to be vomited a Duck Egg.",
+					["coord"] = { 66.2, 70.2, THE_WAKING_SHORES },
+					["cost"] = { { "i", 200638, 1 } },	-- Bubblefilled Flounder
+					["groups"] = {
+						o(616048, {	-- Duck Egg
+							["coord"] = { 66.3, 70.2, THE_WAKING_SHORES },
+							["timeline"] = { ADDED_12_0_1_LAUNCH },
+							["groups"] = { i(260522) },	-- Duck Egg
+						}),
+					},
+				}),
+				n(197973, {	-- Papa
+					["description"] = "If Papa and the shiny gift are missing, click the nearby Papa's Feather to call him home.",
+					["coord"] = { 40.0, 78.3, VALDRAKKEN },
+					["groups"] = {
+						o(616053, {	-- Shiny Gift of Avian Appreciation
+							["coord"] = { 40.0, 78.3, VALDRAKKEN },
+							["provider"] = { "i", 260522 },	-- Duck Egg //Not removed? Probably supposed to be.
+							--["cost"] = { { "i", 260522, 1 } },	-- Duck Egg
+							["timeline"] = { ADDED_12_0_1_LAUNCH },
+							["groups"] = { i(260532) },	-- Tuskarr Dinner Bell
+						}),
+					},
+				}),
+				n(184166, {	-- To'no <"The Greatest Explorer Ever">
+					["description"] = "Hiding on the Forbidden Reach in one of several locations, To'No and Ko will be stealthed until you're right on top of them. May not be up in any locations, you might have to loop around until a spawn. Disappears a few minutes after being found. \nThe second dialogue interaction awards the Oddsight Focus while the first gives you some random loot.",
+					["coords"] = {
+						{ 37.4, 23.2, THE_FORBIDDEN_REACH },
+						{ 63.9, 50.7, THE_FORBIDDEN_REACH },
+						{ 54.6, 55.4, THE_FORBIDDEN_REACH },
+						{ 29.8, 47.5, THE_FORBIDDEN_REACH },
+						{ 41.3, 38.0, THE_FORBIDDEN_REACH },
+						{ 73.9, 37.6, THE_FORBIDDEN_REACH },
+						{ 62.7, 61.4, THE_FORBIDDEN_REACH },
+						{ 35.3, 40.7, THE_FORBIDDEN_REACH },
+						{ 54.4, 46.4, THE_FORBIDDEN_REACH },
+					},
+					["groups"] = {
+						i(260533, {	-- Oddsight Focus
+							["cost"] = { { "i", 260532, 1 } },	-- Tuskarr Dinner Bell
+							["timeline"] = { ADDED_12_0_1_LAUNCH },
+						}),
+					}
+				}),
+				hqt(93688, {	-- Acquire the Oddsight Focus
+					["name"] = "Acquire the Oddsight Focus",
+					["description"] = "Obtaining the focus fully lights up the 10 O'Clock Basin and removes the void from 11 and 12 O'Clock.",
+					["provider"] = { "i", 260533 },	-- Oddsight Focus
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}),
 				-- 11 O'clock Basin
 				-- 12 O'clock Basin
 				o(475116, {	-- Ordinary Pebble

@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						["timeline"] = { ADDED_2_3_0 },
 						-- #if AFTER TWW
-						["collectible"] = false,  -- remove when Blizzard fix fish collection
+						["collectible"] = false, 	-- remove when Blizzard fix fish collection
 						-- #endif
 					}),
 				}),

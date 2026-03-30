@@ -121,16 +121,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				title(543, {	-- Deck Hand <Name>
 					["collectible"] = false,
 				}),
-			},{ -- RENOWN 2 --
+			},{	-- RENOWN 2 --
 				i(216987),	-- Swabbie's Gloves
 				title(542, {	-- Swabbie <Name>
 					["collectible"] = false,
 				}),
-			},{ -- RENOWN 3 --
+			},{	-- RENOWN 3 --
 				i(216991),	-- Surefooted Boots
-			},{ -- RENOWN 4 --
+			},{	-- RENOWN 4 --
 				i(216989),	-- Quilted Breeches
-			},{ -- RENOWN 5 --
+			},{	-- RENOWN 5 --
 				i(216776),	-- Calcified Claymore
 				q(80384, {	-- A Keg-Stamped Package (account wide quest!)
 					-- pop asap as r5 is obtained with no providers
@@ -138,20 +138,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 						i(217397),	-- Keg-Stamped Coin x15
 					},
 				}),
-			},{ -- RENOWN 6 --
+			},{	-- RENOWN 6 --
 				-- #if BEFORE 11.0.7
 				pet(4435),	-- Happy (PET!)
 				-- #else
 				i(233252),	-- Happy (PET!)
 				-- #endif
 				i(216988),	-- Spun Cotton Shirt
-			},{ -- RENOWN 7 --
+			},{	-- RENOWN 7 --
 				i(216984),	-- Skulker's Cloak
-			},{ -- RENOWN 8 --
+			},{	-- RENOWN 8 --
 				i(216779),	-- Copper Cannon
-			},{ -- RENOWN 9 --
+			},{	-- RENOWN 9 --
 				i(216994),	-- Warm Woolen Cap
-			},{ -- RENOWN 10 --
+			},{	-- RENOWN 10 --
 				-- #if BEFORE 11.0.7
 				mount(300154),	-- Silver Tidestallion (MOUNT!)
 				-- #else
@@ -160,30 +160,30 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				title(544, {	-- Swashbuckler <Name>
 					["collectible"] = false,
 				}),
-			},{ -- RENOWN 11 --
+			},{	-- RENOWN 11 --
 				-- #if BEFORE 11.0.7
 				pet(4426),	-- Bubbles (PET!)
 				-- #else
 				i(233251),	-- Bubbles (PET!)
 				-- #endif
-			},{ -- RENOWN 12 --
+			},{	-- RENOWN 12 --
 				i(216986),	-- Swindler's Cutouts
-			},{ -- RENOWN 13 --
+			},{	-- RENOWN 13 --
 				i(216777),	-- Blacksteel Saber
-			},{ -- RENOWN 14 --
+			},{	-- RENOWN 14 --
 				i(216992),	-- Silent Leathers
-			},{ -- RENOWN 15 --
+			},{	-- RENOWN 15 --
 				i(216990),	-- Handwoven Trousers
-			},{ -- RENOWN 16 --
+			},{	-- RENOWN 16 --
 				i(216780),	-- Marvelous Multi-Shot
 				i(170197),	-- Swarthy Warning Sign (TOY!)
-			},{ -- RENOWN 17 --
+			},{	-- RENOWN 17 --
 				i(213436),	-- Fine Crimson Doublet
-			},{ -- RENOWN 18 --
+			},{	-- RENOWN 18 --
 				i(216778),	-- Bloody Iron Cleaver
-			},{ -- RENOWN 19 --
+			},{	-- RENOWN 19 --
 				i(216985),	-- Weatherproven Drape
-			},{ -- RENOWN 20 --
+			},{	-- RENOWN 20 --
 				-- #if BEFORE 11.0.7
 				mount(254812),	-- Royal Seafeather (MOUNT!)
 				-- #else
@@ -192,25 +192,25 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				title(545, {	-- Buccaneer <Name>
 					["collectible"] = false,
 				}),
-			},{ -- RENOWN 21 --
+			},{	-- RENOWN 21 --
 				i(216993),	-- Storm Captain's Hat
-			},{ -- RENOWN 22 --
+			},{	-- RENOWN 22 --
 				i(216755),	-- Plunderlord's Gilded Sigil
-			},{ -- RENOWN 23 --
+			},{	-- RENOWN 23 --
 				i(216731),	-- Plunderlord's Cuffs
-			},{ -- RENOWN 24 --
+			},{	-- RENOWN 24 --
 				i(216907),	-- A Tiny Plumed Tricorne (Pepe!)
-			},{ -- RENOWN 25 --
+			},{	-- RENOWN 25 --
 				i(216732),	-- Plunderlord's Golden Cinch
-			},{ -- RENOWN 26 --
+			},{	-- RENOWN 26 --
 				i(216730),	-- Plunderlord's Pilferers
-			},{ -- RENOWN 27 --
+			},{	-- RENOWN 27 --
 				i(216765),	-- Plunderlord's Neck-Severer
-			},{ -- RENOWN 28 --
+			},{	-- RENOWN 28 --
 				i(216733),	-- Plunderlord's Muckscrapers
-			},{ -- RENOWN 29 --
+			},{	-- RENOWN 29 --
 				i(216729),	-- Plunderlord's Fancy Trousers
-			},{ -- RENOWN 30 --
+			},{	-- RENOWN 30 --
 				-- #if BEFORE 11.0.7
 				pet(4425),	-- Glamrok (PET!)
 				-- #else
@@ -219,29 +219,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				title(546, {	-- First Mate <Name>
 					["collectible"] = false,
 				}),
-			},{ -- RENOWN 31 --
+			},{	-- RENOWN 31 --
 				i(216756),	-- Plunderlord's Fine Rapier
-			},{ -- RENOWN 32 --
+			},{	-- RENOWN 32 --
 				i(216774),	-- Plunderlord's Hand Cannon
-			},{ -- RENOWN 33 --
-			},{ -- RENOWN 34 --
+			},{	-- RENOWN 33 --
+			},{	-- RENOWN 34 --
 				i(216735),	-- Plunderlord's Waistcoat
-			},{ -- RENOWN 35 --
+			},{	-- RENOWN 35 --
 				i(216728),	-- Plunderlord's Drapery
-			},{ -- RENOWN 36 --
+			},{	-- RENOWN 36 --
 				i(216763),	-- Plunderlord's Silver Cutlass
-			},{ -- RENOWN 37 --
+			},{	-- RENOWN 37 --
 				i(216727),	-- Plunderlord's Tassled Spaulders
-			},{ -- RENOWN 38 --
+			},{	-- RENOWN 38 --
 				i(219348),	-- Plunderlord's Monocle
 				i(216734),	-- Plunderlord's Tricorne of Admiralty
-			},{ -- RENOWN 39 --
+			},{	-- RENOWN 39 --
 				-- #if BEFORE 11.0.7
 				mount(437162),	-- Polly Roger (MOUNT!)
 				-- #else
 				i(233240),	-- Polly Roger (MOUNT!)
 				-- #endif
-			},{ -- RENOWN 40 --
+			},{	-- RENOWN 40 --
 				title(541),	-- Plunderlord <Name>
 				i(219349),	-- Plunderlord's Tabard
 			},
@@ -532,7 +532,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 		n(PLUNDERSTORM, {
 			q(80110),	-- First WQ of the Day
-			-- q(80436),	-- Purchasing Pirate's Booty -- Once per account lockout
+			-- q(80436),	-- Purchasing Pirate's Booty	-- Once per account lockout
 			q(80262),	-- Renown 6 - Shabby Swabbie outfit unlocked in Plunderstorm
 			q(81657),	-- Renown 16 - Marveouls Multi-Shot unlocked in Plunderstorm
 			q(80263),	-- Renown 17 - Snazzy Swabbie outfit unlocked in Plunderstorm

@@ -1130,7 +1130,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.0, 25.8, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(33735, {	-- In Short Supply -- missing sourceQuests
+					q(33735, {	-- In Short Supply	-- missing sourceQuests
 						["qg"] = 75808,	-- Draka
 						["coords"] = {
 							{ 62.0, 10.9, TALADOR },
@@ -1248,7 +1248,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34452, {	-- Light's Rest
-						["sourceQuests"] = { -- TODO: is The Heart of Auchindoun and Holding the Line required here?
+						["sourceQuests"] = {	-- TODO: is The Heart of Auchindoun and Holding the Line required here?
 							33917,	-- Disrupting the Flow
 							33530,	-- Nightmare in the Tomb
 							34351,	-- We Must Construct Additional Pylons
@@ -2552,7 +2552,7 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = { i(116129) },	-- Desiccated Orc's Coin Pouch
 					}),
-					o(227587, {	-- Yuuri's Gift -- verify if this is still exclusive to alliance
+					o(227587, {	-- Yuuri's Gift	-- verify if this is still exclusive to alliance
 						["sourceQuest"] = 33530,	-- Nightmare in the Tomb
 						["questID"] = 34140,
 						["coord"] = { 40.6, 89.4, TALADOR },

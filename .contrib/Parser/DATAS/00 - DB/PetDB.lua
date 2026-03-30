@@ -4590,6 +4590,7 @@ i(260730, 4948);	-- Perturbed Sporebat
 i(265609, 4985);	-- Princess Bloodshed
 i(264366, 4975);	-- Razeshi C.
 i(251005, 4892);	-- Riftblade Familiar
+i(262982, 4969);	-- Roofus
 i(250136, 4875);	-- Rootling Nester
 i(255151, 4906);	-- Scruffbeak
 i(250147, 4886);	-- Silkcrawler

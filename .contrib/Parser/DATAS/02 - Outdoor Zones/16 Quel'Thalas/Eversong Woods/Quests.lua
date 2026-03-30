@@ -340,7 +340,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86644, {	-- Gods Before Us
 						["sourceQuests"] = { 86643 },	-- Following the Root
 						["provider"] = { "n", 236610 },	-- Arator
-						["coord"] = { 43.7, 30.1, 2579 }, -- Wartha'nan Crypts
+						["coord"] = { 43.7, 30.1, 2579 },	-- Wartha'nan Crypts
 						["groups"] = {
 							i(244144),	-- Bloodvein Clot (QI!)
 							i(244143),	-- Bonecarapace Fangs (QI!)

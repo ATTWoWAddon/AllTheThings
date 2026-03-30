@@ -2,25 +2,25 @@
 --	  E X P A N S I O N   F E A T U R E S	M O D U L E	   --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
 	n(ACHIEVEMENTS, {
 		ach(61809, {	-- Adventurer of the Dawn
-			["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42767, {	-- Veteran of the Dawn
-            ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+            ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42768, {	-- Champion of the Dawn
-			["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42769, {	-- Hero of the Dawn
-			["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42770, {	-- Myth of the Dawn
-			["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(61519),	-- Midnight Season 1: Catalyst Unbound
-		achraw(61490, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART }, }, {	-- Midnight Season 1: Champion of the Dawn
+		achraw(61490, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART }, }, {	-- Midnight Season 1: Champion of the Dawn
 			crit(108731),	-- Attained 1600+ Rated PVP rating
 			crit(109029),	-- Attained 2000+ Mythic Plus rating
 			crit(109881),	-- Defeated Dimensius on Heroic or Mythic difficulty

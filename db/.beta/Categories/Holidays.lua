@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cat,cq,crit,cs,cu,d,e,en,faction,flt,h,heir,i,ill,inst,m,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,cat,cq,crit,cs,cu,d,e,en,faction,flt,h,heir,hqt,i,ill,inst,m,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Holidays=
 h(-36,{difficultyID=19,SortPriority=30,SortType="EventStart",g={
 h(-12,{awp=30002,g={
@@ -144,7 +144,7 @@ n(23872,{awp=20001,e=7,isDaily=1,maps={242,243},g={
 ach(295,{awp=30002,e=7,g={
 crit(6184,{achID=1683,e=7,id=3})}}),
 i(117393,{awp=60002,b=1,e=7,g={
-q(91894,{awp=110200,description="This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",e=7,isDaily=1,type="hqt",g={
+hqt(91894,{awp=110200,description="This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",e=7,isDaily=1,g={
 mnt(1247662,{b=1,description="Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",e=7,itemID=248761,lvl=10}),
 mm(208742,{awp=100107,b=1,description="Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",e=7,questID=77774}),
 mnt(49379,{awp=20001,b=1,description="Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",e=7,itemID=37828,lvl=10}),
@@ -7309,10 +7309,10 @@ i(50320,{awp=30302,b=1,e=9}),
 i(49641,{awp=30302,b=1,e=9}),
 i(54537,{b=1,e=9,g={
 ach(4627,{e=9,providers={{"i",50250}}}),
-q(74957,{awp=100005,e=9,isDaily=1,type="hqt"}),
-q(86172,{awp=110007,e=9,isDaily=1,type="hqt"}),
-q(79104,{awp=100205,e=9,isDaily=1,type="hqt"}),
-q(93466,{awp=120000,e=9,isDaily=1,type="hqt"}),
+hqt(74957,{awp=100005,e=9,isDaily=1}),
+hqt(86172,{awp=110007,e=9,isDaily=1}),
+hqt(79104,{awp=100205,e=9,isDaily=1}),
+hqt(93466,{awp=120000,e=9,isDaily=1}),
 mnt(71342,{b=1,e=9,itemID=50250,lvl=10}),
 s(24329,49715,{e=9,f=2}),
 p(251,{b=1,e=9,itemID=50446,npcID=38374,spellID=71840}),
@@ -9279,7 +9279,7 @@ i(117394,{awp=60002,b=1,e=11,g={
 s(65955,117373,{b=1,e=11,f=28,spellID=46643}),
 p(253,{awp=30303,b=1,e=11,itemID=53641,npcID=40198,spellID=74932}),
 ill(3273,{awp=70003,b=1,e=11,itemID=138838,questID=42948}),
-q(83134,{awp=100207,description="Items under this group only have a chance to drop on your first kill per day for your warband.",e=11,isDaily=1,type="hqt",g={
+hqt(83134,{awp=100207,description="Items under this group only have a chance to drop on your first kill per day for your warband.",e=11,isDaily=1,g={
 mm(224163,{b=1,e=11,questID=82741}),
 s(292134,244356,{awp=110107,e=11,f=2}),
 s(292192,244422,{awp=110107,e=11,f=29}),
@@ -10979,7 +10979,7 @@ q(79135,{awp=100206,coords={
 [1]={{52.6,41.2}}},e=15,isDaily=1,qgs={217125},r=1,sourceQuests={79578}}),
 q(73192,{awp=100206,e=15,isDaily=1,maps={37},providers={{"i",210594}},r=2,g={
 i(216874,{b=1,e=15,g={
-q(82543,{e=15,isDaily=1,type="hqt"}),
+hqt(82543,{e=15,isDaily=1}),
 mnt(432455,{b=1,e=15,itemID=212599,lvl=10}),
 s(194962,212698,{e=15,f=2}),
 s(194963,212699,{e=15,f=2}),
@@ -10990,7 +10990,7 @@ s(194978,212715,{e=15,f=2})}}),
 i(213428,{b=1,e=15,sym={{"select","itemID",212698,212699,212701,212711,212985,212715}}})}}),
 q(79558,{awp=100206,e=15,isDaily=1,maps={1},providers={{"i",216932}},r=1,g={
 i(216874,{b=1,e=15,g={
-q(82543,{e=15,isDaily=1,type="hqt"}),
+hqt(82543,{e=15,isDaily=1}),
 mnt(432455,{b=1,e=15,itemID=212599,lvl=10}),
 s(194962,212698,{e=15,f=2}),
 s(194963,212699,{e=15,f=2}),
@@ -15322,7 +15322,7 @@ i(147574,{b=1,e=258,f=55}),
 i(147575,{b=1,e=258,f=55}),
 i(147576,{b=1,e=258,f=55})}}),
 h(-58,{coords={
-[2112]={{74.4,56.2}}},crs={54442,54473,64573,67014,85289,85291,85961,86395,99867,133196,142068,156663,185570,221848},e=258,g={
+[2112]={{74.4,56.2}}},crs={54442,54473,64573,67014,85289,85291,85961,86395,99867,133196,142068,156663,185570,221848,243242},e=258,g={
 sp(245743,{e=258,g={
 s(89278,151116,{b=1,cost={{"i",151134,1}},e=258,f=10,spellID=245686})}}),
 en(151117,{b=1,c={5,8,9},cost={{"i",151134,60}},e=258,questID=48058,spellID=245680,sym={{"select","sourceID",11913,12071,12101,12145,12313,12315,12451,12585,12706,14170,72465}},tmogSetID=1450,g={
@@ -15531,12 +15531,24 @@ s(230771,233137,{awp=110100,cost={{"i",151134,50}},e=258,f=2}),
 s(227803,230035,{awp=110100,cost={{"i",151134,25}},e=258,f=2}),
 s(230720,233081,{awp=110100,cost={{"i",151134,25}},e=258,f=2}),
 s(230754,233120,{awp=110100,cost={{"i",151134,50}},e=258,f=2}),
-s(249346,235021,{awp=110100,cost={{"i",151134,25}},e=258,f=2})}}),
+s(249346,235021,{awp=110100,cost={{"i",151134,25}},e=258,f=2}),
+en(242457,{awp=120001,cost={{"i",151134,60}},e=258,questID=90641,spellID=1232370,tmogSetID=4526,g={
+s(290230,242409,{e=258,f=2}),
+s(290253,242438,{e=258,f=2})}}),
+en(257972,{awp=120001,cost={{"i",151134,60}},e=258,questID=93323,spellID=1262584,tmogSetID=5339,g={
+s(301310,257761,{e=258,f=2}),
+s(301328,257781,{e=258,f=3})}}),
+s(298514,252712,{awp=120001,cost={{"i",151134,25}},e=258,f=2}),
+s(302523,262839,{awp=120001,cost={{"i",151134,15}},e=258,f=2}),
+s(302505,262821,{awp=120001,cost={{"i",151134,25}},e=258,f=2}),
+s(302541,262857,{awp=120001,cost={{"i",151134,25}},e=258,f=2}),
+s(302170,260415,{awp=120001,cost={{"i",151134,50}},e=258,f=2})}}),
 h(-45,{e=258,g={
 q(76308,{awp=100105,coords={
 [84]={{51,72.5}},
 [85]={{49,76.4}},
-[2339]={{45.7,52.7}}},description="Blizzard messed up here, this should've been the second quest and not breadcrumb.",e=258,isBreadcrumb=1,isMonthly=1,nextQuests={76361},qgs={206252,206383,236405}}),
+[2339]={{45.7,52.7}},
+[2393]={{52.3,58.4}}},description="Blizzard messed up here, this should've been the second quest and not breadcrumb.",e=258,isBreadcrumb=1,isMonthly=1,nextQuests={76361},qgs={206252,206383,236405,258350}}),
 q(76361,{awp=100105,coords={
 [2112]={{31.5,63.1}},
 [2339]={{46,55}}},description="Blizzard messed up here, this should've been the first quest and breadcrumb.",e=258,isMonthly=1,qgs={199261,220307},sourceQuests={76308}}),
@@ -15579,7 +15591,23 @@ q(86699,{awp=110100,coords={
 q(86700,{awp=110100,coords={
 [2214]={{43,33.2}}},e=258,isMonthly=1,qgs={236359}}),
 q(86701,{awp=110100,coords={
-[2214]={{58.8,78.9}}},e=258,isMonthly=1,qgs={236361}})}})}}),
+[2214]={{58.8,78.9}}},e=258,isMonthly=1,qgs={236361}}),
+q(94622,{awp=120001,coords={
+[2393]={{51.2,76.3}}},e=258,isMonthly=1,qgs={258379}}),
+q(94630,{awp=120001,coords={
+[2395]={{47.9,67}}},e=258,isMonthly=1,qgs={258381}}),
+q(94635,{awp=120001,coords={
+[2437]={{44.7,65.2}}},e=258,isMonthly=1,qgs={258396}}),
+q(94636,{awp=120001,coords={
+[2437]={{47.5,26.4}}},e=258,isMonthly=1,qgs={258412}}),
+q(94735,{awp=120001,coords={
+[2413]={{54.4,52.5}}},e=258,isMonthly=1,qgs={258618}}),
+q(94637,{awp=120001,coords={
+[2413]={{65.1,23.3}}},e=258,isMonthly=1,qgs={258431}}),
+q(94736,{awp=120001,coords={
+[2405]={{42.4,73.9}}},e=258,isMonthly=1,qgs={258621}}),
+q(94738,{awp=120001,coords={
+[2405]={{37,58.9}}},e=258,isMonthly=1,qgs={258624}})}})}}),
 h(-591,{awp=50004,coords={
 [418]={{76,26.8}}},e=133900,providers={{"n",73594},{"o",223184}},g={
 h(-12,{e=133900,g={
@@ -16500,8 +16528,8 @@ q(82817,{coords={
 i(232471,{b=1,e=242,lvl=80,sym={{"select","headerID",-609},{"pop"},{"where","instanceID",1301},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 q(84735,{coords={
 [71]={{63,49.7}}},e=242,lvl=30,qgs={229494},rwp=110007,u=2}),
-q(84743,{coords={
-[71]={{63,49.7}}},e=242,providers={{"n",229494}},type="hqt"})}}),
+hqt(84743,{coords={
+[71]={{63,49.7}}},e=242,providers={{"n",229494}}})}}),
 h(-58,{e=242,rwp=110007,u=2,g={
 s(229519,231418,{b=1,e=242,f=22,lvl=22,u=2}),
 s(229567,231480,{b=1,e=242,f=6,lvl=22,u=2}),
@@ -16818,7 +16846,7 @@ i(228620,{coords={
 toy(206696,{b=1,e=242})}}),
 q(84868,{coords={
 [71]={{63.3,52.4}}},e=242,lvl=10,qgs={226766},sourceQuests={84521},g={
-q(83831,{e=242,type="hqt"}),
+hqt(83831,{e=242}),
 i(229351,{b=1,f=55,spellID=459811})}})}}),
 h(-58,{e=242,g={
 n(226766,{coords={

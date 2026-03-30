@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,artifact,cl,cq,crit,cu,d,de,e,en,faction,flt,follower,h,heir,i,ill,inst,m,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,artifact,cl,cq,crit,cu,d,de,e,en,faction,flt,follower,h,heir,hqt,i,ill,inst,m,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
 h(-103,{
@@ -1267,18 +1267,18 @@ n(185784,{u=2,g={
 i(199838,{b=2,spellID=388242,u=2}),
 crit(55367,{achID=16431,id=1,u=2})}})}}),
 h(-35,{u=2,g={
-q(72285,{coords={
-[84]={{25.4,55.2}}},qgs={189078},r=2,sourceQuests={65101,66577},type="hqt",u=2}),
-q(72286,{coords={
-[84]={{27.1,53.8}}},qgs={194756},r=2,sourceQuests={65101,66577},type="hqt",u=2}),
-q(72287,{coords={
-[84]={{27.1,53.8}}},qgs={189600},r=2,sourceQuests={65101,66577},type="hqt",u=2}),
-q(72288,{coords={
-[1]={{55.9,12.1}}},providers={{"n",198411}},r=1,sourceQuests={65443,72256},type="hqt",u=2}),
-q(72289,{coords={
-[1]={{55.7,12.2}}},providers={{"n",184665}},r=1,sourceQuests={65443,72256},type="hqt",u=2}),
-q(72290,{coords={
-[1]={{55.6,12.3}}},providers={{"n",184858}},r=1,sourceQuests={72256},type="hqt",u=2})}})}}),
+hqt(72285,{coords={
+[84]={{25.4,55.2}}},qgs={189078},r=2,sourceQuests={65101,66577},u=2}),
+hqt(72286,{coords={
+[84]={{27.1,53.8}}},qgs={194756},r=2,sourceQuests={65101,66577},u=2}),
+hqt(72287,{coords={
+[84]={{27.1,53.8}}},qgs={189600},r=2,sourceQuests={65101,66577},u=2}),
+hqt(72288,{coords={
+[1]={{55.9,12.1}}},providers={{"n",198411}},r=1,sourceQuests={65443,72256},u=2}),
+hqt(72289,{coords={
+[1]={{55.7,12.2}}},providers={{"n",184665}},r=1,sourceQuests={65443,72256},u=2}),
+hqt(72290,{coords={
+[1]={{55.6,12.3}}},providers={{"n",184858}},r=1,sourceQuests={72256},u=2})}})}}),
 x(11,{awp=110000,rwp=110002,u=2,g={
 h(-12,{u=2,g={
 ach(40796,{u=2,g={
@@ -1560,8 +1560,8 @@ o(553558,{coords={
 [241]={{46.5,72}}},u=2,g={
 i(246399,{u=2})}}),
 i(246400,{u=2})}}),
-q(92103,{coords={
-[241]={{49.9,80.8}}},description="Dialogue becomes available after accepting 'Midnight Dress' (90765).",qgs={237506},sourceQuests={90765},type="hqt",u=2}),
+hqt(92103,{coords={
+[241]={{49.9,80.8}}},description="Dialogue becomes available after accepting 'Midnight Dress' (90765).",qgs={237506},sourceQuests={90765},u=2}),
 q(90766,{coords={
 [241]={{46.4,72}}},lvl=10,qgs={246021},sourceQuests={90765},u=2}),
 q(90767,{coords={
@@ -2521,6 +2521,25 @@ i(142289,{awp=70105,b=1,cost={{"c",1299,500}},f=55,rwp=90002,spellID=229955,u=2}
 i(142291,{awp=70105,b=1,cost={{"c",1299,500}},f=55,rwp=90002,spellID=229957,u=2}),
 i(142292,{awp=70105,b=1,cost={{"c",1299,500}},f=55,rwp=90002,spellID=229959,u=2}),
 i(143759,{b=1,cost={{"c",1299,1000}},f=55})}})})}}),
+h(-723,{awp=10400,rwp=40003,u=2,g={
+n(14464,{coords={
+[76]={{72.6,20},{77,24.2},{77.2,16.6},{80,24.2},{82.6,21}}},description="This is only available during an Elemental Invasion.",u=2,g={
+s(7424,18673,{f=8,lvl=23,u=2}),
+i(18674,{f=52,lvl=23,u=2})}}),
+n(14461,{coords={
+[78]={{44.6,46},{45.4,54.8},{48.2,41.2},{51.6,57.6},{53.2,41.8},{55.6,57.4},{56.6,42.8},{56.6,48.2}}},description="This is only available during an Elemental Invasion.",u=2,g={
+s(7422,18671,{f=23,lvl=23,u=2}),
+s(7423,18672,{f=1,lvl=23,u=2})}}),
+n(14457,{coords={
+[83]={{54.6,42.6}}},description="This is only available during an Elemental Invasion.",u=2,g={
+r(26279,{itemID=21548,requireSkill=165,skillID=2532,u=2}),
+i(18678,{f=51,lvl=23,u=2}),
+i(18679,{f=52,lvl=23,u=2})}}),
+n(14454,{coords={
+[81]={{17.6,27},{26.6,29.6},{31,23.6},{32.2,17.2}}},description="This is only available during an Elemental Invasion.",u=2,g={
+r(26279,{itemID=21548,requireSkill=165,skillID=2532,u=2}),
+s(7425,18676,{f=6,lvl=23,u=2}),
+s(7426,18677,{f=3,lvl=23,u=2})}})}}),
 h(-476,{awp=110007,e=444,maps={2257},rwp=110100,u=2,g={
 h(-12,{e=444,u=2,g={
 ach(20509,{e=444,u=2}),

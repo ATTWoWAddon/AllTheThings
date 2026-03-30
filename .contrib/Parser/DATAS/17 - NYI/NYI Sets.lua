@@ -4178,7 +4178,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(170631),	-- Springrain Stone of Durability
 					}),
 					cl(DRUID, RESTORATION, {
-						i(170625),	-- Springrain Staff -- not granted with boost
+						i(170625),	-- Springrain Staff	-- not granted with boost
 						i(170612),	-- Springrain Medallion
 					}),
 				}),
@@ -4209,7 +4209,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				}),
 				cl(PALADIN, {
 					cl(PALADIN, HOLY, {
-						i(170674),	-- Sunsoul Shield -- not granted with boost
+						i(170674),	-- Sunsoul Shield	-- not granted with boost
 						i(170668),	-- Sunsoul Necklace
 					}),
 					cl(PALADIN, PROTECTION, {
@@ -4254,8 +4254,8 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(170714),	-- Streamtalker Choker
 					}),
 					cl(SHAMAN, RESTORATION, {
-						i(170734),	-- Streamtalker Slicers -- not granted with boost
-						i(170735),	-- Streamtalker Shield -- not granted with boost
+						i(170734),	-- Streamtalker Slicers	-- not granted with boost
+						i(170735),	-- Streamtalker Shield	-- not granted with boost
 						i(170728),	-- Streamtalker Necklace
 					}),
 				}),

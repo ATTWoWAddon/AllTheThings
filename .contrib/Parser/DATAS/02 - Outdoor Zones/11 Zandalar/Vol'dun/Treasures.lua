@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			o(294319, {	-- Sandsunken Treasure
 				["description"] = "Click the Abandoned Bobber to spawn the chest.",
-				["provider"] = { "o", 294318 },	-- -- Abandoned Bobber
+				["provider"] = { "o", 294318 },	-- Abandoned Bobber
 				["questID"] = 53004,
 				["coord"] = { 26.5, 45.4, VOLDUN },
 			}),

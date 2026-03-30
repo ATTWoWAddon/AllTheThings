@@ -90,7 +90,7 @@ root(ROOTS.Craftables, {
 								136632,	-- Chaos Blaster
 						}},
 						["groups"] = {
-							i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
+							i(136911),	-- Knockoff Blingtron	-- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
 						},
 					}),
 				},
@@ -106,7 +106,13 @@ root(ROOTS.Craftables, {
 					i(168740, {	-- Blingtron 7000 Gift Package
 						["sym"] = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
 						["groups"] = {
-							-- TODO does the 7000 have any special unique drop?
+							i(170060, {	-- Encrypted Message
+								i(170055),	-- Decrypted Message 001-322
+								i(170056),	-- Decrypted Message 001-346
+								i(170057),	-- Decrypted Message 001-372
+								i(170058),	-- Decrypted Message 001-398
+								i(170059),	-- Decrypted Message 002-001
+							}),
 						},
 					}),
 				},

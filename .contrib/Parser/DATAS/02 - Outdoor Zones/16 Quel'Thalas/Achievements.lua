@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(41805, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- Arator's Journey
-			ach(62188, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- More Than Just Their Roots (automated) -- TODO idk where else to put this
+			ach(62188, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- More Than Just Their Roots (automated)	-- TODO idk where else to put this
 			ach(62386, {	-- Light Up the Night
 				i(252011),	-- Brilliant Petalwing (MOUNT)
 			}),
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			ach(42117),	-- The War of Light and Shadow
 		}),
-		n(SPECIAL, { -- TODO idk where else to put this without making new 'special.lua' files in 2 zones to source one npc each
+		n(SPECIAL, {	-- TODO idk where else to put this without making new 'special.lua' files in 2 zones to source one npc each
 			n(245103, {	-- Chonon
 				["coord"] = { 58.4, 30.0, MOUNT_HYJAL },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },

@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(169807),	-- Salvaged Mechagnome Appendage (QI!)
 				},
 			}),
-			q(54965, {	-- Chopped Bots -- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation? -- also popped 55480
+			q(54965, {	-- Chopped Bots	-- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation?	-- also popped 55480
 				["provider"] = { "n", 150086 },	-- Bolten Springspark
 				["coord"] = { 63.1, 39.2, MECHAGON },
 				["_drop"] = { "isDaily" },
@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(169474),	-- Corrupted Data Disc
 				},
 			}),
-			q(56328, {	-- Do Not Drink -- 56329 also popped. Possibly a daily?
+			q(56328, {	-- Do Not Drink	-- 56329 also popped. Possibly a daily?
 				["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				["provider"] = { "n", 153750 },	-- Koupal Oilshins
 				["coord"] = { 59.0, 31.6, MECHAGON },
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(167076),	-- Grease Trap (QI!)
 				},
 			}),
-			q(56380, {	-- Grounded -- also popped 56330
+			q(56380, {	-- Grounded	-- also popped 56330
 				["provider"] = { "n", 154906 },	-- Brian Pitchspark
 				["coord"] = { 42.8, 29.3, MECHAGON },
 				["isDaily"] = true,
@@ -471,7 +471,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(169225),	-- Unstoppable Countdown Clock (QI!)
 				},
 			}),
-			q(55101, {	-- Junkyard Tinkering and You -- also triggered 56902 for alliance -- slumber note: maybe not on live?  didn't get it on my priest.
+			q(55101, {	-- Junkyard Tinkering and You	-- also triggered 56902 for alliance	-- slumber note: maybe not on live?  didn't get it on my priest.
 				["sourceQuest"] = 55736,	-- Welcome to the Resistance
 				["provider"] = { "n", 152295 },	-- Pascal
 				["coord"] = { 71.2, 32.3, MECHAGON },
@@ -749,7 +749,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["modelScale"] = 4.2,
 				["repeatable"] = true,
 			}),
-			q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued -- horde only?  didn't pop on alliance on live)
+			q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued	-- horde only?  didn't pop on alliance on live)
 				["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				["provider"] = { "n", 152820 },	-- Prince Erazmin
 				["coord"] = { 59.1, 55.1, MECHAGON },
@@ -786,7 +786,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 82.9, 23.3, MECHAGON },
 				["isDaily"] = true,
 			}),
-			q(54086, {	-- Right Bot for the Job -- 55907 and 56100 also popped
+			q(54086, {	-- Right Bot for the Job	-- 55907 and 56100 also popped
 				["sourceQuest"] = 55608,	-- Shop Project
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },

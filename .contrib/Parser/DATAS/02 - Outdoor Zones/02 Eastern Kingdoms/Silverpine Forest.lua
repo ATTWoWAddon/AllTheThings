@@ -1789,7 +1789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_1 },
 				}),
-				n(12432, {  -- Old Vicejaw
+				n(12432, { 	-- Old Vicejaw
 					["coords"] = {
 						{ 54.6, 52.0, SILVERPINE_FOREST },
 						{ 51.6, 63.8, SILVERPINE_FOREST },

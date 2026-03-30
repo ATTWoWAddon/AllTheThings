@@ -16,7 +16,7 @@ i(38233);	-- Path of Illidan
 -- Wrath Classic --
 i(40110);	-- Haunted Momento (Should be a toy...)
 i(198647);	-- Fishspeaker's Lucky Lure
-i(38506);	-- Don Carlos' Famous Hat -- With ICC Patch of Wrath Classic, they made the hat (the original removed version) into a Toy. Whether it also functions as a transmog still is not known.
+i(38506);	-- Don Carlos' Famous Hat	-- With ICC Patch of Wrath Classic, they made the hat (the original removed version) into a Toy. Whether it also functions as a transmog still is not known.
 
 -- Cata Classic
 i(216893);	-- Goblin Town-in-a-Box

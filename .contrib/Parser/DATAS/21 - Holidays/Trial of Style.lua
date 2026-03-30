@@ -31,6 +31,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				99867,	-- Warpweaver Tuviss <Transmogrifier> (Neutral / Dalaran)
 				85291,	-- Warpweaver Tuviss <Transmogrifier> (Alliance / Lunarfall)
 				221848,	-- Warpweaver Voxin <Transmogrifier> (Dornogal)
+				243242,	-- Warpweaver Diveera <Transmogrifier> (Silvermoon City)
 			},
 			["coord"] = { 74.4, 56.2, VALDRAKKEN },	-- Add all Coords if you want to..
 			["groups"] = {
@@ -246,7 +247,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 } },
 					["timeline"] = { ADDED_10_0_5 },
 				}),
-
 				--
 				i(213518, {	-- Classic Sepia Tabard
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 } },
@@ -401,6 +401,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 } },
 					["timeline"] = { ADDED_11_1_0 },
 				}),
+				--
+				iensemble(242457, {	-- Ensemble: Sepia Sweatsuit
+					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 } },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}),
+				iensemble(257972, {	-- Ensemble: Sorcerer's Sepia Garb
+					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 } },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}),
+				i(252712, {	-- Sepia Winter Toque
+					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 } },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}),
+				i(262839, {	-- Sepia Dunecloth Belt
+					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 } },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}),
+				i(262821, {	-- Sepia Dunecloth Skirt
+					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 } },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}),
+				i(262857, {	-- Sepia Dunecloth Vest
+					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 } },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}),
+				i(260415, {	-- Silver Chainkini
+					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 } },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}),
 			},
 		}),
 		n(QUESTS, bubbleDown({
@@ -409,11 +438,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 		}, {
 			q(76308, {	-- The Trial of Style
 				["description"] = "Blizzard messed up here, this should've been the second quest and not breadcrumb.",
-				["providers"] = {
-					{ "n", 206252 },	-- Primo
-					{ "n", 206383 },	-- Don'a
+				["qgs"] = {
+					206252,	-- Primo
+					206383,	-- Don'a
 					-- #if AFTER 11.1.0
-					{ "n", 236405 },	-- Perfecto
+					236405,	-- Perfecto
+					-- #endif
+					-- #if AFTER MID
+					258350,	-- Belli
 					-- #endif
 				},
 				["coords"] = {
@@ -421,6 +453,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					{ 49.0, 76.4, ORGRIMMAR },
 					-- #if AFTER 11.1.0
 					{ 45.7, 52.7, DORNOGAL },
+					-- #endif
+					-- #if AFTER MID
+					{ 52.3, 58.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 					-- #endif
 				},
 				["isBreadcrumb"] = true,
@@ -524,6 +559,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				["provider"] = { "n", 236361 },	-- Cataloger Shotfrenzy
 				["coord"] = { 58.8, 78.9, THE_RINGING_DEEPS },
 				["timeline"] = { ADDED_11_1_0 },
+			}),
+			q(94622, {	-- Work It
+				["qg"] = 258379,	-- Cataloger Crimsonmane
+				["coord"] = { 51.2, 76.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			q(94630, {	-- Work It
+				["qg"] = 258381,	-- Cataloger Truesight
+				["coord"] = { 47.9, 67.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			q(94635, {	-- Work It
+				["qg"] = 258396,	-- Cataloger Snapshot
+				["coord"] = { 44.7, 65.2, MAP.MIDNIGHT.ZULAMAN },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			q(94636, {	-- Work It
+				["qg"] = 258412,	-- Cataloger Zhu
+				["coord"] = { 47.5, 26.4, MAP.MIDNIGHT.ZULAMAN },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			q(94735, {	-- Work It
+				["qg"] = 258618,	-- Cataloger Lursa
+				["coord"] = { 54.4, 52.5, MAP.MIDNIGHT.HARANDAR },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			q(94637, {	-- Work It
+				["qg"] = 258431,	-- Cataloger Neef
+				["coord"] = { 65.1, 23.3, MAP.MIDNIGHT.HARANDAR },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			q(94736, {	-- Work It
+				["qg"] = 258621,	-- Cataloger Ani
+				["coord"] = { 42.4, 73.9, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			q(94738, {	-- Work It
+				["qg"] = 258624,	-- Cataloger Dae
+				["coord"] = { 37.0, 58.9, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 		})),
 	},

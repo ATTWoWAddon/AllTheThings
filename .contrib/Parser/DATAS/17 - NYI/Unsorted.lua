@@ -361,74 +361,8 @@ root(ROOTS.Unsorted, {
 			i(263860),	-- Bracelets of Voidwrath
 			i(263879),	-- [DNT] [AUTOGEN] 12PH_Folk_Gazebo02.M2
 			i(263883),	-- [DNT] [AUTOGEN] 12PH_Folk_Trellis02.M2
-			i(263889),	-- Void-Laced Signet
-			i(263890),	-- Void-Laced Ring
-			i(263891),	-- Void-Laced Pendant
-			i(263892),	-- Void-Laced Torc
-			i(263893),	-- Void-Laced Necklace
-			i(263894),	-- Void-Touched Rifle
-			i(263898),	-- Void-Touched Fang
-			i(263900),	-- Void-Touched Gutter
-			i(263901),	-- Void-Touched Sacrificial Knife
-			i(263902),	-- Void-Touched Twinblade
-			i(263903),	-- Void-Touched Basher
-			i(263904),	-- Void-Touched Gavel
-			i(263905),	-- Void-Touched Apprentice's Gavel
-			i(263906),	-- Void-Touched Bulwark
-			i(263907),	-- Void-Touched Spade
-			i(263908),	-- Void-Touched Poleaxe
-			i(263909),	-- Void-Touched Sunfury Stave
-			i(263910),	-- Void-Touched Beacon Staff
-			i(263911),	-- Void-Touched Battle Baton
-			i(263912),	-- Void-Touched Magister's Baton
-			i(263913),	-- Void-Touched Smasher
-			i(263914),	-- Void-Touched Hammer
-			i(263915),	-- Void-Touched Torch
-			i(263916),	-- Void-Touched Tome
-			i(263917),	-- Void-Touched Flaredblade
-			i(263918),	-- Void-Touched Guard's Blade
-			i(263919),	-- Void-Touched Magister's Sword
-			i(263920),	-- Void-Touched Dueling Blade
-			i(263921),	-- Void-Touched Sunfury Blade
-			i(263922),	-- Void-Touched Mageblade
-			i(263923),	-- Void-Touched Greatblade
-			i(263924),	-- Void-Touched Greatbow
-			i(263925),	-- Void-Touched Foci
-			i(263926),	-- Void-Touched Greatwand
-			i(263927),	-- Void-Touched Glaiveblade
-			i(263928),	-- Cache of Void-Touched Armaments
-			i(263929),	-- Cache of Void-Touched Armaments
-			i(263941),	-- Void-Touched Rifle
-			i(263942),	-- Void-Touched Fang
-			i(263943),	-- Void-Touched Gutter
-			i(263946),	-- Void-Touched Basher
-			i(263949),	-- Void-Touched Bulwark
-			i(263950),	-- Void-Touched Spade
-			i(263952),	-- Void-Touched Sunfury Stave
-			i(263954),	-- Void-Touched Battle Baton
-			i(263956),	-- Void-Touched Smasher
-			i(263959),	-- Void-Touched Tome
-			i(263960),	-- Void-Touched Flaredblade
-			i(263963),	-- Void-Touched Dueling Blade
-			i(263966),	-- Void-Touched Greatblade
-			i(263967),	-- Void-Touched Greatbow
-			i(263968),	-- Void-Touched Foci
-			i(263969),	-- Void-Touched Greatwand
-			i(263970),	-- Void-Touched Glaiveblade
 			i(264162),	-- Enchanted Snowflake [PH]
-			i(264314),	-- Cache of Void-Touched Headgear
-			i(264315),	-- Cache of Void-Touched Shoulderwear
-			i(264316),	-- Cache of Void-Touched Cloaks
-			i(264317),	-- Cache of Void-Touched Chestpieces
-			i(264318),	-- Cache of Void-Touched Bracers
-			i(264319),	-- Cache of Void-Touched Gloves
-			i(264320),	-- Cache of Void-Touched Belts
-			i(264321),	-- Cache of Void-Touched Legwear
-			i(264322),	-- Cache of Void-Touched Boots
-			i(264323),	-- Cache of Void-Touched Weapons
 			i(264324),	-- PH Decor (Floating Podium, Ink Well, Runed Paper, Void Candle)
-			i(264348),	-- Unbound Manawyrm
-			i(264914),	-- Ranger's Cache
 			i(265924),	-- High-Mounted Razorwind Bowl Chandelier
 			i(265925),	-- Razorwind Bowl Chandelier
 			i(265926),	-- Low-Hanging Razorwind Bowl Chandelier
@@ -441,7 +375,6 @@ root(ROOTS.Unsorted, {
 			i(266250),	-- Long Hanging Tavern Lantern
 			i(266260),	-- [DNT] [AUTOGEN] 12PH_Opulent_Crate02_Open.M2
 			i(266448),	-- Hal'hadar Battery Core
-			i(267051),	-- Dark Particle
 			i(267075),	-- Ornate Elven Stovetop
 			i(267083),	-- Razorwind Campfire Grill
 			i(267084),	-- Founder's Point Hay Bale
@@ -529,7 +462,6 @@ root(ROOTS.Unsorted, {
 			i(268513),	-- Emberstone Loyalist Boltshot
 			i(268514),	-- Gilneas Loyalist Boltshot
 			i(268552),	-- Ascendant Voidcore
-			i(268578),	-- Void-Touched Hawkstrider
 			i(268592),	-- Blue Sunwalker Breastplate
 			i(268593),	-- Blue Sunwalker Cloak
 			i(268594),	-- Blue Sunwalker Gauntlets
@@ -628,7 +560,6 @@ root(ROOTS.Unsorted, {
 			i(268910),	-- Sunbringer's Totemic Edge
 			i(268911),	-- Dawnchaser Totemic Edge
 			i(268969),	-- Nebulous Voidcache: Delver's Trove
-			i(268996),	-- Field Accolade
 			i(269001),	-- Arsenal: Drakebreaker's Weapons
 			i(269002),	-- Arsenal: Hellbloom Weapons
 			i(269234),	-- Overflowing Ritual Site Cache
@@ -647,8 +578,6 @@ root(ROOTS.Unsorted, {
 			i(270061),	-- Void-Bathed Snapdragon
 			i(270062),	-- Void-Touched Chick
 			i(270063),	-- Void-Touched Lynx Kitten
-			i(270244),	-- Field Pouch
-			i(270247),	-- Field Satchel
 			i(270279),	-- Crown of Midnight Springflowers
 			i(270280),	-- Crown of Azure Springflowers
 			i(270281),	-- Crown of Sepia Springflowers
@@ -667,8 +596,6 @@ root(ROOTS.Unsorted, {
 			i(270295),	-- Crown of Aquatic Springflowers
 			i(270296),	-- Crown of Snowy Springflowers
 			i(270297),	-- Crown of Sunny Springflowers
-			i(270330),	-- Void-Touched Dragonhawk Egg
-			i(270331),	-- Void-Infused Mindbreaker Fry
 			i(270932),	-- Wriggling Field Pouch
 			i(270933),	-- Bulging Field Pouch
 			i(270934),	-- Recruit's Field Pouch
@@ -724,7 +651,6 @@ root(ROOTS.Unsorted, {
 			i(270986),	-- Ranger Recruit's Medallion
 			i(270987),	-- Recruit's Field Satchel
 			i(270988),	-- Wriggling Capybara
-			i(270989),	-- Cappy
 			i(270990),	-- Curious Lynx Kitten
 			i(270991),	-- Sunfury Great Bulwark
 			i(270992),	-- Amani Hex Crest
@@ -786,7 +712,6 @@ root(ROOTS.Unsorted, {
 			i(271048),	-- Wriggling Tentacle Fetish
 			i(271049),	-- Ritual Weaver's Spellstick
 			i(271050),	-- Forest Hunter's Quiver
-			i(271158),	-- Dark Obelisk
 			i(271162),	-- Sin'dorei Garden Swing
 			i(271163),	-- Blazing Guardian's Rug
 			i(271164),	-- Dream Guardian's Rug
@@ -805,11 +730,7 @@ root(ROOTS.Unsorted, {
 			i(271341),	-- Galactic Voidsliver
 			i(271342),	-- Galactic Void Matrix
 			i(271353),	-- Collection of Valuables
-			i(271785),	-- Ritual Spoils
-			i(271786),	-- Ritual Site Reports
-			i(271787),	-- Field Accolades
 			i(271814),	-- Spring Dagger-Tined Rake
-			i(271973),	-- Ritual Spoils
 			i(271974),	-- Ritual Spoils
 			i(271975),	-- Ritual Spoils
 			i(271976),	-- Ritual Spoils
@@ -860,16 +781,11 @@ root(ROOTS.Unsorted, {
 			i(272961),	-- Spellbreakers Bladestaff
 			i(273013),	-- Void-Permeated Hide Scrap
 			i(273014),	-- Howling Glass Shard
-			i(273135),	-- Void Elf Floating Desk
-			i(273142),	-- Runic Parchment
-			i(273147),	-- Void Inkwell
 			i(273152),	-- Delve Gearbox
 			i(273153),	-- Delve Gearbox
 			i(273154),	-- Delve Gearbox
 			i(273155),	-- Delve Gearbox
 			i(273156),	-- Delve Gearbox
-			i(273157),	-- Void Flame Candle
-			i(273159),	-- Void Elf Scribe's Desk
 		})),
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
 			n(ARMOR, {
@@ -884,7 +800,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(DECOR, {
 				-- Housing
-				i(269010),	-- Essence of Lumber
 				i(253497),	-- Embroidered Sunfury Chair
 				i(256042),	-- Silvermoon Bench
 				i(256043),	-- Silvermoon Fencepost
@@ -899,21 +814,11 @@ root(ROOTS.Unsorted, {
 				i(266130),	-- Gilded Silvermoon Gazebo
 				i(259354),	-- Brown Paper Sack
 			}),
-			filter(MISC, {
-				-- Prey
-				i(269006),	-- Preyseeker's Gleaming Coin Pouch
-				i(269007),	-- Preyseeker's Glittering Coin Pouch
-			}),
 			filter(QUEST_ITEMS, {
-				i(246129),	-- Outsider's Gear
 				i(246152),	-- Saptor Frill
-				i(249775),	-- Bright Berry
 				i(253210),	-- Soothsayer's Signet
 				i(268551),	-- Scroll of Reflection
 				i(248723),	-- Stolen Documents
-			}),
-			n(SPECIAL, {
-				i(268274),	-- Blinky's Collar
 			}),
 			n(WEAPONS, {
 				i(269972),	-- Arathi Miner's Pickaxe
@@ -925,17 +830,6 @@ root(ROOTS.Unsorted, {
 				i(269986),	-- Dreamer's Spellblade
 				i(269987),	-- Vault Guard's Axe
 				i(269988),	-- Peacekeeper's Axe
-			}),
-			n(SPECIAL, {
-				-- Haranir Class Trial?
-				i(270430),	-- Windpetal Haranir Crook
-				i(270431),	-- Haranir Footlocker
-				i(270439),	-- Wildgrove Haranir Spear
-				i(270440),	-- Rootbound Haranir Handaxe
-				i(270441),	-- Thornpierce Haranir Chopper
-				i(270442),	-- Rootbound Haranir Chopper
-				i(270443),	-- Wildbloom Haranir Bastion
-				i(270444),	-- Wildbloom Haranir Carver
 			}),
 			i(232791),	-- Cracked Medal of Conquest
 			i(250930),	-- Frostfall Groveglider
@@ -976,19 +870,14 @@ root(ROOTS.Unsorted, {
 			i(262430),	-- Ensemble: Tan Candlelight Kobold Romper
 			i(262649),	-- An Angler's Deep Dive
 			i(262787),	-- Dredged Journal Entry
-			i(262793),	-- Stranded Bloomline
 			i(262797),	-- Shredded Glimmerline
 			i(267277),	-- Unalloyed Abundance
 		})),
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 			n(PROFESSIONS, {
-				-- Professions
-				i(258839),	-- Concealed Catalogue
 
 				-- Crafting Reagent
 				i(237505),	-- Artisan's Moxie
-				i(247724),	-- Multicraft Manifold
-				i(247726),	-- Resourceful Routing
 
 				-- Profession Tool
 				i(246514),	-- Super Elegant Artisan's Tailoring Robe
@@ -1144,10 +1033,6 @@ root(ROOTS.Unsorted, {
 				-- Delve
 				i(262964),	-- Death's Hope
 				i(262966),	-- Budget Friendly
-				i(265014),	-- Echo of Radiance
-				i(265015),	-- Echo of Radiance
-				i(265016),	-- Echo of Radiance
-
 				-- DElve
 				i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
 				-- Cache
@@ -1207,7 +1092,6 @@ root(ROOTS.Unsorted, {
 				i(248715),	-- Bones of de Fallen
 				i(248756),	-- Shadra's Gift
 				i(248927),	-- Stormray Fin
-				i(248929),	-- Domanaar Snack Pack
 				i(248931),	-- Tarnished Vilebranch Coin
 				i(249401),	-- Vial of Gelatinous Ooze
 				i(249407),	-- Harvested Lightwood
@@ -1215,17 +1099,10 @@ root(ROOTS.Unsorted, {
 				i(249421),	-- Mana-Fortified Vintage
 				i(249439),	-- Bright Feather
 				i(249440),	-- Bright Feather
-				i(249444),	-- Eversong Pyrepetal
-				i(249445),	-- Bolt of Mana Silk Cloth
-				i(249472),	-- Fragrant Bloodthistle
-				i(249517),	-- Smuggled Goods
 				i(249527),	-- Elder Painting
 				i(249543),	-- Special Remedy
 				i(249553),	-- Lost Mirror
-				i(249688),	-- Felo'melorn Replica
 				i(250705),	-- Naga Missive PH NAME
-				i(251899),	-- Anasterian's Book of Law
-				i(251904),	-- Crown of the High King
 				i(252192),	-- Rune Key
 				i(253519),	-- Pathogenic Essence
 				i(254368),	-- Soul Essence
@@ -1244,8 +1121,6 @@ root(ROOTS.Unsorted, {
 				i(265655),	-- Ritual Components
 				i(265710),	-- Elementary Voidcore
 				i(265749),	-- Idol of the Depths \\ [PH] Threshadon Loa Blessing
-				i(266440),	-- Idol of Growth
-				i(267040),	-- Sea Caller
 				-- QI /Devourer??
 				i(250325),	-- Night's Embrace
 			}),
@@ -1373,14 +1248,11 @@ root(ROOTS.Unsorted, {
 				i(263395),	-- Ensemble: Elite Galactic Gladiator's Warlock Armor
 				i(263396),	-- Ensemble: Elite Galactic Gladiator's Warrior Armor
 				i(263397),	-- Arsenal: Elite Galactic Gladiator's Weapons
-				i(267469),	-- Novice Combatant's Insignia of Alacrity
-				i(267491),	-- Novice Combatant's Cloak
 				i(267573),	-- Cracked Medal of Conquest
 				i(256553),	-- Galactic Equipment Chest
 				--pvp
 				i(266314),	-- Novice Combatant's Necklace
 				i(266317),	-- Novice Combatant's Ring
-				i(267077),	-- Novice Combatant's Emblem
 				i(267177),	-- Slayer's Duellum Commendation
 			}),
 			n(ARMOR, {
@@ -1435,24 +1307,7 @@ root(ROOTS.Unsorted, {
 				i(249615),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Staff AGI
 				i(249616),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Staff INT
 				i(249617),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Sword INT
-				-- World boss Loot
-				i(250446),	-- Cragtender Bulwark
-				i(250447),	-- Radiant Eversong Scepter \\ Radiant Eversong Censer
-				i(250448),	-- Voidbender's Spire
-				i(250449),	-- Skulking Nettledirk
-				i(250450),	-- Forest Sentinel's Savage Longbow
-				i(250451),	-- Dawncrazed Beast Cleaver
-				i(250452),	-- Blooming Thornblade
-				i(250453),	-- Scepter of the Unbound Light
-				i(250454),	-- Devouring Vanguard's Soulcleaver
-				i(250455),	-- Beastly Blossombarb
-				i(250456),	-- Wretched Scholar's Gilded Robe
-				i(250457),	-- Devouring Outrider's Chausses
-				i(250458),	-- Host Commander's Casque
-				i(250459),	-- Bramblestalker's Feathered Cowl
-				i(250460),	-- Encroaching Shadow Signet
-				i(250461),	-- Chain of the Ancient Watcher
-				i(250462),	-- Forgotten Farstrider's Insignia
+
 				-- Armor
 				i(251934),	-- Blessed Signet
 				-- Trinkets
@@ -1460,31 +1315,7 @@ root(ROOTS.Unsorted, {
 				i(251794),	-- Gris-gris of Confidence
 				i(251882),	-- Fragmented Light Shard
 				i(251886),	-- Unstable Mana-Locket
-				-- Armor Quest
-				i(257169),	-- Voidbreaker's Signet \\ [DNT] [PH] Max Level Campaign - Accessory - FINGER 1
-				i(257171),	-- Voidbreaker's Pendant \\ [DNT] [PH] Max Level Campaign - Accessory - NECK
-				i(257172),	-- Voidbreaker's Cape \\ [DNT] [PH] Max Level Campaign - Cloth - CLOAK
-				i(257173),	-- Voidbreaker's Drape \\ [DNT] [PH] Max Level Campaign - Leather - CLOAK
-				i(257174),	-- Voidbreaker's Mantle \\ [DNT] [PH] Max Level Campaign - Mail - CLOAK
-				i(257175),	-- Voidbreaker's Wrap \\ [DNT] [PH] Max Level Campaign - Plate - CLOAK
-				i(257220),	-- Voidbreaker's Band \\ [DNT] [PH] Max Level Campaign - Accessory - FINGER 2
-				i(257234),	-- Voidbreaker's Waraxe \\ [DNT] [PH] Max Level Campaign - Weapon - Axe1H - AGI
-				i(257237),	-- Voidbreaker's Longbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI
-				i(257238),	-- Voidbreaker's Dagger \\ [DNT] [PH] Max Level Campaign - Weapon - Dagger - AGI
-				i(257242),	-- Voidbreaker's Sight \\ [DNT] [PH] Max Level Campaign - Generic - Offhand - INT
-				i(257248),	-- Voidbreaker's Hammer \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - AGI
-				i(257249),	-- Voidbreaker's War Mace \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - STR
-				i(257250),	-- Voidbreaker's Mace \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - INT
-				i(257251),	-- Voidbreaker's Poleaxe \\ [DNT] [PH] Max Level Campaign - Weapon - Polearms - AGI
-				i(257254),	-- Voidbreaker's Spike \\ [DNT] [PH] Max Level Campaign - Weapon - Staff - AGI
-				i(257256),	-- Voidbreaker's Staff \\ [DNT] [PH] Max Level Campaign - Weapon - Staff - INT
-				i(257269),	-- Voidbreaker's Ritual Sword \\ [DNT] [PH] Max Level Campaign - Weapon - Sword1H - INT
-				i(257270),	-- Voidbreaker's Blade \\ [DNT] [PH] Max Level Campaign - Weapon - Sword1H - AGI
-				i(257271),	-- Voidbreaker's Longsword \\ [DNT] [PH] Max Level Campaign - Weapon - Sword1H - STR
-				i(257284),	-- Voidbreaker's Greatsword \\ [DNT] [PH] Max Level Campaign - Weapon - Sword2H - STR
-				i(257289),	-- Voidbreaker's Glaive \\ [DNT] [PH] Max Level Campaign - Weapon - Warglaives - AGI/INT
 				-- Quest Armor
-				i(257537),	-- Voidbreaker's Wall \\ [DNT] [PH] Max Level Campaign - Weapon - Shield - STRINT
 				i(257538),	-- Scorching Conqueror's Crown
 				i(257539),	-- Scorching Conqueror's Belt
 				i(257540),	-- Scorching Conqueror's Treads
@@ -1494,19 +1325,7 @@ root(ROOTS.Unsorted, {
 				i(257544),	-- Scorching Conqueror's Mantle
 				i(257545),	-- Scorching Conqueror's Cloak
 				i(257547),	-- Ensemble: Scorching Conqueror
-				i(257686),	-- Voidbreaker's Kukri \\ [DNT] [PH] Max Level Campaign - Weapon - Dagger - AGI - 2
-				i(257687),	-- Voidbreaker's Basher \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - STR - 2
-				i(257688),	-- Voidbreaker's Warbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI - 2
-
-				-- Raid Might be bOE?
-				i(260370),	-- Visage of Unseen Truths
-				i(260371),	-- Infernal Greatlock Girdle
-				i(260372),	-- Nullstrider's Boots
-				i(260373),	-- Power Stance Breeches
-				i(260374),	-- Primal Spark Pauldrons
-				i(260375),	-- Raging Storm Sash
-				i(260376),	-- Breastplate of the Final Defense
-				i(260377),	-- Fading Dawn Sabatons
+				--
 				i(260414),	-- Amulet of the Ascendant Void \\ Voidsong Chain
 				-- Armor
 				i(260475),	-- Ka'shuk Trainee's Cudgel
@@ -1538,12 +1357,7 @@ root(ROOTS.Unsorted, {
 				i(257235),	-- Voidbreaker's Cleaver
 				i(257236),	-- Voidbreaker's Runeaxe
 				i(257239),	-- Voidbreaker's Knife
-				i(257252),	-- Voidbreaker's Bardiche
 				i(257534),	-- Voidbreaker's Baton
-				-- Quest rewards
-				i(264286),	-- Voidbreaker's Choker
-				i(264287),	-- Voidbreaker's Circle
-				i(264288),	-- Voidbreaker's Ring
 				-- Armor
 				i(267387),	-- Test Item [DNT] - While you are poisoned
 				i(267388),	-- Test Item [DNT] - Apply Poison - Label
@@ -1552,8 +1366,6 @@ root(ROOTS.Unsorted, {
 				i(267391),	-- Test Item [DNT] - Dispelling a poison from target
 				i(267392),	-- Test Item [DNT] - When you have poison dispelled from you
 				i(267403),	-- Test Item [DNT] - Apply Poison - DISPEL TYPE
-				-- Trinket
-				i(264878),	-- Astalor's Anguish Agitator
 				-- Trinket
 				i(262753),	-- Shard of VoidStalker's Bracers
 				i(262754),	-- Void Pearl of Haste
@@ -1629,7 +1441,6 @@ root(ROOTS.Unsorted, {
 				i(262761),	-- Pepe's Vacation Home
 				i(262819),	-- Midnight Dunecloth Skirt
 				i(262820),	-- Azure Dunecloth Skirt
-				i(262821),	-- Sepia Dunecloth Skirt
 				i(262822),	-- Grassy Dunecloth Skirt
 				i(262823),	-- Cloudy Dunecloth Skirt
 				i(262824),	-- Deep Dunecloth Skirt
@@ -1646,7 +1457,6 @@ root(ROOTS.Unsorted, {
 				i(262836),	-- Sunny Dunecloth Skirt
 				i(262837),	-- Midnight Dunecloth Belt
 				i(262838),	-- Azure Dunecloth Belt
-				i(262839),	-- Sepia Dunecloth Belt
 				i(262840),	-- Grassy Dunecloth Belt
 				i(262841),	-- Cloudy Dunecloth Belt
 				i(262842),	-- Deep Dunecloth Belt
@@ -1663,7 +1473,6 @@ root(ROOTS.Unsorted, {
 				i(262854),	-- Sunny Dunecloth Belt
 				i(262855),	-- Midnight Dunecloth Vest
 				i(262856),	-- Azure Dunecloth Vest
-				i(262857),	-- Sepia Dunecloth Vest
 				i(262858),	-- Cloudy Dunecloth Vest
 				i(262859),	-- Grassy Dunecloth Vest
 				i(262860),	-- Deep Dunecloth Vest
@@ -1679,18 +1488,14 @@ root(ROOTS.Unsorted, {
 				i(262871),	-- Snowy Dunecloth Vest
 				i(262872),	-- Sunny Dunecloth Vest
 				i(263009),	-- Valeera's Wicked Knife
-				i(263286),	-- Repurposed Fungarian Gong
-				i(263413),	-- Nullaeus Domaneye
 				i(263520),	-- Ensemble: Sprawling's Garb
 				i(263574),	-- Ensemble: Osseoclad's Wear
 				i(263575),	-- Ensemble: Elder Moss Outfit
 				i(263576),	-- Ensemble: Rampant Thorn Armor
 				i(263577),	-- Arsenal: Rootlands Weaponry
-				i(264859),	-- Twilight Follower's Cowl
 				i(264969),	-- Extinction Voulge
 				i(264970),	-- Oblivion's Edge
 				i(264971),	-- Annihilation Rod
-				i(265072),	-- Amani Fangstitch Quiver
 				i(265366),	-- Twilight Executioner
 				i(265368),	-- Twilight Destroyer
 				i(266077),	-- Basic Black Quiver
@@ -1725,13 +1530,8 @@ root(ROOTS.Unsorted, {
 				i(262585),	-- Pristine Lunch Bag
 				i(262587),	-- Brown Lunch Bag
 				i(262588),	-- Sack Lunch
-				i(262660),	-- Egg Farmer's Backpack
 			}),
 			n(DECOR, {
-				-- On a Sathren Azuredawn vendor during Beta, not there on live. Maybe moved to some other vendor?
-				i(246458),	-- Grand Aethercharged Crystal
-				i(251914),	-- Sumptuous Berry Pie (DECOR!)
-				--
 				i(263239),	-- Cuddly Tan Grrgle \\ Cuddly  Tan Grrgle
 				i(263241),	-- Cuddly Seafoam Grrgle
 				i(263242),	-- Cuddly Saffron Grrgle
@@ -1771,7 +1571,6 @@ root(ROOTS.Unsorted, {
 				i(265397),	-- Cuddly Bright Grrgle
 				i(265398),	-- Cuddly Juniper Grrgle
 				i(265544),	-- Cuddly Basil Grrgle
-				i(265545),	-- Cuddly Void Grrgle
 				i(265546),	-- Cuddly Fel Grrgle
 				i(265547),	-- Cuddly Spectral Grrgle
 				i(265548),	-- Cuddly Emerald Grrgle
@@ -1798,9 +1597,6 @@ root(ROOTS.Unsorted, {
 				i(264278),	-- Sturdy Portable Ice Chest
 				i(264279),	-- Tall Corked Bottle of Liquid Mystery
 				i(264280),	-- Short Corked Bottle of Liquid Mystery
-				i(264281),	-- Preserved Gift of Gilneas
-				i(264282),	-- Bluebird's Golden Cage
-				i(264283),	-- Backboard and Hoop Playset
 				i(264384),	-- Zapmaster Viewer 3000
 				i(253254),	-- Lunar Celebrant's Cradle
 				i(253255),	-- Lunar Celebrant's Wide Pillow Roll
@@ -1913,7 +1709,6 @@ root(ROOTS.Unsorted, {
 				i(257713),	-- Anubisath's Ethereal Blade
 				i(257759),	-- Sorcerer's Midnight Cowl
 				i(257760),	-- Sorcerer's Azure Cowl
-				i(257761),	-- Sorcerer's Sepia Cowl
 				i(257762),	-- Sorcerer's Grassy Cowl
 				i(257763),	-- Sorcerer's Cloudy Cowl
 				i(257764),	-- Sorcerer's Deep Cowl
@@ -1928,7 +1723,6 @@ root(ROOTS.Unsorted, {
 				i(257778),	-- Sorcerer's Sunny Cowl
 				i(257779),	-- Sorcerer's Midnight Cape
 				i(257780),	-- Sorcerer's Azure Cape
-				i(257781),	-- Sorcerer's Sepia Cape
 				i(257782),	-- Sorcerer's Grassy Cape
 				i(257783),	-- Sorcerer's Cloudy Cape
 				i(257784),	-- Sorcerer's Deep Cape
@@ -1943,7 +1737,6 @@ root(ROOTS.Unsorted, {
 				i(257796),	-- Sorcerer's Sunny Cape
 				i(257970),	-- Ensemble: Sorcerer's Midnight Garb \\ Ensemble: Sorcerer's Midnight Raiment
 				i(257971),	-- Ensemble: Sorcerer's Azure Garb \\ Ensemble: Sorcerer's Azure Raiment
-				i(257972),	-- Ensemble: Sorcerer's Sepia Garb \\ Ensemble: Sorcerer's Sepia Raiment
 				i(257974),	-- Ensemble: Sorcerer's Grassy Garb \\ Ensemble: Sorcerer's Grassy Raiment
 				i(257975),	-- Ensemble: Sorcerer's Cloudy Garb \\ Ensemble: Sorcerer's Cloudy Raiment
 				i(257976),	-- Ensemble: Sorcerer's Deep Garb \\ Ensemble: Sorcerer's Deep Raiment
@@ -2026,7 +1819,6 @@ root(ROOTS.Unsorted, {
 				i(260405),	-- South Guard's Silver Chausses
 				i(260412),	-- Rusty Chainkini
 				i(260413),	-- Copper Chainkini
-				i(260415),	-- Silver Chainkini
 				i(260416),	-- Gold Chainkini
 				i(260936),	-- Basic Brown Quiver
 			}),
@@ -2068,9 +1860,6 @@ root(ROOTS.Unsorted, {
 				i(252990),	-- Drustvar Candies
 				i(260429),	-- Crescent Cove Crab
 				i(260519),	-- Farm Carrots
-				i(260522),	-- Duck Egg
-				i(260532),	-- Tuskarr Dinner Bell
-				i(260533),	-- Oddsight Focus
 				i(260589),	-- Flame-Blessed Beach Towel
 				-- house?
 				i(249386),	-- Ghost Gear
@@ -3257,7 +3046,6 @@ root(ROOTS.Unsorted, {
 				i(158797),	-- Jar of Truffles
 				i(158858),	-- Adder's Fork
 				i(163847),	-- Silver Monkey Torso
-				i(163849),	-- Bad Troll Love Poem
 				i(163850),	-- Bloody Gamekeeper's Arm
 				i(163854),	-- Weighty Bag of Sand
 				i(163896),	-- Salty Pocket Lint
@@ -4104,12 +3892,6 @@ root(ROOTS.Unsorted, {
 			i(170042),	-- Scattered Bones
 			i(170043),	-- Split Bone
 			i(170044),	-- Pitted Finger-Bone
-			i(170055),	-- Decrypted Message 001-322
-			i(170056),	-- Decrypted Message 001-346
-			i(170057),	-- Decrypted Message 001-372
-			i(170058),	-- Decrypted Message 001-398
-			i(170059),	-- Decrypted Message 002-001
-			i(170060),	-- Encrypted Message
 			i(170064),	-- Highmountain Totem
 			i(170078),	-- Gleaming Ashmaul Strongbox
 			i(170100),	-- Hungry Herald's Tentacle Taco

@@ -540,13 +540,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(89501),	-- Brewmoon Cloak
 								i(92879),	-- Bubblebrew Cloak
 								i(93067, {	-- Firebinder Cloak						— 2019-03-05//
-									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
+									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
 									-- ["description"] = "Extremely Rare",
 								}),
 								i(89500),	-- Fireheart Cloak
 								i(92878),	-- Lavasoul Cloak
 								i(93113, {	-- Lightning Rod Drape					— 2022-03-24
-									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
+									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
 									-- ["description"] = "Extremely Rare",
 								}),
 								i(89502),	-- Stormbound Cloak
@@ -822,7 +822,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(93126),	-- Scavenged Pandaren Staff
 								i(93129),	-- Scavenged Pandaren Staff
 								i(93136),	-- Scavenged Pandaren Sword
-								-- i(93145),	-- Scavenged Pandaren Sword (Nobody has it, not even with Quantum -- Gold 8th May 2025)
+								-- i(93145),	-- Scavenged Pandaren Sword (Nobody has it, not even with Quantum	-- Gold 8th May 2025)
 								i(93133),	-- Scavenged Pandaren Wand
 							}),
 						},
@@ -863,13 +863,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(89501),	-- Brewmoon Cloak
 								i(92879),	-- Bubblebrew Cloak
 								i(93067, {	-- Firebinder Cloak						— 2019-03-05//
-									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
+									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
 									-- ["description"] = "Extremely Rare",
 								}),
 								i(89500),	-- Fireheart Cloak
 								i(92878),	-- Lavasoul Cloak
 								i(93113, {	-- Lightning Rod Drape					— 2022-03-24
-									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
+									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
 									-- ["description"] = "Extremely Rare",
 								}),
 								i(89502),	-- Stormbound Cloak
@@ -1145,7 +1145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(93126),	-- Scavenged Pandaren Staff
 								i(93129),	-- Scavenged Pandaren Staff
 								i(93136),	-- Scavenged Pandaren Sword
-								-- i(93145),	-- Scavenged Pandaren Sword (Nobody has it, not even with Quantum -- Gold 8th May 2025)
+								-- i(93145),	-- Scavenged Pandaren Sword (Nobody has it, not even with Quantum	-- Gold 8th May 2025)
 								i(93133),	-- Scavenged Pandaren Wand
 							}),
 						},

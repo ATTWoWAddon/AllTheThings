@@ -86,113 +86,113 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				}),
 				cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
 					-- Epic set
-					i(231689), -- Field Marshal's Dragonhide Headguard
-					i(231690), -- Field Marshal's Dragonhide Chestpiece
-					i(231693), -- Field Marshal's Dragonhide Shoulders
-					i(231695), -- Field Marshal's Dragonhide Helm
-					i(231696), -- Field Marshal's Dragonhide Armor
-					i(231699), -- Field Marshal's Dragonhide Spaulders
-					i(231701), -- Field Marshal's Dragonhide Headdress
-					i(231702), -- Field Marshal's Dragonhide Tunic
-					i(231705), -- Field Marshal's Dragonhide Pauldrons
-					i(231691), -- Marshal's Dragonhide Leggings
-					i(231692), -- Marshal's Dragonhide Treads
-					i(231694), -- Marshal's Dragonhide Grips
-					i(231697), -- Marshal's Dragonhide Pants
-					i(231698), -- Marshal's Dragonhide Boots
-					i(231700), -- Marshal's Dragonhide Gloves
-					i(231703), -- Marshal's Dragonhide Legguards
-					i(231704), -- Marshal's Dragonhide Greaves
-					i(231706), -- Marshal's Dragonhide Gauntlets
+					i(231689),	-- Field Marshal's Dragonhide Headguard
+					i(231690),	-- Field Marshal's Dragonhide Chestpiece
+					i(231693),	-- Field Marshal's Dragonhide Shoulders
+					i(231695),	-- Field Marshal's Dragonhide Helm
+					i(231696),	-- Field Marshal's Dragonhide Armor
+					i(231699),	-- Field Marshal's Dragonhide Spaulders
+					i(231701),	-- Field Marshal's Dragonhide Headdress
+					i(231702),	-- Field Marshal's Dragonhide Tunic
+					i(231705),	-- Field Marshal's Dragonhide Pauldrons
+					i(231691),	-- Marshal's Dragonhide Leggings
+					i(231692),	-- Marshal's Dragonhide Treads
+					i(231694),	-- Marshal's Dragonhide Grips
+					i(231697),	-- Marshal's Dragonhide Pants
+					i(231698),	-- Marshal's Dragonhide Boots
+					i(231700),	-- Marshal's Dragonhide Gloves
+					i(231703),	-- Marshal's Dragonhide Legguards
+					i(231704),	-- Marshal's Dragonhide Greaves
+					i(231706),	-- Marshal's Dragonhide Gauntlets
 					-- Rare set
 					-- Lieutenant Commander's Dragonhide
-					i(227172), -- Lieutenant Commander's Dragonhide Shoulders
-					i(227173), -- Lieutenant Commander's Dragonhide Headguard
-					i(227190), -- Lieutenant Commander's Dragonhide Spaulders
-					i(227192), -- Lieutenant Commander's Dragonhide Helm
-					i(227199), -- Lieutenant Commander's Dragonhide Headdress
-					i(227201), -- Lieutenant Commander's Dragonhide Pauldrons
+					i(227172),	-- Lieutenant Commander's Dragonhide Shoulders
+					i(227173),	-- Lieutenant Commander's Dragonhide Headguard
+					i(227190),	-- Lieutenant Commander's Dragonhide Spaulders
+					i(227192),	-- Lieutenant Commander's Dragonhide Helm
+					i(227199),	-- Lieutenant Commander's Dragonhide Headdress
+					i(227201),	-- Lieutenant Commander's Dragonhide Pauldrons
 					-- Knight-Captain's Dragonhide
-					i(227176), -- Knight-Captain's Dragonhide Chestpiece
-					i(227178), -- Knight-Captain's Dragonhide Leggings
-					i(227191), -- Knight-Captain's Dragonhide Pants
-					i(227195), -- Knight-Captain's Dragonhide Armor
-					i(227196), -- Knight-Captain's Dragonhide Tunic
-					i(227200), -- Knight-Captain's Dragonhide Legguards
+					i(227176),	-- Knight-Captain's Dragonhide Chestpiece
+					i(227178),	-- Knight-Captain's Dragonhide Leggings
+					i(227191),	-- Knight-Captain's Dragonhide Pants
+					i(227195),	-- Knight-Captain's Dragonhide Armor
+					i(227196),	-- Knight-Captain's Dragonhide Tunic
+					i(227200),	-- Knight-Captain's Dragonhide Legguards
 					-- Knight-Lieutenant's Dragonhide
-					i(227182), -- Knight-Lieutenant's Dragonhide Treads
-					i(227183), -- Knight-Lieutenant's Dragonhide Grips
-					i(227193), -- Knight-Lieutenant's Dragonhide Gloves
-					i(227194), -- Knight-Lieutenant's Dragonhide Boots
-					i(227197), -- Knight-Lieutenant's Dragonhide Greaves
-					i(227198), -- Knight-Lieutenant's Dragonhide Gauntlets
+					i(227182),	-- Knight-Lieutenant's Dragonhide Treads
+					i(227183),	-- Knight-Lieutenant's Dragonhide Grips
+					i(227193),	-- Knight-Lieutenant's Dragonhide Gloves
+					i(227194),	-- Knight-Lieutenant's Dragonhide Boots
+					i(227197),	-- Knight-Lieutenant's Dragonhide Greaves
+					i(227198),	-- Knight-Lieutenant's Dragonhide Gauntlets
 				}));
 				cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {
 					-- Epic set
-					i(231557), -- Field Marshal's Chain Pauldrons
-					i(231562), -- Field Marshal's Chain Greathelm
-					i(231563), -- Field Marshal's Chain Armor
-					i(231576), -- Field Marshal's Chain Shoulders
-					i(231580), -- Field Marshal's Chain Helm
-					i(231581), -- Field Marshal's Chain Hauberk
-					i(231558), -- Marshal's Chain Legplates
-					i(231560), -- Marshal's Chain Grips
-					i(231561), -- Marshal's Chain Sabatons
-					i(231577), -- Marshal's Chain Legguards
-					i(231578), -- Marshal's Chain Vices
-					i(231579), -- Marshal's Chain Greaves
+					i(231557),	-- Field Marshal's Chain Pauldrons
+					i(231562),	-- Field Marshal's Chain Greathelm
+					i(231563),	-- Field Marshal's Chain Armor
+					i(231576),	-- Field Marshal's Chain Shoulders
+					i(231580),	-- Field Marshal's Chain Helm
+					i(231581),	-- Field Marshal's Chain Hauberk
+					i(231558),	-- Marshal's Chain Legplates
+					i(231560),	-- Marshal's Chain Grips
+					i(231561),	-- Marshal's Chain Sabatons
+					i(231577),	-- Marshal's Chain Legguards
+					i(231578),	-- Marshal's Chain Vices
+					i(231579),	-- Marshal's Chain Greaves
 					-- Rare set
-					i(227066), -- Lieutenant Commander's Chain Helm
-					i(227068), -- Lieutenant Commander's Chain Shoulders
-					i(227084), -- Lieutenant Commander's Chain Pauldrons
-					i(227086), -- Lieutenant Commander's Chain Greathelm
+					i(227066),	-- Lieutenant Commander's Chain Helm
+					i(227068),	-- Lieutenant Commander's Chain Shoulders
+					i(227084),	-- Lieutenant Commander's Chain Pauldrons
+					i(227086),	-- Lieutenant Commander's Chain Greathelm
 					-- Knight-Captain (Chain)
-					i(227070), -- Knight-Captain's Chain Hauberk
-					i(227072), -- Knight-Captain's Chain Legguards
-					i(227085), -- Knight-Captain's Chain Legplates
-					i(227089), -- Knight-Captain's Chain Armor
+					i(227070),	-- Knight-Captain's Chain Hauberk
+					i(227072),	-- Knight-Captain's Chain Legguards
+					i(227085),	-- Knight-Captain's Chain Legplates
+					i(227089),	-- Knight-Captain's Chain Armor
 					-- Knight-Lieutenant (Chain)
-					i(227076), -- Knight-Lieutenant's Chain Greaves
-					i(227077), -- Knight-Lieutenant's Chain Vices
-					i(227087), -- Knight-Lieutenant's Chain Grips
-					i(227088), -- Knight-Lieutenant's Chain Sabatons
+					i(227076),	-- Knight-Lieutenant's Chain Greaves
+					i(227077),	-- Knight-Lieutenant's Chain Vices
+					i(227087),	-- Knight-Lieutenant's Chain Grips
+					i(227088),	-- Knight-Lieutenant's Chain Sabatons
 				})),
 				cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
 					-- Epic set
-					i(231602), -- Field Marshal's Silk Spaulders
-					i(231603), -- Field Marshal's Silk Vestments
-					i(231604), -- Field Marshal's Coronet
-					i(231605), -- Marshal's Silk Leggings
-					i(231606), -- Marshal's Silk Footwraps
-					i(231607), -- Marshal's Silk Gloves
-					i(231608), -- Marshal's Silk Gauntlets
-					i(231609), -- Marshal's Silk Handwraps
+					i(231602),	-- Field Marshal's Silk Spaulders
+					i(231603),	-- Field Marshal's Silk Vestments
+					i(231604),	-- Field Marshal's Coronet
+					i(231605),	-- Marshal's Silk Leggings
+					i(231606),	-- Marshal's Silk Footwraps
+					i(231607),	-- Marshal's Silk Gloves
+					i(231608),	-- Marshal's Silk Gauntlets
+					i(231609),	-- Marshal's Silk Handwraps
 					-- Rare set
-					i(227102), -- Lieutenant Commander's Silk Mantle
-					i(227103), -- Lieutenant Commander's Silk Cowl
+					i(227102),	-- Lieutenant Commander's Silk Mantle
+					i(227103),	-- Lieutenant Commander's Silk Cowl
 					-- Knight-Captain (Silk)
-					i(227108), -- Knight-Captain's Silk Tunic
-					i(227109), -- Knight-Captain's Silk Legguards
+					i(227108),	-- Knight-Captain's Silk Tunic
+					i(227109),	-- Knight-Captain's Silk Legguards
 					-- Knight-Lieutenant (Silk)
-					i(227112), -- Knight-Lieutenant's Silk Walkers
-					i(227113), -- Knight-Lieutenant's Silk Handwraps
-					i(227114), -- Knight-Lieutenant's Silk Gauntlets
-					i(227116), -- Knight-Lieutenant's Silk Gloves
+					i(227112),	-- Knight-Lieutenant's Silk Walkers
+					i(227113),	-- Knight-Lieutenant's Silk Handwraps
+					i(227114),	-- Knight-Lieutenant's Silk Gauntlets
+					i(227116),	-- Knight-Lieutenant's Silk Gloves
 				}));
 				cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
 					-- Epic set
-					i(231640), -- Field Marshal's Lamellar Helmet
-					i(231641), -- Field Marshal's Lamellar Chestplate
-					i(231645), -- Field Marshal's Lamellar Pauldrons
-					i(231648), -- Field Marshal's Lamellar Headguard
-					i(231649), -- Field Marshal's Lamellar Breastplate
-					i(231651), -- Field Marshal's Lamellar Shoulders
-					i(231639), -- Marshal's Lamellar Legguards
-					i(231643), -- Marshal's Lamellar Gloves
-					i(231646), -- Marshal's Lamellar Greaves
-					i(231647), -- Marshal's Lamellar Leggings
-					i(231650), -- Marshal's Lamellar Gauntlets
-					i(231652), -- Marshal's Lamellar Sabatons
+					i(231640),	-- Field Marshal's Lamellar Helmet
+					i(231641),	-- Field Marshal's Lamellar Chestplate
+					i(231645),	-- Field Marshal's Lamellar Pauldrons
+					i(231648),	-- Field Marshal's Lamellar Headguard
+					i(231649),	-- Field Marshal's Lamellar Breastplate
+					i(231651),	-- Field Marshal's Lamellar Shoulders
+					i(231639),	-- Marshal's Lamellar Legguards
+					i(231643),	-- Marshal's Lamellar Gloves
+					i(231646),	-- Marshal's Lamellar Greaves
+					i(231647),	-- Marshal's Lamellar Leggings
+					i(231650),	-- Marshal's Lamellar Gauntlets
+					i(231652),	-- Marshal's Lamellar Sabatons
 					-- Rare set
 					i(227142),	-- Knight-Captain's Lamellar Breastplate
 					i(227143),	-- Knight-Captain's Lamellar Leggings
@@ -209,87 +209,87 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				}));
 				cl(PRIEST, bubbleDownSelf({ ["classes"] = { PRIEST } }, {
 					-- Epic set
-					i(231616), -- Field Marshal's Satin Crown
-					i(231618), -- Field Marshal's Satin Robe
-					i(231621), -- Field Marshal's Satin Epaulets
-					i(231622), -- Field Marshal's Satin Hood
-					i(231624), -- Field Marshal's Satin Tunic
-					i(231628), -- Field Marshal's Satin Mantle
-					i(231617), -- Marshal's Satin Grips
-					i(231619), -- Marshal's Satin Leggings
-					i(231620), -- Marshal's Satin Treads
-					i(231623), -- Marshal's Satin Handwraps
-					i(231626), -- Marshal's Satin Legguards
-					i(231627), -- Marshal's Satin Walkers
+					i(231616),	-- Field Marshal's Satin Crown
+					i(231618),	-- Field Marshal's Satin Robe
+					i(231621),	-- Field Marshal's Satin Epaulets
+					i(231622),	-- Field Marshal's Satin Hood
+					i(231624),	-- Field Marshal's Satin Tunic
+					i(231628),	-- Field Marshal's Satin Mantle
+					i(231617),	-- Marshal's Satin Grips
+					i(231619),	-- Marshal's Satin Leggings
+					i(231620),	-- Marshal's Satin Treads
+					i(231623),	-- Marshal's Satin Handwraps
+					i(231626),	-- Marshal's Satin Legguards
+					i(231627),	-- Marshal's Satin Walkers
 					-- Rare set
-					i(227119), -- Lieutenant Commander's Satin Mantle
-					i(227121), -- Lieutenant Commander's Satin Hood
-					i(227136), -- Lieutenant Commander's Satin Epaulets
-					i(227138), -- Lieutenant Commander's Satin Crown
+					i(227119),	-- Lieutenant Commander's Satin Mantle
+					i(227121),	-- Lieutenant Commander's Satin Hood
+					i(227136),	-- Lieutenant Commander's Satin Epaulets
+					i(227138),	-- Lieutenant Commander's Satin Crown
 					-- Knight-Captain (Satin)
-					i(227122), -- Knight-Captain's Satin Tunic
-					i(227125), -- Knight-Captain's Satin Legguards
-					i(227137), -- Knight-Captain's Satin Leggings
-					i(227141), -- Knight-Captain's Satin Robe
+					i(227122),	-- Knight-Captain's Satin Tunic
+					i(227125),	-- Knight-Captain's Satin Legguards
+					i(227137),	-- Knight-Captain's Satin Leggings
+					i(227141),	-- Knight-Captain's Satin Robe
 					-- Knight-Lieutenant (Satin)
-					i(227128), -- Knight-Lieutenant's Satin Handwraps
-					i(227129), -- Knight-Lieutenant's Satin Walkers
-					i(227139), -- Knight-Lieutenant's Satin Grips
-					i(227140), -- Knight-Lieutenant's Satin Treads
+					i(227128),	-- Knight-Lieutenant's Satin Handwraps
+					i(227129),	-- Knight-Lieutenant's Satin Walkers
+					i(227139),	-- Knight-Lieutenant's Satin Grips
+					i(227140),	-- Knight-Lieutenant's Satin Treads
 				}));
 				cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
 					-- Epic set
-					i(231543), -- Field Marshal's Leather Chestpiece
-					i(231545), -- Field Marshal's Leather Mask
-					i(231547), -- Field Marshal's Leather Epaulets
-					i(231544), -- Marshal's Leather Handgrips
-					i(231546), -- Marshal's Leather Footguards
-					i(231548), -- Marshal's Leather Leggings
+					i(231543),	-- Field Marshal's Leather Chestpiece
+					i(231545),	-- Field Marshal's Leather Mask
+					i(231547),	-- Field Marshal's Leather Epaulets
+					i(231544),	-- Marshal's Leather Handgrips
+					i(231546),	-- Marshal's Leather Footguards
+					i(231548),	-- Marshal's Leather Leggings
 					-- Rare set
-					i(227054), -- Lieutenant Commander's Leather Shoulders
-					i(227055), -- Lieutenant Commander's Leather Helm
+					i(227054),	-- Lieutenant Commander's Leather Shoulders
+					i(227055),	-- Lieutenant Commander's Leather Helm
 					-- Knight-Captain (Leather)
-					i(227058), -- Knight-Captain's Leather Chestpiece
-					i(227061), -- Knight-Captain's Leather Legguards
+					i(227058),	-- Knight-Captain's Leather Chestpiece
+					i(227061),	-- Knight-Captain's Leather Legguards
 					-- Knight-Lieutenant (Leather)
-					i(227064), -- Knight-Lieutenant's Leather Walkers
-					i(227065), -- Knight-Lieutenant's Leather Grips
+					i(227064),	-- Knight-Lieutenant's Leather Walkers
+					i(227065),	-- Knight-Lieutenant's Leather Grips
 				})),
 				cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
 					-- Epic set
-					i(231582), -- Field Marshal's Dreadweave Robe
-					i(231583), -- Field Marshal's Dreadweave Shoulders
-					i(231584), -- Field Marshal's Coronal
-					i(231585), -- Marshal's Dreadweave Boots
-					i(231586), -- Marshal's Dreadweave Gloves
-					i(231587), -- Marshal's Dreadweave Leggings
+					i(231582),	-- Field Marshal's Dreadweave Robe
+					i(231583),	-- Field Marshal's Dreadweave Shoulders
+					i(231584),	-- Field Marshal's Coronal
+					i(231585),	-- Marshal's Dreadweave Boots
+					i(231586),	-- Marshal's Dreadweave Gloves
+					i(231587),	-- Marshal's Dreadweave Leggings
 					-- Rare set
-					i(227091), -- Lieutenant Commander's Dreadweave Spaulders
-					i(227093), -- Lieutenant Commander's Dreadweave Cowl
+					i(227091),	-- Lieutenant Commander's Dreadweave Spaulders
+					i(227093),	-- Lieutenant Commander's Dreadweave Cowl
 					-- Knight-Captain (Dreadweave)
-					i(227095), -- Knight-Captain's Dreadweave Legguards
-					i(227096), -- Knight-Captain's Dreadweave Tunic
+					i(227095),	-- Knight-Captain's Dreadweave Legguards
+					i(227096),	-- Knight-Captain's Dreadweave Tunic
 					-- Knight-Lieutenant (Dreadweave)
-					i(227100), -- Knight-Lieutenant's Dreadweave Handwraps
-					i(227101), -- Knight-Lieutenant's Dreadweave Walkers
+					i(227100),	-- Knight-Lieutenant's Dreadweave Handwraps
+					i(227101),	-- Knight-Lieutenant's Dreadweave Walkers
 				}));
 				cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
 					-- Epic set
-					i(231536), -- Field Marshal's Plate Armor
-					i(231537), -- Field Marshal's Plate Shoulderguards
-					i(231538), -- Field Marshal's Plate Helm
-					i(231539), -- Marshal's Plate Boots
-					i(231540), -- Marshal's Plate Legguards
-					i(231541), -- Marshal's Plate Gauntlets
+					i(231536),	-- Field Marshal's Plate Armor
+					i(231537),	-- Field Marshal's Plate Shoulderguards
+					i(231538),	-- Field Marshal's Plate Helm
+					i(231539),	-- Marshal's Plate Boots
+					i(231540),	-- Marshal's Plate Legguards
+					i(231541),	-- Marshal's Plate Gauntlets
 					-- Rare set
-					i(227044), -- Lieutenant Commander's Plate Helm
-					i(227045), -- Lieutenant Commander's Plate Shoulders
+					i(227044),	-- Lieutenant Commander's Plate Helm
+					i(227045),	-- Lieutenant Commander's Plate Shoulders
 					-- Knight-Captain (Plate)
-					i(227046), -- Knight-Captain's Plate Hauberk
-					i(227047), -- Knight-Captain's Plate Leggings
+					i(227046),	-- Knight-Captain's Plate Hauberk
+					i(227047),	-- Knight-Captain's Plate Leggings
 					-- Knight-Lieutenant (Plate)
-					i(227052), -- Knight-Lieutenant's Plate Greaves
-					i(227053), -- Knight-Lieutenant's Plate Gauntlets
+					i(227052),	-- Knight-Lieutenant's Plate Greaves
+					i(227053),	-- Knight-Lieutenant's Plate Gauntlets
 				}));
 
 				-- Back
@@ -608,166 +608,166 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				}),
 				cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
 					-- Epic set
-					i(231672), -- Warlord's Dragonhide Pauldrons
-					i(231674), -- Warlord's Dragonhide Tunic
-					i(231675), -- Warlord's Dragonhide Headdress
-					i(231678), -- Warlord's Dragonhide Helm
-					i(231679), -- Warlord's Dragonhide Armor
-					i(231681), -- Warlord's Dragonhide Spaulders
-					i(231684), -- Warlord's Dragonhide Shoulders
-					i(231686), -- Warlord's Dragonhide Chestpiece
-					i(231687), -- Warlord's Dragonhide Headguard
-					i(231671), -- General's Dragonhide Greaves
-					i(231673), -- General's Dragonhide Legguards
-					i(231676), -- General's Dragonhide Gauntlets
-					i(231677), -- General's Dragonhide Gloves
-					i(231680), -- General's Dragonhide Pants
-					i(231682), -- General's Dragonhide Boots
-					i(231683), -- General's Dragonhide Treads
-					i(231685), -- General's Dragonhide Leggings
-					i(231688), -- General's Dragonhide Grips
+					i(231672),	-- Warlord's Dragonhide Pauldrons
+					i(231674),	-- Warlord's Dragonhide Tunic
+					i(231675),	-- Warlord's Dragonhide Headdress
+					i(231678),	-- Warlord's Dragonhide Helm
+					i(231679),	-- Warlord's Dragonhide Armor
+					i(231681),	-- Warlord's Dragonhide Spaulders
+					i(231684),	-- Warlord's Dragonhide Shoulders
+					i(231686),	-- Warlord's Dragonhide Chestpiece
+					i(231687),	-- Warlord's Dragonhide Headguard
+					i(231671),	-- General's Dragonhide Greaves
+					i(231673),	-- General's Dragonhide Legguards
+					i(231676),	-- General's Dragonhide Gauntlets
+					i(231677),	-- General's Dragonhide Gloves
+					i(231680),	-- General's Dragonhide Pants
+					i(231682),	-- General's Dragonhide Boots
+					i(231683),	-- General's Dragonhide Treads
+					i(231685),	-- General's Dragonhide Leggings
+					i(231688),	-- General's Dragonhide Grips
 					-- Rare set
-					i(227174), -- Champion's Dragonhide Headguard
-					i(227175), -- Champion's Dragonhide Shoulders
-					i(227184), -- Champion's Dragonhide Spaulders
-					i(227186), -- Champion's Dragonhide Helm
-					i(227205), -- Champion's Dragonhide Headdress
+					i(227174),	-- Champion's Dragonhide Headguard
+					i(227175),	-- Champion's Dragonhide Shoulders
+					i(227184),	-- Champion's Dragonhide Spaulders
+					i(227186),	-- Champion's Dragonhide Helm
+					i(227205),	-- Champion's Dragonhide Headdress
 					i(227207),	-- Champion's Dragonhide Pauldrons
 					-- Legionnaire
-					i(227177), -- Legionnaire's Dragonhide Leggings
-					i(227179), -- Legionnaire's Dragonhide Chestpiece
-					i(227185), -- Legionnaire's Dragonhide Pants
-					i(227189), -- Legionnaire's Dragonhide Armor
-					i(227202), -- Legionnaire's Dragonhide Tunic
-					i(227206), -- Legionnaire's Dragonhide Legguards
+					i(227177),	-- Legionnaire's Dragonhide Leggings
+					i(227179),	-- Legionnaire's Dragonhide Chestpiece
+					i(227185),	-- Legionnaire's Dragonhide Pants
+					i(227189),	-- Legionnaire's Dragonhide Armor
+					i(227202),	-- Legionnaire's Dragonhide Tunic
+					i(227206),	-- Legionnaire's Dragonhide Legguards
 					-- Blood Guard
-					i(227180), -- Blood Guard's Dragonhide Grips
-					i(227181), -- Blood Guard's Dragonhide Treads
-					i(227187), -- Blood Guard's Dragonhide Gloves
-					i(227188), -- Blood Guard's Dragonhide Boots
-					i(227203), -- Blood Guard's Dragonhide Greaves
-					i(227204), -- Blood Guard's Dragonhide Gauntlets
+					i(227180),	-- Blood Guard's Dragonhide Grips
+					i(227181),	-- Blood Guard's Dragonhide Treads
+					i(227187),	-- Blood Guard's Dragonhide Gloves
+					i(227188),	-- Blood Guard's Dragonhide Boots
+					i(227203),	-- Blood Guard's Dragonhide Greaves
+					i(227204),	-- Blood Guard's Dragonhide Gauntlets
 				}));
 				cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {
 					-- Epic set
-					i(231565), -- Warlord's Chain Pauldrons
-					i(231566), -- Warlord's Chain Armor
-					i(231568), -- Warlord's Chain Greathelm
-					i(231571), -- Warlord's Chain Helm
-					i(231572), -- Warlord's Chain Shoulders
-					i(231573), -- Warlord's Chain Hauberk
-					i(231564), -- General's Chain Sabatons
-					i(231567), -- General's Chain Legplates
-					i(231569), -- General's Chain Grips
-					i(231570), -- General's Chain Greaves
-					i(231574), -- General's Chain Legguards
-					i(231575), -- General's Chain Vices
+					i(231565),	-- Warlord's Chain Pauldrons
+					i(231566),	-- Warlord's Chain Armor
+					i(231568),	-- Warlord's Chain Greathelm
+					i(231571),	-- Warlord's Chain Helm
+					i(231572),	-- Warlord's Chain Shoulders
+					i(231573),	-- Warlord's Chain Hauberk
+					i(231564),	-- General's Chain Sabatons
+					i(231567),	-- General's Chain Legplates
+					i(231569),	-- General's Chain Grips
+					i(231570),	-- General's Chain Greaves
+					i(231574),	-- General's Chain Legguards
+					i(231575),	-- General's Chain Vices
 					-- Rare set
-					i(227067), -- Champion's Chain Helm
-					i(227069), -- Champion's Chain Shoulders
-					i(227078), -- Champion's Chain Pauldrons
-					i(227080), -- Champion's Chain Greathelm
+					i(227067),	-- Champion's Chain Helm
+					i(227069),	-- Champion's Chain Shoulders
+					i(227078),	-- Champion's Chain Pauldrons
+					i(227080),	-- Champion's Chain Greathelm
 					-- Legionnaire (Chain)
-					i(227071), -- Legionnaire's Chain Hauberk
-					i(227073), -- Legionnaire's Chain Legguards
-					i(227079), -- Legionnaire's Chain Legplates
-					i(227083), -- Legionnaire's Chain Armor
+					i(227071),	-- Legionnaire's Chain Hauberk
+					i(227073),	-- Legionnaire's Chain Legguards
+					i(227079),	-- Legionnaire's Chain Legplates
+					i(227083),	-- Legionnaire's Chain Armor
 					-- Blood Guard (Chain)
-					i(227074), -- Blood Guard's Chain Greaves
-					i(227075), -- Blood Guard's Chain Vices
-					i(227081), -- Blood Guard's Chain Grips
-					i(227082), -- Blood Guard's Chain Sabatons
+					i(227074),	-- Blood Guard's Chain Greaves
+					i(227075),	-- Blood Guard's Chain Vices
+					i(227081),	-- Blood Guard's Chain Grips
+					i(227082),	-- Blood Guard's Chain Sabatons
 				})),
 				cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
 					-- Epic set
-					i(231594), -- Warlord's Silk Amice
-					i(231596), -- Warlord's Silk Raiment
-					i(231601), -- Warlord's Silk Cowl
-					i(231595), -- General's Silk Trousers
-					i(231597), -- General's Silk Boots
-					i(231598), -- General's Silk Gloves
-					i(231599), -- General's Silk Gauntlets
-					i(231600), -- General's Silk Handwraps
+					i(231594),	-- Warlord's Silk Amice
+					i(231596),	-- Warlord's Silk Raiment
+					i(231601),	-- Warlord's Silk Cowl
+					i(231595),	-- General's Silk Trousers
+					i(231597),	-- General's Silk Boots
+					i(231598),	-- General's Silk Gloves
+					i(231599),	-- General's Silk Gauntlets
+					i(231600),	-- General's Silk Handwraps
 					-- Rare set
-					i(227104), -- Champion's Silk Mantle
-					i(227105), -- Champion's Silk Cowl
+					i(227104),	-- Champion's Silk Mantle
+					i(227105),	-- Champion's Silk Cowl
 					-- Legionnaire (Silk)
-					i(227106), -- Legionnaire's Silk Tunic
-					i(227107), -- Legionnaire's Silk Legguards
+					i(227106),	-- Legionnaire's Silk Tunic
+					i(227107),	-- Legionnaire's Silk Legguards
 					-- Blood Guard (Silk)
-					i(227110), -- Blood Guard's Silk Walkers
-					i(227111), -- Blood Guard's Silk Handwraps
-					i(227115), -- Blood Guard's Silk Gauntlets
-					i(227117), -- Blood Guard's Silk Gloves
+					i(227110),	-- Blood Guard's Silk Walkers
+					i(227111),	-- Blood Guard's Silk Handwraps
+					i(227115),	-- Blood Guard's Silk Gauntlets
+					i(227117),	-- Blood Guard's Silk Gloves
 				}));
 				cl(PRIEST, bubbleDownSelf({ ["classes"] = { PRIEST } }, {
 					-- Epic set
-					i(231611), -- Warlord's Satin Epaulets
-					i(231612), -- Warlord's Satin Robes
-					i(231615), -- Warlord's Satin Crown
-					i(231631), -- Warlord's Satin Mantle
-					i(231632), -- Warlord's Satin Tunic
-					i(231635), -- Warlord's Satin Hood
-					i(231610), -- General's Satin Treads
-					i(231613), -- General's Satin Grips
-					i(231614), -- General's Satin Leggings
-					i(231630), -- General's Satin Walkers
-					i(231633), -- General's Satin Handwraps
-					i(231634), -- General's Satin Legguards
+					i(231611),	-- Warlord's Satin Epaulets
+					i(231612),	-- Warlord's Satin Robes
+					i(231615),	-- Warlord's Satin Crown
+					i(231631),	-- Warlord's Satin Mantle
+					i(231632),	-- Warlord's Satin Tunic
+					i(231635),	-- Warlord's Satin Hood
+					i(231610),	-- General's Satin Treads
+					i(231613),	-- General's Satin Grips
+					i(231614),	-- General's Satin Leggings
+					i(231630),	-- General's Satin Walkers
+					i(231633),	-- General's Satin Handwraps
+					i(231634),	-- General's Satin Legguards
 					-- Rare set
-					i(227118), -- Champion's Satin Hood
-					i(227120), -- Champion's Satin Mantle
-					i(227130), -- Champion's Satin Epaulets
-					i(227132), -- Champion's Satin Crown
+					i(227118),	-- Champion's Satin Hood
+					i(227120),	-- Champion's Satin Mantle
+					i(227130),	-- Champion's Satin Epaulets
+					i(227132),	-- Champion's Satin Crown
 					-- Legionnaire (Satin)
-					i(227123), -- Legionnaire's Satin Legguards
-					i(227124), -- Legionnaire's Satin Tunic
-					i(227131), -- Legionnaire's Satin Leggings
-					i(227135), -- Legionnaire's Satin Robe
+					i(227123),	-- Legionnaire's Satin Legguards
+					i(227124),	-- Legionnaire's Satin Tunic
+					i(227131),	-- Legionnaire's Satin Leggings
+					i(227135),	-- Legionnaire's Satin Robe
 					-- Blood Guard (Satin)
-					i(227126), -- Blood Guard's Satin Handwraps
-					i(227127), -- Blood Guard's Satin Walkers
-					i(227133), -- Blood Guard's Satin Grips
-					i(227134), -- Blood Guard's Satin Treads
+					i(227126),	-- Blood Guard's Satin Handwraps
+					i(227127),	-- Blood Guard's Satin Walkers
+					i(227133),	-- Blood Guard's Satin Grips
+					i(227134),	-- Blood Guard's Satin Treads
 				}));
 				cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
 					-- Epic set
-					i(231549), -- Warlord's Leather Breastplate
-					i(231551), -- Warlord's Leather Spaulders
-					i(231553), -- Warlord's Leather Helm
-					i(231552), -- General's Leather Treads
-					i(231554), -- General's Leather Legguards
-					i(231555), -- General's Leather Mitts
+					i(231549),	-- Warlord's Leather Breastplate
+					i(231551),	-- Warlord's Leather Spaulders
+					i(231553),	-- Warlord's Leather Helm
+					i(231552),	-- General's Leather Treads
+					i(231554),	-- General's Leather Legguards
+					i(231555),	-- General's Leather Mitts
 					-- Rare set
-					i(227056), -- Champion's Leather Shoulders
-					i(227057), -- Champion's Leather Helm
+					i(227056),	-- Champion's Leather Shoulders
+					i(227057),	-- Champion's Leather Helm
 					-- Legionnaire (Leather)
-					i(227059), -- Legionnaire's Leather Legguards
-					i(227060), -- Legionnaire's Leather Chestpiece
+					i(227059),	-- Legionnaire's Leather Legguards
+					i(227060),	-- Legionnaire's Leather Chestpiece
 					-- Blood Guard (Leather)
-					i(227062), -- Blood Guard's Leather Walkers
-					i(227063), -- Blood Guard's Leather Grips
+					i(227062),	-- Blood Guard's Leather Walkers
+					i(227063),	-- Blood Guard's Leather Grips
 				})),
 				cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
 					-- Epic set
-					i(231653), -- Warlord's Mail Hauberk
-					i(231654), -- Warlord's Mail Pauldrons
-					i(231657), -- Warlord's Mail Headguard
-					i(231659), -- Warlord's Mail Spaulders
-					i(231662), -- Warlord's Mail Breastplate
-					i(231663), -- Warlord's Mail Helm
-					i(231665), -- Warlord's Mail Epaulets
-					i(231668), -- Warlord's Mail Chestguard
-					i(231669), -- Warlord's Mail Skullcap
-					i(231655), -- General's Mail Vices
-					i(231656), -- General's Mail Greaves
-					i(231658), -- General's Mail Legguards
-					i(231660), -- General's Mail Gauntlets
-					i(231661), -- General's Mail Sabatons
-					i(231664), -- General's Mail Leggings
-					i(231666), -- General's Mail Gloves
-					i(231667), -- General's Mail Boots
-					i(231670), -- General's Mail Pants
+					i(231653),	-- Warlord's Mail Hauberk
+					i(231654),	-- Warlord's Mail Pauldrons
+					i(231657),	-- Warlord's Mail Headguard
+					i(231659),	-- Warlord's Mail Spaulders
+					i(231662),	-- Warlord's Mail Breastplate
+					i(231663),	-- Warlord's Mail Helm
+					i(231665),	-- Warlord's Mail Epaulets
+					i(231668),	-- Warlord's Mail Chestguard
+					i(231669),	-- Warlord's Mail Skullcap
+					i(231655),	-- General's Mail Vices
+					i(231656),	-- General's Mail Greaves
+					i(231658),	-- General's Mail Legguards
+					i(231660),	-- General's Mail Gauntlets
+					i(231661),	-- General's Mail Sabatons
+					i(231664),	-- General's Mail Leggings
+					i(231666),	-- General's Mail Gloves
+					i(231667),	-- General's Mail Boots
+					i(231670),	-- General's Mail Pants
 					-- Rare set
 					i(227154),	-- Champion's Mail Pauldrons
 					i(227155),	-- Champion's Mail Headguard
@@ -790,39 +790,39 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				}));
 				cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
 					-- Epic set
-					i(231590), -- Warlord's Dreadweave Hood
-					i(231591), -- Warlord's Dreadweave Robe
-					i(231592), -- Warlord's Dreadweave Mantle
-					i(231588), -- General's Dreadweave Pants
-					i(231589), -- General's Dreadweave Gloves
-					i(231593), -- General's Dreadweave Boots
+					i(231590),	-- Warlord's Dreadweave Hood
+					i(231591),	-- Warlord's Dreadweave Robe
+					i(231592),	-- Warlord's Dreadweave Mantle
+					i(231588),	-- General's Dreadweave Pants
+					i(231589),	-- General's Dreadweave Gloves
+					i(231593),	-- General's Dreadweave Boots
 					-- Rare set
-					i(227090), -- Champion's Dreadweave Cowl
-					i(227092), -- Champion's Dreadweave Spaulders
+					i(227090),	-- Champion's Dreadweave Cowl
+					i(227092),	-- Champion's Dreadweave Spaulders
 					-- Legionnaire (Dreadweave)
-					i(227094), -- Legionnaire's Dreadweave Tunic
-					i(227097), -- Legionnaire's Dreadweave Legguards
+					i(227094),	-- Legionnaire's Dreadweave Tunic
+					i(227097),	-- Legionnaire's Dreadweave Legguards
 					-- Blood Guard (Dreadweave)
-					i(227098), -- Blood Guard's Dreadweave Walkers
-					i(227099), -- Blood Guard's Dreadweave Handwraps
+					i(227098),	-- Blood Guard's Dreadweave Walkers
+					i(227099),	-- Blood Guard's Dreadweave Handwraps
 				}));
 				cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
 					-- Epic set
-					i(231530), -- Warlord's Plate Armor
-					i(231534), -- Warlord's Plate Shoulders
-					i(231535), -- Warlord's Plate Headpiece
-					i(231531), -- General's Plate Boots
-					i(231532), -- General's Plate Gauntlets
-					i(231533), -- General's Plate Leggings
+					i(231530),	-- Warlord's Plate Armor
+					i(231534),	-- Warlord's Plate Shoulders
+					i(231535),	-- Warlord's Plate Headpiece
+					i(231531),	-- General's Plate Boots
+					i(231532),	-- General's Plate Gauntlets
+					i(231533),	-- General's Plate Leggings
 					-- Rare set
-					i(227042), -- Champion's Plate Shoulders
-					i(227043), -- Champion's Plate Helm
+					i(227042),	-- Champion's Plate Shoulders
+					i(227043),	-- Champion's Plate Helm
 					-- Legionnaire (Plate)
-					i(227048), -- Legionnaire's Plate Leggings
-					i(227049), -- Legionnaire's Plate Hauberk
+					i(227048),	-- Legionnaire's Plate Leggings
+					i(227049),	-- Legionnaire's Plate Hauberk
 					-- Blood Guard (Plate)
-					i(227050), -- Blood Guard's Plate Gauntlets
-					i(227051), -- Blood Guard's Plate Greaves
+					i(227050),	-- Blood Guard's Plate Gauntlets
+					i(227051),	-- Blood Guard's Plate Greaves
 				})),
 
 				-- Back

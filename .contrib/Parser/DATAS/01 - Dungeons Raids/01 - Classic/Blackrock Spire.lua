@@ -2937,7 +2937,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						})),
 						-- #endif
 						i(22335, {	-- Lord Valthalak's Staff of Command
-							-- ["timeline"] = { REMOVED_6_0_2 }, -- so is this available with summoning item?? keep time line if NOT available.
+							-- ["timeline"] = { REMOVED_6_0_2 },	-- so is this available with summoning item?? keep time line if NOT available.
 							-- CRIEVE NOTE: They reitemized the staff, but didn't put it into the game.
 						}),
 						-- #if SEASON_OF_DISCOVERY

@@ -1943,7 +1943,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9267, {	-- Mending Old Wounds
 					["qg"] = 16418,	-- Mupsi Shacklefridd
 					["coord"] = { 61.22, 37.86, THE_BARRENS },
-					["lockCriteria"] = { 1, "factionID", 470.4 },    -- Ratchet, Neutral
+					["lockCriteria"] = { 1, "factionID", 470.4 },   	-- Ratchet, Neutral
 					["cost"] = {
 						{ "i", 2589, 40 },	-- Linen Cloth
 						{ "i", 3371, 4 },	-- Empty Vial
@@ -4252,10 +4252,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["groups"] = {
-						i(5111, {  -- Rathorian's Cape
+						i(5111, { 	-- Rathorian's Cape
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
-						i(5112, {  -- Ritual Blade
+						i(5112, { 	-- Ritual Blade
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
@@ -5082,7 +5082,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["description"] = "While technically this shirt does still drop in retail, the drop rate is reduced from fairly common to 1 in 12k with the Cataclysm. For the purposes of collecting, get it now and stock up on extras!",
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },	-- Likely Removed -- 13th May 2025 -- Goldenshacal
+					["timeline"] = { REMOVED_4_0_3 },	-- Likely Removed	-- 13th May 2025	-- Goldenshacal
 														-- If somebody gets it, we can remove the timeline & set a note here since people are asking every couple months
 					["crs"] = {
 						-- #if BEFORE 4.0.3

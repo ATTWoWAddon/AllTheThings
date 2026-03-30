@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,campsite,cl,crit,de,en,ens,exp,faction,flt,gach,h,heir,i,ill,m,mnt,n,o,p,q,r,ra,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateRace,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,campsite,cl,crit,de,en,ens,exp,faction,flt,gach,h,heir,hqt,i,ill,m,mnt,n,o,p,q,r,ra,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateRace,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Character=
 h(-731,{SortPriority=40,g={
 h(-12,{
@@ -7105,8 +7105,8 @@ i(210580,{races={11}}),
 i(210588,{races={11}}),
 i(210576,{races={11}}),
 i(210538,{races={11}})}}),
-q(82162,{coords={
-[103]={{53.8,83.8}}},lc={1,"questID",78082},providers={{"n",210670}},races={11},sourceQuests={78082},type="hqt"}),
+hqt(82162,{coords={
+[103]={{53.8,83.8}}},lc={1,"questID",78082},providers={{"n",210670}},races={11},sourceQuests={78082}}),
 q(78083,{coords={
 [103]={{64.4,87.3}}},lvl=50,qgs={212387},races={11},sourceQuests={78082},g={
 toy(210455,{b=1,races={11}}),
@@ -7655,15 +7655,15 @@ o(464146,{races={25,26},g={
 i(235715,{races={25,26}})}})}}),
 q(84466,{coords={
 [2366]={{21.9,56.4}}},lvl=50,qgs={229465},races={25,26},sourceQuests={84465}}),
-q(89227,{coords={
-[2366]={{21.9,56.4}}},description="Dialogue becomes available after accepting 'Thousands of Years Ago...' (84466).",qgs={229465},races={25,26},sourceQuests={84465},type="hqt"}),
+hqt(89227,{coords={
+[2366]={{21.9,56.4}}},description="Dialogue becomes available after accepting 'Thousands of Years Ago...' (84466).",qgs={229465},races={25,26},sourceQuests={84465}}),
 q(84467,{coords={
 [2366]={{52.3,19.2}}},lvl=50,qgs={229476},races={25,26},sourceQuests={84466},g={
 o(509560,{coords={
 [2366]={{49.9,23.7},{50.9,18.9}}},races={25,26},g={
 i(235818,{b=1,f=55,races={25,26},spellID=1246888})}})}}),
-q(89270,{coords={
-[2366]={{48.4,20.6}}},description="Dialogue becomes available after accepting 'This Was Home' (84467).",qgs={231915},races={25,26},sourceQuests={84466},type="hqt"}),
+hqt(89270,{coords={
+[2366]={{48.4,20.6}}},description="Dialogue becomes available after accepting 'This Was Home' (84467).",qgs={231915},races={25,26},sourceQuests={84466}}),
 q(92030,{coords={
 [2366]={{52.3,19.2}}},lvl=50,qgs={229476},races={25,26},sourceQuests={84467},g={
 toy(242520,{b=1,races={25,26}}),
@@ -8078,7 +8078,8 @@ s(2269,6139,{f=5,rwp=90105,u=2})}),
 h(-101,{
 s(16,35,{f=28}),
 s(304104,266262,{awp=120001,b=1,c={11},f=28,lvl=10}),
-s(305112,270433,{awp=120001,c={11},f=28}),
+i(270431,{awp=120001,f=55,g={
+s(305112,270433,{c={11},f=28})}}),
 s(1372,3661,{f=28})}),
 h(-6,{awp=70305,g={
 s(93852,157666,{b=1,c={11},f=5,lvl=10}),
@@ -8144,6 +8145,8 @@ s(8248,20899,{awp=20001,f=6,rwp=90105,u=2}),
 s(28826,58235,{awp=40003,f=6,rwp=90105,u=2})}),
 h(-101,{
 s(230180,232277,{awp=110005,b=1,f=31,lvl=10}),
+i(270431,{awp=120001,f=55,g={
+s(305114,270439,{c={3},f=29})}}),
 s(833,2508,{f=31}),
 s(8277,20982,{awp=20001,f=20,rwp=90001,u=2}),
 s(8275,20980,{awp=20001,description="New Blood Elf Hunters start with this weapon.",f=32}),
@@ -8187,6 +8190,8 @@ s(185473,204261,{awp=100007,b=1,f=4}),
 s(185470,204258,{awp=100007,b=1,f=4})}),
 h(-101,{
 s(1372,3661,{awp=100007,f=28}),
+i(270431,{awp=120001,f=55,g={
+s(305111,270430,{c={10},f=28})}}),
 s(93811,157625,{b=1,f=28,lvl=10}),
 s(93813,157627,{b=1,f=25,lvl=10,rwp=90001,u=2}),
 s(304107,266265,{awp=120001,b=1,c={10},f=28,lvl=10})})}}),
@@ -8382,6 +8387,8 @@ s(28834,58246,{awp=40003,f=5,rwp=90105,u=2})}),
 h(-101,{
 s(230190,232289,{awp=110005,b=1,f=20,lvl=10}),
 s(230189,232288,{awp=110005,b=1,f=20,lvl=10}),
+i(270431,{awp=120001,f=55,g={
+s(305116,270441,{c={4},f=21})}}),
 s(8272,20977,{awp=40001,f=25,rwp=90001,u=2}),
 s(8277,20982,{awp=20001,f=20,rwp=90001,u=2}),
 s(24524,50057,{awp=30300,description="New Blood Elves start with this weapon.",f=20}),
@@ -8423,8 +8430,10 @@ s(165326,187718,{awp=90105,f=6}),
 s(165325,187717,{awp=90105,f=6}),
 s(165324,187716,{awp=90105,f=6})}),
 h(-101,{
-s(304110,266268,{awp=120001,b=1,f=34,lvl=10}),
+i(270431,{awp=120001,f=55,g={
+s(305117,270442,{c={7},f=21})}}),
 s(304111,266269,{awp=120001,b=1,c={7},f=8,lvl=10}),
+s(305115,270440,{awp=120001,c={7},f=21}),
 s(17,36,{f=23}),
 s(746,2362,{f=8})}),
 h(-6,{awp=70305,g={
@@ -8564,6 +8573,9 @@ s(165337,187744,{awp=90105,f=7}),
 s(165336,187743,{awp=90105,f=7})}),
 h(-101,{
 s(230167,232264,{awp=110005,b=1,f=22,lvl=10}),
+i(270431,{awp=120001,f=55,g={
+s(305118,270443,{c={1},f=8}),
+s(305119,270444,{c={1},f=21})}}),
 s(304113,266271,{awp=120001,b=1,c={1},f=26,lvl=10}),
 s(4385,12282,{f=22,rwp=90001,u=2}),
 s(24361,49778,{awp=20001,f=26,rwp=90001,u=2}),

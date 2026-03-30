@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(232467, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					q(91309, { -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Oasis' (84993)
+					q(91309, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Oasis' (84993)
 						["name"] = "Devoured Energy-Pod Devourer Attack: The Oasis",
 						["isWeekly"] = true,
 						["groups"] = {
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(238663, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					q(91310, { -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Eco-dome: Primus' (86447)
+					q(91310, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Eco-dome: Primus' (86447)
 						["name"] = "Devoured Energy-Pod Devourer Attack: Eco-dome Primus",
 						["isWeekly"] = true,
 						["groups"] = {
@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(238664, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					q(91311, { -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Atrium' (86464)
+					q(91311, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Atrium' (86464)
 						["name"] = "Devoured Energy-Pod Devourer Attack: The Atrium",
 						["isWeekly"] = true,
 						["groups"] = {
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(238665, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					q(91312, { -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Tazavesh' (86465)
+					q(91312, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Tazavesh' (86465)
 						["name"] = "Devoured Energy-Pod Devourer Attack: Tazavesh",
 						["isWeekly"] = true,
 						["groups"] = {

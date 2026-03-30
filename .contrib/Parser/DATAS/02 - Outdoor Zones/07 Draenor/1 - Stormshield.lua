@@ -1375,7 +1375,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 43.1, 77.7, STORMSHIELD },
 							["sym"] = {{"sub","common_vendor",87394}},	-- Kwilax Fuseshiv <Reputation Vendor>
 						}),
-						n(87365, {  -- Grakis <Archaeology Fragments>
+						n(87365, { 	-- Grakis <Archaeology Fragments>
 							["coord"] = { 48.6, 33.5, STORMSHIELD },
 							["groups"] = {
 								i(122606, {	-- Explorer's Notebook

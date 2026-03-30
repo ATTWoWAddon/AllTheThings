@@ -363,7 +363,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 		if parent and parent.parent
 			and (showCompleted or not app.IsComplete(j))
 		then
-			text = GenerateSourcePath(parent, 1);
+			text = GenerateSourcePath(parent, parent.objectiveID and 0 or 1);
 			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
 			if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
 				-- doesn't meet current unobtainable filters from the Thing itself and its parent chain
@@ -888,6 +888,7 @@ app.ThingKeys = {
 	decorID = true,
 	firstcraftID = true,
 	garrisonbuildingID = true,
+	professionnodeID = true,
 	achievementID = true,	-- special handling
 	criteriaID = true,	-- special handling
 	-- 1 - Specific keys which we don't want to list Contains data on row reference tooltips but are considered Things
@@ -1401,6 +1402,12 @@ function app:GetDatabaseRoot()
 					icon = app.asset("Category_Professions")
 				}),
 
+				-- Profession Nodes
+				app.CreateDynamicHeader("professionnodeID", {
+					name = L.PROFESSION_NODES_CHECKBOX,
+					icon = app.asset("Category_Professions")	-- TODO: Make a new icon
+				}),
+
 				-- Runeforge Powers
 				app.CreateDynamicHeader("runeforgepowerID", SimpleHeaderGroup(app.HeaderConstants.LEGENDARIES, {suffix=EXPANSION_NAME8})),
 
@@ -1502,7 +1509,6 @@ local function PrePopulateAchievementSymlinks()
 	-- app.PrintDebug("Done:FillAchSym")
 end
 app.AddEventHandler("OnRefreshCollectionsDone", PrePopulateAchievementSymlinks)
-
 
 app.AddEventHandler("OnReady", function()
 	-- warning about debug logging in case it sneaks in we can realize quicker

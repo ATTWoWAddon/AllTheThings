@@ -277,7 +277,7 @@ app.CreateToggle = app.CreateClass("Toggle", "toggleID", {
 					parent[t.toggleID] = saved
 				end
 				local handler = t.OnClickHandler
-				return handler and handler(saved) or nil
+				return handler and handler(row, button, t.toggleID, saved) or nil
 			end
 			t._OnClick = onclick
 		end

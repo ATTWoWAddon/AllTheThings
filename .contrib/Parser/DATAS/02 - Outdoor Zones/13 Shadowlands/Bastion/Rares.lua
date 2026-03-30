@@ -54,7 +54,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 61083,
 				["groups"] = {
 					i(183607),	-- Uncertain Aspirant's Spear
-					i(180613),	-- Fragile Humility Scroll (not dropped by the boss, but putting here so that the source text associates it w/ the rare)
+					o(354848, {	-- Fragile Humility Scroll
+						["coords"] = {
+							{ 31.4, 22.9, BASTION },
+							{ 31.4, 23.9, BASTION },
+							{ 32.1, 21.2, BASTION },
+							{ 32.1, 23.0, BASTION },
+							{ 32.5, 24.4, BASTION },
+							{ 32.7, 20.4, BASTION },
+							{ 33.0, 20.7, BASTION },
+							{ 33.2, 23.2, BASTION },
+						},
+						["groups"] = { i(180613) },	-- Fragile Humility Scroll (not dropped by the boss, but putting here so that the source text associates it w/ the rare)
+					})
 				},
 			}),
 			n(160629, {	-- Baedos

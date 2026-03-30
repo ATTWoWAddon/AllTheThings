@@ -21,6 +21,7 @@
 	<Script file="Collected Sources.lua"/>
 	<Script file="Debugger.lua"/>
 	<Script file="Exploration.lua"/>
+	<Script file="Export.lua"/>
 	<Script file="Factions.lua"/>
 	<Script file="Find.lua"/>
 	<Script file="Flight Paths.lua"/>

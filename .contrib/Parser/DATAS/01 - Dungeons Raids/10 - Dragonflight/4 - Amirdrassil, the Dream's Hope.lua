@@ -375,8 +375,7 @@ InstanceHelper.ExtraLoots = {
 	},
 }
 
--- TODO: fix when LFR DF is available again
-local TIMELINE_LFR = { ADDED_10_2_0, REMOVED_11_0_2 }
+local TIMELINE_LFR = { ADDED_10_2_0, REMOVED_11_0_2, ADDED_12_0_5 }
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
@@ -1535,6 +1534,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					}),
 				}),
 			}),
+			-- #if AFTER 12.0.5
+			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
+				["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
+				["coord"] = { 58.5, 35.4, VALDRAKKEN },
+			}),
+			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades(bubbleDown({ ["timeline"] = TIMELINE_LFR }, {
 				ZoneDrops({
 				}),

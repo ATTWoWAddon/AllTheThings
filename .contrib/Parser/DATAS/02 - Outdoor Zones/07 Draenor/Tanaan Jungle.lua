@@ -305,7 +305,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
-					q(38578, {	-- A Message of Terrible Import -- aa
+					q(38578, {	-- A Message of Terrible Import	-- aa
 						["qg"] = 90584,	-- Goi'orsh
 						["coord"] = { 44.2, 41.5, TANAAN_JUNGLE },
 					}),

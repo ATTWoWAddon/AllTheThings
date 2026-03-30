@@ -999,7 +999,6 @@ namespace ATT
             Consolidate_lvl(data);
             Consolidate_item(data, parentData);
             CheckRequiredDataRelationships(data);
-            CheckObjectConversion(data);
 
             data.TryGetValue("g", out List<object> g);
             int subGroupCount = g?.Count ?? 0;
@@ -1146,6 +1145,8 @@ namespace ATT
 
         private static void Consolidate_Cleaning(IDictionary<string, object> data)
         {
+            CheckObjectConversion(data);
+
             List<string> removeKeys = new List<string>();
 
             // clean out any temporary 'type' fields which do not yet have a corresponding conversion in parser.config

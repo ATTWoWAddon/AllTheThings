@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWeekly"] = true,
 				["groups"] = {
 					i(250116, {	-- Cache of Quel'Thalas Treasures (N)
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				},
 			}, {
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 48.9, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
 			}, {
-				
+
 				pvp(q(93593, {				-- A Call to Battle
 					["_drop"] = { "g" },	-- Drop Mark of Honor
 				})),
@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--		["isWeekly"] = true,
 			--		["groups"] = {
 			--			i(250117, {	-- Cache of Quel'Thalas Treasures (H)
-			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),

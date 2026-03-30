@@ -939,7 +939,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["groups"] = { i(37027) },	-- Blight Specimen (QI!)
 					}),
-					q(11237, {	-- Gjalerbron Attack Plans (A) -- TODO: Verify if this drops all the time
+					q(11237, {	-- Gjalerbron Attack Plans (A)	-- TODO: Verify if this drops all the time
 						["provider"] = { "i", 33289 },	-- Gjalerbron Attack Plans
 						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
@@ -949,7 +949,7 @@ root(ROOTS.Zones, {
 							24014,	-- Necrolord
 						},
 					}),
-					q(11266, {	-- Gjalerbron Attack Plans (H) -- TODO: Verify if this drops all the time
+					q(11266, {	-- Gjalerbron Attack Plans (H)	-- TODO: Verify if this drops all the time
 						["provider"] = { "i", 33347 },	-- Gjalerbron Attack Plans
 						["races"] = HORDE_ONLY,
 						["crs"] = {
@@ -1839,7 +1839,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11256, {	-- Skorn Must Fall!
-						["sourceQuest"] = 11281,	-- Mimicking Nature's Call -- TODO:  verify
+						["sourceQuest"] = 11281,	-- Mimicking Nature's Call	-- TODO:  verify
 						["qg"] = 24129,	-- Chieftain Ashtotem
 						["coord"] = { 48.0, 10.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
@@ -1952,7 +1952,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(11249, {	-- Stop the Ascension! (A) -- TODO: Verify if this drops all the time
+					q(11249, {	-- Stop the Ascension! (A)	-- TODO: Verify if this drops all the time
 						["provider"] = { "i", 33314 },	-- Vrykul Scroll of Ascension
 						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
@@ -1977,7 +1977,7 @@ root(ROOTS.Zones, {
 							i(35901),	-- Rejuvenating Cord
 						},
 					}),
-					q(11260, {	-- Stop the Ascension! (H) -- TODO: Verify if this drops all the time
+					q(11260, {	-- Stop the Ascension! (H)	-- TODO: Verify if this drops all the time
 						["provider"] = { "i", 33345 },	-- Vrykul Scroll of Ascension
 						["races"] = HORDE_ONLY,
 						["crs"] = {
@@ -2038,7 +2038,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11469, {	-- Swabbin' Soap
-						["sourceQuest"] = 11509,	-- Street "Cred" -- TODO:  verify
+						["sourceQuest"] = 11509,	-- Street "Cred"	-- TODO:  verify
 						["qg"] = 24784,	-- Scuttle Frostprow
 						["coord"] = { 37.7, 79.5, HOWLING_FJORD },
 						["groups"] = {

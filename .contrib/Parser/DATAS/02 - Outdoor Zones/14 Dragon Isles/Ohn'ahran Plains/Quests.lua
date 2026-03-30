@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 184595 },	-- Ohn Seshteng
 					["coord"] = { 70.0, 38.0, OHNAHRAN_PLAINS },
 					["groups"] = {
-						o(376152, { -- River Reeds
+						o(376152, {	-- River Reeds
 							["coords"] = {
 								{ 68.4, 41.1, OHNAHRAN_PLAINS },
 								{ 68.8, 39.4, OHNAHRAN_PLAINS },

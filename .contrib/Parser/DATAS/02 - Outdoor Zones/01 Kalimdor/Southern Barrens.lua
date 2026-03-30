@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(31918, {	-- A Tamer's Homecoming (H)
 					["sourceQuest"] = 31870,	-- Cassandra Kaboom
-					["altQuests"] = { 31917 },	-- A Tamer's Homecoming (A) -- CRIEVE NOTE: Check this on MOP Classic
+					["altQuests"] = { 31917 },	-- A Tamer's Homecoming (A)	-- CRIEVE NOTE: Check this on MOP Classic
 					["qg"] = 66422,	-- Cassandra Kaboom
 					["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_5_0_4 },
@@ -1534,16 +1534,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								37084,	-- Terrortooth Scytheclaw
 							},
 						}),
-						i(53241, {  -- Steel-Patched Belt
+						i(53241, { 	-- Steel-Patched Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53258, {  -- Terrortooth Hide Bracers
+						i(53258, { 	-- Terrortooth Hide Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53248, {  -- Raptor Scrap Cloak
+						i(53248, { 	-- Raptor Scrap Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(131371, {  -- Steel-Patched Armbands
+						i(131371, { 	-- Steel-Patched Armbands
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
@@ -1924,13 +1924,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Henry Zykes slain
 							["provider"] = { "n", 37165 },	-- Henry Zykes
 						}),
-						i(53307, {  -- Surveying Gloves
+						i(53307, { 	-- Surveying Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53308, {  -- Zykes' Belt
+						i(53308, { 	-- Zykes' Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(131372, {  -- Surveying Gauntlets
+						i(131372, { 	-- Surveying Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
@@ -2014,16 +2014,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 General Hawthorne slain
 							["provider"] = { "n", 38018 },	-- General Hawthorne
 						}),
-						i(53226, {  -- Battlescar Monnion
+						i(53226, { 	-- Battlescar Monnion
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53232, {  -- Cloak of Harvested Fear
+						i(53232, { 	-- Cloak of Harvested Fear
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53256, {  -- Taurajo Butcher's Blade
+						i(53256, { 	-- Taurajo Butcher's Blade
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(131383, {  -- Battlescar Amice
+						i(131383, { 	-- Battlescar Amice
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
@@ -2243,7 +2243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(53250, {	-- Ring of Reclaimed Honor
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(131370, {  -- Holgom's Waistcord
+						i(131370, { 	-- Holgom's Waistcord
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},

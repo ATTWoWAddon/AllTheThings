@@ -824,8 +824,8 @@ i(10716,{f=53,q=2,requireSkill=202})}),
 flt(200,{
 r(11454,{description="This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",itemID=10713,learnedAt=200,q=1,requireSkill=164})}),
 flt(102,{
-toy(18986,{q=3,requireSkill=20219}),
-toy(18660,{q=2,requireSkill=20219})})}}),
+toy(18986,{q=3}),
+toy(18660,{q=2})})}}),
 prof(20222,{description="These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",g={
 flt(50,{
 i(10587,{b=1,f=53,q=1,requireSkill=20222}),
@@ -841,7 +841,7 @@ i(10586,{q=1,requireSkill=202})}),
 flt(200,{
 r(11456,{description="This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",itemID=10644,learnedAt=210,q=1,requireSkill=171})}),
 flt(102,{
-toy(18984,{q=3,requireSkill=20222})})}}),
+toy(18984,{q=3})})}}),
 h(-88,{
 s(130613,19999,{awp=100007,f=4,learnedAt=300,lvl=60,q=3,requireSkill=202,rwp=40003,u=2}),
 s(130612,19998,{awp=100007,f=5,learnedAt=300,lvl=60,q=3,requireSkill=202,rwp=40003,u=2}),
@@ -964,7 +964,7 @@ i(18631,{q=1}),
 i(10560,{q=1}),
 i(4375,{q=1})}),
 flt(102,{
-toy(17716,{q=1,requireSkill=202})}),
+toy(17716,{q=1})}),
 flt(53,{
 i(16022,{f=53,lvl=50,q=3,requireSkill=202}),
 i(45631,{awp=30100,f=53,lvl=49,q=3,u=30}),
@@ -1987,7 +1987,7 @@ o(181248,{awp=20001,coords={
 [95]={{30,50}}},requireSkill=186}),
 o(165658,{learnedAt=230,maps={232,242},requireSkill=186}),
 o(1734,{coords={
-[64]={{44.1,37.2}}},learnedAt=155,maps={14,15,22,23,26,32,36,66,69,71,199,210},requireSkill=186}),
+[64]={{44.1,37.2}}},description="Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",learnedAt=155,maps={14,15,22,23,26,32,36,66,69,71,199,210},requireSkill=186}),
 o(150080,{coords={
 [17]={{50.4,10.3}}},learnedAt=155,r=1,requireSkill=186}),
 o(181109,{learnedAt=155,maps={77},requireSkill=186}),
@@ -2033,7 +2033,7 @@ o(150081,{coords={
 o(181108,{learnedAt=230,maps={77},requireSkill=186}),
 i(2770,{maps_disp={1,7,10,18,21,27,37,48,52,62,76,94,95,97,106},providers={{"o",1731}},q=1}),
 i(11370,{maps_disp={232,242},providers={{"o",165658}},q=1}),
-i(2776,{description="Gold Veins is a rare spawn in place of Iron Deposits and Mithril Deposits.",maps_disp={14,15,22,23,26,32,36,64,66,69,71,77,199,210},providers={{"o",1734},{"o",73941}},q=2}),
+i(2776,{maps_disp={14,15,22,23,26,32,36,64,66,69,71,77,199,210},providers={{"o",1734},{"o",73941}},q=2}),
 i(2772,{maps_disp={14,15,22,23,26,66,69,199,210},providers={{"o",1735}},q=1}),
 i(22203,{maps_disp={247,320},providers={{"o",181068},{"o",181069}},q=1,u=15}),
 i(3858,{maps_disp={15,23,32,36,64,69,71,77},providers={{"o",2040}},q=1}),
@@ -2756,7 +2756,7 @@ i(23841,{q=1,requireSkill=202,u=17}),
 i(23835,{f=53,q=3,requireSkill=20219,u=17}),
 s(134212,23825,{f=4,learnedAt=350,q=3,requireSkill=202,u=17})}}),
 flt(102,{u=17,g={
-toy(30544,{q=3,requireSkill=20219,u=17})}})}}),
+toy(30544,{q=3,u=17})}})}}),
 prof(20222,{description="These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",u=17,g={
 h(-88,{u=17,g={
 s(134225,23838,{b=1,f=4,learnedAt=350,q=4,requireSkill=20222,u=17}),
@@ -2766,7 +2766,7 @@ i(23836,{f=53,q=3,requireSkill=20222,u=17}),
 i(23827,{q=1,requireSkill=202,u=17}),
 i(23826,{q=1,requireSkill=202,u=17})}}),
 flt(102,{u=17,g={
-toy(30542,{q=3,requireSkill=20222,u=17})}})}}),
+toy(30542,{q=3,u=17})}})}}),
 h(-88,{u=17,g={
 s(144655,34847,{awp=20400,b=1,f=4,learnedAt=350,lvl=70,q=4,requireSkill=202,u=21}),
 s(134145,23758,{f=5,learnedAt=340,q=3,requireSkill=202,u=17}),
@@ -2813,7 +2813,7 @@ i(25886,{f=55,q=1,u=17}),
 s(134211,23824,{f=5,learnedAt=330,q=3,requireSkill=202,u=17}),
 s(145289,35581,{awp=20400,f=4,learnedAt=330,q=3,requireSkill=202,u=17}),
 i(23768,{f=55,q=1,u=17}),
-toy(23821,{q=1,requireSkill=202,u=17})}}),
+toy(23821,{q=1,u=17})}}),
 flt(100,{u=17,g={
 mnt(44153,{awp=20300,itemID=34060,lvl=60,q=3,requireSkill=202,u=17}),
 mnt(44151,{awp=20300,itemID=34061,lvl=70,q=4,requireSkill=202,u=17})}}),
@@ -2838,7 +2838,7 @@ h(-245,{u=17,g={
 i(23764,{lvl=55,q=2,u=17}),
 i(23765,{lvl=55,q=3,u=17}),
 i(23766,{lvl=60,q=3,u=17})}}),
-toy(23821,{q=1,requireSkill=202,u=17,g={
+toy(23821,{q=1,u=17,g={
 n(17408,{maps={109},requireSkill=202,u=17}),
 n(17407,{maps={104},requireSkill=202,u=17}),
 n(17378,{maps={102},requireSkill=202,u=17}),
@@ -3933,9 +3933,9 @@ i(39681,{q=1,u=30}),
 i(39682,{q=1,u=30}),
 i(39690,{q=1,u=30})}}),
 flt(102,{u=30,g={
-toy(40768,{q=3,requireSkill=202,u=30}),
+toy(40768,{q=3,u=30}),
 toy(49040,{b=1,q=4,requireSkill=202,u=32}),
-toy(48933,{awp=30200,q=3,requireSkill=202,u=30})}}),
+toy(48933,{awp=30200,q=3,u=30})}}),
 flt(53,{u=30,g={
 i(41121,{b=1,f=53,q=3,requireSkill=202,u=30}),
 i(40865,{f=53,q=3,requireSkill=202,u=30}),
@@ -3948,7 +3948,7 @@ h(-245,{u=30,g={
 i(44739,{lvl=70,q=1,u=30}),
 i(41167,{lvl=70,q=3,u=30}),
 i(41146,{lvl=70,q=3,u=30})}}),
-toy(23821,{q=1,requireSkill=202,u=30,g={
+toy(23821,{q=1,u=30,g={
 n(24879,{description="Too few and far between to be reliably farmed on it's own.",maps={115,118,120},requireSkill=202,u=30}),
 n(32522,{coords={
 [115]={{38.4,32.3}},
@@ -5140,7 +5140,7 @@ prof(20219,{description="These items can only be crafted by Engineers who have c
 flt(101,{u=40,g={
 p(262,{itemID=60216,npcID=43916,q=3,spellID=82173,u=40})}}),
 flt(102,{u=40,g={
-toy(40727,{q=3,requireSkill=20219,u=40})}})}}),
+toy(40727,{q=3,u=40})}})}}),
 prof(20222,{description="These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",u=40,g={
 flt(101,{u=40,g={
 p(261,{itemID=59597,npcID=43800,q=3,spellID=81937,u=40})}}),
@@ -5173,7 +5173,7 @@ flt(56,{u=40,g={
 i(67749,{q=1,u=40}),
 i(60224,{q=1,u=40})}}),
 flt(102,{u=40,g={
-toy(60854,{q=3,requireSkill=202,u=40})}}),
+toy(60854,{q=3,u=40})}}),
 flt(53,{u=40,g={
 i(60403,{f=53,lvl=80,q=3,requireSkill=202,u=40})}}),
 h(-101,{u=40,g={
@@ -6548,7 +6548,7 @@ i(94113,{awp=50400,b=1,q=3,u=54}),
 i(90146,{q=1,u=50})}}),
 flt(102,{u=50,g={
 toy(87214,{b=1,q=4,requireSkill=202,u=50}),
-toy(87215,{q=3,requireSkill=202,u=50})}}),
+toy(87215,{q=3,u=50})}}),
 flt(53,{u=50,g={
 i(77530,{f=53,lvl=87,q=3,u=50})}}),
 h(-101,{u=50,g={

@@ -2099,6 +2099,7 @@ Cats go to Revendreth.","|cFFFFD200In-Game Shop|r ",2890,171025,333570,3604137,7
 "Tales say that the stewards were created to aid the denizens of Bastion in their eternal duties. They don't seem to mind.","|cFFFFD200Drop: |rBastion|n|cFFFFD200Covenant: |rKyrian",3062,175560,345741,3731723,0,2,0,6,7,0
 "Larion are prideful beasts, and see anyone that enters their territory as a challenge.","|cFFFFD200Drop: |rLarionrider Orstus|n|cFFFFD200Zone: |rBastion",3063,175562,345742,3860694,2,2,0,6,7,0
 "When fully-grown, a larion that has grown up with an aspirant will never leave his or her master's side.","|cFFFFD200Drop:|r Supplies of the Ascended|n",3064,175564,345744,3860696,2,2,0,6,7,0
+,"|cFFFFD200Trading Post|r",4965,256565,1269356,7467154,6,16466,11,6,7,0
 "Young larions are often given to aspirants as an early test of compassion and leadership.","|cFFFFD200Drop:|r Courage|n|cFFFFD200Zone:|r Bastion|n",3065,175563,345743,3860695,2,2,0,6,7,0
 "Lucy was sent to Revendreth, as all cats are, and somehow escaped. When questioned, local dredgers blamed it on her being a cat.","|cFFFFD200Drop:|r Dirty Glinting Object|n",3066,175715,346192,611425,3,2,0,41,7,0
 "Spriggans are tricky foes that live in Ardenweald and torment the Night Fae. This one has decided to play the ultimate trick--joining you.","|cFFFFD200Achievement: |rFamily Exorcist|n|cFFFFD200Category: |rBattle",3067,175756,346236,3536179,0,82,5,6,7,0
@@ -2567,6 +2568,7 @@ That price is lots and lots of cheese.","|cFFFFD200Achievement: |rThe Gift of Ch
 |cFFFFD200Vendor: |rTalisa Whisperbloom
 |cFFFFD200Zone: |rEmerald Dream
 |cFFFFD200Cost: |r1|Hitem:211376|h|TInterface\ICONS\INV_Misc_TrailofFlowers.blp:0|t|h",4306,212567,426540,4899642,5,2,2,6,7,0
+,"|cFFFFD200Trading Post|r",4966,256566,1269358,7467155,6,16466,11,6,7,0
 "What Spruce lacks in speed, she makes up for with sheer stubbornness.","|cFFFFD200Vendor: |rMoon Priestess Lasara|n|cFFFFD200Zone: |rEmerald Dream|n|cFFFFD200Cost: |r375|Hcurrency:2003|h|TInterface\ICONS\INV_Faction_WarResources.BLP:0|t|h",4307,212569,426544,3636843,4,2,2,6,7,0
 "Juniper's unique coloration makes it hard to hide from predators in the Emerald Dream's lush green foliage. She therefore made the wise decision to travel with you instead.","|cFFFFD200Vendor: |rMoon Priestess Lasara|n|cFFFFD200Zone: |rEmerald Dream|n|cFFFFD200Cost: |r375|Hcurrency:2003|h|TInterface\ICONS\INV_Faction_WarResources.BLP:0|t|h",4308,212570,426545,3636846,4,2,2,6,7,0
 "Is it a snail? Is it a dream? Is it the dream of a sleeping snail?","|cFFFFD200Vendor: |rElianna|n|cFFFFD200Zone: |rEmerald Dream|n|cFFFFD200Cost: |r1|Hcurrency:2777|h|TInterface\ICONS\INV_Legion_Faction_DreamWeavers.BLP:0|t|h",4309,212877,427044,1396974,5,2,2,6,7,0
@@ -2644,7 +2646,7 @@ That price is lots and lots of cheese.","|cFFFFD200Achievement: |rThe Gift of Ch
 "Worm Facts",,4505,222591,446499,1120721,7,16416,-1,6,7,0
 "Dangerous, toxic spores? What if it was purple?!","|cFFFFD200Drop:|r Fungarian Delve's Heavy Trunk|n",4506,222590,446498,5789327,5,2,0,6,7,0
 "Fungal spores awash in the blood of fallen monstrosities.","|cFFFFD200Pet Battle: |rThe Ringing Deeps",4507,222592,446500,5789325,5,26,4,6,7,0
-"This collection of spores exploded one too many times on its previous owner. Maybe you'll have better luck with it.","|cFFFFD200Vendor: |rMaterialist Ophinell|n|cFFFFD200Zone: |rTwilight Highlands|n|cFFFFD200Cost: |r30|Hcurrency:3319|h|TInterface\ICONS\INV12_Twilight_ Blade_Cultist_Insignia.BLP:0|t|h",4508,222593,446501,5789324,5,18,2,6,7,0
+"This collection of spores exploded one too many times on its previous owner. Maybe you'll have better luck with it.","|cFFFFD200Vendor: |rMaterialist Ophinell|n|cFFFFD200Zone: |rTwilight Highlands|n|cFFFFD200Cost: |r30|Hcurrency:3319|h|TInterface\ICONS\INV12_Twilight_ Blade_Cultist_Insignia.BLP:0|t|h",4508,222593,446501,5789324,5,16402,2,6,7,0
 "Worm Facts",,4509,222594,446502,1120721,7,16416,-1,6,7,0
 "It's a bird! It's a gyrocopter! No wait, it's something way worse. Run.","|cFFFFD200Pet Battle: |rAzj-Kahet, Hallowfall",4510,222608,446510,5162543,2,26,4,6,7,0
 "It's not the most original anti-hero name. But it promises to be a compelling crossover.","|cFFFFD200Vendor: |rWorld Vendors|n|cFFFFD200Cost: |r50|Hitem:163036|h|TInterface\ICONS\INV_Currency_PetBattle.BLP:0|t|h",4511,222607,446512,5162542,2,2,2,6,7,0
@@ -2739,7 +2741,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Gill'el stepped down from leading Frostfin clan to commune with the elements. His return has sparked excitement in all.",|cFFFFD200Promotion|r,4630,230834,464808,5834819,0,16466,7,939,940,0
 "Eagerly attends every cookout. He just wants to grill for gob's sake!","|cFFFFD200Achievement: |rFamily Battler of Undermine|n|cFFFFD200Category: |rBattle",4631,231469,471902,5928915,7,82,5,6,7,0
 "He's just a bit tuckered out. He's just a little guy.","|cFFFFD200Vendor: |rLab Assistant Laszly|n|cFFFFD200Zone: |rUndermine|n|cFFFFD200Cost: |r6500|Hcurrency:2815|h|TInterface\ICONS\SPELL_AZERITE_ESSENCE14.BLP:0|t|h",4632,231468,471904,5928912,7,2,2,6,7,0
-"Gotta be tough with the scruff.","|cFFFFD200Vendor: |rMaterialist Ophinell|n|cFFFFD200Zone: |rTwilight Highlands|n|cFFFFD200Cost: |r30|Hcurrency:3319|h|TInterface\ICONS\INV12_Twilight_ Blade_Cultist_Insignia.BLP:0|t|h",4633,231467,471901,5928911,7,18,2,6,7,0
+"Gotta be tough with the scruff.","|cFFFFD200Vendor: |rMaterialist Ophinell|n|cFFFFD200Zone: |rTwilight Highlands|n|cFFFFD200Cost: |r30|Hcurrency:3319|h|TInterface\ICONS\INV12_Twilight_ Blade_Cultist_Insignia.BLP:0|t|h",4633,231467,471901,5928911,7,16402,2,6,7,0
 "Look, she likes it! She's smiling, see!",,4634,231465,471903,5928910,7,34,-1,6,7,0
 "Do the hyenas need to wear goggles? Absolutely not. Does it look extremely cool? Incredibly.","|cFFFFD200World Event:|r Children's Week|n",4635,231466,471900,5928914,7,2,6,6,7,0
 "One more thing... Show my hound some respect.","|cFFFFD200Drop:|r Shipping and Handling|n|cFFFFD200Zone: |rUndermine",4636,231464,471907,5928913,7,2,0,6,7,0
@@ -2841,7 +2843,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Hungry? Try eating your foes!","|cFFFFD200Zone: |rVoidstorm",4790,240014,1226298,3535736,7,154,10,6,7,0
 "Thrrrdgl is content with not being a top choice or even a second choice.  Thrrrdgl believes that first and second are the worst and third is the best.","|cFFFFD200Promotion|r |n",4791,198989,1226305,4693218,0,16466,7,6,7,0
 "PH - Tech was made to allow customizations.","|cFFFFD200Trading Post|r",4792,240994,1226412,6642732,7,16466,11,6,7,0
-"Weechi adores attention and what better way to get attention than wearing a costume? Simply seek out a Pet Grooming Station to customize this sweet, wonderous little buddy.","|cFFFFD200Trading Post|r",4793,241150,1226743,6642732,7,82,11,6,7,0
+"Weechi adores attention and what better way to get attention than wearing a costume? Simply seek out a Pet Grooming Station, near any Trading Post, to customize this sweet, wonderous little buddy.","|cFFFFD200Trading Post|r",4793,241150,1226743,6642732,7,82,11,6,7,0
 "Given his boisterous behavior, we can only assume that he became imbued with the void from starting a fight. The question remains; who won?","|cFFFFD200Vendor: |rLars Bronsmaelt|n|cFFFFD200Zone: |rHallowfall|n|cFFFFD200Cost: |r6500|Hcurrency:2815|h|TInterface\ICONS\SPELL_AZERITE_ESSENCE14.BLP:0|t|h",4794,241297,1226942,5648283,7,18,2,6,7,0
 "Formented in the chaos and dust of Voidstorm. It hasn't even learned how to hate yet!","|cFFFFD200Zone: |rVoidstorm",4795,241439,1250138,537022,5,154,10,6,7,0
 "According to Tol'vir beliefs, a crocolisk nest that hatches during the Festival of the Sun is said to be blessed by the river guardian, Sa'bak.",|cFFFFD200Promotion|r,4796,241416,1227251,6694821,8,16466,7,6,7,0
@@ -2860,7 +2862,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Early attempts to integrate with the ecosystem resulted in multiple specimens being eyeblasted.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4827,245474,1238270,7119296,5,2,0,6,7,0
 "This watcher's ennui is as eternal as the struggle between the Light and the Void.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4828,245475,1238271,7119296,5,2,0,6,7,0
 "It waits and watches from the shadows. Softly. Softly.","|cFFFFD200Vendor: |rShad'anis|n|cFFFFD200Zone: |rK'aresh|n|cFFFFD200Cost: |r4|Hcurrency:3303|h|TInterface\ICONS\INV_Misc_Coin_08.blp:0|t|h",4829,245476,1238272,7119389,5,18,2,6,7,0
-"Ever watchful, never blinking.","|cFFFFD200Vendor: |rMaterialist Ophinell|n|cFFFFD200Zone: |rTwilight Highlands|n|cFFFFD200Cost: |r30|Hcurrency:3319|h|TInterface\ICONS\INV12_Twilight_ Blade_Cultist_Insignia.BLP:0|t|h",4830,245477,1238273,7119297,5,18,2,6,7,0
+"Ever watchful, never blinking.","|cFFFFD200Vendor: |rMaterialist Ophinell|n|cFFFFD200Zone: |rTwilight Highlands|n|cFFFFD200Cost: |r30|Hcurrency:3319|h|TInterface\ICONS\INV12_Twilight_ Blade_Cultist_Insignia.BLP:0|t|h",4830,245477,1238273,7119297,5,16402,2,6,7,0
 "While not viewed as insightful enough to be a Watcher just yet, he's on the lookout for others to share his vision with.","|cFFFFD200Faction: |rManaforge Vandals|n|cFFFFD200Renown: |r13|n|cFFFFD200Location: |rShadow Point",4832,245479,1238275,7119298,5,18,1,6,7,0
 "Siphonmites generally feed on the energies of dying worlds, but this one is perfectly content with getting some scritches from researchers instead.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4833,245480,1238282,6841595,7,2,0,6,7,0
 "Jimmy's actual name is Morgilito, Spawn of Morgil, Chosen Enemy of Tazavesh, Devourer of K'aresh...but everyone just calls him Jimmy.","|cFFFFD200Drop: |rMorgil the Netherspawn|n|cFFFFD200Zone: |rK'aresh",4834,245481,1238283,6841594,7,18,0,6,7,0
@@ -2888,9 +2890,11 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "An especially aggressive snooter. Its unpleasant disposition makes it an outcast among other snooters.","|cFFFFD200Trading Post|r",4855,246662,1241760,6993783,7,16466,11,6,7,0
 "Of all snooters, this one has the scruffiest and warmest fur. It is a very friendly snooter but use extreme caution when petting it.","|cFFFFD200Trading Post|r",4856,246663,1241763,6993782,7,16466,11,6,7,0
 "If you have milk tea, keep an eye on it. Brewthieves love to pop out of the shadows and steal tea. Even worse, once in paw they love to show off their newly acquired beverage.",|cFFFFD200Promotion|r,4858,246983,1242265,6310500,0,16466,7,6,7,0
+"Very unhappy. Always goes for the jugular. Kind of cute.","|cFFFFD200Drop:|r Delve's End of Run Rewards|n",4961,256269,1268690,7119302,7,210,0,6,7,0
 "Zo'ya is cunning and beautiful, both highly desirable traits among purrkins. Despite being the culprit behind many mishaps, her warm glow ensures she is forgiven for any transgression.","|cFFFFD200Faction: |rManaforge Vandals|n|cFFFFD200Renown: |r8|n|cFFFFD200Location: |rShadow Point",4859,247463,1243337,3742946,7,2,1,6,7,0
 "While purrkin have a knack for getting lost, none have ever been so talented as this one. Purrfectly unbothered however, this curious creature can thrive in any situation.","|cFFFFD200Source: |r???
 |cFFFFD200Zone: |rTazavesh, the Veiled Market",4860,247465,1243343,3742947,7,2,-1,6,7,0
+"With boundless energy and unbridled enthusiasm, the foal seeks the skies. It may not be ready, but exercise caution if you try to hold it back.","|cFFFFD200In-Game Shop|r",4862,248495,1246166,7142516,7,16466,9,6,7,0
 "The molted feathers of these young eagles are used to build comfortable bedding for the Amani.","|cFFFFD200Zone: |rZul'Aman",4874,249812,1250374,7210233,2,154,10,6,7,0
 "Young grovecrawlers are known to curl up around the ankles of its protectors for rest.","|cFFFFD200Zone: |rHarandar",4875,249815,1250373,7152801,7,154,10,6,7,0
 "They do NOT taste like potatoes. Promise.","|cFFFFD200Zone: |rHarandar",4876,249816,1250371,7132154,8,154,10,6,7,0
@@ -2910,6 +2914,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "The mana wyrm population really picked up after the Arcane Torrent nerf.","|cFFFFD200Zone: |rEversong Woods",4890,250572,1251770,7266832,5,154,10,6,7,0
 "It's popping wings! Run!","|cFFFFD200Zone: |rIsle of Quel'Danas",4891,250573,1251771,7301941,5,154,10,6,7,0
 "Rumored to be the familiar of a ren'dorei mage that escaped to the wilds of Voidstorm and became even more void infused.","|cFFFFD200Zone: |rVoidstorm",4892,250680,1251782,7301942,5,154,10,6,7,0
+"Kindness gives hope golden wings, and the Heartglow Listener's feathers are with us through every tranquil night.","|cFFFFD200In-Game Shop|r",4894,251511,0,7292703,2,16466,9,6,7,0
 "If you have a fish odds are Lil' Chompers will be nearby.","|cFFFFD200Trading Post|r",4895,251804,1254162,7277076,8,16466,11,6,7,0
 "Slippery Saul loves to slide around the ground or the sea looking for fish.","|cFFFFD200Trading Post|r",4896,251817,1254201,7277076,8,16466,11,6,7,0
 "You can never have too many fish according to May.","|cFFFFD200Trading Post|r",4897,251819,1254207,7277052,8,16466,11,6,7,0
@@ -2917,11 +2922,13 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Winter festivities seem to follow Eve wherever she goes.","|cFFFFD200Trading Post|r",4899,251821,1254212,7277045,8,16466,11,6,7,0
 "Once native to the northern regions of the Eastern Kingdoms, this species of seal is now only common in Northrend after being hunted for food and leather during the Second War.","|cFFFFD200Trading Post|r",4900,251822,1254213,7277045,8,16466,11,6,7,0
 "This young fledgeling is ready and eager to begin training.","|cFFFFD200World Event:|r WoW Remix: Legion",4901,251889,1254381,7197225,2,16466,6,6,7,0
+"A rare auspicious beast in Pandaria. Well-traveled hozen call it a ""mobile luck amplifier.""","|cFFFFD200In-Game Shop|r",4902,252686,1256380,7315561,4,16466,9,34,60,0
+"Curious and inquisitive, this starry-eyed whelpling has big dreams and a wish to explore every world in the cosmos.","|cFFFFD200Promotion|r ",4903,252859,1257069,7317259,1,16466,7,6,7,0
 "Hatched from a long-forgotten egg, this scruffy little eagle has decided you're its new flock, whether you're ready or not.","|cFFFFD200Zone: |rZul'Aman",4906,253399,1258975,7210234,4,146,0,6,7,0
+"Warning: It may root against you.","|cFFFFD200Trading Post|r",4963,256559,1269346,7467152,6,16466,11,6,7,0
 "No one knows how Lil' Coalee got his name. Was it his black heart? Was it his love for a warm fire? Was it simply that one of his parents were Big Coalee. Asking him yields no answers, only rage.","|cFFFFD200Promotion|r ",4907,254356,1261676,4891621,5,16466,9,6,7,0
 "Lil' Ashlee quietly bides her time waiting for a power vacuum. Once in power Lil' Ashlee will bring fun, merriment and fire to all!","|cFFFFD200Promotion|r ",4908,254359,1261687,4891622,5,16466,9,6,7,0
 "Like his father, Do speaks little but is a friend to almost everyone except those who harm innocents.","|cFFFFD200Achievement: |rMidnight Safari",4910,254689,1262925,2205238,7,82,5,6,7,0
-"This bold elfhound was born to chase mana wyrms, and mana wyrm-shaped objects... Like unattended sausages.","|cFFFFD200Treasure: |rHalf-Digested Viscera|n|cFFFFD200Zone: |rVoidstorm",4972,256985,1270553,6891874,7,210,0,41,7,0
 "While the markets of Tazavesh are a well-oiled machine, the P.O.S.T. service is a whirlwind of parchment, cartons, and rambunctious livestock. The use of P.O.S.T. assistants to handle dangerous material has saved a great many headaches.","|cFFFFD200Vendor: |rCollector Ta'steld|n|cFFFFD200Zone: |rOribos|n|cFFFFD200Cost: |r2200|Hcurrency:1166|h|TInterface\ICONS\PVECurrency-Justice.blp:0|t|h",4911,253374,1258852,4327618,5,82,2,6,7,0
 "Magisters love to turn on their enchanted brooms before heading off to work, only to find it stuck in a corner of their Silvermoon apartment.","|cFFFFD200Zone: |rSilvermoon City",4912,254885,1263739,7354716,5,154,10,38,7,0
 "Since Amirdrassil's emergence, many faerie dragons have taken refuge in Belameth. But many others continue to call Kalimdor home.","|cFFFFD200Achievement: |rFamily Battler of Kalimdor|n|cFFFFD200Category: |rBattle",4913,254979,1263911,5840606,1,210,5,6,7,0
@@ -2931,6 +2938,8 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "A young grovecrawler that has been lovingly cared for by the Hara'ti.","|cFFFFD200Vendor: |rNaynar|n|cFFFFD200Zone: |rHarandar|n|cFFFFD200Cost: |r2500|Hcurrency:3316|h|TInterface\ICONS\INV_112_RaidTrinkets_VoidPrism.BLP:0|t|h",4929,255295,1264733,7152800,7,18,2,6,7,0
 "This wyrm can't wait to grow up big and strong so it can hunt Prey too!","|cFFFFD200Vendor: |rConstruct V'anore|n|cFFFFD200Zone: |rSilvermoon City",4930,255522,1265397,7301938,5,18,2,6,7,0
 "A roiling memory drawn to you from the Rift of Aln.","|cFFFFD200Quest:|r The Empty Cradle",4942,255689,1265969,135782,6,210,1,6,7,0
+"Star just hatched and is ready for adventure. Sometimes napping is the greatest adventure of all.","|cFFFFD200In-Game Shop|r|n",4943,255736,1266115,7442919,1,16466,9,6,7,0
+"Gummi the Glow Wyrm has an abundance of natural predators, as it is known for their rubbery texture and sweet flavors.","|cFFFFD200Promotion|r |n",4944,255750,1266148,7352245,5,16450,7,6,7,0
 "Aud'rei will devour just about anything in her path to grow big and strong.","|cFFFFD200Quest:|r Re-Hydra-ted|n",4945,255832,1266364,237425,6,242,1,6,7,0
 "This potadpole is grateful for your assistance after having been exposed to the Lightboom.","|cFFFFD200Quest:|r OK Bloomer|n",4946,255921,1266590,7132152,8,210,1,6,7,0
 "Assistant Botanist Leafy is an expert at identifying edible plants... which is all of them.","|cFFFFD200Quest:|r Re-Hydra-ted|n",4947,256014,1266770,7152802,6,210,1,6,7,0
@@ -2946,14 +2955,12 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Truly evil, undeniably powerful... but above all, spectacularly lazy.","|cFFFFD200Drop:|r Nullaeus",4958,256265,1268687,5041293,6,210,0,6,7,0
 "In the wrong place at the wrong time.","|cFFFFD200Drop:|r Delve's End of Run Rewards",4959,256278,1268704,2399292,7,210,0,6,7,0
 "A curious species found only within treasure chests. Harmless enough, unless you happen to be wearing jewelry.","|cFFFFD200Drop:|r Delve's End of Run Rewards",4960,256238,1267222,1618563,7,210,0,6,7,0
-"Very unhappy. Always goes for the jugular. Kind of cute.","|cFFFFD200Drop:|r Delve's End of Run Rewards|n",4961,256269,1268690,7119302,7,210,0,6,7,0
-"Warning: It may root against you.","|cFFFFD200Trading Post|r",4963,256559,1269346,7467152,6,16466,11,6,7,0
 ,"|cFFFFD200Trading Post|r",4964,256560,1269350,7467153,6,16466,11,6,7,0
-,"|cFFFFD200Trading Post|r",4965,256565,1269356,7467154,6,16466,11,6,7,0
-,"|cFFFFD200Trading Post|r",4966,256566,1269358,7467155,6,16466,11,6,7,0
 "A living anomaly and Kasreth's most treasured experiment, this pink-furred creature scampers joyfully through conduits and pipes.","|cFFFFD200Zone: |rNexus-Point Xenas",4967,256567,1269361,2205238,7,82,5,6,7,0
+"Stars walk among us in the shape of a baby brutosaur.","|cFFFFD200Promotion|r |n",4968,256663,1269535,7489719,7,16466,7,6,7,0
 "Luma knows all kinds of tricks such as ""sit,"" ""stay,"" and ""steal.""","|cFFFFD200Quest: |rThief at Bark
-|cFFFFD200Zone: |rEversong Woods",4971,256759,1269889,6891875,7,210,1,41,7,0
+|cFFFFD200Zone: |rEversong Woods",4971,256759,1269889,6891875,7,210,1,6,7,0
+"This bold elfhound was born to chase mana wyrms, and mana wyrm-shaped objects... Like unattended sausages.","|cFFFFD200Treasure: |rHalf-Digested Viscera|n|cFFFFD200Zone: |rVoidstorm",4972,256985,1270553,6891874,7,210,0,41,7,0
 "Dali, bored of his days basking in the comfort of the Solaarian Sunbath, seeks a world of new inspiration. You are that inspiration, and he will bring color to your world.","|cFFFFD200Treasure: |rBurbling Paint Pot|n|cFFFFD200Zone: |rEversong Woods",4974,246696,1241794,2399292,8,210,0,42,7,0
 "Razeshi C. is known for her understanding tempermant, measured responses and a love for gossip. The C. stands for ""Class act.""",|cFFFFD200Promotion|r|n,4975,257493,1271843,5788264,0,16466,7,6,7,0
 "Sometimes the void's call is faint, so smaller, younger voidwalkers heed its call.","|cFFFFD200Vendor: |rConstruct V'anore|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r800|Hcurrency:3392|h|TInterface\ICONS\INV_10_ElementalCombinedFoozles_Blood.BLP:0|t|h",4976,257546,1271988,6992623,6,194,2,6,7,0
@@ -2965,10 +2972,16 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Taking after her mother, Dame Bloodshed, the Princess is armed with the sharpest of claws and the furriest of ears.","|cFFFFD200Drop: |rDame Bloodshed|n|cFFFFD200Zone: |rEversong Woods",4985,258281,1276430,7390435,7,2,0,6,7,0
 "Born and raised in Sunwing Rookery, this fella loves causing mischief when the tamers aren't looking.","|cFFFFD200Treasure: |rRookery Cache|n|cFFFFD200Zone: |rSilvermoon City",5003,259728,1281048,6739639,1,210,0,6,7,0
 "This magical scout can often be found rummaging for arcane treats  in the refuse of long-past adventurers.","|cFFFFD200Achievement: |rTreasures of Eversong Woods|n|cFFFFD200Category: |rMidnight",5012,260899,1284800,7390434,7,210,5,6,7,0
-"A rare auspicious beast in Pandaria. Well-traveled hozen call it a ""mobile luck amplifier.""","|cFFFFD200In-Game Shop|r",4902,252686,1256380,7315561,4,16466,9,34,60,0
-"Kindness gives hope golden wings, and the Heartglow Listener's feathers are with us through every tranquil night.","|cFFFFD200In-Game Shop|r",4894,251511,0,7292703,2,16466,9,6,7,0
-"Stars walk among us in the shape of a baby brutosaur.","|cFFFFD200Promotion|r |n",4968,256663,1269535,7489719,7,16466,7,6,7,0
-"With boundless energy and unbridled enthusiasm, the foal seeks the skies. It may not be ready, but exercise caution if you try to hold it back.","|cFFFFD200In-Game Shop|r",4862,248495,1246166,7142516,7,16466,9,6,7,0
-"Star just hatched and is ready for adventure. Sometimes napping is the greatest adventure of all.","|cFFFFD200In-Game Shop|r|n",4943,255736,1266115,7442919,1,16466,9,6,7,0
-"Gummi the Glow Wyrm has an abundance of natural predators, as it is known for their rubbery texture and sweet flavors.","|cFFFFD200Promotion|r |n",4944,255750,1266148,7352245,5,16450,7,6,7,0
-"Curious and inquisitive, this starry-eyed whelpling has big dreams and a wish to explore every world in the cosmos.","|cFFFFD200Promotion|r ",4903,252859,1257069,7317259,1,16466,7,6,7,0
+"The eagles of Zul'Aman are a regal species yet they have suffered without Akil'zon watching over them. Faithbreaker Ger'lok has been especially cruel testing his dark magic on the young eaglets.","|cFFFFD200Ritual Site:|r Broken Throne ",5017,261676,1286610,7210236,2,82,0,6,7,0
+"Separated from his mother when they were captured. Chubs is sad but fierce. He takes pride when he can bite his Twilight Blade handlers hands at feeding time.","|cFFFFD200Ritual Site:|r Broken Throne",5019,261684,1286634,7523130,7,82,0,6,7,0
+"The naga's mix of arcane and void magics have disturbed the mana wyrms around Daggerspine Point making them extremely hostile. The very few manalings remaining in the aftermath of their ritual are showing unique abilities.","|cFFFFD200Drop: |rMana-Gorged Greatwyrm|n|cFFFFD200Ritual Site: |rDaggerspine Point",5020,262066,1287339,1386549,5,2,0,6,7,0
+"The loyal snapdragon are the perfect companion to any naga. They adapt well to their environment especially when the environment likes to adapt them.","|cFFFFD200Ritual Site: |rDaggerspine Point",5021,262089,1287374,2766227,8,82,0,6,7,0
+"Ravaged by the invading naga, many hawkstriders died in the area of Daggerspine Point. It is rare to find any of their young yet alive.","|cFFFFD200Ritual Sites: |rDaggerspine Point",5022,262090,1287376,6703754,4,82,10,6,7,0
+"This curious kitten has been hanging around one too many ritual sites.","|cFFFFD200Ritual Sites: |rRustling Underbrush",5023,262092,1287380,7390433,7,82,0,6,7,0
+"The exposure to void energy was minimal, however it is already showing signs of new void abilities. Its abilities can be managed with the right training. - Sergeant Vornin","|cFFFFD200Vendor: |rSergeant Vornin|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Renown: |rRitual Sites Rank 6|n|cFFFFD200Cost: |r25|Hcurrency:3405|h|TInterface\ICONS\INV_Belt_Armor_BloodElf_D_01.blp:0|t|h|n|n",5036,262422,1287849,6739641,1,82,2,6,7,0
+"The mindbreakers are a rare creature of the deep. Little is known of their true origins but they link back to the days of the Black Empire.","|cFFFFD200Vendor: |rSergeant Vornin|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Renown: |rRitual Sites Rank 6|n|cFFFFD200Cost: |r25|Hcurrency:3405|h|TInterface\ICONS\INV_Belt_Armor_BloodElf_D_01.blp:0|t|h|n|n",5037,262427,1287856,6011928,5,82,2,6,7,0
+"At home in small dens, these little guys wriggle into all sorts of tight spots, even sometimes supply pouches.","|cFFFFD200Drop: |rWriggling Field Pouch|n|cFFFFD200Hostile Activity: |rZul'Aman",5038,262786,1288378,2205589,7,2,0,6,7,0
+"Having the bad luck to face many void corruption hostilities, Cappy has persevered. He is one of the few creatures to make it through mostly unscathed.","|cFFFFD200Achievemnent: |rCosmic Exterminator",5039,262787,1288380,2205590,7,82,0,6,7,0
+"The saying curiosity killed the cat wasn't written about the Eversong lynx, even if their reckless kittens do find their way to the frontlines. A few rangers have found a lifelong companion stowed away in the supply wagons on campaign.","|cFFFFD200Drop: |rWriggling Field Pouch|n|cFFFFD200Hostile Activity: |rEversong Woods",5040,262788,1288381,7390432,7,2,0,6,7,0
+"A true Abyss Angler, certified by Depthdiver Jeju himself.","|cFFFFD200Vendor: |rDepthdiver Tu'nakit|n|cFFFFD200Zone: |rZul'Aman|n|cFFFFD200Cost: |r2400|Hcurrency:3373|h|TInterface\ICONS\Item_enchantedpearl.blp:0|t|h|n|n",5065,264933,1293499,2205592,4,154,10,6,7,0
+"Roofus is ready to lend a paw for any construction project. Treats aren't required, but are appreciated.",|cFFFFD200Promotion|r,4969,256698,1269627,7481108,7,16466,7,6,7,0

@@ -118,9 +118,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
-			i(270433, {	-- Dawnroot Haranir Quarterstaff
-				["timeline"] = { ADDED_12_0_1_LAUNCH },
-			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270433),	-- Dawnroot Haranir Quarterstaff
+			})),
 			i(3661),	-- Handcrafted Staff
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
@@ -306,6 +306,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270439),	-- Wildgrove Haranir Spear
+			})),
 			i(2508),	-- Old Blunderbuss
 			i(20982, {	-- Sharp Dagger
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
@@ -424,6 +427,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { WORGEN, GOBLIN },
 				["timeline"] = { ADDED_10_0_7 },
 			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270430),	-- Windpetal Haranir Crook
+			})),
 			i(157625),	-- Mash Tun Mixer
 			i(157627, {	-- Sword of Searing Winds
 				["timeline"] = { REMOVED_9_0_1 },	-- this appears to have been replaced with the staff in SL prepatch
@@ -1231,6 +1237,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270441),	-- Thornpierce Haranir Chopper
+			})),
 			i(20977, {	-- Recruit's Shortsword
 				["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
@@ -1358,11 +1367,14 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 		n(WEAPONS, {
-			i(266268, {	-- Rootbound Haranir Claws
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270442),	-- Rootbound Haranir Chopper
+			})),
+			i(266269, {	-- Rootbound Haranir Aegis
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
-			i(266269, {	-- Rootbound Haranir Aegis
+			i(270440, {	-- Rootbound Haranir Handaxe
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
@@ -1851,6 +1863,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270443),	-- Wildbloom Haranir Bastion
+				i(270444),	-- Wildbloom Haranir Carver
+			})),
 			i(266271, {	-- Wildbloom Haranir Warblade
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },

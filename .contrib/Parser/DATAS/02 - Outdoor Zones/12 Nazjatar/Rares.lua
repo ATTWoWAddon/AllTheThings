@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(169371),	-- Murgle (PET!)
 			},
 		}),
-		n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
+		n(152549, {	-- Lost Algan	-- not identified with an Elite/Vignette indicator, but drops very important currency once per day
 			["questID"] = 56916,	-- triggered upon looting. can also trigger 55427 and 57082 upon looting. possible separate manapearl + benthic trigger?
 			-- 55427 & 56916 = manapearls only
 			-- 57082 = benthic only
@@ -499,7 +499,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(170067),	-- Skinning Technique: Cragscale [Rank 2] (RECIPE!)
 			},
 		}),
-		n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency
+		n(151166, {	-- Wayward Algan	-- not identified with an Elite/Vignette indicator, but drops very important currency
 			["description"] = "Wanders around Nazjatar. This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 			["questID"] = 56915,	-- triggered when looting manapearls; triggered 57083 when looting benthic gear
 			["isDaily"] = true,

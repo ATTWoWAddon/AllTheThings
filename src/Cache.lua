@@ -579,7 +579,7 @@ local function zoneTextNamesRunner(group, value)
 		-- Manually assign the name of this map since it is not a real mapID.
 		CacheField(group, "mapID", mapID);
 	end
-	
+
 	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
 	if group.coords then
 		for originalMapID,_ in next,group.coords do

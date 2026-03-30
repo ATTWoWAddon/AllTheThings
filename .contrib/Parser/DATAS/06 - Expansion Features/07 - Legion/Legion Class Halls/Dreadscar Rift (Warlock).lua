@@ -1050,7 +1050,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 	n(CLASS_HALL, {
 		cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
 			q(41154),	-- Attacking Revil Kost During Artifact Quest
-			q(42167),	-- Blood Gather Bit -- choose to use dark magic on NPC during q(42128)
+			q(42167),	-- Blood Gather Bit	-- choose to use dark magic on NPC during q(42128)
 			q(42205),	-- Entrance Bit - using Portal to Scenario during "Dark Whispers" (questID 42125)
 			q(40514),	-- Revil convinced
 			q(42203),	-- Ritual Bit - using Portal to Scenario during "Dark Whispers" (questID 42125)

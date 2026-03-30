@@ -24,7 +24,7 @@ local CRUSADER_DAILY_OnClick = [[_.OnClickDB.PopoutLinkedAchievement]]
 local SILVER_COVENTANT_DAILY_OnClick = [[_.OnClickDB.PopoutLinkedAchievement]]
 local SUNREAVERS_DAILY_OnClick = [[_.OnClickDB.PopoutLinkedAchievement]]
 -- Very misleading to change what is popped out, I think we will find an alternate solution for this eventually,
--- but for now I'd like Retail to not perform this swap -- Runaway
+-- but for now I'd like Retail to not perform this swap	-- Runaway
 -- #IF NOT ANYCLASSIC
 CRUSADER_DAILY_OnClick = nil
 SILVER_COVENTANT_DAILY_OnClick = nil

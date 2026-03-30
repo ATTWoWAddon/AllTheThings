@@ -485,7 +485,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_3_0 },
 						}),
 						q(55533, {	-- MOTHER Knows Best
-							-- ["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
+							-- ["sourceQuest"] = 55851,	-- Essential Empowerment	-- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
 							["qg"] = 152206,	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_2_0 },
@@ -523,11 +523,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								i(169652),	-- Bolt of Embroidered Cloth
 								o(329645, {	-- Wrathion's Journal Page
-									["coord"] = { 75.4, 45.1, 46 }, -- Karazan Catacombs
+									["coord"] = { 75.4, 45.1, 46 },	-- Karazan Catacombs
 									["groups"] = { i(170490) },	-- Torn Journal Page #58 (QI!)
 								}),
 								o(332577, {	-- Burnt Journal Page
-									["coord"] = { 73.4, 48.9, 46 }, -- Karazan Catacombs
+									["coord"] = { 73.4, 48.9, 46 },	-- Karazan Catacombs
 									["groups"] = { i(170491) },	-- Burnt Journal Page
 								}),
 								i(169651),	-- The Ways of the Old Gods

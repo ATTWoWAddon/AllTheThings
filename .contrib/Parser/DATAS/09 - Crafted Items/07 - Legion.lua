@@ -505,11 +505,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(133731),	-- Mountain Puffer
 		i(133726),	-- Nar'thalas Hermit
 		i(133734),	-- Oodelfjisk
-		i(152912, {	-- Pond Nettle (MOUNT!)
-			["description"] = "Caught in green pools around Antoran Wastes.",
-			["mapID"] = ANTORAN_WASTES,
-			["timeline"] = { ADDED_7_3_0 },
-		}),
+		i(152912, { ["timeline"] = { ADDED_7_3_0 } }),	-- Pond Nettle (MOUNT!)
 		i(124111),	-- Runescale Koi
 		i(133741),	-- Seabottom Squid
 		i(133738),	-- Seerspine Puffer

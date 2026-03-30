@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 77.2, 48.9, KARESH },
 						["groups"] = {
 							i(244842, {	-- Fabled Veteran's Cache
-								["sym"] = { -- [K'aresh Zone Rewards content]
+								["sym"] = {	-- [K'aresh Zone Rewards content]
 									{"select","mapID",KARESH},{"pop"},
 									{"where","headerID",ZONE_REWARDS},{"pop"},
 									{"where","headerID",ARMOR},{"finalize"},

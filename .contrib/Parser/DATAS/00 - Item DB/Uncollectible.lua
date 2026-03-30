@@ -258,6 +258,7 @@ i(162634);	-- Ancient Nazmani Coins
 i(158811);	-- Ashen Coal
 i(162675);	-- Ashvane Ledger
 i(158871);	-- Autographed Painting of Anduin
+i(163849);	-- Bad Troll Love Poem
 i(162681);	-- Bent Sickle
 i(156624);	-- Blemished Pearl
 i(158820);	-- Blind-Worm Sting
@@ -1691,6 +1692,7 @@ i(201466);	-- Mote of Dreams
 i(192625);	-- Motionless Stone
 i(192626);	-- Mound of Dust
 i(200105);	-- Muck Covered Flotsam
+i(204310);	-- Mycelial Threads
 i(193410);	-- Nauseating Stinger
 i(192710);	-- Nearly Unbreakable Horn
 i(201209);	-- Nibbled Fish Head
@@ -2041,6 +2043,7 @@ i(213214);	-- Woven Lavareed Basket
 -- PATCH 10.2.6 --
 ------------------
 i(221779);	-- Bent Card
+i(217416);	-- Depleted Emerald Flightstone
 
 ------------------
 -- PATCH 10.2.7 --

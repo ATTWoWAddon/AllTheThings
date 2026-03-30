@@ -684,7 +684,10 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 			q(55188, {	-- Tearing at the Seams [H]
 				["sourceQuests"] = { 53940 },	-- A Stitch in Time [H]
-				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["qgs"] = {
+					145022,	-- Timeweaver Delormi
+					151137,	-- Synchronous Tailor
+				},
 				["races"] = HORDE_ONLY,
 			}),
 			q(53810, {	-- The Severed Thread
@@ -701,7 +704,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					55188,	-- Tearing at the Seams [H]
 				},
 				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
+				["coord"] = { 62.1, 54.1, CAVERNS_OF_TIME },
 			}),
 			q(53858, {	-- Step Into Her Shoes
 				["sourceQuests"] = {
@@ -1325,8 +1328,14 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		n(QUESTS, {
 			q(93696, {	-- Tailoring Services Requested
 				["sourceQuests"] = { 93730 },	-- Crafting Orders: Tailoring
-				["provider"] = { "n", 243352 },	-- Galana <Tailoring Trainer>
-				["coord"] = { 48.2, 54.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["qgs"] = {
+					243352,	-- Galana <Tailoring Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 45.1, 55.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 48.2, 54.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
 				["isWeekly"] = true,
 				["groups"] = {
 					i(263460),	-- Thalassian Tailor's Notebook

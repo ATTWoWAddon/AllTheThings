@@ -1177,8 +1177,14 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		n(QUESTS, {
 			q(93690, {	-- Alchemy Services Requested
 				["sourceQuests"] = { 84288 },	-- Crafting Orders: Alchemy
-				["provider"] = { "n", 243357 },	-- Camberon <Alchemy Trainer>
-				["coord"] = { 47.0, 52.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["qgs"] = {
+					243357,	-- Camberon <Alchemy Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 47.0, 52.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
 				["isWeekly"] = true,
 				["groups"] = {
 					i(263454),	-- Thalassian Alchemist's Notebook

@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
 				},
 			}),
-			o(381340, {  -- Neltharus Stands
+			o(381340, { 	-- Neltharus Stands
 				["coord"] = { 26.2, 56.3, THE_WAKING_SHORES },
 			}),
 			o(378820, {	-- Popfizz Punch

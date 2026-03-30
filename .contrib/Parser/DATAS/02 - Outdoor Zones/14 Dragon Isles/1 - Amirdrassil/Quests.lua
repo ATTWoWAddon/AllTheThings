@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 				["sourceQuests"] = { 76283 },	-- Andu-falah-dor
 				["qgs"] = {
 					187678,	-- Alexstrasza the Life-Binder
-					216309, -- Alexstrasza
+					216309,	-- Alexstrasza
 				},
 				["coords"] = {
 					{ 58.0, 35.7, VALDRAKKEN },

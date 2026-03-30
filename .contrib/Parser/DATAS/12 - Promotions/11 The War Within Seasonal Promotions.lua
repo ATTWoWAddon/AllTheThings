@@ -434,7 +434,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_7 },
 				["u"] = REAL_MONEY,
 			}),
-		--	i(500001, {	-- The PVE/PVP Banner temporary item -- TEMPLATE
+		--	i(500001, {	-- The PVE/PVP Banner temporary item	-- TEMPLATE
 		--		["sourceID"] = 500001,
 		--	PVE	["description"] = "Mythic Dungeon International: TWW Season 3\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive an exclusive Toy to use in-game!\nSign-ups close 30th September 2025 3PM PDT and The Time Trials are on 1st October 1PM PDT - 6th October (US) 3PM PDT. For more details & requirements check out: Raider.io/tournaments",
 		--	PVP	["description"] = "Arena World Championship: TWW Season 2\n\nSign up on Raider.io for any of the 3 Cups, available until April 11th 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",

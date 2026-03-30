@@ -672,16 +672,23 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 			if leftText then
 				local rightText = _G[prefix .. "Right1"];
 				if rightText then
-					local strippedText = StripColorAndTextureData((leftText:GetText() or "  ") .. summaryText);
-					if strippedText:len() < app.Settings:GetTooltipSetting("MaxTooltipTopLineLength") then
-						if tooltip.CloseButton then
-							-- dont think the region for the rightText can be modified within the tooltip, so pad instead
-							summaryText = summaryText .. "     ";
+					-- tooltip text became secret in 12.0.1.66562 because Blizzard
+					local strippedText = leftText:GetText() or "  "
+					if not issecretvalue(strippedText) then
+						strippedText = StripColorAndTextureData(strippedText .. summaryText);
+						if strippedText:len() < app.Settings:GetTooltipSetting("MaxTooltipTopLineLength") then
+							if tooltip.CloseButton then
+								-- dont think the region for the rightText can be modified within the tooltip, so pad instead
+								summaryText = summaryText .. "     ";
+							end
+							rightText:SetText(summaryText);
+							rightText:Show();
+						else
+							tooltip:AddDoubleLine(L.PROGRESS, summaryText);
 						end
+					else
 						rightText:SetText(summaryText);
 						rightText:Show();
-					else
-						tooltip:AddDoubleLine(L.PROGRESS, summaryText);
 					end
 				end
 			end

@@ -60,6 +60,28 @@ app.CreateCurrencyClass = app.CreateClass(CLASS, KEY, {
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
 	collectibleAsCost = app.CollectibleAsCost,
+	maxQuantity = function(t)
+		local info = t.info
+		if not info then return end
+		local maxQuantity = info.maxQuantity
+		t.maxQuantity = maxQuantity or 0
+		return maxQuantity
+	end,
+	trackable = function(t)
+		local maxQuantity = t.maxQuantity
+		local trackable = maxQuantity and maxQuantity > 0
+		t.trackable = trackable
+		return trackable
+	end,
+	saved = function(t)
+		if t.trackable then
+			local info = GetCurrencyInfo(t.currencyID)
+			if not info then return end
+			local maxQuantity = t.maxQuantity
+			local quantity = info.useTotalEarnedForMaxQty and (info.totalEarned or 0) or info.quantity
+			return quantity >= maxQuantity
+		end
+	end,
 	statistic = function(t)
 		local info = GetCurrencyInfo(t.currencyID)
 		if not info then return end

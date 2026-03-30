@@ -189,6 +189,14 @@ local EncounterToLoot = {
 
 ------ Zone Drops ----------
 local ZoneDropLoot = {
+	i(260376),	-- Breastplate of the Final Defense
+	i(260377),	-- Fading Dawn Sabatons
+	i(260371),	-- Infernal Greatlock Girdle
+	i(260372),	-- Nullstrider's Boots
+	i(260373),	-- Power Stance Breeches
+	i(260374),	-- Primal Spark Pauldrons
+	i(260375),	-- Raging Storm Sash
+	i(260370),	-- Visage of Unseen Truths
 };
 
 ------ Boss Functions ------
@@ -197,12 +205,12 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.UpgradeMapping = {
-	[DIFFICULTY.RAID.LFR] = 0,
-	[DIFFICULTY.RAID.NORMAL] = 0,
-	[DIFFICULTY.RAID.HEROIC] = 0,
+	[DIFFICULTY.RAID.LFR] = 3,
+	[DIFFICULTY.RAID.NORMAL] = 5,
+	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
 	inst(1307, {	-- The Voidspire
 		["coord"] = { 45.4, 64.0, MAP.MIDNIGHT.VOIDSTORM },
 		["maps"] = {
@@ -315,6 +323,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(258522),	-- Plans: Bloomforged Greataxe (RECIPE!)
 					i(264498),	-- Voltaic Trigore Egg (DECOR!)
 				}),
+				n(240864, {	-- Blinky
+					i(268274),	-- Blinky's Collar
+				}),
 				BossOnly(SALHADAAR, {
 					i(264672),	-- Cosmic Ritual Stone (TOY!)
 					i(258123),	-- Pattern: Sunfire Silk Spellthread (RECIPE!)
@@ -330,14 +341,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				BossOnly(COSMOS, {
 					i(269269),	-- Devouring Ritual Spire (DECOR!)
-					i(268049, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Argent Trophy (DECOR!)
+					i(268049, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Argent Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
-				--ZoneDrops({}),
+				ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3156, {	-- Weapons of the Void
@@ -376,10 +387,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
-				--ZoneDrops({}),
+				n(QUESTS, {
+					q(94475, {	-- The Voidspire: Flicker in the Hollow [N]
+						["qg"] = 241076,	-- Riftblade Maella
+						["groups"] = { i(265014) },	-- Echo of Radiance (QI!)
+					}),
+				}),
+				ZoneDrops({}),
 				Boss(AVERZIAN),
 				Boss(VORASIUS),
 				Boss(SALHADAAR),
@@ -394,17 +411,23 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(EZZORAK_VAELGOR),
 				BossOnly(VANGUARD),
 				BossOnly(COSMOS, {
-					ach(61624, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Crown of the Cosmos
-					i(265951, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Aureate Trophy (DECOR!)
+					ach(61624, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Crown of the Cosmos
+					i(265951, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
-				--ZoneDrops({}),
+				n(QUESTS, {
+					q(94476, {	-- The Voidspire: Flicker in the Hollow [H]
+						["qg"] = 241076,	-- Riftblade Maella
+						["groups"] = { i(265015) },	-- Echo of Radiance (QI!)
+					}),
+				}),
+				ZoneDrops({}),
 				Boss(AVERZIAN),
 				Boss(VORASIUS),
 				Boss(SALHADAAR),
@@ -415,10 +438,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
-				--ZoneDrops({}),
+				n(QUESTS, {
+					q(94477, {	-- The Voidspire: Flicker in the Hollow [M]
+						["qg"] = 241076,	-- Riftblade Maella
+						["groups"] = { i(265016) },	-- Echo of Radiance (QI!)
+					}),
+				}),
+				ZoneDrops({}),
 				Boss(AVERZIAN, {
 					ach(61372),	-- Mythic: Imperator Averzian
 				}),
@@ -438,14 +467,43 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(61377, {	-- Mythic: Crown of the Cosmos
 						title(690),	-- Spirebane <Name>
 					}),
-					ach(61625, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Crown of the Cosmos
-					ach(61622, applyDataSelf({["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Crown of the Cosmos
+					ach(61625, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Crown of the Cosmos
+					ach(61622, applyDataSelf({["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Crown of the Cosmos
 						title(676),	-- <Name>, Famed Slayer of the Voidspire
 					})),
 					ach(61608),	-- Mythic: Crown of the Cosmos Guild Run
-					i(266887, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- Voidspire Vanquisher's Gleaming Trophy (DECOR!)
+					i(266887, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Voidspire Vanquisher's Gleaming Trophy (DECOR!)
 				}),
 			}),
 		},
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	inst(1307, {	-- The Voidspire
+		["timeline"] = { ADDED_12_0_1_SEASONSTART },
+		["groups"] = {
+			--q(95535),	-- Alleria
+		},
+	}),
+	inst(1307, bubbleDown({	-- The Voidspire
+		["timeline"] = { ADDED_12_0_1_SEASONSTART },
+		["isWeekly"] = true,
+	},{
+		-- LFR
+		q(95342, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
+		-- Normal
+		q(93981, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
+		q(93993, name(HEADERS.NPC, 240864)),	-- Blinky
+		q(95343, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
+		--q(93989, name(HEADERS.NPC, 252067)),	-- Terrace Watcher ??
+		-- Heroic
+		q(93982, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
+		q(93994, name(HEADERS.NPC, 240864)),	-- Blinky
+		q(95341, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
+		-- Mythic
+		q(95344, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
+		-- All
+			--Do these exist? Only one HQT is being reported
+	})),
+}));

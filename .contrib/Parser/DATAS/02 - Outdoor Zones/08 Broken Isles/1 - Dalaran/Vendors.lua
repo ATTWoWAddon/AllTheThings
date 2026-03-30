@@ -1401,7 +1401,7 @@ root(ROOTS.Zones, {
 						{"sub", "common_vendor", 28992},	-- Valerie Langrom <Leather Armor Merchant> (Dalaran Northrend)
 					},
 				}),
-				n(120687, {	-- Violet Shadowmend <Gladiator Quartermaster> -- Horde
+				n(120687, {	-- Violet Shadowmend <Gladiator Quartermaster>	-- Horde
 					["races"] = HORDE_ONLY,
 					["coord"] = { 59.6, 25.2, LEGION_DALARAN },
 					["groups"] = {

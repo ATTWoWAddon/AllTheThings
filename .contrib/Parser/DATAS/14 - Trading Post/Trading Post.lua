@@ -74,122 +74,122 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(72681, {	-- Report to the Trading Post -- March 2023
+		q(72681, {	-- Report to the Trading Post	-- March 2023
 			["timeline"] = { ADDED_10_0_5 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(75833, {	-- Report to the Trading Post -- April 2023
+		q(75833, {	-- Report to the Trading Post	-- April 2023
 			["timeline"] = { ADDED_10_0_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76159, {	-- Report to the Trading Post -- May 2023
+		q(76159, {	-- Report to the Trading Post	-- May 2023
 			["timeline"] = { ADDED_10_0_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76103, {	-- Report to the Trading Post -- June 2023
+		q(76103, {	-- Report to the Trading Post	-- June 2023
 			["timeline"] = { ADDED_10_1_0 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76104, {	-- Report to the Trading Post -- July 2023
+		q(76104, {	-- Report to the Trading Post	-- July 2023
 			["timeline"] = { ADDED_10_1_0 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76105, {	-- Report to the Trading Post -- August 2023
+		q(76105, {	-- Report to the Trading Post	-- August 2023
 			["timeline"] = { ADDED_10_1_5 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76106, {	-- Report to the Trading Post -- September 2023
+		q(76106, {	-- Report to the Trading Post	-- September 2023
 			["timeline"] = { ADDED_10_1_5 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76107, {	-- Report to the Trading Post -- October 2023
+		q(76107, {	-- Report to the Trading Post	-- October 2023
 			["timeline"] = { ADDED_10_1_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76108, {	-- Report to the Trading Post -- November 2023
+		q(76108, {	-- Report to the Trading Post	-- November 2023
 			["timeline"] = { ADDED_10_1_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76112, {	-- Report to the Trading Post -- December 2023
+		q(76112, {	-- Report to the Trading Post	-- December 2023
 			["timeline"] = { ADDED_10_2_0 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76113, {	-- Report to the Trading Post -- January 2024
+		q(76113, {	-- Report to the Trading Post	-- January 2024
 			["timeline"] = { ADDED_10_2_0 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(76114, {	-- Report to the Trading Post -- February 2024
+		q(76114, {	-- Report to the Trading Post	-- February 2024
 			["timeline"] = { ADDED_10_2_5 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isYearly"] = true,
 		}),
-		q(81722, {	-- Report to the Trading Post -- August 2024
+		q(81722, {	-- Report to the Trading Post	-- August 2024
 			["timeline"] = { ADDED_11_0_2 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81723, {	-- Report to the Trading Post -- September 2024
+		q(81723, {	-- Report to the Trading Post	-- September 2024
 			["timeline"] = { ADDED_11_0_2 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81724, {	-- Report to the Trading Post -- October 2024
+		q(81724, {	-- Report to the Trading Post	-- October 2024
 			["timeline"] = { ADDED_11_0_2 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81725, {	-- Report to the Trading Post -- November 2024
+		q(81725, {	-- Report to the Trading Post	-- November 2024
 			["timeline"] = { ADDED_11_0_5 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81726, {	-- Report to the Trading Post -- December 2024
+		q(81726, {	-- Report to the Trading Post	-- December 2024
 			["timeline"] = { ADDED_11_0_5 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81715, {	-- Report to the Trading Post -- January 2025
+		q(81715, {	-- Report to the Trading Post	-- January 2025
 			["timeline"] = { ADDED_11_0_7 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81714, {	-- Report to the Trading Post -- February 2025
+		q(81714, {	-- Report to the Trading Post	-- February 2025
 			["timeline"] = { ADDED_11_0_7 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81717, {	-- Report to the Trading Post -- March 2025
+		q(81717, {	-- Report to the Trading Post	-- March 2025
 			["timeline"] = { ADDED_11_1_0 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81718, {	-- Report to the Trading Post -- April 2025
+		q(81718, {	-- Report to the Trading Post	-- April 2025
 			["timeline"] = { ADDED_11_1_0 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81719, {	-- Report to the Trading Post -- May 2025
+		q(81719, {	-- Report to the Trading Post	-- May 2025
 			["timeline"] = { ADDED_11_1_5 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81720, {	-- Report to the Trading Post -- June 2025
+		q(81720, {	-- Report to the Trading Post	-- June 2025
 			["timeline"] = { ADDED_11_1_5 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
 		}),
-		q(81721, {	-- Report to the Trading Post -- July 2025
+		q(81721, {	-- Report to the Trading Post	-- July 2025
 			["timeline"] = { ADDED_11_1_7 },
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
@@ -2148,8 +2148,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(300, i(235401)),	-- Blood Monarch's Polearm
 				traderstender(250, i(235291)),	-- Blood Monarch's Sword
 				traderstender(200, i(235295)),	-- Blood Monarch's Wand
-				traderstender(370, iensemble(258725)),	-- Ensemble: Elaborate Lavender Mageweave
-				traderstender(100, iensemble(258727)),	-- Ensemble: Elaborate Ruby Mageweave
+				traderstender(500, iensemble(258725)),	-- Ensemble: Elaborate Lavender Mageweave
+				traderstender(500, iensemble(258727)),	-- Ensemble: Elaborate Ruby Mageweave
 				traderstender(370, iensemble(235228)),	-- Ensemble: Ornaments of the Blood Monarch
 				traderstender(100, iensemble(258018)),	-- Ensemble: Sorcerer's Violet Garb
 				traderstender(80, i(266097)),	-- Huntress' Moonblade

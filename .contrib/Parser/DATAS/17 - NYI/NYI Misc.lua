@@ -1275,7 +1275,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 			i(203461),	-- Chronologically Reallocated Rations
 			i(202112),	-- Crystal Shattering Armaments
-			i(202310),	-- Defective Doomsday Device
 			i(201990),	-- Primal Mote
 			i(204277),	-- Ruby Whelp Treat
 			i(204236),	-- Sack of Stolen Dragon Glyphs
@@ -1318,7 +1317,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(204330),	-- Inert Primordial Fragments
 			i(203218),	-- Iskaara Supply Pouch
 			i(203221),	-- Maruuk Supply Sack
-			i(204310),	-- Mycelial Threads
 			i(204307),	-- Ornate Bronze Lockbox
 			i(204216),	-- Primordial Pulverizing
 			i(204008),	-- Prodigious Sand Stone
@@ -1549,7 +1547,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			------ Plunderstorm Valdrakken Vendor ------
 			i(220203),	-- Clutch of Wyrm's Dreaming Crests
 			i(217413),	-- Depleted Blackened Flightstone
-			i(217416),	-- Depleted Emerald Flightstone
 			i(217415),	-- Depleted Ruby Flightstone
 			i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
 			i(220204),	-- Pouch of Whelpling's Dreaming Crests
@@ -1881,7 +1878,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(231787),	-- Vigilante's Disposable Falling Shadow Grapple Gun
 			i(229810),	-- Vintage Kaja'Cola Can
 			i(236956),	-- Void-Touched Valorstone
-			i(235713),	-- Weird Sand
 			i(233054),	-- Wonder Ball
 			i(225766),	-- Zoom-Zoom Boosters
 			i(232929),	-- [DNT] Large Surge Chest

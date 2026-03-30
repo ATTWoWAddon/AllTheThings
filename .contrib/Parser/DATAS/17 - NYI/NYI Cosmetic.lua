@@ -934,12 +934,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(242439),	-- Grassy Sweatpants
 				i(242410),	-- Grassy Sweatshirt
 
-				------ Sepia Sweatsuit Set ------
-				i(242457),	-- Ensemble: Sepia Sweatsuit
-				q(90641),	-- Ensemble: Sepia Sweatsuit
-				i(242438),	-- Sepia Sweatpants
-				i(242409),	-- Sepia Sweatshirt
-
 				------ Sunny Sweatsuit Set ------
 				i(242492),	-- Ensemble: Sunny Sweatsuit
 				q(90657),	-- Ensemble: Sunny Sweatsuit
@@ -1116,7 +1110,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(252710),	-- Midnight Winter Toque
 				i(252747),	-- Plum Winter Toque
 				i(250293),	-- Red Hot Portable Bakery
-				i(252712),	-- Sepia Winter Toque
 				i(252751),	-- Snowy Winter Toque
 				i(251669),	-- Sturdy Wearable Pot Lid
 				i(252752),	-- Sunny Winter Toque
@@ -1274,6 +1267,27 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
 			filter(TABARDS, {
 				i(242635),	-- Twilight's Blade - Armor - Tabard
+			}),
+		})),
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+			n(WEAPONS, {
+				i(263946),	-- Void-Touched Basher
+				i(263954),	-- Void-Touched Battle Baton
+				i(263949),	-- Void-Touched Bulwark
+				i(263963),	-- Void-Touched Dueling Blade
+				i(263942),	-- Void-Touched Fang
+				i(263960),	-- Void-Touched Flaredblade
+				i(263968),	-- Void-Touched Foci
+				i(263970),	-- Void-Touched Glaiveblade
+				i(263966),	-- Void-Touched Greatblade
+				i(263967),	-- Void-Touched Greatbow
+				i(263969),	-- Void-Touched Greatwand
+				i(263943),	-- Void-Touched Gutter
+				i(263941),	-- Void-Touched Rifle
+				i(263956),	-- Void-Touched Smasher
+				i(263950),	-- Void-Touched Spade
+				i(263952),	-- Void-Touched Sunfury Stave
+				i(263959),	-- Void-Touched Tome
 			}),
 		})),
 	}),

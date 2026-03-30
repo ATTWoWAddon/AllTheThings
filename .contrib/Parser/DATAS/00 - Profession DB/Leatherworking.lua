@@ -70,24 +70,24 @@ i(234239, 1213525);	-- Razorbramble Leathers
 ------------------
 -- PATCH 1.15.7 --
 ------------------
-i(238306, 1224615); -- Pattern: Scarlet Infiltrator's Bandana
-i(238307, 1224616); -- Pattern: Scarlet Infiltrator's Shoulderpads
-i(238308, 1224617); -- Pattern: Scarlet Infiltrator's Vest
+i(238306, 1224615);	-- Pattern: Scarlet Infiltrator's Bandana
+i(238307, 1224616);	-- Pattern: Scarlet Infiltrator's Shoulderpads
+i(238308, 1224617);	-- Pattern: Scarlet Infiltrator's Vest
 i(238309, 1224618);	-- Pattern: Scarlet Infiltrator's Bracers
 i(238310, 1224619);	-- Pattern: Scarlet Infiltrator's Gloves
 i(238311, 1224620);	-- Pattern: Scarlet Infiltrator's Belt
 i(238312, 1224621);	-- Pattern: Scarlet Infiltrator's Trousers
 i(238313, 1224622);	-- Pattern: Scarlet Infiltrator's Shoes
-i(238314, 1224623); -- Pattern: Scarlet Huntsman's Coif
-i(238315, 1224624); -- Pattern: Scarlet Huntsman's Pauldrons
-i(238316, 1224625); -- Pattern: Scarlet Huntsman's Chain
+i(238314, 1224623);	-- Pattern: Scarlet Huntsman's Coif
+i(238315, 1224624);	-- Pattern: Scarlet Huntsman's Pauldrons
+i(238316, 1224625);	-- Pattern: Scarlet Huntsman's Chain
 i(238317, 1224626);	-- Pattern: Scarlet Huntsman's Wristguards
 i(238318, 1224627);	-- Pattern: Scarlet Huntsman's Handguards
 i(238319, 1224628);	-- Pattern: Scarlet Huntsman's Clasp
 i(238320, 1224629);	-- Pattern: Scarlet Huntsman's Legguards
 i(238321, 1224630);	-- Pattern: Scarlet Huntsman's Boots
-i(238925, 1226689); -- Scarlet Quiver
-i(238926, 1226690); -- Scarlet Ammo Pouch
+i(238925, 1226689);	-- Scarlet Quiver
+i(238926, 1226690);	-- Scarlet Ammo Pouch
 -- #endif
 
 -----------------
@@ -2595,7 +2595,7 @@ i(0, 444085);		-- Deepfury Hide
 -- PATCH 11.1.0 --
 ------------------
 --- ITEM ---
-i(235338, 1216520); -- Charged Armor Kit
+i(235338, 1216520);	-- Charged Armor Kit
 
 ------------------
 -- PATCH 11.2.7 --

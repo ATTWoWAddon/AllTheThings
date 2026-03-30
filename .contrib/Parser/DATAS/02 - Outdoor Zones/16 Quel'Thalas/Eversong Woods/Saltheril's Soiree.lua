@@ -102,8 +102,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91973, {	-- Naga Blade
-					o(568483, {	--
-						i(249499),	-- Naga Scimitar (QI!)
+					o(568483, {	-- Naga Scimitar
+						["coords"] = {
+							{ 35.0, 68.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.0, 68.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.6, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.2, 68.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						},
+						["groups"] = { i(249499) },	-- Naga Scimitar (QI!)
 					}),
 				}),
 			})),
@@ -120,6 +126,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = { i(249732), },	-- Vintner's Golden (QI!)
 					}),
 				}),
+				q(91988, {	-- Brightwing Conservation
+					i(249775),	-- Bright Berry (QI!)
+				}),
 				q(90575),	-- Fortify the Runestones: Farstriders
 				q(91989, {	-- Ghostland Peppers
 					o(568477, {	-- Ghostland Pepper
@@ -134,6 +143,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91984, {	-- Sungrub Silk
 					i(249422),	-- Sunsilk (QI!)
+				}),
+				q(91990, {	-- Sunset to Sea
+					i(267040),	-- Sea Caller (QI!)
 				}),
 				q(91985, {	-- Windrunner Memorabilia
 					i(249542),	-- Partially Used Memento (QI!)
@@ -159,27 +171,56 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91993, {	-- Diminutive Demand
 					i(249437),	-- Wand of Diminutive Proportions (QI!)
 				}),
+				q(91996, {	-- Fit for a Magister
+					o(568276, {	-- Unoccupied Mana Loom
+						["coord"] = { 47.0, 36.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = { i(249445) },	-- Bolt of Mana Silk Cloth (QI!)
+					}),
+				}),
 				q(90573),	-- Fortify the Runestones: Magisters
 				q(89276),	-- Light Snacks
 				q(91997, {	-- Power Clean
 					i(249452),	-- Inanimate Broom (QI!)
+				}),
+				q(91994, {	-- Pyrepetal Purposes
+					i(249444),	-- Eversong Pyrepetal (QI!)
 				}),
 				q(91995),	-- What Horrible Magic
 			})),
 			-- Shades of the Row weekly
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 240837 },	-- Vyrin the Supplier
-				["coord"] = { 42.6, 46.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["coord"] = { 42.8, 45.7, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["maxReputation"] = { FACTION_SHADES_OF_THE_ROW, 6 },	-- Luminary
 				["isWeekly"] = true,
 			}, {
+				q(92003, {	-- Artisanal Replicas
+					i(249688),	-- Felo'melorn Replica (QI!)
+				}),
 				q(92007, {	-- Begged, Borrowed or Stolen
 					i(249544),	-- Chest of Stolen Valuables (QI!)
+				}),
+				q(91999, {	-- A Bit of Bloodthistle
+					i(249472),	-- Fragrant Bloodthistle (QI!)
 				}),
 				q(92002, {	-- Dangerous Showpieces
 					i(249528),	-- Twilight Weaponry (QI!)
 				}),
 				q(90576),	-- Fortify the Runestone: Shades of the Row
+				q(92001, {	-- One Smuggler to Another
+					o(568506, {	-- Smuggled Goods
+						["coords"] = {
+							{ 36.8, 43.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.9, 44.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.9, 44.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 38.1, 45.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 39.2, 44.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 40.6, 43.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 40.7, 44.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+						},
+						["groups"] = { i(249517) },	-- Smuggled Goods (QI!)
+					}),
+				}),
 				q(92004, {	-- Shady Dealings
 					i(249687),	-- Poisonous Frog Secretions (QI!)
 				}),
@@ -194,7 +235,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			})),
 			n(BONUS_OBJECTIVES, {
 				q(91966, {	-- Saltheril's Soiree
-					["sourceQuests"] = { 91629 },	-- High Esteem
+					["sourceQuests"] = { 89290 },	-- Saltheril's Soiree (AW weekly unlock)
 					["coord"] = { 42.7, 47.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["isDaily"] = true,
 				}),
@@ -206,39 +247,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(242241),	-- Latent Arcana
 				-- Boxes
 				i(269701, {	-- Surplus Bag of Party Favors
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",ARMOR},{"finalize"},
-
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",WEAPONS},
-					},
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 				i(268489, {	-- Surplus Bag of Party Favors (Pre-Season)
-					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_X_SEASONSTART },
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",ARMOR},{"finalize"},
-
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",WEAPONS},
-					},
+					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 				i(263465, {	-- Surplus Bag of Party Favors (Season 1)
-					["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
-					["sym"] = { -- [Quel'Thalas Zone Rewards content]
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",ARMOR},{"finalize"},
-
-						{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-						{"where","headerID",ZONE_REWARDS},{"pop"},
-						{"where","headerID",WEAPONS},
-					},
+					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 			}),
 			n(VENDORS, {
@@ -396,7 +413,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		n(SALTHERILS_HAVEN, {
 			n(QUESTS, {
 				q(95113),	-- Weekly completion of ???
-				q(89290),	-- Weekly completion of Farstriders
+				q(89290, name(HEADERS.Quest, 91966, {isWeekly=true})),	-- Account-wide 'Saltheril's Soiree' unlock after picking a faction
 			}),
 		}),
 	}),

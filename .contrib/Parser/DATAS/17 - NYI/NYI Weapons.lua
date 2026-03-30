@@ -2011,6 +2011,11 @@ root(ROOTS.NeverImplemented, {
 			i(238008),	-- Wastelander's Folly
 			-- #endif
 		})),
+
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			i(266268),	-- Rootbound Haranir Claws
+		})),
 	}),
 	n(WEAPONS, {
 		expansion(EXPANSION.TBC, {

@@ -1453,6 +1453,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198180),	-- D.U.C.K.O.Y.+
 			i(198181),	-- D.U.C.K.O.Y.++
 			i(198182),	-- D.U.C.K.O.Y.+++
+			i(202310, {["provider"]={"i",202309}}),	-- Defective Doomsday Device
 			i(198163),	-- Endless Stack of Needles+
 			i(198164),	-- Endless Stack of Needles++
 			i(198165),	-- Endless Stack of Needles+++
@@ -1950,14 +1951,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(72015, 391836);	-- Cliffside Wylderdrake: Silver and Blue Armor
 			FirstCraft(72018, 391846);	-- Cliffside Wylderdrake: Steel and Yellow Armor
 			FirstCraft(71533, 383576);	-- Cliffside Wylderdrake: Triple Head Horns
-			-- Dragonriding -- Winding Slitherdrake
+			-- Dragonriding	-- Winding Slitherdrake
 			FirstCraft(75577, 408218, ADDED_10_1_0);	-- Winding Slitherdrake: Blue and Silver Armor
 			FirstCraft(75579, 408222, ADDED_10_1_0);	-- Winding Slitherdrake: Curved Chin Horn
 			FirstCraft(78424, 425958, ADDED_10_2_0);	-- Winding Slitherdrake: Hairy Chin
 			FirstCraft(75581, 408223, ADDED_10_1_0);	-- Winding Slitherdrake: Small Finned Throat
 			FirstCraft(75580, 408221, ADDED_10_1_0);	-- Winding Slitherdrake: White Hair
 			FirstCraft(75578, 408220, ADDED_10_1_0);	-- Winding Slitherdrake: Yellow and Silver Armor
-			-- Dragonriding -- Grotto Netherwing Drake
+			-- Dragonriding	-- Grotto Netherwing Drake
 			FirstCraft(78425, 425961, ADDED_10_2_0);	-- Grotto Netherwing Drake: Chin Tendrils
 			FirstCraft(78426, 425959, ADDED_10_2_0);	-- Grotto Netherwing Drake: Spiked Jaw
 			-- Artisan Curios
@@ -3187,7 +3188,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		-- n(FIRST_CRAFTS_HEADER, sharedData({
 		-- 	["requireSkill"] = SKINNING,
 		-- },{
-		-- -- Listed under HQ until Quest Tracking Update
+		--	-- Listed under HQ until Quest Tracking Update
 		-- })),
 	}),
 	prof(TAILORING, {

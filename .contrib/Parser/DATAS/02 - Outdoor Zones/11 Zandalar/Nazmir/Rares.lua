@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(161028),	-- Noxious Crocolisk Trousers
 				},
 			}),
-			n(128584, {	-- Vugthuth -- only up during a world quest
+			n(128584, {	-- Vugthuth	-- only up during a world quest
 				["questID"] = 50366,	-- 50459 for WQ
 				["coord"] = { 46.8, 33.6, NAZMIR },
 				["groups"] = {
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(161092),	-- Rivermarsh Quickclaw Buckle
 				},
 			}),
-			n(128578, {	-- Zujothgul -- possibly only up when WQ is active
+			n(128578, {	-- Zujothgul	-- possibly only up when WQ is active
 				["coord"] = { 39.6, 50.6, NAZMIR },
 				["groups"] = {
 					i(161101),	-- Bone Horror's Armsplints

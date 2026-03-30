@@ -136,6 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			Boss(AUROSTAR, {	-- Aurostor, The Hibernator
+				["questID"] = 77758,
 				["timeline"] = { ADDED_10_2_0 },
 			}),
 			BossWorldQuest(AUROSTAR, 76367, {	-- Hibernation Heroes

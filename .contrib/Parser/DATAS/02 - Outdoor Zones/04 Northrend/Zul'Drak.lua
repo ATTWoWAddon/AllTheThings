@@ -354,7 +354,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28283,	-- Sergeant Moonshard
 						["coord"] = { 58.0, 72.0, ZULDRAK },
 					}),
-					q(12503, {	-- Defend the Stand -- aa
+					q(12503, {	-- Defend the Stand	-- aa
 						["sourceQuest"] = 12795,	-- Taking a Stand
 						["qg"] = 28059,	-- Commander Falstaav
 						["coord"] = { 39.4, 66.9, ZULDRAK },
@@ -370,7 +370,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28518,	-- Stefan Vadu
 						["coord"] = { 14.0, 73.8, ZULDRAK },
 					}),
-					q(13556, {	-- Eggs for Dubra'Jin -- aa
+					q(13556, {	-- Eggs for Dubra'Jin	-- aa
 						["qg"] = 33025,	-- Ha'wana
 						["coord"] = { 69.9, 20.9, ZULDRAK },
 					}),
@@ -520,7 +520,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(12512, {	-- Leave No One Behind -- aa
+					q(12512, {	-- Leave No One Behind	-- aa
 						["qg"] = 28125,	-- Dr. Rogers
 						["coord"] = { 58.6, 72.4, ZULDRAK },
 						["groups"] = {
@@ -604,7 +604,7 @@ root(ROOTS.Zones, {
 							i(39827),	-- Vile Tome of Tenets
 						},
 					}),
-					q(12740, {	-- Parachutes for the Argent Crusade -- aa
+					q(12740, {	-- Parachutes for the Argent Crusade	-- aa
 						["qg"] = 28059,	-- Commander Falstaav
 						["coord"] = { 39.4, 66.9, ZULDRAK },
 						["groups"] = {
@@ -730,7 +730,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28518,	-- Stefan Vadu
 						["coord"] = { 14.0, 73.7, ZULDRAK },
 					}),
-					q(12799, {	-- Siphoning the Spirits -- aa
+					q(12799, {	-- Siphoning the Spirits	-- aa
 						["qg"] = 28045,	-- Captain Arnath
 						["coord"] = { 35.6, 52.2, ZULDRAK },
 					}),
@@ -739,7 +739,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28284,	-- Specialist Cogwheel
 						["coord"] = { 58.2, 72.0, ZULDRAK },
 					}),
-					q(12793, {	-- Smoke on the Horizon -- completes along with 12763, 12770, 12789, 12792 (probably a breadcrumb)
+					q(12793, {	-- Smoke on the Horizon	-- completes along with 12763, 12770, 12789, 12792 (probably a breadcrumb)
 					}),
 					q(12669, {	-- So Far, So Bad
 						["coords"] = {
@@ -875,12 +875,12 @@ root(ROOTS.Zones, {
 						["qg"] = 30007,	-- Gurgthock
 						["coord"] = { 48.4, 56.3, ZULDRAK },
 					}),
-					q(12565, {	-- The Blessing of Zim'Abwa -- aa
+					q(12565, {	-- The Blessing of Zim'Abwa	-- aa
 						["qg"] = 28062,	-- Hexer Ubungo
 						["coord"] = { 40.5, 65.6, ZULDRAK },
 					}),
 					q(12655, {	-- The Blessing of Zim'Rhuk
-						["sourceQuest"] = 12632,	-- But First My Offspring -- TODO: verify
+						["sourceQuest"] = 12632,	-- But First My Offspring	-- TODO: verify
 						["qg"] = 28479,	-- Witch Doctor Khufu
 						["coord"] = { 59.5, 58.0, ZULDRAK },
 					}),
@@ -963,7 +963,7 @@ root(ROOTS.Zones, {
 							i(41846),	-- Clutch of the Storm Giant
 						},
 					}),
-					q(12859, {	-- This Just In: Fire Still Hot! -- aa
+					q(12859, {	-- This Just In: Fire Still Hot!	-- aa
 						["qg"] = 29733,	-- Elder Shaman Moky
 						["coord"] = { 32.0, 75.5, ZULDRAK },
 						["groups"] = {
@@ -1111,7 +1111,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.1, 63.8, ZULDRAK },
 						["isDaily"] = true,
 					}),
-					q(12861, {	-- Trolls Is Gone Crazy! -- aa
+					q(12861, {	-- Trolls Is Gone Crazy!	-- aa
 						["qg"] = 29690,	-- Chief Rageclaw
 						["coord"] = { 32.1, 75.6, ZULDRAK },
 						["groups"] = {

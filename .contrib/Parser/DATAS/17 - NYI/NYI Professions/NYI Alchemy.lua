@@ -103,16 +103,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
 				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
-					i(245927),	-- Fleeting Flask of Thalassian Resistance+
-					i(245926),	-- Fleeting Flask of Thalassian Resistance++
-					i(245930),	-- Fleeting Flask of the Blood Knights+
-					i(245931),	-- Fleeting Flask of the Blood Knights++
-					i(245932),	-- Fleeting Flask of the Magisters+
-					i(245933),	-- Fleeting Flask of the Magisters++
-					i(245928),	-- Fleeting Flask of the Shattered Sun+
-					i(245929),	-- Fleeting Flask of the Shattered Sun++
-					i(245897),	-- Fleeting Light's Potential+
-					i(245898),	-- Fleeting Light's Potential++
 					i(245900),	-- Fleeting Potion of Zealotry+
 					i(245901),	-- Fleeting Potion of Zealotry++
 					i(241315),	-- Haranir Phial of Concentrated Ingenuity+

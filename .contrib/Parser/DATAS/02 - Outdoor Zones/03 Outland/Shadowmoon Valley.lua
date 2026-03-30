@@ -2594,7 +2594,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_2_3_2 },
 						["crs"] = { 19768 },	-- Coilskar Siren
 					}),
-					i(24158, {  -- Design: Khorium Band of Shadows (RECIPE!)
+					i(24158, { 	-- Design: Khorium Band of Shadows (RECIPE!)
 						["crs"] = { 19826 },	-- Dark Conclave Shadowmancer
 					}),
 					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance (RECIPE!)

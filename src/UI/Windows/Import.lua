@@ -171,3 +171,21 @@ app:CreateWindow("Import", {
 		self:ResetToInitialButtons()
 	end,
 });
+
+-- register the 'ID' style exporter
+app:RegisterDataStyleExporter("Raw ID", {
+	main = function(data, depth)
+		if data and data.key then
+			return data[data.key] .. ",\t-- " .. (data.name or UNKNOWN)
+		end
+	end
+})
+
+-- register the 'Raw questID' style exporter
+app:RegisterDataStyleExporter("Raw questID", {
+	main = function(data, depth)
+		if data then
+			return (data.questID or "???") .. ",\t-- " .. (data.name or UNKNOWN)
+		end
+	end
+})

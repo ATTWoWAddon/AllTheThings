@@ -458,7 +458,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				-- i never got this version of the quest, only 55244. is this version unused or is there a specific set of circumstances under which it appears?
-				-- the quest directive is slightly different -- this one says "help your direhorn cheer up" and the one i got repeatedly says "play with your direhorn."
+				-- the quest directive is slightly different	-- this one says "help your direhorn cheer up" and the one i got repeatedly says "play with your direhorn."
 				-- according to wowhead, this one comes from the NPC listed under "provider" here, and the one i got comes from 152258. so possibly from a different place in the storyline?
 				["groups"] = {
 					i(168304),	-- Squeaky Raptor (QI!)

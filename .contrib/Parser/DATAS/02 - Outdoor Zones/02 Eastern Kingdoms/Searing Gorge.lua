@@ -1192,16 +1192,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 8391 },	-- Lathoric the Black
 							["coord"] = { 41.2, 25.6, SEARING_GORGE },
 						}),
-						i(63240, {  -- Dark Iron Axe
+						i(63240, { 	-- Dark Iron Axe
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63239, {  -- Belt of Turning Tides
+						i(63239, { 	-- Belt of Turning Tides
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63238, {  -- Suntara Spaulders
+						i(63238, { 	-- Suntara Spaulders
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63237, {  -- Sootsmoke Wand
+						i(63237, { 	-- Sootsmoke Wand
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156936, {	-- Dark Iron Pike
@@ -1596,13 +1596,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								8566,	-- Dark Iron Lookout
 							},
 						}),
-						i(63229, {  -- K'Vlar Vest
+						i(63229, { 	-- K'Vlar Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63228, {  -- Rendan's Signet
+						i(63228, { 	-- Rendan's Signet
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63227, {  -- Dark Iron Gun
+						i(63227, { 	-- Dark Iron Gun
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156937, {	-- Dark Iron Blackjack

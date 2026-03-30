@@ -49,8 +49,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["cost"] = { { "i", 198047, 1 } },	-- 1x Kul Tiran Red
 			}),
-			i(200638, {	-- Bubblefilled Flounder [Speculated to be used in a Secret /Braghe]
-				["description"] = "Found inside a secret fish bubble while dead. Wonder what its for?",
+			i(200638, {	-- Bubblefilled Flounder
+				["description"] = "Can only be looted while dead. Found within bubbles of air underwater at the Hissing Grotto north of the Obsidian Citadel in the Waking Shores.",
 				["coord"] = { 19.4, 36.3, THE_WAKING_SHORES },
 			}),
 		}),

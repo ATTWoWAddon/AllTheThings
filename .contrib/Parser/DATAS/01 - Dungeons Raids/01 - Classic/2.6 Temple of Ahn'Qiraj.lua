@@ -1676,29 +1676,29 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					n(234193, {		-- Gilded Scarab
 						["description"] = "Randomly spawns in the Temple of Ahn'Qiraj and will despawn within 10seconds after being attacked",
 						["groups"] = {
-							i(235526), -- Formula: Enchant Bracer - Spell Power
-							i(235528), -- Formula: Enchant Bracer - Agility
-							i(233997), -- Formula: Enchant Chest - Living Stats
-							i(233998), -- Formula: Enchant Gloves - Holy Power
-							i(233999), -- Formula: Enchant Gloves - Arcane Power
-							i(234269), -- Formula: Enchanted Stopwatch
-							i(234275), -- Formula: Enchanted Prayer Tome
-							i(234276), -- Formula: Enchanted Totem
-							i(234277), -- Formula: Enchanted Mushroom
-							i(235139), -- Formula: Idol of Sidereal Wrath
-							i(235140), -- Formula: Idol of Feline Ferocity
-							i(235141), -- Formula: Idol of Ursin Power
-							i(235133), -- Formula: Libram of Righteousness
-							i(235134), -- Formula: Libram of the Exorcist
-							i(235135), -- Formula: Libram of Sanctity
-							i(234268), -- Formula: Lodestone of Retaliation
-							i(234270), -- Formula: Ruby-Encrusted Broach
-							i(234271), -- Formula: Scroll: Wrath of the Swarm
-							i(234266), -- Formula: Speedstone
-							i(234267), -- Formula: Tear of the Dreamer
-							i(235136), -- Formula: Totem of Pyroclastic Thunder
-							i(235137), -- Formula: Totem of Thunderous Strikes
-							i(235138), -- Formula: Totem of Flowing Magma
+							i(235526),	-- Formula: Enchant Bracer - Spell Power
+							i(235528),	-- Formula: Enchant Bracer - Agility
+							i(233997),	-- Formula: Enchant Chest - Living Stats
+							i(233998),	-- Formula: Enchant Gloves - Holy Power
+							i(233999),	-- Formula: Enchant Gloves - Arcane Power
+							i(234269),	-- Formula: Enchanted Stopwatch
+							i(234275),	-- Formula: Enchanted Prayer Tome
+							i(234276),	-- Formula: Enchanted Totem
+							i(234277),	-- Formula: Enchanted Mushroom
+							i(235139),	-- Formula: Idol of Sidereal Wrath
+							i(235140),	-- Formula: Idol of Feline Ferocity
+							i(235141),	-- Formula: Idol of Ursin Power
+							i(235133),	-- Formula: Libram of Righteousness
+							i(235134),	-- Formula: Libram of the Exorcist
+							i(235135),	-- Formula: Libram of Sanctity
+							i(234268),	-- Formula: Lodestone of Retaliation
+							i(234270),	-- Formula: Ruby-Encrusted Broach
+							i(234271),	-- Formula: Scroll: Wrath of the Swarm
+							i(234266),	-- Formula: Speedstone
+							i(234267),	-- Formula: Tear of the Dreamer
+							i(235136),	-- Formula: Totem of Pyroclastic Thunder
+							i(235137),	-- Formula: Totem of Thunderous Strikes
+							i(235138),	-- Formula: Totem of Flowing Magma
 							i(20876),	-- Idol of Death
 							i(20879),	-- Idol of Life
 							i(20875),	-- Idol of Night
@@ -1707,28 +1707,28 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(20877),	-- Idol of the Sage
 							i(20874),	-- Idol of the Sun
 							i(20882),	-- Idol of War
-							i(234235), -- Pattern: Glowing Chitin Armor Kit
-							i(234244), -- Pattern: Qiraji Silk Scarf (RECIPE!)
-							i(234249), -- Pattern: Qiraji Silk Cape (RECIPE!)
-							i(234250), -- Pattern: Qiraji Silk Cloak (RECIPE!)
-							i(234251), -- Pattern: Qiraji Silk Drape (RECIPE!)
-							i(234237), -- Pattern: Razorbramble Cowl
-							i(234238), -- Pattern: Razorbramble Shoulderpads
-							i(234239), -- Pattern: Razorbramble Leathers
-							i(234236), -- Pattern: Sharpened Chitin Armor Kit
-							i(234240), -- Pattern: Vampiric Cowl
-							i(234241), -- Pattern: Vampiric Shawl
-							i(234242), -- Pattern: Vampiric Robe
-							i(234223), -- Plans: Obsidian Reaver
-							i(234224), -- Plans: Obsidian Champion
-							i(234225), -- Plans: Obsidian Destroyer
-							i(234226), -- Plans: Obsidian Stormhammer
-							i(234227), -- Plans: Obsidian Sageblade
-							i(234228), -- Plans: Obsidian Defender
-							i(234429), -- Plans: Obsidian Heartseeker
-							i(234220), -- Plans: Razorspike Headcage
-							i(234221), -- Plans: Razorspike Shoulderplates
-							i(234222), -- Plans: Razorspike Battleplate
+							i(234235),	-- Pattern: Glowing Chitin Armor Kit
+							i(234244),	-- Pattern: Qiraji Silk Scarf (RECIPE!)
+							i(234249),	-- Pattern: Qiraji Silk Cape (RECIPE!)
+							i(234250),	-- Pattern: Qiraji Silk Cloak (RECIPE!)
+							i(234251),	-- Pattern: Qiraji Silk Drape (RECIPE!)
+							i(234237),	-- Pattern: Razorbramble Cowl
+							i(234238),	-- Pattern: Razorbramble Shoulderpads
+							i(234239),	-- Pattern: Razorbramble Leathers
+							i(234236),	-- Pattern: Sharpened Chitin Armor Kit
+							i(234240),	-- Pattern: Vampiric Cowl
+							i(234241),	-- Pattern: Vampiric Shawl
+							i(234242),	-- Pattern: Vampiric Robe
+							i(234223),	-- Plans: Obsidian Reaver
+							i(234224),	-- Plans: Obsidian Champion
+							i(234225),	-- Plans: Obsidian Destroyer
+							i(234226),	-- Plans: Obsidian Stormhammer
+							i(234227),	-- Plans: Obsidian Sageblade
+							i(234228),	-- Plans: Obsidian Defender
+							i(234429),	-- Plans: Obsidian Heartseeker
+							i(234220),	-- Plans: Razorspike Headcage
+							i(234221),	-- Plans: Razorspike Shoulderplates
+							i(234222),	-- Plans: Razorspike Battleplate
 							i(234253),	-- Recipe: Flask of Ancient Knowledge (RECIPE!)
 							i(234256),	-- Recipe: Flask of Madness (RECIPE!)
 							i(234255),	-- Recipe: Flask of the Old Gods (RECIPE!)

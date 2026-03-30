@@ -2441,34 +2441,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				"Best farmed in 'The Underkeep' Delve during a story that allows ores to spawn. The first room on the right can an Aqirite Seam.\n\nCan also be found very very rarely in Caves in Hallowfall & Ajzkahet as well as in the Sinkhole, Skittering Breach and Underkeep Delve.",
 				{ HALLOWFALL, AZJ_KAHET, THE_SINKHOLE, SKITTERING_BREACH, THE_UNDERKEEP }
 			),
-			r_withQuest(439712, 80356), -- Bismuth Seam
-			r_withQuest(439725, 80369), -- Camouflaged Aqirite
-			r_withQuest(439724, 80368), -- Camouflaged Bismuth
-			r_withQuest(439726, 80370), -- Camouflaged Ironclaw
-			r_withQuest(439716, 80360), -- Crystallized Aqirite
-			r_withQuest(439715, 80359), -- Crystallized Bismuth
-			r_withQuest(439717, 80361), -- Crystallized Ironclaw
-			r_withQuest(1250351, 92134, ADDED_11_2_0), -- Desolate Deposit
-			r_withQuest(439722, 80366), -- EZ-Mine Aqirite
-			r_withQuest(439721, 80365), -- EZ-Mine Bismuth
-			r_withQuest(439723, 80367), -- EZ-Mine Ironclaw
-			r_withQuest(439708, 80352), -- Ironclaw
-			r_withQuest(439714, 80358), -- Ironclaw Seam
+			r_withQuest(439712, 80356),	-- Bismuth Seam
+			r_withQuest(439725, 80369),	-- Camouflaged Aqirite
+			r_withQuest(439724, 80368),	-- Camouflaged Bismuth
+			r_withQuest(439726, 80370),	-- Camouflaged Ironclaw
+			r_withQuest(439716, 80360),	-- Crystallized Aqirite
+			r_withQuest(439715, 80359),	-- Crystallized Bismuth
+			r_withQuest(439717, 80361),	-- Crystallized Ironclaw
+			r_withQuest(1250351, 92134, ADDED_11_2_0),	-- Desolate Deposit
+			r_withQuest(439722, 80366),	-- EZ-Mine Aqirite
+			r_withQuest(439721, 80365),	-- EZ-Mine Bismuth
+			r_withQuest(439723, 80367),	-- EZ-Mine Ironclaw
+			r_withQuest(439708, 80352),	-- Ironclaw
+			r_withQuest(439714, 80358),	-- Ironclaw Seam
 			r(439742),	-- Overload Crystallized
 			r(423394),	-- Overload Empowered Deposit
 			r(439744),	-- Overload Explosives
 			r(439747),	-- Overload Webbed Deposits
 			r(439743),	-- Overload Weeping
-			r_withQuest(439710, 80354), -- Rich Aqirite
-			r_withQuest(439709, 80353), -- Rich Bismuth
-			r_withQuest(1250356, 92135, ADDED_11_2_0), -- Rich Desolate Deposit
-			r_withQuest(439711, 80355), -- Rich Ironclaw
-			r_withQuest(439728, 80372), -- Webbed Aqirite
-			r_withQuest(439727, 80371), -- Webbed Bismuth
-			r_withQuest(439729, 80373), -- Webbed Ironclaw
-			r_withQuest(439719, 80363), -- Weeping Aqirite
-			r_withQuest(439718, 80362), -- Weeping Bismuth
-			r_withQuest(439720, 80364), -- Weeping Ironclaw
+			r_withQuest(439710, 80354),	-- Rich Aqirite
+			r_withQuest(439709, 80353),	-- Rich Bismuth
+			r_withQuest(1250356, 92135, ADDED_11_2_0),	-- Rich Desolate Deposit
+			r_withQuest(439711, 80355),	-- Rich Ironclaw
+			r_withQuest(439728, 80372),	-- Webbed Aqirite
+			r_withQuest(439727, 80371),	-- Webbed Bismuth
+			r_withQuest(439729, 80373),	-- Webbed Ironclaw
+			r_withQuest(439719, 80363),	-- Weeping Aqirite
+			r_withQuest(439718, 80362),	-- Weeping Bismuth
+			r_withQuest(439720, 80364),	-- Weeping Ironclaw
 		}),
 		-- Gathered Items
 		i(210933),	-- Aqirite+

@@ -1889,7 +1889,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_2_7 } }, {
 		n(HERITAGE, {
 			q(85049, {races={PANDAREN_HORDE}}),	-- Pandaren Horde trigger for 'Invitation to the Spirit Festival' (84444)
-			q(85050, {races={PANDAREN_HORDE}}),	-- Pandaren Alliance trigger for 'Invitation to the Spirit Festival' (84442)
+			q(85050, {races={PANDAREN_ALLIANCE}}),	-- Pandaren Alliance trigger for 'Invitation to the Spirit Festival' (84442)
 			q(93888),	-- New HQT after complete Blood elf heritage quest 'The Fall of the Sunwell' (54096)
 		}),
 	})),

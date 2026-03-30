@@ -37,9 +37,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					}, {	-- RENOWN 9 --
 					}, {	-- RENOWN 10 --
+						q(94794, {	-- Fine Fashion Funding
+							i(FINERY_FUNDS),
+						}),
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
+						q(92891),	-- A Cluster of Voidlight Marl
 					}, {	-- RENOWN 14 --
 					}, {	-- RENOWN 15 --
 					}, {	-- RENOWN 16 --

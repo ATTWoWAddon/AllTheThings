@@ -183,19 +183,19 @@ DF_MINING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_
 TWW_MINING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423341),	-- Khaz Algar Mining
 	r(2656),	-- Mining Journal \ Smelting
-	r_withQuest(439705, 80350), -- Bismuth
+	r_withQuest(439705, 80350),	-- Bismuth
 	r(453381),	-- Erosion Polished Slate
 });
 MID_MINING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471013),	-- Midnight Mining
 	r(2656),	-- Mining Journal \ Smelting
-	r(1265815), -- Artisan Miner's Moxie
-	r(1285705), -- Dazzling Thorium
-	r(1265729), -- Deftness
-	r(1265722), -- Finesse
-	r(1265714), -- Knowledge
-	r(1265726), -- Perception
-	r(1265711), -- Quality
-	r(1226062), -- Septarian Nodule
-	r(1265718), -- Skill
+	r(1265815),	-- Artisan Miner's Moxie
+	r(1285705),	-- Dazzling Thorium
+	r(1265729),	-- Deftness
+	r(1265722),	-- Finesse
+	r(1265714),	-- Knowledge
+	r(1265726),	-- Perception
+	r(1265711),	-- Quality
+	r(1226062),	-- Septarian Nodule
+	r(1265718),	-- Skill
 });

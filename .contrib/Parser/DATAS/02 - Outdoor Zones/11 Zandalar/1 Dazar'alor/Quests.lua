@@ -952,7 +952,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(49283, {	-- Who Seeks the Seekers?
-				["sourceQuests"] = { 49310 },	-- The Prophet's Ploy -- TODO: verify this. It was the earliest i've seen it become available but have additional requirements
+				["sourceQuests"] = { 49310 },	-- The Prophet's Ploy	-- TODO: verify this. It was the earliest i've seen it become available but have additional requirements
 				["provider"] = { "n", 128909 },	-- Shalo
 				["coord"] = { 57.8, 92.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -973,7 +973,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47514, {	-- Zuldazar
-				-- "we need each other" did not pop up at all during my playthrough on April 11, 2021 -- unsure if it has specific requirements/if it's a breadcrumb/if it was removed
+				-- "we need each other" did not pop up at all during my playthrough on April 11, 2021	-- unsure if it has specific requirements/if it's a breadcrumb/if it was removed
 				-- ["sourceQuests"] = { 52131 },	-- We Need Each Other
 				["sourceQuests"] = { 46931 },	-- Speaker of the Horde
 				["provider"] = { "n", 135775 },	-- Scouting Map

@@ -301,9 +301,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(238365, {	-- Dark Rider		(4)
 						["description"] = "To summon the Dark Rider Boss, you will need to collect 3 Mysterious Relics - a Staff, Sword, and Scythe. Once you have these you can use them to summon Dark Rider in the Prison",
 						["cost"] = {
-							{ "i", 236878, 1 }, -- Mysterious Relic (Sword)
-							{ "i", 236879, 1 }, -- Mysterious Relic (Staff)
-							{ "i", 236880, 1 }, -- Mysterious Relic (Scythe)
+							{ "i", 236878, 1 },	-- Mysterious Relic (Sword)
+							{ "i", 236879, 1 },	-- Mysterious Relic (Staff)
+							{ "i", 236880, 1 },	-- Mysterious Relic (Scythe)
 						},
 						["groups"] = {
 							i(235892),	-- Darkrider's Spine

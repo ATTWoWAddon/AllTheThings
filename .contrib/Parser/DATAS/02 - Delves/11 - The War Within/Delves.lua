@@ -213,7 +213,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["groups"] = {
 				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 					ach(41529, {	-- Breaking the Bank
-						title(612),	-- %s, the Real Deal
+						title(612),	-- <Name>, the Real Deal
 					}),
 					ach(41210, {	-- Let Me Solo Him: The Underpin
 						i(233196),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
@@ -238,18 +238,19 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		})),
 	})),
 	n(DELVES_TWW_S3, applyDataSelf({ ["timeline"] = { ADDED_11_2_0 } }, {	-- Includes Voidrazor Sanctuary
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
+		n(ACHIEVEMENTS, {
 			mapped(ach(42779, {	-- A Flash in the Void
 				["cr"] = 245938,	-- Flickergate
-				["groups"] = { title(598) },	-- Flickering %s
+				["groups"] = { title(598) },	-- Flickering <Name>
 			})),
 			mapped(ach(42778, {	-- A Flicker in the Dark
 				["cr"] = 245938,	-- Flickergate
 			})),
 			ach(42801, {	-- Journey's End (Season 3)
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
 					title(638, {	-- <Name> the Delver Within
-						["timeline"] = { ADDED_11_2_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 				},
 			}),
@@ -264,7 +265,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			mapped(ach(42203, {	-- War Within Delves: Tier 11 (Season 3)
 				title(550),	-- High Explorer <Name>
 			})),
-		})),
+		}),
 		-- TWW Season 3 Boss
 		m(DELVE_ETHEREAL_KYVEZA, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			["icon"] = [[~_.asset("Delves_Shadow")]],
@@ -281,7 +282,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						}),
 					}),
 					ach(42194, {	-- Pruning the Princess
-						title(639),	-- Contract Killer %s
+						title(639),	-- Contract Killer <Name>
 					}),
 				})),
 				n(EXPLORATION, {
@@ -1675,9 +1676,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			i(242850, {	-- Ancient Curio (QS!)
 				["timeline"] = { ADDED_11_2_0_SEASONSTART },
 			}),
-			-- #if BEFORE 12.0.1
-			currency(2803),	-- Undercoin
-			-- #endif
+			currency(2803, {	-- Undercoin
+				["timeline"] = { REMOVED_12_0_1_LAUNCH },
+			}),
 		}),
 		filter(RECIPES, {
 			i(223085),	-- Design: Fractured Gemstone Locket (RECIPE!)
@@ -2232,7 +2233,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		o(455914, {	-- Mislaid Curiosity
+			-- #if BEFORE 12.0.0
 			["description"] = "Contains Chunk of Companion Experience tokens.",
+			-- #endif
 			["timeline"] = { REMOVED_11_1_0_SEASONSTART },
 			["groups"] = {
 				-- First versions
@@ -2246,7 +2249,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		o(478443, {	-- Mislaid Curiosity
+			-- #if BEFORE 12.0.0
 			["description"] = "Contains a 'Chunk of Companion Experience' token.\n\n|cFF40bf40Massively buffed in 11.1, they can now provide up to 18k Brann XP each, depending on the Delves' Level & which experience token you receive.|r",
+			-- #endif
 			["timeline"] = { ADDED_11_1_0 },
 			["groups"] = {
 				-- Brann Experience
@@ -2582,6 +2587,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		n(208070, {	-- Sir Finley Mrgglton <Delve Treasures>
 			["coord"] = { 47.6, 43.6, DORNOGAL },
+			["timeline"] = { REMOVED_12_0_1_SEASONSTART },
 			["groups"] = {
 				header(HEADERS.Item, 219391, {	-- Delver's Dirigible
 					i(235685, {	-- Delver's Dirigible Schematic: Drill (MM!)
@@ -3099,7 +3105,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(246053),	-- Waygate Piece
 			}),
 			n(TREASURES, {
-				o(455498, { -- Sturdy Chest
+				o(455498, {	-- Sturdy Chest
 					["description"] = "Use Waygate on the 1st Level.",
 					["coords"] = {
 						{ 47.9, 24.6, 2455 },	-- Lower Chamber (Waygate)
@@ -3111,12 +3117,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 62.0, 11.1, 2455 },	-- Lower Chamber
 					["questID"] = 83673,
 				}),
-				o(455535, { -- Sturdy Chest
+				o(455535, {	-- Sturdy Chest
 					["description"] = "Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",
 					["coord"] = { 49.7, 92.6, 2455 },	-- Lower Chamber
 					["questID"] = 92573,
 				}),
-				o(539785, { -- Sturdy Chest
+				o(539785, {	-- Sturdy Chest
 					["coords"] = {
 						{ 43.9, 64.7, 2455 },	-- Lower Chamber
 						{ 43.3, 65.7, 2476 },	-- Archival Assault
@@ -3136,10 +3142,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					crit(68758),	-- Kidnapped Earthen
 					crit(68759),	-- Precious Ores
 					crit(68760),	-- Fiery Grounds
-					crit(102963, { -- Looking for Treasure
+					crit(102963, {	-- Looking for Treasure
 						["timeline"] = { ADDED_11_1_0 },
 					}),
-					crit(102964, { -- Bugs and Grubs
+					crit(102964, {	-- Bugs and Grubs
 						["timeline"] = { ADDED_11_1_0 },
 					}),
 				}),
@@ -3342,7 +3348,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 49.6, 35.7, FUNGAL_FOLLY },
 					["questID"] = 83452,
 					["groups"] = {
-						i(225556),	-- Ancient Construct (TOY!) -- confirmed 2/2
+						i(225556),	-- Ancient Construct (TOY!)	-- confirmed 2/2
 					},
 				}),
 				o(455496, {	-- Sturdy Chest

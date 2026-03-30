@@ -42,12 +42,14 @@ VOID_ASSAULTS_RITUAL_SITES = createHeader({
 local FIELD_ACCOLADE = 3405;
 local DARK_PARTICLE = 267051;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
-	["maps"] = {
-		MAP.MIDNIGHT.EVERSONG_WOODS,
-		MAP.MIDNIGHT.ZULAMAN,
-	},
-	["groups"] = {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
+	["groups"] = sharedData({
+		["maps"] = {
+			MAP.MIDNIGHT.EVERSONG_WOODS,
+			MAP.MIDNIGHT.ZULAMAN,
+		},
+		["timeline"] = { ADDED_12_0_5 },
+	}, {
 		n(VOID_ASSAULTS_RITUAL_SITES, {
 			faction(FACTION_RITUAL_SITES),
 			-- Void Rift: Bitter Bark; 30.8, 43.6, Zul'Aman
@@ -213,9 +215,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					}),
 					filter(FINGER_F, {
 						i(263888),	-- Void-Laced Band
+						i(263890),	-- Void-Laced Ring
+						i(263889),	-- Void-Laced Signet
 					}),
 					filter(LEATHER, {
-						--Cache of Void-Touched Armaments (itemID 263928)
+						-- Cache of Void-Touched Armaments (itemID 263928)
 						i(263800),	-- Bindings of the Void Acolyte
 						i(263798),	-- Cord of the Void Acolyte
 						i(263794),	-- Grips of the Void Acolyte
@@ -236,11 +240,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					filter(MAIL, {
 					}),
 					filter(NECK_F, {
+						i(263893),	-- Void-Laced Necklace
+						i(263891),	-- Void-Laced Pendant
+						i(263892),	-- Void-Laced Torc
 					}),
 					filter(PLATE, {
 					}),
 				}),
 				n(WEAPONS, {
+					-- Cache of Void-Touched Weapons (itemID 264323)
+					i(263905),	-- Void-Touched Apprentice's Gavel
+					i(263903),	-- Void-Touched Basher
+					i(263911),	-- Void-Touched Battle Baton
+					i(263910),	-- Void-Touched Beacon Staff
+					i(263906),	-- Void-Touched Bulwark
+					i(263920),	-- Void-Touched Dueling Blade
+					i(263898),	-- Void-Touched Fang
+					i(263917),	-- Void-Touched Flaredblade
+					i(263925),	-- Void-Touched Foci
+					i(263904),	-- Void-Touched Gavel
+					i(263927),	-- Void-Touched Glaiveblade
+					i(263923),	-- Void-Touched Greatblade
+					i(263924),	-- Void-Touched Greatbow
+					i(263926),	-- Void-Touched Greatwand
+					i(263918),	-- Void-Touched Guard's Blade
+					i(263900),	-- Void-Touched Gutter
+					i(263914),	-- Void-Touched Hammer
+					i(263922),	-- Void-Touched Mageblade
+					i(263912),	-- Void-Touched Magister's Baton
+					i(263919),	-- Void-Touched Magister's Sword
+					i(263908),	-- Void-Touched Poleaxe
+					i(263894),	-- Void-Touched Rifle
+					i(263901),	-- Void-Touched Sacrificial Knife
+					i(263913),	-- Void-Touched Smasher
+					i(263907),	-- Void-Touched Spade
+					i(263921),	-- Void-Touched Sunfury Blade
+					i(263909),	-- Void-Touched Sunfury Stave
+					i(263916),	-- Void-Touched Tome
+					i(263915),	-- Void-Touched Torch
+					i(263902),	-- Void-Touched Twinblade
 				}),
 				filter(MISC, {
 				}),
@@ -397,7 +435,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			n(QUESTS, {
 				q(95551, {	-- Misappropriated Treasures
-					["providers"] = { 
+					["providers"] = {
 						--TODO: could be only Exquisite Treasure as started of quest, not sure
 						{ "i", 271428 },	-- Crystalline Treasure (QS!/QI!)
 						{ "i", 271429 },	-- Ethereal Treasure (QS!/QI!)
@@ -423,25 +461,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				i(271785),	-- Ritual Spoils (on Daggerspine Landing UI)
 			}),
 		}),
-	},
-})));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
-	n(VOID_ASSAULTS_RITUAL_SITES, {
-		n(QUESTS, {
-			q(92589),	-- <DNT> Last Scenario Step Quest, Triggers after completing any Void Ritual
-			q(94456),	-- <DNT> Last Scenario Step Quest, Triggers after completing a Void Incursion
-			-- Daggerspine Landing
-			q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day & week), could be push quest for questID 95547 (Ritual Site Challenge Report: Tendrils)
-			q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_LANDING
-			q(96147),	-- Dark Obelisk @ 64.7, 50.0, DAGGERSPINE_LANDING
-			q(96148),	-- Dark Obelisk @ 61.9, 62.1, DAGGERSPINE_LANDING
-			q(96149),	-- Dark Obelisk @ 63.8, 70.5, DAGGERSPINE_LANDING
-			q(96150),	-- Dark Obelisk @ 39.5, 76.2, DAGGERSPINE_LANDING
-			q(96151),	-- Dark Obelisk @ 35.0, 63.8, DAGGERSPINE_LANDING
-			q(96152),	-- Dark Obelisk @ 50.4, 42.8, DAGGERSPINE_LANDING
-			q(96153),	-- Dark Obelisk @ 44.8, 47.4, DAGGERSPINE_LANDING
-			q(96154),	-- Dark Obelisk @ 42.5, 57.0, DAGGERSPINE_LANDING
-		}),
 	}),
-})));
+}))
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(VOID_ASSAULTS_RITUAL_SITES, {
+		["timeline"] = { ADDED_12_0_5 },
+		["groups"] = {
+			n(QUESTS, {
+				q(92589),	-- <DNT> Last Scenario Step Quest, Triggers after completing any Void Ritual
+				q(94456),	-- <DNT> Last Scenario Step Quest, Triggers after completing a Void Incursion
+				-- Daggerspine Landing
+				q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day & week), could be push quest for questID 95547 (Ritual Site Challenge Report: Tendrils)
+				q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_LANDING
+				q(96147),	-- Dark Obelisk @ 64.7, 50.0, DAGGERSPINE_LANDING
+				q(96148),	-- Dark Obelisk @ 61.9, 62.1, DAGGERSPINE_LANDING
+				q(96149),	-- Dark Obelisk @ 63.8, 70.5, DAGGERSPINE_LANDING
+				q(96150),	-- Dark Obelisk @ 39.5, 76.2, DAGGERSPINE_LANDING
+				q(96151),	-- Dark Obelisk @ 35.0, 63.8, DAGGERSPINE_LANDING
+				q(96152),	-- Dark Obelisk @ 50.4, 42.8, DAGGERSPINE_LANDING
+				q(96153),	-- Dark Obelisk @ 44.8, 47.4, DAGGERSPINE_LANDING
+				q(96154),	-- Dark Obelisk @ 42.5, 57.0, DAGGERSPINE_LANDING
+			}),
+		},
+	}),
+}))

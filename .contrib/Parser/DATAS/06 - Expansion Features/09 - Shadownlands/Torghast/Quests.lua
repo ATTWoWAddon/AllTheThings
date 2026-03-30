@@ -142,6 +142,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 				["sourceQuests"] = { 61430 },	-- Chalkyth's Saber
 				["provider"] = { "n", 172240 },	-- Chalkyth
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
+				["coord"] = { 70.0, 55.8, 1778 },	-- Torghast
 				["groups"] = { follower(1280) },	-- Chalkyth
 			}),
 			q(62999, {	-- Champion: Croman
@@ -329,6 +330,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 				-- ["sourceQuests"] = { },	-- TODO
 				["provider"] = { "n", 172243 },	-- Yira'lya
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
+				["coord"] = { 62.9, 46.9, 1776 },	-- Torghast
 				["groups"] = { follower(1282) },	-- Yira'lya
 			}),
 		}),

@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(55984, {	-- A Good Offense
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+			["sourceQuest"] = 55500,	-- Save a Friend	-- todo: verify sourceQuest. Most likely after unlocking the conch
 			["provider"] = { "n", 153623 },	-- Korl
 			["coord"] = { 36.3, 30.1, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(55986, {	-- Break a Few Eggs (H)
 			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
-			["sourceQuest"] = 55500,	-- Save A Friend -- confirm sourceQuest. Possibly  "The Needs of the People" instead?
+			["sourceQuest"] = 55500,	-- Save A Friend	-- confirm sourceQuest. Possibly  "The Needs of the People" instead?
 			["provider"] = { "n", 153684 },	-- Caitfin Gills
 			["coord"] = { 70.2, 23.2, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 76.0, 45.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 		}),
-		q(56310, {	-- City of Drowned Friends -- TODO:  verify sourceQuest
+		q(56310, {	-- City of Drowned Friends	-- TODO:  verify sourceQuest
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 154520 },	-- First Arcanist Thalyssra
 			["coord"] = { 73.4, 47.8, NAZJATAR },
@@ -919,7 +919,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(168253),	-- Fathom Hook (QI!)
 			},
 		}),
-		q(55661, {	-- Fighting Venomous With Venom -- TODO:  verify sourceQuest
+		q(55661, {	-- Fighting Venomous With Venom	-- TODO:  verify sourceQuest
 			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 153777 },	-- Cando Mikfin
@@ -1003,7 +1003,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(169916),	-- Brew-Soaked Supplies
 			},
 		}),
-		q(55871, {	-- Gather Friends -- also triggered 56544, 56682
+		q(55871, {	-- Gather Friends	-- also triggered 56544, 56682
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 151311 },	-- Narm
@@ -1291,7 +1291,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(56035, {	-- Most Delicious Clams (H)
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
-			["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+			["sourceQuest"] = 55500,	-- Save a Friend	-- todo: verify sourceQuest. Most likely after unlocking the conch
 			["provider"] = { "n", 153900 },	-- Sardina Lauray
 			["coord"] = { 48.7, 22.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -2089,7 +2089,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 58.2, 28.7, NAZJATAR },
 			},
 			["isDaily"] = true,
-			["crs"] = { -- not sure if there are any other bosses that get summoned
+			["crs"] = {	-- not sure if there are any other bosses that get summoned
 				153306,	-- Azsh'ari Leviathan
 				153308,	-- Fury of Azshara
 				153307,	-- Unleashed Arcanofiend
@@ -2667,7 +2667,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(56264, {	-- We've Got Crabs! (H)
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
-			["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+			["sourceQuest"] = 55500,	-- Save a Friend	-- todo: verify sourceQuest. Most likely after unlocking the conch
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["coord"] = { 25.4, 26.3, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -2840,7 +2840,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			-- HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard, OR after 1-2 minutes of idling post-pickup)
 			-- not sure if Alliance quests are once per account (horde appear to be daily) or if they just don't have HQTs - they have instant dialogue upon quest pickup/turn-in but haven't triggered any HQTs for me at all - the first time i did them on my account would have been looooooooong ago
 			-- unknown/probable bodyguard dialogue quests
-			q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)
+			q(56659),	-- not sure precisely what triggered this	-- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)
 			q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires (haven't reproduced w/poen, so probably another horde bodyguard)
 			q(56507),	-- Triggered randomly while in nazjatar
 			q(56658),	-- Triggered randomly while in Nazjatar

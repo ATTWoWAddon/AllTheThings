@@ -150,8 +150,12 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 					i(247788),	-- Ingenious Identity
 				}),
 				i(246449),	-- Mentor's Helpful Handiwork
-				i(247719),	-- Multicraft Matrix
-				i(247725),	-- Resourceful Rebar
+				i(247719, {	-- Multicraft Matrix
+					i(247724),	-- Multicraft Manifold
+				}),
+				i(247725, {	-- Resourceful Rebar
+					i(247726),	-- Resourceful Routing
+				}),
 			})),
 		}),
 	},

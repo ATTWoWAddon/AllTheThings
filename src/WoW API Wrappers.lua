@@ -209,7 +209,7 @@ end
 -- SpellBook APIs
 local C_SpellBook = C_SpellBook
 AssignAPIWrapper("IsSpellKnown", C_SpellBook and C_SpellBook.IsSpellKnown , IsSpellKnown);
-AssignAPIWrapper("IsPlayerSpell", C_SpellBook and C_SpellBook.IsSpellKnown , IsPlayerSpell);
 AssignAPIWrapper("IsSpellKnownOrOverridesKnown", C_SpellBook and C_SpellBook.IsSpellInSpellBook , IsSpellKnownOrOverridesKnown);
+AssignAPIWrapper("GetNumSpellTabs", C_SpellBook and C_SpellBook.GetNumSpellBookSkillLines, GetNumSpellTabs);
 
 ---@diagnostic enable: deprecated

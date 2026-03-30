@@ -1800,7 +1800,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
-				n(14273, {  -- Boulderheart
+				n(14273, { 	-- Boulderheart
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 56.6, 51.6, REDRIDGE_MOUNTAINS },
@@ -1809,7 +1809,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				n(616, {  -- Chatter
+				n(616, { 	-- Chatter
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 38.2, 35.8, REDRIDGE_MOUNTAINS },
@@ -1867,7 +1867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(165722),	-- Redridge Tarantula (PET!)
 					},
 				})),
-				n(584, {  -- Kazon
+				n(584, { 	-- Kazon
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 34.8, 12.2, REDRIDGE_MOUNTAINS },
@@ -1920,7 +1920,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				n(947, {  -- Rohh the Silent
+				n(947, { 	-- Rohh the Silent
 					-- #if AFTER CATA
 					["description"] = "This is a stealthed creature. You can target it with the macro '/tar Rohh'.",
 					-- #endif
@@ -1962,6 +1962,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 73.2, 71.2, REDRIDGE_MOUNTAINS },
 						-- #endif
 					},
+					-- #if BEFORE 4.0.3
+					["groups"] = {
+						i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
+					},
+					-- #endif
 				}),
 				n(14272, {	-- Snarlflare
 					["coords"] = {

@@ -319,7 +319,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = {
 				-- i(139775),	-- Alliance Enthusiast (PET!)
 				-- i(142379),	-- Dutiful Squire (PET!)
-				-- i(163975),	-- Sir Snips -- Listed under PvP w/ CRS
+				-- i(163975),	-- Sir Snips	-- Listed under PvP w/ CRS
 			},
 		}),
 		n(151950, {	-- Mrrglrlr
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = {
 				-- i(139776),	-- Horde Fanatic (PET!)
 				-- i(142380),	-- Dutiful Gruntling (PET!)
-				-- i(163974),	-- Bucketshell -- Listed under PvP w/ CRS
+				-- i(163974),	-- Bucketshell	-- Listed under PvP w/ CRS
 			},
 		}),
 	}),

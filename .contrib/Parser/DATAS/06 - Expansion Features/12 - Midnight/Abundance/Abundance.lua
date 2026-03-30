@@ -68,76 +68,59 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				ach(61681),	-- Abundance: You Should See Him in a Crown
 			}),
 			n(QUESTS, {
-				q(89507, {	-- Abundant Offerings
-					["qgs"] = {
-						257633,	-- Chel the Chip [Eversong Woods]
-						241928,	-- Chel the Chip [Zul'Aman]
-						257632,	-- Chel the Chip [Voidstorm]
-					},
-					["coords"] = {
-						{ 56.7, 65.9, MAP.MIDNIGHT.EVERSONG_WOODS },
-						{ 31.6, 26.7, MAP.MIDNIGHT.ZULAMAN },
-						{ 38.9, 53.2, MAP.MIDNIGHT.VOIDSTORM },
-					},
-					["isWeekly"] = true,
-					["groups"] = {
-						i(269702, {	-- Overflowing Abundant Satchel
-							["sym"] = { -- [Quel'Thalas Zone Rewards content]
-								{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-								{"where","headerID",ZONE_REWARDS},{"pop"},
-								{"where","headerID",ARMOR},{"finalize"},
-
-								{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-								{"where","headerID",ZONE_REWARDS},{"pop"},
-								{"where","headerID",WEAPONS},
-							},
-						}),
-						i(268488, {	-- Overflowing Abundant Satchel (Pre-Season)
-							["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_X_SEASONSTART },
-							["sym"] = { -- [Quel'Thalas Zone Rewards content]
-								{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-								{"where","headerID",ZONE_REWARDS},{"pop"},
-								{"where","headerID",ARMOR},{"finalize"},
-
-								{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-								{"where","headerID",ZONE_REWARDS},{"pop"},
-								{"where","headerID",WEAPONS},
-							},
-						}),
-						i(263466, {	-- Overflowing Abundant Satchel (Season 1)
-							["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
-							["sym"] = { -- [Quel'Thalas Zone Rewards content]
-								{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-								{"where","headerID",ZONE_REWARDS},{"pop"},
-								{"where","headerID",ARMOR},{"finalize"},
-
-								{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
-								{"where","headerID",ZONE_REWARDS},{"pop"},
-								{"where","headerID",WEAPONS},
-							},
-						}),
-					},
-				}),
-				q(91933, {	-- The Abundant Honor
-					["qg"] = 251601,	-- Dundun <Loa of Abundance>
-					["coord"] = { 31.6, 26.1, MAP.MIDNIGHT.ZULAMAN },
-					["groups"] = { i(252607) },	-- Abundant Beacon (QI!)
-				}),
 				q(91930, {	-- The Abundant Lands
+					--["sourceQuest"] = XXXXX,	-- Finished Midnight Campaign
 					["qg"] = 241924,	-- Chel the Chip
 					["coord"] = { 45.1, 67.6, MAP.MIDNIGHT.ZULAMAN },
 				}),
 				q(91932, {	-- The Abundant Awakening
+					["sourceQuest"] = 91930,	-- The Abundant Lands
 					["qg"] = 241928,	-- Chel the Chip
-					["coord"] = { 31.6, 26.7, MAP.MIDNIGHT.ZULAMAN },
+					["coord"] = { 31.6, 26.3, MAP.MIDNIGHT.ZULAMAN },
+				}),
+				q(91933, {	-- The Abundant Honor
+					["sourceQuest"] = 91932,	-- The Abundant Awakening
+					["qg"] = 251601,	-- Dundun <Loa of Abundance>
+					["coord"] = { 31.6, 26.1, MAP.MIDNIGHT.ZULAMAN },
+					["groups"] = { i(252607) },	-- Abundant Beacon (QI!)
 				}),
 				q(94361, {	-- The Abundant Life
+					["sourceQuest"] = 91933,	-- The Abundant Honor
 					["qgs"] = {
 						241928,	-- Chel the Chip
 						242704,	-- Dundun <Loa of Abundance>
 						251601,	-- Dundun <Loa of Abundance>
 					},
-					["coord"] = { 31.6, 26.7, MAP.MIDNIGHT.ZULAMAN }, -- maybe any zone??
+					["coord"] = { 31.6, 26.1, MAP.MIDNIGHT.ZULAMAN },	-- maybe any zone??
+				}),
+				q(89507, {	-- Abundant Offerings
+					--["sourceQuest"] = 91933,	-- The Abundant Honor
+					["qgs"] = {
+						257633,	-- Chel the Chip [Eversong Woods]
+						241928,	-- Chel the Chip [Zul'Aman]
+						257632,	-- Chel the Chip [Voidstorm]
+						248658,	-- Chel the Chip [Harandar]
+					},
+					["coords"] = {
+						{ 56.7, 65.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+						{ 31.6, 26.3, MAP.MIDNIGHT.ZULAMAN },
+						{ 38.9, 53.2, MAP.MIDNIGHT.VOIDSTORM },
+						{ 66.1, 61.5, MAP.MIDNIGHT.HARANDAR },
+					},
+					["isWeekly"] = true,
+					["groups"] = {
+						i(269702, {	-- Overflowing Abundant Satchel
+							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+						}),
+						i(268488, {	-- Overflowing Abundant Satchel (Pre-Season)
+							["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
+							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+						}),
+						i(263466, {	-- Overflowing Abundant Satchel (Season 1)
+							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+						}),
+					},
 				}),
 				q(94834, {	-- Blessings of Abundance
 					["provider"] = { "i", 265746 },	-- Idol of Abundance (QS!)

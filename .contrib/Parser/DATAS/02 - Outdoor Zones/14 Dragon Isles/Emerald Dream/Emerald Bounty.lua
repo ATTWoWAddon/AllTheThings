@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(210014),	-- Mysterious Ageless Seeds (QI!)
 					},
 				}),
-				q(78170, {	-- Nurturing Ageless Seeds // 14.10 -- quest bugged (no quest item in loot table)
+				q(78170, {	-- Nurturing Ageless Seeds // 14.10	-- quest bugged (no quest item in loot table)
 					["sourceQuests"] = { 77209 },	-- Seed Legacy
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },

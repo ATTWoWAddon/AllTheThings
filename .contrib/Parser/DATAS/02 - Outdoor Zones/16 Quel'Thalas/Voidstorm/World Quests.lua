@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				pvp(q(89347, {	-- Overcoming the Unknown: Devouring Elite
 					["coord"] = { 55.5, 32.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					["groups"] = {
-						--TODO: when I fly into area pop q(94005), -- Stellar Stash
+						--TODO: when I fly into area pop q(94005),	-- Stellar Stash
 					},
 				})),
 				pvp(q(88679, {	-- Encountering the Unexpected
@@ -104,9 +104,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["description"] = "This achievement has a lot of bugs. Keep reporting to blizzard if you dont get it.",
 						}),
 					},
-				}),
-				q(94581, {	-- Stand Your Ground
-					["coord"] = { 26.7, 68.3, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(92746, {	-- The Twist of the Stormfields
 					["coord"] = { 40.3, 59.4, MAP.MIDNIGHT.VOIDSTORM },

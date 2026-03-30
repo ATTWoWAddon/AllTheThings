@@ -21,6 +21,22 @@ struct = function(field, id, t)		-- Construct a commonly formatted object.
 		error("Don't reuse tables within constructed objects! Fix Group: "..field..":"..id.." which has "..t[field].." already assigned!")
 	end
 	t[field] = id;
+	if t._DATAGROUP then
+		local group = DATAGROUP[t._DATAGROUP]
+		group[#group + 1] = t
+		group = IDGROUP[t._DATAGROUP][field]
+		group[#group + 1] = id
+	end
+	if t._DATAGROUPS then
+		local datagroup
+		for i=1,#t._DATAGROUPS do
+			datagroup = t._DATAGROUPS[i]
+			local group = DATAGROUP[datagroup]
+			group[#group + 1] = t
+			group = IDGROUP[datagroup][field]
+			group[#group + 1] = id
+		end
+	end
 	return t;
 end
 
@@ -876,7 +892,7 @@ achievementCategory = achcat;
 artifact = function(id, t)								-- Create an ARTIFACT Object
 	return struct("artifactID", id, t);
 end
-az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object.
+az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object
 	if t or type(rank) == "number" then
 		t = struct("azeriteessenceID", id, t or {});
 		t.rank = rank;
@@ -896,7 +912,7 @@ azewrongItem = function(id, t)							-- Create an Item which is marked as having
 	t.customCollect = { "!HOA" };
 	return t;
 end
-campsite = function(id, t)
+campsite = function(id, t)								-- Create a CAMPSITE Object
 	return struct("campsiteID", id, t);
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
@@ -1115,7 +1131,9 @@ faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
 firstcraft = function(id, t)							-- Create a FIRST CRAFT Object
-	return struct("firstcraftID", id, t);
+	t = struct("firstcraftID", id, t);
+	t.provider = { "s", id };
+	return t;
 end
 fc = firstcraft;
 flightpath = function(id, t)							-- Create a FLIGHT PATH Object
@@ -1405,6 +1423,10 @@ end
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
+professionnode = function(id, t)						-- Create a PROFESSION NODE Object
+	return struct("professionnodeID", id, t);
+end
+pn = professionnode;
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
 	return bubbleDown({ ["pvp"] = true }, t);
 end
@@ -1535,6 +1557,29 @@ r_withQuest = function(recipeID, questID, added, description, maps)
 		t.maps = maps;
 	end
     return t
+end
+-- Creates a simple 'gathered' Item which has a set of object providers
+-- Note: If additional table data is provided it must be the last param
+i_gathered = function(itemID, ...)
+	local t
+	local params = {...}
+	local last = params[#params]
+	if type(last) == "table" then
+		t = i(itemID, last)
+		last = nil
+		params[#params] = nil
+	else
+		t = i(itemID)
+	end
+	local providers = t.providers
+	if not providers then
+		providers = {}
+		t.providers = providers
+	end
+	for i=1,#params do
+		providers[#providers + 1] = { "o", params[i] }
+	end
+	return t
 end
 -- Outdoor Zones Headers with Filters
 battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
@@ -1764,6 +1809,25 @@ end
 ---@return table|nil
 cnUnavailable = function(t)	-- the object only unavailable on CN realm
 	return regionUnavailable("CN", t);
+end
+
+-- Constants containers
+do
+	local AutoTableMetaFunc
+	local function SelfAutoTable(t)
+		return setmetatable(t, { __index = AutoTableMetaFunc })
+	end
+	AutoTableMetaFunc = function(t, key)
+		-- only auto-key string keys
+		if type(key) == "string" then
+			local value = SelfAutoTable({})
+			t[key] = value
+			return value
+		end
+	end
+	DATAGROUP = SelfAutoTable({})
+	IDGROUP = SelfAutoTable({})
+	SYM = SelfAutoTable({})
 end
 
 -- Temporary function to force Items to use the Misc filter so that they do not get turned into Recipes by the Parser

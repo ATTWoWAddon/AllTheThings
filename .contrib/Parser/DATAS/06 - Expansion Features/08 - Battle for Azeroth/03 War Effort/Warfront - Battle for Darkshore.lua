@@ -519,7 +519,7 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 39.79, 32.94, DARKSHORE },
 							["description"] = "Only shows up when Horde Controlled.",
 							["groups"] = {
-								-- i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
+								-- i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!)	-- Possible it's a drop here; will need data
 								i(166435),	-- Kaldorei Nightsaber (MOUNT!)
 							},
 						}),

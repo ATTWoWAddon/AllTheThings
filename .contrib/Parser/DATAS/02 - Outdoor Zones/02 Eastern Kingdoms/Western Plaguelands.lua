@@ -826,7 +826,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(62211, {	-- Shoulderwraps of the Enthralled
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(62210, {  -- Pack Leader's Band
+						i(62210, { 	-- Pack Leader's Band
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131655, {	-- Bracer of Grievance
@@ -1974,7 +1974,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/15 Andorhal Defender slain
 							["provider"] = { "n", 44448 },	-- Andorhal Defender
 						}),
-						i(62209, {  -- Deathguard Band
+						i(62209, { 	-- Deathguard Band
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62208, {	-- Gloves of the Able
@@ -2914,7 +2914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 				}),
 				-- #if BEFORE CATA
-				n(1843, {  -- Foreman Jerris
+				n(1843, { 	-- Foreman Jerris
 					["coords"] = {
 						{ 45.6, 9.4, WESTERN_PLAGUELANDS },
 						{ 47.6, 13.8, WESTERN_PLAGUELANDS },
@@ -2922,7 +2922,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 48.0, 21.6, WESTERN_PLAGUELANDS },
 					},
 				}),
-				n(1844, {  -- Foreman Marcrid
+				n(1844, { 	-- Foreman Marcrid
 					["coords"] = {
 						{ 44.4, 34.4, WESTERN_PLAGUELANDS },
 						{ 48.4, 34.6, WESTERN_PLAGUELANDS },

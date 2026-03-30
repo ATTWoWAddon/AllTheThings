@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(167793),	-- Paint Vial: Overload Orange
 				},
 			}),
-			n(153228, {	-- Gear Checker Cogstar -- possibly 154184?
+			n(153228, {	-- Gear Checker Cogstar	-- possibly 154184?
 				["questID"] = 55852,
 				["isDaily"] = true,
 				["description"] = "Random spawn when you kill |cFFFFD700Upgraded Sentries|r.",

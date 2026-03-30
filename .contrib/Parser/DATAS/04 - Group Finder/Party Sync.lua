@@ -74,7 +74,7 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { ADDED_8_2_5 
 				i(173597),	-- Trailseeker Helm
 				i(173598),	-- Trailseeker Legguards
 				i(173599, {	-- Trailseeker Spaulders
-					["collectible"] = false,	-- Nothing works to collect it. June 20th 2025 -- Goldenshacal
+					["collectible"] = false,	-- Nothing works to collect it. June 20th 2025	-- Goldenshacal
 				}),
 				i(173594),	-- Trailseeker Vest
 			}),
@@ -97,12 +97,12 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { ADDED_8_2_5 
 				i(173617),	-- Mistdancer Cuffs
 				i(173611),	-- Mistdancer Footpads
 				i(173612, {	-- Mistdancer Handguards
-					["collectible"] = false,	-- Nothing works to collect it. Sep 30th 2025 -- Veldryn (Discord)
+					["collectible"] = false,	-- Nothing works to collect it. Sep 30th 2025	-- Veldryn (Discord)
 				}),
 				i(173613),	-- Mistdancer Helm
 				i(173614),	-- Mistdancer Legguards
 				i(173615, {	-- Mistdancer Pauldrons
-					["collectible"] = false,	-- Nothing works to collect it. June 22th 2025 -- Darkal
+					["collectible"] = false,	-- Nothing works to collect it. June 22th 2025	-- Darkal
 				}),
 				i(173610),	-- Mistdancer Vest
 				i(173547),	-- Staff of the Jade Mist

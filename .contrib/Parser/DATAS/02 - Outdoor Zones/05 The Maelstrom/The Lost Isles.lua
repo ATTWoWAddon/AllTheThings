@@ -249,7 +249,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.3, 41.9, THE_LOST_ISLES },
 						["groups"] = { i(52280) },	-- Satchel of Grenades (QI!)
 					}),
-					q(14021, {  -- Miner Troubles
+					q(14021, { 	-- Miner Troubles
 						["sourceQuest"] = 14248,	-- Help Wanted
 						["qg"] = 35769,	-- Foreman Dampwick
 						["coord"] = { 31.2, 79.2, THE_LOST_ISLES },

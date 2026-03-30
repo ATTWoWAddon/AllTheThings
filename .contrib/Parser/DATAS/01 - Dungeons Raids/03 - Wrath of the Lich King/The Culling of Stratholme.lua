@@ -338,6 +338,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(238992, {	-- Mobius Band
 								["timeline"] = { ADDED_11_1_5 },
 							}),
+							i(238990, {	-- Necklace of the Chrono-Lord
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 						},
 					}),
 					n(32273, {	-- Infinite Corruptor

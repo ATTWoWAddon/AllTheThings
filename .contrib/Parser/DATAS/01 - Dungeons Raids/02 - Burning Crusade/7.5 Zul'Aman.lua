@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 								["provider"] = { "n", 24239 },	-- Hex Lord Malacrass
 							}),
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,	-- Badge of Justice x5
+							BADGE_OF_JUSTICE(5),	-- Badge of Justice x5
 							-- #endif
 						},
 					}),
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						-- #if BEFORE CATA
 						["lvl"] = 70,
 						["groups"] = {
-							BADGE_OF_JUSTICE,	-- Badge of Justice x10
+							BADGE_OF_JUSTICE(10),	-- Badge of Justice x10
 						},
 						-- #endif
 					}),
@@ -328,6 +328,3 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 		},
 	})),
 })));
-
--- We don't want to apply a phase ID for this in this raid, that will be done elsewhere.
-BADGE_OF_JUSTICE.timeline = nil;

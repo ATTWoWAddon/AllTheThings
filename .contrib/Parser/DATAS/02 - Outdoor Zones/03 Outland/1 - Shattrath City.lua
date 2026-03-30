@@ -950,7 +950,7 @@ root(ROOTS.Zones, {
 						-- #endif
 						["repeatable"] = true,
 						["groups"] = {
-							i(31800),  -- Outcasts Cache
+							i(31800), 	-- Outcasts Cache
 						},
 					}),
 					q(10415, {	-- More Firewing Signets
@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["repeatable"] = true,
 						["groups"] = {
-							i(31800),  -- Outcasts Cache
+							i(31800), 	-- Outcasts Cache
 						},
 					}),
 					q(10037, {	-- Rather Be Fishin'
@@ -1231,12 +1231,12 @@ root(ROOTS.Zones, {
 							}),
 						},
 					})),
-					q(10917, {  -- The Outcast's Plight
+					q(10917, { 	-- The Outcast's Plight
 						["qg"] = 22429,	-- Vekax
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["groups"] = {
-							i(31800),  -- Outcasts Cache
+							i(31800), 	-- Outcasts Cache
 						},
 					}),
 					q(10883, {	-- The Tempest Key
@@ -1596,7 +1596,7 @@ root(ROOTS.Zones, {
 						i(33871),	-- Recipe: Stormchops (RECIPE!)
 						i(33855),	-- Tarnished Silver Ring
 					}),
-					container(31800, {  -- Outcasts Cache
+					container(31800, { 	-- Outcasts Cache
 						i(28495),	-- Windwalker's Sash
 						i(28496),	-- Talonite's Belt
 						i(28497),	-- Dreadhawk's Girdle

@@ -2236,19 +2236,6 @@ q(93187),	--
 q(93232),	--
 q(93234),	--
 q(93262),	--
-q(93270),	-- BETA:Midnight (90) E
-q(93276),	-- BETA:Midnight (90) E
-q(93279),	-- BETA:Midnight (90) E
-q(93282),	-- BETA:Midnight (90) E
-q(93285),	-- BETA:Midnight (90) E
-q(93290),	-- BETA:Midnight (90) E
-q(93295),	-- BETA:Midnight (90) E
-q(93301),	-- BETA:Midnight (90) E
-q(93304),	-- BETA:Midnight (90) E
-q(93309),	-- BETA:Midnight (90) E
-q(93365),	-- BETA:Midnight (81-89) E
-q(93373),	-- BETA:Midnight (81-89) E
-q(93378),	-- BETA:Midnight (81-89) E
 q(93380),	--
 q(93423),	--
 q(93442),	--
@@ -2446,7 +2433,6 @@ q(94757),	--
 q(94766),	--
 q(94767),	--
 12.0.0.64339
-q(94783),	-- BETA:Midnight (90) E
 q(94794),	--
 q(94810),	--
 q(94827),	--
@@ -2497,9 +2483,6 @@ q(95068),	--
 12.0.0.64975
 q(95146),	--
 q(95215),	-- BETA:A New Direction
-q(95220),	-- BETA:Midnight (20-79) E
-q(95230),	-- BETA:Midnight (80) E
-q(95237),	-- BETA:Midnight (81-89) E
 12.0.1.64889
 q(93581),	-- BETA:Against Overwhelming Odds
 q(93582),	--

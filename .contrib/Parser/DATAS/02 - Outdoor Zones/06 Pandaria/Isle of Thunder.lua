@@ -315,7 +315,7 @@ root(ROOTS.Zones, {
 								q(32572),	-- The Sleepless Legion (A)
 								q(32575),	-- The Zandalari Colossus (A)
 								q(32733),	-- Za'Tual (A)
-								q(32583),	-- Zandalari on the Rise (A) -- not implemented?
+								q(32583),	-- Zandalari on the Rise (A)	-- not implemented?
 							})),
 						},
 					}),
@@ -573,7 +573,7 @@ root(ROOTS.Zones, {
 								}),
 								q(32232),	-- What's Inside Counts
 								q(32729),	-- Za'Tual (H)
-								q(32564),	-- Zandalari on the Rise (H) -- not implemented?
+								q(32564),	-- Zandalari on the Rise (H)	-- not implemented?
 							})),
 						},
 					}),

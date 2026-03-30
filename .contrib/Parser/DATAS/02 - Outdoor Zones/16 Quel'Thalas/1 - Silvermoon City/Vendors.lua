@@ -101,6 +101,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
 			}),
+			n(250982, {	-- Dethelin <Purloined Decor>
+				["coord"] = { 52.5, 47.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { "added 12.0.1.65848" },
+				["groups"] = {
+					i(245330, {	-- Enchanted Blood Elven Candelabra (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3000 } },
+					}),
+					i(245284, {	-- Silvermoon Wooden Chair (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3000 } },
+					}),
+					i(251997, {	-- Sin'dorei Winged Chaise (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
+				},
+			}),
 			n(257939, {	-- Enchanter Erodin <Heirloom Vendor>
 				["coord"] = { 41.8, 66.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = bubbleDownFiltered({
@@ -308,17 +323,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(252916, {	-- Hesta Forlath <Apprentice>
 				["coord"] = { 44.1, 62.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
-					n(DECOR, {
-						i(253612, { ["cost"] = { { "g", 15000000 } } }),	-- "Autumnal Eversong" Unframed Painting (DECOR!)
-						i(253606, { ["cost"] = { { "g", 15000000 } } }),	-- "Brunch and a Book" Unframed Painting (DECOR!)
-						i(253610, { ["cost"] = { { "g", 15000000 } } }),	-- "Isolation" Unframed Painting (DECOR!)
-						i(253613, { ["cost"] = { { "g", 15000000 } } }),	-- "Reclamation" Unframed Painting (DECOR!)
-						i(253609, { ["cost"] = { { "g", 15000000 } } }),	-- "River's Protectors" Unframed Painting (DECOR!)
-						i(253611, { ["cost"] = { { "g", 15000000 } } }),	-- "The Fallen Protectors" Unframed Painting (DECOR!)
-						i(253705, { ["cost"] = { { "g", 15000000 } } }),	-- "The Light Blooms" Unframed Painting (DECOR!)
-						i(253704, { ["cost"] = { { "g", 15000000 } } }),	-- Fresh Canvas (DECOR!)
-						i(244656, { ["cost"] = { { "g", 1500000 } } }),		-- Silvermoon Painter's Cushion (DECOR!)
-					}),
+					n(DECOR, sharedData({
+						["cost"] = { { "g", 15000000 } },	-- 1.500g
+					}, {
+						i(253612),	-- "Autumnal Eversong" Unframed Painting (DECOR!)
+						i(253606),	-- "Brunch and a Book" Unframed Painting (DECOR!)
+						i(253610),	-- "Isolation" Unframed Painting (DECOR!)
+						i(253613),	-- "Reclamation" Unframed Painting (DECOR!)
+						i(253609),	-- "River's Protectors" Unframed Painting (DECOR!)
+						i(253611),	-- "The Fallen Protectors" Unframed Painting (DECOR!)
+						i(253705),	-- "The Light Blooms" Unframed Painting (DECOR!)
+						i(253704),	-- Fresh Canvas (DECOR!)
+						i(244656, {		-- Silvermoon Painter's Cushion (DECOR!)
+							["cost"] = { { "g", 1500000 } },	-- 150g
+						}),
+					})),
 				},
 			}),
 			n(239676, {	-- Vaskarn
@@ -379,19 +398,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- Season 1
 					i(246752, {	-- Celebratory Pack of Hero Dawncrests
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 2 } },
-						["timeline"] = { ADDED_12_0_X_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
 					}),
 					i(263897, {	-- Radiant Jewelbinder
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 6 } },
-						["timeline"] = { ADDED_12_0_X_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
 					}),
 					i(232875, {	-- Spark of Radiance
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 6 } },
-						["timeline"] = { ADDED_12_0_X_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
 					}),
 					i(246751, {	-- Triumphant Satchel of Champion Dawncrests
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 1 } },
-						["timeline"] = { ADDED_12_0_X_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
 					}),
 					-- Season 2
 					-- Season 3

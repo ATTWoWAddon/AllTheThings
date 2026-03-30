@@ -126,24 +126,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				}),
 				n(WEAPONS, {
 					i(141597),	-- Corrupted Argus Gavel
-					i(141609),	-- Corrupted Argus Gavel -- Non Upgrade Version -- Was posted here already - Gold 14.04.2019
+					i(141609),	-- Corrupted Argus Gavel	-- Non Upgrade Version	-- Was posted here already - Gold 14.04.2019
 					i(141595),	-- Eredar Battle Blade
-					i(141607),	-- Eredar Battle Blade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+					i(141607),	-- Eredar Battle Blade	-- Non Upgrade Version	-- Probably similar to other Non Upgrade Items
 					i(141602),	-- Eredar Splitter
-					i(141614),	-- Eredar Splitter -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+					i(141614),	-- Eredar Splitter	-- Non Upgrade Version	-- Probably similar to other Non Upgrade Items
 					i(141599),	-- Fel Barbed Spear
-					i(141611),	-- Fel Barbed Spear -- Non Upgrade Version -- Dropped below a certain level, somebody on discord posted having it around end of 2018, early 2019)
+					i(141611),	-- Fel Barbed Spear	-- Non Upgrade Version	-- Dropped below a certain level, somebody on discord posted having it around end of 2018, early 2019)
 					i(141594),	-- Fel Hacker
-					i(141606),	-- Fel Hacker -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+					i(141606),	-- Fel Hacker	-- Non Upgrade Version	-- Probably similar to other Non Upgrade Items
 					i(141603),	-- Fel Lord's Warmace
-					i(141615),	-- Fel Lord's Warmace -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+					i(141615),	-- Fel Lord's Warmace	-- Non Upgrade Version	-- Probably similar to other Non Upgrade Items
 					i(141604),	-- Glaive of the Fallen
 					i(141601),	-- Hellfury Longbow
-					i(141613),	-- Hellfury Longbow -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+					i(141613),	-- Hellfury Longbow	-- Non Upgrade Version	-- Probably similar to other Non Upgrade Items
 					i(141616),	-- Inquisitor's Wand
-					i(141617),	-- Inquisitor's Wand -- Non Upgrade Version -- Dropped below a certain level - My Priest has it - Gold 14.04.2019)
+					i(141617),	-- Inquisitor's Wand	-- Non Upgrade Version	-- Dropped below a certain level - My Priest has it - Gold 14.04.2019)
 					i(141600),	-- Wyrmtongue Spiteblade
-					i(141612),	-- Wyrmtongue Spiteblade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+					i(141612),	-- Wyrmtongue Spiteblade	-- Non Upgrade Version	-- Probably similar to other Non Upgrade Items
 				}),
 			}),
 			i(139049, {	-- Large Legion Chest

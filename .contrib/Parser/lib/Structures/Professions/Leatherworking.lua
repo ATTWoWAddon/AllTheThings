@@ -258,10 +258,10 @@ TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] 
 		-- #endif
 		r(44970, {["timeline"] = {ADDED_2_3_0}}),	-- Heavy Knothide Armor Kit
 		r(32455),	-- Heavy Knothide Leather
-		r(44343, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}}),	-- Knothide Ammo Pouch
+		applyclassicphase(TBC_PHASE_FOUR, r(44343, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Knothide Ammo Pouch
 		r(32456),	-- Knothide Armor Kit
 		r(32454),	-- Knothide Leather
-		r(44344, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}}),	-- Knothide Quiver
+		applyclassicphase(TBC_PHASE_FOUR, r(44344, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Knothide Quiver
 		r(45100, {["timeline"] = {ADDED_2_3_0}}),	-- Leatherworker's Satchel
 		r(163230, {["timeline"] = {ADDED_6_0_2}}),	-- Nether Dragonscales
 		r(163225, {["timeline"] = {ADDED_6_0_2}}),	-- Thick Clefthoof Leather

@@ -5023,7 +5023,7 @@ i(5442,{q=1}),
 s(158372,6220,{b=1,f=20,lvl=24,q=3}),
 s(158417,6324,{b=1,f=4,lvl=24,q=3}),
 s(158446,6392,{b=1,f=4,lvl=24,q=3})}})}}),
-inst(236,{lore="Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge -- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",lvl=48,mapID=317,maps={318},savedInstanceID=329,["zone-text-areaID"]=2017,g={
+inst(236,{lore="Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge\t-- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",lvl=48,mapID=317,maps={318},savedInstanceID=329,["zone-text-areaID"]=2017,g={
 h(-12,{
 ach(646,{
 crit(550,{achID=646,id=1,providers={{"n",10813}}})})}),
@@ -5293,7 +5293,7 @@ s(160956,13374,{b=1,f=4,lvl=55,q=3}),
 s(163052,16737,{f=7,lvl=54,q=3,rwp=40003}),
 i(13373,{b=1,f=52,lvl=55,q=3}),
 i(13515,{b=1,f=53,lvl=55,q=3})}}),
-e(456,{npcID=10440,g={
+e(456,{npcID=10440,rwp=40003,g={
 i(13251,{q=1}),
 ach(729,{providers={{"i",13335}}}),
 mnt(17481,{b=1,itemID=13335,lvl=60,q=3}),
@@ -5310,8 +5310,6 @@ s(164932,22409,{b=1,f=5,lvl=58,q=3,u=15}),
 s(160943,13344,{b=1,f=6,lvl=58,q=3}),
 s(164933,22410,{b=1,f=6,lvl=58,q=3,u=15}),
 i(13345,{b=1,f=52,lvl=58,q=3}),
-crit(3270,{achID=646,id=1})}}),
-n(10440,{rwp=40003,g={
 s(162993,16678,{b=1,f=6,lvl=56,q=3}),
 s(163009,16694,{b=1,f=4,lvl=56,q=3}),
 s(163014,16699,{b=1,f=4,lvl=56,q=3}),
@@ -6073,29 +6071,5 @@ i(10661,{q=1})}),
 e(483,{cost={{"i",9240,1}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
 i(8707,{q=1}),
 s(159379,9467,{b=1,f=20,lvl=42,q=2}),
-s(159380,9469,{b=1,f=6,lvl=43,q=3})}})}}),
-h(-723,{awp=10400,lvl=60,g={
-n(14464,{coords={
-[1447]={{72.6,20},{77,24.2},{77.2,16.6},{80,24.2},{82.6,21}}},description="This is only available during an Elemental Invasion.",rwp=40003,u=12,g={
-s(163624,18673,{f=8,lvl=54,q=3,u=12}),
-i(18674,{f=52,lvl=54,q=2,u=12}),
-i(19268,{q=3,u=13})}}),
-n(14461,{coords={
-[1449]={{44.6,46},{45.4,54.8},{48.2,41.2},{51.6,57.6},{53.2,41.8},{55.6,57.4},{56.6,42.8},{56.6,48.2}}},description="This is only available during an Elemental Invasion.",rwp=40003,u=12,g={
-s(163622,18671,{f=23,lvl=54,q=3,u=12}),
-s(163623,18672,{f=1,lvl=54,q=2,u=12}),
-i(19268,{q=3,u=13})}}),
-n(14457,{coords={
-[1452]={{54.6,42.6}}},description="This is only available during an Elemental Invasion.",rwp=40003,u=12,g={
-r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=10658,u=12}),
-r(8782,{itemID=7091,learnedAt=150,q=2,requireSkill=197,u=12}),
-i(18679,{f=52,lvl=56,q=2,u=12}),
-i(18678,{f=51,lvl=56,q=3,u=12}),
-i(19268,{q=3,u=13})}}),
-n(14454,{coords={
-[1451]={{17.6,27},{26.6,29.6},{31,23.6},{32.2,17.2}}},description="This is only available during an Elemental Invasion.",rwp=40003,u=12,g={
-s(163625,18676,{f=6,lvl=56,q=3,u=12}),
-s(163626,18677,{f=3,lvl=56,q=2,u=12}),
-r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=10658,u=12}),
-i(19268,{q=3,u=13})}})}})})}});
+s(159380,9469,{b=1,f=6,lvl=43,q=3})}})}})})}});
 end);

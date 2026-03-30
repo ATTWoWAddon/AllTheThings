@@ -100,24 +100,24 @@ root(ROOTS.Zones, m(PANDARIA, {
 					["coord"] = { 63.0, 26.8, SHRINE_OF_SEVEN_STARS },
 					["groups"] = {
 						i(265322, {	-- Cache of the Azure Challenger
-							i(265329), -- Azure Bracers of the Golden King
-							i(265321), -- Azure Chestplate of the Golden King
-							i(265326), -- Azure Crown of the Golden King
-							i(265323), -- Azure Girdle of the Golden King
-							i(265324), -- Azure Greatboots of the Golden King
-							i(265327), -- Azure Greaves of the Golden King
-							i(265328), -- Azure Mantle of the Golden King
-							i(265325), -- Azure Reach of the Golden King
+							i(265329),	-- Azure Bracers of the Golden King
+							i(265321),	-- Azure Chestplate of the Golden King
+							i(265326),	-- Azure Crown of the Golden King
+							i(265323),	-- Azure Girdle of the Golden King
+							i(265324),	-- Azure Greatboots of the Golden King
+							i(265327),	-- Azure Greaves of the Golden King
+							i(265328),	-- Azure Mantle of the Golden King
+							i(265325),	-- Azure Reach of the Golden King
 						}),
-						i(265316, {   -- Cache of the Golden Challenger
-							i(265313), -- Golden Chestplate of the Holy Warrior
-							i(265315), -- Golden Greathelm of the Holy Warrior
-							i(265314), -- Golden Gauntlets of the Holy Warrior
-							i(265312), -- Golden Greatboots of the Holy Warrior
-							i(265317), -- Golden Legplates of the Holy Warrior
-							i(265318), -- Golden Girdle of the Holy Warrior
-							i(265319), -- Golden Wristguards of the Holy Warrior
-							i(265320), -- Golden Shoulderplate of the Holy Warrior
+						i(265316, {  	-- Cache of the Golden Challenger
+							i(265313),	-- Golden Chestplate of the Holy Warrior
+							i(265315),	-- Golden Greathelm of the Holy Warrior
+							i(265314),	-- Golden Gauntlets of the Holy Warrior
+							i(265312),	-- Golden Greatboots of the Holy Warrior
+							i(265317),	-- Golden Legplates of the Holy Warrior
+							i(265318),	-- Golden Girdle of the Holy Warrior
+							i(265319),	-- Golden Wristguards of the Holy Warrior
+							i(265320),	-- Golden Shoulderplate of the Holy Warrior
 						}),
 
 					},

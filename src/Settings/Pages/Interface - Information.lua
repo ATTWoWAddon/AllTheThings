@@ -291,6 +291,18 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		return
 	end
 
+	-- Completed By for ProfessionNodes
+	local id = reference.professionnodeID;
+	if id then
+		for _,character in pairs(ATTCharacterData) do
+			if character.ProfessionNodes and character.ProfessionNodes[id] then
+				tinsert(knownBy, character);
+			end
+		end
+		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+		return
+	end
+
 	-- Pre-WOD Known By types
 	if app.GameBuildVersion < 60000 then
 		id = reference.achievementID;
@@ -974,6 +986,7 @@ local InformationTypes = {
 	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
 	CreateInformationType("campsiteID", { text = L.CAMPSITE_ID, priority = 7 }),
 	CreateInformationType("decorID", { text = L.DECOR_ID, priority = 7 }),
+	CreateInformationType("professionnodeID", { text = L.PROFESSION_NODE_ID, priority = 7 }),
 	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayInExternalTooltips = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 

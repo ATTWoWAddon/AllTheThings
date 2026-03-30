@@ -2187,7 +2187,6 @@ i(246919, 1244259);	-- Cinder-seared Elekk
 i(247794, 1245361);	-- Emberwing Sky Guide
 i(247722, 1245202);	-- The Headless Horseman's Burning Charger
 i(247720, 1245197);	-- The Headless Horseman's Chilling Charger
-i(246917, 1244247);	-- Thunder-ridged Elekk
 
 ------------------
 -- PATCH 11.2.5 --
@@ -2373,6 +2372,7 @@ i(262500, 1268924);	-- Silvermoon's Arcane Defender
 i(262914, 1263635);	-- Spectral Hawkstrider
 i(235658, 1218013);	-- Spring Butterfly
 i(260887, 1266980);	-- Tenebrous Harrower
+i(246917, 1244247);	-- Thunder-ridged Elekk
 i(257144, 1261296);	-- Umbral Dragonhawk
 i(256423, 1260354);	-- Untainted Grove Crawler
 i(252012, 1253927);	-- Vibrant Petalwing

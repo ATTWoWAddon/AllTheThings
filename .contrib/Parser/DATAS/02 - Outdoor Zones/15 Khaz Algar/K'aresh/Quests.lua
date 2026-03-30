@@ -2583,6 +2583,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["timeline"] = { ADDED_12_0_0 },
 				["groups"] = {
 					q(94933, {	-- Lessons in the Void
+						["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered (guessed)
 						["qgs"] = {
 							259942,	-- Messenger Aelor @ Stormwind City
 							259941,	-- Messenger Aelor @ Orgrimmar

@@ -1400,7 +1400,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(63193, {	-- Theldurin's Fist
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63192, {  -- Tosselwrench's Shrinker
+						i(63192, { 	-- Tosselwrench's Shrinker
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63191, {	-- Martek's Knife

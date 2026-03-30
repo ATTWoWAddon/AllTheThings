@@ -568,7 +568,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.LFR),
 							["groups"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
-								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
+								i(202546),	-- Underlight Conjurer's Cape	-- TODO: Only One sourceID?!
 								i(202548),	-- Underlight Conjurer's Charmbelt
 								i(202553),	-- Underlight Conjurer's Treads
 							},
@@ -690,7 +690,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.NORMAL),
 							["groups"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
-								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
+								i(202546),	-- Underlight Conjurer's Cape	-- TODO: Only One sourceID?!
 								i(202548),	-- Underlight Conjurer's Charmbelt
 								i(202553),	-- Underlight Conjurer's Treads
 							},
@@ -812,7 +812,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.HEROIC),
 							["groups"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
-								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
+								i(202546),	-- Underlight Conjurer's Cape	-- TODO: Only One sourceID?!
 								i(202548),	-- Underlight Conjurer's Charmbelt
 								i(202553),	-- Underlight Conjurer's Treads
 							},
@@ -934,7 +934,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.MYTHIC),
 							["groups"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
-								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
+								i(202546),	-- Underlight Conjurer's Cape	-- TODO: Only One sourceID?!
 								i(202548),	-- Underlight Conjurer's Charmbelt
 								i(202553),	-- Underlight Conjurer's Treads
 							},

@@ -19,7 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(235710, {	-- Noggenfogger Select FRESH
 						["races"] = { GOBLIN },	-- TODO: I don't have any goblin
 					}),
-					i(235704),	-- Noggenfogger Select UP
+					i(235704, {	-- Noggenfogger Select UP
+						i(235713),	-- Weird Sand
+					}),
 				},
 			}),
 			n(226994, {	-- Blair Bass <"Gold" Fish Exchange>

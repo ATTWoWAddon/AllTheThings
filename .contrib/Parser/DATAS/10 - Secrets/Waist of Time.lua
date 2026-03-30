@@ -12,7 +12,7 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDownSelf({ ["timeline"] =
 			["sourceQuests"] = { 52828 },
 			["description"] = "Souls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!",
 		}),
-		o(294096, {	-- Lit Orb  -- Summoned Baal' at this location and 52829 triggered, possibly his emote text  "Souls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!"
+		o(294096, {	-- Lit Orb 	-- Summoned Baal' at this location and 52829 triggered, possibly his emote text  "Souls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!"
 			["model"] = 1046021,
 			["questID"] = 52830,	-- Orb click
 			["sourceQuests"] = { 52829 },

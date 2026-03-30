@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25857,	-- Hunting Horrorjaw
 						26189,	-- The Angerfang Menace
 						25868,	-- Yorla Darksnare
-						--[[	TODO: possibly required -- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
+						--[[	TODO: possibly required	-- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
 						25855,	-- Gizmos and Gadgets
 						25850,	-- Strike the Earth!
 						25853,	-- Tooling Around

@@ -113,6 +113,8 @@ qo(2,{coords={
 [1439]={{31.6,44.8}}},crs={6133},providers={{"i",6809}}})}}),
 q(2519,{coords={
 [1457]={{29,45.4}}},isBreadcrumb=1,lvl=5,nextQuests={2518},qgs={7316},r=2,rwp=40003}),
+q(9432,{awp=20001,coords={
+[1457]={{38.6,81}}},lvl=18,qgs={17105},races={11},rwp=40003}),
 q(730,{coords={
 [1457]={{31.2,84.2}}},isBreadcrumb=1,lvl=14,nextQuests={729},qgs={2912},r=2,rwp=40003}),
 q(3764,{coords={
@@ -5139,8 +5141,11 @@ s(124519,11873,{b=1,f=3,q=2}),
 s(124520,11874,{b=1,f=5,q=2})}}),
 q(4005,{coords={
 [1448]={{51.2,81.6}}},lvl=47,maps={1446,1449},qgs={9116},rwp=40003,sourceQuests={4084},g={
-qo(1,{coords={
-[1446]={{70,49}}},crs={9453},providers={{"i",11169},{"i",11522},{"i",11617}}})}}),
+qo(1,{providers={{"i",11522}}}),
+i(11617,{q=1,g={
+i(11169,{q=1})}}),
+s(124321,11522,{coords={
+[1446]={{70,49}}},crs={9453},f=1,providers={{"i",11169}},q=1})}}),
 q(5159,{coords={
 [1413]={{65.8,43.8}}},lvl=48,providers={{"i",12906}},qgs={5901},rwp=40003,sourceQuests={5158}}),
 q(4101,{coords={
@@ -5913,14 +5918,14 @@ q(6001,{c={11},coords={
 [1457]={{35.2,8}}},lvl=10,maps={1439},qgs={4217},r=2,rwp=40003,sourceQuests={5931},g={
 qo(1,{coords={
 [1439]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnown(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(6002,{c={11},coords={
 [1456]={{76.4,27.6}}},lvl=10,maps={1413},qgs={3033},r=1,rwp=40003,sourceQuests={5932},g={
 qo(1,{coords={
 [1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138}}}),
-r(5487,{OnUpdate=function(t)if _.IsSpellKnown(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
+r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2;ATTAccountWideData.Spells[5487]=1;end	t.collected=2;end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(5929,{c={11},coords={
@@ -9464,20 +9469,22 @@ n(6581,{coords={
 [1449]={{62.4,66}}}}),
 n(6585,{coords={
 [1449]={{68.5,12.7}}}})}),
+h(-56,{
+i(11315,{b=1,providers={{"o",164958}},q=1}),
+i(11184,{providers={{"o",164658},{"o",164778}},q=1}),
+i(11185,{providers={{"o",164659},{"o",164779}},q=1}),
+i(11186,{providers={{"o",164660},{"o",164780}},q=1}),
+i(11018,{providers={{"o",157936}},q=1,rwp=40003}),
+i(11188,{providers={{"o",164661},{"o",164781}},q=1})}),
 h(-58,{
 n(12959,{coords={
 [1449]={{43.2,7.8}}},g={
 r(19084,{isLimited=1,itemID=15758,learnedAt=290,q=1,requireSkill=165})}})}),
 h(-63,{
-i(11315,{b=1,providers={{"o",164958}},q=1}),
-i(11184,{providers={{"o",164658},{"o",164778}},q=1}),
-i(11185,{providers={{"o",164659},{"o",164779}},q=1}),
+i(11116,{b=1,lvl=48,q=2,rwp=40003}),
 i(12809,{crs={6560},q=2}),
 i(20768,{crs={6557,6559,9477},q=1,sym={{"select","itemID",20769}}}),
-r(19097,{crs={6556,6557,6559,9477},itemID=15772,learnedAt=300,q=3,requireSkill=165}),
-i(11186,{providers={{"o",164660},{"o",164780}},q=1}),
-i(11018,{providers={{"o",157936}},q=1,rwp=40003}),
-i(11188,{providers={{"o",164661},{"o",164781}},q=1})})}}),
+r(19097,{crs={6556,6557,6559,9477},itemID=15772,learnedAt=300,q=3,requireSkill=165})})}}),
 m(1452,{lore="Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",g={
 h(-12,{
 ach(857,{
@@ -12187,8 +12194,7 @@ q(8233,_.ResolveQuestData({aqd=
 {coords={
 [1454]={{44,54.6}},
 [1458]={{85,75.2}}},qgs={3328,4583}},isBreadcrumb=1,lvl=50,nextQuests={8234},rwp=40003,u=14})),
-q(522,{coords={
-[1424]={{50.8,58.8}}},crs={2434},lvl=30,providers={{"i",3668}},r=2,rwp=40003}),
+q(522,{lvl=30,providers={{"i",3668}},r=2,rwp=40003}),
 q(523,{coords={
 [1424]={{48.2,59.4}}},lvl=30,qgs={2276},r=2,rwp=40003,sourceQuests={522},g={
 qo(1,{coords={
@@ -16286,6 +16292,8 @@ r(9273,{isLimited=1,itemID=7561,learnedAt=165,q=1,requireSkill=202}),
 s(119957,4837,{f=1,isLimited=1,lvl=25,q=2}),
 s(119947,4827,{f=4,isLimited=1,lvl=23,q=2})}})}),
 h(-63,{
+i(3668,{b=1,coords={
+[1424]={{50.8,58.8}}},crs={2434},description="The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",lvl=30,q=1,r=2,rwp=40003}),
 s(118547,3204,{awp=100107,coords={
 [1424]={{57.8,75.8},{58.8,74.6}}},crs={2372},f=5,lvl=21,q=2,rwp=40003}),
 s(118664,3336,{awp=100107,coords={
@@ -17558,7 +17566,8 @@ n(947,{awp=100107,coords={
 s(119604,4446,{f=20,lvl=21,q=3,rwp=40003}),
 s(119605,4447,{f=3,lvl=21,q=2,rwp=40003})}}),
 n(14269,{coords={
-[1433]={{28.2,58.2},{46.2,59.6},{50.2,61.4},{63.6,62.6},{71.6,64.6},{73.2,71.2},{75.8,67.4}}}}),
+[1433]={{28.2,58.2},{46.2,59.6},{50.2,61.4},{63.6,62.6},{71.6,64.6},{73.2,71.2},{75.8,67.4}}},g={
+r(8782,{itemID=7091,learnedAt=150,q=2,requireSkill=197})}}),
 n(14272,{coords={
 [1433]={{36.4,66.8},{43.4,30},{49.2,33},{54.6,37.2}}}}),
 n(14270,{coords={
@@ -17813,7 +17822,8 @@ qo(1,{crs={5850,5852,5855,8281},providers={{"i",10509}}}),
 qo(2,{crs={5853,5854,5855},providers={{"i",10511}}})}}),
 q(3181,{coords={
 [1427]={{73,77.2}}},crs={5833},lvl=40,maps={1432},providers={{"i",10000},{"i",10005}},r=2,rwp=40003}),
-q(4451,{crs={5840,5844,5846,8504,8566,15692},lvl=43,providers={{"i",11818},{"o",173265}},rwp=40003}),
+q(4451,{coords={
+[1427]={{65.6,62.5}}},lvl=43,providers={{"i",11818},{"o",173265}},rwp=40003}),
 q(3453,{coords={
 [1427]={{39.1,39}}},lvl=40,qgs={8479},rwp=40003,sourceQuests={3452}}),
 q(3454,{coords={
@@ -17864,6 +17874,7 @@ n(14624,{coords={
 [1427]={{38.8,28.5}}}})}),
 h(-63,{
 i(18944,{crs={9318},q=1}),
+i(11818,{crs={5840,5844,5846,8504,8566,15692},lvl=43,q=1,rwp=40003}),
 r(18412,{awp=80200,coords={
 [1427]={{19.4,36.6},{25.4,25.4}}},crs={5861},itemID=14476,learnedAt=270,q=2,requireSkill=197,rwp=40003}),
 r(18408,{awp=80200,coords={
@@ -19905,16 +19916,14 @@ q(5407,{coords={
 i(12844,{b=1,factionID=529,q=2,repeatable=1})}}),
 q(5142,{coords={
 [1422]={{49.2,78.4}}},lvl=50,maps={1423},qgs={10927},rwp=40003}),
-q(5060,{coords={
-[1422]={{47.4,49.7}}},lvl=52,providers={{"o",175924}},rwp=40003,g={
 q(5059,{coords={
-[1422]={{48.2,49.6}}},lvl=52,providers={{"i",12738},{"o",175925}},repeatable=1,g={
-qo(1,{coords={
-[1422]={{48.2,49.6}}},crs={10836},providers={{"i",12739}},questID=5060})}}),
+[1422]={{48.2,49.6}}},lvl=52,providers={{"i",12738},{"o",175925}},repeatable=1,rwp=40003,g={
+i(12739,{b=1,coords={
+[1422]={{48.2,49.6}}},crs={10836},q=1})}}),
+q(5060,{coords={
+[1422]={{47.4,49.7}}},lvl=52,providers={{"i",12739},{"o",175924}},rwp=40003,g={
 s(125723,13474,{b=1,f=31,q=2}),
-i(13475,{b=1,f=52,q=2}),
-i(12738,{b=1,coords={
-[1422]={{48,49.8}}},crs={10816},q=1})}}),
+i(13475,{b=1,f=52,q=2})}}),
 q(5507,{coords={
 [1422]={{42.8,83.8}}},cost={{"i",12844,10}},lvl=55,minReputation={529,21000},qgs={10857},r=2,rwp=40003}),
 q(5504,{coords={
@@ -20035,8 +20044,7 @@ q(9446,{awp=20001,coords={
 [1422]={{42.9,84.5}}},lvl=55,qgs={17238},r=2,rwp=40003,sourceQuests={9474}}),
 q(5051,{coords={
 [1422]={{38.4,54}}},lvl=50,qgs={10778},rwp=40003,sourceQuests={5050},g={
-qo(1,{coords={
-[1422]={{38.6,56.2}}},crs={10801},providers={{"i",12721},{"i",12722},{"i",12723}}}),
+qo(1,{cost={{"i",12722,1},{"i",12721,1}},providers={{"i",12723}}}),
 i(13473,{b=1,f=51,q=2})}}),
 q(6004,{coords={
 [1422]={{52,28}}},lvl=50,qgs={11610},rwp=40003,g={
@@ -20085,7 +20093,7 @@ r(16732,{b=1,itemID=12719,learnedAt=300,q=2,requireSkill=164})}}),
 n(1851,{coords={
 [1422]={{61.8,37.6},{64.2,33.4},{65,38.6},{66.6,42.6}}}})}),
 h(-56,{
-i(176213,{coords={
+o(176213,{coords={
 [1422]={{35.9,57.5},{36.5,53.6},{38.2,56.3},{39.7,69.6},{40.6,73.1},{40.8,57.5},{41.5,62.1},{42.2,54.8},{42.8,64.2},{43.3,68.3},{43.7,70.5},{44.2,65},{44.5,71.7},{44.6,53.5},{45.9,51.1},{45.9,71.4},{46.8,34.5},{47,67.1},{47,69.9},{47.6,70},{47.9,53.1},{49.4,68.1},{49.8,33.3},{52.3,55},{52.3,66.3},{53.3,66.2},{53.5,63.5},{54.9,27.1},{55.3,59.6},{56.7,34.7},{57.8,66.6},{62,58.5},{63.2,59.2},{63.6,75.5},{64,48.7},{64.1,57.9},{64.9,74.5},{65.8,76.8},{66.5,42.2},{67,53.8},{67.8,84.6},{68,44.7},{68.3,81.6},{68.7,49.2},{68.7,79.1},{68.9,73.8},{69.5,78.6}}},description="This item can be found sporatically on the ground in the Plaguelands.",rwp=40003,g={
 i(12938,{b=1,q=1})}})}),
 h(-58,{
@@ -20113,7 +20121,11 @@ r(17580,{b=1,itemID=13501,learnedAt=295,q=2,requireSkill=171}),
 r(17562,{b=1,itemID=13485,learnedAt=275,q=2,requireSkill=171})}})}),
 h(-63,{
 i(22526,{q=1,rwp=40003,u=16}),
+i(12738,{b=1,coords={
+[1422]={{48,49.8}}},crs={10816},q=1,rwp=40003}),
 i(13354,{b=1,cost={{"i",13370,1}},description="These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",q=1,rwp=40003}),
+i(12722,{coords={
+[1422]={{38.6,56.2}}},crs={10801},q=1,rwp=40003}),
 r(20034,{crs={4494},itemID=16252,learnedAt=300,q=2,requireSkill=333}),
 i(12841,{b=1,description="Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
 i(12840,{b=1,description="Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
@@ -23553,10 +23565,10 @@ r(44770,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
 r(351766,{awp=20001,learnedAt=340,requireSkill=165,rwp=30002,u=20}),
 r(44970,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
 r(32455,{learnedAt=325,requireSkill=165,u=17}),
-r(44343,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=17}),
+r(44343,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=20}),
 r(32456,{learnedAt=300,requireSkill=165,u=17}),
 r(32454,{learnedAt=300,requireSkill=165,u=17}),
-r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=17}),
+r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=20}),
 r(45100,{awp=20300,learnedAt=300,requireSkill=165,u=17})}})}}),
 n(18754,{coords={
 [1944]={{56.2,38.6}}},r=1,u=17,g={
@@ -23584,10 +23596,10 @@ r(44770,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
 r(351766,{awp=20001,learnedAt=340,requireSkill=165,rwp=30002,u=20}),
 r(44970,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
 r(32455,{learnedAt=325,requireSkill=165,u=17}),
-r(44343,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=17}),
+r(44343,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=20}),
 r(32456,{learnedAt=300,requireSkill=165,u=17}),
 r(32454,{learnedAt=300,requireSkill=165,u=17}),
-r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=17}),
+r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=20}),
 r(45100,{awp=20300,learnedAt=300,requireSkill=165,u=17})}})}})}}),
 prof(186,{u=17,g={
 n(18779,{coords={
@@ -25692,7 +25704,7 @@ q(10249,{coords={
 s(140365,30019,{b=1,f=6,q=3,u=17}),
 s(140360,30014,{b=1,f=5,q=3,u=17}),
 s(140362,30016,{b=1,f=7,q=3,u=17}),
-toy(30847,{b=1,q=2,rwp=70003,u=17})}}),
+toy(30847,{b=1,q=2,rwp=70003,sourceID=141193,u=17})}}),
 q(10182,{coords={
 [1953]={{60.6,87.6}}},crs={19543},providers={{"i",29233}},u=17,g={
 qo(1,{providers={{"i",28351},{"o",183269}},u=17})}}),

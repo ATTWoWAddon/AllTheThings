@@ -4,7 +4,7 @@
 
 ELEMENTAL_INVASIONS = createHeader({
 	readable = "Elemental Invasions",
-	icon = 538566,
+	icon = 135793,
 	text = {
 		en = "Elemental Invasions",
 		-- TODO: de = "",
@@ -26,10 +26,25 @@ ELEMENTAL_INVASIONS = createHeader({
 	},
 });
 
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	n(ELEMENTAL_INVASIONS, {
+root(ROOTS.WorldEvents, {
+	applyclassicphase(PHASE_TWO, n(ELEMENTAL_INVASIONS, {
+		["timeline"] = { ADDED_1_4_0, REMOVED_4_0_3 },
 		["lvl"] = 60,
-		["groups"] = applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_1_4_0, REMOVED_4_0_3 } }, {
+		["groups"] = {
+			-- #if BEFORE 4.0.3
+			applyclassicphase(PHASE_THREE_DMF_CARDS, n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					14464,	-- Avalanchion
+					14461,	-- Baron Charr
+					14457,	-- Princess Tempestria
+					14454,	-- The Windreaver
+				},
+				["timeline"] = { ADDED_1_6_0, REMOVED_4_0_3 },
+				["groups"] = {
+					i(19268),	-- Ace of Elementals
+				},
+			})),
+			-- #endif
 			n(14464, {	-- Avalanchion
 				["description"] = "This is only available during an Elemental Invasion.",
 				["coords"] = {
@@ -40,13 +55,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{ 80.0, 24.2, AZSHARA },
 				},
 				["groups"] = {
-					i(18673, {	-- Avalanchion's Stony Hide
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(18674, {	-- Hardened Stone Band
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
+					i(18673),	-- Avalanchion's Stony Hide
+					i(18674),	-- Hardened Stone Band
 				},
 			}),
 			n(14461, {	-- Baron Charr
@@ -62,36 +72,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{ 45.4, 54.8, UNGORO_CRATER },
 				},
 				["groups"] = {
-					i(18671, {	-- Baron Charr's Sceptre
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(18672, {	-- Elemental Ember
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					-- #if BEFORE 4.0.3
-					applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
-					-- #endif
+					i(18671),	-- Baron Charr's Sceptre
+					i(18672),	-- Elemental Ember
 				},
 			}),
 			n(14457, {	-- Princess Tempestria
 				["description"] = "This is only available during an Elemental Invasion.",
 				["coord"] = { 54.6, 42.6, WINTERSPRING },
 				["groups"] = {
-					i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(21548),	-- Pattern: Stormshroud Gloves (RECIPE!)
 					-- #if BEFORE 4.0.3
 					i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
 					-- #endif
-					i(18679, {	-- Frigid Ring
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(18678, {	-- Tempestria's Frozen Necklace
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					-- #if BEFORE 4.0.3
-					applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
-					-- #endif
+					i(18678),	-- Tempestria's Frozen Necklace
+					i(18679),	-- Frigid Ring
 				},
 			}),
 			n(14454, {	-- The Windreaver
@@ -103,18 +97,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{ 32.2, 17.2, SILITHUS },
 				},
 				["groups"] = {
-					i(18676, {	-- Sash of the Windreaver
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(18677, {	-- Zephyr Cloak
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
+					i(21548),	-- Pattern: Stormshroud Gloves (RECIPE!)
+					i(18676), 	-- Sash of the Windreaver
+					i(18677),	-- Zephyr Cloak
 				},
 			}),
-		})),
-	}),
-}));
+		},
+	})),
+});

@@ -128,6 +128,7 @@ root(ROOTS.Zones, {
 							["groups"] = {
 								o(244446, {	-- Actually Safe Treasure Chest
 									["questID"] = 39766,
+									["isDaily"] = true,
 								}),
 							},
 						}),

@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25857,	-- Hunting Horrorjaw
 						26189,	-- The Angerfang Menace
 						25868,	-- Yorla Darksnare
-						--[[	TODO: possibly required -- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
+						--[[	TODO: possibly required	-- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
 						25855,	-- Gizmos and Gadgets
 						25850,	-- Strike the Earth!
 						25853,	-- Tooling Around
@@ -1674,7 +1674,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_1 },
 				}),
-				n(1398, {  -- Boss Galgosh <Stonesplinter Chieftain>
+				n(1398, { 	-- Boss Galgosh <Stonesplinter Chieftain>
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 69.6, 60.0, LOCH_MODAN },
@@ -1698,7 +1698,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(14267, {  -- Emogg the Crusher
+				n(14267, { 	-- Emogg the Crusher
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.4, 29.0, LOCH_MODAN },
@@ -1724,7 +1724,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if AFTER 4.0.3
-				n(2476, {  -- Gosh-Haldir [CATA+] / Large Loch Crocolisk
+				n(2476, { 	-- Gosh-Haldir [CATA+] / Large Loch Crocolisk
 					["coords"] = {
 						{ 56.4, 51.8, LOCH_MODAN },
 						{ 55.6, 55.8, LOCH_MODAN },
@@ -1760,7 +1760,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.6, 15.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				n(1425, {  -- Grizlak / Kubb [CATA+]
+				n(1425, { 	-- Grizlak / Kubb [CATA+]
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 26.0, 27.0, LOCH_MODAN },
@@ -1795,7 +1795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				-- #if BEFORE 4.0.3
-				n(2476, {  -- Large Loch Crocolisk / Gosh-Haldir [CATA+]
+				n(2476, { 	-- Large Loch Crocolisk / Gosh-Haldir [CATA+]
 					["coords"] = {
 						{ 58.8, 28.2, LOCH_MODAN },
 						{ 59.8, 31.8, LOCH_MODAN },
@@ -1812,7 +1812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				n(14268, {  -- Lord Condar
+				n(14268, { 	-- Lord Condar
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 67.4, 76.0, LOCH_MODAN },
@@ -1828,7 +1828,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				n(1399, {  -- Magosh <Stonesplinter Tribal Shaman>
+				n(1399, { 	-- Magosh <Stonesplinter Tribal Shaman>
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 31.0, 75.6, LOCH_MODAN },
@@ -1876,7 +1876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.6, 44.8, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				n(14266, {  -- Shanda the Spinner
+				n(14266, { 	-- Shanda the Spinner
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 61.6, 74.6, LOCH_MODAN },

@@ -1289,8 +1289,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		n(QUESTS, {
 			q(93691, {	-- Blacksmithing Services Requested
 				["sourceQuests"] = { 93726 },	-- Crafting Orders: Blacksmithing
-				["provider"] = { "n", 241450 },	-- Bemarrin <Blacksmithing Trainer>
-				["coord"] = { 43.7, 51.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["qgs"] = {
+					241450,	-- Bemarrin <Blacksmithing Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 43.7, 51.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 45.1, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
 				["isWeekly"] = true,
 				["groups"] = {
 					i(263455),	-- Thalassian Blacksmith's Journal

@@ -293,6 +293,7 @@ for i,mapID in ipairs({
 	2481,	-- Eastern Kingdoms
 	2480,	-- Harandar
 	2479,	-- Voidstorm
+	2540,	-- Sunkiller Sanctum
 	-- #endif
 })
 do table.insert(FlightPathMapIDs, mapID); end

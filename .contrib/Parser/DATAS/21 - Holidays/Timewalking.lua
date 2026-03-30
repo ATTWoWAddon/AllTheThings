@@ -1808,7 +1808,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					-- #endif
 					-- #if AFTER 7.3.5
 					i(127433),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
-					i(127432),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
+					i(127432),	-- Moonglade Pants (7.3.5	-- Moved from Aeonus)
 					-- #endif
 					i(127439),	-- Ring of Spiritual Precision
 				},
@@ -1848,7 +1848,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					-- #endif
 					i(127431),	-- Legplates of the Righteous
 					-- #if BEFORE 7.3.5
-					i(127432),	-- Moonglade Pants (7.3.5 -- Moved to Chrono Lord Deja)
+					i(127432),	-- Moonglade Pants (7.3.5	-- Moved to Chrono Lord Deja)
 					-- #endif
 					i(127448),	-- Scarab of the Infinite Cycle
 				},
@@ -2209,7 +2209,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					i(208094, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (WOTLK)
 						["description"] = "This bag contains an item from Ulduar or an item from the WoW's 15th Birthday Event Bosses Anub, Lich King or Heigan.\nThe droprate for the mounts seems rather high (5-10%).",	-- Might have been removed in 10.2.7 as a pouch dropped instead for me
 						["sym"] = {{"select","itemID",
-							-- Seems to be always 1 of those 3 pets -- Gold 15.09.2023
+							-- Seems to be always 1 of those 3 pets	-- Gold 15.09.2023
 							142098,	-- Drudge Ghoul (PET!)
 							142086,	-- Magma Rageling (PET!)
 							142085,	-- Nerubian Swarmer (PET!)
@@ -4597,7 +4597,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					i(133376),	-- Hammer of Swirling Winds
 					i(133274),	-- Mantle of Master Cho
 					i(133272),	-- Geordan's Cloak
-					i(133278),	-- Evelyn's Belt (erroneously listed on Lockmaw in DJ -- drops from this boss)
+					i(133278),	-- Evelyn's Belt (erroneously listed on Lockmaw in DJ	-- drops from this boss)
 					i(133270),	-- Crafty's Gaiters
 					i(133273),	-- Ring of Three Lights
 					i(133275),	-- Sorrowsong

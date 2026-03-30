@@ -72,11 +72,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 35.0, 59.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
 						o(587126, {	-- Training Rod of Polymorph
-							["coord"] = { 36.5, 56.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+							["coord"] = { 36.1, 56.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 							["groups"] = { i(255842) },	-- Training Rod of Polymorph (QI!)
 						}),
 						o(613517, {	-- Tome of Polymorph
-							["coord"] = { 35.7, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+							["coord"] = {
+								{ 32.9, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 33.1, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 33.6, 49.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 33.9, 58.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 34.7, 55.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 34.9, 58.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 35.1, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 35.7, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 38.0, 53.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 38.0, 54.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 38.2, 57.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
 							["groups"] = { i(258965) },	-- Tome of Polymorph (QI!)
 						}),
 					},

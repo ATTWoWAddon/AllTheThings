@@ -945,7 +945,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				}),
 				q(37963, {	-- Those Beyond Redemption
 					["coord"] = { 57.6, 15.6, AZSUNA },
-					["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },	-- Wowhead / Github -- Replaced with WorldQuest?
+					["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },	-- Wowhead / Github	-- Replaced with WorldQuest?
 				}),
 				q(37779, {	-- Tip the Scales
 					["coord"] = { 62.6, 42.6, AZSUNA },

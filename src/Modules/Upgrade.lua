@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for handling and checking Upgrade information
 
 -- Global locals
-local floor, 	  type, tonumber, ipairs, pairs
-	= math.floor, type, tonumber, ipairs, pairs
+local floor, 	 type,tonumber,ipairs,pairs,rawget
+	= math.floor,type,tonumber,ipairs,pairs,rawget
 
 -- App locals
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
@@ -389,8 +389,50 @@ local BonusIDNextUnlock = {
 	-- Myth
 	-- 12356-12361
 
-	-- Going forward in MID, Upgrade tracks no longer change appearance
-	-- so we will no longer need to track new bonusIDs here
+	-- 12.0 - [https://wago.tools/db2/ItemBonus?build=12.0.1.66431&filter%5BType%5D=34&filter%5BValue_1%5D=97&page=3&sort%5BParentItemBonusListID%5D=asc]
+	-- Explorer [970-607]
+
+	-- Adventurer [971-608]
+
+	-- Veteran [972-609]
+	[12777] = 12782,
+	[12778] = 12782,
+	[12779] = 12782,
+	[12780] = 12782,
+	[12781] = 12782,
+	-- [12782] = 12782,
+	-- [12783] = 12782,
+	-- [12784] = 12782,
+
+	-- Champion [973-610]
+	[12785] = 12790,
+	[12786] = 12790,
+	[12787] = 12790,
+	[12788] = 12790,
+	[12789] = 12790,
+	-- [12790] = 12790,
+	-- [12791] = 12790,
+	-- [12792] = 12790,
+
+	-- Hero [974-611]
+	[12793] = 12798,
+	[12794] = 12798,
+	[12795] = 12798,
+	[12796] = 12798,
+	[12797] = 12798,
+	-- [12798] = 12798,
+	-- [12799] = 12798
+	-- [12800] = 12798
+
+	-- Myth [978-612]
+	-- 12801
+	-- 12802
+	-- 12803
+	-- 12804
+	-- 12805
+	-- 12806
+	-- 12807
+	-- 12808
 
 }
 -- Which bonusID nested upgrades are allowed to be nested under an already-upgraded listing
@@ -524,20 +566,16 @@ local function HasUpgrade(t)
 	return t._up or GetUpgrade(t, up)
 end
 
-local UpgradeSources = {}
+local UpgradeSources = setmetatable({}, app.MetaTable.AutoTable)
 
 local function SetupUpgrade(t)
-	local upgrade = t._up or HasUpgrade(t);
+	local upgrade = HasUpgrade(t);
 	if upgrade then
 		t.isUpgrade = upgrade.collectible and not upgrade.collected
 		-- app.PrintDebug("SetupUpgrade",t.isUpgrade,app:SearchLink(t),"=>",app:SearchLink(upgrade))
 		-- store the upgrade source for ad-hoc updates
 		local upgradehash = upgrade.hash
 		local sources = UpgradeSources[upgradehash]
-		if not sources then
-			sources = {}
-			UpgradeSources[upgradehash] = sources
-		end
 		sources[#sources + 1] = t
 		Runner.Run(DGU, t)
 		return
@@ -554,7 +592,7 @@ local function SetupUpgrade(t)
 	end
 end
 local function CheckIsUpgrade(t)
-	local upgrade = t._up or HasUpgrade(t);
+	local upgrade = HasUpgrade(t);
 	if upgrade then
 		t.isUpgrade = upgrade.collectible and not upgrade.collected
 		-- app.PrintDebug("CheckIsUpgrade",t.isUpgrade,app:SearchLink(t),"=>",app:SearchLink(upgrade))
@@ -575,7 +613,7 @@ end
 
 local function OnSearchResultUpdate(t)
 	-- app.PrintDebug("UpdateUpgradeGroup",app:SearchLink(t))
-	local sources = UpgradeSources[t.hash]
+	local sources = rawget(UpgradeSources, t.hash)
 	if not sources then return end
 	for _,upgradeSource in ipairs(sources) do
 		-- app.PrintDebug("UpdateUpgradeGroup.source",app:SearchLink(upgradeSource))
@@ -656,7 +694,7 @@ end
 
 -- Returns whether 't' has an upgrade AND it is uncollected
 api.CollectibleAsUpgrade = function(t)
-	local upgrade = t._up or HasUpgrade(t);
+	local upgrade = t._up or NextUpgrade(t);
 	return upgrade and not upgrade.collected;
 end
 

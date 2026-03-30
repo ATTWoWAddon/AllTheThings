@@ -2521,10 +2521,10 @@ root(ROOTS.Zones, {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
-					q(39209, {	-- Sholazar Basin -- Adventure Guide
+					q(39209, {	-- Sholazar Basin	-- Adventure Guide
 						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
-					q(39212, {	-- Sholazar Basin -- Adventure Guide
+					q(39212, {	-- Sholazar Basin	-- Adventure Guide
 						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(13830, {	-- The Ghostfish
@@ -2873,7 +2873,7 @@ root(ROOTS.Zones, {
 							i(42436),	-- Chocolate Celebration Cake
 							i(42431),	-- Dalaran Brownie
 							i(42430),	-- Dalaran Doughnut
-							i(74921, {["timeline"] = { ADDED_4_3_0 }}), -- Darkmoon Doughnut
+							i(74921, {["timeline"] = { ADDED_4_3_0 }}),	-- Darkmoon Doughnut
 							i(42438),	-- Lovely Cake
 							i(42429),	-- Red Velvet Cupcake
 						},

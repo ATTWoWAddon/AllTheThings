@@ -656,7 +656,7 @@ flt(200,{
 r(11454,{description="This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",itemID=10713,learnedAt=200,q=1,requireSkill=164})}),
 flt(102,{
 toy(18986,{q=2,requireSkill=20219}),
-toy(18660,{q=2,requireSkill=20219})})}}),
+toy(18660,{q=2})})}}),
 prof(20222,{description="These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",g={
 flt(101,{
 p(85,{b=1,itemID=11825,petTypeID=10,q=1,requireSkill=20222,spellID=15048})}),
@@ -810,7 +810,7 @@ i(18631,{q=1}),
 i(10560,{q=1}),
 i(4375,{q=1})}),
 flt(102,{
-toy(17716,{q=1,requireSkill=202})}),
+toy(17716,{q=1})}),
 flt(53,{
 i(16022,{f=53,lvl=50,q=3,requireSkill=202}),
 i(4396,{f=53,lvl=30,q=1,requireSkill=202}),
@@ -1386,7 +1386,7 @@ o(103713,{coords={
 [1413]={{47.9,87.2}}},r=1,requireSkill=186}),
 o(3763,{maps={1413},requireSkill=186}),
 o(165658,{learnedAt=230,maps={232,242,1427,1428},requireSkill=186}),
-o(1734,{learnedAt=155,maps={1416,1417,1418,1427,1428,1434,1441,1443,1444,1446,1447,1448},requireSkill=186}),
+o(1734,{description="Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",learnedAt=155,maps={1416,1417,1418,1427,1428,1434,1441,1443,1444,1446,1447,1448},requireSkill=186}),
 o(150080,{coords={
 [1419]={{50.4,10.3}}},learnedAt=155,r=1,requireSkill=186}),
 o(181109,{learnedAt=155,maps={1448},requireSkill=186}),
@@ -1433,7 +1433,7 @@ o(150081,{coords={
 o(181108,{learnedAt=230,maps={1448},requireSkill=186}),
 i(2770,{maps_disp={1411,1412,1413,1420,1421,1426,1429,1432,1436,1439},providers={{"o",1731}},q=1}),
 i(11370,{maps_disp={232,242,1427,1428},providers={{"o",165658}},q=1}),
-i(2776,{description="Gold Veins is a rare spawn in place of Iron Deposits and Mithril Deposits.",maps_disp={1416,1417,1418,1427,1428,1434,1441,1443,1444,1446,1447,1448},providers={{"o",1734},{"o",73941}},q=2}),
+i(2776,{maps_disp={1416,1417,1418,1427,1428,1434,1441,1443,1444,1446,1447,1448},providers={{"o",1734},{"o",73941}},q=2}),
 i(2772,{maps_disp={1416,1417,1418,1434,1441,1443},providers={{"o",1735}},q=1}),
 i(22203,{maps_disp={247,320,1451},providers={{"o",181068},{"o",181069}},q=1,u=1610}),
 i(3858,{maps_disp={1418,1427,1428,1444,1446,1447,1448},providers={{"o",2040}},q=1}),

@@ -1641,7 +1641,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				q(63398),	-- Chest
 				q(63394),	-- Wrist
 				q(63392),	-- Gloves
-				-- q(63397),	-- Waist -- TODO confirm
+				-- q(63397),	-- Waist	-- TODO confirm
 				q(63395),	-- Legs
 				q(63399),	-- Feet
 				q(63400),	-- Cloak

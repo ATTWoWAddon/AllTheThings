@@ -635,7 +635,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 48941 },	-- A Slight Detour
 				["provider"] = { "i", 159748 },	-- Rune-Etched Bone (QS!)
 				["races"] = ALLIANCE_ONLY,
-				-- Needs confirmation -- the quest didn't auto-pop and I didn't notice the item in my bags until later. This source is based on a wowhead comment.
+				-- Needs confirmation	-- the quest didn't auto-pop and I didn't notice the item in my bags until later. This source is based on a wowhead comment.
 				-- Not required for "Drust Do It."
 				["groups"] = {
 					i(159746),	-- Pristine Rune-Etched Bone (QI!)
@@ -1369,7 +1369,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					48179,	-- Rescue Rangers
 					48183,	-- The Hills Are Alive
 					48182,	-- Total Cairnage
-					-- Definitely requires "The Hills Are Alive;" may not require others -- needs confirmation.
+					-- Definitely requires "The Hills Are Alive;" may not require others	-- needs confirmation.
 				},
 				["provider"] = { "n", 139926 },	-- Thornspeaker Birchgrove
 				["coord"] = { 61.8, 59.3, DRUSTVAR },

@@ -996,14 +996,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					i(12614),	-- Runic Plate Leggings
 					i(12610),	-- Runic Plate Shoulders
 					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_SEVEN, i(238288, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Soldier's Helmet
-					applyclassicphase(SOD_PHASE_SEVEN, i(238289, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Soldier's Spaulders
-					applyclassicphase(SOD_PHASE_SEVEN, i(238290, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Soldier's Chestplate
-					applyclassicphase(SOD_PHASE_SEVEN, i(238291, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Soldier's Protectors
-					applyclassicphase(SOD_PHASE_SEVEN, i(238292, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Soldier's Grips
-					applyclassicphase(SOD_PHASE_SEVEN, i(238293, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Soldier's Waistguard
-					applyclassicphase(SOD_PHASE_SEVEN, i(238294, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Soldier's Legplates
-					applyclassicphase(SOD_PHASE_SEVEN, i(238295, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Soldier's Stompers
+					applyclassicphase(SOD_PHASE_SEVEN, i(238288, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Soldier's Helmet
+					applyclassicphase(SOD_PHASE_SEVEN, i(238289, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Soldier's Spaulders
+					applyclassicphase(SOD_PHASE_SEVEN, i(238290, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Soldier's Chestplate
+					applyclassicphase(SOD_PHASE_SEVEN, i(238291, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Soldier's Protectors
+					applyclassicphase(SOD_PHASE_SEVEN, i(238292, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Soldier's Grips
+					applyclassicphase(SOD_PHASE_SEVEN, i(238293, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Soldier's Waistguard
+					applyclassicphase(SOD_PHASE_SEVEN, i(238294, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Soldier's Legplates
+					applyclassicphase(SOD_PHASE_SEVEN, i(238295, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Soldier's Stompers
 					applyclassicphase(SOD_PHASE_ONE, i(210794, {["timeline"] = { ADDED_1_15_0 }})),	-- Shifting Silver Breastplate
 					-- #endif
 					i(2870),	-- Shining Silver Breastplate
@@ -6084,14 +6084,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(207565, {["timeline"] = { ADDED_10_1_5 }}),	-- Sanctified Leather Hat
 				i(18238),	-- Shadowskin Gloves
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_SEVEN, i(238272, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Infiltrator's Bandana
-				applyclassicphase(SOD_PHASE_SEVEN, i(238273, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Infiltrator's Shoulderpads
-				applyclassicphase(SOD_PHASE_SEVEN, i(238274, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Infiltrator's Vest
-				applyclassicphase(SOD_PHASE_SEVEN, i(238275, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Infiltrator's Bracers
-				applyclassicphase(SOD_PHASE_SEVEN, i(238276, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Infiltrator's Gloves
-				applyclassicphase(SOD_PHASE_SEVEN, i(238277, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Infiltrator's Belt
-				applyclassicphase(SOD_PHASE_SEVEN, i(238278, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Infiltrator's Trousers
-				applyclassicphase(SOD_PHASE_SEVEN, i(238279, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Infiltrator's Shoes
+				applyclassicphase(SOD_PHASE_SEVEN, i(238272, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Infiltrator's Bandana
+				applyclassicphase(SOD_PHASE_SEVEN, i(238273, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Infiltrator's Shoulderpads
+				applyclassicphase(SOD_PHASE_SEVEN, i(238274, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Infiltrator's Vest
+				applyclassicphase(SOD_PHASE_SEVEN, i(238275, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Infiltrator's Bracers
+				applyclassicphase(SOD_PHASE_SEVEN, i(238276, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Infiltrator's Gloves
+				applyclassicphase(SOD_PHASE_SEVEN, i(238277, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Infiltrator's Belt
+				applyclassicphase(SOD_PHASE_SEVEN, i(238278, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Infiltrator's Trousers
+				applyclassicphase(SOD_PHASE_SEVEN, i(238279, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Infiltrator's Shoes
 				applyclassicphase(SOD_PHASE_THREE, i(220748, {	-- Shoulderpads of Obsession
 					["timeline"] = { ADDED_1_15_2 },
 				})),
@@ -6259,14 +6259,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR, i(20478)),	-- Sandstalker Breastplate
 				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_SEVEN, i(238280, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Huntsman's Coif
-				applyclassicphase(SOD_PHASE_SEVEN, i(238281, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Huntsman's Pauldrons
-				applyclassicphase(SOD_PHASE_SEVEN, i(238282, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Huntsman's Chain
-				applyclassicphase(SOD_PHASE_SEVEN, i(238283, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Huntsman's Wristguards
-				applyclassicphase(SOD_PHASE_SEVEN, i(238284, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Huntsman's Handguards
-				applyclassicphase(SOD_PHASE_SEVEN, i(238285, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Huntsman's Clasp
-				applyclassicphase(SOD_PHASE_SEVEN, i(238286, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Huntsman's Legguards
-				applyclassicphase(SOD_PHASE_SEVEN, i(238287, { ["timeline"] = { ADDED_1_15_6 }})), -- Scarlet Huntsman's Boots
+				applyclassicphase(SOD_PHASE_SEVEN, i(238280, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Huntsman's Coif
+				applyclassicphase(SOD_PHASE_SEVEN, i(238281, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Huntsman's Pauldrons
+				applyclassicphase(SOD_PHASE_SEVEN, i(238282, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Huntsman's Chain
+				applyclassicphase(SOD_PHASE_SEVEN, i(238283, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Huntsman's Wristguards
+				applyclassicphase(SOD_PHASE_SEVEN, i(238284, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Huntsman's Handguards
+				applyclassicphase(SOD_PHASE_SEVEN, i(238285, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Huntsman's Clasp
+				applyclassicphase(SOD_PHASE_SEVEN, i(238286, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Huntsman's Legguards
+				applyclassicphase(SOD_PHASE_SEVEN, i(238287, { ["timeline"] = { ADDED_1_15_6 }})),	-- Scarlet Huntsman's Boots
 				applyclassicphase(SOD_PHASE_THREE, i(220741, {	-- Screaming Chain Pauldrons
 					["timeline"] = { ADDED_1_15_2 },
 				})),
@@ -6495,6 +6495,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- ____________________________________________
 						-- Gold
 						o(1734, {	-- Gold Vein
+							["description"] = "Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 155,
 							-- #endif
@@ -6943,7 +6944,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "o", 165658 },	-- Dark Iron Deposit
 						}),
 						i(2776, {	-- Gold Ore
-							["description"] = "Gold Veins is a rare spawn in place of Iron Deposits and Mithril Deposits.",
 							["maps_disp"] = {
 								ARATHI_HIGHLANDS,
 								BADLANDS,

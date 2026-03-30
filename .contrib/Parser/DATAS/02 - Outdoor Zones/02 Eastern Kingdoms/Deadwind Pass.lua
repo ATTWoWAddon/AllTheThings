@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if AFTER TBC
 			n(VENDORS, {
-				applyclassicphase(TBC_PHASE_ONE, n(18255, {  -- Mage Darius
+				applyclassicphase(TBC_PHASE_ONE, n(18255, { 	-- Mage Darius
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["groups"] = {
 						i(31401),	-- Design: The Frozen Eye (RECIPE!)

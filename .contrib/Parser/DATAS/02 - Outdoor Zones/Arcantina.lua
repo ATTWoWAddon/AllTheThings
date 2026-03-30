@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Zones, m(ARCANTINA, {
 	["icon"] = [[~_.asset("Arcantina")]],
+	["timeline"] = { ADDED_12_0_1_LAUNCH },
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(61083),	-- Highly Decorated
@@ -120,7 +121,7 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LA
 				},
 			}),
 			q(92322, {	-- Timear Foresees a Proof of Demise!
-				["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
+				["provider"] = { "n", 264499 },	-- Archmage Lan'dalock
 				["coord"] = { 30.0, 19.3, ARCANTINA },
 				["groups"] = {
 					i(253176),	-- Ancient Zandalari Ritual Scroll (DECOR!)
@@ -150,22 +151,29 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LA
 				["coord"] = { 76.4, 39.4, ARCANTINA },
 				["groups"] = {
 					i(253175),	-- Hyjal Climbing Vine (DECOR!)
+					i(250876),	-- Evergreen Vine
 					o(617884, {	--
 						i(263872),	-- Lucifern (QI!)
 					}),
 				},
 			}),
+			q(90718, {	-- Request of the Arcantina
+				["sourceQuests"] = { 92520 },	-- Wake of the Darkwell
+				["qg"] = 240265,	-- Chief Telemancer Oculeth
+				["coord"] = { 47.4, 69.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = { i(260165) },	-- Request for Reagents (PQI!)
+			}),
 			-- Unsorted, these are part of the highly decorated achievement, need to be fitted into the rest of the structure of this file. Do not put them in HQT or you will get parser warnings.
-			q(92380),	-- Defense Fragment
-			q(92379, {	-- Evergreen Vine
-				i(250876),	-- Evergreen Vine
-			}),
-			q(92382, {	-- Heavy Anchor
+			hqt(92380),	-- Defense Fragment
+			hqt(92379, name(HEADERS.Item, 250876, {	-- Evergreen Vine
+				["cost"] = {{"i",250876,1}},	-- Evergreen Vine
+			})),
+			hqt(92382, name(HEADERS.Item, 250879, {	-- Heavy Anchor
 				i(250879),	-- Heavy Anchor
-			}),
-			q(92383, {	-- Sandy Tapestry
+			})),
+			hqt(92383, name(HEADERS.Item, 250880, {	-- Sandy Tapestry
 				i(250880),	-- Sandy Tapestry
-			}),
+			})),
 		}),
 		n(TREASURES, sharedData({["isDaily"] = true,}, {
 			o(571494, {	-- Giant Growth Potion
@@ -331,15 +339,16 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LA
 			}),
 		}),
 	},
-})));
+}))
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
--- 	m(ARCANTINA, {
--- 		["icon"] = [[~_.asset("Arcantina")]],
--- 		["groups"] = {
--- 			n(QUESTS, {
-
--- 			}),
--- 		},
--- 	}),
--- }));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(ARCANTINA, {
+		["icon"] = [[~_.asset("Arcantina")]],
+		["timeline"] = { ADDED_12_0_1_LAUNCH },
+		["groups"] = {
+			n(QUESTS, {
+				q(94976, name(HEADERS.Item, 250876)),	-- Evergreen Vine placement unlock
+			}),
+		},
+	}),
+}));

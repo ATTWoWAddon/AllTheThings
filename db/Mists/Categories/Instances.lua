@@ -7723,28 +7723,7 @@ i(10661,{q=1})}),
 e(483,{npcID=7273,g={
 i(8707,{q=1}),
 s(122909,9467,{b=1,f=20,lvl=44,q=3}),
-s(122911,9469,{b=1,f=6,lvl=44,q=3})}})}}),
-h(-723,{awp=10400,lvl=60,g={
-n(14464,{coords={
-[76]={{72.6,20},{77,24.2},{77.2,16.6},{80,24.2},{82.6,21}}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
-s(129577,18673,{f=8,lvl=54,q=3,u=2}),
-i(18674,{f=52,lvl=54,q=2,u=2}),
-i(19268,{q=3,u=2})}}),
-n(14461,{coords={
-[78]={{44.6,46},{45.4,54.8},{48.2,41.2},{51.6,57.6},{53.2,41.8},{55.6,57.4},{56.6,42.8},{56.6,48.2}}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
-s(129575,18671,{f=23,lvl=54,q=3,u=2}),
-s(129576,18672,{f=1,lvl=54,q=2,u=2})}}),
-n(14457,{coords={
-[83]={{54.6,42.6}}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
-r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165,u=2}),
-i(18679,{f=52,lvl=56,q=2,u=2}),
-i(18678,{f=51,lvl=56,q=3,u=2})}}),
-n(14454,{coords={
-[81]={{17.6,27},{26.6,29.6},{31,23.6},{32.2,17.2}}},description="This is only available during an Elemental Invasion.",rwp=40003,u=2,g={
-s(129580,18676,{f=6,lvl=56,q=3,u=2}),
-s(129581,18677,{f=3,lvl=56,q=2,u=2}),
-r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165,u=2}),
-i(19268,{q=3,u=2})}})}})}),
+s(122911,9469,{b=1,f=6,lvl=44,q=3})}})}})}),
 x(2,{u=17,g={
 h(-12,{awp=20001,u=17,g={
 ach(1287,{awp=30002,u=17}),
@@ -9831,7 +9810,7 @@ i(30589,{b=1,modID=2,q=4,u=17}),
 i(30591,{b=1,modID=2,q=4,u=17}),
 i(30590,{b=1,modID=2,q=4,u=17})}}),
 n(28132,{description="This is a neutral Elite Creature that wanders the road.",u=17,g={
-toy(38506,{b=1,q=3,rwp=70003,u=17}),
+toy(38506,{b=1,q=3,rwp=70003,sourceID=145487,u=17}),
 i(38329,{q=1,u=17})}}),
 e(538,{npcID=17848,u=17,g={
 s(138556,28210,{b=1,f=23,lvl=70,modID=2,q=3,u=17}),

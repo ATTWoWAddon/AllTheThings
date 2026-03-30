@@ -912,7 +912,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		if not freshCompletes or #freshCompletes == 0 then
 			return;
 		end
-		-- app.PrintDebug("QCQ",#freshCompletes,#CompleteQuestSequence,app.IsReady and "IS READY" or "NOT READY")
+		-- app.PrintDebug("QCQ",#freshCompletes,#CompleteQuestSequence)
 		local oldReportSetting = DoQuestPrints
 		-- check if Blizzard is being dumb / should we print a summary instead of individual lines
 		local questDiff = #freshCompletes - #CompleteQuestSequence;
@@ -1627,13 +1627,14 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	}
 }, (function(t) return t.maxReputation; end),
 "AsHQT", {
+	RootConstructor = "CreateHQT",
 	CollectibleType = function() return "QuestsHidden" end,
 	isHQT = app.ReturnTrue,
 	variants = {
 		app.GlobalVariants.AndLockCriteriaWithAutoName,
 		app.GlobalVariants.AndLockCriteria,
 		app.GlobalVariants.WithAutoName,
-	}
+	},
 }, (function(t) return t.type == "hqt" end),
 -- Both: Breadcrumbs
 "AsBreadcrumb", {

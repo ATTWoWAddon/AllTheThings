@@ -1632,7 +1632,7 @@ root(ROOTS.Zones, {
 					o(221763),	-- Fire Poppy
 					o(222688),	-- Firestorm Egg
 					o(223537),	-- Flameheart Shawl
-					o(223193, { -- Giant Clam
+					o(223193, {	-- Giant Clam
 						["coords"] = {
 							{ 16.8, 62.4, TIMELESS_ISLE },
 							{ 16.8, 62.5, TIMELESS_ISLE },
