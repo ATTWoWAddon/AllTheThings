@@ -80,8 +80,8 @@ namespace ATT
             /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that various information is synced across all Sources of a given object as necessary
             /// Stored by key -> key-value -> object
             /// </summary>
-            public static ConcurrentDictionary<string, ConcurrentDictionary<object, ConcurrentDictionary<string, object>>> SharedDataByPrimaryKey { get; }
-                = new ConcurrentDictionary<string, ConcurrentDictionary<object, ConcurrentDictionary<string, object>>>();
+            public static ConcurrentDictionary<string, ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>>> SharedDataByPrimaryKey { get; }
+                = new ConcurrentDictionary<string, ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>>>();
 
             /// <summary>
             /// The keys which should be merged based on a given merge object key
@@ -477,10 +477,10 @@ namespace ATT
             internal static void MergeFromDB(string primaryKey, IDictionary<string, object> databaseObject)
             {
                 // does this data contain the key?
-                if (databaseObject.TryGetValue(primaryKey, out object keyValue))
+                if (databaseObject.TryGetValue(primaryKey, out decimal keyValue))
                 {
                     // get the container for objects of this key
-                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(primaryKey, NewConcurrentDictionary_object_string_object);
+                    ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(primaryKey, NewConcurrentDictionary_decimal_string_object);
 
                     // get the specific merged object
                     ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue, NewConcurrentDictionary_string_object);
@@ -511,7 +511,7 @@ namespace ATT
                 foreach (var mergeObjectFieldPair in MERGE_FROM_OBJECT_FIELDS)
                 {
                     // does this data contain the key?
-                    if (!objectData.TryGetValue(mergeObjectFieldPair.Key, out object keyValue))
+                    if (!objectData.TryGetValue(mergeObjectFieldPair.Key, out decimal keyValue))
                         continue;
 
                     // only bother creating a merge container if the data contains a merging key
@@ -519,7 +519,8 @@ namespace ATT
                         continue;
 
                     // get the container for objects of this key
-                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(mergeObjectFieldPair.Key, NewConcurrentDictionary_object_string_object);
+                    ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>> typeObjects =
+                        SharedDataByPrimaryKey.GetOrAdd(mergeObjectFieldPair.Key, NewConcurrentDictionary_decimal_string_object);
 
                     // get the specific merged object
                     ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue, NewConcurrentDictionary_string_object);
@@ -545,7 +546,7 @@ namespace ATT
             /// Should only be used when a specific known key and keyValue for SharedData allowed by MERGE_OBJECT_FIELDS
             /// needs to merge
             /// </summary>
-            private static void MergedSharedDataKeyIntoObject(IDictionary<string, object> data, string key, object keyValue)
+            private static void MergedSharedDataKeyIntoObject(IDictionary<string, object> data, string key, decimal keyValue)
             {
                 if (!SharedDataByPrimaryKey.TryGetValue(key, out var container))
                     return;
@@ -582,8 +583,7 @@ namespace ATT
                 foreach (var container in SharedDataByPrimaryKey.Where(c => MERGE_OBJECT_FIELDS.ContainsKey(c.Key)))
                 {
                     // does this data contain a valid key?
-                    if (!data.TryGetValue(container.Key, out object keyValue)
-                        || (keyValue.TryConvert(out long keyValueLong) && keyValueLong < 1))
+                    if (!data.TryGetValue(container.Key, out decimal keyValue) || keyValue <= 0)
                         continue;
 
                     // get the specific merged object
@@ -596,7 +596,7 @@ namespace ATT
 
                     foreach (var field in mergeFields)
                     {
-                        if (commonData.TryGetValue(field, out object val))
+                        if (commonData.TryGetValue(field, out decimal val))
                         {
                             if (!combinedCommonData.TryGetValue(field, out object existingVal))
                             {

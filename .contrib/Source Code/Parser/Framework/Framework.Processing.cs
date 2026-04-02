@@ -71,8 +71,10 @@ namespace ATT
             new ConcurrentDictionary<long, string>();
         public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(object _) =>
             new ConcurrentDictionary<string, object>();
-        public static ConcurrentDictionary<object, ConcurrentDictionary<string, object>> NewConcurrentDictionary_object_string_object(object _) =>
-            new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>();
+        public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(decimal _) =>
+            new ConcurrentDictionary<string, object>();
+        public static ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>> NewConcurrentDictionary_decimal_string_object(object _) =>
+            new ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>>();
         public static ConcurrentDictionary<string, ConcurrentDictionary<string, object>> NewConcurrentDictionary_string_string_object(long _) =>
             new ConcurrentDictionary<string, ConcurrentDictionary<string, object>>();
         public static ConcurrentDictionary<decimal, ConcurrentDataList> NewConcurrentDictionary_decimal_ConcurrentDataList(string _) =>
@@ -464,12 +466,12 @@ namespace ATT
                         && !pair.Value.TryGetValue("nextQuests", out object nextQuests))
                     {
                         // Breadcrumb quest without next quests information
-                        orphanedBreadcrumbs.Add(pair.Key is long key ? key : 0);
+                        orphanedBreadcrumbs.Add(pair.Key);
                     }
                 }
 
                 var unsortedQuests = new List<object>();
-                long maxQuestID = questDB.Max(x => x.Key is long key ? key : 0);
+                long maxQuestID = (long)questDB.Max(x => x.Key);
                 for (long i = 1; i <= maxQuestID; i++)
                 {
                     // add any quest information which is not sourced/referenced but includes more than just a questID into the Unsorted category
