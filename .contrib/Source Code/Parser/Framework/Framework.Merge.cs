@@ -880,13 +880,13 @@ namespace ATT
             }
         }
 
-        private static void DBMerge(IEnumerable<object> dbList, string keyID)
+        public static void DBMerge(IEnumerable<object> dbList, string keyID, bool relaxed = false)
         {
             foreach (var o in dbList)
             {
                 if (o is IDictionary<string, object> data)
                 {
-                    DBMerge(data, keyID);
+                    DBMerge(data, keyID, relaxed);
                 }
                 else
                 {
@@ -895,14 +895,14 @@ namespace ATT
             }
         }
 
-        private static void DBMerge(IDictionary<string, object> data, string keyID)
+        public static void DBMerge(IDictionary<string, object> data, string keyID, bool relaxed = false)
         {
             if (data.ContainsKey(keyID))
             {
                 Objects.MergeFromDB(keyID, data);
                 Items.MergeFromDB(data);
             }
-            else
+            else if (!relaxed)
             {
                 LogError($"Trying to merge DB data which doesn't have the expected Merge Key! {keyID}", data);
             }
