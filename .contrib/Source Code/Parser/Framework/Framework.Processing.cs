@@ -4439,7 +4439,12 @@ namespace ATT
         private static void IncrementTypeUseCount(string key, decimal id)
         {
             ConcurrentDictionary<decimal, int> idCounts = TypeUseCounts[key];
-            idCounts.AddOrUpdate(id, 1, (k, count) => count + 1);
+            idCounts.AddOrUpdate(id, 1, IncrementCount());
+
+            Func<decimal, int, int> IncrementCount()
+            {
+                return (k, count) => count + 1;
+            }
         }
 
         /// <summary>
