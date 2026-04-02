@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using DataCondition = System.Func<System.Collections.Generic.IDictionary<string, object>, bool>;
 using DataAction = System.Action<System.Collections.Generic.IDictionary<string, object>>;
 using Data = System.Collections.Generic.IDictionary<string, object>;
+using System.Diagnostics;
+using System.Linq;
 
 namespace ATT
 {
@@ -58,18 +60,37 @@ namespace ATT
 
         public void RunActions()
         {
+            long configTrackItemID = (long)Framework.Config["TRACK_itemID"];
+            DataAction action = null;
             foreach (var act in ActionSequence)
             {
                 Framework.Log($".. Running '{act.Method.Name}' on {ActionDatas[act].Count} groups");
-                foreach (var data in ActionDatas[act])
+                // use a custom action if we want to track item changes
+                if (Debugger.IsAttached || configTrackItemID > 0)
                 {
-                    // data.DataBreakPoint("achID", 12896);
-                    //bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == Framework.Config["TEMP_itemID"];
-                    //if (track)
-                    //    Framework.Log($"Tracking Item: {tempItemID} change during {act.Method.Name} handler", data);
-                    act(data);
-                    //if (track)
-                    //    Framework.Log($"Resulting Item: {tempItemID} after {act.Method.Name} handler", data);
+                    action = data =>
+                    {
+                        bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == configTrackItemID;
+                        if (track)
+                            Framework.Log($"Tracking Item: {tempItemID} change during {act.Method.Name} handler", data);
+                        act(data);
+                        if (track)
+                            Framework.Log($"Resulting Item: {tempItemID} after {act.Method.Name} handler", data);
+                    };
+                }
+
+                if (Debugger.IsAttached)
+                {
+                    foreach (var data in ActionDatas[act])
+                    {
+                        (action ?? act)(data);
+                    }
+                }
+                else
+                {
+                    // copy the set of concurrent actions into a new container for the parallel access to be allowed
+                    var actionDatas = ActionDatas[act].ToArray();
+                    actionDatas.AsParallel().ForAll(action ?? act);
                 }
             }
         }
