@@ -645,13 +645,6 @@ namespace ATT
         internal static Dictionary<long, Dictionary<string, object>> CategoryDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
 
         /// <summary>
-        /// Populated with a set of parsed Item Dictionary datas which will conditionally be merged following the DataValidation phase. This
-        /// is useful to be able to define specific relationships on specific Items (Mount/Pet/etc.) and only incorporate the relationship if
-        /// the Item is Sourced elsewhere for the specific ATT Build
-        /// </summary>
-        internal static List<IDictionary<string, object>> ConditionalItemData { get; } = new List<IDictionary<string, object>>();
-
-        /// <summary>
         /// The CustomHeaders table from main.lua that is used to generate custom headers.
         /// </summary>
         internal static Dictionary<long, object> CustomHeaders { get; private set; }

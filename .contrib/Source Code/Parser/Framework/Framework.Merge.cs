@@ -107,7 +107,6 @@ namespace ATT
                                     if (o is IDictionary<string, object> item)
                                     {
                                         Objects.MergeFromDB("itemID", item);
-                                        ConditionalItemData.Add(item);
                                     }
                                     else
                                     {
@@ -611,7 +610,6 @@ namespace ATT
             {
                 item["itemID"] = itemValuePair.Key;
                 Objects.MergeFromDB("itemID", item);
-                ConditionalItemData.Add(item);
             }
             else
             {
