@@ -452,7 +452,7 @@ namespace ATT
                     case "pb":
                     case "sr":
                         {
-                            item[field] = Convert.ToBoolean(value);
+                            Objects.Merge(item, field, value);
                             break;
                         }
 
@@ -462,7 +462,7 @@ namespace ATT
                     case "description":
                     case "type":
                         {
-                            item[field] = ATT.Export.ToString(value);
+                            Objects.Merge(item, field, value);
                             break;
                         }
 
@@ -473,7 +473,7 @@ namespace ATT
                     case "q":
                     case "learnedAt":
                     case "petBattleLvl":
-                        item[field] = Convert.ToInt64(value);
+                        Objects.Merge(item, field, value);
                         break;
 
                     case "altItemID":
@@ -515,7 +515,7 @@ namespace ATT
                             }
                             else
                             {
-                                item[field] = val;
+                                Objects.Merge(item, field, val);
                             }
                             break;
                         }
@@ -547,7 +547,7 @@ namespace ATT
                                     break;
                                 }
 
-                                item[field] = val;
+                                Objects.Merge(item, field, val);
                             }
                             break;
                         }
@@ -578,7 +578,7 @@ namespace ATT
                             }
                             else
                             {
-                                item[field] = val;
+                                Objects.Merge(item, field, val);
                             }
                             break;
                         }
@@ -636,32 +636,7 @@ namespace ATT
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
                     case "sym":
                         {
-                            // Convert the data to a list of generic objects (validation is performed elsewhere)
-                            if (value is List<List<object>> newListOfLists)
-                            {
-                                item[field] = newListOfLists;
-                                return;
-                            }
-
-                            newListOfLists = new List<List<object>>();
-
-                            if (!(value is List<object> newList))
-                            {
-                                LogWarn($"Unable to merge 'sym' data: {ToJSON(value)}", item);
-                                return;
-                            }
-
-                            foreach (var o in newList)
-                            {
-                                if (!(o is List<object> list))
-                                {
-                                    LogWarn($"Unable to merge 'sym' data: {ToJSON(o)}", item);
-                                    continue;
-                                }
-
-                                newListOfLists.Add(list);
-                            }
-                            item[field] = newListOfLists;
+                            Objects.Merge(item, field, value);
                             break;
                         }
                     // 'cost' is specific based on Source, so it shouldn't merge for all Sources of an Item
@@ -688,7 +663,7 @@ namespace ATT
                     //case "OnClick":
                     //case "OnUpdate":
                     case "OnTooltip":
-                        item[field] = value;
+                        Objects.Merge(item, field, value);
                         break;
 
                     default:
@@ -897,7 +872,7 @@ namespace ATT
                     case "type":
                     case "_wipe":
                     case "collectible":
-                        data[field] = value;
+                        Objects.Merge(data, field, value);
                         break;
                     // Conditional merges
                     case "b":
@@ -905,7 +880,7 @@ namespace ATT
                     case "timeline":
                         if (!data.ContainsKey(field))
                         {
-                            data[field] = value;
+                            Objects.Merge(data, field, value);
                             if (field != "b") // bit spammy, even for debug logging
                             {
                                 LogDebug($"MergeInto {data["itemID"]}: {field} <==", value);
@@ -917,7 +892,7 @@ namespace ATT
                         {
                             // Check for Mark of Honor and don't merge!
                             if (itemID == 137642) break;
-                            data[field] = value;
+                            Objects.Merge(data, field, value);
                             break;
                         }
 
@@ -926,7 +901,7 @@ namespace ATT
                     case "OnClick":
                     case "OnUpdate":
                     case "OnTooltip":
-                        data[field] = value;
+                        Objects.Merge(data, field, value);
                         break;
 
                     // Ignore all of the other fields.
