@@ -581,8 +581,9 @@ namespace ATT
                 bool doInheritancePass = false;
                 foreach (var container in SharedDataByPrimaryKey.Where(c => MERGE_OBJECT_FIELDS.ContainsKey(c.Key)))
                 {
-                    // does this data contain the key?
-                    if (!data.TryGetValue(container.Key, out object keyValue))
+                    // does this data contain a valid key?
+                    if (!data.TryGetValue(container.Key, out object keyValue)
+                        || (keyValue.TryConvert(out long keyValueLong) && keyValueLong < 1))
                         continue;
 
                     // get the specific merged object
@@ -2143,7 +2144,14 @@ end");
                             // Integer Data Type Fields
                             if (ObjectData.ContainsObjectType(field))
                             {
-                                item[field] = value;
+                                if (value.TryConvert(out decimal valueID) && valueID > 0)
+                                {
+                                    item[field] = valueID;
+                                }
+                                else
+                                {
+                                    LogDebugWarn($"Ignored Merge: {field} <= {value} (not positive decimal)");
+                                }
                                 return;
                             }
 

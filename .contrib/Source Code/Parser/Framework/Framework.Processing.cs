@@ -4429,10 +4429,16 @@ namespace ATT
 
         private static void CheckObjectConversion(IDictionary<string, object> data)
         {
-            if (ObjectData.TryFindObjectConversion(data, out ObjectData conversionObject, out object convertValue))
+            if (ObjectData.TryFindObjectConversion(data, out ObjectData conversionObject, out decimal convertValue))
             {
-                LogDebug($"INFO: Type Conversion {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} ({convertValue})");
                 data.Remove("type");
+                // don't convert if the converted key is an invalid value
+                if (convertValue <= 0)
+                {
+                    LogDebugWarn($"Type Conversion for {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} failed due to bad-value converted value: {convertValue}", data);
+                    return;
+                }
+                LogDebug($"INFO: Type Conversion {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} ({convertValue})");
                 data.Remove(conversionObject.ConvertedKey);
                 data[conversionObject.ObjectType] = convertValue;
             }
