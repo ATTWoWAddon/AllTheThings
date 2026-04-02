@@ -4238,7 +4238,9 @@ namespace ATT
             }
 
             // Titles under Guild Achievements (Hall of Fame) are not 'really' collectible since they are tied to the Guild
-            if (data.TryGetValue("titleID", out long titleID) && data.TryGetValue("__parent", out IDictionary<string, object> parent) && parent.TryGetValue("isGuild", out bool isGuild))
+            if (data.TryGetValue("titleID", out long titleID)
+                && data.TryGetValue("__parent", out IDictionary<string, object> parent)
+                && parent.TryGetValue("isGuild", out bool isGuild) && isGuild)
             {
                 data["collectible"] = false;
                 LogDebug($"INFO: HoF Guild Achievement Title marked uncollectible: achID={titleID}", data);
