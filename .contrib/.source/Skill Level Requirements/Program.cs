@@ -9,7 +9,7 @@ Directory.CreateDirectory(Path.GetDirectoryName(SkillLevelRequirementsFolderName
 #pragma warning restore CS8604 // Possible null reference argument.
 
 // Define the Common Header
-string commonHeader = "-- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!\nlocal recipeDB = RecipeDBConditional;";
+string commonHeader = "-- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!\nlocal recipeDB = RecipeDBConditional;\n-- #if NOT ANYCLASSIC\nif true then return end\n-- #endif";
 
 // Classic Profession Data
 StringBuilder sb = new StringBuilder().AppendLine(commonHeader);

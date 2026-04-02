@@ -1,5 +1,8 @@
 -- #if AFTER 2.0.0
 -- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!
+-- #if NOT ANYCLASSIC
+if true then return end
+-- #endif
 local recipeDB = RecipeDBConditional;
 
 -- Alchemy
