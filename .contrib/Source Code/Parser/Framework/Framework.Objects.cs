@@ -546,11 +546,11 @@ namespace ATT
             /// Should only be used when a specific known key and keyValue for SharedData allowed by MERGE_OBJECT_FIELDS
             /// needs to merge
             /// </summary>
-            private static void MergedSharedDataKeyIntoObject(IDictionary<string, object> data, string key, decimal keyValue)
+            private static void MergedSharedDataKeyIntoObject(IDictionary<string, object> data, string key, object keyValueObj)
             {
                 if (!SharedDataByPrimaryKey.TryGetValue(key, out var container))
                     return;
-                if (!container.TryGetValue(keyValue, out ConcurrentDictionary<string, object> commonData))
+                if (!keyValueObj.TryConvert(out decimal keyValue) || !container.TryGetValue(keyValue, out ConcurrentDictionary<string, object> commonData))
                     return;
                 if (!MERGE_OBJECT_FIELDS.TryGetValue(key, out var mergeFields))
                     return;
@@ -596,7 +596,7 @@ namespace ATT
 
                     foreach (var field in mergeFields)
                     {
-                        if (commonData.TryGetValue(field, out decimal val))
+                        if (commonData.TryGetValue(field, out object val))
                         {
                             if (!combinedCommonData.TryGetValue(field, out object existingVal))
                             {
