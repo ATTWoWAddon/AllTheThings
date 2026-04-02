@@ -324,7 +324,7 @@ namespace ATT
                 // Step 2: Load the Wago data modules
                 do
                 {
-                    Framework.CurrentParseStage = ParseStage.WagoDBMerge;
+                    Framework.CurrentParseStage = ParseStage.WagoDBLoad;
                     Errored = false;
 
                     // Load all of the Wago Data into the database.
@@ -553,11 +553,11 @@ namespace ATT
                     Framework.Objects.MERGE_OBJECT_FIELDS =
                         Framework.ParseAsStringDictionary(lua.GetTable("MERGE_OBJECT_FIELDS") ?? throw new InvalidDataException("Missing 'MERGE_OBJECT_FIELDS' Global!"))
                         .ToDictionary(kvp => kvp.Key, kvp => (kvp.Value as List<object>)?.Select(o => o.ToString()).ToArray());
-                    
+
                     Framework.Objects.MERGE_FROM_OBJECT_FIELDS =
                         Framework.ParseAsStringDictionary(lua.GetTable("MERGE_FROM_OBJECT_FIELDS") ?? throw new InvalidDataException("Missing 'MERGE_FROM_OBJECT_FIELDS' Global!"))
                         .ToDictionary(kvp => kvp.Key, kvp => (kvp.Value as List<object>)?.Select(o => o.ToString()).ToArray());
-                    
+
                     Framework.Objects.MAPID_COORD_SHIFTS =
                         Framework.ParseAsDictionary<long>(lua.GetTable("MAPID_COORD_SHIFTS") ?? throw new InvalidDataException("Missing 'MAPID_COORD_SHIFTS' Global!"))
                         .ToDictionary(kvp => kvp.Key, kvp => CoordShift.Create(kvp.Value));
@@ -586,6 +586,18 @@ namespace ATT
                     Framework.LogException(e);
                     Framework.WaitForUser("Press any key to close...");
                     return ErrorCode;
+                }
+
+                // Merge Wago data prior to merging contributor data
+                Framework.CurrentParseStage = ParseStage.WagoDBMerge;
+                string[] wagoMergeModules = Framework.Config["WAGO_DATA_MERGE"];
+                foreach (IDictionary<string, object> wagoDataObject in wagoMergeModules.SelectMany(WagoData.GetExportableData))
+                {
+                    // attempt merging the data based on specific merge-allowed key IDs
+                    foreach (string mergeKey in Framework.Objects.MERGE_OBJECT_FIELDS.Keys)
+                    {
+                        Framework.DBMerge(wagoDataObject, mergeKey, true);
+                    }
                 }
 
                 do

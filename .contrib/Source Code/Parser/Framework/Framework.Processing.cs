@@ -90,22 +90,6 @@ namespace ATT
         /// </summary>
         public static void Process()
         {
-            // Combine DB information
-            // Achievements
-            MergeAchievementDB(WagoData.GetAll<Achievement>().Values.Select(i => i.GetExportableData()), true);
-
-            // Items
-            MergeItemDB(WagoData.GetAll<Item>().Values.Select(i => i.GetExportableData()));
-
-            // Item Search Name (Quality, Required Skills, Item Level, Race/Class Requirements)
-            MergeItemDB(WagoData.GetAll<ItemSearchName>().Values.Select(i => i.GetExportableData()));
-
-            // House Decor
-            MergeItemDB(WagoData.GetAll<HouseDecor>().Values.Select(i => i.GetExportableData()));
-
-            // Recipe Skill lines
-            MergeRecipeDB(WagoData.GetAll<SkillLineAbility>().Values.Select(i => i.GetExportableData()));
-
             // GlyphGB
             foreach (var glyph in WagoData.GetAll<GlyphProperties>().Values)
             {
@@ -593,15 +577,7 @@ namespace ATT
         private static void AdditionalProcessing()
         {
             // Clean out any temporary containers
-            string[] temporaryKeys = Objects.AllContainers.Keys.Where(k => k[0] == '_').ToArray();
-            temporaryKeys.All(k => Objects.AllContainers.Remove(k));
-
-            // Merge conditional data
-            foreach (var data in ConditionalItemData)
-            {
-                Items.Merge(data, true);
-                Objects.MergeFromDB("itemID", data);
-            }
+            Objects.AllContainers.Keys.Where(k => k[0] == '_').ToArray().Select(k => Objects.AllContainers.Remove(k)).Count();
 
             // Go through and merge all of the item species data into the item containers.
             foreach (var pair in Items.AllItemsWithSpecies)
@@ -1123,6 +1099,11 @@ namespace ATT
             // OnInit references should be stored in ExportDB.OnClickDB, so mark those which are referenced
             CheckExportDataRefs(data, "OnClick");
 
+            Consolidate_TrackUsage(data);
+        }
+
+        private static void Consolidate_Cleaning(IDictionary<string, object> data)
+        {
             // convert the 'name' into an auto-localized type
             if (data.TryGetValue("name", out string name))
             {
@@ -1140,11 +1121,6 @@ namespace ATT
                 }
             }
 
-            Consolidate_TrackUsage(data);
-        }
-
-        private static void Consolidate_Cleaning(IDictionary<string, object> data)
-        {
             CheckObjectConversion(data);
 
             List<string> removeKeys = new List<string>();
@@ -1209,12 +1185,7 @@ namespace ATT
             }
             else
             {
-                ConcurrentDataList sortedg = new ConcurrentDataList();
-                foreach (IDictionary<string, object> subdata in sort_g.AsTypedEnumerable<IDictionary<string, object>>())
-                {
-                    sortedg.Add(subdata);
-                }
-
+                ConcurrentDataList sortedg = new ConcurrentDataList(sort_g.AsTypedEnumerable<IDictionary<string, object>>());
                 Objects.Merge(data, "g", sortedg);
             }
         }
@@ -2213,15 +2184,10 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
-            // Grab AchievementDB info
-            ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
 
             // Guild Achievements are not collectible
-            if (achInfo.TryGetValue("isGuild", out bool isGuild) && isGuild)
+            if (data.TryGetValue("isGuild", out bool isGuild) && isGuild)
             {
-                //data["collectible"] = false;  // This is now handled in the class.
-                data["isGuild"] = true;
-
                 // Make sure any Criteria which are listed under Guild Achievements are also forced non-collectible
                 if (data.TryGetValue("g", out List<object> g))
                 {
@@ -2285,7 +2251,7 @@ namespace ATT
 
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             // TODO: include the WagoDB Achievement Data somehow...
-            if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
+            if (data.TryGetValue("_criteriaTreeID", out long criteriaTreeID) &&
                 WagoData.TryGetValue(criteriaTreeID, out CriteriaTree criteriaTree))
             {
                 // Some Achievements we use specific symlinks to show information instead of Criteria (for pre-CATA parses)
@@ -2322,11 +2288,9 @@ namespace ATT
                 return;
 
             data.TryGetValue("achID", out long achID);
-            // Grab AchievementDB info
-            ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
             IDictionary<string, object> matchedCriteriaInfo = null;
 
-            if (achInfo.TryGetValue("g", out List<object> criteriaList))
+            if (data.TryGetValue("g", out List<object> criteriaList))
             {
                 if (criteriaList.Count >= criteriaID)
                 {

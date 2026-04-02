@@ -21,6 +21,16 @@ namespace ATT.DB
         /// </summary>
         private static readonly ConcurrentDictionary<string, Type> AllDataTypes = new ConcurrentDictionary<string, Type>();
 
+        private static readonly string[] MergeKeys = new string[]
+        {
+            "spellID",
+            "itemID",
+            "areaID",
+            "questID",
+            "speciesID",
+            "achID",
+        };
+
         /// <summary>
         /// All of the supported locales mapped to proper locale keys.
         /// </summary>
@@ -126,6 +136,21 @@ namespace ATT.DB
         public static Dictionary<string, object> GetExportableData<T>(T o) where T : IDBType
         {
             return Cache<T>.GetExportableData(o);
+        }
+
+        /// <summary>
+        /// Get the exportable data for a given module.
+        /// </summary>
+        /// <param name="o">The object.</param>
+        /// <returns>The exportable data.</returns>
+        public static IEnumerable<IDictionary<string, object>> GetExportableData(string moduleName)
+        {
+            if (DataModuleAttribute.GetAllDataModules().TryGetValue(moduleName, out var module))
+            {
+                var getExportableData = typeof(Cache<>).MakeGenericType(module).GetMethod("GetAllExportable", BindingFlags.Public | BindingFlags.Static);
+                return (IEnumerable<IDictionary<string, object>>)getExportableData.Invoke(null, Array.Empty<object>());
+            }
+            return null;
         }
 
         /// <summary>
@@ -1220,6 +1245,10 @@ namespace ATT.DB
 
                 Framework.LogDebug($"INFO: Wago Type {ParseType.Name} Loaded with {CachedData.Count} entries");
             }
+
+            public static IEnumerable<Dictionary<string, object>> GetAllExportable() => ExportableDataProperties is null
+                ? Array.Empty<Dictionary<string, object>>()
+                : CachedData.Values.Select(GetExportableData);
             #endregion
             #region Localized Data Caching + Checking
             /// <summary>

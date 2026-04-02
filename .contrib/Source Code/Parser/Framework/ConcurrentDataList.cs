@@ -13,6 +13,26 @@ namespace ATT
         private readonly IComparer<Data> _comparer = new DataComparer();
         private bool _sorted;
 
+        public ConcurrentDataList(IEnumerable<Data> data = null)
+        {
+            if (data == null)
+                return;
+
+            _lock.EnterWriteLock();
+            try
+            {
+                foreach (var subdata in data)
+                {
+                    _list.Add(subdata);
+                }
+                _sorted = false;
+            }
+            finally
+            {
+                _lock.ExitWriteLock();
+            }
+        }
+
         public void Add(Data value)
         {
             _lock.EnterWriteLock();

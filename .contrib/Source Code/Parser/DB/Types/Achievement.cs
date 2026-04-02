@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Runtime.Serialization;
-
-namespace ATT.DB.Types
+﻿namespace ATT.DB.Types
 {
     /// <summary>
     /// https://wago.tools/db2/Achievement
@@ -30,7 +26,7 @@ namespace ATT.DB.Types
         [ExportableData("icon")]
         public long IconFileID { get; set; }
         public long RewardItemID { get; set; }
-        [ExportableData("criteriaTreeID")]
+        [ExportableData("_criteriaTreeID")]
         public long Criteria_tree { get; set; }
         public long Shares_criteria { get; set; }
         public long CovenantID { get; set; }
