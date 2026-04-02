@@ -1885,7 +1885,6 @@ end");
                     case "runeforgepowerID":
                     case "raceID":
                     case "conduitID":
-                    case "criteriaTreeID":
                     case "f":
                     case "filterForRWP":
                     case "u":
@@ -1912,10 +1911,11 @@ end");
                     case "id":
                     case "uid":
                     case "tmogSetID":
-                    case "_multiDifficultyID":
                     case "trackID":
                     case "catalystID":
                     case "skillID":
+                    case "_criteriaTreeID":
+                    case "_multiDifficultyID":
                         {
                             if (value.TryConvert(out long vLong))
                             {
@@ -2092,6 +2092,18 @@ end");
                     // Report all other fields.
                     default:
                         {
+                            // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
+                            // __parent is never merged into DB containers
+                            if (field == "hash" || field == "__parent")
+                                break;
+
+                            // simple assignment for other fields starting with _ since those will be used for metadata in some scenarios and cleaned up by the Parser
+                            if (field[0] == '_')
+                            {
+                                item[field] = value;
+                                break;
+                            }
+
                             // Config-defined fields
                             if (SINGULAR_PLURAL_FIELDS_LONG.TryGetValue(field, out string pluarlFieldName))
                             {
@@ -2105,29 +2117,12 @@ end");
                                 return;
                             }
 
-                            // __parent is never merged into DB containers
-                            if (field == "__parent")
-                            {
-                                break;
-                            }
-
                             // Integer Data Type Fields
                             if (ObjectData.ContainsObjectType(field))
                             {
                                 item[field] = value;
                                 return;
                             }
-
-                            // simple assignment for other fields starting with _ since those will be used for metadata in some scenarios and cleaned up by the Parser
-                            if (field[0] == '_')
-                            {
-                                item[field] = value;
-                                break;
-                            }
-
-                            // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
-                            if (field == "hash")
-                                break;
 
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
