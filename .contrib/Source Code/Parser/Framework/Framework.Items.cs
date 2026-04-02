@@ -1016,12 +1016,17 @@ namespace ATT
                 long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
                 long AssignedItemAppearanceModifierID = 0;
                 if (data.TryGetValue("artifactID", out var artifactIDObj)
-                    && WagoData.TryGetValue((long)artifactIDObj, out ArtifactAppearance artifactAppearance))
+                    && artifactIDObj.TryConvert(out long artifactID)
+                    && WagoData.TryGetValue(artifactID, out ArtifactAppearance artifactAppearance))
                 {
                     ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
                 }
                 else
                 {
+                    if (artifactIDObj != null)
+                    {
+                        LogWarn($"Expected ArtifactID {artifactIDObj} to define ItemAppearanceModifierID but could not convert the value.", data);
+                    }
                     data.TryGetValue("ItemAppearanceModifierID", out AssignedItemAppearanceModifierID);
                 }
 
