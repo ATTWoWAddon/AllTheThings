@@ -19,7 +19,7 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2750] = 171,	-- Shadowlands Alchemy [9.0.1]
 	[2823] = 171,	-- Dragon Isles Alchemy [10.0.0]
 	[2871] = 171,	-- Khaz Algar Alchemy [11.0.0]
-	[2906] = 17,	-- Midnight Alchemy [12.0.0]
+	[2906] = 171,	-- Midnight Alchemy [12.0.0]
 
 	-- Archaeology Skills
 	[794] = 794,	-- Archaeology [7.3.5]
