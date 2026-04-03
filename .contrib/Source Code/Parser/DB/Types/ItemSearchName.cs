@@ -264,6 +264,8 @@ namespace ATT.DB.Types
             { 70, RaceTypeBitIndexes.DRACTHYR_HORDE },
             { 84, RaceTypeBitIndexes.EARTHEN_HORDE },
             { 85, RaceTypeBitIndexes.EARTHEN_ALLIANCE },
+            { 86, RaceTypeBitIndexes.HARANIR_ALLIANCE },
+            { 91, RaceTypeBitIndexes.HARANIR_HORDE },
         };
 
         public bool Has(ClassTypeFlags flags, ClassTypeFlags c)
