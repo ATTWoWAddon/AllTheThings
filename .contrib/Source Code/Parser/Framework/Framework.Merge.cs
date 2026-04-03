@@ -52,14 +52,14 @@ namespace ATT
                             {
                                 foreach (var itemValuePair in itemDB)
                                 {
-                                    MergeKvpToItemDB(itemValuePair);
+                                    MergeKvpToConditionalData(itemValuePair);
                                 }
                             }
                             else if (pair.Value is Dictionary<decimal, object> modItemDB)
                             {
                                 foreach (var itemValuePair in modItemDB)
                                 {
-                                    MergeKvpToItemDB(itemValuePair);
+                                    MergeKvpToConditionalData(itemValuePair);
                                 }
                             }
                             else if (pair.Value is List<object> items)
@@ -68,7 +68,7 @@ namespace ATT
                                 {
                                     if (o is IDictionary<string, object> item)
                                     {
-                                        Items.MergeFromDB(item);
+                                        Objects.MergeFromDB("itemID", item);
                                     }
                                     else
                                     {
@@ -617,19 +617,6 @@ namespace ATT
             }
         }
 
-        private static void MergeKvpToItemDB<TKey>(KeyValuePair<TKey, object> itemValuePair)
-        {
-            if (itemValuePair.Value is IDictionary<string, object> item)
-            {
-                item["itemID"] = itemValuePair.Key;
-                Items.MergeFromDB(item);
-            }
-            else
-            {
-                ThrowBadFormatDB("ItemDB", itemValuePair);
-            }
-        }
-
         public static object ParseAsObject(LuaTable table)
         {
             if (table.Keys.Count > 0)
@@ -900,7 +887,6 @@ namespace ATT
             if (data.ContainsKey(keyID))
             {
                 Objects.MergeFromDB(keyID, data);
-                Items.MergeFromDB(data);
             }
             else if (!relaxed)
             {
