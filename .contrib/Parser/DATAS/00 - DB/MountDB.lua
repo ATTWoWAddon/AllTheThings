@@ -1,7 +1,7 @@
 local Items = ItemDBConditional;
 local MountDB = MountDB;
 local i = function(itemID, spellID)
-	local item = { ["mountID"] = spellID, ["ignoreBonus"] = true, ["_drop"] = { "spellID" } }
+	local item = { ["mountID"] = spellID, ["ignoreBonus"] = true, ["_wipe"] = { "spellID" } }
 	Items[itemID] = item
 	MountDB[spellID] = itemID == 0 and item or Items[itemID]
 end
