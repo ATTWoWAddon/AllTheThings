@@ -23,7 +23,7 @@ namespace ATT
                 if (data.TryGetValue("isGuild", out bool isGuild) && isGuild)
                 {
                     fields.Remove("isGuild");
-                    data.Remove("collectible");
+                    fields.Remove("collectible");
                     WriteShortcut(builder, "gach", "_.CreateGuildAchievement");
                     ExportField(builder, data, fields, "achID");
                 }
