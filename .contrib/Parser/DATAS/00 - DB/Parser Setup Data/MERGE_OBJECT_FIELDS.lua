@@ -4,14 +4,14 @@
 -- Reminder: This should match the 'compressed' field name, not necessarily the field name used in the DATAS folders!
 
 MERGE_OBJECT_FIELDS = {
-	spellID = { "type","learnedAt","requireSkill" },
+	spellID = { "type","learnedAt","requireSkill","skillID" },
 	recipeID = { "requireSkill","learnedAt","skillID" },
 	speciesID = { "pb","crs","itemID" },
 	instanceID = { "isRaid" },
 	mapID = { "maps" },
 	mountID = { "itemID", "_drop" },
 	questID = { "type","sourceQuests","altQuests","isBreadcrumb","c","r","races","lvl","OnTooltip","_type","_area","_category","_text","name","description","nextQuests","isDaily","isMonthly","isYearly","repeatable","g","poiIDs","lc" },
-	itemID = { "_class","_subclass","_inventoryType","ignoreBonus","minReputation","spellID","decorID","crs","mountID","speciesID","recipeID","questID","type","illusionID","b","factionID","repeatable","OnTooltip","requireSkill","buildingID","runeforgepowerID","conduitID","races","c","collectible", "_wipe", "lvl" },
+	itemID = { "_class","_subclass","_inventoryType","ignoreBonus","minReputation","spellID","decorID","crs","mountID","speciesID","recipeID","questID","type","illusionID","b","factionID","repeatable","OnTooltip","requireSkill","buildingID","runeforgepowerID","conduitID","races","c","collectible", "_wipe", "lvl", "r", "q" },
 	achID = { "_criteriaTreeID", "isGuild" },
 }
 
