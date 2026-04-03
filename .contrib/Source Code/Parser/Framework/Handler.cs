@@ -94,5 +94,36 @@ namespace ATT
                 }
             }
         }
+
+        public void RunActions(Data singleData)
+        {
+            long configTrackItemID = (long)Framework.Config["TRACK_itemID"];
+            DataAction action = null;
+
+            foreach (KeyValuePair<DataCondition, ConcurrentQueue<DataAction>> conditionActions in ConditionActions)
+            {
+                if (conditionActions.Key(singleData))
+                {
+                    foreach (var act in conditionActions.Value)
+                    {
+                        // use a custom action if we want to track item changes
+                        if (Debugger.IsAttached || configTrackItemID > 0)
+                        {
+                            action = data =>
+                            {
+                                bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == configTrackItemID;
+                                if (track)
+                                    Framework.Log($"Tracking Item: {tempItemID} change during {act.Method.Name} handler", data);
+                                act(data);
+                                if (track)
+                                    Framework.Log($"Resulting Item: {tempItemID} after {act.Method.Name} handler", data);
+                            };
+                        }
+
+                        (action ?? act)(singleData);
+                    }
+                }
+            }
+        }
     }
 }

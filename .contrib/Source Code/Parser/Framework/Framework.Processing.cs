@@ -49,6 +49,20 @@ namespace ATT
             handler.AddConditionAction(condition, act);
         }
 
+        /// <summary>
+        /// Allows running the Handlers defined for a specific <see cref="ParseStage"/> against a given data object
+        /// </summary>
+        public static void RunHandlerActionForData(ParseStage stage, IDictionary<string, object> data)
+        {
+            if (!Handlers.TryGetValue(stage, out var handler))
+            {
+                LogWarn($"No handlers found for stage {stage}");
+                return;
+            }
+
+            handler.RunActions(data);
+        }
+
         private static void AddDataForHandlers(IDictionary<string, object> data)
         {
             if (CurrentParseStageHandler != null)
@@ -1321,7 +1335,8 @@ namespace ATT
                 // we need to apply that logic to this data specifically as well
                 // but don't capture that this item is actually sourced within the ensemble
                 DoConditionalDataMerging(source);
-                Objects.AssignFilterID(source);
+                RunHandlerActionForData(ParseStage.ConditionalData, source);
+                RunHandlerActionForData(ParseStage.Consolidation, source);
                 // skip consolidation step since all the data is generated for this object and doesn't need further cleanup
                 CaptureDebugDBData(source);
             }
