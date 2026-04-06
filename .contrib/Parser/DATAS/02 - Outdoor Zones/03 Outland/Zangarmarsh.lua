@@ -2213,7 +2213,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(29960, {	-- Captured Firefly (item) / Firefly (PET!)
-						["description"] = "Teaches you how to summon the pet Firefly. This is an extremely rare drop.",
+						["description"] = "This is an extremely rare drop.",
 						["timeline"] = { ADDED_2_1_0 },
 						["cr"] = 20197,	-- Bogflare Needler
 					}),

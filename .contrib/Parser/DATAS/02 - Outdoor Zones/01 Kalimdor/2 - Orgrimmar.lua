@@ -2111,13 +2111,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6611, {	-- To Gadgetzan You Go!
 					-- #if BEFORE 4.0.3
-					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
 					["coord"] = { 57.4, 53.6, ORGRIMMAR },
 					-- #elseif AFTER 8.0.1
-					["description"] = "Becomes available at Classic Cooking skill level 225 when character level requirement is met.",
 					["coord"] = { 32.2, 69.4, ORGRIMMAR },
 					-- #else
-					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
 					["coord"] = { 32.2, 69.4, ORGRIMMAR },
 					-- #endif
 					["qg"] = 3399,	-- Zamja
@@ -2394,7 +2391,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 16,
 				}),
 				q(6608, {	-- You Too Good.
-					["description"] = "Requires 225 Skill in Classic Fishing",
 					["qg"] = 3332,	-- Lumak <Fishing Trainer>
 					["coords"] = {
 						-- #if AFTER CATA
