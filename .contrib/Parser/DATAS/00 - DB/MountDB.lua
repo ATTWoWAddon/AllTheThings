@@ -43,9 +43,12 @@ i(239695, 0); -- Scarlet Steed
 -- TBC Classic --
 i(184865, 348459);	-- Reawakened Phase-Hunter
 
--- TBC Classic 2026 --
+-- TBC Anniversary 2026 --
 i(260438, 1266345);	-- Cerulean Phase-Hunter
 i(260759, 1266866);	-- Reins of the Starshard Netherdrake
+-- #if CLASSIC_ANNIVERSARY
+i(273150, 1291813); -- Voidfeather Dragonhawk
+-- #endif
 
 -- Wrath Classic --
 i(192455, 372677);	-- Kalu'ak Whalebone Glider

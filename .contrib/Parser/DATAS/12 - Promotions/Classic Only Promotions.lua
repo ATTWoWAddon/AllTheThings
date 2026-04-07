@@ -129,6 +129,53 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
 				["u"] = REMOVED_FROM_GAME,
 			})),
+			-- #if CLASSIC_ANNIVERSARY
+			-- 2026 March 17 through May 15
+			q(96254, {	-- An Unexpected Delivery
+				["altQuests"] = { 96253 },	-- An Unexpected Delivery (Innkeepers)
+				["timeline"] = { "ADDED_2_5_5", "REMOVED_4_2_0" }, -- Timeout Correctly ends: Available until May 16, 2026, 10:00 am PDT (18:00 BST). https://worldofwarcraft.blizzard.com/en-us/news/24267942
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 28.2, 75.8, STRANGLETHORN_VALE },
+					-- #endif
+				},
+				["maps"] = {
+					THE_EXODAR,
+					IRONFORGE,
+					STORMWIND_CITY,
+					UNDERCITY,
+					THUNDER_BLUFF,
+					ORGRIMMAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
+				},
+				["crs"] = {
+					16739,	-- Caregiver Breel <Innkeeper>
+					5111,	-- Innkeeper Firebrew <Innkeeper>
+					6740,	-- Innkeeper Allison <Innkeeper>
+					6741,	-- Innkeeper Norman <Innkeeper>
+					6746,	-- Innkeeper Pala <Innkeeper>
+					6929,	-- Innkeeper Gryshka <Innkeeper>
+					16618,	-- Innkeeper Velandra <Innkeeper>
+					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+					19046,	-- Minalei (ALDOR)
+				},
+				["groups"] = {
+					i(273162, {	-- Unexpected Gift
+						["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 }, -- Timeout Correctly ends: Available until May 16, 2026, 10:00 am PDT (18:00 BST). https://worldofwarcraft.blizzard.com/en-us/news/24267942
+						["groups"] = {
+							i(273150, {	-- Voidfeather Dragonhawk
+								["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 }, -- Timeout Correctly ends: Available until May 16, 2026, 10:00 am PDT (18:00 BST). https://worldofwarcraft.blizzard.com/en-us/news/24267942
+								["description"] = "Earned by completing the introductory questline for Midnight in retail servers",
+									}),
+								},
+							}),
+						}
+					}),
+		-- #endif
 		},
 	}),
 	expansion(EXPANSION.WRATH, {
