@@ -594,13 +594,6 @@ namespace ATT
         {
             // Clean out any temporary containers
             Objects.AllContainers.Keys.Where(k => k[0] == '_').ToArray().Select(k => Objects.AllContainers.Remove(k)).Count();
-
-            // Go through and merge all of the item species data into the item containers.
-            foreach (var pair in Items.AllItemsWithSpecies)
-            {
-                var item = Items.GetNull(pair.Key);
-                if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
-            }
         }
 
         /// <summary>

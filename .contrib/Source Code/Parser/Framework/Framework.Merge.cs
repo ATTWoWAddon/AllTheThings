@@ -139,8 +139,8 @@ namespace ATT
                                 {
                                     if (itemValuePair.Value is IDictionary<string, object> item)
                                     {
-                                        var itemSpecies = Items.GetWithSpecies(itemValuePair.Key);
-                                        foreach (var p in item) Items.Merge(itemSpecies, p.Key, p.Value);
+                                        item["itemID"] = itemValuePair.Key;
+                                        Objects.MergeFromDB("itemID", item);
                                     }
                                     else
                                     {

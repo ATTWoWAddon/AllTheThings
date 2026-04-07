@@ -33,11 +33,6 @@ namespace ATT
             private static ConcurrentDictionary<decimal, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<decimal, bool>();
 
             /// <summary>
-            /// All of the items with species data that have been parsed sorted by Item ID.
-            /// </summary>
-            private static IDictionary<long, IDictionary<string, object>> ITEMS_WITH_SPECIES = new ConcurrentDictionary<long, IDictionary<string, object>>();
-
-            /// <summary>
             /// All of the specific ItemIDs and each corresponding SourceID value
             /// </summary>
             private static IDictionary<decimal, long> SOURCES = new ConcurrentDictionary<decimal, long>();
@@ -96,24 +91,6 @@ namespace ATT
                     yield break;
                 }
             }
-
-
-
-            /// <summary>
-            /// All of the items that are in the database.
-            /// </summary>
-            public static IDictionary<long, IDictionary<string, object>> AllItemsWithSpecies
-            {
-                get
-                {
-                    return ITEMS_WITH_SPECIES;
-                }
-            }
-
-            /// <summary>
-            /// All Item SourceIDs that are in the database.
-            /// </summary>
-            public static IDictionary<decimal, long> AllItemSourceIDs => SOURCES;
 
             /// <summary>
             /// The total number of items loaded into the database.
@@ -185,23 +162,6 @@ namespace ATT
 
                 // Attempt to get an existing item dictionary.
                 return GetNull(itemID);
-            }
-
-            /// <summary>
-            /// Get the Item Species container which matches the data
-            /// </summary>
-            /// <param name="itemID">The Item ID.</param>
-            /// <returns>A dictionary representing the item.</returns>
-            public static IDictionary<string, object> GetWithSpecies(long itemID)
-            {
-                // Attempt to get an existing item dictionary.
-                if (ITEMS_WITH_SPECIES.TryGetValue(itemID, out IDictionary<string, object> obj))
-                {
-                    return obj;
-                }
-
-                // Create a new item dictionary.
-                return ITEMS_WITH_SPECIES[itemID] = new Dictionary<string, object>();
             }
 
             /// <summary>
