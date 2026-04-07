@@ -870,7 +870,7 @@ namespace ATT
                 if (data.ContainsKey("mountID")) return Filters.Mount;
                 if (data.ContainsKey("speciesID")) return Filters.BattlePet;
                 if (data.ContainsKey("illusionID")) return Filters.Illusion;
-                if (data.ContainsKey("professionID")) return Filters.Recipe;
+                if (data.ContainsAnyKey("professionID", "recipeID")) return Filters.Recipe;
                 if (data.ContainsKey("questID")) return Filters.Quest;
                 if (data.ContainsKey("achID")) return Filters.Achievement;
 
