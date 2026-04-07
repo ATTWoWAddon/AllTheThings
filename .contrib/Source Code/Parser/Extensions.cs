@@ -279,6 +279,29 @@ namespace ATT
         }
 
         /// <summary>
+        /// Returns the KVPs of the dictionary except those which match the keys specified in the "_drop" field of the dictionary, which is expected to be a list of strings representing keys to drop from the dictionary for certain processing contexts (such as conditions or providers which should not be merged with other conditions/providers containing the same keys)
+        /// </summary>
+        public static IEnumerable<KeyValuePair<string, object>> WithoutDrops(this IDictionary<string, object> dict, object drops = null)
+        {
+            if (dict != null)
+            {
+                if (drops is IDictionary<string, object> dropsDict && !dropsDict.TryGetValue("_drop", out drops))
+                {
+                    return dict;
+                }
+                if (drops is null && !dict.TryGetValue("_drop", out drops))
+                {
+                    return dict;
+                }
+
+                HashSet<string> dropset = drops.AsTypedEnumerable<string>().ToHashSet();
+                return dict.AsEnumerable().Where(kvp => !dropset.Contains(kvp.Key));
+            }
+
+            return dict;
+        }
+
+        /// <summary>
         /// Get a dictionary from the dictionary.
         /// </summary>
         /// <param name="dict">The dictionary.</param>

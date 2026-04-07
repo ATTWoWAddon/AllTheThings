@@ -2232,7 +2232,9 @@ end");
                 // make sure we somehow do not try to merge something into itself, since that's a bit pointless
                 if (ReferenceEquals(item, data))
                     return;
-                foreach (var pair in data) Merge(item, pair.Key, pair.Value);
+
+                // don't merge _drop fields into a data which defines those fields to be dropped
+                foreach (var pair in data.WithoutDrops(item)) Merge(item, pair.Key, pair.Value);
             }
 
             /// <summary>
@@ -2373,7 +2375,6 @@ end");
                 }
 
                 // Merge the entry with the data.
-                PreMerge(entry, data2);
                 Merge(entry, data2);
             }
 

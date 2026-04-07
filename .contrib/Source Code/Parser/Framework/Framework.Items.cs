@@ -748,33 +748,19 @@ namespace ATT
                 }
 
                 // Attempt to extract the itemID from the data table.
-                if (data.ContainsKey("itemID") ||
-                    data.ContainsKey("toyID"))
+                if (data.ContainsKey("itemID") || data.ContainsKey("toyID"))
                 {
                     var item = conditionalMerge ? GetNull(data) : Get(data);
                     if (item != null)
                     {
-                        foreach (var pair in data) Merge(item, pair.Key, pair.Value);
+                        // don't merge _drop fields into a data which defines those fields to be dropped
+                        foreach (var pair in data.WithoutDrops(item)) Merge(item, pair.Key, pair.Value);
                     }
                     else if (data["itemID"].TryConvert(out long itemID) && itemID > 0)
                     {
                         LogDebug($"INFO: Conditional Item data not merged: {itemID} =", data);
                     }
                 }
-            }
-
-
-            /// <summary>
-            /// Merge the data into the item database.
-            /// NOTE: Only data containing an itemID will merge.<para/>
-            /// Specify conditional merge to skip creating an ItemDB entry if it does not already exist
-            /// </summary>
-            /// <param name="data">The data to merge into the item database.</param>
-            public static void MergeFromDB(IDictionary<string, object> data, bool conditionalMerge = false)
-            {
-                // TODO: This is just Crieve trying to make it more clear where the source of this information is coming from.
-                // I'd like to (at some point) make all information from ItemDB always attribute and information from objects be limited to context.
-                Merge(data, conditionalMerge);
             }
 
             /// <summary>

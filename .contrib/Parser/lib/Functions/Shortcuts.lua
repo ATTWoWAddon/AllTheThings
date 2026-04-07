@@ -684,6 +684,7 @@ ChronicleOfLostMemories = function(t)
 			190598,	-- Memory of Unity (WARRIOR)
 		},
 	}
+	t._drop = { "customCollect" }
 	return i(184665, t)	-- Chronicle of Lost Memories
 end
 
