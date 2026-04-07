@@ -503,7 +503,7 @@ namespace ATT
                     {
                         Framework.LogWarn($"Potentially unexpected value type conversion for {obj} ({obj?.GetType().FullName}) => {typeof(T).FullName}");
                     }
-                    if (debugWarnOnConvert)
+                    else if (debugWarnOnConvert)
                     {
                         Framework.LogDebugWarn($"Potentially unexpected value type conversion for {obj} ({obj?.GetType().FullName}) => {typeof(T).FullName}");
                     }

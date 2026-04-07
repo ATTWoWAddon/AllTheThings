@@ -1595,7 +1595,7 @@ end");
                 var newList = ConvertToList(item, field, value);
                 if (newList == null)
                 {
-                    LogError($"Failed merging int-array '{field}' from {ToJSON(value)}", item);
+                    LogError($"Failed merging int-array '{field}' from [{ToJSON(value)}]", item);
                     return;
                 }
 
@@ -1604,7 +1604,7 @@ end");
                 {
                     if (item.ContainsKey(field))
                     {
-                        LogWarn($"Replacing non-list type data stored in '{field}'", item);
+                        LogWarn($"Replacing non-list type data [{ToJSON(item[field])}] stored in '{field}'", item);
                     }
                     item[field] = oldList = new List<object>();
                 }
@@ -1958,19 +1958,20 @@ end");
                     case "_spells":
                     case "_objectiveItems":
                     case "_spellQuests":
+                    case "_items":
+                    case "_encounter":
                     case "qis":
                     case "poiIDs":
-                        {
-                            MergeIntegerArrayData(item, field, value);
-                            break;
-                        }
+                        MergeIntegerArrayData(item, field, value);
+                        break;
+
                     // temp special case for 'lvl', only include data if it is in the expected new format of a list
                     case "lvl":
                         if (value is List<object> lvls)
                         {
                             MergeIntegerArrayData(item, field, lvls);
                         }
-                        else if (PreProcessorTags.Contains("CRIEVE")) item[field] = Convert.ToInt64(value);
+                        else if (PreProcessorTags.Contains("CRIEVE")) MergeIntegerArrayData(item, field, value);
                         break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
@@ -2031,7 +2032,7 @@ end");
                                 return;
                             }
                             var newRep = new List<object>();
-                            foreach (var repArg in newList) newRep.Add(Convert.ToInt64(repArg));
+                            foreach (var repArg in newList.AsTypedEnumerable<long>(warnOnConvert: true)) newRep.Add(repArg);
                             if (newRep.Count > 0)
                             {
                                 item[field] = newRep;
@@ -2066,21 +2067,6 @@ end");
                     case "nextRecipeID":
                         {
                             return;
-                        }
-
-                    case "_items":
-                    case "_encounter":
-                        {
-                            List<long> list = CompressToList<long>(value);
-                            if (list != null)
-                            {
-                                item[field] = list;
-                            }
-                            else
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
                         }
 
                     // Report all other fields.
