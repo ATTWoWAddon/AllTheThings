@@ -1676,10 +1676,12 @@ namespace ATT
         }
         #endregion
         #region Lua Conversion
+        static bool IsIconValid(object assetID) => (assetID.TryConvert(out long lID) && IsIconValid(lID))
+                                                    || (assetID.TryConvert(out string sID) && IsIconValid(sID));
         static bool IsIconValid(long assetID)
         {
             // If Blizzard isn't being friendly to a game flavor (TBC!), we need to check the validity of icons before exporting them.
-            if (Framework.BLIZZ_ICONS_ARE_HARD)
+            if (BLIZZ_ICONS_ARE_HARD)
             {
                 return AssetDB.ContainsKey(assetID);
             }
@@ -1688,7 +1690,7 @@ namespace ATT
         static bool IsIconValid(string icon)
         {
             // If Blizzard isn't being friendly to a game flavor (TBC!), we need to check the validity of icons before exporting them.
-            if (Framework.BLIZZ_ICONS_ARE_HARD)
+            if (BLIZZ_ICONS_ARE_HARD)
             {
                 if (long.TryParse(icon, out long assetID))
                 {

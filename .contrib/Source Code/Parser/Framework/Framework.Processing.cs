@@ -933,6 +933,16 @@ namespace ATT
                 else MarkPhaseAsRequired(phase);
             }
 
+            // If this has an Icon, make sure it's valid
+            if (data.TryGetValue("icon", out object icon))
+            {
+                if (!IsIconValid(icon))
+                {
+                    LogWarn($"Invalid icon '{icon}' specified, removing field.", data);
+                    data.Remove("icon");
+                }
+            }
+
             return true;
         }
 
