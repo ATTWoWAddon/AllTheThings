@@ -1813,22 +1813,19 @@ end");
                     case "sourceIgnored":
                     case "nomerge":
                     case "zone-text-continent":
-                        {
-                            item[field] = Convert.ToBoolean(value);
-                            break;
-                        }
+                        MergeObjectField<bool>(item, field, value);
+                        break;
 
                     // String/Integer Data Type Fields
                     case "icon":
                         {
                             if (value is string)
                             {
-                                item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
+                                MergeObjectField<string>(item, field, value);
                             }
                             else
                             {
-                                var icon = Convert.ToInt64(value);
-                                if (Framework.IsIconValid(icon)) item[field] = icon;
+                                MergeObjectField<long>(item, field, value);
                             }
                             break;
                         }
@@ -1843,17 +1840,8 @@ end");
                     case "order":
                     case "SortType":
                     case "an":
-                        {
-                            if (value.TryConvert(out string vString))
-                            {
-                                item[field] = vString.Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
-                            }
-                            else
-                            {
-                                LogError($"Expected 'string' type value for {field}", item);
-                            }
-                            break;
-                        }
+                        MergeObjectField<string>(item, field, value);
+                        break;
 
                     // Decimal Data Type Fields (requires higher precision than float)
                     case "headerID":
@@ -1875,17 +1863,8 @@ end");
                     //case "dr":
                     case "modelRotation":
                     case "modelScale":
-                        {
-                            if (value.TryConvert(out float vFloat))
-                            {
-                                item[field] = vFloat;
-                            }
-                            else
-                            {
-                                LogError($"Invalid Numeric Format for Merge - {field}:{value}", item);
-                            }
-                            break;
-                        }
+                        MergeObjectField<float>(item, field, value);
+                        break;
 
                     // Integer Data Type Fields
                     //case "questID":
@@ -1940,17 +1919,8 @@ end");
                     case "skillID":
                     case "_criteriaTreeID":
                     case "_multiDifficultyID":
-                        {
-                            if (value.TryConvert(out long vLong))
-                            {
-                                item[field] = vLong;
-                            }
-                            else
-                            {
-                                LogError($"Invalid Numeric Format for Merge - {field}:{value}");
-                            }
-                            break;
-                        }
+                        MergeObjectField<long>(item, field, value);
+                        break;
 
                     // Integer -> Integer-Array Data Type conversion
                     // now handled via root.config
@@ -2161,6 +2131,18 @@ end");
                             LogWarn($"Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}", item);
                             break;
                         }
+                }
+            }
+
+            private static void MergeObjectField<T>(IDictionary<string, object> data, string field, object value)
+            {
+                if (value.TryConvert(out T v))
+                {
+                    data[field] = v;
+                }
+                else
+                {
+                    LogError($"Expected '{typeof(T).Name}' convertible value for merge! {field} <= {value}", data);
                 }
             }
 
