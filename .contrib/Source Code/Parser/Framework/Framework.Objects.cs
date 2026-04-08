@@ -2076,6 +2076,12 @@ end");
                     case "minReputation":
                     case "maxReputation":
                         {
+                            if (item.ContainsKey(field))
+                            {
+                                LogDebugWarn($"Ignoring merge for field [{field}] since it already contains data.", item);
+                                break;
+                            }
+
                             if (!(value is List<object> newList))
                             {
                                 LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
