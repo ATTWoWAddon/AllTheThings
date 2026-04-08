@@ -11,7 +11,7 @@ PROFESSION_NODES_HEADER = createHeader({
 		-- ko = "",
 		-- pt = "",
 		-- ru = "",
-		-- cn = "",
+		cn = "专业节点",
 		-- tw = "",
 	},
 });
