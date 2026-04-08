@@ -1344,6 +1344,7 @@ namespace ATT
                 // skip consolidation step since all the data is generated for this object and doesn't need further cleanup
                 CaptureDebugDBData(source);
             }
+            SortByName(rawSources);
             Objects.Merge(data, "g", rawSources);
 
             // when Blizzard references a questID and tmogSetID which conflict from the same SpellID on an Item, we end up with one Item potentially granting 2 TransmogSets

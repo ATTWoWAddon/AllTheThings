@@ -182,9 +182,15 @@ namespace ATT
 
                 // get the name for the general Item
                 if (data.TryGetValue("itemID", out decimal itemID))
-                    GetNull(itemID)?.TryGetValue("name", out name);
+                {
+                    if (GetNull(itemID)?.TryGetValue("name", out name) == true)
+                        return true;
 
-                return name != null;
+                    // get the name from the shared data
+                    return Objects.TryGetSharedDataByKey("itemID", itemID, "name", out name);
+                }
+
+                return false;
             }
             #endregion
 

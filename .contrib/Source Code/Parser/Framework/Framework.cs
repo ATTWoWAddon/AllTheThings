@@ -947,6 +947,25 @@ namespace ATT
         }
 
         /// <summary>
+        /// Attempt to sort the list by the name field.
+        /// </summary>
+        /// <param name="list">The list of objects.</param>
+        public static void SortByName(List<IDictionary<string, object>> list)
+        {
+            // If the list is null, then return immediately.
+            if (list == null) return;
+
+            // Sort the List by Name / Bonus ID / Mod ID
+            list.Sort(SortByName);
+
+            // Check to see if the list of objects has a relative g field.
+            foreach (var objRef in list)
+            {
+                SortByName(objRef);
+            }
+        }
+
+        /// <summary>
         /// Sort the dictionary by its name field.
         /// </summary>
         /// <param name="a">Object Dictionary A.</param>
@@ -1006,13 +1025,13 @@ namespace ATT
                     {
                         // If they have the same name, then sort by BonusID/ModID.
                         // If a contains a bonusID, then try to get it.
-                        if (a.TryGetValue("bonusID", out aRef))
+                        if (a.TryGetValue("bonusID", out long aBonus))
                         {
                             // If b contains a bonusID, then try to get it.
-                            if (b.TryGetValue("bonusID", out bRef))
+                            if (b.TryGetValue("bonusID", out long bBonus))
                             {
                                 // Both have a bonusID, compare them!
-                                return Convert.ToInt64(aRef).CompareTo(bRef);
+                                return aBonus.CompareTo(bBonus);
                             }
 
                             // BonusID goes first
@@ -1020,13 +1039,13 @@ namespace ATT
                         }
 
                         // If a contains a modID, then try to get it.
-                        if (a.TryGetValue("modID", out aRef))
+                        if (a.TryGetValue("modID", out long aMod))
                         {
                             // If b contains a modID, then try to get it.
-                            if (b.TryGetValue("modID", out bRef))
+                            if (b.TryGetValue("modID", out long bMod))
                             {
                                 // Both have a modID, compare them!
-                                return Convert.ToInt64(aRef).CompareTo(bRef);
+                                return aMod.CompareTo(bMod);
                             }
 
                             // ModID goes first

@@ -546,6 +546,23 @@ namespace ATT
             /// Should only be used when a specific known key and keyValue for SharedData allowed by MERGE_OBJECT_FIELDS
             /// needs to merge
             /// </summary>
+            internal static bool TryGetSharedDataByKey<T>(string key, object keyValueObj, string field, out T val)
+            {
+                val = default;
+                if (!SharedDataByPrimaryKey.TryGetValue(key, out var container))
+                    return false;
+                if (!keyValueObj.TryConvert(out decimal keyValue) || !container.TryGetValue(keyValue, out ConcurrentDictionary<string, object> commonData))
+                    return false;
+                if (!commonData.TryGetValue(field, out object obj) || !obj.TryConvert(out val))
+                    return false;
+
+                return true;
+            }
+
+            /// <summary>
+            /// Should only be used when a specific known key and keyValue for SharedData allowed by MERGE_OBJECT_FIELDS
+            /// needs to merge
+            /// </summary>
             private static void MergedSharedDataKeyIntoObject(IDictionary<string, object> data, string key, object keyValueObj)
             {
                 if (!SharedDataByPrimaryKey.TryGetValue(key, out var container))
