@@ -241,11 +241,12 @@ namespace ATT
             Validator.OnlyClean = true;
             ProcessingFunction = DataConsolidation;
             ProcessContainers();
-            RunCurrentParseStageHandlers();
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
             if (worldDrops != null) SortByName(worldDrops);
+
+            RunCurrentParseStageHandlers();
 
             // Build the Unsorted Container.
             CurrentParseStage = ParseStage.UnsortedGeneration;

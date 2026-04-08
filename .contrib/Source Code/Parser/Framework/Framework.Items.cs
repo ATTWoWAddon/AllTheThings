@@ -173,14 +173,15 @@ namespace ATT
             public static bool TryGetName(IDictionary<string, object> data, out string name)
             {
                 // get the name of the Sourced data
-                data.TryGetValue("name", out name);
+                if (data.TryGetValue("name", out name))
+                    return true;
 
                 // get the name for matching specific Item
-                if (name == null)
-                    GetNull(data)?.TryGetValue("name", out name);
+                if (GetNull(data)?.TryGetValue("name", out name) == true)
+                    return true;
 
                 // get the name for the general Item
-                if (name == null && data.TryGetValue("itemID", out decimal itemID))
+                if (data.TryGetValue("itemID", out decimal itemID))
                     GetNull(itemID)?.TryGetValue("name", out name);
 
                 return name != null;

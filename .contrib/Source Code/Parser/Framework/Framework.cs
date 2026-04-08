@@ -995,10 +995,10 @@ namespace ATT
             if (b == null) return 1;
 
             // If a contains a name, then try to get it.
-            if (a.ContainsKey("itemID") && Items.Get(a).TryGetValue("name", out string aRef))
+            if (Items.TryGetName(a, out string aRef))
             {
                 // If b contains a name, then try to get it.
-                if (b.ContainsKey("itemID") && Items.Get(b).TryGetValue("name", out string bRef))
+                if (Items.TryGetName(b, out string bRef))
                 {
                     // Both have a name, compare them!
                     var first = Compare(aRef, bRef);
