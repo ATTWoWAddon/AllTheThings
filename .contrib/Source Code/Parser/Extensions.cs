@@ -680,19 +680,24 @@ namespace ATT
         public static bool IsEquivalent(this object val1, object val2)
         {
             if (Equals(val1, val2))
-            {
                 return true;
-            }
+
+            if (val1 is null || val2 is null)
+                return false;
 
             if (val1 is ICollection<object> col1 && val2 is ICollection<object> col2)
-            {
                 return col1.Matches(col2);
-            }
 
             if (val1 is IEnumerable<object> arr1 && val2 is IEnumerable<object> arr2)
-            {
                 return arr1.Matches(arr2);
+
+            try
+            {
+                var val1AsVal2Type = Convert.ChangeType(val1, val2.GetType());
+                if (Equals(val1AsVal2Type, val2))
+                    return true;
             }
+            catch { }
 
             return false;
         }

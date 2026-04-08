@@ -650,12 +650,15 @@ namespace ATT
                     }
                     else
                     {
-                        // Don't replace existing values with different merge DB values
-                        if (existingVal != null && !Equals(existingVal, kvp.Value) && !(existingVal is IEnumerable enumerableVal))
+                        // Don't replace existing raw values with different merge DB values
+                        if (existingVal != null && !(existingVal is IEnumerable enumerableVal))
                         {
-                            LogDebugWarn($"Ignoring different value on merge of Object. {kvp.Key}='{ToJSON(existingVal)}' from DB='{ToJSON(kvp.Value)}'", data);
+                            if (!existingVal.IsEquivalent(kvp.Value))
+                            {
+                                LogDebugWarn($"Ignoring different value on merge of Object. {kvp.Key}='{ToJSON(existingVal)}' from DB='{ToJSON(kvp.Value)}'", data);
+                            }
                         }
-                        else
+                        else if (!existingVal.IsEquivalent(kvp.Value))
                         {
                             // this allows merging any IEnumerable value
                             LogDebugWarn($"Merging additional value into Object.{kvp.Key}='{ToJSON(existingVal)}' from DB='{ToJSON(kvp.Value)}'", data);
