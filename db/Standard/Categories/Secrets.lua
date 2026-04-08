@@ -526,13 +526,13 @@ hqt(93765,{awp=120001,coords={
 [680]={{82.5,67.4}}},description="Head to the southeast of Suramar near the coordinates. Use your Torch of Pyrreth to find a wandering invisible ghost, once found, an extra action button will spawn an Orb of Shadows.\n\nYou must take this orb to Golk the Rumble in the center of Azsuna at the second coordinates and talk to them. The player carrying the orb cannot take damage, jump, or swim, and enemies will spark periodically to attack them, a group of players and water walking of some kind will make this easier. Don't be over water for too long though or your buff will drop. The Starry-Eyed Goggles will stop the Darkness debuff.\n\nFully lights up the 12 O'Clock Basin.",g={
 i(262432,{b=1,g={
 en(246973,{questID=91636,spellID=1244440,tmogSetID=5152,g={
-s(293223,246966,{f=2}),
-s(293224,246967,{f=2}),
-s(293225,246968,{f=2}),
-s(293226,246969,{f=2}),
-s(293227,246970,{f=2}),
 s(293228,246971,{f=2}),
-s(293229,246972,{f=2})}})}}),
+s(293227,246970,{f=2}),
+s(293226,246969,{f=2}),
+s(293225,246968,{f=2}),
+s(293224,246967,{f=2}),
+s(293229,246972,{f=2}),
+s(293223,246966,{f=2})}})}}),
 i(262559,{b=1,spellID=1268983})}}),
 o(616681,{awp=120001,coords={
 [46]={{68.5,20.9}}},cost={{"i",262559,1}},description="In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having posession of the Spare Key.",providers={{"i",228966},{"i",260533}},g={

@@ -173,21 +173,31 @@ namespace ATT
             public static bool TryGetName(IDictionary<string, object> data, out string name)
             {
                 // get the name of the Sourced data
-                if (data.TryGetValue("name", out name))
+                if (data.TryGetValue("name", out name) || data.TryGetValue("_name", out name))
                     return true;
 
                 // get the name for matching specific Item
                 if (GetNull(data)?.TryGetValue("name", out name) == true)
+                {
+                    data["_name"] = name;
                     return true;
+                }
 
                 // get the name for the general Item
                 if (data.TryGetValue("itemID", out decimal itemID))
                 {
                     if (GetNull(itemID)?.TryGetValue("name", out name) == true)
+                    {
+                        data["_name"] = name;
                         return true;
+                    }
 
                     // get the name from the shared data
-                    return Objects.TryGetSharedDataByKey("itemID", itemID, "name", out name);
+                    if (Objects.TryGetSharedDataByKey("itemID", itemID, "name", out name))
+                    {
+                        data["_name"] = name;
+                        return true;
+                    }
                 }
 
                 return false;

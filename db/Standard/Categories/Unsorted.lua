@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local de,en,flt,h,i,mnt,p,prof,q,r,s,x=_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateExpansion;
+local de,en,flt,h,i,mnt,p,q,s,x=_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
 categories.Unsorted={
 x(12,{
 x(12.0001,{awp=120001,g={
@@ -84,13 +84,13 @@ i(267277,{f=55})}}),
 x(12.0000001,{awp=120000,g={
 h(-44,{
 i(237505),
-s(293051,246514,{b=1,f=57,lvl=78,requireSkill=2918,spellID=1234140}),
-s(293052,246515,{b=1,f=57,lvl=78,requireSkill=2912,spellID=1234164}),
-s(293053,246521,{b=1,f=57,lvl=78,requireSkill=2906,spellID=1234188}),
-s(293054,246522,{b=1,f=57,lvl=78,requireSkill=2908,spellID=1234180}),
+s(293051,246514,{b=1,f=57,lvl=78,requireSkill=197,spellID=1234140}),
+s(293052,246515,{b=1,f=57,lvl=78,requireSkill=182,spellID=1234164}),
+s(293053,246521,{b=1,f=57,lvl=78,requireSkill=171,spellID=1234188}),
+s(293054,246522,{b=1,f=57,lvl=78,requireSkill=185,spellID=1234180}),
 i(238215,{b=1,spellID=1218405}),
 i(246496),
-s(293055,246523,{b=1,f=57,lvl=78,requireSkill=2909,spellID=1234176}),
+s(293055,246523,{b=1,f=57,lvl=78,requireSkill=333,spellID=1234176}),
 s(295419,248245,{b=1,f=2}),
 i(256136,{b=1,spellID=1260024}),
 i(247787)}),
@@ -1897,7 +1897,7 @@ i(160830),
 i(160438),
 i(160445,{b=1,spellID=271802}),
 i(160446,{b=1}),
-i(160517,{f=55,lvl=110,spellID=274910}),
+i(160517,{f=55,spellID=274910}),
 i(160575),
 i(160576),
 i(160659,{b=1,spellID=272922}),
@@ -2192,7 +2192,7 @@ i(153658,{f=111}),
 i(153659,{f=111}),
 i(153660,{f=111}),
 i(154170,{b=1,lvl=50,requireSkill=165}),
-i(154709,{b=1,lvl=110}),
+i(154709,{b=1}),
 i(156632,{b=1,lvl=50,requireSkill=171,spellID=260385}),
 i(156633,{b=1,lvl=50,requireSkill=171,spellID=260385}),
 i(156634,{b=1,f=55,lvl=50,requireSkill=171,spellID=260385}),
@@ -3034,32 +3034,6 @@ i(170156),
 i(169977,{b=1}),
 i(169978,{b=1}),
 i(169979,{b=1})}})}),
-x(4,{
-flt(200,{
-prof(185,{
-r(6417,{b=1,itemID=44977,requireSkill=185})}),
-prof(773,{
-r(71101,{itemID=50166,requireSkill=773}),
-r(71015,{itemID=50167,requireSkill=773}),
-r(71102,{itemID=50168,requireSkill=773})})})}),
-x(6,{
-flt(200,{
-prof(333,{
-i(120135,{b=1,f=200,lvl={10},requireSkill=333})})})}),
-x(7,{
-flt(200,{
-prof(773,{
-i(137728,{b=1,f=200,lvl={10},requireSkill=773}),
-r(192848,{b=1,itemID=137740,lvl={10},requireSkill=773}),
-i(137741,{b=1,f=200,lvl={10},requireSkill=773}),
-i(137742,{b=1,f=200,lvl={10},requireSkill=773}),
-i(137743,{b=1,f=200,lvl={10},requireSkill=773}),
-i(137744,{b=1,f=200,lvl={10},requireSkill=773}),
-r(225523,{b=1,itemID=141031,lvl={10},requireSkill=773}),
-r(225526,{b=1,itemID=141034,lvl={10},requireSkill=773}),
-r(225537,{b=1,itemID=141045,lvl={10},requireSkill=773}),
-r(225542,{b=1,itemID=141050,lvl={10},requireSkill=773}),
-r(240269,{itemID=147118,requireSkill=773})})})}),
 h(-45,{
 q(11621,{description="Area: |cFFf09f26Borean Tundra|r"}),
 q(11622,{description="Area: |cFFf09f26Borean Tundra|r"}),
