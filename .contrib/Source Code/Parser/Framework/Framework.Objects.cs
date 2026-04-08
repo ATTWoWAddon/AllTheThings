@@ -939,7 +939,7 @@ namespace ATT
 
                 data.TryGetValue("spellID", out long spellID);
                 // get the name of the recipe item (i.e. Technique: blah blah)
-                Items.TryGetName(data, out string recipeItemName);
+                data.TryGetName(out string recipeItemName);
                 data.TryGetValue("itemID", out object itemID);
 
                 // have we already Sourced this Recipe? then assume it's also granted by another Item
@@ -1098,8 +1098,7 @@ namespace ATT
                     {
                         if (o.ContainsKey("itemID"))
                         {
-                            var itemData = Items.GetNull(o);
-                            if (itemData != null && itemData.TryGetValue("name", out object nameRef)) o["name"] = nameRef;
+                            if (o.TryGetName(out string nameRef)) o["name"] = nameRef;
                             result.Add(o);
                         }
                         if (o.TryGetValue("g", out List<object> g)) ExportItems(g, result);
@@ -1127,11 +1126,11 @@ namespace ATT
                     ExportItems(unsorted, sortedList);
                     sortedList.Sort(delegate (IDictionary<string, object> a, IDictionary<string, object> b)
                     {
-                        if (a.TryGetValue("name", out object nameRefA))
+                        if (a.TryGetName(out string nameRefA))
                         {
-                            if (b.TryGetValue("name", out object nameRefB))
+                            if (b.TryGetName(out string nameRefB))
                             {
-                                return nameRefA.ToString().CompareTo(nameRefB.ToString());
+                                return nameRefA.CompareTo(nameRefB);
                             }
                         }
                         return 0;
@@ -1143,7 +1142,7 @@ namespace ATT
                         if (item.TryGetValue("itemID", out long itemID))
                         {
                             itemNameBuilder.Clear().Append("i(").Append(itemID).Append("),");
-                            if (item.TryGetValue("name", out string name)) itemNameBuilder.Append("\t-- ").Append(name.Replace("]", "").Replace("[", ""));
+                            if (item.TryGetName(out string name)) itemNameBuilder.Append("\t-- ").Append(name.Replace("]", "").Replace("[", ""));
                             itemNameBuilder.AppendLine();
                             builder2.Append(itemNameBuilder);
 
@@ -1362,7 +1361,7 @@ end");
                     var entry = db[key];
                     if (entry.Any())
                     {
-                        if (entry.TryGetValue("name", out object entryName))
+                        if (entry.TryGetName(out string entryName))
                         {
                             // Keep the name field for quests, so long as they don't have an item.
                             // They are generally manually assigned in the database.

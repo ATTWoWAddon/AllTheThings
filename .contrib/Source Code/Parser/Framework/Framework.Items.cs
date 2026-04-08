@@ -164,44 +164,6 @@ namespace ATT
                 return GetNull(itemID);
             }
 
-            /// <summary>
-            /// Returns the 'name' field of the data, or the corresponding name based on the 'itemID' of the data if it has been
-            /// cached into the Item DB already
-            /// </summary>
-            /// <param name="data"></param>
-            /// <returns></returns>
-            public static bool TryGetName(IDictionary<string, object> data, out string name)
-            {
-                // get the name of the Sourced data
-                if (data.TryGetValue("name", out name) || data.TryGetValue("_name", out name))
-                    return true;
-
-                // get the name for matching specific Item
-                if (GetNull(data)?.TryGetValue("name", out name) == true)
-                {
-                    data["_name"] = name;
-                    return true;
-                }
-
-                // get the name for the general Item
-                if (data.TryGetValue("itemID", out decimal itemID))
-                {
-                    if (GetNull(itemID)?.TryGetValue("name", out name) == true)
-                    {
-                        data["_name"] = name;
-                        return true;
-                    }
-
-                    // get the name from the shared data
-                    if (Objects.TryGetSharedDataByKey("itemID", itemID, "name", out name))
-                    {
-                        data["_name"] = name;
-                        return true;
-                    }
-                }
-
-                return false;
-            }
             #endregion
 
             #region Export
@@ -246,13 +208,13 @@ namespace ATT
                     else listing.Add(item);
 
                     // If an item doesn't have a name or only has 4 fields, then it's probably missing a database entry.
-                    if (!item.ContainsKey("name") || item.Count < 4)
+                    if (!item.TryGetName(out string itemName) || item.Count < 4)
                     {
                         itemsMissingData.Add(item);
                     }
                     else
                     {
-                        builder2.Append(itemID).Append('\t').Append(item["name"]).AppendLine();
+                        builder2.Append(itemID).Append('\t').Append(itemName).AppendLine();
                     }
                 }
 
@@ -274,7 +236,7 @@ namespace ATT
                         if (item.TryGetValue("itemID", out object id))
                         {
                             builder.Append("i(").Append(id).Append(");");
-                            if (item.TryGetValue("name", out object name))
+                            if (item.TryGetName(out string name))
                             {
                                 builder.Append("\t-- ").Append(name);
                             }
@@ -313,7 +275,7 @@ namespace ATT
                             if (item.TryGetValue("itemID", out object id))
                             {
                                 builder.Append("itemrecipe(\"");
-                                if (item.TryGetValue("name", out object name))
+                                if (item.TryGetName(out string name))
                                 {
                                     builder.Append(name.ToString().Replace("\"", "\\\""));
                                 }

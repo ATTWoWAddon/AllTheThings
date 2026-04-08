@@ -198,6 +198,39 @@ namespace ATT
             return false;
         }
 
+        /// <summary>
+        /// Retrieves the 'name' or '_name' field of the data, otherwise attempts to check Items DB or Objects DB
+        /// for a corresponding 'name' value. This will then be cached as '_name' in the data for future efficiency
+        /// </summary>
+        public static bool TryGetName(this IDictionary<string, object> data, out string name)
+        {
+            if (data.TryGetValue("name", out name) || data.TryGetValue("_name", out name))
+                return true;
+
+            if (Framework.Items.GetNull(data)?.TryGetValue("name", out name) == true)
+            {
+                data["_name"] = name;
+                return true;
+            }
+
+            if (data.TryGetValue("itemID", out decimal itemID))
+            {
+                if (Framework.Items.GetNull(itemID)?.TryGetValue("name", out name) == true)
+                {
+                    data["_name"] = name;
+                    return true;
+                }
+
+                if (Framework.Objects.TryGetSharedDataByKey("itemID", itemID, "name", out name))
+                {
+                    data["_name"] = name;
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public static bool TryGetValue(this IDictionary<string, object> dict, out Coords value)
         {
             if (dict != null && dict.TryGetValue(Coords.Field, out object o) && o is Coords val)

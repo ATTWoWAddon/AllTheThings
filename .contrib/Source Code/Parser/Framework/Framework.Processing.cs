@@ -4298,7 +4298,7 @@ namespace ATT
                 && !data.ContainsKey("illusionID")
                 && data.TryGetValue("questID", out long questID))
             {
-                Items.TryGetName(data, out string name);
+                data.TryGetName(out string name);
 
                 if (TryGetSOURCED("questID", questID, out var referencedAsQuest))
                 {
@@ -4321,7 +4321,7 @@ namespace ATT
                 {
                     if (data.TryGetValue("recipeID", out long recipeID))
                     {
-                        Items.TryGetName(data, out string name);
+                        data.TryGetName(out string name);
                         LogDebug($"INFO: Removing invalid Recipe {recipeID} data from Item '{name}' due to Filter {filter}", data);
                         data.Remove("requireSkill");
                         data.Remove("recipeID");
@@ -4883,7 +4883,7 @@ namespace ATT
             if (!data.TryGetValue("requireSkill", out long requiredSkill))
                 return;
 
-            Items.TryGetName(data, out string name);
+            data.TryGetName(out string name);
             // see if a matching recipe name exists for this skill, and use that recipeID
             if (Objects.FindRecipeForData(requiredSkill, data, out long recipeID))
             {

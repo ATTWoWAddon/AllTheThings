@@ -867,7 +867,7 @@ namespace ATT
 
             if (idtype == "itemID")
             {
-                Items.TryGetName(idreference, out string name);
+                idreference.TryGetName(out string name);
                 idreference.TryRemove("_modItemID", out _);
                 Objects.Merge(idreference, "name", name);
             }
@@ -1014,10 +1014,10 @@ namespace ATT
             if (b == null) return 1;
 
             // If a contains a name, then try to get it.
-            if (Items.TryGetName(a, out string aRef))
+            if (a.TryGetName(out string aRef))
             {
                 // If b contains a name, then try to get it.
-                if (Items.TryGetName(b, out string bRef))
+                if (b.TryGetName(out string bRef))
                 {
                     // Both have a name, compare them!
                     var first = Compare(aRef, bRef);
@@ -2611,7 +2611,7 @@ namespace ATT
                                     if (item.TryGetValue("mountID", out long spellID))
                                     {
                                         builder.Append("i(").Append(itemID).Append(", ").Append(spellID).Append(");");
-                                        if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
+                                        if (item != null && item.TryGetName(out string name)) builder.Append("\t-- ").Append(name);
                                         builder.AppendLine();
                                     }
                                     else if (item.TryGetValue("f", out long f) && f == 100)
@@ -2619,7 +2619,7 @@ namespace ATT
                                         builder.Append("i(").Append(itemID);
                                         if (item.TryGetValue("spellID", out spellID)) builder.Append(", ").Append(spellID);
                                         builder.Append(");");
-                                        if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
+                                        if (item != null && item.TryGetName(out string name)) builder.Append("\t-- ").Append(name);
                                         builder.AppendLine();
                                     }
                                 }
