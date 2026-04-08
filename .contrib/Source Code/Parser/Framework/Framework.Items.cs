@@ -24,18 +24,19 @@ namespace ATT
             /// <summary>
             /// All of the items that have been parsed sorted by Item ID.
             /// </summary>
-            private static ConcurrentDictionary<decimal, IDictionary<string, object>> ITEMS = new ConcurrentDictionary<decimal, IDictionary<string, object>>();
+            private static readonly ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>> ITEMS =
+                new ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>>();
 
             /// <summary>
             /// All of the item IDs that have been referenced somewhere in the database.
             /// NOTE: This will be fully-populated following the 'Validation' stage of the Parse
             /// </summary>
-            private static ConcurrentDictionary<decimal, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<decimal, bool>();
+            private static readonly ConcurrentDictionary<decimal, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<decimal, bool>();
 
             /// <summary>
             /// All of the specific ItemIDs and each corresponding SourceID value
             /// </summary>
-            private static IDictionary<decimal, long> SOURCES = new ConcurrentDictionary<decimal, long>();
+            private static readonly IDictionary<decimal, long> SOURCES = new ConcurrentDictionary<decimal, long>();
 
             /// <summary>
             /// Returns whether a specific ItemID has been referenced
@@ -62,7 +63,7 @@ namespace ATT
             /// <summary>
             /// All of the items that are in the database.
             /// </summary>
-            public static ICollection<IDictionary<string, object>> AllItems
+            public static ICollection<ConcurrentDictionary<string, object>> AllItems
             {
                 get
                 {
@@ -118,9 +119,11 @@ namespace ATT
                 // Create a new item dictionary.
                 ++Count;
 
-                return ITEMS.GetOrAdd(itemID, _ => new Dictionary<string, object>
+                return ITEMS.GetOrAdd(itemID, _ =>
                 {
-                    { "itemID", itemID }
+                    var newItem = new ConcurrentDictionary<string, object>();
+                    newItem.TryAdd("itemID", itemID);
+                    return newItem;
                 });
             }
 
@@ -147,7 +150,7 @@ namespace ATT
             public static IDictionary<string, object> GetNull(decimal itemID)
             {
                 // Attempt to get an existing item dictionary.
-                return ITEMS.TryGetValue(itemID, out IDictionary<string, object> obj) ? obj : null;
+                return ITEMS.TryGetValue(itemID, out ConcurrentDictionary<string, object> obj) ? obj : null;
             }
 
             /// <summary>
