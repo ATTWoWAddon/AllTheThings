@@ -638,6 +638,8 @@ namespace ATT
                 CaptureDebugDBData(data);
             }
 
+            // data.DataBreakPoint("_DEBUG", true);
+
             // Cache the state of values that are inherited from parent objects to their children.
 
             var cachedDifficultyRoot = DifficultyRoot;
@@ -715,15 +717,18 @@ namespace ATT
             // handle the current processing against the data
             bool success = true;
 
-            // data.DataBreakPoint("_DEBUG", true);
-            //bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == Config["TEMP_itemID"];
-            //if (track)
-            //    Log($"Tracking Item: {tempItemID} before {CurrentParseStage} stage", data);
+            long configTrackItemID = (long)Config["TRACK_itemID"];
+            bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == configTrackItemID;
+            if (track)
+            {
+                Log($"Item Data: {tempItemID} before {CurrentParseStage} Process", data);
+            }
             if (ProcessingFunction(data, parentData))
             {
-                //if (track)
-                //    Log($"Tracking Item: {tempItemID} after {CurrentParseStage} stage", data);
-                // Store the parent relationship
+                if (track)
+                {
+                    Log($"Item Data: {tempItemID} after {CurrentParseStage} Process", data);
+                }
                 data["__parent"] = parentData;
 
                 // Add this data to the necessary Handlers for the current Parse Stage
