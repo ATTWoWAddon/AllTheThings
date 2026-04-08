@@ -3754,7 +3754,7 @@ namespace ATT
                 int encIndex = 0;
                 while (encIndex < encounterListData.Count)
                 {
-                    decimal encounterHash = GetEncounterHash(encounterListData[encIndex], encounterListData.Count > 1 ? encounterListData[encIndex + 1] : 0);
+                    decimal encounterHash = GetEncounterHash(encounterListData[encIndex], encounterListData.Count > encIndex + 1 ? encounterListData[encIndex + 1] : 0);
                     DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
                     encIndex += 2;
                 }
