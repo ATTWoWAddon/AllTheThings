@@ -5,7 +5,12 @@
 
 MERGE_OBJECT_FIELDS = {
 	spellID = { "type","learnedAt","requireSkill","skillID" },
-	recipeID = { "requireSkill","learnedAt","skillID" },
+	recipeID = { "requireSkill","learnedAt","skillID",
+	-- #IF ANYCLASSIC
+	-- Some Recipes are specifically marked with certain Phase values and this should apply to all versions of that Recipe
+		"u",
+	-- #ENDIF
+	},
 	speciesID = { "pb","crs","itemID" },
 	instanceID = { "isRaid" },
 	mapID = { "maps" },

@@ -2567,7 +2567,7 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 		if unobtainType == "number" then
 			-- #if ANYCLASSIC
 			-- CRIEVE NOTE: At this time, this is exclusive to Classic builds.
-			object.u = unobtainStatus;
+			RecipeDB[recipeID].u = unobtainStatus
 			-- #endif
 		elseif unobtainType == "string" then
 			object.timeline = { unobtainStatus };
