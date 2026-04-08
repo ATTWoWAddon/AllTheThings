@@ -562,12 +562,12 @@ namespace ATT
                     case "sourceQuests":
                     case "altQuests":
                         {
-                            Objects.MergeIntegerArrayData(item, field, value);
+                            Objects.MergeUniqueIntegerArrayData(item, field, value);
                             break;
                         }
                     // temp special case for 'lvl', only include data if it is in the expected new format of a list
                     case "lvl":
-                        Objects.MergeIntegerArrayData(item, field, value);
+                        Objects.MergeUniqueIntegerArrayData(item, field, value);
                         break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)

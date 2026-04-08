@@ -1589,7 +1589,7 @@ end");
             /// <param name="item">The item!</param>
             /// <param name="field">The field!</param>
             /// <param name="value">The value.</param>
-            public static void MergeIntegerArrayData(IDictionary<string, object> item, string field, object value)
+            public static void MergeUniqueIntegerArrayData(IDictionary<string, object> item, string field, object value)
             {
                 // Convert the data to a list of generic objects.
                 var newList = ConvertToList(item, field, value);
@@ -1647,6 +1647,40 @@ end");
                         if (!oldList.Contains(entry))
                             oldList.Add(entry);
                     }
+                }
+
+                if (oldList.Count == 0)
+                {
+                    LogError($"int-array field: '{field}' contained no data after merge", item);
+                }
+            }
+
+            public static void MergeIntegerArrayData(IDictionary<string, object> item, string field, object value)
+            {
+                // Convert the data to a list of generic objects.
+                var newList = ConvertToList(item, field, value);
+                if (newList == null)
+                {
+                    LogError($"Failed merging int-array '{field}' from [{ToJSON(value)}]", item);
+                    return;
+                }
+
+                // Attempt to get the old list data.
+                if (!item.TryGetValue(field, out List<object> oldList))
+                {
+                    if (item.ContainsKey(field))
+                    {
+                        LogWarn($"Replacing non-list type data [{ToJSON(item[field])}] stored in '{field}'", item);
+                    }
+                    item[field] = oldList = new List<object>();
+                }
+
+                bool warnOnConvert = field == "_encounter"
+                    || (field[0] != '_' && field != "qis");
+                // Merge the new list of data into the old data and ensure there are no duplicate values.
+                foreach (long entry in newList.AsTypedEnumerable<long>(warnOnConvert: warnOnConvert))
+                {
+                    oldList.Add(entry);
                 }
 
                 if (oldList.Count == 0)
@@ -1955,19 +1989,23 @@ end");
                     case "_objectiveItems":
                     case "_spellQuests":
                     case "_items":
-                    case "_encounter":
                     case "qis":
                     case "poiIDs":
-                        MergeIntegerArrayData(item, field, value);
+                        MergeUniqueIntegerArrayData(item, field, value);
                         break;
 
                     // temp special case for 'lvl', only include data if it is in the expected new format of a list
                     case "lvl":
                         if (value is List<object> lvls)
                         {
-                            MergeIntegerArrayData(item, field, lvls);
+                            MergeUniqueIntegerArrayData(item, field, lvls);
                         }
-                        else if (PreProcessorTags.Contains("CRIEVE")) MergeIntegerArrayData(item, field, value);
+                        else if (PreProcessorTags.Contains("CRIEVE")) MergeUniqueIntegerArrayData(item, field, value);
+                        break;
+
+                    // int-array fields which can have repeating values
+                    case "_encounter":
+                        MergeIntegerArrayData(item, field, value);
                         break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
