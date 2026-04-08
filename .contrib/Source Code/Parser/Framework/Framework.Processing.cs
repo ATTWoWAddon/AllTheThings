@@ -4172,6 +4172,13 @@ namespace ATT
                 }
             }
 
+            // requireSkill & skillID -- don't need to both exist if identical
+            if (data.TryGetValue("requireSkill", out long requireSkill) && data.TryGetValue("skillID", out long skillID) && requireSkill == skillID)
+            {
+                LogDebug($"INFO: Conflicting fields: requireSkill & skillID have identical values. Dropping 'skillID'", data);
+                data.Remove("skillID");
+            }
+
             // awp & rwp
             if (data.TryGetValue("awp", out long awp) && data.TryGetValue("rwp", out long rwp))
             {
