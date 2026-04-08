@@ -869,7 +869,7 @@ namespace ATT
             {
                 if (itemID < 1)
                     return;
-                foreach (var pair in item) MergeInto(itemID, data, pair.Key, pair.Value);
+                foreach (var pair in item.WithoutDrops(data)) MergeInto(itemID, data, pair.Key, pair.Value);
             }
 
             /// <summary>

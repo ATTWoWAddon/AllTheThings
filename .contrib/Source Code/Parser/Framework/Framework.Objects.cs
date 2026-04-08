@@ -1281,7 +1281,7 @@ namespace ATT
                 {
                     var filename = Path.Combine(categoryFolder, $"{containerPair.Key}.lua");
                     var content = containerPair.Value.ToString();
-                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
+                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end\n{content}";
                     WriteIfDifferent(filename, content);
                 });
             }
@@ -1314,7 +1314,7 @@ for k,t in pairs(keys) do
 end");
 
                     string content = locale.ToString();
-                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
+                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end\n{content}";
                     WriteIfDifferent(filename, content);
                 }
             }
