@@ -21,16 +21,6 @@ namespace ATT.DB
         /// </summary>
         private static readonly ConcurrentDictionary<string, Type> AllDataTypes = new ConcurrentDictionary<string, Type>();
 
-        private static readonly string[] MergeKeys = new string[]
-        {
-            "spellID",
-            "itemID",
-            "areaID",
-            "questID",
-            "speciesID",
-            "achID",
-        };
-
         /// <summary>
         /// All of the supported locales mapped to proper locale keys.
         /// </summary>
