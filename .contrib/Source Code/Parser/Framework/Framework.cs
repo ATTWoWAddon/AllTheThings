@@ -934,7 +934,7 @@ namespace ATT
         public static void SortByName(List<object> list)
         {
             // If the list is null, then return immediately.
-            if (list == null) return;
+            if (list == null || !(bool)Config["UseNameSorting"]) return;
 
             // Sort the List by Name / Bonus ID / Mod ID
             list.Sort(SortByName);
@@ -953,7 +953,7 @@ namespace ATT
         public static void SortByName(List<IDictionary<string, object>> list)
         {
             // If the list is null, then return immediately.
-            if (list == null) return;
+            if (list == null || !(bool)Config["UseNameSorting"]) return;
 
             // Sort the List by Name / Bonus ID / Mod ID
             list.Sort(SortByName);
