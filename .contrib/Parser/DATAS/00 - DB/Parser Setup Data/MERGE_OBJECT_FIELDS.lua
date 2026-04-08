@@ -5,7 +5,7 @@
 
 MERGE_OBJECT_FIELDS = {
 	spellID = { "type","learnedAt","requireSkill","skillID" },
-	recipeID = { "requireSkill","learnedAt","skillID",
+	recipeID = { "requireSkill","_requireSkill","learnedAt","skillID",
 	-- #IF ANYCLASSIC
 	-- Some Recipes are specifically marked with certain Phase values and this should apply to all versions of that Recipe
 		"u",

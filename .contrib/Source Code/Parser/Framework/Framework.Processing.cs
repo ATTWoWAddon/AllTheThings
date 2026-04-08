@@ -4158,6 +4158,13 @@ namespace ATT
                 data.Remove("r");
             }
 
+            // _requireSkill should replace requireSkill since it is directly assigned in contrib ProfessionDB for a Recipe
+            if (data.TryGetValue("requireSkill", out long requireSkill) && data.TryGetValue("_requireSkill", out long _requireSkill) && requireSkill != _requireSkill)
+            {
+                LogWarn($"Conflicting fields: requireSkill in data [{requireSkill}] differs from assigned DB value [{_requireSkill}]. Fix or remove the requireSkill value in either source to prevent this warning", data);
+                data["requireSkill"] = _requireSkill;
+            }
+
             // Sourced BoE Items with requireSkill which are not directly linked to a Profession-based Filter
             if (data.ContainsKey("requireSkill") &&
                 data.ContainsKey("itemID") &&
@@ -4173,7 +4180,7 @@ namespace ATT
             }
 
             // requireSkill & skillID -- don't need to both exist if identical
-            if (data.TryGetValue("requireSkill", out long requireSkill) && data.TryGetValue("skillID", out long skillID) && requireSkill == skillID)
+            if (data.TryGetValue("requireSkill", out requireSkill) && data.TryGetValue("skillID", out long skillID) && requireSkill == skillID)
             {
                 LogDebug($"INFO: Conflicting fields: requireSkill & skillID have identical values. Dropping 'skillID'", data);
                 data.Remove("skillID");

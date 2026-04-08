@@ -2543,6 +2543,11 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	object.f = RECIPES;
 
 	-- Update the skill requirement.
+	if requireSkill then
+		if itemID ~= 0 then
+			RecipeDB[recipeID]._requireSkill = requireSkill;
+		end
+	end
 	requireSkill = requireSkill or CurrentProfessionID;
 	local originalRequireSkill = object.requireSkill;
 	if not originalRequireSkill then
