@@ -975,9 +975,9 @@ namespace ATT
             if (a == null) return;
 
             // If a contains relative groups, then try to sort them.
-            if (a.TryGetValue("g", out object aRef))
+            if (a.TryGetValue("g", out List<object> aRef))
             {
-                SortByName(aRef as List<object>);
+                SortByName(aRef);
             }
         }
 
