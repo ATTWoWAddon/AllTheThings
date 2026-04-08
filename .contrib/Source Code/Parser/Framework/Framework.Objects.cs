@@ -1649,10 +1649,6 @@ end");
                     }
                 }
 
-                // Only sort Parser metadata fields
-                if (field[0] == '_')
-                    oldList.Sort();
-
                 if (oldList.Count == 0)
                 {
                     LogError($"int-array field: '{field}' contained no data after merge", item);
