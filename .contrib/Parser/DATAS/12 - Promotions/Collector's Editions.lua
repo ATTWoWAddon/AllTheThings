@@ -77,6 +77,14 @@ TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE = createHeader({
 	icon = [[~_.asset("Expansion_TBC")]],
 	text = {
 		en = "TBC Classic Anniversary Edition - Outland Upgrade",
+		-- TODO: de = "",
+		es = "Mejora de la edición del aniversario de Burning Crusade Classic™",
+		mx = "Mejoras de Burning Crusade Classic™ Edición Aniversario",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "'燃烧的远征'周年纪念版 - 外域升级",
 		tw = "燃燒的遠征：經典週年紀念版 - 外域升級",
 	},
@@ -142,19 +150,29 @@ WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 	icon = [[~_.asset("Expansion_CLASSIC")]],
 	text = {
 		en = "WoW 15th Anniversary Collector's Edition",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
+		de = "WoW 15th Anniversary Collector’s Edition",
+		es = "15th Anniversary Collector’s Edition de WoW",
+		mx = "Collector’s Edition del 15.° aniversario de WoW",
+		fr = "WoW 15th Anniversary Collector’s Edition",
+		it = "15th Anniversary Collector's Edition di WoW",
 		-- TODO: ko = "",
-		-- TODO: pt = "",
+		pt = "WoW 15th Anniversary Collector’s Edition",
 		-- TODO: ru = "",
 		cn = "魔兽世界15周年典藏版",
 		tw = "魔獸世界15週年典藏版",
 	},
 	description = {
 		en = "These rewards were made available to anyone who purchased a World of Warcraft 15th Anniversary Collector's Edition.",
+		-- TODO: de = "",
+		es = "Estas recompensas estaban disponibles para todos aquellos que compraron una Edición de Coleccionista del 15.º Aniversario de World of Warcraft.",
+		mx = "Estas recompensas eran para todos aquellos que compraron una Edición de Coleccionista del 15.º Aniversario de World of Warcraft.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 DIABLO_III = createHeader({
@@ -163,8 +181,8 @@ DIABLO_III = createHeader({
 	text = {
 		en = "Diablo III",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Diablo III",
+		mx = "Diablo III",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -175,6 +193,16 @@ DIABLO_III = createHeader({
 	},
 	description = {
 		en = "These rewards were made available to anyone who purchased a Collector's Edition of Diablo III.",
+		-- TODO: de = "",
+		es = "Estas recompensas estaban disponibles para todos aquellos que compraron una Edición de Coleccionista de Diablo III.",
+		mx = "Estas recompensas eran para todos aquellos que compraron una Edición de Coleccionista de Diablo III.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 DIABLO_III_REAPER_OF_SOULS = createHeader({
@@ -183,8 +211,8 @@ DIABLO_III_REAPER_OF_SOULS = createHeader({
 	text = {
 		en = "Diablo III: Reaper of Souls",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Diablo III: Reaper of Souls",
+		mx = "Diablo III: Reaper of Souls",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -195,6 +223,16 @@ DIABLO_III_REAPER_OF_SOULS = createHeader({
 	},
 	description = {
 		en = "These rewards were made available to anyone who purchased the Collector's Edition of the Reaper of Souls expansion for Diablo III.",
+		-- TODO: de = "",
+		es = "Estas recompensas estaban disponibles para todos aquellos que compraron una Edición de Coleccionista de la expansion Reaper of Souls para Diablo III.",
+		mx = "Estas recompensas eran para todos aquellos que compraron una Edición de Coleccionista  de la expansion Reaper of Souls para Diablo III.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 DIABLO_IV = createHeader({
@@ -203,8 +241,8 @@ DIABLO_IV = createHeader({
 	text = {
 		en = "Diablo IV",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Diablo IV",
+		mx = "Diablo IV",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -215,6 +253,16 @@ DIABLO_IV = createHeader({
 	},
 	description = {
 		en = "Granted to owners of Diablo IV Base Version.",
+		-- TODO: de = "",
+		es = "Otorgado a los propietarios de la versión base de Diablo IV.",
+		mx = "Otorgado a los poseedores de la versión base de Diablo IV.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 DIABLO_IV_LORD_OF_HATRED = createHeader({
@@ -235,6 +283,16 @@ DIABLO_IV_LORD_OF_HATRED = createHeader({
 	},
 	description = {
 		en = "Granted to owners of Diablo IV: Lord of Hatred Standard Edition.",
+		-- TODO: de = "",
+		es = "Otorgado a los propietarios de la versión base de Diablo IV: Lord of Hatred Standard Edition.",
+		mx = "Otorgado a los poseedores de la versión base de Diablo IV: Lord of Hatred Standard Edition.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK = createHeader({
@@ -242,9 +300,29 @@ DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK = createHeader({
 	icon = 1529348,
 	text = {
 		en = "Diablo II: Resurrected - Reign of Warlock",
+		-- TODO: de = "",
+		es = "Diablo II: Resurrected - Reign of Warlock",
+		mx = "Diablo II: Resurrected - Reign of Warlock",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 	description = {
 		en = "Granted to owners of Diablo II: Resurrected - Reign of Warlock.",
+		-- TODO: de = "",
+		es = "Otorgado a los propietarios de la versión base de Diablo IV: Lord of Hatred Standard Edition.",
+		mx = "Otorgado a los poseedores de la versión base de Diablo IV: Lord of Hatred Standard Edition.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 OVERWATCH_ORIGINS = createHeader({
@@ -253,8 +331,8 @@ OVERWATCH_ORIGINS = createHeader({
 	text = {
 		en = "Overwatch: Origins",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Overwatch: Origins",
+		mx = "Overwatch: Origins",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -265,6 +343,16 @@ OVERWATCH_ORIGINS = createHeader({
 	},
 	description = {
 		en = "These rewards are available to anyone who purchases the Collector's Edition for Overwatch: Origins.",
+		-- TODO: de = "",
+		es = "Estas recompensas están disponibles para cualquiera que compre la Edición Coleccionista de Overwatch: Origins.",
+		mx = "Estas recompensas están disponibles para cualquiera que compre la Edición Coleccionista de Overwatch: Origins.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 STARCRAFT_II_WINGS_OF_LIBERTY = createHeader({
@@ -273,8 +361,8 @@ STARCRAFT_II_WINGS_OF_LIBERTY = createHeader({
 	text = {
 		en = "Starcraft II: Wings of Liberty",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Starcraft II: Wings of Liberty",
+		mx = "Starcraft II: Wings of Liberty",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -285,6 +373,16 @@ STARCRAFT_II_WINGS_OF_LIBERTY = createHeader({
 	},
 	description = {
 		en = "These rewards are available to anyone who purchased the Collector's Edition for Starcraft II: Wings of Liberty.",
+		-- TODO: de = "",
+		es = "Estas recompensas están disponibles para cualquiera que compre la Edición Coleccionista de Starcraft II: Wings of Liberty.",
+		mx = "Estas recompensas están disponibles para cualquiera que compre la Edición Coleccionista de Starcraft II: Wings of Liberty.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 STARCRAFT_II_HEART_OF_THE_SWARM = createHeader({
@@ -293,8 +391,8 @@ STARCRAFT_II_HEART_OF_THE_SWARM = createHeader({
 	text = {
 		en = "Starcraft II: Heart of the Swarm",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Starcraft II: Heart of the Swarm",
+		mx = "Starcraft II: Heart of the Swarm",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -305,6 +403,16 @@ STARCRAFT_II_HEART_OF_THE_SWARM = createHeader({
 	},
 	description = {
 		en = "These rewards are available to anyone who purchased the Collector's Edition for Starcraft II: Heart of the Swarm.",
+		-- TODO: de = "",
+		es = "Estas recompensas están disponibles para cualquiera que compre la Edición Coleccionista de Starcraft II: Heart of the Swarm.",
+		mx = "Estas recompensas están disponibles para cualquiera que compre la Edición Coleccionista de Starcraft II: Heart of the Swarm.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 STARCRAFT_II_LEGACY_OF_THE_VOID = createHeader({
@@ -313,8 +421,8 @@ STARCRAFT_II_LEGACY_OF_THE_VOID = createHeader({
 	text = {
 		en = "Starcraft II: Legacy of the Void",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Starcraft II: Legacy of the Void",
+		mx = "Starcraft II: Legacy of the Void",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -325,6 +433,16 @@ STARCRAFT_II_LEGACY_OF_THE_VOID = createHeader({
 	},
 	description = {
 		en = "These rewards are available to anyone who purchased the Collector's Edition for Starcraft II: Legacy of the Void.",
+		-- TODO: de = "",
+		es = "Estas recompensas están disponibles para cualquiera que compre la Edición Coleccionista de Starcraft II: Legacy of the Void.",
+		mx = "Estas recompensas están disponibles para cualquiera que compre la Edición Coleccionista de Starcraft II: Legacy of the Void.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
@@ -333,8 +451,8 @@ WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
 	text = {
 		en = "Warcraft III Spoils of War Edition",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Warcraft III Spoils of War Edition",
+		mx = "Warcraft III Spoils of War Edition",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -345,6 +463,16 @@ WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
 	},
 	description = {
 		en = "These rewards are available to anyone who purchased the Spoils of War Edition of Warcraft III: Reforged.",
+		-- TODO: de = "",
+		es = "Estas recompensas están disponibles para cualquiera que compre la Edición Spoils of War de Warcraft III: Reforged.",
+		mx = "Estas recompensas están disponibles para cualquiera que compre la Edición Spoils of War de Warcraft III: Reforged.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 
@@ -451,6 +579,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			}),
 		},
 	})),
+-- #if NOT ANYCLASSIC
 	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		["groups"] = {
@@ -463,6 +592,48 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			})),
 		},
 	})),
+	-- #else
+	q(63865, {	-- A Special Thank
+		["altQuests"] = { 63770 },	-- A Special Thanks (Innkeepers)
+		["timeline"] = { ADDED_2_5_1, REMOVED_3_0_2 },
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
+		["qg"] = 17249,	-- Landro Longshot <The Black Flame>
+		["coords"] = {
+			-- #if AFTER CATA
+			{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
+			-- #else
+			{ 28.2, 75.8, STRANGLETHORN_VALE },
+			-- #endif
+			},
+		["maps"] = {
+				THE_EXODAR,
+				IRONFORGE,
+				STORMWIND_CITY,
+				UNDERCITY,
+				THUNDER_BLUFF,
+				ORGRIMMAR,
+				SILVERMOON_CITY,
+				SHATTRATH_CITY,
+			},
+		["crs"] = {
+			16739,	-- Caregiver Breel <Innkeeper>
+			5111,	-- Innkeeper Firebrew <Innkeeper>
+			6740,	-- Innkeeper Allison <Innkeeper>
+			6741,	-- Innkeeper Norman <Innkeeper>
+			6746,	-- Innkeeper Pala <Innkeeper>
+			6929,	-- Innkeeper Gryshka <Innkeeper>
+			16618,	-- Innkeeper Velandra <Innkeeper>
+			19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+			19046,	-- Minalei (ALDOR)
+			},
+		["groups"] = {
+			i(25535),	-- Netherwhelp (PET!)
+			euONLY(i(30360, {	-- Lurky (PET!)
+					["description"] = "This was only available in the EU.",
+				})),
+			}
+		}),
+	-- #endif
 	-- #if ANYCLASSIC
 	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_1, REMOVED_3_4_0 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
