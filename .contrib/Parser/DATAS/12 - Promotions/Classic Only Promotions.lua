@@ -133,7 +133,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 			-- 2026 March 17 through May 15
 			q(96254, {	-- An Unexpected Delivery
 				["altQuests"] = { 96253 },	-- An Unexpected Delivery (Innkeepers)
-				["timeline"] = { "ADDED_2_5_5", "REMOVED_4_2_0" }, -- Timeout Correctly ends: Available until May 16, 2026, 10:00 am PDT (18:00 BST). https://worldofwarcraft.blizzard.com/en-us/news/24267942
+				["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 }, -- Timeout Correctly ends: Available until May 16, 2026, 10:00 am PDT (18:00 BST). https://worldofwarcraft.blizzard.com/en-us/news/24267942
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
