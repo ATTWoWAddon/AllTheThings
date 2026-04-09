@@ -628,6 +628,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		["groups"] = {
 			i(25535),	-- Netherwhelp (PET!)
+			ach(665, {	-- Collector's Edition: Netherwhelp
+				["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+			}),
 			euONLY(i(30360, {	-- Lurky (PET!)
 					["description"] = "This was only available in the EU.",
 				})),
