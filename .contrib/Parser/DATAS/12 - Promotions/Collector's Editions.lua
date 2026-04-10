@@ -604,17 +604,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			-- #else
 			{ 28.2, 75.8, STRANGLETHORN_VALE },
 			-- #endif
-			},
+		},
 		["maps"] = {
-				THE_EXODAR,
-				IRONFORGE,
-				STORMWIND_CITY,
-				UNDERCITY,
-				THUNDER_BLUFF,
-				ORGRIMMAR,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
-			},
+			THE_EXODAR,
+			IRONFORGE,
+			STORMWIND_CITY,
+			UNDERCITY,
+			THUNDER_BLUFF,
+			ORGRIMMAR,
+			SILVERMOON_CITY,
+			SHATTRATH_CITY,
+		},
 		["crs"] = {
 			16739,	-- Caregiver Breel <Innkeeper>
 			5111,	-- Innkeeper Firebrew <Innkeeper>
@@ -625,17 +625,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			16618,	-- Innkeeper Velandra <Innkeeper>
 			19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
 			19046,	-- Minalei (ALDOR)
-			},
+		},
 		["groups"] = {
 			i(25535),	-- Netherwhelp (PET!)
 			ach(665, {	-- Collector's Edition: Netherwhelp
 				["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 			}),
 			euONLY(i(30360, {	-- Lurky (PET!)
-					["description"] = "This was only available in the EU.",
-				})),
-			}
-		}),
+				["description"] = "This was only available in the EU.",
+			})),
+		},
+	}),
 	-- #endif
 	-- #if ANYCLASSIC
 	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_1, REMOVED_3_4_0 } }, {
@@ -896,7 +896,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			ADDED_5_4_7,
 			-- #endif
 			REMOVED_6_2_2,
-		}
+		},
 	}, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
 		["groups"] = {
