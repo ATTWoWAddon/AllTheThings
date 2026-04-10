@@ -380,7 +380,7 @@ root(ROOTS.Zones, {
 								}),
 								i(250402, {	-- Vrykul Lord’s Throne (DECOR!)
 									["cost"] = {
-										{ "c", ORDER_RESOURCES, 18000 },
+										{ "c", ORDER_RESOURCES, 12000 },
 										{ "c", VEILED_ARGUNITE,    50 },
 									},
 								}),
