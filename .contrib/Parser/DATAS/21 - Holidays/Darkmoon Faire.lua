@@ -987,20 +987,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2024, {	-- DF Alchemy Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = ALCHEMY,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2785, {	-- TWW Alchemy Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = ALCHEMY,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.ALCHEMY, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.ALCHEMY, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.ALCHEMY, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			petbattle(q(36471, {	-- A New Darkmoon Challenger!
@@ -1107,20 +1102,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {	-- Artisan's Mettle
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2023, {	-- DF Blacksmithing Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = BLACKSMITHING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2786, {	-- TWW Blacksmithing Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = BLACKSMITHING,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29520, {	-- Banners, Banners Everywhere!
@@ -1145,20 +1135,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2026, {	-- DF Tailoring Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = TAILORING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2795, {	-- TWW Tailoring Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = TAILORING,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.TAILORING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.TAILORING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.TAILORING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(7892, {	-- Big Black Mace [Tier 4]
@@ -1955,20 +1940,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {	-- Artisan's Mettle
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2025, {	-- DF Leatherworking Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = LEATHERWORKING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2792, {	-- TWW Leatherworking Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = LEATHERWORKING,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.LEATHERWORKING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29507, {	-- Fun for the Little Ones
@@ -2114,20 +2094,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2034, {	-- DF Herbalism Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = HERBALISM,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2789, {	-- TWW Herbalism Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = HERBALISM,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.HERBALISM, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.HERBALISM, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.HERBALISM, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29516, {	-- Keeping the Faire Sparkling
@@ -2147,20 +2122,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2029, {	-- DF Jewelcrafting Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = JEWELCRAFTING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2791, {	-- TWW Jewelcrafting Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = JEWELCRAFTING,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			applyclassicphase(WRATH_PHASE_ONE, q(12518, {	-- Mages Deck
@@ -2397,20 +2367,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2030, {	-- DF Enchanting Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = ENCHANTING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2787, {	-- TWW Enchanting Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = ENCHANTING,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.ENCHANTING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.ENCHANTING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.ENCHANTING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29518, {	-- Rearm, Reuse, Recycle
@@ -2429,20 +2394,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2035, {	-- DF Mining Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = MINING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2793, {	-- TWW Mining Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = MINING,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.MINING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.MINING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.MINING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(36477, {	-- Ring of Promises
@@ -2663,20 +2623,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2027, {	-- DF Engineering Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = ENGINEERING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2788, {	-- TWW Engineering Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = ENGINEERING,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.ENGINEERING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.ENGINEERING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.ENGINEERING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29519, {	-- Tan My Hide
@@ -2692,20 +2647,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2033, {	-- DF Skinning Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = SKINNING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2794, {	-- TWW Skinning Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = SKINNING,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.SKINNING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.SKINNING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.SKINNING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29433, {	-- Test Your Strength
@@ -3010,20 +2960,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2028, {	-- DF Inscription Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = INSCRIPTION,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2790, {	-- TWW Incription Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = INSCRIPTION,
-					}),
+					-- #if AFTER MID
+					currency(PROFESSION_KNOWLEDGE.MID.INSCRIPTION, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER TWW
+					currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #else if AFTER DF
+					currency(PROFESSION_KNOWLEDGE.DF.INSCRIPTION, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(7938, {	-- Your Fortune Awaits You... [Deadmines]
