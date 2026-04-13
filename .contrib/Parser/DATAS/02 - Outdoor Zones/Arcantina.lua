@@ -9,7 +9,9 @@ root(ROOTS.Zones, m(ARCANTINA, {
 		n(ACHIEVEMENTS, {
 			ach(61083),	-- Highly Decorated
 			ach(61082),	-- Old Soldiers
-			ach(61081),	-- Share a Drink
+			ach(61081, {	-- Share a Drink
+				["cost"] = { { "i", 251039, 26 } },	-- 26x Toasting Brew
+			}),
 		}),
 		n(QUESTS, {	-- TODO: same source for all, ["sourceQuests"] = { 86903 },	-- The Arcantina
 			q(92319, {	-- A Favor to Axe
