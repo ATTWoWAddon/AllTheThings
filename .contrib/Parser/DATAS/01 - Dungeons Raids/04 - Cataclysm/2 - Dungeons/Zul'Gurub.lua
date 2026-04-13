@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 	applyclassicphase(CATA_PHASE_RISE_OF_THE_ZANDALARI, inst(76, {	-- Zul'Gurub
 		["mapID"] = ZULGURUB,
 		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
-		["isRaid"] = false,	-- prevent merging isRaid from Classic version
+		["_drop"] = { "isRaid" },	-- prevent merging isRaid from Classic version
 		["groups"] = {
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				header(HEADERS.Achievement, 17366, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Relics of a Fallen Empire
@@ -857,7 +857,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(76, {
-		["isRaid"] = false,	-- prevent merging isRaid from Classic version
+		["_drop"] = { "isRaid" },	-- prevent merging isRaid from Classic version
 		["groups"] = {
 			q(35411),	-- Zul'Gurub Reward Quest - Heroic completion
 			q(35412),	-- Zul'Gurub Bonus Objective Reward Quest - kill Cache of Madness
