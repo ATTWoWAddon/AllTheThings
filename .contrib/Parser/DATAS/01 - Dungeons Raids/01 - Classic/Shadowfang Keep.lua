@@ -1066,11 +1066,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						43881,	-- Delano Morisett <Warlock Trainer>
 						4563,	-- Kaal Soulreaper <Warlock Trainer>
 						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+						-- #if AFTER MID
+						241482,	-- Zanien Silvermoon <Warlock Trainer>
+						-- #endif
 					},
 					["coords"] = {
 						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
 						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+						-- #if AFTER MID
+						{ 50.9, 61.0, MAP.MIDNIGHT.SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -1860,7 +1866,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qgs"] = {
 						43881,	-- Delano Morisett <Warlock Trainer>
 						4563,	-- Kaal Soulreaper <Warlock Trainer>
-						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+						16648,	-- Zanien Silvermoon <Warlock Trainer>
 					},
 					["coords"] = {
 						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>

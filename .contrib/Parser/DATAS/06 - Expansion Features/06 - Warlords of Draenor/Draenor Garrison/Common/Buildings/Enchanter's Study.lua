@@ -9,8 +9,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 				n(QUESTS, {
 					q(38290, {	-- Some Dust
 						["qgs"] = {
-							91020,	-- Enchantress Ismae
-							91029,	-- Rath'thul Moonvale
+							91020,	-- Enchantress Ismae <Dust Trader>
+							91029,	-- Rath'thul Moonvale <Dust Trader>
+						},
+						["coords"] = {
+							{ 35.2, 34.0, LUNARFALL },
+							{ 40.8, 54.8, FROSTWALL },
 						},
 						["cost"] = { { "i", 109693, 50 } },	-- 50x Draenic Dust
 						["isDaily"] = true,

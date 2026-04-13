@@ -692,6 +692,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									{ 48.4, 27.7, MAP.MIDNIGHT.ZULAMAN },
 									{ 48.5, 29.2, MAP.MIDNIGHT.ZULAMAN },
 									{ 48.7, 26.6, MAP.MIDNIGHT.ZULAMAN },
+									{ 49.1, 28.1, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.4, 27.6, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.9, 25.3, MAP.MIDNIGHT.ZULAMAN },
 									{ 50.3, 27.9, MAP.MIDNIGHT.ZULAMAN },
@@ -1343,6 +1344,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									{ 33.7, 83.3, MAP.MIDNIGHT.ZULAMAN },
 									{ 34.8, 82.2, MAP.MIDNIGHT.ZULAMAN },
 									{ 35.6, 81.7, MAP.MIDNIGHT.ZULAMAN },
+									{ 36.3, 81.2, MAP.MIDNIGHT.ZULAMAN },
 									{ 37.5, 81.2, MAP.MIDNIGHT.ZULAMAN },
 								},
 								["groups"] = { i(264166) },	-- Void Artifact Shard (QI!)

@@ -694,11 +694,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						43881,	-- Delano Morisett
 						4563,	-- Kaal Soulreaper
 						16648,	-- Zanien
+						-- #if AFTER MID
+						241482,	-- Zanien Silvermoon <Warlock Trainer>
+						-- #endif
 					},
 					["coords"] = {
 						{ 25.2, 14.4, THUNDER_BLUFF },	-- Delano Morisett
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien
 						{ 86.0, 15.6, UNDERCITY },	-- Kaal Soulreaper
+						-- #if AFTER MID
+						{ 50.9, 61.0, MAP.MIDNIGHT.SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },

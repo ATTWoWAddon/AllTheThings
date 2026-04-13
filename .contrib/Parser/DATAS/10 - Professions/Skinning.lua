@@ -1019,6 +1019,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			q(93714),	-- Minor Scales
 			q(93712),	-- Style and Skill
 			q(93710),	-- Tempered in Darkness
+			q(93711),	-- The Chill of the Void
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

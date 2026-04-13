@@ -429,6 +429,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									{ 29.9, 81.0, MAP.MIDNIGHT.HARANDAR },
 									{ 30.5, 73.9, MAP.MIDNIGHT.HARANDAR },
 									{ 31.5, 81.8, MAP.MIDNIGHT.HARANDAR },
+									{ 31.7, 83.0, MAP.MIDNIGHT.HARANDAR },
 									{ 33.0, 79.3, MAP.MIDNIGHT.HARANDAR },
 									{ 33.7, 83.9, MAP.MIDNIGHT.HARANDAR },
 									{ 35.3, 81.2, MAP.MIDNIGHT.HARANDAR },
@@ -592,6 +593,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 										{ 68.4, 31.7, MAP.MIDNIGHT.HARANDAR },
 										{ 69.2, 30.3, MAP.MIDNIGHT.HARANDAR },
 										{ 69.3, 32.3, MAP.MIDNIGHT.HARANDAR },
+										{ 69.6, 29.7, MAP.MIDNIGHT.HARANDAR },
 										{ 70.2, 29.9, MAP.MIDNIGHT.HARANDAR },
 										{ 70.2, 32.0, MAP.MIDNIGHT.HARANDAR },
 										{ 70.4, 31.4, MAP.MIDNIGHT.HARANDAR },
@@ -946,9 +948,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91873 },	-- Buffer Zone
 						["provider"] = { "n", 252497 },	-- Hagar
 						["coord"] = { 42.4, 34.4, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(252649),	-- Verdant Stalker Sludge (QI!)
-						},
+						["groups"] = { i(252649) },	-- Verdant Stalker Sludge (QI!)
 					}),
 					q(91874, {	-- Flare Up
 						["sourceQuests"] = { 91875 },	-- Natural Remedy

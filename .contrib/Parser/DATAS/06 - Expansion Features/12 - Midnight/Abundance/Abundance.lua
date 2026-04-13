@@ -130,6 +130,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						-- Exo Note: Triggered during Wartha'nan Crypts Abundance event. I don't know what the criteria is. Was unable to complete it.
 						-- Bunch of limbs spawn in the first room, wandering around. Requires you to "stomp" 5 of them. Could not "stomp" a single one. Jumping on them and walking over them didn't work. Didn't see any extra spells or something.
 						["coord"] = { 44.1, 31.5, 2579 },	-- Wartha'nan Crypts
+						["isRepeatable"] = true,
 					}),
 				}),
 			}),

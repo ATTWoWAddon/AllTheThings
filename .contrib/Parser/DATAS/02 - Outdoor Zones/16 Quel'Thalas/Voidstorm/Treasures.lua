@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				o(572819, {	-- Void-Shielded Tomb
 					["description"] = "Drink the Potion of Dissociation from the nearby table in order to be able to see the Key.",
-					["coord"] = { 25.7, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 25.8, 67.3, MAP.MIDNIGHT.VOIDSTORM },
 					["questID"] = 92414,
 					["cost"] = { { "i", 251519, 1 } },	-- 1x Key of Fused Darkness
 					["groups"] = {

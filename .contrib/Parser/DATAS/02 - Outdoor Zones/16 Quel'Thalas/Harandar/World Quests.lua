@@ -70,6 +70,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91937, {	-- Portraits in the Vale
 					["coord"] = { 63.4, 49.6, MAP.MIDNIGHT.HARANDAR },
 				}),
+				q(92184, {	-- Potadpole Wrangling
+					["coord"] = { 67.9, 41.6, MAP.MIDNIGHT.HARANDAR },
+				}),
 				q(91582, {	-- Pruning the Lattice
 					["coord"] = { 55.0, 29.3, MAP.MIDNIGHT.HARANDAR },
 				}),

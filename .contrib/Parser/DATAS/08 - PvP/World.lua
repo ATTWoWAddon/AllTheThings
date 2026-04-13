@@ -385,8 +385,13 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				}),
 				n(TREASURES, {
 					o(527903, {	-- Spectral Battle Chest
-						ach(61265),	-- Spectral Capture		-- 1 Chest
-						ach(61266),	-- Spectral Stocker		-- 10 Chest
+						["questID"] = 95437,
+						["isDaily"] = true,
+						['groups'] = {
+							ach(61265),	-- Spectral Capture		-- 1 Chest
+							ach(61266),	-- Spectral Stocker		-- 10 Chest
+							i(257535, { ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 } }),	-- Galactic Jeweler's Setting
+						},
 					}),
 				}),
 			}),

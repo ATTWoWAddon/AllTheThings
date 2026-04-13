@@ -26,6 +26,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(ACHIEVEMENTS, {
 				ach(61344, {	-- Chronicler of the Haranir
 					title(680),	-- <Name>, Chronicler of the Haranir
+					o(579180, {	-- Ways of the Roots--Part 1: Serving
+						["coord"] = { 40.9, 36.4, MAP.MIDNIGHT.HARANDAR },
+					}),
+					o(579182, {	-- Ways of the Roots--Part 2: Growing
+						["coord"] = { 41.5, 34.2, MAP.MIDNIGHT.HARANDAR },
+					}),
+					o(579183, {	--  Ways of the Roots--Part 3: Pruning
+						["coord"] = { 40.6, 34.7, MAP.MIDNIGHT.HARANDAR },
+					}),
 				}),
 				ach(61574, {	-- Legends Never Die
 					i(264259),	-- On'ohia's Call (DECOR!)
@@ -207,18 +216,31 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 243759 },	-- Aksem
 						["coord"] = { 53.4, 49.4, MAP.MIDNIGHT.HARANDAR },
 					}),
-						-- TODO
-					q(90741),	-- Once More Into the Rift
-					q(90742),	-- Shrouded by Aln'hara
-					q(90743),	-- Ritual Reinforcement
-					q(90744),	-- The Dreamrift: Malformed Mystery
+					q(90741, {	-- Once More Into the Rift
+						["sourceQuest"] = 90740,	-- A Legend to Know
+						["qg"] = 238170,	-- Zur'ashar Kassameh
+						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(90742, {	-- Shrouded by Aln'hara
+						["sourceQuest"] = 90741,	-- Once More Into the Rift
+						["qg"] = 243795,	-- Orweyna
+						["coord"] = { 61.8, 62.2, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(90743, {	-- Ritual Reinforcement
+						["sourceQuest"] = 90741,	-- Once More Into the Rift
+						["qg"] = 243794,	-- Shul'ka Seila
+						["coord"] = { 61.8, 62.2, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(90744, {	-- The Dreamrift: Malformed Mystery
+						["sourceQuest"] = 90743,	-- Ritual Reinforcement
+						["qg"] = 243795,	-- Orweyna
+						["coord"] = { 61.8, 62.2, MAP.MIDNIGHT.HARANDAR },
+					}),
 					q(90745, {	-- The Empty Cradle
 						["sourceQuests"] = { 90744 },	-- The Dreamrift: Malformed Mystery
 						["provider"] = { "n", 243759 },	-- Aksem
 						["coord"] = { 53.4, 49.4, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(260306),	-- Distorted Memory (PET!)
-						},
+						["groups"] = { i(260306) },	-- Distorted Memory (PET!)
 					}),
 				}),
 			}),

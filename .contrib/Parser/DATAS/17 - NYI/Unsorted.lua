@@ -1052,7 +1052,6 @@ root(ROOTS.Unsorted, {
 				i(249407),	-- Harvested Lightwood
 				i(249414),	-- Feelings Journal
 				i(249439),	-- Bright Feather
-				i(249440),	-- Bright Feather
 				i(249527),	-- Elder Painting
 				i(249543),	-- Special Remedy
 				i(249553),	-- Lost Mirror

@@ -641,7 +641,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						244297,	-- Arator
 						253603,	-- Arator
 					},
-					["coord"] = { 45.7, 49.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["coords"] = {
+						{ 44.5, 66.1, MAP.MIDNIGHT.VOIDSTORM },
+						{ 45.7, 49.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					},
 					["maps"] = {
 						2529,	-- Voidspire
 						2530,	-- Crown of the Cosmos

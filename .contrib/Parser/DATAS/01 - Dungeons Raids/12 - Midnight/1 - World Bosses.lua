@@ -51,16 +51,10 @@ local EncounterToLoot = {
 
 ------ EncounterCoords ------
 local EncounterCoords = {
-	[CRAGSPINE] = {	-- Add coordinates and map here
-		{ 45.8, 47.4, MAP.MIDNIGHT.ZULAMAN },
-	},
-	[LUASHAL] = {	-- Add coordinates and map here
-		{ 45.2, 60.0, MAP.MIDNIGHT.EVERSONG_WOODS },
-	},
-	[PREDAXUS] = {	-- Add coordinates and map here
-	},
-	[THORMBELAN] = {	-- Add coordinates and map here
-	},
+	[CRAGSPINE] = { { 45.8, 47.4, MAP.MIDNIGHT.ZULAMAN } },
+	[LUASHAL] = { { 45.2, 60.0, MAP.MIDNIGHT.EVERSONG_WOODS } },
+	[PREDAXUS] = { { 49.0, 86.8, MAP.MIDNIGHT.VOIDSTORM } },
+	[THORMBELAN] = { { 38.8, 66.6, MAP.MIDNIGHT.HARANDAR } },
 }
 
 ------ Boss Functions ------
@@ -105,7 +99,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 			BossWorldQuest(PREDAXUS, 92636),	-- Predaxus WQ
 			Boss(THORMBELAN, {	-- Thormbelan
-				-- ["questID"] = xx,
+				["questID"] = 92129,
 			}),
 			BossWorldQuest(THORMBELAN, 92034),	-- Thormbelan WQ
 		}),

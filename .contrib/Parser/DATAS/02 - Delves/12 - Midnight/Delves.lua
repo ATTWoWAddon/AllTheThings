@@ -914,16 +914,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(92444, name(HEADERS.Map, THE_DARKWAY)),	-- The Darkway
 			q(91182, name(HEADERS.Map, PARHELION_PLAZA)),	-- Parhelion Plaza
 		})),
-
-		-- q(93819, name(HEADERS.Faction, FAC, {isWeekly=true})),	--
-		-- q(93820, name(HEADERS.Faction, FAC, {isWeekly=true})),	--
+		q(93819, name(HEADERS.Faction, FACTION_AMANI_TRIBE, {isWeekly=true})),	-- Amani Rep
+		q(93820, name(HEADERS.Faction, FACTION_THE_SINGULARITY, {isWeekly=true})),	-- The Singularity Rep
 		q(93821, name(HEADERS.Faction, FACTION_SILVERMOON_COURT, {isWeekly=true})),	-- Silvermoon Court Rep
-		-- q(93822, name(HEADERS.Faction, FAC, {isWeekly=true})),	--
-
-		-- TEMP for better reports
-		q(93819, {isWeekly=true,u=1,name="Report this Quest! What Reputation did you just gain?"}),	--
-		q(93820, {isWeekly=true,u=1,name="Report this Quest! What Reputation did you just gain?"}),	--
-		q(93822, {isWeekly=true,u=1,name="Report this Quest! What Reputation did you just gain?"}),	--
+		q(93822, name(HEADERS.Faction, FACTION_HARATI, {isWeekly=true})),	-- Hara'ti Rep
 	})),
 }));
 

@@ -204,6 +204,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["coords"] = {
 									{ 32.4, 79.6, MAP.MIDNIGHT.VOIDSTORM },
 									{ 33.1, 78.6, MAP.MIDNIGHT.VOIDSTORM },
+									{ 33.8, 79.6, MAP.MIDNIGHT.VOIDSTORM },
 									{ 33.3, 80.3, MAP.MIDNIGHT.VOIDSTORM },
 									{ 34.1, 78.8, MAP.MIDNIGHT.VOIDSTORM },
 									{ 34.4, 77.9, MAP.MIDNIGHT.VOIDSTORM },
@@ -1605,7 +1606,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			q(94625, {	-- An Elementary Voidcore
 				["sourceQuests"] = { 94623 },	-- Building the Voidforge
-				["provider"] = { "n", 243907 },	-- Decimus
+				["qgs"] = {
+					243907,	-- Decimus
+					248583,	-- Decimus
+				},
 				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
 				--["isWeekly"] = true,	-- TODO: likely will be on live
 				["repeatable"] = true,	-- TODO: beta only?

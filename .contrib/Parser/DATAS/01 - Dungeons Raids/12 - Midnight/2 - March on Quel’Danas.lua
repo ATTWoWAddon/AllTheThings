@@ -222,10 +222,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		-- LFR
 		-- Normal
 		q(94561, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
-		--q(94565),	-- ??
+		q(94565, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 		-- Heroic
 		q(94563, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
-		--q(94567),	-- trash prior to L'ura (named mob I missed)
+		q(94567, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 		-- Mythic
 	})),
 }));
