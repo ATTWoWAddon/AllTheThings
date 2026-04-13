@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(250780, {	-- Waverly
 				["cr"] = 250788,	-- Lovely Sunflower
 				["coord"] = { 34.8, 21.0, MAP.MIDNIGHT.EVERSONG_WOODS },
-				--["questID"] = 94691,
+				["questID"] = 92395,
 				["groups"] = {
 					i(264910),	-- Shell-Cleaving Poleaxe
 					i(264608),	-- String of Lovely Blossoms
