@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_MINING_KNOWLEDGE = 2035;
-local TWW_MINING_KNOWLEDGE = 2793;
-local MID_MINING_KNOWLEDGE = 3158;
 root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 	-- #if AFTER 3.0.2
 	n(DISCOVERY, {
@@ -1240,7 +1237,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_MINING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.MINING, 1 }} }, {
 				r(388213, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Deposit
 				r(383793),	-- Refine Draconium++
 				r(383795),	-- Refine Draconium+++
@@ -1253,7 +1250,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_MINING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.MINING),
 			},
 		},{
 			i(199122),	-- Mining Field Notes
@@ -1322,7 +1319,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_MINING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.MINING, 1 }} }, {
 				r(442330),	-- Refine Aqirite++
 				r(442331),	-- Refine Aqirite+++
 				r(442328),	-- Refine Bismuth++
@@ -1415,7 +1412,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_MINING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.MINING),
 			},
 		},{
 			q(83733, {	-- TWW Inscription Order: Mining
@@ -1498,7 +1495,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", MID_MINING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.MINING, 1 }} }, {
 				r(1225392),	-- Overload Infused Deposit
 			}),
 		}),
@@ -1563,7 +1560,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_MINING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.MINING),
 			},
 		},{
 			q(95135, {	-- MID Inscription Order: Mining

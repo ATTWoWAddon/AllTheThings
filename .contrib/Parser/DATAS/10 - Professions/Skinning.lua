@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_SKINNING_KNOWLEDGE = 2033;
-local TWW_SKINNING_KNOWLEDGE = 2794;
-local MID_SKINNING_KNOWLEDGE = 3159;
 root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18834, {	-- Broken Isles Skinning Techniques
@@ -771,7 +768,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = { { "c", DF_SKINNING_KNOWLEDGE, 1 } }, }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.SKINNING, 1 } }, }, {
 				r(383090),	-- Aileron Seamoth Lure
 				r(383128),	-- Bottled Pheromones
 				r(375787),	-- Cerulean Spinefish Lure
@@ -795,7 +792,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_SKINNING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.SKINNING),
 			},
 		},{
 			i(199128),	-- Skinning Field Notes
@@ -862,7 +859,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_SKINNING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.SKINNING, 1 }} }, {
 				r(442647),	-- Arathor Hammerfish Lure
 				r(442654),	-- Beast Lure Scent
 				r(442615),	-- Carve Meat
@@ -945,7 +942,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_SKINNING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.SKINNING),
 			},
 		},{
 			q(83734, {	-- TWW Inscription Order: Skinning
@@ -1025,7 +1022,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", MID_SKINNING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.SKINNING, 1 }} }, {
 				r(1226037),	-- Carve Meat
 				r(1225948),	-- Grand Beast Lure
 				r(1225939),	-- Lightbloom Diffuser
@@ -1084,7 +1081,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_SKINNING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.SKINNING),
 			},
 		},{
 			q(95136, {	-- MID Inscription Order: Skinning

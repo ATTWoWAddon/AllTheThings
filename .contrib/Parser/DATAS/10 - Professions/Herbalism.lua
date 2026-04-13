@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_HERBALISM_KNOWLEDGE = 2034;
-local TWW_HERBALISM_KNOWLEDGE = 2789;
-local MID_HERBALISM_KNOWLEDGE = 3154;
 local function LifebloodRank(rankID)
 	-- #if BEFORE CATA
 	local rankID = rankID-1
@@ -1381,7 +1378,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_HERBALISM_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.HERBALISM, 1 }} }, {
 				r(391088),	-- Refine Herbs++
 				r(391089),	-- Refine Herbs+++
 				r(390392, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Herb
@@ -1390,7 +1387,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_HERBALISM_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.HERBALISM),
 			},
 		},{
 			i(199115),	-- Herbalism Field Notes
@@ -1460,7 +1457,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_HERBALISM_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.HERBALISM, 1 }} }, {
 				r(442990),	-- Empowered Mulch
 				r(442989),	-- Imbued Mulch
 				r(442988),	-- Magical Mulch
@@ -1552,7 +1549,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_HERBALISM_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.HERBALISM),
 			},
 		},{
 			i(224817),	-- Algari Herbalism Notes
@@ -1638,7 +1635,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", MID_HERBALISM_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.HERBALISM, 1 }} }, {
 				r(1221181),	-- Empowered Mulch
 				r(1221172),	-- Green Thumb
 				r(1221180),	-- Imbued Mulch
@@ -1705,7 +1702,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_HERBALISM_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.HERBALISM),
 			},
 		},{
 			q(95130, {	-- MID Inscription Order: Herbalism
