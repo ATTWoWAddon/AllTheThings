@@ -26,15 +26,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(ACHIEVEMENTS, {
 				ach(61344, {	-- Chronicler of the Haranir
 					title(680),	-- <Name>, Chronicler of the Haranir
-					o(579180, {	-- Ways of the Roots--Part 1: Serving
-						["coord"] = { 40.9, 36.4, MAP.MIDNIGHT.HARANDAR },
-					}),
-					o(579182, {	-- Ways of the Roots--Part 2: Growing
-						["coord"] = { 41.5, 34.2, MAP.MIDNIGHT.HARANDAR },
-					}),
-					o(579183, {	--  Ways of the Roots--Part 3: Pruning
-						["coord"] = { 40.6, 34.7, MAP.MIDNIGHT.HARANDAR },
-					}),
 				}),
 				ach(61574, {	-- Legends Never Die
 					i(264259),	-- On'ohia's Call (DECOR!)
@@ -143,11 +134,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 64.6, 38.6, MAP.MIDNIGHT.HARANDAR },
 					}),
 				}),
-				--header(HEADERS.AchCriteria, 61574.06, {	-- Root of the World
-				-- sourceQuest = 90740, {	-- A Legend to Know
-				--}),
-				--header(HEADERS.AchCriteria, 61574.07, {	-- Sky's Hope
-				--}),
+				header(HEADERS.AchCriteria, 61574.06, {	-- Root of the World
+					q(88998, {	-- Root of the World
+						["sourceQuest"] = 90740,	-- A Legend to Know
+						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(91508, {	-- Tale of Rootways and Wardens
+						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+						["sourceQuest"] = 88998,	-- Root of the World
+						["provider"] = { "n", 241836 },	-- Ancient Visionstone
+						["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
+					}),
+				}),
+				header(HEADERS.AchCriteria, 61574.07, {	-- Sky's Hope
+				}),
 			})),
 			n(QUESTS, {
 				header(HEADERS.Achievement, 42278, sharedData({	-- The Empty Cradle
@@ -336,6 +337,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 62.6, 35.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 93480,
 					}),
+					o(579180, {	-- Ways of the Roots--Part 1: Serving
+						["sourceQuest"] = 88998,	-- Root of the World
+						["questID"] = 93488,
+						["coord"] = { 40.8, 36.2, MAP.MIDNIGHT.HARANDAR },
+					}),
+					o(579182, {	-- Ways of the Roots--Part 2: Growing
+						["sourceQuest"] = 88998,	-- Root of the World
+						["questID"] = 93487,
+						["coord"] = { 41.5, 34.2, MAP.MIDNIGHT.HARANDAR },
+					}),
+					o(579183, {	--  Ways of the Roots--Part 3: Pruning
+						["sourceQuest"] = 88998,	-- Root of the World
+						["questID"] = 93486,
+						["coord"] = { 40.5, 34.7, MAP.MIDNIGHT.HARANDAR },
+					}),
 				},
 			}),
 		}),
@@ -354,7 +370,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91516, name(HEADERS.NPC,243540,{isWeekly=true})),	-- Triggered after chosing 'The Echoless Flame' during 'Lost Legends' (89268)
 				q(91517, name(HEADERS.NPC,243542,{isWeekly=true})),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
 				q(91455, name(HEADERS.NPC,243514,{isWeekly=true})),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
-				-- q(TODO, name(HEADERS.NPC,TODO,{isWeekly=true})),	-- Triggered after chosing 'Root of the World' during 'Lost Legends' (89268)
+				q(91518, name(HEADERS.NPC,243544,{isWeekly=true})),	-- Triggered after chosing 'Root of the World' during 'Lost Legends' (89268)
 				-- q(TODO, name(HEADERS.NPC,TODO,{isWeekly=true})),	-- Triggered after chosing 'Sky's Hope' during 'Lost Legends' (89268)
 				-- one-time per character completions
 				q(91053, name(HEADERS.Quest,88993)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Wey'nan's Ward'
@@ -362,7 +378,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91511, name(HEADERS.Quest,88996)),	-- The Echoless Flame completed
 				q(91512, name(HEADERS.Quest,88997)),	-- Russula's Outreach completed
 				q(91456, name(HEADERS.Quest,88995)),	-- Aln'hara's Bloom completed
-				-- q(TODO, name(HEADERS.Quest,TODO)),	-- Root of the World completed
+				q(91513, name(HEADERS.Quest,88998)),	-- Root of the World completed
 				-- q(TODO, name(HEADERS.Quest,TODO)),	-- Sky's Hope completed
 			}),
 		}),
