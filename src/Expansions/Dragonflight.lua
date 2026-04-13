@@ -62,7 +62,7 @@ do
 			return app.Settings.Collectibles[CACHE]
 		end,
 		collected = function(t)
-			return app.TypicalCharacterCollected(CACHE, t[KEY])
+			return app.TypicalCharacterCollected(CACHE, t[KEY], "Recipes")
 		end,
 		saved = function(t)
 			return not C_TradeSkillUI_IsRecipeFirstCraft(t[KEY])
