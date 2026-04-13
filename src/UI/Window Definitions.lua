@@ -1712,7 +1712,9 @@ local function RowOnEnter(self)
 	-- Attach all of the Information to the tooltip.
 	app.Modules.Tooltip.AttachTooltipInformation(tooltip, tooltipInfo);
 	if not IsRefreshing then tooltip:SetATTReferenceForTexture(reference); end
-	tooltip:Show();
+	-- Defer Show() to the next frame to break the addon taint chain.
+	-- Without this, Backdrop.lua tries arithmetic on secret-tainted width/height values.
+	C_Timer.After(0, function() tooltip:Show(); end);
 
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
