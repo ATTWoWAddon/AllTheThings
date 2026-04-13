@@ -3680,7 +3680,6 @@ root(ROOTS.Unsorted, {
 			i(168662),	-- Maroon Pigment
 			i(168755),	-- Unpublished Research
 			i(168789),	-- Perpetual Motion Device
-			i(168790),	-- Sack of Fish Bones
 			i(168797),	-- Stack of Undeliverable Mail
 			i(168812),	-- Air Freshner
 			i(168815),	-- Kelpberry Cask

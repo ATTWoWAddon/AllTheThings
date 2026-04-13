@@ -453,7 +453,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		n(218738, {	-- Daetan Swiftplume
 			["providers"] = {
 				{ "n", 218736 },	-- Golden Egg
-				{ "n", 219936 },	-- [DNT] Vignette
+				{ "n", 219928 },	-- [DNT] Vignette
 			},
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 			["coord"] = { 44.4, 35.1, DUROTAR },

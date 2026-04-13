@@ -4,7 +4,8 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
-			n(COMMON_BOSS_DROPS, sharedData({
+			n(COMMON_BOSS_DROPS, {
+				["isDaily"] = IGNORED_VALUE,
 				["crs"] = {
 					245692,	-- Ash'an the Empowered
 					242027,	-- Depthborn Eelamental
@@ -22,13 +23,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					242033,	-- Tiny Vermin
 					242034,	-- Voidtouched Crustacean
 				},
-			}, {
-				i(257152),	-- Amani Sharptalon (MOUNT!)
-				i(257200),	-- Escaped Witherbark Pango (MOUNT!)
-				i(265554),	-- Reinforced Amani Haft
-				i(265543),	-- Tempered Amani Spearhead
-				i(265560),	-- Toughened Amani Leather Wrap
-			})),
+				["groups"] = {
+					i(257152),	-- Amani Sharptalon (MOUNT!)
+					i(257200),	-- Escaped Witherbark Pango (MOUNT!)
+					i(265554),	-- Reinforced Amani Haft
+					i(265543),	-- Tempered Amani Spearhead
+					i(265560),	-- Toughened Amani Leather Wrap
+				},
+			}),
 			n(245692, {	-- Ash'an the Empowered
 				["coord"] = { 45.2, 41.7, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 91073,

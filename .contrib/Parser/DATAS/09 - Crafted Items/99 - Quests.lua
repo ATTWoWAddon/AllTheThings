@@ -113,6 +113,7 @@ root(ROOTS.Craftables, {
 								i(170058),	-- Decrypted Message 001-398
 								i(170059),	-- Decrypted Message 002-001
 							}),
+							i(168790),	-- Sack of Fish Bones
 						},
 					}),
 				},

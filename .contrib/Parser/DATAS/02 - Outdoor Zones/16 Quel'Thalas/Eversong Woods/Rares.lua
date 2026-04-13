@@ -4,7 +4,8 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
-			n(COMMON_BOSS_DROPS, sharedData({
+			n(COMMON_BOSS_DROPS, {
+				["isDaily"] = IGNORED_VALUE,
 				["crs"] = {
 					250841,	-- Bad Zed
 					250826,	-- Banuran
@@ -22,10 +23,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					246332,	-- Warden of Weeds
 					250780,	-- Waverly
 				},
-			}, {
-				i(257156),	-- Cerulean Hawkstrider (MOUNT!)
-				i(257147),	-- Cobalt Dragonhawk (MOUNT!)
-			})),
+				["groups"] = {
+					i(257156),	-- Cerulean Hawkstrider (MOUNT!)
+					i(257147),	-- Cobalt Dragonhawk (MOUNT!)
+				},
+			}),
 			n(250841, {	-- Bad Zed
 				["coord"] = { 49.0, 87.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 92404,

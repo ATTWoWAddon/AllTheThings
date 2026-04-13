@@ -38,6 +38,7 @@ local PREYSEEKER_BOX_SYM = {
 }
 
 local TrapNPCs = {	-- probably a ton of these, it seems unique per target & difficulty
+	247053,	-- Electrified Trap
 	247070,	-- Gloomy Trap
 	247071,	-- Shimmering Trap
 	247072,	-- Vicious Trap

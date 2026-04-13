@@ -4,7 +4,8 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.HARANDAR, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
-			n(COMMON_BOSS_DROPS, sharedData({
+			n(COMMON_BOSS_DROPS, {
+				["isDaily"] = IGNORED_VALUE,
 				["crs"] = {
 					250347,	-- Ahl'ua'huhi
 					250358,	-- Annulus the Worldshaker
@@ -22,11 +23,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					249902,	-- Tallcap the Truthspreader
 					250246,	-- Treetop
 				},
-			}, {
-				i(246735),	-- Rootstalker Grimlynx (MOUNT!)
-				i(252012),	-- Vibrant Petalwing (MOUNT!)
-				i(264895),	-- Trials of the Florafaun Hunter (CI!)
-			})),
+				["groups"] = {
+					i(246735),	-- Rootstalker Grimlynx (MOUNT!)
+					i(252012),	-- Vibrant Petalwing (MOUNT!)
+					i(264895),	-- Trials of the Florafaun Hunter (CI!)
+				},
+			}),
 			n(250347, {	-- Ahl'ua'huhi
 				["coord"] = { 39.6, 60.8, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92193,

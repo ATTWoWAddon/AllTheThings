@@ -4,7 +4,8 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
-			n(COMMON_BOSS_DROPS, sharedData({
+			n(COMMON_BOSS_DROPS, {
+				["isDaily"] = IGNORED_VALUE,
 				["crs"] = {
 					256924,	-- Aeonelle Blackstar
 					256923,	-- Bane of the Vilebloods
@@ -23,10 +24,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					238498,	-- Territorial Voidscythe
 					241443,	-- Tremora
 				},
-			}, {
-				i(257085),	-- Augmented Stormray (MOUNT!)
-				i(260635),	-- Sanguine Harrower (MOUNT!)
-			})),
+				["groups"] = {
+					i(257085),	-- Augmented Stormray (MOUNT!)
+					i(260635),	-- Sanguine Harrower (MOUNT!)
+				},
+			}),
 			n(256924, {	-- Aeonelle Blackstar
 				["coord"] = { 39.2, 64.0, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93944,
