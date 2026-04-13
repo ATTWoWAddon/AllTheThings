@@ -242,6 +242,12 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		local acomp, bcomp;
+		-- SortPriority
+		acomp = a.SortPriority or 0
+		bcomp = b.SortPriority or 0
+		if acomp ~= bcomp then
+			return acomp < bcomp
+		end
 		acomp = a.total or 0;
 		bcomp = b.total or 0;
 		return acomp < bcomp;
