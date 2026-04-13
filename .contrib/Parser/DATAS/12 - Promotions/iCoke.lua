@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 ICOKE_PROMOTION = createHeader({
 	readable = "iCoke",
 	-- #if AFTER 5.4.2
@@ -25,6 +26,7 @@ ICOKE_PROMOTION = createHeader({
 		en = "These were only available through the 2006 iCoke Promotion (China Only)",
 	},
 });
+
 root(ROOTS.Promotions, n(ICOKE_PROMOTION, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	["timeline"] = { ADDED_1_12_1 },
 	["groups"] = {

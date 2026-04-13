@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 WARCRAFT_RUMBLE = createHeader({
 	readable = "Warcraft Rumble",
 	icon = 4226119,
@@ -139,7 +140,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			["coords"] = {
 				{ 48.0, 46.4, VALDRAKKEN },
 			},
-			["cost"] = {{"i",202162,1}},	-- Rumble Coin
+			["cost"] = { { "i", 202162, 1 } },	-- Rumble Coin
 			["repeatable"] = true,
 			["groups"] = {
 				i(202163, {	-- Rumble Prize Box
@@ -158,7 +159,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			["coords"] = {
 				{ 28.6, 41.6, STORMWIND_CITY },
 			},
-			["cost"] = {{"i",202162,1}},	-- Rumble Coin
+			["cost"] = { { "i", 202162, 1 } },	-- Rumble Coin
 			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
 			["groups"] = {
@@ -178,7 +179,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			["coords"] = {
 				{ 50.8, 82.2, ORGRIMMAR },
 			},
-			["cost"] = {{"i",202162,1}},	-- Rumble Coin
+			["cost"] = { { "i", 202162, 1 } },	-- Rumble Coin
 			["races"] = HORDE_ONLY,
 			["repeatable"] = true,
 			["groups"] = {
@@ -194,22 +195,18 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(72809, {	-- Insert Coin
-			["cost"] = {{"i",202162,1}},	-- Rumble Coin
+			["cost"] = { { "i", 202162, 1 } },	-- Rumble Coin
 			["repeatable"] = true,
-			["groups"] = {
-				i(202163),	-- Rumble Prize Box
-			},
+			["groups"] = { i(202163) },	-- Rumble Prize Box
 		}),
 		q(75223, {	-- Warcraft Rumble Minis: New Look!
 			["repeatable"] = true,
-			["groups"] = {
-				i(202395),	-- Rumble Foil
-			},
+			["groups"] = { i(202395) },	-- Rumble Foil
 		}),
 	}),
 	n(QUESTS, sharedData({	-- Common Objects
 		["provider"] = { "o", 384744 },	-- Warcraft Rumble Machine
-		["cost"] = {{"i",202395,1}},	-- Rumble Foil
+		["cost"] = { { "i", 202395, 1 } },	-- Rumble Foil
 	},{
 		-- Silver Looks
 		q(73171, {	-- Gain New Look: Maiev

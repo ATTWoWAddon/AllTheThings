@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 MIDNIGHT_SEASONAL_PROMOTIONS = createHeader({
 	readable = "Midnight Seasonal Promotions",
 	icon = [[~_.asset("Expansion_MN")]],
@@ -24,7 +25,6 @@ MIDNIGHT_SEASONAL_PROMOTIONS = createHeader({
 		cn = "这些促销活动均发生在《至暗之夜（Midnight）》作为最新资料片的时期。以下按活动首次出现的时间顺序列出",
 	},
 });
-
 RAZER = createHeader({
 	readable = "Razer Giveaway",
 	icon = 132529,
@@ -39,7 +39,6 @@ RAZER = createHeader({
 		cn = "雷蛇 ×《魔兽世界》坐骑抽奖活动,活动时间：2025 年 1 月 21 日太平洋时间上午 10:00 至 2026 年 1 月 31 日太平洋时间晚上 11:59,无需购买即可参与",
 	},
 });
-
 FANTA = createHeader({
 	readable = "Fanta Giveaway",
 	icon = 4672182,
@@ -90,31 +89,31 @@ root(ROOTS.Promotions, {
 					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
 					cnONLY(i(251542)),	-- Azure Drakefire
 					cnONLY(i(256141)),	-- Fortune's Waving Cat (TOY!)
-					cnONLY(i(253244)),	-- Lunar Celebrants Aquarium
-					cnONLY(i(253257)),	-- Lunar Celebrants Privacy Screen
-					cnONLY(i(253296)),	-- Lunar Celebrants Tea Set
+					cnONLY(i(253244)),	-- Lunar Celebrant's Aquarium (DECOR!)
+					cnONLY(i(253257)),	-- Lunar Celebrant's Privacy Screen (DECOR!)
+					cnONLY(i(253296)),	-- Lunar Celebrant's Tea Set (DECOR!)
 					cnONLY(i(269743)),	-- Landro's Golden Loot Box (2nd Price as well)
 					-- 2nd Price
 					cnONLY(i(258840)),	-- Gilded Fountain (TOY!)
-					cnONLY(i(253402)),	-- Scorching Polearm
+					cnONLY(i(253402)),	-- Scorching Polearm (COSMETIC!)
 				--	cnONLY(i(269743)),	-- Landro's Golden Loot Box
 					-- 1st Price
-					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
+					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror (COSMETIC!)
 					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
 					--[[
 				--	add cnONLY(i()),	-- Azure Dragon Soaring Flame
 					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!) 	MAYBE OTHER BOX
 				--	add cnONLY(i()),	-- Blazing Fire Sandbox Horse
 					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
-					cnONLY(i(253254)),	-- Lunar Celebrants Cradle
-					cnONLY(i(253255)),	-- Lunar Celebrants Wide Pillow Roll
-					cnONLY(i(253256)),	-- Lunar Celebrants Pillow Roll
-					cnONLY(i(253290)),	-- Lunar Celebrants Ornate Vanity
-					cnONLY(i(253291)),	-- Lunar Celebrants Compact
-					cnONLY(i(253292)),	-- Lunar Celebrants Bamboo Canister
-					cnONLY(i(253293)),	-- Lunar Celebrants Tea Tray
-					cnONLY(i(253294)),	-- Lunar Celebrants Teacup
-					cnONLY(i(253295)),	-- Lunar Celebrants Teapot--]]
+					cnONLY(i(253254)),	-- Lunar Celebrant's Cradle (DECOR!)
+					cnONLY(i(253255)),	-- Lunar Celebrant's Wide Pillow Roll (DECOR!)
+					cnONLY(i(253256)),	-- Lunar Celebrant's Pillow Roll (DECOR!)
+					cnONLY(i(253290)),	-- Lunar Celebrant's Ornate Vanity (DECOR!)
+					cnONLY(i(253291)),	-- Lunar Celebrant's Compact (DECOR!)
+					cnONLY(i(253292)),	-- Lunar Celebrant's Bamboo Canister (DECOR!)
+					cnONLY(i(253293)),	-- Lunar Celebrant's Tea Tray (DECOR!)
+					cnONLY(i(253294)),	-- Lunar Celebrant's Teacup (DECOR!)
+					cnONLY(i(253295)),	-- Lunar Celebrant's Teapot (DECOR!)--]]
 				},
 			})),
 			cnONLY(i(269743, {	-- Landro's Golden Loot Box
@@ -126,15 +125,15 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 13th March 2026
 				["groups"] = {
 					cnONLY(i(251542)),	-- Azure Drakefire
-					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!) (BOE)
-					cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!) (BOE)
-					cnONLY(i(254736)),	-- Stormgilded Celestial (MOUNT!) (BOE)
+					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!) [BoE]
+					cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!) [BoE]
+					cnONLY(i(254736)),	-- Stormgilded Celestial (MOUNT!) [BoE]
 					cnONLY(i(255973)),	-- Sandbox Horse
 					-- Old Loot
 					cnONLY(i(46779)),	-- Path of Cenarius
-					cnONLY(i(49283)),	-- Reins of the Spectral Tiger
-					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME
-					cnONLY(i(49285)),	-- X-51 Nether-Rocket
+					cnONLY(i(49283)),	-- Reins of the Spectral Tiger (MOUNT!)
+					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
+					cnONLY(i(49285)),	-- X-51 Nether-Rocket (MOUNT!)
 				},
 			})),
 			i(264396, {	-- Naturally Elegant Doormat (DECOR!)
@@ -215,7 +214,7 @@ root(ROOTS.Promotions, {
 		--	BtM ["description"] = "Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",
 		--		["timeline"] = { ADDED_11_0_2 },
 		--		["icon"] = 4731630,
-		--		["name"] = "Tempered Banner of the Algari (TOY!)(PVE)"
+		--		["name"] = "Tempered Banner of the Algari (TOY!) (PVE)"
 		--	}),
 		},
 	}),

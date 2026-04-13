@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
 	readable = "Dragonflight Seasonal Promotions",
 	icon = [[~_.asset("Expansion_DF")]],
@@ -22,6 +23,7 @@ DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
 		cn = "这些促销活动均发生在《巨龙时代》作为最新资料片的时期，时间为2022 年 10 月 25 日至 2024 年 7 月 24 日。\n\n以下按活动首次出现的时间顺序列出",
 	},
 });
+
 root(ROOTS.Promotions, {
 	n(DRAGONFLIGHT_SEASONAL_PROMOTIONS, {
 		["timeline"] = { ADDED_10_0_0 },
@@ -165,10 +167,10 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between July 11th, 10:00 a.m. & July 18th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				-- #ENDIF
 				-- #ENDIF
-				["timeline"] = { ADDED_10_1_5 },	-- REMOVED_10_1_0 },
+				["timeline"] = { ADDED_10_1_5 },
 				["u"] = REMOVED_FROM_GAME,	-- 18th July 2023
 			}),
-			iensemble(190923, {	-- Ensemble: Dashing Buccaneer's Slops
+			iensemble(190923, {	-- Ensemble: Dashing Buccaneer's Slops (COSMETIC!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between September 5th, 10:00 a.m. & September 12th, 01:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_10_1_5, REMOVED_10_1_5 },	-- Added 5th Sep, Removed 12th Sep
 			}),

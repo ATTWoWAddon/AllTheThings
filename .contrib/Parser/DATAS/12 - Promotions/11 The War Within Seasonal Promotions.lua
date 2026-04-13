@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
 	readable = "The War Within Seasonal Promotions",
 	icon = [[~_.asset("Expansion_TWW")]],
@@ -24,7 +25,6 @@ THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
 		cn = "这些促销活动均发生在《地心之战》作为最新资料片的时期。\n\n以下按活动首次出现的时间顺序列出",
 	},
 });
-
 STEELSERIES = createHeader({
 	readable = "SteelSeries",
 	icon = 133015,
@@ -48,7 +48,6 @@ STEELSERIES = createHeader({
 		cn = "赛睿《魔兽世界》限量版系列促销活动",
 	},
 });
-
 RAZER = createHeader({
 	readable = "Razer",
 	icon = 132529,
@@ -128,13 +127,13 @@ root(ROOTS.Promotions, {
 				["groups"] = {
 				--	cnONLY(i(, {	-- Azerothian Treasure Coins ToDo: Its currency to buy all the items
 				--	ToDo: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251957.jpg
-						cnONLY(i(252679)),	-- Mechanical Prototype Panther MK-0
-						cnONLY(i(252681)),	-- Steel Prototype Panther MK-0
-						cnONLY(i(223471)),	-- Kaldorei War Wolf
-						cnONLY(i(223459)),	-- Blackrock Warsaber
-						cnONLY(i(71726)),	-- Murkablo
-						cnONLY(i(72134)),	-- Gregarious Grell
-					--	cnONLY(i()),	-- Sands of Time (Different game?)
+						cnONLY(i(252679)),	-- Mechanical Prototype Panther MK-0 (MOUNT!)
+						cnONLY(i(252681)),	-- Steel Prototype Panther MK-0 (MOUNT!)
+						cnONLY(i(223471)),	-- Kaldorei War Wolf (MOUNT!)
+						cnONLY(i(223459)),	-- Blackrock Warsaber (MOUNT!)
+						cnONLY(i(71726)),	-- Murkablo (PET!)
+						cnONLY(i(72134)),	-- Gregarious Grell (PET!)
+					--	cnONLY(i()),	-- Sands of Time ('Quicksand Secret Treasure Vault' event) https://warcraft.wiki.gg/wiki/Quicksand_Secret_Treasure_Vault
 					--	cnONLY(i()),	-- Karesh expedition resupply
 					--	cnONLY(i()),	-- Shard of Azeroth Fragment
 				--	})),
@@ -142,7 +141,7 @@ root(ROOTS.Promotions, {
 			}));
 			-- "Pre Season"
 			cnONLY(ach(40910, {	-- Successfully Stress Test CN Realms
-				["description"] = "Rewarded for the Aid in the stress testing of the realms in China",
+				["description"] = "Rewarded for the Aid in the stress testing of the realms in China.",
 				["timeline"] = { ADDED_11_0_0, REMOVED_11_0_5 },
 			})),
 			cnONLY(i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
@@ -183,7 +182,7 @@ root(ROOTS.Promotions, {
 				["u"] = REMOVED_FROM_GAME,	-- 26th September 2024
 			}),
 			-- Season 1
-			i(232305, {	-- Forged Champion's Prestigious Banner (TOY!)(PVP)
+			i(232305, {	-- Forged Champion's Prestigious Banner (TOY!) (PVP)
 				["description"] = "Arena World Championship: TWW Season 1\n\nSign up on Raider.io for any of the 4 Cups, available until October 13th 2024, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments/AWC",
 				["timeline"] = { ADDED_11_0_5, REMOVED_11_0_5 },
 			}),
@@ -196,22 +195,22 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_0_2, "removed 11.1.0.59466" },
 				["u"] = REAL_MONEY,
 			}),
-			i(228761, {	-- Classic Brick Tabard
+			i(228761, {	-- Classic Brick Tabard (COSMETIC!)
 				["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in |CFFFF0000Walgreens|r, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should receive a code to your email to redeem on battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
 				["timeline"] = { ADDED_11_0_2, "removed 11.1.0.59466" },
 				["u"] = REAL_MONEY,
 			}),
-			i(228763, {	-- Classic Crimson Tabard
+			i(228763, {	-- Classic Crimson Tabard (COSMETIC!)
 				["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in |CFFFF0000Circle K|r, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should receive a code to your email to redeem on battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
 				["timeline"] = { ADDED_11_0_2, "removed 11.1.0.59466" },
 				["u"] = REAL_MONEY,
 			}),
-			i(228762, {	-- Classic Lively Tabard
+			i(228762, {	-- Classic Lively Tabard (COSMETIC!)
 				["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in |CFFFF0000Dollar General|r, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should receive a code to your email to redeem on battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
 				["timeline"] = { ADDED_11_0_2, "removed 11.1.0.59466" },
 				["u"] = REAL_MONEY,
 			}),
-			i(228764, {	-- Classic Sunny Tabard
+			i(228764, {	-- Classic Sunny Tabard (COSMETIC!)
 				["description"] = "Krogers promotional item. You have to earn points before Jan 8, 2025 and redeem before Feb 7, 2025. Can be redeemed for 1500 rewards points from pointsrewardsplus.com. With a referral link, just signing up will earn you enough points to redeem the tabard for free. Access the code from the account page and then redeem on battle.net or in the launcher.",
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.7.58238" },
 				["u"] = REAL_MONEY,
@@ -235,17 +234,17 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_0_5 },
 				["u"] = REMOVED_FROM_GAME,	-- 5th November 2024
 			}),
-			i(228907, {	-- Bot Wrangler’s Belt
+			i(228907, {	-- Bot Wrangler’s Belt (COSMETIC!)
 				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
 				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58867" },
 				["u"] = REAL_MONEY,
 			}),
-			i(228909, {	-- Bot Wrangler’s Crimson Apron
+			i(228909, {	-- Bot Wrangler’s Crimson Apron (COSMETIC!)
 				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
 				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58867" },
 				["u"] = REAL_MONEY,
 			}),
-			i(228908, {	-- Bot Wrangler’s Violet Apron
+			i(228908, {	-- Bot Wrangler’s Violet Apron (COSMETIC!)
 				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
 				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58867" },
 				["u"] = REAL_MONEY,
@@ -311,7 +310,7 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 14th, 10:00 a.m. & February 4th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_0_7, "removed 11.0.7.58911" },
 			}),
-			cnONLY(i(235344, {	-- Blazing Royal Fire Hawk (CN Only)
+			cnONLY(i(235344, {	-- Blazing Royal Fire Hawk (MOUNT!) (CN Only)
 				["description"] = "Rewarded from the Treasure Workshop.",
 				["timeline"] = { ADDED_11_0_7, "removed 11.1.0.59425" },	-- Removed February 27th, 2025
 			})),
@@ -323,11 +322,11 @@ root(ROOTS.Promotions, {
 				-- #endif
 				["timeline"] = { ADDED_11_0_7,  "removed 11.1.0.59425" },	-- Removed February 27th, 2025
 				["groups"] = {
-					cnONLY(i(227362)),	-- Golden Ashes of Al'ar (CN Only)
-					cnONLY(i(49284)),	-- Reins of the Swift Spectral Tiger
-					cnONLY(i(49283)),	-- Reins of the Spectral Tiger
-					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME
-					cnONLY(i(49285)),	-- X-51 Nether-Rocket
+					cnONLY(i(227362)),	-- Golden Ashes of Al'ar (MOUNT!) (CN Only)
+					cnONLY(i(49284)),	-- Reins of the Swift Spectral Tiger (MOUNT!)
+					cnONLY(i(49283)),	-- Reins of the Spectral Tiger (MOUNT!)
+					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
+					cnONLY(i(49285)),	-- X-51 Nether-Rocket (MOUNT!)
 					cnONLY(i(45047)),	-- Sandbox Tiger
 					cnONLY(i(35223)),	-- Papa Hummel's Old-Fashioned Pet Biscuit
 					cnONLY(i(46779)),	-- Path of Cenarius
@@ -337,13 +336,13 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 25th, 10:00 a.m. & March 25th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_1_0, "removed 11.1.0.59679" },
 			}),
-			iensemble(229822, {	-- Arsenal: Golden Crests of the Kingdom
+			iensemble(229822, {	-- Arsenal: Golden Crests of the Kingdom (COSMETIC!)
 				["description"] = "Included as a code in the physical goodie bag given to attendees of 30th Anniversary Live events.",
 				["timeline"] = { ADDED_11_0_7, "removed 11.1.5.60568" },
 				["u"] = REAL_MONEY,
 			}),
 			-- Season 2
-			i(232306, {	-- Prized Champion's Prestigious Banner (TOY!)(PVP)
+			i(232306, {	-- Prized Champion's Prestigious Banner (TOY!) (PVP)
 				["description"] = "Arena World Championship: TWW Season 2\n\nSign up on Raider.io for any of the 3 Cups, available until April 11th 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",
 				["timeline"] = { ADDED_11_1_5, REMOVED_11_1_5 },
 			}),
@@ -377,16 +376,16 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.0.63163" },	-- Removed September 16, 2025
 			}),
 			-- Season 3
-			cnONLY(i(246732, {	-- Void-Forged Overseer (CN Only)
+			cnONLY(i(246732, {	-- Void-Forged Overseer (MOUNT!) (CN Only)
 				["description"] = "Rewarded from the Season 3 Shop Bundle.",
 				["timeline"] = { ADDED_11_2_0, REMOVED_11_2_5 },
 				["u"] = REAL_MONEY,
 			})),
-			i(232307, {	-- Astral Champion's Prestigious Banner (TOY!)(PVP)
+			i(232307, {	-- Astral Champion's Prestigious Banner (TOY!) (PVP)
 				["description"] = "Arena World Championship: TWW Season 3\n\nSign up on Raider.io for any of the 3 Cups, available until October 22nd 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.5.64154" },	-- Removed AFTER 11.2.5 Release
 			}),
-			i(232303, {	-- Unbound Banner of the Algari (TOY!)(PVE)
+			i(232303, {	-- Unbound Banner of the Algari (TOY!) (PVE)
 				-- #if BEFORE 11.2.5
 				["description"] = "Mythic Dungeon International: TWW Season 3\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive an exclusive Toy to use in-game!\n\nSign-ups close 30th September 2025 3PM PDT and The Time Trials are on 1st October 1PM PDT - 6th October (US) 3PM PDT. \nFor more details & requirements check out: Raider.io/tournaments",
 				-- #endif
@@ -411,11 +410,11 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_5 },
 				["u"] = REAL_MONEY,
 			}),
-			iensemble(242480, {	-- Ensemble: Violet Sweatsuit
+			iensemble(242480, {	-- Ensemble: Violet Sweatsuit (COSMETIC!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_5, REMOVED_11_2_7 },	-- Removed December 2nd, 2025
 			}),
-			i(232303, {	-- Unbound Banner of the Algari (TOY!)(PVE)
+			i(232303, {	-- Unbound Banner of the Algari (TOY!) (PVE)
 				["description"] = "Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",
 				["timeline"] = { ADDED_11_2_5 },
 				["u"] = REMOVED_FROM_GAME,	-- 27th November 2025
@@ -425,7 +424,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_5, "removed 11.2.7.64772" },	-- Removed December 8th, 2025
 				["u"] = REAL_MONEY,
 			}),
-			i(235343, {	-- Topsy Turvy Joker's Mask
+			i(235343, {	-- Topsy Turvy Joker's Mask (COSMETIC!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_7, "removed 11.2.7.64978" },	-- Removed December 30th, 2025
 			}),
@@ -441,7 +440,7 @@ root(ROOTS.Promotions, {
 		--	BtM ["description"] = "Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",
 		--		["timeline"] = { ADDED_11_0_2 },
 		--		["icon"] = 4731630,
-		--		["name"] = "Tempered Banner of the Algari (TOY!)(PVE)"
+		--		["name"] = "Tempered Banner of the Algari (TOY!) (PVE)"
 		--	}),
 		},
 	}),

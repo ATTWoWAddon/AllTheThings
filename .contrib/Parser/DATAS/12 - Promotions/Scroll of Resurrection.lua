@@ -23,6 +23,7 @@ SCROLL_OF_RESURRECTION = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 	["timeline"] = { ADDED_4_3_0, REMOVED_5_3_0 },
 	["groups"] = {

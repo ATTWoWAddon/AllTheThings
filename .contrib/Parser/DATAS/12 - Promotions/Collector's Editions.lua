@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 COLLECTORS_EDITION = createHeader({
 	readable = "Collector's Edition",
 	icon = [[~_.asset("Promotion_Collector")]],
@@ -836,11 +837,10 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
 			["groups"] = {
-				mount(473487),		-- Sha-Touched Cloud Serpent
-				mount(473478),		-- Sha-Touched Riding Tiger
-				-- i(xxxxxx),	-- Joyous Pet (PET!)
-				-- Ensemble: Stormstout's Sha-Touched Collection Transmog Set (Classic)
-				-- Sha-Touched Tea Set Toy (Added with Mists of Pandaria)
+				mount(473487),	-- Sha-Touched Cloud Serpent
+				mount(473478),	-- Sha-Touched Riding Tiger
+				-- i(235561),	-- Joyous (PET!)
+				-- iensemble(267294),	-- Ensemble: Stormstout's Sha-Warped Collection (COSMETIC!)
 				i(235464, {	-- Sha-Touched Tea Set (TOY!)
 					["timeline"] = { ADDED_4_4_2, REMOVED_5_5_2 },
 				}),
@@ -856,7 +856,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(235287),	-- Sha-Warped Riding Tiger (MOUNT!)
 				i(235358),	-- Merriment (PET!)
 				i(235288),	-- Sha-Warped Tea Set (TOY!)
-				iensemble(238050, {	-- Ensemble: Stormstout's Sha-Warped Collection
+				iensemble(238050, {	-- Ensemble: Stormstout's Sha-Warped Collection (COSMETIC!)
 					["timeline"] = { ADDED_11_1_7 },
 				}),
 			},
@@ -922,15 +922,16 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						["timeline"] = { ADDED_8_3_7 },	-- Still availble to players that have the mount, able to share quest with others etc.
 						["groups"] = {
 							i(172954),	-- Echo of Mortality (QI!)
-							i(172075),	-- Eternal Traveler's Guise
-							i(172076),	-- Eternal Traveler's Spaulders
-							i(172078),	-- Eternal Traveler's Cloak
-							i(172077),	-- Eternal Traveler's Raiment
-							i(172079),	-- Eternal Traveler's Cuffs
-							i(172080),	-- Eternal Traveler's Gauntlets
-							i(172081),	-- Eternal Traveler's Waistwrap
-							i(172082),	-- Eternal Traveler's Leggings
-							i(172083),	-- Eternal Traveler's Treads
+							--
+							i(172075),	-- Eternal Traveler's Guise (COSMETIC!)
+							i(172076),	-- Eternal Traveler's Spaulders (COSMETIC!)
+							i(172078),	-- Eternal Traveler's Cloak (COSMETIC!)
+							i(172077),	-- Eternal Traveler's Raiment (COSMETIC!)
+							i(172079),	-- Eternal Traveler's Cuffs (COSMETIC!)
+							i(172080),	-- Eternal Traveler's Gauntlets (COSMETIC!)
+							i(172081),	-- Eternal Traveler's Waistwrap (COSMETIC!)
+							i(172082),	-- Eternal Traveler's Leggings (COSMETIC!)
+							i(172083),	-- Eternal Traveler's Treads (COSMETIC!)
 						},
 					}),
 				}),
@@ -974,15 +975,15 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			["groups"] = {
 				i(193588),	-- Timewalker's Hearthstone (TOY!)
 				-- #if AFTER 11.2.5
-				iensemble(255827),	-- Collection: Wings of Awakening
+				iensemble(255827),	-- Collection: Wings of Awakening (COSMETIC!)
 				-- #else
-				i(188257),	-- Azure Wings of Awakening
-				i(188258),	-- Bronze Wings of Awakening
-				i(188259),	-- Emerald Wings of Awakening
-				i(188260),	-- Ruby Wings of Awakening
-				i(188256),	-- Obsidian Wings of Awakening
+				i(188257),	-- Azure Wings of Awakening (COSMETIC!)
+				i(188258),	-- Bronze Wings of Awakening (COSMETIC!)
+				i(188259),	-- Emerald Wings of Awakening (COSMETIC!)
+				i(188260),	-- Ruby Wings of Awakening (COSMETIC!)
+				i(188256),	-- Obsidian Wings of Awakening (COSMETIC!)
 				-- #endif
-				i(193610),	-- Diadem of the Spell-Keeper
+				i(193610),	-- Diadem of the Spell-Keeper (COSMETIC!)
 			},
 		}),
 	})),
@@ -992,7 +993,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			["groups"] = {
 				mount(417888),	-- Algarian Stormrider (MOUNT!)
 				ach(19027),	-- Heroic Edition: Algarian Stormrider
-				iensemble(209336),	-- Ensemble: Stormrider's Attire
+				iensemble(209336),	-- Ensemble: Stormrider's Attire (COSMETIC!)
 				skyriding(n(DRAGONRIDING_RACING, {
 					n(ACHIEVEMENTS, {
 						ach(18928, {	-- Storm Rider: Bronze
@@ -1027,9 +1028,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 								18921,	-- Tyrhold Trial Storm Gryphon: Gold
 								18918,	-- Vakthros Ascent Storm Gryphon: Gold
 							}},
-							["groups"] = {
-								title(520),	-- The Storm Rider <Name>
-							},
+							["groups"] = { title(520) },	-- The Storm Rider <Name>
 						}),
 					}),
 					n(QUESTS, {
@@ -1043,42 +1042,41 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 							["sourceQuest"] = 77813,	-- Lightning Strikes
 							["provider"] = { "n", 193359 },	-- Lord Andestrasz
 							["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
-							["groups"] = {
-								iensemble(209417),	-- Ensemble: Thundering Stormrider's Attire
-							},
+							["groups"] = { iensemble(209417) },	-- Ensemble: Thundering Stormrider's Attire (COSMETIC!)
 						}),
 						q(81993, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Dragon Isle Version]
 							["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
 							["coord"] = { 38.3, 94.9, VALDRAKKEN },
 							["groups"] = {
 								i(220737),	-- Storm Spirit (QI!)
-								i(220710),	-- Champion Stormrider's Boots
-								i(220709),	-- Champion Stormrider's Breastplate
-								i(220716),	-- Champion Stormrider's Buckle
-								i(220711),	-- Champion Stormrider's Cape
-								i(220715),	-- Champion Stormrider's Epaulets
-								i(220712),	-- Champion Stormrider's Grips
-								i(220713),	-- Champion Stormrider's Helmet
-								i(220714),	-- Champion Stormrider's Pants
-								i(220717),	-- Champion Stormrider's Wristguards
-								i(220696),	-- Deep Stormrider's Boots
-								i(220695),	-- Deep Stormrider's Breastplate
-								i(220702),	-- Deep Stormrider's Buckle
-								i(220697),	-- Deep Stormrider's Cape
-								i(220701),	-- Deep Stormrider's Epaulets
-								i(220698),	-- Deep Stormrider's Grips
-								i(220699),	-- Deep Stormrider's Helmet
-								i(220700),	-- Deep Stormrider's Pants
-								i(220703),	-- Deep Stormrider's Wristguards
-								i(220719),	-- Shining Stormrider's Boots
-								i(220718),	-- Shining Stormrider's Breastplate
-								i(220725),	-- Shining Stormrider's Buckle
-								i(220720),	-- Shining Stormrider's Cape
-								i(220724),	-- Shining Stormrider's Epaulets
-								i(220721),	-- Shining Stormrider's Grips
-								i(220722),	-- Shining Stormrider's Helmet
-								i(220723),	-- Shining Stormrider's Pants
-								i(220726),	-- Shining Stormrider's Wristguards
+								--
+								i(220710),	-- Champion Stormrider's Boots (COSMETIC!)
+								i(220709),	-- Champion Stormrider's Breastplate (COSMETIC!)
+								i(220716),	-- Champion Stormrider's Buckle (COSMETIC!)
+								i(220711),	-- Champion Stormrider's Cape (COSMETIC!)
+								i(220715),	-- Champion Stormrider's Epaulets (COSMETIC!)
+								i(220712),	-- Champion Stormrider's Grips (COSMETIC!)
+								i(220713),	-- Champion Stormrider's Helmet (COSMETIC!)
+								i(220714),	-- Champion Stormrider's Pants (COSMETIC!)
+								i(220717),	-- Champion Stormrider's Wristguards (COSMETIC!)
+								i(220696),	-- Deep Stormrider's Boots (COSMETIC!)
+								i(220695),	-- Deep Stormrider's Breastplate (COSMETIC!)
+								i(220702),	-- Deep Stormrider's Buckle (COSMETIC!)
+								i(220697),	-- Deep Stormrider's Cape (COSMETIC!)
+								i(220701),	-- Deep Stormrider's Epaulets (COSMETIC!)
+								i(220698),	-- Deep Stormrider's Grips (COSMETIC!)
+								i(220699),	-- Deep Stormrider's Helmet (COSMETIC!)
+								i(220700),	-- Deep Stormrider's Pants (COSMETIC!)
+								i(220703),	-- Deep Stormrider's Wristguards (COSMETIC!)
+								i(220719),	-- Shining Stormrider's Boots (COSMETIC!)
+								i(220718),	-- Shining Stormrider's Breastplate (COSMETIC!)
+								i(220725),	-- Shining Stormrider's Buckle (COSMETIC!)
+								i(220720),	-- Shining Stormrider's Cape (COSMETIC!)
+								i(220724),	-- Shining Stormrider's Epaulets (COSMETIC!)
+								i(220721),	-- Shining Stormrider's Grips (COSMETIC!)
+								i(220722),	-- Shining Stormrider's Helmet (COSMETIC!)
+								i(220723),	-- Shining Stormrider's Pants (COSMETIC!)
+								i(220726),	-- Shining Stormrider's Wristguards (COSMETIC!)
 							},
 						})),
 						q(84908, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- Stormrider's Honors [Khaz Algar Version]
@@ -1099,21 +1097,21 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 							["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
 							["coord"] = { 38.3, 94.9, VALDRAKKEN },
 							["groups"] = {
-								i(220708),	-- Frenzied Stormrider's Breastplate
-								i(220706),	-- Frenzied Stormrider's Buckle
-								i(220705),	-- Frenzied Stormrider's Epaulets
-								i(220707),	-- Frenzied Stormrider's Grips
-								i(220704),	-- Frenzied Stormrider's Helmet
-								i(220736),	-- Shocking Stormrider's Breastplate
-								i(220734),	-- Shocking Stormrider's Buckle
-								i(220733),	-- Shocking Stormrider's Epaulets
-								i(220735),	-- Shocking Stormrider's Grips
-								i(220732),	-- Shocking Stormrider's Helmet
-								i(220731),	-- Sparking Stormrider's Breastplate
-								i(220729),	-- Sparking Stormrider's Buckle
-								i(220728),	-- Sparking Stormrider's Epaulets
-								i(220730),	-- Sparking Stormrider's Grips
-								i(220727),	-- Sparking Stormrider's Helmet
+								i(220708),	-- Frenzied Stormrider's Breastplate (COSMETIC!)
+								i(220706),	-- Frenzied Stormrider's Buckle (COSMETIC!)
+								i(220705),	-- Frenzied Stormrider's Epaulets (COSMETIC!)
+								i(220707),	-- Frenzied Stormrider's Grips (COSMETIC!)
+								i(220704),	-- Frenzied Stormrider's Helmet (COSMETIC!)
+								i(220736),	-- Shocking Stormrider's Breastplate (COSMETIC!)
+								i(220734),	-- Shocking Stormrider's Buckle (COSMETIC!)
+								i(220733),	-- Shocking Stormrider's Epaulets (COSMETIC!)
+								i(220735),	-- Shocking Stormrider's Grips (COSMETIC!)
+								i(220732),	-- Shocking Stormrider's Helmet (COSMETIC!)
+								i(220731),	-- Sparking Stormrider's Breastplate (COSMETIC!)
+								i(220729),	-- Sparking Stormrider's Buckle (COSMETIC!)
+								i(220728),	-- Sparking Stormrider's Epaulets (COSMETIC!)
+								i(220730),	-- Sparking Stormrider's Grips (COSMETIC!)
+								i(220727),	-- Sparking Stormrider's Helmet (COSMETIC!)
 							},
 						})),
 						q(83025, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection [Khaz Algar Version]
@@ -1204,7 +1202,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				["description"] = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
 				["groups"] = {
 					ach(61401),	-- Heroic Edition: Lightwing Dragonhawk
-					iensemble(248249),	-- Lightstider Raiment
+					iensemble(248249),	-- Lightstider Raiment (COSMETIC!)
 					i(243020),	-- Lightwing Dragonhawk (MOUNT!)
 				},
 			}),
@@ -1224,7 +1222,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 					i(248809, {["timeline"] = { ADDED_11_2_7 }}),	-- Void-Corrupted Rotunda (DECOR!)
 					i(245610),	-- Voidlight Surger (MOUNT!)
 					i(243019),	-- Voidwing Dragonhawk (MOUNT!)
-					iensemble(248974),	-- Voidstrider Raiment
+					iensemble(248974),	-- Voidstrider Raiment (COSMETIC!)
 				},
 			}),
 		},
@@ -1294,31 +1292,28 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["description"] = "These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",
 		["groups"] = {
 			i(265804, {	-- Sanctuary Chess Collection
-				-- TODO: Remove decorID once Wago data is updated with these
-				i(259055, {["decorID"] = 12247}),	-- Hatred's Wolfpelt Rug (DECOR!)
-				i(259056, {["decorID"] = 12248}),	-- Prime Evil's Chest (DECOR!)
-				i(259059, {["decorID"] = 12251}),	-- Sanctuary Chess Dark Bishop (DECOR!)
-				i(259064, {["decorID"] = 12256}),	-- Sanctuary Chess Dark King (DECOR!)
-				i(259063, {["decorID"] = 12255}),	-- Sanctuary Chess Dark Knight (DECOR!)
-				i(259062, {["decorID"] = 12254}),	-- Sanctuary Chess Dark Pawn (DECOR!)
-				i(259061, {["decorID"] = 12253}),	-- Sanctuary Chess Dark Queen (DECOR!)
-				i(259060, {["decorID"] = 12252}),	-- Sanctuary Chess Dark Rook (DECOR!)
-				i(259065, {["decorID"] = 12257}),	-- Sanctuary Chess Light Bishop (DECOR!)
-				i(259070, {["decorID"] = 12262}),	-- Sanctuary Chess Light King (DECOR!)
-				i(259069, {["decorID"] = 12261}),	-- Sanctuary Chess Light Knight (DECOR!)
-				i(259068, {["decorID"] = 12260}),	-- Sanctuary Chess Light Pawn (DECOR!)
-				i(259067, {["decorID"] = 12259}),	-- Sanctuary Chess Light Queen (DECOR!)
-				i(259066, {["decorID"] = 12258}),	-- Sanctuary Chess Light Rook (DECOR!)
-				i(259058, {["decorID"] = 12250}),	-- Sanctuary's Chess Board (DECOR!)
-				i(259057, {["decorID"] = 12249}),	-- Sanctuary's Chess Match (DECOR!)
+				i(259055),	-- Hatred's Wolfpelt Rug (DECOR!)
+				i(259056),	-- Prime Evil's Chest (DECOR!)
+				i(259059),	-- Sanctuary Chess Dark Bishop (DECOR!)
+				i(259064),	-- Sanctuary Chess Dark King (DECOR!)
+				i(259063),	-- Sanctuary Chess Dark Knight (DECOR!)
+				i(259062),	-- Sanctuary Chess Dark Pawn (DECOR!)
+				i(259061),	-- Sanctuary Chess Dark Queen (DECOR!)
+				i(259060),	-- Sanctuary Chess Dark Rook (DECOR!)
+				i(259065),	-- Sanctuary Chess Light Bishop (DECOR!)
+				i(259070),	-- Sanctuary Chess Light King (DECOR!)
+				i(259069),	-- Sanctuary Chess Light Knight (DECOR!)
+				i(259068),	-- Sanctuary Chess Light Pawn (DECOR!)
+				i(259067),	-- Sanctuary Chess Light Queen (DECOR!)
+				i(259066),	-- Sanctuary Chess Light Rook (DECOR!)
+				i(259058),	-- Sanctuary's Chess Board (DECOR!)
+				i(259057),	-- Sanctuary's Chess Match (DECOR!)
 			}),
 		},
 	})),
 	n(DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",
-		["groups"] = {
-			i(256764),	-- Sanctuary's Horadric Cube (DECOR!)
-		},
+		["groups"] = { i(256764) },	-- Sanctuary's Horadric Cube (DECOR!)
 	})),
 	n(OVERWATCH_ORIGINS, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3, REMOVED_10_0_2 } }, {
 		["description"] = "These rewards are available to anyone who purchases Overwatch Origins Collection.",

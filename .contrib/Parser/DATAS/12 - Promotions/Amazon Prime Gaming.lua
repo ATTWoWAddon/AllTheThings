@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 AMAZON_PRIME_GAMING = createHeader({
 	readable = "Amazon Prime Gaming",
 	icon = 136101,
@@ -12,6 +13,7 @@ AMAZON_PRIME_GAMING = createHeader({
 		cn = "亚马逊 Prime Gaming 为《魔兽世界》正式服提供游戏内内容。根据你所在的国家 / 地区，包含 Prime Gaming 权益的亚马逊 Prime 会员每月费用在 4–16 美元 / 欧元 之间，偶尔也会提供月度免费试用。\n\n创建一个 Twitch 账号，并将其绑定你的亚马逊 Prime 账号。\n\n接下来将你的战网账号与 Twitch 账号绑定。\n\n最后前往 gaming.amazon.com/loot/wow 领取每月专属奖励。\n\n亚马逊 Prime 会员还附带免费的 Twitch 订阅资格，你可以用它来支持 AllTheThings。\n\n推荐主播：\n\nTwitch.tv/Crieve\nTwitch.tv/Goldenshacal",
 	},
 });
+
 root(ROOTS.Promotions, {
 	n(AMAZON_PRIME_GAMING, {
 		["timeline"] = { ADDED_10_0_7, REMOVED_10_2_6 },

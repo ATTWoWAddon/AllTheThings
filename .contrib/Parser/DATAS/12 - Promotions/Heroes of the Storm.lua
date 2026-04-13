@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 HEROES_OF_THE_STORM = createHeader({
 	readable = "Heroes of the Storm",
 	icon = 132314,
@@ -18,6 +19,7 @@ HEROES_OF_THE_STORM = createHeader({
 		tw = "暴雪英霸",
 	},
 });
+
 root(ROOTS.Promotions, n(HEROES_OF_THE_STORM, {
 	["timeline"] = { ADDED_6_0_2 },
 	["groups"] = {

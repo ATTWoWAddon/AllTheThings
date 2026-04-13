@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 BLIZZCON = createHeader({
 	readable = "BlizzCon",
 	icon = [[~_.asset("Promotion_Blizzcon")]],
@@ -19,6 +20,7 @@ BLIZZCON = createHeader({
 		tw = "暴雪嘉年華",
 	},
 });
+
 root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(411, {	-- Blizzcon 2005 - Murky
 		["provider"] = { "i", 20371 },	-- Murky (PET!)
@@ -153,23 +155,23 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { ADDED_8_2_5 },
 	}),
 	-- #if AFTER 11.2.5
-	iensemble(258422, {	-- Ensemble: Wooly Wendigo
+	iensemble(258422, {	-- Ensemble: Wooly Wendigo (COSMETIC!)
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	-- #else
-	i(171341, {	-- Wooly Wendigo Pullover
+	i(171341, {	-- Wooly Wendigo Pullover (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
-	i(171340, {	-- Wooly Wendigo Hood
+	i(171340, {	-- Wooly Wendigo Hood (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
-	i(171339, {	-- Wooly Wendigo Sweatpants
+	i(171339, {	-- Wooly Wendigo Sweatpants (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
-	i(171338, {	-- Wooly Wendigo Slippers
+	i(171338, {	-- Wooly Wendigo Slippers (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
-	i(171337, {	-- Wooly Wendigo Mittens
+	i(171337, {	-- Wooly Wendigo Mittens (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
 	-- #endif

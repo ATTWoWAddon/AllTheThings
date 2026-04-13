@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 SPIRIT_OF_COMPETITION = createHeader({
 	readable = "Spirit of Competition",
 	icon = 133278,
@@ -35,6 +36,7 @@ SPIRIT_OF_COMPETITION = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 } }, {
 	ach(1637, {	-- Spirit of Competition
 		["provider"] = { "i", 37297 },	-- Spirit of Competition
