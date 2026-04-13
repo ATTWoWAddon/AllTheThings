@@ -32,7 +32,7 @@ local ALL_REGULAR_DELVES = {
 	-- #endif
 };
 
-root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Delves, timelineSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
 		ach(40817, {	-- A Delver's Bounty
 			["maps"] = ALL_REGULAR_DELVES,
@@ -118,4 +118,4 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["maps"] = ALL_REGULAR_DELVES,
 		}),
 	}),
-})));
+}));

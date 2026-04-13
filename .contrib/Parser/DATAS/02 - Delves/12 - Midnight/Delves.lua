@@ -64,7 +64,7 @@ local mapped = function(t)
 	end
 	return t
 end
-root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		ach(61722),	-- Curio Enthusiast: Midnight
 		ach(61723),	-- Curio Fanatic: Midnight
@@ -920,18 +920,3 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93822, name(HEADERS.Faction, FACTION_HARATI, {isWeekly=true})),	-- Hara'ti Rep
 	})),
 }));
-
-
---[[
-Bountiful - Grudge Pit - Tier 8
-85719
-91185
--- Bountiful Chest
-93822
-
-Bountiful - Parhelion - Tier 9
-91182
--- Bountiful Chest
-93821
-
-]]
