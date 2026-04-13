@@ -223,7 +223,7 @@ if ItemEventListener then
 		-- app.PrintDebug("Item Callback", id)
 		ItemEventListener:AddCallback(math_floor(id), function()
 			-- app.PrintDebug("Item Loaded", id)
-			app.DirectGroupRefresh(t, true)
+			app.DirectGroupRedraw(t, true)
 			app.ReshowGametooltip()
 		end)
 		return true

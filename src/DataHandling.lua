@@ -571,6 +571,31 @@ local function DirectGroupRefresh(group, immediate)
 	end
 end
 app.DirectGroupRefresh = DirectGroupRefresh
+-- Trigger a Redraw of the window containing the specific group
+local function DirectGroupRedraw(group, immediate)
+	local window = app.GetRelativeRawWithField(group, "window")
+	if window then
+		if immediate then
+			-- app.PrintDebug("DGR:Redraw:Now",group.hash,window.Suffix)
+			Callback(window.Redraw, window)
+		else
+			-- app.PrintDebug("DGR:Redraw:Delay",group.hash,window.Suffix)
+			DelayedCallback(window.Redraw, DGUDelay, window)
+		end
+	else
+		-- app.PrintDebug("DGR:Redraw",group.hash,">",DGUDelay,"No window!")
+		-- app.PrintTable(group)
+		-- this scenario happens when the meta-group of a DLO used in /att list triggers a DGR on itself
+		-- due to it being completely detached from the actual 'list' window
+		-- perhaps this is niche enough of an occurrence that we can just try to refresh the 'list' window
+		-- in this situation
+		local window = app.Windows.list
+		if window then
+			DelayedCallback(window.Redraw, DGUDelay, window)
+		end
+	end
+end
+app.DirectGroupRedraw = DirectGroupRedraw
 local LIMIT_UPDATE_SEARCH_RESULTS = 10
 -- Dynamically increments the progress for the parent heirarchy of each collectible search result
 local function UpdateSearchResults(searchResults)

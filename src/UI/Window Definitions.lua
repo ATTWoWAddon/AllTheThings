@@ -2418,6 +2418,7 @@ local FieldDefaults = {
 			SetRowData(self, rows[i], rowData[current]);
 			current = current + 1;
 		end
+		-- app.PrintDebugPrior(app.Modules.Color.Colorize("Redraw:", app.DefaultColors.TooltipLore),self.Suffix)
 	end,
 	OnInactiveAlphaChanged = function(self, value)
 		value = tonumber(value)

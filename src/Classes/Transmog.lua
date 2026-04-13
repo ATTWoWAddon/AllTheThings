@@ -835,7 +835,7 @@ end
 do
 	-- Allows generating and capturing the specific ItemString which represents the SourceID of a group, if possible
 	local function GenerateGroupLinkUsingSourceID(group)
-		app.DirectGroupRefresh(group)
+		app.DirectGroupRedraw(group)
 		local sourceID = group and group.sourceID;
 		if not sourceID then return; end
 
@@ -888,7 +888,7 @@ do
 
 	-- Appearance-based Classes
 	local AppearanceVariantClasses = { CLASSNAME }
-	
+
 	local AndAppearanceCollectible = app.IsRetail and app.ReturnTrue or function(t)
 		if not t.rwp and app.Settings.OnlyRWP then
 			return false;
@@ -910,7 +910,7 @@ do
 		app.AddEventHandler("OnSettingsNeedsRefresh", AssignCollectibleFunction);
 		app.AddEventHandler("OnStartup", AssignCollectibleFunction);
 	end
-	
+
 	local AndAppearance = {
 		__name = "AndAppearance",
 		CACHE = function() return CACHE end,
