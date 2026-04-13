@@ -1364,6 +1364,12 @@ function app:GetDatabaseRoot()
 					icon = app.asset("Category_Factions")
 				}),
 
+				-- First Crafts
+				app.CreateDynamicHeader("firstcraftID", {
+					name = L.FIRST_CRAFTS_CHECKBOX,
+					icon = app.asset("Category_Professions")	-- TODO: Make a new icon
+				}),
+
 				-- Flight Paths
 				app.CreateDynamicHeader("flightpathID", {
 					name = L.FLIGHT_PATHS,

@@ -62,7 +62,7 @@ do
 			return app.TypicalCharacterCollected(CACHE, t[KEY])
 		end,
 	}, (function(t) return t.itemID; end));
-	
+
 	app.AddGenericFieldConverter(KEY);
 	app.AddEventHandler("OnRefreshCollections", function()
 		local state
@@ -85,6 +85,9 @@ do
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	end);
+	app.AddEventHandler("OnLoad", function()
+		app.AddDynamicCategoryHeader({ id = "garrisonbuildingID", name = "Buildings", icon = 1005027 });
 	end);
 end
 
@@ -195,7 +198,7 @@ do
 			if app.IsCached(CACHE, id) then return 1; end
 		end,
 	});
-	
+
 	app.AddGenericFieldConverter(KEY);
 	app.AddEventHandler("OnRefreshCollections", function()
 		local state

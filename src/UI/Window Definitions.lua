@@ -3581,8 +3581,8 @@ local DynamicCategoryHeaders = {
 	{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
 	{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
 	{ id = "mountID", name = MOUNTS, icon = app.asset("Category_Mounts") },
-	-- TODO: Add professions here using the byValue probably
 	{ id = "questID", name = TRACKER_HEADER_QUESTS, icon = app.asset("Interface_Quest_header") },
+	{ id = "recipeID", name = AUCTION_CATEGORY_RECIPES, icon = app.asset("Category_Professions") },
 	{ id = "titleID", name = PAPERDOLL_SIDEBAR_TITLES, icon = app.asset("Category_Titles") },
 	{ id = "toyID", name = TOY_BOX, icon = app.asset("Category_ToyBox") },
 };
