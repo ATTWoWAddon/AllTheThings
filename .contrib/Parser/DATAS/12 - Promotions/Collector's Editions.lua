@@ -491,28 +491,28 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						19046,	-- Minalei (ALDOR)
 						-- #endif
 					},
-				["groups"] = {
-					ach(662, {	-- Collector's Edition: Mini-Diablo
-						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
-					}),
-					ach(663, {	-- Collector's Edition: Panda
-						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
-					}),
-					ach(664, {	-- Collector's Edition: Zergling
-						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
-					}),
-					i(13584, {	-- Mini Diablo (PET!)
-						["timeline"] = { ADDED_1_11_1 },
-					}),
-					i(13583, {	-- Panda Cub (PET!)
-						["timeline"] = { ADDED_1_11_1 },
-					}),
-					i(13582, {	-- Zergling (PET!)
-						["timeline"] = { ADDED_1_11_1 },
-					}),
-				},
-			}),
-	-- #endif
+					["groups"] = {
+						ach(662, {	-- Collector's Edition: Mini-Diablo
+							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+						}),
+						ach(663, {	-- Collector's Edition: Panda
+							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+						}),
+						ach(664, {	-- Collector's Edition: Zergling
+							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+						}),
+						i(13584, {	-- Mini Diablo (PET!)
+							["timeline"] = { ADDED_1_11_1 },
+						}),
+						i(13583, {	-- Panda Cub (PET!)
+							["timeline"] = { ADDED_1_11_1 },
+						}),
+						i(13582, {	-- Zergling (PET!)
+							["timeline"] = { ADDED_1_11_1 },
+						}),
+					},
+				}),
+				-- #endif
 			}),
 			n(REWARDS, {
 				["description"] = "Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",
@@ -555,7 +555,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 
--- #if NOT ANYCLASSIC
+	-- #if NOT ANYCLASSIC
 	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		["groups"] = {
@@ -617,36 +617,37 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_1, REMOVED_3_4_0 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
 		["groups"] = {
-			n(QUESTS, {
-				q(63450, {	-- A Deluxe Delivery (Landro Longshot)
-					["altQuests"] = { 63448 },	-- A Deluxe Delivery (Cities)
-					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
-					["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
-					["maps"] = {
-						THE_EXODAR,
-						IRONFORGE,
-						STORMWIND_CITY,
-						UNDERCITY,
-						THUNDER_BLUFF,
-						ORGRIMMAR,
-						SILVERMOON_CITY,
-					},
-					["crs"] = {
-						16739,	-- Caregiver Breel <Innkeeper>
-						5111,	-- Innkeeper Firebrew <Innkeeper>
-						6740,	-- Innkeeper Allison <Innkeeper>
-						6741,	-- Innkeeper Norman <Innkeeper>
-						6746,	-- Innkeeper Pala <Innkeeper>
-						6929,	-- Innkeeper Gryshka <Innkeeper>
-						16618,	-- Innkeeper Velandra <Innkeeper>
-						17630,	-- Innkeeper Jovia <Innkeeper>
-					},
-					["groups"] = {
-						i(184865),	-- Reawakened Phase-Hunter (MOUNT!)
-						i(184871),	-- Dark Portal
-						i(38233),	-- Path of Illidan
-					},
-				}),
+			q(63450, {	-- A Deluxe Delivery (Landro Longshot)
+				["altQuests"] = { 63448 },	-- A Deluxe Delivery (Cities)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
+				["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
+				["maps"] = {
+					THE_EXODAR,
+					IRONFORGE,
+					STORMWIND_CITY,
+					UNDERCITY,
+					THUNDER_BLUFF,
+					ORGRIMMAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
+				},
+				["crs"] = {
+					16739,	-- Caregiver Breel <Innkeeper>
+					5111,	-- Innkeeper Firebrew <Innkeeper>
+					6740,	-- Innkeeper Allison <Innkeeper>
+					6741,	-- Innkeeper Norman <Innkeeper>
+					6746,	-- Innkeeper Pala <Innkeeper>
+					6929,	-- Innkeeper Gryshka <Innkeeper>
+					16618,	-- Innkeeper Velandra <Innkeeper>
+					17630,	-- Innkeeper Jovia <Innkeeper>
+					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+					19046,	-- Minalei (ALDOR)
+				},
+				["groups"] = {
+					i(184865),	-- Reawakened Phase-Hunter (MOUNT!)
+					i(184871),	-- Dark Portal
+					i(38233),	-- Path of Illidan
+				},
 			}),
 		},
 	})),
@@ -662,19 +663,53 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	-- #endif
-	-- #if ANYCLASSIC
-	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ ["timeline"] = { "added 2.5.5", REMOVED_3_0_2, ADDED_5_5_2 } }, {
+	-- #if CLASSIC_ANNIVERSARY
+	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_5, REMOVED_3_0_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
 		["groups"] = {
-			i(260438),	-- Cerulean Phase-Hunter (MOUNT!)
-			i(260622),	-- Exodar Replica (TOY!)
-			i(260221),	-- Naaru's Embrace (TOY!)
-			i(260433),	-- Starshard Whelpling (PET!)
-			i(260759),	-- Reins of the Starshard Netherdrake (MOUNT!)
+			q(93824, {	-- A Grand Delivery (Landro Longshot)
+				["altQuests"] = { 93823 },	-- A Grand Delivery (Cities)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
+				["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
+				["maps"] = {
+					THE_EXODAR,
+					IRONFORGE,
+					STORMWIND_CITY,
+					UNDERCITY,
+					THUNDER_BLUFF,
+					ORGRIMMAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
+				},
+				["crs"] = {
+					16739,	-- Caregiver Breel <Innkeeper>
+					5111,	-- Innkeeper Firebrew <Innkeeper>
+					6740,	-- Innkeeper Allison <Innkeeper>
+					6741,	-- Innkeeper Norman <Innkeeper>
+					6746,	-- Innkeeper Pala <Innkeeper>
+					6929,	-- Innkeeper Gryshka <Innkeeper>
+					16618,	-- Innkeeper Velandra <Innkeeper>
+					17630,	-- Innkeeper Jovia <Innkeeper>
+					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+					19046,	-- Minalei (ALDOR)
+				},
+				["groups"] = {
+					i(262788, {	-- Unexpected Gift
+						["timeline"] = { ADDED_2_5_5, REMOVED_3_0_2 },
+						["groups"] = {
+							i(260438),	-- Cerulean Phase-Hunter (MOUNT!)
+							i(260622),	-- Exodar Replica (TOY!)
+							i(260221),	-- Naaru's Embrace (TOY!)
+							i(260433),	-- Starshard Whelpling (PET!)
+							i(260759),	-- Reins of the Starshard Netherdrake (MOUNT!)
+						},
+					}),
+				},
+			}),
 		},
 	})),
 	-- #else
-	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
+	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ ["timeline"] = {  ADDED_5_5_2, REMOVED_6_0_2, ADDED_11_2_5 } }, {
 		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
 		["groups"] = {
 			i(253573),	-- Cobalt Phase-Hunter (MOUNT!)
