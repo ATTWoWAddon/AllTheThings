@@ -640,7 +640,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 				}),
-				header(HEADERS.Object, 613392, {	-- Impenatrably Sealed Groud
+				header(HEADERS.Object, 613392, {	-- Impenetrably Sealed Gourd
 					o(615936, {	-- Dangling Jub
 						["coord"] = { 27.1, 67.7, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(260251) },	-- Mysterious Red Fluid
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}),
 						 },
 					}),
-					o(613392, {	-- Impenatrably Sealed Groud
+					o(613392, {	-- Impenetrably Sealed Gourd
 						["description"] = "Obtain mysterious fluids from other objects in same cave, then mix red and purple for Fizzing Fluid.",
 						["coord"] = { 26.7, 67.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 93508,
