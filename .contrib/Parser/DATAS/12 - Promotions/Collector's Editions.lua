@@ -458,6 +458,60 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 					["races"] = { UNDEAD },
 					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
+				-- #if ANYCLASSIC
+				q(91888, {	-- A Special Delivery
+					["altQuests"] = { 91889 },	-- Your Reward has Arrived! (Innkeepers)
+					["timeline"] = { ADDED_1_15_5, REMOVED_3_0_2 },
+					["description"] = "These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
+					["coords"] = { 28.2, 75.8, STRANGLETHORN_VALE },
+					["maps"] = {
+						IRONFORGE,
+						STORMWIND_CITY,
+						UNDERCITY,
+						THUNDER_BLUFF,
+						ORGRIMMAR,
+						-- #if AFTER TBC
+						THE_EXODAR,
+						SILVERMOON_CITY,
+						SHATTRATH_CITY,
+						-- #endif
+					},
+					["crs"] = {
+						5111,	-- Innkeeper Firebrew <Innkeeper>
+						6740,	-- Innkeeper Allison <Innkeeper>
+						6741,	-- Innkeeper Norman <Innkeeper>
+						6746,	-- Innkeeper Pala <Innkeeper>
+						6929,	-- Innkeeper Gryshka <Innkeeper>
+						-- #if AFTER TBC
+						16618,	-- Innkeeper Velandra <Innkeeper>
+						16739,	-- Caregiver Breel <Innkeeper>
+						19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+						19046,	-- Minalei (ALDOR)
+						-- #endif
+					},
+				["groups"] = {
+					ach(662, {	-- Collector's Edition: Mini-Diablo
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+					}),
+					ach(663, {	-- Collector's Edition: Panda
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+					}),
+					ach(664, {	-- Collector's Edition: Zergling
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+					}),
+					i(13584, {	-- Mini Diablo (PET!)
+						["timeline"] = { ADDED_1_11_1 },
+					}),
+					i(13583, {	-- Panda Cub (PET!)
+						["timeline"] = { ADDED_1_11_1 },
+					}),
+					i(13582, {	-- Zergling (PET!)
+						["timeline"] = { ADDED_1_11_1 },
+					}),
+				},
+			}),
+	-- #endif
 			}),
 			n(REWARDS, {
 				["description"] = "Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",
@@ -478,13 +532,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				},
 				["groups"] = {
 					ach(662, {	-- Collector's Edition: Mini-Diablo
-						["timeline"] = { ADDED_3_0_2 },
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 					}),
 					ach(663, {	-- Collector's Edition: Panda
-						["timeline"] = { ADDED_3_0_2 },
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 					}),
 					ach(664, {	-- Collector's Edition: Zergling
-						["timeline"] = { ADDED_3_0_2 },
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 					}),
 					i(13584, {	-- Mini Diablo (PET!)
 						["timeline"] = { ADDED_1_11_1 },
@@ -499,6 +553,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			}),
 		},
 	})),
+
 -- #if NOT ANYCLASSIC
 	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
