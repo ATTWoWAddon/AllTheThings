@@ -2157,6 +2157,12 @@ local function OnEventDebugging(self, ...)
 	-- app.PrintDebug(self.Suffix, ...);
 end
 local function OnMouseWheelForWindow(self, delta)
+	if IsShiftKeyDown() then
+		delta = 5 * delta
+	elseif IsControlKeyDown() then
+		delta = delta * (self.ScrollBar.VisibleRows or 1)
+	end
+	-- app.PrintDebug("MouseScroll",delta,"from",self.ScrollBar.CurrentIndex)
 	self.ScrollBar:SetValue(self.ScrollBar.CurrentIndex - delta);
 end
 local function OnScrollBarValueChanged(self, value)
@@ -2353,7 +2359,8 @@ local FieldDefaults = {
 			-- self.ScrollBar:Show();
 			totalRowCount = totalRowCount + 1;
 			self.ScrollBar:SetMinMaxValues(1, totalRowCount - rowCount);
-			self.ScrollBar:SetStepsPerPage(rowCount - 2);
+			self.ScrollBar:SetStepsPerPage(rowCount - 1);
+			self.ScrollBar.VisibleRows = rowCount - 1
 		end
 	end,
 	ScrollTo = function(self, field, value)
