@@ -246,7 +246,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = { { "i", 30623, 1 } },	-- Reservoir Key
+				["cost"] = {
+					{ "i", 30623, 1 },	-- Reservoir Key
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265843, 1 },	-- Communal Reservoir Key
+					-- #endif
+				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {

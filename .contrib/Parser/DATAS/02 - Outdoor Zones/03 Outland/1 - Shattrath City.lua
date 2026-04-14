@@ -2362,6 +2362,16 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35378)),	-- Stalker's Chain Helm
 								applyclassicphase(TBC_PHASE_TWO, i(35373)),	-- Wyrmhide Legguards
 							}, {	-- Revered
+								-- #if CLASSIC_ANNIVERSARY
+								i(265846, {	-- Communal Auchenai Pouch
+									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+									["groups"] = {
+										i(265845, {	-- Communal Auchenai Key
+											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+										}),
+									},
+								}),
+								-- #endif
 								i(30633, {	-- Auchenai Key
 									["timeline"] = { REMOVED_4_2_0 },
 									-- #if ANYCLASSIC

@@ -1950,6 +1950,16 @@ root(ROOTS.Zones, {
 								i(25838),	-- Warden's Hauberk
 								applyclassicphase(TBC_PHASE_TWO, i(35374)),	-- Wyrmhide Spaulders
 							}, {	-- Revered
+								-- #if CLASSIC_ANNIVERSARY
+								i(265844, {	-- Communal Reservoir Pouch
+									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+									["groups"] = {
+										i(265843, {	-- Communal Reservoir Key
+											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+										}),
+									},
+								}),
+								-- #endif
 								i(30623, {	-- Reservoir Key [Revered]
 									["timeline"] = { REMOVED_4_2_0 },
 									-- #if ANYCLASSIC
