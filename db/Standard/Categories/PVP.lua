@@ -48765,10 +48765,11 @@ ach(61448,{pvp=1}),
 ach(61449,{pvp=1,g={
 crit(109648,{achID=61446,id=6,pvp=1})}})}}),
 h(-56,{pvp=1,g={
-o(527903,{pvp=1,g={
+o(527903,{isDaily=1,pvp=1,questID=95437,g={
 ach(61265,{pvp=1}),
 ach(61266,{pvp=1,g={
-crit(109643,{achID=61446,id=3,pvp=1})}})}})}})}}),
+crit(109643,{achID=61446,id=3,pvp=1})}}),
+i(257535,{b=1,f=55,lvl=90,pvp=1,rwp=120100,spellID=1261765})}})}})}}),
 h(-56,{awp=120001,pvp=1,g={
 o(433370,{pvp=1,sym={{"select","itemID",224556},{"pop"}}})}}),
 h(-47,{awp=120001,pvp=1,g={

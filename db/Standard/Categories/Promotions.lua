@@ -5,7 +5,7 @@ local ach,cl,cq,crit,cu,de,en,flt,h,i,ill,mnt,n,o,p,q,s,settings,title,toy,x=_.C
 categories.Promotions=
 h(-736,{SortPriority=90,g={
 h(-514,{awp=90005,g={
-mnt(348162,{b=1,description="Granted to players by logging in on character of at least level 20.",itemID=258430,lvl=10,u=2}),
+mnt(348162,{b=1,description="Granted to players by logging in on character of at least level 20.",itemID=258430,lvl=10,rwp=100000,u=2}),
 toy(187834,{b=1,description="The Great Push: SL Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tormented Banner of the Opportune to use in-game!\nSign-ups close 29 Nov 2021 and The Proving Grounds are on 3-5 Dec (US).",u=2}),
 toy(187957,{awp=90200,b=1,description="Mythic Dungeon International: SL Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 6th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Encrypted Banner of the Opportune to use in-game!\nSign-ups close 28 March 2022 and The Proving Grounds are on 30 March - 5 April (US).",rwp=90200,u=2}),
 s(50108,95474,{awp=90205,description="Obtained through Prime Gaming from June 29th 2022 till July 26th 2022.",f=2,rwp=90207,u=2}),
@@ -65,7 +65,7 @@ mnt(449132,{itemID=223459,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" t
 p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=3,g={
 crit(34643,{achID=6185,awp=40300,id=3,u=2})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 p(333,{b=1,itemID=72134,npcID=54730,spellID=102317,u=3}))}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-ach(40910,{description="Rewarded for the Aid in the stress testing of the realms in China",rwp=110005,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+ach(40910,{description="Rewarded for the Aid in the stress testing of the realms in China.",rwp=110005,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(366962,{itemID=190231,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 p(4286,{b=1,itemID=210409,npcID=211942,spellID=425472,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(464443,{b=1,description="Rewarded for returning to World of Warcraft in 2024. China Only.",itemID=229128,lvl=10,u=2})),
@@ -273,15 +273,15 @@ q(5843,{maps={1},providers={{"i",14649}},races={2,8},u=2}),
 q(5844,{maps={7},providers={{"i",14650}},races={6},u=2}),
 q(5847,{maps={18},providers={{"i",14651}},races={5},u=2})}}),
 h(-47,{description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=20001,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
-ach(662,{awp=30002,providers={{"i",13584}},u=3}),
-ach(663,{awp=30002,providers={{"i",13583}},u=3}),
-ach(664,{awp=30002,providers={{"i",13582}},u=3}),
+ach(662,{awp=30002,providers={{"i",13584}},rwp=30002,u=2}),
+ach(663,{awp=30002,providers={{"i",13583}},rwp=30002,u=2}),
+ach(664,{awp=30002,providers={{"i",13582}},rwp=30002,u=2}),
 p(93,{awp=11101,itemID=13584,npcID=11326,spellID=17708,u=3,g={
-crit(34630,{achID=662,awp=30002,id=3,u=3})}}),
+crit(34630,{achID=662,awp=30002,id=3,rwp=30002,u=2})}}),
 p(92,{awp=11101,itemID=13583,npcID=11325,spellID=17707,u=3,g={
-crit(34631,{achID=663,awp=30002,id=3,u=3})}}),
+crit(34631,{achID=663,awp=30002,id=3,rwp=30002,u=2})}}),
 p(94,{awp=11101,itemID=13582,npcID=11327,spellID=17709,u=3,g={
-crit(34632,{achID=664,awp=30002,id=3,u=3})}})}})}}),
+crit(34632,{achID=664,awp=30002,id=3,rwp=30002,u=2})}})}})}}),
 x(2,{description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
 ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
 p(131,{awp=20001,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
@@ -315,7 +315,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 mnt(1216422,{b=1,itemID=235286,lvl=10,u=3}),
@@ -1025,7 +1025,7 @@ p(231,{awp=40003,description="Originally only available to the Chinese & Taiwan 
 p(247,{awp=40003,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=49664,npcID=36910,spellID=69539,u=2}),
 p(170,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,npcID=25146,spellID=45174,u=2}),
 p(171,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,npcID=25147,spellID=45175,u=2}),
-en(173300,{awp=80205,b=1,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",rwp=100007,spellID=311272,tmogSetID=1902,u=2,g={
+en(173300,{awp=80205,b=1,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",rwp=100007,spellID=311272,tmogSetID=1902,u=2,g={
 s(105944,171324,{f=2}),
 s(105949,171329,{f=2}),
 s(105952,171332,{f=3}),
@@ -1037,14 +1037,14 @@ s(105959,171361,{b=1,f=9}),
 s(105950,171330,{f=2}),
 s(105946,171326,{f=2}),
 s(105951,171331,{f=2})}}),
-ill(6158,{awp=80205,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",itemID=171363,questID=57569,rwp=100007,u=2}),
-mnt(307256,{awp=80205,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",itemID=173299,rwp=100007,u=2}),
-mnt(307263,{awp=80205,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",itemID=173297,lvl=10,rwp=100007,u=2}),
-i(173298,{awp=80205,b=1,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",f=55,rwp=100007,spellID=311270,u=2,g={
+ill(6158,{awp=80205,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",itemID=171363,questID=57569,rwp=100007,u=2}),
+mnt(307256,{awp=80205,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",itemID=173299,rwp=100007,u=2}),
+mnt(307263,{awp=80205,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",itemID=173297,lvl=10,rwp=100007,u=2}),
+i(173298,{awp=80205,b=1,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",f=55,rwp=100007,spellID=311270,u=2,g={
 title(410,{u=2})}}),
-s(105953,171333,{awp=80205,b=1,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",f=3,rwp=100007,u=2}),
-s(105959,171361,{awp=80205,b=1,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",f=9,rwp=100007,u=2}),
-p(2776,{awp=80205,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",itemID=173296,npcID=157524,rwp=100007,spellID=307264,u=2}),
+s(105953,171333,{awp=80205,b=1,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",f=3,rwp=100007,u=2}),
+s(105959,171361,{awp=80205,b=1,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",f=9,rwp=100007,u=2}),
+p(2776,{awp=80205,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",itemID=173296,npcID=157524,rwp=100007,spellID=307264,u=2}),
 i(173301,{awp=80205,u=3}),
 p(3475,{awp=100007,b=1,itemID=204183,npcID=202548,spellID=403243,u=3}),
 ach(17426,{awp=100007,u=3}),
