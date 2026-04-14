@@ -432,12 +432,50 @@ root(ROOTS.Zones, {
 							["qg"] = 82569,	-- Frenna
 							["coord"] = { 57.0, 71.9, GORGROND },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								o(232491, {	-- Pollen Pod
+									["coords"] = {
+										{ 57.7, 71.7, GORGROND },
+										{ 59.3, 67.0, GORGROND },
+										{ 59.3, 69.8, GORGROND },
+										{ 59.4, 71.0, GORGROND },
+										{ 60.3, 67.5, GORGROND },
+										{ 60.4, 67.4, GORGROND },
+										{ 60.7, 64.3, GORGROND },
+										{ 60.7, 66.0, GORGROND },
+										{ 60.8, 70.7, GORGROND },
+										{ 61.5, 66.4, GORGROND },
+										{ 62.0, 65.4, GORGROND },
+										{ 63.1, 63.6, GORGROND },
+									},
+									["groups"] = { i(113136) },	-- Angient Growth Sap (QI!)
+								}),
+							},
 						}),
 						q(35508, {	-- Chapter I: Plant Food (H)
 							["sourceQuest"] = 35505,	-- Lost Lumberjack
 							["qg"] = 82569,	-- Frenna
 							["coord"] = { 57.0, 71.9, GORGROND },
 							["races"] = HORDE_ONLY,
+							["groups"] = {
+								o(232491, {	-- Pollen Pod
+									["coords"] = {
+										{ 57.7, 71.7, GORGROND },
+										{ 59.3, 67.0, GORGROND },
+										{ 59.3, 69.8, GORGROND },
+										{ 59.4, 71.0, GORGROND },
+										{ 60.3, 67.5, GORGROND },
+										{ 60.4, 67.4, GORGROND },
+										{ 60.7, 64.3, GORGROND },
+										{ 60.7, 66.0, GORGROND },
+										{ 60.8, 70.7, GORGROND },
+										{ 61.5, 66.4, GORGROND },
+										{ 62.0, 65.4, GORGROND },
+										{ 63.1, 63.6, GORGROND },
+									},
+									["groups"] = { i(113136) },	-- Angient Growth Sap (QI!)
+								}),
+							},
 						}),
 						q(35651, {	-- Chapter II: The Harvest (A)
 							["sourceQuest"] = 35505,	-- Lost Lumberjack
@@ -507,13 +545,18 @@ root(ROOTS.Zones, {
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
-						o(232492, {	-- Doomshot
-							["coord"] = { 47.1, 29.6, 544 },
-							["questID"] = 35501,
-							["races"] = HORDE_ONLY,
+						q(35501, {	-- Doomshot
 							["sourceQuests"] = {
 								35433,	-- Cut Them Down
 								35434,	-- The Life Spring
+							},
+							["provider"] = { "o", 232492 },	-- Doomshot
+							["coord"] = { 47.1, 29.6, 544 },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								o(231954, {	-- Doomshot
+									i(112990),	-- Doomshot (QI!)
+								}),
 							},
 						}),
 						q(35229, {	-- Down the Goren Hole (A)
@@ -578,7 +621,7 @@ root(ROOTS.Zones, {
 								35234,	-- Will of the Genesaur
 							},
 							["qg"] = 81751,	-- Hansel Heavyhands
-							["coord"] = { 50.1, 22.2, 545 },
+							["coord"] = { 50.1, 24.2, 545 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(112588),	-- Foundry-Fired Plate Chestplate
@@ -608,6 +651,11 @@ root(ROOTS.Zones, {
 							["qg"] = 75710,	-- Hansel Heavyhands
 							["coord"] = { 47.5, 94.0, GORGROND },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								o(231954, {	-- Doomshot
+									i(112990),	-- Doomshot (QI!)
+								}),
+							},
 						}),
 						q(35511, {	-- Kaz the Shrieker
 							["sourceQuest"] = 35510,	-- Iyu
@@ -733,6 +781,7 @@ root(ROOTS.Zones, {
 								35255,	-- Power of the Genesaur
 							},
 							["qg"] = 75127,	-- Vindicator Maraad
+							["coord"] = { 52.9, 59.7, GORGROND },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(112885),	-- Commander Gar's Iron Insignia
@@ -869,12 +918,50 @@ root(ROOTS.Zones, {
 							["qg"] = 75710,	-- Hansel Heavyhands
 							["coord"] = { 47.5, 94.0, GORGROND },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								o(231961, {	-- Will of the Genesaur
+									["coords"] = {
+										{ 48.3, 94.2, GORGROND },
+										{ 57.0, 24.6, GORGROND },
+										{ 57.3, 26.0, GORGROND },
+										{ 57.4, 24.0, GORGROND },
+										{ 57.7, 23.9, GORGROND },
+										{ 57.8, 26.6, GORGROND },
+										{ 57.9, 24.5, GORGROND },
+										{ 58.0, 23.3, GORGROND },
+										{ 58.0, 25.6, GORGROND },
+										{ 58.3, 21.7, GORGROND },
+										{ 58.8, 24.2, GORGROND },
+										{ 59.3, 22.7, GORGROND },
+									},
+									["groups"] = { i(112993) },	-- Will of the Genesaur (QI!)
+								}),
+							},
 						}),
 						q(35509, {	-- Will of the Genesaur (H)
 							["sourceQuest"] = 36488,	-- Thieving Dwarves
 							["qg"] = 85601,	-- Cutter
 							["coord"] = { 46.4, 93.5, GORGROND },
 							["races"] = HORDE_ONLY,
+							["groups"] = {
+								o(231961, {	-- Will of the Genesaur
+									["coords"] = {
+										{ 48.3, 94.2, GORGROND },
+										{ 57.0, 24.6, GORGROND },
+										{ 57.3, 26.0, GORGROND },
+										{ 57.4, 24.0, GORGROND },
+										{ 57.7, 23.9, GORGROND },
+										{ 57.8, 26.6, GORGROND },
+										{ 57.9, 24.5, GORGROND },
+										{ 58.0, 23.3, GORGROND },
+										{ 58.0, 25.6, GORGROND },
+										{ 58.3, 21.7, GORGROND },
+										{ 58.8, 24.2, GORGROND },
+										{ 59.3, 22.7, GORGROND },
+									},
+									["groups"] = { i(112993) },	-- Will of the Genesaur (QI!)
+								}),
+							},
 						}),
 						n(BONUS_OBJECTIVES, {
 							-- TODO: Check SQ, also probably can't do after a certain level
@@ -1735,7 +1822,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.7, 73.6, GORGROND },
 						["races"] = HORDE_ONLY,
 					}),
-					q(36595, {	-- He Drew Aggro...culture (TODO: determine sourceQuest)
+					q(36595, {	-- He Drew Aggro...culture
+						["sourceQuest"] = 35828,	-- I Drew Aggro...culture
 						["qg"] = 75146,	-- Rangari D'kaan
 						["coord"] = { 64.2, 51.9, GORGROND },
 						["races"] = ALLIANCE_ONLY,
@@ -1937,6 +2025,27 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 234474 },	-- Saberon Stash
 						["coord"] = { 51.0, 51.6, GORGROND },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(232311, {	-- Saberon Stash
+								["coords"] = {
+									{ 50.8, 53.9, GORGROND },
+									{ 51.1, 51.1, GORGROND },
+									{ 51.3, 52.9, GORGROND },
+									{ 51.4, 51.8, GORGROND },
+									{ 51.6, 49.2, GORGROND },
+									{ 51.6, 49.7, GORGROND },
+									{ 51.6, 52.4, GORGROND },
+									{ 51.9, 51.0, GORGROND },
+									{ 52.0, 52.5, GORGROND },
+									{ 52.5, 49.9, GORGROND },
+									{ 53.2, 51.0, GORGROND },
+									{ 53.4, 51.8, GORGROND },
+									{ 53.5, 51.8, GORGROND },
+									{ 53.7, 51.2, GORGROND },
+								},
+								["groups"] = { i(115442) },	-- Saberon Herb Bundle (QI!)
+							}),
+						},
 					}),
 					q(35050, {	-- Rescue Rangari
 						["sourceQuests"] = {
@@ -1958,14 +2067,27 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.6, 37.8, GORGROND },
 						["groups"] = {
 							o(225596, {	-- Prickly Nopal
-								i(107609),	-- Prickly Nopal (QI!)
+								["coords"] = {
+									{ 39.9, 41.3, GORGROND },
+									{ 40.2, 40.3, GORGROND },
+									{ 40.5, 39.9, GORGROND },
+									{ 40.9, 40.7, GORGROND },
+									{ 40.9, 42.0, GORGROND },
+									{ 41.6, 40.8, GORGROND },
+									{ 41.9, 39.9, GORGROND },
+									{ 42.5, 39.7, GORGROND },
+								},
+								["groups"] = { i(107609) },	-- Prickly Nopal (QI!)
 							}),
 						},
 					}),
 					q(36440, {	-- Saberon Population Reduction
 						["sourceQuest"] = 36438,	-- Beatface vs. Boulder
 						["qg"] = 85431,	-- Altauur
-						["coord"] = { 50.8, 51.3, GORGROND },
+						["coords"] = {
+							{ 50.8, 51.3, GORGROND },
+							{ 52.0, 49.5, GORGROND },
+						},
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(118014),	-- Steamscar Cudgel
@@ -1982,6 +2104,27 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 234474 },	-- Saberon Stash
 						["coord"] = { 51.0, 51.6, GORGROND },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							o(232311, {	-- Saberon Stash
+								["coords"] = {
+									{ 50.8, 53.9, GORGROND },
+									{ 51.1, 51.1, GORGROND },
+									{ 51.3, 52.9, GORGROND },
+									{ 51.4, 51.8, GORGROND },
+									{ 51.6, 49.2, GORGROND },
+									{ 51.6, 49.7, GORGROND },
+									{ 51.6, 52.4, GORGROND },
+									{ 51.9, 51.0, GORGROND },
+									{ 52.0, 52.5, GORGROND },
+									{ 52.5, 49.9, GORGROND },
+									{ 53.2, 51.0, GORGROND },
+									{ 53.4, 51.8, GORGROND },
+									{ 53.5, 51.8, GORGROND },
+									{ 53.7, 51.2, GORGROND },
+								},
+								["groups"] = { i(115442) },	-- Saberon Herb Bundle (QI!)
+							}),
+						},
 					}),
 					n(85374, {	-- Sappy
 						["questID"] = 35630,
@@ -2650,16 +2793,16 @@ root(ROOTS.Zones, {
 					header(HEADERS.Spell, 171866, {	-- Sparring Arena
 						o(233455, {	-- Aged Stone Container
 							["questID"] = 36734,
-							["coord"] = { 51.3, 40.6, GORGROND },
+							["coord"] = { 49.1, 48.4, GORGROND },
 						}),
 						o(233552, {	-- Aged Stone Container
 							["questID"] = 36726,
-							["coord"] = { 41.8, 45.3, GORGROND },
+							["coord"] = { 42.4, 54.8, GORGROND },
 						}),
 						o(236265, {	-- Aged Stone Container
 							["description"] = "When you're inside the Fissure of Fury cave, follow the spiral path to the bottom. The treasure is in little corner nubbin in the upper-right section of the map (across from the part of the map with water on it).",
 							["questID"] = 36723,
-							["coord"] = { 60.5, 43.1, 547 },
+							["coord"] = { 47.5, 43.7, GORGROND },
 						}),
 						o(236270, {	-- Aged Stone Container
 							["questID"] = 36722,
@@ -2709,6 +2852,22 @@ root(ROOTS.Zones, {
 							["questID"] = 36787,
 							["coord"] = { 42.2, 93.0, GORGROND },
 						}),
+						o(233296, {	-- Ancient Ogre Hoard Jar
+							["coords"] = {
+								{ 49.3, 78.9, GORGROND },
+								{ 49.6, 80.7, GORGROND },
+								{ 49.7, 80.4, GORGROND },
+								{ 49.8, 79.0, GORGROND },
+								{ 50.5, 80.5, GORGROND },
+								{ 50.6, 78.7, GORGROND },
+								{ 50.8, 79.5, GORGROND },
+								{ 50.9, 78.2, GORGROND },
+								{ 51.6, 79.9, GORGROND },
+								{ 51.7, 81.2, GORGROND },
+								{ 52.0, 79.1, GORGROND },
+							},
+							["groups"] = { i(118681) },	-- Ogre "Treasure"
+						}),
 						o(236402, {	-- Ancient Titan Chest
 							["questID"] = 36710,
 							["coord"] = { 49.5, 50.8, GORGROND },
@@ -2735,7 +2894,7 @@ root(ROOTS.Zones, {
 						}),
 						o(233522, {	-- Obsidian Crystal Formation
 							["questID"] = 36732,
-							["coord"] = { 44.2, 46.6, GORGROND },
+							["coord"] = { 40.9, 67.3, GORGROND },
 						}),
 						o(236269, {	-- Obsidian Crystal Formation
 							["questID"] = 36721,
@@ -2765,7 +2924,7 @@ root(ROOTS.Zones, {
 						}),
 						o(233139, {	-- Ancient Titan Chest
 							["questID"] = 36720,
-							["coord"] = { 36.8, 50.5, 547 },
+							["coord"] = { 53.3, 46.9, GORGROND },
 						}),
 						o(236267, {	-- Ancient Titan Chest
 							["questID"] = 35701,
@@ -2785,7 +2944,7 @@ root(ROOTS.Zones, {
 						}),
 						o(233559, {	-- Forgotten Skull Cache
 							["questID"] = 36716,
-							["coord"] = { 39.3, 56.3, GORGROND },
+							["coord"] = { 45.8, 89.4, GORGROND },
 						}),
 						o(233513, {	-- Forgotten Skull Cache
 							["questID"] = 35971,
@@ -2793,7 +2952,7 @@ root(ROOTS.Zones, {
 						}),
 						o(236264, {	-- Forgotten Skull Cache
 							["questID"] = 36019,
-							["coord"] = { 45.8, 89.3, GORGROND },
+							["coord"] = { 39.4, 56.3, GORGROND },
 						}),
 						o(233558, {	-- Mysterious Petrified Pod
 							["questID"] = 35965,
@@ -2801,19 +2960,19 @@ root(ROOTS.Zones, {
 						}),
 						o(233501, {	-- Mysterious Petrified Pod
 							["questID"] = 36430,
-							["coord"] = { 63.2, 57.2, GORGROND },
+							["coord"] = { 56.8, 57.3, GORGROND },
 						}),
 						o(236259, {	-- Mysterious Petrified Pod
 							["questID"] = 36015,
-							["coord"] = { 60.5, 72.7, GORGROND },
+							["coord"] = { 47.7, 76.8, GORGROND },
 						}),
 						o(235127, {	-- Mysterious Petrified Pod
 							["questID"] = 36715,
-							["coord"] = { 51.7, 69.1, GORGROND },
+							["coord"] = { 63.2, 57.2, GORGROND },
 						}),
 						o(236260, {	-- Mysterious Petrified Pod
 							["questID"] = 36714,
-							["coord"] = { 47.7, 76.8, GORGROND },
+							["coord"] = { 51.7, 69.1, GORGROND },
 						}),
 						o(233523, {	-- Mysterious Petrified Pod
 							["questID"] = 35980,
@@ -2846,14 +3005,14 @@ root(ROOTS.Zones, {
 						}),
 						o(236266, {	-- Unknown Petrified Egg
 							["questID"] = 35967,
-							["coord"] = { 51.6, 72.3, GORGROND },
+							["coord"] = { 47.2, 51.8, GORGROND },
 						}),
 						o(233505, {	-- Unknown Petrified Egg
 							["description"] = "Inside The Forgotten Caves with Pale and Spiders.",
 							["questID"] = 36713,
 							["coords"] = {
 								{ 51.4, 77.6, GORGROND },	-- Cave Entrance
-								{ 53.0, 79.0, GORGROND },	-- Egg Location
+								{ 51.6, 72.2, GORGROND },	-- Egg Location
 							},
 						}),
 						o(233524, {	-- Unknown Petrified Egg

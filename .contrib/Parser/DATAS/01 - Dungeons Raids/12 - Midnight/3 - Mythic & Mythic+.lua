@@ -51,7 +51,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				spell(1254555),	-- Path of Unyielding Blight
 			}),
 			ach(61272, {	-- Keystone Hero: Skyreach
-				spell(1254557),	-- Path of the Crowning Pinnacle
+				--NOT AWARDED spell(1254557),	-- Path of the Crowning Pinnacle
+				spell(159898),	-- Path of the Skies
 			}),
 			ach(61591, {	-- Keystone Victor: Algeth'ar Academy
 				title(682),	-- <Name>, Top Student

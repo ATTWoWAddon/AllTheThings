@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
 					}),
 					i(253174, {	-- Dried Gilnean Roses (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(253175, {	-- Hyjal Climbing Vine (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },

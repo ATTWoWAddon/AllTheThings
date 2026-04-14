@@ -110,7 +110,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
 					["coord"] = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
-						i(248929),	-- Domanaar Snack Pack (QI!)
+						o(567209, {
+							["coords"] = {
+								{ 24.2, 68.1, MAP.MIDNIGHT.VOIDSTORM },
+								{ 25.2, 66.0, MAP.MIDNIGHT.VOIDSTORM },
+								{ 25.2, 69.7, MAP.MIDNIGHT.VOIDSTORM },
+								{ 25.7, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+								{ 25.7, 68.5, MAP.MIDNIGHT.VOIDSTORM },
+								{ 26.0, 67.1, MAP.MIDNIGHT.VOIDSTORM },
+								{ 27.0, 66.1, MAP.MIDNIGHT.VOIDSTORM },
+								{ 27.1, 69.0, MAP.MIDNIGHT.VOIDSTORM },
+								{ 27.4, 69.8, MAP.MIDNIGHT.VOIDSTORM },
+								{ 28.2, 70.2, MAP.MIDNIGHT.VOIDSTORM },
+								{ 29.0, 67.4, MAP.MIDNIGHT.VOIDSTORM },
+								{ 29.9, 68.6, MAP.MIDNIGHT.VOIDSTORM },
+								{ 30.4, 66.9, MAP.MIDNIGHT.VOIDSTORM },
+							},
+							["groups"] = { i(248929) },	-- Domanaar Snack Pack (QI!)
+						}),
 						i(248927),	-- Stormray Fin (QI!)
 					},
 					["_drop"] = { "races" },	-- Blizzard bug - bad API data, marked as alliance only

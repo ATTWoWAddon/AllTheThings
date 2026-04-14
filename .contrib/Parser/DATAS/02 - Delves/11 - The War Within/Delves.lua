@@ -234,6 +234,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 					["timeline"]={ADDED_11_1_0_SEASONSTART},
 					["isWeekly"] = true,
 				}),
+				n(236626, {	-- The Underpin <A Pretty Big Deal>
+					["crs"] = { 234168 },	-- The Underpin <A Pretty Big Deal> (not sure which is "?" or "??")
+					-- #if AFTER 11.2.0
+					["groups"] = {
+						i(233196),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
+						i(235614),	-- Golden-Gob Propulsion Rig
+					},
+					-- #endif
+				}),
 			},
 		})),
 	})),
@@ -287,6 +296,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 				})),
 				n(EXPLORATION, {
 					map_exploration(16539,{coord={53.4,82.9,DELVE_ETHEREAL_KYVEZA}}),	-- Voidrazor Sanctuary
+				}),
+				n(244752, {	-- Nexus-Princess Ky'veza
+					["crs"] = { 244753 },	-- Nexus-Princess Ky'veza (not sure which is "?" or "??")
+					-- #if AFTER MID
+					["groups"] = {
+						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
+						i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
+					},
+					-- #endif
 				}),
 			},
 		})),

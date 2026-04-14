@@ -1880,6 +1880,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 42.6, 36.2, DRAENOR_NAGRAND },
 						["lvl"] = 100,
+						["cost"] = { { "i", 120290, 1 } },	-- Secret Meeting Details
 						["groups"] = {
 							crit(26143, {	-- Gortag Steelgrip
 								["achievementID"] = 9541,	-- The Song of Silence
@@ -2461,6 +2462,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 35338,	-- Shooting the Breeze (A)
 						["races"] = ALLIANCE_ONLY,
 						["cr"] = 78278,	-- Breezestrider Talbuk
+					}),
+					i(120290, {	-- Secret Meeting Details
+						["cr"] = 86658,	-- Mok'gol Pack-Leader
 					}),
 				}),
 			},

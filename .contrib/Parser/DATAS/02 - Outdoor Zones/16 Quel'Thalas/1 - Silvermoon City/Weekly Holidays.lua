@@ -30,11 +30,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 48.9, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
 			}, {
-
 				pvp(q(93593, {				-- A Call to Battle
 					["_drop"] = { "g" },	-- Drop Mark of Honor
 				})),
-				--pvp(q(XXXX)),	-- The Arena Calls
+				pvp(q(93600)),	-- The Arena Calls
 				petbattle(pvp(q(93599, {	-- The Very Best
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 				}))),

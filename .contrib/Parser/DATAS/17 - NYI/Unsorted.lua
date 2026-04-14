@@ -1046,7 +1046,6 @@ root(ROOTS.Unsorted, {
 				i(248612),	-- Blackrock Bulletin Message
 				i(248715),	-- Bones of de Fallen
 				i(248756),	-- Shadra's Gift
-				i(248927),	-- Stormray Fin
 				i(248931),	-- Tarnished Vilebranch Coin
 				i(249401),	-- Vial of Gelatinous Ooze
 				i(249407),	-- Harvested Lightwood

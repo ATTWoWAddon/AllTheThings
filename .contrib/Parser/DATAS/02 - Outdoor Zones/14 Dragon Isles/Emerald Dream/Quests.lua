@@ -1062,11 +1062,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			q(78398, {	-- A Dash of Minerals...
 				["sourceQuests"] = { 77677 },	-- Some Water...
-				["provider"] = { "n", 209571 },	-- Professor Ash
-				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
-				["groups"] = {
-					i(210457),	-- Fish Bones (QI!)
+				["qgs"] = {
+					209571,	-- Professor Ash <Herbalism Trainer>
+					208337,	-- Professor Ash <Herbalism Trainer>
 				},
+				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
+				["groups"] = { i(210457) },	-- Fish Bones (QI!)
 			}),
 			q(77697, {	-- The Right Food...
 				["sourceQuests"] = { 78398 },	-- A Dash of Minerals...

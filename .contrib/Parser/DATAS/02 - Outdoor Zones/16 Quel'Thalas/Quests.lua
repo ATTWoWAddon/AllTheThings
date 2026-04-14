@@ -833,8 +833,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				}),
 				q(88710, {	-- March on Quel'Danas
 					["sourceQuest"] = 90748,	-- Quel'Danas
-					["qg"] = 245061,	-- Arator
+					["qgs"] = {
+						245061,	-- Arator
+						243824,	-- Arator
+					},
 					["coord"] = { 52.6, 90.2, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+					["maps"] = 2533,	-- March on Quel'Danas
 					["groups"] = { i(257736) },	-- Lightcalled Hearthstone (TOY!)
 				}),
 			}),
