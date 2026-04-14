@@ -3024,7 +3024,8 @@ q(28301,{awp=40003,c={7},coords={
 q(28299,{awp=40003,c={9},coords={
 [88]={{25.2,14.4}},
 [90]={{86,15.6}},
-[110]={{73.2,45.2}}},isBreadcrumb=1,lvl=20,maps={85},nextQuests={28459},qgs={4563,16648,43881},r=1}),
+[110]={{73.2,45.2}},
+[2393]={{50.9,61}}},isBreadcrumb=1,lvl=20,maps={85},nextQuests={28459},qgs={4563,16648,43881,241482},r=1}),
 q(28287,{awp=40003,c={7},coords={
 [87]={{55.2,29}},
 [89]={{43.8,78.8}}},isBreadcrumb=1,lvl=20,maps={84},nextQuests={28401},qgs={23127,52292},r=2}),
@@ -22473,7 +22474,7 @@ n(55500,{sharedDescription="|CFFFF0000Listen to Illidan, these mobs do have leth
 n(54927),
 n(54500)}})}}),
 inst(77,{awp=40100,coords={
-[95]={{81.8,64.3}}},isRaid=false,mapID=333,savedInstanceID=568,g={
+[95]={{81.8,64.3}}},mapID=333,savedInstanceID=568,g={
 d(2,{
 h(-45,{
 q(29188,{qgs={23761},u=2}),
@@ -22591,7 +22592,7 @@ s(35492,69580,{b=1,f=6,lvl=32,modID=2}),
 s(35494,69582,{b=1,f=7,lvl=32,modID=2}),
 s(35486,69574,{b=1,f=5,lvl=32,modID=2})}})})}}),
 inst(76,{awp=40100,coords={
-[50]={{72,32.9}}},isRaid=false,mapID=337,savedInstanceID=859,g={
+[50]={{72,32.9}}},mapID=337,savedInstanceID=859,g={
 d(2,{
 ah(17366,{awp=100007,description="To unlock the Zul'Gurub content of patch 10.0.7:\n\n1. Kill any two bosses to spawn Jin'do the Godbreaker. Cache of Madness does not count.\n\n2. Head to the Altar of the Light, and enter the ground floor using either side entrance.\n\n3. Look for a gong by the southern entrance. On the ground in front of it lays a Shattered Hakkari Bijou. Loot it.\n\n4. Go upstairs towards Jin'do the Godbreaker, and kill at least one Gurubashi Spirit Warrior on your way. (You will need it for the encounter!)\n\n5. Pull Jin'do the Godbreaker and burst him down until Phase 2 begins. (This phase begins even if you oneshot him.)\n\n6. Walk back downstairs and inside the ground floor where you found the Shattered Hakkari Bijou, and a Fragmented Hakkari Bijou lays in it's place. Loot it.\n\n7. Finish the boss encounter above by pulling a Gurubashi Spirit up to Hakkari's Chains, and wait until they break the chain protection with their ability 'Body Slam'. Then you can 'kill' the chains, and kill Jin'do.\n\n8. Combine the Shattered Hakkari Bijou with the Fragmented Hakkari Bijou, and accept the quest 'Restored Hakkari Bijou'.\n\n9. Travel to Dazar'alor in Zandalar. |CFFFF0000Beware Alliance players, this is a Horde city!|r You can get here using the ship service from Echo Isles in Durotar. From the Port of Zuldazar, fly eastwards to the southfacing building entrances. Above the transmogifier shop is the Yojamba Exchange, where you can turn in the quest at Rin'wosho the Trader.\n\n10. Zul'Gurub is now unlocked for your account, and the vendor Rin'Wosho with his wares can now be found at the beginning of the dungeon.\n\n11. Protip: Start the Gurubashi Tribute farm as early as possible as it is a decent source for coins. See the header for Brazier of Madness for more information.",type="a",g={
 h(-12,{
@@ -62946,16 +62947,20 @@ s(297845,250447,{f=1,lvl=90}),
 s(297851,250453,{f=23,lvl=90})}}),
 q(92560,{coords={
 [2395]={{45.2,60}}},crs={244762},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2827},{"pop"}}}),
-e(2828,{isRaid=1,isWeekly=1,npcID=248864,questID=92130,g={
+e(2828,{coords={
+[2405]={{49,86.8}}},isRaid=1,isWeekly=1,npcID=248864,questID=92130,g={
 s(297852,250454,{f=22,lvl=90}),
 i(250460,{f=52,lvl=90}),
 s(297846,250448,{f=28,lvl=90})}}),
-q(92636,{crs={248864},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2828},{"pop"}}}),
-e(2829,{isRaid=1,isWeekly=1,npcID=249776,g={
+q(92636,{coords={
+[2405]={{49,86.8}}},crs={248864},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2828},{"pop"}}}),
+e(2829,{coords={
+[2413]={{38.8,66.6}}},isRaid=1,isWeekly=1,npcID=249776,questID=92129,g={
 s(297853,250455,{f=29,lvl=90}),
 s(297850,250452,{f=25,lvl=90}),
 s(297847,250449,{f=20,lvl=90})}}),
-q(92034,{crs={249776},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2829},{"pop"}}})}}),
+q(92034,{coords={
+[2413]={{38.8,66.6}}},crs={249776},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2829},{"pop"}}})}}),
 inst(1308,{awp=120001,coords={
 [2424]={{52.6,86}}},isRaid=1,maps={2533,2534},g={
 h(-12,{

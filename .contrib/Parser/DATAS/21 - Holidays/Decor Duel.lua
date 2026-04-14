@@ -4,7 +4,7 @@
 
 DECOR_DUEL = createHeader({
 	readable = "Decor Duel",
-	icon = 4914669,
+	icon = 1392559,
 	text = {
 		en = "Decor Duel",
 		--de = "Decor Duel",

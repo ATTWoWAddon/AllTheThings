@@ -2,11 +2,28 @@
 --	  E X P A N S I O N   F E A T U R E S	M O D U L E	   --
 -------------------------------------------------------------------
 
--- Exo Note: These "two" events are intertwined. If someone wants to untangle and separate them, be my guest. They share Quests, Currencies, Achievements...
+-- Exo Note: Technically, this is 1 event with 2 components: Void Assaults (Strikes and Incursions, Outdoor content) and Ritual Sites (Delve-like, "Indoor"/Phased content). They share Quests, Currencies, Vendors...
 
+VOID_ASSAULTS = createHeader({
+	readable = "Void Assaults",
+	icon = 7501330,
+	text = {
+		en = "Void Assaults",
+		--de = "Void Assaults",
+		--es = "Void Assaults",
+		--mx = "Void Assaults",
+		--fr = "Void Assaults",
+		--it = "Void Assaults",
+		--ko = "Void Assaults",
+		--pt = "Void Assaults",
+		--ru = "Void Assaults",
+		--cn = "Void Assaults",
+		--tw = "Void Assaults",
+	},
+});
 RITUAL_SITES = createHeader({
 	readable = "Ritual Sites",
-	icon = 4914669,
+	icon = 136194,
 	text = {
 		en = "Ritual Sites",
 		--de = "Ritual Sites",
@@ -21,23 +38,6 @@ RITUAL_SITES = createHeader({
 		--tw = "Ritual Sites",
 	},
 });
-VOID_ASSAULTS_RITUAL_SITES = createHeader({
-	readable = "Void Assaults & Ritual Sites",
-	icon = 4914669,
-	text = {
-		en = "Void Assaults & Ritual Sites",
-		--de = "Void Assaults & Ritual Sites",
-		--es = "Void Assaults & Ritual Sites",
-		--mx = "Void Assaults & Ritual Sites",
-		--fr = "Void Assaults & Ritual Sites",
-		--it = "Void Assaults & Ritual Sites",
-		--ko = "Void Assaults & Ritual Sites",
-		--pt = "Void Assaults & Ritual Sites",
-		--ru = "Void Assaults & Ritual Sites",
-		--cn = "Void Assaults & Ritual Sites",
-		--tw = "Void Assaults & Ritual Sites",
-	},
-});
 
 local FIELD_ACCOLADE = 3405;
 local DARK_PARTICLE = 267051;
@@ -50,13 +50,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 		},
 		["timeline"] = { ADDED_12_0_5 },
 	}, {
-		n(VOID_ASSAULTS_RITUAL_SITES, {
+		n(VOID_ASSAULTS, {
 			faction(FACTION_RITUAL_SITES),
 			-- Void Rift: Bitter Bark; 30.8, 43.6, Zul'Aman
 			-- Void Ritual: Grizzly 31.6, 71.0, ZulAman
 			-- Swarming Skies: Jan'alai, 53.1, 21.1, Zulaman
-			n(ACHIEVEMENTS, {	-- Achievements do not reward Mounts and Pets. They unlock the ability for you to buy them from the vendor
-				-- Void Assaults
+			n(ACHIEVEMENTS, {	-- Achievements do not reward Mounts and Pets. They unlock the ability for you to buy them from the vendor.
 				ach(62574),	-- Accolade to Rest
 				ach(62573),	-- Air Traffic Controller
 				ach(62572),	-- Battery Bombardment
@@ -85,62 +84,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				ach(62568),	-- Void Shmoid
 				ach(62507),	-- Void Smasher: Eversong
 				ach(62510),	-- Void Smasher: Zul'Aman
-				-- Ritual Sites
-				ach(62547),	-- Challenge: Embers
-				ach(62544),	-- Challenge: Magical Alarm Bells
-				ach(62545),	-- Challenge: Malevolent Boons
-				ach(62542),	-- Challenge: Manifestations
-				ach(62543),	-- Challenge: Patrols!
-				ach(62546),	-- Challenge: Reinforced
-				ach(62541),	-- Challenge: Tainted Corpses
-				ach(62540),	-- Challenge: Tendrils
-				ach(62621),	-- Challenging Sites
-				ach(62560),	-- Ember Still Burning
-				ach(62555),	-- Expert Challenge: Embers
-				ach(62552),	-- Expert Challenge: Magical Alarm Bells
-				ach(62553),	-- Expert Challenge: Malevolent Boons
-				ach(62550),	-- Expert Challenge: Manifestations
-				ach(62551),	-- Expert Challenge: Patrols!
-				ach(62554),	-- Expert Challenge: Reinforced
-				ach(62549),	-- Expert Challenge: Tainted Corpses
-				ach(62548),	-- Expert Challenge: Tendrils
-				ach(62559),	-- Malevolence Shrugged
-				ach(62537),	-- Neighborhood Ritual Team: Broken Throne
-				ach(62539),	-- Neighborhood Ritual Team: Daggerspine Point
-				ach(62536),	-- Neighborhood Ritual Watch: Broken Throne
-				ach(62538),	-- Neighborhood Ritual Watch: Daggerspine Point
-				ach(62558),	-- Patrol Ambusher
-				ach(62556),	-- Quick Reflexes
-				ach(62561),	-- Reinforcement Obliteration
-				ach(62622),	-- Ritual Renown
-				ach(62530),	-- Ritual Site Achiever
-				ach(62531),	-- Ritual Site Adept
-				ach(62524),	-- Ritual Site Challenge: Broken Throne
-				ach(62527),	-- Ritual Site Challenge: Daggerspine Point
-				ach(62562, {	-- Ritual Site Disruptor
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						62621,	-- Challenging Sites
-						62622,	-- Ritual Renown
-						62452,	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
-					}},
-				}),
-				ach(62525),	-- Ritual Site Extreme: Broken Throne
-				ach(62528),	-- Ritual Site Extreme: Daggerspine Point
-				ach(62532),	-- Ritual Site Handler
-				ach(62533),	-- Ritual Site Master
-				ach(62523),	-- Ritual Site Mastery: Broken Throne
-				ach(62526),	-- Ritual Site Mastery: Daggerspine Point
-				ach(62534),	-- Ritual Site Rogue: Broken Throne
-				ach(62535),	-- Ritual Site Rogue: Daggerspine Point
-				ach(62529),	-- Ritual Site Starter
-				ach(62521),	-- Ritual Site: Broken Throne
-				ach(62522),	-- Ritual Site: Daggerspine Point
-				ach(62450),	-- Ritual Sites 101: An Introduction to Basic Magical Rituals
-				ach(62451),	-- Ritual Sites 200: Intermediate Ritual Practices
-				ach(62452),	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
-				ach(62453),	-- Ritual Sites 415: Applied Ritual Strategies
-				ach(62454),	-- Ritual Sites 505: A Seminar in Void Ritual Nuance
 			}),
 			n(QUESTS, {
 				q(94380, {	-- Ranger Captain's Summons
@@ -430,6 +373,63 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 				},
 			}),
+			n(ACHIEVEMENTS, {	-- Achievements do not reward Mounts and Pets. They unlock the ability for you to buy them from the vendor.
+				ach(62547),	-- Challenge: Embers
+				ach(62544),	-- Challenge: Magical Alarm Bells
+				ach(62545),	-- Challenge: Malevolent Boons
+				ach(62542),	-- Challenge: Manifestations
+				ach(62543),	-- Challenge: Patrols!
+				ach(62546),	-- Challenge: Reinforced
+				ach(62541),	-- Challenge: Tainted Corpses
+				ach(62540),	-- Challenge: Tendrils
+				ach(62621),	-- Challenging Sites
+				ach(62560),	-- Ember Still Burning
+				ach(62555),	-- Expert Challenge: Embers
+				ach(62552),	-- Expert Challenge: Magical Alarm Bells
+				ach(62553),	-- Expert Challenge: Malevolent Boons
+				ach(62550),	-- Expert Challenge: Manifestations
+				ach(62551),	-- Expert Challenge: Patrols!
+				ach(62554),	-- Expert Challenge: Reinforced
+				ach(62549),	-- Expert Challenge: Tainted Corpses
+				ach(62548),	-- Expert Challenge: Tendrils
+				ach(62559),	-- Malevolence Shrugged
+				ach(62537),	-- Neighborhood Ritual Team: Broken Throne
+				ach(62539),	-- Neighborhood Ritual Team: Daggerspine Point
+				ach(62536),	-- Neighborhood Ritual Watch: Broken Throne
+				ach(62538),	-- Neighborhood Ritual Watch: Daggerspine Point
+				ach(62558),	-- Patrol Ambusher
+				ach(62556),	-- Quick Reflexes
+				ach(62561),	-- Reinforcement Obliteration
+				ach(62622),	-- Ritual Renown
+				ach(62530),	-- Ritual Site Achiever
+				ach(62531),	-- Ritual Site Adept
+				ach(62524),	-- Ritual Site Challenge: Broken Throne
+				ach(62527),	-- Ritual Site Challenge: Daggerspine Point
+				ach(62562, {	-- Ritual Site Disruptor
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						62621,	-- Challenging Sites
+						62622,	-- Ritual Renown
+						62452,	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
+					}},
+				}),
+				ach(62525),	-- Ritual Site Extreme: Broken Throne
+				ach(62528),	-- Ritual Site Extreme: Daggerspine Point
+				ach(62532),	-- Ritual Site Handler
+				ach(62533),	-- Ritual Site Master
+				ach(62523),	-- Ritual Site Mastery: Broken Throne
+				ach(62526),	-- Ritual Site Mastery: Daggerspine Point
+				ach(62534),	-- Ritual Site Rogue: Broken Throne
+				ach(62535),	-- Ritual Site Rogue: Daggerspine Point
+				ach(62529),	-- Ritual Site Starter
+				ach(62521),	-- Ritual Site: Broken Throne
+				ach(62522),	-- Ritual Site: Daggerspine Point
+				ach(62450),	-- Ritual Sites 101: An Introduction to Basic Magical Rituals
+				ach(62451),	-- Ritual Sites 200: Intermediate Ritual Practices
+				ach(62452),	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
+				ach(62453),	-- Ritual Sites 415: Applied Ritual Strategies
+				ach(62454),	-- Ritual Sites 505: A Seminar in Void Ritual Nuance
+			}),
 			n(EVENT_COMPLETION, {
 				i(269817),	-- Ritual Site Challenge Report: Tendrils (QS!)
 			}),
@@ -465,12 +465,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 }))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	n(VOID_ASSAULTS_RITUAL_SITES, {
+	n(VOID_ASSAULTS, {
 		["timeline"] = { ADDED_12_0_5 },
 		["groups"] = {
 			n(QUESTS, {
 				q(92589),	-- <DNT> Last Scenario Step Quest, Triggers after completing any Void Ritual
 				q(94456),	-- <DNT> Last Scenario Step Quest, Triggers after completing a Void Incursion
+			}),
+		},
+	}),
+}))
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(RITUAL_SITES, {
+		["timeline"] = { ADDED_12_0_5 },
+		["groups"] = {
+			n(QUESTS, {
 				-- Daggerspine Landing
 				q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day & week), could be push quest for questID 95547 (Ritual Site Challenge Report: Tendrils)
 				q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_LANDING
