@@ -200,6 +200,11 @@ root(ROOTS.Promotions, {
 				i(264279),	-- Tall Corked Bottle of Liquid Mystery (DECOR!)
 				i(264280),	-- Short Corked Bottle of Liquid Mystery (DECOR!)
 			}));
+			i(262881, {	-- Lil' Staropod (PET!)
+				["description"] = "Offer valid from April 13, 2026 (12pm ET) to May 15, 2026 (12pm ET). During the offer period, complete a purchase of eligible World of Warcraft items through the Blizzard Gear Store and receive a digital code.",
+				["timeline"] = { "added 12.0.1.66838", "removed 12.0.5.99999" },
+				["u"] = REAL_MONEY,
+			}),
 
 			-- Season 2
 
