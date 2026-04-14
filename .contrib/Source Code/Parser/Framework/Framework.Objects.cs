@@ -1862,7 +1862,7 @@ end");
                     case "sourceIgnored":
                     case "nomerge":
                     case "zone-text-continent":
-                        MergeObjectField<bool>(item, field, value);
+                        MergeObjectField<bool>(item, field, value, WarnOnMergeDataChanges);
                         break;
 
                     // String/Integer Data Type Fields
@@ -1889,7 +1889,7 @@ end");
                     case "order":
                     case "SortType":
                     case "an":
-                        MergeObjectField<string>(item, field, value);
+                        MergeObjectField<string>(item, field, value, WarnOnMergeDataChanges);
                         break;
 
                     // Decimal Data Type Fields (requires higher precision than float)
@@ -1912,7 +1912,7 @@ end");
                     //case "dr":
                     case "modelRotation":
                     case "modelScale":
-                        MergeObjectField<float>(item, field, value);
+                        MergeObjectField<float>(item, field, value, WarnOnMergeDataChanges);
                         break;
 
                     // Integer Data Type Fields
@@ -1968,7 +1968,7 @@ end");
                     case "skillID":
                     case "_criteriaTreeID":
                     case "_multiDifficultyID":
-                        MergeObjectField<long>(item, field, value);
+                        MergeObjectField<long>(item, field, value, WarnOnMergeDataChanges);
                         break;
 
                     // Integer -> Integer-Array Data Type conversion
@@ -2053,7 +2053,7 @@ end");
                             break;
                         }
                     case "timeline":
-                        Timeline.Merge(item, value);
+                        Timeline.Merge(item, value, !DebugDBMergeInProgress && CurrentParseStage >= ParseStage.Incorporation);
                         break;
 
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
@@ -2180,10 +2180,20 @@ end");
                 }
             }
 
-            private static void MergeObjectField<T>(IDictionary<string, object> data, string field, object value)
+            private static void MergeObjectField<T>(IDictionary<string, object> data, string field, object value, bool warnOnReplace = false)
             {
                 if (value.TryConvert(out T v))
                 {
+                    if (warnOnReplace)
+                    {
+                        if (data.TryGetValue(field, out object existing) && existing != null)
+                        {
+                            if (existing.IsEquivalent(v)) return;
+
+                            LogWarn($"-- Field Value Overwrite: {field}={existing} => {v}", data);
+                        }
+                    }
+
                     data[field] = v;
                 }
                 else

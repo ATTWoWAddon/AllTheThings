@@ -825,6 +825,7 @@ namespace ATT
 
         private static void CloneAndMergeForDebugData(IDictionary<string, object> data, IDictionary<string, object> keyValueValues)
         {
+            DebugDBMergeInProgress = true;
             Dictionary<string, object> clone = new Dictionary<string, object>();
             foreach (KeyValuePair<string, object> kvp in data)
             {
@@ -842,6 +843,7 @@ namespace ATT
             {
                 Objects.Merge(keyValueValues, clone);
             }
+            DebugDBMergeInProgress = false;
         }
 
         private static void CaptureDebugDBData(IDictionary<string, object> data)

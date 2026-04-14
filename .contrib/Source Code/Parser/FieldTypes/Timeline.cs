@@ -81,7 +81,7 @@ namespace ATT.FieldTypes
         /// </summary>
         public static Timeline Create(object obj) => new Timeline(obj);
 
-        public static Timeline Merge(IDictionary<string, object> data, object value)
+        public static void Merge(IDictionary<string, object> data, object value, bool blockMergesWhenExisting = false)
         {
             Timeline timeline;
             try
@@ -97,19 +97,25 @@ namespace ATT.FieldTypes
             {
                 // copy the Timeline from the incoming value, otherwise we can get Timeline objects linked between different Sources
                 data[Field] = timeline;
-                return timeline;
+                return;
+            }
+
+            if (blockMergesWhenExisting)
+            {
+                Framework.LogDebugWarn($"Skipping Timeline merge. Existing value: {Framework.ToJSON(rawobj)}; merge value: {Framework.ToJSON(timeline)}");
+                return;
             }
 
             if (rawobj is Timeline oldtimeline)
             {
                 oldtimeline.Merge(timeline);
-                return oldtimeline;
+                return;
             }
 
             // this shouldn't happen unless merged without conversion
             oldtimeline = new Timeline(rawobj);
             oldtimeline.Merge(timeline);
-            return oldtimeline;
+            return;
         }
 
         public object AsExportType()
@@ -332,7 +338,7 @@ namespace ATT.FieldTypes
 
     public enum RemovedStatus
     {
-        OBTAINABLE        = 0,
+        OBTAINABLE = 0,
         NEVER_IMPLEMENTED = 1,
         REMOVED_FROM_GAME = 2,
         DELETED_FROM_GAME = 4,

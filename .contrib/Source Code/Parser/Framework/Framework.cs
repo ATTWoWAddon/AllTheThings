@@ -545,6 +545,14 @@ namespace ATT
         /// </summary>
         public static bool ProcessingMergeData => CurrentParseStage == ParseStage.RawJsonMerge || CurrentParseStage == ParseStage.ConditionalData;
 
+        /// <summary>
+        /// Can be toggled across DebugDB merges to bypass various other logic which is irrelevant on DebugDBs
+        /// </summary>
+        private static bool DebugDBMergeInProgress { get; set; }
+
+        private static Lazy<bool> _configShowMergeWarnings = new Lazy<bool>(() => Config["ShowMergeWarnings"]);
+        private static bool ShowMergeWarnings => _configShowMergeWarnings.Value;
+
         private static ParseStage _stage;
         /// <summary>
         /// Represents the current Stage of Parsing. Certain data is not fully populated or accurate at certain Stages, so this can be used to ensure
@@ -573,6 +581,12 @@ namespace ATT
                 }
             }
         }
+
+        /// <summary>
+        /// Once the data is set following validation, we should warn on any further changes since it's likely that something is not quite right
+        /// if data is being changed during merges on existing objects after this point
+        /// </summary>
+        private static bool WarnOnMergeDataChanges => ShowMergeWarnings && !DebugDBMergeInProgress && CurrentParseStage >= ParseStage.Incorporation;
 
         /// <summary>
         /// Represents whether we are currently processing the main Achievements Category
