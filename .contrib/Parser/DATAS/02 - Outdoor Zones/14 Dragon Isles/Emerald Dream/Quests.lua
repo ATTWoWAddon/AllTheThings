@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				q(76347, {	-- Power, Eruption, and Lies
 					["sourceQuests"] = { 76348 },	-- Big Bright Beautiful Barrier
-					["provider"] = { "n", 208378 },	-- Suzska
+					["provider"] = { "n", 208725 },	-- Suzska
 					["coord"] = { 33.5, 30.3, EMERALD_DREAM },
 					["groups"] = {
 						i(209885),	-- Chartreuse Champion's Chestplate
@@ -301,7 +301,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						76329,	-- In and Out Scout
 					},
 					["provider"] = { "n", 206406 },	-- Merithra
-					["coord"] = { 53.0, 28.1, EMERALD_DREAM },
+					["coords"] = {
+						{ 52.1, 24.2, EMERALD_DREAM },
+						{ 53.0, 28.1, EMERALD_DREAM },
+					},
 				}),
 				q(76332, {	-- Putting Roots Down
 					["sourceQuests"] = { 76334 },	-- Good Counsel
@@ -487,7 +490,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				q(76402, {	-- Amirdrassil, the Dream's Hope: Fyrakk
 					["sourceQuests"] = { 76401 },	-- Echo of the Firelands
 					["provider"] = { "n", 206921 },	-- Alexstrasza the Life-Binder
-					["coord"] = { 34.9, 35.4, EMERALD_DREAM },
+					["coord"] = { 28.0, 31.2, EMERALD_DREAM },
 					["groups"] = {
 						i(210916),	-- Ember of Fyrakk [2.5k Dream Warden rep]
 						i(206960),	-- Enchanted Wyrm's Dreaming Crest
@@ -495,8 +498,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				q(77780, {	-- A Blossom Witnessed
 					["sourceQuests"] = { 76401 },	-- Echo of the Firelands
-					["provider"] = { "n", 211634 },	-- Tyrande Whisperwind
-					["coord"] = { 27.5, 31.4, EMERALD_DREAM },
+					["qgs"] = {
+						211634,	-- Tyrande Whisperwind
+						208505,	-- Tyrande Whisperwind
+					},
+					["coords"] = {
+						{ 27.5, 31.4, EMERALD_DREAM },
+						{ 50.8, 62.8, EMERALD_DREAM },
+					},
 					-- also requires kill of Fyrakk
 				}),
 				q(76276, {	-- A Changed Land
@@ -603,7 +612,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			q(77195, {	-- A Dragon's Eye View
 				["sourceQuests"] = { 76461 },	-- Draconic Diplomacy
 				["provider"] = { "n", 207350 },	-- Wrathion
-				["coord"] = { 33.7, 62.0, THALDRASZUS },
+				["coords"] = {
+					{ 33.7, 62.0, THALDRASZUS },
+					{ 50.8, 62.8, EMERALD_DREAM },
+				},
 			}),
 			q(76462, {	-- Cavern Cleaning
 				["sourceQuests"] = { 77195 },	-- A Dragon's Eye View
@@ -850,7 +862,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, EMERALD_DREAM },
 				["groups"] = {
-					i(208931),	-- Silky Sage (QI!)
+					o(408130, {	-- Voluptuous Vines
+						["coords"] = {
+							{ 57.2, 79.5, EMERALD_DREAM },
+							{ 57.6, 80.5, EMERALD_DREAM },
+							{ 58.2, 79.4, EMERALD_DREAM },
+							{ 58.2, 79.5, EMERALD_DREAM },
+							{ 58.6, 81.1, EMERALD_DREAM },
+							{ 58.8, 79.2, EMERALD_DREAM },
+							{ 59.8, 78.7, EMERALD_DREAM },
+							{ 60.0, 81.0, EMERALD_DREAM },
+							{ 60.3, 80.3, EMERALD_DREAM },
+							{ 61.0, 79.4, EMERALD_DREAM },
+							{ 61.3, 81.2, EMERALD_DREAM },
+							{ 61.6, 80.3, EMERALD_DREAM },
+						},
+						["groups"] = { i(208931) },	-- Silky Sage (QI!)
+					}),
 				},
 			}),
 			q(77955, {	-- Heated Hearthstone Hustle
@@ -932,7 +960,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 208713 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 58.6, 23.9, EMERALD_DREAM },
 				["groups"] = {
-					i(208884),	-- Root Restoration Fruit (QI!)
+					o(408066, {	-- Root Restoration Fruit
+						["coord"] = { 58.6, 24.3, EMERALD_DREAM },
+						["groups"] = { i(208884) },	-- Root Restoration Fruit (QI!)
+					}),
 				},
 			}),
 			q(77312, {	-- Nature Persists
@@ -940,7 +971,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 208713 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 58.6, 23.9, EMERALD_DREAM },
 				["groups"] = {
-					i(208676),	-- Sprouted Seedling (QI!)
+					o(406895, {	-- Violet Forget-Me-Not
+						i(208676),	-- Sprouted Seedling (QI!)
+					}),
 				},
 			}),
 			q(77313, {	-- A Solemn Summons
@@ -991,8 +1024,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "i", 208775 },	-- Ashphodel Research Notes
 				-- ["coord"] = { 65.9, 37.8, EMERALD_DREAM },
 				["groups"] = {
-					i(211395),	-- Ashphodel Research Notes
-					i(210453),	-- Bundle of Flame Pollen (QI!)
+					o(410764, {	-- Sample of Cinder Pollen
+						["coord"] = { 60.9, 44.9, EMERALD_DREAM },
+						["groups"] = { i(210453) },	-- Sample of Cinder Pollen (QI!)
+					}),
+					i(211395),	-- Ashphodel Research Notes (QI!)
+					--
 					i(210951),	-- Treacherous Research Notes
 				},
 			}),
@@ -1017,7 +1054,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 210587 },	-- Aviana
 				["coord"] = { 65.8, 37.6, EMERALD_DREAM },
 				["groups"] = {
-					i(210136),	-- Uprooted Ashphodel (QI!)
+					o(410244, {	-- Burning Ashphodel
+						i(210136),	-- Uprooted Ashphodel (QI!)
+					}),
 				},
 			}),
 			q(78046, {	-- Overseer Oversight

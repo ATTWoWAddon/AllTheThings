@@ -492,6 +492,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 34943,	-- An Old Friend
 						["qg"] = 80434,	-- Gar'rok
 						["coord"] = { 75.0, 22.7, DRAENOR_NAGRAND },
+						["groups"] = {
+							o(231091, {	-- Ember Blossom
+								["coord"] = { 70.6, 10.0, DRAENOR_NAGRAND },
+								["groups"] = { i(112089) },	-- Ember Blossom (QI!)
+							}),
+						},
 					}),
 					q(33928, {	-- A Wrong of Earth and Fire
 						["description"] = "Starts dropping during |cFFFFD700Elemental Attunement|r.",
@@ -717,6 +723,24 @@ root(ROOTS.Zones, {
 						["qg"] = 80593,	-- Incineratus
 						["coord"] = { 71.3, 17.8, DRAENOR_NAGRAND },
 						["groups"] = {
+							o(230979, {	-- Living Water
+								["coords"] = {
+									{ 74.2, 12.4, DRAENOR_NAGRAND },
+									{ 74.2, 12.6, DRAENOR_NAGRAND },
+									{ 74.6, 10.6, DRAENOR_NAGRAND },
+									{ 74.7, 10.4, DRAENOR_NAGRAND },
+									{ 75.1, 12.0, DRAENOR_NAGRAND },
+									{ 76.0, 14.4, DRAENOR_NAGRAND },
+									{ 76.2, 14.5, DRAENOR_NAGRAND },
+									{ 80.2, 18.4, DRAENOR_NAGRAND },
+									{ 80.2, 18.5, DRAENOR_NAGRAND },
+								},
+								["groups"] = { i(112083) },	-- Living Water (QI!)
+							}),
+							i(112084),	-- Living Earth (QI!)
+							i(112082),	-- Living Flame (QI!)
+							i(112085),	-- Living Wind (QI!)
+							--
 							i(119066),	-- Seal of Falling Snow
 							i(119074),	-- Seal of Rumbling Earth
 							i(118153),	-- Seal of Rushing Winds
@@ -1412,6 +1436,28 @@ root(ROOTS.Zones, {
 					q(37318, {	-- The Dead Do Not Forget...
 						["qg"] = 88500,	-- Murgok
 						["coord"] = { 79.4, 30.2, DRAENOR_NAGRAND },
+						["groups"] = {
+							o(238850, {	-- Ancient Snarlpaw Skull
+								["coords"] = {
+									{ 77.6, 28.6, DRAENOR_NAGRAND },
+									{ 78.2, 24.4, DRAENOR_NAGRAND },
+									{ 78.2, 25.4, DRAENOR_NAGRAND },
+									{ 78.2, 25.5, DRAENOR_NAGRAND },
+									{ 78.3, 28.3, DRAENOR_NAGRAND },
+									{ 78.7, 24.6, DRAENOR_NAGRAND },
+									{ 79.2, 30.7, DRAENOR_NAGRAND },
+									{ 79.4, 29.3, DRAENOR_NAGRAND },
+									{ 79.5, 31.0, DRAENOR_NAGRAND },
+									{ 80.1, 29.9, DRAENOR_NAGRAND },
+									{ 80.8, 28.2, DRAENOR_NAGRAND },
+									{ 80.9, 25.3, DRAENOR_NAGRAND },
+									{ 80.9, 26.2, DRAENOR_NAGRAND },
+									{ 81.3, 27.4, DRAENOR_NAGRAND },
+									{ 81.6, 27.8, DRAENOR_NAGRAND },
+								},
+								["groups"] = { i(119184) },	-- Ancient Snarlpaw Skull (QI!)
+							}),
+						},
 					}),
 					q(34941, {	-- The Debt We Share
 						["sourceQuest"] = 34932,	-- Guise of the Deceiver
@@ -1649,15 +1695,27 @@ root(ROOTS.Zones, {
 							{ 52.0, 68.8, DRAENOR_NAGRAND },
 						},
 					}),
-					q(35271, {	-- The Warsong Threat
+					q(35271, {	-- The Warsong Threat [H]
 						["provider"] = { "o", 232024 },	-- Warsong Attack Plans
 						["coord"] = { 51.8, 62.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							o(233351, {	-- Mixed Unit Tactics
+								["coord"] = { 47.1, 56.1, DRAENOR_NAGRAND },
+								["groups"] = { i(113549) },	-- Mixed Unit Tactics (QI!)
+							}),
+						},
 					}),
-					q(35386, {	-- The Warsong Threat
+					q(35386, {	-- The Warsong Threat [A]
 						["provider"] = { "o", 232024 },	-- Warsong Attack Plans
 						["coord"] = { 51.8, 62.0, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(233351, {	-- Mixed Unit Tactics
+								["coord"] = { 47.1, 56.1, DRAENOR_NAGRAND },
+								["groups"] = { i(113549) },	-- Mixed Unit Tactics (QI!)
+							}),
+						},
 					}),
 					q(37981, {	-- The World Famous Ring of Blood!
 						["description"] = "The item that starts this quest has a chance to drop from any of the daily bounties offered in your garrison (Renzik 'The Shiv' for Alliance and Shadow Hunter Ty'jin for Horde).\n\nThe item isn't looted, but will pop directly into your inventory when the quest mob dies. If it doesn't drop the first time, you can camp the mob for more chances. You'll get a total of three invitations, which you can sell or trade.\n",

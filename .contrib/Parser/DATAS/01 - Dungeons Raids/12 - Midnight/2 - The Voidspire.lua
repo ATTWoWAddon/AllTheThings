@@ -297,7 +297,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 			o(532226, {	-- The Catalyst
 				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
-				["coord"] = { 40.3, 65.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["coord"] = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["modelScale"] = 4,
 				["catalystID"] = 12,	-- ItemBonus.Value_0 MID:S1
 				["groups"] = {
@@ -316,6 +316,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				},
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
+				n(QUESTS, {
+					q(93922, {	-- A Singular Focus Unleashed
+
+					}),
+				}),
 				BossOnly(AVERZIAN, {
 					i(264497),	-- Imperator's Torment Crystal (DECOR!)
 				}),
@@ -499,14 +504,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93993, name(HEADERS.NPC, 240864)),	-- Blinky
 		q(95343, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		q(93989, name(HEADERS.NPC, 252067)),	-- Terrace Watcher
+		q(93985, name(HEADERS.NPC, 252070)),	-- Celestial Behemoth
 		-- Heroic
 		q(93982, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
 		q(93994, name(HEADERS.NPC, 240864)),	-- Blinky
 		q(95341, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		q(93990, name(HEADERS.NPC, 252067)),	-- Terrace Watcher
+		q(93986, name(HEADERS.NPC, 252070)),	-- Celestial Behemoth
 		-- Mythic
 		q(93983, name(HEADERS.NPC, 252066)),	-- Gladius Slauros
 		q(93995, name(HEADERS.NPC, 240864)),	-- Blinky
 		q(95344, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
+		q(93991, name(HEADERS.NPC, 252067)),	-- Terrace Watcher
 	})),
 }));

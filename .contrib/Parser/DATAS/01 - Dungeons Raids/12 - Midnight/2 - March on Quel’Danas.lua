@@ -97,6 +97,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				ach(61610),	-- Heroic: March on Quel'Danas Guild Run
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
+				n(QUESTS, {
+					q(93924, {	-- An Unrelenting March
+
+					}),
+				}),
 				BossOnly(BELOREN, {
 					i(256715),	-- Design: Thalassian Phoenix Torque (RECIPE!)
 					i(264187),	-- Blessed Phoenix Egg (DECOR!)

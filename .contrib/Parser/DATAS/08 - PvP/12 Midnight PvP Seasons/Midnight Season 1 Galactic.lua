@@ -631,7 +631,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			o(532226, {	-- The Catalyst
 				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
-				["coord"] = { 40.3, 65.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["coord"] = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["modelScale"] = 4,
 				["catalystID"] = 12,	-- ItemBonus.Value_0 MID:S1
 				["groups"] = bubbleDown({ ["modID"] = 14, }, {
