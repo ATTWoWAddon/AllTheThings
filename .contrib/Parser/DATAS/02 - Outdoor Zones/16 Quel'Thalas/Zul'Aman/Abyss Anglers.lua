@@ -64,39 +64,51 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 68.2, 20.2, MAP.MIDNIGHT.ZULAMAN },
 					["groups"] = {	-- Diving Upgrades. None of the items triggered a HQT or do they appear as collected. They simply disappear from the vendor once used/learned.
 						i(253627, {	-- Depth Grease
+							["sourceAchievement"] = 62208,	-- Abyss Anglers: Depth Grease
 							["cost"] = { { "c", ANGLER_PEARLS, 400 } },
 						}),
 						i(253516, {	-- Depthdiver's Used Tank
+							["sourceAchievement"] = 62210,	-- Abyss Anglers: Depthdiver's Used Tank
 							["cost"] = { { "c", ANGLER_PEARLS, 200 } },
 						}),
 						i(253624, {	-- Fathom-Tested Tank
+							["sourceAchievement"] = 62211,	-- Abyss Anglers: Fathom-Tested Tank
 							["cost"] = { { "c", ANGLER_PEARLS, 400 } },
 						}),
 						i(271181, {	-- Finnow Chum
+							["sourceAchievement"] = 62117,	-- Abyss Anglers: Finnow Chum
 							["cost"] = { { "c", ANGLER_PEARLS, 200 } },
 						}),
 						i(271183, {	-- Murkskimmer Meat
+							["sourceAchievement"] = 62119,	-- Abyss Anglers: Murkskimmer Meat
 							["cost"] = { { "c", ANGLER_PEARLS, 600 } },
 						}),
 						i(253625, {	-- Nalorakk's Breath Tank
+							["sourceAchievement"] = 62212,	-- Abyss Anglers: Nalorakk's Breath Tank
 							["cost"] = { { "c", ANGLER_PEARLS, 600 } },
 						}),
 						i(253628, {	-- Pahk Trench Fins
+							["sourceAchievement"] = 62209,	-- Abyss Anglers: Pahk Trench Fins
 							["cost"] = { { "c", ANGLER_PEARLS, 600 } },
 						}),
 						i(271182, {	-- Plecofin Bait
+							["sourceAchievement"] = 62118,	-- Abyss Anglers: Plecofin Bait
 							["cost"] = { { "c", ANGLER_PEARLS, 400 } },
 						}),
 						i(271184, {	-- Pressurized Eyeglass
+							["sourceAchievement"] = 62506,	-- Abyss Anglers: Pressurized Eyeglass
 							["cost"] = { { "c", ANGLER_PEARLS, 600 } },
 						}),
 						i(253626, {	-- Reinforced Joints
+							["sourceAchievement"] = 62207,	-- Abyss Anglers: Reinforced Joints
 							["cost"] = { { "c", ANGLER_PEARLS, 100 } },
 						}),
 						i(265771, {	-- Shallows Net
+							["sourceAchievement"] = 62213,	-- Abyss Anglers: Shallows Net
 							["cost"] = { { "c", ANGLER_PEARLS, 400 } },
 						}),
 						i(265770, {	-- Triple-Thread Net
+							["sourceAchievement"] = 62214,	-- Abyss Anglers: Triple-Thread Net
 							["cost"] = { { "c", ANGLER_PEARLS, 600 } },
 						}),
 					},
@@ -120,9 +132,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["cost"] = { { "c", ANGLER_PEARLS, 750 } },
 						}),
 						i(265749, {	-- Idol of the Depths (QS!)
+							["sourceAchievement"] = 62217,	-- Abyss Anglers: Idol of the Depths
 							["cost"] = { { "c", ANGLER_PEARLS, 1500 } },
 						}),
 						i(274266, {	-- Ka'bubb (PET!)
+							["sourceAchievement"] = 62776,	-- Abyss Anglers: All Blue Angler
 							["cost"] = { { "c", ANGLER_PEARLS, 2500 } },
 						}),
 						i(258535, {	-- Simple Bone-Tied Charm (DECOR!)
