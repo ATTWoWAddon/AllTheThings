@@ -114,13 +114,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["qg"] = 257416,	-- Lady Darkglen
 					["coord"] = { 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
-				-- Repeatable Quests
-				q(94386, {	-- Void Assaults: Zul'Aman
-					["sourceQuest"] = 94381,	-- Outfitting and Allies
-					["qg"] = 257415,	-- Kul'amara the Fierce
-					["coord"] = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["isWeekly"] = true,	-- Speculation
-				}),
 				-- Sorted but unsorted (not sure what sourceQuest or action for it)
 				q(95550, {	-- Thin Their Ranks
 					--["sourceQuest"] = ???,	-- ???
@@ -144,6 +137,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["groups"] = {
 						i(271094),	-- Lady Darkglen's Device (QI!)
 					},
+				}),
+				-- Repeatable Quests, Assaults are weekly per zone. 1 week is in Eversong, 1 week is in Zul'Aman
+				q(94385, {	-- Void Assaults: Eversong Woods
+					["sourceQuest"] = 94381,	-- Outfitting and Allies
+					["qg"] = 257411,	-- Ranger Captain Lilatha
+					["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isWeekly"] = true,	-- Speculation
+				}),
+				q(94386, {	-- Void Assaults: Zul'Aman
+					["sourceQuest"] = 94381,	-- Outfitting and Allies
+					["qg"] = 257415,	-- Kul'amara the Fierce
+					["coord"] = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isWeekly"] = true,	-- Speculation
 				}),
 			}),
 			n(REWARDS, {
@@ -239,10 +245,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["coord"] = { 48.0, 49.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
 						i(263928, {	-- Cache of Void-Touched Armaments (Champion)
-							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
+							["cost"] = { { "c", FIELD_ACCOLADE, 75 } },
 						}),
 						i(263929, {	-- Cache of Void-Touched Armaments (Heroic)
-							["cost"] = { { "c", FIELD_ACCOLADE, 200 } },
+							["cost"] = { { "c", FIELD_ACCOLADE, 500 } },
 						}),
 						i(268996, {	-- Field Accolade (Automatically converts to 1x FIELD_ACCOLADE currency when bought)
 							["cost"] = { { "i", DARK_PARTICLE, 100 } },
@@ -253,15 +259,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["coord"] = { 47.7, 50.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = sharedData({
 						["minReputation"] = { FACTION_RITUAL_SITES, 3 },
-						["cost"] = { { "c", FIELD_ACCOLADE, 8 } },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}, {
 						i(271158, {	-- Dark Obelisk (DECOR!)
-							["cost"] = { { "c", FIELD_ACCOLADE, 40 } },
+							["minReputation"] = { FACTION_RITUAL_SITES, 7 },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 						}),
 						i(273142),	-- Runic Parchment (DECOR!)
 						i(273135),	-- Void Elf Floating Desk (DECOR!)
 						i(273159, {	-- Void Elf Scribe's Desk (DECOR!)
-							["cost"] = { { "c", FIELD_ACCOLADE, 24 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 						}),
 						i(273157),	-- Void Flame Candle (DECOR!)
 						i(273147),	-- Void Inkwell (DECOR!)
@@ -271,34 +278,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["coord"] = { 48.7, 50.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
 						i(270989, {	-- Cappy (PET!)
-							["minReputation"] = { FACTION_RITUAL_SITES, 6 },
-							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
+							["sourceAchievement"] = 62518,	-- Cosmic Exterminator
+							["cost"] = { { "c", VOIDLIGHT_MARL, 1800 } },
 						}),
 						i(264348, {	-- Unbound Manawyrm (MOUNT!)
 							["sourceAchievements"] = {
 								62562,	-- Ritual Site Disruptor
 								62563,	-- Void Response Team
 							},
-							["cost"] = { { "c", FIELD_ACCOLADE, 50 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 6000 } },
 						}),
 						i(270331, {	-- Void-Infused Mindbreaker Fry (PET!)
 							["minReputation"] = { FACTION_RITUAL_SITES, 6 },
-							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 1800 } },
 						}),
 						i(270330, {	-- Void-Touched Dragonhawk Egg (PET!)
 							["minReputation"] = { FACTION_RITUAL_SITES, 6 },
-							["cost"] = { { "c", FIELD_ACCOLADE, 25 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 1800 } },
 						}),
 						i(268578, {	-- Void-Touched Hawkstrider (MOUNT!)
 							["minReputation"] = { FACTION_RITUAL_SITES, 8 },
-							["cost"] = { { "c", FIELD_ACCOLADE, 50 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 4500 } },
 						}),
 					},
 				}),
 				n(255476, {	-- Triam Dawnsetter <Cosmetic Equipment Salvager>
 					["coord"] = { 48.2, 49.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = sharedData({
-						["cost"] = { { "c", FIELD_ACCOLADE, 50 } },
+						["cost"] = {
+							{ "c", FIELD_ACCOLADE, 5 },
+							{ "c", VOIDLIGHT_MARL, 150 },
+						},
 					}, {
 						i(264320),	-- Cache of Void-Touched Belts
 						i(264322),	-- Cache of Void-Touched Boots
@@ -310,7 +320,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(264321),	-- Cache of Void-Touched Legwear
 						i(264315),	-- Cache of Void-Touched Shoulderwear
 						i(264323, {	-- Cache of Void-Touched Weapons
-							["cost"] = { { "c", FIELD_ACCOLADE, 100 } },
+							["cost"] = {
+								{ "c", FIELD_ACCOLADE, 10 },
+								{ "c", VOIDLIGHT_MARL, 200 },
+							},
 						}),
 					}),
 				}),
