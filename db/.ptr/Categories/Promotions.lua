@@ -188,7 +188,8 @@ mnt(1268809,{itemID=262438,lvl=10}),
 de(15550,{itemID=264278,spellID=1271559}),
 de(15229,{itemID=263383,spellID=1270445}),
 de(15551,{itemID=264279,spellID=1271560}),
-de(15552,{itemID=264280,spellID=1271561})}})}}),
+de(15552,{itemID=264280,spellID=1271561})}}),
+p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to May 15, 2026 (12pm ET). During the offer period, complete a purchase of eligible World of Warcraft items through the Blizzard Gear Store and receive a digital code.",itemID=262881,npcID=256663,rwp=120005,spellID=1269535,u=2})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
@@ -315,7 +316,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
+crit(34637,{achID=6848,id=3,u=2})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 mnt(1216422,{b=1,itemID=235286,lvl=10,u=3}),

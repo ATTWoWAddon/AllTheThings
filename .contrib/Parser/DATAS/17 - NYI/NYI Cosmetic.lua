@@ -1199,24 +1199,175 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			}),
 		})),
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
-			n(WEAPONS, {
-				i(263946),	-- Void-Touched Basher
-				i(263954),	-- Void-Touched Battle Baton
-				i(263949),	-- Void-Touched Bulwark
-				i(263963),	-- Void-Touched Dueling Blade
-				i(263942),	-- Void-Touched Fang
-				i(263960),	-- Void-Touched Flaredblade
-				i(263968),	-- Void-Touched Foci
-				i(263970),	-- Void-Touched Glaiveblade
-				i(263966),	-- Void-Touched Greatblade
-				i(263967),	-- Void-Touched Greatbow
-				i(263969),	-- Void-Touched Greatwand
-				i(263943),	-- Void-Touched Gutter
-				i(263941),	-- Void-Touched Rifle
-				i(263956),	-- Void-Touched Smasher
-				i(263950),	-- Void-Touched Spade
-				i(263952),	-- Void-Touched Sunfury Stave
-				i(263959),	-- Void-Touched Tome
+			n(VOID_ASSAULTS, {	-- Tokens from the event grant gear pieces. I don't know under what circumstances cosmetics get offered. Once figured out, these can be moved to appropriate place.	- Exo
+				cl(DEATHKNIGHT, {
+					i(263585),	-- Void Rider's Breastplate
+					i(263592),	-- Void Rider's Cloak
+					i(263591),	-- Void Rider's Girdle
+					i(263587),	-- Void Rider's Gloves
+					i(263588),	-- Void Rider's Helm
+					i(263589),	-- Void Rider's Leggings
+					i(263590),	-- Void Rider's Pauldrons
+					i(263586),	-- Void Rider's Sabatons
+					i(263593),	-- Void Rider's Vambraces
+				}),
+				cl(DEMONHUNTER, {
+					i(263602),	-- Voidwalker's Bracers
+					i(263601),	-- Voidwalker's Cloak
+					i(263600),	-- Voidwalker's Cord
+					i(263596),	-- Voidwalker's Gloves
+					i(263594),	-- Voidwalker's Harness
+					i(263598),	-- Voidwalker's Leggings
+					i(263595),	-- Voidwalker's Sandals
+					i(263599),	-- Voidwalker's Shoulderblades
+					i(263597),	-- Voidwalker's Skullcap
+				}),
+				cl(DRUID, {
+					i(263609),	-- Voidrage Belt
+					i(263604),	-- Voidrage Boots
+					i(263611),	-- Voidrage Bracers
+					i(263612),	-- Voidrage Chestguard
+					i(263610),	-- Voidrage Cloak
+					i(263606),	-- Voidrage Cover
+					i(263605),	-- Voidrage Handguards
+					i(263607),	-- Voidrage Legguards
+					i(263608),	-- Voidrage Pauldrons
+					i(263603),	-- Voidrage Robe
+				}),
+				cl(EVOKER, {
+					i(263613),	-- Void-Warder's Breastplate
+					i(263615),	-- Void-Warder's Claws
+					i(263620),	-- Void-Warder's Cloak
+					i(263616),	-- Void-Warder's Crown
+					i(263619),	-- Void-Warder's Girdle
+					i(263617),	-- Void-Warder's Legplates
+					i(263618),	-- Void-Warder's Pauldrons
+					i(263614),	-- Void-Warder's Talons
+					i(263621),	-- Void-Warder's Vambraces
+				}),
+				cl(HUNTER, {
+					i(263628),	-- Voidstalker's Belt
+					i(263630),	-- Voidstalker's Bracers
+					i(263622),	-- Voidstalker's Breastplate
+					i(263629),	-- Voidstalker's Cloak
+					i(263624),	-- Voidstalker's Gauntlets
+					i(263623),	-- Voidstalker's Greaves
+					i(263625),	-- Voidstalker's Helm
+					i(263626),	-- Voidstalker's Legguards
+					i(263627),	-- Voidstalker's Spaulders
+				}),
+				cl(MAGE, {
+					i(263637),	-- Voidwind Belt
+					i(263639),	-- Voidwind Bindings
+					i(263640),	-- Voidwind Blouse
+					i(263632),	-- Voidwind Boots
+					i(263638),	-- Voidwind Cloak
+					i(263634),	-- Voidwind Crown
+					i(263633),	-- Voidwind Gloves
+					i(263636),	-- Voidwind Mantle
+					i(263635),	-- Voidwind Pants
+					i(263631),	-- Voidwind Robes
+				}),
+				cl(MONK, {
+					i(263649),	-- Bindings of the Void Acolyte
+					i(263648),	-- Cloak of the Void Acolyte
+					i(263647),	-- Cord of the Void Acolyte
+					i(263643),	-- Grips of the Void Acolyte
+					i(263644),	-- Helm of the Void Acolyte
+					i(263645),	-- Pants of the Void Acolyte
+					i(263646),	-- Spaulders of the Void Acolyte
+					i(263642),	-- Talons of the Void Acolyte
+					i(263641),	-- Vest of the Void Acolyte
+				}),
+				cl(PALADIN, {
+					i(263656),	-- Void's Judgment Belt
+					i(263658),	-- Void's Judgment Bindings
+					i(263650),	-- Void's Judgment Breastplate
+					i(263657),	-- Void's Judgment Cloak
+					i(263653),	-- Void's Judgment Crown
+					i(263652),	-- Void's Judgment Gauntlets
+					i(263659),	-- Void's Judgment Greaves
+					i(263654),	-- Void's Judgment Legplates
+					i(263651),	-- Void's Judgment Sabatons
+					i(263655),	-- Void's Judgment Spaulders
+				}),
+				cl(PRIEST, {
+					i(263666),	-- Belt of Voidcendence
+					i(263668),	-- Bindings of Voidcendence
+					i(263669),	-- Blouse of Voidcendence
+					i(263661),	-- Boots of Voidcendence
+					i(263667),	-- Cloak of Voidcendence
+					i(263663),	-- Halo of Voidcendence
+					i(263662),	-- Handguards of Voidcendence
+					i(263664),	-- Leggings of Voidcendence
+					i(263665),	-- Pauldrons of Voidcendence
+					i(263660),	-- Robes of Voidcendence
+				}),
+				cl(ROGUE, {
+					i(263676),	-- Voidfang Belt
+					i(263671),	-- Voidfang Boots
+					i(263678),	-- Voidfang Bracers
+					i(263670),	-- Voidfang Chestpiece
+					i(263677),	-- Voidfang Cloak
+					i(263672),	-- Voidfang Gloves
+					i(263673),	-- Voidfang Hood
+					i(263674),	-- Voidfang Pants
+					i(263675),	-- Voidfang Spaulders
+				}),
+				cl(SHAMAN, {
+					i(263685),	-- Belt of Void Storms
+					i(263687),	-- Bracers of Void Storms
+					i(263679),	-- Breastplate of Void Storms
+					i(263686),	-- Cloak of Void Storms
+					i(263684),	-- Epaulets of Void Storms
+					i(263681),	-- Gauntlets of Void Storms
+					i(263688),	-- Greaves of Void Storms
+					i(263682),	-- Helmet of Void Storms
+					i(263683),	-- Kilt of Void Storms
+					i(263680),	-- Sabatons of Void Storms
+				}),
+				cl(WARLOCK, {
+					i(263695),	-- Void Nemesis' Belt
+					i(263698),	-- Void Nemesis' Blouse
+					i(263690),	-- Void Nemesis' Boots
+					i(263697),	-- Void Nemesis' Bracers
+					i(263696),	-- Void Nemesis' Cloak
+					i(263691),	-- Void Nemesis' Gloves
+					i(263693),	-- Void Nemesis' Leggings
+					i(263689),	-- Void Nemesis' Robes
+					i(263692),	-- Void Nemesis' Skullcap
+					i(263694),	-- Void Nemesis' Spaulders
+				}),
+				cl(WARRIOR, {
+					i(263707),	-- Bracelets of Voidwrath
+					i(263699),	-- Breastplate of Voidwrath
+					i(263706),	-- Cloak of Voidwrath
+					i(263701),	-- Gauntlets of Voidwrath
+					i(263702),	-- Helm of Voidwrath
+					i(263703),	-- Legplates of Voidwrath
+					i(263704),	-- Pauldrons of Voidwrath
+					i(263700),	-- Sabatons of Voidwrath
+					i(263705),	-- Waistband of Voidwrath
+				}),
+				n(WEAPONS, {
+					i(263946),	-- Void-Touched Basher
+					i(263954),	-- Void-Touched Battle Baton
+					i(263949),	-- Void-Touched Bulwark
+					i(263963),	-- Void-Touched Dueling Blade
+					i(263942),	-- Void-Touched Fang
+					i(263960),	-- Void-Touched Flaredblade
+					i(263968),	-- Void-Touched Foci
+					i(263970),	-- Void-Touched Glaiveblade
+					i(263966),	-- Void-Touched Greatblade
+					i(263967),	-- Void-Touched Greatbow
+					i(263969),	-- Void-Touched Greatwand
+					i(263943),	-- Void-Touched Gutter
+					i(263941),	-- Void-Touched Rifle
+					i(263956),	-- Void-Touched Smasher
+					i(263950),	-- Void-Touched Spade
+					i(263952),	-- Void-Touched Sunfury Stave
+					i(263959),	-- Void-Touched Tome
+				}),
 			}),
 		})),
 	}),

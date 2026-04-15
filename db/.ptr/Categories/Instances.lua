@@ -51729,8 +51729,8 @@ crit(53624,{achID=15693,id=1,u=2}),
 crit(53625,{achID=15693,id=2,u=2})}}),
 ach(15692,{awp=110205,maps={809},rwp=110207,u=2,g={
 cs(373262,{awp=90205,rwp=100000,u=2}),
-crit(53622,{achID=15692,id=1,u=2}),
-crit(53623,{achID=15692,id=2,u=2})}}),
+crit(53622,{achID=15692,awp=90205,id=1,rwp=100000,u=2}),
+crit(53623,{achID=15692,awp=90205,id=2,rwp=100000,u=2})}}),
 ach(15500,{u=2,g={
 cs(367416,{u=2}),
 crit(53264,{achID=15500,id=1,u=2}),
@@ -62976,6 +62976,8 @@ crit(113785,{achID=11761,awp=70200,id=73})}),
 gach(61609),
 gach(61610)}),
 d(109,{difficulties={17,14,15,16},g={
+h(-45,{
+q(93924,{lvl=90})}),
 e(2739,{npcID=249637,g={
 r(1230488,{itemID=256715,requireSkill=755,skillID=2914}),
 de(15467,{itemID=264187,spellID=1271354}),
@@ -63296,7 +63298,7 @@ crit(113785,{achID=11761,awp=70200,id=73})}),
 gach(61606),
 gach(61607)}),
 o(532226,{catalystID=12,coords={
-[2393]={{40.3,65}}},description="This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
+[2393]={{40.3,65.5}}},description="This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
 d(17,{trackID=972,g={
 cl(6,{sym={{"sub","instance_tier",1307,17,6},{"sub","instance_tier",1314,17,6}},g={
 s(296599,249965,{b=1,c={6},f=3,lvl=90,modID=4}),
@@ -63562,6 +63564,8 @@ s(296469,249954,{b=1,c={1},f=7,lvl=90,modID=6}),
 s(296385,249947,{b=1,c={1},f=3,lvl=90,modID=6}),
 s(296397,249948,{b=1,c={1},f=7,lvl=90,modID=6})}})}})}}),
 d(109,{difficulties={17,14,15,16},g={
+h(-45,{
+q(93922,{lvl=90})}),
 e(2733,{npcID=240435,g={
 de(15761,{itemID=264497,spellID=1272060}),
 crit(109375,{achID=61366}),
@@ -64264,7 +64268,7 @@ cs(1254551)}),
 ach(61271,{
 cs(1254555)}),
 ach(61272,{
-cs(1254557)}),
+cs(159898)}),
 ach(61591,{
 title(682)}),
 ach(61587,{
