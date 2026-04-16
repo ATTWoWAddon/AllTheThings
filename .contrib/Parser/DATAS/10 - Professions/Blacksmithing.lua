@@ -1505,13 +1505,13 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 245763 },	-- Thalassian Treatise on Blacksmithing
 			}),
-			q(93530, {	-- MID Weekly Blacksmithing Knowledgepoint #1
+			q(93531, {	-- MID Weekly Blacksmithing Knowledgepoint #1
 				["name"] = "MID Weekly Blacksmithing Treasure #1",
-				["provider"] = { "i", 259190 },	-- Thalassian Whestone
-			}),
-			q(93531, {	-- MID Weekly Blacksmithing Knowledgepoint #2
-				["name"] = "MID Weekly Blacksmithing Treasure #2",
 				["provider"] = { "i", 259191 },	-- Infused Quenching Oil
+			}),
+			q(93530, {	-- MID Weekly Blacksmithing Knowledgepoint #2
+				["name"] = "MID Weekly Blacksmithing Treasure #2",
+				["provider"] = { "i", 259190 },	-- Thalassian Whestone
 			}),
 		})),
 	})),
