@@ -26,6 +26,33 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(61258, {	-- Midnight Keystone Legend: Season One
 				i(262621),	-- Convalescent Carrion (MOUNT!)
 			}),
+			--[[ach(, {	-- Midnight Keystone Myth: Season One
+				i(,	{-- Timelost Saddle
+				-- This item can be brought to Lindormi in Silvermoon or the Timeways, where it can be exchanged for a mount of your choice from a curated selection. 
+					i(174836),	-- Awakened Mindborer
+					i(182717),	-- Sintouched Deathwalker
+					i(187525),	-- Soultwisted Deathwalker
+					i(187682),	-- Wastewarped Deathwalker
+					i(192557),	-- Restoration Deathwalker
+					i(199412),	-- Hailstorm Armoredon
+					i(204798),	-- Inferno Armoredon
+					i(209060),	-- Verdant Armoredon
+					i(213438),	-- Infinite Armoredon
+					i(226357),	-- Diamond Mechsuit
+					i(235549),	-- Crimson Shreddertank
+					i(237141),	-- Enterprising Shreddertank
+					i(248248),	-- Azure Void Flyer
+					i(247822),	-- Scarlet Void Flyer
+					i(262620),	-- Calamitous Carrion
+					i(262621),	-- Convalescent Carrion
+				}),
+			}),
+			ach( ,{	-- Umbral Champion: Season One
+				["groups"] = {
+					mount(),	-- new exclusive mount
+					title(),	-- <Name> the Umbral Champion
+				},
+			}),--]]
 			ach(61259, {	-- Umbral Hero: Midnight Season One
 				title(656),	-- <Name> the Umbral Hero
 			}),
