@@ -2107,7 +2107,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			q(29516, {	-- Keeping the Faire Sparkling
 				["qg"] = 14833,	-- Chronos <He Who Never Forgets!>
-				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
+				["coord"] = { 55.0, 70.6, DARKMOON_ISLAND },
 				["maxReputation"] = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
 				["timeline"] = { ADDED_4_3_0 },
 				["requireSkill"] = JEWELCRAFTING,

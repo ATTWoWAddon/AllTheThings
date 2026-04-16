@@ -452,8 +452,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					192762,	-- Azure Skitterfly (MOUNT!)
 				}},
 			}),
-			n(187444, {	-- Kajithalan
-				["coord"] = { 47.1, 82.9, THE_WAKING_SHORES },
+			n(187444, {	-- Kajithalan <Traveling Dragonbrew Vendor>
+				["description"] = "Travels to different inns each day.",
+				["coords"] = {
+					{ 28.0, 60.6, OHNAHRAN_PLAINS },
+					{ 52.6, 69.8, THALDRASZUS },
+					{ 58.2, 83.0, THALDRASZUS },
+					{ 18.8, 24.4, THE_AZURE_SPAN },
+					{ 63.0, 57.8, THE_AZURE_SPAN },
+					{ 47.1, 82.9, THE_WAKING_SHORES },
+					{ 58.4, 67.6, THE_WAKING_SHORES },
+				},
 				["groups"] = {
 					i(196440),	-- Dragon Flight
 					i(194691),	-- Artisanal Berry Juice

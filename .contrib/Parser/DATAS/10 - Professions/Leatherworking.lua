@@ -1544,8 +1544,14 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		n(QUESTS, {
 			q(93695, {	-- Leatherworking Services Requested
 				["sourceQuests"] = { 93731 },	-- Crafting Orders: Leatherworking
-				["provider"] = { "n", 243500 },	-- Talmar <Leatherworking Trainer>
-				["coord"] = { 43.1, 55.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["qgs"] = {
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+					243500,	-- Talmar <Leatherworking Trainer>
+				},
+				["coords"] = {
+					{ 43.1, 55.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
 				["isWeekly"] = true,
 				["groups"] = {
 					i(263459),	-- Thalassian Leatherworker's Journal

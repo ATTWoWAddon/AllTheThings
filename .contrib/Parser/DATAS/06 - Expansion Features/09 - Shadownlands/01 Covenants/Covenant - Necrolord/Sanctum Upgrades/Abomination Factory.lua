@@ -1241,7 +1241,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 										["groups"] = {
-											i(178788),	-- Anima Traces (QI!)
+											o(352070, {	-- Anima Traces
+												["coords"] = {
+													{ 36.2, 37.1, MALDRAXXUS },
+													{ 36.3, 38.1, MALDRAXXUS },
+													{ 36.3, 39.1, MALDRAXXUS },
+													{ 36.8, 38.1, MALDRAXXUS },
+													{ 36.9, 37.4, MALDRAXXUS },
+													{ 36.9, 39.7, MALDRAXXUS },
+													{ 37.4, 39.4, MALDRAXXUS },
+													{ 37.5, 38.3, MALDRAXXUS },
+													{ 37.5, 39.4, MALDRAXXUS },
+													{ 37.5, 39.5, MALDRAXXUS },
+												},
+												["groups"] = { i(178788) },	-- Anima Traces (QI!)
+											}),
 											i(183127),	-- Call Guillotine (QI!)
 										},
 									}),

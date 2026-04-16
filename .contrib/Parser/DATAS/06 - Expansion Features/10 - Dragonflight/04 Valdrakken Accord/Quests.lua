@@ -347,7 +347,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							q(75632, {	-- A Dislocated Disc
 								["sourceQuests"] = { 72444 },	-- A Sliver of Silver
 								["provider"] = { "n", 187669 },	-- Nozdormu
-								["coord"] = { 61.4, 39.1, VALDRAKKEN },
+								["coord"] = { 60.8, 39.2, VALDRAKKEN },
 							}),
 							q(75633, {	-- We Have the Technology
 								["sourceQuests"] = { 75632 },	-- A Dislocated Disc

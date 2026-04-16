@@ -178,11 +178,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			o(355886, {		-- Plaguefallen Chest
 				["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff. You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleport to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
-				["coord"] = { 62.4, 76.5, MALDRAXXUS },
+				["coord"] = { 57.7, 75.9, MALDRAXXUS },
 				["questID"] = 61474,
-				["groups"] = {
-					i(183515),	-- Iridescent Ooze (PET!)
-				},
+				["groups"] = { i(183515) },	-- Iridescent Ooze (PET!)
 			}),
 			o(345458, {		-- Prize Bag
 				["description"] = "Spawns periodically around the arena.",
@@ -336,10 +334,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				o(354852, {	-- Sprouting Growth
 					["coords"] = {
-						{ 73.5, 49.7, MALDRAXXUS },
-						{ 75.6, 45.5, MALDRAXXUS },
-						{ 76.0, 49.4, MALDRAXXUS },
+						{ 65.3, 49.6, MALDRAXXUS },
+						{ 66.9, 43.9, MALDRAXXUS },
 						{ 68.8, 47.2, MALDRAXXUS },
+						{ 71.0, 50.7, MALDRAXXUS },
+						{ 73.4, 49.8, MALDRAXXUS },
+						{ 73.5, 49.7, MALDRAXXUS },
+						{ 75.4, 45.6, MALDRAXXUS },
+						{ 75.5, 45.4, MALDRAXXUS },
+						{ 75.5, 45.6, MALDRAXXUS },
+						{ 76.0, 49.4, MALDRAXXUS },
+						{ 76.0, 49.5, MALDRAXXUS },
 					},
 					["questID"] = 61090,
 					["isDaily"] = true,

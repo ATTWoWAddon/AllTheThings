@@ -28,8 +28,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			q(78865, {	-- Siblings Until the End
 				["sourceQuests"] = { 78643 },	-- Fair Skies and Strong Winds
-				["provider"] = { "n", 214051 },	-- Vyranoth
-				["coord"] = { 57.1, 37.6, VALDRAKKEN },
+				["qgs"] = {
+					214051,	-- Vyranoth
+					187678,	-- Alexstrasza the Life-Binder
+				},
+				["coords"] = {
+					{ 57.1, 37.6, VALDRAKKEN },
+					{ 58.4, 36.2, VALDRAKKEN },
+				},
 			}),
 			q(92875, {	-- Understanding the War Within
 				["sourceQuests"] = { 78865 },	-- Siblings Until the End

@@ -285,7 +285,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 						q(77250, {	-- Realized Potentional
 							["provider"] = { "n", 204450 },	-- Soridormi
-							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["coords"] = {
+								{ 51.1, 57.1, THALDRASZUS },
+								{ 67.8, 35.7, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+							},
 							["minReputation"] = { FACTION_SORIDORMI, 5 },
 							["groups"] = {
 								i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
@@ -388,7 +391,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["description"] = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
 						["sourceQuest"] = 77679,	-- To Soridormi's Aid
 						["provider"] = { "n", 204450 },	-- Soridormi
-						["coord"] = { 51.1, 57.1, THALDRASZUS },
+						["coords"] = {
+							{ 51.1, 57.1, THALDRASZUS },
+							{ 67.8, 35.7, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						},
 						["maxReputation"] = { FACTION_SORIDORMI, 5 },
 						["isWeekly"] = true,
 						["groups"] = {

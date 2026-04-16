@@ -601,6 +601,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						o(208867, {	-- Shiny Stones
+							i(69983),	-- Shiny Stone (QI!)
+						}),
+						--
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),

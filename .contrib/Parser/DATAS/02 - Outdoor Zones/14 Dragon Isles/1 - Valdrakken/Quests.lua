@@ -201,8 +201,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
 						["groups"] = {
+							o(384858, {	-- Chef's Hoard
+								["coord"] = { 62.6, 12.5, VALDRAKKEN },
+								["groups"] = { i(202013) },	-- Ruby Recipe Journal VIII (QI!)
+							}),
+							--
 							i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
-							i(202013),	-- Ruby Recipe Journal VIII (QI!)
 						},
 					}),
 				},

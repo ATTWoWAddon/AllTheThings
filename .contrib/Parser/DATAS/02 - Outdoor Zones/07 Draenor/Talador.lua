@@ -713,15 +713,79 @@ root(ROOTS.Zones, {
 							}),
 						}),
 					}),
-					q(34802, {	-- A Pilgrimage Gone Awry
+					q(34802, {	-- A Pilgrimage Gone Awry [A]
 						["qg"] = 80028,	-- Nadur
 						["coord"] = { 61.3, 54.4, TALADOR },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o_repeated({
+								["coords"] = {
+									{ 55.3, 49.8, TALADOR },
+									{ 56.0, 48.3, TALADOR },
+									{ 56.1, 48.5, TALADOR },
+									{ 56.1, 50.6, TALADOR },
+									{ 56.6, 46.1, TALADOR },
+									{ 57.1, 48.0, TALADOR },
+									{ 57.6, 45.5, TALADOR },
+									{ 57.7, 45.4, TALADOR },
+									{ 59.2, 54.2, TALADOR },
+									{ 59.3, 56.4, TALADOR },
+									{ 59.3, 56.5, TALADOR },
+									{ 59.4, 54.9, TALADOR },
+									{ 59.5, 54.9, TALADOR },
+									{ 59.9, 55.4, TALADOR },
+									{ 60.2, 54.4, TALADOR },
+									{ 60.2, 57.1, TALADOR },
+									{ 60.7, 55.1, TALADOR },
+									{ 60.7, 56.1, TALADOR },
+									{ 61.4, 57.0, TALADOR },
+									{ 61.4, 58.0, TALADOR },
+									{ 61.5, 57.1, TALADOR },
+								},
+								["groups"] = {
+									i(111845),	-- Snapdragon Fond (QI!)
+									o(230820),	-- Snapdragon
+									o(230821),	-- Snapdragon
+								},
+							}),
+						},
 					}),
-					q(34801, {	-- A Pilgrimage Gone Awry?
+					q(34801, {	-- A Pilgrimage Gone Awry? [H]
 						["qg"] = 80028,	-- Nadur
 						["coord"] = { 61.3, 54.4, TALADOR },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							o_repeated({
+								["coords"] = {
+									{ 55.3, 49.8, TALADOR },
+									{ 56.0, 48.3, TALADOR },
+									{ 56.1, 48.5, TALADOR },
+									{ 56.1, 50.6, TALADOR },
+									{ 56.6, 46.1, TALADOR },
+									{ 57.1, 48.0, TALADOR },
+									{ 57.6, 45.5, TALADOR },
+									{ 57.7, 45.4, TALADOR },
+									{ 59.2, 54.2, TALADOR },
+									{ 59.3, 56.4, TALADOR },
+									{ 59.3, 56.5, TALADOR },
+									{ 59.4, 54.9, TALADOR },
+									{ 59.5, 54.9, TALADOR },
+									{ 59.9, 55.4, TALADOR },
+									{ 60.2, 54.4, TALADOR },
+									{ 60.2, 57.1, TALADOR },
+									{ 60.7, 55.1, TALADOR },
+									{ 60.7, 56.1, TALADOR },
+									{ 61.4, 57.0, TALADOR },
+									{ 61.4, 58.0, TALADOR },
+									{ 61.5, 57.1, TALADOR },
+								},
+								["groups"] = {
+									i(111845),	-- Snapdragon Fond (QI!)
+									o(230820),	-- Snapdragon
+									o(230821),	-- Snapdragon
+								},
+							}),
+						},
 					}),
 					q(34096, {	-- An Eye for a Spy
 						["sourceQuests"] = {

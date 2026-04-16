@@ -248,7 +248,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(61252, {	-- Call In a Favor
 				["sourceQuests"] = { 61230 },	-- Outside Influence
-				["provider"] = { "n", 173343 },	-- Ascended Bearer
+				["provider"] = { "n", 174343 },	-- Khaliiq <Vashj's Devoted>
 				["coord"] = { 54.2, 16.2, MALDRAXXUS },
 				["groups"] = {
 					i(181162),	-- Beacon Trigger (QI!)
@@ -421,7 +421,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["description"] = "Requires Renown 8.",
 				["sourceQuests"] = { 57648, },	-- The Impossible Plan
 				["provider"] = { "n", 161907 },	-- Baroness Draka
-				["coord"] = { 49.7, 50.6, MALDRAXXUS },
+				["coord"] = { 49.6, 50.4, SEAT_OF_THE_PRIMUS },
 			}),
 			q(59910, {	-- Fight and Flight
 				["sourceQuests"] = { 61145 },	-- Take The Fight To Them

@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(14218, {	-- By Blood and Ash
 							["sourceQuest"] = 14212,	-- Sacrifies
-							["qg"] = 35552,	-- Tobias Mistmantle
+							["qg"] = 35618,	-- Tobias Mistmantle
 							["coord"] = { 40.46, 39.37, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(14221, {	-- Never Surrender, Sometimes Retreat
 							["sourceQuest"] = 14218,	-- By Blood and Ash
-							["qg"] = 35552,	-- Tobias Mistmantle
+							["qg"] = 35618,	-- Tobias Mistmantle
 							["coord"] = { 40.46, 39.37, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),

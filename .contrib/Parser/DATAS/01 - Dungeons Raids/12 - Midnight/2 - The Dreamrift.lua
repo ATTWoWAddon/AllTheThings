@@ -78,6 +78,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				ach(61843),	-- Quel'Dressed
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
+				n(QUESTS, {
+					q(93923, {	-- Tenacity of the Shul'ka
+
+					}),
+				}),
 				BossOnly(CHIMAERUS, {
 					ach(61487),	-- Chimaerus, the Undreamt God
 					ach(61612),	-- Chimaerus the Undreamt God Guild Run

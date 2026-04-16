@@ -646,6 +646,11 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 				q(79988),	--
 			})),
+			-- 10.2.7
+			expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
+				q(81957),	-- Completed in Blackrock Depths
+			})),
+
 		}),
 		expansion(EXPANSION.TWW, {
 			-- 11.0.0

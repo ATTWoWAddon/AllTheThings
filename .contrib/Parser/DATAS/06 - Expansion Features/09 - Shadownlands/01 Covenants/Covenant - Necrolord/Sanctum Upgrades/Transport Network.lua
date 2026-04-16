@@ -32,7 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										58820,	-- Bindings of Fleshcrafting
 									},
 									["provider"] = { "n", 173306 },	-- Khaliiq
-									["coord"] = { 29.6, 44.0, MALDRAXXUS },
+									["coord"] = { 60.0, 33.6, SEAT_OF_THE_PRIMUS },
 								}),
 							}),
 						}),
