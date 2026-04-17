@@ -401,6 +401,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 48.3, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = MID_HERBALISM,
 				}),
+				n(256026, {	-- Irodalmin <Herbalism Supplies>
+					["coord"] = { 48.3, 51.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(264003, {	-- Midnight Herbalist's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42793,	-- Herbalism at Midnight
+						}),
+					},
+				}),
 			}),
 			prof(INSCRIPTION, {
 				n(243553, {	-- Zantasia <Inscription Trainer>
@@ -451,11 +459,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 42.6, 52.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = MID_MINING,
 				}),
+				-- Blizzard forgot to add this decor to vendor
+				-- n(241454, {	-- Zelan <Mining Supplies>
+				-- 	["coord"] = { 42.6, 53.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				-- 	["groups"] = {
+				-- 		i(264172, {	-- Midnight Miner's Shop Sign (DECOR!)
+				-- 			["sourceAchievement"] = 42791,	-- Mining at Midnight
+				-- 		}),
+				-- 	},
+				-- }),
 			}),
 			prof(SKINNING, {
 				n(243527, {	-- Tyn <Skinning Trainer>
 					["coord"] = { 43.2, 55.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = MID_SKINNING,
+				}),
+				n(256009, {	-- Rendron <Skinning Supplies>
+					["coord"] = { 43.1, 55.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(264173, {	-- Midnight Skinner's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42790,	-- Skinning at Midnight
+						}),
+					},
 				}),
 			}),
 			prof(TAILORING, {
