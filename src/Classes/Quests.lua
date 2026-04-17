@@ -816,12 +816,35 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 		-- a real quest type
 		local questType = questRef.__type
 		local realQuest = questType:sub(1,5) == "Quest"
+		-- Profession skill check: verify current character's profession skills meet requirements
+		local metSkill = true;
+		local requireSkill = questRef.requireSkill;
+		if requireSkill then
+			if app.IsRetail then
+				-- Retail uses Professions table (professionID -> boolean known)
+				metSkill = app.CurrentCharacter.Professions and app.CurrentCharacter.Professions[requireSkill];
+			else
+				-- Classic uses ActiveSkills table (spellID -> {skillRank, skillMaxRank})
+				local skills = app.CurrentCharacter.ActiveSkills and app.CurrentCharacter.ActiveSkills[requireSkill];
+				if skills then
+					local learnedAt = questRef.learnedAt;
+					if learnedAt then
+						metSkill = skills[1] >= learnedAt;
+					else
+						metSkill = true;
+					end
+				else
+					metSkill = false;
+				end
+			end
+		end
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange,filter,inGame,incomplete,metPrereq,questType:sub(1,5),realQuest)
 		if forceShow or not (
 			filter
 			and inGame
 			and incomplete
 			and metPrereq
+			and metSkill
 			and realQuest
 			-- debugging, show link for any accepted quest
 			-- and false
@@ -832,6 +855,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 				InGame = inGame and true or false,
 				Incomplete = incomplete and true or false,
 				PreReq = metPrereq and true or false,
+				Skill = metSkill and true or false,
 				RealQuest = realQuest and true or false,
 			};
 			app.Modules.Contributor.AddReportData(
