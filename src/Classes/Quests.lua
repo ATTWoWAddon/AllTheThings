@@ -1467,18 +1467,15 @@ local QuestWithReputationCostCollectibles = setmetatable({}, {
 			-- TODO: adjust when givesReputation exists
 			local maxReputation = quest.maxReputation
 			if maxReputation then
-				local faction = app.SearchForObject("factionID", maxReputation[1], "key");
-				if faction then
-					faction = app.CloneClassInstance(faction);
-				else
-					faction = app.CreateFaction(maxReputation[1]);
-				end
+				local faction = app.SearchForObject("factionID", maxReputation[1], "key") or app.CreateFaction(maxReputation[1])
 				if faction:CompareReputation(maxReputation[2]) or not faction.collectible then
 					costCollectibles = false;
 				else
-					faction.r = quest.r;
-					faction.c = quest.c;
-					costCollectibles = { faction }
+					if app.RecursiveGroupRequirementsFilter(quest) then
+						-- app.PrintDebug("Assign",quest.r,"/",quest.c,"to Faction",app:SearchLink(faction),"collectible via",app:SearchLink(quest))
+						costCollectibles = { faction }
+					-- else app.PrintDebug("Filtered",quest.r,"/",quest.c,"on Faction",app:SearchLink(faction),"collectible via",app:SearchLink(quest))
+					end
 				end
 			else
 				costCollectibles = false;
@@ -1488,6 +1485,10 @@ local QuestWithReputationCostCollectibles = setmetatable({}, {
 		return costCollectibles
 	end,
 });
+app.AddEventHandler("OnSettingsNeedsRefresh", function()
+	-- since the quest costCollectibles depends on Filtering, it needs to be reset when Settings are changed which can change filtering
+	wipe(QuestWithReputationCostCollectibles)
+end)
 local createQuest = app.CreateClass("Quest", "questID", {
 	CACHE = function() return CACHE end,
 	AsyncRefreshFunc = function()

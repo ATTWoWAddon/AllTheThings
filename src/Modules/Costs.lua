@@ -466,6 +466,9 @@ local function UpdateCosts()
 	UpdateRunner.Run(CostCalcStart)
 	-- app.PrintDebug("UpdateCosts",refresh)
 
+	-- TODO: Quests can be costs but they're never updated properly since they aren't cached as 'costable-quests' somewhere
+	-- like other objects are below
+
 	-- Get all itemIDAsCost entries
 	for itemID,refs in pairs(app.GetFieldContainer("itemIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
@@ -554,12 +557,16 @@ app.CollectibleAsCost = function(t)
 	CACChain[thash] = true
 	-- PrintDebug(t.keyval, "CAC:Check",app:SearchLink(t))
 	t._SettingsRefresh = appSettings;
+	local previsCost = t.isCost
 	t.isCost = nil;
 	-- this group should not be considered collectible as a cost if it is already obtained as a Toy
 	local toyItemID = t.toyID
 	if toyItemID and not PlayerIsMissingProviderItem(toyItemID) then
 		-- PrintDebug(toyItemID, "Not collectibleAsCost since Toy owned!",app:SearchLink(t))
 		CACChain[thash] = nil
+		if previsCost then
+			app.DirectGroupUpdate(t)
+		end
 		return
 	end
 	-- check the collectibles if any are considered collectible currently
@@ -581,12 +588,18 @@ app.CollectibleAsCost = function(t)
 			t.collectibleAsCost = nil;
 			CACChain[thash] = nil
 			-- PrintDebug(t.keyval, "CAC:Set",app:SearchLink(t),"from",app:SearchLink(ref),"w/req",collectible,"@",t._SettingsRefresh)
+			if not previsCost then
+				app.DirectGroupUpdate(t)
+			end
 			return true;
 		end
 	end
 	-- app.PrintDebug("CAC:nil",t.hash)
 	t.collectibleAsCost = nil;
 	CACChain[thash] = nil
+	if previsCost then
+		app.DirectGroupUpdate(t)
+	end
 end
 local function CalculateGroupsCostAmount(g, costID, includedHashes)
 	local o, subg, subcost, c
