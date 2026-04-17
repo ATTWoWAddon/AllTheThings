@@ -7,7 +7,16 @@ STORMARION_ASSAULT = createHeader({
 	icon = 7431083,
 	text = {
 		en = "Stormarion Assault",
+		de = "Angriff auf Sturmarion",
+		es = "Asalto de Tormentarion",
+		mx = "Ataque de Tormentarion",
+		fr = "Assaut de Fulgarion",
+		it = "Assalto di Buferion",
+		pt = "Assalto a Tempestrião",
+		ru = "Атака на Штормарион",
+		ko = "스토마리온 공격",
 		cn = "斯托玛兰突袭战",
+		tw = "風瑪利昂襲擊",
 	},
 });
 

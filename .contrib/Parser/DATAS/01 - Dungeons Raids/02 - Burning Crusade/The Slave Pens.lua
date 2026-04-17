@@ -111,7 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						GRUULS_LAIR,
 					},
 					-- #if ANYCLASSIC
-					["lockCriteria"] = { 1, "lvl", 70 },
+					["lockCriteria"] = { 1, "lvl", 71 },
 					-- #endif
 					["lvl"] = lvlsquish(70, 70, 30),
 					-- This quest started showing up again after SL level squish
@@ -143,7 +143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10900, {	-- The Mark of Vashj
 					["qg"] = 22421,	-- Skar'this the Heretic
 					-- #if ANYCLASSIC
-					["lockCriteria"] = { 1, "lvl", 70 },
+					["lockCriteria"] = { 1, "lvl", 71 },
 					-- #endif
 					["lvl"] = lvlsquish(70, 70, 10),
 					-- This quest started showing up again after SL level squish

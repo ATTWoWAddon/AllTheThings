@@ -566,7 +566,6 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(9731, {	-- Drain Schematics
-						["description"] = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved|r to start this quest.",
 						["sourceQuest"] = 9718,	-- Balance Must Be Preserved
 						["provider"] = { "i", 24330 },	-- Drain Schematics (QS!)
 						["coords"] = {	-- Areas where QS! can drop
@@ -618,7 +617,11 @@ root(ROOTS.Zones, {
 						["qg"] = 17925,	-- Gshaff
 						["coord"] = { 19.1, 49.4, ZANGARMARSH },
 						["minReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
-						["cost"] = { { "i", 24449, 6 } },	-- Fertile Spore
+						["groups"] = {
+							objective(1, {	-- 0/6	Fertile Spores
+								["provider"] = { "i", 24449 },	-- Fertile Spores
+							}),
+						},
 						["lvl"] = lvlsquish(62, 62, 10),
 						["_drop"] = { "g" },	-- Glowcap added from API
 					}),
@@ -2229,6 +2232,7 @@ root(ROOTS.Zones, {
 					}),
 					i(24330, {	-- Drain Schematics (QS!)
 						["cr"] = 18340,	-- Steam Pump Overseer
+						["description"] = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved (9720)|r to loot this item.",
 					}),
 					i(24449, {	-- Fertile Spore
 						["crs"] = {
