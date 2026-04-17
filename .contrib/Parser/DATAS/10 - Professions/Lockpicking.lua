@@ -1,11 +1,29 @@
 ExportDB.OnUpdateDB.ForLockpicking = [[~function(t)
-	t.collectible = _.Settings.Collectibles.Recipes;
-	local skills = _.CurrentCharacter.ActiveSkills[t.spellID];
-	t.collected = skills and skills[1] >= 300 or false;
+	if _.Settings.Collectibles.Recipes then
+		t.collectible = true;
+		local id = t.spellID;
+		local skills = _.CurrentCharacter.ActiveSkills[id];
+		if skills and skills[1] >= 300 then
+			t.collected = 1;
+			return;
+		end
+		if _.Settings.AccountWide.Recipes then
+			for guid,ch in pairs(ATTCharacterData) do
+				skills = ch.ActiveSkills and ch.ActiveSkills[id];
+				if skills and skills[1] >= 300 then
+					t.collected = 2;
+					return;
+				end
+			end
+		end
+		t.collected = false;
+	else
+		t.collectible = false;
+	end
 end]];
 ExportDB.OnTooltipDB.ForLockpicking = [[~function(t, tooltipInfo)
 	local skills = _.CurrentCharacter.ActiveSkills[t.spellID];
-	if skills then
+	if skills and skills[1] < 300 then
 		local data = t.lpdata;
 		if not data then
 			data = {};
