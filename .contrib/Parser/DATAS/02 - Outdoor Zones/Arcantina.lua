@@ -106,13 +106,36 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["provider"] = { "n", 250411 },	-- Nisha
 				["coord"] = { 45.0, 81.4, ARCANTINA },
 				["groups"] = {
-					i(253179),	-- Ornamental Proudmoore Anchor (DECOR!)
-					i(253700),	-- Sandy Vulpera Banner (DECOR!)
 					i(257758),	-- Empty Pouch (QI!)
 					i(257757),	-- Sack of Fragrant Sands (QI!)
-					o(607115, {	--
-						i(257756),	-- Handful of Sand (QI!)
+					o(607115, {	-- Loosened Sand
+						["coords"] = {
+							{ 43.0, 50.9, VOLDUN },
+							{ 43.2, 51.5, VOLDUN },
+							{ 43.3, 50.0, VOLDUN },
+							{ 43.6, 52.6, VOLDUN },
+							{ 43.8, 51.6, VOLDUN },
+							{ 44.0, 50.0, VOLDUN },
+							{ 44.0, 50.8, VOLDUN },
+							{ 44.6, 50.2, VOLDUN },
+							{ 45.2, 51.9, VOLDUN },
+							{ 45.4, 50.9, VOLDUN },
+						},
+						["groups"] = { i(257756) },	-- Handful of Sand (QI!)
 					}),
+					o(572036, {	-- Heavy Anchor
+						["coord"] = { 35.9, 36.1, VOLDUN },
+						["questID"] = 92382,
+						["groups"] = { i(250879) },	-- Heavy Anchor
+					}),
+					o(572037, {	-- Sandy Tapestry
+						["coord"] = { 58.6, 50.3, VOLDUN },
+						["questID"] = 92383,
+						["groups"] = { i(250880) },	-- Sandy Tapestry
+					}),
+					--
+					i(253179),	-- Ornamental Proudmoore Anchor (DECOR!)
+					i(253700),	-- Sandy Vulpera Banner (DECOR!)
 				},
 			}),
 			q(92322, {	-- Timear Foresees a Proof of Demise!
@@ -153,7 +176,10 @@ root(ROOTS.Zones, m(ARCANTINA, {
 						i(263872),	-- Lucifern (QI!)
 					}),
 					--
-					i(250876),	-- Evergreen Vine
+					o(572033, {	-- Evergreen Vine
+						["questID"] = 92379,
+						["groups"] = { i(250876) },	-- Evergreen Vine
+					}),
 					i(253175),	-- Hyjal Climbing Vine (DECOR!)
 				},
 			}),
@@ -165,15 +191,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			}),
 			-- Unsorted, these are part of the highly decorated achievement, need to be fitted into the rest of the structure of this file. Do not put them in HQT or you will get parser warnings.
 			hqt(92380),	-- Defense Fragment
-			hqt(92379, name(HEADERS.Item, 250876, {	-- Evergreen Vine
-				["cost"] = { { "i", 250876, 1 } },	-- Evergreen Vine
-			})),
-			hqt(92382, name(HEADERS.Item, 250879, {	-- Heavy Anchor
-				i(250879),	-- Heavy Anchor
-			})),
-			hqt(92383, name(HEADERS.Item, 250880, {	-- Sandy Tapestry
-				i(250880),	-- Sandy Tapestry
-			})),
 		}),
 		n(TREASURES, sharedData({["isDaily"] = true,}, {
 			o(571494, {	-- Giant Growth Potion
