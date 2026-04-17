@@ -677,7 +677,12 @@ root(ROOTS.Zones, {
 							["races"] = HORDE_ONLY,
 						}),
 						q(36828, {	-- Lumber, I Hardly Knew 'Er
-							["sourceQuest"] = 36575,	-- Strike While the Iron is Hot
+							["sourceQuests"] = {
+								35654,	-- Chapter I: Plant Food
+								35651,	-- Chapter II: The Harvest
+								35650,	-- Chapter III: Ritual of the Charred
+								35652,	-- Growing Wood
+							},
 							["qg"] = 85119,	-- Glirin
 							["coord"] = { 53.0, 59.8, GORGROND },
 							["races"] = ALLIANCE_ONLY,
