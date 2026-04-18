@@ -769,32 +769,84 @@ local function trieInsert(root, value)
     node.leaf = true
 end
 
+local function compressLeafChildren(children)
+    -- children are strings like "4", "5", "6"
+    table.sort(children)
+
+    local out = {}
+    local i = 1
+
+    while i <= #children do
+        local start = tonumber(children[i])
+        local finish = start
+        local j = i + 1
+
+        while j <= #children do
+            local nextVal = tonumber(children[j])
+            if nextVal == finish + 1 then
+                finish = nextVal
+                j = j + 1
+            else
+                break
+            end
+        end
+
+        if finish > start then
+            out[#out+1] = start .. "-" .. finish
+        else
+            out[#out+1] = tostring(start)
+        end
+
+        i = j
+    end
+
+    return out
+end
+
 local function serializeNode(node)
-    local children = {}
+    local leafChildren = {}
+    local branchChildren = {}
 
     for digit, child in pairs(node) do
         if digit ~= "leaf" then
-            children[#children+1] = digit .. serializeNode(child)
+            local sub = serializeNode(child)
+            if sub == "" then
+                -- leaf child
+                leafChildren[#leafChildren+1] = digit
+            else
+                -- branch child
+                branchChildren[#branchChildren+1] = digit .. sub
+            end
         end
     end
 
-    table.sort(children)
+    table.sort(branchChildren)
+
+    -- Only compress if ALL children are leaf nodes
+    local children
+    if #branchChildren == 0 and #leafChildren > 0 then
+        children = compressLeafChildren(leafChildren)
+    else
+        -- mix of leaf + branch → no compression
+        for _, d in ipairs(leafChildren) do
+            branchChildren[#branchChildren+1] = d
+        end
+        table.sort(branchChildren)
+        children = branchChildren
+    end
+
     local childStr = table.concat(children, ",")
 
     if node.leaf then
         if #children == 0 then
-            -- leaf with no children → just digit (handled by parent)
             return ""
         else
-            -- leaf with children → digit.(children)
             return ".(" .. childStr .. ")"
         end
     else
         if #children == 0 then
-            -- internal node with no children → digit()
             return "()"
         else
-            -- internal node with children → digit(children)
             return "(" .. childStr .. ")"
         end
     end
@@ -817,47 +869,66 @@ local function serializeTrieSet(tbl)
 end
 ser.trie = serializeTrieSet
 
-local function parseNode(str, i)
+local function parseChildToken(str, i)
+    -- token can be:
+    --   digit
+    --   digit-digit
+    --   digit(...)
+    --   digit.(...)
+    --
+    -- First read the digit
     local digit = str:sub(i,i)
     i = i + 1
 
+    -- Check for range: digit-digit
+    if str:sub(i,i) == "-" then
+        i = i + 1
+        local endDigit = str:sub(i,i)
+        i = i + 1
+        return { range = { tonumber(digit), tonumber(endDigit) } }, i
+    end
+
+    -- Check for leaf marker
     local leaf = false
     if str:sub(i,i) == "." then
         leaf = true
         i = i + 1
     end
 
-    local children = {}
+    -- Check for children
+    if str:sub(i,i) == "(" then
+        i = i + 1
+        local children = {}
 
-    -- If next char is not "(", then this is a leaf with no children
-    if str:sub(i,i) ~= "(" then
-        return { digit = digit, leaf = true, children = {} }, i
-    end
+        while true do
+            local c = str:sub(i,i)
 
-    -- Otherwise parse children
-    i = i + 1  -- skip "("
+            if c >= "0" and c <= "9" then
+                local child
+                child, i = parseChildToken(str, i)
+                children[#children+1] = child
 
-    while true do
-        local c = str:sub(i,i)
+            elseif c == ")" then
+                i = i + 1
+                break
 
-        if c >= "0" and c <= "9" then
-            local child
-            child, i = parseNode(str, i)
-            children[#children+1] = child
+            elseif c == "," then
+                i = i + 1
 
-        elseif c == ")" then
-            i = i + 1
-            break
-
-        elseif c == "," then
-            i = i + 1
-
-        else
-            error("Unexpected char: " .. c)
+            else
+                error("Unexpected char: " .. c)
+            end
         end
+
+        return { digit = digit, leaf = leaf, children = children }, i
     end
 
-    return { digit = digit, leaf = leaf, children = children }, i
+    -- Simple leaf
+    return { digit = digit, leaf = true, children = {} }, i
+end
+
+local function parseNode(str, i)
+    return parseChildToken(str, i)
 end
 
 local function parseForest(str)
@@ -880,6 +951,13 @@ local function parseForest(str)
 end
 
 local function expandTrie(node, prefix, out)
+    if node.range then
+        for d = node.range[1], node.range[2] do
+            out[tonumber(prefix .. d)] = true
+        end
+        return
+    end
+
     local newPrefix = prefix .. node.digit
 
     if node.leaf then
@@ -935,9 +1013,33 @@ function ATTSerialize_trie(tbl)
 		DevTools_Dump(deserialized)
 	end)
 end
--- 1,2,3,4,5,6,7,8,9(0(1(2)))
 function ATTDeserialize_trie(raw)
 	local deserialized = dser.trie(raw)
+	DevTools_Dump(deserialized)
+end
+
+
+--[[
+
+/run ATTSerialize_comp({[1]=1,[12]=1,[123]=1,[1234]=1,[1235]=1,[1236]=1})
+1:12:123:1234>1236
+
+]]
+
+
+function ATTSerialize_comp(tbl)
+	local keys = {};
+	for index,v in pairs(tbl) do
+		if v and index then tinsert(keys, tonumber(index)); end
+	end
+	local serialized = SerializeSequentialKeys(keys)
+	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+		local deserialized = DeserializeSequentialKeys(text)
+		DevTools_Dump(deserialized)
+	end)
+end
+function ATTDeserialize_comp(raw)
+	local deserialized = DeserializeSequentialKeys(raw)
 	DevTools_Dump(deserialized)
 end
 
