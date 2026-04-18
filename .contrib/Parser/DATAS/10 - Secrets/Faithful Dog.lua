@@ -2,25 +2,25 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 FAITHFUL_DOG = createHeader({
-	readable = "Faithful Dog Secret",
-	icon = 133210,
+	readable = "Faithful Dog",
+	icon = 538568,
 	text = {
-		en = "Faithful Dog Secret",
-		-- TODO: de = "",
-		es = "Secreto del Perro fiel",
-		mx = "Secreto del Perro fiel",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
+		en = "Faithful Dog",
+		de = "Treuer Hund",
+		es = "Perro fiel",
+		mx = "Perro fiel",
+		fr = "Chien fidèle",
+		it = "Cane Fedele",
+		ko = "충직한 개",
+		pt = "Cão Fiel",
+		ru = "Верный пес",
 		cn = "忠诚的狗",
 		tw = "忠實的狗",
 	},
 });
 
 root(ROOTS.Secrets, n(FAITHFUL_DOG, {
-	["description"] = "Multi-expansion secret to obtaining Dog as a companion pet",
+	["description"] = "Multi-expansion secret to obtaining Dog as a companion pet.",
 	["timeline"] = { ADDED_5_0_4 },
 	["groups"] = {
 		q(30526, {	-- Step 1: Lost and Lonely
@@ -37,7 +37,7 @@ root(ROOTS.Secrets, n(FAITHFUL_DOG, {
 		}),
 		q(46952, {	-- Step 2: Show the Pebble to Dog
 			["name"] = "|cFFFFFFFFStep 2|r: Show the Pebble to Dog",
-			["description"] = "You need to have an Herb Garden in your garrison. Show the Pebble to Dog by speaking with them. Do not throw the pebble at Dog.",
+			["description"] = "Find a Loose Pebble on the streets of (Legion) Dalaran. Build an Herb Garden in your garrison.\nSpeak with Dog and show him the Pebble. Do not throw the Pebble at Dog.",
 			["sourceQuests"] = {
 				30526,	-- Lost and Lonely
 				36404,	-- Clearing the Garden [A]
@@ -55,21 +55,19 @@ root(ROOTS.Secrets, n(FAITHFUL_DOG, {
 		}),
 		q(83093, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Step 3: Half-Buried Dog Bowl
 			["name"] = "|cFFFFFFFFStep 3|r: Interact with the Half-Buried Dog Bowl",
-			["description"] = "Interacting with the bowl near Dalaran's crash will send Dog running to you.",
+			["description"] = "Interact with the bowl near Dalaran's crash site to bring Dog out of hiding.",
 			["sourceQuests"] = { 46952 },
 			["provider"] = { "o", 452438 },	-- Half-Buried Dog Bowl
 			["coord"] = { 31.4, 51.3, ISLE_OF_DORN },
 		})),
 		q(83094, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Step 4: Interact with Dog
 			["name"] = "|cFFFFFFFFStep 4|r: Interact with Dog",
-			["description"] = "Interact with Dog to get them as a pet.",
+			["description"] = "Interact with Dog and <Pet his head> to get him as a pet.",
 			["sourceQuests"] = { 83093 },
 			["provider"] = { "n", 225486 },	-- Dog
 			["coord"] = { 31.4, 51.3, ISLE_OF_DORN },
 			["timeline"] = { ADDED_11_0_2 },
-			["groups"] = {
-				i(224766),	-- Faithful Dog (PET!)
-			},
+			["groups"] = { i(224766) },	-- Faithful Dog (PET!)
 		})),
 	},
 }));
