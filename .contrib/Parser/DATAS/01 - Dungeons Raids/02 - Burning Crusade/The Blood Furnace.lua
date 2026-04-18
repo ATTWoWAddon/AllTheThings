@@ -15,6 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(9607, {	-- Heart of Rage [Alliance]
 					["qg"] = 17479,	-- Gunny
+					["sourceQuest"] = 9575,	-- Weaken the Ramparts [Alliance]
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
@@ -29,6 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(9608, {	-- Heart of Rage [Horde]
 					["qg"] = 17558,	-- Caza'rez
+					["sourceQuest"] = 9572,	-- Weaken the Ramparts [Horde]
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
