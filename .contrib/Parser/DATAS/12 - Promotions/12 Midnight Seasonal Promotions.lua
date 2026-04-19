@@ -63,7 +63,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(264241, {	-- Crimson Bow Tie (COSMETIC!)
 				["description"] = "Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",
-				["timeline"] = { "removed 12.0.7.99999" },
+				["timeline"] = { "removed 12.0.5.99999" },
 			}),
 			n(RAZER, sharedDataSelf({
 				["timeline"] = { "removed 12.0.0.65655" },
@@ -166,10 +166,6 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "added 12.0.1.66192", "removed 12.1.0.99999" },
 				["u"] = REAL_MONEY,
 			}),
-			i(265394, {	-- Cuddly Pearl Grrgle (DECOR!)
-				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23th, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_12_0_5, "removed 12.0.7.99999" }, -- TODO: Timeline out. Available through May 21 at 3:00 pm PDT
-			}),
 			-- Season 1
 			i(246917, {	-- Thunder-ridged Elekk (MOUNT!)
 				["description"] = "Available from the pringleswow.de promotion in a limited quantity to the first 3000 players who scanned a QR code found around cities in Germany.",
@@ -209,7 +205,10 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "added 12.0.1.66838", "removed 12.0.5.99999" },
 				["u"] = REAL_MONEY,
 			}),
-
+			i(265394, {	-- Cuddly Pearl Grrgle (DECOR!)
+				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { ADDED_12_0_5, "removed 12.0.5.99999" }, -- TODO: Timeline out. Available through May 21 at 3:00 pm PDT
+			}),
 			-- Season 2
 
 			-- Season 3
