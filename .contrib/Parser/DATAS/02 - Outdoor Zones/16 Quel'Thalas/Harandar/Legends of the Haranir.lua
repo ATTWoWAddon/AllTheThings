@@ -371,7 +371,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91517, name(HEADERS.NPC,243542,{isWeekly=true})),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
 				q(91455, name(HEADERS.NPC,243514,{isWeekly=true})),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
 				q(91518, name(HEADERS.NPC,243544,{isWeekly=true})),	-- Triggered after chosing 'Root of the World' during 'Lost Legends' (89268)
-				q(91519, name(HEADERS.NPC,TODO,{isWeekly=true})),	-- Triggered after chosing 'Sky's Hope' during 'Lost Legends' (89268)
+				-- q(91519, name(HEADERS.NPC,TODO,{isWeekly=true})),	-- Triggered after chosing 'Sky's Hope' during 'Lost Legends' (89268)
 				-- one-time per character completions
 				q(91053, name(HEADERS.Quest,88993)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Wey'nan's Ward'
 				q(91054, name(HEADERS.Quest,88994)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Bubbling Haranir Cauldron'
@@ -379,7 +379,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91512, name(HEADERS.Quest,88997)),	-- Russula's Outreach completed
 				q(91456, name(HEADERS.Quest,88995)),	-- Aln'hara's Bloom completed
 				q(91513, name(HEADERS.Quest,88998)),	-- Root of the World completed
-				q(91515, name(HEADERS.Quest,TODO)),	-- Sky's Hope completed
+				-- q(91515, name(HEADERS.Quest,TODO)),	-- Sky's Hope completed
 				q(94966),	-- during 90745 [The Empty Cradle]
 			}),
 		}),
