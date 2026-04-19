@@ -192,6 +192,21 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			-- Unsorted, these are part of the highly decorated achievement, need to be fitted into the rest of the structure of this file. Do not put them in HQT or you will get parser warnings.
 			hqt(92380),	-- Defense Fragment
 		}),
+		n(TREASURES, {
+			-- TODO: objects which have cost of the items which are placed on them. idk why they went into ignored in contributor file...
+			-- they're achievement criteria they should be listed here with questID so parser can put the criteria under them
+			-- [572448] = true,	-- Ebon Banner (Arcantina)
+			-- [572450] = true,	-- Ancient Zandalari Scroll (Arcantina)
+			-- [572451] = true,	-- Evergreen Vine (Arcantina)
+			-- [572453] = true,	-- Pylon Fragment (Arcantina)
+			-- [572454] = true,	-- Weathered Tome (Arcantina)
+			-- [572456] = true,	-- Sandy Tapestry (Arcantina)
+			o(572455, {	-- Heavy Anchor
+				["questID"] = 92382,
+				["cost"] = {{"i",250879,1}},	-- Heavy Anchor
+				["coord"] = { 38.0, 74.0, ARCANTINA },
+			}),
+		}),
 		n(TREASURES, sharedData({["isDaily"] = true,}, {
 			o(571494, {	-- Giant Growth Potion
 				["coord"] = { 44.9, 60.5, ARCANTINA },
