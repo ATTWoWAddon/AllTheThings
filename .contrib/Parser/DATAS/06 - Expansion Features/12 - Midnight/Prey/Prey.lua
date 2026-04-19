@@ -605,6 +605,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(95002, name(HEADERS.Faction, 2764)),	-- 3rd per week
 			q(95003, name(HEADERS.Faction, 2764)),	-- 4th per week
 
+			q(93872),	-- Prey completed, 1st per week
+			q(93873),	-- Prey completed, 2nd per week
+			q(93874),	-- Prey completed, 3rd per week
+			q(93875),	-- Prey completed, 4th per week
+
 			q(93168),	-- Prey Complete - Normal #1
 			q(93853),	-- Prey Complete - Normal #2
 			q(93855),	-- Prey Complete - Normal #3
@@ -617,13 +622,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(93861),	-- Prey Complete - Nightmare #2
 			q(93863),	-- Prey Complete - Nightmare #3
 			q(93864),	-- Prey Complete - Nightmare #4
-
-			-- these fire when preys completed, but not entirely sure what they mean...
-			-- they are also account-wide
-			q(93872, {name="Why did this trigger? #1"}),	-- Prey Complete - ??
-			q(93873, {name="Why did this trigger? #2"}),	-- Prey Complete - ??
-			q(93874, {name="Why did this trigger? #3"}),	-- Prey Complete - ??
-			q(93875, {name="Why did this trigger? #4"}),	-- Prey Complete - ??
 		})),
 		-- One-Time
 		n(QUESTS, {
