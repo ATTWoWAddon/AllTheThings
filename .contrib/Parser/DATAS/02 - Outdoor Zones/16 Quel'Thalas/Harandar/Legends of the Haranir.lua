@@ -148,6 +148,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.07, {	-- Sky's Hope
+					q(88999, {	-- Sky's Hope
+						-- not 100% sure on this but it wasn't available with 'Root of the World'
+						["sourceQuest"] = 90743,	-- Ritual Reinforcement
+						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(91509, {	-- The Tale of a Stone Falls from the Sky
+						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+						["sourceQuest"] = 88999,	-- Sky's Hope
+						["provider"] = { "n", 241836 },	-- Ancient Visionstone
+						["coord"] = { 72.3, 55.7, MAP.MIDNIGHT.HARANDAR },
+					}),
 				}),
 			})),
 			n(QUESTS, {
@@ -160,8 +172,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						91054,	-- The Cauldron of Echoes
 						91511,	-- The Echoless Flame
 						91053,	-- Wey'nan's Ward
-						-- TODO	-- Root of the World
-						-- TODO	-- Sky's Hope
 					},
 				},{
 					-- Exo Note: Achievement has 4 criteria, hence I suspect it has 4 quests that need to be completed on the same character. They unlock by Completing the Relic quests from 'Legends Never Die'
@@ -352,6 +362,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 93486,
 						["coord"] = { 40.5, 34.7, MAP.MIDNIGHT.HARANDAR },
 					}),
+					-- I derped and didn't capture the object names -- Runaway
+					o(579201, {	--
+						["sourceQuest"] = 88999,	-- Sky's Hope
+						["questID"] = 93491,
+						["coord"] = { 71.9, 59.0, MAP.MIDNIGHT.HARANDAR },
+					}),
+					o(579202, {	--
+						["sourceQuest"] = 88999,	-- Sky's Hope
+						["questID"] = 93490,
+						["coord"] = { 73.5, 58.2, MAP.MIDNIGHT.HARANDAR },
+					}),
+					o(579203, {	--
+						["sourceQuest"] = 88999,	-- Sky's Hope
+						["questID"] = 93489,
+						["coord"] = { 73.5, 57.5, MAP.MIDNIGHT.HARANDAR },
+					}),
 				},
 			}),
 		}),
@@ -371,7 +397,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91517, name(HEADERS.NPC,243542,{isWeekly=true})),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
 				q(91455, name(HEADERS.NPC,243514,{isWeekly=true})),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
 				q(91518, name(HEADERS.NPC,243544,{isWeekly=true})),	-- Triggered after chosing 'Root of the World' during 'Lost Legends' (89268)
-				-- q(91519, name(HEADERS.NPC,TODO,{isWeekly=true})),	-- Triggered after chosing 'Sky's Hope' during 'Lost Legends' (89268)
+				q(91519, name(HEADERS.NPC,244728,{isWeekly=true})),	-- Triggered after chosing 'Sky's Hope' during 'Lost Legends' (89268)
 				-- one-time per character completions
 				q(91053, name(HEADERS.Quest,88993)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Wey'nan's Ward'
 				q(91054, name(HEADERS.Quest,88994)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Bubbling Haranir Cauldron'
@@ -379,7 +405,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91512, name(HEADERS.Quest,88997)),	-- Russula's Outreach completed
 				q(91456, name(HEADERS.Quest,88995)),	-- Aln'hara's Bloom completed
 				q(91513, name(HEADERS.Quest,88998)),	-- Root of the World completed
-				-- q(91515, name(HEADERS.Quest,TODO)),	-- Sky's Hope completed
+				q(91515, name(HEADERS.Quest,88999)),	-- Sky's Hope completed
 				q(94966),	-- during 90745 [The Empty Cradle]
 			}),
 		}),
