@@ -7623,7 +7623,7 @@ s(137761,27414,{b=1,f=6,lvl=65,q=3,u=17}),
 s(137758,27411,{b=1,f=4,lvl=65,q=3,u=17}),
 i(27413,{b=1,f=52,lvl=65,q=3,u=17}),
 i(27416,{b=1,f=53,lvl=65,q=3,u=17})}})}}),
-d(2,{cost={{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265845,1},{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={18371,18373},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30587,{b=1,q=4,u=17}),
@@ -7930,7 +7930,7 @@ s(136304,25957,{b=1,f=4,lvl=64,q=3,u=17}),
 i(25962,{b=1,f=52,lvl=64,q=3,u=17}),
 i(28490,{q=1,u=17}),
 r(28572,{b=1,itemID=22921,learnedAt=360,q=2,requireSkill=171,u=17})}})}}),
-d(2,{cost={{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265845,1},{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={18341,18343,18344,22927},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30584,{b=1,q=4,u=17}),
@@ -8161,7 +8161,7 @@ i(27925,{b=1,f=52,lvl=68,q=3,u=17}),
 s(138283,27936,{b=1,f=6,lvl=68,q=3,u=17}),
 i(27632,{q=1,u=17}),
 i(27991,{b=1,description="You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",q=1,rwp=40003,u=17})}})}}),
-d(2,{cost={{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265845,1},{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={18472,18473,23035},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30552,{b=1,q=4,u=17}),
@@ -8281,7 +8281,7 @@ s(138255,27908,{b=1,f=5,lvl=70,q=3,u=17}),
 s(138256,27909,{b=1,f=6,lvl=70,q=3,u=17}),
 s(138249,27902,{b=1,f=4,lvl=70,q=3,u=17}),
 r(31452,{b=1,itemID=24309,learnedAt=375,q=4,requireSkill=197,u=17})}})}}),
-d(2,{cost={{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265845,1},{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={18667,18708,18731,18732},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30559,{b=1,q=4,u=17}),
@@ -8540,12 +8540,12 @@ inst(256,{awp=20001,coords={
 [1944]={{46.06,51.74}}},lore="The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",lvl=58,mapID=261,savedInstanceID=542,u=17,["zone-text-areaID"]=3713,g={
 h(-45,{u=17,g={
 q(9607,{coords={
-[1944]={{56.4,66.7}}},lvl=59,qgs={17479},r=2,rwp=40300,u=17,g={
+[1944]={{56.4,66.7}}},lvl=59,qgs={17479},r=2,rwp=40300,sourceQuests={9575},u=17,g={
 i(25714,{b=1,f=51,q=3,u=17}),
 i(25713,{b=1,f=52,q=3,u=17}),
 s(136065,25712,{b=1,f=3,q=3,u=17})}}),
 q(9608,{coords={
-[1944]={{54.9,36}}},lvl=59,qgs={17558},r=1,rwp=40300,u=17,g={
+[1944]={{54.9,36}}},lvl=59,qgs={17558},r=1,rwp=40300,sourceQuests={9572},u=17,g={
 i(25714,{b=1,f=51,q=3,u=17}),
 i(25713,{b=1,f=52,q=3,u=17}),
 s(136065,25712,{b=1,f=3,q=3,u=17})}}),
@@ -9003,7 +9003,7 @@ s(135894,25540,{b=1,f=3,q=3,u=17})}}),
 q(10901,{lvl=70,maps={330,350},qgs={22421},rwp=30002,sourceQuests={10900},u=17,g={
 qo(1,{providers={{"i",31750}},u=17}),
 qo(2,{providers={{"i",31751}},u=17})}}),
-q(10900,{lc={1,"lvl",70},lvl=70,qgs={22421},u=17})}}),
+q(10900,{lc={1,"lvl",71},lvl=70,qgs={22421},u=17})}}),
 h(-63,{u=17,g={
 i(24368,{q=1,u=17})}}),
 d(1,{u=17,g={
@@ -9027,7 +9027,7 @@ s(134739,24362,{b=1,f=3,lvl=62,q=3,u=17}),
 s(134740,24363,{b=1,f=7,lvl=62,q=3,u=17}),
 s(134742,24365,{b=1,f=5,lvl=62,q=3,u=17}),
 s(134741,24364,{b=1,f=7,lvl=62,q=3,u=17})}})}}),
-d(2,{cost={{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265843,1},{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17941,17942,17991},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30603,{b=1,q=4,u=17}),
@@ -9120,7 +9120,7 @@ s(138142,27795,{b=1,f=4,lvl=70,q=3,u=17}),
 s(138221,27874,{b=1,f=6,lvl=70,q=3,u=17}),
 i(27805,{b=1,f=52,lvl=70,q=3,u=17}),
 r(31456,{b=1,itemID=24313,learnedAt=375,q=4,requireSkill=197,u=17})}})}}),
-d(2,{cost={{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265843,1},{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17796,17797,17798},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30551,{b=1,q=4,u=17}),
@@ -9208,7 +9208,7 @@ s(134838,24463,{b=1,f=7,lvl=63,q=3,u=17}),
 s(134856,24481,{b=1,f=4,lvl=63,q=3,u=17}),
 s(134840,24465,{b=1,f=6,lvl=63,q=3,u=17}),
 s(134841,24466,{b=1,f=5,lvl=63,q=3,u=17})}})}}),
-d(2,{cost={{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",265843,1},{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17770,17826,17882,18105},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30606,{b=1,q=4,u=17}),

@@ -1693,7 +1693,7 @@ cu(3154,{awp=120001,e=1}),
 crit(18308,{achID=6032,e=1,id=8}),
 o(209284)}}),
 q(29516,{awp=40300,coords={
-[407]={{55,71.6}}},e=1,isMonthly=1,maxReputation={909,42000},qgs={14833},qis={72050,72052},requireSkill=755,g={
+[407]={{55,70.6}}},e=1,isMonthly=1,maxReputation={909,42000},qgs={14833},qis={72050,72052},requireSkill=755,g={
 i(71083,{b=1,e=1,f=55}),
 cu(515,{e=1}),
 cu(3156,{awp=120001,e=1}),

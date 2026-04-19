@@ -3024,7 +3024,8 @@ q(28301,{awp=40003,c={7},coords={
 q(28299,{awp=40003,c={9},coords={
 [88]={{25.2,14.4}},
 [90]={{86,15.6}},
-[110]={{73.2,45.2}}},isBreadcrumb=1,lvl=20,maps={85},nextQuests={28459},qgs={4563,16648,43881},r=1}),
+[110]={{73.2,45.2}},
+[2393]={{50.9,61}}},isBreadcrumb=1,lvl=20,maps={85},nextQuests={28459},qgs={4563,16648,43881,241482},r=1}),
 q(28287,{awp=40003,c={7},coords={
 [87]={{55.2,29}},
 [89]={{43.8,78.8}}},isBreadcrumb=1,lvl=20,maps={84},nextQuests={28401},qgs={23127,52292},r=2}),
@@ -10261,9 +10262,9 @@ inst(256,{awp=20001,coords={
 [100]={{46.06,51.74}}},lore="The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",mapID=261,savedInstanceID=542,g={
 h(-45,{
 q(9607,{coords={
-[100]={{56.4,66.7}}},qgs={17479},r=2,rwp=40300,u=2}),
+[100]={{56.4,66.7}}},qgs={17479},r=2,rwp=40300,sourceQuests={9575},u=2}),
 q(9608,{coords={
-[100]={{54.9,36}}},qgs={17558},r=1,rwp=40300,u=2}),
+[100]={{54.9,36}}},qgs={17558},r=1,rwp=40300,sourceQuests={9572},u=2}),
 q(29539,{awp=40300,lvl=10,qgs={54629},r=2,g={
 i(25714,{awp=20001,b=1,f=51}),
 i(25713,{awp=20001,b=1,f=52}),
@@ -22473,7 +22474,7 @@ n(55500,{sharedDescription="|CFFFF0000Listen to Illidan, these mobs do have leth
 n(54927),
 n(54500)}})}}),
 inst(77,{awp=40100,coords={
-[95]={{81.8,64.3}}},isRaid=false,mapID=333,savedInstanceID=568,g={
+[95]={{81.8,64.3}}},mapID=333,savedInstanceID=568,g={
 d(2,{
 h(-45,{
 q(29188,{qgs={23761},u=2}),
@@ -22591,7 +22592,7 @@ s(35492,69580,{b=1,f=6,lvl=32,modID=2}),
 s(35494,69582,{b=1,f=7,lvl=32,modID=2}),
 s(35486,69574,{b=1,f=5,lvl=32,modID=2})}})})}}),
 inst(76,{awp=40100,coords={
-[50]={{72,32.9}}},isRaid=false,mapID=337,savedInstanceID=859,g={
+[50]={{72,32.9}}},mapID=337,savedInstanceID=859,g={
 d(2,{
 ah(17366,{awp=100007,description="To unlock the Zul'Gurub content of patch 10.0.7:\n\n1. Kill any two bosses to spawn Jin'do the Godbreaker. Cache of Madness does not count.\n\n2. Head to the Altar of the Light, and enter the ground floor using either side entrance.\n\n3. Look for a gong by the southern entrance. On the ground in front of it lays a Shattered Hakkari Bijou. Loot it.\n\n4. Go upstairs towards Jin'do the Godbreaker, and kill at least one Gurubashi Spirit Warrior on your way. (You will need it for the encounter!)\n\n5. Pull Jin'do the Godbreaker and burst him down until Phase 2 begins. (This phase begins even if you oneshot him.)\n\n6. Walk back downstairs and inside the ground floor where you found the Shattered Hakkari Bijou, and a Fragmented Hakkari Bijou lays in it's place. Loot it.\n\n7. Finish the boss encounter above by pulling a Gurubashi Spirit up to Hakkari's Chains, and wait until they break the chain protection with their ability 'Body Slam'. Then you can 'kill' the chains, and kill Jin'do.\n\n8. Combine the Shattered Hakkari Bijou with the Fragmented Hakkari Bijou, and accept the quest 'Restored Hakkari Bijou'.\n\n9. Travel to Dazar'alor in Zandalar. |CFFFF0000Beware Alliance players, this is a Horde city!|r You can get here using the ship service from Echo Isles in Durotar. From the Port of Zuldazar, fly eastwards to the southfacing building entrances. Above the transmogifier shop is the Yojamba Exchange, where you can turn in the quest at Rin'wosho the Trader.\n\n10. Zul'Gurub is now unlocked for your account, and the vendor Rin'Wosho with his wares can now be found at the beginning of the dungeon.\n\n11. Protip: Start the Gurubashi Tribute farm as early as possible as it is a decent source for coins. See the header for Brazier of Madness for more information.",type="a",g={
 h(-12,{
@@ -51728,8 +51729,8 @@ crit(53624,{achID=15693,id=1,u=2}),
 crit(53625,{achID=15693,id=2,u=2})}}),
 ach(15692,{awp=110205,maps={809},rwp=110207,u=2,g={
 cs(373262,{awp=90205,rwp=100000,u=2}),
-crit(53622,{achID=15692,id=1,u=2}),
-crit(53623,{achID=15692,id=2,u=2})}}),
+crit(53622,{achID=15692,awp=90205,id=1,rwp=100000,u=2}),
+crit(53623,{achID=15692,awp=90205,id=2,rwp=100000,u=2})}}),
 ach(15500,{u=2,g={
 cs(367416,{u=2}),
 crit(53264,{achID=15500,id=1,u=2}),
@@ -62943,16 +62944,20 @@ s(297845,250447,{f=1,lvl=90}),
 s(297851,250453,{f=23,lvl=90})}}),
 q(92560,{coords={
 [2395]={{45.2,60}}},crs={244762},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2827},{"pop"}}}),
-e(2828,{isRaid=1,isWeekly=1,npcID=248864,questID=92130,g={
+e(2828,{coords={
+[2405]={{49,86.8}}},isRaid=1,isWeekly=1,npcID=248864,questID=92130,g={
 s(297852,250454,{f=22,lvl=90}),
 i(250460,{f=52,lvl=90}),
 s(297846,250448,{f=28,lvl=90})}}),
-q(92636,{crs={248864},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2828},{"pop"}}}),
-e(2829,{isRaid=1,isWeekly=1,npcID=249776,g={
+q(92636,{coords={
+[2405]={{49,86.8}}},crs={248864},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2828},{"pop"}}}),
+e(2829,{coords={
+[2413]={{38.8,66.6}}},isRaid=1,isWeekly=1,npcID=249776,questID=92129,g={
 s(297853,250455,{f=29,lvl=90}),
 s(297850,250452,{f=25,lvl=90}),
 s(297847,250449,{f=20,lvl=90})}}),
-q(92034,{crs={249776},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2829},{"pop"}}})}}),
+q(92034,{coords={
+[2413]={{38.8,66.6}}},crs={249776},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2829},{"pop"}}})}}),
 inst(1308,{awp=120001,coords={
 [2424]={{52.6,86}}},isRaid=1,maps={2533,2534},g={
 h(-12,{
@@ -62968,6 +62973,8 @@ crit(113785,{achID=11761,awp=70200,id=73})}),
 gach(61609),
 gach(61610)}),
 d(109,{difficulties={17,14,15,16},g={
+h(-45,{
+q(93924,{lvl=90})}),
 e(2739,{npcID=249637,g={
 r(1230488,{itemID=256715,requireSkill=755,skillID=2914}),
 de(15467,{itemID=264187,spellID=1271354}),
@@ -63129,6 +63136,8 @@ mnt(1266980,{b=1,itemID=260887,lvl=10})}),
 ach(61843,{
 crit(113785,{achID=11761,awp=70200,id=73})})}),
 d(109,{difficulties={17,14,15,16},g={
+h(-45,{
+q(93923,{lvl=90})}),
 e(2795,{npcID=256116,g={
 ach(61487),
 gach(61612),
@@ -63288,7 +63297,7 @@ crit(113785,{achID=11761,awp=70200,id=73})}),
 gach(61606),
 gach(61607)}),
 o(532226,{catalystID=12,coords={
-[2393]={{40.3,65}}},description="This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
+[2393]={{40.3,65.5}}},description="This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",modelScale=4,g={
 d(17,{trackID=972,g={
 cl(6,{sym={{"sub","instance_tier",1307,17,6},{"sub","instance_tier",1314,17,6}},g={
 s(296599,249965,{b=1,c={6},f=3,lvl=90,modID=4}),
@@ -63554,6 +63563,8 @@ s(296469,249954,{b=1,c={1},f=7,lvl=90,modID=6}),
 s(296385,249947,{b=1,c={1},f=3,lvl=90,modID=6}),
 s(296397,249948,{b=1,c={1},f=7,lvl=90,modID=6})}})}})}}),
 d(109,{difficulties={17,14,15,16},g={
+h(-45,{
+q(93922,{lvl=90})}),
 e(2733,{npcID=240435,g={
 de(15761,{itemID=264497,spellID=1272060}),
 crit(109375,{achID=61366}),
@@ -64256,7 +64267,7 @@ cs(1254551)}),
 ach(61271,{
 cs(1254555)}),
 ach(61272,{
-cs(1254557)}),
+cs(159898)}),
 ach(61591,{
 title(682)}),
 ach(61587,{

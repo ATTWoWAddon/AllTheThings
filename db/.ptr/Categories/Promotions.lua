@@ -132,7 +132,7 @@ s(266784,235343,{awp=110207,description="Obtained through watching Twitch Stream
 mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,lvl=10,u=3})}}),
 h(-669,{awp=120000,g={
 de(15151,{description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369,u=2}),
-s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120007}),
+s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120005,u=2}),
 h(-708,{rwp=120000,u=2,g={
 mnt(367620,{itemID=190539,lvl=10,u=2}),
 mnt(153489,{b=1,itemID=107951,lvl=10,u=2}),
@@ -189,7 +189,8 @@ de(15550,{itemID=264278,spellID=1271559}),
 de(15229,{itemID=263383,spellID=1270445}),
 de(15551,{itemID=264279,spellID=1271560}),
 de(15552,{itemID=264280,spellID=1271561})}}),
-p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to May 15, 2026 (12pm ET). During the offer period, complete a purchase of eligible World of Warcraft items through the Blizzard Gear Store and receive a digital code.",itemID=262881,npcID=256663,rwp=120005,spellID=1269535,u=2})}}),
+p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to May 15, 2026 (12pm ET). During the offer period, complete a purchase of eligible World of Warcraft items through the Blizzard Gear Store and receive a digital code.",itemID=262881,npcID=256663,rwp=120005,spellID=1269535,u=2}),
+de(16818,{awp=120005,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265394,rwp=120005,spellID=1275771,u=2})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),

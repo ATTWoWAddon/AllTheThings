@@ -4061,7 +4061,7 @@ q(8193,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
 s(130584,19970,{b=1,e=6,f=57,learnedAt=300,q=3,requireSkill=356}),
 i(19979,{b=1,e=6,f=53,q=3}),
-crit(406,{achID=306,awp=30002,e=161,id=1,rwp=50004,u=30})}}),
+crit(406,{achID=306,awp=30002,e=161,id=1,u=30})}}),
 q(8225,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19803,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
 s(130583,19969,{b=1,e=6,f=4,lvl=35,q=2,requireSkill=356})}}),

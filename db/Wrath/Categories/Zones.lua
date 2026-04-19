@@ -6018,9 +6018,7 @@ q(7602,{c={9},coords={
 qo(1,{crs={6200,6201,6202},providers={{"i",18624}}}),
 qo(2,{crs={9862},providers={{"i",18622}}}),
 qo(3,{crs={6011},providers={{"i",18623}}})}}),
-q(939,{coords={
-[1448]={{39.6,22.2}}},crs={10648},lvl=49,providers={{"i",11668}},r=2,rwp=40003,sourceQuests={4906},g={
-qo(2,{crs={7105,7106,7107,7108,7109,7110,7111},providers={{"i",11674}}}),
+q(939,{lvl=49,providers={{"i",11668}},r=2,rwp=40003,sourceQuests={4906},g={
 qo(1,{crs={7105,7106,7107,7108,7109,7110,7111,14340},providers={{"i",11674}}})}}),
 q(5155,{coords={
 [1448]={{51.2,82.2}}},lvl=48,qgs={10922},rwp=40003,g={
@@ -6201,6 +6199,8 @@ h(-63,{
 i(13140,{b=1,crs={7114,7118,7120,9862},lvl=49,q=1,rwp=40003}),
 i(11515,{b=1,description="In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",providers={{"i",11511}},q=1,rwp=40003}),
 i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
+i(11668,{b=1,coords={
+[1448]={{39.6,22.2}}},crs={10648},lvl=49,q=1,r=2,rwp=40003}),
 i(20768,{crs={7092,7093,14345},q=1,sym={{"select","itemID",20769}}}),
 r(19078,{awp=100107,coords={
 [1448]={{61.6,7.4},{62.6,12.6}}},crs={7158},itemID=15752,learnedAt=285,q=3,requireSkill=165,rwp=40003}),
@@ -6390,7 +6390,8 @@ qo(1,{crs={7584},providers={{"i",9590}}}),
 qo(2,{crs={5276,5278,5357,5358,7997},providers={{"i",9589}}}),
 qo(3,{crs={2927,2928,2929,5300,5304,5305,5306,5347,7808},providers={{"i",9591}}}),
 qo(4,{crs={2927,2928,2929,5300,5304,5305,5306,5347,5357,5358,7584,7808},providers={{"i",9592}}})}}),
-q(7738,{crs={5296,5297,5299},lvl=40,providers={{"i",18972}},r=1,repeatable=1,rwp=40003}),
+q(7738,{coords={
+[1444]={{55.6,56.2}}},crs={5296,5297,5299},lvl=40,providers={{"i",18972}},r=1,repeatable=1,rwp=40003}),
 q(7735,{crs={5296,5297,5299},lvl=40,providers={{"i",18969}},r=2,repeatable=1,rwp=40003}),
 q(4130,{coords={
 [1444]={{32.5,43.8}}},lvl=40,qgs={7879},r=2,rwp=40003,sourceQuests={4129}}),
@@ -29544,7 +29545,7 @@ qo(1,{crs={18132,18133,18283,20197,20198},providers={{"i",24372}},u=17})}}),
 q(9716,{coords={
 [1946]={{78.4,62}}},lvl=61,qgs={17841},sourceQuests={9912},u=17}),
 q(9731,{coords={
-[1946]={{25.5,42.9},{62.1,40.7},{63.2,64.2},{70.5,80.5}}},description="Must have accepted or completed |cFFFFD700Balance Must Be Preserved|r to start this quest.",lvl=59,providers={{"i",24330}},sourceQuests={9718},u=17,g={
+[1946]={{25.5,42.9},{62.1,40.7},{63.2,64.2},{70.5,80.5}}},lvl=59,providers={{"i",24330}},sourceQuests={9718},u=17,g={
 i(27734,{b=1,f=52,q=2,u=17}),
 i(27735,{b=1,f=51,q=2,u=17}),
 i(27733,{b=1,f=52,q=2,u=17}),
@@ -29559,7 +29560,8 @@ q(9708,{coords={
 qo(1,{coords={
 [1946]={{32.8,33.8}}},crs={18117,18118,18159,20443},providers={{"i",24238}},u=17})}}),
 q(9806,{coords={
-[1946]={{19.1,49.4}}},cost={{"i",24449,6}},lvl=62,minReputation={970,0},qgs={17925},u=17}),
+[1946]={{19.1,49.4}}},lvl=62,minReputation={970,0},qgs={17925},u=17,g={
+qo(1,{providers={{"i",24449}},u=17})}}),
 q(9729,{coords={
 [1946]={{19.8,50.8}}},lvl=63,minReputation={970,42000},qgs={17877},u=17,g={
 s(135891,25537,{b=1,f=22,q=3,u=17}),
@@ -30074,7 +30076,7 @@ h(-63,{u=17,g={
 i(25459,{b=1,crs={18285},lvl=62,q=1,u=17}),
 i(24291,{crs={18124,18125,18127,19402,19519},q=1,u=17}),
 p(146,{awp=20100,crs={20197},description="This is an extremely rare drop.",itemID=29960,petTypeID=3,q=1,spellID=36034,u=17}),
-i(24330,{b=1,crs={18340},f=55,lvl=59,q=1,u=17}),
+i(24330,{b=1,crs={18340},description="Must have accepted or completed |cFFFFD700Balance Must Be Preserved (9720)|r to loot this item.",f=55,lvl=59,q=1,u=17}),
 i(24449,{crs={18128,18129,18134,18135,18280,18281},q=1,u=17}),
 i(24401,{description="Lauranna Thar'well in Cenarion Refugee will accept these and increase your reputation with Cenarion Expedition. The repeatable quest is only available until you become Honoured with the faction.",q=1,u=17})}})}})}}),
 m(113,{awp=30002,icon=236812,lore="Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",u=30,["zone-text-continent"]=1,g={

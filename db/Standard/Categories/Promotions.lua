@@ -132,7 +132,7 @@ s(266784,235343,{awp=110207,description="Obtained through watching Twitch Stream
 mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,lvl=10,u=3})}}),
 h(-669,{awp=120000,g={
 de(15151,{description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369,u=2}),
-s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120007}),
+s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120005}),
 h(-708,{rwp=120000,u=2,g={
 mnt(367620,{itemID=190539,lvl=10,u=2}),
 mnt(153489,{b=1,itemID=107951,lvl=10,u=2}),

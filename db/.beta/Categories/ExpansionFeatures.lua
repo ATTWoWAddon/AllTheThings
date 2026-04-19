@@ -6279,7 +6279,9 @@ de(1326,{awp=110207,cost={{"i",113681,75}},itemID=245437,spellID=1238569}),
 de(1352,{awp=110207,cost={{"c",824,100}},itemID=245442,spellID=1238575})}})})}),
 gb(126,{
 h(-45,{
-q(38290,{cost={{"i",109693,50}},isDaily=1,lvl=10,qgs={91020,91029},g={
+q(38290,{coords={
+[582]={{35.2,34}},
+[590]={{40.8,54.8}}},cost={{"i",109693,50}},isDaily=1,lvl=10,qgs={91020,91029},g={
 i(120945,{b=1})}}),
 q(36310,{coords={
 [582]={{45.4,53.4}}},lvl=10,qgs={83491},r=2,requireSkill=333,sourceQuests={36308},g={
@@ -26457,7 +26459,7 @@ q(61751,{coords={
 [1536]={{69.9,32.7}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={173492},sourceQuests={61749},g={
 i(182678,{customCollect={"SL_COV_NEC"}})}}),
 q(61252,{coords={
-[1536]={{54.2,16.2}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={173343},sourceQuests={61230},g={
+[1536]={{54.2,16.2}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={174343},sourceQuests={61230},g={
 i(181162,{customCollect={"SL_COV_NEC"},spellID=335664})}}),
 q(58833,{coords={
 [1698]={{49.6,50.6}}},customCollect={"SL_COV_NEC"},description="Requires Renown 20.",lvl=60,qgs={161907},sourceQuests={62391}}),
@@ -26519,7 +26521,7 @@ q(61226,{coords={
 q(58007,{coords={
 [1698]={{49.7,50.6}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={161907},sourceQuests={59555}}),
 q(62169,{coords={
-[1536]={{49.7,50.6}}},customCollect={"SL_COV_NEC"},description="Requires Renown 8.",lvl=60,qgs={161907},sourceQuests={57648}}),
+[1698]={{49.6,50.4}}},customCollect={"SL_COV_NEC"},description="Requires Renown 8.",lvl=60,qgs={161907},sourceQuests={57648}}),
 q(59910,{coords={
 [1536]={{36.3,36.6}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={161907},sourceQuests={61145}}),
 q(61518,{coords={
@@ -27217,7 +27219,9 @@ i(183127,{customCollect={"SL_COV_NEC"},questID=57859,spellID=340839}),
 crit(49716,{achID=14684,id=25})}}),
 q(60340,{coords={
 [1536]={{54.4,67.9}}},crs={173030},customCollect={"SL_COV_NEC"},isWeekly=1,lvl=60,qgs={159214},sourceQuests={58416},g={
-i(178788,{customCollect={"SL_COV_NEC"}}),
+o(352070,{coords={
+[1536]={{36.2,37.1},{36.3,38.1},{36.3,39.1},{36.8,38.1},{36.9,37.4},{36.9,39.7},{37.4,39.4},{37.5,38.3},{37.5,39.4},{37.5,39.5}}},customCollect={"SL_COV_NEC"},g={
+i(178788,{customCollect={"SL_COV_NEC"}})}}),
 i(183127,{customCollect={"SL_COV_NEC"},questID=57859,spellID=340839}),
 crit(49715,{achID=14684,id=24})}}),
 q(62407,{coords={
@@ -27554,7 +27558,7 @@ q(63055,{coords={
 h(-320,{customCollect={"SL_COV_NEC"},icon=3854019,g={
 h(-45,{customCollect={"SL_COV_NEC"},g={
 q(60184,{coords={
-[1536]={{29.6,44}}},customCollect={"SL_COV_NEC"},description="Becomes available during the campaign.",lvl=60,qgs={173306},sourceQuests={58820}})}})}})}})}}),
+[1698]={{60,33.6}}},customCollect={"SL_COV_NEC"},description="Becomes available during the campaign.",lvl=60,qgs={173306},sourceQuests={58820}})}})}})}})}}),
 h(-47,{customCollect={"SL_COV_NEC"},g={
 i(183703,{b=1,customCollect={"SL_COV_NEC"},description="Only Obtainable from Heirmir Soulbind.",spellID=342058})}}),
 h(-58,{customCollect={"SL_COV_NEC"},g={
@@ -32767,7 +32771,10 @@ mnt(374034,{b=1,cost={{"i",193053,20},{"i",201401,5},{"c",2003,750}},itemID=1927
 n(187408,{coords={
 [2022]={{47.7,83.2}}},sym={{"select","itemID",198725,198726,192761,192762}}}),
 n(187444,{coords={
-[2022]={{47.1,82.9}}},g={
+[2022]={{47.1,82.9},{58.4,67.6}},
+[2023]={{28,60.6}},
+[2024]={{18.8,24.4},{63,57.8}},
+[2025]={{52.6,69.8},{58.2,83}}},description="Travels to different inns each day.",g={
 i(196440,{f=55,lvl=10,spellID=11009}),
 i(194691,{f=55,lvl=10,spellID=369161}),
 i(201089,{b=1,f=55,lvl=10,spellID=394197})}}),
@@ -34238,7 +34245,7 @@ q(72444,{coords={
 toy(204686,{b=1,minReputation={2510,12}})}})}}),
 ah(75632,{awp=100107,icon=5172995,minReputation={2510,12},type="q",g={
 q(75632,{coords={
-[2112]={{61.4,39.1}}},lvl=10,minReputation={2510,12},qgs={187669},sourceQuests={72444}}),
+[2112]={{60.8,39.2}}},lvl=10,minReputation={2510,12},qgs={187669},sourceQuests={72444}}),
 q(75633,{coords={
 [2025]={{60.4,58.9}}},lvl=10,minReputation={2510,12},qgs={204574},sourceQuests={75632}}),
 q(75634,{coords={
@@ -37751,10 +37758,10 @@ q(70899,{awp=100005,coords={
 [2112]={{83.9,53.2}}},lvl=40,qgs={196475},sourceQuests={70881},g={
 i(199197,{b=1,spellID=391331}),
 i(200120,{spellID=389437}),
-crit(56170,{achID=16683,awp=100002,id=6})}}),
+crit(56170,{achID=16683,id=6})}}),
 q(70900,{awp=100005,coords={
 [2112]={{83.9,53.2}}},lvl=40,qgs={196475},sourceQuests={70899},g={
-crit(56171,{achID=16683,awp=100002,id=7})}}),
+crit(56171,{achID=16683,id=7})}}),
 q(72339,{altQuests={70900},awp=100005,coords={
 [2112]={{83.9,53.2}}},DisablePartySync=1,lvl=40,qgs={196475},sym={{"select","itemID",199197}},g={
 i(199197,{b=1,spellID=391331})}})}})}),
@@ -40535,7 +40542,7 @@ i(263466,{b=1,f=55,lvl=80,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"wher
 q(94834,{lvl=83,providers={{"i",265746}}}),
 h(-14,{
 q(91430,{coords={
-[2579]={{44.1,31.5}}}})})}),
+[2579]={{44.1,31.5}}},repeatable=1})})}),
 h(-58,{coords={
 [2395]={{56.6,65.8}},
 [2405]={{38.9,53.2}},
@@ -41627,7 +41634,7 @@ crit(105985,{achID=62176,id=2,providers={{"n",247860}}})}),
 ach(62351,{
 title(755)}),
 ach(62134),
-ach(62143,{crs={247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082},providers={{"s",1242005}},g={
+ach(62143,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082},providers={{"s",1242005}},g={
 crit(112616,{achID=62351,id=3})}}),
 ach(62138,{providers={{"n",260848}},g={
 crit(112620,{achID=62351,id=7})}})}),
@@ -41916,7 +41923,7 @@ i(262928,{b=1,f=55,lvl=80}),
 i(262938,{b=1,f=55,lvl=80}),
 i(269005,{f=55}),
 i(262936,{b=1,f=55,lvl=80}),
-i(255825,{crs={247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082},f=55,spellID=1259472})}),
+i(255825,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082},f=55,spellID=1259472})}),
 flt(56,{
 i(251283)}),
 flt(200),

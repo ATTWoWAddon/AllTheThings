@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,flt,h,i,mnt,p,q,s,settings,toy,x=_.CreateAchievement,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
+local flt,h,i,mnt,p,q,s,toy,x=_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.Promotions=
 h(-736,{SortPriority=90,g={
 h(-520,{
@@ -32,7 +32,12 @@ q(5805,{maps={1429},providers={{"i",14646}},races={1},u=2}),
 q(5842,{maps={1438},providers={{"i",14648}},races={4},u=2}),
 q(5843,{maps={1411},providers={{"i",14649}},races={2,8},u=2}),
 q(5844,{maps={1412},providers={{"i",14650}},races={6},u=2}),
-q(5847,{maps={1420},providers={{"i",14651}},races={5},u=2})}}),
+q(5847,{maps={1420},providers={{"i",14651}},races={5},u=2}),
+q(91888,{altQuests={91889},awp=11505,coords={
+[1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=30002,u=3,g={
+p(93,{awp=11101,b=1,itemID=13584,petTypeID=6,q=3,spellID=17708,u=3}),
+p(92,{awp=11101,b=1,itemID=13583,petTypeID=8,q=3,spellID=17707,u=3}),
+p(94,{awp=11101,b=1,itemID=13582,petTypeID=5,q=3,spellID=17709,u=3})}})}}),
 h(-47,{awp=11101,description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=20001,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278},u=2,g={
 p(93,{b=1,itemID=13584,petTypeID=6,q=3,spellID=17708,u=3}),
 p(92,{b=1,itemID=13583,petTypeID=8,q=3,spellID=17707,u=3}),
@@ -42,18 +47,20 @@ q(63865,{altQuests={63770},awp=20501,coords={
 p(131,{b=1,itemID=25535,petTypeID=2,q=3,spellID=32298,u=3}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
 p(111,{b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,spellID=24988,u=3}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=30400,u=3,g={
-h(-45,{u=3,g={
 q(63450,{altQuests={63448},coords={
-[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630},maps={1453,1454,1455,1456,1458,1947,1954},qgs={17249},u=3,g={
+[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=3,g={
 mnt(348459,{itemID=184865,lvl=30,u=3}),
 toy(184871,{u=3}),
-toy(38233,{b=1,q=3,u=3})}})}})}}),
+toy(38233,{b=1,q=3,u=3})}})}}),
 h(-694,{awp=20505,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",rwp=30002,u=3,g={
+q(93824,{altQuests={93823},coords={
+[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=3,g={
+i(262788,{u=3,g={
 mnt(1266345,{itemID=260438,u=3}),
 toy(260622,{u=3}),
 toy(260221,{u=3}),
 p(4962,{itemID=260433,u=3}),
-mnt(1266866,{itemID=260759,u=3})}})}}),
+mnt(1266866,{itemID=260759,u=3})}})}})}})}}),
 h(-546,{awp=11201,u=2,g={
 p(757,{b=1,itemID=19055,petTypeID=2,q=1,spellID=23531,u=2}),
 p(124,{b=1,itemID=22781,petTypeID=8,q=1,spellID=28505,u=2}),
@@ -69,12 +76,6 @@ h(-548,{
 mnt(49322,{awp=20403,b=1,itemID=37719,lvl=60,q=4,u=2}),
 p(170,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,petTypeID=5,q=3,spellID=45174,u=2}),
 p(171,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,petTypeID=5,q=3,spellID=45175,u=2})}),
-h(-550,{awp=20403,rwp=30002,g={
-ach(1637,{providers={{"i",37297}}}),
-p(179,{b=1,description="Win a battleground during the Spirit of Competition event to get this.",itemID=37297,petTypeID=2,q=3,spellID=48406}),
-ach(1636,{providers={{"i",36941}}}),
-s(145354,36941,{b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,q=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-p(180,{b=1,description="Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",itemID=37298,petTypeID=2,q=3,spellID=48408}))}}),
 h(-551,{awp=20001,u=2,g={
 flt(101,{u=2,g={
 p(156,{b=1,itemID=32588,petTypeID=8,q=3,spellID=40549,u=2}),

@@ -9883,9 +9883,9 @@ inst(256,{awp=20001,coords={
 [1944]={{46.06,51.74}}},lore="The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",lvl=58,mapID=261,savedInstanceID=542,u=17,["zone-text-areaID"]=3713,g={
 h(-45,{u=17,g={
 q(9607,{coords={
-[1944]={{56.4,66.7}}},lvl=59,qgs={17479},r=2,rwp=40300,u=2}),
+[1944]={{56.4,66.7}}},lvl=59,qgs={17479},r=2,rwp=40300,sourceQuests={9575},u=2}),
 q(9608,{coords={
-[1944]={{54.9,36}}},lvl=59,qgs={17558},r=1,rwp=40300,u=2}),
+[1944]={{54.9,36}}},lvl=59,qgs={17558},r=1,rwp=40300,sourceQuests={9572},u=2}),
 q(29539,{awp=40300,lvl=59,qgs={54629},r=2,u=17,g={
 i(25714,{awp=20001,b=1,f=51,q=3,u=17}),
 i(25713,{awp=20001,b=1,f=52,q=3,u=17}),
@@ -10422,7 +10422,7 @@ qo(2,{awp=20001,coords={
 q(10901,{lvl=70,maps={330,350},qgs={22421},rwp=30002,sourceQuests={10900},u=2,g={
 qo(1,{providers={{"i",31750}},u=17}),
 qo(2,{providers={{"i",31751}},u=17})}}),
-q(13431,{altQuests={10901},awp=30002,lc={1,"lvl",70},lvl=70,maps={330,350},qgs={22421},sourceQuests={10900},u=17,g={
+q(13431,{altQuests={10901},awp=30002,lc={1,"lvl",71},lvl=70,maps={330,350},qgs={22421},sourceQuests={10900},u=17,g={
 qo(1,{awp=20001,providers={{"i",31750}},u=17}),
 qo(2,{awp=20001,providers={{"i",31751}},u=17})}}),
 q(29565,{awp=40300,qgs={54667},u=17,g={
@@ -10431,7 +10431,7 @@ qo(2,{awp=20001,providers={{"i",72119}},u=17}),
 i(25541,{awp=20001,b=1,f=52,q=3,u=17}),
 s(138376,28029,{awp=20001,b=1,f=4,q=3,u=17}),
 s(135894,25540,{awp=20001,b=1,f=3,q=3,u=17})}}),
-q(10900,{lc={1,"lvl",70},lvl=70,qgs={22421},u=17})}}),
+q(10900,{lc={1,"lvl",71},lvl=70,qgs={22421},u=17})}}),
 h(-63,{u=17,g={
 i(24368,{q=1,u=17})}}),
 d(1,{u=17,g={
@@ -21298,7 +21298,7 @@ n(55500,{sharedDescription="|CFFFF0000Listen to Illidan, these mobs do have leth
 n(54927,{u=42}),
 n(54500,{u=42})}})}}),
 inst(77,{awp=40100,coords={
-[1942]={{81.8,64.3}}},isRaid=false,mapID=333,savedInstanceID=568,u=4001,g={
+[1942]={{81.8,64.3}}},mapID=333,savedInstanceID=568,u=4001,g={
 d(2,{u=4001,g={
 h(-45,{u=4001,g={
 q(29188,{qgs={23761},u=2}),
@@ -21417,7 +21417,7 @@ s(212333,69580,{b=1,f=6,lvl=85,q=4,u=4001}),
 s(212335,69582,{b=1,f=7,lvl=85,q=4,u=4001}),
 s(212327,69574,{b=1,f=5,lvl=85,q=4,u=4001})}})}})}}),
 inst(76,{awp=40100,coords={
-[1434]={{72,32.9}}},isRaid=false,mapID=337,savedInstanceID=859,u=4001,g={
+[1434]={{72,32.9}}},mapID=337,savedInstanceID=859,u=4001,g={
 d(2,{u=4001,g={
 h(-12,{u=4001,g={
 ach(5744,{u=4001})}}),

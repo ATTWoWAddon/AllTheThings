@@ -2287,7 +2287,7 @@ localize(L.HEADER_ICONS, {
 	[-499] = 441139,
 	[-500] = 441139,
 	[-501] = 441139,
-	[-503] = 132203,
+	[-503] = 538568,
 	[-504] = _.asset("holiday_secretsaz"),
 	[-505] = _.asset("holiday_secretsaz"),
 	[-506] = _.asset("holiday_secretsaz"),
@@ -2659,7 +2659,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=12,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=19,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=19,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=26,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=26,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026}),
@@ -2711,7 +2710,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=21,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=3,["monthDay"]=21,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=28,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=3,["monthDay"]=28,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=4,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=4,["monthDay"]=4,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=4,["monthDay"]=11,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=4,["monthDay"]=11,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=18,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=4,["monthDay"]=18,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -25823,10 +25823,6 @@ L.QUEST_NAMES = {
 	[93688] = "Acquire the Oddsight Focus",
 	[93764] = "Become a Radiant Singer",
 	[93765] = "Deliver the Orb of Shadows",
-	[93872] = "Why did this trigger? #1",
-	[93873] = "Why did this trigger? #2",
-	[93874] = "Why did this trigger? #3",
-	[93875] = "Why did this trigger? #4",
 	[93916] = "Sealing Orb #1, Unlocked",
 	[93917] = "Sealing Orb #2, Unlocked",
 	[93918] = "Sealing Orb #3, Unlocked",

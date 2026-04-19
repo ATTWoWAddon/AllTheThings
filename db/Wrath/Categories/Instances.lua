@@ -8692,12 +8692,12 @@ inst(256,{awp=20001,coords={
 [1944]={{46.06,51.74}}},lore="The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",lvl=58,mapID=261,savedInstanceID=542,u=17,["zone-text-areaID"]=3713,g={
 h(-45,{u=17,g={
 q(9607,{coords={
-[1944]={{56.4,66.7}}},lvl=59,qgs={17479},r=2,rwp=40300,u=17,g={
+[1944]={{56.4,66.7}}},lvl=59,qgs={17479},r=2,rwp=40300,sourceQuests={9575},u=17,g={
 i(25714,{b=1,f=51,q=3,u=17}),
 i(25713,{b=1,f=52,q=3,u=17}),
 s(136065,25712,{b=1,f=3,q=3,u=17})}}),
 q(9608,{coords={
-[1944]={{54.9,36}}},lvl=59,qgs={17558},r=1,rwp=40300,u=17,g={
+[1944]={{54.9,36}}},lvl=59,qgs={17558},r=1,rwp=40300,sourceQuests={9572},u=17,g={
 i(25714,{b=1,f=51,q=3,u=17}),
 i(25713,{b=1,f=52,q=3,u=17}),
 s(136065,25712,{b=1,f=3,q=3,u=17})}}),
@@ -9155,10 +9155,10 @@ s(135894,25540,{b=1,f=3,q=3,u=17})}}),
 q(10901,{lvl=70,maps={330,350},qgs={22421},rwp=30002,sourceQuests={10900},u=2,g={
 qo(1,{providers={{"i",31750}},u=17}),
 qo(2,{providers={{"i",31751}},u=17})}}),
-q(13431,{altQuests={10901},awp=30002,lc={1,"lvl",70},lvl=70,maps={330,350},qgs={22421},sourceQuests={10900},u=17,g={
+q(13431,{altQuests={10901},awp=30002,lc={1,"lvl",71},lvl=70,maps={330,350},qgs={22421},sourceQuests={10900},u=17,g={
 qo(1,{awp=20001,providers={{"i",31750}},u=17}),
 qo(2,{awp=20001,providers={{"i",31751}},u=17})}}),
-q(10900,{lc={1,"lvl",70},lvl=70,qgs={22421},u=17})}}),
+q(10900,{lc={1,"lvl",71},lvl=70,qgs={22421},u=17})}}),
 h(-63,{u=17,g={
 i(24368,{q=1,u=17})}}),
 d(1,{u=17,g={
