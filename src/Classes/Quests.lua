@@ -815,7 +815,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 		local metPrereq = not questRef.missingReqs;
 		-- a real quest type
 		local questType = questRef.__type
-		local realQuest = questType:sub(1,5) == "Quest"
+		local realQuest = questType:sub(1,5) == "Quest" or questType == "EncounterWithQuest"
 		-- Profession skill check: verify current character's profession skills meet requirements
 		local metSkill = true;
 		local requireSkill = questRef.requireSkill;
