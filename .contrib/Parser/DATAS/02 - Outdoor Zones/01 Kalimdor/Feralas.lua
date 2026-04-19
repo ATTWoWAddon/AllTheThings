@@ -1349,12 +1349,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25454, {	-- Perfect Yeti Hide
 					["sourceQuest"] = 25452,	-- The Mark of Quality
 					["provider"] = { "i", 55167 },	-- Perfect Yeti Hide
+					["coord"] = { 55.6, 56.2, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["crs"] = { 39896 },	-- Feral Scar Yeti
 				}),
 				q(7738, {	-- Perfect Yeti Hide
 					["provider"] = { "i", 18972 },	-- Perfect Yeti Hide
+					["coord"] = { 55.6, 56.2, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
