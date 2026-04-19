@@ -357,23 +357,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 93487,
 						["coord"] = { 41.5, 34.2, MAP.MIDNIGHT.HARANDAR },
 					}),
-					o(579183, {	--  Ways of the Roots--Part 3: Pruning
+					o(579183, {	-- Ways of the Roots--Part 3: Pruning
 						["sourceQuest"] = 88998,	-- Root of the World
 						["questID"] = 93486,
 						["coord"] = { 40.5, 34.7, MAP.MIDNIGHT.HARANDAR },
 					}),
-					-- I derped and didn't capture the object names -- Runaway
-					o(579201, {	--
+					o(579201, {	-- Awe'ohna's Path--Part 1: Questions
 						["sourceQuest"] = 88999,	-- Sky's Hope
 						["questID"] = 93491,
 						["coord"] = { 71.9, 59.0, MAP.MIDNIGHT.HARANDAR },
 					}),
-					o(579202, {	--
+					o(579202, {	-- Awe'ohna's Path--Part 2: Answers
 						["sourceQuest"] = 88999,	-- Sky's Hope
 						["questID"] = 93490,
 						["coord"] = { 73.5, 58.2, MAP.MIDNIGHT.HARANDAR },
 					}),
-					o(579203, {	--
+					o(579203, {	-- Awe'ohna's Path--Part 3: The Cradle
 						["sourceQuest"] = 88999,	-- Sky's Hope
 						["questID"] = 93489,
 						["coord"] = { 73.5, 57.5, MAP.MIDNIGHT.HARANDAR },

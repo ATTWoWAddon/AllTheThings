@@ -142,16 +142,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["provider"] = { "n", 264499 },	-- Archmage Lan'dalock
 				["coord"] = { 30.0, 19.3, ARCANTINA },
 				["groups"] = {
-					i(253176),	-- Ancient Zandalari Ritual Scroll (DECOR!)
 					i(255685),	-- Lan'dalock's Pocket Watch (QI!)
-					o(572032, {	--
-						["questID"] = 92378,
-						["groups"] = {
-							i(250875, {	-- Ancient Zandalari Scroll (QI!)
-								["coord"] = { 25.8, 43.4, ARCANTINA },
-							}),
-						},
+					o(572032, {	-- Ancient Zandalari Scroll
+						i(250875),	-- Ancient Zandalari Scroll
 					}),
+					--
+					i(253176),	-- Ancient Zandalari Ritual Scroll (DECOR!)
 				},
 			}),
 			q(92324, {	-- Uncrowned's Cold Case
@@ -196,15 +192,27 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			-- TODO: objects which have cost of the items which are placed on them. idk why they went into ignored in contributor file...
 			-- they're achievement criteria they should be listed here with questID so parser can put the criteria under them
 			-- [572448] = true,	-- Ebon Banner (Arcantina)
-			-- [572450] = true,	-- Ancient Zandalari Scroll (Arcantina)
-			-- [572451] = true,	-- Evergreen Vine (Arcantina)
 			-- [572453] = true,	-- Pylon Fragment (Arcantina)
-			-- [572454] = true,	-- Weathered Tome (Arcantina)
 			-- [572456] = true,	-- Sandy Tapestry (Arcantina)
+			o(572450, {	-- Ancient Zandalari Scroll
+				["questID"] = 92378,
+				["cost"] = { { "i", 250875, 1 } },	-- Ancient Zandalari Scroll
+				["coord"] = { 25.8, 43.4, ARCANTINA },
+			}),
+			o(572451, {	-- Evergreen Vine
+				["questID"] = 94976,
+				["cost"] = { { "i", 250876, 1 } },	-- Evergreen Vine
+				["coord"] = { 37.2, 29.5, ARCANTINA },
+			}),
 			o(572455, {	-- Heavy Anchor
 				["questID"] = 92382,
-				["cost"] = {{"i",250879,1}},	-- Heavy Anchor
+				["cost"] = { { "i", 250879, 1 } },	-- Heavy Anchor
 				["coord"] = { 38.0, 74.0, ARCANTINA },
+			}),
+			o(572454, {	-- Weathered Tome
+				["questID"] = 92381,
+				["cost"] = { { "i", 250878, 1 } },	-- Weathered Tome
+				["coord"] = { 62.1, 42.6, ARCANTINA },
 			}),
 		}),
 		n(TREASURES, sharedData({["isDaily"] = true,}, {
@@ -373,15 +381,3 @@ root(ROOTS.Zones, m(ARCANTINA, {
 	},
 }))
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(ARCANTINA, {
-		["icon"] = [[~_.asset("Arcantina")]],
-		["timeline"] = { ADDED_12_0_1_LAUNCH },
-		["groups"] = {
-			n(QUESTS, {
-				q(94976, name(HEADERS.Item, 250876)),	-- Evergreen Vine placement unlock
-				q(92381, name(HEADERS.Item, 250878)),	-- Weathered Tome placement unlock
-			}),
-		},
-	}),
-}));
