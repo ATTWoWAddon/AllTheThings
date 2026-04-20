@@ -129,7 +129,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(421736, {	-- Explorer Pepe
-				["coord"] = { 47.3, 82.7, THE_WAKING_SHORES },
+				["coords"] = {
+					{ 47.3, 82.7, THE_WAKING_SHORES },
+					-- #if AFTER 12.0.1
+					{ 54.8, 44.6, ARCANTINA },
+					-- #endif
+				},
 				["timeline"] = { ADDED_10_2_5 },
 				["groups"] = { i(213202) },	-- A Tiny Explorer's Hat (Pepe!)
 			}),

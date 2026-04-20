@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["provider"] = { "n", 250411 },	-- Nisha
 				["coord"] = { 45.0, 81.4, ARCANTINA },
 				["groups"] = {
-					i(257758),	-- Empty Pouch (QI!)
+					i(257758),	-- Empty Pouch (PQI!)
 					i(257757),	-- Sack of Fragrant Sands (QI!)
 					o(607115, {	-- Loosened Sand
 						["coords"] = {
@@ -125,12 +125,10 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					}),
 					o(572036, {	-- Heavy Anchor
 						["coord"] = { 35.9, 36.1, VOLDUN },
-						["questID"] = 92382,
 						["groups"] = { i(250879) },	-- Heavy Anchor
 					}),
 					o(572037, {	-- Sandy Tapestry
 						["coord"] = { 58.6, 50.3, VOLDUN },
-						["questID"] = 92383,
 						["groups"] = { i(250880) },	-- Sandy Tapestry
 					}),
 					--
@@ -193,7 +191,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			-- they're achievement criteria they should be listed here with questID so parser can put the criteria under them
 			-- [572448] = true,	-- Ebon Banner (Arcantina)
 			-- [572453] = true,	-- Pylon Fragment (Arcantina)
-			-- [572456] = true,	-- Sandy Tapestry (Arcantina)
 			o(572450, {	-- Ancient Zandalari Scroll
 				["questID"] = 92378,
 				["cost"] = { { "i", 250875, 1 } },	-- Ancient Zandalari Scroll
@@ -207,7 +204,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			o(572455, {	-- Heavy Anchor
 				["questID"] = 92382,
 				["cost"] = { { "i", 250879, 1 } },	-- Heavy Anchor
-				["coord"] = { 38.0, 74.0, ARCANTINA },
+				["coord"] = { 38.1, 73.9, ARCANTINA },
+			}),
+			o(572456, {	-- Sandy Tapestry
+				["questID"] = 92383,
+				["cost"] = { { "i", 250880, 1 } },	-- Sandy Tapestry
+				["coord"] = { 45.9, 82.4, ARCANTINA },
 			}),
 			o(572454, {	-- Weathered Tome
 				["questID"] = 92381,

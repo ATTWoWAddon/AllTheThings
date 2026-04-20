@@ -2952,6 +2952,7 @@ MobileDB.GameObject = {
 	[572094] = true,	-- Olemba Lumber
 	[572129] = true,	-- Olemba Lumber
 	[572254] = true,	-- Ironwood Lumber
+	[572465] = true,	-- Evergreen Vine [Arcantina, post quest object]
 	[572474] = true,	-- Arcane Mana Crystal (q:92397)
 	[572475] = true,	-- Weapons Rack (q:92397)
 	[572477] = true,	-- Weapons Rack (q:92397)
