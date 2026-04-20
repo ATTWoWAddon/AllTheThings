@@ -1860,11 +1860,11 @@ app:CreateWindow("Character Unique Data", {
 		local FieldToTypeKey = {
 			Achievements = "achievementID",
 			AzeriteEssenceRanks = "azeriteessenceID",
-			BattlePets = "speciesID", -- TODO: A lot of pets have unique spellID which is learned only by the character that got the pet
+			BattlePets = "speciesID",
 			Conduits = "conduitID",
 			Exploration = "explorationID",
 			Factions = "factionID",
-			FirstCrafts = "spellID",
+			FirstCrafts = "firstcraftID",
 			FlightPaths = "flightpathID",
 			Followers = "followerID",
 			GarrisonBuildings = "garrisonbuildingID",
@@ -1874,8 +1874,60 @@ app:CreateWindow("Character Unique Data", {
 			Quests = "questID",
 			Spells = "spellID",
 			Titles = "titleID",
-			-- Toys = "itemID", -- TODO: Toys should be cleared from CurrentCharacter
 		}
+
+		local InvalidFlags = {
+			repeatable = true,
+			isWorldQuest = true,
+			isDaily = true,
+			isWeekly = true,
+			isMonthly = true,
+			isYearly = true,
+		}
+
+		local ManualFilters = {
+			-- Battle Pets and Appearances have spellID sometimes, we should not care about that
+			spellID = {
+				BattlePetWithItem = true,
+				ItemWithAppearance = true,
+			},
+			-- HQTs on Mounts would be probably way to confusing for users
+			questID = {
+				MountWithItem = true,
+			},
+			-- Show only Garrison Buildings as GarrisonBuildingWithItem
+			garrisonbuildingID = {
+				GarrisonBuilding = true,
+			},
+		}
+
+		local function IsInvalidObject(obj)
+			if not obj then return false end
+			if obj.collectible == false or obj.u == 5 then return true end
+
+			for flag in pairs(InvalidFlags) do
+				if obj[flag] then
+					return true
+				end
+			end
+		end
+
+		local function IsManuallyFiltered(typeKey, obj)
+			if not obj then return false end
+			local rules = ManualFilters[typeKey]
+			return rules and rules[obj.__type] or false
+		end
+
+		local function ExistsOnAnotherCharacter(field, id, currentGuid)
+			for guid, character in pairs(CharacterData) do
+				if guid ~= currentGuid then
+					local t = character[field]
+					if t and t[id] then
+						return true
+					end
+				end
+			end
+		end
 
 		local function SearchTypeObject(typeKey, id)
 			local o = setmetatable({ OnUpdate = app.ForceShowUpdate, g = app.EmptyTable }, {
@@ -1889,43 +1941,15 @@ app:CreateWindow("Character Unique Data", {
 			return o
 		end
 
-		local function IsManuallyFiltered(typeKey, obj)
-			if not obj then return false end
-
-			local t = obj.__type
-
-			-- Battle Pets and Appearances have spellID sometimes, we should not care about that
-			if typeKey == "spellID" then
-				return t == "BattlePetWithItem" or t == "ItemWithAppearance"
-			-- HQTs on Mounts would be probably way to confusing for users
-			elseif typeKey == "questID" then
-				return t == "MountWithItem"
-			-- Show only Garrison Buildings as GarrisonBuildingWithItem
-			elseif typeKey == "garrisonbuildingID" then
-				return t == "GarrisonBuilding"
-			end
-			return false
-		end
-
 		local function IsUniqueToCharacter(field, id, currentGuid)
 			local typeKey = FieldToTypeKey[field]
 			if not typeKey then return false end
 
 			-- Get the actual object
-			local obj = SearchForObject(typeKey, id, "key")
-					or SearchForObject(typeKey, id, "field")
+			local obj = SearchTypeObject(typeKey, id)
 
 			-- Filter repeatable / non-collectible stuff
-			if obj and (
-				obj.repeatable
-				or obj.isWorldQuest
-				or obj.isDaily
-				or obj.isWeekly
-				or obj.isMonthly
-				or obj.isYearly
-				or obj.collectible == false
-				or obj.u == 5
-			) then
+			if IsInvalidObject(obj) then
 				return false
 			end
 
@@ -1935,11 +1959,8 @@ app:CreateWindow("Character Unique Data", {
 			end
 
 			-- Check whether any other character already has this ID
-			for guid, character in pairs(CharacterData) do
-				local t = character[field]
-				if guid ~= currentGuid and t and t[id] then
-					return false
-				end
+			if ExistsOnAnotherCharacter(field, id, currentGuid) then
+				return false
 			end
 
 			return true
