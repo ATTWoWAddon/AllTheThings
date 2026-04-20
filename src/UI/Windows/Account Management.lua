@@ -1053,13 +1053,13 @@ dser.numnumtbl = deserializeKV
 
 -- Debugging
 
-function ATTSerialize(tbl)
-	local serialized = ser.bitarray(tbl)
-	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
-		local ok, deserialized = pcall(dser.bitarray, text)
-		DevTools_Dump(deserialized)
-	end)
-end
+-- function ATTSerialize(tbl)
+-- 	local serialized = ser.bitarray(tbl)
+-- 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+-- 		local ok, deserialized = pcall(dser.bitarray, text)
+-- 		DevTools_Dump(deserialized)
+-- 	end)
+-- end
 
 --[[
 /run ATTSerialize_trie({[100]=1,[98239]=1,[9222]=1,[922]=1,[19992]=1})
@@ -1070,13 +1070,13 @@ end
 
 --]]
 
-function ATTSerialize_trie(tbl)
-	local serialized = ser.trie(tbl)
-	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
-		local deserialized = dser.trie(text)
-		DevTools_Dump(deserialized)
-	end)
-end
+-- function ATTSerialize_trie(tbl)
+-- 	local serialized = ser.trie(tbl)
+-- 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+-- 		local deserialized = dser.trie(text)
+-- 		DevTools_Dump(deserialized)
+-- 	end)
+-- end
 
 
 --[[
@@ -1087,17 +1087,17 @@ end
 ]]
 
 
-function ATTSerialize_comp(tbl)
-	local keys = {};
-	for index,v in pairs(tbl) do
-		if v and index then tinsert(keys, tonumber(index)); end
-	end
-	local serialized = SerializeSequentialKeys(keys)
-	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
-		local deserialized = DeserializeSequentialKeys(text)
-		DevTools_Dump(deserialized)
-	end)
-end
+-- function ATTSerialize_comp(tbl)
+-- 	local keys = {};
+-- 	for index,v in pairs(tbl) do
+-- 		if v and index then tinsert(keys, tonumber(index)); end
+-- 	end
+-- 	local serialized = SerializeSequentialKeys(keys)
+-- 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+-- 		local deserialized = DeserializeSequentialKeys(text)
+-- 		DevTools_Dump(deserialized)
+-- 	end)
+-- end
 
 --[[
 
@@ -1106,13 +1106,13 @@ end
 
 ]]
 
-function ATTSerialize_numnumtbl(tbl)
-	local serialized = ser.numnumtbl(tbl)
-	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
-		local ok, deserialized = pcall(dser.numnumtbl, text)
-		DevTools_Dump(deserialized)
-	end)
-end
+-- function ATTSerialize_numnumtbl(tbl)
+-- 	local serialized = ser.numnumtbl(tbl)
+-- 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+-- 		local ok, deserialized = pcall(dser.numnumtbl, text)
+-- 		DevTools_Dump(deserialized)
+-- 	end)
+-- end
 
 end
 local defaultDeserializer = function(field, currentValue, data)
