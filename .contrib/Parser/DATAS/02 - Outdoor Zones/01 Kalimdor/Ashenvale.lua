@@ -1894,8 +1894,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(24118, {	-- Signet of Argas
 							["timeline"] = { ADDED_2_0_1 },
 						}),
-						i(45476),	-- Seeker's Fel Spear (QI!)
-						i(45477),	-- Gorgannon's Flaming Blade (QI!)
 					},
 				}),
 				q(9522, {	-- Never Again! [Alliance]
