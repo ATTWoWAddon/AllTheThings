@@ -382,7 +382,7 @@ local function ProcessAddonMessageText(self, sender, text, responses)
 		local content = SplitString(",", message);
 		local handler = MESSAGE_HANDLERS[content[1]];
 		if handler then
-			app.PrintDebug("HANDLER[" .. content[1]  .. "]:", message);
+			-- app.PrintDebug("HANDLER[" .. content[1]  .. "]:", message);
 			handler(self, sender, content, responses);
 		else
 			app.print("Undefined handler", message);
@@ -733,6 +733,7 @@ local function serializeSet(tbl)
     local rows = {}
 
     for value in pairs(tbl) do
+		value = tonumber(value) or 0
         if value >= 1 and value <= 9999999 then
             local row = idiv(value - 1, ROW_BITS)
             local offset = (value - 1) % ROW_BITS
@@ -1022,6 +1023,32 @@ local function deserializeTrieSet(str)
 end
 dser.trie = deserializeTrieSet
 
+local function serializeKV(tbl)
+    local parts = {}
+
+    for k, v in pairs(tbl) do
+        parts[#parts+1] = tostring(k) .. rowIdSep .. tostring(v)
+    end
+
+    table.sort(parts) -- optional but makes output deterministic
+    return table.concat(parts, rowEnd)
+end
+ser.numnumtbl = serializeKV
+
+local function deserializeKV(str)
+    local tbl = {}
+
+    for pair in string.gmatch(str, "([^"..rowEnd.."]+)") do
+        local k, v = pair:match("([^:]+)"..rowIdSep.."([^:]+)")
+        if k and v then
+            tbl[tonumber(k)] = tonumber(v)
+        end
+    end
+
+    return tbl
+end
+dser.numnumtbl = deserializeKV
+
 
 
 -- Debugging
@@ -1032,10 +1059,6 @@ function ATTSerialize(tbl)
 		local ok, deserialized = pcall(dser.bitarray, text)
 		DevTools_Dump(deserialized)
 	end)
-end
-function ATTDeserialize(raw)
-	local deserialized = dser.bitarray(raw)
-	DevTools_Dump(deserialized)
 end
 
 --[[
@@ -1053,10 +1076,6 @@ function ATTSerialize_trie(tbl)
 		local deserialized = dser.trie(text)
 		DevTools_Dump(deserialized)
 	end)
-end
-function ATTDeserialize_trie(raw)
-	local deserialized = dser.trie(raw)
-	DevTools_Dump(deserialized)
 end
 
 
@@ -1079,9 +1098,20 @@ function ATTSerialize_comp(tbl)
 		DevTools_Dump(deserialized)
 	end)
 end
-function ATTDeserialize_comp(raw)
-	local deserialized = DeserializeSequentialKeys(raw)
-	DevTools_Dump(deserialized)
+
+--[[
+
+/run ATTSerialize_numnumtbl({[1]=5,[12]=12,[123]=-23,[1234]=45,[1235]=92103,[1236]=0})
+1234:45;1235:92103;1236:0;123:-23;12:12;1:5
+
+]]
+
+function ATTSerialize_numnumtbl(tbl)
+	local serialized = ser.numnumtbl(tbl)
+	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+		local ok, deserialized = pcall(dser.numnumtbl, text)
+		DevTools_Dump(deserialized)
+	end)
 end
 
 end
@@ -1094,7 +1124,7 @@ local defaultDeserializer = function(field, currentValue, data)
 		end
 		return;
 	end
-	app.PrintDebug("PARSE: ", field .. " (DEFAULT)", data[1]);
+	-- app.PrintDebug("PARSE: ", field .. " (DEFAULT)", data[1]);
 	local values = SplitString(":", data[1]);
 	local t = typeList[tonumber(values[1])];
 	if not t then
@@ -1162,6 +1192,23 @@ local defaultSerializer = function(field, value, timeStamp, lastUpdated)
 		end
 	end
 end
+-- Raw serialize/deserialize methods expect table/string inputs respectively. These wrappers help to convert from the message-based
+-- serializer transfer
+local wrappers = {
+	ser = {
+		numnumtbl = function(field, value, timeStamp, lastUpdated)
+			if timeStamp and lastUpdated >= timeStamp then return end
+
+			return field .. ";" .. typeListIDForType.table .. ":" .. ser.numnumtbl(value)
+		end,
+	},
+	dser = {
+		numnumtbl = function(field, currentValue, data)
+			local _,tblstr = (":"):split(data[1])
+			return dser.numnumtbl(tblstr)
+		end,
+	}
+}
 local deserializers = setmetatable({
 	ActiveSkills = function(field, currentValue, data)
 		if currentValue then
@@ -1177,7 +1224,10 @@ local deserializers = setmetatable({
 		end
 		return currentValue;
 	end,
+	__perf = ignoreField,			-- If performance data got captured to saved vars, ignore it
+	__perfscope = ignoreField,		-- If performance data got captured to saved vars, ignore it
 	CustomCollects = ignoreField,	-- Related to settings not collection
+	ArtifactRelicItemLevels = ignoreField,
 	gameAccountID = ignoreField,	-- This is a per-account setting, based on session context.
 	guid = ignoreField,				-- This is a no-brainer, already have it.
 	ignored = ignoreField,			-- This is a per-account setting
@@ -1261,7 +1311,8 @@ local deserializers = setmetatable({
 			currentValue[tableName] = tonumber(lastUpdated);
 		end
 		return currentValue;
-	end
+	end,
+	AzeriteEssenceRanks = wrappers.dser.numnumtbl,
 }, {
 	__index = function(t)
 		return defaultDeserializer;
@@ -1276,7 +1327,10 @@ local serializers = setmetatable({
 		end
 		if any then return str; end
 	end,
+	__perf = ignoreField,			-- If performance data got captured to saved vars, ignore it
+	__perfscope = ignoreField,		-- If performance data got captured to saved vars, ignore it
 	CustomCollects = ignoreField,	-- Related to settings not collection
+	ArtifactRelicItemLevels = ignoreField,
 	gameAccountID = ignoreField,
 	guid = ignoreField,
 	Lockouts = function(field, value, timeStamp, lastUpdated)
@@ -1325,6 +1379,7 @@ local serializers = setmetatable({
 		end
 		if any then return str; end
 	end,
+	AzeriteEssenceRanks = wrappers.ser.numnumtbl,
 
 	-- The main data package containing the simple stuff.
 	Summary = function(character, value)
@@ -1509,10 +1564,15 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 		local fieldData = SplitString(";", fieldDataString);
 		local fieldName = fieldData[1];
 		tremove(fieldData, 1);
-		local data = deserializers[fieldName](fieldName, character[fieldName], fieldData, character);
-		if data then
+		-- app.PrintDebug("deserialize",fieldName,"@",fieldDataString:len())
+		-- app.PrintTable(fieldData)
+		local ok, data = pcall(deserializers[fieldName], fieldName, character[fieldName], fieldData, character);
+		if ok and data then
 			character[fieldName] = data;
 			-- app.PrintDebug("deserialized",fieldName,"@",fieldDataString:len(),"into",app.CountTable(data),"keys")
+		elseif not ok then
+			app.report("Failed to deserialize",fieldName,fieldDataString)
+			app.print(data)
 		end
 	end
 
@@ -1558,10 +1618,14 @@ MESSAGE_HANDLERS.request = function(self, sender, content, responses)
 	local str = serializers.Summary(character);
 	if str then rawData = rawData .. "," .. str; end
 	for field,value in pairs(character) do
-		local str = serializers[field](field, value, timeStamps[field] or maxTimeStamp, lastUpdated);
-		if str then
+		local ok, str = pcall(serializers[field], field, value, timeStamps[field] or maxTimeStamp, lastUpdated);
+		if ok and str then
 			rawData = rawData .. "," .. str;
 			-- app.PrintDebug("serializing",field,"@",str:len(),"from",app.CountTable(value),"keys")
+		elseif not ok then
+			app.report("Failed to serialize",field,value)
+			app.print(str)
+			app.PrintTable(value)
 		end
 	end
 	tinsert(responses, { detail = character.text, msg = rawData });
