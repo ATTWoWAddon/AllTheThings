@@ -1,0 +1,3037 @@
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	
+		[290126] = {
+			readable = "Glittering Gunpowder",
+			model = 1982790,
+			text = {
+				en = "Glittering Gunpowder",
+				es = "Pólvora brillante",
+				de = "Glitzerndes Schießpulver",
+				fr = "Poudre à canon scintillante",
+				it = "Polvere da Sparo Splendente",
+				pt = "Pólvora Lampejante",
+				ru = "Сверкающий порох",
+				ko = "반짝이는 화약",
+				cn = "炫光火药",
+			},
+		},
+	
+		[290127] = {
+			readable = "Tortollan Chest",
+			model = 1706189,
+			text = {
+				en = "Tortollan Chest",
+				es = "Cofre tortoliano",
+				de = "Tortollanertruhe",
+				fr = "Coffre tortollan",
+				it = "Cassa dei Tortolliani",
+				pt = "Baú Tortollano",
+				ru = "Тортолланский сундук",
+				ko = "토르톨란 상자",
+				cn = "始祖龟宝箱",
+			},
+		},
+	
+		[290128] = {
+			readable = "Tortollan Chest",
+			model = 1706189,
+			text = {
+				en = "Tortollan Chest",
+				es = "Cofre tortoliano",
+				de = "Tortollanertruhe",
+				fr = "Coffre tortollan",
+				it = "Cassa dei Tortolliani",
+				pt = "Baú Tortollano",
+				ru = "Тортолланский сундук",
+				ko = "토르톨란 상자",
+				cn = "始祖龟宝箱",
+			},
+		},
+	
+		[290129] = {
+			readable = "War Supply Crate",
+			model = 307334,
+			text = {
+				en = "War Supply Crate",
+				es = "Cajón de suministros de guerra",
+				de = "Kiste mit Kriegsvorräten",
+				fr = "Caisse de fournitures de guerre",
+				it = "Cassa di Rifornimenti da Guerra",
+				pt = "Caixote de Suprimentos de Guerra",
+				ru = "Ящик с военными припасами",
+				ko = "전쟁 보급품 상자",
+				cn = "战争物资箱",
+			},
+		},
+	
+		[290133] = {
+			readable = "Wedding Gift",
+			model = 1401005,
+			text = {
+				en = "Wedding Gift",
+				es = "Regalo de bodas",
+				de = "Hochzeitsgeschenk",
+				fr = "Cadeau de mariage",
+				it = "Dono di Nozze",
+				pt = "Presente de Casamento",
+				ru = "Свадебный подарок",
+				ko = "결혼식 선물",
+				cn = "婚礼礼物",
+			},
+		},
+	
+		[290134] = {
+			readable = "War Supply Chest",
+			model = 341870,
+			text = {
+				en = "War Supply Chest",
+				es = "Cofre de suministros de guerra",
+				de = "Kiste mit Kriegsvorräten",
+				fr = "Coffre de fournitures de guerre",
+				it = "Cassa di Rifornimenti da Guerra",
+				pt = "Baú de Suprimentos de Guerra",
+				ru = "Сундук с военными припасами",
+			},
+		},
+	
+		[290135] = {
+			readable = "War Supply Chest",
+			model = 341746,
+			text = {
+				en = "War Supply Chest",
+				es = "Cofre de suministros de guerra",
+				de = "Kiste mit Kriegsvorräten",
+				fr = "Coffre de fournitures de guerre",
+				it = "Cassa di Rifornimenti da Guerra",
+				pt = "Baú de Suprimentos de Guerra",
+				ru = "Сундук с военными припасами",
+				ko = "전쟁 보급품 상자",
+			},
+		},
+	
+		[290136] = {
+			readable = "Rivermud",
+			model = 204112,
+			text = {
+				en = "Rivermud",
+				es = "Fangorrío",
+				de = "Flussschlamm",
+				fr = "Riveboue",
+				it = "Fangorivo",
+				pt = "Barro-de-rio",
+				ru = "Речной ил",
+				ko = "강진흙",
+			},
+		},
+	
+		[290138] = {
+			readable = "Bot Buster Bomb",
+			model = 254419,
+			text = {
+				en = "Bot Buster Bomb",
+				es = "Bomba destruyerrobots",
+				de = "Botbrecherbombe",
+				fr = "Bombe anti-robot",
+				it = "Bomba Robodemolitrice",
+				pt = "Bomba-robô Pressurizada",
+				ru = "Противоботовая бомба",
+				cn = "机械爆破弹",
+			},
+		},
+	
+		[290145] = {
+			readable = "Abandoned Effigy",
+			model = 1685301,
+			text = {
+				en = "Abandoned Effigy",
+				es = "Efigie abandonada",
+				de = "Zurückgelassenes Bildnis",
+				fr = "Effigie abandonnée",
+				it = "Effige Abbandonata",
+				pt = "Efígie Abandonada",
+				ru = "Покинутое чучело",
+				ko = "버려진 입상",
+				cn = "被抛弃的雕像",
+			},
+		},
+	
+		[290146] = {
+			readable = "Abandoned Effigy",
+			model = 1712574,
+			text = {
+				en = "Abandoned Effigy",
+				es = "Efigie abandonada",
+				de = "Zurückgelassenes Bildnis",
+				fr = "Effigie abandonnée",
+				it = "Effige Abbandonata",
+				pt = "Efígie Abandonada",
+				ru = "Покинутое чучело",
+				ko = "버려진 입상",
+				cn = "被抛弃的雕像",
+			},
+		},
+	
+		[290305] = {
+			readable = "Keystone",
+			model = 199976,
+			text = {
+				en = "Keystone",
+			},
+		},
+	
+		[290322] = {
+			readable = "Stone of Inner Binding",
+			model = 198951,
+			text = {
+				en = "Stone of Inner Binding",
+				es = "Piedra de Vínculo Interior",
+				de = "Stein der Inneren Bindung",
+				fr = "Pierre de Lien intérieure",
+				it = "Pietra del Vincolo Interno",
+				pt = "Pedra da União Interna",
+				ru = "Внутренний связывающий камень",
+				ko = "내부 봉인석",
+				cn = "内禁锢之石",
+			},
+		},
+	
+		[290323] = {
+			readable = "Stone of Outer Binding",
+			model = 198951,
+			text = {
+				en = "Stone of Outer Binding",
+			},
+		},
+	
+		[290324] = {
+			readable = "Stone of East Binding",
+			model = 198951,
+			text = {
+				en = "Stone of East Binding",
+			},
+		},
+	
+		[290326] = {
+			readable = "Third Witherbark Cage",
+			model = 200937,
+			text = {
+				en = "Third Witherbark Cage",
+				es = "Tercera jaula Secacorteza",
+				de = "Dritter Käfig der Bleichborken",
+				fr = "Troisième cage de Fanécorce",
+				it = "Terza Gabbia degli Scorzasecca",
+				pt = "Terceira Jaula Cascasseca",
+				ru = "Третья клетка племени Сухокожих",
+				cn = "第三个枯木牢笼",
+			},
+		},
+	
+		[290327] = {
+			readable = "Second Witherbark Cage",
+			model = 200937,
+			text = {
+				en = "Second Witherbark Cage",
+				es = "Segunda jaula Secacorteza",
+				de = "Zweiter Käfig der Bleichborken",
+				fr = "Deuxième cage de Fanécorce",
+				it = "Seconda Gabbia degli Scorzasecca",
+				pt = "Segunda Jaula Cascasseca",
+				ru = "Вторая клетка племени Сухокожих",
+				ko = "두번째 마른나무껍질 우리",
+			},
+		},
+	
+		[290328] = {
+			readable = "First Witherbark Cage",
+			model = 200937,
+			text = {
+				en = "First Witherbark Cage",
+				es = "Primera jaula Secacorteza",
+				de = "Erster Käfig der Bleichborken",
+				fr = "Première cage de Fanécorce",
+				it = "Prima Gabbia degli Scorzasecca",
+				pt = "Primeira Jaula Cascasseca",
+				ru = "Первая клетка племени Сухокожих",
+				ko = "첫번째 마른나무껍질 우리",
+			},
+		},
+	
+		[290329] = {
+			readable = "Sharpbeak's Cage",
+			model = 200937,
+			text = {
+				en = "Sharpbeak's Cage",
+				es = "Jaula de Picoafilado",
+				de = "Scharfschnabels Käfig",
+				fr = "Cage de Bec-Tranchant",
+				it = "Gabbia di Beccaguzzo",
+				pt = "Gaiola do Bicoafiado",
+				ru = "Клетка Остроклюва",
+				ko = "뾰족부리의 우리",
+			},
+		},
+	
+		[290331] = {
+			readable = "Shards of Myzrael",
+			model = 202443,
+			text = {
+				en = "Shards of Myzrael",
+			},
+		},
+	
+		[290340] = {
+			readable = "Venom Bottle",
+			model = 198061,
+			text = {
+				en = "Venom Bottle",
+				es = "Botella de veneno",
+				de = "Giftflasche",
+				fr = "Bouteille de venin",
+				it = "Bottiglia di Veleno",
+				pt = "Garrafa de Peçonha",
+				ru = "Флакон с ядом",
+				ko = "독병",
+			},
+		},
+	
+		[290341] = {
+			readable = "Venom Bottle",
+			model = 198061,
+			text = {
+				en = "Venom Bottle",
+				es = "Botella de veneno",
+				de = "Giftflasche",
+				fr = "Bouteille de venin",
+				it = "Bottiglia di Veleno",
+				pt = "Garrafa de Peçonha",
+				ru = "Флакон с ядом",
+				ko = "독병",
+			},
+		},
+	
+		[290342] = {
+			readable = "Venom Bottle",
+			model = 198061,
+			text = {
+				en = "Venom Bottle",
+				es = "Botella de veneno",
+				de = "Giftflasche",
+				fr = "Bouteille de venin",
+				it = "Bottiglia di Veleno",
+				pt = "Garrafa de Peçonha",
+				ru = "Флакон с ядом",
+				ko = "독병",
+			},
+		},
+	
+		[290343] = {
+			readable = "Venom Bottle",
+			model = 198061,
+			text = {
+				en = "Venom Bottle",
+				es = "Botella de veneno",
+				de = "Giftflasche",
+				fr = "Bouteille de venin",
+				it = "Bottiglia di Veleno",
+				pt = "Garrafa de Peçonha",
+				ru = "Флакон с ядом",
+				cn = "毒液瓶",
+			},
+		},
+	
+		[290344] = {
+			readable = "Venom Bottle",
+			model = 198061,
+			text = {
+				en = "Venom Bottle",
+				es = "Botella de veneno",
+				de = "Giftflasche",
+				fr = "Bouteille de venin",
+				it = "Bottiglia di Veleno",
+				pt = "Garrafa de Peçonha",
+				ru = "Флакон с ядом",
+				ko = "독병",
+			},
+		},
+	
+		[290345] = {
+			readable = "Venom Bottle",
+			model = 198061,
+			text = {
+				en = "Venom Bottle",
+				es = "Botella de veneno",
+				de = "Giftflasche",
+				fr = "Bouteille de venin",
+				it = "Bottiglia di Veleno",
+				pt = "Garrafa de Peçonha",
+				ru = "Флакон с ядом",
+				ko = "독병",
+			},
+		},
+	
+		[290346] = {
+			readable = "Venom Bottle",
+			model = 198061,
+			text = {
+				en = "Venom Bottle",
+				es = "Botella de veneno",
+				de = "Giftflasche",
+				fr = "Bouteille de venin",
+				it = "Bottiglia di Veleno",
+				pt = "Garrafa de Peçonha",
+				ru = "Флакон с ядом",
+				ko = "독병",
+			},
+		},
+	
+		[290347] = {
+			readable = "Venom Bottle",
+			model = 198061,
+			text = {
+				en = "Venom Bottle",
+				es = "Botella de veneno",
+				de = "Giftflasche",
+				fr = "Bouteille de venin",
+				it = "Bottiglia di Veleno",
+				pt = "Garrafa de Peçonha",
+				ru = "Флакон с ядом",
+				ko = "독병",
+			},
+		},
+	
+		[290348] = {
+			readable = "Venom Bottle",
+			model = 198061,
+			text = {
+				en = "Venom Bottle",
+				es = "Botella de veneno",
+				de = "Giftflasche",
+				fr = "Bouteille de venin",
+				it = "Bottiglia di Veleno",
+				pt = "Garrafa de Peçonha",
+				ru = "Флакон с ядом",
+				ko = "독병",
+			},
+		},
+	
+		[290419] = {
+			readable = "Wanted Poster",
+			icon = 134939,
+			model = 1349040,
+			text = {
+				en = "Wanted Poster",
+				es = "Cartel de Se busca",
+				de = "Steckbrief",
+				fr = "Avis de recherche",
+				it = "Manifesto dei Ricercati",
+				pt = "Cartaz de Procura-se",
+				ru = "Плакат \"Разыскивается\"",
+				ko = "현상 수배 전단",
+				cn = "通缉布告",
+			},
+		},
+	
+		[290427] = {
+			readable = "Hanging Rope",
+			model = 897673,
+			text = {
+				en = "Hanging Rope",
+			},
+		},
+	
+		[290428] = {
+			readable = "Lesser Effigy",
+			model = 1685301,
+			text = {
+				en = "Lesser Effigy",
+				es = "Efigie inferior",
+				de = "Geringes Bildnis",
+				fr = "Effigie inférieure",
+				it = "Effige Inferiore",
+				pt = "Efígie Inferior",
+				ru = "Небольшое чучело",
+				ko = "하급 입상",
+				cn = "小型雕像",
+			},
+		},
+	
+		[290429] = {
+			readable = "Cannon",
+			model = 653241,
+			text = {
+				en = "Cannon",
+				es = "Cañón",
+				de = "Kanone",
+				fr = "Canon",
+				it = "Cannone",
+				pt = "Canhão",
+				ru = "Пушка",
+				ko = "대포",
+				cn = "火炮",
+			},
+		},
+	
+		[290443] = {
+			readable = "Witch Banner",
+			model = 1695385,
+			text = {
+				en = "Witch Banner",
+				es = "Estandarte de bruja",
+				de = "Hexenbanner",
+				fr = "Bannière de sorcière",
+				it = "Stendardo della Strega",
+				pt = "Estandarte de Bruxa",
+				ru = "Знамя ведьм",
+				ko = "마녀 깃발",
+				cn = "女巫旗帜",
+			},
+		},
+	
+		[290445] = {
+			readable = "Hanging Witch Effigy",
+			model = 1675537,
+			text = {
+				en = "Hanging Witch Effigy",
+				es = "Efigie de bruja colgante",
+				de = "Hängendes Hexenbildnis",
+				fr = "Effigie de sorcière suspendue",
+				it = "Effige della Strega Appesa",
+				pt = "Efígie da Bruxa Enforcada",
+				ru = "Подвешенное ведьмовское чучело",
+				ko = "매달린 마녀 입상",
+				cn = "悬挂的女巫雕像",
+			},
+		},
+	
+		[290446] = {
+			readable = "Summoning Circle",
+			model = 1681402,
+			text = {
+				en = "Summoning Circle",
+				es = "Círculo de invocación",
+				de = "Beschwörungskreis",
+				fr = "Cercle d’invocation",
+				it = "Circolo d'Evocazione",
+				pt = "Círculo de Evocação",
+				ru = "Круг призыва",
+				ko = "소환진",
+				cn = "召唤法阵",
+			},
+		},
+	
+		[290449] = {
+			readable = "Antlered Skull",
+			model = 1720325,
+			text = {
+				en = "Antlered Skull",
+				es = "Calavera cornamentada",
+				de = "Schädel mit Geweih",
+				fr = "Crâne à ramures",
+				it = "Teschio con Corna",
+				pt = "Caveira Galhada",
+				ru = "Рогатый череп",
+				ko = "뿔 달린 두개골",
+				cn = "长角的颅骨",
+			},
+		},
+	
+		[290452] = {
+			readable = "Seafarer's Dubloon",
+			model = 916363,
+			text = {
+				en = "Seafarer's Dubloon",
+				es = "Doblón de navegante",
+				de = "Seefahrerdublone",
+				fr = "Doublon de marin",
+				it = "Doblone del Marinaio",
+				pt = "Dobrão do Marinheiro",
+				ru = "Дублон мореплавателя",
+				ko = "뱃사람의 금화",
+				cn = "海员达布隆币",
+			},
+		},
+	
+		[290456] = {
+			readable = "The Glaive of Vol'jin",
+			model = 1446904,
+			text = {
+				en = "The Glaive of Vol'jin",
+				es = "Guja de Vol'jin",
+				de = "Vol'jins Gleve",
+				fr = "Glaive de Vol’jin",
+				it = "Lama di Vol'jin",
+				pt = "A Glaive de Vol'jin",
+				ru = "Боевой клинок Вол'джина",
+				ko = "볼진의 글레이브",
+			},
+		},
+	
+		[290463] = {
+			readable = "Crate of Bugs",
+			model = 123306,
+			text = {
+				en = "Crate of Bugs",
+				es = "Caja de bichos",
+				de = "Kiste voll Käfer",
+				fr = "Caisse d’insectes",
+				it = "Cassa di Insetti",
+				pt = "Caixote de Insetos",
+				ru = "Ящик с жуками",
+				ko = "벌레가 든 상자",
+				cn = "甲虫箱",
+			},
+		},
+	
+		[290465] = {
+			readable = "Town Hall",
+			text = {
+				en = "Town Hall",
+				es = "Concejo",
+				de = "Rathaus",
+				fr = "Hôtel de ville",
+				it = "Palazzo",
+				pt = "Prefeitura",
+				ru = "Ратуша",
+				ko = "마을회관",
+				cn = "议政厅",
+			},
+		},
+	
+		[290466] = {
+			readable = "Keep",
+			text = {
+				en = "Keep",
+				es = "Fortaleza",
+				de = "Burg",
+				fr = "Donjon",
+				it = "Fortezza",
+				pt = "Bastilha",
+				ru = "Форт",
+				ko = "성채",
+				cn = "要塞",
+			},
+		},
+	
+		[290467] = {
+			readable = "Castle",
+			text = {
+				en = "Castle",
+				es = "Castillo",
+				de = "Schloss",
+				fr = "Château",
+				it = "Castello",
+				pt = "Castelo",
+				ru = "Замок",
+				ko = "성",
+				cn = "城堡",
+			},
+		},
+	
+		[290468] = {
+			readable = "Town Hall Foundation",
+			text = {
+				en = "Town Hall Foundation",
+				es = "Cimientos del concejo",
+				de = "Rathausfundamente",
+				fr = "Fondations d’hôtel de ville",
+				it = "Fondamenta del Palazzo",
+				pt = "Fundação da Prefeitura",
+				ru = "Фундамент ратуши",
+				ko = "마을회관 토대",
+				cn = "议政厅地基",
+			},
+		},
+	
+		[290469] = {
+			readable = "Keep",
+			text = {
+				en = "Keep",
+				es = "Fortaleza",
+				de = "Burg",
+				fr = "Donjon",
+				it = "Fortezza",
+				pt = "Bastilha",
+				ru = "Форт",
+				ko = "성채",
+				cn = "要塞",
+			},
+		},
+	
+		[290470] = {
+			readable = "Destroyed Town Hall",
+			text = {
+				en = "Destroyed Town Hall",
+				es = "Concejo destruido",
+				de = "Zerstörtes Rathaus",
+				fr = "Hôtel de ville détruit",
+				it = "Palazzo Distrutto",
+				pt = "Prefeitura Destruída",
+				ru = "Разрушенная ратуша",
+				ko = "파괴된 마을회관",
+				cn = "被摧毁的议政厅",
+			},
+		},
+	
+		[290471] = {
+			readable = "Town Hall",
+			text = {
+				en = "Town Hall",
+				es = "Concejo",
+				de = "Rathaus",
+				fr = "Hôtel de ville",
+				it = "Palazzo",
+				pt = "Prefeitura",
+				ru = "Ратуша",
+				ko = "마을회관",
+				cn = "议政厅",
+			},
+		},
+	
+		[290472] = {
+			readable = "Keep",
+			text = {
+				en = "Keep",
+				es = "Fortaleza",
+				de = "Burg",
+				fr = "Donjon",
+				it = "Fortezza",
+				pt = "Bastilha",
+				ru = "Форт",
+				ko = "성채",
+				cn = "要塞",
+			},
+		},
+	
+		[290473] = {
+			readable = "Destroyed Keep",
+			text = {
+				en = "Destroyed Keep",
+				es = "Fortaleza destruida",
+				de = "Zerstörte Burg",
+				fr = "Bastion détruit",
+				it = "Fortezza Distrutta",
+				pt = "Bastilha Destruída",
+				ru = "Разрушенный форт",
+				ko = "파괴된 성채",
+				cn = "被摧毁的要塞",
+			},
+		},
+	
+		[290474] = {
+			readable = "Castle",
+			text = {
+				en = "Castle",
+				es = "Castillo",
+				de = "Schloss",
+				fr = "Château",
+				it = "Castello",
+				pt = "Castelo",
+				ru = "Замок",
+				ko = "성",
+				cn = "城堡",
+			},
+		},
+	
+		[290475] = {
+			readable = "Destroyed Keep",
+			text = {
+				en = "Destroyed Keep",
+				es = "Fortaleza destruida",
+				de = "Zerstörte Burg",
+				fr = "Bastion détruit",
+				it = "Fortezza Distrutta",
+				pt = "Bastilha Destruída",
+				ru = "Разрушенный форт",
+				ko = "파괴된 성채",
+				cn = "被摧毁的要塞",
+			},
+		},
+	
+		[290481] = {
+			readable = "Altar of Kings",
+			text = {
+				en = "Altar of Kings",
+				es = "Altar de los reyes",
+				de = "Altar der Könige",
+				fr = "Autel des Rois",
+				it = "Altare dei Re",
+				pt = "Altar dos Reis",
+				ru = "Алтарь королей",
+				ko = "왕의 제단",
+				cn = "列王祭坛",
+			},
+		},
+	
+		[290482] = {
+			readable = "Altar of Kings",
+			text = {
+				en = "Altar of Kings",
+				es = "Altar de los reyes",
+				de = "Altar der Könige",
+				fr = "Autel des Rois",
+				it = "Altare dei Re",
+				pt = "Altar dos Reis",
+				ru = "Алтарь королей",
+				ko = "왕의 제단",
+				cn = "列王祭坛",
+			},
+		},
+	
+		[290483] = {
+			readable = "Destroyed Altar of Kings",
+			text = {
+				en = "Destroyed Altar of Kings",
+				es = "Altar de los reyes destruido",
+				de = "Zerstörter Altar der Könige",
+				fr = "Autel des Rois détruit",
+				it = "Altare dei Re Distrutto",
+				pt = "Altar dos Reis Destruído",
+				ru = "Разрушенный алтарь королей",
+				ko = "파괴된 왕의 제단",
+				cn = "被毁的列王祭坛",
+			},
+		},
+	
+		[290484] = {
+			readable = "Altar of Kings",
+			text = {
+				en = "Altar of Kings",
+				es = "Altar de los reyes",
+				de = "Altar der Könige",
+				fr = "Autel des Rois",
+				it = "Altare dei Re",
+				pt = "Altar dos Reis",
+				ru = "Алтарь королей",
+				ko = "왕의 제단",
+				cn = "列王祭坛",
+			},
+		},
+	
+		[290485] = {
+			readable = "Barracks",
+			text = {
+				en = "Barracks",
+				es = "Cuartel",
+				de = "Kaserne",
+				fr = "Caserne",
+				it = "Caserma",
+				pt = "Quartel",
+				ru = "Казармы",
+				ko = "병영",
+				cn = "兵营",
+			},
+		},
+	
+		[290486] = {
+			readable = "Barracks",
+			text = {
+				en = "Barracks",
+				es = "Cuartel",
+				de = "Kaserne",
+				fr = "Caserne",
+				it = "Caserma",
+				pt = "Quartel",
+				ru = "Казармы",
+				ko = "병영",
+				cn = "兵营",
+			},
+		},
+	
+		[290487] = {
+			readable = "Barracks",
+			text = {
+				en = "Barracks",
+				es = "Cuartel",
+				de = "Kaserne",
+				fr = "Caserne",
+				it = "Caserma",
+				pt = "Quartel",
+				ru = "Казармы",
+				ko = "병영",
+				cn = "兵营",
+			},
+		},
+	
+		[290488] = {
+			readable = "Barracks",
+			text = {
+				en = "Barracks",
+				es = "Cuartel",
+				de = "Kaserne",
+				fr = "Caserne",
+				it = "Caserma",
+				pt = "Quartel",
+				ru = "Казармы",
+				ko = "병영",
+				cn = "兵营",
+			},
+		},
+	
+		[290490] = {
+			readable = "Barracks",
+			text = {
+				en = "Barracks",
+				es = "Cuartel",
+				de = "Kaserne",
+				fr = "Caserne",
+				it = "Caserma",
+				pt = "Quartel",
+				ru = "Казармы",
+				ko = "병영",
+				cn = "兵营",
+			},
+		},
+	
+		[290491] = {
+			readable = "Barracks",
+			text = {
+				en = "Barracks",
+				es = "Cuartel",
+				de = "Kaserne",
+				fr = "Caserne",
+				it = "Caserma",
+				pt = "Quartel",
+				ru = "Казармы",
+				ko = "병영",
+				cn = "兵营",
+			},
+		},
+	
+		[290492] = {
+			readable = "Barracks",
+			text = {
+				en = "Barracks",
+				es = "Cuartel",
+				de = "Kaserne",
+				fr = "Caserne",
+				it = "Caserma",
+				pt = "Quartel",
+				ru = "Казармы",
+				ko = "병영",
+				cn = "兵营",
+			},
+		},
+	
+		[290493] = {
+			readable = "Barracks",
+			text = {
+				en = "Barracks",
+				es = "Cuartel",
+				de = "Kaserne",
+				fr = "Caserne",
+				it = "Caserma",
+				pt = "Quartel",
+				ru = "Казармы",
+				ko = "병영",
+				cn = "兵营",
+			},
+		},
+	
+		[290496] = {
+			readable = "Workshop",
+			text = {
+				en = "Workshop",
+				es = "Taller",
+				de = "Werkstatt",
+				fr = "Atelier",
+				it = "Officina",
+				pt = "Oficina",
+				ru = "Мастерская",
+				ko = "작업장",
+				cn = "车间",
+			},
+		},
+	
+		[290497] = {
+			readable = "Workshop",
+			text = {
+				en = "Workshop",
+				es = "Taller",
+				de = "Werkstatt",
+				fr = "Atelier",
+				it = "Officina",
+				pt = "Oficina",
+				ru = "Мастерская",
+				ko = "작업장",
+				cn = "车间",
+			},
+		},
+	
+		[290498] = {
+			readable = "Workshop",
+			text = {
+				en = "Workshop",
+				es = "Taller",
+				de = "Werkstatt",
+				fr = "Atelier",
+				it = "Officina",
+				pt = "Oficina",
+				ru = "Мастерская",
+				ko = "작업장",
+				cn = "车间",
+			},
+		},
+	
+		[290499] = {
+			readable = "Workshop Foundation",
+			text = {
+				en = "Workshop Foundation",
+				es = "Cimientos del taller",
+				de = "Werkstattfundamente",
+				fr = "Fondations de l’atelier",
+				it = "Fondamenta dell'Officina",
+				pt = "Fundação da Oficina",
+				ru = "Фундамент мастерской",
+				ko = "작업장 토대",
+				cn = "车间地基",
+			},
+		},
+	
+		[290500] = {
+			readable = "Workshop",
+			text = {
+				en = "Workshop",
+				es = "Taller",
+				de = "Werkstatt",
+				fr = "Atelier",
+				it = "Officina",
+				pt = "Oficina",
+				ru = "Мастерская",
+				ko = "작업장",
+				cn = "车间",
+			},
+		},
+	
+		[290501] = {
+			readable = "Destroyed Workshop",
+			text = {
+				en = "Destroyed Workshop",
+				es = "Taller destruido",
+				de = "Zerstörte Werkstatt",
+				fr = "Atelier détruit",
+				it = "Officina Distrutta",
+				pt = "Oficina Destruída",
+				ru = "Разрушенная мастерская",
+				ko = "파괴된 작업장",
+				cn = "被摧毁的车间",
+			},
+		},
+	
+		[290502] = {
+			readable = "Workshop",
+			text = {
+				en = "Workshop",
+				es = "Taller",
+				de = "Werkstatt",
+				fr = "Atelier",
+				it = "Officina",
+				pt = "Oficina",
+				ru = "Мастерская",
+				ko = "작업장",
+				cn = "车间",
+			},
+		},
+	
+		[290503] = {
+			readable = "Destroyed Workshop",
+			text = {
+				en = "Destroyed Workshop",
+				es = "Taller destruido",
+				de = "Zerstörte Werkstatt",
+				fr = "Atelier détruit",
+				it = "Officina Distrutta",
+				pt = "Oficina Destruída",
+				ru = "Разрушенная мастерская",
+				ko = "파괴된 작업장",
+				cn = "被摧毁的车间",
+			},
+		},
+	
+		[290505] = {
+			readable = "Blacksmith",
+			text = {
+				en = "Blacksmith",
+				es = "Herrería",
+				de = "Schmiede",
+				fr = "Forge",
+				it = "Fucina",
+				pt = "Ferraria",
+				ru = "Кузница",
+				ko = "대장간",
+				cn = "铁匠铺",
+			},
+		},
+	
+		[290506] = {
+			readable = "Blacksmith",
+			text = {
+				en = "Blacksmith",
+				es = "Herrería",
+				de = "Schmiede",
+				fr = "Forge",
+				it = "Fucina",
+				pt = "Ferraria",
+				ru = "Кузница",
+				ko = "대장간",
+				cn = "铁匠铺",
+			},
+		},
+	
+		[290507] = {
+			readable = "Blacksmith Foundation",
+			text = {
+				en = "Blacksmith Foundation",
+				es = "Cimientos de la herrería",
+				de = "Schmiedefundamente",
+				fr = "Fondations de la forge",
+				it = "Fondamenta della Fucina",
+				pt = "Fundação da Ferraria",
+				ru = "Фундамент кузни",
+				ko = "대장간 토대",
+				cn = "铁匠铺地基",
+			},
+		},
+	
+		[290508] = {
+			readable = "Blacksmith",
+			text = {
+				en = "Blacksmith",
+				es = "Herrería",
+				de = "Schmiede",
+				fr = "Forge",
+				it = "Fucina",
+				pt = "Ferraria",
+				ru = "Кузница",
+				ko = "대장간",
+				cn = "铁匠铺",
+			},
+		},
+	
+		[290509] = {
+			readable = "Destroyed Blacksmith",
+			text = {
+				en = "Destroyed Blacksmith",
+				es = "Herrería destruida",
+				de = "Zerstörte Schmiede",
+				fr = "Forge détruite",
+				it = "Fucina Distrutta",
+				pt = "Ferraria Destruída",
+				ru = "Разрушенная кузня",
+				ko = "파괴된 대장간",
+				cn = "被毁的铁匠铺",
+			},
+		},
+	
+		[290510] = {
+			readable = "Blacksmith",
+			text = {
+				en = "Blacksmith",
+				es = "Herrería",
+				de = "Schmiede",
+				fr = "Forge",
+				it = "Fucina",
+				pt = "Ferraria",
+				ru = "Кузница",
+				ko = "대장간",
+				cn = "铁匠铺",
+			},
+		},
+	
+		[290511] = {
+			readable = "Destroyed Blacksmith",
+			text = {
+				en = "Destroyed Blacksmith",
+				es = "Herrería destruida",
+				de = "Zerstörte Schmiede",
+				fr = "Forge détruite",
+				it = "Fucina Distrutta",
+				pt = "Ferraria Destruída",
+				ru = "Разрушенная кузня",
+				ko = "파괴된 대장간",
+				cn = "被毁的铁匠铺",
+			},
+		},
+	
+		[290512] = {
+			readable = "Blacksmith",
+			text = {
+				en = "Blacksmith",
+				es = "Herrería",
+				de = "Schmiede",
+				fr = "Forge",
+				it = "Fucina",
+				pt = "Ferraria",
+				ru = "Кузница",
+				ko = "대장간",
+				cn = "铁匠铺",
+			},
+		},
+	
+		[290527] = {
+			readable = "Urn of Vol'jin",
+			model = 1453485,
+			text = {
+				en = "Urn of Vol'jin",
+				es = "Urna de Vol'jin",
+				de = "Vol'jins Urne",
+				fr = "Urne de Vol’jin",
+				it = "Urna di Vol'jin",
+				pt = "Urna de Vol'jin",
+				ru = "Урна с прахом Вол'джина",
+				ko = "볼진의 단지",
+			},
+		},
+	
+		[290531] = {
+			readable = "Cage",
+			model = 1695035,
+			text = {
+				en = "Cage",
+				es = "Jaula",
+				de = "Käfig",
+				it = "Gabbia",
+				pt = "Jaula",
+				ru = "Клетка",
+				ko = "우리",
+				cn = "牢笼",
+			},
+		},
+	
+		[290532] = {
+			readable = "Military Documents",
+			model = 929395,
+			text = {
+				en = "Military Documents",
+				es = "Documentos militares",
+				de = "Militärdokumente",
+				fr = "Documents militaires",
+				it = "Documenti Militari",
+				pt = "Documentos Militares",
+				ru = "Военные документы",
+				cn = "军事文件",
+			},
+		},
+	
+		[290535] = {
+			readable = "Azerite Node",
+			model = 1857376,
+			text = {
+				en = "Azerite Node",
+				es = "Nodo de azerita",
+				de = "Azeritvorkommen",
+				fr = "Gisement d’azérite",
+				it = "Giacimento d'Azerite",
+				pt = "Nodo de Azerita",
+				ru = "Азеритовый выброс",
+				ko = "아제라이트 암석",
+				cn = "艾泽里特矿点",
+			},
+		},
+	
+		[290536] = {
+			readable = "Azerite Chunk",
+			model = 1857375,
+			text = {
+				en = "Azerite Chunk",
+				es = "Trozo de azerita",
+				de = "Azeritklumpen",
+				fr = "Morceau d’azérite",
+				it = "Pezzo d'Azerite",
+				pt = "Pedaço de Azerita",
+				ru = "Глыба азерита",
+				ko = "아제라이트 덩어리",
+				cn = "大块艾泽里特",
+			},
+		},
+	
+		[290537] = {
+			readable = "Help Wanted",
+			icon = 1500881,
+			model = 1696367,
+			text = {
+				en = "Help Wanted",
+				es = "Se busca ayudante",
+				de = "Hilfe gesucht",
+				fr = "Offre d’emploi",
+				it = "Aiuto Cercasi",
+				pt = "Precisa-se",
+				ru = "Требуется помощь!",
+				ko = "도움 급구",
+				cn = "急需帮助",
+			},
+		},
+	
+		[290538] = {
+			readable = "Irontide Coin Bag",
+			model = 1602312,
+			text = {
+				en = "Irontide Coin Bag",
+				es = "Bolsa de monedas de los Marea de Hierro",
+				de = "Goldbeutel der Eisenfluträuber",
+				fr = "Sac de pièces des Lamineurs",
+				it = "Borsellino dei Marferreo",
+				pt = "Bolsa de Moedas Maré-férrea",
+				ru = "Мешок с сокровищами братства Стальных Волн",
+				ko = "무쇠파도 주화 가방",
+				cn = "铁潮金币袋",
+			},
+		},
+	
+		[290541] = {
+			readable = "Irontide Coin Bag",
+			model = 1602312,
+			text = {
+				en = "Irontide Coin Bag",
+				es = "Bolsa de monedas de los Marea de Hierro",
+				de = "Goldbeutel der Eisenfluträuber",
+				fr = "Sac de pièces des Lamineurs",
+				it = "Borsellino dei Marferreo",
+				pt = "Bolsa de Moedas Maré-férrea",
+				ru = "Мешок с сокровищами братства Стальных Волн",
+			},
+		},
+	
+		[290544] = {
+			readable = "Challenger's Cache",
+			model = 1314905,
+			text = {
+				en = "Challenger's Cache",
+				es = "Alijo de contendiente",
+				de = "Schatz des Herausforderers",
+				fr = "Cache de prétendant",
+				it = "Cassa dello Sfidante",
+				pt = "Baú do Desafiante",
+				ru = "Тайник претендента",
+				ko = "도전자의 보관함",
+				cn = "挑战者的箱子",
+			},
+		},
+	
+		[290545] = {
+			readable = "Mole Machine",
+			model = 1890687,
+			text = {
+				en = "Mole Machine",
+				es = "Máquina topo",
+				de = "Maulwurfmaschine",
+				fr = "Taupe mécanique",
+				it = "Trivella",
+				pt = "Máquina Toupeira",
+				ru = "Буровая установка",
+				ko = "굴착기",
+				cn = "钻探机",
+			},
+		},
+	
+		[290610] = {
+			readable = "Azerite Node",
+			model = 1857376,
+			text = {
+				en = "Azerite Node",
+				es = "Nodo de azerita",
+				de = "Azeritvorkommen",
+				fr = "Gisement d’azérite",
+				it = "Giacimento d'Azerite",
+				pt = "Nodo de Azerita",
+				ru = "Азеритовый выброс",
+				ko = "아제라이트 암석",
+				cn = "艾泽里特矿点",
+			},
+		},
+	
+		[290611] = {
+			readable = "Azerite Chunk",
+			model = 1857375,
+			text = {
+				en = "Azerite Chunk",
+				es = "Trozo de azerita",
+				de = "Azeritklumpen",
+				fr = "Morceau d’azérite",
+				it = "Pezzo d'Azerite",
+				pt = "Pedaço de Azerita",
+				ru = "Глыба азерита",
+				ko = "아제라이트 덩어리",
+				cn = "大块艾泽里特",
+			},
+		},
+	
+		[290612] = {
+			readable = "Lesser Effigy",
+			model = 1685301,
+			text = {
+				en = "Lesser Effigy",
+				es = "Efigie inferior",
+				de = "Geringes Bildnis",
+				fr = "Effigie inférieure",
+				it = "Effige Inferiore",
+				pt = "Efígie Inferior",
+				ru = "Небольшое чучело",
+				ko = "하급 입상",
+				cn = "小型雕像",
+			},
+		},
+	
+		[290621] = {
+			readable = "Challenger's Cache",
+			model = 1314905,
+			text = {
+				en = "Challenger's Cache",
+				es = "Alijo de contendiente",
+				de = "Schatz des Herausforderers",
+				fr = "Cache de prétendant",
+				it = "Cassa dello Sfidante",
+				pt = "Baú do Desafiante",
+				ru = "Тайник претендента",
+				ko = "도전자의 보관함",
+			},
+		},
+	
+		[290678] = {
+			readable = "Altar of Gonk",
+			model = 1991995,
+			text = {
+				en = "Altar of Gonk",
+				es = "Altar de Gonk",
+				de = "Altar von Gonk",
+				fr = "Autel de Gonk",
+				it = "Altare di Gonk",
+				pt = "Altar de Gonk",
+				ru = "Алтарь Гонка",
+				ko = "공크의 제단",
+				cn = "贡克祭坛",
+			},
+		},
+	
+		[290679] = {
+			readable = "Altar of Bwonsamdi",
+			model = 1992009,
+			text = {
+				en = "Altar of Bwonsamdi",
+				es = "Altar de Bwonsamdi",
+				de = "Altar von Bwonsamdi",
+				fr = "Autel de Bwonsamdi",
+				it = "Altare di Bwonsamdi",
+				pt = "Altar de Bwonsamdi",
+				ru = "Алтарь Бвонсамди",
+				ko = "브원삼디의 제단",
+				cn = "邦桑迪祭坛",
+			},
+		},
+	
+		[290681] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290682] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290683] = {
+			readable = "Doodad_8DU_CityofGold_Sarcophagus005",
+			model = 1981306,
+			text = {
+				en = "Doodad_8DU_CityofGold_Sarcophagus005",
+			},
+		},
+	
+		[290684] = {
+			readable = "Doodad_8DU_CityofGold_Sarcophagus006",
+			model = 1981306,
+			text = {
+				en = "Doodad_8DU_CityofGold_Sarcophagus006",
+			},
+		},
+	
+		[290685] = {
+			readable = "Doodad_8DU_CityofGold_Sarcophagus007",
+			model = 1981306,
+			text = {
+				en = "Doodad_8DU_CityofGold_Sarcophagus007",
+			},
+		},
+	
+		[290686] = {
+			readable = "Doodad_8DU_CityofGold_Sarcophagus008",
+			model = 1981306,
+			text = {
+				en = "Doodad_8DU_CityofGold_Sarcophagus008",
+			},
+		},
+	
+		[290687] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290688] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290689] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290690] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290691] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290692] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290693] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290694] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290695] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290696] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290697] = {
+			readable = "Placard",
+			model = 1982882,
+			text = {
+				en = "Placard",
+				es = "Estela",
+				de = "Widmungsstein",
+				fr = "Affiche",
+				it = "Tavoletta",
+				pt = "Letreiro",
+				ru = "Мемориал",
+				ko = "비석",
+				cn = "标牌",
+			},
+		},
+	
+		[290698] = {
+			readable = "Tablet",
+			model = 774273,
+			text = {
+				en = "Tablet",
+				es = "Tablilla",
+				de = "Tafel",
+				fr = "Tablette",
+				it = "Tavoletta",
+				pt = "Tabuleta",
+				ru = "Табличка",
+				ko = "서판",
+				cn = "石板",
+			},
+		},
+	
+		[290700] = {
+			readable = "Worn Prayer Book",
+			model = 774269,
+			text = {
+				en = "Worn Prayer Book",
+				es = "Libro de oraciones desgastado",
+				de = "Abgenutztes Gebetsbuch",
+				fr = "Livre de prières usé",
+				it = "Libro di Preghiere Consumato",
+				pt = "Livro de Orações Surrado",
+				ru = "Потертый молитвенник",
+				ko = "낡은 기도서",
+				cn = "破旧的祈祷之书",
+			},
+		},
+	
+		[290701] = {
+			readable = "Tablet",
+			model = 1726777,
+			text = {
+				en = "Tablet",
+				es = "Tablilla",
+				de = "Tafel",
+				fr = "Tablette",
+				it = "Tavoletta",
+				pt = "Tabuleta",
+				ru = "Табличка",
+				ko = "서판",
+				cn = "石板",
+			},
+		},
+	
+		[290703] = {
+			readable = "Altar of Pa'ku",
+			model = 1991997,
+			text = {
+				en = "Altar of Pa'ku",
+				es = "Altar de Pa'ku",
+				de = "Altar von Pa'ku",
+				fr = "Autel de Pa’ku",
+				it = "Altare di Pa'ku",
+				pt = "Altar de Pa'kul",
+				ru = "Алтарь Па'ку",
+				ko = "파쿠의 제단",
+				cn = "帕库祭坛",
+			},
+		},
+	
+		[290704] = {
+			readable = "Altar of Akunda",
+			model = 1992006,
+			text = {
+				en = "Altar of Akunda",
+				es = "Altar de Akunda",
+				de = "Altar von Akunda",
+				fr = "Autel d’Akunda",
+				it = "Altare di Akunda",
+				pt = "Altar de Akunda",
+				ru = "Алтарь Акунды",
+				ko = "아쿤다의 제단",
+				cn = "阿昆达祭坛",
+			},
+		},
+	
+		[290705] = {
+			readable = "Altar of Kimbul",
+			model = 1992004,
+			text = {
+				en = "Altar of Kimbul",
+				es = "Altar de Kimbul",
+				de = "Altar von Kimbul",
+				fr = "Autel de Kimbul",
+				it = "Altare di Kimbul",
+				pt = "Altar de Kimbul",
+				ru = "Алтарь Кимбула",
+				ko = "킴불의 제단",
+				cn = "吉布尔祭坛",
+			},
+		},
+	
+		[290706] = {
+			readable = "Altar of Krag'wa",
+			model = 1992003,
+			text = {
+				en = "Altar of Krag'wa",
+				es = "Altar de Krag'wa",
+				de = "Altar von Krag'wa",
+				fr = "Autel de Krag’wa",
+				it = "Altare di Krag'wa",
+				pt = "Altar de Krag'wa",
+				ru = "Алтарь Краг'вы",
+				ko = "크라그와의 제단",
+				cn = "卡格瓦祭坛",
+			},
+		},
+	
+		[290707] = {
+			readable = "Suppression Spire",
+			model = 1625030,
+			text = {
+				en = "Suppression Spire",
+				es = "Aguja de supresión",
+				de = "Unterdrückungsspitze",
+				fr = "Flèche incapacitante",
+				it = "Guglia di Soppressione",
+				pt = "Pináculo de Supressão",
+				ru = "Подавляющий шпиль",
+				ko = "억제의 첨탑",
+				cn = "压制高塔",
+			},
+		},
+	
+		[290708] = {
+			readable = "Anchor Chains",
+			model = 1602479,
+			text = {
+				en = "Anchor Chains",
+				es = "Cadenas de ancla",
+				de = "Ankerketten",
+				fr = "Chaîne d’ancre",
+				it = "Catene d'Ancora",
+				pt = "Correntes de Âncora",
+				ru = "Якорные цепи",
+				ko = "닻 사슬",
+				cn = "铁锚之链",
+			},
+		},
+	
+		[290709] = {
+			readable = "Crate of Canvas",
+			model = 1602477,
+			text = {
+				en = "Crate of Canvas",
+				es = "Cajón de lona",
+				de = "Kiste mit Segeltuch",
+				fr = "Caisse de toile",
+				it = "Cassa di Canovacci",
+				pt = "Caixote de Velas",
+				ru = "Ящик с парусиной",
+				ko = "캔버스가 든 상자",
+				cn = "一箱帆布",
+			},
+		},
+	
+		[290710] = {
+			readable = "Canvas Bolt",
+			model = 1284871,
+			text = {
+				en = "Canvas Bolt",
+				es = "Cesto de lona",
+				de = "Segeltuchballen",
+				fr = "Rouleau de toile",
+				it = "Dardo di Canovacci",
+				pt = "Peça de Lona",
+				ru = "Рулон парусины",
+				ko = "캔버스 빗장",
+				cn = "帆布卷",
+			},
+		},
+	
+		[290711] = {
+			readable = "Anchor Chain",
+			model = 1828695,
+			text = {
+				en = "Anchor Chain",
+				es = "Cadena de ancla",
+				de = "Ankerkette",
+				fr = "Chaîne d’ancre",
+				it = "Catena dell'Ancora",
+				pt = "Corrente de Âncora",
+				ru = "Якорная цепь",
+				ko = "닻 사슬",
+				cn = "铁锚之链",
+			},
+		},
+	
+		[290712] = {
+			readable = "Sandworn Blade",
+			model = 970087,
+			text = {
+				en = "Sandworn Blade",
+				es = "Hoja erosionada por la arena",
+				de = "Sandgeschliffene Klinge",
+				fr = "Lame érodée",
+				it = "Lama Consumata dalla Sabbia",
+				pt = "Lâmina Desgastada pela Areia",
+				ru = "Травленный песком клинок",
+				ko = "모래에 바랜 칼날",
+				cn = "沙损之剑",
+			},
+		},
+	
+		[290718] = {
+			readable = "Place Trap",
+			model = 200889,
+			text = {
+				en = "Place Trap",
+				es = "Colocar trampa",
+				de = "Falle platzieren",
+				fr = "Placement de piège",
+				it = "Trappola Piazzata",
+				pt = "Colocar Armadilha",
+				ru = "Разместить ловушку",
+				ko = "덫 설치",
+			},
+		},
+	
+		[290721] = {
+			readable = "Azerite Chunk",
+			model = 1857375,
+			text = {
+				en = "Azerite Chunk",
+				es = "Trozo de azerita",
+				de = "Azeritklumpen",
+				fr = "Morceau d’azérite",
+				it = "Pezzo d'Azerite",
+				pt = "Pedaço de Azerita",
+				ru = "Глыба азерита",
+				ko = "아제라이트 덩어리",
+				cn = "大块艾泽里特",
+			},
+		},
+	
+		[290723] = {
+			readable = "Azerite Node",
+			model = 1857376,
+			text = {
+				en = "Azerite Node",
+				es = "Nodo de azerita",
+				de = "Azeritvorkommen",
+				fr = "Gisement d’azérite",
+				it = "Giacimento d'Azerite",
+				pt = "Nodo de Azerita",
+				ru = "Азеритовый выброс",
+				ko = "아제라이트 암석",
+				cn = "艾泽里特矿点",
+			},
+		},
+	
+		[290725] = {
+			readable = "Riches of Tor'nowa",
+			icon = 1001977,
+			model = 1804876,
+			text = {
+				en = "Riches of Tor'nowa",
+				es = "Riquezas de Tor'nowa",
+				de = "Reichtümer von Tor'nowa",
+				fr = "Richesses de Tor’nowa",
+				it = "Tesoro di Tor'nowa",
+				pt = "Riqueza de Tor'nowa",
+				ru = "Богатства Тор'новы",
+				ko = "토르노와의 금은보화",
+				cn = "托诺瓦的财富",
+			},
+		},
+	
+		[290730] = {
+			readable = "Scroll",
+			model = 774267,
+			text = {
+				en = "Scroll",
+				es = "Pergamino",
+				de = "Schriftrolle",
+				fr = "Parchemin",
+				it = "Pergamena",
+				pt = "Pergaminho",
+				ru = "Свиток",
+				ko = "두루마리",
+				cn = "卷轴",
+			},
+		},
+	
+		[290746] = {
+			readable = "Falcon Cage",
+			model = 306265,
+			text = {
+				en = "Falcon Cage",
+				es = "Jaula de falcón",
+				de = "Falkenkäfig",
+				fr = "Cage à épervier",
+				it = "Gabbia del Falco",
+				pt = "Gaiola de Falcão",
+				ru = "Соколиная клетка",
+				ko = "매 우리",
+			},
+		},
+	
+		[290747] = {
+			readable = "Jambani Stockpile",
+			model = 1838302,
+			text = {
+				en = "Jambani Stockpile",
+				es = "Reservas Jambani",
+				de = "Vorräte der Jambani",
+				fr = "Réserve jambani",
+				it = "Deposito dei Jambani",
+				pt = "Reserva Jambani",
+				ru = "Запасы культа Вол'джамбы",
+				ko = "잠바니 비품",
+				cn = "加巴尼物资",
+			},
+		},
+	
+		[290748] = {
+			readable = "Jambani Stockpile",
+			model = 1838310,
+			text = {
+				en = "Jambani Stockpile",
+				es = "Reservas Jambani",
+				de = "Vorräte der Jambani",
+				fr = "Réserve jambani",
+				it = "Deposito dei Jambani",
+				pt = "Reserva Jambani",
+				ru = "Запасы культа Вол'джамбы",
+				ko = "잠바니 비품",
+				cn = "加巴尼物资",
+			},
+		},
+	
+		[290749] = {
+			readable = "Jambani Stockpile",
+			model = 1838373,
+			text = {
+				en = "Jambani Stockpile",
+				es = "Reservas Jambani",
+				de = "Vorräte der Jambani",
+				fr = "Réserve jambani",
+				it = "Deposito dei Jambani",
+				pt = "Reserva Jambani",
+				ru = "Запасы культа Вол'джамбы",
+				ko = "잠바니 비품",
+				cn = "加巴尼物资",
+			},
+		},
+	
+		[290750] = {
+			readable = "Jambani Stockpile",
+			model = 1838302,
+			text = {
+				en = "Jambani Stockpile",
+				es = "Reservas Jambani",
+				de = "Vorräte der Jambani",
+				fr = "Réserve jambani",
+				it = "Deposito dei Jambani",
+				pt = "Reserva Jambani",
+				ru = "Запасы культа Вол'джамбы",
+				ko = "잠바니 비품",
+				cn = "加巴尼物资",
+			},
+		},
+	
+		[290754] = {
+			readable = "Egg Sac",
+			model = 200974,
+			text = {
+				en = "Egg Sac",
+				es = "Saco de huevos",
+				de = "Eiersack",
+				fr = "Cocon d’œufs",
+				it = "Sacca di Uova",
+				pt = "Bolsa de Ovos",
+				ru = "Паучья кладка",
+				ko = "알 주머니",
+				cn = "卵囊",
+			},
+		},
+	
+		[290755] = {
+			readable = "Skull of the First Skycaller",
+			model = 1617553,
+			text = {
+				en = "Skull of the First Skycaller",
+				es = "Calavera del primer clamacielos",
+				de = "Schädel des ersten Himmelsrufers",
+				fr = "Crâne du premier mandeciel",
+				it = "Teschio del Primo Invocatore Celeste",
+				pt = "Crânio do Primeiro Clamacéus",
+				ru = "Череп первого призывателя небес",
+				ko = "첫 번째 하늘소환사의 해골",
+				cn = "初代唤天者之颅",
+			},
+		},
+	
+		[290756] = {
+			readable = "Sethraliss Sight Stone",
+			model = 1617555,
+			text = {
+				en = "Sethraliss Sight Stone",
+				es = "Piedra de visión de Sethraliss",
+				de = "Sethraliss' Sichtstein",
+				fr = "Pierre de vision de Sephraliss",
+				it = "Pietra della Vista di Sethraliss",
+				pt = "Pedra da Visão de Sethraliss",
+				ru = "Камень провидения Сетралисс",
+				ko = "세스랄리스 시야석",
+				cn = "塞塔里斯视界石",
+			},
+		},
+	
+		[290757] = {
+			readable = "Blood of the Fallen Loa",
+			model = 1572583,
+			text = {
+				en = "Blood of the Fallen Loa",
+				es = "Sangre de los loa caídos",
+				de = "Blut des gefallenen Loas",
+				fr = "Sang du Loa déchu",
+				it = "Sangue della Loa Caduta",
+				pt = "Sangue dos Loas Decaídos",
+				ru = "Кровь погибшей лоа",
+				ko = "몰락한 로아의 피",
+				cn = "陨落神灵之血",
+			},
+		},
+	
+		[290758] = {
+			readable = "Challenger's Cache",
+			model = 1314905,
+			text = {
+				en = "Challenger's Cache",
+				es = "Alijo de contendiente",
+				de = "Schatz des Herausforderers",
+				fr = "Cache de prétendant",
+				it = "Cassa dello Sfidante",
+				pt = "Baú do Desafiante",
+				ru = "Тайник претендента",
+				ko = "도전자의 보관함",
+			},
+		},
+	
+		[290759] = {
+			readable = "Challenger's Cache",
+			model = 1314905,
+			text = {
+				en = "Challenger's Cache",
+				es = "Alijo de contendiente",
+				de = "Schatz des Herausforderers",
+				fr = "Cache de prétendant",
+				it = "Cassa dello Sfidante",
+				pt = "Baú do Desafiante",
+				ru = "Тайник претендента",
+				ko = "도전자의 보관함",
+				cn = "挑战者的箱子",
+			},
+		},
+	
+		[290760] = {
+			readable = "Rope Coil",
+			model = 1616076,
+			text = {
+				en = "Rope Coil",
+				es = "Bobina de cuerda",
+				de = "Aufgerolltes Seil",
+				fr = "Rouleau de corde",
+				it = "Spira di Corda",
+				pt = "Espiral de Corda",
+				ru = "Моток веревки",
+				ko = "밧줄 고리",
+			},
+		},
+	
+		[290761] = {
+			readable = "Challenger's Cache",
+			model = 1314905,
+			text = {
+				en = "Challenger's Cache",
+				es = "Alijo de contendiente",
+				de = "Schatz des Herausforderers",
+				fr = "Cache de prétendant",
+				it = "Cassa dello Sfidante",
+				pt = "Baú do Desafiante",
+				ru = "Тайник претендента",
+				ko = "도전자의 보관함",
+				cn = "挑战者的箱子",
+			},
+		},
+	
+		[290765] = {
+			readable = "Large Pile of Gold",
+			icon = 961622,
+			model = 200135,
+			text = {
+				en = "Large Pile of Gold",
+				es = "Montón de oro enorme",
+				de = "Großer Haufen Gold",
+				fr = "Grand tas de pièces d’or",
+				it = "Grande Pila di Monete d'Oro",
+				pt = "Grande Pilha de Ouro",
+				ru = "Большая куча золота",
+				ko = "큰 금화 더미",
+				cn = "一大堆金币",
+			},
+		},
+	
+		[290770] = {
+			readable = "Treasure Chest",
+			model = 1777743,
+			text = {
+				en = "Treasure Chest",
+				es = "Arqueta",
+				de = "Schatztruhe",
+				fr = "Coffre au trésor",
+				it = "Cassa del Tesoro",
+				pt = "Baú do Tesouro",
+				ru = "Сундук с сокровищами",
+				ko = "보물 상자",
+				cn = "宝箱",
+			},
+		},
+	
+		[290773] = {
+			readable = "Altar of Akunda",
+			model = 1992006,
+			text = {
+				en = "Altar of Akunda",
+				es = "Altar de Akunda",
+				de = "Altar von Akunda",
+				fr = "Autel d’Akunda",
+				it = "Altare di Akunda",
+				pt = "Altar de Akunda",
+				ru = "Алтарь Акунды",
+				ko = "아쿤다의 제단",
+				cn = "阿昆达祭坛",
+			},
+		},
+	
+		[290774] = {
+			readable = "Naga Cache",
+			model = 1096610,
+			text = {
+				en = "Naga Cache",
+				es = "Alijo naga",
+				de = "Nagaschatz",
+				fr = "Cache naga",
+				it = "Cassa dei Naga",
+				pt = "Baú Naga",
+				ru = "Тайник наг",
+				ko = "나가 보관함",
+				cn = "纳迦的箱子",
+			},
+		},
+	
+		[290775] = {
+			readable = "Intact Mudfish",
+			model = 1091574,
+			text = {
+				en = "Intact Mudfish",
+				es = "Pezfango intacto",
+				de = "Intakter Matschflosser",
+				fr = "Éperlan intact",
+				it = "Pescefango Intatto",
+				pt = "Muçum Intacto",
+				ru = "Нетронутая ильница",
+			},
+		},
+	
+		[290776] = {
+			readable = "Gunpowder Crate",
+			model = 1984114,
+			text = {
+				en = "Gunpowder Crate",
+				es = "Cajón de pólvora",
+				de = "Schießpulverkiste",
+				fr = "Caisse de poudre à canon",
+				it = "Cassa di Polvere da Sparo",
+				pt = "Caixote de Pólvora",
+				ru = "Ящик с взрывчаткой",
+				ko = "화약 궤짝",
+				cn = "火药箱",
+			},
+		},
+	
+		[290777] = {
+			readable = "Ball and Chain",
+			model = 197946,
+			text = {
+				en = "Ball and Chain",
+				es = "Bola y cadena",
+				de = "Kugelfessel",
+				fr = "Boulets et chaînes",
+				it = "Palla con Catena",
+				pt = "Bola e Corrente",
+				ru = "Ядро на цепи",
+				ko = "족쇄",
+				cn = "链球",
+			},
+		},
+	
+		[290780] = {
+			readable = "Ball and Chain",
+			model = 197946,
+			text = {
+				en = "Ball and Chain",
+				es = "Bola y cadena",
+				de = "Kugelfessel",
+				fr = "Boulets et chaînes",
+				it = "Palla con Catena",
+				pt = "Bola e Corrente",
+				ru = "Ядро на цепи",
+				ko = "족쇄",
+				cn = "链球",
+			},
+		},
+	
+		[290781] = {
+			readable = "Ball and Chain",
+			model = 197946,
+			text = {
+				en = "Ball and Chain",
+				es = "Bola y cadena",
+				de = "Kugelfessel",
+				fr = "Boulets et chaînes",
+				it = "Palla con Catena",
+				pt = "Bola e Corrente",
+				ru = "Ядро на цепи",
+				ko = "족쇄",
+				cn = "链球",
+			},
+		},
+	
+		[290782] = {
+			readable = "Ball and Chain",
+			model = 197946,
+			text = {
+				en = "Ball and Chain",
+				es = "Bola y cadena",
+				de = "Kugelfessel",
+				fr = "Boulets et chaînes",
+				it = "Palla con Catena",
+				pt = "Bola e Corrente",
+				ru = "Ядро на цепи",
+				ko = "족쇄",
+				cn = "链球",
+			},
+		},
+	
+		[290799] = {
+			readable = "Altar of Pa'ku",
+			model = 1991997,
+			text = {
+				en = "Altar of Pa'ku",
+				es = "Altar de Pa'ku",
+				de = "Altar von Pa'ku",
+				fr = "Autel de Pa’ku",
+				it = "Altare di Pa'ku",
+				pt = "Altar de Pa'kul",
+				ru = "Алтарь Па'ку",
+				ko = "파쿠의 제단",
+				cn = "帕库祭坛",
+			},
+		},
+	
+		[290801] = {
+			readable = "Twilight Hoard",
+			model = 512025,
+			text = {
+				en = "Twilight Hoard",
+				es = "Tesoro oculto Crepuscular",
+				de = "Zwielichthort",
+				fr = "Trésor du Crépuscule",
+				it = "Riserva del Crepuscolo",
+				pt = "Tesouro do Crepúsculo",
+				ru = "Сумеречный тайник",
+				ko = "황혼의 궤짝",
+				cn = "暮光宝藏",
+			},
+		},
+	
+		[290802] = {
+			readable = "Dragon's Hoard",
+			model = 536933,
+			text = {
+				en = "Dragon's Hoard",
+				es = "Tesoro del dragón",
+				de = "Drachenhort",
+				fr = "Trésor du dragon",
+				it = "Tesoro dei Draghi",
+				pt = "Tesouro do Dragão",
+				ru = "Драконий тайник",
+				ko = "용의 궤짝",
+			},
+		},
+	
+		[290803] = {
+			readable = "Gunpowder Crate",
+			model = 1984114,
+			text = {
+				en = "Gunpowder Crate",
+				es = "Cajón de pólvora",
+				de = "Schießpulverkiste",
+				fr = "Caisse de poudre à canon",
+				it = "Cassa di Polvere da Sparo",
+				pt = "Caixote de Pólvora",
+				ru = "Ящик с взрывчаткой",
+				ko = "화약 궤짝",
+				cn = "火药箱",
+			},
+		},
+	
+		[290810] = {
+			readable = "Witch Effigy",
+			model = 1695273,
+			text = {
+				en = "Witch Effigy",
+				es = "Efigie de bruja",
+				de = "Hexenbildnis",
+				fr = "Effigie de sorcière",
+				it = "Effige della Strega",
+				pt = "Efígie de Bruxa",
+				ru = "Ведьмовское чучело",
+			},
+		},
+	
+		[290812] = {
+			readable = "Altar of Krag'wa",
+			model = 1992003,
+			text = {
+				en = "Altar of Krag'wa",
+				es = "Altar de Krag'wa",
+				de = "Altar von Krag'wa",
+				fr = "Autel de Krag’wa",
+				it = "Altare di Krag'wa",
+				pt = "Altar de Krag'wa",
+				ru = "Алтарь Краг'вы",
+				ko = "크라그와의 제단",
+				cn = "卡格瓦祭坛",
+			},
+		},
+	
+		[290814] = {
+			readable = "Altar of Bwonsamdi",
+			model = 1992009,
+			text = {
+				en = "Altar of Bwonsamdi",
+				es = "Altar de Bwonsamdi",
+				de = "Altar von Bwonsamdi",
+				fr = "Autel de Bwonsamdi",
+				it = "Altare di Bwonsamdi",
+				pt = "Altar de Bwonsamdi",
+				ru = "Алтарь Бвонсамди",
+				ko = "브원삼디의 제단",
+				cn = "邦桑迪祭坛",
+			},
+		},
+	
+		[290816] = {
+			readable = "Altar of Kimbul",
+			model = 1992004,
+			text = {
+				en = "Altar of Kimbul",
+				es = "Altar de Kimbul",
+				de = "Altar von Kimbul",
+				fr = "Autel de Kimbul",
+				it = "Altare di Kimbul",
+				pt = "Altar de Kimbul",
+				ru = "Алтарь Кимбула",
+				ko = "킴불의 제단",
+				cn = "吉布尔祭坛",
+			},
+		},
+	
+		[290817] = {
+			readable = "Altar of Akunda",
+			model = 1992006,
+			text = {
+				en = "Altar of Akunda",
+				es = "Altar de Akunda",
+				de = "Altar von Akunda",
+				fr = "Autel d’Akunda",
+				it = "Altare di Akunda",
+				pt = "Altar de Akunda",
+				ru = "Алтарь Акунды",
+				ko = "아쿤다의 제단",
+				cn = "阿昆达祭坛",
+			},
+		},
+	
+		[290820] = {
+			readable = "River Carnations",
+			model = 1037647,
+			text = {
+				en = "River Carnations",
+				es = "Claveles de río",
+				de = "Flussnelken",
+				fr = "Œillets des rivières",
+				it = "Garofani di Fiume",
+				pt = "Cravos do Rio",
+				ru = "Речная гвоздика",
+				ko = "강물 카네이션",
+				cn = "畔河康乃馨",
+			},
+		},
+	
+		[290822] = {
+			readable = "Dark Fissure",
+			model = 1984912,
+			text = {
+				en = "Dark Fissure",
+				es = "Fisura oscura",
+				de = "Dunkler Spalt",
+				fr = "Fissure sombre",
+				it = "Fenditura Oscura",
+				pt = "Fenda Negra",
+				ru = "Темный разлом",
+				ko = "암흑의 균열",
+				cn = "黑暗裂隙",
+			},
+		},
+	
+		[290823] = {
+			readable = "Barricade",
+			model = 874429,
+			text = {
+				en = "Barricade",
+				es = "Barricada",
+				de = "Barrikade",
+				it = "Barricata",
+				pt = "Barricada",
+				ru = "Баррикада",
+				ko = "방벽",
+			},
+		},
+	
+		[290827] = {
+			readable = "Equipment Locker",
+			model = 1602486,
+			text = {
+				en = "Equipment Locker",
+				es = "Baúl de equipo",
+				de = "Ausrüstungsspind",
+				fr = "Coffre d’équipement",
+				it = "Baule di Equipaggiamenti",
+				pt = "Baú de Equipamento",
+				ru = "Сундук с экипировкой",
+				ko = "장비 보관함",
+				cn = "装备箱",
+			},
+		},
+	
+		[290842] = {
+			readable = "Odoriferous Stew",
+			model = 1661557,
+			text = {
+				en = "Odoriferous Stew",
+				es = "Estofado odorífero",
+				de = "Stark riechender Eintopf",
+				fr = "Ragoût odoriférant",
+				it = "Stufato Profumato",
+				pt = "Ensopado Odorífico",
+				ru = "Ароматное варево",
+				ko = "냄새나는 스튜",
+				cn = "异味炖煮",
+			},
+		},
+	
+		[290846] = {
+			readable = "Warhorn of the Hold",
+			model = 1062215,
+			text = {
+				en = "Warhorn of the Hold",
+				es = "Cuerno de guerra del bastión",
+				de = "Kriegshorn der Festung",
+				fr = "Cor de guerre du bastion",
+				it = "Corno da Guerra della Fortezza",
+				pt = "Trompa de Guerra do Castelo",
+				ru = "Боевой рог крепости Клыка Войны",
+				ko = "주둔지 전쟁나팔",
+			},
+		},
+	
+		[290848] = {
+			readable = "Altar of Gonk",
+			model = 1991995,
+			text = {
+				en = "Altar of Gonk",
+				es = "Altar de Gonk",
+				de = "Altar von Gonk",
+				fr = "Autel de Gonk",
+				it = "Altare di Gonk",
+				pt = "Altar de Gonk",
+				ru = "Алтарь Гонка",
+				ko = "공크의 제단",
+				cn = "贡克祭坛",
+			},
+		},
+	
+		[290895] = {
+			readable = "Heartsbane Focus",
+			model = 1675532,
+			text = {
+				en = "Heartsbane Focus",
+				es = "Enfoque Aterracorazón",
+				de = "Herzbannfokus",
+				fr = "Focalisation malecarde",
+				it = "Focus delle Frangicuore",
+				pt = "Foco Sangra-coração",
+				ru = "Средоточие ковена Мертвых Сердец",
+				ko = "심장파멸 집중 부적",
+				cn = "毒心法器",
+			},
+		},
+	
+		[290896] = {
+			readable = "Heartsbane Grimoire",
+			model = 1698665,
+			text = {
+				en = "Heartsbane Grimoire",
+				es = "Grimorio Aterracorazón",
+				de = "Herzbannzauberfoliant",
+				fr = "Grimoire malecarde",
+				it = "Grimorio delle Frangicuore",
+				pt = "Grimório Sangra-coração",
+				ru = "Гримуар ковена Мертвых Сердец",
+				ko = "심장파멸 흑마법서",
+				cn = "毒心魔典",
+			},
+		},
+	
+		[290897] = {
+			readable = "Heartsbane Focus",
+			model = 1675535,
+			text = {
+				en = "Heartsbane Focus",
+				es = "Enfoque Aterracorazón",
+				de = "Herzbannfokus",
+				fr = "Focalisation malecarde",
+				it = "Focus delle Frangicuore",
+				pt = "Foco Sangra-coração",
+				ru = "Средоточие ковена Мертвых Сердец",
+				ko = "심장파멸 집중 부적",
+				cn = "毒心法器",
+			},
+		},
+	
+		[290898] = {
+			readable = "Heartsbane Scrolls",
+			model = 1698654,
+			text = {
+				en = "Heartsbane Scrolls",
+				es = "Pergaminos Aterracorazón",
+				de = "Herzbannschriftrollen",
+				fr = "Parchemins malecardes",
+				it = "Pergamene delle Frangicuore",
+				pt = "Pergaminhos Sangra-coração",
+				ru = "Свитки ковена Мертвых Сердец",
+				ko = "심장파멸 두루마리",
+				cn = "毒心卷轴",
+			},
+		},
+	
+		[290903] = {
+			readable = "Horde Banner",
+			model = 200278,
+			text = {
+				en = "Horde Banner",
+				es = "Estandarte de la Horda",
+				de = "Hordebanner",
+				fr = "Bannière de la Horde",
+				it = "Stendardo dell'Orda",
+				pt = "Estandarte da Horda",
+				ru = "Знамя Орды",
+				ko = "호드 깃발",
+				cn = "部落战旗",
+			},
+		},
+	
+		[290904] = {
+			readable = "Horde Banner",
+			model = 200276,
+			text = {
+				en = "Horde Banner",
+				es = "Estandarte de la Horda",
+				de = "Hordebanner",
+				fr = "Bannière de la Horde",
+				it = "Stendardo dell'Orda",
+				pt = "Estandarte da Horda",
+				ru = "Знамя Орды",
+				ko = "호드 깃발",
+				cn = "部落战旗",
+			},
+		},
+	
+		[290909] = {
+			readable = "Tol'vir Cache",
+			model = 384743,
+			text = {
+				en = "Tol'vir Cache",
+				es = "Alijo tol'vir",
+				de = "Schatz der Tol'vir",
+				fr = "Cache tol’vir",
+				it = "Cassa dei Tol'vir",
+				pt = "Tesouro Tol'vir",
+				ru = "Тол'вирский сундук",
+				ko = "톨비르 보관함",
+			},
+		},
+	
+		[290910] = {
+			readable = "Plundered Azerite",
+			model = 1982683,
+			text = {
+				en = "Plundered Azerite",
+				es = "Azerita saqueada",
+				de = "Geplündertes Azerit",
+				fr = "Azérite pillée",
+				it = "Azerite Saccheggiata",
+				pt = "Azerita Saqueada",
+				ru = "Награбленный азерит",
+				ko = "약탈당한 아제라이트",
+				cn = "掠夺来的艾泽里特",
+			},
+		},
+	
+		[290911] = {
+			readable = "Sack of Azerite",
+			model = 1982683,
+			text = {
+				en = "Sack of Azerite",
+				es = "Saco de azerita",
+				de = "Sack mit Azerit",
+				fr = "Sac d’azérite",
+				it = "Sacca d'Azerite",
+				pt = "Saco de Azerita",
+				ru = "Мешок азерита",
+				ko = "아제라이트 자루",
+				cn = "一大袋艾泽里特矿石",
+			},
+		},
+	
+		[290912] = {
+			readable = "Bag of Azerite",
+			model = 1982682,
+			text = {
+				en = "Bag of Azerite",
+				es = "Bolsa de azerita",
+				de = "Tasche mit Azerit",
+				fr = "Sac d’azérite",
+				it = "Borsa d'Azerite",
+				pt = "Bolsa de Azerita",
+				ru = "Мешок с азеритом",
+				ko = "아제라이트 가방",
+				cn = "一袋艾泽里特矿石",
+			},
+		},
+	
+		[290913] = {
+			readable = "Pouch of Azerite",
+			model = 1982682,
+			text = {
+				en = "Pouch of Azerite",
+				es = "Faltriquera de azerita",
+				de = "Beutel mit Azerit",
+				fr = "Bourse d’azérite",
+				it = "Sacchetto d'Azerite",
+				pt = "Pochete de Azerita",
+				ru = "Мешок азерита",
+				ko = "아제라이트 주머니",
+				cn = "一包艾泽里特矿石",
+			},
+		},
+	
+		[290914] = {
+			readable = "Kvaldir Haul",
+			model = 1402270,
+			text = {
+				en = "Kvaldir Haul",
+				es = "Botín kvaldir",
+				de = "Kvaldirbeute",
+				fr = "Prise kvaldir",
+				it = "Bottino dei Kvaldir",
+				pt = "Carregamento dos Kvaldir",
+				ru = "Схрон квалдиров",
+			},
+		},
+	
+		[290975] = {
+			readable = "Silver Nugget",
+			model = 392120,
+			text = {
+				en = "Silver Nugget",
+				es = "Pepita de plata",
+				de = "Silberklumpen",
+				fr = "Pépite d’argent",
+				it = "Pezzetto d'Argento",
+				pt = "Pepita de Prata",
+				ru = "Серебряный самородок",
+				ko = "은 조각",
+				cn = "银矿块",
+			},
+		},
+	
+		[290976] = {
+			readable = "Stromgarde Gate",
+			text = {
+				en = "Stromgarde Gate",
+				es = "Puerta de Stromgarde",
+				de = "Tor von Burg Stromgarde",
+				fr = "Porte de Stromgarde",
+				it = "Cancello di Stromgarde",
+				pt = "Portão de Stromgarde",
+				ru = "Ворота Стромгарда",
+				ko = "스트롬가드 관문",
+				cn = "激流堡大门",
+			},
+		},
+	
+		[290977] = {
+			readable = "Stromgarde Gate",
+			text = {
+				en = "Stromgarde Gate",
+				es = "Puerta de Stromgarde",
+				de = "Tor von Burg Stromgarde",
+				fr = "Porte de Stromgarde",
+				it = "Cancello di Stromgarde",
+				pt = "Portão de Stromgarde",
+				ru = "Ворота Стромгарда",
+				ko = "스트롬가드 관문",
+				cn = "激流堡大门",
+			},
+		},
+	
+		[290978] = {
+			readable = "Stromgarde Gate",
+			text = {
+				en = "Stromgarde Gate",
+				es = "Puerta de Stromgarde",
+				de = "Tor von Burg Stromgarde",
+				fr = "Porte de Stromgarde",
+				it = "Cancello di Stromgarde",
+				pt = "Portão de Stromgarde",
+				ru = "Ворота Стромгарда",
+				ko = "스트롬가드 관문",
+				cn = "激流堡大门",
+			},
+		},
+	
+		[290979] = {
+			readable = "Stromgarde Gate",
+			text = {
+				en = "Stromgarde Gate",
+				es = "Puerta de Stromgarde",
+				de = "Tor von Burg Stromgarde",
+				fr = "Porte de Stromgarde",
+				it = "Cancello di Stromgarde",
+				pt = "Portão de Stromgarde",
+				ru = "Ворота Стромгарда",
+				ko = "스트롬가드 관문",
+				cn = "激流堡大门",
+			},
+		},
+	
+		[290980] = {
+			readable = "General Jakra'zet",
+			model = 1830362,
+			text = {
+				en = "General Jakra'zet",
+				fr = "Général Jakra’zet",
+				it = "Generale Jakra'zet",
+				ru = "Генерал Джакра'зет",
+				ko = "장군 자크라제트",
+				cn = "加卡泽将军",
+			},
+		},
+	
+		[290981] = {
+			readable = "Tower",
+			text = {
+				en = "Tower",
+				es = "Torre",
+				de = "Turm",
+				fr = "Tour",
+				it = "Torre",
+				pt = "Torre",
+				ru = "Башня",
+				ko = "탑",
+				cn = "塔楼",
+			},
+		},
+	
+		[290982] = {
+			readable = "Wyvern Tower",
+			text = {
+				en = "Wyvern Tower",
+				es = "Torre de dracoleones",
+				de = "Wyvernturm",
+				fr = "Tour de wyvernes",
+				it = "Torre della Viverna",
+				pt = "Torre da Mantícora",
+				ru = "Башня виверн",
+				ko = "와이번 탑",
+				cn = "飞龙高塔",
+			},
+		},
+	
+		[290983] = {
+			readable = "Tower",
+			text = {
+				en = "Tower",
+				es = "Torre",
+				de = "Turm",
+				fr = "Tour",
+				it = "Torre",
+				pt = "Torre",
+				ru = "Башня",
+				ko = "탑",
+				cn = "塔楼",
+			},
+		},
+	
+		[290984] = {
+			readable = "Yazma",
+			model = 1830362,
+			text = {
+				en = "Yazma",
+				ru = "Язма",
+				ko = "야즈마",
+				cn = "亚兹玛",
+			},
+		},
+	
+		[290985] = {
+			readable = "Vol'kaal",
+			model = 1830362,
+			text = {
+				en = "Vol'kaal",
+				fr = "Vol’kaal",
+				ru = "Вол'каал",
+				ko = "볼카알",
+				cn = "沃卡尔",
+			},
+		},
+	
+		[290986] = {
+			readable = "Hexlord Raal",
+			model = 1830362,
+			text = {
+				en = "Hexlord Raal",
+				es = "Señor de los maleficios Raal",
+				de = "Hexfürst Raal",
+				fr = "Seigneur des maléfices Raal",
+				it = "Signore del Maleficio Raal",
+				pt = "Senhor da Bagata Raal",
+				ru = "Верховный ведун Раал",
+				ko = "사술군주 라알",
+				cn = "妖术领主拉尔",
+			},
+		},
+	
+		[290988] = {
+			readable = "Wardruid Loti",
+			model = 1830362,
+			text = {
+				en = "Wardruid Loti",
+				es = "Druida de guerra Loti",
+				de = "Kriegsdruidin Loti",
+				fr = "Druidesse de guerre Loti",
+				it = "Druida da Guerra Loti",
+				pt = "Druidesa-de-guerra Loti",
+				ru = "Боевой друид Лоти",
+				ko = "전쟁드루이드 로티",
+				cn = "战争德鲁伊罗缇",
+			},
+		},
+	
+		[290989] = {
+			readable = "Naga Stockpile",
+			model = 1096711,
+			text = {
+				en = "Naga Stockpile",
+				es = "Reserva naga",
+				de = "Nagavorräte",
+				fr = "Réserve naga",
+				it = "Deposito dei Naga",
+				pt = "Reserva Naga",
+				ru = "Схрон наг",
+				cn = "纳迦物资",
+			},
+		},
+	
+		[290991] = {
+			readable = "Swirling Postern",
+			model = 1122546,
+			text = {
+				en = "Swirling Postern",
+				es = "Portal trasero arremolinado",
+				de = "Strömende Pforte",
+				fr = "Poterne tourbillonnante",
+				it = "Manifesto Turbinante",
+				pt = "Poterna Convoluta",
+				ru = "Вихрящийся проход",
+				ko = "소용돌이치는 샛문",
+				cn = "回旋的暗道",
+			},
+		},
+	
+		[290992] = {
+			readable = "Zul the Prophet",
+			model = 1830362,
+			text = {
+				en = "Zul the Prophet",
+				es = "Zul el Profeta",
+				de = "Zul der Prophet",
+				fr = "Zul le Prophète",
+				it = "Zul il Profeta",
+				pt = "Zul, o Profeta",
+				ru = "Пророк Зул",
+				ko = "예언자 줄",
+				cn = "先知祖尔",
+			},
+		},
+	
+		[290993] = {
+			readable = "Irontide Loot",
+			icon = 1542856,
+			model = 446671,
+			text = {
+				en = "Irontide Loot",
+				es = "Botín de los Marea de Hierro",
+				de = "Beute der Eisenfluträuber",
+				fr = "Butin des Lamineurs",
+				it = "Bottino dei Marferreo",
+				pt = "Saque dos Maré-férrea",
+				ru = "Добыча братства Стальных Волн",
+				ko = "무쇠파도 전리품",
+				cn = "铁潮战利品",
+			},
+		},
+	
+		[290996] = {
+			readable = "Temple of Rezan Map",
+			model = 791611,
+			text = {
+				en = "Temple of Rezan Map",
+				es = "Mapa del Templo de Rezan",
+				de = "Karte des Tempels von Rezan",
+				fr = "Carte du temple de Rezan",
+				it = "Mappa del Tempio di Rezan",
+				pt = "Mapa do Templo de Rezan",
+				ru = "Карта храма Резана",
+				ko = "레잔의 사원 지도",
+				cn = "莱赞神殿地图",
+			},
+		},
+	
+		[290998] = {
+			readable = "Rope",
+			model = 1345432,
+			text = {
+				en = "Rope",
+			},
+		},
+	
+		[290999] = {
+			readable = "Rope",
+			model = 1345432,
+			text = {
+				en = "Rope",
+			},
+		},
+})
+do ObjectDB[objectID] = objectData; end
