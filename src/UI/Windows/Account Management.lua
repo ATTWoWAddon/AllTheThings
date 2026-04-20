@@ -253,7 +253,7 @@ local function SendMessageChunks(method, target, detail, msg, chunksize)
 			tinsert(chunks, chunk);
 		end
 		QueueSendChunks(method, target, detail, chunks);
-		--print("Generated " .. #chunks .. " chunks for encoded string!");
+		-- app.PrintDebug("Generated " .. #chunks .. " chunks for encoded string!");
 	else
 		method(target, msg);
 	end
@@ -678,13 +678,62 @@ local function b64decode(str)
 
     return bytes
 end
+local function rleEncodeBytes(bytes)
+    local out = {}
+    local n = #bytes
+    local i = 1
+
+    while i <= n do
+        local b = bytes[i]
+
+        if b == 0 then
+            -- compress zero run
+            local run = 1
+            while i + run <= n and bytes[i + run] == 0 and run < 255 do
+                run = run + 1
+            end
+            out[#out+1] = 0      -- marker: zero-run
+            out[#out+1] = run    -- run length
+            i = i + run
+        else
+            -- emit raw byte
+            out[#out+1] = b
+            i = i + 1
+        end
+    end
+
+    return out
+end
+
+local function rleDecodeBytes(bytes)
+    local out = {}
+    local n = #bytes
+    local i = 1
+
+    while i <= n do
+        local b = bytes[i]
+
+        if b == 0 then
+            -- zero-run marker
+            local run = bytes[i+1]
+            for _ = 1, run do
+                out[#out+1] = 0
+            end
+            i = i + 2
+        else
+            out[#out+1] = b
+            i = i + 1
+        end
+    end
+
+    return out
+end
 
 local function serializeSet(tbl)
     local rows = {}
 
     for value in pairs(tbl) do
         if value >= 1 and value <= 9999999 then
-            -- integer division instead of //
             local row = idiv(value - 1, ROW_BITS)
             local offset = (value - 1) % ROW_BITS
 
@@ -705,17 +754,12 @@ local function serializeSet(tbl)
     local parts = {}
 
     for rowIndex, rowData in pairs(rows) do
-        local encoded = b64encode(rowData)
+        -- RLE compress the byte array BEFORE Base64
+        local rle = rleEncodeBytes(rowData)
+        local encoded = b64encode(rle)
+
         parts[#parts+1] = rowIndex .. rowIdSep .. encoded
     end
-
-    app.PrintDebug("generated", #parts, "of serialized data")
-
-    -- table.sort(parts, function(a, b)
-    --     return tonumber(a:match("^(%d+)"..rowIdSep)) < tonumber(b:match("^(%d+)"..rowIdSep))
-    -- end)
-
-	app.PrintTable(parts)
 
     return table.concat(parts, rowEnd)
 end
@@ -723,33 +767,30 @@ ser.bitarray = serializeSet
 
 local function deserializeSet(str, result)
     result = result or {}
-	local rowmatch = "([^"..rowEnd.."]+)"
-	local b64match = "^(%d+)"..rowIdSep.."(.+)$"
+    local rowmatch = "([^"..rowEnd.."]+)"
+    local b64match = "^(%d+)"..rowIdSep.."(.+)$"
 
     for chunk in string.gmatch(str, rowmatch) do
         local rowIndex, b64 = chunk:match(b64match)
         rowIndex = tonumber(rowIndex)
 
-		app.PrintDebug("b64decode",b64,"from",chunk,"split via",rowmatch,"and matched via",b64match)
-        local bytes = b64decode(b64)
+        local rle = b64decode(b64)
+        local bytes = rleDecodeBytes(rle)
 
         for byteIndex = 1, #bytes do
             local byte = bytes[byteIndex]
             if byte ~= 0 then
                 for bitpos = 0, 7 do
-                    -- (byte & (1 << bitpos)) ~= 0
                     local mask = bit.lshift(1, bitpos)
                     if bit.band(byte, mask) ~= 0 then
                         local offset = (byteIndex - 1) * 8 + bitpos
                         local value = rowIndex * ROW_BITS + offset + 1
-                        result[value] = true
+                        result[value] = 1
                     end
                 end
             end
         end
     end
-
-	app.PrintTable(result)
 
     return result
 end
@@ -953,7 +994,7 @@ end
 local function expandTrie(node, prefix, out)
     if node.range then
         for d = node.range[1], node.range[2] do
-            out[tonumber(prefix .. d)] = true
+            out[tonumber(prefix .. d)] = 1
         end
         return
     end
@@ -961,7 +1002,7 @@ local function expandTrie(node, prefix, out)
     local newPrefix = prefix .. node.digit
 
     if node.leaf then
-        out[tonumber(newPrefix)] = true
+        out[tonumber(newPrefix)] = 1
     end
 
     for _, child in ipairs(node.children) do
@@ -988,7 +1029,7 @@ dser.trie = deserializeTrieSet
 function ATTSerialize(tbl)
 	local serialized = ser.bitarray(tbl)
 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
-		local deserialized = dser.bitarray(text)
+		local ok, deserialized = pcall(dser.bitarray, text)
 		DevTools_Dump(deserialized)
 	end)
 end
@@ -1075,28 +1116,11 @@ local defaultDeserializer = function(field, currentValue, data)
 		else
 			currentValue = {};
 		end
-		app.PrintDebug("deserialize",field,values[2])
 		-- if an empty table is transferred
-		if not values[2] or #values[2] == 0 then
+		if not values[2] or values[2] == "" then
 			return currentValue
 		end
 		dser.bitarray(values[2], currentValue)
-		-- for i=2,totalValues,1 do
-		-- 	local a,b = (">"):split(values[i]);
-		-- 	if b then
-		-- 		a = tonumber(a);
-		-- 		b = tonumber(b);
-		-- 		if (b - a) > 100000 then
-		-- 			app:ShowPopupDialogWithMultiLineEditBox("Rather than explode your RAM, Crieve decided instead to have you report this string of data to him for a fix.\n\nApologies for the inconvenience.\n\n" .. data[1], nil, "A parsing error occured during the sync process.");
-		-- 			break;
-		-- 		end
-		-- 		for j=a,b,1 do
-		-- 			currentValue[j] = 1;
-		-- 		end
-		-- 	else
-		-- 		currentValue[tonumber(a)] = 1;
-		-- 	end
-		-- end
 		return currentValue;
 	else
 		print("DEFAULT DESERIALIZER ENCOUNTERED UNHANDLED DATA TYPE");
@@ -1124,13 +1148,6 @@ local defaultSerializer = function(field, value, timeStamp, lastUpdated)
 			if next(value) then
 				return field .. ";" .. typeListID .. ":" .. ser.bitarray(value);
 			end
-			-- local keys = {};
-			-- for index,v in pairs(value) do
-			-- 	if v and index then tinsert(keys, tonumber(index)); end
-			-- end
-			-- if #keys > 0 then
-			-- 	return field .. ";" .. typeListID .. ":" .. SerializeSequentialKeys(keys);
-			-- end
 		elseif t == "boolean" then
 			if value then
 				return field .. ";" .. typeListID .. ":1";
@@ -1493,7 +1510,10 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 		local fieldName = fieldData[1];
 		tremove(fieldData, 1);
 		local data = deserializers[fieldName](fieldName, character[fieldName], fieldData, character);
-		if data then character[fieldName] = data; end
+		if data then
+			character[fieldName] = data;
+			-- app.PrintDebug("deserialized",fieldName,"@",fieldDataString:len(),"into",app.CountTable(data),"keys")
+		end
 	end
 
 	-- Notify the player.
@@ -1539,7 +1559,10 @@ MESSAGE_HANDLERS.request = function(self, sender, content, responses)
 	if str then rawData = rawData .. "," .. str; end
 	for field,value in pairs(character) do
 		local str = serializers[field](field, value, timeStamps[field] or maxTimeStamp, lastUpdated);
-		if str then rawData = rawData .. "," .. str; end
+		if str then
+			rawData = rawData .. "," .. str;
+			-- app.PrintDebug("serializing",field,"@",str:len(),"from",app.CountTable(value),"keys")
+		end
 	end
 	tinsert(responses, { detail = character.text, msg = rawData });
 end
