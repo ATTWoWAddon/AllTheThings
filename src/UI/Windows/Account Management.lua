@@ -1440,6 +1440,10 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 			left = "Right Click to Delete this Character",
 			r = 1, g = 0.8, b = 0.8
 		});
+		tinsert(tooltipInfo, {
+			left = "Shift-Left Click to Open Character Unique Data Window.",
+			r = 1, g = 0.8, b = 0.8
+		});
 		if character.ignored then
 			tinsert(tooltipInfo, {
 				left = "Alt-Right Click to Unignore this Character",
