@@ -1412,7 +1412,7 @@ local serializers = setmetatable({
 	end,
 });
 local function ReceiveCharacterSummary(self, sender, responses, guid, lastPlayed, shouldPrint)
-	app.PrintDebug("ReceiveCharacterSummary", guid, lastPlayed, shouldPrint);
+	-- app.PrintDebug("ReceiveCharacterSummary", guid, lastPlayed, shouldPrint);
 	if guid == app.GUID then return false; end
 	local character = CharacterData[guid];
 	if character then
