@@ -23,7 +23,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 						i(254283),	-- Rusty Axe (QI!)
 					}),
 					o(572029, {	-- Scarred Spear
-						["questID"] = 92375,
 						["groups"] = { i(250872) },	-- Scarred Spear
 					}),
 				},
@@ -210,6 +209,11 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["questID"] = 92383,
 				["cost"] = { { "i", 250880, 1 } },	-- Sandy Tapestry
 				["coord"] = { 45.9, 82.4, ARCANTINA },
+			}),
+			o(572446, {	-- Scarred Spear
+				["questID"] = 92375,
+				["cost"] = { { "i", 250872, 1 } },	-- Scarred Spear
+				["coord"] = { 67.0, 53.0, ARCANTINA },
 			}),
 			o(572454, {	-- Weathered Tome
 				["questID"] = 92381,
