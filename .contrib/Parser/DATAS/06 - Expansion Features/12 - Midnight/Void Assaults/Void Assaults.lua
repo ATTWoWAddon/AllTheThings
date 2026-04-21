@@ -614,6 +614,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				--["icon"] = ,
 				["coord"] = { 29.6, 77.9, MAP.MIDNIGHT.ZULAMAN },
 				["groups"] = {
+					i(269836, {	-- Chubs (PET!)
+						["coord"] = { 55.8, 49.6, BROKEN_THRONE },
+						["provider"] = { "n", 263355 },	-- Lost Bear Cub
+						["cost"] = { { "i", 242639, 1 } },	-- 1x Practically Pork
+					}),
+					i(260421, {	-- Void-Corrupted Amani Warbear Kit (MOUNT!)
+						-- TODO: Get ObjectID for the Meat Piles
+						["description"] = "Summon 'Chubs' at the Meat Piles. Defeat Angry Amani Warbears and then use 5x Practically Pork.",
+						["coord"] = { 55.8, 38.8, BROKEN_THRONE },
+						["cost"] = { { "i", 242639, 5 } },	-- 1x Practically Pork
+					}),
+					i(269828, {	-- Void-Corrupted Eagle Talon (MOUNT!)
+						["provider"] = { "n", 263527 },	-- Void-Corrupted Hex Eagle
+						["coords"] = {	-- TODO: Restructure Properly with ObjectIDs
+							{ 51.5, 47.8, BROKEN_THRONE },	-- Misplaced Ritual Candle
+							{ 50.6, 47.3, BROKEN_THRONE },	-- Ritual Candle
+						},
+						["cost"] = { { "i", 271999, 1 } },	-- 1x Misplaced Ritual Candle
+					}),
 					o(645183, {	-- Ethereal Treasure
 						["coord"] = { 40.9, 56.5, BROKEN_THRONE },
 						["groups"] = {
@@ -631,9 +650,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						["groups"] = {
 							i(271430),	-- Sculpted Treasure (QS!/QI!)
 						},
-					}),
-					i(269828, {	-- Void-Corrupted Eagle Talon (MOUNT!)
-						["cost"] = { { "i", 271999, 1 }, },	-- 1x Misplaced Ritual Candle
 					}),
 				},
 			}),
@@ -658,6 +674,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						["coord"] = { 58.8, 49.1, DAGGERSPINE_LANDING },
 						["groups"] = {
 							i(271427),	-- Exquisite Treasure (QS!/QI!)
+						},
+					}),
+					o(649380, {	-- Washed Up Kelp
+						["description"] = "Dig through the Kelp in order to gain attention of the Void-Touched Snapdragon.",
+						--["coord"] = { X, Y, DAGGERSPINE_LANDING },	-- TODO: Get the correct coords for the Kelp
+						["groups"] = {
+							n(263617, {	-- Void-Touched Snapdragon
+								i(270041),	-- Void-Touched Snapdragon (MOUNT!)
+							}),
 						},
 					}),
 				},

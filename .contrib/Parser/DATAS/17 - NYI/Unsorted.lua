@@ -99,7 +99,6 @@ root(ROOTS.Unsorted, {
 			i(259474),	-- Lost Amani Toy
 			i(259475),	-- Misplaced Loa Statue
 			i(260389),	-- Ren'dorei Aspirant's Bow
-			i(260421),	-- Void-Corrupted Amani Warbear Kit
 			i(260486),	-- Large Razorwind Farmer's Hay Pile
 			i(260487),	-- Razorwind Farmer's Hay Pile
 			i(260488),	-- Small Razorwind Farmer's Hay Pile
@@ -325,9 +324,7 @@ root(ROOTS.Unsorted, {
 			i(269768),	-- Nebulous Voidcache: Prey
 			i(269817),	-- Ritual Site Challenge Report: Tendrils
 			i(269829),	-- Void-Scarred Eaglet
-			i(269836),	-- Chubs
 			i(269999),	-- Overloaded Manaling
-			i(270041),	-- Void-Touched Snapdragon
 			i(270058),	-- Rope Lynx Harness
 			i(270061),	-- Void-Bathed Snapdragon
 			i(270062),	-- Void-Touched Chick
