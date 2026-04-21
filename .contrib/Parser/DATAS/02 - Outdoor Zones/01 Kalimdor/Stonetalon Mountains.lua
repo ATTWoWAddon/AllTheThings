@@ -900,6 +900,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								{ "i",  56795 },	-- Resonite Crystal
 								{ "o", 178104 },	-- Resonite Crystal
+								{ "o", 178105 },	-- Resonite Crystal
+								{ "o", 178106 },	-- Resonite Crystal
 							},
 							["coord"] = { 60.0, 87.5, STONETALON_MOUNTAINS },
 						}),

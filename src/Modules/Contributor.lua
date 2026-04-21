@@ -195,7 +195,8 @@ api.AddReportData = AddReportData
 -- 2) Stutter-step to the maximum distance which allows valid interaction
 -- 3) Interact with the object/quest (this should trigger a contrib report link, if not use /att report-reset and try again)
 -- 4) Check the 'coord distance' reported, and round it up to the next whole number
--- 5) That number goes into this table for the mapID
+-- 5) That number is then DOUBLED and added into this table for the mapID.
+-- Effectively, this number should represent 2x the Interaction Coord Distance for a given map
 local MapPrecisionOverrides = {
 	  [24] = 2,	-- Light's Hope Chapel
 	  [46] = 3,	-- Karazhan Catacombs
