@@ -4381,6 +4381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6136, {	-- The Corpulent One
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					["sourceQuest"] = 6133,	-- The Ranger Lord's Behest
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 23.0, 68.2, EASTERN_PLAGUELANDS },
