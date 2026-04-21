@@ -160,9 +160,9 @@ CREATED_1_14_3 = "created 1.14.3.43154";					-- World of Warcraft Classic 1.14.3
 ADDED_1_14_3 = "added 1.14.3.43154";						-- World of Warcraft Classic 1.14.3 launch on April 19th, 2022
 REMOVED_1_14_3 = "removed 1.14.3.43154";					-- World of Warcraft Classic 1.14.3 launch on April 19th, 2022
 --- HARDCORE ---
-CREATED_1_14_4 = "created 1.14.3.51001";					-- World of Warcraft Classic 1.14.4 launch on August 22th, 2023
-ADDED_1_14_4 = "added 1.14.3.51001";						-- World of Warcraft Classic 1.14.4 launch on August 22th, 2023
-REMOVED_1_14_4 = "removed 1.14.3.51001";					-- World of Warcraft Classic 1.14.4 launch on August 22th, 2023
+CREATED_1_14_4 = "created 1.14.4.50643";					-- World of Warcraft Classic 1.14.4 launch on August 22th, 2023
+ADDED_1_14_4 = "added 1.14.4.50643";						-- World of Warcraft Classic 1.14.4 launch on August 22th, 2023
+REMOVED_1_14_4 = "removed 1.14.4.50643";					-- World of Warcraft Classic 1.14.4 launch on August 22th, 2023
 --- SEASON OF DISCOVERY ---
 CREATED_1_15_0 = "created 1.15.0.52186";					-- World of Warcraft Classic 1.15.0 launch on November 14th, 2023
 ADDED_1_15_0 = "added 1.15.0.52186";						-- World of Warcraft Classic 1.15.0 launch on November 14th, 2023
