@@ -596,6 +596,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(263941),	-- Void-Touched Rifle
 								i(263956),	-- Void-Touched Smasher
 								i(263950),	-- Void-Touched Spade
+								i(273874),	-- Void-Touched Sunfury Poleaxe
 								i(263952),	-- Void-Touched Sunfury Stave
 								i(263959),	-- Void-Touched Tome
 							},
