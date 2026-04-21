@@ -255,6 +255,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(262729),	-- Hand of the Rootkeeper
 			i(262732),	-- Heavy Bramblebolter
 			i(251935),	-- Lightgrasp Worldroot
+			i(264970),	-- Oblivion's Edge
 			i(249669),	-- Organ Piercer's Briarspear
 			i(251885),	-- Radiant Foil
 			i(249610),	-- Resinous Blossomblade

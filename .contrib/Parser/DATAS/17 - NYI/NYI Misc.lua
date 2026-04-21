@@ -1367,7 +1367,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(205259),	-- Order Soul
 			i(207096),	-- Paracausal Chest
 			i(207102),	-- TESTING ITEM DELETE ME
-			i(205146),	-- Weyrnstone
 		})),
 
 		-- 10.1.7
@@ -2102,11 +2101,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(255687),	-- Huge Bag of Midnight Optional Goods
 			i(255682),	-- Huge Bag of Midnight Skinss
 			i(255691),	-- Huge Bag of Midnight Tailoring Goods
-
-			-- Objects referenced by achievement 61344 (Chronicler of the Haranir) which parser complains about, wowhead doesn't know them
-			o(579201),	-- ???
-			o(579202),	-- ???
-			o(579203),	-- ???
 		})),
 	}),
 }));

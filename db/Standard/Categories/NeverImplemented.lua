@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.NeverImplemented={
 h(-12,{
 x(1,{
@@ -13367,8 +13367,7 @@ x(10.0105,{awp=100105,g={
 i(208097,{b=1,spellID=417740}),
 i(205259,{b=1}),
 i(207096,{b=1}),
-i(207102),
-i(205146,{b=1,f=55,spellID=408234})}}),
+i(207102)}}),
 x(10.0107,{awp=100107,g={
 i(208549,{b=1}),
 i(208783),
@@ -14051,13 +14050,7 @@ i(255684,{b=1,f=55}),
 i(255679,{b=1,f=55}),
 i(255687,{b=1,f=55}),
 i(255682,{b=1,f=55}),
-i(255691,{b=1,f=55}),
-o(579201,{awp=120001,g={
-crit(109316,{achID=61344,id=19})}}),
-o(579202,{awp=120001,g={
-crit(109317,{achID=61344,id=20})}}),
-o(579203,{awp=120001,g={
-crit(109318,{achID=61344,id=21})}})})}})}),
+i(255691,{b=1,f=55})})}})}),
 h(-41,{
 x(10,{
 x(10.0000001,{awp=100000,g={
@@ -16630,9 +16623,9 @@ r(473408,{itemID=233203,requireSkill=202,skillID=2506})}})}),
 x(12,{awp=120000,g={
 x(12.0000001,{
 r(1261938,{learnedAt=70,requireSkill=202,skillID=2910}),
-r(1229918,{learnedAt=70,requireSkill=202,skillID=2910}),
+r(1229918,{requireSkill=202}),
 r(1229925,{learnedAt=30,requireSkill=202,skillID=2910}),
-r(1229929,{learnedAt=70,requireSkill=202,skillID=2910}),
+r(1229929,{requireSkill=202}),
 r(1229934,{requireSkill=202})})}})})}),
 prof(129,{
 h(-23,{
@@ -46949,7 +46942,7 @@ s(292159,244387,{f=6}),
 s(292160,244388,{f=6}),
 s(292161,244389,{f=3}),
 s(292162,244390,{f=6}),
-s(292163,244391,{f=6}),
+s(292163,244391),
 s(292174,244402,{f=5}),
 s(292175,244403,{f=5}),
 s(292176,244404,{f=5}),
@@ -48915,13 +48908,7 @@ toy(258129),
 toy(250320,{b=1})})}})}),
 h(-56,{awp=120000,g={
 x(12,{
-x(12.0000001,{
-o(579201,{awp=120001,g={
-crit(109316,{achID=61344,id=19})}}),
-o(579202,{awp=120001,g={
-crit(109317,{achID=61344,id=20})}}),
-o(579203,{awp=120001,g={
-crit(109318,{achID=61344,id=21})}})})})}}),
+x(12.0000001)})}}),
 h(-101,{
 flt(32,{
 x(1,{

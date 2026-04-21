@@ -1935,6 +1935,7 @@ i(207034);	-- Railgun
 i(208029);	-- Scareloc Parts
 i(207032);	-- Shrapnel Spreader
 i(207035);	-- Thunderbolt
+i(205146);	-- Weyrnstone (Source to Aug Evoker somehow? However a healthstone would be sourced)
 
 ------------------
 -- PATCH 10.1.7 --

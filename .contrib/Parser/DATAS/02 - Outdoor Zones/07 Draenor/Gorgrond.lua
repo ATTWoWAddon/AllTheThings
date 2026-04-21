@@ -2839,7 +2839,7 @@ root(ROOTS.Zones, {
 						}),
 						o(236348, {	-- Ancient Ogre Cache
 							["questID"] = 36740,
-							["coord"] = { 61.5, 58.6, GORGROND },
+							["coord"] = { 45.0, 69.9, GORGROND },
 						}),
 						o(236284, {	-- Ancient Ogre Cache
 							["questID"] = 36782,

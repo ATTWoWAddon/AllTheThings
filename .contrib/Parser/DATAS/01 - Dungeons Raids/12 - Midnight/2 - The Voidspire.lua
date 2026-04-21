@@ -516,5 +516,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93995, name(HEADERS.NPC, 240864)),	-- Blinky
 		q(95344, name(HEADERS.NPC, 240831)),	-- Voidlight Everdawn
 		q(93991, name(HEADERS.NPC, 252067)),	-- Terrace Watcher
+		q(93987, name(HEADERS.NPC, 252070)),	-- Celestial Behemoth
 	})),
 }));

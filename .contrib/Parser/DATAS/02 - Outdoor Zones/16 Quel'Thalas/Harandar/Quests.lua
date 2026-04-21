@@ -60,11 +60,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							o(527117, {	-- Iceberry Bush
 								["coords"] = {
-									{ 35.8, 46.6, MAP.MIDNIGHT.HARANDAR },
-									{ 36.0, 45.4, MAP.MIDNIGHT.HARANDAR },
+									{ 35.1, 44.4, MAP.MIDNIGHT.HARANDAR },
+									{ 35.2, 45.1, MAP.MIDNIGHT.HARANDAR },
+									{ 35.4, 45.7, MAP.MIDNIGHT.HARANDAR },
+									{ 36.2, 47.3, MAP.MIDNIGHT.HARANDAR },
+									{ 36.3, 44.4, MAP.MIDNIGHT.HARANDAR },
+									{ 36.3, 44.5, MAP.MIDNIGHT.HARANDAR },
+									{ 36.3, 45.6, MAP.MIDNIGHT.HARANDAR },
+									{ 36.4, 47.5, MAP.MIDNIGHT.HARANDAR },
+									{ 36.5, 45.8, MAP.MIDNIGHT.HARANDAR },
+									{ 36.9, 45.2, MAP.MIDNIGHT.HARANDAR },
 									{ 36.9, 47.0, MAP.MIDNIGHT.HARANDAR },
-									{ 36.9, 48.1, MAP.MIDNIGHT.HARANDAR },
-									{ 37.5, 46.4, MAP.MIDNIGHT.HARANDAR },
+									{ 37.1, 47.9, MAP.MIDNIGHT.HARANDAR },
+									{ 37.5, 46.3, MAP.MIDNIGHT.HARANDAR },
 								},
 								["groups"] = { i(239014) },	-- Iceberries (QI!)
 							}),
@@ -300,13 +308,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							o(508709, {	-- Aln Mushroom
 								["coords"] = {
-									{ 63.8, 61.4, MAP.MIDNIGHT.HARANDAR },
-									{ 64.2, 62.3, MAP.MIDNIGHT.HARANDAR },
+									{ 63.0, 60.4, MAP.MIDNIGHT.HARANDAR },
+									{ 63.0, 60.5, MAP.MIDNIGHT.HARANDAR },
+									{ 63.7, 61.4, MAP.MIDNIGHT.HARANDAR },
+									{ 64.2, 62.2, MAP.MIDNIGHT.HARANDAR },
 									{ 64.4, 59.9, MAP.MIDNIGHT.HARANDAR },
-									{ 65.0, 63.1, MAP.MIDNIGHT.HARANDAR },
+									{ 64.9, 59.4, MAP.MIDNIGHT.HARANDAR },
+									{ 64.9, 63.1, MAP.MIDNIGHT.HARANDAR },
+									{ 65.1, 61.1, MAP.MIDNIGHT.HARANDAR },
 									{ 65.3, 61.9, MAP.MIDNIGHT.HARANDAR },
 									{ 65.4, 60.4, MAP.MIDNIGHT.HARANDAR },
 									{ 66.0, 60.9, MAP.MIDNIGHT.HARANDAR },
+									{ 66.4, 62.9, MAP.MIDNIGHT.HARANDAR },
 								},
 								["groups"] = { i(238651) },	-- Alngrown Fungus (QI!)
 							}),
@@ -669,6 +682,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["coords"] = {
 									{ 47.4, 22.1, MAP.MIDNIGHT.HARANDAR },
 									{ 47.4, 23.0, MAP.MIDNIGHT.HARANDAR },
+									{ 47.5, 22.5, MAP.MIDNIGHT.HARANDAR },
 									{ 49.0, 23.0, MAP.MIDNIGHT.HARANDAR },
 									{ 49.3, 21.9, MAP.MIDNIGHT.HARANDAR },
 									{ 49.5, 22.3, MAP.MIDNIGHT.HARANDAR },
@@ -1193,11 +1207,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["coords"] = {
 									{ 39.7, 53.1, MAP.MIDNIGHT.HARANDAR },
 									{ 40.3, 56.3, MAP.MIDNIGHT.HARANDAR },
+									{ 40.3, 56.5, MAP.MIDNIGHT.HARANDAR },
 									{ 40.4, 54.4, MAP.MIDNIGHT.HARANDAR },
+									{ 40.4, 54.6, MAP.MIDNIGHT.HARANDAR },
 									{ 40.4, 59.7, MAP.MIDNIGHT.HARANDAR },
+									{ 40.5, 54.6, MAP.MIDNIGHT.HARANDAR },
+									{ 40.5, 59.7, MAP.MIDNIGHT.HARANDAR },
 									{ 41.0, 52.2, MAP.MIDNIGHT.HARANDAR },
-									{ 41.0, 58.0, MAP.MIDNIGHT.HARANDAR },
+									{ 41.0, 57.9, MAP.MIDNIGHT.HARANDAR },
 									{ 42.3, 52.4, MAP.MIDNIGHT.HARANDAR },
+									{ 42.3, 52.5, MAP.MIDNIGHT.HARANDAR },
 									{ 43.1, 54.2, MAP.MIDNIGHT.HARANDAR },
 									{ 44.7, 54.1, MAP.MIDNIGHT.HARANDAR },
 								},

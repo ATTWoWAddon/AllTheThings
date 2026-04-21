@@ -621,7 +621,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 22.6, 15.0, THUNDER_BLUFF },	-- Archmage Shymm
-						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven
+						{ 59.2, 19.7, SILVERMOON_CITY },	-- Inethven
 						{ 85.2, 14.2, UNDERCITY },	-- Kaelystia Hatebringer
 					},
 					["timeline"] = { ADDED_4_0_3 },

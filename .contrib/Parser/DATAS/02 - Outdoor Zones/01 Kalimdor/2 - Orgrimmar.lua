@@ -846,7 +846,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coords"] = {
 						{ 22.8, 14.5, THUNDER_BLUFF },	-- Archmage Shymm <Mage Trainer>
 						{ 85.0, 14.0, UNDERCITY },	-- Kaelystia Hatebringer <Mage Trainer>
-						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven <Mage Trainer>
+						{ 59.2, 19.7, SILVERMOON_CITY },	-- Inethven <Mage Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { MAGE },

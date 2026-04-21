@@ -27,7 +27,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37092, {	-- Scraps of Iron
-							["qg"] = 77377,	-- Kristen Stoneforge
+							["qg"] = 77377,	-- Kristen Stoneforge <Quartermaster>
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = { i(118365) },	-- Stormwind Tabard
 						}),

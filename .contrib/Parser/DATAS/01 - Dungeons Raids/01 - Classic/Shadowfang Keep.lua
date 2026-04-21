@@ -373,8 +373,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27403, {	-- A True Sunwalker
 					["sourceQuest"] = 27304,	-- Follow the Sun [CATA] / Meet with Avaros Dawnglaive [Tauren] [SL+]
-					["qg"] = 44725,	-- Sunwalker Atohmo
-					["coord"] = { 45.2, 53.6, ORGRIMMAR },
+					["qgs"] = {
+						44725,	-- Sunwalker Atohmo
+						-- #if AFTER SL
+						168597,	-- Avaros Dawnglaive <Paladin Trainer>
+						-- #endif
+					},
+					["coords"] = {
+						{ 45.2, 53.6, ORGRIMMAR },
+						-- #if AFTER SL
+						{ 73.6, 46.8, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },

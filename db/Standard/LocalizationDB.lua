@@ -1724,10 +1724,13 @@ localize(L.HEADER_NAMES, {
 	[-738] = "Legends of the Haranir",
 	[-739] = COVENANT_SANCTUM_TAB_RENOWN.." 2",
 	[-740] = COVENANT_SANCTUM_TAB_RENOWN.." 4",
+	[-741] = "Void Assaults",
+	[-742] = "Ritual Sites",
 	[-743] = COVENANT_SANCTUM_TAB_RENOWN.." 9",
 	[-745] = "Mail Delivery Races",
 	[-746] = "Profession Nodes",
 	[-748] = "Fanta",
+	[-749] = "Decor Duel",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1845,6 +1848,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
 	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
 	[-748] = "Go to https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, play a short game and get 1 reward per week. Sweepstakes starts on April 1, 2026 and ends at 11:59 pm ET on July 30, 2026 or once all rewards have been claimed, whichever occurs first. 2392 of each reward available per week. Resets at 12:00 am ET weekly. No purchase necessary.",
+	[-749] = "Decor Duel is a team-based prop hunt event in Silvermoon City, offering a fun activity to escape the madness of the Void invasion with a friendly magical game of hide and seek.\n\nPlayers can access the Decor Duel queue through the Quick Match section in the PvP tab of the Group Finder. Teams of up to 5 can queue up together for this casual PvP activity. Groups of 1 to 4 players will be matched with other random queuers.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2444,10 +2448,13 @@ localize(L.HEADER_ICONS, {
 	[-738] = 7491037,
 	[-739] = 5015301,
 	[-740] = 5015301,
+	[-741] = 7501330,
+	[-742] = 136194,
 	[-743] = 5015301,
 	[-745] = 413580,
 	[-746] = 4622272,
 	[-748] = 4672182,
+	[-749] = 1392559,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -2609,6 +2616,7 @@ localize(L.EVENT_REMAPPING, {
 	[1708] = 239,
 	[1709] = 239,
 	[1710] = 239,
+	[1807] = 447,
 });
 
 localize(L.EVENT_TIMERUNNING_SEASONS, {
@@ -21835,7 +21843,6 @@ local ObjectModels = {
 	[577798] = 6017293,
 	[577799] = 6017293,
 	[577800] = 6017293,
-	[577805] = 6080357,
 	[577999] = 6922313,
 	[578023] = 6922313,
 	[578030] = 4417263,

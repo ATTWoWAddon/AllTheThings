@@ -1373,7 +1373,18 @@ x(12,{awp=120001,g={
 ach(61438),
 ach(61439),
 ach(61440,{
-i(264882,{f=55})}),
+i(264882,{f=55}),
+crit(104484,{achID=61440,id=1,learnedAt=100,requireSkill=171}),
+crit(103372,{achID=61440,id=2,learnedAt=100,requireSkill=164}),
+crit(105036,{achID=61440,id=3,learnedAt=100,requireSkill=333}),
+crit(106452,{achID=61440,id=4,learnedAt=100,requireSkill=202}),
+crit(103371,{achID=61440,id=5,learnedAt=100,requireSkill=182}),
+crit(106434,{achID=61440,id=6,learnedAt=100,requireSkill=773}),
+crit(104405,{achID=61440,id=7,learnedAt=100,requireSkill=755}),
+crit(105195,{achID=61440,id=8,learnedAt=100,requireSkill=165}),
+crit(103732,{achID=61440,id=9,learnedAt=100,requireSkill=186}),
+crit(103872,{achID=61440,id=10,learnedAt=100,requireSkill=393}),
+crit(103369,{achID=61440,id=11,learnedAt=100,requireSkill=197})}),
 ach(61441)}})}),
 h(-489,{awp=100002,g={
 h(-12,{
@@ -2986,7 +2997,7 @@ i(90735,{b=1,requireSkill=185})}}),
 q(31332,{isDaily=1,lvl=10,maxReputation={1357,2},minReputation={1357,1},qgs={64337},qis={74660},requireSkill=185,g={
 i(86057,{f=55,lvl=30,spellID=104235})}}),
 q(31333,{isDaily=1,lvl=10,maxReputation={1357,3},minReputation={1357,2},qgs={64337},qis={74854},requireSkill=185,g={
-i(86026,{f=55,lvl=31,spellID=104261})}}),
+i(86026,{f=55,lvl=31,spellID=1290928})}}),
 q(31334,{isDaily=1,lvl=10,maxReputation={1357,4},minReputation={1357,3},qgs={64337},qis={74866},requireSkill=185,g={
 i(81402,{f=55,lvl=10,spellID=124241})}}),
 q(31335,{isDaily=1,lvl=10,maxReputation={1357,5},minReputation={1357,4},qgs={64337},qis={85583},requireSkill=185,g={
@@ -4437,7 +4448,7 @@ r(1229872,{cost={{"c",3153,1}},learnedAt=90,requireSkill=202,skillID=2910}),
 r(1229921,{cost={{"c",3153,1}},learnedAt=70,requireSkill=202,skillID=2910}),
 r(1229906,{cost={{"c",3153,1}},learnedAt=80,requireSkill=202,skillID=2910}),
 r(1229924,{cost={{"c",3153,1}},learnedAt=70,requireSkill=202,skillID=2910}),
-r(1282456,{cost={{"c",3153,1}},requireSkill=202,skillID=2910}),
+r(1282456,{cost={{"c",3153,1}},learnedAt=90,requireSkill=202,skillID=2910}),
 r(1229902,{cost={{"c",3153,1}},learnedAt=80,requireSkill=202,skillID=2910}),
 r(1229905,{cost={{"c",3153,1}},learnedAt=40,requireSkill=202,skillID=2910}),
 r(1229897,{cost={{"c",3153,1}},learnedAt=80,requireSkill=202,skillID=2910}),
@@ -7778,7 +7789,7 @@ flt(200,{description="These are learned by specialization.",requireSkill=186,g={
 r(1225392,{cost={{"c",3158,1}},requireSkill=186})}}),
 h(-56,{requireSkill=186,g={
 o(525908,{coords={
-[2536]={{33.3,65.9}}},questID=89149,requireSkill=186,g={
+[2536]={{33.5,66.2}}},questID=89149,requireSkill=186,g={
 i(238601,{b=1,requireSkill=186,spellID=1225656})}}),
 o(525909,{coords={
 [2444]={{28.8,38.5}}},questID=89148,requireSkill=186,g={

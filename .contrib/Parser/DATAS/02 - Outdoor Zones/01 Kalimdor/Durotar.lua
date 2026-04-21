@@ -2336,6 +2336,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(41002, {	-- A Weapon of the Horde
 					["sourceQuest"] = 40983,	-- Demons Among Them
 					["qg"] = 101035,	-- Lady Sylvanas Windrunner
+					["coord"] = { 45.7, 16.0, DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },

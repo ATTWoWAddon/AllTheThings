@@ -381,11 +381,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--	["cost"] = { { "c", CHAMPION_DAWNCREST, 30 } },
 					--	["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					--}),
-					--i(XXXX, {	-- ???
-					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
-					--	["cost"] = { { "c", HERO_DAWNCREST, 30 } },
-					--	["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
-					--}),
+					i(246753, {	-- Glorious Cluster of Myth Dawncrests
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
+						["cost"] = { { "c", HERO_DAWNCREST, 30 } },
+						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+					}),
 				},
 			}),
 			n(239670, {	-- Vaultkeeper Elysa <Token of Merit Exchange>

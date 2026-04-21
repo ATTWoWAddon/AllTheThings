@@ -2628,8 +2628,10 @@ local AccountWideQuestsDB = {
 	93784,	-- A Gnawing Void of Curiosity
 	93817,	-- Quest #93817*
 	93818,	-- Quest #93818*
-	93819,	-- Quest #93819*
-	93821,	-- Quest #93821*
+	93819,	-- Amani Rep
+	93820,	-- The Singularity Rep
+	93821,	-- Silvermoon Court Rep
+	93822,	-- Hara'ti Rep
 	93866,	-- Quest #93866*
 	93872,	-- Prey Complete - Normal #1
 	93873,	-- ??

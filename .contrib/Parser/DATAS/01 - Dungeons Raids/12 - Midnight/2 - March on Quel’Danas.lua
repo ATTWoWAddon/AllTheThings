@@ -99,7 +99,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(QUESTS, {
 					q(93924, {	-- An Unrelenting March
-
+						["qg"] = 90092,	-- Hurried Courier
 					}),
 				}),
 				BossOnly(BELOREN, {

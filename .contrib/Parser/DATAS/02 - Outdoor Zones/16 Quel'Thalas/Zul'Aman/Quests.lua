@@ -517,13 +517,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							o(525374, {	-- Stolen Equipment
 								["coords"] = {
-									{ 29.9, 27.9, MAP.MIDNIGHT.ZULAMAN },
-									{ 29.6, 29.0, MAP.MIDNIGHT.ZULAMAN },
-									{ 30.3, 27.7, MAP.MIDNIGHT.ZULAMAN },
+									{ 28.9, 29.7, MAP.MIDNIGHT.ZULAMAN },
+									{ 29.2, 30.5, MAP.MIDNIGHT.ZULAMAN },
+									{ 29.3, 28.3, MAP.MIDNIGHT.ZULAMAN },
+									{ 29.3, 29.0, MAP.MIDNIGHT.ZULAMAN },
+									{ 29.5, 29.0, MAP.MIDNIGHT.ZULAMAN },
+									{ 29.5, 29.6, MAP.MIDNIGHT.ZULAMAN },
+									{ 29.9, 31.0, MAP.MIDNIGHT.ZULAMAN },
 									{ 30.3, 28.4, MAP.MIDNIGHT.ZULAMAN },
 									{ 30.4, 27.3, MAP.MIDNIGHT.ZULAMAN },
+									{ 30.5, 27.3, MAP.MIDNIGHT.ZULAMAN },
+									{ 30.5, 29.8, MAP.MIDNIGHT.ZULAMAN },
+									{ 30.6, 30.8, MAP.MIDNIGHT.ZULAMAN },
 									{ 30.7, 27.6, MAP.MIDNIGHT.ZULAMAN },
-									{ 30.8, 27.6, MAP.MIDNIGHT.ZULAMAN },
+									{ 30.7, 29.1, MAP.MIDNIGHT.ZULAMAN },
+									{ 31.7, 29.8, MAP.MIDNIGHT.ZULAMAN },
 								},
 								["groups"] = { i(238964) },	-- Stolen Equipment (QI!)
 							}),
@@ -941,18 +949,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							o(617375, {	-- Murloc-Skewered Lynxfish
 								["coords"] = {
+									{ 48.6, 58.4, MAP.MIDNIGHT.ZULAMAN },
 									{ 48.6, 58.5, MAP.MIDNIGHT.ZULAMAN },
 									{ 48.7, 59.5, MAP.MIDNIGHT.ZULAMAN },
 									{ 48.8, 56.5, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.0, 56.4, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.3, 60.6, MAP.MIDNIGHT.ZULAMAN },
-									{ 49.8, 59.6, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.9, 59.4, MAP.MIDNIGHT.ZULAMAN },
+									{ 49.9, 59.5, MAP.MIDNIGHT.ZULAMAN },
 									{ 49.9, 61.2, MAP.MIDNIGHT.ZULAMAN },
 									{ 50.4, 58.3, MAP.MIDNIGHT.ZULAMAN },
+									{ 50.5, 58.3, MAP.MIDNIGHT.ZULAMAN },
 									{ 51.9, 59.9, MAP.MIDNIGHT.ZULAMAN },
 									{ 52.0, 60.8, MAP.MIDNIGHT.ZULAMAN },
 									{ 52.4, 61.5, MAP.MIDNIGHT.ZULAMAN },
+									{ 52.5, 61.4, MAP.MIDNIGHT.ZULAMAN },
+									{ 52.5, 61.5, MAP.MIDNIGHT.ZULAMAN },
 								},
 								["groups"] = { i(263202) },	-- Murloc-Skewered Lynxfish (QI!)
 							}),

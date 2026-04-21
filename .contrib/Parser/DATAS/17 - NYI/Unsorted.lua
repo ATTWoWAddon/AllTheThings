@@ -737,7 +737,6 @@ root(ROOTS.Unsorted, {
 				i(246748),	-- Pouch of Weathered Ethereal Crests
 				i(246749),	-- Satchel of Carved Ethereal Crests
 				i(246750),	-- Pack of Runed Ethereal Crests
-				i(246753),	-- Glorious Cluster of Myth Dawncrests \\ Glorious Cluster of Gilded Dawncrests (ilvl req?, icon, currency)
 
 				-- Cache?
 				i(251286),	-- Bundle of Petrified Roots
@@ -1197,7 +1196,6 @@ root(ROOTS.Unsorted, {
 				i(263576),	-- Ensemble: Rampant Thorn Armor
 				i(263577),	-- Arsenal: Rootlands Weaponry
 				i(264969),	-- Extinction Voulge
-				i(264970),	-- Oblivion's Edge
 				i(264971),	-- Annihilation Rod
 				i(266077),	-- Basic Black Quiver
 				i(266078),	-- Basic Blue Quiver

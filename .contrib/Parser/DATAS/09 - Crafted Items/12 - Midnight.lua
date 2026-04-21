@@ -2170,11 +2170,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(90722),	-- 15/20 Synthesis Synergy
 			--q(TODO),	-- 20/20 Synthesis Synergy
 		}),
-		prof(TAILORING, {
-			q(89422),	-- 0/20 Arcanoweave Expertise
-			q(89423),	-- 20/20 Arcanoweave Expertise
-			q(89460),	-- 0/20 Sunfire Expertise
-			q(89461),	-- 20/20 Sunfire Expertise
+		prof(MINING, {
+			q(87670),	-- 40/40 Over-LODED
 		}),
 		prof(SKINNING, {
 			q(88522),	-- 20/40 Thorough Tanning (2nd charge)
@@ -2209,5 +2206,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(93636, name(HEADERS.NPC, 242024)),	-- Skinning The Snapping Scourge
 			q(88532, name(HEADERS.NPC, 247096)),	-- Skinning Umbrafang
 		})),
+		prof(TAILORING, {
+			q(89422),	-- 0/20 Arcanoweave Expertise
+			q(89423),	-- 20/20 Arcanoweave Expertise
+			q(89460),	-- 0/20 Sunfire Expertise
+			q(89461),	-- 20/20 Sunfire Expertise
+		}),
 	}),
 })));

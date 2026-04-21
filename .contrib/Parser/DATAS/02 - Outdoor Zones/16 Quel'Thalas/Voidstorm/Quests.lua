@@ -668,11 +668,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							o(573747, {	-- Mature Blood Petal
 								["coords"] = {
 									{ 34.3, 47.4, MAP.MIDNIGHT.VOIDSTORM },
+									{ 34.3, 47.5, MAP.MIDNIGHT.VOIDSTORM },
 									{ 34.4, 45.4, MAP.MIDNIGHT.VOIDSTORM },
+									{ 34.4, 45.5, MAP.MIDNIGHT.VOIDSTORM },
 									{ 34.7, 47.8, MAP.MIDNIGHT.VOIDSTORM },
 									{ 34.9, 46.5, MAP.MIDNIGHT.VOIDSTORM },
 									{ 35.4, 46.2, MAP.MIDNIGHT.VOIDSTORM },
 									{ 35.4, 48.5, MAP.MIDNIGHT.VOIDSTORM },
+									{ 35.6, 46.4, MAP.MIDNIGHT.VOIDSTORM },
 									{ 35.8, 47.2, MAP.MIDNIGHT.VOIDSTORM },
 									{ 35.9, 48.1, MAP.MIDNIGHT.VOIDSTORM },
 								},
