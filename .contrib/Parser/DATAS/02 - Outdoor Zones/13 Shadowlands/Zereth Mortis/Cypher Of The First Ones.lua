@@ -375,9 +375,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(373474, {	-- Cantaric Cache
 					["coords"] = {
-						{ 38.5, 63.2, ZERETH_MORTIS },
-						{ 53.0, 45.6, ZERETH_MORTIS },
-						{ 43.7, 21.5, ZERETH_MORTIS },
+						{ 43.7, 21.7, ZERETH_MORTIS },
+						{ 53.0, 45.4, ZERETH_MORTIS },
+						{ 53.1, 45.5, ZERETH_MORTIS },
+						{ 65.6, 40.9, ZERETH_MORTIS },
 					},
 					["questID"] = 65094,
 				}),

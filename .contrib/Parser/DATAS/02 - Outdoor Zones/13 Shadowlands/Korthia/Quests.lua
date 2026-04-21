@@ -1632,7 +1632,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["coord"] = { 64.6, 25.4, KORTHIA },
 				["groups"] = {
-					i(186171),	-- Observational Record (QI!)
+					o(368627, {	-- Observation Device
+						i(186171),	-- Observational Record (QI!)
+					}),
 				},
 			}),
 			q(64103, {	-- Old Tricks Work Best
@@ -1716,7 +1718,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["coord"] = { 64.6, 25.4, KORTHIA },
 				["groups"] = {
-					i(186167),	-- Sealed Container (QI!)
+					o(368623, {	-- Drop Box
+						i(186167),	-- Sealed Container (QI!)
+					}),
 				},
 			}),
 			q(63956, {	-- Sealed Secrets

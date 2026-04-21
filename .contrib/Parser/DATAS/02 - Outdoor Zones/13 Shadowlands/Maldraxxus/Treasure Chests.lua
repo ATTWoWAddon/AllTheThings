@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "o", 341416 },	-- Vault Portcullis Chain
 				["coords"] = {
 					{ 22.5, 30.5, MALDRAXXUS },
-					{ 25.8, 53.8, MALDRAXXUS },	-- Chain
+					{ 25.8, 53.8, 1649 },	-- Etheric Vault
 				},
 				["questID"] = 58710,
 			}),

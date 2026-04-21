@@ -841,8 +841,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 27.1, 51.7, MALDRAXXUS },
 				["_drop"] = { "isDaily" },
 				["groups"] = {
-					i(171205),	-- Foe Cleaver (QI!)
-					i(171206),	-- Forgotten Weapon (QI!)
+					o(334587, {	-- Forgotten Weapon
+						i(171205),	-- Foe Cleaver (QI!)
+						i(171206),	-- Forgotten Weapon (QI!)
+					}),
 				},
 			}),
 			q(57278, {	-- Bring Me Their Heads
