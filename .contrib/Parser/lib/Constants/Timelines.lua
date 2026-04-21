@@ -674,11 +674,10 @@ REMOVED_12_0_1_LAUNCH = "removed 12.0.1.66102";			-- Midnight 12.0.1 Early Acces
 CREATED_12_0_1_SEASONSTART = "created 12.0.1.66431";	-- Midnight 12.0.1 Season 1 launch on March 17th, 2026
 ADDED_12_0_1_SEASONSTART = "added 12.0.1.66431";		-- Midnight 12.0.1 Season 1 launch on March 17th, 2026
 REMOVED_12_0_1_SEASONSTART = "removed 12.0.1.66431";	-- Midnight 12.0.1 Season 1 launch on March 17th, 2026
+CREATED_12_0_5 = "created 12.0.5.67088";				-- Midnight 12.0.5 launch on April 21st, 2026
+ADDED_12_0_5 = "added 12.0.5.67088";					-- Midnight 12.0.5 launch on April 21st, 2026
+REMOVED_12_0_5 = "removed 12.0.5.67088";				-- Midnight 12.0.5 launch on April 21st, 2026
 
-
-CREATED_12_0_5 = "created 12.0.5";						-- Midnight 12.0.5 launch on April 21st, 2026
-ADDED_12_0_5 = "added 12.0.5";							-- Midnight 12.0.5 launch on April 21st, 2026
-REMOVED_12_0_5 = "removed 12.0.5";						-- Midnight 12.0.5 launch on April 21st, 2026
 CREATED_12_0_7 = "created 12.0.7";						-- Midnight 12.0.7 launch in spring 2026
 ADDED_12_0_7 = "added 12.0.7";							-- Midnight 12.0.7 launch in spring 2026
 REMOVED_12_0_7 = "removed 12.0.7";						-- Midnight 12.0.7 launch in spring 2026
