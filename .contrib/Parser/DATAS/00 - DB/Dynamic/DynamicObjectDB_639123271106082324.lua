@@ -46,8 +46,8 @@
 			pt = "Baú de Artífice",
 			ru = "Тайник умельца",
 			ko = "장인의 보관함",
-			cn = "[Artisan's Cache]",
-			tw = "[Artisan's Cache]",
+			cn = "工匠之箱",
+			tw = "工匠寶箱",
 		},
 	},
 	[577800] = {

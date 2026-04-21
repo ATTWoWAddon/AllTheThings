@@ -319,6 +319,9 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				o(614822, {	-- Savory Deviate Delight
 					["coord"] = { 68.0, 52.2, ARCANTINA },
 				}),
+				o(627107, {	-- Savory Deviate Delight
+					["coord"] = { 68.0, 52.2, ARCANTINA },
+				}),
 			}),
 		})),
 		n(VENDORS, {

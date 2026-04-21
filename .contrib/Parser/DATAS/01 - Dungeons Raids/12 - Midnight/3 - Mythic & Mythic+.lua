@@ -185,7 +185,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_UMBRAL, bubbleDownSelf({
 			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }
-		},{
+		}, {
 			q(92491, {isWeekly=true}),	-- first M+ key of the week
 		})),
 	}),
