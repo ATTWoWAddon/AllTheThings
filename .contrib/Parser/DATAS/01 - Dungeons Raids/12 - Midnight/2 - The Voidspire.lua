@@ -453,6 +453,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 				}),
 				ZoneDrops({}),
+				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
+					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
+					["bonusID"] = 6897,
+					["modID"] = 0,
+				},{
+					i(260376),	-- Breastplate of the Final Defense [BoP]
+					i(260377),	-- Fading Dawn Sabatons [BoP]
+					i(260371),	-- Infernal Greatlock Girdle [BoP]
+					i(260372),	-- Nullstrider's Boots [BoP]
+					i(260373),	-- Power Stance Breeches [BoP]
+					i(260374),	-- Primal Spark Pauldrons [BoP]
+					i(260375),	-- Raging Storm Sash [BoP]
+					i(260370),	-- Visage of Unseen Truths [BoP]
+				})),
 				Boss(AVERZIAN, {
 					ach(61372),	-- Mythic: Imperator Averzian
 				}),
