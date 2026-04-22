@@ -999,7 +999,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.6, 54.9, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							o(111024, {	-- Pristine Star Lily
+							o(223824, {	-- Pristine Star Lily
 								["coord"] = { 47.3, 52.0, DRAENOR_SHADOWMOON_VALLEY },
 								["groups"] = { i(111024) },	-- Pristine Star Lily (QI!)
 							}),
