@@ -996,8 +996,11 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 			end
 		else
 			-- 12.0.5: TooltipUtil.GetDisplayedUnit now errors inside instances when used by any addon
+			local instance = IsInInstance()
 			-- name, type, UID
-			target, _, id = not IsInInstance() and TooltipUtil.GetDisplayedUnit(self);
+			if not instance then
+				target, _, id = TooltipUtil.GetDisplayedUnit(self)
+			end
 			if target then
 				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
 					return true;
