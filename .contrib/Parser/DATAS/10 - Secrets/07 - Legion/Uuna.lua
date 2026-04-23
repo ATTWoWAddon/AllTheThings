@@ -2,9 +2,10 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-root(ROOTS.Secrets, {
+root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
 	header(HEADERS.Spell, 254763, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Uuna
-		["description"] = "This secret is a prerequisite for Baa'l. It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a rare elite in Antoran Wastes.",
+		["lore"] = "Uuna was found bound to an Ur'zul, and was released into the Shadowlands, where she wandered in the utter darkness.",
+		["description"] = "This secret is a prerequisite for Baa'l. It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a Rare Elite in Antoran Wastes.",
 		["modelScale"] = 1.1,
 		["displayID"] = 76829,
 		["groups"] = {
@@ -59,14 +60,14 @@ root(ROOTS.Secrets, {
 				["description"] = "Take Uuna to Blood Watch on Bloodmyst Isle.",
 				["icon"] = 134506,
 				["sourceQuests"] = { 50104 },	-- Step 7: Finding Nuu
-				["coord"] = { 56.4, 56.6, BLOODMYST_ISLE },
+				["coord"] = { 56.5, 56.6, BLOODMYST_ISLE },
 			}),
 			q(50106, {	-- Step 9: Flower Crown
 				["name"] = "Step 9: Flower Crown",
 				["description"] = "Take Uuna to the small campsite northwest of Path of the Light in Draenor's Shadowmoon Valley. She will pick up the flower crown that is resting on one of the chairs around the campfire.",
 				["icon"] = 134506,
 				["sourceQuests"] = { 50105 },	-- Step 8: Shooting Stars
-				["coord"] = { 55.9, 41.1, DRAENOR_SHADOWMOON_VALLEY },
+				["coord"] = { 56.0, 41.1, DRAENOR_SHADOWMOON_VALLEY },
 			}),
 			q(50107, {	-- Step 10: Uuna Gets Kidnapped
 				["name"] = "Step 10: Uuna Gets Kidnapped",
@@ -79,6 +80,7 @@ root(ROOTS.Secrets, {
 				["description"] = "Die and ask a Spirit Healer if they have seen Uuna. The Spirit Healer will give you permission to enter the spirit realm to try to find her. Resurrect (no need to do it through the Spirit Healer, just return to your corpse) and continue to the next step.",
 				["icon"] = 134506,
 				["sourceQuests"] = { 50107 },	-- Step 10: Uuna Gets Kidnapped
+				["coord"] = { 52.1, 47.7, DRAENOR_SHADOWMOON_VALLEY },	-- Nearest spirit healer
 			}),
 			q(50109, {	-- Step 12: A Dark Place
 				["name"] = "Step 12: A Dark Place",
@@ -86,26 +88,26 @@ root(ROOTS.Secrets, {
 				["icon"] = 134506,
 				["sourceQuests"] = { 50108 },	-- Step 11: Spirit Healer
 				["provider"] = { "o", 280747 },	-- Shadow Tear
-				["coord"] = { 66.1, 74.5, DRAGONBLIGHT },
+				["coord"] = { 66.2, 74.5, DRAGONBLIGHT },
 			}),
 			n(createHeader({
 				readable = "Uuna's World Tour",
 				icon = 134507,
 				text = {
 					en = "Uuna's World Tour",
-					-- TODO: de = "",
-					-- TODO: es = "",
+					de = "Uunas Welttournee",
+					es = "Gira mundial de Uuna",
 					-- TODO: mx = "",
 					fr = "Tour du monde d’Uuna",
-					-- TODO: it = "",
+					it = "Il tour mondiale di Uuna",
 					-- TODO: ko = "",
-					-- TODO: pt = "",
+					pt = "Tour Mundial de Uuna",
 					ru = "Приключения с Ууной",
 					cn = "尤娜的世界旅行",
 					-- TODO: tw = "",
 				},
 				description = {
-					en = "Congrats on making it this far!  Now it's time to take your favorite li'l ghost on a world tour.",
+					en = "Congrats on making it this far! Now it's time to take your favorite li'l ghost on a world tour.",
 				},
 			}), {
 				q(50140, {	-- Step 1: Gate of the Setting Sun
@@ -162,4 +164,4 @@ root(ROOTS.Secrets, {
 			}),
 		},
 	})),
-});
+}));
