@@ -33,7 +33,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(620325, {	-- Tablet of the Ruling Family	// https://warcraft.wiki.gg/wiki/Tablet_of_the_Ruling_Family
 					["coord"] = { 37.5, 26.7, MAP.MIDNIGHT.ZULAMAN },
 					["questID"] = 94633,
-					["timeline"] = { "removed 12.0.1.66192" },	-- Available at Early Access Launch, removed sometime between 26 February and 28 February 2026.
+					-- Available at Early Access Launch, removed sometime between 26 February and 28 February 2026.
+					-- Fixed/re-added in 12.0.5
+					["timeline"] = { "removed 12.0.1.66192", ADDED_12_0_5 },
 				}),
 			}),
 			header(HEADERS.Achievement, 62125, {	-- Treasures of Zul'Aman
