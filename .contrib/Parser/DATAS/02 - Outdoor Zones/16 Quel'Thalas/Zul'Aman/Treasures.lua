@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 94633,
 					-- Available at Early Access Launch, removed sometime between 26 February and 28 February 2026.
 					-- Fixed/re-added in 12.0.5
-					["timeline"] = { "removed 12.0.1.66192", ADDED_12_0_5 },
+					["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66192", ADDED_12_0_5 },
 				}),
 			}),
 			header(HEADERS.Achievement, 62125, {	-- Treasures of Zul'Aman
