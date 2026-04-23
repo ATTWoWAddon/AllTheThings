@@ -346,7 +346,7 @@ local function RawAfterSub(data, depth)
 end
 local function RawDepthShift(data) return 2 end
 
--- register the 'raw' style exporter
+-- register the 'Raw' style exporter
 app:RegisterDataStyleExporter("Raw", {
 	main = ExportRawDataToString,
 	beforeSub = RawBeforeSub,
@@ -634,7 +634,7 @@ app:CreateWindow("Debugger", {
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
-						app:ExportStylizedData(self, "raw");
+						app:ExportStylizedData(self, "Raw");
 						return true;
 					end,
 				}),
@@ -644,7 +644,7 @@ app:CreateWindow("Debugger", {
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
-						app:ExportStylizedData(self, "readable");
+						app:ExportStylizedData(self, "Readable");
 						return true;
 					end,
 				}),
