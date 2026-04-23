@@ -42045,7 +42045,8 @@ ach(62568),
 ach(62507),
 ach(62510)}),
 h(-45,{
-q(94380,{description="Can be accepted the first time you get into Silvermoon.",isBreadcrumb=1,maps={2393},nextQuests={96080},qgs={257459}}),
+q(94380,{coords={
+[2393]={{49.4,65.5}}},isBreadcrumb=1,nextQuests={96080},qgs={257459}}),
 q(96080,{coords={
 [2393]={{48.1,49.7}}},qgs={257411},sourceQuests={94380}}),
 q(94381,{coords={

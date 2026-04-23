@@ -87,9 +87,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			}),
 			n(QUESTS, {
 				q(94380, {	-- Ranger Captain's Summons
-					["description"] = "Can be accepted the first time you get into Silvermoon.",
-					["qg"] = 257459,	-- Farstrider Scout (mobileNPC)
-					["maps"] = { MAP.MIDNIGHT.SILVERMOON_CITY },
+					["qg"] = 257459,	-- Farstrider Scout
+					["coord"] = { 49.4, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 				}),
 				q(96080, {	-- Void Strike

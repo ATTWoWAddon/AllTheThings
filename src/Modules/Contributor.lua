@@ -686,7 +686,6 @@ MobileDB.Creature = {
 	[251891] = true,	-- Lingering Shade
 	[252807] = true,	-- Vanguard Paladin
 	[256867] = true,	-- Grieving Amani
-	[257459] = true,	-- Farstrider Scout
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
 -- either by following the player or having player-based decisions that cause them to have any coordinates
