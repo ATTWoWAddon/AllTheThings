@@ -53,8 +53,49 @@ root(ROOTS.Holidays,
 				ach(61886),	-- The Whole Kit and Caboodle
 				ach(61879),	-- You're It
 			}),
-			--n(QUESTS, {
-			--}),
+			n(QUESTS, {
+				q(93774, {	-- When is a Chair not for Sitting?
+					["qg"] = 256307,	-- Silvermoon Cizizen / Completely Ordinary Brazier
+					["coord"] = { 51.9, 71.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(93716, {	-- Learning the Cloaks - Part 1
+					["sourceQuest"] = 93774,	-- When is a Chair not for Sitting?
+					["qg"] = 255368,	-- Riftblade Maella
+					["coord"] = { 27.4, 76.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(93717, {	-- Learning the Cloaks - Part 2
+					["sourceQuest"] = 93716,	-- Learning the Cloaks - Part 1
+					["qg"] = 255370,	-- Captain Auric Sunchaser
+					["coord"] = { 27.5, 76.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(93719, {	-- Nothing Captured, Nothing Gained
+					["sourceQuest"] = 93717,	-- Learning the Cloaks - Part 2
+					["qg"] = 255365,	-- Aethas Sunreaver
+					["coord"] = { 27.6, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(93816, {	-- Putting it Together
+					["sourceQuest"] = 93719,	-- Nothing Captured, Nothing Gained
+					["qg"] = 255365,	-- Aethas Sunreaver
+					["coord"] = { 27.6, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(93907, {	-- Edification of the Worthy
+					["sourceQuest"] = 93816,	-- Putting it Together
+					["qg"] = 256697,	-- Propagandist Naicira
+					["coord"] = { 31.5, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(96242, {	-- An Easy Path to Trickery
+					["sourceQuest"] = 93907,	-- Edification of the Worthy
+					["qg"] = 257125,	-- Fieldweaver Amolenne
+					["coord"] = { 31.5, 76.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				-- Repeatable Quests
+				q(93870, {	-- The Ephemeron Masquerade
+					["sourceQuest"] = 93719,	-- Nothing Captured, Nothing Gained
+					["qg"] = 256697,	-- Propagandist Naicira
+					["coord"] = { 31.5, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isDaily"] = true,	-- Speculation
+				}),
+			}),
 			n(REWARDS, {
 				currency(ILLUSIONARY_COIN),
 			}),
@@ -180,10 +221,10 @@ root(ROOTS.Holidays,
 --)
 );
 
---root(ROOTS.HiddenQuestTriggers, {
---	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
---		n(DECOR_DUEL, {
---			
---		}),
---	})),
---});
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
+		n(DECOR_DUEL, {
+			q(93914),	-- Triggered after interracting with Gamesmaster Fleurian during 'Edification of the Worthy' (93907)
+		}),
+	})),
+});
