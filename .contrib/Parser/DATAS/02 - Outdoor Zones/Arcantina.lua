@@ -18,13 +18,14 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["provider"] = { "n", 250415 },	-- Danath Trollbane
 				["coord"] = { 46.3, 56.7, ARCANTINA },
 				["groups"] = {
-					i(253542),	-- Scarred Orcish Spear (DECOR!)
 					o(579193, {	-- Rusty Axe
 						i(254283),	-- Rusty Axe (QI!)
 					}),
 					o(572029, {	-- Scarred Spear
-						["groups"] = { i(250872) },	-- Scarred Spear
+						i(250872),	-- Scarred Spear
 					}),
+					--
+					i(253542),	-- Scarred Orcish Spear (DECOR!)
 				},
 			}),
 			q(92321, {	-- A Frostbitten Tally
@@ -35,7 +36,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					{ 43.1, 64.3, ARCANTINA },
 				},
 				["groups"] = {
-					i(253598),	-- Banner of the Ebon Blade (DECOR!)
 					o(614636, {	-- Frostbitten Tabard
 						i(260227),	-- Frostbitten Tabard (QI!)
 					}),
@@ -43,30 +43,28 @@ root(ROOTS.Zones, m(ARCANTINA, {
 						["questID"] = 92376,
 						["groups"] = { i(250873) },	-- Ebon Banner
 					}),
+					--
+					i(253598),	-- Banner of the Ebon Blade (DECOR!)
 				},
 			}),
 			q(92327, {	-- A Generational Moment
 				["provider"] = { "n", 250413 },	-- Lord Darius Crowley
-				["coord"] = { 48.5, 71.4, ARCANTINA },
+				["coords"] = {
+					{ 48.5, 71.4, ARCANTINA },
+					{ 52.1, 53.8, ARCANTINA },
+				},
 				["groups"] = {
-					i(253174),	-- Dried Gilnean Roses (DECOR!)
+					o(572039, {	-- Clefthoof Hide
+						["coord"] = { 31.9, 34.6, BURNING_STEPPES },
+						["groups"] = { i(250882) },	-- Clefthoof Hide
+					}),
+					o(572038, {	-- Dried Roses
+						["coord"] = { 55.3, 52.8, RUINS_OF_GILNEAS },
+						["groups"] = { i(250881) },	-- Dried Roses
+					}),
+					--
 					i(253543),	-- Clefthoof Hide Rug (DECOR!)
-					o(572039, {
-						["questID"] = 92385,
-						["groups"] = {
-							i(250882, {	-- Clefthoof Hide (QI!)
-								["coord"] = { 37.2, 53.0, ARCANTINA },
-							}),
-						},
-					}),
-					o(572038, {
-						["questID"] = 92384,
-						["groups"] = {
-							i(250881, {	-- Dried Roses (QI!)
-								["coord"] = { 41.7, 48.1, ARCANTINA },
-							}),
-						},
-					}),
+					i(253174),	-- Dried Gilnean Roses (DECOR!)
 				},
 			}),
 			q(92325, {	-- Crumbling Legacy
@@ -98,6 +96,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 						["questID"] = 92377,
 						["groups"] = { i(250874) },	-- Corrupted Lantern (QI!)
 					}),
+					--
 					i(253178),	-- Inactive Filigree Moon Lamp (DECOR!)
 				},
 			}),
@@ -170,7 +169,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					}),
 					--
 					o(572033, {	-- Evergreen Vine
-						["questID"] = 92379,
+						["questID"] = 92379,	-- ??
 						["groups"] = { i(250876) },	-- Evergreen Vine
 					}),
 					i(253175),	-- Hyjal Climbing Vine (DECOR!)
@@ -195,8 +194,18 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["cost"] = { { "i", 250875, 1 } },	-- Ancient Zandalari Scroll
 				["coord"] = { 25.8, 43.4, ARCANTINA },
 			}),
+			o(572458, {	-- Clefthoof Hide
+				["questID"] = 92385,
+				["cost"] = { { "i", 250882, 1 } },	-- Clefthoof Hide
+				["coord"] = { 37.0, 53.0, ARCANTINA },
+			}),
+			o(572457, {	-- Dried Roses
+				["questID"] = 92384,
+				["cost"] = { { "i", 250881, 1 } },	-- Dried Roses
+				["coord"] = { 41.7, 48.1, ARCANTINA },
+			}),
 			o(572451, {	-- Evergreen Vine
-				["questID"] = 94976,
+				["questID"] = 94976,	-- ??
 				["cost"] = { { "i", 250876, 1 } },	-- Evergreen Vine
 				["coord"] = { 37.2, 29.5, ARCANTINA },
 			}),
