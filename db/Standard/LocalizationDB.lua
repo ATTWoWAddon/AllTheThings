@@ -25901,6 +25901,7 @@ L.QUEST_NAMES = {
 	[94688] = "Lady Liminus weekly reputation obtained.",
 	[94689] = "Terrinor weekly reputation obtained.",
 	[94690] = "Bad Zed weekly reputation obtained.",
+	[94691] = "Waverly weekly reputation obtained.",
 	[94692] = "Banuran weekly reputation obtained.",
 	[94693] = "Lost Guardian weekly reputation obtained.",
 	[94694] = "Duskburn weekly reputation obtained.",

@@ -477,12 +477,7 @@ root(ROOTS.Unsorted, {
 			i(271342),	-- Galactic Void Matrix
 			i(271353),	-- Collection of Valuables
 			i(271814),	-- Spring Dagger-Tined Rake
-			i(271974),	-- Ritual Spoils
-			i(271975),	-- Ritual Spoils
-			i(271976),	-- Ritual Spoils
 			i(272046),	-- Mana-Singed Divining Rod
-			i(272047),	-- Deeplurk Scrying Stone
-			i(272048),	-- Shattered Containment Pearl
 			i(272049),	-- Bloodied Propaganda Leaflet
 			i(272051),	-- Sticky Propaganda Scroll
 			i(272052),	-- Ripped Propaganda Page
@@ -493,8 +488,6 @@ root(ROOTS.Unsorted, {
 			i(272113),	-- Scourge Shard Fragment
 			i(272114),	-- Discarded Excavation Tool
 			i(272115),	-- Smashed Shield Emitter
-			i(272116),	-- Water-Logged Transaction Scroll
-			i(272117),	-- Shattered Energy Weapon
 			i(272118),	-- Inert Arcane Explosive
 			i(272119),	-- Residue-Covered Tool
 			i(272120),	-- Mysterious Vial

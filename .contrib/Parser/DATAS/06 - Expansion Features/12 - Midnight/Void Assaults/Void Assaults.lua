@@ -114,6 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["coord"] = { 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				-- Sorted but unsorted (not sure what sourceQuest or action for it)
+				-- Exo: Unconfirmed, but I am pretty sure this unlocks after you have completed at least 1 Ritual Site
 				q(95550, {	-- Thin Their Ranks
 					--["sourceQuest"] = ???,	-- ???
 					["qg"] = 257411,	-- Ranger Captain Lilatha
@@ -654,6 +655,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			}),
 			m(DAGGERSPINE_LANDING, {
 				--["icon"] = ,
+				["cr"] = 260103,	-- Curious Obelisk
 				["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["groups"] = {
 					i(271644),	-- Ember of Power (QS!/QI!)
@@ -664,7 +666,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						},
 					}),
 					o(645182, {	-- Crystalline Treasure
-						--["coord"] = { X, Y, DAGGERSPINE_LANDING },
+						["coords"] = {
+							{ 45.5, 55.5, DAGGERSPINE_LANDING },
+							{ 46.0, 58.4, DAGGERSPINE_LANDING },
+							{ 51.4, 73.3, DAGGERSPINE_LANDING },
+							{ 62.9, 38.9, DAGGERSPINE_LANDING },
+						},
 						["groups"] = {
 							i(271428),	-- Crystalline Treasure (QS!/QI!)
 						},
@@ -676,13 +683,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						},
 					}),
 					o(649380, {	-- Washed Up Kelp
-						["description"] = "Dig through the Kelp in order to gain attention of the Void-Touched Snapdragon.",
-						--["coord"] = { X, Y, DAGGERSPINE_LANDING },	-- TODO: Get the correct coords for the Kelp
-						["groups"] = {
-							n(263617, {	-- Void-Touched Snapdragon
-								i(270041),	-- Void-Touched Snapdragon (MOUNT!)
-							}),
+						["description"] = "Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",
+						["cr"] = 263617,	-- Void-Touched Snapdragon
+						["coords"] = {
+							{ 38.0, 64.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
+							{ 41.0, 73.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
+							{ 47.9, 42.1, DAGGERSPINE_LANDING },	-- Verified
+							{ 48.0, 72.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
+							{ 50.1, 55.1, DAGGERSPINE_LANDING },	-- Verified
+							{ 53.4, 55.4, DAGGERSPINE_LANDING },	-- Verified
+							{ 62.0, 77.1, DAGGERSPINE_LANDING },	-- Verified
+							{ 66.0, 74.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
 						},
+						["groups"] = { i(270041) },	-- Void-Touched Snapdragon (MOUNT!)
 					}),
 				},
 			}),
@@ -768,10 +781,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			}),
 			n(REWARDS, {
 				currency(3429),	-- Ritual Site Reports
+				i(DARK_PARTICLE),
 				i(271787),	-- Field Accolades
 				i(271786),	-- Ritual Site Reports
-				i(271973),	-- Ritual Spoils (on Broken Throne UI)
-				i(271785),	-- Ritual Spoils (on Daggerspine Landing UI)
+				i(271785),	-- Ritual Spoils (Tier 1)
+				i(271973),	-- Ritual Spoils (Tier 2)
+				i(271974),	-- Ritual Spoils (Tier 3)
+				i(271975),	-- Ritual Spoils (Tier 4)
+				i(271976),	-- Ritual Spoils (Tier 5)
+				i(273855),	-- Ritual Tablet (1st Ritual of the Week)
+				i(273856),	-- Ritual Tablet Fragment (2nd Ritual of the Week)
 			}),
 		}),
 	}),
@@ -794,7 +813,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["groups"] = {
 			n(QUESTS, {
 				-- Daggerspine Landing
-				q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day & week), could be push quest for questID 95547 (Ritual Site Challenge Report: Tendrils)
+				q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day or week)
+				q(95824),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end second time (of day or week)
 				q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_LANDING
 				q(96147),	-- Dark Obelisk @ 64.7, 50.0, DAGGERSPINE_LANDING
 				q(96148),	-- Dark Obelisk @ 61.9, 62.1, DAGGERSPINE_LANDING

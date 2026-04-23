@@ -2818,3 +2818,11 @@ i(238491);	-- Whispering Rock
 i(264982);	-- Wine Not
 i(265666);	-- World Root Beer
 i(260287);	-- World Roots Banquet
+
+------------------
+-- PATCH 12.0.5 --
+------------------
+i(272047);	-- Deeplurk Scrying Stone
+i(272048);	-- Shattered Containment Pearl
+i(272117);	-- Shattered Energy Weapon
+i(272116);	-- Water-Logged Transaction Scroll

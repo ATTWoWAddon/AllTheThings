@@ -198,6 +198,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94689, {	-- Weekly reputation: Terrinor
 					["name"] = "Terrinor weekly reputation obtained.",
 				}),
+				q(94691, {	-- Weekly reputation: Waverly
+					["name"] = "Waverly weekly reputation obtained.",
+				}),
 				q(94681, {	-- Weekly reputation: Warden of Weeds
 					["name"] = "Warden of Weeds weekly reputation obtained.",
 				}),
