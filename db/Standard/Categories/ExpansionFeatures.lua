@@ -42452,6 +42452,8 @@ i(271430)}})}}),
 m(2594,{coords={
 [2395]={{37.6,65.3}}},crs={260103},g={
 i(271644),
+p(5022,{coords={
+[2594]={{55.8,45.6},{68.7,47.7},{71.6,50.3}}},description="A small, inconspicuous, egg is floating down the river. Catch it.",itemID=270062,npcID=262090,spellID=1287376}),
 o(644396,{coords={
 [2594]={{66.6,63.7}}},g={
 i(270562)}}),

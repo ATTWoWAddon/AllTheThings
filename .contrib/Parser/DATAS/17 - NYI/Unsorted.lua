@@ -327,7 +327,6 @@ root(ROOTS.Unsorted, {
 			i(269999),	-- Overloaded Manaling
 			i(270058),	-- Rope Lynx Harness
 			i(270061),	-- Void-Bathed Snapdragon
-			i(270062),	-- Void-Touched Chick
 			i(270063),	-- Void-Touched Lynx Kitten
 			i(270279),	-- Crown of Midnight Springflowers
 			i(270280),	-- Crown of Azure Springflowers

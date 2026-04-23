@@ -658,6 +658,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["groups"] = {
 					i(271644),	-- Ember of Power (QS!/QI!)
+					i(270062, {	-- Void-Touched Chick (PET!)
+						-- Looks like an NPC but could not grab the ID for the [cr] because of the missing NPC tooltips inside the instanced area.
+						["description"] = "A small, inconspicuous, egg is floating down the river. Catch it.",
+						["coords"] = {
+							{ 55.8, 45.6, DAGGERSPINE_LANDING },
+							{ 68.7, 47.7, DAGGERSPINE_LANDING },
+							{ 71.6, 50.3, DAGGERSPINE_LANDING },
+						},
+					}),
 					o(644396, {	-- Tainted Bone Pile
 						["coord"] = { 66.6, 63.7, DAGGERSPINE_LANDING },
 						["groups"] = {

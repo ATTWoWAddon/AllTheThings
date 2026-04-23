@@ -4618,11 +4618,11 @@ i(270989, 5039);	-- Cappy
 i(269836, 5019);	-- Chubs
 i(274266, 5065);	-- Ka'bubb
 i(270331, 5037);	-- Void-Infused Mindbreaker Fry
+i(270062, 5022);	-- Void-Touched Chick
 i(270330, 5036);	-- Void-Touched Dragonhawk Egg
 --- Unsorted ---
 i(270990, 5040);	-- Curious Lynx Kitten
 i(269999, 5020);	-- Overloaded Manaling
 i(270061, 5021);	-- Void-Bathed Snapdragon
 i(269829, 5017);	-- Void-Scarred Eaglet
-i(270062, 5022);	-- Void-Touched Chick
 i(270063, 5023);	-- Void-Touched Lynx Kitten
