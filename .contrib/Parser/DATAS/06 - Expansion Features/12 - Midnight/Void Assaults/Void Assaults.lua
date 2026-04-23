@@ -557,7 +557,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							i(263683),	-- Kilt of Void Storms
 							i(263688),	-- Greaves of Void Storms
 							i(263693),	-- Void Nemesis' Leggings
-							i(263694),	-- Void Nemesis' Spaulders
 							i(263703),	-- Legplates of Voidwrath
 						}),
 						i(264315, {	-- Cache of Void-Touched Shoulderwear
