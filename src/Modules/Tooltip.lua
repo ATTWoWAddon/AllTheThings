@@ -822,7 +822,7 @@ local function TryShowUnitTooltipInfo(self, guid)
 		if app.Settings:GetTooltipSetting("creatureID") then
 			if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
 			self:AddDoubleLine(L.CREATURE_ID, "<secret value???>");
-			self:AddLine("Blizzard says you aren't allowed to know what CreatureID this unit has. If you want ATT tooltips to ever appear on hostile npcs ever again, please yell at your local Blizzard Developer and tell them to allow UnitGUID and UnitCreatureID to be less secret while not in combat.\n \n -Crieve", 0.8, 0.4, 0.4, 1);
+			-- self:AddLine("Blizzard says you aren't allowed to know what CreatureID this unit has. If you want ATT tooltips to ever appear on hostile npcs ever again, please yell at your local Blizzard Developer and tell them to allow UnitGUID and UnitCreatureID to be less secret while not in combat.\n \n -Crieve", 0.8, 0.4, 0.4, 1);
 		end
 		return true;
 	end
@@ -864,6 +864,14 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 	-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
 	---@diagnostic disable-next-line: deprecated
 	local Enum_TooltipDataType, TooltipUtil = Enum.TooltipDataType, TooltipUtil;
+
+	local function SafelyCheckTooltipForUnitInfo(tooltip)
+		local ok, target, _, id = pcall(TooltipUtil.GetDisplayedUnit, tooltip)
+		if ok then
+			return target, _, id
+		-- else app.PrintDebug("Failed GetDisplayedUnit",SafeGetName(tooltip))
+		end
+	end
 	local TooltipTypes = {
 		[Enum_TooltipDataType.Toy] = "itemID",
 		[Enum_TooltipDataType.Item] = "itemID",
@@ -995,11 +1003,13 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 				self.AllTheThingsProcessing = link;
 			end
 		else
-			-- 12.0.5: TooltipUtil.GetDisplayedUnit now errors inside instances when used by any addon
+			-- 12.0.5: TooltipUtil.GetDisplayedUnit now errors inside certain instances when used by any addon
 			local instance = IsInInstance()
 			-- name, type, UID
 			if not instance then
 				target, _, id = TooltipUtil.GetDisplayedUnit(self)
+			else
+				target, _, id = SafelyCheckTooltipForUnitInfo(self)
 			end
 			if target then
 				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
