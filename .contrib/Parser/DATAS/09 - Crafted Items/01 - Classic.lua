@@ -3798,7 +3798,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						THE_HINTERLANDS,
 					},
 					-- #endif
-					["description"] = "Can be found in elven ruins.",
+					["description"] = "Can be found in elven or troll ruins.",
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 210,
 					-- #endif
