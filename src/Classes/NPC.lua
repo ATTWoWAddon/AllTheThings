@@ -40,6 +40,7 @@ local blacklisted = {
 	[TOOLTIP_UNIT_LEVEL_TYPE:format("??", ELITE)] = true,
 }
 if C_TooltipInfo_GetHyperlink then
+	local issecretvalue = app.WOWAPI.issecretvalue
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		id = tonumber(id)
 		if id and id > 0 then
@@ -48,6 +49,9 @@ if C_TooltipInfo_GetHyperlink then
 				local title = tooltipData.lines[1].leftText
 				if title and #tooltipData.lines > 2 then
 					local leftText = tooltipData.lines[2].leftText
+					-- 12.0.5 began returning secrets for this function
+					if issecretvalue(leftText) then return end
+
 					if leftText and not blacklisted[leftText] then
 						NPCTitlesFromID[id] = leftText
 					end
