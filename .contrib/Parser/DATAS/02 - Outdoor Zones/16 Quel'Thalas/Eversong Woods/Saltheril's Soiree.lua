@@ -428,6 +428,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				q(95113, name(HEADERS.Item, 269701, {isWeekly=true})),	-- Surplus Bag of Party Favors
 				q(89290, name(HEADERS.Quest, 91966, {isWeekly=true})),	-- Account-wide 'Saltheril's Soiree' unlock after picking a faction
+				q(96527, name(HEADERS.Currency, 3379, {isWeekly=true})),	-- Bonus Brimming Arcana from first Runestone per week
 			}),
 		}),
 	}),
