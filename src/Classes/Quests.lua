@@ -74,8 +74,10 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
 		if not id then return end
 		if type(id) ~= "number" then
-			local msg = "QuestNameFromServer got non-number id: " .. tostring(id)
-			app.PrintError(msg, "QuestNameFromServer")
+			-- as of 12.0.5 this is being triggered by internal Blizzard debugging method: debuglocals
+			-- which is now directly attempting to access a 'ToDebugString' value on any local tables being printed...
+			-- local msg = "QuestNameFromServer got non-number id: " .. tostring(id)
+			-- app.PrintError(msg, "QuestNameFromServer")
 			return
 		end
 
