@@ -173,7 +173,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(265545, {	-- Cuddly Void Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between March 26th, 3:00 p.m. & April 23rd, 3:00 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.5.99999" },	-- Removed April 23rd, 2026
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.5.67165" },	-- Removed April 23rd, 2026
 			}),
 			i(264283, {	-- Backboard and Hoop Playset (DECOR!)
 				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Horde Board' at craftyourworldpromo.com to receive a code to the email you provided.",
