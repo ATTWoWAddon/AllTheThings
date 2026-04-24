@@ -444,6 +444,7 @@ root(ROOTS.Zones, {
 									92678,	-- Flawless Magic Battle-Stone
 									92680,	-- Flawless Mechanical Battle-Stone
 									92681,	-- Flawless Undead Battle-Stone
+									92683,	-- Flawless Dragonkin Battle-Stone
 								}},
 							})
 						},
@@ -690,6 +691,7 @@ root(ROOTS.Zones, {
 						i(92678),	-- Flawless Magic Battle-Stone
 						i(92680),	-- Flawless Mechanical Battle-Stone
 						i(92681),	-- Flawless Undead Battle-Stone
+						i(92683),	-- Flawless Dragonkin Battle-Stone
 					}))),
 				}),
 				n(SPECIAL, {
