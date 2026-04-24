@@ -1714,7 +1714,9 @@ local function RowOnEnter(self)
 	if not IsRefreshing then tooltip:SetATTReferenceForTexture(reference); end
 	-- Defer Show() to the next frame to break the addon taint chain.
 	-- Without this, Backdrop.lua tries arithmetic on secret-tainted width/height values.
-	Callback(function() tooltip:Show() end)
+	-- This fix does not fully resolve the taint issue and also introduces horrible tooltip flickering on ATT lists in some cases. Removing for now
+	-- Callback(function() tooltip:Show() end)
+	tooltip:Show()
 
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
