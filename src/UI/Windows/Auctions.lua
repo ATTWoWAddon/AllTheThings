@@ -298,16 +298,10 @@ app:CreateWindow("Auctions", {
 
 				if app.IsRetail then
 					app.Settings:SetTooltipSetting("Auto:AuctionList", false)
-					self:SetResizable(true)
+					self:SetResizable(false)
+					self:SetWidth(350)
 					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
 					self:Hide()
-
-					local windowHeight = self:GetHeight()
-					self:SetScript("OnSizeChanged", function(self, width, height)
-						if height ~= windowHeight then
-							self:SetHeight(windowHeight)
-						end
-					end)
 
 					if not AuctionHouseFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame
 						AuctionHouseFrameTabSideBar = CreateFrame("Frame", nil, AuctionHouseFrame, "")
