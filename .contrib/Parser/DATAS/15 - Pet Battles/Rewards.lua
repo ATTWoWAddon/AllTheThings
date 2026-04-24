@@ -44,6 +44,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			i(92678),	-- Flawless Magic Battle-Stone
 			i(92680),	-- Flawless Mechanical Battle-Stone
 			i(92681),	-- Flawless Undead Battle-Stone
+			i(92683),	-- Flawless Dragonkin Battle-Stone
 			-- #endif
 		}),
 
