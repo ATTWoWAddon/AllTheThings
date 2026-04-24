@@ -7482,7 +7482,8 @@ hqt(86645)})}}),
 h(-686,{
 h(-45,{
 hqt(95113,{an="i:269701",isWeekly=1}),
-hqt(89290,{an="q:91966",isWeekly=1})})}),
+hqt(89290,{an="q:91966",isWeekly=1}),
+hqt(96527,{an="cu:3379",isWeekly=1})})}),
 m(2413,{maps={2576},lvl=83,g={
 h(-738,{
 hqt(89284,{an="q:89268",isWeekly=1}),

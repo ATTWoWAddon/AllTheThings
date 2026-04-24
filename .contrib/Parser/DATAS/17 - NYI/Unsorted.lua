@@ -474,7 +474,6 @@ root(ROOTS.Unsorted, {
 			i(271342),	-- Galactic Void Matrix
 			i(271353),	-- Collection of Valuables
 			i(271814),	-- Spring Dagger-Tined Rake
-			i(272046),	-- Mana-Singed Divining Rod
 			i(272049),	-- Bloodied Propaganda Leaflet
 			i(272051),	-- Sticky Propaganda Scroll
 			i(272052),	-- Ripped Propaganda Page

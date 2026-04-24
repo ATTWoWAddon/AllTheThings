@@ -610,7 +610,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 		}),
 		n(RITUAL_SITES, {
 			m(BROKEN_THRONE, {
-				--["icon"] = ,
+				["icon"] = 7578705,
 				["coord"] = { 29.6, 77.9, MAP.MIDNIGHT.ZULAMAN },
 				["groups"] = {
 					i(269836, {	-- Chubs (PET!)
@@ -632,35 +632,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						},
 						["cost"] = { { "i", 271999, 1 } },	-- 1x Misplaced Ritual Candle
 					}),
-					o(645183, {	-- Ethereal Treasure
-						["coord"] = { 40.9, 56.5, BROKEN_THRONE },
-						["groups"] = {
-							i(271429),	-- Ethereal Treasure (QS!/QI!)
-						},
-					}),
 					o(649209, {	-- Misplaced Ritual Candle
 						["coord"] = { 51.5, 47.9, BROKEN_THRONE },
 						["groups"] = {
 							i(271999),	-- Misplaced Ritual Candle
 						},
 					}),
-					o(645184, {	-- Sculpted Treasure
-						["coord"] = { 47.7, 66.5, BROKEN_THRONE },
-						["groups"] = {
-							i(271430),	-- Sculpted Treasure (QS!/QI!)
-						},
+					n(ACHIEVEMENTS, {
+						ach(62537),	-- Neighborhood Ritual Team: Broken Throne
+						ach(62536),	-- Neighborhood Ritual Watch: Broken Throne
+						ach(62521),	-- Ritual Site: Broken Throne
+						ach(62525),	-- Ritual Site Extreme: Broken Throne
+						ach(62523),	-- Ritual Site Mastery: Broken Throne
+						ach(62534),	-- Ritual Site Rogue: Broken Throne
 					}),
 				},
 			}),
-			m(DAGGERSPINE_LANDING, {
-				--["icon"] = ,
+			m(DAGGERSPINE_POINT, {
+				["icon"] = 3012072,
 				["cr"] = 260103,	-- Curious Obelisk
 				["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["groups"] = {
 					i(270061, {	-- Void-Bathed Snapdragon (PET!)
 						-- TODO: Restructure when "Soggy Nest" ObjectID gets discovered
 						["description"] = "Use |cff1eff00Soggy Lynx Toy|r at the Soggy Nest.",
-						["coord"] = { 30.0, 63.1, DAGGERSPINE_LANDING },
+						["coord"] = { 30.0, 63.1, DAGGERSPINE_POINT },
 						["cr"] = 263917,	-- Curious Snapdragon
 						["cost"] = { { "i", 272128, 1 } },	-- Soggy Lynx Toy
 					}),
@@ -668,9 +664,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						["description"] = "A small, inconspicuous, egg is floating down the river. Catch it.",
 						["cr"] = 263805,	-- Egg
 						["coords"] = {
-							{ 55.8, 45.6, DAGGERSPINE_LANDING },
-							{ 68.7, 47.7, DAGGERSPINE_LANDING },
-							{ 71.6, 50.3, DAGGERSPINE_LANDING },
+							{ 55.8, 45.6, DAGGERSPINE_POINT },
+							{ 68.7, 47.7, DAGGERSPINE_POINT },
+							{ 71.6, 50.3, DAGGERSPINE_POINT },
 						},
 					}),
 					o(649380, {	-- Washed Up Kelp
@@ -678,50 +674,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						["modelScale"] = 3,
 						["cr"] = 263617,	-- Void-Touched Snapdragon
 						["coords"] = {
-							{ 41.0, 73.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
-							{ 46.6, 46.0, DAGGERSPINE_LANDING },	-- Verified
-							{ 47.9, 72.1, DAGGERSPINE_LANDING },	-- Verified
-							{ 50.1, 55.1, DAGGERSPINE_LANDING },	-- Verified
-							{ 53.4, 55.4, DAGGERSPINE_LANDING },	-- Verified
-							{ 62.0, 77.1, DAGGERSPINE_LANDING },	-- Verified
-							{ 66.0, 74.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
+							{ 41.0, 73.0, DAGGERSPINE_POINT },	-- Not verified, WoWhead data
+							{ 46.6, 46.0, DAGGERSPINE_POINT },	-- Verified
+							{ 47.9, 72.1, DAGGERSPINE_POINT },	-- Verified
+							{ 50.1, 55.1, DAGGERSPINE_POINT },	-- Verified
+							{ 53.4, 55.4, DAGGERSPINE_POINT },	-- Verified
+							{ 62.0, 77.1, DAGGERSPINE_POINT },	-- Verified
+							{ 66.0, 74.0, DAGGERSPINE_POINT },	-- Not verified, WoWhead data
 						},
 						["groups"] = { i(270041) },	-- Void-Touched Snapdragon (MOUNT!)
 					}),
-					n(TREASURES, {	-- Most of these have the chance to spawn randomly throughout the Ritual Site, unless noted. Listed coords are only a fraction of possible locations.
-						o(644396, {	-- Tainted Bone Pile
-							["coord"] = { 66.6, 63.7, DAGGERSPINE_LANDING },	-- The only location
-							["groups"] = { i(270562) },	-- Tainted Sample (QS!/QI!)
-						}),
-						o(645182, {	-- Crystalline Treasure
-							["coords"] = {
-								{ 45.5, 55.5, DAGGERSPINE_LANDING },
-								{ 46.0, 58.4, DAGGERSPINE_LANDING },
-								{ 50.6, 53.5, DAGGERSPINE_LANDING },
-								{ 51.4, 73.3, DAGGERSPINE_LANDING },
-								{ 62.9, 38.9, DAGGERSPINE_LANDING },
-							},
-							["groups"] = { i(271428) },	-- Crystalline Treasure (QS!/QI!)
-						}),
-						o(645183, {	-- Ethereal Treasure
-							["coords"] = {
-								{ 45.0, 54.4, DAGGERSPINE_LANDING },
-							},
-							["groups"] = { i(271429) },	-- Ethereal Treasure (QS!/QI!)
-						}),
-						o(645181, {	-- Exquisite Treasure
-							["coords"] = {
-								{ 57.3, 18.4, DAGGERSPINE_LANDING },
-								{ 58.8, 49.1, DAGGERSPINE_LANDING },
-							},
-							["groups"] = { i(271427) },	-- Exquisite Treasure (QS!/QI!)
-						}),
-						o(645184, {	-- Sculpted Treasure
-							["coords"] = {
-								{ 63.9, 34.5, DAGGERSPINE_LANDING },
-							},
-							["groups"] = { i(271430) },	-- Sculpted Treasure (QS!/QI!)
-						}),
+					n(ACHIEVEMENTS, {
+						ach(62539),	-- Neighborhood Ritual Team: Daggerspine Point
+						ach(62538),	-- Neighborhood Ritual Watch: Daggerspine Point
+						ach(62522),	-- Ritual Site: Daggerspine Point
+						ach(62526),	-- Ritual Site Mastery: Daggerspine Point
+						ach(62527),	-- Ritual Site Challenge: Daggerspine Point
+						ach(62528),	-- Ritual Site Extreme: Daggerspine Point
+						ach(62535),	-- Ritual Site Rogue: Daggerspine Point
 					}),
 					n(ZONE_DROPS, {
 						i(268809),	-- Enchanted Naga Scroll (QS!/QI!)
@@ -737,7 +707,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 				},
 			}),
-			n(ACHIEVEMENTS, {	-- Achievements do not reward Mounts and Pets. They unlock the ability for you to buy them from the vendor.
+			n(ACHIEVEMENTS, sharedData({	-- Achievements do not reward Mounts and Pets. They unlock the ability for you to buy them from the vendor.
+				["maps"] = {
+					BROKEN_THRONE,
+					DAGGERSPINE_POINT,
+				},
+			}, {
 				ach(62547),	-- Challenge: Embers
 				ach(62544),	-- Challenge: Magical Alarm Bells
 				ach(62545),	-- Challenge: Malevolent Boons
@@ -757,10 +732,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				ach(62549),	-- Expert Challenge: Tainted Corpses
 				ach(62548),	-- Expert Challenge: Tendrils
 				ach(62559),	-- Malevolence Shrugged
-				ach(62537),	-- Neighborhood Ritual Team: Broken Throne
-				ach(62539),	-- Neighborhood Ritual Team: Daggerspine Point
-				ach(62536),	-- Neighborhood Ritual Watch: Broken Throne
-				ach(62538),	-- Neighborhood Ritual Watch: Daggerspine Point
 				ach(62558),	-- Patrol Ambusher
 				ach(62556),	-- Quick Reflexes
 				ach(62561),	-- Reinforcement Obliteration
@@ -768,7 +739,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				ach(62530),	-- Ritual Site Achiever
 				ach(62531),	-- Ritual Site Adept
 				ach(62524),	-- Ritual Site Challenge: Broken Throne
-				ach(62527),	-- Ritual Site Challenge: Daggerspine Point
 				ach(62562, {	-- Ritual Site Disruptor
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -777,23 +747,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						62452,	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
 					}},
 				}),
-				ach(62525),	-- Ritual Site Extreme: Broken Throne
-				ach(62528),	-- Ritual Site Extreme: Daggerspine Point
 				ach(62532),	-- Ritual Site Handler
 				ach(62533),	-- Ritual Site Master
-				ach(62523),	-- Ritual Site Mastery: Broken Throne
-				ach(62526),	-- Ritual Site Mastery: Daggerspine Point
-				ach(62534),	-- Ritual Site Rogue: Broken Throne
-				ach(62535),	-- Ritual Site Rogue: Daggerspine Point
 				ach(62529),	-- Ritual Site Starter
-				ach(62521),	-- Ritual Site: Broken Throne
-				ach(62522),	-- Ritual Site: Daggerspine Point
 				ach(62450),	-- Ritual Sites 101: An Introduction to Basic Magical Rituals
 				ach(62451),	-- Ritual Sites 200: Intermediate Ritual Practices
 				ach(62452),	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
 				ach(62453),	-- Ritual Sites 415: Applied Ritual Strategies
 				ach(62454),	-- Ritual Sites 505: A Seminar in Void Ritual Nuance
-			}),
+			})),
 			n(EVENT_COMPLETION, {
 				i(269817),	-- Ritual Site Challenge Report: Tendrils (QS!)
 			}),
@@ -832,6 +794,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				i(273855),	-- Ritual Tablet (1st Ritual of the Week)
 				i(273856),	-- Ritual Tablet Fragment (2nd Ritual of the Week)
 			}),
+			n(TREASURES, {	-- Most of these have the chance to spawn randomly throughout both Ritual Sites, unless noted. Listed coords are only a fraction of possible locations.
+				o(645182, {	-- Crystalline Treasure
+					["coords"] = {
+						{ 45.5, 55.5, DAGGERSPINE_POINT },
+						{ 46.0, 58.4, DAGGERSPINE_POINT },
+						{ 50.6, 53.5, DAGGERSPINE_POINT },
+						{ 51.4, 73.3, DAGGERSPINE_POINT },
+						{ 62.9, 38.9, DAGGERSPINE_POINT },
+					},
+					["groups"] = { i(271428) },	-- Crystalline Treasure (QS!/QI!)
+				}),
+				o(645183, {	-- Ethereal Treasure
+					["coords"] = {
+						{ 40.9, 56.5, BROKEN_THRONE },
+						{ 45.0, 54.4, DAGGERSPINE_POINT },
+					},
+					["groups"] = { i(271429) },	-- Ethereal Treasure (QS!/QI!)
+				}),
+				o(645181, {	-- Exquisite Treasure
+					["coords"] = {
+						{ 57.3, 18.4, DAGGERSPINE_POINT },
+						{ 58.8, 49.1, DAGGERSPINE_POINT },
+					},
+					["groups"] = { i(271427) },	-- Exquisite Treasure (QS!/QI!)
+				}),
+				o(645184, {	-- Sculpted Treasure
+					["coords"] = {
+						{ 47.7, 66.5, BROKEN_THRONE },
+						{ 63.9, 34.5, DAGGERSPINE_POINT },
+					},
+					["groups"] = { i(271430) },	-- Sculpted Treasure (QS!/QI!)
+				}),
+				o(644396, {	-- Tainted Bone Pile
+					["coords"] = {
+						{ 66.6, 63.7, DAGGERSPINE_POINT },	-- The only location
+					},
+					["groups"] = { i(270562) },	-- Tainted Sample (QS!/QI!)
+				}),
+			}),
 		}),
 	}),
 }))
@@ -852,18 +853,18 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["timeline"] = { ADDED_12_0_5 },
 		["groups"] = {
 			n(QUESTS, {
-				-- Daggerspine Landing
+				-- Daggerspine Point
 				q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day or week)
 				q(95824),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end second time (of day or week)
-				q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_LANDING
-				q(96147),	-- Dark Obelisk @ 64.7, 50.0, DAGGERSPINE_LANDING
-				q(96148),	-- Dark Obelisk @ 61.9, 62.1, DAGGERSPINE_LANDING
-				q(96149),	-- Dark Obelisk @ 63.8, 70.5, DAGGERSPINE_LANDING
-				q(96150),	-- Dark Obelisk @ 39.5, 76.2, DAGGERSPINE_LANDING
-				q(96151),	-- Dark Obelisk @ 35.0, 63.8, DAGGERSPINE_LANDING
-				q(96152),	-- Dark Obelisk @ 50.4, 42.8, DAGGERSPINE_LANDING
-				q(96153),	-- Dark Obelisk @ 44.8, 47.4, DAGGERSPINE_LANDING
-				q(96154),	-- Dark Obelisk @ 42.5, 57.0, DAGGERSPINE_LANDING
+				q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_POINT
+				q(96147),	-- Dark Obelisk @ 64.7, 50.0, DAGGERSPINE_POINT
+				q(96148),	-- Dark Obelisk @ 61.9, 62.1, DAGGERSPINE_POINT
+				q(96149),	-- Dark Obelisk @ 63.8, 70.5, DAGGERSPINE_POINT
+				q(96150),	-- Dark Obelisk @ 39.5, 76.2, DAGGERSPINE_POINT
+				q(96151),	-- Dark Obelisk @ 35.0, 63.8, DAGGERSPINE_POINT
+				q(96152),	-- Dark Obelisk @ 50.4, 42.8, DAGGERSPINE_POINT
+				q(96153),	-- Dark Obelisk @ 44.8, 47.4, DAGGERSPINE_POINT
+				q(96154),	-- Dark Obelisk @ 42.5, 57.0, DAGGERSPINE_POINT
 			}),
 		},
 	}),
