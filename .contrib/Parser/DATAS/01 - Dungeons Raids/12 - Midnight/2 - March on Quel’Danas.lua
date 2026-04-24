@@ -36,7 +36,6 @@ local EncounterToLoot = {
 		i(249915),	-- Extinction Guards
 		i(249920),	-- Eye of Midnight
 		i(249811),	-- Light of the Cosmic Crescendo
-		i(260408),	-- Lightless Lament
 		i(249913),	-- Mask of Darkest Intent
 		i(249914),	-- Oblivion Guise
 		i(249912),	-- Robes of Endless Oblivion
@@ -109,6 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(LURA, {
 					--i(258519),	-- Plans: Magister's Valediction (RECIPE!)
 					i(264492),	-- Chaotic Void Maw (DECOR!)
+					i(260408),	-- Lightless Lament
 					i(267646, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Argent Trophy (DECOR!)
 				}),
 			}),
