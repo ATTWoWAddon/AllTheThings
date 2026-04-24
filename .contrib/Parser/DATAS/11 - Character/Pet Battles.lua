@@ -621,13 +621,13 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		i(92741),	-- Flawless Battle-Stone
 		i(92675),	-- Flawless Beast Battle-Stone
 		i(92676),	-- Flawless Critter Battle-Stone
+		i(92683),	-- Flawless Dragonkin Battle-Stone
 		i(92665),	-- Flawless Elemental Battle-Stone
 		i(92677),	-- Flawless Flying Battle-Stone
 		i(92682),	-- Flawless Humanoid Battle-Stone
 		i(92678),	-- Flawless Magic Battle-Stone
 		i(92680),	-- Flawless Mechanical Battle-Stone
 		i(92681),	-- Flawless Undead Battle-Stone
-		i(92683),	-- Flawless Dragonkin Battle-Stone
 	})),
 	n(REWARDS, {
 		["timeline"] = { ADDED_5_0_4 },
@@ -655,12 +655,12 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 				i(92675),	-- Flawless Beast Battle-Stone
 				i(92676),	-- Flawless Critter Battle-Stone
 				i(92665),	-- Flawless Elemental Battle-Stone
+				i(92683),	-- Flawless Dragonkin Battle-Stone
 				i(92677),	-- Flawless Flying Battle-Stone
 				i(92682),	-- Flawless Humanoid Battle-Stone
 				i(92678),	-- Flawless Magic Battle-Stone
 				i(92680),	-- Flawless Mechanical Battle-Stone
 				i(92681),	-- Flawless Undead Battle-Stone
-				i(92683),	-- Flawless Dragonkin Battle-Stone
 				-- #endif
 			}),
 
