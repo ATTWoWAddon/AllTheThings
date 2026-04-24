@@ -658,9 +658,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["groups"] = {
 					i(271644),	-- Ember of Power (QS!/QI!)
+					i(270061, {	-- Void-Bathed Snapdragon (PET!)
+						-- TODO: Restructure when "Soggy Nest" ObjectID gets discovered
+						["description"] = "Use |cff1eff00Soggy Lynx Toy|r at the Soggy Nest.",
+						["coord"] = { 30.0, 63.1, DAGGERSPINE_LANDING },
+						["cr"] = 263917,	-- Curious Snapdragon
+						["cost"] = { { "i", 272128, 1 } },	-- Soggy Lynx Toy
+					}),
 					i(270062, {	-- Void-Touched Chick (PET!)
-						-- Looks like an NPC but could not grab the ID for the [cr] because of the missing NPC tooltips inside the instanced area.
 						["description"] = "A small, inconspicuous, egg is floating down the river. Catch it.",
+						["cr"] = 263805,	-- Egg
 						["coords"] = {
 							{ 55.8, 45.6, DAGGERSPINE_LANDING },
 							{ 68.7, 47.7, DAGGERSPINE_LANDING },
@@ -669,41 +676,44 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 					o(644396, {	-- Tainted Bone Pile
 						["coord"] = { 66.6, 63.7, DAGGERSPINE_LANDING },
-						["groups"] = {
-							i(270562),	-- Tainted Sample (QS!/QI!)
-						},
-					}),
-					o(645182, {	-- Crystalline Treasure
-						["coords"] = {
-							{ 45.5, 55.5, DAGGERSPINE_LANDING },
-							{ 46.0, 58.4, DAGGERSPINE_LANDING },
-							{ 51.4, 73.3, DAGGERSPINE_LANDING },
-							{ 62.9, 38.9, DAGGERSPINE_LANDING },
-						},
-						["groups"] = {
-							i(271428),	-- Crystalline Treasure (QS!/QI!)
-						},
-					}),
-					o(645181, {	-- Exquisite Treasure
-						["coord"] = { 58.8, 49.1, DAGGERSPINE_LANDING },
-						["groups"] = {
-							i(271427),	-- Exquisite Treasure (QS!/QI!)
-						},
+						["groups"] = { i(270562) },	-- Tainted Sample (QS!/QI!)
 					}),
 					o(649380, {	-- Washed Up Kelp
 						["description"] = "Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",
+						["modelScale"] = 3,
 						["cr"] = 263617,	-- Void-Touched Snapdragon
 						["coords"] = {
-							{ 38.0, 64.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
 							{ 41.0, 73.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
-							{ 47.9, 42.1, DAGGERSPINE_LANDING },	-- Verified
-							{ 48.0, 72.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
+							{ 47.9, 72.1, DAGGERSPINE_LANDING },	-- Verified
 							{ 50.1, 55.1, DAGGERSPINE_LANDING },	-- Verified
 							{ 53.4, 55.4, DAGGERSPINE_LANDING },	-- Verified
 							{ 62.0, 77.1, DAGGERSPINE_LANDING },	-- Verified
 							{ 66.0, 74.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
 						},
 						["groups"] = { i(270041) },	-- Void-Touched Snapdragon (MOUNT!)
+					}),
+					n(TREASURES, {
+						o(645182, {	-- Crystalline Treasure
+							["coords"] = {
+								{ 45.5, 55.5, DAGGERSPINE_LANDING },
+								{ 46.0, 58.4, DAGGERSPINE_LANDING },
+								{ 50.6, 53.5, DAGGERSPINE_LANDING },
+								{ 51.4, 73.3, DAGGERSPINE_LANDING },
+								{ 62.9, 38.9, DAGGERSPINE_LANDING },
+							},
+							["groups"] = { i(271428) },	-- Crystalline Treasure (QS!/QI!)
+						}),
+						-- Ethereal Treasure (Missing Data)
+						o(645181, {	-- Exquisite Treasure
+							["coord"] = { 58.8, 49.1, DAGGERSPINE_LANDING },
+							["groups"] = { i(271427) },	-- Exquisite Treasure (QS!/QI!)
+						}),
+						-- Sculpted Treasure (Missing Data)
+					}),
+					n(ZONE_DROPS, {
+						i(272128, {	-- Soggy Lynx Toy
+							["description"] = "Has a chance to drop from any Naga-type creature within the Ritual Site.",
+						}),
 					}),
 				},
 			}),
@@ -770,7 +780,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				q(95551, {	-- Misappropriated Treasures
 					["providers"] = {
-						--TODO: could be only Exquisite Treasure as started of quest, not sure
 						{ "i", 271428 },	-- Crystalline Treasure (QS!/QI!)
 						{ "i", 271429 },	-- Ethereal Treasure (QS!/QI!)
 						{ "i", 271427 },	-- Exquisite Treasure (QS!/QI!)

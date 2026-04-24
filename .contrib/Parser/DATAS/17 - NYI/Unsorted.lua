@@ -326,7 +326,6 @@ root(ROOTS.Unsorted, {
 			i(269829),	-- Void-Scarred Eaglet
 			i(269999),	-- Overloaded Manaling
 			i(270058),	-- Rope Lynx Harness
-			i(270061),	-- Void-Bathed Snapdragon
 			i(270063),	-- Void-Touched Lynx Kitten
 			i(270279),	-- Crown of Midnight Springflowers
 			i(270280),	-- Crown of Azure Springflowers
@@ -491,7 +490,6 @@ root(ROOTS.Unsorted, {
 			i(272119),	-- Residue-Covered Tool
 			i(272120),	-- Mysterious Vial
 			i(272125),	-- Recruit's Cache
-			i(272128),	-- Soggy Lynx Toy
 			i(272144),	-- Onyx Bloodknight Bladestaff
 			i(272287),	-- Nap Mat
 			i(272339),	-- Umbral Champion's Illustrious Banner
