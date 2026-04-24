@@ -99,3 +99,9 @@ app.PrintTable = function(t,depth)
 		print(p,tostring(t),"RECURSIVE");
 	end
 end
+app.PrintError = function(err, source, co)
+	local errorID = app.UniqueCounter.errorID
+	local title, popupID = "Stack Trace #" .. errorID, "runner-error-" .. errorID;
+	app:SetupReportDialog(popupID, title, {"Source:",source,"Error:",err,"Stack:",co and debugstack(co) or debugstack()});
+	app.print(app:Linkify("ERROR "..title, app.Colors.ChatLinkError, "dialog:" .. popupID));
+end

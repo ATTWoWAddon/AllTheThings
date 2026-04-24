@@ -13,14 +13,6 @@ local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
 
-local errorID = 0
-local function PrintError(err, source, co)
-	errorID = errorID + 1;
-	local title, popupID = "Stack Trace #" .. errorID, "runner-error-" .. errorID;
-	app:SetupReportDialog(popupID, title, {"Source:",source,"Error:",err,"Stack:",co and debugstack(co) or debugstack()});
-	app.print(app:Linkify("ERROR "..title, app.Colors.ChatLinkError, "dialog:" .. popupID));
-end
-
 local function wipearray(t, max)
 	local c = math_max(#t, max or 0)
 	for i=1,c do t[i] = nil end
@@ -48,7 +40,7 @@ local function SetStackCo()
 				status, err = pcall(f, p);
 				-- Function call has an error or it is not continuing, remove it from the Stack
 				if not status or not err then
-					if not status then PrintError(err, "StackCo", StackCo) end
+					if not status then app.PrintError(err, "StackCo", StackCo) end
 					-- app.PrintDebug("StackCo:Remove",i)
 					tremove(Stack, i);
 					tremove(StackParams, i);
@@ -73,7 +65,7 @@ local function RunStack()
 	if c_status(StackCo) == "dead" then SetStackCo() end
 	RunningStack = nil;
 	local ok, err = pcall(c_resume, StackCo);
-	if not ok then PrintError(err, "RunStack", StackCo) end
+	if not ok then app.PrintError(err, "RunStack", StackCo) end
 end
 QueueStack = function()
 	-- app.PrintDebug("QueueStackStatus:",RunningStack and "REPEAT" or "FIRST",c_status(StackCo))
@@ -147,7 +139,7 @@ local PushQueue = setmetatable({}, {
 						-- app.PrintDebug("PUSH.Run.Yielded",co)
 						return true;
 					end
-				else PrintError(err, "CO:resume", co) end
+				else app.PrintError(err, "CO:resume", co) end
 			end
 			-- After the pusher is done running the coroutine, it can return itself to the cache
 			_PushQueue[#_PushQueue + 1] = pushfunc;
@@ -210,7 +202,7 @@ local function CreateRunner(name)
 	-- Static coroutine for the Runner which runs one loop each time the Runner is called, and yields on the Stack
 	local RunnerCoroutine
 	local function err(msg)
-		PrintError(msg, "Runner."..name, RunnerCoroutine)
+		app.PrintError(msg, "Runner."..name, RunnerCoroutine)
 	end
 	local SetRunnerCoroutine = function()
 		RunnerCoroutine = c_create(function()
@@ -278,7 +270,7 @@ local function CreateRunner(name)
 				-- app.PrintDebug("Stack.Run.Yielded",Name)
 				return true;	-- This means more work is required.
 			end
-		else PrintError(err, Name, RunnerCoroutine) end
+		else app.PrintError(err, Name, RunnerCoroutine) end
 	end
 
 	-- Provides a utility which will process a given number of functions each frame in a Queue

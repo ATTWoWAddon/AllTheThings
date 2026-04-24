@@ -73,6 +73,11 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 
 	local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
 		if not id then return end
+		if type(id) ~= "number" then
+			local msg = "QuestNameFromServer got non-number id: " .. tostring(id)
+			app.PrintError(msg, "QuestNameFromServer")
+			return
+		end
 
 		local name = GetTitleForQuestID(id);
 		if not IsRetrieving(name) then
