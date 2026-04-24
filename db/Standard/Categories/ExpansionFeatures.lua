@@ -42028,7 +42028,6 @@ ach(62569,{
 crit(113603,{achID=62569,id=1,providers={{"i",268996}}}),
 crit(113766,{achID=62569,id=2,questID=94920}),
 crit(113767,{achID=62569,id=3,questID=95070}),
-crit(113768,{achID=62569,id=4,questID=95071}),
 crit(113769,{achID=62569,id=5,questID=95069})}),
 ach(62498,{providers={{"n",257794}},g={
 crit(113604,{achID=62563,id=1})}}),
@@ -42451,26 +42450,33 @@ o(645184,{coords={
 i(271430)}})}}),
 m(2594,{coords={
 [2395]={{37.6,65.3}}},crs={260103},g={
-i(271644),
 p(5021,{coords={
 [2594]={{30,63.1}}},cost={{"i",272128,1}},crs={263917},description="Use |cff1eff00Soggy Lynx Toy|r at the Soggy Nest.",itemID=270061,npcID=262089,spellID=1287374}),
 p(5022,{coords={
 [2594]={{55.8,45.6},{68.7,47.7},{71.6,50.3}}},crs={263805},description="A small, inconspicuous, egg is floating down the river. Catch it.",itemID=270062,npcID=262090,spellID=1287376}),
+o(649380,{coords={
+[2594]={{41,73},{46.6,46},{47.9,72.1},{50.1,55.1},{53.4,55.4},{62,77.1},{66,74}}},crs={263617},description="Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",modelScale=3,g={
+mnt(1287357,{itemID=270041})}}),
+h(-56,{
 o(644396,{coords={
 [2594]={{66.6,63.7}}},g={
 i(270562)}}),
-o(649380,{coords={
-[2594]={{41,73},{47.9,72.1},{50.1,55.1},{53.4,55.4},{62,77.1},{66,74}}},crs={263617},description="Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",modelScale=3,g={
-mnt(1287357,{itemID=270041})}}),
-h(-56,{
 o(645182,{coords={
 [2594]={{45.5,55.5},{46,58.4},{50.6,53.5},{51.4,73.3},{62.9,38.9}}},g={
 i(271428)}}),
+o(645183,{coords={
+[2594]={{45,54.4}}},g={
+i(271429)}}),
 o(645181,{coords={
-[2594]={{58.8,49.1}}},g={
-i(271427)}})}),
+[2594]={{57.3,18.4},{58.8,49.1}}},g={
+i(271427)}}),
+o(645184,{coords={
+[2594]={{63.9,34.5}}},g={
+i(271430)}})}),
 h(-63,{
-i(272128,{description="Has a chance to drop from any Naga-type creature within the Ritual Site.",spellID=1290269})})}}),
+i(268809),
+i(271644),
+i(272128,{crs={257827,257828,257829},description="Has a chance to drop from any Naga-type creature within the Ritual Site.",spellID=1290269})})}}),
 h(-12,{
 ach(62547),
 ach(62544),
@@ -42526,14 +42532,16 @@ ach(62454)}),
 h(-29,{
 i(269817)}),
 h(-45,{
+q(95071,{providers={{"i",268809}},g={
+crit(113768,{achID=62569,id=4})}}),
 q(95551,{providers={{"i",271428}},qis={271427,271429,271430},g={
 crit(113704,{achID=62621,id=5})}}),
+q(95554,{providers={{"i",271644}},g={
+crit(113707,{achID=62621,id=8})}}),
 q(95547,{providers={{"i",269817}},g={
 crit(113700,{achID=62621,id=1})}}),
 q(95548,{providers={{"i",270562}},g={
-crit(113701,{achID=62621,id=2})}}),
-q(95554,{providers={{"i",271644}},g={
-crit(113707,{achID=62621,id=8})}})}),
+crit(113701,{achID=62621,id=2})}})}),
 h(-47,{
 cu(3429),
 i(267051),

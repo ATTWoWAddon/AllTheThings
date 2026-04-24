@@ -280,7 +280,6 @@ root(ROOTS.Unsorted, {
 			i(268806),	-- Scarred Tabard of Gilneas
 			i(268807),	-- Torn Twilight Missive
 			i(268808),	-- Permafrosted Keystone
-			i(268809),	-- Enchanted Naga Scroll
 			i(268830),	-- Stylish Flowered Brown Cap
 			i(268831),	-- Stylish Black Cap
 			i(268832),	-- Stylish Brown Top Hat

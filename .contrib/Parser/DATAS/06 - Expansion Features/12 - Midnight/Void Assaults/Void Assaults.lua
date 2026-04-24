@@ -657,7 +657,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				["cr"] = 260103,	-- Curious Obelisk
 				["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["groups"] = {
-					i(271644),	-- Ember of Power (QS!/QI!)
 					i(270061, {	-- Void-Bathed Snapdragon (PET!)
 						-- TODO: Restructure when "Soggy Nest" ObjectID gets discovered
 						["description"] = "Use |cff1eff00Soggy Lynx Toy|r at the Soggy Nest.",
@@ -674,16 +673,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							{ 71.6, 50.3, DAGGERSPINE_LANDING },
 						},
 					}),
-					o(644396, {	-- Tainted Bone Pile
-						["coord"] = { 66.6, 63.7, DAGGERSPINE_LANDING },
-						["groups"] = { i(270562) },	-- Tainted Sample (QS!/QI!)
-					}),
 					o(649380, {	-- Washed Up Kelp
 						["description"] = "Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",
 						["modelScale"] = 3,
 						["cr"] = 263617,	-- Void-Touched Snapdragon
 						["coords"] = {
 							{ 41.0, 73.0, DAGGERSPINE_LANDING },	-- Not verified, WoWhead data
+							{ 46.6, 46.0, DAGGERSPINE_LANDING },	-- Verified
 							{ 47.9, 72.1, DAGGERSPINE_LANDING },	-- Verified
 							{ 50.1, 55.1, DAGGERSPINE_LANDING },	-- Verified
 							{ 53.4, 55.4, DAGGERSPINE_LANDING },	-- Verified
@@ -692,7 +688,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						},
 						["groups"] = { i(270041) },	-- Void-Touched Snapdragon (MOUNT!)
 					}),
-					n(TREASURES, {
+					n(TREASURES, {	-- Most of these have the chance to spawn randomly throughout the Ritual Site, unless noted. Listed coords are only a fraction of possible locations.
+						o(644396, {	-- Tainted Bone Pile
+							["coord"] = { 66.6, 63.7, DAGGERSPINE_LANDING },	-- The only location
+							["groups"] = { i(270562) },	-- Tainted Sample (QS!/QI!)
+						}),
 						o(645182, {	-- Crystalline Treasure
 							["coords"] = {
 								{ 45.5, 55.5, DAGGERSPINE_LANDING },
@@ -703,16 +703,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							},
 							["groups"] = { i(271428) },	-- Crystalline Treasure (QS!/QI!)
 						}),
-						-- Ethereal Treasure (Missing Data)
+						o(645183, {	-- Ethereal Treasure
+							["coords"] = {
+								{ 45.0, 54.4, DAGGERSPINE_LANDING },
+							},
+							["groups"] = { i(271429) },	-- Ethereal Treasure (QS!/QI!)
+						}),
 						o(645181, {	-- Exquisite Treasure
-							["coord"] = { 58.8, 49.1, DAGGERSPINE_LANDING },
+							["coords"] = {
+								{ 57.3, 18.4, DAGGERSPINE_LANDING },
+								{ 58.8, 49.1, DAGGERSPINE_LANDING },
+							},
 							["groups"] = { i(271427) },	-- Exquisite Treasure (QS!/QI!)
 						}),
-						-- Sculpted Treasure (Missing Data)
+						o(645184, {	-- Sculpted Treasure
+							["coords"] = {
+								{ 63.9, 34.5, DAGGERSPINE_LANDING },
+							},
+							["groups"] = { i(271430) },	-- Sculpted Treasure (QS!/QI!)
+						}),
 					}),
 					n(ZONE_DROPS, {
+						i(268809),	-- Enchanted Naga Scroll (QS!/QI!)
+						i(271644),	-- Ember of Power (QS!/QI!)
 						i(272128, {	-- Soggy Lynx Toy
 							["description"] = "Has a chance to drop from any Naga-type creature within the Ritual Site.",
+							["crs"] = {
+								257828,	-- Daggerspine Infuser
+								257829,	-- Daggerspine Myrmidon
+								257827,	-- Deeplurk Shadowblade
+							},
 						}),
 					}),
 				},
@@ -778,22 +798,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				i(269817),	-- Ritual Site Challenge Report: Tendrils (QS!)
 			}),
 			n(QUESTS, {
+				q(95071, {	-- Enchanted Naga Scroll
+					["provider"] = { "i", 268809 },	-- Enchanted Naga Scroll (QS!/QI!)
+				}),
 				q(95551, {	-- Misappropriated Treasures
-					["providers"] = {
+					["providers"] = {	-- All of these trigger the Quest and also serve as Quest Items
 						{ "i", 271428 },	-- Crystalline Treasure (QS!/QI!)
 						{ "i", 271429 },	-- Ethereal Treasure (QS!/QI!)
 						{ "i", 271427 },	-- Exquisite Treasure (QS!/QI!)
 						{ "i", 271430 },	-- Sculpted Treasure (QS!/QI!)
 					},
 				}),
+				q(95554, {	-- Questionable Power
+					["provider"] = { "i", 271644 },	-- Ember of Power (QS!/QI!)
+				}),
 				q(95547, {	-- Ritual Site Challenge Report: Tendrils
 					["provider"] = { "i", 269817 },	-- Ritual Site Challenge Report: Tendrils (QS!)
 				}),
 				q(95548, {	-- Tainted Sample
 					["provider"] = { "i", 270562 },	-- Tainted Sample (QS!/QI!)
-				}),
-				q(95554, {	-- Questionable Power
-					["provider"] = { "i", 271644 },	-- Ember of Power (QS!/QI!)
 				}),
 			}),
 			n(REWARDS, {
