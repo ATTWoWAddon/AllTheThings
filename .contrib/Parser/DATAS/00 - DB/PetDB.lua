@@ -233,7 +233,7 @@ local CompanionPetSpeciesIDToSpellID = {
 	[381] = 118414,	-- Porcupette
 	[382] = 231215,	-- Sun Darter Hatchling
 	[384] = 118419,	-- Otter Pup
-	--[462] = 89472,	-- Jacob the Test Seagull [NYI]
+	-- [462] = 89472,	-- Jacob the Test Seagull [NYI]
 	[629] = 123212,	-- Shore Crawler
 	[630] = 123214,	-- Gilnean Raven
 	[650] = 123778,	-- Terrible Turnip
@@ -367,8 +367,8 @@ local CompanionPetSpeciesIDToSpellID = {
 	[1387] = 155838,	-- Iron Starlette
 	[1395] = 159296,	-- Lil' Leftovers
 	[1396] = 159581,	-- Crazy Carrot
-	--[1401] = 53082,	-- Tyri	[This is a Garrison Fight, not tameable]
-	--[1402] = 149810,	-- Puzzle	[This is a Garrison Fight, not tameable]
+	-- [1401] = 53082,	-- Tyri	[This is a Garrison Fight, not tameable]
+	-- [1402] = 149810,	-- Puzzle	[This is a Garrison Fight, not tameable]
 	[1403] = 160403,	-- Mechanical Axebeak
 	[1410] = 161522,	-- Mechanical Training Dummy
 	[1411] = 161643,	-- Royal Peachick
@@ -456,7 +456,7 @@ local CompanionPetSpeciesIDToSpellID = {
 	[1635] = 179841,	-- K'ute
 	[1636] = 179954,	-- Race MiniZep
 	[1639] = 181086,	-- Graves
-	--[1642] = 170272,	-- Salad	[This is a Garrison Fight, not tameable]
+	-- [1642] = 170272,	-- Salad	[This is a Garrison Fight, not tameable]
 	[1655] = 177223,	-- Slithershock Elver
 	[1656] = 177218,	-- Young Talbuk
 	[1660] = 184480,	-- Fel Pup
@@ -1011,6 +1011,7 @@ end
 
 local Pets = root("_petDB");
 local Items = ItemDBConditional;
+local SpeciesDB = SpeciesDB
 local i = function(itemID, speciesID, altSpeciesID)
 	if itemID < 1 then return end
 	local item = Items[itemID];
@@ -1023,12 +1024,14 @@ local i = function(itemID, speciesID, altSpeciesID)
 	elseif item.speciesID then
 		item.speciesID = nil;
 	end
+	SpeciesDB[speciesID] = Items[itemID]
 	return item;
 end
 local n = function(creatureID, speciesID)
 	if creatureID < 1 then return end
 	local pet = { ["speciesID"] = speciesID, ["npcID"] = creatureID, ["ignoreBonus"] = true };
 	Pets[creatureID] = pet;
+	SpeciesDB[speciesID] = Pets[creatureID]
 	return pet;
 end
 
@@ -1048,18 +1051,30 @@ end
 -----------------
 -- CLASSIC WOW --
 -----------------
-i(198665, 4234);	-- Pebble's Pebble
 i(200060, 4235);	-- Hoplet (Classic)
-i(204982, 4236);	-- Glub
-i(187794, 4233);	-- Flurky
-i(211082, 4329);	-- Arfus (WOTLK)
-i(209877, 4273);	-- Cypress (WOTLK)
-i(209945, 4274);	-- Lil' Wrathion (WOTLK)
-i(0, 4532);			-- Pinchy the Plunderer (WOTLK)
+
 -- #if SEASON_OF_DISCOVERY
 i(220620, 446105);	-- Skeletal Wind Serpent (SOD) [Sunken Temple]
 -- #endif
+
+-- TBC Classic --
+i(204982, 4236);	-- Glub
+i(187794, 4233);	-- Flurky
+
+-- TBC Classic 2026 --
+i(260433, 4962);	-- Starshard Whelpling Collar
+
+-- Wrath Classic --
+i(211082, 4329);	-- Arfus (WOTLK)
+i(209877, 4273);	-- Cypress (WOTLK)
+i(209945, 4274);	-- Lil' Wrathion (WOTLK)
+i(198665, 4234);	-- Pebble's Pebble
+i(0, 4532);			-- Pinchy the Plunderer (WOTLK)
+
+-- Cata Classic --
 i(224002, 4585);	-- Swoopy (Cata)
+
+--- MOP CLASSIC ---
 i(231312, 4685);	-- Timbered Air Snakelet (MOP)
 -- #endif
 
@@ -3237,8 +3252,13 @@ i(169195, 0);		-- Golden Cricket
 -- PATCH 8.2.5 --
 -----------------
 i(172493, 2794);	-- Crimson Skipper
+-- #if AFTER 11.2.5
+i(258419, 2778);	-- Finduin
+i(258418, 2777);	-- Gillvanas
+-- #else
 i(0, 2778);			-- Finduin
 i(0, 2777);			-- Gillvanas
+-- #endif
 i(0, 2795);			-- Jenafur
 i(172016, 2621);	-- Lil' Nefarian
 i(172491, 2792);	-- Papi
@@ -3254,7 +3274,11 @@ i(174476, 2848);	-- Aqir Tunneler
 i(174474, 2846);	-- Corrupted Tentacle
 i(174481, 2850);	-- Cursed Dune Watcher
 i(174457, 2838);	-- C'Thuffer
+-- #if AFTER 11.2.5
+i(258414, 2623);	-- Dottie
+-- #else
 i(0, 2623);			-- Dottie
+-- #endif
 i(174449, 2835);	-- Ra'kim
 i(174828, 2868);	-- Experiment 13
 i(174452, 2836);	-- Eye of Corruption
@@ -3322,7 +3346,11 @@ i(0, 2871);			-- Pet Training Dummy
 -----------------
 -- PATCH 9.0.1 --
 -----------------
+-- #if ATTER 11.2.5
+i(248091, 2779);	-- Anima Wyrmling
+-- #else
 i(0, 2779);			-- Anima Wyrmling
+-- #endif
 --- NYI ---
 i(0, 2951);			-- PH Slime
 i(180838, 0);		-- Blue Etherwyrm
@@ -3410,7 +3438,11 @@ i(181171, 2947);	-- Luminous Webspinner
 i(183191, 3029);	-- Maw Crawler
 i(183194, 3033);	-- Maw Stalker
 i(181269, 2959);	-- Micromancer
+-- #if AFTER 11.2.5
+i(258429, 3053);	-- Moon-Touched Netherwhelp
+-- #else
 i(0, 3053);			-- Moon-Touched Netherwhelp
+-- #endif
 i(181282, 2963);	-- Mu'dud
 i(181164, 2944);	-- Oonar's Arm
 i(180628, 2923);	-- Pearlwing Heron
@@ -3605,7 +3637,11 @@ i(186545, 0);		-- REUSE
 -----------------
 -- PATCH 9.1.5 --
 -----------------
+-- #if AFTER 11.2.5
+i(248092, 3153);	-- Blinky
+-- #else
 i(188837, 3153);	-- Blinky
+-- #endif
 i(186553, 3107);	-- Gurgl
 --- NYI ---
 i(0, 3188);			-- Trub'ul
@@ -3673,7 +3709,11 @@ n(185475, 3246);	-- Tezpet
 -----------------
 -- PATCH 9.2.5 --
 -----------------
+-- #if AFTER 11.2.5
+i(258432, 3177);	-- Drakks
+-- #else
 i(0, 3177);			-- Drakks
+-- #endif
 i(190586, 3249);	-- Lil' Ursoc
 i(0, 3175);			-- Murkastrasza
 
@@ -4008,11 +4048,19 @@ i(0, 4237);			-- Treanthony
 i(211271, 3491);	-- Arfus
 i(205024, 3523);	-- Cheddar
 i(205010, 3516);	-- Crimson Swoglet
+-- #if AFTER 11.2.5
+i(258481, 3236);	-- Gnomelia Gearheart
+-- #else
 i(0, 3236);			-- Gnomelia Gearheart
+-- #endif
 i(208543, 4265);	-- Lil' Frostwing
 i(208850, 4267);	-- Lil' Maggz
 i(208751, 4266);	-- Squally
+-- #if AFTER 11.2.5
+i(258482, 3579);	-- Ysergle The Dreamurk
+-- #else
 i(0, 3579);			-- Ysergle The Dreamurk
+-- #endif
 
 ------------------
 -- PATCH 10.2.0 --
@@ -4074,7 +4122,11 @@ i(206174, 3582);	-- Blub
 -- #if BEFORE 11.0.7
 i(0, 4426);			-- Bubbles
 -- #endif
+-- #if AFTER 11.2.5
+i(258483, 4437);	-- Fathom
+-- #else
 i(0, 4437);			-- Fathom
+-- #endif
 -- #if BEFORE 11.0.7
 i(0, 4425);			-- Glamrok
 i(0, 4435);			-- Happy
@@ -4112,9 +4164,8 @@ i(0, 4584);			-- Tan Stagshell
 i(222969, 4474);	-- Anub'Rekyute
 i(221764, 4519);	-- Burntram
 i(222979, 4545);	-- Clay Stonecharger
-i(221762, 4484);	-- Frenzied Bloodtick
+i(0, 4484);			-- Frenzied Bloodtick
 i(221195, 4458);	-- Illskitter
-i(221492, 4459);	-- Moss Skipper
 i(221759, 4512);	-- Sceaduthax
 i(221493, 0);		-- Admiral
 i(223803, 0);		-- Blue Stagshell
@@ -4346,28 +4397,28 @@ n(231577, 4662);	-- Varmint MK II
 n(231567, 4657);	-- Venture Bombshell
 n(231477, 4651);	-- Wily Rat
 --- TRAINER ---
-i(0, 4741);	-- Cannoneer
-i(0, 4739);	-- Fancier Rat
-i(0, 4740);	-- Handbag Hyena
-i(0, 4742);	-- Lookout
-i(0, 4744);	-- Muddy Croach
-i(0, 4737);	-- Precision Powerdrill
-i(0, 4745);	-- Rusty Croach
-i(0, 4746);	-- Sooty Croach
-i(0, 4738);	-- Status Symbol
-i(0, 4743);	-- Swabbie
+i(0, 4741);			-- Cannoneer
+i(0, 4739);			-- Fancier Rat
+i(0, 4740);			-- Handbag Hyena
+i(0, 4742);			-- Lookout
+i(0, 4744);			-- Muddy Croach
+i(0, 4737);			-- Precision Powerdrill
+i(0, 4745);			-- Rusty Croach
+i(0, 4746);			-- Sooty Croach
+i(0, 4738);			-- Status Symbol
+i(0, 4743);			-- Swabbie
 --- NYI ---
-i(231628, 4676);	-- Bawkinator 2000
-i(231627, 4677);	-- Black Cave Crab
-i(0, 4671);	-- Cauldrone
-i(231760, 4673);	-- Crunchy
-i(231762, 4674);	-- Dosh
-i(231758, 4672);	-- Finnity
-i(231763, 4675);	-- FO-MO Mark II
+i(0, 4676);			-- Bawkinator 2000
+i(0, 4677);			-- Black Cave Crab
+i(0, 4671);			-- Cauldrone
+i(0, 4673);			-- Crunchy
+i(0, 4674);			-- Dosh
+i(0, 4672);			-- Finnity
+i(0, 4675);			-- FO-MO Mark II
 i(235909, 4755);	-- Gleam
 i(232854, 4634);	-- Grinner
-i(0, 4670);	-- Hermes
-i(231613, 4665);	-- Yellow Tropical Frog
+i(0, 4670);			-- Hermes
+i(0, 4665);			-- Yellow Tropical Frog
 
 ------------------
 -- PATCH 11.1.5 --
@@ -4389,9 +4440,9 @@ i(235795, 4749);	-- Void-Scarred Scorpid
 i(235797, 4750);	-- Void-Scarred Tallstrider Chick
 i(238942, 4793);	-- Weechi
 i(223498, 4568);	-- Whoopy
---- UNSORTED ---
-i(0, 4792);	-- Ada the Sweetest
-i(0, 4761);	-- Pascal the Wonder Pup
+--- NYI ---
+i(0, 4792);			-- Ada the Sweetest
+i(0, 4761);			-- Pascal the Wonder Pup
 
 ------------------
 -- PATCH 11.1.7 --
@@ -4433,27 +4484,25 @@ i(244467, 4825);	-- Veridian Thorntail
 i(245212, 4836);	-- Vitriolic Inchshifter
 i(244914, 4833);	-- Xanthous Siphonmite
 i(246694, 4859);	-- Zo'ya
---- UNSORTED ---
-i(0, 4824);	-- Baby Karesh Fox - Orange
-i(257518, 4908);	-- Lil' Ashlee
-
+--- NYI ---
+i(0, 4824);			-- Baby Karesh Fox - Orange
 i(246723, 4860);	-- Unfazed Diver
-i(0, 4837);	-- Worm, Cosmic - Critter (Red)
+i(0, 4837);			-- Worm, Cosmic - Critter (Red)
 
 ------------------
 -- PATCH 11.2.5 --
 ------------------
+i(252200, 4900);	-- Bundled-up Bob
 i(246339, 4854);	-- Duskytooth Fel Snooter
 i(252301, 4901);	-- Fledgeling Warden's Companion
+i(257518, 4908);	-- Lil' Ashlee
 i(239705, 4802);	-- Morsel
 i(246342, 4855);	-- Mustyfur Fel Snooter
 i(129108, 1751);	-- Son of Goredome
+i(253699, 4903);	-- Starshard Whelpling
 i(239699, 4801);	-- Tidbit
-
---- UNSORTED ---
-i(252200, 4900);	-- Bundled-up Bob
+--- NYI ---
 i(252199, 4899);	-- Festive Eve
-i(252194, 4897);	-- Fishmonger May
 i(252195, 4898);	-- Fishstick Keith
 i(252137, 4895);	-- Lil' Chompers
 i(252193, 4896);	-- Slippery Saul
@@ -4461,84 +4510,119 @@ i(252193, 4896);	-- Slippery Saul
 ------------------
 -- PATCH 11.2.7 --
 ------------------
-i(205017, 3519);	-- Byrn
-i(258737, 4913);	-- Moon Darter
+i(252650, 4894);	-- Heartglow Listener
 i(254876, 4911);	-- P.O.S.T. Assistant
-i(222967, 4475);	-- Webbers
+i(248073, 4862);	-- Smoldering Valor
+i(245544, 4851);	-- Tiny Snow Buddy
 
 ------------------
 -- PATCH 12.0.0 --
 ------------------
-i(250135, 4874);	-- Akil Fledgling
-i(193068, 3277);	-- Amber Treeflitter
-i(250142, 4882);	-- Azure Sporebat
-i(250148, 4879);	-- Blistercreepling
-i(238793, 4790);	-- Devouring Runt
-i(250143, 4883);	-- Dragonhawk Mosswing
-i(250139, 4878);	-- Ebon Snapling
-i(250146, 4885);	-- Gloom Toad
-i(250137, 4876);	-- Mud Potadpole
-i(250145, 4884);	-- Pangolil
-i(251005, 4892);	-- Riftblade Familiar
-i(250136, 4875);	-- Rootling Nester
-i(250147, 4886);	-- Silkcrawler
-i(258660, 4912);	-- Silvermoon Broom
-i(250140, 4880);	-- Swamp Biter
-i(251001, 4890);	-- Vibrant Manaling
-i(250138, 4877);	-- Violet Chick
-
+i(253404, 4902);	-- Auspicious Pixiu
+i(205017, 3519);	-- Byrn
+i(246628, 4508);	-- Emerald Sporbit
+i(258737, 4913);	-- Moon Darter
+i(221492, 4459);	-- Moss Skipper
+i(244911, 4830);	-- Rhay'Dahr
+i(232856, 4633);	-- Scruff
+i(222967, 4475);	-- Webbers
 --- UNSORTED ---
-i(255151, 4906);	-- [DNT] Baby Amani Eagle (Grey)
-i(0, 4905);	-- [DNT] Baby Amazard (Red)
-i(264909, 4982);	-- [DNT] Baby Eversong Lynx (Black)
-i(264892, 4981);	-- [PH] Black Baby Hawkstrider
-i(265035, 4984);	-- [PH] Purple Siphoid
-i(260705, 4947);	-- Assistant Botanist Leafy
-i(0, 4945);	-- Aud'rei III
-i(263492, 4952);	-- Blitzcreek
-i(260942, 4951);	-- Bubbly Snapling
 i(258739, 4914);	-- Chillcrawler
 i(262768, 4965);	-- Chirpy Mandrake
+i(262763, 4964);	-- Plump Mandrake
+i(262769, 4966);	-- Screechy Mandrake
+i(260341, 4943);	-- Star the Lucky Dragon
+--- NYI ---
+i(0, 4905);			-- [DNT] Baby Amazard (Red)
+i(0, 4945);			-- Aud'rei III
+i(0, 4887);			-- Dundun
+i(242251, 0);		-- [NYI] Magical Broom Pet
+i(250141, 0);		-- Purple Swamp Leech
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+i(250135, 4874);	-- Akil Fledgling
+i(193068, 3277);	-- Amber Treeflitter
+i(260705, 4947);	-- Assistant Botanist Leafy
+i(250142, 4882);	-- Azure Sporebat
+i(250148, 4879);	-- Blistercreepling
+i(263492, 4952);	-- Blitzcreek
+i(260942, 4951);	-- Bubbly Snapling
+i(246314, 4974);	-- Dali
+i(238793, 4790);	-- Devouring Runt
 i(260306, 4942);	-- Distorted Memory
-i(258189, 4910);	-- Do, child of Fi'lo
+i(258189, 4910);	-- Do, child of Filo
+i(250143, 4883);	-- Dragonhawk Mosswing
 i(259224, 4928);	-- Dragonhawk Munchkin
-i(0, 4887);	-- Dundun
+i(250139, 4878);	-- Ebon Snapling
 i(264654, 4977);	-- Emberwing Hatchling
-i(246628, 4508);	-- Emerald Sporbit
+i(258122, 4909);	-- Emerald Hatchling
+i(260922, 4950);	-- Fidoficus
+i(252194, 4897);	-- Fishmonger May
+i(264909, 4982);	-- Flicker
+i(250146, 4885);	-- Gloom Toad
 i(262774, 4967);	-- Gortham
 i(262762, 4963);	-- Grumpy Mandrake
+i(260360, 4944);	-- Gummi the Glow Wyrm
 i(244339, 4816);	-- Hawkstrider Hatchling
 i(262395, 4959);	-- Hexed Bunny
 i(265030, 4983);	-- Kai
 i(262393, 4955);	-- Kreepah'zoyd
 i(259991, 4930);	-- Lil' Preyseeker
+i(262881, 4968);	-- Lil' Staropod
 i(260585, 4946);	-- Linda the Lucky
 i(262396, 4957);	-- Lost Star
 i(262999, 4971);	-- Luma
+i(265035, 4984);	-- Medusa
+i(250137, 4876);	-- Mud Potadpole
+i(259337, 4929);	-- Munchy
 i(250863, 4888);	-- Naloki
-i(251002, 4889);	-- Nether Familia
+i(251002, 4889);	-- Nether Familiar
+i(266076, 4881);	-- Nether Siphoner
 i(262392, 4961);	-- Nibblesworth
 i(240840, 4803);	-- Niblet
-i(262391, 4958);	-- Ominous Dominus
-i(246314, 4974);	-- Painter Frog
+i(264892, 4981);	-- Nova
+i(262391, 4958);	-- Ominous Domanus
+i(250145, 4884);	-- Pangolil
 i(258903, 4927);	-- Percival
 i(260730, 4948);	-- Perturbed Sporebat
-i(262763, 4964);	-- Plump Mandrake
-i(260922, 4950);	-- Preyseeker's Immature Behemoth
 i(265609, 4985);	-- Princess Bloodshed
-i(250141, 4881);	-- Purple Swamp Leech
 i(264366, 4975);	-- Razeshi C.
-i(244911, 4830);	-- Rhay'Dahr
-i(262343, 4960);	-- Saka'saka
-i(262769, 4966);	-- Screechy Mandrake
-i(232856, 4633);	-- Scruff
+i(251005, 4892);	-- Riftblade Familiar
+i(262982, 4969);	-- Roofus
+i(250136, 4875);	-- Rootling Nester
+i(255151, 4906);	-- Scruffbeak
+i(250147, 4886);	-- Silkcrawler
+i(258660, 4912);	-- Silvermoon Broom
+i(269028, 5012);	-- Sootpaw
 i(262390, 4953);	-- Sporbie
 i(262342, 4956);	-- Spormilian
 i(251004, 3364);	-- Striped Snakebiter
-i(245544, 4851);	-- Tiny Snow Buddy
-i(259337, 4929);	-- Vermillion Grovecrawler
+i(267838, 5003);	-- Sunwing Hatchling
+i(250140, 4880);	-- Swamp Biter
+i(262343, 4960);	-- Treja'saka
+i(251001, 4890);	-- Vibrant Manaling
+i(250138, 4877);	-- Violet Chick
+i(239101, 4795);	-- Voidcrawler
 i(264434, 4976);	-- Voldy
 i(221495, 4497);	-- Waddles
 i(264303, 4972);	-- Willie
 i(251003, 4891);	-- Wrathful Wyrm
 i(262394, 4954);	-- Ziorg'pharon
+
+------------------
+-- PATCH 12.0.5 --
+------------------
+i(270989, 5039);	-- Cappy
+i(269836, 5019);	-- Chubs
+i(274266, 5065);	-- Ka'bubb
+i(270061, 5021);	-- Void-Bathed Snapdragon
+i(270331, 5037);	-- Void-Infused Mindbreaker Fry
+i(270062, 5022);	-- Void-Touched Chick
+i(270330, 5036);	-- Void-Touched Dragonhawk Egg
+--- Unsorted ---
+i(270990, 5040);	-- Curious Lynx Kitten
+i(269999, 5020);	-- Overloaded Manaling
+i(269829, 5017);	-- Void-Scarred Eaglet
+i(270063, 5023);	-- Void-Touched Lynx Kitten

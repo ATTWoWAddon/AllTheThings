@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(260, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Slave Pens
 		["lore"] = "The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",
@@ -43,7 +44,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["timeline"] = { REMOVED_4_3_0 },
 					["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 					["lvl"] = lvlsquish(62, 62, 10),
-					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
 						objective(1, {	-- Earthbinder Rayge Discovered
 							["provider"] = { "n", 17885 },	-- Earthbinder Rayge
@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						objective(2, {	-- Naturalist Bite Discovered
 							["provider"] = { "n", 17893 },	-- Naturalist Bite
-							["coord"] = { 95, 65.4, COILFANG_RESERVOIR_SLAVE_PENS },
+							["coord"] = { 95.0, 65.4, COILFANG_RESERVOIR_SLAVE_PENS },
 						}),
 						objective(3, {	-- Weeder Greenthumb Discovered
 							["provider"] = { "n", 17890 },	-- Weeder Greenthumb
@@ -66,7 +66,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
 					},
-					-- #endif
 				}),
 				q(29563, {	-- Lost in Action
 					["qg"] = 54667,	-- Watcher Jhang
@@ -75,7 +74,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["groups"] = {
 						objective(1, {	-- Naturalist Bite Discovered
 							["provider"] = { "n", 17893 },	-- Naturalist Bite
-							["coord"] = { 95, 65.4, COILFANG_RESERVOIR_SLAVE_PENS },
+							["coord"] = { 95.0, 65.4, COILFANG_RESERVOIR_SLAVE_PENS },
 						}),
 						objective(2, {	-- Weeder Greenthumb Discovered
 							["provider"] = { "n", 17890 },	-- Weeder Greenthumb
@@ -112,7 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						GRUULS_LAIR,
 					},
 					-- #if ANYCLASSIC
-					["lockCriteria"] = { 1, "lvl", 70 },
+					["lockCriteria"] = { 1, "lvl", 71 },
 					-- #endif
 					["lvl"] = lvlsquish(70, 70, 30),
 					-- This quest started showing up again after SL level squish
@@ -144,7 +143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10900, {	-- The Mark of Vashj
 					["qg"] = 22421,	-- Skar'this the Heretic
 					-- #if ANYCLASSIC
-					["lockCriteria"] = { 1, "lvl", 70 },
+					["lockCriteria"] = { 1, "lvl", 71 },
 					-- #endif
 					["lvl"] = lvlsquish(70, 70, 10),
 					-- This quest started showing up again after SL level squish
@@ -249,6 +248,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30623, 1 },	-- Reservoir Key
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265843, 1 },	-- Communal Reservoir Key
+					-- #endif
 				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
@@ -261,7 +263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30603),	-- Royal Tanzanite
 							i(30604),	-- Resplendent Fire Opal

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 	n(QUESTS, {
 		q(81930, {	-- The War Within [A]
@@ -439,12 +440,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				q(80145, {	-- The Motherlode
 					["sourceQuests"] = { 79028 },	-- We Require More Minerals
 					["provider"] = { "n", 218622 },	-- ZZ-01-47
-					--["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
+					-- ["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
 				}),
 				q(80517, {	-- Back to Where it Began
 					["sourceQuests"] = { 80145 },	-- The Motherlode
 					["provider"] = { "n", 218622 },	-- ZZ-01-47
-					--["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
+					-- ["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
 				}),
 				q(79029, {	-- It's Sabotage
 					["sourceQuests"] = { 80517 },	-- Back to Where it Began
@@ -630,9 +631,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					},
 					["provider"] = { "n", 227436 },	-- Archmage Khadgar
 					["coord"] = { 42.5, 27.1, DORNOGAL },
-					--["groups"] = {
-					--	spell(458818),	-- Title: Witness of the Kirin Tor
-					--},
+					-- ["groups"] = {
+						-- spell(458818),	-- Title: Witness of the Kirin Tor
+					-- },
 				}),
 				q(83031, {	-- The Hardest Part
 					["sourceQuests"] = { 84223 },	-- Survivor's Guilt
@@ -646,7 +647,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["groups"] = {
 						i(225662),	-- Arcane Dust (QI!)
 						i(225895),	-- Frostfire Essence (QI!)
-						o(454205, { -- Radiant Prism Crystals
+						o(454205, {	-- Radiant Prism Crystals
 							i(225663),	-- Radiant Prism Crystals (QI!)
 						}),
 					},
@@ -681,7 +682,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["coord"] = { 61.7, 41.5, ISLE_OF_DORN },
 					["groups"] = {
 						i(225920),	-- Stolen Kirin Tor Artifacts (QI!)
-						o(454707, { -- Bag of Stolen Goods
+						o(454707, {	-- Bag of Stolen Goods
 							["coords"] = {
 								{ 62.1, 40.6, ISLE_OF_DORN },
 								{ 64.3, 41.4, ISLE_OF_DORN },
@@ -712,7 +713,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 						83555,	-- Mysterious Necklace
 					},
 					["provider"] = { "n", 227208 },	-- Kalecgos
-					--["coord"] = { ??, ??, ISLE_OF_DORN },
+					-- ["coord"] = { ??, ??, ISLE_OF_DORN },
 				}),
 				q(83643, {	-- Somehow We Survived
 					["sourceQuests"] = { 83641 },	-- Trapped Between Life and Death
@@ -741,15 +742,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["provider"] = { "n", 229763 },	-- Lady Jaina Proudmoore
 					["coord"] = { 35.5, 52.4, AZJ_KAHET },
 					["groups"] = {
-						o(465294, { -- Antonidas' Introduction to Arcane Magic
+						o(465294, {	-- Antonidas' Introduction to Arcane Magic
 							["coord"] = { 35.7, 51.4, AZJ_KAHET },
 							["groups"] = { i(228820) },	-- Antonidas' Introduction to Arcane Magic (QI!)
 						}),
-						o(465295, { -- Medivh's Karazhan Schematics
+						o(465295, {	-- Medivh's Karazhan Schematics
 							["coord"] = { 35.1, 51.2, AZJ_KAHET },
 							["groups"] = { i(228821) },	-- Medivh's Karazhan Schematics (QI!)
 						}),
-						o(465300, { -- Thalen Songweaver's Notes
+						o(465300, {	-- Thalen Songweaver's Notes
 							["coord"] = { 36.1, 52.6, AZJ_KAHET },
 							["groups"] = { i(228823) },	-- Thalen Songweaver's Notes (QI!)
 						}),
@@ -827,6 +828,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					},
 					["qg"] = 233312,	-- Arator
 					["coord"] = { 26.6, 42.3, ISLE_OF_DORN },
+					["lockCriteria"] = { 1, "questID", 85002 },	-- Off to Tazavesh (completion locks the HQT)
 				}),
 			}),
 			header(HEADERS.AchCriteria, 42299.02, {	-- A Meeting with Minn'da
@@ -894,6 +896,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["sourceQuest"] = 85212,	-- A Void Test of Wills
 					["qg"] = 233885,	-- Alleria Windrunner
 					["coord"] = { 60.8, 28.0, KARESH },
+					["lockCriteria"] = { 1, "questID", 85213 },	-- Off to Tazavesh, Again (completion locks the HQT	-- unconfirmed)
 				}),
 				--
 				q(85214, {	-- Here Goes Something
@@ -968,9 +971,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				hqt(91850, {	-- Stay awhile and listen: Arator
 					["name"] = "Stay awhile and listen: Arator",
 					["description"] = "Dialogue becomes available after accepting 'The Long Vigil' (84943) and 'Preludes and Preparations' (84944).",
-					["sourceQuest"] = 84942,	-- The Final Hazard
+					["sourceQuests"] = {
+						84943,	-- The Long Vigil
+						84944,	-- Preludes and Preparations
+					},
 					["qg"] = 238519,	-- Arator
 					["coord"] = { 30.5, 18.7, THE_MAW },
+					["lockCriteria"] = { 1, "questID", 84944 },	-- Preludes and Preparations (completion locks the HQT	-- unconfirmed, but likely)
 				}),
 				--
 				q(84945, {	-- Repent of the Highborne
@@ -1007,17 +1014,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					},
 					["qg"] = 233567,	-- Arator
 					["coord"] = { 60.7, 92.5, KARESH_TAZAVESH },
+					["maps"] = { DORNOGAL },
 				}),
 				------ Stay awhile and listen ------
 				hqt(87418, {	-- Stay awhile and listen: Arator
 					["name"] = "Stay awhile and listen: Arator",
 					["description"] = "Dialogue becomes available after accepting 'The Eleventh Hour' (84949).",
-					["sourceQuests"] = {
-						84946,	-- Returning to Life
-						84947,	-- Determination
-					},
+					["sourceQuest"] = 84949,	-- The Eleventh Hour
 					["qg"] = 233567,	-- Arator
 					["coord"] = { 60.7, 92.5, KARESH_TAZAVESH },
+					["lockCriteria"] = { 1, "questID", 84949 },	-- The Eleventh Hour (completion locks the HQT	-- unconfirmed)
 				}),
 				--
 			}),

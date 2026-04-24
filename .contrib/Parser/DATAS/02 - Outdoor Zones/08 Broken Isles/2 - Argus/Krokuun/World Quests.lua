@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
@@ -28,7 +29,31 @@ root(ROOTS.Zones, {
 					q(48510, {	-- Commander Vecaya
 						["sym"] = {{"select","npcID",122911}},	-- Select the WQ NPC
 					}),
-					q(48286),	-- Crystal Methods
+					q(48286, {	-- Crystal Methods
+						o(273839, {	-- Argunite Fragments
+							["coords"] = {
+								{ 33.1, 71.5, KROKUUN },
+								{ 34.1, 69.1, KROKUUN },
+								{ 34.2, 72.7, KROKUUN },
+								{ 34.3, 67.4, KROKUUN },
+								{ 34.3, 71.4, KROKUUN },
+								{ 35.0, 69.9, KROKUUN },
+								{ 35.3, 68.4, KROKUUN },
+								{ 35.7, 67.4, KROKUUN },
+								{ 35.7, 69.0, KROKUUN },
+								{ 35.9, 72.0, KROKUUN },
+								{ 36.0, 70.4, KROKUUN },
+								{ 36.9, 67.3, KROKUUN },
+								{ 37.1, 70.4, KROKUUN },
+								{ 38.1, 66.6, KROKUUN },
+								{ 38.3, 67.5, KROKUUN },
+								{ 38.8, 71.8, KROKUUN },
+								{ 39.3, 69.7, KROKUUN },
+								{ 40.3, 66.2, KROKUUN },
+							},
+							["groups"] = { i(129749 ) },	-- Argunite Fragments (QI!)
+						}),
+					}),
 					petbattle(q(49045)),	-- Deathscreech
 					q(47720),	-- Eternal Vengeance
 					petbattle(q(49042)),	-- Foulclaw
@@ -72,9 +97,27 @@ root(ROOTS.Zones, {
 						["sym"] = {{"select","npcID",124804}},	-- Select the WQ NPC
 					}),
 					q(47712, {	-- The Devastator
-						["groups"] = {
-							i(151188),	-- Devastator Energy Cell (QI!)
-						},
+						o(271689, {	-- Fel Energy Shard
+							["coords"] = {
+								{ 41.3, 72.8, KROKUUN },
+								{ 42.8, 85.4, KROKUUN },
+								{ 42.9, 79.1, KROKUUN },
+								{ 42.9, 81.5, KROKUUN },
+								{ 43.0, 81.3, KROKUUN },
+								{ 43.2, 77.8, KROKUUN },
+								{ 43.3, 73.4, KROKUUN },
+								{ 43.9, 69.7, KROKUUN },
+								{ 45.0, 73.5, KROKUUN },
+								{ 45.0, 78.3, KROKUUN },
+								{ 46.0, 73.3, KROKUUN },
+								{ 46.1, 77.8, KROKUUN },
+								{ 46.6, 71.4, KROKUUN },
+								{ 47.2, 75.4, KROKUUN },
+								{ 47.4, 77.6, KROKUUN },
+								{ 48.3, 72.0, KROKUUN },
+							},
+							["groups"] = { i(151188) },	-- Devastator Energy Cell (QI!)
+						}),
 					}),
 					q(47625),	-- The Ritual We Share
 					q(48091, {	-- Vagath the Betrayed

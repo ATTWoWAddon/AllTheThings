@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(PRIMAL_STORMS, {
@@ -50,7 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(SPECIAL, {
 				i(192785, {	-- Gooey Snailemental (MOUNT!)
-					["cost"] = { { "i", 204352, 50 }, },	-- 50x Leftover Elemental Slime
+					["cost"] = { { "i", 204352, 50 } },	-- 50x Leftover Elemental Slime
 				}),
 			}),
 		}),

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(VENDORS, {
@@ -26,9 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(186752, {	-- Firstmate Kaleson
 				["coord"] = { 43.0, 67.4, THE_WAKING_SHORES },
-				["groups"] = {
-					i(197739),	-- Happy Trigger Sour
-				},
+				["groups"] = { i(197739) },	-- Happy Trigger Sour
 			}),
 			n(189207, {	-- Griftah
 				["coord"] = { 25.6, 54.3, THE_WAKING_SHORES },
@@ -49,14 +48,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(187412, {	-- Happy Hal <Innkeeper>
 				["coord"] = { 81.2, 31.8, THE_WAKING_SHORES },
-				["groups"] = {
-					i(194680),	-- Jerky Surprise
-				},
+				["groups"] = { i(194680) },	-- Jerky Surprise
 			}),
 			n(186454, {	-- Kora Fullsails <Food and Provisions>
 				["coord"] = { 43.0, 67.2, THE_WAKING_SHORES },
+				["groups"] = { i(198047) },	-- Kul Tiran Red
+			}),
+			n(191025 , {	-- Lifecaller Tzadrak
+				["coord"] = { 61.9, 73.8, THE_WAKING_SHORES },
 				["groups"] = {
-					i(198047),	-- Kul Tiran Red
+					i(246863, {	-- Open Tome of the Dragon's Dedication (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
+					}),
 				},
 			}),
 			n(187399, {	-- Maribeth <Innkeeper>
@@ -70,18 +74,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(197510, {	-- Talon Scaralesh
 				["coord"] = { 47.0, 83.0, THE_WAKING_SHORES },
-				["groups"] = {
-					i(200619),	-- Scaralesh's Special
-				},
+				["groups"] = { i(200619) },	-- Scaralesh's Special
 			}),
 			n(191135, {	-- Yries Lightfingers
 				["coord"] = { 26.4, 55.4, THE_WAKING_SHORES },
 				["groups"] = {
 					i(199326, {	-- Chip (PET!)
 						["cost"] = {
-							{ "i", 198357, 1 },	-- 1xRock of Aegis
-							{ "i", 198082, 2 },	-- 2xPre-Sentient Rock Cluster
-							{ "i", 199219, 3 },	-- 3xElement-Infused Blood
+							{ "i", 198357, 1 },	-- 1x Rock of Aegis
+							{ "i", 198082, 2 },	-- 2x Pre-Sentient Rock Cluster
+							{ "i", 199219, 3 },	-- 3x Element-Infused Blood
 						},
 					}),
 					i(201837, {	-- Magmammoth Harness
@@ -89,12 +91,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 33.3, 72.2, THE_WAKING_SHORES },
 						["cr"] = 198150,	-- Tame Magmammoth
 						["cost"] = {
-							{ "i", 201839, 1 },	-- 1xNetherforged Lavaproof Boots
-							{ "i", 201840, 1 },	-- 1xSturdy Obsidian Glasses
+							{ "i", 201839, 1 },	-- 1x Netherforged Lavaproof Boots
+							{ "i", 201840, 1 },	-- 1x Sturdy Obsidian Glasses
 						},
-						["groups"] = {
-							i(192601),	-- Loyal Magmammoth (MOUNT!)
-						},
+						["groups"] = { i(192601) },	-- Loyal Magmammoth (MOUNT!)
 					}),
 				},
 			}),

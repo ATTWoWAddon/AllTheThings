@@ -114,7 +114,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60414, {	-- Rare Resources
 					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-					["coord"] = { 43.6, 52.4, ARDENWEALD },
+					["coords"] = {
+						{ 43.6, 52.4, ARDENWEALD },
+						{ 15.4, 30.0, THE_TRUNK },
+					},
 					["groups"] = {
 						i(179327),	-- Coin of Brokerage (QI!)
 						i(181475),	-- Bounty of the Grove Wardens

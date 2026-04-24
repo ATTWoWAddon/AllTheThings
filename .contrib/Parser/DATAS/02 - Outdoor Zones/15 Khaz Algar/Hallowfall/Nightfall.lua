@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 NIGHTFALL = createHeader({
 	readable = "Nightfall",
 	icon = 6694197,
@@ -11,15 +12,16 @@ NIGHTFALL = createHeader({
 		mx = "Ocaso",
 		fr = "Noctechute",
 		it = "Tramonto",
+		ko = "일몰",
 		pt = "Ocaso",
 		ru = "Сумерки",
-		ko = "일몰",
 		cn = "夜幕激斗",
 		tw = "夜暮激戰事件",
 	},
 });
 
 local RADIANT_EMBLEM = 238920;
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(NIGHTFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
@@ -43,12 +45,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 			}),
 			n(QUESTS, sharedData({
-					["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
-					["coord"] = { 28.3, 56.1, HALLOWFALL },
-					["isWeekly"] = true,
-					["groups"] = {
-						i(239546),	-- Confiscated Cultist's Bag
-					},
+				["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
+				["coord"] = { 28.3, 56.1, HALLOWFALL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(239546),	-- Confiscated Cultist's Bag
+				},
 			}, {
 				q(88945),	-- Radiant Incursion: Rak-Zakaz
 				q(88916),	-- Radiant Incursion: Sureki's End
@@ -490,9 +492,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["description"] = "The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",
 					["coord"] = { 25.2, 55.6, HALLOWFALL },
 					["crs"] = {
-						240968, 	--	Ahn'tak
-						240969, 	--	Anub'Ranax
-						234440, 	--	Azj-Tak the Behemoth
+						240968,	-- Ahn'tak
+						240969,	-- Anub'Ranax
+						234440,	-- Azj-Tak the Behemoth
 					},
 					["sym"] = {{"select","itemID",
 						237471,	-- Band of the Voidmancer
@@ -559,7 +561,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(VENDORS, {
 				n(243253, {	-- Layne Pontelle
 					["coord"] = { 28.3, 56.1, HALLOWFALL },
-					["groups"] = sharedData({ ["cost"] = {{"c", RESONANCE_CRYSTALS, 500}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+					}, {
 						i(241278),	-- Stalwart's Waistcoat
 						i(241269),	-- Aeroknight's Undercoat
 						i(241268),	-- Sentry's Padded Doublet
@@ -568,7 +572,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				n(240979, {	-- Vesper Churnmoat
 					["coord"] = { 28.2, 56.0, HALLOWFALL },
-					["groups"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
+					["groups"] = bubbleDownFiltered({
+						["cost"] = { { "i", RADIANT_EMBLEM, 1 } },
+					},FILTERFUNC_itemID,{
 						filter(FINGER_F, {
 							i(237471),	-- Band of the Voidmancer
 							i(237472),	-- Seal of Cosmic Embrace
@@ -603,7 +609,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				n(227797, {	-- Raen Dawncavalyr
 					["coord"] = { 28.3, 56.0, HALLOWFALL },
-					["groups"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
+					["groups"] = bubbleDownFiltered({
+						["cost"] = { { "i", RADIANT_EMBLEM, 1 } },
+					},FILTERFUNC_itemID,{
 						filter(CLOAKS, {
 							i(237394),	-- Arathi Abbot's Cloak
 							i(237403),	-- Arathi Zealot's Cape
@@ -695,13 +703,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				-- after opening Arathi Champion's Spoils (237760) per slot as was for Siren Islands?
 				-- seems like one per Arathi XX set and one per Nightfall XX set?
 				q(88686),	-- 2H weapon (agi/str weapon) / Arathi Crusader's Halberd (itemID 237792)
-				--q(??),	-- 2H weapon (agi/str weapon) / Nightfall Darkcaster's Halberd (itemID ??)
+				-- q(??),	-- 2H weapon (agi/str weapon) / Nightfall Darkcaster's Halberd (itemID ??)
 				q(88685),	-- 1H weapon (caster/off spec) / Arathi Abbot's Kris (itemID 237803)
 				q(88895),	-- 1H weapon (caster/off spec) / Nightfall Darkcaster's Kris (itemID 237787)
 				q(88684),	-- OH weapon (caster/off spec) / Arathi Abbot's Implement (itemID 237801)
 				q(88896),	-- OH weapon (caster/off spec) / Nightfall Darkcaster's Implement (itemID 237785) (it was looted from boss during nightfall event)
 				q(88687, {	-- Arathi Crusader Set Cape Unlock
-				--	["name"] = "Unlocked Cape Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					-- ["name"] = "Unlocked Cape Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88692, {	-- Arathi Crusader Set Chest Unlock
 					["name"] = "Unlocked Chest Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
@@ -727,17 +735,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(88688, {	-- Arathi Crusader Set Wrists Unlock
 					["name"] = "Unlocked Wrist Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
-				--q(??),	-- Cape / Nightfall Curseblade Cape (itemID 237444)
+				-- q(??),	-- Cape / Nightfall Curseblade Cape (itemID 237444)
 				q(88888),	-- Chest / Nightfall Curseblade's Vest
-				--q(??),	-- Feet / Nightfall Curseblade's Waders (itemID 237446)
+				-- q(??),	-- Feet / Nightfall Curseblade's Waders (itemID 237446)
 				q(88890),	-- Hands / Nightfall Curseblade's Grips (itemID 237447) (it was looted from Dissenter Fervormyt?)
-				--q(??),	-- Legs / Nightfall Curseblade's Breeches (itemID 237448)
+				-- q(??),	-- Legs / Nightfall Curseblade's Breeches (itemID 237448)
 				q(88683),	-- Neck / Clergyman's Anointed Pendant (itemID 237432)
 				q(88682),	-- Ring / Divine Loop of the Crusader (itemID 237431)
-				--q(??),	-- Shoulder / Nightfall Curseblade's Shoulderpads (itemID 237449)
+				-- q(??),	-- Shoulder / Nightfall Curseblade's Shoulderpads (itemID 237449)
 				q(88681),	-- Trinket 1 / Shining Arathor Insignia (itemID 225947)
 				q(88680),	-- Trinket 2 / Hallowed Tome of the Cleric (itemID 237494)
-				--q(??),	-- Wrists / Nightfall Curseblade's Bindings (itemID 237451)
+				-- q(??),	-- Wrists / Nightfall Curseblade's Bindings (itemID 237451)
 				-- after turn in weekly?
 				q(88898),	-- after turn in Radiant Incursion: Rak-Zakaz (88945)
 				q(88893),	-- after turn in Radiant Incursion: Sureki's End (88916)

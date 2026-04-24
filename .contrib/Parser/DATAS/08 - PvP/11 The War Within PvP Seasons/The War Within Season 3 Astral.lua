@@ -1,11 +1,23 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
 	n(SEASON_ASTRAL, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 			ach(41048, {	-- Astral Weapons of Conquest
-				i(232600),	-- Astral Gladiator's Weapon Token
+				i(232616, {	-- Astral Gladiator's Coin Pouch
+					i(232600, {	-- Astral Gladiator's Weapon Token
+						--[[ Might need another sym
+						["sym"] = {
+							{"select", "npcID", 219222 },	-- Lalandi <Conquest Quartermaster>
+							{"pop"},
+							{"where", "headerID", WEAPONS},
+							{"pop"}
+						},
+						--]]
+					}),
+				}),
 			}),
 			ach(42042, {	-- Astral Combatant
 				["races"] = ALLIANCE_ONLY,
@@ -57,6 +69,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			ach(42024, {	-- Strategist: The War Within Season 3
 				i(242636),	-- Astral Legend's Pennant (TOY!)
+				title(539, {	-- Strategist <Name>
+					["collectible"] = false,
+				}),
 			}),
 			-- Solo
 			ach(42023, {	-- Legend: The War Within Season 3
@@ -67,9 +82,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				title(634),	-- Astral Legend <Name>
 			}),
 			-- Fashion
-			ach(42800),	-- Astral Attire
+			ach(42800, { ["timeline"] = { ADDED_11_2_0_SEASONSTART } }),	-- Astral Attire
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 			i(243157, {	-- Vicious Void Creeper [A] (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -77,17 +92,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["races"] = HORDE_ONLY,
 			}),
 		})),
-		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+		n(PVP_WARMODE, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["groups"] = {
-					filter(BACK_F, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+					-- #if AFTER MID
+					moh(80, iensemble(251247)),	-- Arsenal: Astral Warmonger's Weapons
+					moh(12, iensemble(251243)),	-- Ensemble: Astral Warmonger's Cloth Armor
+					moh(12, iensemble(251244)),	-- Ensemble: Astral Warmonger's Leather Armor
+					moh(12, iensemble(251245)),	-- Ensemble: Astral Warmonger's Mail Armor
+					moh(12, iensemble(251246)),	-- Ensemble: Astral Warmonger's Plate Armor
+					-- #endif
+					filter(BACK_F, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230695)),	-- Astral Warmonger's Cape
 						bloody(525, i(230697)),	-- Astral Warmonger's Cloak
 						bloody(525, i(230698)),	-- Astral Warmonger's Drape
 						bloody(525, i(230696)),	-- Astral Warmonger's Shawl
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230669)),	-- Astral Warmonger's Bindings
 						bloody(700, i(230668)),	-- Astral Warmonger's Cord
 						bloody(875, i(230663)),	-- Astral Warmonger's Garb
@@ -96,8 +118,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230666)),	-- Astral Warmonger's Mask
 						bloody(875, i(230667)),	-- Astral Warmonger's Pants
 						bloody(700, i(230664)),	-- Astral Warmonger's Slippers
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(700, i(230675)),	-- Astral Warmonger's Belt
 						bloody(700, i(230671)),	-- Astral Warmonger's Boots
 						bloody(875, i(230674)),	-- Astral Warmonger's Breeches
@@ -106,8 +128,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230677)),	-- Astral Warmonger's Jerkin
 						bloody(700, i(230678)),	-- Astral Warmonger's Shoulderguard
 						bloody(525, i(230676)),	-- Astral Warmonger's Wraps
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230694)),	-- Astral Warmonger's Armguards
 						bloody(875, i(230687)),	-- Astral Warmonger's Chestguard
 						bloody(700, i(230693)),	-- Astral Warmonger's Cinch
@@ -116,8 +138,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(230689)),	-- Astral Warmonger's Grips
 						bloody(875, i(230690)),	-- Astral Warmonger's Helm
 						bloody(875, i(230691)),	-- Astral Warmonger's Leggings
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230686)),	-- Astral Warmonger's Bracers
 						bloody(700, i(230685)),	-- Astral Warmonger's Clasp
 						bloody(875, i(230680)),	-- Astral Warmonger's Cuirass
@@ -126,8 +148,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230683)),	-- Astral Warmonger's Legguards
 						bloody(700, i(230681)),	-- Astral Warmonger's Sabatons
 						bloody(700, i(230684)),	-- Astral Warmonger's Spaulders
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230712)),	-- Astral Warmonger's Aegis
 						bloody(875, i(230699)),	-- Astral Warmonger's Battleaxe
 						bloody(1750, i(230706)),	-- Astral Warmonger's Battlestaff
@@ -150,14 +172,28 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(1225, i(230718)),	-- Astral Warmonger's Scepter
 						bloody(875, i(230703)),	-- Astral Warmonger's Twinblade
 						bloody(1225, i(230715)),	-- Astral Warmonger's Wand
-					}),
-				},
+					})),
+				}),
 			}),
-		})),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+		}),
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
-				["groups"] = {
+				["groups"] = sharedData({
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}, {
+					moh(80, iensemble(232870)),	-- Arsenal: Astral Aspirant's Weapons
+					moh(12, iensemble(232808)),	-- Ensemble: Astral Aspirant's Cloth Armor
+					moh(12, iensemble(232809)),	-- Ensemble: Astral Aspirant's Leather Armor
+					moh(12, iensemble(232810)),	-- Ensemble: Astral Aspirant's Mail Armor
+					moh(12, iensemble(232811)),	-- Ensemble: Astral Aspirant's Plate Armor
+				}),
+			}),
+			n(219217, {	-- Velerd <Honor Quartermaster>
+				["coord"] = { 55.0, 76.5, DORNOGAL },
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(230365)),	-- Astral Aspirant's Cape
 						honor(525, i(230364)),	-- Astral Aspirant's Cloak
@@ -260,7 +296,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						honor(875, i(230368)),	-- Astral Aspirant's Dagger
 						honor(1750, i(230372)),	-- Astral Aspirant's Greatsword
 						honor(1750, i(230378)),	-- Astral Aspirant's Halberd
-						--honor(875, i(229508)),	-- Astral Aspirant's Hammer // Bad itemid
+						-- honor(875, i(229508)),	-- Astral Aspirant's Hammer // Bad itemid
 						honor(1225, i(230380)),	-- Astral Aspirant's Knife
 						honor(875, i(230369)),	-- Astral Aspirant's Mace
 						honor(875, i(230379)),	-- Astral Aspirant's Morningstar
@@ -272,14 +308,67 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						honor(1225, i(230382)),	-- Astral Aspirant's Wand
 						honor(875, i(230374)),	-- Astral Aspirant's Warglaive
 					}),
-				},
+				}),
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
-				["groups"] = {
+				["groups"] = sharedData({
+					["cost"] = { { "i", MOH, 12 } },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}, {
+					iensemble(232871, {	-- Arsenal: Astral Gladiator's Weapons
+						["cost"] = { { "i", MOH, 80 } },
+					}),
+					iensemble(232812, {	-- Ensemble: Astral Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(232813, {	-- Ensemble: Astral Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(232814, {	-- Ensemble: Astral Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(232815, {	-- Ensemble: Astral Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(232816, {	-- Ensemble: Astral Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(232817, {	-- Ensemble: Astral Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(232818, {	-- Ensemble: Astral Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(232819, {	-- Ensemble: Astral Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(232820, {	-- Ensemble: Astral Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(232821, {	-- Ensemble: Astral Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(232822, {	-- Ensemble: Astral Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(232823, {	-- Ensemble: Astral Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(232824, {	-- Ensemble: Astral Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(219222, {	-- Lalandi <Conquest Quartermaster>
+				["coord"] = { 55.1, 76.2, DORNOGAL },
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(230591)),	-- Astral Gladiator's Cloak
@@ -562,12 +651,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					filter(MISC, {
 						i(254308, {	-- Conqueror's Astral Lacquer
-							["cost"] = {{ "c", CONQUEST, 700 }},
-							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },
+							["cost"] = { { "c", CONQUEST, 700 } },
+							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
 						}),
 						i(254307, {	-- Conqueror's Astral Varnish
-							["cost"] = {{ "c", CONQUEST, 875 }},
-							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },
+							["cost"] = { { "c", CONQUEST, 875 } },
+							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
 						}),
 					}),
 					filter(NECK_F, {
@@ -606,13 +695,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						conquest(525, i(230651)),	-- Astral Gladiator's Shield
 						conquest(525, i(230657)),	-- Astral Gladiator's Bulwark
 					}),
-					--i(230722, {	-- Astral Equipment Chest
-					--	["timeline"] = { ADDED_11_2_5 },
-					--}),
-				},
+					i(230722, {	-- Astral Equipment Chest
+						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
+					}),
+				}),
 			}),
-			o(456208, {	-- The Catalyst
-				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+			o(456208, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {	-- The Catalyst
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 11,	-- ItemBonus.Value_0 TWW:S3
@@ -762,288 +850,210 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					-- Elite catalyst gear is not obtainable this season
 				}),
-			}),
+			})),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, ["bonusID"] = 7532 }, {
-			n(CLASSES, {
-				-- TODO: Only 9 pieces will be obtainable, move rest to NYI Sets when confirmed
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH }, ["bonusID"] = 7532 }, {
+			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 				cl(DEATHKNIGHT, {
 					i(230591),	-- Astral Gladiator's Cloak
-					i(230592),	-- Astral Gladiator's Drape
-					i(230593),	-- Astral Gladiator's Shawl
 					i(230575),	-- Astral Gladiator's Chestguard
-					i(230576),	-- Astral Gladiator's Chestplate
 					i(230579),	-- Astral Gladiator's Plate Gauntlets
 					i(230587),	-- Astral Gladiator's Plate Girdle
-					i(230588),	-- Astral Gladiator's Plate Greatbelt
-					i(230580),	-- Astral Gladiator's Plate Handguards
 					i(230581),	-- Astral Gladiator's Plate Helm
-					i(230582),	-- Astral Gladiator's Plate Helmet
 					i(230583),	-- Astral Gladiator's Plate Legguards
-					i(230586),	-- Astral Gladiator's Plate Pauldrons
 					i(230585),	-- Astral Gladiator's Plate Shoulders
-					i(230578),	-- Astral Gladiator's Plate Stompers
-					i(230590),	-- Astral Gladiator's Plate Vambraces
 					i(230577),	-- Astral Gladiator's Plate Warboots
-					i(230584),	-- Astral Gladiator's Plate Wargreaves
 					i(230589),	-- Astral Gladiator's Plate Wristguards
 				}),
 				cl(DEMONHUNTER, {
 					i(230476),	-- Astral Gladiator's Cloak
-					i(230477),	-- Astral Gladiator's Drape
-					i(230478),	-- Astral Gladiator's Shawl
 					i(230472),	-- Astral Gladiator's Leather Belt
 					i(230468),	-- Astral Gladiator's Leather Breeches
 					i(230462),	-- Astral Gladiator's Leather Boots
 					i(230464),	-- Astral Gladiator's Leather Gloves
-					i(230465),	-- Astral Gladiator's Leather Grips
 					i(230466),	-- Astral Gladiator's Leather Helm
-					i(230461),	-- Astral Gladiator's Leather Jerkin
-					i(230469),	-- Astral Gladiator's Leather Legwraps
-					i(230467),	-- Astral Gladiator's Leather Mask
-					i(230471),	-- Astral Gladiator's Leather Shoulderpads
 					i(230470),	-- Astral Gladiator's Leather Spaulders
-					i(230473),	-- Astral Gladiator's Leather Strap
-					i(230463),	-- Astral Gladiator's Leather Treads
 					i(230460),	-- Astral Gladiator's Leather Vest
-					i(230475),	-- Astral Gladiator's Leather Wristguards
 					i(230474),	-- Astral Gladiator's Leather Wristwraps
 				}),
 				cl(DRUID, {
 					i(230457),	-- Astral Gladiator's Cloak
-					i(230458),	-- Astral Gladiator's Drape
-					i(230459),	-- Astral Gladiator's Shawl
 					i(230453),	-- Astral Gladiator's Leather Belt
 					i(230443),	-- Astral Gladiator's Leather Boots
 					i(230449),	-- Astral Gladiator's Leather Breeches
 					i(230445),	-- Astral Gladiator's Leather Gloves
-					i(230446),	-- Astral Gladiator's Leather Grips
 					i(230447),	-- Astral Gladiator's Leather Helm
-					i(230450),	-- Astral Gladiator's Leather Legwraps
-					i(230448),	-- Astral Gladiator's Leather Mask
-					i(230452),	-- Astral Gladiator's Leather Shoulderpads
 					i(230451),	-- Astral Gladiator's Leather Spaulders
-					i(230454),	-- Astral Gladiator's Leather Strap
-					i(230444),	-- Astral Gladiator's Leather Treads
 					i(230441),	-- Astral Gladiator's Leather Vest
-					i(230442),	-- Astral Gladiator's Leather Vestments
 					i(230455),	-- Astral Gladiator's Leather Wristwraps
-					i(230456),	-- Astral Gladiator's Leather Wristguards
 				}),
 				cl(EVOKER, {
 					i(230533),	-- Astral Gladiator's Cloak
-					i(230534),	-- Astral Gladiator's Drape
-					i(230535),	-- Astral Gladiator's Shawl
 					i(230517),	-- Astral Gladiator's Armored Scales
-					i(230518),	-- Astral Gladiator's Scaleguard
 					i(230529),	-- Astral Gladiator's Chain Belt
-					i(230520),	-- Astral Gladiator's Chain Boots
-					i(230532),	-- Astral Gladiator's Chain Bracers
-					i(230526),	-- Astral Gladiator's Chain Breeches
-					i(230524),	-- Astral Gladiator's Chain Faceguard
 					i(230521),	-- Astral Gladiator's Chain Gauntlets
-					i(230530),	-- Astral Gladiator's Chain Girdle
-					i(230522),	-- Astral Gladiator's Chain Handguards
 					i(230523),	-- Astral Gladiator's Chain Helm
 					i(230525),	-- Astral Gladiator's Chain Leggings
 					i(230527),	-- Astral Gladiator's Chain Monnion
 					i(230519),	-- Astral Gladiator's Chain Sabatons
-					i(230528),	-- Astral Gladiator's Chain Shoulderguard
 					i(230531),	-- Astral Gladiator's Chain Wristguards
 				}),
 				cl(HUNTER, {
 					i(230553),	-- Astral Gladiator's Cloak
-					i(230554),	-- Astral Gladiator's Drape
-					i(230555),	-- Astral Gladiator's Shawl
 					i(230548),	-- Astral Gladiator's Chain Belt
-					i(230539),	-- Astral Gladiator's Chain Boots
-					i(230552),	-- Astral Gladiator's Chain Bracers
-					i(230545),	-- Astral Gladiator's Chain Breeches
-					i(230543),	-- Astral Gladiator's Chain Faceguard
 					i(230540),	-- Astral Gladiator's Chain Gauntlets
-					i(230550),	-- Astral Gladiator's Chain Girdle
-					i(230541),	-- Astral Gladiator's Chain Handguards
 					i(230542),	-- Astral Gladiator's Chain Helm
 					i(230544),	-- Astral Gladiator's Chain Leggings
 					i(230546),	-- Astral Gladiator's Chain Monnion
 					i(230538),	-- Astral Gladiator's Chain Sabatons
-					i(230547),	-- Astral Gladiator's Chain Shoulderguard
-					i(230537),	-- Astral Gladiator's Chain Tunic
 					i(230536),	-- Astral Gladiator's Chain Vest
 					i(230551),	-- Astral Gladiator's Chain Wristguards
 				}),
 				cl(MAGE, {
 					i(230399),	-- Astral Gladiator's Cloak
-					i(230400),	-- Astral Gladiator's Drape
-					i(230401),	-- Astral Gladiator's Shawl
-					i(230394),	-- Astral Gladiator's Silk Amice
-					i(230398),	-- Astral Gladiator's Silk Armbands
-					i(230396),	-- Astral Gladiator's Silk Belt
-					i(230390),	-- Astral Gladiator's Silk Cap
 					i(230395),	-- Astral Gladiator's Silk Cord
 					i(230387),	-- Astral Gladiator's Silk Gloves
-					i(230384),	-- Astral Gladiator's Silk Gown
-					i(230388),	-- Astral Gladiator's Silk Handwraps
 					i(230389),	-- Astral Gladiator's Silk Hat
 					i(230391),	-- Astral Gladiator's Silk Leggings
 					i(230393),	-- Astral Gladiator's Silk Mantle
 					i(230383),	-- Astral Gladiator's Silk Robe
 					i(230385),	-- Astral Gladiator's Silk Slippers
-					i(230386),	-- Astral Gladiator's Silk Treads
-					i(230392),	-- Astral Gladiator's Silk Trousers
 					i(230397),	-- Astral Gladiator's Silk Wristwraps
 				}),
 				cl(MONK, {
 					i(230495),	-- Astral Gladiator's Cloak
-					i(230496),	-- Astral Gladiator's Drape
-					i(230497),	-- Astral Gladiator's Shawl
 					i(230491),	-- Astral Gladiator's Leather Belt
 					i(230481),	-- Astral Gladiator's Leather Boots
 					i(230487),	-- Astral Gladiator's Leather Breeches
 					i(230483),	-- Astral Gladiator's Leather Gloves
-					i(230484),	-- Astral Gladiator's Leather Grips
 					i(230485),	-- Astral Gladiator's Leather Helm
-					i(230480),	-- Astral Gladiator's Leather Jerkin
-					i(230488),	-- Astral Gladiator's Leather Legwraps
-					i(230486),	-- Astral Gladiator's Leather Mask
-					i(230490),	-- Astral Gladiator's Leather Shoulderpads
 					i(230489),	-- Astral Gladiator's Leather Spaulders
-					i(230492),	-- Astral Gladiator's Leather Strap
-					i(230482),	-- Astral Gladiator's Leather Treads
 					i(230479),	-- Astral Gladiator's Leather Vest
-					i(230494),	-- Astral Gladiator's Leather Wristguards
 					i(230493),	-- Astral Gladiator's Leather Wristwraps
 				}),
 				cl(PALADIN, {
 					i(230610),	-- Astral Gladiator's Cloak
-					i(230611),	-- Astral Gladiator's Drape
-					i(230612),	-- Astral Gladiator's Shawl
 					i(230594),	-- Astral Gladiator's Chestguard
-					i(230595),	-- Astral Gladiator's Chestplate
 					i(230598),	-- Astral Gladiator's Plate Gauntlets
 					i(230606),	-- Astral Gladiator's Plate Girdle
-					i(230607),	-- Astral Gladiator's Plate Greatbelt
-					i(230599),	-- Astral Gladiator's Plate Handguards
 					i(230600),	-- Astral Gladiator's Plate Helm
-					i(230601),	-- Astral Gladiator's Plate Helmet
 					i(230602),	-- Astral Gladiator's Plate Legguards
 					i(230604),	-- Astral Gladiator's Plate Shoulders
-					i(230605),	-- Astral Gladiator's Plate Pauldrons
-					i(230597),	-- Astral Gladiator's Plate Stompers
-					i(230603),	-- Astral Gladiator's Plate Tasses
-					i(230609),	-- Astral Gladiator's Plate Vambraces
 					i(230596),	-- Astral Gladiator's Plate Warboots
 					i(230608),	-- Astral Gladiator's Plate Wristguards
 				}),
 				cl(PRIEST, {
 					i(230418),	-- Astral Gladiator's Cloak
-					i(230419),	-- Astral Gladiator's Drape
-					i(230420),	-- Astral Gladiator's Shawl
-					i(230413),	-- Astral Gladiator's Silk Amice
-					i(230417),	-- Astral Gladiator's Silk Armbands
-					i(230415),	-- Astral Gladiator's Silk Belt
 					i(230414),	-- Astral Gladiator's Silk Cord
 					i(230406),	-- Astral Gladiator's Silk Gloves
-					i(230409),	-- Astral Gladiator's Silk Guise
-					i(230407),	-- Astral Gladiator's Silk Handwraps
 					i(230408),	-- Astral Gladiator's Silk Hood
 					i(230410),	-- Astral Gladiator's Silk Leggings
 					i(230412),	-- Astral Gladiator's Silk Mantle
 					i(230402),	-- Astral Gladiator's Silk Robes
 					i(230404),	-- Astral Gladiator's Silk Slippers
-					i(230405),	-- Astral Gladiator's Silk Treads
-					i(230411),	-- Astral Gladiator's Silk Trousers
-					i(230403),	-- Astral Gladiator's Silk Vestments
 					i(230416),	-- Astral Gladiator's Silk Wristwraps
 				}),
 				cl(ROGUE, {
 					i(230514),	-- Astral Gladiator's Cloak
-					i(230515),	-- Astral Gladiator's Drape
-					i(230516),	-- Astral Gladiator's Shawl
 					i(230510),	-- Astral Gladiator's Leather Belt
 					i(230500),	-- Astral Gladiator's Leather Boots
 					i(230506),	-- Astral Gladiator's Leather Breeches
 					i(230502),	-- Astral Gladiator's Leather Gloves
-					i(230503),	-- Astral Gladiator's Leather Grips
 					i(230504),	-- Astral Gladiator's Leather Helm
-					i(230499),	-- Astral Gladiator's Leather Jerkin
-					i(230507),	-- Astral Gladiator's Leather Legwraps
-					i(230505),	-- Astral Gladiator's Leather Mask
-					i(230509),	-- Astral Gladiator's Leather Shoulderpads
 					i(230508),	-- Astral Gladiator's Leather Spaulders
-					i(230511),	-- Astral Gladiator's Leather Strap
-					i(230501),	-- Astral Gladiator's Leather Treads
 					i(230498),	-- Astral Gladiator's Leather Vest
-					i(230513),	-- Astral Gladiator's Leather Wristguards
 					i(230512),	-- Astral Gladiator's Leather Wristwraps
 				}),
 				cl(SHAMAN, {
 					i(230572),	-- Astral Gladiator's Cloak
-					i(230573),	-- Astral Gladiator's Drape
-					i(230574),	-- Astral Gladiator's Shawl
 					i(230568),	-- Astral Gladiator's Chain Belt
-					i(230559),	-- Astral Gladiator's Chain Boots
-					i(230571),	-- Astral Gladiator's Chain Bracers
-					i(230565),	-- Astral Gladiator's Chain Breeches
-					i(230563),	-- Astral Gladiator's Chain Faceguard
 					i(230560),	-- Astral Gladiator's Chain Gauntlets
-					i(230569),	-- Astral Gladiator's Chain Girdle
-					i(230561),	-- Astral Gladiator's Chain Handguards
 					i(230562),	-- Astral Gladiator's Chain Helm
 					i(230564),	-- Astral Gladiator's Chain Leggings
 					i(230566),	-- Astral Gladiator's Chain Monnion
 					i(230558),	-- Astral Gladiator's Chain Sabatons
-					i(230567),	-- Astral Gladiator's Chain Shoulderguard
-					i(230557),	-- Astral Gladiator's Chain Tunic
 					i(230556),	-- Astral Gladiator's Chain Vest
 					i(230570),	-- Astral Gladiator's Chain Wristguards
 				}),
 				cl(WARLOCK, {
 					i(230438),	-- Astral Gladiator's Cloak
-					i(230439),	-- Astral Gladiator's Drape
-					i(230440),	-- Astral Gladiator's Shawl
-					i(230433),	-- Astral Gladiator's Silk Amice
-					i(230437),	-- Astral Gladiator's Silk Armbands
-					i(230435),	-- Astral Gladiator's Silk Belt
 					i(230434),	-- Astral Gladiator's Silk Cord
 					i(230426),	-- Astral Gladiator's Silk Gloves
-					i(230429),	-- Astral Gladiator's Silk Guise
-					i(230427),	-- Astral Gladiator's Silk Handwraps
 					i(230428),	-- Astral Gladiator's Silk Hood
 					i(230430),	-- Astral Gladiator's Silk Leggings
 					i(230432),	-- Astral Gladiator's Silk Mantle
 					i(230421),	-- Astral Gladiator's Silk Raiment
 					i(230423),	-- Astral Gladiator's Silk Slippers
-					i(230424),	-- Astral Gladiator's Silk Treads
-					i(230431),	-- Astral Gladiator's Silk Trousers
-					i(230422),	-- Astral Gladiator's Silk Vestments
 					i(230436),	-- Astral Gladiator's Silk Wristwraps
 				}),
 				cl(WARRIOR, {
 					i(230629),	-- Astral Gladiator's Cloak
-					i(230630),	-- Astral Gladiator's Drape
-					i(230631),	-- Astral Gladiator's Shawl
 					i(230613),	-- Astral Gladiator's Chestguard
-					i(230614),	-- Astral Gladiator's Chestplate
 					i(230617),	-- Astral Gladiator's Plate Gauntlets
 					i(230625),	-- Astral Gladiator's Plate Girdle
-					i(230626),	-- Astral Gladiator's Plate Greatbelt
-					i(230618),	-- Astral Gladiator's Plate Handguards
 					i(230619),	-- Astral Gladiator's Plate Helm
-					i(230620),	-- Astral Gladiator's Plate Helmet
 					i(230621),	-- Astral Gladiator's Plate Legguards
-					i(230624),	-- Astral Gladiator's Plate Pauldrons
 					i(230623),	-- Astral Gladiator's Plate Shoulders
-					i(230616),	-- Astral Gladiator's Plate Stompers
-					i(230628),	-- Astral Gladiator's Plate Vambraces
 					i(230615),	-- Astral Gladiator's Plate Warboots
-					i(230622),	-- Astral Gladiator's Plate Wargreaves
 					i(230627),	-- Astral Gladiator's Plate Wristguards
+				}),
+			})),
+			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
+				["coord"] = { 59.8, 69.3, DORNOGAL },
+				["groups"] = sharedData({
+					["cost"] = { { "i", MOH, 12 } },
+					["u"] = ELITE_PVP_REQUIREMENT,
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}, {
+					iensemble(232872, {	-- Arsenal: Elite Astral Gladiator's Weapons
+						["cost"] = { { "i", MOH, 80 } },
+					}),
+					iensemble(232825, {	-- Ensemble: Elite Astral Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(232826, {	-- Ensemble: Elite Astral Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(232827, {	-- Ensemble: Elite Astral Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(232828, {	-- Ensemble: Elite Astral Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(232829, {	-- Ensemble: Elite Astral Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(232830, {	-- Ensemble: Elite Astral Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(232831, {	-- Ensemble: Elite Astral Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(232832, {	-- Ensemble: Elite Astral Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(232833, {	-- Ensemble: Elite Astral Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(232834, {	-- Ensemble: Elite Astral Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(232835, {	-- Ensemble: Elite Astral Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(232836, {	-- Ensemble: Elite Astral Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(232837, {	-- Ensemble: Elite Astral Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
 				}),
 			}),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
-				["groups"] = {
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+				},FILTERFUNC_itemID,{
 					honor(100, i(232908, {	-- Astral Gladiator's Tabard
 						["sourceAchievements"] = { 41027 },	-- Elite: The War Within Season 3
 					})),
@@ -1065,12 +1075,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					moh(10, i(248347)),	-- Astral Gladiator's Staff
 					moh(5, i(248359)),	-- Astral Gladiator's Sword
 					moh(5, i(248345)),	-- Astral Gladiator's Warglaive
-				},
+				}),
 			}),
 		})),
 		n(REWARDS, {
 			i(230284, {	-- Artisan's Consortium Pamphlet (QS!/QI!)
-				["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+				["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				["description"] = "Rewarded within the first few wins in queued PvP Content.",
 			}),
 		}),

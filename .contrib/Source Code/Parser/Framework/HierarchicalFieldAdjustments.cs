@@ -42,7 +42,7 @@ namespace ATT
             object val = _fieldValues.First();
             parent.TryGetValue(field, out object parentVal);
             // parent has a different field val, don't touch it
-            if (parentVal != null && !Equals(parentVal, val))
+            if (parentVal != null && !parentVal.IsEquivalent(val))
                 return;
 
             parent[field] = val;
@@ -170,8 +170,8 @@ namespace ATT
                     continue;
 
                 // if child has exactly the same value as parent, we won't repeat it in the child
-                if (!Equals(parentVal, value))
-                    continue;
+                if (!parentVal.IsEquivalent(value))
+                        continue;
 
                 if (data.Remove(field))
                 {
@@ -209,7 +209,7 @@ namespace ATT
             object val = _fieldValues.First();
             parent.TryGetValue(field, out object parentVal);
             // parent has a different field val, don't touch it
-            if (parentVal != null && !Equals(parentVal, val))
+            if (parentVal != null && !parentVal.IsEquivalent(val))
                 return;
 
             parent[field] = val;
@@ -263,7 +263,7 @@ namespace ATT
             }
 
             // parent has existing value, don't touch it
-            if (Equals(parentVal, min))
+            if (parentVal.IsEquivalent(min))
                 return;
 
             parent[field] = min;
@@ -317,7 +317,7 @@ namespace ATT
             }
 
             // parent has existing value, don't touch it
-            if (Equals(parentVal, max))
+            if (parentVal.IsEquivalent(max))
                 return;
 
             parent[field] = max;

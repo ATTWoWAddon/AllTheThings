@@ -1,17 +1,18 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(TREASURES, {
 			o(469858, {	-- Shiny Trash Can
 				-- entire map, basically
 				-- trash items, crystals, valorstones
-				--currency(3226), 	-- Market Research
+				-- currency(3226),	-- Market Research
 			}),
 			o(469857, {	-- Overflowing Dumpster
 				-- entire map
-				--currency(3226), 	-- Market Research
+				-- currency(3226),	-- Market Research
 				i(234741),	-- Miscellaneous Mechanica
 			}),
 			--
@@ -155,7 +156,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(477363, {	-- Particularly Nice Lamp
-				["coord"] = { 39.4, 61, UNDERMINE },
+				["coord"] = { 39.4, 61.0, UNDERMINE },
 				["questID"] = 85492,
 				["groups"] = {
 					i(235221),	-- Particularly Bright Lightbulb

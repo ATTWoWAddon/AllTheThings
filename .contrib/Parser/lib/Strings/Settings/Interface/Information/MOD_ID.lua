@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "模型 ID",
-		-- TODO: tw = "",
+		tw = "模組 ID",
 	},
 })

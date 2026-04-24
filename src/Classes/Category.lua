@@ -10,8 +10,6 @@ app.CreateCategory = app.CreateClass("Category", "categoryID", {
 	["icon"] = function(t)
 		return app.CategoryIcons[t.categoryID] or defaultIcon;
 	end,
-	["ignoreSourceLookup"] = function(t)
-		return true;
-	end,
+	["ignoreSourceLookup"] = app.ReturnTrue,
 });
 end

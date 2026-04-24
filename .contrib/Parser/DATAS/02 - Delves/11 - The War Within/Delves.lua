@@ -17,10 +17,16 @@ DELVES_TWW_S1 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S1",
+		-- TODO: de = "",
 		es = "Profundidades TWW T1",
 		mx = "Abismos TWW T1",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Вылазки TWW 1 сезон",
-		cn = "地心之战地下堡第1季",
+		cn = "地心之战地下堡第一季",
+		tw = "地心之戰探究第一季",
 	},
 });
 DELVES_TWW_S2 = createHeader({
@@ -28,10 +34,16 @@ DELVES_TWW_S2 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S2",
+		-- TODO: de = "",
 		es = "Profundidades TWW T2",
 		mx = "Abismos TWW T2",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Вылазки TWW 2 сезон",
-		cn = "地心之战地下堡第2季",
+		cn = "地心之战地下堡第二季",
+		tw = "地心之戰探究第二季",
 	},
 });
 DELVES_TWW_S3 = createHeader({
@@ -39,13 +51,18 @@ DELVES_TWW_S3 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S3",
+		-- TODO: de = "",
 		es = "Profundidades TWW T3",
 		mx = "Abismos TWW T3",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Вылазки TWW 3 сезон",
-		cn = "地心之战地下堡第3季",
+		cn = "地心之战地下堡第三季",
+		tw = "地心之戰探究第三季",
 	},
 });
-local UNDERCOIN = 2803;
 local NERUBIAN_DELVES_TWW = { EARTHCRAWL_MINES, SKITTERING_BREACH, THE_DREAD_PIT, THE_SPIRAL_WEAVE, THE_UNDERKEEP };
 local FUNGARIAN_DELVES_TWW = { FUNGAL_FOLLY, MYCOMANCER_CAVERN };
 local KOBOLD_DELVES_TWW = { KRIEGVALS_REST, THE_WATERWORKS };
@@ -103,7 +120,7 @@ local mapped = function(t)
 	end
 	return t
 end
-root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(DELVES_TWW_S1, {	-- Includes Zekvir's Lair
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 			ach(40446, {	-- I TAKE Candle!
@@ -145,6 +162,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(218126),	-- Befouler's Syringe
 						}),
 					}),
+				}),
+				n(EXPLORATION, {
+					map_exploration(15001,{coord={66.1,52.8,ZEKVIRS_LAIR}}),	-- Zekvir's Lair
 				}),
 				n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 					q(83752, {	-- Threats of Zekvir
@@ -193,7 +213,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["groups"] = {
 				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 					ach(41529, {	-- Breaking the Bank
-						title(612),	-- %s, the Real Deal
+						title(612),	-- <Name>, the Real Deal
 					}),
 					ach(41210, {	-- Let Me Solo Him: The Underpin
 						i(233196),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
@@ -202,6 +222,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(235614),	-- Golden-Gob Propulsion Rig
 					}),
 				})),
+				n(EXPLORATION, {
+					map_exploration(15991,{coord={82.2,43.1,2426}}),	-- Demolition Dome
+				}),
 				hqt(86407, {
 					["name"] = "Received Item from Underpin (Delve)",
 					["providers"] = {
@@ -211,32 +234,32 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["timeline"]={ADDED_11_1_0_SEASONSTART},
 					["isWeekly"] = true,
 				}),
+				n(236626, {	-- The Underpin <A Pretty Big Deal>
+					["crs"] = { 234168 },	-- The Underpin <A Pretty Big Deal> (not sure which is "?" or "??")
+					-- #if AFTER 11.2.0
+					["groups"] = {
+						i(233196),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
+						i(235614),	-- Golden-Gob Propulsion Rig
+					},
+					-- #endif
+				}),
 			},
 		})),
-		hqt(87286, {	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), First per week, Delve Tier doesn't matter
-			["name"] = "Received Item from Underpin (Summon)",
-			["providers"] = {
-				{"i",233186},	-- Wave Scrambler 2000 (not really a quest provider, but otherwise turns into a quest item cuz providers)
-				{"o",507768},	-- Jettisoned Pile of Goblin-Bucks
-				{"n",236942},	-- The Underpin
-			},
-			["timeline"]={ADDED_11_1_0_SEASONSTART},
-			["isWeekly"] = true,
-		}),
 	})),
 	n(DELVES_TWW_S3, applyDataSelf({ ["timeline"] = { ADDED_11_2_0 } }, {	-- Includes Voidrazor Sanctuary
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+		n(ACHIEVEMENTS, {
 			mapped(ach(42779, {	-- A Flash in the Void
 				["cr"] = 245938,	-- Flickergate
-				["groups"] = { title(598) },	-- Flickering %s
+				["groups"] = { title(598) },	-- Flickering <Name>
 			})),
 			mapped(ach(42778, {	-- A Flicker in the Dark
 				["cr"] = 245938,	-- Flickergate
 			})),
 			ach(42801, {	-- Journey's End (Season 3)
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
-					title(638, {	-- %s the Delver Within
-						["timeline"] = { ADDED_11_2_0 },
+					title(638, {	-- <Name> the Delver Within
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 				},
 			}),
@@ -251,31 +274,42 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			mapped(ach(42203, {	-- War Within Delves: Tier 11 (Season 3)
 				title(550),	-- High Explorer <Name>
 			})),
-		})),
+		}),
 		-- TWW Season 3 Boss
 		m(DELVE_ETHEREAL_KYVEZA, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			["icon"] = [[~_.asset("Delves_Shadow")]],
 			["coord"] = { 38.5, 51.1, KARESH_TAZAVESH },
 			["maps"] = { DELVE_ETHEREAL_KYVEZA },
 			["groups"] = {
-				n(ACHIEVEMENTS, {
-					ach(42190, {	-- Let Me Solo Her: Nexus-Princess Ky'veza
+				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
+					ach(42190, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_0 } }, {	-- Let Me Solo Her: Nexus-Princess Ky'veza
 						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
-					}),
+					})),
 					ach(42193, {	-- My Stab-Happy Nemesis
-						i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
+						i(245529, {	-- Hal'hadar's Phasebound Visor (COSMETIC!)
+							["timeline"] = { REMOVED_12_0_0 },
+						}),
 					}),
 					ach(42194, {	-- Pruning the Princess
-						title(639),	-- Contract Killer %s
+						title(639),	-- Contract Killer <Name>
 					}),
+				})),
+				n(EXPLORATION, {
+					map_exploration(16539,{coord={53.4,82.9,DELVE_ETHEREAL_KYVEZA}}),	-- Voidrazor Sanctuary
+				}),
+				n(244752, {	-- Nexus-Princess Ky'veza
+					["crs"] = { 244753 },	-- Nexus-Princess Ky'veza (not sure which is "?" or "??")
+					-- #if AFTER MID
+					["groups"] = {
+						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
+						i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
+					},
+					-- #endif
 				}),
 			},
 		})),
 	})),
 	n(ACHIEVEMENTS, {
-		ach(40817, {	-- A Delver's Bounty
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
 		ach(41115, {	-- Algari Delver
 			["timeline"] = { ADDED_11_1_0 },
 			["maps"] = ALL_REGULAR_DELVES_TWW,
@@ -759,19 +793,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		ach(40455, {	-- Buddy System
 			["maps"] = ALL_THE_DELVES_TWW,
 		}),
-		ach(40882, {	-- Copious Coffers
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["groups"] = {
-				title(575),	-- <Name> the Bountiful
-				i(237358, {	-- Silver Coffer Key
-					["timeline"] = { ADDED_11_1_0 },
-				}),
-			},
-		}),
-		ach(41097, {	-- Curiosity Never Killed the Looter
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
 		ach(40437, {	-- Delver of the Depths (automated)
 			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
@@ -844,20 +865,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		ach(40732, {	-- Heavy-Handed
 			["maps"] = ALL_THE_DELVES_TWW,
 		}),
-		ach(40098, {	-- Immortal Spelunker
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["groups"] = {
-				title(549),	-- Immortal Spelunker <Name>
-			},
-		}),
-		ach(40763, {	-- I'm not a Thief, I'm a Treasure Hunter
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
 		ach(40459),		-- I've Got a Flying Machine!
 		ach(40789),		-- I've Got More Flying Machine?! (automated)
-		ach(40788, {	-- I Got the Keys
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
 		ach(40452, {	-- Just Keep Swimming
 			["maps"] = KOBYSS_DELVES_TWW,
 		}),
@@ -886,7 +895,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(42241, {	-- Overcharged Delver
-			["timeline"] = { ADDED_11_1_7 },
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["groups"] = {
 				crit(105440, {	-- Fungal Folly
 					["maps"] = { FUNGAL_FOLLY },
@@ -909,27 +918,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(235016),	-- Redeployment Module (TOY!)
 			},
 		}),
-		ach(40863, {	-- Perplexing Puzzle
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
-		ach(40864, {	-- Plentiful Perplexing Puzzles
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["crs"] = {
-				225401,	-- Wrapped Spool
-			},
-		}),
-		ach(41105, {	-- Prodigious Plentiful Perplexing Puzzles
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["crs"] = {
-				225401,	-- Wrapped Spool
-			},
-		}),
 		ach(40820, {	-- Raisin' Brann
 			["maps"] = ALL_THE_DELVES_TWW,
-		}),
-		ach(40819, {	-- Ready to Turn
-			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(42678, {	-- So That's Where My Manaflux Capacitor Was!
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
@@ -942,14 +932,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		ach(40458, {	-- Stranger Delves
 			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
-		ach(40885, {	-- The Key to Madness
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["groups"] = {
-				i(237355, {	-- Golden Coffer Key
-					["timeline"] = { ADDED_11_1_0 },
-				}),
-			},
 		}),
 		ach(42677, {	-- This Machine Flies?! Don't Care I Got It!
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
@@ -995,9 +977,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(235698),	-- Delver's Dirigible Schematic: Horde Decal (MM!)
 				i(235695),	-- Delver's Dirigible Schematic: Red Paint (MM!)
 			},
-		}),
-		ach(40436, {	-- You're Getting a Delve!
-			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 	}),
 	mapped(n(DELVE_COMPLETION, {
@@ -1046,9 +1025,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			filter(MISC, {
 				i(242919, {	-- Cracked Keystone (QS!/QI!/CI!)
 					["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
+					-- #IF AFTER 12.0
+					["repeatable"] = true,	-- this was reset for everyone going into 12.0 (or sometime slightly prior)
+					-- #ENDIF
 				}),
 				i(251543, {	-- Cracked Keystone (QS!/QI!/CI!)
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				}),
 			}),
 			filter(NECK_F, {
@@ -1102,7 +1084,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			i(221496),	-- Wriggle (PET!)
 		}),
 		filter(TOYS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
-			i(230924), 	-- Spotlight Materializer 1000 (TOY!)
+			i(230924),	-- Spotlight Materializer 1000 (TOY!)
 			i(228413, { ["timeline"] = { ADDED_11_2_0 } }),	-- Lampyridae Lure (TOY!)
 		})),
 		filter(COSMETIC, {
@@ -1121,7 +1103,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			}),
 		}),
 		n(BOUNTIFUL, bubbleDownFiltered({
-			["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
+			["cost"] = { { "c", RESTORED_COFFER_KEY, 1 } },
 		},FILTERFUNC_itemID,{
 			["provider"] = { "o", 413590 },	-- Bountiful Coffer
 			["groups"] = {
@@ -1145,8 +1127,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235426),	-- Nitroclad Wrap
 							i(235421),	-- Noxious Injector Sheen
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
-						})),
 					}),
 					filter(CLOTH, {
 						n(DELVES_TWW_S1, bubbleDown({ ["timeline"] = { REMOVED_11_1_0_SEASONSTART } }, {
@@ -1169,7 +1149,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235437),	-- Noxious Injector Tube
 							i(235438),	-- Noxious Injector Manacles
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
 							i(237972),	-- Void-Scarred Seer's Bands
 							i(237971),	-- Void-Scarred Seer's Cord
 							i(237968),	-- Void-Scarred Seer's Crown
@@ -1220,7 +1200,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235445),	-- Nitroclad Strap
 							i(235446),	-- Nitroclad Armguards
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
 							i(237979),	-- Void-Scarred Blade's Belt
 							i(237980),	-- Void-Scarred Blade's Bracers
 							i(237977),	-- Void-Scarred Blade's Breeches
@@ -1252,7 +1232,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235453),	-- Blastborne Links
 							i(235454),	-- Blastborne Vambraces
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
 							i(237988),	-- Void-Scarred Striker's Armguards
 							i(237982),	-- Void-Scarred Striker's Boots
 							i(237981),	-- Void-Scarred Striker's Brigandine
@@ -1298,7 +1278,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235462),	-- Junkreaver's Girdle
 							i(235463),	-- Junkreaver's Coils
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
 							i(237989),	-- Void-Scarred Captain's Breastplate
 							i(237994),	-- Void-Scarred Captain's Epaulettes
 							i(237995),	-- Void-Scarred Captain's Greatbelt
@@ -1359,6 +1339,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					})),
 					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
 						i(237999),	-- Battered Matter Destabilizer
+						i(218126),	-- Befouler's Syringe
 						i(238007),	-- Bulwark of the Great Dark
 						i(237997),	-- Ethereal Handchopper
 						i(238004),	-- Exile's Beacon
@@ -1622,36 +1603,36 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						}),
 					})),
 					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
-						--TODO: only itemID, no bonusIDs for r4
+						-- TODO: only itemID, no bonusIDs for r4
 						i(239568, {	-- Audio Amplification Crystal [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239569, {	-- Battered Aegis [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239573, {	-- Ethereal Energy Converter [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239579, {	-- Hatarang [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239576, {	-- Mana-Tinted Glasses [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239580, {	-- Nether Overlay Matrix [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239578, {	-- Quizzical Device [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239571, {	-- Sands of K'aresh [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239567, {	-- Tailwind Conduit [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239570, {	-- Temporal Decelerator Crystal [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 					})),
 				}),
@@ -1669,7 +1650,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			i(239502, { ["timeline"]={ ADDED_11_1_5 } }),	-- Big Wheel of Cheese (Hidden Cache)
 			i(227784, { ["timeline"]={ REMOVED_11_1_0_SEASONSTART } }),	-- Delver's Bounty
 			i(233071, { ["timeline"]={ ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },["isWeekly"]=true }),	-- Delver's Bounty (actual item)
-			i(235628, { ["timeline"]={ ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }),	-- Delver's Bounty (Delve reward UI)
+			i(235628, { ["timeline"]={ ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }),	-- Delver's Bounty (Delve reward UI)
 			i(248142, { ["timeline"]={ ADDED_11_2_0_SEASONSTART },["isWeekly"]=true }),	-- Delver's Bounty (actual item)
 			i(226132),	-- Deployable Recovery Keg
 			i(226110),	-- Elemental Fusion Bomb
@@ -1713,8 +1694,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			i(242850, {	-- Ancient Curio (QS!)
 				["timeline"] = { ADDED_11_2_0_SEASONSTART },
 			}),
-			--
-			currency(2803),	-- Undercoin
+			currency(2803, {	-- Undercoin
+				["timeline"] = { REMOVED_12_0_1_LAUNCH },
+			}),
 		}),
 		filter(RECIPES, {
 			i(223085),	-- Design: Fractured Gemstone Locket (RECIPE!)
@@ -1739,6 +1721,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			i(211040),	-- Unhinged Vault-Hatch
 		}),
 	})),
+	n(FACTIONS, {
+		faction(2640),	-- Brann Bronzebeard
+	}),
 	n(HIDDEN_QUESTS, {
 		-- Brann Bronzebeard leveling quest
 		hqt(77716),	-- Level 2
@@ -1819,7 +1804,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		hqt(86990, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 77
 		hqt(86991, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 78
 		hqt(86992, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 79
-		--hqt(86993, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 80 Attached on achievement
+		-- hqt(86993, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 80 Attached on achievement
 		hqt(88948, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 81
 		hqt(88949, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 82
 		hqt(88950, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 83
@@ -1902,8 +1887,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(84224, {	-- To Delves!
-			--["provider"] = { "n", xxxxx },	-- Auto-accept?
-			--["sourceQuests"] = { 81510 },	-- Ship It! TODO: wrong, auto pop on fresh (first) 80s on account, as of 11.0.5
+			-- ["provider"] = { "n", xxxxx },	-- Auto-accept?
+			-- ["sourceQuests"] = { 81510 },	-- Ship It! TODO: wrong, auto pop on fresh (first) 80s on account, as of 11.0.5
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
@@ -1932,7 +1917,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["maps"] = ALL_REGULAR_DELVES_TWW,	-- s2 delves or all delves?
 		}),
 		q(88947, {	-- Undermined Delves
-			--["sourceQuests"] = { xx },	-- ??
+			-- ["sourceQuests"] = { xx },	-- ??
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.6, 44.3, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
@@ -1944,10 +1929,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
 			["groups"] = {
-				i(233281, {	-- Delver's Cosmetic Surprise Bag
-					-- it seems like give you as reward any cosmetic from s1 delves that wasn't looted before
-				}),
-				i(233276),	-- Delver's Starter Kit
+				i(233281),	-- Delver's Cosmetic Surprise Bag (CI!) [cointains any unlearned cosmetic from delves]
+				i(233276),	-- Delver's Starter Kit (CI!)
 			},
 		}),
 		q(85243, {	-- I Want My Hat Back
@@ -2081,7 +2064,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["timeline"] = { ADDED_11_1_7 },
 			["groups"] = {
 				i(244696),	-- Overcharged Chest (delve s2 loot table)
-				--i(244311),	-- Titan Memory Card
+				-- i(244311),	-- Titan Memory Card
 			},
 		}),
 		q(91033, {	-- Monitoring 'Construct'ing
@@ -2122,8 +2105,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 			["groups"] = {
-				i(248127),	-- Delver's Cosmetic Surprise Bag
-				i(248126),	-- Delver's Starter Kit
+				i(248127),	-- Delver's Cosmetic Surprise Bag (CI!) [cointains any unlearned cosmetic from delves]
+				i(248126),	-- Delver's Starter Kit (CI!)
 			},
 		}),
 		q(91782, {	-- Repossessed!
@@ -2131,6 +2114,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+			["maps"] = { KARESH_TAZAVESH },
 			["groups"] = {
 				o(563555, {	-- Writ of Repossession
 					["coord"] = { 47.5, 44.4, DORNOGAL },
@@ -2149,7 +2133,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 			["groups"] = {
-				i(244470),	--  Etheric Victory (TOY!)
+				i(244470),	-- Etheric Victory (TOY!)
 			},
 		}),
 	}),
@@ -2243,7 +2227,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["cr"] = 236942,	-- The Underpin
 			["groups"] = {
 				i(235813),	-- Machine Gob's Iron Grin
-				--i(233071),	-- Delver's Bounty
+				i(233071),	-- Delver's Bounty
 			},
 		}),
 		o(547532, {	-- Ky'veza's Etheric Cache
@@ -2254,6 +2238,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(218126),	-- Befouler's Syringe
 				i(246071),	-- Mana-Seamster's Arcane-Needle
 				i(238001),	-- Rod of the Unwoven
+				i(248142),	-- Delver's Bounty
 			},
 		}),
 		o(567732, {	-- Kaja'6-Pack (Curio Spawned)
@@ -2266,7 +2251,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		o(455914, {	-- Mislaid Curiosity
+			-- #if BEFORE 12.0.0
 			["description"] = "Contains Chunk of Companion Experience tokens.",
+			-- #endif
 			["timeline"] = { REMOVED_11_1_0_SEASONSTART },
 			["groups"] = {
 				-- First versions
@@ -2280,7 +2267,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		o(478443, {	-- Mislaid Curiosity
+			-- #if BEFORE 12.0.0
 			["description"] = "Contains a 'Chunk of Companion Experience' token.\n\n|cFF40bf40Massively buffed in 11.1, they can now provide up to 18k Brann XP each, depending on the Delves' Level & which experience token you receive.|r",
+			-- #endif
 			["timeline"] = { ADDED_11_1_0 },
 			["groups"] = {
 				-- Brann Experience
@@ -2341,689 +2330,1033 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["coord"] = { 47.6, 45.0, DORNOGAL },
 			["groups"] = {
 				header(HEADERS.Item, 219391, {	-- Delver's Dirigible
+					i(235685, {	-- Delver's Dirigible Schematic: Drill (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+					}),
 					i(224981, {	-- Delver's Dirigible Schematic: Brown Paint (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
+					}),
+					i(224771, {	-- Delver's Dirigible Schematic: Empennage (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 					}),
 					i(224982, {	-- Delver's Dirigible Schematic: Exhaust (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(235696, {	-- Delver's Dirigible Schematic: Explorer Decal (MM!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 1300 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
+					}),
+					i(235688, {	-- Delver's Dirigible Schematic: Fan (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 					}),
 					i(224980, {	-- Delver's Dirigible Schematic: Front-Mounted Lantern (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
+					}),
+					i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+					}),
+					i(235684, {	-- Delver's Dirigible Schematic: Glider (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+					}),
+					i(235690, {	-- Delver's Dirigible Schematic: Harpoon (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+					}),
+					i(235689, {	-- Delver's Dirigible Schematic: Kite (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 					}),
 					i(224960, {	-- Delver's Dirigible Schematic: Lantern Wing (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
+					}),
+					i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+					}),
+					i(235687, {	-- Delver's Dirigible Schematic: Spoiler (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
+					}),
+					i(235692, {	-- Delver's Dirigible Schematic: Thrusters (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
+					}),
+					i(235683, {	-- Delver's Dirigible Schematic: Turbine (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+					}),
+					i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+					}),
+					i(235686, {	-- Delver's Dirigible Schematic: White Paint (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+					}),
+					i(235691, {	-- Delver's Dirigible Schematic: Yellow Paint (MM!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 					}),
 					i(224979, {	-- Delver's Dirigible Schematic: Zeppelin (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 				}),
 				header(HEADERS.Item, 229974, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {	-- Delver's Gob-Trotter
+					i(229974, {	-- Delver's Gob-Trotter (MOUNT!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10000 } },
+						["timeline"] = { ADDED_12_0_1_LAUNCH },
+					}),
 					i(230219, {	-- Delver's Gob-Trotter Schematic: Balloon (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 3250 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(230217, {	-- Delver's Gob-Trotter Schematic: Flamethrower (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 2600 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(230220, {	-- Delver's Gob-Trotter Schematic: Green (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 3250 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(230216, {	-- Delver's Gob-Trotter Schematic: Harpoon (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 2600 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(230218, {	-- Delver's Gob-Trotter Schematic: Pipes (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 1300 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 				})),
 				header(HEADERS.Item, 238051, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {	-- Delver's Mana-Skimmer
 					i(238178, {	-- Delver's Mana-Skimmer Schematic: Canister (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 2600 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(238177, {	-- Delver's Mana-Skimmer Schematic: Emitter (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 2600 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(238181, {	-- Delver's Mana-Skimmer Schematic: Energy Thrusters (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 1300 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(238179, {	-- Delver's Mana-Skimmer Schematic: Quad Glider (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 3250 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(238180, {	-- Delver's Mana-Skimmer Schematic: Void Paint (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 3250 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
+					}),
+				})),
+				filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+					i(222974, {	-- Sir Shady Mrrgglton Junior (PET!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10000 } },
+					}),
+				})),
+				filter(COSMETIC, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+					i(212166, {	-- Coral Nautic Helm
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+					}),
+					iensemble(234388, {	-- Arsenal: Hallowfall Weaponry
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(237954, {	-- Arsenal: Undermine Weaponry
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(234385, {	-- Ensemble: Aegis Of Hidden Stars
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(237945, {	-- Ensemble: Blastborne Loadout
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(248788, {	-- Ensemble: Bundle of Ethereal Cloaks
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(234384, {	-- Ensemble: Chains Of The Stygian Sea
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(237944, {	-- Ensemble: Junkreaver's Plates
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(234383, {	-- Ensemble: Myconic Shell
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(237949, {	-- Ensemble: Nitroclad Kit
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(237953, {	-- Ensemble: Noxious Injector Apparatus
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					iensemble(234382, {	-- Ensemble: Unkindled Waxweave Panoply
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
+					}),
+					i(235617, {	-- Lucky Goblin's Strapped Rockets
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+					}),
+					i(212169, {	-- Mint-Scented Candle Hat
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+					}),
+					i(245525, {	-- Opulent Phasebound Visor
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+					}),
+					i(212163, {	-- Soporific Shroom Cap
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 					}),
 				})),
 				filter(TOYS, {
+					i(211931, {	-- Abyss Caller Horn (TOY!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
 					i(243056, {	-- Delver's Mana-Bound Ethergate (TOY!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 5000 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(230850, {	-- Delve-O-Bot 7001 (TOY!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 5000 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 					}),
 					i(244792, {	-- Etheric Brannmorpher (TOY!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 10000 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 						["groups"] = {
-							title(641, {	-- %s Bronzebeard
+							title(641, {	-- <Name> Bronzebeard
 								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 								["collectible"] = false,
 							}),
 						},
 					}),
+					i(228413, {	-- Lampyridae Lure (TOY!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
+					i(225910, {	-- Pileus Delight (TOY!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
+					i(235016, {	-- Redeployment Module (TOY!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
+					i(230924, {	-- Spotlight Materializer 1000 (TOY!)
+						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
 					i(223312, {	-- Trusty Hat (TOY!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 						["groups"] = { i(223316) },	-- Trusty Hat
 					}),
 				}),
 				filter(MISC, {
 					i(235608, {	-- Nightfall Sanctum Campsite (CI!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = {
+							-- #if AFTER 12.0.1.66431
+							{ "c", RESONANCE_CRYSTALS, 10000 },
+							-- #else
+							{ "c", RESONANCE_CRYSTALS, 10 },
+							-- #endif
+						},
 						["groups"] = { campsite(5) },	-- Cultists' Quay (CS!)
 					}),
 				}),
+				filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+					i(246237, {	-- OC91 Chariot (MOUNT!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10000 } },
+					}),
+				})),
 				n(ARMOR, {
+					-- #if AFTER 12.0.1
+					iensemble(248786, {	-- Ensemble: Void-Scarred Blade's Attire
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
+					iensemble(248784, {	-- Ensemble: Void-Scarred Captain's Plate
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
+					iensemble(248787, {	-- Ensemble: Void-Scarred Seer's Wrappings
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
+					iensemble(248785, {	-- Ensemble: Void-Scarred Striker's Battlegear
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
+					-- #endif
 					filter(BACK_F, {
 						i(225414, {	-- Cave Topographer's Drape
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225411, {	-- Secret-Dredger's Cloak
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225413, {	-- Treasure-Seeker's Shawl
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225412, {	-- Torchbearer's Greatcloak
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 					}),
 					filter(CLOTH, {
 						i(225393, {	-- Cave Topographer's Cord
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
+							-- #endif
 						}),
 						i(225390, {	-- Cave Topographer's Cowl
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+							-- #endif
 						}),
 						i(225394, {	-- Cave Topographer's Cuffs
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
+							-- #endif
 						}),
 						i(225389, {	-- Cave Topographer's Handwraps
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225391, {	-- Cave Topographer's Leggings
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+							-- #endif
 						}),
 						i(225388, {	-- Cave Topographer's Sandals
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+							-- #endif
 						}),
 						i(225392, {	-- Cave Topographer's Shoulders
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+							-- #endif
 						}),
 						i(225387, {	-- Cave Topographer's Vestment
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+							-- #endif
 						}),
 					}),
 					filter(LEATHER, {
 						i(225402, {	-- Treasure-Seeker's Bindings
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225396, {	-- Treasure-Seeker's Boots
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225399, {	-- Treasure-Seeker's Breeches
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225400, {	-- Treasure-Seeker's Epaulets
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225397, {	-- Treasure-Seeker's Grips
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225398, {	-- Treasure-Seeker's Helm
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225401, {	-- Treasure-Seeker's Sash
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225395, {	-- Treasure-Seeker's Vest
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 					}),
 					filter(MAIL, {
 						i(225386, {	-- Torchbearer's Bracers
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
+							-- #endif
 						}),
 						i(225379, {	-- Torchbearer's Chainmail
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+							-- #endif
 						}),
 						i(225380, {	-- Torchbearer's Cinch
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
+							-- #endif
 						}),
 						i(225383, {	-- Torchbearer's Coif
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+							-- #endif
 						}),
 						i(225384, {	-- Torchbearer's Greaves
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225382, {	-- Torchbearer's Grips
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+							-- #endif
 						}),
 						i(225385, {	-- Torchbearer's Shoulderguards
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225381, {	-- Torchbearer's Striders
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 					}),
 					filter(PLATE, {
 						i(225410, {	-- Secret-Dredger's Armplates
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
+							-- #endif
 						}),
 						i(225403, {	-- Secret-Dredger's Breastplate
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+							-- #endif
 						}),
 						i(225405, {	-- Secret-Dredger's Gauntlets
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+							-- #endif
 						}),
 						i(225409, {	-- Secret-Dredger's Girdle
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
+							-- #endif
 						}),
 						i(225406, {	-- Secret-Dredger's Helm
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+							-- #endif
 						}),
 						i(225407, {	-- Secret-Dredger's Legguards
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
+							-- #endif
 						}),
 						i(225408, {	-- Secret-Dredger's Mantle
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							-- #if BEFORE 12.0.1.66431
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
+							-- #endif
 						}),
 						i(225404, {	-- Secret-Dredger's Sabatons
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 					}),
 				}),
 				n(WEAPONS, {
+					-- #if AFTER 12.0.1
+					iensemble(246915, {	-- Arsenal: Ethereal Weaponry
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
+					}),
+					-- #endif
 					i(225500, {	-- Bedrock Breaker
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225507, {	-- Brilliant Beacon
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 					i(225499, {	-- Lapidarius Gemcutter
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 					i(225505, {	-- Luminous Lampspire
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 					i(225506, {	-- Mana-Lined Slab Slicer
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 					i(225502, {	-- Mountain Shaper's Greataxe
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 					i(225501, {	-- Pathfinder's Stonecarver
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 					i(225504, {	-- Skypiercing Drillstaff
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225497, {	-- Torchlit Pickaxe
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 					i(225503, {	-- Trailblazer's Hookshoot
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 					i(225498, {	-- Umbral Artist's Chisel
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 					i(225508, {	-- Unhinged Vault-Hatch
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						-- #if BEFORE 12.0.1.66431
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
+						-- #endif
 					}),
 				}),
 			},
 		}),
 		n(208070, {	-- Sir Finley Mrgglton <Delve Treasures>
 			["coord"] = { 47.6, 43.6, DORNOGAL },
-			["groups"] = {
-				header(HEADERS.Item, 219391, {	-- Delver's Dirigible
+			["groups"] = {	-- To avoid having the NPC itself say "This has been removed from the game", I'm gonna timeline individual headers	- Exo
+				-- After being kidnapped by Nullaeus (Lorewise), Sir Finley stopped selling stuff and all his (TWW Season 3) stock was moved to Reno Jackson.
+				header(HEADERS.Item, 219391, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }, {	-- Delver's Dirigible
 					i(235685, {	-- Delver's Dirigible Schematic: Drill (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(224771, {	-- Delver's Dirigible Schematic: Empennage (MM!)
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(235688, {	-- Delver's Dirigible Schematic: Fan (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (MM!)
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235684, {	-- Delver's Dirigible Schematic: Glider (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235690, {	-- Delver's Dirigible Schematic: Harpoon (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235689, {	-- Delver's Dirigible Schematic: Kite (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (MM!)
-						["cost"] = {{"c", UNDERCOIN, 3000}},
+						["cost"] = { { "c", UNDERCOIN, 3000 } },
 					}),
 					i(235687, {	-- Delver's Dirigible Schematic: Spoiler (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235692, {	-- Delver's Dirigible Schematic: Thrusters (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235683, {	-- Delver's Dirigible Schematic: Turbine (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (MM!)
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235686, {	-- Delver's Dirigible Schematic: White Paint (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235691, {	-- Delver's Dirigible Schematic: Yellow Paint (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
-				}),
-				filter(MOUNTS, {
+				})),
+				filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }, {
 					i(246237, {	-- OC91 Chariot (MOUNT!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 15000}},
+						["cost"] = { { "c", UNDERCOIN, 15000 } },
 					}),
-				}),
-				filter(BATTLE_PETS, {
+				})),
+				filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }, {
 					i(222974, {	-- Sir Shady Mrrgglton Junior (PET!)
-						["cost"] = {{"c", UNDERCOIN, 10000}},
+						["cost"] = { { "c", UNDERCOIN, 10000 } },
 					}),
-				}),
-				filter(COSMETIC, {
+				})),
+				filter(COSMETIC, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }, {
 					i(212166, {	-- Coral Nautic Helm
 						["timeline"] = { ADDED_11_0_5 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					iensemble(234388, {	-- Arsenal: Hallowfall Weaponry
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					iensemble(237954, {	-- Arsenal: Undermine Weaponry
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234385, {	-- Ensemble: Aegis Of Hidden Stars
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					iensemble(237945, {	-- Ensemble: Blastborne Loadout
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(248788, {	-- Ensemble: Bundle of Ethereal Cloaks
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234384, {	-- Ensemble: Chains Of The Stygian Sea
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					iensemble(237944, {	-- Ensemble: Junkreaver's Plates
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234383, {	-- Ensemble: Myconic Shell
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					iensemble(237949, {	-- Ensemble: Nitroclad Kit
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(237953, {	-- Ensemble: Noxious Injector Apparatus
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234382, {	-- Ensemble: Unkindled Waxweave Panoply
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					i(235617, {	-- Lucky Goblin's Strapped Rockets (COSMETIC!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 4000}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
 					}),
 					i(212169, {	-- Mint-Scented Candle Hat
 						["timeline"] = { ADDED_11_0_5 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(245525, {	-- Opulent Phasebound Visor
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(212163, {	-- Soporific Shroom Cap
 						["timeline"] = { ADDED_11_0_5 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
-				}),
-				filter(MISC, {
+				})),
+				filter(MISC, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }, {
 					i(233792, {	-- Delver's Disguise
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(226258, {	-- Delver's Pouch of Reagents
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(226259, {	-- Delver's Pouch of Resonance Crystals
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 						-- Blizzard added the same note on the item.
 						-- #if BEFORE 11.1.0
 						["description"] = "Contains 250 Resonance Crystals.",
 						-- #endif
 					}),
 					i(224172, {	-- Restored Coffer Key
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(232493, {	-- Restored Coffer Key
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(232494, {	-- Restored Coffer Key
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(232495, {	-- Restored Coffer Key
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(232496, {	-- Restored Coffer Key
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(232497, {	-- Restored Coffer Key
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(232498, {	-- Restored Coffer Key
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					-- Season 2
 					i(235531, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(233555, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(233186, {	-- Wave Scrambler 2000
 						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					-- Season 3
 					i(244193, {	-- L00T RAID-R Mini
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(238526, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(238527, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(248017, {	-- Shrieking Quartz
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
-				}),
-				filter(TOYS, {
+				})),
+				filter(TOYS, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }, {
 					i(211931, {	-- Abyss Caller Horn (TOY!)
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(228413, {	-- Lampyridae Lure (TOY!)
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(225910, {	-- Pileus Delight (TOY!)
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(235016, {	-- Redeployment Module (TOY!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 					i(230924, {	-- Spotlight Materializer 1000 (TOY!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(231064, {	-- Throwaway Gangster Disguise (TOY!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
-				}),
-				n(ARMOR, {
+				})),
+				n(ARMOR, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }, {
 					filter(BACK_F, {
 						i(211005, {	-- Cave Topographer's Drape
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(211006, {	-- Secret-Dredger's Cloak
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(211007, {	-- Torchbearer's Greatcloak
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(225065, {	-- Torchbearer's Haversack
 							["timeline"] = { ADDED_11_0_5 },
-							["cost"] = {{"c", UNDERCOIN, 2500}},
+							["cost"] = { { "c", UNDERCOIN, 2500 } },
 						}),
 						i(211062, {	-- Treasure-Seeker's Shawl
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 					}),
 					filter(CLOTH, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 						i(211013, {	-- Cave Topographer's Cord
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211011, {	-- Cave Topographer's Cowl
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211014, {	-- Cave Topographer's Cuffs
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211010, {	-- Cave Topographer's Handwraps
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211012, {	-- Cave Topographer's Leggings
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211009, {	-- Cave Topographer's Sandals
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211039, {	-- Cave Topographer's Shoulders
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211008, {	-- Cave Topographer's Vestment
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 					})),
 					filter(FINGER_F, {
 						i(211051, {	-- Loop of Vestigial Power
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(211052, {	-- Olden Signet
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(211061, {	-- Unearthed Relic Band
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 					}),
 					filter(LEATHER, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 						i(211020, {	-- Treasure-Seeker's Bindings
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211015, {	-- Treasure-Seeker's Boots
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211018, {	-- Treasure-Seeker's Breeches
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211038, {	-- Treasure-Seeker's Epaulets
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211016, {	-- Treasure-Seeker's Grips
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211017, {	-- Treasure-Seeker's Helm
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211019, {	-- Treasure-Seeker's Sash
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211037, {	-- Treasure-Seeker's Vest
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 					})),
 					filter(MAIL, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 						i(211028, {	-- Torchbearer's Bracers
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211021, {	-- Torchbearer's Chainmail
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211027, {	-- Torchbearer's Cinch
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211024, {	-- Torchbearer's Coif
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211025, {	-- Torchbearer's Greaves
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211023, {	-- Torchbearer's Grips
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211026, {	-- Torchbearer's Shoulderguards
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211022, {	-- Torchbearer's Striders
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 					})),
 					filter(NECK_F, {
 						i(211063, {	-- Long-Lost Choker
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 					}),
 					filter(PLATE, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 						i(211036, {	-- Secret-Dredger's Armplates
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211030, {	-- Secret-Dredger's Breastplate
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211032, {	-- Secret-Dredger's Gauntlets
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211035, {	-- Secret-Dredger's Girdle
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211029, {	-- Secret-Dredger's Helm
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211033, {	-- Secret-Dredger's Legguards
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211034, {	-- Secret-Dredger's Mantle
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211031, {	-- Secret-Dredger's Sabatons
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 					})),
 					i(221502, {	-- Adventurer's Warbound Battlegear Drop
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 					i(224814, {	-- Adventurer's Warbound Boots
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 750}},
+						["cost"] = { { "c", UNDERCOIN, 750 } },
 					}),
 					i(224845, {	-- Adventurer's Warbound Chestpiece
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 875}},
+						["cost"] = { { "c", UNDERCOIN, 875 } },
 					}),
 					i(224844, {	-- Adventurer's Warbound Gloves
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 750}},
+						["cost"] = { { "c", UNDERCOIN, 750 } },
 					}),
 					i(224843, {	-- Adventurer's Warbound Headpiece
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 875}},
+						["cost"] = { { "c", UNDERCOIN, 875 } },
 					}),
 					i(224842, {	-- Adventurer's Warbound Legs
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 875}},
+						["cost"] = { { "c", UNDERCOIN, 875 } },
 					}),
 					i(224841, {	-- Adventurer's Warbound Shoulders
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 750}},
+						["cost"] = { { "c", UNDERCOIN, 750 } },
 					}),
 					i(224840, {	-- Adventurer's Warbound Waist
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 625}},
+						["cost"] = { { "c", UNDERCOIN, 625 } },
 					}),
 					i(224839, {	-- Adventurer's Warbound Wrists
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 625}},
+						["cost"] = { { "c", UNDERCOIN, 625 } },
 					}),
-				}),
-				n(WEAPONS, {
+					-- #if BEFORE 12.0.1
+					iensemble(248786, {	-- Ensemble: Void-Scarred Blade's Attire
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(248784, {	-- Ensemble: Void-Scarred Captain's Plate
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(248787, {	-- Ensemble: Void-Scarred Seer's Wrappings
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(248785, {	-- Ensemble: Void-Scarred Striker's Battlegear
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					-- #endif
+				})),
+				n(WEAPONS, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }, {
+					-- #if BEFORE 12.0.1
+					iensemble(246915, {	-- Arsenal: Ethereal Weaponry
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					-- #endif
 					i(219355, {	-- Bedrock Breaker
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(211041, {	-- Brilliant Beacon
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(211047, {	-- Lapidarius Gemcutter
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(211059, {	-- Luminous Lampspire
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(219351, {	-- Mana-Lined Slab Slicer
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(219354, {	-- Mountain Shaper's Greataxe
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(211048, {	-- Pathfinder's Stonecarver
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(219352, {	-- Skypiercing Drillstaff
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(219356, {	-- Torchlit Pickaxe
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(219353, {	-- Trailblazer's Hookshoot
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(211046, {	-- Umbral Artist's Chisel
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(211040, {	-- Unhinged Vault-Hatch
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
-				}),
+				})),
 			},
 		}),
 	}),
@@ -3048,6 +3381,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					crit(106404),	-- Waygate Wiles
 				}),
 			}),
+			n(EXPLORATION, {
+				map_exploration(16427,{coord={41.3,86.1,ARCHIVAL_ASSAULT}}),	-- Archival Assault
+			}),
 			filter(MISC, {
 				-- Story Variant: Relic Retrieval
 				i(244859),	-- Armoire of Invincibility
@@ -3071,11 +3407,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(246053),	-- Waygate Piece
 			}),
 			n(TREASURES, {
-				o(455498, { -- Sturdy Chest
+				o(455498, {	-- Sturdy Chest
 					["description"] = "Use Waygate on the 1st Level.",
 					["coords"] = {
 						{ 47.9, 24.6, 2455 },	-- Lower Chamber (Waygate)
-						{ 62.4, 37.9, 2455 },	-- Lower Chamber (Sturdy Chest)
+						{ 62.1, 38.2, 2454 },	-- Lower Chamber (Sturdy Chest)
 					},
 					["questID"] = 83692,
 				}),
@@ -3083,12 +3419,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 62.0, 11.1, 2455 },	-- Lower Chamber
 					["questID"] = 83673,
 				}),
-				o(455535, { -- Sturdy Chest
+				o(455535, {	-- Sturdy Chest
 					["description"] = "Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",
 					["coord"] = { 49.7, 92.6, 2455 },	-- Lower Chamber
 					["questID"] = 92573,
 				}),
-				o(539785, { -- Sturdy Chest
+				o(539785, {	-- Sturdy Chest
 					["coords"] = {
 						{ 43.9, 64.7, 2455 },	-- Lower Chamber
 						{ 43.3, 65.7, 2476 },	-- Archival Assault
@@ -3108,10 +3444,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					crit(68758),	-- Kidnapped Earthen
 					crit(68759),	-- Precious Ores
 					crit(68760),	-- Fiery Grounds
-					crit(102963, { -- Looking for Treasure
+					crit(102963, {	-- Looking for Treasure
 						["timeline"] = { ADDED_11_1_0 },
 					}),
-					crit(102964, { -- Bugs and Grubs
+					crit(102964, {	-- Bugs and Grubs
 						["timeline"] = { ADDED_11_1_0 },
 					}),
 				}),
@@ -3125,9 +3461,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
+			n(EXPLORATION, {
+				map_exploration(14999,{coord={45.3,11.0,EARTHCRAWL_MINES}}),	-- Earthcrawl Mines
+			}),
 			filter(MISC, {
-				i(233021, {	-- Grappling-Grabber 9000 (QI!)
+				o(503639, {	-- Tools Chest
+					["coord"] = { 43.6, 13.7, EARTHCRAWL_MINES },
 					["timeline"] = { ADDED_11_1_0 },
+					["groups"] = { i(233021) },	-- Grappling-Grabber 9000 (QI!)
 				}),
 				i(213000),	-- Holy Flamethrower Torch (QI!)
 				i(213085, {	-- Lost Treasure (QI!)
@@ -3195,6 +3536,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
+			n(EXPLORATION, {
+				map_exploration(15836,{coord={50.0,6.1,EXCAVATION_SITE_9}}),	-- Excavation Site 9
+			}),
 			n(TREASURES, {
 				o(503011, {	-- Sturdy Chest
 					["coord"] = { 57.0, 46.8, EXCAVATION_SITE_9 },
@@ -3252,33 +3596,29 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
+			n(EXPLORATION, {
+				map_exploration(14957,{coord={65.5,84.5,FUNGAL_FOLLY}}),	-- Fungal Folly
+			}),
 			filter(MISC, {
 				o(409302, {	-- Dispersal Crystal
-					["coord"] = { 63, 54.3, FUNGAL_FOLLY },
-					["groups"] = {
-						i(209788),	-- Dispersion Crystal (QI!)
-					},
+					["coord"] = { 63.0, 54.3, FUNGAL_FOLLY },
+					["groups"] = { i(209788) },	-- Dispersion Crystal (QI!)
 				}),
 				i(210017),	-- Fungal Fish (QI!)
 				o(531965, {	-- Loose Parts
 					["timeline"] = { ADDED_11_2_0 },
-					["groups"] = {
-						i(241220),	-- Loose Parts (QI!)
-					},
+					["coord"] = { 36.5, 13.6, FUNGAL_FOLLY },
+					["groups"] = { i(241220) },	-- Loose Parts (QI!)
 				}),
 				i(244900, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Spark Burst (CI!)
 				o(536065, {	-- Nuts and Bolts
 					["timeline"] = { ADDED_11_2_0 },
-					["groups"] = {
-						i(250107),	-- Nuts and Bolts (QI!)
-					},
+					["groups"] = { i(250107) },	-- Nuts and Bolts (QI!)
 				}),
 				i(238254, {["timeline"] = { ADDED_11_2_0 }}),	-- Nuts and Bolts (QI!)
 				o(531965, {	-- Work Table
 					["timeline"] = { ADDED_11_2_0 },
-					["groups"] = {
-						i(242380),	-- Black Blood Blower (QI!)
-					},
+					["groups"] = { i(242380) },	-- Black Blood Blower (QI!)
 				}),
 			}),
 			n(QUESTS, {
@@ -3310,7 +3650,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 49.6, 35.7, FUNGAL_FOLLY },
 					["questID"] = 83452,
 					["groups"] = {
-						i(225556),	-- Ancient Construct (TOY!) -- confirmed 2/2
+						i(225556),	-- Ancient Construct (TOY!)	-- confirmed 2/2
 					},
 				}),
 				o(455496, {	-- Sturdy Chest
@@ -3347,6 +3687,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(225066),	-- Trailblazer's Haversack
 					}),
 				}),
+			}),
+			n(EXPLORATION, {
+				map_exploration(15000,{coord={33.5,26.8,KRIEGVALS_REST}}),	-- Kriegval's Rest
 			}),
 			filter(MISC, {
 				i(210970),	-- Crumbled Keepsake (QI!)
@@ -3411,6 +3754,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(212163),	-- Soporific Shroom Cap
 					}),
 				}),
+			}),
+			n(EXPLORATION, {
+				map_exploration(14998,{coord={18.2,37.6,MYCOMANCER_CAVERN}}),	-- Mycomancer Cavern
 			}),
 			filter(MISC, {
 				i(218002),	-- Priceless Pumpkin (QI!)
@@ -3503,6 +3849,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
+			n(EXPLORATION, {
+				map_exploration(15005,{coord={75.0,24.4,NIGHTFALL_SANCTUM}}),	-- Nightfall Sanctum
+			}),
 			filter(MISC, {
 				i(244905, { ["timeline"] = { ADDED_11_1_7 } }),	-- Miniature Titan Disc: Charged Crystal (CI!)
 				i(215466),	-- Sanctified Supplies (QI!)
@@ -3545,7 +3894,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		["icon"] = [[~_.asset("Delves_Goblin")]],
 		["coord"] = { 35.2, 52.2, UNDERMINE },
 		["maps"] = {
-			--2420,	-- The Pits (constant mapID)
+			-- 2420,	-- The Pits (constant mapID)
 			2421,	-- The Low Decks
 			2422,	-- The High Decks
 			2423,	-- Entrance
@@ -3559,10 +3908,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					crit(70990),	-- Teleporter Tantrums
 				}),
 			}),
+			n(EXPLORATION, {
+				map_exploration(15990,{coord={49.1,63.0,2423}}),	-- Sidestreet Sluice
+			}),
 			filter(MISC, {
 				i(244901, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Statically Charged (CI!)
 				i(234454),	-- Remote Teleporter (QI!)
-				i(234451),	-- Stolen Goods (QI!)
+				o(504179, {	-- Stolen Goods
+					i(234451),	-- Stolen Goods (QI!)
+				}),
 			}),
 			n(TREASURES, {
 				o(503157, {	-- Sturdy Chest
@@ -3610,6 +3964,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(212173),	-- Rulk'Nerub Raptorial Spine
 					}),
 				}),
+			}),
+			n(EXPLORATION, {
+				map_exploration(15004,{coord={76.0,53.7,SKITTERING_BREACH}}),	-- Skittering Breach
 			}),
 			filter(MISC, {
 				i(225719),	-- Light's Mantle (QI!)
@@ -3670,6 +4027,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
+			n(EXPLORATION, {
+				map_exploration(15008,{coord={53.1,17.2,TAK_RETHAN_ABYSS}}),	-- Tak-Rethan Abyss [Flooded]
+				map_exploration(15327,{coord={53.1,17.2,TAK_RETHAN_ABYSS}}),	-- Tak-Rethan Abyss [Dry]
+			}),
 			filter(MISC, {
 				o(415296, {	-- Repair Kit
 					i(211776),	-- Damp Repair Kit (QI!)
@@ -3727,6 +4088,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
+			n(EXPLORATION, {
+				map_exploration(15003,{coord={29.7,56.0,THE_DREAD_PIT}}),	-- The Dread Pit
+			}),
 			filter(MISC, {
 				i(217965),	-- Repair Kit (QI!)
 			}),
@@ -3735,7 +4099,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["provider"] = { "o", 455685 },	-- Delver's Call: Dread Pit
 					["coords"] = {
 						{ 58.3, 64.2, THE_RINGING_DEEPS },
-						{ 30, 54.8, THE_DREAD_PIT },
+						{ 30.0, 54.8, THE_DREAD_PIT },
 					},
 				}),
 			}),
@@ -3781,6 +4145,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(212165),	-- Deep Nautic Helm
 					}),
 				}),
+			}),
+			n(EXPLORATION, {
+				map_exploration(15175,{coord={52.2,12.2,THE_SINKHOLE}}),	-- The Sinkhole [Flooded]
+				map_exploration(15006,{coord={52.2,12.2,THE_SINKHOLE}}),	-- The Sinkhole [Dry]
 			}),
 			filter(MISC, {
 				i(218122),	-- Stolen Relic (QI!)
@@ -3843,6 +4211,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(212173),	-- Rulk'Nerub Raptorial Spine
 					}),
 				}),
+			}),
+			n(EXPLORATION, {
+				map_exploration(15007,{coord={53.5,78.8,2313}}),	-- The Spiral Weave
 			}),
 			filter(MISC, {
 				i(244902, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Electric Current (CI!)
@@ -3917,8 +4288,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
+			n(EXPLORATION, {
+				map_exploration(15009,{coord={34.4,25.1,THE_UNDERKEEP}}),	-- The Underkeep
+			}),
 			filter(MISC, {
-				i(217715),	-- Key Scroll (QI!)
+				o(433563, {	-- Key Scroll
+					i(217715),	-- Key Scroll (QI!)
+				}),
 				o(433705, {	-- Pheromone Bottle
 					["coord"] = { 45.6, 45.1, THE_UNDERKEEP },
 					["groups"] = {
@@ -3952,7 +4328,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["questID"] = 83682,
 				}),
 				o(455523, {	-- Sturdy Chest
-					["coord"] = { 72, 88.8, THE_UNDERKEEP },
+					["coord"] = { 72.0, 88.8, THE_UNDERKEEP },
 					["questID"] = 83697,
 				}),
 			}),
@@ -3980,6 +4356,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(212169),	-- Mint-Scented Candle Hat
 					}),
 				}),
+			}),
+			n(EXPLORATION, {
+				map_exploration(15002,{coord={46.8,12.1,THE_WATERWORKS}}),	-- The Waterworks
 			}),
 			n(QUESTS, {
 				q(83749, {	-- Delves: The Waterworks
@@ -4042,7 +4421,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(91453, { ["timeline"]={ ADDED_11_2_0_SEASONSTART } }),	-- K'aresh Trust
 		})),
 		n(DELVES_TWW_S1, {
-			--Delver's Journey Rewards
+			-- Delver's Journey Rewards
 			q(83158),	-- Adventurer's Warbound Battlegear Drop (spellID 453929)
 			q(83235),	-- Airship: Wings 05 - Lantern Wing (spellID 454473)
 			q(83236),	-- Airship: Top 03 - Zeppelin (spellID 454476)
@@ -4063,11 +4442,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(84819),	-- Zekvir pop in Skittering Breach (2nd time in week, Tier 8), also in Nightfall Sanctum (unsure, Tier 3)
 		}),
 		n(DELVES_TWW_S2, applyDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
-			n(QUESTS, {
-				-- q(86329),	-- Delver's Cosmetic Surprise Bag (itemID 233281) [linked to Item]
-				-- q(86328),	-- Delver's Starter Kit (itemID 233276) [linked to Item]
-			}),
-			--Delver's Journey Rewards
+			-- Delver's Journey Rewards
 			q(85204),	-- Delver's Dirigible Schematic: Flamethrower (spellID 467083)
 			q(85203),	-- Delver's Dirigible Schematic: Pipes (spellID 467082)
 			q(85202),	-- Delver's Dirigible Schematic: Harpoon (spellID 467081)
@@ -4077,11 +4452,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(85210),	-- Delve-O-Bot 7001 (spellID 467097)
 			q(85206),	-- Warbound Equipment Set (spellID 467089)
 			q(85205),	-- Discounted Restored Coffer Key (spellID 467087)
-			--q(86371, { ["timeline"] = { ADDED_11_1_7 } } ),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
+			-- q(86371, { ["timeline"] = { ADDED_11_1_7 } }),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
 			q(86438),	-- Opened first Nemesis Strongbox (first purple on account)
 			-- Underpin Invasion
 			q(87287, { ["isWeekly"] = true} ),	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter
-			--- Overcharged Delves
+			-- Overcharged Delves
 			-- Belt unlocks
 			q(90945, { ["timeline"]= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
 			q(90946, { ["timeline"]= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
@@ -4095,21 +4470,19 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(88826),	-- Purchaseable Restored Coffer Key (spellID 1224304)
 			q(88811),	-- Delver's Mana-Skimmer Schematic: Quad Glider (spellID 1224298)
 			q(88827),	-- Delver's Mana-Skimmer Schematic: Void Paint (spellID 1224319)
-			--q(0),	-- Veteran's Warbound Battlegear Drop (spellID 1224320) // TODO: fix questiD since Blizzard are dumb
-			--q(0),	-- The Delver Within (spellID 1238213) // TODO: fix questID since Blizzard are dumb
-			--q(),	-- Delver's Mana-Bound Ethergate toy missing?
+			-- q(0),	-- Veteran's Warbound Battlegear Drop (spellID 1224320) // TODO: fix questiD since Blizzard are dumb
+			-- q(0),	-- The Delver Within (spellID 1238213) // TODO: fix questID since Blizzard are dumb
+			-- q(),	-- Delver's Mana-Bound Ethergate toy missing?
 			-- Invasion / Map
 
 			-- First delve of day
 
 			-- Items (probably automation will do a thing, just in case)
-			--q(89040),	-- Purchaseable Rare Delve Key - 1 (spellID 1225596) (itemID 238526)
-			--q(89041),	-- Purchaseable Rare Delve Key - 2 (spellID 1225597) (itemID 238527)
-			--q(91783),	-- Delver's Cosmetic Surprise Bag (spellID 1246295) (itemID 248127)
-			--q(91784),	-- Delver's Starter Kit (spellID 1246296) (itemID 248126)
+			-- q(89040),	-- Purchaseable Rare Delve Key - 1 (spellID 1225596) (itemID 238526)
+			-- q(89041),	-- Purchaseable Rare Delve Key - 2 (spellID 1225597) (itemID 238527)
 		})),
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
-		q(85719),	-- Unknown. Seems to pop very rarely on completion of a delve
+		q(85719, {name="Daily Account-Wide Delve Companion Bonus XP"}),	-- Bonus experience for companion on first delve completion of day
 
 		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
 		q(84736, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st
@@ -4128,5 +4501,28 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 
 		-- Ky'veza Delve
 		q(91045, {["timeline"]={ADDED_11_2_0}}),	-- Killed Nexus-Princess Ky'Veza on "?" for the first time
+
+		-- Weekly summon boss questID
+		hqt(87286, {	-- Received Item from The Underpin / Nexus-Princess Ky'veza
+			["name"] =
+				-- #if AFTER 11.2.0
+				"Received Item from Nexus-Princess (Summon)",
+				-- #else
+				"Received Item from The Underpin (Summon)",
+				-- #endif
+			["providers"] = {
+				-- #if AFTER 11.2.0
+				{"i",248017},	-- Shrieking Quartz (not really a quest provider, but otherwise turns into a quest item cuz providers)
+				{"o",547532},	-- Ky'veza's Etheric Cache
+				{"n",244755},	-- Nexus-Princess Ky'veza
+				-- #else
+				{"i",233186},	-- Wave Scrambler 2000 (not really a quest provider, but otherwise turns into a quest item cuz providers)
+				{"o",507768},	-- Jettisoned Pile of Goblin-Bucks
+				{"n",236942},	-- The Underpin
+				-- #endif
+			},
+			["timeline"]={ADDED_11_1_0_SEASONSTART},
+			["isWeekly"] = true,
+		}),
 	})),
 }));

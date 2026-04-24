@@ -2,6 +2,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_SIX, inst(2832, bubbleDownSelf({["timeline"] = { ADDED_1_15_5 }}, {	-- Nightmare Grove
 		["headerID"] = createHeader({
@@ -12,7 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				es = "Arboleda de la Pesadilla",
 				mx = "Arboleda de las Pesadillas",
 				fr = "Bosquet du cauchemar",
-				--it = "",
+				-- it = "",
 				ko = "악몽의 숲",
 				pt = "Bosque do Pesadelo",
 				ru = "Роща Кошмаров",
@@ -21,15 +22,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			},
 			description = {
 				en = "Nightmare Grove can be found near the portals to the Emerald Dream.",
-				--[[
-				es = "",
-				de = "",
-				fr = "",
-				it = "",
-				pt = "",
-				ru = "",
-				ko = "",
-				]]--
+				-- TODO: de = "",
+				es = "Arboleda de la Pesadilla se encuentra cerca de los portales al Sueño Esmeralda.",
+				mx = "Arboleda de las Pesadillas se encuentra cerca de los portales al Sueño Esmeralda.",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
 				cn = "梦魇林地可在通往翡翠梦境的传送门附近找到。",
 				tw = "夢魘林地可在通往翡翠夢境的傳送門附近找到。",
 			},
@@ -57,9 +57,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["qg"] = 11832,	-- Keeper Remulos
 							["coord"] = { 36.18, 41.79, MOONGLADE },
 							["lvl"] = 60,
-							["groups"] = {
-								i(20600),	-- Malfurion's Signet Ring
-							},
+							["groups"] = { i(20600) },	-- Malfurion's Signet Ring
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {
@@ -138,9 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 86679,	-- Shrouded in Nightmare
 					["qg"] = 11832,	-- Keeper Remulos
 					["coord"] = { 36.2, 41.8, MOONGLADE },
-					["groups"] = {
-						i(234155),	-- Malfurion's Signet Ring
-					},
+					["groups"] = { i(234155) },	-- Malfurion's Signet Ring
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {

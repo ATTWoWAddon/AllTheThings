@@ -1,21 +1,25 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ZSKERA_VAULTS = createHeader({
 	readable = "Zskera Vaults",
 	icon = 4638590,
 	text = {
 		en = "Zskera Vaults",
-		es = "Cámaras de Zskera",
 		de = "Gewölbe von Zskera",
+		es = "Cámaras de Zskera",
+		-- TODO: mx = "",
 		fr = "Caveaux de Zskera",
 		it = "Cripte di Zskera",
+		ko = "지스케라 금고",
 		pt = "Câmaras de Zskera",
 		ru = "Зкерские хранилища",
-		ko = "지스케라 금고",
 		cn = "兹斯克拉宝库",
+		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(ZSKERA_VAULTS, {
@@ -27,7 +31,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				ach(17509),	-- Every Door, Everywhere, All At Once
 			}),
 			filter(MISC, bubbleDown({
-				["cost"] = {{"i",203705,1}},	-- Empty Obsidian Vial
+				["cost"] = { { "i", 203705, 1 } },	-- 1x Empty Obsidian Vial
 			},{
 				i(203715),	-- Oozing Gold
 				i(203720),	-- Restorative Water
@@ -39,12 +43,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = {
 						75050,	-- An Eclectic Accord
 						74769,	-- Stemming the Irontide
-						73157,	--  Wings of Mercy
+						73157,	-- Wings of Mercy
 					},
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
 					["groups"] = {
-						i(202713),	-- Scattered Supplies (QI!)
+						o_repeated({	-- Scattered Supplies
+							["coords"] = {
+								{ 35.4, 80.3, THE_FORBIDDEN_REACH },
+								{ 36.1, 79.0, THE_FORBIDDEN_REACH },
+								{ 36.3, 78.4, THE_FORBIDDEN_REACH },
+								{ 36.2, 80.7, THE_FORBIDDEN_REACH },
+							},
+							["groups"] = {
+								i(202713),	-- Scattered Supplies (QI!)
+								o(386055),	-- Scattered Supplies
+								o(386056),	-- Scattered Supplies
+							},
+						}),
 					},
 				}),
 				q(73159, {	-- Exploring Our Past
@@ -160,7 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(74996, {	-- A Difficult Legacy
 					["sourceQuests"] = { 74796 },	-- A Dusty Vase
 					["provider"] = { "n", 201564 },	-- Voraxian
-					["coord"] = {85.5, 35, OHNAHRAN_PLAINS },
+					["coord"] = { 85.5, 35.0, OHNAHRAN_PLAINS },
 				}),
 				q(74796, {	-- A Dusty Vase
 					["provider"] = { "i", 203687 },	-- Dusty Vase
@@ -174,7 +190,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(74493, {	-- Second Time Is The Charm
 					["sourceQuests"] = { 74795 },	-- An Odd Round Object
 					["provider"] = { "n", 201564 },	-- Voraxian
-					["coord"] = {85.5, 35, OHNAHRAN_PLAINS },
+					["coord"] = { 85.5, 35.0, OHNAHRAN_PLAINS },
 				}),
 				q(74293, {	-- Not Forgotten
 					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az
@@ -194,7 +210,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 74502 },	-- Complimentary Gift
 					["provider"] = { "n", 201714 },	-- Prototype Tinker-Tron
 					["coord"] = { 24.7, 52.0, THE_FORBIDDEN_REACH },
-					["cost"] = { { "i", 203701, 1 }, },	-- 1x Neltharion Gift Token
+					["cost"] = { { "i", 203701, 1 } },	-- 1x Neltharion Gift Token
 					["repeatable"] = true,
 					["groups"] = {
 						i(203700, {	-- Tattered Gift Package
@@ -276,12 +292,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(SPECIAL, {
 				i(204073, {	-- Ratcipe: Deviously Deviled Eggs (RECIPE!)
-					["cost"] = { { "i", 204340, 30 }, },	-- 30x Torn Recipe Scrap
+					["cost"] = { { "i", 204340, 30 } },	-- 30x Torn Recipe Scrap
 				}),
 				i(202252, {	-- Recipe Rat
 					["description"] = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotatiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",
 					["crs"] = { 202982 },	-- Recipe Rat
-					["cost"] = { { "i", 3927, 200 }, },	-- 200x Fine Aged Cheddar
+					["cost"] = { { "i", 3927, 200 } },	-- 200x Fine Aged Cheddar
 					["groups"] = {
 						i(204340),	-- Torn Recipe Scrap
 					},
@@ -320,7 +336,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(TREASURES, {
 				n(TIER_ONE, sharedData({
 					["isWeekly"] = true,
-				},{
+				}, {
 					["icon"] = 4643990,
 					["groups"] = {
 						o(387507, {	-- Azerite Powder Barrel
@@ -541,7 +557,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								}),
 							},
 						}),
-						o(9000000, {	-- Wind Sculpted Stone	--TODO: fake ID
+						o(9000000, {	-- Wind Sculpted Stone	-- TODO: fake ID
 							["coord"] = { 26.8, 53.7, THE_FORBIDDEN_REACH },
 							-- ["questID"] = ,
 						}),
@@ -553,7 +569,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				})),
 				n(TIER_TWO, sharedData({
 					["isWeekly"] = true,
-				},{
+				}, {
 					["icon"] = 4643991,
 					["groups"] = {
 						o(386687, {	-- Aged Journal
@@ -817,7 +833,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.7, 55.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75136,
 							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
-							["cost"] = {{"i",203720,1}},	-- Restorative Water
+							["cost"] = { { "i", 203720, 1 } },	-- Restorative Water
 							["cr"] = 202336,	-- Overgrown Skeleton
 							["groups"] = {
 								i(203852),	-- Spore-bound Essence (TOY!)
@@ -838,12 +854,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(385937, {	-- Titan Coffer
 							["coord"] = { 28.8, 54.8, THE_FORBIDDEN_REACH },
 							["questID"] = 73176,
-							["cost"] = { { "i", 202403, 1 }, },	-- 1x Runic Wrench
+							["cost"] = { { "i", 202403, 1 } },	-- 1x Runic Wrench
 						}),
 						o(385826, {	-- Titan Coffer
 							["coord"] = { 28.9, 54.4, THE_FORBIDDEN_REACH },
 							["questID"] = 73112,
-							["cost"] = { { "i", 202403, 1 }, },	-- 1x Runic Wrench
+							["cost"] = { { "i", 202403, 1 } },	-- 1x Runic Wrench
 						}),
 						o(387493, {	-- Unique Fish
 							["questID"] = 74745,
@@ -855,7 +871,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				})),
 				n(TIER_THREE, sharedData({
 					["isWeekly"] = true,
-				},{
+				}, {
 					["icon"] = 4643989,
 					["groups"] = {
 						o(392030, {	-- Blacksteel Hammer
@@ -886,8 +902,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(387500, {	-- Chilly Snowman
 							["questID"] = 74757,
 							["groups"] = {
-							--	i(17202),	-- Snowball
-							--	Removed the snowball, otherwise we get 11 layers of currency tracking
+								-- i(17202),	-- Snowball
+								-- Removed the snowball, otherwise we get 11 layers of currency tracking
 							},
 						}),
 						o(398778, {	-- Disgusting Vat
@@ -1020,7 +1036,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				})),
 				n(TIER_FOUR, sharedData({
 					["isWeekly"] = true,
-				},{
+				}, {
 					["icon"] = 4643988,
 					["groups"] = {
 						o(387749, {	-- Animate Crystalspine

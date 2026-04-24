@@ -5,6 +5,18 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 	m(MECHAGON, {
 		n(QUESTS, {
+			n(REWARDS, {
+				i(246697, {	-- Self-Assembling Homeware Kit
+					["description"] = "Randomly can replace the one of the rewards of between 3-4 of the island's daily quests, with some exceptions.",
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(246481),	-- Retired Industrial Gnomegrabber (DECOR!)
+						i(246599),	-- Self-Sealing Stembarrel (DECOR!)
+						i(246602),	-- Small H.O.M.E. Cog (DECOR!)
+						i(246600),	-- Small Mechanical Crate (DECOR!)
+					},
+				}),
+			}),
 			q(56493, {	-- A Direct Approach
 				["provider"] = { "n", 155188 },	-- Scrollsage Nola
 				["coord"] = { 72.2, 37.2, MECHAGON },
@@ -107,10 +119,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["isDaily"] = true,
 			}),
 			q(56365, {	-- Be Kind, Rewind
-				--["sourceQuest"] =
+				-- ["sourceQuest"] = ,
 				["provider"] = { "n", 153982 },	-- Izira Gearsworn <Battle Captain>
 				["coords"] = {
-					--{ 69.7, 33.0, MECHAGON },	-- Future
+					-- { 69.7, 33.0, MECHAGON },	-- Future
 					{ 73.6, 35.6, MECHAGON },	-- Current
 				},
 				["isDaily"] = true,
@@ -121,7 +133,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 77.8, 40.0, MECHAGON },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-			--	don't know if there are SQs or a reputation requirement. i was at 2,500 Honored and this quest was up as a daily when i flew to the island.
+				-- don't know if there are SQs or a reputation requirement. i was at 2,500 Honored and this quest was up as a daily when i flew to the island.
 			}),
 			q(56334, {	-- Bots Gone Wild
 				["provider"] = { "n", 154655 },	-- Tyler Swaptech
@@ -150,7 +162,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(169807),	-- Salvaged Mechagnome Appendage (QI!)
 				},
 			}),
-			q(54965, {	-- Chopped Bots -- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation? -- also popped 55480
+			q(54965, {	-- Chopped Bots	-- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation?	-- also popped 55480
 				["provider"] = { "n", 150086 },	-- Bolten Springspark
 				["coord"] = { 63.1, 39.2, MECHAGON },
 				["_drop"] = { "isDaily" },
@@ -327,7 +339,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(169474),	-- Corrupted Data Disc
 				},
 			}),
-			q(56328, {	-- Do Not Drink -- 56329 also popped. Possibly a daily?
+			q(56328, {	-- Do Not Drink	-- 56329 also popped. Possibly a daily?
 				["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				["provider"] = { "n", 153750 },	-- Koupal Oilshins
 				["coord"] = { 59.0, 31.6, MECHAGON },
@@ -410,7 +422,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(167076),	-- Grease Trap (QI!)
 				},
 			}),
-			q(56380, {	-- Grounded -- also popped 56330
+			q(56380, {	-- Grounded	-- also popped 56330
 				["provider"] = { "n", 154906 },	-- Brian Pitchspark
 				["coord"] = { 42.8, 29.3, MECHAGON },
 				["isDaily"] = true,
@@ -459,7 +471,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(169225),	-- Unstoppable Countdown Clock (QI!)
 				},
 			}),
-			q(55101, {	-- Junkyard Tinkering and You -- also triggered 56902 for alliance -- slumber note: maybe not on live?  didn't get it on my priest.
+			q(55101, {	-- Junkyard Tinkering and You	-- also triggered 56902 for alliance	-- slumber note: maybe not on live?  didn't get it on my priest.
 				["sourceQuest"] = 55736,	-- Welcome to the Resistance
 				["provider"] = { "n", 152295 },	-- Pascal
 				["coord"] = { 71.2, 32.3, MECHAGON },
@@ -528,8 +540,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							i(169175),	-- Blueprint: Annoy-o-Tron Gang
 							i(169167),	-- Blueprint: Orange Spraybot
 							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
+							i(257928, {	-- Gnomeregan Recyli-Kiln (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 							i(167795),	-- Paint Vial: Copper Trim
-							i(169689),	-- Vinyl: Mimiron's Brainstorm
 							i(169594, {	-- Rust Covered Disc
 								["description"] = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
 								["sourceQuest"] = 56410,	-- Discs of Norgannon
@@ -538,6 +552,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 								["description"] = "Contained in Recycling Requisitions (usually during 'Sunny' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
 								["sourceQuest"] = 56410,	-- Discs of Norgannon
 							}),
+							i(169689),	-- Vinyl: Mimiron's Brainstorm
 						},
 					}),
 				},
@@ -624,7 +639,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152575 },	-- Steelsage Gao
 				["coord"] = { 73.6, 34.3, MECHAGON },
 				["maps"] = { NAZJATAR },
-				["cost"] = {{"i",167903,5}},	-- Disintegrating Sand Sculpture
+				["cost"] = { { "i", 167903, 5 } },	-- Disintegrating Sand Sculpture
 				["isDaily"] = true,
 			}),
 			q(56746, {	-- Our Direct Line
@@ -734,7 +749,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["modelScale"] = 4.2,
 				["repeatable"] = true,
 			}),
-			q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued -- horde only?  didn't pop on alliance on live)
+			q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued	-- horde only?  didn't pop on alliance on live)
 				["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				["provider"] = { "n", 152820 },	-- Prince Erazmin
 				["coord"] = { 59.1, 55.1, MECHAGON },
@@ -742,6 +757,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			q(56117),	-- Recyclable Parts
 			o(326027, {	-- Recyclerizer DX-82
 				["modelScale"] = 3,
+				["coords"] = {
+					{ 53.4, 61.2, MECHAGON },
+					{ 54.4, 56.4, MECHAGON },
+					{ 55.9, 62.4, MECHAGON },
+					{ 58.7, 59.3, MECHAGON },
+				},
 				["groups"] = {
 					i(168946, {	-- Bundle of Recyclable Parts
 						["cost"] = {
@@ -765,7 +786,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 82.9, 23.3, MECHAGON },
 				["isDaily"] = true,
 			}),
-			q(54086, {	-- Right Bot for the Job -- 55907 and 56100 also popped
+			q(54086, {	-- Right Bot for the Job	-- 55907 and 56100 also popped
 				["sourceQuest"] = 55608,	-- Shop Project
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
@@ -975,24 +996,41 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					155259,	-- Lifting Specialist Gogo <Venture Co.> (Horde)
 					155202,	-- Profit Maker Grifa <Venture Co.> (Alliance)
 				},
-				["groups"] = {
-					i(169681),	-- BOOM-TASTIC 3000 (QI!)
-				},
+				["groups"] = { i(169681) },	-- BOOM-TASTIC 3000 (QI!)
 			}),
 			q(55696, {	-- Test Drive
 				["sourceQuest"] = 56175,	-- Emission Free
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
-				["groups"] = {
-					i(168270),	-- Rusty Mechaspider (QI!)
-				},
+				["groups"] = { i(168270) },	-- Rusty Mechaspider (QI!)
 			}),
 			q(56306, {	-- The Family Jewels
 				["provider"] = { "n", 154511 },	-- Sneaky Pete
 				["coord"] = { 24.2, 75.3, MECHAGON },
 				["isDaily"] = true,
 				["groups"] = {
-					i(169241),	-- Family Jewelry (QI!)
+					o(327620, {	-- Family Jewelry
+						["coords"] = {
+							{ 14.4, 83.9, MECHAGON },
+							{ 14.6, 84.1, MECHAGON },
+							{ 16.1, 85.0, MECHAGON },
+							{ 17.0, 73.4, MECHAGON },
+							{ 17.7, 78.4, MECHAGON },
+							{ 18.9, 71.9, MECHAGON },
+							{ 19.4, 80.4, MECHAGON },
+							{ 20.1, 77.8, MECHAGON },
+							{ 20.6, 72.4, MECHAGON },
+							{ 20.6, 82.4, MECHAGON },
+							{ 21.4, 76.3, MECHAGON },
+							{ 22.7, 70.1, MECHAGON },
+							{ 23.1, 80.4, MECHAGON },
+							{ 24.0, 67.7, MECHAGON },
+							{ 25.0, 76.9, MECHAGON },
+							{ 25.2, 84.7, MECHAGON },
+							{ 25.5, 85.0, MECHAGON },
+						},
+						["groups"] = { i(169241) },	-- Family Jewelry (QI!)
+					}),
 				},
 			}),
 			q(56053, {	-- The Final Act
@@ -1006,7 +1044,30 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 63.2, 43.0, MECHAGON },
 				["isDaily"] = true,
 				["groups"] = {
-					i(168246),	-- Golden Cogpaste (QI!)
+					o_repeated({	-- Golden Cogpaste
+						["coords"] = {
+							{ 67.0, 63.9, MECHAGON },
+							{ 67.9, 60.4, MECHAGON },
+							{ 69.3, 57.4, MECHAGON },
+							{ 69.8, 65.5, MECHAGON },
+							{ 70.4, 57.4, MECHAGON },
+							{ 70.4, 58.0, MECHAGON },
+							{ 70.4, 64.3, MECHAGON },
+							{ 71.7, 62.2, MECHAGON },
+							{ 73.4, 58.4, MECHAGON },
+							{ 75.4, 64.2, MECHAGON },
+							{ 75.7, 57.4, MECHAGON },
+							{ 77.1, 61.0, MECHAGON },
+							{ 80.2, 63.2, MECHAGON },
+							{ 80.6, 60.4, MECHAGON },
+							{ 81.4, 63.6, MECHAGON },
+						},
+						["groups"] = {
+							i(168246),	-- Golden Cogpaste (QI!)
+							o(325976),	-- Golden Cogpaste
+							o(325980),	-- Golden Cogpaste
+						},
+					})
 				},
 			}),
 			q(54922, {	-- The Nuts and Bolts of It
@@ -1097,6 +1158,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			}),
 			q(56335, {	-- Wanna Charge? Gotta Pay!
 				["sourceQuest"] = 56320,	-- Your First Charge is Free
+				["qg"] = 154534,	-- Flux
 				["coord"] = { 61.4, 37.5, MECHAGON },
 				["repeatable"] = true,
 			}),
@@ -1109,9 +1171,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = {"o",329715},	-- Useful Bits and Pieces
 				["coord"] = { 43.0, 41.1, MECHAGON },
 				["isDaily"] = true,
-				["groups"] = {
-					i(169686),	-- Useful Bits and Pieces (QI!)
-				},
+				["groups"] = { i(169686) },	-- Useful Bits and Pieces (QI!)
 			}),
 			q(55995, {	-- We Can Fix It
 				["sourceQuest"] = 55729,	-- The Resistance Needs You!
@@ -1144,7 +1204,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152747 },	-- Christy Punchcog
 				["coord"] = { 69.7, 32.3, MECHAGON },
 				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
-				["cost"] = { { "i", 164740, 1 }, },	-- Ub3r-Spanner
+				["cost"] = { { "i", 164740, 1 } },	-- Ub3r-Spanner
 				["requireSkill"] = ENGINEERING,
 				["DisablePartySync"] = true,
 				["groups"] = {
@@ -1352,9 +1412,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(56329),	-- Triggered when completed 'Do Not Drink' (questID 56328)
 				q(55161),	-- Triggered when completed 'Shop Project' (questID 55608)
 				q(56360),	-- Triggered when completed 'Other Interests' (questID ?)
-				--q(56742),	-- ?
+				-- q(56742),	-- ?
 				q(56743),	-- Triggered when completed 'Other Interests' (questID ?)
-				--q(56744),	-- ?
+				-- q(56744),	-- ?
 
 				-- Various
 				q(56426),	-- After killing Data Anomaly while doing 'Discs of Norgannon' (questID 56410)
@@ -1362,7 +1422,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(56427),	-- Popped up when looting and accepting Cracked Numeric Cylinder for the 'Discs of Norgannon' (questID 56410) summoning function
 				q(55453),	-- HQT for 'Battletorn Blue' rewarded by 'Available in Eight Colors' (achievementID 13513)
 				q(56238),	-- Triggered in the alternative world
-				--q(56742),	-- Blueprint: Black Market Radio?
+				-- q(56742),	-- Blueprint: Black Market Radio?
 				q(56089),	-- triggered on first rare kill — possibly blueprint looting?
 				q(56506),	-- triggered on third rare kill — was Mr. Fixthis for me, but someone else had it trigger on Arachnoid Harvester. looted Performant Refined Logic Board and a Chain Ignitercoil
 				q(55848),	-- Reclamation Rig hardmode — putting here because with both quests attached with altQuests it doesn't roll over like dailies should

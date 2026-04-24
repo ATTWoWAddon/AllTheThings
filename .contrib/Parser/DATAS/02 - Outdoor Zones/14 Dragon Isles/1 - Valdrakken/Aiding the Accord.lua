@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		header(HEADERS.Quest, 70750, {	-- Aiding the Accord
@@ -17,7 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isWeekly"] = true,
 				["_drop"] = { "g" },
 				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6_SEASON_FOUR },
-			},{
+			}, {
 				q(70750),	-- Aiding the Accord
 				q(72068),	-- Aiding the Accord: A Feast For All
 				q(72374),	-- Aiding the Accord: Dragonbane Keep
@@ -98,10 +99,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 						{"select", "mapID",
 							DRAGON_ISLES,
-						--	THE_WAKING_SHORES,	-- Does not Reward Citadel Crusher/Obsidian Cosmetic Items	March 2024
-						--	OHNAHRAN_PLAINS,	-- Does not Reward Nokhud Cosmetic Items					March 2024
-						--	THE_AZURE_SPAN,		-- Does not Reward Brackenhide Cosmetic Items				March 2024
-						--	THALDRASZUS,		-- Does Reward Tyrhold Cosmetic Items, manually added above.March 2024
+							-- THE_WAKING_SHORES,	-- Does not Reward Citadel Crusher/Obsidian Cosmetic Items	March 2024
+							-- OHNAHRAN_PLAINS,	-- Does not Reward Nokhud Cosmetic Items					March 2024
+							-- THE_AZURE_SPAN,		-- Does not Reward Brackenhide Cosmetic Items				March 2024
+							-- THALDRASZUS,		-- Does Reward Tyrhold Cosmetic Items, manually added above.March 2024
 						},{"pop"},
 						{"where","headerID",ZONE_REWARDS},
 						{"pop"},

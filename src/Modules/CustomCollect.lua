@@ -139,7 +139,7 @@ local function RefreshCustomCollectibility()
 		SetCustomCollectibility(CCKey, CCfunc)
 	end
 end
-app.AddEventHandler("OnReady", RefreshCustomCollectibility)
+app.AddEventHandler("OnStartup", RefreshCustomCollectibility)
 app.AddEventHandler("OnRecalculate", RefreshCustomCollectibility)
 -- Add if needed
 -- app.AddEventHandler("OnAdd_CustomCollect", function() Callback(RefreshCustomCollectibility) end)
@@ -148,10 +148,6 @@ app.AddEventHandler("OnRecalculate", RefreshCustomCollectibility)
 local function DGU_CustomCollect(t)
 	-- app.PrintDebug("DGU_CustomCollect",t.hash)
 	Callback(RefreshCustomCollectibility)
-end
-local function DGU_Locationtrigger(t)
-	-- app.PrintDebug("DGU_Locationtrigger",t.hash)
-	Callback(app.LocationTrigger, true)
 end
 -- A set of quests which indicate a needed refresh to the Custom Collect status of the character
 local DGU_Quests = {
@@ -168,11 +164,6 @@ local DGU_Quests = {
 	[65078] = DGU_CustomCollect,	-- Shadowlands - Covenant - Night Fae
 	[65079] = DGU_CustomCollect,	-- Shadowlands - Covenant - Necrolord
 }
--- Add any automatically-assigned LocationTriggers
-for _,questID in ipairs(app.__CacheQuestTriggers or app.EmptyTable) do
-	DGU_Quests[questID] = DGU_Locationtrigger
-end
-app.__CacheQuestTriggers = nil
 local function AssignDirectGroupOnUpdates()
 	local questRef
 	for questID,func in pairs(DGU_Quests) do

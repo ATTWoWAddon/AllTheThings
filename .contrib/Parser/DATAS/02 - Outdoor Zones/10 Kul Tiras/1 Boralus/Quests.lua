@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
 	["sym"] = {
 		{ "sub", "pvp_gear_base", EXPANSION.BFA, SEASON_CORRUPTED, PVP_ASPIRANT },{"merge"},	-- BFA header > Season 4 header > Aspirant gear header
@@ -9,6 +10,7 @@ local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
 		{ "modID", 47 },	-- blue. still the wrong iLvl because i can't also apply 2, but it looks better
 	},
 })
+
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(BORALUS, {
 		n(QUESTS, {
@@ -157,7 +159,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(53295, {	-- Do Your Part
-					["provider"] = { "n", 141698 },	--  Kort Ceefer
+					["provider"] = { "n", 141698 },	-- Kort Ceefer
 					["coord"] = { 56.4, 25.8, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -192,7 +194,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "Alliance Outposts allow you to set up additional bases in Zandalar. You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["groups"] = {
 					i(165880, {	-- Outpost Upgrade: Arom's Stand (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -215,7 +217,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165836, {	-- Outpost Upgrade: Brennadam (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -238,7 +240,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165873, {	-- Outpost Upgrade: Castaway Point (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -261,7 +263,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163043, {	-- Scouting Report: Grimwatt's Crash
-						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
+						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -273,6 +275,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162975),	-- Grimwatt's Crash (CI!)
 											i(162977),	-- Mission Report (QI!)
 										},
 									}),
@@ -292,6 +295,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
+										["groups"] = {
+											i(163535),	-- Outpost Upgrade
+											i(163547),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -304,7 +311,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163044, {	-- Scouting Report: Mistvine Ledge
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -316,6 +323,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162645),	-- Mistvine Ledge (CI!)
 											i(162646),	-- Mission Report (QI!)
 										},
 									}),
@@ -335,6 +343,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },		-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
+										["groups"] = {
+											i(163610),	-- Outpost Upgrade
+											i(163622),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -347,7 +359,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163047, {	-- Scouting Report: Mugamba Overlook
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -359,6 +371,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162576),	-- Mugamba Overlook (CI!)
 											i(162577),	-- Mission Report (QI!)
 										},
 									}),
@@ -379,6 +392,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(163600),	-- Outpost Upgrade
 											i(163602),	-- Mission Report (QI!)
 										},
 									}),
@@ -393,7 +407,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163048, {	-- Scouting Report: Veiled Grotto
-						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
+						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -405,6 +419,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162543),	-- Veiled Grotto (CI!)
 											i(162553),	-- Mission Report (QI!)
 										},
 									}),
@@ -419,7 +434,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163046, {	-- Scouting Report: Verdant Hollow
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -431,6 +446,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162603),	-- Verdant Hollow (CI!)
 											i(162604),	-- Mission Report (QI!)
 										},
 									}),
@@ -451,6 +467,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(163594),	-- Outpost Upgrade
 											i(163597),	-- Mission Report (QI!)
 										},
 									}),
@@ -465,7 +482,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163041, {	-- Scouting Report: Vulture's Nest
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -477,6 +494,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(163038),	-- Vulture's Nest (CI!)
 											i(163039),	-- Mission Report (QI!)
 										},
 									}),
@@ -497,6 +515,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(163571),	-- Outpost Upgrade
 											i(163572),	-- Mission Report (QI!)
 										},
 									}),
@@ -695,7 +714,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(57324, {	-- Sail With the Tide
-				--["sourceQuests"] = { 57126 },	-- ...And Following Seas -- maybe this one? but it was back in 8.2.5
+				-- ["sourceQuests"] = { 57126 },	-- ...And Following Seas	-- maybe this one? but it was back in 8.2.5
 				["provider"] = { "n", 150633 },	-- Lady Jaina Proudmoore
 				["coord"] = { 69.34, 27.15, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -724,7 +743,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 65.2, 68.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(56043, {	-- Send the Fleet -- also triggered 56881
+			q(56043, {	-- Send the Fleet	-- also triggered 56881
 				["sourceQuests"] = { 56031 },	-- The Wolf's Offensive
 				["provider"] = { "n", 153932 },	-- Genn Greymane
 				["coord"] = { 70.6, 27.2, BORALUS },
@@ -770,7 +789,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56378, {	-- The Missing Crew
-			--	["sourceQuests"] = {  },	-- UNKNOWN
+				-- ["sourceQuests"] = {  },	-- UNKNOWN
 				["provider"] = { "n", 135681 },	-- Grand Admiral Jes-Tereth
 				["coord"] = { 67.9, 26.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -865,19 +884,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 	m(KUL_TIRAS, {
 		m(BORALUS, {
 			n(QUESTS, {
-				-- Missions
-				q(53746),	-- Verdant Hollow completed
-				q(53747),	-- Veiled Grotto completed
-				q(53748),	-- Mugamba Overlook completed
-				q(53749),	-- Mistvine Ledge completed
-				q(53750),	-- Vulture's Nest completed
-				q(53751),	-- Grimwatt's Crash completed
 				-- Outpost Upgrades
 				q(54292),	-- Brennadam completed
 				q(54296),	-- Castaway Point completed
 				q(54305),	-- Mission Report: Arom's Stand
 				q(54293),	-- Mission Report: Castaway Point
-				------ Stay awhile and listen ------ (TODO upgrade to proper HQT in Boralus)
+				------ Stay awhile and listen ------ (TODO: upgrade to proper HQT in Boralus)
 				hqt(54870),	-- "Stay a while and listen" type conversation between Jaina and Katherine Proudmoore next to the flight master. Available during the war campaign after Clearing Out the Cache.
 				hqt(55464),	-- "Stay a while and listen" type conversation between Jaina and Tandred Proudmoore in Proudmoore Keep at 48, 60. Obtainable after Sail with the Tides completed.
 			}),

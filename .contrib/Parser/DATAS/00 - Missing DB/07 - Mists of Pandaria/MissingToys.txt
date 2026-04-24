@@ -1,5 +1,38 @@
 5.5.0.60481
 i(112324),	-- tmarish Hitching Post \\ Nightmarish Hitching Post
+5.5.3.64308
+i(45047),	-- box Tiger \\ Sandbox Tiger
+i(265786),	-- Demon Hunter's Aspect
+i(265787),	-- Magic Rooster Egg
+i(265788),	-- Wooly White Rhino
+i(265851),	-- Platinum Drums of Speed
+5.5.3.64400
+i(266999),	-- Swift Yak Pelt
+5.5.3.64530
+i(267279),	-- Embers of Al'ar
+i(267302),	-- [PH] CN LNY Dragon Firework Toy
+5.5.3.65302
+i(255973),	-- Sandbox Horse
+5.5.3.66264
+i(272312),	-- Crimson Bloodwater
 
 
-Nothing is Missing in ToyDB.lua! Good Work!
+
+
+Missing in ToyDB.lua
+
+5.5.3.64308
+i(45047),	-- box Tiger \\ Sandbox Tiger
+i(265786),	-- Demon Hunter's Aspect
+i(265787),	-- Magic Rooster Egg
+i(265788),	-- Wooly White Rhino
+i(265851),	-- Platinum Drums of Speed
+5.5.3.64400
+i(266999),	-- Swift Yak Pelt
+5.5.3.64530
+i(267279),	-- Embers of Al'ar
+i(267302),	-- [PH] CN LNY Dragon Firework Toy
+5.5.3.65302
+i(255973),	-- Sandbox Horse
+5.5.3.66264
+i(272312),	-- Crimson Bloodwater

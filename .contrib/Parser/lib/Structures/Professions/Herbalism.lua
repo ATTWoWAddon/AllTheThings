@@ -91,6 +91,13 @@ CATA_HERBALISM = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = {
 	r(193290, {["timeline"] = {ADDED_7_0_3}}),	-- Herbalism Journal
 	applyclassicphase(BFA_PHASE_ONE, r(265825, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Cataclysm)
 }));
+CLASSIC_CATA_HERBALISM = appendGroups(CLASSIC_HERBALISM,
+-- #if AFTER CATA
+CATA_HERBALISM
+-- #else
+{}
+-- #endif
+);
 MOP_HERBALISM = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110413, {	-- Herb Gathering (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
@@ -144,5 +151,17 @@ TWW_HERBALISM = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(441327),	-- Herb Gathering (Khaz Algar)
 	r(193290),	-- Herbalism Journal
 	r(452269),	-- Deepgrove Rose
-	r(435811),	-- Mycobloom
+	r_withQuest(435811, 79906),	-- Mycobloom
+});
+MID_HERBALISM = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	r(471009),	-- Herb Gathering (Quel'Thalas)
+	r(193290),	-- Herbalism Journal
+	r(1265814),	-- Artisan Herbalist's Moxie
+	r(1265728),	-- Deftness
+	r(1265720),	-- Finesse
+	r(1265713),	-- Knowledge
+	r(1265724),	-- Perception
+	r(1265710),	-- Quality
+	r(1265716),	-- Skill
+	r(1225182),	-- Thalassian Phoenix Tail
 });

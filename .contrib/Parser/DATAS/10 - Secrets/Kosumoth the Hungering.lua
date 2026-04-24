@@ -3,7 +3,7 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, {
-	n(111573, {	-- Kosumoth the Hungering
+	n(111573, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {	-- Kosumoth the Hungering
 		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nThis will show you how to unlock |cFFFFD700Kosumoth the Hungering|r, which has a world quest that awards the |cFFFFD700Hungering Claw|r pet or the |cFFFFD700Fathom Dweller|r mount.",
 		["groups"] = {
 			n(102695, {	-- Drak'thul
@@ -103,7 +103,7 @@ root(ROOTS.Secrets, {
 				["description"] = "|cFFFFFFFFStep 12:|r This step will send you to |cFFFFD700Broken Shore|r. Head to |cFFFFFFFF37.17, 71.82|r. Click the |cFFFFD700Hungering Orb|r that is on the stone table near |cFFFFD700Drak'Thul|r",
 			}),
 		},
-	}),
+	})),
 });
 
 
@@ -113,6 +113,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43725),	-- Flag 2 triggers on repeated dialogue from Drak'thul during Step 2.
 			q(43727),	-- Flag 3 triggers on repeated dialogue from Drak'thul during Step 2.
 			q(43728),	-- Flag 4 triggers on repeated dialogue from Drak'thul during Step 2.
+			q(91076, { ["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END } }),	-- Obtain final orb within Legion Remix, unlocks Fathom Dweller at Infinite Bazaar
 		}),
 	}),
 })));

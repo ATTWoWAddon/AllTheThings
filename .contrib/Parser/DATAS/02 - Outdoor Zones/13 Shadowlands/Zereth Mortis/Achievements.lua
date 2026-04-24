@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(ACHIEVEMENTS, {
@@ -23,7 +24,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(187793),	-- Personal Containment Trap (TOY!)
 					crit(52552, {
 						["crs"] = { 181221 },	-- Bygone Geomental
-						["coord"] = { 61.9, 68, ZERETH_MORTIS },
+						["coord"] = { 61.9, 68.0, ZERETH_MORTIS },
 					}),
 					crit(52553, {
 						["description"] = "Only Available during the Daily Quest: Overgrown Story (64785).",
@@ -100,11 +101,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					}),
 					crit(52575, {
 						["crs"] = { 181344 },	-- Runefur
-						["coord"] = { 39.8, 52, ZERETH_MORTIS },
+						["coord"] = { 39.8, 52.0, ZERETH_MORTIS },
 					}),
 					crit(52576, {
 						["crs"] = { 181349 },	-- Cipherclad
-						["coord"] = { 39, 58.5, ZERETH_MORTIS },
+						["coord"] = { 39.0, 58.5, ZERETH_MORTIS },
 					}),
 					crit(52577, {
 						["crs"] = { 181352 },	-- Bitterbeak

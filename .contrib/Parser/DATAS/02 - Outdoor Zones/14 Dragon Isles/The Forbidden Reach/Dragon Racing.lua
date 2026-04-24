@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		skyriding(n(DRAGONRIDING_RACING, {
@@ -300,7 +301,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			header(HEADERS.Achievement, 18792, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Gold
 				n(ACHIEVEMENTS, {
-					ach(18779, {	--  Forbidden Reach Challenge: Bronze
+					ach(18779, {	-- Forbidden Reach Challenge: Bronze
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
 							18040,	-- Aerie Chasm Cruise Challenge: Bronze
@@ -317,7 +318,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							18031,	-- Stormsunder Crater Circuit Reverse Challenge: Bronze
 						}},
 					}),
-					ach(18780, {	--  Forbidden Reach Challenge: Silver
+					ach(18780, {	-- Forbidden Reach Challenge: Silver
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
 							18041,	-- Aerie Chasm Cruise Challenge: Silver
@@ -334,7 +335,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							18032,	-- Stormsunder Crater Circuit Reverse Challenge: Silver
 						}},
 					}),
-					ach(18781, {	--  Forbidden Reach Challenge: Gold
+					ach(18781, {	-- Forbidden Reach Challenge: Gold
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
 							18042,	-- Aerie Chasm Cruise Challenge: Gold
@@ -513,7 +514,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
 				}),
 				q(73079, {	-- Dragonrider Racing - Morqut Ascent
-					["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+					["coord"] = { 34.0, 59.8, THE_FORBIDDEN_REACH },
 				}),
 				q(73082, {	-- Dragonrider Racing - Southern Reach Route
 					["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },

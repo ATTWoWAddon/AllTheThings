@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(234, {	-- Razorfen Kraul
 		-- #if BEFORE MOP
@@ -171,7 +172,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 5790 },	-- Henrig Lonebrow's Journal
 						{ "o", 19861 },	-- Henrig Lonebrow's Journal
 					},
-					["coord"] = { 30, 24, THOUSAND_NEEDLES },
+					["coord"] = { 30.0, 24.0, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 29,

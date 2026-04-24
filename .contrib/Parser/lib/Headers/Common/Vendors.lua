@@ -5,6 +5,15 @@ VENDORS = createHeader({
 	icon = [[~_.asset("Interface_Vendor")]],
 	text = {
 		en = [[~TUTORIAL_TITLE20]],
+		-- TODO: de = "",
+		es = "Vendedores",
+		mx = "Vendedores",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "商人",	-- String in GlobalStrings.lua means slightly different thing in zhCN so translating it manually
+		-- TODO: tw = "",
 	},
 });

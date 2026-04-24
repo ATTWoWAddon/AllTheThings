@@ -1,22 +1,132 @@
 local i = GetRecipeHelperForProfession(SKINNING);
+-----------------
+--   CLASSIC   --
+-----------------
+--- TRAINER ---
+i(0, 8613);		-- Skinning (Apprentice) [REMOVED: 8.0.1]
+i(0, 8617);		-- Skinning (Journeyman) [REMOVED: 8.0.1]
+i(0, 8618);		-- Skinning (Expert) [REMOVED: 8.0.1]
+i(0, 10768);	-- Skinning (Artisan) [REMOVED: 8.0.1]
 
--- Legion
-i(139893, 194170);	-- Skinning Technique: Unbroken Tooth (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(139894, 194171);	-- Skinning Technique: Unbroken Claw (Guessed via Duplicate SpellID Match with Sourced RecipeID)
+-----------------
+-- PATCH 2.0.1 --
+-----------------
+--- TRAINER ---
+i(0, 32678);	-- Skinning (Master) [REMOVED: 8.0.1]
+
+-----------------
+-- PATCH 3.0.1 --
+-----------------
+--- NYI ---
+i(0, 47429);	--
+
+-----------------
+-- PATCH 3.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 50305);	-- Skinning (Grand Master) [REMOVED: 8.0.1]
+i(0, 53125);	-- Master of Anatomy (Apprentice) [REMOVED: 6.0.2]
+i(0, 53662);	-- Master of Anatomy (Journeyman) [REMOVED: 6.0.2]
+i(0, 53663);	-- Master of Anatomy (Expert) [REMOVED: 6.0.2]
+i(0, 53664);	-- Master of Anatomy (Artisan) [REMOVED: 6.0.2]
+i(0, 53665);	-- Master of Anatomy (Master) [REMOVED: 6.0.2]
+i(0, 53666);	-- Master of Anatomy (Grand Master) [REMOVED: 6.0.2]
+
+-----------------
+-- PATCH 4.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 74522);	-- Skinning (Illustrious) [REMOVED: 8.0.1]
+i(0, 74495);	-- Master of Anatomy (Illustrious) [REMOVED: 6.0.2]
+
+-----------------
+-- PATCH 5.0.4 --
+-----------------
+--- TRAINER ---
+i(0, 102216);	-- Skinning (Zen Master) [REMOVED: 8.0.1]
+i(0, 102219);	-- Master of Anatomy  (Zen Master) [REMOVED: 6.0.2]
+
+-----------------
+-- PATCH 6.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 158756);	-- Skinning (Draenor Master) [REMOVED: 8.0.1]
+
+-----------------
+-- PATCH 7.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 195125);	-- Skinning (Legion) [REMOVED: 8.0.1]
+i(0, 194174);	-- Skinning Journal
+--- QUEST ---
+i(0, 194167);	-- Felhide [Rank 1]
+i(0, 194168);	-- Felhide [Rank 2]
+i(0, 194169);	-- Felhide [Rank 3]
+i(0, 247842);	-- Fiendish Leather [Rank 1]
+i(0, 247843);	-- Fiendish Leather [Rank 2]
+i(0, 247844);	-- Fiendish Leather [Rank 3]
+i(0, 194161);	-- Stonehide Leather [Rank 1]
+i(0, 194162);	-- Stonehide Leather [Rank 2]
+i(0, 194163);	-- Stonehide Leather [Rank 3]
+i(0, 194164);	-- Stormscale [Rank 1]
+i(0, 194165);	-- Stormscale [Rank 2]
+i(0, 194166);	-- Stormscale [Rank 3]
+--- ITEM ---
 i(139895, 194173);	-- Skinning Technique: Legion Butchery
-i(139896, 194203);	-- Skinning Technique: Legion Gutting (Guessed via Duplicate SpellID Match with Sourced RecipeID)
+i(139896, 194203);	-- Skinning Technique: Legion Gutting
+i(139894, 194171);	-- Skinning Technique: Unbroken Claw
+i(139893, 194170);	-- Skinning Technique: Unbroken Tooth
+--- NYI ---
+i(0, 205243);	-- Skinning
+
+-----------------
+-- PATCH 8.0.1 --
+-----------------
+--- TRAINER ---
+i(0, 265855);	-- Skinning
+i(0, 265857);	-- Skinning (Outland)
+i(0, 265859);	-- Skinning (Northrend)
+i(0, 265861);	-- Skinning (Cataclysm)
+i(0, 265863);	-- Skinning (Pandaria)
+i(0, 265865);	-- Skinning (Draenor)
+i(0, 265867);	-- Skinning (Legion)
+i(0, 265869);	-- Skinning (Kul Tiran)
+i(0, 265871);	-- Skinning (Zandalari)
+i(0, 257152);	-- Bone Gathering [Rank 1]
+i(0, 257146);	-- Leather Gathering [Rank 1]
+i(0, 257149);	-- Scale Gathering [Rank 1]
+--- QUEST ---
+i(0, 257153);	-- Bone Gathering [Rank 2]
+i(0, 257154);	-- Bone Gathering [Rank 3]
+i(0, 257147);	-- Leather Gathering [Rank 2]
+i(0, 257148);	-- Leather Gathering [Rank 3]
+i(0, 257150);	-- Scale Gathering [Rank 2]
+i(0, 257151);	-- Scale Gathering [Rank 3]
 
 ------------------
 -- PATCH 8.2.0 --
 ------------------
-i(170066, 302010);	-- Skinning Technique: Dredged Leather (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(170067, 302015);	-- Skinning Technique: Cragscale (Guessed via Duplicate SpellID Match with Sourced RecipeID)
+--- TRAINER ---
+i(0, 302014);	-- Cragscale [Rank 1]
+i(0, 302007);	-- Dredged Leather [Rank 1]
+--- ITEM ---
+i(170066, 302010);	-- Dredged Leather [Rank 2]
+i(170067, 302015);	-- Cragscale [Rank 2]
+--- QUEST ---
+i(0, 302016);	-- Cragscale [Rank 3]
+i(0, 302011);	-- Dredged Leather [Rank 3]
+
+-----------------
+-- PATCH 9.0.2 --
+-----------------
+--- TRAINER ---
+i(0, 308569);	-- Skinning (Shadowlands)
 
 ------------------
 -- PATCH 10.0.0 --
 ------------------
 --- TRAINER ---
-i(0, 366259);	-- Skinning
+i(0, 366259);	-- Skinning (Dragon Isle)
 i(0, 395282);	-- Curious Hide
 i(0, 395706);	-- Dense Hide
 i(0, 392440);	-- Leather Skinning
@@ -82,3 +192,35 @@ i(0, 442655);	-- Supreme Beast Lure
 ------------------
 --- TRAINER ---
 i(0, 469989);	-- Toughened Tempest Pelt
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471014);	-- Midnight Skinning
+i(0, 1265817);	-- Artisan Skinner's Moxie
+i(0, 1265730);	-- Deftness
+i(0, 1250491);	-- Find High-Value Beasts
+i(0, 1225908);	-- Fine Void-Tempered Hide
+i(0, 1265723);	-- Finesse
+i(0, 1277733);	-- High-Value Beasts
+i(0, 1265715);	-- Knowledge
+i(0, 1265727);	-- Perception
+i(0, 1265712);	-- Quality
+i(0, 1265719);	-- Skill
+i(0, 1225902);	-- Void-Tempered Hide
+i(0, 1225901);	-- Void-Tempered Leather
+i(0, 1225903);	-- Void-Tempered Plating
+i(0, 1225897);	-- Void-Tempered Scales
+--- SPECIALIZATION ---
+i(0, 1226037);	-- Carve Meat
+i(0, 1225948);	-- Grand Beast Lure
+i(0, 1225939);	-- Lightbloom Diffuser
+i(0, 1225943);	-- Majestic Eversong Lure
+i(0, 1225945);	-- Majestic Harandar Lure
+i(0, 1225946);	-- Majestic Voidstorm Lure
+i(0, 1225944);	-- Majestic Zul'Aman Lure
+i(0, 1225940);	-- Primal Diffuser
+i(0, 1223388);	-- Sharpen Your Knife
+i(0, 1225942);	-- Void Diffuser
+i(0, 1225941);	-- Wild Diffuser

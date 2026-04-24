@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		n(TREASURES, {
@@ -67,7 +68,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["maps"] = { AZJ_KAHET },
 			}),
 			o(446299, {	-- Silk-spun Supplies
-				--["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
+				-- ["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
 				["coord"] = { 67.5, 27.5, AZJ_KAHET },
 				["questID"] = 82719,
 			}),
@@ -136,9 +137,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82527,
 				["coord"] = { 78.6, 33.2, AZJ_KAHET },
 				["cost"] = {
-					{"i", 223902, 1},	-- Crimson Silk Scrap
-					{"i", 223903, 1},	-- Gold Silk Scrap
-					{"i", 223901, 1},	-- Violet Silk Scrap
+					{ "i", 223902, 1 },	-- Crimson Silk Scrap
+					{ "i", 223903, 1 },	-- Gold Silk Scrap
+					{ "i", 223901, 1 },	-- Violet Silk Scrap
 				},
 				["groups"] = {
 					i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)

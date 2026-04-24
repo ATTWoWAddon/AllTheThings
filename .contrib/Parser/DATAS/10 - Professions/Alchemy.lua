@@ -1,8 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_ALCHEMY_KNOWLEDGE = 2024;
-local TWW_ALCHEMY_KNOWLEDGE = 2785;
 root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18733),	-- A Cure for All Ails IV
@@ -420,7 +418,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				39340,	-- Lining the Crucible
 			},
 			["provider"] = { "i", 127877 },	-- Bendy Glass Tubes
-			["coord"] = { 40, 50, 678 },	-- Vault of the Wardens
+			["coord"] = { 40.0, 50.0, 678 },	-- Vault of the Wardens
 			["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
 		}),
 		q(39344, {	-- Going Underground
@@ -476,11 +474,11 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		}),
 		q(39349, {	-- Black Rook Hold: Heavy, But Helpful
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
-			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
+			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
-			["cost"] = {{ "i", 127849, 1 }},	-- 1xFlask of the Countless Armies
+			["cost"] = {{ "i", 127849, 1 }},	-- 1x Flask of the Countless Armies
 		}),
 		q(39348, {	-- Halls of Valor: The Prime Ingredient
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
@@ -488,15 +486,20 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 703, 704, 705 },	-- Halls of Valor
-			["cost"] = {{ "i", 127850, 1 }},	-- 1xFlask of Ten Thousand Scars
+			["cost"] = {{ "i", 127850, 1 }},	-- 1x Flask of Ten Thousand Scars
 		}),
 		q(39350, {	-- Maw of Souls: A Hope in Helheim
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
-			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
+			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 706, 707, 708 },	-- Maw of Souls
-			["cost"] = {{ "i", 127847, 1 }},	-- 1xFlask of the Whispered Pact
+			["cost"] = {{ "i", 127847, 1 }},	-- 1x Flask of the Whispered Pact
+			["groups"] = {
+				o(249462, {	-- Crate of Dragur Dust
+					i(136819),	-- Dragur Dust (QI!)
+				}),
+			},
 		}),
 		q(39351, {	-- The Emerald Nightmare: Rage Fire
 			["sourceQuests"] = {
@@ -750,6 +753,28 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				crit(61280),	-- Charged Phial of Alacrity
 			}),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ALCHEMY, 1 }}
+		},{
+			pn(22481),	-- Air-Formulated Phials
+			pn(19485),	-- Air-Formulated Potions
+			pn(19539),	-- Alchemical Theory
+			pn(19482),	-- Batch Production
+			pn(22478),	-- Batch Production
+			pn(19537),	-- Chemical Synthesis
+			pn(19536),	-- Decayology
+			pn(22482),	-- Frost-Formulated Phials
+			pn(19486),	-- Frost-Formulated Potions
+			pn(19534),	-- Inspiring Ambienc
+			pn(22479),	-- Phial Experimentation
+			pn(22480),	-- Phial Lore
+			pn(22483),	-- Phial Mastery
+			pn(19483),	-- Potion Experimentation
+			pn(19484),	-- Potion Lore
+			pn(19487),	-- Potion Mastery
+			pn(19535),	-- Resourceful Routines
+			pn(19538),	-- Transmutation
+		})),
 		n(QUESTS, {
 			q(70355, {	-- Dragon Isles Alchemy
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
@@ -893,7 +918,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_ALCHEMY_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ALCHEMY, 1 }} }, {
 				r(370747),	-- Advanced Phial Experimentation
 				r(370745),	-- Advanced Potion Experimentation
 				r(370730),	-- Brood Salt
@@ -1010,7 +1035,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_ALCHEMY_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.ALCHEMY),
 			},
 		}, {
 			i(198608),	-- Alchemy Notes
@@ -1048,21 +1073,41 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			ach(19704),	-- Overflowing Algari Flasks (automated)
 			ach(19716),	-- Plentiful Algari Potions (automated)
 		}),
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228773),	-- Algari Alchemist's Notebook
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ALCHEMY, 1 }}
 		},{
+			pn(99020),	-- Alchemical Mastery
+			pn(99016),	-- Arathor's Spear Lore
+			pn(99015),	-- Blessing Blossom Lore
+			pn(99040),	-- Bulk Production
+			pn(98952),	-- Bulk Production
+			pn(98953),	-- Fantastic Flasks
+			pn(100205),	-- Gleaming Transmutagen
+			pn(99018),	-- Luredrop Lore
+			pn(100208),	-- Mercurial Materials
+			pn(99019),	-- Mycobloom Lore
+			pn(100206),	-- Ominous Materials
+			pn(99017),	-- Orbinid Lore
+			pn(99041),	-- Potent Potions
+			pn(98951),	-- Profession Phials
+			pn(99059),	-- Thaumaturgy
+			pn(99058),	-- Transmutation
+			pn(100207),	-- Volatile Materials
+		})),
+		n(QUESTS, {
 			q(84133, {	-- Alchemy Services Requested
+				["sourceQuests"] = { 84288 },	-- Crafting Orders: Alchemy
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228773),	-- Algari Alchemist's Notebook
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ALCHEMY_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ALCHEMY, 1 }} }, {
 				r(432962),	-- Algari Flask Cauldron
 				r(432963),	-- Algari Potion Cauldron
 				r(433087),	-- Formulated Courage
@@ -1136,10 +1181,15 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ALCHEMY_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.ALCHEMY),
 			},
 		}, {
 			i(228773),	-- Algari Alchemist's Notebook
+			q(83725, {	-- TWW Inscription Order: Alchemy
+				["name"] = "TWW Inscription Order: Alchemy",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222546 },	-- Algari Treatise on Alchemy
+			}),
 			q(83253, {	-- TWW Weekly Alchemy Knowledgepoint #1
 				["name"] = "TWW Weekly Alchemy Treasure #1",
 				["provider"] =  { "i", 225234 },	-- Alchemical Sediment
@@ -1150,115 +1200,158 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42788, {	-- Alchemy at Midnight
-				["timeline"] = { ADDED_12_0_0 },
+				i(263997),	-- Midnight Alchemist's Shop Sign (DECOR!)
+			}),
+			ach(62223),	-- Alchemy-on-Demand
+			ach(62239, {	-- Dedicated to the Craft: Alchemy
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42788,	-- Alchemy at Midnight
+					62223,	-- Alchemy-on-Demand
+				}},
 				["groups"] = {
+					title(741),	-- Thalassian Alchemist <Name>
 				},
 			}),
 		}),
-		--[[
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228773),	-- Algari Alchemist's Notebook
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ALCHEMY, 1 }}
 		},{
-			q(84133, {	-- Alchemy Services Requested
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-			}),
+			pn(107284),	-- Alchemical Mastery
+			pn(107105),	-- Brilliant Potioneer
+			pn(107209),	-- Clever Creations
+			pn(107102),	-- Cunning Potioneer
+			pn(107211),	-- Flask Abundance
+			pn(107214),	-- Fluent in Flasks
+			pn(107210),	-- Haranir Secrets
+			pn(107212),	-- Ingenious Libations
+			pn(107256),	-- Inspired Transmutation
+			pn(107254),	-- Metamorphic Mastery
+			pn(107106),	-- Path of Light
+			pn(107103),	-- Path of Void
+			pn(107208),	-- Phial Abundance
+			pn(107107),	-- Potion Prowess
+			pn(107104),	-- Prolific Potioneer - Light
+			pn(107101),	-- Prolific Potioneer - Void
+			pn(107281),	-- Recycle
+			pn(107283),	-- Reduce
+			pn(107282),	-- Reuse
+			pn(107213),	-- Sin'dorei Specialist
+			pn(107255),	-- Synthesis Synergy
+			pn(107257),	-- Transmutation Authority
 		})),
+		n(QUESTS, {
+			q(93690, {	-- Alchemy Services Requested
+				["sourceQuests"] = { 93724 },	-- Crafting Orders: Alchemy
+				["qgs"] = {
+					243357,	-- Camberon <Alchemy Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 47.0, 52.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
+				["isWeekly"] = true,
+				["groups"] = {
+					i(263454),	-- Thalassian Alchemist's Notebook
+				},
+			}),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ALCHEMY_KNOWLEDGE, 1 }} }, {
-				r(432962),	-- Algari Flask Cauldron
-				r(432963),	-- Algari Potion Cauldron
-				r(433087),	-- Formulated Courage
-				r(449938),	-- Gleaming Chaos
-				r(430624),	-- Gleaming Glory
-				r(432204),	-- Harmonious Horticulture
-				r(449573),	-- Mercurial Coalescence
-				r(449574),	-- Ominous Coalescence
-				r(430315),	-- Thaumaturgy
-				r(449575),	-- Volatile Coalescence
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ALCHEMY, 1 }} }, {
+				r(1230891),	-- Box of Rocks
+				r(1230874),	-- Cauldron of Sin'dorei Flasks
+				r(1230875),	-- Flask of Thalassian Resistance
+				r(1230870),	-- Haranir Phial of Finesse
+				r(1230858),	-- Light's Preservation
+				r(1230885),	-- Midnight Alchemist Stone
+				r(1230867),	-- Void-Shrouded Tincture
+				r(1230857),	-- Voidlight Potion Cauldron
+				r(1230856),	-- Wondrous Synergist
 			}),
 		}),
 		n(TREASURES, {
-			o(456021, {	-- Chemist's Purified Water
-				["coord"] = { 42.7, 55.1, HALLOWFALL },
-				["questID"] = 83844,
+			o(525962, {	-- Failed Experiment
+				["coord"] = { 32.8, 43.3, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 89118,
 				["groups"] = {
-					i(226269),	-- Chemist's Purified Water
+					i(238539),	-- Failed Experiment
 				},
 			}),
-			o(456018, {	-- Dark Apothecary's Vial
-				["coord"] = { 42.9, 57.3, AZJ_KAHET },
-				["questID"] = 83847,
+			o(525965, {	-- Freshly Plucked Peacebloom
+				["coord"] = { 49.1, 75.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89115,
 				["groups"] = {
-					i(226272),	-- Dark Apothecary's Vial
+					i(238536),	-- Freshly Plucked Peacebloom
 				},
 			}),
-			o(456025, {	-- Earthen Iron Powder
-				["coord"] = { 32.5, 60.3, DORNOGAL },
-				["questID"] = 83840,
+			o(525964, {	-- Measured Ladle
+				["coord"] = { 49.1, 23.6, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				["questID"] = 89116,
 				["groups"] = {
-					i(226265),	-- Earthen Iron Powder
+					i(238537),	-- Measured Ladle
 				},
 			}),
-			o(456022, {	-- Engraved Stirring Rod
-				["coord"] = { 64.9, 61.8, THE_RINGING_DEEPS },
-				["questID"] = 83843,
+			o(525963, {	-- Pristine Potion
+				["coord"] = { 47.8, 51.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89117,
 				["groups"] = {
-					i(226268),	-- Engraved Stirring Rod
+					i(238538),	-- Pristine Potion
 				},
 			}),
-			o(456024, {	-- Metal Dornogal Frame
-				["coord"] = { 57.7, 61.8, ISLE_OF_DORN },
-				["questID"] = 83841,
+			o(525969, {	-- Vial of Eversong Oddities
+				["coord"] = { 45.1, 44.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89111,
 				["groups"] = {
-					i(226266),	-- Metal Dornogal Frame
+					i(238532),	-- Vial of Eversong Oddities
 				},
 			}),
-			o(456019, {	-- Nerubian Mixing Salts
-				["coord"] = { 45.4, 13.2, NERUBAR },
-				["questID"] = 83846,
+			o(525967, {	-- Vial of Rootlands Oddities
+				["coord"] = { 34.8, 24.7, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89113,
 				["groups"] = {
-					i(226271),	-- Nerubian Mixing Salts
+					i(238534),	-- Vial of Rootlands Oddities
 				},
 			}),
-			o(456023, {	-- Reinforced Beaker
-				["coord"] = { 42.2, 24.1, THE_RINGING_DEEPS },
-				["questID"] = 83842,
+			o(525968, {	-- Vial of Voidstorm Oddities
+				["coord"] = { 41.9, 40.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89112,
 				["groups"] = {
-					i(226267),	-- Reinforced Beaker
+					i(238533),	-- Vial of Voidstorm Oddities
 				},
 			}),
-			o(456020, {	-- Sanctified Mortar and Pestle
-				["coord"] = { 41.7, 55.8, HALLOWFALL },
-				["questID"] = 83845,
+			o(525966, {	-- Vial of Zul'Aman Oddities
+				["coord"] = { 40.4, 51.1, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89114,
 				["groups"] = {
-					i(226270),	-- Sanctified Mortar and Pestle
+					i(238535),	-- Vial of Zul'Aman Oddities
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ALCHEMY_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.ALCHEMY),
 			},
 		}, {
-			i(228773),	-- Algari Alchemist's Notebook
-			q(83253, {	-- TWW Weekly Alchemy Knowledgepoint #1
-				["name"] = "TWW Weekly Alchemy Treasure #1",
-				["provider"] =  { "i", 225234 },	-- Alchemical Sediment
+			i(263454),	-- Thalassian Alchemist's Notebook
+			q(95127, {	-- MID Inscription Order: Alchemy
+				["name"] = "MID Inscription Order: Alchemy",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245755 },	-- Thalassian Treatise on Alchemy
 			}),
-			q(83255, {	-- TWW Weekly Alchemy Knowledgepoint #2
-				["name"] = "TWW Weekly Alchemy Treasure #2",
-				["provider"] = { "i", 225235} ,		-- Deepstone Crucible
+			q(93529, {	-- MID Weekly Alchemy Knowledgepoint #1
+				["name"] = "MID Weekly Alchemy Treasure #1",
+				["provider"] =  { "i", 259189 },	-- Aged Cruor
 			}),
-		})),--]]
+			q(93528, {	-- MID Weekly Alchemy Knowledgepoint #2
+				["name"] = "MID Weekly Alchemy Treasure #2",
+				["provider"] = { "i", 259188 } ,	-- Lightbloomed Spore Sample
+			}),
+		})),
 	})),
 })));

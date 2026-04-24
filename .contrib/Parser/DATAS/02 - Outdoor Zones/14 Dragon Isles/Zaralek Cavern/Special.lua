@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(SPECIAL, {
@@ -19,7 +20,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			i(204849, {	-- Ratcipe: Charitable Cheddar (RECIPE!)
-				["cost"] = { { "i", 204872, 30 }, },	-- 30x Ripped Recipe Scrap
+				["cost"] = { { "i", 204872, 30 } },	-- 30x Ripped Recipe Scrap
 			}),
 			o(398698, {	-- Squeaking Swiss
 				["coord"] = { 52.4, 26.8, ZARALEK_CAVERN },
@@ -31,6 +32,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(204872),	-- Ripped Recipe Scrap
 						},
 					}),
+				},
+			}),
+			n(205227, {	-- Tarasek Fighter
+				["description"] = "Not technically a rare but behaves like one in regards to certain drops. May require killing any active 'Sundered Flame Cleaver' NPCs to trigger a spawn after 10 minutes.",
+				["timeline"] = { ADDED_10_1_0 },
+				["coords"] = {
+					{ 45.4, 56.2, ZARALEK_CAVERN },
+					{ 46.6, 54.4, ZARALEK_CAVERN },
+					{ 47.8, 56.8, ZARALEK_CAVERN },
+					{ 46.2, 58.8, ZARALEK_CAVERN },
 				},
 			}),
 		}),

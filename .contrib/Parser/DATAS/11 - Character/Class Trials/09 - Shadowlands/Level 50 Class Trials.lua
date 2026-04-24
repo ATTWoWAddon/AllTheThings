@@ -82,7 +82,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 						i(153757),	-- Springrain Headpiece
 						i(153763),	-- Springrain Medallion
 						i(153759),	-- Springrain Spaulders
-						i(153748),	-- Springrain Cloak of Rage	--	changed cloak after 9.2.5
+						i(153748),	-- Springrain Cloak of Rage	-- changed cloak after 9.2.5
 						i(153754),	-- Springrain Tunic
 						i(153762),	-- Springrain Wrists
 						i(153756),	-- Springrain Grips

@@ -277,6 +277,11 @@ TBC_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = {
 			-- #endif
 		})),
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263654),	-- Draenei Holo-Projector Pedestal
+		r(1263663),	-- Draenei Transmitter
+		r(1263643),	-- Tempest Keep Cryo-Pod
+	})),
 	filter(MISC, {
 		r(30311),	-- Adamantite Grenade
 		r(30310),	-- Fel Iron Bomb
@@ -411,6 +416,11 @@ WRATH_ENGINEERING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"]
 		r(63770, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Reticulated Armor Webbing
 		r(63765, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Springy Arachnoweave
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1272688),	-- Home Defense Gadget
+		r(1272676),	-- Joybuzz's Joyful Wall of Trains
+		r(1272707),	-- Resizable All-Purpose Gear
+	})),
 	filter(MISC, {
 		r(56461),	-- Bladed Pickaxe
 		r(56468),	-- Box of Bombs
@@ -532,6 +542,10 @@ CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(84413),	-- De-Weaponized Mechanical Companion
 		r(84412),	-- Personal World Destroyer
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1261258),	-- Gilnean Problem Solver
+		r(1262340),	-- Small Gilnean Windmill
+	})),
 	filter(MISC, {
 		r(95707),	-- Big Daddy
 		r(95703),	-- Electrostatic Condenser
@@ -565,6 +579,13 @@ CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(84410),	-- Safety Catch Removal Kit
 	}),
 }));
+CLASSIC_CATA_ENGINEERING = appendGroups(CLASSIC_ENGINEERING,
+-- #if AFTER CATA
+CATA_ENGINEERING
+-- #else
+{}
+-- #endif
+);
 MOP_ENGINEERING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110403, {	-- Engineering (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
@@ -625,6 +646,10 @@ MOP_ENGINEERING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"
 	filter(BATTLE_PETS, {
 		r(127135),	-- Mechanical Pandaren Dragonling
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1261236),	-- Halfhill Cookpot
+		r(1263551),	-- Reconstructed Mogu Lightning Drill
+	})),
 	filter(GEMS, {
 		r(131211),	-- Flashing Tinker's Gear
 		r(131212),	-- Fractured Tinker's Gear
@@ -708,8 +733,16 @@ COMMON_DRAENOR_ENGINEERING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData
 	i(118493, {	-- Schematic: Didi's Delicate Assembly (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
 	}),
+	i(256962, {	-- Schematic: Draenei Stargazer's Telescope (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+		["timeline"] = { ADDED_11_2_7 },
+	}),
 	i(118480, {	-- Schematic: Findle's Loot-a-Rang (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+	}),
+	i(256964, {	-- Schematic: Frostwall Architect's Table (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
+		["timeline"] = { ADDED_11_2_7 },
 	}),
 	i(118495, {	-- Schematic: Hemet's Heartseeker (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
@@ -786,6 +819,12 @@ COMMON_DRAENOR_ENGINEERING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
 	}),
 }));
+LEGION_ENGINEERING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263319),	-- Dalaran Auto-Hammer
+		r(1263338),	-- Failed Failure Detection Pylon
+	})),
+}));
 BFA_ENGINEERING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	n(ARMOR, {
 		r(272062),	-- AZ3-R1-T3 Bionic Bifocals [Rank 1]
@@ -806,6 +845,11 @@ BFA_ENGINEERING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = {
 		r(269123),	-- Belt Enchant: Miniaturized Plasma Shield
 		r(255940),	-- Belt Enchant: Personal Space Amplifier
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1260349),	-- Deactivated Atomic Recalibrator
+		r(1260352),	-- Gnomish Tesla Mega-Coil
+		r(1260425),	-- Mechagon Miniature Artificial Sun
+	})),
 	filter(MISC, {
 		r(287279, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Thermo-Degradation
 		r(256154),	-- Deployable Attire Rearranger [Rank 1]
@@ -877,6 +921,10 @@ SL_ENGINEERING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(310504),	-- Grounded Ectoplasmic Specs
 		r(310509),	-- Reinforced Ectoplasmic Specs
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263240),	-- Cartel Xy Capture Crate
+		r(1263239),	-- Kyrian Anima Barrel
+	})),
 	filter(MISC, {
 		r(310493),	-- 50UL-TR4P
 		r(310486),	-- Bomb Bola Launcher
@@ -913,6 +961,10 @@ DF_ENGINEERING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(382383),	-- Quality-Assured Optics
 		r(382386),	-- Sentry's Stabilized Specs
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1259404),	-- Thaldraszus Telescope
+		r(1263237),	-- Titanic Tyrhold Fountain
+	})),
 	filter(MISC, {
 		r(382379),	-- Arclight Capacitor
 		r(382393),	-- Bottomless Stonecrust Ore Satchel
@@ -954,10 +1006,62 @@ TWW_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(447376),	-- Spelunker's Goggles
 		r(447377),	-- Tracker's Goggles
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1259778),	-- Replica Rumbling Wastes Drill Pod
+		r(1259724),	-- Schmancy Goblin String Lights
+	})),
 	filter(PROFESSION_EQUIPMENT, {
 		r(447332),	-- Bismuth Fueled Samophlange
 	}),
 	n(WEAPONS, {
 		r(447379),	-- 4UT0-41M3R
+	}),
+});
+MID_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	r(471007),	-- Midnight Engineering
+	r(1265670),	-- Artisan Engineer's Moxie
+	r(1265678),	-- Concentration
+	r(1265704),	-- Ingenuity
+	r(1265617),	-- Knowledge
+	r(1265603),	-- Multicraft
+	r(1265654),	-- Quality
+	r(471043),	-- Recraft Equipment
+	r(1229930),	-- Recycling
+	r(1265696),	-- Resourcefulness
+	r(1265686),	-- Skill
+	r(1265662),	-- Sparks
+	n(ARMOR, {
+		r(1229867),	-- Evercore Binding
+		r(1229868),	-- Evercore Chainguards
+		r(1229869),	-- Evercore Gear Weight
+		r(1229938),	-- Evercore Greaseplates
+		r(1229864),	-- Evercore Reconissance
+		r(1229863),	-- Evercore Shade
+		r(1229936),	-- Evercore Stichwraps
+		r(1229935),	-- Evercore Swiftfeet
+		r(1229937),	-- Evercore Turbochains
+		r(1229865),	-- Evercore Vision Guard
+		r(1229866),	-- Evercore Wrist Latch
+		r(1229862),	-- Evercore Zoomshroud
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(1229898),	-- Farstrider Clampers
+		r(1229900),	-- Farstrider Fabric Cutters
+		r(1229904),	-- Farstrider Hardhat
+		r(1229895),	-- Farstrider Hobbyist Rod
+		r(1229899),	-- Farstrider Rock Satchel
+		r(1229901),	-- Junker's Junk Visor
+		r(1229896),	-- Junker's Multitool
+	}),
+	filter(REAGENTS, {
+		r(1229858),	-- Consistent Cogwheel
+		r(1229859),	-- Flux Cogwheel
+		r(1229857),	-- Greased Cogwheel
+		r(1229856),	-- Perfected Cogwheel
+		r(1229755),	-- Song Gear
+		r(1229853),	-- Soul Sprocket
+	}),
+	n(WEAPONS, {
+		r(1282455),	-- Evercore Dome Dinger
 	}),
 });

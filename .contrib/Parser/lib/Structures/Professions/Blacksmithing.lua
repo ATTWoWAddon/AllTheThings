@@ -383,6 +383,8 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 	}),
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1261327),	-- Dalaran Runic Anvil
+		r(1272662),	-- Dalaran Sewer Gate
+		r(1272614),	-- Dalaran Sun Sconce
 	})),
 	filter(MISC, {
 		r(59405),	-- Cobalt Skeleton Key
@@ -501,6 +503,13 @@ CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"]
 		r(76293),	-- Stormforged Shield
 	}),
 }));
+CLASSIC_CATA_BLACKSMITHING = appendGroups(CLASSIC_BLACKSMITHING,
+-- #if AFTER CATA
+CATA_BLACKSMITHING
+-- #else
+{}
+-- #endif
+);
 COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	i(66100, {	-- Plans: Ebonsteel Belt Buckle (RECIPE!)
 		["cost"] = {{"i", PYRIUM, 5}},
@@ -1295,5 +1304,59 @@ TWW_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(450254),	-- Ironclaw Knuckles
 		r(450251),	-- Ironclaw Stiletto
 		r(450253),	-- Ironclaw Sword
+	}),
+});
+MID_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	r(471004),	-- Midnight Blacksmithing
+	r(1265668),	-- Artisan Blacksmith's Moxie
+	r(1265676),	-- Concentration
+	r(1265702),	-- Ingenuity
+	r(1265615),	-- Knowledge
+	r(1265594),	-- Multicraft
+	r(1265652),	-- Quality
+	r(471041),	-- Recraft Equipment
+	r(1265694),	-- Resourcefulness
+	r(1265684),	-- Skill
+	r(1265660),	-- Sparks
+	n(ARMOR, {
+		r(1229625),	-- Blood-Tempered Basinet
+		r(1229623),	-- Blood-Tempered Bracers
+		r(1229626),	-- Blood-Tempered Bulwark
+		r(1229628),	-- Blood-Tempered Chestplate
+		r(1229621),	-- Blood-Tempered Gauntlets
+		r(1229627),	-- Blood-Tempered Greatbelt
+		r(1229629),	-- Blood-Tempered Greaves
+		r(1229624),	-- Blood-Tempered Leggings
+		r(1229622),	-- Blood-Tempered Pauldrons
+	}),
+	filter(CONSUMABLES, {
+		r(1230760),	-- Refulgent Razorstone
+		r(1230764),	-- Refulgent Repair Hammer
+		r(1230759),	-- Refulgent Weightstone
+		r(1230758),	-- Refulgent Whetstone
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(1229606),	-- Thalassian Blacksmith's Hammer
+		r(1229611),	-- Thalassian Blacksmith's Toolbox
+		r(1229607),	-- Thalassian Leatherworker's Knife
+		r(1229612),	-- Thalassian Leatherworker's Toolset
+		r(1229613),	-- Thalassian Needle Set
+		r(1229609),	-- Thalassian Pickaxe
+		r(1229610),	-- Thalassian Sickle
+		r(1229608),	-- Thalassian Skinning Knife
+	}),
+	filter(REAGENTS, {
+		r(1230762),	-- Gloaming Alloy
+		r(1230761),	-- Refulgent Copper Ingot
+		r(1230763),	-- Sterling Alloy
+	}),
+	n(WEAPONS, {
+		r(1229619),	-- Dawnforged Edge
+		r(1229618),	-- Dawnforged Long Blade
+		r(1229620),	-- Dawnforged Ritual Knife
+		r(1229615),	-- Dawnforged Splitter
+		r(1229616),	-- Dawnforged War Mace
+		r(1229614),	-- Primalforged Heavy Axe
+		r(1229617),	-- Primalforged Knuckles
 	}),
 });

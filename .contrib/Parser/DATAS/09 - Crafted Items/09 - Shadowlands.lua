@@ -11,6 +11,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	i(183942),	-- Novice Crafter's Mark
 	i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
 	i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		o_repeated({	-- Arden Lumber
+			["maps"] = {
+				ARDENWEALD,
+				BASTION,
+				MALDRAXXUS,
+				REVENDRETH,
+			},
+			["groups"] = {
+				-- Objects
+				o(554661),	-- [Ardenweald]
+				o(553616),	-- [Bastion]
+				o(553646),	-- [Maldraxxus]
+				o(553804),	-- [Revendreth]
+				-- Drops
+				i(251772),	-- Arden Lumber
+			},
+		}),
+	})),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(187802, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Healing Potion
@@ -198,7 +217,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		i(186704, {["timeline"] = {ADDED_9_1_0}}),	-- Twilight Tea
 	}),
 	prof(ENCHANTING, {
-		spell(13262, {	-- Disenchant
+		header(HEADERS.Spell, 324750, {	-- Disenchant
 			i(172232),	-- Eternal Crystal
 			i(172231),	-- Sacred Shard
 			i(172230),	-- Soul Dust
@@ -269,6 +288,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(BATTLE_PETS, {
 			i(180208),	-- PHA7-YNX (PET!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258252),	-- Cartel Xy Capture Crate (DECOR!)
+			i(258240),	-- Kyrian Anima Barrel (DECOR!)
+		})),
 		filter(MISC, {
 			i(172915),	-- 50UL-TR4P
 			i(172902),	-- Bomb Bola Launcher
@@ -344,6 +367,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(COSMETIC, {
 			i(180755),	-- Fae Revel Masque
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258245),	-- Ardenweald Hanging Baskets (DECOR!)
+			i(258235),	-- Aspiring Soul's Chair (DECOR!)
+			i(258244),	-- Broker's Hex Table (DECOR!)
+			i(258250),	-- Cartel Ta Bookcase (DECOR!)
+			i(258242),	-- Hollow Night Fae Shrine (DECOR!)
+			i(258247),	-- Large Revendreth Storage Crate (DECOR!)
+			i(258239),	-- Tome of Maldraxxian Rituals (DECOR!)
+		})),
 		filter(GLYPHS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
 			i(190378, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Lupine
 			i(190380, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Vulpine
@@ -451,6 +483,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(COSMETIC, {
 			i(180760),	-- Crown of the Righteous
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(262663),	-- Kyrian Floating Lamp (DECOR!)
+			i(260699),	-- Maldraxxian Runic Tablet (DECOR!)
+		})),
 		filter(FINGER_F, {
 			i(173138),	-- Deadly Laestrite Band
 			i(173134),	-- Deadly Sinvyr Ring
@@ -629,6 +665,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 				i(172264),	-- Shadowscale Waistguard
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258238),	-- Maldraxxian Crate (DECOR!)
+			i(258248),	-- Margrave's Stitched Leather Rug (DECOR!)
+		})),
 		filter(MISC, {
 			i(168419),	-- Comfortable Rider's Barding
 			i(172346),	-- Desolate Armor Kit
@@ -673,7 +713,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(SKINNING, {
-		spell(8613, {	-- Skinning
+		header(HEADERS.Spell, 308569, {	-- Skinning (Shadowlands)
 			i(172094),	-- Callous Hide
 			i(172095),	-- Callous Hide Scraps
 			i(172089),	-- Desolate Leather
@@ -764,6 +804,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(COSMETIC, {
 			i(180752),	-- Pink Party Hat
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(264678),	-- Aspirant's Ringed Banner (DECOR!)
+			i(264713),	-- Heart of the Forest Banner (DECOR!)
+			i(258561),	-- Kyrian Aspirant's Rolled Cushion (DECOR!)
+		})),
 		filter(MISC, {
 			i(173191),	-- Heavy Shrouded Cloth Bandage
 			i(184480),	-- Lightless Silk Pouch

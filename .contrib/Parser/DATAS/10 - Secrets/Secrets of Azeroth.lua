@@ -5,11 +5,16 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 	readable = "Secrets of Azeroth",
 	constant = "SECRETS_OF_AZEROTH_HEADER",
 	icon = [[~_.asset("Holiday_SecretsAz")]],
---	eventID = EVENTS.SECRETS_OF_AZEROTH,	-- No longer needed as the event is always active now.
+	-- eventID = EVENTS.SECRETS_OF_AZEROTH,	-- No longer needed as the event is always active now.
 	text = {
 		en = "Secrets of Azeroth",
+		-- TODO: de = "",
 		es = "Secretos de Azeroth",
 		mx = "Secretos de Azeroth",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Тайны Азерота",
 		cn = "艾泽拉斯之秘",
 		tw = "艾澤拉斯秘聞",
@@ -21,6 +26,7 @@ COMMUNITY_CLUES_HEADER = createHeader({
 	icon = [[~_.asset("Holiday_SecretsAz")]],
 	text = {
 		en = "Community Clues",
+		cn = "社区线索",
 	},
 });
 -- TODO:
@@ -106,7 +112,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			}),
 			ach(18646, {	-- Whodunnit?
 				i(208152),	-- Pattie (MOUNT!)
-				title(519),	-- Honorary Preservationists (TITLE!)
+				title(519),	-- Honorary Preservationists
 				crit(60849, {	-- A Preservationist
 					["_quests"] = { 77203 },
 				}),
@@ -687,7 +693,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					o(408754, {	-- Reforged Titan Key
 						["coord"] = { 24.5, 60.7, THE_WAKING_SHORES },
 						["groups"] = {
-							i(208830),	--  Reforged Titan Key (QI!)
+							i(208830),	-- Reforged Titan Key (QI!)
 						},
 					}),
 					iensemble(208831),	-- Tyr's Titan Key
@@ -856,7 +862,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 50.1, 80.9, THALDRASZUS },
 							}))),
-							i(209795),	--  Piece of the Orb of Rathmus (QI!)
+							i(209795),	-- Piece of the Orb of Rathmus (QI!)
 						},
 					}),
 					o(409329, {	-- Buried Object
@@ -867,7 +873,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 46.6, 77.6, THALDRASZUS },
 							}))),
-							i(209797),	--  Piece of the Orb of Rathmus (QI!)
+							i(209797),	-- Piece of the Orb of Rathmus (QI!)
 						},
 					}),
 					o(409333, {	-- Buried Object
@@ -878,14 +884,14 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 								["provider"] = {"i",208092},	-- Torch of Pyrreth
 								["coord"] = { 48.6, 76.3, THALDRASZUS },
 							}))),
-							i(209799),	--  Piece of the Orb of Rathmus (QI!)
+							i(209799),	-- Piece of the Orb of Rathmus (QI!)
 						},
 					}),
 					i(208944, {	-- A Curious Orb (QI!)
 						["cost"] = {
-							{"i",209795,1},	--  Piece of the Orb of Rathmus (QI!)
-							{"i",209797,1},	--  Piece of the Orb of Rathmus (QI!)
-							{"i",209799,1},	--  Piece of the Orb of Rathmus (QI!)
+							{"i",209795,1},	-- Piece of the Orb of Rathmus (QI!)
+							{"i",209797,1},	-- Piece of the Orb of Rathmus (QI!)
+							{"i",209799,1},	-- Piece of the Orb of Rathmus (QI!)
 						},
 					}),
 				},
@@ -1069,12 +1075,12 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["coord"] = { 60.2, 58.7, THALDRASZUS },
 				["groups"] = {
 					n(210674, {	-- Tithris
-						i(209555),	--  Orb of Rathmus (QI!)
+						i(209555),	-- Orb of Rathmus (QI!)
 					}),
 					o(409120, {	-- Cache of Cosmic Mysteries
 						["coord"] = { 60.2, 58.7, THALDRASZUS },
 						["groups"] = {
-							i(208980),	--  Cache of Cosmic Curiosities (QI!)
+							i(208980),	-- Cache of Cosmic Curiosities (QI!)
 						},
 					}),
 				},

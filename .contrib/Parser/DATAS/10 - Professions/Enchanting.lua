@@ -1,18 +1,16 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_ENCHANTING_KNOWLEDGE = 2030;
-local TWW_ENCHANTING_KNOWLEDGE = 2787;
 root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
-		ach(18769),	-- Disenchantment IV
-		ach(18768),	-- Disenchantment III
-		ach(18767),	-- Disenchantment II
 		ach(18766),	-- Disenchantment I
-		ach(18871),	-- Enchantment IV
-		ach(18870),	-- Enchantment III
-		ach(18869),	-- Enchantment II
+		ach(18767),	-- Disenchantment II
+		ach(18768),	-- Disenchantment III
+		ach(18769),	-- Disenchantment IV
 		ach(18868),	-- Enchantment I
+		ach(18869),	-- Enchantment II
+		ach(18870),	-- Enchantment III
+		ach(18871),	-- Enchantment IV
 		ach(18785, {	-- Shattered Expectations
 			crit(61106, {	-- Crystalline Shatter
 				["providers"] = {
@@ -62,19 +60,19 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		}),
 		ach(18789, {	-- Simply Enchanting
 			crit(61136, {	-- Enchanted Thorium Bar
-				["cost"] = {{ "i", 12655, 20 }},	-- 20x Enchanted Thorium Bar
+				["cost"] = { { "i", 12655, 20 } },	-- 20x Enchanted Thorium Bar
 			}),
 			crit(61137, {	-- Enchanted Leather
-				["cost"] = {{ "i", 12810, 20 }},	-- 20x Enchanted Leather
+				["cost"] = { { "i", 12810, 20 } },	-- 20x Enchanted Leather
 			}),
 			crit(61138, {	-- Enchanted Elethium Bar
-				["cost"] = {{ "i", 172437, 20 }},	-- 20x Enchanted Elethium Bar
+				["cost"] = { { "i", 172437, 20 } },	-- 20x Enchanted Elethium Bar
 			}),
 			crit(61139, {	-- Enchanted Heavy Callous Hide
-				["cost"] = {{ "i", 172438, 20 }},	-- 20x Enchanted Heavy Callous Hide
+				["cost"] = { { "i", 172438, 20 } },	-- 20x Enchanted Heavy Callous Hide
 			}),
 			crit(61140, {	-- Enchanted Lightless Silk
-				["cost"] = {{ "i", 172439, 20 }},	-- 20x Enchanted Lightless Silk
+				["cost"] = { { "i", 172439, 20 } },	-- 20x Enchanted Lightless Silk
 			}),
 		}),
 	})),
@@ -487,6 +485,29 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				}),
 			}),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 }}
+		},{
+			pn(64135),	-- Adaptive
+			pn(64134),	-- Artistry
+			pn(64141),	-- Burning
+			pn(68401),	-- Draconic Disenchantment
+			pn(64140),	-- Earthen
+			pn(64143),	-- Enchantment
+			pn(64138),	-- Frozen
+			pn(68443),	-- Illusory Goods
+			pn(68402),	-- Insight of the Blue
+			pn(68441),	-- Inspired Devotion
+			pn(64133),	-- Magical Reinforcement
+			pn(64136),	-- Material Manipulation
+			pn(64142),	-- Primal
+			pn(68400),	-- Primal Extraction
+			pn(68442),	-- Resourceful Writ
+			pn(68444),	-- Rods and Wands
+			pn(68445),	-- Rods, Runes, and Ruses
+			pn(64139),	-- Sophic
+			pn(64137),	-- Wafting
+		})),
 		n(QUESTS, {
 			q(70360, {	-- Dragon Isles Enchanting
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Enchanting.",
@@ -505,7 +526,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 					{ 41.4, 61.0, OHNAHRAN_PLAINS },
 					{ 56.8, 75.6, OHNAHRAN_PLAINS },
 				},
-				["cost"] = {{ "i", 201601, 2 }},	-- 2x Runed Serevite Rod
+				["cost"] = { { "i", 201601, 2 } },	-- 2x Runed Serevite Rod
 				["_drop"] = { "g" },
 			}),
 			q(70251, {	-- Hidden Profession Master Enchanting
@@ -517,7 +538,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
+				["cost"] = { { "i", 191784, 1 } },	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["groups"] = {
 					i(190456),	-- Artisan's Mettle
@@ -530,7 +551,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["groups"] = {
 				i(198610),	-- Enchanter's Script
 			},
-		},{
+		}, {
 			------ Requires 25 Skill ------
 			q(66935, {	-- Crystal Quill Pens
 				["description"] = "Requires 25 Skill.",
@@ -578,8 +599,14 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 			q(72172, {	-- Essence, Shards, and Chromatic Dust
 				["description"] = "Requires 45 Skill.",
-				["provider"] = { "n", 193744 },	-- Soragosa
-				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["qgs"] = {
+					193744,	-- Soragosa
+					216267,	-- Enchanter Falrin Treeshaper <House of Shen'dralar>
+				},
+				["coords"] = {
+					{ 30.8, 61.4, VALDRAKKEN },
+					{ 48.6, 54.2, AMIRDRASSIL },
+				},
 			}),
 			q(72155, {	-- Spread the Enchantment
 				["description"] = "Requires 45 Skill.",
@@ -627,7 +654,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_ENCHANTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 } } }, {
 				r(389547),	-- Burning Devotion
 				r(391302),	-- Crystalline Shatter
 				r(389301),	-- Devotion of Avoidance
@@ -655,7 +682,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			o(380558, {	-- Enchanted Debris
 				["description"] = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
 				["questID"] = 70272,
-				["coord"] = { 57.5, 58.5, THE_WAKING_SHORES },
+				["coord"] = { 59.9, 57.0, THE_WAKING_SHORES },
 				["groups"] = {
 					i(201012),	-- Enchanted Debris
 				},
@@ -762,9 +789,9 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_ENCHANTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.ENCHANTING),
 			},
-		},{
+		}, {
 			i(198610),	-- Enchanter's Script
 			q(74110, {	-- DF Inscription Order: Enchanting
 				["name"] = "DF Inscription Order: Enchanting",
@@ -796,6 +823,37 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 }}
+		},{
+			pn(100001),	-- Accentuated Accessories
+			pn(100003),	-- Arathor Alterations
+			pn(100004),	-- Bolstered Breastplates
+			pn(99936),	-- Combat Crafts
+			pn(99999),	-- Cursed Chants
+			pn(99939),	-- Deceptive Decorations
+			pn(99890),	-- Designated Disenchanter
+			pn(100007),	-- Earthen Enhancements
+			pn(99940),	-- Ephemerals, Enrichments, and Equipment
+			pn(99887),	-- Epic Escalations
+			pn(100008),	-- Everlasting Enchantments
+			pn(99938),	-- Exquisite Equipment
+			pn(99934),	-- Finalized Finishers
+			pn(100002),	-- Fortified Flames
+			pn(100038),	-- Immaculate Ingenuity
+			pn(100037),	-- Magnificent Multicrafting
+			pn(99935),	-- Material Maestro
+			pn(100000),	-- Nerubian Novelties
+			pn(99933),	-- Optimal Oils
+			pn(99937),	-- Professional Production
+			pn(99888),	-- Rare Resourcing
+			pn(100039),	-- Resourceful Residue
+			pn(100040),	-- Supplementary Shattering
+			pn(100005),	-- Terrific Tools
+			pn(99998),	-- Tertiary Trivialities
+			pn(99889),	-- Uncommon Utilitarian
+			pn(100006),	-- Wondrous Weapons
+		})),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 219085 },	-- Nagad <Enchanting Trainer>
 			["coord"] = { 52.7, 71.1, DORNOGAL },
@@ -803,14 +861,14 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["groups"] = {
 				i(227667),	-- Algari Enchanter's Folio
 			},
-		},{
+		}, {
 			q(84086),	-- A Rare Necessity
 			q(84084),	-- Just a Pinch
 			q(84085),	-- The Power of Potential
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ENCHANTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 } } }, {
 				r(445378),	-- Algari Ingenuity
 				r(445403),	-- Authority of Fiery Resolve
 				r(445336),	-- Authority of Storms
@@ -908,9 +966,15 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ENCHANTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.ENCHANTING),
 			},
-		},{i(225230),
+		}, {
+			i(227667),	-- Algari Enchanter's Folio
+			q(83727, {	-- TWW Inscription Order: Enchanting
+				["name"] = "TWW Inscription Order: Enchanting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222550 },	-- Algari Treatise on Enchanting
+			}),
 			q(83258, {	-- TWW Weekly Enchanting Knowledgepoint #1
 				["name"] = "TWW Weekly Enchanting Treasure #1",
 				["provider"] =  { "i", 225231 },	-- Powdered Fulgurance
@@ -951,169 +1015,193 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42787, {	-- Enchanting at Midnight
-				["timeline"] = { ADDED_12_0_0 },
+				i(264000),	-- Midnight Enchanter's Shop Sign (DECOR!)
+			}),
+			ach(62233),	-- Enchanting-on-Demand
+			ach(62241, {	-- Dedicated to the Craft: Enchanting
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42787,	-- Enchanting at Midnight
+					62233,	-- Enchanting-on-Demand
+				}},
 				["groups"] = {
+					title(743),	-- Thalassian Enchanter <Name>
 				},
 			}),
 		}),
-		--[[
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 }}
+		},{
+			pn(107764),	-- Amani Augments
+			pn(107759),	-- Azerothian Arms
+			pn(107762),	-- Berserker Brawn
+			pn(107646),	-- Crystal Collector
+			pn(107649),	-- Disenchanting Delegate
+			pn(107648),	-- Dust Deliverer
+			pn(107769),	-- Elevating Equipment
+			pn(107766),	-- Eversong Empowerments
+			pn(107684),	-- Excellent Expendables
+			pn(107760),	-- Haranir Heightening
+			pn(107615),	-- Infinite Ingenuity
+			pn(107688),	-- Mastering Mirages
+			pn(107614),	-- Multicrafting Meticulously
+			pn(107757),	-- Nature's Novelties
+			pn(107687),	-- Outstanding Outfits
+			pn(107765),	-- Quel'Thalas Quality
+			pn(107686),	-- Reputable Rods
+			pn(107616),	-- Responsible Resources
+			pn(107647),	-- Shard Supplier
+			pn(107767),	-- Silvermoon's Spellpower
+			pn(107617),	-- Spellbound Shatterer
+			pn(107768),	-- Thalassian Talents
+			pn(107689),	-- Transitories, Tonics, and Tools
+			pn(107761),	-- Trollish Tools
+			pn(107758),	-- Worldsoul Wards
+			pn(107685),	-- Worthy Wands
+			pn(107763),	-- Zul'Aman Zeal
+		})),
 		n(QUESTS, sharedData({
-			["provider"] = { "n", 219085 },	-- Nagad <Enchanting Trainer>
-			["coord"] = { 52.7, 71.1, DORNOGAL },
+			["provider"] = { "n", 243349 },	-- Dolothos <Enchanting Trainer>
+			["coord"] = { 48.0, 53.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 			["groups"] = {
-				i(227667),	-- Algari Enchanter's Folio
+				i(263464),	-- Thalassian Enchanter's Folio
 			},
-		},{
-			q(84086),	-- A Rare Necessity
-			q(84084),	-- Just a Pinch
-			q(84085),	-- The Power of Potential
+		}, {
+			q(93699),	-- A Ray of Sunlight
+			q(93697),	-- Shimmering Melodies
+			q(93698),	-- Splintered Radiance
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ENCHANTING_KNOWLEDGE, 1 }} }, {
-				r(445378),	-- Algari Ingenuity
-				r(445403),	-- Authority of Fiery Resolve
-				r(445336),	-- Authority of Storms
-				r(445330),	-- Chant of Armored Speed
-				r(445395),	-- Concentration Concentrate
-				r(445333),	-- Crystalline Radiance
-				r(445388),	-- Cursed Haste
-				r(445396),	-- Defender's March
-				r(445367),	-- Gleeful Glamour - Blood Elf
-				r(445400),	-- Gleeful Glamour - Dark Iron Dwarf
-				r(445391),	-- Gleeful Glamour - Draenei
-				r(445402),	-- Gleeful Glamour - Dwarf
-				r(445362),	-- Gleeful Glamour - Gnome
-				r(445332),	-- Gleeful Glamour - Goblin
-				r(445377),	-- Gleeful Glamour - Highmountain Tauren
-				r(445352),	-- Gleeful Glamour - Human
-				r(445342),	-- Gleeful Glamour - Kul Tiran
-				r(445343),	-- Gleeful Glamour - Lightforged Draenei
-				r(445370),	-- Gleeful Glamour - Mag'har Orc
-				r(445357),	-- Gleeful Glamour - Mechagnome
-				r(445363),	-- Gleeful Glamour - Night Elf
-				r(445390),	-- Gleeful Glamour - Nightborne
-				r(445319),	-- Gleeful Glamour - Orc
-				r(445366),	-- Gleeful Glamour - Tauren
-				r(445326),	-- Gleeful Glamour - Troll
-				r(445350),	-- Gleeful Glamour - Undead
-				r(445356),	-- Gleeful Glamour - Void Elf
-				r(445329),	-- Gleeful Glamour - Vulpera
-				r(445397),	-- Gleeful Glamour - Worgen
-				r(445345),	-- Gleeful Glamour - Zandalari Troll
-				r(445318),	-- Oil of Beledar's Grace
-				r(445372),	-- Runed Ironclaw Rod
-				r(445355),	-- Scepter of Radiant Magics
-				r(445466),	-- Shatter Essence
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 } } }, {
+				r(1236057),	-- Enchant Boots - Lynx's Dexterity
+				r(1236069),	-- Enchant Chest - Mark of the Worldsoul
+				r(1236071),	-- Enchant Helm - Empowered Blessing of Speed
+				r(1236088),	-- Enchant Ring - Silvermoon's Alacrity
+				r(1236060),	-- Enchant Ring - Zul'jin's Mastery
+				r(1236091),	-- Enchant Shoulders - Silvermoon's Mending
+				r(1236064),	-- Enchant Tool - Amani Resourcefulness
+				r(1236077),	-- Enchant Tool - Haranir Finesse
+				r(1236092),	-- Enchant Tool - Sin'dorei Deftness
+				r(1236490),	-- Magister's Grand Focus
+				r(1236492),	-- Oil of Dawn
+				r(1236487),	-- Runed Brilliant Silver Rod
+				r(1235731),	-- Shatter Essence
 			}),
 		}),
 		n(TREASURES, {
-			o(456006, {	-- Animated Enchanting Dust
-				["coord"] = { 67.2, 65.9, THE_RINGING_DEEPS },
-				["questID"] = 83861,
+			o(525953, {	-- Enchanted Amani Mask
+				["coord"] = { 48.4, 22.9, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				["questID"] = 89100,
 				["groups"] = {
-					i(226287),	-- Animated Enchanting Dust
+					i(238548),	-- Enchanted Amani Mask
 				},
 			}),
-			o(456003, {	-- Book of Dark Magic
-				["coord"] = { 61.7, 22.0, NERUBAR },
-				["questID"] = 83864,
+			o(525952, {	-- Enchanted Sunfire Silk
+				["coord"] = { 40.2, 61.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89101,
 				["groups"] = {
-					i(226290),	-- Book of Dark Magic
+					i(238549),	-- Enchanted Sunfire Silk
 				},
 			}),
-			o(456004, {	-- Enchanted Arathi Scroll
-				["coord"] = { 48.6, 64.5, HALLOWFALL },
-				["questID"] = 83863,
+			o(525949, {	-- Entropic Shard
+				["coord"] = { 37.7, 65.3, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89104,
 				["groups"] = {
-					i(226289),	-- Enchanted Arathi Scroll
+					i(238552),	-- Entropic Shard
 				},
 			}),
-			o(456005, {	-- Essence of Holy Fire
-				["coord"] = { 40.1, 70.5, HALLOWFALL },
-				["questID"] = 83862,
+			o(525950, {	-- Everblazing Sunmote
+				["coord"] = { 60.8, 53.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89103,
 				["groups"] = {
-					i(226288),	-- Essence of Holy Fire
+					i(238551),	--Everblazing Sunmote
 				},
 			}),
-			o(456009, {	-- Grinded Earthen Gem
-				["coord"] = { 57.6, 61.5, ISLE_OF_DORN },
-				["questID"] = 83856,
+			o(525947, {	-- Loa-Blessed Dust
+				["coord"] = { 40.4, 51.1, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89106,
 				["groups"] = {
-					i(226284),	-- Grinded Earthen Gem
+					i(238554),	-- Loa-Blessed Dust
 				},
 			}),
-			o(456008, {	-- Silver Dornogal Rod
-				["coord"] = { 58.0, 56.9, DORNOGAL },
-				["questID"] = 83859,
+			o(525948, {	-- Primal Essence Orb
+				["coord"] = { 65.8, 50.2, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89105,
 				["groups"] = {
-					i(226285),	-- Silver Dornogal Rod
+					i(238553),	-- Primal Essence Orb
 				},
 			}),
-			o(456007, {	-- Soot-Coated Orb
-				["coord"] = { 44.6, 22.1, THE_RINGING_DEEPS },
-				["questID"] = 83860,
+			o(525951, {	-- Pure Void Crystal
+				["coord"] = { 35.5, 58.8, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 89102,
 				["groups"] = {
-					i(226286),	-- Soot-Coated Orb
+					i(238550),	-- Pure Void Crystal
 				},
 			}),
-			o(456002, {	-- Void Shard
-				["coord"] = { 57.3, 44.0, AZJ_KAHET },
-				["questID"] = 83865,
+			o(525946, {	-- Sin'dorei Enchanting Rod
+				["coord"] = { 63.5, 32.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89107,
 				["groups"] = {
-					i(226291),	-- Void Shard
+					i(238555),	-- Sin'dorei Enchanting Rod
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ENCHANTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.ENCHANTING),
 			},
-		},{i(225230),
-			q(83258, {	-- TWW Weekly Enchanting Knowledgepoint #1
-				["name"] = "TWW Weekly Enchanting Treasure #1",
-				["provider"] =  { "i", 225231 },	-- Powdered Fulgurance
+		}, {
+			i(263464),	-- Thalassian Enchanter's Folio
+			q(95129, {	-- MID Inscription Order: Enchanting
+				["name"] = "MID Inscription Order: Enchanting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245759 },	-- Thalassian Treatise on Enchanting
 			}),
-			q(83259, {	-- TWW Weekly Enchanting Knowledgepoint #2
-				["name"] = "TWW Weekly Enchanting Treasure #2",
-				["provider"] =  { "i", 225230 },	-- Crystalline Repository
+			q(93533, {	-- MID Weekly Enchanting Knowledgepoint #1
+				["name"] = "MID Weekly Enchanting Treasure #1",
+				["provider"] =  { "i", 259193 },	-- Lost Thalassian Vellum
 			}),
-			q(84290, {	-- TWW Weekly Enchanting Knowledgepoint #3
-				["name"] = "TWW Weekly Enchanting Disenchant #1",
+			q(93532, {	-- MID Weekly Enchanting Knowledgepoint #2
+				["name"] = "MID Weekly Enchanting Treasure #2",
+				["provider"] =  { "i", 259192 },	-- Voidstorm Ashes
+			}),
+			q(95048, {	-- MID Weekly Enchanting Knowledgepoint #3
+				["name"] = "MID Weekly Enchanting Disenchant #1",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84291, {	-- TWW Weekly Enchanting Knowledgepoint #4
-				["name"] = "TWW Weekly Enchanting Disenchant #2",
+			q(95049, {	-- MID Weekly Enchanting Knowledgepoint #4
+				["name"] = "MID Weekly Enchanting Disenchant #2",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84292, {	-- TWW Weekly Enchanting Knowledgepoint #5
-				["name"] = "TWW Weekly Enchanting Disenchant #3",
+			q(95050, {	-- MID Weekly Enchanting Knowledgepoint #5
+				["name"] = "MID Weekly Enchanting Disenchant #3",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84293, {	-- TWW Weekly Enchanting Knowledgepoint #6
-				["name"] = "TWW Weekly Enchanting Disenchant #4",
+			q(95051, {	-- MID Weekly Enchanting Knowledgepoint #6
+				["name"] = "MID Weekly Enchanting Disenchant #4",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84294, {	-- TWW Weekly Enchanting Knowledgepoint #7
-				["name"] = "TWW Weekly Enchanting Disenchant #5",
+			q(95052, {	-- MID Weekly Enchanting Knowledgepoint #7
+				["name"] = "MID Weekly Enchanting Disenchant #5",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84295, {	-- TWW Weekly Enchanting Knowledgepoint #8
-				["name"] = "TWW Weekly Enchanting Disenchant #6",
+			q(95053, {	-- MID Weekly Enchanting Knowledgepoint #8
+				["name"] = "MID Weekly Enchanting Disenchant #6",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227661 },	-- Gleaming Telluric Crystal
+				["provider"] =  { "i", 267655 },	-- Brimming Mana Shard
 			}),
-		})),--]]
+		})),
 	})),
 })));
 

@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(WORLD_QUESTS, sharedData({
 			["isWorldQuest"] = true,
 			["lvl"] = { 60 },
-		},{
+		}, {
 			q(59902),	-- A Curious Cache
 			q(59904),	-- A Curious Cache
 			q(59905),	-- A Curious Cache
@@ -247,11 +247,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["cost"] = { { "i", 180376, 1 } },	-- Amalgamation of Sin
 					["isDaily"] = true,
 					["groups"] = {
-						i(180279),	-- Sinstone Fragment (QI!)
-						i(180281),	-- Sinstone Fragment (QI!)
-						i(180282),	-- Sinstone Fragment (QI!)
-						i(180283),	-- Sinstone Fragment (QI!)
-						i(180284),	-- Sinstone Fragment (QI!)
+						o(353655, {	-- Sinstone Fragment
+							i(180279),	-- Sinstone Fragment (QI!)
+							i(180281),	-- Sinstone Fragment (QI!)
+							i(180282),	-- Sinstone Fragment (QI!)
+							i(180283),	-- Sinstone Fragment (QI!)
+							i(180284),	-- Sinstone Fragment (QI!)
+						}),
+						--
 						i(183730),	-- Sinstone-Studded Greathelm
 					},
 				}),

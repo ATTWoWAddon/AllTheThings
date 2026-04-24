@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 -- Blizzard removed the 10 man Quest / Quest Item, but not the necks themselves in Wrath Classic.
 -- They were instead moved to Heroic+ dungeon bosses.
 -- #if ANYCLASSIC
@@ -32,6 +33,7 @@ ExportDB.OnUpdateDB.DEDICATED_25M = [[~function(t)
 	end
 end]];
 -- #endif
+
 local CLASSIC_ONLY_DB_FUNC = function(func)
 	-- #IF ANYCLASSIC
 	return func
@@ -93,7 +95,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 			n(206712, {	-- Valiance
 				["description"] = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
 				["questID"] = 76378,
-				["cost"] = {{ "i", 208068, 1 }},	-- 1x Rotten Delicious
+				["cost"] = { { "i", 208068, 1 } },	-- 1x Rotten Delicious
 				["groups"] = {
 					i(206585),	-- Valiance (MOUNT!)
 				},
@@ -372,7 +374,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 					ach(574),	-- Kel'Thuzad's Defeat (10 player)
 					ach(2184, {	-- Just Can't Get Enough (10 player)
 						["cr"] = 16428,	-- Unstoppable Abomination
-						-- #if NOT ANYCLASSIC
+						-- #if AFTER MOP
 						["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 						-- #endif
 					}),
@@ -388,6 +390,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 		}),
 	},
 });
+
 -- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
 local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 	n(ZONE_DROPS, {
@@ -554,10 +557,11 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			i(39277),	-- Sealing Ring of Grobbulus
 		}),
 		e(1612, {	-- Gluth
-			-- #if NOT ANYCLASSIC
 			["sym"] = {
 				{"select","instanceID",754},{"pop"},	-- Naxx
+				-- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
 				{"where","difficultyID",3},		-- 10 Difficulty
+				-- #endif
 				{"extract","encounterID"},		-- Extract Encounters
 				{"not","encounterID",
 					1612,	-- Not Gluth
@@ -570,145 +574,6 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 					93030,	-- Giant Bone Spider (PET!)
 				},
 			},
-			-- #else
-			-- Leaving this duplication for Classic because it doesn't support the 'extract' symlink command
-			["groups"] = {
-				i(40610),	-- Chestguard of the Lost Conqueror
-				i(40611),	-- Chestguard of the Lost Protector
-				i(40612),	-- Chestguard of the Lost Vanquisher
-				i(40619),	-- Leggings of the Lost Conqueror
-				i(40620),	-- Leggings of the Lost Protector
-				i(40621),	-- Leggings of the Lost Vanquisher
-				i(40622),	-- Spaulders of the Lost Conqueror
-				i(40623),	-- Spaulders of the Lost Protector
-				i(40624),	-- Spaulders of the Lost Vanquisher
-				i(39394),	-- Charmed Cierge
-				i(39393),	-- Claymore of Ancient Power
-				i(39245),	-- Demise
-				i(39255),	-- Staff of the Plague Beast
-				i(39256),	-- Sulfur Stave
-				i(39221),	-- Wraith Spear
-				i(39271),	-- Blade of Dormant Memories
-				i(39200),	-- Grieving Spellblade
-				i(39270),	-- Hatestrike
-				i(39281),	-- Infection Repulser
-				i(39140),	-- Knife of Incision
-				i(39226),	-- Maexxna's Femur
-				i(39344),	-- Slayer of the Lifeless
-				i(39291),	-- Torment of the Banished
-				i(39296),	-- Accursed Bow of the Elite
-				i(39233),	-- Aegis of Damnation
-				i(39276),	-- The Skull of Ruin
-				i(39311),	-- Scepter of Murmuring Spirits
-				i(39199),	-- Watchful Eye
-				i(39294),	-- Arc-Scorched Helmet
-				i(39295),	-- Cowl of Sheet Lightning
-				i(39260),	-- Helm of the Corrupted Mind
-				i(39240),	-- Noth's Curse
-				i(39395),	-- Thane's Tainted Greathelm
-				i(39246),	-- Amulet of Autopsy
-				i(39282),	-- Bone-Linked Amulet
-				i(39146),	-- Collar of Dissolution
-				i(39232),	-- Pendant of Lost Vocations
-				i(39392),	-- Veiled Amulet of Life
-				i(39267),	-- Abomination Shoulderblades
-				i(39198),	-- Frostblight Pauldrons
-				i(39310),	-- Mantle of the Extensive Mind
-				i(39284),	-- Miasma Mantle
-				i(39397),	-- Pauldrons of Havoc
-				i(39274),	-- Retcher's Shoulderpads
-				i(39249),	-- Shoulderplates of Bloodshed
-				i(39237),	-- Spaulders of Resumed Battle
-				i(39230),	-- Spaulders of the Monstrosity
-				i(39225),	-- Cloak of Armed Strife
-				i(39297),	-- Cloak of Darkening
-				i(39241),	-- Dark Shroud of the Scourge
-				i(39272),	-- Drape of Surgery
-				i(39239),	-- Chestplate of the Risen Soldier
-				i(39188),	-- Chivalric Chestguard
-				i(39259),	-- Fungi-Stained Coverings
-				i(39396),	-- Gown of Blaumeux
-				i(39391),	-- Heinous Mail Chestguard
-				i(39242),	-- Robes of Hoarse Breaths
-				i(39386),	-- Tunic of Dislocation
-				i(39248, {	-- Tunic of the Lost Pack
-					-- #if ANYCLASSIC
-					["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
-					-- #endif
-				}),
-				i(39278),	-- Bands of Anxiety
-				i(39235),	-- Bone-Framed Bracers
-				i(39195),	-- Bracers of Lost Sentiments
-				i(39247),	-- Cuffs of Dark Shadows
-				i(39307),	-- Iron Rings of Endurance
-				i(39252),	-- Preceptor's Bindings
-				i(39283),	-- Putrescent Bands
-				i(39390),	-- Resurgent Phantom Bindings
-				i(39275),	-- Contagion Gloves
-				i(39262, {	-- Gauntlets of Combined Strength
-					-- #if ANYCLASSIC
-					["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
-					-- #endif
-				}),
-				i(39197),	-- Gauntlets of the Master
-				i(39192),	-- Gloves of Dark Gestures
-				i(39243),	-- Handgrips of the Foredoomed
-				i(39285),	-- Handgrips of Turmoil
-				i(39306),	-- Plated Gloves of Relief
-				i(39299),	-- Rapid Attack Gloves
-				i(39194),	-- Rusted-Link Spiked Gauntlets
-				i(39228),	-- Web Cocoon Grips
-				i(39190),	-- Agonal Sash
-				i(39279),	-- Blistered Belt of Decay
-				i(39308),	-- Girdle of Lenience
-				i(39345),	-- Girdle of the Ascended Phantom
-				i(39251),	-- Necrogenic Belt
-				i(39216),	-- Sash of Mortal Desire
-				i(39379),	-- Spectral Rider's Girdle
-				i(39261),	-- Tainted Girdle of Mending
-				i(39298),	-- Waistguard of the Tutor
-				i(39217),	-- Avenging Combat Leggings
-				i(39293),	-- Blackened Legplates of Feugen
-				i(39263, {	-- Dissevered Leggings
-					-- #if ANYCLASSIC
-					["OnUpdate"] = [[function(t) if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
-					-- #if BEFORE 8.0.1
-					["description"] = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.",
-					-- #endif
-					-- #elseif BEFORE 8.0.1
-					["description"] = "This item was originally unavailable until Patch 8.0.1 after the AllTheThings Discord reported it missing from the Patchwerk loot table. Interestingly enough, its absense triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
-					-- #endif
-					["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
-				}),
-				i(39224),	-- Leggings of Discord
-				i(39280),	-- Leggings of Innumerable Barbs
-				i(39309),	-- Leggings of the Instructor
-				i(39258),	-- Legplates of Inescapable Death
-				i(39191),	-- Splint-Bound Leggings
-				i(39189),	-- Boots of Persistence
-				i(39215),	-- Boots of the Follower
-				i(39196),	-- Boots of the Worshiper
-				i(39234),	-- Plague-Impervious Boots
-				i(39139),	-- Ravaging Sabatons
-				i(39369),	-- Sabatons of Deathlike Gloom
-				i(39254),	-- Saltarello Shoes
-				i(39273),	-- Sullen Cloth Boots
-				i(39236),	-- Trespasser's Boots
-				i(39193),	-- Band of Neglected Pleas
-				i(39141),	-- Deflection Band
-				i(39250),	-- Band of Holy Cleansing
-				i(39244),	-- Ring of the Fated
-				i(39277),	-- Sealing Ring of Grobbulus
-				i(39389),	-- Signet of the Malevolent
-				i(39231),	-- Timeworn Silken Band
-				i(39229),	-- Embrace of the Spider
-				i(39257),	-- Loatheb's Shadow
-				i(39292),	-- Repelling Charge
-				i(39388),	-- Spirit-World Glass
-			},
-			-- #endif
 		}),
 		e(1613, {	-- Thaddius
 			i(40619),	-- Leggings of the Lost Conqueror
@@ -1020,7 +885,7 @@ local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_N
 					ach(575),	-- Kel'Thuzad's Defeat (25 player)
 					ach(2185, {	-- Just Can't Get Enough (25 player)
 						["cr"] = 16428,	-- Unstoppable Abomination
-						-- #if NOT ANYCLASSIC
+						-- #if AFTER MOP
 						["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 						-- #endif
 					}),
@@ -1036,6 +901,7 @@ local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_N
 		}),
 	},
 });
+
 local NAXX_25MAN_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL;
 -- #if NAXX_10MAN_DROPS_25MAN_LOOT
 -- In Wrath Classic, Blizzard decided it would be a good idea to make 25 man loot drop in 10 man after Ulduar was released. Really stupid idea, but here we are.
@@ -1409,10 +1275,11 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 			e(1612, {	-- Gluth
 				["creatureID"] = 15932,	-- Gluth
 				["lore"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
-				-- #if NOT ANYCLASSIC
 				["sym"] = {
 					{"select","instanceID",754},{"pop"},	-- Naxx
+					-- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
 					{"where","difficultyID",4},		-- 25 Difficulty
+					-- #endif
 					{"extract","encounterID"},		-- Extract Encounters
 					{"not","encounterID",
 						1612,	-- Not Gluth
@@ -1425,187 +1292,6 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 						93030,	-- Giant Bone Spider (PET!)
 					},
 				},
-				-- #else
-				-- Leaving this duplication for Classic because it doesn't support the 'extract' symlink command
-				["groups"] = {
-					i(40625),	-- Breastplate of the Lost Conqueror
-					i(40626),	-- Breastplate of the Lost Protector
-					i(40627),	-- Breastplate of the Lost Vanquisher
-					i(40634),	-- Legplates of the Lost Conqueror
-					i(40635),	-- Legplates of the Lost Protector
-					i(40636),	-- Legplates of the Lost Vanquisher
-					i(40637),	-- Mantle of the Lost Conqueror
-					i(40638),	-- Mantle of the Lost Protector
-					i(40639),	-- Mantle of the Lost Vanquisher
-					i(40343),	-- Armageddon
-					i(40208),	-- Cryptfiend's Bite
-					i(40348),	-- Damnation
-					i(40280),	-- Origin of Nightmares
-					i(40300),	-- Spire of Sunset
-					i(39758),	-- The Jawbone
-					i(40233),	-- The Undeath Carrier
-					i(40189),	-- Angry Dread
-					i(40345),	-- Broken Promise
-					i(40336),	-- Life and Death
-					i(40264),	-- Split Greathammer
-					i(40239),	-- The Hand of Nerub
-					i(40244),	-- The Impossible Dream
-					i(40281),	-- Twilight Mist
-					i(39714),	-- Webbed Death
-					i(39730),	-- Widow's Fury
-					i(39763),	-- Wraith Strike
-					i(40265),	-- Arrowsong
-					i(40245),	-- Fading Glow
-					i(40346),	-- Final Voyage
-					i(39712),	-- Gemmed Wand of the Nerubians
-					i(40284),	-- Plague Igniter
-					i(40335),	-- Touch of Horror
-					i(40266),	-- Hero's Surrender
-					i(39716),	-- Shield of Assimilation
-					i(40192),	-- Accursed Spine
-					i(39766),	-- Matriarch's Spawn
-					i(40273),	-- Surplus Limb
-					i(40350),	-- Urn of Lost Memories
-					i(40296),	-- Cover of Silence
-					i(40247),	-- Cowl of Innocent Delight
-					i(39768),	-- Cowl of the Perished
-					i(40287),	-- Cowl of Vanity
-					i(40298),	-- Faceguard of the Succumbed
-					i(39732),	-- Faerlina's Madness
-					i(39723),	-- Fire-Scorched Greathelm
-					i(40339),	-- Gothik's Cowl
-					i(40304),	-- Headpiece of Fungal Bloom
-					i(39760),	-- Helm of Diminished Pride
-					i(40235),	-- Helm of Pilgrimage
-					i(40344),	-- Helm of the Grave
-					i(40340),	-- Helm of Unleashed Energy
-					i(40328),	-- Helm of Vital Protection
-					i(40329),	-- Hood of the Exodus
-					i(40334),	-- Burdened Shoulderplates
-					i(39725),	-- Epaulets of the Grieving Servant
-					i(40063),	-- Mantle of Shattered Kinship
-					i(40286),	-- Mantle of the Corrupted
-					i(40351),	-- Mantle of the Fatigued Sage
-					i(39719),	-- Mantle of the Locusts
-					i(40299),	-- Pauldrons of the Abandoned
-					i(39704),	-- Pauldrons of Unnatural Death
-					i(40185),	-- Shoulderguards of Opportunity
-					i(40315),	-- Shoulderpads of Secret Arts
-					i(40305),	-- Spaulders of Egotism
-					i(40288),	-- Spaulders of Incoherence
-					i(40289),	-- Sympathetic Amice
-					i(40203),	-- Breastplate of Tormented Rage
-					i(40210),	-- Chestguard of Bitter Charms
-					i(40279),	-- Chestguard of the Exhausted
-					i(40319),	-- Chestpiece of Suspicion
-					i(39724),	-- Cult's Chestguard
-					i(40062),	-- Digested Silken Robes
-					i(40283),	-- Fallout Impervious Tunic
-					i(40234),	-- Heigan's Putrid Vestments
-					i(40061),	-- Quivering Tunic
-					i(40602),	-- Robes of Mutation
-					i(40277),	-- Tunic of Indulgence
-					i(40193),	-- Tunic of Masked Suffering
-					i(39756),	-- Tunic of Prejudice
-					i(39767),	-- Undiminished Battleplate
-					i(40249),	-- Vest of Vitality
-					i(40332),	-- Abetment Bracers
-					i(39702),	-- Arachnoid Gold Band
-					i(40198),	-- Bands of Impurity
-					i(40209),	-- Bindings of the Decrepit
-					i(39764),	-- Bindings of the Hapless Prey
-					i(40338),	-- Bindings of Yearning
-					i(40274),	-- Bracers of Liberation
-					i(39729),	-- Bracers of the Tyrant
-					i(40306),	-- Bracers of the Unholy Knight
-					i(40330),	-- Bracers of Unrelenting Attack
-					i(39731),	-- Punctilious Bindings
-					i(39765),	-- Sinner's Bindings
-					i(40282),	-- Slime Stream Bands
-					i(39722),	-- Swarm Bindings
-					i(40186),	-- Thrusting Bands
-					i(40302),	-- Benefactor's Gauntlets
-					i(39726),	-- Callous-Hearted Gauntlets
-					i(39718),	-- Corpse Scarab Handguards
-					i(40261),	-- Crude Discolored Battlegrips
-					i(39727),	-- Dislocating Handguards
-					i(40316),	-- Gauntlets of Guiding Touch
-					i(40188),	-- Gauntlets of the Disobedient
-					i(40262),	-- Gloves of Calculated Risk
-					i(40349),	-- Gloves of Peaceful Death
-					i(40238),	-- Gloves of the Dancing Bear
-					i(40197),	-- Gloves of the Fallen Wizard
-					i(39733),	-- Gloves of Token Respect
-					i(40242),	-- Grotesque Handgrips
-					i(39703),	-- Rescinding Grips
-					i(40303),	-- Wraps of the Persecuted
-					i(40347),	-- Zeliek's Gauntlets
-					i(39759),	-- Ablative Chitin Girdle
-					i(39735),	-- Belt of False Dignity
-					i(40200),	-- Belt of Potent Chanting
-					i(40260),	-- Belt of the Tortured
-					i(40301),	-- Cincture of Polarity
-					i(40275),	-- Depraved Linked Belt
-					i(40263),	-- Fleshless Girdle
-					i(40278),	-- Girdle of Chivalry
-					i(40317),	-- Girdle of Razuvious
-					i(40272),	-- Girdle of the Gambit
-					i(40241),	-- Girdle of Unity
-					i(40271),	-- Sash of Solitude
-					i(39721),	-- Sash of the Parlor
-					i(40341),	-- Shackled Cinch
-					i(40205),	-- Stalk-Skin Belt
-					i(39762),	-- Torn Web Wrapping
-					i(40259),	-- Waistguard of Divine Grace
-					i(40285),	-- Desecrated Past
-					i(40060),	-- Distorted Limbs
-					i(40240),	-- Greaves of Turbulence
-					i(39761),	-- Infectious Skitterer Leggings
-					i(39720),	-- Leggings of Atrophy
-					i(40201),	-- Leggings of Colossal Strides
-					i(40331),	-- Leggings of Failed Escape
-					i(40333),	-- Leggings of Fleeting Moments
-					i(40352),	-- Leggings of Voracious Shadows
-					i(40204),	-- Legguards of the Apostle
-					i(40196),	-- Legguards of the Undisturbed
-					i(40318),	-- Legplates of Double Strikes
-					i(40294),	-- Riveted Abomination Leggings
-					i(39734),	-- Atonement Greaves
-					i(40246),	-- Boots of Impetuous Ideals
-					i(40269),	-- Boots of Persuasion
-					i(40270),	-- Boots of Septic Wounds
-					i(40184),	-- Crippled Treads
-					i(39701),	-- Dawnwalkers
-					i(40237),	-- Eruption-Scarred Boots
-					i(40320),	-- Faithful Steel Sabatons
-					i(40243),	-- Footwraps of Vile Deceit
-					i(39717),	-- Inexorable Sabatons
-					i(40206),	-- Iron-Spring Jumpers
-					i(40187),	-- Poignant Sabatons
-					i(40297),	-- Sabatons of Endurance
-					i(39706),	-- Sabatons of Sudden Reprisal
-					i(40236),	-- Serene Echoes
-					i(40325),	-- Bindings of the Expansive Mind
-					i(40191, {	-- Libram of Radiance
-						["timeline"] = { REMOVED_5_0_4 },
-					}),
-					i(40337, {	-- Libram of Resurgence
-						["timeline"] = { REMOVED_5_0_4 },
-					}),
-					i(40268, {	-- Libram of Tolerance
-						["timeline"] = { REMOVED_5_0_4 },
-					}),
-					i(40321, {	-- Idol of the Shooting Star
-						["timeline"] = { REMOVED_5_0_4 },
-					}),
-					i(39757, {	-- Idol of Worship
-						["timeline"] = { REMOVED_5_0_4 },
-					}),
-					i(40322, {	-- Totem of Dueling
-						["timeline"] = { REMOVED_5_0_4 },
-					}),
-				},
-				-- #endif
 			}),
 			e(1613, {	-- Thaddius
 				["creatureID"] = 15928,	-- Thaddius
@@ -1686,6 +1372,7 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 -- Shared 10/25 Man Content
 -- #if AFTER 5.1.0
 local NAXX_SHARED_CONTENT = d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
+	["description"] = "With the release of Defense Protocol Alpha, loot that originally dropped in 10 man Naxx was moved to the DPA level difficulty dungeons and 10 man Naxx itself was upgraded to drop its 25 man loot instead.",
 	["lvl"] = lvlsquish(80, 80, 30),
 	["groups"] = {
 		-- #if NAXX_10MAN_DROPS_25MAN_LOOT
@@ -1766,6 +1453,9 @@ local DEATHS_BARGAINING_CHIP = 206576;
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 inst(754, {	-- Naxxramas
+	-- #if AFTER 10.1.5
+	["description"] = "Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",
+	-- #endif
 	["mapID"] = NAXXRAMAS,
 	["coords"] = {
 		{ 87.4, 51.1, DRAGONBLIGHT },
@@ -1846,37 +1536,37 @@ inst(754, {	-- Naxxramas
 						},
 					}),
 					header(HEADERS.Spell, 413989, {	-- Mutually Beneficial Transactions
-						["description"] = "1. Kill all bosses in Construct Quarter, and walk back to the entrance of The Halls of Reanimation.\n\n2. Walk up the slope to the platform on left side, and you should see two Grapple Point on two ledges to the left side. Grapple to the southern ledge.\n\n3. Speed-jump (Burning Rush/Speed potion) to the platform northeast of the ledge, and position yourself such that you are facing the corresponding platform to the northen ledge. Said platform is connected to a wall structure with two windows on the top. The left window ledge is the location of the next grappling point. Grapple up to it.\n\n4. Jump down to the brown ledge following the wall in a northeastern direction and around the corner, then over the skull on the wall, and back in a southeastern direction. The next grapple point is across the gap to a window ledge on left side, grapple to it.\n\n5. Follow the ledge in a southwestern direction and around the corner. You should see two pipe ends on the wall in front of you, the next grappling point on the left pipe. Grapple to it.\n\n6. Facing the position you grappled from, you should see Zackett Skullsmash on a window ledge. Jump down to the NPC.\n\n7. Use Stratholme Holy Water on Zackett Skullsmash and accept the quest Inconvenience Fee. You should have all required items on you and be able to turn it in immediatelly. This unlocks Zackett Skullsmah on an account-wide basis, and the Goblin will move to the central ring.\n\n8. You can safely get down by jumping down to the ledge above the entrance to the room, and leave through the Naxxramas Portal located where you killed Thaddius.\n\n",
+						["description"] = "1. Kill all bosses in Construct Quarter, and walk back to the entrance of The Halls of Reanimation.\n\n2. Walk up the slope to the platform on left side, and you should see two Grapple Point on two ledges to the left side. Grapple to the southern ledge.\n\n3. Speed-jump (Burning Rush/Speed potion) to the platform northeast of the ledge, and position yourself such that you are facing the corresponding platform to the northen ledge. Said platform is connected to a wall structure with two windows on the top. The left window ledge is the location of the next grappling point. Grapple up to it.\n\n4. Jump down to the brown ledge following the wall in a northeastern direction and around the corner, then over the skull on the wall, and back in a southeastern direction. The next grapple point is across the gap to a window ledge on left side, grapple to it.\n\n5. Follow the ledge in a southwestern direction and around the corner. You should see two pipe ends on the wall in front of you, the next grappling point on the left pipe. Grapple to it.\n\n6. Facing the position you grappled from, you should see Zackett Skullsmash on a window ledge. Jump down to the NPC.\n\n7. Use Stratholme Holy Water on Zackett Skullsmash and accept the quest Inconvenience Fee. You should have all required items on you and be able to turn it in immediately. This unlocks Zackett Skullsmah on an account-wide basis, and the Goblin will move to the central ring.\n\n8. You can safely get down by jumping down to the ledge above the entrance to the room, and leave through the Naxxramas Portal located where you killed Thaddius.\n\n",
 						["groups"] = {
 							n(206572, {	-- Zackett Skullsmash
 								["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 								["groups"] = {
 									i(206573, {	-- Dented Raider's Belt
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206609),	-- Lamented Crusader's Belt
 										},
 									}),
 									i(206575, {	-- Dented Raider's Boots
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(10402),	-- Blackened Defias Boots
 											i(206611),	-- Lamented Crusader's Boots
 											i(7187),	-- VanCleef's Boots
-										--	i(4660),	-- Walking Boots					Added to original Source in 10.1.7
+											-- i(4660),	-- Walking Boots					Added to original Source in 10.1.7
 										},
 									}),
 									i(206571, {	-- Dented Raider's Bracers
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206607),	-- Lamented Crusader's Bracers
 										},
 									}),
 									i(206570, {	-- Dented Raider's Chestpiece
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206606),	-- Lamented Crusader's Chestpiece
@@ -1884,32 +1574,32 @@ inst(754, {	-- Naxxramas
 										},
 									}),
 									i(206572, {	-- Dented Raider's Gauntlets
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206608),	-- Lamented Crusader's Gauntlets
-										--	i(1944),	-- Metalworking Gloves				Added to original Source in 10.1.7
-										--	i(1945),	-- Woodworking Gloves				Added to original Source in 10.1.7
+											-- i(1944),	-- Metalworking Gloves				Added to original Source in 10.1.7
+											-- i(1945),	-- Woodworking Gloves				Added to original Source in 10.1.7
 										},
 									}),
 									i(206568, {	-- Dented Raider's Helmet
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206604),	-- Lamented Crusader's Helmet
 										},
 									}),
 									i(206574, {	-- Dented Raider's Leggings
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
-										--	i(1943),	-- Goblin Mail Leggings				Added to original Source in 10.1.7
-										--	i(2978),	-- Veteran Leggings					-- Likely added back. Add when confirmed
+											-- i(1943),	-- Goblin Mail Leggings				Added to original Source in 10.1.7
+											-- i(2978),	-- Veteran Leggings					-- Likely added back. Add when confirmed
 											i(206610),	-- Lamented Crusader's Leggings
 										},
 									}),
 									i(206569, {	-- Dented Raider's Spaulders
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206605),	-- Lamented Crusader's Spaulders
@@ -1917,32 +1607,32 @@ inst(754, {	-- Naxxramas
 									}),
 									i(206771, {	-- Pattern: Cursed Cloth (RECIPE!)
 										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206772, {	-- Pattern: Languished Leather (RECIPE!)
 										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206773, {	-- Pattern: Scourged Scales (RECIPE!)
 										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206774, {	-- Plans: Undeath Metal (RECIPE!)
 										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206579, {	-- Phylacterweave
 										-- Dont symlink it Dented tokens, makes it too spammy
 										["description"] = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
 									}),
 									i(206565, {	-- Plagued Grain (TOY!)
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 15 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 15 } },
 									}),
 									i(208068, {	-- Rotten Delicious
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 30 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 30 } },
 									}),
 									i(206577, {	-- Slime-Covered Scroll
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 12 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 12 } },
 										["groups"] = {
 											i(206552),	-- Ancient Design: Frostwyrm's Frigid Stare (RECIPE!)
 											i(206551),	-- Ancient Design: Frostwyrm's Icy Gaze (RECIPE!)
@@ -1985,7 +1675,7 @@ inst(754, {	-- Naxxramas
 								q(76395, {	-- Corruptor's Scourgestones
 									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
+									["cost"] = { { "i", 206375, 1 } },	-- 1x Corruptor's Scourgestone
 									["repeatable"] = true,
 									["groups"] = {
 										i(DEATHS_BARGAINING_CHIP),
@@ -2011,7 +1701,7 @@ inst(754, {	-- Naxxramas
 								q(76396, {	-- Invader's Scourgestones
 									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = {{ "i", 206374, 10 }},	-- 10x Invader's Scourgestone
+									["cost"] = { { "i", 206374, 10 } },	-- 10x Invader's Scourgestone
 									["repeatable"] = true,
 									["groups"] = {
 										i(DEATHS_BARGAINING_CHIP),
@@ -2020,7 +1710,7 @@ inst(754, {	-- Naxxramas
 								q(77244, {	-- Many Corruptor's Scourgestones
 									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
+									["cost"] = { { "i", 206375, 5 } },	-- 5x Corruptor's Scourgestone
 									["repeatable"] = true,
 									["groups"] = {
 										i(DEATHS_BARGAINING_CHIP),
@@ -2029,7 +1719,7 @@ inst(754, {	-- Naxxramas
 								q(77245, {	-- Many Invader's Scourgestones
 									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
+									["cost"] = { { "i", 206374, 50 } },	-- 50x Invader's Scourgestone
 									["repeatable"] = true,
 									["groups"] = {
 										i(DEATHS_BARGAINING_CHIP),
@@ -2925,7 +2615,6 @@ inst(754, {	-- Naxxramas
 					}),
 					n(TREASURES, {
 						o(403731, {	-- Frozen Rune
-							["description"] = "Located everywhere inside of Naxxramas.",
 							["sourceQuests"] = {
 								76263,	-- The Dread Citadel - Naxxramas [Honored]
 								76264,	-- The Dread Citadel - Naxxramas [Revered]
@@ -2933,7 +2622,41 @@ inst(754, {	-- Naxxramas
 							},
 							["sourceQuestNumRequired"] = 1,
 							["groups"] = {
-								i(22682),	-- Frozen Rune
+								i(22682, {	-- Frozen Rune
+									["description"] = "31 Frozen Runes can be found through (Lower) Naxxramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",
+									-- Arachnid Quarter: (6)
+										-- 1: Behind Anub'Rekhan
+										-- 2: To the left of Grand Widow Faerlina
+										-- 3: Eastern wall of the corridor parallel with Outer Ring.
+										-- 4: Secondmost westwern room of Outer ring, by upper entrance.
+										-- 5: Westernmost room of the outern room, by entrance
+										-- 6: Behind Maexxna
+									-- Plague Quarter: (8)
+										-- 7: Behind Noth the Plaguebringer
+										-- 8 + 9: Left and right sides, room of Heigan the Unclean
+										-- 10 + 11: Left side, room of Loatheb.
+										-- 12: Northenmost room of Outer Ring, by southern entrance
+										-- 13: Centre room, Outer Ring
+										-- 14: Westernmost room of Outer Ring, entrance to balcony overseeing room of Noth the Plaguebringer.
+									-- Military Quarter: (8)
+										-- 15: Left side, Instructor Razuvious
+										-- 16: North wall, western room of Gothik the Harvester.
+										-- 17: Junction room, Outer Ring
+										-- 18: Thirdmost northern room of Outer Ring, by northen entrance
+										-- 19: Secondmost northen room of Outer Ring, by lower entrace.
+										-- 20: Northenmost room of the Outer Ring, end wall ooze pool.
+										-- 21 + 22: Northen and southern corners, Horsemen's Assembly
+									-- Construct Quarter: (9)
+										-- 23: Westernmost wall section of southern hallroom
+										-- 24: Northenmost section, downstair room of Grobbulus
+										-- 25: Stairway, room of Grobbulus
+										-- 26: Right side, room of Gluth
+										-- 27: Thirdmost southern room of Outer Ring, by northen entrance
+										-- 28: Secondmost southern room of Outer Ring, by lower entrance
+										-- 29: Thirdmost eastern room of Outer Ring, by eastern entrance
+										-- 30: Easternmost room of Outer Ring, by entrance
+										-- 31: West of Thaddius
+								}),
 							},
 						}),
 					}),

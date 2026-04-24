@@ -58,8 +58,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(136393, {	-- Bloodwing Bonepicker
 				["questID"] = 51079,
 				["coords"] = {
-				--	{ 56.7, 56.0, VOLDUN },	-- start of path if in the future we have a way to attach description coords
-				--	{ 59.5, 50.8, VOLDUN },	-- start of another path up the mountain
+					-- { 56.7, 56.0, VOLDUN },	-- start of path if in the future we have a way to attach description coords
+					-- { 59.5, 50.8, VOLDUN },	-- start of another path up the mountain
 					{ 56.0, 53.5, VOLDUN },	-- actual rare/nest coord
 				},
 				["cr"] = 136390,	-- Enormous Egg
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(162681, {	-- Elusive Quickhoof
 				["description"] = "Feed it Seaside Leafy Greens Mix to get the mount.",
-				["cost"] = {{ "i", 161128, 1 }},	-- Seaside Leafy Greens
+				["cost"] = { { "i", 161128, 1 } },	-- Seaside Leafy Greens
 				["coords"] = {
 					{ 54.2, 51.0, VOLDUN },
 					{ 54.6, 53.0, VOLDUN },

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local JEWELCRAFTING_AWARD_GROUPS = {
 	currency(361),	-- Illustrious Jewelcrafter's Token
 };
@@ -368,59 +369,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
 				q(32009, {	-- Varzok
 					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31882, {	-- Varzok
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31883, {	-- Varzok
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31884, {	-- Varzok
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31885, {	-- Varzok
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31812, {	-- Zunta, The Pet Tramer
@@ -444,13 +430,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3347, {	-- Yelmak <Alchemy Trainer>
 						["coord"] = { 55.6, 46.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ALCHEMY,
-							-- #if AFTER CATA
-							CATA_ALCHEMY
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ALCHEMY,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -467,52 +447,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
 						["coord"] = { 76.4, 34.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_BLACKSMITHING,
-							-- #if AFTER CATA
-							CATA_BLACKSMITHING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_BLACKSMITHING,
 					}),
 				}),
 				prof(COOKING, {
 					n(3399, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_1 }, }, {	-- Zamja <Cooking Trainer>
 						["coord"] = { 32.2, 69.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_COOKING,
-							-- #if AFTER CATA
-							CATA_COOKING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_COOKING,
 					})),
 				}),
 				prof(ENCHANTING, {
 					n(3345, {	-- Godan <Enchanting Trainer>
 						["coord"] = { 53.4, 49.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ENCHANTING,
-							-- #if AFTER CATA
-							CATA_ENCHANTING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ENCHANTING,
 					}),
 				}),
 				prof(ENGINEERING, {
 					n(11017, {	-- Roxxik <Engineering Trainer>
 						["coord"] = { 56.8, 56.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ENGINEERING,
-							-- #if AFTER CATA
-							CATA_ENGINEERING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ENGINEERING,
 					}),
 				}),
 				prof(FIRST_AID, {
@@ -524,72 +480,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(45540, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3, REMOVED_7_3_5 } }, {	-- Krenk Choplimb <Bandage Trainer>
 						["coord"] = { 37.6, 87.2, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FIRST_AID,
-							-- #if AFTER CATA
-							CATA_FIRST_AID
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FIRST_AID
 					})),
 					n(133109, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Mender Jessara <Bandage Trainer>
 						["coord"] = { 38.2, 86.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FIRST_AID,
-							-- #if AFTER CATA
-							CATA_FIRST_AID
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FIRST_AID,
 					})),
 				}),
 				prof(FISHING, {
 					n(3332, {	-- Lumak <Fishing Trainer>
 						["coord"] = { 66.6, 41.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FISHING,
-							-- #if AFTER CATA
-							CATA_FISHING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FISHING,
 					}),
 					i(34864, {	-- Baby Crocolisk
 						["timeline"] = { ADDED_2_4_0 },
-					}),
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							26588,	-- A Furious Catch
-							26572,	-- A Golden Opportunity
-							26557,	-- A Staggering Effort
-							26543,	-- Clammy Hands
-							26556,	-- No Dumping Allowed
-						},
-						["provider"] = { "n", 43239 },	-- Razgar
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { ADDED_2_4_0 },
-							}),
-							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-						},
 					}),
 					i(34486, {	-- Old Crafty
 						["description"] =
@@ -604,7 +510,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						["timeline"] = { ADDED_2_3_0 },
 						-- #if AFTER TWW
-						["collectible"] = false,  -- remove when Blizzard fix fish collection
+						["collectible"] = false, 	-- remove when Blizzard fix fish collection
 						-- #endif
 					}),
 				}),
@@ -618,13 +524,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(CLASSIC_HERBALISM,
-							-- #if AFTER CATA
-							CATA_HERBALISM
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_HERBALISM,
 					}),
 				}),
 				-- #if AFTER WRATH
@@ -633,13 +533,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
-						["groups"] = appendGroups(
-							WRATH_INSCRIPTION,
-							-- #if AFTER CATA
-							CATA_INSCRIPTION,
-							-- #endif
-							{}
-						),
+						["groups"] = CLASSIC_WRATH_CATA_INSCRIPTION,
 					}),
 				}),
 				-- #endif
@@ -665,14 +559,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["groups"] = COMMON_CATACLYSM_JEWELCRAFTING_RECIPES,
 					}),
-
 					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
 						["coord"] = { 72.4, 34.6, ORGRIMMAR },
 						["timeline"] = { ADDED_4_3_0 },
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(COMMON_CATACLYSM_EPIC_JEWELCRAFTING_RECIPES, {
 							i(71949, {	-- Tome of Burning Jewels
-								["cost"] = {{"c", 361, 4}},	-- 4x Illustrious Jewelcrafter's Token
+								["cost"] = { { "c", 361, 4 } },	-- 4x Illustrious Jewelcrafter's Token
 								["filterID"] = CONSUMABLES,
 								["sym"] = {
 									{"select","npcID",57922},{"pop"},	-- this NPC
@@ -721,6 +614,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{}
 							-- #endif
 						),
+					}),
+				}),
+				prof(SKINNING, {
+					n(7088, {	-- Thuwd <Skinning Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 61.0, 54.6, ORGRIMMAR },
+							-- #else
+							{ 63.2, 45.2, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = CLASSIC_CATA_SKINNING,
 					}),
 				}),
 				prof(TAILORING, {
@@ -940,7 +846,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coords"] = {
 						{ 22.8, 14.5, THUNDER_BLUFF },	-- Archmage Shymm <Mage Trainer>
 						{ 85.0, 14.0, UNDERCITY },	-- Kaelystia Hatebringer <Mage Trainer>
-						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven <Mage Trainer>
+						{ 59.2, 19.7, SILVERMOON_CITY },	-- Inethven <Mage Trainer>
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { MAGE },
@@ -1007,6 +913,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 58.0, 62.8, ZULDAZAR },	-- Nathanos Blightcaller
 						{ 48.9, 91.4, ORGRIMMAR },	-- Nathanos Blightcaller
 						{ 49.4, 76.6, ORGRIMMAR },	-- Warchief's Herald
+						{ 62.5, 60.8, SILVERMOON_CITY },
 					},
 					["timeline"] = { ADDED_8_0_1 },
 					["races"] = HORDE_ONLY,
@@ -1228,7 +1135,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3401 },	-- Shenthul
 						{ "i", 8051 },	-- Flare Gun
 					},
-					["coord"] = { 43, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1291,7 +1198,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2378, {	-- Find the Shattered Hand
 					["altQuests"] = { 2380 },	-- To Orgrimmar!
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.2, 69, UNDERCITY },
+					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1343,14 +1250,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						COOKING_AWARD,
 					},
-				}),
-				q(31014, {	-- Hellscream's Gift
-					["sourceQuest"] = 31013,	-- The Horde Way
-					["qg"] = 62092,	-- Garrosh Hellscream
-					["coord"] = { 70.6, 30.8, ORGRIMMAR },
-					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["maps"] = { 503 },	-- Brawl'gar Arena
-					["races"] = { PANDAREN_HORDE },
 				}),
 				-- #if ANYCLASSIC
 				q(5652, {	-- Hex of Weakness [Orgrimmar]
@@ -1450,19 +1349,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3401 },	-- Shenthul
 						{ "i", 8087 },	-- Sample of Zanzil's Altered Mixture
 					},
-					["coord"] = { 43, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(53372, {	-- Battle for Azeroth: Hour of Reckoning
-				--	["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
+					-- ["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					["races"] = HORDE_ONLY,
-				--	TODO: level is obviously incorrect. whether this quest is still available is disputed. potential ways to get, per wowhead comments:
+					-- TODO: level is obviously incorrect. whether this quest is still available is disputed. potential ways to get, per wowhead comments:
 					-- "If you are looking for how to get your Heart of Azeroth, post Shadowlands pre-patch (9.0) you can only get it once you have hit level 50, it will then be automatically pushed through as soon as you ding to go visit Magni in Silithus."
 					-- "This is incorrect. All you have to do is loot an Azerite item from a BfA Dungeon Level 45-49 and it starts the Quest when you Zone to Org/SW."
 					-- figure out which of these is correct (if either) and adjust description accordingly
@@ -1739,7 +1638,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1509, {	-- News of Dogran (1/2)
 					["sourceQuest"] = 1508,	-- Blind Cazul
 					["qg"] = 5910,	-- Zankaja
-					["coord"] = { 37, 59.6, ORGRIMMAR },
+					["coord"] = { 37.0, 59.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
@@ -1823,7 +1722,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(10794, {	-- Rogues of the Shattered Hand
 					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
-					["coord"] = { 79.4, 52, SILVERMOON_CITY },
+					["coord"] = { 79.4, 52.0, SILVERMOON_CITY },
 					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1954,7 +1853,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(1943, {	-- Speak with Deino
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
-					["coord"] = { 85, 10.2, UNDERCITY },
+					["coord"] = { 85.0, 10.2, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
@@ -2089,13 +1988,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(31013, {	-- The Horde Way
-					["sourceQuest"] = 31012,	-- Joining the Horde
-					["qg"] = 39605,	-- Garrosh Hellscream
-					["coord"] = { 48.2, 70.6, ORGRIMMAR },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = { PANDAREN_NEUTRAL },
-				}),
 				q(25159, {	-- The Latest Fashion!
 					["qg"] = 50482,	-- Marith Lazuria
 					["coord"] = { 72.4, 34.4, ORGRIMMAR },
@@ -2196,7 +2088,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2380,	-- To Orgrimmar!
 					},
 					["qg"] = 3401,	-- Shenthul
-					["coord"] = { 43, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -2219,13 +2111,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6611, {	-- To Gadgetzan You Go!
 					-- #if BEFORE 4.0.3
-					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
 					["coord"] = { 57.4, 53.6, ORGRIMMAR },
 					-- #elseif AFTER 8.0.1
-					["description"] = "Becomes available at Classic Cooking skill level 225 when character level requirement is met.",
 					["coord"] = { 32.2, 69.4, ORGRIMMAR },
 					-- #else
-					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
 					["coord"] = { 32.2, 69.4, ORGRIMMAR },
 					-- #endif
 					["qg"] = 3399,	-- Zamja
@@ -2367,7 +2256,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 84,
 					-- #elseif AFTER 9.0.3
 					["groups"] = {
-						n(14720, { -- High Overlord Saurfang
+						n(14720, {	-- High Overlord Saurfang
 							["description"] = "Saurfang will not give you any quests after turning in 'Warchied's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'.",
 						}),
 					},
@@ -2396,7 +2285,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 7268 },	-- Xavian Water Sample
 								{ "i", 7269 },	-- Deino's Flask
 							},
-							["coord"] = { 76, 41, ASHENVALE },
+							["coord"] = { 76.0, 41.0, ASHENVALE },
 						}),
 					},
 				}),
@@ -2495,14 +2384,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2382, {	-- Wrenix of Ratchet
 					["sourceQuest"] = 2379,	-- Zando'zan
 					["qg"] = 3402,	-- Zando'zan
-					["coord"] = { 42.8, 53, ORGRIMMAR },
+					["coord"] = { 42.8, 53.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
 				}),
 				q(6608, {	-- You Too Good.
-					["description"] = "Requires 225 Skill in Classic Fishing",
 					["qg"] = 3332,	-- Lumak <Fishing Trainer>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2540,7 +2428,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 10372 },	-- A Discreet Inquiry
 					-- #endif
 					["qg"] = 3401,	-- Shenthul
-					["coord"] = { 43, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -2605,7 +2493,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
-				n(171691, { -- Alpheus Cain <Shady Dealer>
+				n(171691, {	-- Alpheus Cain <Shady Dealer>
 					["coord"] = { 75.35, 45.8, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
@@ -2633,7 +2521,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(1179),	-- Ice Cold Milk
 						i(1205),	-- Melon Juice
-						--i(1645),	-- Moonberry Juice
+						-- i(1645),	-- Moonberry Juice
 						i(8766),	-- Morning Glory Dew
 						i(159),		-- Refreshing Spring Water
 						i(1708),	-- Sweet Nectar
@@ -2702,6 +2590,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { ADDED_4_1_0 },
 						})),
+						i(44481),	-- Grindgear Toy Gorilla
+						i(44601),	-- Heavy Copper Racer
+						i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
+						i(44482),	-- Trusty Copper Racer (3.0.2.8970)
+						i(44599),	-- Zippy Copper Racer
 					},
 				}),
 				n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
@@ -2866,7 +2759,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(24520, {	-- Doris Volanthius <Armor Quartermaster> -- BC Vendor for Trinkets
+				n(24520, {	-- Doris Volanthius <Armor Quartermaster>	-- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
 					["coord"] = { 38.8, 69.8, ORGRIMMAR },
 					["timeline"] = { ADDED_2_3_0 },
@@ -2991,6 +2884,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(261262, {	-- Gabbi <Promotional Decor Resupply>
+					["coord"] = { 48.4, 81.0, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_12_0_0 },
+					["groups"] = {
+						i(260785, {	-- Miniature Replica Dark Portal (DECOR!)
+							["sourceAchievement"] = 62387,	-- It's Nearly Midnight
+							["cost"] = 14000000,	-- 1400g
+						}),
+					},
+				}),
 				n(52036, pvp({	-- Galra <Honor Heirlooms>
 					["coord"] = { 38.0, 70.8, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_6 },
@@ -3044,7 +2948,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						moh(10, i(122367, {	-- The Blessed Hammer of Grace
 							["timeline"] = { ADDED_6_1_0 },
 						})),
-						moh(10, i(122366, {	-- Unpgraded Dwarven Hand Cannon
+						moh(10, i(122366, {	-- Upgraded Dwarven Hand Cannon
 							["timeline"] = { ADDED_6_1_0 },
 						})),
 
@@ -3384,82 +3288,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
-						i(247763, {	-- Berserker's Empowerment (DECOR!)
-							["sourceAchievement"] = 61683,	-- Entering Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247756, {	-- Challenger's Dueling Flag (DECOR!)
-							["sourceAchievement"] = 1157,	-- Duel-icious
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247769, {	-- Chaotic Empowerment (DECOR!)
-							["sourceAchievement"] = 61685,	-- Proficient in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247750, {	-- Deephaul Crystal (DECOR!)
-							["sourceAchievement"] = 40612,	-- Sprinting in the Ravine
-							["cost"] = {{ "c", HONOR, 2500 }},
-						}),
-						i(253170, {	-- Earthen Contender's Target (DECOR!)
-							["sourceAchievement"] = 40210,	-- Deephaul Ravine Victory
-							["cost"] = {{ "c", HONOR, 750 }},
-						}),
-						i(247760, {	-- Fortified Horde Banner (DECOR!)
-							["sourceAchievement"] = 222,	-- Tower Defense
-							["cost"] = {{ "c", HONOR, 1200 }},
-						}),
-						i(247768, {	-- Guardian's Empowerment (DECOR!)
-							["sourceAchievement"] = 61684,	-- Progressing in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247765, {	-- Healer's Empowerment (DECOR!)
-							["sourceAchievement"] = 61687,	-- Champion in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247759, {	-- Horde Battlefield Banner (DECOR!)
-							["sourceAchievement"] = 1153,	-- Overly Defensive
-							["cost"] = {{ "c", HONOR, 600 }},
-						}),
-						i(247745, {	-- Horde Dueling Flag (DECOR!)
-							["sourceAchievement"] = 229,	-- The Grim Reaper
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247727, {	-- Iron Dragonmaw Gate (DECOR!)
-							["sourceAchievement"] = 5223,	-- Master of Twin Peaks
-							["cost"] = {{ "c", HONOR, 5000 }},
-						}),
-						i(247741, {	-- Kotmogu Orb of Power (DECOR!)
-							["sourceAchievement"] = 6981,	-- Master of Temple of Kotmogu
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247740, {	-- Kotmogu Pedestal (DECOR!)
-							["sourceAchievement"] = 6981,	-- Master of Temple of Kotmogu
-							["cost"] = {{ "c", HONOR, 2000 }},
-						}),
-						i(247770, {	-- Mysterious Empowerment (DECOR!)
-							["sourceAchievement"] = 61686,	-- Expert in Battle
-							["cost"] = {{ "i", 137642, 2 }},	-- 2x Mark of Honor
-						}),
-						i(247762, {	-- Netherstorm Battlefield Flag (DECOR!)
-							["sourceAchievement"] = 213,	-- Stormtrooper
-							["cost"] = {{ "c", HONOR, 300 }},
-						}),
-						i(247766, {	-- Runner's Empowerment (DECOR!)
-							["sourceAchievement"] = 61688,	-- Master in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(256896, {	-- Smoke Lamppost (DECOR!)
-							["sourceAchievement"] = 5245,	-- Battle for Gilneas Victory
-							["cost"] = {{ "c", HONOR, 450 }},
-						}),
-						i(247761, {	-- Uncontested Battlefield Banner (DECOR!)
-							["sourceAchievement"] = 212,	-- Storm Capper
-							["cost"] = {{ "c", HONOR, 400 }},
-						}),
-						i(247747, {	-- Warsong Outriders Flag (DECOR!)
-							["sourceAchievement"] = 167,	-- Warsong Gulch Veteran
-							["cost"] = {{ "c", HONOR, 800 }},
-						}),
+						-- Honor
+						honor(1000, i(247756)),	-- Challenger's Dueling Flag (DECOR!)
+						honor(2500, i(247750)),	-- Deephaul Crystal (DECOR!)
+						honor(750, i(253170)),	-- Earthen Contender's Target (DECOR!)
+						honor(1200, i(247760)),	-- Fortified Horde Banner (DECOR!)
+						honor(600, i(247759)),	-- Horde Battlefield Banner (DECOR!)
+						honor(1000, i(247745)),	-- Horde Dueling Flag (DECOR!)
+						honor(5000, i(247727)),	-- Iron Dragonmaw Gate (DECOR!)
+						honor(1000, i(247741)),	-- Kotmogu Orb of Power (DECOR!)
+						honor(2000, i(247740)),	-- Kotmogu Pedestal (DECOR!)
+						honor(300, i(247762)),	-- Netherstorm Battlefield Flag (DECOR!)
+						honor(450, i(256896)),	-- Smoke Lamppost (DECOR!)
+						honor(400, i(247761)),	-- Uncontested Battlefield Banner (DECOR!)
+						honor(800, i(247747)),	-- Warsong Outriders Flag (DECOR!)
+						-- Mark of Honor
+						moh(5, i(247763)),	-- Berserker's Empowerment (DECOR!)
+						moh(5, i(247769)),	-- Chaotic Empowerment (DECOR!)
+						moh(5, i(247768)),	-- Guardian's Empowerment (DECOR!)
+						moh(5, i(247765)),	-- Healer's Empowerment (DECOR!)
+						moh(2, i(247770)),	-- Mysterious Empowerment (DECOR!)
+						moh(5, i(247766)),	-- Runner's Empowerment (DECOR!)
 					}),
 				}),
 				n(3322, {	-- Kaja <Bow & Rifle Vendor>
@@ -4313,6 +4162,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
+				n(256119, {	-- Lonalo <Traveling Book Shop>
+					["description"] = "Not all items are sold each day.",
+					["coord"] = { 58.6, 50.3, ORGRIMMAR },
+					["timeline"] = { ADDED_11_2_7 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(239177, {	-- Open Tome of Twilight Nihilism (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246848, {	-- Scribe's Working Notes (DECOR!)
+							["cost"] = 20000000,	-- 20000g
+						}),
+						i(246847, {	-- Tome of Draenei Faith (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246860, {	-- Tome of Forsaken Resilience (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246845, {	-- Tome of Shadowforge Cunning (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(239179, {	-- Tome of Twilight Nihilism (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+					},
+				}),
 				n(3321, {	-- Morgum <Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -4470,7 +4345,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
-						i(140565, {	-- Technique: Songs of the Horde
+						i(140565, {	-- Technique: Songs of the Horde (RECIPE!)
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(BURNING_STEPPES, {
 		["lore"] = "The Burning Steppes hold the only accessible land passage from the Kingdom of Stormwind to Khaz Modan and Lordaeron. The highway is thus well traveled, but still very dangerous. Now virtually abandoned by the Kingdom of Stormwind, the Burning Steppes is controlled by minions of the black dragonflight and agents of the firelord Ragnaros.\n\nThis rugged region is full of craggy foothills, scattered boulders and warring factions. Rivers of lava dot the landscape, as well as charred earth and burning ruins. The sky is a red hue here, due to sporadic eruptions from Blackrock Mountain. Blackrock Spire, an orc stronghold in the Second War, stands proud and defiant among the mountains. Dark Iron dwarves control the fortress's deeps, though rumor has it that Ragnaros the Fire Lord still broods in the shadows. Black dragons under Nefarion hold the spire's upper levels, and the two groups battle constantly for supremacy. The surrounding countryside is home to Blackrock orcs and Fire-Gut ogres, all brutal castoffs from the Second War. The Molten Span, a massive stone edifice in the north, bridges a river of fire and leads to Khaz Modan.",
@@ -50,7 +51,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(249),	-- Dreadmaul Rock
 				-- #if AFTER CATA
 				exploration(5653),	-- Fields of Honor
-				--exploration(251),	-- Flame Crest (Does not get detected)
+				-- exploration(251),	-- Flame Crest (Does not get detected)
 				exploration(5651),	-- Flamestar Post
 				-- #endif
 				exploration(2418),	-- Morgan's Vigil
@@ -1231,7 +1232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Sha'ni's Nose-Ring
 							["provider"] = { "i", 11058 },	-- Sha'ni's Nose-Ring
-							["cr"] = 3822,	-- Krom'Grul
+							["cr"] = 8977,	-- Krom'Grul
 						}),
 						i(11869, {	-- Sha'ni's Ring
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1263,7 +1264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				q(4481, {	-- Libram of Constitution
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1282,7 +1283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4483, {	-- Libram of Resilience
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1301,7 +1302,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4463, {	-- Libram of Rumination
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1320,7 +1321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4482, {	-- Libram of Tenacity
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1339,7 +1340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4484, {	-- Libram of Voracity
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1553,7 +1554,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  11079 },	-- Gor'tesh's Lopped Off Head
 								{ "o", 160840 },	-- Soft Dirt Mound
 							},
-							["coord"] = { 81, 46, BURNING_STEPPES },
+							["coord"] = { 81.0, 46.0, BURNING_STEPPES },
 						}),
 						i(11867, {	-- Maddening Gauntlets
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1792,7 +1793,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					["hordeQuestData"] = q(28434, {	-- Strategic Cuts (H)
 						["sourceQuest"] = 28433,	-- Grunt Work (H)
-						["qg"] = 28432,	-- Eitrigg
+						["qg"] = 48568,	-- Eitrigg
 						["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -1831,7 +1832,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  11470 },	-- Tablet Transcript
 								{ "o", 169294 },	-- Tablet of the Seven
 							},
-							["coord"] = { 53, 40, BURNING_STEPPES },
+							["coord"] = { 53.0, 40.0, BURNING_STEPPES },
 						}),
 					},
 				}),
@@ -2358,6 +2359,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
 							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(256331, {	-- Shadowforge Lamppost (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					},
 				}),

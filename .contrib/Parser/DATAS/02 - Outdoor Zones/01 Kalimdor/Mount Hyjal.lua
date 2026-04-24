@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(MOUNT_HYJAL, {
 		["lore"] = "Mount Hyjal is the zone most players quest in when starting Cataclysm zones. Between Ragnaros attacking Hyjal with the help of the Twilight Cultists and Malfurion Stormrage back from the Emerald Dream, this zone is filled with familiar faces and epic quests from the start. The scenery alternates between lush forests and scorched earth, as the player attempts to heal the land and regrow the forests.",
@@ -375,7 +376,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  55208 },	-- Sacred Nectar
 								{ "o", 203147 },	-- Aviana's Burial Circle
 							},
-							["coord"] = { 40, 44, MOUNT_HYJAL },
+							["coord"] = { 40.0, 44.0, MOUNT_HYJAL },
 						}),
 					},
 				}),
@@ -1701,7 +1702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 39726 },	-- Garnoth, Fist of the Legion
 								{ "i", 54814 },	-- Talisman of Flame Ascendancy
 							},
-							["coord"] = { 65, 64.8, MOUNT_HYJAL },
+							["coord"] = { 65.0, 64.8, MOUNT_HYJAL },
 						}),
 					},
 				}),
@@ -1748,6 +1749,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25411,	-- A New Master
 					["altQuests"] = { 25443 },	-- The Name Never Spoken
 					["qg"] = 40093,	-- Subjugated Inferno Lord
+					["coord"] = { 11.7, 41.6, MOUNT_HYJAL },
 					["groups"] = {
 						objective(1, {	-- 0/1 Northern Firestone Examined
 							["provider"] = { "o", 202765 },	-- Northern Firestone
@@ -2287,7 +2289,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						cl(HUNTER, {
 							i(73000),	-- Beastsoul Rifle
-							--i(73001),	-- Beastsoul Spear (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
+							-- i(73001),	-- Beastsoul Spear (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
 							i(72913),	-- Beastsoul Helm
 							i(72915),	-- Beastsoul Spaulders
 							i(73146),	-- Beastsoul Choker
@@ -2446,7 +2448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						cl(ROGUE, {
 							i(72995),	-- Shadowstalking Dagger
-							--i(72996),	-- Shadowstalking Shiv (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
+							-- i(72996),	-- Shadowstalking Shiv (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
 							i(72997),	-- Shadowstalking Sword
 							i(72667),	-- Shadowstalking Hood
 							i(72669),	-- Shadowstalking Shoulders

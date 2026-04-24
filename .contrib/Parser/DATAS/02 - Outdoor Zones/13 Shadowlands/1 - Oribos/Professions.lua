@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		n(PROFESSIONS, {
@@ -215,6 +216,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 				n(156668, {	-- Excavationist Au'fer <Mining Trainer>
 					["coord"] = { 39.6, 33.6, ORIBOS },
 					["groups"] = SL_MINING,
+				}),
+			}),
+			prof(SKINNING, {
+				n(156669, {	-- Tanner Au'qil <Leatherworking Trainer>
+					["coord"] = { 42.6, 26.8, ORIBOS },
+					["groups"] = SL_SKINNING,
 				}),
 			}),
 			prof(TAILORING, {

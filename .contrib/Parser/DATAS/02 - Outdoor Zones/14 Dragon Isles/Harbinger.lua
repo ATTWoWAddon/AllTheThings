@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }, {
 	header(HEADERS.Quest, 79009, {	-- The Harbinger
 		q(79009, {	-- The Harbinger
@@ -51,7 +52,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 		q(79014, {	-- Walk a Mile in Her Shadows
 			["sourceQuests"] = { 79013 },	-- Galakrond's Unrest
 			["provider"] = { "n", 214634 },	-- Alleria Windrunner
-			["coord"] = { 56.6, 39, DRAGONBLIGHT },
+			["coord"] = { 56.6, 39.0, DRAGONBLIGHT },
 		}),
 		q(79015, {	-- Dark Descension
 			["sourceQuests"] = { 79014 },	-- Walk a Mile in Her Shadows
@@ -61,7 +62,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 		q(79016, {	-- Legacy of the Void
 			["sourceQuests"] = { 79015 },	-- Dark Descension
 			["provider"] = { "n", 221539 },	-- Alleria Windrunner
-			["coord"] = { 44, 21, THE_STORM_PEAKS },
+			["coord"] = { 44.0, 21.0, THE_STORM_PEAKS },
 		}),
 		q(79017, {	-- The Path Taken
 			["sourceQuests"] = { 79016 },	-- Legacy of the Void

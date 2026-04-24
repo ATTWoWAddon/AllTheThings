@@ -54,6 +54,7 @@ root(ROOTS.Zones, {
 						{ 40.0, 28.0, LEGION_DALARAN },	-- Things of the Past
 						{ 42.0, 19.0, LEGION_DALARAN },	-- Antonidas Memoria
 						{ 36.0, 37.0, LEGION_DALARAN },	-- Angelique Butler (First Aid Shop)
+						{ 72.7, 52.2, LEGION_DALARAN },	-- Rock by Flightmaster
 					},
 					["groups"] = {
 						i(139632),	-- A Tiny Pair of Goggles (Pepe!)
@@ -63,9 +64,9 @@ root(ROOTS.Zones, {
 				o(266851, {	-- Wand of Simulated Life
 					["description"] = "Item is sitting on a table upstairs in The Legerdemain Lounge.",
 					["icon"] = 133836,
-					["groups"] = {
-						i(143534),	-- Wand of Simulated Life (TOY!)
-					},
+					["coord"] = { 47.8, 41.5, LEGION_DALARAN },
+					["timeline"] = { ADDED_7_1_0 },
+					["groups"] = { i(143534) },	-- Wand of Simulated Life (TOY!)
 				}),
 			}),
 		}),

@@ -1,0 +1,8 @@
+12.0.5.66330
+ach(62519),	-- [DNT] Research Sites: Collection - Bear Pet - Tracking
+ach(62520),	-- [DNT] Research Sites: Collection - Bear Mount - Tracking
+ach(62586),	-- [DNT] Research Sites: Collection - Eagle Pet - Tracking
+ach(62587),	-- [DNT] Research Sites: Collection - Eagle Mount - Tracking
+ach(62599),	-- [DNT] Research Sites: Collection - Hawkstrider Pet - Tracking
+ach(62602),	-- [DNT] Research Sites: Collection - Lynx Pet - Tracking
+ach(62605),	-- [DNT] Research Sites: Collection - Snapdragon Pet - Tracking

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 HORRIFIC_VISIONS = createHeader({
 	readable = "Horrific Visions",
 	icon = [[~_.asset("Feature_Horrific Visions")]],
@@ -13,9 +14,16 @@ LOST_AREA = createHeader({
 	icon = 537021,
 	text = {
 		en = "Lost Area",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Zone Perdue",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Захваченная область",
 		cn = "失落区域",
+		-- TODO: tw = "",
 	},
 });
 CORRUPTED_AREA = createHeader({
@@ -23,14 +31,23 @@ CORRUPTED_AREA = createHeader({
 	icon = 136202,
 	text = {
 		en = "Corrupted Area",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Zone Corrompue",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Заражённая область",
 		cn = "腐化区域",
+		-- TODO: tw = "",
 	},
 });
+
 local HORRIFIC_ORGRIMMAR = 1469;
 local HORRIFIC_STORMWIND = 1470;
 local SPARK_OF_UNWAVERING_STRENGTH = 174287;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
 	n(HORRIFIC_VISIONS, {
 		["maps"] = {
@@ -76,7 +93,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				ach(14061),	-- We Have the Technology
 			}),
 			n(AZERITE_ESSENCES, sharedData({
-				["cost"] = {{ "i", SPARK_OF_UNWAVERING_STRENGTH, 45 }},
+				["cost"] = { { "i", SPARK_OF_UNWAVERING_STRENGTH, 45 } },
 			}, {
 				i(173310),	-- Manual of Unbalanced Tactics [Rank 3]
 				i(173290),	-- Quickening Azerite Geode [Rank 3]
@@ -380,16 +397,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			q(58890),	-- Dwarven district
 			q(58893),	-- cleared mage quarter
 			q(57282),	-- cleared mage quarter
-			--q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?(moved to metadata)
-			-- TODO:: Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
+			-- q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?(moved to metadata)
+			-- TODO:  Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
 			q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
 			q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
 		}),
 		q(58971),	-- killing Mail Muncher
 		--[[
 		q(57845)	-- probably triggers after clearing two corrupted areas + boss
-		58840 - looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
-		58581 -- triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
+		58840	-- looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
+		58581	-- triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
 		Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
 		]]--
 	}),

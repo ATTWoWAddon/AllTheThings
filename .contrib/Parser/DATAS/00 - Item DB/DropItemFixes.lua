@@ -11,8 +11,8 @@ local i = function(itemID, drop)
 end
 
 for _,itemID in ipairs({
-	 ARTISANS_METTLE,
-	 ARTISANS_ACUITY,
+	ARTISANS_METTLE,
+	ARTISANS_ACUITY,
 }) do
 	i(itemID, "requireSkill")
 end

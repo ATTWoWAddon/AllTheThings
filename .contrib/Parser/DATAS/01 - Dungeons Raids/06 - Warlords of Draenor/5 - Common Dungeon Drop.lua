@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 -- Expects Difficulty and Slot constants of custom headers
 SYM_WOD_COMMON_DUNGEON_SLOTS = function(difficultyID, ...)
 	local c = select("#", ...)
@@ -93,6 +94,7 @@ local function HEADER_FINGER(g)
 		groups = g
 	})
 end
+
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, {
 		["description"] = "The following items can be obtained in the mentioned dungeons.",

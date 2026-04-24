@@ -227,70 +227,45 @@ end)
 checkboxSummarizeThings:SetATTTooltip(L.SUMMARIZE_CHECKBOX_TOOLTIP)
 checkboxSummarizeThings:AlignBelow(checkboxDisplayInCombat)
 
-local sliderSummarizeThings = CreateFrame("Slider", "ATTSummarizeThingsSlider", child, "UISliderTemplate")
-sliderSummarizeThings:SetPoint("TOP", checkboxSummarizeThings.Text, "BOTTOM", 0, -4)
-sliderSummarizeThings:SetPoint("LEFT", checkboxSummarizeThings, "LEFT", 10, 0)
-table.insert(settings.Objects, sliderSummarizeThings)
-settings.sliderSummarizeThings = sliderSummarizeThings
-sliderSummarizeThings.tooltipText = L.CONTAINS_SLIDER_TOOLTIP
-sliderSummarizeThings:SetOrientation('HORIZONTAL')
+local sliderSummarizeThings = child:CreateSlider("ATTSummarizeThingsSlider", {
+	TOOLTIP=L.CONTAINS_SLIDER_TOOLTIP,
+	SETTING="ContainsCount",
+	FORMAT="%.0f",
+	MIN=1, MAX=40, STEP=1,
+	OnRefresh=function(self)
+		if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+})
 sliderSummarizeThings:SetWidth(200)
 sliderSummarizeThings:SetHeight(20)
-sliderSummarizeThings:SetValueStep(1)
-sliderSummarizeThings:SetMinMaxValues(1, 40)
-sliderSummarizeThings:SetObeyStepOnDrag(true)
-sliderSummarizeThings.LabelLow = sliderSummarizeThings:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSummarizeThings.LabelLow:SetPoint("TOPLEFT", sliderSummarizeThings, "BOTTOMLEFT", 0, 2)
-sliderSummarizeThings.LabelLow:SetText('1')
-sliderSummarizeThings.LabelHigh = sliderSummarizeThings:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSummarizeThings.LabelHigh:SetPoint("TOPRIGHT", sliderSummarizeThings, "BOTTOMRIGHT", 0, 2)
-sliderSummarizeThings.LabelHigh:SetText('40')
-sliderSummarizeThings.Label = sliderSummarizeThings:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSummarizeThings.Label:SetPoint("TOP", sliderSummarizeThings, "BOTTOM", 0, 2)
-sliderSummarizeThings.Label:SetText(sliderSummarizeThings:GetValue())
-sliderSummarizeThings:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue)
-	if newValue == settings:GetTooltipSetting("ContainsCount") then
-		return 1
-	end
-	settings:SetTooltipSetting("ContainsCount", newValue)
-end)
-sliderSummarizeThings.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end
+sliderSummarizeThings:SetPoint("TOP", checkboxSummarizeThings.Text, "BOTTOM", 0, -4)
+sliderSummarizeThings:SetPoint("LEFT", checkboxSummarizeThings, "LEFT", 10, 0)
 
-local sliderMaxTooltipTopLineLength = CreateFrame("Slider", "ATTSliderMaxTooltipFirstLineLength", child, "UISliderTemplate")
-sliderMaxTooltipTopLineLength:SetPoint("TOPLEFT", sliderSummarizeThings, "BOTTOMLEFT", 0, -25)
-table.insert(settings.Objects, sliderMaxTooltipTopLineLength)
-settings.sliderMaxTooltipTopLineLength = sliderMaxTooltipTopLineLength
-sliderMaxTooltipTopLineLength:SetOrientation('HORIZONTAL')
+local sliderMaxTooltipTopLineLength = child:CreateSlider("ATTSliderMaxTooltipFirstLineLength", {
+	TEXT=L.MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL,
+	-- TOOLTIP=, -- No tooltip?
+	SETTING="MaxTooltipTopLineLength",
+	FORMAT="%.0f",
+	MIN=80, MAX=1000, STEP=20,
+	OnRefresh=function(self)
+		if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+})
 sliderMaxTooltipTopLineLength:SetWidth(200)
 sliderMaxTooltipTopLineLength:SetHeight(20)
-sliderMaxTooltipTopLineLength:SetValueStep(10)
-sliderMaxTooltipTopLineLength:SetMinMaxValues(80, 1000)
-sliderMaxTooltipTopLineLength:SetObeyStepOnDrag(true)
-sliderMaxTooltipTopLineLength.Text = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderMaxTooltipTopLineLength.Text:SetPoint("BOTTOMLEFT", sliderMaxTooltipTopLineLength, "TOPLEFT", 0, 0)
-sliderMaxTooltipTopLineLength.Text:SetText(L.MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL)
-sliderMaxTooltipTopLineLength.Text:SetTextColor(1, 1, 1)
-sliderMaxTooltipTopLineLength.LabelLow = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMaxTooltipTopLineLength.LabelLow:SetPoint("TOPLEFT", sliderMaxTooltipTopLineLength, "BOTTOMLEFT", 0, 2)
-sliderMaxTooltipTopLineLength.LabelLow:SetText('80')
-sliderMaxTooltipTopLineLength.LabelHigh = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMaxTooltipTopLineLength.LabelHigh:SetPoint("TOPRIGHT", sliderMaxTooltipTopLineLength, "BOTTOMRIGHT", 0, 2)
-sliderMaxTooltipTopLineLength.LabelHigh:SetText('1000')
-sliderMaxTooltipTopLineLength.Label = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMaxTooltipTopLineLength.Label:SetPoint("TOP", sliderMaxTooltipTopLineLength, "BOTTOM", 0, 0)
-sliderMaxTooltipTopLineLength:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(("%.0f"):format(newValue))
-	settings:SetTooltipSetting("MaxTooltipTopLineLength", newValue)
-end)
+sliderMaxTooltipTopLineLength:SetPoint("TOPLEFT", sliderSummarizeThings, "BOTTOMLEFT", 0, -25)
 
 local textTooltipShownInfo = child:CreateTextLabel("|cffFFFFFF"..L.TOOLTIP_SHOW_LABEL)
 textTooltipShownInfo:SetPoint("TOP", sliderMaxTooltipTopLineLength, "BOTTOM", 0, -30)
@@ -338,7 +313,7 @@ end)
 checkboxProgressIconOnly:SetATTTooltip(L.ICON_ONLY_CHECKBOX_TOOLTIP)
 checkboxProgressIconOnly:AlignBelow(checkboxCollectionProgress, 1)
 
-local checkboxOnlyRelevant;
+local checkboxOnlyRelevant, checkboxOnlyObtainable;
 if C_TransmogCollection then
 local checkboxSharedAppearances = child:CreateCheckBox(L.SHARED_APPEARANCES_CHECKBOX,
 function(self)
@@ -374,6 +349,24 @@ end)
 checkboxOriginalSource:SetATTTooltip(L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP)
 checkboxOriginalSource:AlignBelow(checkboxSharedAppearances, 1)
 
+checkboxOnlyObtainable = child:CreateCheckBox(L.ONLY_OBTAINABLE_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("OnlyShowObtainableSharedAppearances"))
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("OnlyShowObtainableSharedAppearances", self:GetChecked())
+end)
+checkboxOnlyObtainable:SetATTTooltip(L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP)
+checkboxOnlyObtainable:AlignBelow(checkboxOriginalSource)
+end
+
 checkboxOnlyRelevant = child:CreateCheckBox(L.ONLY_RELEVANT_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"))
@@ -389,8 +382,7 @@ function(self)
 	settings:SetTooltipSetting("OnlyShowRelevantSharedAppearances", self:GetChecked())
 end)
 checkboxOnlyRelevant:SetATTTooltip(L.ONLY_RELEVANT_CHECKBOX_TOOLTIP)
-checkboxOnlyRelevant:AlignBelow(checkboxOriginalSource)
-end
+checkboxOnlyRelevant:AlignBelow(checkboxOnlyObtainable)
 
 local checkboxSourceLocations = child:CreateCheckBox(L.SOURCE_LOCATIONS_CHECKBOX,
 function(self)
@@ -409,43 +401,25 @@ end)
 checkboxSourceLocations:SetATTTooltip(L.SOURCE_LOCATIONS_CHECKBOX_TOOLTIP)
 checkboxSourceLocations:AlignBelow(checkboxOnlyRelevant or checkboxProgressIconOnly, -1)
 
-local sliderSourceLocations = CreateFrame("Slider", "ATTsliderSourceLocations", child, "UISliderTemplate")
-sliderSourceLocations:SetPoint("TOP", checkboxSourceLocations.Text, "BOTTOM", 0, -4)
-sliderSourceLocations:SetPoint("LEFT", checkboxSourceLocations, "LEFT", 10, 0)
-table.insert(settings.Objects, sliderSourceLocations)
-settings.sliderSourceLocations = sliderSourceLocations
-sliderSourceLocations.tooltipText = L.LOCATIONS_SLIDER_TOOLTIP
-sliderSourceLocations:SetOrientation('HORIZONTAL')
+local sliderSourceLocations = child:CreateSlider("ATTsliderSourceLocations", {
+	TOOLTIP=L.LOCATIONS_SLIDER_TOOLTIP,
+	SETTING="Locations",
+	FORMAT="%.0f",
+	MIN=1, MAX=40, STEP=1,
+	OnRefresh=function(self)
+		if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+})
 sliderSourceLocations:SetWidth(140)
 sliderSourceLocations:SetHeight(20)
-sliderSourceLocations:SetValueStep(1)
-sliderSourceLocations:SetMinMaxValues(1, 40)
-sliderSourceLocations:SetObeyStepOnDrag(true)
-sliderSourceLocations.LabelLow = sliderSourceLocations:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSourceLocations.LabelLow:SetPoint("TOPLEFT", sliderSourceLocations, "BOTTOMLEFT", 0, 2)
-sliderSourceLocations.LabelLow:SetText('1')
-sliderSourceLocations.LabelHigh = sliderSourceLocations:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSourceLocations.LabelHigh:SetPoint("TOPRIGHT", sliderSourceLocations, "BOTTOMRIGHT", 0, 2)
-sliderSourceLocations.LabelHigh:SetText('40')
-sliderSourceLocations.Label = sliderSourceLocations:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSourceLocations.Label:SetPoint("TOP", sliderSourceLocations, "BOTTOM", 0, 2)
-sliderSourceLocations.Label:SetText(sliderSourceLocations:GetValue())
-sliderSourceLocations:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue)
-	if newValue == settings:GetTooltipSetting("Locations") then
-		return 1
-	end
-	settings:SetTooltipSetting("Locations", newValue)
-end)
-sliderSourceLocations.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end
+sliderSourceLocations:SetPoint("TOP", checkboxSourceLocations.Text, "BOTTOM", 0, -4)
+sliderSourceLocations:SetPoint("LEFT", checkboxSourceLocations, "LEFT", 10, 0)
 
 local checkboxCompleted = child:CreateCheckBox(L.COMPLETED_SOURCES_CHECKBOX,
 function(self)
@@ -572,7 +546,6 @@ end)
 checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
 checkboxKnownBy:AlignBelow(checkboxCompletedBy)
 
-if app.IsRetail then	-- Not sure when the APIs needed for these features is added
 local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"))
@@ -590,23 +563,6 @@ end)
 checkboxSpecializations:SetATTTooltip(L.SPEC_CHECKBOX_TOOLTIP)
 checkboxSpecializations:AlignBelow(checkboxKnownBy)
 
-local checkboxDropChances = child:CreateCheckBox(L.DROP_CHANCES_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("DropChances"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("DropChances", self:GetChecked())
-end)
-checkboxDropChances:SetATTTooltip(L.DROP_CHANCES_CHECKBOX_TOOLTIP)
-checkboxDropChances:AlignBelow(checkboxSpecializations)
-
 local checkboxCurrencyCalculation = child:CreateCheckBox(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Currencies"))
@@ -622,8 +578,9 @@ function(self)
 	settings:SetTooltipSetting("Currencies", self:GetChecked())
 end)
 checkboxCurrencyCalculation:SetATTTooltip(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP)
-checkboxCurrencyCalculation:AlignBelow(checkboxDropChances)
-else
+checkboxCurrencyCalculation:AlignBelow(checkboxSpecializations)
+
+if app.IsClassic then
 -- CRIEVE NOTE: This feature is kinda neat, but really only makes sense for Classic.
 local checkboxShowCraftedItems = child:CreateCheckBox(L.SHOW_CRAFTED_ITEMS_CHECKBOX,
 function(self)
@@ -640,7 +597,7 @@ function(self)
 	settings:SetTooltipSetting("Show:CraftedItems", self:GetChecked());
 end)
 checkboxShowCraftedItems:SetATTTooltip(L.SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP)
-checkboxShowCraftedItems:AlignBelow(checkboxKnownBy)
+checkboxShowCraftedItems:AlignBelow(checkboxCurrencyCalculation)
 
 local checkboxShowRecipes = child:CreateCheckBox(L.SHOW_RECIPES_CHECKBOX,
 function(self)
@@ -681,83 +638,49 @@ end
 local headerListBehavior = child:CreateHeaderLabel(L.BEHAVIOR_LABEL)
 headerListBehavior:SetPoint("TOPLEFT", headerTooltips, 380, 0)
 
-local sliderMainListScale = CreateFrame("Slider", "ATTsliderMainListScale", child, "UISliderTemplate")
-sliderMainListScale:SetPoint("TOPLEFT", headerListBehavior, "BOTTOMLEFT", 4, -15)
-table.insert(settings.Objects, sliderMainListScale)
-settings.sliderMainListScale = sliderMainListScale
-sliderMainListScale.tooltipText = L.MAIN_LIST_SCALE_TOOLTIP
-sliderMainListScale:SetOrientation('HORIZONTAL')
+local sliderMainListScale = child:CreateSlider("ATTsliderMainListScale", {
+	TEXT=L.MAIN_LIST_SLIDER_LABEL,
+	TOOLTIP=L.MAIN_LIST_SCALE_TOOLTIP,
+	SETTING="MainListScale",
+	FORMAT="%.2f",
+	MIN=0.1, MAX=4, STEP=0.1,
+})
 sliderMainListScale:SetWidth(200)
 sliderMainListScale:SetHeight(20)
-sliderMainListScale:SetValueStep(0.1)
-sliderMainListScale:SetMinMaxValues(0.1, 4)
-sliderMainListScale:SetObeyStepOnDrag(true)
-sliderMainListScale.Text = sliderMainListScale:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderMainListScale.Text:SetPoint("BOTTOMLEFT", sliderMainListScale, "TOPLEFT", 0, 0)
-sliderMainListScale.Text:SetText(L.MAIN_LIST_SLIDER_LABEL)
-sliderMainListScale.Text:SetTextColor(1, 1, 1)
-sliderMainListScale.LabelLow = sliderMainListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMainListScale.LabelLow:SetPoint("TOPLEFT", sliderMainListScale, "BOTTOMLEFT", 0, 2)
-sliderMainListScale.LabelLow:SetText('0.1')
-sliderMainListScale.LabelHigh = sliderMainListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMainListScale.LabelHigh:SetPoint("TOPRIGHT", sliderMainListScale, "BOTTOMRIGHT", 0, 2)
-sliderMainListScale.LabelHigh:SetText('4')
-sliderMainListScale.Label = sliderMainListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMainListScale.Label:SetPoint("TOP", sliderMainListScale, "BOTTOM", 0, 0)
-sliderMainListScale.Label:SetText(("%.2f"):format(sliderMainListScale:GetValue()))
-sliderMainListScale:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(("%.2f"):format(newValue))
-	settings:SetTooltipSetting("MainListScale", newValue)
-	app:GetWindow("Prime"):SetScale(newValue)
-end)
+sliderMainListScale:SetPoint("TOPLEFT", headerListBehavior, "BOTTOMLEFT", 4, -15)
 
-local sliderMiniListScale = CreateFrame("Slider", "ATTsliderMiniListScale", child, "UISliderTemplate")
-sliderMiniListScale:SetPoint("TOPLEFT", sliderMainListScale, "BOTTOMLEFT", 0, -25)
-table.insert(settings.Objects, sliderMiniListScale)
-settings.sliderMiniListScale = sliderMiniListScale
-sliderMiniListScale.tooltipText = L.MINI_LIST_SCALE_TOOLTIP
-sliderMiniListScale:SetOrientation('HORIZONTAL')
+local sliderMiniListScale = child:CreateSlider("ATTsliderMiniListScale", {
+	TEXT=L.MINI_LIST_SLIDER_LABEL,
+	TOOLTIP=L.MINI_LIST_SCALE_TOOLTIP,
+	SETTING="MiniListScale",
+	FORMAT="%.2f",
+	MIN=0.1, MAX=4, STEP=0.1,
+})
 sliderMiniListScale:SetWidth(200)
 sliderMiniListScale:SetHeight(20)
-sliderMiniListScale:SetValueStep(0.1)
-sliderMiniListScale:SetMinMaxValues(0.1, 4)
-sliderMiniListScale:SetObeyStepOnDrag(true)
-sliderMiniListScale.Text = sliderMiniListScale:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderMiniListScale.Text:SetPoint("BOTTOMLEFT", sliderMiniListScale, "TOPLEFT", 0, 0)
-sliderMiniListScale.Text:SetText(L.MINI_LIST_SLIDER_LABEL)
-sliderMiniListScale.Text:SetTextColor(1, 1, 1)
-sliderMiniListScale.LabelLow = sliderMiniListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMiniListScale.LabelLow:SetPoint("TOPLEFT", sliderMiniListScale, "BOTTOMLEFT", 0, 2)
-sliderMiniListScale.LabelLow:SetText('0.1')
-sliderMiniListScale.LabelHigh = sliderMiniListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMiniListScale.LabelHigh:SetPoint("TOPRIGHT", sliderMiniListScale, "BOTTOMRIGHT", 0, 2)
-sliderMiniListScale.LabelHigh:SetText('4')
-sliderMiniListScale.Label = sliderMiniListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMiniListScale.Label:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, 0)
-sliderMiniListScale.Label:SetText(("%.2f"):format(sliderMiniListScale:GetValue()))
-sliderMiniListScale:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(("%.2f"):format(newValue))
-	settings:SetTooltipSetting("MiniListScale", newValue)
-	for key,window in pairs(app.Windows) do
-		if key ~= "Prime" then
-			window:SetScale(newValue)
-		end
-	end
-end)
+sliderMiniListScale:SetPoint("TOPLEFT", sliderMainListScale, "BOTTOMLEFT", 0, -25)
 
-local checkboxDoAdHocUpdates;
-if app.IsRetail then	-- CRIEVE NOTE: Classic Windows don't support this.
-checkboxDoAdHocUpdates = child:CreateCheckBox(L.ADHOC_UPDATES_CHECKBOX,
+local sliderInactiveWindowAlpha = child:CreateSlider("ATTsliderInactiveWindowAlpha", {
+	TEXT=L.INACTIVE_WINDOW_ALPHA_LABEL,
+	TOOLTIP=L.INACTIVE_WINDOW_ALPHA_TOOLTIP,
+	SETTING="InactiveWindowAlpha",
+	FORMAT="%.2f",
+	MIN=0.1, MAX=1, STEP=0.05,
+})
+sliderInactiveWindowAlpha:SetWidth(200)
+sliderInactiveWindowAlpha:SetHeight(20)
+sliderInactiveWindowAlpha:SetPoint("TOPLEFT", sliderMiniListScale, "BOTTOMLEFT", 0, -25)
+
+local checkboxAdjustRowIndents = child:CreateCheckBox(L.ADJUST_ROW_INDENTS_CHECKBOX,
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"))
+	self:SetChecked(settings:GetTooltipSetting("Adjust:RowIndents"))
 end,
 function(self)
-	settings:SetTooltipSetting("Updates:AdHoc", self:GetChecked())
+	settings:SetTooltipSetting("Adjust:RowIndents", self:GetChecked())
 end)
-checkboxDoAdHocUpdates:SetATTTooltip(L.ADHOC_UPDATES_CHECKBOX_TOOLTIP)
-checkboxDoAdHocUpdates:SetPoint("LEFT", headerListBehavior, 0, 0)
-checkboxDoAdHocUpdates:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, -10)
-end
+checkboxAdjustRowIndents:SetATTTooltip(L.ADJUST_ROW_INDENTS_TOOLTIP)
+checkboxAdjustRowIndents:SetPoint("LEFT", headerListBehavior, 0, 0)
+checkboxAdjustRowIndents:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, -10)
 
 local checkboxExpandMiniList = child:CreateCheckBox(L.EXPAND_MINILIST_CHECKBOX,
 function(self)
@@ -767,12 +690,7 @@ function(self)
 	settings:SetTooltipSetting("Expand:MiniList", self:GetChecked())
 end)
 checkboxExpandMiniList:SetATTTooltip(L.EXPAND_MINILIST_CHECKBOX_TOOLTIP)
-if checkboxDoAdHocUpdates then
-	checkboxExpandMiniList:AlignBelow(checkboxDoAdHocUpdates)
-else
-	checkboxExpandMiniList:SetPoint("LEFT", headerListBehavior, 0, 0)
-	checkboxExpandMiniList:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, -10)
-end
+checkboxExpandMiniList:AlignBelow(checkboxAdjustRowIndents)
 
 local checkboxExpandDifficulty = child:CreateCheckBox(L.EXPAND_DIFFICULTY_CHECKBOX,
 function(self)
@@ -799,7 +717,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("IconPortraits", self:GetChecked());
-	app.CallbackEvent("OnRenderDirty")
+	app.CallbackEvent("OnRedrawWindows")
 end)
 checkboxIconPortrait:SetATTTooltip(L.SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP)
 checkboxIconPortrait:AlignBelow(checkboxExpandDifficulty, app.IsClassic and -1 or nil)
@@ -817,7 +735,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("IconPortraitsForQuests", self:GetChecked())
-	app.CallbackEvent("OnRenderDirty")
+	app.CallbackEvent("OnRedrawWindows")
 end)
 checkboxIconPortraitForQuests:SetATTTooltip(L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP)
 checkboxIconPortraitForQuests:AlignBelow(checkboxIconPortrait, 1)
@@ -832,8 +750,6 @@ end)
 checkboxModelPreview:SetATTTooltip(L.SHOW_MODELS_CHECKBOX_TOOLTIP)
 checkboxModelPreview:AlignBelow(checkboxIconPortraitForQuests, -1)
 
-local checkboxNestedQuestChains;
-if app.IsRetail then	-- CRIEVE NOTE: Classic Windows don't support this just yet.
 local checkboxFillDynamicQuests = child:CreateCheckBox(L.FILL_DYNAMIC_QUESTS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"))
@@ -844,7 +760,7 @@ end)
 checkboxFillDynamicQuests:SetATTTooltip(L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP)
 checkboxFillDynamicQuests:AlignBelow(checkboxModelPreview)
 
-checkboxNestedQuestChains = child:CreateCheckBox(L.NESTED_QUEST_CHAIN_CHECKBOX,
+local checkboxNestedQuestChains = child:CreateCheckBox(L.NESTED_QUEST_CHAIN_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"))
 end,
@@ -853,7 +769,6 @@ function(self)
 end)
 checkboxNestedQuestChains:SetATTTooltip(L.NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP)
 checkboxNestedQuestChains:AlignBelow(checkboxFillDynamicQuests)
-end
 
 local checkboxSortByProgress = child:CreateCheckBox(L.SORT_BY_PROGRESS_CHECKBOX,
 function(self)
@@ -863,7 +778,7 @@ function(self)
 	settings:SetTooltipSetting("Sort:Progress", self:GetChecked())
 end)
 checkboxSortByProgress:SetATTTooltip(L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP)
-checkboxSortByProgress:AlignBelow(checkboxNestedQuestChains or checkboxModelPreview)
+checkboxSortByProgress:AlignBelow(checkboxNestedQuestChains)
 
 local checkboxShowRemainingCount = child:CreateCheckBox(L.SHOW_REMAINING_CHECKBOX,
 function(self)
@@ -885,47 +800,26 @@ end)
 checkboxShowPercentageCount:SetATTTooltip(L.PERCENTAGES_CHECKBOX_TOOLTIP)
 checkboxShowPercentageCount:AlignBelow(checkboxShowRemainingCount)
 
-local sliderPercentagePrecision = CreateFrame("Slider", "ATTsliderPercentagePrecision", child, "UISliderTemplate")
-sliderPercentagePrecision:SetPoint("LEFT", sliderMainListScale, 0, 0)
-sliderPercentagePrecision:SetPoint("TOP", checkboxShowPercentageCount, "BOTTOM", 0, -24)
-table.insert(settings.Objects, sliderPercentagePrecision)
-settings.sliderPercentagePrecision = sliderPercentagePrecision
-sliderPercentagePrecision.tooltipText = L.PRECISION_SLIDER_TOOLTIP
-sliderPercentagePrecision:SetOrientation('HORIZONTAL')
+local sliderPercentagePrecision = child:CreateSlider("ATTsliderPercentagePrecision", {
+	TEXT=L.PRECISION_SLIDER,
+	TOOLTIP=L.PRECISION_SLIDER_TOOLTIP,
+	MIN=0, MAX=8, STEP=1,
+	SETTING="Precision",
+	FORMAT="%.0f",
+	OnRefresh=function(self)
+		if not settings:GetTooltipSetting("Show:Percentage") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+})
 sliderPercentagePrecision:SetWidth(200)
 sliderPercentagePrecision:SetHeight(20)
-sliderPercentagePrecision:SetValueStep(1)
-sliderPercentagePrecision:SetMinMaxValues(0, 8)
-sliderPercentagePrecision:SetObeyStepOnDrag(true)
-sliderPercentagePrecision.Text = sliderPercentagePrecision:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderPercentagePrecision.Text:SetPoint("BOTTOMLEFT", sliderPercentagePrecision, "TOPLEFT", 0, 0)
-sliderPercentagePrecision.Text:SetText(L.PRECISION_SLIDER)
-sliderPercentagePrecision.Text:SetTextColor(1, 1, 1)
-sliderPercentagePrecision.LabelLow = sliderPercentagePrecision:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderPercentagePrecision.LabelLow:SetPoint("TOPLEFT", sliderPercentagePrecision, "BOTTOMLEFT", 0, 2)
-sliderPercentagePrecision.LabelLow:SetText('0')
-sliderPercentagePrecision.LabelHigh = sliderPercentagePrecision:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderPercentagePrecision.LabelHigh:SetPoint("TOPRIGHT", sliderPercentagePrecision, "BOTTOMRIGHT", 0, 2)
-sliderPercentagePrecision.LabelHigh:SetText('8')
-sliderPercentagePrecision.Label = sliderPercentagePrecision:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderPercentagePrecision.Label:SetPoint("TOP", sliderPercentagePrecision, "BOTTOM", 0, 2)
-sliderPercentagePrecision.Label:SetText(sliderPercentagePrecision:GetValue())
-sliderPercentagePrecision:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue)
-	if newValue == settings:GetTooltipSetting("Precision") then
-		return 1
-	end
-	settings:SetTooltipSetting("Precision", newValue)
-end)
-sliderPercentagePrecision.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("Show:Percentage") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end
+sliderPercentagePrecision:SetPoint("LEFT", sliderMainListScale, 0, 0)
+sliderPercentagePrecision:SetPoint("TOP", checkboxShowPercentageCount, "BOTTOM", 0, -24)
 
 if app.IsRetail then	-- CRIEVE NOTE: Classic Dynamic Categories don't support this just yet.
 -- Dynamic Category Toggles

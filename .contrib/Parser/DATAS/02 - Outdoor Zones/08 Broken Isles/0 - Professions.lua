@@ -232,7 +232,7 @@ root(ROOTS.Zones, {
 					q(40559, {	-- Black Rook Hold: The Raven's Wisdom
 						["sourceQuests"] = { 40558 },	-- Socket to Me
 						["provider"] = { "n", 93527 },	-- Timothy Jones
-						["coord"] = { 39.8, 35, LEGION_DALARAN },
+						["coord"] = { 39.8, 35.0, LEGION_DALARAN },
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
 						["groups"] = {
 							i(137800),	-- Dawnlight Band [Rank 1] (RECIPE!)
@@ -241,7 +241,7 @@ root(ROOTS.Zones, {
 					q(40561, {	-- Halls of Valor: Jewel of the Heavens
 						["sourceQuests"] = { 40558 },	-- Socket to Me
 						["provider"] = { "n", 93527 },	-- Timothy Jones
-						["coord"] = { 39.8, 35, LEGION_DALARAN },
+						["coord"] = { 39.8, 35.0, LEGION_DALARAN },
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
 						["groups"] = {
 							i(137799),	-- Maelstrom Band [Rank 1] (RECIPE!)
@@ -250,7 +250,7 @@ root(ROOTS.Zones, {
 					q(40560, {	-- Maw of Souls: Spiriting Away
 						["sourceQuests"] = { 40558 },	-- Socket to Me
 						["provider"] = { "n", 93527 },	-- Timothy Jones
-						["coord"] = { 39.8, 35, LEGION_DALARAN },
+						["coord"] = { 39.8, 35.0, LEGION_DALARAN },
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
 						["groups"] = {
 							i(137798),	-- Prophetic Band [Rank 1] (RECIPE!)
@@ -263,7 +263,7 @@ root(ROOTS.Zones, {
 							40560,	-- Maw of Souls: Spiriting Away
 						},
 						["provider"] = { "n", 93543 },	-- Sminx Glasseye
-						["coord"] = { 39.8, 35, LEGION_DALARAN },
+						["coord"] = { 39.8, 35.0, LEGION_DALARAN },
 						["groups"] = {
 							sp(199991),	-- Design: Class Necklace
 						},

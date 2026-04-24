@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	inst(959, {	-- Invasion Points
 		["coords"] = {
@@ -32,6 +33,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						["_npcs"] = { 124555 },	-- Sotanathor
 					}),
 				}),
+				achpart(42693, 42695, {	-- Breaking the Legion I
+					["maps"] = { 921, 922, 923, 924, 925, 926 },
+				}),
+				achpart(42694, 42695, {	-- Breaking the Legion II
+					["maps"] = { 921, 922, 923, 924, 925, 926 },
+				}),
+				ach(42695, {	-- Breaking the Legion III
+					["maps"] = { 921, 922, 923, 924, 925, 926 },
+				}),
+				ach(42696, {	-- Greater Invasion Points I
+					["maps"] = { 927, 928, 929, 930, 931, 932 },
+				}),
+				ach(42697, {	-- Greater Invasion Points II
+					["maps"] = { 927, 928, 929, 930, 931, 932 },
+				}),
+				ach(42698, {	-- Greater Invasion Points III
+					["maps"] = { 927, 928, 929, 930, 931, 932 },
+				}),
 			}),
 			e(2012, {	-- Inquisitor Meto
 				["creatureID"] = 124592,	-- Inquisitor Meto
@@ -44,9 +63,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					KROKUUN,
 					ANTORAN_WASTES,
 				},
-				["groups"] = {
-					ach(42581),	-- Inquisitor Meto
-				},
+				["groups"] = { ach(42581) },	-- Inquisitor Meto
 			}),
 			e(2010, {	-- Matron Folnuna
 				["creatureID"] = 124514,	-- Matron Folnuna
@@ -59,9 +76,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					KROKUUN,
 					ANTORAN_WASTES,
 				},
-				["groups"] = {
-					ach(42574),	-- Matron Folnuna
-				},
+				["groups"] = { ach(42574) },	-- Matron Folnuna
 			}),
 			e(2011, {	-- Mistress Alluradel
 				["creatureID"] = 124625,	-- Mistress Alluradel
@@ -74,9 +89,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					KROKUUN,
 					ANTORAN_WASTES,
 				},
-				["groups"] = {
-					ach(42538),	-- Mistress Alluradel
-				},
+				["groups"] = { ach(42538) },	-- Mistress Alluradel
 			}),
 			e(2013, {	-- Occularus
 				["creatureID"] = 124492,	-- Occularus
@@ -89,9 +102,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					KROKUUN,
 					ANTORAN_WASTES,
 				},
-				["groups"] = {
-					ach(42604),	-- Occularus
-				},
+				["groups"] = { ach(42604) },	-- Occularus
 			}),
 			e(2015, {	-- Pit Lord Vilemus
 				["creatureID"] = 124719,	-- Pit Lord Vilemus
@@ -104,9 +115,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					KROKUUN,
 					ANTORAN_WASTES,
 				},
-				["groups"] = {
-					ach(42616),	-- Pit Lord Vilemus
-				},
+				["groups"] = { ach(42616) },	-- Pit Lord Vilemus
 			}),
 			e(2014, {	-- Sotanathor
 				["creatureID"] = 124555,		-- Sotanathor
@@ -119,10 +128,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					KROKUUN,
 					ANTORAN_WASTES,
 				},
-				["groups"] = {
-					ach(42534),	-- Sotanathor
-				},
+				["groups"] = { ach(42534) },	-- Sotanathor
 			}),
 		},
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
+	m(BROKEN_ISLES, {
+		m(ARGUS, {
+			q(92541, {["isDaily"] = true }),	-- Triggeres after killing any Greater Invasion Point boss
+		}),
+	}),
+}));

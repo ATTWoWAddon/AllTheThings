@@ -66,9 +66,48 @@ namespace ATT.FieldTypes
             {
                 Merge(newList);
             }
+            else if (value is Dictionary<long, object> newCoordFormat)
+            {
+                Merge(newCoordFormat);
+            }
             else
             {
                 LogError($"Invalid Format for merging 'coords' data: {ToJSON(value)}", _data);
+            }
+        }
+
+        private void Merge(Dictionary<long, object> newCoordFormat)
+        {
+            foreach (var keyValuePair in newCoordFormat)
+            {
+                if (keyValuePair.Value is List<object> coords)
+                {
+                    foreach (var coordObj in coords)
+                    {
+                        if (coordObj is List<object> coordData)
+                        {
+                            var coord = new Coord();
+                            coord.MapID = (int)keyValuePair.Key;
+                            if (coordData[0].TryConvert(out double eDouble, warnOnConvert: true))
+                            {
+                                coord.X = (float)eDouble;
+                            }
+                            else
+                            {
+                                LogError($"Invalid Numeric Format for Merge - {eDouble}:{coords[0]}", _data);
+                            }
+                            if (coordData[1].TryConvert(out eDouble, warnOnConvert: true))
+                            {
+                                coord.Y = (float)eDouble;
+                            }
+                            else
+                            {
+                                LogError($"Invalid Numeric Format for Merge - {eDouble}:{coords[1]}", _data);
+                            }
+                            Merge(coord);
+                        }
+                    }
+                }
             }
         }
 
@@ -92,20 +131,20 @@ namespace ATT.FieldTypes
 
                 foreach (object coordobj in coords)
                 {
-                    // we're merging data which represents coords
-                    if (coordobj.TryConvert(out float eFloat))
+                    // we're merging data which represents coords (coord X/Y values should parse as Double but we store as Float)
+                    if (coordobj.TryConvert(out double eDouble, warnOnConvert: i < 2))
                     {
                         switch (i)
                         {
-                            case 0: coord.X = eFloat; break;
-                            case 1: coord.Y = eFloat; break;
-                            case 2: coord.MapID = (int)eFloat; break;
+                            case 0: coord.X = (float)eDouble; break;
+                            case 1: coord.Y = (float)eDouble; break;
+                            case 2: coord.MapID = (int)eDouble; break;
                             default: LogError("Excessive entries for a single 'coord'", _data); break;
                         }
                     }
                     else
                     {
-                        LogError($"Invalid Numeric Format for Merge - {eFloat}:{coordobj}", _data);
+                        LogError($"Invalid Numeric Format for Merge - {eDouble}:{coordobj}", _data);
                     }
                     i++;
                 }
@@ -136,14 +175,32 @@ namespace ATT.FieldTypes
 
         public object AsExportType()
         {
-            var list = new List<object>();
             var sortedList = new List<Coord>(_coords);
             sortedList.Sort();
+
+            var coordsByMapID = new Dictionary<long, object>();
+            foreach (var coord in sortedList)
+            {
+                if (!coordsByMapID.TryGetValue(coord.MapID, out var coordsObj))
+                {
+                    coordsByMapID[coord.MapID] = coordsObj = new List<object>();
+                }
+                if (coordsObj is List<object> coordsForMapID)
+                {
+                    coordsForMapID.Add(new List<object> { coord.X, coord.Y });
+                }
+            }
+            return coordsByMapID;
+
+            /*
+            // Old Format
+            var list = new List<object>();
             foreach (var coord in sortedList)
             {
                 list.Add(new List<object> { coord.X, coord.Y, coord.MapID });
             }
             return list;
+            */
         }
 
         public void Validate()
@@ -228,8 +285,10 @@ namespace ATT.FieldTypes
 
         public bool Validate() =>
             // apparently we have a couple valid use cases of negative coords
-            //X > 0 &&
-            //Y > 0 &&
+            //X >= 0 &&
+            X <= 100 &&
+            //Y >= 0 &&
+            Y <= 100 &&
             MapID > 0;
     }
 }

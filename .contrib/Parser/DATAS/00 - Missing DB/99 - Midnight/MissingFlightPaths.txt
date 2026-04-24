@@ -1,0 +1,3 @@
+12.0.5.66330
+fp(3201),	-- Quest Path 11282: 12.0.5 Event - Prop Hunt - Teleporter - Upper > Lower
+fp(3202),	-- Quest Path 11283: 12.0.5 Event - Prop Hunt - Teleporter - Lower > Upper

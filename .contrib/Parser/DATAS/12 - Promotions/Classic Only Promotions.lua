@@ -129,6 +129,53 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
 				["u"] = REMOVED_FROM_GAME,
 			})),
+			-- #if CLASSIC_ANNIVERSARY
+			-- 2026 March 17 through May 15
+			q(96254, {	-- An Unexpected Delivery
+				["altQuests"] = { 96253 },	-- An Unexpected Delivery (Innkeepers)
+				["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 }, -- Timeout Correctly ends: Available until May 16, 2026, 10:00 am PDT (18:00 BST). https://worldofwarcraft.blizzard.com/en-us/news/24267942
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 28.2, 75.8, STRANGLETHORN_VALE },
+					-- #endif
+				},
+				["maps"] = {
+					THE_EXODAR,
+					IRONFORGE,
+					STORMWIND_CITY,
+					UNDERCITY,
+					THUNDER_BLUFF,
+					ORGRIMMAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
+				},
+				["crs"] = {
+					16739,	-- Caregiver Breel <Innkeeper>
+					5111,	-- Innkeeper Firebrew <Innkeeper>
+					6740,	-- Innkeeper Allison <Innkeeper>
+					6741,	-- Innkeeper Norman <Innkeeper>
+					6746,	-- Innkeeper Pala <Innkeeper>
+					6929,	-- Innkeeper Gryshka <Innkeeper>
+					16618,	-- Innkeeper Velandra <Innkeeper>
+					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+					19046,	-- Minalei (ALDOR)
+				},
+				["groups"] = {
+					i(273162, {	-- Unexpected Gift
+						["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 }, -- Timeout Correctly ends: Available until May 16, 2026, 10:00 am PDT (18:00 BST). https://worldofwarcraft.blizzard.com/en-us/news/24267942
+						["groups"] = {
+							i(273150, {	-- Voidfeather Dragonhawk
+								["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 }, -- Timeout Correctly ends: Available until May 16, 2026, 10:00 am PDT (18:00 BST). https://worldofwarcraft.blizzard.com/en-us/news/24267942
+								["description"] = "Earned by completing the introductory questline for Midnight in retail servers",
+									}),
+								},
+							}),
+						}
+					}),
+		-- #endif
 		},
 	}),
 	expansion(EXPANSION.WRATH, {
@@ -351,7 +398,39 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 			pet(4850, {	-- Sa'bak's Blessed
 				["description"] = "Obtained if you set up a 6/12 Month WoW Subscription after 15th July 2025.",
 			}),
+			-- Note: Also available in WoW Classic: Titan Reforged
+			n(TREASURE_OF_AZEROTH, sharedDataSelf({
+				["timeline"] = { ADDED_5_5_2 },
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					-- cnONLY(i(, {	-- Titan Reforged Treasure Coin TODO: Its currency to buy all the items
+						-- TODO: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251958.jpg
+						-- cnONLY(i()),	-- Emberbringer
+						cnONLY(i(76755)),	-- Tyrael's Charger
+						cnONLY(i(246264)),	-- Inarius' Charger 
+						cnONLY(i(76889)),	-- Spectral Gryphon 
+						cnONLY(i(76902)),	-- Spectral Wind Rider 
+						cnONLY(i(71726)),	-- Murkablo
+						cnONLY(i(72134)),	-- Gregarious Grell
+						cnONLY(i(72159)),	-- Magical Ogre Idol
+						cnONLY(i(79769)),	-- Demon Hunter's Aspect
+						-- cnONLY(i()),	-- A mysterious exotic item pack for Mists of Pandaria Classic
+						-- cnONLY(i()),	-- 10 Sands of Time (Different game?)
+						-- cnONLY(i()),	-- Shard of Titan Treasure Fragment	
+					-- })),
+				},
+			}));
+			-- Note: Also available in WoW Classic: Titan Reforged
+			cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
+				--["description"] = "todo: add price",
+				["timeline"] = {  ADDED_5_5_2, ADDED_5_5_4 },	-- 2nd April 2026
+				["groups"] = {
+				--	cnONLY(i()),	-- Blazing Quilen mount (MOUNT!)
+					cnONLY(i(267279)),	-- Embers of Al'ar (TOY!)
+				},
+			})),
 		},
-	})
+	}),
 	-- #endif
 }));

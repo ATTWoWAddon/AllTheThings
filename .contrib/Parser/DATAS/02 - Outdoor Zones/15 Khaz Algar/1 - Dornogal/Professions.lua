@@ -1,13 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(DORNOGAL, {
 		n(PROFESSIONS, {
-			n(QUESTS, {
+			n(QUESTS, sharedData({
+				["provider"] = { "n", 219108 },	-- Roldira
+				["coord"] = { 59.1, 55.8, DORNOGAL },
+			},{
 				q(84260, {	-- Crafting to Order
-					["provider"] = { "n", 219108 },	-- Roldira
-					["coord"] = { 59.1, 55.8, DORNOGAL },
 					["groups"] = {
 						i(228931),	-- Algari Enchanter's Satchel
 						i(228932),	-- Algari Engineer's Satchel ?
@@ -21,47 +23,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(84288, {	-- Crafting Orders: Alchemy
 					["sourceQuests"] = { 84260 },	-- Crafting to Order
-					["provider"] = { "n", 219108 },	-- Roldira
-					["coord"] = { 59.1, 55.8, DORNOGAL },
 					["requireSkill"] = ALCHEMY,
 				}),
 				q(84274, {	-- Crafting Orders: Blacksmithing
 					["sourceQuests"] = { 84260 },	-- Crafting to Order
-					["provider"] = { "n", 219108 },	-- Roldira
-					["coord"] = { 59.1, 55.8, DORNOGAL },
 					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(84285, {	-- Crafting Orders: Engineering
 					["sourceQuests"] = { 84260 },	-- Crafting to Order
-					["provider"] = { "n", 219108 },	-- Roldira
-					["coord"] = { 59.1, 55.8, DORNOGAL },
 					["requireSkill"] = ENGINEERING,
 				}),
 				q(84287, {	-- Crafting Orders: Inscription
 					["sourceQuests"] = { 84260 },	-- Crafting to Order
-					["provider"] = { "n", 219108 },	-- Roldira
-					["coord"] = { 59.1, 55.8, DORNOGAL },
 					["requireSkill"] = INSCRIPTION,
 				}),
 				q(84279, {	-- Crafting Orders: Jewelcrafting
 					["sourceQuests"] = { 84260 },	-- Crafting to Order
-					["provider"] = { "n", 219108 },	-- Roldira
-					["coord"] = { 59.1, 55.8, DORNOGAL },
 					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(84280, {	-- Crafting Orders: Leatherworking
 					["sourceQuests"] = { 84260 },	-- Crafting to Order
-					["provider"] = { "n", 219108 },	-- Roldira
-					["coord"] = { 59.1, 55.8, DORNOGAL },
 					["requireSkill"] = LEATHERWORKING,
 				}),
 				q(84281, {	-- Crafting Orders: Tailoring
 					["sourceQuests"] = { 84260 },	-- Crafting to Order
-					["provider"] = { "n", 219108 },	-- Roldira
-					["coord"] = { 59.1, 55.8, DORNOGAL },
 					["requireSkill"] = TAILORING,
 				}),
-			}),
+			})),
 			prof(ALCHEMY, {
 				n(219092, {	-- Tarig <Alchemy Trainer>
 					["coord"] = { 47.3, 70.4, DORNOGAL },
@@ -102,6 +90,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(224762),	-- Delver's Waterskin
 						i(222700),	-- Granulated Spices
 						i(222699),	-- Khaz Algar Tomato
+						i(259894),	-- Perfect Preservatives
 						i(222695),	-- Twined Herbs
 					},
 				}),
@@ -116,15 +105,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["groups"] = {
 						i(227208),	-- Bismuth Rod
 						i(220789, {	-- Nascent Gilded Harbinger Crest
-							["cost"] = {{"c", GILDED_HARBINGER_CREST, 60}},
+							["cost"] = { { "c", GILDED_HARBINGER_CREST, 60 } },
 							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						}),
 						i(220790, {	-- Nascent Runed Harbinger Crest
-							["cost"] = {{"c", RUNED_HARBINGER_CREST, 45}},
+							["cost"] = { { "c", RUNED_HARBINGER_CREST, 45 } },
 							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						}),
 						i(220788, {	-- Nascent Weathered Harbinger Crest
-							["cost"] = {{"c", WEATHERED_HARBINGER_CREST, 30}},
+							["cost"] = { { "c", WEATHERED_HARBINGER_CREST, 30 } },
 							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						}),
 					},

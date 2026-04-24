@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(THE_MAW, {
 		header(HEADERS.Spell, 354778, {	-- The Rift
 			["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nThis phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r in Korthia or by using a |cFF0070ddCollapsing Riftstone|r.",
 			["cost"] = {
-				{"i",186969,1},	-- Collapsing Riftstone
-				{"i",186731,1},	-- Repaired Riftkey
+				{ "i", 186969, 1 },	-- Collapsing Riftstone
+				{ "i", 186731, 1 },	-- Repaired Riftkey
 			},
 			["groups"] = {
 				n(QUESTS, {

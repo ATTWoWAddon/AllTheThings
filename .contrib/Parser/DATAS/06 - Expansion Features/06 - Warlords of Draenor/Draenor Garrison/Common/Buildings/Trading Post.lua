@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				n(QUESTS, {
 					q(36948, {	-- Auctioning for Parts
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
-						["provider"] = { "n", 87206 },	-- Ancient Trading Mechanism
+						["qg"] = 87206,	-- Ancient Trading Mechanism
 						["cost"] = {
 							{ "i", 118375, 1 },	-- 1x Arcane Crystal Module
 							{ "i", 118376, 1 },	-- 1x Auction Control Module
@@ -42,7 +42,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(37014, {	-- Auctioning for Parts
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
-						["provider"] = { "n", 86806 },	-- Ancient Trading Mechanism
+						["qg"] = 86806,	-- Ancient Trading Mechanism
 						["cost"] = {
 							{ "i", 118375, 1 },	-- 1x Arcane Crystal Module
 							{ "i", 118376, 1 },	-- 1x Auction Control Module
@@ -118,12 +118,51 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 				}),
 				n(VENDORS, {
+					n(COMMON_VENDOR_ITEMS, {
+						["crs"] = {
+							86777,	-- Elder Surehide <Trader>
+							86779,	-- Krixel Pinchwhistle <Trader>
+							86778,	-- Pyxni Pennypocket <Trader>
+							86776,	-- Ribchewer <Trader>
+							86683,	-- Tai'tasi <Trader>
+						},
+						["groups"] = {
+							i(245444, {	-- Orcish Communal Stove (DECOR!)
+								["races"] = HORDE_ONLY,
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
+							}),
+							i(245445, {	-- Frostwolf Axe-Dart Board (DECOR!)
+								["races"] = HORDE_ONLY,
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = { { "c", GARRISON_RESOURCES, 150 } },
+							}),
+							i(244322, {	-- Frostwolf Banded Stool (DECOR!)
+								["races"] = HORDE_ONLY,
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
+							}),
+							i(244321, {	-- Orcish Lumberjack's Stool (DECOR!)
+								["races"] = HORDE_ONLY,
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
+							}),
+						},
+					}),
 					n(87015, {	-- Kil'rip <Laughing Skull Quartermaster>
 						["races"] = HORDE_ONLY,
 						["crs"] = { 86698 },	-- Kil'rip
 						["groups"] = bubbleDownClassicRep(FACTION_LAUGHING_SKULL_ORCS, {
 							{		-- Neutral
 							}, {	-- Friendly
+								i(245433, {	-- Blackrock Strongbox (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", APEXIS_CRYSTAL, 1000 } },
+								}),
+								i(245431, {	-- Draenor Cookpot (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", APEXIS_CRYSTAL, 1000 } },
+								}),
 								i(119159, {	-- Happy Fun Skull
 									["cost"] = 5000000,		-- 500g
 								}),
@@ -138,45 +177,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							}, {	-- Revered
 								i(118672, {	-- Bloody Visage of the Laughing Skull
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 1000 },
 										{ "g", 10000000 },	-- 1,000g
-										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
 									},
 								}),
 								i(119146, {	-- Bone Wasp (PET!)
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 2000 },
 										{ "g", 10000000 },	-- 1,000g
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
 									},
 								}),
 								i(119166, {	-- Contract: Cacklebone
 									["cost"] = 50000000,	-- 5,000g
-									["groups"] = {
-										follower(458),	-- Cacklebone
-									},
+									["groups"] = { follower(458) },	-- Cacklebone
 								}),
 								i(118671, {	-- Frozen Visage of the Laughing Skull
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 1000 },
 										{ "g", 10000000 },	-- 1,000g
-										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
 									},
 								}),
 								i(118674, {	-- Visage of the Laughing Skull
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 1000 },
 										{ "g", 10000000 },	-- 1,000g
-										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
 									},
 								}),
 							}, {	-- Exalted
 								i(118673, {	-- Golden Visage of the Laughing Skull
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 1000 },
 										{ "g", 50000000 },	-- 5,000g
-										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
 									},
 								}),
 								i(116782, {	-- Ironside Warwolf (MOUNT!)
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 5000 },
 										{ "g", 50000000 },	-- 5,000g
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 									},
 								}),
 								i(119138),	-- Laughing Skull Orc Tabard
@@ -191,16 +228,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 								i(245424, {	-- Draenic Storage Chest (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 1000 },
 										{ "g", 5000000 },	-- 500g
-										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
 									},
 								}),
 								i(118669),	-- Sha'tari Elixir
 								i(251544, {	-- Telredor Recliner (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 1000 },
 										{ "g", 5000000 },	-- 500g
-										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
 									},
 								}),
 							}, {	-- Honored
@@ -211,9 +248,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							}, {	-- Revered
 								i(119167, {	-- Contract: Vindicator Heluun
 									["cost"] = 50000000,	-- 5,000g
-									["groups"] = {
-										follower(458),	-- Vindicator Heluun
-									},
+									["groups"] = { follower(458) },	-- Vindicator Heluun
 								}),
 								iensemble(158208, {	-- Ensemble: Sha'tari Defender's Plate
 									["classes"] = PLATE_CLASSES,
@@ -222,15 +257,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 								i(119421),	-- Sha'tari Defender's Medallion (TOY!)
 								i(119150, {	-- Sky Fry (PET!)
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 2000 },
 										{ "g", 10000000 },	-- 1,000g
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
 									},
 								}),
 							}, {	-- Exalted
 								i(116665, {	-- Armored Irontusk (MOUNT!)
 									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 5000 },
 										{ "g", 50000000 },	-- 5,000g
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 									},
 								}),
 								i(119140),	-- Sha'tari Defense Tabard

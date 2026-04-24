@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(GRIZZLY_HILLS, {
@@ -151,7 +152,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(12176, {  -- A Minor Substitution
+					q(12176, { 	-- A Minor Substitution
 						["sourceQuest"] = 12175,	-- Gray Worg Hides
 						["qg"] = 27037,	-- Hidetrader Jun'ik
 						["coord"] = { 22.0, 65.1, GRIZZLY_HILLS },
@@ -201,7 +202,7 @@ root(ROOTS.Zones, {
 							i(39025),	-- Shackles of Sanity
 						},
 					}),
-					q(12229, {  -- A Possible Link (H)
+					q(12229, { 	-- A Possible Link (H)
 						["sourceQuests"] = {
 							12213,	-- The Darkness Beneath
 							12207,	-- Vordassil's Fall
@@ -308,7 +309,7 @@ root(ROOTS.Zones, {
 							i(38752),	-- Tatiana's Pendant
 						},
 					}),
-					q(12413, {  -- Attack on Silverbrook
+					q(12413, { 	-- Attack on Silverbrook
 						["sourceQuest"] = 12412,	-- My Enemy's Friend
 						["qg"] = 26860,	-- Conqueror Krenna
 						["coord"] = { 20.6, 64.1, GRIZZLY_HILLS },
@@ -357,7 +358,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					})),
-					q(12199, {  -- Bringing Down the Iron Thane
+					q(12199, { 	-- Bringing Down the Iron Thane
 						["sourceQuest"] = 12198,	-- ... Or Maybe We Don't
 						["qg"] = 27227,	-- Prospector Rokar
 						["coord"] = { 65.1, 47.2, GRIZZLY_HILLS },
@@ -493,7 +494,7 @@ root(ROOTS.Zones, {
 							i(38745),	-- Fetid Loop
 							i(38747),	-- Mildly Tarnished Ring
 							i(38746),	-- Rancid Signet
-							i(248622, {	-- Wooden Outhouse (DECOR!)
+							i(248622, {		-- Wooden Outhouse (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
 							}),
 						},
@@ -575,6 +576,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.0, 47.9, GRIZZLY_HILLS },
 					}),
 					q(11984, {	-- Filling the Cages
+						["description"] = "This quest requires the use of a pet named Budd.\nAny pet classes must dismiss their active pets.\nSpeak with Budd in the camp to get him as a pet.\nThe ability to tag a troll can be found on the pet bar.",
 						["sourceQuests"] = {
 							12210,	-- Troll Season! (A)
 							12208,	-- Good Troll Hunting (H)
@@ -641,7 +643,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 20.7, 64.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
-					q(12175, {  -- Grey Worg Hides
+					q(12175, { 	-- Grey Worg Hides
 						["qg"] = 27037,	-- Hidetrader Jun'ik
 						["coord"] = { 22.0, 65.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
@@ -702,7 +704,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12204, {	-- In the Name of Loken
-						["sourceQuest"] = 12099,	-- Free at Last -- TODO: verify
+						["sourceQuest"] = 12099,	-- Free at Last	-- TODO: verify
 						["qg"] = 26666,	-- Scout Vor'takh
 						["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
@@ -905,7 +907,7 @@ root(ROOTS.Zones, {
 							i(38714),	-- Path-Cutter's Cord
 						},
 					}),
-					q(12412, {  -- My Enemy's Friend
+					q(12412, { 	-- My Enemy's Friend
 						["sourceQuest"] = 12259,	-- The Thane of Voldrune
 						["qg"] = 26860,	-- Conqueror Krenna
 						["coord"] = { 20.7, 64.1, GRIZZLY_HILLS },
@@ -1409,7 +1411,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 22.4, 63.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
-					q(12431, {  -- The Conquest Pit: Final Showdown
+					q(12431, { 	-- The Conquest Pit: Final Showdown
 						["sourceQuest"] = 12430,	-- The Conquest Pit: Death Is Likely
 						["qg"] = 27719,	-- Grennix Shivwiggle
 						["coord"] = { 22.4, 63.8, GRIZZLY_HILLS },
@@ -1439,7 +1441,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12213, {	-- The Darkness Beneath
-						["sourceQuest"] = 12413,	-- Attack on Silverbrook -- TODO: verify
+						["sourceQuest"] = 12413,	-- Attack on Silverbrook	-- TODO: verify
 						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
@@ -1569,7 +1571,7 @@ root(ROOTS.Zones, {
 							i(39075),	-- Waywalker's Girdle
 						},
 					}),
-					q(12058, {  -- The Runic Prophecies (H)
+					q(12058, { 	-- The Runic Prophecies (H)
 						["sourceQuest"] = 12054,	-- Deciphering the Journal
 						["qg"] = 26584,	-- Sage Paluna
 						["coord"] = { 65.1, 47.7, GRIZZLY_HILLS },
@@ -1609,7 +1611,7 @@ root(ROOTS.Zones, {
 							i(39016),	-- Tunic of the Rectified Thane
 						},
 					}),
-					q(12259, {  -- The Thane of Voldrune (H)
+					q(12259, { 	-- The Thane of Voldrune (H)
 						["sourceQuests"] = {
 							12257,	-- A Show of Strength
 							12256,	-- The Flamebinders' Secrets
@@ -1711,7 +1713,7 @@ root(ROOTS.Zones, {
 							i(39177),	-- Pants of Purified Wind
 						},
 					}),
-					q(12236, {  -- Ursoc, the Bear God (H)
+					q(12236, { 	-- Ursoc, the Bear God (H)
 						["sourceQuests"] = {
 							12241,	-- Destroy the Sapling
 							12242,	-- Vordrassil's Seeds
@@ -1765,7 +1767,7 @@ root(ROOTS.Zones, {
 							i(38718),	-- Wispy Shoulderpads
 						},
 					}),
-					q(12207, {  -- Vordrassil's Fall
+					q(12207, { 	-- Vordrassil's Fall
 						["sourceQuest"] = 12413,	-- Attack on Silverbrook
 						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
@@ -1810,7 +1812,7 @@ root(ROOTS.Zones, {
 							i(38743),	-- Ring of the Tender
 						},
 					}),
-					q(12242, {  -- Vordrassil's Seeds (H)
+					q(12242, { 	-- Vordrassil's Seeds (H)
 						["sourceQuests"] = {
 							12229,	-- A Possible Link
 							12231,	-- The Bear God's Offpsring
@@ -2001,10 +2003,10 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(VENDORS, {
-					["description"] = "The PVP vendors in this zone (Grizzly D. Adams and Purkom) are only visible while your faction controls Venture Bay.",
 					["groups"] = {
 						n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
 							["coord"] = { 13.8, 86.4, GRIZZLY_HILLS },
+							["description"] = "Is only visible while your faction controls Venture Bay.",
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = pvp({
 								-- TODO: For Cata, we're gonna need to add the honor costs... yuck.
@@ -2055,6 +2057,31 @@ root(ROOTS.Zones, {
 								})),
 							}),
 						}),
+						n(29275, {	-- Aspen Grove Supplier <Food & Drink>
+							["coord"] = { 34.6, 55.0, GRIZZLY_HILLS },
+							["description"] = "This vendor is only friendly to Alliance players, and even then it only applies until you finalise your relationship with the people at Silverbrook!",
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(40359),	-- Fresh Eagle Meat
+								i(40356),	-- Grizzleberries
+								i(40357),	-- Grizzleberry Juice
+								i(40358),	-- Raw Tallhorn Chunk
+							},
+						}),
+						n(26484, {	-- Hugh Glass <Merchant>
+							["coord"] = { 69.1, 40.1, GRIZZLY_HILLS },
+							["groups"] = {
+								i(35794),	-- Silvercoat Stag Meat
+							},
+						}),
+						n(29244, {	-- Jesse Masters <Butcher>
+							["coord"] = { 31.6, 59.8, GRIZZLY_HILLS },
+							["description"] = "Access to this vendor requires completing 'Replenishing the Storehouse' and the following 'Take Their Rear!'.",
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(40202),	-- Sizzling Grizzly Flank
+							},
+						}),
 						n(26868, {	-- Provisioner Lorkran <General Goods>
 							["coord"] = { 22.6, 66.0, GRIZZLY_HILLS },
 							["races"] = HORDE_ONLY,
@@ -2065,6 +2092,7 @@ root(ROOTS.Zones, {
 						}),
 						n(27730, {	-- Purkom <Venture Coin Vendor>
 							["coord"] = { 13.8, 86.2, GRIZZLY_HILLS },
+							["description"] = "Is only visible while your faction controls Venture Bay.",
 							["races"] = HORDE_ONLY,
 							["groups"] = pvp({
 								-- TODO: For Cata, we're gonna need to add the honor costs... yuck.
@@ -2133,20 +2161,37 @@ root(ROOTS.Zones, {
 								30750,	-- Draenic Warblade
 							}},
 						}),
+						n(27391, {	-- Woodsman Drake
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 32.4, 59.9, GRIZZLY_HILLS },
+							["groups"] = {
+								i(248622, {		-- Wooden Outhouse (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+								}),
+							},
+						}),
 					},
 				}),
 				n(ZONE_DROPS, {
-					applyclassicphase(WRATH_PHASE_TWO, i(44981, {	-- Ashwood Brand
+					applyclassicphase(WRATH_PHASE_TWO, n(33224, {	-- Maiden of Ashwood Lake
 						["description"] = "Kiss this frog.",
 						["provider"] = { "i", 44986 },	-- Warts-B-Gone Lip Balm
 						["coord"] = { 60.5, 51.5, GRIZZLY_HILLS },
-						["cr"] = 33224,	-- Maiden of Ashwood Lake
+						["groups"] = { i(44981) },	-- Ashwood Brand (QI!)
 					})),
+					i(36743, {	-- Desperate Mojo
+						["description"] = "Only used for a given quest, can otherwise be vendored.",
+					}),
+					i(35799, {	-- Frozen Mojo
+						["description"] = "Only used for a given quest, can otherwise be vendored.",
+					}),
 					i(41123, {	-- Plans: Reinforced Cobalt Helm (RECIPE!)
 						["coord"] = { 68.4, 16.0, GRIZZLY_HILLS },
 						["cr"] = 26270,	-- Iron Rune-Shaper
 					}),
-					i(36758),	-- Sacred Mojo
+					i(36758, {	-- Sacred Mojo
+						["description"] = "Only used for a given quest, can otherwise be vendored.",
+					}),
 					i(46108, {	-- Technique: Rituals of the New Moon
 						["crs"] = {
 							27676,	-- Silverbrook Defender
@@ -2154,6 +2199,9 @@ root(ROOTS.Zones, {
 							26679,	-- Silverbrook Trapper
 							26708,	-- Silverbrook Villager
 						},
+					}),
+					i(35836, {	-- Zim'bo's Mojo
+						["description"] = "Only used for a given quest, can otherwise be vendored.",
 					}),
 				}),
 			},

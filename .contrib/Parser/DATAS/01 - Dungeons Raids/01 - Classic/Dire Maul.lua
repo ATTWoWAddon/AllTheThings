@@ -1,18 +1,24 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 WARPWOOD_QUARTER = createHeader({
 	readable = "Warpwood Quarter",
 	icon = 236292,
 	text = {
-		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (East)"]],
-		fr = [[~DUNGEON_FLOOR_DIREMAUL5.." (Est)"]],
-		ru = [[~DUNGEON_FLOOR_DIREMAUL5.." (Восток)"]],
-		cn = [[~DUNGEON_FLOOR_DIREMAUL5.." (东)"]],
-		tw = [[~DUNGEON_FLOOR_DIREMAUL5.." (東)"]],
+		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (" .. L.EAST ..")"]]
 	},
 	description = {
 		en = "This part of the instance can be accessed from the eastern-most portal. (right side)",
+		-- TODO: de = "",
+		es = "Se puede acceder a esta parte de la mazmorra desde el portal más al este. (lado derecho)",
+		mx = "Se puede acceder a esta parte del calabozo desde el portal más al este. (lado derecho)",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "该副本的此部分可从最东侧的入口进入。（右侧）",
 		tw = "副本的這部分可以從最東邊的傳送門進入。（右側）",
 	},
 });
@@ -20,14 +26,19 @@ GORDOK_COMMONS = createHeader({
 	readable = "Gordok Commons",
 	icon = 236695,
 	text = {
-		en = [[~DUNGEON_FLOOR_DIREMAUL1.." (North)"]],
-		fr = [[~DUNGEON_FLOOR_DIREMAUL1.." (Nord)"]],
-		ru = [[~DUNGEON_FLOOR_DIREMAUL1.." (Север)"]],
-		cn = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
-		tw = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
+		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (" .. L.NORTH ..")"]]
 	},
 	description = {
 		en = "This part of the instance can be accessed from the northern-most portal.",
+		-- TODO: de = "",
+		es = "Se puede acceder a esta parte de la mazmorra desde el portal más al norte.",
+		mx = "Se puede acceder a esta parte del calabozo desde el portal más al norte.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "该副本的此部分可从最北侧的入口进入。",
 		tw = "副本的這部分可以從最北邊的傳送門進入。",
 	},
 });
@@ -35,17 +46,23 @@ CAPITAL_GARDENS = createHeader({
 	readable = "Capital Gardens",
 	icon = 134162,
 	text = {
-		en = [[~DUNGEON_FLOOR_DIREMAUL2.." (West)"]],
-		fr = [[~DUNGEON_FLOOR_DIREMAUL2.." (Ouest)"]],
-		ru = [[~DUNGEON_FLOOR_DIREMAUL2.." (Запад)"]],
-		cn = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
-		tw = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
+		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (" .. L.WEST ..")"]]
 	},
 	description = {
 		en = "This part of the instance can be accessed from the western-most portal. (left side)",
+		-- TODO: de = "",
+		es = "Se puede acceder a esta parte de la mazmorra desde el portal más al oeste. (lado izquierdo)",
+		mx = "Se puede acceder a esta parte del calabozo desde el portal más al oeste. (lado izquierdo)",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "该副本的此部分可从最西侧的入口进入。（左侧）",
 		tw = "副本的這部分可以從最西邊的傳送門進入。（左側）",
 	},
 });
+
 local DIREMAUL_SUBMAP = function(mapID, headerID, t)
 	t.headerID = headerID;
 	local oldMaps = t.maps;
@@ -124,6 +141,7 @@ local OnTooltipForSteamweedle = [[function(t, tooltipInfo)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_DIREMAUL, bubbleDown({ ["timeline"] = { ADDED_1_2_0 } }, {
 	inst(230, {	-- Dire Maul
 		-- #if BEFORE MOP
@@ -132,6 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 		-- #if BEFORE MOP
 		["zone-text-areas"] = {
 			2557,	-- Dire Maul
+			2577,	-- Eldreth Row
 			3217,	-- "The Maul" now points to Dire Maul.
 			-- #if AFTER CATA
 			-- This areaID doesn't exist until Cataclysm!
@@ -269,6 +288,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
+				}),
+				q(5527, {	-- A Reliquary of Purity
+					["qg"] = 11801,	-- Rabine Saturna
+					["coord"] = { 51.7, 45.1, MOONGLADE },
+					["description"] = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { SILITHUS },
+					["lvl"] = 56,
+					["groups"] = {
+						objective(1, {	-- 0/1 Reliquary of Purity
+							["providers"] = {
+								{ "i", 22201 },	-- Reliquary of Purity
+								{ "o", 179565 },	-- Dusty Reliquary
+							},
+							["coord"] = { 63.2, 55.4, SILITHUS },
+						}),
+					},
+				}),
+				q(5526, {	-- Shards of the Felvine
+					["sourceQuest"] = 5527,	-- A Reliquary of Purity
+					["qg"] = 11801,	-- Rabine Saturna
+					["coord"] = { 51.7, 45.1, MOONGLADE },
+					["timeline"] = { REMOVED_4_0_3 },
+					["lvl"] = 56,
+					["groups"] = {
+						objective(1, {	-- 0/1 Sealed Reliquary of Purity
+							["provider"] = { "i", 18540 },	-- Sealed Reliquary of Purity
+							["cost"] = {
+								{ "i", 18539, 1 },	-- Reliquary of Purity
+								{ "i", 18501, 1 },	-- Felvine Shard
+							},
+						}),
+						i(18535, {	-- Milli's Shield
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+						i(18536, {	-- Milli's Lexicon
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				q(84550, {	-- Codex of Defense
@@ -457,8 +515,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						10878,	-- Herald Moonstalker
 					},
 					["coords"] = {
-						{ 39, 63.6, DARNASSUS },
-						{ 30.5, 67, IRONFORGE },
+						{ 39.0, 63.6, DARNASSUS },
+						{ 30.5, 67.0, IRONFORGE },
 						{ 54.8, 62.6, STORMWIND_CITY },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -818,7 +876,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					},
 				}),
-				q(27112, { -- The Cursed Remains
+				q(27112, {	-- The Cursed Remains
 					["qg"] = 44991,	-- Estulan
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
@@ -1432,16 +1490,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					n(11491, {	-- Old Ironbark
 						["description"] = "Talk to him for him to break down the door.",
 					}),
-					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16097,	-- Isalien
-					-- #if BEFORE 4.0.3
-					bubbleDown({
-						["timeline"] = { REMOVED_4_0_3 },
-						-- #if NOT ANYCLASSIC
-						["u"] = CONDITIONALLY_AVAILABLE,
-						-- #endif
-					},
-					-- #endif
-					{
+					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16097, {	-- Isalien
 						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",
 						["cost"] = {
 							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
@@ -1451,6 +1500,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- This init function unmarks the removed from game flag for folks with the brazier.
 						["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 						-- #endif
+						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
 							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								["questID"] = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
@@ -1480,11 +1530,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { DELETED_5_0_4 },
 							}),
 						},
-					}
-					-- #if BEFORE 4.0.3
-					)
-					-- #endif
-					)),
+					})),
 					e(405, {	-- Alzzin the Wildshaper
 						["creatureID"] = 11492,
 						["groups"] = {
@@ -1575,9 +1621,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						q(77194, {	-- Free Knot!
 							["description"] = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel whitout lowering your reputation with the Bloodsail Buccaneers.",
 							["qg"] = 14338,	-- Knot Thimblejack
-							["cost"] = {
-								{ "i", 18250, 1 },	-- Gordok Shackle Key
-							},
+							["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 							["repeatable"] = true,
 							["groups"] = {
 								i(208028, {	-- Knot Thimblejack's Cache
@@ -1888,7 +1932,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18485, {	-- Observer's Shield
 								-- #if SEASON_OF_DISCOVERY
 								-- CRIEVE NOTE: This doesn't appear to have been replaced yet.
-								--["timeline"] = { REMOVED_1_15_3 },
+								-- ["timeline"] = { REMOVED_1_15_3 },
 								-- #endif
 							}),
 							-- #if SEASON_OF_DISCOVERY
@@ -1900,7 +1944,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18490, {	-- Insightful Hood
 								-- #if SEASON_OF_DISCOVERY
 								-- CRIEVE NOTE: This doesn't appear to have been replaced yet.
-								--["timeline"] = { REMOVED_1_15_3 },
+								-- ["timeline"] = { REMOVED_1_15_3 },
 								-- #endif
 							}),
 							-- #if AFTER 7.3.5
@@ -2045,7 +2089,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18538, {	-- Treant's Bane
 								-- #if SEASON_OF_DISCOVERY
 								-- CRIEVE NOTE: There's no evidence that the reitemized version has dropped yet.
-								--["timeline"] = { REMOVED_1_15_3 },
+								-- ["timeline"] = { REMOVED_1_15_3 },
 								-- #endif
 							}),
 							-- #if SEASON_OF_DISCOVERY
@@ -2245,14 +2289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							})),
 						},
 					}),
-					n(14506,	-- Lord Hel'nurath
-						bubbleDown({
-							-- #if BEFORE 4.0.3
-							["timeline"] = { REMOVED_4_0_3 },
-							-- #else
-							["u"] = CONDITIONALLY_AVAILABLE,
-							-- #endif
-						}, {
+					n_conditional(14506, {	-- Lord Hel'nurath
 						["description"] =
 							-- #if AFTER CATA
 							"|cff3399ffSTEP 1:|r Warlock with (Dreadsteed of Xoroth) FOS\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",
@@ -2265,6 +2302,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							{ "i", 18629, 1 },	-- Black Lodestone
 							{ "i", 18663, 1 },	-- J'eevee's Jar
 						},
+						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228475, {	-- Diabolic Mantle
@@ -2280,7 +2318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18756),	-- Dreadguard Protector
 							i(18754),	-- Fel Hardened Bracers
 						},
-					})),
+					}),
 					e(410, {	-- Prince Tortheldrin
 						["creatureID"] = 11486,
 						["groups"] = {

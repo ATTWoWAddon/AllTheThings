@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Коллекция обновлена.",
 		-- TODO: ko = "",
 		cn = "刷新收藏完成。",
-		-- TODO: tw = "",
+		-- tw = "刷新收藏完成。",
 	},
 })

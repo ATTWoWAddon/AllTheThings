@@ -183,7 +183,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					["qg"] = 134554,	-- Lady Sylvanas Windrunner
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(158937),	--Everburning Torch (QI!)
+						i(158937),	-- Everburning Torch (QI!)
 					},
 				}),
 				q(52806, {	-- A Looming Threat [Note: Final Quest for Part 1]

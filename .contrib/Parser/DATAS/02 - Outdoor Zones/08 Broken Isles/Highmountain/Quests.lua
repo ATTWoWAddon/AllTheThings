@@ -233,6 +233,7 @@ root(ROOTS.Zones, {
 					},
 					["provider"] = { "n", 96038 },	-- Jale Rivermane
 					["groups"] = {
+						i(264477, {["timeline"] = { ADDED_12_0_1 }}),	-- Thunder Totem Mailbox (DECOR!)
 						i(200662, {	-- Encrusted Blade of the Mountains
 							["timeline"] = ADDED_10_0_2,
 							["classes"] = { EVOKER },
@@ -323,7 +324,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = {
 						40070,	-- Eagle Egg Recovery
 						42425,	-- Going Down, Going Up
-					--	may also require "Tamer Takedown"
+						40071,	-- Tamer Takedown
 					},
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
 					["coord"] = { 49.4, 39.2, HIGHMOUNTAIN },
@@ -369,7 +370,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 40069 },	-- Fledgling Worm Guts
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
 					["coord"] = { 49.4, 39.2, HIGHMOUNTAIN },
-				--	didn't require "Eagle Egg Recovery" or "Tamer Takedown."
+					-- didn't require "Eagle Egg Recovery" or "Tamer Takedown."
 					["groups"] = {
 						o(250413, {	-- Oren's Prized Possessions
 							["coord"] = { 49.4, 39.3, HIGHMOUNTAIN },
@@ -618,14 +619,17 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 98067 },	-- King Mrgl-Mrgl
 					["coord"] = { 42.7, 10.8, HIGHMOUNTAIN },
 					["groups"] = {
-						i(132116),	-- Slime-Stacked Shoulderguards
+						i(258221, {	-- Driftwood Junk Pile (DECOR!)
+							["timeline"] = { ADDED_12_0_0 },
+						}),
 						i(132113),	-- Pufferfish Demolition Greaves (Cloth)
-						i(132112),	-- Pufferfish Demolition Legwraps
 						i(132110),	-- Pufferfish Demolition Greaves (Plate)
 						i(132111),	-- Pufferfish Demolition Legguards
-						i(132114),	-- Slime-Stacked Shoulderplates
+						i(132112),	-- Pufferfish Demolition Legwraps
 						i(132115),	-- Slime-Stacked Mantle
+						i(132116),	-- Slime-Stacked Shoulderguards
 						i(132117),	-- Slime-Stacked Shoulderpads
+						i(132114),	-- Slime-Stacked Shoulderplates
 					},
 				}),
 				q(39491, {	-- Ormgul the Pestilent
@@ -1169,7 +1173,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			}),
 			n(QUESTS, {
 				q(40609),	-- 7.0 Highmountain - Vignette - Windripper Peak - Taurson - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing The Beastly Boxer
-				-- q(40610),	-- 7.0 Highmountain - Vignette - Worm Treasure - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing Treasure Worm
+				-- q(40610),	-- HQT Collect 40 treasures in Highmountain achievement
 				-- q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
 				q(39991),	-- Blessing of Cenarius - being blessed by Cenarius during "Huln's War - Shadowsong" (questID 40388)
 				q(43957),	-- Jade Darkhaven

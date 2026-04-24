@@ -358,3 +358,97 @@
 10376@@@--
 10378@@@--
 10549@@@--
+9085@@@Shadows of Doom
+9153@@@Under the Shadow
+9154@@@Light's Hope Chapel
+9247@@@The Keeper's Call
+9260@@@Investigate the Scourge of Stormwind
+9261@@@Investigate the Scourge of Ironforge
+9262@@@Investigate the Scourge of Darnassus
+9263@@@Investigate the Scourge of Orgrimmar
+9264@@@Investigate the Scourge of Thunder Bluff
+9265@@@Investigate the Scourge of the Undercity
+9292@@@Cracked Necrotic Crystal
+9295@@@Letter from the Front
+9299@@@Note from the Front
+9300@@@Page from the Front
+9301@@@Envelope from the Front
+9302@@@Missive from the Front
+9304@@@Document from the Front
+9310@@@Faint Necrotic Crystal
+60860@@@--
+60870@@@--
+61547@@@--
+65309@@@--
+65616@@@--
+66145@@@--
+66193@@@--
+66281@@@--
+66286@@@--
+66287@@@--
+66288@@@--
+66289@@@--
+66290@@@--
+66291@@@--
+66292@@@--
+66293@@@--
+66294@@@--
+66295@@@--
+66317@@@--
+66318@@@--
+73193@@@--
+74584@@@--
+75300@@@--
+78647@@@--
+78650@@@--
+78651@@@--
+78652@@@--
+78653@@@--
+78654@@@--
+64032@@@--
+64033@@@--
+64036@@@--
+64071@@@--
+64095@@@--
+64275@@@--
+66990@@@--
+66991@@@--
+93823@@@--
+93824@@@--
+8905@@@An Earnest Proposition
+8906@@@An Earnest Proposition
+8907@@@An Earnest Proposition
+8908@@@An Earnest Proposition
+8909@@@An Earnest Proposition
+8910@@@An Earnest Proposition
+8911@@@An Earnest Proposition
+8912@@@An Earnest Proposition
+8913@@@An Earnest Proposition
+8914@@@An Earnest Proposition
+8915@@@An Earnest Proposition
+8916@@@An Earnest Proposition
+8917@@@An Earnest Proposition
+8918@@@An Earnest Proposition
+8919@@@An Earnest Proposition
+8920@@@An Earnest Proposition
+8926@@@Just Compensation
+8927@@@Just Compensation
+8931@@@Just Compensation
+8932@@@Just Compensation
+8933@@@Just Compensation
+8934@@@Just Compensation
+8935@@@Just Compensation
+8936@@@Just Compensation
+8937@@@Just Compensation
+8938@@@Just Compensation
+8939@@@Just Compensation
+8940@@@Just Compensation
+8941@@@Just Compensation
+95158@@@Reset Current Rating - 2v2
+95251@@@Reset Current Rating - 3v3
+95252@@@Reset Current Rating - 5v5
+95455@@@Concerted Efforts
+95457@@@For Great Honor
+95481@@@--
+95496@@@--
+95830@@@--

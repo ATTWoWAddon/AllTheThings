@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(TORGHAST, {
 		["coord"] = { 48.2, 39.4, THE_MAW },	-- Torghast Portal
@@ -27,7 +28,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDownSelf({ ["timelin
 			1984,	-- Mort-regar - Layer 10, Floor 2?
 			1987,	-- Mort'regar - Layer 10, Floor 1
 			1981,	-- Soulforges - Layer 12, Some floor
-			1986,	-- Uknown floor(Probably Mort-regar)
+			1986,	-- Unknown floor(Probably Mort-regar)
 			-- #ENDIF
 			--
 			1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6 / Layer 2, Floor 6 / Layer 3, Floor 6

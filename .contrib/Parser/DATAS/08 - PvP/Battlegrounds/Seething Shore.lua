@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(907, {	-- Seething Shore
 		["icon"] = 236310,

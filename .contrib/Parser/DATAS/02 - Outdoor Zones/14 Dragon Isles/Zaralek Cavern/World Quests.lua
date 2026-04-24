@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(WORLD_QUESTS, {
@@ -10,7 +11,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				75145,	-- In the Wake of the Ashes
 			},
 			["groups"] = {
-				n(QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
+				n(QUESTS, sharedData({
+					["isWorldQuest"] = true,
+				}, {
 					q(73221, {	-- A Clear State of Mind
 						["coord"] = { 51.9, 59.6, ZARALEK_CAVERN },
 						["groups"] = {
@@ -54,10 +57,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75344, {	-- Crystal Cracker
 						["coord"] = { 58.3, 62.3, ZARALEK_CAVERN },
 					}),
-					q(75062, {  -- Crystalline Conundrum
+					q(75062, { 	-- Crystalline Conundrum
 						["coord"] = { 56.9, 63.7, ZARALEK_CAVERN },
 					}),
-					q(75661, {  -- Curative Crystalline Collection
+					q(75661, { 	-- Curative Crystalline Collection
 						["coord"] = { 39.5, 74.3, ZARALEK_CAVERN },
 						["groups"] = {
 							i(203012),	-- Viridian Heartcrystal (QI!)
@@ -82,10 +85,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(204326),	-- Strange Artifact (QI!)
 						},
 					}),
-					petbattle(q(75834, {  -- Delver Mardei
+					petbattle(q(75834, { 	-- Delver Mardei
 						["coord"] = { 65.6, 49.0, ZARALEK_CAVERN },
 					})),
-					petbattle(q(75835, {  -- Do You Even Train?
+					petbattle(q(75835, { 	-- Do You Even Train?
 						["coord"] = { 45.7, 81.5, ZARALEK_CAVERN },
 					})),
 					q(75660, {	-- Ending Their Watch
@@ -110,7 +113,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(74985, {	-- Like Moths to a Flame
 						["coord"] = { 49.1, 50.1, ZARALEK_CAVERN },
 					}),
-					q(75350, {  -- Niffen Nabber
+					q(75350, { 	-- Niffen Nabber
 						["coord"] = { 59.2, 73.4, ZARALEK_CAVERN },
 					}),
 					q(75061, {	-- No Mushroom For Ever
@@ -121,6 +124,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75151, {	-- Redistributing the Remnants
 						["coord"] = { 52.9, 21.5, ZARALEK_CAVERN },
+						["groups"] = {
+							o(390557, {	-- Drakeforged Arming Rack
+								["coords"] = {
+									{ 41.8, 18.8, ZARALEK_CAVERN },
+									{ 42.4, 23.9, ZARALEK_CAVERN },
+									{ 42.5, 19.5, ZARALEK_CAVERN },
+									{ 42.9, 18.7, ZARALEK_CAVERN },
+									{ 43.1, 23.1, ZARALEK_CAVERN },
+									{ 43.4, 17.6, ZARALEK_CAVERN },
+									{ 43.9, 14.7, ZARALEK_CAVERN },
+									{ 43.9, 18.2, ZARALEK_CAVERN },
+									{ 44.1, 20.2, ZARALEK_CAVERN },
+									{ 44.4, 22.8, ZARALEK_CAVERN },
+									{ 45.1, 19.0, ZARALEK_CAVERN },
+								},
+								["groups"] = { i(204437) },	-- Drakeforged Armaments (QI!)
+							}),
+						},
 					}),
 					q(75663, {	-- Restless Torment
 						["coord"] = { 51.2, 42.8, ZARALEK_CAVERN },
@@ -161,10 +182,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75071, {	-- Sniffing Mice are Nice
 						["coord"] = { 51.3, 73.9, ZARALEK_CAVERN },
 					}),
-					q(75058, {  -- Spearheading Acquisition
+					q(75058, { 	-- Spearheading Acquisition
 						["coord"] = { 38.3, 63.1, ZARALEK_CAVERN },
 					}),
-					petbattle(q(75680, {  -- To a Land Down Under
+					petbattle(q(75680, { 	-- To a Land Down Under
 						["coord"] = { 52.3, 65.2, ZARALEK_CAVERN },
 					})),
 					q(74991, {	-- We Have Returned

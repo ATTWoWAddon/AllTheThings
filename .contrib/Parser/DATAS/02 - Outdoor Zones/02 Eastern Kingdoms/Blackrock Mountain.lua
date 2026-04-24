@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(BLACKROCK_MOUNTAIN, {
 		["lore"] = "Blackrock Mountain is a zone between the Burning Steppes and the Searing Gorge, linking the two regions. This zone is deceptively small and appears empty when first entered - however, it is among the most dangerous places in Azeroth. It was hotly contested between the forces of Ragnaros and his Dark Iron servants on one side and the black dragon Nefarian and his orc minions on the other. This is one of the most important areas in World of Warcraft lore.",
@@ -62,6 +63,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19259)),	-- Two of Warlords
 						i(11603),	-- Vilerend Slicer
 					},
+				}),
+			}),
+			n(SPECIAL, {
+				hqt(53656, {	-- Speak to Wan'be in Blackrock Mountain
+					["name"] = "Speak to Wan'be in Blackrock Mountain",
+					["sourceQuest"] = 53655,	-- Speak to Wan'be underwater at Fizzle and Pozzik's Speedway
+					["providers"] = {
+						{ "n", 143129 },	-- Wan'be <The Explorer>
+						{ "i", 163213 },	-- Ghostly Explorer's Skull
+					},
+					["coord"] = { 66.1, 96.6, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_8_0_1 },
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(THE_HINTERLANDS, {
 		["lore"] = "The Hinterlands, located in the Northern part of the Eastern Kingdoms, are probably most notable for the Wildhammer dwarves who make their residence at Aerie Peak in the west. The Wildhammers have always been staunch allies of the Alliance. It is from the Hinterlands that these dwarves find and tame their world-renowned gryphons. The Razorbeak gryphons roam wild in this region.\n\nAlso in the Hinterlands is one of the last remaining settlements of the high elves in Lordaeron at the Quel'Danil Lodge.\n\nThe Hinterlands are also home to a large population of forest trolls, which are divided into three separate tribes. The Revantusk tribe is the only one of the three that has declared sides in the Horde/Alliance conflict and support the warchief Thrall of the Horde. The Vilebranch tribe holds residence in the massive troll city of Jintha'Alor as well as the Altar of Zul while the Witherbark tribe holds the smallest influence, hailing from the temples of Shadra'Alor.",
@@ -694,7 +695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				heroscall(q(26542, {	-- Hero's Call: The Hinterlands!
 					["qg"] = 2700,	-- Captain Nials
-					["coord"] = { 40, 48.8, ARATHI_HIGHLANDS },
+					["coord"] = { 40.0, 48.8, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
 					["isBreadcrumb"] = true,
@@ -1237,7 +1238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2742, {	-- Rin'ji is Trapped!
 					["qg"] = 7780,	-- Rin'ji <Witherbark Troll>
-					["coord"] = { 30.6, 47, THE_HINTERLANDS },
+					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
@@ -1618,7 +1619,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2937, {	-- Summoning Shadra
 					["sourceQuest"] = 2936,	-- The Spider God
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 56, 74.6, DUROTAR },
+					["coord"] = { 56.0, 74.6, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
@@ -1629,7 +1630,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9324 },	-- Shadra's Venom
 								{ "i", 9323 },	-- Gadrin's Parchment
 							},
-							["coord"] = { 34, 72, THE_HINTERLANDS },
+							["coord"] = { 34.0, 72.0, THE_HINTERLANDS },
 							["cr"] = 2707,	-- Shadra <The Venom Queen>
 						}),
 					},
@@ -1750,7 +1751,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Message to the Wildhammer Delivered
 							["provider"] = { "i", 19036 },	-- Final Message to the Wildhammer
-							["coord"] = { 14, 48, THE_HINTERLANDS },
+							["coord"] = { 14.0, 48.0, THE_HINTERLANDS },
 						}),
 						i(19119, {	-- Owlbeast Hide Gloves
 							["timeline"] = { REMOVED_4_0_3 },

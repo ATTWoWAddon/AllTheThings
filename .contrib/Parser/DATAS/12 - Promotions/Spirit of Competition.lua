@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
+-- #if NOT CLASSIC_ANNIVERSARY
 SPIRIT_OF_COMPETITION = createHeader({
 	readable = "Spirit of Competition",
 	icon = 133278,
@@ -9,16 +11,33 @@ SPIRIT_OF_COMPETITION = createHeader({
 		en = [[~C_PetJournal.GetPetInfoBySpeciesID(179)]],
 		-- #else
 		en = "Spirit of Competition",
+		-- TODO: de = "",
 		es = "Espíritu de competición",
 		mx = "Espíritu de competición",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "竞争之魂",
+		-- TODO: tw = "",
 		-- #endif
 	},
 	description = {
 		en = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
+		-- TODO: de = "",
 		es = "Este es un evento basado en Campos de batalla que coincide con el inicio de los Juegos Olímpicos de Verano. La única vez que se celebró fue en 2008 para coincidir con los Juegos Olímpicos de Pekín, y aunque parecía haber intención de repetirlo, nunca regresó.",
 		mx = "Este es un evento basado en Campos de batalla que coincide con el inicio de los Juegos Olímpicos de Verano. La única vez que se celebró fue en 2008 para coincidir con los Juegos Olímpicos de Pekín, y aunque parecía haber intención de repetirlo, nunca regresó.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "这是一个以战场为基础的活动，与夏季奥运会的开始同时进行。唯一一次庆祝是在2008年，以配合北京奥运会，虽然似乎有意图重复这个活动，但它从未回归。",
+		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 } }, {
 	ach(1637, {	-- Spirit of Competition
 		["provider"] = { "i", 37297 },	-- Spirit of Competition
@@ -41,7 +60,8 @@ root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = 
 			end
 		end]],
 	}),
-	i(37298, {	-- Essence of Competition (PET!) (China Only)
+	cnONLY(i(37298, {	-- Essence of Competition (PET!) (China Only)
 		["description"] = "Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",
-	}),
+	})),
 })));
+-- #endif

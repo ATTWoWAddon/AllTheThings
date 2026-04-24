@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(STONETALON_MOUNTAINS, {
 		["lore"] =
@@ -167,6 +168,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179486, {	-- Battered Footlocker
+					["coords"] = {
+						{ 63.5, 55.8, STONETALON_MOUNTAINS },
+						{ 66.2, 47.5, STONETALON_MOUNTAINS },
+						{ 75.4, 57.3, STONETALON_MOUNTAINS },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 110,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66137, {	-- Zonya the Sadist <Master Pet Tamer>
 					["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
@@ -200,21 +214,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
-						["coord"] = { 67.2, 52.2, STONETALON_MOUNTAINS },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3988,	-- Venture Co. Operator
-							4070,	-- Venture Co. Builder
-							3992,	-- Venture Co. Engineer
-							3993,	-- Venture Co. Machine Smith
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
+					["coord"] = { 67.2, 52.2, STONETALON_MOUNTAINS },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3988,	-- Venture Co. Operator
+						4070,	-- Venture Co. Builder
+						3992,	-- Venture Co. Engineer
+						3993,	-- Venture Co. Machine Smith
+					},
+				})),
 			}),
 			-- #endif
 			n(PROFESSIONS, {
@@ -889,6 +900,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								{ "i",  56795 },	-- Resonite Crystal
 								{ "o", 178104 },	-- Resonite Crystal
+								{ "o", 178105 },	-- Resonite Crystal
+								{ "o", 178106 },	-- Resonite Crystal
 							},
 							["coord"] = { 60.0, 87.5, STONETALON_MOUNTAINS },
 						}),
@@ -1550,7 +1563,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 4197 },	-- Ken'zigla
 						{ "i", 6624 },	-- Ken'zigla's Draught
 					},
-					["coord"] = { 73.2, 95, STONETALON_MOUNTAINS },
+					["coord"] = { 73.2, 95.0, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
@@ -1711,7 +1724,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  16208 },	-- Enchanted Gaea Seeds
 								{ "o", 177929 },	-- Gaea Dirt Mound
 							},
-							["coord"] = { 31, 61, STONETALON_MOUNTAINS },
+							["coord"] = { 31.0, 61.0, STONETALON_MOUNTAINS },
 						}),
 						i(16985, {	-- Windseeker Boots
 							["timeline"] = { REMOVED_4_0_3 },

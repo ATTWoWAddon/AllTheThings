@@ -221,49 +221,49 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(174861),	-- Wriggling Parasite (MOUNT!)
 				}),
 				ach(14193, {	-- Vision of Destiny
-                    crit(46693, {	-- Wrathion, the Black Emperor
-                        ["_encounter"] = { WRATHION, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(46694, {	-- Maut
-                        ["_encounter"] = { MAUT, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(46695, {	-- The Prophet Skitra
-                        ["_encounter"] = { PROPHET, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(46693, {	-- Wrathion, the Black Emperor
+						["_encounter"] = { WRATHION, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(46694, {	-- Maut
+						["_encounter"] = { MAUT, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(46695, {	-- The Prophet Skitra
+						["_encounter"] = { PROPHET, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(14194, {	-- Halls of Devotion
-                    crit(46696, {	-- Dark Inquisitor Xanesh
-                        ["_encounter"] = { INQUISITOR, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(46697, {	-- Vexiona
-                        ["_encounter"] = { VEXIONA, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(46698, {	-- The Hivemind
-                        ["_encounter"] = { HIVEMIND, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(46699, {	-- Ra-den the Despoiled
-                        ["_encounter"] = { RADEN, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(46696, {	-- Dark Inquisitor Xanesh
+						["_encounter"] = { INQUISITOR, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(46697, {	-- Vexiona
+						["_encounter"] = { VEXIONA, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(46698, {	-- The Hivemind
+						["_encounter"] = { HIVEMIND, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(46699, {	-- Ra-den the Despoiled
+						["_encounter"] = { RADEN, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(14195, {	-- Gift of Flesh
-                    crit(46700, {	-- Shad'har the Insatiable
-                        ["_encounter"] = { SHADHAR, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(46701, {	-- Drest'agath
-                        ["_encounter"] = { DRESTAGATH, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(46702, {	-- Il'gynoth, Corruption Reborn
-                        ["_encounter"] = { ILGYNOTH, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(46700, {	-- Shad'har the Insatiable
+						["_encounter"] = { SHADHAR, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(46701, {	-- Drest'agath
+						["_encounter"] = { DRESTAGATH, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(46702, {	-- Il'gynoth, Corruption Reborn
+						["_encounter"] = { ILGYNOTH, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(14196, {	-- The Waking Dream
-                    crit(46703, {	-- Carapace of N'Zoth
-                        ["_encounter"] = { CARAPACE, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(46704, {	-- N'Zoth, the Corruptor
-                        ["_encounter"] = { NZOTH, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(46703, {	-- Carapace of N'Zoth
+						["_encounter"] = { CARAPACE, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(46704, {	-- N'Zoth, the Corruptor
+						["_encounter"] = { NZOTH, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(14039),	-- Ny'alotha, the Waking City Guild Run
 				ach(40963, {	-- Ny'alotha, the Waking City (automated)
 					["timeline"] = { ADDED_11_0_7 },

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(VENDORS, {
@@ -18,18 +19,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(235710, {	-- Noggenfogger Select FRESH
 						["races"] = { GOBLIN },	-- TODO: I don't have any goblin
 					}),
-					i(235704),	-- Noggenfogger Select UP
+					i(235704, {	-- Noggenfogger Select UP
+						i(235713),	-- Weird Sand
+					}),
 				},
 			}),
 			n(226994, {	-- Blair Bass <"Gold" Fish Exchange>
 				["sourceQuest"] = 83542,	-- Quick Gills for Gold Now
 				["coord"] = { 34.0, 71.4, UNDERMINE },
 				["groups"] = sharedData({
-					["cost"] = {{ "i", 227673, 5 }},	-- "Gold" Fish
+					["cost"] = { { "i", 227673, 5 } },	-- "Gold" Fish
 				},{
 					i(237346),	-- Artisan Beverage Goblet Bobber (TOY!)
 					i(237345),	-- Limited Edition Rocket Bobber (TOY!)
 					i(237347),	-- Organically-Sourced Wellington Bobber (TOY!)
+					i(245309, {	-- Rusty Patchwork Tub (DECOR!)
+						["cost"] = { { "i", 227673, 15 } },	-- "Gold" Fish
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				}),
 			}),
 			n(239112, {	-- Bombin' Bert
@@ -40,7 +47,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(239150, {	-- Brix the Bloody
-				--TODO: idk rp or whatever purpose it is
+				-- TODO: idk rp or whatever purpose it is
 				["coord"] = { 28.2, 27.1, UNDERMINE },
 				["groups"] = {
 					i(237315),	-- Fighting Guide: Armed Combat
@@ -66,22 +73,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 35.4, 41.4, UNDERMINE },
 				["groups"] = {
 					i(232850, {	-- Blackwater Kegmover (PET!)
-						["cost"] = {{ "i", 234741, 5 }},	-- Miscellaneous Mechanica
+						["cost"] = { { "i", 234741, 5 } },	-- Miscellaneous Mechanica
 					}),
 					i(232842, {	-- Crimson Mechasaur (PET!)
-						["cost"] = {{ "i", 234741, 10 }},	-- Miscellaneous Mechanica
+						["cost"] = { { "i", 234741, 10 } },	-- Miscellaneous Mechanica
 					}),
 					i(232840, {	-- Mechagopher (PET!)
-						["cost"] = {{ "i", 234741, 5 }},	-- Miscellaneous Mechanica
+						["cost"] = { { "i", 234741, 5 } },	-- Miscellaneous Mechanica
 					}),
 					i(232841, {	-- Professor Punch (PET!)
-						["cost"] = {{ "i", 234741, 8 }},	-- Miscellaneous Mechanica
+						["cost"] = { { "i", 234741, 8 } },	-- Miscellaneous Mechanica
 					}),
 					i(232846, {	-- Steamwheedle Flunkie (PET!)
-						["cost"] = {{ "i", 234741, 5 }},	-- Miscellaneous Mechanica
+						["cost"] = { { "i", 234741, 5 } },	-- Miscellaneous Mechanica
 					}),
 					i(232849, {	-- Venture Companyman (PET!)
-						["cost"] = {{ "i", 234741, 5 }},	-- Miscellaneous Mechanica
+						["cost"] = { { "i", 234741, 5 } },	-- Miscellaneous Mechanica
 					}),
 				},
 			}),
@@ -95,7 +102,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(239166, {	-- Geeves
 				["coord"] = { 29.2, 25.8, UNDERMINE },
 				["groups"] = {
-					-- TODO: move in uncollectible if there won't be any purpose or shared in zone
 					i(236647),	-- Coin and Kaja
 					i(236649),	-- Few Screws Loose
 					i(236646),	-- Gallagio Especial
@@ -131,13 +137,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 43.0, 82.8, UNDERMINE },
 				["groups"] = {
 					i(229952, {	-- Asset Advocator (MOUNT!)
-						["cost"] = {{ "i", 234741, 25 }},	-- Miscellaneous Mechanica
+						["cost"] = { { "i", 234741, 25 } },	-- Miscellaneous Mechanica
 					}),
 					i(229941, {	-- Innovation Investigator (MOUNT!)
-						["cost"] = {{ "i", 234741, 25 }},	-- Miscellaneous Mechanica
+						["cost"] = { { "i", 234741, 25 } },	-- Miscellaneous Mechanica
 					}),
 					i(229954, {	-- Margin Manipulator (MOUNT!)
-						["cost"] = {{ "i", 234741, 25 }},	-- Miscellaneous Mechanica
+						["cost"] = { { "i", 234741, 25 } },	-- Miscellaneous Mechanica
 					}),
 				},
 			}),
@@ -146,36 +152,53 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
 					i(245308, {	-- "Elegant" Lawn Flamingo (DECOR!)
-						["sourceQuest"] = 87008,	-- Ad-Hoc Wedding Planner
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 750 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 750 } },
 					}),
 					i(243321, {	-- Cartel Head's Schmancy Desk (DECOR!)
-						["sourceQuest"] = 87297,	-- Cashing the Check
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 800 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
+					}),
+					i(267265, {	-- Counterfeit Dark Heart of Galakrond (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 15000 } },
 					}),
 					i(245306, {	-- Cozy Four-Pipe Bed (DECOR!)
-						["sourceQuest"] = 86408,	-- My Hole in the Wall
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 900 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 900 } },
 					}),
 					i(260700, {	-- Gob-chanical Trash Heap (DECOR!)
-						["sourceQuest"] = 84675,	-- Showdown in the Attic
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 300 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 300 } },
 					}),
 					i(245310, {	-- Reinforced Goblin Umbrella (DECOR!)
-						["sourceQuest"] = 83176,	-- Just a Hunch
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 800 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
 					}),
 					i(245324, {	-- Rocket-Powered Fountain (DECOR!)
-						["sourceAchievement"] = 40894,	-- Sojourner of Undermine
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 1500 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 1500 } },
 					}),
 					i(245303, {	-- Rocket-Unpowered Rocket (DECOR!)
-						["sourceQuest"] = 85780,	-- Right Where We Want Him
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 800 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
 					}),
 					i(245325, {	-- Undermine Market Stall (DECOR!)
-						["sourceQuest"] = 85711,	-- Unsolicited Feedback
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 1000 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
+					}),
+				},
+			}),
+			n(239333, {	-- Street Food Vendor
+				["coords"] = {
+					{ 26.0, 43.0, UNDERMINE },
+					{ 28.2, 26.6, UNDERMINE },
+					{ 29.6, 42.8, UNDERMINE },
+					{ 33.8, 36.8, UNDERMINE },
+					{ 33.8, 39.4, UNDERMINE },
+					{ 36.4, 46.4, UNDERMINE },
+					{ 50.4, 34.2, UNDERMINE },
+					{ 57.0, 35.0, UNDERMINE },
+					{ 58.0, 46.4, UNDERMINE },
+					{ 59.6, 26.4, UNDERMINE },
+					{ 60.6, 20.4, UNDERMINE },
+					{ 64.0, 53.6, UNDERMINE },
+				},
+				["groups"] = {
+					i(256328, {	-- Leftover Undermine Takeout (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 300 } },
+						["timeline"] = { ADDED_11_2_7 },
 					}),
 				},
 			}),

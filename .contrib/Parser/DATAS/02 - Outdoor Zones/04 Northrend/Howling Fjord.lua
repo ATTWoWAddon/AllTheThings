@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(HOWLING_FJORD, {
@@ -28,7 +29,7 @@ root(ROOTS.Zones, {
 						-- #else
 						["sourceQuests"] = {
 							11291,	-- To Westguard Keep!
-							-- TODO:: confirm the quest below
+							-- TODO:  confirm the quest below
 							11436,	-- Let's Go Surfing Now
 							11344,	-- Anguish of Nifflevar
 							11501,	-- News From the East
@@ -92,7 +93,7 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(523, {	-- Devouring Maggot (PET!)
-							["description"] = "Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occaasionally as a secondary pet.",
+							["description"] = "Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occasionally as a secondary pet.",
 							["coord"] = { 56.5, 51.0, HOWLING_FJORD },
 						}),
 						pet(644, {	-- Fjord Rat (PET!)
@@ -938,7 +939,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["groups"] = { i(37027) },	-- Blight Specimen (QI!)
 					}),
-					q(11237, {	-- Gjalerbron Attack Plans (A) -- TODO: Verify if this drops all the time
+					q(11237, {	-- Gjalerbron Attack Plans (A)	-- TODO: Verify if this drops all the time
 						["provider"] = { "i", 33289 },	-- Gjalerbron Attack Plans
 						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
@@ -948,7 +949,7 @@ root(ROOTS.Zones, {
 							24014,	-- Necrolord
 						},
 					}),
-					q(11266, {	-- Gjalerbron Attack Plans (H) -- TODO: Verify if this drops all the time
+					q(11266, {	-- Gjalerbron Attack Plans (H)	-- TODO: Verify if this drops all the time
 						["provider"] = { "i", 33347 },	-- Gjalerbron Attack Plans
 						["races"] = HORDE_ONLY,
 						["crs"] = {
@@ -1838,7 +1839,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11256, {	-- Skorn Must Fall!
-						["sourceQuest"] = 11281,	-- Mimicking Nature's Call -- TODO:: verify
+						["sourceQuest"] = 11281,	-- Mimicking Nature's Call	-- TODO:  verify
 						["qg"] = 24129,	-- Chieftain Ashtotem
 						["coord"] = { 48.0, 10.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
@@ -1951,7 +1952,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(11249, {	-- Stop the Ascension! (A) -- TODO: Verify if this drops all the time
+					q(11249, {	-- Stop the Ascension! (A)	-- TODO: Verify if this drops all the time
 						["provider"] = { "i", 33314 },	-- Vrykul Scroll of Ascension
 						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
@@ -1976,7 +1977,7 @@ root(ROOTS.Zones, {
 							i(35901),	-- Rejuvenating Cord
 						},
 					}),
-					q(11260, {	-- Stop the Ascension! (H) -- TODO: Verify if this drops all the time
+					q(11260, {	-- Stop the Ascension! (H)	-- TODO: Verify if this drops all the time
 						["provider"] = { "i", 33345 },	-- Vrykul Scroll of Ascension
 						["races"] = HORDE_ONLY,
 						["crs"] = {
@@ -2037,7 +2038,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11469, {	-- Swabbin' Soap
-						["sourceQuest"] = 11509,	-- Street "Cred" -- TODO:: verify
+						["sourceQuest"] = 11509,	-- Street "Cred"	-- TODO:  verify
 						["qg"] = 24784,	-- Scuttle Frostprow
 						["coord"] = { 37.7, 79.5, HOWLING_FJORD },
 						["groups"] = {
@@ -2071,7 +2072,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11567, {	-- The Ancient Armor of the Kvaldir
-						["sourceQuest"] = 11510,	--	"Scoodles"
+						["sourceQuest"] = 11510,	-- "Scoodles"
 						["qg"] = 24539,	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.9, HOWLING_FJORD },
 						["groups"] = {
@@ -2987,7 +2988,7 @@ root(ROOTS.Zones, {
 				n(ZONE_DROPS, {
 					applyclassicphase(WRATH_PHASE_TWO, i(45003, {	-- Winter's Edge
 						["coord"] = { 42.2, 19.6, HOWLING_FJORD },
-						["cost"] = {{ "i", 45005, 1 }},	-- Everburning Ember
+						["cost"] = { { "i", 45005, 1 } },	-- Everburning Ember
 						["cr"] = 33303,	-- Maiden of Winter's Breath Lake
 					})),
 				}),

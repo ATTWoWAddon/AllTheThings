@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(QUESTS, {
@@ -409,7 +410,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, MALDRAXXUS },
 					["groups"] = {
-						i(173891),	--	Plagueborn Slime (PET!)
+						i(173891),	-- Plagueborn Slime (PET!)
 					},
 				}),
 				q(58036, {	-- Hazardous Waste Collection
@@ -840,8 +841,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 27.1, 51.7, MALDRAXXUS },
 				["_drop"] = { "isDaily" },
 				["groups"] = {
-					i(171205),	-- Foe Cleaver (QI!)
-					i(171206),	-- Forgotten Weapon (QI!)
+					o(334587, {	-- Forgotten Weapon
+						i(171205),	-- Foe Cleaver (QI!)
+						i(171206),	-- Forgotten Weapon (QI!)
+					}),
 				},
 			}),
 			q(57278, {	-- Bring Me Their Heads
@@ -968,7 +971,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				q(59429),	-- Triggered along with 59428 when looting Strange Growth (spellID 348521)
 				q(59439),	-- triggered when throwing Viscous Oil from Burning Extract into the Pool of Potions while on the quest "Pool of Potions"
 				q(59677),	-- Triggered when looting the Battlefront Rations Key (itemID 180277)
-				q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
+				q(57619),	-- triggered while on "In Death We Are Truly Tested"	-- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 				q(59843),	-- triggered when turning in "A Sure Bet"
 				q(62411),	-- First time turning in Ani-Matter Animator (57245)
 			}),

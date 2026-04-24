@@ -1,23 +1,27 @@
 -- App locals
-local appName, app = ...;
-local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForField, SearchForFieldContainer
-	= app.CloneReference, app.ExpandGroupsRecursively, app.ResolveSymbolicLink, app.SearchForField, app.SearchForFieldContainer;
+local _, app = ...;
+if app.IsRetail then return; end
 
 -- Global locals
 local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
+	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
+	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsTradeSkillLinked;
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
 -- WoW API Cache
 local GetItemID = app.WOWAPI.GetItemID;
 local GetSpellName = app.WOWAPI.GetSpellName;
-local GetSpellIcon = app.WOWAPI.GetSpellIcon;
-
+local IsSpellKnown = app.WOWAPI.IsSpellKnown;
+local CraftTypeToCraftTypeID = {
+	optimal = 3,
+	medium = 2,
+	easy = 1,
+	trivial = 0
+};
 local function RefreshSkills()
 	-- Store Skill Data
 	local activeSkills = app.CurrentCharacter.ActiveSkills;
@@ -74,21 +78,16 @@ app.AddEventHandler("OnRefreshCollections", RefreshSkills);
 
 -- Implementation
 app:CreateWindow("Tradeskills", {
+	Commands = { "attskills" },
 	AllowCompleteSound = true,
-	Commands = {
-		"attskills",
-		"atttradeskill",
-		"attprofession",
-		"attprof",
-	},
 	HideFromSettings = true,
+	Preload = true,
 	OnInit = function(self, handlers)
 		self:SetMovable(false);
 		self:SetClampedToScreen(false);
 		self.wait = 5;
 		self.cache = {};
-		self.header = {
-			['text'] = "Profession List",
+		self.header = app.CreateRawText("Profession List", {
 			['icon'] = 134940,
 			["description"] = "Open your professions to cache them.",
 			['visible'] = true,
@@ -96,8 +95,12 @@ app:CreateWindow("Tradeskills", {
 			["indent"] = 0,
 			['back'] = 1,
 			['g'] = { },
-		};
-		self.data = self.header;
+		});
+		local ProfessionsCategory;
+		self:AddEventHandler("OnDataCached", function(self, categories)
+			ProfessionsCategory = categories.Professions;
+		end);
+		self:SetData(self.header);
 		self.previousCraftSkillID = 0;
 		self.previousTradeSkillID = 0;
 		self.CacheRecipes = function(self)
@@ -113,7 +116,7 @@ app:CreateWindow("Tradeskills", {
 			end
 
 			-- Cache Learned Spells
-			local skillCache = SearchForFieldContainer("spellID");
+			local skillCache = app.GetFieldContainer("spellID");
 			if skillCache then
 				-- Cache learned recipes and reagents
 				local reagentCache = AllTheThingsAD.Reagents;
@@ -189,7 +192,6 @@ app:CreateWindow("Tradeskills", {
 								if spellID == 44153 then spellID = 44155;	-- Fix the Flying Machine spellID.
 								elseif spellID == 44151 then spellID = 44157;	-- Fix the Turbo Flying Machine spellID.
 								elseif spellID == 20583 then spellID = 24492; end 	-- Fix rank 1 Nature Resistance.
-								app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and app.CraftTypeToCraftTypeID(craftType) or nil;
 								if not app.CurrentCharacter.Spells[spellID] then
 									app.SetThingCollected("spellID", spellID, false, true);
 									learned = learned + 1;
@@ -249,7 +251,6 @@ app:CreateWindow("Tradeskills", {
 								elseif spellID == 61309 then spellID = 60971;	-- Fix the Magnificent Flying Carpet spellID.
 								elseif spellID == 75596 then spellID = 75597;	-- Fix the Frosty Flying Carpet spellID.
 								elseif spellID == 20583 then spellID = 24492; end 	-- Fix rank 1 Nature Resistance.
-								app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and app.CraftTypeToCraftTypeID(skillType) or nil;
 								if not app.CurrentCharacter.Spells[spellID] then
 									app.SetThingCollected("spellID", spellID, false, true);
 									learned = learned + 1;
@@ -284,21 +285,47 @@ app:CreateWindow("Tradeskills", {
 				end
 
 				-- Open the Tradeskill list for this Profession
-				if app.Categories.Professions and (craftSkillID ~= 0 or tradeSkillID ~= 0)
+				if ProfessionsCategory and (craftSkillID ~= 0 or tradeSkillID ~= 0)
 					and (craftSkillID ~= self.previousCraftSkillID or tradeSkillID ~= self.previousTradeSkillID) then
 					self.previousCraftSkillID = craftSkillID;
 					self.previousTradeSkillID = tradeSkillID;
 					local g = {};
-					for i,group in ipairs(app.Categories.Professions) do
+					for i,group in ipairs(ProfessionsCategory.g) do
 						if group.spellID == craftSkillID or group.spellID == tradeSkillID then
 							local cache = self.cache[group.spellID];
 							if not cache then
-								cache = CloneReference(group);
+								cache = app.CloneClassInstance(group, true);
 								self.cache[group.spellID] = cache;
-								local searchResults = ResolveSymbolicLink(group);
-								if searchResults and #searchResults then
-									for j,o in ipairs(searchResults) do
-										tinsert(cache.g, o);
+								cache.g = {};
+								local dynamicSuffix;
+								local requireSkill = group.requireSkill;
+								for suffix,window in pairs(app.Windows) do
+									if window and window.DynamicProfessionID and requireSkill == window.DynamicProfessionID then
+										dynamicSuffix = suffix;
+										break;
+									end
+								end
+								for suffix,window in pairs(app.WindowDefinitions) do
+									if window and window.DynamicProfessionID and requireSkill == window.DynamicProfessionID then
+										dynamicSuffix = suffix;
+										break;
+									end
+								end
+								if dynamicSuffix then
+									local recipesList = app.CreateDynamicCategory(dynamicSuffix);
+									recipesList.IgnoreBuildRequests = true;
+									recipesList.sourceIgnored = true;
+									recipesList.name = app.L.ALL_RECIPES;
+									recipesList.icon = 134939;
+									recipesList.parent = cache;
+									tinsert(cache.g, 1, recipesList);
+								end
+								local response = app:BuildSearchResponse(app:GetDatabaseRoot().g, "requireSkill", requireSkill);
+								if response then
+									for i=1,#response do
+										local o = response[i];
+										app:RemoveIgnoredBuildRequests(o);
+										cache.g[#cache.g + 1] = o;
 									end
 								end
 							end
@@ -307,9 +334,9 @@ app:CreateWindow("Tradeskills", {
 					end
 					if #g > 0 then
 						if #g == 1 then
-							self.data = g[1];
+							self:SetData(g[1]);
 						else
-							self.data = self.header;
+							self:SetData(self.header);
 							self.data.g = g;
 							for i,entry in ipairs(g) do
 								entry.indent = nil;
@@ -319,7 +346,7 @@ app:CreateWindow("Tradeskills", {
 						self.data.visible = true;
 						if not self.data.expanded then
 							self.data.expanded = true;
-							ExpandGroupsRecursively(self.data, true);
+							app.ExpandGroupsRecursively(self.data, true);
 						end
 						self:Rebuild();
 					end
@@ -328,7 +355,7 @@ app:CreateWindow("Tradeskills", {
 				-- If something new was "learned", then refresh the data.
 				if learned > 0 then
 					app.print("Cached " .. learned .. " known recipes!");
-					app:RefreshDataQuietly("TradeSkills::CacheRecipes", true);
+					app.HandleEvent("OnUpdateWindows", true)
 				end
 			end
 		end
@@ -418,8 +445,10 @@ app:CreateWindow("Tradeskills", {
 					while InCombatLockdown() or not TradeSkillFrame do coroutine.yield(); end
 					app:StartATTCoroutine("TSMWHYPT2", function()
 						local thing = self.TSMCraftingVisible;
-						self.TSMCraftingVisible = nil;
-						self:SetTSMCraftingVisible(thing);
+						if thing then
+							self.TSMCraftingVisible = nil;
+							self:SetTSMCraftingVisible(thing);
+						end
 					end);
 				end);
 			end
@@ -441,8 +470,12 @@ app:CreateWindow("Tradeskills", {
 				self:SetTSMCraftingVisible(false);
 			end
 			self:UpdateFrameVisibility();
-			if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+			if app.Settings:GetTooltipSetting("Auto:ProfessionList") and app.IsClassic then
 				self:SetVisible(true);
+			elseif ProfessionsFrameTabSideBar and app.IsRetail then
+				ProfessionsFrameTabSideBar:ClearAllPoints()
+				ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
+				ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
 			end
 			RefreshSkills();
 			self:RefreshRecipes();
@@ -468,12 +501,11 @@ app:CreateWindow("Tradeskills", {
 		local newSpellLearned = function(self, spellID)
 			if spellID then
 				app.SetThingCollected("spellID", spellID, false, true);
-				app:RefreshDataQuietly("NEW_SPELL_LEARNED", true);
 			end
 		end
 		handlers.NEW_RECIPE_LEARNED = newSpellLearned;
 		handlers.LEARNED_SPELL_IN_TAB = newSpellLearned;
-		self:RegisterEvent("LEARNED_SPELL_IN_TAB");
+		pcall(self.RegisterEvent, self, "LEARNED_SPELL_IN_TAB");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
 
 		-- Default Update refreshes
@@ -568,6 +600,8 @@ app:CreateWindow("Tradeskills", {
 				return;
 			end
 		end
-		self:DefaultUpdate(...);
+	end,
+	OnSave = function(self, settings)
+		settings.visible = false;
 	end,
 });

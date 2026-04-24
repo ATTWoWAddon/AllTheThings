@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local flt,follower,h,i,mm,q,s,x=_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateItem,_.CreateMountMod,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
-_.Categories.Sourceless={
+categories.Sourceless={
 h(-88,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
 x(4,{awp=40003,g={
 x(4.0003,{
@@ -67,7 +68,6 @@ flt(5,{
 s(92330,155467,{f=5}),
 s(92333,155470,{f=5}),
 s(92335,155472,{f=5}),
-s(92336,155473,{b=1,f=5,r=2}),
 s(94574,158604,{b=1,f=5,r=2}),
 s(96203,160198,{b=1,f=5,r=2}),
 s(96834,160863,{f=5}),
@@ -169,8 +169,6 @@ s(94798,159042,{f=7}),
 s(94809,159053,{f=7}),
 s(94813,159057,{b=1,f=7,r=1}),
 s(94819,159063,{f=7}),
-s(94822,159066,{b=1,f=7,r=1}),
-s(94827,159071,{b=1,f=7,r=1}),
 s(97073,161154,{f=7}),
 s(97081,161162,{f=7}),
 s(97149,161258,{f=7}),
@@ -183,14 +181,20 @@ s(97121,161227,{f=7}),
 s(97125,161231,{f=7}),
 s(97129,161235,{f=7}),
 s(97145,161254,{b=1,f=7,r=1})})})}})}}),
-flt(50,{awp=100107,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
-x(10,{
+flt(50,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
+x(10,{awp=100107,g={
 x(10.0107,{
-i(208878,{b=1,f=55})})})}}),
-h(-41,{awp=100200,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
-x(10,{
+i(208878,{b=1,f=55})})}}),
+x(11,{awp=110002,g={
+x(11.0002,{
+i(228580,{b=1,spellID=456550})})}})}}),
+h(-41,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
+x(10,{awp=100200,g={
 x(10.02,{
-mm(207775,{b=1,questID=77146})})})}}),
+mm(207775,{b=1,questID=77146})})}}),
+x(11,{awp=110000,g={
+x(11.0000001,{
+mm(223510,{b=1,qis={235692},questID=82177})})}})}}),
 h(-33,{awp=90001,g={
 x(9,{
 x(9.0001,{
@@ -203,7 +207,6 @@ s(47747,91496,{b=1,f=27,lvl=35}),
 s(47877,91755,{b=1,f=27,lvl=35})})}}),
 x(6,{awp=60002,g={
 x(6.0002,{
-s(66481,118186,{b=1,f=27,r=1}),
 s(58166,107644,{b=1,f=8,lvl=35})})}}),
 x(8,{awp=80001,g={
 x(8.0001,{
@@ -222,11 +225,10 @@ s(94499,158505,{b=1,f=20}),
 s(94501,158507,{b=1,f=34}),
 s(94504,158510,{b=1,f=23}),
 s(94506,158518,{b=1,f=1}),
-s(94830,159079,{b=1,f=1,r=1}),
 s(94550,158579,{b=1,f=35}),
 s(90961,153400,{b=1,f=33,r=2}),
 s(94497,158503,{b=1,f=33}),
-s(98028,161933,{b=2,f=1,lvl=111}),
+s(98028,161933,{b=2,f=1}),
 s(94502,158508,{b=1,f=25}),
 s(94498,158504,{b=1,f=29}),
 s(90962,153401,{b=1,f=29,r=2}),
@@ -252,12 +254,12 @@ s(94543,158565,{b=1,f=24,r=1}),
 s(97178,161287,{b=1,f=8,r=1}),
 s(94540,158562,{b=1,f=32}),
 s(91901,154971,{b=1,f=32,r=1}),
-s(91019,153642,{b=2,f=1,lvl=111}),
+s(91019,153642,{b=2,f=1}),
 s(94545,158567,{b=1,f=25}),
-s(103154,166889,{b=1,f=25,lvl=120}),
+s(103154,166889,{b=1,f=25}),
 s(94541,158563,{b=1,f=29}),
 s(91902,154972,{b=1,f=29,r=1}),
-s(103153,166887,{b=1,f=28,lvl=120}),
+s(103153,166887,{b=1,f=28}),
 s(94546,158568,{b=1,f=28}),
 s(94551,158580,{b=1,f=35})})}})}}),
 h(-45,{
@@ -293,8 +295,6 @@ x(7.01,{awp=70100,g={
 q(45184),
 q(45183),
 q(45181)}}),
-x(7.02,{awp=70200,g={
-q(47215)}}),
 x(7.03,{awp=70300,g={
 q(49163)}}),
 x(7.0302,{awp=70302,g={
@@ -414,8 +414,25 @@ x(10.0205,{awp=100205,g={
 q(78976),
 q(79353)}}),
 x(10.0206,{awp=100206,g={
-q(79988)}})}),
-x(11,{awp=110002,g={
-x(11.0002,{
+q(79988)}}),
+x(10.0207,{awp=100207,g={
+q(81957)}})}),
+x(11,{
+x(11.0000001,{awp=110000,g={
+q(81696)}}),
+x(11.0002,{awp=110002,g={
 q(84255),
-i(228580,{b=1,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",spellID=456550})})}})})};
+q(84587)}}),
+x(11.0005,{awp=110005,g={
+q(84611)}}),
+x(11.0105,{awp=110105,g={
+q(90899)}}),
+x(11.0107,{awp=110107,g={
+q(87560),
+q(91029)}}),
+x(11.02,{awp=110200,g={
+q(92487),
+q(92813)}}),
+x(11.0207,{awp=110207,g={
+q(84833)}})})})};
+end);

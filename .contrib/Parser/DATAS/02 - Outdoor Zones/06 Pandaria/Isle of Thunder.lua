@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, m(ISLE_OF_THUNDER, {
@@ -123,11 +124,11 @@ root(ROOTS.Zones, {
 										i(80433),	-- Blood Spirit
 										i(97207),	-- Cloak of the Immortal Guardian
 										i(95490, {	-- Greater Kirin Tor Offensive Insignia
-											["cost"] = {{"i",95491,10}},	-- Tattered Historical Parchments
+											["cost"] = { { "i", 95491, 10 } },	-- Tattered Historical Parchments
 										}),
 										i(95567),	-- Kirin Tor Beacon (TOY!)
 										i(95489, {	-- Kirin Tor Offensive Insignia
-											["cost"] = {{"i",95491,1}},	-- Tattered Historical Parchments
+											["cost"] = { { "i", 95491, 1 } },	-- Tattered Historical Parchments
 										}),
 										i(97187),	-- Refurbished Band of Jin
 										i(97190),	-- Refurbished Seal of Jin
@@ -244,7 +245,7 @@ root(ROOTS.Zones, {
 									["races"] = { DRAENEI, WORGEN },
 								}),
 								q(32587, {	-- Forge Ahead! (A)
-								--	possibly races other than Draenei / Worgen and classes other than Paladin and Warlock?
+								-- possibly races other than Draenei / Worgen and classes other than Paladin and Warlock?
 									["groups"] = {
 										i(93731),	-- Mogu Codex Fragment (QI!)
 									},
@@ -314,7 +315,7 @@ root(ROOTS.Zones, {
 								q(32572),	-- The Sleepless Legion (A)
 								q(32575),	-- The Zandalari Colossus (A)
 								q(32733),	-- Za'Tual (A)
-								q(32583),	-- Zandalari on the Rise (A) -- not implemented?
+								q(32583),	-- Zandalari on the Rise (A)	-- not implemented?
 							})),
 						},
 					}),
@@ -336,7 +337,7 @@ root(ROOTS.Zones, {
 										i(80433),	-- Blood Spirit
 										i(97212),	-- Cloak of the Immortal Guardian
 										i(95488, {	-- Greater Sunreaver Onslaught Insignia
-											["cost"] = {{"i",95491,10}},	-- Tattered Historical Patchments
+											["cost"] = { { "i", 95491, 10 } },	-- Tattered Historical Parchments
 										}),
 										i(97192),	-- Refurbished Band of Jin
 										i(97195),	-- Refurbished Seal of Jin
@@ -346,7 +347,7 @@ root(ROOTS.Zones, {
 										i(97209),	-- Static-Collecting Cloak
 										i(95568),	-- Sunreaver Beacon (TOY!)
 										i(95487, {	-- Sunreaver Onslaught Insignia
-											["cost"] = {{"i",95491,1}},	-- Tattered Historical Patchments
+											["cost"] = { { "i", 95491, 1 } },	-- Tattered Historical Parchments
 										}),
 										i(97208),	-- Thunder-Chaser Cloak
 									}, {	-- Friendly
@@ -407,7 +408,7 @@ root(ROOTS.Zones, {
 												{ "o", 218196 },	-- Heavy Explosives
 												{ "i", 93962 },	-- Heavy Explosives
 											},
-											["coord"] = { 48.4, 51, ISLE_OF_THUNDER },
+											["coord"] = { 48.4, 51.0, ISLE_OF_THUNDER },
 										}),
 									},
 								}),
@@ -477,7 +478,7 @@ root(ROOTS.Zones, {
 										32209,	-- Save Our Scouts! (H)
 									},
 									["sourceQuestNumRequired"] = 1,
-								--	possibly Horde races other than Blood Elf, Orc, and Undead? Vupera
+									-- possibly Horde races other than Blood Elf, Orc, and Undead? Vupera
 									["groups"] = {
 										i(93731),	-- Mogu Codex Fragment (QI!)
 									},
@@ -572,7 +573,7 @@ root(ROOTS.Zones, {
 								}),
 								q(32232),	-- What's Inside Counts
 								q(32729),	-- Za'Tual (H)
-								q(32564),	-- Zandalari on the Rise (H) -- not implemented?
+								q(32564),	-- Zandalari on the Rise (H)	-- not implemented?
 							})),
 						},
 					}),
@@ -616,33 +617,109 @@ root(ROOTS.Zones, {
 					}),
 					q(32296, {	-- Treasures of the Thunder King
 						["qg"] = 70316,	-- Taoshi
-						["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
+						["coord"] = { 51.5, 46.0, ISLE_OF_THUNDER },
+						["cost"] = { { "i", 94222, 1 } },	-- 1x Key to the Palace of Lei Shen
+						["maps"] = { 518 },	-- Thunder King's Citadel
 						["isWeekly"] = true,
 						["_drop"] = { "g" },	-- unnecessary API data
 						["groups"] = {
-							m(518, {	-- Thunder King's Citadel
-								ach(8106, {				-- In the Hall of the Thunder King
-									["groups"] = {
-										crit(22910),			-- Obtain a Handful of Stolen Gems from the Treasure Saurok
-										crit(23207),			-- Loot 10 Golden Treasure Chests in one run
-										crit(22981),			-- Slay God-Hulk Gulkan
-										crit(22980),			-- Reach Tenwu of the Red Smoke
-									},
-									-- removed 'classes' since I've found no evidence this is restricted to Rogues...
+							ach(8106, {	-- In the Hall of the Thunder King
+								crit(22910, {	-- Obtain a Handful of Stolen Gems from the Treasure Saurok
+									["provider"] = { "i", 95342 },	-- Handful of Stolen Gems
 								}),
-								i(95497, {	-- Burial Trove Key
-									["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
+								crit(23207, {	-- Loot 10 Golden Treasure Chests in one run
+									["_objects"] = { 218772 },	-- Golden Treasure Chest
+								}),
+								crit(22981),	-- Slay God-Hulk Gulkan
+								crit(22980, {	-- Reach Tenwu of the Red Smoke
+									["_npcs"] = { 70321 },	-- Tenwu of the Red Smoke
+								}),
+							}),
+							n(70400, {	-- God-Hulk Gulkan
+								["coord"] = { 53.6, 19.2, 518 },	-- Thunder King's Citadel
+								["groups"] = {
+									i(95497, {	-- Burial Trove Key
+										["description"] = "You are given one key for turning in the quest itself and then can find these contained within the chests scattered about within the citadel.",
+									}),
+									i(95491),	-- Tattered Historical Parchments
+								},
+							}),
+							n(70321, {	-- Tenwu of the Red Smoke
+								["description"] = "Talking to Tenwu of the Red Smoke will end your timed run with the bonus of an extra Burial Trove Key.",
+								["coord"] = { 52.6, 10.2, 518 },	-- Thunder King's Citadel
+							}),
+							n(TREASURES, {
+								o(218772, {	-- Golden Treasure Chest
+									["coords"] = {
+										{ 26.7, 45.7, 518 },	-- Thunder King's Citadel
+										{ 30.6, 58.1, 518 },	-- Thunder King's Citadel
+										{ 33.2, 17.5, 518 },	-- Thunder King's Citadel
+									},
 									["groups"] = {
-										i(139571, {	-- Tome of Otherwordly Venoms
-											artifact(891),	-- Fangs of the Devourer [Main Hand]
-											-- artifact(891),	-- Fangs of the Devourer [Off-Hand]
+										i(94221),	-- Shan'ze Ritual Stone
+										i(95497),	-- Burial Trove Key
+										i(95491),	-- Tattered Historical Parchments
+									},
+								}),
+								o(218757, {	-- Mogu Treasure Chest
+									["coords"] = {
+										{ 26.7, 45.7, 518 },	-- Thunder King's Citadel
+										{ 30.6, 58.1, 518 },	-- Thunder King's Citadel
+										{ 33.2, 17.5, 518 },	-- Thunder King's Citadel
+									},
+									["groups"] = {
+										i(94221),	-- Shan'ze Ritual Stone
+										i(95497),	-- Burial Trove Key
+										i(95491),	-- Tattered Historical Parchments
+									},
+								}),
+								o(218949, {	-- Lei Shen's Burial Trove
+									["coord"] = { 46.6, 78.2, 518 },	-- Thunder King's Citadel
+									["cost"] = { { "i", 95497, 1 } },	-- Burial Trove Key
+									["groups"] = {
+										i(95496),	-- Shado-Pan Assault Insignia
+										i(94221),	-- Shan'ze Ritual Stone
+										i(95491),	-- Tattered Historical Parchments
+										i(139571, {	-- Tome of Otherworldly Venoms
+											["timeline"] = { ADDED_7_0_3 },
+											["groups"] = {
+												artifact(891),	-- Fangs of the Devourer [Main Hand]
+												-- artifact(891),	-- Fangs of the Devourer [Off-Hand]
+											},
 										}),
+										i(95972),	-- Abandoned Zandalari Arrowlinks
+										i(95976),	-- Abandoned Zandalari Bucklebreaker
+										i(95961),	-- Abandoned Zandalari Firecord
+										i(95975),	-- Abandoned Zandalari Goreplate
+										i(95974),	-- Abandoned Zandalari Greatbelt
+										i(95971),	-- Abandoned Zandalari Moonstrap
+										i(95962),	-- Abandoned Zandalari Shadowgirdle
+										i(95970),	-- Abandoned Zandalari Silentbelt
+										i(95973),	-- Abandoned Zandalari Waterchain
+										i(95979),	-- Columnbreaker Stompers
+										i(95966),	-- Deeproot Treads
+										i(95965),	-- Home-Warding Slippers
+										i(95978),	-- Locksmasher Greaves
+										i(95958),	-- Necklace of the Terra-Cotta Archer
+										i(95964),	-- Necklace of the Terra-Cotta Invoker
+										i(95969),	-- Necklace of the Terra-Cotta Mender
+										i(95980),	-- Necklace of the Terra-Cotta Protector
+										i(95977),	-- Necklace of the Terra-Cotta Vanquisher
+										i(95960),	-- Scalehide Spurs
+										i(95963),	-- Silentflame Sandals
+										i(95959),	-- Spiderweb Tabi
+										i(95967),	-- Spiritbound Boots
+										i(95968),	-- Vaultwalker Sabatons
 									},
 								}),
-								i(95496),	-- Shado-Pan Assault Insignia
-								i(95491, {	-- Tattered Historical Parchments
-									["description"] = "These parchments are inside chests in the solo scenario, which is accessible after getting a Key to the Palace of Lei Shen.",
-								}),
+							}),
+							n(ZONE_DROPS, {
+								["cr"] = 70414,	-- Skumblade Pillager
+								["groups"] = {
+									i(95497),	-- Burial Trove Key
+									i(95491),	-- Tattered Historical Parchments
+									i(95342),	-- Handful of Stolen Gems
+								},
 							}),
 						},
 					}),
@@ -696,6 +773,7 @@ root(ROOTS.Zones, {
 						header(HEADERS.Item, 94221, {	-- Shan'ze Ritual Stone [looted]
 							["description"] = "Whether this will be lootable from Rares.",
 							["questID"] = 32610,
+							["isDaily"] = true,
 						}),
 					})),
 					n(70000, {	-- Al'tabim the All-Seeing
@@ -748,8 +826,8 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							{ 48.4, 86.4, ISLE_OF_THUNDER },
 							{ 50.2, 90.8, ISLE_OF_THUNDER },
-							},
-							["groups"] = {
+						},
+						["groups"] = {
 							crit(22820, {	-- Haywire Sunreaver Construct
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
@@ -823,7 +901,7 @@ root(ROOTS.Zones, {
 							i(95566),	-- Ra'sha's Sacrificial Dagger
 							i(94158, {	-- Big Bag of Zandalari Supplies
 								["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
-								["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
+								["sym"] = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 							}),
 							i(94159, {	-- Small Bag of Zandalari Supplies
 								["description"] = "Can contain all sorts of herbs, ore, and cloth.",
@@ -835,7 +913,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(RARES, sharedData({
-					["cost"] = {{"i",94221,3}},	-- Shan'ze Ritual Stone
+					["cost"] = { { "i", 94221, 3} },	-- Shan'ze Ritual Stone
 				},{
 					n(69767, {	-- Ancient Mogu Guardian
 						["coord"] = { 53.13, 47.07, ISLE_OF_THUNDER },
@@ -873,7 +951,7 @@ root(ROOTS.Zones, {
 					}),
 					n(69347, {	-- Incomplete Drakkari Colossus
 						["coord"] = { 49.9, 20.6, ISLE_OF_THUNDER },
-						["crs"] = { 70200 },	--- Primal Ritual Stone
+						["crs"] = { 70200 },	-- Primal Ritual Stone
 						["groups"] = {
 							i(94823),	-- Drakkari Decapitator
 						},

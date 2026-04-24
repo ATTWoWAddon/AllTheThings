@@ -282,8 +282,6 @@ q(30557),	-- [DNT] A Captured Banner TRACKER
 q(30558),	-- [DNT] The Enemy's Insignia TRACKER
 q(30559),	-- [DNT] The Captured Journal TRACKER
 q(30560),	-- [DNT] Tools of Divination TRACKER
-4.4.0.54217
-q(82808),	--
 4.4.0.54339
 q(82948),	-- CATA:Hero's Call Board	 MOP:Hero's Call Board
 q(82949),	-- CATA:Warchief's Command Board	 MOP:Warchief's Command Board
@@ -298,9 +296,9 @@ q(82989),	-- CATA:Warchief's Command Board	 MOP:Warchief's Command Board
 4.4.0.54647
 q(83316),	--
 4.4.1.57564
-q(86554),	--
+q(86554),	-- MOP:Daily Heroic Random (1st) (Cataclysm)
 4.4.2.58486
-q(86600),	--
+q(86600),	-- MOP:Daily Heroic Random (1st) (Cataclysm)
 4.4.2.58723
 q(88720),	--
 4.4.2.58884

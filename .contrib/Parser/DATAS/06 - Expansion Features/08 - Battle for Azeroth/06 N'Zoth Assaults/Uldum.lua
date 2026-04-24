@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
 		["icon"] = 3196264,
@@ -184,7 +185,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							},
 						}),
 						n(156002, {	-- Harbinger Raloam
-							--["questID"] = ,
+							-- ["questID"] = ,
 							["coord"] = { 35.0, 17.0, NZOTH_ASSAULT_ULDUM },
 						}),
 						n(158597, {	-- High Executor Yothrim
@@ -209,7 +210,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						n(156299, {	-- R'khuzj the Unfathomable
 							["questID"] = 57430,
-							["description"] = "Roams around the southern half of Uldum.",	-- TODO:: his path is HUGE. do we want to add coords?
+							["description"] = "Roams around the southern half of Uldum.",	-- TODO:  his path is HUGE. do we want to add coords?
 						}),
 						n(161033, {	-- Shadowmaw
 							["description"] = "In the waters surrounding the main hub.",
@@ -245,7 +246,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								{ 50.0, 78.6, NZOTH_ASSAULT_ULDUM },
 								{ 50.8, 87.4, NZOTH_ASSAULT_ULDUM },
 							},
-							--["isWorldQuest"] = true,	-- maybe?  classified as wq on wowhead
+							-- ["isWorldQuest"] = true,	-- maybe?  classified as wq on wowhead
 							["groups"] = sharedData({ ["isDaily"] = true, }, {
 								-- Summoning Ritual (there seem to be 3 separate questIDs, probably depending on the location that's up)
 								q(57620),	-- Summoning Ritual
@@ -278,7 +279,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["isWorldQuest"] = true,
 					}, {
 						--[[
-						--TODO: this is the wrong questID, and also this quest title doesn't exist on Wowhead...
+						-- TODO: this is the wrong questID, and also this quest title doesn't exist on Wowhead...
 						q(57585, {	-- Abyssal Santuary
 							["isWorldQuest"] = true,
 							["lvl"] = 120,
@@ -718,7 +719,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["coord"] = { 82.5, 48.0, NZOTH_ASSAULT_ULDUM },
 						}),
 						q(57217, {	-- Unearthed Keeper
-							["coord"] = { 71, 68.0, NZOTH_ASSAULT_ULDUM },
+							["coord"] = { 71.0, 68.0, NZOTH_ASSAULT_ULDUM },
 						}),
 					})),
 					n(ZONE_DROPS, {
@@ -1012,7 +1013,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					}, {
 						o(339243, {	-- Infested Strongbox
 							["questID"] = 58137,
-							["cost"] = {{"i",174761,1}},	-- Aqir Relic
+							["cost"] = { { "i", 174761, 1 } },	-- Aqir Relic
 							["coords"] = {
 								{ 36.3, 23.2, NZOTH_ASSAULT_ULDUM },
 							},
@@ -1429,36 +1430,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							i(175059),	-- Otherworldly Saddle (QI!)
 						},
 					}),
-					q(58879, {	-- Alpaca It Up
-						["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
-						["provider"] = { "n", 162765 },	-- Friendly Alpaca
-						["coords"] = {
-							{ 15.0, 62.0, NZOTH_ASSAULT_ULDUM },
-							{ 24.0, 9.0, NZOTH_ASSAULT_ULDUM },
-							{ 28.0, 49.0, NZOTH_ASSAULT_ULDUM },
-							{ 30.0, 29.0, NZOTH_ASSAULT_ULDUM },
-							{ 39.0, 10.0, NZOTH_ASSAULT_ULDUM },
-							{ 42.0, 70.0, NZOTH_ASSAULT_ULDUM },
-							{ 46.0, 48.0, NZOTH_ASSAULT_ULDUM },
-							{ 53.0, 19.0, NZOTH_ASSAULT_ULDUM },
-							{ 55.0, 69.0, NZOTH_ASSAULT_ULDUM },
-							{ 63.0, 53.0, NZOTH_ASSAULT_ULDUM },
-							{ 63.0, 14.0, NZOTH_ASSAULT_ULDUM },
-							{ 70.0, 39.0, NZOTH_ASSAULT_ULDUM },
-							{ 76.0, 68.0, NZOTH_ASSAULT_ULDUM },
-						},
-						["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
-						["isDaily"] = true,
-						["groups"] = {
-							q(58887, {	-- Alpaca It In
-								["sourceQuest"] = 58879,	-- Alpaca It Up
-								["provider"] = { "n", 162765 },	-- Friendly Alpaca
-								["groups"] = {
-									i(174859),	-- Springfur Alpaca (MOUNT!)
-								},
-							}),
-						},
-					}),
 					q(56377, {	-- Forging Onward
 						["description"] = "Granted upon entering the Seat of Ramkahen.",
 						["sourceQuest"] = 56376,	-- Surfacing Threats
@@ -1610,10 +1581,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["coord"] = { 55.1, 32.9, NZOTH_ASSAULT_ULDUM },
 						["groups"] = {
 							i(173282, {	-- Token of Death's Glee (Rank 3)
-								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+								["cost"] = { { "c", 1719, 50 } },	-- 50x Corrupted Memento
 							}),
 							i(174925, {	-- Void Tendril Pet Leash
-								["cost"] = { { "c", 1719, 1 }, },	-- 1x Corrupted Memento
+								["cost"] = { { "c", 1719, 1 } },	-- 1x Corrupted Memento
 							}),
 							i(174995, {	-- Void Tendril Pet Leash (TOY!)
 								["cost"] = {
@@ -1624,9 +1595,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							i(172011, {	-- Technique: Contract: Uldum Accord (RECIPE!)
 								["cost"] = 13300000,	-- 1,330 gold
 							}),
-							i(174904, {	-- Troop Requisition: Ramkahen Lancer
-								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
-								["questID"] = 58906,
+							i(174904, {	-- Troop Requisition: Ramkahen Lancer (CI!)
+								["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 								["groups"] = {
 									follower(1186, {	-- Ramkahen Lancer
 										["collectible"] = false,
@@ -1635,7 +1605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								},
 							}),
 							i(174477, {	-- Pygmy Camel (PET!)
-								["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
+								["cost"] = { { "i", POLISHED_PET_CHARM, 300 } },
 							}),
 							i(174648, {	-- Uldum Accord Tabard
 								["cost"] = 2280000,	-- 228g
@@ -1703,6 +1673,42 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["coord"] = { 57.6, 43.6, NZOTH_ASSAULT_ULDUM },
 					})),
 				})),
+			}),
+			n(SPECIAL, {
+				header(HEADERS.Item, 174859, {	-- Springfur Alpaca (MOUNT!)
+					q(58879, {	-- Alpaca It Up
+						["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
+						["provider"] = { "n", 162765 },	-- Friendly Alpaca
+						["coords"] = {
+							{ 15.0, 62.0, NZOTH_ASSAULT_ULDUM },
+							{ 24.0, 9.0, NZOTH_ASSAULT_ULDUM },
+							{ 28.0, 49.0, NZOTH_ASSAULT_ULDUM },
+							{ 30.0, 29.0, NZOTH_ASSAULT_ULDUM },
+							{ 39.0, 10.0, NZOTH_ASSAULT_ULDUM },
+							{ 42.0, 70.0, NZOTH_ASSAULT_ULDUM },
+							{ 46.0, 48.0, NZOTH_ASSAULT_ULDUM },
+							{ 53.0, 19.0, NZOTH_ASSAULT_ULDUM },
+							{ 55.0, 69.0, NZOTH_ASSAULT_ULDUM },
+							{ 63.0, 53.0, NZOTH_ASSAULT_ULDUM },
+							{ 63.0, 14.0, NZOTH_ASSAULT_ULDUM },
+							{ 70.0, 39.0, NZOTH_ASSAULT_ULDUM },
+							{ 76.0, 68.0, NZOTH_ASSAULT_ULDUM },
+						},
+						["cost"] = { { "i", 174858, 7 } },	-- Gersahl Greens
+						["isDaily"] = true,
+						["groups"] = {
+							q(58887, {	-- Alpaca It In
+								["sourceQuest"] = 58879,	-- Alpaca It Up
+								["provider"] = { "n", 162765 },	-- Friendly Alpaca
+								["groups"] = { i(174859) },	-- Springfur Alpaca (MOUNT!)
+							}),
+						},
+					}),
+					o(341808, {	-- Gersahl Shrub
+						["description"] = "Can be located along the river banks in present / N'Zoth assault timeline.",
+						["groups"] = { i(174858) },	-- Gersahl Greens
+					}),
+				}),
 			}),
 			n(ZONE_REWARDS, {
 				i(173376),	-- Uldum Accord Insignia

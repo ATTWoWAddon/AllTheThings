@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } }, {
 		n(BUILDINGS, {
@@ -8,35 +9,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 				n(QUESTS, {
 					q(38290, {	-- Some Dust
 						["qgs"] = {
-							91020,	-- Enchantress Ismae
-							91029,	-- Rath'thul Moonvale
+							91020,	-- Enchantress Ismae <Dust Trader>
+							91029,	-- Rath'thul Moonvale <Dust Trader>
 						},
-						["cost"] = {{ "i", 109693, 50 }},	-- 50x Draenic Dust
+						["coords"] = {
+							{ 35.2, 34.0, LUNARFALL },
+							{ 40.8, 54.8, FROSTWALL },
+						},
+						["cost"] = { { "i", 109693, 50 } },	-- 50x Draenic Dust
 						["isDaily"] = true,
 					}),
 					q(36310, {	-- The Arakkoan Enchanter [A]
-						["sourceQuests"] = { 36308 },	-- Enchanted Highmaul Bracer
-						["provider"] = { "n", 83491 },	-- Eileese Shadowsong
+						["sourceQuest"] = 36308,	-- Enchanted Highmaul Bracer
+						["qg"] = 83491,	-- Eileese Shadowsong
 						["coord"] = { 45.4, 53.4, LUNARFALL },
 						["requireSkill"] = ENCHANTING,
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = { i(115350) },	-- Enchanted Highmaul Bracer (QI!)
 					}),
 					q(36256, {	-- The Arakkoan Enchanter [H]
-						["sourceQuests"] = { 36255 },	-- Enchanted Highmaul Bracer
-						["provider"] = { "n", 83482 },	-- Yu'rina the Mystic
+						["sourceQuest"] = 36255,	-- Enchanted Highmaul Bracer
+						["qg"] = 83482,	-- Yu'rina the Mystic
 						["coord"] = { 47.6, 38.7, FROSTWALL },
 						["requireSkill"] = ENCHANTING,
 						["races"] = HORDE_ONLY,
 						["groups"] = { i(115350) },	-- Enchanted Highmaul Bracer (QI!)
 					}),
 					q(36645, {	-- Your First Enchanting Work Order
-						["provider"] = { "n", 77354 },	-- Ayada the White
+						["qg"] = 77354,	-- Ayada the White
 						["cost"] = { { "i", 109693, 5 } },	-- 5x Draenic Dust
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37570, {	-- Your First Enchanting Work Order
-						["provider"] = { "n", 79821 },	-- Yukla Greenshadow
+						["qg"] = 79821,	-- Yukla Greenshadow
 						["cost"] = { { "i", 109693, 5 } },	-- 5x Draenic Dust
 						["races"] = HORDE_ONLY,
 					}),

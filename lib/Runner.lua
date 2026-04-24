@@ -13,16 +13,9 @@ local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
 
-local function PrintError(err, source, co)
-	app.print(app.Modules.Color.Colorize("ERROR:",app.Colors.ChatLinkError),source,":",err)
-	if co then
-		local instanceTrace = debugstack(co);
-		print(instanceTrace)
-	end
-end
-
-local function wipearray(t)
-	for i=1,#t do t[i] = nil end
+local function wipearray(t, max)
+	local c = math_max(#t, max or 0)
+	for i=1,c do t[i] = nil end
 end
 
 local Stack = {};
@@ -47,7 +40,7 @@ local function SetStackCo()
 				status, err = pcall(f, p);
 				-- Function call has an error or it is not continuing, remove it from the Stack
 				if not status or not err then
-					if not status then PrintError(err, "StackCo", StackCo) end
+					if not status then app.PrintError(err, "StackCo", StackCo) end
 					-- app.PrintDebug("StackCo:Remove",i)
 					tremove(Stack, i);
 					tremove(StackParams, i);
@@ -72,7 +65,7 @@ local function RunStack()
 	if c_status(StackCo) == "dead" then SetStackCo() end
 	RunningStack = nil;
 	local ok, err = pcall(c_resume, StackCo);
-	if not ok then PrintError(err, "RunStack", StackCo) end
+	if not ok then app.PrintError(err, "RunStack", StackCo) end
 end
 QueueStack = function()
 	-- app.PrintDebug("QueueStackStatus:",RunningStack and "REPEAT" or "FIRST",c_status(StackCo))
@@ -146,7 +139,7 @@ local PushQueue = setmetatable({}, {
 						-- app.PrintDebug("PUSH.Run.Yielded",co)
 						return true;
 					end
-				else PrintError(err, "PUSH.Run", co) end
+				else app.PrintError(err, "CO:resume", co) end
 			end
 			-- After the pusher is done running the coroutine, it can return itself to the cache
 			_PushQueue[#_PushQueue + 1] = pushfunc;
@@ -182,9 +175,6 @@ local function CreateRunner(name)
 	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
 	local OnStart, OnReset
 	local Name = "Runner:"..name;
-	if app.__perf then
-		app.__perf.AutoCaptureTable(FunctionQueue, Name..".FunctionQueue")
-	end
 	local QueueIndex, RunIndex = 1, 1
 	local Pushed, perFrame
 	local function SetPerFrame(count)
@@ -198,12 +188,12 @@ local function CreateRunner(name)
 		if OnReset then OnReset() end
 		SetPerFrame(Config.PerFrameDefault or 1)
 		-- when done with all functions in the queue, reset the indexes and clear the queues of data
-		QueueIndex = 1
 		RunIndex = Pushed and 0 or 1	-- reset while running will resume and continue at index 1
-		wipearray(FunctionQueue)
+		wipearray(FunctionQueue, QueueIndex - 1)
+		wipearray(ParameterBucketQueue, QueueIndex - 1)
+		wipearray(ParameterSingleQueue, QueueIndex - 1)
 		FunctionQueue[0] = nil
-		wipearray(ParameterBucketQueue)
-		wipearray(ParameterSingleQueue)
+		QueueIndex = 1
 	end
 	local function Stats()
 		app.print(name,Pushed and "RUNNING" or "STOPPED","Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
@@ -212,7 +202,7 @@ local function CreateRunner(name)
 	-- Static coroutine for the Runner which runs one loop each time the Runner is called, and yields on the Stack
 	local RunnerCoroutine
 	local function err(msg)
-		PrintError(msg, "Runner."..name, RunnerCoroutine)
+		app.PrintError(msg, "Runner."..name, RunnerCoroutine)
 	end
 	local SetRunnerCoroutine = function()
 		RunnerCoroutine = c_create(function()
@@ -221,7 +211,7 @@ local function CreateRunner(name)
 				perFrame = Config.PerFrame
 				local params;
 				local func = FunctionQueue[RunIndex];
-				-- app.PrintDebug("FRC.Running."..name)
+				-- app.PrintDebug("FRC.Running."..name,"@",perFrame)
 				if OnStart then OnStart() end
 				while func do
 					perFrame = perFrame - 1;
@@ -235,7 +225,7 @@ local function CreateRunner(name)
 					end
 					-- app.PrintDebug("FRC.Done."..name,RunIndex)
 					if perFrame <= 0 then
-						-- app.PrintDebug("FRC.Yield."..name)
+						-- app.PrintDebug("FRC.Yield."..name,"Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
 						if frameStartTime then
 							local diff = math.floor(100000 * (GetTimePreciseSec() - frameStartTime)) / 100
 							app.PrintDebug("FRC",name,"FrameTime","#",Config.PerFrame,diff,"ms Stutter @", math.ceil(1000 / diff))
@@ -280,7 +270,7 @@ local function CreateRunner(name)
 				-- app.PrintDebug("Stack.Run.Yielded",Name)
 				return true;	-- This means more work is required.
 			end
-		else PrintError(err, Name, RunnerCoroutine) end
+		else app.PrintError(err, Name, RunnerCoroutine) end
 	end
 
 	-- Provides a utility which will process a given number of functions each frame in a Queue
@@ -339,6 +329,9 @@ local function CreateRunner(name)
 	Runner.Reset = Reset -- for testing
 	Runner.Stats = Stats -- for testing
 	app.Runners[name] = Runner
+	if app.__perf then
+		app.__perf.AutoCaptureTable(FunctionQueue,"FunctionQueue",Runner)
+	end
 
 	return Runner;
 end

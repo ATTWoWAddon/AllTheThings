@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		header(HEADERS.Faction, FACTION_THE_KARESH_TRUST, {
@@ -25,32 +26,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}, {	-- RENOWN 4 --
 					}, {	-- RENOWN 5 --
 						q(90630),	-- A Small Bundle of Crystals
-						q(90631),	-- Weathered Crests
+						q(90631, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH }}),	-- Weathered Crests
 					}, {	-- RENOWN 6 --
-						q(90632),	-- Valorstones
+						q(90632, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH }}),	-- Valorstones
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
 						q(90634),	-- A Small Bundle of Crystals
-						q(90633),	-- Weathered Crests
+						q(90633, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH }}),	-- Weathered Crests
 					}, {	-- RENOWN 9 --
-						q(90635),	-- Valorstones
+						q(90635, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH }}),	-- Valorstones
 					}, {	-- RENOWN 10 --
 						q(91142, {	-- Tabard for the Trusted
 							i(245968),	-- Tabard of the Trust (COSMETIC!)
 						}),
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
-						q(90637),	-- A Key in the Wastes
-						q(90636),	-- Carved Crests
+						q(90637, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH }}),	-- A Key in the Wastes
+						q(90636, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH }}),	-- Carved Crests
 					}, {	-- RENOWN 13 --
 						q(90638),	-- A Bundle of Crystals
 					}, {	-- RENOWN 14 --
-						q(91143),	-- Carved Crests
+						q(91143, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH }}),	-- Carved Crests
 					}, {	-- RENOWN 15 --
 					}, {	-- RENOWN 16 --
-						q(92330),	-- Valorstones
+						q(92330, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH }}),	-- Valorstones
 					}, {	-- RENOWN 17 --
-						q(90665),	-- Carved Crests
+						q(90665, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH }}),	-- Carved Crests
 					}, {	-- RENOWN 18 --
 						q(90666),	-- A Bundle of Crystals
 					}, {	-- RENOWN 19 --
@@ -66,7 +67,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}))),
 				n(QUESTS, {
-					header(HEADERS.Item, 242733, bubbleDownSelf({ 	-- Blue Barry (Ba'eth's Request Storyline)
+					header(HEADERS.Item, 242733, bubbleDownSelf({	-- Blue Barry (Ba'eth's Request Storyline)
 						["minReputation"] = { FACTION_THE_KARESH_TRUST, 9 },	-- The K'aresh Trust Renown 9
 					},{
 						-- Quests have daily lockout.
@@ -140,50 +141,100 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 40.6, 29.2, KARESH_TAZAVESH },
 						["groups"] = bubbleDownRep(FACTION_THE_KARESH_TRUST, {
 							{		-- RENOWN 1 --
+								q(94415),	-- Plumbing the Void
+								q(94416),	-- Rehoming Technology
+								i(258667, {	-- Angled Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
+								}),
+								i(258669, {	-- Corner Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
+								}),
+								i(247751, {	-- Deactivated K'areshi Warp Cannon (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2000 } },
+								}),
+								i(258666, {	-- Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
+								}),
+								i(258885, {	-- Exposed Angled Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
+								}),
+								i(258766, {	-- Exposed Corner Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
+								}),
+								i(258835, {	-- Exposed Intersecting Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
+								}),
+								i(258767, {	-- Exposed Long Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 800} },
+								}),
+								i(258306, {	-- K'areshi Warp Platform (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
+								}),
+								i(258320, {	-- K'areshi Protectorate Portal (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
+								}),
+								i(258668, {	-- Long Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
+								}),
+								i(258836, {	-- Reinforced Corner Ethereal Pipe Segment (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
+								}),
 							}, {	-- RENOWN 2 --
 							}, {	-- RENOWN 3 --
 							}, {	-- RENOWN 4 --
 							}, {	-- RENOWN 5 --
 								i(239486, {	-- Pattern: Pure Chronomatic Fiber (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(239487, {	-- Pattern: Pure Dexterous Fiber (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(239485, {	-- Pattern: Pure Energizing Fiber (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(239488, {	-- Pattern: Pure Precise Fiber (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(244841, {	-- Recipe: Invigorating Healing Potion (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(248550, {	-- Recipe: Umbral Essentia (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(244043, {	-- Technique: Contract: The K'aresh Trust (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(244334, {	-- Technique: Vantus Rune: Manaforge Omega (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 							}, {	-- RENOWN 6 --
 								i(245967, {	-- Shawl of the Trust (COSMETIC!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1625 } },
 								}),
 							}, {	-- RENOWN 7 --
 								i(245975, {	-- Consortium Brute's Chestguard
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(245978, {	-- Consortium Magi's Robes
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(245977, {	-- Consortium Scout's Jacket
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(245976, {	-- Consortium Skirmisher's Cuirass
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 							}, {	-- RENOWN 8 --
 							}, {	-- RENOWN 9 --
@@ -191,83 +242,83 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- RENOWN 11 --
 							}, {	-- RENOWN 12 --
 								i(235865, {	-- Ethereal Tome of Alchemy Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = ALCHEMY,
 								}),
 								i(235864, {	-- Ethereal Tome of Blacksmithing Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = BLACKSMITHING,
 								}),
 								i(235863, {	-- Ethereal Tome of Enchanting Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = ENCHANTING,
 								}),
 								i(235862, {	-- Ethereal Tome of Engineering Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = ENGINEERING,
 								}),
 								i(235861, {	-- Ethereal Tome of Herbalism Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = HERBALISM,
 								}),
 								i(235860, {	-- Ethereal Tome of Inscription Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = INSCRIPTION,
 								}),
 								i(235859, {	-- Ethereal Tome of Jewelcrafting Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = JEWELCRAFTING,
 								}),
 								i(235858, {	-- Ethereal Tome of Leatherworking Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = LEATHERWORKING,
 								}),
 								i(235857, {	-- Ethereal Tome of Mining Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = MINING,
 								}),
 								i(235856, {	-- Ethereal Tome of Skinning Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = SKINNING,
 								}),
 								i(235855, {	-- Ethereal Tome of Tailoring Knowledge (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = TAILORING,
 								}),
 							}, {	-- RENOWN 13 --
 								i(245969, {	-- Mantle of the Trust (COSMETIC!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 								}),
 							}, {	-- RENOWN 14 --
 								iensemble(245693, {	-- K'areshi Ribbon Stash
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2250 } },
 								}),
 							}, {	-- RENOWN 15 --
 								i(242729, {	-- Ruby Void Creeper (MOUNT!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 8125 } },
 								}),
 							}, {	-- RENOWN 16 --
 								i(245971, {	-- Consortium Brute's Clasp
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(245974, {	-- Consortium Magi's Cuffs
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(245973, {	-- Consortium Scout's Armlets
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(245972, {	-- Consortium Skirmisher's Armbands
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 							}, {	-- RENOWN 17 --
 								i(245979, {	-- Arcano-Charged Wrench (COSMETIC!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1150}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1150 } },
 								}),
 								i(245980, {	-- Inter-Phase Scoop (COSMETIC!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1150}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1150 } },
 								}),
 								i(245981, {	-- K'areshi Multi-Tool (COSMETIC!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1150}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1150 } },
 								}),
 							}, {	-- RENOWN 18 --
 								i(243191, {	-- Ethereal Augment Rune
@@ -275,7 +326,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								}),
 							}, {	-- RENOWN 19 --
 								i(237484, {	-- Terror of the Wastes (MOUNT!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 11375}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 11375 } },
 								}),
 							}, {	-- RENOWN 20 --
 							}, {	-- RENOWN 21 --

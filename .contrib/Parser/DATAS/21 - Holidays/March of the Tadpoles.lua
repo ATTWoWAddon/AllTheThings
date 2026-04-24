@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 MARCH_OF_THE_TADPOLES_HEADER = createHeader({
 	readable = "March of the Tadpoles",
 	constant = "MARCH_OF_THE_TADPOLES_HEADER",
@@ -8,13 +9,19 @@ MARCH_OF_THE_TADPOLES_HEADER = createHeader({
 	eventID = EVENTS.MARCH_OF_THE_TADPOLES,
 	text = {
 		en = "March of the Tadpoles",
+		-- TODO: de = "",
 		es = "Marcha de los renacuajos",
 		mx = "Marcha de los renacuajos",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Марш головастиков",
 		cn = "蝌蚪远足日",
 		tw = "蝌蚪歷險節",
 	},
 });
+
 root(ROOTS.Holidays, applyevent(EVENTS.MARCH_OF_THE_TADPOLES, n(MARCH_OF_THE_TADPOLES_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {
 	n(QUESTS, sharedData({
 		["isWeekly"] = true,

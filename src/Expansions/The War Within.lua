@@ -21,6 +21,8 @@ do
 	local KEY = "campsiteID"
 	local WarbandSceneInfoMeta = setmetatable({}, {
 		__index = function(t, id)
+			if not id then return app.EmptyTable end
+
 			local info = C_WarbandScene_GetWarbandSceneEntry(id) or app.EmptyTable
 			t[id] = info
 			return info
@@ -42,6 +44,7 @@ do
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end)
+	app.AddGenericFieldConverter(KEY);
 	app.AddEventHandler("OnRefreshCollections", function()
 		local saved, none = {}, {}
 		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
@@ -56,4 +59,8 @@ do
 		app.SetBatchAccountCached(CACHE, saved, 1)
 		app.SetBatchAccountCached(CACHE, none)
 	end)
+	app.AddEventHandler("OnLoad", function()
+		app.AddDynamicCategoryHeader({ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") });
+		app.AddRandomSearchCategory("Campsites", "campsiteID", app.L.CAMPSITES, app.L.CAMPSITE_DESC, app.asset("Category_Campsites"));
+	end);
 end

@@ -1,21 +1,25 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 SNIFFENSEEKING = createHeader({
 	readable = "Sniffenseeking",
 	icon = 648644,
 	text = {
 		en = "Sniffenseeking",
-		es = "Olfatobúsqueda",
 		de = "Schnüffelsuchen",
+		es = "Olfatobúsqueda",
+		-- TODO: mx = "",
 		fr = "Recherches olfactives",
 		it = "Il Fiutatutto",
+		ko = "냄새 추적",
 		pt = "Busca farejante",
 		ru = "Нюхорысканье",
-		ko = "냄새 추적",
 		cn = "嗅味探寻",
+		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(SNIFFENSEEKING, {
@@ -62,7 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					ach(17832, {	-- Sniffen Around
 						-- not using partial_achievement since there are not actual Criteria generated for Sniffen Sage
-						["sym"] = {{"select","achievementID",17833},{"pop"}},	--  Sniffen Sage
+						["sym"] = {{"select","achievementID",17833},{"pop"}},	-- Sniffen Sage
 					}),
 					ach(17833, {	-- Sniffen Sage
 						["sym"] = {{"select","questID",
@@ -112,7 +116,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					q(75393, {	-- Making Scents
-						["coord"] = { 58, 54.6, ZARALEK_CAVERN },
+						["coord"] = { 58.0, 54.6, ZARALEK_CAVERN },
 					}),
 					q(75996, {	-- Your Weight in Gold
 						["coord"] = { 58.5, 51.8, ZARALEK_CAVERN },
@@ -133,7 +137,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					q(75621, {	-- Element Whispers
-						["coord"] = { 55.9, 52, ZARALEK_CAVERN },
+						["coord"] = { 55.9, 52.0, ZARALEK_CAVERN },
 						["groups"] = {
 							i(205689),	-- Champion's Crystal
 						},
@@ -150,7 +154,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205990),	-- Fierce Key
 						},
 					}),
-					q(76014, {  -- Living Statue
+					q(76014, { 	-- Living Statue
 						["groups"] = {
 							i(205938),	-- Heated Titan Key
 						},
@@ -163,7 +167,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							}),
 						},
 					}),
-					q(76016, {  -- The Living Drill
+					q(76016, { 	-- The Living Drill
 						["groups"] = {
 							i(205941),	-- Spit-covered Key
 						},

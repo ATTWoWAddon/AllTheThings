@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126039 },	-- Mag'ash the Poisonous
 				["coord"] = { 69.1, 50.4, NAZMIR },
 				["races"] = HORDE_ONLY,
-				--	SQ needs confirmation. i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner. was NOT available with 0 prereqs prior to starting dazar'alor.
+				-- SQ needs confirmation. i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner. was NOT available with 0 prereqs prior to starting dazar'alor.
 			}),
 			q(47263, {	-- A Time of Revelation
 				["sourceQuests"] = { 47262 },	-- Ending the Blood Trolls
@@ -340,7 +340,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49479, {	-- Didn't Stop to Think if They Should
 				["sourceQuests"] = {
-					--	not linking "Reuniting the Company" here to avoid infinite loop, since "No Mercy" isn't available until you're on "Reuniting"
+					-- not linking "Reuniting the Company" here to avoid infinite loop, since "No Mercy" isn't available until you're on "Reuniting"
 					48498,	-- No Mercy for Sithis
 					48497,	-- Show of Force
 				},
@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 137113 },	-- Rokhan
 				["coord"] = { 51.8, 65.5, NAZMIR },
 				["races"] = HORDE_ONLY,
-				--	is this a breadcrumb?
+				-- is this a breadcrumb?
 				["groups"] = {
 					i(245491, {	-- Bwonsamdi's Golden Gong (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
@@ -522,10 +522,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(159039),	-- Nazmani Warplate Armguards
 					i(159041),	-- Ritual Flayer's Armbands
 					--
-					a(i(158632)), 	-- Banisher Bindings
-					a(i(158633)), 	-- Crone-Seeker's Bindings
-					a(i(158634)), 	-- Waycrest Militia Wristguards
-					a(i(158631)), 	-- Wickerwoven Bindings
+					a(i(158632)),	-- Banisher Bindings
+					a(i(158633)),	-- Crone-Seeker's Bindings
+					a(i(158634)),	-- Waycrest Militia Wristguards
+					a(i(158631)),	-- Wickerwoven Bindings
 				},
 			}),
 			q(49314, {	-- Hunting Zardrax
@@ -578,14 +578,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(49382, {	-- It Seems You've Made a Friend
 				["sourceQuests"] = {
 					49380,	-- Bad Juju
-					--	49379,	-- Crawg Free Zone (may be required)
+					-- 49379,	-- Crawg Free Zone (may be required)
 					49378,	-- Earn Their Trust
 					49377,	-- Off With Her Head
 				},
 				["provider"] = { "n", 129164 },	-- Chronicler Jabari
 				["coord"] = { 63.1, 52.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				--	verify whether or not "crawg free zone" is needed
+				-- verify whether or not "crawg free zone" is needed
 				["groups"] = {
 					i(156566),	-- Dart (PET!)
 				},
@@ -649,7 +649,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["groups"] = { i(154137) },	-- Pristine Phylactery (QI!)
 					}),
 					o(278337, {	-- Repaired Phylactery
-						["coord"] = {  40.9, 52, NAZMIR },
+						["coord"] = { 40.9, 52.0, NAZMIR },
 						["groups"] = { i(152468) },	-- epaired Phylactery (QI!)
 					}),
 					i(154130),	-- Spirit Powder (QI!)
@@ -1059,10 +1059,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({["races"] = ALLIANCE_ONLY},{
 						["description"] = "Alliance rewards are only earned when completing this on a Horde character, not as Alliance.",
 						["groups"] = {
-							i(155465),	-- Wickerwoven Cord
-							i(155462),	-- Wickerwoven Legwraps
+							i(155473),	-- Banisher Cinch
 							i(155481),	-- Crone-Seeker's Chain
 							i(155489),	-- Waycrest Militia Belt
+							i(155465),	-- Wickerwoven Cord
+							i(155462),	-- Wickerwoven Legwraps
 						},
 					})),
 					n(FACTION_HEADER_HORDE, bubbleDownSelf({["races"] = HORDE_ONLY},{
@@ -1112,8 +1113,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					49432,	-- The Forlorn Soul
 					49348,	-- A Desecrated Temple
 					47491,	-- Remnants of the Damned
-					--	may also require this quest. definitely doesn't require "'til death do us part"
-					--	47247,	-- That Which Haunts the Dead
+					-- may also require this quest. definitely doesn't require "'til death do us part"
+					-- 47247,	-- That Which Haunts the Dead
 				},
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.5, 24.7, NAZMIR },
@@ -1284,7 +1285,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126588 },	-- Keula
 				["coord"] = { 42.5, 31.3, NAZMIR },
 				["races"] = HORDE_ONLY,
-				--	SQ needs verification.
+				-- SQ needs verification.
 			}),
 			q(47623, {	-- The Last Witch Doctor of Krag'wa
 				["sourceQuests"] = {
@@ -1367,7 +1368,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122706 },	-- Theurgist Salazae
 				["coord"] = { 36.7, 27.4, NAZMIR },
 				["races"] = HORDE_ONLY,
-				--	SQ needs verification.
+				-- SQ needs verification.
 				["groups"] = {
 					o(270991, {	-- Ancient Urn
 						["coord"] = { 40.4, 26.4, NAZMIR },
@@ -1525,7 +1526,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 140656 },	-- Rokhan
 				["coord"] = { 50.5, 58.3, NAZMIR },
 				["races"] = HORDE_ONLY,
-				--	is this a breadcrumb?
+				-- is this a breadcrumb?
 			}),
 			q(49774, {	-- Won't Leaf Him to Die
 				["sourceQuests"] = { 50933 },	-- An Unfortunate Event

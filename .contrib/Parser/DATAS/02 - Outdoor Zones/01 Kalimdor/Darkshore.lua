@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DARKSHORE, {
 		["lore"] =
@@ -277,7 +278,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 33175,	-- Johnathan Staats
 					["coord"] = { 52.3, 18.0, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {{ "i", 12238, 4 }},	-- Darkshore Grouper
+					["cost"] = { { "i", 12238, 4 } },	-- Darkshore Grouper
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -392,8 +393,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Moonwell Water Tube
 							["provider"] = { "i", 14339 },	-- Moonwell Water Tube
-							["coord"] = { 37, 43, DARKSHORE },
-							["cost"] = {{ "i", 14338, 1 }},	-- Empty Water Tube
+							["coord"] = { 37.0, 43.0, DARKSHORE },
+							["cost"] = { { "i", 14338, 1 } },	-- Empty Water Tube
 						}),
 					},
 				}),
@@ -456,7 +457,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5338 },	-- Ancient Moonstone Seal
 								{ "o", 16393 },	-- Ancient Flame
 							},
-							["coord"] = { 42, 61, DARKSHORE },
+							["coord"] = { 42.0, 61.0, DARKSHORE },
 						}),
 						i(7229, {	-- Explorer's Vest
 							["timeline"] = { REMOVED_4_0_3 },
@@ -608,7 +609,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1002, {	-- Buzzbox 323
 					["sourceQuest"] = 1001,	-- Buzzbox 411
 					["provider"] = { "o", 17183 },	-- Buzzbox 411
-					["coord"] = { 42, 28.7, DARKSHORE },
+					["coord"] = { 42.0, 28.7, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
@@ -701,7 +702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(983, {	-- Buzzbox 827
 					["qg"] = 3666,	-- Wizbang Cranktoggle
-					["coord"] = { 37, 44, DARKSHORE },
+					["coord"] = { 37.0, 44.0, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
@@ -951,7 +952,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3702,	-- Alanndarian Nightsong
 					["coord"] = { 37.7, 40.7, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5469, 5 }},	-- Strider Meat
+					["cost"] = { { "i", 5469, 5 } },	-- Strider Meat
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
@@ -1108,7 +1109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3702,	-- Alanndarian Nightsong
 					["coord"] = { 37.6, 40.6, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 2449, 5 }},	-- Earthroot
+					["cost"] = { { "i", 2449, 5 } },	-- Earthroot
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -1176,6 +1177,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								2236,	-- Raging Reef Crawler
 							},
 						}),
+						i(7442),	-- Gyromast's Key
 					},
 				}),
 				q(2078, {	-- Gyromast's Revenge
@@ -1187,9 +1189,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gelkak's First Mate slain
-							["provider"] = { "n", 6669 },	-- The Threshwackonator 4100 <The First Mate>
+							["providers"] = {
+								{ "n", 6669 },	-- The Threshwackonator 4100 <The First Mate>
+								{ "i", 7442 },	-- Gyromast's Key
+							},
 							["coord"] = { 55.8, 18.2, DARKSHORE },
-							["cost"] = {{ "i", 7442, 1 }},	-- Gyromast's Key
 						}),
 						-- #if BEFORE 4.0.3
 						i(5996),	-- Elixir of Water Breathing
@@ -1341,7 +1345,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5273 },	-- Mathystra Relic
 								{ "o", 13360 },	-- Mathystra Relic
 							},
-							["coord"] = { 59, 21.8, DARKSHORE },
+							["coord"] = { 59.0, 21.8, DARKSHORE },
 						}),
 						i(5757, {	-- Hardwood Cudgel
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1822,7 +1826,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Den Mother slain
 							["provider"] = { "n", 6788 },	-- Den Mother
-							["coord"] = { 51.4, 38, DARKSHORE },
+							["coord"] = { 51.4, 38.0, DARKSHORE },
 						}),
 						i(7738, {	-- Evergreen Gloves
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2071,7 +2075,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Cliffspring River Sample
 							["provider"] = { "i", 12349 },	-- Cliffspring River Sample
 							["coord"] = { 50.76, 25.56, DARKSHORE },
-							["cost"] = {{ "i", 12350, 1 }},	-- Empty Sampling Tube
+							["cost"] = { { "i", 12350, 1 } },	-- Empty Sampling Tube
 						}),
 					},
 				}),
@@ -2225,7 +2229,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10216,	-- Gubber Blump
 					["coord"] = { 36.1, 44.9, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12238, 6 }},	-- Darkshore Grouper
+					["cost"] = { { "i", 12238, 6 } },	-- Darkshore Grouper
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -2433,10 +2437,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
-						2339,	-- Twilight Thug
-						2338,	-- Twilight Disciple
-					},
 					["lvl"] = 10,
 				}),
 				q(4811, {	-- The Red Crystal
@@ -2589,7 +2589,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Ancient Slotted Device
 							["provider"] = { "i", 46387 },	-- Ancient Slotted Device
-							["cost"] = {{ "i", 46702, 5 }},	-- Ancient Device Fragment
+							["cost"] = { { "i", 46702, 5 } },	-- Ancient Device Fragment
 						}),
 						o(195055, {	-- Buried Debris
 							["description"] = "Use the detector to spawn these on the beach.",
@@ -3105,7 +3105,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(210482, {	-- Paxnozz
 					["coord"] = { 48.8, 15.6, DARKSHORE },
-					["cost"] = {{ "i", 209047, 1 }},	-- Gnarled Harpoon
+					["cost"] = { { "i", 209047, 1 } },	-- Gnarled Harpoon
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR, HUNTER },
 					["groups"] = {
@@ -3322,6 +3322,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE 4.0.3
 				i(3173),	-- Bear Meat
 				-- #endif
+				i(5352, {	-- Book: The Powers Below
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						2339,	-- Twilight Thug
+						2338,	-- Twilight Disciple
+					},
+					["lvl"] = 10,
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211471, {	-- Cliffspring Key
 					["coord"] = { 55.8, 34.2, DARKSHORE },
@@ -3344,7 +3353,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
-					["coord"] = { 51.4, 38, DARKSHORE },
+					["coord"] = { 51.4, 38.0, DARKSHORE },
 					["classes"] = { DRUID },
 					["cr"] = 6788,	-- Den Mother
 					["groups"] = {
@@ -3411,7 +3420,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2157,	-- Stone Behemoth
 					},
 				}),
-				i(5469),	-- Strider Meat
 				-- #endif
 			}),
 		},

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
@@ -62,7 +63,7 @@ root(ROOTS.Zones, {
 						["modelScale"] = 0.63,
 						["questID"] = 48667,
 						["isDaily"] = true,
-						["coord"] = { 71, 32.4, KROKUUN },
+						["coord"] = { 71.0, 32.4, KROKUUN },
 						["groups"] = {
 							i(153190),	-- Fel-Spotted Egg
 						},

@@ -27,9 +27,6 @@ local function Collectible(t)
 			or (not OneTimeQuests[t.questID] or OneTimeQuests[t.questID] == app.GUID)
 		)
 end
--- TODO: Does not consider OPA Quests as Unlocked when not tracking Account-Wide
--- e.g. Garrison Shipyard Blueprints
--- https://discord.com/channels/242423099184775169/1233743089630314558
 local function CollectedAsQuest(t)
 	return app.TypicalCharacterCollected(CACHE_QUESTS, t[KEY_QUEST], SETTING)
 end
@@ -58,6 +55,9 @@ local CreateCharacterUnlockQuestItem = app.ExtendClass("Item", "CharacterUnlockQ
 	saved = SavedAsQuest,
 	characterUnlock = app.ReturnTrue,
 	IsClassIsolated = true,
+	variants = {
+		app.GlobalVariants.AndLockCriteria,
+	}
 })
 local CreateCharacterUnlockSpellItem = app.ExtendClass("Item", "CharacterUnlockSpellItem", "spellID", {
 	CACHE = function() return CACHE_SPELLS end,
@@ -74,7 +74,9 @@ local CreateCharacterUnlockQuest = app.ExtendClass("Quest", "CharacterUnlockQues
 	characterUnlock = app.ReturnTrue,
 	IsClassIsolated = true,
 	variants = {
-		app.GlobalVariants.WithAutoName
+		app.GlobalVariants.AndLockCriteriaWithAutoName,
+		app.GlobalVariants.AndLockCriteria,
+		app.GlobalVariants.WithAutoName,
 	}
 })
 local CreateCharacterUnlockSpell = app.ExtendClass("Spell", "CharacterUnlockSpell", "spellID", {

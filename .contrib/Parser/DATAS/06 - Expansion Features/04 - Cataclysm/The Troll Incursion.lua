@@ -1,19 +1,21 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_RISE_OF_THE_ZANDALARI, {
 	n(createHeader({
 		readable = "The Troll Incursion",
 		icon = 135727,
 		text = {
 			en = "The Troll Incursion",
-			es = "La incursión trol",
 			de = "Trollinvasion",
+			es = "La incursión trol",
+			-- TODO: mx = "",
 			fr = "L’incursion trolle",
 			it = "L'incursione dei Troll",
+			ko = "트롤의 난입",
 			pt = "A incursão troll",
 			ru = "Вторжение троллей",
-			ko = "트롤의 난입",
 			cn = "巨魔来袭",
 			tw = "食人妖入侵",
 		},
@@ -38,7 +40,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["groups"] = {
 						objective(1, {	-- Supplies Searched
 							["provider"] = { "o", 208419 },	-- Grain Sack
-							["coord"] = { 54.9, 42, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 54.9, 42.0, THE_CAPE_OF_STRANGLETHORN },
 						}),
 					},
 				},
@@ -113,7 +115,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["groups"] = {
 						objective(1, {	-- Find Mauti's Lair
 							["provider"] = { "n", 52372 },	-- Mauti
-							["coord"] = { 77, 68, NORTHERN_STRANGLETHORN },
+							["coord"] = { 77.0, 68.0, NORTHERN_STRANGLETHORN },
 						}),
 					},
 				},
@@ -130,7 +132,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["groups"] = {
 						objective(1, {	-- Find Mauti's Lair
 							["provider"] = { "n", 52372 },	-- Mauti
-							["coord"] = { 77, 68, NORTHERN_STRANGLETHORN },
+							["coord"] = { 77.0, 68.0, NORTHERN_STRANGLETHORN },
 						}),
 					},
 				},
@@ -263,8 +265,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				q(29222, {	-- Spirits Are With Us (H)
 					["sourceQuest"] = 29221,	-- Serpents and Poison
 					["qg"] = 52234,	-- Bwemba
+					-- ["coord"] = {}	-- can be picked up anywhere on the map
 					["races"] = HORDE_ONLY,
-					--["coord"] = {}	-- can be picked up anywhere on the map
 				}),
 				q(29115, {	-- The Hunter's Revenge (A)
 					["sourceQuest"] = 29114,	-- Track the Tracker

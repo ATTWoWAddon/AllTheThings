@@ -70,8 +70,7 @@ FUNCTION_TEMPLATES = {
 			local buffs = {...};
 			local OnInitName = "ShouldExcludeFromTooltipForBuffs_"..table.concat(buffs, "_")
 			ExportDB.OnInitDB[OnInitName] = [[~function(t)
-				local buffs={};
-				for i,id in ipairs({]] .. table.concat(buffs, ", ") .. [[}) do buffs[id]=1; end
+				local buffs={[]] .. table.concat(buffs, "]=1,[") .. [[]=1};
 				t.ShouldExcludeFromTooltipHelper = function(t)
 					local target = UnitExists("mouseover") and "mouseover" or "target";
 					for i=1,10,1 do
@@ -110,13 +109,12 @@ FUNCTION_TEMPLATES = {
 			return [[_.OnInitDB.]]..OnInitName..[[]]
 		end
 	},
-	-- TODO: use _.IsSpellKnownHelper once Classic uses Classes/Spell.lua
 	-- Generates an OnTooltip function into ExportDB.OnTooltipDB to return the cooldown status of a
 	-- custom SpellID
 	GenerateOnTooltipSpellOnCooldown = function(spellID)
 		local OnTooltipName = "IsSpellOnCooldown_"..spellID
 		ExportDB.OnTooltipDB[OnTooltipName] = [[~function(t,tooltipInfo)
-			if _.CurrentCharacter.Spells[]]..spellID..[[]then
+			if _.IsSpellKnownHelper(]]..spellID..[[) then
 				local n=t.name or RETRIEVING_DATA
 				if _.WOWAPI.GetSpellCooldown(]]..spellID..[[)>0 then
 					tinsert(tooltipInfo, { left = "Your "..n.." cooldown is unavailable." });
@@ -227,10 +225,9 @@ ExportDB.OnTooltipDB = {
 		end
 	end]],
 	-- #endif
-	-- TODO: use _.IsSpellKnownHelper once Classic uses Classes/Spell.lua
 	IsSpellOnCooldown = [[~function(t,tooltipInfo)
 		local s = t.spellID
-		if _.CurrentCharacter.Spells[s]then
+		if _.IsSpellKnownHelper(s) then
 			local n=t.name or RETRIEVING_DATA
 			if _.WOWAPI.GetSpellCooldown(s)>0 then
 				tinsert(tooltipInfo, { left = "Your "..n.." cooldown is unavailable." });
@@ -267,3 +264,16 @@ ExportDB.OnClickDB = {
 		end
 	end]]
 }
+
+-- #if ANYCLASSIC
+local CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID
+-- #if BEFORE 5.5.3
+CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID = 1243929	-- Dominion of the Empress (Season 1)
+-- #elseif BEFORE 5.5.5
+CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID = 1272162	-- Might of the Thunder King (Season 2 - Throne of Thunder)
+-- #else
+-- CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID = TODO	-- TODO (Season 3 -Siege of Orgrimmar)
+-- #endif
+FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS
+= FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID)
+-- #endif

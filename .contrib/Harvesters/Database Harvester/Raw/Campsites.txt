@@ -1,4 +1,4 @@
-11.1.0.58221
+﻿11.1.0.58221
 1@@@Adventurer's Rest
 4@@@Ohn'ahran Overlook
 5@@@Cultists' Quay
@@ -16,3 +16,5 @@
 12.0.0.63854
 145@@@Razorwind Shores
 146@@@Founders Point
+12.0.5.66330
+146@@@Founder's Point

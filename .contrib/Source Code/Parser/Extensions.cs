@@ -198,6 +198,39 @@ namespace ATT
             return false;
         }
 
+        /// <summary>
+        /// Retrieves the 'name' or '_name' field of the data, otherwise attempts to check Items DB or Objects DB
+        /// for a corresponding 'name' value. This will then be cached as '_name' in the data for future efficiency
+        /// </summary>
+        public static bool TryGetName(this IDictionary<string, object> data, out string name)
+        {
+            if (data.TryGetValue("name", out name) || data.TryGetValue("_name", out name))
+                return true;
+
+            if (Framework.Items.GetNull(data)?.TryGetValue("name", out name) == true)
+            {
+                data["_name"] = name;
+                return true;
+            }
+
+            if (data.TryGetValue("itemID", out decimal itemID))
+            {
+                if (Framework.Items.GetNull(itemID)?.TryGetValue("name", out name) == true)
+                {
+                    data["_name"] = name;
+                    return true;
+                }
+
+                if (Framework.Objects.TryGetSharedDataByKey("itemID", itemID, "name", out name))
+                {
+                    data["_name"] = name;
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public static bool TryGetValue(this IDictionary<string, object> dict, out Coords value)
         {
             if (dict != null && dict.TryGetValue(Coords.Field, out object o) && o is Coords val)
@@ -212,6 +245,17 @@ namespace ATT
         public static bool TryGetValue(this IDictionary<string, object> dict, out Cost value)
         {
             if (dict != null && dict.TryGetValue(Cost.Field, out object o) && o is Cost val)
+            {
+                value = val;
+                return true;
+            }
+            value = null;
+            return false;
+        }
+
+        public static bool TryGetValue(this IDictionary<string, object> dict, out Providers value)
+        {
+            if (dict != null && dict.TryGetValue(Providers.Field, out object o) && o is Providers val)
             {
                 value = val;
                 return true;
@@ -265,6 +309,29 @@ namespace ATT
             }
             value = null;
             return false;
+        }
+
+        /// <summary>
+        /// Returns the KVPs of the dictionary except those which match the keys specified in the "_drop" field of the dictionary, which is expected to be a list of strings representing keys to drop from the dictionary for certain processing contexts (such as conditions or providers which should not be merged with other conditions/providers containing the same keys)
+        /// </summary>
+        public static IEnumerable<KeyValuePair<string, object>> WithoutDrops(this IDictionary<string, object> dict, object drops = null)
+        {
+            if (dict != null)
+            {
+                if (drops is IDictionary<string, object> dropsDict && !dropsDict.TryGetValue("_drop", out drops))
+                {
+                    return dict;
+                }
+                if (drops is null && !dict.TryGetValue("_drop", out drops))
+                {
+                    return dict;
+                }
+
+                HashSet<string> dropset = drops.AsTypedEnumerable<string>().ToHashSet();
+                return dict.AsEnumerable().Where(kvp => !dropset.Contains(kvp.Key));
+            }
+
+            return dict;
         }
 
         /// <summary>
@@ -447,7 +514,7 @@ namespace ATT
         /// <summary>
         /// Try to convert the object to a specific Type
         /// </summary>
-        public static bool TryConvert<T>(this object obj, out T value, bool lazy = false)
+        public static bool TryConvert<T>(this object obj, out T value, bool lazy = false, bool warnOnConvert = false, bool debugWarnOnConvert = false)
         {
             if (obj is T val)
             {
@@ -455,10 +522,25 @@ namespace ATT
                 return true;
             }
 
+            if (obj is null)
+            {
+                value = default;
+                return false;
+            }
+
             if (!lazy)
             {
                 try
                 {
+                    if (warnOnConvert)
+                    {
+                        Framework.LogWarn($"Potentially unexpected value type conversion for {obj} ({obj?.GetType().FullName}) => {typeof(T).FullName}");
+                    }
+                    else if (debugWarnOnConvert)
+                    {
+                        Framework.LogDebugWarn($"Potentially unexpected value type conversion for {obj} ({obj?.GetType().FullName}) => {typeof(T).FullName}");
+                    }
+
                     value = (T)Convert.ChangeType(obj, typeof(T));
                     return true;
                 }
@@ -471,7 +553,7 @@ namespace ATT
         /// <summary>
         /// Converts a set of raw objects into a set of strongly-typed elements
         /// </summary>
-        public static IEnumerable<T> AsTypedEnumerable<T>(this object listObj)
+        public static IEnumerable<T> AsTypedEnumerable<T>(this object listObj, bool lazy = false, bool warnOnConvert = false)
         {
             if (listObj == null || listObj is string || !(listObj is IEnumerable objs))
                 yield break;
@@ -480,9 +562,13 @@ namespace ATT
             while (e.MoveNext())
             {
                 var c = e.Current;
-                if (c.TryConvert(out T t))
+                if (c.TryConvert(out T t, lazy, warnOnConvert))
                 {
                     yield return t;
+                }
+                else
+                {
+                    Framework.LogWarn($"Expected a '{typeof(T).Name}' type value but '{Framework.ToJSON(c)}' cannot be converted");
                 }
             }
 
@@ -502,15 +588,11 @@ namespace ATT
             typeof(double),  typeof(decimal), typeof(float)
         };
 
-        public static bool IsNumeric(this Type myType)
-        {
-            return NumericTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
-        }
+        public static bool IsNumeric(this Type myType) => NumericTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
 
-        public static bool IsDecimal(this Type myType)
-        {
-            return DecimalTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
-        }
+        public static bool IsNumeric(this object val) => val?.GetType().IsNumeric() ?? false;
+
+        public static bool IsDecimal(this Type myType) => DecimalTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
 
         /// <summary>
         /// Returns whether the sequence matches the content of another sequence regardless of ordering<para/>
@@ -594,5 +676,30 @@ namespace ATT
         }
 
         public static T SafeIndex<T>(this IList<T> vals, int index) => (vals != null && vals.Count > index) ? vals[index] : default;
+
+        public static bool IsEquivalent(this object val1, object val2)
+        {
+            if (Equals(val1, val2))
+                return true;
+
+            if (val1 is null || val2 is null)
+                return false;
+
+            if (val1 is ICollection<object> col1 && val2 is ICollection<object> col2)
+                return col1.Matches(col2);
+
+            if (val1 is IEnumerable<object> arr1 && val2 is IEnumerable<object> arr2)
+                return arr1.Matches(arr2);
+
+            try
+            {
+                var val1AsVal2Type = Convert.ChangeType(val1, val2.GetType());
+                if (Equals(val1AsVal2Type, val2))
+                    return true;
+            }
+            catch { }
+
+            return false;
+        }
     }
 }

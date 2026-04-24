@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(VENDORS, {
@@ -9,19 +10,34 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
 					i(253040, {	-- Coreway Sentinel Lamppost (DECOR!)
-						["sourceQuest"] = 82144,	-- On the Road
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 650 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 650 } },
 					}),
 					i(253162, {	-- Earthen Chain Wall Shelf (DECOR!)
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 600 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 600 } },
 					}),
 					i(253020, {	-- Earthen Etched Throne (DECOR!)
-						["sourceQuest"] = 78761,	-- Into the Machine
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 500 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 					}),
 					i(253172, {	-- Gundargaz Grand Keg (DECOR!)
-						["sourceQuest"] = 83160,	-- Cinderbrew Reserve
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 850 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 850 } },
+					}),
+				},
+			}),
+			n(256783, {	-- Gabbun <Wax Decor Specialist>
+				["coord"] = { 43.4, 33.3, THE_RINGING_DEEPS },
+				["timeline"] = { ADDED_11_2_7 },
+				["groups"] = {
+					i(258267, {	-- Candle-Festooned Wooden Awning (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 750 } },
+					}),
+					i(258264, {	-- Kobold Candle Trio (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 200 } },
+					}),
+					i(258262, {	-- Kobold Digger's Chair (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 350 } },
+					}),
+					i(258265, {	-- Kobold Wagon (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
 					}),
 				},
 			}),

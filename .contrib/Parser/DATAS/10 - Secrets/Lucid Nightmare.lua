@@ -3,7 +3,7 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, {
-	header(HEADERS.Spell, 247402, {	-- Lucid Nightmare
+	header(HEADERS.Spell, 247402, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Lucid Nightmare
 		["description"] = "***Quest tracking enabled is required to see all the steps.***",
 		["modelScale"] = .8,
 		["displayID"] = 78092,
@@ -87,7 +87,7 @@ root(ROOTS.Secrets, {
 				},
 			}),
 		},
-	}),
+	})),
 });
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {

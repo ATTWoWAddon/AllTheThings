@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 HARVEST_FESTIVAL_HEADER = createHeader({
 	readable = "Harvest Festival",
 	constant = "HARVEST_FESTIVAL_HEADER",
@@ -15,16 +16,23 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 	-- #endif
 	text = {
 		en = "Harvest Festival",
+		-- TODO: de = "",
 		es = "Festival de la cosecha",
 		mx = "Festival de la cosecha",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Неделя урожая",
 		cn = "收获节",
 		tw = "收穫節",
 	},
 });
+
 local BLUE_FIREWORK = i(9312);	-- Blue Firework
 local GREEN_FIREWORK = i(9313);	-- Green Firework
 local RED_FIREWORK = i(9318);	-- Red Firework
+
 root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEADER, {
 	n(MAILBOX, {
 		i(19697),	-- Bounty of the Harvest
@@ -39,6 +47,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 				{ 52.6, 36.0, DUN_MOROGH },
 				-- #endif
 			},
+			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["maps"] = { WESTERN_PLAGUELANDS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -60,6 +69,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 				{ 46.0, 13.6, DUROTAR },
 				-- #endif
 			},
+			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			["maps"] = { ASHENVALE },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -67,7 +77,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			["groups"] = {
 				objective(1, {	-- Grom's Tribute
 					["provider"] = { "i", 19851 },	-- Grom's Tribute
-					["coord"] = { 83, 79, ASHENVALE },
+					["coord"] = { 83.0, 79.0, ASHENVALE },
 				}),
 				i(20010),	-- The Horde's Hellscream
 			},

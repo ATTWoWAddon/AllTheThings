@@ -1,22 +1,25 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 FYRAKK_ASSAULTS = createHeader({
 	readable = "Fyrakk Assaults",
 	icon = 4914672,
 	text = {
 		en = "Fyrakk Assaults",
-		es = "Asaltos de Fyrakk",
 		de = "Angriffe von Fyrakk",
+		es = "Asaltos de Fyrakk",
+		mx = "Asaltos de Fyrakk",
 		fr = "Assauts de Fyrakk",
 		it = "Assalti di Fyrakk",
-		mx = "Asaltos de Fyrakk",
+		ko = "피락의 습격",
 		pt = "Ofensivas de Fyrakk",
 		ru = "Налеты Фиракка",
-		ko = "피락의 습격",
 		cn = "菲莱克突袭",
+		tw = "菲拉卡的突襲",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(FYRAKK_ASSAULTS, {
 		["questID"] = 75467,	-- completion of the assault via killing the respective 'Disciple' dragon
@@ -113,9 +116,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(74775, {	-- Disciple of Fyrakk: Kretchenwrath
 					["provider"] = { "i", 204071 },	-- Head of Kretchenwrath
+					-- ["maps"] = { OHNAHRAN_PLAINS },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
-					-- ["maps"] = { OHNAHRAN_PLAINS },
 					["groups"] = {
 						i(201923, {	-- Maruuk Centaur Insignia [Epic 500]
 						}),
@@ -148,9 +151,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(75239, {	-- Disciple of Fyrakk: Shadeisethal
 					["provider"] = { "i", 204683 },	-- Head of Shadeisethal
+					-- ["maps"] = { THE_AZURE_SPAN },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
-					-- ["maps"] = { THE_AZURE_SPAN },
 					["groups"] = {
 						i(201922, {	-- Iskaara Tuskarr Insignia [Epic 500]
 						}),

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	inst(1270, {	-- The Dawnbreaker
 		["coord"] = { 54.8, 62.9, HALLOWFALL },
@@ -75,6 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 213937 },	-- Rasha'nan
 					["groups"] = {
 						ach(40604),	-- Mythic: The Dawnbreaker
+						ach(61600, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: The Dawnbreaker Guild Run
 					},
 				}),
 			}),

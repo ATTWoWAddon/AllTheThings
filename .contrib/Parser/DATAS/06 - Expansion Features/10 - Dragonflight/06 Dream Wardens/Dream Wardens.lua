@@ -1,16 +1,26 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local CURRENCY_DREAM_INFUSION = 2777;
 DREAM_INFUSION = createHeader({
 	readable = "Dream Infusion",
 	icon = 1394953,
 	text = {
 		en = "Dream Infusion",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Настой Сна",
 		cn = "梦境注能",
+		tw = "夢境灌注",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	header(HEADERS.Faction, FACTION_DREAM_WARDENS, {
 		faction(FACTION_DREAM_WARDENS, {
@@ -72,47 +82,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				n(211209, {	-- Elianna <Dream Infuser>
 					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 					["groups"] = bubbleDownFiltered({
-						["cost"] = {{"c", CURRENCY_DREAM_INFUSION, 1}},
+						["cost"] = { { "c", CURRENCY_DREAM_INFUSION, 1 } },
 					},FILTERFUNC_itemID,{
 						filter(BATTLE_PETS, {
+							hqt(78857, name(HEADERS.Item, 210652)),	-- unlock ability to buy Somnolet (i: 210652) (require: Sapnibbler (i: ?)) (spellID 429070)
+							hqt(78853, name(HEADERS.Item, 210785)),	-- unlock ability to buy Snorr (i: 210785) (require: any dragon whelping from DF? (mine was Axel) (spellIDs 408323, 408325, 408328, 408330, 408332)
+							hqt(78858, name(HEADERS.Item, 210505)),	-- unlock ability to buy Reverie (i: 210505) (require: any Duckling? (mine was Pilot)) (spellID 429055 / 429053)
+							hqt(78856, name(HEADERS.Item, 210567)),	-- unlock ability to buy Memorie (i: 210567) (require: Fol'ya Pup (i: ?)) (spellID 429068)
+							hqt(78859, name(HEADERS.Item, 210777)),	-- unlock ability to buy Drowsey (i: 210777) (require: any ZC snail? (mine was Tricky)) (spellID 429073 / 429074)
+							hqt(78855, name(HEADERS.Item, 210555)),	-- unlock ability to buy Dreamhoof (i: 210555) (require: Leyhart (i: ?)) (spellID 429064)
+							hqt(78854, name(HEADERS.Item, 210553)),	-- unlock ability to buy Dreamborne Scarab (i: 210553) (require: Endmite (i: ?)) (spellID 429058)
+
 							i(210785, {	-- Snorr (PET!)
-								["cost"] = {{ "i", 210776, 1 }},	-- 1x Lesser Dream Infusion
+								["cost"] = { { "i", 210776, 1 } },	-- 1x Lesser Dream Infusion
+								["sourceQuest"] = 78857,
 							}),
 							i(210553, {	-- Dreamborne Scarab (PET!)
-								["providers"] = {
-									{"n",203292},	-- Endmite
-								},
+								["sourceQuest"] = 78854,
 							}),
 							i(210555, {	-- Dreamhoof (PET!)
-								["providers"] = {
-									{"i",210692},	-- Juniper
-									{"n",211288},	-- Leyhart
-									{"i",210691},	-- Spruce
-								},
+								["sourceQuest"] = 78855,
 							}),
 							i(210777, {	-- Drowsey (PET!)
-								["providers"] = {
-									{"i",205121},	-- Tricky
-								},
+								["sourceQuest"] = 78859,
 							}),
 							i(210567, {	-- Memorie (PET!)
-								["providers"] = {
-									{"n",211177},	-- Fol'ya Pup
-									{"i",210570},	-- Napps
-									{"i",210571},	-- Snoozles
-								},
+								["sourceQuest"] = 78856,
 							}),
 							i(210652, {	-- Somnolet (PET!)
-								["providers"] = {
-									-- {"i",???},	-- Dustie
-									{"n",211182},	-- Sapnibbler
-									{"i",210648},	-- Seedle
-								},
+								["sourceQuest"] = 78857,
 							}),
 							i(210505, {	-- Reverie (PET!)
-								["providers"] = {
-									{"i",193484},	-- Pilot
-								},
+								["sourceQuest"] = 78858,
 							}),
 						}),
 						filter(MOUNTS, {
@@ -146,8 +147,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sym"] = {
 									{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
 									{"pop"},
-									{"exclude","itemID",211417},	-- Dream Wardens Insignia [Epic 1k]
-									{"exclude","itemID",210243},	-- Technique: Contract: Dream Wardens (RECIPE!)
+									{"exclude","itemID",
+										211417,	-- Dream Wardens Insignia [Epic 1k]
+										210243,	-- Technique: Contract: Dream Wardens (RECIPE!)
+									},
 								},
 								["groups"] = {
 									i(202172),	-- Overflowing Satchel of Coins
@@ -157,7 +160,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(210872, {	-- Satchel of Dreams
 								["groups"] = {
 									i(202172),	-- Overflowing Satchel of Coins
-								--	filter(CLOTH, {	-- Commented out due Tooltip Length
+									-- filter(CLOTH, {	-- Commented out due Tooltip Length
 										i(210349),	-- Frigid Conservator's Gown
 										i(210355),	-- Frigid Conservator's Mitts
 										i(210357),	-- Frigid Conservator's Hood
@@ -167,8 +170,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 										i(210372),	-- Frigid Conservator's Bands
 										i(210382),	-- Frigid Conservator's Wrap (cloak) / will leave it here until non-cloth confirm drop
 										i(210391),	-- Frigid Conservator's Slippers
-								--	}),
-								--	filter(LEATHER, {	-- Commented out due Tooltip Length
+									-- }),
+									-- filter(LEATHER, {	-- Commented out due Tooltip Length
 										i(210352),	-- Crystalline Tender's Vest
 										i(210353),	-- Crystalline Tender's Gloves
 										i(210359),	-- Crystalline Tender's Guise
@@ -178,8 +181,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 										i(210375),	-- Crystalline Tender's Wristbands
 										i(210381),	-- Crystalline Tender's Shroud (cloak) / will leave it here until non-leather confirm drop
 										i(210393),	-- Crystalline Tender's Boots
-								--	}),
-								--	filter(MAIL, {	-- Commented out due Tooltip Length
+									-- }),
+									-- filter(MAIL, {	-- Commented out due Tooltip Length
 										i(210351),	-- Winter Forager's Chestguard
 										i(210356),	-- Winter Forager's Handguards
 										i(210358),	-- Winter Forager's Helm
@@ -189,8 +192,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 										i(210374),	-- Winter Forager's Cuffs
 										i(210392),	-- Winter Forager's Treads
 										i(210407),	-- Winter Forager's Cape (cloak) / will leave it here until non-mail confirm drop
-								--	}),
-								--	filter(PLATE, {	-- Commented out due Tooltip Length
+									-- }),
+									-- filter(PLATE, {	-- Commented out due Tooltip Length
 										i(210348),	-- Arctic Warden's Sabatons
 										i(210350),	-- Arctic Warden's Chestplate
 										i(210354),	-- Arctic Warden's Gauntlets
@@ -200,8 +203,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 										i(210373),	-- Arctic Warden's Bracers
 										i(210390),	-- Arctic Warden's Warhelm
 										i(210408),	-- Arctic Warden's Cloak (cloak) / will leave it here until non-plate confirm drop
-								--	}),
-								--	n(WEAPONS, {	-- Commented out due Tooltip Length
+									-- }),
+									-- n(WEAPONS, {	-- Commented out due Tooltip Length
 										i(210394),	-- Cold Conservator's Cane
 										i(210384),	-- Cold Conservator's Implement
 										i(210399),	-- Cold Conservator's Mallet
@@ -221,16 +224,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 										i(210383),	-- Winter Warden's Bulwark
 										i(210400),	-- Winter Warden's Gavel
 										i(210401),	-- Winter Warden's Greatsword
-								--	}),
-								--	filter(FINGER_F, {	-- Commented out due Tooltip Length
+									-- }),
+									-- filter(FINGER_F, {	-- Commented out due Tooltip Length
 										i(210376),	-- Beautiful Blizzard Binding
 										i(210378),	-- Rime Ridden Ring
 										i(210377),	-- Snipping Sleet Circle
-								--	}),
-								--	filter(NECK_F, {	-- Commented out due Tooltip Length
+									-- }),
+									-- filter(NECK_F, {	-- Commented out due Tooltip Length
 										i(210379),	-- Cold Crisp Collar
 										i(210380),	-- Glittering Gelid Goldchain
-								--	}),
+									-- }),
 								},
 							}),--]]
 						},
@@ -364,9 +367,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(78373, {	-- The Dream Thanks You
 						["provider"] = { "n", 211962 },	-- Melsysra
 						["maps"] = { EMERALD_DREAM },	-- follow you around
-						["groups"] = {
-							i(206960),	-- Enchanted Wyrm's Dreaming Crest
-						},
+						["groups"] = { i(206960) },	-- Enchanted Wyrm's Dreaming Crest
 					}),
 					q(78588, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 208143 },	-- Keeper Amrymn
@@ -377,7 +378,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					title(532),	-- <Name>, Dream Defender
 						-- RENOWN 20+++ --
-					q(76425, {	--	Renowned with the Dream Wardens
+					q(76425, {	-- Renowned with the Dream Wardens
 						["provider"] = { "n", 208143 },	-- Keeper Amrymn
 						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 						["repeatable"] = true,
@@ -512,31 +513,21 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 	m(DRAGON_ISLES, {
 		header(HEADERS.Faction, FACTION_DREAM_WARDENS, {
 			n(DREAM_INFUSION, {
-				-- TODO: these unlock questIDs can be provided by Wago data as to which Battle Pet items unlock them
-				-- so perhaps restructure into real HQTs that contain the relevant vendor pets?
-				-- perhaps a new group type for an automatic 'unlock' header?
-				--Summoning battle pets near Elanna / unlocks for battle pets
+				-- Summoning battle pets near Elianna / unlocks for battle pets
 				-- q(78847),	-- summon Dreamborne Scarab (i: 210553) (spellID 426137)
-				q(78854),	-- unlock ability to buy Dreamborne Scarab (i: 210553) (require: Endmite (i: ?)) (spellID 429058)
 				-- q(78848),	-- summon Dreamhoof (i: 210555) (spellID 426148)
 				-- q(78888),	-- unlock ability to buy Dreamhoof (i: 210555) (require: Juniper (i: 210692)) (spellID 426545)
-				-- q(78855),	-- unlock ability to buy Dreamhoof (i: 210555) (require: Leyhart (i: ?)) (spellID 429064)
 				-- q(78889),	-- unlock ability to buy Dreamhoof (i: 210555) (require: Spruce (i: 210691)) (spellID 426544)
 				-- q(78852),	-- summon Drowsey (i: 210777) (spellID 427044)
-				q(78859),	-- unlock ability to buy Drowsey (i: 210777) (require: any ZC snail? (mine was Tricky)) (spellID 429073 / 429074)
 				-- q(78849),	-- summon Memorie (i: 210567) (spellID 426168)
-				q(78856),	-- unlock ability to buy Memorie (i: 210567) (require: Fol'ya Pup (i: ?)) (spellID 429068)
 				-- q(78885),	-- unlock ability to buy Memorie (i: 210567) (require: Napps (i: ?)) (spellID 426187)
 				-- q(78884),	-- unlock ability to buy Memorie (i: 210567) (require: Snoozles (i: ?)) (spellID 426193)
 				-- q(78851),	-- summon Reverie (i: 210505) (spellID 426037)
-				q(78858),	-- unlock ability to buy Reverie (i: 210505) (require: any Duckling? (mine was Pilot)) (spellID 429055 / 429053)
 				-- q(78846),	-- summon Snorr (i: 210785) (spellID 427104)
-				q(78853),	-- unlock ability to buy Snorr (i: 210785) (require: any dragon whelping from DF? (mine was Axel) (spellIDs 408323, 408325, 408328, 408330, 408332)
 				-- q(78850),	-- summon Somnolet (i: 210652) (spellID 426357)
 				-- q(78886),	-- unlock ability to buy Somnolet (i: 210652) (require: Dustie (i: ?)) (spellID 426355)
-				q(78857),	-- unlock ability to buy Somnolet (i: 210652) (require: Sapnibbler (i: ?)) (spellID 429070)
 				-- q(78887),	-- unlock ability to buy Somnolet (i: 210652) (require: Seedle (i: 210648)) (spellID 426343)
-				--unsure what it should unlock but fire when you summon pets
+				-- unsure what it should unlock but fire when you summon pets
 				-- q(78882),	-- summon Elmer (i: 210690) (spellID 426540)
 				-- q(78883),	-- summon Snoots (i: 210689) (spellID 426539)
 			}),

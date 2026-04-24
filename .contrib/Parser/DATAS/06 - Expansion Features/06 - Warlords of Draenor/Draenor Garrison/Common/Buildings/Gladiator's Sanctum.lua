@@ -9,14 +9,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				n(ACHIEVEMENTS, {
 					ach(9495, {		-- The Bone Collector
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-						["groups"] = {
-							i(111981),		-- Gladiator's Sanctum, Level 3 [Blueprints]
-						},
+						["groups"] = { i(111981) },		-- Gladiator's Sanctum, Level 3 [Blueprints]
 					}),
 					ach(9725, {	-- The Last of Us
-						--title_gendered(302, 303),	-- Lord of War / Lady of War
-						title_male(302),	-- Lord of War
-						title_female(303),	-- Lady of War
+						-- title_gendered(302, 303),	-- Lord of War / Lady of War
+						title_male(302),	-- <Name>, Lord of War
+						title_female(303),	-- <Name>, Lady of War
 					}),
 					ach(9738, {	-- Warlord of Draenor (Alliance) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 						["races"] = ALLIANCE_ONLY,
@@ -31,9 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							9517,	-- Nemesis: Death Stalker
 							9516,	-- Nemesis: Slayer of Sin'dorei
 						}},
-						["groups"] = {
-							title(269),	-- , Warlord of Draenor
-						},
+						["groups"] = { title(269) },	-- <Name>, Warlord of Draenor
 					}),
 					ach(9508, {	-- Warlord of Draenor (Horde) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 						["races"] = HORDE_ONLY,
@@ -48,9 +44,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							9510,	-- Nemesis: Dwarfstalker
 							9509,	-- Nemesis: Draenei Destroyer
 						}},
-						["groups"] = {
-							title(269),	-- , Warlord of Draenor
-						},
+						["groups"] = { title(269) },	-- <Name>, Warlord of Draenor
 					}),
 				}),
 				n(QUESTS, {
@@ -61,12 +55,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						["coord"] = { 33.0, 38.6, DRAENOR_NAGRAND },
 						["groups"] = {
 							ach(9639),	-- Fight, Kill, Salute!
-							i(119219, {	-- Warlord's Flag of Victory (TOY!)
-								["description"] = "Requires being the last player alive in the coliseum.",
-							}),
 							i(120142, {	-- Coliseum Champion's Spoils
 								i(119217),	-- Alliance Flag of Victory (TOY!)
 								i(119218),	-- Horde Flag of Victory (TOY!)
+							}),
+							i(119219, {	-- Warlord's Flag of Victory (TOY!)
+								["description"] = "Requires being the last player alive in the coliseum.",
 							}),
 						},
 					}),
@@ -75,7 +69,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				n(QUESTS, bubbleDown({
 					["races"] = ALLIANCE_ONLY,
 				}, sharedData({
-					["provider"] = { "n", 86677 },	-- Kuros
+					["qg"] = 86677,	-- Kuros
 				},{
 					q(36957),	-- Nemesis: Becoming Death (Blood Elf)
 					q(36959),	-- Nemesis: Becoming Death (Forsaken)
@@ -150,7 +144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				n(QUESTS, bubbleDown({
 					["races"] = HORDE_ONLY,
 				}, sharedData({
-					["provider"] = { "n", 86629 },	-- Raza'kul
+					["qg"] = 86629,	-- Raza'kul
 				},{
 					q(36929),	-- Nemesis: Becoming Death (Draenei)
 					q(36923),	-- Nemesis: Becoming Death (Dwarf)

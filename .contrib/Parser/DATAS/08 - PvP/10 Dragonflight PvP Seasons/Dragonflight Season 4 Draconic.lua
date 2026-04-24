@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
 	n(SEASON_DRACONIC_PVP, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
@@ -125,12 +126,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(250, i(217068)),	-- Draconic Warmonger's Dirk
 						bloody(450, i(217047)),	-- Draconic Warmonger's Flameshot
 						bloody(450, i(217054)),	-- Draconic Warmonger's Greatsword
-						bloody(250, i(217057)),	-- Draconic Warmonger's Hammer
+						bloody(300, i(217065)),	-- Draconic Warmonger's Hammer
 						bloody(300, i(217045)),	-- Draconic Warmonger's Hatchet
 						bloody(450, i(217060)),	-- Draconic Warmonger's Impaler
 						bloody(250, i(217063)),	-- Draconic Warmonger's Mace
 						bloody(250, i(217066)),	-- Draconic Warmonger's Sabre
-						bloody(300, i(217065)),	-- Draconic Warmonger's Scepter
+						bloody(250, i(217057)),	-- Draconic Warmonger's Scepter
 						bloody(250, i(217050)),	-- Draconic Warmonger's Shortsword
 						bloody(450, i(217061)),	-- Draconic Warmonger's Spear
 						bloody(300, i(217049)),	-- Draconic Warmonger's Spellblade
@@ -923,10 +924,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		})),
 		filter(RECIPES, {
 			-- #if AFTER TWW
-			n(221421, { -- Eraneth <Draconic Combatant Recipes>
+			n(221421, {	-- Eraneth <Draconic Combatant Recipes>
 				["timeline"] = { ADDED_11_0_0 },
 				["coord"] = { 43.6, 42.4, VALDRAKKEN },
-				["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+				["groups"] = sharedData({
+					["cost"] = { { "i", MOH, 3 } },
+				}, {
 			-- #endif
 					i(211588),	-- Design: Draconic Combatant's Jeweled Amulet (RECIPE!)
 					i(211589),	-- Design: Draconic Combatant's Jeweled Signet (RECIPE!)
@@ -977,7 +980,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{"i", 190450, 3}},	-- 3x Awakened Ire
+					["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
 					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				}, {
 					i(211611),	-- Technique: Draconic Combatant's Emblem (RECIPE!)

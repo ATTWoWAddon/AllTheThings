@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NETHERSTORM, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -2343,19 +2344,14 @@ root(ROOTS.Zones, {
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {
-							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "merge" },	-- Gladiator's Set
+							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },	-- Gladiator's Set
 							-- #if BEFORE LEGION
-							{ "finalize" },
-							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" },	-- Merciless Gladiator's Set
-							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR }, { "merge" },		-- Vengeful Gladiator's Set
+							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
 							-- #else
-							{ "exclude", "itemID",
-								28379,	-- Sergeant's Heavy Cape (A)
-								28378,	-- Sergeant's Heavy Cape (H)
-								28380,	-- Sergeant's Heavy Cloak (A)
-								28377,	-- Sergeant's Heavy Cloak (H)
-							},
+							{ "merge" },
 							{ "pop" },
+							{ "exclude", "headerID", BACK },	-- Exclude the 'Back' header
 							-- #endif
 						},
 						["timeline"] = { ADDED_4_3_0 },
@@ -2767,9 +2763,7 @@ root(ROOTS.Zones, {
 							{ 54.6, 46.6, NETHERSTORM },
 							{ 54.5, 40.2, NETHERSTORM },
 						},
-						["cost"] = {
-							{ "i", 29460, 1 },	-- Ethereum Prison Key (required to summon/"release" mobs)
-						},
+						["cost"] = { { "i", 29460, 1 } },	-- Ethereum Prison Key (required to summon/"release" mobs)
 						["groups"] = {
 							i(31957),	-- Ethereum Prisoner I.D. Tag
 							i(31581),	-- Slatesteel Boots

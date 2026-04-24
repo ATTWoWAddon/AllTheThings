@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(ACHIEVEMENTS, {
@@ -54,52 +55,52 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					crit(55302, {	-- Maruukai Ancestor
 						["crs"] = { 197048 },	-- Mariq Dotur
 						["coord"] = { 59.7, 37.7, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 197776, 1 }, },	-- 1x Thrice-Spiced Mammoth Kabob
+						["cost"] = { { "i", 197776, 1 } },	-- 1x Thrice-Spiced Mammoth Kabob
 					}),
 					crit(55303, {	-- Timberstep Outpost Ancestor
 						["crs"] = { 197050 },	-- Muqur Swiftshot
 						["coord"] = { 84.9, 23.4, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 199934, 1 }, },	-- 1x Enchant Boots - Plainsrunner's Breeze tier 1
+						["cost"] = { { "i", 199934, 1 } },	-- 1x Enchant Boots - Plainsrunner's Breeze tier 1
 					}),
 					crit(55304, {	-- Horn of Drusahl Ancestor
 						["crs"] = { 197051 },	-- Deritetsin the Carver
 						["coord"] = { 75.9, 42.1, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 194690, 1 }, },	-- 1x Horn o' Mead
+						["cost"] = { { "i", 194690, 1 } },	-- 1x Horn o' Mead
 					}),
 					crit(55305, {	-- Toghusuq Village Ancestor
 						["crs"] = { 197052 },	-- Faraqseng Khan
 						["coord"] = { 73.0, 55.0, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 202070, 1 }, },	-- 1x Exceptional Pelt
+						["cost"] = { { "i", 202070, 1 } },	-- 1x Exceptional Pelt
 					}),
 					crit(55306, {	-- Shikaar Highlands Ancestor
 						["crs"] = { 197053 },	-- Shikari Khan
 						["coord"] = { 84.6, 48.4, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 193470, 1 }, },	-- 1x Feral Hide Drums
+						["cost"] = { { "i", 193470, 1 } },	-- 1x Feral Hide Drums
 					}),
 					crit(55307, {	-- The Carving Winds Ancestor
 						["crs"] = { 197054 },	-- Himia, the Blessed
 						["coord"] = { 74.7, 69.8, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 190327, 1 }, },	-- 1x Awakened Air
+						["cost"] = { { "i", 190327, 1 } },	-- 1x Awakened Air
 					}),
 					crit(55308, {	-- Sylvan Glade Ancestor
 						["crs"] = { 197055 },	-- Talis
 						["coord"] = { 63.3, 57.3, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 197788, 2 }, },	-- 2x Braised Bruffalon Brisket
+						["cost"] = { { "i", 197788, 2 } },	-- 2x Braised Bruffalon Brisket
 					}),
 					crit(55309, {	-- Ohn'iri Springs Ancestor
 						["crs"] = { 197056 },	-- Ohn Kanosung
 						["coord"] = { 54.7, 78.4, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 202071, 1 }, },	-- 1x Elemental Mote
+						["cost"] = { { "i", 202071, 1 } },	-- 1x Elemental Mote
 					}),
 					crit(55310, {	-- Teerakai Ancestor
 						["crs"] = { 197057 },	-- Jhakan Khan
 						["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 199049, 1 }, },	-- 1x Fire-Blessed Greatsword
+						["cost"] = { { "i", 199049, 1 } },	-- 1x Fire-Blessed Greatsword
 					}),
 					crit(55311, {	-- The Eternal Kurgans Ancestor
 						["crs"] = { 197058 },	-- Dihar the Unyielding
 						["coord"] = { 32.8, 70.3, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 191471, 5 }, },	-- 5x Writhebark tier 2
+						["cost"] = { { "i", 191471, 5 } },	-- 5x Writhebark tier 2
 					}),
 				},
 			}),

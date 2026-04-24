@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	inst(1023, {	-- Siege of Boralus
 		["coords"] = {
@@ -28,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			n(WORLD_QUESTS, sharedData({
 				["isWorldQuest"] = true,
-			},{
+			}, {
 				q(52761, {	-- Siege of Boralus: Blood Money
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -104,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
@@ -187,12 +188,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							i(159651),	-- Coral-Edged Crescent
 							i(159256),	-- Iron-Kelp Wristwraps
 							i(168130),	-- Essence of the Depths
-							
+
 							i(231824, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Circlet of the Enveloping Leviathan
 							i(231818, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Grasping Crown of the Deep
 							i(231826, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Hook-Barbed Spaulders
@@ -214,7 +215,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
@@ -288,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							i(159651),	-- Coral-Edged Crescent
 							i(159310),	-- Circlet of the Enveloping Leviathan
@@ -321,7 +322,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
@@ -330,6 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
+			-- #endif
 			-- #endif
 		},
 	}),

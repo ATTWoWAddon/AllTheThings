@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 10698, {	-- That's Val'sharah Folks!
 				------ Prolouge ------
 				q(39731, {	-- The Tranquil Forest
-					["provider"] = { "n", 93787 },	--  Scouting Map
+					["provider"] = { "n", 93787 },	-- Scouting Map
 					["maps"] = CLASS_HALL_MAPS,
 					["isBreadcrumb"] = true,
 					["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -57,6 +58,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						i(130019),	-- Armplates of Unrelenting Anguish
 						i(130000),	-- Bands of Unrelenting Anguish
 						i(129992),	-- Cuffs of Unrelenting Anguish
+						i(245698, {	-- Kaldorei Stone Fence (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(121643),	-- Thaon's Grief
 					},
 				}),
@@ -148,7 +152,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["provider"] = { "n", 91223 },	-- Koda Steelclaw
 					["coords"] = {
 						{ 48.9, 81.6, VALSHARAH },
-						{ 67.2, 27, 643 },	-- Sleeper's Barrow
+						{ 67.2, 27.0, 643 },	-- Sleeper's Barrow
 					},
 				}),
 				------ Chapter 3 ------
@@ -234,6 +238,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["sourceQuests"] = { 38377 },	-- The Emerald Queen
 					["provider"] = { "n", 98584 },	-- Ysera
 					["coord"] = { 52.4, 63.6, VALSHARAH },
+					["groups"] = { i(127273) },	-- Seal of Ysera (QI!)
 				}),
 				q(38655, {	-- Root Cause
 					["sourceQuests"] = { 38641 },	-- The Temple of Elune
@@ -355,6 +360,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["sourceQuests"] = { 41724, 38675 },	-- Heart of the Nightmare (A, H)
 					["provider"] = { "n", 92783 },	-- Elothir
 					["coord"] = { 66.1, 44.6, VALSHARAH },
+					["groups"] = { i(136391) },	-- Corrupted Petals (QI!)
 				}),
 				q(43702, {	-- Softening the Target
 					["sourceQuests"] = {
@@ -460,6 +466,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["provider"] = { "n", 92618 },	-- Granny Marl
 					["coord"] = { 38.9, 61.4, VALSHARAH },
+					["groups"] = { i(127030) },	-- Granny's Flare Grenades (QI!)
 				}),
 				q(38645, {	-- Children of the Night
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
@@ -728,6 +735,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					},
 					["provider"] = { "n", 108304 },	-- Guviena Bladesong
 					["coord"] = { 59.4, 84.2, VALSHARAH },
+					["groups"] = {
+						i(245258, {	-- Val'sharah Bookcase (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				-- Andutalah Side Quests --
 				q(38671, {	-- Lost in Retreat
@@ -760,9 +772,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["qg"] = 93677,	-- Shivering Ashmaw Cub
 					["coord"] = { 53.1, 87.9, VALSHARAH },	-- cave entrance
 					["crs"] = { 93686 },	-- Jinikki the Puncturer
-					["groups"] = {
-						i(128690),	-- Ashmaw Cub (PET!)
-					},
+					["groups"] = { i(128690) },	-- Ashmaw Cub (PET!)
 				}),
 				-- APPEARANCE --
 				q(46079, {	-- Aid on the Front Lines
@@ -774,26 +784,36 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						47003,	-- Restoration: The Bradensbrook Investigation, Shaman
 					},
 					["provider"] = { "n", 118752 },	-- Mayor Heathrow
+					["coord"] = { 42.3, 58.9, VALSHARAH },
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["_drop"] = { "classes", "c" },	-- bad API data
 				}),
 				q(46082, {	-- Shadowsong's Return
 					["sourceQuests"] = { 46079 },	-- Aid on the Front Lines
 					["provider"] = { "n", 118752 },	-- Mayor Heathrow
+					["coord"] = { 42.3, 58.9, VALSHARAH },
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
 				}),
 				q(46106, {	-- Cutting off the Heads
 					["sourceQuests"] = { 46082 },	-- Shadowsong's Return
-					["provider"] = { "n", 118947 },	-- Commander Jarod Shadowsong
+					["qgs"] = {
+						118947,	-- Commander Jarod Shadowsong
+						118954,	-- Commander Jarod Shadowsong (mobileNPC)
+					},
+					["coord"] = { 39.1, 58.1, VALSHARAH },
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
 				}),
 				q(46080, {	-- Quieting the Spirits
 					["sourceQuests"] = { 46082 },	-- Shadowsong's Return
-					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong
+					["qgs"] = {
+						118947,	-- Commander Jarod Shadowsong
+						118954,	-- Commander Jarod Shadowsong (mobileNPC)
+					},
+					["coord"] = { 39.1, 58.1, VALSHARAH },
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
@@ -803,14 +823,14 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						46106,	-- Cutting off the Heads
 						46080,	-- Quieting the Spirits
 					},
-					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong
+					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong (mobileNPC)
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
 				}),
 				q(46200, {	-- The Matter Resolved... For Now...
 					["sourceQuests"] = { 46107 },	-- Source of the Corruption
-					["provider"] = { "n", 118954 },	-- Night Elf Warrior
+					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong (mobileNPC)
 					["classes"] = { DRUID, MONK, PALADIN, PRIEST, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
@@ -824,10 +844,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				q(38711, {	-- The Warden's Signet
 					["provider"] = { "i", 127860 },	-- Warden's Signet
 					["coord"] = { 38.9, 65.1, VALSHARAH },
+					["timeline"] = { REMOVED_11_2_5 },
 					["cr"] = 94366,	-- Lelyn Swiftshadow
-					["groups"] = {
-						i(127860),	-- Warden's Signet (QI!)
-					},
 				}),
 				q(39015, {	-- Grumpy
 					["qg"] = 92738,-- Grumpy

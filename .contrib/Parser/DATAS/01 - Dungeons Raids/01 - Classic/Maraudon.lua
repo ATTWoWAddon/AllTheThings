@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 MARAUDON_PORTAL = createHeader({
 	readable = "Maraudon Portal",
 	icon = 135743,
@@ -30,6 +31,7 @@ WICKED_GROTTO = createHeader({
 		-- #endif
 	},
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(232, {	-- Maraudon
 		-- #if BEFORE MOP
@@ -289,7 +291,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						i(17696, {	-- Filled Cerulean Vial
 							["description"] = "Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",
-							["coord"] = { 38, 58, DESOLACE },
+							["coord"] = { 38.0, 58.0, DESOLACE },
 							["cost"] = { { "i", 17693, 1 } },	-- Coated Cerulean Vial
 						}),
 						-- #endif
@@ -548,7 +550,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_THREE, n(223264, {	-- Delirious Ancient
 						["description"] = "Spawns after killing Princess and the surrounding trash.",
-						["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
+						["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 						["groups"] = {
 							i(221271),	-- Ace of Wilds
 							i(221262),	-- Wild Offering

@@ -10,10 +10,10 @@ root(ROOTS.ExpansionFeatures,
 					n(QUESTS, {
 						{	-- The Final Toy
 							["allianceQuestData"] = q(37087, {	-- Lost in Transition
-								["provider"] = { "n", 84857 },	-- Kyra Goldhands <Banker>
+								["qg"] = 84857,	-- Kyra Goldhands <Banker>
 							}),
 							["hordeQuestData"] = q(37060, {	-- Lost in Transition
-								["provider"] = { "n", 79862 },	-- Yorn Longhoof <Banker>
+								["qg"] = 79862,	-- Yorn Longhoof <Banker>
 							}),
 							["groups"] = {
 								o(237039, {	-- Crate of Surplus Material

@@ -142,7 +142,7 @@ WEAPON_SKILL_TWO_HANDED_AXES = {
 	["OnUpdate"] = [[function(t)
 		if _.ClassIndex == ]] .. SHAMAN .. [[ then
 			rawset(t, 'collectible', nil);
-			if not _.IsSpellKnown(16269) then
+			if not _.IsSpellKnownHelper(16269) then
 				rawset(t, 'collectible', false);
 			end
 		end
@@ -162,7 +162,7 @@ WEAPON_SKILL_TWO_HANDED_MACES = {
 	["OnUpdate"] = [[function(t)
 		if _.ClassIndex == ]] .. SHAMAN .. [[ then
 			rawset(t, 'collectible', nil);
-			if not _.IsSpellKnown(16269) then
+			if not _.IsSpellKnownHelper(16269) then
 				rawset(t, 'collectible', false);
 			end
 		end

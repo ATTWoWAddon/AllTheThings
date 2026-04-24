@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(ELWYNN_FOREST, {
 		["lore"] = "Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",
@@ -2269,66 +2270,63 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(203723, {	-- Cutty's Note
-						["coords"] = {
-							{ 57.4, 48.6, ELWYNN_FOREST },
-							{ 71.0, 80.6, ELWYNN_FOREST },
-						},
-						["timeline"] = { REMOVED_2_0_1 },
-						["maps"] = { NORTHSHIRE_VALLEY },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							103,	-- Garrick Padfoot
-							473,	-- Morgan the Collector
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203750, {	-- Elwynn Treasure Map
-						["timeline"] = { REMOVED_2_0_1 },
-						["cost"] = {
-							{ "i", 203787, 1 },	-- Bottom-Left Map Piece
-							{ "i", 203786, 1 },	-- Bottom-Right Map Piece
-							{ "i", 203785, 1 },	-- Top-Left Map Piece
-							{ "i", 203784, 1 },	-- Top-Right Map Piece
-						},
-						["classes"] = { ROGUE },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203787, {	-- Bottom-Left Map Piece
-						["coord"] = { 26.2, 88.6, ELWYNN_FOREST },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 478,	-- Riverpaw Outrunner
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203786, {	-- Bottom-Right Map Piece
-						["coord"] = { 79.2, 57.4, ELWYNN_FOREST },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 46,	-- Murloc Forager
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203785, {	-- Top-Left Map Piece
-						["coord"] = { 68.8, 78.6, ELWYNN_FOREST },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							6866,	-- Defias Bodyguard
-							116,	-- Defias Bandit
-							 38,	-- Defias Thug
-							474,	-- Defias Rogue Wizard
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(203784, {	-- Top-Right Map Piece
-						["coord"] = { 39.3, 80.4, ELWYNN_FOREST },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							 40,	-- Kobold Miner
-							475,	-- Kobold Tunneler
-							257,	-- Kobold Worker
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(203723, {	-- Cutty's Note
+					["coords"] = {
+						{ 57.4, 48.6, ELWYNN_FOREST },
+						{ 71.0, 80.6, ELWYNN_FOREST },
+					},
+					["timeline"] = { REMOVED_2_0_1 },
+					["maps"] = { NORTHSHIRE_VALLEY },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						103,	-- Garrick Padfoot
+						473,	-- Morgan the Collector
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203750, {	-- Elwynn Treasure Map
+					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = {
+						{ "i", 203787, 1 },	-- Bottom-Left Map Piece
+						{ "i", 203786, 1 },	-- Bottom-Right Map Piece
+						{ "i", 203785, 1 },	-- Top-Left Map Piece
+						{ "i", 203784, 1 },	-- Top-Right Map Piece
+					},
+					["classes"] = { ROGUE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203787, {	-- Bottom-Left Map Piece
+					["coord"] = { 26.2, 88.6, ELWYNN_FOREST },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 478,	-- Riverpaw Outrunner
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203786, {	-- Bottom-Right Map Piece
+					["coord"] = { 79.2, 57.4, ELWYNN_FOREST },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 46,	-- Murloc Forager
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203785, {	-- Top-Left Map Piece
+					["coord"] = { 68.8, 78.6, ELWYNN_FOREST },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						6866,	-- Defias Bodyguard
+						116,	-- Defias Bandit
+						 38,	-- Defias Thug
+						474,	-- Defias Rogue Wizard
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203784, {	-- Top-Right Map Piece
+					["coord"] = { 39.3, 80.4, ELWYNN_FOREST },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						 40,	-- Kobold Miner
+						475,	-- Kobold Tunneler
+						257,	-- Kobold Worker
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {
@@ -2518,7 +2516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(39, {	-- Deliver Thomas' Report
 					["sourceQuest"] = 71,	-- Report to Thomas
 					["qg"] = 261,	-- Guard Thomas
-					["coord"] = { 74, 72.2, ELWYNN_FOREST },
+					["coord"] = { 74.0, 72.2, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
@@ -2639,7 +2637,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(16, {	-- Give Gerard a Drink
 					["qg"] = 255,	-- Gerard Tiller
 					["coord"] = { 43.0, 85.6, ELWYNN_FOREST },
-					["cost"] = { { "i", 159, 1 }, },	-- Refreshing Spring Water
+					["cost"] = { { "i", 159, 1 } },	-- Refreshing Spring Water
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
@@ -2997,10 +2995,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2205, {	-- Seek out SI: 7
-					["altQuests"] = {
-						2218,	-- Road to Salvation
-						2241,	-- The Apple Falls
-					},
 					["providers"] = {
 						{ "n",  917 },	-- Keryn Sylvius
 						{ "i", 7674 },	-- Delivery to Mathias (PQI!)
@@ -3224,7 +3218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(205183, {	-- Fel-Powered Artifact
 							["description"] = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Gakin in Stormwind City to receive the rune.",
-							["cost"] = {{ "i", 205182, 1 }},	-- Powerless Artifact
+							["cost"] = { { "i", 205182, 1 } },	-- Powerless Artifact
 							["classes"] = { WARLOCK },
 						}),
 					},
@@ -3501,7 +3495,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 80.3, 79.1, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 203750, 1 }},	-- Elwynn Treasure Map
+					["cost"] = { { "i", 203750, 1 } },	-- Elwynn Treasure Map
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
@@ -3627,7 +3621,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(203990, {	-- Rune of Mutilation
-							["cost"] = {{ "i", 203723, 1 }},	-- Cutty's Note
+							["cost"] = { { "i", 203723, 1 } },	-- Cutty's Note
 							["classes"] = { ROGUE },
 							["groups"] = {
 								recipe(400094),	-- Engrave Gloves - Mutilate
@@ -3711,7 +3705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205182, {	-- Powerless Artifact
-							["cost"] = {{ "i", 205181, 1 }},	-- Unidentified Artifact
+							["cost"] = { { "i", 205181, 1 } },	-- Unidentified Artifact
 							["classes"] = { WARLOCK },
 						})),
 					},
@@ -3756,7 +3750,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(203749, {	-- Spell Notes: Enlightenment
-						["cost"] = {{ "i", 204864, 6 }},	-- Azora Apprentice Notes
+						["cost"] = { { "i", 204864, 6 } },	-- Azora Apprentice Notes
 						["classes"] = { MAGE },
 						["groups"] = {
 							recipe(415942),	-- Engrave Chest - Enlightenment

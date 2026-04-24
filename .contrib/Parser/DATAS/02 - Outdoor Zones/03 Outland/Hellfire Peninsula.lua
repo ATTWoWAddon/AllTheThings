@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local BLOOD_FOR_BLOOD_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 	i(30809),	-- Mark of Sargeras
 	i(30810),	-- Sunfury Signet
@@ -70,6 +71,7 @@ local VENDOR_GEMS = {
 	i(28467),	-- Smooth Amber (Both)
 	i(28470),	-- Thick Amber (TBC) / Subtle Amber (Cata+)
 };
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -292,114 +294,150 @@ root(ROOTS.Zones, {
 				}),
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
-						["crs"] = {
-							18802,	-- Alchemist Gribble <Alchemy Trainer> (A)
-							16588,	-- Apothecary Antonivich <Alchemy Trainer> (H)
-						},
-						["coords"] = {
-							{ 53.8, 65.8, HELLFIRE_PENINSULA },
-							{ 52.2, 36.4, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_ALCHEMY,
+						n(18802, {	-- Alchemist Gribble <Alchemy Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 53.8, 65.8, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ALCHEMY,
+						}),
+						n(16588, {	-- Apothecary Antonivich <Alchemy Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ALCHEMY,
+						}),
 					}),
 					prof(BLACKSMITHING, {
-						["crs"] = {
-							16823,	-- Humphry <Blacksmithing Trainer> (A)
-							16583,	-- Rohok <Blacksmithing Trainer> (H)
-						},
-						["coords"] = {
-							{ 56.8, 63.8, HELLFIRE_PENINSULA },	-- Honour Hold
-							{ 53.2, 38.2, HELLFIRE_PENINSULA },	-- Thrallmar
-						},
-						["groups"] = TBC_BLACKSMITHING,
+						n(16823, {	-- Humphry <Blacksmithing Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 56.8, 63.8, HELLFIRE_PENINSULA },	-- Honour Hold
+							["groups"] = TBC_BLACKSMITHING,
+						}),
+						n(16583, {	-- Rohok <Blacksmithing Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 53.2, 38.2, HELLFIRE_PENINSULA },	-- Thrallmar
+							["groups"] = TBC_BLACKSMITHING,
+						}),
 					}),
 					prof(FIRST_AID, {
-						["crs"] = {
-							18990,	-- Burko <Bandage Trainer> (A)
-							18991,	-- Aresella <Bandage Trainer> (H)
-						},
-						["coords"] = {
-							{ 22.4, 39.2, HELLFIRE_PENINSULA },
-							{ 26.2, 62.0, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_FIRST_AID,
+						n(18990, {	-- Burko <Bandage Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 22.4, 39.2, HELLFIRE_PENINSULA },
+							["groups"] = TBC_FIRST_AID,
+						}),
+						n(18991, {	-- Aresella <Bandage Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 26.2, 62.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_FIRST_AID,
+						}),
 					}),
 					prof(ENCHANTING, {
-						["crs"] = {
-							18773,	-- Johan Barnes <Enchanting Trainer> (A)
-							18753,	-- Felannia <Enchanting Trainer> (H)
-						},
-						["coords"] = {
-							{ 53.6, 66.0, HELLFIRE_PENINSULA },
-							{ 52.5, 36.0, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_ENCHANTING,
+						n(18773, {	-- Johan Barnes <Enchanting Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ENCHANTING,
+						}),
+						n(18753, {	-- Felannia <Enchanting Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 52.5, 36.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ENCHANTING,
+						}),
 					}),
 					prof(ENGINEERING, {
-						["crs"] = {
-							18775,	-- Lebowski <Engineering Trainer> (A)
-							18752,	-- Zebig <Engineering Trainer> (H)
-						},
-						["coords"] = {
-							{ 55.6, 65.6, HELLFIRE_PENINSULA },
-							{ 54.8, 38.6, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_ENGINEERING,
+						n(18775, {	-- Lebowski <Engineering Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ENGINEERING,
+						}),
+						n(18752, {	-- Zebig <Engineering Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 54.8, 38.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ENGINEERING,
+						}),
 					}),
 					prof(HERBALISM, {
-						["crs"] = {
-							18776,	-- Rorelien <Herbalism Trainer> (A)
-							18748,	-- Ruak Stronghorn <Herbalism Trainer> (H)
-						},
-						["coords"] = {
-							{ 53.6, 65.8, HELLFIRE_PENINSULA },
-							{ 52.2, 36.2, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_HERBALISM,
+						n(18776, {	-- Rorelien <Herbalism Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 53.6, 65.8, HELLFIRE_PENINSULA },
+							["groups"] = TBC_HERBALISM,
+						}),
+						n(18748, {	-- Ruak Stronghorn <Herbalism Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 52.2, 36.2, HELLFIRE_PENINSULA },
+							["groups"] = TBC_HERBALISM,
+						}),
 					}),
+					-- #if AFTER WRATH
+					prof(INSCRIPTION, {
+						n(30721, {	-- Michael Schwan <Inscription Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 54.0, 65.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_INSCRIPTION,
+						}),
+						n(30722, {	-- Neferatti <Inscription Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 52.2, 36.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_INSCRIPTION,
+						}),
+					}),
+					-- #endif
 					prof(JEWELCRAFTING, {
-						["crs"] = {
-							18774,	-- Tatiana <Jewelcrafting Trainer> (A)
-							18751,	-- Kalaen <Jewelcrafting Trainer> (H)
-						},
-						["coords"] = {
-							{ 54.6, 63.6, HELLFIRE_PENINSULA },
-							{ 56.8, 37.6, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_JEWELCRAFTING,
+						n(18774, {	-- Tatiana <Jewelcrafting Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_JEWELCRAFTING,
+						}),
+						n(18751, {	-- Kalaen <Jewelcrafting Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 56.8, 37.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_JEWELCRAFTING,
+						}),
 					}),
 					prof(LEATHERWORKING, {
-						["crs"] = {
-							18771,	-- Brumman <Leatherworking Trainer> (A)
-							18754,	-- Barim Spilthoof <Leatherworking Trainer> (H)
-						},
-						["coords"] = {
-							{ 54.0, 64.0, HELLFIRE_PENINSULA },
-							{ 56.2, 38.6, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_LEATHERWORKING,
+						n(18771, {	-- Brumman <Leatherworking Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 54.0, 64.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_LEATHERWORKING,
+						}),
+						n(18754, {	-- Barim Spilthoof <Leatherworking Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 56.2, 38.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_LEATHERWORKING,
+						}),
 					}),
 					prof(MINING, {
-						["crs"] = {
-							18779,	-- Hurnak Grimmord <Mining Trainer> (A)
-							18747,	-- Krugosh <Mining Trainer> (H)
-						},
-						["coords"] = {
-							{ 56.6, 63.8, HELLFIRE_PENINSULA },
-							{ 55.4, 37.6, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_MINING,
+						n(18779, {	-- Hurnak Grimmord <Mining Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 56.6, 63.8, HELLFIRE_PENINSULA },
+							["groups"] = TBC_MINING,
+						}),
+						n(18747, {	-- Krugosh <Mining Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 55.4, 37.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_MINING,
+						}),
+					}),
+					prof(SKINNING, {
+						n(18777, {	-- Jelena Nightsky <Master Skinning Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 54.6, 63.2, HELLFIRE_PENINSULA },
+							["groups"] = TBC_SKINNING,
+						}),
+						n(18755, {	-- Moorutu <Master Skinning Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 56.2, 38.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_SKINNING,
+						}),
 					}),
 					prof(TAILORING, {
-						["crs"] = {
-							18772,	-- Hama <Tailoring Trainer> (A)
-							18749,	-- Dalinna <Tailoring Trainer> (H)
-						},
-						["coords"] = {
-							{ 54.6, 63.6, HELLFIRE_PENINSULA },
-							{ 56.6, 37.2, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_TAILORING,
+						n(18772, {	-- Hama <Tailoring Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_TAILORING,
+						}),
+						n(18749, {	-- Dalinna <Tailoring Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 56.6, 37.2, HELLFIRE_PENINSULA },
+							["groups"] = TBC_TAILORING,
+						}),
 					}),
 				}),
 				n(QUESTS, {
@@ -726,7 +764,7 @@ root(ROOTS.Zones, {
 									{ "i",  23485 },	-- Empty Birdcage
 									{ "o", 181582 },	-- Kaliri Nest
 								},
-								["coord"] = { 29, 81, HELLFIRE_PENINSULA },
+								["coord"] = { 29.0, 81.0, HELLFIRE_PENINSULA },
 								["cr"] = 17034,	-- Female Kaliri Hatchling
 							}),
 						},
@@ -1188,9 +1226,7 @@ root(ROOTS.Zones, {
 							{ "o", 185302 },	-- Fei Fei's Cache
 						},
 						["coord"] = { 56.4, 62.9, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 31799, 1 },	-- Fei Fei Doggy Treat
-						},
+						["cost"] = { { "i", 31799, 1 } },	-- Fei Fei Doggy Treat
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1304,7 +1340,7 @@ root(ROOTS.Zones, {
 									{ "i", 29162 },	-- Galaxis Soul Shard
 									{ "i", 29226 },	-- Warp Rift Generator
 								},
-								["coord"] = { 81, 78.8, HELLFIRE_PENINSULA },
+								["coord"] = { 81.0, 78.8, HELLFIRE_PENINSULA },
 								["cr"] = 16939,	-- Void Baron Galaxis
 							}),
 							i(29400),	-- Abyssal Shroud
@@ -1315,9 +1351,7 @@ root(ROOTS.Zones, {
 					q(9563, {	-- Gaining Mirren's Trust
 						["qg"] = 16851,	-- Mirren Longbeard
 						["coord"] = { 23.9, 72.3, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23848, 1 },	-- Nethergarde Bitter
-						},
+						["cost"] = { { "i", 23848, 1 } },	-- Nethergarde Bitter
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
@@ -1555,15 +1589,24 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Manni Saved
-								["provider"] = { "n", 19763 },	-- Manni
+								["providers"] = {
+									{ "n",  19763 },	-- Manni
+									{ "o", 183936 },	-- Manni's Cage
+								},
 								["coord"] = { 45.1, 41.1, HELLFIRE_PENINSULA },
 							}),
 							objective(2, {	-- Moh Saved
-								["provider"] = { "n", 19764 },	-- Moh
+								["providers"] = {
+									{ "n",  19764 },	-- Moh
+									{ "o", 183940 },	-- Moh's Cage
+								},
 								["coord"] = { 46.4, 45.2, HELLFIRE_PENINSULA },
 							}),
 							objective(3, {	-- Jakk Saved
-								["provider"] = { "n", 19766 },	-- Jakk
+								["providers"] = {
+									{ "n",  19766 },	-- Jakk
+									{ "o", 183941 },	-- Jakk's Cage
+								},
 								["coord"] = { 47.5, 46.6, HELLFIRE_PENINSULA },
 							}),
 							i(30858),	-- Peon Sleep Potion
@@ -1758,9 +1801,7 @@ root(ROOTS.Zones, {
 						["description"] = "Only available during |cFFFFD700Arelion's Mistress|r.",
 						["qg"] = 17226,	-- Viera Sunwhisper
 						["coord"] = { 27.2, 62.0, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 29112, 1 },	-- Cenarion Spirits
-						},
+						["cost"] = { { "i", 29112, 1 } },	-- Cenarion Spirits
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2031,7 +2072,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Fallen Sky Ridge Revitalized
 								["provider"] = { "i", 29478 },	-- Seed of Revitalization
-								["coord"] = { 13.6, 39, HELLFIRE_PENINSULA },
+								["coord"] = { 13.6, 39.0, HELLFIRE_PENINSULA },
 								["cr"] = 19305,	-- Goliathon <King of the Colossi>
 							}),
 							i(28075),	-- Destroyer's Mantle
@@ -2383,7 +2424,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Draenei Anchorite slain
 								["provider"] = { "i", 23358 },	-- Signaling Gem
-								["coord"] = { 39, 40, HELLFIRE_PENINSULA },
+								["coord"] = { 39.0, 40.0, HELLFIRE_PENINSULA },
 								["cr"] = 16994,	-- Draenei Anchorite
 							}),
 							i(25499),	-- Felblood Band
@@ -2411,7 +2452,7 @@ root(ROOTS.Zones, {
 									{ "i", 31607 },	-- Demoniac Scryer Reading
 									{ "i", 31606 },	-- Demoniac Scryer
 								},
-								["coord"] = { 44, 51, HELLFIRE_PENINSULA },
+								["coord"] = { 44.0, 51.0, HELLFIRE_PENINSULA },
 							}),
 							i(31715),	-- Demoniac Soul Prison
 						},
@@ -2743,7 +2784,7 @@ root(ROOTS.Zones, {
 									{ "i", 29051 },	-- Warp Nether
 									{ "i", 29027 },	-- Unstable Warp Rift Generator
 								},
-								["coord"] = { 52, 84, HELLFIRE_PENINSULA },
+								["coord"] = { 52.0, 84.0, HELLFIRE_PENINSULA },
 								["cr"] = 20145,	-- Unstable Voidwalker
 							}),
 						},
@@ -2874,7 +2915,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10809, {	-- Wanted: Worg Master Kruush
-						["sourceQuest"] = 10449,	-- Apothecary Zelana (TODO:: verify this. It isn't always available, but first seen while on "Spinebreaker Post")
+						["sourceQuest"] = 10449,	-- Apothecary Zelana (TODO:  verify this. It isn't always available, but first seen while on "Spinebreaker Post")
 						["provider"] = { "o", 185166 },	-- Wanted Poster
 						["coord"] = { 61.2, 80.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
@@ -3097,26 +3138,26 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = pvp({
 							i(27832, {	-- Band of the Victor
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							i(63697, {	-- Bold Blood Garnet
 								["timeline"] = { ADDED_4_0_1 },
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 10 } },	-- 10x Mark of Thrallmar
 							}),
 							i(27777, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 10 } },	-- 10x Mark of Thrallmar
 							}),
 							i(27830, {	-- Circlet of the Victor
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							i(28360, {	-- Delicate Blood Garnet (Cata+) / Mighty Blood Garnet (TBC)
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 10 } },	-- 10x Mark of Thrallmar
 							}),
 							i(27786, {	-- Jagged Deep Peridot (Cata+) / Barbed Deep Peridot (TBC)
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 10 } },	-- 10x Mark of Thrallmar
 							}),
 							i(24522, {	-- Thrallmar Favor
-								["cost"] = { { "i", 24581, 5 }, },	-- 5x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 5 } },	-- 5x Mark of Thrallmar
 							}),
 						}),
 					}),
@@ -3333,6 +3374,18 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35475)),	-- Stalker's Chain Gauntlets
 								applyclassicphase(TBC_PHASE_TWO, i(35471)),	-- Wyrmhide Gloves
 							}, {	-- Revered
+								-- #if CLASSIC_ANNIVERSARY
+								i(265829, {	-- Communal Flamewrought Pouch
+									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										i(265830, {	-- Communal Flamewrought Key
+											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
+								}),
+								-- #endif
 								i(24180),	-- Design: Dawnstone Crab (RECIPE!)
 								i(32883, {	-- Felbane Slugs
 									["timeline"] = { REMOVED_4_0_1 },
@@ -3420,6 +3473,18 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35377)),	-- Stalker's Chain Gauntlets
 								applyclassicphase(TBC_PHASE_TWO, i(35371)),	-- Wyrmhide Gloves
 							}, {	-- Revered
+								-- #if CLASSIC_ANNIVERSARY
+								i(265829, {	-- Communal Flamewrought Pouch
+									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(265826, {	-- Communal Flamewrought Key
+											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+											["races"] = HORDE_ONLY,
+										}),
+									},
+								}),
+								-- #endif
 								i(29168),	-- Ancestral Band
 								i(29167),	-- Blackened Spear
 								i(31358),	-- Design: Dawnstone Crab (RECIPE!)
@@ -3512,26 +3577,26 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = pvp({
 							i(27833, {	-- Band of the Victor
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							i(63696, {	-- Bold Blood Garnet
 								["timeline"] = { ADDED_4_0_1 },
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 10 } },	-- 10x Mark of Honor Hold
 							}),
 							i(27812, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 10 } },	-- 10x Mark of Honor Hold
 							}),
 							i(27834, {	-- Circlet of the Victor
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							i(28361, {	-- Delicate Blood Garnet (Cata+) / Mighty Blood Garnet (TBC)
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 10 } },	-- 10x Mark of Honor Hold
 							}),
 							i(27809, {	-- Jagged Deep Peridot (Cata+) / Notched Deep Peridot (TBC)
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 10 } },	-- 10x Mark of Honor Hold
 							}),
 							i(24520, {	-- Honor Hold Favor
-								["cost"] = { { "i", 24579, 5 }, },	-- 5x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 5 } },	-- 5x Mark of Honor Hold
 							}),
 							i(31799, {	-- Fei Fei Doggy Treat
 								["cost"] = {
@@ -3564,10 +3629,8 @@ root(ROOTS.Zones, {
 						["cr"] = 16907,	-- Bleeding Hollow Peon
 					}),
 					i(31346, {	-- Burning Bleeding Hollow Torch
-						["coord"] = { 69, 69, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 31347, 1 },	-- Bleeding Hollow Torch
-						},
+						["coord"] = { 69.0, 69.0, HELLFIRE_PENINSULA },
+						["cost"] = { { "i", 31347, 1 } },	-- Bleeding Hollow Torch
 					}),
 					i(29588, {	-- Burning Legion Missive [Alliance]
 						["coord"] = { 53.0, 26.7, HELLFIRE_PENINSULA },

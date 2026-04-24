@@ -1,25 +1,29 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
+
 THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
 	readable = "The Scepter of the Shifting Sands",
 	icon = 133062,
 	text = {
 		en = "The Scepter of the Shifting Sands",
-		es = "El cetro del Mar de Dunas",
 		de = "Das Szepter der Sandstürme",
+		es = "El cetro del Mar de Dunas",
+		mx = "El cetro del Mar de Dunas",
 		fr = "Le Sceptre des Sables changeants",
 		it = "Scettro delle Sabbie Mutevoli",
+		ko = "흐르는 모래의 홀",
 		pt = "Cetro das Areias Cambiantes",
 		ru = "Скипетр Зыбучих песков",
-		ko = "흐르는 모래의 홀",
 		cn = "流沙节杖",
 		tw = "流沙節杖",
 	},
 	description = {
 		en = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
+		cn = "除了服务器上所有玩家共同努力完成备战任务外，还需要一名玩家制作出流沙节杖 —— 这是一项极为艰巨的任务，在该任务线刚推出时，只有服务器上顶尖的公会才能完成。当备战任务结束，联盟与部落的军队抵达希利苏斯后，流沙节杖可用于敲响甲虫之锣。敲响铜锣后，安其拉之门就会开启。每个服务器上第一个敲响甲虫之锣的玩家将获得 “甲虫之王” 称号（在《燃烧的远征》中，经典旧世的这个称号不会再出现！）以及黑色其拉共鸣水晶坐骑。在随后 10 小时内敲响铜锣的其他玩家也能获得该称号。\n\n尽管在服务器上安其拉之门开启后，玩家仍可完成流沙节杖的任务线，但完成后既不会获得黑色其拉共鸣水晶坐骑，也不会获得 “甲虫之王” 称号。",
 	},
 });
+
 root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 	applyclassicphase(PHASE_FIVE, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {
 		["maps"] = {
@@ -91,7 +95,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 								{ "i", 21039 },	-- Narain's Turban
 								{ "i", 21040 },	-- Narain's Robe
 							},
-							["coord"] = { 65, 72, WINTERSPRING },
+							["coord"] = { 65.0, 72.0, WINTERSPRING },
 						}),
 						i(21042, {	-- Narain's Special Kit
 							i(21037),	-- Crude Map
@@ -129,7 +133,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8305, {	-- Long Forgotten Memories
 					["sourceQuest"] = 8303,	-- Anachronos
 					["qg"] = 15192,	-- Anachronos
-					["coord"] = { 65, 50, TANARIS },
+					["coord"] = { 65.0, 50.0, TANARIS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
@@ -231,7 +235,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8555, {	-- The Charge of the Dragonflights
 					["sourceQuest"] = 8519,	-- A Pawn on the Eternal Board
 					["qg"] = 15192,	-- Anachronos
-					["coord"] = { 65, 50, TANARIS },
+					["coord"] = { 65.0, 50.0, TANARIS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
@@ -256,7 +260,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["maxReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["cost"] = {{ "i", 20384, 200 }},	-- Silithid Carapace Fragment
+					["cost"] = { { "i", 20384, 200 } },	-- Silithid Carapace Fragment
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -268,9 +272,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
 					["coord"] = { 52.6, 28.1, TANARIS },
 					["maps"] = { FERALAS },
-					["cost"] = {
-						{ "i", 21024, 20 },	-- Chimaerok Tenderloin
-					},
+					["cost"] = { { "i", 21024, 20 } },	-- Chimaerok Tenderloin
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lakmaeran's Carcass
@@ -287,7 +289,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						8741,	-- The Champion Returns
 					},
 					["qg"] = 15192,	-- Anachronos
-					["coord"] = { 65, 50, TANARIS },
+					["coord"] = { 65.0, 50.0, TANARIS },
 					["lvl"] = 60,
 					["groups"] = {
 						i(21175),	-- The Scepter of the Shifting Sands
@@ -325,7 +327,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						objective(2, {	-- 0/1 Fragment of the Nightmare's Corruption (Duskwood)
 							["provider"] = { "i", 21149 },	-- Fragment of the Nightmare's Corruption
 							["description"] = "It is recommended that you bring at least 30 players and they should be experienced raiders.",
-							["coord"] = { 48, 33, DUSKWOOD },
+							["coord"] = { 48.0, 33.0, DUSKWOOD },
 							["cr"] = 15625,	-- Twilight Corrupter
 						}),
 						objective(3, {	-- 0/1 Fragment of the Nightmare's Corruption (Feralas)
@@ -409,7 +411,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 							["itemID"] = 21106,	-- Draconic for Dummies [Chapter IV]
 							["_allowObjectProvider"] = true,
 							["provider"] = { "o", 180666 },	-- Draconic for Dummies
-							["coord"] = { 77, 38, UNDERCITY },
+							["coord"] = { 77.0, 38.0, UNDERCITY },
 						},
 						{
 							["itemID"] = 21107,	-- Draconic for Dummies [Chapter V]
@@ -419,7 +421,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 								-- #if AFTER WRATH
 								{ 75.35, 29.73, STORMWIND_CITY },
 								-- #else
-								{ 72, 6, STORMWIND_CITY },
+								{ 72.0, 6.0, STORMWIND_CITY },
 								-- #endif
 							},
 						},
@@ -432,7 +434,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 							["_allowObjectProvider"] = true,
 							["provider"] = { "o", 180667 },	-- Draconic for Dummies
 							["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-							["coord"] = { 32, 42.9, BLACKWING_LAIR },
+							["coord"] = { 32.0, 42.9, BLACKWING_LAIR },
 						},
 						{
 							["itemID"] = 21110,	-- Draconic for Dummies [Chapter VIII]
@@ -443,14 +445,12 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				}),
 				q(8301, {	-- The Path of the Righteous
 					["sourceQuest"] = 8288,	-- Only One May Rise
-					["providers"] = {
-						{ "n", 15180 },	-- Baristolth of the Shifting Sands
-						{ "i", 20402 },	-- Agent of Nozdormu
-					},
+					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
-					["cost"] = {{ "i", 20384, 200 }},	-- Silithid Carapace Fragment
+					["cost"] = { { "i", 20384, 200 } },	-- Silithid Carapace Fragment
 					["lvl"] = 60,
 					["groups"] = {
+						i(20402),	-- Agent of Nozdormu
 						i(20403),	-- Proxy of Nozdormu
 					},
 				}),
@@ -467,8 +467,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 								{ "o", 180669 },	-- Swirling Maelstrom
 							},
 							["description"] = "This summons a 40 man raid boss.",
-							["cost"] = {{ "i", 21136, 1 }},	-- Arcanite Buoy
-							["coord"] = { 65, 55, AZSHARA },
+							["cost"] = { { "i", 21136, 1 } },	-- Arcanite Buoy
+							["coord"] = { 65.0, 55.0, AZSHARA },
 							["cr"] = 15571,	-- Maws
 						}),
 						i(21526),	-- Band of Icy Depths
@@ -511,6 +511,12 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["lvl"] = 60,
+				}),
+			}),
+			n(REWARDS, {
+				i(20402, {	-- Agent of Nozdormu
+					["description"] = "A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",
+					["cost"] = {{ "i", 20403, 1 }},	-- Proxy of Nozdormu
 				}),
 			}),
 		},

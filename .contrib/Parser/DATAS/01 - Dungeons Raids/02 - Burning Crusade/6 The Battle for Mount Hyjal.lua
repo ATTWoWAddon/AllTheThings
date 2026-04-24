@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_2_0_1 } }, {
 	inst(750, {	-- The Battle for Mount Hyjal
 		["lore"] = "The Battle of Mount Hyjal was the final bloody conflict that concluded the Third War. The battle was the culmination of years of fighting between the various mortal forces of Azeroth and the demonic and undead armies of the Burning Legion, and saw the demons' invasion end in decisive failure.\n\nSpecifically, the event took place as part of the invasion of Kalimdor phase of the war, where Archimonde struck directly at the World Tree Nordrassil on Mount Hyjal as part of his endgame. The battle began when a mortal coalition of night elves, Alliance, and New Horde elements arrayed themselves before the World Tree to halt Archimonde's advance. Though they were unable to stand against the Legion indefinitely, they aimed to buy time for Malfurion Stormrage to prepare a proper defense.",
@@ -29,6 +30,37 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					["maps"] = { CAVERNS_OF_TIME },
 				}),
 			}),
+			header(HEADERS.Spell, 2575, {	-- Mining
+				o(185557, {	-- Ancient Gem Vein
+					["maps"] = { THE_BATTLE_FOR_MOUNT_HYJAL },
+					["timeline"] = { ADDED_2_1_0 },
+					["requireSkill"] = MINING,
+					-- #if BEFORE 6.0.0
+					["learnedAt"] = 375,
+					-- #endif
+					["groups"] = appendAllGroups(
+						{	-- Rare quality (blue) gems:
+							i(23440),	-- Dawnstone
+							i(23436),	-- Living Ruby
+							i(23441),	-- Nightseye
+							i(23439),	-- Noble Topaz
+							i(23438),	-- Star of Elune
+							i(23437),	-- Talasite
+						},
+						sharedData({
+							["timeline"] = { ADDED_2_1_0 },
+						}, {
+							-- Epic quality (purple) gems:
+							i(32227),	-- Crimson Spinel
+							i(32228),	-- Empyrean Sapphire
+							i(32229),	-- Lionseye
+							i(32231),	-- Pyrestone
+							i(32249),	-- Seaspray Emerald
+							i(32230),	-- Shadowsong Amethyst
+						})
+					),
+				}),
+			}),
 			n(QUESTS, {
 				["groups"] = bubbleDownClassicRep(FACTION_THE_SCALE_OF_THE_SANDS, {
 					{		-- Neutral
@@ -52,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								-- #endif
 							},
 							["altQuests"] = {
-								--10462,	-- Champion's Pledge
+								-- 10462,	-- Champion's Pledge
 								10460,	-- Defender's Pledge
 								10461,	-- Restorer's Pledge
 								10463,	-- Sage's Pledge
@@ -76,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 							["altQuests"] = {
 								10462,	-- Champion's Pledge
-								--10460,	-- Defender's Pledge
+								-- 10460,	-- Defender's Pledge
 								10461,	-- Restorer's Pledge
 								10463,	-- Sage's Pledge
 							},
@@ -100,7 +132,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["altQuests"] = {
 								10462,	-- Champion's Pledge
 								10460,	-- Defender's Pledge
-								--10461,	-- Restorer's Pledge
+								-- 10461,	-- Restorer's Pledge
 								10463,	-- Sage's Pledge
 							},
 							["qgs"] = {
@@ -124,7 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10462,	-- Champion's Pledge
 								10460,	-- Defender's Pledge
 								10461,	-- Restorer's Pledge
-								--10463,	-- Sage's Pledge
+								-- 10463,	-- Sage's Pledge
 							},
 							["qgs"] = {
 								19935,	-- Soridormi
@@ -139,7 +171,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						q(10466, {	-- Champion's Vow
 							["sourceQuest"] = 10462,	-- Champion's Pledge
 							["altQuests"] = {
-								--10466,	-- Champion's Vow
+								-- 10466,	-- Champion's Vow
 								10467,	-- Defender's Vow
 								10465,	-- Restorer's Vow
 								10464,	-- Sage's Vow
@@ -160,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["sourceQuest"] = 10460,	-- Defender's Pledge
 							["altQuests"] = {
 								10466,	-- Champion's Vow
-								--10467,	-- Defender's Vow
+								-- 10467,	-- Defender's Vow
 								10465,	-- Restorer's Vow
 								10464,	-- Sage's Vow
 							},
@@ -181,7 +213,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["altQuests"] = {
 								10466,	-- Champion's Vow
 								10467,	-- Defender's Vow
-								--10465,	-- Restorer's Vow
+								-- 10465,	-- Restorer's Vow
 								10464,	-- Sage's Vow
 							},
 							["qgs"] = {
@@ -202,7 +234,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10466,	-- Champion's Vow
 								10467,	-- Defender's Vow
 								10465,	-- Restorer's Vow
-								--10464,	-- Sage's Vow
+								-- 10464,	-- Sage's Vow
 							},
 							["qgs"] = {
 								19935,	-- Soridormi
@@ -220,7 +252,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						q(10470, {	-- Champion's Oath
 							["sourceQuest"] = 10466,	-- Champion's Vow
 							["altQuests"] = {
-								--10470,	-- Champion's Oath
+								-- 10470,	-- Champion's Oath
 								10471,	-- Defender's Oath
 								10469,	-- Restorer's Oath
 								10468,	-- Sage's Oath
@@ -241,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["sourceQuest"] = 10467,	-- Defender's Vow
 							["altQuests"] = {
 								10470,	-- Champion's Oath
-								--10471,	-- Defender's Oath
+								-- 10471,	-- Defender's Oath
 								10469,	-- Restorer's Oath
 								10468,	-- Sage's Oath
 							},
@@ -262,7 +294,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["altQuests"] = {
 								10470,	-- Champion's Oath
 								10471,	-- Defender's Oath
-								--10469,	-- Restorer's Oath
+								-- 10469,	-- Restorer's Oath
 								10468,	-- Sage's Oath
 							},
 							["qgs"] = {
@@ -283,7 +315,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10470,	-- Champion's Oath
 								10471,	-- Defender's Oath
 								10469,	-- Restorer's Oath
-								--10468,	-- Sage's Oath
+								-- 10468,	-- Sage's Oath
 							},
 							["qgs"] = {
 								19935,	-- Soridormi
@@ -321,7 +353,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						q(10474, {	-- Champion's Covenant
 							["sourceQuest"] = 10470,	-- Champion's Oath
 							["altQuests"] = {
-								--10474,	-- Champion's Covenant
+								-- 10474,	-- Champion's Covenant
 								10475,	-- Defender's Covenant
 								10473,	-- Restorer's Covenant
 								10472,	-- Sage's Covenant
@@ -362,7 +394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["sourceQuest"] = 10471,	-- Defender's Oath
 							["altQuests"] = {
 								10474,	-- Champion's Covenant
-								--10475,	-- Defender's Covenant
+								-- 10475,	-- Defender's Covenant
 								10473,	-- Restorer's Covenant
 								10472,	-- Sage's Covenant
 							},
@@ -403,7 +435,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["altQuests"] = {
 								10474,	-- Champion's Covenant
 								10475,	-- Defender's Covenant
-								--10473,	-- Restorer's Covenant
+								-- 10473,	-- Restorer's Covenant
 								10472,	-- Sage's Covenant
 							},
 							["qgs"] = {
@@ -444,7 +476,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10474,	-- Champion's Covenant
 								10475,	-- Defender's Covenant
 								10473,	-- Restorer's Covenant
-								--10472,	-- Sage's Covenant
+								-- 10472,	-- Sage's Covenant
 							},
 							["qgs"] = {
 								19935,	-- Soridormi

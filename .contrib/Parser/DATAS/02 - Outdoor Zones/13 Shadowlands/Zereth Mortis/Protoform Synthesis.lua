@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local GENESIS = 188957;
 local AMBYSTAN_LATTICE = 187634;
 local AURELID_LATTICE = 187636;
@@ -19,6 +20,7 @@ local UNFORMED_LATTICE = 189153;
 local VESPOID_LATTICE = 189154;
 local VIPERID_LATTICE = 189155;
 local VOMBATA_LATTICE = 189156;
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		prof(PROTOFORM_SYNTHESIS, {
@@ -162,7 +164,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65358, {	-- Schematic Reassimilation: Microlicid
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189445 },	-- Schematic: Microlicid
-					["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["coord"] = { 28.1, 50.0, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(364697),	-- Microlicid
 					},
@@ -201,7 +203,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65359, {	-- Schematic Reassimilation: Shelly
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189446 },	-- Schematic: Shelly
-					["coord"] = { 57.9, 78, ZERETH_MORTIS },
+					["coord"] = { 57.9, 78.0, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(364698),	-- Shelly
 					},
@@ -239,7 +241,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65360, {	-- Schematic Reassimilation: Viperid Menace
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189447 },	-- Schematic: Viperid Menace
-					["coord"] = { 58.9, 77, ZERETH_MORTIS },
+					["coord"] = { 58.9, 77.0, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(364699),	-- Viperid Menace
 					},
@@ -301,7 +303,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65381, {	-- Schematic Reassimilation: Desertwing Hunter
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189458 },	-- Schematic: Desertwing Hunter
-					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["coord"] = { 62.0, 43.5, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(365050),	-- Desertwing Hunter
 					},
@@ -368,7 +370,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65393, {	-- Schematic Reassimilation: Prototype Leaper
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189469 },	-- Schematic: Prototype Leaper
-					["coord"] = { 67, 69.4, ZERETH_MORTIS },
+					["coord"] = { 67.0, 69.4, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(365062),	-- Prototype Leaper
 					},
@@ -414,7 +416,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65389, {	-- Schematic Reassimilation: Tarachnid Creeper
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189466 },	-- Schematic: Tarachnid Creeper
-					["coord"] = { 62.9, 22, ZERETH_MORTIS },
+					["coord"] = { 62.9, 22.0, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(365056),	-- Tarachnid Creeper
 					},
@@ -422,7 +424,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65386	, {	-- Schematic Reassimilation: Unsuccessful Prototype Fleetpod
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189463 },	-- Schematic: Unsuccessful Prototype Fleetpod
-					--["coord"] = { , , ZERETH_MORTIS },
+					-- ["coord"] = { , , ZERETH_MORTIS },
 					["groups"] = {
 						recipe(365074),	-- Unsuccessful Prototype Fleetpod
 					},
@@ -453,7 +455,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375393, {	-- Protoform Schematic
 					["description"] = "On top a pillar. Need door of shadows/flying.",
-					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["coord"] = { 62.0, 43.5, ZERETH_MORTIS },
 					["groups"] = {
 						i(189458),	-- Schematic: Desertwing Hunter
 					},
@@ -467,7 +469,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375389, {	-- Protoform Schematic
 					["description"] = "Inside the vespoid nest.",
-					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["coord"] = { 62.0, 43.5, ZERETH_MORTIS },
 					["groups"] = {
 						i(189475),	-- Schematic: Forged Spiteflyer
 					},
@@ -501,7 +503,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				o(375903, {	-- Protoform Schematic
-					["coord"] = { 67, 69.4, ZERETH_MORTIS },
+					["coord"] = { 67.0, 69.4, ZERETH_MORTIS },
 					["groups"] = {
 						i(189469),	-- Schematic: Prototype Leaper
 					},
@@ -515,7 +517,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375486, {	-- Protoform Schematic
 					["description"] = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Firey Brimstone (Toy).",
-					["coord"] = { 57.9, 78, ZERETH_MORTIS },
+					["coord"] = { 57.9, 78.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(189446),	-- Schematic: Shelly
 					},
@@ -528,7 +530,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375370, {	-- Protoform Schematic
 					["description"] = "Inside the building.",
-					["coord"] = { 62.9, 22, ZERETH_MORTIS },
+					["coord"] = { 62.9, 22.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(189466),	-- Schematic: Tarachnid Creeper
 					},
@@ -570,7 +572,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375502, {	-- Protoform Schematic
 					["description"] = "Hidden in tree leaves, on branch with small orb above water.",
-					["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["coord"] = { 28.1, 50.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(189445),	-- Schematic: Microlicid
 					},
@@ -584,7 +586,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375746, {	-- Protoform Schematic
 					["description"] = "Requires Sopranian Understanding and Chapter 6.\nUnlock Camber Locus Arrangement at 47.7 34.5, on the back side of the Vessel's room (accessible from flying or via the Ultimus Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Camber Alcove.\n\nSuccefully completing this minigame will reward a schematic.",
-					["coord"] = { 49, 73.1, 2029 },
+					["coord"] = { 49.0, 73.1, 2029 },
 					["questID"] = 65651,
 					["groups"] = {
 						i(189463),	-- Schematic: Unsuccessful Prototype Fleetpod
@@ -607,196 +609,196 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(189363, {	-- Ambystan Darter (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 250 },
-							{ "i", AMBYSTAN_LATTICE, 1},
+							{ "i", AMBYSTAN_LATTICE, 1 },
 							{ "i", 189160, 1 },	-- 1x Glimmer of Focus
 						},
 					}),
 					i(189369, {	-- Archetype of Animation (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", GEOMENTAL_LATTICE, 1},
+							{ "i", GEOMENTAL_LATTICE, 1 },
 							{ "i", 189157, 1 },	-- 1x Glimmer of Animation
 						},
 					}),
 					i(189380, {	-- Archetype of Cunning (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", VIPERID_LATTICE, 1},
+							{ "i", VIPERID_LATTICE, 1 },
 							{ "i", 189158, 1 },	-- 1x Glimmer of Cunning
 						},
 					}),
 					i(187795, {	-- Archetype of Discovery (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", VOMBATA_LATTICE, 1},
+							{ "i", VOMBATA_LATTICE, 1 },
 							{ "i", 189159, 1 },	-- 1x Glimmer of Discovery
 						},
 					}),
 					i(187713, {	-- Archetype of Focus (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", UNFORMED_LATTICE, 1},
+							{ "i", UNFORMED_LATTICE, 1 },
 							{ "i", 189160, 1 },	-- 1x Glimmer of Focus
 						},
 					}),
 					i(189383, {	-- Archetype of Malice (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", VESPOID_LATTICE, 1},
+							{ "i", VESPOID_LATTICE, 1 },
 							{ "i", 189161, 1 },	-- 1x Glimmer of Malice
 						},
 					}),
 					i(187928, {	-- Archetype of Metamorphosis (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", AMBYSTAN_LATTICE, 1},
+							{ "i", AMBYSTAN_LATTICE, 1 },
 							{ "i", 189162, 1 },	-- 1x Glimmer of Metamorphosis
 						},
 					}),
 					i(187803, {	-- Archetype of Motion (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", PROTO_AVIAN_LATTICE, 1},
+							{ "i", PROTO_AVIAN_LATTICE, 1 },
 							{ "i", 189163, 1 },	-- 1x Glimmer of Motion
 						},
 					}),
 					i(189375, {	-- Archetype of Multiplicity (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", LEPROID_LATTICE, 1},
+							{ "i", LEPROID_LATTICE, 1 },
 							{ "i", 189164, 1 },	-- 1x Glimmer of Multiplicity
 						},
 					}),
 					i(189381, {	-- Archetype of Predation (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", TARRACHNID_LATTICE, 1},
+							{ "i", TARRACHNID_LATTICE, 1 },
 							{ "i", 189165, 1 },	-- 1x Glimmer of Predation
 						},
 					}),
 					i(189371, {	-- Archetype of Renewal (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", AURELID_LATTICE, 1},
+							{ "i", AURELID_LATTICE, 1 },
 							{ "i", 189166, 1 },	-- 1x Glimmer of Renewal
 						},
 					}),
 					i(189367, {	-- Archetype of Satisfaction (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", POULTRID_LATTICE, 1},
+							{ "i", POULTRID_LATTICE, 1 },
 							{ "i", 189167, 1 },	-- 1x Glimmer of Satisfaction
 						},
 					}),
 					i(189382, {	-- Archetype of Serenity (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", BUFONID_LATTICE, 1},
+							{ "i", BUFONID_LATTICE, 1 },
 							{ "i", 189168, 1 },	-- 1x Glimmer of Serenity
 						},
 					}),
 					i(189364, {	-- Archetype of Survival (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", SCARABID_LATTICE, 1},
+							{ "i", SCARABID_LATTICE, 1 },
 							{ "i", 189169, 1 },	-- 1x Glimmer of Survival
 						},
 					}),
 					i(189377, {	-- Archetype of Vigilance (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", HELICID_LATTICE, 1},
+							{ "i", HELICID_LATTICE, 1 },
 							{ "i", 189170, 1 },	-- 1x Glimmer of Vigilance
 						},
 					}),
 					i(189365, {	-- Fierce Scarabid (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", SCARABID_LATTICE, 1},
+							{ "i", SCARABID_LATTICE, 1 },
 							{ "i", 189163, 1 },	-- 1x Glimmer of Motion
 						},
 					}),
 					i(189374, {	-- Leaping Leporid (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 250 },
-							{ "i", LEPROID_LATTICE, 1},
+							{ "i", LEPROID_LATTICE, 1 },
 							{ "i", 189166, 1 },	-- 1x Glimmer of Renewal
 						},
 					}),
 					i(189376, {	-- Microlicid (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 150 },
-							{ "i", HELICID_LATTICE, 1},
+							{ "i", HELICID_LATTICE, 1 },
 							{ "i", 189167, 1 },	-- 1x Glimmer of Satisfaction
 						},
 					}),
 					i(189368, {	-- Multichicken (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 350 },
-							{ "i", POULTRID_LATTICE, 1},
+							{ "i", POULTRID_LATTICE, 1 },
 							{ "i", 189164, 1 },	-- 1x Glimmer of Multiplicity
 						},
 					}),
 					i(187734, {	-- Omnipotential Core (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 350 },
-							{ "i", UNFORMED_LATTICE, 1},
+							{ "i", UNFORMED_LATTICE, 1 },
 							{ "i", 189157, 1 },	-- 1x Glimmer of Animation
 						},
 					}),
 					i(189373, {	-- Prototickles (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 450 },
-							{ "i", AURELID_LATTICE, 1},
+							{ "i", AURELID_LATTICE, 1 },
 							{ "i", 189159, 1 },	-- 1x Glimmer of Discovery
 						},
 					}),
 					i(187733, {	-- Resonant Echo (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 250 },
-							{ "i", UNFORMED_LATTICE, 1},
+							{ "i", UNFORMED_LATTICE, 1 },
 							{ "i", 189169, 1 },	-- 1x Glimmer of Survival
 						},
 					}),
 					i(189378, {	-- Shelly (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", HELICID_LATTICE, 1},
+							{ "i", HELICID_LATTICE, 1 },
 							{ "i", 189168, 1 },	-- 1x Glimmer of Serenity
 						},
 					}),
 					i(189370, {	-- Stabilized Geomental (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", GEOMENTAL_LATTICE, 1},
+							{ "i", GEOMENTAL_LATTICE, 1 },
 							{ "i", 189162, 1 },	-- 1x Glimmer of Metamorphosis
 						},
 					}),
 					i(189372, {	-- Terror Jelly (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", AURELID_LATTICE, 1},
+							{ "i", AURELID_LATTICE, 1 },
 							{ "i", 189165, 1 },	-- 1x Glimmer of Predation
 						},
 					}),
 					i(187798, {	-- Tunneling Vombata (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 350 },
-							{ "i", VOMBATA_LATTICE, 1},
+							{ "i", VOMBATA_LATTICE, 1 },
 							{ "i", 189158, 1 },	-- 1x Glimmer of Cunning
 						},
 					}),
 					i(189366, {	-- Violent Poultrid (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 200 },
-							{ "i", POULTRID_LATTICE, 1},
+							{ "i", POULTRID_LATTICE, 1 },
 							{ "i", 189161, 1 },	-- 1x Glimmer of Malice
 						},
 					}),
 					i(189379, {	-- Viperid Menace (PET!)
 						["_cost"] = {
 							{ "i", GENESIS, 150 },
-							{ "i", VIPERID_LATTICE, 1},
+							{ "i", VIPERID_LATTICE, 1 },
 							{ "i", 189170, 1 },	-- 1x Glimmer of Vigilance
 						},
 					}),
@@ -805,168 +807,168 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(187632, {	-- Adorned Vombata (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 450 },
-							{ "i", VOMBATA_LATTICE, 1},
+							{ "i", VOMBATA_LATTICE, 1 },
 							{ "i", 189174, 1 },	-- 1x Lens of Focused Intention
 						},
 					}),
 					i(187670, {	-- Bronze Helicid (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", HELICID_LATTICE, 1},
+							{ "i", HELICID_LATTICE, 1 },
 							{ "i", 189179, 1 },	-- 1x Unalloyed Bronze Ingot
 						},
 					}),
 					i(187663, {	-- Bronzewing Vespoid (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 350 },
-							{ "i", VESPOID_LATTICE, 1},
+							{ "i", VESPOID_LATTICE, 1 },
 							{ "i", 189179, 1 },	-- 1x Unalloyed Bronze Ingot
 						},
 					}),
 					i(187665, {	-- Buzz (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 500 },
-							{ "i", VESPOID_LATTICE, 1},
+							{ "i", VESPOID_LATTICE, 1 },
 							{ "i", 189176, 1 },	-- 1x Protoform Sentience Crown
 						},
 					}),
 					i(187630, {	-- Curious Crystalsniffer (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", VOMBATA_LATTICE, 1},
+							{ "i", VOMBATA_LATTICE, 1 },
 							{ "i", 189172, 1 },	-- 1x Crystallized Echo of the First Song
 						},
 					}),
 					i(187631, {	-- Darkened Vombata (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 450 },
-							{ "i", VOMBATA_LATTICE, 1},
+							{ "i", VOMBATA_LATTICE, 1 },
 							{ "i", 189175, 1 },	-- 1x Mawforged Bridle
 						},
 					}),
 					i(187638, {	-- Deathrunner (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 450 },
-							{ "i", CREVID_LATTICE, 1},
+							{ "i", CREVID_LATTICE, 1 },
 							{ "i", 189178, 1 },	-- 1x Tools of Incomprehensible Experimentation
 						},
 					}),
 					i(187666, {	-- Desertwing Hunter (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", RAPTORA_LATTICE, 1},
+							{ "i", RAPTORA_LATTICE, 1 },
 							{ "i", 189180, 1 },	-- 1x Wind's Infinite Call
 						},
 					}),
 					i(187664, {	-- Forged Spiteflyer (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 450 },
-							{ "i", VESPOID_LATTICE, 1},
+							{ "i", VESPOID_LATTICE, 1 },
 							{ "i", 189173, 1 },	-- 1x Eternal Ragepearl
 						},
 					}),
 					i(187677, {	-- Genesis Crawler (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", TARRACHNID_LATTICE, 1},
+							{ "i", TARRACHNID_LATTICE, 1 },
 							{ "i", 189171, 1 },	-- 1x Bauble of Pure Innovation
 						},
 					}),
 					i(187683, {	-- Goldplate Bufonid (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", BUFONID_LATTICE, 1},
+							{ "i", BUFONID_LATTICE, 1 },
 							{ "i", 189171, 1 },	-- 1x Bauble of Pure Innovation
 						},
 					}),
 					i(190580, {	-- Heartbond Lupine (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 500 },
-							{ "i", LUPINE_LATTICE, 1},
+							{ "i", LUPINE_LATTICE, 1 },
 							{ "i", 189172, 1 },	-- 1x Crystallized Echo of the First Song
 						},
 					}),
 					i(187679, {	-- Ineffable Skitterer (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 500 },
-							{ "i", TARRACHNID_LATTICE, 1},
+							{ "i", TARRACHNID_LATTICE, 1 },
 							{ "i", 189176, 1 },	-- 1x Protoform Sentience Crown
 						},
 					}),
 					i(187667, {	-- Mawdapted Raptora (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 350 },
-							{ "i", RAPTORA_LATTICE, 1},
+							{ "i", RAPTORA_LATTICE, 1 },
 							{ "i", 189175, 1 },	-- 1x Mawforged Bridle
 						},
 					}),
 					i(187639, {	-- Pale Regal Cervid (MOUNT!)
 						["_cost"] = {
 								{ "i", GENESIS, 400 },
-								{ "i", CREVID_LATTICE, 1},
+								{ "i", CREVID_LATTICE, 1 },
 								{ "i", 189176, 1 },	-- 1x Protoform Sentience Crown
 							},
 					}),
 					i(188809, {	-- Prototype Leaper (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 350 },
-							{ "i", BUFONID_LATTICE, 1},
+							{ "i", BUFONID_LATTICE, 1 },
 							{ "i", 189178, 1 },	-- 1x Tools of Incomprehensible Experimentation
 						},
 					}),
 					i(187668, {	-- Raptora Swooper (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 450 },
-							{ "i", RAPTORA_LATTICE, 1},
+							{ "i", RAPTORA_LATTICE, 1 },
 							{ "i", 189173, 1 },	-- 1x Eternal Ragepearl
 						},
 					}),
 					i(188810, {	-- Russet Bufonid (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 350 },
-							{ "i", BUFONID_LATTICE, 1},
+							{ "i", BUFONID_LATTICE, 1 },
 							{ "i", 189174, 1 },	-- 1x Lens of Focused Intention
 						},
 					}),
 					i(187641, {	-- Sundered Zerethsteed (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", CREVID_LATTICE, 1},
+							{ "i", CREVID_LATTICE, 1 },
 							{ "i", 189175, 1 },	-- 1x Mawforged Bridle
 						},
 					}),
 					i(187669, {	-- Serenade (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 500 },
-							{ "i", HELICID_LATTICE, 1},
+							{ "i", HELICID_LATTICE, 1 },
 							{ "i", 189172, 1 },	-- 1x Crystallized Echo of the First Song
 						},
 					}),
 					i(187672, {	-- Scarlet Helicid (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 350 },
-							{ "i", HELICID_LATTICE, 1},
+							{ "i", HELICID_LATTICE, 1 },
 							{ "i", 189177, 1 },	-- 1x Revelation Key
 						},
 					}),
 					i(187678, {	-- Tarachnid Creeper (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 450 },
-							{ "i", TARRACHNID_LATTICE, 1},
+							{ "i", TARRACHNID_LATTICE, 1 },
 							{ "i", 189177, 1 },	-- 1x Revelation Key
 						},
 					}),
 					i(187671, {	-- Unsuccessful Prototype Fleetpod (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 300 },
-							{ "i", HELICID_LATTICE, 1},
+							{ "i", HELICID_LATTICE, 1 },
 							{ "i", 189178, 1 },	-- 1x Tools of Incomprehensible Experimentation
 						},
 					}),
 					i(187660, {	-- Vespoid Flutterer (MOUNT!)
 						["_cost"] = {
 							{ "i", GENESIS, 400 },
-							{ "i", VESPOID_LATTICE, 1},
+							{ "i", VESPOID_LATTICE, 1 },
 							{ "i", 189180, 1 },	-- 1x Wind's Infinite Call
 						},
 					}),

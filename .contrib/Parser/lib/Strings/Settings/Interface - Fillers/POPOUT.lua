@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Открываемый список",
 		-- TODO: ko = "",
 		cn = "弹出列表",
-		-- TODO: tw = "",
+		tw = "彈出列表",
 	},
 })

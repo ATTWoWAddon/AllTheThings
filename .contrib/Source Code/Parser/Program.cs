@@ -16,13 +16,23 @@ namespace ATT
         private static bool Errored
         {
             get => !Framework.PreProcessorTags.Contains("IGNORE_ERRORS") && (_Errored || Framework.IsErrored);
-            set => _Errored = value;
+            set
+            {
+                _Errored = value;
+                Framework.ClearError();
+            }
         }
         private static int ErrorCode => Errored ? -1 : 0;
 
         private static readonly NLua.Lua lua = new NLua.Lua();
 
+        private static int PreProcessorNestLevel = 0;
+
         public static string CurrentSubFilename => lua.State?.Status == KeraLua.LuaStatus.OK ? lua?.GetString("CurrentSubFileName") : null;
+
+        public static string CurrentImportFilename { get; set; }
+
+        private static bool ShouldLoadInSequence => Debugger.IsAttached || Framework.PreProcessorTags.Contains("ANYCLASSIC");
 
         static void UnhandledExceptionHandler(object sender, UnhandledExceptionEventArgs e)
         {
@@ -162,24 +172,24 @@ namespace ATT
 
             /*
             // CRIEVE NOTE: Uncomment to debug data format
-            Console.WriteLine($"LOCALIZED DATA [{achievement.ID}]");
+            Trace.WriteLine($"LOCALIZED DATA [{achievement.ID}]");
             if (localizedData != null)
             {
                 foreach (var pair in achievementData)
                 {
-                    Console.Write("  ");
-                    Console.Write(pair.Key);
-                    Console.WriteLine(": ");
+                    Trace.Write("  ");
+                    Trace.Write(pair.Key);
+                    Trace.WriteLine(": ");
                     foreach (var localeDataPair in pair.Value)
                     {
-                        Console.Write("   ");
-                        Console.Write(localeDataPair.Key);
-                        Console.Write(": ");
-                        Console.WriteLine(localeDataPair.Value);
+                        Trace.Write("   ");
+                        Trace.Write(localeDataPair.Key);
+                        Trace.Write(": ");
+                        Trace.WriteLine(localeDataPair.Value);
                     }
                 }
             }
-            else Console.WriteLine("  NO LOCALIZED DATA FOUND");
+            else Trace.WriteLine("  NO LOCALIZED DATA FOUND");
             */
         }
 
@@ -203,43 +213,43 @@ namespace ATT
 
             /*
             // CRIEVE NOTE: Uncomment to debug data format
-            Console.WriteLine($"LOCALIZED DATA [{achievementCategory.ID}]");
+            Trace.WriteLine($"LOCALIZED DATA [{achievementCategory.ID}]");
             if (localizedData != null)
             {
                 foreach (var pair in achievementCategoryData)
                 {
-                    Console.Write("  ");
-                    Console.Write(pair.Key);
-                    Console.WriteLine(": ");
+                    Trace.Write("  ");
+                    Trace.Write(pair.Key);
+                    Trace.WriteLine(": ");
                     foreach (var localeDataPair in pair.Value)
                     {
-                        Console.Write("   ");
-                        Console.Write(localeDataPair.Key);
-                        Console.Write(": ");
-                        Console.WriteLine(localeDataPair.Value);
+                        Trace.Write("   ");
+                        Trace.Write(localeDataPair.Key);
+                        Trace.Write(": ");
+                        Trace.WriteLine(localeDataPair.Value);
                     }
                 }
             }
-            else Console.WriteLine("  NO LOCALIZED DATA FOUND");
+            else Trace.WriteLine("  NO LOCALIZED DATA FOUND");
             */
         }
 
         static int Main(string[] args)
         {
-            AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(UnhandledExceptionHandler);
             // Setup tracing to the console.
             Tracer.OnWrite += Console.Write;
+            AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(UnhandledExceptionHandler);
 
 #if DEBUG
             Framework.DebugMode = true;
 #endif
 
-            Framework.CurrentParseStage = ParseStage.InitializeParserConfigs;
-
-
+            // Parser Config Initialization
             try
             {
-                // Determine if running in Debug Mode or not.
+                Framework.CurrentParseStage = ParseStage.InitializeParserConfigs;
+
+                // Parse any arguments passed to Parser
                 if (args != null && args.Length > 0)
                 {
                     char[] argSplit = new[] { '=' };
@@ -254,7 +264,6 @@ namespace ATT
                 {
                     // Ensure the Parser uses the default config if nothing is specified.
                     Framework.InitConfigSettings(".config/retail/retail.config");
-
 #if DEBUG
                     Framework.InitConfigSettings(".config/retail/debug.config");
 #endif
@@ -265,135 +274,134 @@ namespace ATT
                 Framework.Objects.SINGULAR_PLURAL_FIELDS_LONG = Framework.Config["SINGULAR_PLURAL_FIELDS_LONG"];
                 Framework.Objects.NON_SORTED_FIELDS = Framework.Config["NON_SORTED_FIELDS"];
                 Framework.Objects.PASS_THRU_FIELDS = Framework.Config["PASS_THRU_FIELDS"];
+
+                foreach (var preprocessor in Framework.PreProcessorTags)
+                {
+                    Trace.WriteLine($"PREPROCESSOR: {preprocessor}");
+                }
+
+                Framework.ApplyConfigSettings();
             }
             catch (FormatException configException)
             {
                 Trace.WriteLine(configException);
-                Framework.WaitForUser();
+                Framework.WaitForUser("Press any key to close...");
                 return ErrorCode;
             }
 
-            foreach (var preprocessor in Framework.PreProcessorTags)
-            {
-                Console.WriteLine($"PREPROCESSOR: {preprocessor}");
-            }
-
-            Framework.ApplyConfigSettings();
-
+            // Load the Database
+            // Since we have Object types defined in the Export static constructor, they need to exist before any data is merged in or we potentially get failed ObjectData checks
+            Export.Initialize();
             try
             {
-                // Prepare console output to a file.
-                string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
-
-                Framework.CurrentParseStage = ParseStage.RawJsonMerge;
+                // Step 1: Load the JSON data modules
                 do
                 {
+                    Framework.CurrentParseStage = ParseStage.RawJsonMerge;
                     Errored = false;
+
                     // Load all of the RAW JSON Data into the database.
-                    var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
-                    files.Sort(StringComparer.InvariantCulture);
-                    foreach (var f in files) ParseJSONFile(f);
+                    var directories = (string[])Framework.Config["json-directories"];
+                    var filenames = new List<string>();
+                    foreach (var jsonDirectory in directories)
+                    {
+                        if (!string.IsNullOrWhiteSpace(jsonDirectory))
+                        {
+                            Trace.WriteLine($"Loading JSON files from {jsonDirectory}.");
+                            filenames.AddRange(Directory.GetFiles(jsonDirectory, "*.json", SearchOption.AllDirectories));
+                            LoadFilesWith(filenames, ParseJSONFile);
+                        }
+                    }
 
                     if (Errored)
                     {
                         Trace.WriteLine("Please fix the formatting of the above Invalid JSON file(s)");
-                        Trace.WriteLine("Press Enter once you have resolved the issue.");
                         Framework.WaitForUser();
                     }
                 }
                 while (Errored && !Framework.Automated);
 
-                // Load all Wago DB CSV files
-                Framework.CurrentParseStage = ParseStage.WagoDBMerge;
+                // Step 2: Load the Wago data modules
                 do
                 {
+                    Framework.CurrentParseStage = ParseStage.WagoDBLoad;
                     Errored = false;
 
-                    // Load all of the RAW JSON Data into the database.
-                    var directories = Framework.Config["wago-directories"];
-                    if (directories != null)
+                    // Load all of the Wago Data into the database.
+                    var directories = (string[])Framework.Config["wago-directories"];
+                    foreach (var wagoDirectory in directories)
                     {
-                        var filenames = new List<string>();
-                        foreach (var wagoDirectory in (string[])directories)
+                        if (!string.IsNullOrWhiteSpace(wagoDirectory))
                         {
-                            if (!string.IsNullOrWhiteSpace(wagoDirectory))
-                            {
-                                Trace.WriteLine($"Loading Wago DB CSV files from {wagoDirectory}.");
-                                filenames.AddRange(Directory.GetFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories));
-                            }
-                        }
-                        filenames.Sort(StringComparer.InvariantCulture);
-                        if (Debugger.IsAttached)
-                        {
-                            foreach (var filename in filenames) WagoData.LoadFromCSV(filename);
-                        }
-                        else
-                        {
-                            filenames.AsParallel().ForAll(WagoData.LoadFromCSV);
-                        }
-
-                        if (Errored)
-                        {
-                            Trace.WriteLine("Please re-download the above Invalid CSV file(s) from wago.tools/db2");
-                            Trace.WriteLine("Press Enter once you have resolved the issue.");
-                            Framework.WaitForUser();
+                            // CRIEVE NOTE: I need the directories themselves to run in a specific order.
+                            Trace.WriteLine($"Loading Wago DB CSV files from {wagoDirectory}.");
+                            var filenames = Directory.GetFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories).ToList();
+                            LoadFilesWith(filenames, WagoData.LoadFromCSV);
                         }
                     }
+
+                    if (Errored)
+                    {
+                        Trace.WriteLine("Please re-download the above Invalid CSV file(s) from wago.tools/db2");
+                        Framework.WaitForUser();
+                    }
+
+                    /*
+                    // Debug all Wago Data Modules
+                    Trace.WriteLine($"ALL WAGO DATA MODULES: ");
+                    foreach (var modulePair in WagoData.GetAllDataModules())
+                    {
+                        Trace.Write("  ");
+                        Trace.Write(modulePair.Key);
+                        Trace.Write(": ");
+                        Trace.Write(modulePair.Value.Count);
+                        Trace.WriteLine(" total entries");
+                    }
+
+                    // Example of how to export localized data for a Wago Data Module
+                    if (WagoData.TryGetValue(2336, out Achievement achievement))
+                    {
+                        Trace.WriteLine($"EXPORTED DATA [{achievement.ID}]:");
+                        var exportedData = achievement.GetExportableData();
+                        if (exportedData != null)
+                        {
+                            foreach (var pair in exportedData)
+                            {
+                                Trace.Write("  ");
+                                Trace.Write(pair.Key);
+                                Trace.Write(": ");
+                                Trace.WriteLine(pair.Value);
+                            }
+                        }
+                        else Trace.WriteLine("  NO EXPORTED DATA FOUND");
+
+                        var localizedData = WagoData.GetLocalizedData<Achievement>(achievement.ID);
+
+                        Trace.WriteLine($"LOCALIZED DATA [{achievement.ID}]");
+                        if (localizedData != null)
+                        {
+                            foreach (var pair in localizedData)
+                            {
+                                Trace.Write("  ");
+                                Trace.Write(pair.Key);
+                                Trace.WriteLine(": ");
+                                foreach (var localeDataPair in pair.Value)
+                                {
+                                    Trace.Write("   ");
+                                    Trace.Write(localeDataPair.Key);
+                                    Trace.Write(": ");
+                                    Trace.WriteLine(localeDataPair.Value);
+                                }
+                            }
+                        }
+                        else Trace.WriteLine("  NO LOCALIZED DATA FOUND");
+                        Console.ReadLine();
+                    }
+                    */
                 }
                 while (Errored && !Framework.Automated);
 
-                /*
-                // Debug all Wago Data Modules
-                Console.WriteLine($"ALL WAGO DATA MODULES: ");
-                foreach (var modulePair in WagoData.GetAllDataModules())
-                {
-                    Console.Write("  ");
-                    Console.Write(modulePair.Key);
-                    Console.Write(": ");
-                    Console.Write(modulePair.Value.Count);
-                    Console.WriteLine(" total entries");
-                }
-
-                // Example of how to export localized data for a Wago Data Module
-                if (WagoData.TryGetValue(2336, out Achievement achievement))
-                {
-                    Console.WriteLine($"EXPORTED DATA [{achievement.ID}]:");
-                    var exportedData = achievement.GetExportableData();
-                    if (exportedData != null)
-                    {
-                        foreach (var pair in exportedData)
-                        {
-                            Console.Write("  ");
-                            Console.Write(pair.Key);
-                            Console.Write(": ");
-                            Console.WriteLine(pair.Value);
-                        }
-                    }
-                    else Console.WriteLine("  NO EXPORTED DATA FOUND");
-
-                    var localizedData = WagoData.GetLocalizedData<Achievement>(achievement.ID);
-
-                    Console.WriteLine($"LOCALIZED DATA [{achievement.ID}]");
-                    if (localizedData != null)
-                    {
-                        foreach (var pair in localizedData)
-                        {
-                            Console.Write("  ");
-                            Console.Write(pair.Key);
-                            Console.WriteLine(": ");
-                            foreach (var localeDataPair in pair.Value)
-                            {
-                                Console.Write("   ");
-                                Console.Write(localeDataPair.Key);
-                                Console.Write(": ");
-                                Console.WriteLine(localeDataPair.Value);
-                            }
-                        }
-                    }
-                    else Console.WriteLine("  NO LOCALIZED DATA FOUND");
-                    Console.ReadLine();
-                }
-                */
+                // Step 3: Conditionally import Achievement data modules
                 if (Framework.PreProcessorTags.Contains("EXPORT_ACHIEVEMENTDB"))
                 {
                     // Pre-Wrath we want all of the achievement data.
@@ -406,28 +414,26 @@ namespace ATT
                     if (WagoData.TryGetValue(5788, out Achievement achievement)) ImportAchievementData(achievement);
                 }
 
-
-                // Load all of the Lua files into the database.
-                var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
-                var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
-                // Do not iterate over the header file.
-                if (!File.Exists(mainFileName))
-                {
-                    Trace.WriteLine("Could not find the '_main.lua' header file.");
-                    Trace.WriteLine("Operation cannot continue without it.");
-                    Trace.WriteLine("Press Enter to Close.");
-                    Framework.WaitForUser();
-                    return ErrorCode;
-                }
-                Framework.CurrentFileName = mainFileName;
-                luaFiles.Sort(StringComparer.InvariantCulture);
+                // Step 4: Load the Lua data modules
+                // Link the Lua 'print' function to instead perform a Trace print
                 lua.State.Encoding = Encoding.UTF8;
+                lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
+                lua.RegisterFunction("error", typeof(Program).GetMethod(nameof(LuaErrorAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
+
+                // Load the main lua header file and all associated lib files first.
+                string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
                 string content = "";
                 try
                 {
-                    // link the Lua 'print' function to instead perform a Trace print
-                    lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
-                    lua.RegisterFunction("error", typeof(Program).GetMethod(nameof(LuaErrorAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
+                    var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
+                    if (!File.Exists(mainFileName))
+                    {
+                        Trace.WriteLine("Could not find the '_main.lua' header file.");
+                        Trace.WriteLine("Operation cannot continue without it.");
+                        Framework.WaitForUser("Press any key to close...");
+                        return ErrorCode;
+                    }
+                    Framework.CurrentFileName = mainFileName;
                     lua.DoString($"CurrentFileName = [[{mainFileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
                     lua.DoString(content = ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
                 }
@@ -465,9 +471,9 @@ namespace ATT
                     Framework.ALL_RACES = set.ToList();
 
                     set.Clear();
-                    foreach (var race in lua.GetTable("ALL_CLASSES").Values.AsTypedEnumerable<long>())
+                    foreach (var cl in lua.GetTable("ALL_CLASSES").Values.AsTypedEnumerable<long>())
                     {
-                        set.Add(race);
+                        set.Add(cl);
                     }
                     Framework.ALL_CLASSES = set.ToList();
 
@@ -478,14 +484,23 @@ namespace ATT
                 catch (Exception e)
                 {
                     Framework.LogException(e);
-                    Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Framework.WaitForUser();
                 }
 
                 Framework.CurrentParseStage = ParseStage.ContributorDataMerge;
+                var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
+                luaFiles.Sort(StringComparer.InvariantCulture);
                 foreach (var fileName in luaFiles)
                 {
+                    if (Errored) break;
                     ParseLUAFile(lua, fileName);
+                }
+
+                if (Errored)
+                {
+                    Trace.WriteLine("-- Errors encountered during Processing. Please fix them to allow exporting addon DB properly.");
+                    if (!Framework.Automated) Framework.WaitForUser("Press any key to close...");
+                    return ErrorCode;
                 }
 
                 Framework.CurrentParseStage = ParseStage.PreProcessingSetup;
@@ -524,6 +539,13 @@ namespace ATT
                         Framework.AssignPhases(Framework.ParseAsDictionary<long>(phases));
                     }
 
+                    // Try to grab the contents of the global variable "RootCategoryHeaders".
+                    var rootCategoryHeaders = lua.GetTable("RootCategoryHeaders");
+                    if (rootCategoryHeaders != null)
+                    {
+                        Framework.AssignRootCategoryHeaders(Framework.ParseAsDictionary<string>(rootCategoryHeaders));
+                    }
+
                     Framework.Objects.SKILL_ID_CONVERSION_TABLE =
                         Framework.ParseAsDictionary<long>(lua.GetTable("SKILL_ID_CONVERSION_TABLE") ?? throw new InvalidDataException("Missing 'SKILL_ID_CONVERSION_TABLE' Global!"))
                         .ToDictionary(kvp => kvp.Key, kvp => (long)kvp.Value);
@@ -544,6 +566,7 @@ namespace ATT
                     Framework.SUPPORTED_LOCALES =
                         Framework.ParseAsDictionary<long>(lua.GetTable("SUPPORTED_LOCALES") ?? throw new InvalidDataException("Missing 'SUPPORTED_LOCALES' Global!"))
                         .Select(kvp => kvp.Value?.ToString()).ToArray();
+                    Framework.Log("SUPPORTED_LOCALES", Framework.SUPPORTED_LOCALES);
 
                     Framework.FIRST_EXPANSION_PATCH =
                         Framework.ParseAsStringDictionary(lua.GetTable("FIRST_EXPANSION_PATCH") ?? throw new InvalidDataException("Missing 'FIRST_EXPANSION_PATCH' Global!"))
@@ -556,12 +579,25 @@ namespace ATT
                     Framework.SORTABLE_FIELDS =
                         Framework.ParseAsDictionary<string>(lua.GetTable("SORTABLE_FIELDS") ?? throw new InvalidDataException("Missing 'SORTABLE_FIELDS' Global!"))
                         ["Fields"].AsTypedEnumerable<string>().ToHashSet();
+                    Framework.Log("SORTABLE_FIELDS:", Framework.SORTABLE_FIELDS);
                 }
                 catch (Exception e)
                 {
                     Framework.LogException(e);
-                    Framework.WaitForUser();
+                    Framework.WaitForUser("Press any key to close...");
                     return ErrorCode;
+                }
+
+                // Merge Wago data prior to merging contributor data
+                Framework.CurrentParseStage = ParseStage.WagoDBMerge;
+                string[] wagoMergeModules = Framework.Config["WAGO_DATA_MERGE"];
+                foreach (IDictionary<string, object> wagoDataObject in wagoMergeModules.SelectMany(WagoData.GetExportableData))
+                {
+                    // attempt merging the data based on specific merge-allowed key IDs
+                    foreach (string mergeKey in Framework.Objects.MERGE_OBJECT_FIELDS.Keys)
+                    {
+                        Framework.DBMerge(wagoDataObject, mergeKey, true);
+                    }
                 }
 
                 do
@@ -576,7 +612,6 @@ namespace ATT
                     catch (Exception e)
                     {
                         Framework.LogException(e);
-                        Trace.WriteLine("Press Enter once you have resolved the issue.");
                         Framework.WaitForUser();
                     }
                 }
@@ -590,12 +625,12 @@ namespace ATT
                 catch (Exception e)
                 {
                     Framework.LogException(e);
-                    Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Framework.WaitForUser();
                 }
 
                 lua.Close();
 
+                // Step 5: Prevent further database execution until errors are resolved.
                 if (Errored && Framework.Automated)
                 {
                     Trace.WriteLine("-- Errors encountered during Parse. Please fix them to allow exporting addon DB properly.");
@@ -613,6 +648,7 @@ namespace ATT
                 if (Errored)
                 {
                     Trace.WriteLine("-- Errors encountered during Processing. Please fix them to allow exporting addon DB properly.");
+                    Framework.WaitForUser("Press any key to close...");
                     return ErrorCode;
                 }
 
@@ -665,9 +701,34 @@ namespace ATT
             {
                 Framework.LogException(e);
                 Trace.WriteLine("-- Exception encountered during Parse. Please fix them to allow exporting addon DB properly.");
+                Framework.WaitForUser("Press any key to close...");
             }
 
             return ErrorCode;
+        }
+
+        private static void LoadFilesWith(List<string> filenames, Action<string> fileLoadFunc)
+        {
+            if (ShouldLoadInSequence)
+            {
+                // GetFiles loads sub-directories at the end, and alphabetical within each directory
+                foreach (var filename in filenames) fileLoadFunc(filename);
+            }
+            else
+            {
+                var localizedData = new List<string>();
+                for (int i = filenames.Count - 1; i >= 0; i--)
+                {
+                    if (filenames[i].Contains("Localized"))
+                    {
+                        localizedData.Insert(0, filenames[i]);
+                        filenames.RemoveAt(i);
+                    }
+                }
+                filenames.AsParallel().ForAll(fileLoadFunc);
+                // the only difference in localized wago files should be readable text, not ID values, so order won't matter
+                localizedData.AsParallel().ForAll(fileLoadFunc);
+            }
         }
 
         private static void PurgeCoordShiftsBeyondParserVersion()
@@ -778,8 +839,14 @@ namespace ATT
             switch (command[0])
             {
                 case "IF":
+                    PreProcessorNestLevel = 0;
                     // This is an IF command. It is the start of a new internal command block.
                     ProcessInternalCommandBlock(command, builder, content, ref index, length);
+
+                    // If nested pre-processor depth did not return to 0, then throw an error
+                    if (PreProcessorNestLevel != 0)
+                        Framework.LogError($"Pre-processor nesting depth @{PreProcessorNestLevel} did not equalize after processing a pre-processor command! --> {Framework.ToJSON(command)}");
+
                     break;
                 case "IMPORT:":
                     // This is an IMPORT command. It indicates that a Live DB file should be loaded.
@@ -887,12 +954,14 @@ namespace ATT
                 files.Sort(StringComparer.InvariantCulture);
                 foreach (var file in files)
                 {
+                    CurrentImportFilename = file;
                     if (fileCount > 0) builder.AppendLine();
                     builder.Append("-- ").Append(shortname).Append(file.Replace(filename, "")).AppendLine();
                     builder.Append("CurrentSubFileName = \"").Append(shortname.Replace("\\", "/").Replace("..//", "")).Append(file.Replace(filename, "").Replace("\\", "/")).AppendLine("\";");
                     builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file, Encoding.UTF8))).Append("\nend)();");
                     ++fileCount;
                 }
+                CurrentImportFilename = null;
             }
             else if (File.Exists(filename))
             {
@@ -902,9 +971,9 @@ namespace ATT
             else if (!(filename.EndsWith("\\") || filename.EndsWith("/")))
             {
                 Console.WriteLine();
-                Console.WriteLine("File doesn't exist:");
-                Console.WriteLine(Path.GetFullPath(filename));
-                Console.Write("You will need to clone the Retail version of AllTheThings in order to develop for this version of the addon.");
+                Trace.WriteLine("File doesn't exist:");
+                Trace.WriteLine(Path.GetFullPath(filename));
+                Trace.Write("You will need to clone the Retail version of AllTheThings in order to develop for this version of the addon.");
                 Framework.WaitForUser();
             }
             // current subfile name is only relevant while the Lua is processing, once it's done remove it
@@ -913,6 +982,7 @@ namespace ATT
 
         static bool ProcessInternalCommandBlock(string[] command, StringBuilder builder, string content, ref int index, int length)
         {
+            PreProcessorNestLevel++;
             // Parse the next command in the block
             int previousIndex = index;
             var ConditionalSatisfied = ProcessCommand(command);
@@ -940,12 +1010,13 @@ namespace ATT
                     case "ELSE":
                     case "ELIF":
                     case "ELSEIF":
-                        // This is an ELSE/IF.
+                        PreProcessorNestLevel--;
                         if (ProcessInternalCommandBlock(command, !ConditionalSatisfied ? builder : new StringBuilder(), content, ref index, length)) return true;
                         previousIndex = index;
                         break;
                     default:
                         // Break the loop.
+                        PreProcessorNestLevel--;
                         return true;
                 }
             }
@@ -975,6 +1046,8 @@ namespace ATT
 
         private static void ParseJSONFile(string fileName)
         {
+            Framework.LogDebug($"Json.Load: {fileName}");
+
             // Load the text and then convert it to a common JSON data format.
             var data = Framework.ToDictionary(File.ReadAllText(fileName, Encoding.UTF8));
             if (data == null)
@@ -993,9 +1066,7 @@ namespace ATT
 
         private static void ParseLUAFile(NLua.Lua lua, string fileName)
         {
-            // copy the base LUA state for use on this file due to shared access issues
-            //Lua lua = new Lua(mainLua.State);
-            Framework.LogDebug("Parsing: " + fileName);
+            Framework.LogDebug($"Parsing: {fileName}");
             Framework.CurrentFileName = fileName;
             string content = string.Empty;
             do
@@ -1045,7 +1116,6 @@ namespace ATT
 
 
                     File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
-                    Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Framework.WaitForUser();
                 }
                 catch (Exception e)
@@ -1066,7 +1136,6 @@ namespace ATT
                         }
                     }
                     else Trace.WriteLine(e);
-                    Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Framework.WaitForUser();
                 }
             }

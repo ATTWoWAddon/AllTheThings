@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(KUL_TIRAS, {
 		n(TREASURES, {
@@ -23,6 +24,7 @@ root(ROOTS.Zones, {
 				o(291225, {	-- Small Treasure Chest
 					["questID"] = 51907,
 					["coords"] = {
+						{ 29.4, 22.6, DRUSTVAR },
 						{ 30.0, 26.9, DRUSTVAR },
 					},
 				}),
@@ -32,9 +34,25 @@ root(ROOTS.Zones, {
 						{ 25.5, 40.5, DRUSTVAR },
 					},
 				}),
+				o(291217, {	-- Small Treasure Chest
+					["coord"] = { 67.6, 57.5, DRUSTVAR },
+				}),
+				o(291223, {	-- Small Treasure Chest
+					["coord"] = { 71.6, 58.1, DRUSTVAR },
+				}),
+				o(291224, {	-- Small Treasure Chest
+					["coord"] = { 31.0, 17.1, DRUSTVAR },
+				}),
+				o(291204, {	-- Small Treasure Chest
+					["coord"] = { 55.3, 27.1, DRUSTVAR },
+				}),
+				o(291201, {	-- Small Treasure Chest
+					["coord"] = { 66.1, 24.2, DRUSTVAR },
+				}),
 				o(287531, {	-- Small Treasure Chest
 					["questID"] = 51184,
 					["coords"] = {
+						{ 61.3, 63.2, STORMSONG_VALLEY },
 						{ 64.9, 60.2, STORMSONG_VALLEY },
 					},
 				}),
@@ -54,6 +72,7 @@ root(ROOTS.Zones, {
 				o(291254, {	-- Small Treasure Chest
 					["questID"] = 51935,
 					["coords"] = {
+						{ 59.3, 42.5, STORMSONG_VALLEY },
 						{ 62.0, 40.1, STORMSONG_VALLEY },
 					},
 				}),
@@ -85,7 +104,9 @@ root(ROOTS.Zones, {
 				o(291258, {	-- Small Treasure Chest
 					["questID"] = 51940,
 					["coords"] = {
+						{ 47.7, 64.7, STORMSONG_VALLEY },
 						{ 49.8, 66.1, STORMSONG_VALLEY },
+						{ 66.2, 40.4, STORMSONG_VALLEY },
 					},
 				}),
 				o(291259, {	-- Small Treasure Chest
@@ -97,7 +118,7 @@ root(ROOTS.Zones, {
 				o(291263, {	-- Small Treasure Chest
 					["questID"] = 51942,
 					["coords"] = {
-						{ 57.1, 54.3, 1183 },
+						{ 57.8, 54.1, 1183 },
 					},
 				}),
 				o(291264, {	-- Small Treasure Chest
@@ -109,6 +130,7 @@ root(ROOTS.Zones, {
 				o(291265, {	-- Small Treasure Chest
 					["questID"] = 51944,
 					["coords"] = {
+						{ 26.2, 61.9, STORMSONG_VALLEY },
 						{ 31.4, 40.6, STORMSONG_VALLEY },
 					},
 				}),
@@ -134,6 +156,7 @@ root(ROOTS.Zones, {
 				o(273956, {	-- Small Treasure Chest
 					["questID"] = 48612,
 					["coords"] = {
+						{ 59.7, 23.0, TIRAGARDE_SOUND },
 						{ 57.4, 22.2, TIRAGARDE_SOUND },
 					},
 				}),
@@ -141,6 +164,7 @@ root(ROOTS.Zones, {
 					["questID"] = 48617,
 					["coords"] = {
 						{ 56.2, 18.9, TIRAGARDE_SOUND },
+						{ 58.5, 14.6, TIRAGARDE_SOUND },
 					},
 				}),
 				o(275071, {	-- Small Treasure Chest
@@ -153,7 +177,17 @@ root(ROOTS.Zones, {
 					["questID"] = 48621,
 					["coords"] = {
 						{ 45.4, 22.3, TIRAGARDE_SOUND },
+						{ 47.6, 20.5, TIRAGARDE_SOUND },
 					},
+				}),
+				o(275074, {	-- Small Treasure Chest
+					["coord"] = { 72.3, 17.0, TIRAGARDE_SOUND },
+				}),
+				o(273917, {	-- Small Treasure Chest
+					["coord"] = { 78.1, 49.0, TIRAGARDE_SOUND },
+				}),
+				o(273919, {	-- Small Treasure Chest
+					["coord"] = { 70.0, 57.1, TIRAGARDE_SOUND },
 				}),
 			})),
 		}),

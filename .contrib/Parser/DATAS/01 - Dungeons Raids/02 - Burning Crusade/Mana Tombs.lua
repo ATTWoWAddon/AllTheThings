@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(250, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Mana Tombs
 		["lore"] = "Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spotaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",
@@ -47,9 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
 					["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
-					["cost"] = {
-						{ "i", 31941, 1 },	-- Mark of the Nexus-King
-					},
+					["cost"] = { { "i", 31941, 1 } },	-- Mark of the Nexus-King
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -119,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
-						objective(1, {	--	Mana-Tombs Stasis Chamber Investigated
+						objective(1, {	-- Mana-Tombs Stasis Chamber Investigated
 							["providers"] = {
 								{ "i",  32069 },	-- Mana-Tombs Stasis Chamber Key
 								{ "o", 185519 },	-- Mana-Tombs Stasis Chamber
@@ -170,12 +169,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				currency(1704, {	-- Spirit Shard
 					["timeline"] = { ADDED_8_0_1 },
-					-- #if BEFORE 9.1.5
-					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
-					-- #else
-					-- From 9.1.5 (specific patch uncomfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
-					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
-					-- #endif
+					["description"] =	-- From 9.1.5 (specific patch uncomfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
+						-- #if AFTER 9.1.5
+						"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+						-- #else
+						"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+						-- #endif
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -291,6 +290,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30633, 1 },	-- Auchenai Key
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265845, 1 },	-- Communal Auchenai Key
+					-- #endif
 				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
@@ -304,7 +306,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30584),	-- Enscribed Fire Opal
 							i(30585),	-- Glistening Fire Opal
@@ -374,9 +376,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							{ "i", 32092 },	-- The Eye of Haramad
 						},
 						["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
-						["cost"] = {
-							{ "i", 32079, 1 },	-- Shaffar's Stasis Chamber Key
-						},
+						["cost"] = { { "i", 32079, 1 } },	-- Shaffar's Stasis Chamber Key
 						["creatureID"] = 22927,
 						["groups"] = {
 							i(31570),	-- Mistshroud Tunic

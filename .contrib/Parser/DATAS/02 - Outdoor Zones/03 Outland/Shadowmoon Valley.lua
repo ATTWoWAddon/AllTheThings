@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -84,7 +85,7 @@ root(ROOTS.Zones, {
 					visit_exploration(3753,{coord={58.1,37.4,SHADOWMOON_VALLEY}}),	-- Ruins of Baa'ri
 					exploration(3756),	-- Ruins of Karabor
 					visit_exploration(3938,{coord={55.0,59.8,SHADOWMOON_VALLEY}}),	-- Sanctum of the Stars
-					--exploration(3520),	-- Shadowmoon Valley (Wrath Classic: Can't be collected)
+					-- exploration(3520),	-- Shadowmoon Valley (Wrath Classic: Can't be collected)
 					exploration(3744),	-- Shadowmoon Village
 					visit_exploration(3926,{coord={52.2,18.2,SHADOWMOON_VALLEY}}),	-- Shattered Plains
 					exploration(3932),	-- Sketh'lon Base Camp
@@ -200,7 +201,7 @@ root(ROOTS.Zones, {
 					q(10642, {	-- A Ghost in the Machine
 						["sourceQuest"] = 11045,	-- Zorus the Judicator
 						["qg"] = 21774,	-- Zorus the Judicator
-						["coord"] = { 37, 56.4, SHADOWMOON_VALLEY },
+						["coord"] = { 37.0, 56.4, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -253,7 +254,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/10	Ravenous Flayer Egg Destroyed
 								["provider"] = { "o", 184684 },	-- Ravenous Flayer Egg
-								["coord"] = { 57.2, 18, SHADOWMOON_VALLEY },
+								["coord"] = { 57.2, 18.0, SHADOWMOON_VALLEY },
 							}),
 						},
 					}),
@@ -429,7 +430,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Sketh'lon War Totem
 								["provider"] = { "i", 31169 },	-- Sketh'lon War Totem
-								["coord"] = { 39, 29, SHADOWMOON_VALLEY },
+								["coord"] = { 39.0, 29.0, SHADOWMOON_VALLEY },
 								["cr"] = 22025,	-- Asghar
 							}),
 						},
@@ -536,7 +537,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Chancellor Bloodleaf slain
 								["provider"] = { "n", 22012 },	-- Chancellor Bloodleaf
-								["coord"] = { 53, 70.6, SHADOWMOON_VALLEY },
+								["coord"] = { 53.0, 70.6, SHADOWMOON_VALLEY },
 							}),
 							objective(2, {	-- 0/1 Corok the Mighty slain
 								["provider"] = { "n", 22011 },	-- Corok the Mighty
@@ -544,7 +545,7 @@ root(ROOTS.Zones, {
 							}),
 							objective(3, {	-- 0/1 Illidan's Command
 								["provider"] = { "i", 31271 },	-- Illidan's Command
-								["coord"] = { 53, 70.6, SHADOWMOON_VALLEY },
+								["coord"] = { 53.0, 70.6, SHADOWMOON_VALLEY },
 								["cr"] = 22012,	-- Chancellor Bloodleaf
 							}),
 						},
@@ -624,7 +625,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Warbringer Razuun slain
 								["provider"] = { "n", 21287 },	-- Warbringer Razuun
-								["coord"] = { 39, 46, SHADOWMOON_VALLEY },
+								["coord"] = { 39.0, 46.0, SHADOWMOON_VALLEY },
 							}),
 							objective(2, {	-- 0/1 Razuun's Orders
 								["provider"] = { "i", 30689 },	-- Razuun's Orders
@@ -841,7 +842,7 @@ root(ROOTS.Zones, {
 					q(10673, {	-- Felspine the Greater
 						["sourceQuest"] = 10672,	-- Frankly, It Makes No Sense...
 						["qg"] = 21770,	-- Researcher Tiorus
-						["coord"] = { 30, 28.2, SHADOWMOON_VALLEY },
+						["coord"] = { 30.0, 28.2, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -862,14 +863,14 @@ root(ROOTS.Zones, {
 					q(10761, {	-- Find the Deserter (H)
 						["sourceQuest"] = 10760,	-- The Sketh'lon Wreckage (H)
 						["qg"] = 22043,	-- Sergeant Kargrul
-						["coord"] = { 31, 29.8, SHADOWMOON_VALLEY },
+						["coord"] = { 31.0, 29.8, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 					}),
 					q(10672, {	-- Frankly, It Makes No Sense...
 						["sourceQuest"] = 10660,	-- What Strange Creatures
 						["qg"] = 21770,	-- Researcher Tiorus
-						["coord"] = { 30, 28.2, SHADOWMOON_VALLEY },
+						["coord"] = { 30.0, 28.2, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 					}),
@@ -902,7 +903,7 @@ root(ROOTS.Zones, {
 					q(10643, {	-- Harbingers of Shadowmoon
 						["sourceQuest"] = 10642,	-- A Ghost in the Machine
 						["qg"] = 21774,	-- Zorus the Judicator
-						["coord"] = { 37, 56.4, SHADOWMOON_VALLEY },
+						["coord"] = { 37.0, 56.4, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -1065,7 +1066,7 @@ root(ROOTS.Zones, {
 						["allianceQuestData"] = q(11497),	-- Learning to Fly (A)
 						["hordeQuestData"] = q(11498),	-- Learning to Fly (H)
 						["qg"] = 18940,	-- Nutral
-						["coord"] = { 63.8, 41, SHATTRATH_CITY },
+						["coord"] = { 63.8, 41.0, SHATTRATH_CITY },
 						["timeline"] = { REMOVED_4_0_3 },
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(70, 70, 25),
@@ -1211,7 +1212,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Orders From Akama
 								["provider"] = { "i", 30649 },	-- Orders From Akama
-								["coord"] = { 57, 33.6, SHADOWMOON_VALLEY },
+								["coord"] = { 57.0, 33.6, SHADOWMOON_VALLEY },
 								["cr"] = 21663,	-- Oronu the Elder
 							}),
 						},
@@ -1225,7 +1226,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Orders From Akama
 								["provider"] = { "i", 30649 },	-- Orders From Akama
-								["coord"] = { 57, 33.6, SHADOWMOON_VALLEY },
+								["coord"] = { 57.0, 33.6, SHADOWMOON_VALLEY },
 								["cr"] = 21663,	-- Oronu the Elder
 							}),
 						},
@@ -1240,7 +1241,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Zandras slain
 								["provider"] = { "n", 21827 },	-- Zandras
-								["coord"] = { 58, 49.6, SHADOWMOON_VALLEY },
+								["coord"] = { 58.0, 49.6, SHADOWMOON_VALLEY },
 							}),
 						},
 					}),
@@ -1501,7 +1502,7 @@ root(ROOTS.Zones, {
 						["allianceQuestData"] = q(10644, {	-- Teron Gorefiend - Lore and Legend (A)
 							["sourceQuest"] = 10643,	-- Harbingers of Shadowmoon
 							["qg"] = 21774,	-- Zorus the Judicator
-							["coord"] = { 37, 56.4, SHADOWMOON_VALLEY },
+							["coord"] = { 37.0, 56.4, SHADOWMOON_VALLEY },
 						}),
 						["hordeQuestData"] = q(10633, {	-- Teron Gorefiend - Lore and Legend (H)
 							["sourceQuest"] = 10625,	-- Spectrecles
@@ -1551,7 +1552,7 @@ root(ROOTS.Zones, {
 									{ "o", 185233 },	-- The Doctor's Strongbox
 									{ "i",  30712 },	-- The Doctor's Key
 								},
-								["coord"] = { 29, 20.5, SHADOWMOON_VALLEY },
+								["coord"] = { 29.0, 20.5, SHADOWMOON_VALLEY },
 								["cr"] = 21779,	-- Doctor Maleficus <Shadow Council Overseer>
 							}),
 						},
@@ -1583,12 +1584,12 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Eykenen's Medallion Fragment
 								["provider"] = { "i", 30692 },	-- Eykenen's Medallion Fragment
-								["coord"] = { 51, 52.4, SHADOWMOON_VALLEY },
+								["coord"] = { 51.0, 52.4, SHADOWMOON_VALLEY },
 								["cr"] = 21709,	-- Eykenen
 							}),
 							objective(2, {	-- 0/1 Haalum's Medallion Fragment
 								["provider"] = { "i", 30691 },	-- Haalum's Medallion Fragment
-								["coord"] = { 57, 73.4, SHADOWMOON_VALLEY },
+								["coord"] = { 57.0, 73.4, SHADOWMOON_VALLEY },
 								["cr"] = 21711,	-- Haalum
 							}),
 							objective(3, {	-- 0/1 Lakaan's Medallion Fragment
@@ -1612,12 +1613,12 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Eykenen's Medallion Fragment
 								["provider"] = { "i", 30692 },	-- Eykenen's Medallion Fragment
-								["coord"] = { 51, 52.4, SHADOWMOON_VALLEY },
+								["coord"] = { 51.0, 52.4, SHADOWMOON_VALLEY },
 								["cr"] = 21709,	-- Eykenen
 							}),
 							objective(2, {	-- 0/1 Haalum's Medallion Fragment
 								["provider"] = { "i", 30691 },	-- Haalum's Medallion Fragment
-								["coord"] = { 57, 73.4, SHADOWMOON_VALLEY },
+								["coord"] = { 57.0, 73.4, SHADOWMOON_VALLEY },
 								["cr"] = 21711,	-- Haalum
 							}),
 							objective(3, {	-- 0/1 Lakaan's Medallion Fragment
@@ -1701,7 +1702,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Second Fragment of the Cipher of Damnation
 								["provider"] = { "i", 30453 },	-- Second Fragment of the Cipher of Damnation
-								["coord"] = { 29.4, 58, SHADOWMOON_VALLEY },
+								["coord"] = { 29.4, 58.0, SHADOWMOON_VALLEY },
 								["cr"] = 20427,	-- Veneratus the Many
 							}),
 						},
@@ -1952,7 +1953,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- The Path of Conquest Discovered
 								["provider"] = { "i", 31310 },	-- Wildhammer Flare Gun (Provided)
-								["coord"] = { 51, 62, SHADOWMOON_VALLEY },
+								["coord"] = { 51.0, 62.0, SHADOWMOON_VALLEY },
 							}),
 						},
 					}),
@@ -1964,7 +1965,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- The Path of Conquest Discovered
 								["provider"] = { "i", 31108 },	-- Kor'kron Flare Gun (Provided)
-								["coord"] = { 51, 62, SHADOWMOON_VALLEY },
+								["coord"] = { 51.0, 62.0, SHADOWMOON_VALLEY },
 							}),
 						},
 					}),
@@ -2000,7 +2001,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Overdeveloped Felfire Gizzard
 								["provider"] = { "i", 30867 },	-- Overdeveloped Felfire Gizzard
-								["coord"] = { 58, 51.8, SHADOWMOON_VALLEY },
+								["coord"] = { 58.0, 51.8, SHADOWMOON_VALLEY },
 								["cr"] = 21462,	-- Greater Felfire Diemetradon
 							}),
 						},
@@ -2315,7 +2316,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Chancellor Bloodleaf slain
 								["provider"] = { "n", 22012 },	-- Chancellor Bloodleaf
-								["coord"] = { 53, 70.6, SHADOWMOON_VALLEY },
+								["coord"] = { 53.0, 70.6, SHADOWMOON_VALLEY },
 							}),
 							objective(2, {	-- 0/1 Corok the Mighty slain
 								["provider"] = { "n", 22011 },	-- Corok the Mighty
@@ -2323,7 +2324,7 @@ root(ROOTS.Zones, {
 							}),
 							objective(3, {	-- 0/1 Illidan's Command
 								["provider"] = { "i", 31271 },	-- Illidan's Command
-								["coord"] = { 53, 70.6, SHADOWMOON_VALLEY },
+								["coord"] = { 53.0, 70.6, SHADOWMOON_VALLEY },
 								["cr"] = 22012,	-- Chancellor Bloodleaf
 							}),
 						},
@@ -2593,7 +2594,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_2_3_2 },
 						["crs"] = { 19768 },	-- Coilskar Siren
 					}),
-					i(24158, {  -- Design: Khorium Band of Shadows (RECIPE!)
+					i(24158, { 	-- Design: Khorium Band of Shadows (RECIPE!)
 						["crs"] = { 19826 },	-- Dark Conclave Shadowmancer
 					}),
 					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance (RECIPE!)
@@ -2706,7 +2707,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
 						["modelScale"] = .5,
 						["groups"] = {
-							i(122228), 	-- Music Roll: The Black Temple
+							i(122228),	-- Music Roll: The Black Temple
 						},
 					})),
 				})

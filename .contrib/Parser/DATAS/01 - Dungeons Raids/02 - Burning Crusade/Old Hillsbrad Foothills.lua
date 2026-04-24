@@ -1,10 +1,12 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local THOMAS_YANCE_GROUPS = {
 	i(25725),	-- Pattern: Riding Crop (RECIPE!)
 	i(23321),	-- Recruit's Robe
 };
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(251, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Old Hillsbrad Foothills
 		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
@@ -63,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
-					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
+					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE, DRACTHYR_HORDE }, ALL_RACES),
 					["lvl"] = lvlsquish(66, 66, 15),
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["groups"] = {
@@ -249,9 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
-					{ "i", 30635, 1 },	-- Key of Time
-				},
+				["cost"] = { { "i", 30635, 1 } },	-- Key of Time
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
@@ -263,7 +263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30589),	-- Dazzling Chrysoprase
 							i(30591),	-- Empowered Fire Opal

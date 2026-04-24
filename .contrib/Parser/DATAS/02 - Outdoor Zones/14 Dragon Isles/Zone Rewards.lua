@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ZONE_DROPS, {	-- Drops available from pretty much anywhere in Dragon Isles
 		["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
@@ -10,7 +11,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		},
 	}),
 	n(ZONE_REWARDS, {
-		--DF open world supplies
+		-- DF open world supplies
 		i(200691),	-- Claw Thistle Barbs
 		i(200700),	-- Cuppressa Berries
 		o(382031, {	-- Oily Dropcap

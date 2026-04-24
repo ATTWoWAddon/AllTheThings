@@ -177,7 +177,7 @@ local EncounterToLoot = {
 		i(186324),	-- Frame of the False Margrave
 		i(186379),	-- Interplanar Keystone
 		i(187542, {	-- Jaithys, the Prison Blade
-			["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },	-- This Item Doesnt Seem to Drop Anymore -- 13th March 2024 by Cromation
+			["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },	-- This Item Doesnt Seem to Drop Anymore	-- 13th March 2024 by Cromation
 		}),
 		i(186410, {	-- Jaithys, the Prison Blade
 			-- #if BEFORE 10.0.2
@@ -322,10 +322,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { NINE, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52348, {	-- Remnant of Ner'zhul
-						["_encounter"] = { DORMAZAIN, DIFFICULTY.RAID.HEROIC },
+						["_encounter"] = { NERZHUL, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52347, {	-- Soulrender Dormazain
-						["_encounter"] = { NERZHUL, DIFFICULTY.RAID.HEROIC },
+						["_encounter"] = { DORMAZAIN, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(52349, {	-- Painsmith Raznal
 						["_encounter"] = { PAINSMITH, DIFFICULTY.RAID.HEROIC },
@@ -850,7 +850,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1193, {	-- Sanctum of Domination
-		--q(63074),	-- Stygian ember loot >-- seems a too low number for this.
+		-- q(63074),	-- Stygian ember loot >-- seems a too low number for this.
 		q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)
 		q(64616),	-- Stygian Ember from Bonesteel (Normal / Heroic)
 		q(64674),	-- 1x Styigan Ember from Bonesteel (LFR)

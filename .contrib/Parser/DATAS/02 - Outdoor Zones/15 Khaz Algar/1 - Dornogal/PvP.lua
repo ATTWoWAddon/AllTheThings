@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(DORNOGAL, {
 		pvp(n(PVP, {
@@ -25,10 +26,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(85229, {	-- Rallying All Rapscallions!
 					["provider"] = { "i", 230284 },	-- Artisan's Consortium Pamphlet
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 					["groups"] = {
 						i(230287, {	-- Astral Gladiator's Heraldry x9
-							["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+							["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 						}),
 					},
 				}),
@@ -67,11 +68,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(90781, {	-- Sparks of War: K'aresh
 					["timeline"] = { ADDED_11_2_0 },
 				}),
+				a(q(84687, {	-- Against Overwhelming Odds [A]
+					["timeline"] = { ADDED_12_0_0 },
+				})),
+				h(q(84688, {	-- Against Overwhelming Odds [H]
+					["timeline"] = { ADDED_12_0_0 },
+				})),
 			})),
 			n(VENDORS, {
 				n(219215, {	-- Hotharn <Competitor's Recipes>
 					["coord"] = { 55.5, 77.1, DORNOGAL },
-					["groups"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "c", HONOR, 7500 } },
+					}, {
 						filter(RECIPES, {
 							i(225433),	-- Design: Algari Competitor's Amulet (RECIPE!)
 							i(225432),	-- Design: Algari Competitor's Signet (RECIPE!)
@@ -142,65 +151,65 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						filter(MISC, {
 							i(213778, {	-- Forged Jeweler's Setting
 								["cost"] = {
-									{"i", 215236, 3},	-- Vicious Bloodstone x3
-									{"c", HONOR, 5000},
+									{ "i", 215236, 3 },	-- Vicious Bloodstone x3
+									{ "c", HONOR, 5000 },
 								},
 								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 							}),
 							i(230425, {	-- Prized Jeweler's Setting
 								["cost"] = {
-									{"i", 215236, 3},	-- Vicious Bloodstone x3
-									{"c", HONOR, 5000},
+									{ "i", 215236, 3 },	-- Vicious Bloodstone x3
+									{ "c", HONOR, 5000 },
 								},
 								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(230724, {	-- Astral Jeweler's Setting
 								["cost"] = {
-									{"i", 215236, 3},	-- Vicious Bloodstone x3
-									{"c", HONOR, 5000},
+									{ "i", 215236, 3 },	-- Vicious Bloodstone x3
+									{ "c", HONOR, 5000 },
 								},
 								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 						}),
 						filter(REAGENTS, {
 							i(230286, {	-- Astral Aspirant's Heraldry
-								["cost"] = {{"c", HONOR, 175}},
-								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+								["cost"] = { { "c", HONOR, 175 } },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 							}),
 							i(230285, {	-- Astral Combatant's Heraldry
-								["cost"] = {{"c", HONOR, 350}},
-								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+								["cost"] = { { "c", HONOR, 350 } },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 							}),
 							i(230287, {	-- Astral Gladiator's Heraldry
-								["cost"] = {{"c", CONQUEST, 175}},
-								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+								["cost"] = { { "c", CONQUEST, 175 } },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 							}),
 							i(210232, {	-- Forged Aspirant's Heraldry
-								["cost"] = {{"c", HONOR, 175}},
+								["cost"] = { { "c", HONOR, 175 } },
 								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 							}),
 							i(210221, {	-- Forged Combatant's Heraldry
-								["cost"] = {{"c", HONOR, 350}},
+								["cost"] = { { "c", HONOR, 350 } },
 								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 							}),
 							i(210233, {	-- Forged Gladiator's Heraldry
-								["cost"] = {{"c", CONQUEST, 175}},
+								["cost"] = { { "c", CONQUEST, 175 } },
 								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 							}),
 							i(229389, {	-- Prized Aspirant's Heraldry
-								["cost"] = {{"c", HONOR, 175}},
+								["cost"] = { { "c", HONOR, 175 } },
 								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(229388, {	-- Prized Combatant's Heraldry
-								["cost"] = {{"c", HONOR, 350}},
+								["cost"] = { { "c", HONOR, 350 } },
 								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(229390, {	-- Prized Gladiator's Heraldry
-								["cost"] = {{"c", CONQUEST, 175}},
+								["cost"] = { { "c", CONQUEST, 175 } },
 								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(215236, {	-- Vicious Bloodstone
-								["cost"] = {{"c", HONOR, 2500}},
+								["cost"] = { { "c", HONOR, 2500 } },
 							}),
 						}),
 					}),
@@ -209,7 +218,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 60.3, 70.0, DORNOGAL },
 					["groups"] = {
 						filter(MISC, sharedData({
-							["cost"] = {{"c", HONOR, 500}},
+							["cost"] = { { "c", HONOR, 500 } },
 						}, {
 							i(224044),	-- Devouring Residue
 							i(224048),	-- Electric Shock
@@ -227,13 +236,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 55.0, 76.5, DORNOGAL },
 					["groups"] = {
 						i(225739, {	-- Algari Distinguishment
-							["cost"] = {{"c", HONOR, 2000}},
+							["cost"] = { { "c", HONOR, 2000 } },
 							["groups"] = {
 								i(137642),	-- Mark of Honor
 							},
 						}),
 						i(224556, {	-- Glorious Contender's Strongbox
-							["cost"] = {{"c", HONOR, 3500}},
+							["cost"] = { { "c", HONOR, 3500 } },
 							["sym"] = {
 								{"select","npcID",219215},{"pop"},	-- select Hotharn <Competitor's Recipes>
 								{"find","filterID",RECIPES},{"pop"},	-- return recipes

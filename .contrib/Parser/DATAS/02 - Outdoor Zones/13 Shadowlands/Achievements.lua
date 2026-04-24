@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		petbattle(ach(14881, {	-- Abhorrent Adversaries of the Afterlife
@@ -609,9 +610,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			})),
 		}),
-		pvp(ach(14516, {	-- Impressing Zo'Sorg
-			["sym"] = {{ "achievement_criteria" }},
-		})),
 		ach(14280, {	-- Loremaster of Shadowlands
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -757,8 +755,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 		}),
-		pvp(ach(14515, {	-- Zo'Sorg's Bidding
-			["sym"] = {{ "achievement_criteria" }},
-		})),
 	}),
 })));

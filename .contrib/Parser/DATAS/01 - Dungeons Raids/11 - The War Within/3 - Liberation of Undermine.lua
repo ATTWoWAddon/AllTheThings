@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 ------ Encounter Constants ------
 local VEXIE = 2639;
 local CARNAGE = 2640;
@@ -485,6 +486,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 							}, {	-- RENOWN 10 --
 							}, {	-- RENOWN 11 --
 							}, {	-- RENOWN 12 --
+								i(239213, {	-- Well-Lit Incontinental Loveseat (DECOR!)
+									["cost"] = 10000000,	-- 1,000g
+									["timeline"] = { ADDED_11_2_7 },
+								}),
 							}, {	-- RENOWN 13 --
 							}, {	-- RENOWN 14 --
 							}, {	-- RENOWN 15 --
@@ -512,7 +517,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
 						}, {
 							i(238776),	-- Gallagio Raider's Bilgewater Blasthammer
@@ -537,7 +542,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
 						}, {
 							i(238777),	-- Gallagio Raider's Blackwater Blasthammer
@@ -562,7 +567,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
 						}, {
 							i(238778),	-- Gallagio Raider's Darkfuse Blasthammer
@@ -587,7 +592,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 						}, {
 							i(238775),	-- Gallagio Raider's Venture Co. Blasthammer
@@ -612,7 +617,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 						}, {
 							i(238774),	-- Gallagio Raider's Knuckle Dusters
 							i(238761),	-- Gallagio Raider's Bootleg Lever
@@ -706,7 +711,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				header(HEADERS.LFGDungeon, 2783, {	-- The Chrome King
 					Boss(GALLYWIX, {
 						i(228819, {	-- Excessively Bejeweled Curio
-							--["crs"] = 227003,	-- Kir'xal (Vendor)
+							-- ["crs"] = 227003,	-- Kir'xal (Vendor)
 							["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
@@ -750,7 +755,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				BossOnly(BANDIT, {
 					ach(41119, {	-- One Rank Higher
-						i(245302, {["timeline"] = { ADDED_11_2_7 }}),	-- Gallagio L.U.C.K. Spinner (DECOR!)
+						i(245302, {	-- Gallagio L.U.C.K. Spinner (DECOR!)
+							["crs"] = { 235621 },	-- Ando the Gat <Black Market Broker>	-- TODO: revise with new Source impl
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					}),
 					ach(41120),	-- Two Ranks Higher
 					ach(41121),	-- Three Ranks Higher
@@ -793,7 +801,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				Boss(MUGZEE),
 				Boss(GALLYWIX, {
 					i(228819, {	-- Excessively Bejeweled Curio
-						--["crs"] = 227003,	-- Kir'xal (Vendor)
+						-- ["crs"] = 227003,	-- Kir'xal (Vendor)
 						["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
@@ -836,7 +844,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				Boss(MUGZEE),
 				Boss(GALLYWIX, {
 					i(228819, {	-- Excessively Bejeweled Curio
-						--["crs"] = 227003,	-- Kir'xal (Vendor)
+						-- ["crs"] = 227003,	-- Kir'xal (Vendor)
 						["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 					}),
@@ -888,7 +896,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					ach(41292),	-- Mythic: Chrome King Gallywix Guild Run
 					i(235626),	-- The Big G (MOUNT!)
 					i(228819, {	-- Excessively Bejeweled Curio
-						--["crs"] = 227003,	-- Kir'xal (Vendor)
+						-- ["crs"] = 227003,	-- Kir'xal (Vendor)
 						["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 					}),
@@ -896,14 +904,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			}),
 			n(VENDORS, {
 				--[[ add new vendor also to all the curios
-				--Raid vendor gear for curio
+				-- Raid vendor gear for curio
 				n(227003, {	-- Kir'xal
 					["coord"] = { 56.7, 46.1, NERUBAR_LOWER },
 					["sym"] = {{"select","itemID",
-						modItemId(228819,4),	--	Excessively Bejeweled Curio [L]
-						modItemId(228819,3),	--	Excessively Bejeweled Curio [N]
-						modItemId(228819,5),	--	Excessively Bejeweled Curio [H]
-						modItemId(228819,6),	--	Excessively Bejeweled Curio [M]
+						modItemId(228819,4),	-- Excessively Bejeweled Curio [L]
+						modItemId(228819,3),	-- Excessively Bejeweled Curio [N]
+						modItemId(228819,5),	-- Excessively Bejeweled Curio [H]
+						modItemId(228819,6),	-- Excessively Bejeweled Curio [M]
 					},{"pop"}},	-- Pop all Curios (this fills their symlinks)
 				}),
 				--]]

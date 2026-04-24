@@ -84,6 +84,12 @@ root(ROOTS.Zones, {
 					i(121128, {	-- Haustvelt Boots
 						["bonusID"] = 1812,
 					}),
+					i(139894, {	-- Skinning Technique: Unbroken Claw (RECIPE!)
+						["crs"] = {
+							91799,	-- Juvenile Stormwing
+							91486,	-- Stormwing Drake
+						},
+					}),
 					i(121154, {	-- Valisdall Helm
 						["bonusID"] = 1812,
 					}),

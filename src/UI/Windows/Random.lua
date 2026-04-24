@@ -1,142 +1,209 @@
 -- App locals
 local appName, app = ...;
-local contains, CloneReference =
-	app.contains, app.CloneReference;
+local L = app.L;
 
 -- Global locals
-local ipairs, tinsert, math_max, pairs, unpack, wipe
-	= ipairs, tinsert, math.max, pairs, unpack, wipe;
+local ipairs, tinsert, tremove, setmetatable, math_max, math_random, unpack, wipe
+	= ipairs, tinsert, tremove, setmetatable, math.max, math.random, unpack, wipe;
+local C_Map_GetMapInfo
+	= C_Map.GetMapInfo
+local NestObject = app.NestObject
 
--- Helper Functions
+-- Local Functions
+local SearchFilter;
+
+-- when changing settings, we need the random cache to be cleared since it's determined based on search
+-- results with specific settings
+local searchCache = {};
+app.AddEventHandler("OnRecalculate_NewSettings", function()
+	wipe(searchCache)
+end)
+local function SearchRecursively(group, results, func, field)
+	if group.visible and not (group.saved or group.collected) then
+		if group.g then
+			for i, subgroup in ipairs(group.g) do
+				SearchRecursively(subgroup, results, func, field)
+			end
+		end
+		if group[field] and (not func or func(group)) then
+			results[#results + 1] = group
+		end
+	end
+end
+local function SearchRecursivelyForEverything(group, results)
+	if group.visible and not (group.saved or group.collected) then
+		if group.g then
+			for i, subgroup in ipairs(group.g) do
+				SearchRecursivelyForEverything(subgroup, results);
+			end
+		end
+		if group.collectible then
+			results[#results + 1] = group
+		end
+	end
+end
+local excludedZones = setmetatable({}, {
+	__index = function(t, mapID)
+		local info = C_Map_GetMapInfo(mapID);
+		t[mapID] = not info or info.mapType < 3;
+		return t[mapID];
+	end
+});
+
+-- Represents how to search for a given named-Thing
+local SelectionMethods = setmetatable({
+	AllTheThings = SearchRecursivelyForEverything,
+}, { __index = function() return SearchRecursively end})
+local function DefaultSelectionFilter(o) return o.collectible and not o.collected end
+-- Named-Functions (if not ignored) for whether to select data pertaining to a specific named-Thing
+local SelectionFilters = setmetatable({
+	Achievement = function(o)
+		return o.collectible and not o.collected and not o.mapID and not o.criteriaID;
+	end,
+	-- Campsites - default
+	-- Decor - default
+	Dungeon = function(o)
+		return not o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
+	end,
+	-- Factions - default
+	-- Flight Paths - default
+	-- Followers - default
+	-- Item - default
+	Instance = function(o)
+		return ((o.total or 0) - (o.progress or 0)) > 0;
+	end,
+	-- Mount - default
+	-- Pet - default
+	-- Quest - default
+	Raid = function(o)
+		return o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
+	end,
+	-- Titles - default
+	-- Toy - default
+	Zone = function(o)
+		return (((o.total or 0) - (o.progress or 0)) > 0) and not o.instanceID and not excludedZones[o.mapID];
+	end,
+}, { __index = function() return DefaultSelectionFilter end})
+-- Named-TypeIDs for the field to Select for a given named-Thing
+local TypeIDLookups = {
+	Achievement = "achievementID",
+	Dungeon = "instanceID",
+	Factions = "factionID",
+	Flight_Paths = "flightpathID",
+	Item = "itemID",
+	Instance = "instanceID",
+	Mount = "mountID",
+	Pet = "speciesID",
+	Quest = "questID",
+	Raid = "instanceID",
+	Titles = "titleID",
+	Toy = "toyID",
+	Zone = "mapID",
+}
+local TextLookups = {};
+local function OnClickForSearchCategory(row, button)
+	local self = row:GetParent():GetParent();
+	SearchFilter = row.ref.category or "Quest";
+	self:SetData(self.defaultHeader);
+	self:Reroll();
+	return true;
+end
+local function AddRandomCategoryButton(text, icon, desc, category)
+	TextLookups[category] = text;
+	return app.CreateRawText(text, {
+		category = category,
+		description = desc,
+		icon = icon,
+		SortPriority = 2,
+		OnUpdate = app.AlwaysShowUpdate,
+		OnClick = OnClickForSearchCategory,
+	})
+end
+local RandomCategoryButtons = {
+	app.CreateRawText(L.TITLE, {
+		category = appName,
+		SortPriority = 1,
+		icon = app.asset("logo_32x32"),
+		preview = app.asset("Discord_2_128"),
+		description = L.SEARCH_EVERYTHING_BUTTON_OF_DOOM,
+		OnUpdate = app.AlwaysShowUpdate,
+		OnClick = OnClickForSearchCategory,
+	}),
+	AddRandomCategoryButton(L.ACHIEVEMENT, app.asset("Category_Achievements"), L.ACHIEVEMENT_DESC, "Achievement"),
+	AddRandomCategoryButton(L.DUNGEON, app.asset("Difficulty_Normal"), L.DUNGEON_DESC, "Dungeon"),
+	AddRandomCategoryButton(L.FACTIONS, app.asset("Category_Factions"), L.FACTION_DESC, "Factions"),
+	AddRandomCategoryButton(L.FLIGHT_PATHS, app.asset("Category_FlightPaths"), L.FLIGHT_PATH_DESC, "Flight_Paths"),
+	AddRandomCategoryButton(L.INSTANCE, app.asset("Category_D&R"), L.INSTANCE_DESC, "Instance"),
+	AddRandomCategoryButton(L.ITEM, app.asset("Interface_Zone_drop"), L.ITEM_DESC, "Item"),
+	AddRandomCategoryButton(L.MOUNT, app.asset("Category_Mounts"), L.MOUNT_DESC, "Mount"),
+	AddRandomCategoryButton(L.PET, app.asset("Category_PetBattles"), L.PET_DESC, "Pet"),
+	AddRandomCategoryButton(L.QUEST, app.asset("Interface_Quest"), L.QUEST_DESC, "Quest"),
+	AddRandomCategoryButton(L.RAID, app.asset("Difficulty_Heroic"), L.RAID_DESC, "Raid"),
+	AddRandomCategoryButton(L.TITLES, app.asset("Category_Titles"), L.TITLES_RAND_DESC, "Titles"),
+	AddRandomCategoryButton(L.TOY, app.asset("Category_ToyBox"), L.TOY_DESC, "Toy"),
+	AddRandomCategoryButton(L.ZONE, app.asset("Category_Zones"), L.ZONE_DESC, "Zone"),
+};
+app.AddRandomSearchCategory = function(category, key, text, desc, icon, filter)
+	TypeIDLookups[category] = key;
+	if filter then SelectionFilters[category] = filter; end
+	tinsert(RandomCategoryButtons, AddRandomCategoryButton(text, icon, desc, category));
+end
+local function GetSearchResults()
+	if SearchFilter then
+		local searchResults = searchCache[SearchFilter];
+		if searchResults then return searchResults end
+		local method = SelectionMethods[SearchFilter];
+		if method then
+			searchResults = {}
+			method(app:GetDatabaseRoot(), searchResults, SelectionFilters[SearchFilter], TypeIDLookups[SearchFilter])
+			searchCache[SearchFilter] = searchResults
+			return searchResults
+		end
+	end
+end
 local function GenerateWeightedTable(data)
 	local weightedTable, totalWeight = {}, 0;
 	if data then
 		for i,o in ipairs(data) do
 			local weight, total, progress = 1, o.total, o.progress;
 			if total and progress then weight = math_max(total - progress, 1); end
-			tinsert(weightedTable, { value=o, weight=weight });
+			weightedTable[#weightedTable + 1] = { value=o, weight=weight };
 			totalWeight = totalWeight + weight;
 		end
 	end
 	return { weightedTable, totalWeight };
 end
-local function Search(field, g)
-	local results = {};
-	app:BuildFlatSearchFilteredResponse(g or app:GetDataCache().g, function(t) return t[field]; end, results);
-	return results;
+local function CreateCache()
+	return GenerateWeightedTable(GetSearchResults() or {});
 end
 
--- Local Functions
-local SearchFilter;
-local excludedZones = {
-	[12] = 1,	-- Kalimdor
-	[13] = 1,	-- Eastern Kingdoms
-	[101] = 1,	-- Outland
-	[113] = 1,	-- Northrend
-	[424] = 1,	-- Pandaria
-	[948] = 1,	-- The Maelstrom
-	[572] = 1,	-- Draenor
-	[619] = 1,	-- Broken Isles
-	[905] = 1,	-- Argus
-	[876] = 1,	-- Kul'Tiras
-	[875] = 1,	-- Zandalar
-	[947] = 1,	-- Cosmic (Classic)
-	[1414] = 1,	-- Kalimdor (Classic)
-	[1415] = 1,	-- Eastern Kingdoms (Classic)
-	[1945] = 1,	-- Outland (Classic)
-};
-local everythingFilter = function(t)
-	return (t.collectible and not t.collected) and not (t.mapID and excludedZones[t.mapID]) and not t.expansionID;
-end;
-local zoneFilter = function(t)
-	return t.mapID and (not (t.saved or (t.collectible and t.collected)) and (t.total and t.progress < t.total)) and not excludedZones[t.mapID];
-end;
-local searchMethods = {
-	ATT = function(self, cache)
-		for i,o in pairs(app:GetDataCache().g) do
-			if o.g then
-				local results = {};
-				app:BuildFlatSearchFilteredResponse(o.g, everythingFilter, results);
-				for i,o in ipairs(results) do
-					local saved = o.saved;
-					if not o.locked and ((o.collectible and not o.collected) or (not o.saved and o.total and o.progress < o.total)) then
-						if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
-							tinsert(cache, o);
-						end
-					end
-				end
-			end
-		end
+-- Implementation
+app:CreateWindow("Random", {
+	Commands = { "attrandom" },
+	IgnoreQuestUpdates = true,
+	OnLoad = function(self, settings)
+		SearchFilter = settings.SearchFilter or "Quest";
+		
+		-- For this window's options to work, Prime needs to be fully initialized.
+		local prime = app:GetWindow("Prime");
+		if not prime.data.TLUG then prime:ForceUpdate(); end
+		self:Reroll();
 	end,
-	Item = function(self, cache)
-		for i,o in ipairs(Search("itemID")) do
-			if not o.collected and o.collectible then
-				if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
-					tinsert(cache, o);
-				end
-			end
-		end
+	OnSave = function(self, settings)
+		settings.SearchFilter = SearchFilter;
 	end,
-	Quest = function(self, cache)
-		for i,o in ipairs(Search("questID")) do
-			local saved = o.saved;
-			if not o.locked and ((o.collectible and not o.collected) or (not o.saved and o.total and o.progress < o.total)) then
-				if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
-					tinsert(cache, o);
-				end
-			end
+	__Reroll = function(self)
+		-- Rebuild all the datas
+		for i=#self.data.g,#self.data.options + 1,-1 do
+			tremove(self.data.g, i);
 		end
-	end,
-	Instance = function(self, cache)
-		for i,o in ipairs(Search("mapID", app.Categories.Instances)) do
-			if not (o.saved or (o.collectible and o.collected)) and (o.total and o.progress < o.total) then
-				tinsert(cache, o);
-			end
-		end
-	end,
-	Dungeon = function(self, cache)
-		for i,o in ipairs(Search("mapID", app.Categories.Instances)) do
-			if not o.isRaid and (not (o.saved or (o.collectible and o.collected)) and (o.total and o.progress < o.total)) then
-				tinsert(cache, o);
-			end
-		end
-	end,
-	Raid = function(self, cache)
-		for i,o in ipairs(Search("mapID", app.Categories.Instances)) do
-			if o.isRaid and (not (o.saved or (o.collectible and o.collected)) and (o.total and o.progress < o.total)) then
-				tinsert(cache, o);
-			end
-		end
-	end,
-	Zone = function(self, cache)
-		for categoryName,category in pairs(app.Categories) do
-			if categoryName ~= "Instances" then
-				app:BuildFlatSearchFilteredResponse(category, zoneFilter, cache);
-			end
-		end
-	end
-};
-local function CreateCache(self)
-	local cache = {};
-	searchMethods[SearchFilter](self, cache);
-	return GenerateWeightedTable(cache);
-end
-local function Reroll(self)
-	-- Rebuild all the datas
-	local data = self.defaultHeader;
-	self.data = data;
-	wipe(data.g);
-	for i,o in ipairs(data.options) do
-		o.parent = data;
-		tinsert(data.g, o);
-	end
-	if SearchFilter then
+		
 		-- Call to our method and build a list to draw from
-		local cache = app.GetCachedData("SEARCH::" .. SearchFilter, CreateCache, self);
+		local cache = app.GetCachedData("SEARCH::" .. SearchFilter, CreateCache);
 		local weightedTable, totalWeight = unpack(cache);
 		if totalWeight > 0 then
 			local selected = weightedTable[#weightedTable].data;
-			totalWeight = math.random(totalWeight);
+			totalWeight = math_random(totalWeight);
 			for i,o in ipairs(weightedTable) do
 				totalWeight = totalWeight - o.weight;
 				if totalWeight <= 0 then
@@ -145,166 +212,70 @@ local function Reroll(self)
 				end
 			end
 			if selected then
-				local o = CloneReference(selected);
-				o.parent = data;
-				tinsert(data.g, o);
+				local clone = app.CloneClassInstance(selected);
+				clone.parent = self.data;
+				tinsert(self.data.g, clone);
 			else
-				app.print("Nothing was selected.");
+				app.print(L.NOTHING_TO_SELECT_FROM);
 			end
 		else
-			app.print("Source list was empty. Please check to see if anything matches your query.");
+			app.print(L.NOTHING_TO_SELECT_FROM);
 		end
-		self:AssignChildren();
-		self:ExpandData(true);
-		self:Update();
-	end
-end
-local function SetSearchFilter(self, filter)
-	SearchFilter = filter;
-	Reroll(self);
-	return true;
-end
-
--- Implementation
-app:CreateWindow("Random", {
-	Commands = { "attrandom" },
-	OnLoad = function(self, settings)
-		SearchFilter = settings.SearchFilter or "Quest";
+		self:Rebuild();
 	end,
-	OnSave = function(self, settings)
-		settings.SearchFilter = SearchFilter;
+	Reroll = function(self)
+		app.CallbackHandlers.Callback(self.__Reroll, self);
 	end,
-	OnRebuild = function(self, ...)
-		if self.data then return; end
-
-		-- For this window's options to work, Prime needs to be fully initialized.
-		local prime = app:GetWindow("Prime");
-		if not prime then return; end
-		if not prime.data then prime:ForceUpdate(); end
-
-		self.defaultHeader = {
-			text = "Random - Go Get 'Em!",
+	OnInit = function(self, handlers)
+		local filterOptions = app.CreateRawText(L.APPLY_SEARCH_FILTER, {
+			icon = app.asset("Button_Search"),
+			description = L.APPLY_SEARCH_FILTER_DESC,
+			OnUpdate = app.AlwaysShowUpdate,
+			SortType = "Global",
+			indent = 0,
+			back = 1,
+			g = RandomCategoryButtons,
+		});
+		self.defaultHeader = app.CreateRawText(L.GO_GO_RANDOM, {
 			icon = app.asset("WindowIcon_Random"),
-			description = "This window allows you to randomly select a place or item to get. Go get 'em!",
+			description = L.GO_GO_RANDOM_DESC,
+			OnUpdate = app.AlwaysShowUpdate,
 			expanded = true,
 			visible = true,
 			back = 1,
 			indent = 0,
-			g = { },
+			g = {},
 			options = {
-				{
-					text = "Change Search Filter",
+				app.CreateRawText(L.CHANGE_SEARCH_FILTER, {
 					icon = app.asset("Button_Search"),
-					description = "Click this to change your search filter.",
+					description = L.CHANGE_SEARCH_FILTER_DESC,
 					OnUpdate = app.AlwaysShowUpdate,
 					OnClick = function(row, button)
-						self:SetData(self.filterOptions);
+						app.AssignChildren(filterOptions);
+						self:SetData(filterOptions);
+						self:Update(true);
 						return true;
 					end,
-				},
-				{
-					text = "Reroll",
+				}),
+				app.CreateRawText(L.REROLL, {
 					icon = app.asset("Button_Reroll"),
-					description = "Click this button to reroll using the active filter.",
-					visible = true,
+					description = L.REROLL_DESC,
 					OnClick = function(row, button)
-						Reroll(self);
+						self:Reroll();
 						return true;
 					end,
 					OnUpdate = function(data)
-						data.text = "Reroll: " .. SearchFilter;
+						data.text = L.REROLL .. ": " .. (SearchFilter ~= appName and TextLookups[SearchFilter] or SearchFilter);
 						data.visible = true;
 						return true;
 					end,
-				}
+				}),
 			},
-		};
-		self.filterOptions = {
-			text = "Apply a Search Filter",
-			icon = app.asset("Button_Search"),
-			description = "Please select a search filter option.",
-			expanded = true,
-			visible = true,
-			back = 1,
-			g = {
-				setmetatable({
-					['description'] = "Click this button to search... EVERYTHING.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						return SetSearchFilter(self, "ATT");
-					end,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-				}, { __index = function(t, key)
-					if key == "text" or key == "icon" or key == "preview" or key == "texcoord" then
-						return app:GetDataCache()[key];
-					end
-				end}),
-				{
-					text = "Item",
-					icon = 132595,
-					description = "Click this button to select a random item based on what you're missing.",
-					OnUpdate = app.AlwaysShowUpdate,
-					OnClick = function(row, button)
-						return SetSearchFilter(self, "Item");
-					end,
-				},
-				{
-					text = "Quest",
-					icon = 132049,
-					description = "Click this button to select a random quest based on what you're missing.",
-					OnUpdate = app.AlwaysShowUpdate,
-					OnClick = function(row, button)
-						return SetSearchFilter(self, "Quest");
-					end,
-				},
-				{
-					text = "Instance",
-					icon = app.asset("Category_D&R"),
-					description = "Click this button to select a random instance based on what you're missing.",
-					OnUpdate = app.AlwaysShowUpdate,
-					OnClick = function(row, button)
-						return SetSearchFilter(self, "Instance");
-					end,
-				},
-				{
-					text = "Dungeon",
-					icon = app.asset("Difficulty_Normal"),
-					description = "Click this button to select a random dungeon based on what you're missing.",
-					OnUpdate = app.AlwaysShowUpdate,
-					OnClick = function(row, button)
-						return SetSearchFilter(self, "Dungeon");
-					end,
-				},
-				{
-					text = "Raid",
-					icon = app.asset("Difficulty_Heroic"),
-					description = "Click this button to select a random raid based on what you're missing.",
-					OnUpdate = app.AlwaysShowUpdate,
-					OnClick = function(row, button)
-						return SetSearchFilter(self, "Raid");
-					end,
-				},
-				{
-					text = "Zone",
-					icon = 134269,
-					description = "Click this button to select a random zone based on what you're missing.",
-					OnUpdate = app.AlwaysShowUpdate,
-					OnClick = function(row, button)
-						return SetSearchFilter(self, "Zone");
-					end,
-				},
-			},
-		};
-
-		self.data = self.defaultHeader;
-		Reroll(self);
+		})
+		self:SetData(self.defaultHeader);
+		for i,o in ipairs(self.data.options) do
+			tinsert(self.data.g, o);
+		end
+		self:AssignChildren();
 	end,
-	--OnUpdate = function(self, ...)
-		-- Update the groups without forcing Debug Mode.
-		--local visibilityFilter = app.Modules.Filter.Get.Visible();
-		--app.Modules.Filter.Set.Visible(true);
-		--self:DefaultUpdate(...);
-		--app.Modules.Filter.Set.Visible(visibilityFilter);
-		--return false;
-	--end
-});
+})

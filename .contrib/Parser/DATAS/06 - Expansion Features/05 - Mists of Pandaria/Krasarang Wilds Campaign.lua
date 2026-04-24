@@ -1,3 +1,7 @@
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
 	n(KRASARANG_WILDS_CAMPAIGN, {
 		["aqd"] = {
@@ -681,9 +685,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
 						["sourceQuest"] = 32412,	-- One Last Grasp
 						["qg"] = 68586,	-- Grand Magister Rommath
-						["coord"] = { 50.4, 48.4, 502 },
+						["coords"] = {
+							{ 50.4, 48.4, 502 },	-- Dalaran (Scenario)
+							{ 50.5, 48.3, 501 },	-- Dalaran (Scenario)
+						},
 						["timeline"] = { ADDED_5_1_0 },
-						["maps"] = { 501 },	-- Dalaran (Scenario)
 						["isBreadcrumb"] = true,
 					}),
 					q(32406, {	-- A Tactical Assault
@@ -782,7 +788,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					q(32242, {	-- Buried Secrets
 						["sourceQuests"] = { 32256 },	-- Rise Of An Empire
 						["qg"] = 67840,	-- Garrosh Hellscream
-						["coord"] = { 32.1, 84.9, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						["coord"] = { 32.7, 83.5, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
 					q(32378, {	-- Clearing a Path
 						["sourceQuests"] = { 32376 },	-- To the Valley!
@@ -812,6 +818,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					q(32108, {	-- Domination Point
 						["sourceQuests"] = { 32250 },	-- The Might of the Warchief
 						["qg"] = 68072,	-- Kor'kron Bodyguard
+						["coord"] = { 10.9, 53.0, KRASARANG_WILDS },
 					}),
 					q(32351, {	-- Echoes of Thunder
 						["sourceQuests"] = { 32384 },	-- Trapping the Leader
@@ -1283,12 +1290,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122211, {	-- Music Roll: War March
-							["cost"] = { { "i", 91838, 500 }, },	-- 500x Lion's Landing Commission
+							["cost"] = { { "i", 91838, 500 } },	-- 500x Lion's Landing Commission
 							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(92527, {	-- Rodent Crate
 							["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
-							["cost"] = { { "i", 91838, 2000 }, },	-- 2,000x Lion's Landing Commission
+							["cost"] = { { "i", 91838, 2000 } },	-- 2,000x Lion's Landing Commission
 							["groups"] = {
 								pet(1128),	-- Sumprush Rodent (PET!)
 							},
@@ -1300,12 +1307,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122202, {	-- Music Roll: High Seas
-							["cost"] = { { "i", 91877, 500 }, },	-- 500x Domination Point Commission
+							["cost"] = { { "i", 91877, 500 } },	-- 500x Domination Point Commission
 							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(92532, {	-- Rodent Crate
 							["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
-							["cost"] = { { "i", 91877, 2000 }, },	-- 2,000x Domination Point Commission
+							["cost"] = { { "i", 91877, 2000 } },	-- 2,000x Domination Point Commission
 							["groups"] = {
 								pet(1128),	-- Sumprush Rodent (PET!)
 							},

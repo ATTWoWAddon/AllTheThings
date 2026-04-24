@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(WORLD_QUESTS, {
@@ -8,7 +9,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
+			["groups"] = sharedData({
+				["isWorldQuest"] = true,
+			}, {
 				petbattle(q(73148, {	-- Combustible Vegetation
 					["coord"] = { 13.6, 53.6, THE_FORBIDDEN_REACH },
 					-- ["maxReputation"] = { FACTION_DARK_TALONS, EXALTED },	-- TODO: convert to 'givesRep' if ever added
@@ -58,10 +61,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 29.0, 6.4, THE_FORBIDDEN_REACH },
 					-- ["maxReputation"] = { FACTION_DARK_TALONS, EXALTED },	-- TODO: convert to 'givesRep' if ever added
 					["crs"] = {
-					--	200770,	-- Tremblor
+						-- 200770,	-- Tremblor
 						200693,	-- Tremblor (Rare!)
-					--	200690,	-- Tremblor
-					--	200692,	-- Tremblor (Epic!)
+						-- 200690,	-- Tremblor
+						-- 200692,	-- Tremblor (Epic!)
 					},
 					["groups"] = {
 						i(202411, {	-- Tremblor (PET!)

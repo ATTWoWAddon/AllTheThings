@@ -1,5 +1,9 @@
-
 local _, app = ...
+if app.GameBuildVersion <= 40000 then
+	-- Not compatible pre-Cata. (TODO: Test in Wrath Classic Anniversary)
+	return;
+end
+
 local L = app.L
 
 -- Globals
@@ -40,7 +44,24 @@ local CollectionCacheFunctions = {
 			end
 		end
 		return achs
-	end
+	end,
+	AccountWideAchievements = function()
+		local achs = {}
+		local FlagsUtil_IsSet = FlagsUtil.IsSet
+		if not FlagsUtil_IsSet then return achs end
+
+		local flags, id
+		local FLAG_AccountWide = ACHIEVEMENT_FLAGS_ACCOUNT
+		local allIds = CollectionCache.RealAchievementIDs
+		for i=1,#allIds do
+			id = allIds[i]
+			flags = select(9,GetAchievementInfo(id))
+			if FlagsUtil_IsSet(tonumber(flags) or 0, FLAG_AccountWide) then
+				achs[id] = true
+			end
+		end
+		return achs
+	end,
 }
 CollectionCache = setmetatable({}, { __index = function(t, key)
 	local func = CollectionCacheFunctions[key]
@@ -67,21 +88,20 @@ do
 		= GetStatistic
 
 	local cache = app.CreateCache(KEY);
-	local FLAG_AccountWide = ACHIEVEMENT_FLAGS_ACCOUNT
-	local FlagsUtil_IsSet,string_len,string_sub
-		= FlagsUtil.IsSet,string.len,string.sub
+	local string_len,string_sub
+		= string.len,string.sub
 	local Colorize = app.Modules.Color.Colorize
 	local function CacheInfo(t, field)
 		local _t, id = cache.GetCached(t);
 		--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t[KEY]);
-		local _, name, _, _, _, _, _, _, flags, icon = GetAchievementInfo(id);
+		local _, name, _, _, _, _, _, _, _, icon = GetAchievementInfo(id);
 		local silentLink = GetAchievementLink(id)
 		if not silentLink then
 			app.PrintDebug(Colorize("Achievement with no Link",app.Colors.ChatLinkError),id)
 			silentLink = name or "achievementID:"..id
 		end
 		_t.silentLink = silentLink
-		local accountWide = FlagsUtil_IsSet(tonumber(flags) or 0, FLAG_AccountWide)
+		local accountWide = CollectionCache.AccountWideAchievements[id]
 		_t.accountWide = accountWide
 		if accountWide then
 			local len = string_len(silentLink)
@@ -152,16 +172,6 @@ do
 			end
 		end
 	end
-	-- This was used to update information about achievement progress following Pet Battles
-	-- This unfortunately triggers all the time and rarely actually represents useful Achievement changes
-	-- TODO: Think of another way to represent Achievement changes post Pet Battles
-	-- local function OnUpdateWindows()
-	-- 	app.HandleEvent("OnUpdateWindows")
-	-- end
-	-- local function DelayedOnUpdateWindows()
-	-- 	AfterCombatOrDelayedCallback(OnUpdateWindows, 1)
-	-- end
-	-- app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", DelayedOnUpdateWindows);
 	app.CreateAchievement = app.CreateClass(CLASSNAME, KEY, {
 		CACHE = function() return CACHE end,
 		silentLink = function(t)
@@ -185,8 +195,8 @@ do
 		end,
 		saved = function(t)
 			local id = t[KEY];
-			-- character collected
-			if app.IsCached(CACHE, id) then return 1; end
+			-- character collected or direct account-wide
+			if app.IsCached(CACHE, id) or app.IsAccountCached(CACHE, id) == 1 then return 1; end
 		end,
 		parentCategoryID = function(t)
 			return GetAchievementCategory(t[KEY]) or -1;
@@ -228,23 +238,31 @@ do
 	app.AddEventHandler("OnRefreshCollections", function()
 		local me, completed
 		-- app.PrintDebug("OnRefreshCollections.Achievement")
-		local mine, acct, none = {}, {}, {}
-		for _,id in ipairs(CollectionCache.RealAchievementIDs) do
+		local mine, acct, shared, none = {}, {}, {}, {}
+		local allIds = CollectionCache.RealAchievementIDs
+		local id
+		for i=1,#allIds do
+			id = allIds[i]
 			completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
-			if me then
-				mine[id] = true
-			elseif completed then	-- any character has completed it, we can cache for account directly
-				acct[id] = true
+			if completed then
+				if CollectionCache.AccountWideAchievements[id] then
+					acct[id] = true
+				elseif me then
+					mine[id] = true
+				else
+					shared[id] = true
+				end
 			else
 				none[id] = true
 			end
 		end
 		-- Character Cache
 		app.SetBatchCached(CACHE, mine, 1)
+		app.SetBatchCached(CACHE, acct)	-- remove acct achieves from character cache
 		app.SetBatchCached(CACHE, none)
-		-- Account Cache (removals handled by Sync)
-		app.SetBatchAccountCached(CACHE, mine, 1)
+		-- Account Cache
 		app.SetBatchAccountCached(CACHE, acct, 1)
+		app.SetBatchAccountCached(CACHE, shared, 3)	-- Dual-Faction achievements, completed for Account, but not any specific character
 		-- app.PrintDebugPrior("OnRefreshCollections.Achievement")
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
@@ -252,11 +270,16 @@ do
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end);
 	app.AddEventRegistration("ACHIEVEMENT_EARNED", function(id)
-		local state = select(13, GetAchievementInfo(tonumber(id)))
-		if state then
-			app.SetCached(CACHE, id, 1)
-			app.SetAccountCached(CACHE, id, 1)
-			app.UpdateRawID(KEY, id);
+		id = tonumber(id)
+		local completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
+		if completed then
+			if CollectionCache.AccountWideAchievements[id] then
+				app.SetThingCollected(KEY, id, true, true)
+			elseif me then
+				app.SetThingCollected(KEY, id, false, true)
+			else
+				app.SetThingCollected(KEY, id, 3, true)
+			end
 		end
 	end);
 	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
@@ -416,7 +439,7 @@ do
 	end
 	local function default_name(t)
 		if t.link then return t.link; end
-		app.DirectGroupRefresh(t, true)
+		app.DirectGroupRedraw(t, true)
 		local name
 		local achievementID = t.achievementID
 		if achievementID then
@@ -456,7 +479,7 @@ do
 				-- criteria with spellID (TODO)
 
 				-- criteria fallback to base achievement name
-				name = "Criteria: "..(select(2, GetAchievementInfo(achievementID)) or "#"..criteriaID)
+				name = select(2, GetAchievementInfo(achievementID)) or "#"..criteriaID
 			end
 		end
 		app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID,name)
@@ -472,9 +495,12 @@ do
 	end
 	local criteriaFields = {
 		achievementID = function(t)
-			local achievementID = t.achID
+			local achievementID = t.achID or t.parent and t.parent.achievementID
 			t.achievementID = achievementID;
 			return achievementID;
+		end,
+		text = function(t)
+			return L.CRITERIA_FORMAT:format(t.name or RETRIEVING_DATA);
 		end,
 		name = function(t)
 			return cache.GetCachedField(t, "name", default_name) or t.__questname
@@ -510,5 +536,12 @@ do
 		end
 	end
 	app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteriaID", criteriaFields)
+	if app.IsRetail then
+		app.AddEventRegistration("CRITERIA_EARNED", function(achievementID,description,achievementAlreadyEarnedOnAccount)
+			-- simply pass an update of all data linked to this achievement since we don't know specific criteriaID
+			-- app.PrintDebug("Update achievementID",achievementID,"for criteria earned:",description)
+			app.UpdateRawID("achievementID", achievementID)
+		end);
+	end
 	app.AddSimpleCollectibleSwap("AchievementCriteria", "Achievements")
 end

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(64, {	-- Shadowfang Keep
 		-- #if BEFORE MOP
@@ -26,9 +27,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = lvlsquish(14, 14, 8),
 		["groups"] = {
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
+			pickpocketing({
 				["description"] = "The Rare Creatures only spawn if a Rogue enters the instance alone while on the quest The Horn of Xelthos.",
-				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210212, {	-- Brother's Half-Key
 						["description"] = "Found shortly after Baron Silverlaine.\nHead up the stairs behind the boss, and take a right, Gefell should be in a room up the stairs around the corner.",
@@ -373,8 +373,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27403, {	-- A True Sunwalker
 					["sourceQuest"] = 27304,	-- Follow the Sun [CATA] / Meet with Avaros Dawnglaive [Tauren] [SL+]
-					["qg"] = 44725,	-- Sunwalker Atohmo
-					["coord"] = { 45.2, 53.6, ORGRIMMAR },
+					["qgs"] = {
+						44725,	-- Sunwalker Atohmo
+						-- #if AFTER SL
+						168597,	-- Avaros Dawnglaive <Paladin Trainer>
+						-- #endif
+					},
+					["coords"] = {
+						{ 45.2, 53.6, ORGRIMMAR },
+						-- #if AFTER SL
+						{ 73.6, 46.8, ORGRIMMAR },
+						-- #endif
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
@@ -1066,11 +1076,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						43881,	-- Delano Morisett <Warlock Trainer>
 						4563,	-- Kaal Soulreaper <Warlock Trainer>
 						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+						-- #if AFTER MID
+						241482,	-- Zanien Silvermoon <Warlock Trainer>
+						-- #endif
 					},
 					["coords"] = {
 						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
 						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+						-- #if AFTER MID
+						{ 50.9, 61.0, MAP.MIDNIGHT.SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -1501,7 +1517,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1013, {	-- The Book of Ur
 					["qg"] = 2934,	-- Keeper Bel'dugur
-					["coord"] = { 54, 54.6, UNDERCITY },
+					["coord"] = { 54.0, 54.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
@@ -1860,7 +1876,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qgs"] = {
 						43881,	-- Delano Morisett <Warlock Trainer>
 						4563,	-- Kaal Soulreaper <Warlock Trainer>
-						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+						16648,	-- Zanien Silvermoon <Warlock Trainer>
 					},
 					["coords"] = {
 						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>

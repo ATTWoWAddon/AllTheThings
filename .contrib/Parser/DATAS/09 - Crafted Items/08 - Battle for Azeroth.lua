@@ -11,6 +11,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	i(162460, {["timeline"] = {ADDED_8_1_0}}),	-- Hydrocore
 	i(162461, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguicell
 	i(171320, {["timeline"] = {ADDED_8_3_0}}),	-- Void Focus
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		o_repeated({	-- Darkpine Lumber
+			["maps"] = {
+				DRUSTVAR,
+				MECHAGON,
+				NAZMIR,
+				STORMSONG_VALLEY,
+				TIRAGARDE_SOUND,
+				BORALUS,
+				VOLDUN,
+				ZULDAZAR,
+				DAZARALOR,
+			},
+			["groups"] = {
+				-- Objects
+				o(557988),	-- [Drustvar]
+				o(558338),	-- [Mechagon]
+				o(556076),	-- [Nazmir]
+				o(556704),	-- [Stormsong Valley]
+				o(556425),	-- [Tiragarde Sound/Boralus]
+				o(556387),	-- [Vol'dun]
+				o(555545),	-- [Zuldazar/Dazar'alor]
+				-- Drops
+				i(251768),	-- Darkpine Lumber
+			},
+		}),
+	})),
 	filter(MOUNTS, {
 		i(153594, {	-- Xiwyllag ATV (MOUNT!)
 			["cost"] = {
@@ -146,7 +173,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(154990),	-- Etched Drust Bone
 		i(87399),	-- Restored Artifact
 		i(154989),	-- Zandalari Idol
-		header(HEADERS.Currency, ARCH_CURRENCY_DRUST, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRUST,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DRUST, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRUST,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 278477 },	-- Drust Archaeology Find
 			["maps"] = {
 				DRUSTVAR,
@@ -171,7 +198,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 				i(160741),	-- Soul Coffer
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_ZANDALARI, sharedData({["cost"]={{"c",ARCH_CURRENCY_ZANDALARI,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_ZANDALARI, sharedData({["cost"]={{"c",ARCH_CURRENCY_ZANDALARI,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 278476 },	-- Zandalari Archaeology Find
 			["maps"] = {
 				NAZMIR,
@@ -473,7 +500,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(166343, {["timeline"] = {ADDED_8_1_0}}),	-- Wild Berry Bread
 	}),
 	prof(ENCHANTING, {
-		spell(13262, {	-- Disenchant
+		header(HEADERS.Spell, 302695, {	-- Disenchant
 			i(152875),	-- Gloom Dust
 			i(152876),	-- Umbra Shard
 			i(152877),	-- Veiled Crystal
@@ -696,13 +723,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		filter(BATTLE_PETS, {
 			i(165849, {["timeline"] = {ADDED_8_1_0}}),	-- Mechantula (PET!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(246604),	-- Deactivated Atomic Recalibrator (DECOR!)
+			i(246486),	-- Gnomish Tesla Mega-Coil (DECOR!)
+			i(246500),	-- Mechagon Miniature Artificial Sun (DECOR!)
+		})),
 		filter(MISC, {
 			i(153597),	-- Deployable Attire Rearranger
 			i(153573),	-- Electroshock Mount Motivator
 			i(153490),	-- F.R.I.E.D.
 			i(153510),	-- Interdimensional Companion Repository
 			i(158380),	-- Magical Intrusion Dampener
-			i(162107, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),-- Makeshift Azerite Detector
+			i(162107, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),	-- Makeshift Azerite Detector
 			i(165738, {["timeline"] = {ADDED_8_1_0}}),	-- Makeshift Azerite Detector
 			i(162111, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),	-- Monelite Fish Finder
 			i(165742, {["timeline"] = {ADDED_8_1_0}}),	-- Monelite Fish Finder
@@ -753,22 +785,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 	}),
 	prof(FISHING, {
-		i(174328, {["timeline"] = {ADDED_8_3_0}}),	-- Aberrant Voidfin
+		i(174328, { ["timeline"] = { ADDED_8_3_0 } }),	-- Aberrant Voidfin
 		i(152545),	-- Frenzied Fangtooth
 		i(152547),	-- Great Sea Catfish
 		i(163131, {	-- Great Sea Ray (MOUNT!)
 			["description"] = "Caught in any waters in Kul Tiras or Zandalar, including Mechagon (but not Nazjatar).",
 		}),
-		i(167562, {["timeline"] = {ADDED_8_2_0}}),	-- Ionized Minnow
+		i(167562, { ["timeline"] = { ADDED_8_2_0 } }),	-- Ionized Minnow
 		i(152546),	-- Lane Snapper
-		i(174327, {["timeline"] = {ADDED_8_3_0}}),	-- Malformed Gnasher
-		i(168646, {["timeline"] = {ADDED_8_2_0}}),	-- Mauve Stinger
+		i(174327, { ["timeline"] = { ADDED_8_3_0 } }),	-- Malformed Gnasher
+		i(168646, { ["timeline"] = { ADDED_8_2_0 } }),	-- Mauve Stinger
 		i(162515),	-- Midnight Salmon
+		i(162516, {	-- Rasboralus
+			["description"] = "Caught around Boralus's Proudmoore Keep.",
+		}),
 		i(152549),	-- Redtail Loach
 		i(152543),	-- Sand Shifter
 		i(152544),	-- Slimy Mackerel
 		i(152548),	-- Tiragarde Perch
-		i(168302, {["timeline"] = {ADDED_8_2_0}}),	-- Viper Fish
+		i(162517, {	-- U'taka
+			["description"] = "Caught in Dazar'alor.",
+		}),
+		i(168302, { ["timeline"] = { ADDED_8_2_0 } }),	-- Viper Fish
 		spell(273293, {	-- Aromatic Fish Oil
 			i(160711),	-- Aromatic Fish Oil
 		}),
@@ -820,6 +858,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(162029),	-- Mark of the Humble Flyer (CI!)
 			i(162027),	-- Mark of the Tideskipper (CI!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(252035),	-- Boralus Barrel (DECOR!)
+			i(252401),	-- Boralus Bookshelf (DECOR!)
+			i(245499),	-- Gilded Zandalari Table (DECOR!)
+			i(252389),	-- Proudmoore Shipping Crate (DECOR!)
+			i(245415),	-- Zuldazar Fence (DECOR!)
+			i(245416),	-- Zuldazar Fencepost (DECOR!)
+		})),
 		n(WEAPONS, {
 			i(161936),	-- Honorable Combatant's Etched Vessel [A]
 			i(159940),	-- Honorable Combatant's Etched Vessel [H]
@@ -954,6 +1000,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(153705),	-- Kyanite
 			i(154124),	-- Laribole
 			i(168190, { ["timeline"] = { ADDED_8_2_0 } }),	-- Lava Lazuli
+			i(168635, { ["timeline"] = { ADDED_8_2_0 } }),	-- Leviathan's Eye
 			i(154120),	-- Owlseye
 			i(154125),	-- Royal Quartz
 			i(153701),	-- Rubellite
@@ -964,6 +1011,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(154122),	-- Tidal Amethyst
 			i(153704),	-- Viridium
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245496),	-- Small Mask of Bwonsamdi, Loa of Graves (DECOR!)
+			i(245414),	-- Zandalari Skullfire Lamp (DECOR!)
+		})),
 		filter(FINGER_F, {
 			i(153686),	-- Amberblaze Loop
 			i(168703, {["timeline"] = {ADDED_8_2_0}}),	-- Ascended Leviathan's Eye Loop
@@ -1326,6 +1377,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 				i(170441, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Cragscale Greaves
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258558),	-- Sandfury Diplomat's Banner (DECOR!)
+			i(245412),	-- Zandalari Ritual Drum (DECOR!)
+		})),
 		filter(MISC, {
 			i(165749),	-- Amber Rallying Horn
 			i(154166),	-- Coarse Leather Barding
@@ -1379,14 +1434,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(161085),	-- Tattered Map
 	}),
 	prof(SKINNING, {
-		i(154164),	-- Blood-Stained Bone
-		i(154165),	-- Calcified Bone
-		i(152541),	-- Coarse Leather
-		i(168650, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale
-		i(168649, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather
-		i(153051),	-- Mistscale
-		i(153050),	-- Shimmerscale
-		i(154722),	-- Tempest Hide
+		header(HEADERS.Spell, 265855, {	-- Skinning
+			i(154164),	-- Blood-Stained Bone
+			i(154165),	-- Calcified Bone
+			i(152541),	-- Coarse Leather
+			i(168650, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale
+			i(168649, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather
+			i(153051),	-- Mistscale
+			i(153050),	-- Shimmerscale
+			i(154722),	-- Tempest Hide
+		}),
 	}),
 	prof(TAILORING, {
 		n(DISCOVERY, {
@@ -1555,6 +1612,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(154695),	-- Deep Sea Bag
 			i(154696),	-- Embroidered Deep Sea Bag
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(243101),	-- Red Dazar'alor Rug (DECOR!)
+			i(245418),	-- Zanchuli Tapestry (DECOR!)
+		})),
 		filter(REAGENTS, {
 			i(158378),	-- Embroidered Deep Sea Satin
 		}),

@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 		n(WORLD_QUESTS, sharedData({
 			["lvl"] = { 50 },
 			["isWorldQuest"] = true,
-		},{
+		}, {
 			petbattle(q(56396, {	-- Creakclank
 				["filterID"] = BATTLE_PETS,
 			})),

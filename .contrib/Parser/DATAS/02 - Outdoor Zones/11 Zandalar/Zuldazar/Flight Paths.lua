@@ -25,12 +25,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			fp(2153, {	-- Mistvine Ledge, Zuldazar [Alliance]
-				["description"] = "Requires completion of Mission Report: Mistvine Ledge and related quest line to unlock.",
+				["sourceQuest"] = 52963,	-- Mistvine Ledge
 				["coord"] = { 64.4, 47.2, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			fp(2148, {	-- Mugamba Overlook, Zuldazar (A)
-				["description"] = "Requires completion of Mission Report: Mugamba Overlook and related quest line to unlock.",
+				["sourceQuest"] = 52852,	-- Mugamba Overlook
 				["coord"] = { 44.8, 27.0, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -56,13 +56,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 59.4, 78.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
-			fp(2157, {	-- Veiled Grotto, Zuldazar [Alliance] (Confrimed by Vandiel)
-				["description"] = "Requires completion of Mission Report: Veiled Grotto and related quest line to unlock.",
+			fp(2157, {	-- Veiled Grotto, Zuldazar [Alliance]
+				["sourceQuest"] = 52802,	-- Veiled Grotto
 				["coord"] = { 44.4, 36.8, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			fp(2145, {	-- Verdant Hollow, Zuldazar [Alliance]
-				["description"] = "Requires completion of Mission Report: Verdant Hollow and related quest line to unlock.",
+				["sourceQuest"] = 52888,	-- Verdant Hollow
 				["coord"] = { 55.6, 24.8, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -87,8 +87,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			-- These FlightPaths are not collectible, but are faked on the map by Blizzard
-			fp(2066, {["collectible"] = false}),	-- Atal'Gral, Zuldazar
-			fp(2071, {["collectible"] = false}),	-- Dreadpearl, Zuldazar
+			fp(2066, { ["collectible"] = false }),	-- Atal'Gral, Zuldazar
+			fp(2071, { ["collectible"] = false }),	-- Dreadpearl, Zuldazar
 		}),
 	}),
 })));

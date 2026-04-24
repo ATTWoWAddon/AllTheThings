@@ -1,13 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		}, {
 			n(219281, {	-- Alunira
 				["coord"] = { 23.1, 58.5, ISLE_OF_DORN },
 				["questID"] = 85158,
-				["cost"] = {{"i", 224026, 1}},	-- 1x Storm Vessel
+				["cost"] = { { "i", 224026, 1 } },	-- 1x Storm Vessel
 				["groups"] = {
 					i(223270),	-- Alunira (MOUNT!)
 				},

@@ -3,7 +3,7 @@
 --- Dependencies: Runner, Callback
 ---
 
-local appName, app = ...
+local _, app = ...
 
 local pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
 	= pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
@@ -135,7 +135,7 @@ local function CacheFilterFunctions()
 		end
 	end
 end
-app.AddEventHandler("OnInit", function()
+app.AddEventHandler("OnStartup", function()
 	CacheFilterFunctions()
 	app.AddEventHandler("OnSettingsRefreshed", CacheFilterFunctions)
 end)
@@ -277,8 +277,6 @@ UpdateGroups = function(parent, g)
 				if not group:OnUpdate(parent, UpdateGroup) then
 					UpdateGroup(group, parent)
 				elseif group.visible then
-					group.total = nil
-					group.progress = nil
 					UpdateGroups(group, group.g)
 				end
 			else
@@ -288,6 +286,130 @@ UpdateGroups = function(parent, g)
 	end
 end
 app.UpdateGroups = UpdateGroups
+
+--[[
+-- CRIEVE NOTE: This was Classic's UpdateGroups.
+-- Keeping this here to do a deep dive later
+local UpdateGroups;
+local function UpdateGroup(group, parent)
+	local visible = false;
+
+	-- Determine if this user can enter the instance or acquire the item.
+	if app.GroupFilter(group) then
+		-- Check if this is a group
+		if group.g then
+			-- If this item is collectible, then mark it as such.
+			if group.collectible then
+				-- An item is a special case where it may have both an appearance and a set of items
+				group.progress = group.collected and 1 or 0;
+				group.total = 1;
+			else
+				-- Default to 0 for both
+				group.progress = 0;
+				group.total = 0;
+			end
+
+			-- Update the subgroups recursively...
+			visible = UpdateGroups(group, group.g);
+
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if not group.sourceIgnored then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + group.total;
+					parent.progress = (parent.progress or 0) + group.progress;
+				end
+
+				-- If this group is trackable, then we should show it.
+				if group.total > 0 and app.GroupVisibilityFilter(group) then
+					visible = true;
+				elseif app.ShowTrackableThings(group) and not group.saved then
+					visible = true;
+				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
+					visible = true;
+				end
+			else
+				visible = false;
+			end
+		else
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if group.collectible then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + 1;
+
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					if group.collected then
+						parent.progress = (parent.progress or 0) + 1;
+						if app.CollectedItemVisibilityFilter(group) then
+							visible = true;
+						end
+					else
+						visible = true;
+					end
+				elseif app.ShowTrackableThings(group) and not group.saved then
+					-- If this group is trackable, then we should show it.
+					visible = true;
+				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
+					visible = true;
+				elseif app.MODE_DEBUG then
+					visible = true;
+				end
+			elseif app.MODE_DEBUG then
+				visible = true;
+			else
+				visible = false;
+			end
+		end
+	end
+
+	-- Set the visibility
+	group.visible = visible;
+	return visible;
+end
+UpdateGroups = function(parent, g)
+	if g then
+		local visible = false;
+		for i=1,#g,1 do
+			local group = g[i];
+			if group.OnUpdate then
+				if not group:OnUpdate(parent, UpdateGroup) then
+					if UpdateGroup(group, parent) then
+						visible = true;
+					end
+				elseif group.visible then
+					visible = true;
+				end
+			elseif UpdateGroup(group, parent) then
+				visible = true;
+			end
+		end
+		return visible;
+	end
+end
+app.UpdateGroups = UpdateGroups;
+local GetTimePreciseSec = GetTimePreciseSec;
+local TopLevelUpdateGroup = function(group, forceShow)
+	-- TODO: Switch to using the DataHandling function "TopLevelUpdateGroup"
+	group.TLUG = GetTimePreciseSec()
+	group.progress = 0;
+	group.total = 0;
+	group.costTotal = nil
+	group.upgradeTotal = nil
+	-- app.PrintDebug("TLUG",group.hash)
+	-- Root data in Windows should ALWAYS be visible
+	-- Data can also be force-shown externally (i.e. when as a search result)
+	if group.window or forceShow then
+		-- app.PrintDebug("Root Group",group.text)
+		group.forceShow = true
+	end
+	if not (group.OnUpdate and group:OnUpdate()) then
+		UpdateGroups(group, group.g);
+	end
+end
+app.TopLevelUpdateGroup = TopLevelUpdateGroup;
+]]--
+
 -- Adjusts the progress/total of the group's parent chain, and refreshes visibility based on the new values
 local function AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange)
 	-- rawget, .parent will default to sourceParent in some cases
@@ -323,24 +445,25 @@ local function AdjustParentVisibility(group)
 end
 
 -- For directly applying the full Update operation for the top-level data group within a window
-local function TopLevelUpdateGroup(group)
+local function TopLevelUpdateGroup(group, forceShow)
 	group.TLUG = GetTimePreciseSec()
-	group.total = nil
-	group.progress = nil
+	group.progress = 0;
+	group.total = 0;
 	group.costTotal = nil
 	group.upgradeTotal = nil
 	-- app.PrintDebug("TLUG",group.hash)
 	-- Root data in Windows should ALWAYS be visible
-	if group.window then
+	-- Data can also be force-shown externally (i.e. when as a search result)
+	if group.window or forceShow then
 		-- app.PrintDebug("Root Group",group.text)
 		group.forceShow = true
 	end
+	-- OnUpdate returns "whether it handled the update for itself"
+	-- Recursion to .g should always persist if the group is visible
 	if group.OnUpdate then
 		if not group:OnUpdate(nil, UpdateGroup) then
 			UpdateGroup(group)
 		elseif group.visible then
-			group.total = nil
-			group.progress = nil
 			UpdateGroups(group, group.g)
 		end
 	else
@@ -448,6 +571,31 @@ local function DirectGroupRefresh(group, immediate)
 	end
 end
 app.DirectGroupRefresh = DirectGroupRefresh
+-- Trigger a Redraw of the window containing the specific group
+local function DirectGroupRedraw(group, immediate)
+	local window = app.GetRelativeRawWithField(group, "window")
+	if window then
+		if immediate then
+			-- app.PrintDebug("DGR:Redraw:Now",group.hash,window.Suffix)
+			Callback(window.Redraw, window)
+		else
+			-- app.PrintDebug("DGR:Redraw:Delay",group.hash,window.Suffix)
+			DelayedCallback(window.Redraw, DGUDelay, window)
+		end
+	else
+		-- app.PrintDebug("DGR:Redraw",group.hash,">",DGUDelay,"No window!")
+		-- app.PrintTable(group)
+		-- this scenario happens when the meta-group of a DLO used in /att list triggers a DGR on itself
+		-- due to it being completely detached from the actual 'list' window
+		-- perhaps this is niche enough of an occurrence that we can just try to refresh the 'list' window
+		-- in this situation
+		local window = app.Windows.list
+		if window then
+			DelayedCallback(window.Redraw, DGUDelay, window)
+		end
+	end
+end
+app.DirectGroupRedraw = DirectGroupRedraw
 local LIMIT_UPDATE_SEARCH_RESULTS = 10
 -- Dynamically increments the progress for the parent heirarchy of each collectible search result
 local function UpdateSearchResults(searchResults)
@@ -493,10 +641,8 @@ local function UpdateSearchResults(searchResults)
 
 	-- apply direct updates to all found groups
 	-- app.PrintDebug("Updating",#found,"groups")
-	local o
 	for i=1,#found do
-		o = found[i]
-		DirectGroupUpdate(o, true)
+		DirectGroupUpdate(found[i], true)
 	end
 	-- TODO: use event
 	app.WipeSearchCache()
@@ -740,8 +886,11 @@ local function MergeProperties(g, t, noReplace, clone)
 		end
 	end
 	-- only copy metatable to g if another hasn't been set already
-	if not getmetatable(g) and getmetatable(t) then
-		setmetatable(g, getmetatable(t))
+	if not getmetatable(g) then
+		local tmeta = getmetatable(t)
+		if tmeta then
+			setmetatable(g, tmeta)
+		end
 	end
 end
 app.MergeProperties = MergeProperties
@@ -780,119 +929,7 @@ local function CreateObject(t, rootOnly)
 		return result;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
 	else
-		-- a table which somehow has a metatable which doesn't include a 'key' field
-		local meta = getmetatable(t);
-		if meta then
-			app.PrintDebug(Colorize("Bad CreateObject (metatable without key) used:",app.Colors.ChatLinkError))
-			app.PrintTable(t)
-			local result = {};
-			-- app.PrintDebug("CO.meta","=>",result);
-			MergeProperties(result, t, nil, true);
-			if not rootOnly and t.g then
-				local newg = {}
-				result.g = newg
-				local g = t.g
-				for i=1,#g do
-					newg[#newg+1] = CreateObject(g[i])
-				end
-			end
-			setmetatable(result, meta);
-			return result;
-		end
-		if t.mapID then
-			t = app.CreateMap(t.mapID, t);
-		elseif t.explorationID then
-			t = app.CreateExploration(t.explorationID, t);
-		elseif t.sourceID then
-			t = app.CreateItemSource(t.sourceID, t.itemID, t);
-		elseif t.encounterID then
-			t = app.CreateEncounter(t.encounterID, t);
-		elseif t.instanceID then
-			t = app.CreateInstance(t.instanceID, t);
-		elseif t.currencyID then
-			t = app.CreateCurrencyClass(t.currencyID, t);
-		elseif t.mountmodID then
-			t = app.CreateMountMod(t.mountmodID, t);
-		elseif t.speciesID then
-			t = app.CreateSpecies(t.speciesID, t);
-		elseif t.objectID then
-			t = app.CreateObject(t.objectID, t);
-		elseif t.flightpathID then
-			t = app.CreateFlightPath(t.flightpathID, t);
-		elseif t.followerID then
-			t = app.CreateFollower(t.followerID, t);
-		elseif t.illusionID then
-			t = app.CreateIllusion(t.illusionID, t);
-		elseif t.professionID then
-			t = app.CreateProfession(t.professionID, t);
-		elseif t.categoryID then
-			t = app.CreateCategory(t.categoryID, t);
-		elseif t.criteriaID then
-			t = app.CreateAchievementCriteria(t.criteriaID, t);
-		elseif t.achID or t.achievementID then
-			t = app.CreateAchievement(t.achID or t.achievementID, t);
-		elseif t.recipeID then
-			t = app.CreateRecipe(t.recipeID, t);
-		elseif t.factionID then
-			t = app.CreateFaction(t.factionID, t);
-		elseif t.heirloomID then
-			t = app.CreateHeirloom(t.heirloomID, t);
-		elseif t.azeriteessenceID then
-			t = app.CreateAzeriteEssence(t.azeriteessenceID, t);
-		elseif t.itemID or t.modItemID then
-			local itemID, modID, bonusID = app.GetItemIDAndModID(t.modItemID or t.itemID)
-			t.itemID = itemID
-			t.modID = modID
-			t.bonusID = bonusID
-			if t.toyID then
-				t = app.CreateToy(itemID, t);
-			elseif t.runeforgepowerID then
-				t = app.CreateRuneforgeLegendary(t.runeforgepowerID, t);
-			elseif t.conduitID then
-				t = app.CreateConduit(t.conduitID, t);
-			else
-				t = app.CreateItem(itemID, t);
-			end
-		elseif t.npcID then
-			t = app.CreateNPC(t.npcID, t);
-		elseif t.questID then
-			t = app.CreateQuest(t.questID, t);
-		-- Non-Thing groups
-		elseif t.unit then
-			t = app.CreateUnit(t.unit, t);
-		elseif t.classID then
-			t = app.CreateCharacterClass(t.classID, t);
-		elseif t.raceID then
-			t = app.CreateRace(t.raceID, t);
-		elseif t.headerID then
-			t = app.CreateCustomHeader(t.headerID, t);
-		elseif t.expansionID then
-			t = app.CreateExpansion(t.expansionID, t);
-		elseif t.difficultyID then
-			t = app.CreateDifficulty(t.difficultyID, t);
-		elseif t.spellID then
-			t = app.CreateSpell(t.spellID, t);
-		elseif t.f or t.filterID then
-			t = app.CreateFilter(t.f or t.filterID, t);
-		elseif t.text then
-			t = app.CreateRawText(t.text, t)
-		else
-			-- app.PrintDebug("CO:raw");
-			-- app.PrintTable(t);
-			if rootOnly then
-				-- shallow copy the root table only, since using t as a metatable will allow .g to exist still on the table
-				-- app.PrintDebug("rootOnly copy of",t.text)
-				local result = {};
-				for k,v in pairs(t) do
-					result[k] = v;
-				end
-				t = result;
-			else
-				-- app.PrintDebug("metatable copy of",t.text)
-				t = setmetatable({}, { __index = t });
-			end
-		end
-		-- app.PrintDebug("CO.field","=>",t);
+		t = app.CreateClassInstance(nil, nil, t)
 	end
 
 	-- allows for copying an object without all of the sub-groups
@@ -966,7 +1003,7 @@ local function MergeObjects(g, g2, newCreate)
 		local o
 		for i=1,#g do
 			o = g[i]
-			local hash = o.hash;
+			local hash = o.hash or GetHash(o);
 			if hash then
 				-- are we merging the same object multiple times from one group?
 				hashObj = hashTable[hash]
@@ -981,7 +1018,7 @@ local function MergeObjects(g, g2, newCreate)
 		if newCreate then
 			for i=1,#g2 do
 				o = g2[i]
-				hash = o.hash;
+				hash = o.hash or GetHash(o);
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];
@@ -1000,7 +1037,7 @@ local function MergeObjects(g, g2, newCreate)
 		else
 			for i=1,#g2 do
 				o = g2[i]
-				hash = o.hash;
+				hash = o.hash or GetHash(o);
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];

@@ -1,13 +1,20 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	m(AMIRDRASSIL, {
 		n(QUESTS, {
 			q(78643, {	-- Fair Skies and Strong Winds
 				["sourceQuests"] = { 76283 },	-- Andu-falah-dor
-				["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
-				["coord"] = { 58.0, 35.7, VALDRAKKEN },
+				["qgs"] = {
+					187678,	-- Alexstrasza the Life-Binder
+					216309,	-- Alexstrasza
+				},
+				["coords"] = {
+					{ 58.0, 35.7, VALDRAKKEN },
+					{ 50.9, 61.7, AMIRDRASSIL },
+				},
 				["groups"] = {
 					ach(20206, {	-- Champion of the Dragonflights
 						title(547),	-- <Name>, Champion of the Dragonflights
@@ -21,14 +28,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			q(78865, {	-- Siblings Until the End
 				["sourceQuests"] = { 78643 },	-- Fair Skies and Strong Winds
-				["provider"] = { "n", 214051 },	-- Vyranoth
-				["coord"] = { 57.1, 37.6, VALDRAKKEN },
+				["qgs"] = {
+					214051,	-- Vyranoth
+					187678,	-- Alexstrasza the Life-Binder
+				},
+				["coords"] = {
+					{ 57.1, 37.6, VALDRAKKEN },
+					{ 58.4, 36.2, VALDRAKKEN },
+				},
+			}),
+			q(92875, {	-- Understanding the War Within
+				["sourceQuests"] = { 78865 },	-- Siblings Until the End
+				["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
+				["coord"] = { 58.0, 35.7, VALDRAKKEN },
+				["timeline"] = { ADDED_11_2_7 },
 			}),
 			q(78864, {	-- The Returning
 				["sourceQuests"] = { 78863 },	-- A Place Beneath the Boughs
 				["provider"] = { "n", 216067 },	-- Shandris Feathermoon
-				["coord"] = { 51, 60.6, AMIRDRASSIL },
+				["coord"] = { 51.0, 60.6, AMIRDRASSIL },
 				["groups"] = {
+					i(251022, {	-- Bel'ameth Traveler's Pack (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(213004),	-- Violet Kaldorei Backpack (COSMETIC!)
 					i(212981),	-- Violet Kaldorei Bedroll (COSMETIC!)
 				},
@@ -48,7 +70,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			q(80071, {	-- Fact Finding
 				["sourceQuests"] = { 80069 },	-- Tears of Teldrassil
 				["provider"] = { "n", 218697 },	-- Kelestra
-				["coord"] = { 73, 79.4, AMIRDRASSIL },
+				["coord"] = { 73.0, 79.4, AMIRDRASSIL },
 				["timeline"] = { ADDED_10_2_7 },
 			}),
 			q(80072, {	-- A Primalist Point of View

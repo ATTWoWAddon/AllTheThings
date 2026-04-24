@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29269, {	-- At One
 						["sourceQuest"] = 29240,	-- Emergency Extraction
 						["qg"] = 53149,	-- Kalecgos
-						["coord"] = { 31, 24, BOREAN_TUNDRA },
+						["coord"] = { 31.0, 24.0, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- Bonded with Tarecgosa's Essence
 								["provider"] = { "n", 52835 },	-- Tarecgosa
@@ -238,7 +238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29270, {	-- Time Grows Short
 						["sourceQuest"] = 29269,	-- At One
 						["qg"] = 53210,	-- Kalecgos
-						["coord"] = { 31, 24, BOREAN_TUNDRA },
+						["coord"] = { 31.0, 24.0, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- 0/1000 Seething Cinder
 								["provider"] = { "i", 69815 },	-- Seething Cinder
@@ -248,7 +248,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29285, {	-- Alignment
 						["sourceQuest"] = 29270,	-- Time Grows Short
 						["qg"] = 53215,	-- Kalecgos
-						["coord"] = { 23, 30.8, BOREAN_TUNDRA },
+						["coord"] = { 23.0, 30.8, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- Witnessed Kalecgos's Ascension
 								["provider"] = { "n", 53227 },	-- Kalecgos
@@ -295,7 +295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["qg"] = 53466,	-- Hallegosa
 						["allianceQuestData"] = q(29312, {	-- The Stuff of Legends [A]
 							["sourceQuest"] = 29307,	-- Heart of Flame [A]
-							["coord"] = { 54.6, 56, STORMWIND_CITY },
+							["coord"] = { 54.6, 56.0, STORMWIND_CITY },
 						}),
 						["hordeQuestData"] = q(29309, {	-- The Stuff of Legends [H]
 							["sourceQuest"] = 29308,	-- Heart of Flame [H]
@@ -470,11 +470,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							["providers"] = {
 								{ "n", 53971 },	-- Charged Chitinous Focus
 							},
-							["cost"] = {{"i",70998,1}},	-- Dull Chitinous Focus
+							["cost"] = { { "i", 70998, 1 } },	-- Dull Chitinous Focus
 						}),
 						i(70998, {	-- Dull Chitinous Focus
 							["description"] = "Use on top of the web just before she uses Smoldering Devastation at 0 Energy. Loot the Charged Chitinous Focus afterwards.",
-							["cost"] = {{ "i", 70999, 3 }},	-- Obsidian-Flecked Chitin Fragment
+							["cost"] = { { "i", 70999, 3 } },	-- Obsidian-Flecked Chitin Fragment
 						}),
 						i(70999, {	-- Obsidian-Flecked Chitin Fragment
 							["description"] = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus.",
@@ -504,11 +504,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							["providers"] = {
 								{ "n", 53955 },	-- Charged Rhyolite Focus
 							},
-							["cost"] = {{"i",70996,1}},	-- Dull Rhyolite Focus
+							["cost"] = { { "i", 70996, 1 } },	-- Dull Rhyolite Focus
 						}),
 						i(70996, {	-- Dull Rhyolite Focus
 							["description"] = "Use just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
-							["cost"] = {{ "i", 70997, 3 }},	-- Rhyolite Fragment
+							["cost"] = { { "i", 70997, 3 } },	-- Rhyolite Fragment
 						}),
 						i(70997, {	-- Rhyolite Fragment
 							["description"] = "Rhyolite Fragments which randomly spawn around the edge of the area after killing mobs spawned during the encounter. Gather three of them and create a Dull Rhyolite Focus.",
@@ -530,11 +530,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							["providers"] = {
 								{ "n", 53967 },	-- Charged Pyreshell Focus
 							},
-							["cost"] = {{"i",70995,1}},	-- Dull Pyreshell Focus
+							["cost"] = { { "i", 70995, 1 } },	-- Dull Pyreshell Focus
 						}),
 						i(70995, {	-- Dull Pyreshell Focus
 							["description"] = "Use when she is on the ground and close to full resources during Burnout. Loot the Charged Pyreshell Focus afterwards.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
-							["cost"] = {{ "i", 70994, 3 }},	-- Pyreshell Fragment
+							["cost"] = { { "i", 70994, 3 } },	-- Pyreshell Fragment
 						}),
 						i(70994, {	-- Pyreshell Fragment
 							["description"] = "A Pyreshell Fragment spawns whenever a Molten Egg hatches during the encounter. Gather three and create a Dull Pyreshell Focus.",
@@ -560,11 +560,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							["providers"] = {
 								{ "n", 53969 },	-- Charged Emberstone Focus
 							},
-							["cost"] = {{"i",71001,1}},	-- Dull Emberstone Focus
+							["cost"] = { { "i", 71001, 1 } },	-- Dull Emberstone Focus
 						}),
 						i(71001, {	-- Dull Emberstone Focus
 							["description"] = "Use just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
-							["cost"] = {{ "i", 71000, 3 }},	-- Emberstone Fragment
+							["cost"] = { { "i", 71000, 3 } },	-- Emberstone Fragment
 						}),
 						i(71000, {	-- Emberstone Fragment
 							["description"] = "An Emberstone Fragment spawns whenever a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus.",

@@ -3,14 +3,15 @@ FIRST_CRAFTS_HEADER = createHeader({
 	icon = 4622272,
 	text = {
 		en = "First Crafts",
+		-- de = "First Crafts",	-- TODO: pluralize
 		es = "Primeras fabricaciones",
-		-- de = "First Crafts",	--TODO: pluralize
-		-- fr = "First Crafts",	--TODO: pluralize
-		-- it = "First Crafts",	--TODO: pluralize
 		mx = "Primeras fabricaciones",
-		-- pt = "First Crafts",	--TODO: pluralize
+		-- fr = "First Crafts",	-- TODO: pluralize
+		-- it = "First Crafts",	-- TODO: pluralize
+		-- ko = "First Crafts",	-- TODO: pluralize
+		-- pt = "First Crafts",	-- TODO: pluralize
 		ru = "Первые Изделия",
-		-- ko = "First Crafts",	--TODO: pluralize
 		cn = "首次制造",
+		-- TODO: tw = "",
 	},
 });

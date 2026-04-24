@@ -3,7 +3,7 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, {
-	header(HEADERS.Spell, 231215, {	-- Sun Darter Hatchling
+	header(HEADERS.Spell, 231215, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Sun Darter Hatchling
 		["displayID"] = 74529,
 		["description"] = "***This secret requires you to have debug mode enabled to see the consumables/steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.*** \n\nIt also requires the battle pet Perky Pug from the Dungeons and Raids achievement Looking For Multitudes.\n\nEnjoy!\n\n!Note If coords are not plotting, you might need to make a standalone item, plot it, and then plot again from the main list.",
 		["groups"] = {
@@ -195,14 +195,13 @@ root(ROOTS.Secrets, {
 				["description"] = "|cFFFFFFFFSTEP 13a:|r Backtrack down the ramp to the now opened gate. DO NOT JUMP OFF. Enter the room and on a pillar on the right will be a Tarnished Plaque. Click on it.\n\nThe Tarnished Plaque reads:\n\n\"The greatest of achievments begins\nwith the smallest leap of the mind.\"\n\n|cFFFFFFFFSTEP 13b:|r After reading the Tarnished Plaque, click off at least one buff and use the Scroll of Intellect.",
 			}),
 			o(272487, {	-- Step 14: Oddly-Colored Egg
+				["coord"] = { 50.9, 2.3, WINTERSPRING },
 				["modelScale"] = 2,
 				["questID"] = 48022,
 				["isWeekly"] = true,
 				["description"] = "|cFFFFFFFFSTEP 14:|r DO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water. Walk across the water and loot the egg.\n\nCongrats on your new pet!!! \n\n!Don't forget to turn off debug mode now that you are done.",
-				["groups"] = {
-					i(142223),	-- Sun Darter Hatchling (PET!)
-				},
+				["groups"] = { i(142223) },	-- Sun Darter Hatchling (PET!)
 			}),
 		},
-	}),
+	})),
 });

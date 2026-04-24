@@ -1,17 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(ZONE_DROPS, {
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					-- both of these only have pickpocket comments on Wowhead
-					i(180870),	-- Shadow's Bite
-					i(180868),	-- Fear's Heartpiercer
-				},
-			}),
 			i(179311),	-- Oxxein Lockbox
 			i(187822, {	-- A Defector's Request
 				["timeline"] = { ADDED_9_1_5 },
@@ -151,7 +144,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 58725 },	-- Sinkeeper
 				["isDaily"] = true,
 				["crs"] = { 160716 },	-- Sinstone Rampager
-				--	no questID appears to be attached to this, you can just judge souls as often as you loot bells. this gives no rep (with court of harvesters or the avowed) and i'm not sure if there's anything interesting from the satchel either. it gave me a buff item + some greys the first time, the second one gave me a Crumbling Sinstone that gave 8 Sinstone Fragments
+				-- no questID appears to be attached to this, you can just judge souls as often as you loot bells. this gives no rep (with court of harvesters or the avowed) and i'm not sure if there's anything interesting from the satchel either. it gave me a buff item + some greys the first time, the second one gave me a Crumbling Sinstone that gave 8 Sinstone Fragments
 				["groups"] = {
 					i(174652, {	-- Satchel of Forgotten Heirlooms
 						["description"] = "Awarded regardless of your judgment.",	-- as of December 14th 2021 she gives the satchel regardless of player's decision.
@@ -249,7 +242,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(182705, {	-- Vial of Blue Muck Dye
-			--	may also come from the |cFFFFFFFFDiscarded Vial object that can be found around the muck lakes - only the other itemID version shows up for that now, though|r
+				-- may also come from the |cFFFFFFFFDiscarded Vial object that can be found around the muck lakes - only the other itemID version shows up for that now, though|r
 				["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Dredgewood area (|cFFFFFFFF72.9, 73.5|r).",
 			--[[ commenting until we know whether it's based on the mobs being in the specific area, or the mobs themselves, most of which are in multiple areas
 				["crs"] = {

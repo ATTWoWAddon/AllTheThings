@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(767, {	-- Neltharion's Lair
 		["mapID"] = 731,
@@ -77,6 +78,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				q(41865, {	-- Neltharion's Lair: Mother of Stone
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
+				}),
+				q(41211, {	-- Neltharion's Lair: Neltharion's Treasure
+					["isWorldQuest"] = true,
+				}),
+				q(41857, {	-- Neltharion's Lair: Stonedark Slaves
+					["isWorldQuest"] = true,
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {

@@ -3,7 +3,7 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, {
-	header(HEADERS.Item, 156798, {	-- The Hivemind
+	header(HEADERS.Item, 156798, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- The Hivemind
 		["description"] = "Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",
 		["modelScale"] = 1.1,
 		["displayID"] = 88835,
@@ -42,9 +42,28 @@ root(ROOTS.Secrets, {
 							o(280837, {	-- Letter 3: Karazhan (Old)
 								["model"] = 1661948,
 								["questID"] = 40404,
-								["coord"] = { 47.4, 75.0, DUSKWOOD },	-- Karazhan
+								["coord"] = { 47.4, 75.0, DEADWIND_PASS },	-- Karazhan
+								["maps"] = {
+									KARAZHAN,	-- Servant's Quarters
+									351,	-- Upper Livery Stables
+									352,	-- The Banquet Hall
+									353,	-- The Guest Chambers
+									354,	-- Opera Hall Balcony
+									355,	-- Master's Terrace
+									356,	-- Lower Broken Stair
+									357,	-- Upper Broken Stair
+									358,	-- The Menagerie
+									359,	-- Guardian's Library
+									360,	-- The Repository
+									361,	-- Upper Library
+									362,	-- The Celestial Watch
+									363,	-- Gamesman's Hall
+									364,	-- Medivh's Chambers
+									365,	-- The Power Station
+									366,	-- Netherspace
+								},
 								["sourceQuest"] = 40314,	-- Leter 2: Prepfoot Compound, Highmountain
-								["description"] = "|cFFFFFFFFLetter 3:|r Go to |cFFFFD700Karazhan (Old)|r in |cFFFFD700Duskwood|r. The third letter is located in |cFFFFD700Medivh's Chambers|r, located after the Chess Event, in the staircase leading to Prince Malchezaar. The letter is on the chair Medivh used to write his scrolls and spells, literally the seat of the guardian. Click it. The letter reads...\n\n|cFFFFFFFFI sat Dumbfounded, watching As the most Subtle Rat reached for the cheese a third time in under an hour.|r\n"
+								["description"] = "|cFFFFFFFFLetter 3:|r Go to |cFFFFD700Karazhan (Old)|r in |cFFFFD700Deadwind Pass|r. The third letter is located in |cFFFFD700Medivh's Chambers|r, located after the Chess Event, in the staircase leading to Prince Malchezaar. The letter is on the chair Medivh used to write his scrolls and spells, literally the seat of the guardian. Click it. The letter reads...\n\n|cFFFFFFFFI sat Dumbfounded, watching As the most Subtle Rat reached for the cheese a third time in under an hour.|r\n"
 							}),
 							o(280838, {	-- Letter 4: Razorfen Downs
 								["model"] = 1661948,
@@ -294,5 +313,5 @@ root(ROOTS.Secrets, {
 				},
 			}),
 		},
-	}),
+	})),
 });

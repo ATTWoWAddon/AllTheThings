@@ -383,7 +383,7 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			-- #if NOT ANYCLASSIC
 			i(88148),	-- Jade Crane Chick (PET!) [Jade Crane Chick, item was never used]
 			-- #endif
-			--i(82800),	-- Pet Cage (PET!)
+			-- i(82800),	-- Pet Cage (PET!)
 		})),
 
 		-- 5.1.0
@@ -1163,6 +1163,12 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(3188, {	-- Trub'ul (PET!)
 				["displayID"] = 103091,
 			}),
+			-- #if AFTER 11.2.5
+			-- Without SpeciesID Attached
+			i(188837, {	-- Blinky Egg (PET!)
+				["displayID"] = 101380,
+			}),
+			-- #endif
 		})),
 
 		-- 9.2.0
@@ -1235,9 +1241,11 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(193620, {	-- Time-Lost Slyvern (PET!)
 				["displayID"] = 106661,
 			}),
+			-- #if BEFORE 12.0.1
 			i(193068, {	-- Time-Lost Treeflitter (PET!)
 				["displayID"] = 106606,
 			}),
+			-- #endif
 			-- Without SpeciesID Attached
 			i(191126, {	-- Obsidian Whelpling (PET!)
 				["displayID"] = 107454,
@@ -1439,18 +1447,17 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(4505, {	-- Sporbit [Orange] (PET!)
 				["displayID"] = 115406,
 			}),
-			pet(4507, {	-- Sporbit [Purple] (PET!)
-				["displayID"] = 115405,
-			}),
 			pet(4504, {	-- Sporbit [Red] (PET!)
 				["displayID"] = 115408,
 			}),
 			pet(4503, {	-- Sporbit [Teal] (PET!)
 				["displayID"] = 115409,
 			}),
+			-- #if BEFORE 12.0.0
 			pet(4508, {	-- Sporbit [Yellow] (PET!)
 				["displayID"] = 115404,
 			}),
+			-- #endif
 			pet(4584, {	-- Tan Stagshell (PET!)
 				["displayID"] = 119769,
 			}),
@@ -1470,18 +1477,14 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(221195, {	-- Illskitter (PET!)
 				["displayID"] = 116507,
 			}),
-			i(221492, {	-- Moss Skipper (PET!)
-				["displayID"] = 114832,
-			}),
 			i(221759, {	-- Sceaduthax (PET!)
 				["displayID"] = 114510,
 			}),
+			-- #if BEFORE 12.0.1
 			i(221495, {	-- Waddles (PET!)
 				["displayID"] = 114829,
 			}),
-			i(222967, {	-- Webbers (PET!)
-				["displayID"] = 114051,
-			}),
+			-- #endif
 			-- Without SpeciesID Attached
 			i(221493, {	-- Admiral (PET!)
 				["displayID"] = 114830,
@@ -1562,44 +1565,106 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(4746),	-- Sooty Croach (PET!)
 			pet(4738),	-- Status Symbol (PET!)
 			pet(4743),	-- Swabbie (PET!)
-			--
-			i(231628, {	-- Bawkinator 2000 (PET!)
+			-- Only SpeciesID
+			pet(4676, {	-- Bawkinator 2000 (PET!)
 				["displayID"] = 75333,
 			}),
-			i(231627, {	-- Black Cave Crab (PET!)
+			pet(4677, {	-- Black Cave Crab (PET!)
 				["displayID"] = 120695,
 			}),
-			-- #if BEFORE 11.2.0
-			i(231757, {	-- Cauldrone (PET!) TODO: [wrong ItemID]
+			pet(4671, {	-- Cauldrone (PET!)
 				["displayID"] = 47711,
 			}),
-			-- #endif
-			i(231760, {	-- Crunchy (PET!)
+			pet(4673, {	-- Crunchy (PET!)
 				["displayID"] = 54848,
 			}),
-			i(231762, {	-- Dosh (PET!)
+			pet(4674, {	-- Dosh (PET!)
 				["displayID"] = 123032,
 			}),
-			i(231758, {	-- Finnity (PET!)
+			pet(4672, {	-- Finnity (PET!)
 				["displayID"] = 74800,
 			}),
-			i(231763, {	-- FO-MO Mark II (PET!)
+			pet(4675, {	-- FO-MO Mark II (PET!)
 				["displayID"] = 111667,
 			}),
+			pet(4670, {	-- Hermes
+				["displayID"] = 120709,
+			}),
+			pet(4665, {	-- Yellow Tropical Frog (PET!)
+				["displayID"] = 122963,
+			}),
+			-- With SpeciesID Attached
 			i(235909, {	-- Gleam (PET!)
 				["displayID"] = 89251,
 			}),
 			i(232854, {	-- Grinner (PET!)
 				["displayID"] = 121850,
 			}),
-			-- i(231756, {	-- Hermes TODO: [wrong ItemID]
-			-- 	["displayID"] = 120709,
-			-- }),
-			i(232856, {	-- Scruff (PET!)
-				["displayID"] = 121851,
+		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			-- Only SpeciesID
+			pet(4761, {	-- Pascal the Wonder Pup (PET!)
+				["displayID"] = 126779,
 			}),
-			i(231613, {	-- Yellow Tropical Frog (PET!)
-				["displayID"] = 122963,
+			pet(4792, {	-- Ada the Sweetest (PET!)
+				["displayID"] = 70068,
+			}),
+		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			-- With SpeciesID Attached
+			i(246723, {	-- Unfazed Diver (PET!)
+				["displayID"] = 98508,
+			}),
+			-- Only SpeciesID
+			pet(4824, {	-- Baby Karesh Fox - Orange (PET!)
+				["displayID"] = 124240,
+			}),
+			pet(4837, {	-- Worm, Cosmic - Critter (Red) (PET!)
+				["displayID"] = 128503,
+			}),
+		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+			-- With SpeciesID Attached
+			i(252199, {	-- Festive Eve
+				["displayID"] = 137218,
+			}),
+			i(252195, {	-- Fishstick Keith
+				["displayID"] = 137215,
+			}),
+			i(252137, {	-- Lil' Chompers
+				["displayID"] = 137193,
+			}),
+			i(252193, {	-- Slippery Saul
+				["displayID"] = 137201,
+			}),
+		})),
+	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			-- Only SpeciesID
+			pet(4945, {	-- Aud'rei III (PET!)
+				["displayID"] = 138311,
+			}),
+			pet(4905, {	-- [DNT] Baby Amazard (Red) (PET!)
+				["displayID"] = 136724,
+			}),
+			pet(4887, {	-- Dundun (PET!)
+				["displayID"] = 128490,
+			}),
+
+			-- Without SpeciesID Attached
+			i(242251, {	-- [NYI] Magical Broom Pet (PET!)
+				--["displayID"] = ,
+			}),
+			i(250141, {	-- Purple Swamp Leech (PET!)
+				["displayID"] = 128277,
 			}),
 		})),
 	}),

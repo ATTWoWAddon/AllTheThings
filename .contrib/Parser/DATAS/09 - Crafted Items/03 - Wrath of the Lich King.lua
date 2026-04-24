@@ -7,17 +7,41 @@ local function ClassicCost(cost)
 	return cost
 	-- #ENDIF
 end
-local MAPS_FIELD = "maps"
--- #if RETAIL_STYLE_FILL_ENABLED
--- Filling allows users to 'chose' whether the Items dropped from Objects should show up in lists and potentially be Filled
-MAPS_FIELD = "maps_disp"
--- #ENDIF
 root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
 	i(180055, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past I
 	i(180057, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past II
 	i(180058, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past III
 	i(180059, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past V
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		o_repeated({	-- Coldwind Lumber
+			["maps"] = {
+				BOREAN_TUNDRA,
+				CRYSTALSONG_FOREST,
+				DRAGONBLIGHT,
+				GRIZZLY_HILLS,
+				HOWLING_FJORD,
+				SHOLAZAR_BASIN,
+				THE_STORM_PEAKS,
+				WINTERGRASP,
+				ZULDRAK,
+			},
+			["groups"] = {
+				-- Objects
+				o(571034),	-- [Borean Tundra]
+				o(570347),	-- [Crystalsong Forest]
+				o(569722),	-- [Dragonblight]
+				o(569408),	-- [Grizzly Hills/Howling Fjord]
+				o(568528),	-- [Howling Fjord]
+				o(570942),	-- [Sholazar Basin]
+				o(570896),	-- [The Storm Peaks]
+				o(569785),	-- [Wintergrasp]
+				o(570233),	-- [Zul'Drak]
+				-- Drops
+				i(251762),	-- Coldwind Lumber
+			},
+		}),
+	})),
 	prof(ALCHEMY, {
 		n(COMMON_VENDOR_ITEMS, {
 			i(40411, {	-- Enchanted Vial for WotLK, turns into Shattered Vial with Cataclysm.
@@ -343,6 +367,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(257040),	-- Dalaran Runic Anvil (DECOR!)
+			i(264676),	-- Dalaran Sewer Gate (DECOR!)
+			i(264710),	-- Dalaran Sun Sconce (DECOR!)
 		})),
 		filter(MISC, {
 			i(43854),	-- Cobalt Skeleton Key
@@ -438,7 +464,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Dust:
 			i(34054, {	-- Infinite Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 32-35.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 130-182.",
 				-- #endif
@@ -446,14 +472,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Essences:
 			i(34055, {	-- Greater Cosmic Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 33-35, except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 154-182, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(34056, {	-- Lesser Cosmic Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 32-33, except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills. This gives you Greater Cosmic Essence which you then have to split into Lesser Cosmic Essence.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 130-150, except shields and off-hand frills.",
 				-- #endif
@@ -461,21 +487,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Shards and crystals:
 			i(34057, {	-- Abyss Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear at ilvl 35.",
+				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear within the ilvl bracket 200-225.",
 				-- #endif
 			}),
 			i(34052, {	-- Dream Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 34-35.",
+				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 167-200.",
 				-- #endif
 			}),
 			i(34053, {	-- Small Dream Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 32-34.",
+				["description"] = "Seemingly no longer obtainable but from niche means, there never was any use for them but to convert into Dream Shards.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 130-166.",
 				-- #endif
@@ -639,6 +665,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(42553),	-- Visage Liquification Goggles
 			i(42550),	-- Weakness Spectralizers
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(264708),	-- Home Defense Gadget (DECOR!)
+			i(264711),	-- Joybuzz's Joyful Wall of Trains (DECOR!)
+			i(264707),	-- Resizable All-Purpose Gear (DECOR!)
+		})),
 		filter(MISC, {
 			i(40893, {	-- Bladed Pickaxe
 				-- #if AFTER 10.0
@@ -739,14 +770,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	prof(FISHING, {
 		-- Fish
 		i(41812, {	-- Barrelhead Goby
-			[MAPS_FIELD] = { SHOLAZAR_BASIN },
+			["maps_disp"] = { SHOLAZAR_BASIN },
 		}),
 		i(45905, {	-- Bloodtooth Frenzy (Dalaran Fishing daily quest objective)
 			["description"] = "Kill an animal and then swim in a body of water to create a pool to fish from.",
 			["provider"] = { "o", 194479 },	-- Pool of Blood
 		}),
 		i(41808, {	-- Bonescale Snapper
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				BOREAN_TUNDRA,
 				CRYSTALSONG_FOREST,
 				DRAGONBLIGHT,
@@ -761,7 +792,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		i(41805, {	-- Borean Man O' War
 			["description"] = "Schools can be found on the seaside.",
-			[MAPS_FIELD] = { BOREAN_TUNDRA },
+			["maps_disp"] = { BOREAN_TUNDRA },
 			["provider"] = { "o", 192051 },	-- Borean Man O' War School
 		}),
 		i(41800, {	-- Deep Sea Monsterbelly
@@ -788,7 +819,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["provider"] = { "o", 192048 },	-- Dragonfin Angelfish School
 		}),
 		i(44703, {	-- Dark Herring
-			[MAPS_FIELD] = { HOWLING_FJORD },
+			["maps_disp"] = { HOWLING_FJORD },
 			["provider"] = { "o", 192049 },	-- Fangtooth Herring School
 			["description"] =
 				-- #if BEFORE LEGION
@@ -799,7 +830,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				nil,
 				-- #endif
 				-- #if AFTER TWW
-				["collectible"] = false,  -- remove when Blizzard fix fish collection
+				["collectible"] = false,	-- remove when Blizzard fix fish collection
 				-- #endif
 		}),
 		i(44505, {	-- Dustbringer
@@ -819,7 +850,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		i(41810, {	-- Fangtooth Herring
 			["description"] = "Schools can be found in inland waters.",
-			[MAPS_FIELD] = { HOWLING_FJORD },
+			["maps_disp"] = { HOWLING_FJORD },
 			["provider"] = { "o", 192049 },	-- Fangtooth Herring School
 		}),
 		i(43646, {	-- Fountain Goldfish
@@ -827,7 +858,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["coord"] = { 52.9, 65.9, NORTHREND_DALARAN },	-- Dalaran fountain
 		}),
 		i(45909, {	-- Giant Darkwater Clam
-			[MAPS_FIELD] = { WINTERGRASP },
+			["maps_disp"] = { WINTERGRASP },
 			["groups"] = {
 				i(36782),	-- Succulent Clam Meat
 				i(36783),	-- Northsea Pearl
@@ -836,16 +867,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		i(41809, {	-- Glacial Salmon
 			["description"] = "Schools can be found in inland waters.",
-			[MAPS_FIELD] = { GRIZZLY_HILLS },
+			["maps_disp"] = { GRIZZLY_HILLS },
 			["provider"] = { "o", 192050 },	-- Glacial Salmon School
 		}),
 		i(41814, {	-- Glassfin Minnow
-			[MAPS_FIELD] = { CRYSTALSONG_FOREST },
+			["maps_disp"] = { CRYSTALSONG_FOREST },
 			["provider"] = { "o", 192059 },	-- Glassfin Minnow School
 		}),
 		i(41802, {	-- Imperial Manta Ray
 			["description"] = "Schools can be found on the seaside.",
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				BOREAN_TUNDRA,
 				DRAGONBLIGHT,
 				GRIZZLY_HILLS,
@@ -855,7 +886,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		i(43572, {	-- Magic Eater
 			["description"] = "Can be caught in any waters on both WotLK and Legion Dalaran.",
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				NORTHREND_DALARAN,
 				NORTHREND_THE_UNDERBELLY,
 			},
@@ -877,16 +908,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["provider"] = { "o", 192046 },	-- Musselback Sculpin School
 		}),
 		i(41813, {	-- Nettlefish
-			[MAPS_FIELD] = { SHOLAZAR_BASIN },
+			["maps_disp"] = { SHOLAZAR_BASIN },
 			["provider"] = { "o", 192057 },	-- Nettlefish School
 		}),
 		i(45902, {	-- Phantom Ghostfish (Dalaran Fishing daily quest objective)
 			["description"] = "Eat this before it despawns!",
-			[MAPS_FIELD] = { SHOLAZAR_BASIN },
+			["maps_disp"] = { SHOLAZAR_BASIN },
 			["_noautomation"] = true,
 		}),
 		i(40199, {	-- Pygmy Suckerfish
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				BOREAN_TUNDRA,
 				CRYSTALSONG_FOREST,
 				DRAGONBLIGHT,
@@ -928,7 +959,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		i(41803, {	-- Rockfin Grouper
 			["description"] = "Can be caught on the seaside around Northrend.",
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				BOREAN_TUNDRA,
 				DRAGONBLIGHT,
 				GRIZZLY_HILLS,
@@ -941,7 +972,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		i(46109, {	-- Sea Turtle (MOUNT!)
 			-- #if BEFORE 4.0.3
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				BOREAN_TUNDRA,
 				CRYSTALSONG_FOREST,
 				DRAGONBLIGHT,
@@ -965,7 +996,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		i(43571, {	-- Sewer Carp
 			["description"] = "Can be caught in any waters on both WotLK and Legion Dalaran.",
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				NORTHREND_DALARAN,
 				NORTHREND_THE_UNDERBELLY,
 			},
@@ -979,7 +1010,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["coord"] = { 63.8, 64.3, NORTHREND_DALARAN },	-- The Violet Hold
 		}),
 		i(45904, {	-- Terrorfish (Dalaran Fishing daily quest objective)
-			[MAPS_FIELD] = { WINTERGRASP },
+			["maps_disp"] = { WINTERGRASP },
 		}),
 		-- Schools
 		o(192051, {	-- Borean Man O' War School
@@ -1051,10 +1082,77 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 	prof(HERBALISM, {
-		spell(2366, {	-- Herb Gathering
-			--	Herbs
+		header(HEADERS.Spell, 2366, appendAllGroups(sharedData({ ["requireSkill"] = HERBALISM, }, {	-- Herb Gathering
+			-- Nodes
+			o(191019, {	-- Adder's Tongue
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 400,
+				-- #endif
+				["maps"] = { SHOLAZAR_BASIN },
+			}),
+			o(191303, {	-- Firethorn
+				["coord"] = { 70.6, 33.7, BOREAN_TUNDRA },	-- The Southern Geyser Fields
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 360,
+				-- #endif
+			}),
+			o(189973, {	-- Goldclover
+				["coords"] = {
+					{ 48.8, 48.4, DRAGONBLIGHT },	-- Ruby Dragonshrine
+					{ 63.5, 72.5, DRAGONBLIGHT },	-- Emerald Dragonshrine
+				},
+				["description"] = "Found on grassy terrain.",
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 350,
+				-- #endif
+				["maps"] = {
+					BOREAN_TUNDRA,
+					GRIZZLY_HILLS,
+					HOWLING_FJORD,
+					SHOLAZAR_BASIN,
+				},
+			}),
+			o(190172, {	-- Icethorn
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 435,
+				-- #endif
+				["maps"] = {
+					ICECROWN,
+					THE_STORM_PEAKS,
+				},
+			}),
+			o(190171, {	-- Lichbloom
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 425,
+				-- #endif
+				["maps"] = {
+					ICECROWN,
+					THE_STORM_PEAKS,
+				},
+			}),
+			o(190170, {	-- Talandra's Rose
+				["description"] = "Found around the lower tiers of Zul'Drak.",
+				["coord"] = { 33.2, 66.7, ZULDRAK },	-- Lower Zul'Drak
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 385,
+				-- #endif
+			}),
+			o(190169, {	-- Tiger Lily
+				["description"] = "Found around inland waters and waterways.",
+				["coord"] = { 51.6, 45.0, BOREAN_TUNDRA },	-- Lake Kum'uya
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 375,
+				-- #endif
+				["maps"] = {
+					GRIZZLY_HILLS,
+					HOWLING_FJORD,
+					SHOLAZAR_BASIN,
+				},
+			}),
+		}),
+		{	-- Herbs
 			i(36903, {	-- Adder's Tongue
-				[MAPS_FIELD] = { SHOLAZAR_BASIN },
+				["maps_disp"] = { SHOLAZAR_BASIN },
 				["provider"] = { "o", 191019 },	-- Adder's Tongue
 			}),
 			i(108353, {	-- Adder's Tongue Stem
@@ -1066,7 +1164,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			}),
 			i(37921, {	-- Deadnettle
 				["description"] = "Is obtained from gathering other herbs.",
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					BOREAN_TUNDRA,
 					DRAGONBLIGHT,
 					GRIZZLY_HILLS,
@@ -1116,7 +1214,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					{ 63.5, 72.5, DRAGONBLIGHT },	-- Emerald Dragonshrine
 				},
 				["description"] = "Found on grassy terrain.",
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					BOREAN_TUNDRA,
 					GRIZZLY_HILLS,
 					HOWLING_FJORD,
@@ -1133,7 +1231,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			i(36906, {	-- Icethorn
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					ICECROWN,
 					THE_STORM_PEAKS,
 				},
@@ -1147,7 +1245,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			i(36905, {	-- Lichbloom
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					ICECROWN,
 					THE_STORM_PEAKS,
 				},
@@ -1176,7 +1274,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(36904, {	-- Tiger Lily
 				["coord"] = { 51.6, 45.0, BOREAN_TUNDRA },	-- Lake Kum'uya
 				["description"] = "Found around inland waters and waterways.",
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					GRIZZLY_HILLS,
 					HOWLING_FJORD,
 					SHOLAZAR_BASIN,
@@ -1191,52 +1289,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					i(36904),	-- Tiger Lily
 				},
 			}),
-			--	Nodes
-			o(191019, {	-- Adder's Tongue
-				["maps"] = { SHOLAZAR_BASIN },
-			}),
-			o(191303, {	-- Firethorn
-				["coord"] = { 70.6, 33.7, BOREAN_TUNDRA },	-- The Southern Geyser Fields
-			}),
-			o(189973, {	-- Goldclover
-				["coords"] = {
-					{ 48.8, 48.4, DRAGONBLIGHT },	-- Ruby Dragonshrine
-					{ 63.5, 72.5, DRAGONBLIGHT },	-- Emerald Dragonshrine
-				},
-				["description"] = "Found on grassy terrain.",
-				["maps"] = {
-					BOREAN_TUNDRA,
-					GRIZZLY_HILLS,
-					HOWLING_FJORD,
-					SHOLAZAR_BASIN,
-				},
-			}),
-			o(190172, {	-- Icethorn
-				["maps"] = {
-					ICECROWN,
-					THE_STORM_PEAKS,
-				},
-			}),
-			o(190171, {	-- Lichbloom
-				["maps"] = {
-					ICECROWN,
-					THE_STORM_PEAKS,
-				},
-			}),
-			o(190170, {	-- Talandra's Rose
-				["coord"] = { 33.2, 66.7, ZULDRAK },	-- Lower Zul'Drak
-				["description"] = "Found around the lower tiers of Zul'Drak.",
-			}),
-			o(190169, {	-- Tiger Lily
-				["coord"] = { 51.6, 45.0, BOREAN_TUNDRA },	-- Lake Kum'uya
-				["description"] = "Found around inland waters and waterways.",
-				["maps"] = {
-					GRIZZLY_HILLS,
-					HOWLING_FJORD,
-					SHOLAZAR_BASIN,
-				},
-			}),
-		}),
+		})),
 	}),
 	prof(INSCRIPTION, {
 		-- Inks and reagents:
@@ -1270,6 +1323,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(43126),	-- Ink of the Sea
 			i(43127),	-- Snowfall Ink
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258204),	-- Dalaran Post (DECOR!)
+			i(258207),	-- Dalaran Scholar's Bookcase (DECOR!)
+			i(258210),	-- Dalaran Street Sign (DECOR!)
+			i(258209),	-- Kirin Tor Crate (DECOR!)
+			i(258203),	-- Silver Dalaran Bench (DECOR!)
+		})),
 		-- Non-reagent crafts:
 		filter(GLYPHS, {
 			i(149755, {["timeline"]={ ADDED_7_2_5 }}),					-- Glyph of Angels
@@ -1306,10 +1366,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		filter(HELD_IN_OFF_HAND, {
 			i(44210),	-- Faces of Doom
 			i(38322),	-- Iron-Bound Tome
-			i(45854, {	-- Rituals of the New Moon
+			salvagerecipe(64051, 45854, {	-- Rituals of the New Moon
 				["description"] = "This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",
 				["timeline"] = { ADDED_3_1_0 },
-				["collectible"] = false,
 				["groups"] = {
 					i(45850),	-- Rituals of the New Moon (red wolf)
 					i(45851),	-- Rituals of the New Moon (white wolf)
@@ -1398,7 +1457,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				sharedData({	-- Rare quality (blue) gems:
 					["description"] = "This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",
 					["providers"] = {
-						{ "i", 44946 },	-- Icy Prism
+						{ "i", 44943 },	-- Icy Prism
 						{ "i", 36912 },	-- Saronite Ore
 						{ "i", 36910 },	-- Titanium Ore
 					},
@@ -1424,6 +1483,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				}))
 			),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258211),	-- Kirin Tor Glass Table (DECOR!)
+			i(258208),	-- Kirin Tor Sun Chandelier (DECOR!)
+		})),
 		filter(FINGER_F, {
 			i(42336),	-- Bloodstone Band
 			i(42340),	-- Dream Signet
@@ -2134,7 +2197,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		filter(MISC, {
 			i(41367),	-- Dark Jade Focusing Lens
-			i(44943, {["timeline"] = {ADDED_3_0_8}}),	-- Icy Prism
+			i(44943, {	-- Icy Prism
+				["timeline"] = { ADDED_3_0_8 },
+				["groups"] = {
+					i(36921),	-- Autumn's Glow
+					i(42225),	-- Dragon's Eye
+					i(36933),	-- Forest Emerald
+					i(36930),	-- Monarch Topaz
+					i(36918),	-- Scarlet Ruby
+					i(36924),	-- Sky Sapphire
+					i(36927),	-- Twilight Opal
+				},
+			}),
 			i(42420),	-- Shadow Crystal Focusing Lens
 			i(42421),	-- Shadow Jade Focusing Lens
 		}),
@@ -2304,6 +2378,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				i(43130),	-- Virulent Spaulders
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(257693),	-- Snowfall Tribe Scare-Totem (DECOR!)
+			i(258205),	-- Wolvar Postbag (DECOR!)
+		})),
 		filter(MISC, {
 			i(38375),	-- Borean Armor Kit
 			i(33568),	-- Borean Leather
@@ -2324,9 +2402,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 	prof(MINING, {
-		header(HEADERS.Spell, 2575, {	-- Mining
+		header(HEADERS.Spell, 2575, appendAllGroups(sharedData({ ["requireSkill"] = MINING, }, {	-- Mining
 			-- Nodes
 			o(189978, {	-- Cobalt Deposit
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 350,
+				-- #endif
 				["maps"] = {
 					BOREAN_TUNDRA,
 					DRAGONBLIGHT,
@@ -2336,6 +2417,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			o(189979, {	-- Rich Cobalt Deposit
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 375,
+				-- #endif
 				["maps"] = {
 					BOREAN_TUNDRA,
 					DRAGONBLIGHT,
@@ -2345,6 +2429,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			o(189981, {	-- Rich Saronite Deposit
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 425,
+				-- #endif
 				["maps"] = {
 					DRAGONBLIGHT,
 					ICECROWN,
@@ -2354,6 +2441,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			o(189980, {	-- Saronite Deposit
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 400,
+				-- #endif
 				["maps"] = {
 					DRAGONBLIGHT,
 					ICECROWN,
@@ -2363,6 +2453,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			o(191133, {	-- Titanium Vein
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 450,
+				-- #endif
 				["maps"] = {
 					DRAGONBLIGHT,
 					ICECROWN,
@@ -2371,9 +2464,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					WINTERGRASP,
 				},
 			}),
-			-- Ores
+		}),
+		{	-- Ores
 			i(36909, {	-- Cobalt Ore
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					BOREAN_TUNDRA,
 					DRAGONBLIGHT,
 					GRIZZLY_HILLS,
@@ -2395,7 +2489,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			i(36912, {	-- Saronite Ore
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					ICECROWN,
 					SHOLAZAR_BASIN,
 					THE_STORM_PEAKS,
@@ -2417,7 +2511,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			i(36910, {	-- Titanium Ore
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					ICECROWN,
 					SHOLAZAR_BASIN,
 					THE_STORM_PEAKS,
@@ -2459,7 +2553,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(35624),	-- Eternal Earth
 			i(35627),	-- Eternal Shadow
 			--]]
-		}),
+		})),
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(36916, {	-- Cobalt Bar
 				["cost"] = ClassicCost({ { "i", 36909, 1 } }),	-- Cobalt Ore
@@ -2509,7 +2603,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					32572,	-- Dragonblight Mage Hunter (dragonkin)
 					28378,	-- Primordial Drake
 				},
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					THE_OBSIDIAN_SANCTUM,
 					-- #if AFTER 3.3.5
 					THE_RUBY_SANCTUM
@@ -2570,7 +2664,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					25294,	-- Nerub'ar Web Lord
 					25582,	-- Scourged Flamespitter
 				},
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					AHNKAHET_THE_OLD_KINGDOM,
 					AZJOL_NERUB,
 				},
@@ -2668,6 +2762,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(41600),	-- Glacial Bag
 			i(41598),	-- Mysterious Bag
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258206),	-- Gilded Dalaran Banner (DECOR!)
+			i(258298),	-- Kirin Tor Skyline Banner (DECOR!)
+		})),
 		filter(MISC, {
 			-- #if AFTER BFA
 			i(34721),	-- Frostweave Bandage

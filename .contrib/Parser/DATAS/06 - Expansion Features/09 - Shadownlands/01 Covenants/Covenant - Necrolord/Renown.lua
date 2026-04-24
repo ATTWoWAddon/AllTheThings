@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
 	["description"] = "Rewarded at 52, 67 and 76 Renown.",
 });
@@ -21,7 +22,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					["description"] = "Requires Renown 45.",
 				}),
 				--[[
-				title_gendered(426, 427, {	-- Baron / Baroness (TITLE!)
+				title_gendered(426, 427, {	-- Baron / Baroness
 					["description"] = "Requires Renown 40.",
 				}),
 				]]--
@@ -31,7 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				title_female(427, {	-- Baroness <Name>
 					["description"] = "Requires Renown 40.",
 				}),
-				title(443, {	-- Sword of the Primus (TITLE!)
+				title(443, {	-- Sword of the Primus
 					["description"] = "Requires Renown 80.",
 				}),
 				iensemble(186503, {	-- Ensemble: Initiate's Necromantle Vestments

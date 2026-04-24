@@ -75,7 +75,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 			i(163937),	-- Leyshock's Grand Compilation
 		}),
 	}),
-	n(WEAPONS, {	-- [Epic -- No adjustments]
+	n(WEAPONS, {	-- [Epic	-- No adjustments]
 		i(163969),	-- Ameelton's Shot-Thrower
 		i(163957),	-- Carmodius Crystalline Stylus
 		i(163962),	-- Decapitator of Alireza
@@ -94,7 +94,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 		i(163956),	-- Treiya's Shining Pillar
 		i(163968),	-- Yang's Other Recurve
 	}),
-	n(WEAPONS, {	-- [Uncommon -- needs ID's]
+	n(WEAPONS, {	-- [Uncommon	-- needs ID's]
 		i(159545),	-- Bleached Bone Club
 		i(159595),	-- Bleached Bone Cutlass
 		i(159508),	-- Bleached Bone Glaive
@@ -241,12 +241,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 		i(152631),	-- Briny Flesh
 		i(163782),	-- Cursed Haunch
 		i(152577),	-- Deep Sea Satin
-		i(167738, {["timeline"] = {ADDED_8_1_5}}),	-- Gilded Seaweave
+		i(168134, { ["timeline"] = {ADDED_8_1_5} }),	-- Fine Azerite Powder
+		i(167738, { ["timeline"] = {ADDED_8_1_5} }),	-- Gilded Seaweave
 		i(154898),	-- Meaty Haunch
-		i(168645, {["timeline"] = {ADDED_8_2_0}}),	-- Moist Fillet
-		i(174353, {["timeline"] = {ADDED_8_3_0}}),	-- Questionable Meat
-		i(168303, {["timeline"] = {ADDED_8_2_0}}),	-- Rubbery Flank
-		i(168138, {["timeline"] = {ADDED_8_1_5}}),	-- Spirit of the Bested
+		i(168645, { ["timeline"] = {ADDED_8_2_0} }),	-- Moist Fillet
+		i(174353, { ["timeline"] = {ADDED_8_3_0} }),	-- Questionable Meat
+		i(168303, { ["timeline"] = {ADDED_8_2_0} }),	-- Rubbery Flank
+		i(168138, { ["timeline"] = {ADDED_8_1_5} }),	-- Spirit of the Bested
 		i(154897),	-- Stringy Loins
 		i(154899),	-- Thick Paleo Steak
 		i(152576),	-- Tidespray Linen

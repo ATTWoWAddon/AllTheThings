@@ -11,10 +11,19 @@ SCROLL_OF_RESURRECTION = createHeader({
 	},
 	description = {
 		en = "The following item sets were implemented as boosted character rewards for recipients of the Scroll of Resurrection.\n\nThey were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
+		-- TODO: de = "",
 		es = "Los siguientes conjuntos de objetos se implementaron como recompensas de mejoras de personaje para los receptores del Pergamino de la Resurrección.\n\nPosteriormente, se añadieron a los vendedores del Monte Hyjal y Vash'jir una vez que se retiró el Servicio del Pergamino de la Resurrección.",
 		mx = "Los siguientes conjuntos de objetos se implementaron como recompensas de mejoras de personaje para los receptores del Pergamino de la Resurrección.\n\nPosteriormente, se añadieron a los vendedores del Monte Hyjal y Vash'jir una vez que se retiró el Servicio del Pergamino de la Resurrección.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "以下物品套装作为复活卷轴接受者的角色提升奖励而实施。\n\n在复活卷轴服务退役后，它们后来被添加到海加尔山和瓦丝琪尔的商人处。",
+		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 	["timeline"] = { ADDED_4_3_0, REMOVED_5_3_0 },
 	["groups"] = {

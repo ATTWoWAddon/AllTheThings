@@ -15,6 +15,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(194040),	-- Slateskin Hide
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					i(238609),	-- Arathi Craftsman's Spokeshave
+					i(238608),	-- Arathi Tanning Agent
+					i(238606),	-- Artisan's Drawing Knife
+					i(238611),	-- Carapace Shiner
+					i(238604),	-- Dornogal Carving Knife
+					i(238605),	-- Earthen Worker's Beams
+					i(238607),	-- Fungarian's Rich Tannin
+					i(238610),	-- Nerubian's Slicking Iron
+				})),
+			}),
 		}),
 		n(CRAFTABLES, {
 			expansion(EXPANSION.SL, {
@@ -23,27 +36,20 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(177279),	-- Gaunt Sinew
 				})),
 			}),
-			expansion(EXPANSION.DF, {
-				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
-					i(193232),	-- Deathchill Hide+
-					i(193233),	-- Deathchill Hide++
-					i(193234),	-- Deathchill Hide+++
-					i(193239),	-- Drygrate Scales+
-					i(193240),	-- Drygrate Scales++
-					i(193241),	-- Drygrate Scales+++
-				})),
-			}),
-			expansion(EXPANSION.TWW, {
-				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-					i(219895),	-- Deepfury Hide+
-					i(219896),	-- Deepfury Hide++
-					i(219897),	-- Deepfury Hide+++
-				})),
-			}),
 		}),
 		filter(RECIPES, {
+			expansion(EXPANSION.WRATH, {
+				-- 3.0.1
+				expansion(EXPANSION.WRATH, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+					r(47429),	--
+				})),
+			}),
+			expansion(EXPANSION.LEGION, {
+				-- 7.0.3
+				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+					r(205243),	-- Skinning
+				})),
+			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
 				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {

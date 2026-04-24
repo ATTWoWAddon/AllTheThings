@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(SWAMP_OF_SORROWS, {
 		["lore"] = "The Swamp of Sorrows is a marshland in southern Eastern Kingdoms filled with green dragons serving Ysera. When the Dark Portal imploded during the Second War, The Black Morass was split in half--the northern part became the Swamp, while the southern half became the barren Blasted Lands.",
@@ -96,6 +97,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179493, {	-- Mossy Footlocker
+					["coords"] = {
+						{ 69.1, 44.6, SWAMP_OF_SORROWS },
+						{ 65.2, 55.8, SWAMP_OF_SORROWS },
+						{ 74.0, 60.4, SWAMP_OF_SORROWS },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 175,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66518, {	-- Everessa <Master Pet Tamer>
 					["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
@@ -659,7 +673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- Captured Jaguar Fed
 							["provider"] = { "i", 23659 },	-- Fel-Tainted Morsels
-							["coord"] = { 65.4, 23, DUSTWALLOW_MARSH },
+							["coord"] = { 65.4, 23.0, DUSTWALLOW_MARSH },
 							["cr"] = 17111,	-- Captured Jaguar
 						}),
 						objective(3, {	-- Captured Tarantula Fed
@@ -843,7 +857,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(27919, {	-- Onward to the Blasted Lands
-					--["sourceQuest"] = 24913,	-- Remember the Light
+					-- ["sourceQuest"] = 24913,	-- Remember the Light
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 26.9, 33.6, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1249,7 +1263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2622, {	-- The Missing Orders
 					["sourceQuest"] = 2621,	-- The Disgraced One
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 47.8, 55, SWAMP_OF_SORROWS },
+					["coord"] = { 47.8, 55.0, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -1334,7 +1348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2623, {	-- The Swamp Talker
 					["sourceQuest"] = 2622,	-- The Missing Orders
 					["qg"] = 7643,	-- Bengor
-					["coord"] = { 45, 57.2, SWAMP_OF_SORROWS },
+					["coord"] = { 45.0, 57.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -1594,7 +1608,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 69, 28, SWAMP_OF_SORROWS },
+					["coord"] = { 69.0, 28.0, SWAMP_OF_SORROWS },
 					["groups"] = {
 						i(216948),	-- Odd Dalaran Relic
 					},

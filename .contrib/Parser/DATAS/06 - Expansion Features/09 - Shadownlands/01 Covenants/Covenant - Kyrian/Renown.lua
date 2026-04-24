@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
 	["description"] = "Rewarded at 52, 67 and 76 Renown.",
 });
@@ -20,10 +21,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				i(180765, {	-- Eternal Phalynx of Purity (MOUNT!)
 					["description"] = "Requires Renown 39.",
 				}),
-				title(445, {	-- Disciple of Devotion (TITLE!)
+				title(445, {	-- Disciple of Devotion
 					["description"] = "Requires Renown 80.",
 				}),
-				title(425, {	-- Hand of the Archon (TITLE!)
+				title(425, {	-- Hand of the Archon
 					["description"] = "Requires Renown 40.",
 				}),
 				iensemble(186515, {	-- Ensemble: Aspiring Aspirant's Regalia

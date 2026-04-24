@@ -248,7 +248,7 @@ i(50166, 71101);	-- Glyph of Eternal Water / Glyph of Mana Shield [CATA] / Glyph
 i(50168, 71102);	-- Glyph of Quick Decay / Glyph of Lash of Pain [CATA] / Glyph of Everlasting Affliction [5.0.4+] / Glyph of Eternal Resolve [5.4.0+]
 i(50167, 71015);	-- Glyph of Rapid Rejuvenation
 
---weird?
+-- weird?
 i(0, 58321);	-- Glyph of Shadow Protection / Glyph of Reflective Shield[MOP+]
 i(0, 56957);	-- Glyph of Shred
 
@@ -272,7 +272,7 @@ i(0, 57226);	-- Glyph of Unbreakable Armor[Removed Cata]
 -- Later Research
 i(0, 56952);	-- Glyph of Rake / Glyph of Pounce[4.1.0-WOD] / Glyph of Rake[Wod-Legion] Ink of the sea
 
---3.0.1.8303
+-- 3.0.1.8303
 i(0, 45358);	-- Inscription (Journeyman)
 i(0, 45360);	-- Inscription (Artisan)
 i(0, 45357);	-- Inscription (Apprenntice)
@@ -290,7 +290,7 @@ i(0, 50603);	-- Scroll of Intellect VII
 i(0, 50620);	-- Scroll of Stamina VIII
 i(0, 50611);	-- Scroll of Versatility VIII
 i(0, 50619);	-- Scroll of Stamina VII
---3.1.0.9767
+-- 3.1.0.9767
 i(0, 64294);	--
 i(0, 57208);	--
 i(0, 58322);	--
@@ -497,7 +497,7 @@ i(0, 56949);	--
 i(0, 56960);	-- Swiftmend??
 i(0, 64282);	--
 i(0, 57014);	--
---3.3.5.12340
+-- 3.3.5.12340
 i(0, 68166);	-- Glyph of Thunder Strike
 i(0, 69385);	-- Runescroll of Fortitude
 
@@ -544,7 +544,7 @@ i(0, 107907);	-- Glyph of Shadow (Minor Inscription Research??) (4.3.0
 -- Taken from Twinstar
 -- 4.0.1
 i(68810, 89815);	-- Glyph of Colossus Smash (REMOVED?)
---4.3.4.15595
+-- 4.3.4.15595
 i(0, 99547);	-- Vicious Charm of Triumph
 i(0, 94404);	-- Glyph of Feral Charge
 i(0, 94711);	-- Glyph of Vanish
@@ -644,7 +644,7 @@ i(0, 112461);	-- Glyph of Water Roll
 i(0, 112460);	-- Glyph of Zen Flight
 
 -- Blackfallow
---i(0, 57855);	-- Glyph of Charm Woodland Creature
+-- i(0, 57855);	-- Glyph of Charm Woodland Creature
 
 i(0, 130407);	-- Mystery of the Mists (removed`?)
 i(0, 127475);	-- Incarnadine Ink Removed?
@@ -659,44 +659,48 @@ i(0, 128922);	-- Portrait of Madam Goya (Quest?)
 -----------------
 i(102534, 146638);	-- Crafted Malevolent Gladiator's Medallion of Tenacity
 i(104228, 148275);	-- Glyph of Angels
+i(104224, 148271);	-- Glyph of Evaporation
+i(104231, 148278);	-- Glyph of Inspired Hymns
+i(104235, 148282);	-- Glyph of Lingering Ancestors
+i(104227, 148274);	-- Glyph of Pillar of Light
+i(104234, 148281);	-- Glyph of Spirit Raptors
+i(104229, 148276);	-- Glyph of the Sha
+i(104219, 148266);	-- Glyph of Skeleton
+i(104245, 148292);	-- Glyph of the Weaponmaster
+i(104223, 148270);	-- Glyph of the Unbound Elemental
+-- #IF BEFORE 7.0.3
 i(104240, 148287);	-- Glyph of Astral Fixation
 i(104225, 148272);	-- Glyph of Condensation
 i(104212, 148259);	-- Glyph of Divine Shield
 i(104239, 148286);	-- Glyph of Elemental Familiars
 i(104281, 148489);	-- Glyph of Enduring Deceit
-i(104215, 148262);	-- Glyph of Eternal Earth
-i(104224, 148271);	-- Glyph of Evaporation
 i(104211, 148258);	-- Glyph of Festering Blood
 i(104237, 148284);	-- Glyph of Flaming Serpent
 i(104213, 148260);	-- Glyph of Hand of Sacrifice
 i(104232, 148279);	-- Glyph of Headhunting
-i(104217, 148264);	-- Glyph of Impaling Throws
 i(104233, 148280);	-- Glyph of Improved Distraction
-i(104231, 148278);	-- Glyph of Inspired Hymns
-i(104235, 148282);	-- Glyph of Lingering Ancestors
-i(104209, 148256);	-- Glyph of Loud Horn
 i(104222, 148269);	-- Glyph of One with Nature
-i(104227, 148274);	-- Glyph of Pillar of Light
 i(104214, 148261);	-- Glyph of Purging
 i(104241, 148288);	-- Glyph of Rain of Frogs
 i(104210, 148257);	-- Glyph of Regenerative Magic
-i(104230, 148277);	-- Glyph of Shifted Appearances
-i(104234, 148281);	-- Glyph of Spirit Raptors
 i(104236, 148283);	-- Glyph of Spirit Wolf
 i(104197, 148255);	-- Glyph of Swift Death
 i(104238, 148285);	-- Glyph of the Compy
-i(104218, 148265);	-- Glyph of the Executor
 i(104226, 148273);	-- Glyph of the Exorcist
 i(104279, 148487);	-- Glyph of the Lean Pack
-i(104220, 148267);	-- Glyph of the Long Winter
 i(104242, 148289);	-- Glyph of the Raging Whirlwind
-i(104229, 148276);	-- Glyph of the Sha
-i(104219, 148266);	-- Glyph of the Skeleton
 i(104221, 148268);	-- Glyph of the Sprouting Mushroom
 i(104243, 148290);	-- Glyph of the Subtle Defender
 i(104244, 148291);	-- Glyph of the Watchful Eye
-i(104245, 148292);	-- Glyph of the Weaponmaster
-i(104223, 148270);	-- Glyph of the Unbound Elemental
+-- #IF BEFORE 6.0.2
+i(104215, 148262);	-- Glyph of Eternal Earth
+i(104217, 148264);	-- Glyph of Impaling Throws
+i(104209, 148256);	-- Glyph of Loud Horn
+i(104230, 148277);	-- Glyph of Shifted Appearances
+i(104218, 148265);	-- Glyph of the Executor
+i(104220, 148267);	-- Glyph of the Long Winter
+-- #ENDIF
+-- #ENDIF
 --- NYI ---
 i(104282, 148490);	-- Glyph of Chameleon
 i(104280, 148488);	-- Glyph of Focused Fire
@@ -769,9 +773,10 @@ i(128411, 190383);	-- Mass Mill Gorgrond Flytrap
 i(128413, 190385);	-- Mass Mill Nagrand Arrowbloom
 i(128412, 190384);	-- Mass Mill Starflower
 i(128414, 190386);	-- Mass Mill Talador Orchid
+i(127723, 187495);	-- Mighty Ensorcelled Tarot
 i(127728, 187494);	-- Mighty Weapon Crystal
-i(127746, 187518);	-- Savage Weapon Crystal
 i(127741, 187519);	-- Savage Ensorcelled Tarot
+i(127746, 187518);	-- Savage Weapon Crystal
 
 
 ----------------- Not sorted yet
@@ -782,7 +787,6 @@ i(0, 178497);	-- Warbinder's Ink
 i(0, 178550);	-- Draenic Mortar
 i(0, 165804);	-- Warmaster's Firestick
 i(0, 178248);	-- Ensorcelled Tarot
-i(0, 187495);	-- Mighty Ensorcelled Tarot
 i(0, 175392);	-- Savage Tarot
 i(0, 163294);	-- Darkmoon Card of Draenor
 i(0, 175390);	-- Laughing Tarot
@@ -1698,3 +1702,194 @@ i(249705, 1249468);	-- Deal: Cartel Om
 i(249701, 1249463);	-- Deal: Cartel Zo
 i(246811, 1243994);	-- Inspired Writer's Quill
 i(244334, 1236908);	-- Vantus Rune: Manaforge Omega
+
+------------------
+-- PATCH 11.2.7 --
+------------------
+i(0, 1263810);		-- Aldor Bookcase
+i(0, 1260005);		-- Algari Fence
+i(0, 1260044);		-- Algari Fencepost
+i(0, 1263247);		-- Ardenweald Hanging Baskets
+i(0, 1263272);		-- Aspiring Soul's Chair
+i(0, 1260583);		-- Boralus Barrel
+i(0, 1260596);		-- Boralus Bookshelf
+i(0, 1261572);		-- Brill Coffin
+i(0, 1261549);		-- Brill Coffin Lid
+i(0, 1263241);		-- Broker's Hex Table
+i(0, 1263243);		-- Cartel Ta Bookcase
+i(0, 1260711);		-- Covered Square Suramar Table
+i(0, 1263813);		-- Crystal Signpost
+i(0, 1263344);		-- Dalaran Display Shelves
+i(0, 1263575);		-- Dalaran Post
+i(0, 1263570);		-- Dalaran Scholar's Bookcase
+i(0, 1263564);		-- Dalaran Street Sign
+i(0, 1259796);		-- Dornogal Bookcase
+i(0, 1259784);		-- Forgeground Market Bins
+i(0, 1259818);		-- Freywold Table
+i(0, 1263811);		-- Gilded Draenei Round Table
+i(0, 1260577);		-- Gilded Zandalari Table
+i(0, 1269534);		-- Gilnean Map
+i(0, 1269540);		-- Gilnean Postbox
+i(0, 1261278);		-- Gilnean Rocking Chair
+i(0, 1261288);		-- Gilnean Wall Shelf
+i(0, 1261259);		-- Gilnean Wooden Table
+i(0, 1263812);		-- Halaa Bench
+i(0, 1261237);		-- Hanging Paper Lanterns
+i(0, 1263293);		-- Hollow Night Fae Shrine
+i(0, 1261587);		-- Kharanos Bookcase
+i(0, 1263574);		-- Kirin Tor Crate
+i(0, 1263278);		-- Large Revendreth Storage Crate
+i(0, 1259422);		-- Literature of the Blue Dragonflight
+i(0, 1259433);		-- Literature of the Green Dragonflight
+i(0, 1259429);		-- Literature of the Red Dragonflight
+i(0, 1259461);		-- Long Valdrakken Storage Crate
+i(0, 1261241);		-- Lorewalker's Bookcase
+i(0, 1261240);		-- Lucky Traveler's Bench
+i(0, 1259805);		-- Meadery Storage Chest
+i(0, 1260719);		-- Nightborne Jeweler's Table
+i(0, 1261238);		-- Pandaren Wooden Table
+i(0, 1260593);		-- Proudmoore Shipping Crate
+i(0, 1263562);		-- Silver Dalaran Bench
+i(0, 1261239);		-- Square Pandaren Table
+i(0, 1260737);		-- Suramar Dresser
+i(0, 1260730);		-- Suramar Storage Crate
+i(0, 1263814);		-- Talon King's Totem
+i(0, 1260704);		-- Tauren Storage Chest
+i(0, 1269495);		-- Thunder Bluff Totem
+i(0, 1263285);		-- Tome of Maldraxxian Rituals
+i(0, 1259441);		-- Valdrakken Banded Barrel
+i(0, 1259451);		-- Valdrakken Storage Crate
+i(0, 1272572);		-- Valdrakken Wall Shelf
+i(0, 1261644);		-- Wooden Ironforge Table
+i(0, 1260564);		-- Zuldazar Fence
+i(0, 1260508);		-- Zuldazar Fencepost
+i(0, 1268662);		-- Black Dye Pigment
+i(0, 1268984);		-- Blue Dye Pigment
+i(0, 1267108);		-- Brown Dye Pigment
+i(0, 1268985);		-- Green Dye Pigment
+i(0, 1268993);		-- Orange Dye Pigment
+i(0, 1269057);		-- Purple Dye Pigment
+i(0, 1268998);		-- Red Dye Pigment
+i(0, 1268999);		-- Teal Dye Pigment
+i(0, 1268770);		-- White Dye Pigment
+i(0, 1268989);		-- Yellow Dye Pigment
+--- ITEM ---
+i(257025, 1261032);	-- Frostwall Elevated Brazier
+i(257028, 1261066);	-- Orcish Banded Barrel
+i(262809, 1269500);	-- Orcish Fence
+i(262810, 1269501);	-- Orcish Fencepost
+i(257027, 1261045);	-- Wooden Shipping Crate
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471010);		-- Midnight Inscription
+i(0, 1269575);		-- Midnight Milling
+i(0, 1265673);		-- Artisan Scribe's Moxie
+i(0, 1230018);		-- Codified Azeroot
+i(0, 1265679);		-- Concentration
+i(0, 1230055);		-- Faunatender's Baton
+i(0, 1230058);		-- Faunatender's Trust
+i(0, 1230056);		-- Floratender's Crutch
+i(0, 1230021);		-- Hobbyist Alchemist's Mixing Rod
+i(0, 1230020);		-- Hobbyist Rolling Pin
+i(0, 1230022);		-- Hobbyist Scribe's Quill
+i(0, 1265705);		-- Ingenuity
+i(0, 1265618);		-- Knowledge
+i(0, 1265604);		-- Multicraft
+i(0, 1230017);		-- Munsell Ink
+i(0, 1265655);		-- Quality
+i(0, 471044);		-- Recraft Equipment
+i(0, 1265697);		-- Resourcefulness
+i(0, 1230057);		-- Rootwarden's Lamp
+i(0, 1230016);		-- Sienna Ink
+i(0, 1265688);		-- Skill
+i(0, 1230019);		-- Soul Cipher
+i(0, 1265663);		-- Sparks
+i(0, 1230042);		-- Thalassian Missive of the Aurora
+i(0, 1230041);		-- Thalassian Missive of the Feverflare
+i(0, 1230040);		-- Thalassian Missive of the Fireflash
+i(0, 1230039);		-- Thalassian Missive of the Harmonious
+i(0, 1230038);		-- Thalassian Missive of the Peerless
+i(0, 1230037);		-- Thalassian Missive of the Quickblade
+i(0, 1230050);		-- Vantus Rune: Radiant
+--- ITEM ---
+i(263444, 1230051);	-- Contract: The Silvermoon Court
+i(251629, 1230052);	-- Contract: The Amani Tribe
+i(263443, 1230053);	-- Contract: The Hara'ti
+i(263445, 1230054);	-- Contract: The Singularity
+i(258489, 1230043);	-- Thalassian Missive of Deftness
+i(258491, 1230044);	-- Thalassian Missive of Perception
+i(258492, 1230045);	-- Thalassian Missive of Finesse
+i(258493, 1230046);	-- Thalassian Missive of Crafting Speed
+i(258494, 1230047);	-- Thalassian Missive of Multicraft
+i(258495, 1230048);	-- Thalassian Missive of Resourcefulness
+i(258496, 1230049);	-- Thalassian Missive of Ingenuity
+i(259206, 1264550);	-- Gilded Alchemist's Mixing Rod
+i(259208, 1264551);	-- Gilded Sin'dorei Rolling Pin
+i(259210, 1264552);	-- Gilded Sin'dorei Quill
+i(257243, 1230064);	-- Thalassian Competitor's Lamp
+i(268366, 1230065);	-- Thalassian Competitor's Staff
+i(257259, 1230066);	-- Thalassian Competitor's Pillar
+i(257260, 1230067);	-- Thalassian Competitor's Emblem
+i(257261, 1230068);	-- Thalassian Competitor's Insignia of Alacrity
+i(257262, 1230069);	-- Thalassian Competitor's Medallion
+i(257258, 1260760);	-- Thalassian Competitor's Bow
+i(258500, 1248621);	-- Floating Void-Touched Tome
+i(258504, 1248625);	-- Gilded Eversong Book
+i(258509, 1248630);	-- Harandar Signpost
+i(267394, 1248622);	-- Homely Sin'dorei Shelf
+i(267395, 1248627);	-- Homely Wall Shelves
+i(258502, 1248623);	-- Lively Songwriter's Quill
+i(258510, 1248631);	-- Magnificent Towering Bookcase
+i(258503, 1248624);	-- Opened Sin'dorei Scroll [Item is Sin'dorei Opened Scroll]
+i(258499, 1248620);	-- Restful Bronze Bench
+i(258505, 1248626);	-- Sin'dorei Phoenix Quill
+i(267399, 1248619);	-- Sturdy Ren'dorei Cask
+i(267400, 1248628);	-- Wild Hanging Scroll
+--- SPECIALIZATION ---
+i(0, 1230060);		-- Aln'hara Cane
+i(0, 1230061);		-- Aln'hara Lantern
+i(0, 1230059);		-- Aln'hara Pikestaff
+i(0, 1230062);		-- Aln'hara Sprigshot
+i(0, 1230070);		-- Darkmoon Dominion: Blood
+i(0, 1230072);		-- Darkmoon Dominion: Hunt
+i(0, 1230071);		-- Darkmoon Dominion: Rot
+i(0, 1230073);		-- Darkmoon Dominion: Void
+i(0, 1230074);		-- Darkmoon Sigil: Blood
+i(0, 1230076);		-- Darkmoon Sigil: Hunt
+i(0, 1230075);		-- Darkmoon Sigil: Rot
+i(0, 1230077);		-- Darkmoon Sigil: Void
+i(0, 1230085);		-- Inscribe: Blood
+i(0, 1230083);		-- Inscribe: Hunt
+i(0, 1230081);		-- Inscribe: Rot
+i(0, 1230079);		-- Inscribe: Void
+i(0, 1230024);		-- Sin'dorei Alchemist's Mixing Rod
+i(0, 1230025);		-- Sin'dorei Quill
+i(0, 1230023);		-- Sin'dorei Rolling Pin
+i(0, 1230032);		-- Thalassian Treatise on Inscription
+i(0, 1230084);		-- Transcribe: Blood
+i(0, 1230082);		-- Transcribe: Hunt
+i(0, 1230080);		-- Transcribe: Rot
+i(0, 1230078);		-- Transcribe: Void
+--- DISCOVERY ---
+i(0, 1230034);		-- Thalassian Treatise on Alchemy
+i(0, 1230026);		-- Thalassian Treatise on Blacksmithing
+i(0, 1230030);		-- Thalassian Treatise on Enchanting
+i(0, 1230036);		-- Thalassian Treatise on Engineering
+i(0, 1230028);		-- Thalassian Treatise on Herbalism
+i(0, 1230029);		-- Thalassian Treatise on Jewelcrafting
+i(0, 1230031);		-- Thalassian Treatise on Leatherworking
+i(0, 1230027);		-- Thalassian Treatise on Mining
+i(0, 1230035);		-- Thalassian Treatise on Skinning
+i(0, 1230033);		-- Thalassian Treatise on Tailoring
+--- NYI ---
+i(0, 1230063);		-- Pigments of the Wind
+i(258508, 1248629);	-- Technique: Harandar Runestone
+i(258506, 0);		-- Homely Wall Shelves
+i(258498, 0);		-- Ren'dorei Sturdy Cask
+i(267396, 0);		-- Restful Bronze Bench
+i(258501, 0);		-- Sin'dorei Homely Shelf
+i(258497, 0);		-- Technique: Thalassian Missive of Deftness
+i(258507, 0);		-- Wild Hanging Scroll

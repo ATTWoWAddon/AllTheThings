@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 FREE_T_SHIRT_DAY_HEADER = createHeader({
 	readable = "Free T-Shirt Day",
 	constant = "FREE_T_SHIRT_DAY_HEADER",
@@ -8,13 +9,19 @@ FREE_T_SHIRT_DAY_HEADER = createHeader({
 	eventID = EVENTS.FREE_T_SHIRT_DAY,
 	text = {
 		en = "Free T-Shirt Day",
+		-- TODO: de = "",
 		es = "Día de las Camisetas Gratis",
 		mx = "Día de camisetas gratis",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "День бесплатных футболок",
 		cn = "免费T恤日",
 		tw = "免費T恤日",
 	},
 });
+
 root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
 	n(RARES, {
 		n(145826, {	-- Orgrimmar Entertainer

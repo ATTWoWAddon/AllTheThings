@@ -11,10 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					n(TIER_ONE, {
 						["icon"] = 3675495,
 						["groups"] = {
-							n(FOLLOWERS, bubbleDownSelf({
-								["collectible"] = false,
-								["u"] = UNLEARNABLE,	-- Temporary troops
-							}, {
+							n_TrainingFollowers({
 								follower(1243),	-- Maldraxxus Plaguesinger
 								follower(1314),	-- Maldraxxus Plaguesinger
 								follower(1315),	-- Maldraxxus Plaguesinger
@@ -23,7 +20,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								follower(1312),	-- Maldraxxus Shock Trooper
 								follower(1313),	-- Maldraxxus Shock Trooper
 								follower(1321),	-- Maldraxxus Shock Trooper
-							})),
+							}),
 							n(QUESTS, {
 								q(64465, {	-- Adventurer: Enceladus
 									["description"] = "Requires Renown 62.",

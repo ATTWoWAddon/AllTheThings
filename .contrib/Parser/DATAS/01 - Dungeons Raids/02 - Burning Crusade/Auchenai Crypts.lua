@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(247, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Auchenai Crypts
 		["lore"] = "Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",
@@ -121,12 +122,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				currency(1704, {	-- Spirit Shard
 					["timeline"] = { ADDED_8_0_1 },
-					-- #if BEFORE 9.1.5
-					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
-					-- #else
-					-- From 9.1.5 (specific patch uncomfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
-					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
-					-- #endif
+					["description"] =	-- From 9.1.5 (specific patch uncomfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
+						-- #if AFTER 9.1.5
+						"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+						-- #else
+						"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+						-- #endif
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -193,6 +194,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30633, 1 },	-- Auchenai Key
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265845, 1 },	-- Communal Auchenai Key
+					-- #endif
 				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
@@ -204,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30587),	-- Champion's Fire Opal
 							i(30588),	-- Potent Fire Opal

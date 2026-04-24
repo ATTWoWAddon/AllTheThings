@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 ------ Encounter Constants ------
 local STRUNRAAN = 2515
 local BASRIKRON = 2506
@@ -19,7 +20,7 @@ local EncounterToCRS = {
 	},
 	[BAZUAL] = {
 		193532,	-- Bazual, The Dreaded Flame
-	 },
+	},
 	[LISKANOTH] = {
 		193533,	-- Liskanoth, The Futurebane
 	},
@@ -54,7 +55,7 @@ local EncounterToLoot = {
 		i(200660),	-- Cinderfang Wrap
 		i(200661),	-- Basalt Brood Stompers
 		i(200761),	-- Smoldering Sulfuron Signet
-	 },
+	},
 	[LISKANOTH] = {
 		i(200745),	-- Horns of the Futurebane
 		i(200763),	-- Frosted Scale Drape
@@ -135,6 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			Boss(AUROSTAR, {	-- Aurostor, The Hibernator
+				["questID"] = 77758,
 				["timeline"] = { ADDED_10_2_0 },
 			}),
 			BossWorldQuest(AUROSTAR, 76367, {	-- Hibernation Heroes

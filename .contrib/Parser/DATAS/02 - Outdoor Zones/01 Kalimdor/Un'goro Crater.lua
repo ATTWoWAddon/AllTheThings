@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(UNGORO_CRATER, {
 		["lore"] = "Un'Goro Crater is a lush jungle in southern Kalimdor, isolated from the source as it shares borders with the deserts of Feralas and Silithus. Although its borders make Un'Goro Crater a rather isolated area, many challenges await players here as they explore the wide range of exotic fauna, from aggressive plant mobs to the mighty devilsaurs.\n\nMarshal's Refuge, the main questing hub in Un'Goro, is also a cradle of references to TV Show Land of the Lost: The last names of the main characters were Marshal, Williden Marshal and Hol'anyee Marshal are clear references to main characters Will and Holly Marshal, and Un'Goro's plot revolves around massive pylons scattered across the zone, also a central part of the plot in Land of the Lost.",
@@ -139,7 +140,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4491, {	-- A Little Help From My Friends
 					["sourceQuest"] = 4492,	-- Lost!
 					["qg"] = 9999,	-- Ringo
-					["coord"] = { 52, 50, UNGORO_CRATER },
+					["coord"] = { 52.0, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
@@ -243,7 +244,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 174793 },	-- Gorishi Hive Hatchery
 								{ "i",  11132 },	-- Unused Scraping Vial
 							},
-							["coord"] = { 48, 85, UNGORO_CRATER },
+							["coord"] = { 48.0, 85.0, UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -410,7 +411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9623,	-- A-Me 01
 					["coord"] = { 67.6, 16.8, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 10561, 1 }},	-- Mithril Casing
+					["cost"] = { { "i", 10561, 1 } },	-- Mithril Casing
 					["lvl"] = 48,
 				}),
 				q(4245, {	-- Chasing A-Me 01 (3/3)
@@ -568,7 +569,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4386, {	-- Crystal Spire
 					["sourceQuest"] = 4321,	-- Making Sense of It
-					["provider"] = { "o", 164957 },	--  Eastern Crystal Pylon
+					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
 					["coord"] = { 77.3, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -621,7 +622,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 8 },	-- Red Power Crystal
@@ -635,7 +636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4384, {	-- Crystal Yield
 					["sourceQuest"] = 4321,	-- Making Sense of It
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 10 },	-- Red Power Crystal
@@ -677,7 +678,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 43.6, 7.2, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11315, 15 }},	-- Bloodpetal Sprout
+					["cost"] = { { "i", 11315, 15 } },	-- Bloodpetal Sprout
 					["repeatable"] = true,
 					["lvl"] = 47,
 					["groups"] = {
@@ -768,7 +769,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  12472 },	-- Krackle's Thermometer
 								{ "o", 148503 },	-- Fire Plume Ridge Hot Spot
 							},
-							["coord"] = { 49, 45, UNGORO_CRATER },
+							["coord"] = { 49.0, 45.0, UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -871,7 +872,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 202135 },	-- Dadanga's Grave
 					["coord"] = { 45.5, 7.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {{ "i", 11315, 10 }},	-- Bloodpetal Sprout
+					["cost"] = { { "i", 11315, 10 } },	-- Bloodpetal Sprout
 					["repeatable"] = true,
 				}),
 				heroscall(q(28525, {	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
@@ -1040,7 +1041,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  11179 },	-- Golden Flame
 								{ "o", 164910 },	-- Ornate Chest
 							},
-							["coord"] = { 50.2, 50, UNGORO_CRATER },
+							["coord"] = { 50.2, 50.0, UNGORO_CRATER },
 						}),
 						i(11905, {	-- Linken's Boomerang
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1174,7 +1175,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11243, 1 }},	-- Videre Elixir
+					["cost"] = { { "i", 11243, 1 } },	-- Videre Elixir
 					["lvl"] = 47,
 				}),
 				q(24693, {	-- Mossy Pile
@@ -1734,7 +1735,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24708, {	-- The Fossil-Finder 3000
 					["sourceQuest"] = 24730,	-- Roll the Bones
 					["providers"] = {
-						{ "n", 	9272 },	-- Spark Nilminer
+						{ "n", 9272 },	-- Spark Nilminer
 						{ "i", 50405 },	-- Fossil-Finder 3000
 					},
 					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
@@ -1887,7 +1888,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								{ 45.1, 25.6, FERALAS },
-								{ 44, 11, FERALAS },
+								{ 44.0, 11.0, FERALAS },
 							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
@@ -1915,7 +1916,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Discover and examine the Western Crystal Pylon
 							["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-							["coord"] = { 23.8, 59.1, UNGORO_CRATER },
+							["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -2095,32 +2096,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(RARES, {
-				n(14461, {	-- Baron Charr
-					-- TODO: Move this to an Elemental Invasion World Event file.
-					["description"] = "This is only available during an Elemental Invasion.",
-					["coords"] = {
-						{ 44.6, 46.0, UNGORO_CRATER },
-						{ 48.2, 41.2, UNGORO_CRATER },
-						{ 53.2, 41.8, UNGORO_CRATER },
-						{ 56.6, 42.8, UNGORO_CRATER },
-						{ 56.6, 48.2, UNGORO_CRATER },
-						{ 55.6, 57.4, UNGORO_CRATER },
-						{ 51.6, 57.6, UNGORO_CRATER },
-						{ 45.4, 54.8, UNGORO_CRATER },
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-					["groups"] = {
-						i(18671, {	-- Baron Charr's Sceptre
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18672, {	-- Elemental Ember
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						-- #if BEFORE 4.0.3
-						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
-						-- #endif
-					},
-				}),
 				n(6582, {	-- Clutchmother Zavas
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2211,6 +2186,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			n(TREASURES, {
+				i(11315, {	-- Bloodpetal Sprout
+					["provider"] = { "o", 164958 },	-- Bloodpetal Sprout
+				}),
+				i(11184, {	-- Blue Power Crystal
+					["providers"] = {
+						{ "o", 164658 },	-- Blue Power Crystal
+						{ "o", 164778 },	-- Blue Power Crystal
+					},
+				}),
+				i(11185, {	-- Green Power Crystal
+					["providers"] = {
+						{ "o", 164659 },	-- Green Power Crystal
+						{ "o", 164779 },	-- Green Power Crystal
+					},
+				}),
+				i(11186, {	-- Red Power Crystal
+					["providers"] = {
+						{ "o", 164660 },	-- Red Power Crystal
+						{ "o", 164780 },	-- Red Power Crystal
+					},
+				}),
+				i(11018, {	-- Un'Goro Soil
+					["provider"] = { "o", 157936 },	-- Un'Goro Dirt Pile
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				i(11188, {	-- Yellow Power Crystal
+					["providers"] = {
+						{ "o", 164661 },	-- Yellow Power Crystal
+						{ "o", 164781 },	-- Yellow Power Crystal
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>
 					["coord"] = { 43.4, 41.6, UNGORO_CRATER },
@@ -2254,6 +2262,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				i(11116, {	-- A Mangled Journal
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
 				i(142377, {	-- Badly Broken Dark Spear
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
@@ -2268,21 +2279,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6553,	-- Gorishi Reaver
 						6554,	-- Gorishi Stinger
 						6555,	-- Gorishi Tunneler
-					},
-				}),
-				i(11315, {	-- Bloodpetal Sprout
-					["provider"] = { "o", 164958 },	-- Bloodpetal Sprout
-				}),
-				i(11184, {	-- Blue Power Crystal
-					["providers"] = {
-						{ "o", 164658 },	-- Blue Power Crystal
-						{ "o", 164778 },	-- Blue Power Crystal
-					},
-				}),
-				i(11185, {	-- Green Power Crystal
-					["providers"] = {
-						{ "o", 164659 },	-- Green Power Crystal
-						{ "o", 164779 },	-- Green Power Crystal
 					},
 				}),
 				i(12809, {	-- Guardian Stone
@@ -2320,22 +2316,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
-				i(11186, {	-- Red Power Crystal
-					["providers"] = {
-						{ "o", 164660 },	-- Red Power Crystal
-						{ "o", 164780 },	-- Red Power Crystal
-					},
-				}),
-				i(11018, {	-- Un'Goro Soil
-					["provider"] = { "o", 157936 },	-- Un'Goro Dirt Pile
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
-				i(11188, {	-- Yellow Power Crystal
-					["providers"] = {
-						{ "o", 164661 },	-- Yellow Power Crystal
-						{ "o", 164781 },	-- Yellow Power Crystal
-					},
-				}),
 			}),
 		},
 	}),

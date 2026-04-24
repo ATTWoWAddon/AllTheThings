@@ -26,7 +26,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						gt(254, {	-- Brewhouse
 							["description"] = "Click this once per day.",
 							["questID"] = 43974,
-							["coord"] = { 55, 56.5, THE_WANDERING_ISLE },
+							["isDaily"] = true,
+							["coord"] = { 55.0, 56.5, THE_WANDERING_ISLE },
 							["groups"] = {
 								i(139561, {	-- Legend of the Monkey King
 									artifact(959),	-- Fu Zan, the Wanderer's Companion
@@ -44,21 +45,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 					}),
-					cl(MONK, MISTWEAVER, {
-						i(139562, {	-- Breath of the Undying Serpent
-							artifact(519),	-- Sheilun, Staff of the Mists
-						}),
-					}),
-					cl(MONK, WINDWALKER, {
-						i(139563, {	-- The Stormfist
-							artifact(527),	-- Fists of the Heavens
-						}),
-					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(702),	-- Echo of Chi-Ji
 					follower(701),	-- Echo of Niuzao
 					follower(703),	-- Echo of Xuen
@@ -90,7 +78,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(693),	-- Tiger Masters
 					follower(694),	-- Tiger Masters
 					follower(777),	-- Tiger Masters
-				})),
+				}),
 				n(QUESTS, {
 					-- Intro
 					q(12103, {	-- Before the Storm
@@ -158,7 +146,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								i(173704, {	-- Granary Jug (QI!)
 									["timeline"] = { ADDED_9_0_1 },
 								}),
-								o(251422, {	-- Sack of Roasted Grain
+								o_repeated({	-- Sack of Roasted Grain
 									["coords"] = {
 										{ 51.1, 60.8, VALLEY_OF_THE_FOUR_WINDS },
 										{ 51.3, 63.3, VALLEY_OF_THE_FOUR_WINDS },
@@ -168,7 +156,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 										{ 52.6, 63.5, VALLEY_OF_THE_FOUR_WINDS },
 										{ 53.1, 60.8, VALLEY_OF_THE_FOUR_WINDS },
 									},
-									["groups"] = { i(138623) },	-- Sack of Roasted Grain (QI!)
+									["groups"] = {
+										i(138623),	-- Sack of Roasted Grain (QI!)
+										o(251422),	-- Sack of Roasted Grain
+										o(251424),	-- Sack of Roasted Grain
+									},
 								}),
 							},
 						}),
@@ -200,9 +192,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								o(251605, {	-- Fu Zan, the Wanderer's Companion
 									i(128938, {	-- Fu Zan, the Wanderer's Companion
 										["ItemAppearanceModifierID"] = 9,
-										["groups"] = {
-											artifact(289),	-- Fu Zan, the Wanderer's Companion
-										},
+										["groups"] = { artifact(289) },	-- Fu Zan, the Wanderer's Companion
 									}),
 								}),
 							},
@@ -225,9 +215,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									["groups"] = {
 										i(128937, {	-- Sheilun, Staff of the Mists
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(123),	-- Sheilun, Staff of the Mists
-											},
+											["groups"] = { artifact(123) },	-- Sheilun, Staff of the Mists
 										}),
 									},
 								}),
@@ -268,17 +256,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									["groups"] = {
 										i(128940, {	-- Fists of the Heavens [Main Hand]
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(290),	-- Fists of the Heavens [Main Hand]
-											},
+											["groups"] = { artifact(290) },	-- Fists of the Heavens [Main Hand]
 										}),
 									},
 								}),
 								i(133948, {	-- Fists of the Heavens [Off Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(290),	-- Fists of the Heavens [Off Hand]
-									},
+									["groups"] = { artifact(290) },	-- Fists of the Heavens [Off Hand]
 								}),
 							},
 						}),
@@ -292,9 +276,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 112338 },	-- Caydori Brightstar
 						["coord"] = { 50.3, 59.0, THE_WANDERING_ISLE },
-						["groups"] = {
-							i(139734),	-- Grandmaster's Crown
-						},
+						["groups"] = { i(139734) },	-- Grandmaster's Crown
 					}),
 					q(40793, {	-- A Matter of Planning
 						["sourceQuests"] = {
@@ -340,17 +322,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42187 },	-- Rise, Champions
 						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["coord"] = { 55.2, 57.1, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(596),	-- Chen Stormstout
-						},
+						["groups"] = { follower(596) },	-- Chen Stormstout
 					}),
 					q(40704, {	-- Champion: Li Li Stormstout
 						["sourceQuests"] = { 42187 },	-- Rise, Champions
 						["provider"] = { "n", 101046 },	-- Li Li Stormstout
 						["coord"] = { 49.1, 58.6, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(588),	-- Li Li Stormstout
-						},
+						["groups"] = { follower(588) },	-- Li Li Stormstout
 					}),
 					q(41945, {	-- Tianji of the Ox
 						["sourceQuests"] = {
@@ -375,14 +353,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 99179 },	-- Master Hsu
 						["coord"] = { 52.8, 59.6, THE_WANDERING_ISLE },
 					}),
-					-- Chap 1
+					-- Chapter 1
 					q(41905, {	-- Report from Tian Monastery
 						["sourceQuests"] = { 42191 },	-- Tech It Up a Notch
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
-						["groups"] = {
-							i(140483),	-- Jade Fragment
-						},
+						["groups"] = { i(140483) },	-- Jade Fragment
 					}),
 					q(41728, {	-- The Defense of Tian Monastery
 						["sourceQuests"] = { 41905 },	-- Report From Tian Monastery
@@ -434,19 +410,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43319 },	-- The Way of the Tiger
 						["provider"] = { "n", 104984 },	-- Taran Zhu <Lord of the Shado-Pan>
 						["coord"] = { 51.1, 49.5, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(603),	-- Taran Zhu
-						},
+						["groups"] = { follower(603) },	-- Taran Zhu
 					}),
 					q(41735, {	-- Champion: The Monkey King
 						["sourceQuests"] = { 43319 },	-- The Way of the Tiger
 						["provider"] = { "n", 102902 },	-- The Monkey King
 						["coord"] = { 51.1, 49.5, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(602),	-- The Monkey King
-						},
+						["groups"] = { follower(602) },	-- The Monkey King
 					}),
-					-- Chap 2
+					-- Chapter 2
 					q(43062, {	-- Further Training
 						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
 						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
@@ -471,21 +443,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
 						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
-						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
+						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
 					q(43058, {	-- Spiced Rib Roast
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
 						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
-						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
+						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
 					q(43060, {	-- Highmountain Salmon
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
 						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
-						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
+						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
-					--- Chap 3
+					-- Chapter 3
 					q(41849, {	-- The Iron Fist
 						["sourceQuests"] = {
 							43062,	-- Further Training
@@ -499,6 +471,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41849 },	-- The Iron Fist
 						["provider"] = { "n", 105045 },	-- Angus Ironfist
 						["coord"] = { 62.9, 59.5, STORMHEIM },
+						["groups"] = { i(136406) },	-- Dravax's Key (QI!)
 					}),
 					q(41851, {	-- Quelling the Tide
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
@@ -523,35 +496,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 105152 },	-- Hiro
 						["maps"] = { STORMHEIM },
-						["groups"] = {
-							i(139738),	-- Grandmaster's Cuffs
-						},
+						["groups"] = { i(139738) },	-- Grandmaster's Cuffs
 					}),
 					q(41737, {	-- Champion: Hiro
 						["sourceQuests"] = { 41854 },	-- Brick by Brick
 						["provider"] = { "n", 105058 },	-- Hiro
 						["coord"] = { 51.8, 49.6, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(606),	-- Hiro
-						},
+						["groups"] = { follower(606) },	-- Hiro
 					}),
 					q(41738, {	-- Champion: Sylara Steelsong
 						["sourceQuests"] = { 41854 },	-- Brick by Brick
 						["provider"] = { "n", 105056 },	-- Sylara Steelsong
 						["coord"] = { 51.8, 49.6, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(604),	-- Sylara Steelsong
-						},
+						["groups"] = { follower(604) },	-- Sylara Steelsong
 					}),
 					q(41736, {	-- Champion: Angus Ironfist
 						["sourceQuests"] = { 41854 },	-- Brick by Brick
 						["provider"] = { "n", 105046 },	-- Angus Ironfist
 						["coord"] = { 51.8, 49.6, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(605),	-- Angus Ironfist
-						},
+						["groups"] = { follower(605) },	-- Angus Ironfist
 					}),
-					-- Chap 4
+					-- Chapter 4
 					q(41038, {	-- The Mead Master
 						["sourceQuests"] = {
 							41736,	-- Champion: Angus Ironfist
@@ -565,27 +530,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41038 },	-- The Mead Master
 						["provider"] = { "n", 102843 },	-- Aegira
 						["coord"] = { 62.1, 20.2, STORMHEIM },
-						["groups"] = {
-							i(133995),	-- Storm Brew Recipe (QI!)
-						},
+						["groups"] = { i(133995) },	-- Storm Brew Recipe (QI!)
 					}),
 					q(41910, {	-- Freya's Spring
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
-						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
+						["qgs"] = {
+							102843,	-- Aegira (Broken Temple Brewmaster)
+							102996,	-- Aegira (Broken Temple Brewmaster)
+						},
 						["maps"] = { STORMHEIM },
 					}),
 					q(41040, {	-- Halls of Valor: The Brewmaster
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
-						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
+						["qgs"] = {
+							102843,	-- Aegira (Broken Temple Brewmaster)
+							102996,	-- Aegira (Broken Temple Brewmaster)
+						},
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
 					}),
 					q(41911, {	-- Amaranthine Hops
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["maps"] = { STORMHEIM },
-						["groups"] = {
-							i(139033),	-- Amaranthine Hops (QI!)
-						},
+						["groups"] = { i(139033) },	-- Amaranthine Hops (QI!)
 					}),
 					q(41086, {	-- A Peaceful World
 						["sourceQuests"] = { 41911 },	-- Amaranthine Hops
@@ -637,14 +604,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(41739, {	-- Champion: Aegira
-						["provider"] = { "n", 105226 },	-- Aegira <Brewmaster>
+						["qgs"] = {
+							105226,	-- Aegira <Brewmaster>
+							102855,	-- Aegira <Brewmaster>
+						},
 						["coords"] = {
 							{ 31.1, 40.5, THE_WANDERING_ISLE },	-- Next to Storm Brew turn-in
 							{ 55.3, 57.3, THE_WANDERING_ISLE },	-- If you leave Storm Brew turn-in area without doing this quest
 						},
-						["groups"] = {
-							follower(607),	-- Aegira
-						},
+						["groups"] = { follower(607) },	-- Aegira
 					}),
 					q(43359, {	-- A Hero's Weapon
 						["sourceQuests"] = { 41087 },	-- Storm Brew
@@ -687,7 +655,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(45404, {	-- Panic at the Brewery
 						["sourceQuests"] = { 45440 },	-- A Brewing Situation
-						["provider"] = { "n", 119664 },	-- Brewmaster Almai
+						["qgs"] = {
+							119664,	-- Brewer Almai
+							116900,	-- Brewer Almai
+						},
 						["coord"] = { 51.3, 48.5, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 						["maps"] = { 872, 873, 874 },	-- Stormstout Brewery (Scenario Map)
@@ -709,9 +680,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 53.6, 53.3, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 						["groups"] = {
+							o(268448, {	-- Fel Cauldron
+								["coords"] = {
+									{ 57.3, 43.5, BROKEN_SHORE },
+									{ 57.3, 46.6, BROKEN_SHORE },
+									{ 57.3, 52.0, BROKEN_SHORE },
+									{ 57.9, 44.8, BROKEN_SHORE },
+									{ 59.3, 51.9, BROKEN_SHORE },
+									{ 59.5, 52.3, BROKEN_SHORE },
+									{ 59.7, 50.5, BROKEN_SHORE },
+									{ 59.9, 44.8, BROKEN_SHORE },
+									{ 59.9, 45.6, BROKEN_SHORE },
+									{ 60.1, 44.4, BROKEN_SHORE },
+									{ 60.5, 52.2, BROKEN_SHORE },
+									{ 60.8, 48.9, BROKEN_SHORE },
+									{ 60.9, 42.1, BROKEN_SHORE },
+									{ 62.2, 38.4, BROKEN_SHORE },
+								},
+								["groups"] = { i(146310) },	-- Vial of Liquid Felflame (QI!)
+							}),
 							i(146312),	-- Demonic Ash (QI!)
 							i(146311),	-- Flask of Fel Blood (QI!)
-							i(146310),	-- Vial of Liquid Felflame (QI!)
 						},
 					}),
 					q(45545, {	-- Barrel Toss
@@ -754,9 +743,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 45771 },	-- A Time for Everything
 						["provider"] = { "n", 117504 },	-- Brewer Almai
 						["coord"] = { 51.6, 48.5, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(998),	-- Brewer Almai
-						},
+						["groups"] = { follower(998) },	-- Brewer Almai
 					})),
 					q(46353, {	-- Master Who?
 						["sourceQuest"] = 45790,	-- Champion: Almai
@@ -787,9 +774,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["coord"] = { 47.9, 49.0, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
-						["groups"] = {
-							i(147314),	-- Part of Smelly's Luckydo (QI!)
-						},
+						["groups"] = { i(147314) },	-- Part of Smelly's Luckydo (QI!)
 					}),
 					q(46346, {	-- The Shadow of Ban-Lu
 						["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
@@ -815,16 +800,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 74.4, 88.7, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
 						["groups"] = {
-							i(147313),	-- Moon Lily (QI!)
+							o(268813, {	-- Moon Lily
+								["coords"] = {
+									{ 72.6, 43.1, KUN_LAI_SUMMIT },
+									{ 72.7, 37.4, KUN_LAI_SUMMIT },
+									{ 72.7, 38.9, KUN_LAI_SUMMIT },
+									{ 73.0, 44.1, KUN_LAI_SUMMIT },
+									{ 73.2, 37.6, KUN_LAI_SUMMIT },
+									{ 73.4, 45.6, KUN_LAI_SUMMIT },
+									{ 74.1, 47.2, KUN_LAI_SUMMIT },
+									{ 74.3, 47.9, KUN_LAI_SUMMIT },
+								},
+								["groups"] = { i(147313) },	-- Moon Lily (QI!)
+							}),
 						},
 					}),
 					q(46350, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Trial of Ban-Lu
 						["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["coord"] = { 73.9, 88.9, KUN_LAI_SUMMIT },
-						["groups"] = {
-							mount(229385),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
-						},
+						["groups"] = { mount(229385) },	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
 					})),
 					-- Misc
 					q(43881, {	-- Hitting the Books
@@ -875,19 +870,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(248942, {	-- Five Dawns Planning Table (DECOR!)
 								["sourceAchievement"] = 60986,	-- Raise an Army for the Temple of Five Dawns
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(248936, {	-- Five Dawns Shrine of the Smoking Fish (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(248935, {	-- Five Dawns Weapon Rack (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(140543),	-- Fist of the Broken Temple
 							i(140940, {	-- Grandmaster's Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(139734, {	-- Grandmaster's Crown
 								["cost"] = 5000000,	-- 500g
@@ -899,13 +894,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140973, {	-- Grandmaster's Greater Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 4000 }},	-- 4,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 4000 } },
 							}),
 							i(139735, {	-- Grandmaster's Legguards
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140972, {	-- Grandmaster's Lesser Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},		-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(139733, {	-- Grandmaster's Palms
 								["cost"] = 5000000,	-- 500g
@@ -921,19 +916,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(136800),	-- Meditation Manual: Zen Flight (CI!)
 							i(248958, {	-- Monastery Gong (DECOR!)
-								["sourceAchievement"] = 42275,	-- The Grandmaster's Campaign
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},	-- 1,500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(256679, {	-- Replica Chronicle of Ages (DECOR!)
-								["sourceAchievement"] = 60967,	-- Legendary Research of Five Dawns
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},	-- 3,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
 							i(262619, {	-- Replica Forge of the Roaring Mountain (DECOR!)
-								["sourceAchievement"] = 42292,	-- Hidden Potential of the Grandmaster
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},	-- 5,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(140564),	-- Rod of the Broken Temple
 							i(140551),	-- Staff of the Broken Temple
@@ -945,7 +937,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(147542, {	-- Ban-Fu, Cub of Ban-Lu (PET!)
 								["sourceQuest"] = 46350,	-- The Trial of Ban-Lu
 								["timeline"] = { ADDED_7_2_0 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 						},
 					}),
@@ -960,7 +952,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 		cl(MONK, bubbleDownSelf({ ["classes"] = { MONK } }, {
 			q(40127),	-- Da-Nel's Quest - Da-Nel sends you from Dalaran to Peak of Serenity
 			q(40655),	-- Li Li - hopping on kite during "Off to Adventure!" (questID 40633)
-			q(40516),	-- The Dawning Bit -  triggered after accepting "The Dawning Light" (questID 40236)
+			q(40516),	-- The Dawning Bit - triggered after accepting "The Dawning Light" (questID 40236)
 			q(46939, { ["timeline"] = { ADDED_7_2_0 } }),	-- Monk Finale - Ban-Lu mount cutscene
 			q(44646),	-- Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
 			q(44647),	-- Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 3A-6 - Unlocks Final Quest - completed the "Impending Danger" mission

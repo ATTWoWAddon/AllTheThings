@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DARNASSUS, {
 		["lore"] = "The atmosphere inside the city is quiet and tranquil. It does not have the feeling of confinement that one would feel in Stormwind or Ironforge, where the buildings are grouped close together. Darnassus is open to the sky, and the graceful bridges spanning the lake around which it is built set the buildings wide apart. The elegant bridges, beautiful groves, and leaf-covered pathways that dot the city's landscape are testaments to the night elves' reverence for nature. One of Darnassus's most notable structures is the stunning Temple of the Moon, the center of worship for High Priestess Tyrande Whisperwind and her Sisters of Elune. The prime reason why the city's population is so low is that it is isolated: Teldrassil is a small island away from the main mass of Azeroth, and the only way to gain access from another continent is to fly or sail to Rut'theran Village, a small settlement at the base of Teldrassil, and from there step into the glowing portal to the city proper. Darnassus is home to night elves of all vocations and remains a symbol of the night elves' rich culture and glorious history.",
@@ -104,32 +105,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["skipFill"] = true,
 			}),
 			-- #endif
-			-- #if AFTER CATA
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							29325,	-- A Slippery Snack
-							29359,	-- An Old Favorite
-							29321,	-- Happy as a Clam Digger
-							29323,	-- Stocking Up
-							29324,	-- The Sister's Pendant
-						},
-						["provider"] = { "n", 4156 },	-- Astaia
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983),	-- Strand Crawler (PET!)
-							i(33820),	-- Weather-Beaten Fishing Hat
-							i(45991),	-- Bone Fishing Pole
-							i(45992),	-- Jeweled Fishing Pole
-							i(67410),	-- Very Unlucky Rock
-							i(67388),	-- String of Alligator Teeth
-						},
-					}),
-				}),
-			}),
-			-- #endif
 			n(QUESTS, {
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
@@ -181,7 +156,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
 					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.2, 81, DARNASSUS },
+					["coord"] = { 39.2, 81.0, DARNASSUS },
 					["timeline"] = { REMOVED_2_3_0 },
 					["maps"] = { IRONFORGE },
 					["classes"] = { PRIEST },
@@ -418,8 +393,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						376,	-- High Priestess Laurena <Priest Trainer>
 					},
 					["coords"] = {
-						{ 39.2, 81, DARNASSUS },
-						{ 25, 8.2, IRONFORGE },
+						{ 39.2, 81.0, DARNASSUS },
+						{ 25.0, 8.2, IRONFORGE },
 						{ 38.8, 26.6, STORMWIND_CITY },
 					},
 					["timeline"] = { REMOVED_3_0_2 },
@@ -443,7 +418,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5673,	-- Elune's Grace [Stormwind City]
 					},
 					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.2, 81, DARNASSUS },
+					["coord"] = { 39.2, 81.0, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -557,7 +532,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4493, {	-- March of the Silithid (A)
 					["sourceQuest"] = 162,	-- Rise of the Silithid (A)
 					["qg"] = 7740,	-- Gracina Spiritmight
-					["coord"] = { 42, 85.8, DARNASSUS },
+					["coord"] = { 42.0, 85.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TANARIS },
 					["races"] = ALLIANCE_ONLY,
@@ -615,7 +590,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3785, {	-- Morrowgrain Research (2/2)
 					["sourceQuest"] = 3781,	-- Morrowgrain Research (1/2)
 					["qg"] = 4217,	-- Mathrengyl Bearwalker
-					["coord"] = { 35.2, 8, DARNASSUS },
+					["coord"] = { 35.2, 8.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
 					["races"] = ALLIANCE_ONLY,
@@ -627,7 +602,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(3803, {	-- Morrowgrain to Darnassus
 					["sourceQuest"] = 3785,	-- Morrowgrain Research (2/2)
 					["qg"] = 4217,	-- Mathrengyl Bearwalker
-					["coord"] = { 35.2, 8, DARNASSUS },
+					["coord"] = { 35.2, 8.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
 					["races"] = ALLIANCE_ONLY,
@@ -725,7 +700,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2520, {	-- Sathrah's Sacrifice
 					["sourceQuest"] = 2518,	-- Tears of the Moon
 					["qg"] = 7313,	-- Priestess A'moora
-					["coord"] = { 36.4, 86, DARNASSUS },
+					["coord"] = { 36.4, 86.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 5,
@@ -779,7 +754,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(79078, {	-- Sharing the Faith
 					["qg"] = 4092,	-- Lariia <Priest Trainer>
-					["coord"] = { 40, 87.4, DARNASSUS },
+					["coord"] = { 40.0, 87.4, DARNASSUS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -842,7 +817,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						11397,	-- Nara Meideros <Priest Trainer>
 					},
 					["coords"] = {
-						{ 39.2, 81, DARNASSUS },
+						{ 39.2, 81.0, DARNASSUS },
 						{ 55.6, 56.8, TELDRASSIL },
 						{ 47.2, 52.2, DUN_MOROGH },
 						{ 43.4, 65.6, ELWYNN_FOREST },
@@ -875,7 +850,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5633,	-- Returning Home [Ironforge]
 					},
 					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.2, 81, DARNASSUS },
+					["coord"] = { 39.2, 81.0, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -928,7 +903,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2518, {	-- Tears of the Moon
 					["sourceQuest"] = 2519,	-- The Temple of the Moon
 					["qg"] = 7313,	-- Priestess A'moora
-					["coord"] = { 36.4, 86, DARNASSUS },
+					["coord"] = { 36.4, 86.0, DARNASSUS },
 					["maps"] = { TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 5,
@@ -1029,11 +1004,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(2519, {	-- The Temple of the Moon
 					["qg"] = 7316,	-- Sister Aquinne
-					["coord"] = { 29, 45.4, DARNASSUS },
+					["coord"] = { 29.0, 45.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 5,
+				}),
+				q(9432, {	-- Travel to Astranaar [Draenei]
+					["qg"] = 17105,	-- Emissary Valustraa
+					["coord"] = { 38.6, 81.0, DARNASSUS },
+					["timeline"] = { ADDED_2_0_1 , REMOVED_4_0_3 },
+					["races"] = { DRAENEI },
+					["lvl"] = 18,
 				}),
 				q(730, {	-- Trouble In Darkshore?
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
@@ -1056,7 +1038,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.2, 9.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
-					["cost"] = {{ "i", 11018, 20 }},	-- Un'Goro Soil
+					["cost"] = { { "i", 11018, 20 } },	-- Un'Goro Soil
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 				}),
@@ -1093,7 +1075,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						9582,	-- Strength of One
 						-- #endif
 						1678,	-- Vejrek
-						--1683,	-- Vorlus Vilehoof
+						-- 1683,	-- Vorlus Vilehoof
 					},
 					["qg"] = 4088,	-- Elanaria
 					["coord"] = { 57.3, 34.6, DARNASSUS },
@@ -1110,7 +1092,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #if BEFORE CATA
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
 					},
@@ -1166,7 +1148,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				o(240625, {	-- High Priestess' Reliquary
 					["description"] = "Loot the chest on the top floor of the Temple of the Moon, on the wall opposite Tyrande Whisperwind.",
-					["coord"] = { 43, 75.8, DARNASSUS },
+					["coord"] = { 43.0, 75.8, DARNASSUS },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
 						i(122239, {	-- Music Roll: Shalandis Isle
@@ -1627,11 +1609,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = bubbleDownClassicRep(FACTION_GILNEAS, {
 						{		-- Neutral
 							i(245620, {	-- Little Wolf's Loo (DECOR!)
-								["sourceQuest"] = 14402,	-- Ready to Go
 								["cost"] = 4500000,	-- 450g
 							}),
 							i(245518, {	-- Worgen's Chicken Coop (DECOR!)
-								["sourceQuest"] = 24675,	-- Last Meal
 								["cost"] = 1500000,	-- 150g
 							}),
 						}, {	-- Friendly
@@ -1814,7 +1794,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
 					["description"] = "Use the musk and tame a Deer and then bring it to Relaeron.",
 					["coord"] = { 39.8, 9.2, DARNASSUS },
-					["cost"] = {{ "i", 208607, 1 }},	-- Deer Musk
+					["cost"] = { { "i", 208607, 1 } },	-- Deer Musk
 					["maps"] = { TELDRASSIL },
 					["crs"] = { 883 },	-- Deer
 					["races"] = ALLIANCE_ONLY,

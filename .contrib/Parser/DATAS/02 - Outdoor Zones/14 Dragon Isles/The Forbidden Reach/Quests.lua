@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(QUESTS, {
@@ -39,7 +40,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = {
 						75050,	-- An Eclectic Accord
 						74769,	-- Stemming the Irontide
-						73157,	--  Wings of Mercy
+						73157,	-- Wings of Mercy
 					},
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
@@ -56,7 +57,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(72713, {	-- Inheritance
 					["sourceQuests"] = { 72712 },	-- The Best We Have
 					["provider"] = { "n", 200403 },	-- Talon Damos
-					["coord"] = { 55, 37.2, THE_FORBIDDEN_REACH },
+					["coord"] = { 55.0, 37.2, THE_FORBIDDEN_REACH },
 				}),
 				q(72545, {	-- Creche Fallen
 					["sourceQuests"] = { 72713 },	-- Inheritance
@@ -111,7 +112,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["sourceQuests"] = {
 					75050,	-- An Eclectic Accord
 					74769,	-- Stemming the Irontide
-					73157,	--  Wings of Mercy
+					73157,	-- Wings of Mercy
 				},
 				["provider"] = { "n", 200010 },	-- Atrenosh Hailstone
 				["coord"] = { 34.7, 57.6, THE_FORBIDDEN_REACH },
@@ -275,40 +276,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["sourceQuests"] = { 74911 },	-- New Horizons
 				["sourceQuestNumRequired"] = 0,	-- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200563 },	-- Kraxxus
-				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				["coord"] = { 34.0, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			q(75263, {	-- Reach South
 				["sourceQuests"] = { 74911 },	-- New Horizons
 				["sourceQuestNumRequired"] = 0,	-- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200563 },	-- Kraxxus
-				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				["coord"] = { 34.0, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			q(75237, {	-- Reach West
 				["sourceQuests"] = { 74911 },	-- New Horizons
 				["sourceQuestNumRequired"] = 0,	-- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200563 },	-- Kraxxus
-				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				["coord"] = { 34.0, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			-- Augmentation Evoker questline
 			q(72513, {	-- Our Destiny
 				["description"] = "You get this anywhere in the Dragon Isles when you specialize in Augmentation for the first time.",
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(72514, {	-- The High Creche
 				["sourceQuests"] = { 72513 },	-- Our Destiny
 				["provider"] = { "n", 199135 },	-- Scalecommander Emberthal
 				["coord"] = { 58.6, 68.5, THE_FORBIDDEN_REACH },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(72515, {	-- Augmenting a Dragon
 				["sourceQuests"] = { 72514 },	-- The High Creche
 				["provider"] = { "n", 199141 },	-- Scalecommander Emberthal
 				["coord"] = { 58.7, 70.4, THE_FORBIDDEN_REACH },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_10_1_5 },
 				["groups"] = {
+					i(249549, {	-- Draconic Crafter's Table (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(205162),	-- Nelthara (PET!)
 				},
 			}),
@@ -419,7 +426,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			q(75026, {	-- Up to the Highest Height!
 				["provider"] = { "n", 200558 },	-- Tukkaraq
-				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+				["coord"] = { 34.4, 58.6, THE_FORBIDDEN_REACH },
 			}),
 		})),
 	}),

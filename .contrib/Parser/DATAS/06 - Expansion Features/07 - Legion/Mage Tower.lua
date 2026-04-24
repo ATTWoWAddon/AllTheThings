@@ -2,21 +2,22 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
+local MageTowerFilter
 -- #if BEFORE BFA
-local MageTowerFilter = {["u"] = 41};
+MageTowerFilter = {["u"] = 41};
 -- #else
-local MageTowerFilter =
+MageTowerFilter =
 {["timeline"] = {
 	ADDED_7_2_0,
 	REMOVED_8_0_1,
 }};
+-- #endif
 local MageTowerFilter92 =
 {["timeline"] = {
 	ADDED_9_2_0,
 	REMOVED_10_0_0,
 	ADDED_10_0_5,
 }};
--- #endif
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	-- Original Legion content
@@ -81,6 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					116839,	-- Corrupting Shadows
 				},
 				["groups"] = {
+					i(142502),	-- Empowered Portal Stone (QI!)
 					artifact(383, {	-- Blades of the Fallen Prince
 						["classes"] = { DEATHKNIGHT },
 					}),

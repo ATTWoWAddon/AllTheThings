@@ -8,12 +8,12 @@ root(ROOTS.Zones, {
 			o(239828, {	-- Edge of Reality
 				["description"] = "When you click on the Edge of Reality, it will teleport you. Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
 				["coords"] = {
-					{ 51.1, 19.86, FROSTFIRE_RIDGE },
-					{ 52.4, 18.18, FROSTFIRE_RIDGE },
-					{ 53.8, 17.46, FROSTFIRE_RIDGE },
-					{ 47.7, 27.57, FROSTFIRE_RIDGE },
-					{ 39.0, 26.00, FROSTFIRE_RIDGE },
-					{ 47.7, 27.57, FROSTFIRE_RIDGE },
+					{ 51.1, 19.9, FROSTFIRE_RIDGE },
+					{ 52.4, 18.9, FROSTFIRE_RIDGE },
+					{ 53.8, 17.5, FROSTFIRE_RIDGE },
+					{ 47.7, 27.6, FROSTFIRE_RIDGE },
+					{ 39.0, 26.0, FROSTFIRE_RIDGE },
+					{ 47.7, 27.6, FROSTFIRE_RIDGE },
 					{ 51.6, 38.8, GORGROND },
 					{ 54.0, 45.8, GORGROND },
 					{ 56.0, 40.7, GORGROND },
@@ -45,9 +45,7 @@ root(ROOTS.Zones, {
 				["groups"] = {
 					o(239901, {	-- Voidtalon Egg
 						["modelScale"] = 1.5,
-						["groups"] = {
-							i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
-						},
+						["groups"] = { i(121815) },	-- Voidtalon of the Dark Star (MOUNT!)
 					}),
 				},
 			}),

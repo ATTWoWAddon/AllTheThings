@@ -33,71 +33,71 @@ root(ROOTS.ExpansionFeatures,
 						faction(FACTION_VIVIANNE, {["races"] = HORDE_ONLY}),	-- Vivianne
 					}),
 					n(QUESTS, {
-						q(37126, {	-- An Ogre Without His Sword...(A)
-							["provider"] = { "n", 86682 },	-- Retired Gorian Centurion(Tormmok)
+						q(37126, {	-- An Ogre Without His Sword... (A)
+							["qg"] = 86682,	-- Retired Gorian Centurion (Tormmok)
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(37180, {	-- An Ogre Without His Sword...(H)
-							["provider"] = { "n", 86682 },	-- Retired Gorian Centurion(Tormmok)
+						q(37180, {	-- An Ogre Without His Sword... (H)
+							["qg"] = 86682,	-- Retired Gorian Centurion (Tormmok)
 							["races"] = HORDE_ONLY,
 						}),
 						q(37081, {	-- Burning Rage
-							["provider"] = { "n", 86933 },	-- Warspear Magus(Vivianne)
+							["qg"] = 86933,	-- Warspear Magus (Vivianne)
 							["races"] = HORDE_ONLY,
 						}),
 						q(37085, {	-- Fury of the Clan
-							["provider"] = { "n", 86964 },	-- Bloodmane Earthbinder(Leorajh)
+							["qg"] = 86964,	-- Bloodmane Earthbinder (Leorajh)
 							["races"] = HORDE_ONLY,
 						}),
 						q(37080, {	-- Glorious Slaughter
-							["provider"] = { "n", 86927 },	-- Stormshield Death Knight(Delvar Ironfist)
+							["qg"] = 86927,	-- Stormshield Death Knight (Delvar Ironfist)
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(37140, {	-- Leorajh's Prayer Beads(A)
-							["provider"] = { "n", 86964 },	-- Bloodmane Earthbinder(Leorajh)
+						q(37140, {	-- Leorajh's Prayer Beads (A)
+							["qg"] = 86964,	-- Bloodmane Earthbinder (Leorajh)
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(37181, {	-- Leorajh's Prayer Beads(H)
-							["provider"] = { "n", 86964 },	-- Bloodmane Earthbinder(Leorajh)
+						q(37181, {	-- Leorajh's Prayer Beads (H)
+							["qg"] = 86964,	-- Bloodmane Earthbinder(Leorajh)
 							["races"] = HORDE_ONLY,
 						}),
 						q(36947, {	-- New Strength
-							["provider"] = { "n", 86682 },	-- Retired Gorian Centurion(Tormmok)
+							["qg"] = 86682,	-- Retired Gorian Centurion (Tormmok)
 						}),
 						q(37070, {	-- Power of the Nether
-							["provider"] = { "n", 86945 },	-- Sunsworn Warlock(Aeda Brightdawn)
+							["qg"] = 86945,	-- Sunsworn Warlock (Aeda Brightdawn)
 							["races"] = HORDE_ONLY,
 						}),
-						q(37137, {	-- Scrying Hard or Hardly Scrying(A)
-							["provider"] = { "n", 86946 },	-- Outcast Talonpriest(Talonpriest Ishaal)
+						q(37137, {	-- Scrying Hard or Hardly Scrying (A)
+							["qg"] = 86946,	-- Outcast Talonpriest (Talonpriest Ishaal)
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(37182, {	-- Scrying Hard or Hardly Scrying(H)
-							["provider"] = { "n", 86946 },	-- Outcast Talonpriest(Talonpriest Ishaal)
+						q(37182, {	-- Scrying Hard or Hardly Scrying (H)
+							["qg"] = 86946,	-- Outcast Talonpriest (Talonpriest Ishaal)
 							["races"] = HORDE_ONLY,
 						}),
 						q(37128, {	-- Settling Grievances
-							["provider"] = { "n", 86945 },	-- Sunsworn Warlock(Aeda Brightdawn)
+							["qg"] = 86945,	-- Sunsworn Warlock (Aeda Brightdawn)
 							["races"] = HORDE_ONLY,
 						}),
 						q(37131, {	-- The Dark Lady's Concern
-							["provider"] = { "n", 86933 },	-- Warspear Magus(Vivianne)
+							["qg"] = 86933,	-- Warspear Magus (Vivianne)
 							["races"] = HORDE_ONLY,
 						}),
 						q(37047, {	-- The Light's Gift
-							["provider"] = { "n", 86934 },	-- Sha'tari Defender(Defender Illona)
+							["qg"] = 86934,	-- Sha'tari Defender (Defender Illona)
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37127, {	-- The Light of Exodus
-							["provider"] = { "n", 86934 },	-- Sha'tari Defender(Defender Illona)
+							["qg"] = 86934,	-- Sha'tari Defender (Defender Illona)
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37084, {	-- The Shadows Call
-							["provider"] = { "n", 86946 },	-- Outcast Talonpriest(Talonpriest Ishaal)
+							["qg"] = 86946,	-- Outcast Talonpriest (Talonpriest Ishaal)
 							["races"] = HORDE_ONLY,
 						}),
 						q(37129, {	-- Unwelcome Memories
-							["provider"] = { "n", 86927 },	-- Stormshield Death Knight(Delvar Ironfist)
+							["qg"] = 86927,	-- Stormshield Death Knight (Delvar Ironfist)
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
@@ -106,7 +106,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(122298, {	-- Bodyguard Miniaturization Device (TOY!)
-									["cost"] = { { "c", 824, 250 }, },	-- 250x Garrison Resources
+									["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
 								}),
 							},
 						}),
@@ -114,7 +114,15 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(122298, {	-- Bodyguard Miniaturization Device (TOY!)
-									["cost"] = { { "c", 824, 250 }, },	-- 250x Garrison Resources
+									["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
+								}),
+								i(245437, {	-- Orc-Forged Weaponry (DECOR!)
+									["cost"] = { { "i", 113681, 75 } },	-- 75x Iron Horde Scraps
+									["timeline"] = { ADDED_11_2_7 },
+								}),
+								i(245442, {	-- Warsong Footrest (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 								}),
 							},
 						}),

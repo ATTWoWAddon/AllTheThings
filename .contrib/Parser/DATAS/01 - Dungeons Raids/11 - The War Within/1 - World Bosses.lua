@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 ------ Encounter Constants ------
 local ORTA = 2625
 local AOH = 2635
@@ -121,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			BossWorldQuest(AOH, 82653),	-- Aggregation of Horrors (WQ)
 			Boss(KORDAC, {	-- Kordac <Dormant Protector>
-				--["questID"] = xx,
+				-- ["questID"] = xx,
 			}),
 			BossWorldQuest(KORDAC, 81630),	-- Activation Protocol (WQ)
 			Boss(SHURRAI, {	-- Shurrai <Atrocity of the Undersea>

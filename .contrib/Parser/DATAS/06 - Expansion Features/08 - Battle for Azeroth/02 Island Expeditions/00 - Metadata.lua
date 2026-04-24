@@ -6,8 +6,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 	n(ISLAND_EXPEDITIONS, {
 		["description"] = "Island expeditions are a 3-player scenario. Each faction will sail across the waters where they will harvest and steal any Azerite they can find from these islands. Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for each of their respective factions. Ships and queueing will take place in Dazar'alor for Horde and Boralus for Alliance. These are unlocked Account-Wide once you have finished the introduction questline on one character.",
 		["crs"] = {
-			143968,	--  Expedition Map [Alliance Side]
-			143967,	--  Expedition Map [Horde Side]
+			143968,	-- Expedition Map [Alliance Side]
+			143967,	-- Expedition Map [Horde Side]
 		},
 		["maps"] = {
 			1501,	-- Crestfall

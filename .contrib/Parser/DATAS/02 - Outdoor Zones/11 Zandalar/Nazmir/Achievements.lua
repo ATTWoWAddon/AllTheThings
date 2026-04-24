@@ -69,6 +69,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				crit(40550, {	-- Stonebloom
 					["provider"] = {"o",292825},	-- Stonebloom
 					["coords"] = {
+						{ 29.9, 42.9, NAZMIR },
 						{ 54.5, 56.1, NAZMIR },
 						{ 55.4, 67.1, NAZMIR },
 						{ 76.3, 61.0, NAZMIR },

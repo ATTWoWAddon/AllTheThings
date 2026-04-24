@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 ARGENT_TOURNAMENT = createHeader({
 	readable = "The Argent Tournament",
 	icon = 236689,
@@ -23,7 +24,7 @@ local CRUSADER_DAILY_OnClick = [[_.OnClickDB.PopoutLinkedAchievement]]
 local SILVER_COVENTANT_DAILY_OnClick = [[_.OnClickDB.PopoutLinkedAchievement]]
 local SUNREAVERS_DAILY_OnClick = [[_.OnClickDB.PopoutLinkedAchievement]]
 -- Very misleading to change what is popped out, I think we will find an alternate solution for this eventually,
--- but for now I'd like Retail to not perform this swap -- Runaway
+-- but for now I'd like Retail to not perform this swap	-- Runaway
 -- #IF NOT ANYCLASSIC
 CRUSADER_DAILY_OnClick = nil
 SILVER_COVENTANT_DAILY_OnClick = nil
@@ -83,7 +84,7 @@ local CLASSIC_ONLY_DB_FUNC = function(func)
 	-- #ENDIF
 end
 
-local FORCE_ITEM_FACTION = function(item, faction) -- Overwrite bad "races" Blizzard API data and force set it to faction only
+local FORCE_ITEM_FACTION = function(item, faction)	-- Overwrite bad "races" Blizzard API data and force set it to faction only
 	return i(item , {
 		["_drop"] = { "races" },
 		["races"] = faction,
@@ -2672,10 +2673,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["groups"] = {
 						objective(1, {	-- 0/6 Fallen Hero's Spirit blessed
 							["providers"] = {
-								{ "n", 32149 },	-- Fallen Hero's Spirit
-								{ "i", 47033 },	-- Light-Blessed Relic
-								{ "o", 195344 },-- Discarded Soul Crystal
-								{ "i", 47035 },	-- Discarded Soul Crystal
+								{ "n", 32149 },		-- Fallen Hero's Spirit
+								{ "i", 47033 },		-- Light-Blessed Relic
+								{ "o", 195344 },	-- Discarded Soul Crystal
+								{ "i", 47035 },		-- Discarded Soul Crystal
 							},
 						}),
 					},
@@ -4321,12 +4322,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						FORCE_ITEM_FACTION(45668, ALLIANCE_ONLY),	-- Exodar Doublet
 						FORCE_ITEM_FACTION(45671, ALLIANCE_ONLY),	-- Gnomeregan Doublet
 						FORCE_ITEM_FACTION(45666, ALLIANCE_ONLY),	-- Ironforge Doublet
-						FORCE_ITEM_FACTION(45672, HORDE_ONLY),	  -- Orgrimmar Doublet
-						FORCE_ITEM_FACTION(45669, HORDE_ONLY),	  -- Sen'jin Doublet
-						FORCE_ITEM_FACTION(45664, HORDE_ONLY),	  -- Silvermoon Doublet
+						FORCE_ITEM_FACTION(45672, HORDE_ONLY),		-- Orgrimmar Doublet
+						FORCE_ITEM_FACTION(45669, HORDE_ONLY),		-- Sen'jin Doublet
+						FORCE_ITEM_FACTION(45664, HORDE_ONLY),		-- Silvermoon Doublet
 						FORCE_ITEM_FACTION(45667, ALLIANCE_ONLY),	-- Stormwind Doublet
-						FORCE_ITEM_FACTION(45673, HORDE_ONLY),	  -- Thunder Bluff Doublet
-						FORCE_ITEM_FACTION(45674, HORDE_ONLY),	  -- Undercity Doublet
+						FORCE_ITEM_FACTION(45673, HORDE_ONLY),		-- Thunder Bluff Doublet
+						FORCE_ITEM_FACTION(45674, HORDE_ONLY),		-- Undercity Doublet
 					},
 				}),
 				n(33307, {	-- Corporal Arthur Flew <Stormwind Quartermaster>
@@ -4438,6 +4439,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						})),
 						champ(95, i(48718, {	-- Repurposed Lava Dredger
 							["timeline"] = { REMOVED_6_1_0 },
+						})),
+						champ(25, i(269992, {	-- Sharpened Arcanite Warglaive
+							["timeline"] = { ADDED_12_0_0 },
 						})),
 						champ(60, i(42952, {	-- Stained Shadowcraft Spaulders
 							["timeline"] = { REMOVED_6_1_0 },

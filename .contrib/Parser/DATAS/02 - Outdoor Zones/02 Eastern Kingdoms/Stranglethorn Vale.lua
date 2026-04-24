@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if BEFORE CATA
 local OnUpdateForBloodsail = [[function(t)
 	if t.collectible then
@@ -22,7 +23,10 @@ local OnUpdateForBloodsail = [[function(t)
 		local repForAdmiral = isHuman and 220 or 200;
 -- #endif
 		if t.admiral.collected then repForAdmiral = 0; end
-		t.minReputation[2] = math.max(t.reputation, 41999) + repForDressing + repForAdmiral;
+		t.maxPossibleReputation = math.max(t.reputation, 41999) + repForDressing + repForAdmiral;
+		if t.maxPossibleReputation < 42000 then
+			t.locked = true;
+		end
 -- #endif
 	end
 end]];
@@ -72,6 +76,9 @@ local OnTooltipForBloodsail = [[function(t, tooltipInfo)
 		if not t.admiral.saved then
 			_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.admiral);
 		end
+		if t.maxPossibleReputation < 42000 then
+			tinsert(tooltipInfo, { left = "You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!", r = 1, g = 0.5, b = 0.5, wrap = true });
+		end
 	end
 end]];
 local OnTooltipForBootyBay = [[function(t, tooltipInfo)
@@ -83,6 +90,7 @@ local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
 	end
 end]];
+
 -- #if SEASON_OF_DISCOVERY
 local bloodicon = function(item)	-- Assign an Atal'ai Blood Icon cost to an item.
 	applycost(item, { "i", 220636, 1 });
@@ -124,6 +132,7 @@ local real = function(cost, item)	-- Assign a Tarnished Undermine Real cost to a
 	return item;
 end
 -- #endif
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(STRANGLETHORN_VALE, {
 		["lore"] = "The Stranglethorn Vale is a vast jungle south of Duskwood.\n\nJungle trolls patrol this steaming rainforest. Ancient Gurubashi trolls once ruled the region, and the ruins of their great cities crumble in the jungle's heat and growth. Naga hunt along the coast and vicious animals and plants, including the eponymous strangle-thorns, make travel dangerous. The Arena, a center for gladiatorial games set in a ruined Gurubashi fighting stadium, draws shady characters of all races. The Blackwater Raiders, a vile group of pirates, make their home in Booty Bay, on the Stranglethorn's southern coast.",
@@ -138,36 +147,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(781),	-- Explore Stranglethorn Vale
 				ach(940),	-- The Green Hills of Stranglethorn
 			}),
-			pvp(o(179697, {	-- Arena Treasure Chest
-				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
-				["coords"] = {
-					-- #if AFTER CATA
-					{ 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					{ 30.5, 47.8, STRANGLETHORN_VALE },
-					-- #endif
-				},
-				["groups"] = {
-					ach(389),	-- Gurubashi Arena Master
-					i(18706, {	-- Arena Master
-						-- #if BEFORE WRATH
-						["lore"] = "Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-						-- #endif
-					}),
-					i(18711),	-- Arena Bands
-					i(18710),	-- Arena Bracers
-					i(18712),	-- Arena Vambraces
-					i(18709),	-- Arena Wristguards
-					i(126948, {	-- Defending Champion
-						["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
-						["timeline"] = { ADDED_6_2_0 },
-						["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
-					}),
-					i(122222, {	-- Music Roll: Angelic
-						["timeline"] = { ADDED_6_1_0 },
-					}),
-				},
-			})),
 			explorationHeader({
 				exploration(123),	-- Bal'lal Ruins
 				exploration(127),	-- Balia'mah Ruins
@@ -201,9 +180,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FACTIONS, {
 				faction(FACTION_BLOODSAIL_BUCCANEERS, {	-- Bloodsail Buccaneers
 					["icon"] = 133694,
-					-- #if BEFORE WRATH
-					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, EXALTED - 1 },	-- Bloodsail Buccaneers, must be 20999 into Revered.
-					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForBloodsail,
 					["OnUpdate"] = OnUpdateForBloodsail,
@@ -377,7 +353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 38.1, 50.0, NORTHERN_STRANGLETHORN },
 						-- #else
-						{ 32, 28.6, STRANGLETHORN_VALE },
+						{ 32.0, 28.6, STRANGLETHORN_VALE },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_1 },
@@ -613,7 +589,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 38.1, 50.0, NORTHERN_STRANGLETHORN },
 						-- #else
-						{ 32, 28.6, STRANGLETHORN_VALE },
+						{ 32.0, 28.6, STRANGLETHORN_VALE },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_1 },
@@ -621,7 +597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Bloodscalp Totem
 							["provider"] = { "i", 23679 },	-- Bloodscalp Totem
-							["coord"] = { 30.8, 19, STRANGLETHORN_VALE },
+							["coord"] = { 30.8, 19.0, STRANGLETHORN_VALE },
 							["cr"] = 697,	-- Bloodscalp Shaman
 						}),
 					},
@@ -759,7 +735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 978 },	-- Kurzen Subchief
 						}),
 						objective(3, {	-- 0/1 Kurzen's Head
-							["provider"] = { "n", 3615 },	-- Kurzen's Head
+							["provider"] = { "i", 3615 },	-- Kurzen's Head
 							["coord"] = { 49.6, 4.0, STRANGLETHORN_VALE },
 							["cr"] = 813,	-- Colonel Kurzen
 						}),
@@ -791,10 +767,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(626, {	-- Cortello's Riddle (3/3)
 					["sourceQuest"] = 625,	-- Cortello's Riddle (2/3)
-					["provider"] = { "o", 2555 },	-- Musty Scroll
-					["coord"] = { 31.1, 66.1, DUSTWALLOW_MARSH },
+					["providers"] = {
+						{ "o", 2555 },	-- Musty Scroll
+						{ "o", 2556 },	-- Cortello's Treasure
+					},
+					["coords"] = {
+						{ 31.1, 66.1, DUSTWALLOW_MARSH },
+						{ 80.8, 46.8, THE_HINTERLANDS },
+					},
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
 					["lvl"] = 35,
 					["groups"] = {
 						i(11324, {	-- Explorer's Knapsack
@@ -829,7 +810,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1116, {	-- Dream Dust in the Swamp
 					["sourceQuest"] = 1115,	-- The Rumormonger
 					["qg"] = 773,	-- Krazek
-					["coord"] = { 27, 77.2, STRANGLETHORN_VALE },
+					["coord"] = { 27.0, 77.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 30,
@@ -937,7 +918,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
 							["timeline"] = { REMOVED_4_0_3 },
-							["cost"] = {{ "i", 4457, 10 }},	-- Barbecued Buzzard Wing
+							["cost"] = {
+								{ "i", 4457, 10 },	-- Barbecued Buzzard Wing
+								{ "i", 4595, 5 },	-- Junglevine Wine
+							},
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Smotts' Cutlass
@@ -945,11 +929,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "i", 3935 },	-- Smotts' Cutlass
 									["coord"] = { 32.5, 81.9, STRANGLETHORN_VALE },
 									["cr"] = 1494,	-- Negolash
-								}),
-								objective(2, {	-- 0/5 Junglevine Wine
-									["provider"] = { "i", 4595 },	-- Junglevine Wine
-									["coord"] = { 40.8, 73.6, STRANGLETHORN_VALE },
-									["cr"] = 2832,	-- Nixxrax Fillamug <Food & Drink>
 								}),
 							},
 						}),
@@ -1003,7 +982,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Place the grim message.
 							["provider"] = { "i", 9319 },	-- Nimboya's Laden Pike
-							["coord"] = { 32, 58, THE_HINTERLANDS },
+							["coord"] = { 32.0, 58.0, THE_HINTERLANDS },
 							["cost"] = {
 								{ "i", 15002, 1 },	-- Nimboya's Pike
 								{ "i", 9320, 20 },	-- Witherbark Skull x20
@@ -1092,7 +1071,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
 					-- #endif
 					["qg"] = 738,	-- Private Thorsen
-					["coord"] = { 40, 8, STRANGLETHORN_VALE },
+					["coord"] = { 40.0, 8.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1208,11 +1187,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(594, {	-- Message in a Bottle (1/2)
-					["providers"] = {
-						{ "i", 4098 },	-- Carefully Folded Note
-						{ "o", 2560 },	-- Half-Buried Bottle
+				q(3645, {	-- Membership Card Renewal [H]
+					["sourceQuest"] = 3643,	-- Show Your Work
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["repeatable"] = true,
+					["lvl"] = 30,
+					["groups"] = {
+						i(10790),	-- Gnome Engineer Membership Card
 					},
+				}),
+				q(594, {	-- Message in a Bottle (1/2)
+					["provider"] = { "i", 4098 },	-- Carefully Folded Note
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
@@ -1235,7 +1226,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(570, {	-- Mok'thardin's Enchantment (1/4)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
-					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["coord"] = { 32.0, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
@@ -1256,7 +1247,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(572, {	-- Mok'thardin's Enchantment (2/4)
 					["sourceQuest"] = 570,	-- Mok'thardin's Enchantment (1/4)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
-					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["coord"] = { 32.0, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
@@ -1270,7 +1261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(571, {	-- Mok'thardin's Enchantment (3/4)
 					["sourceQuest"] = 572,	-- Mok'thardin's Enchantment (2/4)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
-					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["coord"] = { 32.0, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
@@ -1284,7 +1275,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(573, {	-- Mok'thardin's Enchantment (4/4)
 					["sourceQuest"] = 571,	-- Mok'thardin's Enchantment (3/4)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
-					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["coord"] = { 32.0, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
@@ -1543,7 +1534,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(593, {	-- Filling the Soul Gem
 							["qg"] = 2530,	-- Yenniku <Darkspear Hostage>
-							["coord"] = { 39, 58.2, STRANGLETHORN_VALE },
+							["coord"] = { 39.0, 58.2, STRANGLETHORN_VALE },
 							["cost"] = { { "i", 3912, 1 } },	-- Soul Gem
 							["repeatable"] = true,
 							["groups"] = {
@@ -1976,7 +1967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 4027 },	-- Catelyn's Blade
 								{ "o", 2576 },	-- Altar of the Tides
 							},
-							["coord"] = { 25, 23.6, STRANGLETHORN_VALE },
+							["coord"] = { 25.0, 23.6, STRANGLETHORN_VALE },
 							["cr"] = 2624,	-- Gazban
 						}),
 						i(4120, {	-- Robe of Crystal Waters
@@ -2124,9 +2115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(8552, {	-- The Monogrammed Sash
 					["altQuests"] = { 620 },	-- The Monogrammed Sash [Old]
 					["provider"] = { "i", 3985 },	-- Monogrammed Sash
-					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 1493,	-- Mok'rash
 					["lvl"] = 35,
 				}),
 				q(3642, {	-- The Pledge of Secrecy
@@ -2624,23 +2613,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, pvp(n(createHeader({	-- The Blood Moon
-				readable = "The Blood Moon",
+			applyclassicphase(SOD_PHASE_TWO, pvp(n(createHeader({	-- Blood Moon
+				readable = "Blood Moon",
 				icon = 237513,
 				text = {
-					en = "The Blood Moon",
-					-- es = "",
-					-- de = "",
-					-- fr = "",
-					-- it = "",
-					-- pt = "",
-					-- ru = "",
-					-- ko = "",
+					en = "Blood Moon",
+					de = "Blutmond",
+					es = "Luna Sangrienta",
+					mx = "Luna de sangre",
+					fr = "Lune de sang",
+					it = "Blood Moon",
+					ko = "핏빛 달",
+					pt = "Lua Sangrenta",
+					ru = "Кровавая луна",
 					cn = "鲜血之月",
 					tw = "血月",
 				},
 				description = {
 					en = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
+					-- TODO: de = "",
+					es = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalariano.",
+					mx = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalar.",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这是一个在荆棘谷举行的自由对战 PvP 活动，每3小时从服务器时间午夜开始持续30分钟。\n\n击杀玩家以获得可叠加的鲜血之月增益效果——献给血之洛阿的鲜血。该效果最多可叠加255次。\n每次击杀可获得5层鲜血。\n死亡会失去鲜血。\n前往鲜血祭坛 |cffffffff（地图上的红色旗帜）|r，将献给血之洛阿的鲜血兑换为铜质鲜血硬币、银质鲜血硬币和金质鲜血硬币。只需走到祭坛旁，硬币就会自动出现在你的背包中。\n\n你可以通过与赞达拉使者交谈来选择退出该活动。",
+					-- TODO: tw = "",
 				},
 			}), {
 				i(213168, {	-- Copper Blood Coin
@@ -2661,13 +2661,62 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}))),
 			-- #endif
 			n(TREASURES, {
+				pvp(o(179697, {	-- Arena Treasure Chest
+					["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 30.5, 47.8, STRANGLETHORN_VALE },
+						-- #endif
+					},
+					["groups"] = {
+						ach(389),	-- Gurubashi Arena Master
+						i(18706, {	-- Arena Master
+							-- #if BEFORE WRATH
+							["lore"] = "Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
+							-- #endif
+						}),
+						i(18711),	-- Arena Bands
+						i(18710),	-- Arena Bracers
+						i(18712),	-- Arena Vambraces
+						i(18709),	-- Arena Wristguards
+						i(126948, {	-- Defending Champion
+							["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
+							["timeline"] = { ADDED_6_2_0 },
+							["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
+						}),
+						i(122222, {	-- Music Roll: Angelic
+							["timeline"] = { ADDED_6_1_0 },
+						}),
+					},
+				})),
 				o(2744, {	-- Giant Clam
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 28.1, 45.9, NORTHERN_STRANGLETHORN },	-- The Vile Reef
+						-- #else
+						{ 25.8, 28.0, STRANGLETHORN_VALE },
+						-- #endif
 					},
 					["groups"] = {
 						i(4611),	-- Blue Pearl
 						i(4655),	-- Giant Clam Meat
+					},
+				}),
+				o(2560, {	-- Half-Buried Bottle
+					["coords"] = {
+						{ 40.4, 60.6, STRANGLETHORN_VALE },
+						{ 37.0, 65.4, STRANGLETHORN_VALE },
+						{ 36.0, 71.1, STRANGLETHORN_VALE },
+						{ 33.7, 75.0, STRANGLETHORN_VALE },
+						{ 32.8, 78.7, STRANGLETHORN_VALE },
+						{ 36.4, 78.5, STRANGLETHORN_VALE },
+					},
+					["timeline"] = { REMOVED_4_0_3 },
+					["lvl"] = 45,
+					["groups"] = {
+						i(4098),	-- Carefully Folded Note
 					},
 				}),
 			}),
@@ -3035,6 +3084,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
+				n(2832, {	-- Nixxrax Fillamug <Food & Drink>
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.8, 73.6, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 40.8, 73.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
+					["groups"] = {
+						i(4595),	-- Junglevine Wine
+					},
+				}),
 				n(2626, {	-- Old Man Heming <Fisherman>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3072,6 +3133,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							real(25, i(226712)),	-- Wildheart Belt
 							real(50, i(226709)),	-- Wildheart Kilt
 							real(25, i(226713)),	-- Wildheart Boots
+							real(25, i(232423)),	-- Idol of Nurture
+							real(25, i(232424)),	-- Idol of Cruelty
+							real(25, i(232390)),	-- Idol of Celestial Focus
+							real(25, i(232391)),	-- Idol of Feline Focus
 						}),
 						cl(HUNTER, {
 							real(50, i(226720)),	-- Beaststalker's Cap
@@ -3102,6 +3167,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							real(25, i(226732)),	-- Lightforge Belt
 							real(50, i(226736)),	-- Lightforge Legplates
 							real(25, i(226738)),	-- Lightforge Boots
+							real(25, i(232389)),	-- Libram of Plenty
+							real(25, i(232420)),	-- Libram of Wrath
+							real(25, i(232421)),	-- Libram of Avenging \\ Libram of Avengement
 						}),
 						cl(PRIEST, {
 							real(50, i(226746)),	-- Devout Crown
@@ -3132,6 +3200,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							real(25, i(226754)),	-- Cord of Elements
 							real(50, i(226750)),	-- Kilt of Elements
 							real(25, i(226752)),	-- Boots of Elements
+							real(25, i(232392)),	-- Totem of Relentless Thunder
+							real(25, i(232409)),	-- Totem of the Elements
+							real(25, i(232416)),	-- Totem of Astral Flow
+							real(25, i(232419)),	-- Totem of Conductive Currents
 						}),
 						cl(WARLOCK, {
 							real(50, i(226762)),	-- Dreadmist Mask
@@ -3260,7 +3332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
 							-- #endif
 							-- #if AFTER CATA
-							{ "n", 49887}, 	-- Gappy Silvertooth <Bling Merchant>
+							{ "n", 49887},	-- Gappy Silvertooth <Bling Merchant>
 							-- #endif
 						},
 					}, {
@@ -3299,7 +3371,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_THREE, i(219147, {	-- Rune of Grace
 							["description"] = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
-							--["sourceQuest"] = ,	--
+							-- ["sourceQuest"] = ,	--
 							["cost"] = 10000,	-- 1g
 							["classes"] = { PALADIN },
 							["groups"] = {
@@ -3423,12 +3495,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.4, 75.8, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(224409, {	-- Serpent's Striker (2.6 speed)
-							["cost"] = {{ "i", 220589, 1 }},	-- Serpent's Striker (1.5 speed)
+							["cost"] = { { "i", 220589, 1 } },	-- Serpent's Striker (1.5 speed)
 						}),
 						--[[
 						-- CRIEVE NOTE: Yeah, this is on the vendor, but also causes a stack overflow. Let's not.
 						i(220589, {	-- Serpent's Striker (1.5 speed)
-							["cost"] = {{ "i", 224409, 1 }},	-- Serpent's Striker (2.6 speed)
+							["cost"] = { { "i", 224409, 1 } },	-- Serpent's Striker (2.6 speed)
 						}),
 						]]
 						bloodicon(i(220642)),	-- Banished Martyr's Plate Armor
@@ -3511,15 +3583,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 697,	-- Bloodscalp Shaman
 				}),
-				-- #if BEFORE CATA
-				i(4611, {	-- Blue Pearl
-					["crs"] = {
-						877,	-- Saltscale Forager
-						879,	-- Saltscale Hunter
-						871,	-- Saltscale Warrior
-					},
-				}),
-				-- #endif
 				i(5079, {	-- Cold Basilisk Eye
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 690,	-- Cold Eye Basilisk
@@ -3564,6 +3627,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
+				i(2799),	-- Gorilla Fang
 				i(1986, {	-- Gutrender
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 709,	-- Mosh'Ogg Warmonger
@@ -3588,6 +3652,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1679, {	-- Korg Bat
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 1142,	-- Mosh'Ogg Brute
+				}),
+				i(3985, {	-- Monogrammed Sash
+					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 1493,	-- Mok'rash
+					["lvl"] = 35,
 				}),
 				i(5755, {	-- Onyx Shredder Plate
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },

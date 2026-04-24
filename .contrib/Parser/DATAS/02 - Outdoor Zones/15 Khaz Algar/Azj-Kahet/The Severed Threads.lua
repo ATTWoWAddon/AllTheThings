@@ -1,18 +1,25 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 SEVERED_THREADS_PACT = createHeader({
 	readable = "Severed Threads Pact",
 	icon = 5409320,
 	text = {
 		en = "Severed Threads Pact",
+		-- TODO: de = "",
 		es = "Pacto de Los Hilos Cortados",
 		mx = "Pacto de Los Hilos Cortados",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Пакт Отрезанных нитей",
 		cn = "斩离之丝契约",
 		tw = "斷裂絲線合約",
 	},
 });
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		header(HEADERS.Faction, FACTION_THE_SEVERED_THREADS, {
@@ -54,12 +61,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}, {	-- RENOWN 4 --
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
-						q(82418),	-- A Cache of Crests and Power
+						q(82418, {["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- A Cache of Crests and Power
+						q(96116, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- A Cache of Crystals
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
 						q(85535),	-- Kej
 					}, {	-- RENOWN 9 --
-						q(82431),	-- Unsevered Threads
+						q(82431, {["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- Unsevered Threads
 						q(85531, {	-- Earth-Encrusted Gem
 							i(223951),	-- Earth-Encrusted Gem
 						}),
@@ -69,25 +77,27 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						}),
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
-						q(82433),	-- Power, Etched in the Deep
+						q(96117, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- A Cache of Crystals
+						q(82433, {["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- Power, Etched in the Deep
 					}, {	-- RENOWN 13 --
-						q(82434),	-- Unlock a Reward
+						q(96118, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- A Cache of Crystals
+						q(82434, {["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- Unlock a Reward
 					}, {	-- RENOWN 14 --
-						q(82435),	-- Valorstones
+						q(82435, {["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- Valorstones
 						q(85532),	-- The Wealth of a Kingdom
 					}, {	-- RENOWN 15 --
 					}, {	-- RENOWN 16 --
 					}, {	-- RENOWN 17 --
 					}, {	-- RENOWN 18 --
-						q(82440),	-- Crests
+						q(82440, {["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- Crests
 						q(85533),	-- Kej
 					}, {	-- RENOWN 19 --
 					}, {	-- RENOWN 20 --
 						q(82442),	-- Keep Up Appearances
 					}, {	-- RENOWN 21 --
-						q(82443),	-- Tokens of Her Favor
+						q(82443, {["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- Tokens of Her Favor
 					}, {	-- RENOWN 22 --
-						q(82444),	-- The Weaver's Cache
+						q(82444, {["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- The Weaver's Cache
 						q(85534),	-- The General's Cache
 					}, {	-- RENOWN 23 --
 					}, {	-- RENOWN 24 --
@@ -170,7 +180,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						}),
 						header(HEADERS.Achievement, 40832, {	-- Leave it to Weaver
 							q(83276, {	-- Saving Private Spindle
-								--["sourceQuests"] = {  },
+								-- ["sourceQuests"] = {  },
 								["provider"] = { "n", 207471 },	-- Widow Arak'nai
 								["coord"] = { 55.6, 43.9, AZJ_KAHET },
 								["minReputation"] = { FACTION_THE_WEAVER, 4 },
@@ -309,8 +319,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							80544,	-- The Weaver Weekly pickup
 						},
 						["sourceQuestNumRequired"] = 1,
-						["cost"] = {{"i",228949,1}},	-- Rumor Map
-					},{
+						["cost"] = { { "i", 228949, 1 } },	-- Rumor Map
+					}, {
 						q(81491, {	-- Armaments: Arbalests
 							["provider"] = { "n", 224171 },	-- Eirzay
 							["coord"] = { 61.3, 36.2, NERUBAR_LOWER },
@@ -411,8 +421,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							78248,	-- What We Still Have
 						},
 						["sourceQuestNumRequired"] = 1,
-						["cost"] = {{"i",228949,1}},	-- Rumor Map
-					},{
+						["cost"] = { { "i", 228949, 1 } },	-- Rumor Map
+					}, {
 						q(81495, {	-- Requisitions: Brightblooms
 							["provider"] = { "n", 224178 },	-- Ghos'opp
 							["coord"] = { 64.2, 21.2, NERUBAR },
@@ -522,8 +532,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							80544,	-- The Weaver Weekly pickup
 						},
 						["sourceQuestNumRequired"] = 1,
-						["cost"] = {{"i",228949,1}},	-- Rumor Map
-					},{
+						["cost"] = { { "i", 228949, 1 } },	-- Rumor Map
+					}, {
 						q(80573, {	-- Dropping Eaves: Spoils of War
 							["provider"] = { "n", 224193 },	-- Ru'murh
 							["coord"] = { 55.0, 26.6, NERUBAR },
@@ -647,7 +657,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								223750,	-- Lady Vinazian
 								220867,	-- Y'tekhi
 							},
-							["coord"] = { 55.2, 41, AZJ_KAHET },
+							["coord"] = { 55.2, 41.0, AZJ_KAHET },
 						}),
 						q(80671, {	-- Blade of the General
 							["sourceQuests"] = {
@@ -662,7 +672,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								220867,	-- Y'tekhi
 							},
 							["coords"] = {
-								{ 55.2, 41, AZJ_KAHET },
+								{ 55.2, 41.0, AZJ_KAHET },
 								{ 55.9, 42.2, AZJ_KAHET },
 							},
 							["groups"] = {
@@ -690,7 +700,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								223750,	-- Lady Vinazian
 								220867,	-- Y'tekhi
 							},
-							["coord"] = { 55.2, 41, AZJ_KAHET },
+							["coord"] = { 55.2, 41.0, AZJ_KAHET },
 							["groups"] = {
 								i(225573, {	-- The Vizier's Capital (S1)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
@@ -716,7 +726,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								223750,	-- Lady Vinazian
 								220867,	-- Y'tekhi
 							},
-							["coord"] = { 55.2, 41, AZJ_KAHET },
+							["coord"] = { 55.2, 41.0, AZJ_KAHET },
 							["groups"] = {
 								i(225571, {	-- The Weaver's Gratuity (S1)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
@@ -776,41 +786,41 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}},
 							["groups"] = {
 								i(226519, {	-- General's Expertise (TOY!)
-									["cost"] = {{"c", KEJ, 1100}},
+									["cost"] = { { "c", KEJ, 1100 } },
 								}),
 								i(226511, {	-- Nerubimorph Poultice
-									["cost"] = {{"c", KEJ, 25}},
+									["cost"] = { { "c", KEJ, 25 } },
 								}),
 								i(228940, {	-- Notorious Thread's Hearthstone
-									["cost"] = {{"c", KEJ, 3000}},
+									["cost"] = { { "c", KEJ, 3000 } },
 								}),
 								i(226520, {	-- Queen's Pheromone (CI!) (8.8mil Cost)
 									["description"] = "The item costs 8.8mil Kej, however the price of the item decreases by one digit for each exalted (9/9) Severed Threads leader for a final price of 8.888.",
-								--	["cost"] = {{"c", KEJ, 8888888}},
+									-- ["cost"] = { { "c", KEJ, 8888888 } },
 								}),
 								i(229193, {	-- Queen's Pheromone (CI!) (888k Cost)
 									["description"] = "The item costs 888.888 Kej, however the price of the item decreases by one digit for each exalted (9/9) Severed Threads leader for a final price of 8.888.",
-								--	["cost"] = {{"c", KEJ, 888888}},
+									-- ["cost"] = { { "c", KEJ, 888888 } },
 								}),
 								i(229194, {	-- Queen's Pheromone (CI!) (88k Cost)
 									["description"] = "The item costs 88.888 Kej, however the price of the item decreases by one digit for each exalted (9/9) Severed Threads leader for a final price of 8.888.",
-								--	["cost"] = {{"c", KEJ, 88888}},
+									-- ["cost"] = { { "c", KEJ, 88888 } },
 								}),
 								i(229195, {	-- Queen's Pheromone (CI!) (8.888 Cost)
 									["description"] = "This version for 8.888 Kej is only visible after you reached exalted (9/9) with all three (3) Severed Threads leaders.",
-									["cost"] = {{"c", KEJ, 8888}},
+									["cost"] = { { "c", KEJ, 8888 } },
 								}),
 								i(228949, {	-- Rumor Map
-									["cost"] = {{"c", KEJ, 25}},
+									["cost"] = { { "c", KEJ, 25 } },
 								}),
 								i(228950, {	-- Rumor Map Bundle
-									["cost"] = {{"c", KEJ, 125}},
+									["cost"] = { { "c", KEJ, 125 } },
 								}),
 								i(228952, {	-- Treasure Map Bundle
-									["cost"] = {{"c", KEJ, 125}},
+									["cost"] = { { "c", KEJ, 125 } },
 								}),
 								i(228946, {	-- Weaver's Lair Profession Table (CI!)
-									["cost"] = {{"c", KEJ, 500}},
+									["cost"] = { { "c", KEJ, 500 } },
 								}),
 							},
 						}),
@@ -819,8 +829,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				n(TREASURES, sharedData({
 					["isDaily"] = true,
 					["sourceQuest"] = 80544,	-- The Weaver Weekly pickup
-					["cost"] = {{"i",226514,1}},	-- Treasure Map: Weave-Rat Cache
-				},{
+					["cost"] = { { "i", 226514, 1 } },	-- Treasure Map: Weave-Rat Cache
+				}, {
 					["groups"] = bubbleDownFiltered({
 						["sharedDescription"] = "Interact with Thimble and follow him to reveal his cache.\nOnly available if your weekly pact is with The Weaver.",
 					},FILTERFUNC_objectID,{
@@ -925,9 +935,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				n(TREASURES, sharedData({
 					["isDaily"] = true,
 					["sourceQuest"] = 80545,	-- The General Weekly pickup
-					["cost"] = {{"i",226512,1}},	-- Treasure Map: Forgotten Memorial
+					["cost"] = { { "i", 226512, 1 } },	-- Treasure Map: Forgotten Memorial
 					["crs"] = { 220781 },	-- Aspirant Kiipka
-				},{
+				}, {
 					["groups"] = bubbleDownFiltered({
 						["sharedDescription"] = "Interact with the Forgotten Memorial to challenge Aspirant Kiipka and then defeat him.\nOnly available if your weekly pact is with The General.",
 					},FILTERFUNC_objectID,{
@@ -997,11 +1007,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				n(TREASURES, sharedData({
 					["isDaily"] = true,
 					["sourceQuest"] = 80546,	-- The Vizier Weekly pickup
-					["cost"] = {{"i",226513,1}},	-- Treasure Map: Kaheti Excavation
+					["cost"] = { { "i", 226513, 1 } },	-- Treasure Map: Kaheti Excavation
 					["crs"] = { 226483 },	-- Dig Spot
-				},{
+				}, {
 					["groups"] = bubbleDownFiltered({
-						["sharedDescription"] = "Talk to Dor'garad to reveal the Dig Spots. Interract with them to fill the progress bar. After you are done, he'll throw the treasure to you.\nOnly available if your weekly pact is with The General.",
+						["sharedDescription"] = "Talk to Dor'garad to reveal the Dig Spots. Interact with them to fill the progress bar. After you are done, he'll throw the treasure to you.\nOnly available if your weekly pact is with The General.",
 					},FILTERFUNC_objectID,{
 						o(455279, {	-- Vizier's Appreciation
 							["provider"] = { "n", 224900 },	-- Dor'garad
@@ -1085,25 +1095,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- Acquaintance
 							}, {	-- Crony
 								i(226512, {	-- Treasure Map: Forgotten Memorial
-									["cost"] = {{"c", KEJ, 25}},
+									["cost"] = { { "c", KEJ, 25 } },
 								}),
 								i(226507, {	-- Venom Dahn's Webscrub
-									["cost"] = {{"c", KEJ, 25}},
+									["cost"] = { { "c", KEJ, 25 } },
 								}),
 							}, {	-- Accomplice
 								i(226509, {	-- General's Insight
-									["cost"] = {{"c", KEJ, 50}},
+									["cost"] = { { "c", KEJ, 50 } },
 								}),
 							}, {	-- Collaborator
 							}, {	-- Accessory
 							}, {	-- Abettor
 							}, {	-- Conspirator
 								i(223278, {	-- Heritage Undercrawler (MOUNT!)
-									["cost"] = {{"c", KEJ, 2020}},
+									["cost"] = { { "c", KEJ, 2020 } },
 								}),
 							}, {	-- Mastermind
 								i(228944, {	-- Crypt Lord's Severed Thread (CI!)
-									["cost"] = {{"c", KEJ, 250}},
+									["cost"] = { { "c", KEJ, 250 } },
 								}),
 							},
 						}),
@@ -1125,22 +1135,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- Acquaintance
 							}, {	-- Crony
 								i(226514, {	-- Treasure Map: Weave-Rat Cache
-									["cost"] = {{"c", KEJ, 25}},
+									["cost"] = { { "c", KEJ, 25 } },
 								}),
 							}, {	-- Accomplice
 								i(226510, {	-- Weaver's Facade
-									["cost"] = {{"c", KEJ, 50}},
+									["cost"] = { { "c", KEJ, 50 } },
 								}),
 							}, {	-- Collaborator
 							}, {	-- Accessory
 							}, {	-- Abettor
 							}, {	-- Conspirator
 								i(223276, {	-- Widow's Undercrawler (MOUNT!)
-									["cost"] = {{"c", KEJ, 2020}},
+									["cost"] = { { "c", KEJ, 2020 } },
 								}),
 							}, {	-- Mastermind
 								i(228943, {	-- Spymaster's Severed Thread (CI!)
-									["cost"] = {{"c", KEJ, 250}},
+									["cost"] = { { "c", KEJ, 250 } },
 								}),
 							},
 						}),
@@ -1149,26 +1159,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 56.6, 43.0, AZJ_KAHET },
 						["groups"] = {
 							i(226195, {	-- Resonance Crystal Cluster
-								["cost"] = {{"c", KEJ, 200}},
+								["cost"] = { { "c", KEJ, 200 } },
 								["groups"] = {
-								--	currency(RESONANCE_CRYSTALS),
+									-- currency(RESONANCE_CRYSTALS),
 								},
 							}),
 							i(226198, {	-- Resonance Crystal Agglomeration
-								["cost"] = {{"c", KEJ, 2000}},
+								["cost"] = { { "c", KEJ, 2000 } },
 								["groups"] = {
-								--	currency(RESONANCE_CRYSTALS),
+									-- currency(RESONANCE_CRYSTALS),
 								},
 							}),
 							i(226196, {	-- Silk Kej Pouch
-								["cost"] = {{"c", RESONANCE_CRYSTALS, 800}},
+								["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
 								["minReputation"] = { FACTION_THE_SEVERED_THREADS, 8 },
 								["groups"] = {
 									currency(KEJ),
 								},
 							}),
 							i(226199, {	-- Silk Kej Purse
-								["cost"] = {{"c", RESONANCE_CRYSTALS, 8000}},
+								["cost"] = { { "c", RESONANCE_CRYSTALS, 8000 } },
 								["minReputation"] = { FACTION_THE_SEVERED_THREADS, 8 },
 								["groups"] = {
 									currency(KEJ),
@@ -1182,27 +1192,27 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							{		-- RENOWN 1 --
 							}, {	-- RENOWN 2 --
 								i(228420, {	-- Unsevered Thread
-									["cost"] = {{"c", KEJ, 85}},
+									["cost"] = { { "c", KEJ, 85 } },
 								}),
 							}, {	-- RENOWN 3 --
 							}, {	-- RENOWN 4 --
 								i(223125, {	-- Formula: Oil of Deep Toxins (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(223080, {	-- Recipe: Algari Alchemist Stone (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(225355, {	-- Technique: Contract: The Severed Threads (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 							}, {	-- RENOWN 5 --
 								i(218348, {	-- Thread-Bearer's Cloak (COSMETIC!)
-									["cost"] = {{"c", KEJ, 565}},
+									["cost"] = { { "c", KEJ, 565 } },
 								}),
 							}, {	-- RENOWN 6 --
 							}, {	-- RENOWN 7 --
 								i(217894, {	-- Nerubian Pheromone Secreter
-									["cost"] = {{"c", KEJ, 450}},
+									["cost"] = { { "c", KEJ, 450 } },
 								}),
 							}, {	-- RENOWN 8 --
 							}, {	-- RENOWN 9 --
@@ -1213,15 +1223,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- RENOWN 14 --
 							}, {	-- RENOWN 15 --
 								i(222972, {	-- Jump Jump (PET!)
-									["cost"] = {{"c", KEJ, 2250}},
+									["cost"] = { { "c", KEJ, 2250 } },
 								}),
 							}, {	-- RENOWN 16 --
 								i(218347, {	-- Thread-Bearer's Pauldrons (COSMETIC!)
-									["cost"] = {{"c", KEJ, 1125}},
+									["cost"] = { { "c", KEJ, 1125 } },
 								}),
 							}, {	-- RENOWN 17 --
 								i(228705, {	-- Arachnoserum (TOY!)
-									["cost"] = {{"c", KEJ, 1750}},
+									["cost"] = { { "c", KEJ, 1750 } },
 								}),
 							}, {	-- RENOWN 18 --
 							}, {	-- RENOWN 19 --
@@ -1229,11 +1239,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- RENOWN 21 --
 							}, {	-- RENOWN 22 --
 								i(223274, {	-- Ferocious Jawcrawler (MOUNT!)
-									["cost"] = {{"c", KEJ, 2815}},
+									["cost"] = { { "c", KEJ, 2815 } },
 								}),
 							}, {	-- RENOWN 23 --
 								i(223264, {	-- Aquamarine Swarmite (MOUNT!)
-									["cost"] = {{"c", KEJ, 3940}},
+									["cost"] = { { "c", KEJ, 3940 } },
 								}),
 							}, {	-- RENOWN 24 --
 							}, {	-- RENOWN 25 --
@@ -1254,25 +1264,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- Acquaintance
 							}, {	-- Crony
 								i(226518, {	-- Phero-Escape
-									["cost"] = {{"c", KEJ, 25}},
+									["cost"] = { { "c", KEJ, 25 } },
 								}),
 								i(226513, {	-- Treasure Map: Kaheti Excavation
-									["cost"] = {{"c", KEJ, 25}},
+									["cost"] = { { "c", KEJ, 25 } },
 								}),
 							}, {	-- Accomplice
 								i(226508, {	-- Vizier's Influence
-									["cost"] = {{"c", KEJ, 50}},
+									["cost"] = { { "c", KEJ, 50 } },
 								}),
 							}, {	-- Collaborator
 							}, {	-- Accessory
 							}, {	-- Abettor
 							}, {	-- Conspirator
 								i(223279, {	-- Royal Court Undercrawler (MOUNT!)
-									["cost"] = {{"c", KEJ, 2020}},
+									["cost"] = { { "c", KEJ, 2020 } },
 								}),
 							}, {	-- Mastermind
 								i(228945, {	-- Executor's Severed Thread (CI!)
-									["cost"] = {{"c", KEJ, 250}},
+									["cost"] = { { "c", KEJ, 250 } },
 								}),
 							},
 						}),

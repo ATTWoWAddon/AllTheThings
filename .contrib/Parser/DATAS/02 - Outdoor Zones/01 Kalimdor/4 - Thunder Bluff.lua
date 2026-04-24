@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(THUNDER_BLUFF, {
 		["lore"] = "Thunder Bluff is the Tauren capital city located in the northern part of the region of Mulgore. The whole of the city is built on bluffs several hundred feet above the surrounding landscape, and is accessible by elevators on the southwestern and northeastern sides.",
@@ -83,26 +84,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(PROFESSIONS, {
 				prof(FISHING, {
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							29349,	-- Craving Crayfish
-							29345,	-- Pond Predators
-							29354,	-- Shiny Baubles
-							29348,	-- The Race to Restock
-							29346,	-- The Ring's the Thing
-						},
-						["provider"] = { "n", 3028 },	-- Kah Mistrunner
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983),	-- Strand Crawler (PET!)
-							i(33820),	-- Weather-Beaten Fishing Hat
-							i(45991),	-- Bone Fishing Pole
-							i(45992),	-- Jeweled Fishing Pole
-							i(67410),	-- Very Unlucky Rock
-							i(67388),	-- String of Alligator Teeth
-						},
-					}),
 					i(122214, {	-- Music Roll: Mulgore Plains
 						["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
 						["coord"] = { 28.61, 24.61, THUNDER_BLUFF },
@@ -135,7 +116,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46, 58.2, MULGORE },
+						{ 46.0, 58.2, MULGORE },
 						-- #else
 						{ 51.2, 29.0, THE_BARRENS },
 						-- #endif
@@ -213,7 +194,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1845, {	-- Brutal Helm
 					["sourceQuest"] = 1844,	-- Chimaeric Horn
 					["qg"] = 6410,	-- Orm Stonehoof
-					["coord"] = { 39, 55.8, THUNDER_BLUFF },
+					["coord"] = { 39.0, 55.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -248,7 +229,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1844, {	-- Chimaeric Horn
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
 					["qg"] = 6410,	-- Orm Stonehoof
-					["coord"] = { 39, 55.8, THUNDER_BLUFF },
+					["coord"] = { 39.0, 55.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["classes"] = { WARRIOR },
@@ -347,7 +328,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 1770 },	-- Flame of Uzel
 								{ "i", 5810 },	-- Fresh Carcass
 							},
-							["coord"] = { 37, 68, ALTERAC_MOUNTAINS },
+							["coord"] = { 37.0, 68.0, ALTERAC_MOUNTAINS },
 							["cr"] = 4504,	-- Frostmaw
 						}),
 						-- #if BEFORE 4.0.3
@@ -419,7 +400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This quest becomes available at Classic Leatherworking skill level 10 when the character level requirement is met.",
 					-- #endif
 					["qg"] = 3050,	-- Veren Tallstrider
-					["coord"] = { 44, 44.6, THUNDER_BLUFF },
+					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["requireSkill"] = LEATHERWORKING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -435,7 +416,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1130, {	-- Melor Sends Word
 					["qg"] = 3387,	-- Jorn Skyseer
-					["coord"] = { 44.8, 59, THE_BARRENS },
+					["coord"] = { 44.8, 59.0, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -558,7 +539,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 2995 },	-- Tal
 						{ "i", 16283 },	-- Ahanu's Leather Goods
 					},
-					["coord"] = { 46.8, 50, THUNDER_BLUFF },
+					["coord"] = { 46.8, 50.0, THUNDER_BLUFF },
 					["maps"] = {
 						-- #if AFTER CATA
 						MULGORE,
@@ -620,6 +601,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						o(208867, {	-- Shiny Stones
+							i(69983),	-- Shiny Stone (QI!)
+						}),
+						--
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
@@ -641,7 +626,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 206157 },	-- Seaforium Mining Charge
 								{ "o", 403041 },	-- Blasting Supplies
 							},
-							["coord"] = { 61, 47, MULGORE },
+							["coord"] = { 61.0, 47.0, MULGORE },
 						}),
 					},
 				})),
@@ -683,7 +668,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 206345 },	-- Fish Chunks
 								{ "i", 206344 },	-- Knife Set
 							},
-							["cost"] = {{ "i", 6291, 1 }},	-- Raw Brilliant Smallfish
+							["cost"] = { { "i", 6291, 1 } },	-- Raw Brilliant Smallfish
 							["coord"] = { 53.48, 9.37, THUNDER_BLUFF },
 						}),
 						recipe(674, {	-- Dual Wield
@@ -739,7 +724,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Place the Toxic Fogger
 							["provider"] = { "i", 5638 },	-- Toxic Fogger
-							["coord"] = { 66, 45, STONETALON_MOUNTAINS },
+							["coord"] = { 66.0, 45.0, STONETALON_MOUNTAINS },
 						}),
 					},
 				}),
@@ -778,8 +763,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Etched Phial
 							["provider"] = { "i", 5868 },	-- Filled Etched Phial
-							["coord"] = { 60, 72, ASHENVALE },
-							["cost"] = {{ "i", 5867, 1 }},	-- Etched Phial
+							["coord"] = { 60.0, 72.0, ASHENVALE },
+							["cost"] = { { "i", 5867, 1 } },	-- Etched Phial
 						}),
 						-- #if BEFORE 4.0.3
 						i(5867, {	-- Etched Phial
@@ -808,9 +793,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 46.13, 51.69, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 5869, 1 },	-- Cloven Hoof
-					},
+					["cost"] = { { "i", 5869, 1 } },	-- Cloven Hoof
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -819,7 +802,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5869 },	-- Cloven Hoof
 								{ "o", 20807 },	-- Ancient Brazier
 							},
-							["coord"] = { 42, 35, THOUSAND_NEEDLES },
+							["coord"] = { 42.0, 35.0, THOUSAND_NEEDLES },
 						}),
 						i(6739, {	-- Cliffrunner's Aim
 							["timeline"] = { REMOVED_4_0_3 },
@@ -863,7 +846,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
-					["cost"] = {{ "i", 11018, 20 }},	-- Un'Goro Soil
+					["cost"] = { { "i", 11018, 20 } },	-- Un'Goro Soil
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
@@ -884,6 +867,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
+					["groups"] = {
+						i(243335, {	-- Tauren Bluff Rug (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				q(24540, {	-- War Dance
 					["sourceQuest"] = 24550,	-- Journey into Thunder Bluff
@@ -934,31 +922,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.05, 50.23, THUNDER_BLUFF },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(167860, {	-- Ancient Tauren Talisman
-							["timeline"] = { ADDED_8_2_0 },
-							["races"] = { TAUREN },
-						}),
-						i(45584, {	-- Thunder Bluff Tabard
-							["timeline"] = { ADDED_3_1_0 },
-						}),
-						i(64917, {	-- Cape of Thunder Bluff
-							["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64918, {	-- Mantle of Thunder Bluff
-							["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64919, {	-- Shroud of Thunder Bluff
-							["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67534, {	-- Thunder Bluff Satchel
-							["minReputation"] = { FACTION_THUNDER_BLUFF, REVERED },	-- Thunder Bluff, Revered.
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-					},
+					["groups"] = bubbleDownClassicRep(FACTION_THUNDER_BLUFF, {
+						{		-- Neutral
+							i(167860, {	-- Ancient Tauren Talisman
+								["timeline"] = { ADDED_8_2_0 },
+								["races"] = { TAUREN },
+							}),
+							i(243335, {	-- Tauren Bluff Rug (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(45584, {	-- Thunder Bluff Tabard
+								["timeline"] = { ADDED_3_1_0 },
+							}),
+						}, {	-- Friendly
+						}, {	-- Honored
+						}, {	-- Revered
+							i(67534, {	-- Thunder Bluff Satchel
+								["timeline"] = { ADDED_4_0_3 },
+							}),
+						}, {	-- Exalted
+							i(64917, {	-- Cape of Thunder Bluff
+								["timeline"] = { ADDED_4_0_3 },
+							}),
+							i(64918, {	-- Mantle of Thunder Bluff
+								["timeline"] = { ADDED_4_0_3 },
+							}),
+							i(64919, {	-- Shroud of Thunder Bluff
+								["timeline"] = { ADDED_4_0_3 },
+							}),
+						},
+					}),
 				}),
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 					["coord"] = { 53.8, 57.2, THUNDER_BLUFF },
@@ -1193,7 +1186,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2209,	-- Kris
 						923,	-- Longsword
 						2526,	-- Main Gauche
-						2208,	-- Poniad
+						2208,	-- Poniard
 						20977,	-- Recruit's Shortsword
 						2534,	-- Rondel
 						2027,	-- Scimitar
@@ -1374,7 +1367,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(4499),	-- Huge Brown Sack
 						i(4496),	-- Small Brown Pouch
 						-- #if AFTER CATA
-						--i(60335),	-- Thick Hide Pack	// blacklisted as its a common vendor good since cata
+						-- i(60335),	-- Thick Hide Pack	// blacklisted as its a common vendor good since cata
 						-- #endif
 					},
 				}),

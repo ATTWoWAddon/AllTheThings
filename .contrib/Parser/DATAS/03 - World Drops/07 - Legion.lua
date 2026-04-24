@@ -128,7 +128,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 		i(121338),	-- Bent-Blade Axe
 		i(121381),	-- Chipped Colossus Blade
 		i(132168, {	-- Common Legion Blade
-			["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 } -- TODO: is it removed?
+			["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }	-- TODO: is it removed?
 		}),
 		i(121383),	-- Curious Nar'thalas Student's Staff
 		i(121335),	-- Fixing Axe
@@ -146,7 +146,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 		i(121375),	-- Voo's Juicer
 	}),
 	filter(REAGENTS, {
-		i(151567),	-- Lightweave Cloth
+		i(151567, { ["timeline"] = { ADDED_7_3_0 } }),	-- Lightweave Cloth
+		i(124437),	-- Shal'dorei Silk
+		i(124438),	-- Unbroken Claw
+		i(124439),	-- Unbroken Tooth
 	}),
 	filter(RECIPES, {
 		prof(ALCHEMY, {

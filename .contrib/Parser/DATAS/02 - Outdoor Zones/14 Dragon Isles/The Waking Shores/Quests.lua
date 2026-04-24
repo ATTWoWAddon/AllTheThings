@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(QUESTS, {
@@ -20,8 +21,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(67700, {	-- To The Dragon Isles! [A]
 					["sourceQuests"] = {
-						66596,	--  Whispers in the Winds [A]
-						70197,	--	The Call of the Isles [A]
+						66596,	-- Whispers in the Winds [A]
+						70197,	-- The Call of the Isles [A]
 					},
 					["provider"] = { "n", 189077 },	-- Toddy Whiskers
 					["coord"] = { 22.7, 55.6, STORMWIND_CITY },
@@ -585,7 +586,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
 				}),
 				q(66436, {	-- Unearthed Troublemakers
-					--["sourceQuests"] = {  },	-- Unknown
+					-- ["sourceQuests"] = {  },	-- Unknown
 					["provider"] = { "n", 188735 },	-- Elementalist Taiyang
 					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
 					["groups"] = {
@@ -744,9 +745,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66528 },	-- King Without a Crown
 					["provider"] = { "n", 193954 },	-- Dervishian
 					["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
-					["groups"] = {
-						i(192465),	-- Wulferd's Award-Winning Camera
-					},
+					["groups"] = { i(192465) },	-- Wulferd's Award-Winning Camera
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16401.04, {	-- Ruby Lifecalling
@@ -770,9 +769,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70351 },	-- Garden Party
 					["provider"] = { "n", 190866 },	-- Akora
 					["coord"] = { 60.2, 66.4, THE_WAKING_SHORES },
-					["groups"] = {
-						i(193826),	-- Trusty Dragonkin Rake
-					},
+					["groups"] = { i(193826) },	-- Trusty Dragonkin Rake
 				}),
 				q(66828, {	-- Huddle at the Hollow
 					["sourceQuests"] = { 66827 },	-- Flowers of our Labor
@@ -1071,7 +1068,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
 					["sourceQuests"] = { 70134 },	-- Memories
 					["provider"] = { "i", 198661 },	-- Partially Destroyed Diary
-					["coord"] = { 23, 60, THE_WAKING_SHORES },
+					["coord"] = { 23.0, 60.0, THE_WAKING_SHORES },
 				}),
 			}),
 			header(HEADERS.Achievement, 16409, {	-- Let's Get Quacking
@@ -1216,10 +1213,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 187257 },	-- Aster Cloudgaze
-				["coord"] = { 75.8, 33., THE_WAKING_SHORES },
+				["coord"] = { 75.8, 33.0, THE_WAKING_SHORES },
 			}),
 			q(72709, {	-- Funding a Treasure Hunt
-				["sourceQuests"] = 72708,	-- Dragon Isles Supplies
+				["sourceQuests"] = { 72708 },	-- Dragon Isles Supplies
 				["provider"] = { "n", 198846 },	-- Cataloger Jakes
 				["coord"] = { 76.5, 34.2, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "questID", 70409 },	-- Archeologist Artifact Notes
@@ -1254,7 +1251,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
 				["classes"] = { ROGUE },
 				["groups"] = {
-					i(198133),	-- Golden Expedition Compass (QI!
+					i(198133),	-- Golden Expedition Compass (QI!)
 					i(198135),	-- Jeb's Supply Pack (QI!)
 					i(198139),	-- Jeb's Underwear
 					i(198134),	-- Shiny Surveyor Scope (QI!)

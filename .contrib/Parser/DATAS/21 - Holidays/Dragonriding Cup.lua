@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 DRAGONRIDING_CUP_ROOT = createHeader({
 	readable = "Dragonriding Cup",
 	constant = "DRAGONRIDING_CUP_HEADER",
@@ -9,19 +10,28 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 	text = {
 		-- #if BEFORE TWW
 		en = "Dragonriding Cup",
+		-- TODO: de = "",
 		es = "Copa de Jinete de dragones",
 		mx = "Copa de Dracoequitación",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Кубок полётов на драконе",
 		cn = "驭龙术杯赛",
 		tw = "飛龍騎術競速",
 		-- #ENDIF
 		en = "Skyriding Cup",
+		-- TODO: de = "",
 		es = "Copa de Surcacielos",
 		mx = "Copa de Cielonáutica",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Кубок полётов на Высший пилотаж",
-		--cn = TODO,
-		--tw = TODO,
-
+		cn = "驭空术杯赛",
+		tw = "天空騎術競速",
 	},
 });
 BROKEN_ISLES_CUP_HEADER = createHeader({
@@ -31,8 +41,13 @@ BROKEN_ISLES_CUP_HEADER = createHeader({
 	eventID = EVENTS.BROKEN_ISLES_CUP,
 	text = {
 		en = "Broken Isles Cup",
+		-- TODO: de = "",
 		es = "Copa Islas abruptas",
 		mx = "Copa Islas quebradas",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Кубок Расколотых островов",
 		cn = "破碎群岛杯",
 		tw = "破碎群島杯",
@@ -45,9 +60,13 @@ EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 	eventID = EVENTS.EASTERN_KINGDOMS_CUP,
 	text = {
 		en = "Eastern Kingdoms Cup",
+		de = "Der Pokal der Östlichen Königreiche",
 		es = "Copa Reinos del este",
 		mx = "Copa Reinos del este",
-		de = "Der Pokal der Östlichen Königreiche",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Кубок Восточных королевств",
 		cn = "东部王国杯",
 		tw = "東部王國杯",
@@ -60,9 +79,13 @@ KALIMDOR_CUP_HEADER = createHeader({
 	eventID = EVENTS.KALIMDOR_CUP,
 	text = {
 		en = "Kalimdor Cup",
+		de = "Kalimdorpokal",
 		es = "Copa Kalimdor",
 		mx = "Copa Kalimdor",
-		de = "Kalimdorpokal",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Кубок Калимдора",
 		cn = "卡利姆多杯",
 		tw = "卡林多杯",
@@ -75,8 +98,13 @@ NORTHREND_CUP_HEADER = createHeader({
 	eventID = EVENTS.NORTHREND_CUP,
 	text = {
 		en = "Northrend Cup",
+		-- TODO: de = "",
 		es = "Copa Rasganorte",
 		mx = "Copa Rasganorte",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Кубок Нордскола",
 		cn = "诺森德杯",
 		tw = "北裂境杯",
@@ -89,8 +117,13 @@ OUTLAND_CUP_HEADER = createHeader({
 	eventID = EVENTS.OUTLAND_CUP,
 	text = {
 		en = "Outland Cup",
+		-- TODO: de = "",
 		es = "Copa Terrallende",
 		mx = "Copa Terrallende",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Кубок Запределья",
 		cn = "外域杯",
 		tw = "外域杯",
@@ -103,13 +136,19 @@ PANDARIA_CUP_HEADER = createHeader({
 	eventID = EVENTS.PANDARIA_CUP,
 	text = {
 		en = "Pandaria Cup",
+		-- TODO: de = "",
 		es = "Copa Pandaria",
 		mx = "Copa Pandaria",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Кубок Пандарии",
 		cn = "潘达利亚杯",
 		tw = "潘達利亞杯",
 	},
 });
+
 -- These actually don't require any DF content
 local dragonridingrace = function(id, data)
 	local t = dragonridingrace(id, data);
@@ -118,11 +157,65 @@ local dragonridingrace = function(id, data)
 	t.repeatable = true;
 	return t;
 end
+
 local RIDERS_OF_AZEROTH_BADGE = 2588;
+
+-- TODO: I would like this file de-duplicated using common vendors with crs, but vendor items disappear when learned so
+-- would have to cross-reference wowhead i guess to figure out how to properly organize the items
+local VENDOR = {
+	MAZTHA = 206744,
+	DATHENDRASH = 212027,
+}
 
 root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT, {
 	["timeline"] = { ADDED_10_1_5 },
 	["groups"] = {
+		--[[
+		-- 11.2 - EK Cup
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			["timeline"] = { ADDED_11_2_0 },
+			["crs"] = {
+				VENDOR.MAZTHA,
+				VENDOR.DATHENDRASH,
+			},
+		},{
+			i(249560, {	-- Skymaster's Silver Mantle
+			}),
+			i(249561, {	-- Skymaster's Silver Cloak
+			}),
+			i(249562, {	-- Skymaster's Silver Tabard
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+			i(249563, {	-- Skymaster's Sapphire Crown
+			}),
+			i(249564, {	-- Skymaster's Sapphire Shoulderguards
+			}),
+			i(249565, {	-- Skymaster's Sapphire Epaulets
+			}),
+		})),
+		-- 12.0.1 - Outland Cup
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+			["timeline"] = { ADDED_12_0_1 },
+			["crs"] = {
+				VENDOR.MAZTHA,
+				VENDOR.DATHENDRASH,
+			},
+		},{
+			i(263503, {	-- Skymaster's Blood Circlet
+			}),
+			i(263501, {	-- Skymaster's Blood Cloak
+			}),
+			i(263500, {	-- Skymaster's Blood Mantle
+			}),
+			i(263504, {	-- Skymaster's Blood Pauldrons
+			}),
+			i(263502, {	-- Skymaster's Blood Tabard
+				["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+			}),
+		})),
+		--]]
 		applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Eastern Kingdom Cup
 			n(ACHIEVEMENTS, {
 				ach(18566, {	-- Eastern Kingdoms: Bronze
@@ -357,7 +450,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						220870,	-- Holiday Enthusiast
 						-- #endif
 						213769,	-- Holiday Enthusiast
-					 },
+					},
 					["coords"] = {
 						-- #if AFTER TWW
 						{ 46.1, 54.9, DORNOGAL },
@@ -387,9 +480,6 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						{ 27.1, 47.1, VALDRAKKEN },
 					},
 					["repeatable"] = true,
-					["groups"] = {
-						currency(RIDERS_OF_AZEROTH_BADGE),
-					},
 				}),
 				dragonridingrace(76469, {	-- Blasted Lands Bolt
 					["provider"] = { "n", 207357 },	-- Bronze Timekeeper
@@ -1134,9 +1224,6 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						-- #endif
 					},
 					["repeatable"] = true,
-					["groups"] = {
-						currency(RIDERS_OF_AZEROTH_BADGE),
-					},
 				}),
 				dragonridingrace(75472, {	-- Ahn'Qiraj Circuit
 					["provider"] = { "n", 204092 },	-- Bronze Timekeeper
@@ -2102,27 +2189,56 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["repeatable"] = true,
 				}),
 				q(79127, {	-- The Outland Cup Begins
-					["provider"] = { "n", 214031 },	-- Racing Enthusiast
-					["coord"] = {61.8, 75.1, STORMWIND_CITY },
+					["qgs"] = {
+						214031,	-- Racing Enthusiast
+						214085,	-- Racing Enthusiast
+						-- #if AFTER TWW
+						220307,	-- Holiday Enthusiast
+						220870,	-- Holiday Enthusiast
+						-- #endif
+					},
+					["coords"] = {
+						{ 61.8, 75.1, STORMWIND_CITY },
+						{ 38.4, 62.1, LEGION_DALARAN },
+						-- #if AFTER TWW
+						{ 46.0, 55.1, DORNOGAL },
+						{ 55.5, 61.0, DORNOGAL },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 				}),
 				q(79128, {	-- The Outland Cup Begins
-					["provider"] = { "n", 213769 },	-- Racing Enthusiast
-					["coord"] = { 52.8, 79.5, ORGRIMMAR },
+					["qgs"] = {
+						213769,	-- Racing Enthusiast
+						-- #if AFTER TWW
+						220307,	-- Holiday Enthusiast
+						-- #endif
+					},
+					["coords"] = {
+						{ 52.8, 79.5, ORGRIMMAR },
+						-- #if AFTER TWW
+						{ 46.0, 55.1, DORNOGAL },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 				}),
 				q(78047, {	-- The Outland Cup Circuit
 					["sourceQuests"] = { 78040, 79127, 79128 },	-- The Outland Cup Begins
-					["provider"] = { "n", 206737 },	-- Lord Andestrasz
-					["coord"] = { 26.9, 47.4, VALDRAKKEN },
-					["repeatable"] = true,
-					["groups"] = {
-						currency(RIDERS_OF_AZEROTH_BADGE),
+					["qgs"] = {
+						206737,	-- Lord Andestrasz <Dragonriding Emissary>
+						214111,	-- Lord Andestrasz <Dragonriding Emissary> [A]
+						214112,	-- Lord Andestrasz <Dragonriding Emissary> [H]
 					},
+					["coords"] = {
+						{ 26.9, 47.4, VALDRAKKEN },
+						{ 52.2, 59.8, ORGRIMMAR },
+						{ 60.0, 66.6, STORMWIND_CITY },
+					},
+					["repeatable"] = true,
 				}),
 				dragonridingrace(77264, {	-- Auchindoun Coaster
 					["provider"] = { "n", 208596 },	-- Bronze Timekeeper
@@ -2525,6 +2641,26 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						i(211882, {	-- Outlandish Drake Racer's Shoulderpads
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
+						i(263503, {	-- Skymaster's Blood Circlet
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263501, {	-- Skymaster's Blood Cloak
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263500, {	-- Skymaster's Blood Mantle
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263504, {	-- Skymaster's Blood Pauldrons
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263502, {	-- Skymaster's Blood Tabard
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
 					},
 				})),
 			}),
@@ -2739,9 +2875,6 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["coord"] = { 26.9, 47.4, VALDRAKKEN },
 					["repeatable"] = true,
-					["groups"] = {
-						currency(RIDERS_OF_AZEROTH_BADGE),
-					},
 				}),
 				dragonridingrace(78334, {	-- Blackriver Burble
 					["provider"] = { "n", 211940 },	-- Bronze Timekeeper
@@ -3295,6 +3428,26 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					}),
 					i(211882, {	-- Outlandish Drake Racer's Shoulderpads
 						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+					}),
+					i(263503, {	-- Skymaster's Blood Circlet
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						["timeline"] = { ADDED_12_0_1 },
+					}),
+					i(263501, {	-- Skymaster's Blood Cloak
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						["timeline"] = { ADDED_12_0_1 },
+					}),
+					i(263500, {	-- Skymaster's Blood Mantle
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						["timeline"] = { ADDED_12_0_1 },
+					}),
+					i(263504, {	-- Skymaster's Blood Pauldrons
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						["timeline"] = { ADDED_12_0_1 },
+					}),
+					i(263502, {	-- Skymaster's Blood Tabard
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						["timeline"] = { ADDED_12_0_1 },
 					}),
 				},
 			}),

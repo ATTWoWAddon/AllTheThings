@@ -6,6 +6,16 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(ZONE_DROPS, {	-- (Note: have to list crs separately for every item because some items (recipes) don't drop from every single mob in the zone)
+				i(122699, {	-- Okuna's Message (QS!)
+					["coord"] = { 49.9, 40.5, AZSUNA },
+					["crs"] = {
+						107439,	-- Salteye Beastfeeder
+						113866,	-- Salteye Clam Vanquisher
+						88099,	-- Salteye Hookblade
+						109174,	-- Salteye Spearguard
+						88101,	-- Salteye Tide-Shaman
+					},
+				}),
 				i(137924, {	-- Pattern: Gravenscale Armbands [Rank 3] (RECIPE!)
 					["description"] = "Drops from any giant in Azsuna.",
 					["crs"] = {

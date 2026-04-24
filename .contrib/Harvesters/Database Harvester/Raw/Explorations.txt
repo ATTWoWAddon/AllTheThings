@@ -1,4 +1,4 @@
-1.13.0.28211
+ï»¿1.13.0.28211
 1@@@Dun Morogh
 2@@@Longshore
 3@@@Badlands
@@ -640,7 +640,7 @@
 1218@@@TESTAzshara
 1219@@@Legash Encampment
 1220@@@Thalassian Base Camp
-1221@@@Ruins of Eldarath
+1221@@@Ruins of Eldarath 
 1222@@@Hetaera's Clutch
 1223@@@Temple of Zin-Malor
 1224@@@Bear's Head
@@ -791,8 +791,8 @@
 1959@@@Dustfire Valley
 1977@@@Zul'Gurub
 1978@@@Misty Reed Post
-1997@@@Bloodvenom Post
-1998@@@Talonbranch Glade
+1997@@@Bloodvenom Post 
+1998@@@Talonbranch Glade 
 2017@@@Stratholme
 2037@@@UNUSEDShadowfang Keep 003
 2057@@@Scholomance
@@ -1220,9 +1220,7 @@
 16374@@@Arcane Sanctum
 16394@@@Naxxramas
 1.15.7.62797
-1221@@@Ruins of Eldarath 
-1997@@@Bloodvenom Post 
-1998@@@Talonbranch Glade 
+1.15.8.65300
 15810@@@Bloodvenom Post 
 2.5.1.38043
 65@@@Reuse Me 3
@@ -2553,8 +2551,8 @@
 14483@@@Wintergrasp Boundary
 3.4.0.45102
 14483@@@Uncharted Territory
-3.4.5.62824
-4096@@@Claytön's WoWEdit Land
+3.80.0.65301
+1221@@@Ruins of Eldarath
 4.4.0.53627
 17@@@Northern Barrens
 33@@@Northern Stranglethorn
@@ -10703,3 +10701,48 @@
 3433@@@Ghostlands (Burning Crusade)
 3487@@@Silvermoon City (Burning Crusade)
 16365@@@Atal'Utek
+12.0.0.64124
+16825@@@Devouring Stronghold
+16826@@@Behemoth's Rsie
+16827@@@The Riftlabs
+16828@@@Crown of the Cosmos
+16829@@@[PH] Battlefield
+12.0.0.64228
+15973@@@Voidscar Arena
+16046@@@Suncrown Village
+16047@@@Thas'minellia
+16838@@@Atal'Utek (copy)
+16841@@@Tomb of Mun'jin
+16844@@@Dusk's Repose
+12.0.0.64339
+16850@@@Retribution Hold
+16851@@@Mettle's Hold
+12.0.0.64499
+16826@@@Behemoth's Rise
+16855@@@Voidscar Arena
+16860@@@The Great Sea
+12.0.0.64741
+2037@@@Quel'Thalas
+16601@@@The Sunwell
+16863@@@Quiet Cavern
+16864@@@Consumptor Cave
+12.0.0.64975
+16814@@@Magisters' Terrace
+12.0.1.64889
+16543@@@Floaret Grotto
+16829@@@The Approach
+16873@@@Razorwind Camp
+16874@@@Founders Point Camp
+12.0.1.64914
+16875@@@Den of the Undreamt
+12.0.5.66330
+16686@@@Silvermoon City
+16747@@@Speaker's Rest
+16748@@@Ritual Site Outskirts
+16766@@@Broken Throne
+16770@@@Zul'Aman
+16773@@@Silvermoon City
+16796@@@Ritual Site
+16823@@@Daggerspine Point
+16939@@@Ritual Site
+16940@@@Daggerspine Point

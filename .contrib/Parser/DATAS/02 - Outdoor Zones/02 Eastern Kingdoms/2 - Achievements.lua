@@ -1,9 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local BILL_BUCKLER = {
 	["crs"] = { 65656 },
-	["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },					
+	["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 };
 local DAVID_KOSSE = {
 	["crs"] = { 66478 },
@@ -11,19 +12,19 @@ local DAVID_KOSSE = {
 };
 local DEIZA_PLAGUEHORN = {
 	["crs"] = { 66512 },
-	["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },					
+	["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
 };
 local DURIN_DARKHAMMER = {
 	["crs"] = { 66520 },
-	["coord"] = { 25.6, 47.6, BURNING_STEPPES },					
+	["coord"] = { 25.6, 47.6, BURNING_STEPPES },
 };
 local ERIC_DAVIDSON = {
 	["crs"] = { 65655 },
-	["coord"] = { 19.8, 44.8, DUSKWOOD },					
+	["coord"] = { 19.8, 44.8, DUSKWOOD },
 };
 local EVERESSA = {
 	["crs"] = { 66518 },
-	["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },					
+	["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
 };
 local JULIA_STEVENS = {
 	["crs"] = { 64330 },
@@ -31,7 +32,7 @@ local JULIA_STEVENS = {
 };
 local KORTAS_DARKHAMMER = {
 	["crs"] = { 66515 },
-	["coord"] = { 35.4, 27.8, SEARING_GORGE },					
+	["coord"] = { 35.4, 27.8, SEARING_GORGE },
 };
 local LINDSAY = {
 	["crs"] = { 65651 },
@@ -39,19 +40,20 @@ local LINDSAY = {
 };
 local LYDIA_ACCOSTE = {
 	["crs"] = { 66522 },
-	["coord"] = { 40.2, 76.6, DEADWIND_PASS },					
+	["coord"] = { 40.2, 76.6, DEADWIND_PASS },
 };
 local OLD_MACDONALD = {
 	["crs"] = { 65648 },
-	["coord"] = { 60.8, 18.6, WESTFALL },					
+	["coord"] = { 60.8, 18.6, WESTFALL },
 };
 local STEVEN_LISBANE = {
 	["crs"] = { 63194 },
 	["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
 };
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	n(ACHIEVEMENTS, {
-		header(HEADERS.Achievement, 61040, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Family Battler of Eastern Kingdoms
+		header(HEADERS.Achievement, 61040, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Family Battler of Eastern Kingdoms
 			petbattle(ach(61040, {	-- Family Battler of Eastern Kingdoms
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -66,10 +68,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					61037,	-- Mechanical Battler of Eastern Kingdoms
 					61028,	-- Undead Battler of Eastern Kingdoms
 				}},
-				["timeline"] = { ADDED_11_2_7 },
-				["groups"] = {
-					i(205017),	-- Byrn (PET!)
-				},
+				["timeline"] = { ADDED_12_0_0 },
+				["groups"] = { i(205017) },	-- Byrn (PET!)
 			})),
 			petbattle(ach(61029, {	-- Aquatic Battler of Eastern Kingdoms
 				crit(108071, {	-- Bill Buckler
@@ -342,7 +342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = ERIC_DAVIDSON.crs,
 					["coord"] = ERIC_DAVIDSON.coord,
 				}),
-				crit(108015, {	-- Everessa 
+				crit(108015, {	-- Everessa
 					["crs"] = EVERESSA.crs,
 					["coord"] = EVERESSA.coord,
 				}),
@@ -392,7 +392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = ERIC_DAVIDSON.crs,
 					["coord"] = ERIC_DAVIDSON.coord,
 				}),
-				crit(108027, {	-- Everessa 
+				crit(108027, {	-- Everessa
 					["crs"] = EVERESSA.crs,
 					["coord"] = EVERESSA.coord,
 				}),
@@ -442,7 +442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = ERIC_DAVIDSON.crs,
 					["coord"] = ERIC_DAVIDSON.coord,
 				}),
-				crit(108039, {	-- Everessa 
+				crit(108039, {	-- Everessa
 					["crs"] = EVERESSA.crs,
 					["coord"] = EVERESSA.coord,
 				}),
@@ -492,7 +492,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = ERIC_DAVIDSON.crs,
 					["coord"] = ERIC_DAVIDSON.coord,
 				}),
-				crit(108051, {	-- Everessa 
+				crit(108051, {	-- Everessa
 					["crs"] = EVERESSA.crs,
 					["coord"] = EVERESSA.coord,
 				}),

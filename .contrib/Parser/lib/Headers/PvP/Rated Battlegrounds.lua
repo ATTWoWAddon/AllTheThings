@@ -10,7 +10,15 @@ RATED_BATTLEGROUNDS = createHeader({
 	},
 	description = {
 		en = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.",
+		-- TODO: de = "",
 		es = "Estos artículos requieren el rango Legionario/Capitán-Caballero de Campos de Batalla Clásicos/Clasificados o superior para comprarse.",
 		mx = "Estos artículos requieren el rango Legionario/Capitán-Caballero de Campos de Batalla Clásicos/Clasificados o superior para comprarse.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "这些物品需要经典/评级战场的军团士兵/骑士队长或更高的排名才能购买。",
+		-- TODO: tw = "",
 	},
 });

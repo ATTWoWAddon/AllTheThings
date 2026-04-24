@@ -1,25 +1,34 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 CACHE_OF_MADNESS = createHeader({	-- This is the header for the event boss Cache of Madness.
 	readable = "Cache of Madness",
 	icon = 441139,
 	text = {
 		en = "Cache of Madness",
+		-- TODO: de = "",
 		es = "El extremo de la locura",
 		mx = "El extremo de la locura",
 		fr = "L'antre de la Folie",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Тайник Безумия",
 		cn = "疯狂宝箱",
+		-- TODO: tw = "",
 	},
 	description = {
 		-- #if AFTER 10.0.7
 		en = "Requires Archaeology to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
+		cn = "需要考古学来激活。激活全部 4 件神器以召唤出首领。如果你想要的首领没有出现，请勿击杀已出现的首领。相反，离开该区域并等待 30 分钟。一旦你返回，有时会有新的首领等着你",
 		-- #else
 		en = "Requires Archaeology (225+) to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
+		cn = "需要考古学技能（225+）来激活。激活全部 4 件神器以召唤出首领。若你期望的首领未出现，不要击杀已出现的首领。而是离开该区域，等待 30 分钟。再次进入后，有时会有新首领等着你",
 		-- #endif
 	},
 });
+
 local BLOODSCALP_COIN = 19706;
 local GURUBASHI_COIN = 19701;
 local HAKKARI_COIN = 19700;
@@ -39,11 +48,12 @@ local RED_HAKKARI_BIJOU = 203771;
 local SILVER_HAKKARI_BIJOU = 203772;
 local YELLOW_HAKKARI_BIJOU = 203773;
 local ZANDALAR_BARGAINING_TOKEN = 203914;
+
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
 	applyclassicphase(CATA_PHASE_RISE_OF_THE_ZANDALARI, inst(76, {	-- Zul'Gurub
 		["mapID"] = ZULGURUB,
 		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
-		["isRaid"] = false,	-- prevent merging isRaid from Classic version
+		["_drop"] = { "isRaid" },	-- prevent merging isRaid from Classic version
 		["groups"] = {
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				header(HEADERS.Achievement, 17366, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Relics of a Fallen Empire
@@ -118,13 +128,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						}),
 						n(COMMON_BOSS_DROPS, {
 							["description"] = "Can drop from High Priest Venoxis, Bloodlord Mandokir, High Priestess Kilnara, Zanzil, and Jin'do the Godbreaker after completing the quest 'Restored Hakkari Bijou'.",
-							-- Danny Donkey: Description above replaces crs below as otherwise the 10.0.7 common boss drops will appear under the respective bosses for all players after 10.0.7, even those who have not unlocked 'Relics of a Fallem Empire'.
+							-- Danny Donkey: Description above replaces crs below as otherwise the 10.0.7 common boss drops will appear under the respective bosses for all players after 10.0.7, even those who have not unlocked 'Relics of a Fallen Empire'.
 							-- ["crs"] = {
-								--52155,	-- High Priest Venoxis
-								--52151,	-- Bloodlord Mandokir
-								--52059,	-- High Priestess Kilnara
-								--52053,	-- Zanzil
-								--52148,	-- Jin'do the Godbreaker
+								-- 52155,	-- High Priest Venoxis
+								-- 52151,	-- Bloodlord Mandokir
+								-- 52059,	-- High Priestess Kilnara
+								-- 52053,	-- Zanzil
+								-- 52148,	-- Jin'do the Godbreaker
 							-- },
 							["groups"] = sharedData({ ["modID"] = 0 }, {
 								i(203842),	-- Ancient Pattern: Animist's Footwraps (RECIPE!)
@@ -206,7 +216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 								i(SANDFURY_COIN),
 								i(SKULLSPLITTER_COIN),
 								i(VILEBRANCH_COIN),
-								i(203742, {	-- Waterlooged Gurubashi Cache
+								i(203742, {	-- Waterlogged Gurubashi Cache
 									["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
 									["groups"] = {
 										i(19945),	-- Lizardscale Eyepatch
@@ -786,7 +796,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				n(52438, {	-- Mortaxx (unique mob)
-				--	i(52722),	-- Maelstrom Crystal
+					-- i(52722),	-- Maelstrom Crystal
 				}),
 				n(52392, {	-- Gurubashi Master Chef (unique mob)
 					i(69822),	-- Master Chef's Groceries
@@ -847,7 +857,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(76, {
-		["isRaid"] = false,	-- prevent merging isRaid from Classic version
+		["_drop"] = { "isRaid" },	-- prevent merging isRaid from Classic version
 		["groups"] = {
 			q(35411),	-- Zul'Gurub Reward Quest - Heroic completion
 			q(35412),	-- Zul'Gurub Bonus Objective Reward Quest - kill Cache of Madness

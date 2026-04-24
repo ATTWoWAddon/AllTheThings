@@ -8,6 +8,9 @@ local C_DateAndTime_GetCurrentCalendarTime, C_DateAndTime_AdjustTimeByDays
 local ipairs, tinsert, pairs, time
 	= ipairs, tinsert, pairs, time;
 
+-- App cache
+local GetRelativeField = app.GetRelativeField
+
 -- Event Variables
 local ActiveEvents, EventInformation, NextEventSchedule = {}, {}, {};
 local UpcomingEventLeeway = 604800;	-- 604800 is a week. 86400 is a day.
@@ -404,7 +407,7 @@ end
 local GetTimerunningSeason;
 local PlayerGetTimerunningSeasonID = PlayerGetTimerunningSeasonID;
 -- Don't add the Timerunning Filter if there's no Season active!
-local IsTimerunningActive = true
+local IsTimerunningActive = false
 if PlayerGetTimerunningSeasonID and IsTimerunningActive then
 	-- Timerunning API is available.
 	local timerunningSeasons = L.EVENT_TIMERUNNING_SEASONS;
@@ -416,7 +419,7 @@ if PlayerGetTimerunningSeasonID and IsTimerunningActive then
 	local TimerunningSeasonEventID
 	local ThingKeys
 	local function CheckNestedTimerunning(group)
-		if group.e == TimerunningSeasonEventID then
+		if GetRelativeField(group, "e", TimerunningSeasonEventID) then
 			return true
 		end
 
@@ -487,7 +490,7 @@ events.FilterIsEventActive = FilterIsEventActive;
 events.GetEventActive = function(eventID)
 	return ActiveEvents[eventID];
 end;
-events.GetEventCache = GetEventCache;	-- This should be executed before GetDataCache, or at the start of GetDataCache.
+events.GetEventCache = GetEventCache;	-- This should be executed before GetDatabaseRoot, or at the start of GetDatabaseRoot.
 events.GetEventName = GetEventName;
 events.GetEventInformation = function(eventID)
 	return EventInformation[eventID];

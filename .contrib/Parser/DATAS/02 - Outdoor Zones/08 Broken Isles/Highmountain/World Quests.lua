@@ -5,7 +5,9 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
-			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
+			n(WORLD_QUESTS, sharedData({
+				["isWorldQuest"] = true,
+			},{
 				q(41705),	-- Assault on Thunder Totem
 				q(41026),	-- Back to the Shadows
 				q(46191),	-- Balinar (Invasion wq)

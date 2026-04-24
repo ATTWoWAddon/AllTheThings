@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(SILVERPINE_FOREST, {
 		["lore"] = "Silverpine Forest is a vast ancient wood that runs along Lordaeron's rugged western coast. The land ranges from fairly flat to hilly, and is nestled among even taller mountains. The forest is eerily silent save for the occasional unnatural howling echoing among the trees. Mossy overhangs shiver in the cold breeze, and the trees are all sickly or dying. Dilapidated farmsteads and abandoned mines dot the land, home now to the darker denizens of the woods.\n\nThis woodland is haunted and wild, characterized by its tall, silver-barked pines towering over grassy knolls. The Alliance once protected Silverpine Forest when it was verdant and lively. Now the place is shrouded in ghostly mists. Forsaken control the northern forest. What remains of the human population retains control of the southern forest, but they are desperate and their forces thinly stretched. Dalaran sends frequent expeditions into Silverpine to defend these people and study the undead plague and worgen curse — a mysterious affliction that causes its victims to transform into bloodthirsty, lycanthropic worgen when the moon rises.",
@@ -121,6 +122,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(103815, {	-- Ambermill Strongbox
+					["coord"] = { 63.7, 65.2, SILVERPINE_FOREST },
+					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 1,
+					["groups"] = {
+						i(309),	-- Dalaran Status Report (QI!)
+					},
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(27577, {	-- 7th Legion Battle Plans
 					["sourceQuests"] = {
@@ -145,7 +159,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(530, {	-- A Husband's Revenge
 					["sourceQuest"] = 441,	-- Raleigh and the Undercity
 					["qg"] = 2050,	-- Raleigh Andrean
-					["coord"] = { 62, 43, UNDERCITY },
+					["coord"] = { 62.0, 43.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -252,7 +266,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27510, {	-- A Wolf in Bear's Clothing
 					["sourceQuest"] = 27484,	-- Only One May Enter
-					["qg"] = 45631,	-- High Warlord Cromush
+					["qgs"] = {
+						45631,	-- High Warlord Cromush
+						-- #if AFTER SL
+						176567,	-- High Warlord Cromush
+						-- #endif
+					},
 					["coord"] = { 52.2, 66.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -292,7 +311,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(479, {	-- Ambermill Investigations
 					["sourceQuest"] = 482,	-- Dalaran's Intentions
 					["qg"] = 2121,	-- Shadow Priest Allister
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -423,7 +442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(516, {	-- Beren's Peril
 					["qg"] = 2121,	-- Shadow Priest Allister
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
@@ -444,7 +463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2121 },	-- Shadow Priest Allister
 						{ "o", 1627 },	-- Dalaran Crate
 					},
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -508,7 +527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2121 },	-- Shadow Priest Allister
 						{ "i", 3353 },	-- Rune-inscribed Pendant
 					},
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -797,6 +816,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(245504, {	-- Lordaeron Fence (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+						i(245505, {	-- Lordaeron Fencepost (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
 					},
@@ -1382,7 +1404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(480, {	-- The Weaver
 					["sourceQuest"] = 479,	-- Ambermill Investigations
 					["qg"] = 2121,	-- Shadow Priest Allister
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1767,7 +1789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_1 },
 				}),
-				n(12432, {  -- Old Vicejaw
+				n(12432, { 	-- Old Vicejaw
 					["coords"] = {
 						{ 54.6, 52.0, SILVERPINE_FOREST },
 						{ 51.6, 63.8, SILVERPINE_FOREST },
@@ -1955,6 +1977,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
+					},
+				}),
+				n(2140, {	-- Edwin Harly
+					["coord"] = { 44.1, 39.7, SILVERPINE_FOREST },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(257412, {	-- Stoppered Gilnean Barrel (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						})
 					},
 				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>

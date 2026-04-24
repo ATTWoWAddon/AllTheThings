@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(WESTERN_PLAGUELANDS, {
 		-- #if AFTER CATA
@@ -40,7 +41,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206358, {	-- Imported Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206363, 1 }},	-- The Road Ahead
+									["cost"] = { { "i", 206363, 1 } },	-- The Road Ahead
 								}),
 							},
 						}),
@@ -51,7 +52,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206354, {	-- Stinky Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206359, 1 }},	-- Caer Darrow Fountain Water
+									["cost"] = { { "i", 206359, 1 } },	-- Caer Darrow Fountain Water
 								}),
 							},
 						}),
@@ -64,7 +65,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206357, {	-- Authentic Andorhal Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206362, 1 }},	-- The Deed to Andorhal
+									["cost"] = { { "i", 206362, 1 } },	-- The Deed to Andorhal
 								}),
 							},
 						}),
@@ -77,7 +78,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206355, {	-- Tobacco-Filled Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206360, 1 }},	-- Undelivered Shipment of Smokes
+									["cost"] = { { "i", 206360, 1 } },	-- Undelivered Shipment of Smokes
 								}),
 							},
 						}),
@@ -90,7 +91,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206356, {	-- Ghost-Warding Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206361, 1 }},	-- Trampled Doll
+									["cost"] = { { "i", 206361, 1 } },	-- Trampled Doll
 								}),
 							},
 						}),
@@ -112,7 +113,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26938,	-- Combat Training (H)
 						27206,	-- Alas, Andorhal (A)
 						27144,	-- The Reckoning (H)
-						--27055,	-- Students of Krastinov (TODO: verify if needed)
+						-- 27055,	-- Students of Krastinov (TODO: verify if needed)
 						27155,	-- Turning Yourself In
 						26955,	-- Zen'Kiki and the Cultists
 					},
@@ -135,6 +136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(139624, {	-- Shard of Darkness
 					["description"] = "It first took 350 casts in the river (RNG, could be 10 casts, could be 10,000 casts)\n\nYou may fish anywhere along the river, as long as your location says \"Thondroril River\"\nYour fishing skill does not matter",
+					["sourceQuests"] = { 43685 },	-- Phylactery Used
 					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { PALADIN },
 					["requireSkill"] = FISHING,
@@ -239,7 +241,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5090, {	-- A Call to Arms: The Plaguelands! [Ironforge]
 					["qg"] = 10877,	-- Courier Hammerfall
-					["coord"] = { 31.6, 67, IRONFORGE },
+					["coord"] = { 31.6, 67.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -271,7 +273,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5094, {	-- A Call to Arms: The Plaguelands! [Undercity]
 					["qg"] = 10879,	-- Harbinger Balthazad
-					["coord"] = { 64, 44, UNDERCITY },
+					["coord"] = { 64.0, 44.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -431,7 +433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  15042 },	-- Empty Termite Jar
 								{ "o", 177464 },	-- Large Termite Mound
 							},
-							["coord"] = { 42, 38, EASTERN_PLAGUELANDS },
+							["coord"] = { 42.0, 38.0, EASTERN_PLAGUELANDS },
 						}),
 					},
 				},
@@ -598,19 +600,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Tower One marked
 							["provider"] = { "i", 12815 },	-- Beacon Torch
-							["coord"] = { 40, 72, WESTERN_PLAGUELANDS },
+							["coord"] = { 40.0, 72.0, WESTERN_PLAGUELANDS },
 						}),
 						objective(2, {	-- Tower Two marked
 							["provider"] = { "i", 12815 },	-- Beacon Torch
-							["coord"] = { 42, 66, WESTERN_PLAGUELANDS },
+							["coord"] = { 42.0, 66.0, WESTERN_PLAGUELANDS },
 						}),
 						objective(3, {	-- Tower Three marked
 							["provider"] = { "i", 12815 },	-- Beacon Torch
-							["coord"] = { 44, 63, WESTERN_PLAGUELANDS },
+							["coord"] = { 44.0, 63.0, WESTERN_PLAGUELANDS },
 						}),
 						objective(4, {	-- Tower Four marked
 							["provider"] = { "i", 12815 },	-- Beacon Torch
-							["coord"] = { 46, 70, WESTERN_PLAGUELANDS },
+							["coord"] = { 46.0, 70.0, WESTERN_PLAGUELANDS },
 						}),
 					},
 				},
@@ -824,7 +826,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(62211, {	-- Shoulderwraps of the Enthralled
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(62210, {  -- Pack Leader's Band
+						i(62210, { 	-- Pack Leader's Band
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131655, {	-- Bracer of Grievance
@@ -1105,7 +1107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5231,	-- Target: Dalson's Tears
 					},
 					["provider"] = { "o", 177289 },	-- Scourge Cauldron
-					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
+					["coord"] = { 46.2, 52.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 13320, 1 },	-- Arcane Quickener
@@ -1492,48 +1494,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(5142, {	-- Little Pamela
+					["altQuests"] = { 5601 }, -- Sister Pamela
 					["qg"] = 10927,	-- Marlene Redpath
 					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
+				q(5059, {	-- Locked Away
+					["providers"] = {
+						{ "o", 175925 },	-- Outhouse
+						{ "i",  12738 },	-- Dalson Outhouse Key
+					},
+					["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["repeatable"] = true,
+					["lvl"] = 52,
+					["groups"] = {
+						i(12739, {	-- Dalson Cabinet Key
+							["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
+							["cr"] = 10836,	-- Farmer Dalson
+						}),
+					},
+				}),
 				q(5060, {	-- Locked Away
-					["provider"] = { "o", 175924 },	-- Locked Cabinet
+					["providers"] = {
+						{ "o", 175924 },	-- Locked Cabinet
+						{ "i",  12739 },	-- Dalson Cabinet Key
+					},
 					["coord"] = { 47.4, 49.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
-						q(5059, {	-- Locked Away
-							["providers"] = {
-								{ "o", 175925 },	-- Outhouse
-								{ "i",  12738 },	-- Dalson Outhouse Key
-							},
-							["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
-							["timeline"] = { REMOVED_4_0_3 },
-							["repeatable"] = true,
-							["lvl"] = 52,
-							["groups"] = {
-								objective(1, {	-- 0/1 Dalson Cabinet Key
-									["questID"] = 5060,	-- Locked Away
-									["provider"] = { "i", 12739 },	-- Dalson Cabinet Key
-									["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
-									["cr"] = 10836,	-- Farmer Dalson
-								}),
-							},
-						}),
 						i(13474, {	-- Farmer Dalson's Shotgun
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(13475, {	-- Dalson Family Wedding Ring
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						-- #if OBJECTIVES
-						i(12738, {	-- Dalson Outhouse Key
-							["coord"] = { 48.0, 49.8, WESTERN_PLAGUELANDS },
-							["cr"] = 10816,	-- Wandering Skeleton
-						}),
-						-- #endif
 					},
 				}),
 				q(26936, {	-- Lower the Boom
@@ -1696,7 +1694,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 177289 },	-- Scourge Cauldron
 						{ "i",  13191 },	-- Filled Dalson's Tears Bottle
 					},
-					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
+					["coord"] = { 46.2, 52.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
@@ -1741,7 +1739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 176393 },	-- Scourge Cauldron
 						{ "i",  13192 },	-- Filled Writhing Haunt Bottle
 					},
-					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
+					["coord"] = { 53.0, 65.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
@@ -1778,7 +1776,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								{ 83.1, 69.1, TIRISFAL_GLADES },
-								{ 40, 53, WESTERN_PLAGUELANDS },
+								{ 40.0, 53.0, WESTERN_PLAGUELANDS },
 							},
 						}),
 					},
@@ -1976,7 +1974,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/15 Andorhal Defender slain
 							["provider"] = { "n", 44448 },	-- Andorhal Defender
 						}),
-						i(62209, {  -- Deathguard Band
+						i(62209, { 	-- Deathguard Band
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62208, {	-- Gloves of the Able
@@ -2266,7 +2264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Scourge Bone Animus destroyed
 							["provider"] = { "o", 204966 },	-- Scourge Bone Animus
-							["coord"] = { 42, 66, WESTERN_PLAGUELANDS },
+							["coord"] = { 42.0, 66.0, WESTERN_PLAGUELANDS },
 						}),
 						objective(2, {	-- 0/5 Stickbone Berserker slain
 							["provider"] = { "n", 44329 },	-- Stickbone Berserker
@@ -2586,13 +2584,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Good Luck Charm
-							["providers"] = {
-								{ "i", 12723 },	-- Good Luck Charm
-								{ "i", 12721 },	-- Good Luck Half-Charm
-								{ "i", 12722 },	-- Good Luck Other-Half-Charm
+							["provider"] = { "i", 12723 },	-- Good Luck Charm
+							["cost"] = {
+								{ "i", 12721, 1 },	-- Good Luck Half-Charm
+								{ "i", 12722, 1 },	-- Good Luck Other-Half-Charm
 							},
-							["coord"] = { 38.6, 56.2, WESTERN_PLAGUELANDS },
-							["cr"] = 10801,	-- Jabbering Ghoul
 						}),
 						i(13473, {	-- Felstone Good Luck Charm
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2601,7 +2597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6004, {	-- Unfinished Business (1/3)
 					["qg"] = 11610,	-- Kirsta Deepshadow
-					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
+					["coord"] = { 52.0, 28.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2622,7 +2618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6023, {	-- Unfinished Business (2/3)
 					["sourceQuest"] = 6004,	-- Unfinished Business (1/3)
 					["qg"] = 11610,	-- Kirsta Deepshadow
-					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
+					["coord"] = { 52.0, 28.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2639,7 +2635,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6025, {	-- Unfinished Business (3/3)
 					["sourceQuest"] = 6023,	-- Unfinished Business (2/3)
 					["qg"] = 11610,	-- Kirsta Deepshadow
-					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
+					["coord"] = { 52.0, 28.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
@@ -2668,7 +2664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Uther's blessing
 							["provider"] = { "i", 61920 },	-- Chillwind Tribute
-							["coord"] = { 52, 82.8, WESTERN_PLAGUELANDS },
+							["coord"] = { 52.0, 82.8, WESTERN_PLAGUELANDS },
 						}),
 					},
 				}),
@@ -2843,7 +2839,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5233,	-- Target: Writhing Haunt
 					},
 					["provider"] = { "o", 176393 },	-- Scourge Cauldron
-					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
+					["coord"] = { 53.0, 65.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 13320, 1 },	-- Arcane Quickener
@@ -2918,7 +2914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 				}),
 				-- #if BEFORE CATA
-				n(1843, {  -- Foreman Jerris
+				n(1843, { 	-- Foreman Jerris
 					["coords"] = {
 						{ 45.6, 9.4, WESTERN_PLAGUELANDS },
 						{ 47.6, 13.8, WESTERN_PLAGUELANDS },
@@ -2926,7 +2922,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 48.0, 21.6, WESTERN_PLAGUELANDS },
 					},
 				}),
-				n(1844, {  -- Foreman Marcrid
+				n(1844, { 	-- Foreman Marcrid
 					["coords"] = {
 						{ 44.4, 34.4, WESTERN_PLAGUELANDS },
 						{ 48.4, 34.6, WESTERN_PLAGUELANDS },
@@ -3086,6 +3082,82 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
+			-- #if BEFORE 4.0.3
+			n(TREASURES, {
+				o(176213, {	-- Blood of Heroes
+					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
+					["coords"] = {
+						-- Hearthglen
+						{ 54.9, 27.1, WESTERN_PLAGUELANDS },
+						{ 46.8, 34.5, WESTERN_PLAGUELANDS },
+						{ 49.8, 33.3, WESTERN_PLAGUELANDS },
+						{ 56.7, 34.7, WESTERN_PLAGUELANDS },
+
+						-- Spooky Cave
+						{ 66.5, 42.2, WESTERN_PLAGUELANDS },
+						{ 68.0, 44.7, WESTERN_PLAGUELANDS },
+						{ 64.0, 48.7, WESTERN_PLAGUELANDS },
+						{ 68.7, 49.2, WESTERN_PLAGUELANDS },
+						{ 67.0, 53.8, WESTERN_PLAGUELANDS },
+
+						-- Gahrron's Withering
+						{ 64.1, 57.9, WESTERN_PLAGUELANDS },
+						{ 63.2, 59.2, WESTERN_PLAGUELANDS },
+						{ 62.0, 58.5, WESTERN_PLAGUELANDS },
+
+						-- Felstone Field
+						{ 36.5, 53.6, WESTERN_PLAGUELANDS },
+						{ 35.9, 57.5, WESTERN_PLAGUELANDS },
+						{ 38.2, 56.3, WESTERN_PLAGUELANDS },
+						{ 40.8, 57.5, WESTERN_PLAGUELANDS },
+						{ 42.2, 54.8, WESTERN_PLAGUELANDS },
+
+						-- Dalson's Tears
+						{ 44.6, 53.5, WESTERN_PLAGUELANDS },
+						{ 45.9, 51.1, WESTERN_PLAGUELANDS },
+						{ 47.9, 53.1, WESTERN_PLAGUELANDS },
+						{ 52.3, 55.0, WESTERN_PLAGUELANDS },
+						{ 47.0, 69.9, WESTERN_PLAGUELANDS },
+
+						-- The Writhing Haunt
+						{ 53.5, 63.5, WESTERN_PLAGUELANDS },
+						{ 52.3, 66.3, WESTERN_PLAGUELANDS },
+						{ 53.3, 66.2, WESTERN_PLAGUELANDS },
+						{ 55.3, 59.6, WESTERN_PLAGUELANDS },
+						{ 57.8, 66.6, WESTERN_PLAGUELANDS },
+
+						-- Ruins of Andorhal
+						{ 41.5, 62.1, WESTERN_PLAGUELANDS },
+						{ 42.8, 64.2, WESTERN_PLAGUELANDS },
+						{ 44.2, 65.0, WESTERN_PLAGUELANDS },
+						{ 39.7, 69.6, WESTERN_PLAGUELANDS },
+						{ 40.6, 73.1, WESTERN_PLAGUELANDS },
+						{ 43.3, 68.3, WESTERN_PLAGUELANDS },
+						{ 43.7, 70.5, WESTERN_PLAGUELANDS },
+						{ 44.5, 71.7, WESTERN_PLAGUELANDS },
+						{ 45.9, 71.4, WESTERN_PLAGUELANDS },
+						{ 47.6, 70.0, WESTERN_PLAGUELANDS },
+						{ 47.0, 67.1, WESTERN_PLAGUELANDS },
+						{ 49.4, 68.1, WESTERN_PLAGUELANDS },
+
+						-- Caer Darrow
+						{ 63.6, 75.5, WESTERN_PLAGUELANDS },
+						{ 64.9, 74.5, WESTERN_PLAGUELANDS },
+						{ 65.8, 76.8, WESTERN_PLAGUELANDS },
+						{ 68.9, 73.8, WESTERN_PLAGUELANDS },
+						{ 69.5, 78.6, WESTERN_PLAGUELANDS },
+						{ 69.5, 78.6, WESTERN_PLAGUELANDS },
+						{ 68.3, 81.6, WESTERN_PLAGUELANDS },
+						{ 68.7, 79.1, WESTERN_PLAGUELANDS },
+						{ 67.8, 84.6, WESTERN_PLAGUELANDS },
+					},
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(12938),	-- Blood of Heroes
+					},
+				}),
+			}),
+			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_FOUR, i(226413, {	-- Rune of Arcane Specialization
@@ -3184,84 +3256,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				-- #if BEFORE 4.0.3
-				i(12938, {	-- Blood of Heroes
-					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
-					["provider"] = { "o", 176213 },	-- Blood of Heroes
-					["coords"] = {
-						-- Hearthglen
-						{ 54.9, 27.1, WESTERN_PLAGUELANDS },
-						{ 46.8, 34.5, WESTERN_PLAGUELANDS },
-						{ 49.8, 33.3, WESTERN_PLAGUELANDS },
-						{ 56.7, 34.7, WESTERN_PLAGUELANDS },
-
-						-- Spooky Cave
-						{ 66.5, 42.2, WESTERN_PLAGUELANDS },
-						{ 68.0, 44.7, WESTERN_PLAGUELANDS },
-						{ 64.0, 48.7, WESTERN_PLAGUELANDS },
-						{ 68.7, 49.2, WESTERN_PLAGUELANDS },
-						{ 67.0, 53.8, WESTERN_PLAGUELANDS },
-
-						-- Gahrron's Withering
-						{ 64.1, 57.9, WESTERN_PLAGUELANDS },
-						{ 63.2, 59.2, WESTERN_PLAGUELANDS },
-						{ 62.0, 58.5, WESTERN_PLAGUELANDS },
-
-						-- Felstone Field
-						{ 36.5, 53.6, WESTERN_PLAGUELANDS },
-						{ 35.9, 57.5, WESTERN_PLAGUELANDS },
-						{ 38.2, 56.3, WESTERN_PLAGUELANDS },
-						{ 40.8, 57.5, WESTERN_PLAGUELANDS },
-						{ 42.2, 54.8, WESTERN_PLAGUELANDS },
-
-						-- Dalson's Tears
-						{ 44.6, 53.5, WESTERN_PLAGUELANDS },
-						{ 45.9, 51.1, WESTERN_PLAGUELANDS },
-						{ 47.9, 53.1, WESTERN_PLAGUELANDS },
-						{ 52.3, 55.0, WESTERN_PLAGUELANDS },
-						{ 47.0, 69.9, WESTERN_PLAGUELANDS },
-
-						-- The Writhing Haunt
-						{ 53.5, 63.5, WESTERN_PLAGUELANDS },
-						{ 52.3, 66.3, WESTERN_PLAGUELANDS },
-						{ 53.3, 66.2, WESTERN_PLAGUELANDS },
-						{ 55.3, 59.6, WESTERN_PLAGUELANDS },
-						{ 57.8, 66.6, WESTERN_PLAGUELANDS },
-
-						-- Ruins of Andorhal
-						{ 41.5, 62.1, WESTERN_PLAGUELANDS },
-						{ 42.8, 64.2, WESTERN_PLAGUELANDS },
-						{ 44.2, 65.0, WESTERN_PLAGUELANDS },
-						{ 39.7, 69.6, WESTERN_PLAGUELANDS },
-						{ 40.6, 73.1, WESTERN_PLAGUELANDS },
-						{ 43.3, 68.3, WESTERN_PLAGUELANDS },
-						{ 43.7, 70.5, WESTERN_PLAGUELANDS },
-						{ 44.5, 71.7, WESTERN_PLAGUELANDS },
-						{ 45.9, 71.4, WESTERN_PLAGUELANDS },
-						{ 47.6, 70.0, WESTERN_PLAGUELANDS },
-						{ 47.0, 67.1, WESTERN_PLAGUELANDS },
-						{ 49.4, 68.1, WESTERN_PLAGUELANDS },
-
-						-- Caer Darrow
-						{ 63.6, 75.5, WESTERN_PLAGUELANDS },
-						{ 64.9, 74.5, WESTERN_PLAGUELANDS },
-						{ 65.8, 76.8, WESTERN_PLAGUELANDS },
-						{ 68.9, 73.8, WESTERN_PLAGUELANDS },
-						{ 69.5, 78.6, WESTERN_PLAGUELANDS },
-						{ 69.5, 78.6, WESTERN_PLAGUELANDS },
-						{ 68.3, 81.6, WESTERN_PLAGUELANDS },
-						{ 68.7, 79.1, WESTERN_PLAGUELANDS },
-						{ 67.8, 84.6, WESTERN_PLAGUELANDS },
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
 				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
 					["timeline"] = { REMOVED_4_0_3 },
 				})),
+				-- #endif
+				i(12738, {	-- Dalson Outhouse Key
+					["coord"] = { 48.0, 49.8, WESTERN_PLAGUELANDS },
+					["sourceQuest"] = 5058,	-- Mrs. Dalson's Diary
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 10816,	-- Wandering Skeleton
+				}),
+				-- #if BEFORE 4.0.3
 				i(13354, {	-- Ectoplasmic Resonator
 					["description"] = "These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
 				}),
+				-- #endif
+				i(12722, {	-- Good Luck Other-Half-Charm
+					["coord"] = { 38.6, 56.2, WESTERN_PLAGUELANDS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 10801,	-- Jabbering Ghoul
+				}),
+				-- #if BEFORE 4.0.3
 				i(16252, {	-- Formula: Enchant Weapon - Crusader
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),
@@ -3292,16 +3309,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 64.6, 36.0, WESTERN_PLAGUELANDS },
 						{ 62.4, 36.2, WESTERN_PLAGUELANDS },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 1813,	-- Decaying Horror
-					-- #elseif AFTER 10.1.7
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
+						-- #if AFTER 10.1.7
 						44485,	-- Flesh-Cobbled Brute
 						44484,	-- Flesh-Cobbled Ripper
 						44486,	-- Unholy Corpuscle
+						-- #else
+						1813,	-- Decaying Horror
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if BEFORE 4.0.3
 				i(12707, {	-- Plans: Runic Plate Boots
@@ -3310,14 +3327,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(9296, {	-- Recipe: Gift of Arthas (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },	-- Maybe still drops, this tag will help with reporting if somebody does get a drop
-					-- #if AFTER CATA
-					["cr"] = 1783,	-- Skeletal Flayer
-					-- #else
 					["crs"] = {
 						1783,	-- Skeletal Flayer
+						-- #if BEFORE CATA
 						1791,	-- Slavering Ghoul
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },

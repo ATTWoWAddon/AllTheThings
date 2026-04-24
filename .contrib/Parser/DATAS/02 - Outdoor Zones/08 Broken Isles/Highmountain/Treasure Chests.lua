@@ -46,7 +46,7 @@ root(ROOTS.Zones, {
 				o(251124, {	-- Glimmering Treasure Chest
 					["description"] = "On a ledge inside Neltharion's Vault. Use a teleporter or flying mount to reach it, then click the brazier. The chest will spawn after waves of enemies are defeated.",
 					["questID"] = 39606,
-					["coord"] = { 59.6, 40.9, 657 },
+					["coord"] = { 59.6, 40.9, 657 },	-- Path of Huln
 				}),
 				o(257290, {	-- Highmountain Clan Chest
 					["description"] = "These repeatable chests spawn all over the map in Highmountain."
@@ -105,7 +105,7 @@ root(ROOTS.Zones, {
 				}),
 				o(245601, {	-- Small Treasure Chest
 					["questID"] = 40508,
-					["coord"] = { 60.5, 54.7, 657 },
+					["coord"] = { 60.5, 54.7, 657 },	-- Path of Huln
 				}),
 				o(245603, {	-- Small Treasure Chest
 					["questID"] = 40510,
@@ -120,15 +120,27 @@ root(ROOTS.Zones, {
 					["questID"] = 44280,
 					["coord"] = { 46.4, 21.6, HIGHMOUNTAIN },
 				}),
+				o(244429, {	-- Totally Safe Treasure Chest
+					["coord"] = { 52.3, 51.4, HIGHMOUNTAIN },
+					["groups"] = {
+						n(97102, {	-- Ram'Pag <The Treasure Worm>
+							["questID"] = 40610,
+							["groups"] = {
+								o(244446, {	-- Actually Safe Treasure Chest
+									["questID"] = 39766,
+									["isDaily"] = true,
+								}),
+							},
+						}),
+					},
+				}),
 				o(243688, {	-- Treasure Chest
 					["questID"] = 39466,
 					["coord"] = { 49.6, 37.7, HIGHMOUNTAIN },
-					["groups"] = {
-						i(131927),	-- Shimmering Roc Feather
-					},
+					["groups"] = { i(131927) },	-- Shimmering Roc Feather
 				}),
 				o(265526, {	-- Treasure Chest
-					["coord"] = { 39, 54.5, HIGHMOUNTAIN },
+					["coord"] = { 39.0, 54.5, HIGHMOUNTAIN },
 					["questID"] = 44731,
 				}),
 				o(250541, {	-- Treasure Chest
@@ -138,9 +150,7 @@ root(ROOTS.Zones, {
 				o(243773, {	-- Treasure Chest
 					["questID"] = 39503,
 					["coord"] = { 47.6, 44.0, HIGHMOUNTAIN },
-					["groups"] = {
-						i(131926),	-- Delicate Roc Feather
-					},
+					["groups"] = { i(131926) },	-- Delicate Roc Feather
 				}),
 				o(245548, {	-- Treasure Chest
 					["description"] = "Inside Mucksnout Den. Cave entrance is at |cFFFFFFFF41.6, 46.9|r.",
@@ -154,9 +164,7 @@ root(ROOTS.Zones, {
 				o(244519, {	-- Treasure Chest
 					["questID"] = 39824,
 					["coord"] = { 53.5, 51.0, HIGHMOUNTAIN },
-					["groups"] = {
-						i(131810),	-- Derelict Skyhorn Kite
-					},
+					["groups"] = { i(131810) },	-- Derelict Skyhorn Kite
 				}),
 				o(245524, {	-- Treasure Chest
 					["questID"] = 40471,
@@ -201,7 +209,7 @@ root(ROOTS.Zones, {
 				}),
 				o(245602, {	-- Treasure Chest
 					["questID"] = 40509,
-					["coord"] = { 40.3, 50.0, 657 },
+					["coord"] = { 40.3, 50.0, 657 },	-- Path of Huln
 				}),
 				o(245543, {	-- Treasure Chest
 					["description"] = "On the upper level of Bitestone Enclave, all the way at the back. Cave entrance is at |cFFFFFFFF41, 73|r.",

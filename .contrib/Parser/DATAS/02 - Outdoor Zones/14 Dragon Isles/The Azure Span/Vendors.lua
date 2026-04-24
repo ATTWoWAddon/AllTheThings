@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		n(VENDORS, {
@@ -30,22 +31,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
 				["groups"] = {
 					i(192459, {	-- Jean's Lucky Fish (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 300 } },
 					}),
 					i(200927, {	-- Petal (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 					}),
 					i(201703, {	-- Pinkie (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 } },
 					}),
 					i(193071, {	-- Pistachio (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 					i(201441, {	-- Scout (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 5000 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 5000 } },
 					}),
 					i(201707, {	-- Troubled Tome (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 					}),
 				},
 			}),

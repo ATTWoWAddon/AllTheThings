@@ -299,7 +299,7 @@ namespace ATT
             }
             else
             {
-                textLocalizations = new Dictionary<string, object>();
+                objectData["text"] = textLocalizations = new Dictionary<string, object>();
                 dirty = true;
             }
 

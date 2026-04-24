@@ -1,1 +1,1 @@
-"Parser.exe" debug baseconfig=".config/classic/01 - Classic Era.config" config=".config/classic/Debug Mode.config"
+"Parser.exe" debug baseconfig=.config/retail/retail.config config=.config/retail/debug.config config=".config/classic/01 - Classic Era.config"

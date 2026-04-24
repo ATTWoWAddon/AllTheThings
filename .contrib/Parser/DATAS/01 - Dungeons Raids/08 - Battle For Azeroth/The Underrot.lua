@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	inst(1022, {	-- The Underrot
 		["coord"] = { 51.6, 65.3, NAZMIR },
@@ -47,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(159624),	-- Rotcrusted Voodoo Doll
 					},
 				}),
-				e(2131, { -- Cragmaw the Infested
+				e(2131, {	-- Cragmaw the Infested
 					["crs"] = {
 						131817,	-- Cragmaw the Infested
 					},

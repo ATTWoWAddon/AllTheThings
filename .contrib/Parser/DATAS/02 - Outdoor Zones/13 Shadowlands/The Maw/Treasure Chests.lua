@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(THE_MAW, {
 		n(TREASURES, {	-- Treasure Chest
@@ -62,18 +63,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 64256,
 				["isDaily"] = true,
 				["groups"] = {
-				--	Epics
+					-- Epics
 					i(187017),	-- Brutalizer's Mantle
 					i(187240),	-- Field Warden's Watchful Eye
 					i(187026),	-- Field Warden's Torture Kit
 					i(187019),	-- Infiltrator's Shoulderguards
 					i(187024),	-- Necromancer's Mantle
 					i(187014),	-- Shackler's Spiked Shoulders
-				--	Consumable (pale blue/special)
+					-- Consumable (pale blue/special)
 					i(187351, {	-- Stygic Cluster
 						currency(1767),	-- Stygia
 					}),
-				--	Blues
+					-- Blues
 					i(185902),	-- Iron Maiden's Toolkit
 				},
 			}),

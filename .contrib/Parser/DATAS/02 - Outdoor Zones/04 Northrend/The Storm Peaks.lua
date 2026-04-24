@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ForSonsOfHodir = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
@@ -119,6 +120,7 @@ ExportDB.OnTooltipDB.ForSonsOfHodir = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Relics", repPerTurnIn, 42000, 10);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(THE_STORM_PEAKS, {
@@ -199,7 +201,7 @@ root(ROOTS.Zones, {
 						-- #else
 						["sourceQuests"] = {
 							12824,	-- Demolitionist Extraordinaire
-							--12822,	-- Know No Fear -- TODO: verify. This wasn't required on horde but appears to be required for alliance...?
+							-- 12822,	-- Know No Fear	-- TODO: verify. This wasn't required on horde but appears to be required for alliance...?
 							12867,	-- Baby Stealers
 							12868,	-- Sirana Iceshriek
 							12928,	-- Norgannon's Shell (H)
@@ -362,7 +364,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32540,	-- Lillehoff
 						["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
-						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 						["repeatable"] = true,
 					}),
 					q(13011, {	-- Culling Jorcuttar
@@ -373,7 +375,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 Jorcuttar slain
 								["provider"] = { "n", 30340 },	-- Jorcuttar
 								["coord"] = { 54.6, 60.8, THE_STORM_PEAKS },
-								["cost"] = {{ "i", 42733, 1 }},	-- Icemaw Bear Flank
+								["cost"] = { { "i", 42733, 1 } },	-- Icemaw Bear Flank
 							}),
 							i(42733, {	-- Icemaw Bear Flank
 								["providers"] = {
@@ -529,13 +531,13 @@ root(ROOTS.Zones, {
 					q(12870, {	-- Ancient Relics (A)
 						["qg"] = 29744,	-- Rork Sharpchin
 						["coord"] = { 28.8, 74.0, THE_STORM_PEAKS },
-						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12882, {	-- Ancient Relics (H)
 						["qg"] = 30472,	-- Olut Alegut
 						["coord"] = { 36.9, 49.5, THE_STORM_PEAKS },
-						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 						["races"] = HORDE_ONLY,
 					}),
 					q(12875, {	-- An Experienced Guide
@@ -642,6 +644,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12858,	-- Pieces to the Puzzle
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(41179, {	-- The Inventor's Disk
+								["description"] = "Despite what the item text says, this can only be used on Databanks on Terrace of the Makers, downstairs from The Inventor's Library.",
+							}),
+						},
 					}),
 					q(12927, {	-- Data Mining (H)
 						["description"] = "Use Brann's Communicator to pick this quest up.",
@@ -979,6 +986,13 @@ root(ROOTS.Zones, {
 						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- Sons of Hodir, Exalted
+						["groups"] = {
+							o_repeated({	-- Granite Boulder
+								i(41506),	-- Granite Boulder (QI!)
+								o(191814),	-- Granite Boulder
+								o(191815),	-- Granite Boulder
+							}),
+						},
 					}),
 					q(12905, {	-- Mildred the Cruel
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
@@ -1277,8 +1291,8 @@ root(ROOTS.Zones, {
 					}),
 					q(13005, {	-- The Earthen Oath
 						["sourceQuests"] = {
-							--12872,	-- Norgannon's Shell (A)
-							--12928,	-- Norgannon's Shell (H)
+							-- 12872,	-- Norgannon's Shell (A)
+							-- 12928,	-- Norgannon's Shell (H)
 							13057,	-- The Terrace of the Makers (Probably)
 						},
 						["qg"] = 30295,	-- Thorim
@@ -1433,10 +1447,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12922, {	-- The Refiner's Fire
-						["description"] = "The giants that drop this quest item spawn on and around the ice patch east of Dun Niffelem.",
 						["sourceQuest"] = 13064,	-- Sibling Rivalry (guessed by last quest completed prior)
 						["provider"] = { "i", 41556 },	-- Slag Covered Metal
-						["crs"] = { 29375 },	-- Stormforged Iron Giant
 					}),
 					q(13843, {	-- The Scrapbot Construction Kit
 						["sourceQuest"] = 12889,	-- The Prototype Console
@@ -1530,6 +1542,19 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 13009,	-- A New Beginning
 						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
+						["groups"] = {
+							o(192536, {	-- Small Proto-Drake Egg
+								["coords"] = {
+									{ 43.7, 67.3, THE_STORM_PEAKS },
+									{ 45.4, 66.8, THE_STORM_PEAKS },
+									{ 45.5, 67.1, THE_STORM_PEAKS },
+									{ 52.4, 73.3, THE_STORM_PEAKS },
+									{ 52.4, 75.5, THE_STORM_PEAKS },
+									{ 53.5, 74.9, THE_STORM_PEAKS },
+								},
+								["groups"] = { i(42784) },	-- Small Proto-Drake Egg (QI!)
+							}),
+						},
 					}),
 					warchiefscommand(q(49536, {	-- Warchief's Command: Storm Peaks!
 						["timeline"] = { ADDED_7_3_5 },
@@ -1751,7 +1776,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(43499, {	-- Iron Boot Flask (TOY!)
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 						},
 					}),
@@ -1760,19 +1785,19 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(43462, {	-- Airy Pale Ale
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 							i(43473, {	-- Drakefire Chile Ale
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 							i(43499, {	-- Iron Boot Flask (TOY!)
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 							i(43472, {	-- Snowfall Lager
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 							i(43470, {	-- Worg Tooth Oatmeal Stout
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 						},
 					}),
@@ -1826,6 +1851,10 @@ root(ROOTS.Zones, {
 					i(42780),	-- Relics of Ulduar
 					i(49050, {	-- Schematic: Jeeves (RECIPE!)
 						["crs"] = { 29724 },	-- Library Guardian
+					}),
+					i(41556, {	-- Slag Covered Metal
+						["description"] = "The giants that drop this spawn on and around the ice patch east of Dun Niffelem.",
+						["crs"] = { 29375 },	-- Stormforged Iron Giant
 					}),
 					i(43573, {	-- Tears of Bitter Anguish
 						["crs"] = { 29570 },	-- Nascent Val'kyr

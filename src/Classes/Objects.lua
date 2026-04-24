@@ -5,11 +5,10 @@ local app = select(2, ...);
 
 -- App locals
 local ArrayAppend = app.ArrayAppend;
-local IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompletedForObject;
 
 -- Global locals
-local C_QuestLog_IsOnQuest, ipairs, setmetatable, rawget
-	= C_QuestLog.IsOnQuest, ipairs, setmetatable, rawget;
+local setmetatable,rawget
+	= setmetatable,rawget
 
 local GenerateGroupsForGenericSubGroup = function(t)
 	-- only load this if we're in a tooltip-level or new window build
@@ -33,7 +32,10 @@ local GenerateGroupsForGenericSubGroup = function(t)
 	if not sp then app.PrintDebug("spg.sourceParent MISSING??",app:SearchLink(t)) return end
 	spg = {}
 	-- make a copy of the non-object groups for this object to display
-	for _,o in ipairs(sp.g) do
+	local g = sp.g
+	local o
+	for i=1,#g do
+		o = g[i]
 		if not o.objectID then
 			spg[#spg + 1] = o
 		end
@@ -51,9 +53,6 @@ end
 
 -- Object Lib (as in "World Object")
 app.CreateObject = app.CreateClass("Object", "objectID", {
-	text = function(t)
-		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
-	end,
 	name = function(t)
 		return app.ObjectNames[t.objectID] or t.basename;
 	end,
@@ -66,7 +65,9 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 
 		local g = t.g
 		if g then
-			for _,o in ipairs(g) do
+			local o
+			for i=1,#g do
+				o = g[i]
 				customIcon = (o.itemID or o.criteriaID) and o.icon or nil
 				if customIcon then return customIcon end
 			end
@@ -86,50 +87,77 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 "AsGenericObjectContainer", {
 	__ignoreCaching = app.ReturnTrue,
 	trackable = function(t)
-		for _,group in ipairs(t.g) do
-			if group.objectID and group.trackable then return true; end
+		local g = t.g
+		local o
+		for i=1,#g do
+			o = g[i]
+			if o.objectID and o.trackable then return true end
 		end
 	end,
 	repeatable = function(t)
-		for _,group in ipairs(t.g) do
-			if group.objectID and group.repeatable then return true; end
+		local g = t.g
+		local o
+		for i=1,#g do
+			o = g[i]
+			if o.objectID and o.repeatable then return true end
 		end
 	end,
 	saved = function(t)
-		local anySaved;
-		for _,group in ipairs(t.g) do
-			if group.objectID then
-				if group.saved then
-					anySaved = true;
+		local g = t.g
+		local o, anySaved
+		for i=1,#g do
+			o = g[i]
+			if o.objectID then
+				if o.saved then
+					anySaved = true
 				else
-					return;
+					return
 				end
 			end
 		end
 		-- every contained sub-object is already saved, so the repeated object should also be marked as saved
-		return anySaved;
+		return anySaved
 	end,
 	coords = function(t)
-		local unsavedCoords = {};
-		for _,group in ipairs(t.g) do
+		local g, unsaved = t.g, {}
+		local o
+		for i=1,#g do
+			o = g[i]
 			-- show collected coords of all sub-objects which are not saved
-			if group.objectID and group.coords and not group.saved then
-				ArrayAppend(unsavedCoords, group.coords);
+			if o.objectID and not o.saved then
+				local coords = o.coords;
+				if coords then
+					for mapID,coordsForMap in pairs(coords) do
+						local unsavedByMap = unsaved[mapID];
+						if not unsavedByMap then
+							unsavedByMap = {};
+							unsaved[mapID] = unsavedByMap;
+						end
+						ArrayAppend(unsavedByMap, coordsForMap)
+					end
+				end
 			end
 		end
-		return unsavedCoords;
+		return unsaved
+	end,
+	maps = function(t)
+		local g, unsaved = t.g, {}
+		local o
+		for i=1,#g do
+			o = g[i]
+			-- show collected maps of all sub-objects which are not saved
+			if o.objectID and o.maps and not o.saved then
+				ArrayAppend(unsaved, o.maps)
+			end
+		end
+		return unsaved
 	end,
 	indicatorIcon = function(t)
-		local anyActive
-		local activeObjectVignettes = app.ActiveVignettes.object
-		for _,group in ipairs(t.g) do
-			if group.objectID and activeObjectVignettes[group.objectID] then
-				anyActive = true;
-				break
+		local g, activeObjectVignettes = t.g, app.ActiveVignettes.object
+		for i=1,#g do
+			if activeObjectVignettes[g[i].objectID] then
+				return app.asset("Interface_Ping")
 			end
-		end
-		if anyActive then
-			return app.asset("Interface_Ping");
 		end
 	end,
 	-- This is never used typically since this class is only generated for objects which have a raw .g
@@ -142,21 +170,13 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 },
 function(t) return t.type == "AsGenericObjectContainer" end,
 "AsSubGenericObjectWithQuest", {
-	CollectibleType = app.IsClassic and function() return "Quests" end
-	-- Retail: objects tracked as HQT
-	or function() return "QuestsHidden" end,
-	collectible = app.IsClassic and function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
-	end
-	-- Retail: typical object collectibility matches Lockable Quest collectibility
-	or app.GlobalVariants.AndLockCriteria.collectible,
-	collected = IsQuestFlaggedCompletedForObject,
-	trackable = function(t)
-		-- raw repeatable quests can't really be tracked since they immediately unflag
-		return not rawget(t, "repeatable") and t.repeatable
-	end,
-	saved = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+	CACHE = function() return "Quests" end,
+	ImportFrom = "Quest",
+	ImportFields = { "repeatable", "trackable", "saved" },
+	CollectibleType = function() return "QuestsHidden" end,
+	collectible = app.GlobalVariants.AndLockCriteria.collectible,
+	collected = function(t)
+		return app.TypicalCharacterCollected("Quests", t.questID)
 	end,
 	variants = {
 		app.GlobalVariants.AndLockCriteria,
@@ -169,21 +189,13 @@ function(t) return t.questID and t.type == "AsSubGenericObject" end,
 },
 function(t) return t.type == "AsSubGenericObject" end,
 "WithQuest", {
-	CollectibleType = app.IsClassic and function() return "Quests" end
-	-- Retail: objects tracked as HQT
-	or function() return "QuestsHidden" end,
-	collectible = app.IsClassic and function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
-	end
-	-- Retail: typical object collectibility matches Lockable Quest collectibility
-	or app.GlobalVariants.AndLockCriteria.collectible,
-	collected = IsQuestFlaggedCompletedForObject,
-	trackable = function(t)
-		-- raw repeatable quests can't really be tracked since they immediately unflag
-		return not rawget(t, "repeatable") and t.repeatable
-	end,
-	saved = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+	CACHE = function() return "Quests" end,
+	ImportFrom = "Quest",
+	ImportFields = { "repeatable", "trackable", "saved" },
+	CollectibleType = function() return "QuestsHidden" end,
+	collectible = app.GlobalVariants.AndLockCriteria.collectible,
+	collected = function(t)
+		return app.TypicalCharacterCollected("Quests", t.questID)
 	end,
 	variants = {
 		app.GlobalVariants.AndLockCriteria,

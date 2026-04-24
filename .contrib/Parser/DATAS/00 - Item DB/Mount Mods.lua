@@ -452,7 +452,6 @@ i(213561, 79690);	-- Winding Slitherdrake: Void Scales
 ------------------
 -- PATCH 11.0.0 --
 ------------------
---- NYI ---
 i(223510, 82177);	-- Delver's Dirigible Schematic: Template
 
 ------------------
@@ -499,10 +498,10 @@ i(236672, 85785);	-- The Ol' Low-and-Slow
 i(236669, 85788);	-- The Whole Brass Band
 --- NYI ---
 i(235693, 82175);	-- Delver's Dirigible Schematic: Rocket
---i(232980, 85787);	-- Axel Sneakfoot [think this questID is wrong, it's duped with Maniacal Melodies]
---i(232979, 85785);	-- Jaks Jabberjaw [think this questID is wrong, it's duped with The Ol' Low-and-Slow]
---i(232978, 85786);	-- Louie Firehands [think this questID is wrong, it's duped with The Buzzer]
---i(232930, 85788);	-- Zaps Leadfoot [think this questID is wrong, it's duped with The Whole Brass Band]
+-- i(232980, 85787);	-- Axel Sneakfoot [think this questID is wrong, it's duped with Maniacal Melodies]
+-- i(232979, 85785);	-- Jaks Jabberjaw [think this questID is wrong, it's duped with The Ol' Low-and-Slow]
+-- i(232978, 85786);	-- Louie Firehands [think this questID is wrong, it's duped with The Buzzer]
+-- i(232930, 85788);	-- Zaps Leadfoot [think this questID is wrong, it's duped with The Whole Brass Band]
 
 ------------------
 -- PATCH 11.1.5 --
@@ -526,7 +525,6 @@ i(235691, 82191);	-- Delver's Dirigible Schematic: Yellow Paint
 i(238178, 88814);	-- Delver's Mana-Skimmer Schematic: Canister
 i(238177, 88816);	-- Delver's Mana-Skimmer Schematic: Emitter
 i(238181, 88820);	-- Delver's Mana-Skimmer Schematic: Energy Thrusters
+i(238182, 88819);	-- Delver's Mana-Skimmer Schematic: Hyperdrive
 i(238179, 88815);	-- Delver's Mana-Skimmer Schematic: Quad Glider
 i(238180, 88817);	-- Delver's Mana-Skimmer Schematic: Void Paint
---- UNSORTED ---
-i(238182, 88819);	-- Delver's Mana-Skimmer Schematic: Hyperdrive

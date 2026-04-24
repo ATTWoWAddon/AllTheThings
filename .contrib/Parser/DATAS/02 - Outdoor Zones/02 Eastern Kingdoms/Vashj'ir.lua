@@ -2,6 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 -- Crieve NOTE: I have my eyes on this file. I don't like how disconnected everything is. Sorta feels like the subzones are pointless. and only make it so that parts and pieces are split up unnecessarily. When Cata Classic comes out I'll think about rearranging things.
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(VASHJIR, {
 		["lore"] = "Vashj'ir is an underwater zone. Players receive underwater breathing, swim speed buffs, and eventually a sea horse mount early on in questing to make transportation easier. Players learn about the history of the Highborne, as this city was home to Lady Vashj before the Sundering. Players learn about the threat of Ozumat, culminating in a battle between Neptulon and the naga.",
@@ -1049,7 +1050,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 9.0.3
 							["groups"] = {
-								n(36799, { -- Recruiter Burns
+								n(36799, {	-- Recruiter Burns
 									["description"] = "Accepting the quest 'Call of Duty' will instantly teleport you to Vashj'ir. Although the old event and cutscene is skipped, the questline is still intact.\n\nIf Burns do not offer you the quest, you might be phased due to Legion intro questline (even by being within the eligible level range!).",
 								}),
 							},
@@ -2522,10 +2523,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 25540,	-- Bellies Await
 							["provider"] = { "i", 62281 },	-- Ancient Elven Etching (A)
 							["races"] = ALLIANCE_ONLY,
-							["crs"] = {
-								41227,	-- Azsh'ir Infantry
-								39638,	-- Azsh'ir Patroller
-							},
 							["groups"] = {
 								i(59697),	-- Keenstone Helm
 								i(59696),	-- Gloves of Transcription
@@ -2536,10 +2533,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 25958,	-- Looking Forward
 							["provider"] = { "i", 62282 },	-- Ancient Elven Etching (H)
 							["races"] = HORDE_ONLY,
-							["crs"] = {
-								41227,	-- Azsh'ir Infantry
-								39638,	-- Azsh'ir Patroller
-							},
 							["groups"] = {
 								i(59694),	-- Keenstone Helm
 								i(59693),	-- Gloves of Transcription
@@ -2847,7 +2840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25359, {	-- Toshe's Vengeance
-							["sourceQuest"] = 25456,	-- Back in One Piece (TODO:: does this require any other quest from Silver Tide Hollow?)
+							["sourceQuest"] = 25456,	-- Back in One Piece (TODO:  does this require any other quest from Silver Tide Hollow?)
 							["qg"] = 39876,	-- Felora Firewreath
 							["coord"] = { 49.5, 42.3, VASHJIR_SHIMMERING_EXPANSE },
 							["isBreadcrumb"] = true,
@@ -3095,12 +3088,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER 9.2.5
 					n(SPECIAL, {
 						o(373438, {	-- Coilclutch Vine
-							["coord"] = { 34.7, 75, VASHJIR_SHIMMERING_EXPANSE },
-							["cost"] = {{"i",187662,1}},	-- Strange Goop
+							["coord"] = { 34.7, 75.0, VASHJIR_SHIMMERING_EXPANSE },
+							["cost"] = { { "i", 187662, 1 } },	-- Strange Goop
 							["timeline"] = { ADDED_9_2_5 },
-							["groups"] = {
-								i(187916),	-- Coilclutch Vine
-							},
+							["groups"] = { i(187916) },	-- Coilclutch Vine
 						}),
 					}),
 					-- #endif
@@ -3141,6 +3132,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									i(62362),	-- Signet of the Elder Council
 								},
 							}),
+						}),
+					}),
+					n(ZONE_DROPS, {
+						i(62281, {	-- Ancient Elven Etching (A)
+							["races"] = ALLIANCE_ONLY,
+							["crs"] = {
+								41227,	-- Azsh'ir Infantry
+								39638,	-- Azsh'ir Patroller
+							},
+						}),
+						i(62282, {	-- Ancient Elven Etching (H)
+							["races"] = HORDE_ONLY,
+							["crs"] = {
+								41227,	-- Azsh'ir Infantry
+								39638,	-- Azsh'ir Patroller
+							},
 						}),
 					}),
 				},

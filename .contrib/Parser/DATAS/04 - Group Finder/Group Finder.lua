@@ -563,7 +563,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		})),
 		i(69903, {	-- Satchel of Exotic Mysteries
 			["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
-			["sym"] = { MOP_SYM_PETS, {"select", "itemID",
+			["sym"] = { appendAllGroups({}, MOP_SYM_PETS, {
 				13335,	-- Deathcharger's Reins
 				43953,	-- Reins of the Blue Drake
 				44151,	-- Reins of the Blue Proto-Drake
@@ -571,7 +571,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				32768,	-- Reins of the Raven Lord
 				43962,	-- Reins of the White Polar Bear
 				35513,	-- Swift White Hawkstrider
-			}},
+			})},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
@@ -833,6 +833,11 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 					i(224572),	-- Crystallized Augment Rune
 				}),
 			},
+		}),
+	})),
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+		i(259086, {	-- Void-Touched Satchel of Cooperation
+			i(259085),	-- Void-Touched Augment Rune
 		}),
 	})),
 }));
@@ -1200,6 +1205,89 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(82623),	-- The War Within (80) E
 			q(82624),	-- The War Within (80) E
 			q(82625),	-- The War Within (80) E
+		}),
+	})),
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+		n(GROUP_FINDER, {
+			q(93522),	-- LFGDungeons - 12.x Midnight - Raid Finder - 1st
+			q(93520),	-- LFGDungeons - 12.x Midnight - Raid Finder - Nth
+			q(94811),	-- LFGDungeons - Midnight - Heroic Random - 1st
+			q(94812),	-- LFGDungeons - Midnight - Heroic Random - Nth
+			q(94808),	-- LFGDungeons - Midnight - Normal Random - 1st
+			q(94809),	-- LFGDungeons - Midnight - Normal Random - Nth
+			q(95220),	-- Midnight (30-79) E
+			q(95221),	-- Midnight (30-79) E
+			q(95222),	-- Midnight (30-79) E
+			q(95224),	-- Midnight (30-79) E
+			q(95225),	-- Midnight (30-79) E
+			q(95230),	-- Midnight (80) E
+			q(95232),	-- Midnight (80) E
+			q(95233),	-- Midnight (80) E
+			q(95235),	-- Midnight (80) E
+			q(95236),	-- Midnight (80) E
+			q(93365),	-- Midnight (81-89) E
+			q(93368),	-- Midnight (81-89) E
+			q(93369),	-- Midnight (81-89) E
+			q(93370),	-- Midnight (81-89) E
+			q(93371),	-- Midnight (81-89) E
+			q(93373),	-- Midnight (81-89) E
+			q(93375),	-- Midnight (81-89) E
+			q(93376),	-- Midnight (81-89) E
+			q(93377),	-- Midnight (81-89) E
+			q(93378),	-- Midnight (81-89) E
+			q(93379),	-- Midnight (81-89) E
+			q(95237),	-- Midnight (81-89) E
+			q(93374),	-- Midnight (81-90) E
+			q(95238),	-- Midnight (81-89) E
+			q(95239),	-- Midnight (81-89) E
+			q(95241),	-- Midnight (81-89) E
+			q(95242),	-- Midnight (81-89) E
+			q(95259),	-- Midnight (81-89) E
+			q(93270),	-- Midnight (90) E
+			q(93271),	-- Midnight (90) E
+			q(93272),	-- Midnight (90) E
+			q(93273),	-- Midnight (90) E
+			q(93274),	-- Midnight (90) E
+			q(93276),	-- Midnight (90) E
+			q(93277),	-- Midnight (90) E
+			q(93278),	-- Midnight (90) E
+			q(93279),	-- Midnight (90) E
+			q(93280),	-- Midnight (90) E
+			q(93281),	-- Midnight (90) E
+			q(93282),	-- Midnight (90) E
+			q(93283),	-- Midnight (90) E
+			q(93284),	-- Midnight (90) E
+			q(93285),	-- Midnight (90) E
+			q(93286),	-- Midnight (90) E
+			q(93287),	-- Midnight (90) E
+			q(93288),	-- Midnight (90) E
+			q(93289),	-- Midnight (90) E
+			q(93290),	-- Midnight (90) E
+			q(93291),	-- Midnight (90) E
+			q(93292),	-- Midnight (90) E
+			q(93293),	-- Midnight (90) E
+			q(93294),	-- Midnight (90) E
+			q(93295),	-- Midnight (90) E
+			q(93296),	-- Midnight (90) E
+			q(93297),	-- Midnight (90) E
+			q(93301),	-- Midnight (90) E
+			q(93302),	-- Midnight (90) E
+			q(93303),	-- Midnight (90) E
+			q(93304),	-- Midnight (90) E
+			q(93305),	-- Midnight (90) E
+			q(93306),	-- Midnight (90) E
+			q(93307),	-- Midnight (90) E
+			q(93308),	-- Midnight (90) E
+			q(93309),	-- Midnight (90) E
+			q(93310),	-- Midnight (90) E
+			q(93311),	-- Midnight (90) E
+			q(93312),	-- Midnight (90) E
+			q(93313),	-- Midnight (90) E
+			q(94783),	-- Midnight (90) E
+			q(94784),	-- Midnight (90) E
+			q(94785),	-- Midnight (90) E
+			q(94786),	-- Midnight (90) E
+			q(94787),	-- Midnight (90) E
 		}),
 	})),
 });

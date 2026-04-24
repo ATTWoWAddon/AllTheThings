@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(WORLD_QUESTS, {
@@ -8,7 +9,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
 				petbattle(q(82292, {	-- Rock Collector
 					["provider"] = { "n", 223446 },	-- Collector Dyna
 					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
@@ -47,7 +50,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 31.6, 59.3, DORNOGAL },
 				}),
 				q(82658, {	-- Drop and Go
-					--["coord"] = { 45.2, 65.0, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights
+					-- ["coord"] = { 45.2, 65.0, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights
 					["groups"] = {
 						o(449528, {	-- Opal-Mining Tools
 							i(224074),	-- Opal-Mining Tools (QI!)
@@ -82,7 +85,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 77.5, 48.5, ISLE_OF_DORN },
 				}),
 				q(82455, {	-- No More Bread
-					["coord"] = { 40, 63.6, ISLE_OF_DORN },
+					["coord"] = { 40.0, 63.6, ISLE_OF_DORN },
 				}),
 				q(82451, {	-- Preserving Plush Pals
 					["coord"] = { 32.5, 53.3, ISLE_OF_DORN },
@@ -101,7 +104,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 56.8, 42.5, ISLE_OF_DORN },
 				}),
 				q(80295, {	-- Rocks, Water and Elemental Fodder
-					--["coord"] = { 73.6, 55.1, ISLE_OF_DORN },	-- need proper coords from popup, cause wq area can be started @ 71.3, 46.4
+					-- ["coord"] = { 73.6, 55.1, ISLE_OF_DORN },	-- need proper coords from popup, cause wq area can be started @ 71.3, 46.4
 					["groups"] = {
 						i(217343),	-- Living Coalesced Silt (QI!)
 					},
@@ -125,7 +128,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 58.3, 24.9, ISLE_OF_DORN },
 				}),
 				q(81621, {	-- Tunnels Be Gone!
-					--["coord"] = { 63.9, 43.1, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights
+					-- ["coord"] = { 63.9, 43.1, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights
 					["groups"] = {
 						i(219284),	-- Explosive Sticks (QI!)
 					},
@@ -144,7 +147,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 71.3, 40.7, ISLE_OF_DORN },
 				}),
 				q(82146, {	-- Special Assignment: Cinderbee Surge
-					--["coord"] = { x, y, ISLE_OF_DORN },
+					-- ["coord"] = { x, y, ISLE_OF_DORN },
 				}),
 				q(81650, {	-- Special Assignment: Titanic Resurgence
 					["coord"] = { 71.7, 31.1, ISLE_OF_DORN },
@@ -156,10 +159,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 73.0, 77.2, ISLE_OF_DORN },
 				}),
 				q(83069, {	-- Special Assignment: Titanic Resurgence
-					--["coord"] = { x, y, ISLE_OF_DORN },
+					-- ["coord"] = { x, y, ISLE_OF_DORN },
 				}),
 				q(83070, {	-- Special Assignment: Titanic Resurgence
-					--["coord"] = { x, y, ISLE_OF_DORN },
+					-- ["coord"] = { x, y, ISLE_OF_DORN },
 				}),
 				q(81647, {	-- Special Assignment: Titanic Resurgence
 					["coord"] = { 31.8, 71.3, ISLE_OF_DORN },

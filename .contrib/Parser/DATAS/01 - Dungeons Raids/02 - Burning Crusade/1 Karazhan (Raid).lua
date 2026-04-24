@@ -1,11 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local REMOVED_WITH_RETURN_TO_KARAZHAN = { REMOVED_7_1_0 };
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(745, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Karazhan (Raid)
 		["lore"] = "Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",
-		["description"] = "The best route for a fuil clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",
+		["description"] = "The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",
 		-- #if BEFORE CATA
 		["zone-text-areaID"] = 2562,	-- Karazhan
 		-- #endif
@@ -30,9 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			366,	-- Netherspace
 		},
 		-- #if BEFORE 4.2.0
-		["cost"] = {
-			{ "i", 24490, 1 },	-- The Master's Key
-		},
+		["cost"] = { { "i", 24490, 1 } },	-- The Master's Key
 		-- #endif
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								}),
 								objective(2, {	-- Underground Pond Reading
 									["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
-									["coord"] = { 43, 13, DEADWIND_PASS },
+									["coord"] = { 43.0, 13.0, DEADWIND_PASS },
 								}),
 							},
 						}),
@@ -150,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 										12378,	-- Damned Soul
 										7370,	-- Restless Shade
 										12379,	-- Unliving Caretaker
-										-- 12380,	-- Unliving Resident -- NOTE: This was removed as a drop source sometime during TBC.
+										-- 12380,	-- Unliving Resident	-- NOTE: This was removed as a drop source sometime during TBC.
 										12377,	-- Wailing Spectre
 									},
 								}),
@@ -197,7 +197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					}, {	-- Friendly
 						q(10731, {	-- Path of the Violet Assassin
 							["altQuests"] = {
-								--10731,	-- Path of the Violet Assassin [Assassin]
+								-- 10731,	-- Path of the Violet Assassin [Assassin]
 								10729,	-- Path of the Violet Mage [Mage]
 								10732,	-- Path of the Violet Protector [Protector]
 								10730,	-- Path of the Violet Restorer [Restorer]
@@ -212,7 +212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						q(10729, {	-- Path of the Violet Mage
 							["altQuests"] = {
 								10731,	-- Path of the Violet Assassin [Assassin]
-								--10729,	-- Path of the Violet Mage [Mage]
+								-- 10729,	-- Path of the Violet Mage [Mage]
 								10732,	-- Path of the Violet Protector [Protector]
 								10730,	-- Path of the Violet Restorer [Restorer]
 							},
@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["altQuests"] = {
 								10731,	-- Path of the Violet Assassin [Assassin]
 								10729,	-- Path of the Violet Mage [Mage]
-								--10732,	-- Path of the Violet Protector [Protector]
+								-- 10732,	-- Path of the Violet Protector [Protector]
 								10730,	-- Path of the Violet Restorer [Restorer]
 							},
 							["qg"] = 18253,	-- Archmage Leryda
@@ -242,7 +242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								10731,	-- Path of the Violet Assassin [Assassin]
 								10729,	-- Path of the Violet Mage [Mage]
 								10732,	-- Path of the Violet Protector [Protector]
-								--10730,	-- Path of the Violet Restorer [Restorer]
+								-- 10730,	-- Path of the Violet Restorer [Restorer]
 							},
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
@@ -280,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						q(10735, {	-- Down the Violet Path [Assassin]
 							["sourceQuest"] = 10731,	-- Path of the Violet Assassin
 							["altQuests"] = {
-								--10735,	-- Down the Violet Path [Assassin]
+								-- 10735,	-- Down the Violet Path [Assassin]
 								10733,	-- Down the Violet Path [Mage]
 								10736,	-- Down the Violet Path [Protector]
 								10734,	-- Down the Violet Path [Restorer]
@@ -299,7 +299,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10729,	-- Path of the Violet Mage
 							["altQuests"] = {
 								10735,	-- Down the Violet Path [Assassin]
-								--10733,	-- Down the Violet Path [Mage]
+								-- 10733,	-- Down the Violet Path [Mage]
 								10736,	-- Down the Violet Path [Protector]
 								10734,	-- Down the Violet Path [Restorer]
 							},
@@ -318,7 +318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["altQuests"] = {
 								10735,	-- Down the Violet Path [Assassin]
 								10733,	-- Down the Violet Path [Mage]
-								--10736,	-- Down the Violet Path [Protector]
+								-- 10736,	-- Down the Violet Path [Protector]
 								10734,	-- Down the Violet Path [Restorer]
 							},
 							["qg"] = 18253,	-- Archmage Leryda
@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								10735,	-- Down the Violet Path [Assassin]
 								10733,	-- Down the Violet Path [Mage]
 								10736,	-- Down the Violet Path [Protector]
-								--10734,	-- Down the Violet Path [Restorer]
+								-- 10734,	-- Down the Violet Path [Restorer]
 							},
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
@@ -417,7 +417,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						q(10740, {	-- Distinguished Service [Assassin]
 							["sourceQuest"] = 10735,	-- Down the Violet Path [Assassin]
 							["altQuests"] = {
-								--10740,	-- Distinguished Service [Assassin]
+								-- 10740,	-- Distinguished Service [Assassin]
 								10738,	-- Distinguished Service [Mage]
 								10741,	-- Distinguished Service [Protector]
 								10739,	-- Distinguished Service [Restorer]
@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10733,	-- Down the Violet Path [Mage]
 							["altQuests"] = {
 								10740,	-- Distinguished Service [Assassin]
-								--10738,	-- Distinguished Service [Mage]
+								-- 10738,	-- Distinguished Service [Mage]
 								10741,	-- Distinguished Service [Protector]
 								10739,	-- Distinguished Service [Restorer]
 							},
@@ -455,7 +455,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["altQuests"] = {
 								10740,	-- Distinguished Service [Assassin]
 								10738,	-- Distinguished Service [Mage]
-								--10741,	-- Distinguished Service [Protector]
+								-- 10741,	-- Distinguished Service [Protector]
 								10739,	-- Distinguished Service [Restorer]
 							},
 							["qg"] = 18253,	-- Archmage Leryda
@@ -474,7 +474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								10740,	-- Distinguished Service [Assassin]
 								10738,	-- Distinguished Service [Mage]
 								10741,	-- Distinguished Service [Protector]
-								--10739,	-- Distinguished Service [Restorer]
+								-- 10739,	-- Distinguished Service [Restorer]
 							},
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
@@ -491,13 +491,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10725,	-- Eminence Among the Violet Eye [Mage]
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["cost"] = {
-								{ "i", 29287, 1 },	-- Violet Signet of the Archmage
-							},
+							["cost"] = { { "i", 29287, 1 } },	-- Violet Signet of the Archmage
 							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
-								--i(29287),	-- Violet Signet of the Archmage
+								-- i(29287),	-- Violet Signet of the Archmage
 								i(29279),	-- Violet Signet of the Great Protector
 								i(29290),	-- Violet Signet of the Grand Restorer
 								i(29283),	-- Violet Signet of the Master Assassin
@@ -507,9 +505,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10727,	-- Eminence Among the Violet Eye [Assassin]
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["cost"] = {
-								{ "i", 29283, 1 },	-- Violet Signet of the Master Assassin
-							},
+							["cost"] = { { "i", 29283, 1 } },	-- Violet Signet of the Master Assassin
 							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
@@ -521,7 +517,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						q(10727, {	-- Eminence Among the Violet Eye [Assassin]
 							["sourceQuest"] = 10740,	-- Distinguished Service [Assassin]
 							["altQuests"] = {
-								--10727,	-- Eminence Among the Violet Eye [Assassin]
+								-- 10727,	-- Eminence Among the Violet Eye [Assassin]
 								10725,	-- Eminence Among the Violet Eye [Mage]
 								10728,	-- Eminence Among the Violet Eye [Protector]
 								10726,	-- Eminence Among the Violet Eye [Restorer]
@@ -540,7 +536,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10738,	-- Distinguished Service [Mage]
 							["altQuests"] = {
 								10727,	-- Eminence Among the Violet Eye [Assassin]
-								--10725,	-- Eminence Among the Violet Eye [Mage]
+								-- 10725,	-- Eminence Among the Violet Eye [Mage]
 								10728,	-- Eminence Among the Violet Eye [Protector]
 								10726,	-- Eminence Among the Violet Eye [Restorer]
 							},
@@ -559,7 +555,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["altQuests"] = {
 								10727,	-- Eminence Among the Violet Eye [Assassin]
 								10725,	-- Eminence Among the Violet Eye [Mage]
-								--10728,	-- Eminence Among the Violet Eye [Protector]
+								-- 10728,	-- Eminence Among the Violet Eye [Protector]
 								10726,	-- Eminence Among the Violet Eye [Restorer]
 							},
 							["qg"] = 18253,	-- Archmage Leryda
@@ -578,7 +574,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								10727,	-- Eminence Among the Violet Eye [Assassin]
 								10725,	-- Eminence Among the Violet Eye [Mage]
 								10728,	-- Eminence Among the Violet Eye [Protector]
-								--10726,	-- Eminence Among the Violet Eye [Restorer]
+								-- 10726,	-- Eminence Among the Violet Eye [Restorer]
 							},
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
@@ -594,14 +590,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10728,	-- Eminence Among the Violet Eye [Protector]
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["cost"] = {
-								{ "i", 29279, 1 },	-- Violet Signet of the Great Protector
-							},
+							["cost"] = { { "i", 29279, 1 } },	-- Violet Signet of the Great Protector
 							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
 								i(29287),	-- Violet Signet of the Archmage
-								--i(29279),	-- Violet Signet of the Great Protector
+								-- i(29279),	-- Violet Signet of the Great Protector
 								i(29290),	-- Violet Signet of the Grand Restorer
 								i(29283),	-- Violet Signet of the Master Assassin
 							},
@@ -610,15 +604,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10726,	-- Eminence Among the Violet Eye [Restorer]
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["cost"] = {
-								{ "i", 29290, 1 },	-- Violet Signet of the Grand Restorer
-							},
+							["cost"] = { { "i", 29290, 1 } },	-- Violet Signet of the Grand Restorer
 							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
 								i(29287),	-- Violet Signet of the Archmage
 								i(29279),	-- Violet Signet of the Great Protector
-								--i(29290),	-- Violet Signet of the Grand Restorer
+								-- i(29290),	-- Violet Signet of the Grand Restorer
 								i(29283),	-- Violet Signet of the Master Assassin
 							},
 						}),

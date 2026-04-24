@@ -1,11 +1,20 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 HEARTHSTONE = createHeader({
 	readable = "Hearthstone",
 	icon = 134414,
 	text = {
 		en = "Hearthstone",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "炉石传说",
 		tw = "爐石戰記",
 	},
@@ -18,11 +27,12 @@ HEARTHSTONE_MERCENARIES_MODE = createHeader({
 	icon = 134414,
 	text = {
 		en = "Hearthstone Mercenaries",
-		es = "Hearthstone Mercenarios",
 		de = "Hearthstone Söldner",
+		es = "Hearthstone Mercenarios",
+		mx = "Hearthstone Mercenarios",
 		fr = "Hearthstone Mercenaires",
 		it = "Hearthstone Mercenari",
-		mx = "Hearthstone Mercenarios",
+		-- TODO: ko = "",
 		pt = "Hearthstone Mercenários",
 		ru = "Hearthstone Наемники",
 		cn = "炉石传说佣兵战纪",
@@ -37,17 +47,19 @@ HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 	icon = 134414,
 	text = {
 		en = "Hearthstone's 10th Anniversary",
-		es = "10.º aniversario de Hearthstone",
 		de = "10. Jubiläum von Hearthstone",
+		es = "10.º aniversario de Hearthstone",
+		mx = "10.º aniversario de Hearthstone",
 		fr = "10e anniversaire de Hearthstone",
 		it = "10° anniversario di Hearthstone",
-		mx = "10.º aniversario de Hearthstone",
+		-- TODO: ko = "",
 		pt = "10º Aniversário de Hearthstone",
 		ru = "10-я годовщина Hearthstone",
 		cn = "《炉石传说》10周年",
 		tw = "《爐石戰記》10週年"
 	},
 });
+
 root(ROOTS.Promotions, {
 	n(HEARTHSTONE, bubbleDown({ ["u"] = REAL_MONEY }, {
 		["timeline"] = {
@@ -65,7 +77,11 @@ root(ROOTS.Promotions, {
 	n(HEARTHSTONE_MERCENARIES_MODE, bubbleDown({ ["u"] = REAL_MONEY }, {
 		["timeline"] = { ADDED_9_1_0 },
 		["groups"] = {
+			-- #if AFTER 11.2.5
+			i(258431),	-- Sarge's Tale (MOUNT!)
+			-- #else
 			mount(356488),	-- Sarge's Tale (MOUNT!)
+			-- #endif
 			ach(15323),	-- Sarge's Tale
 		},
 	})),
@@ -90,14 +106,12 @@ root(ROOTS.Promotions, {
 				ach(19724),		-- Hearthstone Card Collection
 			}),
 			n(MAILBOX, bubbleDown({ ["timeline"] = { REMOVED_10_2_6 } }, {
-				i(212154),	-- Hearthstone Invitation Letter (QI!)
+				i(212154),	-- Hearthstone Invitation Letter (QS!)
 			})),
 			n(QUESTS, bubbleDown({ ["timeline"] = { REMOVED_10_2_6 } }, {
 				q(79184, {	-- It's Hearthstone's Anniversary!
-					["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter (QI!)
-					["groups"] = {
-						i(212157),	-- An Invitation
-					},
+					["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter (QS!)
+					["groups"] = { i(212157) },	-- An Invitation
 				}),
 				q(79178, {	-- Play Hearthstone!
 					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
@@ -136,7 +150,7 @@ root(ROOTS.Promotions, {
 				["provider"] = { "n", 214985 },	-- Ominous Portal
 				["timeline"] = { REMOVED_10_2_6 },
 				["groups"] = {
-					i(212335),	-- Collector's Carryall (BAG)
+					i(212335),	-- Collector's Carryall (BAG!)
 					i(212337),	-- Stone of the Hearth (TOY!)
 					i(212522),	-- Compass Rose (MOUNT!)
 					i(212606),	-- Sarge (PET!)

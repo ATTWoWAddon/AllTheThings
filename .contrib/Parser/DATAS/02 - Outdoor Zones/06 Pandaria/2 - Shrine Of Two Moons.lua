@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(PANDARIA, {
 	m(SHRINE_OF_TWO_MOONS, {	-- Shrine of Two Moons
 		["lore"] = "The Shrine of Two Moons is an ancient mogu structure located north of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. The Golden Lotus have allowed use of the shrine by the Horde, and it serves as the main hub for the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.",
@@ -95,8 +96,8 @@ root(ROOTS.Zones, m(PANDARIA, {
 					["coord"] = { 61.6, 21.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = IGNORED_VALUE,	-- technically available both factions
 					["groups"] = sharedData({
-						["cost"] = {{"i",76061,1}},	-- Spirit of Harmony
-					},{
+						["cost"] = { { "i", 76061, 1 } },	-- Spirit of Harmony
+					}, {
 						i(72094),	-- Black Trillium Ore
 						i(74247),	-- Ethereal Shard
 						i(72092),	-- Ghost Iron Ore
@@ -116,56 +117,26 @@ root(ROOTS.Zones, m(PANDARIA, {
 				n(64051, {	-- Esha the Loommaiden <Tailoring Supplies>
 					["requireSkill"] = TAILORING,
 					["coord"] = { 31.5, 53.6, SHRINE_OF_TWO_MOONS },
-					["groups"] = {
-						i(86361, {	-- Pattern: Contender's Satin Amice (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86367, {	-- Pattern: Contender's Satin Belt (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86360, {	-- Pattern: Contender's Satin Cowl (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86365, {	-- Pattern: Contender's Satin Cuffs (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86366, {	-- Pattern: Contender's Satin Footwraps (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86363, {	-- Pattern: Contender's Satin Handwraps (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86364, {	-- Pattern: Contender's Satin Pants (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86362, {	-- Pattern: Contender's Satin Raiment (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86353, {	-- Pattern: Contender's Silk Amice (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86359, {	-- Pattern: Contender's Silk Belt (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86352, {	-- Pattern: Contender's Silk Cowl (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86357, {	-- Pattern: Contender's Silk Cuffs (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86358, {	-- Pattern: Contender's Silk Footwraps (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86355, {	-- Pattern: Contender's Silk Handwraps (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86356, {	-- Pattern: Contender's Silk Pants (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86354, {	-- Pattern: Contender's Silk Raiment (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-					},
+					["groups"] = sharedData({
+						["cost"] = { { "i", 76061, 1 } },	-- Spirit of Harmony
+					}, {
+						i(86361),	-- Pattern: Contender's Satin Amice (RECIPE!)
+						i(86367),	-- Pattern: Contender's Satin Belt (RECIPE!)
+						i(86360),	-- Pattern: Contender's Satin Cowl (RECIPE!)
+						i(86365),	-- Pattern: Contender's Satin Cuffs (RECIPE!)
+						i(86366),	-- Pattern: Contender's Satin Footwraps (RECIPE!)
+						i(86363),	-- Pattern: Contender's Satin Handwraps (RECIPE!)
+						i(86364),	-- Pattern: Contender's Satin Pants (RECIPE!)
+						i(86362),	-- Pattern: Contender's Satin Raiment (RECIPE!)
+						i(86353),	-- Pattern: Contender's Silk Amice (RECIPE!)
+						i(86359),	-- Pattern: Contender's Silk Belt (RECIPE!)
+						i(86352),	-- Pattern: Contender's Silk Cowl (RECIPE!)
+						i(86357),	-- Pattern: Contender's Silk Cuffs (RECIPE!)
+						i(86358),	-- Pattern: Contender's Silk Footwraps (RECIPE!)
+						i(86355),	-- Pattern: Contender's Silk Handwraps (RECIPE!)
+						i(86356),	-- Pattern: Contender's Silk Pants (RECIPE!)
+						i(86354),	-- Pattern: Contender's Silk Raiment (RECIPE!)
+					}),
 				}),
 				n(64062, {	-- Gentle Dari <First Aid Supplies>
 					["coord"] = { 32.6, 73.7, SHRINE_OF_TWO_MOONS },

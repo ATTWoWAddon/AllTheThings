@@ -1,14 +1,25 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
-root(ROOTS.Character,
+root(ROOTS.Character, {
+	n(FACTIONS, sharedData({
+		["sharedDescription"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+	},{
+		-- CRIEVE NOTE: It is actually possible to max this out over several years.
+		faction(469, {	-- Alliance
+			["icon"] = 374217,
+			["races"] = ALLIANCE_ONLY,
+		}),
+		faction(67, {	-- Horde
+			["icon"] = 374221,
+			["races"] = HORDE_ONLY,
+		}),
+	})),
 	n(FACTIONS, sharedData({
 		["sharedDescription"] = "This is a hidden reputation. It might not count towards reputation achievements.",
 		["collectible"] = false,
 	},{
-		faction(469, {["races"] = ALLIANCE_ONLY}),			-- Alliance
 		faction(891, {["races"] = ALLIANCE_ONLY}),			-- Alliance Forces
-		faction(67, {["races"] = HORDE_ONLY}),				-- Horde
 		faction(892, {["races"] = HORDE_ONLY}),				-- Horde Forces
 		faction(1118, {["timeline"] = {ADDED_3_0_2}}),		-- Classic
 		faction(980, {["timeline"] = {ADDED_2_0_1 }}),		-- The Burning Crusade
@@ -20,4 +31,7 @@ root(ROOTS.Character,
 		faction(2104, {["timeline"] = {ADDED_8_0_1 }}),		-- Battle for Azeroth
 		faction(2414, {["timeline"] = {ADDED_9_0_1 }}),		-- Shadowlands
 		faction(2506, {["timeline"] = {ADDED_10_0_0 }}),	-- Dragonflight
-})));
+		faction(2569, {["timeline"] = {ADDED_11_0_2 }}),	-- The War Within
+		faction(2698, {["timeline"] = {ADDED_12_0_1_LAUNCH }}),	-- Midnight
+	})),
+});

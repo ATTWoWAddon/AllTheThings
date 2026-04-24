@@ -38,7 +38,7 @@ root(ROOTS.Secrets, header(HEADERS.Item, 186639, {	-- Xy Trustee's Gearglider
 			["groups"] = { i(249712) },	-- Cartel Om Cypher
 		}),
 		o(555610, {	-- Cartel Zo Dead Drop
-			["description"] = "On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.",
+			["description"] = "On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.\n\nThis cannot be looted in a cleared instance!",
 			["maps"] = 2463,	-- Technomancers' Terrace
 			["cost"] = { { "i", 249700, 1 } },	-- Deal: Cartel Zo
 			["minReputation"] = { FACTION_MANAFORGE_VANDALS, 8 },

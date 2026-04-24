@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras. You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["groups"] = {
 					i(165728, {	-- Outpost Upgrade: The Great Seal (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,
 						["groups"] = {
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165804, {	-- Outpost Upgrade: Vulpera Hideaway (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165750, {	-- Outpost Upgrade: Zul'jan Ruins (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162533, {	-- Scouting Report: Hillcrest Pasture
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -95,6 +95,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {
+											i(162119),	-- Hillcrest Pasture (CI!)
 											i(162123),	-- Mission Report (QI!)
 										},
 									}),
@@ -109,7 +110,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162535, {	-- Scouting Report: Mudfisher Cove
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -121,7 +122,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {
-											i(161482),	-- Mudfisher Cove
+											i(161482),	-- Mudfisher Cove (CI!)
 											i(161484),	-- Mission Report (QI!)
 										},
 									}),
@@ -157,7 +158,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162531, {	-- Scouting Report: Stonefist Watch
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -169,6 +170,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {
+											i(161385),	-- Stonefist Watch (CI!)
 											i(161386),	-- Mission Report (QI!)
 										},
 									}),
@@ -204,7 +206,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162534, {	-- Scouting Report: Stonetusk Watch
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -216,7 +218,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {
-											i(162511),	-- Stonetusk Watch
+											i(162511),	-- Stonetusk Watch (CI!)
 											i(162512),	-- Mission Report (QI!)
 										},
 									}),
@@ -252,7 +254,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162536, {	-- Scouting Report: Swiftwind Post
-						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
+						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -264,7 +266,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {
-											i(165362),	-- Swiftwind Post
+											i(161449),	-- Swiftwind Post (CI!)
 											i(161483),	-- Mission Report (QI!)
 										},
 									}),
@@ -285,6 +287,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {
+											i(163193),	-- Outpost Upgrade
 											i(163194),	-- Mission Report (QI!)
 										},
 									}),
@@ -299,7 +302,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162532, {	-- Scouting Report: Windfall Cavern
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -311,7 +314,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {
-											i(161487),	-- Windfall Cavern
+											i(161487),	-- Windfall Cavern (CI!)
 											i(161488),	-- Mission Report (QI!)
 										},
 									}),
@@ -326,11 +329,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162530, {	-- Scouting Report: Wolf's Den
-						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
+						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
-						--	initial outpost setup
+							-- initial outpost setup
 							mi(1880, {	-- Wolf's Den
 								["races"] = HORDE_ONLY,
 								["groups"] = {
@@ -339,6 +342,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {
+											i(161121),	-- The Wolf's Den (CI!)
 											i(161152),	-- Mission Report (QI!)
 										},
 									}),
@@ -360,6 +364,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
 										["groups"] = {
+											i(163507),	-- Outpost Upgrade
 											i(163519),	-- Mission Report (QI!)
 										},
 									}),
@@ -375,12 +380,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				},
 			}),
+			pvp(n(PVP, {
+				q(54979, {	-- Against Overwhelming Odds
+					["qg"] = 138708,	-- Garona Halforcen
+					["coord"] = { 51.6, 99.7, DAZARALOR },
+					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
+				}),
+			})),
 			q(58672, {	-- A Gathering of Champions
 				["sourceQuests"] = {
 					58631,	-- Into Dreams
 				},
 				["provider"] = { "n", 161458 },	-- Valeera Sanguinar
-				["coord"] = { 55.9, 30.3, THE_GREAT_SEAL },
+				["coord"] = { 54.7, 30.8, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,
 			}),
 			q(51465, {	-- A Load of Scrap
@@ -401,6 +414,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					48897,	-- The Bargain is Struck (Gonk)
 					49663,	-- False Prophecies
 				},
+				["sourceQuestNumRequired"] = 3,
 				["provider"] = { "n", 120740 },	-- King Rastakhan
 				["coord"] = { 49.8, 46.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -516,7 +530,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(56249, {	-- I Am the Trashmaster
 				["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
-				--["sourceQuests"] = { },
+				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
 				["coord"] = { 35.3, 7.70, DAZARALOR },
 				["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
@@ -724,7 +738,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49758, {	-- Send the Signal!
 				["sourceQuests"] = {
-					--,	-- Sending Out an SOS (breadcrumb)
+					-- ,	-- Sending Out an SOS (breadcrumb)
 					49310,	-- The Prophet's Ploy (last real quest required)
 				},
 				["provider"] = { "n", 140590 },	-- Captain Grez'ko
@@ -749,7 +763,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(46931, {	-- Speaker of the Horde
 				["sourceQuests"] = { 46930 },	-- Rastakhan
 				["provider"] = { "n", 120740 },	-- King Rastakhan
-				["coord"] = { 49.8, 46.4, DAZARALOR },
+				["coord"] = { 50.0, 42.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(49488, {	-- Tal'gurub
@@ -778,7 +792,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(48897, {	-- The Bargain is Struck (Gonk)
 				["sourceQuests"] = { 47439 },	-- Gonk, Lord of the Pack
 				["provider"] = { "n", 127576 },	-- Wardruid Loti
-				["coord"] = { 50, 33.6, DAZARALOR },
+				["coord"] = { 50.0, 33.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(245486, {	-- Tired Troll's Bench (DECOR!)
@@ -795,7 +809,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 41.1, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
-			--	verify SQ
+				-- verify SQ
 			}),
 			q(47257, {	-- The Bones of Xibala (H)
 				["sourceQuests"] = { 49426 },	-- The King's Gambit
@@ -929,7 +943,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133050 },	-- Princess Talanji
 				["coord"] = { 41.1, 64.4, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
-			--	TODO: was doing this questline on April 11, 2021 and this quest didn't pop up after i turned in Speaker of the Horde. i went straight from 'speaker of the horde' to choosing to quest in zandalar on the map table inside the great seal. is this a breadcrumb/was it removed/does it require having HoA?  upon solving this mystery anything that has it attached as a SQ may need to be changed as well
+			-- TODO: was doing this questline on April 11, 2021 and this quest didn't pop up after i turned in Speaker of the Horde. i went straight from 'speaker of the horde' to choosing to quest in zandalar on the map table inside the great seal. is this a breadcrumb/was it removed/does it require having HoA?  upon solving this mystery anything that has it attached as a SQ may need to be changed as well
 			}),
 			q(58583, {	-- Where the Heart Is
 				["sourceQuest"] = 58582,	-- Return of the Black Prince
@@ -938,7 +952,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(49283, {	-- Who Seeks the Seekers?
-				["sourceQuests"] = { 49310 },	-- The Prophet's Ploy -- TODO: verify this. It was the earliest i've seen it become available but have additional requirements
+				["sourceQuests"] = { 49310 },	-- The Prophet's Ploy	-- TODO: verify this. It was the earliest i've seen it become available but have additional requirements
 				["provider"] = { "n", 128909 },	-- Shalo
 				["coord"] = { 57.8, 92.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -959,8 +973,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47514, {	-- Zuldazar
-			--	"we need each other" did not pop up at all during my playthrough on April 11, 2021 -- unsure if it has specific requirements/if it's a breadcrumb/if it was removed
-			--	["sourceQuests"] = { 52131 },	-- We Need Each Other
+				-- "we need each other" did not pop up at all during my playthrough on April 11, 2021	-- unsure if it has specific requirements/if it's a breadcrumb/if it was removed
+				-- ["sourceQuests"] = { 52131 },	-- We Need Each Other
 				["sourceQuests"] = { 46931 },	-- Speaker of the Horde
 				["provider"] = { "n", 135775 },	-- Scouting Map
 				["coord"] = { 40.1, 69.1, HALL_OF_CHRONICLERS },
@@ -973,8 +987,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47512, {	-- Nazmir
-			--	TODO: not a SQ during my April 2021 playthrough, unsure of requirements
-			--	["sourceQuests"] = { 52131 },	-- We Need Each Other
+				-- TODO: not a SQ during my April 2021 playthrough, unsure of requirements
+				-- ["sourceQuests"] = { 52131 },	-- We Need Each Other
 				["provider"] = { "n", 135775 },	-- Scouting Map
 				["coord"] = { 41.8, 69.4, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
@@ -1070,14 +1084,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 	m(ZANDALAR, {
 		m(THE_GREAT_SEAL, {
 			n(QUESTS, {
-				-- Missions
-				q(53739),	-- Wolf's Den completed
-				q(53740),	-- Stonefist Watch completed
-				-- q(53741),	-- Windfall Cavern completed
-				-- q(53742),	-- Stonetusk Watch completed
-				q(53743),	-- Hillcrest Pasture completed
-				q(53744),	-- Swiftwind Post completed
-				-- q(53745),	-- Mudfisher Cove completed
 				-- Outpost Upgrades
 				q(54294),	-- Upgrade: The Great Seal completed
 				q(54296),	-- Upgrade: Vulpera Hideaway completed

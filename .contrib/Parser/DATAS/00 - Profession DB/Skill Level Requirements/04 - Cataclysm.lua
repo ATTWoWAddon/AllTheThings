@@ -1,4 +1,7 @@
 -- #if AFTER 4.0.0
+-- #if NOT ANYCLASSIC
+if true then return end
+-- #endif
 -- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!
 local recipeDB = RecipeDBConditional;
 

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- CRIEVE NOTE: Dredgers at Honored in Retail? They go to Exalted in TBC Classic. (someone test this on Retail)
 ExportDB.OnTooltipDB.ForSporeggar = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
@@ -37,6 +38,7 @@ ExportDB.OnTooltipDB.ForSporeggar = [[~function(t, tooltipInfo)
 		end
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -61,7 +63,7 @@ root(ROOTS.Zones, {
 
 							-- Telredor (A)
 							9783,	-- An Unnatural Drought
-							-- TODO:: verify below
+							-- TODO:  verify below
 							9896,	-- Blacksting's Bane
 							9790,	-- Diaphanous Wings
 							9777,	-- Fulgor Spores
@@ -70,14 +72,14 @@ root(ROOTS.Zones, {
 							-- Zabra'jin (H)
 							9816,	-- Have You Ever Seen One of These?
 							9904,	-- Pursuing Terrorclaw
-							-- TODO:: verify below
+							-- TODO:  verify below
 							9847,	-- A Spirit Ally? (probably)
 							9903,	-- The Biggest of Them All (probably)
 							9842,	-- The Sharpest Blades (probably)
 
 							-- Orebor Harborage (A)
 							9902,	-- The Terror of Marshlight Lake
-							-- TODO:: verify below
+							-- TODO:  verify below
 							10115,	-- Daggerfen Deviance
 							9905,	-- Maktu's Revenge
 							9839,	-- Overlord Gorefist
@@ -194,8 +196,15 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				header(HEADERS.Spell, 1810,	 {	-- Lockpicking
-					o(184740),	-- Wicker Chest
+				lockpicking({
+					o(184740, {	-- Wicker Chest
+						["coords"] = {
+							{ 42.5, 63.5, ZANGARMARSH },
+							{ 48.9, 61.7, ZANGARMARSH },
+						},
+						["requireSkill"] = LOCKPICKING,
+						["learnedAt"] = 300,
+					}),
 				}),
 				petbattles({
 					n(66551, {	-- Ras'an <Master Pet Tamer>
@@ -318,7 +327,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- Summon Serpent Spirit
 								["provider"] = { "i", 24498 },	-- Feralfen Totem
 								["coord"] = { 44.2, 66.6, ZANGARMARSH },
-								["cr"] = 18185,	--  Feralfen Serpent Spirit
+								["cr"] = 18185,	-- Feralfen Serpent Spirit
 							}),
 							i(25620),	-- Ancient Crystal Talisman
 							i(31770),	-- Marsh Bracers
@@ -358,7 +367,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/12 Withered Giant slain
 								["provider"] = { "n", 18124 },	-- Withered Giant
-								["coord"] = { 81, 42, ZANGARMARSH },
+								["coord"] = { 81.0, 42.0, ZANGARMARSH },
 							}),
 							i(25599),	-- Explorer's Bands
 							i(25598),	-- Fen Strider's Bracer
@@ -413,19 +422,19 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Umbrafen Lake Controls Disabled
 								["provider"] = { "i", 24355 },	-- Ironvine Seeds
-								["coord"] = { 70, 80, ZANGARMARSH },
+								["coord"] = { 70.0, 80.0, ZANGARMARSH },
 							}),
 							objective(2, {	-- Marshlight Lake Controls Disabled
 								["provider"] = { "i", 24355 },	-- Ironvine Seeds
-								["coord"] = { 25, 43, ZANGARMARSH },
+								["coord"] = { 25.0, 43.0, ZANGARMARSH },
 							}),
 							objective(3, {	-- Serpent Lake Controls Disabled
 								["provider"] = { "i", 24355 },	-- Ironvine Seeds
-								["coord"] = { 62, 41, ZANGARMARSH },
+								["coord"] = { 62.0, 41.0, ZANGARMARSH },
 							}),
 							objective(4, {	-- Lagoon Controls Disabled
 								["provider"] = { "i", 24355 },	-- Ironvine Seeds
-								["coord"] = { 63, 64, ZANGARMARSH },
+								["coord"] = { 63.0, 64.0, ZANGARMARSH },
 							}),
 						},
 					}),
@@ -557,10 +566,14 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(9731, {	-- Drain Schematics
-						["description"] = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved|r to start this quest.",
 						["sourceQuest"] = 9718,	-- Balance Must Be Preserved
-						["provider"] = { "i", 24330 },	-- Drain Schematics
-						["cr"] = 18340,	-- Steam Pump Overseer
+						["provider"] = { "i", 24330 },	-- Drain Schematics (QS!)
+						["coords"] = {	-- Areas where QS! can drop
+							{ 25.5, 42.9, ZANGARMARSH },
+							{ 62.1, 40.7, ZANGARMARSH },
+							{ 63.2, 64.2, ZANGARMARSH },
+							{ 70.5, 80.5, ZANGARMARSH },
+						},
 						["lvl"] = lvlsquish(59, 59, 10),
 						["groups"] = {
 							i(27734),	-- Expedition Caster's Band
@@ -604,7 +617,11 @@ root(ROOTS.Zones, {
 						["qg"] = 17925,	-- Gshaff
 						["coord"] = { 19.1, 49.4, ZANGARMARSH },
 						["minReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
-						["cost"] = { { "i", 24449, 6 } },	-- Fertile Spore
+						["groups"] = {
+							objective(1, {	-- 0/6	Fertile Spores
+								["provider"] = { "i", 24449 },	-- Fertile Spores
+							}),
+						},
 						["lvl"] = lvlsquish(62, 62, 10),
 						["_drop"] = { "g" },	-- Glowcap added from API
 					}),
@@ -686,7 +703,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Release Murlocs at Daggerfen Village
 								["provider"] = { "i", 24470 },	-- Murloc Cage
-								["coord"] = { 26.4, 22, ZANGARMARSH },
+								["coord"] = { 26.4, 22.0, ZANGARMARSH },
 							}),
 							i(25612),	-- Daggerfen Mail
 							i(25610),	-- Fen Strider's Footguards
@@ -703,7 +720,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17909,	-- Lauranna Thar'well
 						["coord"] = { 80.3, 64.2, ZANGARMARSH },
 						["maxReputation"] = { FACTION_CENARION_EXPEDITION, HONORED },	-- Cenarion Expedition, Honored.
-						["cost"] = {{ "i", 24401, 10 }},	-- Unidentified Plant Parts
+						["cost"] = { { "i", 24401, 10 } },	-- Unidentified Plant Parts
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 942.6 },	-- Cenarion Expedition, Honored
 						-- #endif
@@ -749,7 +766,7 @@ root(ROOTS.Zones, {
 									{ "i",  24471 },	-- Ango'rosh Attack Plans
 									{ "o", 182166 },	-- Ango'rosh Attack Plans
 								},
-								["coord"] = { 19.9, 27, ZANGARMARSH },
+								["coord"] = { 19.9, 27.0, ZANGARMARSH },
 							}),
 						},
 					}),
@@ -1077,7 +1094,7 @@ root(ROOTS.Zones, {
 					q(9802, {	-- Plants of Zangarmarsh
 						["qg"] = 17909,	-- Lauranna Thar'well
 						["coord"] = { 80.3, 64.2, ZANGARMARSH },
-						["cost"] = {{ "i", 24401, 10 }},	-- Unidentified Plant Parts
+						["cost"] = { { "i", 24401, 10 } },	-- Unidentified Plant Parts
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							i(24402, {	-- Package of Identified Plants
@@ -1096,7 +1113,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["timeline"] = { REMOVED_4_3_0 },
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
-						["cost"] = {{ "i", 24368, 1 }},	-- Coilfang Armaments
+						["cost"] = { { "i", 24368, 1 } },	-- Coilfang Armaments
 						["lvl"] = lvlsquish(67, 67, 20),
 					}),
 					q(9904, {	-- Pursuing Terrorclaw
@@ -1144,7 +1161,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Lord Klaq slain
 								["provider"] = { "n", 18282 },	-- Lord Klaq
-								["coord"] = { 73, 94.6, ZANGARMARSH },
+								["coord"] = { 73.0, 94.6, ZANGARMARSH },
 							}),
 						},
 					}),
@@ -1318,7 +1335,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(2, {	-- Explore the Boha'mu Ruins
-								["coord"] = { 45, 68, ZANGARMARSH },
+								["coord"] = { 45.0, 68.0, ZANGARMARSH },
 							}),
 						},
 					}),
@@ -1329,9 +1346,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(9911,	{	-- The Count of the Marshes
-						["provider"] = { "i", 25459 },	-- "Count" Ungula's Mandible
+						["provider"] = { "i", 25459 },	-- "Count" Ungula's Mandible (QS!)
 						["coord"] = { 32.8, 59.5, ZANGARMARSH },
-						["cr"] = 18285,	-- "Count" Ungula
 						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(9782, {	-- The Dead Mire
@@ -1493,7 +1509,7 @@ root(ROOTS.Zones, {
 						["hordeQuestData"] = q(9635, {	-- The Zapthrottle Mote Extractor! [A]
 							["altQuests"] = { 9636 },	-- The Zapthrottle Mote Extractor! [H]
 							["qg"] = 17637,	-- Mack Diver <Engineering Trainer>
-							["coord"] = { 34, 51, ZANGARMARSH },
+							["coord"] = { 34.0, 51.0, ZANGARMARSH },
 						}),
 						["requireSkill"] = ENGINEERING,
 						["groups"] = {
@@ -1819,7 +1835,7 @@ root(ROOTS.Zones, {
 					o(373437, {	-- Pungent Blobfish Cluster
 						["timeline"] = { ADDED_9_2_5 },
 						["description"] = "Inside Coilfang Reservoir area.",
-						["cost"] = {{"i",187662,1}},	-- Strange Goop
+						["cost"] = { { "i", 187662, 1 } },	-- Strange Goop
 						["coord"] = { 52.2, 37.9, ZANGARMARSH },
 						["groups"] = {
 							i(187915),	-- Pungent Blobfish
@@ -1837,38 +1853,38 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(27931, {	-- Splintermark
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							i(27942, {	-- Incendic Rod
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							-- #if BEFORE MOP
 							i(27929, {	-- Terminal Edge
 								["timeline"] = { REMOVED_5_0_4 },
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							i(27990, {	-- Idol of Savagery
 								["timeline"] = { REMOVED_5_0_4 },
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							i(27983, {	-- Libram of Zeal
 								["timeline"] = { REMOVED_5_0_4 },
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							-- #endif
 							i(27921, {	-- Mark of Conquest
-								["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 30 } },	-- 30x Mark of Honor Hold
 							}),
 							i(27922, {	-- Mark of Defiance
-								["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 30 } },	-- 30x Mark of Honor Hold
 							}),
 							i(27927, {	-- Mark of Vindication
-								["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 30 } },	-- 30x Mark of Honor Hold
 							}),
 							-- #if BEFORE MOP
 							i(27984, {	-- Totem of Impact
 								["timeline"] = { REMOVED_5_0_4 },
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							-- #endif
 						},
@@ -1937,6 +1953,16 @@ root(ROOTS.Zones, {
 								i(25838),	-- Warden's Hauberk
 								applyclassicphase(TBC_PHASE_TWO, i(35374)),	-- Wyrmhide Spaulders
 							}, {	-- Revered
+								-- #if CLASSIC_ANNIVERSARY
+								i(265844, {	-- Communal Reservoir Pouch
+									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+									["groups"] = {
+										i(265843, {	-- Communal Reservoir Key
+											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+										}),
+									},
+								}),
+								-- #endif
 								i(30623, {	-- Reservoir Key [Revered]
 									["timeline"] = { REMOVED_4_2_0 },
 									-- #if ANYCLASSIC
@@ -2003,38 +2029,38 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(27930, {	-- Splintermark
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							i(27939, {	-- Incendic Rod
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							-- #if BEFORE MOP
 							i(27928, {	-- Terminal Edge
 								["timeline"] = { REMOVED_5_0_4 },
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							i(27989, {	-- Idol of Savagery
 								["timeline"] = { REMOVED_5_0_4 },
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							i(27949, {	-- Libram of Zeal
 								["timeline"] = { REMOVED_5_0_4 },
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							-- #endif
 							i(27920, {	-- Mark of Conquest
-								["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 30 } },	-- 30x Mark of Thrallmar
 							}),
 							i(27924, {	-- Mark of Defiance
-								["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 30 } },	-- 30x Mark of Thrallmar
 							}),
 							i(27926, {	-- Mark of Vindication
-								["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 30 } },	-- 30x Mark of Thrallmar
 							}),
 							-- #if BEFORE MOP
 							i(27947, {	-- Totem of Impact
 								["timeline"] = { REMOVED_5_0_4 },
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							-- #endif
 						},
@@ -2087,66 +2113,66 @@ root(ROOTS.Zones, {
 							{		-- Neutral
 								i(144262, {	-- Fungal Lifestalk
 									["timeline"] = { ADDED_7_2_0 },
-									["cost"] = { { "i", 24245, 20 }, },	-- 20x Glowcap
+									["cost"] = { { "i", 24245, 20 } },	-- 20x Glowcap
 								}),
 								i(24539, {	-- Marsh Lichen
-									["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
+									["cost"] = { { "i", 24245, 2 } },	-- 2x Glowcap
 								}),
 								i(30156, {	-- Recipe: Clam Bar (RECIPE!)
-									["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+									["cost"] = { { "i", 24245, 1 } },	-- 1x Glowcap
 								}),
 								i(27689, {	-- Recipe: Sporeling Snack (RECIPE!)
 									["timeline"] = { REMOVED_4_2_0 },
-									["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
+									["cost"] = { { "i", 24245, 2 } },	-- 2x Glowcap
 								}),
 								i(144265, {	-- Rimecap
 									["timeline"] = { ADDED_7_2_0 },
-									["cost"] = { { "i", 24245, 20 }, },	-- 20x Glowcap
+									["cost"] = { { "i", 24245, 20 } },	-- 20x Glowcap
 								}),
 								i(144276, {	-- Sack of Healing Spores
 									["timeline"] = { ADDED_7_2_0 },
-									["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+									["cost"] = { { "i", 24245, 1 } },	-- 1x Glowcap
 								}),
 								i(144261, {	-- Sporeggium
 									["timeline"] = { ADDED_7_2_0 },
-									["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
+									["cost"] = { { "i", 24245, 10 } },	-- 10x Glowcap
 								}),
 							}, {	-- Friendly
 								i(25548, {	-- Tallstalk Mushroom
-									["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+									["cost"] = { { "i", 24245, 1 } },	-- 1x Glowcap
 								}),
 							}, {	-- Honored
 								i(25827, {	-- Muck-Covered Drape
-									["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
+									["cost"] = { { "i", 24245, 25 } },	-- 25x Glowcap
 								}),
 								i(25828, {	-- Petrified Lichen Guard
-									["cost"] = { { "i", 24245, 15 }, },	-- 15x Glowcap
+									["cost"] = { { "i", 24245, 15 } },	-- 15x Glowcap
 								}),
 								i(25550, {	-- Redcap Toadstool
-									["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+									["cost"] = { { "i", 24245, 1 } },	-- 1x Glowcap
 								}),
 							}, {	-- Revered
 								i(29150, {	-- Hardened Stone Shard
-									["cost"] = { { "i", 24245, 45 }, },	-- 45x Glowcap
+									["cost"] = { { "i", 24245, 45 } },	-- 45x Glowcap
 								}),
 								i(38229, {	-- Pattern: Mycah's Botanical Bag (RECIPE!)
-									["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
+									["cost"] = { { "i", 24245, 25 } },	-- 25x Glowcap
 								}),
 								i(22916, {	-- Recipe: Transmute Primal Earth to Water (RECIPE!)
-									["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
+									["cost"] = { { "i", 24245, 25 } },	-- 25x Glowcap
 								}),
 								i(29149, {	-- Sporeling's Firestick
-									["cost"] = { { "i", 24245, 20 }, },	-- 20x Glowcap
+									["cost"] = { { "i", 24245, 20 } },	-- 20x Glowcap
 								}),
 							}, {	-- Exalted
 								i(31775, {	-- Sporeggar Tabard
-									["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
+									["cost"] = { { "i", 24245, 10 } },	-- 10x Glowcap
 								}),
 								i(34478, {	-- Tiny Sporebat (PET!)
-									["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
+									["cost"] = { { "i", 24245, 30 } },	-- 30x Glowcap
 								}),
 								i(22906, {	-- Recipe: Shrouding Potion (RECIPE!)
-									["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
+									["cost"] = { { "i", 24245, 30 } },	-- 30x Glowcap
 								}),
 							},
 						}),
@@ -2187,6 +2213,9 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(25459, {	-- "Count" Ungula's Mandible (QS!)
+						["cr"] = 18285,	-- "Count" Ungula
+					}),
 					i(24291, {	-- Bog Lord Tendril
 						["crs"] = {
 							18125,	-- Starving Fungal Giant
@@ -2197,9 +2226,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(29960, {	-- Captured Firefly (item) / Firefly (PET!)
-						["description"] = "Teaches you how to summon the pet Firefly. This is an extremely rare drop.",
+						["description"] = "This is an extremely rare drop.",
 						["timeline"] = { ADDED_2_1_0 },
-						["crs"] = { 20197 },	-- Bogflare Needler
+						["cr"] = 20197,	-- Bogflare Needler
+					}),
+					i(24330, {	-- Drain Schematics (QS!)
+						["cr"] = 18340,	-- Steam Pump Overseer
+						["description"] = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved (9720)|r to loot this item.",
 					}),
 					i(24449, {	-- Fertile Spore
 						["crs"] = {

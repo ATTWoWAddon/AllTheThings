@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
@@ -8,21 +9,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(42617),	-- Campaign: Val'Sharah
+					ach(42619, {	-- Dreamweavers
+						i(250407, {	-- Legion’s Fel Brazier (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(60810),	-- Elusive Foes: Val'sharah
-					ach(42580, {	-- Elusive Foes: Val'sharah
-						-- Did 60810 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60809),	-- Explore Val'sharah
-					ach(42573, {	-- Explore Val'sharah
-						-- Did 60809 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60811),	-- Hidden Treasures: Val'sharah
-					ach(42668, {	-- Hidden Treasures: Val'sharah
-						-- Did 60811 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(42663, {	-- Looking for Group: Val'Sharah
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -56,15 +50,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							42594,	-- Tour Val'Sharah
 						}},
 						["groups"] = { i(253353) },	-- Illusion: Felshatter (ILLUSION!)
-					}),
-				}),
-				n(FACTIONS, {
-					faction(FACTION_THE_DREAMWEAVERS, {
-						n(ACHIEVEMENTS, {
-							ach(42619, {	-- Dreamweavers
-								--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Legion’s Fel Brazier (DECOR!)
-							}),
-						}),
 					}),
 				}),
 				n(ZONE_REWARDS, {

@@ -1,18 +1,20 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ELEMENTAL_BONDS = createHeader({
 	readable = "Elemental Bonds",
 	icon = 516313,
 	text = {
 		en = "Elemental Bonds",
-		es = "Vínculos Elementales",
 		de = "Elementare Bande",
+		es = "Vínculos Elementales",
+		-- TODO: mx = "",
 		fr = "Liens élémentaires",
 		it = "Legami Elementali",
+		ko = "정령의 속박",
 		pt = "Prisão Elemental",
 		ru = "Власть стихий",
-		ko = "정령의 속박",
 		cn = "元素誓约",
 		tw = "元素桎梏",
 	},
@@ -20,6 +22,7 @@ ELEMENTAL_BONDS = createHeader({
 		en = "The Elemental Bonds questline is an epic series of quests to restore Thrall to his former self after Majordomo Staghelm splits him into 4 essences of elements.",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 	n(ELEMENTAL_BONDS, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {
 		["lvl"] = lvlsquish(85, 32, 32),
@@ -97,7 +100,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				["groups"] = {
 					objective(1, {	-- 0/1 Alysra slain
 						["provider"] = { "n", 54314 },	-- Alysra
-						["coord"] = { 49, 19.4, MOUNT_HYJAL },
+						["coord"] = { 49.0, 19.4, MOUNT_HYJAL },
 					}),
 				},
 			}),

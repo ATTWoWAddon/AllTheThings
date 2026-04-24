@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(REDRIDGE_MOUNTAINS, {
 		["lore"] =
@@ -95,6 +96,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			lockpicking({
+				o(121264, {	-- Lucius's Lockbox
+					["coord"] = { 52.0, 44.9, REDRIDGE_MOUNTAINS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 25,
+					["groups"] = {
+						i(7871),	-- Token of Thievery
+					},
+				}),
+				-- #if BEFORE CATA
+				o(178244, {	-- Practice Lockbox
+					["coord"] = { 51.9, 45.0, REDRIDGE_MOUNTAINS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 1,
+				}),
+				-- #endif
+			}),
 			petbattles({
 				n(65651, {	-- Lindsay <Master Pet Tamer>
 					["coord"] = { 33.3, 52.6, REDRIDGE_MOUNTAINS },
@@ -141,6 +160,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(QUESTS, {
 				q(124, {	-- A Baying of Gnolls
+					["sourceQuest"] = 119,	-- Return to Verner
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -222,7 +242,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Token of Thievery
 							["provider"] = { "i", 7871 },	-- Token of Thievery (QI!)
-							["coord"] = { 52.0, 44.8, REDRIDGE_MOUNTAINS },
 						}),
 						i(7907, {	-- Certificate of Thievery
 							["description"] = "This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",
@@ -282,7 +301,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(246, {	-- Assessing the Threat
 					["sourceQuest"] = 244,	-- Encroaching Gnolls
 					["qg"] = 1070,	-- Deputy Feldon
-					["coord"] = { 30.8, 60, REDRIDGE_MOUNTAINS },
+					["coord"] = { 30.8, 60.0, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
@@ -694,6 +713,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(126, {	-- Howling in the Hills
+					["sourceQuest"] = 124,	-- A Baying of Gnolls
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -722,7 +742,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Blackrock Hunter slain
 							["provider"] = { "n", 4462 },	-- Blackrock Hunter
-							["coord"] = { 47, 67.2, REDRIDGE_MOUNTAINS },
+							["coord"] = { 47.0, 67.2, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
@@ -962,7 +982,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Pendant of Shadow
 							["provider"] = { "i", 3617 },	-- Pendant of Shadow (QI!)
-							["coord"] = { 80, 49, REDRIDGE_MOUNTAINS },
+							["coord"] = { 80.0, 49.0, REDRIDGE_MOUNTAINS },
 							["cr"] = 397,	-- Morganth
 						}),
 						i(5274, {	-- Rose Mantle
@@ -974,9 +994,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 381,	-- Dockmaster Baren
 					["coord"] = { 27.7, 47.3, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 1468, 8 },	-- Murloc Fin
-					},
+					["cost"] = { { "i", 1468, 8 } },	-- Murloc Fin
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -1087,7 +1105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 43329 },	-- Homurk
 								{ "n", 43350 },	-- Utroka the Keymistress
 							},
-							["coord"] = { 28.2, 13, REDRIDGE_MOUNTAINS },
+							["coord"] = { 28.2, 13.0, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
@@ -1108,6 +1126,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(119, {	-- Return to Verner
+					["sourceQuest"] = 118,	-- The Price of Shoes
 					["providers"] = {
 						{ "n",  514 },	-- Smith Argus
 						{ "i", 1284 },	-- Crate of Horseshoes (PQI!)
@@ -1206,7 +1225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 433 },	-- Shadowhide Gnoll
 								{ "n", 568 },	-- Shadowhide Warrior
 							},
-							["coord"] = { 70.2, 42, REDRIDGE_MOUNTAINS },
+							["coord"] = { 70.2, 42.0, REDRIDGE_MOUNTAINS },
 						}),
 						i(60719, {	-- Danforth's Breastplate
 							["timeline"] = { ADDED_4_0_3 },
@@ -1592,6 +1611,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(122, {	-- Underbelly Scales
+					["sourceQuest"] = 119,	-- Return to Verner
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1780,7 +1800,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
-				n(14273, {  -- Boulderheart
+				n(14273, { 	-- Boulderheart
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 56.6, 51.6, REDRIDGE_MOUNTAINS },
@@ -1789,7 +1809,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				n(616, {  -- Chatter
+				n(616, { 	-- Chatter
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 38.2, 35.8, REDRIDGE_MOUNTAINS },
@@ -1847,7 +1867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(165722),	-- Redridge Tarantula (PET!)
 					},
 				})),
-				n(584, {  -- Kazon
+				n(584, { 	-- Kazon
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 34.8, 12.2, REDRIDGE_MOUNTAINS },
@@ -1900,7 +1920,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				n(947, {  -- Rohh the Silent
+				n(947, { 	-- Rohh the Silent
 					-- #if AFTER CATA
 					["description"] = "This is a stealthed creature. You can target it with the macro '/tar Rohh'.",
 					-- #endif
@@ -1942,6 +1962,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 73.2, 71.2, REDRIDGE_MOUNTAINS },
 						-- #endif
 					},
+					-- #if BEFORE 4.0.3
+					["groups"] = {
+						i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
+					},
+					-- #endif
 				}),
 				n(14272, {	-- Snarlflare
 					["coords"] = {
@@ -2455,9 +2480,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
-					["description"] = "Has a chance to drop from any creature in Redridge Mountains.",
-				}),
 				i(1219, {	-- Redridge Machete
 					["cr"] = 424,	-- Redridge Poacher
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2486,8 +2508,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1462, {	-- Ring of the Shadow
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 429,	-- Shadowhide Darkweaver
+					-- #if AFTER 10.1.7
+					["isBounty"] = true,
+					-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
 						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },

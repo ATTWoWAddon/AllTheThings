@@ -1,19 +1,35 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 MINIGAMES_HEADER = createHeader({
 	readable = "Minigames",
 	icon = 134481,
 	text = {
 		en = "Minigames",
+		-- TODO: de = "",
 		es = "Minijuegos",
 		mx = "Minijuegos",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "小游戏",
+		tw = "小遊戲",
 	},
 	description = {
 		en = "The following minigames cost one Darkmoon Game Token to play and have a daily quest that grants you prize tickets as well as a number of associated achievements.",
+		-- TODO: de = "",
 		es = "Los siguientes minijuegos cuestan una Ficha de Juego de la Luna Negra y tienen una misión diaria que otorga vale de premio, así como una serie de logros asociados.",
 		mx = "Los siguientes minijuegos cuestan una Ficha de Juego de la Luna Negra y tienen una misión diaria que otorga vale de premio, así como una serie de logros asociados.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "以下小游戏每次游玩需要消耗一枚暗月游戏代币，并且每天都有一个任务可以获得奖券以及一些相关的成就。",
+		-- TODO: tw = "",
 	},
 });
 DARKMOON_DANCE_HEADER = createHeader({
@@ -21,20 +37,29 @@ DARKMOON_DANCE_HEADER = createHeader({
 	icon = 348567,
 	text = {
 		en = "Darkmoon Dance",
-		es = "Baile de la Luna Negra",
 		de = "Dunkelmond-Jahrmarkt Tanzspiel",
+		es = "Baile de la Luna Negra",
+		mx = "Baile bajo la Luna Negra",
 		fr = "Foire de Sombrelune Jeu de Danse",
 		it = "Fiera di Lunacupa Gioco della Danza",
-		mx = "Baile bajo la Luna Negra",
+		ko = "다크문 유랑단 춤 게임",
 		pt = "Feira de Negraluna Jogo da Dança",
 		ru = "Ярмарка Новолуния состязании танцоров",
-		ko = "다크문 유랑단 춤 게임",
 		cn = "暗月马戏团跳舞游戏",
+		-- TODO: tw = "",
 	},
 	description = {
 		en = "To play the Darkmoon Faire Dance game, talk to Simon Sezdans in front of the South Pavillion. Each attempt at the Darkmoon Faire Dance game costs one Darkmoon Game Token. Talking to Simon will also set the difficulty for your dance game:\n  Just something fun and easygoing! (Easy)\n  I'd like a little challenge! (Medium)\n  Show me your moves, don't hold back! (Hard)\n\nDarkmoon Dance Master is not a rhythm game like most dance games are, but a memory game instead. You will have a dancer next to you in the dancing arena, who will start a sequence of moves highlighted by runes in front of him. Easy games will have a sequence of 3 runes at a time, Medium games 4 runes, and Hard games 5 runes.\n\nThere are three possible runes: Chicken Dance (Yellow), Power Spin (Purple) and Fist Pump (Blue). Once the opponent finishes their sequence, you have 5 seconds to match the exact sequence used by the dancer. There is no punishment for taking your time to complete the sequence, as long as you do it in time and don't miss any steps.\n\nThe game ends after 5 rounds (if you complete all steps successfully), but can end prematurely if you miss too many steps. Missing no steps will grant you a perfect score.",
+		-- TODO: de = "",
 		es = "Para jugar al juego de baile de la Feria de la Luna Negra, habla con Simon Sezdans frente al Pabellón Sur. Cada intento cuesta una Ficha de Juego de la Luna Negra. Hablar con Simon también determinará la dificultad de tu juego de baile:\n ¡Algo divertido y relajado! (Fácil)\n ¡Me gustaría un pequeño desafío! (Medio)\n ¡Enséñame tus movimientos, no te contengas! (Difícil)\n\nEl Maestro de Baile de la Luna Negra no es un juego de ritmo como la mayoría de los juegos de baile, sino un juego de memoria. Tendrás un bailarín a tu lado en la pista de baile, que iniciará una secuencia de movimientos resaltados con runas frente a él. Las partidas fáciles tendrán una secuencia de 3 runas a la vez, las partidas medias, 4 runas, y las partidas difíciles, 5 runas.\n\nHay tres runas posibles: Baile del Pollo (Amarillo), Giro enérgico (Morado) y Agitar puño (Azul). Una vez que el oponente termine su secuencia, tienes 5 segundos para igualar la secuencia exacta utilizada por el Bailarín. No hay castigo por tomarse el tiempo para completar la secuencia, siempre y cuando lo hagas a tiempo y no te saltes ningún paso. El juego termina después de 5 rondas (si completas todos los pasos correctamente), pero puede terminar antes de tiempo si te saltas demasiados. Si no te saltas ningún paso, obtendrás una puntuación perfecta.",
 		mx = "Para jugar al juego de baile de la Feria de la Luna Negra, habla con Simon Sezdans frente al Pabellón Sur. Cada intento cuesta una Ficha de Juego de la Luna Negra. Hablar con Simon también determinará la dificultad de tu juego de baile:\n ¡Algo divertido y relajado! (Fácil)\n ¡Me gustaría un pequeño desafío! (Medio)\n ¡Enséñame tus movimientos, no te contengas! (Difícil)\n\nEl Maestro de Baile de la Luna Negra no es un juego de ritmo como la mayoría de los juegos de baile, sino un juego de memoria. Tendrás un bailarín a tu lado en la pista de baile, que iniciará una secuencia de movimientos resaltados con runas frente a él. Las partidas fáciles tendrán una secuencia de 3 runas a la vez, las partidas medias, 4 runas, y las partidas difíciles, 5 runas.\n\nHay tres runas posibles: Danza de la gallina (Amarillo), Vuelta poderosa (Morado) y Agitar puño (Azul). Una vez que el oponente termine su secuencia, tienes 5 segundos para igualar la secuencia exacta utilizada por el Bailarín. No hay castigo por tomarse el tiempo para completar la secuencia, siempre y cuando lo hagas a tiempo y no te saltes ningún paso. El juego termina después de 5 rondas (si completas todos los pasos correctamente), pero puede terminar antes de tiempo si te saltas demasiados. Si no te saltas ningún paso, obtendrás una puntuación perfecta.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "要玩暗月马戏团跳舞游戏，请与南部亭子前的西蒙·塞兹丹斯交谈。每次尝试暗月马戏团跳舞游戏都需要一枚暗月游戏代币。与西蒙交谈还将为您的舞蹈游戏设置难度：\n  只是一些有趣和轻松的东西！（简单）\n  我想要一些挑战！（中等）\n  展示你的动作，不要退缩！（困难）\n\n暗月舞蹈大师不是像大多数舞蹈游戏那样的节奏游戏，而是记忆游戏。你将在舞蹈竞技场旁边有一个舞者，他将开始一系列由他面前的符文突出显示的动作。简单的游戏每次有3个符文的序列，中等游戏4个符文，困难游戏5个符文。\n\n有三种可能的符文：鸡舞（黄色）、强力旋转（紫色）和拳头泵（蓝色）。一旦对手完成他们的序列，你有5秒钟的时间来匹配舞者使用的确切序列。只要你及时完成并且没有错过任何步骤，就不会因为花时间完成序列而受到惩罚。\n\n如果您成功完成所有步骤，游戏将在5轮后结束，但如果您错过太多步骤，游戏可能会提前结束。没有错过任何步骤将为您带来完美的分数。",
+		-- TODO: tw = "",
 	},
 });
 FIREBIRDS_CHALLENGE_HEADER = createHeader({
@@ -42,20 +67,29 @@ FIREBIRDS_CHALLENGE_HEADER = createHeader({
 	icon = 514340,
 	text = {
 		en = "Firebird's Challenge",
-		es = "El desafío del pájaro de fuego",
 		de = "Herausforderung des Feuervogels",
+		es = "El desafío del pájaro de fuego",
+		mx = "Desafío del Pájaro de Fuego",
 		fr = "Défi de l’Oiseau de feu",
 		it = "Sfida dell'Uccello di Fuoco",
-		mx = "Desafío del Pájaro de Fuego",
+		ko = "불새의 도전",
 		pt = "Desafio da Ave Flamejante",
 		ru = "Вызов огнекрыла",
-		ko = "불새의 도전",
 		cn = "不死鸟大挑战",
+		-- TODO: tw = "",
 	},
 	description = {
 		en = "Roughly 60 floating rings appear all over the island, but most are not over the Faire area proper and are found in the woods. Players start with ten seconds of flight time and flying through a ring will refresh the buff. Work out a route in such a way that the next ring is always within 10 seconds of the one that is getting flown through, as there are many ways to get cut off.",
+		-- TODO: de = "",
 		es = "Aparecen aproximadamente 60 anillos flotantes por toda la isla, pero la mayoría no están sobre la zona de la Feria y se encuentran en el bosque. Los jugadores comienzan con diez segundos de tiempo de vuelo y volar a través de un anillo refrescará la mejora. Planifica una ruta de tal manera que el siguiente anillo esté siempre a menos de 10 segundos del que se está atravesando, ya que hay muchas maneras de cortar el paso.",
 		mx = "Aparecen aproximadamente 60 anillos flotantes por toda la isla, pero la mayoría no están sobre la zona de la Feria y se encuentran en el bosque. Los jugadores comienzan con diez segundos de tiempo de vuelo y volar a través de un anillo refrescará la mejora. Planifica una ruta de tal manera que el siguiente anillo esté siempre a menos de 10 segundos del que se está atravesando, ya que hay muchas maneras de cortar el paso.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "整个岛上大约会出现60个漂浮的环，但大多数不在马戏团区域内，而是在树林中。玩家开始时有十秒的飞行时间，飞过一个环会刷新这个增益效果。规划一条路线，使下一个环始终在即将飞过的环的10秒内，因为有很多方法可以被切断。",
+		-- TODO: tw = "",
 	},
 });
 SHOOTING_GALLERY_HEADER = createHeader({
@@ -63,20 +97,29 @@ SHOOTING_GALLERY_HEADER = createHeader({
 	icon = 135610,
 	text = {
 		en = "Shooting Gallery",
-		es = "Galería de tiro",
 		de = "Schießbude",
+		es = "Galería de tiro",
+		mx = "Galería de tiro",
 		fr = "Stand de tir",
 		it = "Tiro a Segno",
-		mx = "Galería de tiro",
+		ko = "사격 연습장",
 		pt = "Galeria de tiro",
 		ru = "Тир",
-		ko = "사격 연습장",
 		cn = "射击场",
+		-- TODO: tw = "",
 	},
 	description = {
 		en = "In order to maximize your score, wait for the current mark to disappear then aim towards the middle target. As soon as any green mark appear, press 1 immediately and during the short cast time, move your gun to point at the left or right target if necessary.",
+		-- TODO: de = "",
 		es = "Para maximizar tu puntuación, espera a que la marca actual desaparezca y luego apunta al objetivo central. En cuanto aparezca una marca verde, presiona 1 inmediatamente y, durante el breve tiempo de lanzamiento, mueve tu arma para apuntar al objetivo izquierdo o derecho si es necesario.",
 		mx = "Para maximizar tu puntuación, espera a que la marca actual desaparezca y luego apunta al objetivo central. En cuanto aparezca una marca verde, presiona 1 inmediatamente y, durante el breve tiempo de lanzamiento, mueve tu arma para apuntar al objetivo izquierdo o derecho si es necesario.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "为了最大化你的得分，等待当前的标记消失，然后瞄准中间的目标。只要出现任何绿色标记，立即按1，在短暂的施法时间内，如果有必要，将你的枪移动到指向左侧或右侧目标的位置。",
+		-- TODO: tw = "",
 	},
 });
 WHACK_A_GNOLL_HEADER = createHeader({
@@ -84,20 +127,29 @@ WHACK_A_GNOLL_HEADER = createHeader({
 	icon = 537060,
 	text = {
 		en = "Whack-a-Gnoll",
-		es = "Golpea al gnoll",
 		de = "Hau-den-Gnoll",
+		es = "Golpea al gnoll",
+		mx = "Golpea al gnoll",
 		fr = "Cogne-Gnoll",
 		it = "Pesta-lo-Gnoll",
-		mx = "Golpea al gnoll",
+		ko = "놀 때려잡기",
 		pt = "Pancada-no-Gnoll",
 		ru = "Гноллобой",
-		ko = "놀 때려잡기",
 		cn = "打豺狼人",
+		-- TODO: tw = "",
 	},
 	description = {
 		en = "Located near the entrance, guests receive a mallet to whack some stuffed gnolls that pop out of nine barrels in the area. Players will have 60 seconds to earn 30 points. The gnolls come in three types: normal, Hogger, and baby, awarding 1 point, 3 points, or a knockdown, respectively.",
+		-- TODO: de = "",
 		es = "Cerca de la entrada, los visitantes reciben un mazo para golpear a unos gnolls disecados que salen de nueve barriles en la zona. Los jugadores tendrán 60 segundos para ganar 30 puntos. Los gnolls son de tres tipos: normales, Hogger y bebés, que otorgan 1 punto, 3 puntos o un derribo, respectivamente.",
 		mx = "Cerca de la entrada, los visitantes reciben un mazo para golpear a unos gnolls disecados que salen de nueve barriles en la zona. Los jugadores tendrán 60 segundos para ganar 30 puntos. Los gnolls son de tres tipos: normales, Hogger y bebés, que otorgan 1 punto, 3 puntos o un derribo, respectivamente.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "位于入口附近，游客们会收到一个大锤，用来敲打从该区域的九个桶中弹出的填充豺狼人。玩家将有60秒的时间来获得30分。豺狼人有三种类型：普通的、霍格和婴儿，分别奖励1分、3分或一次击倒。",
+		-- TODO: tw = "",
 	},
 });
 
@@ -254,9 +306,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		battlepets({
 			pet(1068, {	-- Crow (PET!)
 				["timeline"] = { ADDED_5_1_0 },
+				["description"] = "Only found as a secondary pet when battling Darkmoon Glowfly (/att npc:67329)\nDue to its rarity, you should capture any quality pet and use a Flawless Battle-Stone on it.",
 			}),
 			pet(1062, {	-- Darkmoon Glowfly (PET!)
 				["timeline"] = { ADDED_5_1_0 },
+				["coords"] = {
+					{ 34.8, 36.4, DARKMOON_ISLAND },
+					{ 45.0, 24.8, DARKMOON_ISLAND },
+					{ 53.0, 23.6, DARKMOON_ISLAND },
+					{ 45.4, 50.6, DARKMOON_ISLAND },
+					{ 43.8, 58.4, DARKMOON_ISLAND },
+					{ 61.6, 43.6, DARKMOON_ISLAND },
+					{ 63.6, 58.6, DARKMOON_ISLAND },
+					{ 59.6, 64.6, DARKMOON_ISLAND },
+					{ 58.6, 69.6, DARKMOON_ISLAND },
+					{ 62.6, 77.6, DARKMOON_ISLAND },
+					{ 70.6, 77.4, DARKMOON_ISLAND },
+					{ 71.4, 68.6, DARKMOON_ISLAND },
+					{ 70.8, 58.4, DARKMOON_ISLAND },
+					{ 34.4, 74.6, DARKMOON_ISLAND }
+				}
 			}),
 		}),
 		-- #endif
@@ -307,11 +376,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		}),
 		-- #if AFTER 4.3.0
 		n(MINIGAMES_HEADER, {
-			["cost"] = {{ "i", 71083, 1 }},	-- Darkmoon Game Token
+			["cost"] = { { "i", 71083, 1 } },	-- Darkmoon Game Token
 			["groups"] = {
 				n(DARKMOON_DANCE_HEADER, {
 					["cr"] = 181097,	-- Simon Sezdans <Dance Master>
-					["coord"] = { 51.2, 74, DARKMOON_ISLAND },
+					["coord"] = { 51.2, 74.0, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_9_2_0 },
 					["groups"] = {
 						n(ACHIEVEMENTS, {
@@ -356,7 +425,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						}),
 						q(64783, {	-- Dance Dance Darkmoon
 							["qg"] = 181097,	-- Simon Sezdans <Dance Master>
-							["coord"] = { 51.2, 74, DARKMOON_ISLAND },
+							["coord"] = { 51.2, 74.0, DARKMOON_ISLAND },
 							["maxReputation"] = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
 							["timeline"] = { ADDED_9_2_0 },
 							["isDaily"] = true,
@@ -462,6 +531,133 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						}),
 					},
 				}),
+				header(HEADERS.Achievement, 9755, {	-- Darkmoon Race Enthusiast
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						n(ACHIEVEMENTS, {
+							ach(9819, {	-- Darkmoon Like the Wind
+								["crs"] = { 89736 },	-- Wanderluster
+							}),
+						}),
+						n(QUESTS, {
+							q(33756, {	-- Let's Keep Racing
+								["sourceQuest"] = 37910,	-- Welcome to the Darkmoon Races
+								["qg"] = 74056,	-- Malle Earnhard
+								["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
+								["isDaily"] = true,
+							}),
+							q(37868, {	-- More Big Racing!
+								["sourceQuest"] = 37911,	-- The Real Big Race
+								["qg"] = 90473,	-- Patti Earnhard
+								["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
+								["isDaily"] = true,
+							}),
+							q(37911, {	-- The Real Big Race
+								["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
+								["qg"] = 90473,	-- Patti Earnhard
+								["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
+								["isDaily"] = true,
+								["groups"] = appendAllGroups({},
+									sharedData({["crs"] = { 89732 }},{	-- Powermonger
+										ach(9812),	-- Goal-Oriented
+										ach(9813),	-- Big Powermonger: Bronze
+										ach(9815),	-- Big Powermonger: Silver
+										ach(9817, {	-- Big Powermonger: Gold
+											i(122124),	-- Darkmoon Cannon
+										}),
+									}),
+									sharedData({["crs"] = { 90148 }},{	-- Racing Strider
+										ach(9793),	-- Big Race Enthusiast
+										ach(9794),	-- Big Race Novice
+										ach(9795),	-- Big Race Jockey
+										ach(9797),	-- Big Race Leadfoot
+										ach(9799, {	-- Big Race Roadhog
+											i(122128),	-- Checkered Flag
+										}),
+									}),
+									sharedData({["crs"] = { 89734 }},{	-- Rocketeer
+										ach(9800),	-- Rocket Man
+										ach(9801),	-- Big Rocketeer: Bronze
+										ach(9803),	-- Big Rocketeer: Silver
+										ach(9805, {	-- Big Rocketeer: Gold
+											i(122125),	-- Race MiniZep (PET!)
+										}),
+									}),
+									sharedData({["crs"] = { 89736 }},{	-- Wanderluster
+										ach(9806),	-- Vagabond
+										ach(9807),	-- Big Wanderluster: Bronze
+										ach(9809),	-- Big Wanderluster: Silver
+										ach(9811, {	-- Big Wanderluster: Gold
+											i(122121),	-- Darkmoon Gazer (TOY!)
+										}),
+									}),{	-- Rewards
+									-- #if AFTER 5.2.0
+									DARKMOON_GAME_PRIZE,
+									-- #else
+									DARKMOON_PRIZE_TICKET,
+									-- #endif
+									}),
+							}),
+							q(37910, {	-- The Real Race
+								["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
+								["qg"] = 74056,	-- Malle Earnhard
+								["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
+								["isDaily"] = true,
+								["groups"] = appendAllGroups({},
+									sharedData({["crs"] = { 89732 }},{	-- Powermonger
+										ach(9780),	-- Go-Getter
+										ach(9781),	-- Powermonger: Bronze
+										ach(9783),	-- Powermonger: Silver
+										ach(9785, {	-- Powermonger: Gold
+											i(122120),	-- Gaze of the Darkmoon (TOY!)
+										}),
+									}),
+									sharedData({["crs"] = { 90148 }},{	-- Racing Strider
+										ach(9756),	-- Darkmoon Racer Novice
+										ach(9759),	-- Darkmoon Racer Jockey
+										ach(9760),	-- Darkmoon Racer Leadfoot
+										ach(9761, {	-- Darkmoon Racer Roadhog
+											i(122129),	-- Fire-Eater Vial (TOY!)
+										}),
+									}),
+									sharedData({["crs"] = { 89734 }},{	-- Rocketeer
+										ach(9770),	-- Blast Off!
+										ach(9769),	-- Rocketeer: Bronze
+										ach(9766),	-- Rocketeer: Silver
+										ach(9764, {	-- Rocketeer: Gold
+											i(122119),	-- Everlasting Darkmoon Firework (TOY!)
+										}),
+									}),
+									sharedData({["crs"] = { 89736 }},{	-- Wanderluster
+										ach(9786),	-- Wayfarer
+										ach(9787),	-- Wanderluster: Bronze
+										ach(9790),	-- Wanderluster: Silver
+										ach(9792, {	-- Wanderluster: Gold
+											i(122126),	-- Attraction Sign (TOY!)
+										}),
+									}),{	-- Rewards
+									-- #if AFTER 5.2.0
+									DARKMOON_GAME_PRIZE,
+									-- #else
+									DARKMOON_PRIZE_TICKET,
+									-- #endif
+									}),
+							}),
+							q(37819, {	-- Welcome to the Darkmoon Races
+								["qg"] = 74056,	-- Malle Earnhard
+								["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
+								["groups"] = {
+									ach(9755),	-- Darkmoon Race Enthusiast
+									-- #if AFTER 5.2.0
+									DARKMOON_GAME_PRIZE,
+									-- #else
+									DARKMOON_PRIZE_TICKET,
+									-- #endif
+								},
+							}),
+						}),
+					},
+				}),
 			},
 		}),
 		-- #endif
@@ -484,6 +680,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			prof(FISHING, {
 				i(35286, {	-- Bloated Giant Sunfish
 					["timeline"] = { ADDED_2_4_0 },
+					["groups"] = {
+						i(35287),	-- Luminous Bluetail
+					},
 				}),
 				i(127141, {	-- Bloated Thresher
 					["timeline"] = { ADDED_6_2_0 },
@@ -788,20 +987,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2024, {	-- DF Alchemy Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = ALCHEMY,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2785, {	-- TWW Alchemy Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = ALCHEMY,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.ALCHEMY, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.ALCHEMY, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.ALCHEMY, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			petbattle(q(36471, {	-- A New Darkmoon Challenger!
@@ -908,20 +1102,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {	-- Artisan's Mettle
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2023, {	-- DF Blacksmithing Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = BLACKSMITHING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2786, {	-- TWW Blacksmithing Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = BLACKSMITHING,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29520, {	-- Banners, Banners Everywhere!
@@ -946,20 +1135,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2026, {	-- DF Tailoring Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = TAILORING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2795, {	-- TWW Tailoring Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = TAILORING,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.TAILORING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.TAILORING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.TAILORING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(7892, {	-- Big Black Mace [Tier 4]
@@ -975,7 +1159,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 				["maxReputation"] = TIER_FOUR_MAX_REPUTATION,
-				["cost"] = { { "i", 7945, 1 }},	-- Big Black Mace
+				["cost"] = { { "i", 7945, 1 } },	-- Big Black Mace
 				["lvl"] = 30,
 				-- #endif
 				["timeline"] = { REMOVED_4_3_0 },
@@ -1756,24 +1940,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {	-- Artisan's Mettle
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2025, {	-- DF Leatherworking Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = LEATHERWORKING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2792, {	-- TWW Leatherworking Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = LEATHERWORKING,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.LEATHERWORKING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29507, {	-- Fun for the Little Ones
-				["qg"] = 14847,	-- Professor Thaddeus Paleo <Darkmoon Cards>
+				["qgs"] = {
+					14847,	-- Professor Thaddeus Paleo <Darkmoon Cards>
+					30481,	-- Darkmoon Fortune Teller
+				},
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				["maxReputation"] = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
 				["timeline"] = { ADDED_4_3_0 },
@@ -1912,25 +2094,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2034, {	-- DF Herbalism Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = HERBALISM,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2789, {	-- TWW Herbalism Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = HERBALISM,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.HERBALISM, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.HERBALISM, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.HERBALISM, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29516, {	-- Keeping the Faire Sparkling
 				["qg"] = 14833,	-- Chronos <He Who Never Forgets!>
-				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
+				["coord"] = { 55.0, 70.6, DARKMOON_ISLAND },
 				["maxReputation"] = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
 				["timeline"] = { ADDED_4_3_0 },
 				["requireSkill"] = JEWELCRAFTING,
@@ -1945,20 +2122,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2029, {	-- DF Jewelcrafting Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = JEWELCRAFTING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2791, {	-- TWW Jewelcrafting Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = JEWELCRAFTING,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			applyclassicphase(WRATH_PHASE_ONE, q(12518, {	-- Mages Deck
@@ -2195,20 +2367,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2030, {	-- DF Enchanting Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = ENCHANTING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2787, {	-- TWW Enchanting Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = ENCHANTING,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.ENCHANTING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.ENCHANTING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.ENCHANTING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29518, {	-- Rearm, Reuse, Recycle
@@ -2227,20 +2394,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2035, {	-- DF Mining Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = MINING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2793, {	-- TWW Mining Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = MINING,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.MINING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.MINING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.MINING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(36477, {	-- Ring of Promises
@@ -2461,20 +2623,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2027, {	-- DF Engineering Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = ENGINEERING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2788, {	-- TWW Engineering Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = ENGINEERING,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.ENGINEERING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.ENGINEERING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.ENGINEERING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29519, {	-- Tan My Hide
@@ -2490,20 +2647,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2033, {	-- DF Skinning Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = SKINNING,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2794, {	-- TWW Skinning Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = SKINNING,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.SKINNING, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.SKINNING, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.SKINNING, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(29433, {	-- Test Your Strength
@@ -2570,10 +2722,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 					{ "i", 19338 },	-- Free Ticket Voucher
 				},
-				-- #if AFTER 4.3.0
-				["coord"] = { 48.0, 62.0, ORGRIMMAR },
-				-- #else
-				["coord"] = { 52.2, 66, ORGRIMMAR },
+				["coords"] = {
+					-- #if AFTER 4.3.0
+					{ 48.0, 62.0, ORGRIMMAR },
+					-- #else
+					{ 52.2, 66.0, ORGRIMMAR },
+					-- #endif
+					-- #if AFTER TBC
+					{ 74.6, 82.0, SILVERMOON_CITY },
+					-- #endif
+				},
+				-- #if BEFORE 4.3.0
 				["lvl"] = 6,
 				-- #endif
 				["races"] = HORDE_ONLY,
@@ -2745,9 +2904,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				-- #else
 				["coords"] = {
 					{ 41.6, 70.6, ELWYNN_FOREST },
-					{ 37, 37.4, MULGORE },
+					{ 37.0, 37.4, MULGORE },
 					-- #if AFTER TBC
-					{ 34, 34.8, TEROKKAR_FOREST },
+					{ 34.0, 34.8, TEROKKAR_FOREST },
 					-- #endif
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
@@ -2771,7 +2930,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["qg"] = 14841,	-- Rinling
 				["coords"] = {
 					{ 41.6, 70.6, ELWYNN_FOREST },
-					{ 37, 37.4, MULGORE },
+					{ 37.0, 37.4, MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -2801,26 +2960,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					DARKMOON_GAME_TOKEN,
 					DARKMOON_PRIZE_TICKET,
-					i(ARTISANS_METTLE, {
-						["timeline"] = { ADDED_10_0_0 },
-					}),
-					currency(2028, {	-- DF Inscription Knowledge
-						["timeline"] = { ADDED_10_0_0 },
-						["requireSkill"] = INSCRIPTION,
-					}),
-					i(ARTISANS_ACUITY, {
-						["timeline"] = { ADDED_11_0_2 },
-					}),
-					currency(2790, {	-- TWW Incription Knowledge
-						["timeline"] = { ADDED_11_0_2 },
-						["requireSkill"] = INSCRIPTION,
-					}),
+					-- #if AFTER 12.0.1
+					currency(PROFESSION_KNOWLEDGE.MID.INSCRIPTION, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),
+					-- #elseif AFTER 11.0.2
+					currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, {["timeline"] = { ADDED_11_0_2 }}),
+					i(ARTISANS_ACUITY, {["timeline"] = { ADDED_11_0_2 }}),
+					-- #elseif AFTER 10.0.2
+					currency(PROFESSION_KNOWLEDGE.DF.INSCRIPTION, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					i(ARTISANS_METTLE, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),
+					-- #endif
 				},
 			}),
 			q(7938, {	-- Your Fortune Awaits You... [Deadmines]
 				["providers"] = {
 					{ "i", 19424 },	-- Sayge's Fortune #24
-					{ "n", 14822 },	-- Sayge
+					{ "o", 180024 },	-- Mysterious Deadmines Chest
 				},
 				["timeline"] = { REMOVED_4_3_0 },
 				["maps"] = { DEADMINES },
@@ -2835,7 +2989,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(7937, {	-- Your Fortune Awaits You... [Elwynn Forest]
 				["providers"] = {
 					{ "i", 19423 },	-- Sayge's Fortune #23
-					{ "n", 14822 },	-- Sayge
+					{ "o", 180025 },	-- Mysterious Eastvale Haystack
 				},
 				["coord"] = { 84.7, 64.4, ELWYNN_FOREST },
 				["timeline"] = { REMOVED_4_3_0 },
@@ -2849,10 +3003,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			q(7945, {	-- Your Fortune Awaits You... [Mulgore]
 				["providers"] = {
-					{ "i", 19452 },	-- Sayge's Fortune #27
-					{ "n", 14822 },	-- Sayge
+					{ "i",  19452 },	-- Sayge's Fortune #27
+					{ "o", 180056 },	-- Mysterious Tree Stump
 				},
-				["coord"] = { 35, 61.5, MULGORE },
+				["coord"] = { 35.0, 61.5, MULGORE },
 				["timeline"] = { REMOVED_4_3_0 },
 				["repeatable"] = true,
 				["lvl"] = 10,
@@ -2864,13 +3018,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			q(7944, {	-- Your Fortune Awaits You... [Wailing Caverns]
 				["providers"] = {
-					{ "i", 19443 },	-- Sayge's Fortune #25
-					{ "n", 14822 },	-- Sayge
+					{ "i",  19443 },	-- Sayge's Fortune #25
+					{ "o", 180055 },	-- Mysterious Wailing Caverns Chest
 				},
 				["timeline"] = { REMOVED_4_3_0 },
 				["maps"] = { WAILING_CAVERNS },
 				["repeatable"] = true,
-				["cr"] = 14822,	-- Sayge
 				["lvl"] = 10,
 				["groups"] = {
 					i(19425, {	-- Mysterious Lockbox
@@ -2880,20 +3033,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 		}),
 		n(QUESTS, {	-- TODO: Move into mini game section.
-			q(33756, {	-- Let's Keep Racing
-				["sourceQuest"] = 37910,	-- Welcome to the Darkmoon Races
-				["qg"] = 74056,	-- Malle Earnhard
-				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["isDaily"] = true,
-			}),
-			q(37868, {	-- More Big Racing!
-				["sourceQuest"] = 37911,	-- The Real Big Race
-				["qg"] = 90473,	-- Patti Earnhard
-				["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["isDaily"] = true,
-			}),
 			q(29455, {	-- Target: Turtle
 				["qg"] = 54485,	-- Jessica Rogers
 				["coord"] = { 51.5, 77.1, DARKMOON_ISLAND },
@@ -2929,109 +3068,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 			}),
-			q(37911, {	-- The Real Big Race
-				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
-				["qg"] = 90473,	-- Patti Earnhard
-				["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["isDaily"] = true,
-				["groups"] = {
-					ach(9817, {	-- Big Powermonger: Gold
-						["crs"] = { 89732 },	-- Powermonger
-						["groups"] = {
-							i(122124),	-- Darkmoon Cannon
-							ach(9815),	-- Big Powermonger: Gold
-							ach(9813),	-- Big Powermonger: Gold
-							ach(9812),	-- Big Powermonger: Gold
-						},
-					}),
-					ach(9799, {	-- Big Race Roadhog
-						["crs"] = { 90148 },	-- Racing Strider
-						["groups"] = {
-							i(122128),	-- Checkered Flag
-							ach(9797),	-- Big Race Leadfoot
-							ach(9795),	-- Big Race Jockey
-							ach(9794),	-- Big Race Novice
-							ach(9793),	-- Big Race Enthusiast
-						},
-					}),
-					ach(9805, {	-- Big Rocketeer: Gold
-						["crs"] = { 89734 },	-- Rocketeer
-						["groups"] = {
-							i(122125),	-- Race MiniZep (PET!)
-							ach(9803),	-- Big Rocketeer: Gold
-							ach(9801),	-- Big Rocketeer: Gold
-							ach(9800),	-- Rocket Man
-						},
-					}),
-					ach(9811, {	-- Big Wanderluster: Gold
-						["crs"] = { 89736 },	-- Wanderluster
-						["groups"] = {
-							i(122121),	-- Darkmoon Gazer (TOY!)
-							ach(9809),	-- Big Wanderluster: Gold [Real Big Race -- R25]
-							ach(9807),	-- Big Wanderluster: Gold [Real Big Race -- R40]
-							ach(9806),	-- Big Wanderluster: Gold [Real Big Race -- R30]
-							ach(9819),	-- Darkmoon Like the Wind
-						},
-					}),
-					-- #if AFTER 5.2.0
-					DARKMOON_GAME_PRIZE,
-					-- #else
-					DARKMOON_PRIZE_TICKET,
-					-- #endif
-				},
-			}),
-			q(37910, {	-- The Real Race
-				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
-				["qg"] = 74056,	-- Malle Earnhard
-				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["isDaily"] = true,
-				["groups"] = {
-					ach(9761, {	-- Darkmoon Racer Roadhog
-						["crs"] = { 90148 },	-- Racing Strider
-						["groups"] = {
-							i(122129),	-- Fire-Eater Vial (TOY!)
-							ach(9760),	-- Darkmoon Racer Leadfoot
-							ach(9759),	-- Darkmoon Racer Jockey
-							ach(9756),	-- Darkmoon Racer Novice
-						},
-					}),
-					ach(9785, {	-- Powermonger: Gold
-						["crs"] = { 89732 },	-- Powermonger
-						["groups"] = {
-							i(122120),	-- Gaze of the Darkmoon (TOY!)
-							ach(9783),	-- Powermonger: Silver
-							ach(9781),	-- Powermonger: Bronze
-							ach(9780),	-- Go-Getter
-						},
-					}),
-					ach(9764, {	-- Rocketeer: Gold
-						["crs"] = { 89734 },	-- Rocketeer
-						["groups"] = {
-							i(122119),	-- Everlasting Darkmoon Firework (TOY!)
-							ach(9766),	-- Rocketeer: Silver
-							ach(9769),	-- Rocketeer: Bronze
-							ach(9770),	-- Blast Off!
-						},
-					}),
-					ach(9792, {	-- Wanderluster: Gold
-						["crs"] = { 89736 },	-- Wanderluster
-						["groups"] = {
-							i(122126),	-- Attraction Sign (TOY!)
-							ach(9819),	-- Darkmoon Like the Wind
-							ach(9790),	-- Wanderluster: Silver
-							ach(9787),	-- Wanderluster: Bronze
-							ach(9786),	-- Wayfarer
-						},
-					}),
-					-- #if AFTER 5.2.0
-					DARKMOON_GAME_PRIZE,
-					-- #else
-					DARKMOON_PRIZE_TICKET,
-					-- #endif
-				},
-			}),
 			q(29434, {	-- Tonk Commander
 				["qg"] = 54605,	-- Finaly Coolshot
 				["coord"] = { 50.7, 65.1, DARKMOON_ISLAND },
@@ -3046,19 +3082,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							}),
 						},
 					}),
-					-- #if AFTER 5.2.0
-					DARKMOON_GAME_PRIZE,
-					-- #else
-					DARKMOON_PRIZE_TICKET,
-					-- #endif
-				},
-			}),
-			q(37819, {	-- Welcome to the Darkmoon Races
-				["qg"] = 74056,	-- Malle Earnhard
-				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["groups"] = {
-					ach(9755),	-- Darkmoon Race Enthusiast
 					-- #if AFTER 5.2.0
 					DARKMOON_GAME_PRIZE,
 					-- #else
@@ -4123,10 +4146,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					iensemble(138430, {	-- Ensemble: Chain of the Scarlet Crusade
 						["cost"] = 100000000,	-- 10,000g
-					}),	--No questid attached to this ensemble
+					}),	-- No questid attached to this ensemble
 					iensemble(138431, {	-- Ensemble: Scale of the Scarlet Crusade
 						["cost"] = 100000000,	-- 10,000g
-					}),	--No questid attached to this ensemble
+					}),	-- No questid attached to this ensemble
 				},
 			})),
 			n(14845, {	-- Stamp Thunderhorn <Food Vendor>

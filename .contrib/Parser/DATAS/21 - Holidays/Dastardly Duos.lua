@@ -1,20 +1,36 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 DASTARDLY_DUOS = createHeader({
 	readable = "Dastardly Duos",
 	icon = [[~_.asset("Event_Dastardly Duos")]],
 	eventID = EVENTS.DASTARDLY_DUOS,
 	text = {
 		en = "Dastardly Duos",
+		-- TODO: de = "",
 		es = "Dúos despiadados",
 		mx = "Dúos indómitos",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "卑鄙双雄",
+		-- TODO: tw = "",
 	},
 	description = {
 		en = "Hello, fight fans. The world's meanest villains are teamed up and back for revenge! Meet in Stormwind, Orgrimmar or Dornogal to fight against villainous bosses from Azeroth's past.",
+		-- TODO: de = "",
 		es = "Saludos, aficionados a la lucha. ¡Los villanos más malvados de Azeroth se han unido y han vuelto para vengarse! Venid a Ventormenta, Orgrimmar o Dornogal y enfrentaos a los malvados jefes del pasado de Azeroth.",
 		mx = "Saludos, fans de la lucha. ¡Los villanos más malvados volvieron en equipos para buscar venganza! Acércate a Ventormenta, Orgrimmar o Dornogal para pelear contra jefes malignos del pasado de Azeroth.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "战斗迷们，大家好。世界上最邪恶的反派们联手归来，誓要复仇！前往暴风城、奥格瑞玛或多诺加尔，与艾泽拉斯过去的邪恶首领们一决高下。",
+		-- TODO: tw = "",
 	},
 });
 
@@ -66,12 +82,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["coords"] = {
 						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
-						--{ x, y, ORGRIMMAR },	-- Orgrimmar
+						-- { x, y, ORGRIMMAR },	-- Orgrimmar
 						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
 					},
 					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
-						--TODO: if you wanna - you can symlink all bags with rewards
+						-- TODO: if you wanna - you can symlink all bags with rewards
 					},
 				}),
 				q(87550, {	-- Week 2: We're Really Taking Off
@@ -97,7 +113,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 						spell(1227074),	-- Winner's Podium: Average Item Level
-						--spell(1227073),	-- Winner's Podium, High Score
+						-- spell(1227073),	-- Winner's Podium, High Score
 					},
 				}),
 				q(87553, {	-- Week 5: Another Amazing Week!
@@ -122,7 +138,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 234297 },	-- Wodin the Troll Servant
 					["coords"] = {
 						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
-						--{ x, y, ORGRIMMAR },	-- Orgrimmar
+						-- { x, y, ORGRIMMAR },	-- Orgrimmar
 						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
 					},
 					["groups"] = {
@@ -165,17 +181,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						27450,	-- Wild Stalker Boots (Hellfire Ramparts)
 					}},
 					["groups"] = {
-						--Unconfirmed to drop from dungeon bosses, move to symlink once proven
+						-- Unconfirmed to drop from dungeon bosses, move to symlink once proven
 						i(239008),	-- Moonchild Leggings (Blood Furnace)
-						--also seems like contain some TW loot from certain bosses (list of them in achievement 41948) that already exist
-						--i(24023),	-- Bracers of Finesse
-						--i(63454),	-- Double Dealing Bracers
-						--i(157628),	-- Gold-Fiecked Gloves
-						--i(157755),	-- Missing Diplomat's Pauldrons
+						-- also seems like contain some TW loot from certain bosses (list of them in achievement 41948) that already exist
+						-- i(24023),	-- Bracers of Finesse
+						-- i(63454),	-- Double Dealing Bracers
+						-- i(157628),	-- Gold-Fiecked Gloves
+						-- i(157755),	-- Missing Diplomat's Pauldrons
 
 						-- Probably all items that drop here too
 						-- The Steamvault (sourced under the dungeon)
-							--i(238929),	-- Cloak of Whispering Shells
+							-- i(238929),	-- Cloak of Whispering Shells
 
 							-- Hellfire Ramprats (not yet sourced)
 							-- i(238934),	-- Boots of the Darkwalker
@@ -219,41 +235,41 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					},
 					["groups"] = {
 						i(239442, {	-- Black Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239503, {	-- Blue Dastardly Epaule
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239007, {	-- Dastardly Banner (TOY!)
 							["sourceQuest"] = 86503,	-- Who are the Dastardly Duos?
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(238624, {	-- Dastardly Pinchzapper
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239504, {	-- Green Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239019, {	-- Mean-Ball Bed (TOY!)
 							["sourceQuest"] = 87551,	-- Week 3: Spread the Word
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(239505, {	-- Purple Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239506, {	-- Red Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239020, {	-- Tyrannotort's Treat (MOUNT!)
 							["sourceQuest"] = 87552,	-- Week 4: They've Heard of You
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(239018, {	-- Winner's Podium (TOY!)
 							["sourceQuest"] = 87550,	-- Week 2: We're Really Taking Off
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(239507, {	-- Yellow Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 					},
 				}),

@@ -532,7 +532,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(118098),	-- Pattern: Murloc Chew Toy (RECIPE!)
 					-- Without SpellID attached
 					i(114851),	-- Pattern: Hexweave Cloth (RECIPE!)
-					i(118226),	-- Pattern: Miniature Flying Carpet \\ ern: Miniature Flying Carpet
+					i(118226),	-- Pattern: Miniature Flying Carpet
 					i(120128),	-- Pattern: Secrets of Draenor Tailoring (RECIPE!)
 					i(114868),	-- Pattern: Sumptuous Cowl (RECIPE!)
 					i(114870),	-- Pattern: Sumptuous Leggings (RECIPE!)
@@ -630,9 +630,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- With SpellID attached
 					i(194263),	-- Pattern: Blue Dragon Rider's Robe (RECIPE!)
 					i(194264),	-- Pattern: Bronze Dragon Rider's Wraps (RECIPE!)
+					i(194284),	-- Pattern: Wildercloth Weapon Upholstery (RECIPE!)
+					-- Without SpellID attached
 					i(194296),	-- Pattern: Fiddle with Draconium Fabric Cutters (RECIPE!)
 					i(194297),	-- Pattern: Fiddle with Khaz'gorite Fabric Cutters (RECIPE!)
-					i(194284),	-- Pattern: Wildercloth Weapon Upholstery (RECIPE!)
 				})),
 
 				-- 10.1.0
@@ -661,6 +662,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- With SpellID attached
 					i(224436),	-- Pattern: Reinforced Wrap Kit (RECIPE!)
 					i(224437),	-- Pattern: Weaverthread Parachute Kit (RECIPE!)
+				})),
+			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					r(1228435),	-- [DNT] 12.0 Tailoring Recipe Spell Template
+					r(1279126),	-- [DNT] Thalassian Fisher's Suncover
+					r(1228998),	-- Unknown
+					r(1228999),	-- Unknown
 				})),
 			}),
 		}),

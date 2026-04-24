@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		explorationHeader({
@@ -15,6 +16,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			visit_exploration(14851,{coord={64.4,31.1,HALLOWFALL}}),	-- Fungal Fields
 			visit_exploration(15140,{coord={56.3,42.7,HALLOWFALL}}),	-- Gloomcrag Bower
 			exploration(15326),	-- Growling Hollow
+			map_exploration(14838,{coord={79.4,41.8,HALLOWFALL}}),	-- Hallowfall
 			visit_exploration(14854,{coord={61.3,30.8,HALLOWFALL}}),	-- Hillhelm Stead
 			visit_exploration(15166,{coord={60.7,22.1,HALLOWFALL}}),	-- Isaec's Folly
 			exploration(15037),	-- Light's Blooming

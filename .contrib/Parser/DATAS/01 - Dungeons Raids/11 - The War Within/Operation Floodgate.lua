@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 	inst(1298, {	-- Operation: Floodgate
 		["coord"] = { 42.2, 39.6, THE_RINGING_DEEPS },
@@ -118,6 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 236950 },	-- Geezle Gigazap
 					["groups"] = {
 						ach(41341),	-- Mythic: Operation: Floodgate
+						ach(61603, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: Operation: Floodgate Guild Run
 					},
 				}),
 			}),

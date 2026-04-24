@@ -5,7 +5,7 @@
 root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_DREAD, bubbleDownSelf({
 		["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0, ADDED_9_0_2_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 } }, {
 			ach(13199),		-- Combatant: Battle for Azeroth Season 1
 			ach(12959),		-- Challenger: Battle for Azeroth Season 1
@@ -61,9 +61,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184668, {	-- Arsenal: Dread Aspirant's Weapons [A]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(180178, {	-- Ensemble: Dread Aspirant's Cloth Armor [A]
 							["classes"] = CLOTH_CLASSES,
@@ -150,9 +152,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184669, {	-- Arsenal: Dread Aspirant's Weapons [H]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(180179, {	-- Ensemble: Dread Aspirant's Cloth Armor [H]
 							["classes"] = CLOTH_CLASSES,
@@ -255,9 +259,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184666, {	-- Arsenal: Dread Gladiator's Weapons [A]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(184419, {	-- Ensemble: Dread Gladiator's Cloth Armor [A]
 							["classes"] = CLOTH_CLASSES,
@@ -376,9 +382,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184667, {	-- Arsenal: Dread Gladiator's Weapons [H]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(184420, {	-- Ensemble: Dread Gladiator's Cloth Armor [H]
 							["classes"] = CLOTH_CLASSES,

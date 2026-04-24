@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 TRADING_CARD_GAME = createHeader({
 	readable = "Trading Card Game",
 	-- #if AFTER CATA
@@ -12,6 +13,7 @@ TRADING_CARD_GAME = createHeader({
 		en = [[~BATTLE_PET_SOURCE_9]],
 	},
 });
+
 root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 	bubbleDown({
 		-- #if ANYCLASSIC
@@ -94,22 +96,22 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 					i(38300, {	-- Diluted Ethereum Essence
 						["cost"] = { { "i", 38186, 50 } },	-- 50 Ethereal Credit
 					}),
-					i(38160, {	-- Soul-Trader's Bindings
+					i(38160, {	-- Soul-Trader's Bindings (COSMETIC!)
 						["cost"] = { { "i", 38186, 1000 } },	-- 1000x Ethereal Credit
 					}),
-					i(38162, {	-- Soul-Trader's Boots
+					i(38162, {	-- Soul-Trader's Boots (COSMETIC!)
 						["cost"] = { { "i", 38186, 250 } },	-- 250x Ethereal Credit
 					}),
-					i(38161, {	-- Soul-Trader's Gloves
+					i(38161, {	-- Soul-Trader's Gloves (COSMETIC!)
 						["cost"] = { { "i", 38186, 250 } },	-- 250x Ethereal Credit
 					}),
-					i(38163, {	-- Soul-Trader's Head Wrap
+					i(38163, {	-- Soul-Trader's Head Wrap (COSMETIC!)
 						["cost"] = { { "i", 38186, 100 } },	-- 100x Ethereal Credit
 					}),
-					i(38286, {	-- Soul-Trader's Pauldrons
+					i(38286, {	-- Soul-Trader's Pauldrons (COSMETIC!)
 						["cost"] = { { "i", 38186, 500 } },	-- 500x Ethereal Credit
 					}),
-					i(38285, {	-- Soul-Trader's Waistband
+					i(38285, {	-- Soul-Trader's Waistband (COSMETIC!)
 						["cost"] = { { "i", 38186, 100 } },	-- 100x Ethereal Credit
 					}),
 				},
@@ -133,10 +135,10 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(68825, {	-- Amani Dragonhawk (MOUNT!)
 				["timeline"] = { ADDED_4_1_0 },
 			}),
-			i(38576, {	-- Big Battle Bear (MOUNT!) BOP
+			i(38576, {	-- Big Battle Bear (MOUNT!) [BoP]
 				["timeline"] = { ADDED_2_4_2, REMOVED_3_2_0 },
 			}),
-			i(49282, {	-- Big Battle Bear (MOUNT!) BOE
+			i(49282, {	-- Big Battle Bear (MOUNT!) [BoE]
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(54069, {	-- Blazing Hippogryph (MOUNT!)
@@ -163,16 +165,16 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(68008, {	-- Mottled Drake (MOUNT!)
 				["timeline"] = { ADDED_4_0_3 },
 			}),
-			i(33224, {	-- Spectral Tiger (MOUNT!) BOP
+			i(33224, {	-- Spectral Tiger (MOUNT!) [BoP]
 				["timeline"] = { ADDED_2_1_3, REMOVED_3_2_0 },
 			}),
-			i(49283, {	-- Spectral Tiger (MOUNT!) BOE
+			i(49283, {	-- Spectral Tiger (MOUNT!) [BoE]
 				["timeline"] = { ADDED_3_2_0 },
 			}),
-			i(33225, {	-- Swift Spectral Tiger (MOUNT!) BOP
+			i(33225, {	-- Swift Spectral Tiger (MOUNT!) [BoP]
 				["timeline"] = { ADDED_2_1_3, REMOVED_3_2_0 },
 			}),
-			i(49284, {	-- Swift Spectral Tiger (MOUNT!) BOE
+			i(49284, {	-- Swift Spectral Tiger (MOUNT!) [BoE]
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(23720, {	-- Riding Turtle (MOUNT!)
@@ -190,16 +192,16 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(54068, {	-- Wooly White Rhino (MOUNT!)
 				["timeline"] = { ADDED_3_3_5 },
 			}),
-			i(35225, {	-- X-51 Nether-Rocket (MOUNT!) BOP
+			i(35225, {	-- X-51 Nether-Rocket (MOUNT!) [BoP]
 				["timeline"] = { ADDED_2_4_0, REMOVED_3_2_0 },
 			}),
-			i(49285, {	-- X-51 Nether-Rocket (MOUNT!) BOE
+			i(49285, {	-- X-51 Nether-Rocket (MOUNT!) [BoE]
 				["timeline"] = { ADDED_3_2_0 },
 			}),
-			i(35226, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOP
+			i(35226, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) [BoP]
 				["timeline"] = { ADDED_2_4_0, REMOVED_3_2_0 },
 			}),
-			i(49286, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOE
+			i(49286, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) [BoE]
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 		}),
@@ -340,3 +342,14 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 		}),
 	},
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
+	n(TRADING_CARD_GAME, {
+		q(83005, name(HEADERS.Item, 79769)),	-- Redeemed Demon Hunter's Aspect
+		q(83013, name(HEADERS.Item, 69227)),	-- Redeemed Fool's Gold
+		q(83011, name(HEADERS.Item, 54212)),	-- Redeemed Instant Statue Pedestal
+		q(83003, name(HEADERS.Item, 72159)),	-- Redeemed Magical Ogre Idol
+		q(83004, name(HEADERS.Item, 72161)),	-- Redeemed Spurious Sarcophagus
+		q(83012, name(HEADERS.Item, 69215)),	-- Redeemed War Party Hitching Post
+	}),
+}));

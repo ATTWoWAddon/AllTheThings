@@ -761,6 +761,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(218093),	-- <Vendor Reagent A>
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					i(238206),	-- [PH] Weightstone - Quality 1
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
@@ -768,7 +774,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				n(P1xx, {
 					r(6470),	-- Tiny Bronze Key
 					r(6471),	-- Tiny Iron Key
-					-- With SpellID attched
+					-- With SpellID attached
 					i(12831),	-- Plans: Blood Talon
 					i(12818),	-- Plans: Inlaid Thorium Hammer
 					i(6734),	-- Plans: Ironforge Chain
@@ -955,7 +961,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(153657),	-- Peerless Draenic Steel Warboots
 					r(153663),	-- Peerless Draenic Steel Wristwraps
 					r(171718),	-- Truesteel Ingot
-					-- With SpellID attched
+					-- With SpellID attached
 					i(108421),	-- Plans: Blackrock Crucible
 					-- Without SpellID attached
 					i(116727),	-- Plans: Smoldering Breastplate
@@ -1109,7 +1115,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(371396),	-- Draconium Repair Hammer
 					r(382579),	-- Opening
 					r(376698),	-- Wisp of Tyr
-					-- With SpellID attched
+					-- With SpellID attached
 					i(194487),	-- Plans: Pauldrons of the Dragon
 					i(194488),	-- Plans: Traitorous Primal Gauntlets of the Dragon
 					-- Without SpellID attached
@@ -1146,7 +1152,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(223018),	-- Plans: Echoing Truncheon
 					i(223046),	-- Plans: Entangling Cutlass
 					i(223047),	-- Plans: Haunting Void
-					-- Without SpellId attached
+					-- Without SpellID attached
 					i(218102),	-- Bloodstained Plans: <PVP Alloy>
 					i(223026),	-- Plans: Artisan Leatherworker's Knife
 					i(223027),	-- Plans: Artisan Leatherworker's Toolset
@@ -1216,6 +1222,21 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(217890),	-- Plans: <Insert Bespoke Cantrip Gear>
 					i(218100),	-- Plans: <Optional Reagnt A>
 					i(218101),	-- Plans: <PVP Alloy>
+				})),
+
+				-- 11.2.7
+				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+					r(1246473),	-- [DNT] TWW Blacksmithing Decor Template
+				})),
+			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					r(1230770),	-- [DNT] 12.0 Engineering Recipe Spell Template
+					-- With SpellID attached
+					i(265538),	-- Plans: Ornate Crafter's Tongs
+					-- Without SpellID attached
+					i(258520),	-- Plans: Farstrider's Strike
 				})),
 			}),
 		}),

@@ -60,11 +60,14 @@ local KeyMaps = setmetatable({
 	battlepet = "speciesID",
 	c = "currencyID",
 	camp = "campsiteID",
+	creature = "npcID",
 	currency = "currencyID",
 	crit = "criteriaID",
 	enchant = "spellID",
+	fc = "firstcraftID",
 	fp = "flightpathID",
 	follower = "followerID",
+	gameobject = "objectID",
 	garrbuilding = "garrisonbuildingID",
 	garrfollower = "followerID",
 	["journal:0"] = "instanceID",
@@ -79,6 +82,8 @@ local KeyMaps = setmetatable({
 	npc = "npcID",
 	o = "objectID",
 	object = "objectID",
+	pn = "professionnodeID",
+	pvprank = "pvprankID",
 	r = "spellID",
 	recipe = "spellID",
 	rfp = "runeforgepowerID",
@@ -91,6 +96,18 @@ local KeyMaps = setmetatable({
 	q = "questID",
 	quest = "questID",
 }, { __index = function(t,key) return key.."ID" end})
+-- For external use of obtaining the proper Search Key field
+api.GetSearchKeyField = function(kind)
+	return KeyMaps[kind:lower():gsub("id", "")]
+end
+-- For external use of obtaining the proper Search Key field
+api.GetKeyField = function(kind)
+	local key = KeyMaps[kind:lower():gsub("id", "")]
+	if key == "modItemID" then
+		return "itemID"
+	end
+	return key
+end
 
 local function SearchByItemLink(link)
 	-- Parse the link and get the itemID and bonus ids.
@@ -105,17 +122,17 @@ local function SearchByItemLink(link)
 	local modID = tonumber(linkData[13]) or 0
 	local bonusCount = tonumber(linkData[14]) or 0
 	local bonusID1 = bonusCount > 0 and linkData[15] or 0
-	-- local itemModifierIndex = 15 + bonusCount
-	-- local itemModifierCount = tonumber(linkData[itemModifierIndex]) or 0
+	local itemModifierIndex = 15 + bonusCount
+	local itemModifierCount = tonumber(linkData[itemModifierIndex]) or 0
 	local artifactID
-	-- if itemModifierCount > 0 then
-	-- 	for i=itemModifierIndex + 1,itemModifierIndex + (2 * itemModifierCount),2 do
-	-- 		if linkData[i] == "8" then
-	-- 			artifactID = tonumber(linkData[i + 1])
-	-- 			break
-	-- 		end
-	-- 	end
-	-- end
+	if itemModifierCount > 0 then
+		for i=itemModifierIndex + 1,itemModifierIndex + (2 * itemModifierCount),2 do
+			if linkData[i] == "8" then
+				artifactID = tonumber(linkData[i + 1])
+				break
+			end
+		end
+	end
 	local search
 	-- Don't use SourceID for artifact searches since they contain many SourceIDs
 	local sourceID = not artifactID and app.GetSourceID(link);
@@ -234,7 +251,7 @@ do
 		end,
 		LinkSources = function(link)
 			local cleanlink = CleanLink(link)
-			local kind, id = (":"):split(cleanlink)
+			local kind, id = cleanlink and (":"):split(cleanlink)
 			if id then id = tonumber(id) end
 			if not id or not kind then
 				-- can't search for nothing!
@@ -253,6 +270,8 @@ do
 	SourceSearcher.mountmodID = SourceSearcher.itemID
 	SourceSearcher.heirloomID = SourceSearcher.itemID
 	SourceSearcher.modItemID = SourceSearcher.itemID
+	-- Key-based searches only
+	SourceSearcher.factionID = SourceSearcher.achievementID
 	app.SourceSearcher = SourceSearcher
 end
 
@@ -456,14 +475,14 @@ local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
 -- should additionally clear their contents when being cloned
-function app:BuildSearchResponse(field, value, drop, criteria)
-	return app:BuildTargettedSearchResponse(app:GetDataCache(), field, value, drop, criteria)
+function app:BuildSearchResponseRetailStyle(field, value, drop, criteria)
+	return app:BuildTargettedSearchResponse(app:GetDatabaseRoot(), field, value, drop, criteria)
 end
 -- Collects a cloned hierarchy of groups within the given target 'groups' which have the field and/or value within the given field. Specify 'clear' if found groups which match
 -- should additionally clear their contents when being cloned
 function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	if not groups then return end
-	MainRoot = app:GetDataCache()
+	MainRoot = app:GetDatabaseRoot()
 	if not MainRoot then app.PrintDebug("BuildTargettedSearchResponse.FAIL - No MainRoot available") return end
 	local UseCached = groups == MainRoot
 	if groups.g then groups = groups.g end
@@ -512,28 +531,19 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	return ClonedHierarchyGroups;
 end
 
--- Allows a user to use /att search|? [link]
--- to enable Debug Printing of Event messages
-app.ChatCommands.Add({"search","?"}, function(args)
-	local search = args[2]
-	if not search then
-		local guid = UnitGUID("target");
-		if guid then
-			search = "n:" .. select(6, ("-"):split(guid));
-		end
-	end
-
+-- Performs the internal logic of searching ATT for a given command/link and then navigating ATT's UI to show the results
+app.SearchAndOpen = function(search)
 	local results = SearchForLink(search)
 	if not results or #results == 0 then
 		results = SourceSearcher.LinkSources(search)
 	end
 	if not results or #results == 0 then
-		app.print("No results found for",search)
+		app.print("No results found for",search or "<no search provided>")
 		return
 	end
 
 	-- expand the hierarchy to each search result
-	local DGR = app.DirectGroupRefresh
+	local DGU = app.DirectGroupRefresh
 	local GetRelative = app.GetRelativeRawWithField
 	local windows = {}
 	local window, o
@@ -553,7 +563,7 @@ app.ChatCommands.Add({"search","?"}, function(args)
 		-- force the search results to be visible
 		o.forceShow = true
 		-- DGU them to chain visibility
-		DGR(o)
+		DGU(o)
 		o = o.parent
 		while o do
 			o.expanded = true
@@ -569,6 +579,23 @@ app.ChatCommands.Add({"search","?"}, function(args)
 	for window,_ in pairs(windows) do
 		window:ScrollTo(firstResult.key, firstResult[firstResult.key])
 	end
+end
+
+-- Allows a user to use /att search|? [link]
+-- to enable Debug Printing of Event messages
+app.ChatCommands.Add({"search","?"}, function(args)
+	local search = args[2]
+	if not search then
+		local guid = UnitGUID("target");
+		if guid and not app.WOWAPI.issecretvalue(guid) then
+			local npcID = select(6, ("-"):split(guid))
+			if npcID then
+				search = "n:" .. npcID
+			end
+		end
+	end
+
+	app.SearchAndOpen(search)
 
 	return true
 end, {

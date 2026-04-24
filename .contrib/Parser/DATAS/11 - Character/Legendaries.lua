@@ -1,6 +1,8 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
+-- #if NOT ANYCLASSIC
+-- CRIEVE NOTE: I don't like this file, I'd rather see it become a dynamic category instead.
 root(ROOTS.Character, n(LEGENDARIES, {
 	un(REMOVED_FROM_GAME, i(22632, {	-- Atiesh, Greatstaff of the Guardian
 		["classes"] = { DRUID }
@@ -46,3 +48,4 @@ root(ROOTS.Character, n(LEGENDARIES, {
 		["classes"] = { WARRIOR, ROGUE, MONK, DEMONHUNTER, DEATHKNIGHT }
 	}),
 }));
+-- #endif

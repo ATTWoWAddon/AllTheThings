@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	inst(1210, {	-- Darkflame Cleft
 		["coord"] = { 59.6, 21.6, THE_RINGING_DEEPS },
@@ -8,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 		["groups"] = {
 			n(QUESTS, {
 				q(83154, {	-- Knicknack's Knickknacks
-					--["sourceQuests"] = { x },	-- ?
+					-- ["sourceQuests"] = { x },	-- ?
 					["provider"] = { "n", 225555 },	-- Knicknack
 					["coord"] = { 46.5, 30.3, THE_RINGING_DEEPS },
 					["groups"] = {
@@ -64,6 +65,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						i(221111),	-- Poleaxe of Somber Fate
 						i(219307),	-- Remnant of Darkness
 						i(221114),	-- Shadowspawn Leggings
+						i(258268, {	-- Waxmaster's Candle Rack (DECOR!)
+							["timeline"] = { ADDED_12_0_1 },
+						}),
 					},
 				}),
 			}),
@@ -80,6 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 208747 },	-- The Darkness
 					["groups"] = {
 						ach(40429),	-- Mythic: Darkflame Cleft
+						ach(61598, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: Darkflame Cleft Guild Run
 						i(225548),	-- Wick's Lead (MOUNT!)
 					},
 				}),

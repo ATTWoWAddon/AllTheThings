@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(261, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Steamvault
 		["lore"] = "The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",
@@ -49,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29616, {	-- Storming the Steamvault
 					["qg"] = 17841,	-- Ysiel Windsinger
-					["coord"] = { 78.4, 62, ZANGARMARSH },
+					["coord"] = { 78.4, 62.0, ZANGARMARSH },
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 				}),
@@ -221,6 +222,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30623, 1 },	-- Reservoir Key
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265843, 1 },	-- Communal Reservoir Key
+					-- #endif
 				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
@@ -233,7 +237,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30551),	-- Infused Fire Opal
 							i(30549),	-- Shifting Tanzanite

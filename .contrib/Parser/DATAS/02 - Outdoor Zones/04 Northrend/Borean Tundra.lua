@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(BOREAN_TUNDRA, {
@@ -1259,6 +1260,12 @@ root(ROOTS.Zones, {
 						["qg"] = 25477,	-- Crafty Wobblesprocket
 						["coord"] = { 58.1, 18.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(187697, {	-- Crafty's Tools
+								["coord"] = { 64.5, 23.1, BOREAN_TUNDRA },
+								["groups"] = { i(34802) },	-- Crafty's Tools (QI!)
+							})
+						},
 					}),
 					q(11637, {	-- Kaganishu
 						["sourceQuest"] = 11635,	-- Farseer Grimwalker's Spirit
@@ -2185,6 +2192,9 @@ root(ROOTS.Zones, {
 							}),
 							i(37506),	-- Bogstrok Plate Gloves
 							i(37215),	-- Lost Sea Oculus
+							i(258220, {	-- Murloc Driftwood Hut (DECOR!)
+								["timeline"] = { ADDED_12_0_0 },
+							}),
 							i(37426),	-- Rusty Mesh Leggings
 							i(37392),	-- Soggy Hide Pauldrons
 						},
@@ -2792,7 +2802,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11714, {	-- Vermin Extermination
-						["sourceQuest"] = 11711,	--	Coward Delivery... Under 30 Minutes or it's Free
+						["sourceQuest"] = 11711,	-- Coward Delivery... Under 30 Minutes or it's Free
 						["qg"] = 25440,	-- Scout Tungok
 						["coord"] = { 52.9, 51.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
@@ -3007,21 +3017,24 @@ root(ROOTS.Zones, {
 					n(25206, {	-- Ahlurglgr <Clam Vendor>
 						["coord"] = { 43.0, 13.8, BOREAN_TUNDRA },
 						["groups"] = {
+							i(258220, {	-- Murloc Driftwood Hut (DECOR!)
+								["timeline"] = { ADDED_12_0_0 },
+							}),
 							i(36783, {	-- Northsea Pearl
-								["cost"] = { { "i", 34597, 30 }, },	-- 30x Winterfin Clam
+								["cost"] = { { "i", 34597, 30 } },	-- 30x Winterfin Clam
 							}),
 							i(37462, {	-- Sea King's Crown
-								["cost"] = { { "i", 34597, 30 }, },	-- 30x Winterfin Clam
+								["cost"] = { { "i", 34597, 30 } },	-- 30x Winterfin Clam
 							}),
 							i(36784, {	-- Siren's Tear
-								["cost"] = { { "i", 34597, 100 }, },	-- 100x Winterfin Clam
+								["cost"] = { { "i", 34597, 100 } },	-- 100x Winterfin Clam
 								["isLimited"] = true,
 							}),
 							i(37461, {	-- Tidebreaker Trident
-								["cost"] = { { "i", 34597, 50 }, },	-- 50x Winterfin Clam
+								["cost"] = { { "i", 34597, 50 } },	-- 50x Winterfin Clam
 							}),
 							i(37463, {	-- Winterfin Patch of Honor
-								["cost"] = { { "i", 34597, 30 }, },	-- 30x Winterfin Clam
+								["cost"] = { { "i", 34597, 30 } },	-- 30x Winterfin Clam
 							}),
 						},
 					}),

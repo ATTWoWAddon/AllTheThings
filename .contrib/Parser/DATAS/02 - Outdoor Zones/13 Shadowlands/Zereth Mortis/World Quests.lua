@@ -3,7 +3,10 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
-		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 64230 } }, {
+		n(WORLD_QUESTS, sharedData({
+			["sourceQuest"] = 64230,	-- Cyphers of the First Ones
+			["isWorldQuest"] = true,
+		}, {
 			q(65081, {	-- An Apple A Day
 				["coord"] = { 47.9, 88.7, ZERETH_MORTIS },
 				["groups"] = {
@@ -42,13 +45,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			q(65102, {	-- Fish Eyes
-				["coord"] = { 47.8, 64, ZERETH_MORTIS },
+				["coord"] = { 47.8, 64.0, ZERETH_MORTIS },
 				["groups"] = {
 					i(187999),	-- Fishing Portal
 				},
 			}),
 			q(65089, {	-- Frog'it
-				["coord"] = { 60, 68.8, ZERETH_MORTIS },
+				["coord"] = { 60.0, 68.8, ZERETH_MORTIS },
 				["sym"] = {
 					{"select","objectID",373561},	-- Forgotten Proto-Vault
 				},
@@ -83,19 +86,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 		})),
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 64230 }, ["sharedDescription"] = "Requires Cachial" }, {
 			q(65406, {	-- Connecting It All
-				["coord"] = { 65.7, 41, ZERETH_MORTIS },
+				["coord"] = { 65.7, 41.0, ZERETH_MORTIS },
 			}),
 			q(65417, {	-- Connecting It All
-				["coord"] = { 55, 48, ZERETH_MORTIS },
+				["coord"] = { 55.0, 48.0, ZERETH_MORTIS },
 			}),
 			q(65416, {	-- Connecting It All
-				["coord"] = { 53, 45.6, ZERETH_MORTIS },
+				["coord"] = { 53.0, 45.6, ZERETH_MORTIS },
 			}),
 			q(65408, {	-- Pattern Recognition
 				["coord"] = { 53.2, 86.8, ZERETH_MORTIS },
 			}),
 			q(65402, {	-- Pattern Recognition
-				["coord"] = { 32, 52.6, ZERETH_MORTIS },
+				["coord"] = { 32.0, 52.6, ZERETH_MORTIS },
 			}),
 			q(65407, {	-- Pattern Recognition
 				["coord"] = { 52.4, 57.1, ZERETH_MORTIS },
@@ -113,13 +116,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 51.3, 25.8, ZERETH_MORTIS },
 			}),
 			q(65413, {	-- Puzzling It Out
-				["coord"] = { 55.9, 84, ZERETH_MORTIS },
+				["coord"] = { 55.9, 84.0, ZERETH_MORTIS },
 			}),
 			q(65404, {	-- Puzzling It Out
 				["coord"] = { 59.1, 36.7, ZERETH_MORTIS },
 			}),
 			q(65410, {	-- Puzzling Situation
-				["coord"] = { 55.7, 50, ZERETH_MORTIS },
+				["coord"] = { 55.7, 50.0, ZERETH_MORTIS },
 			}),
 			q(65411, {	-- Puzzling Situation
 				["coord"] = { 35.2, 59.1, ZERETH_MORTIS },

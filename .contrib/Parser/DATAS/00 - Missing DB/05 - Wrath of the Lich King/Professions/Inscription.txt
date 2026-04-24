@@ -14,6 +14,12 @@ r(52183),	--
 3.1.0.9767
 r(57231),	-- Death Knight Glyph 25
 r(64301),	-- Glyph of Envenom
+3.80.0.65301
+r(1282130),	-- Glyph of the Trickster
+3.80.0.65749
+r(1287391),	-- Glyph of Army of the Dead
+3.80.0.65889
+r(1287822),	-- Scroll of Mass Resurrection
 
 
 
@@ -26,3 +32,9 @@ r(405005),	-- Glyph of Reckoning
 r(413897),	-- Glyph of Omen of Clarity
 3.4.2.49563
 r(414814),	-- Glyph of Shattering Throw
+3.80.0.65301
+r(1282130),	-- Glyph of the Trickster
+3.80.0.65749
+r(1287391),	-- Glyph of Army of the Dead
+3.80.0.65889
+r(1287822),	-- Scroll of Mass Resurrection

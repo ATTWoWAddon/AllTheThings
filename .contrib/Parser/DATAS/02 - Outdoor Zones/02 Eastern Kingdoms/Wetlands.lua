@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(WETLANDS, {
 		["lore"] =
@@ -28,7 +29,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25857,	-- Hunting Horrorjaw
 						26189,	-- The Angerfang Menace
 						25868,	-- Yorla Darksnare
-						--[[	TODO: possibly required -- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
+						--[[	TODO: possibly required	-- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
 						25855,	-- Gizmos and Gadgets
 						25850,	-- Strike the Earth!
 						25853,	-- Tooling Around
@@ -136,6 +137,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179488, {	-- Battered Footlocker
+					["coords"] = {
+						{ 13.7, 41.6, WETLANDS },
+						{ 16.5, 30.8, WETLANDS },
+						{ 18.4, 39.5, WETLANDS },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 110,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(180662),	-- Schooner Wreckage
@@ -367,12 +381,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(293, {	-- Cleansing the Eye
 					["sourceQuest"] = 292,	-- The Eye of Paleth
-					["providers"] = {
-						{ "n", 1217 },	-- Glorin Steelbrow
-						{ "i", 2944 },	-- Cursed Eye of Paleth
-					},
+					["qg"] = 1217,	-- Glorin Steelbrow
 					["coord"] = { 10.6, 60.5, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
@@ -661,7 +673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",  41410 },	-- Captured Mosshide
 								{ "o", 203282 },	-- Gnoll Cage
 							},
-							["cost"] = {{ "i", 56081, 6 }},	-- Trapper's Key
+							["cost"] = { { "i", 56081, 6 } },	-- Trapper's Key
 							["cr"] = 41409,	-- Dark Iron Trapper
 						}),
 					},
@@ -830,7 +842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.4, 40.0, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-				--	possibly requires The Threat of Flame?
+					-- possibly requires The Threat of Flame?
 				}),
 				q(25926, {	-- Mired in Hatred
 					["qg"] = 41503,	-- Rethiel the Greenwarden
@@ -890,7 +902,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(294, {	-- Ormer's Revenge (1/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
-					["coord"] = { 38, 51.2, WETLANDS },
+					["coord"] = { 38.0, 51.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -906,7 +918,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(295, {	-- Ormer's Revenge (2/3)
 					["sourceQuest"] = 294,	-- Ormer's Revenge (1/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
-					["coord"] = { 38, 51.2, WETLANDS },
+					["coord"] = { 38.0, 51.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -922,7 +934,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(296, {	-- Ormer's Revenge (3/3)
 					["sourceQuest"] = 295,	-- Ormer's Revenge (2/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
-					["coord"] = { 38, 51.2, WETLANDS },
+					["coord"] = { 38.0, 51.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -968,6 +980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(473, {	-- Report to Captain Stoutfist
+					["sourceQuest"] = 455,	-- The Algaz Gauntlet
 					["qg"] = 2086,	-- Valstag Ironjaw
 					["coord"] = { 10.1, 56.9, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1277,21 +1290,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(292, {	-- The Eye of Paleth
 					["sourceQuest"] = 290,	-- Lifting the Curse
-					["providers"] = {
-						{ "o", 112948 },	-- Intrepid's Locked Strongbox
-						{ "i", 2944 },	-- Cursed Eye of Paleth
-					},
+					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
 					["coord"] = { 14.5, 24.0, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
+					["groups"] = {
+						i(2944),	-- Cursed Eye of Paleth
+					},
 				}),
 				q(25819, {	-- The Eye of Paleth
 					["sourceQuest"] = 25818,	-- Lifting the Curse
-					["providers"] = {
-						{ "o", 112948 },	-- Intrepid's Locked Strongbox
-						{ "i", 2944 },	-- Cursed Eye of Paleth
-					},
+					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
 					["coord"] = { 14.3, 24.0, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1497,7 +1507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 22,
 					["groups"] = {
 						objective(1, {	-- 0/1 Flagon of Dwarven Honeymead
-							["cost"] = {{ "i", 2594, 1 }},	-- Flagon of Dwarven Honeymead
+							["cost"] = { { "i", 2594, 1 } },	-- Flagon of Dwarven Honeymead
 							["coord"] = { 10.6, 60.8, WETLANDS },
 							["cr"] = 1464,	-- Innkeeper Helbrek <Innkeeper>
 						}),
@@ -2000,7 +2010,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 212209 },	-- Vodyanoi
 						{ "i", 210499 },	-- Marshroom
 					},
-					["coord"] = { 31, 18, WETLANDS },
+					["coord"] = { 31.0, 18.0, WETLANDS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["groups"] = {
@@ -2225,6 +2235,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(257405, {	-- Baradin Bay Fishing Rack (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)

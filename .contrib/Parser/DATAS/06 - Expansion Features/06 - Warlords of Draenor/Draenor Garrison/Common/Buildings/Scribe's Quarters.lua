@@ -9,11 +9,11 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(130, {	-- Scribe's quarters (rank 1: 95, rank 2: 129, rank 3: 130)
 					n(QUESTS, {
 						q(36647, {	-- Your First Inscription Work Order
-							["provider"] = { "n", 77372 },	-- Eric Broadoak
+							["qg"] = 77372,	-- Eric Broadoak
 							["races"] = ALLIANCE_ONLY
 						}),
 						q(37572, {	-- Your First Inscription Work Order
-							["provider"] = { "n", 79829 },	-- Urgra
+							["qg"] = 79829,	-- Urgra
 							["races"] = HORDE_ONLY,
 						}),
 					}),
@@ -27,12 +27,12 @@ root(ROOTS.ExpansionFeatures,
 							["groups"] = {
 								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									i(120136),		-- Recipe: Secrets of Draenor Inscription
-									recipe(169081),	-- War Paints
-									recipe(167950),	-- Research: Warbinder's Ink
+									recipe(166669),	-- Card of Omens
 									recipe(175390),	-- Laughing Tarot
 									recipe(175389),	-- Ocean Tarot
+									recipe(167950),	-- Research: Warbinder's Ink
 									recipe(175392),	-- Savage Tarot
-									recipe(166669),	-- Card of Omens
+									recipe(169081),	-- War Paints
 									recipe(178497),	-- Warbinder's Ink
 								}),
 							},
@@ -46,12 +46,12 @@ root(ROOTS.ExpansionFeatures,
 							["groups"] = {
 								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									i(120136),		-- Recipe: Secrets of Draenor Inscription
-									recipe(169081),	-- War Paints
-									recipe(167950),	-- Research: Warbinder's Ink
+									recipe(166669),	-- Card of Omens
 									recipe(175390),	-- Laughing Tarot
 									recipe(175389),	-- Ocean Tarot
+									recipe(167950),	-- Research: Warbinder's Ink
 									recipe(175392),	-- Savage Tarot
-									recipe(166669),	-- Card of Omens
+									recipe(169081),	-- War Paints
 									recipe(178497),	-- Warbinder's Ink
 								}),
 							},

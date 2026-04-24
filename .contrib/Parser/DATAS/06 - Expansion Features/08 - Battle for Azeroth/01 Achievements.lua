@@ -73,11 +73,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				}),
 			},
 		}),
-		ach(13703, {	-- Battlefield Master
-		-- TODO: do we maps this into every bg/brawl/island exp map?
-			ach(13701),	-- Battlefield Brawler
-			ach(13702),	-- Battlefield Tactician
-		}),
+		-- TODO: do we maps these into every bg/brawl/island exp map?
+		ach(13701),	-- Battlefield Brawler
+		ach(13702),	-- Battlefield Tactician
+		ach(13703),	-- Battlefield Master
 		pvp(ach(12571)),	-- Bounty Hunting
 		pvp(ach(12605, {	-- Conqueror of Azeroth (A)
 			["races"] = ALLIANCE_ONLY,
@@ -117,9 +116,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				title(377),	-- <Name>, Conqueror of Azeroth
 			},
 		})),
-		un(BLACK_MARKET, ach(14183, {	-- Conspicuous Consumption
+		ach(14183, {	-- Conspicuous Consumption
 			["provider"] = { "i", 163042 },	-- Mighty Caravan Brutosaur
-		})),
+			["timeline"] = { ADDED_8_3_0 },
+			-- #if AFTER 9.0.1
+			["u"] = BLACK_MARKET,
+			-- #endif
+		}),
 		ach(41209, {	-- Dressed to Kill: Battle for Azeroth
 			["timeline"] = { ADDED_11_0_7 },
 			-- Meta Achievement
@@ -153,6 +156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}),
 			crit(41580, {	-- Brutosaur of Zuldazar Fed
 				["description"] = "Buy Extra-Dry Fruitcake from Golkada at 71.2, 29.6 and feed it to Irritable Maka'fon.",
+				["cost"] = { { "i", 163564, 1 } },	-- Extra-dry Fruitcake
 				["coord"] = { 64.0, 39.2, ZULDAZAR },	-- Irritable Maka'fon
 				["crs"] = {
 					130922,	-- Irritable Maka'fon
@@ -225,14 +229,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		h(ach(13284, {	-- Frontline Warrior (H)
 			i(245476, {["timeline"] = { ADDED_11_2_7 }}),	-- Large Forsaken War Tent (DECOR!)
 		})),
-		ach(12740, {	-- Full of Scrap!
+		ach(12738, {	-- Holy Scrap!
 			["maps"] = {
 				BORALUS,
 				DAZARALOR,
 			},
-			["groups"] = {
-				ach(12739),	-- Scraptastic!
-				ach(12738),	-- Holy Scrap!
+		}),
+		ach(12739, {	-- Scraptastic!
+			["maps"] = {
+				BORALUS,
+				DAZARALOR,
+			},
+		}),
+		ach(12740, {	-- Full of Scrap!
+			["maps"] = {
+				BORALUS,
+				DAZARALOR,
 			},
 		}),
 		ach(12482, {	-- Get Hek'd
@@ -292,19 +304,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				mount(303767),	-- Honeyback Hivemother (MOUNT!)
 			},
 		})),
-		pvp(ach(12861, {	-- Master of Duels
+		pvp(header(HEADERS.Quest, 53075, {	-- Dueler's Guild
 			["maps"] = {
 				BORALUS,
 				ZULDAZAR,
 			},
 			["groups"] = {
-				title(383),	-- Contender
+				ach(12856),	-- The First Rule of Dueler's Guild
+				ach(12857),	-- Trial by Combat
+				ach(12858),	-- Slugfest
+				ach(12860),	-- Contender
 				ach(12863, {	-- Dueling Master
 					i(163055),	-- Dueler's Tabard
-					ach(12860),	-- Contender
-					ach(12858),	-- Slugfest
-					ach(12857),	-- Trial by Combat
-					ach(12856),	-- The First Rule of Dueler's Guild
 				}),
 				ach(12859),	-- Prize Fighter
 				ach(12862, {	-- Thirty Six and Two
@@ -323,6 +334,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					crit(41092),	-- Shaman
 					crit(41093),	-- Warlock
 					crit(43156),	-- Warrior
+				}),
+				ach(12861, {	-- Master of Duels
+					title(383),	-- Contender
 				}),
 			},
 		})),

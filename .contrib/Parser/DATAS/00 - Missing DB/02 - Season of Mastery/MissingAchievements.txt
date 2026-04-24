@@ -1,6 +1,2 @@
-1.14.1.40666
-ach(15329),	-- Has Died
 1.14.1.40688
 ach(15332),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
-1.14.2.42597
-ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits

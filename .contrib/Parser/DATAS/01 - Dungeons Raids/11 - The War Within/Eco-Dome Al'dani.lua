@@ -68,6 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 				BossOnly(SOULSCRIBE, {
 					ach(42782),	-- Mythic: Eco-Dome Al'dani
+					ach(61604, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: Eco-Dome Al'dani Guild Run
 				}),
 			}),
 		},

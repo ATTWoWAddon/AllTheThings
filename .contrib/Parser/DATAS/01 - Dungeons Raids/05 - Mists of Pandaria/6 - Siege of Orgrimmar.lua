@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
@@ -107,6 +108,7 @@ local TOKENS = {
 		},
 	},
 };
+
 -- This header represents the shared drops and achievements that can be earned in all current difficulties.
 local CURRENT_ALL_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.ALL_PLUS_FLEX;
 local CURRENT_NORMAL_PLUS_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC_PLUS_FLEX;
@@ -116,16 +118,24 @@ CURRENT_ALL_DIFFICULTIES = DIFFICULTY.RAID.MULTI.ALL;
 CURRENT_NORMAL_PLUS_DIFFICULTIES = DIFFICULTY.RAID.MULTI.NORMAL_PLUS;
 CURRENT_HEROIC_PLUS_DIFFICULTIES = DIFFICULTY.RAID.MULTI.HEROIC_PLUS;
 FLEXIBLE_BEFORE_WOD = createHeader({
-    readable = "Flexible (5.4)",
-    icon = [[~_.asset("Difficulty_Normal")]],
-    text = {
-        en = "Flexible (5.4)",
-        ru = "Гибкий (5.4)",
-        cn = "弹性 (5.4)",
-    },
-    description = {
-        en = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
-    },
+	readable = "Flexible (5.4)",
+	icon = [[~_.asset("Difficulty_Normal")]],
+	text = {
+		en = "Flexible (5.4)",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		ru = "Гибкий (5.4)",
+		cn = "弹性 (5.4)",
+		tw = "彈性 (5.4)",
+	},
+	description = {
+		en = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+	},
 });
 -- #endif
 
@@ -199,6 +209,7 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, inst(369, {	-- Siege of Orgrimmar
 		["mapID"] = 556,
@@ -306,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			n(QUESTS, {
 				q(33147, {	-- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73335 },	-- Fading Breath
-					--["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
+					-- ["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
 				{
 					["aqd"] = q(33134, {	-- Warforged Seals (A)
@@ -318,7 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					["timeline"] = { ADDED_5_4_0 },
-					["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+					["cost"] = { { "c", 738, 50 } },	-- Lesser Charms of Good Fortune
 					["repeatable"] = true,
 					["groups"] = {
 						currency(776),	-- Warforged Seal
@@ -327,7 +338,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				q(33138, {	-- Why Do We Fight?
 					["sourceQuests"] = { 33147 },	-- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73318 },	-- Lorewalker Cho
-					--["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
+					-- ["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
 			}),
 			n(VENDORS, {

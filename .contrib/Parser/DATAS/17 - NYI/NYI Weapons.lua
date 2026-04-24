@@ -3,6 +3,11 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, {
 	n(WEAPONS, {
+		-- #if SEASON_OF_DISCOVERY
+		i(231885),	-- Frostmourne
+		i(231887),	-- Test Dagger
+		i(232343),	-- QAEnchant Shield - Law of Nature
+		-- #endif
 		filter(BOWS, {
 			expansion(EXPANSION.CLASSIC, {
 				n(P1xx, {
@@ -1436,7 +1441,7 @@ root(ROOTS.NeverImplemented, {
 		i(188099),	-- [PH] Copy Vault Patroller's Staff
 		-- 9.2.5
 		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace? /Queen Azshara)
-		i(192441),	-- Rhapsodic Pulverizer
+		i(192441, {["sourceID"] = 180385 }),	-- Rhapsodic Pulverizer
 		--
 		i(25497),	-- Broken Balanced Stone Dirk
 		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
@@ -1838,6 +1843,7 @@ root(ROOTS.NeverImplemented, {
 			i(212408),	-- 11.0 Raid Template - Sword2H - Str - 2 Hand
 			i(212410),	-- 11.0 Raid Template - Mace2H - Int - 2 Hand
 			i(212411),	-- 11.0 Raid Template - Sword2H - Int - 2 Hand
+			i(212412),	-- 11.0 Raid Template - Wand - RangedRight
 			i(212457),	-- 11.0 Raid Template - INT - Trinket
 			i(211652),	-- 11.0 Dungeon Template - Shield - Shield
 			i(211653),	-- 11.0 Dungeon Template - Generic - Holdable
@@ -1919,7 +1925,7 @@ root(ROOTS.NeverImplemented, {
 			i(225873),	-- Forged Gladiator's Sword
 			i(225349, {["sourceID"] = 220997}),	-- Kaheti Confiscated Borers
 
-			--- Fist
+			-- Fist
 			i(223585),	-- Algari Bladefist
 
 			-- Two hand
@@ -1937,6 +1943,11 @@ root(ROOTS.NeverImplemented, {
 		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
 			i(225667),	-- Ambassador Flamelash's Trident
 			i(231490),	-- Arbiter's Blade
+			i(232267),	-- Creche-Guard's Axe
+			i(232266),	-- Creche-Guard's Bulwark
+			i(232265),	-- Creche-Guard's Chopper
+			i(232278),	-- Creche-Scout's Longspear
+			i(232290),	-- Creche-Talon's Blade
 			i(232474),	-- Defias Cuirass
 			i(232475),	-- Defias Cuirass
 			i(225666),	-- General Angerforge's Axe
@@ -1971,7 +1982,39 @@ root(ROOTS.NeverImplemented, {
 
 		-- 11.2.0
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			i(230814),	-- [11.2 PVP] Gladiator's Axe <TEMPLATE>
+			i(230822),	-- [11.2 PVP] Gladiator's Battlestaff <TEMPLATE>
+			i(230829),	-- [11.2 PVP] Gladiator's Bow <TEMPLATE>
+			i(230827),	-- [11.2 PVP] Gladiator's Bulwark <TEMPLATE>
+			i(230828),	-- [11.2 PVP] Gladiator's Claws <TEMPLATE>
+			i(230823),	-- [11.2 PVP] Gladiator's Crossbow <TEMPLATE>
+			i(230815),	-- [11.2 PVP] Gladiator's Dagger <TEMPLATE>
+			i(230825),	-- [11.2 PVP] Gladiator's Focus <TEMPLATE>
+			i(230830),	-- [11.2 PVP] Gladiator's Greataxe <TEMPLATE>
+			i(230821),	-- [11.2 PVP] Gladiator's Greatsword <TEMPLATE>
+			i(230816),	-- [11.2 PVP] Gladiator's Gun <TEMPLATE>
+			i(230833),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
+			i(230834),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
+			i(230835),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
+			i(230836),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
+			i(230831),	-- [11.2 PVP] Gladiator's Pulverizer <TEMPLATE>
+			i(230824),	-- [11.2 PVP] Gladiator's Scepter <TEMPLATE>
+			i(230826),	-- [11.2 PVP] Gladiator's Shield <TEMPLATE>
+			i(230819),	-- [11.2 PVP] Gladiator's Spear <TEMPLATE>
+			i(230820),	-- [11.2 PVP] Gladiator's Staff <TEMPLATE>
+			i(230817),	-- [11.2 PVP] Gladiator's Warglaive <TEMPLATE>
+			i(230832),	-- [11.2 PVP] Gladiator's Wither-Blade <TEMPLATE>
+			i(248342),	-- Astral Gladiator's Axe
+			i(248354),	-- Astral Gladiator's Bulwark
+			i(248344),	-- Astral Gladiator's Gun
+			-- #if BEFORE MID
 			i(238008),	-- Wastelander's Folly
+			-- #endif
+		})),
+
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			i(266268),	-- Rootbound Haranir Claws
 		})),
 	}),
 	n(WEAPONS, {
@@ -2211,7 +2254,7 @@ root(ROOTS.NeverImplemented, {
 				i(84893),	-- Malevolent Gladiator's Fleshslicer
 				i(94899),	-- Malevolent Gladiator's Baton of Light
 				i(94898),	-- Malevolent Gladiator's Touch of Death
-				--i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- in NYI Sourceless
+				-- i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- in NYI Sourceless
 			}),
 			--
 			i(84085),	-- Dreadwaste Meditation Staff

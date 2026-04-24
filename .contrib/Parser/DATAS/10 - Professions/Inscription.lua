@@ -35,7 +35,7 @@ GLYPH_OF_ADRENALINE_RUSH_AND_SHADOW_WALK = r(57112, {	-- Glyph of Adrenaline Rus
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_AERIAL_CHAMELEON = r(344341, {  -- Glyph of the Aerial Chameleon
+GLYPH_OF_AERIAL_CHAMELEON = r(344341, {	-- Glyph of the Aerial Chameleon
 	["name"] = "Glyph of the Aerial Chameleon",
 	["timeline"] = {ADDED_9_0_2_LAUNCH},
 });
@@ -63,7 +63,7 @@ GLYPH_OF_ANTIMAGIC_SHELL = r(57207, {	-- Glyph of Anti-Magic Shell
 	["name"] = "Glyph of Anti-Magic Shell",
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_AQUATIC_CHAMELEON = r(344340, {  -- Glyph of the Aquatic Chameleon
+GLYPH_OF_AQUATIC_CHAMELEON = r(344340, {	-- Glyph of the Aquatic Chameleon
 	["name"] = "Glyph of the Aquatic Chameleon",
 	["timeline"] = {ADDED_9_0_2_LAUNCH},
 });
@@ -661,7 +661,7 @@ GLYPH_OF_DEVASTATE_AND_HEAVY_REPERCUSSIONS = r(57155, {	-- Glyph of Devastate / 
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
-GLYPH_OF_DIRE_BEES = r(304042, {  -- Glyph of Dire Bees
+GLYPH_OF_DIRE_BEES = r(304042, {	-- Glyph of Dire Bees
 	["name"] = "Glyph of Dire Bees",
 	["timeline"] = { ADDED_8_2_5 },
 });
@@ -1537,7 +1537,7 @@ GLYPH_OF_LAVA_LASH = r(57249, {	-- Glyph of Strength of Earth Totem / Glyph of L
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_LAVISH_SERVINGS = r(309443, {  -- Glyph of Lavish Servings
+GLYPH_OF_LAVISH_SERVINGS = r(309443, {	-- Glyph of Lavish Servings
 	["name"] = "Glyph of Lavish Servings",
 	["timeline"] = { ADDED_8_2_5 },
 });
@@ -2549,7 +2549,7 @@ GLYPH_OF_STONESKIN_AND_DETOX = r(112454, {	-- Glyph of Stoneskin / Glyph of Deto
 	-- #endif
 	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
-GLYPH_OF_STORMS_WAKE = r(289356, {  -- Glyph of Storm's Wake
+GLYPH_OF_STORMS_WAKE = r(289356, {	-- Glyph of Storm's Wake
 	["name"] = "Glyph of Storm's Wake",
 	["timeline"] = { ADDED_8_1_0 },
 	["races"] = ALLIANCE_ONLY,
@@ -2796,7 +2796,7 @@ GLYPH_OF_THE_SUN = r(182158, {	-- Glyph of the Sun
 	["name"] = "Glyph of the Sun",
 	["timeline"] = { ADDED_6_1_0 },
 });
-GLYPH_OF_THE_SWIFT_CHAMELEON = r(344335, {  -- Glyph of the Swift Chameleon
+GLYPH_OF_THE_SWIFT_CHAMELEON = r(344335, {	-- Glyph of the Swift Chameleon
 	["name"] = "Glyph of the Swift Chameleon",
 	["timeline"] = {ADDED_9_0_2_LAUNCH},
 });
@@ -3796,8 +3796,6 @@ end
 -- Validation Code Undo change
 r = oldR;
 
-local DF_INSCRIPTION_KNOWLEDGE = 2028;
-local TWW_INSCRIPTION_KNOWLEDGE = 2790;
 -- Inscription - Skill ID  / SPELL ID
 root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, ["requireSkill"] = INSCRIPTION }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -4030,41 +4028,41 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				GLYPH_OF_CORPSE_EXPLOSION_AND_PATH_OF_FROST,
 				GLYPH_OF_CURSE_OF_EXHAUSTION,
 				GLYPH_OF_DASH,
-				--GLYPH_OF_DEATHS_EMBRACE, (Missing?) Check this one, notes say moved to Research: Midnight Ink?
+				-- GLYPH_OF_DEATHS_EMBRACE, (Missing?) Check this one, notes say moved to Research: Midnight Ink?
 				GLYPH_OF_DISTRACT,
 				GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION,
-				--GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY,	(Missing?) Moved to Research: Jadefire Ink?
-				--GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,	(Missing?)
-				--GLYPH_OF_FADING_AND_SHADOW_RAVENS,	(Missing?)
+				-- GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY,	(Missing?) Moved to Research: Jadefire Ink?
+				-- GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,	(Missing?)
+				-- GLYPH_OF_FADING_AND_SHADOW_RAVENS,	(Missing?)
 				GLYPH_OF_FEIGN_DEATH_AND_FIREWORKS,
 				GLYPH_OF_FIRE_WARD,
-				--GLYPH_OF_FORTITUDE_AND_BORROWED_TIME,	(Missing?)
+				-- GLYPH_OF_FORTITUDE_AND_BORROWED_TIME,	(Missing?)
 				GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR,
 				GLYPH_OF_FROST_WARD_AND_THE_MONKEY,
 				GLYPH_OF_GHOST_WOLF,
-				--GLYPH_OF_HORN_OF_WINTER,	(Missing?)
+				-- GLYPH_OF_HORN_OF_WINTER,	(Missing?)
 				GLYPH_OF_KILROGG,
 				GLYPH_OF_LAY_ON_HANDS_AND_FLASH_OF_LIGHT,
-				--GLYPH_OF_LEVITATE,	(Missing?)
+				-- GLYPH_OF_LEVITATE,	(Missing?)
 				-- #if BEFORE MOP
 				GLYPH_OF_MEND_PET_AND_LESSER_PROPORTION,	-- Not sure why this is marked like this?
 				GLYPH_OF_MOCKING_BLOW_AND_DEMORALIZING_SHOUT_AND_GUSHING_WOUND,	-- Not sure why this is marked like this?
 				-- #endif
-				--GLYPH_OF_PESTILENCE_AND_RESILIENT_GRIP,	(Missing?)
+				-- GLYPH_OF_PESTILENCE_AND_RESILIENT_GRIP,	(Missing?)
 				GLYPH_OF_PICK_LOCK,
 				GLYPH_OF_PICK_POCKET,
 				GLYPH_OF_POSSESSED_STRENGTH,
-				--GLYPH_OF_RAISE_DEAD_AND_RAISE_ALLY_AND_DEATH_GATE,	(Missing?)
+				-- GLYPH_OF_RAISE_DEAD_AND_RAISE_ALLY_AND_DEATH_GATE,	(Missing?)
 				GLYPH_OF_RENEWED_LIFE_AND_FAR_SIGHT,
 				GLYPH_OF_REVIVE_PET,
 				GLYPH_OF_SAFE_FALL,
 				GLYPH_OF_SCARE_BEAST_AND_STAMPEDE,
 				GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD,
-				--GLYPH_OF_SHACKLE_UNDEAD,	(Missing?)
-				--GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD,	(Missing?)
-				--GLYPH_OF_SHADOWFIEND_AND_DARK_ARCHANGEL,	(Missing?)
+				-- GLYPH_OF_SHACKLE_UNDEAD,	(Missing?)
+				-- GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD,	(Missing?)
+				-- GLYPH_OF_SHADOWFIEND_AND_DARK_ARCHANGEL,	(Missing?)
 				GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE,
-				--GLYPH_OF_SOULS_AND_RITUAL_OF_SOULS_AND_SOULWELL,	(Missing?)
+				-- GLYPH_OF_SOULS_AND_RITUAL_OF_SOULS_AND_SOULWELL,	(Missing?)
 				GLYPH_OF_SUBJUGATE_DEMON_AND_ENSLAVE_DEMON,
 				GLYPH_OF_THE_PACK_AND_ASPECT_OF_THE_PACK,
 				GLYPH_OF_THE_PENGUIN,
@@ -4074,8 +4072,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				-- #endif
 				GLYPH_OF_THORNS_AND_GRACE,
 				GLYPH_OF_THUNDER_CLAP_AND_UNENDING_RAGE,
-				--GLYPH_OF_THUNDERSTORM,	(Missing?)
-				--GLYPH_OF_TYPHOON_AND_STARS,	(Missing?)
+				-- GLYPH_OF_THUNDERSTORM,	(Missing?)
+				-- GLYPH_OF_TYPHOON_AND_STARS,	(Missing?)
 				GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING,
 				GLYPH_OF_UNENDING_BREATH,
 				GLYPH_OF_VANISH_AND_POISONS,
@@ -4413,875 +4411,694 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 		}),
 	}),
+	-- #endif
 	-- Crieve NOTE: Inscription came out with Wrath and the other sections had like no content and a bunch of overlap.
 	-- So I merged them into Wrath for clarity.
 	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
-		r(51005, {	-- Milling
-			-- #if NOT ANYCLASSIC
-			-- TODO: Check Retail ATT if this can be marked collectible, works fine in Classic.
-			["collectible"] = false,
-			-- #endif
-		}),
-		cat(106, {	-- Card
-			r(59487),	-- Arcane Tarot
-			r(59502),	-- Darkmoon Card
-			r(59504),	-- Darkmoon Card of the North
-			r(59503),	-- Greater Darkmoon Card
-			r(48247),	-- Mysterious Tarot
-			r(59491),	-- Shadowy Tarot
-			r(59480),	-- Strange Tarot
-		}),
-		-- #if AFTER 4.0.3
-		cat(105, {	-- Clear Mind
-			r(92026, {	-- Vanishing Powder
-				["timeline"] = { ADDED_4_0_3 },
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18725, {	-- Best Stellar
+				i(208421),	-- Compendium of the New Moon (TOY!)
+				crit(60884, {	-- Rituals of the New Moon - Black Wolf
+					["provider"] = { "i", 45853 },	-- Rituals of the New Moon
+				}),
+				crit(60885, {	-- Rituals of the New Moon - White Wolf
+					["provider"] = { "i", 45851 },	-- Rituals of the New Moon
+				}),
+				crit(60886, {	-- Rituals of the New Moon - Red Wolf
+					["provider"] = { "i", 45850 },	-- Rituals of the New Moon
+				}),
+				crit(60887, {	-- Rituals of the New Moon - Gray Wolf
+					["provider"] = { "i", 45852 },	-- Rituals of the New Moon
+				}),
 			}),
-		}),
-		-- #endif
-		cat(104, {	-- Ink
-			r(57709),	-- Celestial Ink
-			r(57714),	-- Darkflame Ink
-			r(57706),	-- Dawnstar Ink
-			r(57713),	-- Ethereal Ink
-			r(57710),	-- Fiery Ink
-			r(57703),	-- Hunter's Ink
-			r(57715),	-- Ink of the Sea
-			r(57712),	-- Ink of the Sky
-			r(52738, {	-- Ivory Ink
-				["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
+		})),
+		filter(RECIPES, {
+			r(51005, {	-- Milling
+				-- #if NOT ANYCLASSIC
+				-- TODO: Check Retail ATT if this can be marked collectible, works fine in Classic.
+				["collectible"] = false,
+				-- #endif
 			}),
-			r(57707),	-- Jadefire Ink
-			r(57704),	-- Lion's Ink
-			r(53462),	-- Midnight Ink
-			r(52843),	-- Moonglow Ink
-			r(57708),	-- Royal Ink
-			r(57711),	-- Shimmering Ink
-			r(57716),	-- Snowfall Ink
-		}),
-		cat(103, {	-- Off-hand
-			r(59496),	-- Book of Clever Tricks
-			r(59490),	-- Book of Stars
-			r(59478),	-- Book of Survival
-			r(59498),	-- Faces of Doom
-			r(59489),	-- Fire Eater's Guide
-			r(59495),	-- Hellfire Tome
-			r(59497),	-- Iron-bound Tome
-			r(59494),	-- Manual of Clouds
-			r(58565),	-- Mystic Tome
-			r(64051),	-- Rituals of the Moon
-			r(59486),	-- Royal Guide of Escape Routes
-			r(59493),	-- Stormbound Tome
-			r(59484),	-- Tome of Kings
-			r(59475),	-- Tome of the Dawn
-			r(64053),	-- Twilight Tome
-		}),
-		cat(114, {	-- Other
-			-- #if BEFORE CATA
-			r(52739),	-- Armor Vellum / Enchanting Vellum [CATA+]
+			cat(106, {	-- Card
+				r(59487),	-- Arcane Tarot
+				r(59502),	-- Darkmoon Card
+				r(59504),	-- Darkmoon Card of the North
+				r(59503),	-- Greater Darkmoon Card
+				r(48247),	-- Mysterious Tarot
+				r(59491),	-- Shadowy Tarot
+				r(59480),	-- Strange Tarot
+			}),
+			-- #if AFTER 4.0.3
+			cat(105, {	-- Clear Mind
+				r(92026, {	-- Vanishing Powder
+					["timeline"] = { ADDED_4_0_3 },
+				}),
+			}),
 			-- #endif
-			r(59499, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Armor Vellum II
-			r(59500, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Armor Vellum III
-			r(59387),	-- Certificate of Ownership
-			-- #if AFTER CATA
-			r(52739),	-- Enchanting Vellum [CATA+] / Armor Vellum
-			-- #endif
-			r(52840, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Weapon Vellum
-			r(59488, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Weapon Vellum II
-			r(59501, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Weapon Vellum III
-		}),
-		cat(108, {	-- Research
-			r(61288, {["timeline"]={DELETED_6_0_2}}),	-- Minor Inscription Research
-			r(61177, {["timeline"]={DELETED_6_0_2}}),	-- Northrend Inscription Research
-			r(165461, {["timeline"]={ADDED_6_0_2}}),	-- Research: Celestial Ink
-			r(165464, {["timeline"]={ADDED_6_0_2}}),	-- Research: Ethereal Ink
-			r(165460, {["timeline"]={ADDED_6_0_2}}),	-- Research: Jadefire Ink
-			r(165456, {["timeline"]={ADDED_6_0_2}}),	-- Research: Lion's Ink
-			r(165304, {["timeline"]={ADDED_6_0_2}}),	-- Research: Midnight Ink
-			r(165564, {["timeline"]={ADDED_6_0_2}}),	-- Research: Moonglow Ink
-			r(165463, {["timeline"]={ADDED_6_0_2}}),	-- Research: Shimmering Ink
-		}),
-		cat(107, {	-- Scrolls
-			r(69385),	-- Runescroll of Fortitude
-			r(58472),	-- Scroll of Agility
-			r(58473),	-- Scroll of Agility II
-			r(58476),	-- Scroll of Agility III
-			r(58478),	-- Scroll of Agility IV
-			r(58480),	-- Scroll of Agility V
-			r(58481),	-- Scroll of Agility VI
-			r(58482),	-- Scroll of Agility VII
-			r(58483),	-- Scroll of Agility VIII
-			r(48114),	-- Scroll of Intellect
-			r(50598),	-- Scroll of Intellect II
-			r(50599),	-- Scroll of Intellect III
-			r(50600),	-- Scroll of Intellect IV
-			r(50601),	-- Scroll of Intellect V
-			r(50602),	-- Scroll of Intellect VI
-			r(50603),	-- Scroll of Intellect VII
-			r(50604),	-- Scroll of Intellect VIII
-			r(48248),	-- Scroll of Recall
-			r(60336),	-- Scroll of Recall II
-			r(60337),	-- Scroll of Recall III
-			-- #if BEFORE 7.0.3
-			r(48116),	-- Scroll of Spirit / Scroll of Versatility [LEGION+]
-			r(50605),	-- Scroll of Spirit II / Scroll of Versatility II [LEGION+]
-			r(50606),	-- Scroll of Spirit III / Scroll of Versatility III [LEGION+]
-			r(50607),	-- Scroll of Spirit IV / Scroll of Versatility IV [LEGION+]
-			r(50608),	-- Scroll of Spirit V / Scroll of Versatility V [LEGION+]
-			r(50609),	-- Scroll of Spirit VI / Scroll of Versatility VI [LEGION+]
-			r(50610),	-- Scroll of Spirit VII / Scroll of Versatility VII [LEGION+]
-			r(50611),	-- Scroll of Spirit VIII / Scroll of Versatility VIII [LEGION+]
-			-- #endif
-			r(45382),	-- Scroll of Stamina
-			r(50612),	-- Scroll of Stamina II
-			r(50614),	-- Scroll of Stamina III
-			r(50616),	-- Scroll of Stamina IV
-			r(50617),	-- Scroll of Stamina V
-			r(50618),	-- Scroll of Stamina VI
-			r(50619),	-- Scroll of Stamina VII
-			r(50620),	-- Scroll of Stamina VIII
-			r(58484),	-- Scroll of Strength
-			r(58485),	-- Scroll of Strength II
-			r(58486),	-- Scroll of Strength III
-			r(58487),	-- Scroll of Strength IV
-			r(58488),	-- Scroll of Strength V
-			r(58489),	-- Scroll of Strength VI
-			r(58490),	-- Scroll of Strength VII
-			r(58491),	-- Scroll of Strength VIII
-			-- #if AFTER 7.0.3
-			r(48116),	-- Scroll of Versatility [LEGION+] / Scroll of Spirit
-			r(50605),	-- Scroll of Versatility II [LEGION+] / Scroll of Spirit II
-			r(50606),	-- Scroll of Versatility III [LEGION+]  / Scroll of Spirit III
-			r(50607),	-- Scroll of Versatility IV [LEGION+]  / Scroll of Spirit IV
-			r(50608),	-- Scroll of Versatility V [LEGION+]  / Scroll of Spirit V
-			r(50609),	-- Scroll of Versatility VI [LEGION+] / Scroll of Spirit VI
-			r(50610),	-- Scroll of Versatility VII [LEGION+] / Scroll of Spirit VII
-			r(50611),	-- Scroll of Versatility VIII [LEGION+] / Scroll of Spirit VIII
-			-- #endif
-		}),
-		cat(798, {	-- Shoulder Inscription
-			r(61117),	-- Master's Inscription of the Axe
-			r(61118),	-- Master's Inscription of the Crag
-			r(61119),	-- Master's Inscription of the Pinnacle
-			r(61120),	-- Master's Inscription of the Storm
+			cat(104, {	-- Ink
+				r(57709),	-- Celestial Ink
+				r(57714),	-- Darkflame Ink
+				r(57706),	-- Dawnstar Ink
+				r(57713),	-- Ethereal Ink
+				r(57710),	-- Fiery Ink
+				r(57703),	-- Hunter's Ink
+				r(57715),	-- Ink of the Sea
+				r(57712),	-- Ink of the Sky
+				r(52738, {	-- Ivory Ink
+					["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
+				}),
+				r(57707),	-- Jadefire Ink
+				r(57704),	-- Lion's Ink
+				r(53462),	-- Midnight Ink
+				r(52843),	-- Moonglow Ink
+				r(57708),	-- Royal Ink
+				r(57711),	-- Shimmering Ink
+				r(57716),	-- Snowfall Ink
+			}),
+			cat(103, {	-- Off-hand
+				r(59496),	-- Book of Clever Tricks
+				r(59490),	-- Book of Stars
+				r(59478),	-- Book of Survival
+				r(59498),	-- Faces of Doom
+				r(59489),	-- Fire Eater's Guide
+				r(59495),	-- Hellfire Tome
+				r(59497),	-- Iron-bound Tome
+				r(59494),	-- Manual of Clouds
+				r(58565),	-- Mystic Tome
+				r(64051),	-- Rituals of the Moon
+				r(59486),	-- Royal Guide of Escape Routes
+				r(59493),	-- Stormbound Tome
+				r(59484),	-- Tome of Kings
+				r(59475),	-- Tome of the Dawn
+				r(64053),	-- Twilight Tome
+			}),
+			cat(114, {	-- Other
+				-- #if BEFORE CATA
+				r(52739),	-- Armor Vellum / Enchanting Vellum [CATA+]
+				-- #endif
+				r(59499, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Armor Vellum II
+				r(59500, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Armor Vellum III
+				r(59387),	-- Certificate of Ownership
+				-- #if AFTER CATA
+				r(52739),	-- Enchanting Vellum [CATA+] / Armor Vellum
+				-- #endif
+				r(52840, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Weapon Vellum
+				r(59488, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Weapon Vellum II
+				r(59501, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Weapon Vellum III
+			}),
+			cat(108, {	-- Research
+				r(61288, {["timeline"]={DELETED_6_0_2}}),	-- Minor Inscription Research
+				r(61177, {["timeline"]={DELETED_6_0_2}}),	-- Northrend Inscription Research
+				r(165461, {["timeline"]={ADDED_6_0_2}}),	-- Research: Celestial Ink
+				r(165464, {["timeline"]={ADDED_6_0_2}}),	-- Research: Ethereal Ink
+				r(165460, {["timeline"]={ADDED_6_0_2}}),	-- Research: Jadefire Ink
+				r(165456, {["timeline"]={ADDED_6_0_2}}),	-- Research: Lion's Ink
+				r(165304, {["timeline"]={ADDED_6_0_2}}),	-- Research: Midnight Ink
+				r(165564, {["timeline"]={ADDED_6_0_2}}),	-- Research: Moonglow Ink
+				r(165463, {["timeline"]={ADDED_6_0_2}}),	-- Research: Shimmering Ink
+			}),
+			cat(107, {	-- Scrolls
+				r(69385),	-- Runescroll of Fortitude
+				r(58472),	-- Scroll of Agility
+				r(58473),	-- Scroll of Agility II
+				r(58476),	-- Scroll of Agility III
+				r(58478),	-- Scroll of Agility IV
+				r(58480),	-- Scroll of Agility V
+				r(58481),	-- Scroll of Agility VI
+				r(58482),	-- Scroll of Agility VII
+				r(58483),	-- Scroll of Agility VIII
+				r(48114),	-- Scroll of Intellect
+				r(50598),	-- Scroll of Intellect II
+				r(50599),	-- Scroll of Intellect III
+				r(50600),	-- Scroll of Intellect IV
+				r(50601),	-- Scroll of Intellect V
+				r(50602),	-- Scroll of Intellect VI
+				r(50603),	-- Scroll of Intellect VII
+				r(50604),	-- Scroll of Intellect VIII
+				r(48248),	-- Scroll of Recall
+				r(60336),	-- Scroll of Recall II
+				r(60337),	-- Scroll of Recall III
+				-- #if BEFORE 7.0.3
+				r(48116),	-- Scroll of Spirit / Scroll of Versatility [LEGION+]
+				r(50605),	-- Scroll of Spirit II / Scroll of Versatility II [LEGION+]
+				r(50606),	-- Scroll of Spirit III / Scroll of Versatility III [LEGION+]
+				r(50607),	-- Scroll of Spirit IV / Scroll of Versatility IV [LEGION+]
+				r(50608),	-- Scroll of Spirit V / Scroll of Versatility V [LEGION+]
+				r(50609),	-- Scroll of Spirit VI / Scroll of Versatility VI [LEGION+]
+				r(50610),	-- Scroll of Spirit VII / Scroll of Versatility VII [LEGION+]
+				r(50611),	-- Scroll of Spirit VIII / Scroll of Versatility VIII [LEGION+]
+				-- #endif
+				r(45382),	-- Scroll of Stamina
+				r(50612),	-- Scroll of Stamina II
+				r(50614),	-- Scroll of Stamina III
+				r(50616),	-- Scroll of Stamina IV
+				r(50617),	-- Scroll of Stamina V
+				r(50618),	-- Scroll of Stamina VI
+				r(50619),	-- Scroll of Stamina VII
+				r(50620),	-- Scroll of Stamina VIII
+				r(58484),	-- Scroll of Strength
+				r(58485),	-- Scroll of Strength II
+				r(58486),	-- Scroll of Strength III
+				r(58487),	-- Scroll of Strength IV
+				r(58488),	-- Scroll of Strength V
+				r(58489),	-- Scroll of Strength VI
+				r(58490),	-- Scroll of Strength VII
+				r(58491),	-- Scroll of Strength VIII
+				-- #if AFTER 7.0.3
+				r(48116),	-- Scroll of Versatility [LEGION+] / Scroll of Spirit
+				r(50605),	-- Scroll of Versatility II [LEGION+] / Scroll of Spirit II
+				r(50606),	-- Scroll of Versatility III [LEGION+]  / Scroll of Spirit III
+				r(50607),	-- Scroll of Versatility IV [LEGION+]  / Scroll of Spirit IV
+				r(50608),	-- Scroll of Versatility V [LEGION+]  / Scroll of Spirit V
+				r(50609),	-- Scroll of Versatility VI [LEGION+] / Scroll of Spirit VI
+				r(50610),	-- Scroll of Versatility VII [LEGION+] / Scroll of Spirit VII
+				r(50611),	-- Scroll of Versatility VIII [LEGION+] / Scroll of Spirit VIII
+				-- #endif
+			}),
+			cat(798, {	-- Shoulder Inscription
+				r(61117),	-- Master's Inscription of the Axe
+				r(61118),	-- Master's Inscription of the Crag
+				r(61119),	-- Master's Inscription of the Pinnacle
+				r(61120),	-- Master's Inscription of the Storm
+			}),
 		}),
 	}))),
 	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
-		r(86008, {	-- Inscription (Cata)
-			["collectible"] = false,	-- the profession itself is not a recipe
-		});
-		cat(105, {	-- Clear Mind
-			r(92027, {	-- Dust of Disappearance
-				["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
+		filter(RECIPES, {
+			r(86008, {	-- Inscription (Cata)
+				["collectible"] = false,	-- the profession itself is not a recipe
+			});
+			cat(105, {	-- Clear Mind
+				r(92027, {	-- Dust of Disappearance
+					["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
+				}),
 			}),
-		}),
-		cat(785, {	-- Inks
-			r(86004),	-- Blackfallow Ink
-			r(86005),	-- Inferno Ink
-		}),
-		cat(787, {	-- Scrolls & Research
-			r(89367, {	-- Adventurer's Journal
-				["timeline"] = { DELETED_5_0_4 },
+			cat(785, {	-- Inks
+				r(86004),	-- Blackfallow Ink
+				r(86005),	-- Inferno Ink
 			}),
-			r(165466, {["timeline"]={ADDED_6_0_2}}),	-- Research: Blackfallow Ink*
-			r(85785),	-- Runescroll of Fortitude II*
-			r(89370),	-- Scroll of Agility IX*
-			r(89368),	-- Scroll of Intellect IX*
-			r(89373),	-- Scroll of Protection IX*
-			r(89372),	-- Scroll of Stamina IX*
-			r(89369),	-- Scroll of Strength IX*
-			r(89371),	-- Scroll of Versatility IX / CATA: Scroll of Spirit IX*
-		}),
-		cat(788, {	-- Cards
-			r(86615),	-- Darkmoon Card of Destruction
-			r(86609),	-- Mysterious Fortune Card
-		}),
-		cat(789, {	-- Shoulder Inscription
-			r(86403),	-- Felfire Inscription
-			r(86402),	-- Inscription of the Earth Prince
-			r(86401),	-- Lionsmane Inscription
-			r(86375),	-- Swiftsteel Inscription
-		}),
-		cat(790, {	-- Weapons & Off-Hands
-			r(86643),	-- Battle Tome
-			r(86616),	-- Book of Blood
-			r(86642),	-- Divine Companion
-			r(86641),	-- Dungeoneering Guide
-			r(86648, {	-- Key to the Planes
-				["timeline"] = { ADDED_5_0_4 },
+			cat(787, {	-- Scrolls & Research
+				r(89367, {	-- Adventurer's Journal
+					["timeline"] = { DELETED_5_0_4 },
+				}),
+				r(165466, {["timeline"]={ADDED_6_0_2}}),	-- Research: Blackfallow Ink*
+				r(85785),	-- Runescroll of Fortitude II*
+				r(89370),	-- Scroll of Agility IX*
+				r(89368),	-- Scroll of Intellect IX*
+				r(89373),	-- Scroll of Protection IX*
+				r(89372),	-- Scroll of Stamina IX*
+				r(89369),	-- Scroll of Strength IX*
+				r(89371),	-- Scroll of Versatility IX / CATA: Scroll of Spirit IX*
 			}),
-			r(86640),	-- Lord Rottington's Pressed Wisp Book
-			r(86652, {	-- Rosethorn Staff
-				["timeline"] = { ADDED_5_0_4 },
+			cat(788, {	-- Cards
+				r(86615),	-- Darkmoon Card of Destruction
+				r(86609),	-- Mysterious Fortune Card
 			}),
-			r(86649, {	-- Runed Staff
-				["timeline"] = { ADDED_5_0_4 },
+			cat(789, {	-- Shoulder Inscription
+				r(86403),	-- Felfire Inscription
+				r(86402),	-- Inscription of the Earth Prince
+				r(86401),	-- Lionsmane Inscription
+				r(86375),	-- Swiftsteel Inscription
 			}),
-			r(86653, {	-- Silver Inlaid Staff
-				["timeline"] = { ADDED_5_0_4 },
+			cat(790, {	-- Weapons & Off-Hands
+				r(86643),	-- Battle Tome
+				r(86616),	-- Book of Blood
+				r(86642),	-- Divine Companion
+				r(86641),	-- Dungeoneering Guide
+				r(86648, {	-- Key to the Planes
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				r(86640),	-- Lord Rottington's Pressed Wisp Book
+				r(86652, {	-- Rosethorn Staff
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				r(86649, {	-- Runed Staff
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				r(86653, {	-- Silver Inlaid Staff
+					["timeline"] = { ADDED_5_0_4 },
+				}),
 			}),
-		}),
-		cat(791, {	-- Quest
-			r(89244, {	-- Forged Documents
-				["races"] = ALLIANCE_ONLY,
+			cat(791, {	-- Quest
+				r(89244, {	-- Forged Documents
+					["races"] = ALLIANCE_ONLY,
+				}),
+				r(86654, {	-- Forged Documents
+					["races"] = HORDE_ONLY,
+				}),
 			}),
-			r(86654, {	-- Forged Documents
-				["races"] = HORDE_ONLY,
+			-- #if ANYCLASSIC
+			n(RELICS, {
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216316, {	-- Bloodthirsty Charm of Triumph
+					["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+				})),
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216290, {	-- Bloodthirsty Eyeball of Dominance
+					["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+				})),
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216317, {	-- Bloodthirsty Jawbone of Conquest
+					["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+				})),
 			}),
-		}),
-		-- #if ANYCLASSIC
-		n(RELICS, {
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216316, {	-- Bloodthirsty Charm of Triumph
-				["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-			})),
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216290, {	-- Bloodthirsty Eyeball of Dominance
-				["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-			})),
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216317, {	-- Bloodthirsty Jawbone of Conquest
-				["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-			})),
-		}),
-		-- #endif
-		-- #if BEFORE MOP
-		n(RELICS, {
-			r(86647, {	-- Etched Horn
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			-- #endif
+			-- #if BEFORE MOP
+			n(RELICS, {
+				r(86647, {	-- Etched Horn
+					["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				}),
+				r(86648, {	-- Manual to the Planes / Key to the Planes [5.0.4+]
+					["timeline"] = { ADDED_4_0_3 },
+				}),
+				r(86650, {	-- Notched Jawbone
+					["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				}),
+				r(86649, {	-- Runed Dragonscale / Runed Staff [5.0.4+]
+					["timeline"] = { ADDED_4_0_3 },
+				}),
+				r(86653, {	-- Silver Inlaid Leaf / Silver Inlaid Staff [5.0.4+]
+					["timeline"] = { ADDED_4_0_3 },
+				}),
+				r(86652, {	-- Tattooed Eyeball / Rosethorn Staff [5.0.4+]
+					["timeline"] = { ADDED_4_0_3 },
+				}),
+				r(99547, {	-- Vicious Charm of Triumph
+					["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				}),
+				r(99548, {	-- Vicious Eyeball of Dominance
+					["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				}),
+				r(99549, {	-- Vicious Jawbone of Conquest
+					["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				}),
 			}),
-			r(86648, {	-- Manual to the Planes / Key to the Planes [5.0.4+]
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			r(86650, {	-- Notched Jawbone
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			r(86649, {	-- Runed Dragonscale / Runed Staff [5.0.4+]
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			r(86653, {	-- Silver Inlaid Leaf / Silver Inlaid Staff [5.0.4+]
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			r(86652, {	-- Tattooed Eyeball / Rosethorn Staff [5.0.4+]
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			r(99547, {	-- Vicious Charm of Triumph
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			r(99548, {	-- Vicious Eyeball of Dominance
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			r(99549, {	-- Vicious Jawbone of Conquest
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-		}),
-		-- #endif
-		cat(792, {	-- Toys
-			r(86646),	-- Origami Beetle*
-			r(86645),	-- Origami Rock*
-			r(86644),	-- Origami Slime*
+			-- #endif
 		}),
 	}))),
 	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
-		cat(779, {	-- Inks
-			r(111645),	-- Ink of Dreams
-			r(111646),	-- Starlight Ink
-		}),
-		cat(105, {	-- Clear Mind
-			r(112883, {	-- Tome of the Clear Mind
-				["timeline"] = { ADDED_5_0_4, DELETED_6_0_2 },
+		filter(RECIPES, {
+			cat(779, {	-- Inks
+				r(111645),	-- Ink of Dreams
+				r(111646),	-- Starlight Ink
 			}),
-		}),
-		cat(778, {	-- Staves & Off-Hands
-			r(111918),	-- Inscribed Crane Staff
-			r(111909),	-- Inscribed Jade Fan
-			r(111910),	-- Inscribed Red Fan
-			r(111919),	-- Inscribed Serpent Staff
-			r(111921),	-- Inscribed Tiger Staff
-			r(111920),	-- Ghost Iron Staff
-			r(111908),	-- Inscribed Fan
-			r(111917),	-- Rain Poppy Staff
-		}),
-		cat(784, {	-- Trinkets
-			r(146638),	-- Crafted Malevolent Gladiator's Medallion of Tenacity
-		}),
-		cat(780, {	-- Cards
-			r(111830),	-- Darkmoon Card of Mists
-			r(130407, {	-- Mystery of the Mists
-				["timeline"] = { CREATED_5_0_4 },
+			cat(105, {	-- Clear Mind
+				r(112883, {	-- Tome of the Clear Mind
+					["timeline"] = { ADDED_5_0_4, DELETED_6_0_2 },
+				}),
 			}),
-		}),
-		cat(781, {	-- Scrolls & Research
-			r(112045),	-- Runescroll of Fortitude III
-			r(112996),	-- Scroll of Wisdom
-			r(165467, {["timeline"]={ADDED_6_0_2}}),	-- Research: Ink of Dreams*
-		}),
-		cat(119, {	-- Shoulder Inscription
-			r(126995),	-- Greater Crane Wing Inscription
-			r(126994),	-- Greater Ox Horn Inscription
-			r(126996),	-- Greater Tiger Claw Inscription
-			r(126997),	-- Greater Tiger Fang Inscription
-			r(127023),	-- Secret Crane Wing Inscription
-			r(127024),	-- Secret Ox Horn Inscription
-			r(127021),	-- Secret Tiger Claw Inscription
-			r(127020),	-- Secret Tiger Fang Inscription
-			r(127018),	-- Crane Wing Inscription
-			r(127019),	-- Ox Horn Inscription
-			r(127017),	-- Tiger Claw Inscription
-			r(127016),	-- Tiger Fang Inscription
-		}),
-		cat(782, {	-- Quest
-			r(127378),	-- Commissioned Painting
-			r(127391),	-- Engraved Jade Disk
-			r(127475),	-- Incarnadine Ink
-			r(128922),	-- Portrait of Madam Goya
-			r(127481),	-- Inscribed Monument
-		}),
-		cat(783, {	-- Toys & Pets
-			r(126988),	-- Origami Crane
-			r(126989),	-- Origami Frog
-			r(127009),	-- Chi-ji Kite
-			r(127007),	-- Yu'lon Kite
+			cat(778, {	-- Staves & Off-Hands
+				r(111918),	-- Inscribed Crane Staff
+				r(111909),	-- Inscribed Jade Fan
+				r(111910),	-- Inscribed Red Fan
+				r(111919),	-- Inscribed Serpent Staff
+				r(111921),	-- Inscribed Tiger Staff
+				r(111920),	-- Ghost Iron Staff
+				r(111908),	-- Inscribed Fan
+				r(111917),	-- Rain Poppy Staff
+			}),
+			cat(780, {	-- Cards
+				r(130407, {	-- Mystery of the Mists
+					["timeline"] = { CREATED_5_0_4 },
+				}),
+			}),
+			cat(781, {	-- Scrolls & Research
+				r(112045),	-- Runescroll of Fortitude III
+				r(112996),	-- Scroll of Wisdom
+			}),
+			cat(119, {	-- Shoulder Inscription
+				r(126995),	-- Greater Crane Wing Inscription
+				r(126994),	-- Greater Ox Horn Inscription
+				r(126996),	-- Greater Tiger Claw Inscription
+				r(126997),	-- Greater Tiger Fang Inscription
+				r(127023),	-- Secret Crane Wing Inscription
+				r(127024),	-- Secret Ox Horn Inscription
+				r(127021),	-- Secret Tiger Claw Inscription
+				r(127020),	-- Secret Tiger Fang Inscription
+				r(127018),	-- Crane Wing Inscription
+				r(127019),	-- Ox Horn Inscription
+				r(127017),	-- Tiger Claw Inscription
+				r(127016),	-- Tiger Fang Inscription
+			}),
+			cat(783, {	-- Toys & Pets
+				r(126988),	-- Origami Crane
+				r(126989),	-- Origami Frog
+				r(127009),	-- Chi-ji Kite
+				r(127007),	-- Yu'lon Kite
+			}),
 		}),
 	}))),
 	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
-		cat(403, {	-- Merchant Orders
-			r(176513, {	-- Draenor Merchant Order
-				["u"] = TRAINING,	-- Profession Training Recipe
+		filter(RECIPES, {
+			cat(403, {	-- Merchant Orders
+				r(176513, {	-- Draenor Merchant Order
+					["u"] = TRAINING,	-- Profession Training Recipe
+				}),
 			}),
-		}),
-		cat(414, {	-- Reagents and Research
-			r(177045),	-- Secrets of Draenor Inscription
-			r(182125),	-- The Spirit of War
-			r(178240, {	-- War Paints
-				["u"] = TRAINING,	-- Beleive this is tied to the Draenic Mortar
+			cat(414, {	-- Reagents and Research
+				r(178240, {	-- War Paints
+					["u"] = TRAINING,	-- Beleive this is tied to the Draenic Mortar
+				}),
 			}),
-			r(169081),	-- War Paints
-			r(167950, {	-- Research: Warbinder's Ink
-				i(113992),	-- Scribe's Research Notes
+			cat(420, {	-- Tools
+				r(178550, {	-- Draenic Mortar
+					["u"] = TRAINING,	-- Not actually a temp training recipe but is only available to non-scribes who build the Scribe's Quarters so don't want this showing for scribes
+				}),
 			}),
-			r(178497),	-- Warbinder's Ink
-		}),
-		cat(420, {	-- Tools
-			r(227562, {["timeline"]={ADDED_7_0_3}}),	-- Codex of the Clear Mind*
-			r(227561, {["timeline"]={ADDED_7_0_3}}),	-- Tome of the Clear Mind*
-			r(178550, {	-- Draenic Mortar
-				["u"] = TRAINING,	-- Not actually a temp training recipe but is only available to non-scribes who build the Scribe's Quarters so don't want this showing for scribes
-			}),
-		}),
-		cat(440, {	-- Mass Milling
-			r(190382),	-- Mass Mill Fireweed
-			r(190381),	-- Mass Mill Frostweed
-			r(190383),	-- Mass Mill Gorgrond Flytrap
-			r(190385),	-- Mass Mill Nagrand Arrowbloom
-			r(190384),	-- Mass Mill Starflower
-			r(190386),	-- Mass Mill Talador Orchid
-		}),
-		cat(361, {	-- Item Enhancers
-			r(187519, {	-- Savage Ensorcelled Tarot
-				["timeline"] = { REMOVED_9_0_1 },
-			}),
-			r(187518, {	-- Savage Weapon Crystal
-				["timeline"] = { REMOVED_9_0_1 },
-			}),
-			r(187495, {	-- Mighty Ensorcelled Tarot
-				["timeline"] = { REMOVED_9_0_1 },
-			}),
-			r(187494, {	-- Mighty Weapon Crystal
-				["timeline"] = { REMOVED_9_0_1 },
-			}),
-			r(178248, {	-- Ensorcelled Tarot
-				["timeline"] = { REMOVED_9_0_1 },
-			}),
-			r(166366, {	-- Weapon Crystal
-				["timeline"] = { REMOVED_9_0_1 },
-			}),
-			r(397866, {	-- Impressive Weapon Crystal
-				["timeline"] = { ADDED_10_0_5 },
-			}),
-			r(397867, {	-- Remarkable Weapon Crystal
-				["timeline"] = { ADDED_10_0_5 },
-			}),
-			r(166432),	-- Volatile Crystal
-		}),
-		cat(412, {	-- Card
-			r(163294),	-- Darkmoon Card of Draenor
-			r(166669),	-- Card of Omens
-			r(175392),	-- Savage Tarot
-			r(175390),	-- Laughing Tarot
-			r(175389),	-- Ocean Tarot
-		}),
-		cat(411, {	-- Staves & Wands
-			r(166356),	-- Crystalfire Spellstaff
-			r(166359),	-- Etched-Blade Warstaff
-			r(165804),	-- Warmaster's Firestick
-		}),
-		cat(413, {	-- Off-hand
-			r(166363),	-- Shadowtome
 		}),
 	}))),
 	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
-		r(195115, {	-- Inscription (Legion)
-			["timeline"]={ ADDED_7_0_3, DELETED_8_0_1 },
-			["collectible"] = false,	-- the profession itself is not a recipe
-		}),
-		r(264506, {["timeline"]={ADDED_8_0_1}}),	-- Legion Inscription
-		cat(454, {	-- Books & Scrolls
-			r(226248),	-- Codex of the Tranquil Mind [Rank 1]
-			r(227239),	-- Codex of the Tranquil Mind [Rank 2]
-			r(227240),	-- Codex of the Tranquil Mind [Rank 3]
-			r(192802),	-- Scroll of Forgotten Knowledge
-			r(210653),	-- Songs of Battle
-			r(210654),	-- Songs of Peace
-			r(223941, {	-- Songs of the Alliance
+		n(QUESTS, {
+			q(39847, {	-- Sign This
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["groups"] = {
+					i(129047, {	-- Unsigned Contract (PQI!)
+						i(129043),	-- Signed Contract (QI!)
+					}),
+					r(195115, {	-- Inscription (Legion) (RECIPE!)
+						["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+						["collectible"] = false,
+					}),
+					applyclassicphase(BFA_PHASE_ONE, r(264506, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Inscription (RECIPE!)
+				},
+			}),
+			q(39931, {	-- Smashing Herbs
+				["sourceQuests"] = { 39847 },	-- Sign This
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39932, {	-- Fish Ink
+				["sourceQuests"] = { 39931 },	-- Smashing Herbs
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39933, {	-- The Card Shark
+				["sourceQuests"] = { 39932 },	-- Fish Ink
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["groups"] = {
+					r(192854),	-- Prophecy Tarot [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40056, {	-- Our New Allies (DH)
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["classes"] = { DEMONHUNTER },
+			}),
+			q(39934, {	-- Our New Allies (non-DH)
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+			}),
+			q(40057, {	-- The Price of Power (DH)
+				["sourceQuests"] = { 40056 },	-- Our New Allies (DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = { DEMONHUNTER },
+				["groups"] = {
+					r(192849),	-- Glyph of Fel Touched Souls (RECIPE!)
+				},
+			}),
+			q(39935, {	-- The Price of Power (non-DH)
+				["sourceQuests"] = { 39934 },	-- Our New Allies (non-DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["groups"] = {
+					r(192849),	-- Glyph of Fel Touched Souls (RECIPE!)
+				},
+			}),
+			q(40058, {	-- Defense Symbology (DH)
+				["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = { DEMONHUNTER },
+			}),
+			q(39936, {	-- Inscription of the Body (non-DH)
+				["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+			}),
+			q(40059, {	-- Opposites Repel (DH)
+				["sourceQuests"] = { 40058 },	-- Defense Symbology (DH)
+				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["coord"] = { 54.0, 15.4, AZSUNA },
+				["classes"] = { DEMONHUNTER },
+				["groups"] = {
+					i(129105),	-- Ley Dust
+				},
+			}),
+			q(39937, {	-- Opposites Repel (non-DH)
+				["sourceQuests"] = { 39936 },	-- Inscription of the Body (non-DH)
+				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["coord"] = { 54.0, 15.4, AZSUNA },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["groups"] = {
+					i(129105),	-- Ley Dust
+				},
+			}),
+			q(40060, {	-- Containing the Demon Within (DH)
+				["sourceQuests"] = { 40059 },	-- Opposites Repel (DH)
+				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["coord"] = { 54.0, 15.4, AZSUNA },
+				["classes"] = { DEMONHUNTER },
+				["groups"] = {
+					r(192851),	-- Glyph of Fallow Wings (RECIPE!)
+				},
+			}),
+			q(39938, {	-- Containing the Demon Within (non-DH)
+				["sourceQuests"] = { 39937 },	-- Opposites Repel (non-DH)
+				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["coord"] = { 54.0, 15.4, AZSUNA },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["groups"] = {
+					r(192851),	-- Glyph of Fallow Wings (RECIPE!)
+				},
+			}),
+			q(40061, {	-- To Know Your Enemy (DH)
+				["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = { DEMONHUNTER },
+			}),
+			q(39939, {	-- Scribal Knowledge (non-DH)
+				["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+			}),
+			q(39940, {	-- Runes of Power
+				["sourceQuests"] = {
+					40061,	-- To Know Your Enemy (DH)
+					39939,	-- Scribal Knowledge (non-DH)
+				},
+				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["groups"] = {
+					r(192850),	-- Glyph of Crackling Flames (RECIPE!)
+				},
+			}),
+			q(40063, {	-- Control is Key (DH)
+				["sourceQuests"] = { 40061 },	-- To Know Your Enemy (DH)
+				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+				["coord"] = { 65.0, 25.8, AZSUNA },
+				["classes"] = { DEMONHUNTER },
+			}),
+			q(39941, {	-- Control is Key (non-DH)
+				["sourceQuests"] = { 39939 },	-- Scribal Knowledge (non-DH)
+				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+			}),
+			q(39943, {	-- The Burdens of Hunting
+				["sourceQuests"] = {
+					40060,	-- Containing the Demon Within (DH)
+					39938,	-- Containing the Demon Within (non-DH)
+					39940,	-- Runes of Power
+					40063,	-- Control is Key (DH)
+					39941,	-- Control is Key (non-DH)
+				},
+				["qgs"] = {
+					97734,	-- Zaria Shadowheart
+					98026,	-- Baric Stormrunner
+				},
+				["coords"] = {
+					{ 54.0, 15.4, AZSUNA },
+					{ 43.2, 43.2, AZSUNA },
+				},
+				["groups"] = {
+					r(192852),	-- Glyph of Tattered Wings (RECIPE!)
+				},
+			}),
+			q(39944, {	-- Mysterious Messages
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39945, {	-- Runes Within the Ruins
+				["sourceQuests"] = { 39944 },	-- Mysterious Messages
+				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["coord"] = { 69.2, 40.6, STORMHEIM },
+				["groups"] = {
+					i(129164),	-- Ancient Vrykul Rune Tablet (QI!)
+				},
+			}),
+			q(39946, {	-- Right Tool for the Job
+				["sourceQuests"] = { 39944 },	-- Mysterious Messages
+				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["coord"] = { 69.2, 40.6, STORMHEIM },
+			}),
+			q(39947, {	-- Not So Complex?
+				["sourceQuests"] = {
+					39945,	-- Runes Within the Ruins
+					39946,	-- Right Tool for the Job
+				},
+				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["coord"] = { 69.2, 40.6, STORMHEIM },
+			}),
+			q(40052, {	-- Ancient Vrykul Mastered
+				["sourceQuests"] = { 39947 },	-- Not So Complex?
+				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["coord"] = { 69.2, 40.6, STORMHEIM },
+				["groups"] = {
+					r(192802),	-- Scroll of Forgotten Knowledge (RECIPE!)
+				},
+			}),
+			q(39948, {	-- The Ink Flows
+				["sourceQuests"] = { 40052 },	-- Ancient Vrykul Mastered
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39949, {	-- Once a Scribe Like You
+				["sourceQuests"] = { 39948 },	-- The Ink Flows
+				["provider"] = { "n", 97359 },	-- Raethan
+				["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
+			}),
+			q(39950, {	-- An Odd Trinket
+				["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
+				["provider"] = { "n", 97359 },	-- Raethan
+				["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
+				["groups"] = {
+					r(192855),	-- Prophecy Tarot [Rank 2] (RECIPE!)
+				},
+			}),
+			q(39954, {	-- Mass Milling Techniques
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["groups"] = {
+					r(210116),	-- Mass Mill Yseralline Seeds (RECIPE!)
+				},
+			}),
+			q(39961, {	-- An Embarrassing Revelation
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "o", 244651 },	-- Steamy Romance Novel
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39955, {	-- The Plot Thickens [A]
+				["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
-			r(223940, {	-- Songs of the Horde
+			q(39959, {	-- The Plot Thickens [H]
+				["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
-			r(210656),	-- Songs of the Legion
-			r(192804),	-- Steamy Romance Novel Kit
-			r(227043),	-- Tome of the Tranquil Mind
-			r(222408),	-- Unwritten Legend
-		}),
-		cat(451, {	-- Cards
-			r(192854),	-- Prophecy Tarot [Rank 1]
-			r(192855),	-- Prophecy Tarot [Rank 2]
-			applyevent(EVENTS.DARKMOON_FAIRE, r(192856)),	-- Prophecy Tarot [Rank 3]
-			r(191659),	-- Darkmoon Card of the Legion [Rank 1]
-			applyevent(EVENTS.DARKMOON_FAIRE, r(192859)),	-- Darkmoon Card of the Legion [Rank 2]
-			applyevent(EVENTS.DARKMOON_FAIRE, r(192890)),	-- Darkmoon Card of the Legion [Rank 3]
-		}),
-		cat(492, {	-- Mass Milling
-			r(209658),	-- Mass Mill Aethril
-			r(247861, {["timeline"]={ADDED_7_3_0}}),	-- Mass Mill Astral Glory
-			r(209659),	-- Mass Mill Dreamleaf
-			r(209664),	-- Mass Mill Felwort
-			r(209661),	-- Mass Mill Fjarnskaggl
-			r(209660),	-- Mass Mill Foxflower
-			r(209662),	-- Mass Mill Starlight Rose
-			r(210116),	-- Mass Mill Yseralline Seeds
-		}),
-		cat(491, {	-- Relics
-			r(209510),	-- Aqual Mark
-			r(209511),	-- Straszan Mark
-		}),
-		cat(453, {	-- Vantus Runes
-			r(247614, {["timeline"]={ADDED_7_3_0}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 1]
-			r(247615, {["timeline"]={ADDED_7_3_0}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 2]
-			r(247616, {["timeline"]={ADDED_7_3_0}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 3]
-			r(192814),	-- Vantus Rune: Cenarius [Rank 1]
-			r(192866),	-- Vantus Rune: Cenarius [Rank 2]
-			r(192897),	-- Vantus Rune: Cenarius [Rank 3]
-			r(192816, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 1]
-			r(192868, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 2]
-			r(192899, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 3]
-			r(192811),	-- Vantus Rune: Dragons of Nightmare [Rank 1]
-			r(192863),	-- Vantus Rune: Dragons of Nightmare [Rank 2]
-			r(192894),	-- Vantus Rune: Dragons of Nightmare [Rank 3]
-			r(192813),	-- Vantus Rune: Elerethe Renferal [Rank 1]
-			r(192865),	-- Vantus Rune: Elerethe Renferal [Rank 2]
-			r(192896),	-- Vantus Rune: Elerethe Renferal [Rank 3]
-			r(192823, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 1]
-			r(192875, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 2]
-			r(192906, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 3]
-			r(229178, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Guarm [Rank 1]
-			r(229181, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Guarm [Rank 2]
-			r(229184, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Guarm [Rank 3]
-			r(192824, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Gul'dan [Rank 1]
-			r(192876, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Gul'dan [Rank 2]
-			r(192907, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Gul'dan [Rank 3]
-			r(229179, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Helya [Rank 1]
-			r(229182, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Helya [Rank 2]
-			r(229185, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Helya [Rank 3]
-			r(192820, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 1]
-			r(192872, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 2]
-			r(192903, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 3]
-			r(192810),	-- Vantus Rune: Il'gynoth, The Heart of Corruption [Rank 1]
-			r(192862),	-- Vantus Rune: Il'gynoth, The Heart of Corruption [Rank 2]
-			r(192893),	-- Vantus Rune: Il'gynoth, The Heart of Corruption [Rank 3]
-			r(192821, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Krosus [Rank 1]
-			r(192873, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Krosus [Rank 2]
-			r(192904, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Krosus [Rank 3]
-			r(192809),	-- Vantus Rune: Nythendra [Rank 1]
-			r(192861),	-- Vantus Rune: Nythendra [Rank 2]
-			r(192892),	-- Vantus Rune: Nythendra [Rank 3]
-			r(229177, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Odyn [Rank 1]
-			r(229180, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Odyn [Rank 2]
-			r(229183, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Odyn [Rank 3]
-			r(192815, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Skorpyron [Rank 1]
-			r(192867, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Skorpyron [Rank 2]
-			r(192898, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Skorpyron [Rank 3]
-			r(192818, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Spellblade Aluriel [Rank 1]
-			r(192870, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Spellblade Aluriel [Rank 2]
-			r(192901, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Spellblade Aluriel [Rank 3]
-			r(192822, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Star Augur Etraeus [Rank 1]
-			r(192874, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Star Augur Etraeus [Rank 2]
-			r(192905, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Star Augur Etraeus
-			r(192819, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Tichondrius [Rank 1]
-			r(192871, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Tichondrius [Rank 2]
-			r(192902, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Tichondrius [Rank 3]
-			r(238577, {["timeline"]={ADDED_7_2_5}}),	-- Vantus Rune: Tomb of Sargeras [Rank 1]
-			r(238578, {["timeline"]={ADDED_7_2_5}}),	-- Vantus Rune: Tomb of Sargeras [Rank 2]
-			r(238579, {["timeline"]={ADDED_7_2_5}}),	-- Vantus Rune: Tomb of Sargeras [Rank 3]
-			r(192817, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Trilliax [Rank 1]
-			r(192869, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Trilliax [Rank 2]
-			r(192900, {["timeline"]={ADDED_7_1_0}}),	-- Vantus Rune: Trilliax [Rank 3]
-			r(192808),	-- Vantus Rune: Ursoc [Rank 1]
-			r(192860),	-- Vantus Rune: Ursoc [Rank 2]
-			r(192891),	-- Vantus Rune: Ursoc [Rank 3]
-			r(192812),	-- Vantus Rune: Xavius [Rank 1]
-			r(192864),	-- Vantus Rune: Xavius [Rank 2]
-			r(192895),	-- Vantus Rune: Xavius [Rank 3]
+			q(39956, {	-- The Legacy Passed On [A]
+				["sourceQuests"] = { 39955 },	-- The Plot Thickens [A]
+				["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
+				["coord"] = { 77.2, 10.4, IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					r(192804),	-- Steamy Romance Novel Kit (RECIPE!)
+				},
+			}),
+			q(39960, {	-- The Legacy Passed On [H]
+				["sourceQuests"] = { 39959 },	-- The Plot Thickens [H]
+				["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
+				["coord"] = { 77.8, 38.8, UNDERCITY },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					r(192804),	-- Steamy Romance Novel Kit (RECIPE!)
+				},
+			}),
+			q(39953, {	-- Halls of Valor: Vision of Valor
+				["sourceQuests"] = {
+					40052,	-- Ancient Vrykul Mastered
+					39950,	-- An Odd Trinket
+					39943,	-- The Burdens of Hunting
+				},
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["maps"] = { 703, 704, 705 },	-- Halls of Valor
+			}),
+			q(39957, {	-- Demon Ink
+				["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["cost"] = { { "i", 124124, 1 } },	-- 1x Blood of Sargeras
+				["groups"] = {
+					i(129204),	-- Vial of Felsoul Blood (RECIPE!)
+					r(191659),	-- Darkmoon Card of the Legion [Rank 1] (RECIPE!)
+				},
+			}),
+			q(39942, {	-- Aethrem Crystal
+				["description"] = "There is a chance of getting this quest when milling Aethril.",
+				["provider"] = { "i", 136909 },	-- Aethrem Crystal
+				["groups"] = {
+					r(209658),	-- Mass Mill Aethril (RECIPE!)
+				},
+			}),
+			q(40062, {	-- Bulging Nightmare Pod
+				["description"] = "There is a chance of getting this quest when milling Dreamleaf.",
+				["provider"] = { "i", 136912 },	-- Bulging Nightmare Pod
+				["groups"] = {
+					r(209659),	-- Mass Mill Dreamleaf (RECIPE!)
+				},
+			}),
+			q(40065, {	-- Fjarnsk
+				["description"] = "There is a chance of getting this quest when milling Fjarnskaggl.",
+				["provider"] = { "i", 136916 },	-- Fjarnsk
+				["groups"] = {
+					r(209661),	-- Mass Mill Fjarnskaggl (RECIPE!)
+				},
+			}),
+			q(39951, {	-- Roseate Essence
+				["description"] = "There is a chance of getting this quest when milling Starlight Rose.",
+				["provider"] = { "i", 136917 },	-- Roseate Essence
+				["groups"] = {
+					r(209662),	-- Mass Mill Starlight Rose (RECIPE!)
+				},
+			}),
+			q(39952, {	-- Sallow Essence
+				["description"] = "There is a chance of getting this quest when milling Felwort.",
+				["provider"] = { "i", 136918 },	-- Sallow Essence
+				["groups"] = {
+					r(209664),	-- Mass Mill Felwort (RECIPE!)
+				},
+			}),
+			q(40064, {	-- Woody Seed Cluster
+				["description"] = "There is a chance of getting this quest when milling Foxflower.",
+				["provider"] = { "i", 136915 },	-- Woody Seed Cluster
+				["groups"] = {
+					r(209660),	-- Mass Mill Foxflower (RECIPE!)
+				},
+			}),
+			q(43929, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Vantus Mastery
+				["description"] = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
+				["provider"] = { "n", 90417 },	-- Archmage Khadgar
+				["groups"] = {
+					i(137783),	-- Vantus Rune Technique: Gul'dan [Rank 3] (RECIPE!)
+				},
+			})),
 		}),
 	}))),
-	-- #endif
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
-		ach(18725, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Best Stellar
-			i(208421),	-- Compendium of the New Moon (TOY!)
-			crit(60884, {	-- Rituals of the New Moon - Black Wolf
-				["provider"] = { "i", 45853 },	-- Rituals of the New Moon
-			}),
-			crit(60885, {	-- Rituals of the New Moon - White Wolf
-				["provider"] = { "i", 45851 },	-- Rituals of the New Moon
-			}),
-			crit(60886, {	-- Rituals of the New Moon - Red Wolf
-				["provider"] = { "i", 45850 },	-- Rituals of the New Moon
-			}),
-			crit(60887, {	-- Rituals of the New Moon - Gray Wolf
-				["provider"] = { "i", 45852 },	-- Rituals of the New Moon
-			}),
-		})),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-		q(39847, {	-- Sign This
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-			["groups"] = {
-				i(129047, {	-- Unsigned Contract (PQI!)
-					i(129043),	-- Signed Contract (QI!)
-				}),
-				r(195115, {	-- Inscription (Legion) (RECIPE!)
-					["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
-					["collectible"] = false,
-				}),
-				applyclassicphase(BFA_PHASE_ONE, r(264506, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Inscription (RECIPE!)
-			},
-		}),
-		q(39931, {	-- Smashing Herbs
-			["sourceQuests"] = { 39847 },	-- Sign This
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-		}),
-		q(39932, {	-- Fish Ink
-			["sourceQuests"] = { 39931 },	-- Smashing Herbs
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-		}),
-		q(39933, {	-- The Card Shark
-			["sourceQuests"] = { 39932 },	-- Fish Ink
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-			["groups"] = {
-				r(192854),	-- Prophecy Tarot [Rank 1] (RECIPE!)
-			},
-		}),
-		q(40056, {	-- Our New Allies (DH)
-			["sourceQuests"] = { 39933 },	-- The Card Shark
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-			["classes"] = { DEMONHUNTER },
-		}),
-		q(39934, {	-- Our New Allies (non-DH)
-			["sourceQuests"] = { 39933 },	-- The Card Shark
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-		}),
-		q(40057, {	-- The Price of Power (DH)
-			["sourceQuests"] = { 40056 },	-- Our New Allies (DH)
-			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
-			["coord"] = { 43.2, 43.2, AZSUNA },
-			["classes"] = { DEMONHUNTER },
-			["groups"] = {
-				r(192849),	-- Glyph of Fel Touched Souls (RECIPE!)
-			},
-		}),
-		q(39935, {	-- The Price of Power (non-DH)
-			["sourceQuests"] = { 39934 },	-- Our New Allies (non-DH)
-			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
-			["coord"] = { 43.2, 43.2, AZSUNA },
-			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-			["groups"] = {
-				r(192849),	-- Glyph of Fel Touched Souls (RECIPE!)
-			},
-		}),
-		q(40058, {	-- Defense Symbology (DH)
-			["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
-			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
-			["coord"] = { 43.2, 43.2, AZSUNA },
-			["classes"] = { DEMONHUNTER },
-		}),
-		q(39936, {	-- Inscription of the Body (non-DH)
-			["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
-			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
-			["coord"] = { 43.2, 43.2, AZSUNA },
-			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-		}),
-		q(40059, {	-- Opposites Repel (DH)
-			["sourceQuests"] = { 40058 },	-- Defense Symbology (DH)
-			["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
-			["coord"] = { 54.0, 15.4, AZSUNA },
-			["classes"] = { DEMONHUNTER },
-			["groups"] = {
-				i(129105),	-- Ley Dust
-			},
-		}),
-		q(39937, {	-- Opposites Repel (non-DH)
-			["sourceQuests"] = { 39936 },	-- Inscription of the Body (non-DH)
-			["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
-			["coord"] = { 54.0, 15.4, AZSUNA },
-			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-			["groups"] = {
-				i(129105),	-- Ley Dust
-			},
-		}),
-		q(40060, {	-- Containing the Demon Within (DH)
-			["sourceQuests"] = { 40059 },	-- Opposites Repel (DH)
-			["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
-			["coord"] = { 54.0, 15.4, AZSUNA },
-			["classes"] = { DEMONHUNTER },
-			["groups"] = {
-				r(192851),	-- Glyph of Fallow Wings (RECIPE!)
-			},
-		}),
-		q(39938, {	-- Containing the Demon Within (non-DH)
-			["sourceQuests"] = { 39937 },	-- Opposites Repel (non-DH)
-			["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
-			["coord"] = { 54.0, 15.4, AZSUNA },
-			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-			["groups"] = {
-				r(192851),	-- Glyph of Fallow Wings (RECIPE!)
-			},
-		}),
-		q(40061, {	-- To Know Your Enemy (DH)
-			["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
-			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
-			["coord"] = { 43.2, 43.2, AZSUNA },
-			["classes"] = { DEMONHUNTER },
-		}),
-		q(39939, {	-- Scribal Knowledge (non-DH)
-			["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
-			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
-			["coord"] = { 43.2, 43.2, AZSUNA },
-			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-		}),
-		q(39940, {	-- Runes of Power
-			["sourceQuests"] = {
-				40061,	-- To Know Your Enemy (DH)
-				39939,	-- Scribal Knowledge (non-DH)
-			},
-			["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
-			["coord"] = { 43.2, 43.2, AZSUNA },
-			["groups"] = {
-				r(192850),	-- Glyph of Crackling Flames (RECIPE!)
-			},
-		}),
-		q(40063, {	-- Control is Key (DH)
-			["sourceQuests"] = { 40061 },	-- To Know Your Enemy (DH)
-			["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
-			["coord"] = { 65.0, 25.8, AZSUNA },
-			["classes"] = { DEMONHUNTER },
-		}),
-		q(39941, {	-- Control is Key (non-DH)
-			["sourceQuests"] = { 39939 },	-- Scribal Knowledge (non-DH)
-			["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
-			["coord"] = { 43.2, 43.2, AZSUNA },
-			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-		}),
-		q(39943, {	-- The Burdens of Hunting
-			["sourceQuests"] = {
-				40060,	-- Containing the Demon Within (DH)
-				39938,	-- Containing the Demon Within (non-DH)
-				39940,	-- Runes of Power
-				40063,	-- Control is Key (DH)
-				39941,	-- Control is Key (non-DH)
-			},
-			["qgs"] = {
-				97734,	-- Zaria Shadowheart
-				98026,	-- Baric Stormrunner
-			},
-			["coords"] = {
-				{ 54.0, 15.4, AZSUNA },
-				{ 43.2, 43.2, AZSUNA },
-			},
-			["groups"] = {
-				r(192852),	-- Glyph of Tattered Wings (RECIPE!)
-			},
-		}),
-		q(39944, {	-- Mysterious Messages
-			["sourceQuests"] = { 39933 },	-- The Card Shark
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-		}),
-		q(39945, {	-- Runes Within the Ruins
-			["sourceQuests"] = { 39944 },	-- Mysterious Messages
-			["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-			["coord"] = { 69.2, 40.6, STORMHEIM },
-			["groups"] = {
-				i(129164),	-- Ancient Vrykul Rune Tablet (QI!)
-			},
-		}),
-		q(39946, {	-- Right Tool for the Job
-			["sourceQuests"] = { 39944 },	-- Mysterious Messages
-			["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-			["coord"] = { 69.2, 40.6, STORMHEIM },
-		}),
-		q(39947, {	-- Not So Complex?
-			["sourceQuests"] = {
-				39945,	-- Runes Within the Ruins
-				39946,	-- Right Tool for the Job
-			},
-			["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-			["coord"] = { 69.2, 40.6, STORMHEIM },
-		}),
-		q(40052, {	-- Ancient Vrykul Mastered
-			["sourceQuests"] = { 39947 },	-- Not So Complex?
-			["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-			["coord"] = { 69.2, 40.6, STORMHEIM },
-			["groups"] = {
-				r(192802),	-- Scroll of Forgotten Knowledge (RECIPE!)
-			},
-		}),
-		q(39948, {	-- The Ink Flows
-			["sourceQuests"] = { 40052 },	-- Ancient Vrykul Mastered
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-		}),
-		q(39949, {	-- Once a Scribe Like You
-			["sourceQuests"] = { 39948 },	-- The Ink Flows
-			["provider"] = { "n", 97359 },	-- Raethan
-			["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
-		}),
-		q(39950, {	-- An Odd Trinket
-			["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
-			["provider"] = { "n", 97359 },	-- Raethan
-			["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
-			["groups"] = {
-				r(192855),	-- Prophecy Tarot [Rank 2] (RECIPE!)
-			},
-		}),
-		q(39954, {	-- Mass Milling Techniques
-			["sourceQuests"] = { 39933 },	-- The Card Shark
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-			["groups"] = {
-				r(210116),	-- Mass Mill Yseralline Seeds (RECIPE!)
-			},
-		}),
-		q(39961, {	-- An Embarrassing Revelation
-			["sourceQuests"] = { 39933 },	-- The Card Shark
-			["provider"] = { "o", 244651 },	-- Steamy Romance Novel
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-		}),
-		q(39955, {	-- The Plot Thickens [A]
-			["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-			["races"] = ALLIANCE_ONLY,
-			["isBreadcrumb"] = true,
-		}),
-		q(39959, {	-- The Plot Thickens [H]
-			["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-			["races"] = HORDE_ONLY,
-			["isBreadcrumb"] = true,
-		}),
-		q(39956, {	-- The Legacy Passed On [A]
-			["sourceQuests"] = { 39955 },	-- The Plot Thickens [A]
-			["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
-			["coord"] = { 77.2, 10.4, IRONFORGE },
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
-				r(192804),	-- Steamy Romance Novel Kit (RECIPE!)
-			},
-		}),
-		q(39960, {	-- The Legacy Passed On [H]
-			["sourceQuests"] = { 39959 },	-- The Plot Thickens [H]
-			["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
-			["coord"] = { 77.8, 38.8, UNDERCITY },
-			["races"] = HORDE_ONLY,
-			["groups"] = {
-				r(192804),	-- Steamy Romance Novel Kit (RECIPE!)
-			},
-		}),
-		q(39953, {	-- Halls of Valor: Vision of Valor
-			["sourceQuests"] = {
-				40052,	-- Ancient Vrykul Mastered
-				39950,	-- An Odd Trinket
-				39943,	-- The Burdens of Hunting
-			},
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-			["maps"] = { 703, 704, 705 },	-- Halls of Valor
-		}),
-		q(39957, {	-- Demon Ink
-			["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
-			["provider"] = { "n", 92195 },	-- Professor Pallin
-			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-			["cost"] = { { "i", 124124, 1 } },	-- 1x Blood of Sargeras
-			["groups"] = {
-				i(129204),	-- Vial of Felsoul Blood (RECIPE!)
-				r(191659),	-- Darkmoon Card of the Legion [Rank 1] (RECIPE!)
-			},
-		}),
-		q(39942, {	-- Aethrem Crystal
-			["description"] = "There is a chance of getting this quest when milling Aethril.",
-			["provider"] = { "i", 136909 },	-- Aethrem Crystal
-			["groups"] = {
-				r(209658),	-- Mass Mill Aethril (RECIPE!)
-			},
-		}),
-		q(40062, {	-- Bulging Nightmare Pod
-			["description"] = "There is a chance of getting this quest when milling Dreamleaf.",
-			["provider"] = { "i", 136912 },	-- Bulging Nightmare Pod
-			["groups"] = {
-				r(209659),	-- Mass Mill Dreamleaf (RECIPE!)
-			},
-		}),
-		q(40065, {	-- Fjarnsk
-			["description"] = "There is a chance of getting this quest when milling Fjarnskaggl.",
-			["provider"] = { "i", 136916 },	-- Fjarnsk
-			["groups"] = {
-				r(209661),	-- Mass Mill Fjarnskaggl (RECIPE!)
-			},
-		}),
-		q(39951, {	-- Roseate Essence
-			["description"] = "There is a chance of getting this quest when milling Starlight Rose.",
-			["provider"] = { "i", 136917 },	-- Roseate Essence
-			["groups"] = {
-				r(209662),	-- Mass Mill Starlight Rose (RECIPE!)
-			},
-		}),
-		q(39952, {	-- Sallow Essence
-			["description"] = "There is a chance of getting this quest when milling Felwort.",
-			["provider"] = { "i", 136918 },	-- Sallow Essence
-			["groups"] = {
-				r(209664),	-- Mass Mill Felwort (RECIPE!)
-			},
-		}),
-		q(40064, {	-- Woody Seed Cluster
-			["description"] = "There is a chance of getting this quest when milling Foxflower.",
-			["provider"] = { "i", 136915 },	-- Woody Seed Cluster
-			["groups"] = {
-				r(209660),	-- Mass Mill Foxflower (RECIPE!)
-			},
-		}),
-		q(43929, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Vantus Mastery
-			["description"] = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
-			["provider"] = { "n", 90417 },	-- Archmage Khadgar
-			["groups"] = {
-				i(137783),	-- Vantus Rune Technique: Gul'dan [Rank 3] (RECIPE!)
-			},
-		})),
-	})),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18772, {	-- Sanguine Feather Quill of Lana'thel
@@ -5336,7 +5153,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 					49944,	-- Turn to Drust [H]
 				},
 				["provider"] = { "o", 279647 },	-- Tome of Sacrifice
-				["coord"] = { 20.6, 44, DRUSTVAR },
+				["coord"] = { 20.6, 44.0, DRUSTVAR },
 				["groups"] = {
 					r(259665),	-- Blood Contract: Sacrifice
 					i(168046),	-- Fresh Heart (QI!)
@@ -5346,7 +5163,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(49874, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- By the Book
 				["sourceQuests"] = { 49873 },	-- Sacrificial Writes
 				["provider"] = { "n", 131657 },	-- Bloodshed Compendium
-				["coord"] = { 20.7, 44, DRUSTVAR },
+				["coord"] = { 20.7, 44.0, DRUSTVAR },
 				["maps"] = { 1407 },	-- Prison of Ink (Scenario Map)
 				["groups"] = {
 					r(292012),	-- Blood Contract: Bloodshed
@@ -5356,14 +5173,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(49876, {	-- Lines in the Sand [A]
 				["sourceQuests"] = { 49874 },	-- By the Book
 				["provider"] = { "n", 131386 },	-- Kronah
-				["coord"] = { 20.6, 44, DRUSTVAR },
+				["coord"] = { 20.6, 44.0, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49946, {	-- Lines in the Sand [H]
 				["sourceQuests"] = { 49874 },	-- By the Book
 				["provider"] = { "n", 131386 },	-- Kronah
-				["coord"] = { 20.6, 44, DRUSTVAR },
+				["coord"] = { 20.6, 44.0, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
@@ -5388,7 +5205,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 					r(292322),	-- Blood Contract: Oblivion
 				},
 			})),
-			q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	--Penning In Protection
+			q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Penning In Protection
 				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 				["provider"] = { "o", 279646 },	-- Bloodguard Chronicles
 				["coord"] = { 27.6, 52.2, VOLDUN },
@@ -5411,7 +5228,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(49882, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Test of Quills
 				["sourceQuests"] = { 49881 },	-- The Final Verse
 				["provider"] = { "n", 131397 },	-- Miju
-				["coord"] = { 32.6, 86, ZULDAZAR },
+				["coord"] = { 32.6, 86.0, ZULDAZAR },
 				["groups"] = {
 					r(256301),	-- Sanguine Feather Quill of Lana'thel (RECIPE!)
 				},
@@ -5425,6 +5242,38 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 }}
+		},{
+			pn(43531),	-- Air
+			pn(43535),	-- Archiving
+			pn(43525),	-- Azurescale Sigil
+			pn(43522),	-- Bronzescale Sigil
+			pn(34888),	-- Codexes
+			pn(43528),	-- Contracts and Missives
+			pn(43534),	-- Darkmoon Mysteries
+			pn(43527),	-- Draconic Treatises
+			pn(43530),	-- Earth
+			pn(43524),	-- Emberscale Sigil
+			pn(34886),	-- Fauna Runes
+			pn(43533),	-- Fire
+			pn(34831),	-- Flawless Inks
+			pn(43532),	-- Frost
+			pn(34833),	-- Infinite Discovery
+			pn(43521),	-- Jetscale Sigil
+			pn(34834),	-- Perfect Practice
+			pn(34891),	-- Profession Tools
+			pn(34835),	-- Rune Mastery
+			pn(34893),	-- Runebinding
+			pn(34889),	-- Runic Scripture
+			pn(43523),	-- Sagescale Sigil
+			pn(43526),	-- Scale Sigils
+			pn(43529),	-- Shared Knowledge
+			pn(34890),	-- Staves
+			pn(34832),	-- Understanding Flora
+			pn(34887),	-- Vantus Runes
+			pn(34892),	-- Woodcarving
+		})),
 		n(QUESTS, {
 			q(70361, {	-- Dragon Isles Inscription
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
@@ -5447,7 +5296,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(70031, {	-- Artisan's Supply: Chef's Smooth Rolling Pin
 				["provider"] = { "n", 198125 },	-- Isarian Shadowplume
 				["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
-				["cost"] = {{ "i", 191233, 1 }},	-- 1x Chef's Smooth Rolling Pin
+				["cost"] = { { "i", 191233, 1 } },	-- 1x Chef's Smooth Rolling Pin
 				["_drop"] = { "g" },
 			}),
 			q(70254, {	-- Hidden Profession Master Inscription
@@ -5459,7 +5308,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = {{"i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
+				["cost"] = { { "i", 191784, 1 } },	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["groups"] = {
 					i(190456),	-- Artisan's Mettle
@@ -5472,7 +5321,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			["groups"] = {
 				i(198607),	-- Scribe's Glyphs
 			},
-		},{
+		}, {
 			------ Requires 25 Skill ------
 			q(66945, {	-- Icy Ink
 				["description"] = "Requires 25 Skill.",
@@ -5581,7 +5430,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_INSCRIPTION_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 } } }, {
 				r(383533),	-- Azurescale Sigil
 				r(383536),	-- Bronzescale Sigil
 				r(383512),	-- Bundle O' Cards: Dragon Isles
@@ -5629,7 +5478,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			o(380567, {	-- Eight of Storms
-				--Interact with objects 380555, 380561, 380562, 380563, 380564, 380564, 380566, 380567
+				-- Interact with objects 380555, 380561, 380562, 380563, 380564, 380564, 380566, 380567
 				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight) to collect the treasure.",
 				["questID"] = 70287,
 				["coord"] = { 56.1, 40.9, THALDRASZUS },
@@ -5712,9 +5561,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_INSCRIPTION_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.INSCRIPTION),
 			},
-		},{
+		}, {
 			i(198607),	-- Scribe's Glyphs
 			q(74105, {	-- DF Inscription Order: Inscription
 				["name"] = "DF Inscription Order: Inscription",
@@ -5755,21 +5604,50 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228776),	-- Algari Scribe's Journal
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 }}
 		},{
-			q(84129, {	-- Inscription  Services Requested
+			pn(101557),	-- Alchemist's Mixing Rod
+			pn(101881),	-- Archival Additions
+			pn(101563),	-- Careful Carvings
+			pn(101556),	-- Chef's Rolling Pin
+			pn(101562),	-- Combative Curiosities
+			pn(101874),	-- Contracts
+			pn(101880),	-- Cryptic Collection
+			pn(101876),	-- Darkmoon Sigil: Ascension
+			pn(101879),	-- Darkmoon Sigil: Radiance
+			pn(101878),	-- Darkmoon Sigil: Symbiosis
+			pn(101877),	-- Darkmoon Sigil: Vivacity
+			pn(101593),	-- Detail Oriented
+			pn(101594),	-- Eureka!
+			pn(101626),	-- Improved Ciphers
+			pn(101624),	-- Improved Inks
+			pn(101625),	-- Improved Milling
+			pn(101873),	-- Missives
+			pn(101592),	-- Multitasking
+			pn(101559),	-- Polished Production
+			pn(101595),	-- Pursuit of Knowledge
+			pn(101627),	-- Pursuit of Perfection
+			pn(101875),	-- Runic Research
+			pn(101558),	-- Scribe's Quill
+			pn(101561),	-- Staves
+			pn(101560),	-- Torches
+			pn(101872),	-- Vantus Runes
+		})),
+		n(QUESTS, {
+			q(84129, {	-- Inscription Services Requested
+				["sourceQuests"] = { 84287 },	-- Crafting Orders: Inscription
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228776),	-- Algari Scribe's Journal
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_INSCRIPTION_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 } } }, {
 				r(447868),	-- Algari Treatise on Inscription
 				r(444192),	-- Darkmoon Sigil: Evolve
 				r(444193),	-- Darkmoon Sigil: Radiance
@@ -5846,9 +5724,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_INSCRIPTION_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION),
 			},
-		},{
+		}, {
+			i(228776),	-- Algari Scribe's Journal
+			q(83730, {	-- TWW Inscription Order: Inscription
+				["name"] = "TWW Inscription Order: Inscription",
+				["provider"] = { "i", 222548 },	-- Algari Treatise on Inscription
+			}),
 			q(83264, {	-- TWW Weekly Inscription Knowledgepoint #1
 				["name"] = "TWW Weekly Inscription Treasure #1",
 				["provider"] = { "i", 225226 },	-- Striated Inkstone
@@ -5859,118 +5742,186 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42796, {	-- Inscribing at Midnight
-				["timeline"] = { ADDED_12_0_0 },
+				i(264004),	-- Midnight Scribe's Shop Sign (DECOR!)
+			}),
+			ach(62235),	-- Inscription-on-Demand
+			ach(62243, {	-- Dedicated to the Craft: Inscription
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42796,	-- Inscribing at Midnight
+					62235,	-- Inscription-on-Demand
+				}},
 				["groups"] = {
+					title(745),	-- Thalassian Scribe <Name>
 				},
 			}),
 		}),
-		--[[
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228776),	-- Algari Scribe's Journal
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.INSCRIPTION, 1 }}
 		},{
-			q(84129, {	-- Inscription  Services Requested
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-			}),
+			pn(106279),	-- Added Flair
+			pn(106185),	-- Alchemist's Mixing Rod
+			pn(106351),	-- Blood
+			pn(106192),	-- Blueprints
+			pn(106189),	-- Bows
+			pn(106280),	-- Calm Hands
+			pn(106184),	-- Chef's Rolling Pin
+			pn(106358),	-- Darkmoon Curiosity
+			pn(106349),	-- Darkmoon Dominion: Blood
+			pn(106352),	-- Darkmoon Dominion: Hunt
+			pn(106346),	-- Darkmoon Dominion: Rot
+			pn(106355),	-- Darkmoon Dominion: Void
+			pn(106350),	-- Darkmoon Sigil: Blood
+			pn(106353),	-- Darkmoon Sigil: Hunt
+			pn(106347),	-- Darkmoon Sigil: Rot
+			pn(106356),	-- Darkmoon Sigil: Void
+			pn(106277),	-- Dextrous Diligence
+			pn(106191),	-- Field Research
+			pn(106354),	-- Hunt
+			pn(106278),	-- Keen Eye
+			pn(106188),	-- Lamps and Lanterns
+			pn(106187),	-- Market Research
+			pn(109659),	-- Parchment
+			pn(109652),	-- Perfect Ciphers
+			pn(109657),	-- Perfect Contracts
+			pn(109654),	-- Perfect Inks
+			pn(109653),	-- Perfect Milling
+			pn(109658),	-- Perfect Missives
+			pn(109656),	-- Perfect Vantus Runes
+			pn(109660),	-- Perfected Products
+			pn(109655),	-- Processing
+			pn(106348),	-- Rot
+			pn(106186),	-- Scribe's Quill
+			pn(106190),	-- Staves
+			pn(106357),	-- Void
 		})),
+		n(QUESTS, {
+			q(93693, {	-- Inscription Services Requested
+				["sourceQuests"] = { 93728 },	-- Crafting Orders: Inscription
+				["qgs"] = {
+					243553,	-- Zantasia <Inscription Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 46.9, 51.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
+				["isWeekly"] = true,
+				["groups"] = {
+					i(263457),	-- Thalassian Scribe's Journal
+				},
+			}),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_INSCRIPTION_KNOWLEDGE, 1 }} }, {
-				r(447868),	-- Algari Treatise on Inscription
-				r(444192),	-- Darkmoon Sigil: Evolve
-				r(444193),	-- Darkmoon Sigil: Radiance
-				r(444194),	-- Darkmoon Sigil: Symbiosis
-				r(444195),	-- Darkmoon Sigil: Vivacity
-				r(444205),	-- Silver Tongue's Quill
-				r(444199),	-- Vagabond's Bounding Baton
-				r(444198),	-- Vagabond's Careful Crutch
-				r(444197),	-- Vagabond's Torch
-				r(444224),	-- Transcribe: Evolution
-				r(444227),	-- Transcribe: Radiance
-				r(444226),	-- Transcribe: Symbiosis
-				r(444225),	-- Transcribe: Vivacity
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.MID.INSCRIPTION, 1 } } }, {
+				r(1230060),	-- Aln'hara Cane
+				r(1230061),	-- Aln'hara Lantern
+				r(1230059),	-- Aln'hara Pikestaff
+				r(1230062),	-- Aln'hara Sprigshot
+				r(1230070),	-- Darkmoon Dominion: Blood
+				r(1230072),	-- Darkmoon Dominion: Hunt
+				r(1230071),	-- Darkmoon Dominion: Rot
+				r(1230073),	-- Darkmoon Dominion: Void
+				r(1230074),	-- Darkmoon Sigil: Blood
+				r(1230076),	-- Darkmoon Sigil: Hunt
+				r(1230075),	-- Darkmoon Sigil: Rot
+				r(1230077),	-- Darkmoon Sigil: Void
+				r(1230085),	-- Inscribe: Blood
+				r(1230083),	-- Inscribe: Hunt
+				r(1230081),	-- Inscribe: Rot
+				r(1230079),	-- Inscribe: Void
+				r(1230024),	-- Sin'dorei Alchemist's Mixing Rod
+				r(1230025),	-- Sin'dorei Quill
+				r(1230023),	-- Sin'dorei Rolling Pin
+				r(1230032),	-- Thalassian Treatise on Inscription
+				r(1230084),	-- Transcribe: Blood
+				r(1230082),	-- Transcribe: Hunt
+				r(1230080),	-- Transcribe: Rot
+				r(1230078),	-- Transcribe: Void
 			}),
 		}),
 		n(TREASURES, {
-			o(455982, {	-- Blue Earthen Pigment
-				["coord"] = { 62.4, 58.0, THE_RINGING_DEEPS },
-				["questID"] = 83885,
+			o(525932, {	-- Half-Baked Techniques
+				["coord"] = { 39.3, 45.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89072,
 				["groups"] = {
-					i(226311),	-- Blue Earthen Pigment
+					i(238577),	-- Half-Baked Techniques
 				},
 			}),
-			o(455980, {	-- Calligrapher's Chiseled Marker
-				["coord"] = { 42.8, 49.0, HALLOWFALL },
-				["questID"] = 83887,
+			o(525934, {	-- Intrepid Explorer's Marker
+				["coord"] = { 52.4, 52.6, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89070,
 				["groups"] = {
-					i(226313),	-- Calligrapher's Chiseled Marker
+					i(238575),	-- Intrepid Explorer's Marker
 				},
 			}),
-			o(455985, {	-- Dornogal Scribe's Quill
-				["coord"] = { 57.1, 46.98, DORNOGAL },
-				["questID"] = 83882,
+			o(525936, {	-- Leather-Bound Techniques
+				["coord"] = { 40.5, 49.4, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89068,
 				["groups"] = {
-					i(226308),	-- Dornogal Scribe's Quill
+					i(238573),	-- Leather-Bound Techniques
 				},
 			}),
-			o(455984, {	-- Historian's Dip Pen
-				["coord"] = { 55.9, 60.0, ISLE_OF_DORN },
-				["questID"] = 83883,
+			o(525933, {	-- Leftover Sanguithorn Pigment
+				["coord"] = { 52.7, 50.0, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89071,
 				["groups"] = {
-					i(226309),	-- Historian's Dip Pen
+					i(238576),	-- Leftover Sanguithorn Pigment
 				},
 			}),
-			o(455981, {	-- Informant's Fountain Pen
-				["coord"] = { 43.2, 58.9, HALLOWFALL },
-				["questID"] = 83886,
+			o(525931, {	-- Songwriter's Pen
+				["coord"] = { 47.7, 50.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89073,
 				["groups"] = {
-					i(226312),	-- Informant's Fountain Pen
+					i(238578),	-- Songwriter's Pen
 				},
 			}),
-			o(455979, {	-- Nerubian Texts
-				["coord"] = { 55.8, 43.9, AZJ_KAHET },
-				["questID"] = 83888,
+			o(525930, {	-- Songwriter's Quill
+				["coord"] = { 40.3, 61.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89074,
 				["groups"] = {
-					i(226314),	-- Nerubian Texts
+					i(238579),	-- Songwriter's Quill
 				},
 			}),
-			o(455983, {	-- Runic Scroll
-				["coord"] = { 48.5, 34.3, THE_RINGING_DEEPS },
-				["questID"] = 83884,
+			o(525935, {	-- Spare Ink
+				["coord"] = { 48.3, 75.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89069,
 				["groups"] = {
-					i(226310),	-- Runic Scroll
+					i(238574),	-- Spare Ink
 				},
 			}),
-			o(455978, {	-- Venomancer's Ink Well
-				["coord"] = { 50.1, 30.8, NERUBAR },
-				["questID"] = 83889,
+			o(525937, {	-- Void-Touched Quill
+				["coord"] = { 60.7, 84.3, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89067,
 				["groups"] = {
-					i(226315),	-- Venomancer's Ink Well
+					i(238572),	-- Void-Touched Quill
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_INSCRIPTION_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.INSCRIPTION),
 			},
-		},{
-			q(83264, {	-- TWW Weekly Inscription Knowledgepoint #1
-				["name"] = "TWW Weekly Inscription Treasure #1",
-				["provider"] = { "i", 225226 },	-- Striated Inkstone
+		}, {
+			i(263457),	-- Thalassian Scribe's Journal
+			q(95131, {	-- MID Inscription Order: Inscription
+				["name"] = "MID Inscription Order: Inscription",
+				["provider"] = { "i", 245757 },	-- Thalassian Treatise on Inscription
 			}),
-			q(83262, {	-- TWW Weekly Inscription Knowledgepoint #2
-				["name"] = "TWW Weekly Inscription Treasure #2",
-				["provider"] = { "i", 225227 },	-- Wax-Sealed Records
+			q(93536, {	-- MID Weekly Inscription Knowledgepoint #1
+				["name"] = "MID Weekly Inscription Treasure #1",
+				["provider"] = { "i", 259196 },	-- Brilliant Phoenix Ink
 			}),
-		})),--]]
+			q(93537, {	-- MID Weekly Inscription Knowledgepoint #2
+				["name"] = "MID Weekly Inscription Treasure #2",
+				["provider"] = { "i", 259197 },	-- Loa-Blessed Rune
+			}),
+		})),
 	})),
 })));
 root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION)));

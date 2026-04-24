@@ -3,6 +3,7 @@ ARCHAEOLOGY_ARAKKOA = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Arakkoa",
+		cn = "考古学：鸦人",
 	},
 });
 ARCHAEOLOGY_DEMONIC = createHeader({
@@ -10,6 +11,7 @@ ARCHAEOLOGY_DEMONIC = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Demonic",
+		cn = "考古学：恶魔",
 	},
 });
 ARCHAEOLOGY_DRAENORCLANS = createHeader({
@@ -17,6 +19,7 @@ ARCHAEOLOGY_DRAENORCLANS = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Draenor Clans",
+		cn = "考古学：德拉诺氏族",
 	},
 });
 ARCHAEOLOGY_DRUST = createHeader({
@@ -24,6 +27,7 @@ ARCHAEOLOGY_DRUST = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Drust",
+		cn = "考古学：德鲁斯特",
 	},
 });
 ARCHAEOLOGY_HIGHBORNE = createHeader({
@@ -31,6 +35,7 @@ ARCHAEOLOGY_HIGHBORNE = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Highborne",
+		cn = "考古学：上层精灵",
 	},
 });
 ARCHAEOLOGY_HIGHMOUNTAIN = createHeader({
@@ -38,6 +43,7 @@ ARCHAEOLOGY_HIGHMOUNTAIN = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Highmountain",
+		cn = "考古学：至高岭牛头人",
 	},
 });
 ARCHAEOLOGY_MANTID = createHeader({
@@ -45,6 +51,7 @@ ARCHAEOLOGY_MANTID = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Mantid",
+		cn = "考古学：螳螂妖",
 	},
 });
 ARCHAEOLOGY_MOGU = createHeader({
@@ -52,6 +59,7 @@ ARCHAEOLOGY_MOGU = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Mogu",
+		cn = "考古学：魔古",
 	},
 });
 ARCHAEOLOGY_OGRE = createHeader({
@@ -59,6 +67,7 @@ ARCHAEOLOGY_OGRE = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Ogre",
+		cn = "考古学：食人魔",
 	},
 });
 ARCHAEOLOGY_PANDAREN = createHeader({
@@ -66,6 +75,7 @@ ARCHAEOLOGY_PANDAREN = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Pandaren",
+		cn = "考古学：熊猫人",
 	},
 });
 ARCHAEOLOGY_ZANDALARI = createHeader({
@@ -73,6 +83,7 @@ ARCHAEOLOGY_ZANDALARI = createHeader({
 	icon = 441139,
 	text = {
 		en = "Archaeology: Zandalari",
+		cn = "考古学：赞达拉巨魔",
 	},
 });
 local RESTORED_ARTIFACT = 87399;
@@ -200,13 +211,13 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 			}),
 			ach(4854, {	-- I Had It in My Hand
-				title(148),	-- Assistant Professor <Name> (TITLE!)
+				title(148),	-- Assistant Professor <Name>
 			}),
 			ach(4855, {	-- What was Briefly Yours is Now Mine
-				title(149),	-- Associate Professor <Name> (TITLE!)
+				title(149),	-- Associate Professor <Name>
 			}),
 			ach(4856, {	-- It Belongs in a Museum!
-				title(150),	-- Professor <Name> (TITLE!)
+				title(150),	-- Professor <Name>
 			}),
 			ach(5191, {	-- Tragedy in Three Acts
 				crit(15053, {	-- Delicate Music Box
@@ -851,7 +862,9 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				crit(25711, {	-- Apexis Scroll
 					["provider"] = { "i", 114206 },	-- Apexis Scroll
 				}),
-				--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Glorious Pendant of Rukhmar (DECOR!)
+				i(258740, {	-- Glorious Pendant of Rukhmar (DECOR!)
+					["timeline"] = { ADDED_12_0_0 },
+				}),
 			}),
 			ach(9413, {	-- Strength and Honor
 				crit(25673, {	-- Ancestral Talisman
@@ -1768,7 +1781,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 					q(41193, {	-- Laying to Rest
 						["sourceQuests"] = { 41192 },	-- The Right Path
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
-						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+						["coord"] = { 45.8, 44.6, 750 },	-- Thunder Totem
 						["groups"] = {
 							i(131734),	-- Spirit of Eche'ro (MOUNT!)
 							i(134095),	-- Bone Fragment of Eche'ro (QI!)

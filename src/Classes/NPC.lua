@@ -10,7 +10,6 @@ local setmetatable, rawget, select, tostring, ipairs, pairs, tonumber
 
 -- Module
 local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
-local IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompletedForObject
 local IsRetrievingData = app.Modules.RetrievingData.IsRetrievingData
 
 -- App
@@ -41,6 +40,7 @@ local blacklisted = {
 	[TOOLTIP_UNIT_LEVEL_TYPE:format("??", ELITE)] = true,
 }
 if C_TooltipInfo_GetHyperlink then
+	local issecretvalue = app.WOWAPI.issecretvalue
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		id = tonumber(id)
 		if id and id > 0 then
@@ -49,6 +49,9 @@ if C_TooltipInfo_GetHyperlink then
 				local title = tooltipData.lines[1].leftText
 				if title and #tooltipData.lines > 2 then
 					local leftText = tooltipData.lines[2].leftText
+					-- 12.0.5 began returning secrets for this function
+					if issecretvalue(leftText) then return end
+
 					if leftText and not blacklisted[leftText] then
 						NPCTitlesFromID[id] = leftText
 					end
@@ -118,31 +121,14 @@ do
 		end,
 	},
 	"WithQuest", {
-		CollectibleType = app.IsClassic and function() return "Quests" end
-		-- Retail: NPCs tracked as HQT
-		or function() return "QuestsHidden" end,
+		CACHE = function() return "Quests" end,
+		ImportFrom = "Quest",
+		ImportFields = { "repeatable", "altcollected", "trackable", "saved" },
+		CollectibleType = function() return "QuestsHidden" end,
 		collectible = app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest,
 		locked = app.GlobalVariants.AndLockCriteria.locked,
-		collected = IsQuestFlaggedCompletedForObject,
-		trackable = function(t)
-			-- raw repeatable quests can't really be tracked since they immediately unflag
-			return not rawget(t, "repeatable") and t.repeatable
-		end,
-		saved = function(t)
-			return IsQuestFlaggedCompleted(t.questID)
-		end,
-		repeatable = function(t)
-			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
-		end,
-		altcollected = function(t)
-			if t.altQuests then
-				for i,questID in ipairs(t.altQuests) do
-					if IsQuestFlaggedCompleted(questID) then
-						t.altcollected = questID
-						return questID
-					end
-				end
-			end
+		collected = function(t)
+			return app.TypicalCharacterCollected("Quests", t.questID)
 		end,
 		-- questID is sometimes a faction-based questID for a single NPC (i.e. BFA Warfront Rares), thanks Blizzard
 		questID = function(t)
@@ -188,7 +174,6 @@ do
 end
 
 -- Header Lib
--- TODO: eventually maybe this can actually just be a CreateCustomHeader from parser instead of fake NPC header
 local CreateCustomHeader
 do
 	local HeaderEventIDs = L.HEADER_EVENTS

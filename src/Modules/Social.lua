@@ -278,7 +278,7 @@ SlashCmdList.ALLTHETHINGSYOU = function(cmd)
 			SendResponseMessage(cmd, (server and server ~= "" and (name .. "-" .. server)) or name);
 		else
 			local guid = UnitGUID("target");
-			if guid then
+			if guid and not app.WOWAPI.issecretvalue(guid) then
 				local cmd = "creatureid:" .. select(6, ("-"):split(guid));
 				app.SetSkipLevel(2);
 				local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true,IgnoreCache=true});
@@ -300,7 +300,7 @@ local lastProgressUpdateMessage;
 local function SendProgressAnnounce()
 	-- Send a message to your party members with your current Prime progress
 	local currentCharacter = app.CurrentCharacter and app.CurrentCharacter;
-	local data = currentCharacter.PrimeData or app:GetDataCache();
+	local data = currentCharacter.PrimeData or app:GetDatabaseRoot();
 	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString .. "\t" .. currentCharacter.guid;
 	if lastProgressUpdateMessage ~= msg then
 		lastProgressUpdateMessage = msg;
@@ -319,19 +319,13 @@ local function SendVersionAnnounce()
 	SendGroupMessage(msg)
 	SendGuildMessage(msg)
 end
--- this is rather pointless for Retail since at this event there's been no recalculation of the actual
--- progress of the user's data... we've only refreshed the collection
-if app.IsClassic then
-	app.AddEventHandler("OnRefreshComplete", SendProgressAnnounce)
-else
-	app.AddEventHandler("OnWindowUpdated", function(window, didUpdate)
-		-- only the Prime window updates the 'PrimeData' cache
-		if not window or window.Suffix ~= "Prime" then return end
+app.AddEventHandler("OnWindowUpdated", function(window, suffix)
+	-- only the Prime window updates the 'PrimeData' cache
+	if not window or suffix ~= "Prime" then return end
 
-		-- announce the updated ATT info on the next frame following an update
-		Callback(SendProgressAnnounce)
-	end)
-end
+	-- announce the updated ATT info on the next frame following an update
+	Callback(SendProgressAnnounce)
+end)
 app.AddEventHandler("OnSavedVariablesAvailable", function()
 	local savedCache = AllTheThingsSavedVariables.PlayerProgressCacheByGUID;
 	if savedCache then

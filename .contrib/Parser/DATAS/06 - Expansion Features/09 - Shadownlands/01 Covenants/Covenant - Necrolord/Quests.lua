@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local CONDUIT_GROUP = {
 	-- DK
 	i(182113),	-- Fleeting Wind
@@ -87,7 +88,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 174020 },	-- Captain Prateq
 				["coord"] = { 70.4, 27.7, MALDRAXXUS },
 				["groups"] = {
-					i(183394, {	-- Discarded Grimoire
+					i(183394, {	-- Discarded Grimoire (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
@@ -247,7 +248,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(61252, {	-- Call In a Favor
 				["sourceQuests"] = { 61230 },	-- Outside Influence
-				["provider"] = { "n", 173343 },	-- Ascended Bearer
+				["provider"] = { "n", 174343 },	-- Khaliiq <Vashj's Devoted>
 				["coord"] = { 54.2, 16.2, MALDRAXXUS },
 				["groups"] = {
 					i(181162),	-- Beacon Trigger (QI!)
@@ -272,7 +273,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "o", 358319 },	-- Sorcerer's Note
 				["coord"] = { 46.5, 31.5, 1652 },	-- Vault of Souls
 				["groups"] = {
-					i(183397, {	-- Sorcerer's Blade
+					i(183397, {	-- Sorcerer's Blade (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
@@ -420,7 +421,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["description"] = "Requires Renown 8.",
 				["sourceQuests"] = { 57648, },	-- The Impossible Plan
 				["provider"] = { "n", 161907 },	-- Baroness Draka
-				["coord"] = { 49.7, 50.6, MALDRAXXUS },
+				["coord"] = { 49.6, 50.4, SEAT_OF_THE_PRIMUS },
 			}),
 			q(59910, {	-- Fight and Flight
 				["sourceQuests"] = { 61145 },	-- Take The Fight To Them
@@ -512,7 +513,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 172813 },	-- Ton'hamil
 				["coord"] = { 67.9, 30.6, MALDRAXXUS },
 				["groups"] = {
-					i(183399, {	-- Ritualist's Mantle
+					i(183399, {	-- Ritualist's Mantle (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
@@ -698,7 +699,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 174120 },	-- Moret the Vogue
 				["coord"] = { 71.7, 32.9, MALDRAXXUS },
 				["groups"] = {
-					i(183401, {	-- Amethystine Dye
+					i(183401, {	-- Amethystine Dye (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 					i(183400),	-- Amethystine Powder (QI!)
@@ -985,19 +986,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(62864, {	-- Return Lost Souls (10 soul version)
 				["description"] = "Requires Renown 15.",
+				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
-				-- ["sourceQuests"] = {  },	-- TODO
 			}),
 			q(62865, {	-- Return Lost Souls (15 soul version)
 				["description"] = "Requires Renown 24.",
+				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
-				-- ["sourceQuests"] = {  },	-- TODO
 			}),
 			q(62866, {	-- Return Lost Souls (20 soul version)
 				["description"] = "Requires Renown 32.",
@@ -1045,8 +1046,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 			q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
 			-- Unknown
-			--q(60773),	-- Renown 30/Channeling anima
-			--q(60873),	-- Flying around in necrolord base
+			-- q(60773),	-- Renown 30/Channeling anima
+			-- q(60873),	-- Flying around in necrolord base
 		}),
 	})),
 })));

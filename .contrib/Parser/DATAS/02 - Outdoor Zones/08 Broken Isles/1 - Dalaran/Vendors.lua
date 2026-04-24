@@ -18,7 +18,7 @@ root(ROOTS.Zones, {
 				n(96778, {	-- Aemara <Bowyer>
 					["coord"] = { 60.0, 52.6, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 28989},	--  Aemara <Bowyer> (Dalaran Northrend)
+						{"sub", "common_vendor", 28989},	-- Aemara <Bowyer> (Dalaran Northrend)
 					},
 				}),
 				n(96780, {	-- Aerith Primrose
@@ -84,7 +84,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147294, {	-- Bone-Wrought Coffer of the Damned [Death Knight]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(132459),	-- Perseverance of the Ebon Martyr
@@ -114,7 +114,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147301, {	-- Coffer of Twin Faiths [Priest]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(144244),	-- Kam Xi'raff
@@ -147,7 +147,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147297, {	-- Deepwood Ranger's Quiver [Hunter]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137064),	-- The Shadow Hunter's Voodoo Mask
@@ -176,7 +176,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147295, {	-- Demonslayer's Soul-Sealed Satchel [Demon Hunter]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137061),	-- Raddon's Cascading Eyes
@@ -202,7 +202,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147303, {	-- Giant Elemental's Close Stone Fist [Shaman]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(143732),	-- Uncertain Reminder
@@ -231,7 +231,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147299, {	-- Hand-Carved Jade Puzzle Box [Monk]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137063),	-- Fundamental Observation
@@ -266,7 +266,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147302, {	-- Hollow Skeleton Key [Rogue]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(151815),	-- The Empty Crown
@@ -291,7 +291,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147300, {	-- Light-Bound Relinquary [Paladin]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137065),	-- Justice Gaze
@@ -322,7 +322,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147296, {	-- Living Root-Bound Cache [Druid]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(151801),	-- Behemoth Headdress
@@ -360,7 +360,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147304, {	-- Pocket Keystone to Abandoned World [Warlock]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(132394),	-- Hood of Eternal Disdain
@@ -388,7 +388,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147298, {	-- Spell-Secured Pocket of Infinite Depths [Mage]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(132863),	-- Darckli's Dragonfire Diadem
@@ -416,7 +416,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147305, {	-- Stalwart Champion's War Chest [Warrior]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137088),	-- Ceann-Ar Charger
@@ -465,7 +465,7 @@ root(ROOTS.Zones, {
 				n(96785, {	-- Christi Stockton <Wine Vendor>
 					["coord"] = { 53.8, 32.6, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 32337},	--  Christi Stockton <Wine Vendor> (Dalaran Northrend)
+						{"sub", "common_vendor", 32337},	-- Christi Stockton <Wine Vendor> (Dalaran Northrend)
 					},
 				}),
 				n(96484, {	-- Clockwork Assistant <Jepetto's Companion>
@@ -489,7 +489,7 @@ root(ROOTS.Zones, {
 				n(96779, {	-- Dagna Flintlock <Gunsmith>
 					["coord"] = { 59.8, 52.2, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 29476},	--  Dagna Flintlock <Gunsmith> (Dalaran Northrend)
+						{"sub", "common_vendor", 29476},	-- Dagna Flintlock <Gunsmith> (Dalaran Northrend)
 					},
 				}),
 				n(107326, {	-- Draemus <Exotic Pet Supplier>
@@ -645,11 +645,9 @@ root(ROOTS.Zones, {
 					["timeline"] = { ADDED_11_2_7 },
 					["groups"] = {
 						i(253251, {	-- Blightfire Candle (DECOR!)
-							["sourceQuest"] = 39801,	-- The Splintered Fleet
 							["cost"] = 2000000,	-- 200g
 						}),
 						i(245411, {	-- Dark Ship's Lantern (DECOR!)
-							["sourceQuest"] = 38882,	-- A New Life for Undeath
 							["cost"] = 20000000,	-- 2,000g
 						}),
 					},
@@ -723,7 +721,7 @@ root(ROOTS.Zones, {
 				n(97331, {	-- Icks <Staves>
 					["coord"] = { 49.0, 73.0, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 29494},	--  Shen Kang Cheng <Staves> (Dalaran Northrend)
+						{"sub", "common_vendor", 29494},	-- Shen Kang Cheng <Staves> (Dalaran Northrend)
 					},
 				}),
 				n(93530, {	-- Ildine Sorrowspear <Enchanting Supplies>
@@ -841,7 +839,7 @@ root(ROOTS.Zones, {
 				n(97007, {	-- Kerta the Bold <Mace & Polearm Merchant>
 					["coord"] = { 54.4, 63.0, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 29496},	--  Kerta the Bold <Axe & Polearm Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 29496},	-- Kerta the Bold <Axe & Polearm Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(93524, {	-- Lalla Brightweave <Tailoring Supplies>
@@ -1113,7 +1111,7 @@ root(ROOTS.Zones, {
 				n(96980, {	-- Matilda Brightlink <Mail Armor Merchant>
 					["coord"] = { 51.3, 73.4, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 35500},	--  Matilda Brightlink <Mail Armor Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 35500},	-- Matilda Brightlink <Mail Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92489, {	-- Mei Francis <Exotic Mounts>
@@ -1137,7 +1135,7 @@ root(ROOTS.Zones, {
 				n(96975, {	-- Paldesse <Cloth Armor Merchant>
 					["coord"] = { 37.5, 56.1, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 28995},	--  Paldesse <Cloth Armor Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 28995},	-- Paldesse <Cloth Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92457, {	-- Patricia Egan <Alchemy Supplier>
@@ -1249,7 +1247,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 43.1, 49.1, LEGION_DALARAN },
 					["groups"] = {
 						i(246851, {	-- "Raising Your Eyes" Painting (DECOR!)
-							["sourceQuest"] = 84996,	-- Vereesa's Tale
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = 150000000,	-- 15,000g
 						}),
@@ -1258,7 +1255,7 @@ root(ROOTS.Zones, {
 				n(97332, {	-- Richard Hatstock <Haberdasher>
 					["coord"] = { 37.2, 55.6, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 29702},	--  Chameli Banaphash <Haberdasher> (Dalaran Northrend)
+						{"sub", "common_vendor", 29702},	-- Chameli Banaphash <Haberdasher> (Dalaran Northrend)
 					},
 				}),
 				n(97342, {	-- Salan Sunthread <Clothier>
@@ -1271,7 +1268,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 39.6, 35.1, LEGION_DALARAN },
 					["groups"] = {
 						i(139599, {	-- Empowered Ring of the Kirin Tor
-					--		["cost"] = 2500000000,	-- 250,000g
+							-- ["cost"] = 2500000000,	-- 250,000g
 						}),
 					},
 				}),
@@ -1395,7 +1392,7 @@ root(ROOTS.Zones, {
 				n(97011, {	-- Valaden Silverblade <Sword Merchant>
 					["coord"] = { 54.1, 63.2, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 28991},	--  Valaden Silverblade <Sword Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 28991},	-- Valaden Silverblade <Sword Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(96977, {	-- Valerie Langrom <Leather Armor Merchant>
@@ -1404,7 +1401,7 @@ root(ROOTS.Zones, {
 						{"sub", "common_vendor", 28992},	-- Valerie Langrom <Leather Armor Merchant> (Dalaran Northrend)
 					},
 				}),
-				n(120687, {	-- Violet Shadowmend <Gladiator Quartermaster> -- Horde
+				n(120687, {	-- Violet Shadowmend <Gladiator Quartermaster>	-- Horde
 					["races"] = HORDE_ONLY,
 					["coord"] = { 59.6, 25.2, LEGION_DALARAN },
 					["groups"] = {
@@ -1641,35 +1638,35 @@ root(ROOTS.Zones, {
 				n(97012, {	-- Wanda Chanter <Wands>
 					["coord"] = { 48.6, 73.8, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 28994},	--  Wanda Chanter (Dalaran Northrend)
+						{"sub", "common_vendor", 28994},	-- Wanda Chanter (Dalaran Northrend)
 					},
 				}),
 				n(107109, {	-- Xur'ios <Vaultkeeper of the Void>
 					["coord"] = { 48.8, 13.5, LEGION_DALARAN },
 					["groups"] = {
 						i(141713, {	-- Arcadian War Turtle (MOUNT!)
-							["cost"] = { { "c", 1275, 150 }, },	-- 150x Curious Coin
+							["cost"] = { { "c", 1275, 150 } },	-- 150x Curious Coin
 						}),
 						i(136702, {	-- Formula: Soul Fibril (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(141860, {	-- Ingram's Puzzle
-							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
+							["cost"] = { { "c", 1275, 50 } },	-- 50x Curious Coin
 						}),
 						i(141862, {	-- Mote of Light (TOY!)
-							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
+							["cost"] = { { "c", 1275, 50 } },	-- 50x Curious Coin
 						}),
 						i(136699, {	-- Plans: Flamespike (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(137935, {	-- Pattern: Leather Love Seat (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(136706, {	-- Technique: Straszan Mark (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 					},
 				}),

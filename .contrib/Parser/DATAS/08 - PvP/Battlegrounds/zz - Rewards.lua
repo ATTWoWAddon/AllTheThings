@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	n(REWARDS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 		filter(CONSUMABLES, {
@@ -16,7 +17,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		}),
 		i(135539, {	-- Crate of Battlefield Goods 10-59	-- 9.0+
-			["description"] = "Rewarded for winning a random battleground below max level.",
+			["description"] =
+				-- #if BEFORE 11.2.5
+				"Rewarded for winning a random battleground below max level.",
+				-- #else
+				"Rewarded for winning a random battleground or randomly granted in a loss below max level.",
+				-- #endif
 		--	["lvl"] = { 10, 59 },
 			["groups"] = {
 				i(134643),	-- Auxiliary's Cuffs*

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(241, {	-- Zul'Farrak
 		-- #if BEFORE MOP
@@ -149,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							5497,	-- Jennea Cannon <Mage Trainer>
 						},
 						["coords"] = {
-							{ 27, 8.2, IRONFORGE },
+							{ 27.0, 8.2, IRONFORGE },
 							{ 38.6, 79.4, STORMWIND_CITY },
 						},
 					},
@@ -159,8 +160,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							4568,	-- Anastasia Hartwell <Mage Trainer>
 						},
 						["coords"] = {
-							{ 38.4, 86, ORGRIMMAR },
-							{ 85, 10.2, UNDERCITY },
+							{ 38.4, 86.0, ORGRIMMAR },
+							{ 85.0, 10.2, UNDERCITY },
 						},
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -170,7 +171,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4787, {	-- The Ancient Egg
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 					["qg"] = 8579,	-- Yeh'kinya
-					["coord"] = { 67, 22.4, TANARIS },
+					["coord"] = { 67.0, 22.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["lvl"] = 40,
@@ -324,7 +325,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_THREE, n(222573, {	-- Delirious Ancient
 				["description"] = "Spawns after clearing any 3 bosses (other than Ghaz'rilla) and will wander around the Ghaz'rilla area.",
-				["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
+				["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 				["groups"] = {
 					i(221290),	-- Ace of Dunes
 					i(221271),	-- Ace of Wilds
@@ -533,9 +534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if BEFORE 3.0.8
 				["description"] = "Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",
 				["provider"] = { "o", 141832 },	-- Gong of Zul'Farrak
-				["cost"] = {
-					{ "i", 9240, 1 },	-- Mallet of Zul'Farrak
-				},
+				["cost"] = { { "i", 9240, 1 } },	-- Mallet of Zul'Farrak
 				-- #endif
 				["groups"] = {
 					i(204406, {	-- Ancient Design: Square Holders (RECIPE!)

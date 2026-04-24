@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_3_2_0 } }, {
 	inst(757, {	-- Trial of the Crusader
 		["mapID"] = TRIAL_OF_THE_CRUSADER,
@@ -864,7 +865,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["races"] = HORDE_ONLY,
 					["groups"] = bubbleDownFiltered(
 						{
-							["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+							["cost"] = { { "i", 47242, 1 } },	-- Trophy of the Crusade
 						},FILTERFUNC_itemID,{
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
@@ -1033,7 +1034,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = bubbleDownFiltered(
 						{
-							["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+							["cost"] = { { "i", 47242, 1 } },	-- Trophy of the Crusade
 						},FILTERFUNC_itemID,{
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Wrynn's Battlegear (658)

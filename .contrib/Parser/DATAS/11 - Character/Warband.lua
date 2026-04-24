@@ -9,14 +9,6 @@ WARBAND = createHeader({
 	},
 });
 
-CAMPSITES = createHeader({
-	readable = "Campsites",
-	icon = [[~_.asset("Category_Campsites")]],
-	text = {
-		en = [[~ACCOUNT_LEVEL_SCENE]],
-	},
-});
-
 root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
 		-- TWW
@@ -27,19 +19,19 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 
 		ach(19477),	-- Five Warband Mentors: The War Within
 		-- MID
 		ach(42328, {	-- One Warband Mentor: Midnight
-			["timeline"] = { ADDED_11_2_7 },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 		ach(42329, {	-- Two Warband Mentors: Midnight
-			["timeline"] = { ADDED_11_2_7 },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 		ach(42330, {	-- Three Warband Mentors: Midnight
-			["timeline"] = { ADDED_11_2_7 },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 		ach(42331, {	-- Four Warband Mentors: Midnight
-			["timeline"] = { ADDED_11_2_7 },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 		ach(42332, {	-- Five Warband Mentors: Midnight
-			["timeline"] = { ADDED_11_2_7 },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 		ach(40142, {	-- Learning to Share
 			["timeline"] = { CREATED_11_0_0, ADDED_11_1_0 },

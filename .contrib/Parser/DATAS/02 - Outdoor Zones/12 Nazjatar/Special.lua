@@ -13,14 +13,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 48.8, 85.2, NAZJATAR },
 				{ 75.6, 51.6, NAZJATAR },
 			},
-			["cost"] = {
-				{ "i", 122674, 1 },	-- S.E.L.F.I.E. Camera MkII
-			},
+			["cost"] = { { "i", 122674, 1 } },	-- S.E.L.F.I.E. Camera MkII
 			["cr"] = 65090,	-- Fabious
 		}),
-		o(373439, {	--  Flipper Fish School
+		o(373439, {	-- Flipper Fish School
 			["coord"] = { 72.8, 24.3, NAZJATAR },
-			["cost"] = {{"i",187662,1}},	-- Strange Goop
+			["cost"] = { { "i", 187662, 1 } },	-- Strange Goop
 			["timeline"] = { ADDED_9_2_5 },
 			["groups"] = {
 				i(187922),	-- Flipper Fish
@@ -54,7 +52,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					["isDaily"] = true,
 					["cost"] = { { "i", 167893, 1 } },	-- Prismatic Crystal
 				}),
-				o_repeated(bubbleDown({ ["isWeekly"] = true }, {
+				o_repeated(bubbleDownFiltered({ ["isWeekly"] = true },FILTERFUNC_questID,{
 					o(324414, {	-- Slimy Cocoon (South)
 						["cr"] = 151218,	-- Ravenous Slime
 						["coord"] = { 55.1, 48.8, NAZJATAR },

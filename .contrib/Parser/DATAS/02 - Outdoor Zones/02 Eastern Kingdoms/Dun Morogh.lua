@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(DUN_MOROGH, {
 		["lore"] = "Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes' former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",
@@ -33,14 +34,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				["groups"] = {
 					-- #if AFTER 10.1.7
-					header(HEADERS.Spell, 921, {	-- Pickpocketing
+					pickpocketing({
 						i(2109, {	-- Frostmane Chain Vest
-							["timeline"] = { ADDED_10_1_7 },
 							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
-							--	["cr"] = 706,	-- Frostmane Troll Whelp
-							["coords"] = {
-								{ 32.4, 75.8, DUN_MOROGH },
-							},
+							["coord"] = { 32.4, 75.8, DUN_MOROGH },
+							["timeline"] = { ADDED_10_1_7 },
+							["cr"] = 706,	-- Frostmane Troll Whelp
 						}),
 					}),
 					-- #endif
@@ -897,7 +896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 12738 },	-- Nori Pridedrift
 								{ "i", 10439 },	-- Durnan's Scalding Mornbrew (PQI!)
 							},
-							["coord"] = { 25, 75.8, DUN_MOROGH },
+							["coord"] = { 25.0, 75.8, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 4,
@@ -909,7 +908,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",  786 },	-- Grelin Whitebeard
 								{ "i", 2619 },	-- Grelin's Report (PQI!)
 							},
-							["coord"] = { 25, 75.8, DUN_MOROGH },
+							["coord"] = { 25.0, 75.8, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -1225,7 +1224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(218, {	-- The Stolen Journal
 							["sourceQuest"] = 182,	-- The Troll Cave
 							["qg"] = 786,	-- Grelin Whitebeard
-							["coord"] = { 25, 75.8, DUN_MOROGH },
+							["coord"] = { 25.0, 75.8, DUN_MOROGH },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Grenlin Whitebeard's Journal
@@ -1314,7 +1313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77660, {	-- Trek Through the Caves
 							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
-							["coord"] = { 29, 67.4, DUN_MOROGH },
+							["coord"] = { 29.0, 67.4, DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { HUNTER },
 							["races"] = { DWARF },
@@ -1562,7 +1561,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					137,	-- Brewnall Village
 					801,	-- Chill Breeze Valley
 					135,	-- Frostmane Hold
-					--5495,	-- Gnomeregan
+					-- 5495,	-- Gnomeregan
 					211,	-- Iceflow Lake
 					5178,	-- The Toxic Airfield
 				},
@@ -1584,7 +1583,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						pet(442, {	-- Irradiated Roach (PET!)
 							["description"] = "Found only in the Toxic Airfield near Gnomeregan.",
-							["coord"] = { 43, 59, NEW_TINKERTOWN },
+							["coord"] = { 43.0, 59.0, NEW_TINKERTOWN },
 						}),
 					}),
 					petbattles({
@@ -2631,77 +2630,74 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					-- #if AFTER 10.1.7
-					i(2109, {	-- Frostmane Chain Vest
-						["timeline"] = { ADDED_10_1_7 },
-						["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
-						--	["cr"] = 41122,	-- Frostmane Snowstrider
-						["coords"] = {
-							{ 49.0, 35.4, DUN_MOROGH },
-						},
-					}),
-					-- #endif
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note
-						["coord"] = { 78.2, 59.8, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 6123,	-- Dark Iron Spy
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208220, {	-- Dun Morogh Treasure Map
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cost"] = {
-							{ "i", 208219, 1 },	-- Bottom-Left Map Piece
-							{ "i", 208218, 1 },	-- Bottom-Right Map Piece
-							{ "i", 208215, 1 },	-- Top-Left Map Piece
-							{ "i", 208213, 1 },	-- Top-Right Map Piece
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208219, {	-- Bottom-Left Map Piece
-						["coord"] = { 78.2, 59.8, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 6123,	-- Dark Iron Spy
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208218, {	-- Bottom-Right Map Piece
-						["coord"] = { 26.0, 41.8, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cr"] = 1211,	-- Leper Gnome
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208215, {	-- Top-Left Map Piece
-						["coord"] = { 69.8, 59.0, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1116,	-- Rockjaw Ambusher
-							1718,	-- Rockjaw Raider
-							724,	-- Burly Rockjaw Trogg
-							707,	-- Rockjaw Trogg
-							1115,	-- Rockjaw Skullthumper
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208213, {	-- Top-Right Map Piece
-						["coord"] = { 23.4, 53.8, DUN_MOROGH },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1124,	-- Frostmane Shadowcaster
-							1122,	-- Frostmane Hideskinner
-							946,	-- Frostmane Novice
-							1397,	-- Frostmane Seer
-							706,	-- Frostmane Troll Whelp
-							1123,	-- Frostmane Headhunter
-							1121,	-- Frostmane Snowstrider
-						},
-					})),
-					-- #endif
-				},
+			-- #if AFTER 10.1.7
+			pickpocketing({
+				i(2109, {	-- Frostmane Chain Vest
+					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
+					["coord"] = { 49.0, 35.4, DUN_MOROGH },
+					["timeline"] = { ADDED_10_1_7 },
+					["cr"] = 41122,	-- Frostmane Snowstrider
+				}),
 			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note
+					["coord"] = { 78.2, 59.8, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 6123,	-- Dark Iron Spy
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208220, {	-- Dun Morogh Treasure Map
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 208219, 1 },	-- Bottom-Left Map Piece
+						{ "i", 208218, 1 },	-- Bottom-Right Map Piece
+						{ "i", 208215, 1 },	-- Top-Left Map Piece
+						{ "i", 208213, 1 },	-- Top-Right Map Piece
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208219, {	-- Bottom-Left Map Piece
+					["coord"] = { 78.2, 59.8, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 6123,	-- Dark Iron Spy
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208218, {	-- Bottom-Right Map Piece
+					["coord"] = { 26.0, 41.8, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cr"] = 1211,	-- Leper Gnome
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208215, {	-- Top-Left Map Piece
+					["coord"] = { 69.8, 59.0, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1116,	-- Rockjaw Ambusher
+						1718,	-- Rockjaw Raider
+						724,	-- Burly Rockjaw Trogg
+						707,	-- Rockjaw Trogg
+						1115,	-- Rockjaw Skullthumper
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208213, {	-- Top-Right Map Piece
+					["coord"] = { 23.4, 53.8, DUN_MOROGH },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1124,	-- Frostmane Shadowcaster
+						1122,	-- Frostmane Hideskinner
+						946,	-- Frostmane Novice
+						1397,	-- Frostmane Seer
+						706,	-- Frostmane Troll Whelp
+						1123,	-- Frostmane Headhunter
+						1121,	-- Frostmane Snowstrider
+					},
+				})),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
 					["sourceQuest"] = 318,	-- Evershine
@@ -3690,10 +3686,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(2218, {	-- Road to Salvation
-					["altQuests"] = {
-						2205,	-- Seek out SI: 7
-						2241,	-- The Apple Falls
-					},
 					["qg"] = 1234,	-- Hogral Bakkan
 					["coord"] = { 47.6, 52.6, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3733,7 +3725,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1879, {	-- Speak with Bink
 					["altQuests"] = { 1860 },	-- Speak with Jennea
 					["qg"] = 1228,	-- Magis Sparkmantle <Mage Trainer>
-					["coord"] = { 47.4, 52, DUN_MOROGH },
+					["coord"] = { 47.4, 52.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
@@ -3775,7 +3767,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2092,	-- Pilot Longbeard
 					},
 					["coords"] = {
-						{ 34.8, 47, LOCH_MODAN },
+						{ 34.8, 47.0, LOCH_MODAN },
 						{ 72.4, 93.6, IRONFORGE },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3808,13 +3800,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["providers"] = {
 								{ "n", 41372 },	-- Frostmane Retreat North
 							},
-							["coord"] = { 64, 54, DUN_MOROGH },
+							["coord"] = { 64.0, 54.0, DUN_MOROGH },
 						}),
 						objective(2, {	-- Attack on Southern Frostmane Retreat
 							["providers"] = {
 								{ "n", 41373 },	-- Frostmane Retreat South
 							},
-							["coord"] = { 63, 57, DUN_MOROGH },
+							["coord"] = { 63.0, 57.0, DUN_MOROGH },
 						}),
 					},
 				}),
@@ -3921,7 +3913,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(6074, {	-- The Hunter's Path [Ironforge]
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
-					["coord"] = { 70, 84.6, IRONFORGE },
+					["coord"] = { 70.0, 84.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -4036,8 +4028,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["lvl"] = 6,
-					--	Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
-					--	Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
+					-- Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
+					-- Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
 					["groups"] = {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/7 Trapped Miner
@@ -4216,7 +4208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 76.3, 54.7, DUN_MOROGH },
 						-- #else
-						{ 69, 56.2, DUN_MOROGH },
+						{ 69.0, 56.2, DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4251,7 +4243,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1872 },	-- Tharek Blackstone
 						{ "i", 2999 },	-- Steelgrill's Tools (PQI!)
 					},
-					["coord"] = { 46, 51.6, DUN_MOROGH },
+					["coord"] = { 46.0, 51.6, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
@@ -4472,7 +4464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(208812, {	-- Jorul
 					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 37.78, 42.55, DUN_MOROGH },
-					["cost"] = {{ "i", 208192, 1 }},	-- Dun Morogh Pig Meat
+					["cost"] = { { "i", 208192, 1 } },	-- Dun Morogh Pig Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
 							["classes"] = { HUNTER },
@@ -4518,7 +4510,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
-					--["provider"] = { "o",  },	-- Summoning Circle
+					-- ["provider"] = { "o",  },	-- Summoning Circle
 					["coord"] = { 42.2, 35.6, DUN_MOROGH },
 					["cost"] = {
 						{ "i", 208139, 1 },	-- Ominous Tome
@@ -4659,7 +4651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 46.96, 43.73, DUN_MOROGH },
-					["cost"] = {{ "i", 208220, 1 }},	-- Dun Morogh Treasure Map
+					["cost"] = { { "i", 208220, 1 } },	-- Dun Morogh Treasure Map
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -4701,7 +4693,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(203990, {	-- Rune of Mutilation
-							["cost"] = {{ "i", 208205, 1 }},	-- Blackrat's Note
+							["cost"] = { { "i", 208205, 1 } },	-- Blackrat's Note
 							["classes"] = { ROGUE },
 							["groups"] = {
 								recipe(400094),	-- Engrave Gloves - Mutilate
@@ -4733,6 +4725,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(256330, {	-- Kharanos Stone Bed (DECOR!)
+							["races"] = { GNOME, DWARF, DARKIRON },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 6400000,	-- 640g
+						}),
 						i(2894),	-- Rhapsody Malt
 						i(2686),	-- Thunder Ale
 					},
@@ -4799,7 +4796,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(208711, {	-- Toby
 					["description"] = "Use the musk and tame a Rabbit and then bring it to Toby.",
 					["coord"] = { 63.6, 50.2, DUN_MOROGH },
-					["cost"] = {{ "i", 208180, 1 }},	-- Rabbit Musk
+					["cost"] = { { "i", 208180, 1 } },	-- Rabbit Musk
 					["crs"] = { 721 },	-- Rabbit
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

@@ -1,12 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local SCHOLOMANCE_GROUPS = {};
 local KORMOK_LEGACY_DESCRIPTION = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.";
 local ignoreTimeline = function(item)	-- Items applied with this were never actually removed.
 	item.timeline = IGNORED_VALUE;
 	return item;
 end
+
 local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4, ADDED_10_1_5 } }, {
 		ach(18368, {	-- Memory of Scholomance
@@ -772,9 +774,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
-		i(206374, {	-- Invader's Scourgestone
-			["timeline"] = { ADDED_10_1_5 },
-		}),
 		i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 			["description"] = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
@@ -784,7 +783,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 			["cr"] = 10678,	-- Plagued Hatchling
 		}),
-		ignoreTimeline(i(20520)),	-- Dark Rune
 		i(12753, {	-- Skin of Shadow
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
@@ -815,7 +813,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		ignoreTimeline(i(18697, {	-- Coldstone Slippers
 			-- #if SEASON_OF_DISCOVERY
 			-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
-			--["timeline"] = { REMOVED_1_15_3 },
+			-- ["timeline"] = { REMOVED_1_15_3 },
 			-- #endif
 		})),
 		-- #if SEASON_OF_DISCOVERY
@@ -934,7 +932,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		ignoreTimeline(i(18698, {	-- Tattered Leather Hood
 			-- #if SEASON_OF_DISCOVERY
 			-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
-			--["timeline"] = { REMOVED_1_15_3 },
+			-- ["timeline"] = { REMOVED_1_15_3 },
 			-- #endif
 		})),
 		-- #if SEASON_OF_DISCOVERY
@@ -1221,7 +1219,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 	}),
 	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
-	-- To get the summon item again, you would have to abandon the quest and pick it up again, which you cant. -- Gold 02/08/2023 (EU)
+	-- To get the summon item again, you would have to abandon the quest and pick it up again, which you cant.	-- Gold 02/08/2023 (EU)
 	n(14516, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Death Knight Darkreaver
 		["cost"] = { { "i", 18746, 1 } },	-- Divination Scryer
 		["groups"] = {
@@ -1236,7 +1234,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(18759, {	-- Malicious Axe
 				-- #if SEASON_OF_DISCOVERY
 				-- CRIEVE NOTE: The reitemized version isn't in the game yet?
-				--["timeline"] = { REMOVED_1_15_3 },
+				-- ["timeline"] = { REMOVED_1_15_3 },
 				-- #endif
 			}),
 			i(18761),	-- Oblivion's Touch
@@ -1263,7 +1261,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(14576, {	-- Ebon Hilt of Marduk
 			-- #if SEASON_OF_DISCOVERY
 			-- CRIEVE NOTE: The reitemized version isn't in the game.
-			--["timeline"] = { REMOVED_1_15_3 },
+			-- ["timeline"] = { REMOVED_1_15_3 },
 			-- #endif
 		}),
 		i(18692),	-- Death Knight Sabatons
@@ -1730,7 +1728,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 	}),
 	n(1853, {	-- Darkmaster Gandling
-		["description"] = "You must full clear out the Crypt before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",
+		["description"] = "You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",
 		["groups"] = {
 			i(206373, {	-- Darkmaster's Scourgestone (QI!)
 				["description"] = "Drops only with equipped Argent Dawn Commission",
@@ -1938,7 +1936,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(13398, {	-- Boots of the Shrieker
 				-- #if SEASON_OF_DISCOVERY
 				-- CRIEVE NOTE: This item is likely still in the game, the reitemized version doesn't appear to be yet.
-				--["timeline"] = { REMOVED_1_15_3 },
+				-- ["timeline"] = { REMOVED_1_15_3 },
 				-- #endif
 			}),
 			-- #if SEASON_OF_DISCOVERY
@@ -1986,14 +1984,16 @@ table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 	icon = 133743,
 	text = {
 		en = "Memory of Scholomance",
-		es = "Recuerdo de Scholomance",
 		de = "Erinnerung an Scholomance",
+		es = "Recuerdo de Scholomance",
+		mx = "Recuerdo de Scholomance",
 		fr = "Souvenir de Scholomance",
 		it = "Ricordo di Scholomance",
+		ko = "스칼로맨스의 기억",
 		pt = "Lembrança de Scolomântia",
 		ru = "Воспоминание о Некроситете",
-		ko = "스칼로맨스의 기억",
 		cn = "通灵学院的回忆",
+		tw = "通靈學院的回憶",
 	},
 }), {
 	["mapID"] = 306,
@@ -2084,6 +2084,9 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			["timeline"] = { ADDED_4_0_3 },
 			["repeatable"] = true,
 			["lvl"] = lvlsquish(40, 40, 15),
+			-- #if AFTER 10.1.5
+			["description"] = "Killing Rattlegore in Old Scholomance DOES NOT progress this quest.",
+			-- #endif
 			["groups"] = {
 				objective(1, {	-- 0/1 Rattlegore slain
 					["provider"] = { "n", 59153 },	-- Rattlegore
@@ -2487,6 +2490,11 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDown
 	ach(6916, {	-- Scholomance: Gold
 		spell(131232),	-- Path of the Necromancer
 	}),
+	-- #if ANYCLASSIC
+	ach(61974, {	-- Scholomance: Platinum
+		i(265415),	-- Platinum Vial of Polyformic Acid
+	}),
+	-- #endif
 })));
 -- #endif
 -- #endif
@@ -2494,19 +2502,57 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDown
 -- #if ANYCLASSIC
 -- #if AFTER MOP
 table.insert(SCHOLOMANCE_GROUPS, applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
-		["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
+		["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 		["timeline"] = { ADDED_5_5_0 },
 		["groups"] = {
 			e(684, {	-- Darkmaster Gandling
 				["creatureID"] = 59080,	-- Darkmaster Gandling
-				["groups"] = {
+				["groups"] = appendGroups(
+				{
 					ach(60899),	-- Celestial: Scholomance
+				},
+				-- #if BEFORE 5.5.3
+				{	-- Season 1 Drops
 					applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86863)),	-- Scimitar of Seven Stars (HoF)
 					applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86893)),	-- Jin'ya, Orb of the Waterspeaker (Terrace)
 					i(86782),	-- Arrow Breaking Windcloak
 					i(89968),	-- Feng's Ring of Dreams
 					i(86802),	-- Lei Shen's Final Orders
 				},
+				-- #elseif BEFORE 5.5.5
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
+					i(95664),	-- Armplates of the Vanquished Abomination
+					i(95665),	-- Bad Juju
+					i(95772),	-- Cha-Ye's Essence of Brilliance
+					i(95773),	-- Constantly Accelerating Cloak
+					i(95718),	-- Cord of Cacophonous Cawing
+					i(95690),	-- Crystal-Claw Gloves
+					i(95862),	-- Darkwood Spiritstaff
+					i(95966),	-- Deeproot Treads
+					i(95636),	-- Fissure-Split Shoulderwraps
+					i(95799),	-- Gaze of the Twins
+					i(95746),	-- Iceshatter Gauntlets
+					i(95638),	-- Jin'rokh's Dreamshard
+					i(95663),	-- Legguards of Scintillating Scales
+					i(95717),	-- Pinionfeather Greatcloak
+					i(95719),	-- Robe of Midnight Down
+					i(95637),	-- Robes of Static Bursts
+					i(95744),	-- Sandals of the Starving Eye
+					i(95691),	-- Shimmershell Cape
+					i(95967),	-- Spiritbound Boots
+					i(97129),	-- Tia-Tia, the Scything Star
+					i(95798),	-- Tidal Force Treads
+					i(95692),	-- Tortos' Discarded Shell
+					i(95968),	-- Vaultwalker Sabatons
+					i(95745),	-- Vein-Cover Bracers
+					i(95861),	-- Zeeg's Ancient Kegsmasher
+				}),
+				-- #else
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
+
+				}),
+				-- #endif
+				{}),
 			}),
 		},
 })));

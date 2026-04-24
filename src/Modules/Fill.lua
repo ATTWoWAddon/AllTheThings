@@ -5,7 +5,7 @@
 --- Dependencies: Cache, Table, Runner, Callback
 ---
 
-local appName, app = ...
+local _, app = ...
 
 local CurrentSkipLevel = 0	-- Whether to skip certain cost items
 -- Returns the current Skip Level
@@ -23,10 +23,6 @@ app.SetSkipLevel = function(level)
 	-- print("SkipPurchases exclusion",level)
 	CurrentSkipLevel = level or 0
 end
-
--- Currently, Classic does not use any of the following Fill logic but the above
--- SkipLevel functions are referenced within Classic files
-if app.IsClassic then return end
 
 
 
@@ -106,8 +102,8 @@ local FillSettings = {
 	Icons = {
 		REAGENT = app.asset("Interface_Reagent")
 	},
-	Defaults = {
-		NPC = false
+	SettingsDefaults = {
+		["LIST:REAGENT"] = false,
 	},
 }
 local ActiveFillFunctions = {}
@@ -176,7 +172,7 @@ local FillFunctions = {
 			for craftedItemID,recipe in pairs(craftableItemIDs) do
 				craftedItemID = math_floor(craftedItemID)
 				craftedItems[craftedItemID] = true
-				skillID = recipe ~= true and GetRelativeValue(recipe, "skillID") or nil
+				skillID = recipe ~= true and GetRelativeValue(recipe, "requireSkill") or nil
 				-- Searches for a filter-matched crafted Item
 				search = SearchForObject("itemID",craftedItemID,"field");
 				search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
@@ -289,6 +285,8 @@ app.AddEventHandler("OnStartup", function()
 	end
 	app.AddEventHandler("Fill.OnActivateFiller", CheckRebuildMinilist)
 	app.AddEventHandler("Fill.OnDeactivateFiller", CheckRebuildMinilist)
+
+	SyncFillPriorityFromSettings()
 end)
 
 -- TODO: how to handle agnostic Filler priorities?
@@ -317,6 +315,11 @@ api.AddFiller = function(name, func, options)
 		end
 		if options.SettingsIcon then
 			FillSettings.Icons[name] = options.SettingsIcon
+		end
+		if options.SettingsDefaults then
+			for k, v in pairs(options.SettingsDefaults) do
+				FillSettings.SettingsDefaults[k] = v
+			end
 		end
 	end
 
@@ -411,6 +414,26 @@ api.GetFiller = function(name)
 	return FillFunctions[name]
 end
 
+local FillAdjusts = {}
+-- 1 : Remove 'e' from Filled content and de-link the hierarchy to prevent recursive filtering
+FillAdjusts[1] =
+	function(group)
+		group.e = nil
+		group.parent = nil
+		group.sourceParent = nil
+		local g = group.g
+		if g then
+			for i=1,#g do
+				FillAdjusts[1](g[i])
+			end
+		end
+	end
+
+-- Class types which should not be filled further
+local FillStopTypes = {
+	EnsembleItem = 1,
+	EnsembleSpell = 1,
+}
 local function FillGroupDirect(group, FillData, doDGU)
 	local groups, temp = {}, {}
 	-- only use Fillers from within the respective FillData.Fillers
@@ -422,6 +445,14 @@ local function FillGroupDirect(group, FillData, doDGU)
 	ArrayAppend(groups, unpack(temp))
 
 	if #groups == 0 then return end
+
+	-- Check for Fill Adjusts
+	local fillAdjuster = FillAdjusts[group.fillAdjust]
+	if fillAdjuster then
+		for i=1,#groups do
+			fillAdjuster(groups[i])
+		end
+	end
 
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
@@ -494,7 +525,22 @@ local function FillGroupsLayered(group, FillData)
 
 	FillGroupDirect(group, FillData)
 
-	return group.g
+	local g = group.g
+	-- Some Types should never be filled beyond themselves, unless there's another group of the same Type
+	-- Only matters for Ensembles right now. If any other Types added, might need to review
+	if g and FillStopTypes[group.__type] then
+		local nextFill, o
+		for i=1,#g do
+			o = g[i]
+			if FillStopTypes[o.__type] then
+				if nextFill then nextFill[#nextFill + 1] = o
+				else nextFill = { o } end
+			end
+		end
+		return nextFill
+	end
+
+	return g
 end
 -- Fills the group and returns an array of the next layer of groups to fill
 -- Run an entire layer, run a function to run the next layer
@@ -511,7 +557,25 @@ local function FillGroupsLayeredAsync(group, FillData)
 
 	FillGroupDirect(group, FillData, true)
 
-	local g = group.g;
+	local g = group.g
+	-- Some Types should never be filled beyond themselves, unless there's another group of the same Type
+	-- Only matters for Ensembles right now. If any other Types added, might need to review
+	if g and FillStopTypes[group.__type] then
+		local nextFill, o
+		for i=1,#g do
+			o = g[i]
+			if FillStopTypes[o.__type] then
+				if nextFill then nextFill[#nextFill + 1] = o
+				else nextFill = { o } end
+			end
+		end
+		-- if FillData.CurrentLayer then
+		-- 	app.PrintDebug("AddLayered.g",FillData.CurrentLayer,#g,app:SearchLink(group))
+		-- end
+		app.ArrayAppend(FillData.NextLayer, nextFill)
+		return
+	end
+
 	if g then
 		-- if FillData.CurrentLayer then
 		-- 	app.PrintDebug("AddLayered.g",FillData.CurrentLayer,#g,app:SearchLink(group))
@@ -543,9 +607,11 @@ local function AssignGroupFilledTag(group)
 	-- app.PrintDebug("wasFilled",app:SearchLink(group),group.filledReagent,group.filledCost,group.filledUpgrade)
 end
 local function HandleOnWindowFillComplete(window)
+	if not window or not window.data then return end
+
 	window.data._fillcomplete = true
 	AssignGroupFilledTag(window.data)
-	app.HandleEvent("OnWindowFillComplete", window)
+	app.HandleEvent("OnWindowFillComplete", window, window.Suffix)
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 local FillGroups = function(group, options)
@@ -558,7 +624,7 @@ local FillGroups = function(group, options)
 	local groupWindow = app.GetRelativeRawWithField(group, "window");
 	local fillers = options and options.Fillers
 	if not fillers then
-		local fillScope = groupWindow and (groupWindow.Suffix == "CurrentInstance" and "LIST" or "POPOUT") or "TOOLTIP"
+		local fillScope = groupWindow and (groupWindow.Suffix == "MiniList" and "LIST" or "POPOUT") or "TOOLTIP"
 		fillers = ActiveFillFunctions[fillScope]
 	end
 	-- Setup the FillData for this fill operation
@@ -568,7 +634,7 @@ local FillGroups = function(group, options)
 		NextLayer = {},
 		-- CurrentLayer = 0,	-- debugging
 		InWindow = groupWindow and true or nil,
-		InMinilist = groupWindow and groupWindow.Suffix == "CurrentInstance" and true or nil,
+		InMinilist = groupWindow and groupWindow.Suffix == "MiniList" and true or nil,
 		-- TODO: Fillers can provide context requirements for themselves to be utilized for a given
 		-- fill operation.
 		-- i.e. provided the Root/Window/Instance/Combat -- the Filler may return that it should not be included

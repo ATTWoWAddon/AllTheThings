@@ -5,6 +5,10 @@
 ---@param t? table
 ---@return table|nil
 struct = function(field, id, t)		-- Construct a commonly formatted object.
+	if type(id) ~= "number" then
+		error("struct() requires a number 'id'. Received:",type(id),"for",field)
+		return
+	end
 	if not t then t = {};
 	elseif (t.g or t.groups) and t[1] then
 		error("Don't use 'g' or 'groups' with an array of objects! Fix Group: "..field..":"..id);
@@ -21,6 +25,22 @@ struct = function(field, id, t)		-- Construct a commonly formatted object.
 		error("Don't reuse tables within constructed objects! Fix Group: "..field..":"..id.." which has "..t[field].." already assigned!")
 	end
 	t[field] = id;
+	if t._DATAGROUP then
+		local group = DATAGROUP[t._DATAGROUP]
+		group[#group + 1] = t
+		group = IDGROUP[t._DATAGROUP][field]
+		group[#group + 1] = id
+	end
+	if t._DATAGROUPS then
+		local datagroup
+		for i=1,#t._DATAGROUPS do
+			datagroup = t._DATAGROUPS[i]
+			local group = DATAGROUP[datagroup]
+			group[#group + 1] = t
+			group = IDGROUP[datagroup][field]
+			group[#group + 1] = id
+		end
+	end
 	return t;
 end
 
@@ -43,14 +63,19 @@ end
 isarray = function(t)
 	return t and type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
--- Ensures that 't' has a 'groups' field containing the array data of the table
+-- Ensures that 't' has a 'groups' field containing the array/'g' data of the table
 togroups = function(t)
 	if isarray(t) then
 		local groups = {};
 		for _,group in ipairs(t) do
 			table.insert(groups, group);
 		end
-		t = { ["groups"] = groups };
+		return { ["groups"] = groups }
+	end
+	if t.g then
+		t.groups = t.g
+		t.g = nil
+		return t
 	end
 	return t;
 end
@@ -269,9 +294,11 @@ end
 sharedDataSelf = function(data, t)
 	if not data then
 		print("ERROR: sharedDataSelf: No Shared Data")
+		return t
 	end
 	if not t then
 		print("ERROR: sharedDataSelf: No Source 't'")
+		return t
 	end
 	-- if this is an array, convert to .groups container first to prevent merge confusion
 	t = togroups(t);
@@ -287,10 +314,17 @@ end
 bubbleDown = function(data, t)
 	if not data then
 		print("ERROR: bubbleDown: No Bubble Data")
+		return t
 	end
 	if not t then
 		print("ERROR: bubbleDown: No Source 't'")
+		return t
 	end
+	-- override to use 'timelineSelf' if the only data provided is a 'timeline' value
+	-- if data.timeline then
+	-- 	local timelineSelfReturn = timelineSelf(data, t, true)
+	-- 	if timelineSelfReturn then return timelineSelfReturn end
+	-- end
 	if not data.IgnoreWarnings then
 		for key,val in pairs(data) do
 			if BubbleDownKeyWarnings[key] then
@@ -358,14 +392,50 @@ end
 bubbleDownSelf = function(data, t)
 	if not data then
 		print("ERROR: bubbleDownSelf: No Bubble Data")
+		return t
 	end
 	if not t then
 		print("ERROR: bubbleDownSelf: No Source 't'")
+		return t
 	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
 	t = togroups(t);
+	-- override to use 'timelineSelf' if the only data provided is a 'timeline' value
+	-- if data.timeline then
+	-- 	local timelineSelfReturn = timelineSelf(data, t, true)
+	-- 	if timelineSelfReturn then
+	-- 		applyData(data, t)
+	-- 		return timelineSelfReturn
+	-- 	end
+	-- end
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
+end
+-- Performs only the logic of applying the provided data against the merging object, this is intended as a quick replacement for those bubbleDown(Self) uses of only 'timeline' data
+timelineSelf = function(data, t, auto)
+	if not data then
+		print("ERROR: timelineSelf: No Data")
+		return t
+	end
+	if not t then
+		print("ERROR: timelineSelf: No Source 't'")
+		return t
+	end
+	local datacount = 0
+	local withtimeline = data.timeline and true or nil
+	for k, v in pairs(data) do
+		datacount = datacount + 1
+	end
+	if datacount > 1 or not withtimeline then
+		-- if we automatically call this function, then don't ERROR just return empty so the caller can handle it
+		if auto then return end
+
+		print("ERROR: timelineSelf is only intended to replace 'timeline' bubbleDowns, ensure no other data is being bubbled!")
+		return t
+	end
+	-- typically bubbleDownSelf is on expansion objects, and we want to avoid forcing timeline on these
+	-- so instead do a sharedData pass of the timeline
+	return sharedData(data, t)
 end
 -- Applies the timeline event (epoch) to all sub-groups of the provided table/array
 bubbleDownTimelineEvent = function(epoch, t)
@@ -567,16 +637,6 @@ ifclassic = function(classicValue, value)
 	return value;
 end
 -- #endif
-local function ProcessProviderForRetailAsUncollectible(provider)
-	if provider then
-		if provider[1] == "i" then
-			-- TODO: If ya'll actually use Objectives some day I'd be thrilled,
-			-- but if not, this will move that stuff into uncollectible for ya!
-			local itemID = provider[2];
-			root(ROOTS.Uncollectible)[itemID] = { ["itemID"] = itemID };
-		end
-	end
-end
 
 local squishes = {};
 lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
@@ -624,6 +684,7 @@ ChronicleOfLostMemories = function(t)
 			190598,	-- Memory of Unity (WARRIOR)
 		},
 	}
+	t._drop = { "customCollect" }
 	return i(184665, t)	-- Chronicle of Lost Memories
 end
 
@@ -641,6 +702,10 @@ applycost = function(item, ...)
 end
 tokencost = function(tokenItemID, item)				-- Assign a token cost to an item.
 	applycost(item, { "i", tokenItemID, 1 });
+	return item;
+end
+anguish = function(cost, item)						-- Assign a Remnant of Anguish cost to an item.
+	if cost > 0 then applycost(item, { "c", 3392, cost }); end
 	return item;
 end
 bloody = function(cost, item)							-- Assign an Bloody Tokens cost to an item.
@@ -763,8 +828,8 @@ tolbaradcommendation = function(cost, item)				-- Assign a Tol Barad Commendatio
 	return item;
 end
 traderstender = function(cost, item)                	-- Assign a Traders Tender cost to an item.
-    if cost > 0 then applycost(item, { "c", TRADERS_TENDER, cost }); end
-    return item;
+	if cost > 0 then applycost(item, { "c", TRADERS_TENDER, cost }); end
+	return item;
 end
 venture = function(cost, item)							-- Assign a Venture Coin cost to an item with proper timeline requirements.
 	-- #if BEFORE 4.0.1
@@ -832,7 +897,7 @@ achievementCategory = achcat;
 artifact = function(id, t)								-- Create an ARTIFACT Object
 	return struct("artifactID", id, t);
 end
-az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object.
+az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object
 	if t or type(rank) == "number" then
 		t = struct("azeriteessenceID", id, t or {});
 		t.rank = rank;
@@ -852,7 +917,7 @@ azewrongItem = function(id, t)							-- Create an Item which is marked as having
 	t.customCollect = { "!HOA" };
 	return t;
 end
-campsite = function(id, t)
+campsite = function(id, t)								-- Create a CAMPSITE Object
 	return struct("campsiteID", id, t);
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
@@ -1011,7 +1076,7 @@ local PatchDecimals = 2
 local RevDecimals = 2
 local PatchShift = 10 ^ PatchDecimals
 local RevShift = 10 ^ RevDecimals
-expansion = function(id, patch, t)							-- Create an EXPANSION Object
+expansion = function(id, patch, t)						-- Create an EXPANSION Object
 	-- patch is optional
 	local hasPatch
 	if not t then
@@ -1066,11 +1131,16 @@ visit_exploration = function(id, t)						-- Create an EXPLORATION Object (which 
 	-- #ENDIF
 	return t
 end
-instance_exploration = visit_exploration;
 map_exploration = visit_exploration;
 faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
+firstcraft = function(id, t)							-- Create a FIRST CRAFT Object
+	t = struct("firstcraftID", id, t);
+	t.provider = { "s", id };
+	return t;
+end
+fc = firstcraft;
 flightpath = function(id, t)							-- Create a FLIGHT PATH Object
 	return struct("flightpathID", id, t);
 end
@@ -1109,7 +1179,7 @@ header = function(ty, id, t)							-- Create an Automatic Header which will use 
 		-- Create an Automatic Header which will use the plain Text of the specified in-game object based on Type-ID combination
 		t = struct("headerID", id, t);
 		if not ty then
-			error("Invalid header type for id",id);
+			error("Invalid header() type for id",id);
 		end
 		t.type = ty;
 	else
@@ -1314,6 +1384,14 @@ npc = function(id, t)									-- Create an NPC Object (negative indicates that i
 	return struct(id > 0 and "npcID" or "headerID", id, t);
 end
 n = npc;												-- Create an NPC Object (alternative shortcut)
+n_conditional = function(id, t)							-- Create an NPC Object which is Conditional (assign u = CONDITIONALLY_AVAILABLE for Retail)
+	t = n(id, t);
+	-- #if NOT ANYCLASSIC
+	t.u = CONDITIONALLY_AVAILABLE
+	bubbleDown({u=CONDITIONALLY_AVAILABLE}, t)
+	-- #endif
+	return t;
+end
 obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, non-NPC object out in the world - like a chest)
 	return struct("objectID", id, t);
 end
@@ -1336,7 +1414,9 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 		end
 		-- Now we want the children of these generic groups to be 'special' since they require 'special' logic in the addon
 		for i,group in ipairs(t.groups or t.g) do
-			group.type = "AsSubGenericObject"
+			if group.objectID then
+				group.type = "AsSubGenericObject"
+			end
 		end
 		return t
 	end
@@ -1348,14 +1428,10 @@ end
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
-profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, t);
-	-- #if NOT ANYCLASSIC
-	bubbleDown({ ["requireSkill"] = skillID }, p);
-	-- #endif
-	root(ROOTS.Professions, p);
-	return p;
+professionnode = function(id, t)						-- Create a PROFESSION NODE Object
+	return struct("professionnodeID", id, t);
 end
+pn = professionnode;
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
 	return bubbleDown({ ["pvp"] = true }, t);
 end
@@ -1373,19 +1449,9 @@ qNYI = function (id, t)									-- Create a QUEST Object flagged with the NYI un
 end
 questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
 	t = struct("objectiveID", id, t);
-	if t then
-		-- #if NOT OBJECTIVES
-		-- ProcessProviderForRetailAsUncollectible(t.provider);
-		-- if t.providers then
-		-- 	for i,provider in ipairs(t.providers) do
-		-- 		ProcessProviderForRetailAsUncollectible(provider);
-		-- 	end
-		-- end
-		-- #endif
-		if t.itemID then
-			print("INCORRECT OBJECTIVE FORMAT", id, t.itemID);
-			print("Use a provider entry instead!");
-		end
+	if t and t.itemID then
+		print("INCORRECT OBJECTIVE FORMAT", id, t.itemID);
+		print("Use a provider entry instead!");
 	end
 	return t;
 end
@@ -1394,7 +1460,7 @@ qo = questobjective;									-- Create a QUEST OBJECTIVE Object (alternative sho
 race = function(id, t)									-- Create a RACE Object
 	return struct("raceID", id, t);
 end
-raceWithoutLock = function(id, t)							-- Create a CHARACTER RACE Object without a Race Lock
+raceWithoutLock = function(id, t)						-- Create a CHARACTER RACE Object without a Race Lock
 	t = struct("headerID", id, t);
 	t.type = HEADERS.Race;
 	return t;
@@ -1403,78 +1469,6 @@ recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
 end
 r = recipe;												-- Create a RECIPE Object (alternative shortcut)
-local function HQTCleanup(data)
-	if data.questID then
-		-- force quests under the HQT section to be the HQT type
-		data.type = "hqt"
-		return
-	end
-end
-local SpecialRoots = {
-	__DropG = function(g)
-		return bubbleDownFiltered({
-			-- keep API data from populating into NYI/Hidden quests
-			["_drop"]={"g"}
-		},FILTERFUNC_questID,g)
-	end,
-	__HiddenQuestTriggers = function(g)
-		return bubbleDownFiltered({
-			-- keep API data from populating into NYI/Hidden quests
-			["_drop"]={"g"}
-		},FILTERFUNC_questID, applyFunc(HQTCleanup, g))
-	end,
-}
-SpecialRoots[ROOTS.HiddenAchievementTriggers] = SpecialRoots.__DropG
-SpecialRoots[ROOTS.HiddenCurrencyTriggers] = SpecialRoots.__DropG
-SpecialRoots[ROOTS.HiddenQuestTriggers] = SpecialRoots.__HiddenQuestTriggers
-SpecialRoots[ROOTS.NeverImplemented] = SpecialRoots.__DropG
-root = function(category, g)							-- Create a ROOT CATEGORY Object
-	if not g then g = g or {}; end
-	-- special global handling for certain categories
-	if SpecialRoots[category] then g = SpecialRoots[category](g) end
-	local o = _[category];
-	if not o then
-		if isarray(g) then
-			o = g;
-		else
-			local isRef = true;
-			for key,value in pairs(g) do
-				if type(key) ~= "number" then
-					isRef = false;
-					break;
-				end
-			end
-			if isRef then
-				o = g;
-			else
-				o = { g };
-			end
-		end
-		_[category] = o;
-	else
-		if isarray(g) then
-			for i,t in ipairs(g) do
-				table.insert(o, t);
-			end
-		else
-			local isRef = true;
-			for key,value in pairs(g) do
-				if type(key) ~= "number" then
-					isRef = false;
-					break;
-				end
-			end
-			if isRef then
-				for key,value in pairs(g) do
-					o[key] = value;
-				end
-			else
-				table.insert(o, g);
-			end
-		end
-	end
-	return o;
-end
 sensemble = function(spellID, t)						-- Create an Ensemble directly from SpellID
 	local i = sp(spellID, t);
 	i.type = "ensembleSpellID"
@@ -1516,7 +1510,7 @@ dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragon
 	};
 	return t;
 end
-skyridingrace = function(id, t)						-- Creates a QUEST which is for a Skyriding Race
+skyridingrace = function(id, t)							-- Creates a QUEST which is for a Skyriding Race
 	t = q(id, t);
 	t.repeatable = true;
 	t.collectible = false;	-- quest literally cannot be completed
@@ -1528,7 +1522,7 @@ skyridingrace = function(id, t)						-- Creates a QUEST which is for a Skyriding
 	-- };
 	return t;
 end
-driverace = function(id, t)						-- Creates a QUEST which is for a D.R.I.V.E. Race
+driverace = function(id, t)								-- Creates a QUEST which is for a D.R.I.V.E. Race
 	t = q(id, t);
 	t.repeatable = true;
 	t.collectible = false;	-- quest literally cannot be completed
@@ -1542,7 +1536,7 @@ driverace = function(id, t)						-- Creates a QUEST which is for a D.R.I.V.E. Ra
 end
 -- Simple function for First Craft HQTs
 FirstCraft = function(questID, recipeID, added, removed)
-	local t = hqt(questID, name(HEADERS.Spell, recipeID))
+	local t = fc(recipeID, {questID=questID})
 	t.provider = { "s", recipeID };
 	if added then
 		t.timeline = { added };
@@ -1555,17 +1549,43 @@ FirstCraft = function(questID, recipeID, added, removed)
 	end
 	return t;
 end
--- Simple function for First Skin HQTs
-FirstSkin = function(questID, creatureID, added, t)
-	local t = hqt(questID, name(HEADERS.NPC, creatureID, t))
-	t.provider = { "n", creatureID };
-	t.isWeekly = true;
+-- Simple function for Recipes with HQTs
+r_withQuest = function(recipeID, questID, added, description, maps)
+	local t = r(recipeID, {questID=questID})
 	if added then
 		t.timeline = { added };
 	end
-	return t;
+	if description then
+		t.description = description;
+	end
+	if maps then
+		t.maps = maps;
+	end
+    return t
 end
-
+-- Creates a simple 'gathered' Item which has a set of object providers
+-- Note: If additional table data is provided it must be the last param
+i_gathered = function(itemID, ...)
+	local t
+	local params = {...}
+	local last = params[#params]
+	if type(last) == "table" then
+		t = i(itemID, last)
+		last = nil
+		params[#params] = nil
+	else
+		t = i(itemID)
+	end
+	local providers = t.providers
+	if not providers then
+		providers = {}
+		t.providers = providers
+	end
+	for i=1,#params do
+		providers[#providers + 1] = { "o", params[i] }
+	end
+	return t
+end
 -- Outdoor Zones Headers with Filters
 battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
 	if not t then
@@ -1580,6 +1600,24 @@ petbattles = function(timeline, t)						-- Creates a PET_BATTLES header with pet
 		timeline = { ADDED_5_0_4 };
 	end
 	return petbattle(n(PET_BATTLES, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+end
+lockpicking = function(skipRequirement, t)				-- Creates a LOCKPICKING header with Rogue Class Filtering on it. Use this with Outdoor Zones.
+	if not t then
+		t = skipRequirement;
+		skipRequirement = nil;
+	end
+	local obj = prof(LOCKPICKING, t);
+	if not skipRequirement then obj.classes = { ROGUE }; end
+	return obj;
+end
+pickpocketing = function(skipRequirement, t)			-- Creates a PICK POCKET header with Rogue Class Filtering on it. Use this with Outdoor Zones.
+	if not t then
+		t = skipRequirement;
+		skipRequirement = nil;
+	end
+	local obj = header(HEADERS.Spell, 921, t);	-- Pick Pocket
+	if not skipRequirement then obj.classes = { ROGUE }; end
+	return obj;
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
@@ -1613,7 +1651,7 @@ end
 convertItem = function(itemID, subItemID, subItemAmount, includeItemToSubitem)
 	return i(itemID, {["cost"]={{"i",subItemID,subItemAmount}},["groups"]=includeItemToSubitem and {i(subItemID)} or nil})
 end
-crs = function(id, t)											-- Add a Creature List to an object.
+crs = function(id, t)									-- Add a Creature List to an object.
 	if type(id) == "number" then
 		t.cr = id;
 	else
@@ -1778,12 +1816,178 @@ cnUnavailable = function(t)	-- the object only unavailable on CN realm
 	return regionUnavailable("CN", t);
 end
 
+-- Constants containers
+do
+	local AutoTableMetaFunc
+	local function SelfAutoTable(t)
+		return setmetatable(t, { __index = AutoTableMetaFunc })
+	end
+	AutoTableMetaFunc = function(t, key)
+		-- only auto-key string keys
+		if type(key) == "string" then
+			local value = SelfAutoTable({})
+			t[key] = value
+			return value
+		end
+	end
+	DATAGROUP = SelfAutoTable({})
+	IDGROUP = SelfAutoTable({})
+	SYM = SelfAutoTable({})
+end
+
 -- Temporary function to force Items to use the Misc filter so that they do not get turned into Recipes by the Parser
 -- until the 'guessing' logic is eventually relegated when Prof DB's are sufficient
 TempForceMisc = function(t)
 	t.f = MISC
 	return t
 end
+
+-- Root Category Headers
+(function()
+-- Root constants
+-- Usage: ROOTS.[Constant]
+ROOTS = setmetatable({
+	["AchievementDB"] = "AchievementDB",
+	["Achievements"] = "Achievements",
+	["Arcantina"] = "Arcantina",
+	["BlackMarket"] = "BlackMarket",
+	["Character"] = "Character",
+	["Craftables"] = "Craftables",
+	["Delves"] = "Delves",
+	["ExpansionFeatures"] = "ExpansionFeatures",
+	["Factions"] = "Factions",
+	["GroupFinder"] = "GroupFinder",
+	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
+	["HiddenCurrencyTriggers"] = "HiddenCurrencyTriggers",
+	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
+	["Holidays"] = "Holidays",
+	["Housing"] = "Housing",
+	["InGameShop"] = "InGameShop",
+	["Instances"] = "Instances",
+	["ItemDB"] = "ItemDB",
+	["ItemDBConditional"] = "ItemDBConditional",
+	["NeverImplemented"] = "NeverImplemented",
+	["PVP"] = "PVP",
+	["PetBattles"] = "PetBattles",
+	["Professions"] = "Professions",
+	["Promotions"] = "Promotions",
+	["RecipeDB"] = "RecipeDB",
+	["SeasonOfDiscovery"] = "SeasonOfDiscovery",
+	["Secrets"] = "Secrets",
+	["Sourceless"] = "Sourceless",
+	["TradingPost"] = "TradingPost",
+	["Uncollectible"] = "Uncollectible",
+	["Unsorted"] = "Unsorted",
+	["WorldDrops"] = "WorldDrops",
+	["WorldEvents"] = "WorldEvents",
+	["Zones"] = "Zones",
+	--
+	["AprilFools"] = "Special_AprilFools",
+}, {
+	__index = function(t, category)
+		error("Attempting to reference ROOTS." .. category .. ", which is not a valid Root Category.");
+	end,
+});
+
+-- Root Data Processors
+local function HQTCleanup(data)
+	if data.questID then
+		-- force quests under the HQT section to be the HQT type
+		data.type = "hqt"
+		return
+	end
+end
+local function __DropG(g)
+	return bubbleDownFiltered({
+		-- keep API data from populating into NYI/Hidden quests
+		["_drop"]={"g"}
+	},FILTERFUNC_questID,g)
+end
+local function __HiddenQuestTriggers(g)
+	return applyFunc(HQTCleanup, __DropG(g))
+end
+local function ReturnArguments(...)
+	return ...;
+end
+local RootDataProcessors = setmetatable({
+	[ROOTS.HiddenAchievementTriggers] = __DropG,
+	[ROOTS.HiddenCurrencyTriggers] = __DropG,
+	[ROOTS.HiddenQuestTriggers] = __HiddenQuestTriggers,
+	[ROOTS.NeverImplemented] = __DropG
+}, {
+	__index = function(t, key) return ReturnArguments; end,
+});
+
+-- Connect data to a Root Category
+root = function(category, g)							-- Create a ROOT CATEGORY Object
+	g = RootDataProcessors[category](g or {});
+	local o = _[category];
+	if not o then
+		if isarray(g) then
+			o = g;
+		else
+			local isRef = true;
+			for key,value in pairs(g) do
+				if type(key) ~= "number" then
+					isRef = false;
+					break;
+				end
+			end
+			if isRef then
+				o = g;
+			else
+				o = { g };
+			end
+		end
+		_[category] = o;
+	else
+		if isarray(g) then
+			for i,t in ipairs(g) do
+				table.insert(o, t);
+			end
+		else
+			local isRef = true;
+			for key,value in pairs(g) do
+				if type(key) ~= "number" then
+					isRef = false;
+					break;
+				end
+			end
+			if isRef then
+				for key,value in pairs(g) do
+					o[key] = value;
+				end
+			else
+				table.insert(o, g);
+			end
+		end
+	end
+	return o;
+end
+profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
+	local p = prof(skillID, t);
+	-- #if NOT ANYCLASSIC
+	bubbleDown({ ["requireSkill"] = skillID }, p);
+	-- #endif
+	root(ROOTS.Professions, p);
+	return p;
+end
+
+-- Assign a Root Category Header
+local rootCategoryHeaders = {};
+RootCategoryHeaders = rootCategoryHeaders;	-- This is global, so that it can be found by Parser!
+assignRootCategoryHeader = function(priority, category, headerID, data)
+	if not headerID or type(headerID) ~= "number" then
+		print("ROOT CATEGORY: " .. category);
+		print("INVALID ROOT CATEGORY HEADER: You must pass a headerID into the createRootCategoryHeader(priority,category,headerID,data) function.");
+	elseif rootCategoryHeaders[category] then
+		error("ERROR: ROOT CATEGORY HEADER " .. category .. " ALREADY ASSIGNED. Please double check that the root category definitions are unique.");
+	end
+	data = n(headerID, data or {});
+	data.SortPriority = priority;
+	rootCategoryHeaders[category] = data;
+end
+end)();
 
 -- Create a String.
 (function()
@@ -1898,6 +2102,8 @@ local getTimestamp = function(t)
 end
 local SECONDS_IN_A_DAY = 86400;
 local SECONDS_IN_A_WEEK = 604800;
+-- Creates a Custom Header for use within ATT data
+-- 'npcfill = true' indicates that Things Sourced under this Header can be 'filled' into the corresponding NPC Sources if tagged with applicable NPC data
 createHeader = function(data)
 	if not data then
 		print("INVALID HEADER: You must pass data into the createHeader function.");
@@ -2271,7 +2477,7 @@ translate = function(data, key)
 				-- We want to reuse this headerID for things that use the same translation data.
 				local headerID = temporaryHeaderAssignments[data.en];
 				if not headerID then
-					headerID = createHeader({ readable = data.en, temporary = true, text = data });
+					headerID = createHeader({ readable = data.en, text = data });
 					temporaryHeaderAssignments[data.en] = headerID;
 				end
 				return "~H:" .. headerID;
@@ -2337,6 +2543,11 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	object.f = RECIPES;
 
 	-- Update the skill requirement.
+	if requireSkill then
+		if itemID ~= 0 then
+			RecipeDB[recipeID]._requireSkill = requireSkill;
+		end
+	end
 	requireSkill = requireSkill or CurrentProfessionID;
 	local originalRequireSkill = object.requireSkill;
 	if not originalRequireSkill then
@@ -2361,7 +2572,7 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 		if unobtainType == "number" then
 			-- #if ANYCLASSIC
 			-- CRIEVE NOTE: At this time, this is exclusive to Classic builds.
-			object.u = unobtainStatus;
+			RecipeDB[recipeID].u = unobtainStatus
 			-- #endif
 		elseif unobtainType == "string" then
 			object.timeline = { unobtainStatus };

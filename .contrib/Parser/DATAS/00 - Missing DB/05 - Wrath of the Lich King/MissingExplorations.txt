@@ -30,7 +30,7 @@ exploration(4072),	-- Sub zone
 exploration(4073),	-- Winter's Terrace
 exploration(4074),	-- The Waking Halls
 exploration(4079),	-- Frostblade Pass
-exploration(4096),	-- Clayt�n's WoWEdit Land \\ Claytön's WoWEdit Land
+exploration(4096),	-- Claytön's WoWEdit Land
 exploration(4100),	-- The Culling of Stratholme
 exploration(4102),	-- Krom's Landing
 exploration(4110),	-- Farshire Fields
@@ -64,6 +64,7 @@ exploration(4268),	-- Ruuna's Camp
 exploration(4271),	-- Utgarde Pinnacle
 exploration(4273),	-- Ulduar
 exploration(4277),	-- Azjol-Nerub
+exploration(4281),	-- Acherus: The Ebon Hold
 exploration(4295),	-- The Sundered Shard
 exploration(4297),	-- Mosswalker Village
 exploration(4298),	-- Plaguelands: The Scarlet Enclave
@@ -97,10 +98,12 @@ exploration(4378),	-- Dalaran Arena
 exploration(4379),	-- Valgarde
 exploration(4380),	-- Westguard Inn
 exploration(4381),	-- Waygate
+exploration(4382),	-- The Shaper's Terrace
 exploration(4384),	-- Strand of the Ancients
 exploration(4387),	-- Frenzyheart River
 exploration(4388),	-- Wintergrasp River
 exploration(4394),	-- Scarlet Tavern
+exploration(4395),	-- Dalaran
 exploration(4399),	-- Farshire Mine
 exploration(4401),	-- Saragosa's Landing
 exploration(4404),	-- New Agamand Inn
@@ -109,6 +112,7 @@ exploration(4406),	-- The Ring of Valor
 exploration(4407),	-- Hall of the Frostwolf
 exploration(4408),	-- Hall of the Stormpike
 exploration(4411),	-- Stormwind Harbor
+exploration(4415),	-- The Violet Hold
 exploration(4416),	-- Gundrak
 exploration(4426),	-- Bor's Breath River
 exploration(4427),	-- Argent Vanguard
@@ -135,9 +139,11 @@ exploration(4539),	-- The Broken Temple
 exploration(4541),	-- Vanguard Infirmary
 exploration(4544),	-- Death's Breach
 exploration(4545),	-- Abandoned Mine
+exploration(4546),	-- Ruins of the Scarlet Enclave
 exploration(4547),	-- Halls of Stone
 exploration(4548),	-- Halls of Lightning
 exploration(4560),	-- The Underbelly
+exploration(4564),	-- Krasus' Landing
 exploration(4567),	-- The Violet Hold
 exploration(4568),	-- The Eventide
 exploration(4569),	-- Sewer Exit Pipe
@@ -180,6 +186,7 @@ exploration(4616),	-- Sunreaver's Sanctuary
 exploration(4617),	-- Elevator
 exploration(4618),	-- Antonidas Memorial
 exploration(4619),	-- The Violet Citadel
+exploration(4620),	-- Magus Commerce Exchange
 exploration(4621),	-- UNUSED
 exploration(4623),	-- Hall of the Conquered Kings
 exploration(4624),	-- Befouled Terrace

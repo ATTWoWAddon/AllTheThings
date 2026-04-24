@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(BLASTED_LANDS, {
 		["lore"] = "The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",
@@ -359,7 +360,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/9 Okril'lon Infantry slain
 							["provider"] = { "n", 42359 },	-- Okril'lon Infantry
-							["coord"] = { 53, 14.2, BLASTED_LANDS },
+							["coord"] = { 53.0, 14.2, BLASTED_LANDS },
 						}),
 						i(59373, {	-- Nethergarde Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -952,7 +953,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7582,	-- The Prison's Casing
 					},
 					["qg"] = 14463,	-- Daio the Decrepit
-					["coord"] = { 34, 50.2, BLASTED_LANDS },
+					["coord"] = { 34.0, 50.2, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -1276,6 +1277,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59401, {	-- Surwich Pauldrons
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						i(244777, {	-- Surwich Peddler's Wagon (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(59399, {	-- Wormthorn Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1303,6 +1307,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(59440, {	-- Sunveil Breastplate
 							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(244777, {	-- Surwich Peddler's Wagon (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 						i(59437, {	-- Wormthorn Gloves
 							["timeline"] = { ADDED_4_0_3 },
@@ -1354,7 +1361,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7581, {	-- The Prison's Bindings
 					["qg"] = 14463,	-- Daio the Decrepit
-					["coord"] = { 34, 50.2, BLASTED_LANDS },
+					["coord"] = { 34.0, 50.2, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARLOCK },
@@ -1367,7 +1374,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7582, {	-- The Prison's Casing
 					["qg"] = 14463,	-- Daio the Decrepit
-					["coord"] = { 34, 50.2, BLASTED_LANDS },
+					["coord"] = { 34.0, 50.2, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["classes"] = { WARLOCK },
@@ -1502,7 +1509,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Examined the Horde Plans
 							["provider"] = { "o", 203225 },	-- Horde Plans
-							["coord"] = { 53, 49, BLASTED_LANDS },
+							["coord"] = { 53.0, 49.0, BLASTED_LANDS },
 						}),
 						i(59394, {	-- Gloves of Foolish Innocence
 							["timeline"] = { ADDED_4_0_3 },
@@ -1843,6 +1850,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(44337, {	-- Maurice Essman <Blacksmith>
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(244777, {	-- Surwich Peddler's Wagon (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 8800000,	-- 880g
+						}),
+					},
+				}),
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -1891,9 +1908,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(57181, {	-- Crushed Nightstalker Leg
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {
-						{ "i", 57178, 1 },	-- Nightstalker Leg
-					},
+					["cost"] = { { "i", 57178, 1 } },	-- Nightstalker Leg
 				}),
 				i(57183, {	-- Demoniac Commixture
 					["timeline"] = { ADDED_4_0_3 },
@@ -1949,9 +1964,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(57182, {	-- Screecher Brain Paste
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {
-						{ "i", 57179, 1 },	-- Screecher Brain
-					},
+					["cost"] = { { "i", 57179, 1 } },	-- Screecher Brain
 				}),
 				i(57179, {	-- Screecher Brain
 					["timeline"] = { ADDED_4_0_3 },
@@ -1967,9 +1980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(57180, {	-- Tainted Hide Pouch
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {
-						{ "i", 57177, 4 },	-- Tainted Hide
-					},
+					["cost"] = { { "i", 57177, 4 } },	-- Tainted Hide
 				}),
 				i(57177, {	-- Tainted Hide
 					["timeline"] = { ADDED_4_0_3 },

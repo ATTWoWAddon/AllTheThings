@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(RENOWN, {
@@ -50,7 +51,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "o", 381664 },	-- Archivists' Request
 						["coord"] = { 47.6, 83.0, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-						["cost"] = {{ "i", 200143, 1 }},	--1xFenistrasza's Skull
+						["cost"] = { { "i", 200143, 1 } },	-- 1x Fenistrasza's Skull
 						["isWeekly"] = true,
 						["groups"] = {
 							i(200143),	-- Fenistrasza's Skull (QI!)
@@ -139,21 +140,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-						["cost"] = {{ "i", 192055, 1 }},	-- 1x Dragon Isles Artifact
+						["cost"] = { { "i", 192055, 1 } },	-- 1x Dragon Isles Artifact
 						["repeatable"] = true,
 					}),
 					q(71035, {	-- Multiple Dragon Isles Artifacts
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-						["cost"] = {{ "i", 192055, 5 }},	-- 5x Dragon Isles Artifact
+						["cost"] = { { "i", 192055, 5 } },	-- 5x Dragon Isles Artifact
 						["repeatable"] = true,
 					}),
 					q(72876, {	-- Multiple Dragon Isles Artifacts
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-						["cost"] = {{ "i", 192055, 20 }},	-- 20x Dragon Isles Artifact
+						["cost"] = { { "i", 192055, 20 } },	-- 20x Dragon Isles Artifact
 						["repeatable"] = true,
 					}),
 					------ BoA Dragon Isles Artifact ------
@@ -161,21 +162,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-						["cost"] = {{ "i", 200443, 1 }},	-- 1x Dragon Isles Artifact
+						["cost"] = { { "i", 200443, 1 } },	-- 1x Dragon Isles Artifact
 						["repeatable"] = true,
 					}),
 					q(71037, {	-- Multiple Dragon Isles Artifacts
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-						["cost"] = {{ "i", 200443, 5 }},	-- 5x Dragon Isles Artifact
+						["cost"] = { { "i", 200443, 5 } },	-- 5x Dragon Isles Artifact
 						["repeatable"] = true,
 					}),
 					q(72877, {	-- Multiple Dragon Isles Artifacts
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-						["cost"] = {{ "i", 200443, 20 }},	-- 20x Dragon Isles Artifact
+						["cost"] = { { "i", 200443, 20 } },	-- 20x Dragon Isles Artifact
 						["repeatable"] = true,
 					}),
 				}, {	-- RENOWN 3 --
@@ -399,7 +400,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70766, {	-- The Fractured Flame
 						["sourceQuests"] = { 70507 },	-- The Insight of Tyr
 						["provider"] = { "i", 199790 },	-- Makko's Journal Cover
-						["coord"] = { 44, 66, OHNAHRAN_PLAINS },
+						["coord"] = { 44.0, 66.0, OHNAHRAN_PLAINS },
 						["groups"] = {
 							i(203598),	-- Makko's Journal Cover (QI!)
 							i(200295),	-- Makko's Complete Journal (QI!) [book]
@@ -449,7 +450,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72038, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
+						-- ["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -784,7 +785,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72048, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
+						-- ["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -795,7 +796,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["groups"] = {
 							spell(388278),	-- Intrepid Explorer cast
-							title(475),	-- Intrepid Explorer <Name> (TITLE!)
+							title(475),	-- Intrepid Explorer <Name>
 							i(197921),	-- Primal Infusion
 						},
 					}),

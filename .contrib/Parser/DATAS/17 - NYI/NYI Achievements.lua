@@ -511,60 +511,54 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(14657),	-- Stygian Stockpile
 			ach(14757),	-- Stygian Supply
 			ach(14518),	-- The Many Trials of Zo'Sorg
-			ach(14587, {	-- Torghast: Coldheart Interstitia: Layer 9
-				ach(14484),	-- Torghast: Coldheart Interstitia: Layer 2
-				ach(14485),	-- Torghast: Coldheart Interstitia: Layer 3
-				ach(14486),	-- Torghast: Coldheart Interstitia: Layer 4
-				ach(14487),	-- Torghast: Coldheart Interstitia: Layer 5
-				ach(14584),	-- Torghast: Coldheart Interstitia: Layer 6
-				ach(14585),	-- Torghast: Coldheart Interstitia: Layer 7
-				ach(14586),	-- Torghast: Coldheart Interstitia: Layer 8
-			}),
-			ach(14579, {	-- Torghast: Fracture Chambers: Layer 9
-				ach(14474),	-- Torghast: Fracture Chambers: Layer 2
-				ach(14475),	-- Torghast: Fracture Chambers: Layer 3
-				ach(14476),	-- Torghast: Fracture Chambers: Layer 4
-				ach(14477),	-- Torghast: Fracture Chambers: Layer 5
-				ach(14576),	-- Torghast: Fracture Chambers: Layer 6
-				ach(14577),	-- Torghast: Fracture Chambers: Layer 7
-				ach(14578),	-- Torghast: Fracture Chambers: Layer 8
-			}),
-			ach(14591, {	-- Torghast: Mort'regar: Layer 9
-				ach(14489),	-- Torghast: Mort'regar: Layer 2
-				ach(14490),	-- Torghast: Mort'regar: Layer 3
-				ach(14491),	-- Torghast: Mort'regar: Layer 4
-				ach(14492),	-- Torghast: Mort'regar: Layer 5
-				ach(14588),	-- Torghast: Mort'regar: Layer 6
-				ach(14589),	-- Torghast: Mort'regar: Layer 7
-				ach(14590),	-- Torghast: Mort'regar: Layer 8
-			}),
-			ach(14575, {	-- Torghast: Skoldus Hall: Layer 9
-				ach(14465),	-- Torghast: Skoldus Hall: Layer 2
-				ach(14464),	-- Torghast: Skoldus Hall: Layer 3
-				ach(14466),	-- Torghast: Skoldus Hall: Layer 4
-				ach(14467),	-- Torghast: Skoldus Hall: Layer 5
-				ach(14572),	-- Torghast: Skoldus Hall: Layer 6
-				ach(14573),	-- Torghast: Skoldus Hall: Layer 7
-				ach(14574),	-- Torghast: Skoldus Hall: Layer 8
-			}),
-			ach(14583, {	-- Torghast: The Soulforges: Layer 9
-				ach(14479),	-- Torghast: The Soulforges: Layer 2
-				ach(14480),	-- Torghast: The Soulforges: Layer 3
-				ach(14481),	-- Torghast: The Soulforges: Layer 4
-				ach(14482),	-- Torghast: The Soulforges: Layer 5
-				ach(14580),	-- Torghast: The Soulforges: Layer 6
-				ach(14581),	-- Torghast: The Soulforges: Layer 7
-				ach(14582),	-- Torghast: The Soulforges: Layer 8
-			}),
-			ach(14595, {	-- Torghast: The Upper Reaches: Layer 9
-				ach(14494),	-- Torghast: The Upper Reaches: Layer 2
-				ach(14495),	-- Torghast: The Upper Reaches: Layer 3
-				ach(14496),	-- Torghast: The Upper Reaches: Layer 4
-				ach(14497),	-- Torghast: The Upper Reaches: Layer 5
-				ach(14592),	-- Torghast: The Upper Reaches: Layer 6
-				ach(14593),	-- Torghast: The Upper Reaches: Layer 7
-				ach(14594),	-- Torghast: The Upper Reaches: Layer 8
-			}),
+			ach(14484),	-- Torghast: Coldheart Interstitia: Layer 2
+			ach(14485),	-- Torghast: Coldheart Interstitia: Layer 3
+			ach(14486),	-- Torghast: Coldheart Interstitia: Layer 4
+			ach(14487),	-- Torghast: Coldheart Interstitia: Layer 5
+			ach(14584),	-- Torghast: Coldheart Interstitia: Layer 6
+			ach(14585),	-- Torghast: Coldheart Interstitia: Layer 7
+			ach(14586),	-- Torghast: Coldheart Interstitia: Layer 8
+			ach(14587),	-- Torghast: Coldheart Interstitia: Layer 9
+			ach(14474),	-- Torghast: Fracture Chambers: Layer 2
+			ach(14475),	-- Torghast: Fracture Chambers: Layer 3
+			ach(14476),	-- Torghast: Fracture Chambers: Layer 4
+			ach(14477),	-- Torghast: Fracture Chambers: Layer 5
+			ach(14576),	-- Torghast: Fracture Chambers: Layer 6
+			ach(14577),	-- Torghast: Fracture Chambers: Layer 7
+			ach(14578),	-- Torghast: Fracture Chambers: Layer 8
+			ach(14579),	-- Torghast: Fracture Chambers: Layer 9
+			ach(14489),	-- Torghast: Mort'regar: Layer 2
+			ach(14490),	-- Torghast: Mort'regar: Layer 3
+			ach(14491),	-- Torghast: Mort'regar: Layer 4
+			ach(14492),	-- Torghast: Mort'regar: Layer 5
+			ach(14588),	-- Torghast: Mort'regar: Layer 6
+			ach(14589),	-- Torghast: Mort'regar: Layer 7
+			ach(14590),	-- Torghast: Mort'regar: Layer 8
+			ach(14591),	-- Torghast: Mort'regar: Layer 9
+			ach(14465),	-- Torghast: Skoldus Hall: Layer 2
+			ach(14464),	-- Torghast: Skoldus Hall: Layer 3
+			ach(14466),	-- Torghast: Skoldus Hall: Layer 4
+			ach(14467),	-- Torghast: Skoldus Hall: Layer 5
+			ach(14572),	-- Torghast: Skoldus Hall: Layer 6
+			ach(14573),	-- Torghast: Skoldus Hall: Layer 7
+			ach(14574),	-- Torghast: Skoldus Hall: Layer 8
+			ach(14575),	-- Torghast: Skoldus Hall: Layer 9
+			ach(14479),	-- Torghast: The Soulforges: Layer 2
+			ach(14480),	-- Torghast: The Soulforges: Layer 3
+			ach(14481),	-- Torghast: The Soulforges: Layer 4
+			ach(14482),	-- Torghast: The Soulforges: Layer 5
+			ach(14580),	-- Torghast: The Soulforges: Layer 6
+			ach(14581),	-- Torghast: The Soulforges: Layer 7
+			ach(14582),	-- Torghast: The Soulforges: Layer 8
+			ach(14583),	-- Torghast: The Soulforges: Layer 9
+			ach(14494),	-- Torghast: The Upper Reaches: Layer 2
+			ach(14495),	-- Torghast: The Upper Reaches: Layer 3
+			ach(14496),	-- Torghast: The Upper Reaches: Layer 4
+			ach(14497),	-- Torghast: The Upper Reaches: Layer 5
+			ach(14592),	-- Torghast: The Upper Reaches: Layer 6
+			ach(14593),	-- Torghast: The Upper Reaches: Layer 7
+			ach(14594),	-- Torghast: The Upper Reaches: Layer 8
+			ach(14595),	-- Torghast: The Upper Reaches: Layer 9
 			ach(14604),	-- Torghast: Tracking - Completed Layer 9
 			ach(14571),	-- Twisting Corridors: Layer 9
 			ach(13997),	-- Venthyr Campaign
@@ -649,59 +643,76 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
-		-- CREATED_11_0_0
+		-- 11.0.0
 		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-			ach(18830),	-- Level 2
-			ach(20512),	-- Herding Cats
-			ach(40099),	-- That Extra Push Over the Cliff
-			ach(40101),	-- Hitting one's Stride
-			ach(40102),	-- Dawn of a new Delve
-			ach(40265),	-- [PH] The Silken Court Achievement
-			ach(40306),	-- Allied Races: Earthen
-			ach(40432),	-- Nemesis (Solo)
-			ach(40505),	-- Fate of the Kirin Tor
-			ach(40510),	-- One Ping Only
-			ach(40511),	-- Rare Within
-			ach(40619),	-- Mine Poppin'
-
-			-- 11.0.0.54361
 			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
-
-			-- 11.0.0.55000
-			ach(40750),	-- Treasure Trove Keys obtained
-
-			-- 11.0.0.54675
+			ach(40306),	-- Allied Races: Earthen
 			ach(40509),	-- Awakening The Machine: Wave 10
-
-			-- 11.0.0.54774
 			ach(40586),	-- Awakening The Machine: Wave 20
 			ach(40587),	-- Awakening The Machine: Wave 30
 			ach(40588),	-- Awakening The Machine: Wave 40
 			ach(40589),	-- Awakening The Machine: Wave 50
+			ach(40102),	-- Dawn of a new Delve
+			ach(40505),	-- Fate of the Kirin Tor
+			ach(20512),	-- Herding Cats
+			ach(40101),	-- Hitting one's Stride
+			ach(18830),	-- Level 2
+			ach(40619),	-- Mine Poppin'
+			ach(40432),	-- Nemesis (Solo)
+			ach(40510),	-- One Ping Only
+			ach(40511),	-- Rare Within
+			ach(40099),	-- That Extra Push Over the Cliff
+			ach(40750),	-- Treasure Trove Keys obtained
+			ach(40265),	-- [PH] The Silken Court Achievement
 		})),
 
-		-- CREATED_11_0_7
+		-- 11.0.7
 		expansion(EXPANSION.TWW, patch(0,07), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
-			-- 11.0.7.57361
-			ach(41219),	-- Explore Siren Isle => Appeared in build 11.0.7.57361, but hasn't been seen since
+			ach(41219),	-- Explore Siren Isle
 		})),
 
-		-- CREATED_11_1_5
+		-- 11.1.5
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
-			-- 11.1.5.60008
-			ach(15558),	-- Survey Bot (Added in 11.1.5.60008, removed in 11.1.5.60067)
 			ach(41700),	-- Dastardly Duos Weekly Wins
+			ach(15558),	-- Survey Bot (Added in 11.1.5.60008, removed in 11.1.5.60067)
 		})),
 
-		-- CREATED_11_1_7
+		-- 11.1.7
 		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
-			--11.1.7.60520
-			ach(42028),	-- Ashes to Ashes (Temporary home as this will likely return / is planned for Legion Remix, but missing files keeps picking up the commented version)
+			ach(42028),	-- Ashes to Ashes
+		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			ach(51753),	-- Azsuna Matata
+			ach(40887),	-- Fox Friends
 		})),
 	}),
 	expansion(EXPANSION.MID, {
-		-- CREATED_12_0_0
+		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			ach(42575),	-- Elusive Foes: Antoran Wastes
+			ach(42646),	-- Elusive Foes: Eredath
+			ach(42579),	-- Elusive Foes: Highmountain
+			ach(42591),	-- Elusive Foes: Krokuun
+			ach(42640),	-- Elusive Foes: Stormheim
+			ach(42650),	-- Elusive Foes: Suramar
+			ach(42580),	-- Elusive Foes: Val'sharah
+			ach(42560),	-- Explore Antoran Wastes
+			ach(42535),	-- Explore Eredath
+			ach(42528),	-- Explore Highmountain
+			ach(42620),	-- Explore Krokuun
+			ach(42608),	-- Explore Stormheim
+			ach(42665),	-- Explore Suramar
+			ach(42573),	-- Explore Val'sharah
+			ach(61569),	-- Fool Me Once...
+			ach(42631),	-- Hidden Treasures: Antoran Wastes
+			ach(42626),	-- Hidden Treasures: Eredath
+			ach(42634),	-- Hidden Treasures: Highmountain
+			ach(42588),	-- Hidden Treasures: Krokuun
+			ach(42606),	-- Hidden Treasures: Stormheim
+			ach(42577),	-- Hidden Treasures: Suramar
+			ach(42668),	-- Hidden Treasures: Val'sharah
 		})),
 	}),
 	-- #endif

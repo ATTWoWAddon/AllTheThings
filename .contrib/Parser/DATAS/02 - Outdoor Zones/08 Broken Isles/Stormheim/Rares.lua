@@ -5,20 +5,11 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
-			n(RARES, {
-				n(SPECIAL, sharedData({["sharedDescription"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
-					n(109083, {	-- Houndmaster Payne
-						["questID"] = 42858,
-						["coord"] = { 72, 59.8, STORMHEIM },
-						["crs"] = { 109089 },	-- Houndmaster Payne
-						["description"] = "Patrols inside of Greywatch. Horde players can still interact with him, but be aware the rest of the camp will be hostile. Shares completion with |cffffff00Batmaster Claud|r. \n\nCan be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit.",
-					}),
-					n(109133, {	-- Batmaster Claud
-						["questID"] = 42858,
-						["coord"] = { 54.6, 71.6, STORMHEIM },
-						["description"] = "Patrols inside of Dreadwake's Landing. Alliance players can still interact with him, but be aware the rest of the camp will be hostile. Shares completion with |cffffff00Houndmaster Payne|r. \n\nCan be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit.",
-					}),
-				})),
+			n(RARES, sharedData({
+				-- #IF AFTER 11.2.5
+				["isDaily"] = true,	-- Daily during Legion Remix 2025,and persisting thereafter
+				-- #endif
+			}, {
 				n(91874, {	-- Bladesquall
 					["questID"] = 38431,
 					["coord"] = { 46.0, 77.7, STORMHEIM },
@@ -45,6 +36,7 @@ root(ROOTS.Zones, {
 					["questID"] = 39048,
 					["coord"] = { 58.2, 75.5, STORMHEIM },
 					["races"] = HORDE_ONLY,
+					["isDaily"] = IGNORED_VALUE,
 					["groups"] = {
 						i(129144),	-- Boomer's Utility Belt
 					},
@@ -76,25 +68,29 @@ root(ROOTS.Zones, {
 					icon = 463451,
 					text = {
 						en = "Forsaken Deathsquad",
-						es = "Escuadrón de la Muerte Abandonado",
 						de = "Todesschwadron der Verlassenen",
+						es = "Escuadrón de la Muerte Abandonado",
+						-- TODO: mx = "",
 						fr = "Escadron de la Mort Abandonné",
 						it = "Squadra della Morte Abbandonata",
+						ko = "포세이큰 데스스쿼드",
 						pt = "Esquadrão da Morte Abandonado",
 						ru = "Отрекшийся отряд смерти",
-						ko = "포세이큰 데스스쿼드",
 						cn = "被遗忘者敢死队",
+						-- TODO: tw = "",
 					},
 					description = {
 						en = "There is an ongoing 4x4 battle. Assist the Alliance by defeating the Forsaken Deathsquad.",
-						es = "Hay una batalla 4x4 en curso. Ayuda a la Alianza derrotando al Forsaken Deathsquad.",
 						de = "Es gibt einen laufenden 4x4-Kampf. Unterstützen Sie die Allianz, indem Sie die Todesschwadron der Forsaken besiegen.",
+						es = "Hay una batalla 4x4 en curso. Ayuda a la Alianza derrotando al Forsaken Deathsquad.",
+						-- TODO: mx = "",
 						fr = "Il y a une bataille en 4x4 en cours. Aidez l'Alliance en battant l'escadron de la mort abandonné.",
 						it = "C'è una battaglia 4x4 in corso. Aiuta l'Alleanza sconfiggendo la Squadra della Morte dei Rinnegati.",
+						ko = "4대4 전투가 진행 중입니다. Forsaken Deathsquad를 물리쳐 얼라이언스를 지원하세요.",
 						pt = "Há uma batalha 4x4 em andamento. Ajude a Aliança derrotando o Esquadrão da Morte Abandonado.",
 						ru = "Идет продолжающаяся битва четыре на четыре. Помогите Альянсу, победив Отрекшихся Отряд Смерти.",
-						ko = "4대4 전투가 진행 중입니다. Forsaken Deathsquad를 물리쳐 얼라이언스를 지원하세요.",
 						cn = "正在进行一场四对四的战斗。协助联盟击败被遗忘者敢死队。",
+						-- TODO: tw = "",
 					},
 				}), {
 					["providers"] = {
@@ -189,6 +185,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 35.4, 18.4, STORMHEIM },
 					["crs"] = { 92343 },	-- Captain Tomas
 					["races"] = HORDE_ONLY,
+					["isDaily"] = IGNORED_VALUE,
 					["groups"] = {
 						i(129040),	-- Clacker's Clanking Clam Diggers
 					},
@@ -268,25 +265,29 @@ root(ROOTS.Zones, {
 					icon = 463876,
 					text = {
 						en = "Worgen Stalkers",
+						-- TODO: de = "",
 						es = "Acechadores Huargen",
-						--de = "Worgen Stalkers",
+						-- TODO: mx = "",
 						fr = "Traqueurs Worgens",
 						it = "Cacciatori Worgen",
+						ko = "늑대인간 추적자",
 						pt = "Perseguidores Worgens",
 						ru = "Воргены-сталкеры",
-						ko = "늑대인간 추적자",
 						cn = "狼人追猎者",
+						-- TODO: tw = "",
 					},
 					description = {
 						en = "There is an ongoing 4x4 battle. Assist the Horde by defeating the Worgen Stalkers.",
-						es = "Hay una batalla 4x4 en curso. Ayuda a la Horda derrotando a los Worgen Stalkers.",
 						de = "Es gibt einen laufenden 4x4-Kampf. Unterstützen Sie die Horde, indem Sie die Worgenpirscher besiegen.",
+						es = "Hay una batalla 4x4 en curso. Ayuda a la Horda derrotando a los Worgen Stalkers.",
+						-- TODO: mx = "",
 						fr = "Il y a une bataille en 4x4 en cours. Aidez la Horde en battant les Worgen Stalkers.",
 						it = "C'è una battaglia 4x4 in corso. Aiuta l'Orda sconfiggendo i Worgen Stalker.",
+						ko = "4대4 전투가 진행 중입니다. 늑대인간 추적자를 물리쳐 호드를 도와주세요.",
 						pt = "Há uma batalha 4x4 em andamento. Ajude a Horda derrotando os Worgen Stalkers.",
 						ru = "Идет продолжающаяся битва четыре на четыре. Помогите Орде, победив воргенов-сталкеров.",
-						ko = "4대4 전투가 진행 중입니다. 늑대인간 추적자를 물리쳐 호드를 도와주세요.",
 						cn = "正在进行一场四对四的战斗。击败狼人追猎者，协助部落。",
+						-- TODO: tw = "",
 					},
 				}), {
 					["providers"] = {
@@ -302,24 +303,24 @@ root(ROOTS.Zones, {
 						i(129264),	-- Patrol Captain's Gauntlets
 					},
 				}),
---[[ TODO:
-			--	n(108885, {	-- Aegir Wavecrusher	}),
-			--	n(109113, {	-- Boulderfall, the Eroded	}),
-			--	n(111463, {	-- Bulvinkel	}),
-			--	n(108790, {	-- Den Mother Ylva	}),
-			--	n(108827, {	-- Fjorlag, the Grave's Chill	}),
-			--	n(108823, {	-- Halfdan	}),
-			--	n(92682, {	-- Helmouth Raider	}),
-			--	n(92703, {	-- Helmouth Raider	}),
-			--	n(108822, {	-- Huntress Estrid	}),
-			--	n(109015, {	-- Lagertha	}),
-			--	n(109317, {	-- Rulf Bonesnapper	}),
-			--	n(109318, {	-- Runeseer Sigvid	}),
-			--	n(109195, {	-- Soulbinder Halldora	}),
-			--	n(109994, {	-- Stormtalon	}),
-			--	n(100223, {	-- Vrykul Earthshaper Spirit	}),
-			--	n(100224, {	-- Vrykul Earthmaiden Spirit	}),	--]]
-			}),
+			-- TODO:
+			-- n(108885, {	-- Aegir Wavecrusher	}),
+			-- n(109113, {	-- Boulderfall, the Eroded	}),
+			-- n(111463, {	-- Bulvinkel	}),
+			-- n(108790, {	-- Den Mother Ylva	}),
+			-- n(108827, {	-- Fjorlag, the Grave's Chill	}),
+			-- n(108823, {	-- Halfdan	}),
+			-- n(92682, {	-- Helmouth Raider	}),
+			-- n(92703, {	-- Helmouth Raider	}),
+			-- n(108822, {	-- Huntress Estrid	}),
+			-- n(109015, {	-- Lagertha	}),
+			-- n(109317, {	-- Rulf Bonesnapper	}),
+			-- n(109318, {	-- Runeseer Sigvid	}),
+			-- n(109195, {	-- Soulbinder Halldora	}),
+			-- n(109994, {	-- Stormtalon	}),
+			-- n(100223, {	-- Vrykul Earthshaper Spirit	}),
+			-- n(100224, {	-- Vrykul Earthmaiden Spirit	}),
+			})),
 		}),
 	}),
 });

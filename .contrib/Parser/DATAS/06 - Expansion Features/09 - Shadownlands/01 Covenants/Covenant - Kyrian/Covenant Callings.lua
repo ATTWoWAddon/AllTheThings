@@ -144,7 +144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60407, {	-- Training in Maldraxxus
 					["provider"] = { "n", 168517 },	-- Kalisthene
-					--["coord"] = { , BASTION },
+					-- ["coord"] = { , BASTION },
 					["groups"] = {
 						i(181372),	-- Tribute of the Ascended
 					},

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 GARRISON_INVASIONS = createHeader({
 	readable = "Garrison Invasions",
 	icon = 236351,
@@ -9,8 +10,10 @@ GARRISON_INVASIONS = createHeader({
 	},
 	description = {
 		en = "To trigger an invasion, you need to do an assault quest or purchase a scouting missive from the garrison quartermaster. \n\nBotani Invasion -- Assault on Lost Veil Anzu, Assault on the Everbloom Wilds \n\nGoren Invasion -- Assault on Magnarok, Assault on the Broken Precipice \n\nIron Horde Invasion -- Assault on Mok'gol Watchpost, Assault on the Iron Siegeworks, Assault on the Pit, Battle in Ashran \n\nOgre Invasion -- Assault on Stonefury Cliffs, Assault on the Gorian Proving Grounds, Challenge at the Ring of Blood \n\nShadow Council Invasion -- Assault on Shattrath Harbor, Assault on the Heart of Shattrath \n\nShadowmoon Invasion -- Assault on Darktide Roost, Assault on Pillars of Fate, Assault on Skettis, Assault on Socrethar's Rise \n\nYou can earn Bronze, Silver, Gold, and Platinum rewards once per week per toon.",
+		cn = "要触发一次入侵事件，你需要完成一个突袭任务，或者从要塞军需官处购买一份侦察信件。\n\n食人魔花入侵：失落面纱安苏突袭战、永恒花海荒野突袭战\n\n戈隆入侵：玛格纳洛克突袭战、破碎悬崖突袭战\n\n钢铁部落入侵：莫戈尔哨站突袭战、钢铁攻城器械突袭战、深渊突袭战、阿什兰之战\n\n食人魔入侵：石怒悬崖突袭战、戈里安试炼场突袭战、鲜血之环挑战\n\n暗影议会入侵：沙塔斯港口突袭战、沙塔斯之心突袭战\n\n影月入侵：暗潮栖木突袭战、命运之柱突袭战、斯克提斯突袭战、索克雷萨高地突袭战\n\n每个角色每周可获得一次青铜、白银、黄金和白金级奖励 ",
 	},
 });
+
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
@@ -18,6 +21,18 @@ root(ROOTS.ExpansionFeatures,
 				n(ACHIEVEMENTS, {
 					ach(9208),	-- Botani Invasion
 					ach(9207),	-- Goren Invasion
+					ach(9162),	-- Bronze Defender
+					ach(9164),	-- Silver Defender
+					ach(9165),	-- Golden Defender
+					achpart(9826, 9827),	-- Platinum Defender / Impervious Defender
+					ach(9209, {		-- Master Defender
+						crit(27294),		-- Botani
+						crit(27295),		-- Goren
+						crit(27296),		-- Iron Horde
+						crit(27297),		-- Ogres
+						crit(27298),		-- Shadow Council
+						crit(27299),		-- Shadowmoon
+					}),
 					ach(9827, {		-- Impervious Defender
 						crit(27586),		-- Botani
 						crit(27587),		-- Goren
@@ -25,19 +40,10 @@ root(ROOTS.ExpansionFeatures,
 						crit(27589),		-- Ogres
 						crit(27590),		-- Shadow Council
 						crit(27591),		-- Shadowmoon
-						ach(9209, {		-- Master Defender
-							crit(27294),		-- Botani
-							crit(27295),		-- Goren
-							crit(27296),		-- Iron Horde
-							crit(27297),		-- Ogres
-							crit(27298),		-- Shadow Council
-							crit(27299),		-- Shadowmoon
-						}),
 					}),
-					ach(9543, {	-- Invasion? What Invasion? (50)
-						ach(9167),		-- Invasion Specialist (10)
-						ach(9152),		-- It's an Invasion! (1)
-					}),
+					ach(9152),		-- It's an Invasion! (1)
+					ach(9167),		-- Invasion Specialist (10)
+					ach(9543),	-- Invasion? What Invasion? (50)
 					ach(9244),		-- Invasions Are Better with Friends
 					ach(9205),		-- Iron Horde Invasion
 					ach(9858, {		-- Master and Commander
@@ -49,17 +55,6 @@ root(ROOTS.ExpansionFeatures,
 						crit(27709),		-- Annihilon
 					}),
 					ach(9204),		-- Ogre Invasion
-					ach(9826, {		-- Platinum Defender
-						crit(27586),		-- Botani
-						crit(27587),		-- Goren
-						crit(27588),		-- Iron Horde
-						crit(27589),		-- Ogres
-						crit(27590),		-- Shadow Council
-						crit(27591),		-- Shadowmoon
-						ach(9165),		-- Golden Defender
-						ach(9164),		-- Silver Defender
-						ach(9162),		-- Bronze Defender
-					}),
 					ach(9181, {		-- Save Those Buildings!
 						crit(25290),		-- Goren
 						crit(25292),		-- Iron Horde
@@ -123,84 +118,84 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(QUESTS, {
 					q(36171, {	-- Botani Invasion!
-						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["qg"] = 78564,	-- Sergeant Crowler
 						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36653, {	-- Botani Invasion!
-						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["qg"] = 79774,	-- Sergeant Grimjaw
 						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36376, {	-- Goren Invasion!
-						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["qg"] = 78564,	-- Sergeant Crowler
 						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(35142, {	-- Goren Invasion!
-						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["qg"] = 79774,	-- Sergeant Grimjaw
 						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36655, {	-- Iron Horde Invasion!
-						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["qg"] = 78564,	-- Sergeant Crowler
 						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(35935, {	-- Iron Horde Invasion!
-						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["qg"] = 79774,	-- Sergeant Grimjaw
 						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36650, {	-- Ogre Invasion!
-						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["qg"] = 78564,	-- Sergeant Crowler
 						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36623, {	-- Ogre Invasion!
-						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["qg"] = 79774,	-- Sergeant Grimjaw
 						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36830, {	-- Shadow Council Invasion!
-						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["qg"] = 78564,	-- Sergeant Crowler
 						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36831, {	-- Shadow Council Invasion!
-						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["qg"] = 79774,	-- Sergeant Grimjaw
 						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36412, {	-- Shadowmoon Invasion!
-						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["qg"] = 78564,	-- Sergeant Crowler
 						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36414, {	-- Shadowmoon Invasion!
-						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["qg"] = 79774,	-- Sergeant Grimjaw
 						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
@@ -209,9 +204,9 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(EVENT_COMPLETION, {
 					i(120320, {	-- Invader's Abandoned Sack
+						["description"] = "Bronze Challenge",
 						["questID"] = 37638,
 						["isWeekly"] = true,
-						["description"] = "Bronze Challenge",
 						["groups"] = {
 							i(115418),	-- Blood Gutter Greatsword
 							i(115417),	-- Chadrik's Lost Axe
@@ -236,18 +231,18 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					i(120319, {	-- Invader's Damaged Cache
+						["description"] = "Silver Challenge",
 						["questID"] = 37639,
 						["isWeekly"] = true,
-						["description"] = "Silver Challenge",
 						["sym"] = {
 							{ "select", "itemID", 120320 },	-- Select Invader's Abandoned Sack (Bronze Rewards)
 							{ "pop" },						-- pop the Item container
 						},
 					}),
 					i(116980, {	-- Invader's Forgotten Treasure
+						["description"] = "Gold Challenge",
 						["questID"] = 37640,
 						["isWeekly"] = true,
-						["description"] = "Gold Challenge",
 						["sym"] = {
 							{ "select", "itemID", 120320 },	-- Select Invader's Abandoned Sack (Bronze Rewards)
 							{ "pop" },						-- pop the Item container
@@ -260,9 +255,9 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					i(122163, {	-- Routed Invader's Crate of Spoils
+						["description"] = "Platinum Challenge",
 						["questID"] = 38482,
 						["isWeekly"] = true,
-						["description"] = "Platinum Challenge",
 						["sym"] = {
 							{ "select", "itemID", 116980 },	-- Select Invader's Forgotten Treasure (Gold Rewards)
 							{ "pop" },						-- pop the Item container

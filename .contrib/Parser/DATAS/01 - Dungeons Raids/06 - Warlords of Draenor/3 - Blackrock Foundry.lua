@@ -1303,7 +1303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(120209, {	-- Essence of the Iron Conqueror
 						["races"] = HORDE_ONLY,
 					}),
-                    i(120284, {	-- Essence of the Iron Protector
+					i(120284, {	-- Essence of the Iron Protector
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(120210, {	-- Essence of the Iron Protector
@@ -1330,6 +1330,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 
 -- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 -- 	inst(457, {
---		q(34405),	-- DEPRECATED - REUSE - triggers after looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry
---	}),
+-- 		q(34405),	-- DEPRECATED - REUSE - triggers after looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry
+-- 	}),
 -- })));

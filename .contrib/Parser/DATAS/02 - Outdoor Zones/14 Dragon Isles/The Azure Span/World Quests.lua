@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		n(WORLD_QUESTS, {
@@ -8,12 +9,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
-				--[[
-				q(QUEST, {	-- NAME
-					["coord"] = { XX, YY, THE_AZURE_SPAN },
-				}),
-				]]--
+			["groups"] = sharedData({
+				["isWorldQuest"] = true,
+			}, {
 				petbattle(q(74836, {	-- A New Vocation
 					["coord"] = { 19.52, 24.61, THE_AZURE_SPAN },
 					["timeline"] = { ADDED_10_0_7 },
@@ -39,7 +37,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(70720, {	-- Can't Have These
 					["coord"] = { 12.4, 42.4, THE_AZURE_SPAN },
 					["groups"] = {
-						i(199704),	-- Artifact Fragment (QI!)
+						o(381283, {	-- Iskhdormi Artifact
+							["coords"] = {
+								{ 12.2, 41.8, THE_AZURE_SPAN },
+								{ 12.4, 40.7, THE_AZURE_SPAN },
+								{ 12.5, 43.1, THE_AZURE_SPAN },
+							},
+							["groups"] = { i(199704) },	-- Artifact Fragment (QI!)
+						}),
 						i(199692),	-- Artifact Locator (QI!)
 					},
 				}),

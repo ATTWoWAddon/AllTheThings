@@ -28,12 +28,9 @@ root(ROOTS.Zones, {
 				}),
 				ach(12292),	-- Highmountain Tribe
 				ach(11257, {	-- Treasures of Highmountain (mostly-automated)
-					crit(33517, {	-- Amateur Hunters (Treasure)
-						["_quests"] = { 40413 },	-- Amateur Hunters (Treasure)
+					crit(33537, {	-- 40 Treasures
+						-- ["_quests"] = {  },	-- 40 Treasures (apparently this triggers inconsistently, questID 40610)
 					}),
-					-- crit(33537, {	-- TODO
-					-- 	["_quests"] = { TODO },	-- TODO
-					-- })
 					i(245460, {	-- Skyhorn Storage Chest (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
 					}),

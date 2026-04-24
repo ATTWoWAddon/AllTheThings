@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --         Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if AFTER 4.0.3
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(SOUTHERN_BARRENS, {
@@ -143,7 +144,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(388, {	-- Northwatch Hold, Southern Barrens
 					["cr"] = 39212,	-- Bill Williamson <Flight Master>
-					["coord"] = { 66.4, 47, SOUTHERN_BARRENS },
+					["coord"] = { 66.4, 47.0, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -172,7 +173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(31918, {	-- A Tamer's Homecoming (H)
 					["sourceQuest"] = 31870,	-- Cassandra Kaboom
-					["altQuests"] = { 31917 },	-- A Tamer's Homecoming (A) -- CRIEVE NOTE: Check this on MOP Classic
+					["altQuests"] = { 31917 },	-- A Tamer's Homecoming (A)	-- CRIEVE NOTE: Check this on MOP Classic
 					["qg"] = 66422,	-- Cassandra Kaboom
 					["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_5_0_4 },
@@ -339,7 +340,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -349,7 +350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -520,7 +521,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 1 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 1 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -1053,7 +1054,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 6912 },	-- Heartswood
 								{ "o", 93192 },	-- Heartswood
 							},
-							["coord"] = { 31, 31, ASHENVALE },
+							["coord"] = { 31.0, 31.0, ASHENVALE },
 						}),
 					},
 				}),
@@ -1140,7 +1141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Ishamuhale's Fang
 							["provider"] = { "i", 5101 },	-- Ishamuhale's Fang
 							["coord"] = { 59.8, 30.6, THE_BARRENS },
-							["cost"] = {{ "i", 10338, 1 }},	-- Fresh Zhevra Carcass
+							["cost"] = { { "i", 10338, 1 } },	-- Fresh Zhevra Carcass
 							["cr"] = 3257,	-- Ishamuhale
 						}),
 						-- #if BEFORE 4.0.3
@@ -1533,16 +1534,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								37084,	-- Terrortooth Scytheclaw
 							},
 						}),
-						i(53241, {  -- Steel-Patched Belt
+						i(53241, { 	-- Steel-Patched Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53258, {  -- Terrortooth Hide Bracers
+						i(53258, { 	-- Terrortooth Hide Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53248, {  -- Raptor Scrap Cloak
+						i(53248, { 	-- Raptor Scrap Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(131371, {  -- Steel-Patched Armbands
+						i(131371, { 	-- Steel-Patched Armbands
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
@@ -1552,7 +1553,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -1669,7 +1670,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 3644 },	-- Bael Modan Flying Machine
 								{ "i", 5021 },	-- Explosive Stick of Gann
 							},
-							["coord"] = { 46, 85, THE_BARRENS },
+							["coord"] = { 46.0, 85.0, THE_BARRENS },
 						}),
 						i(5313, {	-- Totemic Clan Ring
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1681,7 +1682,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -1908,7 +1909,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 10 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 10 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -1923,13 +1924,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Henry Zykes slain
 							["provider"] = { "n", 37165 },	-- Henry Zykes
 						}),
-						i(53307, {  -- Surveying Gloves
+						i(53307, { 	-- Surveying Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53308, {  -- Zykes' Belt
+						i(53308, { 	-- Zykes' Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(131372, {  -- Surveying Gauntlets
+						i(131372, { 	-- Surveying Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
@@ -2013,16 +2014,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 General Hawthorne slain
 							["provider"] = { "n", 38018 },	-- General Hawthorne
 						}),
-						i(53226, {  -- Battlescar Monnion
+						i(53226, { 	-- Battlescar Monnion
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53232, {  -- Cloak of Harvested Fear
+						i(53232, { 	-- Cloak of Harvested Fear
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(53256, {  -- Taurajo Butcher's Blade
+						i(53256, { 	-- Taurajo Butcher's Blade
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(131383, {  -- Battlescar Amice
+						i(131383, { 	-- Battlescar Amice
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
@@ -2242,7 +2243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(53250, {	-- Ring of Reclaimed Honor
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(131370, {  -- Holgom's Waistcord
+						i(131370, { 	-- Holgom's Waistcord
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
@@ -2308,7 +2309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,

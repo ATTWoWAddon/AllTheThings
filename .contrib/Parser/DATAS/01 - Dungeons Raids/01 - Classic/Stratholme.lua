@@ -1,18 +1,31 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 MAIN_GATE = createHeader({
 	readable = "Main Gate",
 	icon = 134503,
 	text = {
 		-- #if ANYCLASSIC
 		en = "Main Gate",
+		de = "Haupttor",
+		es = "Puerta principal",
+		mx = "Puerta principal",
+		fr = "Grande porte",
+		-- it = "Main Gate",
+		ko = "정문",
+		pt = "Portão Principal",
+		ru = "Главные врата",
+		cn = "正门",
+		tw = "主門",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5916)]],	-- Stratholme - Main Gate
 		-- #endif
 	},
 	description = {
 		en = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
+		es = "Stratholme está dividida en dos lados.\n\nEste lado se conoce comúnmente como el lado \"Vivo\" o \"Escarlata\", que ha sido tomado por la Cruzada Escarlata.",
+		mx = "Stratholme está dividida en dos partes.\n\nEsta parte se conoce comúnmente como la parte \"Viva\" o \"Escarlata\", que ha sido tomado por la Cruzada Escarlata.",
 	},
 });
 SERVICE_ENTRANCE = createHeader({
@@ -21,20 +34,31 @@ SERVICE_ENTRANCE = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Service Entrance",
-		es = "Entrada de servicio",
-		mx = "Entrada de servicio",
+		de = "Dienstboteneingang",
+		es = "Entrada del servicio",
+		mx = "Entrada del servicio",
+		fr = "Entrée de service",
+		-- it = "Service Entrance",
+		ko = "공무용 입구",
+		pt = "Entrada de Serviço",
+		ru = "Черный ход",
+		cn = "后门",
+		tw = "僕從入口",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5917)]],	-- Stratholme - Service Entrance
 		-- #endif
 	},
 	description = {
 		en = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
+		es = "Stratholme está dividida en dos lados.\n\nEste lado se conoce comúnmente como el lado de los 'Muertos' o del 'Azote', que el Azote ha tomado.",
+		mx = "Stratholme está dividida en dos partes.\n\nEste lado se conoce comúnmente como la parte de los 'No Muertos' o de la 'Plaga', que la Plaga ha tomado.",
 	},
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(236, {	-- Stratholme
 		-- #if BEFORE MOP
-		["lore"] = "Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge -- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",
+		["lore"] = "Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge	-- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",
 		-- #endif
 		["zone-text-areaID"] = 2017,	-- Stratholme
 		-- #if BEFORE 4.0.3
@@ -163,7 +187,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5944, {	-- In Dreams
 					["sourceQuest"] = 5862,	-- Scarlet Subterfuge
 					["qg"] = 1842,	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
-					["coord"] = { 42, 14.8, WESTERN_PLAGUELANDS },
+					["coord"] = { 42.0, 14.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
@@ -290,6 +314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6163, {	-- Ramstein
+					["sourceQuest"] = 6135,	-- Duskwing, Oh How I Hate Thee...
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1531,7 +1556,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["providers"] = {
 							{ "o", 176325 },	-- Blacksmithing Plans
 							-- This is what it should be, but since tooltips for objects with EXACTLY THE SAME NAME are wonky in the same instance (due to a lack of coordinates....), this is necessary to make the tooltips make more sense.
-							--{ "o", 176327 },	-- Blacksmithing Plans
+							-- { "o", 176327 },	-- Blacksmithing Plans
 						},
 						["description"] = "Found outside of Baroness Anastari's ziggurat.",
 						["groups"] = {
@@ -1694,11 +1719,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					e(456, {	-- Baron Rivendare [Classic] / Lord Aurius Rivendare [CATA+]
-						-- #if AFTER 4.0.3
-						["creatureID"] = 45412,	-- Lord Aurius Rivendare
-						-- #else
-						["creatureID"] = 10440,	-- Baron Rivendare
-						-- #endif
+						["crs"] = {
+							-- #if AFTER CATA
+							45412,	-- Lord Aurius Rivendare
+							-- #else
+							10440,	-- Baron Rivendare
+							-- #endif
+						},
 						["groups"] = {
 							i(13251),	-- Head of Baron Rivendare
 							ach(729, {	-- Deathcharger's Reins
@@ -1800,10 +1827,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(10440, {	-- Baron Rivendare
 						-- #if BEFORE 4.0.3
-						-- #if AFTER WRATH
 						-- NOTE: This will merge the data with the encounter object and push the removed T0 pieces to the bottom of the list.
 						["encounterID"] = 456,	-- Baron Rivendare
-						-- #endif
 						-- #endif
 						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {

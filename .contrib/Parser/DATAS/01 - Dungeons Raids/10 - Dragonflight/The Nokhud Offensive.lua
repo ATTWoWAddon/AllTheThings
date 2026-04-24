@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1198, {	-- The Nokhud Offensive
 		["coord"] = { 60.9, 39.1, OHNAHRAN_PLAINS },
@@ -8,23 +9,23 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		["groups"] = {
 			n(FLIGHT_PATHS, {
 				fp(2847, {	-- Maruukai, The Nokhud Offensive
-					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					-- ["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
 					["crs"] = { 199615 },	-- Salukan
 				}),
 				fp(2851, {	-- Ohn'iri Springs, The Nokhud Offensive
-					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					-- ["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
 					["crs"] = { 199617 },	-- Huraq
 				}),
 				fp(2850, {	-- Teerakai, The Nokhud Offensive
-					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					-- ["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
 					["crs"] = { 199618 },	-- Carseng
 				}),
 				fp(2849, {	-- The Battle of Spears, The Nokhud Offensive
-					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					-- ["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
 					["crs"] = { 199619 },	-- Baqir
 				}),
 				fp(2848, {	-- The Nokhud Approach, The Nokhud Offensive
-					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					-- ["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
 					["crs"] = { 199616 },	-- Washengtu
 				}),
 			}),

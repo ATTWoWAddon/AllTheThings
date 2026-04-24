@@ -60,3 +60,15 @@ i(0, 300287);		-- TK41[DNT] \\ TK41
 i(0, 300288);		-- TK42[DNT] \\ TK42
 i(0, 300289);		-- TK43[DNT] \\ TK43
 i(0, 300290);		-- TK44[DNT] \\ TK44
+
+------------------
+-- PATCH 11.2.7 --
+------------------
+i(0, 1243780);		-- Gnomish Fence
+i(0, 1243783);		-- Gnomish Fencepost
+i(0, 1243803);		-- Mechagnome Sustenance Distributor
+i(0, 1243801);		-- Mechagon Armory Rack
+i(0, 1243788);		-- Mechanical Gnomish Lamppost
+i(0, 1243793);		-- Perpetual Motion Crate
+
+

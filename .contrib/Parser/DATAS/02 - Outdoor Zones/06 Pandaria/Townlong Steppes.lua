@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(TOWNLONG_STEPPES, {
@@ -13,15 +14,33 @@ root(ROOTS.Zones, {
 					ach(6977),	-- Explore Townlong Steppes
 					ach(7309),	-- Fire in the Yaung-hole!
 					ach(7298, {	-- Getting Around with the Shado-Pan
-						crit(20453),	-- Fei Li
-						crit(20456),	-- Taoshi
-						crit(20461),	-- Protector Yi
-						crit(20454),	-- Snow Blossom
-						crit(20457),	-- Hawkmaster Nurong
-						crit(20460),	-- Chao the Voice
-						crit(20455),	-- Yalia Sagewhisper
-						crit(20458),	-- Tenwu of the Red Smoke
-						crit(20459),	-- Lao-Chin the Iron Belly
+						crit(20453, {
+							["crs"] = 62354,	-- Fei Li
+						}),
+						crit(20456, {
+							["crs"] = 63617,	-- Taoshi
+						}),
+						crit(20461, {
+							["crs"] = 61625,	-- Protector Yi
+						}),
+						crit(20454, {
+							["crs"] = 62380,	-- Snow Blossom
+						}),
+						crit(20457, {
+							["crs"] = 63618,	-- Hawkmaster Nurong
+						}),
+						crit(20460, {
+							["crs"] = 62550,	-- Chao the Voice
+						}),
+						crit(20455, {
+							["crs"] = 62303,	-- Yalia Sagewhisper
+						}),
+						crit(20458, {
+							["crs"] = 63616,	-- Tenwu of the Red Smoke
+						}),
+						crit(20459, {
+							["crs"] = 62978,	-- Lao-Chin the Iron Belly
+						}),
 					}),
 					ach(7308),	-- Know Your Role
 					ach(7299),	-- Loner and a Rebel
@@ -192,7 +211,7 @@ root(ROOTS.Zones, {
 					}),
 					q(31198, {	-- A Morale Victory
 						["qg"] = 63614,	-- Ling of the Six Pools
-						["coord"] = { 49, 71.2, TOWNLONG_STEPPES },
+						["coord"] = { 49.0, 71.2, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 					}),
 					q(30964, {	-- A Proper Poultice
@@ -324,7 +343,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["groups"] = {
-							i(83130),	-- Shan'ze Tablet (QI!)
+							o_repeated({
+								i(83130),	-- Shan'ze Tablet (QI!)
+								o(212318),	-- Shan'ze Tablet
+								o(212319),	-- Shan'ze Tablet
+							}),
 						},
 					}),
 					q(31199, {	-- Destroy the Siege Weapons!
@@ -974,7 +997,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["groups"] = {
-							i(84762),	-- Highly Explosive Yaungol Oil (QI!)
+							o(212877, {	-- Highly Explosive Yaungol Oil Barrel
+								["coords"] = {
+									{ 61.4, 41.0, TOWNLONG_STEPPES },
+									{ 61.4, 42.4, TOWNLONG_STEPPES },
+									{ 61.4, 43.0, TOWNLONG_STEPPES },
+									{ 61.4, 43.8, TOWNLONG_STEPPES },
+									{ 61.7, 43.8, TOWNLONG_STEPPES },
+									{ 62.3, 40.4, TOWNLONG_STEPPES },
+									{ 62.3, 40.6, TOWNLONG_STEPPES },
+									{ 62.4, 43.3, TOWNLONG_STEPPES },
+									{ 63.0, 40.8, TOWNLONG_STEPPES },
+									{ 63.4, 43.4, TOWNLONG_STEPPES },
+									{ 63.5, 43.3, TOWNLONG_STEPPES },
+									{ 63.5, 43.5, TOWNLONG_STEPPES },
+									{ 63.8, 41.9, TOWNLONG_STEPPES },
+								},
+								["groups"] = { i(84762) },	-- Highly Explosive Yaungol Oil (QI!)
+							}),
 						},
 					}),
 					q(30775, {	-- The Exile
@@ -1427,7 +1467,7 @@ root(ROOTS.Zones, {
 							i(87223),	-- Big Bag of Skins
 						},
 					}),
-					n(50832, {  -- The Yowler
+					n(50832, { 	-- The Yowler
 						["coord"] = { 67.6, 74.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(87225),	-- Big Bag of Food
@@ -1877,7 +1917,6 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(74849),	-- Pink Turnip
 				}),
 			},
 		}),
@@ -1902,7 +1941,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 					q(31125),	-- Unlocked Chao
 					q(31126),	-- Unlocked Lao-Chen
 					q(31054),	-- Unlocked Yalia Sagewhisper
-					--q(?????),	-- Looting a Bag of Wu Kao Supplies - WRONG QUEST ID
+					-- q(?????),	-- Looting a Bag of Wu Kao Supplies - WRONG QUEST ID
 				}),
 			}),
 			n(QUESTS, {

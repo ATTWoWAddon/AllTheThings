@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		explorationHeader({
@@ -9,6 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			visit_exploration(15797,{coord={71.2,50.9,KARESH}}),	-- Eco-Dome: Rhovan
 			visit_exploration(15803,{coord={58.9,19.6,KARESH}}),	-- Fracture of Laacuna
 			visit_exploration(15782,{coord={55.8,64.8,KARESH}}),	-- Hosaas' Rest
+			map_exploration(15336,{coord={62.2,69.7,KARESH}}),	-- K'aresh
 			visit_exploration(16002,{coord={58.9,19.6,KARESH}}),	-- Khiyed Ruins
 			visit_exploration(15826,{coord={66.5,51.2,KARESH}}),	-- Lunnall River
 			visit_exploration(15789,{coord={55.8,64.8,KARESH}}),	-- Naakroa

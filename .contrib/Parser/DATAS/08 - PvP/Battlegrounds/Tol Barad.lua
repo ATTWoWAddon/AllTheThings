@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local function TolBaradDailyQuest(questID, t)
 	local quest = q(questID, t);
 	if not quest.isWeekly then quest.isDaily = true; end
@@ -17,6 +18,7 @@ local function TolBaradDailyQuest(questID, t)
 	t.maxReputation = { t.races == ALLIANCE_ONLY and FACTION_BARADINS_WARDENS or FACTION_HELLSCREAMS_REACH, EXALTED };
 	return t;
 end
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	m(TOL_BARAD, {
 		["description"] = "Tol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.",
@@ -26,7 +28,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				a(ach(5489,	{ -- Master of Tol Barad (A)
+				a(ach(5489,	{	-- Master of Tol Barad (A)
 					["sym"] = {{"meta_achievement",
 						5417,	-- Tol Barad Veteran
 						5415,	-- Tower Plower
@@ -36,7 +38,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 						5416,	-- Pit Lord Argaloth
 					}},
 				})),
-				h(ach(5490,	{ -- Master of Tol Barad (H)
+				h(ach(5490,	{	-- Master of Tol Barad (H)
 					["sym"] = {{"meta_achievement",
 						5418,	-- Tol Barad Veteran
 						5415,	-- Tower Plower
@@ -72,7 +74,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 					["lvl"] = 85,
 				}),
 			}),
-			n(QUESTS, sharedData({ -- Always up in Baradin Hold: Sergeant Parker (Alliance)/Commander Zanoth(Horde)
+			n(QUESTS, sharedData({	-- Always up in Baradin Hold: Sergeant Parker (Alliance)/Commander Zanoth(Horde)
 				["coord"] = { 51.0, 49.65, TOL_BARAD },
 			}, {
 				TolBaradDailyQuest(28122, {	-- A Huge Problem [A]
@@ -154,7 +156,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 					},
 				}),
 			})),
-			n(QUESTS, sharedData({ -- Rotating questgivers in Baradin Hold
+			n(QUESTS, sharedData({	-- Rotating questgivers in Baradin Hold
 				["coord"] = { 51.45, 49.65, TOL_BARAD },
 				-- Danny Donkey: Because classic does not show descriptions on questgivers.
 				-- #if ANYCLASSIC
@@ -419,7 +421,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 			})),
 			-- #if NOT ANYCLASSIC
-			n(QUESTS, sharedData({ -- Rotating questgivers in Tol Barad
+			n(QUESTS, sharedData({	-- Rotating questgivers in Tol Barad
 				["description"] = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
 			}, {
 				n(48039),	-- Commander Stevens

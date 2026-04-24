@@ -176,6 +176,7 @@ root(ROOTS.Character, n(createHeader({
 		}),
 		ach(5028, {	-- Skinnin' for a Livin'
 			["timeline"] = { ADDED_4_0_3, REMOVED_10_0_2 },
+			["isGuild"] = true,	-- achievement data deleted for this achieve post-mop
 		}),
 		ach(5457),	-- The Pen is Mightier
 		ach(5466),	-- Time to Open a Restaurant
@@ -335,7 +336,16 @@ root(ROOTS.Character, n(createHeader({
 		icon = [[~_.asset("Interface_Vendor")]],
 		text = {
 			en = [[~GUILD .. " " .. TUTORIAL_TITLE20]],
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
 			cn = [[~GUILD .. "商人"]],	-- String in GlobalStrings.lua means slightly different thing in zhCN so translating it manually
+			-- TODO: tw = "",
 		},
 	}), {
 		["allianceQuestData"] = {

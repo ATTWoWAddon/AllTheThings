@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	d(DIFFICULTY.DUNGEON.MYTHIC, {
 		n(AZERITE_ESSENCES, {
@@ -187,7 +188,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 			},{
 				ach(14144, {	-- Battle for Azeroth Keystone Conqueror: Season Four
-					title(418),	-- <Name> the Awakened (TITLE!)
+					title(418),	-- <Name> the Awakened
 					crit(47150),	-- Atal'Dazar
 					crit(47151),	-- Freehold
 					crit(47152),	-- Kings' Rest

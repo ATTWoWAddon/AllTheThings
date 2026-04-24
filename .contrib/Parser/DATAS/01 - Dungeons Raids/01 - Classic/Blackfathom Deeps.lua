@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(227, {	-- Blackfathom Deeps
 		-- #if BEFORE MOP
@@ -87,10 +88,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
+				q(908, {	-- Amongst the Ruins
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["coord"] = { 11.6, 34.3, ASHENVALE },
+					["timeline"] = { REMOVED_1_2_4 },
+					-- #if AFTER 1.2.4
+					["description"] = "This quest gets marked as completed when you complete the quest 'Amongst the Ruins' (6921).",
+					-- #endif
+					["races"] = HORDE_ONLY,
+					["lvl"] = 21,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fathom Core
+							["provider"] = { "i", 16762 },	-- Fathom Core
+						}),
+					},
+				}),
 				q(6921, {	-- Amongst the Ruins
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { ADDED_1_2_4, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 					["groups"] = {
@@ -498,7 +514,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(TREASURES, {
-				o(19018),	-- Giant Clam
+				o(19018, {	-- Giant Clam
+					i(2143),	-- Cuirboulli Boots (confirmed - Danny Donkey)
+					i(5500),	-- Iridescent Pearl
+					i(5504),	-- Tangy Clam Meat
+				}),
 			}),
 			n(4887, {	-- Ghamoo-ra
 				["timeline"] = { REMOVED_6_0_2 },

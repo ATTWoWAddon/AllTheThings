@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 HALLOWS_END_HEADER = createHeader({
 	readable = "Hallow's End",
 	constant = "HALLOWS_END_HEADER",
@@ -18,11 +19,20 @@ HALLOWS_END_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(158),
 		-- #else
 		en = "Hallow's End",
+		-- TODO: de = "",
 		es = "Halloween",
 		mx = "Halloween",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "万圣节",
+		-- TODO: tw = "",
 		-- #endif
 	},
 });
+
 local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(122338, {	-- Ancient Heirloom Armor Casing
 		["cost"] = { { "i", 33226, 250 } },	-- 250x Tricky Treat
@@ -46,324 +56,325 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	-- #if BEFORE 7.0.1
 	i(116811, {	-- "Lil' Starlet" Costume
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(116810, {	-- "Mad Alchemist" Costume
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(37585, {	-- Chewy Fel Taffy
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(116801, {	-- Cursed Birman (PET!)
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(37583, {	-- G.N.E.R.D.S.
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(33292, {	-- Hallowed Helm
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
 	i(37582, {	-- Pyroblast Cinnamon Ball
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(37584, {	-- Soothing Spearmint Candy
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(37604, {	-- Tooth Pick
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(116804, {	-- Widget the Departed (PET!)
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	-- #else
 	i(208735, {	-- Bucket of Morbid Treats
-		["cost"] = { { "i", 33226, 150 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_10_1_7 },
 	}),
 	i(37585, {	-- Chewy Fel Taffy
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	iensemble(230173, {	-- Ensemble: Prowler's Faded Headgear
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(128643, {	-- Exquisite Costume Set: "Deathwing"
-		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["cost"] = { { "i", 33226, 200 } },	-- 200x Tricky Treat
 		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(138990, {	-- Exquisite Costume Set: "Grommash"
-		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["cost"] = { { "i", 33226, 200 } },	-- 200x Tricky Treat
 		["timeline"] = { ADDED_7_0_3 },
 	}),
 	i(116828, {	-- Exquisite Costume Set: "The Lich King"
-		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["cost"] = { { "i", 33226, 200 } },	-- 200x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(151268, {	-- Exquisite Costume Set: "Xavius"
-		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["cost"] = { { "i", 33226, 200 } },	-- 200x Tricky Treat
 		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(37583, {	-- G.N.E.R.D.S.
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(33292, {	-- Hallowed Helm
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 	}),
 	i(163045, {	-- Headless Horseman's Hearthstone (TOY!)
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["timeline"] = { ADDED_8_0_1 },
 	}),
 	i(151271, {	-- Horse Head Costume (TOY!)
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(151270, {	-- Horse Tail Costume (TOY!)
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
 		-- #if BEFORE 11.0.5
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		-- #else
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		-- #endif
 		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
 	i(226427, {	-- Patched Harvester's Claw
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(226461, {	-- Patched Harvest Golem's Belt
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(226458, {	-- Patched Harvest Golem's Boots
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(226457, {	-- Patched Harvest Golem's Chest
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(226456, {	-- Patched Harvest Golem's Gloves
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(226690, {	-- Patched Harvest Golem's Head
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(226455, {	-- Patched Harvest Golem's Pants
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(226454, {	-- Patched Harvest Golem's Pauldrons
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(226453, {	-- Patched Harvest Golem's Post
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(230042, {	-- Prowler's Faded Shoulder Cape
-		["cost"] = { { "i", 33226, 50 }, },	-- 50x Tricky Treat
+		["cost"] = { { "i", 33226, 50 } },	-- 50x Tricky Treat
 		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(37582, {	-- Pyroblast Cinnamon Ball
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(37584, {	-- Soothing Spearmint Candy
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(247706, {	-- The Horseman's Ghoulish Blade
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(247715, {	-- The Horseman's Ghoulish Bulwark
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(247710, {	-- The Horseman's Ghoulish Great Blade
-		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		["timeline"] = { ADDED_11_2_5 },
 	}),
 	i(37604, {	-- Tooth Pick
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	-- #endif
 };
 local PET_VENDOR_GROUPS = {
 	i(116811, {	-- "Lil' Starlet" Costume
 		["timeline"] = { ADDED_6_0_2 },
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 	}),
 	i(116810, {	-- "Mad Alchemist" Costume
 		["timeline"] = { ADDED_6_0_2 },
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 	}),
 	i(116812, {	-- "Yipp-Saron" Costume
 		["timeline"] = { ADDED_6_0_2 },
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 	}),
 	i(116801, {	-- Cursed Birman (PET!)
 		["timeline"] = { ADDED_6_0_2 },
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
 		["timeline"] = { ADDED_4_2_0 },
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 	}),
 	i(151269, {	-- Naxxy (PET!)
 		["timeline"] = { ADDED_7_3_0 },
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 	}),
 	i(139036, {	-- Ominous Pet Treat
 		["timeline"] = { ADDED_7_0_3 },
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 	}),
 	i(33154, {	-- Sinister Squashling (PET!)
 		["timeline"] = { ADDED_2_2_2 },
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 	}),
 	i(116804, {	-- Widget the Departed (PET!)
 		["timeline"] = { ADDED_6_0_2 },
-		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 	}),
 };
 local MASKS_WITH_COST = {
 	i(34000, {	-- Blood Elf Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(34002, {	-- Blood Elf Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(34001, {	-- Draenei Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(34003, {	-- Draenei Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	i(20562, {	-- Dwarf Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20561, {	-- Dwarf Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20392, {	-- Gnome Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20391, {	-- Gnome Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(49212, {	-- Goblin Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(49210, {	-- Goblin Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(20565, {	-- Human Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20566, {	-- Human Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(69187, {	-- Murloc Female Mask
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69188, {	-- Murloc Male Mask
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69189, {	-- Naga Female Mask
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69190, {	-- Naga Male Mask
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(20563, {	-- Night Elf Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20564, {	-- Night Elf Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(69192, {	-- Ogre Female Mask
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69193, {	-- Ogre Male Mask
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(20569, {	-- Orc Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20570, {	-- Orc Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20571, {	-- Tauren Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20572, {	-- Tauren Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20567, {	-- Troll Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20568, {	-- Troll Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20574, {	-- Undead Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20573, {	-- Undead Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(69194, {	-- Vrykul Female Mask
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(69195, {	-- Vrykul Male Mask
-		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(49215, {	-- Worgen Female Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 	i(49216, {	-- Worgen Male Mask
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_4_0_1 },
 	}),
 };
+
 local MASKS_WITHOUT_COST, MASK_IDS = {}, {};
 for i,o in ipairs(MASKS_WITH_COST) do
 	local w = {};
@@ -376,82 +387,82 @@ for i,o in ipairs(MASKS_WITH_COST) do
 end
 local WANDS_WITH_COST = {
 	i(116851, {	-- Hallowed Wand - Abomination
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(139004, {	-- Hallowed Wand - Banshee
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_7_0_3 },
 	}),
 	i(20410, {	-- Hallowed Wand - Bat
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
 		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(128645, {	-- Hallowed Wand - Gargoyle
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(116853, {	-- Hallowed Wand - Geist
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(20409, {	-- Hallowed Wand - Ghost
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
 		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(116850, {	-- Hallowed Wand - Ghoul
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(20399, {	-- Hallowed Wand - Leper Gnome
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
 		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(128646, {	-- Hallowed Wand - Nerubian
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(20398, {	-- Hallowed Wand - Ninja
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
 		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(20397, {	-- Hallowed Wand - Pirate
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
 		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(20413, {	-- Hallowed Wand - Random
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 	}),
 	i(20411, {	-- Hallowed Wand - Skeleton
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
 		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(116848, {	-- Hallowed Wand - Slime
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(116854, {	-- Hallowed Wand - Spider
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(128644, {	-- Hallowed Wand - Wight
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(20414, {	-- Hallowed Wand - Wisp
-		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
+		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
 		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
@@ -486,13 +497,14 @@ local CANDY_BUCKET_OBJECT_DATA = {
 	model = 200946,
 	text = {
 		en = "Candy Bucket",
-		es = "Cubo de caramelos",
 		de = "Eimer mit Süßigkeiten",
+		es = "Cubo de caramelos",
+		-- TODO: mx = "",
 		fr = "Seau de bonbons",
 		it = "Secchio delle Caramelle",
+		ko = "사탕 바구니",
 		pt = "Balde de Balas",
 		ru = "Кулек конфет",
-		ko = "사탕 바구니",
 		cn = "糖罐",
 		tw = "糖果桶",
 	},
@@ -925,10 +937,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			{ "pop" },	-- Get the Rewards.
 			{ "where", "headerID", REWARDS },	-- Select the "Rewards" header.
 			{ "pop" },	-- Get the Rewards.
-			{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
-			{ "exclude", "itemID", 20392 },	-- Exclude Gnome Female Mask?
-			{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
-			{"select","itemID",
+			{ "exclude", "itemID",
+				69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195,	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
+				20392,	-- Exclude Gnome Female Mask?
+				20413,	-- Exclude Hallowed Wand - Random
+			},
+			{ "select", "itemID",
 				37585,	-- Chewy Fel Taffy
 				37583,	-- G.N.E.R.D.S.
 				37582,	-- Pyroblast Cinnamon Ball
@@ -1470,9 +1484,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			FROSTWALL,
 			LUNARFALL,
 		},
-		["cost"] = {
-			{ "i", 128664, 1 },	-- Creepy Crawlers
-		},
+		["cost"] = { { "i", 128664, 1 } },	-- Creepy Crawlers
 		["groups"] = {
 			pet(1741),	-- Ghastly Rat (PET!)
 			pet(1740),	-- Ghost Maggot (PET!)
@@ -1480,9 +1492,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		},
 	})),
 	header(HEADERS.Quest, 12406, {	-- Candy Bucket Quests
-		n(FACTION_HEADER_NEUTRAL, {
-			["timeline"] = { ADDED_2_0_1 },
-			["groups"] = {
+		["timeline"] = { ADDED_2_0_1 },
+		["groups"] = {
+			n(FACTION_HEADER_NEUTRAL, {
 				candybucket(28955, {	-- Candy Bucket — Badlands, Fuselight, Neutral
 					["provider"] = { "o", 208137 },	-- Candy Bucket, Badlands
 					["coord"] = { 65.9, 35.8, BADLANDS },
@@ -2020,17 +2032,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- The War within
 				candybucket(84579, {	-- Candy Bucket — Azj-Kahet, Faerin's Advance
 					["provider"] = { "o", 464926 },	-- Candy Bucket
-					["coord"] = { 59, 18.6, AZJ_KAHET },
+					["coord"] = { 59.0, 18.6, AZJ_KAHET },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
 				candybucket(84580, {	-- Candy Bucket — Azj-Kahet, Mmarl
 					["provider"] = { "o", 464927 },	-- Candy Bucket
-					["coord"] = { 78, 62.8, AZJ_KAHET },
+					["coord"] = { 78.0, 62.8, AZJ_KAHET },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
 				candybucket(84582, {	-- Candy Bucket — Azj-Kahet, Weaver's Lair
 					["provider"] = { "o", 464929 },	-- Candy Bucket
-					["coord"] = { 56.9, 39, AZJ_KAHET },
+					["coord"] = { 56.9, 39.0, AZJ_KAHET },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
 				candybucket(84581, {	-- Candy Bucket — Azj-Kahet, Wildcamp Ul'ar
@@ -2040,7 +2052,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(84576, {	-- Candy Bucket — City of Threads, High Hollows
 					["provider"] = { "o", 464923 },	-- Candy Bucket
-					["coord"] = { 62, 41.4, NERUBAR },
+					["coord"] = { 62.0, 41.4, NERUBAR },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
 				candybucket(84578, {	-- Candy Bucket — City of Threads, Umbral Bazzar
@@ -2060,7 +2072,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(84574, {	-- Candy Bucket — Hallowfall, Light's Redoubt
 					["provider"] = { "o", 464921 },	-- Candy Bucket
-					["coord"] = { 40.6, 68, HALLOWFALL },
+					["coord"] = { 40.6, 68.0, HALLOWFALL },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
 				candybucket(84573, {	-- Candy Bucket — Hallowfall, Lorel's Crossing
@@ -2075,12 +2087,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(84564, {	-- Candy Bucket — Isle of Dorn, Dornogal
 					["provider"] = { "o", 464911 },	-- Candy Bucket
-					["coord"] = { 45, 47.3, DORNOGAL },
+					["coord"] = { 45.0, 47.3, DORNOGAL },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
 				candybucket(84566, {	-- Candy Bucket — Isle of Dorn, Freywold Village
 					["provider"] = { "o", 464913 },	-- Candy Bucket
-					["coord"] = { 42, 74.4, ISLE_OF_DORN },
+					["coord"] = { 42.0, 74.4, ISLE_OF_DORN },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
 				candybucket(84567, {	-- Candy Bucket — Isle of Dorn, Rambleshire
@@ -2100,7 +2112,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(84570, {	-- Candy Bucket — The Ringing Deeps, Opportunity Point
 					["provider"] = { "o", 464917 },	-- Candy Bucket
-					["coord"] = { 63.4, 79, THE_RINGING_DEEPS },
+					["coord"] = { 63.4, 79.0, THE_RINGING_DEEPS },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
 				candybucket(84571, {	-- Candy Bucket — The Ringing Deeps, Shadowvein Point
@@ -2108,14 +2120,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 61.9, 46.3, THE_RINGING_DEEPS },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
-			},
-		}),
-		n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY }, {
-			["timeline"] = { ADDED_2_0_1 },
-			["groups"] = {
+			}),
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY }, {
 				candybucket(28954, {	-- Candy Bucket — Arathi Highlands, Refuge Point, Alliance
 					["provider"] = { "o", 208120 },	-- Candy Bucket, Arathi Highlands
-					["coord"] = { 40.1, 49, ARATHI_HIGHLANDS },
+					["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				candybucket(12345, {	-- Candy Bucket — Ashenvale, Astranaar, Alliance
@@ -2557,11 +2566,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 67.2, 49.0, ZANGARMARSH },
 					["timeline"] = { ADDED_2_0_1 },
 				}),
-			},
-		})),
-		n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
-			["timeline"] = { ADDED_2_0_1 },
-			["groups"] = {
+			})),
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
 				candybucket(12380, {	-- Candy Bucket — Arathi Highlands, Hammerfall, Horde
 					["provider"] = { "o", 190082 },	-- Candy Bucket, Arathi Highlands
 					["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
@@ -2988,8 +2994,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						DAZARALOR,
 					},
 				}),
-			},
-		})),
+			})),
+		},
 	}),
 	n(QUESTS, {
 		q(12135, {	-- "Let the Fires Come!" (Alliance)
@@ -3181,7 +3187,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29075, {	-- A Time to Gain
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
 			["qg"] = 51665,	-- Celestine of the Harvest
-			["coord"] = { 32, 50.4, ELWYNN_FOREST },
+			["coord"] = { 32.0, 50.4, ELWYNN_FOREST },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -3192,7 +3198,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29371, {	-- A Time to Lose
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
 			["qg"] = 52064,	-- Keira
-			["coord"] = { 32, 50.4, ELWYNN_FOREST },
+			["coord"] = { 32.0, 50.4, ELWYNN_FOREST },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { TIRISFAL_GLADES },
 			["races"] = ALLIANCE_ONLY,
@@ -3200,7 +3206,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["groups"] = {
 				objective(1, {	-- Douse the Horde's Wickerman
 					["provider"] = { "i", 68648 },	-- Dousing Agent
-					["coord"] = { 62, 67.8, TIRISFAL_GLADES },
+					["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
 				}),
 				i(33226),	-- Tricky Treat
 			},
@@ -3224,7 +3230,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				SCARLET_MONASTERY,
 				436,	-- Scarlet Monastery, Crusader's Chapel
 			},
-			["isDaily"] = true,
 			-- #if AFTER WRATH
 			["lvl"] = 75,
 			-- #elseif AFTER TBC
@@ -3303,7 +3308,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(1658, {	-- Crashing the Wickerman Festival
 			["qg"] = 15199,	-- Sergeant Hartman
-			["coord"] = { 50, 57.2, HILLSBRAD_FOOTHILLS },
+			["coord"] = { 50.0, 57.2, HILLSBRAD_FOOTHILLS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { SILVERPINE_FOREST, TIRISFAL_GLADES },
 			["races"] = ALLIANCE_ONLY,
@@ -3312,7 +3317,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["groups"] = {
 				objective(1, {	-- Scout out the Forsaken's Wickerman Festival.
 					["provider"] = { "o", 181672 },	-- Wickerman Effigy
-					["coord"] = { 56, 69, TIRISFAL_GLADES },
+					["coord"] = { 56.0, 69.0, TIRISFAL_GLADES },
 				}),
 				i(20557),	-- Hallow's End Pumpkin Treat
 			},
@@ -3343,7 +3348,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 53950,	-- Hired Courier
 			["coords"] = {
 				-- #if AFTER LEGION
-				{ 24, 44.6, STORMWIND_CITY },
+				{ 24.0, 44.6, STORMWIND_CITY },
 				-- #else
 				{ 24.1, 44.8, STORMWIND_CITY },
 				-- #endif
@@ -3355,7 +3360,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29416, {	-- Fencing the Goods (Horde)
 			["sourceQuest"] = 29415,	-- Missing Heirlooms (Horde)
 			["qg"] = 54142,	-- Hired Courier
-			["coord"] = { 57.4, 9, DUROTAR },
+			["coord"] = { 57.4, 9.0, DUROTAR },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -3503,9 +3508,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 23904,	-- Sir Thomas
 			["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
 			["maps"] = { SCARLET_MONASTERY },
-			["cost"] = {
-				{ "i", 33277, 1 },	-- Tome of Thomas Thomson
-			},
+			["cost"] = { { "i", 33277, 1 } },	-- Tome of Thomas Thomson
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(60, 60, 25),
 		}),
@@ -3513,9 +3516,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 23904,	-- Sir Thomas
 			["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
 			["maps"] = { SCARLET_MONASTERY },
-			["cost"] = {
-				{ "i", 33277, 1 },	-- Tome of Thomas Thomson
-			},
+			["cost"] = { { "i", 33277, 1 } },	-- Tome of Thomas Thomson
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(60, 60, 25),
 		}),
@@ -3523,13 +3524,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 15310,	-- Jesper
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 32, 50.4, ELWYNN_FOREST },
+				{ 32.0, 50.4, ELWYNN_FOREST },
 				-- #elseif AFTER WRATH
 				{ 56.6, 51.8, STORMWIND_CITY },
 				-- #else
 				{ 47.6, 35.4, STORMWIND_CITY },
 				-- #endif
 			},
+			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3554,7 +3556,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(8355, {	-- Incoming Gumdrop (Alliance)
 					["qg"] = 6826,	-- Talvash del Kissel
-					["coord"] = { 36, 4, IRONFORGE },
+					["coord"] = { 36.0, 4.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
@@ -3605,13 +3607,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["qg"] = 15309,	-- Spoops
 			["coords"] = {
 				-- #if AFTER CATA
-				{ 67.4, 7, UNDERCITY },
+				{ 67.4, 7.0, UNDERCITY },
 				-- #elseif AFTER CATA
 				{ 62.1, 66.4, TIRISFAL_GLADES },
 				-- #else
 				{ 71.2, 22.8, ORGRIMMAR },
 				-- #endif
 			},
+			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3640,7 +3643,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["qg"] = 11814,	-- Kali Remik
 					["coords"] = {
 						-- #if AFTER LEGION
-						{ 32.6, 65, ORGRIMMAR },
+						{ 32.6, 65.0, ORGRIMMAR },
 						-- #elseif AFTER CATA
 						{ 33.5, 64.9, ORGRIMMAR },
 						-- #else
@@ -3774,9 +3777,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 51.4, 59.0, HILLSBRAD_FOOTHILLS },
 			},
 			["timeline"] = { REMOVED_4_0_3 },
-			["cost"] = {
-				{ "i", 20605, 1 },	-- Rotten Eggs
-			},
+			["cost"] = { { "i", 20605, 1 } },	-- Rotten Eggs
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 30,
@@ -3810,7 +3811,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29425, {	-- Shopping Around (Horde)
 			["sourceQuest"] = 29416,	-- Fencing the Goods (Horde)
 			["qg"] = 44866,	-- Auctioneer Drezmit
-			["coord"] = { 54, 73.4, ORGRIMMAR },
+			["coord"] = { 54.0, 73.4, ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3857,9 +3858,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 42.6, 64.6, ELWYNN_FOREST },
 			},
 			["timeline"] = { ADDED_2_0_1 },
-			["cost"] = {
-				{ "i", 36876, 1 },	-- Scorched Holy Symbol
-			},
+			["cost"] = { { "i", 36876, 1 } },	-- Scorched Holy Symbol
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3875,9 +3874,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 60.8, 53.6, TIRISFAL_GLADES },
 			},
 			["timeline"] = { ADDED_2_0_1 },
-			["cost"] = {
-				{ "i", 36876, 1 },	-- Scorched Holy Symbol
-			},
+			["cost"] = { { "i", 36876, 1 } },	-- Scorched Holy Symbol
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3975,7 +3972,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29402, {	-- Taking Precautions (Alliance)
 			["sourceQuest"] = 29399,	-- Shopping Around (Alliance)
 			["qg"] = 54021,	-- Hudson Barnes
-			["coord"] = { 64, 46.4, STORMWIND_CITY },
+			["coord"] = { 64.0, 46.4, STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -4007,7 +4004,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29426, {	-- Taking Precautions (Horde)
 			["sourceQuest"] = 29425,	-- Shopping Around (Horde)
 			["qg"] = 54146,	-- Delian Sunshade
-			["coord"] = { 58, 48.2, ORGRIMMAR },
+			["coord"] = { 58.0, 48.2, ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -4039,7 +4036,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29403, {	-- The Collector's Agent (Alliance)
 			["sourceQuest"] = 29402,	-- Taking Precautions (Alliance)
 			["qg"] = 54021,	-- Hudson Barnes
-			["coord"] = { 64, 46.4, STORMWIND_CITY },
+			["coord"] = { 64.0, 46.4, STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -4053,7 +4050,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29427, {	-- The Collector's Agent (Horde)
 			["sourceQuest"] = 29426,	-- Taking Precautions (Horde)
 			["qg"] = 54146,	-- Delian Sunshade
-			["coord"] = { 58, 48.2, ORGRIMMAR },
+			["coord"] = { 58.0, 48.2, ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { TIRISFAL_GLADES },
 			["races"] = HORDE_ONLY,
@@ -4127,7 +4124,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(8373, {	-- The Power of Pine
 			["qg"] = 15199,	-- Sergeant Hartman
-			["coord"] = { 50, 57.2, HILLSBRAD_FOOTHILLS },
+			["coord"] = { 50.0, 57.2, HILLSBRAD_FOOTHILLS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -4140,12 +4137,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(43162, {	-- Under the Crooked Tree
+			-- ["sourceQuest"] = 43259,	-- Beware of the Crooked Tree	[not required 2023-10-25]
 			["qg"] = 109734,	-- Hag of the Crooked Tree
 			["coord"] = { 34.9, 56.0, VALSHARAH },
 			["timeline"] = { ADDED_7_0_3 },
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(98, 98, 40),	-- TODO: Check Level Requirement
-			-- ["sourceQuest"] = 43259,	-- Beware of the Crooked Tree	[not required 2023-10-25]
 			["groups"] = {
 				objective(1, {	-- Drink from the cauldron and release Aria Sorrowheart's spirit
 					["provider"] = { "n", 109825 },	-- Aria Sorrowheart
@@ -4175,9 +4172,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["provider"] = { "o", 209072 },	-- Stolen Crate
 			["coord"] = { 55.3, 43.5, STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_1 },
-			["cost"] = {
-				{ "i", 71057, 1 },	-- Recovered Crate
-			},
+			["cost"] = { { "i", 71057, 1 } },	-- Recovered Crate
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -4188,9 +4183,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["coord"] = { 65.8, 74.8, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
-			["cost"] = {
-				{ "i", 71057, 1 },	-- Recovered Crate
-			},
+			["cost"] = { { "i", 71057, 1 } },	-- Recovered Crate
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -4220,7 +4213,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				53865,	-- Orphan Matron Nanee (H)
 			},
 			["coords"] = {
-				{ 31.9, 50, ELWYNN_FOREST },	-- Alliance
+				{ 31.9, 50.0, ELWYNN_FOREST },	-- Alliance
 				{ 62.4, 66.6, TIRISFAL_GLADES },	-- Horde
 			},
 			["timeline"] = { ADDED_10_1_7 },
@@ -4258,7 +4251,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(77779, {	-- The Tale of Sir Thomas
 			["sourceQuest"] = 76074,	-- The Headless Horseman, Returned
 			["provider"] = { "n", 209609 },	-- Sir Thomas
-			["coord"] = { 43, 53, SCARLET_MONASTERY },
+			["coord"] = { 43.0, 53.0, SCARLET_MONASTERY },
 			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(208769),	-- Tome of Thomas Thomson
@@ -4277,9 +4270,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ 56.5, 87.9, FROSTWALL },
 					{ 74.5, 33.9, LUNARFALL },
 				},
-				["cost"] = {
-					{ "i", 128664, 1 },	-- Creepy Crawlers
-				},
+				["cost"] = { { "i", 128664, 1 } },	-- Creepy Crawlers
 				["groups"] = {
 					i(128794),	-- Sack of Spectral Spiders (TOY!)
 				},
@@ -4328,13 +4319,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- Masks & Wands & Candy
 				{ "selectparent" },	-- Select the "Rewards" header.
 				{ "pop" },	-- Get the Rewards.
-				{ "exclude", "itemID", 37586, 20393, 34077 },	-- Handful of Treats & Treat Bag
+				{ "exclude", "itemID",
+					37586, 20393, 34077,	-- Handful of Treats & Treat Bag
 				-- #if AFTER CATA
-				{ "exclude", "itemID", 20390, 20389, 20388 },	-- Exclude Candy Bar, Candy Corn, Lollipop
+					20390, 20389, 20388,	-- Exclude Candy Bar, Candy Corn, Lollipop
 				-- #endif
-				{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
-				{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
-				{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
+					69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195,	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
+					20413,	-- Exclude Hallowed Wand - Random
+				},
 				{"select","itemID",
 					33292,	-- Hallowed Helm
 					33154,	-- Sinister Squashling (PET!)
@@ -4436,22 +4428,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			["groups"] = {
 				i(128664, {	-- Creepy Crawlers (CI!)
-					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
+					["cost"] = { { "i", 128658, 5 } },	-- 5x Spooky Supplies
 				}),
 				i(128660, {	-- Ghoulish Guises (CI!)
-					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
+					["cost"] = { { "i", 128658, 5 } },	-- 5x Spooky Supplies
 				}),
 				i(128661, {	-- Hallow's Glow (CI!)
-					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
+					["cost"] = { { "i", 128658, 5 } },	-- 5x Spooky Supplies
 				}),
 				i(128662, {	-- Seer's Invitation (CI!)
-					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
+					["cost"] = { { "i", 128658, 5 } },	-- 5x Spooky Supplies
 				}),
 				i(33226, {	-- Tricky Treat
-					["cost"] = { { "i", 128658, 1 }, },	-- 1x Spooky Supplies
+					["cost"] = { { "i", 128658, 1 } },	-- 1x Spooky Supplies
 				}),
 				i(128663, {	-- Witch's Brew (CI!)
-					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
+					["cost"] = { { "i", 128658, 5 } },	-- 5x Spooky Supplies
 				}),
 			},
 		}),

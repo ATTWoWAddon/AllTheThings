@@ -1,19 +1,31 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
+
 ELEMENTAL_UNREST = createHeader({
 	readable = "Elemental Unrest",
 	icon = [[~_.asset("Expansion_CATA")]],
 	text = {
 		en = "Elemental Unrest",
+		-- TODO: de = "",
+		es = "Inestabilidad elemental",
+		mx = "Inestabilidad elemental",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Буйство элементалей",
 		cn = "元素动荡",
 		tw = "元素入侵",
 	},
 	description = {
 		en = "The Elemental Unrest was a world event that heralded the Cataclysm. The event culminated in elementals attacking Stormwind, Orgrimmar, Ironforge, and Thunder Bluff. Players defeating these elementals and freeing trapped citizens within their entire city were granted access to two special boss encounters.",
+		es = "La Inestabilidad elemental fue un evento mundial que anunció el Cataclismo. El evento culminó con el ataque de los elementales a Ventormenta, Orgrimmar, Forjaz y Cima del Trueno. Los jugadores que derrotaran a estos elementales y liberaran a los ciudadanos atrapados en toda su ciudad obtenían acceso a dos encuentros especiales con jefes.",
+		mx = "La Inestabilidad elemental fue un evento mundial que anunció el Cataclismo. El evento termino con el ataque de los elementales a Ventormenta, Orgrimmar, Forjaz y Cima del Trueno. Los jugadores que derrotaran a estos elementales y liberaran a los ciudadanos atrapados en toda su ciudad ganaban acceso a dos peleas especiales con jefes.",
+		cn = "元素动荡是一场预示着大灾变来临的世界事件。该事件最终以元素生物袭击暴风城、奥格瑞玛、铁炉堡和雷霆崖达到高潮。玩家若能击败这些元素生物，并解救城中被困的市民，就可获得挑战两个特殊首领的机会",
 	},
 });
+
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n(ELEMENTAL_UNREST,
 	bubbleDown({
 		["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
@@ -84,15 +96,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 						}),
 						objective(2, {	-- 0/1 Elemental Fire for the Soul
 							["provider"] = { "i", 52562 },	-- Elemental Fire for the Soul
-							["coord"] = { 73, 63, STORMWIND_CITY },
+							["coord"] = { 73.0, 63.0, STORMWIND_CITY },
 						}),
 						objective(3, {	-- 0/1 What Does 'The End of All Things' Mean for Me?
 							["provider"] = { "i", 52563 },	-- What Does 'The End of All Things' Mean for Me?
-							["coord"] = { 76, 59, STORMWIND_CITY },
+							["coord"] = { 76.0, 59.0, STORMWIND_CITY },
 						}),
 						objective(4, {	-- 0/1 Finding Security and Comfort in a Doomed World
 							["provider"] = { "i", 52565 },	-- Finding Security and Comfort in a Doomed World
-							["coord"] = { 73, 54, STORMWIND_CITY },
+							["coord"] = { 73.0, 54.0, STORMWIND_CITY },
 						}),
 					},
 				}),
@@ -145,15 +157,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 					["groups"] = {
 						objective(1, {	-- Spread Message at Westbrook Garrison
 							["provider"] = { "i", 53048 },	-- Doomsday Message
-							["coord"] = { 24, 74, ELWYNN_FOREST },
+							["coord"] = { 24.0, 74.0, ELWYNN_FOREST },
 						}),
 						objective(2, {	-- Spread Message in Valley of Heroes
 							["provider"] = { "i", 53048 },	-- Doomsday Message
-							["coord"] = { 69, 83, STORMWIND_CITY },
+							["coord"] = { 69.0, 83.0, STORMWIND_CITY },
 						}),
 						objective(3, {	-- Spread Message in Goldshire
 							["provider"] = { "i", 53048 },	-- Doomsday Message
-							["coord"] = { 42, 66, ELWYNN_FOREST },
+							["coord"] = { 42.0, 66.0, ELWYNN_FOREST },
 						}),
 					},
 				}),
@@ -284,28 +296,28 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 								{ "n", 39757 },	-- Cultist Kagarn
 								{ "i", 52729 },	-- Recruit's Robe
 							},
-							["coord"] = { 48, 17, DUROTAR },
+							["coord"] = { 48.0, 17.0, DUROTAR },
 						}),
 						objective(2, {	-- Speak to Cultist Agtar
 							["providers"] = {
 								{ "n", 39758 },	-- Cultist Agtar
 								{ "i", 52729 },	-- Recruit's Robe
 							},
-							["coord"] = { 48, 17, DUROTAR },
+							["coord"] = { 48.0, 17.0, DUROTAR },
 						}),
 						objective(3, {	-- Speak to Cultist Tokka
 							["providers"] = {
 								{ "n", 39760 },	-- Cultist Tokka
 								{ "i", 52729 },	-- Recruit's Robe
 							},
-							["coord"] = { 48, 16, DUROTAR },
+							["coord"] = { 48.0, 16.0, DUROTAR },
 						}),
 						objective(4, {	-- Speak to Cultist Rokaga
 							["providers"] = {
 								{ "n", 39763 },	-- Cultist Rokaga
 								{ "i", 52729 },	-- Recruit's Robe
 							},
-							["coord"] = { 49, 17, DUROTAR },
+							["coord"] = { 49.0, 17.0, DUROTAR },
 						}),
 					},
 				}),
@@ -525,11 +537,11 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 					["groups"] = {
 						objective(1, {	-- Disrupt Dwarven District Ritual
 							["provider"] = { "i", 62412 },	-- Book of Incantations
-							["coord"] = { 64, 29.5, STORMWIND_CITY },
+							["coord"] = { 64.0, 29.5, STORMWIND_CITY },
 						}),
 						objective(2, {	-- Disrupt Cathedral Square Ritual
 							["provider"] = { "i", 62412 },	-- Book of Incantations
-							["coord"] = { 58.3, 49, STORMWIND_CITY },
+							["coord"] = { 58.3, 49.0, STORMWIND_CITY },
 						}),
 						objective(3, {	-- Disrupt Park Ritual
 							["provider"] = { "i", 62412 },	-- Book of Incantations

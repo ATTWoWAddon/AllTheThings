@@ -1,9 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -20,7 +22,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					bo(69963, true),
 				},
 			}),
-		--	n(193220),	-- Broodweaver Araznae // under DF/Timed Based Rare
+			-- n(193220),	-- Broodweaver Araznae // under DF/Timed Based Rare
 			n(193658, {	-- Corrupted Proto-Dragon
 				["coord"] = { 44.8, 69.0, THALDRASZUS },
 				["questID"] = 74060,
@@ -37,7 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200298),	-- Stoneshaped Greatbelt
 				},
 			}),
-		--	n(193234),	-- Eldoren the Reborn // under DF/Timed Based Rare
+			-- n(193234),	-- Eldoren the Reborn // under DF/Timed Based Rare
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
 				["questID"] = 73878,
@@ -85,7 +87,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200185),	-- Grips of the Everflowing Ocean
 				},
 			}),
-		--	n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
+			-- n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
 			n(201549,	-- Morlash
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 62.1, 60.1, THALDRASZUS },
@@ -136,8 +138,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["questID"] = 73892,
 			}),
-		--	n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
-		--	n(193666),	-- Rokmur // under DF/Timed Based Rare
+			-- n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
+			-- n(193666),	-- Rokmur // under DF/Timed Based Rare
 			n(191305, {	-- The Great Shellkhan
 				["description"] = "Needs a Case of Fresh Gleamfish fish from Azure Span.",
 				["coords"] = {
@@ -145,7 +147,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 45.63, 54.82, THE_AZURE_SPAN },	-- Fish
 				},
 				["questID"] = 74085,
-				["cost"] = { { "i", 200949, 1 }, },	-- 1x Case of Fresh Gleamfish
+				["cost"] = { { "i", 200949, 1 } },	-- 1x Case of Fresh Gleamfish
 				["groups"] = {
 					i(200999),	-- The Super Shellkhan Gang (TOY!)
 				},
@@ -162,8 +164,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200214),	-- Grasp of the Weeping Widow
 				},
 			}),
-		--	n(193258),	-- Tempestrian // under DF/Timed Based Rare
-		--	n(193146),	-- Treasure-Mad // under DF/Timed Based Rare
+			-- n(193258),	-- Tempestrian // under DF/Timed Based Rare
+			-- n(193146),	-- Treasure-Mad // under DF/Timed Based Rare
 			n(193161, {	-- Woolfang
 				["description"] = "Pet a Wooly Lamb to spawn.",
 				["coord"] = { 47.9, 49.8, THALDRASZUS },
@@ -176,6 +178,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(DRAGON_ISLES, {
 		m(THALDRASZUS, {

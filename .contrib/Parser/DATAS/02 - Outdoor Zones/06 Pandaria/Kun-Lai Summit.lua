@@ -1097,15 +1097,18 @@ root(ROOTS.Zones, {
 						["qg"] = 70980,	-- Seer Hao Pham Roo
 						["timeline"] = { ADDED_5_3_0 },
 						["groups"] = {
-							i(98137),	-- Treads of Reticence
-							i(98138),	-- Unpretentious Boots
-							i(98139),	-- Treads of Respect
 							i(98140),	-- Boots of Boundless Patience
-							i(98141),	-- Sabatons of the Humble
 							i(98142),	-- Modest Sandals
-							i(98143),	-- Subservient Greatboots
-							i(98144),	-- Unassuming Slippers
+							i(98141),	-- Sabatons of the Humble
 							i(98145),	-- Self-Effacing Boots
+							i(247858, {	-- Shaohao Ceremonial Bell (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(98143),	-- Subservient Greatboots
+							i(98137),	-- Treads of Reticence
+							i(98139),	-- Treads of Respect
+							i(98144),	-- Unassuming Slippers
+							i(98138),	-- Unpretentious Boots
 						},
 					})),
 					q(30819, {	-- Preparing the Remains
@@ -1314,7 +1317,7 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							{ 72.0, 94.2, KUN_LAI_SUMMIT },
 							{ 54.5, 77.1, KRASARANG_WILDS },	-- Leni Kelpenstout
-							--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+							-- TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
 							{ 45.7, 43.7, THE_JADE_FOREST },	-- Peiji Goldendraft
 							{ 74.8, 81.3, TOWNLONG_STEPPES },	-- Tigermaster Liu-Do
 							{ 55.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },	-- Hopsmaster Chang
@@ -1438,9 +1441,6 @@ root(ROOTS.Zones, {
 							i(82547),	-- Yak Herder Gauntlets
 							i(82548),	-- Summit Guardian Gauntlets
 							i(82549),	-- Wallwatcher Gauntlets
-							i(247739, {	-- Kun-Lai Lacquered Rickshaw (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
-							}),
 						},
 					}),
 					q(31452, {	-- The Missing Merchant (A)
@@ -1581,7 +1581,7 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							{ 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },
 							{ 41.7, 29.9, KRASARANG_WILDS },
-							--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+							-- TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
 							{ 45.7, 43.8, THE_JADE_FOREST },
 						},
 						["races"] = HORDE_ONLY,
@@ -2359,6 +2359,15 @@ root(ROOTS.Zones, {
 						["groups"] = {
 						},
 					}),
+					n(59698, {	-- Brother Furtrim
+						["coord"] = { 57.2, 61.0, KUN_LAI_SUMMIT },
+						["groups"] = {
+							i(264349, {	-- Kun-Lai Lacquered Rickshaw (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = 10000000,	-- 1,000g
+							}),
+						},
+					}),
 					n(75693, {	-- Doris Chiltonius Season 12: Malevolent Gladiator Vendor. Items are tagged as S13
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
@@ -2759,6 +2768,11 @@ root(ROOTS.Zones, {
 							{"sub", "pvp_gear_base", EXPANSION.MOP, SEASON_MALEVOLENT, PVP_HONOR },
 							{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 							{"pop"},	-- Discard the Set header and acquire the children.
+						},
+						["groups"] = {
+							-- #if ANYCLASSIC
+							i(254315),	-- Formula: Enchant Weapon - Tyranny
+							-- #endif
 						},
 						-- #endif
 					}),
@@ -3626,11 +3640,9 @@ root(ROOTS.Zones, {
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(97978, {	-- Knockoff Grumplefloot (QI!)
 						["description"] = "Dance with Grandpa Grumplefloot to receive the Knockoff Grumplefloot.",
-						["coord"] = { 65, 60, KUN_LAI_SUMMIT },
+						["coord"] = { 65.0, 60.0, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 					})),
-					i(74849),	-- Pink Turnip
-					i(74844),	-- Red Blossom Leek
 				}),
 			},
 		}),

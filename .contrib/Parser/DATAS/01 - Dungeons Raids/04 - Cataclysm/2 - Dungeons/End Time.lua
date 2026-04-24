@@ -4,7 +4,7 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(184, {	-- End Time
-		["description"] = "Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Myrozond is always the last boss.",
+		["description"] = "Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Murozond is always the last boss.",
 		["mapID"] = 401,
 		["coords"] = {
 			{ 57.7, 30.4, CAVERNS_OF_TIME },	-- dungeon entrance

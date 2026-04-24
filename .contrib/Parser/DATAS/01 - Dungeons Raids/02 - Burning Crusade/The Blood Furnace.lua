@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(256, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Blood Furnace
 		["lore"] = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
@@ -14,6 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(QUESTS, {
 				q(9607, {	-- Heart of Rage [Alliance]
 					["qg"] = 17479,	-- Gunny
+					["sourceQuest"] = 9575,	-- Weaken the Ramparts [Alliance]
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
@@ -28,6 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(9608, {	-- Heart of Rage [Horde]
 					["qg"] = 17558,	-- Caza'rez
+					["sourceQuest"] = 9572,	-- Weaken the Ramparts [Horde]
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
@@ -255,6 +258,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["cost"] = {
 					{ "i", 30622, 1 },	-- Flamewrought Key [A]
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265830, 1 },	-- Communal Flamewrought Key [A]
+					{ "i", 265826, 1 },	-- Communal Flamewrought Key [H]
+					-- #endif
 				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
@@ -267,7 +274,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30601),	-- Beaming Fire Opal
 							i(30600),	-- Fluorescent Tanzanite

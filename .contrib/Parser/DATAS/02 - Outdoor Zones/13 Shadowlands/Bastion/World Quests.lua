@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(WORLD_QUESTS, {
@@ -11,7 +12,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 		}),
-		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
+		n(WORLD_QUESTS, sharedData({
+			["isWorldQuest"] = true,
+		}, {
 			q(61593),	-- A Crisis of Memory (no idea why there are 2 versions of this)
 			q(61689),	-- A Crisis of Memory
 			q(60623),	-- AHHH! Real Monsters!
@@ -225,7 +228,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = {
 					i(182457),	-- Mirror Fragment (QI!)
 					i(182458),	-- Mirror of Ancient Teachings (QI!)
-					i(182477),	-- Sacred Text (QI!)
+					o(357469, {	-- Sacred Text
+						["coord"] = { 67.8, 43.3, BASTION },
+						["groups"] = { i(182477) },	-- Sacred Text (QI!)
+					}),
 				},
 			}),
 			q(61468, {	-- Skinning: Plush Copperfur Pelts
@@ -284,6 +290,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(BASTION, {

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(VENDORS, {
@@ -68,22 +69,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 82.2, 73.2, OHNAHRAN_PLAINS },
 				["groups"] = {
 					i(199339, {	-- Silver Coin of the Isles
-						["cost"] = { { "i", 199338, 15}, },	-- 15xCopper Coin of the Isles
+						["cost"] = { { "i", 199338, 15} },	-- 15x Copper Coin of the Isles
 					}),
 					i(199340, {	-- Gold Coin of the Isles
-						["cost"] = { { "i", 199339, 5}, },	-- 5xSilver Coin of the Isles
+						["cost"] = { { "i", 199339, 5} },	-- 5x Silver Coin of the Isles
 					}),
 					i(199341, {	-- Regurgitated Sac of Swog Treasures
-						["cost"] = { { "i", 199338, 1}, },	-- 1xCopper Coin of the Isles
+						["cost"] = { { "i", 199338, 1} },	-- 1x Copper Coin of the Isles
 					}),
 					i(199342, {	-- Weighted Sac of Swog Treasures
-						["cost"] = { { "i", 199339, 1}, },	-- 1xSilver Coin of the Isles
+						["cost"] = { { "i", 199339, 1} },	-- 1x Silver Coin of the Isles
 						["groups"] = {
 							i(198438),	-- Draconic Recipe in a Bottle
 						},
 					}),
 					i(202102, {	-- Immaculate Sac of Swog Treasures
-						["cost"] = { { "i", 199340, 1}, },	-- 1x Gold Coin of the Isles
+						["cost"] = { { "i", 199340, 1} },	-- 1x Gold Coin of the Isles
 						["groups"] = {
 							i(198438),	-- Draconic Recipe in a Bottle
 							i(199234),	-- Schematic: Khaz'gorite Fisherfriend (RECIPE!)

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 PROVING_GROUNDS = createHeader({
 	readable = "Proving Grounds",
 	icon = 618859,
@@ -8,6 +9,7 @@ PROVING_GROUNDS = createHeader({
 		en = [[~TRACKER_HEADER_PROVINGGROUNDS]],
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
 	n(PROVING_GROUNDS, {
 		["maps"] = { 480 },	-- Proving Grounds

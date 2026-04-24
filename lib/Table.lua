@@ -8,8 +8,8 @@ local _, app = ...;
 -- Encapsulates the functionality concerning consistent and complex operations on Lua Tables
 
 -- Global locals
-local ipairs, pairs, select, table_concat
-	= ipairs, pairs, select, table.concat;
+local pairs, select, table_concat,next
+	= pairs, select, table.concat,next
 
 -- App locals
 
@@ -30,7 +30,7 @@ app.containsAny = function(arr, arr2)
 	end
 end
 app.containsValue = function(dict, value)
-	for _,value2 in pairs(dict) do
+	for _,value2 in next,dict do
 		if value2 == value then return true; end
 	end
 end
@@ -70,6 +70,19 @@ app.TableConcat = function(tbl, field, def, sep, i, j)
 	end
 	return "";
 end
+-- Concats all the key/value pairs in the table into a string
+app.StringifyTable = function(tbl, sep)
+	if tbl then
+		local tostring = tostring
+		sep = sep or ""
+		local tblvals = {};
+		for k,v in pairs(tbl) do
+			tblvals[#tblvals + 1] = k..":"..tostring(tbl[k])
+		end
+		return table_concat(tblvals, sep)
+	end
+	return "";
+end
 -- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
 app.ArrayAppend = function(a1, ...)
 	local arrs = select("#", ...);
@@ -98,4 +111,27 @@ app.ReverseOrder = function(a)
 		return b;
 	end
 	return a;
+end
+-- Returns true if the two tables have any difference in assigned keys
+app.TableKeyDiff = function(a,b)
+	if not a then
+		if b then return true end
+		return
+	elseif not b then
+		if a then return true end
+		return
+	end
+    -- Check keys in a that are missing in b
+    for k in next,a do
+        if not b[k] then
+            return true
+        end
+    end
+
+    -- Check keys in b that are missing in a
+    for k in next,b do
+        if not a[k] then
+            return true
+        end
+    end
 end

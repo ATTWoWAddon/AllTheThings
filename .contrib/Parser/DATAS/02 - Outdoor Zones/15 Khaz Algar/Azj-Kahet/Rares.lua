@@ -1,9 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		}, {
 			n(216042, {	-- Cha'tak
 				["description"] = "Inside the cave, behind the waterfall.",
 				["coord"] = { 70.7, 21.4, AZJ_KAHET },
@@ -47,7 +50,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(216048, {	-- Jix'ak the Crazed
-				--["description"] = "Can be at any blood pool in area?",
+				-- ["description"] = "Can be at any blood pool in area?",
 				["questID"] = 82034,
 				["coord"] = { 65.1, 85.7, AZJ_KAHET_LOWER},
 				["groups"] = {
@@ -71,7 +74,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(216044, {	-- Maddened Siegebomber
-				--TODO: need more coords, flying around
+				-- TODO: need more coords, flying around
 				["coord"] = { 66.4, 56.4, AZJ_KAHET },
 				["questID"] = 81706,
 				["groups"] = {

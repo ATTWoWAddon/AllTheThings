@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DESOLACE, {
 		["lore"] =
@@ -187,6 +188,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179491, {	-- Waterlogged Footlocker
+					["coord"] = { 36.9, 24.1, DESOLACE },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 150,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66372, {	-- Merda Stronghoof <Master Pet Tamer>
 					["coord"] = { 57.2, 45.8, DESOLACE },
@@ -414,7 +424,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5821, {	-- Bodyguard for Hire
 					["qg"] = 11625,	-- Cork Gizelton
-					["coord"] = { 40.4, 79.2, DESOLACE },
+					["coord"] = { 60.2, 38.2, DESOLACE },
 					["timeline"] = { REMOVED_5_0_4 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -452,7 +462,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 177673 },	-- Serpent Statue
 							},
 							["coord"] = { 28.2, 6.4, DESOLACE },
-							["cost"] = {{ "i", 15766, 1 }},	-- Gem of the Serpent
+							["cost"] = { { "i", 15766, 1 } },	-- Gem of the Serpent
 							["cr"] = 12369,	-- Lord Kragaru
 						}),
 						i(16791, {	-- Silkstream Cuffs
@@ -535,7 +545,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11259,	-- Nataka Longhorn
 					["coord"] = { 55.4, 55.8, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 13546, 2 }},	-- Bloodbelly Fish
+					["cost"] = { { "i", 13546, 2 } },	-- Bloodbelly Fish
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					-- #if BEFORE 4.0.3
@@ -682,7 +692,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6142, {	-- Clam Bait
 					["qg"] = 12031,	-- Mai'Lahii
-					["coord"] = { 22.6, 72, DESOLACE },
+					["coord"] = { 22.6, 72.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 31,
@@ -960,11 +970,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["description"] = "You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.\n\nConsideration: You can make 55s for every 5 Shellfish you turn in and sell the fish on the AH. Up to you if your time is worth more or not. On densely populated servers, probably not a good idea.",
 					-- #endif
-					["cost"] = {{ "i", 13545, 5 }},	-- Shellfish
+					["cost"] = { { "i", 13545, 5 } },	-- Shellfish
 					["repeatable"] = true,
 					-- #endif
 					["qg"] = 11317,	-- Jinar'Zillen
-					["coord"] = { 22.4, 73, DESOLACE },
+					["coord"] = { 22.4, 73.0, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(25, 25, 10),
 					["groups"] = {
@@ -1040,8 +1050,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Ghost-o-plasm
 							["provider"] = { "i", 15849 },	-- Ghost-o-plasm
-							["coord"] = { 65, 91, DESOLACE },
-							["cost"] = {{ "i", 15848, 1 }},	-- Crate of Ghost Magnets
+							["coord"] = { 65.0, 91.0, DESOLACE },
+							["cost"] = { { "i", 15848, 1 } },	-- Crate of Ghost Magnets
 							["cr"] = 11560,	-- Magrami Spectre
 						}),
 						i(15864),	-- Condor Bracers
@@ -1071,7 +1081,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 4392, 1 }},	-- Advanced Target Dummy
+					["cost"] = { { "i", 4392, 1 } },	-- Advanced Target Dummy
 					["lvl"] = 30,
 				}),
 				q(14260, {	-- Going Deep
@@ -1104,7 +1114,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  14523 },	-- Demon Pick
 								{ "o", 176581 },	-- Hand of Iruxos Crystal
 							},
-							["coord"] = { 55, 26.4, DESOLACE },
+							["coord"] = { 55.0, 26.4, DESOLACE },
 							["cr"] = 11876,	-- Demon Spirit
 						}),
 					},
@@ -1172,7 +1182,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 11877 },	-- Roon Wildmane
 						{ "i", 14546 },	-- Roon's Kodo Horn
 					},
-					["coord"] = { 25, 72.2, DESOLACE },
+					["coord"] = { 25.0, 72.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
@@ -1512,7 +1522,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Draenethyst Shard
 							["provider"] = { "i", 6190 },	-- Draenethyst Shard
-							["coord"] = { 65, 21, SWAMP_OF_SORROWS },
+							["coord"] = { 65.0, 21.0, SWAMP_OF_SORROWS },
 							["cr"] = 5622,	-- Ongeku
 						}),
 					},
@@ -1852,7 +1862,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						{ 63.24, 20.68, HILLSBRAD_FOOTHILLS },	-- Krusk
-						{ 75, 34.2, ORGRIMMAR },	-- Belgrom Rockmaul
+						{ 75.0, 34.2, ORGRIMMAR },	-- Belgrom Rockmaul
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -2165,8 +2175,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Infused Burning Gem
 							["provider"] = { "i", 6435 },	-- Infused Burning Gem
-							["coord"] = { 55, 26.7, DESOLACE },
-							["cost"] = {{ "i", 6436, 1 }},	-- Burning Gem
+							["coord"] = { 55.0, 26.7, DESOLACE },
+							["cost"] = { { "i", 6436, 1 } },	-- Burning Gem
 							["crs"] = {
 								4665,	-- Burning Blade Adept
 								4663,	-- Burning Blade Augur
@@ -2174,7 +2184,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								4664,	-- Burning Blade Reaver
 							},
 						}),
-						--i(6766),	-- Flayed Demon Skin (old2) [TODO: Double check that this actually is given... strange name.]
+						-- i(6766),	-- Flayed Demon Skin (old2) [TODO: Double check that this actually is given... strange name.]
 					},
 				}),
 				q(1480, {	-- The Corrupter (1/5)
@@ -2203,7 +2213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Shadowstalker Scalp
 							["provider"] = { "i", 6441 },	-- Shadowstalker Scalp
-							["coord"] = { 75.8, 20, DESOLACE },
+							["coord"] = { 75.8, 20.0, DESOLACE },
 							["cr"] = 4674,	-- Hatefury Shadowstalker
 						}),
 					},
@@ -2218,7 +2228,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Oracle Crystal
 							["provider"] = { "i", 6442 },	-- Oracle Crystal
-							["coord"] = { 31, 15.4, DESOLACE },
+							["coord"] = { 31.0, 15.4, DESOLACE },
 							["cr"] = 4718,	-- Slitherblade Oracle
 						}),
 					},
@@ -2615,7 +2625,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 65, 25, DESOLACE },
+					["coord"] = { 65.0, 25.0, DESOLACE },
 					["groups"] = {
 						i(216950),	-- Creepy Dalaran Relic
 					},

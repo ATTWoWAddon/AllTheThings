@@ -1,19 +1,22 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 STORMING_THE_CITADEL = createHeader({
 	readable = "Storming the Citadel",
 	icon = 343640,
 	text = {
 		en = "Storming the Citadel",
-		es = "Asaltar la Ciudadela",
 		de = "Sturm auf die Zitadelle",
+		es = "Asaltar la Ciudadela",
+		-- TODO: mx = "",
 		fr = "La prise de la citadelle",
 		it = "Assalto alla rocca",
+		ko = "성채 몰아치기",
 		pt = "Invasão da Cidadela",
 		ru = "Штурм цитадели",
-		ko = "성채 몰아치기",
 		cn = "进攻堡垒",
+		-- TODO: tw = "",
 	},
 });
 THE_PLAGUEWORKS = createHeader({
@@ -21,14 +24,16 @@ THE_PLAGUEWORKS = createHeader({
 	icon = 342919,
 	text = {
 		en = "The Plagueworks",
-		es = "Los Talleres de la Peste",
 		de = "Die Seuchenwerke",
+		es = "Los Talleres de la Peste",
+		-- TODO: mx = "",
 		fr = "La Pesterie",
 		it = "Sale della Pestilenza",
+		ko = "역병작업장",
 		pt = "Antro da Peste",
 		ru = "Чумодельня",
-		ko = "역병작업장",
 		cn = "天灾工厂",
+		-- TODO: tw = "",
 	},
 });
 THE_CRIMSON_HALLS = createHeader({
@@ -42,19 +47,17 @@ THE_FROSTWING_HALLS = createHeader({
 	readable = "The Frostwing Halls",
 	icon = 343638,
 	text = {
-		-- #if AFTER BFA
 		en = [[~C_Map.GetAreaInfo(7932)]],
-		-- #else
-		en = "The Frostwing Halls",
-		es = "Las Cámaras de Alaescarcha",
 		de = "Die Frostschwingenhallen",
+		es = "Las Cámaras de Alaescarcha",
+		-- TODO: mx = "",
 		fr = "Les salles de l'Aile de givre",
 		it = "Sale delle Ali del Gelo",
+		ko = "서리날개 전당",
 		pt = "Salões da Asa Gélida",
 		ru = "Залы Ледокрылых",
-		ko = "서리날개 전당",
 		cn = "霜翼大厅",
-		-- #endif
+		-- TODO: tw = "",
 	},
 });
 
@@ -366,7 +369,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			-- Quest Chain: Path of Courage
+				-- Quest Chain: Path of Courage
 				q(24827, {	-- Path of Courage (Honored)
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -400,7 +403,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			--	Quest Chain: Path of Destruction
+				-- Quest Chain: Path of Destruction
 				q(24828, {	-- Path of Destruction (Honored)
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -434,7 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			--	Quest Chain: Path of Might
+				-- Quest Chain: Path of Might
 				q(25239, {	-- Path of Might (Honored)
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -468,7 +471,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			--	Quest Chain: Path of Vengeance
+				-- Quest Chain: Path of Vengeance
 				q(24826, {	-- Path of Vengeance [Honored]
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -502,7 +505,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			--	Quest Chain: Path of Wisdom
+				-- Quest Chain: Path of Wisdom
 				q(24825, {	-- Path of Wisdom [Honored]
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -616,7 +619,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
-				--  Weekly Raid Quests
+				-- Weekly Raid Quests
 				q(24874, {	-- Blood Quickening [10]
 					["qg"] = 38551,	-- Alrin the Agile
 					["timeline"] = { REMOVED_4_0_1 },
@@ -680,7 +683,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						i(52006),	-- Sack of Frosty Treasures
 					},
 				}),
-				q(24878, {	-- Residue Rendezvous[25]
+				q(24878, {	-- Residue Rendezvous [25]
 					["qg"] = 38501,	-- Alchemist Adrianna
 					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
@@ -910,66 +913,66 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				n(37687, {	-- Alchemist Finklestein
 					i(49959, {	-- Pattern: Bladeborn Leggings (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49958, {	-- Pattern: Blessed Cenarion Boots (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49954, {	-- Pattern: Deathfrost Boots (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49965, {	-- Pattern: Draconic Bonesplinter Legguards (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49963, {	-- Pattern: Earthsoul Boots (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49961, {	-- Pattern: Footpads of Impending Death (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49953, {	-- Pattern: Leggings of Woven Death (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49957, {	-- Pattern: Legwraps of Unleashed Nature (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49962, {	-- Pattern: Lightning-Infused Leggings (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49955, {	-- Pattern: Lightweave Leggings (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49966, {	-- Pattern: Rock-Steady Treads (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49956, {	-- Pattern: Sandals of Consecration (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49974, {	-- Plans: Boots of Kingly Upheaval (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49972, {	-- Plans: Hellfrozen Bonegrinders (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(52023, {	-- Plans: Iceblade Arrow (RECIPE!)
 						["timeline"] = { REMOVED_4_0_1 },
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49973, {	-- Plans: Pillars of Might (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49970, {	-- Plans: Protectors of Life (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49969, {	-- Plans: Puresteel Legplates (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(52022, {	-- Plans: Shatter Rounds (RECIPE!)
 						["timeline"] = { REMOVED_4_0_1 },
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 				}),
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>
@@ -1663,7 +1666,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51857),	-- Hersir's Greatspear
 							i(51858),	-- Soulbreaker
 							i(51852),	-- Wand of Ruby Claret
-							i(51847),	-- Spauldersof the Blood Princes
+							i(51847),	-- Spaulders of the Blood Princes
 							i(51848),	-- Heartsick Mender's Cape
 							i(51851),	-- Bloodsoul Raiment
 							i(51853),	-- Blood-Drinker's Girdle
@@ -2146,7 +2149,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50426),	-- Heaven's Fall, Kryss of a Thousand Lies
 							i(49997),	-- Mithrios, Bronzebeard's Legacy
 							i(50428),	-- Royal Scepter of Terenas II
-							i(49981),	-- Fal'inrush, Defender of Quel'thalas
+							i(49981),	-- Fal'inrush, Defender of Quel'Thalas
 							i(122229, {	-- Music Roll: Invincible
 								["timeline"] = { ADDED_6_1_0 },
 							}),
@@ -2536,7 +2539,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50736),	-- Heaven's Fall, Kryss of a Thousand Lies
 							i(50738),	-- Mithrios, Bronzebeard's Legacy
 							i(50734),	-- Royal Scepter of Terenas II
-							i(50733),	-- Fal'inrush, Defender of Quel'thalas
+							i(50733),	-- Fal'inrush, Defender of Quel'Thalas
 							i(122229, {	-- Music Roll: Invincible
 								["timeline"] = { ADDED_6_1_0 },
 							}),

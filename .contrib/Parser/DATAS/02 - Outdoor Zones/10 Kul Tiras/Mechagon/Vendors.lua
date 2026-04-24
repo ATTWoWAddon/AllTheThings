@@ -2,6 +2,12 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+local ENERGY_CELL = 166970;
+local SPARE_CRATE = 169610;
+local SPARE_PARTS = 166846;
+local GALVANIC_IGNITERCOIL = 168327;
+local GALVANIC_OSCILLATOR = 168832;
+
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 	m(MECHAGON, {
 		n(VENDORS, {
@@ -36,40 +42,106 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 73.7, 36.9, MECHAGON },
 				["groups"] = bubbleDownClassicRep(FACTION_RUSTBOLT_RESISTANCE, {
 					{		-- Neutral
+						i(246601, {	-- Bolt Chair (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "i", SPARE_PARTS, 10 } },
+						}),
+						i(246703, {	-- Double-Sprocket Table (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 2400000 },	-- 240g
+								{ "i", SPARE_CRATE, 3 },
+							},
+						}),
+						i(246603, {	-- Gnomish Cog Stack (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "i", SPARE_PARTS, 50 } },
+						}),
+						i(246701, {	-- Gnomish Sprocket Table (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 1600000 },	-- 160g
+								{ "i", SPARE_CRATE, 2 },
+							},
+						}),
+						i(246479, {	-- Gnomish T.O.O.L.B.O.X. (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "i", SPARE_PARTS, 100 } },
+						}),
+						i(246483, {	-- Redundant Reclamation Rig (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 4000000 },	-- 400g
+								{ "i", ENERGY_CELL, 2 },
+								{ "i", GALVANIC_IGNITERCOIL, 1 },
+							},
+						}),
+						i(246598, {	-- Screw-Sealed Stembarrel (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "i", SPARE_CRATE, 1 } },
+						}),
 					}, {	-- Friendly
+						i(246484, {	-- Mechagon Hanging Floodlight (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 800000 },	-- 80g
+								{ "i", ENERGY_CELL, 1 },
+							},
+						}),
 						i(167693),	-- Neural Autonomy
 						i(168400, {	-- Null Force Containment Unit (Rank 1)
 							["cost"] = {
-								{ "i", 169610, 2 },	-- 2x Spare Crate
-								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
+								{ "i", SPARE_CRATE, 2 },
+								{ "i", GALVANIC_OSCILLATOR, 1 },
 							},
 						}),
 						i(168932, {	-- Reactive Existence Battery (Rank 1)
 							["cost"] = {
-								{ "i", 169610, 2 },	-- 2x Spare Crate
-								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
+								{ "i", SPARE_CRATE, 2 },
+								{ "i", GALVANIC_OSCILLATOR, 1 },
+							},
+						}),
+						i(246497, {	-- Small Emergency Warning Lamp (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 800000 },	-- 80g
+								{ "i", ENERGY_CELL, 1 },
 							},
 						}),
 						i(168858, {	-- Titan Purification Protocols (Rank 1)
 							["cost"] = {
-								{ "i", 169610, 2 },	-- 2x Spare Crate
-								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
+								{ "i", SPARE_CRATE, 2 },
+								{ "i", GALVANIC_OSCILLATOR, 1 },
 							},
 						}),
 					}, {	-- Honored
 						i(169112, {	-- Blueprint: Advanced Adventurer Augment
 							["cost"] = 20480000,	-- 2,048g
 						}),
+						i(246498, {	-- Emergency Warning Lamp (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 800000 },	-- 80g
+								{ "i", ENERGY_CELL, 1 },
+							},
+						}),
 						i(168933, {	-- Enhanced Existence Capacitor (Rank 2)
 							["cost"] = {
-								{ "i", 169610, 8 },	-- 8x Spare Crate
-								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
+								{ "i", SPARE_CRATE, 8 },
+								{ "i", GALVANIC_OSCILLATOR, 4 },
+							},
+						}),
+						i(246503, {	-- Large H.O.M.E. Cog (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 800000 },	-- 80g
+								{ "i", SPARE_CRATE, 2 },
 							},
 						}),
 						i(168566, {	-- Null Force Cooling Unit (Rank 2)
 							["cost"] = {
-								{ "i", 169610, 8 },	-- 8x Spare Crate
-								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
+								{ "i", SPARE_CRATE, 8 },
+								{ "i", GALVANIC_OSCILLATOR, 4 },
 							},
 						}),
 						i(169380, {	-- Mustyfur Snooter (PET!)
@@ -77,8 +149,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						}),
 						i(168859, {	-- Targeted Purification Protocols (Rank 2)
 							["cost"] = {
-								{ "i", 169610, 8 },	-- 8x Spare Crate
-								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
+								{ "i", SPARE_CRATE, 8 },
+								{ "i", GALVANIC_OSCILLATOR, 4 },
 							},
 						}),
 					}, {	-- Revered
@@ -87,21 +159,35 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						}),
 						i(168934, {	-- Calibrated Existence Gauge (Rank 3)
 							["cost"] = {
-								{ "i", 169610, 30 },	-- 30x Spare Crate
-								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
+								{ "i", SPARE_CRATE, 30 },
+								{ "i", GALVANIC_OSCILLATOR, 6 },
 							},
 						}),
 						i(167672),	-- Cyclotronic Blast
 						i(168860, {	-- Enhanced Purification Protocols (Rank 3)
 							["cost"] = {
-								{ "i", 169610, 30 },	-- 30x Spare Crate
-								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
+								{ "i", SPARE_CRATE, 30 },
+								{ "i", GALVANIC_OSCILLATOR, 6 },
+							},
+						}),
+						i(246605, {	-- Mecha-Storage Mecha-Chest (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 1200000 },	-- 120g
+								{ "i", GALVANIC_IGNITERCOIL, 2 },
+							},
+						}),
+						i(246499, {	-- Mechagon Eyelight Lamp (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 1200000 },	-- 120g
+								{ "i", ENERGY_CELL, 2 },
 							},
 						}),
 						i(168568, {	-- Null Force Nullifier (Rank 3)
 							["cost"] = {
-								{ "i", 169610, 30 },	-- 30x Spare Crate
-								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
+								{ "i", SPARE_CRATE, 30 },
+								{ "i", GALVANIC_OSCILLATOR, 6 },
 							},
 						}),
 						i(169108, {	-- Rustbolt Banner (TOY!)
@@ -123,8 +209,23 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							["cost"] = 14000000,	-- 1,400g
 						}),
 					}, {	-- Exalted
+						i(246480, {	-- Automated Gnomeregan Guardian (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 8000000 },	-- 800g
+								{ "i", GALVANIC_IGNITERCOIL, 5 },
+								{ "i", GALVANIC_OSCILLATOR, 5 },
+							},
+						}),
 						i(168493, {	-- Blueprint: Battle Box
 							["cost"] = 10240000,	-- 1,024g
+						}),
+						i(246501, {	-- Gnomish Safety Flamethrower (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {
+								{ "g", 1600000 },	-- 160g
+								{ "i", GALVANIC_OSCILLATOR, 2 },
+							},
 						}),
 						i(168369, {	-- Recipe: Famine Evaluator And Snack Table [Rank 2] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g

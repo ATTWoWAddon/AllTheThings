@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(DUSKWOOD, {
 		["lore"] = "Duskwood is a zone in Southern Eastern Kingdoms, warped and cursed due to the Scythe of Elune. Beneath the eternal blanket of darkness which gave Duskwood its current name, the Scythe's effects have transformed what was once a beautiful part of Elwynn Forest into a land covered in gnarled trees and inhabited by the hideous undead and extradimensional Worgen, brought along with the black fog hanging over the woods. Ogres moving in from Deadwind Pass have brought up even more problems.",
@@ -120,19 +121,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
-						["coord"] = { 23.3, 72.8, DUSKWOOD },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							215,	-- Defias Night Runner
-							909,	-- Defias Night Blade
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
+					["coord"] = { 23.3, 72.8, DUSKWOOD },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						215,	-- Defias Night Runner
+						909,	-- Defias Night Blade
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {
@@ -253,10 +251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(325, {	-- Armed and Ready
 					["sourceQuest"] = 322,	-- Blessed Arm
-					["providers"] = {
-						{ "n", 1416 },	-- Grimand Elmore
-						{ "i", 7297 },	-- Morbent's Bane
-					},
+					["qg"] = 1416,	-- Grimand Elmore
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -431,6 +426,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(60930, {	-- Shield of Darkshire
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						i(245624, {	-- Waning Wood Fence (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 				q(157, {	-- Deliver the Thread
@@ -524,6 +522,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
+						objective(1, {	-- 0/15 Pygmy Venom Web Spider slain
+							["provider"] = { "n", 539 },	-- Pygmy Venom Web Spider
+							["coords"] = {
+								{ 90.8, 16.0, DUSKWOOD },
+								{ 52.0, 12.4, DUSKWOOD },
+								{ 27.8, 29.2, DUSKWOOD },
+								{ 13.0, 28.4, DUSKWOOD },
+								{  9.4, 39.8, DUSKWOOD },
+								{ 13.0, 70.6, DUSKWOOD },
+							},
+						}),
 						i(3559, {	-- Night Watch Gauntlets
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -887,6 +896,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(60940, {	-- Felbane Belt
 							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(256905, {	-- Small Gilnean Table (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 						i(60938, {	-- Yorgen's Boon
 							["timeline"] = { ADDED_4_0_3 },
@@ -2066,7 +2078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				n(771, {  -- Commander Felstrom
+				n(771, { 	-- Commander Felstrom
 					["description"] =
 						-- #if AFTER 10.1.7
 						"Wanders the Raven Hill Cemetary, spawns at the given coordinate.",
@@ -2093,7 +2105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 23, 47, DUSKWOOD },
+					["coord"] = { 23.0, 47.0, DUSKWOOD },
 					["groups"] = {
 						i(216946),	-- Glittering Dalaran Relic
 					},
@@ -2144,7 +2156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(503, {  -- Lord Malathrom
+				n(503, { 	-- Lord Malathrom
 					["description"] =
 						-- #if AFTER 10.1.7
 						"Spawns in one of multiple locations in the Dawning Wood Catacombs.",
@@ -2170,7 +2182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(521, {  -- Lupos
+				n(521, { 	-- Lupos
 					["description"] =
 						-- #if AFTER 4.0.3
 						"Spawns in one of multiple locations at the eastern end of the Darkened Bank.",
@@ -2201,13 +2213,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(45811, {	-- Marina DeSirrus
 					["coord"] = { 7.80, 34.2, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER 10.1.7
 					["groups"] = {
 						i(920, {	-- Wicked Spiked Mace
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+							["timeline"] = { ADDED_10_1_7 },
 						}),
 					},
-					-- #endif
 				}),
 				n(45771, {	-- Marus
 					["coords"] = {
@@ -2219,7 +2229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				n(574, {  -- Naraxis
+				n(574, { 	-- Naraxis
 					["coords"] = {
 						-- #if AFTER 4.0.3
 						{ 86.4, 47.3, DUSKWOOD },
@@ -2236,7 +2246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(534, {  -- Nefaru
+				n(534, { 	-- Nefaru
 					-- #if BEFORE 4.0.3
 					["description"] = "Spawns randomly in the south and south-eastern part of the zone.",
 					-- #endif
@@ -2291,7 +2301,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210252, {	-- Rune of Shiving
 					["description"] = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
 					["providers"] = {
-						--{ "o",  },	-- TODO: Find ObjectID
+						-- { "o",  },	-- TODO: Find ObjectID
 						{ "i", 210250 },	-- Engraved Gold Ring
 						{ "i", 210251 },	-- Engraved Silver Ring
 					},
@@ -2464,6 +2474,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(44114, {	-- Wilkinson <General Goods>
+					["coord"] = { 20.3, 58.4, DUSKWOOD },
+					["timeline"] = { ADDED_4_0_1 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(256905, {	-- Small Gilnean Table (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+						i(245624, {	-- Waning Wood Fence (DECOR!)
+							["timeline"] = { ADDED_11_2_7 }
+						}),
+					},
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(2794, {	-- An Old History Book
@@ -2554,7 +2577,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(211490, {	-- Prophecy of a Thousand Lights
-							["coord"] = { 90, 30, DUSKWOOD },
+							["coord"] = { 90.0, 30.0, DUSKWOOD },
 							["classes"] = { PRIEST },
 							["groups"] = {
 								recipe(402859),	-- Engrave Gloves - Circle of Healing
@@ -2805,7 +2828,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						-- #if AFTER 10.1.7
-						 48,	-- Skeletal Warrior
+						48,	-- Skeletal Warrior
 						-- #else
 						1110,	-- Skeletal Raider
 						-- #endif
@@ -2852,21 +2875,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(920, {	-- Wicked Spiked Mace
 					["coords"] = {
-						-- #if AFTER 10.1.7
-						{ 7.8, 33.8, DUSKWOOD },
-						-- #else
 						{ 23.6, 71.6, DUSKWOOD },
 						{ 49.8, 77.8, DUSKWOOD },
-						-- #endif
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_3, },	-- Added under Marina DeSirrus in 10.1.7
 					["crs"] = {
-						-- #if AFTER 10.1.7
-						45811,	-- Marina DeSirrus
-						-- #else
 						909,	-- Defias Night Blade
 						215,	-- Defias Night Runner
-						-- #endif
 					},
 				}),
 			}),

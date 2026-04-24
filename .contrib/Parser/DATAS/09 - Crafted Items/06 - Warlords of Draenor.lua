@@ -42,7 +42,7 @@ end
 -- 10.0.5: Removes Item 1*, Item 4, Item 5 and add twos new items called Impressive and Remarkable which makes you able to get the appearances. \\End
 
 -- Item 1: X / Unstable X,
--- Item 2: Greate X / Unstable Greater X
+-- Item 2: Greater X / Unstable Greater X
 -- Item 3: Powerful X / Unstable Powerful X
 -- Item 1*: X
 -- Item 4: Mighty X
@@ -108,6 +108,36 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		-- #if AFTER 12.0.0
+		o_repeated({	-- Shadowmoon Lumber
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				STORMSHIELD,
+				TALADOR,
+				TANAAN_JUNGLE,
+				WARSPEAR,
+			},
+			["groups"] = {
+				-- Objects
+				o(628951),	-- [Tanaan Jungle]
+				o(628952),	-- [Ashran/Stormshield/Warspear]
+				o(628949),	-- [Frostfire Ridge]
+				o(628955),	-- [Spires of Arak]
+				o(628954),	-- [Talador]
+				o(628950),	-- [Gorgrond]
+				o(628956),	-- [Shadowmoon Valley]
+				o(628953),	-- [Nagrand]
+				-- Drops
+				i(251766),	-- Shadowmoon Lumber
+			},
+		}),
+		-- #endif
+	})),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(116979, {["timeline"] = {ADDED_8_0_1}}),	-- Blackwater Anti-Venom
@@ -168,7 +198,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(108439),	-- Draenor Clan Orator Cane
 		i(109584),	-- Ogre Missive
 		i(87399),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_ARAKKOA, sharedData({["cost"]={{"c",ARCH_CURRENCY_ARAKKOA,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_ARAKKOA, sharedData({["cost"]={{"c",ARCH_CURRENCY_ARAKKOA,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 234105 },	-- Arakkoa Archaeology Find
 			["maps"] = {
 				DRAENOR_SHADOWMOON_VALLEY,
@@ -190,7 +220,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114202),	-- Talonpriest Mask
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_DRAENORCLANS, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENORCLANS,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DRAENORCLANS, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENORCLANS,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 226521 },	-- Draenor Clans Archaeology Find
 			["maps"] = {
 				DRAENOR_SHADOWMOON_VALLEY,
@@ -222,7 +252,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114145),	-- Wolfskin Snowshoes
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_OGRE, sharedData({["cost"]={{"c",ARCH_CURRENCY_OGRE,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_OGRE, sharedData({["cost"]={{"c",ARCH_CURRENCY_OGRE,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 234106 },	-- Ogre Archaeology Find
 			["maps"] = {
 				DRAENOR_SHADOWMOON_VALLEY,
@@ -412,7 +442,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(122347, {["timeline"] = {ADDED_6_1_0}}),	-- Whiptail Fillet
 	}),
 	prof(ENCHANTING, {
-		spell(13262, {	-- Disenchant
+		header(HEADERS.Spell, 13262, {	-- Disenchant
 			i(109693),	-- Draenic Dust
 			i(115504),	-- Fractured Temporal Crystal
 			i(111245),	-- Luminous Shard
@@ -495,6 +525,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(111402),	-- Mechanical Axebeak (PET!)
 			i(118741),	-- Mechanical Scorpid (PET!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(251482),	-- Draenei Stargazer's Telescope (DECOR!)
+			i(244314),	-- Frostwall Architect's Table (DECOR!)
+		})),
 		filter(MISC, {
 			i(127719, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Advanced Muzzlesprocket
 			i(171072),	-- Alliance Firework
@@ -669,6 +703,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(118601),	-- Ocean Tarot
 			i(118603),	-- Savage Tarot
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245534),	-- Frostwall Elevated Brazier (DECOR!)
+			i(244317),	-- Orcish Banded Barrel (DECOR!)
+			i(244313),	-- Orcish Fence (DECOR!)
+			i(245441),	-- Orcish Fencepost (DECOR!)
+			i(244319),	-- Wooden Shipping Crate (DECOR!)
+		})),
 		filter(HELD_IN_OFF_HAND, {
 			i(113270, {	-- Shadowtome
 				["timeline"] = { CREATED_9_0_1 },
@@ -739,6 +780,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(115989),					-- Whispering Iron Band
 			WOD_CRAFTED_ITEM(115798),	-- Whispering Taladite Ring
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(251550),	-- Draenethyst Sconce (DECOR!)
+			i(251495),	-- Draenic Basin (DECOR!)
+		})),
 		filter(GEMS, {
 			i(115803),	-- Critical Strike Taladite
 			i(115809),	-- Greater Critical Strike Taladite
@@ -880,6 +925,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				-- #ENDIF
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245432),	-- Blackrock Bunkbed (DECOR!)
+			i(244323),	-- Orcish Sleeping Cot (DECOR!)
+		})),
 		filter(MISC, {
 			i(128014, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Burnished Essence
 			i(116261),	-- Burnished Inscription Bag
@@ -914,6 +963,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(115508),	-- Draenic Stone
 			i(109991),	-- True Iron Nugget
 			i(109119),	-- True Iron Ore
+		}),
+	}),
+	prof(SKINNING, {
+		spell(8613, {	-- Skinning
+			DRAENOR_SKINNING,
+			i(110609),	-- Raw Beast Hide
+			i(110610),	-- Raw Beast Hide Scraps
 		}),
 	}),
 	prof(TAILORING, {
@@ -975,6 +1031,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		filter(BATTLE_PETS, {
 			i(113216),	-- Elekk Plushie (PET!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(251546),	-- Argussian Circular Rug (DECOR!)
+			i(258303),	-- Beloved Elekk Plushie (DECOR!)
+			i(245421),	-- Karabor Bed (DECOR!)
+		})),
 		filter(MISC, {
 			-- #if AFTER BFA
 			i(111603),	-- Antiseptic Bandage

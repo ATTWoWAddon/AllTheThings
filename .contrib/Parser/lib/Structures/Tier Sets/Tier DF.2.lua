@@ -31,7 +31,7 @@ TIER_ABERRUS = {
 	};
 	MAGE = {
 		i(202547),	-- Underlight Conjurer's Bracelets
-		i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
+		i(202546),	-- Underlight Conjurer's Cape	--TODO: Only One sourceID?!
 		i(202548),	-- Underlight Conjurer's Charmbelt
 		i(202553),	-- Underlight Conjurer's Treads
 	};

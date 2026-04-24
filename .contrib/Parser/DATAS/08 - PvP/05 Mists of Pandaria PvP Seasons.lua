@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 local function MarkOfWHOOOWHATNow(t)
 	-- #if BEFORE 7.0.3.22248
 	-- Programmatically remove all references to Mark of Honor.
@@ -56,19 +57,9 @@ root(ROOTS.PVP, {
 				ach(8244, {	-- Hero of the Horde: Malevolent
 					["races"] = HORDE_ONLY,
 				}),
-				-- #if ANYCLASSIC
-				ach(61354, {	-- Malevolent Gladiator: Season 12 (2v2)
-					title(223),	-- Malevolent Gladiator <Name>
-				}),
-				-- #endif
 				ach(8214, {	-- Malevolent Gladiator (Retail) // Malevolent Gladiator: Season 12 (3v3) (Classic)
 					title(223),	-- Malevolent Gladiator <Name>
 				}),
-				-- #if ANYCLASSIC
-				ach(61362, {	-- Malevolent Gladiator: Season 12 (5v5)
-					title(223),	-- Malevolent Gladiator <Name>
-				}),
-				-- #endif
 				ach(8216, {	-- Malevolent Gladiator's Cloud Serpent
 					["provider"] = { "i", 95041 },	-- Malevolent Gladiator's Cloud Serpent
 					["filterID"] = MOUNTS,
@@ -77,6 +68,27 @@ root(ROOTS.PVP, {
 					["description"] = "Awarded to members of the Arena teams during MoP Season 1 that were in the 0.5% bracket of their battlegroup.",
 				}),
 				-- #if ANYCLASSIC
+				ach(42762),	-- Challenger: Season 12
+				ach(42764),	-- Rival: Season 12
+				ach(42763),	-- Duelist: Season 12
+				ach(61350, {	-- Gladiator: Season 12 (2v2)
+				}),
+				ach(42765, {	-- Gladiator: Season 12 (3v3)
+				}),
+				ach(61358, {	-- Gladiator: Season 12 (5v5)
+				}),
+				ach(61459, {	-- Malevolent Conquest
+					["races"] = HORDE_ONLY,
+				}),
+				ach(61460, {	-- Malevolent Conquest
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(61354, {	-- Malevolent Gladiator: Season 12 (2v2)
+					title(223),	-- Malevolent Gladiator <Name>
+				}),
+				ach(61362, {	-- Malevolent Gladiator: Season 12 (5v5)
+					title(223),	-- Malevolent Gladiator <Name>
+				}),
 				ach(61415, {	-- Undisputed Gladiator: Season 12
 					title(261),	-- Undisputed Gladiator <Name>
 				}),
@@ -369,7 +381,7 @@ root(ROOTS.PVP, {
 				})),
 			}),
 			n(PVP_GLADIATOR, {
-			--	["description"] = "These items are available from Malevolent Gladiator: Season 12 class ensembles only",
+				-- ["description"] = "These items are available from Malevolent Gladiator: Season 12 class ensembles only",
 				["groups"] = {
 					n(WEAPONS, sharedData({
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
@@ -870,7 +882,7 @@ root(ROOTS.PVP, {
 				ach(8653, {	-- Hero of the Horde: Tyrannical
 					["races"] = HORDE_ONLY,
 				}),
-				ach(8791, {	-- Tyrannical Gladiator: Mists of Pandaria Season 2
+				ach(8791, {	-- Tyrannical Gladiator (Retail) // Tyrannical Gladiator: Season 13 (3v3) (Classic)
 					title(225),	-- Tyrannical Gladiator <Name>
 				}),
 				ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
@@ -880,6 +892,26 @@ root(ROOTS.PVP, {
 				i(104325, {	-- Tyrannical Gladiator's Cloud Serpent
 					["description"] = "Awarded to members of the Arena teams during MoP Season 2 that were in the 0.5% bracket of their battlegroup.",
 				}),
+				-- #if ANYCLASSIC
+				ach(61098),	-- Challenger: Season 13
+				ach(61097),	-- Duelist: Season 13
+				ach(61099),	-- Rival: Season 13
+				ach(61351, {	-- Gladiator: Season 13 (2v2)
+				}),
+				ach(61096, {	-- Gladiator: Season 13 (3v3)
+				}),
+				ach(61359, {	-- Gladiator: Season 13 (5v5)
+				}),
+				ach(61355, {	-- Tyrannical Gladiator: Season 13 (2v2)
+					title(225),	-- Tyrannical Gladiator <Name>
+				}),
+				ach(61363, {	-- Tyrannical Gladiator: Season 13 (5v5)
+					title(225),	-- Tyrannical Gladiator <Name>
+				}),
+				ach(61416, {	-- Undisputed Gladiator: Season 13
+					title(261),	-- Undisputed Gladiator <Name>
+				}),
+				-- #endif
 			})),
 			n(PVP_HONOR, {
 				["description"] = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
@@ -1879,7 +1911,7 @@ root(ROOTS.PVP, {
 						["timeline"] = { ADDED_7_3_2 },
 					})),
 				}),
-				ach(8644, {	-- Gladiator: Mists of Pandaria Season 3/Season 14
+				ach(8644, {	-- Gladiator: Season 14 (Retail) // Gladiator: Season 14 (3v3) (Classic)
 					i(104326),	-- Grievous Gladiator's Cloud Serpent
 				}),
 				ach(8485, {	-- Grievous Combatant (Alliance) Mists of Pandaria Season 3/Season 14
@@ -1888,7 +1920,7 @@ root(ROOTS.PVP, {
 				ach(8484, {	-- Grievous Combatant (Horde) Mists of Pandaria Season 3/Season 14
 					["races"] = HORDE_ONLY,
 				}),
-				ach(8643, {	-- Grievous Gladiator: Mists of Pandaria Season 3/Season 14
+				ach(8643, {	-- Grievous Gladiator (Retail) // Grievous Gladiator: Season 14 (3v3) (Classic)
 					title(253),	-- Grievous Gladiator <Name>
 				}),
 				ach(8705, {	-- Grievous Gladiator's Cloud Serpent
@@ -1912,6 +1944,24 @@ root(ROOTS.PVP, {
 					},
 				}),
 				ach(8646),	-- Rival: Mists of Pandaria Season 3/Season 14
+				-- #if ANYCLASSIC
+				ach(61352, {	-- Gladiator: Season 14 (2v2)
+					i(104326),	-- Grievous Gladiator's Cloud Serpent
+				}),
+				-- Gladiator 3v3 is above, as it exist in Retail
+				ach(61360, {	-- Gladiator: Season 14 (5v5)
+					i(104326),	-- Grievous Gladiator's Cloud Serpent
+				}),
+				ach(61356, {	-- Grievous Gladiator: Season 14 (2v2)
+					title(253),	-- Grievous Gladiator <Name>
+				}),
+				ach(61364, {	-- Grievous Gladiator: Season 14 (5v5)
+					title(253),	-- Grievous Gladiator <Name>
+				}),
+				ach(61417, {	-- Undisputed Gladiator: Season 14
+					title(261),	-- Undisputed Gladiator <Name>
+				}),
+				-- #endif
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
@@ -3172,7 +3222,7 @@ root(ROOTS.PVP, {
 						["timeline"] = { ADDED_7_3_2 },
 					})),
 				}),
-				ach(8667, {	-- Gladiator: Mists of Pandaria Season 4/Season 15
+				ach(8667, {	-- Gladiator: Season 15 (Retail) // Gladiator: Season 15 (3v3) (Classic)
 					i(104327),	-- Prideful Gladiator's Cloud Serpent
 				}),
 				ach(8658, {	-- Hero of the Alliance: Prideful
@@ -3197,7 +3247,7 @@ root(ROOTS.PVP, {
 				ach(8641, {	-- Prideful Combatant (Horde) Mists of Pandaria Season 4/Season 15
 					["races"] = HORDE_ONLY,
 				}),
-				ach(8666, {	-- Prideful Gladiator: Mists of Pandaria Season 4/Season 15
+				ach(8666, {	-- Prideful Gladiator (Retail) // Prideful Gladiator: Season 15 (3v3) (Classic)
 					title(254),	-- Prideful Gladiator <Name>
 				}),
 				ach(8707, {	-- Prideful Gladiator's Cloud Serpent
@@ -3205,6 +3255,24 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				ach(8669),	-- Rival: Mists of Pandaria Season 4/Season 15
+				-- #if ANYCLASSIC
+				ach(61353, {	-- Gladiator: Season 15 (2v2)
+					i(104327),	-- Prideful Gladiator's Cloud Serpent
+				}),
+				-- Gladiator 3v3 is above, as it exist in Retail
+				ach(61361, {	-- Gladiator: Season 15 (5v5)
+					i(104327),	-- Prideful Gladiator's Cloud Serpent
+				}),
+				ach(61357, {	-- Prideful Gladiator: Season 15 (2v2)
+					title(254),	-- Prideful Gladiator <Name>
+				}),
+				ach(61365, {	-- Prideful Gladiator: Season 15 (5v5)
+					title(254),	-- Prideful Gladiator <Name>
+				}),
+				ach(61418, {	-- Undisputed Gladiator: Season 15
+					title(261),	-- Undisputed Gladiator <Name>
+				}),
+				-- #endif
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,

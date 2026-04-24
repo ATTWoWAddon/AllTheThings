@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 PIRATES_DAY_HEADER = createHeader({
 	readable = "Pirates' Day",
 	constant = "PIRATES_DAY_HEADER",
@@ -15,18 +16,19 @@ PIRATES_DAY_HEADER = createHeader({
 	-- #endif
 	text = {
 		en = "Pirates' Day",
-		es = "Día de los Piratas",
 		de = "Piratentag",
+		es = "Día de los Piratas",
+		mx = "Día de los Piratas",
 		fr = "Jour des pirates",
 		it = "Giorno dei Pirati",
-		mx = "Día de los Piratas",
+		ko = "해적의 날",
 		pt = "Dia dos Piratas",
 		ru = "День пирата",
-		ko = "해적의 날",
 		cn = "海盗日",
 		tw = "海盜節",
 	},
 });
+
 root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 	["timeline"] = { ADDED_2_4_3 },
 	["groups"] = {
@@ -64,7 +66,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 			}),
 		}),
 		n(RARES, {
-			n(108715, {  -- Ol' Eary
+			n(108715, {	-- Ol' Eary
 				["coord"] = { 37.8, 66.2, THE_CAPE_OF_STRANGLETHORN },
 				["timeline"] = { ADDED_7_0_3 },
 				["groups"] = {

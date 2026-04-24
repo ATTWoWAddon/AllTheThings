@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(ACHIEVEMENTS, {
 		ach(19871),	-- Infinite Power
@@ -25,7 +26,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(220766),	-- August Phoenix (MOUNT!)
 		}),
 		ach(40223, {	-- Timerunner
-			title(551),	-- Timerunner (TITLE!)
+			title(551),	-- Timerunner
 			i(208555),	-- Timerunner's Idol
 		}),
 	}),
@@ -36,7 +37,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		},
 		["groups"] = {
 			i(224003, {	-- Cup of Nearly Infinite Kafa
-				--["questID"] = 31304,
+				-- ["questID"] = 31304,
 			}),
 		},
 	}),

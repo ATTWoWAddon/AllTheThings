@@ -1,0 +1,206 @@
+﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end
+---@diagnostic disable: deprecated
+local appName, _ = ...;
+_.AddEventHandler("OnBuildDataCache", function(categories)
+local ach,cl,crit,faction,flt,h,i,mnt,r,s=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateRecipe,_.CreateItemSource;
+categories.Character=
+h(-731,{SortPriority=40,g={
+h(-12,{
+ach(891),
+ach(546),
+ach(523),
+ach(524),
+ach(521),
+ach(520),
+ach(2358,{c={2},rwp=40003,sourceQuests={7647},g={
+crit(8907,{achID=2358,id=1,questID=9737,u=1})}}),
+ach(16,{rwp=40001}),
+ach(2716,{rwp=70003}),
+ach(2336,{description="Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, Darkmoon Faire, and the Shen'dralar. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",u=13}),
+ach(6),
+ach(7),
+ach(8),
+ach(9),
+ach(10,{rwp=90001}),
+ach(11,{rwp=90001}),
+ach(879,{providers={{"i",8586},{"i",12302},{"i",12303},{"i",12330},{"i",12351},{"i",12353},{"i",12354},{"i",13317},{"i",13326},{"i",13327},{"i",13328},{"i",13329},{"i",15292},{"i",15293}},rwp=10400,u=2}),
+ach(522),
+ach(16433,{awp=11403,OnUpdate=function(t)if t.collectible and _.Level>=60 then	local i,spellID=1,select(10,UnitBuff("player",1));while spellID do	if spellID==364001 then	t:SetAchievementCollected(t.achievementID,true);return false;end	i=i + 1;spellID=select(10,UnitBuff("player",i));end;t:SetAchievementCollected(t.achievementID,false);end	end,rwp=11500,u=2}),
+flt(100,{
+ach(2142),
+ach(2141)})}),
+h(-17),
+h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
+faction(469,{icon=374217,r=2}),
+faction(67,{icon=374221,r=1}),
+faction(891,{collectible=false,r=2}),
+faction(892,{collectible=false,r=1})}}),
+h(-11,{
+cl(11,{
+h(-88,{
+s(158324,6124,{f=4,filterForRWP=5,q=0,rwp=90105}),
+s(158323,6123,{f=4,filterForRWP=5,q=0,rwp=90105}),
+s(158335,6139,{f=4,filterForRWP=5,q=0,rwp=90105})}),
+h(-101,{
+s(156040,35,{f=28,q=1}),
+s(157420,3661,{f=28,q=1})})}),
+cl(3,{
+h(-88,{
+s(156067,129,{f=2,filterForRWP=6,q=1,rwp=90105}),
+s(156071,147,{f=4,filterForRWP=6,q=0,rwp=90105}),
+s(158326,6126,{f=4,q=0,rwp=40003}),
+s(158333,6137,{f=4,filterForRWP=6,q=0,rwp=90105}),
+s(158327,6127,{f=4,q=1,rwp=40003}),
+s(158334,6138,{f=2,filterForRWP=6,q=1,rwp=90105})}),
+h(-101,{
+s(156861,2508,{f=31,q=1}),
+s(156857,2504,{f=32,q=1,rwp=90001})})}),
+cl(8,{
+h(-88,{
+s(156055,55,{f=4,q=1,rwp=90105}),
+s(156289,1395,{f=4,q=0,rwp=90105}),
+s(156056,56,{f=4,q=0,rwp=90105}),
+s(158336,6140,{f=4,q=0,rwp=90105})}),
+h(-101,{
+s(156040,35,{f=28,q=1}),
+s(157420,3661,{f=28,q=1})})}),
+cl(2,{
+flt(100,{
+mnt(13819,{c={2},lvl=40,races={1,3}})}),
+h(-88,{
+s(156046,43,{f=2,filterForRWP=7,q=1,rwp=90105}),
+s(156047,44,{f=4,filterForRWP=7,q=0,rwp=90105}),
+s(158318,6118,{f=4,q=0,rwp=40003})}),
+h(-101,{
+s(156041,36,{f=23,q=1}),
+s(156774,2362,{f=8,q=0})})}),
+cl(5,{
+h(-88,{
+s(156290,1396,{f=4,q=0,rwp=90105}),
+s(156052,51,{f=4,q=1,rwp=90105}),
+s(156053,52,{f=4,q=0,rwp=90105}),
+s(158315,6098,{f=4,q=0,rwp=90105}),
+s(158319,6119,{f=4,q=0,rwp=90105}),
+s(158340,6144,{f=4,q=0,rwp=90105})}),
+h(-101,{
+s(156040,35,{f=28,q=1}),
+s(157420,3661,{f=28,q=1})})}),
+cl(4,{
+h(-88,{
+s(156050,48,{f=4,filterForRWP=5,q=0,rwp=90105}),
+s(156049,47,{f=5,q=1,rwp=90105}),
+s(156065,121,{f=5,q=1,rwp=90105}),
+s(156064,120,{f=4,filterForRWP=5,q=0,rwp=90105})}),
+h(-101,{
+s(156616,2092,{f=20,q=1})})}),
+cl(7,{
+h(-88,{
+s(156073,153,{f=5,q=0,rwp=40003})}),
+h(-101,{
+s(156041,36,{f=23,q=1}),
+s(156774,2362,{f=8,q=0})})}),
+cl(9,{
+flt(100,{
+mnt(5784,{c={9},lvl=40})}),
+h(-88,{
+s(156290,1396,{f=4,q=0,rwp=90105}),
+s(156057,57,{f=4,q=0,rwp=90105}),
+s(158329,6129,{f=4,q=0,rwp=90105}),
+s(156058,59,{f=4,q=1,rwp=90105})}),
+h(-101,{
+s(156040,35,{f=28,q=1})})}),
+cl(1,{
+h(-88,{
+s(156069,140,{f=2,filterForRWP=7,q=1,rwp=90105}),
+s(156068,139,{f=4,filterForRWP=7,q=0,rwp=90105}),
+s(156045,40,{f=2,filterForRWP=7,q=1,rwp=90105}),
+s(158322,6122,{f=2,filterForRWP=7,q=1,rwp=90105}),
+s(156044,39,{f=4,filterForRWP=7,q=0,rwp=90105}),
+s(158321,6121,{f=4,filterForRWP=7,q=0,rwp=90105})}),
+h(-101,{
+s(160475,12282,{f=22,q=1,rwp=90001}),
+s(156039,25,{f=25,q=1}),
+s(156774,2362,{f=8,q=0})})}),
+flt(10,{
+s(158325,6125,{description="Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(156051,49,{description="Former Starter Shirt for Human, Night Elf, Dwarf & Gnome Rogues",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(156054,53,{description="Former Starter Shirt for Priests.",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(156074,154,{description="Former Starter Shirt for Orc & Tauren Shamans",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(158330,6134,{description="Former Starter Shirt for Troll Shamans",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(158320,6120,{description="Former Starter Shirt for Night Elf Warriors",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(156072,148,{description="Former Starter Shirt for Dwarf & Night Elf Hunters",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(158317,6117,{description="Former Starter Shirt for Dwarf Paladins",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(156620,2105,{description="Former Starter Shirt for Undead & Orc Rogues",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(156066,127,{description="Former Starter Shirt for Orc, Tauren & Troll Hunters",f=10,filterForRWP=2,q=1,rwp=40003}),
+s(158332,6136,{description="Former Starter Shirt for Troll Rogues",f=10,filterForRWP=2,q=1,rwp=40003})}),
+h(-101,{
+s(156773,2361,{f=24,q=1,rwp=90001}),
+s(156042,37,{awp=11100,f=21,q=1,rwp=30002})}),
+i(6948,{b=1,q=1})}),
+h(-43,{pb=1,g={
+h(-12,{pb=1,g={
+ach(1248,{pb=1}),
+ach(15,{pb=1}),
+ach(1017,{pb=1})}})}}),
+cl(9,{
+h(-25,{c={9},crs={5520,5749,5750,5753,5815,6027,6328,6373,6374,6376,6382,12776,12807},maps={1453,1454,1455,1458},rwp=30002,g={
+r(6307,{b=1,c={9},itemID=16321,lvl=4,q=1,rank=1}),
+r(7804,{b=1,c={9},itemID=16322,lvl=14,q=1,rank=2}),
+r(7805,{b=1,c={9},itemID=16323,lvl=26,q=1,rank=3}),
+r(11766,{b=1,c={9},itemID=16324,lvl=38,q=1,rank=4}),
+r(11767,{b=1,c={9},itemID=16325,lvl=50,q=1,rank=5}),
+r(17767,{b=1,c={9},itemID=16357,lvl=18,q=1,rank=1}),
+r(17850,{b=1,c={9},itemID=16358,lvl=26,q=1,rank=2}),
+r(17851,{b=1,c={9},itemID=16359,lvl=34,q=1,rank=3}),
+r(17852,{b=1,c={9},itemID=16360,lvl=42,q=1,rank=4}),
+r(17853,{b=1,c={9},itemID=16361,lvl=50,q=1,rank=5}),
+r(17854,{b=1,c={9},itemID=16362,lvl=58,q=1,rank=6}),
+r(19731,{b=1,c={9},itemID=16381,lvl=38,q=1,rank=2}),
+r(19734,{b=1,c={9},itemID=16382,lvl=46,q=1,rank=3}),
+r(19736,{b=1,c={9},itemID=16383,lvl=54,q=1,rank=4}),
+r(2947,{b=1,c={9},itemID=16326,lvl=14,q=1,rank=1}),
+r(8316,{b=1,c={9},itemID=16327,lvl=24,q=1,rank=2}),
+r(8317,{b=1,c={9},itemID=16328,lvl=34,q=1,rank=3}),
+r(11770,{b=1,c={9},itemID=16329,lvl=44,q=1,rank=4}),
+r(11771,{b=1,c={9},itemID=16330,lvl=54,q=1,rank=5}),
+r(7799,{b=1,c={9},itemID=16302,lvl=8,q=1,rank=2}),
+r(7800,{b=1,c={9},itemID=16316,lvl=18,q=1,rank=3}),
+r(7801,{b=1,c={9},itemID=16317,lvl=28,q=1,rank=4}),
+r(7802,{b=1,c={9},itemID=16318,lvl=38,q=1,rank=5}),
+r(11762,{b=1,c={9},itemID=16319,lvl=48,q=1,rank=6}),
+r(11763,{b=1,c={9},itemID=16320,lvl=58,q=1,rank=7}),
+r(7815,{b=1,c={9},itemID=16368,lvl=28,q=1,rank=2}),
+r(7816,{b=1,c={9},itemID=16371,lvl=36,q=1,rank=3}),
+r(11778,{b=1,c={9},itemID=16372,lvl=44,q=1,rank=4}),
+r(11779,{b=1,c={9},itemID=16373,lvl=52,q=1,rank=5}),
+r(11780,{b=1,c={9},itemID=16374,lvl=60,q=1,rank=6}),
+r(7870,{b=1,c={9},itemID=16380,lvl=32,q=1}),
+r(19480,{b=1,c={9},itemID=16390,lvl=42,q=1}),
+r(4511,{b=1,c={9},itemID=16331,lvl=12,q=1}),
+r(7812,{b=1,c={9},itemID=16351,lvl=16,q=1,rank=1}),
+r(19438,{b=1,c={9},itemID=16352,lvl=24,q=1,rank=2}),
+r(19440,{b=1,c={9},itemID=16353,lvl=32,q=1,rank=3}),
+r(19441,{b=1,c={9},itemID=16354,lvl=40,q=1,rank=4}),
+r(19442,{b=1,c={9},itemID=16355,lvl=48,q=1,rank=5}),
+r(19443,{b=1,c={9},itemID=16356,lvl=56,q=1,rank=6}),
+r(6358,{b=1,c={9},itemID=16379,lvl=26,q=1}),
+r(6360,{b=1,c={9},itemID=16375,lvl=22,q=1,rank=1}),
+r(7813,{b=1,c={9},itemID=16376,lvl=34,q=1,rank=2}),
+r(11784,{b=1,c={9},itemID=16377,lvl=46,q=1,rank=3}),
+r(11785,{b=1,c={9},itemID=16378,lvl=58,q=1,rank=4}),
+r(19244,{b=1,c={9},itemID=16388,lvl=36,q=1,rank=1}),
+r(19647,{b=1,c={9},itemID=16389,lvl=52,q=1,rank=2}),
+r(17735,{b=1,c={9},itemID=16363,lvl=24,q=1,rank=1}),
+r(17750,{b=1,c={9},itemID=16364,lvl=36,q=1,rank=2}),
+r(17751,{b=1,c={9},itemID=16365,lvl=48,q=1,rank=3}),
+r(17752,{b=1,c={9},itemID=16366,lvl=60,q=1,rank=4}),
+r(19478,{b=1,c={9},itemID=16384,lvl=32,q=1,rank=1}),
+r(19655,{b=1,c={9},itemID=16385,lvl=40,q=1,rank=2}),
+r(19656,{b=1,c={9},itemID=16386,lvl=48,q=1,rank=3}),
+r(19660,{b=1,c={9},itemID=16387,lvl=56,q=1,rank=4}),
+r(7809,{b=1,c={9},itemID=16346,lvl=20,q=1,rank=2}),
+r(7810,{b=1,c={9},itemID=16347,lvl=30,q=1,rank=3}),
+r(7811,{b=1,c={9},itemID=16348,lvl=40,q=1,rank=4}),
+r(11774,{b=1,c={9},itemID=16349,lvl=50,q=1,rank=5}),
+r(11775,{b=1,c={9},itemID=16350,lvl=60,q=1,rank=6})}})})}});
+end);

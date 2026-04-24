@@ -25,12 +25,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4516, {	-- The Forge of Souls
+					-- #if AFTER 7.3.5
 					crit(13315, {	-- Bronjahm
 						["_encounter"] = { 615, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13316, {	-- Devourer of Souls
 						["_encounter"] = { 616, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
+					-- #else
+					crit(13315, {	-- Bronjahm
+						["_encounter"] = { 615, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(13316, {	-- Devourer of Souls
+						["_encounter"] = { 616, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					-- #endif
 				}),
 				ach(4519, {	-- Heroic: The Forge of Souls
 					crit(13167, {	-- Bronjahm

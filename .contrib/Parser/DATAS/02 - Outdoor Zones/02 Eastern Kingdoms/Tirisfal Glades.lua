@@ -1,11 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ZidormiTravelArtID1136 = [[~function(t, tooltipInfo)
 					if t.parent.artID == 1136 then
 						tinsert(tooltipInfo, { left = "You need to speak to Zidormi to travel back to the past in order to collect these." });
 					end
 				end]]
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(TIRISFAL_GLADES, {
 		["lore"] = "On the northern coast of Lordaeron lies the eerie Tirisfal Glades. The unofficial kingdom to the Forsaken, servants of the Banshee Queen Sylvanas Windrunner, the wooded hills are seeped through with the curse of the Lich King's plague. The sky over Tirisfal is eternally gloomy and tinted a blighted green, and the trees and other flora desperately cling to their last shreds of life.\n\nAlthough tainted and melancholy, Tirisfal still very much has its own unique, haunting beauty, particularly in such areas as the stony North Coast, the village of Brill, and the deep atmosphere of the ruined Agamand Mills.\n\nTirisfal Glades is home not only to the Forsaken, but to their enemies as well. The Scarlet Crusade has several outposts here, including the seat of their religious faith, the Scarlet Monastery. The minions of the Scourge are also ever present, tainting the derelict farmsteads and dilapidated mills with their foul presence.",
@@ -184,7 +186,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(5651, {	-- In Favor of Darkness
 							["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
-							["coord"] = { 31, 66, TIRISFAL_GLADES },
+							["coord"] = { 31.0, 66.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
@@ -194,7 +196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 3098,	-- Glyphic Scroll
 							["qg"] = 2124,	-- Isabella <Mage Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 30.8, 66, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.0, TIRISFAL_GLADES },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -215,7 +217,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										{ 36.6, 61.6, TIRISFAL_GLADES },
-										{ 31, 65, TIRISFAL_GLADES },
+										{ 31.0, 65.0, TIRISFAL_GLADES },
 									},
 									["cr"] = 1919,	-- Samuel Fipps
 								}),
@@ -224,7 +226,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77670, {	-- Meditation on Undeath
 							["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
-							["coord"] = { 31, 66, TIRISFAL_GLADES },
+							["coord"] = { 31.0, 66.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
@@ -317,7 +319,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 47.6, 58.4, DEATHKNELL },
 							-- #else
-							["coord"] = { 31, 66, TIRISFAL_GLADES },
+							["coord"] = { 31.0, 66.0, TIRISFAL_GLADES },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -466,7 +468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 2124 },	-- Isabella <Mage Trainer>
 								{ "i", 211809 },	-- Comprehension Primer
 							},
-							["coord"] = { 30.8, 66, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
 							["classes"] = { MAGE },
@@ -906,9 +908,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			m(SCARLET_MONASTERY_ENTRANCE, {
 				n(QUESTS, {
 					q(77644,{	-- The Scarlet Key
-						["coord"] = { 48, 56.3, SCARLET_MONASTERY_ENTRANCE },
+						["coord"] = { 46.9, 57.6, SCARLET_MONASTERY_ENTRANCE },
 						["timeline"] = { ADDED_10_1_7 },
-						["cost"] = { {"i", 208485, 1} },	-- The Scarlet Key
+						["cost"] = { { "i", 208485, 1 } },	-- The Scarlet Key
 					}),
 				}),
 				n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
@@ -1073,7 +1075,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if AFTER 10.1.7
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
+			pickpocketing({
 				i(3330, {	-- Dargol's Hauberk
 					["description"] = "Can be pickpocketed from Captain Dargol.",
 					["coords"] = {
@@ -1081,106 +1083,103 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 52.4, 26.6, TIRISFAL_GLADES },
 					},
 					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
-					--	["cr"] = 1658,	-- Captain Dargol
+					["cr"] = 1658,	-- Captain Dargol
 				}),
 			}),
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(208005, {	-- Agamand Relic Coffer Key
-						["coords"] = {
-							{ 58.8, 38.2, TIRISFAL_GLADES },
-							{ 53.0, 28.8, TIRISFAL_GLADES },
-							{ 46.0, 30.6, TIRISFAL_GLADES },
-							{ 52.8, 56.8, TIRISFAL_GLADES },
-						},
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1674,	-- Rot Hide Gnoll
-							1534,	-- Wailing Ancestor
-							1523,	-- Cracked Skull Soldier
-							1522,	-- Darkeye Bonecaster
-							1526,	-- Ravaged Corpse
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208085, {	-- Scarlet Lieutenant Signet Ring
-						["coords"] = {
-							{ 51.8, 67.4, TIRISFAL_GLADES },
-							{ 79, 26, TIRISFAL_GLADES },
-						},
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1662,	-- Captain Perrine
-							1665,	-- Captain Melrache
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208007, {	-- Shipwreck Cache Key
-						["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1545,	-- Vile Fin Muckdweller
-							1543,	-- Vile Fin Puddlejumper
-							1544,	-- Vile Fin Minor Oracle
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208034, {	-- Tirisfal Treasure Map
-						["timeline"] = { REMOVED_2_0_1 },
-						["cost"] = {
-							{ "i", 208038, 1 },	-- Bottom-Left Map Piece
-							{ "i", 208037, 1 },	-- Bottom-Right Map Piece
-							{ "i", 208036, 1 },	-- Top-Left Map Piece
-							{ "i", 208035, 1 },	-- Top-Right Map Piece
-						},
-						["classes"] = { ROGUE },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208038, {	-- Bottom-Left Map Piece
-						["coord"] = { 56.6, 44.4, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1941,	-- Rot Hide Graverobber
-							1675,	-- Rot Hide Mongrel
-							1674,	-- Rot Hide Gnoll
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208037, {	-- Bottom-Right Map Piece
-						["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1545,	-- Vile Fin Muckdweller
-							1543,	-- Vile Fin Puddlejumper
-							1544,	-- Vile Fin Minor Oracle
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208036, {	-- Top-Left Map Piece
-						["coord"] = { 37.4, 49.2, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1935,	-- Tirisfal Farmhand
-							1934,	-- Tirisfal Farmer
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208035, {	-- Top-Right Map Piece
-						["coord"] = { 32.8, 50.4, TIRISFAL_GLADES },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1535,	-- Scarlet Warrior
-							1536,	-- Scarlet Missionary
-							1538,	-- Scarlet Friar
-							1540,	-- Scarlet Vanguard
-							1537,	-- Scarlet Zealot
-							1539,	-- Scarlet Neophyte
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(208005, {	-- Agamand Relic Coffer Key
+					["coords"] = {
+						{ 58.8, 38.2, TIRISFAL_GLADES },
+						{ 53.0, 28.8, TIRISFAL_GLADES },
+						{ 46.0, 30.6, TIRISFAL_GLADES },
+						{ 52.8, 56.8, TIRISFAL_GLADES },
+					},
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1674,	-- Rot Hide Gnoll
+						1534,	-- Wailing Ancestor
+						1523,	-- Cracked Skull Soldier
+						1522,	-- Darkeye Bonecaster
+						1526,	-- Ravaged Corpse
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208085, {	-- Scarlet Lieutenant Signet Ring
+					["coords"] = {
+						{ 51.8, 67.4, TIRISFAL_GLADES },
+						{ 79.0, 26.0, TIRISFAL_GLADES },
+					},
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1662,	-- Captain Perrine
+						1665,	-- Captain Melrache
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208007, {	-- Shipwreck Cache Key
+					["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1545,	-- Vile Fin Muckdweller
+						1543,	-- Vile Fin Puddlejumper
+						1544,	-- Vile Fin Minor Oracle
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208034, {	-- Tirisfal Treasure Map
+					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = {
+						{ "i", 208038, 1 },	-- Bottom-Left Map Piece
+						{ "i", 208037, 1 },	-- Bottom-Right Map Piece
+						{ "i", 208036, 1 },	-- Top-Left Map Piece
+						{ "i", 208035, 1 },	-- Top-Right Map Piece
+					},
+					["classes"] = { ROGUE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208038, {	-- Bottom-Left Map Piece
+					["coord"] = { 56.6, 44.4, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1941,	-- Rot Hide Graverobber
+						1675,	-- Rot Hide Mongrel
+						1674,	-- Rot Hide Gnoll
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208037, {	-- Bottom-Right Map Piece
+					["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1545,	-- Vile Fin Muckdweller
+						1543,	-- Vile Fin Puddlejumper
+						1544,	-- Vile Fin Minor Oracle
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208036, {	-- Top-Left Map Piece
+					["coord"] = { 37.4, 49.2, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1935,	-- Tirisfal Farmhand
+						1934,	-- Tirisfal Farmer
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208035, {	-- Top-Right Map Piece
+					["coord"] = { 32.8, 50.4, TIRISFAL_GLADES },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1535,	-- Scarlet Warrior
+						1536,	-- Scarlet Missionary
+						1538,	-- Scarlet Friar
+						1540,	-- Scarlet Vanguard
+						1537,	-- Scarlet Zealot
+						1539,	-- Scarlet Neophyte
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {
@@ -1572,9 +1571,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(354, {	-- Deaths in the Family
-					-- #if BEFORE WRATH
-					["sourceQuest"] = 362,	-- The Haunted Mills
-					-- #endif
 					["qg"] = 1500,	-- Coleman Farthing
 					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1638,7 +1634,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5482, {	-- Doom Weed
 					["sourceQuest"] = 5481,	-- Gordo's Task
 					["qg"] = 10665,	-- Junior Apothecary Holland
-					["coord"] = { 57.5, 49, TIRISFAL_GLADES },
+					["coord"] = { 57.5, 49.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2033,7 +2029,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(374, {	-- Proof of Demise
 					["sourceQuest"] = 427,	-- At War With The Scarlet Crusade (1/4)
 					["qg"] = 1652,	-- Deathguard Burgess
-					["coord"] = { 60.8, 52, TIRISFAL_GLADES },
+					["coord"] = { 60.8, 52.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2067,14 +2063,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(409, {	-- Proving Allegiance
 					["sourceQuest"] = 366,	-- Return the Book
 					["qg"] = 1497,	-- Gunther Arcanus
-					["coord"] = { 68.2, 42, TIRISFAL_GLADES },
+					["coord"] = { 68.2, 42.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						q(431, {	-- Candles of Beckoning
 							["provider"] = { "o", 1586 },	-- Crate of Candles
-							["coord"] = { 68.1, 42, TIRISFAL_GLADES },
+							["coord"] = { 68.1, 42.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -2386,7 +2382,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 The Lich's Spellbook
 							["provider"] = { "i", 2833 },	-- The Lich's Spellbook
-							["coord"] = { 68, 42.1, TIRISFAL_GLADES },
+							["coord"] = { 68.0, 42.1, TIRISFAL_GLADES },
 						}),
 					},
 				}),
@@ -2460,7 +2456,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1497 },	-- Gunther Arcanus
 						{ "i", 3081 },	-- Nether Gem
 					},
-					["coord"] = { 68.2, 42, TIRISFAL_GLADES },
+					["coord"] = { 68.2, 42.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2591,7 +2587,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(205183, {	-- Fel-Powered Artifact
 							["description"] = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Carendin Halgar in Undercity to receive the rune.",
-							["cost"] = {{ "i", 205182, 1 }},	-- Powerless Artifact
+							["cost"] = { { "i", 205182, 1 } },	-- Powerless Artifact
 							["classes"] = { WARLOCK },
 						}),
 					},
@@ -2821,7 +2817,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 405201 },	-- Shipwreck Cache
 					["coord"] = { 66.7, 24.6, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208007, 1 }},	-- Shipwreck Cache Key
+					["cost"] = { { "i", 208007, 1 } },	-- Shipwreck Cache Key
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
@@ -2831,7 +2827,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 52.9, 54.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208034, 1 }},	-- Tirisfal Treasure Map
+					["cost"] = { { "i", 208034, 1 } },	-- Tirisfal Treasure Map
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
@@ -2841,7 +2837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 404941 },	-- Relic Coffer
 					["coord"] = { 52.5, 25.8, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208005, 1 }},	-- Agamand Relic Coffer Key
+					["cost"] = { { "i", 208005, 1 } },	-- Agamand Relic Coffer Key
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
@@ -2902,7 +2898,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(203990, {	-- Rune of Mutilation
-							["cost"] = {{ "i", 208086, 1 }},	-- Forged Scarlet Memorandum
+							["cost"] = { { "i", 208086, 1 } },	-- Forged Scarlet Memorandum
 							["classes"] = { ROGUE },
 							["groups"] = {
 								recipe(400094),	-- Engrave Gloves - Mutilate
@@ -2925,7 +2921,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205182, {	-- Powerless Artifact
-							["cost"] = {{ "i", 205181, 1 }},	-- Unidentified Artifact
+							["cost"] = { { "i", 205181, 1 } },	-- Unidentified Artifact
 							["classes"] = { WARLOCK },
 						})),
 					},
@@ -2997,7 +2993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["classes"] = { MAGE },
 				["groups"] = {
 					i(203749, {	-- Spell Notes: Enlightenment
-						["cost"] = {{ "i", 208183, 6 }},	-- Apothecary Notes
+						["cost"] = { { "i", 208183, 6 } },	-- Apothecary Notes
 						["classes"] = { MAGE },
 						["groups"] = {
 							recipe(415942),	-- Engrave Chest - Enlightenment

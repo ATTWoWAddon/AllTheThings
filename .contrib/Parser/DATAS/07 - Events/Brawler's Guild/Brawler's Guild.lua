@@ -2,6 +2,8 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
+local BRAWLERS_GOLD = 1299;
+
 root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, {
 	["timeline"] = {
 		ADDED_5_1_0, REMOVED_6_0_2,	-- Season 1
@@ -27,49 +29,37 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(7944, {		-- Bottle Service (Season 1 & 2)
-				["timeline"] = { ADDED_5_1_0, REMOVED_7_0_3 },
+				["timeline"] = { ADDED_5_1_0, REMOVED_7_0_3, ADDED_11_2_7 },
 			}),
 			ach(13191, {	-- Brawler for Azeroth (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-				["groups"] = {
-					title(209),	-- Brawler <Name>
-				},
+				["groups"] = { title(209) },	-- Brawler <Name>
 			}),
 			ach(13192, {	-- Brawler for Azeroth (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-				["groups"] = {
-					title(209),	-- Brawler <Name>
-				},
+				["groups"] = { title(209) },	-- Brawler <Name>
 			}),
 			ach(7941, {		-- Brawlin' and Shot Callin' (Season 1) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
-				["groups"] = {
-					title(209),	-- Brawler <Name>
-				},
+				["groups"] = { title(209) },	-- Brawler <Name>
 			}),
 			ach(7942, {		-- Brawlin' and Shot Callin' (Season 1) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
-				["groups"] = {
-					title(209),	-- Brawler <Name>
-				},
+				["groups"] = { title(209) },	-- Brawler <Name>
 			}),
 			ach(9170, {		-- Brawlin' and Shot Callin' (Season 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-				["groups"] = {
-					title(209),	-- Brawler <Name>
-				},
+				["groups"] = { title(209) },	-- Brawler <Name>
 			}),
 			ach(9174, {		-- Brawlin' and Shot Callin' (Season 2) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-				["groups"] = {
-					title(209),	-- Brawler <Name>
-				},
+				["groups"] = { title(209) },	-- Brawler <Name>
 			}),
 			applyclassicphase(MOP_PHASE_ESCALATION, ach(8339, {		-- Collect Your Deck (Season 1 & 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,
@@ -119,7 +109,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
 			}),
 			ach(7945, {		-- Haters Gonna Hate (Season 2)
-				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3, ADDED_11_2_7 },
 			}),
 			applyclassicphase(MOP_PHASE_ESCALATION, ach(8335, {		-- Having a Brawl (Season 1) (Alliance)
 				["races"] = ALLIANCE_ONLY,
@@ -130,10 +120,10 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
 			})),
 			ach(11572, {	-- I Am Thrall's Complete Lack Of Surprise (Season 3)
-				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
+				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1, ADDED_11_2_7 },
 			}),
 			ach(13194, {	-- I Am Thrall's Complete Lack Of Surprise
-				["timeline"] = { ADDED_7_1_5, REMOVED_8_1_5 },
+				["timeline"] = { ADDED_7_1_5, REMOVED_8_1_5, ADDED_11_2_7 },
 			}),
 			ach(7943, {		-- I'm Your Number One Fan (Season 1 & 2)
 				["timeline"] = { ADDED_5_1_0, REMOVED_7_0_3 },
@@ -149,9 +139,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			ach(11565, {	-- King of the Guild (Season 3) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
-				["groups"] = {
-					title(209),	-- Brawler <Name>
-				},
+				["groups"] = { title(209) },	-- Brawler <Name>
 			}),
 			ach(11566, {	-- King of the Guild (Season 3) (Horde)
 				["races"] = HORDE_ONLY,
@@ -183,7 +171,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 			}),
-			ach(11573, {	-- Rumble Club
+			ach(11573, {	-- Rumble Club (automated)
 				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
 			}),
 			ach(7947, {		-- The First Rule of Brawler's Guild (Season 1 or 2) (Alliance)
@@ -206,69 +194,53 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
 				-- #if MOP
-				["groups"] = {
-					i(93195),	-- Brawler's Pass
-				}
+				["groups"] = { i(93195) },	-- Brawler's Pass
 				-- #endif
 			}),
 			ach(7939, {		-- The Second Rule of Brawler's Guild (Season 1) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
 				-- #if MOP
-				["groups"] = {
-					i(93195),	-- Brawler's Pass
-				}
+				["groups"] = { i(93195) },	-- Brawler's Pass
 				-- #endif
 			}),
 			ach(9169, {		-- The Second Rule of Brawler's Guild (Season 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 				-- #if WOD
-				["groups"] = {
-					i(93195),	-- Brawler's Pass
-				}
+				["groups"] = { i(93195) },	-- Brawler's Pass
 				-- #endif
 			}),
 			ach(9173, {		-- The Second Rule of Brawler's Guild (Season 2) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 				-- #if WOD
-				["groups"] = {
-					i(93195),	-- Brawler's Pass
-				}
+				["groups"] = { i(93195) },	-- Brawler's Pass
 				-- #endif
 			}),
 			ach(11563, {	-- The Second Rule of Brawler's Guild (Season 3) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
 				-- #if LEGION
-				["groups"] = {
-					i(93195),	-- Brawler's Pass
-				}
+				["groups"] = { i(93195) },	-- Brawler's Pass
 				-- #endif
 			}),
 			ach(11564, {	-- The Second Rule of Brawler's Guild (Season 3) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
 				-- #if LEGION
-				["groups"] = {
-					i(93195),	-- Brawler's Pass
-				}
+				["groups"] = { i(93195) },	-- Brawler's Pass
 				-- #endif
 			}),
 			ach(13189, {	-- The Second Rule of Brawler's Guild (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
-				["groups"] = {
-					i(93195),	-- Brawler's Pass
-				}
+				["groups"] = { i(93195) },	-- Brawler's Pass
 			}),
 			ach(13190, {	-- The Second Rule of Brawler's Guild (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
-				["groups"] = {
-					i(93195),	-- Brawler's Pass
-				}
+				["groups"] = { i(93195) },	-- Brawler's Pass
 			}),
 			ach(7937, {		-- You Are Not Your $#*@! Legplates (Season 1) (Alliance)
 				["races"] = ALLIANCE_ONLY,
@@ -303,53 +275,189 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 			}),
 			ach(11567, {	-- You Are Not The Contents Of Your Wallet
-				["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+				["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 			}),
-			-- Season 5
-			ach(61421, {	-- A Prime Ordeal
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61422, {	-- Audience Participation
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61419, {	-- Brawler's Chilled
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61424, {	-- Brawlzilla
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61426, {	-- Bare Knuckle Brawl
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61429, {	-- Brawl Star
-				["timeline"] = { ADDED_11_2_7 },
-				["groups"] = {
-					title(666, {	-- Brawl Star %s
-						["timeline"] = { ADDED_11_2_7 },
+		}),
+		-- Season 4
+		n(ACHIEVEMENTS, sharedData({
+			["timeline"] = { ADDED_11_2_7 },
+		},{
+			ach(61466, {	-- The Best There Is
+				["_noautomation"] = true,
+				["groups"] = {	-- Challenge Card and Criteria/NPC names are different. Keeping the order of the Challenge Cards.
+					crit(109843, {	-- A Seagull
+						["providers"] = {
+							{ "i", 143794 },	-- Challenge Card: A Seagull
+							{ "n", 117207 },	-- A Seagull
+						},
+					}),
+					crit(109816, {	-- Akama
+						["providers"] = {
+							{ "i", 94184 },	-- Challenge Card: Akama
+							{ "n", 67588 },	-- Akama
+						},
+					}),
+					crit(109811, {	-- Blackmange
+						["providers"] = {
+							{ "i", 142026 },	-- Challenge Card: Blackmange
+							{ "n", 114902 },	-- Blackmange
+						},
+					}),
+					crit(109813, {	-- Blind Hero
+						["providers"] = {
+							{ "i", 97321 },	-- Challenge Card: Blind Hero
+							{ "n", 70794 },	-- Blind Hero
+						},
+					}),
+					crit(109834, {	-- Dark Summoner
+						["providers"] = {
+							{ "i", 94179 },	-- Challenge Card: Blind Hero
+							{ "n", 67678 },	-- Dark Summoner
+						},
+					}),
+					crit(109812, {	-- Deeken
+						["providers"] = {
+							{ "i", 94173 },	-- Challenge Card: Deeken
+							{ "n", 67451 },	-- Deeken
+						},
+					}),
+					crit(109810, {	-- Dominika
+						["providers"] = {
+							{ "i", 94172 },	-- Challenge Card: Dominika
+							{ "n", 67485 },	-- Dominika the Illusionist
+						},
+					}),
+					crit(109870, {	-- Fjoll
+						["providers"] = {
+							{ "i", 94175 },	-- Challenge Card: Fjoll
+							{ "n", 67596 },	-- Fjoll
+						},
+					}),
+					crit(109806, {	-- Fran & Riddoh
+						["providers"] = {
+							{ "i", 94164 },	-- Challenge Card: Fran & Riddoh
+							{ "n", 68297 },	-- Fran/Riddoh Controller
+						},
+					}),
+					crit(109808, {	-- Ixx
+						["providers"] = {
+							{ "i", 94168 },	-- Challenge Card: Ixx
+							{ "n", 68253 },	-- Ixx
+						},
+					}),
+					crit(109804, {	-- Johnny Awesome
+						["providers"] = {
+							{ "i", 142032 },	-- Challenge Card: Ixx
+							{ "n", 115058 },	-- Johnny Awesome
+						},
+					}),
+					crit(109800, {	-- Kirrawk
+						["providers"] = {
+							{ "i", 94163 },	-- Challenge Card: Kirrawk
+							{ "n", 67269 },	-- Kirrawk
+						},
+					}),
+					crit(109809, {	-- Leona
+						["providers"] = {
+							{ "i", 94171 },	-- Challenge Card: Leona
+							{ "n", 68377 },	-- Leona Earthwind
+						},
+					}),
+					crit(109805, {	-- Mama Stormstout
+						["providers"] = {
+							{ "i", 165709 },	-- Challenge Card: Mama Stormstout
+							{ "n", 145594 },	-- Mama Stormstout
+						},
+					}),
+					crit(109820, {	-- Millie Watt
+						["providers"] = {
+							{ "i", 94174 },	-- Challenge Card: Millie Watt
+							{ "n", 67591 },	-- Millie Watt
+						},
+					}),
+					crit(109802, {	-- Nibbleh
+						["providers"] = {
+							{ "i", 97283 },	-- Challenge Card: Nibbleh
+							{ "n", 70656 },	-- Nibbleh
+						},
+					}),
+					crit(109814, {	-- Proboskus
+						["providers"] = {
+							{ "i", 94176 },	-- Challenge Card: Proboskus
+							{ "n", 68252 },	-- Proboskus
+						},
+					}),
+					crit(109835, {	-- Sanoriak
+						["providers"] = {
+							{ "i", 94167 },	-- Challenge Card: Sanoriak
+							{ "n", 67268 },	-- Sanoriak
+						},
+					}),
+					crit(109831, {	-- T440 Dual-Mode Robot
+						["providers"] = {
+							{ "i", 97559 },	-- Challenge Card: T440 Dual-Mode Robot
+							{ "n", 70983 },	-- T440 Dual-Mode Robot
+						},
+					}),
+					crit(109803, {	-- Thog Hammerspace
+						["providers"] = {
+							{ "i", 166809 },	-- Challenge Card: Thog Hammerspace
+							{ "n", 149717 },	-- Thog Hammerspace
+						},
+					}),
+					crit(109807, {	-- Unguloxx
+						["providers"] = {
+							{ "i", 94186 },	-- Challenge Card: Unguloxx
+							{ "n", 68250 },	-- Unguloxx
+						},
+					}),
+					crit(109815, {	-- Vian
+						["providers"] = {
+							{ "i", 93824 },	-- Challenge Card: Vian
+							{ "n", 67579 },	-- Vian the Volatile
+						},
+					}),
+					crit(109807, {	-- Vishas
+						["providers"] = {
+							{ "i", 94161 },	-- Challenge Card: Vishas
+							{ "n", 67572 },	-- Dungeon Master Vishas
+						},
+					}),
+					crit(109821, {	-- Yikkan Izu
+						["providers"] = {
+							{ "i", 94183 },	-- Challenge Card: Yikkan Izu
+							{ "n", 68256 },	-- Yikkan Izu
+						},
 					}),
 				},
 			}),
-			ach(61423, {	-- Featherweight Brawler
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61425, {	-- Hot Footed
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61420, {	-- Let Me Solo It
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61466, {	-- The Best There Is
-				["timeline"] = { ADDED_11_2_7 },
-			}),
 			ach(61413, {	-- The First Rule of Brawler's Guild
-				["timeline"] = { ADDED_11_2_7 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(61414, {	-- The First Rule of Brawler's Guild
-				["timeline"] = { ADDED_11_2_7 },
 				["races"] = HORDE_ONLY,
 			}),
-		}),
+		})),
+		-- Season 4 - Challenges
+		n(ACHIEVEMENTS, sharedData({
+			["crs"] = {
+				254940,	-- Challenge Broker Senna
+				253381,	-- Challenge Broker Guo
+			},
+			["timeline"] = { ADDED_11_2_7 },
+		},{
+			ach(61429, {	-- Brawl Star
+				["groups"] = { title(666) },	-- Brawl Star %s
+			}),
+			ach(61421),	-- A Prime Ordeal
+			ach(61422),	-- Audience Participation
+			ach(61419),	-- Brawler's Chilled
+			ach(61424),	-- Brawlzilla
+			ach(61426),	-- Bare Knuckle Brawl
+			ach(61423),	-- Featherweight Brawler
+			ach(61425),	-- Hot Footed
+			ach(61420),	-- Let Me Solo It
+		})),
 		-- #if BEFORE LEGION
 		n(BOSSES, {
 			n(67262, {	-- Bruce
@@ -380,6 +488,10 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 			}),
+			faction(FACTION_BRAWLPUB_SEASON_5, {	-- Bizmo's Brawlpub (Season 5) (Alliance)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_11_2_7 },
+			}),
 			faction(FACTION_BRAWLGAR_SEASON_1, {	-- Brawl'gar Arena (Season 1) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
@@ -400,17 +512,19 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 			}),
+			faction(FACTION_BRAWLGAR_SEASON_5, {	-- Brawl'gar Arena (Season 5) (Horde)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_11_2_7 },
+			}),
 		}),
 		n(QUESTS, appendGroups(
 			-- MOP
 			applyclassicphase(MOP_PHASE_ESCALATION, sharedData({ ["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH } }, {
 				q(32836, {	-- A Knockoff Grumplefloot
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97978 },	-- Knockoff Grumplefloot
-					-- #endif
 				}),
 				q(32837, {	-- Grandpa Grumplefloot
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32836,	-- A Knockoff Grumplefloot
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -427,16 +541,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98079),	-- Floot-Tooter's Tunic
 						i(98099),	-- Giant Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32836,	-- A Knockoff Grumplefloot
 				}),
 				q(32838, {	-- A Tale of Romance and Chivalry
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97979 },	-- The Bear and the Lady Fair
-					-- #endif
 				}),
 				q(32839, {	-- The Bear and the Lady Fair
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32838,	-- A Tale of Romance and Chivalry
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -452,16 +562,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98080),	-- Gorgeous Blouse
 						i(98102),	-- Overflowing Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32838,	-- A Tale of Romance and Chivalry
 				}),
 				q(32840, {	-- Boom Boom's Fuse
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97980 },	-- Hozen-Fur Fuse
-					-- #endif
 				}),
 				q(32841, {	-- Master Boom Boom
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32840,	-- Boom Boom's Fuse
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -477,16 +583,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98081),	-- The Boomshirt
 						i(98099),	-- Giant Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32840,	-- Boom Boom's Fuse
 				}),
 				q(32842, {	-- Teeth Like Swords
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97981 },	-- Impeccably Sharp Tooth
-					-- #endif
 				}),
 				q(32843, {	-- Razorgrin
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32842,	-- Teeth Like Swords
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -502,16 +604,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98083),	-- Sharkskin Tunic
 						i(98100),	-- Humongous Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32842,	-- Teeth Like Swords
 				}),
 				q(32844, {	-- Secret of the Ooze
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97982 },	-- Vial of Reddish Ooze
-					-- #endif
 				}),
 				q(32845, {	-- Splat
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32844,	-- Secret of the Ooze
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -528,16 +626,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98084),	-- Ooze-Soaked Shirt
 						i(98100),	-- Humongous Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32844,	-- Secret of the Ooze
 				}),
 				q(32846, {	-- Modified Chomping Apparatus
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97983 },	-- Modified Chomping Apparatus
-					-- #endif
 				}),
 				q(32847, {	-- Mecha-Bruce
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32846,	-- Modified Chomping Apparatus
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -553,16 +647,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98085),	-- Brucehide Jersey
 						i(98101),	-- Enormous Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32846,	-- Modified Chomping Apparatus
 				}),
 				q(32848, {	-- Frost-Tipped Eggshell
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97984 },	-- Frost-Tipped Eggshell
-					-- #endif
 				}),
 				q(32849, {	-- Dippy and Doopy
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32848,	-- Frost-Tipped Eggshell
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -581,16 +671,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98086),	-- Tuxedo-Like Shirt
 						i(98100),	-- Humongous Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32848,	-- Frost-Tipped Eggshell
 				}),
 				q(32850, {	-- Last Year's Model
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97985 },	-- Dusty Old Robot
-					-- #endif
 				}),
 				q(32851, {	-- Blingtron 3000
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32850,	-- Last Year's Model
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -606,16 +692,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98091),	-- Last Season's Shirt
 						i(98101),	-- Enormous Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32850,	-- Last Year's Model
 				}),
 				q(32852, {	-- The Digmaster's Earthblade
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97986 },	-- Digmaster's Earthblade
-					-- #endif
 				}),
 				q(32853, {	-- Mingus Diggs
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32852,	-- The Digmaster's Earthblade
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -631,16 +713,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98092),	-- Digmaster's Bodysleeve
 						i(98103),	-- Gigantic Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32852,	-- The Digmaster's Earthblade
 				}),
 				q(32854, {	-- Well-Worn Blindfold
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97987 },	-- Well-Worn Blindfold
-					-- #endif
 				}),
 				q(32855, {	-- The Blind Hero
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32854,	-- Well-Worn Blindfold
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -656,16 +734,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98093),	-- Sightless Mantle
 						i(98103),	-- Gigantic Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32854,	-- Well-Worn Blindfold
 				}),
 				q(32856, {	-- Paper-Covered Rock
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97988 },	-- Paper-Covered Rock
-					-- #endif
 				}),
 				q(32857, {	-- Ro-Shambo
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32856,	-- Paper-Covered Rock
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -681,16 +755,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98087),	-- Paper Shirt
 						i(98102),	-- Overflowing Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32856,	-- Paper-Covered Rock
 				}),
 				q(32858, {	-- Raptorhide Boxing Gloves
-					-- #if BEFORE LEGION
 					["provider"] = { "i", 97990 },	-- Raptorhide Boxing Gloves
-					-- #endif
 				}),
 				q(32859, {	-- Ty'thar
-					-- #if BEFORE LEGION
+					["sourceQuest"] = 32858,	-- Raptorhide Boxing Gloves
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -706,27 +776,18 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98082),	-- Undisputed Champion's Shirt
 						i(98099),	-- Giant Sack of Coins
 					},
-					-- #endif
-					["sourceQuest"] = 32858,	-- Raptorhide Boxing Gloves
 				}),
 			})),
 			-- WOD
-			sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 }, }, {
 				q(36702, {	-- Meatball
 					["description"] = "Reach Rank 5 in the arena.",
 					["qg"] = 86272,	-- Meatball
-					["groups"] = {
-						follower(203),	-- Meatball
+					["coords"] = {
+						{ 56.7, 77.3, BRAWLGAR_ARENA },
+						{ 61.4, 27.0, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 					},
-				}),
-			}),
-			sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
-				q(36702, {	-- Meatball
-					["description"] = "Reach Rank 5 in the arena.",
-					["qg"] = 86272,	-- Meatball
-					["groups"] = {
-						follower(203),	-- Meatball
-					},
+					["groups"] = { follower(203) },	-- Meatball
 				}),
 			}),
 			-- BFA
@@ -750,7 +811,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55004,	-- Undercover Agent: Ann Dennyson
 					["qg"] = 150314,	-- Ann Dennyson
 					["coord"] = { 69.7, 36.7, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["cost"] = { { "i", 143762, 1 }, },	-- High Roller's Contract
+					["cost"] = { { "i", 143762, 1 } },	-- High Roller's Contract
 				}),
 				q(55006, {	-- A Favor for Your Old Chum Winifred
 					["sourceQuest"] = 55005,	-- The Financial Participation Incentive
@@ -761,7 +822,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55006,	-- A Favor for Your Old Chum Winifred
 					["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
 					["coord"] = { 63.3, 40.6, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["cost"] = { { "i", 164935, 1 }, },	-- Challenge Card: Lord Sylysthrel
+					["cost"] = { { "i", 164935, 1 } },	-- Challenge Card: Lord Sylysthrel
 					["groups"] = {
 						i(164941),	-- Huge Pile of Legitimately-Earned Brawler's Gold (QI!)
 					},
@@ -784,18 +845,14 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55009,	-- Undercover Agent: Saralara Fizzlesprang
 					["qg"] = 150317,	-- Shadowmaster O'Flannerty
 					["coord"] = { 68.0, 24.8, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["groups"] = {
-						i(164928),	-- Soul Splinter (QI!)
-					},
+					["groups"] = { i(164928) },	-- Soul Splinter (QI!)
 				}),
 				q(55011, {	-- Super Soul Splinters
 					["description"] = "You can save previously earned Rumbler's Purses and open them while on this quest - Each Rumbler's Purse gives 1 Super Soul Splinter, so you will need 3 Rumbler's Purses to complete this quest.",
 					["sourceQuest"] = 55010,	-- Soul Splinters
 					["qg"] = 150317,	-- Shadowmaster O'Flannerty
 					["coord"] = { 68.0, 24.8, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["groups"] = {
-						i(164929),	-- Super Soul Splinter (QI!)
-					},
+					["groups"] = { i(164929) },	-- Super Soul Splinter (QI!)
 				}),
 				q(55012, {	-- Cause for Concern
 					["sourceQuest"] = 55011,	-- Super Soul Splinters
@@ -804,58 +861,48 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55012,	-- Cause for Concern
 					["qg"] = 150315,	-- Saralara Fizzlesprang
 					["coord"] = { 44.4, 34.6, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["cost"] = { { "i", 94178, 1 }, },	-- Challenge Card: G.G. Engineering
-					["groups"] = {
-						i(164937),	-- 13-Tooth Gogglegear (QI!)
-					},
+					["cost"] = { { "i", 94178, 1 } },	-- Challenge Card: G.G. Engineering
+					["groups"] = { i(164937) },	-- 13-Tooth Gogglegear (QI!)
 				}),
 				q(55014, {	-- The Fizzlesprang Goggle Experiment
 					["sourceQuest"] = 55013,	-- The Precious 13-Tooth Gogglegear
 					["qg"] = 150315,	-- Saralara Fizzlesprang
 					["coord"] = { 44.4, 34.6, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["groups"] = {
-						i(167033),	-- Saralara's Goggles (QI!)
-					},
+					["groups"] = { i(167033) },	-- Saralara's Goggles (QI!)
 				}),
 				q(55015, {	-- Evidence Packet: Shadowmaster O'Flannerty
 					["sourceQuest"] = 55014,	-- The Fizzlesprang Goggle Experiment
 					["qg"] = 150315,	-- Saralara Fizzlesprang
 					["coord"] = { 44.4, 34.6, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["groups"] = {
-						i(167035),	-- Evidence Packet: Shadowmaster O'Flannerty (QI!)
-					},
+					["groups"] = { i(167035) },	-- Evidence Packet: Shadowmaster O'Flannerty (QI!)
 				}),
 				q(55016, {	-- Undercover Agent: Silent Jussho
 					["sourceQuest"] = 55015,	-- Evidence Packet: Shadowmaster O'Flannerty
 					["qg"] = 150313,	-- Commander Daalo
 					["coord"] = { 72.7, 68.4, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["cost"] = { { "i", 143759, 1 }, },	-- VIP Room Rental Form
+					["cost"] = { { "i", 143759, 1 } },	-- VIP Room Rental Form
 				}),
 				q(55017, {	-- Flaunt It If You Got It
 					["sourceQuest"] = 55016,	-- Undercover Agent: Silent Jussho
 					["qg"] = 70722,	-- Grant Lazarby
 					["coord"] = { 33.1, 64.3, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 					["cost"] = {
-						{ "i", 98121, 1, },		-- Amberseed Bun
-						{ "i", 98117, 1, },		-- Moneybrau
-						{ "i", 143758, 1, },	-- Free Drinks Voucher
+						{ "i", 98121, 1 },	-- Amberseed Bun
+						{ "i", 98117, 1 },	-- Moneybrau
+						{ "i", 143758, 1 },	-- Free Drinks Voucher
 					},
 				}),
 				q(55018, {	-- Simply Dying of Boredom
 					["sourceQuest"] = 55017,	-- Flaunt It If You Got It
 					["qg"] = 70722,	-- Grant Lazarby
 					["coord"] = { 33.1, 64.3, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["groups"] = {
-						i(167038),	-- Bizmo's Brawlpub Sign (QI!)
-					},
+					["groups"] = { i(167038) },	-- Bizmo's Brawlpub Sign (QI!)
 				}),
 				q(55019, {	-- Evidence Packet: Grant Lazarby
 					["sourceQuest"] = 55018,	-- Simply Dying of Boredom
 					["qg"] = 150316,	-- Silent Jussho
 					["coord"] = { 30.3, 87.7, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["groups"] = {
-						i(167036),	-- Evidence Packet: Grant Lazarby (QI!)
-					},
+					["groups"] = { i(167036) },	-- Evidence Packet: Grant Lazarby (QI!)
 				}),
 				q(55020, {	-- The Brawlpub Trial
 					["sourceQuest"] = 55019,	-- Evidence Packet: Grant Lazarby
@@ -871,10 +918,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55021,	-- A Clue from Area 52
 					["qg"] = 150320,	-- Bizmo
 					["coord"] = { 31.1, 66.5, NETHERSTORM },
-					["cost"] = { { "i", 164936, 1 }, },	-- Mysterious Challenge Card
-					["groups"] = {
-						i(166724),	-- Bruce (MOUNT!)
-					},
+					["cost"] = { { "i", 164936, 1 } },	-- Mysterious Challenge Card
+					["groups"] = { i(166724) },	-- Bruce (MOUNT!)
 				}),
 			}),
 			sharedData({ ["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
@@ -897,7 +942,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 53917,	-- Undercover Agent: Sharisanda
 					["qg"] = 145582,	-- Sharisanda
 					["coord"] = { 48.8, 79.8, BRAWLGAR_ARENA },
-					["cost"] = { { "i", 142318, 1, } },	-- High Roller's Contract
+					["cost"] = { { "i", 142318, 1 } },	-- High Roller's Contract
 				}),
 				q(53920, {	-- A Favor for Your Ol' Pal Buxdoggle
 					["sourceQuest"] = 53918,	-- The Financial Participation Incentive
@@ -908,17 +953,13 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 53920,	-- A Favor for Your Ol' Pal Buxdoggle
 					["qg"] = 68372,	-- Pit Boss Buxdoggle
 					["coord"] = { 49.2, 68.0, BRAWLGAR_ARENA },
-					["groups"] = {
-						i(164941),	-- Huge Pile of Legitimately-Earned Brawler's Gold (QI!)
-					},
+					["groups"] = { i(164941) },	-- Huge Pile of Legitimately-Earned Brawler's Gold (QI!)
 				}),
 				q(53922, {	-- Evidence Packet: Pit Boss Buxdoggle
 					["sourceQuest"] = 53921,	-- The Pit Boss's Debts
 					["qg"] = 145582,	-- Sharisanda
 					["coord"] = { 48.8, 79.8, BRAWLGAR_ARENA },
-					["groups"] = {
-						i(164962),	-- Evidence Packet: Pit Boss Buxdoggle (QI!)
-					},
+					["groups"] = { i(164962) },	-- Evidence Packet: Pit Boss Buxdoggle (QI!)
 				}),
 				q(53923, {	-- Undercover Agent: Stone Guard Mollivox
 					["sourceQuest"] = 53922,	-- Evidence Packet: Pit Boss Buxdoggle
@@ -930,17 +971,13 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 53923,	-- Undercover Agent: Stone Guard Mollivox
 					["qg"] = 145691,	-- Shadowmaster Skrizzik
 					["coord"] = { 37.4, 33.0, BRAWLGAR_ARENA },
-					["groups"] = {
-						i(164928),	-- Soul Splinter (QI!)
-					},
+					["groups"] = { i(164928) },	-- Soul Splinter (QI!)
 				}),
 				q(53925, {	-- Super Soul Splinters
 					["sourceQuest"] = 53924,	-- Soul Splinters
 					["qg"] = 145691,	-- Shadowmaster Skrizzik
 					["coord"] = { 37.4, 33.0, BRAWLGAR_ARENA },
-					["groups"] = {
-						i(164929),	-- Super Soul Splinter (QI!)
-					},
+					["groups"] = { i(164929) },	-- Super Soul Splinter (QI!)
 				}),
 				q(53926, {	-- Cause for Concern
 					["sourceQuest"] = 53925,	-- Super Soul Splinters
@@ -949,53 +986,43 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 53926,	-- Cause for Concern
 					["qg"] = 145583,	-- Stone Guard Mollivox
 					["coord"] = { 50.0, 12.4, BRAWLGAR_ARENA },
-					["groups"] = {
-						i(164937),	-- 13-Tooth Gogglegear (QI!)
-					},
+					["groups"] = { i(164937) },	-- 13-Tooth Gogglegear (QI!)
 				}),
 				q(53928, {	-- The Mollivox Goggle Experiment
 					["sourceQuest"] = 53927,	-- The Precious 13-Tooth Gogglegear
 					["qg"] = 145583,	-- Stone Guard Mollivox
 					["coord"] = { 50.0, 12.4, BRAWLGAR_ARENA },
-					["groups"] = {
-						i(164943),	-- Mollivox's Goggles (QI!)
-					},
+					["groups"] = { i(164943) },	-- Mollivox's Goggles (QI!)
 				}),
 				q(53929, {	-- Evidence Packet: Shadowmaster Skrizzik
 					["sourceQuest"] = 53928,	-- The Mollivox Goggle Experiment
 					["qg"] = 145583,	-- Stone Guard Mollivox
 					["coord"] = { 50.0, 12.4, BRAWLGAR_ARENA },
-					["groups"] = {
-						i(164963),	-- Evidence Packet: Shadowmaster Skrizzik (QI!)
-					},
+					["groups"] = { i(164963) },	-- Evidence Packet: Shadowmaster Skrizzik (QI!)
 				}),
 				q(53930, {	-- Undercover Agent: Nugg Lumbo
 					["sourceQuest"] = 53929,	-- Evidence Packet: Shadowmaster Skrizzik
 					["qg"] = 145581,	-- Commander Arlu Ravenhide
 					["coord"] = { 43.4, 97.0, BRAWLGAR_ARENA },
-					["cost"] = { { "i", 143759, 1, } },	-- VIP Room Rental Form
+					["cost"] = { { "i", 143759, 1 } },	-- VIP Room Rental Form
 				}),
 				q(53931, {	-- Flaunt It If You Got It
 					["sourceQuest"] = 53930,	-- Undercover Agent: Nugg Lumbo
 					["qg"] = 70716,	-- Libbiara Blightrunner
 					["coord"] = { 31.2, 54.0, BRAWLGAR_ARENA },
-					["cost"] = { { "i", 142311, 1, } },	-- Free Drinks Voucher
+					["cost"] = { { "i", 142311, 1 } },	-- Free Drinks Voucher
 				}),
 				q(53952, {	-- Simply Dying of Boredom
 					["sourceQuest"] = 53931,	-- Flaunt It If You Got It
 					["qg"] = 70716,	-- Libbiara Blightrunner
 					["coord"] = { 31.2, 54.0, BRAWLGAR_ARENA },
-					["groups"] = {
-						i(164947),	-- Brawl'gar Arena Sign (QI!)
-					},
+					["groups"] = { i(164947) },	-- Brawl'gar Arena Sign (QI!)
 				}),
 				q(53932, {	-- Evidence Packet: Libbiara Blightrunner
 					["sourceQuest"] = 53952,	-- Simply Dying of Boredom
 					["qg"] = 145584,	-- Nugg Lumbo
 					["coord"] = { 29.8, 50.0, BRAWLGAR_ARENA },
-					["groups"] = {
-						i(164964),	-- Evidence Packet: Libbiara Blightrunner (QI!)
-					},
+					["groups"] = { i(164964) },	-- Evidence Packet: Libbiara Blightrunner (QI!)
 				}),
 				q(53933, {	-- The Brawl'gar Trial
 					["sourceQuest"] = 53932,	-- Evidence Packet: Libbiara Blightrunner
@@ -1011,9 +1038,63 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 53934,	-- A Clue from Area 52
 					["qg"] = 149808,	-- Boss Bazzelflange
 					["maps"] = { NETHERSTORM },
-					["groups"] = {
-						i(166724),	-- Bruce (MOUNT!)
+					["groups"] = { i(166724) },	-- Bruce (MOUNT!)
+				}),
+			}),
+			-- TWW
+			sharedData({ ["timeline"] = { ADDED_11_2_7 }, ["races"] = ALLIANCE_ONLY }, {
+				q(92845, {	-- By Invitation Only?
+					["qg"] = 253181,	-- Babbling Brawler
+					["DisablePartySync"] = true,
+					["coords"] = {
+						{ 51.2, 43.4, DORNOGAL },
+						{ 66.6, 72.2, STORMWIND_CITY },
 					},
+				}),
+				q(92851, {	-- Questionable Qualifications
+					["sourceQuest"] = 92845,	-- By Invitation Only?
+					["qg"] = 253170,	-- Pick Butterworth
+					["lockCriteria"] = { 1,
+						"achID", 61413,	-- The First Rule of Brawler's Guild [A]
+						"achID", 61414,	-- The First Rule of Brawler's Guild [H]
+					},
+					["DisablePartySync"] = true,
+					["coord"] = { 53.7, 61.6, DEEPRUN_TRAM },
+					["groups"] = { i(254690) },	-- Blood-Soaked Invitation
+				}),
+				q(94363, {	-- The Gloves Are Off
+					["sourceQuest"] = 92851,	-- Questionable Qualifications
+					["qg"] = 253170,	-- Pick Butterworth
+					["coords"] = {
+						{ 53.7, 61.6, DEEPRUN_TRAM },
+						{ 55.2, 61.4, DEEPRUN_TRAM },
+					},
+				}),
+			}),
+			sharedData({ ["timeline"] = { ADDED_11_2_7 }, ["races"] = HORDE_ONLY }, {
+				q(92715, {	-- By Invitation Only?
+					["qg"] = 252857,	-- Garrulous Gladiator
+					["DisablePartySync"] = true,
+					["coords"] = {
+						{ 51.4, 40.1, DORNOGAL },
+						{ 46.0, 60.8, ORGRIMMAR },
+					},
+				}),
+				q(92740, {	-- Questionable Qualifications
+					["sourceQuest"] = 92715,	-- By Invitation Only?
+					["qg"] = 252933,	-- Alton Philips
+					["coord"] = { 73.4, 31.6, ORGRIMMAR },
+					["lockCriteria"] = { 1,
+						"achID", 61413,	-- The First Rule of Brawler's Guild [A]
+						"achID", 61414,	-- The First Rule of Brawler's Guild [H]
+					},
+					["DisablePartySync"] = true,
+					["groups"] = { i(254690) },	-- Blood-Soaked Invitation
+				}),
+				q(94372, {	-- The Gloves Are Off
+					["sourceQuest"] = 92740,	-- Questionable Qualifications
+					["qg"] = 252933,	-- Alton Philips
+					["coord"] = { 73.4, 31.6, ORGRIMMAR },
 				}),
 			})
 		)),
@@ -1029,7 +1110,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				-- #if BFA
 				["description"] = "Awarded for winning a Brawl. If you haven't already finished the quest chain for Bruce, save these for the 'Soul Splinters' quest.",
 				-- #else
-				["description"] = "Awarded for winning a Brawl.",
+				["description"] = "Awarded for winning a Random Brawl.",
 				-- #endif
 			}),
 			i(164938, {	-- G.G. Gearbox
@@ -1052,8 +1133,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 		n(VENDORS, {
 			n(145695, {	-- "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
 				["sourceQuest"] = 53914,	-- Murder at the Brawl'gar Arena
-				["maps"] = { BRAWLGAR_ARENA },
-				-- ["coord"] = { 0, 0, BRAWLGAR_ARENA },
+				["coord"] = { 50.8, 29.4, BRAWLGAR_ARENA },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 				["sym"] = { {"sub", "common_vendor", 68364} },	-- Paul North <Brawl'gar Arena Quartermaster>
@@ -1061,23 +1141,173 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			n(70751, {	-- Card Trader Ami
 				["coord"] = { 60.4, 77.5, BRAWLGAR_ARENA },
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH },
+				["timeline"] = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				["groups"] = {
-					-- #if BEFORE LEGION
-					i(93823, {	-- Challenge Card: Bruce
-						n(67262, {	-- Bruce
-							applyclassicphase(MOP_PHASE_ESCALATION, i(97983, {	-- Modified Chomping Apparatus
-								["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH }
-							})),
-						}),
+					i(143794, {	-- Challenge Card: A Seagull
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
-					-- #endif
-					-- #if BEFORE SL
+					i(94184, {	-- Challenge Card: Akama
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142040, {	-- Challenge Card: Ash'katzuum
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142041, {	-- Challenge Card: Bill the Janitor
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142026, {	-- Challenge Card: Blackmange
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94166, {	-- Challenge Card: Blat
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97321, {	-- Challenge Card: Blind Hero
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97445, {	-- Challenge Card: Blingtron 3000
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(93823, {	-- Challenge Card: Bruce
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH, ADDED_11_2_7 },
+						["groups"] = {
+							n(67262, {	-- Bruce
+								applyclassicphase(MOP_PHASE_ESCALATION, i(97983, {	-- Modified Chomping Apparatus
+									["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+								})),
+							}),
+						},
+					}),
+					i(142033, {	-- Challenge Card: Carl
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94170, {	-- Challenge Card: Crush
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94179, {	-- Challenge Card: Dark Summoner
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94173, {	-- Challenge Card: Deeken
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94162, {	-- Challenge Card: Dippy
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97280, {	-- Challenge Card: Dippy & Doopy
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94172, {	-- Challenge Card: Dominika
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142043, {	-- Challenge Card: Doomflipper
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94182, {	-- Challenge Card: Epicus Maximus
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94175, {	-- Challenge Card: Fjoll
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94164, {	-- Challenge Card: Fran & Riddoh
+						["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(94178, {	-- Challenge Card: G.G. Engineering
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
+					i(253515, {	-- Challenge Card: Glorp
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(94160, {	-- Challenge Card: Goredome
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94168, {	-- Challenge Card: Ixx
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142032, {	-- Challenge Card: Johnny Awesome
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94165, {	-- Challenge Card: King Kulaka
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94163, {	-- Challenge Card: Kirrawk
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(144439, {	-- Challenge Card: Klunk
+						["timeline"] = { ADDED_7_2_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94171, {	-- Challenge Card: Leona
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94177, {	-- Challenge Card: Leper Gnomes
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(164935, {	-- Challenge Card: Lord Sylysthrel
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
+					}),
+					i(165709, {	-- Challenge Card: Mama Stormstout
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94181, {	-- Challenge Card: Meatball
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97563, {	-- Challenge Card: Mecha-Bruce
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94174, {	-- Challenge Card: Millie Watt
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97283, {	-- Challenge Card: Nibbleh
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142029, {	-- Challenge Card: Ogrewatch
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142042, {	-- Challenge Card: Ooliss
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(143899, {	-- Challenge Card: Oso the Betrayer
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94176, {	-- Challenge Card: Proboskus
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97566, {	-- Challenge Card: Razorgrin
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253575, {	-- Challenge Card: Renegade Swabbie
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(94167, {	-- Challenge Card: Sanoriak
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142045, {	-- Challenge Card: Stitches
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253581, {	-- Challenge Card: Sunny
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(97559, {	-- Challenge Card: T440 Dual-Mode Robot
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253868, {	-- Challenge Card: The Quacken
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(166809, {	-- Challenge Card: Thog Hammerspace
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142037, {	-- Challenge Card: Topps
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94186, {	-- Challenge Card: Unguloxx
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(93824, {	-- Challenge Card: Vian
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94161, {	-- Challenge Card: Vishas
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94183, {	-- Challenge Card: Yikkan Izu
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					i(164936, {	-- Mysterious Challenge Card
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
@@ -1090,29 +1320,178 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							}),
 						},
 					}),
-					-- #endif
 				},
 			}),
 			n(70752, {	-- Card Trader Leila
 				["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH },
+				["timeline"] = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				["groups"] = {
-					-- #if BEFORE LEGION
-					i(93823, {	-- Challenge Card: Bruce
-						n(67262, {	-- Bruce
-							applyclassicphase(MOP_PHASE_ESCALATION, i(97983, {	-- Modified Chomping Apparatus
-								["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH }
-							})),
-						}),
+					i(143794, {	-- Challenge Card: A Seagull
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
-					-- #endif
-					-- #if BEFORE SL
+					i(94184, {	-- Challenge Card: Akama
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142040, {	-- Challenge Card: Ash'katzuum
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142041, {	-- Challenge Card: Bill the Janitor
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142026, {	-- Challenge Card: Blackmange
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94166, {	-- Challenge Card: Blat
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97321, {	-- Challenge Card: Blind Hero
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97445, {	-- Challenge Card: Blingtron 3000
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(93823, {	-- Challenge Card: Bruce
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH, ADDED_11_2_7 },
+						["groups"] = {
+							n(67262, {	-- Bruce
+								applyclassicphase(MOP_PHASE_ESCALATION, i(97983, {	-- Modified Chomping Apparatus
+									["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+								})),
+							}),
+						},
+					}),
+					i(142033, {	-- Challenge Card: Carl
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94170, {	-- Challenge Card: Crush
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94179, {	-- Challenge Card: Dark Summoner
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94173, {	-- Challenge Card: Deeken
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94162, {	-- Challenge Card: Dippy
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97280, {	-- Challenge Card: Dippy & Doopy
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94172, {	-- Challenge Card: Dominika
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142043, {	-- Challenge Card: Doomflipper
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94182, {	-- Challenge Card: Epicus Maximus
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94175, {	-- Challenge Card: Fjoll
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94164, {	-- Challenge Card: Fran & Riddoh
+						["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(94178, {	-- Challenge Card: G.G. Engineering
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
+					i(253515, {	-- Challenge Card: Glorp
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(94160, {	-- Challenge Card: Goredome
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94168, {	-- Challenge Card: Ixx
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142032, {	-- Challenge Card: Johnny Awesome
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94165, {	-- Challenge Card: King Kulaka
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94163, {	-- Challenge Card: Kirrawk
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(144439, {	-- Challenge Card: Klunk
+						["timeline"] = { ADDED_7_2_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94171, {	-- Challenge Card: Leona
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94177, {	-- Challenge Card: Leper Gnomes
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(164935, {	-- Challenge Card: Lord Sylysthrel
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
+					}),
+					i(165709, {	-- Challenge Card: Mama Stormstout
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94181, {	-- Challenge Card: Meatball
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97563, {	-- Challenge Card: Mecha-Bruce
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94174, {	-- Challenge Card: Millie Watt
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97283, {	-- Challenge Card: Nibbleh
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142029, {	-- Challenge Card: Ogrewatch
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142042, {	-- Challenge Card: Ooliss
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(143899, {	-- Challenge Card: Oso the Betrayer
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94176, {	-- Challenge Card: Proboskus
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97566, {	-- Challenge Card: Razorgrin
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253575, {	-- Challenge Card: Renegade Swabbie
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(94167, {	-- Challenge Card: Sanoriak
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142045, {	-- Challenge Card: Stitches
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253581, {	-- Challenge Card: Sunny
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(97559, {	-- Challenge Card: T440 Dual-Mode Robot
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253868, {	-- Challenge Card: The Quacken
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(166809, {	-- Challenge Card: Thog Hammerspace
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142037, {	-- Challenge Card: Topps
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94186, {	-- Challenge Card: Unguloxx
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(93824, {	-- Challenge Card: Vian
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94161, {	-- Challenge Card: Vishas
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94183, {	-- Challenge Card: Yikkan Izu
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					i(164936, {	-- Mysterious Challenge Card
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
@@ -1125,15 +1504,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							}),
 						},
 					}),
-					-- #endif
 				},
 			}),
 			n(70723, {	-- Dame Jesepha <Luxury Food Vendor>
-				["maps"] = { DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-				-- Wouter TODO: add coords
-				-- ["coord"] = { 0, 0, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
+				["coord"] = { 22.1, 72.4, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				-- #if BFA
 				["groups"] = {
 					i(98121, {	-- Amberseed Bun
@@ -1144,18 +1520,16 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			}),
 			n(151941, {	-- Dershway the Triggered <Bizmo's Brawlpub Quartermaster>
 				["sourceQuest"] = 55002,	-- Murder at the Brawlpub
-				["maps"] = { DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-				-- ["coord"] = { 0, 0, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
+				["coord"] = { 54.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 				["sym"] = { {"sub", "common_vendor", 68363} },	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 			}),
 			n(70714, {	-- Harr Grayhide <Luxury Food Vendor>
-				["maps"] = { BRAWLGAR_ARENA },
-				-- Wouter TODO: add coords
-				-- ["coord"] = { 0, 0, BRAWLGAR_ARENA },
+				["description"] = "On a Zeppelin, flying above and around the Arena.",
+				["coord"] = { 41.5, 76.8, BRAWLGAR_ARENA },	-- Kergil Sparkwrench's Teleporter
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				-- #if BFA
 				["groups"] = {
 					i(98121, {	-- Amberseed Bun
@@ -1165,11 +1539,10 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				-- #endif
 			}),
 			n(70713, {	-- Haxxil Drinkmeister <Rare and Luxury Drink Vendor>
-				["maps"] = { DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-				-- Wouter TODO: add coords
-				-- ["coord"] = { 0, 0, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+				["description"] = "On a Zeppelin, flying above and around the Arena.",
+				["coord"] = { 41.5, 76.8, BRAWLGAR_ARENA },	-- Kergil Sparkwrench's Teleporter
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				-- #if BFA
 				["groups"] = {
 					i(98117, {	-- Moneybrau
@@ -1179,11 +1552,9 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				-- #endif
 			}),
 			n(70719, {	-- Mozzle Gearbeer <Rare and Luxury Drink Vendor>
-				["maps"] = { DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-				-- Wouter TODO: add coords
-				-- ["coord"] = { 0, 0, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
+				["coord"] = { 24.7, 65.0, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				-- #if BFA
 				["groups"] = {
 					i(98117, {	-- Moneybrau
@@ -1204,45 +1575,81 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				-- #endif
 				-- #endif
 				["groups"] = {
-					-- #if BEFORE WOD
+					filter(MOUNTS, {
+						i(259238, {	-- Ballistic Bronco (MOUNT!)
+							["minReputation"] = { FACTION_BRAWLGAR_SEASON_5, 8 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 100000000,	-- 10000g
+						}),
+						i(142403, {	-- Brawler's Burly Basilisk (MOUNT!)
+							["timeline"] = { ADDED_7_1_0, REMOVED_8_0_1 },
+						}),
+						applyclassicphase(MOP_PHASE_ESCALATION, i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!) unobtainable unless you reached Rank 8 in either Season 1 or Season 2
+							["timeline"] = { ADDED_5_3_0, REMOVED_7_1_5 },
+							-- #if MOP
+								-- #if BEFORE 5.5.3
+								["description"] = "While this is already in the shop, you cannot get Rank 10 until Phase 4.",
+								-- #else
+								["description"] = "Available after reaching Rank 10.",
+								-- #endif
+							-- #elseif AFTER 7.1.5
+							["description"] = "Only available to those who had reached Rank 8 in Season 1 or Season 2.",
+							-- #endif
+						})),
+						i(259227, {	-- Brawlin' Bruno (MOUNT!)
+							["minReputation"] = { FACTION_BRAWLGAR_SEASON_5, 6 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 40000000,	-- 4000g
+						}),
+					}),
+					filter(BATTLE_PETS, {
+						i(93025, {	-- Clock'em (PET!)
+							["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+							-- #if MOP
+							["description"] = "Available after reaching Rank 4.",
+							-- #endif
+						}),
+						i(144394, {	-- Tylarr Gronnden (PET!)
+							["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						}),
+					}),
+					n(DECOR, {
+						i(263026, {	-- Brawler's Barricade (DECOR!)
+							["minReputation"] = { FACTION_BRAWLGAR_SEASON_5, 2 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(259071, {	-- Brawler's Guild Punching Bag (DECOR!)
+							["minReputation"] = { FACTION_BRAWLGAR_SEASON_5, 5 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 40000000,	-- 4000g
+						}),
+						i(255840, {	-- Champion Brawler's Gloves (DECOR!)
+							["minReputation"] = { FACTION_BRAWLGAR_SEASON_5, 7 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 80000000,	-- 8000g
+						}),
+					}),
 					i(93858, {	-- Brawler's Bladed Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
 						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					-- #endif
-					i(142403, {	-- Brawler's Burly Basilisk (MOUNT!) unobtainable as of BFA prepatch
-						["timeline"] = { ADDED_7_1_0, REMOVED_8_0_1 },
-					}),
-					applyclassicphase(MOP_PHASE_ESCALATION, i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!) unobtainable unless you reached Rank 8 in either Season 1 or Season 2
-						["timeline"] = { ADDED_5_3_0, REMOVED_7_1_5 },
-						-- #if MOP
-							-- #if BEFORE 5.5.3
-							["description"] = "While this is already in the shop, you cannot get Rank 10 until Phase 4.",
-							-- #else
-							["description"] = "Available after reaching Rank 10.",
-							-- #endif
-						-- #elseif AFTER 7.1.5
-						["description"] = "Only available to those who had reached Rank 8 in Season 1 or Season 2.",
-						-- #endif
-					})),
 					i(167812, {	-- Brawlers Guild Tabard
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
-					-- #if BEFORE WOD
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
 						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					-- #endif
 					i(122396, {	-- Brawler's Razor Claws
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98085, {	-- Brucehide Jersey
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					i(253011, {	-- Brawler's Healing Brute Punch
 						["timeline"] = { ADDED_11_2_7 },
@@ -1256,38 +1663,32 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(253016, {	-- Brawler's Fight Tonic of Intellect
 						["timeline"] = { ADDED_11_2_7 },
 					}),
-					i(93025, {	-- Clock'em (PET!)
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
-						-- #if MOP
-						["description"] = "Available after reaching Rank 4.",
-						-- #endif
-					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98092, {	-- Digmaster's Bodysleeve
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					iensemble(167892, {	-- Ensemble: Brawler's Garb
 						["races"] = HORDE_ONLY,
-						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98079, {	-- Floot-Tooter's Tunic
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					TempForceMisc(i(127773, {	-- Gemcutter Module: Mastery
-						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7  },
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98080, {	-- Gorgeous Blouse
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98091, {	-- Last Season's Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98084, {	-- Ooze-Soaked Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98087, {	-- Paper Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					i(118908, {	-- Pit Fighter's Punching Ring
 						["races"] = HORDE_ONLY,
@@ -1298,29 +1699,26 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98083, {	-- Sharkskin Tunic
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98093, {	-- Sightless Mantle
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98081, {	-- The Boomshirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					i(95050, {	-- The Brassiest Knuckle
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98086, {	-- Tuxedo-Like Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
-					i(144394, {	-- Tylarr Gronnden (PET!)
-						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
-					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98082, {	-- Undisputed Champion's Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98543, {	-- Wraps of the Blood-Soaked Brawler
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 				},
 			}),
@@ -1336,45 +1734,81 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				-- #endif
 				-- #endif
 				["groups"] = {
-					-- #if BEFORE WOD
+					filter(MOUNTS, {
+						i(259238, {	-- Ballistic Bronco (MOUNT!)
+							["minReputation"] = { FACTION_BRAWLPUB_SEASON_5, 8 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 100000000,	-- 10000g
+						}),
+						i(142403, {	-- Brawler's Burly Basilisk (MOUNT!)
+							["timeline"] = { ADDED_7_1_0, REMOVED_8_0_1 },
+						}),
+						applyclassicphase(MOP_PHASE_ESCALATION, i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!) unobtainable unless you reached Rank 8 in either Season 1 or Season 2
+							["timeline"] = { ADDED_5_3_0, REMOVED_7_1_5 },
+							-- #if MOP
+								-- #if BEFORE 5.5.3
+								["description"] = "While this is already in the shop, you cannot get Rank 10 until Phase 4.",
+								-- #else
+								["description"] = "Available after reaching Rank 10.",
+								-- #endif
+							-- #elseif AFTER 7.1.5
+							["description"] = "Only available to those who had reached Rank 8 in Season 1 or Season 2.",
+							-- #endif
+						})),
+						i(259227, {	-- Brawlin' Bruno (MOUNT!)
+							["minReputation"] = { FACTION_BRAWLPUB_SEASON_5, 6 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 40000000,	-- 4000g
+						}),
+					}),
+					filter(BATTLE_PETS, {
+						i(93025, {	-- Clock'em (PET!)
+							["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+							-- #if MOP
+							["description"] = "Only available after reaching Rank 4.",
+							-- #endif
+						}),
+						i(144394, {	-- Tylarr Gronnden (PET!)
+							["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						}),
+					}),
+					n(DECOR, {
+						i(263026, {	-- Brawler's Barricade (DECOR!)
+							["minReputation"] = { FACTION_BRAWLPUB_SEASON_5, 2 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(259071, {	-- Brawler's Guild Punching Bag (DECOR!)
+							["minReputation"] = { FACTION_BRAWLPUB_SEASON_5, 5 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 40000000,	-- 4000g
+						}),
+						i(255840, {	-- Champion Brawler's Gloves (DECOR!)
+							["minReputation"] = { FACTION_BRAWLPUB_SEASON_5, 7 },
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = 80000000,	-- 8000g
+						}),
+					}),
 					i(93858, {	-- Brawler's Bladed Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
 						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					-- #endif
-					i(142403, {	-- Brawler's Burly Basilisk (MOUNT!) unobtainable as of BFA prepatch
-						["timeline"] = { ADDED_7_1_0, REMOVED_8_0_1 },
-					}),
-					applyclassicphase(MOP_PHASE_ESCALATION, i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!) unobtainable unless you reached Rank 8 in either Season 1 or Season 2
-						["timeline"] = { ADDED_5_3_0, REMOVED_7_1_5 },
-						-- #if MOP
-							-- #if BEFORE 5.5.3
-							["description"] = "While this is already in the shop, you cannot get Rank 10 until Phase 4.",
-							-- #else
-							["description"] = "Available after reaching Rank 10.",
-							-- #endif
-						-- #elseif AFTER 7.1.5
-						["description"] = "Only available to those who had reached Rank 8 in Season 1 or Season 2.",
-						-- #endif
-					})),
 					i(167811, {	-- Brawlers Guild Tabard
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
-					-- #if BEFORE WOD
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
 						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					-- #endif
 					i(122396, {	-- Brawler's Razor Claws
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98085, {	-- Brucehide Jersey
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					i(253011, {	-- Brawler's Healing Brute Punch
 						["timeline"] = { ADDED_11_2_7 },
@@ -1388,21 +1822,15 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(253016, {	-- Brawler's Fight Tonic of Intellect
 						["timeline"] = { ADDED_11_2_7 },
 					}),
-					i(93025, {	-- Clock'em (PET!)
-						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
-						-- #if MOP
-						["description"] = "Only available after reaching Rank 4.",
-						-- #endif
-					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98092, {	-- Digmaster's Bodysleeve
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					iensemble(167891, {	-- Ensemble: Brawler's Garb
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98079, {	-- Floot-Tooter's Tunic
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					TempForceMisc(i(127773, {	-- Gemcutter Module: Mastery
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
@@ -1410,16 +1838,16 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98080, {	-- Gorgeous Blouse
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98091, {	-- Last Season's Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98084, {	-- Ooze-Soaked Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98087, {	-- Paper Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					i(118907, {	-- Pit Fighter's Punching Ring
 						["races"] = ALLIANCE_ONLY,
@@ -1430,42 +1858,42 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98083, {	-- Sharkskin Tunic
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98093, {	-- Sightless Mantle
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98081, {	-- The Boomshirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					i(95051, {	-- The Brassiest Knuckle
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98086, {	-- Tuxedo-Like Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
-					i(144394, {	-- Tylarr Gronnden (PET!)
-						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
-					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98082, {	-- Undisputed Champion's Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98543, {	-- Wraps of the Blood-Soaked Brawler
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
 					})),
 				},
 			}),
-			-- Season 1 through 4
-			n(115797, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH } }, {	-- Tiana Nevermorn <Gold Exchange>
-				["maps"] = { BRAWLGAR_ARENA },
+			n(115797, {	-- Tiana Nevermorn <Gold Exchange>
+				["coord"] = { 59.6, 78.5, BRAWLGAR_ARENA },
 				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				["groups"] = {
 					i(142319, {	-- Bag of Chipped Dice
+						-- In TWW, They changed how the dice works, you fight bosses related to the achievement "The Best There Is"
 						["races"] = HORDE_ONLY,
-						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
+						-- #if BEFORE 11.2.7
 						["groups"] = {
-							-- Wouter NOTE: if you're confused like me, fighting bosses with Bag of Chipped Dice still allowed you to fight Season 2 bosses and earn the achievement + shirt
+							-- Wouter NOTE: during Seasons 3 + 4, you could use Bag of Chipped Dice to activate random brawl mode to fight Season 2 bosses and earn their achievement + shirt
+							--		Source: checked a vast amount of Wowhead comments on these shirts
 							ach(9177, {	-- Deck Your Collection [Season 2]
 								["races"] = HORDE_ONLY,
 								["groups"] = {
@@ -1574,108 +2002,77 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 								}),
 							}),
 						},
+						-- #endif
 					}),
 					i(142317, {	-- Blood-Soaked Angel Figurine
-						["cost"] = { { "c", 1299, 250 }, },	-- 250x Brawler's Gold
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 250 } },
 					}),
 					i(142314, {	-- Brawler's Potion Dispenser
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142311, {	-- Free Drinks Voucher
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
 						-- #end
-						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 					i(142318, {	-- High Roller's Contract
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
 						-- #endif
-						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 					}),
 					i(142290, {	-- Rumble Card: Battle of the Brew
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							crit(35477, {	-- Battle of the Brew
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142288, {	-- Rumble Card: Grief Warden
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(114943, {	-- Grief Warden <Enmity Moose>
-								crit(35472, {	-- Grief Warden
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142294, {	-- Rumble Card: Mazhareen
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(68251, {	-- Mazhareen
-								crit(35473, {	-- Mazhareen
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(117102, {	-- Mindbreaker Gzzaj
-								crit(35474, {	-- Mindbreaker Gzzaj
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142289, {	-- Rumble Card: Penguin Stampede
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(115185, {	-- Penguin Stampede
-								crit(35478, {	-- Penguin Stampede
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142291, {	-- Rumble Card: Senya
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(115357, {	-- Senya
-								crit(35476, {	-- Senya
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142292, {	-- Rumble Card: Stranglethorn Streak
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							crit(35475, {	-- Stranglethorn Streak
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
-					i(143759, {	-- VIP Room Rental Form
+					i(142313, {	-- Zeppelin Rental Form
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'Undercover Agent: Nugg Lumbo' quest if you do not have Rank 6 by this point.",
 						-- #endif
-						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 				},
-			})),
-			n(118898, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH } }, {	-- Ulaani <Gold Exchange>
-				["maps"] = { DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
+			}),
+			n(118898, {	-- Ulaani <Gold Exchange>
+				["coord"] = { 61.9, 25.3, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				["groups"] = {
 					i(143763, {	-- Bag of Chipped Dice
+						-- In TWW, They changed how the dice works, you fight bosses related to the achievement "The Best There Is"
 						["races"] = ALLIANCE_ONLY,
-						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
+						-- #if BEFORE 11.2.7
 						["groups"] = {
-							-- Wouter NOTE: if you're confused like me, fighting bosses with Bag of Chipped Dice still allowed you to fight Season 2 bosses and earn the achievement + shirt
+							-- Wouter NOTE: during Seasons 3 + 4, you could use Bag of Chipped Dice to activate random brawl mode to fight Season 2 bosses and earn their achievement + shirt
+							--		Source: checked a vast amount of Wowhead comments on these shirts
 							ach(9176, {	-- Deck Your Collection [Season 2]
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {
@@ -1730,7 +2127,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							}),
 							n(68257, {	-- Goredome
 								i(144378, {	-- Gorestained Brawler's Purse
-									i(144371),	-- Gorstained Tunic
+									i(144371),	-- Gorestained Tunic
 								}),
 							}),
 							n(70678, {	-- Grandpa Grumplefloot
@@ -1784,134 +2181,83 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 								}),
 							}),
 						},
+						-- #endif
 					}),
 					i(143761, {	-- Blood-Soaked Angel Figurine
-						["cost"] = { { "c", 1299, 250 }, },	-- 250x Brawler's Gold
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 250 } },
 					}),
 					i(143760, {	-- Brawler's Potion Dispenser
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(143758, {	-- Free Drinks Voucher
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
 						-- #endif
-						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 					i(143762, {	-- High Roller's Contract
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
 						-- #endif
-						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 					}),
 					i(142290, {	-- Rumble Card: Battle of the Brew
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							crit(35477, {	-- Battle of the Brew
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142288, {	-- Rumble Card: Grief Warden
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(114943, {	-- Grief Warden <Enmity Moose>
-								crit(35472, {	-- Grief Warden
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142294, {	-- Rumble Card: Mazhareen
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(68251, {	-- Mazhareen
-								crit(35473, {	-- Mazhareen
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(117102, {	-- Mindbreaker Gzzaj
-								crit(35474, {	-- Mindbreaker Gzzaj
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142289, {	-- Rumble Card: Penguin Stampede
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(115185, {	-- Penguin Stampede
-								crit(35478, {	-- Penguin Stampede
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142291, {	-- Rumble Card: Senya
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							n(115357, {	-- Senya
-								crit(35476, {	-- Senya
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142292, {	-- Rumble Card: Stranglethorn Streak
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["groups"] = {
-							crit(35475, {	-- Stranglethorn Streak
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						},
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(143759, {	-- VIP Room Rental Form
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
 						-- #endif
-						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 				},
-			})),
-			-- Season 5 through 8
-			n(115797, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Tiana Nevermorn <Gold Exchange>
-				["maps"] = { BRAWLGAR_ARENA },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(259227, {	-- Brawlin' Bruno
-						["cost"] = { { "c", 1299, 100 }, },	-- 250x Brawler's Gold
-					}),
-					i(259238, {	-- Ballistic Bronco
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					}),
-				},
-			})),
-			n(118898, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Ulaani <Gold Exchange>
-				["maps"] = { DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(259227, {	-- Brawlin' Bruno
-						["cost"] = { { "c", 1299, 100 }, },	-- 250x Brawler's Gold
-					}),
-					i(259238, {	-- Ballistic Bronco
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					}),
-				},
-			})),
+			}),
 		}),
 	},
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH } }, applyclassicphase(MOP_PHASE_LANDFALL, {
-	n(BRAWLERS_GUILD, {
-		n(QUESTS, {
-			q(32112),	-- FLAG - Been to Fight Club - completing first fight
-			q(32113),	-- FLAG - Been to Fight Club Today
-			q(32444),	-- FLAG - Earned Brawler Title (Weekly)
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH } }, applyclassicphase(MOP_PHASE_LANDFALL, {
+		n(BRAWLERS_GUILD, {
+			n(QUESTS, {
+				q(32112),	-- FLAG - Been to Fight Club - completing first fight
+				q(32113),	-- FLAG - Been to Fight Club Today
+				q(32444),	-- FLAG - Earned Brawler Title (Weekly)
+			}),
 		}),
-	}),
-}))));
+	})));
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		n(BRAWLERS_GUILD, {
+			n(QUESTS, {
+				q(93223),	-- Triggered upon entering the arena for the first time
+			}),
+		}),
+	}));
+});

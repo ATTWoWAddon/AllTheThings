@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 -- #if MOP
 -- TODO: https://wowpedia.fandom.com/wiki/The_Ruins_of_Guo-Lai_(daily)
 -- Look at the Golden Lotus daileis table at the "Progression" section at the bottom.
@@ -63,9 +64,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				ach(7324),	-- One Step at a Time
 				ach(7319),	-- Ready for Raiding III
-				ach(7322, {	-- Roll Club
-					i(247739, {["timeline"] = { ADDED_11_2_7 }}),	-- Kun-Lai Lacquered Rickshaw (DECOR!)
-				}),
+				ach(7322),	-- Roll Club
 				ach(6546),	-- The Golden Lotus
 			}),
 			n(FACTIONS, {
@@ -116,7 +115,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- 0/1 Shao-Tien Behemoth slain
 							["provider"] = { "n", 65824 },	-- Shao-Tien Behemoth
-							["coord"] = { 47, 29.2, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 47.0, 29.2, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -149,7 +148,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								{ "i", 84242 },	-- Shado-Pan Bandages
 								{ "n", 59183 },	-- Wounded Defender
 							},
-							["coord"] = { 53.2, 28, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 53.2, 28.0, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -194,7 +193,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								{ "n",  65868 },	-- Lao Softfoot
 								{ "o", 213289 },	-- Shao-Tien Cage
 							},
-							["coord"] = { 43, 22.2, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 43.0, 22.2, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -220,7 +219,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- Shao-Tien Behemoth ritual stopped
 							["provider"] = { "n", 65962 },	-- Shao-Tien Behemoth
-							["coord"] = { 44, 16, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 44.0, 16.0, VALE_OF_ETERNAL_BLOSSOMS },
 							["cr"] = 65978,	-- Shao-Tien Soul-Render
 						}),
 					},
@@ -236,7 +235,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- 0/6 Granite Quilen slain
 							["provider"] = { "n", 59157 },	-- Granite Quilen
-							["coord"] = { 46, 23.8, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 46.0, 23.8, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -265,7 +264,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- 0/3 Subjugated Serpent slain
 							["provider"] = { "n", 59158 },	-- Subjugated Serpent
-							["coord"] = { 44, 23.2, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 44.0, 23.2, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -280,7 +279,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- 0/12 Unleashed Spirit slain
 							["provider"] = { "n", 65935 },	-- Unleashed Spirit
-							["coord"] = { 46.2, 27, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 46.2, 27.0, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -320,7 +319,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(31246, {	-- Attack on Mistfall Village (Whitepetal Lake)
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["minReputation"] = { FACTION_GOLDEN_LOTUS, HONORED },
 					["lockCriteria"] = { 1, "questID", 31243 },	-- Attack on Mistfall Village (The Golden Pagoda)
 				})),
@@ -340,7 +339,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(30297, {	-- Baolai the Immolator
 					["qg"] = 58911,	-- Rook Stonetoe
-					["coord"] = { 35.2, 75, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 35.2, 75.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["groups"] = {
 						objective(1, {	-- 0/1 Baolai slain
 							["providers"] = {
@@ -360,11 +359,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31246,	-- Attack on Mistfall Village (Whitepetal Lake)
 					},
 					["qg"] = 58911,	-- Rook Stonetoe
-					["coord"] = { 35.2, 75, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 35.2, 75.0, VALE_OF_ETERNAL_BLOSSOMS },
 				})),
 				RemovedWithSOO(q(30296, {	-- Gaohun the Soul-Severer
 					["qg"] = 58911,	-- Rook Stonetoe
-					["coord"] = { 35.2, 75, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 35.2, 75.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["groups"] = {
 						objective(1, {	-- 0/1 Gaohun slain
 							["providers"] = {
@@ -384,7 +383,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31246,	-- Attack on Mistfall Village (Whitepetal Lake)
 					},
 					["qg"] = 58911,	-- Rook Stonetoe
-					["coord"] = { 35.2, 75, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 35.2, 75.0, VALE_OF_ETERNAL_BLOSSOMS },
 				})),
 				RemovedWithSOO(q(31293, {	-- Mogu Make Poor House Guests
 					["sourceQuests"] = {
@@ -392,7 +391,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31246,	-- Attack on Mistfall Village (Whitepetal Lake)
 					},
 					["qg"] = 58911,	-- Rook Stonetoe
-					["coord"] = { 35.2, 75, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 35.2, 75.0, VALE_OF_ETERNAL_BLOSSOMS },
 				})),
 				RemovedWithSOO(q(30288, {	-- My Town, It's On Fire Again
 					["sourceQuests"] = {
@@ -400,7 +399,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31246,	-- Attack on Mistfall Village (Whitepetal Lake)
 					},
 					["qg"] = 59336,	-- Mayor Shiyo
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30290, {	-- Stonebound Killers
 					["sourceQuests"] = {
@@ -408,7 +407,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31246,	-- Attack on Mistfall Village (Whitepetal Lake)
 					},
 					["qg"] = 58911,	-- Rook Stonetoe
-					["coord"] = { 35.2, 75, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 35.2, 75.0, VALE_OF_ETERNAL_BLOSSOMS },
 				})),
 				RemovedWithSOO(q(30285, {	-- Wu Kao Scouting Reports
 					["sourceQuests"] = {
@@ -421,7 +420,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- 0/3 Wu Kao Scouting Report
 							["provider"] = { "i", 86099 },	-- Wu Kao Scouting Report
-							["coord"] = { 37, 72.6, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 37.0, 72.6, VALE_OF_ETERNAL_BLOSSOMS },
 							["cr"] = 64201,	-- Shao-Tien Subjugator
 						}),
 					},
@@ -472,7 +471,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(31245, {	-- Mistfall Village (Whitepetal Lake)
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["minReputation"] = { FACTION_GOLDEN_LOTUS, HONORED },
 					["lockCriteria"] = { 1,
 						"questID", 31242,	-- Mistfall Village (The Golden Pagoda)
@@ -629,7 +628,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- 0/10 Fairlands Gazelle Meat
 							["provider"] = { "i", 79244 },	-- Fairlands Gazelle Meat
-							["coord"] = { 29.4, 55, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 29.4, 55.0, VALE_OF_ETERNAL_BLOSSOMS },
 							["cr"] = 58454,	-- Fairlands Gazelle
 						}),
 					},
@@ -641,7 +640,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31249,	-- Mistfall Village (The Golden Pagoda)
 					},
 					["qg"] = 58819,	-- Mayor Shiyo
-					["coord"] = { 35.2, 74, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 35.2, 74.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["lockCriteria"] = { 1,
 						"questID", 30194,	-- Encroaching Storm
 						"questID", 30191,	-- Steer Clear of the Beer Here
@@ -758,12 +757,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31249,	-- Mistfall Village (The Golden Pagoda)
 					},
 					["qg"] = 58819,	-- Mayor Shiyo
-					["coord"] = { 35.2, 74, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 35.2, 74.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["lockCriteria"] = { 1, "questID", 30195 },	-- Blooming Blossoms
 					["groups"] = {
 						objective(1, {	-- 0/8 Slateskin Troublemaker slain
 							["provider"] = { "n", 58673 },	-- Slateskin Troublemaker
-							["coord"] = { 37, 75.8, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 37.0, 75.8, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -774,7 +773,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31249,	-- Mistfall Village (The Golden Pagoda)
 					},
 					["qg"] = 58819,	-- Mayor Shiyo
-					["coord"] = { 35.2, 74, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 35.2, 74.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["lockCriteria"] = { 1,
 						"questID", 30194,	-- Encroaching Storm
 						"questID", 30192,	-- My Town, It's on Fire
@@ -806,7 +805,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- 0/8 Ancient Mogu Spirit slain
 							["provider"] = { "n", 58671 },	-- Ancient Mogu Spirit
-							["coord"] = { 48, 69.6, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 48.0, 69.6, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -844,19 +843,19 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				RemovedWithSOO(q(30284, {	-- A Thousand Pointy Teeth
 					["sourceQuest"] = 31131,	-- Whitepetal Lake
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["lockCriteria"] = { 1, "questID", 30342 },	-- Fiery Tongue, Fragile Feet
 					["groups"] = {
 						objective(1, {	-- 0/9 Knifetooth Swarmer slain
 							["provider"] = { "n", 59404 },	-- Knifetooth Swarmer
-							["coord"] = { 41.2, 48, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 41.2, 48.0, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
 				RemovedWithSOO(q(30338, {	-- A Weighty Task
 					["sourceQuest"] = 31131,	-- Whitepetal Lake
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["lockCriteria"] = { 1,
 						"questID", 30265,	-- Sparkle in the Eye
 						"questID", 30291,	-- Stunning Display
@@ -878,12 +877,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				RemovedWithSOO(q(30342, {	-- Fiery Tongue, Fragile Feet
 					["sourceQuest"] = 31131,	-- Whitepetal Lake
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["lockCriteria"] = { 1, "questID", 30284 },	-- A Thousand Pointy Teeth
 					["groups"] = {
 						objective(1, {	-- 0/6 Stillwater Crocolisk slain
 							["provider"] = { "n", 58455 },	-- Stillwater Crocolisk
-							["coord"] = { 39, 50.8, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 39.0, 50.8, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -905,7 +904,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				RemovedWithSOO(q(30265, {	-- Sparkle in the Eye
 					["sourceQuest"] = 31131,	-- Whitepetal Lake
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["lockCriteria"] = { 1,
 						"questID", 30338,	-- A Weighty Task
 						"questID", 30291,	-- Stunning Display
@@ -940,7 +939,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				RemovedWithSOO(q(30291, {	-- Stunning Display
 					["sourceQuest"] = 31131,	-- Whitepetal Lake
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["lockCriteria"] = { 1,
 						"questID", 30338,	-- A Weighty Task
 						"questID", 30265,	-- Sparkle in the Eye
@@ -948,7 +947,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- 0/8 Stunned Whitepetal Carp
 							["provider"] = { "i", 84656 },	-- Stunned Whitepetal Carp
-							["coord"] = { 42.5, 46, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 42.5, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 							["cr"] = 62984,	-- Stunned Whitepetal Carp
 						}),
 					},
@@ -1052,7 +1051,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						30341,	-- Under Watchful Eyes
 					},
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["minReputation"] = { FACTION_GOLDEN_LOTUS, HONORED },
 					["lockCriteria"] = { 1,
 						"questID", 30385,	-- Setting Sun Garrison
@@ -1087,13 +1086,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(31297, {	-- Setting Sun Garrison
 					["qg"] = 59337,	-- Sun Tenderheart
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["minReputation"] = { FACTION_GOLDEN_LOTUS, HONORED },
 					["lockCriteria"] = { 1,
 						"questID", 30385,	-- Setting Sun Garrison
 						"questID", 31247,	-- Setting Sun Garrison
 						"questID", 31250,	-- Setting Sun Garrison
 					},
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30244, {	-- Along the Serpent's Spine
 					["sourceQuests"] = {
@@ -1167,7 +1166,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["provider"] = { "n", 63972 },	-- Krik'thik Hiveling
 							["coords"] = {
 								{ 67.4, 14.4, DREAD_WASTES },
-								{ 81, 91.6, TOWNLONG_STEPPES },
+								{ 81.0, 91.6, TOWNLONG_STEPPES },
 							},
 						}),
 						objective(3, {	-- 0/3 Krik'thik War Wagon slain
@@ -1193,14 +1192,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						"questID", 30243,	-- Mantid Under Fire
 					},
 					["groups"] = {
-						objective(1, {	-- 0/3 Shado-Pan Scout information recieved
+						objective(1, {	-- 0/3 Shado-Pan Scout information received
 							["provider"] = { "n", 58930 },	-- Shado-Pan Scout
 							["coords"] = {
-								{ 17, 47, VALE_OF_ETERNAL_BLOSSOMS },
+								{ 17.0, 47.0, VALE_OF_ETERNAL_BLOSSOMS },
 								{ 16.0, 32.2, VALE_OF_ETERNAL_BLOSSOMS },
 								{ 8.8, 37.8, VALE_OF_ETERNAL_BLOSSOMS },
-								{ 11, 43.2, VALE_OF_ETERNAL_BLOSSOMS },
-								{ 13, 38.6, VALE_OF_ETERNAL_BLOSSOMS },
+								{ 11.0, 43.2, VALE_OF_ETERNAL_BLOSSOMS },
+								{ 13.0, 38.6, VALE_OF_ETERNAL_BLOSSOMS },
 							},
 						}),
 					},
@@ -1225,7 +1224,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["provider"] = { "n", 63972 },	-- Krik'thik Hiveling
 							["coords"] = {
 								{ 67.4, 14.4, DREAD_WASTES },
-								{ 81, 91.6, TOWNLONG_STEPPES },
+								{ 81.0, 91.6, TOWNLONG_STEPPES },
 							},
 						}),
 					},
@@ -1249,7 +1248,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								{ "n", 58927 },	-- Shao-Tien Fist
 								{ "n", 58928 },	-- Shao-Tien Antiquator
 							},
-							["coord"] = { 14, 35.2, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 14.0, 35.2, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				})),
@@ -1330,7 +1329,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- 0/20 Shado-Pan Trainees defeated
 							["provider"] = { "n", 58992 },	-- Shado-Pan Trainee
-							["coord"] = { 19, 72.4, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 19.0, 72.4, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				}),
@@ -1429,16 +1428,16 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			n(QUESTS, sharedData({ ["isDaily"] = true, ["maxReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED }, }, {	-- Daily Quests (Unsorted)
 				RemovedWithSOO(q(30283, {	-- A Smashing Impression
 					["qg"] = 58469,	-- Ren Firetongue
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30281, {	-- The Silent Approach
 					["qg"] = 58470,	-- He Softfoot
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30482, {	-- The Soul-Gatherer
 					["sourceQuest"] = 30281,	-- The Silent Approach
 					["qg"] = 58470,	-- He Softfoot
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},
@@ -1452,30 +1451,30 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(30226, {	-- Blood on the Rise
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30282, {	-- Burning Away the Filth
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30481, {	-- Carved in Stone
 					["qg"] = 59333,	-- Rook Stonetoe
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30233, {	-- Cracklefang
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},
 				})),
 				RemovedWithSOO(q(31244, {	-- Guo-Lai Encampment
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 				})),
 				RemovedWithSOO(q(31240, {	-- Guo-Lai Infestation
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 				})),
 				RemovedWithSOO(q(30304, {	-- Hard as a Rock
 					["qg"] = 58504,	-- Kun Autumnlight
@@ -1483,11 +1482,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(30305, {	-- He Knows What He's Doing
 					["qg"] = 59333,	-- Rook Stonetoe
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30200, {	-- In Ashen Webs
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30293, {	-- In Enemy Hands
 					["qg"] = 58471,	-- Kun Autumnlight
@@ -1495,19 +1494,19 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(31295, {	-- Mogu within the Ruins of Guo-Lai
 					["qg"] = 59338,	-- Che Wildwalker
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30299, {	-- No Stone Unturned
 					["qg"] = 59334,	-- Sun Tenderheart
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30301, {	-- Offering a Warm Welcome
 					["qg"] = 59332,	-- Leven Dawnblade
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30298, {	-- Painting the Ruins Red
 					["qg"] = 59332,	-- Leven Dawnblade
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30292, {	-- Rude Awakenings
 					["qg"] = 58471,	-- Kun Autumnlight
@@ -1527,7 +1526,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(30225, {	-- The Ashweb Matriarch
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},
@@ -1535,7 +1534,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				q(30277, {	-- The Crumbling Hall
 					-- #if MOP
 					["qg"] = 58503,	-- Anji Autumnlight
-					["coord"] = { 34, 38.2, VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS },
+					["coord"] = { 34.0, 38.2, VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS },
 					-- #else
 					["qg"] = 58919,	-- Anji Autumnlight
 					["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
@@ -1565,14 +1564,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				RemovedWithSOO(q(30302, {	-- The Imperion Threat
 					["qg"] = 59332,	-- Leven Dawnblade
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},
 				})),
 				RemovedWithSOO(q(30300, {	-- The Key to Success
 					["qg"] = 59334,	-- Sun Tenderheart
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(31248, {	-- The Ruins of Guo-Lai
 					["qg"] = 58408,	-- Leven Dawnblade
@@ -1586,16 +1585,16 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						30235,	-- Quid Pro Quo
 					},
 					["qg"] = 59338,	-- Che Wildwalker
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(31296, {	-- The Ruins of Guo-Lai
 					["qg"] = 59337,	-- Sun Tenderheart
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				q(30280, {	-- The Thunder Below
 					-- #if MOP
 					["qg"] = 58503,	-- Anji Autumnlight
-					["coord"] = { 34, 38.2, VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS },
+					["coord"] = { 34.0, 38.2, VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS },
 					-- #else
 					["qg"] = 58919,	-- Anji Autumnlight
 					["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
@@ -1603,18 +1602,18 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				RemovedWithSOO(q(30228, {	-- Troubling the Troublemakers
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30234, {	-- Vicejaw
 					["qg"] = 59343,	-- Ren Firetongue
-					["coord"] = { 42.4, 46, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 42.4, 46.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},
 				})),
 				RemovedWithSOO(q(30227, {	-- Wulon, the Granite Sentinel
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},
@@ -1639,7 +1638,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				RemovedWithSOO(q(30642, {	-- Battle Axe of the Thunder King
 					["sourceQuest"] = 30641,	-- Battle Helm of the Thunder King
 					["qg"] = 59905,	-- Zhi the Harmonious
-					["coord"] = { 57.25, 43, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 57.25, 43.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["minReputation"] = { FACTION_GOLDEN_LOTUS, REVERED },
 					["lvl"] = lvlsquish(90, 90, 30),
 					["groups"] = {
@@ -1669,7 +1668,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				RemovedWithSOO(q(30641, {	-- Battle Helm of the Thunder King
 					["sourceQuest"] = 30640,	-- Battle Spear of the Thunder King
 					["qg"] = 59905,	-- Zhi the Harmonious
-					["coord"] = { 57.25, 43, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 57.25, 43.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["minReputation"] = { FACTION_GOLDEN_LOTUS, REVERED },
 					["lvl"] = lvlsquish(90, 90, 30),
 					["groups"] = {
@@ -1689,7 +1688,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				RemovedWithSOO(q(30640, {	-- Battle Spear of the Thunder King
 					["sourceQuest"] = 30639,	-- The Secrets of Guo-Lai
 					["qg"] = 59905,	-- Zhi the Harmonious
-					["coord"] = { 57.25, 43, VALE_OF_ETERNAL_BLOSSOMS },
+					["coord"] = { 57.25, 43.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["minReputation"] = { FACTION_GOLDEN_LOTUS, REVERED },
 					["lvl"] = lvlsquish(90, 90, 30),
 					["groups"] = {
@@ -1758,7 +1757,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- Catch up with He Softfoot
 							["provider"] = { "n", 64647 },	-- He Softfoot
-							["coord"] = { 42, 53.4, VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS },
+							["coord"] = { 42.0, 53.4, VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS },
 						}),
 						objective(2, {	-- Uncover the mogu plan in the Hall of Statues
 							["provider"] = { "n", 64663 },	-- Zhao-Jin the Bloodletter <Shao-Tien Warlord>
@@ -1821,7 +1820,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					n(63695, {	-- Baolai the Immolator <Shao-Tien Imperion>
 						["coords"] = {
 							-- #if MOP_BEFORE_SOO
-							{ 37, 81, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 37.0, 81.0, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #else
 							{ 28.7, 43.3, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #endif
@@ -1845,7 +1844,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					n(62881, {	-- Gaohun the Soul-Severer <Shao-Tien Imperion>
 						["coords"] = {
 							-- #if MOP_BEFORE_SOO
-							{ 39, 74.7, VALE_OF_ETERNAL_BLOSSOMS },	-- Pre-5.4
+							{ 39.0, 74.7, VALE_OF_ETERNAL_BLOSSOMS },	-- Pre-5.4
 							-- #else
 							{ 53.1, 59.3, VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS },
 							-- #endif
@@ -1857,7 +1856,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					n(63101, {	-- General Temuja <The Soul-Slaver>
 						["coords"] = {
 							-- #if MOP_BEFORE_SOO
-							{ 68, 55, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 68.0, 55.0, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #else
 							{ 26.3, 51.1, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 30.6, 58.2, VALE_OF_ETERNAL_BLOSSOMS },
@@ -1906,7 +1905,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					n(63240, {	-- Shadowmaster Sydow <The Soul-Gatherer>
 						["coords"] = {
 							-- #if MOP_BEFORE_SOO
-							{ 40, 48, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 40.0, 48.0, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #else
 							{ 30.5, 78.4, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #endif

@@ -14,6 +14,7 @@ local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 
 -- App
+local GetRawFieldContainer = app.GetRawFieldContainer
 local SearchForObject = app.SearchForObject
 local CreateClassInstance = app.CreateClassInstance
 
@@ -74,7 +75,7 @@ local function GetAutomaticHeaderData(id, type)
 		return altFunc(id);
 	end
 	local typeID = HeaderTypeAbbreviations[type] or type;
-	local obj = SearchForObject(typeID, id, "key") or CreateClassInstance(typeID,id)
+	local obj = (GetRawFieldContainer(typeID) and SearchForObject(typeID, id, "key")) or CreateClassInstance(typeID,id)
 	if obj then
 		-- app.PrintDebug("GetAutomaticHeaderData", id, typeID, obj.text, obj.key, obj[obj.key]);
 		-- app.PrintDebug("Automatic Header",obj.name or obj.link)
@@ -104,15 +105,18 @@ end
 
 -- Automatic Type Header
 do
-	local KEY = "headerID"
-	app.CreateHeader = app.CreateClass("AutoHeader", KEY, {
+	app.CreateHeader = app.CreateClass("AutoHeader", "autoHeaderID", {
 		IsClassIsolated = true,
 		headerCode = function(t)
 			if t.type then
-				return t.type..t.headerID;
+				return t.type..t.autoHeaderID;
 			else
-				return t.headerID;
+				return t.autoHeaderID;
 			end
+		end,
+		headerID = function(t)
+			-- CRIEVE NOTE: This is because there's mini list logic that sorts by this.
+			return t.autoHeaderID;
 		end,
 		name = function(t)
 			return cache.GetCachedField(t, "name", CacheInfo);
@@ -125,15 +129,7 @@ do
 		end,
 	},
 	"WithQuest", {
-		trackable = function(t)
-			-- raw repeatable quests can't really be tracked since they immediately unflag
-			return not rawget(t, "repeatable") and t.repeatable
-		end,
-		saved = function(t)
-			return IsQuestFlaggedCompleted(t.questID)
-		end,
-		repeatable = function(t)
-			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
-		end,
+		ImportFrom = "Quest",
+		ImportFields = { "repeatable", "trackable", "saved" },
 	}, (function(t) return t.questID end))
 end

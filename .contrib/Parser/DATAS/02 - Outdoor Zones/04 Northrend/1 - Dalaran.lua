@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	emot(1, i(44711, {	-- Argent Crusade Commendation Badge
 		["timeline"] = { DELETED_6_0_2 },
@@ -1176,8 +1177,10 @@ root(ROOTS.Zones, {
 									{ "not", "headerID", BACK, WAIST, WRIST, FEET },				-- Exclude off-piece headers
 									{ "not", "filterID", NECK_F, FINGER_F, RELICS_F, TRINKET_F },	-- Exclude off-piece filters
 									{ "pop" },						-- Flatten everything out
-									{ "exclude", "itemID", 45983 },	-- Exclude Furious Gladiator's Tabard
-									{ "exclude", "itemID", 42214 },	-- Exclude Savage Gladiator's Waraxe
+									{ "exclude", "itemID",
+										45983,	-- Exclude Furious Gladiator's Tabard
+										42214,	-- Exclude Savage Gladiator's Waraxe
+									},
 									{ "exclude", "u", 1 },			-- Exclude items that were never available to begin with
 								},
 								-- #endif
@@ -1579,6 +1582,20 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_HERBALISM,
 						}),
 					}),
+					prof(INSCRIPTION, {
+						n(28702, {	-- Professor Pallin <Inscription Trainer>
+							["coord"] = { 42.6, 37.8, NORTHREND_DALARAN },
+							["groups"] = {
+								n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+									r(1263575),	-- Dalaran Post
+									r(1263570),	-- Dalaran Scholar's Bookcase
+									r(1263564),	-- Dalaran Street Sign
+									r(1263574),	-- Kirin Tor Crate
+									r(1263562),	-- Silver Dalaran Bench
+								})),
+							},
+						}),
+					}),
 					prof(JEWELCRAFTING, {
 						n(28721, {	-- Tiffany Cartier <Jewelcrafting Supplies>
 							["coord"] = { 40.4, 34.6, NORTHREND_DALARAN },
@@ -1600,6 +1617,12 @@ root(ROOTS.Zones, {
 						n(28698, {	-- Jedidiah Handers <Mining Trainer>
 							["coord"] = { 41.2, 27.0, NORTHREND_DALARAN },
 							["groups"] = WRATH_MINING,
+						}),
+					}),
+					prof(SKINNING, {
+						n(28696, {	-- Derik Marks <Grand Master Skinning Trainer>
+							["coord"] = { 35.2, 28.4, NORTHREND_DALARAN },
+							["groups"] = WRATH_SKINNING,
 						}),
 					}),
 					prof(TAILORING, {
@@ -1722,6 +1745,9 @@ root(ROOTS.Zones, {
 								["provider"] = { "o", 192824 },	-- Half Full Glass of Wine
 							}),
 							-- #endif
+							i(258145, {	-- Eversong Party Platter (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 							i(44113),	-- Small Spice Bag
 							currency(81),	-- Epicurean's Award
 						},
@@ -2495,10 +2521,10 @@ root(ROOTS.Zones, {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
-					q(39209, {	-- Sholazar Basin -- Adventure Guide
+					q(39209, {	-- Sholazar Basin	-- Adventure Guide
 						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
-					q(39212, {	-- Sholazar Basin -- Adventure Guide
+					q(39212, {	-- Sholazar Basin	-- Adventure Guide
 						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(13830, {	-- The Ghostfish
@@ -2688,7 +2714,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_THREE, q(14103, {	-- Titanium Powder
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["cost"] = {{ "i", 46849, 10 }},	-- Titanium Powder
+						["cost"] = { { "i", 46849, 10 } },	-- Titanium Powder
 						["requireSkill"] = JEWELCRAFTING,
 						["repeatable"] = true,
 						["groups"] = {
@@ -2847,7 +2873,7 @@ root(ROOTS.Zones, {
 							i(42436),	-- Chocolate Celebration Cake
 							i(42431),	-- Dalaran Brownie
 							i(42430),	-- Dalaran Doughnut
-							i(74921, {["timeline"] = { ADDED_4_3_0 }}), -- Darkmoon Doughnut
+							i(74921, {["timeline"] = { ADDED_4_3_0 }}),	-- Darkmoon Doughnut
 							i(42438),	-- Lovely Cake
 							i(42429),	-- Red Velvet Cupcake
 						},
@@ -3386,35 +3412,35 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.0, 28.9, NORTHREND_DALARAN },
 						["groups"] = {
 							applyclassicphase(WRATH_PHASE_THREE, i(47556, {	-- Crusader Orb
-								["cost"] = { { "i", 43102, 6 }, },	-- 6x Frozen Orb
+								["cost"] = { { "i", 43102, 6 } },	-- 6x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35623, {	-- Eternal Air
-								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
+								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35624, {	-- Eternal Earth
-								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
+								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(36860, {	-- Eternal Fire
-								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
+								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35625, {	-- Eternal Life
-								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
+								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35627, {	-- Eternal Shadow
-								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
+								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35622, {	-- Eternal Water
-								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
+								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(36908, {	-- Frost Lotus
-								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
+								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							i(54798, {	-- Pattern: Frosty Flying Carpet
-								["cost"] = { { "i", 43102, 6 }, },	-- 6x Frozen Orb
+								["cost"] = { { "i", 43102, 6 } },	-- 6x Frozen Orb
 								["timeline"] = { ADDED_3_3_3 },
 							}),
 							applyclassicphase(WRATH_PHASE_TWO, i(45087, {	-- Runed Orb
-								["cost"] = { { "i", 43102, 4 }, },	-- 4x Frozen Orb
+								["cost"] = { { "i", 43102, 4 } },	-- 4x Frozen Orb
 							})),
 						},
 					})),
@@ -3593,7 +3619,7 @@ root(ROOTS.Zones, {
 								["f"] = MISC,
 								-- #ENDIF
 								["timeline"] = { REMOVED_7_3_5 },
-								["cost"] = {{ "g", 10000000 }},	-- 1000g
+								["cost"] = { { "g", 10000000 } },	-- 1000g
 							}),
 						},
 					}),
@@ -3891,19 +3917,23 @@ root(ROOTS.Zones, {
 							}),
 							i(44230, {	-- Wooly Mammoth (A) (MOUNT!)
 								["races"] = ALLIANCE_ONLY,
-								-- #if AFTER CATA
-								["cost"] = 100000000,	-- 10,000g
-								-- #else
-								["cost"] = { { "c", 101, 200 } },	-- Emblem of Heroism
-								-- #endif
+								["cost"] = {
+									-- #if AFTER CATA
+									{ "g", 100000000 },	-- 10,000g
+									-- #else
+									{ "c", 101, 200 },	-- 200x Emblem of Heroism
+									-- #endif
+								},
 							}),
 							i(44231, {	-- Wooly Mammoth (H) (MOUNT!)
 								["races"] = HORDE_ONLY,
-								-- #if AFTER CATA
-								["cost"] = 100000000,	-- 10,000g
-								-- #else
-								["cost"] = { { "c", 101, 200 } },	-- Emblem of Heroism
-								-- #endif
+								["cost"] = {
+									-- #if AFTER CATA
+									{ "g", 100000000 },	-- 10,000g
+									-- #else
+									{ "c", 101, 200 },	-- 200x Emblem of Heroism
+									-- #endif
+								},
 							}),
 						},
 					}),
@@ -4127,86 +4157,86 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.4, 41.1, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44483, {	-- Formula: Enchant 2H Weapon - Massacre (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44490, {	-- Formula: Enchant Boots - Greater Assault (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44491, {	-- Formula: Enchant Boots - Tuskarr's Vitality (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44484, {	-- Formula: Enchant Bracer - Greater Assault (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44944, {	-- Formula: Enchant Bracer - Major Stamina (RECIPE!)
-								["cost"] = { { "i", 34057, 5 }, },	-- 5x Abyss Crystal
+								["cost"] = { { "i", 34057, 5 } },	-- 5x Abyss Crystal
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44498, {	-- Formula: Enchant Bracer - Superior Spellpower (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(37340, {	-- Formula: Enchant Chest - Exceptional Armor / WOTLK: ormula: Enchant Chest - Exceptional Resilience (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44489, {	-- Formula: Enchant Chest - Powerful Stats (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44472, {	-- Formula: Enchant Cloak - Greater Speed (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44471, {	-- Formula: Enchant Cloak - Mighty Stamina (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(37349, {	-- Formula: Enchant Cloak - Shadow Armor (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(37347, {	-- Formula: Enchant Cloak - Superior Dodge / WOTLK: ormula: Enchant Cloak - Titanweave (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44488, {	-- Formula: Enchant Cloak - Wisdom (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44485, {	-- Formula: Enchant Gloves - Armsman (RECIPE!)
-								["cost"] = { { "i", 34052, 4 }, },	-- 4x Dream Shard
+								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(45059, {	-- Formula: Enchant Staff - Greater Spellpower (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44496, {	-- Formula: Enchant Weapon - Accuracy (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44492, {	-- Formula: Enchant Weapon - Berserking (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44495, {	-- Formula: Enchant Weapon - Black Magic (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(37339, {	-- Formula: Enchant Weapon - Giant Slayer (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 							}),
 							i(37344, {	-- Formula: Enchant Weapon - Icebreaker (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 							}),
 							i(44494, {	-- Formula: Enchant Weapon - Lifeward (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 							}),
 							i(44487, {	-- Formula: Enchant Weapon - Mighty Spellpower (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(44473, {	-- Formula: Enchant Weapon - Scourgebane (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 							}),
 							i(44486, {	-- Formula: Enchant Weapon - Superior Potency (RECIPE!)
-								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
+								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 						},

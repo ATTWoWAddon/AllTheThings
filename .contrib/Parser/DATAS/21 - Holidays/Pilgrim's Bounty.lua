@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 PILGRIMS_BOUNTY_HEADER = createHeader({
 	readable = "Pilgrim's Bounty",
 	constant = "PILGRIMS_BOUNTY_HEADER",
@@ -10,6 +11,7 @@ PILGRIMS_BOUNTY_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(14981),
 	},
 });
+
 local ALLIANCE_PILGRIM_MAPS = {
 	DARNASSUS,
 	TELDRASSIL,
@@ -31,6 +33,7 @@ local HORDE_PILGRIM_MAPS = {
 	TIRISFAL_GLADES,
 };
 local ALL_PILGIM_MAPS = appendGroups(ALLIANCE_PILGRIM_MAPS, appendGroups(HORDE_PILGRIM_MAPS, {}));
+
 root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER, {
 	["timeline"] = { ADDED_3_1_0 },
 	["groups"] = {
@@ -271,7 +274,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14048, {	-- Can't Get Enough Turkey (Alliance)
 					["qg"] = 34708,	-- Caitrin Ironkettle
-					["coord"] = { 60, 34.2, DUN_MOROGH },
+					["coord"] = { 60.0, 34.2, DUN_MOROGH },
 					["cost"] = { { "i", 44838, 20 } },	-- Slow-Roasted Turkey
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -319,7 +322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14051, {	-- Don't Forget The Stuffing! (Alliance)
 					["qg"] = 34708,	-- Caitrin Ironkettle
-					["coord"] = { 60, 34.2, DUN_MOROGH },
+					["coord"] = { 60.0, 34.2, DUN_MOROGH },
 					["cost"] = { { "i", 44837, 20 } },	-- Spice Bread Stuffing
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -358,6 +361,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						19173,	-- Night Elf Commoner
 						20102,	-- Goblin Commoner
 						-- #if AFTER TWW
+						220870,	-- Holiday Enthusiast
 						220307,	-- Holiday Enthusiast
 						-- #endif
 					},
@@ -390,6 +394,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						19177,	-- Troll Commoner
 						19178,	-- Forsaken Commoner
 						20102,	-- Goblin Commoner
+						-- #if AFTER TWW
+						220870,	-- Holiday Enthusiast
+						220307,	-- Holiday Enthusiast
+						-- #endif
 					},
 					["maps"] = {
 						NORTHERN_BARRENS,
@@ -404,6 +412,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						THE_STORM_PEAKS,
 						NORTHREND_DALARAN,
 						THE_CAPE_OF_STRANGLETHORN,
+						-- #if AFTER TWW
+						DORNOGAL,
+						-- #endif
 					},
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
@@ -476,7 +487,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14058, {	-- She Says Potato (Horde)
 					["qg"] = 34768,	-- William Mullins
-					["coord"] = { 65.8, 13.2, UNDERCITY },
+					["coords"] = {
+						{ 61.6, 68.1, TIRISFAL_GLADES },
+						{ 65.8, 13.2, UNDERCITY },
+					},
 					["cost"] = { { "i", 44839, 20 } },	-- Candied Sweet Potato
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -485,7 +499,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14035, {	-- Slow-roasted Turkey (Alliance)
 					["sourceQuest"] = 14033,	-- Candied Sweet Potatoes (Alliance)
 					["qg"] = 34675,	-- Gregory Tabor
-					["coord"] = { 34, 51.4, ELWYNN_FOREST },
+					["coord"] = { 34.0, 51.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -518,7 +532,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14023, {	-- Spice Bread Stuffing (Alliance)
 					["qg"] = 34675,	-- Gregory Tabor
-					["coord"] = { 34, 51.4, ELWYNN_FOREST },
+					["coord"] = { 34.0, 51.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -578,7 +592,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14059, {	-- We're Out of Cranberry Chutney Again? (Horde)
 					["qg"] = 34712,	-- Roberta Carter
-					["coord"] = { 64.0, 9.6, UNDERCITY },
+					["coords"] = {
+						{ 61.3, 67.0, TIRISFAL_GLADES },
+						{ 64.0, 9.6, UNDERCITY },
+					},
 					["cost"] = { { "i", 44840, 20 } },	-- Cranberry Chutney
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -632,6 +649,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						}),
 						i(116400, {	-- Silver-Plated Turkey Shooter (TOY!)
 							["timeline"] = { ADDED_6_0_2 },
+						}),
+						i(248716, {	-- Green Bountiful Backpack
+							["timeline"] = { ADDED_11_2_5 },
+						}),
+						i(248717, {	-- Orange Bountiful Backpack
+							["timeline"] = { ADDED_11_2_5 },
+						}),
+						i(248718, {	-- Purple Bountiful Backpack
+							["timeline"] = { ADDED_11_2_5 },
+						}),
+						i(248719, {	-- White Bountiful Backpack
+							["timeline"] = { ADDED_11_2_5 },
 						}),
 					},
 				}),

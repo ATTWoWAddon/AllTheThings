@@ -10,6 +10,8 @@ local wipe, setmetatable, rawget, select,pairs
 -- Module
 
 -- App
+-- Battle Pets are handled in Mounts & Battle Pets for Classic/TBC
+if app.GameBuildVersion < 30000 then return; end
 
 -- BattlePet Lib / Species Lib
 local KEY, CACHE = "speciesID", "BattlePets"
@@ -105,7 +107,7 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 		-- character collected
 		if saved then
 			if not t.collected then
-				app.SetThingCollected(KEY, t[KEY], true, true)
+				app.SetThingCollected(KEY, t[KEY], not PerCharacterSpecies[t[KEY]], true)
 			end
 			return 1
 		end
@@ -143,7 +145,7 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 },
 "WithItem", {
 	ImportFrom = "Item",
-	ImportFields = app.IsRetail and { "name", "link", "tsm", "costCollectibles", "AsyncRefreshFunc" } or { "name", "link", "tsm" },
+	ImportFields = { "name", "link", "tsm", "costCollectibles", "AsyncRefreshFunc" }
 },
 function(t) return t.itemID end);
 
@@ -226,7 +228,7 @@ app.AddEventRegistration("NEW_PET_ADDED", function(petID, speciesID)
 		CollectedSpeciesHelper[speciesID] = nil
 		-- if the CollectedSpeciesHelper is exactly 1, then this is newly collected
 		if CollectedSpeciesHelper[speciesID] == 1 then
-			app.SetThingCollected(KEY, speciesID, true, true)
+			app.SetThingCollected(KEY, speciesID, not PerCharacterSpecies[speciesID], true)
 		end
 	end
 end)
@@ -240,7 +242,7 @@ app.AddEventRegistration("PET_JOURNAL_PET_DELETED", function(petID, speciesID)
 		-- if the CollectedSpeciesHelper is exactly 0, then this is now removed
 		if CollectedSpeciesHelper[speciesID] == 0 then
 			-- app.PrintDebug("Pet Missing",speciesID);
-			app.SetThingCollected(KEY, speciesID, true)
+			app.SetThingCollected(KEY, speciesID, not PerCharacterSpecies[speciesID])
 		end
 	end
 end)
@@ -278,30 +280,3 @@ if C_PetJournal_GetPetStats then
 		});
 	end);
 end
-
-local C_PetBattles_GetAbilityInfoByID
-	= C_PetBattles.GetAbilityInfoByID
-if C_PetBattles_GetAbilityInfoByID then
-	app.CreatePetAbility = app.CreateClass("PetAbility", "petAbilityID", {
-		["text"] = function(t)
-			return select(2, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
-		end,
-		["icon"] = function(t)
-			return select(3, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
-		end,
-		["description"] = function(t)
-			return select(5, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
-		end,
-	});
-else
-	app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
-end
-
-app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
-	["text"] = function(t)
-		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
-	end,
-	["icon"] = function(t)
-		return app.asset("Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID]);
-	end,
-})

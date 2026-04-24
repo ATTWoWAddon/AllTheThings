@@ -3,7 +3,7 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, {
-	header(HEADERS.Spell, 243025, {	-- Riddler's Mind-Worm
+	header(HEADERS.Item, 147835, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Riddler's Mind-Worm
 		["description"] = "***'Show All Trackable Things' is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
 		["modelScale"] = .7,
 		["displayID"] = 74314,
@@ -13,7 +13,6 @@ root(ROOTS.Secrets, {
 				["questID"] = 45470,
 				["coord"] = { 48.8, 42.1, LEGION_DALARAN },
 				["description"] = "|cFFFFFFFFStep 1:|r We will begin in |cFFFFD700Dalaran|r. Head to the |cFFFFD700Legerdemain Lounge|r at |cFFFFFFFF48.80, 42.10|r. |cFFFFD700Page 9|r will be on the third shelf of the bookcase. Click this to continue. The page reads...\n\n|cFFFFFFFF...of sea, spirit and self...|r",
-				-- ["isWeekly"] = true,	-- This has been saved for quite a while... don't think it's weekly
 			}),
 			o(209270, {	-- Step 2: Page 78
 				["model"] = 305393,
@@ -81,10 +80,17 @@ root(ROOTS.Secrets, {
 				["sourceQuest"] = 47213,	-- Step 8: Page 5555
 				["description"] = "|cFFFFFFFFStep 9:|r This step will take us to |cFFFFD700Westfall|r. Head to |cFFFFFFFF30.53, 27.56|r. |cFFFFD700Gift of the Mind-Seekers|r will be on the ground here in a broken boat. Click this to obtain your mount. Congratulations on getting the |cFFFFD700Riddler's Mind-Worm|r.\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving this puzzle.",
 				["isWeekly"] = true,
-				["groups"] = {
-					i(147835),	-- Riddler's Mind Worm (MOUNT!)
-				},
+				["groups"] = { i(147835) },	-- Riddler's Mind Worm (MOUNT!)
 			}),
 		},
-	}),
+	})),
 });
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
+	header(HEADERS.Item, 147835, {
+		["timeline"] = { ADDED_7_2_0 },
+		["groups"] = {
+			q(47215),	-- Tracking Quest (Looted Riddler's Mind Worm)
+		},
+	}),
+}));

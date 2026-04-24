@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 ExportDB.OnTooltipDB.ForAlteracValley = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
@@ -17,7 +18,9 @@ ExportDB.OnTooltipDB.ForAlteracValley = [[~function(t, tooltipInfo)
 		end
 	end
 end]];
+
 local REMOVED_WITH_ANNIVERSARY_15 = REMOVED_8_2_5;	-- TODO: potentially all of these things added back?
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(ALTERAC_VALLEY, {
 		["lore"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",
@@ -311,7 +314,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(6825, {	-- Call of Air - Guse's Fleet
 					["qg"] = 13179,	-- Wing Commander Guse
-					["coord"] = { 50, 32, ALTERAC_VALLEY },
+					["coord"] = { 50.0, 32.0, ALTERAC_VALLEY },
 					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17326, 1 } },	-- Stormpike Soldier's Flesh
 					["races"] = HORDE_ONLY,
@@ -1104,6 +1107,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(1, i(19092)),	-- Stormpike Mail Girgle
 						moh(1, i(19091)),	-- Stormpike Plate Girdle
 						moh(1, i(19325)),	-- Don Julio's Band
+						moh(1, i(246424, { ["timeline"] = { ADDED_11_2_7 } })),	-- Square Stormpike Table (DECOR!)
 						applyclassicphase(PHASE_FIVE, moh(1, i(21563))),	-- Don Rodrigo's Band
 						i(19320, {	-- Gnoll Skin Bandolier
 							["timeline"] = { REMOVED_4_0_1 },
@@ -1188,7 +1192,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				n(154478, {	-- Prospector Stonehewer
-				--	["coord"] = { , ALTERAC_VALLEY },
+					-- ["coord"] = { , ALTERAC_VALLEY },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = " известных рецептов!",
 		-- TODO: ko = "",
 		cn = " 已知配方！",
-		-- TODO: tw = "",
+		-- tw = " 已知配方！",
 	},
 })

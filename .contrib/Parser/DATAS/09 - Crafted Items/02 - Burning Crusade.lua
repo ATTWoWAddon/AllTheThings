@@ -7,17 +7,37 @@ local function ClassicCost(cost)
 	return cost
 	-- #ENDIF
 end
-local MAPS_FIELD = "maps"
--- #if RETAIL_STYLE_FILL_ENABLED
--- Filling allows users to 'chose' whether the Items dropped from Objects should show up in lists and potentially be Filled
-MAPS_FIELD = "maps_disp"
--- #ENDIF
 root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
 	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
 	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		o_repeated({	-- Olemba Lumber
+			["maps"] = {
+				BLADES_EDGE_MOUNTAINS,
+				ISLE_OF_QUELDANAS,
+				NAGRAND,
+				TEROKKAR_FOREST,
+				ZANGARMARSH,
+				-- SMV/Netherstorm have barely any nodes
+			},
+			["groups"] = {
+				-- Objects
+				o(571070),	-- [Terokkar Forest/Shattrah/Nagrand]
+				o(571071),	-- [Zangarmarsh]
+				o(571213),	-- [Blade's Edge Mountains]
+				o(571345),	-- [Netherstorm]
+				o(572094),	-- [Nagrand]
+				o(572129),	-- [Shadowmoon Valley]
+				o(572869),	-- [Eversong Woods/Ghostlands]
+				o(572995),	-- [Ghostlands]
+				-- Drops
+				i(242691),	-- Olemba Lumber
+			},
+		}),
+	})),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			r(41458, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Arcane Protection
@@ -92,6 +112,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(28101),	-- Unstable Mana Potion
 			i(28100),	-- Volatile Healing Potion
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(264900, {["timeline"] = { ADDED_12_0_0 }}),	-- Arakkoan Alchemist's Bottle (DECOR!)
+			i(264899, {["timeline"] = { ADDED_12_0_0 }}),	-- Arakkoan Alchemist's Concoction (DECOR!)
+			i(264705),	-- Glazed Sin'dorei Vial (DECOR!)
+			i(264706),	-- Shadow Council Torch (DECOR!)
+			i(264709),	-- Stranglekelp Sack (DECOR!)
+		})),
 		filter(REAGENTS, {
 			i(25867),	-- Earthstorm Diamond
 			convertItem(22451, 22572, 10),	-- Primal Air / Mote of Air
@@ -139,7 +166,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(64458, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Plated Elekk Goad
 				i(64444, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Scepter of the Nathrezim
 				i(64443, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Strange Silver Paperweight
-				i(64457, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus
+				i(64457, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus (TOY!)
 			},
 		}),
 		header(HEADERS.Currency, ARCH_CURRENCY_ORC, {
@@ -413,7 +440,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Dust:
 			i(22445, {	-- Arcane Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills at ilvl 130 (unscaled).",
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills within the ilvl bracket 87-120.",
 				-- #endif
@@ -421,14 +448,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Essences:
 			i(22446, {	-- Greater Planar Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons at ilvl 130 (unscaled), except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 102-120, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(22447, {	-- Lesser Planar Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons at ilvl 130 (unscaled), except shields and off-hand frills. This gives you Greater Planar Essence which you then have to split into Lesser Planar Essence.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills. This gives you Greater Planar Essence which you then have to split into Lesser Planar Essence.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 80-98, except shields and off-hand frills.",
 				-- #endif
@@ -436,21 +463,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Shards and crystals:
 			i(22449, {	-- Large Prismatic Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear at ilvl 140 (unscaled).",
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 100-115.",
 				-- #endif
 			}),
 			i(22448, {	-- Small Prismatic Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear at ilvl 140 (unscaled). This gives you Large Prismatic Shard which you then have to split into Small Prismatic Shard by crafting. Requires skill level 35 to learn from trainer.",
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear. This gives you Large Prismatic Shard which you then have to split into Small Prismatic Shard by crafting. Requires skill level 35 to learn from trainer.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 68-97.",
 				-- #endif
 			}),
 			i(22450, {	-- Void Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear at ilvl 142 (unscaled).",
+				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear within the ilvl bracket 100-141.",
 				-- #endif
@@ -602,7 +629,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				-- #endif
 			})),
 			applyclassicphase(TBC_PHASE_FIVE, i(34357, {["timeline"] = {ADDED_2_4_0}})),	-- Hard Khorium Goggles
-			applyclassicphase(TBC_PHASE_FIVE, i(35182, { 	-- Hyper-Magnified Moon Specs
+			applyclassicphase(TBC_PHASE_FIVE, i(35182, {	-- Hyper-Magnified Moon Specs
 				["timeline"] = { ADDED_2_4_0 },
 				-- #if BEFORE 7.3.0
 				["classes"] = LEATHER_CLASSES_INTELLECT,
@@ -677,6 +704,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				-- #endif
 			})),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258193),	-- Draenei Holo-Projector Pedestal (DECOR!)
+			i(258196),	-- Draenei Transmitter (DECOR!)
+			i(258194),	-- Tempest Keep Cryo-Pod (DECOR!)
+		})),
 		filter(MISC, {
 			i(23737),	-- Adamantite Grenade
 			applyclassicphase(TBC_PHASE_TWO, i(20475, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Adamantite Arrow Maker
@@ -697,10 +729,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(35581, {["timeline"] = {ADDED_2_4_0}}),	-- Rocket Boots Xtreme Lite
 			i(23768),	-- White Smoke Flare
 			i(23821),	-- Zapthrottle Mote Extractor
-			--	Danny Donkey:	The gas clouds are sourced in the zones they are located in, and listed as sources for their respective reagents.
-			--					This works fine in TBC where gas clouds are unique per zone (Nagrand - Windy Cloud; Zangarmarsh - Swamp Gas; Netherstorm - Arcane Vortex; Shadowmoon Valley - Felmist)
-			--					For WotLK it is more complicated where Arctic Cloud, Cinder Cloud and Steam Cloud all appears in at least two zones, some shared with other gas clouds.
-			--					It also does not helps that maps/coords/description does not appears on tooltips on creatures listed as sources in classic iterations of the game, while source path on cratures is broken in retail. it is a mess.
+			-- Danny Donkey:	The gas clouds are sourced in the zones they are located in, and listed as sources for their respective reagents.
+			-- 					This works fine in TBC where gas clouds are unique per zone (Nagrand - Windy Cloud; Zangarmarsh - Swamp Gas; Netherstorm - Arcane Vortex; Shadowmoon Valley - Felmist)
+			-- 					For WotLK it is more complicated where Arctic Cloud, Cinder Cloud and Steam Cloud all appears in at least two zones, some shared with other gas clouds.
+			-- 					It also does not helps that maps/coords/description does not appears on tooltips on creatures listed as sources in classic iterations of the game, while source path on cratures is broken in retail. it is a mess.
 		}),
 		filter(MOUNTS, {
 			i(34060, {["timeline"] = {ADDED_2_3_0}}),	-- Flying Machine (MOUNT!)
@@ -760,7 +792,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	prof(FISHING, {
 		-- Fish
 		i(27422, {	-- Barbed Gill Trout
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				DEADWIND_PASS,
 				NAGRAND,
 				TEROKKAR_FOREST,
@@ -768,26 +800,29 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		i(34865, {	-- Blackfin Darter (Quest Item for Terokkar Forest fishing daily q(11666) Bait Bandits)
-			[MAPS_FIELD] = { TEROKKAR_FOREST } ,
+			["maps_disp"] = { TEROKKAR_FOREST } ,
 			["timeline"] = { ADDED_2_4_0 },
 		}),
 		i(35313, {	-- Bloated Barbed Gill Trout (Quest Item for Terokkar Forest fishing daily q(11668) Shrimpin' Ain't Easy)
-			[MAPS_FIELD] = ZANGARMARSH,
+			["maps_disp"] = ZANGARMARSH,
 			["timeline"] = { ADDED_2_4_0 },
 			["groups"] = {
 				i(34866),	-- Giant Freshwater Shrimp
 			},
 		}),
 		applyclassicphase(TBC_PHASE_FIVE, i(35286, {	-- Bloated Giant Sunfish
-			[MAPS_FIELD] = { ISLE_OF_QUELDANAS },
+			["maps_disp"] = { ISLE_OF_QUELDANAS },
 			["timeline"] = { ADDED_2_4_0 },
+			["groups"] = {
+				i(35287),	-- Luminous Bluetail
+			},
 		})),
 		applyclassicphase(TBC_PHASE_FOUR, i(33823, {	-- Bloodfin Catfish
-			[MAPS_FIELD] = { DEADWIND_PASS },
+			["maps_disp"] = { DEADWIND_PASS },
 			["timeline"] = { ADDED_2_3_0 },
 		})),
 		applyclassicphase(TBC_PHASE_FOUR, i(33824, {	-- Crescent-Tail Skullfish
-			[MAPS_FIELD] = { DEADWIND_PASS },
+			["maps_disp"] = { DEADWIND_PASS },
 			["timeline"] = { ADDED_2_3_0 },
 		})),
 		i(27513, {	-- Curious Crate
@@ -801,7 +836,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				{ "o", 182953 },	-- Sporefish School
 				{ "o", 182952 },	-- Steam Pump Floatsam
 			},
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				NAGRAND,
 				TEROKKAR_FOREST,
 				ZANGARMARSH,
@@ -818,7 +853,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				{ "o", 182953 },	-- Sporefish School
 				{ "o", 182952 },	-- Steam Pump Floatsam
 			},
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				NAGRAND,
 				TEROKKAR_FOREST,
 				ZANGARMARSH,
@@ -826,7 +861,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 		i(27435, {	-- Figluster's Mudfish
 			["provider"] = { "o", 182958 },	-- Mudfish School
-			[MAPS_FIELD] = { NAGRAND },
+			["maps_disp"] = { NAGRAND },
 		}),
 		i(27439, {	-- Furious Crawdad
 			["coords"] = {
@@ -838,7 +873,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			["provider"] = { "o", 182957 },	-- Highland Mixed School
 		}),
 		applyclassicphase(TBC_PHASE_FIVE, i(35285, {	-- Giant Sunfish
-			[MAPS_FIELD] = { ISLE_OF_QUELDANAS },
+			["maps_disp"] = { ISLE_OF_QUELDANAS },
 			["timeline"] = { ADDED_2_4_0 },
 		})),
 		i(27438, {	-- Golden Darter
@@ -847,7 +882,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				{ "o", 182957 },	-- Highland Mixed School
 				{ "o", 182956 },	-- School of Darter
 			},
-			[MAPS_FIELD] = TEROKKAR_FOREST,
+			["maps_disp"] = TEROKKAR_FOREST,
 		}),
 		i(27442, {	-- Goldenscale Vendorfish
 			["providers"] = {
@@ -860,7 +895,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				{ "o", 182953 },	-- Sporefish School
 				{ "o", 182952 },	-- Steam Pump Floatsam
 			},
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				NAGRAND,
 				TEROKKAR_FOREST,
 				ZANGARMARSH,
@@ -880,7 +915,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				{ "o", 182953 },	-- Sporefish School
 				{ "o", 182952 },	-- Steam Pump Floatsam
 			},
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				NAGRAND,
 				TEROKKAR_FOREST,
 				ZANGARMARSH,
@@ -888,7 +923,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 		i(27437, {	-- Icefin Bluefish
 			["provider"] = { "o", 182959 },	-- Bluefish School
-			[MAPS_FIELD] = { NAGRAND },
+			["maps_disp"] = { NAGRAND },
 		}),
 		i(27511, {	-- Inscribed Scrollcase
 			["providers"] = {
@@ -901,14 +936,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				{ "o", 182953 },	-- Sporefish School
 				{ "o", 182952 },	-- Steam Pump Floatsam
 			},
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				NAGRAND,
 				TEROKKAR_FOREST,
 				ZANGARMARSH,
 			},
 		}),
 		i(34867, {	-- Monstrous Felblood Snapper (Quest Item for Terokkar Forest fishing daily q(11669) Felblood Fillet)
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				HELLFIRE_PENINSULA,
 				SHADOWMOON_VALLEY,
 			},
@@ -934,17 +969,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		i(27425, {	-- Spotted Feltail
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				TEROKKAR_FOREST,
 				ZANGARMARSH,
 			},
 		}),
 		i(34868, {	-- World's Largest Mudfish (Quest Item for Terokkar Forest fishing daily q(11667) The One That Got Away)
-			[MAPS_FIELD] = { NAGRAND },
+			["maps_disp"] = { NAGRAND },
 		}),
 		i(27429, {	-- Zangarian Sporefish
 			["provider"] = { "o", 182953 },	-- Sporefish School
-			[MAPS_FIELD] = { ZANGARMARSH },
+			["maps_disp"] = { ZANGARMARSH },
 		}),
 		-- Schools
 		o(182959, {	-- Bluefish School
@@ -987,10 +1022,113 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 	}),
 	prof(HERBALISM, {
-		header(HEADERS.Spell, 2366, {	-- Herb Gathering
-			-- Herbs
+		header(HEADERS.Spell, 2366, appendAllGroups(sharedData({ ["requireSkill"] = HERBALISM, }, {	-- Herb Gathering
+			-- Nodes
+			o(181278, {	-- Ancient Lichen
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 340,
+				-- #endif
+				["maps"] = {
+					AUCHINDOUN_AUCHENAI_CRYPTS,
+					AUCHINDOUN_MANA_TOMBS,
+					AUCHINDOUN_SETHEKK_HALLS,
+					AUCHINDOUN_SHADOW_LABYRINTH,
+					COILFANG_RESERVOIR_SLAVE_PENS,
+					COILFANG_RESERVOIR_STEAMVAULT,
+					COILFANG_RESERVOIR_UNDERBOG,
+				},
+			}),
+			o(181271, {	-- Dreaming Glory
+				["description"] = "Found near edges and highly uneven terrain.",
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 315,
+				-- #endif
+				["maps"] = {
+					BLADES_EDGE_MOUNTAINS,
+					NAGRAND,
+					NETHERSTORM,
+					SHADOWMOON_VALLEY,
+					TEROKKAR_FOREST,
+				},
+			}),
+			o(181270, {	-- Felweed
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 300,
+				-- #endif
+				["maps"] = {
+					BLADES_EDGE_MOUNTAINS,
+					HELLFIRE_PENINSULA,
+					NAGRAND,
+					NETHERSTORM,
+					SHADOWMOON_VALLEY,
+					TEROKKAR_FOREST,
+					ZANGARMARSH,
+				},
+			}),
+			o(181276, {	-- Flame Cap
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 335,
+				-- #endif
+				["maps"] = {
+					COILFANG_RESERVOIR_SLAVE_PENS,
+					COILFANG_RESERVOIR_STEAMVAULT,
+					COILFANG_RESERVOIR_UNDERBOG,
+					ZANGARMARSH,
+				},
+			}),
+			o(181281, {	-- Mana Thistle
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 375,
+				-- #endif
+				["maps"] = { ISLE_OF_QUELDANAS },
+			}),
+			o(181279, {	-- Netherbloom
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 350,
+				-- #endif
+				["maps"] = { NETHERSTORM },
+			}),
+			o(181280, {	-- Nightmare Vine
+				["description"] = "Although this can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
+				["coords"] = {
+					{ 63.9, 68.3, BLADES_EDGE_MOUNTAINS },	-- Death's Door
+					{ 34.8, 40.4, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Wrath
+					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
+					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
+				},
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 365,
+				-- #endif
+				["maps"] = SHADOWMOON_VALLEY,
+			}),
+			o(181275, {	-- Ragveil
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 325,
+				-- #endif
+				["maps"] = {
+					COILFANG_RESERVOIR_SLAVE_PENS,
+					COILFANG_RESERVOIR_STEAMVAULT,
+					COILFANG_RESERVOIR_UNDERBOG,
+					ZANGARMARSH,
+				},
+			}),
+			o(181277, {	-- Terocone
+				["description"] = "Found near the base of trees.",
+				["coords"] = {
+					{ 43.4, 55.8, SHADOWMOON_VALLEY },	-- Sketh'lon Base Camp
+					{ 36.5, 32.5, SHADOWMOON_VALLEY },	-- Sketh'lon Wreckage
+					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
+					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
+				},
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 325,
+				-- #endif
+				["maps"] = { TEROKKAR_FOREST },
+			}),
+		}),
+		{	-- Herbs
 			i(22790, {	-- Ancient Lichen
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					AUCHINDOUN_AUCHENAI_CRYPTS,
 					AUCHINDOUN_MANA_TOMBS,
 					AUCHINDOUN_SETHEKK_HALLS,
@@ -1010,7 +1148,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			}),
 			i(22786, {	-- Dreaming Glory
 				["description"] = "Found near edges and highly uneven terrain.",
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					BLADES_EDGE_MOUNTAINS,
 					NAGRAND,
 					NETHERSTORM,
@@ -1043,7 +1181,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			i(22785, {	-- Felweed
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					BLADES_EDGE_MOUNTAINS,
 					HELLFIRE_PENINSULA,
 					NAGRAND,
@@ -1061,7 +1199,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			i(22788, {	-- Flame Cap
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					COILFANG_RESERVOIR_SLAVE_PENS,
 					COILFANG_RESERVOIR_STEAMVAULT,
 					COILFANG_RESERVOIR_UNDERBOG,
@@ -1070,7 +1208,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				["provider"] = { "o", 181276 },	-- Flame Cap
 			}),
 			i(22793, {	-- Mana Thistle
-				[MAPS_FIELD] = { ISLE_OF_QUELDANAS },
+				["maps_disp"] = { ISLE_OF_QUELDANAS },
 				["provider"] = { "o", 181281 },	-- Mana Thistle
 			}),
 			i(108351, {	-- Mana Thistle Leaf
@@ -1094,7 +1232,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				["timeline"] = { ADDED_2_4_0 },
 			}),
 			i(22791, {	-- Netherbloom
-				[MAPS_FIELD] = { NETHERSTORM },
+				["maps_disp"] = { NETHERSTORM },
 				["provider"] = { "o", 181279 },	-- Netherbloom
 			}),
 			i(108349, {	-- Netherbloom Leaf
@@ -1116,7 +1254,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
 				},
 				["description"] = "Although it can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
-				[MAPS_FIELD] = SHADOWMOON_VALLEY,
+				["maps_disp"] = SHADOWMOON_VALLEY,
 				["_allowObjectProvider"] = true,
 				["provider"] = { "o", 181280 },	-- Nightmare Vine
 			}),
@@ -1128,7 +1266,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			i(22787, {	-- Ragveil
-				[MAPS_FIELD] = ZANGARMARSH,
+				["maps_disp"] = ZANGARMARSH,
 				["provider"] = { "o", 181275 },	-- Ragveil
 			}),
 			i(108346, {	-- Ragveil Cap
@@ -1146,7 +1284,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
 				},
 				["description"] = "Found near the base of trees.",
-				[MAPS_FIELD] = TEROKKAR_FOREST,
+				["maps_disp"] = TEROKKAR_FOREST,
 				["_allowObjectProvider"] = true,
 				["provider"] = { "o", 181277 },	-- Terocone
 			}),
@@ -1158,87 +1296,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			i(24401, {	-- Unidentified Plant Parts (Quest Item for Zangarmarsh q(9802) and q(9784))
-				[MAPS_FIELD] = ZANGARMARSH,
+				["maps_disp"] = ZANGARMARSH,
 			}),
-			-- Nodes
-			o(181278, {	-- Ancient Lichen
-				["maps"] = {
-					AUCHINDOUN_AUCHENAI_CRYPTS,
-					AUCHINDOUN_MANA_TOMBS,
-					AUCHINDOUN_SETHEKK_HALLS,
-					AUCHINDOUN_SHADOW_LABYRINTH,
-					COILFANG_RESERVOIR_SLAVE_PENS,
-					COILFANG_RESERVOIR_STEAMVAULT,
-					COILFANG_RESERVOIR_UNDERBOG,
-				},
-			}),
-			o(181271, {	-- Dreaming Glory
-				["description"] = "Found near edges and highly uneven terrain.",
-				["maps"] = {
-					BLADES_EDGE_MOUNTAINS,
-					NAGRAND,
-					NETHERSTORM,
-					SHADOWMOON_VALLEY,
-					TEROKKAR_FOREST,
-				},
-			}),
-			o(181270, {	-- Felweed
-				["maps"] = {
-					BLADES_EDGE_MOUNTAINS,
-					HELLFIRE_PENINSULA,
-					NAGRAND,
-					NETHERSTORM,
-					SHADOWMOON_VALLEY,
-					TEROKKAR_FOREST,
-					ZANGARMARSH,
-				},
-			}),
-			o(181276, {	-- Flame Cap
-				["maps"] = {
-					COILFANG_RESERVOIR_SLAVE_PENS,
-					COILFANG_RESERVOIR_STEAMVAULT,
-					COILFANG_RESERVOIR_UNDERBOG,
-					ZANGARMARSH,
-				},
-			}),
-			o(181281, {	-- Mana Thistle
-				["maps"] = { ISLE_OF_QUELDANAS },
-			}),
-			o(181279, {	-- Netherbloom
-				["maps"] = { NETHERSTORM },
-			}),
-			o(181280, {	-- Nightmare Vine
-				["coords"] = {
-					{ 63.9, 68.3, BLADES_EDGE_MOUNTAINS },	-- Death's Door
-					{ 34.8, 40.4, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Wrath
-					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
-					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
-				},
-				["description"] = "Although this can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
-				["maps"] = SHADOWMOON_VALLEY,
-			}),
-			o(181275, {	-- Ragveil
-				["maps"] = {
-					COILFANG_RESERVOIR_SLAVE_PENS,
-					COILFANG_RESERVOIR_STEAMVAULT,
-					COILFANG_RESERVOIR_UNDERBOG,
-					ZANGARMARSH,
-				},
-			}),	-- Sanguine Hibiscus
-			o(183385, {
-				["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
-			}),
-			o(181277, {	-- Terocone
-				["coords"] = {
-					{ 43.4, 55.8, SHADOWMOON_VALLEY },	-- Sketh'lon Base Camp
-					{ 36.5, 32.5, SHADOWMOON_VALLEY },	-- Sketh'lon Wreckage
-					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
-					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
-				},
-				["description"] = "Found near the base of trees.",
-				["maps"] = TEROKKAR_FOREST,
-			}),
-		}),
+		})),
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
@@ -1271,6 +1331,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(43125),	-- Darkflame Ink
 			i(43124),	-- Ethereal Ink
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258199),	-- Aldor Bookcase (DECOR!)
+			i(258197),	-- Crystal Signpost (DECOR!)
+			i(258198),	-- Gilded Draenei Round Table (DECOR!)
+			i(258215),	-- Halaa Bench (DECOR!)
+			i(258192),	-- Talon King's Totem (DECOR!)
+		})),
 		-- Non-reagent crafts:
 		filter(GLYPHS, {
 			i(42743, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
@@ -1380,7 +1447,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(23439),	-- Noble Topaz
 					i(23438),	-- Star of Elune
 					i(23437),	-- Talasite
-				})
+				}),
+				{
+					i(24243, {	-- Adamantite Powder
+						["cost"] = {{ "i", 23425, 5 }},	-- Adamantite Ore
+					}),
+				}
 			),
 		}),
 		n(ARMOR, {
@@ -1388,6 +1460,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(24122),	-- Coronet of Verdant Flame
 			applyclassicphase(TBC_PHASE_TWO, i(32776, {["timeline"] = {ADDED_2_1_0}})),	-- Crown of the Sea Witch
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(262347),	-- Draenei Crystal Chandelier (DECOR!)
+			i(258201),	-- Shattrath Lamppost (DECOR!)
+			i(258200),	-- Shattrath Sconce (DECOR!)
+		})),
 		filter(GEMS, {
 			n(SPECIAL, {
 				["timeline"] = { ADDED_2_2_0 },
@@ -1488,7 +1565,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(24029, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Teardrop Living Ruby
 				i(25898),	-- Tenacious Earthstorm Diamond
 				i(24052, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Thick Dawnstone
-				i(32410, {["timeline"] = {ADDED_2_1_0}}),-- Thundering Skyfire Diamond
+				i(32410, {["timeline"] = {ADDED_2_1_0}}),	-- Thundering Skyfire Diamond
 				i(31867, {["timeline"] = {ADDED_2_1_0}}),	-- Veiled Noble Topaz
 				i(31868, {["timeline"] = {ADDED_2_1_0}}),	-- Wicked Noble Topaz
 			}),
@@ -1623,7 +1700,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(24032),	-- Subtle Dawnstone
 				i(25894),	-- Swift Skyfire Diamond
 				i(25898),	-- Tenacious Earthstorm Diamond
-				i(32410, {["timeline"] = {ADDED_2_1_0}}),-- Thundering Skyfire Diamond
+				i(32410, {["timeline"] = {ADDED_2_1_0}}),	-- Thundering Skyfire Diamond
 				i(24056),	-- Timeless Nightseye
 				i(31867, {["timeline"] = {ADDED_2_1_0}}),	-- Veiled Nightseye
 			}),
@@ -1891,6 +1968,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				-- #endif
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258191),	-- Arakkoa Decoy Scarecrow (DECOR!)
+			i(258190),	-- Outland Mag'har Banner (DECOR!)
+		})),
 		filter(MISC, {
 			i(29488, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Arcane Armor Kit
 			i(34490, {["timeline"] = {ADDED_2_3_0}}),	-- Bag of Many Hides
@@ -1936,9 +2017,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 	}),
 	prof(MINING, {
-		header(HEADERS.Spell, 2575, {	-- Mining
+		header(HEADERS.Spell, 2575, appendAllGroups(sharedData({ ["requireSkill"] = MINING, }, {	-- Mining
 			-- Nodes
 			o(181556, {	-- Adamantite Deposit
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 325,
+				-- #endif
 				["maps"] = {
 					BLADES_EDGE_MOUNTAINS,
 					ISLE_OF_QUELDANAS,
@@ -1949,32 +2033,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					ZANGARMARSH,
 				},
 			}),
-			o(185557, {	-- Ancient Gem Vein
-				["maps"] = { THE_BATTLE_FOR_MOUNT_HYJAL },
-				["timeline"] = { ADDED_2_1_0 },
-				["groups"] = appendAllGroups(
-					{	-- Rare quality (blue) gems:
-						i(23440),	-- Dawnstone
-						i(23436),	-- Living Ruby
-						i(23441),	-- Nightseye
-						i(23439),	-- Noble Topaz
-						i(23438),	-- Star of Elune
-						i(23437),	-- Talasite
-					},
-					sharedData({
-						["timeline"] = { ADDED_2_1_0 },
-					}, {
-						-- Epiq quality (purple) gems:
-						i(32227),	-- Crimson Spinel
-						i(32228),	-- Empyrean Sapphire
-						i(32229),	-- Lionseye
-						i(32231),	-- Pyrestone
-						i(32249),	-- Seaspray Emerald
-						i(32230),	-- Shadowsong Amethyst
-					})
-				),
-			}),
 			o(181555, {	-- Fel Iron Deposit
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 300,
+				-- #endif
 				["maps"] = {
 					BLADES_EDGE_MOUNTAINS,
 					HELLFIRE_PENINSULA,
@@ -1986,6 +2048,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			o(181557, {	-- Khorium Vein
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 350,
+				-- #endif
 				["maps"] = {
 					AUCHINDOUN_AUCHENAI_CRYPTS,
 					AUCHINDOUN_MANA_TOMBS,
@@ -2003,6 +2068,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			o(181569, {	-- Rich Adamantite Deposit
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 350,
+				-- #endif
 				["maps"] = {
 					BLADES_EDGE_MOUNTAINS,
 					ISLE_OF_QUELDANAS,
@@ -2014,11 +2082,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			o(181570, {	-- Rich Adamantite Deposit (Another ID for deposits exclusive to Nagrand.)
+				-- #if BEFORE 6.0.0
+				["learnedAt"] = 350,
+				-- #endif
 				["maps"] = { NAGRAND },
 			}),
-			-- Ores
+		}),
+		{	-- Ores
 			i(23425, {	-- Adamantite Ore
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					BLADES_EDGE_MOUNTAINS,
 					ISLE_OF_QUELDANAS,
 					NAGRAND,
@@ -2044,7 +2116,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				}
 			}),
 			i(23427, {	-- Eternium Ore
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					BLADES_EDGE_MOUNTAINS,
 					ISLE_OF_QUELDANAS,
 					NAGRAND,
@@ -2067,7 +2139,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				}
 			}),
 			i(23424, {	-- Fel Iron Ore
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					BLADES_EDGE_MOUNTAINS,
 					HELLFIRE_PENINSULA,
 					NAGRAND,
@@ -2086,7 +2158,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				}
 			}),
 			i(23426, {	-- Khorium Ore
-				[MAPS_FIELD] = {
+				["maps_disp"] = {
 					AUCHINDOUN_AUCHENAI_CRYPTS,
 					AUCHINDOUN_MANA_TOMBS,
 					AUCHINDOUN_SETHEKK_HALLS,
@@ -2111,28 +2183,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				}
 			}),
 			i(35229, {["timeline"] = {ADDED_2_4_0}}),	-- Nether Residue (Quest Item for Shattrath q(11875) Gaining the Advantage)
-			--	Not Ore
-			--[[	No need to list Tradegoods w/ many other sources
-			i(23117),	-- Azure Moonstone
-			i(23077),	-- Blood Garnet
-			i(32227, {["timeline"] = {ADDED_2_1_0}}),	-- Crimson Spinel
-			i(23440),	-- Dawnstone
-			i(23079),	-- Deep Peridot
-			i(32228, {["timeline"] = {ADDED_2_1_0}}),	-- Empyrean Sapphire
-			i(21929),	-- Flame Spessarite
-			i(23112),	-- Golden Draenite
-			i(32229, {["timeline"] = {ADDED_2_1_0}}),	-- Lionseye
-			i(23436),	-- Living Ruby
-			i(23441),	-- Nightseye
-			i(23439),	-- Noble Topaz
-			i(32231, {["timeline"] = {ADDED_2_1_0}}),	-- Pyrestone
-			i(32249, {["timeline"] = {ADDED_2_1_0}}),	-- Seaspray Emerald
-			i(23107),	-- Shadow Draenite
-			i(32230, {["timeline"] = {ADDED_2_1_0}}),	-- Shadowsong Amethyst
-			i(23438),	-- Star of Elune
-			i(23437),	-- Talasite
-			--]]
-		}),
+		})),
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(23446, {	-- Adamantite Bar
 				["cost"] = ClassicCost({ { "i", 23425, 2 } }),	-- Adamantite Ore
@@ -2361,7 +2412,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					19183,	-- Clefthoof Calf
 					18205,	-- Clefthoof
 				},
-				[MAPS_FIELD] = { NAGRAND },
+				["maps_disp"] = { NAGRAND },
 			}),
 			i(29547, {	-- Wind Scales
 				["crs"] = {
@@ -2496,6 +2547,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(21876),	-- Primal Mooncloth Bag
 			i(21858),	-- Spellfire Bag
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258195),	-- Draenei Weaver's Loom (DECOR!)
+			i(258202),	-- Grand Drape of the Exiles (DECOR!)
+		})),
 		filter(MISC, {
 			-- #if AFTER BFA
 			i(21991),	-- Heavy Netherweave Bandage
@@ -2530,7 +2585,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				["coord"] = { 58.3, 70.9, SHADOWMOON_VALLEY },
 			}),
 			i(24271, {	-- Spellcloth
-				[MAPS_FIELD] = { NETHERSTORM },
+				["maps_disp"] = { NETHERSTORM },
 			}),
 		}),
 	}),

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		n(TREASURES, {
@@ -42,10 +43,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 12.8, 34.1, THE_AZURE_SPAN },
 					{ 13.8, 38.2, THE_AZURE_SPAN },
 					{ 13.8, 39.4, THE_AZURE_SPAN },
-					{ 13.8, 39.5, THE_AZURE_SPAN },
 					{ 14.4, 20.5, THE_AZURE_SPAN },
 					{ 14.4, 21.8, THE_AZURE_SPAN },
-					{ 14.5, 20.5, THE_AZURE_SPAN },
 					{ 14.9, 31.0, THE_AZURE_SPAN },
 					{ 16.1, 35.2, THE_AZURE_SPAN },
 					{ 16.2, 38.9, THE_AZURE_SPAN },
@@ -55,12 +54,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 18.1, 34.8, THE_AZURE_SPAN },
 					{ 18.4, 36.7, THE_AZURE_SPAN },
 					{ 18.4, 38.4, THE_AZURE_SPAN },
-					{ 18.4, 38.5, THE_AZURE_SPAN },
-					{ 18.5, 36.7, THE_AZURE_SPAN },
 					{ 21.4, 40.4, THE_AZURE_SPAN },
 					{ 21.4, 42.4, THE_AZURE_SPAN },
-					{ 21.5, 40.4, THE_AZURE_SPAN },
-					{ 21.5, 40.5, THE_AZURE_SPAN },
 					{ 21.5, 42.3, THE_AZURE_SPAN },
 					{ 23.2, 43.7, THE_AZURE_SPAN },
 					{ 24.5, 40.2, THE_AZURE_SPAN },
@@ -69,13 +64,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 34.6, 45.4, THE_AZURE_SPAN },
 					{ 34.9, 31.9, THE_AZURE_SPAN },
 					{ 35.4, 48.0, THE_AZURE_SPAN },
-					{ 35.5, 48.0, THE_AZURE_SPAN },
 					{ 35.6, 34.1, THE_AZURE_SPAN },
 					{ 35.9, 46.6, THE_AZURE_SPAN },
 					{ 58.2, 41.4, THE_AZURE_SPAN },
-					{ 58.2, 41.5, THE_AZURE_SPAN },
 					{ 58.4, 42.7, THE_AZURE_SPAN },
-					{ 58.5, 42.7, THE_AZURE_SPAN },
+					{ 55.4, 30.7, THALDRASZUS },
+					{ 55.9, 32.1, THALDRASZUS },
+					{ 56.9, 29.3, THALDRASZUS },
 				},
 				["groups"] = {
 					i(201368, {	-- Brackenhide Hollow Barbslinger
@@ -104,7 +99,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381110, {	-- Forgotten Jewel Box
 				["coord"] = { 45.1, 59.3, THE_AZURE_SPAN },
 				["questID"] = 70603,
-				["cost"] = { { "i", 199065, 1 }, },	--1x Sorrowful Letter
+				["cost"] = { { "i", 199065, 1 } },	-- 1x Sorrowful Letter
 				["groups"] = {
 					i(201927),	-- Gleaming Arcanocrystal (TOY!)
 				},
@@ -118,7 +113,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381158, {	-- Gnoll Fiend Flail
 				["coord"] = { 54.0, 43.8, THE_AZURE_SPAN },
 				["questID"] = 70604,
-				["cost"] = { { "i", 199066, 1 }, },	--1x Letter of Caution
+				["cost"] = { { "i", 199066, 1 } },	-- 1x Letter of Caution
 				["groups"] = {
 					i(202692),	-- Gnoll Fiend Flail
 				},
@@ -172,7 +167,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381157, {	-- Sapphire Gem Cluster
 				["coord"] = { 49.0, 25.0, THE_AZURE_SPAN },
 				["questID"] = 70605,
-				["cost"] = { { "i", 199067, 1 }, },	--1x Precious Plans
+				["cost"] = { { "i", 199067, 1 } },	-- 1x Precious Plans
 				["groups"] = {
 					i(200866),	-- Glimmering Malygite Cluster
 					i(194649),	-- Design: Jeweled Sapphire Whelpling (RECIPE!)
@@ -199,7 +194,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coords"] = {
 					{ 7.2, 45.1, THE_AZURE_SPAN },
 					{ 8.4, 40.7, THE_AZURE_SPAN },
-					{ 8.5, 40.7, THE_AZURE_SPAN },
 					{ 9.4, 37.9, THE_AZURE_SPAN },
 					{ 45.1, 52.1, THE_AZURE_SPAN },
 					{ 45.8, 56.1, THE_AZURE_SPAN },
@@ -211,7 +205,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 58.8, 68.4, THE_AZURE_SPAN },
 					{ 58.9, 54.8, THE_AZURE_SPAN },
 					{ 59.0, 66.7, THE_AZURE_SPAN },
-					{ 59.2, 56.6, THE_AZURE_SPAN },
+					{ 59.2, 56.5, THE_AZURE_SPAN },
 					{ 60.5, 59.0, THE_AZURE_SPAN },
 				},
 				["groups"] = {

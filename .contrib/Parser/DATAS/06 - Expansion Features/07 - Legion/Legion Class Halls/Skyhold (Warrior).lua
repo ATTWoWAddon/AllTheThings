@@ -1,17 +1,22 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 GREAT_ODYN_AND_THE_FIRELORD = createHeader({
 	readable = "Great Odyn and the Firelord",
 	icon = 237446,
 	text = {
 		en = "Great Odyn and the Firelord",
-		es = "El gran Odyn y el Señor del Fuego",
 		de = "Der große Odyn und der Feuerlord",
+		es = "El gran Odyn y el Señor del Fuego",
+		-- TODO: mx = "",
 		fr = "Le grand Odyn et le seigneur du feu",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "O Grande Odyn e o Senhor do Fogo",
 		ru = "Великий Один и Повелитель Огня",
 		cn = "伟大的奥丁与炎魔之王",
+		-- TODO: tw = "",
 	},
 });
 THE_WANDERER_AND_THE_SERPENT = createHeader({
@@ -19,11 +24,16 @@ THE_WANDERER_AND_THE_SERPENT = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Wanderer and the Serpent",
-		es = "El nómada y la serpiente",
 		de = "Der Wanderer und die Schlange",
+		es = "El nómada y la serpiente",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "O Andarilho e a Serpente",
 		ru = "Странник и змей",
 		cn = "流浪者与蛇",
+		-- TODO: tw = "",
 	},
 });
 HALLS_OF_GOLD_AND_GLORY = createHeader({
@@ -31,11 +41,16 @@ HALLS_OF_GOLD_AND_GLORY = createHeader({
 	icon = 237446,
 	text = {
 		en = "Halls of Gold and Glory",
-		es = "Cámaras de oro y gloria",
 		de = "Hallen des Goldes und des Ruhmes",
+		es = "Cámaras de oro y gloria",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "Os Salões de Ouro e Glória",
 		ru = "Чертоги золота и славы",
 		cn = "黄金与荣耀的殿堂",
+		-- TODO: tw = "",
 	},
 });
 THE_KEEPERS_EYE = createHeader({
@@ -43,11 +58,16 @@ THE_KEEPERS_EYE = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Keeper's Eye",
-		es = "El ojo del guardián",
 		de = "Das Auge des Hüters",
+		es = "El ojo del guardián",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "O Olho do Guardião",
 		ru = "Глаз Хранителя",
 		cn = "守护者之眼",
+		-- TODO: tw = "",
 	},
 });
 FIRST_OF_THE_VALKYR = createHeader({
@@ -55,11 +75,16 @@ FIRST_OF_THE_VALKYR = createHeader({
 	icon = 237446,
 	text = {
 		en = "First of the Val'kyr",
-		es = "La primera Val'kyr",
 		de = "Die erste der Val'kyr",
+		es = "La primera Val'kyr",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "A Primeira das Val'kyren",
 		ru = "Первая из валь'кир",
 		cn = "首位瓦格里",
+		-- TODO: tw = "",
 	},
 });
 THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
@@ -67,11 +92,16 @@ THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Sealing of the Halls of Valor",
-		es = "El sello de las Cámaras del Valor",
 		de = "Die Versiegelung der Hallen der Tapferkeit",
+		es = "El sello de las Cámaras del Valor",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "O Selamento dos Salões da Bravura",
 		ru = "Печать на Чертогах Доблести",
 		cn = "封印英灵殿",
+		-- TODO: tw = "",
 	},
 });
 HIS_NAME_IS_DRAGONBLOOD = createHeader({
@@ -79,11 +109,16 @@ HIS_NAME_IS_DRAGONBLOOD = createHeader({
 	icon = 237446,
 	text = {
 		en = "His Name Is Dragonblood",
+		-- TODO: de = "",
 		es = "Se llama Sangredragón",
+		-- TODO: mx = "",
 		fr = "Il s’appelait Sang de dragon",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "Ele se chama Sangue de Dragão",
 		ru = "Октель Драконья Кровь",
 		cn = "他名叫龙血",
+		-- TODO: tw = "",
 	},
 });
 THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
@@ -91,11 +126,16 @@ THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Last Words of Asgrim the Dreadkiller",
+		-- TODO: de = "",
 		es = "Las últimas palabras de Asgrim el Mataterrador",
+		-- TODO: mx = "",
 		fr = "Les dernières paroles d’Asgrim le Tueur de l’effroi",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "As Últimas Palavras de Asgrim, o Algoz Medonho",
 		ru = "Последние слова Азгрима Смертоубийцы",
 		cn = "亡灵杀手艾斯格里姆的遗言",
+		-- TODO: tw = "",
 	},
 });
 A_SHIELDMAIDENS_CREED = createHeader({
@@ -103,11 +143,16 @@ A_SHIELDMAIDENS_CREED = createHeader({
 	icon = 237446,
 	text = {
 		en = "A Shieldmaiden's Creed",
+		-- TODO: de = "",
 		es = "El credo de una doncella escudera",
+		-- TODO: mx = "",
 		fr = "Le credo de la vierge guerrière",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "A Crença de uma Dama Escudeira",
 		ru = "Кредо девы щита",
 		cn = "女武神的信条",
+		-- TODO: tw = "",
 	},
 });
 THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
@@ -115,11 +160,16 @@ THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Prophecy of Rythas the Oracle",
+		-- TODO: de = "",
 		es = "La profecía de Rythas el Oráculo",
+		-- TODO: mx = "",
 		fr = "La prophétie de Rythas l’Oracle",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "A Profecia de Rythas, o Oráculo",
 		ru = "Пророчество Райтаса Провидца",
 		cn = "神谕者莱萨斯的预言",
+		-- TODO: tw = "",
 	},
 });
 THE_LESSONS_OF_THE_BLACKFIST = createHeader({
@@ -127,11 +177,16 @@ THE_LESSONS_OF_THE_BLACKFIST = createHeader({
 	icon = 237446,
 	text = {
 		en = "The Lessons of the Blackfist",
+		-- TODO: de = "",
 		es = "Las lecciones de Puño Opaco",
+		-- TODO: mx = "",
 		fr = "Les leçons du poing noir",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "As Lições do Punho Negro",
 		ru = "Уроки Черного Кулака",
 		cn = "黑拳的教诲",
+		-- TODO: tw = "",
 	},
 });
 VOLUNDS_FOLLY = createHeader({
@@ -139,13 +194,19 @@ VOLUNDS_FOLLY = createHeader({
 	icon = 237446,
 	text = {
 		en = "Volund's Folly",
+		-- TODO: de = "",
 		es = "La locura de Volund",
+		-- TODO: mx = "",
 		fr = "La folie de Volund",
+		-- TODO: it = "",
+		-- TODO: ko = "",
 		pt = "A Tolice de Volund",
 		ru = "Безрассудный Волунд",
 		cn = "沃伦德的愚行",
+		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
@@ -207,17 +268,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["description"] = "This quest apparently makes you unable to see/obtain the container while it is true.",
 								["isDaily"] = true,
 							}),
-							i(139580, {	-- Burning Plate of the Worldbreaker
-								artifact(159),	-- Scale of the Earth-Warder
-								-- artifact(159),	-- Scaleshard
+							o(257392, {	-- Burning Plate of the Worldbreaker
+								["coord"] = { 51.7, 18.4, 657 },	-- Path of Huln
+								["groups"] = {
+									i(139580, {	-- Burning Plate of the Worldbreaker
+										artifact(159),	-- Scale of the Earth-Warder
+										-- artifact(159),	-- Scaleshard
+									}),
+								},
 							}),
 						},
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(1012),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
 					follower(1013),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
 					follower(1014),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
@@ -238,7 +301,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(867),	-- Valkyra Shieldmaidens
 					follower(868),	-- Valkyra Shieldmaidens
 					follower(869),	-- Valkyra Shieldmaidens
-				})),
+				}),
 				n(QUESTS, {
 					-- Introduction
 					q(42814, {	-- An Important Mission
@@ -298,10 +361,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["groups"] = {
-								i(128910, {	-- Strom'kar, the Warbreaker
-									["ItemAppearanceModifierID"] = 0,
+								o(247877, {	-- Strom'kar
+									["coord"] = { 60.8, 73.5, 20 },	-- Keeper's Rest
 									["groups"] = {
-										artifact(295),	-- Strom'kar, the Warbreaker
+										i(128910, {	-- Strom'kar, the Warbreaker
+											["ItemAppearanceModifierID"] = 0,
+											["groups"] = { artifact(295) },	-- Strom'kar, the Warbreaker
+										}),
 									},
 								}),
 							},
@@ -326,17 +392,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									["groups"] = {
 										i(128908, {	-- Warswords of the Valarjar [Main Hand]
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(296),	-- Warswords of the Valarjar
-											},
+											["groups"] = { artifact(296) },	-- Warswords of the Valarjar
 										}),
 									},
 								}),
 								i(134553, {	-- Warswords of the Valarjar [Off Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(296),	-- Warswords of the Valarjar
-									},
+									["groups"] = { artifact(296) },	-- Warswords of the Valarjar
 								}),
 							},
 						}),
@@ -354,18 +416,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["groups"] = {
 								i(128288, {	-- Scaleshard
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(66),	-- Scaleshard
-									},
+									["groups"] = { artifact(66) },	-- Scaleshard
 								}),
 								o(248831, {	-- Scale of the Earth Warder
 									["coord"] = { 49.9, 82.3, 635 },	-- Shield's Rest
 									["groups"] = {
 										i(128289, {	-- Scale of the Earth-Warder
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(66),	-- Scale of the Earth-Warder
-											},
+											["groups"] = { artifact(66) },	-- Scale of the Earth-Warder
 										}),
 									},
 								}),
@@ -376,9 +434,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 40579 },	-- Weapons of Legend
 						["provider"] = { "n", 112392 },	-- Quartermaster Durnolf
 						["coord"] = { 56.2, 27.0, SKYHOLD },
-						["groups"] = {
-							i(139684),	-- Battlelord's Greathelm
-						},
+						["groups"] = { i(139684) },	-- Battlelord's Greathelm
 					}),
 					q(39530, {	-- The Forgening
 						["sourceQuests"] = {
@@ -422,6 +478,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 40585,	-- Thus Begins the War
 						["provider"] = { "n", 112663 },	-- Danica the Reclaimer
 						["maps"] = { LEGION_DALARAN },
+						["isBreadcrumb"] = true,
 					}),
 					q(42598, {	-- Champions of Skyhold
 						["sourceQuest"] = 42597,	-- Odyn's Summons
@@ -432,17 +489,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42598,	-- Champions of Skyhold
 						["provider"] = { "n", 107984 },	-- Ragnvald Drakeborn
 						["coord"] = { 61.3, 33.8, SKYHOLD },
-						["groups"] = {
-							follower(708),	-- Ragnvald Drakeborn
-						},
+						["groups"] = { follower(708) },	-- Ragnvald Drakeborn
 					}),
 					q(42606, {	-- Champion: Finna Bjornsdottir
 						["sourceQuest"] = 42598,	-- Champions of Skyhold
 						["provider"] = { "n", 107985 },	-- Finna Bjornsdottir
 						["coord"] = { 61.5, 34.5, SKYHOLD },
-						["groups"] = {
-							follower(709),	-- Finna Bjornsdottir
-						},
+						["groups"] = { follower(709) },	-- Finna Bjornsdottir
 					}),
 					q(42607, {	-- Captain Stahlstrom
 						["sourceQuest"] = 42598,	-- Champions of Skyhold
@@ -464,7 +517,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["coord"] = { 59.7, 13.3, SKYHOLD },
 					}),
-					-- Chap 1
+					-- Chapter 1
 					q(43750, {	-- The Call of Battle
 						["sourceQuest"] = 42611,	-- Einar the Runecaster
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
@@ -479,14 +532,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42193,	-- The Gjallarhorn
 						["provider"] = { "n", 106720 },	-- Svergan Stormcloak
 						["coord"] = { 63.8, 47.2, STORMHEIM },
+						["groups"] = {
+							i(137182),	-- Crown of the Forgotten King (QI!)
+							i(137184),	-- Drakerider's Medallion (QI!)
+							i(137183),	-- Stormcloak Signet (QI!)
+						},
 					}),
 					q(42650, {	-- Break the Bonds
 						["sourceQuest"] = 42194,	-- Stolen Honor
 						["provider"] = { "n", 106720 },	-- Svergan Stormcloak
 						["coord"] = { 63.8, 47.2, STORMHEIM },
-						["groups"] = {
-							i(138204),	-- Svergan's Belongings (QI!)
-						},
+						["groups"] = { i(138204) },	-- Svergan's Belongings (PQI!)
 					}),
 					q(42651, {	-- Svergan's Promise
 						["sourceQuest"] = 42650,	-- Break the Bonds
@@ -502,11 +558,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42107,	-- On the Trail of the Great Worm
 						["provider"] = { "n", 107986 },	-- Svergan Stormcloak
 						["coord"] = { 52.0, 82.6, SKYHOLD },
-						["groups"] = {
-							follower(710),	-- Svergan Stormcloak
-						},
+						["groups"] = { follower(710) },	-- Svergan Stormcloak
 					}),
-					-- Chap 2
+					-- Chapter 2
 					q(42110, {	-- To the Summit!
 						["sourceQuest"] = 42107,	-- On the Trail of the Great Worm
 						["provider"] = { "n", 107987 },	-- Hymdall
@@ -522,7 +576,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 106271 },	-- Jarum Skymane
 						["coord"] = { 53.8, 87.8, HIGHMOUNTAIN },
 						["groups"] = {
-							i(139501),	-- Frostcrag Drums (QI!)
+							i(139501),	-- Frostcrag Drums (PQI!)
 							i(138205),	-- The Gjallarhorn (QI!)
 							follower(711),	-- Hymdall
 							artifact(793),	-- Strom'kar, the Warbreaker
@@ -532,7 +586,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							-- artifact(146),	-- Scaleshard
 						},
 					}),
-					-- Chap 3
+					-- Chapter 3
 					q(43585, {	-- Preparing For War
 						["sourceQuest"] = 42204,	-- Jorhuttam
 						["provider"] = { "n", 96469 },	-- Odyn
@@ -553,34 +607,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya
 						["provider"] = { "i", 139619 },	-- Ymiron's Broken Blade
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
-						["groups"] = {
-							follower(712),	-- King Ymiron
-						},
+						["groups"] = { follower(712) },	-- King Ymiron
 					}),
 					q(43090, {	-- Ulduar's Oath
-						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya
+						["sourceQuests"] = {
+							43586,	-- Maw of Souls: Message to Helya
+							43604,	-- Maw of Souls: Ymiron's Broken Blade
+							43975,	-- Recruiting Shieldmaidens
+						},
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 744, 746 },	-- Ulduar (Scenario Map)
-						["groups"] = {
-							i(139688),	-- Battlelord's Bracers
-						},
+						["groups"] = { i(139688) },	-- Battlelord's Bracers
 					}),
 					q(42616, {	-- Champion: Dvalen Ironrune
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 						["provider"] = { "n", 112766 },	-- Dvalen Ironrune
 						["coord"] = { 57.1, 75.0, SKYHOLD },
-						["groups"] = {
-							follower(714),	-- Dvalen Ironrune
-						},
+						["groups"] = { follower(714) },	-- Dvalen Ironrune
 					}),
 					q(42618, {	-- Champion: Thorim
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 						["provider"] = { "n", 112765 },	-- Thorim
 						["coord"] = { 59.5, 75.2, SKYHOLD },
-						["groups"] = {
-							follower(713),	-- Thorim
-						},
+						["groups"] = { follower(713) },	-- Thorim
 					}),
 					-- Chap 4
 					q(44667, {	-- Will of the Valarjar
@@ -623,9 +673,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42974,	-- The Fate of Hodir
 						["provider"] = { "n", 113583 },	-- Hodir
 						["coord"] = { 59.7, 78.4, SKYHOLD },
-						["groups"] = {
-							follower(715),	-- Hodir
-						},
+						["groups"] = { follower(715) },	-- Hodir
 					}),
 					q(43425, {	-- A Hero's Weapon
 						["sourceQuest"] = 42974,	-- The Fate of Hodir
@@ -696,9 +744,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["coord"] = { 34.3, 28.5, HELHEIM },
 						["timeline"] = { ADDED_7_2_0 },
-						["groups"] = {
-							i(144071),	-- Helya's Horn (QI!)
-						},
+						["groups"] = { i(144071) },	-- Helya's Horn (PQI!)
 					}),
 					q(45128, {	-- A Glorious Reunion
 						["sourceQuests"] = {
@@ -781,18 +827,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
 						["coord"] = { 59.9, 83.8, SKYHOLD },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							follower(989),	-- Lord Darius Crowley / Eitrigg
-						},
+						["groups"] = { follower(989) },	-- Lord Darius Crowley / Eitrigg
 					})),
 					q(45873, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Eitrigg
 						["sourceQuest"] = 46267,	-- Return of the Battlelord
 						["provider"] = { "n", 117479 },	-- Eitrigg
 						["coord"] = { 59.9, 83.8, SKYHOLD },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							follower(989),	-- Lord Darius Crowley / Eitrigg
-						},
+						["groups"] = { follower(989) },	-- Lord Darius Crowley / Eitrigg
 					})),
 					q(46208, {	-- A Godly Invitation
 						["sourceQuests"] = {
@@ -808,9 +850,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 829 },	-- Halls of Valor (Scenario Map)
-						["groups"] = {
-							mount(229388),	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
-						},
+						["groups"] = { mount(229388) },	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
 					})),
 					-- The End
 					q(43888, {	-- Hitting the Books
@@ -845,13 +885,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							n(THE_KEEPERS_EYE, { ["questID"] = 46226, }),
 							n(FIRST_OF_THE_VALKYR, { ["questID"] = 46227, }),
 							n(THE_SEALING_OF_THE_HALLS_OF_VALOR, { ["questID"] = 46228, }),
-						}
+						},
 					})),
 					i(144437, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Lost Legend of the Valarjar
-						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior. (any spec)",
-						["crs"] = {
-							115732,	-- Jorvild the Trusted (highest drop chance)
-						},
+						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
+						["cr"] = 115732,	-- Jorvild the Trusted (highest drop chance)
 						["groups"] = {
 							n(HIS_NAME_IS_DRAGONBLOOD, { ["questID"] = 46229, }),
 							n(THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER, { ["questID"] = 46230, }),
@@ -859,7 +897,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							n(THE_PROPHECY_OF_RYTHAS_THE_ORACLE, { ["questID"] = 46232, }),
 							n(THE_LESSONS_OF_THE_BLACKFIST, { ["questID"] = 46233, }),
 							n(VOLUNDS_FOLLY, { ["questID"] = 46234, }),
-						}
+						},
 					})),
 				}),
 				n(SPECIAL, {
@@ -898,7 +936,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["groups"] = {
 							i(140946, {	-- Battlelord's Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(139681, {	-- Battlelord's Chestplate
 								["cost"] = 5000000,	-- 500g
@@ -910,7 +948,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140985, {	-- Battlelord's Greater Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 4000 }},	-- 4,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 4000 } },
 							}),
 							i(139684, {	-- Battlelord's Greathelm
 								["cost"] = 5000000,	-- 500g
@@ -919,7 +957,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140984, {	-- Battlelord's Lesser Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},		-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(139686, {	-- Battlelord's Pauldrons
 								["cost"] = 5000000,	-- 500g
@@ -931,39 +969,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(249458, {	-- Replica Forge of Odyn (DECOR!)
-								["sourceAchievement"] = 60973,	-- Legendary Research of the Valarjar
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},	-- 5,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2500 } },
 							}),
 							i(257396, {	-- Replica Saga of the Valarjar (DECOR!)
-								["sourceAchievement"] = 60992,	-- Raise an Army for Skyhold
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},	-- 3,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
 							i(249460, {	-- Skyhold Brazier (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(140537),	-- Skyhold Bulwark
 							i(140559),	-- Skyhold Claymore
 							i(140557),	-- Skyhold Quickblade
 							i(249551, {	-- Skyhold Spear Rack (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(249461, {	-- Skyhold War Table (DECOR!)
-								["sourceAchievement"] = 60992,	-- Raise an Army for Skyhold
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(249464, {	-- Valarjar Banner (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(249466, {	-- Valarjar Shield Wall (DECOR!)
-								["sourceAchievement"] = 42282,	-- The Battlelord's Campaign
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},	-- 1,500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 						},
 					}),

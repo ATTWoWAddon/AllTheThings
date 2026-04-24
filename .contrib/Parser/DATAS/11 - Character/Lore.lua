@@ -8,16 +8,16 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 			["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED }
 		}, {
 			q(65652, {	-- Summons from the Matriarch (non-Paladin)
+				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 176789 },	-- Lady Liadrin
 				["coord"] = { 25.4, 52.1, ORIBOS },
 				["classes"] = exclude({ PALADIN, SHAMAN, DRUID, EVOKER }, ALL_CLASSES),
-				-- ["sourceQuests"] = { },
 			}),
 			q(63479, {	-- Summons from the Matriarch (Paladin)
+				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 176789 },	-- Lady Liadrin
 				["coord"] = { 25.4, 52.1, ORIBOS },
 				["classes"] = { PALADIN },
-				-- ["sourceQuests"] = { },
 			}),
 			q(63480, {	-- Briefing
 				["sourceQuests"] = { 65652, 63479 },	-- Summons from the Matriarch
@@ -47,7 +47,10 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["provider"] = { "n", 176826 },	-- Lady Liadrin
 				["coord"] = { 48.5, 32.1, GHOSTLANDS },
 				["groups"] = {
-					i(184895),	-- Forged Ranseur (QI!)
+					o(366592, {
+						["coord"] = { 48.6, 32.5, GHOSTLANDS },
+						["groups"] = { i(184895) },	-- Forged Ranseur (QI!)
+					}),
 				},
 			}),
 			q(63485, {	-- An Honest Heart
@@ -75,7 +78,10 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 					63522,	-- A Fair Race
 					63519,	-- Unfair Fight
 				},
-				["provider"] = { "n", 176914 },	-- Salandria
+				["qgs"] = {
+					176914,	-- Salandria
+					176930,	-- Salandria
+				},	-- Salandria
 				["coords"] = {
 					{ 45.0, 68.9, BASTION },
 					{ 46.7, 45.8, MALDRAXXUS },
@@ -90,23 +96,19 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["sourceQuests"] = { 63488 },	-- I Am the Blade of the Light
 				["provider"] = { "n", 176882 },	-- Lady Liadrin
 				["coord"] = { 35.6, 73.0, GHOSTLANDS },
-				["groups"] = {
-					i(191604),	-- Veil-Touched Ranseur (Maybe only Paladin?)
-				},
+				["groups"] = { i(191604) },	-- Veil-Touched Ranseur (Maybe only Paladin?)
 			}),
 			q(65653, {	-- Victory for the Sin'dorei
 				["sourceQuests"] = { 63489 },	-- Justice Long Overdue
 				["provider"] = { "n", 176882 },	-- Lady Liadrin
 				["coord"] = { 34.2, 77.4, GHOSTLANDS },
 				["classes"] = exclude({PALADIN}, BLOOD_ELF_CLASSES),
-				["groups"] = {
-					i(191566),	-- Elusive Emerald Hawkstrider (MOUNT!)
-				},
+				["groups"] = { i(191566) },	-- Elusive Emerald Hawkstrider (MOUNT!)
 			}),
 			q(63490, {	-- Blood Knight
 				["sourceQuests"] = { 63489 },	-- Justice Long Overdue
 				["provider"] = { "n", 176882 },	-- Lady Liadrin
-				["coord"] = { 34.0, 77.4, SILVERMOON_CITY },
+				["coords"] = { 34.0, 77.4, GHOSTLANDS },
 				["classes"] = { PALADIN },
 				["groups"] = {
 					i(191566),	-- Elusive Emerald Hawkstrider (MOUNT!)
@@ -118,9 +120,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["coord"] = { 34.8, 81.9, GHOSTLANDS },
 				["questID"] = 66480,
 				["classes"] = { PALADIN },
-				["groups"] = {
-					i(191957),	-- Fallen Knight's Ranseur
-				},
+				["groups"] = { i(191957) },	-- Fallen Knight's Ranseur
 			}),
 		}),
 	})),

@@ -6,12 +6,11 @@ local _, app = ...;
 -- Encapsulates the functionality for handling and checking Upgrade information
 
 -- Global locals
-local floor, 	  type, tonumber, ipairs, pairs
-	= math.floor, type, tonumber, ipairs, pairs
+local floor, 	 type,tonumber,ipairs,pairs,rawget
+	= math.floor,type,tonumber,ipairs,pairs,rawget
 
 -- App locals
-local SearchForFieldContainer, IsRetrieving
-= app.SearchForFieldContainer, app.Modules.RetrievingData.IsRetrieving
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 
 -- Upgrade API Implementation
 -- Access via AllTheThings.Modules.Upgrade
@@ -367,28 +366,73 @@ local BonusIDNextUnlock = {
 	-- 12274-12281
 
 	-- Veteran
-	[12282] = 12286,
-	[12283] = 12286,
-	[12284] = 12286,
-	[12285] = 12286,
+	-- [12282] = 12286,
+	-- [12283] = 12286,
+	-- [12284] = 12286,
+	-- [12285] = 12286,
 	-- 12286-12289
 
 	-- Champion
-	[12290] = 12294,
-	[12291] = 12294,
-	[12292] = 12294,
-	[12293] = 12294,
+	-- [12290] = 12294,
+	-- [12291] = 12294,
+	-- [12292] = 12294,
+	-- [12293] = 12294,
 	-- 12294-12297
 
 	-- Hero
-	[12350] = 12354,
-	[12351] = 12354,
-	[12352] = 12354,
-	[12353] = 12354,
+	-- [12350] = 12354,
+	-- [12351] = 12354,
+	-- [12352] = 12354,
+	-- [12353] = 12354,
 	-- 12354-12355
 
 	-- Myth
 	-- 12356-12361
+
+	-- 12.0 - [https://wago.tools/db2/ItemBonus?build=12.0.1.66431&filter%5BType%5D=34&filter%5BValue_1%5D=97&page=3&sort%5BParentItemBonusListID%5D=asc]
+	-- Explorer [970-607]
+
+	-- Adventurer [971-608]
+
+	-- Veteran [972-609]
+	[12777] = 12782,
+	[12778] = 12782,
+	[12779] = 12782,
+	[12780] = 12782,
+	[12781] = 12782,
+	-- [12782] = 12782,
+	-- [12783] = 12782,
+	-- [12784] = 12782,
+
+	-- Champion [973-610]
+	[12785] = 12790,
+	[12786] = 12790,
+	[12787] = 12790,
+	[12788] = 12790,
+	[12789] = 12790,
+	-- [12790] = 12790,
+	-- [12791] = 12790,
+	-- [12792] = 12790,
+
+	-- Hero [974-611]
+	[12793] = 12798,
+	[12794] = 12798,
+	[12795] = 12798,
+	[12796] = 12798,
+	[12797] = 12798,
+	-- [12798] = 12798,
+	-- [12799] = 12798
+	-- [12800] = 12798
+
+	-- Myth [978-612]
+	-- 12801
+	-- 12802
+	-- 12803
+	-- 12804
+	-- 12805
+	-- 12806
+	-- 12807
+	-- 12808
 
 }
 -- Which bonusID nested upgrades are allowed to be nested under an already-upgraded listing
@@ -487,11 +531,17 @@ local function GetUpgrade(t, up)
 				return
 			end
 			-- this case always means we expected an upgrade, but got none, which means the upgrade item
-			-- is not yet loaded in the Client an`d cannot return the proper SourceID because Blizzard.
+			-- is not yet loaded in the Client and cannot return the proper SourceID because Blizzard.
 			return false
 		end
 		ItemSourceCache[modItemID] = itemSource
 		-- app.PrintDebug("UPGRADE=>CACHE",modItemID,"==",itemSource.hash)
+	end
+
+	-- if the upgrade is identical sourceID, ignore it
+	if itemSource.sourceID == t.sourceID then
+		-- app.PrintDebug("GU:upgrade is same",t.hash,t.modItemID,"=+>",itemSource.hash,itemSource.modItemID)
+		return
 	end
 
 	-- cache the upgrade within the item itself
@@ -504,32 +554,28 @@ api.GetUpgrade = GetUpgrade;
 -- Returns the different and upgraded version of 't' (via 'up' field only)
 local function HasUpgrade(t)
 
-	-- app.PrintDebug("HU:",t.hash,t.modItemID,t.up,t._up)
 	-- '.up' is the modID.bonusID portion of the respective upgrade item defined in ATT
 	local up = t.up;
+	-- app.PrintDebug("HU:",t.hash,t.modItemID,up,t._up,"|")
 	if not up then
 		-- app.PrintDebug("no upgrade",t.modItemID)
-		return;
+		return
 	end
 
 	-- find or create the upgrade for cached reference
 	return t._up or GetUpgrade(t, up)
 end
 
-local UpgradeSources = {}
+local UpgradeSources = setmetatable({}, app.MetaTable.AutoTable)
 
 local function SetupUpgrade(t)
-	local upgrade = t._up or HasUpgrade(t);
+	local upgrade = HasUpgrade(t);
 	if upgrade then
 		t.isUpgrade = upgrade.collectible and not upgrade.collected
 		-- app.PrintDebug("SetupUpgrade",t.isUpgrade,app:SearchLink(t),"=>",app:SearchLink(upgrade))
 		-- store the upgrade source for ad-hoc updates
 		local upgradehash = upgrade.hash
 		local sources = UpgradeSources[upgradehash]
-		if not sources then
-			sources = {}
-			UpgradeSources[upgradehash] = sources
-		end
 		sources[#sources + 1] = t
 		Runner.Run(DGU, t)
 		return
@@ -546,7 +592,7 @@ local function SetupUpgrade(t)
 	end
 end
 local function CheckIsUpgrade(t)
-	local upgrade = t._up or HasUpgrade(t);
+	local upgrade = HasUpgrade(t);
 	if upgrade then
 		t.isUpgrade = upgrade.collectible and not upgrade.collected
 		-- app.PrintDebug("CheckIsUpgrade",t.isUpgrade,app:SearchLink(t),"=>",app:SearchLink(upgrade))
@@ -567,7 +613,7 @@ end
 
 local function OnSearchResultUpdate(t)
 	-- app.PrintDebug("UpdateUpgradeGroup",app:SearchLink(t))
-	local sources = UpgradeSources[t.hash]
+	local sources = rawget(UpgradeSources, t.hash)
 	if not sources then return end
 	for _,upgradeSource in ipairs(sources) do
 		-- app.PrintDebug("UpdateUpgradeGroup.source",app:SearchLink(upgradeSource))
@@ -607,7 +653,7 @@ local function UpdateUpgrades()
 
 	wipe(UpgradeSources)
 	-- Get all up entries
-	for up,refs in pairs(SearchForFieldContainer("up")) do
+	for up,refs in pairs(app.SearchForFieldContainer("up")) do
 		Runner.Run(UpdateUpgradeGroups, refs)
 	end
 
@@ -648,7 +694,7 @@ end
 
 -- Returns whether 't' has an upgrade AND it is uncollected
 api.CollectibleAsUpgrade = function(t)
-	local upgrade = t._up or HasUpgrade(t);
+	local upgrade = t._up or NextUpgrade(t);
 	return upgrade and not upgrade.collected;
 end
 
@@ -669,12 +715,6 @@ app.AddEventHandler("OnLoad", function()
 				-- app.PrintDebug("mark working",FillData.Root.hash,app:SearchLink(FillData.Root))
 				FillData.Root.working = true
 			end
-			return
-		end
-
-		-- upgrade has to actually be different than the source item
-		if nextUpgrade.sourceID == group.sourceID then
-			-- app.PrintDebug("GU:upgrade is same",group.hash,group.modItemID,"=+>",nextUpgrade.hash,nextUpgrade.modItemID)
 			return
 		end
 

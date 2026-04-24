@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(LOCH_MODAN, {
 		["lore"] = "Loch Modan is a large area east of Dun Morogh, situated in eastern Khaz Modan. It is known for its temperate climate, abandoned archaeological dig site and, until the cataclysm, the huge lake from which the region takes its name. The gray and rugged Khaz Modan mountains rise up on all sides around the loch, and the hills are lightly wooded with pine and birch.\n\nLoch Modan is heavily populated by hostile troggs, unearthed from caves below ground by the dwarven digs. They have since settled in the surrounding mountainous area and built crude camps and caves from which to strike at passing travelers. Other dangers include dangerous wildlife, aggressive kobolds, and the powerful ogres of the Mo'grosh Stronghold.",
@@ -19,18 +20,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26147,	-- Bigger and Uglier
 						25118,	-- Looking for Lurkers
 						13648,	-- WANTED: The Dark Iron Spy
-						--	two above are definitely required; unclear if these are
-						--	26145,	-- The Trogg Threat
-						--	26842,	-- Out of Gnoll-where
-						--	26860,	-- Thelsamar Blood Sausages
+						-- two above are definitely required; unclear if these are
+						-- 26145,	-- The Trogg Threat
+						-- 26842,	-- Out of Gnoll-where
+						-- 26860,	-- Thelsamar Blood Sausages
 						26868,	-- Axis of Awful
 						27116,	-- The Winds of Loch Modan
 						27033,	-- Skystrider's Heart
 						27037,	-- Vyrin's Revenge (#2)
 						27026,	-- Defcon: Bobcat
-						--	above definitely required; unclear if these are
-						--	27028,	-- Hornet Hunting
-						--	27030,	-- Foxtails by the Handful
+						-- above definitely required; unclear if these are
+						-- 27028,	-- Hornet Hunting
+						-- 27030,	-- Foxtails by the Handful
 
 						-- #if AFTER 5.0.4
 						-- Patch 5.0.4 (2012-08-28): Merged with Wetlands quests.
@@ -44,7 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25857,	-- Hunting Horrorjaw
 						26189,	-- The Angerfang Menace
 						25868,	-- Yorla Darksnare
-						--[[	TODO: possibly required -- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
+						--[[	TODO: possibly required	-- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
 						25855,	-- Gizmos and Gadgets
 						25850,	-- Strike the Earth!
 						25853,	-- Tooling Around
@@ -109,32 +110,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(208838, {	-- Dark Iron Lockbox
-						["coord"] = { 56.6, 14.0, LOCH_MODAN },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							1222,	-- Dark Iron Sapper
-							1169,	-- Dark Iron Insurgent
-						},
-						["groups"] = {
-							i(208771, {	-- Rune of Blade Dance
-								["classes"] = { ROGUE },
-								["groups"] = {
-									recipe(400099),	-- Engrave Pants - Blade Dance
-								},
-							}),
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(208838, {	-- Dark Iron Lockbox
+					["coord"] = { 56.6, 14.0, LOCH_MODAN },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						1222,	-- Dark Iron Sapper
+						1169,	-- Dark Iron Insurgent
+					},
+					["groups"] = {
+						i(208771, {	-- Rune of Blade Dance
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(400099),	-- Engrave Pants - Blade Dance
+							},
+						}),
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {
 				q(250, {	-- A Dark Threat Looms (1/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
-					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -156,7 +154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
 						{ "i", 2563 },	-- Strange Smelling Powder
 					},
-					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -168,7 +166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1073 },	-- Ashlan Stonesmirk
 						{ "i", 2609 },	-- Disarming Colloid
 					},
-					["coord"] = { 50, 18.2, WETLANDS },
+					["coord"] = { 50.0, 18.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -176,7 +174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(278, {	-- A Dark Threat Looms (5/7)
 					["sourceQuest"] = 274,	-- A Dark Threat Looms (4/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
-					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -216,7 +214,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
 						{ "i", 2610 },	-- Disarming Mixture
 					},
-					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -586,7 +584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/5 Crocolisk Meat
-							["cost"] = {{ "i", 2924, 5 }},	-- Crocolisk Meat
+							["cost"] = { { "i", 2924, 5 } },	-- Crocolisk Meat
 							["crs"] = {
 								5053,	-- Deviate Crocolisk
 								2476,	-- Large Loch Crocolisk
@@ -897,7 +895,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1681 },	-- Brock Stoneseeker
 						{ "i", 16310 },	-- Brock's List (PQI!)
 					},
-					["coord"] = { 37, 47.8, LOCH_MODAN },
+					["coord"] = { 37.0, 47.8, LOCH_MODAN },
 					["races"] = { DWARF, GNOME },
 					["lvl"] = 10,
 				}),
@@ -978,7 +976,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Grawmug slain
 							["provider"] = { "n", 1205 },	-- Grawmug
-							["coord"] = { 33.2, 91, LOCH_MODAN },
+							["coord"] = { 33.2, 91.0, LOCH_MODAN },
 						}),
 						objective(2, {	-- 0/1 Gnasher slain
 							["provider"] = { "n", 1206 },	-- Gnasher
@@ -1112,7 +1110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1339, {	-- Mountaineer Stormpike's Task
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 34.8, 47, LOCH_MODAN },
+					["coord"] = { 34.8, 47.0, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1146,7 +1144,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(302, {	-- Powder to Ironband
 					["sourceQuest"] = 301,	-- Report to Ironforge
 					["qg"] = 1356,	-- Prospector Stormpike
-					["coord"] = { 74.4, 12, IRONFORGE },
+					["coord"] = { 74.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -1198,7 +1196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(416, {	-- Rat Catching
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 34.8, 47, LOCH_MODAN },
+					["coord"] = { 34.8, 47.0, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -1248,7 +1246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(468, {	-- Report to Mountaineer Rockgar
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 34.8, 47, LOCH_MODAN },
+					["coord"] = { 34.8, 47.0, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1676,7 +1674,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_1 },
 				}),
-				n(1398, {  -- Boss Galgosh <Stonesplinter Chieftain>
+				n(1398, { 	-- Boss Galgosh <Stonesplinter Chieftain>
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 69.6, 60.0, LOCH_MODAN },
@@ -1700,7 +1698,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(14267, {  -- Emogg the Crusher
+				n(14267, { 	-- Emogg the Crusher
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.4, 29.0, LOCH_MODAN },
@@ -1726,7 +1724,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if AFTER 4.0.3
-				n(2476, {  -- Gosh-Haldir [CATA+] / Large Loch Crocolisk
+				n(2476, { 	-- Gosh-Haldir [CATA+] / Large Loch Crocolisk
 					["coords"] = {
 						{ 56.4, 51.8, LOCH_MODAN },
 						{ 55.6, 55.8, LOCH_MODAN },
@@ -1762,7 +1760,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.6, 15.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				n(1425, {  -- Grizlak / Kubb [CATA+]
+				n(1425, { 	-- Grizlak / Kubb [CATA+]
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 26.0, 27.0, LOCH_MODAN },
@@ -1797,7 +1795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				-- #if BEFORE 4.0.3
-				n(2476, {  -- Large Loch Crocolisk / Gosh-Haldir [CATA+]
+				n(2476, { 	-- Large Loch Crocolisk / Gosh-Haldir [CATA+]
 					["coords"] = {
 						{ 58.8, 28.2, LOCH_MODAN },
 						{ 59.8, 31.8, LOCH_MODAN },
@@ -1814,7 +1812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				n(14268, {  -- Lord Condar
+				n(14268, { 	-- Lord Condar
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 67.4, 76.0, LOCH_MODAN },
@@ -1830,7 +1828,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				n(1399, {  -- Magosh <Stonesplinter Tribal Shaman>
+				n(1399, { 	-- Magosh <Stonesplinter Tribal Shaman>
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 31.0, 75.6, LOCH_MODAN },
@@ -1878,7 +1876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.6, 44.8, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				n(14266, {  -- Shanda the Spinner
+				n(14266, { 	-- Shanda the Spinner
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 61.6, 74.6, LOCH_MODAN },
@@ -1940,7 +1938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
 					["coord"] = { 36.6, 20.8, LOCH_MODAN },
-					["cost"] = {{ "i", 208823, 1 }},	-- Offering Coin
+					["cost"] = { { "i", 208823, 1 } },	-- Offering Coin
 					["classes"] = { PRIEST },
 					["groups"] = {
 						recipe(425215),	-- Engrave Chest - Twisted Faith
@@ -2063,7 +2061,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 						i(246422, {	-- Thelsamar Hanging Lantern (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "g", 2850000 }},	-- 285g
+							["cost"] = { { "g", 2850000 } },	-- 285g
 						}),
 					},
 				}),

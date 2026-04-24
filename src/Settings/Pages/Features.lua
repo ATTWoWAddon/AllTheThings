@@ -55,50 +55,28 @@ end)
 checkboxShowMinimapButton:SetATTTooltip(L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP)
 checkboxShowMinimapButton:SetPoint("TOPLEFT", headerMinimapButton, "BOTTOMLEFT", -2, 0)
 
-local sliderMinimapButtonSize = CreateFrame("Slider", "ATTsliderMinimapButtonSize", child, "UISliderTemplate")
-sliderMinimapButtonSize:SetPoint("TOPLEFT", checkboxShowMinimapButton, "BOTTOMLEFT", 5, -12)
-table.insert(settings.Objects, sliderMinimapButtonSize)
-settings.sliderMinimapButtonSize = sliderMinimapButtonSize
-sliderMinimapButtonSize.tooltipText = L.MINIMAP_SLIDER_TOOLTIP
-sliderMinimapButtonSize:SetOrientation('HORIZONTAL')
+local sliderMinimapButtonSize = child:CreateSlider("ATTsliderMinimapButtonSize", {
+	TEXT=L.MINIMAP_SLIDER,
+	TOOLTIP=L.MINIMAP_SLIDER_TOOLTIP,
+	MIN=18, MAX=48, STEP=1,
+	SETTING="MinimapSize",
+	FORMAT="%.0f",
+	OnRefresh=function(self)
+		if not settings:GetTooltipSetting("MinimapButton") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	OnValueChanged=function(self)
+		app.SetMinimapButtonSettings(settings:GetTooltipSetting("MinimapButton"),settings:GetTooltipSetting("MinimapSize"));
+	end,
+})
 sliderMinimapButtonSize:SetWidth(200)
 sliderMinimapButtonSize:SetHeight(20)
-sliderMinimapButtonSize:SetValueStep(1)
-sliderMinimapButtonSize:SetMinMaxValues(18, 48)
-sliderMinimapButtonSize:SetObeyStepOnDrag(true)
-sliderMinimapButtonSize.Text = sliderMinimapButtonSize:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderMinimapButtonSize.Text:SetPoint("BOTTOMLEFT", sliderMinimapButtonSize, "TOPLEFT", 0, 0)
-sliderMinimapButtonSize.Text:SetText(L.MINIMAP_SLIDER)
-sliderMinimapButtonSize.Text:SetTextColor(1, 1, 1)
-sliderMinimapButtonSize.LabelLow = sliderMinimapButtonSize:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMinimapButtonSize.LabelLow:SetPoint("TOPLEFT", sliderMinimapButtonSize, "BOTTOMLEFT", 0, 2)
-sliderMinimapButtonSize.LabelLow:SetText('18')
-sliderMinimapButtonSize.LabelHigh = sliderMinimapButtonSize:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMinimapButtonSize.LabelHigh:SetPoint("TOPRIGHT", sliderMinimapButtonSize, "BOTTOMRIGHT", 0, 2)
-sliderMinimapButtonSize.LabelHigh:SetText('48')
-sliderMinimapButtonSize.Label = sliderMinimapButtonSize:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMinimapButtonSize.Label:SetPoint("TOP", sliderMinimapButtonSize, "BOTTOM", 0, 2)
-sliderMinimapButtonSize.Label:SetText(sliderMinimapButtonSize:GetValue())
-sliderMinimapButtonSize:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue)
-	if newValue == settings:GetTooltipSetting("MinimapSize") then
-		return 1
-	end
-	settings:SetTooltipSetting("MinimapSize", newValue)
-	app.SetMinimapButtonSettings(
-		settings:GetTooltipSetting("MinimapButton"),
-		settings:GetTooltipSetting("MinimapSize"));
-end)
-sliderMinimapButtonSize.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("MinimapButton") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end
-
+sliderMinimapButtonSize:SetPoint("TOPLEFT", checkboxShowMinimapButton, "BOTTOMLEFT", 5, -12)
 
 local checkboxShowWorldMapButton = child:CreateCheckBox(L.WORLDMAP_BUTTON_CHECKBOX,
 function(self)
@@ -106,7 +84,6 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("WorldMapButton", self:GetChecked())
-	app.SetWorldMapButtonSettings(settings:GetTooltipSetting("WorldMapButton"));
 end)
 checkboxShowWorldMapButton:SetATTTooltip(L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP)
 checkboxShowWorldMapButton:SetPoint("TOP", sliderMinimapButtonSize, "BOTTOM", 0, -8)
@@ -143,37 +120,17 @@ end)
 checkboxAutomaticallySkipCutscenes:SetATTTooltip(L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP)
 checkboxAutomaticallySkipCutscenes:SetPoint("TOPLEFT", headerModules, "BOTTOMLEFT", -2, 0)
 
-local checkboxAutomaticallyOpenBountyList;
+local checkboxFilterMiniListTimerunning;
 if app.IsRetail then
-	-- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
-	local checkboxAutomaticallyOpenMainList = child:CreateCheckBox(L.AUTO_MAIN_LIST_CHECKBOX,
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Auto:MainList"))
-	end,
-	function(self)
-		settings:SetTooltipSetting("Auto:MainList", self:GetChecked())
-	end)
-	checkboxAutomaticallyOpenMainList:SetATTTooltip(L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP)
-	checkboxAutomaticallyOpenMainList:AlignBelow(checkboxAutomaticallySkipCutscenes)
-
-	local checkboxAutomaticallyOpenMiniList = child:CreateCheckBox(L.AUTO_MINI_LIST_CHECKBOX,
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Auto:MiniList"))
-	end,
-	function(self)
-		settings:SetTooltipSetting("Auto:MiniList", self:GetChecked())
-	end)
-	checkboxAutomaticallyOpenMiniList:SetATTTooltip(L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP)
-	checkboxAutomaticallyOpenMiniList:AlignBelow(checkboxAutomaticallyOpenMainList)
-
 	-- TODO: revise with Legion Remix so that Minilist can grab/assign extra filters without needing to be loaded immediately
 	-- in case someone isn't even using it
 	local function AddTimerunningToCurrentInstance()
 		local active = settings:GetTooltipSetting("Filter:MiniList:Timerunning")
-		app:GetWindow("CurrentInstance").Filters = active and { Timerunning = true } or nil
+		local minilist = app:GetWindow("MiniList", true)
+		if minilist then minilist.Filters = active and { Timerunning = true } or nil end
 	end
 	app.AddEventHandler("OnLoad", AddTimerunningToCurrentInstance)
-	local checkboxFilterMiniListTimerunning = child:CreateCheckBox(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX,
+	checkboxFilterMiniListTimerunning = child:CreateCheckBox(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX,
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Filter:MiniList:Timerunning"))
 		self:SetAlpha(app.Modules.Events.IsTimerunningActive and 1 or 0.4)
@@ -188,92 +145,36 @@ if app.IsRetail then
 		app.HandleEvent("OnRecalculate_NewSettings")
 	end)
 	checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
-	checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallyOpenMiniList, 1)
-
-	checkboxAutomaticallyOpenBountyList = child:CreateCheckBox(L.AUTO_BOUNTY_CHECKBOX,
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"))
-	end,
-	function(self)
-		settings:SetTooltipSetting("Auto:BountyList", self:GetChecked())
-	end)
-	checkboxAutomaticallyOpenBountyList:SetATTTooltip(L.AUTO_BOUNTY_CHECKBOX_TOOLTIP)
-	checkboxAutomaticallyOpenBountyList:AlignBelow(checkboxFilterMiniListTimerunning, -1)
+	checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallySkipCutscenes, 1)
 end
 
-local checkboxAutomaticallyOpenProfessionList = child:CreateCheckBox(L.AUTO_PROF_LIST_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"))
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked())
-end)
-checkboxAutomaticallyOpenProfessionList:SetATTTooltip(L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxAutomaticallyOpenBountyList or checkboxAutomaticallySkipCutscenes)
-
-if app.IsRetail then
--- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
-local checkboxAutomaticallyOpenRaidAssistant = child:CreateCheckBox(L.AUTO_RAID_ASSISTANT_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:RaidAssistant"))
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:RaidAssistant", self:GetChecked())
-end)
-checkboxAutomaticallyOpenRaidAssistant:SetATTTooltip(L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenRaidAssistant:AlignBelow(checkboxAutomaticallyOpenProfessionList)
-
-local checkboxAutomaticallyOpenWorldQuestList = child:CreateCheckBox(L.AUTO_WQ_LIST_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"))
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:WorldQuestsList", self:GetChecked())
-end)
-checkboxAutomaticallyOpenWorldQuestList:SetATTTooltip(L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenWorldQuestList:AlignBelow(checkboxAutomaticallyOpenRaidAssistant)
-
--- AH Module is disabled in Retail currently
---[[
-local checkboxShowAHModule = child:CreateCheckBox(L.AUCTION_TAB_CHECKBOX,
-function(self)
-	self:SetChecked(false)
-	self:Disable()
-	self:SetAlpha(0.4)
-	-- self:SetChecked(settings:GetTooltipSetting("Auto:AH"))
-end,
-function(self)
-	-- settings:SetTooltipSetting("Auto:AH", self:GetChecked())
-	-- if app.Blizzard_AuctionHouseUILoaded then
-	-- 	if app.AuctionModuleTabID then
-	-- 		if self:GetChecked() then
-	-- 			PanelTemplates_EnableTab(AuctionHouseFrame, app.AuctionModuleTabID)
-	-- 			app:OpenAuctionModule()
-	-- 		else
-	-- 			PanelTemplates_DisableTab(AuctionHouseFrame, app.AuctionModuleTabID)
-	-- 		end
-	-- 	else
-	-- 		app:OpenAuctionModule()
-	-- 	end
-	-- end
-end)
-checkboxShowAHModule:SetATTTooltip(L.AUCTION_TAB_CHECKBOX_TOOLTIP)
-checkboxShowAHModule:AlignBelow(checkboxAutomaticallyOpenWorldQuestList or checkboxAutomaticallyOpenProfessionList)
-]]--
-
-else
-local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:AuctionList"));
-end,
-function(self)
-	local checked = self:GetChecked();
-	settings:SetTooltipSetting("Auto:AuctionList", checked);
-	if checked then
-		local window = app:GetWindow("Auctions");
-		if window then window:UpdatePosition(); end
+if app.IsClassic then
+	local checkboxAutomaticallyOpenProfessionList = child:CreateCheckBox(L.AUTO_PROF_LIST_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"))
+	end,
+	function(self)
+		settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked())
+	end)
+	checkboxAutomaticallyOpenProfessionList:SetATTTooltip(L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP)
+	if checkboxFilterMiniListTimerunning then
+		checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxFilterMiniListTimerunning, -1)
+	else
+		checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxAutomaticallySkipCutscenes)
 	end
-end);
-OpenAuctionListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Auction List when you open the auction house.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Auction List\n\nShortcut Command: /attauctions");
-OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenProfessionList)
+
+	local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Auto:AuctionList"));
+	end,
+	function(self)
+		local checked = self:GetChecked();
+		settings:SetTooltipSetting("Auto:AuctionList", checked);
+		if checked then
+			local window = app:GetWindow("Auctions");
+			if window then window:UpdatePosition(); end
+		end
+	end);
+	OpenAuctionListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Auction List when you open the auction house.\n\nShortcut Command: /attauctions");
+	OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenProfessionList)
 end

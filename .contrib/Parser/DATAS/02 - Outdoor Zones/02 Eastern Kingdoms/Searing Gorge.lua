@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(SEARING_GORGE, {
 		["lore"] = "Just as Blackrock orcs and their allies dominate Burning Steppes, so Dark Iron dwarves dominate the Searing Gorge. A large population of Dark Iron dwarves, War Golems, and Elementals resides in this dark, mountainous area.\n\nThe climate is very similar to Burning Steppes, as it was the same catastrophe that blackened both: the summoning of Ragnaros. The Searing Gorge is a part of Khaz Modan. Before being shattered by the summoning it was a mountainous region, part of the Redridge Mountains.\n\nLarge mining operations take place in The Cauldron, a giant excavation site forming a huge rift in the middle of the Searing Gorge. The Slag Pit lies within The Cauldron and is an underground mining site rich with multiple types of ore. The mining work is mainly done by slave labor, which consists for the most part of captured enemies.\n\nEver since the Dark Iron dwarves' capital, Thaurissan, was destroyed by the summoning of Ragnaros, they have searched for a landmass to control for their filthy, industrious works. The Searing Gorge was the obvious choice due to a low military presence, scarce population, few settlements, and high vulnerability. The dwarven garrisons were soon overrun by a massive Dark Iron invasion which forced them to retreat to Loch Modan and seal the passage.",
@@ -39,14 +40,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				icon = 237588,
 				text = {
 					en = "Blackrock Eruption",
+					de = "Ausbruch des Schwarzfels",
 					es = "Erupción de Roca Negra",
 					mx = "Erupción de Roca Negra",
-					de = "Ausbruch des Schwarzfels",
 					fr = "Éruption de Blackrock",
-					-- it = "",
+					-- TODO: it = "",
+					ko = "검은바위 분출",
 					pt = "Erupção da Rocha Negra",
 					ru = "Извержение Черной горы",
-					ko = "검은바위 분출",
 					cn = "黑石大爆发",
 					tw = "黑石爆發",
 				},
@@ -110,7 +111,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					q(84356, {	-- Oh, Shiny!
 						["qg"] = 14624,	-- Master Smith Burninate <The Thorium Brotherhood>
-						["coord"] = { 38.6, 28.6, SEARING_GORGE },
+						["coord"] = { 38.8, 28.5, SEARING_GORGE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Flamestone Cluster
 								["provider"] = { "i", 227767 },	-- Flamestone Cluster
@@ -292,6 +293,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179494, {	-- Dented Footlocker
+					["coords"] = {
+						{ 45.9, 28.3, SEARING_GORGE },
+						{ 37.0, 39.8, SEARING_GORGE },
+						{ 48.5, 43.1, SEARING_GORGE },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 200,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66515, {	-- Kortas Darkhammer <Master Pet Tamer>
 					["coord"] = { 35.4, 27.8, SEARING_GORGE },
@@ -971,6 +985,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3377, {	-- Prayer to Elune (1/2)
 					["qg"] = 8436,	-- Zamael Lunthistle
+					["coord"] = { 29.6, 26.6, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -978,6 +993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3378, {	-- Prayer to Elune (2/2)
 					["sourceQuest"] = 3377,	-- Prayer to Elune (1/2)
 					["qg"] = 8436,	-- Zamael Lunthistle
+					["coord"] = { 29.6, 26.6, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -1176,16 +1192,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 8391 },	-- Lathoric the Black
 							["coord"] = { 41.2, 25.6, SEARING_GORGE },
 						}),
-						i(63240, {  -- Dark Iron Axe
+						i(63240, { 	-- Dark Iron Axe
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63239, {  -- Belt of Turning Tides
+						i(63239, { 	-- Belt of Turning Tides
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63238, {  -- Suntara Spaulders
+						i(63238, { 	-- Suntara Spaulders
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63237, {  -- Sootsmoke Wand
+						i(63237, { 	-- Sootsmoke Wand
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156936, {	-- Dark Iron Pike
@@ -1205,28 +1221,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  10515 },	-- Torch of Retribution
 								{ "o", 149025 },	-- Sentry Brazier
 							},
-							["coord"] = { 33, 60, SEARING_GORGE },
+							["coord"] = { 33.0, 60.0, SEARING_GORGE },
 						}),
 						objective(2, {	-- Southern Tower Ablaze
 							["providers"] = {
 								{ "i",  10515 },	-- Torch of Retribution
 								{ "o", 149030 },	-- Sentry Brazier
 							},
-							["coord"] = { 44, 60, SEARING_GORGE },
+							["coord"] = { 44.0, 60.0, SEARING_GORGE },
 						}),
 						objective(3, {	-- Eastern Tower Ablaze
 							["providers"] = {
 								{ "i",  10515 },	-- Torch of Retribution
 								{ "o", 149031 },	-- Sentry Brazier
 							},
-							["coord"] = { 50, 55, SEARING_GORGE },
+							["coord"] = { 50.0, 55.0, SEARING_GORGE },
 						}),
 						objective(4, {	-- Northern Tower Ablaze
 							["providers"] = {
 								{ "i",  10515 },	-- Torch of Retribution
 								{ "o", 149032 },	-- Sentry Brazier
 							},
-							["coord"] = { 33, 54, SEARING_GORGE },
+							["coord"] = { 33.0, 54.0, SEARING_GORGE },
 						}),
 						i(10742, {	-- Dragonflight Leggings
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1452,15 +1468,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11818 },	-- Grimesilt Outhouse Key
 						{ "o", 173265 },	-- Wooden Outhouse
 					},
+					["coord"] = { 65.6, 62.5, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["crs"] = {
-						15692,	-- Dark Iron Kidnapper
-						8566,	-- Dark Iron Lookout
-						8504,	-- Dark Iron Sentry
-						5844,	-- Dark Iron Slaver
-						5840,	-- Dark Iron Steamsmith
-						5846,	-- Dark Iron Taskmaster
-					},
 					["lvl"] = 43,
 				}),
 				q(28035, {	-- The Mountain-Lord's Support
@@ -1468,6 +1477,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47393,	-- Mountain-Lord Rendan
 					["coord"] = { 39.4, 67.8, SEARING_GORGE },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						i(245333, {	-- Shadowforge Wooden Box (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				q(28032, {	-- The Mysteries of the Fire-Gizzard
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
@@ -1582,13 +1596,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								8566,	-- Dark Iron Lookout
 							},
 						}),
-						i(63229, {  -- K'Vlar Vest
+						i(63229, { 	-- K'Vlar Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63228, {  -- Rendan's Signet
+						i(63228, { 	-- Rendan's Signet
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63227, {  -- Dark Iron Gun
+						i(63227, { 	-- Dark Iron Gun
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156937, {	-- Dark Iron Blackjack
@@ -1708,6 +1722,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(63242, {	-- Amulet of the Thorium Brotherhood
 							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(246409, {	-- Shadowforge Grinding Wheel (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					},
 				}),
@@ -1940,6 +1957,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
+			n(VENDORS, {
+				n(14624, {	-- Master Smith Burninate <The Thorium Brotherhood>
+					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["groups"] = {
+						i(246409, {	-- Shadowforge Grinding Wheel (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "g", 5600000 } },	-- 560g
+						}),
+						i(245333, {	-- Shadowforge Wooden Box (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "g", 1200000 } },	-- 120g
+						}),
+					},
+				}),
+			}),
 			n(ZONE_DROPS, {
 				i(62916, {	-- Dark Iron Bullet
 					["description"] = "In addition to being looted, this item can also be passively obtained by being attacked by said creatures. Required for the quest 'They Build a Better Bullet', is otherwise safe to discard.",
@@ -1951,6 +1983,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(18944, {	-- Incendosaur Scale
 					["cr"] = 9318,	-- Incendosaur
+				}),
+				i(11818, {	-- Grimesilt Outhouse Key
+					["timeline"] = { REMOVED_4_0_3 },
+					["crs"] = {
+						15692,	-- Dark Iron Kidnapper
+						8566,	-- Dark Iron Lookout
+						8504,	-- Dark Iron Sentry
+						5844,	-- Dark Iron Slaver
+						5840,	-- Dark Iron Steamsmith
+						5846,	-- Dark Iron Taskmaster
+					},
 				}),
 				i(142359, {	-- Lava Oil
 					["coord"] = { 48.0, 42.3, SEARING_GORGE },

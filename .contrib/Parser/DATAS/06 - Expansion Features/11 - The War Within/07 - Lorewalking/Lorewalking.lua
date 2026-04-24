@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 LOREWALKING = createHeader({
 	readable = "Lorewalking",
 	icon = 441147,--[[~_.asset("Feature_Lorewalking")]]--,	-- TODO Not a real asset file
@@ -8,12 +9,12 @@ LOREWALKING = createHeader({
 		en = "Lorewalking",
 		de = "Lehrensuche",
 		es = "Paseo por la historia",
+		mx = "Cronoleyenda",
 		fr = "Chroniques",
 		it = "Cammino della Storia",
-		mx = "Cronoleyenda",
+		ko = "전승",
 		pt = "Trilha das Lendas",
 		ru = "Историческая кампания",
-		ko = "전승",
 		cn = "游学探奇",
 		tw = "故事漫遊",
 	},
@@ -34,10 +35,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["timeline"] = { ADDED_11_2_7 },
 					}),
 				}),
-				ach(61467, {	-- Lorewalking: The Elves of Quel'thalas
-					["timeline"] = { ADDED_11_2_7 },
+				ach(61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
 					["groups"] = { i(245332) },	-- Tome of Silvermoon Intrigue (DECOR!)
-				}),
+				})),
 				ach(42189, {	-- Lorewalking: The Lich King
 					i(257351, {	-- Tale of the Penultimate Lich King (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
@@ -52,11 +52,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 			n(QUESTS, {
 				q(90705, {	-- Lorewalking
 					["isBreadcrumb"] = true,	-- speculation
-					-- auto-pop at login on ptr build 60520 @ 80s character
+					-- auto-pop at login @ 80s character
 				}),
 				-- Only quests that throw reports and not repeated (already sorted) quest in chain
 				header(HEADERS.Achievement, 42188, {	-- Lorewalking: Blade's Bane
 					q(84371, {	-- Lorewalking: The Blade and the High Priest
+						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
 						["provider"] = { "n", 232441 },	-- Lorewalker Cho
 						["coords"] = {
 							{ 49.5, 31.6, DORNOGAL },
@@ -64,8 +65,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
 						["isRepeatable"] = true,
-						--["sourceQuests"] = { 90705 },	-- Lorewalking
-						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
 						["groups"] = {
 							o(247690, {	-- Xal'atath
 								["coord"] = { 58.8, 76.6, 20 },	-- Keeper's Rest
@@ -136,7 +135,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
 						["isRepeatable"] = true,
-						--["sourceQuests"] = { 90705 },	-- Lorewalking
 					}),
 					q(85029, {	-- Lorewalking: Locus-Walker
 						["sourceQuests"] = { 85027 },	-- Lorewalking: The Protectorate
@@ -172,9 +170,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						},
 					}),
 				}),
-				--header(HEADERS.Achievement, 61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
-				-- Not available on PTR... For now?
-				--})),
+				header(HEADERS.Achievement, 61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
+					-- Exo Note: Reuses parts of the "Blood Elf Heritage" and Allied Race "Nightborne" and "Void Elves" quests, that throw contrib errors because of the wrong sourceQuests
+					q(85252, {	-- Lorewalking: Children of the Blood
+						["provider"] = { "n", 230246 },	-- Lorewalker Cho
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+						},
+						["isRepeatable"] = true,
+					}),
+					q(85254, {	-- Lorewalking: Children of the Void
+						["sourceQuests"] = { 85252 },	-- Lorewalking: Children of the Blood
+						["provider"] = { "n", 234616 },	-- Lorewalker Cho
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+						},
+						["isRepeatable"] = true,
+					}),
+				})),
 				header(HEADERS.Achievement, 42189, {	-- Lorewalking: The Lich King
 					q(85884, {	-- Lorewalking: The Prince Who Would Be King
 						["provider"] = { "n", 230246 },	-- Lorewalker Cho
@@ -184,7 +201,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
 						["isRepeatable"] = true,
-						--["sourceQuests"] = { 90705 },	-- Lorewalking
 					}),
 					q(85862, {	-- A Prince's Duty
 						["sourceQuests"] = { 85884 },	-- Lorewalking: The Prince Who Would Be King
@@ -208,17 +224,81 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					}),
 					q(85875, {	-- Ascent of the Lich King
 						["sourceQuests"] = { 85885 },	-- Lorewalking: No King Rules Forever
+						-- ["provider"] = { "n", ?? },	-- auto accepted during 85885
 						["coord"] = { 51.4, 79.4, ICECROWN },
 						["isRepeatable"] = true,
-						--["provider"] = { "n", ?? },	-- auto accepted during 85885
 					}),
 					q(85878, {	-- O' Thanagor
 						["sourceQuests"] = { 85875 },	-- Ascent of the Lich King
+						-- ["provider"] = { "n", ?? },	-- auto accepted during 85885, but after 85875
+						-- ["coord"] = { X, Y, ICECROWN_CITADEL },
 						["isRepeatable"] = true,
-						--["provider"] = { "n", ?? },	-- auto accepted during 85885, but after 85875
-						--["coord"] = { X, Y, ICECROWN_CITADEL },
 					}),
 				}),
+				header(HEADERS.Quest, 93929, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- The War Within Recap
+					q(93929, {	-- The War Within Recap
+						["lvl"] = 71,
+						["isBreadcrumb"] = true,
+					}),
+					q(91843, {	-- Recap: The Harbinger
+						["qg"] = 248956,	-- Tome of History
+						["coords"] = {
+							{ 49.5, 31.9, DORNOGAL },
+							{ 46.4, 60.2, VALDRAKKEN },
+						},
+						["isRepeatable"] = true,
+					}),
+					q(91864, {	-- Recap: Fractured Visions
+						["sourceQuest"] = 91843,	-- Recap: The Harbinger
+						["qg"] = 248948,	-- Tome of History
+						["coords"] = {
+							{ 49.5, 31.9, DORNOGAL },
+							{ 46.4, 60.2, VALDRAKKEN },
+						},
+						["isRepeatable"] = true,
+						["groups"] = {
+							i(254323, {	-- Worldsoul Satchel
+								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
+							}),
+						},
+					}),
+					q(91868, {	-- Recap: Shadowy Pursuits
+						["sourceQuest"] = 91864,	-- Recap: Fractured Visions
+						["qg"] = 248948,	-- Tome of History
+						["coords"] = {
+							{ 43.0, 34.1, THE_RINGING_DEEPS },	-- If you were to continue the Recap right away
+							{ 49.5, 31.9, DORNOGAL },	-- If you were to abandon the Recap and come back later
+							{ 46.4, 60.2, VALDRAKKEN },
+						},
+						["isRepeatable"] = true,
+						["groups"] = {
+							i(254324, {	-- Worldsoul Satchel
+								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
+							}),
+						},
+					}),
+					q(91871, {	-- Recap: The Dark Heart
+						["sourceQuest"] = 91868,	-- Recap: Shadowy Pursuits
+						["qg"] = 248948,	-- Tome of History
+						["coords"] = {
+							{ 49.5, 31.9, DORNOGAL },
+							{ 46.4, 60.2, VALDRAKKEN },
+						},
+						["isRepeatable"] = true,
+						["groups"] = {
+							i(254325, {	-- Worldsoul Satchel
+								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
+							}),
+						},
+					}),
+					q(93979, {	-- Lingering Memories
+						["description"] = "'Lingering Memories' is available only through Recap Experience. It replaces the quest 'What Is Left of Home' (85032).",
+						["sourceQuest"] = 84967,	-- The Shadowguard Shattered
+						["qg"] = 231128,	-- Locus-Walker
+						["coord"] = { 37.7, 74.8, KARESH_TAZAVESH },
+						["isRepeatable"] = true,
+					}),
+				})),
 			}),
 		},
 	})),

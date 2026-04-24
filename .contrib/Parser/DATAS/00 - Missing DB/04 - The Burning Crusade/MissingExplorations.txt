@@ -4,10 +4,10 @@ exploration(66),	-- Zul'Drak \\ Reuse Me 6 \\ ***On Map Dungeon***
 exploration(67),	-- The Storm Peaks \\ Reuse Me 5 \\ ***On Map Dungeon***
 exploration(206),	-- Utgarde Keep \\ UNUSED Westfall \\ Westfall
 exploration(210),	-- Icecrown \\ Reuse Me 2 \\ ***On Map Dungeon***
-exploration(2037),	-- Quel'thalas \\ UNUSEDShadowfang Keep 003
+exploration(2037),	-- Quel'Thalas \\ Quel'thalas \\ UNUSEDShadowfang Keep 003
 exploration(2817),	-- Crystalsong Forest \\ Reuse Me 4 \\ ***On Map Dungeon***
-exploration(3430),	-- Eversong Woods
-exploration(3433),	-- Ghostlands
+exploration(3430),	-- Eversong Woods (Burning Crusade) \\ Eversong Woods
+exploration(3433),	-- Ghostlands (Burning Crusade) \\ Ghostlands
 exploration(3434),	-- Scarab Terrace
 exploration(3435),	-- General's Terrace
 exploration(3436),	-- The Reservoir
@@ -25,6 +25,7 @@ exploration(3457),	-- Karazhan
 exploration(3463),	-- Magisters Gate
 exploration(3477),	-- Azjol-Nerub \\ Karazhan *UNUSED*
 exploration(3479),	-- The Veiled Sea
+exploration(3480),	-- Duskwither Grounds
 exploration(3483),	-- Hellfire Peninsula
 exploration(3484),	-- The Sunspire
 exploration(3504),	-- Toryl Estate
@@ -59,6 +60,7 @@ exploration(3609),	-- Unused3
 exploration(3618),	-- Gruul's Lair
 exploration(3619),	-- Auren Ridge
 exploration(3620),	-- Auren Falls
+exploration(3631),	-- Spirit Fields
 exploration(3632),	-- Shamanar
 exploration(3635),	-- Unused2
 exploration(3652),	-- Funggor Cavern
@@ -103,9 +105,13 @@ exploration(3846),	-- The Arcatraz
 exploration(3847),	-- The Botanica
 exploration(3848),	-- The Arcatraz
 exploration(3849),	-- The Mechanar
+exploration(3850),	-- Netherstone
 exploration(3851),	-- Midrealm Post
 exploration(3852),	-- Tuluman's Landing
 exploration(3855),	-- Circle of Blood Arena
+exploration(3863),	-- Broken Wilds
+exploration(3866),	-- Skald
+exploration(3867),	-- Bladed Gulch
 exploration(3869),	-- Mage Tower
 exploration(3870),	-- Blood Elf Tower
 exploration(3871),	-- Draenei Ruins
@@ -113,6 +119,7 @@ exploration(3872),	-- Fel Reaver Ruins
 exploration(3880),	-- Access Shaft Zeon
 exploration(3883),	-- Camp of Boom
 exploration(3884),	-- Spinebreaker Pass
+exploration(3894),	-- Auchenai Grounds
 exploration(3896),	-- Aldor Rise
 exploration(3897),	-- Terrace of Light
 exploration(3898),	-- Scryer's Tier
@@ -132,16 +139,22 @@ exploration(3948),	-- Brian and Pat Test
 exploration(3949),	-- Magma Fields
 exploration(3959),	-- Black Temple
 exploration(3968),	-- Ruins of Lordaeron
+exploration(3978),	-- Lower Veil Shil'ak
 exploration(4009),	-- Illidari Training Grounds
 exploration(4047),	-- Nat's Landing
 exploration(4049),	-- Tabetha's Farm
+exploration(4067),	-- Plaguewood Tower
 exploration(4075),	-- Sunwell Plateau
 exploration(4076),	-- Reuse Me 7
 exploration(4080),	-- Isle of Quel'Danas
 exploration(4081),	-- The Dawnchaser
 exploration(4082),	-- The Sin'loren
+exploration(4083),	-- Silvermoon's Pride
 exploration(4084),	-- The Bloodoath
 exploration(4085),	-- Shattered Sun Staging Area
+exploration(4086),	-- Sun's Reach Sanctum
+exploration(4087),	-- Sun's Reach Harbor
+exploration(4088),	-- Sun's Reach Armory
 exploration(4090),	-- The Dawning Square
 exploration(4093),	-- The Sun Forge
 exploration(4131),	-- Magisters' Terrace

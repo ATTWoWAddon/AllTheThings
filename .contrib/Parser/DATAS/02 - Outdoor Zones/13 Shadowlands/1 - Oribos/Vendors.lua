@@ -1,11 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if BEFORE 9.2.5
 local ATTENDANTS_TOKEN_OF_MERIT = 187219;	-- Shadowlands S3
 -- #else
 local ATTENDANTS_TOKEN_OF_MERIT = 199202;	-- Shadowlands Season 4
 -- #endif
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		n(VENDORS, {
@@ -39,7 +41,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = {
 					i(188174, {	-- Unchained Equipment Cache [PvP S2]
 						["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
-						["cost"] = {{ "c", CONQUEST, 375 }},
+						["cost"] = { { "c", CONQUEST, 375 } },
 						-- #IF BEFORE 9.2.0
 						["skipFill"] = true,
 						["sym"] = {
@@ -56,7 +58,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(194118, {	-- Cosmic Equipment Chest [PvP S3]
 						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
-						["cost"] = {{ "c", CONQUEST, 375 }},
+						["cost"] = { { "c", CONQUEST, 375 } },
 						-- #IF BEFORE 9.2.5
 						["skipFill"] = true,
 						["sym"] = {
@@ -68,7 +70,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(201355, {	-- Eternal Equipment Chest [PvP S4]
 						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
-						["cost"] = {{ "c", CONQUEST, 375 }},
+						["cost"] = { { "c", CONQUEST, 375 } },
 						-- #IF BEFORE 10.0.2
 						["skipFill"] = true,
 						["sym"] = {
@@ -80,7 +82,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(188173, {	-- Valorous Equipment Cache [M+ S2]
 						["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
-						["cost"] = {{ "c", VALOR, 500 }},
+						["cost"] = { { "c", VALOR, 500 } },
 						-- #IF BEFORE 9.2.0
 						["skipFill"] = true,
 						["sym"] = {{"select", "instanceID",
@@ -104,7 +106,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(194334, {	-- Encrypted Equipment Chest [M+ S3]
 						["timeline"] = { ADDED_9_2_5, REMOVED_9_2_7 },
-						["cost"] = {{ "c", VALOR, 500 }},
+						["cost"] = { { "c", VALOR, 500 } },
 						-- #IF BEFORE 9.2.7
 						["skipFill"] = true,
 						["sym"] = {{"select", "instanceID",
@@ -128,7 +130,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(201362, {	-- Fated Equipment Chest [M+ S4]
 						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
-						["cost"] = {{ "c", VALOR, 500 }},
+						["cost"] = { { "c", VALOR, 500 } },
 						-- #IF BEFORE 10.0.2
 						["skipFill"] = true,
 						["sym"] = {{"select", "instanceID",
@@ -152,7 +154,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(188198, {	-- Travlers Anima Cache
 						["description"] = "This item allows you to transfer anima between characters in a one-to-one ratio.",
-						["cost"] = {{ "c", ANIMA, 1000 }},
+						["cost"] = { { "c", ANIMA, 1000 } },
 						["groups"] = {
 							currency(ANIMA),	-- 1000x Anima
 						},
@@ -178,7 +180,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = 100000000,	-- 10000g
 					}),
 					i(188673, {	-- Timebound Runimations
-						["cost"] = {{ "c", ANIMA, 10000 }},
+						["cost"] = { { "c", ANIMA, 10000 } },
 					}),
 				},
 			})),
@@ -243,7 +245,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					i(186992, {	-- Formula: Anima-ted Leash (RECIPE!)
-						["cost"] = {{ "i", POLISHED_PET_CHARM, 15 }},
+						["cost"] = { { "i", POLISHED_PET_CHARM, 15 } },
 					}),
 				}),
 			}),
@@ -267,25 +269,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["groups"] = {
 					i(187254, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Arrangement of Anima
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						["groups"] = {
 							currency(ANIMA),	-- Reservoir Anima
 						},
 					})),
 					i(191302, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bottled Night Sky
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						["groups"] = {
 							i(188957),	-- Genesis Mote
 						},
 					})),
 					i(187503, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bundle of Archived Research
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						["groups"] = {
 							currency(1931),	-- Cataloged Research
 						},
 					})),
 					i(191300, {	-- Certified Vouchsafe
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(191030, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Cosmic Flux Parcel
@@ -295,73 +297,73 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					})),
 					i(191297, {	-- Ephemera-Infused Mesh
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 6 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 6 } },
 						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 					}),
 					i(199112, {	-- Fated Matter Fractalizer
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
 						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 					}),
 					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Korthite Crystal Geode
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
 						["groups"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
 					i(187817, {	-- Korthite Crystal Geode
 						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
-						["cost"] = {{ "c", VALOR, 1500 }},
+						["cost"] = { { "c", VALOR, 1500 } },
 						["groups"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					}),
 					i(191303, {	-- Overflowing Chest of Riches
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
 						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					}),
 					i(187707, {	-- Progentior Essentia
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
 						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					}),
 					i(185832, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Elethium Ore
-						["cost"] = {{ "c", VALOR, 750 }},
+						["cost"] = { { "c", VALOR, 750 } },
 						["groups"] = {
 							i(171833),	-- Elethium Ore
 						},
 					})),
 					i(185765, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Heavy Callous Hide
-						["cost"] = {{ "c", VALOR, 750 }},
+						["cost"] = { { "c", VALOR, 750 } },
 						["groups"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					})),
 					i(185833, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Lightless Silk
-						["cost"] = {{ "c", VALOR, 750 }},
+						["cost"] = { { "c", VALOR, 750 } },
 						["groups"] = {
 							i(173204),	-- Lightless Silk
 						},
 					})),
 					i(187221, {	-- Soul Ash Cache
 						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						["groups"] = {
 							currency(1828),	-- Soul Ash
 						},
 					}),
 					i(187222, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Stygic Singularity
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						["groups"] = {
 							currency(1767),	-- Stygia
 						},
 					})),
 					i(191301, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Treatise on Patterns in the Purpose
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						["groups"] = {
 							currency(1979),	-- Cyphers of the First Ones
 						},
 					})),
 					i(191299, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Tribute of the Enlightened
-						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 					})),
 				},
 			})),
@@ -415,29 +417,29 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["groups"] = {
 					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Korthite Crystal Geode
-						["cost"] = {{ "c", ANIMA, 15000 }},
+						["cost"] = { { "c", ANIMA, 15000 } },
 						["groups"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
 					i(187707, {	-- Progentior Essentia
-						["cost"] = {{ "c", ANIMA, 25000 }},
+						["cost"] = { { "c", ANIMA, 25000 } },
 						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
-						["cost"] = {{ "c", ANIMA, 7500 }},
+						["cost"] = { { "c", ANIMA, 7500 } },
 						["groups"] = {
 							i(171833),	-- Elethium Ore
 						},
 					}),
 					i(185765, {	-- Shipment of Heavy Callous Hide
-						["cost"] = {{ "c", ANIMA, 7500 }},
+						["cost"] = { { "c", ANIMA, 7500 } },
 						["groups"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					}),
 					i(185833, {	-- Shipment of Lightless Silk
-						["cost"] = {{ "c", ANIMA, 7500 }},
+						["cost"] = { { "c", ANIMA, 7500 } },
 						["groups"] = {
 							i(173204),	-- Lightless Silk
 						},

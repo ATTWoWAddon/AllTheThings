@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(QUESTS, {
@@ -566,6 +567,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.1, 34.9, VALDRAKKEN },
 				}),
+				q(91691, {	-- The Vanishing of Iridikron
+					["sourceQuests"] = { 75417 },	-- Symbol of Hope
+					["provider"] = { "n", 187669 },	-- Nozdormu
+					["coord"] = { 60.8, 39.2, VALDRAKKEN },
+					["lockCriteria"] = { 1, "questID", 75918 },	-- Fire Season
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				q(91695, {	-- Tracking Down Incarnates
+					["sourceQuests"] = { 91691 },	-- The Vanishing of Iridikron
+					["provider"] = { "n", 187669 },	-- Nozdormu
+					["coord"] = { 60.8, 39.2, VALDRAKKEN },
+					["lockCriteria"] = { 1, "questID", 75918 },	-- Fire Season
+					["timeline"] = { ADDED_11_2_7 },
+				}),
 			}),
 			------ New System ------
 			q(76101, {	-- Tougher Down Under
@@ -614,6 +629,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
 				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
+				["timeline"] = { REMOVED_11_0_0 },
 				["groups"] = {
 					i(204717),	-- Splintered Spark of Shadowflame
 				},
@@ -731,7 +747,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+				["coord"] = { 55.5, 54.7, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,
 			}),
 			q(73709, {	-- Favor on the Side
@@ -916,7 +932,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			------ Miscellaneous ------
 			q(75232, {	-- Fallen Effects
-				--["sourceQuests"] = {  },
+				-- ["sourceQuests"] = {  },
 				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects
 				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
 			}),
@@ -948,7 +964,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during 'It Was Not Enough' (questID 72873) (spellID 411853)
 				q(75658, {["name"] = "Zaralek Cavern Unlocked [Account]"}),	-- Zaralek Cavern World Quests (spellID 408876)
 				q(75511),	-- Tracking Quest (that's the name)
-				q(75764),	-- Current Patch - Login Video - Watched (spellID 409608)
+				q(75764, {repeatable=true}),	-- Current Patch - Login Video - Watched (spellID 409608)
 				q(76013),	-- Complete Ch 5 and Delay for Ch 6 after 'Stopping Sakareth' (questID 72930) (spellID 411104)
 
 				-- Talk to npc during Respite (73041)

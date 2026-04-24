@@ -1,14 +1,16 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 local VICIOUS_SADDLE = 103533;
+
 root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
 	n(73190, {	-- Necrolord Sipe <Combatant Mount Quartermaster>
 		["coord"] = { 76.8, 65.6, STORMWIND_CITY },
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = sharedData({
 			["races"] = ALLIANCE_ONLY,
-			["cost"] = {{"i", VICIOUS_SADDLE, 1}}
+			["cost"] = { { "i", VICIOUS_SADDLE, 1 } },
 		}, {
 			i(165019, {	-- Vicious Black Warsaber (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
@@ -19,12 +21,21 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 			i(140353, {	-- Vicious Gilnean Warhorse (MOUNT!)
 				["timeline"] = { ADDED_7_0_3_LAUNCH }
 			}),
+			i(229989, {	-- Vicious Electro Eel [A] (MOUNT!)
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 			i(102514),	-- Vicious Kaldorei Warsaber (MOUNT!)
 			i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)
 				["timeline"] = { ADDED_11_0_2 },
 			}),
 			i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
 				["timeline"] = { ADDED_11_0_2 },
+			}),
+			i(223511, {	-- Vicious Skyflayer [A] (MOUNT!)
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(243157, {	-- Vicious Void Creeper [A] (MOUNT!)
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			i(163122, {	-- Vicious War Basilisk [A] (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
@@ -79,13 +90,16 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 		["races"] = HORDE_ONLY,
 		["groups"] = sharedData({
 			["races"] = HORDE_ONLY,
-			["cost"] = {{"i", VICIOUS_SADDLE, 1}}
+			["cost"] = { { "i", VICIOUS_SADDLE, 1 } },
 		}, {
 			i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(213440, {	-- Vicious Dreamtalon [H] (MOUNT!)
 				["timeline"] = { ADDED_11_0_2 },
+			}),
+			i(229988, {	-- Vicious Electro Eel [H] (MOUNT!)
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			i(210069, {	-- Vicious Moonbeast [H] (MOUNT!)
 				["timeline"] = { ADDED_11_0_2 },
@@ -94,6 +108,12 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 				["timeline"] = { ADDED_11_0_2 },
 			}),
 			i(102533),	-- Vicious Skeletal Warhorse (MOUNT!)
+			i(221813, {	-- Vicious Skyflayer [H] (MOUNT!)
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(243159, {	-- Vicious Void Creeper [H] (MOUNT!)
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 			i(163121, {	-- Vicious War Basilisk [H] (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),

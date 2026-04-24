@@ -50,8 +50,6 @@ local COMMONLOOT = {
 		-- No cloaks were made for Remix here
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247188),	-- Gilded Seraph's Drape
 		i(247170),	-- Runebound Cape
 		i(247206),	-- Grim Inquisitor's Cloak
@@ -77,8 +75,6 @@ local COMMONLOOT = {
 		i(247625),	-- Whisperstep Runners
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247189),	-- Gilded Seraph's Handwraps
 		i(247190),	-- Gilded Seraph's Crown
 		i(247191),	-- Gilded Seraph's Leggings
@@ -107,8 +103,6 @@ local COMMONLOOT = {
 		i(247634),	-- Vicious Flamepaws
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247194),	-- Vest of the Dashing Scoundrel
 		i(247196),	-- Gloves of the Dashing Scoundrel
 		i(247197),	-- Cavalier Hat of the Dashing Scoundrel
@@ -142,8 +136,6 @@ local COMMONLOOT = {
 		i(247655),	-- World-Ravager Waistguard
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247164),	-- Serpentstalker Tunic
 		i(247166),	-- Serpentstalker Grips
 		i(247167),	-- Serpentstalker Helmet
@@ -167,8 +159,6 @@ local COMMONLOOT = {
 		i(247652),	-- Varimathras' Shattered Manacles
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247212),	-- Juggernaut Breastplate
 		i(247214),	-- Juggernaut Gauntlets
 		i(247215),	-- Juggernaut Helm
@@ -349,6 +339,138 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}),
 					}),
 				}),
+				n(RAID_GEAR_CONVERSION, bubbleDown({ ["modID"] = 4 }, {
+					filter(CLOAKS, {
+						-- Regular items
+						-- No cloaks were made for Remix here
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247188),	-- Gilded Seraph's Drape
+						i_RAID_GEAR_CONVERSION(247170),	-- Runebound Cape
+						i_RAID_GEAR_CONVERSION(247206),	-- Grim Inquisitor's Cloak
+						i_RAID_GEAR_CONVERSION(247195),	-- Cloak of the Dashing Scoundrel
+						i_RAID_GEAR_CONVERSION(247177),	-- Cloak of Chi-Ji
+						i_RAID_GEAR_CONVERSION(247159),	-- Bearmantle Cloak
+						i_RAID_GEAR_CONVERSION(247153),	-- Felreaper Drape
+						i_RAID_GEAR_CONVERSION(247165),	-- Serpentstalker Drape
+						i_RAID_GEAR_CONVERSION(247201),	-- Drape of Venerated Spirits
+						i_RAID_GEAR_CONVERSION(247213),	-- Juggernaut Cloak
+						i_RAID_GEAR_CONVERSION(247183),	-- Light's Vanguard Greatcloak
+						i_RAID_GEAR_CONVERSION(247147),	-- Dreadwake Greatcloak
+					}),
+					filter(CLOTH, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247632),	-- Blood-Drenched Bindings
+						i_RAID_GEAR_CONVERSION(247627),	-- Cord of Surging Hysteria
+						i_RAID_GEAR_CONVERSION(247630),	-- Cord of Blossoming Petals
+						i_RAID_GEAR_CONVERSION(247629),	-- Enhanced Worldscorcher Cinch
+						i_RAID_GEAR_CONVERSION(247628),	-- Lady Dacidion's Silk Slippers
+						i_RAID_GEAR_CONVERSION(247631),	-- Man'ari Pyromancer Cuffs
+						i_RAID_GEAR_CONVERSION(247626),	-- Sandals of the Reborn Colossus
+						i_RAID_GEAR_CONVERSION(247625),	-- Whisperstep Runners
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247189),	-- Gilded Seraph's Handwraps
+						i_RAID_GEAR_CONVERSION(247190),	-- Gilded Seraph's Crown
+						i_RAID_GEAR_CONVERSION(247191),	-- Gilded Seraph's Leggings
+						i_RAID_GEAR_CONVERSION(247192),	-- Gilded Seraph's Robes
+						i_RAID_GEAR_CONVERSION(247193),	-- Gilded Seraph's Amice
+						i_RAID_GEAR_CONVERSION(247171),	-- Runebound Gloves
+						i_RAID_GEAR_CONVERSION(247172),	-- Runebound Collar
+						i_RAID_GEAR_CONVERSION(247173),	-- Runebound Leggings
+						i_RAID_GEAR_CONVERSION(247174),	-- Runebound Tunic
+						i_RAID_GEAR_CONVERSION(247175),	-- Runebound Mantle
+						i_RAID_GEAR_CONVERSION(247207),	-- Grim Inquisitor's Gloves
+						i_RAID_GEAR_CONVERSION(247208),	-- Grim Inquisitor's Death Mask
+						i_RAID_GEAR_CONVERSION(247209),	-- Grim Inquisitor's Leggings
+						i_RAID_GEAR_CONVERSION(247210),	-- Grim Inquisitor's Robes
+						i_RAID_GEAR_CONVERSION(247211),	-- Grim Inquisitor's Shoulderguards
+					}),
+					filter(LEATHER, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247637),	-- Belt of Fractured Sanity
+						i_RAID_GEAR_CONVERSION(247654),	-- Bracers of Wanton Morality
+						i_RAID_GEAR_CONVERSION(247635),	-- Death-Enveloping Cincture
+						i_RAID_GEAR_CONVERSION(247653),	-- Depraved Machinist's Footpads
+						i_RAID_GEAR_CONVERSION(247638),	-- Fiendish Logistician's Wristwraps
+						i_RAID_GEAR_CONVERSION(247633),	-- Life-Bearing Footpads
+						i_RAID_GEAR_CONVERSION(247636),	-- Portal Keeper's Cincture
+						i_RAID_GEAR_CONVERSION(247634),	-- Vicious Flamepaws
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247194),	-- Vest of the Dashing Scoundrel
+						i_RAID_GEAR_CONVERSION(247196),	-- Gloves of the Dashing Scoundrel
+						i_RAID_GEAR_CONVERSION(247197),	-- Cavalier Hat of the Dashing Scoundrel
+						i_RAID_GEAR_CONVERSION(247198),	-- Pants of the Dashing Scoundrel
+						i_RAID_GEAR_CONVERSION(247199),	-- Shoulderpads of the Dashing Scoundrel
+						i_RAID_GEAR_CONVERSION(247176),	-- Tunic of Chi-Ji
+						i_RAID_GEAR_CONVERSION(247178),	-- Grips of Chi-Ji
+						i_RAID_GEAR_CONVERSION(247179),	-- Douli of Chi-Ji
+						i_RAID_GEAR_CONVERSION(247180),	-- Leggings of Chi-Ji
+						i_RAID_GEAR_CONVERSION(247181),	-- Meditation Spheres of Chi-Ji
+						i_RAID_GEAR_CONVERSION(247158),	-- Bearmantle Harness
+						i_RAID_GEAR_CONVERSION(247160),	-- Bearmantle Paws
+						i_RAID_GEAR_CONVERSION(247161),	-- Bearmantle Headdress
+						i_RAID_GEAR_CONVERSION(247162),	-- Bearmantle Legguards
+						i_RAID_GEAR_CONVERSION(247163),	-- Bearmantle Shoulders
+						i_RAID_GEAR_CONVERSION(247152),	-- Felreaper Vest
+						i_RAID_GEAR_CONVERSION(247154),	-- Felreaper Gloves
+						i_RAID_GEAR_CONVERSION(247155),	-- Felreaper Hood
+						i_RAID_GEAR_CONVERSION(247156),	-- Felreaper Leggings
+						i_RAID_GEAR_CONVERSION(247157),	-- Felreaper Spaulders
+					}),
+					filter(MAIL, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247639),	-- Deft Soulhunter's Sabatons
+						i_RAID_GEAR_CONVERSION(247641),	-- Depraved Tactician's Waistguard
+						i_RAID_GEAR_CONVERSION(247656),	-- Greatboots of the Searing Tempest
+						i_RAID_GEAR_CONVERSION(247640),	-- Nathrezim Shade-Walkers
+						i_RAID_GEAR_CONVERSION(247643),	-- Reality-Splitting Wristguards
+						i_RAID_GEAR_CONVERSION(247642),	-- Sash of the Gilded Rose
+						i_RAID_GEAR_CONVERSION(247651),	-- Scalding Shatterguards
+						i_RAID_GEAR_CONVERSION(247655),	-- World-Ravager Waistguard
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247164),	-- Serpentstalker Tunic
+						i_RAID_GEAR_CONVERSION(247166),	-- Serpentstalker Grips
+						i_RAID_GEAR_CONVERSION(247167),	-- Serpentstalker Helmet
+						i_RAID_GEAR_CONVERSION(247168),	-- Serpentstalker Legguards
+						i_RAID_GEAR_CONVERSION(247169),	-- Serpentstalker Mantle
+						i_RAID_GEAR_CONVERSION(247200),	-- Robes of Venerated Spirits
+						i_RAID_GEAR_CONVERSION(247202),	-- Gloves of Venerated Spirits
+						i_RAID_GEAR_CONVERSION(247203),	-- Headdress of Venerated Spirits
+						i_RAID_GEAR_CONVERSION(247204),	-- Leggings of Venerated Spirits
+						i_RAID_GEAR_CONVERSION(247205),	-- Pauldrons of Venerated Spirits
+					}),
+					filter(PLATE, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247645),	-- Burning Coven Sabatons
+						i_RAID_GEAR_CONVERSION(247644),	-- Doomwalker Warboots
+						i_RAID_GEAR_CONVERSION(247646),	-- Eredar Warcouncil Sabatons
+						i_RAID_GEAR_CONVERSION(247648),	-- Flamelicked Girdle
+						i_RAID_GEAR_CONVERSION(247649),	-- Grond-Father Girdle
+						i_RAID_GEAR_CONVERSION(247647),	-- Nathrezim Battle Girdle
+						i_RAID_GEAR_CONVERSION(247650),	-- Vambraces of Life's Assurance
+						i_RAID_GEAR_CONVERSION(247652),	-- Varimathras' Shattered Manacles
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247212),	-- Juggernaut Breastplate
+						i_RAID_GEAR_CONVERSION(247214),	-- Juggernaut Gauntlets
+						i_RAID_GEAR_CONVERSION(247215),	-- Juggernaut Helm
+						i_RAID_GEAR_CONVERSION(247216),	-- Juggernaut Legplates
+						i_RAID_GEAR_CONVERSION(247217),	-- Juggernaut Pauldrons
+						i_RAID_GEAR_CONVERSION(247182),	-- Light's Vanguard Breastplate
+						i_RAID_GEAR_CONVERSION(247184),	-- Light's Vanguard Gauntlets
+						i_RAID_GEAR_CONVERSION(247185),	-- Light's Vanguard Helm
+						i_RAID_GEAR_CONVERSION(247186),	-- Light's Vanguard Legplates
+						i_RAID_GEAR_CONVERSION(247187),	-- Light's Vanguard Shoulderplates
+						i_RAID_GEAR_CONVERSION(247146),	-- Dreadwake Bonecage
+						i_RAID_GEAR_CONVERSION(247148),	-- Dreadwake Gauntlets
+						i_RAID_GEAR_CONVERSION(247149),	-- Dreadwake Helm
+						i_RAID_GEAR_CONVERSION(247150),	-- Dreadwake Legplates
+						i_RAID_GEAR_CONVERSION(247151),	-- Dreadwake Pauldrons
+					}),
+				})),
 				Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 					header(HEADERS.Achievement, 60871, {	-- Light's Breach
 						BossOnly(WORLDBREAKER),
@@ -402,12 +524,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					BossOnly(COVEN),
 					BossOnly(AGGRAMAR),
 					BossOnly(ARGUS, {
-						-- TODO: Upon confirmation, leave the one that drops, remove the one that does not and remove this commented-out section.
-						-- 11.2.5 Blue Post states that Violet Spellwing will drop from Argus the Unmaker on Heroic or Mythic
-						-- Since it is not yet clear whether QS! will drop or the mount itself, both are listed.
-						-- https://worldofwarcraft.blizzard.com/en-us/news/24240007
-						i(152900),	-- Blood of the Unmaker (QS!) / Violet Spellwing (MOUNT!)
-						i(152901),	-- Kirin Tor Summoning Crystal / Violet Spellwing (MOUNT!)
+						i(152900),	-- Blood of the Unmaker (QS!) / Kirin Tor Summoning Crystal / Violet Spellwing (MOUNT!)
 					}),
 				}),
 				Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
@@ -425,14 +542,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					BossOnly(VARIMATHRAS),
 					BossOnly(COVEN),
 					BossOnly(AGGRAMAR),
-					BossOnly(ARGUS, {
-						-- TODO: Upon confirmation, leave the one that drops, remove the one that does not and remove this commented-out section.
-						-- 11.2.5 Blue Post states that Violet Spellwing will drop from Argus the Unmaker on Heroic or Mythic
-						-- Since it is not yet clear whether QS! will drop or the mount itself, both are listed.
-						-- https://worldofwarcraft.blizzard.com/en-us/news/24240007
-						i(152900),	-- Blood of the Unmaker (QS!) / Violet Spellwing (MOUNT!)
-						i(152901),	-- Kirin Tor Summoning Crystal / Violet Spellwing (MOUNT!)
-					}),
+					BossOnly(ARGUS),
 				}),
 			},
 		}),

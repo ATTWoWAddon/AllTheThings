@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ForFrenzyheart = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
@@ -99,6 +100,7 @@ ExportDB.OnTooltipDB.ForOracles = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", appeasingRep + soodowRep + sooneeRep, 42000);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(SHOLAZAR_BASIN, {
@@ -796,7 +798,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 						["groups"] = {
 							ach(938, {	-- The Snows of Northrend
-								i(248807, {["timeline"] = { ADDED_11_2_7 }}),	-- Nesingwary Shoveltusk Trophy (DECOR!)
+								i(248807, {	-- Nesingwary Mounted Shoveltusk Head (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+								}),
 							}),
 							i(39487),	-- Dragon Slayer's Shortbow
 							i(39486),	-- Hemet's Trophy Gun
@@ -884,7 +888,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							12523,	-- Have a Part, Give a Part
 							12525,	-- Wipe That Grin Off His Face
-							--[[TODO:: verify if It Could Be Anywhere! (questID 12624) is also needed
+							--[[TODO:  verify if It Could Be Anywhere! (questID 12624) is also needed
 										for this, 12549 and 12589
 							]]--
 						},
@@ -1084,8 +1088,8 @@ root(ROOTS.Zones, {
 					q(12489, {	-- Welcome to Sholazar Basin
 						["sourceQuests"] = {
 							-- #if AFTER 6.2.0.19953
-							39209,	-- Sholazar Basin -- Adventure Guide
-							39212,	-- Sholazar Basin -- Adventure Guide
+							39209,	-- Sholazar Basin	-- Adventure Guide
+							39212,	-- Sholazar Basin	-- Adventure Guide
 							-- #endif
 							12521,	-- Where in the World is Hemet Nesingwary?
 						},
@@ -1262,6 +1266,15 @@ root(ROOTS.Zones, {
 							-- #endif
 						}},
 					}),
+					n(28038, {	-- Purser Boulian <Innkeeper>
+						["coord"] = { 26.8, 59.3, SHOLAZAR_BASIN },
+						["groups"] = {
+							i(248807, {	-- Nesingwary Mounted Shoveltusk Head (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = 5000000,	-- 500g
+							}),
+						},
+					}),
 					n(31911, {	-- Tanak <Frenzyheart Quartermaster>
 						["coord"] = { 55.1, 69.0, SHOLAZAR_BASIN },
 						["groups"] = bubbleDownClassicRep(FACTION_FRENZYHEART_TRIBE, {
@@ -1278,9 +1291,7 @@ root(ROOTS.Zones, {
 								i(44717),	-- Disgusting Jar
 								i(44718, {	-- Ripe Disgusting Jar
 									["provider"] = { "i", 44717 },	-- Disgusting Jar
-									["groups"] = {
-										i(44719),	-- Frenzyheart Brew (TOY!)
-									},
+									["groups"] = { i(44719) },	-- Frenzyheart Brew (TOY!)
 								}),
 								i(44120),	-- Giant-Sized Gauntlets
 								i(44116),	-- Muddied Crimson Gloves

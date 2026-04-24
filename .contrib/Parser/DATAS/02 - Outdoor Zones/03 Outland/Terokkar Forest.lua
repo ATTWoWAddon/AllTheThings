@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local HUNGRY_NETHER_RAYS_GROUPS = {
 	objective(1, {	-- 0/10 Nether Ray Meal
 		["provider"] = { "i", 32834 },	-- Nether Ray Cage (Provided)
@@ -10,6 +11,7 @@ local HUNGRY_NETHER_RAYS_GROUPS = {
 local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 	["cr"] = 16810,	-- Bonechewer Backbreaker
 });
+
 ExportDB.OnTooltipDB.ForSkyguard = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -21,6 +23,7 @@ ExportDB.OnTooltipDB.ForSkyguard = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Dust", 150, 42000, 6);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -227,7 +230,7 @@ root(ROOTS.Zones, {
 							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
-					q(11665, {  -- Crocolisks in the City
+					q(11665, { 	-- Crocolisks in the City
 						["qg"] = 25580,	-- Old Man Barlo
 						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 						["maps"] = { IRONFORGE, ORGRIMMAR, STORMWIND_CITY },
@@ -383,7 +386,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["maxReputation"] = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
-						["cost"] = {{ "i", 32388, 6 }},	-- Shadow Dust
+						["cost"] = { { "i", 32388, 6 } },	-- Shadow Dust
 						["repeatable"] = true,
 						["groups"] = {
 							i(32446),	-- Elixir of Shadows
@@ -443,7 +446,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11004, {	-- World of Shadows
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
-						["cost"] = {{ "i", 32388, 6 }},	-- Shadow Dust
+						["cost"] = { { "i", 32388, 6 } },	-- Shadow Dust
 						["groups"] = {
 							i(32446),	-- Elixir of Shadows
 						},
@@ -479,7 +482,7 @@ root(ROOTS.Zones, {
 							i(25926),	-- Nexus-Stalker's Band
 						},
 					}),
-					q(10913, {	-- An Improper Burial -- aa
+					q(10913, {	-- An Improper Burial	-- aa
 						["qg"] = 22446,	-- Commander Ra'vaj
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 					}),
@@ -557,7 +560,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(10878, {	-- Before Darkness Falls -- aa
+					q(10878, {	-- Before Darkness Falls	-- aa
 						["qg"] = 22370,	-- Mekeda
 						["coord"] = { 37.6, 50.8, TEROKKAR_FOREST },
 						["groups"] = {
@@ -580,7 +583,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 					}),
-					q(10880, {	-- Cabal Orders -- aa
+					q(10880, {	-- Cabal Orders	-- aa
 						["provider"] = { "i", 31707 },	-- Cabal Orders
 						["crs"] = {
 							21661,	-- Cabal Skirmisher
@@ -605,7 +608,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
 					}),
-					q(10922, {	-- Digging Through Bones -- aa
+					q(10922, {	-- Digging Through Bones	-- aa
 						["qg"] = 22458,	-- Chief Archaeologist Letoll
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 					}),
@@ -629,7 +632,7 @@ root(ROOTS.Zones, {
 							i(25916),	-- Terokkar Axe
 						},
 					}),
-					q(10887, {	-- Escaping the Tomb -- aa
+					q(10887, {	-- Escaping the Tomb	-- aa
 						["qg"] = 22377,	-- Akuno
 						["coord"] = { 30.6, 49.1, TEROKKAR_FOREST },
 						["groups"] = {
@@ -705,7 +708,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = 62,
 					})),
-					q(10227, {	-- I See Dead Draenei -- aa
+					q(10227, {	-- I See Dead Draenei	-- aa
 						["qg"] = 19697,	-- Ha'lei
 						["coord"] = { 35.0, 65.0, TEROKKAR_FOREST },
 					}),
@@ -722,7 +725,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(9951, {	-- It's Watching You! -- aa
+					q(9951, {	-- It's Watching You!	-- aa
 						["qg"] = 18424,	-- Warden Treelos
 						["coords"] = {
 							{ 43.4, 22.4, TEROKKAR_FOREST },
@@ -925,7 +928,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["coord"] = { 52.5, 21.0, SHATTRATH_CITY },
 					}),
-					q(10898, {	-- Skywing -- aa
+					q(10898, {	-- Skywing	-- aa
 						["qg"] = 22424,	-- Skywing
 						["coord"] = { 53.7, 72.3, TEROKKAR_FOREST },
 						["groups"] = {
@@ -1023,7 +1026,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-					q(10873, {	-- Taken in the Night -- aa
+					q(10873, {	-- Taken in the Night	-- aa
 						["qg"] = 22364,	-- Scout Navrin
 						["coord"] = { 31.4, 75.6, TEROKKAR_FOREST },
 					}),
@@ -1055,7 +1058,7 @@ root(ROOTS.Zones, {
 							i(31759),	-- Shani's Crysknife
 						},
 					}),
-					q(10877, {	-- The Dread Relic -- aa
+					q(10877, {	-- The Dread Relic	-- aa
 						["qg"] = 22456,	-- Oakun
 						["coord"] = { 31.0, 76.5, TEROKKAR_FOREST },
 						["groups"] = {
@@ -1174,7 +1177,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(10896, {	-- The Infested Protectors -- aa
+					q(10896, {	-- The Infested Protectors	-- aa
 						["qg"] = 22420,	-- Lakotae
 						["coord"] = { 37.9, 51.7, TEROKKAR_FOREST },
 						["groups"] = {
@@ -1383,7 +1386,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 					}),
 					q(10842, {	-- Vengeful Souls
-						--["sourceQuest"] = 10852,	-- Missing Friends
+						-- ["sourceQuest"] = 10852,	-- Missing Friends
 						["qg"] = 22278,	-- High Priest Orglum
 						["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 						-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
@@ -1615,9 +1618,7 @@ root(ROOTS.Zones, {
 							{ 61.4, 78.1, TEROKKAR_FOREST },
 							{ 62.0, 74.7, TEROKKAR_FOREST },
 						},
-						["cost"] = {
-							{ "i", 32620, 10 },	-- Time-Lost Scroll
-						},
+						["cost"] = { { "i", 32620, 10 } },	-- Time-Lost Scroll
 						["groups"] = {
 							n(COMMON_BOSS_DROPS, {
 								["crs"] = {
@@ -1660,21 +1661,19 @@ root(ROOTS.Zones, {
 						["description"] = "The process to summon this boss is as follows.\n\n1. Collect Shadow Dust from mobs in Skettis.\n2. Turn in 6 Shadow Dust to Severin for the quest More Shadow Dust to obtain Elixir of Shadows.\n3. Drink the elixir to gain a 20-minute buff that allows you to see Time-Lost mobs around Skettis.\n4. Kill these mobs to obtain Time-Lost Scrolls (40 required per summon).\n5. Make sure you are on the Adversarial Blood quest if this is your first time; it begins with the quest Ishaal's Almanac.\n6. Go to a skull pile and use 10 Time-Lost Scrolls to summon boss. (Darkscreecher Akkarai [Akkarai's Talons], Karrog [Karrog's Spine], Gezzarak the Huntress [Gezzarak's Claws], Vakkiz the Windrager [Vakkiz's Scale]).\n7. Take these 4 items to Hazzik to complete Adversarial Blood which rewards a Time-Lost Offering.\n8. Use the Time-Lost Offering at the Ancient Skull Pile on middle island to summon Terokk. (It has about a 15-minute spawn timer)",
 						["provider"] = { "o", 185928 },	-- Ancient Skull Pile
 						["coord"] = { 66.2, 77.5, TEROKKAR_FOREST },
-						["cost"] = {
-							{ "i", 32720, 1 },	-- Time-Lost Offering
-						},
+						["cost"] = { { "i", 32720, 1 } },	-- Time-Lost Offering
 						["groups"] = {
 							i(32535),	-- Gift of the Talonpriests
 							i(32534),	-- Brooch of the Immortal King
-							i(31564),	--	Skystalker's Leggings
-							i(31580),	--	Slatesteel Leggings
-							i(31556),	--	Windchanneller's Leggings
-							i(31572),	--	Mistshroud Pants
-							i(32536),	--	Terokk's Gavel
-							i(32537),	--	Terokk's Gavel
-							i(32782),	--	Time-Lost Figurine (TOY!)
-							i(32540),	--	Terokk's Might
-							i(32541),	--	Terokk's Wisdom
+							i(31564),	-- Skystalker's Leggings
+							i(31580),	-- Slatesteel Leggings
+							i(31556),	-- Windchanneller's Leggings
+							i(31572),	-- Mistshroud Pants
+							i(32536),	-- Terokk's Gavel
+							i(32537),	-- Terokk's Gavel
+							i(32782),	-- Time-Lost Figurine (TOY!)
+							i(32540),	-- Terokk's Might
+							i(32541),	-- Terokk's Wisdom
 						},
 					}),
 				}),
@@ -1722,6 +1721,16 @@ root(ROOTS.Zones, {
 							30757,	-- Draenic Light Crossbow
 							30759,	-- Mag'hari Light Recurve
 						}},
+					}),
+					n(20986, {	-- Dealer Tariq
+						["coord"] = { 39.4, 70.0, TEROKKAR_FOREST },
+						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
+						["groups"] = {
+							i(29393),	-- Diamond Berries
+							i(29395),	-- Ethermead
+							i(29394),	-- Lyribread
+							i(29454),	-- Silverwine
+						},
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, n(23367, {	-- Grella <Skyguard Quartermaster>
 						["coord"] = { 64.3, 66.2, TEROKKAR_FOREST },
@@ -1775,6 +1784,14 @@ root(ROOTS.Zones, {
 							i(22901, {	-- Recipe: Sneaking Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
+						},
+					}),
+					n(19718, {	-- Provisioner Tsaalt
+						["coord"] = { 39.7, 70.1, TEROKKAR_FOREST },
+						["minReputation"] = { FACTION_LOWER_CITY, FRIENDLY },	-- Lower City, Friendly.
+						["groups"] = {
+							i(27857),	-- Garadar Sharp
+							i(29448),	-- Mag'har Mild Cheese
 						},
 					}),
 					n(18960, {	-- Rungor <Trade Goods>
@@ -1917,9 +1934,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(32620, {	-- Time-Lost Scroll
-						["cost"] = {
-							{ "i", 32446, 1 },	-- Elixir of Shadows
-						},
+						["cost"] = { { "i", 32446, 1 } },	-- Elixir of Shadows
 						["crs"] = {
 							23066,	-- Talonpriest Ishaal
 							23068,	-- Talonpriest Zellek

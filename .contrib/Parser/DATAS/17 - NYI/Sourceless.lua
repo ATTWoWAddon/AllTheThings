@@ -59,7 +59,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(155467),	-- Banisher Chestpiece
 					i(155470),	-- Banisher Headcover
 					i(155472),	-- Banisher Shoulderguards
-					i(155473),	-- Banisher Cinch
 					i(158604),	-- Banisher Mitts
 					i(160198),	-- Banisher Britches
 					i(160863),	-- Banisher Mantle
@@ -186,8 +185,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(159053),	-- Nazmani Warplate Helm
 					i(159057),	-- Nazmani Warplate Pants
 					i(159063),	-- Nazmani Warplate Shoulderguards
-					i(159066),	-- Nazmani Warplate Belt
-					i(159071),	-- Nazmani Warplate Armsplints
 				}),
 				-- Vol'dun items = Stormsong Valley quest rewards
 				filter(CLOTH, {
@@ -265,6 +262,12 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(208878),	-- Adventurer's Footlocker //Given to alts who used the TWW prepurchase boost
 			})),
 		}),
+		expansion(EXPANSION.TWW, {
+			-- 11.0.2
+			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+				i(228580),	-- Brute Force Idol
+			})),
+		}),
 	}),
 	n(MOUNT_MODS, {
 		expansion(EXPANSION.DF, {
@@ -273,7 +276,12 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(207775),	-- Grotto Netherwing Drake: Teal Scales (MM!)
 			})),
 		}),
-
+		expansion(EXPANSION.TWW, {
+			-- 11.0.0
+			expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+				i(223510),	-- Delver's Dirigible Schematic: Template (MM!)
+			})),
+		}),
 	}),
 	n(FOLLOWERS, {
 		expansion(EXPANSION.SL, {
@@ -295,7 +303,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
 			expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
-				i(118186),	-- Frostwolf Wisdom Stick
 				i(107644),	-- Napmaster's Sleep Mask
 			})),
 		}),
@@ -303,7 +310,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 8.0.1
 			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				-- Drustvar items = Nazmir quest rewards
-				--i(161296),	-- Autumnvale Hunting Rifle
+				-- i(161296),	-- Autumnvale Hunting Rifle
 
 				-- Stormsong Valley items = Vol'dun quest rewards
 
@@ -325,7 +332,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				-- i(161300),	-- Stoat-Trapper's Striker
 				i(158510),	-- Repurposed Dinghy Anchor
 				i(158518),	-- Harbormaster's Lantern
-				i(159079),	-- Captivating Glowfly Lantern
 
 				-- i(161292),	-- Grimestone Spellmaul
 				i(158579),	-- Scalawag's Warglaive
@@ -441,11 +447,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(45181),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Battleground - Tracking Quest
 			})),
 
-			-- 7.2.0
-			expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
-				q(47215),	-- Tracking Quest
-			})),
-
 			-- 7.3.0
 			expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(49163),	--
@@ -453,7 +454,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 7.3.2
 			expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2 } }, {
-				q(49619),	--
+				q(49619),	-- completed Scour the Surface mission
 				q(49620),	-- completed some missions on the Legion Mission Board
 				q(49621),	--
 			})),
@@ -645,12 +646,49 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 				q(79988),	--
 			})),
+			-- 10.2.7
+			expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
+				q(81957),	-- Completed in Blackrock Depths
+			})),
+
 		}),
 		expansion(EXPANSION.TWW, {
+			-- 11.0.0
+			expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+				q(81696),	-- Report to the Trading Post (D)
+			})),
+
 			-- 11.0.2
 			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 				q(84255),	-- Received item 'The Warband Map to Everywhere All At Once' (itemID 212174) - Not for me, it has to be something else - Darkal
-				i(228580),	-- Brute Force Idol
+				q(84587),	-- user obtained within Deaths of Chromie
+			})),
+
+			-- 11.0.5
+			expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+				q(84611),	--
+			})),
+
+			-- 11.1.5
+			expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+				q(90899),	--
+			})),
+
+			-- 11.1.7
+			expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
+				q(87560),	--
+				q(91029),	--
+			})),
+
+			-- 11.2.0
+			expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+				q(92487),	--
+				q(92813),	--
+			})),
+
+			-- 11.2.7
+			expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+				q(84833),	--
 			})),
 		}),
 	}),

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using static ATT.Framework;
 
 namespace ATT.DB.Types
 {
@@ -63,7 +62,7 @@ namespace ATT.DB.Types
 
                 _effects.Sort((a,b) =>
                 {
-                    return b.TriggerType - a.TriggerType;
+                    return a.SpellIDPriority - b.SpellIDPriority;
                 });
                 return _effects;
             }

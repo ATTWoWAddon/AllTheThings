@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		applyclassicphase(WOD_PHASE_ONE, ach(8935, {	-- Draenor Explorer [7.0.3] / Explore Draenor
@@ -25,9 +26,7 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 				10350,	-- Tanaan Diplomat (Alliance)
 				10349,	-- Tanaan Diplomat (Horde)
 			}},
-			["groups"] = {
-				i(128706),	-- Soaring Skyterror (MOUNT!)
-			},
+			["groups"] = { i(128706) },	-- Soaring Skyterror (MOUNT!)
 		}),
 		petbattle(ach(9685, {		-- Draenor Safari
 			i(111866),		-- Royal Peacock (PET!)
@@ -57,11 +56,10 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 			crit(27254),		-- Wood Wasp (Gorgrond)
 			crit(27266),		-- Zangar Crawler (Shadowmoon Valley, Spires of Arak)
 		})),
-		ach(9728, {			-- Grand Treasure Hunter
-			ach(10348),		-- Master Treasure Hunter
-			ach(9727),		-- Expert Treasure Hunter
-			ach(9726),		-- Treasure Hunter
-		}),
+		achpart(9726, 9728),	-- Treasure Hunter / Grand Treasure Hunter
+		achpart(9727, 9728),	-- Expert Treasure Hunter / Grand Treasure Hunter
+		achpart(10348, 9728),	-- Master Treasure Hunter / Grand Treasure Hunter
+		ach(9728),	-- Grand Treasure Hunter
 		ach(10053, {	-- I Found Pepe!
 			["timeline"] = { ADDED_6_2_0 },
 			["groups"] = {

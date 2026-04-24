@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 WHELP_DAYCARE = createHeader({
 	readable = "Little Scales Daycare",
 	constant = "WHELP_DAYCARE",
@@ -8,9 +9,19 @@ WHELP_DAYCARE = createHeader({
 	icon = 3846202,
 	text = {
 		en = "Little Scales Daycare",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Драконьи ясли",
+		cn = "幼鳞日托所",
+		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(WHELP_DAYCARE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
@@ -71,8 +82,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					crit(60137, {	-- Fowl Runic Scribblings
 						["sourceQuests"] = { 73130 },	-- Fowl Runic Scribblings
 					}),
-					crit(60138, {	--  Dignified Disguises
-						["sourceQuests"] = { 73131 },	--  Dignified Disguises
+					crit(60138, {	-- Dignified Disguises
+						["sourceQuests"] = { 73131 },	-- Dignified Disguises
 					}),
 					crit(60139, {	-- Scanning the Stacks
 						["sourceQuests"] = { 73132 },	-- Scanning the Stacks
@@ -132,7 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(203445),	-- Stuffed Doll (QI!)
 					},
 				}),
-				q(72668, {	-- A Nuturing Enviroment
+				q(72668, {	-- A Nurturing Environment
 					["sourceQuests"] = { 72666 },	-- Daycare Director Agapanthus
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
@@ -152,7 +163,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(72454, {	-- The Obsidian Hatchling
 					["sourceQuests"] = {
 						73021,	-- A Lesson in Responsibility
-						72668,	-- A Nuturing Enviroment
+						72668,	-- A Nurturing Environment
 						72667,	-- Snack Run
 					},
 					["provider"] = { "n", 199259 },	-- Lasztak
@@ -161,7 +172,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(72455, {	-- Warmth and Comfort
 					["sourceQuests"] = {
 						73021,	-- A Lesson in Responsibility
-						72668,	-- A Nuturing Enviroment
+						72668,	-- A Nurturing Environment
 						72667,	-- Snack Run
 					},
 					["provider"] = { "n", 199259 },	-- Lasztak
@@ -180,7 +191,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
-					["cost"] = {{ "i", 197790, 1 }},	-- Roast Duck Delight
+					["cost"] = { { "i", 197790, 1 } },	-- Roast Duck Delight
 				}),
 				q(72458, {	-- Tag, You're Anxious
 					["sourceQuests"] = { 72457 },	-- A Home-Cooked Meal
@@ -262,7 +273,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				------ Day 4 ------
 				q(72994, {	-- A Cavalier Pet
-					["sourceQuests"] = { 72459 },	-- I'm the Boss!
+					["sourceQuests"] = { 72993 },	-- I'm the Boss!
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["groups"] = {
@@ -350,7 +361,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["groups"] = {
 					-- Removed Frost since it duplicates into 50+ things that require Awakened Frost
-					--	i(190329),	-- Awakened Frost
+						-- i(190329),	-- Awakened Frost
 						i(202332),	-- Blue Dragon Bedtime Story (QI!)
 						i(202330),	-- Fine-Pointed Quill (QI!)
 					},
@@ -405,8 +416,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
-				q(73011, {	--  Home Sweet Dirt
-					["sourceQuests"] = { 73010 },	--  The Emerald Hatchling
+				q(73011, {	-- Home Sweet Dirt
+					["sourceQuests"] = { 73010 },	-- The Emerald Hatchling
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["groups"] = {
@@ -419,7 +430,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(73012, {	-- Hochenblume Harvest
 					["sourceQuests"] = {
 						73010,	-- The Emerald Hatchling
-						73011,	--  Home Sweet Dirt
+						73011,	-- Home Sweet Dirt
 					},
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
@@ -488,17 +499,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
-				q(73133, {	--  Cozy Camouflage
+				q(73133, {	-- Cozy Camouflage
 					["sourceQuests"] = { 73014 },	-- A Green Who Can't Sleep?
 					["provider"] = { "n", 199987 },	-- Posidriss
 					["coord"] = { 16.6, 54.8, VALDRAKKEN },
 				}),
-				q(73131, {	--  Dignified Disguises
+				q(73131, {	-- Dignified Disguises
 					["sourceQuests"] = { 72993 },	-- I'm the Boss!
 					["provider"] = { "n", 199990 },	-- Belastrasza
 					["coord"] = { 10.7, 59.0, VALDRAKKEN },
 				}),
-				q(73134, {	--  Eternal Escapades
+				q(73134, {	-- Eternal Escapades
 					["sourceQuests"] = { 73000 },	-- Sneezing Through Time
 					["provider"] = { "n", 199986 },	-- Zhusadormu
 					["coord"] = { 14.0, 54.7, VALDRAKKEN },
@@ -611,6 +622,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	m(DRAGON_ISLES, {
 		m(VALDRAKKEN, {

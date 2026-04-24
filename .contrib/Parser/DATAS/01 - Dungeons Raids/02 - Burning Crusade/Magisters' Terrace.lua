@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE, {
 	inst(249, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Magisters' Terrace
 		["lore"] = "Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",
@@ -78,13 +79,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(11490, {	-- The Scryer's Scryer
-					-- #if AFTER 4.3.0
-					["sourceQuest"] = 29684,	-- Severed Communications
-					["lvl"] = lvlsquish(68, 68, 25),
-					-- #else
-					["sourceQuest"] = 11488,	-- Magisters' Terrace
-					["lvl"] = lvlsquish(70, 70, 25),
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER 4.3.0
+						29684,	-- Severed Communications
+						-- #else
+						11488,	-- Magisters' Terrace
+						-- #endif
+					},
+					["lvl"] =
+						-- #if AFTER 4.3.0
+						lvlsquish(68, 68, 25),
+						-- #else
+						lvlsquish(70, 70, 25),
+						-- #endif
 					["qg"] = 24822,	-- Tyrith
 					["groups"] = {
 						objective(1, {	-- Scrying Orb Activated

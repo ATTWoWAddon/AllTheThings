@@ -18,7 +18,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						i(250126),	-- Unseen Path Archer's Gallery (DECOR!)
 					}),
 					ach(42273, {	-- The Huntmaster's Campaign
-						i(248011),	-- Trueshot Skeletal Dragon Trophy (DECOR!)
+						i(248011),	-- Trueshot Skeletal Dragon Head (DECOR!)
 					}),
 				})),
 				n(ARTIFACTS, {
@@ -46,10 +46,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["coord"] = { 39.8, 29.6, TRUESHOT_LODGE },
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(671),	-- Squad of Archers
 					follower(801),	-- Squad of Archers
 					follower(802),	-- Squad of Archers
@@ -70,7 +67,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					follower(1024),	-- Nightborne Hunters
 					follower(1025),	-- Nightborne Hunters
 					follower(1026),	-- Nightborne Hunters
-				})),
+				}),
 				n(QUESTS, {
 					q(40384, {	-- Needs of the Hunters
 						["description"] = "This NPC will approach you within a few seconds the first time you enter Legion Dalaran.",
@@ -122,6 +119,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["sourceQuests"] = { 41541 },	-- A Beastly Expedition
 							["provider"] = { "n", 104381 },	-- Grif Wildheart
 							["coord"] = { 71.2, 50.2, LEGION_DALARAN },
+							["maps"] = { 635, 745 },	-- Shield's Rest / Ulduar
 						}),
 						q(42158, {	-- The Creator's Workshop
 							["sourceQuests"] = { 41574 },	-- Stolen Thunder
@@ -134,11 +132,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["coord"] = { 43.7, 38.9, 745 },
 							["groups"] = {
 								o(249812, {	-- Titanstrike
-									["coord"] = { 33.5, 58.1, 745 },
+									["coord"] = { 33.5, 58.1, THE_STORM_PEAKS },
 									["groups"] = {
 										i(128861, {	-- Titanstrike
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = { artifact(288) },	--  Titanstrike
+											["groups"] = { artifact(288) },	-- Titanstrike
 										}),
 									},
 								}),
@@ -316,7 +314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					q(40955, {	-- Oath of Service
 						["sourceQuests"] = { 40954 },	-- The Unseen Path
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
-						["coord"] = { 44.4, 26.4, TRUESHOT_LODGE },
+						["coord"] = { 43.5, 24.6, TRUESHOT_LODGE },
 					}),
 					q(41053, {	-- Altar of the Eternal Hunt
 						["sourceQuests"] = { 40955 },	-- Oath of Service
@@ -340,7 +338,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							-- #ENDIF
 						},
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
-						["coord"] = { 43.6, 26.2, TRUESHOT_LODGE },
+						["coord"] = { 43.5, 24.6, TRUESHOT_LODGE },
 					}),
 					q(40959, {	-- The Campaign Begins
 						["sourceQuests"] = { 40958 },	-- Tactical Matters
@@ -383,6 +381,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(42525, {	-- Troops in the Field
+						["sourceQuests"] = { 42524 },	-- Recruiting The Troops
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
@@ -458,11 +457,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42390 },	-- Recruiting Rexxar
 						["provider"] = { "n", 107425 },	-- Rexxar
 						["coord"] = { 36.7, 35.4, HIGHMOUNTAIN },
+						["groups"] = {
+							i(137612),	-- Raw Meat
+							i(137609),	-- Wood
+							i(137613),	-- Hearty Steak
+						},
 					}),
 					q(42392, {	-- Survive the Night
 						["sourceQuests"] = { 43335 },	-- Survival Skills
 						["provider"] = { "n", 107425 },	-- Rexxar
 						["coord"] = { 36.7, 35.4, HIGHMOUNTAIN },
+						["groups"] = {
+							i(137612),	-- Raw Meat
+							i(137609),	-- Wood
+							i(137613),	-- Hearty Steak
+						},
 					}),
 					q(42410, {	-- Champion: Rexxar
 						["sourceQuests"] = { 42392 },	-- Survive the Night
@@ -473,7 +482,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						},
 					}),
 					q(42395, {	-- Signaling Trouble
-						["sourceQuests"] = { 42393 },	-- Homecoming
+						["sourceQuests"] = {
+							42410,	-- Champion: Rexxar
+							42393,	-- Homecoming
+						},
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
@@ -710,11 +722,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						},
 						["coords"] = {
 							{ 42.9, 6.1, TRUESHOT_LODGE },
+							{ 47.5, 39.4, TRUESHOT_LODGE },
 							{ 49.9, 65.7, 723 },	-- Violet Hold (Scenario Map)
 						},
-						["groups"] = {
-							follower(748),	-- Halduron Brightwing
-						},
+						["groups"] = { follower(748) },	-- Halduron Brightwing
 					}),
 					q(44090, {	-- Pledge of Loyalty
 						["description"] = "After completing |cffffff00The Campaign Begins|r, return to Dalaran and this NPC will approach you within a few seconds.",
@@ -766,9 +777,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 117308 },	-- D'Bynn
 						["coord"] = { 52.2, 48.9, SURAMAR },
 						["timeline"] = { ADDED_7_2_0 },
-						["groups"] = {
-							i(143788),	-- Manaroot (QI!)
-						},
+						["groups"] = { i(143788) },	-- Manaroot (QI!)
 					}),
 					q(45553, {	-- The Nighthuntress Beckons
 						["sourceQuests"] = { 45552 },	-- Soothing Wounds
@@ -852,6 +861,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 110424 },	-- Image of Mimiron
 						["coord"] = { 44.4, 45.0, TRUESHOT_LODGE },
 						["groups"] = {
+							i(139386),	-- Essence of Pure Spirit (QI!)
+							i(139384),	-- Pristine Harpy Feather (QI!)
+							i(139385),	-- Reflective Scale (QI!)
+							i(139349),	-- Stormy Gland (QI!)
+							--
 							i(138393),	-- Essence Swapper
 						},
 					}),
@@ -878,77 +892,96 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
-					-- Hunter Hati Reborn Questline (BfA)
-					q(54913, {	-- Spark of Genius
-						["provider"] = { "n", 152002 },	-- Image of Mimiron
-						["coords"] = {
-							{ 72.8, 14.0, BORALUS },
-							{ 47.8, 89.4, DAZARALOR },
-						},
-						["timeline"] = { ADDED_8_1_5 },
-					}),
-					q(55516, {	-- Spark of Genius
-						["provider"] = { "n", 152002 },	-- Image of Mimiron
-						["coords"] = {
-							{ 72.8, 14.0, BORALUS },
-							{ 47.8, 89.4, DAZARALOR },
-						},
-						["timeline"] = { ADDED_8_1_5 },
-					}),
-					q(54915, {	-- Telemetry Online
-						["sourceQuests"] = {
-							54913,	-- Spark of Genius
-							55516,	-- Spark of Genius
-						},
-						["sourceQuestNumRequired"] = 1,
-						["provider"] = { "n", 149736 },	-- Image of Mimiron
-						["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
-						["timeline"] = { ADDED_8_1_5 },
-					}),
-					q(54916, {	-- The Huntsman's Creed
-						["sourceQuest"] = 54915,	-- Telemetry Online
-						["provider"] = { "n", 149736 },	-- Image of Mimiron
-						["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
-						["timeline"] = { ADDED_8_1_5 },
-						["groups"] = {
-							i(166895),	-- Thunderspark (QI!)
-						},
-					}),
-					q(54917, {	-- Paid in Blood
-						["sourceQuest"] = 54916,	-- The Huntsman's Creed
-						["provider"] = { "n", 149870 },	-- Grif Wildheart
-						["coord"] = { 33.6, 58.6, THE_STORM_PEAKS },
-						["timeline"] = { ADDED_8_1_5 },
-						["groups"] = {
-							i(167061),	-- Thunderspark (QI!)
-						},
-					}),
-					q(54918, {	-- Spark of Imagination
-						["sourceQuest"] = 54917,	-- Paid in Blood
-						["provider"] = { "n", 150391 },	-- Image of Mimiron
-						["coord"] = { 39.3, 71.7, SILITHUS },
-						["timeline"] = { ADDED_8_1_5 },
-					}),
-					q(54919, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Bonds of Thunder
-						["sourceQuest"] = 54918,	-- Spark of Imagination
-						["provider"] = { "n", 151061 },	-- Mimiron
-						["coord"] = { 43.3, 38.8, 745 },
-						["groups"] = {
-							spell(292689),	-- Hati Reborn
-						},
+				}),
+				n(createHeader({	-- Hati's Aftermath
+					readable = "Hati's Aftermath",
+					icon = 1027879,	-- Hati Reborn
+					text = {
+						en = "Hati's Aftermath",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "哈提的后裔",
+						-- TODO: tw = "",
+					},
+				}), {
+					n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+						q(54913, {	-- Spark of Genius
+							["provider"] = { "n", 152002 },	-- Image of Mimiron
+							["coords"] = {
+								{ 72.8, 14.0, BORALUS },
+								{ 47.8, 89.4, DAZARALOR },
+							},
+						}),
+						q(55516, {	-- Spark of Genius
+							["provider"] = { "n", 152002 },	-- Image of Mimiron
+							["coords"] = {
+								{ 72.8, 14.0, BORALUS },
+								{ 47.8, 89.4, DAZARALOR },
+							},
+						}),
+						q(54915, {	-- Telemetry Online
+							["sourceQuests"] = {
+								54913,	-- Spark of Genius
+								55516,	-- Spark of Genius
+							},
+							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 149736 },	-- Image of Mimiron
+							["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
+						}),
+						q(54916, {	-- The Huntsman's Creed
+							["sourceQuest"] = 54915,	-- Telemetry Online
+							["provider"] = { "n", 149736 },	-- Image of Mimiron
+							["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
+							["groups"] = { i(166895) },	-- Thunderspark (QI!)
+						}),
+						q(54917, {	-- Paid in Blood
+							["sourceQuest"] = 54916,	-- The Huntsman's Creed
+							["provider"] = { "n", 149870 },	-- Grif Wildheart
+							["coord"] = { 33.6, 58.6, THE_STORM_PEAKS },
+							["groups"] = { i(167061) },	-- Thunderspark (QI!)
+						}),
+						q(54918, {	-- Spark of Imagination
+							["sourceQuest"] = 54917,	-- Paid in Blood
+							["provider"] = { "n", 150391 },	-- Image of Mimiron
+							["coord"] = { 39.3, 71.7, SILITHUS },
+						}),
+						q(54919, {	-- Bonds of Thunder
+							["sourceQuest"] = 54918,	-- Spark of Imagination
+							["provider"] = { "n", 151061 },	-- Mimiron
+							["coord"] = { 43.3, 38.8, 745 },
+							["groups"] = { spell(292689) },	-- Hati Reborn
+						}),
+						q(54920, {	-- Homeward Bound
+							["sourceQuest"] = 54919,	-- Bonds of Thunder
+							["provider"] = { "n", 151061 },	-- Mimiron
+							["coord"] = { 43.3, 38.8, 745 },
+						}),
+						q(55195, {	-- Reverberation
+							["sourceQuest"] = 54920,	-- Homeward Bound
+							["provider"] = { "n", 29445 },	-- Thorim
+							["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
+						}),
 					})),
-					q(54920, {	-- Homeward Bound
-						["sourceQuest"] = 54919,	-- Bonds of Thunder
-						["provider"] = { "n", 151061 },	-- Mimiron
-						["coord"] = { 43.3, 38.8, 745 },
-						["timeline"] = { ADDED_8_1_5 },
-					}),
-					q(55195, {	-- Reverberation
-						["sourceQuest"] = 54920,	-- Homeward Bound
-						["provider"] = { "n", 29445 },	-- Thorim
-						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
-						["timeline"] = { ADDED_8_1_5 },
-					}),
+					n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+						n(151794, {	-- Clockwerk <Lightning-Resistant Pet Toys>
+							["sourceQuest"] = 55195,	-- Reverberation
+							["coord"] = { 33.8, 58.0, THE_STORM_PEAKS },
+							["groups"] = {
+								i(167800),	-- Charged Sparkstone
+								i(168098),	-- Hati Wipe
+								i(167799),	-- Ironspine Protocol
+								i(167797),	-- Jolt Jerky
+								i(167798),	-- Rubber Ball
+								i(167801),	-- Voltweave Fez
+							},
+						}),
+					})),
 				}),
 				n(SPECIAL, {
 					n(100633, {	-- Death Hunter Moorgoth <Hunters of Death>
@@ -976,7 +1009,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						}),
 					}),
 					gt(375, {	-- Eagle Ally
-						i(140216),	-- Eagle Feather
+						o(252993, {	-- Eagle Feather
+							["coords"] = {
+								{ 24.5, 43.1, AZSUNA },
+								{ 39.7, 29.2, TRUESHOT_LODGE },
+								{ 41.3, 82.8, SURAMAR },
+								{ 44.3, 15.1, VALSHARAH },
+								{ 45.9, 35.8, STORMHEIM },
+								{ 56.7, 67.8, HIGHMOUNTAIN },
+							},
+							["groups"] = { i(140216) },	-- Eagle Feather
+						}),
 					}),
 				}),
 				n(VENDORS, {
@@ -986,7 +1029,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(250128, {	-- Banner of the Unseen Path (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(139713, {	-- Belt of the Unseen Path
 								["cost"] = 5000000,	-- 500g
@@ -1009,14 +1052,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								["cost"] = 500000,	-- 50g
 							}),
 							i(140938, {	-- Huntmaster's Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(140969, {	-- Huntmaster's Greater Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 4000 }},	-- 4,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 4000 } },
 							}),
 							i(140548),	-- Huntmaster's Halberd
 							i(140968, {	-- Huntmaster's Lesser Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},		-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(140539),	-- Huntmaster's Longbow
 							i(140544),	-- Huntmaster's Rifle
@@ -1029,14 +1072,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							i(136781),	-- Pet Training Manual: Fetch (CI!)
 							i(136780),	-- Pet Training Manual: Play Dead (CI!)
 							i(250125, {	-- Replica Altar of the Eternal Hunt (DECOR!)
-								["sourceAchievement"] = 42290,	-- Hidden Potential of the Huntmaster
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},	-- 5,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(250127, {	-- Replica Tales of the Hunt (DECOR!)
-								["sourceAchievement"] = 60965,	-- Legendary Research of the Unseen Path
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},	-- 3,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
 							i(139712, {	-- Spaulders of the Unseen Path
 								["cost"] = 5000000,	-- 500g
@@ -1046,44 +1087,42 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 							i(245549, {	-- Trueshot Lodge Fireplace (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(250110, {	-- Trueshot Lodge Weapon Rack (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
-							i(248011, {	-- Trueshot Skeletal Dragon Trophy (DECOR!)
-								["sourceAchievement"] = 42273,	-- The Huntmaster's Campaign
+							i(248011, {	-- Trueshot Skeletal Dragon Head (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},	-- 1,500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(250126, {	-- Unseen Path Archer's Gallery (DECOR!)
-								["sourceAchievement"] = 60984,	-- Raise an Army for the Trueshot Lodge
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(139714, {	-- Wristwraps of the Unseen Path
 								["cost"] = 5000000,	-- 500g
 							}),
 						},
 					}),
-					n(100661, {	--  Pan the Kind Hand <Stable Master>
+					n(100661, {	-- Pan the Kind Hand <Stable Master>
 						["sourceQuests"] = { 46337 },	-- Night of the Wilds
 						["coord"] = { 58.8, 31.8, TRUESHOT_LODGE },
 						["groups"] = {
 							i(147580, {	-- Tome of the Hybrid Beast (CI!)
 								["sourceQuest"] = 46337,	-- Night of the Wilds
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(142228, {	-- Huntmaster's Dire Wolfhawk (MOUNT!)
 								["sourceQuest"] = 46337,	-- Night of the Wilds
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(142226, {	-- Huntmaster's Fierce Wolfhawk (MOUNT!)
 								["sourceQuest"] = 46337,	-- Night of the Wilds
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 						},

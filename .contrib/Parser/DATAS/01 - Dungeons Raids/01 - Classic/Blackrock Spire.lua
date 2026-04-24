@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 LOWER_BLACKROCK_SPIRE = createHeader({
 	readable = "Hordemar City (Lower)",
 	icon = 236429,
@@ -9,6 +10,9 @@ LOWER_BLACKROCK_SPIRE = createHeader({
 	},
 	description = {
 		en = "Also known as 'Lower' Blackrock Spire.",
+		es = "También conocida como 'Cumbre de Roca inferior'.",
+		mx = "También conocida como 'Cumbre de Roca inferior'.",
+		cn = "又称黑石塔下层",
 	},
 });
 UPPER_BLACKROCK_SPIRE = createHeader({
@@ -20,11 +24,18 @@ UPPER_BLACKROCK_SPIRE = createHeader({
 	description = {
 		-- #if AFTER 3.0.8
 		en = "Also known as 'Upper' Blackrock Spire.",
+		es = "También conocida como 'Cumbre de Roca superior'.",
+		mx = "También conocida como 'Cumbre de Roca superior'.",
+		cn = "又称黑石塔上层",
 		-- #else
 		en = "One member of your group must have completed the Seal of Ascension quest chain in order for the fires to light and the door to open to this portion of the instance. Also known as 'Upper' Blackrock Spire.",
+		es = "Un miembro de tu grupo debe haber completado la cadena de misiones del Sello de Ascensión para que se enciendan las hogueras y se abra la puerta a esta parte de la instancia. También conocida como la Cumbre de Roca Negra superior.",
+		mx = "Un miembro de tu grupo debe haber completado la cadena de misiones del Sello de Ascensión para que se prendan las hogueras y se abra la puerta a esta parte de la instancia. También conocida como la Cumbre de Roca Negra superior.",
+		cn = "你的队伍中必须有一名成员完成 “升腾之印（Seal of Ascension）” 任务链，才能点燃火焰并打开通往副本这一部分的门，即黑石塔上层（Upper Blackrock Spire）",
 		-- #endif
 	},
 });
+
 BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 	-- #if BEFORE MOP
 	["lore"] = "The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",
@@ -154,7 +165,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(5068, {	-- Breastplate of Bloodthirst
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["qg"] = 10637,	-- Malyfous Darkhammer
-				["coord"] = { 61, 38.8, WINTERSPRING },
+				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["cost"] = {
@@ -194,7 +205,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(5063, {	-- Cap of the Scarlet Savant
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["qg"] = 10637,	-- Malyfous Darkhammer
-				["coord"] = { 61, 38.8, WINTERSPRING },
+				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { STRATHOLME },
 				["cost"] = {
@@ -240,7 +251,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "n", 9565 },	-- Mayara Brightwing
 					{ "i", 12437 },	-- Ridgewell's Crate
 				},
-				["coord"] = { 84.8, 69, BURNING_STEPPES },
+				["coord"] = { 84.8, 69.0, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
@@ -256,7 +267,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(4764, {	-- Doomrigger's Clasp
 				["sourceQuest"] = 4766,	-- Mayara Brightwing
 				["qg"] = 9565,	-- Mayara Brightwing
-				["coord"] = { 84.8, 69, BURNING_STEPPES },
+				["coord"] = { 84.8, 69.0, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
@@ -581,7 +592,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(5067, {	-- Leggings of Arcana
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["qg"] = 10637,	-- Malyfous Darkhammer
-				["coord"] = { 61, 38.8, WINTERSPRING },
+				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["cost"] = {
@@ -672,7 +683,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					4764,	-- Doomrigger's Clasp [NOT SURE, but this quest constantly resets to Not Complete on Blizzard's Side.]
 				},
 				["qg"] = 2285,	-- Count Remington Ridgewell <House of Nobles>
-				["coord"] = { 74, 30, STORMWIND_CITY },
+				["coord"] = { 74.0, 30.0, STORMWIND_CITY },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
@@ -688,26 +699,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
 			}),
-			-- #if AFTER TBC
-			q(6568, {	-- Mistress of Deception
-				["sourceQuest"] = 6567,	-- The Champion of the Horde
-				["providers"] = {
-					{ "n", 10182 },	-- Rokaro <Champion of the Horde>
-					{ "i", 16785 },	-- Rokaro's Letter
-				},
-				["coord"] = { 25.6, 70.0, DESOLACE },
-				["timeline"] = { REMOVED_4_0_3 },
-				["maps"] = { WESTERN_PLAGUELANDS },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 55,
-			}),
-			-- #endif
 			q(4866, {	-- Mother's Milk
 				-- #if BEFORE 4.0.3
 				["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
 				-- #endif
 				["qg"] = 9563,	-- Ragged John
-				["coord"] = { 65, 23.6, BURNING_STEPPES },
+				["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
@@ -754,7 +751,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4701, {	-- Put Her Down
 				["qg"] = 9562,	-- Helendis Riverhorn
-				["coord"] = { 85.6, 69, BURNING_STEPPES },
+				["coord"] = { 85.6, 69.0, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
@@ -833,7 +830,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(4768, {	-- The Darkstone Tablet
 				["sourceQuest"] = 4769,	-- Vivian Lagrave and the Darkstone Tablet
 				["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
-				["coord"] = { 3, 47.6, BADLANDS },
+				["coord"] = { 3.0, 47.6, BADLANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 57,
@@ -922,7 +919,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(8182, {	-- The Hand of Rastakhan
 				["sourceQuest"] = 8181,	-- Confront Yeh'kinya
 				["qg"] = 10460,	-- Prospector Ironboot
-				["coord"] = { 66.8, 24, TANARIS },
+				["coord"] = { 66.8, 24.0, TANARIS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 40,
 			}),
@@ -947,9 +944,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						},
 						["coords"] = {
 							-- #if AFTER WRATH
-							{ 66.9, 9, EASTERN_PLAGUELANDS },
+							{ 66.9, 9.0, EASTERN_PLAGUELANDS },
 							-- #else
-							{ 72.4, 13, EASTERN_PLAGUELANDS },
+							{ 72.4, 13.0, EASTERN_PLAGUELANDS },
 							-- #endif
 						},
 					}),
@@ -1069,13 +1066,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 				},
 			}),
-			-- #if BEFORE TBC
-			q(6568, {	-- The Testament of Rexxar
+			q(6568, {	-- The Testament of Rexxar(Classic)/Mistress of Deception(TBC)
 				["sourceQuest"] = 6567,	-- The Champion of the Horde
 				["providers"] = {
-					{ "n", 10182 },	-- Rexxar <Champion of the Horde>
-					{ "i", 16785 },	-- Rexxar's Testament
+					{ "n", 10182 },	-- Rexxar <Champion of the Horde>/Rokaro <Champion of the Horde>
+					{ "i", 16785 },	-- Rexxar's Testament/Rokaro's Letter
 				},
+				-- #if BEFORE TBC
 				["coords"] = {
 					{ 54.0, 3.2, DESOLACE },
 					{ 62.8, 22.6, DESOLACE },
@@ -1087,12 +1084,31 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ 40.8, 78.6, DESOLACE },
 					{ 42.4, 96.8, DESOLACE },
 				},
+				-- #else
+				["coord"] = { 25.6, 70.0, DESOLACE },
+				-- #endif
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WESTERN_PLAGUELANDS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 			}),
-			-- #endif
+			q(4809, {	-- Chillwind Horns
+				["sourceQuest"] = 4808,	-- Felnok Steelspring
+				["qg"] = 10468,	-- Felnok Steelspring
+				["coord"] = { 61.6, 38.6, WINTERSPRING },
+				["timeline"] = { REMOVED_4_0_3 },
+				["lvl"] = 50,
+				["groups"] = {
+					objective(1, {	-- 0/8 Uncracked Chillwind Horn
+						["provider"] = { "i", 12444 },	-- Uncracked Chillwind Horn
+						["crs"] = {
+							7447,	-- Fledgling Chillwind
+							7448,	-- Chillwind Chimaera
+							7449,	-- Chillwind Ravager
+						},
+					}),
+				},
+			}),
 			q(4907, {	-- Tinkee Steamboil
 				["sourceQuest"] = 4810,	-- Return to Tinkee
 				["qg"] = 10468,	-- Felnok Steelspring
@@ -1120,7 +1136,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(3, {	-- 0/1 Overlord Wyrmthalak slain
 						["provider"] = { "n", 9568 },	-- Overlord Wyrmthalak
 					}),
-					i(66000, {  -- Band of the Spire
+					i(66000, {	-- Band of the Spire
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(65933, {	-- Highlord's Chestpiece
@@ -1816,16 +1832,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 				},
 			}),
-			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16080,	-- Mor Grayhoof
-			-- #if BEFORE 4.0.3
-			bubbleDown({
-				["timeline"] = { REMOVED_4_0_3 },
-				-- #if NOT ANYCLASSIC
-				["u"] = CONDITIONALLY_AVAILABLE,
-				-- #endif
-			},
-			-- #endif
-			{
+			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16080, {	-- Mor Grayhoof
 				["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 				["cost"] = {
 					{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
@@ -1835,6 +1842,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- This init function unmarks the removed from game flag for folks with the brazier.
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 				-- #endif
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 						["questID"] = 8966,	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
@@ -1870,11 +1878,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { REMOVED_5_0_4 },
 					}),
 				},
-			}
-			-- #if BEFORE 4.0.3
-			)
-			-- #endif
-			)),
+			})),
 			n(9596, {	-- Bannok Grimaxe (Rare)
 				["coords"] = {
 					{ 53.0, 67.0, LBRS_TAZZALOR },
@@ -2917,7 +2921,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16042, {	-- Lord Valthalak
+				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16042, {	-- Lord Valthalak
 					-- #if BEFORE 6.0.2
 					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 					["cost"] = {
@@ -2930,13 +2934,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
-					-- #if NOT ANYCLASSIC
-					["u"] = CONDITIONALLY_AVAILABLE,
-					-- #endif
 					["groups"] = {
-						i(22336, {	-- Draconian Aegis of the Legion
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(22336),	-- Draconian Aegis of the Legion
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228682, {	-- Lord Valthalak's Staff of Command
 							["description"] = "This version of the staff was created and added to the DB, but doesn't seem to drop. @Crieve if you get it to drop.",
@@ -2944,7 +2943,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						})),
 						-- #endif
 						i(22335, {	-- Lord Valthalak's Staff of Command
-							["timeline"] = { REMOVED_6_0_2 },
+							-- ["timeline"] = { REMOVED_6_0_2 },	-- so is this available with summoning item?? keep time line if NOT available.
 							-- CRIEVE NOTE: They reitemized the staff, but didn't put it into the game.
 						}),
 						-- #if SEASON_OF_DISCOVERY
@@ -2953,13 +2952,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						})),
 						-- #endif
 						i(22302, {	-- Ironweave Cowl
-							["timeline"] = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
-								REMOVED_6_0_2,
-								-- #endif
-							},
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_3, },
+							-- #endif
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228684, {	-- Pendant of Celerity
@@ -2967,36 +2962,22 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						})),
 						-- #endif
 						i(22340, {	-- Pendant of Celerity
-							["timeline"] = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
-								REMOVED_6_0_2,
-								-- #endif
-							},
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_3, },
+							-- #endif
 						}),
-						i(22337, {	-- Shroud of Domination
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(22343, {	-- Handguards of Savagery
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(22342, {	-- Leggings of Torment
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(22337),	-- Shroud of Domination
+						i(22343),	-- Handguards of Savagery
+						i(22342),	-- Leggings of Torment
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228683, {	-- Rune Band of Wizardry
 							["timeline"] = { ADDED_1_15_3 },
 						})),
 						-- #endif
 						i(22339, {	-- Rune Band of Wizardry
-							["timeline"] = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
-								REMOVED_6_0_2,
-								-- #endif
-							},
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_3, },
+							-- #endif
 						}),
 					},
 				})),

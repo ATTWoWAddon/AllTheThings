@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(DORNOGAL, {
 		n(QUESTS, {
@@ -87,7 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					{ "n", 223533 },	-- Custodian Khubon
 					{ "i", 231757 },	-- Fractured Spark of Starlight
 				},
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
 					i(231757),	-- Fractured Spark of Starlight
 				},
@@ -95,13 +96,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			q(86363, {	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 			}),
 			q(86364, {	-- Crests from the Ether
 				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 				},
@@ -110,7 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 				},
@@ -128,12 +129,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(227710),	-- Tome of Polymorph: Mosswool (CI!)
 				},
-			}),
-			q(94210, {	-- Furniture Favor
-				["qg"] = 252312,	-- Second Chair Pawdo
-				["coord"] = { 52.9, 68.0, DORNOGAL },
-				["timeline"] = { ADDED_11_2_7 },
-				["groups"] = { i(253173) },	-- Meadery Storage Barrel (DECOR!)
 			}),
 			q(83275, {	-- Gear Enchanting
 				["provider"] = { "n", 226287 },	-- Ellerdin
@@ -160,44 +155,44 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["lockCriteria"] = { 1, "questID", 79197 },	-- Surface Bound (final quest of pre-lvl 80 Campaign / Acct story unlock)
 		},{
 			q(84367, {	-- A Time to Come Together
-				--["sourceQuests"] = {  },	-- Auto-accepted after reaching 80 on an alt who has not done the leveling campaign?
+				-- ["sourceQuests"] = {  },	-- Auto-accepted after reaching 80 on an alt who has not done the leveling campaign?
 				-- breadcrumb to the lvl 80 campaign, test if locked when skipped
 				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 				["coord"] = { 47.4, 44.4, DORNOGAL },
 			}),
 			q(84365, {	-- Something on the Horizon
-				--["sourceQuests"] = { 83621 },	-- HQT (I'm not sure if there any other way to get it)
+				-- ["sourceQuests"] = { 83621 },	-- HQT (I'm not sure if there any other way to get it)
 				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 				["coord"] = { 47.4, 44.4, DORNOGAL },
 			}),
 			q(83543, {	-- Adventuring in Khaz Algar
-				--["sourceQuests"] = { 83621 },	-- HQT (I'm not sure if there any other way to get it)
+				-- ["sourceQuests"] = { 83621 },	-- HQT (I'm not sure if there any other way to get it)
 				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 				["coord"] = { 47.4, 44.4, DORNOGAL },
 			}),
 			q(83552, {	-- Azj-Kahet
-				--["sourceQuests"] = { 83621 },
+				-- ["sourceQuests"] = { 83621 },
 				["provider"] = { "n", 227038 },	-- Scouting Map
 				["coord"] = { 48.2, 43.7, DORNOGAL },
-				--["isBreadcrumb"] = true,	-- ?
+				-- ["isBreadcrumb"] = true,	-- ?
 			}),
 			q(83551, {	-- Hallowfall
-				--["sourceQuests"] = { 83621 },
+				-- ["sourceQuests"] = { 83621 },
 				["provider"] = { "n", 227038 },	-- Scouting Map
 				["coord"] = { 48.2, 43.7, DORNOGAL },
-				--["isBreadcrumb"] = true,	-- ?
+				-- ["isBreadcrumb"] = true,	-- ?
 			}),
 			q(83548, {	-- Isle of Dorn
-				--["sourceQuests"] = { 83621 },
+				-- ["sourceQuests"] = { 83621 },
 				["provider"] = { "n", 227038 },	-- Scouting Map
 				["coord"] = { 48.2, 43.7, DORNOGAL },
-				--["isBreadcrumb"] = true,	-- ?
+				-- ["isBreadcrumb"] = true,	-- ?
 			}),
 			q(83550, {	-- The Ringing Deeps
-				--["sourceQuests"] = { 83621 },
+				-- ["sourceQuests"] = { 83621 },
 				["provider"] = { "n", 227038 },	-- Scouting Map
 				["coord"] = { 48.2, 43.7, DORNOGAL },
-				--["isBreadcrumb"] = true,	-- ?
+				-- ["isBreadcrumb"] = true,	-- ?
 			}),
 		})),
 		n(QUESTS, sharedData({
@@ -256,7 +251,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			q(82679, {	-- Archives: Seeking History
-				--["sourceQuests"] = { 82678 },	-- Archives: The First Disk (TODO: or just rng weekly?)
+				-- ["sourceQuests"] = { 82678 },	-- Archives: The First Disk (TODO: or just rng weekly?)
 				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 				["coord"] = { 46.3, 49.3, DORNOGAL },
 				["maps"] = { VAULT_OF_MEMORY },
@@ -298,8 +293,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(DORNOGAL, {
 			n(QUESTS, {
-				--q(79326),	-- after turn in questID 82153 (Embassies and Envoys), [DNT] Push RP Event (spellID 362105)
-				--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
+				-- q(79326),	-- after turn in questID 82153 (Embassies and Envoys), [DNT] Push RP Event (spellID 362105)
+				-- ^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
 				q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
 				q(85940),	-- Entering Dornogal through portal or campaign skip.
 				q(86586),	-- Ask an Oathsworn Peacekeeper "Can you please do that somewhere else?" by the training dummies at the gates of Dornogal.
@@ -325,7 +320,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				-- 86365 (Crests Transmutation)
 				q(91744, {["timeline"] = {ADDED_11_2_0}}),	-- provided 15x Carved Ethereal Crest
 				-- 11.2?
-				--q(92487, {["timeline"] = {ADDED_11_2_0}}),	-- After turn in disk weekly quest, could be coffer key shard lockout?
+				-- q(92487, {["timeline"] = {ADDED_11_2_0}}),	-- After turn in disk weekly quest, could be coffer key shard lockout?
+				hqt(93399, {
+					["name"] = "We are all frustrated, Danath.",
+					["provider"] = { "n", 234562 },	-- Danath Trollbane
+					["coord"] = { 46.3, 49.6, DORNOGAL },
+					["lockCriteria"] = { 1, "questID", 84638 },	-- Trouble in the Highlands [assumed]
+					["timeline"] = { ADDED_11_2_7 },
+					["repeatable"] = true,
+				}),
 			}),
 		}),
 	}),

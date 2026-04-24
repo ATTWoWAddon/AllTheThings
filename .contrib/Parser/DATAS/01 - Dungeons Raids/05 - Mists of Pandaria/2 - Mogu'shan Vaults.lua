@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 -- #if MOP
 local CUTTING_EDGE_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_RISE_OF_THE_THUNDER_KING .. [[) then
@@ -12,6 +13,7 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	applyclassicphase(MOP_PHASE_ONE_MOGUSHAN_VAULTS, inst(317, {	-- Mogu'shan Vaults
 		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },

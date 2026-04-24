@@ -99,7 +99,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["groups"] = {
 			q(78068, {	-- An Artificer's Appeal
 				["provider"] = { "o", 415303 },	-- Magically-Sealed Parcel
-				["coord"] = { 53, 15.5, STORMWIND_CITY },
+				["coord"] = { 53.0, 15.5, STORMWIND_CITY },
 				["groups"] = {
 					i(210454),	-- Spare Hologem (QI!)
 				},
@@ -111,13 +111,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["groups"] = {
 					o_repeated({
 						i(210167),	-- Empyrium Filament (QI!)
-						o(420019),	--	Artificing Tools
-						o(408934),	--	Artificing Tools
+						o(420019),	-- Artificing Tools
+						o(408934),	-- Artificing Tools
 					}),
 					o_repeated({
 						i(210168),	-- Hyperthermal Soldering Tool (QI!)
-						o(420039),	--	Artificing Tools
-						o(420040),	--	Artificing Tools
+						o(420039),	-- Artificing Tools
+						o(420040),	-- Artificing Tools
 					}),
 				},
 			}),
@@ -152,7 +152,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 210581 },	-- Exarch Maladaar
 				["coord"] = { 41.6, 61.6, TEROKKAR_FOREST },
 				["groups"] = {
-					o(408954, {	--	Artificer's Lockbox
+					o(408954, {	-- Artificer's Lockbox
 						i(210189),	-- Exarch Hataaru's Artificing Lens (QI!)
 					}),
 				},
@@ -483,16 +483,20 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			-- #endif
 		}, {
 			q(57043, {	-- Old Friends, New Opportunities
-				["provider"] = { "n", 156358 },	-- Izzy
-				["coord"] = { 39.5, 80.2, ORGRIMMAR },
+				["qgs"] = {
+					156358,	-- Izzy
+					133523,	-- Ji Firepaw
+				},
+				["coords"] = {
+					{ 38.0, 80.2, ORGRIMMAR },
+					{ 39.5, 80.2, ORGRIMMAR },
+				},
 			}),
 			q(57045, {	-- A Special Delivery
 				["sourceQuest"] = 57043,	-- Old Friends, New Opportunities
 				["provider"] = { "n", 156396 },	-- Sassy Hardwrench
 				["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
-				["groups"] = {
-					i(170538),	-- Mysterious Package (QI!)
-				},
+				["groups"] = { i(170538) },	-- Mysterious Package (QI!)
 			}),
 			q(57047, {	-- A Simple Experiment
 				["sourceQuest"] = 57045,	-- A Special Delivery
@@ -571,11 +575,42 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 		}),
 	})),
+	header(HEADERS.Race, HARANIR_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH }, ["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE } }, {
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Haranir|r.",
+		["groups"] = {
+			q(94464, {	-- Heritage of the Haranir
+				["description"] = "Pops up when you hit level 50.",
+				["groups"] = {
+					ach(61942),	-- Heritage of the Haranir
+					-- Heritage of Harandar: Har'alnor
+					i(258817),	-- Har'alnor Bracers
+					i(258824),	-- Har'alnor Cape
+					i(258820),	-- Har'alnor Gauntlets
+					i(258814),	-- Har'alnor Girdle
+					i(258821),	-- Har'alnor Horns
+					i(258816),	-- Har'alnor Knee-High Boots
+					i(258822),	-- Har'alnor Shoulderspikes
+					i(258815),	-- Har'alnor Skirt
+					i(258812),	-- Har'alnor Vest
+					-- Heritage of Harandar: Shul'ka
+					i(258829),	-- Shul'ka Bracers
+					i(258833),	-- Shul'ka Cape
+					i(258830),	-- Shul'ka Gauntlets
+					i(258826),	-- Shul'ka Girdle
+					i(258831),	-- Shul'ka Horns
+					i(258828),	-- Shul'ka Knee-High Boots
+					i(258832),	-- Shul'ka Shoulderspikes
+					i(258827),	-- Shul'ka Skirt
+					i(258825),	-- Shul'ka Vest
+				},
+			}),
+		},
+	})),
 	race(HIGHMOUNTAIN_TAUREN, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { HIGHMOUNTAIN_TAUREN } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
 		["groups"] = {
 			q(49783, {	-- Heritage of Highmountain
-				["provider"] = { "n", 93826 },	--  Mayla Highmountain
+				["provider"] = { "n", 93826 },	-- Mayla Highmountain
 				["coord"] = { 46.6, 61.0, HIGHMOUNTAIN },
 				["lvl"] = 50,
 				["groups"] = {
@@ -604,9 +639,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					75265,	-- An Urgent Matter (the other one)
 				},
 				["isBreadcrumb"] = true,
-				["groups"] = {
-					i(203475),	-- Urgent Stormwind Summons
-				},
+				["groups"] = { i(203475) },	-- Urgent Stormwind Summons (QI!)
 			}),
 			q(75265, {	-- An Urgent Matter
 				["altQuests"] = {
@@ -615,9 +648,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 199340 },	-- Agent Render
 				["coord"] = { 54.6, 20.0, STORMWIND_CITY },
 				["isBreadcrumb"] = true,
-				["groups"] = {
-					i(203475),	-- Urgent Stormwind Summons
-				},
+				["groups"] = { i(203475) },	-- Urgent Stormwind Summons (QI!)
+				["timeline"] = { REMOVED_11_2_7 }
 			}),
 			q(72405, {	-- An Unlikely Informant
 				["sourceQuests"] = { 72644, 75265 },	-- Justice Long Overdue
@@ -728,39 +760,10 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 36.7, 51.1, NORTHSHIRE_VALLEY },
 				["groups"] = {
 					title(493),	-- Lionguard <Name>
-					i(203153),	-- Lionguard Greathelm
-					i(203154),	-- Lionguard Greathelm
-					i(203157),	-- Lionguard Greathelm
-					i(204820),	-- Lionguard Greathelm
-					i(204821),	-- Lionguard Greathelm
-					i(204822),	-- Lionguard Greathelm
-					i(203152),	-- Lionguard Pauldrons
-					i(203155),	-- Lionguard Pauldrons
-					i(203156),	-- Lionguard Pauldrons
-					i(203158),	-- Lionguard Chestplate
-					i(203159),	-- Lionguard Chestplate
-					i(203160),	-- Lionguard Chestplate
-					i(203161),	-- Lionguard Greatbelt
-					i(203162),	-- Lionguard Greatbelt
-					i(203163),	-- Lionguard Greatbelt
-					i(204863),	-- Lionguard Greatbelt
-					i(204865),	-- Lionguard Greatbelt
-					i(204866),	-- Lionguard Greatbelt
-					i(203164),	-- Lionguard Legguards
-					i(203165),	-- Lionguard Legguards
-					i(203166),	-- Lionguard Legguards
-					i(203167),	-- Lionguard Warboots
-					i(203168),	-- Lionguard Warboots
-					i(203169),	-- Lionguard Warboots
-					i(203170),	-- Lionguard Bracers
-					i(203171),	-- Lionguard Bracers
-					i(203172),	-- Lionguard Bracers
-					i(203173),	-- Lionguard Gauntlets
-					i(203174),	-- Lionguard Gauntlets
-					i(203175),	-- Lionguard Gauntlets
-					i(203176),	-- Lionguard Robe
-					i(203177),	-- Lionguard Robe
-					i(203178),	-- Lionguard Robe
+					-- these all share the same questID, which is also the parent questID
+					iensemble(203211, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Lion's Heritage Blue Armor Set
+					iensemble(203212, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Lion's Heritage Scarlet Armor Set
+					iensemble(203213, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Lion's Heritage White Armor Set
 				},
 			}),
 		}),
@@ -811,7 +814,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
 		["groups"] = {
 			q(51484, {	-- Heritage of the Mag'har
-				["provider"] = { "n", 143845 },	--  Overlord Geya'rah
+				["provider"] = { "n", 143845 },	-- Overlord Geya'rah
 				["coord"] = { 70.6, 44.6, ORGRIMMAR },
 				["lvl"] = 50,
 				["groups"] = {
@@ -879,23 +882,23 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 207353 },	-- Arko'narin Starshade
 				["coord"] = { 52.3, 4.7, STORMWIND_CITY },
 			}),
-			q(76194, {	--  A Grim Portent
+			q(76194, {	-- A Grim Portent
 				["sourceQuests"] = { 75891 },	-- Ancient Curses
 				["provider"] = { "n", 202702 },	-- Maiev Stormsong
-				["coord"] = { 54, 79.4, FELWOOD },
+				["coord"] = { 54.0, 79.4, FELWOOD },
 			}),
 			q(76195, {	-- Countering Corruption
-				["sourceQuests"] = { 76194 },	--  A Grim Portent
+				["sourceQuests"] = { 76194 },	-- A Grim Portent
 				["provider"] = { "n", 202700 },	-- Lysander Starshade
-				["coord"] = { 54, 79.4, FELWOOD },
+				["coord"] = { 54.0, 79.4, FELWOOD },
 				["groups"] = {
 					i(207004),	-- Incanter's Tome (QI!)
 				},
 			}),
 			q(76196, {	-- Mercy or Misery
-				["sourceQuests"] = { 76194 },	--  A Grim Portent
+				["sourceQuests"] = { 76194 },	-- A Grim Portent
 				["provider"] = { "n", 202701 },	-- Arko'narin Starshade
-				["coord"] = { 54, 79.4, FELWOOD },
+				["coord"] = { 54.0, 79.4, FELWOOD },
 			}),
 			q(76203, {	-- Stepping into the Shadows
 				["sourceQuests"] = {
@@ -908,7 +911,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(76197, {	-- A Glimpse of Terror
 				["sourceQuests"] = { 76203 },	-- Stepping into the Shadows
 				["provider"] = { "n", 202702 },	-- Maiev Stormsong
-				["coord"] = { 38, 53.7, FELWOOD },
+				["coord"] = { 38.0, 53.7, FELWOOD },
 			}),
 			q(76205, {	-- Balancing the Scales
 				["sourceQuests"] = { 76197 },	-- A Glimpse of Terror
@@ -938,9 +941,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 209140 },	-- Maiev Stormsong
 				["coord"] = { 52.7, 4.2, STORMWIND_CITY },
 				["groups"] = {
+					title(511),	-- Ama'shan <Name>
 					iensemble(208879),	-- Ensemble: Kaldorei Protector's Adornment
 					iensemble(208785),	-- Traditionalist's Kaldorei Blades
-					title(511),	-- Ama'shan <Name>
+					i(248401, {	-- Ornamental Kaldorei Glaive (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				},
 			}),
 		},
@@ -1116,33 +1122,10 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 52.3, 43.4, DUROTAR },
 				["groups"] = {
 					i(204170),	-- Clan Banner (TOY!)
-					i(203179),	-- Kosh'aka Casque
-					i(203180),	-- Kosh'aka Casque
-					i(203181),	-- Kosh'aka Casque
-					i(203185),	-- Kosh'aka Spaulders
-					i(203186),	-- Kosh'aka Spaulders
-					i(203187),	-- Kosh'aka Spaulders
-					i(203188),	-- Kosh'aka Cheststraps
-					i(203189),	-- Kosh'aka Cheststraps
-					i(203190),	-- Kosh'aka Cheststraps
-					i(203191),	-- Kosh'aka Girdle
-					i(203192),	-- Kosh'aka Girdle
-					i(203193),	-- Kosh'aka Girdle
-					i(203194),	-- Kosh'aka Legstraps
-					i(203195),	-- Kosh'aka Legstraps
-					i(203196),	-- Kosh'aka Legstraps
-					i(203197),	-- Kosh'aka Greaves
-					i(203198),	-- Kosh'aka Greaves
-					i(203199),	-- Kosh'aka Greaves
-					i(203200),	-- Kosh'aka Armbands
-					i(203201),	-- Kosh'aka Armbands
-					i(203202),	-- Kosh'aka Armbands
-					i(203203),	-- Kosh'aka Grips
-					i(203204),	-- Kosh'aka Grips
-					i(203205),	-- Kosh'aka Grips
-					i(203207),	-- Kosh'aka Drape
-					i(203208),	-- Kosh'aka Drape
-					i(203209),	-- Kosh'aka Drape
+					-- these all share the same questID, which is also the parent questID
+					iensemble(203214, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
+					iensemble(203215, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
+					iensemble(203216, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Wolf's Heritage Warsong Armor Set
 				},
 			}),
 		}),
@@ -1153,6 +1136,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			n(QUESTS, {
 				q(84442, {	-- Invitation to the Spirit Festival [A]
 					["description"] = "Auto-accepted once criteria is met.",
+					["qg"] = { 126332 },	-- Aysa Cloudsinger
+					["coord"] = { 52.2, 13.7, STORMWIND_CITY },
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
 				q(84444, {	-- Invitation to the Spirit Festival [H]
@@ -1168,7 +1153,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				q(84452, {	-- The Wanderers [H]
 					["sourceQuest"] = 84444,	-- Invitation to the Spirit Festival [H]
 					["qg"] = 229338,	-- Li Li Stormstout
-					["coord"] = { 70.5, 39, ORGRIMMAR },
+					["coord"] = { 70.5, 39.0, ORGRIMMAR },
 					["races"] = { PANDAREN_HORDE },
 				}),
 				q(84456, {	-- To Morning Breeze [A]
@@ -1342,9 +1327,17 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 						i(242520),	-- Festival Hot Air Balloon (TOY!)
 						iensemble(258635, {	-- Ensemble: Heritage of the Wandering Isle [Tushui Set, Alliance]
 							["races"] = { PANDAREN_ALLIANCE },
+							["questID"] = 93439,	-- manually applied for now since Parser will complain due to how Blizz did these
+							["extraTransmogSetSpells"] = {
+								1272412,	-- Ensemble: Heritage of the Wandering Isle [Wandering Isle Set, Neutral]
+							},
 						}),
 						iensemble(258657, {	-- Ensemble: Heritage of the Wandering Isle [Huojin Set, Horde]
 							["races"] = { PANDAREN_HORDE },
+							["questID"] = 93439,	-- manually applied for now since Parser will complain due to how Blizz did these
+							["extraTransmogSetSpells"] = {
+								1272412,	-- Ensemble: Heritage of the Wandering Isle [Wandering Isle Set, Neutral]
+							},
 						}),
 						i(258636, {	-- Honored Guest's Party Favor
 							["description"] = "Awarded to players completing the Heritage Questline more than once.",
@@ -1404,11 +1397,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 			q(54766, {	-- Answer the Call
 				["sourceQuest"] = 54764,	-- Storm in Bloodhoof
-				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-				["coord"] = { 58.3, 51.8, THUNDER_BLUFF },
-				["groups"] = {
-					i(167030),	-- Spiritwalker's Hallowed Vessel (QI!)
+				["qgs"] = {
+					36648,	-- Baine Bloodhoof <High Chieftain>
+					149528,	-- Baine Bloodhoof <High Chieftain>
 				},
+				["coord"] = { 58.3, 51.8, THUNDER_BLUFF },
+				["groups"] = { i(167030) },	-- Spiritwalker's Hallowed Vessel (QI!)
 			}),
 			q(54765, {	-- Thank Your Guide
 				["sourceQuest"] = 54766,	-- Answer the Call
@@ -1574,7 +1568,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72858, {	-- Acid Beats Paper
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199768 },	-- Dark Ranger Velonara
-				["coord"] = { 45.4, 42, SILVERPINE_FOREST },
+				["coord"] = { 45.4, 42.0, SILVERPINE_FOREST },
 				["groups"] = { i(202182) },	-- Acid Rifle (QI!)
 			}),
 			q(72857, {	-- Boom Weed
@@ -1644,7 +1638,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72862, {	-- Among Us
 				["sourceQuests"] = { 72861 },	-- The Scarlet Spy
 				["provider"] = { "n", 199806 },	-- Quartermaster Newlem
-				["coord"] = { 64, 33.5, SILVERPINE_FOREST },
+				["coord"] = { 64.0, 33.5, SILVERPINE_FOREST },
 			}),
 			q(72863, {	-- The Flight of the Banshee
 				["sourceQuests"] = { 72862 },	-- Among Us
@@ -1659,7 +1653,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72865, {	-- This is the Hour of the Forsaken
 				["sourceQuests"] = { 72864 },	-- Death to the Living
 				["provider"] = { "n", 199893 },	-- Lilian Voss
-				["coord"] = { 66.2, 31, SILVERPINE_FOREST },
+				["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
 			}),
 			q(72866, {	-- Return to Lordaeron
 				["sourceQuests"] = { 72865 },	-- This is the Hour of the Forsaken
@@ -1736,8 +1730,14 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			-- #endif
 		}, {
 			q(54976, {	-- The Shadow of Gilneas
-				["provider"] = { "n", 150200 },	-- Courier Claridge
-				["coord"] = { 54.6, 18.4, STORMWIND_CITY },
+				["qgs"] = {
+					150200,	-- Courier Claridge
+					126332,	-- Aysa Cloudsinger
+				},
+				["coords"] = {
+					{ 52.1, 13.4, STORMWIND_CITY },
+					{ 54.6, 18.4, STORMWIND_CITY },
+				},
 			}),
 			q(54977, {	-- Into Duskwood
 				["sourceQuests"] = { 54976 },	-- The Shadow of Gilneas
@@ -1802,7 +1802,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
 		["groups"] = {
 			q(53721, {	-- Heritage of the Zandalari
-				["provider"] = { "n", 146335 },	--  Queen Talanji
+				["provider"] = { "n", 146335 },	-- Queen Talanji
 				["coord"] = { 42.2, 9.4, DAZARALOR },
 				["lvl"] = 50,
 				["groups"] = {
@@ -1882,16 +1882,17 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(78549),	-- Troll Heritage (spellID 426505)
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(HERITAGE, {
-			q(82770),	-- Ensemble: Earthen Copper Regalia
 			q(82788),	-- Arsenal: Earthen Weaponry
 			q(82789),	-- Popped on turn in of Stranger in a Strange Land [A] (81887)
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_2_7 } }, {
 		n(HERITAGE, {
-			q(85050),	-- Triggered after accepting 'Invitation to the Spirit Festival' (84442)
+			q(85049, {races={PANDAREN_HORDE}}),	-- Pandaren Horde trigger for 'Invitation to the Spirit Festival' (84444)
+			q(85050, {races={PANDAREN_ALLIANCE}}),	-- Pandaren Alliance trigger for 'Invitation to the Spirit Festival' (84442)
+			q(93888),	-- New HQT after complete Blood elf heritage quest 'The Fall of the Sunwell' (54096)
 		}),
 	})),
 });

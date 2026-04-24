@@ -1,17 +1,26 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 BLIZZCON = createHeader({
 	readable = "BlizzCon",
 	icon = [[~_.asset("Promotion_Blizzcon")]],
 	eventID = 1181,
 	text = {
 		en = "BlizzCon",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
 		ko = "블리즈컨",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "暴雪嘉年华",
 		tw = "暴雪嘉年華",
 	},
 });
+
 root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(411, {	-- Blizzcon 2005 - Murky
 		["provider"] = { "i", 20371 },	-- Murky (PET!)
@@ -145,21 +154,27 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(14027, {	-- Blizzcon 2019 - Battle for Mrrglroth
 		["timeline"] = { ADDED_8_2_5 },
 	}),
-	i(171341, {	-- Wooly Wendigo Pullover
+	-- #if AFTER 11.2.5
+	iensemble(258422, {	-- Ensemble: Wooly Wendigo (COSMETIC!)
+		["timeline"] = { ADDED_11_2_5 },
+	}),
+	-- #else
+	i(171341, {	-- Wooly Wendigo Pullover (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
-	i(171340, {	-- Wooly Wendigo Hood
+	i(171340, {	-- Wooly Wendigo Hood (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
-	i(171339, {	-- Wooly Wendigo Sweatpants
+	i(171339, {	-- Wooly Wendigo Sweatpants (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
-	i(171338, {	-- Wooly Wendigo Slippers
+	i(171338, {	-- Wooly Wendigo Slippers (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
-	i(171337, {	-- Wooly Wendigo Mittens
+	i(171337, {	-- Wooly Wendigo Mittens (COSMETIC!)
 		["timeline"] = { ADDED_8_2_5 },
 	}),
+	-- #endif
 	pet(2777, {	-- Gillvanas (PET!)
 		["timeline"] = { ADDED_8_2_5 },
 		["races"] = HORDE_ONLY,
@@ -186,12 +201,12 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = REAL_MONEY,
 	}),
-	i(210042, {		-- Chilling Celebration Banner (TOY!)
+	i(210042, {	-- Chilling Celebration Banner (TOY!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = REAL_MONEY,
 	}),
-	pet(3579, {		-- Ysergle The Dreamurk (PET!)
+	pet(3579, {	-- Ysergle The Dreamurk (PET!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = REAL_MONEY,

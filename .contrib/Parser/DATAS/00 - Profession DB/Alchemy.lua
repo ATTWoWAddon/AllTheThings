@@ -1284,16 +1284,104 @@ i(0, 1259673);		-- Boulder Springs Hot Tub
 i(0, 1261882);		-- Dragon's Elixir Bottle
 i(0, 1261255);		-- Gilnean Cauldron
 i(0, 1269506);		-- Gilnean Green Potion
+i(0, 1272712);		-- Glazed Sin'dorei Vial
 i(0, 1263559);		-- Icecrown Plague Canister
 i(0, 1261878);		-- Nerubian Alchemist's Retort
+i(0, 1263548);		-- Pandaren Alchemist's Kit
 i(0, 1261233);		-- Pandaren Alchemist's Retort
 i(0, 1263558);		-- San'layn Blood Orb
+i(0, 1272723);		-- Shadow Council Torch
 i(0, 1261972);		-- Sintallow Candles
 i(0, 1262152);		-- Starry Scrying Pool
 i(0, 1261495);		-- Stoppered Black Potion
+i(0, 1272715);		-- Stranglekelp Sack
 i(0, 1261958);		-- Veil-Secured Animacone
 i(0, 1261885);		-- Verdant Valdrakken Vase
 i(0, 1262151);		-- Zandalari Bottle Shipment
+--- DYES ---
+i(0, 1269228);		-- Black Dye Pigment
+i(0, 1269226);		-- Blue Dye Pigment
+i(0, 1269235);		-- Brown Dye Pigment
+i(0, 1269230);		-- Green Dye Pigment
+i(0, 1269233);		-- Orange Dye Pigment
+i(0, 1269231);		-- Purple Dye Pigment
+i(0, 1269229);		-- Red Dye Pigment
+i(0, 1269232);		-- Teal Dye Pigment
+i(0, 1269227);		-- White Dye Pigment
+i(0, 1269234);		-- Yellow Dye Pigment
 --- ITEM ---
 i(257753, 1262011);	-- Orcish Felblood Cauldron
 i(256938, 1260985);	-- Wine Barrel
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471003);		-- Midnight Alchemy
+i(0, 1273064);		-- Arakkoan Alchemist's Bottle
+i(0, 1273070);		-- Arakkoan Alchemist's Concoction
+i(0, 1265667);		-- Artisan Alchemist's Moxie
+i(0, 1230855);		-- Composite Flora
+i(0, 1265675);		-- Concentration
+i(0, 1230886);		-- Enlightenment Tonic
+i(0, 1230854);		-- Entropic Extract
+i(0, 1265701);		-- Ingenuity
+i(0, 1265614);		-- Knowledge
+i(0, 1265599);		-- Multicraft
+i(0, 1265651);		-- Quality
+i(0, 471040);		-- Recraft Equipment
+i(0, 1233130);		-- Recycle Flasks
+i(0, 1233129);		-- Recycle Potions
+i(0, 1230868);		-- Refreshing Serum
+i(0, 1265692);		-- Resourcefulness
+i(0, 1230866);		-- Silvermoon Health Potion
+i(0, 1265732);		-- Skill
+i(0, 1265659);		-- Sparks
+i(0, 1230887);		-- Transmute: Mote of Wild Magic
+--- ITEM ---
+i(258305, 1230864);	-- Amani Extract
+i(247498, 1233132);	-- Entropic Illuminant
+i(258141, 1230873);	-- Haranir Phial of Perception
+i(247499, 1233137);	-- Haranir Preserving Agents
+i(259459, 1230859);	-- Potion of Recklessness
+i(247425, 1233136);	-- Riftstone
+i(247500, 1233133);	-- Rootbound Vat
+i(247423, 1233138);	-- Silvermoon Spire Fountain
+i(246671, 1233135);	-- Sunsmoke Censer
+i(257417, 1230883);	-- Vicious Thalassian Flask of Honor
+--- SPECIALIZATION ---
+i(0, 1230891);		-- Box of Rocks
+i(0, 1230874);		-- Cauldron of Sin'dorei Flasks
+i(0, 1230875);		-- Flask of Thalassian Resistance
+i(0, 1230870);		-- Haranir Phial of Finesse
+i(0, 1230858);		-- Light's Preservation
+i(0, 1230885);		-- Magister's Alchemist Stone
+i(0, 1230867);		-- Void-Shrouded Tincture
+i(0, 1230857);		-- Voidlight Potion Cauldron
+i(0, 1230856);		-- Wondrous Synergist
+--- CAULDRON ---
+i(0, 1230892);		-- Bouquet of Herbs
+i(0, 1230860);		-- Draught of Rampant Abandon
+i(0, 1230877);		-- Flask of the Blood Knights
+i(0, 1230876);		-- Flask of the Magisters
+i(0, 1230878);		-- Flask of the Shattered Sun
+i(0, 1230872);		-- Haranir Phial of Ingenuity
+i(0, 1230869);		-- Light's Potential
+i(0, 1230865);		-- Lightfused Mana Potion
+i(0, 1230862);		-- Potion of Devoured Dreams
+i(0, 1230863);		-- Potion of Zealotry
+i(0, 1230861);		-- Primal Philosopher's Stone
+i(0, 1230893);		-- School of Gems
+i(0, 1230890);		-- Transmute: Mote of Light
+i(0, 1230889);		-- Transmute: Mote of Primal Energy
+i(0, 1230888);		-- Transmute: Mote of Pure Void
+--- NYI ---
+i(0, 1230772);		-- [DNT] 12.0 Alchemy Recipe Spell Template
+i(0, 1233131);		-- [DNT] 12.0 Alchemy Recipe Spell Template
+i(0, 1233139);		-- [DNT] 12.0 Alchemy Recipe Spell Template
+i(0, 1230871);		-- [DNT] Alchemy Recipe - Reuse Me
+i(0, 1230879);		-- [DNT] Midnight Stacking Heals Flask
+i(0, 1230884);		-- [DNT] Midnight Vicious Flask of Classical Spirits
+i(0, 1230882);		-- [DNT] Midnight Vicious Flask of Determination
+i(0, 1230881);		-- [DNT] Midnight Vicious Flask of Manifested Fury
+i(0, 1230880);		-- [DNT] Midnight Vicious Flask of the Wrecking Ball

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(254, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Arcatraz
 		["lore"] = "The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",
@@ -14,9 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			271,	-- Containment Core
 		},
 		-- #if BEFORE CATA
-		["cost"] = {
-			{ "i", 31084, 1 },	-- Key to the Arcatraz
-		},
+		["cost"] = { { "i", 31084, 1 } },	-- Key to the Arcatraz
 		-- #endif
 		["lvl"] = lvlsquish(65, 65, 25),
 		["groups"] = {
@@ -31,11 +30,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18481,	-- A'dal
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["timeline"] = { REMOVED_4_3_0 },
-					-- #if AFTER WRATH
-					["lvl"] = lvlsquish(67, 67, 25),
-					-- #else
-					["lvl"] = lvlsquish(70, 70, 25),
-					-- #endif
+					["lvl"] =
+						-- #if AFTER WRATH
+						lvlsquish(67, 67, 25),
+						-- #else
+						lvlsquish(70, 70, 25),
+						-- #endif
 					["groups"] = {
 						objective(1, {	-- Harbinger Skyriss slain
 							["provider"] = { "n", 20912 },	-- Harbinger Skyriss
@@ -64,11 +64,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18481,	-- A'dal
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
 					["maps"] = { TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
-					-- #if AFTER WRATH
-					["lvl"] = lvlsquish(67, 67, 25),
-					-- #else
-					["lvl"] = lvlsquish(70, 70, 25),
-					-- #endif
+					["lvl"] =
+						-- #if AFTER WRATH
+						lvlsquish(67, 67, 25),
+						-- #else
+						lvlsquish(70, 70, 25),
+						-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Top Shard of the Arcatraz Key
 							["provider"] = { "i", 31085 },	-- Top Shard of the Arcatraz Key
@@ -246,9 +247,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
-					{ "i", 30634, 1 },	-- Warpforged Key
-				},
+				["cost"] = { { "i", 30634, 1 } },	-- Warpforged Key
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
@@ -261,7 +260,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30582),	-- Deadly Fire Opal
 							i(30581),	-- Durable Fire Opal

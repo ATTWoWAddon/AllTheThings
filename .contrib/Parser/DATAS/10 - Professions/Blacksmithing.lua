@@ -1,14 +1,12 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_BLACKSMITHING_KNOWLEDGE = 2023;
-local TWW_BLACKSMITHING_KNOWLEDGE = 2786;
 root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-		ach(18866),	-- Anvil Mastery IV
-		ach(18865),	-- Anvil Mastery III
-		ach(18864),	-- Anvil Mastery II
 		ach(18862),	-- Anvil Mastery I
+		ach(18864),	-- Anvil Mastery II
+		ach(18865),	-- Anvil Mastery III
+		ach(18866),	-- Anvil Mastery IV
 		ach(18851),	-- Skeletons in the Lockbox (automated)
 	})),
 	expansion(EXPANSION.CLASSIC, {
@@ -91,7 +89,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					5302,	-- The Way of the Weaponsmith [H]
 				},
 				["qg"] = 11146,	-- Ironus Coldsteel
-				["coord"] = { 49.8, 45, IRONFORGE },
+				["coord"] = { 49.8, 45.0, IRONFORGE },
 				-- #if SEASON_OF_DISCOVERY
 				["timeline"] = { REMOVED_1_15_2 },
 				-- #endif
@@ -132,7 +130,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					82665,	-- The Way of the Weaponsmith [H]
 				},
 				["qg"] = 11146,	-- Ironus Coldsteel
-				["coord"] = { 49.8, 45, IRONFORGE },
+				["coord"] = { 49.8, 45.0, IRONFORGE },
 				["timeline"] = { ADDED_1_15_2 },
 				["cost"] = {
 					{ "i", 217281, 4 },	-- Moonsteel Broadsword
@@ -239,7 +237,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuest"] = 38507,	-- Secrets of Leysmithing
 			["provider"] = { "n", 97261 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-			["cost"] = { { "i", 124103,	10 }, },	-- 10xFoxflower
+			["cost"] = { { "i", 124103,	10 } },	-- 10x Foxflower
 		}),
 		q(38500, {	-- Leysmithing Mastery
 			["sourceQuest"] = 38515,	-- Nature Provides
@@ -256,7 +254,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				r(183281, {["u"]=TRAINING}),	-- Leystone Cuffplate
 				r(183283, {["u"]=TRAINING}),	-- Leystone Fingerguard
 				i(124051),	-- Burnt, Exploded Mess (QI!)
+				i(128777),	-- Heated Leystone Bar (QI!)
 				i(124007),	-- Leystone Bar (QI!)
+				i(124009),	-- Leystone Cuffplate (QI!)
+				i(124010),	-- Leystone Fingerguard (QI!)
 				i(124008),	-- Red-Hot Leystone Bar (QI!)
 				i(124005),	-- Shopkeeper's Leystone Ore (QI!)
 			},
@@ -276,9 +277,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38513 },	-- The Highmountain Smiths
 			["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 			["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
-			["cost"] = {
-				{ "i", 123893, 1 },	-- 1xLeystone Gauntlets
-			},
+			["cost"] = { { "i", 123893, 1 } },	-- 1x Leystone Gauntlets
 		}),
 		q(39699, {	-- Ironhorn Leysmithing
 			["sourceQuests"] = { 38514 },	-- You Are Not Worthy
@@ -353,7 +352,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		q(39729, {	-- The Knowledge of Black Rook
 			["sourceQuests"] = {
 				39680,	-- Between the Hammer...
-				39726,	--  ...And the Anvil
+				39726,	-- ...And the Anvil
 			},
 			["provider"] = { "n", 96763 },	-- Saris Swifthammer
 			["coord"] = { 40.0, 54.8, VALSHARAH },
@@ -407,8 +406,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
 			["coord"] = { 30.0, 53.4, SURAMAR },
 			["cost"] = {
-				{ "i", 123918, 60 },	-- 60xLeystone Ore
-				{ "i", 123919, 60 },	-- 60xFelslate
+				{ "i", 123918, 60 },	-- 60x Leystone Ore
+				{ "i", 123919, 60 },	-- 60x Felslate
 			},
 		}),
 		q(38528, {	-- Leystone's Potential
@@ -440,16 +439,16 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 			["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
 			["cost"] = {
-				{ "i", 123898, 1 },	-- 1xLeystone Armguards
-				{ "i", 123892, 1 },	-- 1xLeystone Boots
-				{ "i", 123891, 1 },	-- 1xLeystone Breastplate
-				{ "i", 123893, 1 },	-- 1xLeystone Gauntlets
-				{ "i", 123895, 1 },	-- 1xLeystone Greaves
-				{ "i", 123894, 1 },	-- 1xLeystone Helm
-				{ "i", 123896, 1 },	-- 1xLeystone Pauldrons
-				{ "i", 123897, 1 },	-- 1xLeystone Waistguard
-				{ "i", 123898, 1 },	-- 1xLeystone Armguards
-				{ "i", 123898, 1 },	-- 1xLeystone Armguards
+				{ "i", 123898, 1 },	-- 1x Leystone Armguards
+				{ "i", 123892, 1 },	-- 1x Leystone Boots
+				{ "i", 123891, 1 },	-- 1x Leystone Breastplate
+				{ "i", 123893, 1 },	-- 1x Leystone Gauntlets
+				{ "i", 123895, 1 },	-- 1x Leystone Greaves
+				{ "i", 123894, 1 },	-- 1x Leystone Helm
+				{ "i", 123896, 1 },	-- 1x Leystone Pauldrons
+				{ "i", 123897, 1 },	-- 1x Leystone Waistguard
+				{ "i", 123898, 1 },	-- 1x Leystone Armguards
+				{ "i", 123898, 1 },	-- 1x Leystone Armguards
 			},
 			["groups"] = {
 				r(182966),	-- Leystone Helm [Rank 2] (RECIPE!)
@@ -498,7 +497,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123917, 1 } },	-- 1x Demonsteel Armguards
+			["cost"] = { { "i", 123917, 1 } },	-- 1x Demonsteel Armguards
 			["groups"] = {
 				i(123940),	-- Plans: Demonsteel Armguards [Rank 2] (RECIPE!)
 			},
@@ -508,7 +507,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123911, 1 } },	-- 1x Demonsteel Boots
+			["cost"] = { { "i", 123911, 1 } },	-- 1x Demonsteel Boots
 			["groups"] = {
 				i(123946),	-- Plans: Demonsteel Boots [Rank 2] (RECIPE!)
 			},
@@ -518,7 +517,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123910, 1 } },	-- 1x Demonsteel Breastplate
+			["cost"] = { { "i", 123910, 1 } },	-- 1x Demonsteel Breastplate
 			["groups"] = {
 				i(123947),	-- Plans: Demonsteel Breastplate [Rank 2] (RECIPE!)
 			},
@@ -528,7 +527,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123912, 1 } },	-- 1x Demonsteel Gauntlets
+			["cost"] = { { "i", 123912, 1 } },	-- 1x Demonsteel Gauntlets
 			["groups"] = {
 				i(123945),	-- Plans: Demonsteel Gauntlets [Rank 2] (RECIPE!)
 			},
@@ -538,7 +537,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123914, 1 } },	-- 1x Demonsteel Greaves
+			["cost"] = { { "i", 123914, 1 } },	-- 1x Demonsteel Greaves
 			["groups"] = {
 				i(123943),	-- Plans: Demonsteel Greaves [Rank 2] (RECIPE!)
 			},
@@ -548,7 +547,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123913, 1 } },	-- 1x Demonsteel Helm
+			["cost"] = { { "i", 123913, 1 } },	-- 1x Demonsteel Helm
 			["groups"] = {
 				i(123944),	-- Plans: Demonsteel Helm [Rank 2] (RECIPE!)
 			},
@@ -558,7 +557,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123915, 1 } },	-- 1x Demonsteel Pauldrons
+			["cost"] = { { "i", 123915, 1 } },	-- 1x Demonsteel Pauldrons
 			["groups"] = {
 				i(123942),	-- Plans: Demonsteel Pauldrons [Rank 2] (RECIPE!)
 			},
@@ -568,7 +567,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123916, 1 } },	-- 1x Demonsteel Waistguard
+			["cost"] = { { "i", 123916, 1 } },	-- 1x Demonsteel Waistguard
 			["groups"] = {
 				i(123941),	-- Plans: Demonsteel Waistguard [Rank 2] (RECIPE!)
 			},
@@ -647,8 +646,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["provider"] = { "n", 125341 },	-- Khamir
 			["coord"] = { 40.6, 65.6, THE_VINDICAAR_KROKUUN_LOWER },
 			["cost"] = {
-				{ "i", 151564, 42 },	-- 42xEmpyrium
-				{ "i", 151568, 2 },		-- 2xPrimal Sargerite
+				{ "i", 151564, 42 },	-- 42x Empyrium
+				{ "i", 151568, 2 },		-- 2x Primal Sargerite
 			},
 			["groups"] = {
 				r(247710),	-- Empyrial Breastplate [Rank 1] (RECIPE!)
@@ -817,6 +816,37 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, 1 }}
+		},{
+			pn(23912),	-- Armorsmithing
+			pn(23721),	-- Axes, Picks & Polearms
+			pn(23902),	-- Belts
+			pn(23726),	-- Blades
+			pn(23910),	-- Breastplates
+			pn(23903),	-- Fine Armor
+			pn(23900),	-- Gauntlets
+			pn(23908),	-- Greaves
+			pn(23723),	-- Hafted
+			pn(42828),	-- Hammer Control
+			pn(23906),	-- Helms
+			pn(23911),	-- Large Plate Armor
+			pn(23724),	-- Long Blades
+			pn(23722),	-- Maces & Hammers
+			pn(23905),	-- Pauldrons
+			pn(42826),	-- Poignant Plans
+			pn(23904),	-- Sabatons
+			pn(42827),	-- Safety Smithing
+			pn(23907),	-- Sculpted Armor
+			pn(23909),	-- Shields
+			pn(23725),	-- Short Blades
+			pn(23761),	-- Smelting
+			pn(23765),	-- Specialty Smithing
+			pn(23762),	-- Stonework
+			pn(23764),	-- Toolsmithing
+			pn(23901),	-- Vambraces
+			pn(23727),	-- Weaponsmithing
+		})),
 		n(QUESTS, {
 			q(70358, {	-- Dragon Isles Blacksmithing
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
@@ -839,7 +869,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			q(70025, {	-- Artisan's Supply: Draconium Sickle
 				["provider"] = { "n", 192164 },	-- Gringot Coldsteel
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-				["cost"] = {{ "i", 191241, 1 }},	-- Draconium Sickle
+				["cost"] = { { "i", 191241, 1 } },	-- Draconium Sickle
 				["_drop"] = { "g" },
 			}),
 			q(70250, {	-- Hidden Profession Master Blacksmith
@@ -851,7 +881,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
+				["cost"] = { { "i", 191784, 1 } },	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["groups"] = {
 					i(190456),	-- Artisan's Mettle
@@ -864,7 +894,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["groups"] = {
 				i(198606),	-- Blacksmith's Writ
 			},
-		},{
+		}, {
 			------ Requires 25 Skill ------
 			q(70589, {	-- Blacksmithing Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -946,7 +976,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
-				["cost"] = {{ "i", 190484, 3 }},	-- 3x Draconium Sword
+				["cost"] = { { "i", 190484, 3 } },	-- 3x Draconium Sword
 			}),
 			q(77936, {	-- A Warm Harvest
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
@@ -960,7 +990,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_BLACKSMITHING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, 1 } } }, {
 				r(376700),	-- Illustrious Insight
 				r(371412),	-- Khaz'gorite Blacksmith's Hammer
 				r(371374),	-- Khaz'gorite Blacksmith's Toolbox
@@ -1104,9 +1134,9 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_BLACKSMITHING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.BLACKSMITHING),
 			},
-		},{
+		}, {
 			i(198606),	-- Blacksmith's Writ
 			q(74109, {	-- DF Inscription Order: Blacksmith
 				["name"] = "DF Inscription Order: Blacksmith",
@@ -1150,21 +1180,58 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228774),	-- Algari Blacksmiths's Journal
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 }}
 		},{
+			pn(99580),	-- Alloys
+			pn(99239),	-- Armorsmithing
+			pn(99447),	-- Axes and Polearms
+			pn(99229),	-- Belts
+			pn(99452),	-- Blades
+			pn(99237),	-- Breastplates
+			pn(99265),	-- Discerning Discipline
+			pn(99267),	-- Everburning Forge
+			pn(99230),	-- Fine Armor
+			pn(99582),	-- Fortuitous Forges
+			pn(99581),	-- Frameworks
+			pn(99227),	-- Gauntlets
+			pn(99264),	-- Gracious Forging
+			pn(99236),	-- Greaves
+			pn(99449),	-- Hafted
+			pn(99233),	-- Helms
+			pn(99266),	-- Imaginative Foresight
+			pn(99238),	-- Large Plate Armor
+			pn(99450),	-- Long Blades
+			pn(99448),	-- Maces
+			pn(99589),	-- Means of Production
+			pn(99232),	-- Pauldrons
+			pn(99231),	-- Sabatons
+			pn(99234),	-- Sculpted Armor
+			pn(99235),	-- Shields
+			pn(99451),	-- Short Blades
+			pn(99585),	-- Stonework
+			pn(99583),	-- Tool Enhancement
+			pn(99588),	-- Tools of the Trade
+			pn(99586),	-- Trade Accessories
+			pn(99587),	-- Trade Tools
+			pn(99228),	-- Vambraces
+			pn(99584),	-- Weapon Stones
+			pn(99453),	-- Weaponsmithing
+		})),
+		n(QUESTS, {
 			q(84127, {	-- Blacksmithing Services Requested
+				["sourceQuests"] = { 84274 },	-- Crafting Orders: Blacksmithing
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228774),	-- Algari Blacksmiths's Journal
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_BLACKSMITHING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 } } }, {
 				r(450281),	-- Artisan Blacksmith's Hammer
 				r(450282),	-- Artisan Blacksmith's Toolbox
 				r(450238),	-- Charged Claymore
@@ -1253,9 +1320,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_BLACKSMITHING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING),
 			},
 		}, {
+			q(83726, {	-- TWW Inscription Order: Blacksmith
+				["name"] = "TWW Inscription Order: Blacksmith",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222554 },	-- Algari Treatise on Blacksmithing
+			}),
 			q(83257, {	-- TWW Weekly Blacksmithing Knowledgepoint #1
 				["name"] = "TWW Weekly Blacksmithing Treasure #1",
 				["provider"] = { "i", 225232 },	-- Coreway Billet
@@ -1266,130 +1338,182 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42792, {	-- Blacksmithing at Midnight
-				["timeline"] = { ADDED_12_0_0 },
+				i(263998),	-- Midnight Blacksmith's Shop Sign (DECOR!)
+			}),
+			ach(62232),	-- Blacksmithing-on-Demand
+			ach(62240, {	-- Dedicated to the Craft: Blacksmithing
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42792,	-- Blacksmithing at Midnight
+					62232,	-- Blacksmithing-on-Demand
+				}},
 				["groups"] = {
+					title(742),	-- Thalassian Blacksmith <Name>
 				},
 			}),
 		}),
-		--[[
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228774),	-- Algari Blacksmiths's Journal
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, 1 }}
 		},{
-			q(84127, {	-- Blacksmithing Services Requested
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-			}),
+			pn(104288),	-- Alloys
+			pn(104576),	-- Armorsmithing
+			pn(104567),	-- Articulating Armor
+			pn(104627),	-- Axes and Polearms
+			pn(104566),	-- Belts
+			pn(104632),	-- Blades
+			pn(104574),	-- Chestplates
+			pn(104258),	-- Craftsmithing
+			pn(104564),	-- Gauntlets
+			pn(104573),	-- Greaves
+			pn(104629),	-- Hafted Weapons
+			pn(104570),	-- Helms
+			pn(104575),	-- Large Plate Armor
+			pn(104630),	-- Long Blades
+			pn(104628),	-- Maces
+			pn(104569),	-- Pauldrons
+			pn(104289),	-- Prolific Worker
+			pn(104290),	-- Resourceful Smith
+			pn(104568),	-- Sabatons
+			pn(104571),	-- Sculpted Armor
+			pn(104291),	-- Second Nature
+			pn(104572),	-- Shields
+			pn(104631),	-- Short Blades
+			pn(104292),	-- The Old Ways
+			pn(104255),	-- Tool Stones
+			pn(104256),	-- Trade Accessories
+			pn(104257),	-- Trade Tools
+			pn(104565),	-- Vambraces
+			pn(104633),	-- Weaponsmithing
+			pn(104626),	-- Weaponstones
 		})),
+		n(QUESTS, {
+			q(93691, {	-- Blacksmithing Services Requested
+				["sourceQuests"] = { 93726 },	-- Crafting Orders: Blacksmithing
+				["qgs"] = {
+					241450,	-- Bemarrin <Blacksmithing Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 43.7, 51.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 45.1, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
+				["isWeekly"] = true,
+				["groups"] = {
+					i(263455),	-- Thalassian Blacksmith's Journal
+				},
+			}),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_BLACKSMITHING_KNOWLEDGE, 1 }} }, {
-				r(450281),	-- Artisan Blacksmith's Hammer
-				r(450282),	-- Artisan Blacksmith's Toolbox
-				r(450238),	-- Charged Claymore
-				r(450239),	-- Charged Halberd
-				r(450235),	-- Charged Hexsword
-				r(450241),	-- Charged Invoker
-				r(453727),	-- Everburning Ignition
-				r(450221),	-- Everforged Breastplate
-				r(450230),	-- Everforged Dagger
-				r(450223),	-- Everforged Defender
-				r(450228),	-- Everforged Gauntlets
-				r(450234),	-- Everforged Greataxe
-				r(450222),	-- Everforged Greatbelt
-				r(450224),	-- Everforged Helm
-				r(450225),	-- Everforged Legplates
-				r(450231),	-- Everforged Longsword
-				r(450233),	-- Everforged Mace
-				r(450227),	-- Everforged Pauldrons
-				r(450220),	-- Everforged Sabatons
-				r(450229),	-- Everforged Stabber
-				r(450226),	-- Everforged Vambraces
-				r(450232),	-- Everforged Warglaive
-				r(450286),	-- Ironclaw Razorstone
-				r(450285),	-- Ironclaw Whetstone
-				r(450289),	-- Tempered Framework
+			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, 1 } } }, {
+				r(1229646),	-- Farstrider's Chopper
+				r(1229659),	-- Farstrider's Mercy
+				r(1229658),	-- Spellbreaker's Blade
+				r(1229662),	-- Spellbreaker's Bracers
+				r(1229664),	-- Spellbreaker's Cover
+				r(1229666),	-- Spellbreaker's Girdle
+				r(1229663),	-- Spellbreaker's Legguards
+				r(1229661),	-- Spellbreaker's Mantle
+				r(1229668),	-- Spellbreaker's March
+				r(1229665),	-- Spellbreaker's Rebuke
+				r(1229660),	-- Spellbreaker's Resolve
+				r(1229667),	-- Spellbreaker's Shelter
+				r(1229656),	-- Spellbreaker's Ultimatum
+				r(1229657),	-- Spellbreaker's Warglaive
+				r(1229598),	-- Sun-Blessed Blacksmith's Hammer
+				r(1229603),	-- Sun-Blessed Blacksmith's Toolbox
+				r(1229599),	-- Sun-Blessed Leatherworker's Knife
+				r(1229604),	-- Sun-Blessed Leatherworker's Toolset
+				r(1229605),	-- Sun-Blessed Needle Set
+				r(1229601),	-- Sun-Blessed Pickaxe
+				r(1229602),	-- Sun-Blessed Sickle
+				r(1229600),	-- Sun-Blessed Skinning Knife
+				r(1230765),	-- Thalassian Master Repair Hammer
 			}),
 		}),
 		n(TREASURES, {
-			o(456017, {	-- Ancient Earthen Anvil
-				["coord"] = { 59.8, 61.9, ISLE_OF_DORN },
-				["questID"] = 83848,
+			o(525959, {	-- Carefully Racked Spear
+				["coord"] = { 33.2, 65.9, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				["questID"] = 89179,
 				["groups"] = {
-					i(226276),	-- Ancient Earthen Anvil
+					i(238542),	-- Carefully Racked Spear
 				},
 			}),
-			o(456016, {	-- Dornogal Hammer
-				["coord"] = { 47.7, 26.5, DORNOGAL },
-				["questID"] = 83849,
+			o(525961, {	-- Deconstructed Forge Techniques
+				["coord"] = { 26.9, 60.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89177,
 				["groups"] = {
-					i(226277),	-- Dornogal Hammer
+					i(238540),	-- Deconstructed Forge Techniques
 				},
 			}),
-			o(456014, {	-- Earthen Chisels
-				["coord"] = { 60.6, 53.8, THE_RINGING_DEEPS },
-				["questID"] = 83851,
+			o(525958, {	-- Metalworking Cheat Sheet
+				["coord"] = { 56.8, 40.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89180,
 				["groups"] = {
-					i(226279),	-- Earthen Chisels
+					i(238543),	-- Metalworking Cheat Sheet
 				},
 			}),
-			o(456013, {	-- Holy Flame Forge
-				["coord"] = { 47.6, 61.0, HALLOWFALL },
-				["questID"] = 83852,
+			o(525956, {	-- Rutaani Floratender's Sword
+				["coord"] = { 66.3, 50.9, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89182,
 				["groups"] = {
-					i(226280),	-- Holy Flame Forge
+					i(238545),	-- Rutaani Floratender's Sword
 				},
 			}),
-			o(456011, {	-- Nerubian Smith's Kit
-				["coord"] = { 46.6, 22.7, NERUBAR },
-				["questID"] = 83854,
+			o(525954, {	-- Silvermoon Blacksmith's Hammer
+				["coord"] = { 48.5, 74.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89184,
 				["groups"] = {
-					i(226282),	-- Nerubian Smith's Kit
+					i(238547),	-- Silvermoon Blacksmith's Hammer
 				},
 			}),
-			o(456012, {	-- Radiant Tongs
-				["coord"] = { 44.1, 55.6, HALLOWFALL },
-				["questID"] = 83853,
+			o(525960, {	-- Silvermoon Smithing Kit
+				["coord"] = { 48.3, 75.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89178,
 				["groups"] = {
-					i(226281),	-- Radiant Tongs
+					i(238541),	-- Silvermoon Smithing Kit
 				},
 			}),
-			o(456015, {	-- Ringing Hammer Vise
-				["coord"] = { 47.7, 33.2, THE_RINGING_DEEPS },
-				["questID"] = 83850,
+			o(525955, {	-- Sin'dorei Master's Forgemace
+				["coord"] = { 49.2, 61.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89183,
 				["groups"] = {
-					i(226278),	-- Ringing Hammer Vise
+					i(238546),	-- Sin'dorei Master's Forgemace
 				},
 			}),
-			o(456010, {	-- Spiderling's Wire Brush
-				["coord"] = { 53.0, 51.3, AZJ_KAHET },
-				["questID"] = 83855,
+			o(525957, {	-- Voidstorm Defense Spear
+				["coord"] = { 30.6, 69.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89181,
 				["groups"] = {
-					i(226283),	-- Spiderling's Wire Brush
+					i(238544),	-- Voidstorm Defense Spear
 				},
 			}),
+
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_BLACKSMITHING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.BLACKSMITHING),
 			},
 		}, {
-			q(83257, {	-- TWW Weekly Blacksmithing Knowledgepoint #1
-				["name"] = "TWW Weekly Blacksmithing Treasure #1",
-				["provider"] = { "i", 225232 },	-- Coreway Billet
+			i(263455),	-- Thalassian Blacksmith's Journal
+			q(95128, {	-- MID Inscription Order: Blacksmith
+				["name"] = "MID Inscription Order: Blacksmith",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245763 },	-- Thalassian Treatise on Blacksmithing
 			}),
-			q(83256, {	-- TWW Weekly Blacksmithing Knowledgepoint #2
-				["name"] = "TWW Weekly Blacksmithing Treasure #2",
-				["provider"] = { "i", 225233 },	-- Dense Bladestone
+			q(93531, {	-- MID Weekly Blacksmithing Knowledgepoint #1
+				["name"] = "MID Weekly Blacksmithing Treasure #1",
+				["provider"] = { "i", 259191 },	-- Infused Quenching Oil
 			}),
-		})),--]]
+			q(93530, {	-- MID Weekly Blacksmithing Knowledgepoint #2
+				["name"] = "MID Weekly Blacksmithing Treasure #2",
+				["provider"] = { "i", 259190 },	-- Thalassian Whestone
+			}),
+		})),
 	})),
 })));
 

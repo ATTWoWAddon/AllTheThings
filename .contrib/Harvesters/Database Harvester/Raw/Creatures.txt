@@ -1,5 +1,7 @@
-1.14.3.42926
+﻿1.14.3.42926
 61544@@@Orphan Spell Visual Invisible Holder
+2.5.5.64508
+255994@@@Exodar Replica
 3.4.3.51126
 2671@@@Mechanical Squirrel
 7380@@@Siamese Cat
@@ -233,6 +235,18 @@
 56266@@@Fetish Shaman
 59020@@@Eye of the Legion
 245603@@@Sa'bak's Favored
+3.80.0.64393
+257025@@@Star Fragment
+3.80.0.64859
+54730@@@Gregarious Grell
+3.80.0.65301
+52697@@@Greedy Kobold
+68267@@@Cinder Kitten
+253791@@@Fortune's Waving Cat
+260685@@@Auspicious Pixiu
+260686@@@Lil' Coalee
+3.80.0.65749
+255051@@@Gilded Fountain
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -287,7 +301,6 @@
 54491@@@Darkmoon Monkey
 54539@@@Alliance Balloon
 54541@@@Horde Balloon
-54730@@@Gregarious Grell
 54745@@@Sand Scarab
 55187@@@Darkmoon Balloon
 55215@@@Lumpy
@@ -338,7 +351,6 @@
 51657@@@Bush Chicken
 51677@@@Winterspring Cub
 52367@@@Dragon Kite
-52697@@@Greedy Kobold
 53453@@@Green Balloon
 53454@@@Yellow Balloon
 53455@@@Horde Balloon
@@ -1576,7 +1588,6 @@
 68214@@@Jinyu Construction Site
 68235@@@Genn Greymane
 68263@@@Pandaren Fireworks
-68267@@@Cinder Kitten
 68278@@@Lor'themar Theron
 68287@@@Baine Bloodhoof
 68289@@@Xi'ri
@@ -2039,7 +2050,24 @@
 185317@@@Incubus
 253198@@@Archincubus
 5.5.2.63832
-255994@@@Exodar Replica
+5.5.2.64481
+255820@@@Starshard Whelpling
+5.5.3.64308
+258710@@@Suen
+5.5.3.64400
+248495@@@Smoldering Valor
+5.5.3.64530
+259419@@@Xuen
+259429@@@[PH] Charity Construction Dog
+5.5.3.65302
+149596@@@Ethereal Transmorpher
+5.5.3.65703
+254356@@@Lil' Coalee
+259428@@@Smoldering Courage
+261152@@@Auspicious Pixiu
+261184@@@Lu'lin
+5.5.3.65988
+259429@@@Roofus
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -13143,7 +13171,6 @@
 144248@@@Head Machinist Sparkflux
 145185@@@Gnomercy 4.U.
 148404@@@Mechagon - Critters
-149596@@@Ethereal Transmorpher
 149752@@@Spell Bunny
 149765@@@Deepsea Pearl
 150087@@@Genn Greymane
@@ -22984,7 +23011,6 @@
 244145@@@Hopeflutter
 244146@@@Doomfeathers
 11.2.0.63163
-254356@@@Lil' Coalee
 11.2.5.62554
 241740@@@Archmage Khadgar
 241743@@@Archmage Khadgar
@@ -23013,6 +23039,11 @@
 254359@@@Lil' Ashlee
 11.2.5.63906
 253016@@@Exodar Miniature
+11.2.5.64154
+256938@@@Khadgar's Upgraded Servant
+11.2.5.64484
+252859@@@Starshard Whelpling
+253016@@@Exodar Replica
 11.2.7.63642
 114955@@@Dole Dastardly
 149917@@@Captain Garrick
@@ -23239,18 +23270,18 @@
 218041@@@Stormrider Adalar
 218745@@@Stormrider Kothilde
 251889@@@Fledgling Warden's Companion
-253016@@@Exodar Replica
 256656@@@Aelric Leid
 256719@@@Aelric Leid
 256721@@@Glooming Disciple
 256722@@@Glooming Disciple
 256724@@@Glooming Belligerent
 256725@@@Xal'atath
-256938@@@Khadgar's Upgraded Servant
 257173@@@Hammerfall Grunt
 257174@@@Dragonscale Researcher
 257178@@@Vulpera Mixologist
 257279@@@Anduin Wrynn
+11.2.7.64978
+251511@@@Heartglow Listener
 12.0.0.63534
 143622@@@Ancient Imp
 222593@@@Emerald Sporbit
@@ -23980,3 +24011,282 @@
 257541@@@Brann Bronzebeard
 257546@@@Voldy
 257616@@@Emberwing Hatchling
+12.0.0.64124
+240545@@@Twitchy Wraith
+250411@@@Nisha
+257625@@@[DNT] Completion Bunny
+257645@@@[DNT] Reset Bunny
+257695@@@[PH] Black Baby Hawkstrider
+257802@@@[PH] Purple Siphoid
+257849@@@Entropy Wielder
+257857@@@[DNT] Baby Eversong Lynx (Black)
+257908@@@Kai
+12.0.0.64228
+239944@@@Magister Umbric
+240962@@@Orweyna
+241043@@@Grand Magister Rommath
+241044@@@Lor'themar Theron
+241046@@@High Exarch Turalyon
+248429@@@Decimus
+253162@@@Guard
+254297@@@Hara'ti Villager
+255023@@@Eye of Gul'dan
+257238@@@Hara'ti Villager
+257991@@@Stormbound Mystic
+257992@@@Ruthless Totemcaller
+258046@@@Bonded Beasttamer
+258047@@@Grizzled Warbringer
+258066@@@Loa Speaker Nanea
+258074@@@Luxmaster 5000
+258205@@@Mannoroth
+258281@@@Princess Bloodshed
+258536@@@Xal'atath
+258584@@@Imp Lord
+258587@@@Fel Ravager
+258640@@@Time Flies
+12.0.0.64339
+235787@@@Lor'themar Theron
+236100@@@Arator
+236134@@@High Exarch Turalyon
+236391@@@Arator
+236571@@@High Exarch Turalyon
+236583@@@Grand Magister Rommath
+236588@@@Zul'jan
+236755@@@[DNT] Invisible Bunny
+236778@@@High Exarch Turalyon
+237234@@@Orweyna
+237284@@@Amarakk
+237325@@@Orweyna
+237346@@@Orweyna
+237567@@@Hagar
+241176@@@Halduron Brightwing
+241629@@@Hannan
+241695@@@Lightwood Ballista
+243759@@@Aksem
+243761@@@Orweyna
+250405@@@Thisalee Crow
+250406@@@Zen'tabra
+250409@@@Gamon
+251587@@@Halduron Brightwing
+252822@@@Lady Liadrin
+256107@@@Immature Behemoth
+257695@@@Nova
+257802@@@Medusa
+258651@@@Kajai
+258688@@@Loa Speaker Nanea
+258689@@@Lilaju
+258690@@@Loa Speaker Tobui
+258691@@@Kul'amara the Fierce
+258692@@@Vun'zarah
+258693@@@Loa Speaker Brek
+258694@@@Tak'lejo
+258695@@@Jan'alai
+258696@@@Halazzi
+258698@@@Akil'zon
+258699@@@Loa Speaker Kinduru
+258700@@@Lady Liadrin
+258701@@@Spear of Torntusk
+258703@@@Zul'jarra
+258704@@@Shadowpine Troop
+258705@@@Witherbark Shadowblade
+258730@@@Lord Antenorian
+258753@@@Khadgar's Servant
+258796@@@Shadow Barrier
+258803@@@Nether Siphoner
+258806@@@Scrying Focus
+258841@@@Kal'eani
+258844@@@Mind-Seeker Apprentice
+258845@@@Shadow Missile
+258869@@@Twilight Voidchurner
+258874@@@Lord Smudgington
+258877@@@Nalorakk
+258901@@@Empowering Shadow
+258909@@@[DNT] 12.0 Dungeon - Magisters' Terrace - Sound Stalker
+258947@@@Lightwood Ballista
+258948@@@High Exarch Turalyon
+258949@@@Generic Bunny - PRK
+258952@@@High Exarch Turalyon
+12.0.0.64499
+235392@@@Decimus
+235394@@@Lothraxion
+235405@@@Magister Umbric
+235481@@@Lor'themar Theron
+235483@@@Grand Magister Rommath
+235608@@@Arator
+235609@@@Alleria Windrunner
+235664@@@Alleria Windrunner
+235724@@@Arator
+235726@@@Alleria Windrunner
+239810@@@High Exarch Turalyon
+239826@@@Alleria Windrunner
+240545@@@Restive Wraith
+240673@@@Lothraxion
+241045@@@Ku'paal
+250400@@@Tehd Shoemaker
+250401@@@Marius Felbane
+250402@@@Gidwin Goldbraids
+250403@@@Tarenar Sunstrike
+253399@@@Scruffbeak
+257857@@@Flicker
+258994@@@Shadowpine Soldier, Scout
+258995@@@Shadowpine Soldier, Fighter
+258996@@@Shadowpine Soldier, Caster
+259022@@@12.0 Z1 - Local 16 - Paladin Rescue - Sanctum of the Moon - Twilight's Blade - Mortals - T1 Caster (KRB)
+259037@@@Arator
+259041@@@High Exarch Turalyon
+259044@@@Targeting Bunny
+259068@@@Mor'duun
+259103@@@Zul'jarra
+259153@@@Soridormi
+259222@@@Zul'jarra
+12.0.0.64741
+241981@@@Quel'Thalas Mage
+246004@@@Cauldron of Sin'dorei Flasks |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+246105@@@Cauldron of Sin'dorei Flasks |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+246112@@@Voidlight Potion Cauldron |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+246117@@@Voidlight Potion Cauldron |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+258242@@@Antoran Inquisitor
+259311@@@Zul'jarra
+259313@@@Akil'zon
+259341@@@Scalecommander Azurathel
+259344@@@Garona Halforcen
+259399@@@Alleria Windrunner
+259406@@@Grand Artificer Romuul
+259583@@@Amani People
+259693@@@Voidwalker
+259694@@@Sunwell Magus
+259698@@@Sunwell Guard
+259716@@@Riftglaive Blackstar
+259718@@@Icy Familiar
+259727@@@Gnarla
+259728@@@Sunwing Hatchling
+259736@@@Mor'duun
+259756@@@Twilight Ogre Directional Sound Cue
+259821@@@Sound Stalker - 12.0 Raid - Voidspire - Boss 1 - March of the Endless
+259830@@@Silvermoon's Arcane Defender
+259831@@@Arcanovoid Construct
+12.0.0.64975
+234064@@@Dreaded Voidwalker
+234065@@@Hollowsoul Shredder
+237357@@@Anduin Lothar
+241326@@@Arcane Magister
+241444@@@Runed Spellbreaker
+246417@@@Commander Koruth Mountainfist
+257161@@@Blazing Pyromancer
+259847@@@Misha
+12.0.0.65512
+255736@@@Star the Lucky Dragon
+255750@@@Gummi the Glow Wyrm
+256663@@@Lil' Staropod
+12.0.0.65560
+252686@@@Auspicious Pixiu
+12.0.1.64889
+236594@@@Zul'jan
+236604@@@Lady Liadrin
+236659@@@Zul'jarra
+236734@@@Arator
+237402@@@Lightbloom Petalwing
+240545@@@Unbound Wraith
+240857@@@Manifestation of Midnight
+241082@@@Torundo the Grizzled
+241303@@@Kul'amara the Fierce
+244562@@@Tak'lejo
+245589@@@Lilaju
+245979@@@Pel'na Torntusk
+250495@@@Bartender Bob
+250786@@@Manifestation of Midnight
+251671@@@Lightbloated Magister
+253382@@@Mibaza
+255616@@@Void Portal
+256103@@@Devouring Darkcaller
+257268@@@Netherwyrm
+259918@@@Devouring Darkcaller
+260196@@@Lightbloom Petalwing
+260197@@@Orweyna
+260198@@@Arator
+12.0.1.64914
+253164@@@Guard
+12.0.1.65337
+234064@@@Dreadful Voidwalker
+237502@@@Arator
+239904@@@Void Mistlurker
+240857@@@Darkspawn
+242417@@@Fleeing Citizen
+242582@@@Eitrigg
+250786@@@Darkspawn
+250980@@@Silvermoon Resident
+256107@@@Fidoficus
+260311@@@Blightclaw
+260312@@@Harrower
+260313@@@Siphoid
+260316@@@T'era
+260358@@@Scout Captain Daelin
+260360@@@Silvermoon Guard
+260376@@@Generic Bunny - PRK
+260377@@@Generic Bunny - PRK
+260381@@@Generic Bunny - PRK
+260384@@@Generic Bunny - PRK
+260421@@@Hurried Courier
+260465@@@Bloomrotten Corpse
+260489@@@Bloomrotten Corpse
+260493@@@Har'athir Dweller
+260506@@@Cascade Drifter
+260507@@@Violet Chloroceros
+260899@@@Sootpaw
+260957@@@Vaeli
+260958@@@Vaeli
+260977@@@Flyer
+12.0.1.65448
+260992@@@Boost
+260997@@@Twilight Ogre Directional Sound Cue
+261003@@@Twilight Ogre Directional Sound Cue
+261032@@@Twilight Ogre Directional Sound Cue
+261035@@@Twilight Ogre Directional Sound Cue
+261036@@@Twilight Ogre Directional Sound Cue
+261037@@@Twilight Ogre Directional Sound Cue
+261038@@@Twilight Ogre Directional Sound Cue
+261040@@@Twilight Ogre Directional Sound Cue
+261064@@@Light's Vanguard
+261065@@@Siphoid
+261066@@@Void Mistlurker
+261068@@@Harrower
+261069@@@Blightclaw
+261081@@@Twilight Voidchurner
+12.0.1.65617
+254689@@@Do, Child of Filo
+12.0.1.66263
+248791@@@Voidseer Orivane
+12.0.1.66337
+260377@@@Scouting Table
+260381@@@Scouting Table
+12.0.1.66384
+264213@@@Abysslick
+12.0.5.66330
+61317@@@Long-Tailed Mole
+252608@@@Domanaar Ritualist
+252824@@@[DNT] Invisible Stalker - Void Assaults
+254642@@@Inquisitive Butterfly
+254718@@@Inquisitive Fly Swarm
+255380@@@Twilight Infiltrator
+257186@@@Kill Credit [DNT]
+257187@@@Kill Credit [DNT]
+257188@@@Kill Credit [DNT]
+257335@@@Inquisitive Bee
+259721@@@Twilight Infiltrator
+259755@@@Stablemaster Aelius
+261451@@@Echo of Nalorakk
+261676@@@Void-Scarred Eaglet
+261684@@@Chubs
+262066@@@Overloaded Manaling
+262089@@@Void-Corrupted Snapdragon
+262090@@@Void-Touched Chick
+262092@@@Void-Touched Lynx Kitten
+262422@@@Rescued Dragonhawk Chick
+262427@@@Void-Infused Mindbreaker Fry
+262647@@@Void Portal Bunny
+262786@@@Wriggling Capybara
+262787@@@Cappy
+262788@@@Curious Lynx Kitten
+263227@@@[DNT] Death Bunny
+264250@@@Nina Mear
+264252@@@Mark Mear

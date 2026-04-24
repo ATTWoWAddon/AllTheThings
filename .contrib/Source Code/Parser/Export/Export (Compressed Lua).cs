@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace ATT
 {
@@ -192,8 +193,7 @@ namespace ATT
                 var onInitBody = SimplifyLuaBody(OnInitRef);
                 if (!onInitBody.Contains("return") && onInitBody.Contains("function("))
                 {
-                    Console.WriteLine("Missing a return within an OnInit function body.");
-                    Console.WriteLine(OnInitRef.ToString());
+                    Framework.LogWarn("Missing a return within an OnInit function body.", data);
                     onInitBody = $"function(t2) ({onInitBody})(t2); return t2; end";
                 }
                 builder.Append('(').Append(onInitBody).Append(")(");
@@ -293,7 +293,7 @@ namespace ATT
             else
             {
                 // Uhh, that shouldn't happen.
-                if (hasOnInit) Framework.LogError("ERROR: OnInit in a place where it does not belong!");
+                //if (hasOnInit) Framework.LogError("ERROR: OnInit in a place where it does not belong!");
             }
 
             // Close the Parenthesis for the end of the constructor.
@@ -430,63 +430,25 @@ namespace ATT
         {
             // Export the Category
             var builder = new Exporter(name);
-            builder.Append("_.Categories.").Append(name).Append("={");
-            foreach (var group in category)
+            builder.Append("categories.").Append(name).Append("=");
+            bool isPrimaryRootCategory = false;
+            if (Framework.RootCategoryHeaders.TryGetValue(name, out var headerObj)
+                && headerObj is Dictionary<string, object> header && header != null)
             {
-                ExportCompressedLua(builder, group);
-                builder.Append(",");
+                header["g"] = category;
+                ExportCompressedLua(builder, header);
+                isPrimaryRootCategory = true;
             }
-            builder.Remove(builder.Length - 1, 1).AppendLine("};");
+            else ExportCompressedLua(builder, category);
+            builder.AppendLine(";").AppendLine("end);");
             builder.Insert(0, "--STRUCTURE_REPLACEMENTS" + Environment.NewLine);
             ExportLocalVariablesForLua(builder);
             builder.Insert(0, new StringBuilder()
                 .AppendLine("---@diagnostic disable: deprecated")
-                .AppendLine("local appName, _ = ...;"));
-            AddTableNewLines = ConfigUseExportNewlines;
-            return builder;
-        }
-
-        /// <summary>
-        /// Export the categories to a new string builder instance.
-        /// </summary>
-        /// <param name="categories"></param>
-        /// <returns></returns>
-        public static Exporter ExportCompressedLuaCategories(IDictionary<string, List<object>> categories)
-        {
-            // Export all of the Categories
-            var builder = new Exporter();
-            builder.AppendLine("_.Categories={");
-            foreach (var pair in categories)
-            {
-                if (pair.Value.Count > 0)
-                {
-                    builder.Append(pair.Key).AppendLine("={");
-                    foreach (var group in pair.Value)
-                    {
-                        ExportCompressedLua(builder, group);
-                        builder.Append(",");
-                    }
-                    builder.Remove(builder.Length - 1, 1).AppendLine("};");
-                }
-            }
-            builder.AppendLine("};");
-
-            // Simplify the structure of the string and then export to the builder.
-            if (!Framework.PreProcessorTags.Contains("NOSIMPLIFY"))
-            {
-                var simplifyConfig = Framework.Config["SimplifyStructures"];
-                if (simplifyConfig.Defined)
-                {
-                    int[] simplify = simplifyConfig;
-                    SimplifyStructureForLua(builder, simplify[0], simplify[1]);
-                }
-                else
-                {
-                    SimplifyStructureForLua(builder);
-                }
-            }
-            ExportLocalVariablesForLua(builder);
-            ExportCategoriesHeaderForLua(builder);
+                .AppendLine("local appName, _ = ...;")
+                .Append("_.AddEventHandler(\"")
+                .Append(isPrimaryRootCategory ? "OnBuildDataCache" : "OnBuildHiddenDataCache")
+                .AppendLine("\", function(categories)"));
             AddTableNewLines = ConfigUseExportNewlines;
             return builder;
         }

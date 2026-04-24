@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(ZONE_DROPS, {
@@ -22,9 +23,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			i(200194),	-- Nokhud Battle Tunic
 			i(200201, {	-- Nokhud Battlegear
 				["cost"] = {
-					{"i",200196,1},	-- 1x Nokhud Battle Barding
-					{"i",200184,1},	-- 1x Nokhud Battle Helm
-					{"i",200194,1},	-- 1x Nokhud Battle Tunic
+					{ "i", 200196, 1 },	-- 1x Nokhud Battle Barding
+					{ "i", 200184, 1 },	-- 1x Nokhud Battle Helm
+					{ "i", 200194, 1 },	-- 1x Nokhud Battle Tunic
 				},
 			}),
 			i(201028, {	-- Nokhudon Boots
@@ -77,7 +78,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
 			}),
 			i(201439, {	-- Renewed Dream
-				["cost"] = {{"i",201437,5}},	-- 5x Slumbering Dream Fragment
+				["cost"] = { { "i", 201437, 5 } },	-- 5x Slumbering Dream Fragment
 				["groups"] = {
 					i(201469),	-- Emerald Green Apple
 				},

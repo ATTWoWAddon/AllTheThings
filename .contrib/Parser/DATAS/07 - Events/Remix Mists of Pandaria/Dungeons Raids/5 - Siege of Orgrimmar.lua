@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(RAIDS, {
 		inst(369, {	-- Siege of Orgrimmar
@@ -694,7 +695,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214375),	-- Handguards of the Barbed Assassin
 							i(214376),	-- Cinch of the Barbed Assassin
 							-- Bugged
-							--i(214377),	-- Mantle of the Barbed Assassin
+							-- i(214377),	-- Mantle of the Barbed Assassin
 							i(214378),	-- Pants of the Barbed Assassin
 						}),
 						filter(MAIL, {
@@ -962,7 +963,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214375),	-- Handguards of the Barbed Assassin
 							i(214376),	-- Cinch of the Barbed Assassin
 							-- Bugged
-							--i(214377),	-- Mantle of the Barbed Assassin
+							-- i(214377),	-- Mantle of the Barbed Assassin
 							i(214378),	-- Pants of the Barbed Assassin
 						}),
 						filter(MAIL, {

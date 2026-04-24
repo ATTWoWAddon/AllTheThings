@@ -47,6 +47,10 @@ CLASSIC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline
 	n(ARMOR, {
 		r(25321),	-- Moonsoul Crown
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1261667),	-- Blackrock Lamppost
+		r(1261659),	-- Ironforge Chandelier
+	})),
 	filter(FINGER_F, {
 		r(26874),	-- Aquamarine Signet
 		r(25493),	-- Braided Copper Ring
@@ -128,6 +132,11 @@ TBC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] =
 	n(ARMOR, {
 		applyclassicphase(TBC_PHASE_TWO, r(41418, {["timeline"] = {ADDED_2_1_0}})),	-- Crown of the Sea Witch
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1269496),	-- Draenei Crystal Chandelier
+		r(1263815),	-- Shattrath Lamppost
+		r(1263817),	-- Shattrath Sconce
+	})),
 	filter(GEMS, {
 		-- #if BEFORE CATA
 		r(28905, {["timeline"] = {ADDED_3_0_2}}),	-- Bold Blood Garnet
@@ -230,6 +239,10 @@ WRATH_JEWELCRAFTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264537, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Jewelcrafting
 	applyclassicphase(DF_PHASE_ONE, r(382979, {["timeline"] = {ADDED_10_0_2}})),	-- Northrend Prospecting
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263577),	-- Kirin Tor Glass Table
+		r(1263605),	-- Kirin Tor Sun Chandelier
+	})),
 	filter(GEMS, {
 		-- #if BEFORE CATA
 		r(53892),	-- Accurate Huge Citrine
@@ -762,6 +775,10 @@ CATA_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_4_0_3 } }, {
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264539, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Jewelcrafting
 	applyclassicphase(DF_PHASE_ONE, r(382978, {["timeline"] = {ADDED_10_0_2}})),	-- Cataclysm Prospecting
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1262357),	-- Smoke Lamp
+		r(1261305),	-- Smoke Sconce
+	})),
 	filter(FINGER_F, {
 		-- #if ANYCLASSIC
 		applyclassicphase(CATA_PHASE_RISE_OF_THE_ZANDALARI, r(1216328, {["timeline"] = {ADDED_4_4_1}})),	-- Bloodthirsty Amberjewel Band
@@ -1187,6 +1204,11 @@ MOP_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264542, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Jewelcrafting
 	applyclassicphase(DF_PHASE_ONE, r(382977, {["timeline"] = {ADDED_10_0_2}})),	-- Pandaria Prospecting
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1261242),	-- Jade Temple Dragon Fountain
+		r(1261244),	-- Pandaren Stone Post
+		r(1261243),	-- Pandaren Stone Wall
+	})),
 	n(DISCOVERY, {
 		r(131691),	-- Imperial Amethyst
 		r(131686),	-- Primordial Ruby
@@ -1329,6 +1351,14 @@ DRAENOR_JEWELCRAFTING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 	},
 })));
 COMMON_DRAENOR_JEWELCRAFTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	i(257031, {	-- Design: Draenethyst Sconce (RECIPE!)
+		["cost"] = {{"i", SECRET_OF_DRAENOR_JEWELCRAFTING, 1}},
+		["timeline"] = { ADDED_11_2_7 },
+	}),
+	i(257030, {	-- Design: Draenic Basin (RECIPE!)
+		["cost"] = {{"i", SECRET_OF_DRAENOR_JEWELCRAFTING, 1}},
+		["timeline"] = { ADDED_11_2_7 },
+	}),
 	i(116080, {	-- Design: Greater Taladite Amplifier (RECIPE!)
 		["cost"] = {{"i", SECRET_OF_DRAENOR_JEWELCRAFTING, 5}},
 		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
@@ -1405,6 +1435,13 @@ COMMON_DRAENOR_JEWELCRAFTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 		["cost"] = {{"i", SECRET_OF_DRAENOR_JEWELCRAFTING, 1}},
 	}),
 }));
+LEGION_JEWELCRAFTING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	applyclassicphase(DF_PHASE_ONE, r(382975, {["timeline"] = {ADDED_10_0_2}})),	-- Legion Prospecting
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1260757),	-- Shaded Suramar Window
+		r(1263351),	-- Suramar Jeweler's Assortment
+	})),
+}));
 BFA_JEWELCRAFTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(382973, {["timeline"] = {ADDED_10_0_0}}),	-- Kul Tiras and Zandalar Prospecting
 	r(287272, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Recalibration
@@ -1412,6 +1449,10 @@ BFA_JEWELCRAFTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] =
 	r(256622, {["timeline"] = {ADDED_8_1_5}}),	-- Mass Prospect Platinum
 	r(256613, {["timeline"] = {ADDED_8_1_5}}),	-- Mass Prospect Storm Silver
 	r(286651, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Recalibration
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1260501),	-- Small Mask of Bwonsamdi, Loa of Graves
+		r(1260492),	-- Zandalari Skullfire Lamp
+	})),
 	filter(FINGER_F, {
 		r(256510),	-- Amberblaze Loop [Rank 1]
 		r(256514),	-- Amberblaze Loop [Rank 2]
@@ -1479,7 +1520,7 @@ NAZJATAR_JEWELCRAFTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timel
 }));
 SL_JEWELCRAFTING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(311967),	-- Shadowlands Jewelcrafting
-	r(325248),	-- Shadowlands Prospecting \\ Prospecting
+	r(325248),	-- Shadowlands Prospecting
 	r(311953),	-- Mass Prospect Elethium
 	r(311948),	-- Mass Prospect Laestrite
 	r(311950),	-- Mass Prospect Oxxein
@@ -1487,6 +1528,10 @@ SL_JEWELCRAFTING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = {
 	r(359492, {["timeline"] = {ADDED_9_2_0}}),	-- Mass Prospect Progenium
 	r(311952),	-- Mass Prospect Sinvyr
 	r(311949),	-- Mass Prospect Solenium
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1269502),	-- Kyrian Floating Lamp
+		r(1269504),	-- Maldraxxian Runic Tablet
+	})),
 	filter(FINGER_F, {
 		r(311880),	-- Deadly Laestrite Band
 		r(311884),	-- Deadly Sinvyr Ring
@@ -1537,6 +1582,11 @@ DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(376233),	-- Band of New Beginnings
 		r(374494),	-- Pendant of Impending Perils
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1259384),	-- Valdrakken Fence
+		r(1259386),	-- Valdrakken Fencepost
+		r(1259369),	-- Valdrakken Gilded Throne
+	})),
 	filter(GEMS, {
 		r(374437),	-- Crafty Queen's Ruby
 		r(374439),	-- Energized Vibrant Emerald
@@ -1570,10 +1620,15 @@ DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = {
 TWW_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423339),	-- Khaz Algar Jewelcrafting
 	r(434018),	-- Algari Prospecting
+	r(434019),	-- Recraft Equipment
 	n(ARMOR, {
 		r(435379),	-- Malleable Band
 		r(435380),	-- Malleable Pendant
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1260172),	-- Gundargaz Candelabra
+		r(1260096),	-- Octagonal Ochre Window
+	})),
 	filter(GEMS, {
 		r(434537),	-- Deadly Amber
 		r(434549),	-- Deadly Ruby
@@ -1592,12 +1647,70 @@ TWW_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(435371),	-- Radiant Loupes
 		r(435375),	-- Right-Handed Magnifying Glass
 		r(435377),	-- Storyteller's Glasses
-		}),
+	}),
 	filter(REAGENTS, {
 		r(435325),	-- Decorative Lens
 		r(435324),	-- Engraved Gemcutter
 		r(435323),	-- Gilded Vial
 		r(435327),	-- Inverted Prism
 		r(435326),	-- Marbled Stone
+	}),
+});
+MID_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	r(471011),	-- Midnight Jewelcrafting
+	r(1231127),	-- Midnight Prospecting
+	r(471045),	-- Recraft Equipment
+	r(1265671),	-- Artisan Jewelcrafter's Moxie
+	r(1265680),	-- Concentration
+	r(1265706),	-- Ingenuity
+	r(1265619),	-- Knowledge
+	r(1265606),	-- Multicraft
+	r(1265656),	-- Quality
+	r(1265698),	-- Resourcefulness
+	r(1265690),	-- Skill
+	r(1265664),	-- Sparks
+	n(ARMOR, {
+		r(1230489),	-- Gleaming Copper Band
+		r(1230490),	-- Nocturnal Charm
+	}),
+	n(DECOR, {
+		r(1246895),	-- Brilliant Phoenix Harp
+		r(1246889),	-- Tenebrous Ren'dorei Armillary
+	}),
+	filter(GEMS, {
+		r(1230455),	-- Deadly Amethyst
+		r(1230463),	-- Deadly Garnet
+		r(1230447),	-- Deadly Lapis
+		r(1230439),	-- Deadly Peridot
+		r(1230467),	-- Flawless Deadly Garnet
+		r(1230460),	-- Flawless Masterful Amethyst
+		r(1230442),	-- Flawless Quick Peridot
+		r(1230453),	-- Flawless Versatile Lapis
+		r(1230456),	-- Masterful Amethyst
+		r(1230464),	-- Masterful Garnet
+		r(1230448),	-- Masterful Lapis
+		r(1230440),	-- Masterful Peridot
+		r(1230454),	-- Quick Amethyst
+		r(1230462),	-- Quick Garnet
+		r(1230446),	-- Quick Lapis
+		r(1230437),	-- Quick Peridot
+		r(1230457),	-- Versatile Amethyst
+		r(1230465),	-- Versatile Garnet
+		r(1230449),	-- Versatile Lapis
+		r(1230441),	-- Versatile Peridot
+	}),
+	filter(MISC, {
+		r(1230499),	-- Monologuer's Chalice
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(1230494),	-- Bold Biographer's Bifocals
+		r(1230493),	-- Fantastic Font Focuser
+		r(1230491),	-- Silvermoon Focusing Shard
+		r(1230492),	-- Silvermoon Loupes
+	}),
+	filter(REAGENTS, {
+		r(1230474),	-- Kaleidoscopic Prism
+		r(1230475),	-- Sin'dorei Lens
+		r(1230476),	-- Sunglass Vial
 	}),
 });

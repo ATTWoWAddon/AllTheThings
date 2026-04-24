@@ -1,0 +1,31 @@
+MAX_LEVEL_CHARACTERS = createHeader({
+	readable = "Max Level Characters",
+	constant = "MAX_LEVEL_CHARACTERS",
+	icon = 236569,	-- Level 80 Achievement Icon. If someone has a better idea, go for it.
+	text = {
+		en = "Max Level Characters",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "最高等级角色",
+		tw = "最高等級角色",
+	},
+	description = {
+		en = "Contains things that can be obtained only by max level characters.",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "包含只能由最高等级角色获得的物品。",
+		tw = "包含只能由最高等級角色獲得的物品。",
+	},
+});

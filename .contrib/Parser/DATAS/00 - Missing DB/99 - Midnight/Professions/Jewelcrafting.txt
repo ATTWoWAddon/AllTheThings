@@ -1,0 +1,43 @@
+4.0.1.12911
+r(73624),	-- Jeweler's Sapphire Monocle
+r(73639),	-- Figurine - King of Boars
+r(73640),	-- Figurine - Demon Panther
+r(73641),	-- Figurine - Earthen Guardian
+r(73642),	-- Figurine - Jeweled Serpent
+r(73643),	-- Figurine - Dream Owl
+7.3.0.24473
+r(195116),	-- Jewelcrafting
+r(225902),	-- Mass Prospect Leystone
+r(225904),	-- Mass Prospect Felslate
+7.3.0.24608
+r(248937),	-- Empyrial Circlet
+r(248938),	-- Empyrial Hesselian Setting
+r(248939),	-- Empyrial Florid Malachite Setting
+r(248940),	-- Empyrial Crown
+
+
+
+
+Missing in Jewelcrafting
+
+4.0.1.12911
+r(73624),	-- Jeweler's Sapphire Monocle
+r(73639),	-- Figurine - King of Boars
+r(73640),	-- Figurine - Demon Panther
+r(73641),	-- Figurine - Earthen Guardian
+r(73642),	-- Figurine - Jeweled Serpent
+r(73643),	-- Figurine - Dream Owl
+7.3.0.24473
+r(195116),	-- Jewelcrafting
+r(195850),	-- Versatile Skystone
+r(195854),	-- Versatile Maelstrom Sapphire
+r(195881),	-- Jeweled Lockpick
+r(195882),	-- JewelCraft
+r(195883),	-- Chatterstone
+r(225902),	-- Mass Prospect Leystone
+r(225904),	-- Mass Prospect Felslate
+7.3.0.24608
+r(248937),	-- Empyrial Circlet
+r(248938),	-- Empyrial Hesselian Setting
+r(248939),	-- Empyrial Florid Malachite Setting
+r(248940),	-- Empyrial Crown

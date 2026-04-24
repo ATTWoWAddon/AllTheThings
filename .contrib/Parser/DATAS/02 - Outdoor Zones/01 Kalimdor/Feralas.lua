@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(FERALAS, {
 		["lore"] = "Feralas is a rainforest surrounded by arid zones in southern Kalimdor. It is known for the mystery surrounding Dire Maul--a former city of the Highborne that remained hermetic and drew upon demonic energy to stay immortal. There is a strong Night Elf presence--both in Feathermoon Stronghold, the base of operations for the Sentinels, and in the numerous ruins scattered around the zones.",
@@ -145,7 +146,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(569, {	-- Stonemaul Hold, Feralas
 					["cr"] = 41605,	-- Mergek <Wind Rider Master>
-					["coord"] = { 51, 48.4, FERALAS },
+					["coord"] = { 51.0, 48.4, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -334,7 +335,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2981, {	-- A Threat in Feralas
 					["qg"] = 4485,	-- Belgrom Rockmaul
-					["coord"] = { 75, 34.2, ORGRIMMAR },
+					["coord"] = { 75.0, 34.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -358,7 +359,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Miniaturization Residue
 							["provider"] = { "i", 18956 },	-- Miniaturization Residue
-							["cost"] = {{ "i", 18904, 1 }},	-- Zorbin's Ultra-Shrinker
+							["cost"] = { { "i", 18904, 1 } },	-- Zorbin's Ultra-Shrinker
 							["crs"] = {
 								5358,	-- Cliff Giant
 								5360,	-- Deep Strider
@@ -519,7 +520,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Edana's Dark Heart
 							["provider"] = { "i", 9528 },	-- Edana's Dark Heart
-							["cost"] = {{ "i", 9530, 1 }},	-- Horn of Hatetalon
+							["cost"] = { { "i", 9530, 1 } },	-- Horn of Hatetalon
 							["coord"] = { 40.6, 8.6, FERALAS },
 							["cr"] = 8075,	-- Edana Hatetalon
 						}),
@@ -544,14 +545,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 				q(3062, {	-- Dark Heart
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76, 43.8, FERALAS },
+					["coord"] = { 76.0, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Edana's Dark Heart
 							["provider"] = { "i", 9528 },	-- Edana's Dark Heart
-							["cost"] = {{ "i", 9530, 1 }},	-- Horn of Hatetalon
+							["cost"] = { { "i", 9530, 1 } },	-- Horn of Hatetalon
 							["coord"] = { 40.6, 8.6, FERALAS },
 							["cr"] = 8075,	-- Edana Hatetalon
 						}),
@@ -577,7 +578,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 2870,	-- Against Lord Shalzaru
 					["providers"] = {
 						{ "n", 7877 },	-- Latronicus Moonspear
-						{ "i", 9248 } -- Mysterious Relic
+						{ "i", 9248 }	-- Mysterious Relic
 					},
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -681,7 +682,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Faerie Dragon Muisek
 							["provider"] = { "i", 9596 },	-- Faerie Dragon Muisek
-							["cost"] = {{ "i", 9620, 1 }},	-- Faerie Dragon Muisek Vessel
+							["cost"] = { { "i", 9620, 1 } },	-- Faerie Dragon Muisek Vessel
 							["crs"] = {
 								5278,	-- Sprite Darter
 								5276,	-- Sprite Dragon
@@ -776,7 +777,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 7997 },	-- Captured Sprite Darter
 								{ "n", 5278 },	-- Sprite Darter
 							},
-							["cost"] = {{ "i", 12301, 1 }},	-- Bamboo Cage Key
+							["cost"] = { { "i", 12301, 1 } },	-- Bamboo Cage Key
 						}),
 					},
 				}),
@@ -845,7 +846,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",   9463 },	-- Gordunni Cobalt
 								{ "o", 144064 },	-- Gordunni Dirt Mound
 							},
-							["cost"] = {{ "i", 9466, 1 }},	-- Orwin's Shovel
+							["cost"] = { { "i", 9466, 1 } },	-- Orwin's Shovel
 						}),
 						i(9658, {	-- Boots of the Maharishi
 							["timeline"] = { REMOVED_4_0_3 },
@@ -905,7 +906,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Hippogryph Muisek
 							["provider"] = { "i", 9595 },	-- Hippogryph Muisek
-							["cost"] = {{ "i", 9619, 1 }},	-- Hippogryph Muisek Vessel
+							["cost"] = { { "i", 9619, 1 } },	-- Hippogryph Muisek Vessel
 							["crs"] = {
 								5347,	-- Antilus the Soarer
 								5300,	-- Frayfeather Hippogryph
@@ -1029,7 +1030,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3787, {	-- Jonespyre's Request
 					["qg"] = 5566,	-- Tannysa
-					["coord"] = { 44.8, 77, STORMWIND_CITY },
+					["coord"] = { 44.8, 77.0, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1037,7 +1038,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3788, {	-- Jonespyre's Request
 					["qg"] = 7736,	-- Innkeeper Shyria
-					["coord"] = { 31, 43.4, FERALAS },
+					["coord"] = { 31.0, 43.4, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1192,7 +1193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7879,	-- Quintis Jonespyre
 					["coord"] = { 32.4, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11040, 5 }},	-- Morrowgrain
+					["cost"] = { { "i", 11040, 5 } },	-- Morrowgrain
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 47,
@@ -1218,7 +1219,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/7 Mountain Giant Muisek
 							["provider"] = { "i", 9597 },	-- Mountain Giant Muisek
-							["cost"] = {{ "i", 9621, 1 }},	-- Mountain Giant Muisek Vessel
+							["cost"] = { { "i", 9621, 1 } },	-- Mountain Giant Muisek Vessel
 							["crs"] = {
 								5358,	-- Cliff Giant
 								5357,	-- Land Walker
@@ -1348,12 +1349,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25454, {	-- Perfect Yeti Hide
 					["sourceQuest"] = 25452,	-- The Mark of Quality
 					["provider"] = { "i", 55167 },	-- Perfect Yeti Hide
+					["coord"] = { 55.6, 56.2, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["crs"] = { 39896 },	-- Feral Scar Yeti
 				}),
 				q(7738, {	-- Perfect Yeti Hide
 					["provider"] = { "i", 18972 },	-- Perfect Yeti Hide
+					["coord"] = { 55.6, 56.2, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -1818,7 +1821,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Wildkin Muisek
 							["provider"] = { "i", 9594 },	-- Wildkin Muisek
-							["cost"] = {{ "i", 9618, 1 }},	-- Wildkin Muisek Vessel
+							["cost"] = { { "i", 9618, 1 } },	-- Wildkin Muisek Vessel
 							["cr"] = 2927,	-- Vicious Owlbeast
 						}),
 					},
@@ -2210,7 +2213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7879,	-- Quintis Jonespyre
 					["coord"] = { 32.4, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11040, 10 }},	-- Morrowgrain
+					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
@@ -2321,7 +2324,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4120, {	-- The Strength of Corruption
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76, 43.8, FERALAS },
+					["coord"] = { 76.0, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["races"] = HORDE_ONLY,
@@ -2397,7 +2400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/3 Treant Muisek
 							["provider"] = { "i", 9593 },	-- Treant Muisek
-							["cost"] = {{ "i", 9606, 1 }},	-- Treant Muisek Vessel
+							["cost"] = { { "i", 9606, 1 } },	-- Treant Muisek Vessel
 							["cr"] = 7584,	-- Wandering Forest Walker
 						}),
 					},
@@ -2429,7 +2432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3063, {	-- Vengeance on the Northspring
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76, 43.8, FERALAS },
+					["coord"] = { 76.0, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -2631,7 +2634,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 74.43, 42.91, FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 4304, 10 }},	-- Thick Leather
+					["cost"] = { { "i", 4304, 10 } },	-- Thick Leather
 					["requireSkill"] = LEATHERWORKING,
 					["learnedAt"] = 200,
 					["lvl"] = 30,
@@ -2768,7 +2771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(81924, {	-- Wisdom of the Guardians
 					["qg"] = 221985,	-- Tyrisius
-					["coord"] = { 57.2, 69, FERALAS },
+					["coord"] = { 57.2, 69.0, FERALAS },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { THE_HINTERLANDS, AZSHARA },
 					["classes"] = { DRUID },
@@ -2884,7 +2887,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Miniaturization Residue
 							["provider"] = { "i", 18956 },	-- Miniaturization Residue
-							["cost"] = {{ "i", 18904, 1 }},	-- Zorbin's Ultra-Shrinker
+							["cost"] = { { "i", 18904, 1 } },	-- Zorbin's Ultra-Shrinker
 							["crs"] = {
 								5358,	-- Cliff Giant
 								5360,	-- Deep Strider

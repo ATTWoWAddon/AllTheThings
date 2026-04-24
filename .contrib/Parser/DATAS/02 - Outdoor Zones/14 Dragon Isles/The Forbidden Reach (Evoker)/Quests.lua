@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 	m(THE_FORBIDDEN_REACH_DRACTHYR, bubbleDownSelf({ ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE } }, {
 		n(QUESTS, {
@@ -54,7 +55,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					["provider"] = { "n", 186883 },	-- Scalecommander Cindrethresh
 					["coord"] = { 62.3, 36.5, 2109 },
 					["groups"] = {
-						i(193914),	--	Crystalline Lapis
+						i(193914),	-- Crystalline Lapis
 					},
 				}),
 				------ Chapter 2 ------
@@ -156,10 +157,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					["provider"] = { "n", 198429 },	-- Treysh
 					["coord"] = { 45.3, 61.3, THE_FORBIDDEN_REACH_DRACTHYR },
 					["groups"] = {
-						i(201720),	-- Bronze Vorquin (MOUINT!)
-						i(201702),	-- Crimson Vorquin (MOUINT!)
-						i(201719),	-- Obsidian Vorquin (MOUINT!)
-						i(201704),	-- Sapphire Vorquin (MOUINT!)
+						i(201720),	-- Bronze Vorquin (MOUNT!)
+						i(201702),	-- Crimson Vorquin (MOUNT!)
+						i(201719),	-- Obsidian Vorquin (MOUNT!)
+						i(201704),	-- Sapphire Vorquin (MOUNT!)
 						i(201724),	-- Dracthyr Token of Cavalry Excellence
 					},
 				}),

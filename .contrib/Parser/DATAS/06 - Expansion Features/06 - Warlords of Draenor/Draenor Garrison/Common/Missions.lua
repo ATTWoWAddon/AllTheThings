@@ -6,18 +6,18 @@ root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(MISSIONS, {
-				n(85805, {	-- Frostwall Command Table [Garrison Level 3]
-					["modelScale"] = 2.5,
+				header(HEADERS.NPC, 85805, {	-- Command Table
 					["crs"] = {
 						80432,	-- Frostwall Level 1 Command Table
 						86031,	-- Frostwall Level 2 Command Table
 						81546,	-- Lunarfall Level 1 Command Table
 						84224,	-- Lunarfall Level 2 Command Table
 						84698,	-- Lunarfall Level 3 Command Table
+						85805,	-- Frostwall Level 3 Command Table
 					},
 					["groups"] = {
+						ach(9150),	-- Exploration Mission Specialist
 						ach(9900, {	-- Exploration Mission Master
-							ach(9150),	-- Exploration Mission Specialist
 							crit(27777),	-- Exploration: Oshu'gun Dig Site
 							crit(27778),	-- Exploration: Razed Warsong Outpost Dig Site
 							crit(27779),	-- Exploration: Stonecrag Excavation Dig Site
@@ -32,30 +32,24 @@ root(ROOTS.ExpansionFeatures,
 							crit(27788),	-- Exploration: Burial Fields
 							crit(27789),	-- Exploration: Umbrafen Dig Site
 						}),
-						ach(9147, {	-- Mission Specialist
-							ach(9523),	-- Patrolling Draenor [Yes this is a pre-req]
-							ach(9145),	-- Treasure Mission Specialist
-						}),
-						ach(9140, {	-- On A Metric Ton of Missions
-							ach(9133),	-- On a Mission
-							ach(9134),	-- On a Few Missions
-							ach(9138),	-- On a Lot of Missions
-							ach(9139),	-- On a Massive Numbeer of Missions
-						}),
+						ach(9147),	-- Mission Specialist
+						ach(9133),	-- On a Mission
+						ach(9134),	-- On a Few Missions
+						ach(9138),	-- On a Lot of Missions
+						ach(9139),	-- On a Massive Numbeer of Missions
+						ach(9140),	-- On A Metric Ton of Missions
+						ach(9146),	-- Patrolling Mission Specialist
 						ach(9523, {	-- Patrolling Draenor
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["groups"] = {
 								i(111971),	-- Barracks, Level 3 [Blueprints]
-								ach(9146),	-- Patrolling Mission Specialist
 							},
 						}),
-						ach(9143, {	-- The Rarer the Better
-							ach(9141),	-- A Rare Mission
-							ach(9142),	-- Keeping It Rare
-						}),
-						ach(9524, {	-- Treasure Master
-							ach(9145),	-- Treasure Mission Specialist
-						}),
+						ach(9141),	-- A Rare Mission
+						ach(9142),	-- Keeping It Rare
+						ach(9143),	-- The Rarer the Better
+						ach(9145),	-- Treasure Mission Specialist
+						ach(9524),	-- Treasure Master
 						mi(463, {	-- Bird Watching
 							i(118731),	-- Spires of Arak Treasure Map (CI!)
 						}),
@@ -202,7 +196,7 @@ root(ROOTS.ExpansionFeatures,
 					-- maybe group each category under one header instead of having the same description on each token?
 						n(GARRISON_MISSION_LOOT, sharedData ({ ["sharedDescription"] = "To receive a mission for these tokens, your character's 'bag' item level (as displayed in game when mousing over the item level number on the character panel) has to be 44 or lower. You must also have at least one level 40 follower.\nTaking an alt with higher item level gear and reducing it to 44 or less will (by deleting items) enables the toon to get the token missions once the table updates (about twice a week). Raising your item level above 44 instantly causes any available token missions to disappear, and they won't return until your item level is reduced and the table updates." }, {
 							i(114109, {	-- Munificent Armament
-							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								-- ["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["groups"] = {
 									i(115311),	-- Munificent Axe
 									i(115314),	-- Munificent Dagger
@@ -215,7 +209,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114066, {	-- Munificent Choker
-							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								-- ["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["groups"] = {
 									i(114417),	-- Choker of Averted Doom
 									i(114416),	-- Goldleaf Bloom
@@ -225,7 +219,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114063, {	-- Munificent Spaulders
-							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								-- ["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["groups"] = {
 									i(114395),	-- Mantle of Hooded Nightmares
 									i(114396),	-- Spaulders of Falling Leaves
@@ -234,7 +228,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114058, {	-- Munificent Robes
-							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								-- ["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["groups"] = {
 									i(114378),	-- Robes of Hooded Nightmares
 									i(114375),	-- Chestguard of Falling Leaves
@@ -243,7 +237,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114057, {	-- Munificent Bracers
-							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								-- ["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["groups"] = {
 									i(114371),	-- Bracers of Hooded Nightmares
 									i(114372),	-- Bracers of Falling Leaves
@@ -252,7 +246,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114059, {	-- Munificent Treads
-							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								-- ["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["groups"] = {
 									i(114379),	-- Sandals of Hooded Nightmares
 									i(114380),	-- Boots of Falling Leaves
@@ -261,7 +255,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114068, {	-- Munificent Trinket
-							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								-- ["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["groups"] = {
 									i(114430),	-- Munificent Bonds of Fury
 									i(114429),	-- Munificent Censer of Tranquility
@@ -271,7 +265,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114110, {	-- Turbulent Armament
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["groups"] = {
 									i(115319),	-- Turbulent Axe
 									i(115322),	-- Turbulent Dagger
@@ -284,7 +278,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114078, {	-- Turbulent Choker
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["groups"] = {
 									i(114477),	-- Arcane Master's Chain
 									i(114476),	-- Beastminder Cabochon
@@ -294,7 +288,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114075, {	-- Turbulent Spaulders
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["groups"] = {
 									i(114456),	-- Firelash Mantle
 									i(114457),	-- Spireflame Spaulders
@@ -303,7 +297,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114070, {	-- Turbulent Robes
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["groups"] = {
 									i(114439),	-- Firelash Robes
 									i(114436),	-- Spireflame Chestguard
@@ -312,7 +306,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114069, {	-- Turbulent Bracers
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["groups"] = {
 									i(114432),	-- Firelash Bracers
 									i(114433),	-- Spireflame Bracers
@@ -321,7 +315,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114071, {	-- Turbulent Treads
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["groups"] = {
 									i(114440),	-- Firelash Sandls
 									i(114441),	-- Spireflame Boots
@@ -330,7 +324,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114080, {	-- Turbulent Trinket
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["groups"] = {
 									i(114491),	-- Turbulent Emblem
 									i(114489),	-- Turbulent Focusing Crystal
@@ -340,7 +334,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114112, {	-- Grandiose Armament
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["groups"] = {
 									i(115327),	-- Grandiose Axe
 									i(115330),	-- Grandiose Dagger
@@ -353,7 +347,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114086, {	-- Grandiose Choker
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["groups"] = {
 									i(114538),	-- Bleak Temple Choker
 									i(114539),	-- Dreamsleep Locket
@@ -363,7 +357,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114085, {	-- Grandiose Spaulders
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["groups"] = {
 									i(114520),	-- Crazed Bomber's Shoulderguard
 									i(114517),	-- Mantle of Volatile Ice
@@ -372,7 +366,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114083, {	-- Grandiose Robes
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["groups"] = {
 									i(114497),	-- Chestguard of Determined Resolve
 									i(114499),	-- Crazed Bomber's Breastplate
@@ -381,7 +375,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114082, {	-- Grandiose Bracers
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["groups"] = {
 									i(114494),	-- Bracers of Determined Resolve
 									i(114493),	-- Bracers of Volatile Ice
@@ -390,7 +384,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114084, {	-- Grandiose Treads
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["groups"] = {
 									i(114502),	-- Boots of Determined Resolve
 									i(114504),	-- Crazed Bomber's Greaves
@@ -399,7 +393,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114087, {	-- Grandiose Trinket
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
+								-- ["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["groups"] = {
 									i(114552),	-- Grandiose Carnage
 									i(114549),	-- Grandiose Plans
@@ -458,20 +452,22 @@ root(ROOTS.ExpansionFeatures,
 						i(122584),	-- Winning with Wildlings
 					},
 				}),
-				n(94398, {	-- Frostwall Fleet Command Table
-					["modelScale"] = 2.3,
-					["crs"] = { 94399 },	-- Lunarfall Fleet Command Table
+				header(HEADERS.NPC, 94398, {	-- Fleet Command Table
+					["crs"] = {
+						94398,	-- Frostwall Fleet Command Table
+						94399,	-- Lunarfall Fleet Command Table
+					},
 					["groups"] = {
-						a(ach(10174)),	-- Admiral [A]
-						a(ach(10173)),	-- Fleet Commander [A]
 						a(ach(10172, {	-- Petty Officer [A]
 							a(i(128362)),	-- Captain's Hat [A]
 						})),
-						h(ach(10276)),	-- Admiral [H]
-						h(ach(10275)),	-- Fleet Commander [H]
 						h(ach(10255, {	-- Petty Officer [H]
 							h(i(128363)),	-- Captain's Hat [H]
 						})),
+						a(ach(10173)),	-- Fleet Commander [A]
+						h(ach(10275)),	-- Fleet Commander [H]
+						a(ach(10174)),	-- Admiral [A]
+						h(ach(10276)),	-- Admiral [H]
 						a(achpart(10256, 10167, {	-- Charting a Course [A]
 							a(i(128365)),	-- Fleet Commander's Hat [A]
 						})),
@@ -488,16 +484,16 @@ root(ROOTS.ExpansionFeatures,
 							crit(28518),	-- Naval Bonus Expert
 							crit(28519),	-- Naval Siege Expert
 						}),
-						ach(10036),	-- Naval Bonus Expert
 						ach(10017),	-- Naval Bonus Specialist
-						ach(10154),	-- Naval Combat Expert
+						ach(10036),	-- Naval Bonus Expert
 						ach(10156),	-- Naval Combat Specialist
-						ach(10155),	-- Naval Siege Expert
+						ach(10154),	-- Naval Combat Expert
 						ach(10161),	-- Naval Siege Specialist
-						ach(10163),	-- Naval Training Expert
+						ach(10155),	-- Naval Siege Expert
 						ach(10162),	-- Naval Training Specialist
-						ach(10160),	-- Naval Treasure Expert
+						ach(10163),	-- Naval Training Expert
 						ach(10159),	-- Naval Treasure Specialist
+						ach(10160),	-- Naval Treasure Expert
 						ach(10170, {	-- Seaman
 							i(128353),	-- Admiral's Compass
 						}),

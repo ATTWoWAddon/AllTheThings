@@ -2,195 +2,6 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(NEW_CHARACTER, {
-	n(ACHIEVEMENTS, {
-		------ Epic ------
-		ach(40147, {	-- War Within Epic [The War Within]
-			["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0_SEASONSTART },
-		}),
-		ach(18977, {	-- Draconically Epic [Dragonflight]
-			["timeline"] = { ADDED_10_1_5 },
-		}),
-		ach(18366, {	-- Draconically Epic - Replaced with new achievement number 18977 [Dragonflight]
-			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
-		}),
-		ach(14797, {	-- Epic [Shadowlands]
-			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
-		}),
-		applyclassicphase(BFA_PHASE_ONE, ach(12547, {	-- Epic 				[Battle For Azeorth]
-			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_2_LAUNCH },
-		})),
-		applyclassicphase(LEGION_PHASE_ONE, ach(10765, {	-- Brokenly Epic 	[Legion]
-			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
-		})),
-		applyclassicphase(WOD_PHASE_ONE, ach(9708, {	-- Savagely Epic 		[Warlords Of Draenor]
-			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
-		})),
-		applyclassicphase(MOP_PHASE_ONE, ach(6349, {	-- Mystically Epic 		[Mists of Pandaria]
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
-		})),
-		applyclassicphase(CATA_PHASE_ONE, ach(5372, {	-- Cataclysmically Epic [Cataclysm]
-			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(556, {	-- Epic 				[Wrath of the Lich King]
-			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
-		})),
-		------ Superior ------
-		ach(40146, {	-- War Within Superior [The War Within]
-			["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0_SEASONSTART },
-		}),
-		ach(18976, {	-- Draconically Superior [Dragonflight]
-			["timeline"] = { ADDED_10_1_5 },
-		}),
-		ach(18365, {	-- Draconically Superior - Replaced with new achievement number 18976 [Dragonflight]
-			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
-		}),
-		ach(14796, {	-- Superior [Shadowlands]
-			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
-		}),
-		applyclassicphase(BFA_PHASE_ONE, ach(12546, {	-- Superior [Battle For Azeorth]
-			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_2_LAUNCH },
-		})),
-		applyclassicphase(LEGION_PHASE_ONE, ach(10764, {	-- Brokenly Superior [Legion]
-			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
-		})),
-		applyclassicphase(WOD_PHASE_ONE, ach(9707, {	-- Savagely Superior [Warlords Of Draenor]
-			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
-		})),
-		applyclassicphase(MOP_PHASE_ONE, ach(6348, {	-- Mystically Superior [Mists of Pandaria]
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
-		})),
-		applyclassicphase(CATA_PHASE_ONE, ach(5373, {	-- Cataclysmically Superior [Cataclysm]
-			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(557, {	-- Superior
-			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
-		})),
-		applyclassicphase(CATA_PHASE_ONE, ach(5180, {	-- Breaking the Sound Barrier
-			["spellID"] = 90265,	-- Master Riding
-			["timeline"] = { ADDED_4_0_1 },
-			["rank"] = 5,
-		})),
-		ach(19489, {	-- Class Connoisseur
-			["timeline"] = { ADDED_11_0_2 },
-			["groups"] = {
-				crit(55223),	-- Druid
-				crit(55224),	-- Hunter
-				crit(64623),	-- Mage
-				crit(64625),	-- Paladin
-				crit(64626),	-- Priest
-				crit(64627),	-- Rogue
-				crit(64628),	-- Shaman
-				crit(64629),	-- Warlock
-				crit(64630),	-- Warrior
-				crit(64631),	-- Death Knight
-				crit(64624),	-- Monk
-				crit(55225),	-- Demon Hunter
-				crit(64622),	-- Evoker
-			},
-		}),
-		ach(7380, {	-- Double Agent
-			["timeline"] = { ADDED_5_0_4 },
-		}),
-		ach(7382, {	-- Dynamic Duo
-			["timeline"] = { ADDED_5_0_4 },
-			["groups"] = {
-				i(212174, {	-- The Warband Map to Everywhere All At Once (TOY!)
-					["timeline"] = { ADDED_11_0_0 },
-				}),
-			},
-		}),
-		-- #if AFTER TBC
-		ach(889, {	-- Fast and Furious
-			["spellID"] = 33391,	-- Journeyman Riding
-			["rank"] = 2,
-		}),
-		-- #endif
-		ach(1176, {	-- Got My Mind On My Money [100g]
-			["timeline"] = { ADDED_3_0_2 },
-			["rank"] = 100,
-		}),
-		ach(1177, {	-- Got My Mind On My Money [1000g]
-			["timeline"] = { ADDED_3_0_2 },
-			["rank"] = 1000,
-		}),
-		ach(1178, {	-- Got My Mind On My Money [5000g]
-			["timeline"] = { ADDED_3_0_2 },
-			["rank"] = 5000,
-		}),
-		ach(1180, {	-- Got My Mind On My Money [10000g]
-			["timeline"] = { ADDED_3_0_2 },
-			["rank"] = 10000,
-		}),
-		ach(1181, {	-- Got My Mind On My Money [25000g]
-			["timeline"] = { ADDED_3_0_2 },
-			["rank"] = 25000,
-		}),
-		ach(5455, {	-- Got My Mind On My Money [50000g]
-			["timeline"] = { ADDED_4_0_3 },
-			["rank"] = 50000,
-		}),
-		ach(5456, {	-- Got My Mind On My Money [100000g]
-			["timeline"] = { ADDED_4_0_3 },
-			["rank"] = 100000,
-		}),
-		ach(6753, {	-- Got My Mind On My Money [200000g]
-			["timeline"] = { ADDED_5_0_4 },
-			["rank"] = 200000,
-		}),
-		ach(891),	-- Giddy Up!
-		applyclassicphase(TBC_PHASE_ONE, ach(890, {	-- Into the Wild Blue Yonder
-			["spellID"] = 34090,	-- Expert Riding
-			["timeline"] = { ADDED_2_0_1 },
-			["rank"] = 3,
-		})),
-		ach(19459, {["timeline"] = { ADDED_11_0_2 }}),	-- Level 80
-		ach(15805, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),	-- Level 70
-		ach(14783, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 60
-		ach(14782, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 50
-		ach(14884, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 45
-
-		applyclassicphase(WRATH_PHASE_ONE, ach(705, {	-- Master of Arms
-			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-		})),
-		ach(7384, {	-- Quintessential Quintet
-			["timeline"] = { ADDED_5_0_4 },
-		}),
-		ach(621, {	-- Represent [TODO]
-			["timeline"] = { ADDED_3_0_2 },
-			["rank"] = 1,
-		}),
-		ach(546),	-- Safe Deposit
-		ach(545, {	-- Shave and a Haircut
-			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { STORMWIND_CITY, ORGRIMMAR, NORTHREND_DALARAN },
-		}),
-		ach(1020, {	-- Ten Tabards [TODO]
-			["timeline"] = { ADDED_3_0_2 },
-			["rank"] = 10,
-		}),
-		ach(7383, {	-- Terrific Trio
-			["timeline"] = { ADDED_5_0_4 },
-		}),
-		applyclassicphase(WRATH_PHASE_ONE, ach(1187, {	-- The Keymaster
-			["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
-		})),
-		ach(5755, {	-- Thirty Tabards
-			["timeline"] = { ADDED_4_1_0 },
-			-- #if BEFORE LEGION
-			["_noautomation"] = true,
-			-- #endif
-			["rank"] = 30,
-		}),
-		ach(1021, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Twenty-Five Tabards
-			-- #if BEFORE LEGION
-			["_noautomation"] = true,
-			-- #endif
-			["rank"] = 25,
-			["groups"] = {
-				i(40643),	-- Tabard of the Achiever
-			},
-		})),
-	}),
 	cl(DEATHKNIGHT, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {
 		i(34652),	-- Archerus Knight's Hood
 		i(34655),	-- Archerus Knight's Pauldrons
@@ -229,56 +40,87 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	cl(DRUID, {
 		n(ARMOR, {
 			i(187778, {	-- Druid's Footwear
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187777, {	-- Druid's Handwraps
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187776, {	-- Druid's Leggings
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187775, {	-- Druid's Tunic
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187774, {	-- Druid's Waistband
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
+			i(257589, {	-- Entwined Haranir Loincloth
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257554, {	-- Entwined Haranir Skirt
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257550, {	-- Entwined Haranir Soles
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257532, {	-- Entwined Haranir Thorns
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257593, {	-- Entwined Haranir Vines
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257524, {	-- Entwined Haranir Wrappings
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 			i(49565, {	-- Gilnean Novice's Gloves
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49564, {	-- Gilnean Novice's Boots
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49563, {	-- Gilnean Novice's Tunic
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49566, {	-- Gilnean Novice's Pants
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(6124, {	-- Novice's Pants
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6123, {	-- Novice's Robe
-				--["races"] = { NIGHTELF },
+				-- ["races"] = { NIGHTELF },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6139, {	-- Novice's Robe
-				--["races"] = { TAUREN, TROLL },
+				-- ["races"] = { TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 		}),
 		n(WEAPONS, {
 			i(35),	-- Bent Staff
+			i(266262, {	-- Dawnroot Haranir Channeler
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270433),	-- Dawnroot Haranir Quarterstaff
+			})),
 			i(3661),	-- Handcrafted Staff
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
@@ -308,138 +150,165 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	})),
 	cl(HUNTER, {
 		n(ARMOR, {
+			i(257590, {	-- Coarse Haranir Loincloth
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257555, {	-- Coarse Haranir Skirt
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257551, {	-- Coarse Haranir Soles
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257533, {	-- Coarse Haranir Thorns
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257594, {	-- Coarse Haranir Vines
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257525, {	-- Coarse Haranir Wrappings
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 			i(232279, {	-- Creche-Scout's Bracers
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(232284, {	-- Creche-Scout's Chausses
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(232285, {	-- Creche-Scout's Gauntlets
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(232286, {	-- Creche-Scout's Greaves
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(232287, {	-- Creche-Scout's Vest
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(49569, {	-- Gilnean Trapper's Boots
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49571, {	-- Gilnean Trapper's Gloves
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49568, {	-- Gilnean Trapper's Pants
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49570, {	-- Gilnean Trapper's Tunic
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49504, {	-- Goblin Trapper's Boots
-				--["races"] = { GOBLIN },
+				-- ["races"] = { GOBLIN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49503, {	-- Goblin Trapper's Pants
-				--["races"] = { GOBLIN },
+				-- ["races"] = { GOBLIN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49502, {	-- Goblin Trapper's Shirt
-				--["races"] = { GOBLIN },
+				-- ["races"] = { GOBLIN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(187693, {	-- Hunter's Belt
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187691, {	-- Hunter's Boots
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187694, {	-- Hunter's Bracers
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187695, {	-- Hunter's Gloves
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187690, {	-- Hunter's Pants
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187692, {	-- Hunter's Vest
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(129, {	-- Rugged Trapper's Boots
-				--["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(147, {	-- Rugged Trapper's Pants
-				--["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(58232, {	-- Rugged Trapper's Vest
-				--["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
 			i(23348, {	-- Scout's Boots
-				--["races"] = { DRAENEI },
+				-- ["races"] = { DRAENEI },
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_1_5 },
 			}),
 			i(23344, {	-- Scout's Pants
-				--["races"] = { DRAENEI },
+				-- ["races"] = { DRAENEI },
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_1_5 },
 			}),
 			i(58240, {	-- Scout's Vest
-				--["races"] = { DRAENEI },
+				-- ["races"] = { DRAENEI },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
 			i(6126, {	-- Trapper's Boots [Orc]
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(6137, {	-- Thug Pants
-				--["races"] = { ORC, TAUREN, TROLL },
+				-- ["races"] = { ORC, TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6127, {	-- Trapper's Boots [Orc]
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(6138, {	-- Trapper's Boots
-				--["races"] = { ORC, TAUREN, TROLL },
+				-- ["races"] = { ORC, TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(58247, {	-- Trapper's Vest
-				--["races"] = { ORC, TAUREN, TROLL },
+				-- ["races"] = { ORC, TAUREN, TROLL },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
 			i(20900, {	-- Warder's Boots
-				--["races"] = { BLOODELF },
+				-- ["races"] = { BLOODELF },
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_1_5 },
 			}),
 			i(20899, {	-- Warder's Pants
-				--["races"] = { BLOODELF },
+				-- ["races"] = { BLOODELF },
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_1_5 },
 			}),
 			i(58235, {	-- Warder's Vest
-				--["races"] = { BLOODELF },
+				-- ["races"] = { BLOODELF },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
 		}),
 		n(WEAPONS, {
 			i(232277, {	-- Creche-Scout's Rifle
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270439),	-- Wildgrove Haranir Spear
+			})),
 			i(2508),	-- Old Blunderbuss
 			i(20982, {	-- Sharp Dagger
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
@@ -454,6 +323,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(23347, {	-- Weathered Crossbow
 				["description"] = "New Human, Draenei, and Undead Hunters start with this weapon.",
 				["timeline"] = { ADDED_2_0_1 }
+			}),
+			i(266263, {	-- Wildgrove Haranir Longbow
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			i(2504, {	-- Worn Shortbow
 				["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
@@ -483,53 +356,88 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 	}),
 	cl(MONK, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
-		i(157690),	-- Ascetic's Vest
-		i(157697),	-- Ascetic's Cuffs
-		i(157692),	-- Ascetic's Handguards
-		i(157696),	-- Ascetic's Cord
-		i(157694),	-- Ascetic's Legguards
-		i(157691),	-- Ascetic's Footpads
-		-- #if AFTER 11.0.0
-		i(204268, {	-- Gilnean Trainee's Cord
-			--["races"] = { WORGEN },
-			["timeline"] = { ADDED_10_0_7 },
+		n(ARMOR, {
+			i(157690),	-- Ascetic's Vest
+			i(157697),	-- Ascetic's Cuffs
+			i(157692),	-- Ascetic's Handguards
+			i(157696),	-- Ascetic's Cord
+			i(157694),	-- Ascetic's Legguards
+			i(157691),	-- Ascetic's Footpads
+			i(257589, {	-- Entwined Haranir Loincloth
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257554, {	-- Entwined Haranir Skirt
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257550, {	-- Entwined Haranir Soles
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257532, {	-- Entwined Haranir Thorns
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257593, {	-- Entwined Haranir Vines
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257524, {	-- Entwined Haranir Wrappings
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			-- #if AFTER 11.0.0
+			i(204268, {	-- Gilnean Trainee's Cord
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204267, {	-- Gilnean Trainee's Leggings
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204266, {	-- Gilnean Trainee's Vest
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204269, {	-- Gilnean Trainee's Wristwraps
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204259, {	-- Goblin Trainee's Cord
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204260, {	-- Goblin Trainee's Leggings
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204261, {	-- Goblin Trainee's Vest
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204258, {	-- Goblin Trainee's Wristwraps
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			-- #endif
 		}),
-		i(204267, {	-- Gilnean Trainee's Leggings
-			--["races"] = { WORGEN },
-			["timeline"] = { ADDED_10_0_7 },
-		}),
-		i(204266, {	-- Gilnean Trainee's Vest
-			--["races"] = { WORGEN },
-			["timeline"] = { ADDED_10_0_7 },
-		}),
-		i(204269, {	-- Gilnean Trainee's Wristwraps
-			--["races"] = { WORGEN },
-			["timeline"] = { ADDED_10_0_7 },
-		}),
-		i(204259, {	-- Goblin Trainee's Cord
-			--["races"] = { GOBLIN },
-			["timeline"] = { ADDED_10_0_7 },
-		}),
-		i(204260, {	-- Goblin Trainee's Leggings
-			--["races"] = { GOBLIN },
-			["timeline"] = { ADDED_10_0_7 },
-		}),
-		i(204261, {	-- Goblin Trainee's Vest
-			--["races"] = { GOBLIN },
-			["timeline"] = { ADDED_10_0_7 },
-		}),
-		i(204258, {	-- Goblin Trainee's Wristwraps
-			--["races"] = { GOBLIN },
-			["timeline"] = { ADDED_10_0_7 },
-		}),
-		-- #endif
-		i(3661, {	-- Handcrafted Staff
-			--["races"] = { WORGEN, GOBLIN },
-			["timeline"] = { ADDED_10_0_7 },
-		}),
-		i(157625),	-- Mash Tun Mixer
-		i(157627, {	-- Sword of Searing Winds
-			["timeline"] = { REMOVED_9_0_1 },	-- this appears to have been replaced with the staff in SL prepatch
+		n(WEAPONS, {
+			i(3661, {	-- Handcrafted Staff
+				--["races"] = { WORGEN, GOBLIN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270430),	-- Windpetal Haranir Crook
+			})),
+			i(157625),	-- Mash Tun Mixer
+			i(157627, {	-- Sword of Searing Winds
+				["timeline"] = { REMOVED_9_0_1 },	-- this appears to have been replaced with the staff in SL prepatch
+			}),
+			i(266265, {	-- Windpetal Haranir Baton
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 		}),
 	})),
 	cl(MAGE, {
@@ -706,6 +614,30 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 				["timeline"] = { ADDED_5_0_4 }
 			}),
+			i(257562, {	-- Woven Haranir Loincloth
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257553, {	-- Woven Haranir Skirt
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257549, {	-- Woven Haranir Soles
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257531, {	-- Woven Haranir Thorns
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257592, {	-- Woven Haranir Vines
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257523, {	-- Woven Haranir Wrappings
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 		}),
 		n(WEAPONS, {
 			i(20978, {	-- Apprentice's Staff
@@ -717,6 +649,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(3661),	-- Handcrafted Staff
+			i(266264, {	-- Sunpetal Haranir Spire
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157686),	-- Spellsculptor's Robe
@@ -1071,6 +1007,30 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 				["timeline"] = { ADDED_5_0_4 }
 			}),
+			i(257562, {	-- Woven Haranir Loincloth
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257553, {	-- Woven Haranir Skirt
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257549, {	-- Woven Haranir Soles
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257531, {	-- Woven Haranir Thorns
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257592, {	-- Woven Haranir Vines
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257523, {	-- Woven Haranir Wrappings
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 		}),
 		n(WEAPONS, {
 			i(20978, {	-- Apprentice's Staff
@@ -1082,6 +1042,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(3661),	-- Handcrafted Staff
+			i(266266, {	-- Moonpetal Haranir Staff
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 			i(20981, {	-- Neophyte's Mace
 				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 }
 			}),
@@ -1119,6 +1083,30 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(232327, {	-- Creche-Talon's Kickers
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
+			}),
+			i(257589, {	-- Entwined Haranir Loincloth
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257554, {	-- Entwined Haranir Skirt
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257550, {	-- Entwined Haranir Soles
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257532, {	-- Entwined Haranir Thorns
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257593, {	-- Entwined Haranir Vines
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257524, {	-- Entwined Haranir Wrappings
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			i(48, {	-- Footpad's Pants
 				--["races"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD },
@@ -1249,6 +1237,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270441),	-- Thornpierce Haranir Chopper
+			})),
 			i(20977, {	-- Recruit's Shortsword
 				["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
@@ -1258,6 +1249,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(50057, {	-- Sharp Dirk
 				["description"] = "New Blood Elves start with this weapon.",
 				["timeline"] = { ADDED_3_3_0 }
+			}),
+			i(266267, {	-- Thornpierce Haranir Fang
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			i(2092),	-- Worn Dagger
 			i(50055, {	-- Worn Dirk
@@ -1276,6 +1271,30 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 	cl(SHAMAN, {
 		n(ARMOR, {
+			i(257590, {	-- Coarse Haranir Loincloth
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257555, {	-- Coarse Haranir Skirt
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257551, {	-- Coarse Haranir Soles
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257533, {	-- Coarse Haranir Thorns
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257594, {	-- Coarse Haranir Vines
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257525, {	-- Coarse Haranir Wrappings
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 			i(52540, {	-- Primal Boots
 				--["races"] = { DWARF},
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 }
@@ -1348,6 +1367,17 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 		n(WEAPONS, {
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270442),	-- Rootbound Haranir Chopper
+			})),
+			i(266269, {	-- Rootbound Haranir Aegis
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(270440, {	-- Rootbound Haranir Handaxe
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 			i(36),		-- Worn Mace
 			i(2362),	-- Worn Wooden Shield
 		}),
@@ -1417,10 +1447,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				}),
 				q(76430, {	-- Beingning Impositions (H)
 					["provider"] = { "n", 207051 },	-- Assistant Phineas
+					["coord"] = { 42.5, 51.8, ORGRIMMAR },
 					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					-- ["coord"] = { X, Y, ORGRIMMAR },
 				}),
 				q(76410, {	-- A Dark Summons (A)
 					["provider"] = { "i", 208226 },	-- Mysterious Letter (QI!)
@@ -1614,6 +1644,30 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { HUMAN, DWARF, GNOME, ORC, UNDEAD, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
+			i(257562, {	-- Woven Haranir Loincloth
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257553, {	-- Woven Haranir Skirt
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257549, {	-- Woven Haranir Soles
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257531, {	-- Woven Haranir Thorns
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257592, {	-- Woven Haranir Vines
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257523, {	-- Woven Haranir Wrappings
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 		}),
 		n(WEAPONS, {
 			i(20978, {	-- Apprentice's Staff
@@ -1623,6 +1677,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(232038, {	-- Creche-Binder's Rod
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
+			}),
+			i(266270, {	-- Witherbloom Haranir Staff
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
@@ -1703,6 +1761,30 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { GOBLIN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
+			i(257591, {	-- Hardened Haranir Loincloth
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257556, {	-- Hardened Haranir Skirt
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257552, {	-- Hardened Haranir Soles
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257546, {	-- Hardened Haranir Thorns
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257595, {	-- Hardened Haranir Vines
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
+			i(257526, {	-- Hardened Haranir Wrappings
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			}),
 			i(40, {	-- Recruit's Boots
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },
 				["timeline"] = { REMOVED_9_1_5 },
@@ -1780,6 +1862,14 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(232264, {	-- Creche-Guard's Greataxe
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
+			}),
+			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
+				i(270443),	-- Wildbloom Haranir Bastion
+				i(270444),	-- Wildbloom Haranir Carver
+			})),
+			i(266271, {	-- Wildbloom Haranir Warblade
+				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			i(12282, {	-- Worn Battleaxe
 				["timeline"] = { REMOVED_9_0_1 },	-- TODO: I am not sure when this got removed.
@@ -2009,7 +2099,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	-- #endif
 	n(QUESTS, bubbleDownSelf({
 		["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
-		["classes"] = { HUNTER, MAGE, PRIEST, ROGUE, WARLOCK, WARRIOR },
 		["timeline"] = { ADDED_11_0_5 },
 	}, {
 		q(84423, {	-- Shaking the Dust Off

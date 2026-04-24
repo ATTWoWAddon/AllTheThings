@@ -1,19 +1,20 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 TWILIGHT_ASSIST = createHeader({
 	readable = "Twilight Assist",
 	icon = 236469,
 	text = {
 		en = "Twilight Assist",
+		de = "Zwielicht-Assistent",
 		es = "Ayuda Crepuscular",
 		mx = "Ayuda Crepuscular",
-		de = "Zwielicht-Assistent",
 		fr = "Aide Crépusculaire",
 		it = "Assist Crepuscolare",
+		ko = "황혼의 지원",
 		pt = "Assistente do Crepúsculo",
 		ru = "Сумеречные помощники",
-		ko = "황혼의 지원",
 		cn = "暮光帮凶",
 		tw = "暮光協助",
 	},
@@ -26,14 +27,14 @@ TWILIGHT_DUO = createHeader({
 	icon = 236473,
 	text = {
 		en = "Twilight Duo",
+		de = "Zwielicht-Duo",
 		es = "Dúo Crepuscular",
 		mx = "Dúo Crepuscular",
-		de = "Zwielicht-Duo",
 		fr = "Duo Crépusculaire",
 		it = "Doppietta Crepuscolare",
+		ko = "황혼의 2인조",
 		pt = "Dupla do Crepúsculo",
 		ru = "Сумеречный дуэт",
-		ko = "황혼의 2인조",
 		cn = "暮光二重奏",
 		tw = "暮光雙人組",
 	},
@@ -46,14 +47,14 @@ TWILIGHT_ZONE = createHeader({
 	icon = 236471,
 	text = {
 		en = "Twilight Zone",
+		de = "Zwielichtzone",
 		es = "Dimensión Desconocida",
 		mx = "Dimensión Desconocida",
-		de = "Zwielichtzone",
 		fr = "Chroniques des Crépusculaires",
 		it = "Zona del Crepuscolo",
+		ko = "황혼 지대",
 		pt = "Além da Imaginação",
 		ru = "Зона сумерек",
-		ko = "황혼 지대",
 		cn = "暮光领域",
 		tw = "暮光地帶",
 	},
@@ -61,6 +62,7 @@ TWILIGHT_ZONE = createHeader({
 		en = "Engage Sartharion with all 3 drakes alive and then defeat Sartharion.",
 	},
 });
+
 -- 10 Man Exclusive Content
 local SARTH_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 	n(ACHIEVEMENTS, {

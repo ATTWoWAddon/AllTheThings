@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_ORDER_OF_THE_CLOUD_SERPENT, {
 		["description"] = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
@@ -33,7 +34,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
-					--["requireSkill"] = COOKING,	-- CRIEVE NOTE: The Fish Cakes are BOE, doesn't explicitly require Cooking.
+					-- ["requireSkill"] = COOKING,	-- CRIEVE NOTE: The Fish Cakes are BOE, doesn't explicitly require Cooking.
 					["groups"] = {
 						objective(1, {	-- 0/5 Fish Cake
 							["provider"] = { "i", 74641 },	-- Fish Cake
@@ -129,7 +130,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						objective(1, {	-- 0/3 Hatchling fed
 							["provider"] = { "i", 79027 },	-- Saltback Meat (QI!)
 							["coord"] = { 66.8, 27.6, THE_JADE_FOREST },
-							["cost"] = {{ "i", 79028, 5 }},	-- Saltback Meat Scrap (QI!)
+							["cost"] = { { "i", 79028, 5 } },	-- 5x Saltback Meat Scrap (QI!)
 							["cr"] = 58218,	-- Saltback Turtle
 						}),
 						i(79028, {	-- Saltback Meat Scrap (QI!)
@@ -152,13 +153,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30148, {	-- Just a Flesh Wound
+					["description"] = "Requires Windwool- or Heavy Windwool Bandages. Any other bandages will not provide progression regardless of how well they heal.",
 					["sourceQuest"] = 30142,	-- It's A...
 					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
-					-- #if AFTER BFA
-					["requireSkill"] = TAILORING,
-					-- #else
+					-- #if BEFORE BFA
 					["requireSkill"] = FIRST_AID,
 					-- #endif
 					["groups"] = {
@@ -179,15 +179,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- Northwestern Sha Disturbance measured
 							["provider"] = { "i", 88966 },	-- Sha Attunement Device (QI!)
-							["coord"] = { 62, 24, THE_JADE_FOREST_THE_WIDOWS_WAIL },
+							["coord"] = { 62.0, 24.0, THE_JADE_FOREST_THE_WIDOWS_WAIL },
 						}),
 						objective(2, {	-- Northeastern Sha Disturbance measured
 							["provider"] = { "i", 88966 },	-- Sha Attunement Device (QI!)
-							["coord"] = { 35, 32, THE_JADE_FOREST_THE_WIDOWS_WAIL },
+							["coord"] = { 35.0, 32.0, THE_JADE_FOREST_THE_WIDOWS_WAIL },
 						}),
 						objective(3, {	-- Southern Sha Disturbance measured
 							["provider"] = { "i", 88966 },	-- Sha Attunement Device (QI!)
-							["coord"] = { 61, 72, THE_JADE_FOREST_THE_WIDOWS_WAIL },
+							["coord"] = { 61.0, 72.0, THE_JADE_FOREST_THE_WIDOWS_WAIL },
 						}),
 					},
 				}),
@@ -486,11 +486,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								{ "o", 214867 },	-- Stolen Boots
 								{ "o", 214868 },	-- Stolen Boots
 							},
-							["coord"] = { 63, 26.4, THE_JADE_FOREST },
+							["coord"] = { 63.0, 26.4, THE_JADE_FOREST },
 						}),
 					},
 				}),
 				q(30152, {	-- The Sky Race
+					["description"] = "This quest is on a rotation thus only occasionally available. There are no other quests in it's place from the quest giver.\nIs also available for players who are Exalted with the faction given prerequisite quests are completed.",
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
 					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
@@ -503,9 +504,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["provider"] = { "n", 58530 },	-- Finish Line
 						}),
 						i(90537, {	-- Winner's Reward
+							-- #if AFTER LEGION
+							["description"] = "Contains a useless grey item based on how well you place in the race. Sell to vendor before it's duration runs out.",
+							-- #else
 							["description"] = "Contains a reward of Valor Points based on how well you place in the race.",
+							-- #endif
+							["groups"] = {
+								i(90543),	-- Fifth Place Valorous Commendation
+								i(90538),	-- First Place Valorous Commendation
+								i(90541),	-- Fourth Place Valorous Commendation
+								i(90539),	-- Second Place Valorous Commendation
+								i(90544),	-- Sixth Place Valorous Commendation
+								i(90540),	-- Third Place Valorous Commendation
+							},
 						}),
-						ach(7290),	-- How To Strain Your Dragon
+						ach(7290, {	-- How To Strain Your Dragon
+							["description"] = "You can do as many attempts as you need, simply dismount the serpent or abandon the quest.\n\nYou can easily get the first place by doing the run on your own fast flying mount. Simply be mounted and activate autorun while interacting with the quest giver.",
+						}),
 						ach(7291),	-- In a Trail of Smoke
 					},
 				}),
@@ -691,6 +706,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30145, {	-- Flight Training: Full Speed Ahead
+					["description"] = "This is a terribly designed escort quest wrapped as a tutorial, where the tutorial part only will be a distraction for unfamiliar players. Your main objective is to keep up with the Instructor, which means cutting corners and going through cloud rings for speed boosts. Read through the monologue in the chat afterwards for the information dump.",
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
 					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
@@ -731,13 +747,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 					["maxReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
-					["cost"] = {{ "i", 89155, 1 }},	-- Onyx Egg
+					["cost"] = { { "i", 89155, 1 } },	-- 1x Onyx Egg
 					["repeatable"] = true,
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestClassicReputationWithCost(500),
 				}),
 				q(80311, {	-- Order of the Cloud Serpent
 					["qg"] = 63900,	-- Toortle Wider
-					["coord"] = { 49, 46, THE_JADE_FOREST },
+					["coord"] = { 49.0, 46.0, THE_JADE_FOREST },
 					["timeline"] = { ADDED_MOP_REMIX },
 					["isBreadcrumb"] = true,
 				}),
@@ -792,9 +808,9 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ "n", 58225 },	-- Instructor Tong
 					},
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
-				--	picked the blue and got this one, but some notes indicate all colors now grant this quest.
-				--	i picked "wait, i changed my mind about my egg" and switched to green/yellow, and they gave 30140 and 30141, respectively. swapping back to blue switched the quest back to 30139.
-				--	completing one version of the quest completes them all, so altQuests is unnecessary here.
+					-- picked the blue and got this one, but some notes indicate all colors now grant this quest.
+					-- i picked "wait, i changed my mind about my egg" and switched to green/yellow, and they gave 30140 and 30141, respectively. swapping back to blue switched the quest back to 30139.
+					-- completing one version of the quest completes them all, so altQuests is unnecessary here.
 				}),
 				q(30140, {	-- The Rider's Journey (green egg)
 					["sourceQuest"] = 30138,	-- Choosing the One
@@ -894,9 +910,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}, {	-- Honored
 							i(83845),	-- Design: Jade Panther (RECIPE!)
 							i(83830),	-- Design: Sunstone Panther (RECIPE!)
+							i(247732, { ["timeline"] = { ADDED_11_2_7 } }),	-- Lucky Hanging Lantern (DECOR!)
 						}, {	-- Revered
 							i(89222, {	-- Cloud Ring (TOY!)
 								["cost"] = 10000000,	-- 1,000g
+							}),
+							i(247730, {	-- Red Crane Kite (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = 8000000,	-- 800g
 							}),
 							i(83931),	-- Design: Ruby Panther (RECIPE!)
 							i(83932),	-- Design: Sapphire Panther (RECIPE!)

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ForEverlook = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -10,6 +11,7 @@ ExportDB.OnTooltipDB.ForEverlook = [[~function(t, tooltipInfo)
 		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
 	end
 end]];
+
 -- #if BEFORE CATA
 -- Crieve NOTE: This is done by completing the 'They Grow Up So Fast' quest for Cata+.
 local OnTooltipForWintersaberTrainers = [[function(t, tooltipInfo)
@@ -37,6 +39,7 @@ local OnTooltipForWintersaberTrainers = [[function(t, tooltipInfo)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(WINTERSPRING, {
 		["lore"] = "Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",
@@ -370,7 +373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6605, {	-- A Strange One
 					["qg"] = 11755,	-- Harlo Wigglesworth
-					["coord"] = { 61, 38.4, WINTERSPRING },
+					["coord"] = { 61.0, 38.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -570,29 +573,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 4804, 3 }},	-- Chillwind E'ko
+					["cost"] = { { "i", 4804, 3 } },	-- Chillwind E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(12457, {	-- Juju Chill
 							["timeline"] = { REMOVED_4_0_3 },
-						}),
-					},
-				}),
-				q(4809, {	-- Chillwind Horns
-					["sourceQuest"] = 4808,	-- Felnok Steelspring
-					["qg"] = 10468,	-- Felnok Steelspring
-					["coord"] = { 61.6, 38.6, WINTERSPRING },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 50,
-					["groups"] = {
-						objective(1, {	-- 0/8 Uncracked Chillwind Horn
-							["provider"] = { "i", 12444 },	-- Uncracked Chillwind Horn
-							["crs"] = {
-								7447,	-- Fledgling Chillwind
-								7448,	-- Chillwind Chimaera
-								7449,	-- Chillwind Ravager
-							},
 						}),
 					},
 				}),
@@ -780,7 +766,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6604, {	-- Enraged Wildkin (1/4)
 					["qg"] = 11755,	-- Harlo Wigglesworth
-					["coord"] = { 61, 38.4, WINTERSPRING },
+					["coord"] = { 61.0, 38.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -789,7 +775,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4861, {	-- Enraged Wildkin (2/4)
 					["sourceQuest"] = 6604,	-- Enraged Wildkin (1/4)
 					["qg"] = 10301,	-- Jaron Stoneshaper
-					["coord"] = { 52, 30.4, WINTERSPRING },
+					["coord"] = { 52.0, 30.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -797,7 +783,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4863, {	-- Enraged Wildkin (3/4)
 					["sourceQuest"] = 4861,	-- Enraged Wildkin (2/4)
 					["provider"] = { "o", 175587 },	-- Damaged Crate
-					["coord"] = { 59, 59.7, WINTERSPRING },
+					["coord"] = { 59.0, 59.7, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -879,7 +865,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12436, 3 }},	-- Frostmaul E'ko
+					["cost"] = { { "i", 12436, 3 } },	-- Frostmaul E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -893,7 +879,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12430, 3 }},	-- Frostsaber E'ko
+					["cost"] = { { "i", 12430, 3 } },	-- Frostsaber E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -940,7 +926,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4901, {	-- Guardians of the Altar
 					["sourceQuest"] = 979,	-- Find Ranshalla
 					["qg"] = 10300,	-- Ranshalla
-					["coord"] = { 63, 59.4, WINTERSPRING },
+					["coord"] = { 63.0, 59.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
@@ -951,11 +937,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["races"] = HORDE_ONLY,
-					["crs"] = {
-						7454,	-- Berserk Owlbeast
-						7452,	-- Crazed Owlbeast
-						7453,	-- Moontouched Owlbeast
-					},
 					["lvl"] = 52,
 				}),
 				q(28609, {	-- Hammer Time
@@ -1056,7 +1037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12435, 3 }},	-- Ice Thistle E'ko
+					["cost"] = { { "i", 12435, 3 } },	-- Ice Thistle E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1381,7 +1362,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12432, 3 }},	-- Shardtooth E'ko
+					["cost"] = { { "i", 12432, 3 } },	-- Shardtooth E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1432,7 +1413,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 177684 },	-- Stone of Shy-Rotam
 							},
 							["coord"] = { 49.8, 9.8, WINTERSPRING },
-							["cost"] = {{ "i", 12733, 1 }},	-- Sacred Frostsaber Meat
+							["cost"] = { { "i", 12733, 1 } },	-- Sacred Frostsaber Meat
 						}),
 						-- #if BEFORE 4.0.3
 						i(12733, {	-- Sacred Frostsaber Meat
@@ -1454,8 +1435,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5601, {	-- Sister Pamela
+					["altQuests"] = { 5142 }, -- Little Pamela
 					["qg"] = 11629,	-- Jessica Redpath
-					["coord"] = { 61.2, 39, WINTERSPRING },
+					["coord"] = { 61.2, 39.0, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
@@ -1474,7 +1456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 					["qg"] = 11192,	-- Kilram
-					["coord"] = { 61.2, 37, WINTERSPRING },
+					["coord"] = { 61.2, 37.0, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_SPIRE },
 					-- #if BEFORE TBC
@@ -1667,7 +1649,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 11079 },	-- Wynd Nightchaser
 						{ "i", 13347 },	-- Crystal of Zin-Malor (Provided)
 					},
-					["coord"] = { 52, 30.2, WINTERSPRING },
+					["coord"] = { 52.0, 30.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -1779,7 +1761,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5249,	-- To Winterspring!
 					},
 					["qg"] = 11079,	-- Wynd Nightchaser
-					["coord"] = { 52, 30.2, WINTERSPRING },
+					["coord"] = { 52.0, 30.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -1896,7 +1878,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5245, {	-- Troubled Spirits of Kel'Theril
 					["sourceQuest"] = 5244,	-- The Ruins of Kel'Theril
 					["qg"] = 10301,	-- Jaron Stoneshaper
-					["coord"] = { 52, 30.4, WINTERSPRING },
+					["coord"] = { 52.0, 30.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -1908,7 +1890,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175888 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 55, 42, WINTERSPRING },
+							["coord"] = { 55.0, 42.0, WINTERSPRING },
 						}),
 						objective(2, {	-- 0/1 Second Relic Fragment
 							["providers"] = {
@@ -1916,7 +1898,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175891 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 50, 41, WINTERSPRING },
+							["coord"] = { 50.0, 41.0, WINTERSPRING },
 						}),
 						objective(3, {	-- 0/1 Third Relic Fragment
 							["providers"] = {
@@ -1924,7 +1906,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175892 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 53, 43, WINTERSPRING },
+							["coord"] = { 53.0, 43.0, WINTERSPRING },
 						}),
 						objective(4, {	-- 0/1 Fourth Relic Fragment
 							["providers"] = {
@@ -1932,7 +1914,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175893 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 52, 41, WINTERSPRING },
+							["coord"] = { 52.0, 41.0, WINTERSPRING },
 						}),
 					},
 				}),
@@ -2026,7 +2008,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12433, 3 }},	-- Wildkin E'ko
+					["cost"] = { { "i", 12433, 3 } },	-- Wildkin E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2040,7 +2022,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12431, 3 }},	-- Winterfall E'ko
+					["cost"] = { { "i", 12431, 3 } },	-- Winterfall E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2052,15 +2034,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5083, {	-- Winterfall Firewater
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
 					["timeline"] = { REMOVED_4_0_3 },
-					["crs"] = {
-						10738,	-- High Chief Winterfall
-						7440,	-- Winterfall Den Watcher
-						7442,	-- Winterfall Pathfinder
-						10916,	-- Winterfall Runner
-						7439,	-- Winterfall Shaman
-						7441,	-- Winterfall Totemic
-						7438,	-- Winterfall Ursa
-					},
 					["lvl"] = 52,
 				}),
 				q(5201, {	-- Winterfall Intrusion
@@ -2351,29 +2324,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.6, 24.0, WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
-				n(14457, {	-- Princess Tempestria
-					-- TODO: Move this to an Elemental Invasion World Event file.
-					["description"] = "This is only available during an Elemental Invasion.",
-					["coord"] = { 54.6, 42.6, WINTERSPRING },
-					["timeline"] = { REMOVED_4_0_3 },
-					["groups"] = {
-						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						-- #if BEFORE 4.0.3
-						i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
-						-- #endif
-						i(18679, {	-- Frigid Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18678, {	-- Tempestria's Frozen Necklace
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						-- #if BEFORE 4.0.3
-						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
-						-- #endif
-					},
-				}),
 				n(50788, {	-- Quetzl
 					["coord"] = { 67.0, 83.6, WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
@@ -2410,6 +2360,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(51028, {	-- The Deep Tunneler
 					["coord"] = { 50.6, 72.2, WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
+				}),
+			}),
+			n(SPECIAL, {
+				hqt(53653, {	-- Speak to Wan'be at Frostsaber Rock in Winterspring
+					["name"] = "Speak to Wan'be at Frostsaber Rock in Winterspring",
+					["providers"] = {
+						{ "n", 143129 },	-- Wan'be <The Explorer>
+						{ "i", 163213 },	-- Ghostly Explorer's Skull
+					},
+					["coord"] = { 46.4, 18.1, WINTERSPRING },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_8_0_1 },
 				}),
 			}),
 			-- #if BEFORE 3.1.0
@@ -2487,6 +2449,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
 				}),
+				n(2303, {	-- Lyranne Feathersong <Food & Drink>
+					["coord"] = { 52.0, 29.2, WINTERSPRING },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						i(231780, {	-- Tome of Conjure Water VIII
+							["timeline"] = { ADDED_1_15_4 },
+						}),
+						-- #endif
+					},
+				}),
 				n(52830, {	-- Michelle De Rum <Pet Collector>
 					["coord"] = { 59.8, 51.6, WINTERSPRING },
 					["timeline"] = { ADDED_4_1_0 },
@@ -2496,6 +2469,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(228216, {	-- Numi
+					["coord"] = { 61.2, 37.0, WINTERSPRING },
+					["timeline"] = { "added 1.15.3" },
+					["groups"] = {
+						i(227286),	-- Warmed Rumsey Rum with Cream
+					},
+				}),
+				-- #endif
 				n(11189, {	-- Qia <Trade Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 59.6, 49.2, WINTERSPRING },
@@ -2645,6 +2627,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12771, {	-- Empty Firewater Flask
 					["timeline"] = { REMOVED_4_0_3 },
+					["crs"] = {
+						10738,	-- High Chief Winterfall
+						7440,	-- Winterfall Den Watcher
+						7442,	-- Winterfall Pathfinder
+						10916,	-- Winterfall Runner
+						7439,	-- Winterfall Shaman
+						7441,	-- Winterfall Totemic
+						7438,	-- Winterfall Ursa
+					},
+				}),
+				i(12558, {	-- Blue-feathered Necklace
+					["timeline"] = { REMOVED_4_0_3 },
+					["crs"] = {
+						7454,	-- Berserk Owlbeast
+						7452,	-- Crazed Owlbeast
+						7453,	-- Moontouched Owlbeast
+					},
 				}),
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill (RECIPE!)
 					["cr"] = 7524,	-- Anguished Highborne
@@ -2784,7 +2783,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				i(16054, {	-- Schematic: Arcanite Dragonling
-					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- [[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {

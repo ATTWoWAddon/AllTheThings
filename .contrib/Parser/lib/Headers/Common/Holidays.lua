@@ -6,14 +6,14 @@ HOLIDAYS = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Holidays",
-		es = "Festividades",
 		de = "Feiertage",
+		es = "Festividades",
+		mx = "Fiestas",
 		fr = "Évènements saisonniers",
 		it = "Festività",
-		mx = "Fiestas",
+		ko = "축제",
 		pt = "Feriados",
 		ru = "Праздники",
-		ko = "축제",
 		cn = "节日",
 		tw = "節慶",
 		-- #else
@@ -25,6 +25,10 @@ HOLIDAYS = createHeader({
 		de = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
 		es = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
 		mx = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
 		cn = "你可能需要在特定的节日活动中才能完成本节中的事物。",
 		tw = "你可能需要在特定節日的活動中才能完成本節中的事物。",
@@ -45,30 +49,29 @@ DARKMOON_FAIRE_HEADER = createHeader({
 		374,	-- Elwynn Forest
 		375,	-- Thunder Bluff
 	},
+	-- #endif
 	-- #if BEFORE WRATH
 	-- We have a calendar to pull from in Wrath Classic. :)
-	-- #if SEASON_OF_DISCOVERY
 	eventSchedule = {
+		-- #if SEASON_OF_DISCOVERY
 		3,	-- Every two weeks, lasting one week. (6 days?)
-		2023, 12, 18	-- Dec 2023 in Elwynn Forest (active 12/18 at 00:00, end 12/24 at 00:00)
-	},
-	-- #else
-	eventSchedule = {
+		2023, 12, 18,	-- Dec 2023 in Elwynn Forest (active 12/18 at 00:00, end 12/24 at 00:00)
+		-- #else
 		2,	-- Active First Sunday of Every Month until following Saturday at Midnight(DMF)
 		2023, 5	-- May 2022 in Terrokar Forest (TBC) / Elwynn Forest (ERA) (active 05/07 at 00:00, end 05/14 at 00:00)
+		-- #endif
 	},
-	-- #endif
 	-- #endif
 	text = {
 		en = "Darkmoon Faire",
-		es = "Feria de la Luna Negra",
 		de = "Dunkelmond-Jahrmarkt",
+		es = "Feria de la Luna Negra",
+		mx = "Feria de la Luna Negra",
 		fr = "Foire de Sombrelune",
 		it = "Fiera di Lunacupa",
-		mx = "Feria de la Luna Negra",
+		ko = "다크문 유랑단",
 		pt = "Feira de Negraluna",
 		ru = "Ярмарка Новолуния",
-		ko = "다크문 유랑단",
 		cn = "暗月马戏团",
 		tw = "暗月馬戲團",
 	},
@@ -80,8 +83,13 @@ TRIAL_OF_STYLE_HEADER = createHeader({
 	eventID = EVENTS.TRIAL_OF_STYLE,
 	text = {
 		en = "Trial of Style",
+		-- TODO: de = "",
 		es = "Prueba de estilo",
 		mx = "Desafio de estilos",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Наденьте это немедлено",
 		cn = "时尚试炼",
 		tw = "時尚大考驗",

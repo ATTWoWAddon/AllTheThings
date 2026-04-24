@@ -162,6 +162,12 @@ root(ROOTS.Zones, {
 							["timeline"] = { ADDED_5_2_0 },
 						}),
 					}),
+					prof(HERBALISM, {
+						n(65877, {	-- Han Flowerbloom <Herbalism Trainer>
+							["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+							["groups"] = MOP_HERBALISM,
+						}),
+					}),
 					prof(TAILORING, {
 						n(57405, {	-- Silkmaster Tsai <"The Tailor of Pandaria">
 							["coord"] = { 62.6, 59.6, VALLEY_OF_THE_FOUR_WINDS },
@@ -190,7 +196,7 @@ root(ROOTS.Zones, {
 									{ 46.2, 45.4, THE_JADE_FOREST },	-- Chin
 									{ 53.5, 76.4, KRASARANG_WILDS },	-- Cranfur the Noodler
 								},
-							--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
+								-- this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
 								["groups"] = {
 									i(86392),	-- Letter to Sungshin Ironpaw (QI!)
 								},
@@ -408,7 +414,7 @@ root(ROOTS.Zones, {
 					}),
 					q(30046, {	-- Chen's Resolution
 						["sourceQuests"] = {
-						--	TODO: may also require #29910, Rampaging Rodents (not required for 2 criteria prior to this, but i did it prior to Muddy Water when Broken Dreams alone didn't trigger the availability of Chen's Resolution)
+							-- TODO: may also require #29910, Rampaging Rodents (not required for 2 criteria prior to this, but i did it prior to Muddy Water when Broken Dreams alone didn't trigger the availability of Chen's Resolution)
 							29952,	-- Broken Dreams
 							29951,	-- Muddy Water
 						},
@@ -615,9 +621,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30073,	-- The Emperor
 						["qg"] = 56133,	-- Chen Stormstout
 					}),
-					q(29944, {  -- Leaders Among Breeders
+					q(29944, { 	-- Leaders Among Breeders
 						["sourceQuest"] = 29919,	-- Great Minds Drink Alike
-						["qg"] = 56133,	-- Chen Stormsout
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(88375),	-- Turnip Punching Bag (TOY!)
@@ -1015,7 +1021,7 @@ root(ROOTS.Zones, {
 					q(30032, {	-- The Quest for Better Barley
 						["sourceQuests"] = {
 							30029,	-- Wee Little Shenanigans
-							30030,	-- Out of Spite
+							30030,	-- Out of Sprite
 							30031,	-- Taste Test
 						},
 						["qg"] = 57211,	-- Grainlord Kai
@@ -1304,7 +1310,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(TREASURES, {
-					o(213460, { -- A Most Famous Bill of Sale
+					o(213460, {	-- A Most Famous Bill of Sale
 						["coord"] = { 55.0, 47.3, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					o(214340, {	-- Boat-Building Instructions
@@ -1623,7 +1629,7 @@ root(ROOTS.Zones, {
 							n(FEET, {
 								moh(2, i(99858)),	-- Tyrannical Gladiator's Boots of Alacrity
 								moh(2, i(99904)),	-- Tyrannical Gladiator's Boots of Cruelty
-								moh(2, i(99826)),	-- Tyrannical Gladiator's Footguards of Alacrity (Leahter)
+								moh(2, i(99826)),	-- Tyrannical Gladiator's Footguards of Alacrity (Leather)
 								moh(2, i(99912)),	-- Tyrannical Gladiator's Footguards of Alacrity (Mail)
 								moh(2, i(99817)),	-- Tyrannical Gladiator's Footguards of Meditation (Leather)
 								moh(2, i(99913)),	-- Tyrannical Gladiator's Footguards of Meditation (Mail)
@@ -1647,7 +1653,7 @@ root(ROOTS.Zones, {
 						-- Wouter NOTE: Blizzard added these NPCs to the Gate of the Setting Sun because they couldn't figure out how to make phasing work at their original location
 						-- #if ANYCLASSIC
 						["coords"] = {
-							{ 7.3, 65, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 7.3, 65.0, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
@@ -1894,7 +1900,7 @@ root(ROOTS.Zones, {
 							n(FEET, {
 								moh(2, i(103230)),	-- Grievous Gladiator's Boots of Alacrity
 								moh(2, i(103276)),	-- Grievous Gladiator's Boots of Cruelty
-								moh(2, i(103199)),	-- Grievous Gladiator's Footguards of Alacrity (Leahter)
+								moh(2, i(103199)),	-- Grievous Gladiator's Footguards of Alacrity (Leather)
 								moh(2, i(103284)),	-- Grievous Gladiator's Footguards of Alacrity (Mail)
 								moh(2, i(103190)),	-- Grievous Gladiator's Footguards of Meditation (Leather)
 								moh(2, i(103285)),	-- Grievous Gladiator's Footguards of Meditation (Mail)
@@ -1920,7 +1926,7 @@ root(ROOTS.Zones, {
 						-- Wouter NOTE: Blizzard added these NPCs to the Gate of the Setting Sun because they couldn't figure out how to make phasing work at their original location
 						-- #if ANYCLASSIC
 						["coords"] = {
-							{ 7.1, 65, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 7.1, 65.0, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
@@ -1931,6 +1937,11 @@ root(ROOTS.Zones, {
 							{"sub", "pvp_gear_base", EXPANSION.MOP, SEASON_MALEVOLENT, PVP_HONOR },
 							{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 							{"pop"},	-- Discard the Set header and acquire the children.
+						},
+						["groups"] = {
+							-- #if ANYCLASSIC
+							i(254315),	-- Formula: Enchant Weapon - Tyranny
+							-- #endif
 						},
 						-- #endif
 					}),
@@ -2513,7 +2524,7 @@ root(ROOTS.Zones, {
 							n(FEET, {
 								moh(2, i(91597)),	-- Malevolent Gladiator's Boots of Alacrity
 								moh(2, i(91690)),	-- Malevolent Gladiator's Boots of Cruelty
-								moh(2, i(91539)),	-- Malevolent Gladiator's Footguards of Alacrity (Leahter)
+								moh(2, i(91539)),	-- Malevolent Gladiator's Footguards of Alacrity (Leather)
 								moh(2, i(91705)),	-- Malevolent Gladiator's Footguards of Alacrity (Mail)
 								moh(2, i(91522)),	-- Malevolent Gladiator's Footguards of Meditation (Leather)
 								moh(2, i(91707)),	-- Malevolent Gladiator's Footguards of Meditation (Mail)
@@ -2532,33 +2543,36 @@ root(ROOTS.Zones, {
 					n(64395, {	-- Nam Ironpaw <Stockmaster>
 						["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
+							i(74853, {	-- 100 Year Soy Sauce
+								["cost"] = { { "c", 402, 1 } },	-- 1x Ironpaw Token
+							}),
 							i(86468, {	-- Apron
 								["sourceQuest"] = 31820,	-- A Present for Teacher (Nomi)
-								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 							i(86425, {	-- Cooking School Bell
 								["sourceQuest"] = 31521,	-- To Be a Master
-								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 							i(88801, {	-- Flippable Table (TOY!)
-								["cost"] = { { "c", 402, 40 }, },	-- 40x Ironpaw Token
+								["cost"] = { { "c", 402, 40 } },	-- 40x Ironpaw Token
 							}),
 							i(86559, {	-- Frying Pan
-								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 							i(92748, {	-- Portable Refrigerator
-								["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
+								["cost"] = { { "c", 402, 10 } },	-- 10x Ironpaw Token
 							}),
 							i(75017, {	-- Recipe: Great Pandaren Banquet (RECIPE!)
 								["sourceAchievement"] = 7306,	-- Master of Pandaren Cooking
-								["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
+								["cost"] = { { "c", 402, 10 } },	-- 10x Ironpaw Token
 							}),
 							i(75013, {	-- Recipe: Pandaren Banquet (RECIPE!)
 								["sourceAchievement"] = 7306,	-- Master of Pandaren Cooking
-								["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
+								["cost"] = { { "c", 402, 10 } },	-- 10x Ironpaw Token
 							}),
 							i(86558, {	-- Rolling Pin
-								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 						},
 					}),
@@ -2811,7 +2825,7 @@ root(ROOTS.Zones, {
 								-- From Celestials/Vendor
 								moh(2, i(102716)),	-- Prideful Gladiator's Boots of Alacrity
 								moh(2, i(102660)),	-- Prideful Gladiator's Boots of Cruelty
-								moh(2, i(102631)),	-- Prideful Gladiator's Footguards of Alacrity (Leahter)
+								moh(2, i(102631)),	-- Prideful Gladiator's Footguards of Alacrity (Leather)
 								moh(2, i(102664)),	-- Prideful Gladiator's Footguards of Alacrity (Mail)
 								moh(2, i(102760)),	-- Prideful Gladiator's Footguards of Meditation (Leather)
 								moh(2, i(102623)),	-- Prideful Gladiator's Footguards of Meditation (Mail)
@@ -2836,7 +2850,9 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(74842),	-- Mogu Pumpkin
+					i(74842, {	-- Mogu Pumpkin
+						["description"] = "Drops from Virmen.",
+					}),
 				}),
 			},
 		}),

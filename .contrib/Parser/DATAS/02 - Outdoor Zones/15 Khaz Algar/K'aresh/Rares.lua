@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		n(RARES, sharedData({
@@ -76,14 +77,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: The Oasis'.",
 				["coord"] = { 71.5, 27.4, KARESH },
 				["crs"] = { 231232 },	-- Devourer Attack (Vignette)
-				["questID"] = 91309,
+				["questID"] = 91286,
 				["isDaily"] = IGNORED_VALUE,
 				["isWeekly"] = true,
 				["groups"] = {
 					i(232467, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					q(91286, { -- -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Oasis' (84993)
+					q(91309, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Oasis' (84993)
 						["name"] = "Devoured Energy-Pod Devourer Attack: The Oasis",
 						["isWeekly"] = true,
 						["groups"] = {
@@ -92,10 +93,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					i(239475),	-- Reshii Brute's Helmet
 					i(240116),	-- Reshii Brute's Longsword
+					i(240118),	-- Reshii Brute's Spear
 					i(240115),	-- Reshii Brute's Warmace
 					i(240117),	-- Reshii Magi's Wand
 					i(240111),	-- Reshii Skirmisher's Axe
 					i(240114),	-- Reshii Skirmisher's Morningstar
+					i(240119),	-- Reshii Skirmisher's Staff
 				},
 			}),
 			n(245997, {	-- Malek'ta <The Jaws of Oblivion>
@@ -112,14 +115,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: Eco-dome: Primus'.",
 				["coord"] = { 50.6, 54.1, KARESH },
 				["crs"] = { 234967 },	-- Soroth Miasmawrath (Vignette)
-				["questID"] = 91310,
+				["questID"] = 91287,
 				["isDaily"] = IGNORED_VALUE,
 				["isWeekly"] = true,
 				["groups"] = {
 					i(238663, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					q(91287, { -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Eco-dome: Primus' (86447)
+					q(91310, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Eco-dome: Primus' (86447)
 						["name"] = "Devoured Energy-Pod Devourer Attack: Eco-dome Primus",
 						["isWeekly"] = true,
 						["groups"] = {
@@ -129,6 +132,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(240121),	-- Reshii Brute's Barrier
 					i(240116),	-- Reshii Brute's Longsword
 					i(240118),	-- Reshii Brute's Spear
+					i(240115),	-- Reshii Brute's Warmace
 					i(240113),	-- Reshii Magi's Dagger
 					i(240117),	-- Reshii Magi's Wand
 					i(240112),	-- Reshii Scout's Blade
@@ -137,8 +141,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(235422, {	-- Phase-Thief Tezra
-				--["coord"] = { x, y, KARESH },
-				--["questID"] = ,
+				-- ["coord"] = { x, y, KARESH },
+				-- ["questID"] = ,
 			}),
 			n(241920, {	-- Purple Peat
 				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
@@ -166,14 +170,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(235087, {	-- The Harvester
 				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: The Atrium'.",
 				["coord"] = { 49.5, 64.2, KARESH },
-				["questID"] = 91311,
+				["crs"] = { 235085 },	-- Devourer Attack 3 [DNT] (Vignette)
+				["questID"] = 91289,
 				["isDaily"] = IGNORED_VALUE,
 				["isWeekly"] = true,
 				["groups"] = {
 					i(238664, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					q(91289, { -- -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Atrium' (86464)
+					q(91311, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Atrium' (86464)
 						["name"] = "Devoured Energy-Pod Devourer Attack: The Atrium",
 						["isWeekly"] = true,
 						["groups"] = {
@@ -195,14 +200,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(235104, {	-- The Wallbreaker
 				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: Tazavesh'.",
 				["coord"] = { 27.5, 72.3, KARESH_TAZAVESH },
-				["questID"] = 91312,
+				["crs"] = { 235102 },	-- Devourer Attack 4 (Vignette)
+				["questID"] = 91290,
 				["isDaily"] = IGNORED_VALUE,
 				["isWeekly"] = true,
 				["groups"] = {
 					i(238665, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					q(91290, { -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Tazavesh' (86465)
+					q(91312, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Tazavesh' (86465)
 						["name"] = "Devoured Energy-Pod Devourer Attack: Tazavesh",
 						["isWeekly"] = true,
 						["groups"] = {
@@ -238,7 +244,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		n(REWARDS, {
 			i(246159, {	-- Translocated Gorger (MOUNT!)
 				["description"] = "|cff1eff00Devoured Energy-Pods|r can be obtained by killing Rare Elite Bosses of the 'Devourer Attacks'\n1 Energy-Pod can be obtained per Rare, Warband, and Week.",
-				["cost"] = {{ "i", 246240, 20 }},	-- Devoured Energy-Pod
+				["cost"] = { { "i", 246240, 20 } },	-- Devoured Energy-Pod
 			}),
 		}),
 	}),

@@ -1,4 +1,4 @@
-3.4.2.49311
+﻿3.4.2.49311
 458@@@Brown Horse
 459@@@Gray Wolf
 468@@@White Stallion
@@ -353,6 +353,21 @@
 1250045@@@Obsidian Worldbreaker Utility (Final Name TBD)
 3.4.5.63309
 1249659@@@Sha-scarred Drake
+3.80.0.64393
+1250045@@@Ashened Cataclysm
+1272988@@@Inarius' Charger
+3.80.0.64859
+1280400@@@Titan-Reforged Invincible
+3.80.0.65301
+124659@@@Imperial Quilen
+1283471@@@Golden Ashened Cataclysm
+1284042@@@Thunderhoof Celestial
+1284043@@@Stormgilded Celestial
+1284044@@@Scorching Imperial Quilen
+3.80.0.65586
+110051@@@Heart of the Aspects
+1266345@@@Cerulean Phase-Hunter
+1266866@@@Reins of the Starshard Netherdrake
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -396,7 +411,6 @@
 103195@@@Mountain Horse
 103196@@@Swift Mountain Horse
 107844@@@Twilight Harbinger
-110051@@@Heart of the Aspects
 113120@@@Feldrake
 5.5.0.60481
 113199@@@Jade Cloud Serpent
@@ -416,7 +430,6 @@
 123993@@@Golden Cloud Serpent
 124408@@@Thundering Jade Cloud Serpent
 124550@@@Cataclysmic Gladiator's Twilight Drake
-124659@@@Imperial Quilen
 126507@@@Depleted-Kyparium Rocket
 126508@@@Geosynchronous World Spinner
 127154@@@Onyx Cloud Serpent
@@ -531,8 +544,14 @@
 1229670@@@Prophet's Great Crow
 1229672@@@Archmage's Great Crow
 5.5.2.63832
-1266345@@@Cerulean Phase-Hunter
-1266866@@@Reins of the Starshard Netherdrake
+5.5.3.64530
+1280068@@@[PH] Lunar Horse Mount
+5.5.3.65302
+1280068@@@Scorching Courage
+5.5.3.65703
+1257516@@@Lana'thel's Sanguine Cascade
+1285724@@@Stormgilded Celestial
+1285725@@@Thunderhoof Celestial
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -2328,6 +2347,10 @@
 1233925@@@Lana'thel's Crimson Cascade
 11.2.5.63906
 1256677@@@Cobalt Phase-Hunter
+11.2.5.64484
+1255159@@@Mechanical Prototype Panther MK-0
+1255179@@@Steel Prototype Panther MK-0
+1255246@@@Starspark Netherdrake
 11.2.7.63642
 1233516@@@K'arroc Swiftwing
 1244247@@@Thunder-Ridged Elekk
@@ -2345,6 +2368,8 @@
 1264988@@@Snowpaw Glimmerfur Prowler
 1266248@@@Savage Crimson Battle Turtle
 1266579@@@Cloudborn Razorwing
+11.2.7.64978
+1247422@@@Scorching Valor
 12.0.0.63534
 447173@@@Elder Glowmite
 451487@@@Retrained Skyrazor
@@ -2412,3 +2437,83 @@
 1270522@@@Huffy Comfy Flying Quilt
 1270523@@@Stuffy Comfy Flying Quilt
 1270675@@@Vivid Chloroceros
+12.0.0.64124
+1261302@@@Cobalt Dragonhawk
+1261323@@@Cerulean Hawkstrider
+1261334@@@Contained Stormarion Defender
+12.0.0.64228
+1243597@@@Rootstalker Grimlynx
+1253927@@@Vibrant Petalwing
+1261155@@@Augmented Stormray
+1261316@@@Amani Sharptalon
+1261348@@@[DNT] 12.0 Amani Pangolin
+1261349@@@Giganto Manis
+1261351@@@Witherbark Pango
+1261360@@@[DNT] 12.0 Shadowpine Bear
+1261576@@@[DNT] 12.0 Hex Eagle Mount
+1266700@@@Sanguine Harrower
+1276650@@@Anu'shalla, Shadow's Guidance
+12.0.0.64339
+1261391@@@Relinquished Scarlet Charger
+1261584@@@Prowling Shredclaw
+1261585@@@Frenzied Shredclaw
+1265784@@@Lucent Hawkstrider
+12.0.0.64499
+1261338@@@Preyseeker's Nightmare
+1261348@@@Blessed Amani Burrower
+1261360@@@Ancestral War Bear
+1261576@@@Hexed Vilefeather Eagle
+12.0.0.64741
+3363@@@Lost Nether Drake
+1243003@@@Light-forged Mechsuit
+1261332@@@Duskbrute Harrower
+1266703@@@Lab-grown Stormray
+1270522@@@Comfy Bel'ameth Flying Quilt
+1270523@@@Comfy Silvermoon Flying Quilt
+12.0.0.65512
+1268809@@@Fantastical Goblin Waveshredder
+1269181@@@Ghastropod
+1269556@@@Hypo-Speed X6000
+1271549@@@Fel Spirehawk
+12.0.0.65560
+1258573@@@Thunderhoof Celestial
+1258574@@@Stormgilded Celestial
+12.0.0.65699
+1284640@@@Golden Ashened Cataclysm
+12.0.1.64889
+1261298@@@Crimson Dragonhawk
+12.0.1.65337
+1243598@@@Ivory Grimlynx
+1260354@@@Untainted Grove Crawler
+1261296@@@Umbral Dragonhawk
+1270673@@@Vivacious Chloroceros
+12.0.1.65448
+3363@@@Nether-Warped Drake
+12.0.1.66013
+1289395@@@Swift Spectral Dragonhawk
+12.0.1.66263
+1261293@@@Peridot Dragonhawk
+12.0.1.66337
+1251697@@@Frostfall Groveglider
+1251762@@@Cindertuft Groveglider
+1251764@@@Gloombough Groveglider
+1251765@@@Blossombranch Groveglider
+12.0.5.66330
+3363@@@Nether-Swept Drake
+1261362@@@Witherbark Warbear Mother
+1271698@@@Unbound Manawyrm
+1282268@@@Gilnean Iron Charger
+1282274@@@Gilnean Copper Charger
+1282275@@@Pyrewood Rebel's Rouncey
+1282276@@@Gilneas Loyalist's Rouncey
+1282450@@@Blossomback Arboon
+1282453@@@Amberback Arboon
+1282471@@@Magister's Spell Bee
+1282936@@@Void-Touched Hawkstrider
+1283906@@@[PH] Giant Eagle Sunwalker Mount Blue
+1283908@@@Dusk-Painted Sun Roc
+1283910@@@Flame-Painted Sun Roc
+1283911@@@[PH] Giant Eagle Sunwalker Mount White
+1286606@@@Void-Corrupted Hex Eagle
+1287357@@@Void-Touched Snapdragon
+1287359@@@Void-Corruped Lynx

@@ -10,9 +10,7 @@ root(ROOTS.ExpansionFeatures,
 					n(ACHIEVEMENTS, {
 						ach(9454, {	-- Draenic Seed Collector
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = {
-								i(111997),	-- Herb Garden, Level 3
-							},
+							["groups"] = { i(111997) },	-- Herb Garden, Level 3
 						}),
 					}),
 					n(VENDORS, {
@@ -20,7 +18,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(110721, {	-- Crazy Carrot (PET!)
-									["cost"] = { { "i", 116053, 1000 }, },	-- 1,000x Draenic Seeds
+									["cost"] = { { "i", 116053, 1000 } },	-- 1,000x Draenic Seeds
 								}),
 								i(118568, {	-- Garden Hoe
 									["cost"] = {
@@ -53,9 +51,7 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								i(116916, {	-- Gorepetal's Grasp
-									["cost"] = {
-										{ "c", 824, 2000 },	-- 2000x Garrison Resources
-									},
+									["cost"] = { { "c", GARRISON_RESOURCES, 2000 } },
 								}),
 							},
 						}),
@@ -65,7 +61,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(110721, {	-- Crazy Carrot (PET!)
-									["cost"] = { { "i", 116053, 1000 }, },	-- 1,000x Draenic Seeds
+									["cost"] = { { "i", 116053, 1000 } },	-- 1,000x Draenic Seeds
 								}),
 								i(118568, {	-- Garden Hoe
 									["cost"] = {
@@ -98,9 +94,7 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								i(116916, {	-- Gorepetal's Grasp
-									["cost"] = {
-										{ "c", 824, 2000 },	-- 2000x Garrison Resources
-									},
+									["cost"] = { { "c", GARRISON_RESOURCES, 2000 } },
 								}),
 							},
 						}),

@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 if not C_Container then return end
 
@@ -18,13 +18,7 @@ Runner.Reset()
 
 local ContainerCache
 local function ResetContainerCache()
-	ContainerCache = setmetatable({}, {
-		__index = function(t, key)
-			local bagCache = setmetatable({}, app.MetaTable.AutoTable)
-			t[key] = bagCache
-			return bagCache
-		end
-	})
+	ContainerCache = setmetatable({}, app.MetaTable.AutoTableOfTables)
 end
 
 local Handler

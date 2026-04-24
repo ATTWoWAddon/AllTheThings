@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 NOBLEGARDEN_HEADER = createHeader({
 	readable = "Noblegarden",
 	constant = "NOBLEGARDEN_HEADER",
@@ -18,11 +19,20 @@ NOBLEGARDEN_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(159),
 		-- #else
 		en = "Noblegarden",
+		-- TODO: de = "",
 		es = "Jardín noble",
 		mx = "Jardín noble",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "复活节",
+		-- TODO: tw = "",
 		-- #endif
 	},
 });
+
 local function BrightlyColoredEgg(groups)
 	local egg
 	-- #IF ANYCLASSIC
@@ -82,6 +92,7 @@ local function BrightlyColoredEgg(groups)
 	}
 	return egg
 end
+
 local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Appearances
 	i(74282, {	-- Black Spring Circlet
@@ -153,6 +164,10 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["timeline"] = { ADDED_3_1_0 },
 		["cost"] = { { "i", 44791, 10 } },	-- 10x Noblegarden Chocolate
 	}),
+	i(44818, {	-- Noblegarden Egg
+		["timeline"] = { ADDED_3_1_0 },
+		["cost"] = { { "i", 44791, 5 } },	-- 5x Noblegarden Chocolate
+	}),
 	i(45073, {	-- Spring Flowers
 		["timeline"] = { ADDED_3_1_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
@@ -192,6 +207,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 };
+
 root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	BrightlyColoredEgg({
 		i(44791, {	-- Noblegarden Chocolate
@@ -437,7 +453,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		n(218738, {	-- Daetan Swiftplume
 			["providers"] = {
 				{ "n", 218736 },	-- Golden Egg
-				{ "n", 219936 },	-- [DNT] Vignette
+				{ "n", 219928 },	-- [DNT] Vignette
 			},
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 			["coord"] = { 44.4, 35.1, DUROTAR },
@@ -451,7 +467,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		n(216836, {	-- Golden Egg
 			["description"] = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
 			["coords"] = {
-				{ 31, 85, ELWYNN_FOREST },
+				{ 31.0, 85.0, ELWYNN_FOREST },
 				{ 34.91, 87.96, ELWYNN_FOREST },
 				{ 28.8, 86.68, ELWYNN_FOREST },
 				{ 34.83, 81.68, ELWYNN_FOREST },
@@ -506,6 +522,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				-- #endif
 				-- #if AFTER TWW
 				{ 45.9, 55.0, DORNOGAL },
+				-- #endif
+				-- #if after MID
+				{ 51.2, 76.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				-- #endif
 			},
 			["timeline"] = { ADDED_3_1_0 },
@@ -672,6 +691,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 53.99, 50.70, DUN_MOROGH },	-- Kharanos
 				-- #IF AFTER TWW
 				{ 46.0, 54.9, DORNOGAL },	-- Dornogal
+				-- #ENDIF
+				-- #IF AFTER MID
+				{ 51.2, 76.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				-- #ENDIF
 				-- #else
 				{ 48.9, 50.0, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
@@ -906,6 +928,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 						["isDaily"] = true,
 					}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
+					-- #if AFTER 12.0.1
+					i(216890),	-- Black Duck Disguise (CI!)
+					i(216897),	-- Brown Duck Disguise (CI!)
+					i(216898),	-- Mallard Duck Disguise (CI!)
+					i(216900),	-- Pink Duck Disguise (CI!)
+					i(216901),	-- White Duck Disguise (CI!)
+					i(216902),	-- Yellow Duck Disguise (CI!)
+					-- #endif
+					i(212705, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Attire
+					i(212706, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Belt
+					i(212707, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Boots
+					i(212713, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Dress
+					i(212987, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Pants
+					i(212717, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Sun Hat
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
 					i(212701),	-- Spring Reveler's Turquoise Boots
@@ -915,6 +951,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 				i(213428, {	-- Loot-Stuffed Basket (version for low levels)
 					["sym"] = {{"select","itemID",
+						-- #if AFTER 12.0.1
+						216890,	-- Black Duck Disguise (CI!)
+						216897,	-- Brown Duck Disguise (CI!)
+						216898,	-- Mallard Duck Disguise (CI!)
+						216900,	-- Pink Duck Disguise (CI!)
+						216901,	-- White Duck Disguise (CI!)
+						216902,	-- Yellow Duck Disguise (CI!)
+						212705,	-- Spring Reveler's Cornsilk Attire
+						212706,	-- Spring Reveler's Cornsilk Belt
+						212707,	-- Spring Reveler's Cornsilk Boots
+						212713,	-- Spring Reveler's Cornsilk Dress
+						212987,	-- Spring Reveler's Cornsilk Pants
+						212717,	-- Spring Reveler's Cornsilk Sun Hat
+						-- #endif
 						212698,	-- Spring Reveler's Turquoise Attire
 						212699,	-- Spring Reveler's Turquoise Belt
 						212701,	-- Spring Reveler's Turquoise Boots
@@ -937,6 +987,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 						["isDaily"] = true,
 					}),
 					i(212599),	-- Noble Flying Carpet (MOUNT!)
+					-- #if AFTER 12.0.1
+					i(216890),	-- Black Duck Disguise (CI!)
+					i(216897),	-- Brown Duck Disguise (CI!)
+					i(216898),	-- Mallard Duck Disguise (CI!)
+					i(216900),	-- Pink Duck Disguise (CI!)
+					i(216901),	-- White Duck Disguise (CI!)
+					i(216902),	-- Yellow Duck Disguise (CI!)
+					-- #endif
+					i(212705, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Attire
+					i(212706, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Belt
+					i(212707, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Boots
+					i(212713, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Dress
+					i(212987, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Pants
+					i(212717, {["timeline"] = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Sun Hat
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
 					i(212701),	-- Spring Reveler's Turquoise Boots
@@ -946,6 +1010,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 				i(213428, {	-- Loot-Stuffed Basket (version for low levels)
 					["sym"] = {{"select","itemID",
+						-- #if AFTER 12.0.1
+						216890,	-- Black Duck Disguise (CI!)
+						216897,	-- Brown Duck Disguise (CI!)
+						216898,	-- Mallard Duck Disguise (CI!)
+						216900,	-- Pink Duck Disguise (CI!)
+						216901,	-- White Duck Disguise (CI!)
+						216902,	-- Yellow Duck Disguise (CI!)
+						212705,	-- Spring Reveler's Cornsilk Attire
+						212706,	-- Spring Reveler's Cornsilk Belt
+						212707,	-- Spring Reveler's Cornsilk Boots
+						212713,	-- Spring Reveler's Cornsilk Dress
+						212987,	-- Spring Reveler's Cornsilk Pants
+						212717,	-- Spring Reveler's Cornsilk Sun Hat
+						-- #endif
 						212698,	-- Spring Reveler's Turquoise Attire
 						212699,	-- Spring Reveler's Turquoise Belt
 						212701,	-- Spring Reveler's Turquoise Boots

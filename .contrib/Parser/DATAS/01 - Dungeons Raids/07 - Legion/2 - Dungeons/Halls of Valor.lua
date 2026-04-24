@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(721, {	-- Halls of Valor
 		["coord"] = { 70.4, 69.4, STORMHEIM },
@@ -86,6 +87,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				i(201997),	-- Key to the Halls
 				i(201999),	-- Skovald's Resolve
 			})),
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
+				e(1488, {	-- God-King Skovald
+					["creatureID"] = 95675,	-- God-King Skovald
+					["groups"] = {
+						i(140660),	-- Haft of the God-King
+					},
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1485, {	-- Hymdall
 					["creatureID"] = 94960,	-- Hymdall
@@ -136,7 +145,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1488, {	-- God-King Skovald
 					["creatureID"] = 95675,	-- God-King Skovald
 					["groups"] = {
-						i(140660),	-- Haft of the God-King
 						i(134193),	-- Biornskin Moccasins
 						i(134222),	-- Bonespeaker Bracers
 						i(133617),	-- Cruel Vice Grips
@@ -237,7 +245,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					e(1488, {	-- God-King Skovald
 						["creatureID"] = 95675,	-- God-King Skovald
 						["groups"] = {
-							i(140660),	-- Haft of the God-King
 							i(134193),	-- Biornskin Moccasins
 							i(134222),	-- Bonespeaker Bracers
 							i(133617),	-- Cruel Vice Grips
@@ -339,7 +346,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					e(1488, {	-- God-King Skovald
 						["creatureID"] = 95675,	-- God-King Skovald
 						["groups"] = {
-							i(140660),	-- Haft of the God-King
 							i(134193),	-- Biornskin Moccasins
 							i(134222),	-- Bonespeaker Bracers
 							i(133617),	-- Cruel Vice Grips

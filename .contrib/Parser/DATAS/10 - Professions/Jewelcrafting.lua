@@ -2,8 +2,6 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 -- #if AFTER TBC
-local DF_JEWELCRAFTING_KNOWLEDGE = 2029;
-local TWW_JEWELCRAFTING_KNOWLEDGE = 2791;
 root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18880),	-- Generations of Gemstones I
@@ -364,6 +362,29 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }}
+		},{
+			pn(28659),	-- Air
+			pn(81118),	-- Brilliant Baubling
+			pn(28724),	-- Carving
+			pn(28658),	-- Earth
+			pn(28610),	-- Enterprising
+			pn(28608),	-- Extravagancies
+			pn(28660),	-- Faceting
+			pn(28657),	-- Fire
+			pn(28656),	-- Frost
+			pn(28607),	-- Glassware
+			pn(28723),	-- Idols
+			pn(28672),	-- Jeweler's Toolset Mastery
+			pn(28727),	-- Jewelry
+			pn(28726),	-- Necklaces
+			pn(28609),	-- Prospecting
+			pn(28725),	-- Rings
+			pn(81119),	-- Saving Slivers
+			pn(28728),	-- Setting
+			pn(28722),	-- Stone
+		})),
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18941, {	-- Dazzling Dragons
 			-- #if BEFORE 10.2.0
@@ -522,21 +543,21 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
 				["groups"] = {
-					i(208927),	-- Sandsparkle Pearl (QI!)
+					o(408070, {	-- Sandsparkle Clam
+						i(208927),	-- Sandsparkle Pearl (QI!)
+					}),
 				},
 			}),
 			q(77912, {	-- Unmodern Jewelry
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
-				["groups"] = {
-					i(208928),	-- Zaqali Adornments (QI!)
-				},
+				["groups"] = { i(208928) },	-- Zaqali Adornments (QI!)
 			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_JEWELCRAFTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }} }, {
 				r(374483),	-- Blotting Sand
 				r(374442),	-- Crafty Alexstraszite
 				r(374450),	-- Crafty Ysemerald
@@ -681,7 +702,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_JEWELCRAFTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING),
 			},
 		},{
 			i(198612),	-- Jeweler's Cuts
@@ -732,21 +753,53 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228777),	-- Algari Jewelcrafter's Notebook
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1 }}
 		},{
+			pn(98244),	-- Amulets
+			pn(101953),	-- Artisan's Accessories
+			pn(98612),	-- Deadly Emerald
+			pn(98608),	-- Deadly Onyx
+			pn(98600),	-- Deadly Sapphire
+			pn(98662),	-- Emerald
+			pn(98613),	-- Emerald
+			pn(98663),	-- Gem Finding
+			pn(98614),	-- Gemcutting
+			pn(98665),	-- Glasswork
+			pn(98245),	-- Jewelrycrafting
+			pn(98664),	-- Masonry
+			pn(98611),	-- Masterful Emerald
+			pn(98603),	-- Masterful Ruby
+			pn(98598),	-- Masterful Sapphire
+			pn(98661),	-- Onyx
+			pn(98609),	-- Onyx
+			pn(98607),	-- Quick Onyx
+			pn(98604),	-- Quick Ruby
+			pn(98599),	-- Quick Sapphire
+			pn(98243),	-- Rings
+			pn(98605),	-- Ruby
+			pn(98660),	-- Ruby
+			pn(98659),	-- Sapphire
+			pn(98601),	-- Sapphire
+			pn(98666),	-- Shaping
+			pn(98610),	-- Versatile Emerald
+			pn(98606),	-- Versatile Onyx
+			pn(98602),	-- Versatile Ruby
+		})),
+		n(QUESTS, {
 			q(84130, {	-- Jewelcrafting Services Requested
+				["sourceQuests"] = { 84279 },	-- Crafting Orders: Jewelcrafting
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228777),	-- Algari Jewelcrafter's Notebook
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{"c", TWW_JEWELCRAFTING_KNOWLEDGE, 1}} }, {
+			["groups"] = sharedData({ ["cost"] = {{"c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1}} }, {
 				r(435338),	-- Algari Emerald Prism
 				r(435369),	-- Algari Onyx Prism
 				r(435339),	-- Algari Ruby Prism
@@ -830,9 +883,15 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_JEWELCRAFTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING),
 			},
 		},{
+			i(228777),	-- Algari Jewelcrafter's Notebook
+			q(83731, {	-- TWW Inscription Order: Jewelcrafting
+				["name"] = "TWW Inscription Order: Jewelcrafting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222551 },	-- Algari Treatise on Jewelcrafting
+			}),
 			q(83265, {	-- TWW Weekly Jewelcrafting Knowledgepoint #1
 				["name"] = "TWW Weekly Jewelcrafting Treasure #1",
 				["provider"] = { "i", 225224 },	-- Diaphanous Gem Shards
@@ -843,124 +902,181 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42789, {	-- Jewelcrafting at Midnight
-				["timeline"] = { ADDED_12_0_0 },
+				i(264005),	-- Midnight Jewelcrafter's Shop Sign (DECOR!)
+			}),
+			ach(62236),	-- Jewelcrafting-on-Demand
+			ach(62244, {	-- Dedicated to the Craft: Jewelcrafting
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42789,	-- Jewelcrafting at Midnight
+					62236,	-- Jewelcrafting-on-Demand
+				}},
 				["groups"] = {
+					title(746),	-- Thalassian Jewelcrafter <Name>
 				},
 			}),
 		}),
-		--[[n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228777),	-- Algari Jewelcrafter's Notebook
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1 }}
 		},{
-			q(84130, {	-- Jewelcrafting Services Requested
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-			}),
+			pn(107059),	-- Alluring Accessories
+			pn(106891),	-- Austere Amethyst
+			pn(106974),	-- Boldly Basic
+			pn(107012),	-- Calculated Concentration
+			pn(106981),	-- Copper Consumer
+			pn(107056),	-- Crafting Couture
+			pn(106977),	-- Crushing Connoisseur
+			pn(106890),	-- Deadly Amethyst
+			pn(106895),	-- Deadly Lapis
+			pn(106899),	-- Deadly Peridot
+			pn(106901),	-- Glamorous Gems
+			pn(106887),	-- Glorious Garnet
+			pn(106896),	-- Lustrous Lapis
+			pn(107057),	-- Luxurious Lockets
+			pn(106885),	-- Masterful Garnet
+			pn(106893),	-- Masterful Lapis
+			pn(106898),	-- Masterful Peridot
+			pn(106976),	-- Material Manufacturer
+			pn(106975),	-- Optionally Optimal
+			pn(107013),	-- Outrageous Output
+			pn(106900),	-- Powerful Peridot
+			pn(106983),	-- Proficient Processor
+			pn(106982),	-- Prospecting Pro
+			pn(106889),	-- Quick Amethyst
+			pn(106886),	-- Quick Garnet
+			pn(106894),	-- Quick Lapis
+			pn(107058),	-- Regal Rings
+			pn(106979),	-- Silver Scrapper
+			pn(107014),	-- Skilled Savings
+			pn(106978),	-- Thorium Thresher
+			pn(107015),	-- Thoughtful Throughput
+			pn(106980),	-- Tin-vestigator
+			pn(106888),	-- Versatile Amethyst
+			pn(106884),	-- Versatile Garnet
+			pn(106897),	-- Versatile Peridot
 		})),
+		n(QUESTS, {
+			q(93694, {	-- Jewelcrafting Services Requested
+				["sourceQuests"] = { 93729 },	-- Crafting Orders: Jewelcrafting
+				["qgs"] = {
+					243345,	-- Amin <Jewelcrafting Trainer>
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+				},
+				["coords"] = {
+					{ 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 48.2, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
+				["isWeekly"] = true,
+				["groups"] = {
+					i(263458),	-- Thalassian Jewelcrafter's Notebook
+				},
+			}),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{"c", TWW_JEWELCRAFTING_KNOWLEDGE, 1}} }, {
-				r(435338),	-- Algari Emerald Prism
-				r(435369),	-- Algari Onyx Prism
-				r(435339),	-- Algari Ruby Prism
-				r(435370),	-- Algari Sapphire Prism
-				r(435385),	-- Amulet of Earthen Craftsmanship
-				r(434541),	-- Deadly Emerald
-				r(434545),	-- Deadly Onyx
-				r(434553),	-- Deadly Sapphire
-				r(435331),	-- Elemental Focusing Lens
-				r(434543),	-- Masterful Emerald
-				r(434551),	-- Masterful Ruby
-				r(434555),	-- Masterful Sapphire
-				r(435332),	-- Prismatic Null Stone
-				r(434546),	-- Quick Onyx
-				r(434550),	-- Quick Ruby
-				r(434554),	-- Quick Sapphire
-				r(435384),	-- Ring of Earthen Craftsmanship
-				r(434544),	-- Versatile Emerald
-				r(434548),	-- Versatile Onyx
-				r(434552),	-- Versatile Ruby
+			["groups"] = sharedData({ ["cost"] = {{"c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1}} }, {
+				r(1230482),	-- Amani Lapis Prism
+				r(1230459),	-- Flawless Deadly Amethyst
+				r(1230451),	-- Flawless Deadly Lapis
+				r(1230443),	-- Flawless Deadly Peridot
+				r(1230468),	-- Flawless Masterful Garnet
+				r(1230452),	-- Flawless Masterful Lapis
+				r(1230444),	-- Flawless Masterful Peridot
+				r(1230458),	-- Flawless Quick Amethyst
+				r(1230466),	-- Flawless Quick Garnet
+				r(1230450),	-- Flawless Quick Lapis
+				r(1230461),	-- Flawless Versatile Amethyst
+				r(1230469),	-- Flawless Versatile Garnet
+				r(1230445),	-- Flawless Versatile Peridot
+				r(1230481),	-- Harandar Peridot Prism
+				r(1230486),	-- Masterwork Sin'dorei Amulet
+				r(1230485),	-- Masterwork Sin'dorei Band
+				r(1230484),	-- Sanguine Garnet Prism
+				r(1230483),	-- Tenebrous Amethyst Prism
 			}),
 		}),
 		n(TREASURES, {
-			o(455973, {	-- Arathi Sizing Gauges
-				["coord"] = { 47.3, 60.6, HALLOWFALL },
-				["questID"] = 83894,
+			o(525927, {	-- Dual-Function Magnifiers
+				["coord"] = { 28.6, 46.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89124,
 				["groups"] = {
-					i(226320),	-- Arathi Sizing Gauges
+					i(238582),	-- Dual-Function Magnifiers
 				},
 			}),
-			o(455975, {	-- Carved Stone File
-				["coord"] = { 48.5, 35.2, THE_RINGING_DEEPS },
-				["questID"] = 83892,
+			o(525923, {	-- Ethereal Gem Pliers
+				["coord"] = { 54.2, 51.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89128,
 				["groups"] = {
-					i(226318),	-- Carved Stone File
+					i(238586),	-- Ethereal Gem Pliers
 				},
 			}),
-			o(455976, {	-- Earthen Gem Pliers
-				["coord"] = { 34.9, 52.3, DORNOGAL },
-				["questID"] = 83891,
+			o(525926, {	-- Poorly Rounded Vial
+				["coord"] = { 56.6, 40.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89125,
 				["groups"] = {
-					i(226317),	-- Earthen Gem Pliers
+					i(238583),	-- Poorly Rounded Vial
 				},
 			}),
-			o(455977, {	-- Gentle Jewel Hammer
-				["coord"] = { 63.5, 66.8, ISLE_OF_DORN },
-				["questID"] = 83890,
+			o(525925, {	-- Shattered Glass
+				["coord"] = { 62.7, 53.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89126,
 				["groups"] = {
-					i(226316),	-- Gentle Jewel Hammer
+					i(238584),	-- Shattered Glass
 				},
 			}),
-			o(455974, {	-- Jeweler's Delicate Drill
-				["coord"] = { 57.0, 54.6, THE_RINGING_DEEPS },
-				["questID"] = 83893,
+			o(525922, {	-- Sin'dorei Gem Faceters
+				["coord"] = { 39.6, 38.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89129,
 				["groups"] = {
-					i(226319),	-- Jeweler's Delicate Drill
+					i(238587),	-- Sin'dorei Gem Faceters
 				},
 			}),
-			o(455972, {	-- Librarian's Magnifiers
-				["coord"] = { 44.7, 50.9, HALLOWFALL },
-				["questID"] = 83895,
+			o(525929, {	-- Sin'dorei Masterwork Chisel
+				["coord"] = { 50.6, 56.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89122,
 				["groups"] = {
-					i(226321),	-- Librarian's Magnifiers
+					i(238580),	-- Sin'dorei Masterwork Chisel
 				},
 			}),
-			o(455970, {	-- Nerubian Bench Blocks
-				["coord"] = { 56.1, 58.6, AZJ_KAHET },
-				["questID"] = 83897,
+			o(525928, {	-- Speculative Voidstorm Crystal
+				["coord"] = { 30.5, 69.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89123,
 				["groups"] = {
-					i(226323),	-- Nerubian Bench Blocks
+					i(238581),	-- Speculative Voidstorm Crystal
 				},
 			}),
-			o(455971, {	-- Ritual Caster's Crystal
-				["coord"] = { 47.7, 19.4, NERUBAR },
-				["questID"] = 83896,
+			o(525924, {	-- Vintage Soul Gem
+				["coord"] = { 55.4, 48.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89127,
 				["groups"] = {
-					i(226322),	-- Ritual Caster's Crystal
+					i(238585),	-- Vintage Soul Gem
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_JEWELCRAFTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING),
 			},
 		},{
-			q(83265, {	-- TWW Weekly Jewelcrafting Knowledgepoint #1
-				["name"] = "TWW Weekly Jewelcrafting Treasure #1",
-				["provider"] = { "i", 225224 },	-- Diaphanous Gem Shards
+			i(263458),	-- Thalassian Jewelcrafter's Notebook
+			q(95133, {	-- MID Inscription Order: Jewelcrafting
+				["name"] = "MID Inscription Order: Jewelcrafting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245760 },	-- Thalassian Treatise on Jewelcrafting
 			}),
-			q(83266, {	-- TWW Weekly Jewelcrafting Knowledgepoint #2
-				["name"] = "TWW Weekly Jewelcrafting Treasure #2",
-				["provider"] = { "i", 225225 },	-- Deepstone Fragment
+			q(93539, {	-- MID Weekly Jewelcrafting Knowledgepoint #1
+				["name"] = "MID Weekly Jewelcrafting Treasure #1",
+				["provider"] = { "i", 259199 },	-- Harandar Stone Sample
 			}),
-		})),--]]
+			q(93538, {	-- MID Weekly Jewelcrafting Knowledgepoint #2
+				["name"] = "MID Weekly Jewelcrafting Treasure #2",
+				["provider"] = { "i", 259198 },	-- Void-Touched Eversong Diamond Fragments
+			}),
+		})),
 	})),
 })));
 

@@ -90,7 +90,7 @@ def create_patch_dict_from_raw(thing: type[Thing], flavor: str) -> dict[str, lis
     keys: list[str] = thing.id_schema()
     current_patch: str = "1.0.0.00000"
 
-    with open(Path("Raw", f"{thing.__name__}.txt"), "r") as file:
+    with open(Path("Raw", f"{thing.__name__}.txt"), "r", encoding="utf-8-sig") as file:
         for line in file:
             line = line.strip()
             if DELIMITER in line or line.isdigit():
@@ -110,7 +110,7 @@ def create_patch_dict_from_raw_recipes(profession: str, flavor: str) -> dict[str
     keys: list[str] = Recipes.id_schema()
     current_patch: str = "1.0.0.00000"
 
-    with open(Path("Raw", "Professions", f"{profession}.txt"), "r") as file:
+    with open(Path("Raw", "Professions", f"{profession}.txt"), "r", encoding="utf-8-sig") as file:
         for line in file:
             line = line.strip()
             if DELIMITER in line or line.isdigit():
@@ -644,7 +644,7 @@ def add_latest_data(build: str) -> None:
         after_list: list[str] = []
         raw_path = Path("Raw", f"{thing.__name__}.txt")
         thing_list = get_thing_data(thing, build.strip())
-        with open(raw_path, "r") as raw_file:
+        with open(raw_path, "r", encoding="utf-8") as raw_file:
             old_lines = raw_file.readlines()
             for next_build in next_builds:
                 if next_build in old_lines:
@@ -666,10 +666,10 @@ def add_latest_data(build: str) -> None:
                 print("Nothing New")
             before_list.extend(after_list)
             before_list = list(dict.fromkeys(before_list))
-        with open(raw_path, "w") as raw_file:
+        with open(raw_path, "w", encoding="utf-8") as raw_file:
             raw_file.writelines(before_list)
         if difference and thing == Items:
-            with open("FastItem.txt", "w") as item_file:
+            with open("FastItem.txt", "w", encoding="utf-8") as item_file:
                 for index, name_line in enumerate(difference):
                     id: str = re.sub("[^\\d^.]", "", name_line.split(DELIMITER)[0].strip())
                     try:

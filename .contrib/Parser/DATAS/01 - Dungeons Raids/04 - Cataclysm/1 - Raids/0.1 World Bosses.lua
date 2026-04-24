@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 -- Blizzard added the original drops for ONLY the first phase of Cataclysm Classic.
 -- #if ANYCLASSIC
 local CATA_CLASSIC_WORLD_BOSS_ONUPDATE = [[function(t)
@@ -13,6 +14,7 @@ local CATA_CLASSIC_WORLD_BOSS_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, n(WORLD_BOSSES, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {
 		["isRaid"] = true,

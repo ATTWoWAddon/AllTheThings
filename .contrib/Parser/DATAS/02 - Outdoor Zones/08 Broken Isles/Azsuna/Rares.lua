@@ -5,20 +5,22 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			n(RARES, {
-				n(SPECIAL, sharedData({["sharedDescription"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
-					n(109028, {	-- Horkus
-						["questID"] = 42825,
-						["coord"] = { 56.2, 59.6, AZSUNA },
-						["crs"] = { 109029 },	-- Horkus
-					}),
-                })),
+			n(RARES, sharedData({
+				-- #IF AFTER 11.2.5
+				["isDaily"] = true,	-- Daily during Legion Remix 2025, and thereafter
+				-- #endif
+			}, {
 				n(107657, {	-- Arcanist Shal'iman
 					["questID"] = 42505,
 					["coord"] = { 35.4, 33.8, AZSUNA },
 					["groups"] = {
 						i(141868),	-- Shal'imanacles
 					},
+				}),
+				n(109641, {	-- Arcanor Prime
+					["questID"] = 45494,
+					-- ["coord"] = { , , AZSUNA },
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				n(90244, {	-- Arcavellus
 					["description"] = "Click on the Unbound Rift in Ley-Ruins of Zarkhenar to start the event. Arcavellus will spawn after a few waves of enemies.",
@@ -82,6 +84,7 @@ root(ROOTS.Zones, {
 				n(106990, {	-- Chief Bitterbrine
 					["questID"] = 42221,
 					["coord"] = { 65.5, 56.8, AZSUNA },
+					["isDaily"] = IGNORED_VALUE,
 					["groups"] = {
 						i(129073),	-- Bitterbrine's Signet Ring
 					},
@@ -89,6 +92,7 @@ root(ROOTS.Zones, {
 				n(109677, {	-- Chief Treasurer Jabrill
 					["questID"] = 45491,
 					["coord"] = { 58.9, 76.6, AZSUNA },
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				n(107266, bubbleDownSelf({	-- Commander Soraax
 					["timeline"] = {
@@ -263,30 +267,25 @@ root(ROOTS.Zones, {
 						i(129069),	-- Stalker Collar Bracers
 					},
 				}),
-				n(109641, {	-- Arcanor Prime
-					["questID"] = 45494,
-				--	["coord"] = { , , AZSUNA },
-				}),
---[[ TODO:
---				n(101596, {	-- Charfeather }),
---				n(108255, {	-- Coura, Mistress of Arcana }),
---				n(109702, {	-- Deepclaw }),
---				n(109584, {	-- Fjordun }),
---				n(109630, {	-- Immolian }),
---				n(103975, {	-- Jade Darkhaven }),
---				n(109653, {	-- Marblub the Massive }),
---				n(93622, {	-- Mortiferous }),
---				n(111434, {	-- Sea King Tidross }),
---				n(109594, {	-- Stormfeather }),
---				o(254087, {	-- The Dreadblades
---					i(128872),	-- Rogue Outlaw Hidden Appearance
---				}),
---				n(109620, {	-- The Whisperer }),
---				n(110824, {	-- Tideclaw }),
---				n(102064, {	-- Torrentius }),
---				n(109575, {	-- Valakar the Thirsty }),
---]]
-			}),
+				-- TODO:
+				-- n(101596, {	-- Charfeather }),
+				-- n(108255, {	-- Coura, Mistress of Arcana }),
+				-- n(109702, {	-- Deepclaw }),
+				-- n(109584, {	-- Fjordun }),
+				-- n(109630, {	-- Immolian }),
+				-- n(103975, {	-- Jade Darkhaven }),
+				-- n(109653, {	-- Marblub the Massive }),
+				-- n(93622, {	-- Mortiferous }),
+				-- n(111434, {	-- Sea King Tidross }),
+				-- n(109594, {	-- Stormfeather }),
+				-- o(254087, {	-- The Dreadblades
+				-- 	i(128872),	-- Rogue Outlaw Hidden Appearance
+				-- }),
+				-- n(109620, {	-- The Whisperer }),
+				-- n(110824, {	-- Tideclaw }),
+				-- n(102064, {	-- Torrentius }),
+				-- n(109575, {	-- Valakar the Thirsty }),
+			})),
 		}),
 	}),
 });

@@ -36,8 +36,8 @@ local C_Item_IsDressableItemByID, GetSlotForInventoryType
 ---@diagnostic disable-next-line: deprecated
 	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local L, contains, containsAny, SearchForField, SearchForFieldContainer
-	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer
+local L, contains, containsAny, SearchForField
+	= app.L, app.contains, app.containsAny, app.SearchForField
 local C_TransmogCollection_GetItemInfo, C_TransmogCollection_GetSourceInfo
 	= C_TransmogCollection.GetItemInfo, C_TransmogCollection.GetSourceInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection_GetAllAppearanceSources
@@ -153,6 +153,9 @@ app.GetGroupSourceID = function(group)
 	if sourceID then group.sourceID = sourceID; end
 end
 
+-- caches for mod/bonus which have successfully been used to find valid appearances
+local UsedModIDs = {}
+local UsedBonusIDs = {}
 -- Attempts to determine an ItemLink which will return the provided SourceID
 app.DetermineItemLink = function(sourceID)
 	local link;
@@ -210,16 +213,37 @@ app.DetermineItemLink = function(sourceID)
 		-- end
 	end
 
+	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
+	for m in pairs(UsedModIDs) do
+		link = itemFormat:format(m)
+		checkID, found = GetSourceID(link)
+		-- app.PrintDebug(link,checkID,found)
+		if found and checkID == sourceID then return link end
+	end
+
+	itemFormat = "item:"..itemID.."::::::::::::1:%d";
+	for b in pairs(UsedBonusIDs) do
+		link = itemFormat:format(b)
+		checkID, found = GetSourceID(link)
+		-- app.PrintDebug(link,checkID,found)
+		if found and checkID == sourceID then return link end
+	end
+
 	-- Check ModIDs
 	-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
 	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
 	-- /dump AllTheThings.GetSourceID("item:188859:::::::::::5:1:3524")
 	for m=1,299,1 do
-		---@diagnostic disable-next-line: undefined-field
-		link = itemFormat:format(m);
-		checkID, found = GetSourceID(link);
-		-- app.PrintDebug(link,checkID,found)
-		if found and checkID == sourceID then return link; end
+		if not UsedModIDs[m] then
+			---@diagnostic disable-next-line: undefined-field
+			link = itemFormat:format(m);
+			checkID, found = GetSourceID(link);
+			-- app.PrintDebug(link,checkID,found)
+			if found and checkID == sourceID then
+				UsedModIDs[m] = true
+				return link
+			end
+		end
 	end
 
 	-- Only try to manually scan for a bonusID-based sourceID if we are Debugging (save regular users from unnecessary lookups)
@@ -229,11 +253,16 @@ app.DetermineItemLink = function(sourceID)
 	-- Check BonusIDs
 	itemFormat = "item:"..itemID.."::::::::::::1:%d";
 	for b=1,15999,1 do
-		---@diagnostic disable-next-line: undefined-field
-		link = itemFormat:format(b);
-		checkID, found = GetSourceID(link);
-		-- app.PrintDebug(link,checkID,found)
-		if found and checkID == sourceID then return link; end
+		if not UsedBonusIDs[b] then
+			---@diagnostic disable-next-line: undefined-field
+			link = itemFormat:format(b);
+			checkID, found = GetSourceID(link);
+			-- app.PrintDebug(link,checkID,found)
+			if found and checkID == sourceID then
+				UsedBonusIDs[b] = true
+				return link
+			end
+		end
 	end
 	-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No ModID or BonusID match)");
 end
@@ -704,7 +733,7 @@ end
 local function DetermineMaxATTSourceID()
 	-- app.PrintDebug("Initial Session Refresh")
 	local maxSourceID = 0;
-	for id,_ in pairs(SearchForFieldContainer("sourceID")) do
+	for id,_ in pairs(app.GetFieldContainer("sourceID")) do
 		-- track the max sourceID so we can evaluate sources not in ATT as well
 		if id > maxSourceID then maxSourceID = id; end
 	end
@@ -806,7 +835,7 @@ end
 do
 	-- Allows generating and capturing the specific ItemString which represents the SourceID of a group, if possible
 	local function GenerateGroupLinkUsingSourceID(group)
-		app.DirectGroupRefresh(group)
+		app.DirectGroupRedraw(group)
 		local sourceID = group and group.sourceID;
 		if not sourceID then return; end
 
@@ -860,10 +889,34 @@ do
 	-- Appearance-based Classes
 	local AppearanceVariantClasses = { CLASSNAME }
 
+	local AndAppearanceCollectible = app.IsRetail and app.ReturnTrue or function(t)
+		if not t.rwp and app.Settings.OnlyRWP then
+			return false;
+		end
+		if (t.q or 0) < 2 and app.Settings.OnlyNotTrash then
+			return false;
+		end
+		return true;
+	end
+	local function AddAppearanceCollectibleSwap(classname, setting)
+		local function AssignCollectibleFunction()
+			-- app.PrintDebug("Swapping",classname,".collectible","via",setting,app.Settings.Collectibles[setting])
+			if app.Settings.Collectibles[setting] then
+				app.SwapClassDefinitionMethod(classname,"collectible",AndAppearanceCollectible)
+			else
+				app.SwapClassDefinitionMethod(classname,"collectible",app.ReturnFalse)
+			end
+		end
+		app.AddEventHandler("OnSettingsNeedsRefresh", AssignCollectibleFunction);
+		app.AddEventHandler("OnStartup", AssignCollectibleFunction);
+	end
+
 	local AndAppearance = {
 		__name = "AndAppearance",
 		CACHE = function() return CACHE end,
-		collectible = function(t) return app.Settings.Collectibles.Transmog end,
+		collectible = app.IsRetail and function(t)
+			return app.Settings.Collectibles.Transmog
+		end or AndAppearanceCollectible,
 		collected = collected_Completionist,
 		visualID = function(t)
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(t[KEY])
@@ -873,7 +926,7 @@ do
 		__onclassgenerated = function(variantName)
 			AppearanceVariantClasses[#AppearanceVariantClasses + 1] = variantName
 			-- any appearance-based variant is tracked based on 'Transmog' setting
-			app.AddSimpleCollectibleSwap(variantName, SETTING)
+			AddAppearanceCollectibleSwap(variantName, SETTING)
 		end,
 	}
 	app.GlobalVariants.AndAppearance = AndAppearance
@@ -884,13 +937,13 @@ do
 		-- this is swapped based on settings
 		collectible = AndAppearance.collectible,
 		collected = AndAppearance.collected,
-		collectedwarband = app.IsClassic and app.EmptyFunction or
+		collectedwarband = app.GameBuildVersion >= 100000 and app.EmptyFunction or
 		function(t)
 			return app.IsAccountCached("SourceItemsOnCharacter", t[KEY])
 		end,
 		visualID = AndAppearance.visualID,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
-		itemID = app.IsRetail and function(t)
+		itemID = function(t)
 			if t.__autolink then return; end
 			-- async generation of the proper Item Link
 			-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
@@ -905,31 +958,7 @@ do
 			return BuildAppearanceLink(t.sourceID)
 		end,
 	});
-	app.CreateItemSource = app.GameBuildVersion < 60000 and ((C_Seasons and C_Seasons.GetActiveSeason() == 2 and function(sourceID, itemID, t)
-		if t and ((not t.q or t.q < 2) or not (t.f and ITEM_FILTERS_WITH_APPEARANCES[t.f])) then
-			t[KEY] = sourceID;
-			return app.CreateItem(itemID, t);
-		end
-		t = createItemWithAppearance(sourceID, t);
-		t.itemID = itemID;
-		return t;
-	end) or function(sourceID, itemID, t)
-		if t and (not t.q or t.q < 2) then
-			t[KEY] = sourceID;
-			return app.CreateItem(itemID, t);
-		end
-		t = createItemWithAppearance(sourceID, t);
-		-- Shared Appearances may attempt to create an Item Source without an ItemID
-		-- so quickly try to derive one since the Classic Item class doesn't protect against
-		-- various situations where a nil itemID can cause problems and createItemWithAppearance
-		-- extends from Item
-		if not itemID then
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
-			itemID = sourceInfo and sourceInfo.itemID or -1
-		end
-		t.itemID = itemID;
-		return t;
-	end) or function(sourceID, itemID, t)
+	app.CreateItemSource = function(sourceID, itemID, t)
 		t = createItemWithAppearance(sourceID, t);
 		-- TEMPORARY
 		if itemID and itemID > 0 then
@@ -937,7 +966,7 @@ do
 		end
 		return t;
 	end
-	app.AddSimpleCollectibleSwap(CLASSNAME, SETTING)
+	AddAppearanceCollectibleSwap(CLASSNAME, SETTING)
 
 	-- Extend the Filter Module to include ItemSource
 	app.Modules.Filter.Set.ItemSource = function(useUnique, useMainOnly)
@@ -1040,6 +1069,8 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 	end
 	local linkInfo, sourceFilter, otherFilter
 	local useItemIDs, origSource = app.Settings:GetTooltipSetting("itemID"), app.Settings:GetTooltipSetting("IncludeOriginalSource")
+	local onlyObtainable = app.Settings:GetTooltipSetting("OnlyShowObtainableSharedAppearances")
+	local FilterInGame = app.Modules.Filter.Filters.InGame
 	if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 		-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 		for i,otherSourceID in ipairs(allVisualSources) do
@@ -1053,15 +1084,17 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 				end
 			else
 				local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field") or UnknownAppearancesCache[otherSourceID]
-				sourceFilter = sourceGroup.f
-				otherFilter = otherATTSource.f
-				-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-				if (sourceFilter == otherFilter or sourceFilter == 2 or otherFilter == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
-					linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
-					if not working and linkInfo.working then
-						working = true
+				if not onlyObtainable or FilterInGame(otherATTSource) then
+					sourceFilter = sourceGroup.f
+					otherFilter = otherATTSource.f
+					-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+					if (sourceFilter == otherFilter or sourceFilter == 2 or otherFilter == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
+						linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
+						if not working and linkInfo.working then
+							working = true
+						end
+						info[#info + 1] = linkInfo
 					end
-					info[#info + 1] = linkInfo
 				end
 			end
 		end
@@ -1078,54 +1111,57 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 				end
 			else
 				local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field") or UnknownAppearancesCache[otherSourceID]
-				linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
-				if not working and linkInfo.working then
-					working = true
-				end
-				-- Showing failure texts for Shared Appearances really only matters in Unique modes, where it's useful to see why a
-				-- matching Appearance hasn't unlocked another one
-				if not app.Settings:Get("Completionist") then
-					local failText
-					sourceFilter = sourceGroup.f
-					otherFilter = otherATTSource.f
-					-- Show the primary reason why an appearance does not meet given criteria.
-					-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-					if sourceFilter ~= otherFilter and sourceFilter ~= 2 and otherFilter ~= 2 then
-						-- This is NOT the same type. Therefore, no credit for you!
-						failText = L.FILTER_ID_TYPES[otherFilter] or L.FILTER_ID
-					-- Classes
-					elseif otherATTSource.c
-						and (not sourceGroup.c or not containsAny(otherATTSource.c, sourceGroup.c))
-						and not EncompassingClassArmorTypeVisualIDs.Known[sourceInfo.visualID]
-					then
-						-- This is NOT for the shared appearance class. Therefore, no credit for you!
-						if #otherATTSource.c == 1 then
-							failText = app.ClassInfoByID[otherATTSource.c[1]].name or UNKNOWN
-						else
-							local classes = {}
-							for i,classID in ipairs(otherATTSource.c) do
-								classes[#classes + 1] = app.ClassInfoByID[classID].name or UNKNOWN
-							end
-							failText = app.TableConcat(classes, nil, nil, ", ")
-						end
-					-- Faction
-					elseif otherATTSource.r
-						and sourceGroup.r ~= otherATTSource.r
-						and not DualFactionCollectedVisualIDs.Known[sourceInfo.visualID]
-					then
-						-- This is NOT for the shared appearance Faction. Therefore, no credit for you!
-						failText = otherATTSource.r == Enum.FlightPathFaction.Horde and FACTION_HORDE or FACTION_ALLIANCE
-					-- Races (only if not Faction)
-					elseif otherATTSource.races
-						and (not sourceGroup.races or not containsAny(otherATTSource.races, sourceGroup.races))
-					then
-						-- This is NOT for the shared appearance race. Therefore, no credit for you!
-						failText = RACE
+				if not onlyObtainable or FilterInGame(otherATTSource) then
+					-- existing logic that builds linkInfo
+					linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
+					if not working and linkInfo.working then
+						working = true
 					end
+					-- Showing failure texts for Shared Appearances really only matters in Unique modes, where it's useful to see why a
+					-- matching Appearance hasn't unlocked another one
+					if not app.Settings:Get("Completionist") then
+						local failText
+						sourceFilter = sourceGroup.f
+						otherFilter = otherATTSource.f
+						-- Show the primary reason why an appearance does not meet given criteria.
+						-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+						if sourceFilter ~= otherFilter and sourceFilter ~= 2 and otherFilter ~= 2 then
+							-- This is NOT the same type. Therefore, no credit for you!
+							failText = L.FILTER_ID_TYPES[otherFilter] or L.FILTER_ID
+						-- Classes
+						elseif otherATTSource.c
+							and (not sourceGroup.c or not containsAny(otherATTSource.c, sourceGroup.c))
+							and not EncompassingClassArmorTypeVisualIDs.Known[sourceInfo.visualID]
+						then
+							-- This is NOT for the shared appearance class. Therefore, no credit for you!
+							if #otherATTSource.c == 1 then
+								failText = app.ClassInfoByID[otherATTSource.c[1]].name or UNKNOWN
+							else
+								local classes = {}
+								for i,classID in ipairs(otherATTSource.c) do
+									classes[#classes + 1] = app.ClassInfoByID[classID].name or UNKNOWN
+								end
+								failText = app.TableConcat(classes, nil, nil, ", ")
+							end
+						-- Faction
+						elseif otherATTSource.r
+							and sourceGroup.r ~= otherATTSource.r
+							and not DualFactionCollectedVisualIDs.Known[sourceInfo.visualID]
+						then
+							-- This is NOT for the shared appearance Faction. Therefore, no credit for you!
+							failText = otherATTSource.r == Enum.FlightPathFaction.Horde and FACTION_HORDE or FACTION_ALLIANCE
+						-- Races (only if not Faction)
+						elseif otherATTSource.races
+							and (not sourceGroup.races or not containsAny(otherATTSource.races, sourceGroup.races))
+						then
+							-- This is NOT for the shared appearance race. Therefore, no credit for you!
+							failText = RACE
+						end
 
-					if failText then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. failText .. ")|r"; end
+						if failText then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. failText .. ")|r"; end
+					end
+					info[#info + 1] = linkInfo
 				end
-				info[#info + 1] = linkInfo
 			end
 		end
 	end
@@ -1353,10 +1389,10 @@ if app.IsRetail then
 	-- local function CheckForBoundSourceItems()
 	-- 	app.ScanInventory(CheckForUnknownSourceID)
 	-- end
-	local CheckForBoundSourceItems = app.EmptyFunction
+	--local CheckForBoundSourceItems = app.EmptyFunction
 
 	app.AddEventHandler("OnStartup", function()
-		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
+		--app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
 		-- Add information type once ATT starts up
 		app.Settings.CreateInformationType("collectedwarband", { text = "collectedwarband", priority = 11001, HideCheckBox = true, ForceActive = true,
 			Process = function(t, reference, tooltipInfo)
@@ -1378,7 +1414,7 @@ if app.IsRetail then
 	app.AddEventRegistration("BANKFRAME_OPENED", function()
 		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
 		app.WipeSearchCache()
-		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
+		--app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
 	end)
-	app.AddEventHandler("OnRecalculateDone", CheckForBoundSourceItems)
+	--app.AddEventHandler("OnRecalculateDone", CheckForBoundSourceItems)
 end

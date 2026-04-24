@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			m(ANTORAN_WASTES, {
 				n(WORLD_QUESTS, sharedData({
 					["isWorldQuest"] = true,
-				},{
+				}, {
 					q(48832, {	-- Admiral Rel'var
 						["sym"] = {{"select","npcID",127090}},	-- Select the WQ NPC
 					}),

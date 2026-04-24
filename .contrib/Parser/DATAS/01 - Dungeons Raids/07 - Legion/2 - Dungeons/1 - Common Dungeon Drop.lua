@@ -37,20 +37,20 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				102387,	-- Sael'orn confirmed 2022-04-18
 				102446,	-- Fel Lord Betrug confirmed 2022-04-18
 				114895,	-- Nightbane confirmed 01.10.2021
-				--98970,	-- Dantalionax
-				--98965,	-- Kur'talos Ravencrest
-				--99192,	-- Shade of Xavius
-				--104218,	-- Advisor Melandrus
-				--96028,	-- Wrath of Azshara
-				--95676,	-- Odyn
-				--96759,	-- Helya
-				--91007,	-- Dargrul
-				--98208,	-- Advisor Vandros
-				--95888,	-- Cordana Felsong
+				-- 98970,	-- Dantalionax
+				-- 98965,	-- Kur'talos Ravencrest
+				-- 99192,	-- Shade of Xavius
+				-- 104218,	-- Advisor Melandrus
+				-- 96028,	-- Wrath of Azshara
+				-- 95676,	-- Odyn
+				-- 96759,	-- Helya
+				-- 91007,	-- Dargrul
+				-- 98208,	-- Advisor Vandros
+				-- 95888,	-- Cordana Felsong
 				-- #if AFTER 7.1.0
-				--114790,	-- Viz'aduum the Watcher
+				-- 114790,	-- Viz'aduum the Watcher
 				-- #if AFTER 7.2.0
-				--120793,	-- Mephistroth
+				-- 120793,	-- Mephistroth
 				-- #if AFTER 7.3.0
 				122314,	-- L'ura confirmed 2022-07-22
 				124729,	-- L'ura

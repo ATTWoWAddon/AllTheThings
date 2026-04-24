@@ -191,9 +191,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 44182 },	-- City Under Siege
 					["provider"] = { "n", 113986 },	-- Archmage Khadgar
 					["coord"] = { 47.6, 74.6, DEADWIND_PASS },
-					["groups"] = {
-						i(141411),	-- Translocation Anomaly Neutralization Crystal (QI!)
-					},
+					["groups"] = { i(141411) },	-- Translocation Anomaly Neutralization Crystal (QI!)
 				}),
 				q(45482, {	-- Arcane: Fate of the Tideskorn
 					["sourceQuests"] = {
@@ -204,9 +202,13 @@ root(ROOTS.Zones, {
 						90417,	-- Archmage Khadgar
 						115464,	-- Archmage Khadgar
 					},
-					["coord"] = { 22.4, 38.7, 635 },
+					["coords"] = {
+						{ 22.6, 39.2, LEGION_DALARAN },
+						{ 28.8, 48.6, LEGION_DALARAN },
+					},
 					["classes"] = { MAGE },
 					["lvl"] = 110,
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(46730, {	-- Armies of Legionfall
 					["sourceQuests"] = { 45727 },	-- Uniting the Isles
@@ -238,8 +240,12 @@ root(ROOTS.Zones, {
 						90417,	-- Archmage Khadgar
 						115464,	-- Archmage Khadgar
 					},
-					["coord"] = { 28.5, 48.3, LEGION_DALARAN },
+					["coords"] = {
+						{ 22.6, 39.2, LEGION_DALARAN },
+						{ 28.8, 48.6, LEGION_DALARAN },
+					},
 					["classes"] = { ROGUE },
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(46734, {	-- Assault on Broken Shore
 					["sourceQuests"] = { 46730 },	-- Armies of the Legionfall
@@ -394,9 +400,7 @@ root(ROOTS.Zones, {
 				q(45239, {	-- Cubic Coalescing
 					["sourceQuests"] = { 45238 },	-- Return to Karazhan: Cubic Cynosure
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
-					["groups"] = {
-						i(142536),	-- Memory Cube (TOY!)
-					},
+					["groups"] = { i(142536) },	-- Memory Cube (TOY!)
 				}),
 				q(45159, {	-- Cubic Conundrum
 					["provider"] = { "i", 142559 },	-- Mysterious Cube
@@ -404,9 +408,10 @@ root(ROOTS.Zones, {
 				q(45160, {	-- Cubic Currents
 					["sourceQuests"] = { 45159 },	-- Cubic Conundrum
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
-					["coord"] = { 41, 26.2, LEGION_DALARAN },
+					["coord"] = { 41.0, 26.2, LEGION_DALARAN },
 				}),
 				q(45125, {	-- Dabbling in the Demonic
+					["description"] = "To stabilize the portal, activate following runes: Dregla, Taam, and Talar.",
 					["sourceQuests"] = { 45916 },	-- The Acolyte Imperiled
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
 					["coord"] = { 57.9, 72.6, 629 },
@@ -450,6 +455,7 @@ root(ROOTS.Zones, {
 						{ 28.5, 48.4, LEGION_DALARAN },
 					},
 					["classes"] = { WARLOCK },
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(45560, {	-- Destruction: Rumblings Near Feltotem
 					["sourceQuests"] = {
@@ -502,7 +508,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 28.5, 48.4, LEGION_DALARAN },
 					["groups"] = {
 						i(141348, {	-- Wondrous Wisdomball (PET!)
-							["cost"] = {{"i",141349,1}},	-- Strange Humming Crystal
+							["cost"] = { { "i", 141349, 1 } },	-- Strange Humming Crystal
 							-- added cost of original quest chain start item
 						}),
 					},
@@ -516,38 +522,13 @@ root(ROOTS.Zones, {
 						90417,	-- Archmage Khadgar
 						115464,	-- Archmage Khadgar
 					},
+					["coords"] = {
+						{ 22.6, 39.2, LEGION_DALARAN },
+						{ 28.8, 48.6, LEGION_DALARAN },
+					},
 					["classes"] = { SHAMAN },	-- Shaman
 					["lvl"] = 110,
-				}),
-				q(43473, {	-- Experimental Potion: Test Subjects Needed
-					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-					["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
-					["isDaily"] = true,
-				}),
-				q(43474, {	-- Experimental Potion: Test Subjects Needed
-					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-					["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
-					["isDaily"] = true,
-				}),
-				q(43475, {	-- Experimental Potion: Test Subjects Needed
-					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-					["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
-					["isDaily"] = true,
-				}),
-				q(43477, {	-- Experimental Potion: Test Subjects Needed
-					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-					["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
-					["isDaily"] = true,
-				}),
-				q(43476, {	-- Experimental Potion: Test Subjects Needed
-					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-					["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
-					["isDaily"] = true,
-				}),
-				q(43478, {	-- Experimental Potion: Test Subjects Needed
-					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-					["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
-					["isDaily"] = true,
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(47059, {	-- Feral: The Folly of Levia Laurence
 					["sourceQuests"] = {
@@ -667,7 +648,7 @@ root(ROOTS.Zones, {
 						116302,	-- Archmage Khadgar
 					},
 					["isBreadcrumb"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
 				q(47023, {	-- Guardian: Aid of the Illidari
 					["sourceQuests"] = {
@@ -713,7 +694,7 @@ root(ROOTS.Zones, {
 							["groups"] = { i(140635) },	-- Notable Antiquities of Ancient Azeroth (QI!)
 						}),
 						--
-						i(139905),	-- Gloves of thee Arcane Purge
+						i(139905),	-- Gloves of the Arcane Purge
 						i(139934),	-- Handguards of Demonsbane
 						i(139965),	-- Grips of the Fel Destroyer
 						i(139997),	-- Gauntlets of Legion Devastation
@@ -728,7 +709,10 @@ root(ROOTS.Zones, {
 						90418,	-- Archmage Modera
 						115465,	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
+					["coords"] = {
+						{ 23.4, 39.6, LEGION_DALARAN },
+						{ 28.5, 48.9, LEGION_DALARAN },
+					},
 					["classes"] = { PALADIN },
 				}),
 				q(46078, {	-- Holy: The Bradensbrook Investigation
@@ -798,7 +782,7 @@ root(ROOTS.Zones, {
 							PRIEST,		-- Holy
 							SHAMAN,		-- Restoration
 						},
-					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
+					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
 				q(38907, {	-- Keepers of the Hammer
 					["sourceQuests"] = { 39733 },	-- The Lone Mountain
@@ -826,7 +810,7 @@ root(ROOTS.Zones, {
 						PALADIN,		-- Protection
 						WARRIOR,		-- Protection
 					},
-					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
+					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
 				q(39986, {	-- Magic Message
 					["sourceQuests"] = {
@@ -834,7 +818,10 @@ root(ROOTS.Zones, {
 						44555,	-- Khadgar's Discovery
 					},
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
+					["coords"] = {
+						{ 28.8, 48.4, LEGION_DALARAN },
+						{ 70.9, 45.0, LEGION_DALARAN },
+					},
 					["lvl"] = 110,
 				}),
 				q(47039, {	-- Marksmanship: The Twisted Twin
@@ -926,7 +913,7 @@ root(ROOTS.Zones, {
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
+					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
 				q(47058, {	-- Outlaw: The Folly of Levia Laurence
 					["sourceQuests"] = {
@@ -976,10 +963,13 @@ root(ROOTS.Zones, {
 						90431,	-- Archmage Ansirem Runeweaver
 						115466,	-- Archmage Ansirem Runeweaver
 					},
-					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
+					["coords"] = {
+						{ 22.8, 40.2, LEGION_DALARAN },
+						{ 28.5, 49.5, LEGION_DALARAN },
+					},
 					["classes"] = { PALADIN },
 				}),
-				q(45412, {	-- Protection: Aid of the Illidari (Warrior) -- this is still obtainable, confirmed in 8.3
+				q(45412, {	-- Protection: Aid of the Illidari (Warrior)	-- this is still obtainable, confirmed in 8.3
 					["sourceQuests"] = {
 						47030,	-- Legion Threat: Dalaran Inflitration
 						44821,	-- In Dire Need
@@ -998,7 +988,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 46127 },	-- Thwarting the Twins
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
 				q(47004, {	-- Restoration: The Bradensbrook Investigation (Druid version)
 					["sourceQuests"] = {
@@ -1033,8 +1023,13 @@ root(ROOTS.Zones, {
 						90417,	-- Archmage Khadgar
 						115464,	-- Archmage Khadgar
 					},
+					["coords"] = {
+						{ 22.6, 39.2, LEGION_DALARAN },
+						{ 28.8, 48.6, LEGION_DALARAN },
+					},
 					["classes"] = { PALADIN },
 					["lvl"] = 110,
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(45238, {	-- Return to Karazhan: Cubic Cynosure
 					["sourceQuests"] = { 45160 },	-- Cubic Currents
@@ -1060,47 +1055,47 @@ root(ROOTS.Zones, {
 					["isBreadcrumb"] = true,
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43894, {	-- Sealing Fate: Extraneous Order Resources
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43895, {	-- Sealing Fate: Gold
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43897, {	-- Sealing Fate: Immense Fortune of Gold
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(47851, {	-- Sealing Fate: Marks of Honor
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43892, {	-- Sealing Fate: Order Resources
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43896, {	-- Sealing Fate: Piles of Gold
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(47865, {	-- Sealing Fate: Piles of Marks of Honor
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43893, {	-- Sealing Fate: Stashed Order Resources
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
@@ -1177,14 +1172,9 @@ root(ROOTS.Zones, {
 				}),
 				q(49474, {	-- The Cursed Shard
 					["provider"] = { "i", 154880 },	-- Cursed Shard
-					["timeline"] = {
-						ADDED_7_3_5,
-						REMOVED_8_0_1
-					},
+					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["isBreadcrumb"] = true,
-					["groups"] = {
-						i(154880),	-- Cursed Shard (QI!)
-					},
+					["groups"] = { i(154880) },	-- Cursed Shard (QI!)
 				}),
 				q(42970, {	-- The Diamond King
 					["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council [A/H]
@@ -1196,8 +1186,9 @@ root(ROOTS.Zones, {
 				}),
 				q(45904, {	-- The God-Queen's Gift
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
+					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["classes"] = { PALADIN, ROGUE, SHAMAN, MAGE, WARLOCK },
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
 				q(48506, {	-- The Hand of Fate (A)
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
@@ -1229,13 +1220,15 @@ root(ROOTS.Zones, {
 						SHAMAN,			-- Elemental
 						WARRIOR,		-- Fury
 					},
-					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
+					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
-				q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
+				q(39733, {	-- The Lone Mountain
+					["description"] = "The quest is automatically acquired when players choose Highmountain from their Command Map in their order hall.",
 					["isBreadcrumb"] = true,
 				}),
 				q(47793, {	-- The Spoiled Sample
-					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "i", 151462 },	-- Spoiled Sample (QS!)
+					["timeline"] = { ADDED_7_2_5, REMOVED_8_0_1 },
 				}),
 				q(38307, {	-- The Warchief Beckons
 					["sourceQuests"] = {
@@ -1245,11 +1238,15 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 96683 },	-- Nathanos Blightcaller
 					["coord"] = { 29.4, 47.1, LEGION_DALARAN },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(128692) },	-- Royal Summons (QI!)
 				}),
 				q(45188, {	-- The Wisdom of the Council
 					["sourceQuests"] = { 45187 },	-- Secrets in the Underbelly
-					["provider"] = { "n", 116308 },	-- Karam Magespear
-					["coord"] = { 49.6, 39.4, LEGION_DALARAN },
+					["provider"] = { "n", 116308 },	-- Karam Magespear (mobileNPC)
+					["coords"] = {	-- Depends where you turn in your previous quest
+						{ 49.6, 39.4, LEGION_DALARAN },
+						{ 55.3, 63.6, LEGION_THE_UNDERBELLY },
+					},
 					["classes"] = {
 						DRUID,		-- Balance
 						HUNTER,		-- Marksmanship
@@ -1287,13 +1284,17 @@ root(ROOTS.Zones, {
 					["coord"] = { 44.9, 28.8, LEGION_DALARAN },
 					["lvl"] = 110,
 				}),
-				q(46810, {	-- To the Forge It Goes...
+				q(46810, {	-- To the Forge It Goes... [A]
+					["provider"] = { "i", 146975 },	-- Gladiator's Tattered Cloak (QS!)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- PVP wins no longer reward the quest item
+					["timeline"] = { ADDED_7_2_0, REMOVED_9_1_0 },
+					["groups"] = { i(146976) },	-- Gladiator's Tattered Cloak (QI!)
 				}),
-				q(46946, {	-- To the Forge It Goes...
+				q(46946, {	-- To the Forge It Goes... [H]
+					["provider"] = { "i", 147417 },	-- Gladiator's Tattered Cloak (QS!)
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- PVP wins no longer reward the quest item
+					["timeline"] = { ADDED_7_2_0, REMOVED_9_1_0 },
+					["groups"] = { i(146976) },	-- Gladiator's Tattered Cloak (QI!)
 				}),
 				q(39987, {	-- Trail of Echoes
 					["sourceQuests"] = { 39986 },	-- Magic Message
@@ -1340,13 +1341,25 @@ root(ROOTS.Zones, {
 					},
 				}),
 				q(47790, {	-- Unsettled Power
-					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 106655 },	-- Arcanomancer Vridiel
+					["coord"] = { 44.9, 28.8, LEGION_DALARAN },
+					["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 },
+					["groups"] = {
+						i(151375),	-- Writhing Essence (QI!)
+						--
+						i(151423),	-- Stabilized Titan Essence
+					},
 				}),
-				q(47791, {	-- Unsettled Power
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(44115, {	-- Welcome to Legion!
-					["u"] = REMOVED_FROM_GAME,
+				q(47791, {	-- Unsettled Power (Repeatable)
+					["provider"] = { "n", 106655 },	-- Arcanomancer Vridiel
+					["coord"] = { 44.9, 28.8, LEGION_DALARAN },
+					["repeatable"] = true,
+					["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 },
+					["groups"] = {
+						i(151375),	-- Writhing Essence (QI!)
+						--
+						i(151423),	-- Stabilized Titan Essence
+					},
 				}),
 				q(46314, {	-- Vengeance: Seeking Kor'vas
 					["sourceQuests"] = {
@@ -1382,7 +1395,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["maps"] = { 888 },	-- Hall of Communion
 					["lvl"] = 110,
-				--	unsure if there are prerequisites for this quest.
+					-- unsure if there are prerequisites for this quest.
 				}),
 				q(46206, {	-- Whispers of a Frightened World
 					["u"] = REMOVED_FROM_GAME,	-- version that used to be automatically given?
@@ -1400,8 +1413,10 @@ root(ROOTS.Zones, {
 					["classes"] = { MONK },
 				}),
 				q(45908, {	-- Xylem's Gift
+					["sourceQuest"] = 45570,	-- In Safer Hands
 					["provider"] = { "n", 105081 },	-- Archmage Kalec
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 23.0, 40.6, LEGION_DALARAN },
+					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
 			}),
 		}),

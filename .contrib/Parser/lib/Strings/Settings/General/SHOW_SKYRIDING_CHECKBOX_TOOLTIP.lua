@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "如果想在游戏中显示需要驭空术的内容，请启用此设置。",
-		-- TODO: tw = "",
+		tw = "如果想在遊戲中顯示需要天空騎術的內容，請啟用此選項。",
 	},
 })

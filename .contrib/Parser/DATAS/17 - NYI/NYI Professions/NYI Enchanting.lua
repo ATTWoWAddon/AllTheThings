@@ -65,8 +65,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.TWW, {
 				-- 11.1.0
 				expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
-					i(230985),	-- Nascent Runed Undermine Crest
 					i(230986),	-- Nascent Gilded Undermine Crest
+					i(230985),	-- Nascent Runed Undermine Crest
 					i(230987),	-- Nascent Weathered Undermine Crest
 				})),
 
@@ -78,6 +78,24 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(238404),	-- Enchant Weapon - Twilight Devastation
 					i(239089),	-- Enchant Weapon - Twisted Appendage
 					i(239094),	-- Enchant Weapon - Void Ritual
+				})),
+
+				-- 11.2.0
+				expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+					i(231775),	-- Nascent Gilded Ethereal Crest
+					i(231776),	-- Nascent Runed Ethereal Crest
+					i(231774),	-- Nascent Weathered Ethereal Crest
+				})),
+			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					i(268032),	-- Conjured Illusory Adornment - Blooming Light
+					i(268033),	-- Conjured Illusory Adornment - Nature's Embrace
+					i(268034),	-- Conjured Illusory Adornment - Voidtouched
+					i(243434),	-- Enchant Shoulders - Nature's Embrace
+					i(243442),	-- Enchant Shoulders - Voidtouched
+					i(243448),	-- Illusory Adornment - Blooming Light
 				})),
 			}),
 		}),
@@ -261,19 +279,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
-					r(309628),	--	9.0 Enchanting - Modified Crafting Reagent 01
-					r(309629),	--	9.0 Enchanting - Modified Crafting Reagent 02
-					r(309630),	--	9.0 Enchanting - Modified Crafting Reagent 03
-					r(309631),	--	9.0 Enchanting - Modified Crafting Reagent 04
-					r(309632),	--	9.0 Enchanting - Modified Crafting Reagent 05
-					r(309633),	--	9.0 Enchanting - Modified Crafting Reagent 06
-					r(309634),	--	9.0 Enchanting - Modified Crafting Reagent 07
-					r(309635),	--	9.0 Enchanting - Modified Crafting Reagent 08
-					r(343682),	--	Crafter's Mark III
-					r(343681),	--	Crafter's Mark IV
+					r(309628),	-- 9.0 Enchanting - Modified Crafting Reagent 01
+					r(309629),	-- 9.0 Enchanting - Modified Crafting Reagent 02
+					r(309630),	-- 9.0 Enchanting - Modified Crafting Reagent 03
+					r(309631),	-- 9.0 Enchanting - Modified Crafting Reagent 04
+					r(309632),	-- 9.0 Enchanting - Modified Crafting Reagent 05
+					r(309633),	-- 9.0 Enchanting - Modified Crafting Reagent 06
+					r(309634),	-- 9.0 Enchanting - Modified Crafting Reagent 07
+					r(309635),	-- 9.0 Enchanting - Modified Crafting Reagent 08
+					r(343682),	-- Crafter's Mark III
+					r(343681),	-- Crafter's Mark IV
 					-- Without SpellID attached
-					i(182666),	--	Formula: Enchanted Elethium Bar
-					i(183866),	--	Formula: Crafter's Mark III
+					i(182666),	-- Formula: Enchanted Elethium Bar
+					i(183866),	-- Formula: Crafter's Mark III
 				})),
 			}),
 			expansion(EXPANSION.DF, {
@@ -303,9 +321,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 11.1.0
 				expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 					-- Without SpellID attached
-					i(230931),	-- Formula: Enchanted Weathered Undermine Crest
-					i(230932),	-- Formula: Enchanted Runed Undermine Crest
 					i(230933),	-- Formula: Enchanted Gilded Undermine Crest
+					i(230932),	-- Formula: Enchanted Runed Undermine Crest
+					i(230931),	-- Formula: Enchanted Weathered Undermine Crest
 				})),
 
 				-- 11.1.5
@@ -323,6 +341,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(238406),	-- Formula: Enchant Weapon - Twilight Devastation
 					i(239091),	-- Formula: Enchant Weapon - Twisted Appendage
 					i(239096),	-- Formula: Enchant Weapon - Void Ritual
+				})),
+
+				-- 11.2.0
+				expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+					-- Without SpellID attached
+					i(231770),	-- Formula: Enchanted Gilded Ethereal Crest
+					i(231771),	-- Formula: Enchanted Runed Ethereal Crest
+					i(231772),	-- Formula: Enchanted Weathered Ethereal Crest
 				})),
 			}),
 		}),

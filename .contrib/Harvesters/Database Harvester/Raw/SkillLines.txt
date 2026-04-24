@@ -1,4 +1,4 @@
-0.5.3.3368
+﻿0.5.3.3368
 6@@@Frost Magic
 8@@@Fire Magic
 26@@@Combat Maneuvers
@@ -673,3 +673,5 @@
 2930@@@Racial - Haranir
 2950@@@Alchemy Research
 2961@@@Pet - Exotic Whiptail
+12.0.1.64889
+2987@@@Language: Hara'ni

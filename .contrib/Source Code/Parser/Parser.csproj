@@ -92,6 +92,8 @@
     <Compile Include="DB\Attributes\LocalizeAttribute.cs" />
     <Compile Include="DB\Types\HolidayNames.cs" />
     <Compile Include="DB\Types\Holiday.cs" />
+    <Compile Include="DB\Types\HouseDecor.cs" />
+    <Compile Include="DB\Types\SkillLineAbility.cs" />
     <Compile Include="DB\Types\UiMapAssignment.cs" />
     <Compile Include="DB\Types\UiMap.cs" />
     <Compile Include="DB\Types\ContentTuning.cs" />
@@ -136,6 +138,7 @@
     <Compile Include="Export\Object Data\MountData.cs" />
     <Compile Include="Export\Object Data\ObjectData.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="FieldTypes\Providers.cs" />
     <Compile Include="FieldTypes\Coords.cs" />
     <Compile Include="FieldTypes\Cost.cs" />
     <Compile Include="FieldTypes\IExportableField.cs" />

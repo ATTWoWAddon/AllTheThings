@@ -1,18 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(WORLD_QUESTS, {
 		n(QUESTS, sharedData({
 			["isWorldQuest"] = true,
 		},{
-			q(55664, {	-- A Blow to Morale
-				["races"] = HORDE_ONLY,
-			}),
 			q(56036, {	-- A Steamy Situation
-				["groups"] = {
-					i(168666),	-- Hefty Glimmershell (QI!)
-				},
+				i(168666),	-- Hefty Glimmershell (QI!)
 			}),
 			q(55970),	-- Attrition
 			q(55893),	-- Azanz, the Slitherblade
@@ -25,22 +21,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(55890),	-- Champion Vyz'olgo the Mind-Taker
 			petbattle(q(56382)),	-- Chomp
 			q(57353, {	-- Deepcoil Cleansing
-				["groups"] = {
 					i(171257),	-- Voidtinged Substance (QI!)
-				},
 			}),
 			q(55973, {	-- Deepcoil Experiments
-				["groups"] = {
-					i(168634),	-- Telemancy Beacon (QI!)
-				},
+				i(168634),	-- Telemancy Beacon (QI!)
 			}),
 			q(57338),	-- Depopulation Effort
 			q(56032),	-- Dirty Dozen
 			petbattle(q(56386)),	-- Elderspawn of Nalaada
 			q(57340, {	-- Fathom Ray Feast
-				["groups"] = {
-					i(171254),	-- Fathom Ray Meat (QI!)
-				},
+				i(171254),	-- Fathom Ray Meat (QI!)
 			}),
 			petbattle(q(56391)),	-- Frenzied Knifefang
 			q(55895),	-- Frozen Winds of Zhiela
@@ -54,14 +44,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(56023),	-- Leylocked Chest
 			q(56024),	-- Leylocked Chest
 			q(56025),	-- Leylocked Chest
-			q(56388),	-- Mindshackle
+			petbattle(q(56388)),	-- Mindshackle
 			q(57335),	-- Murloc Mayhem
 			q(57354, {	-- Overdue
-				["groups"] = {
-					i(171262),	-- Shirakess Grimoire (QI!)
-				},
+				i(171262),	-- Shirakess Grimoire (QI!)
 			}),
-			q(56385),	-- Pearlhusk Crawler
+			petbattle(q(56385)),	-- Pearlhusk Crawler
 			petbattle(q(56381)),	-- Prince Wiggletail
 			q(57336),	-- Putting the Past to Rest
 			petbattle(q(56387)),	-- Ravenous Scalespawn
@@ -125,7 +113,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				},
 			}),
 			petbattle(q(56384)),	-- Shadowspike Lurker
-			q(56383),	-- Silence
+			petbattle(q(56383)),	-- Silence
 			q(55899),	-- Starseeker of the Shirakess
 			q(55897),	-- Szun, Breaker of Slaves
 			q(55898),	-- Tempest-Speaker Shalan'ali
@@ -142,7 +130,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(57330),	-- Time for Revenge
 			q(56078),	-- Time to Krill
 			q(55896),	-- Undana, Chilling Assassin
-			q(56390),	-- Voltgorger
+			petbattle(q(56390)),	-- Voltgorger
 			q(56795, {	-- Work Order: Abyssal-Fried Rissole (A)
 				["requireSkill"] = COOKING,
 				["races"] = ALLIANCE_ONLY,

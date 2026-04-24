@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -48,7 +49,7 @@ root(ROOTS.Zones, {
 							77789,	-- Severing Ties
 						},
 						["provider"] = { "n", 208836 },	-- Arzal'kal
-						["coord"] = { 73, 32.3, KROKUUN },
+						["coord"] = { 73.0, 32.3, KROKUUN },
 						["groups"] = {
 							ach(18854),	-- Seeing Red
 							i(208658),	-- Mirror of Humility (TOY!)

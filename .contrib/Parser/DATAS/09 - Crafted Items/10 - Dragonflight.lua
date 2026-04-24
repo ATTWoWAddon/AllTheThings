@@ -35,8 +35,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight
 	i(204462, {["timeline"] = {ADDED_10_1_0}}),	-- Dracothyst Shards
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		o_repeated({	-- Dragonpine Lumber
+			["maps"] = {
+				AMIRDRASSIL,
+				EMERALD_DREAM,
+				OHNAHRAN_PLAINS,
+				THALDRASZUS,
+				THE_AZURE_SPAN,
+				THE_FORBIDDEN_REACH,
+				THE_WAKING_SHORES,
+			},
+			["groups"] = {
+				-- Objects
+				o(547740),	-- [Amirdrassil]
+				o(555364),	-- [Emerald Dream]
+				o(547487),	-- [Ohn'ahran Plains]
+				o(551833),	-- [Thaldraszus/Valdrakken]
+				o(549325),	-- [The Azure Span/Traitor's Rest]
+				o(546955),	-- [The Forbidden Reach]
+				o(547258),	-- [The Waking Shores]
+				-- Drops
+				i(251773),	-- Dragonpine Lumber
+			},
+		}),
+	})),
 	prof(ALCHEMY, {
-		spell(370747, {	-- Advanced Phial Experimentation
+		header(HEADERS.Spell, 370747, {	-- Advanced Phial Experimentation
 			["sym"] = {{"select","spellID",370746},{"extract","recipeID"}},	-- Basic Phial Experimentation -> Recipes
 			["groups"] = {
 				i(193366, {	-- Advanced Phial Experimentation
@@ -50,7 +75,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				}),
 			},
 		}),
-		spell(370745, {	-- Advanced Potion Experimentation
+		header(HEADERS.Spell, 370745, {	-- Advanced Potion Experimentation
 			-- Nothing moved to Basic yet, so don't symlink to it
 			-- ["sym"] = {{"select","spellID",370743},{"extract","recipeID"}},	-- Basic Potion Experimentation -> Recipes
 			["groups"] = {
@@ -82,7 +107,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				}),
 			},
 		}),
-		spell(370746, {	-- Basic Phial Experimentation
+		header(HEADERS.Spell, 370746, {	-- Basic Phial Experimentation
 			i(192180,{	-- Basic Phial Experimentation
 				-- Recipes Discoverable
 				r(370472),	-- Aerated Phial of Deftness (RECIPE!)
@@ -98,7 +123,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 		}),
-		spell(370743, {	-- Basic Potion Experimentation
+		header(HEADERS.Spell, 370743, {	-- Basic Potion Experimentation
 			i(193365,{	-- Basic Potion Experimentation
 				-- Recipes Discoverable
 			}),
@@ -340,9 +365,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(71245, 370676);	-- Sustaining Alchemist Stone
 			-- Artisan Curios
 			FirstCraft(74308, 400270, ADDED_10_0_7);	-- Draconic Suppression Powder
-			-- Decor
-			--FirstCraft(XXXXX, 1261882, ADDED_11_2_7);	-- Dragon's Elixir Bottle
-			--FirstCraft(XXXXX, 1261885, ADDED_11_2_7);	-- Verdant Valdrakken Vase
 		})),
 		filter(MISC, {
 			i(191520),	-- Agitating Potion Augmentation+
@@ -594,9 +616,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(74477, 400808, ADDED_10_0_7);	-- Ancient Ceremonial Trident
 			-- Legendary
 			FirstCraft(75418, 409224, ADDED_10_1_0);	-- Reclaimed Gauntlet Chassis
-			-- Decor
-			--FirstCraft(XXXXX, 1261892, ADDED_11_2_7);	-- Valdrakken Hanging Cauldron
-			--FirstCraft(XXXXX, 1261896, ADDED_11_2_7);	-- Wingrest Signal Brazier
 		})),
 		filter(MISC, {
 			i(203408, {["timeline"] = {ADDED_10_0_7}}),	-- Ancient Ceremonial Trident
@@ -758,72 +777,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(197770),	-- Zesty Water
 	}),
 	prof(ENCHANTING, {
-		n(DISCOVERY, sharedData({
-			["requireSkill"] = ENCHANTING,
-		},{
-			r(391185, {	-- Primal Invocation Extract
-				["description"] = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",
-				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
-				["provider"] = {"s",13262},	-- Disenchant
-				["sourceQuests"] = {
-					71936,	-- Disenchanted Glimmer of Air
-					71937,	-- Disenchanted Glimmer of Earth
-					71934,	-- Disenchanted Glimmer of Fire
-					71935,	-- Disenchanted Glimmer of Frost
-					71938,	-- Disenchanted Glimmer of Order
-				},
-			}),
-			hqt(71936, {
-				["name"] = "Disenchanted Glimmer of Air",
-				["sourceQuest"] = 71939,	-- Glimmer of Air Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201358,1}},	-- Glimmer of Air
-			}),
-			hqt(71937, {
-				["name"] = "Disenchanted Glimmer of Earth",
-				["sourceQuest"] = 71940,	-- Glimmer of Earth Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201359,1}},	-- Glimmer of Earth
-			}),
-			hqt(71934, {
-				["name"] = "Disenchanted Glimmer of Fire",
-				["sourceQuest"] = 71941,	-- Glimmer of Fire Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201356,1}},	-- Glimmer of Fire
-			}),
-			hqt(71935, {
-				["name"] = "Disenchanted Glimmer of Frost",
-				["sourceQuest"] = 71942,	-- Glimmer of Frost Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201357,1}},	-- Glimmer of Frost
-			}),
-			hqt(71938, {
-				["name"] = "Disenchanted Glimmer of Order",
-				["sourceQuest"] = 71943,	-- Glimmer of Order Drop
-				["provider"] = {"s",13262},	-- Disenchant
-				["cost"] = {{"i",201360,1}},	-- Glimmer of Order
-			}),
-			itemDropHQT(201358, 71939),	-- Glimmer of Air Drop
-			itemDropHQT(201359, 71940),	-- Glimmer of Earth Drop
-			itemDropHQT(201356, 71941),	-- Glimmer of Fire Drop
-			itemDropHQT(201357, 71942),	-- Glimmer of Frost Drop
-			itemDropHQT(201360, 71943),	-- Glimmer of Order Drop
-		})),
-		spell(392888, {	-- Disenchant
-			i(194123),	-- Chromatic Dust
-			i(200113),	-- Resonant Crystal
-			i(194124),	-- Vibrant Shard
-			i(201360, {	-- Glimmer of Order
-				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
-			}),
-		}),
-		spell(391304, {	-- Elemental Shatter
-			i(200969),	-- Elemental Shatter: Air
-			i(200984),	-- Elemental Shatter: Earth
-			i(200989),	-- Elemental Shatter: Fire
-			i(200991),	-- Elemental Shatter: Frost
-			i(200994),	-- Elemental Shatter: Order
-		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(199934),	-- Enchant Boots - Plainsrunner's Breeze+
 			i(199976),	-- Enchant Boots - Plainsrunner's Breeze++
@@ -910,10 +863,80 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		filter(BATTLE_PETS, {
 			i(200479),	-- Sophic Amalgamation (PET!)
 		}),
+		header(HEADERS.Spell, 391302, {	-- Crystalline Shatter
+			i(200647),	-- Crystalline Shatter
+		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(256170),	-- Draconic Scribe's Basin (DECOR!)
 			i(256171),	-- Five Flights' Grimoire (DECOR!)
 		})),
+		n(DISCOVERY, sharedData({
+			["requireSkill"] = ENCHANTING,
+		},{
+			r(391185, {	-- Primal Invocation Extract
+				["description"] = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",
+				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
+				["provider"] = {"s",13262},	-- Disenchant
+				["sourceQuests"] = {
+					71936,	-- Disenchanted Glimmer of Air
+					71937,	-- Disenchanted Glimmer of Earth
+					71934,	-- Disenchanted Glimmer of Fire
+					71935,	-- Disenchanted Glimmer of Frost
+					71938,	-- Disenchanted Glimmer of Order
+				},
+			}),
+			hqt(71936, {
+				["name"] = "Disenchanted Glimmer of Air",
+				["sourceQuest"] = 71939,	-- Glimmer of Air Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201358,1}},	-- Glimmer of Air
+			}),
+			hqt(71937, {
+				["name"] = "Disenchanted Glimmer of Earth",
+				["sourceQuest"] = 71940,	-- Glimmer of Earth Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201359,1}},	-- Glimmer of Earth
+			}),
+			hqt(71934, {
+				["name"] = "Disenchanted Glimmer of Fire",
+				["sourceQuest"] = 71941,	-- Glimmer of Fire Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201356,1}},	-- Glimmer of Fire
+			}),
+			hqt(71935, {
+				["name"] = "Disenchanted Glimmer of Frost",
+				["sourceQuest"] = 71942,	-- Glimmer of Frost Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201357,1}},	-- Glimmer of Frost
+			}),
+			hqt(71938, {
+				["name"] = "Disenchanted Glimmer of Order",
+				["sourceQuest"] = 71943,	-- Glimmer of Order Drop
+				["provider"] = {"s",13262},	-- Disenchant
+				["cost"] = {{"i",201360,1}},	-- Glimmer of Order
+			}),
+			itemDropHQT(201358, 71939),	-- Glimmer of Air Drop
+			itemDropHQT(201359, 71940),	-- Glimmer of Earth Drop
+			itemDropHQT(201356, 71941),	-- Glimmer of Fire Drop
+			itemDropHQT(201357, 71942),	-- Glimmer of Frost Drop
+			itemDropHQT(201360, 71943),	-- Glimmer of Order Drop
+		})),
+		header(HEADERS.Spell, 392888, {	-- Disenchant
+			i(194123),	-- Chromatic Dust
+			i(200113),	-- Resonant Crystal
+			i(194124),	-- Vibrant Shard
+			i(201360, {	-- Glimmer of Order
+				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
+			}),
+		}),
+		header(HEADERS.Spell, 391304, {	-- Elemental Shatter
+			i(200648),	-- Elemental Shatter
+			i(200969),	-- Elemental Shatter: Air
+			i(200984),	-- Elemental Shatter: Earth
+			i(200989),	-- Elemental Shatter: Fire
+			i(200991),	-- Elemental Shatter: Frost
+			i(200994),	-- Elemental Shatter: Order
+		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
 		},{
@@ -1013,9 +1036,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(75235, 405937, ADDED_10_1_0, REMOVED_TWW_LAUNCH);	-- Titan Training Matrix V
 			-- Legendary
 			FirstCraft(78011, 422338, ADDED_10_2_0);	-- Shalasar's Sophic Vellum
-			-- Decor
-			--FirstCraft(XXXXX, 1261933, ADDED_11_2_7);	-- Draconic Scribe's Basin
-			--FirstCraft(XXXXX, 1261919, ADDED_11_2_7);	-- Five Flights' Grimoire
 		})),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air (ILLUSION!)
@@ -1157,40 +1177,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(ENGINEERING, {
-		n(DISCOVERY, {
-			["description"] = "Multiple Ways of Discovering.",
-			["groups"] = {
-				r(382350),	-- Calibrated Safety Switch
-				r(382319),	-- Complicated Cuffs
-				r(382349),	-- Critical Failure Prevention Unit
-				r(382320),	-- Difficult Wrist Protectors
-				r(382317),	-- Overengineered Sleeve Extenders
-				r(382318),	-- Needlessly Complex Wristguards
-				r(384491),	-- Spring-Loaded Capacitor Casing
-			},
-		}),
-		spell(382330, {	-- Creature Combustion Canister
-			r(382355),	-- EZ-Thro Creature Combustion Canister
-		}),
-		spell(382343, {	-- Gravitational Displacer
-			r(382356),	-- EZ-Thro Gravitational Displacer
-		}),
-		spell(382323, {	-- Grease Grenade
-			r(386670),	-- EZ-Thro Grease Grenade
-		}),
-		spell(382378, {	-- Greased-Up Gears
-			r(382363),	-- Meticulously-Tuned Gear
-			r(382364),	-- One-Size-Fits-All Gear
-			r(382362),	-- Rapidly Ticking Gear
-			r(382361),	-- Razor-Sharp Gear
-		}),
-		spell(407005, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Polarity Bomb
-			r(407006),	-- EZ-Thro Polarity Bomb
-		})),
-		spell(382322, {	-- Primal Deconstruction Charge
-			r(382357),	-- EZ-Thro Primal Deconstruction Charge
-		}),
-		spell(382374, {	-- Rummage Through Scrap
+		header(HEADERS.Spell, 382374, {	-- Rummage Through Scrap
 			["cost"] = {{"i",198651,5}},	-- Piece of Scrap
 			["groups"] = {
 				i(202309, {["timeline"] = {ADDED_10_0_5}}),	-- Defective Doomsday Device (TOY!)
@@ -1253,6 +1240,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 		filter(BATTLE_PETS, {
 			i(193572),	-- Quack-E (PET!)
+		}),
+		header(HEADERS.Spell, 382330, {	-- Creature Combustion Canister
+			r(382355),	-- EZ-Thro Creature Combustion Canister
+		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248113),	-- Thaldraszus Telescope (DECOR!)
+			i(258253),	-- Titanic Tyrhold Fountain (DECOR!)
+		})),
+		n(DISCOVERY, {
+			["description"] = "Multiple Ways of Discovering.",
+			["groups"] = {
+				r(382350),	-- Calibrated Safety Switch
+				r(382319),	-- Complicated Cuffs
+				r(382349),	-- Critical Failure Prevention Unit
+				r(382320),	-- Difficult Wrist Protectors
+				r(382317),	-- Overengineered Sleeve Extenders
+				r(382318),	-- Needlessly Complex Wristguards
+				r(384491),	-- Spring-Loaded Capacitor Casing
+			},
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENGINEERING,
@@ -1383,6 +1389,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Legendary
 			FirstCraft(75435, 407170, ADDED_10_1_0);	-- Inspired Order Recalibrator
 		})),
+		header(HEADERS.Spell, 382343, {	-- Gravitational Displacer
+			r(382356),	-- EZ-Thro Gravitational Displacer
+		}),
+		header(HEADERS.Spell, 382323, {	-- Grease Grenade
+			r(386670),	-- EZ-Thro Grease Grenade
+		}),
+		header(HEADERS.Spell, 382378, {	-- Greased-Up Gears
+			r(382363),	-- Meticulously-Tuned Gear
+			r(382364),	-- One-Size-Fits-All Gear
+			r(382362),	-- Rapidly Ticking Gear
+			r(382361),	-- Razor-Sharp Gear
+		}),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
 			i(198222),	-- Blue Fireflight
@@ -1429,6 +1447,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198180),	-- D.U.C.K.O.Y.+
 			i(198181),	-- D.U.C.K.O.Y.++
 			i(198182),	-- D.U.C.K.O.Y.+++
+			i(202310, {["provider"]={"i",202309}}),	-- Defective Doomsday Device
 			i(198163),	-- Endless Stack of Needles+
 			i(198164),	-- Endless Stack of Needles++
 			i(198165),	-- Endless Stack of Needles+++
@@ -1519,6 +1538,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Weird
 			i(198650),	-- Rummage Through Scrap
 		}),
+		header(HEADERS.Spell, 407005, {	-- Polarity Bomb
+			["timeline"] = { ADDED_10_1_0 },
+			["groups"] = { r(407006) },	-- EZ-Thro Polarity Bomb
+		}),
+		header(HEADERS.Spell, 382322, {	-- Primal Deconstruction Charge
+			r(382357),	-- EZ-Thro Primal Deconstruction Charge
+		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(198204, {["requireSkill"] = ENGINEERING}),	-- Draconium Brainwave Amplifier
 			i(198243, {["requireSkill"] = MINING}),	-- Draconium Delver's Helmet
@@ -1527,7 +1553,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198205, {["requireSkill"] = ENGINEERING}),	-- Khaz'gorite Brainwave Amplifier
 			i(198244, {["requireSkill"] = MINING}),	-- Khaz'gorite Delver's Helmet
 			i(198226, {["requireSkill"] = FISHING}),	-- Khaz'gorite Fisherfriend
-			i(198246, {["requireSkill"] = ENGINEERING}),	-- Khaz'gorite Encased Samophlange
+			i(198246, {	-- Khaz'gorite Encased Samophlange
+				["requireSkill"] = ENGINEERING,
+				-- #if AFTER 12.0.0
+				["ItemAppearanceModifierID"] = 6
+				-- #endif
+			}),
 			i(198234, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Draconium Clamps
 			i(198235, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Khaz'gorite Clamps
 			i(194125, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Draconium Fabric Cutters
@@ -1612,6 +1643,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				i(205128, {["timeline"] = {ADDED_10_1_0}}),	-- Technique: Winding Slitherdrake: Yellow and Silver Armor (RECIPE!)
 			},
 		}),
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 		i(194967),	-- Aileron Seamoth
 		i(194968),	-- Cerulean Spinefish
 		i(199338),	-- Copper Coin of the Isles
@@ -1633,14 +1669,65 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(198614),	-- Soggy Clump of Darkmoon Cards
 		i(194969),	-- Temporal Dragonhead
 		i(194966),	-- Thousandbite Piranha
-		filter(RECIPES, {
-			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
-			}),
-		}),
 	}),
 	prof(HERBALISM, {
-		spell(2366, {	-- Herb Gathering
+		n(DISCOVERY, {
+			header(HEADERS.Map, EMERALD_DREAM, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 }, }, {
+				["groups"] = sharedData({
+					["maps"] = { EMERALD_DREAM }
+				},{
+					r_withQuest(421176, 77824),	-- Overgrown Bubble Poppy
+					r_withQuest(421224, 77823),	-- Overgrown Hochenblume
+					r_withQuest(421226, 77826),	-- Overgrown Saxifrage
+					r_withQuest(421227, 77825),	-- Overgrown Writhebark
+					r_withQuest(422293, 78007),	-- Overload Overgrown Herb
+				}),
+			})),
+			header(HEADERS.Map, ZARALEK_CAVERN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 }, }, {
+				["groups"] = sharedData({
+					["maps"] = { ZARALEK_CAVERN }
+				},{
+					r_withQuest(405124, 75142),	-- Lambent Bubble Poppy
+					r_withQuest(405123, 75141),	-- Lambent Hochenblume
+					r_withQuest(405126, 75143),	-- Lambent Saxifrage
+					r_withQuest(405127, 75144),	-- Lambent Writhebark
+					r_withQuest(405134, 75138),	-- Overload Lambent Herb
+				}),
+			})),
+			r_withQuest(391444, 71972),	-- Bubble Poppy
+			r_withQuest(391507, 71990),	-- Decayed Bubble Poppy
+			r_withQuest(391492, 71988),	-- Decayed Hochenblume
+			r_withQuest(391500, 71991),	-- Decayed Saxifrage
+			r_withQuest(391508, 71989),	-- Decayed Writhebark
+			r_withQuest(391509, 71982),	-- Frigid Bubble Poppy
+			r_withQuest(391460, 71980),	-- Frigid Hochenblume
+			r_withQuest(391501, 71983),	-- Frigid Saxifrage
+			r_withQuest(391510, 71981),	-- Frigid Writhebark
+			r_withQuest(391505, 71994),	-- Infurious Bubble Poppy
+			r_withQuest(391498, 71992),	-- Infurious Hochenblume
+			r_withQuest(391499, 72341),	-- Infurious Saxifrage
+			r_withQuest(391506, 71993),	-- Infurious Writhebark
+			r_withQuest(391511, 71973),	-- Lush Bubble Poppy
+			r_withQuest(391415, 71969),	-- Lush Hochenblume
+			r_withQuest(391502, 71975),	-- Lush Saxifrage
+			r_withQuest(391512, 71971),	-- Lush Writhebark
+			r_withQuest(391564, 72345),	-- Overload Decayed Herb
+			r_withQuest(391562, 72343),	-- Overload Frigid Herb
+			r_withQuest(391558, 72348),	-- Overload Infurious Herb
+			r_withQuest(391557, 72344),	-- Overload Titan-Touched Herb
+			r_withQuest(391560, 72342),	-- Overload Windswept Herb
+			r_withQuest(391441, 71974),	-- Saxifrage
+			r_withQuest(391513, 71986),	-- Titan-Touched Bubble Poppy
+			r_withQuest(391496, 71984),	-- Titan-Touched Hochenblume
+			r_withQuest(391503, 71987),	-- Titan-Touched Saxifrage
+			r_withQuest(391514, 71985),	-- Titan-Touched Writhebark
+			r_withQuest(391515, 71978),	-- Windswept Bubble Poppy
+			r_withQuest(391431, 71976),	-- Windswept Hochenblume
+			r_withQuest(391504, 71979),	-- Windswept Saxifrage
+			r_withQuest(391516, 71977),	-- Windswept Writhebark
+			r_withQuest(391447, 71970),	-- Writhebark
+		}),
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
 			i(191467),	-- Bubble Poppy+
 			i(191468),	-- Bubble Poppy++
 			i(191469),	-- Bubble Poppy+++
@@ -1664,116 +1751,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(191471),	-- Writhebark++
 			i(191472),	-- Writhebark+++
 		}),
-		n(DISCOVERY, {
-			header(HEADERS.Map, EMERALD_DREAM, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 }, }, {
-				["groups"] = sharedData({
-					["maps"] = { EMERALD_DREAM }
-				},{
-					r(422293),	-- Overload Overgrown Herb
-					r(421176),	-- Overgrown Bubble Poppy
-					r(421224),	-- Overgrown Hochenblume
-					r(421226),	-- Overgrown Saxifrage
-					r(421227),	-- Overgrown Writhebark
-				}),
-			})),
-			header(HEADERS.Map, ZARALEK_CAVERN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 }, }, {
-				["groups"] = sharedData({
-					["maps"] = { ZARALEK_CAVERN }
-				},{
-					r(405124),	-- Lambent Bubble Poppy
-					r(405123),	-- Lambent Hochenblume
-					r(405126),	-- Lambent Saxifrage
-					r(405127),	-- Lambent Writhebark
-					r(405134),	-- Overload Lambent Herb
-				}),
-			})),
-			r(391444),	-- Bubble Poppy
-			r(391507),	-- Decayed Bubble Poppy
-			r(391492),	-- Decayed Hochenblume
-			r(391500),	-- Decayed Saxifrage
-			r(391508),	-- Decayed Writhebark
-			r(391509),	-- Frigid Bubble Poppy
-			r(391460),	-- Frigid Hochenblume
-			r(391501),	-- Frigid Saxifrage
-			r(391510),	-- Frigid Writhebark
-			r(391505),	-- Infurious Bubble Poppy
-			r(391498),	-- Infurious Hochenblume
-			r(391499),	-- Infurious Saxifrage
-			r(391506),	-- Infurious Writhebark
-			r(391511),	-- Lush Bubble Poppy
-			r(391415),	-- Lush Hochenblume
-			r(391502),	-- Lush Saxifrage
-			r(391512),	-- Lush Writhebark
-			r(391564),	-- Overload Decayed Herb
-			r(391562),	-- Overload Frigid Herb
-			r(391558),	-- Overload Infurious Herb
-			r(391557),	-- Overload Titan-Touched Herb
-			r(391560),	-- Overload Windswept Herb
-			r(391441),	-- Saxifrage
-			r(391513),	-- Titan-Touched Bubble Poppy
-			r(391496),	-- Titan-Touched Hochenblume
-			r(391503),	-- Titan-Touched Saxifrage
-			r(391514),	-- Titan-Touched Writhebark
-			r(391515),	-- Windswept Bubble Poppy
-			r(391431),	-- Windswept Hochenblume
-			r(391504),	-- Windswept Saxifrage
-			r(391516),	-- Windswept Writhebark
-			r(391447),	-- Writhebark
-		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = HERBALISM,
-		},{
-			-- Bubble Poppy
-			FirstCraft(71972, 391444);	-- Bubble Poppy
-			FirstCraft(71990, 391507);	-- Decayed Bubble Poppy
-			FirstCraft(71982, 391509);	-- Frigid Bubble Poppy
-			FirstCraft(71994, 391505);	-- Infurious Bubble Poppy
-			FirstCraft(75142, 405124, ADDED_10_1_0);	-- Lambent Bubble Poppy
-			FirstCraft(71973, 391511);	-- Lush Bubble Poppy
-			FirstCraft(77824, 421176, ADDED_10_2_0);	-- Overgrown Bubble Poppy
-			FirstCraft(71986, 391513);	-- Titan-Touched Bubble Poppy
-			FirstCraft(71978, 391515);	-- Windswept Bubble Poppy
-			-- Hochenblume
-			FirstCraft(71988, 391492);	-- Decayed Hochenblume
-			FirstCraft(71980, 391460);	-- Frigid Hochenblume
-			FirstCraft(71992, 391498);	-- Infurious Hochenblume
-			FirstCraft(75141, 405123, ADDED_10_1_0);	-- Lambent Hochenblume
-			FirstCraft(71969, 391415);	-- Lush Hochenblume
-			FirstCraft(77823, 421224, ADDED_10_2_0);	-- Overgrown Hochenblume
-			FirstCraft(71984, 391496);	-- Titan-Touched Hochenblume
-			FirstCraft(71976, 391431);	-- Windswept Hochenblume
-			-- Saxifrage
-			FirstCraft(71974, 391441);	-- Saxifrage
-			FirstCraft(71991, 391500);	-- Decayed Saxifrage
-			FirstCraft(71983, 391501);	-- Frigid Saxifrage
-			FirstCraft(72341, 391499);	-- Infurious Saxifrage
-			FirstCraft(75143, 405126, ADDED_10_1_0);	-- Lambent Saxifrage
-			FirstCraft(71975, 391502);	-- Lush Saxifrage
-			FirstCraft(77826, 421226, ADDED_10_2_0);	-- Overgrown Saxifrage
-			FirstCraft(71987, 391503);	-- Titan-Touched Saxifrage
-			FirstCraft(71979, 391504);	-- Windswept Saxifrage
-			-- Writhebark
-			FirstCraft(71970, 391447);	-- Writhebark
-			FirstCraft(71989, 391508);	-- Decayed Writhebark
-			FirstCraft(71981, 391510);	-- Frigid Writhebark
-			FirstCraft(71993, 391506);	-- Infurious Writhebark
-			FirstCraft(75144, 405127, ADDED_10_1_0);	-- Lambent Writhebark
-			FirstCraft(71971, 391512);	-- Lush Writhebark
-			FirstCraft(77825, 421227, ADDED_10_2_0);	-- Overgrown Writhebark
-			FirstCraft(71985, 391514);	-- Titan-Touched Writhebark
-			FirstCraft(71977, 391516);	-- Windswept Writhebark
-			-- Overload
-			FirstCraft(72345, 391564);	-- Overload Decayed Herb
-			FirstCraft(72343, 391562);	-- Overload Frigid Herb
-			FirstCraft(72348, 391558);	-- Overload Infurious Herb
-			FirstCraft(75138, 405134, ADDED_10_1_0);	-- Overload Lambent Herb
-			FirstCraft(78007, 422293, ADDED_10_2_0);	-- Overload Overgrown Herb
-			FirstCraft(72344, 391557);	-- Overload Titan-Touched Herb
-			FirstCraft(72342, 391560);	-- Overload Windswept Herb
-		})),
 	}),
 	prof(INSCRIPTION, {
-		spell(382981, {	-- Dragon Isles Milling
+		n(DISCOVERY, {
+			header(HEADERS.Spell, 383759, {	-- Draconic Treatise on Inscription
+				r(383522),	-- Draconic Treatise on Alchemy
+				r(383517),	-- Draconic Treatise on Blacksmithing
+				r(383523),	-- Draconic Treatise on Enchanting
+				r(383844),	-- Draconic Treatise on Engineering
+				r(383515),	-- Draconic Treatise on Herbalism
+				r(383524),	-- Draconic Treatise on Jewelcrafting
+				r(383519),	-- Draconic Treatise on Leatherworking
+				r(383516),	-- Draconic Treatise on Mining
+				r(392944),	-- Draconic Treatise on Skinning
+				r(383520),	-- Draconic Treatise on Tailoring
+			}),
+		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248118),	-- Literature of the Blue Dragonflight (DECOR!)
+			i(248119),	-- Literature of the Green Dragonflight (DECOR!)
+			i(248120),	-- Literature of the Red Dragonflight (DECOR!)
+			i(248108),	-- Long Valdrakken Storage Crate (DECOR!)
+			i(248106),	-- Valdrakken Banded Barrel (DECOR!)
+			i(248107),	-- Valdrakken Storage Crate (DECOR!)
+			i(264679),	-- Valdrakken Wall Shelf (DECOR!)
+		})),
+		salvagerecipe(382981, 198390, {	-- Dragon Isles Milling
 			i(198418),	-- Blazing Pigment+
 			i(198419),	-- Blazing Pigment++
 			i(198420),	-- Blazing Pigment+++
@@ -1786,18 +1789,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198421),	-- Shimmering Pigment+
 			i(198422),	-- Shimmering Pigment++
 			i(198423),	-- Shimmering Pigment+++
-		}),
-		n(DISCOVERY, {
-			r(383522),	-- Draconic Treatise on Alchemy
-			r(383517),	-- Draconic Treatise on Blacksmithing
-			r(383523),	-- Draconic Treatise on Enchanting
-			r(383844),	-- Draconic Treatise on Engineering
-			r(383515),	-- Draconic Treatise on Herbalism
-			r(383524),	-- Draconic Treatise on Jewelcrafting
-			r(383519),	-- Draconic Treatise on Leatherworking
-			r(383516),	-- Draconic Treatise on Mining
-			r(392944),	-- Draconic Treatise on Skinning
-			r(383520),	-- Draconic Treatise on Tailoring
 		}),
 		n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(196981),	-- Cliffside Wylderdrake: Conical Head (MM!)
@@ -1961,14 +1952,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(72015, 391836);	-- Cliffside Wylderdrake: Silver and Blue Armor
 			FirstCraft(72018, 391846);	-- Cliffside Wylderdrake: Steel and Yellow Armor
 			FirstCraft(71533, 383576);	-- Cliffside Wylderdrake: Triple Head Horns
-			-- Dragonriding -- Winding Slitherdrake
+			-- Dragonriding	-- Winding Slitherdrake
 			FirstCraft(75577, 408218, ADDED_10_1_0);	-- Winding Slitherdrake: Blue and Silver Armor
 			FirstCraft(75579, 408222, ADDED_10_1_0);	-- Winding Slitherdrake: Curved Chin Horn
 			FirstCraft(78424, 425958, ADDED_10_2_0);	-- Winding Slitherdrake: Hairy Chin
 			FirstCraft(75581, 408223, ADDED_10_1_0);	-- Winding Slitherdrake: Small Finned Throat
 			FirstCraft(75580, 408221, ADDED_10_1_0);	-- Winding Slitherdrake: White Hair
 			FirstCraft(75578, 408220, ADDED_10_1_0);	-- Winding Slitherdrake: Yellow and Silver Armor
-			-- Dragonriding -- Grotto Netherwing Drake
+			-- Dragonriding	-- Grotto Netherwing Drake
 			FirstCraft(78425, 425961, ADDED_10_2_0);	-- Grotto Netherwing Drake: Chin Tendrils
 			FirstCraft(78426, 425959, ADDED_10_2_0);	-- Grotto Netherwing Drake: Spiked Jaw
 			-- Artisan Curios
@@ -2048,18 +2039,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 		filter(MISC, {
 			i(203412, {["timeline"] = {ADDED_10_0_7}}),	-- Arcane Dispelling Rune
-			i(194871),	-- Azurescale Sigil+
-			i(199051),	-- Azurescale Sigil++
-			i(199052),	-- Azurescale Sigil+++
-			i(194870),	-- Bronzescale Sigil+
-			i(199053),	-- Bronzescale Sigil++
-			i(199054),	-- Bronzescale Sigil+++
 			i(194821),	-- Buzzing Rune+
 			i(194822),	-- Buzzing Rune++
 			i(194823),	-- Buzzing Rune+++
-			i(194859),	-- Chilled Rune+
-			i(194767),	-- Chilled Rune++
-			i(194768),	-- Chilled Rune+++
 			i(194824),	-- Chirping Rune+
 			i(194825),	-- Chirping Rune++
 			i(194826),	-- Chirping Rune+++
@@ -2084,6 +2066,115 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198497),	-- Contract: Valdrakken Accord+
 			i(198498),	-- Contract: Valdrakken Accord++
 			i(198499),	-- Contract: Valdrakken Accord+++
+			i(194697, {	-- Draconic Treatise on Alchemy
+				["questID"] = 74108,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.ALCHEMY) },
+			}),
+			i(198454, {	-- Draconic Treatise on Blacksmithing
+				["questID"] = 74109,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.BLACKSMITHING) },
+			}),
+			i(194702, {	-- Draconic Treatise on Enchanting
+				["questID"] = 74110,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.ENCHANTING) },
+			}),
+			i(198510, {	-- Draconic Treatise on Engineering
+				["questID"] = 74111,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.ENGINEERING) },
+			}),
+			i(194704, {	-- Draconic Treatise on Herbalism
+				["questID"] = 74107,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.HERBALISM) },
+			}),
+			i(194699, {	-- Draconic Treatise on Inscription
+				["questID"] = 74105,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.INSCRIPTION) },
+			}),
+			i(194703, {	-- Draconic Treatise on Jewelcrafting
+				["questID"] = 74112,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING) },
+			}),
+			i(194700, {	-- Draconic Treatise on Leatherworking
+				["questID"] = 74113,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.LEATHERWORKING) },
+			}),
+			i(194708, {	-- Draconic Treatise on Mining
+				["questID"] = 74106,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.MINING) },
+			}),
+			i(201023, {	-- Draconic Treatise on Skinning
+				["questID"] = 74114,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.SKINNING) },
+			}),
+			i(194698, {	-- Draconic Treatise on Tailoring
+				["questID"] = 74115,
+				["isWeekly"] = true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.DF.TAILORING) },
+			}),
+			i(204971, {["timeline"] = {ADDED_10_1_0}}),	-- Hissing Rune+
+			i(204972, {["timeline"] = {ADDED_10_1_0}}),	-- Hissing Rune++
+			i(204973, {["timeline"] = {ADDED_10_1_0}}),	-- Hissing Rune+++
+			i(194817),	-- Howling Rune+
+			i(194819),	-- Howling Rune++
+			i(194820),	-- Howling Rune+++
+			i(194733),	-- Illusion Parchment: Aqua Torrent
+			i(194735),	-- Illusion Parchment: Arcane Burst
+			i(194736),	-- Illusion Parchment: Chilling Wind
+			i(194732),	-- Illusion Parchment: Love Charm
+			i(194731),	-- Illusion Parchment: Magma Missile
+			i(194738),	-- Illusion Parchment: Shadow Orb
+			i(194737),	-- Illusion Parchment: Spell Shield
+			i(194734),	-- Illusion Parchment: Whirling Breeze
+			i(197718),	-- Scroll of Sales+
+			i(198616),	-- Scroll of Sales++
+			i(198617),	-- Scroll of Sales+++
+			i(204858, {["timeline"] = {ADDED_10_1_0}}),	-- Vantus Rune: Aberrus, the Shadowed Crucible+
+			i(204859, {["timeline"] = {ADDED_10_1_0}}),	-- Vantus Rune: Aberrus, the Shadowed Crucible++
+			i(204860, {["timeline"] = {ADDED_10_1_0}}),	-- Vantus Rune: Aberrus, the Shadowed Crucible+++
+			i(210247, {["timeline"] = {ADDED_10_2_0}}),	-- Vantus Rune: Amirdrassil, the Dream's Hope+
+			i(210248, {["timeline"] = {ADDED_10_2_0}}),	-- Vantus Rune: Amirdrassil, the Dream's Hope++
+			i(210249, {["timeline"] = {ADDED_10_2_0}}),	-- Vantus Rune: Amirdrassil, the Dream's Hope+++
+			i(198491),	-- Vantus Rune: Vault of the Incarnates+
+			i(198492),	-- Vantus Rune: Vault of the Incarnates++
+			i(198493),	-- Vantus Rune: Vault of the Incarnates+++
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(191234, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Sturdy Mixing Rod
+			i(191231, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Brilliant Mixing Rod
+			i(191232, {["requireSkill"] = COOKING}),	-- Chef's Splendid Rolling Pin
+			i(191233, {["requireSkill"] = COOKING}),	-- Chef's Smooth Rolling Pin
+			i(194874, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Fastened Quill
+			i(194875, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Resplendent Quill
+		}),
+		filter(REAGENTS, {
+			i(194871),	-- Azurescale Sigil+
+			i(199051),	-- Azurescale Sigil++
+			i(199052),	-- Azurescale Sigil+++
+			i(194751),	-- Blazing Ink+
+			i(194752),	-- Blazing Ink++
+			i(194846),	-- Blazing Ink+++
+			i(194870),	-- Bronzescale Sigil+
+			i(199053),	-- Bronzescale Sigil++
+			i(199054),	-- Bronzescale Sigil+++
+			i(194760),	-- Burnished Ink+
+			i(194761),	-- Burnished Ink++
+			i(194855),	-- Burnished Ink+++
+			i(194859),	-- Chilled Rune+
+			i(194767),	-- Chilled Rune++
+			i(194768),	-- Chilled Rune+++
+			i(194754),	-- Cosmic Ink+
+			i(194755),	-- Cosmic Ink++
+			i(194756),	-- Cosmic Ink+++
 			i(194570),	-- Draconic Missive of the Aurora+
 			i(194571),	-- Draconic Missive of the Aurora++
 			i(194569),	-- Draconic Missive of the Aurora+++
@@ -2123,77 +2214,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(200565),	-- Draconic Missive of Resourcefulness+
 			i(200566),	-- Draconic Missive of Resourcefulness++
 			i(200567),	-- Draconic Missive of Resourcefulness+++
-			i(194697),	-- Draconic Treatise on Alchemy
-			i(198454),	-- Draconic Treatise on Blacksmithing
-			i(194702),	-- Draconic Treatise on Enchanting
-			i(198510),	-- Draconic Treatise on Engineering
-			i(194704),	-- Draconic Treatise on Herbalism
-			i(194699),	-- Draconic Treatise on Inscription
-			i(194703),	-- Draconic Treatise on Jewelcrafting
-			i(194700),	-- Draconic Treatise on Leatherworking
-			i(194708),	-- Draconic Treatise on Mining
-			i(201023),	-- Draconic Treatise on Skinning
-			i(194698),	-- Draconic Treatise on Tailoring
 			i(194868),	-- Emberscale Sigil+
 			i(199055),	-- Emberscale Sigil++
 			i(199056),	-- Emberscale Sigil+++
-			i(204971, {["timeline"] = {ADDED_10_1_0}}),	-- Hissing Rune+
-			i(204972, {["timeline"] = {ADDED_10_1_0}}),	-- Hissing Rune++
-			i(204973, {["timeline"] = {ADDED_10_1_0}}),	-- Hissing Rune+++
-			i(194817),	-- Howling Rune+
-			i(194819),	-- Howling Rune++
-			i(194820),	-- Howling Rune+++
-			i(194733),	-- Illusion Parchment: Aqua Torrent
-			i(194735),	-- Illusion Parchment: Arcane Burst
-			i(194736),	-- Illusion Parchment: Chilling Wind
-			i(194732),	-- Illusion Parchment: Love Charm
-			i(194731),	-- Illusion Parchment: Magma Missile
-			i(194738),	-- Illusion Parchment: Shadow Orb
-			i(194737),	-- Illusion Parchment: Spell Shield
-			i(194734),	-- Illusion Parchment: Whirling Breeze
-			i(198431),	-- Jetscale Sigil+
-			i(199057),	-- Jetscale Sigil++
-			i(199058),	-- Jetscale Sigil+++
-			i(194869),	-- Sagescale Sigil+
-			i(199059),	-- Sagescale Sigil++
-			i(199060),	-- Sagescale Sigil+++
-			i(197718),	-- Scroll of Sales+
-			i(198616),	-- Scroll of Sales++
-			i(198617),	-- Scroll of Sales+++
-			i(204858, {["timeline"] = {ADDED_10_1_0}}),	-- Vantus Rune: Aberrus, the Shadowed Crucible+
-			i(204859, {["timeline"] = {ADDED_10_1_0}}),	-- Vantus Rune: Aberrus, the Shadowed Crucible++
-			i(204860, {["timeline"] = {ADDED_10_1_0}}),	-- Vantus Rune: Aberrus, the Shadowed Crucible+++
-			i(210247, {["timeline"] = {ADDED_10_2_0}}),	-- Vantus Rune: Amirdrassil, the Dream's Hope+
-			i(210248, {["timeline"] = {ADDED_10_2_0}}),	-- Vantus Rune: Amirdrassil, the Dream's Hope++
-			i(210249, {["timeline"] = {ADDED_10_2_0}}),	-- Vantus Rune: Amirdrassil, the Dream's Hope+++
-			i(198491),	-- Vantus Rune: Vault of the Incarnates+
-			i(198492),	-- Vantus Rune: Vault of the Incarnates++
-			i(198493),	-- Vantus Rune: Vault of the Incarnates+++
-		}),
-		filter(PROFESSION_EQUIPMENT, {
-			i(191234, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Sturdy Mixing Rod
-			i(191231, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Brilliant Mixing Rod
-			i(191232, {["requireSkill"] = COOKING}),	-- Chef's Splendid Rolling Pin
-			i(191233, {["requireSkill"] = COOKING}),	-- Chef's Smooth Rolling Pin
-			i(194874, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Fastened Quill
-			i(194875, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Resplendent Quill
-		}),
-		filter(REAGENTS, {
-			i(194751),	-- Blazing Ink+
-			i(194752),	-- Blazing Ink++
-			i(194846),	-- Blazing Ink+++
-			i(194760),	-- Burnished Ink+
-			i(194761),	-- Burnished Ink++
-			i(194855),	-- Burnished Ink+++
-			i(194754),	-- Cosmic Ink+
-			i(194755),	-- Cosmic Ink++
-			i(194756),	-- Cosmic Ink+++
 			i(194850),	-- Flourishing Ink+
 			i(194758),	-- Flourishing Ink++
 			i(194852),	-- Flourishing Ink+++
+			i(198431),	-- Jetscale Sigil+
+			i(199057),	-- Jetscale Sigil++
+			i(199058),	-- Jetscale Sigil+++
 			i(194862),	-- Runed Writhebark+
 			i(194863),	-- Runed Writhebark++
 			i(194864),	-- Runed Writhebark+++
+			i(194869),	-- Sagescale Sigil+
+			i(199059),	-- Sagescale Sigil++
+			i(199060),	-- Sagescale Sigil+++
 			i(194856),	-- Serene Ink+
 			i(194857),	-- Serene Ink++
 			i(194858),	-- Serene Ink+++
@@ -2264,7 +2299,44 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(JEWELCRAFTING, {
-		spell(374627, {	-- Dragon Isles Prospecting
+		n(ARMOR, {
+			i(194082),	-- Band of New Beginnings
+			i(192998),	-- Crimson Combatant's Jeweled Amulet
+			i(192997),	-- Crimson Combatant's Jeweled Signet
+			i(193002),	-- Choker of Shielding
+			i(211536, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Draconic Combatant's Jeweled Signet
+			i(211537, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Draconic Combatant's Jeweled Amulet
+			i(193001),	-- Elemental Lariat
+			i(193005),	-- Idol of the Dreamer
+			i(193006),	-- Idol of the Earth Warder
+			i(193003),	-- Idol of the Lifebinder
+			i(193004),	-- Idol of the Spell-Weaver
+			i(204095, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Amulet
+			i(204094, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Signet
+			i(192996),	-- Pendant of Impending Perils
+			i(193000),	-- Ring-Bound Hourglass
+			i(192999),	-- Signet of Titanic Insight
+			i(201759),	-- Torc of Passed Time
+			i(208238, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Amulet
+			i(208237, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Signet
+		}),
+		filter(BATTLE_PETS, {
+			i(193885),	-- Jeweled Amber Whelpling (PET!)
+			i(193888),	-- Jeweled Emerald Whelpling (PET!)
+			i(193889),	-- Jeweled Onyx Whelpling (PET!)
+			i(193887),	-- Jeweled Ruby Whelpling (PET!)
+			i(193886),	-- Jeweled Sapphire Whelpling (PET!)
+		}),
+		filter(COSMETIC, {
+			i(193371),	-- "Rhinestone" Sunglasses
+			i(194748),	-- Split-Lens Specs
+		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248109),	-- Valdrakken Fence
+			i(248110),	-- Valdrakken Fencepost
+			i(248654),	-- Valdrakken Gilded Throne
+		})),
+		header(HEADERS.Spell, 374627, {	-- Dragon Isles Prospecting
 			i(192852),	-- Alexstraszite+
 			i(192853),	-- Alexstraszite++
 			i(192855),	-- Alexstraszite+++
@@ -2301,38 +2373,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(192859),	-- Ysemerald+
 			i(192860),	-- Ysemerald++
 			i(192861),	-- Ysemerald+++
-		}),
-		n(ARMOR, {
-			i(194082),	-- Band of New Beginnings
-			i(192998),	-- Crimson Combatant's Jeweled Amulet
-			i(192997),	-- Crimson Combatant's Jeweled Signet
-			i(193002),	-- Choker of Shielding
-			i(211536, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Draconic Combatant's Jeweled Signet
-			i(211537, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Draconic Combatant's Jeweled Amulet
-			i(193001),	-- Elemental Lariat
-			i(193005),	-- Idol of the Dreamer
-			i(193006),	-- Idol of the Earth Warder
-			i(193003),	-- Idol of the Lifebinder
-			i(193004),	-- Idol of the Spell-Weaver
-			i(204095, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Amulet
-			i(204094, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Signet
-			i(192996),	-- Pendant of Impending Perils
-			i(193000),	-- Ring-Bound Hourglass
-			i(192999),	-- Signet of Titanic Insight
-			i(201759),	-- Torc of Passed Time
-			i(208238, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Amulet
-			i(208237, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Signet
-		}),
-		filter(BATTLE_PETS, {
-			i(193885),	-- Jeweled Amber Whelpling (PET!)
-			i(193888),	-- Jeweled Emerald Whelpling (PET!)
-			i(193889),	-- Jeweled Onyx Whelpling (PET!)
-			i(193887),	-- Jeweled Ruby Whelpling (PET!)
-			i(193886),	-- Jeweled Sapphire Whelpling (PET!)
-		}),
-		filter(COSMETIC, {
-			i(193371),	-- "Rhinestone" Sunglasses
-			i(194748),	-- Split-Lens Specs
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
@@ -2755,6 +2795,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				i(193463),	-- Wind Spirit's Lasso
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248114),	-- Draconic Nesting Bed (DECOR!)
+			i(248657),	-- Valdrakken Market Tent (DECOR!)
+		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = LEATHERWORKING,
 		},{
@@ -2967,7 +3011,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193615, {["requireSkill"] = JEWELCRAFTING}),	-- Jeweler's Cover
 			i(193488, {["requireSkill"] = HERBALISM}),	-- Lavish Floral Pack
 			i(193492, {["requireSkill"] = LEATHERWORKING}),	-- Masterwork Smock
-			i(193485, {["requireSkill"] = ENGINEERING}),	-- Protective Gloves
+			i(193485, {	-- Protective Gloves
+				["requireSkill"] = ENGINEERING,
+				-- #if AFTER 12.0.0
+				["ItemAppearanceModifierID"] = 6
+				-- #endif
+			}),
 			i(193489, {["requireSkill"] = SKINNING}),	-- Reinforced Pack
 			i(193616, {["requireSkill"] = JEWELCRAFTING}),	-- Resplendent Cover
 			i(193486, {["requireSkill"] = LEATHERWORKING}),	-- Resilient Smock
@@ -3009,7 +3058,35 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(MINING, {
-		spell(2575, {	-- Mining
+		n(DISCOVERY, {
+			r_withQuest(384688, 71951),	-- Draconium Deposit
+			r_withQuest(389458, 72347, ADDED_10_0_7),	-- Draconium Seam
+			r_withQuest(389413, 71956),	-- Hardened Draconium
+			r_withQuest(389463, 71955),	-- Hardened Serevite
+			r_withQuest(389420, 71962),	-- Infurious Draconium
+			r_withQuest(389464, 71961),	-- Infurious Serevite
+			r_withQuest(421247, 77828, ADDED_10_2_0),	-- Living Draconium Deposit
+			r_withQuest(421244, 77827, ADDED_10_2_0),	-- Living Serevite Deposit
+			r_withQuest(405121, 75140, ADDED_10_1_0),	-- Metamorphic Draconium
+			r_withQuest(405120, 75139, ADDED_10_1_0),	-- Metamorphic Serevite
+			r_withQuest(384690, 71954),	-- Molten Draconium
+			r_withQuest(389459, 71953),	-- Molten Serevite
+			r_withQuest(389701, 71964),	-- Overload Hardened Node
+			r_withQuest(389704, 71967),	-- Overload Infurious Node
+			r_withQuest(422809, 78061, ADDED_10_2_0),	-- Overload Living Deposit
+			r_withQuest(405131, 75137, ADDED_10_1_0),	-- Overload Metamorphic Node
+			r_withQuest(389700, 71963),	-- Overload Molten Node
+			r_withQuest(389702, 71966),	-- Overload Primal Node
+			r_withQuest(389703, 71965),	-- Overload Titan-Touched Node
+			r_withQuest(389409, 71960),	-- Primal Draconium
+			r_withQuest(389462, 71959),	-- Primal Serevite
+			r_withQuest(384693, 71952),	-- Rich Draconium
+			r_withQuest(389460, 71950),	-- Rich Serevite
+			r_withQuest(389465, 72346, ADDED_10_0_7),	-- Serevite Seam
+			r_withQuest(389406, 71958),	-- Titan-Touched Draconium
+			r_withQuest(389461, 71957),	-- Titan-Touched Serevite
+		}),
+		header(HEADERS.Spell, 2575, {	-- Mining
 			i(203418, {["timeline"] = {ADDED_10_0_7}}),	-- Amplified Quaking Stone
 			i(189143),	-- Draconium Ore+
 			i(188658, {["_drop"] = {"requireSkill"}}),	-- Draconium Ore++
@@ -3063,195 +3140,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(192861),	-- Ysemerald+++
 			--]]
 		}),
-		n(DISCOVERY, {
-			r(384688),	-- Draconium Deposit
-			r(389458, {["timeline"] = {ADDED_10_0_7}}),	-- Draconium Seam
-			r(389413),	-- Hardened Draconium Deposit
-			r(389463),	-- Hardened Serevite Deposit
-			r(389420),	-- Infurious Draconium Deposit
-			r(389464),	-- Infurious Serevite Deposit
-			r(421247, {["timeline"] = {ADDED_10_2_0}}),	-- Living Draconium Deposit
-			r(421244, {["timeline"] = {ADDED_10_2_0}}),	-- Living Serevite Deposit
-			r(405121, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Draconium Deposit
-			r(405120, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Serevite Deposit
-			r(384690),	-- Molten Draconium Deposit
-			r(389459),	-- Molten Serevite Deposit
-			r(389701),	-- Overload Hardened Node
-			r(389704),	-- Overload Infurious Node
-			r(422809, {["timeline"] = {ADDED_10_2_0}}),	-- Overload Living Deposit
-			r(405131, {["timeline"] = {ADDED_10_1_0}}),	-- Overload Metamorphic Deposit
-			r(389700),	-- Overload Molten Node
-			r(389702),	-- Overload Primal Node
-			r(389703),	-- Overload Titan Node
-			r(389409),	-- Primal Draconium Deposit
-			r(389462),	-- Primal Serevite Deposit
-			r(384693),	-- Rich Draconium Deposit
-			r(389460),	-- Rich Serevite Deposit
-			r(389465, {["timeline"] = {ADDED_10_0_7}}),	-- Serevite Seam
-			r(389406),	-- Titan-Touched Draconium Deposit
-			r(389461),	-- Titan-Touched Serevite Deposit
-		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = MINING,
-		},{
-			-- Draconium
-			FirstCraft(71951, 384688);	-- Draconium Deposit
-			FirstCraft(72347, 389458, ADDED_10_0_7);	-- Draconium Seam
-			FirstCraft(71956, 389413);	-- Hardened Draconium
-			FirstCraft(71962, 389420);	-- Infurious Draconium
-			FirstCraft(77828, 421247, ADDED_10_2_0);	-- Living Draconium Deposit
-			FirstCraft(75140, 405121, ADDED_10_1_0);	-- Metamorphic Draconium
-			FirstCraft(71954, 384690);	-- Molten Draconium
-			FirstCraft(71960, 389409);	-- Primal Draconium
-			FirstCraft(71952, 384693);	-- Rich Draconium
-			FirstCraft(71958, 389406);	-- Titan-Touched Draconium
-			-- Serevite
-			FirstCraft(72346, 389465, ADDED_10_0_7);	-- Serevite Seam
-			FirstCraft(71955, 389463);	-- Hardened Serevite
-			FirstCraft(71961, 389464);	-- Infurious Serevite
-			FirstCraft(77827, 421244, ADDED_10_2_0);	-- Living Serevite Deposit
-			FirstCraft(75139, 405120, ADDED_10_1_0);	-- Metamorphic Serevite
-			FirstCraft(71953, 389459);	-- Molten Serevite
-			FirstCraft(71959, 389462);	-- Primal Serevite
-			FirstCraft(71950, 389460);	-- Rich Serevite
-			FirstCraft(71957, 389461);	-- Titan-Touched Serevite
-			-- Overload
-			FirstCraft(71964, 389701);	-- Overload Hardened Node
-			FirstCraft(71967, 389704);	-- Overload Infurious Node
-			FirstCraft(78061, 422809, ADDED_10_2_0);	-- Overload Living Deposit
-			FirstCraft(75137, 405131, ADDED_10_1_0);	-- Overload Metamorphic Node
-			FirstCraft(71963, 389700);	-- Overload Molten Node
-			FirstCraft(71966, 389702);	-- Overload Primal Node
-			FirstCraft(71965, 389703);	-- Overload Titan-Touched Node
-		})),
 	}),
 	prof(SKINNING, {
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
-		},{
-			-- TODO: Needs Achievements attached (roughly 1/3 should be attached to achievement criteria)
-			FirstSkin(74204, 193243),	-- Skinning Acrosoth
-			FirstSkin(78824, 210288, ADDED_10_2_0),	-- Skinning Ancient Core Hound
-			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
-			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
-			FirstSkin(74162, 193341),	-- Skinning Angen (Great Hunt)
-			FirstSkin(74225, 190986),	-- Skinning Battlehorn Pyrhus
-			FirstSkin(74217, 193177),	-- Skinning Beakers
-			FirstSkin(74174, 193168),	-- Skinning Biryuk
-			FirstSkin(74122, 197353),	-- Skinning Blisterhide
-			FirstSkin(74141, 190907),	-- Skinning Blitztusk (Grand Hunt)
-			FirstSkin(74551, 201535, ADDED_10_0_5),	-- Skinning Bloodbeak the Ravenous
-			FirstSkin(78340, 210050, ADDED_10_2_0),	-- Skinning Bloodstipe Great Ray
-			FirstSkin(74144, 191450),	-- Skinning Boolk
-			FirstSkin(74124, 193644),	-- Skinning Bouldron
-			FirstSkin(74206, 193658),	-- Skinning Corrupted Proto-Dragon
-			FirstSkin(76534, 201054, ADDED_10_1_0),	-- Skinning Crimson Oldblood
-			FirstSkin(74126, 193645),	-- Skinning Crystalus (Primal Storm)
-			FirstSkin(74229, 190985),	-- Skinning Death's Shadow
-			FirstSkin(74153, 194251),	-- Skinning Degmakh (Grand Hunt)
-			FirstSkin(74164, 195431),	-- Skinning Diluu (Grand Hunt)
-			FirstSkin(74200, 193234),	-- Skinning Eldoren the Reborn
-			FirstSkin(74233, 202441, ADDED_10_0_7),	-- Skinning Elusive Auric Argali
-			FirstSkin(78394, 212090, ADDED_10_2_0),	-- Skinning Elusive Blooming Brierhide
-			FirstSkin(74231, 195518),	-- Skinning Elusive Cliffdweller Vorquin
-			FirstSkin(74234, 204821, ADDED_10_1_0, { i(205451) }),	-- Skinning Elusive Crystalscale Stonecleaver / Flawless Crystal Scale (CI!)
-			FirstSkin(74191, 195492),	-- Skinning Elusive Deepwater Salamanther
-			FirstSkin(74185, 194489),	-- Skinning Elusive Elder Drake
-			FirstSkin(74186, 194491),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
-			FirstSkin(74189, 195472),	-- Skinning Elusive Ferocious Titanfang (Titan-Infused Creature Bait)
-			FirstSkin(74187, 195541),	-- Skinning Elusive Flourishing Quillbloom
-			FirstSkin(74232, 202436, ADDED_10_0_7),	-- Skinning Elusive Frenzied Amberfur
-			FirstSkin(74190, 195509),	-- Skinning Elusive Proto Skyterror
-			FirstSkin(74188, 195465),	-- Skinning Elusive Tempest Lizard
-			FirstSkin(74235, 204831, ADDED_10_1_0),	-- Skinning Elusive Magma Cobra
-			FirstSkin(78397, 212133, ADDED_10_2_0),	-- Skinning Elusive Verdant Gladewarden
-			FirstSkin(75873, 203664, ADDED_10_1_0),	-- Skinning Emberdusk
-			FirstSkin(74224, 193134),	-- Skinning Enkine the Voracious
-			FirstSkin(74146, 194409),	-- Skinning Ergburk
-			FirstSkin(75881, 200725, ADDED_10_0_7),	-- Skinning Faunos
-			FirstSkin(75872, 203660, ADDED_10_1_0),	-- Skinning Flowfy
-			FirstSkin(74130, 193698),	-- Skinning Frigidpelt Den Mother
-			FirstSkin(75884, 200537, ADDED_10_0_7),	-- Skinning Gahz'raxes
-			FirstSkin(74152, 193853),	-- Skinning Galnmor
-			FirstSkin(74193, 193125),	-- Skinning Goremaul the Gluttonous
-			FirstSkin(78333, 209936, ADDED_10_2_0),	-- Skinning Greedy Gessie
-			FirstSkin(74550, 201537, ADDED_10_0_5),	-- Skinning Groffnar
-			FirstSkin(74135, 193251),	-- Skinning Gruffy
-			FirstSkin(74134, 193269),	-- Skinning Grumbletrunk
-			FirstSkin(74180, 187781),	-- Skinning Hamett
-			FirstSkin(74203, 193229),	-- Skinning Henlare
-			FirstSkin(78344, 210075, ADDED_10_2_0),	-- Skinning Henri Snufftail
-			FirstSkin(74179, 188095),	-- Skinning Hunter of the Deep
-			FirstSkin(74125, 193648),	-- Skinning Infernum
-			FirstSkin(74127, 193647),	-- Skinning Karantun
-			FirstSkin(74238, 203625, ADDED_10_1_0),	-- Skinning Karokta
-			FirstSkin(78339, 210046, ADDED_10_2_0),	-- Skinning Keen-eyed Ciana
-			FirstSkin(74147, 194608),	-- Skinning Kholdeg (Grand Hunt)
-			FirstSkin(74145, 194438),	-- Skinning Khomuur (Grand Hunt)
-			FirstSkin(74155, 194761),	-- Skinning Khuumog (Grand Hunt)
-			FirstSkin(74237, 203462, ADDED_10_1_0),	-- Skinning Kob'rok
-			FirstSkin(74169, 197009),	-- Skinning Liskheszaera
-			FirstSkin(75878, 200742, ADDED_10_0_7),	-- Skinning Luttrok
-			FirstSkin(74236, 200111, ADDED_10_1_0),	-- Skinning Magtembo
-			FirstSkin(74182, 195409),	-- Skinning Makhra the Ashtouched
-			FirstSkin(74171, 193212),	-- Skinning Malsegan
-			FirstSkin(78341, 210051, ADDED_10_2_0),	-- Skinning Matriarch Keevah
-			FirstSkin(74208, 193246),	-- Skinning Matriarch Remalla
-			FirstSkin(74161, 193311),	-- Skinning Melkhop (Grand Hunt)
-			FirstSkin(74163, 195430),	-- Skinning Molkeej (Grand Hunt)
-			FirstSkin(78342, 210064, ADDED_10_2_0),	-- Skinning Molten Leadspike
-			FirstSkin(78338, 210045, ADDED_10_2_0),	-- Skinning Moragh the Slothful
-			FirstSkin(74559, 201549, ADDED_10_0_5),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
-			FirstSkin(78343, 210070, ADDED_10_2_0),	-- Skinning Mosa Umbramane
-			FirstSkin(74157, 195093),	-- Skinning Moskhoi (Grand Hunt)
-			FirstSkin(74214, 193735),	-- Skinning Moth'go Deeploom
-			FirstSkin(74131, 193201),	-- Skinning Mucka the Raker
-			FirstSkin(74154, 194225),	-- Skinning Muugurv (Grand Hunt)
-			FirstSkin(74166, 195895),	-- Skinning Nergazurai
-			FirstSkin(74140, 190968),	-- Skinning Norbett (Grand Hunt)
-			FirstSkin(74194, 193130),	-- Skinning Pleasant Alpha
-			FirstSkin(74220, 192737),	-- Skinning Qalashi War Mammoth (War Party Event)
-			FirstSkin(74132, 197371),	-- Skinning Ravenous Tundra Bear
-			FirstSkin(74205, 193143),	-- Skinning Razk'vex the Untamed
-			FirstSkin(74199, 193240),	-- Skinning Riverwalker Tamopo
-			FirstSkin(74196, 193666),	-- Skinning Rokmur
-			FirstSkin(74176, 195223),	-- Skinning Rustlily
-			FirstSkin(74151, 193885),	-- Skinning Salkii
-			FirstSkin(74142, 190161),	-- Skinning Sarana (Grand Hunt)
-			FirstSkin(74555, 201562, ADDED_10_0_5),	-- Skinning Shardwing
-			FirstSkin(74168, 192949),	-- Skinning Skaara
-			FirstSkin(74215, 193708),	-- Skinning Skald the Impaler
-			FirstSkin(74223, 193181),	-- Skinning Skewersnout
-			FirstSkin(74222, 193120),	-- Skinning Smogswog the Firebreather
-			FirstSkin(75879, 200622, ADDED_10_0_7),	-- Skinning Snarfang
-			FirstSkin(74216, 193706),	-- Skinning Snufflegust
-			FirstSkin(74173, 193123),	-- Skinning Steamgill
-			FirstSkin(74167, 193133),	-- Skinning Sunscale Behemoth
-			FirstSkin(74213, 193634),	-- Skinning Swog'ranka
-			FirstSkin(74143, 191103),	-- Skinning Uranto the Swift (Grand Hunt)
-			FirstSkin(74148, 194601),	-- Skinning Zagdech
-			FirstSkin(74149, 194624),	-- Skinning Zumakh (Grand Hunt)
-			FirstSkin(74207, 193258),	-- Skinning Tempestrian
-			FirstSkin(74175, 193163),	-- Skinning Territorial Coastling
-			FirstSkin(74159, 195132),	-- Skinning Tevgai (Grand Hunt)
-			FirstSkin(74201, 191305),	-- Skinning The Great Shellkhan
-			FirstSkin(74177, 195204),	-- Skinning The Jolly Giant
-			FirstSkin(74198, 183984),	-- Skinning The Weeping Vilomah
-			FirstSkin(74218, 193148),	-- Skinning Thunderous Matriarch
-			FirstSkin(74150, 193722),	-- Skinning Tomnu
-			FirstSkin(74156, 194760),	-- Skinning Uurhilt (Grand Hunt)
-			FirstSkin(74183, 192453),	-- Skinning Vaniik the Stormtouched
-			FirstSkin(78345, 210508, ADDED_10_2_0),	-- Skinning Voracious Mikanji
-			FirstSkin(74184, 192364),	-- Skinning Windscale the Stormborn
-			FirstSkin(74195, 193161),	-- Skinning Woolfang
-			FirstSkin(74228, 186859),	-- Skinning Worldcarver A'tir
-			FirstSkin(74158, 195101),	-- Skinning Yaankhi
-			FirstSkin(74160, 195283),	-- Skinning Yamakh
-			FirstSkin(74172, 193140),	-- Skinning Zarizz
-			FirstSkin(74170, 193209),	-- Skinning Zenet Avis
-			FirstSkin(74181, 188451),	-- Skinning Zerimek
-		})),
-		spell(366259, {	-- Skinning
+		header(HEADERS.Spell, 366259, {	-- Skinning (Dragon Isle)
 			i(193213),	-- Adamant Scales+
 			i(193214),	-- Adamant Scales++
 			i(193215),	-- Adamant Scales+++
@@ -3295,11 +3186,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(193895),	-- Temporal Dragonhead Lure
 		i(198807),	-- Titan-Infused Creature Bait
 		i(193894),	-- Thousandbite Piranha Lure
-		-- n(FIRST_CRAFTS_HEADER, sharedData({
-		-- 	["requireSkill"] = SKINNING,
-		-- },{
-		-- -- Listed under HQ until Quest Tracking Update
-		-- })),
 	}),
 	prof(TAILORING, {
 		n(ARMOR, {
@@ -3371,107 +3257,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193509),	-- Vibrant Wildercloth Vestments
 			i(193510),	-- Vibrant Wildercloth Wristwraps
 		}),
-		filter(MISC, {
-			i(193950),	-- Abrasive Polishing Cloth+
-			i(193951),	-- Abrasive Polishing Cloth++
-			i(193952),	-- Abrasive Polishing Cloth+++
-			i(194018),	-- Azureweave Expedition Pack
-			i(193956),	-- Blazing Embroidery Thread+
-			i(193957),	-- Blazing Embroidery Thread++
-			i(193958),	-- Blazing Embroidery Thread+++
-			i(193944),	-- Blue Silken Lining+
-			i(193945),	-- Blue Silken Lining++
-			i(193946),	-- Blue Silken Lining+++
-			i(193941),	-- Bronzed Grip Wrappings+
-			i(193942),	-- Bronzed Grip Wrappings++
-			i(193943),	-- Bronzed Grip Wrappings+++
-			i(193959),	-- Chromatic Embroidery Thread+
-			i(193960),	-- Chromatic Embroidery Thread++
-			i(193961),	-- Chromatic Embroidery Thread+++
-			i(194020),	-- Chronocloth Reagent Bag
-			i(194127),	-- Dragon Isles Unravelling
-			i(194042),	-- Explorer's Banner of Herbology+
-			i(194043),	-- Explorer's Banner of Herbology++
-			i(194044),	-- Explorer's Banner of Herbology+++
-			i(194045),	-- Explorer's Banner of Geology+
-			i(194046),	-- Explorer's Banner of Geology++
-			i(194047),	-- Explorer's Banner of Geology+++
-			i(194011),	-- Frozen Spellthread+
-			i(194012),	-- Frozen Spellthread++
-			i(194013),	-- Frozen Spellthread+++
-			i(205411, {["timeline"] = {ADDED_10_1_0}}),	-- Medical Wrap Kit
-			i(202287, {["timeline"] = {ADDED_10_0_7}}),	-- Paw-Made Winterpelt Reagent Bag
-			i(205012, {["timeline"] = {ADDED_10_1_0}}),	-- Reserve Parachute
-			i(193962),	-- Shimmering Embroidery Thread+
-			i(193963),	-- Shimmering Embroidery Thread++
-			i(193964),	-- Shimmering Embroidery Thread+++
-			i(194019),	-- Simply Stitched Reagent Bag
-			i(194014),	-- Temporal Spellthread+
-			i(194015),	-- Temporal Spellthread++
-			i(194016),	-- Temporal Spellthread+++
-			i(203415, {["timeline"] = {ADDED_10_0_7}}),	-- Traditional Morqut Kite
-			i(210671, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Tether+
-			i(210672, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Tether++
-			i(210673, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Tether+++
-			i(193953),	-- Vibrant Polishing Cloth+
-			i(193954),	-- Vibrant Polishing Cloth++
-			i(193955),	-- Vibrant Polishing Cloth+++
-			i(194008),	-- Vibrant Spellthread+
-			i(194009),	-- Vibrant Spellthread++
-			i(194010),	-- Vibrant Spellthread+++
-			i(194017),	-- Wildercloth Bag
-			i(194048),	-- Wildercloth Bandage+
-			i(194049),	-- Wildercloth Bandage++
-			i(194050),	-- Wildercloth Bandage+++
-		}),
-		filter(PROFESSION_EQUIPMENT, {
-			i(193540, {["requireSkill"] = TAILORING}),	-- Dragoncloth Tailoring Vestments
-			i(193544, {["requireSkill"] = ALCHEMY}),	-- Master's Wildercloth Alchemist's Robe
-			i(193545, {["requireSkill"] = COOKING}),	-- Master's Wildercloth Chef's Hat
-			i(193533, {["requireSkill"] = ENCHANTING}),	-- Master's Wildercloth Enchanter's Hat
-			i(193543, {["requireSkill"] = FISHING}),	-- Master's Wildercloth Fishing Cap
-			i(193542, {["requireSkill"] = HERBALISM}),	-- Master's Wildercloth Gardening Hat
-			i(193528, {["requireSkill"] = ALCHEMY}),	-- Wildercloth Alchemist's Robe
-			i(193534, {["requireSkill"] = COOKING}),	-- Wildercloth Chef's Hat
-			i(193539, {["requireSkill"] = ENCHANTING}),	-- Wildercloth Enchanter's Hat
-			i(193529, {["requireSkill"] = FISHING}),	-- Wildercloth Fishing Cap
-			i(193538, {["requireSkill"] = HERBALISM}),	-- Wildercloth Gardening Hat
-			i(193541, {["requireSkill"] = TAILORING}),	-- Wildercloth Tailor's Coat
-		}),
-		filter(REAGENTS, {
-			i(193938),	-- Azureweave Bolt+
-			i(193939),	-- Azureweave Bolt++
-			i(193940),	-- Azureweave Bolt+++
-			i(193935),	-- Chronocloth Bolt+
-			i(193936),	-- Chronocloth Bolt++
-			i(193937),	-- Chronocloth Bolt+++
-			i(193932),	-- Infurious Wildercloth Bolt+
-			i(193933),	-- Infurious Wildercloth Bolt++
-			i(193934),	-- Infurious Wildercloth Bolt+++
-			i(192095),	-- Spool of Wilderthread+
-			i(192096),	-- Spool of Wilderthread++
-			i(192097),	-- Spool of Wilderthread+++
-			i(193929),	-- Vibrant Wildercloth Bolt+
-			i(193930),	-- Vibrant Wildercloth Bolt++
-			i(193931),	-- Vibrant Wildercloth Bolt+++
-			i(193926),	-- Wildercloth Bolt+
-			i(193927),	-- Wildercloth Bolt++
-			i(193928),	-- Wildercloth Bolt+++
-		}),
-		filter(TOYS, {
-			i(194058),	-- Cold Cushion (TOY!)
-			i(194057),	-- Cushion of Time Travel (TOY!)
-			i(194060),	-- Dragonscale Expedition's Expedition Tent (TOY!)
-			i(194056),	-- Duck-Stuffed Duck Lovie (TOY!)
-			i(194052),	-- Forlorn Funeral Pall (TOY!)
-			i(194059),	-- Market Tent (TOY!)
-		}),
-		n(WEAPONS, {
-			i(194070),	-- Draconium Fabric Cutters Left Blade
-			i(194069),	-- Draconium Fabric Cutters Right Blade
-			i(198041),	-- Khaz'gorite Fabric Cutters Left Blade
-			i(194065),	-- Khaz'gorite Fabric Cutters Right Blade
-		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(248121),	-- Draconic Circular Rug (DECOR!)
+			i(257053),	-- Tapestry of the Five Flights (DECOR!)
+		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = TAILORING,
 		},{
@@ -3602,6 +3391,107 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Artisan Curios
 			FirstCraft(74318, 400815, ADDED_10_0_7);	-- Traditional Morqut Kite
 		})),
+		filter(MISC, {
+			i(193950),	-- Abrasive Polishing Cloth+
+			i(193951),	-- Abrasive Polishing Cloth++
+			i(193952),	-- Abrasive Polishing Cloth+++
+			i(194018),	-- Azureweave Expedition Pack
+			i(193956),	-- Blazing Embroidery Thread+
+			i(193957),	-- Blazing Embroidery Thread++
+			i(193958),	-- Blazing Embroidery Thread+++
+			i(193944),	-- Blue Silken Lining+
+			i(193945),	-- Blue Silken Lining++
+			i(193946),	-- Blue Silken Lining+++
+			i(193941),	-- Bronzed Grip Wrappings+
+			i(193942),	-- Bronzed Grip Wrappings++
+			i(193943),	-- Bronzed Grip Wrappings+++
+			i(193959),	-- Chromatic Embroidery Thread+
+			i(193960),	-- Chromatic Embroidery Thread++
+			i(193961),	-- Chromatic Embroidery Thread+++
+			i(194020),	-- Chronocloth Reagent Bag
+			i(194127),	-- Dragon Isles Unravelling
+			i(194042),	-- Explorer's Banner of Herbology+
+			i(194043),	-- Explorer's Banner of Herbology++
+			i(194044),	-- Explorer's Banner of Herbology+++
+			i(194045),	-- Explorer's Banner of Geology+
+			i(194046),	-- Explorer's Banner of Geology++
+			i(194047),	-- Explorer's Banner of Geology+++
+			i(194011),	-- Frozen Spellthread+
+			i(194012),	-- Frozen Spellthread++
+			i(194013),	-- Frozen Spellthread+++
+			i(205411, {["timeline"] = {ADDED_10_1_0}}),	-- Medical Wrap Kit
+			i(202287, {["timeline"] = {ADDED_10_0_7}}),	-- Paw-Made Winterpelt Reagent Bag
+			i(205012, {["timeline"] = {ADDED_10_1_0}}),	-- Reserve Parachute
+			i(193962),	-- Shimmering Embroidery Thread+
+			i(193963),	-- Shimmering Embroidery Thread++
+			i(193964),	-- Shimmering Embroidery Thread+++
+			i(194019),	-- Simply Stitched Reagent Bag
+			i(194014),	-- Temporal Spellthread+
+			i(194015),	-- Temporal Spellthread++
+			i(194016),	-- Temporal Spellthread+++
+			i(203415, {["timeline"] = {ADDED_10_0_7}}),	-- Traditional Morqut Kite
+			i(210671, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Tether+
+			i(210672, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Tether++
+			i(210673, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Tether+++
+			i(193953),	-- Vibrant Polishing Cloth+
+			i(193954),	-- Vibrant Polishing Cloth++
+			i(193955),	-- Vibrant Polishing Cloth+++
+			i(194008),	-- Vibrant Spellthread+
+			i(194009),	-- Vibrant Spellthread++
+			i(194010),	-- Vibrant Spellthread+++
+			i(194017),	-- Wildercloth Bag
+			i(194048),	-- Wildercloth Bandage+
+			i(194049),	-- Wildercloth Bandage++
+			i(194050),	-- Wildercloth Bandage+++
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(193540, {["requireSkill"] = TAILORING}),	-- Dragoncloth Tailoring Vestments
+			i(193544, {["requireSkill"] = ALCHEMY}),	-- Master's Wildercloth Alchemist's Robe
+			i(193545, {["requireSkill"] = COOKING}),	-- Master's Wildercloth Chef's Hat
+			i(193533, {["requireSkill"] = ENCHANTING}),	-- Master's Wildercloth Enchanter's Hat
+			i(193543, {["requireSkill"] = FISHING}),	-- Master's Wildercloth Fishing Cap
+			i(193542, {["requireSkill"] = HERBALISM}),	-- Master's Wildercloth Gardening Hat
+			i(193528, {["requireSkill"] = ALCHEMY}),	-- Wildercloth Alchemist's Robe
+			i(193534, {["requireSkill"] = COOKING}),	-- Wildercloth Chef's Hat
+			i(193539, {["requireSkill"] = ENCHANTING}),	-- Wildercloth Enchanter's Hat
+			i(193529, {["requireSkill"] = FISHING}),	-- Wildercloth Fishing Cap
+			i(193538, {["requireSkill"] = HERBALISM}),	-- Wildercloth Gardening Hat
+			i(193541, {["requireSkill"] = TAILORING}),	-- Wildercloth Tailor's Coat
+		}),
+		filter(REAGENTS, {
+			i(193938),	-- Azureweave Bolt+
+			i(193939),	-- Azureweave Bolt++
+			i(193940),	-- Azureweave Bolt+++
+			i(193935),	-- Chronocloth Bolt+
+			i(193936),	-- Chronocloth Bolt++
+			i(193937),	-- Chronocloth Bolt+++
+			i(193932),	-- Infurious Wildercloth Bolt+
+			i(193933),	-- Infurious Wildercloth Bolt++
+			i(193934),	-- Infurious Wildercloth Bolt+++
+			i(192095),	-- Spool of Wilderthread+
+			i(192096),	-- Spool of Wilderthread++
+			i(192097),	-- Spool of Wilderthread+++
+			i(193929),	-- Vibrant Wildercloth Bolt+
+			i(193930),	-- Vibrant Wildercloth Bolt++
+			i(193931),	-- Vibrant Wildercloth Bolt+++
+			i(193926),	-- Wildercloth Bolt+
+			i(193927),	-- Wildercloth Bolt++
+			i(193928),	-- Wildercloth Bolt+++
+		}),
+		filter(TOYS, {
+			i(194058),	-- Cold Cushion (TOY!)
+			i(194057),	-- Cushion of Time Travel (TOY!)
+			i(194060),	-- Dragonscale Expedition's Expedition Tent (TOY!)
+			i(194056),	-- Duck-Stuffed Duck Lovie (TOY!)
+			i(194052),	-- Forlorn Funeral Pall (TOY!)
+			i(194059),	-- Market Tent (TOY!)
+		}),
+		n(WEAPONS, {
+			i(194070),	-- Draconium Fabric Cutters Left Blade
+			i(194069),	-- Draconium Fabric Cutters Right Blade
+			i(198041),	-- Khaz'gorite Fabric Cutters Left Blade
+			i(194065),	-- Khaz'gorite Fabric Cutters Right Blade
+		}),
 	}),
 })));
 
@@ -3609,7 +3499,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 	-- TODO: likely many of these to be added as actual tracking under ExpansionFeatures > DF > Professions
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
-			q(71948),	-- Maxxed Out Transmutation
+			q(71948),	-- Transmutation 20/20
 		}),
 		prof(BLACKSMITHING, {
 			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom (spellID 384716)
@@ -3622,14 +3512,142 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 		}),
-		prof(SKINNING, {
-			q(77792, {["timeline"] = {ADDED_10_1_5}}),	-- Dreamscale daily lockout for anniversary world boss (Emeriss, Lethon, Taerar, Ysondre)
-		}),
+		prof(SKINNING, sharedData({ ["isWeekly"] = true }, {
+			q(77792, {	-- Dreamscale daily lockout for anniversary world boss (Emeriss, Lethon, Taerar, Ysondre)
+				["isDaily"] = true,
+				["timeline"] = { ADDED_10_1_5 },
+			}),
+
+			-- TODO: Needs Achievements attached (roughly 1/3 should be attached to achievement criteria)
+			q(74204, name(HEADERS.NPC, 193243)),	-- Skinning Acrosoth
+			q(78824, name(HEADERS.NPC, 210288, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Ancient Core Hound
+			q(74219, name(HEADERS.NPC, 187111)),	-- Skinning Ancient Hornswog
+			q(74197, name(HEADERS.NPC, 193231)),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
+			q(74162, name(HEADERS.NPC, 193341)),	-- Skinning Angen (Great Hunt)
+			q(74225, name(HEADERS.NPC, 190986)),	-- Skinning Battlehorn Pyrhus
+			q(74217, name(HEADERS.NPC, 193177)),	-- Skinning Beakers
+			q(74174, name(HEADERS.NPC, 193168)),	-- Skinning Biryuk
+			q(74122, name(HEADERS.NPC, 197353)),	-- Skinning Blisterhide
+			q(74141, name(HEADERS.NPC, 190907)),	-- Skinning Blitztusk (Grand Hunt)
+			q(74551, name(HEADERS.NPC, 201535, {["timeline"] = { ADDED_10_0_5 }})),	-- Skinning Bloodbeak the Ravenous
+			q(78340, name(HEADERS.NPC, 210050, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Bloodstipe Great Ray
+			q(74144, name(HEADERS.NPC, 191450)),	-- Skinning Boolk
+			q(74124, name(HEADERS.NPC, 193644)),	-- Skinning Bouldron
+			q(74206, name(HEADERS.NPC, 193658)),	-- Skinning Corrupted Proto-Dragon
+			q(76534, name(HEADERS.NPC, 201054, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Crimson Oldblood
+			q(74126, name(HEADERS.NPC, 193645)),	-- Skinning Crystalus (Primal Storm)
+			q(74229, name(HEADERS.NPC, 190985)),	-- Skinning Death's Shadow
+			q(74153, name(HEADERS.NPC, 194251)),	-- Skinning Degmakh (Grand Hunt)
+			q(74164, name(HEADERS.NPC, 195431)),	-- Skinning Diluu (Grand Hunt)
+			q(74200, name(HEADERS.NPC, 193234)),	-- Skinning Eldoren the Reborn
+			q(74233, name(HEADERS.NPC, 202441, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Elusive Auric Argali
+			q(78394, name(HEADERS.NPC, 212090, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Elusive Blooming Brierhide
+			q(74231, name(HEADERS.NPC, 195518)),	-- Skinning Elusive Cliffdweller Vorquin
+			q(74234, name(HEADERS.NPC, 204821, {	-- Skinning Elusive Crystalscale Stonecleaver
+				["timeline"] = { ADDED_10_1_0 },
+				["groups"] = { i(205451), }	-- Flawless Crystal Scale (CI!)
+			})),
+			q(74191, name(HEADERS.NPC, 195492)),	-- Skinning Elusive Deepwater Salamanther
+			q(74185, name(HEADERS.NPC, 194489)),	-- Skinning Elusive Elder Drake
+			q(74186, name(HEADERS.NPC, 194491)),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
+			q(74189, name(HEADERS.NPC, 195472)),	-- Skinning Elusive Ferocious Titanfang (Titan-Infused Creature Bait)
+			q(74187, name(HEADERS.NPC, 195541)),	-- Skinning Elusive Flourishing Quillbloom
+			q(74232, name(HEADERS.NPC, 202436, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Elusive Frenzied Amberfur
+			q(74190, name(HEADERS.NPC, 195509)),	-- Skinning Elusive Proto Skyterror
+			q(74188, name(HEADERS.NPC, 195465)),	-- Skinning Elusive Tempest Lizard
+			q(74235, name(HEADERS.NPC, 204831, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Elusive Magma Cobra
+			q(78397, name(HEADERS.NPC, 212133, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Elusive Verdant Gladewarden
+			q(75873, name(HEADERS.NPC, 203664, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Emberdusk
+			q(74224, name(HEADERS.NPC, 193134)),	-- Skinning Enkine the Voracious
+			q(74146, name(HEADERS.NPC, 194409)),	-- Skinning Ergburk
+			q(75881, name(HEADERS.NPC, 200725, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Faunos
+			q(75872, name(HEADERS.NPC, 203660, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Flowfy
+			q(74130, name(HEADERS.NPC, 193698)),	-- Skinning Frigidpelt Den Mother
+			q(75884, name(HEADERS.NPC, 200537, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Gahz'raxes
+			q(74152, name(HEADERS.NPC, 193853)),	-- Skinning Galnmor
+			q(74193, name(HEADERS.NPC, 193125)),	-- Skinning Goremaul the Gluttonous
+			q(78333, name(HEADERS.NPC, 209936, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Greedy Gessie
+			q(74550, name(HEADERS.NPC, 201537, {["timeline"] = { ADDED_10_0_5 }})),	-- Skinning Groffnar
+			q(74135, name(HEADERS.NPC, 193251)),	-- Skinning Gruffy
+			q(74134, name(HEADERS.NPC, 193269)),	-- Skinning Grumbletrunk
+			q(74180, name(HEADERS.NPC, 187781)),	-- Skinning Hamett
+			q(74203, name(HEADERS.NPC, 193229)),	-- Skinning Henlare
+			q(78344, name(HEADERS.NPC, 210075, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Henri Snufftail
+			q(74179, name(HEADERS.NPC, 188095)),	-- Skinning Hunter of the Deep
+			q(74125, name(HEADERS.NPC, 193648)),	-- Skinning Infernum
+			q(74127, name(HEADERS.NPC, 193647)),	-- Skinning Karantun
+			q(74238, name(HEADERS.NPC, 203625, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Karokta
+			q(78339, name(HEADERS.NPC, 210046, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Keen-eyed Ciana
+			q(74147, name(HEADERS.NPC, 194608)),	-- Skinning Kholdeg (Grand Hunt)
+			q(74145, name(HEADERS.NPC, 194438)),	-- Skinning Khomuur (Grand Hunt)
+			q(74155, name(HEADERS.NPC, 194761)),	-- Skinning Khuumog (Grand Hunt)
+			q(74237, name(HEADERS.NPC, 203462, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Kob'rok
+			q(74169, name(HEADERS.NPC, 197009)),	-- Skinning Liskheszaera
+			q(75878, name(HEADERS.NPC, 200742, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Luttrok
+			q(74236, name(HEADERS.NPC, 200111, {["timeline"] = { ADDED_10_1_0 }})),	-- Skinning Magtembo
+			q(74182, name(HEADERS.NPC, 195409)),	-- Skinning Makhra the Ashtouched
+			q(74171, name(HEADERS.NPC, 193212)),	-- Skinning Malsegan
+			q(78341, name(HEADERS.NPC, 210051, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Matriarch Keevah
+			q(74208, name(HEADERS.NPC, 193246)),	-- Skinning Matriarch Remalla
+			q(74161, name(HEADERS.NPC, 193311)),	-- Skinning Melkhop (Grand Hunt)
+			q(74163, name(HEADERS.NPC, 195430)),	-- Skinning Molkeej (Grand Hunt)
+			q(78342, name(HEADERS.NPC, 210064, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Molten Leadspike
+			q(78338, name(HEADERS.NPC, 210045, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Moragh the Slothful
+			q(74559, name(HEADERS.NPC, 201549, {["timeline"] = { ADDED_10_0_5 }})),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
+			q(78343, name(HEADERS.NPC, 210070, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Mosa Umbramane
+			q(74157, name(HEADERS.NPC, 195093)),	-- Skinning Moskhoi (Grand Hunt)
+			q(74214, name(HEADERS.NPC, 193735)),	-- Skinning Moth'go Deeploom
+			q(74131, name(HEADERS.NPC, 193201)),	-- Skinning Mucka the Raker
+			q(74154, name(HEADERS.NPC, 194225)),	-- Skinning Muugurv (Grand Hunt)
+			q(74166, name(HEADERS.NPC, 195895)),	-- Skinning Nergazurai
+			q(74140, name(HEADERS.NPC, 190968)),	-- Skinning Norbett (Grand Hunt)
+			q(74194, name(HEADERS.NPC, 193130)),	-- Skinning Pleasant Alpha
+			q(74220, name(HEADERS.NPC, 192737)),	-- Skinning Qalashi War Mammoth (War Party Event)
+			q(74132, name(HEADERS.NPC, 197371)),	-- Skinning Ravenous Tundra Bear
+			q(74205, name(HEADERS.NPC, 193143)),	-- Skinning Razk'vex the Untamed
+			q(74199, name(HEADERS.NPC, 193240)),	-- Skinning Riverwalker Tamopo
+			q(74196, name(HEADERS.NPC, 193666)),	-- Skinning Rokmur
+			q(74176, name(HEADERS.NPC, 195223)),	-- Skinning Rustlily
+			q(74151, name(HEADERS.NPC, 193885)),	-- Skinning Salkii
+			q(74142, name(HEADERS.NPC, 190161)),	-- Skinning Sarana (Grand Hunt)
+			q(74555, name(HEADERS.NPC, 201562, {["timeline"] = { ADDED_10_0_5 }})),	-- Skinning Shardwing
+			q(74168, name(HEADERS.NPC, 192949)),	-- Skinning Skaara
+			q(74215, name(HEADERS.NPC, 193708)),	-- Skinning Skald the Impaler
+			q(74223, name(HEADERS.NPC, 193181)),	-- Skinning Skewersnout
+			q(74222, name(HEADERS.NPC, 193120)),	-- Skinning Smogswog the Firebreather
+			q(75879, name(HEADERS.NPC, 200622, {["timeline"] = { ADDED_10_0_7 }})),	-- Skinning Snarfang
+			q(74216, name(HEADERS.NPC, 193706)),	-- Skinning Snufflegust
+			q(74173, name(HEADERS.NPC, 193123)),	-- Skinning Steamgill
+			q(74167, name(HEADERS.NPC, 193133)),	-- Skinning Sunscale Behemoth
+			q(74213, name(HEADERS.NPC, 193634)),	-- Skinning Swog'ranka
+			q(74143, name(HEADERS.NPC, 191103)),	-- Skinning Uranto the Swift (Grand Hunt)
+			q(74148, name(HEADERS.NPC, 194601)),	-- Skinning Zagdech
+			q(74149, name(HEADERS.NPC, 194624)),	-- Skinning Zumakh (Grand Hunt)
+			q(74207, name(HEADERS.NPC, 193258)),	-- Skinning Tempestrian
+			q(74175, name(HEADERS.NPC, 193163)),	-- Skinning Territorial Coastling
+			q(74159, name(HEADERS.NPC, 195132)),	-- Skinning Tevgai (Grand Hunt)
+			q(74201, name(HEADERS.NPC, 191305)),	-- Skinning The Great Shellkhan
+			q(74177, name(HEADERS.NPC, 195204)),	-- Skinning The Jolly Giant
+			q(74198, name(HEADERS.NPC, 183984)),	-- Skinning The Weeping Vilomah
+			q(74218, name(HEADERS.NPC, 193148)),	-- Skinning Thunderous Matriarch
+			q(74150, name(HEADERS.NPC, 193722)),	-- Skinning Tomnu
+			q(74156, name(HEADERS.NPC, 194760)),	-- Skinning Uurhilt (Grand Hunt)
+			q(74183, name(HEADERS.NPC, 192453)),	-- Skinning Vaniik the Stormtouched
+			q(78345, name(HEADERS.NPC, 210508, {["timeline"] = { ADDED_10_2_0 }})),	-- Skinning Voracious Mikanji
+			q(74184, name(HEADERS.NPC, 192364)),	-- Skinning Windscale the Stormborn
+			q(74195, name(HEADERS.NPC, 193161)),	-- Skinning Woolfang
+			q(74228, name(HEADERS.NPC, 186859)),	-- Skinning Worldcarver A'tir
+			q(74158, name(HEADERS.NPC, 195101)),	-- Skinning Yaankhi
+			q(74160, name(HEADERS.NPC, 195283)),	-- Skinning Yamakh
+			q(74172, name(HEADERS.NPC, 193140)),	-- Skinning Zarizz
+			q(74170, name(HEADERS.NPC, 193209)),	-- Skinning Zenet Avis
+			q(74181, name(HEADERS.NPC, 188451)),	-- Skinning Zerimek
+		})),
 		prof(TAILORING, {
-			q(71946),	-- Timeweaving unlocked
-			q(71947),	-- Timeweaving Full maxed out
-			q(71290),	-- Azureweave unlocked
-			q(71294),	-- Azureweave Full maxed out
+			q(71946),	-- Timeweaving 0/20
+			q(71947),	-- Timeweaving 20/20
+			q(71290),	-- Azureweave 0/20
+			q(71294),	-- Azureweave 20/20
 		}),
 	}),
 })));

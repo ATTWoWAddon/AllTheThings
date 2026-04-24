@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
@@ -296,7 +297,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189170, {	-- Glimmer of Vigilance
-				--	["description"] = "Drops from Vine-Choked Protectors & Overgrown Drifter",	-- No description due translations?
+					-- ["description"] = "Drops from Vine-Choked Protectors & Overgrown Drifter",	-- No description due translations?
 					["crs"] = {
 						182350,	-- Vine-Choked Protector
 						182364,	-- Overgrown Drifter

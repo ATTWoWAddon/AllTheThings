@@ -1,21 +1,31 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local ANACHRONOS_COORD;
 -- #if AFTER TBC
 ANACHRONOS_COORD = { 41.6, 49.8, CAVERNS_OF_TIME };
 -- #else
-ANACHRONOS_COORD = { 65, 50, TANARIS };
+ANACHRONOS_COORD = { 65.0, 50.0, TANARIS };
 -- #endif
 local SILITHID_ROYALTY_SHARED_DROPS = COMMON_BOSS_DROPS;
+
 -- #if ANYCLASSIC
 SILITHID_ROYALTY_SHARED_DROPS = createHeader({
 	readable = "Silithid Royalty",
 	icon = 133575,
 	text = {
 		en = "Silithid Royalty",
+		de = "Adel der Silithiden",
 		es = "Realeza Silitida",
 		mx = "Realeza Silitida",
+		fr = "Famille royale silithide",
+		-- it = "Silithid Royalty",
+		ko = "실리시드 왕실",
+		pt = "Realeza Silítidea",
+		ru = "Силитидская знать",
+		cn = "安其拉三宝",
+		tw = "異種蠍皇族",
 	},
 });
 -- #endif
@@ -740,25 +750,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8579, {	-- Mortal Champions
 					["qg"] = 15503,	-- Kandrostrasz
-					["cost"] = {
-						{ "i", 21229, 1 },	-- Qiraji Lord's Insignia
-					},
+					["cost"] = { { "i", 21229, 1 } },	-- Qiraji Lord's Insignia
 				}),
 				q(8595, {	-- Mortal Champions
 					["sourceQuest"] = 8579,	-- Mortal Champions
 					["qg"] = 15503,	-- Kandrostrasz
 					["maxReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-					["cost"] = {
-						{ "i", 21229, 1 },	-- Qiraji Lord's Insignia
-					},
+					["cost"] = { { "i", 21229, 1 } },	-- Qiraji Lord's Insignia
 					["repeatable"] = true,
 				}),
 				q(8784, {	-- Secrets of the Qiraji
 					["qg"] = 15503,	-- Kandrostrasz
 					["maxReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-					["cost"] = {
-						{ "i", 21230, 1 },	-- Ancient Qiraji Artifact
-					},
+					["cost"] = { { "i", 21230, 1 } },	-- Ancient Qiraji Artifact
 					["repeatable"] = true,
 				}),
 				q(8766, {	-- The Changing of Paths - Conqueror No More
@@ -1321,8 +1325,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			}),
 			o(180690, {	-- Large Scarab Coffer
 				["cost"] = {
-					{ "i", 21762, 1, PHASE_ONE },	-- Greater Scarab Coffer Key [pre-4.3]
-					{ "i", 76402, 1, CATA_PHASE_ONE },	-- Greater Scarab Coffer Key [4.3]
+					-- #if BEFORE 4.3.0
+					{ "i", 21762, 1 },	-- Greater Scarab Coffer Key [pre-4.3]
+					-- #else
+					{ "i", 76402, 1 },	-- Greater Scarab Coffer Key [4.3]
+					-- #endif
 				},
 				["groups"] = {
 					i(20876),	-- Idol of Death
@@ -1669,6 +1676,29 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					n(234193, {		-- Gilded Scarab
 						["description"] = "Randomly spawns in the Temple of Ahn'Qiraj and will despawn within 10seconds after being attacked",
 						["groups"] = {
+							i(235526),	-- Formula: Enchant Bracer - Spell Power
+							i(235528),	-- Formula: Enchant Bracer - Agility
+							i(233997),	-- Formula: Enchant Chest - Living Stats
+							i(233998),	-- Formula: Enchant Gloves - Holy Power
+							i(233999),	-- Formula: Enchant Gloves - Arcane Power
+							i(234269),	-- Formula: Enchanted Stopwatch
+							i(234275),	-- Formula: Enchanted Prayer Tome
+							i(234276),	-- Formula: Enchanted Totem
+							i(234277),	-- Formula: Enchanted Mushroom
+							i(235139),	-- Formula: Idol of Sidereal Wrath
+							i(235140),	-- Formula: Idol of Feline Ferocity
+							i(235141),	-- Formula: Idol of Ursin Power
+							i(235133),	-- Formula: Libram of Righteousness
+							i(235134),	-- Formula: Libram of the Exorcist
+							i(235135),	-- Formula: Libram of Sanctity
+							i(234268),	-- Formula: Lodestone of Retaliation
+							i(234270),	-- Formula: Ruby-Encrusted Broach
+							i(234271),	-- Formula: Scroll: Wrath of the Swarm
+							i(234266),	-- Formula: Speedstone
+							i(234267),	-- Formula: Tear of the Dreamer
+							i(235136),	-- Formula: Totem of Pyroclastic Thunder
+							i(235137),	-- Formula: Totem of Thunderous Strikes
+							i(235138),	-- Formula: Totem of Flowing Magma
 							i(20876),	-- Idol of Death
 							i(20879),	-- Idol of Life
 							i(20875),	-- Idol of Night
@@ -1677,38 +1707,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(20877),	-- Idol of the Sage
 							i(20874),	-- Idol of the Sun
 							i(20882),	-- Idol of War
-							i(233997),	-- Formula: Enchant Chest - Living Stats
-							i(233998),	-- Formula: Enchant Gloves - Holy Power
-							i(233999),	-- Formula: Enchant Gloves - Arcane Power
-							i(234266),	-- Formula: Speedstone
-							i(234267),	-- Formula: Tear of the Dreamer
-							i(234268),	-- Formula: Lodestone of Retaliation
-							i(234269),	-- Formula: Enchanted Stopwatch
-							i(234270),	-- Formula: Ruby-Encrusted Broach
-							i(234275),	-- Formula: Enchanted Prayer Tome
-							i(234276),	-- Formula: Enchanted Totem
-							i(234277),	-- Formula: Enchanted Mushroom
-							i(234271),	-- Formula: Scroll: Wrath of the Swarm
-							i(235526),	-- Formula: Enchant Bracer - Spell Power
-							i(235528),	-- Formula: Enchant Bracer - Agility
-							i(235133),	-- Formula: Libram of Righteousness
-							i(235134),	-- Formula: Libram of the Exorcist
-							i(235135),	-- Formula: Libram of Sanctity
-							i(235136),	-- Formula: Totem of Pyroclastic Thunder
-							i(235137),	-- Formula: Totem of Thunderous Strikes
-							i(235138),	-- Formula: Totem of Flowing Magma
-							i(235139),	-- Formula: Idol of Sidereal Wrath
-							i(235140),	-- Formula: Idol of Feline Ferocity
-							i(235141),	-- Formula: Idol of Ursin Power
 							i(234235),	-- Pattern: Glowing Chitin Armor Kit
-							i(234236),	-- Pattern: Sharpened Chitin Armor Kit
-							i(234237),	-- Pattern: Razorbramble Cowl
-							i(234239),	-- Pattern: Razorbramble Leathers
-							i(234238),	-- Pattern: Razorbramble Shoulderpads
+							i(234244),	-- Pattern: Qiraji Silk Scarf (RECIPE!)
 							i(234249),	-- Pattern: Qiraji Silk Cape (RECIPE!)
 							i(234250),	-- Pattern: Qiraji Silk Cloak (RECIPE!)
 							i(234251),	-- Pattern: Qiraji Silk Drape (RECIPE!)
-							i(234244),	-- Pattern: Qiraji Silk Scarf (RECIPE!)
+							i(234237),	-- Pattern: Razorbramble Cowl
+							i(234238),	-- Pattern: Razorbramble Shoulderpads
+							i(234239),	-- Pattern: Razorbramble Leathers
+							i(234236),	-- Pattern: Sharpened Chitin Armor Kit
 							i(234240),	-- Pattern: Vampiric Cowl
 							i(234241),	-- Pattern: Vampiric Shawl
 							i(234242),	-- Pattern: Vampiric Robe
@@ -1716,8 +1723,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(234224),	-- Plans: Obsidian Champion
 							i(234225),	-- Plans: Obsidian Destroyer
 							i(234226),	-- Plans: Obsidian Stormhammer
-							i(234228),	-- Plans: Obsidian Defender
 							i(234227),	-- Plans: Obsidian Sageblade
+							i(234228),	-- Plans: Obsidian Defender
 							i(234429),	-- Plans: Obsidian Heartseeker
 							i(234220),	-- Plans: Razorspike Headcage
 							i(234221),	-- Plans: Razorspike Shoulderplates
@@ -1727,9 +1734,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(234255),	-- Recipe: Flask of the Old Gods (RECIPE!)
 							i(234252),	-- Recipe: Flask of Unyielding Sorrow (RECIPE!)
 							i(234264),	-- Schematic: G00 DV-1B3 Generator
-							i(234265),	-- Schematic: Tuned Force Reactive Disk
 							i(234435),	-- Schematic: Obsidian Shotgun
 							i(235530),	-- Schematic: Obsidian Scope
+							i(234265),	-- Schematic: Tuned Force Reactive Disk
 						},
 					}),
 				}),
@@ -1739,160 +1746,160 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						-- NEUTRAL
 						i(234016, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234017, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234018, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234019, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234020, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234440, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 						}),
 						i(234968, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							-- ["cost"] = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 						}),
 
 						-- FRIENDLY
 						i(234021, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234022, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234023, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234024, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234025, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234439, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 						}),
 						i(234967, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							-- ["cost"] = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 						}),
 
 						-- HONORED
 						i(234026, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234027, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234028, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234029, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234030, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234438, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 						}),
 						i(234966, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							-- ["cost"] = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 						}),
 
 						-- REVERED
 						i(234031, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234032, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234033, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234034, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234035, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234437, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 						}),
 						i(234965, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							-- ["cost"] = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 						}),
 
 						-- Exalted
 						i(234198, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234199, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234200, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234201, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234202, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 						}),
 						i(234436, {	-- Signet Ring of the Bronze Dragonflight
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-						--	["cost"] = { { "i", 00000, 1 }, },	--
+							-- ["cost"] = { { "i", 00000, 1 } },	--
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 						}),
 						i(234964, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							-- ["cost"] = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 						}),
 					},
@@ -2217,67 +2224,67 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						i(233562),	-- Angelista's Charm
 					},
 				}),
-			e(1544, {	-- Battleguard Sartura
-				["creatureID"] = 15516,
-				["groups"] = {
-					i(233572),	-- Necklace of Purity
-					i(233573),	-- Recomposed Boots
-					i(233574),	-- Leggings of the Festering Swarm
-					i(233575),	-- Robes of the Battleguard
-					i(233576),	-- Silithid Claw
-					i(233577),	-- Thick Qirajihide Belt
-					i(233578),	-- Creeping Vine Helm
-					i(233579),	-- Gloves of Enforcement
-					i(233580),	-- Badge of the Swarmguard
-					i(233581),	-- Sartura's Might
-					i(233582),	-- Gauntlets of Steadfast Determination
-					i(233583),	-- Legplates of Blazing Light
-					i(233584),	-- Scaled Leggings of Qiraji Fury
-					i(233643),	-- Anubisath Warhammer
-					i(233644),	-- Garb of Royal Ascension
-					i(233645),	-- Gloves of the Immortal
-					i(233646),	-- Gloves of the Redeemed Prophecy
-					i(233647),	-- Neretzek, the Blood Drinker
-					i(233648),	-- Ritssyn's Ring of Chaos
-					i(233649),	-- Shard of the Fallen Star
-					i(235047),	-- Gloves of the Fallen Prophet
-				},
-			}),
-			e(1545, {	-- Fankriss the Unyielding
-				["creatureID"] = 15510,
-				["groups"] = {
-					i(233369),	-- Qiraji Bindings of Dominance
-					i(233370),	-- Qiraji Bindings of Command
-					i(233371),	-- Qiraji Bindings of Sovereignty
-					i(233585),	-- Ancient Qiraji Ripper
-					i(233586),	-- Jaw of the Sand Reaver
-					i(233587),	-- Barbed Choker
-					i(233588),	-- Cloak of Untold Secrets
-					i(233589),	-- Fetish of the Sand Reaver
-					i(233590),	-- Hive Tunneler's Boots
-					i(233591),	-- Silithid Carapace Chestguard
-					i(233592),	-- Mantle of Wicked Revenge
-					i(233593),	-- Pauldrons of the Unrelenting
-					i(233594),	-- Robes of the Guardian Saint
-					i(233595),	-- Scaled Sand Reaver Leggings
-				},
-			}),
-			e(1548, {	-- Viscidus
-					["description"] = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
-					["creatureID"] = 15299,
+				e(1544, {	-- Battleguard Sartura
+					["creatureID"] = 15516,
+					["groups"] = {
+						i(233572),	-- Necklace of Purity
+						i(233573),	-- Recomposed Boots
+						i(233574),	-- Leggings of the Festering Swarm
+						i(233575),	-- Robes of the Battleguard
+						i(233576),	-- Silithid Claw
+						i(233577),	-- Thick Qirajihide Belt
+						i(233578),	-- Creeping Vine Helm
+						i(233579),	-- Gloves of Enforcement
+						i(233580),	-- Badge of the Swarmguard
+						i(233581),	-- Sartura's Might
+						i(233582),	-- Gauntlets of Steadfast Determination
+						i(233583),	-- Legplates of Blazing Light
+						i(233584),	-- Scaled Leggings of Qiraji Fury
+						i(233643),	-- Anubisath Warhammer
+						i(233644),	-- Garb of Royal Ascension
+						i(233645),	-- Gloves of the Immortal
+						i(233646),	-- Gloves of the Redeemed Prophecy
+						i(233647),	-- Neretzek, the Blood Drinker
+						i(233648),	-- Ritssyn's Ring of Chaos
+						i(233649),	-- Shard of the Fallen Star
+						i(235047),	-- Gloves of the Fallen Prophet
+					},
+				}),
+				e(1545, {	-- Fankriss the Unyielding
+					["creatureID"] = 15510,
 					["groups"] = {
 						i(233369),	-- Qiraji Bindings of Dominance
 						i(233370),	-- Qiraji Bindings of Command
 						i(233371),	-- Qiraji Bindings of Sovereignty
-						i(233598),	-- Slime-Coated Leggings
-						i(233599),	-- Sharpened Silithid Femur
-						i(233600),	-- Ring of the Qiraji Fury
-						i(233601),	-- Scarab Brooch
-						i(233603),	-- Gauntlets of the Righteous Champion
-						i(233604),	-- Gauntlets of Kalimdor
+						i(233585),	-- Ancient Qiraji Ripper
+						i(233586),	-- Jaw of the Sand Reaver
+						i(233587),	-- Barbed Choker
+						i(233588),	-- Cloak of Untold Secrets
+						i(233589),	-- Fetish of the Sand Reaver
+						i(233590),	-- Hive Tunneler's Boots
+						i(233591),	-- Silithid Carapace Chestguard
+						i(233592),	-- Mantle of Wicked Revenge
+						i(233593),	-- Pauldrons of the Unrelenting
+						i(233594),	-- Robes of the Guardian Saint
+						i(233595),	-- Scaled Sand Reaver Leggings
 					},
 				}),
-				e(1546, {	-- Princess Huhuran
+				e(1548, {	-- Viscidus
+						["description"] = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
+						["creatureID"] = 15299,
+						["groups"] = {
+							i(233369),	-- Qiraji Bindings of Dominance
+							i(233370),	-- Qiraji Bindings of Command
+							i(233371),	-- Qiraji Bindings of Sovereignty
+							i(233598),	-- Slime-Coated Leggings
+							i(233599),	-- Sharpened Silithid Femur
+							i(233600),	-- Ring of the Qiraji Fury
+							i(233601),	-- Scarab Brooch
+							i(233603),	-- Gauntlets of the Righteous Champion
+							i(233604),	-- Gauntlets of Kalimdor
+						},
+					}),
+					e(1546, {	-- Princess Huhuran
 					["creatureID"] = 15509,
 					["groups"] = {
 						i(233369),	-- Qiraji Bindings of Dominance
@@ -2377,7 +2384,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						i(233353),	-- Light Blue Qiraji Resonating Crystal
 						i(233356),	-- Orange Qiraji Resonating Crystal
 						i(233357),	-- Twilight Qiraji Resonating Crystal
-						i(234614, {	--	Void-Touched Emblem
+						i(234614, {	-- Void-Touched Emblem
 							i(234650),	-- Ancient Qiraji Ripper
 							i(234974),	-- Staff of the Qiraji Prophets
 							i(234975),	-- Hammer of Jizhi

@@ -170928,7 +170928,7 @@ for itemID,f in pairs(ITEM_FILTERS_FOR_CLASSIC) do
 			-- Blacklisted, we don't care about this.
 		else
 			-- HUH?! WHAT IS THIS? (maybe COSMETIC?)
-			--print("ITEM FILTERS FOR RWP: " .. itemID .. ", " .. f .. " -> " .. retailF);
+			-- print("ITEM FILTERS FOR RWP: " .. itemID .. ", " .. f .. " -> " .. retailF);
 			Items[itemID] = { filterForRWP = retailF };
 		end
 	end
@@ -170938,12 +170938,12 @@ end
 -- Meaning the item was intended for Warriors/Paladins
 for i,itemID in ipairs({
 	-- These are handled by the logic provided above!
-	--14147,	-- Cavedweller Bracers (RFC)
-	--6742,	-- Stonefist Girdle (RFK)
-	--7718,	-- Herod's Shoulder (SM)
-	--7719,	-- Raging Berserker's Helm (SM)
-	--7688,	-- Ironspine's Ribcage (SM)
-	--3228,	-- Jimmied Handcuffs (Stockade)
+	-- 14147,	-- Cavedweller Bracers (RFC)
+	-- 6742,	-- Stonefist Girdle (RFK)
+	-- 7718,	-- Herod's Shoulder (SM)
+	-- 7719,	-- Raging Berserker's Helm (SM)
+	-- 7688,	-- Ironspine's Ribcage (SM)
+	-- 3228,	-- Jimmied Handcuffs (Stockade)
 
 	-- These are pretty silly Blizzard things, Warrior Exclusive items that should be learnable by Warriors.
 	7130,	-- Brutal Helm (Thunder Bluff - Warrior Only)

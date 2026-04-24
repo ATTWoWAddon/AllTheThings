@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 	applyclassicphase(CATA_PHASE_RISE_OF_THE_ZANDALARI, inst(77, {	-- Zul'Aman
 		["mapID"] = ZULAMAN,
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
-		["isRaid"] = false,	-- prevent merging isRaid from BC version
+		["_drop"] = { "isRaid" },	-- prevent merging isRaid from BC version
 		["groups"] = {
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["groups"] = {
@@ -47,12 +47,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					}),
 					n(TREASURES, {
 						o(181665, {	-- Burial Chest
-							--[[["coords"] = {
-								{ 64.5 30.4, GHOSTLANDS },
-								{ 62.7, 32.5, GHOSTLANDS },
-								{ 58.8, 28.6, GHOSTLANDS },
-								{ 62.9, 28.0, GHOSTLANDS },
-							},--]]
+							-- ["coords"] = {
+							-- 	{ 64.5, 30.4, GHOSTLANDS },
+							-- 	{ 62.7, 32.5, GHOSTLANDS },
+							-- 	{ 58.8, 28.6, GHOSTLANDS },
+							-- 	{ 62.9, 28.0, GHOSTLANDS },
+							-- },
 							["groups"] = {
 								i(23923),	-- Amani Sacrificial Dagger
 								i(29518),	-- Amani Scimitar
@@ -62,12 +62,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					n(VENDORS, {
 						-- #if BEFORE 4.1.0
 						n(52915, {	-- Harald
-							["cost"] = {
-								{ "i", 33865, 1 },	-- Amani Hex Stick
-							},
+							["cost"] = { { "i", 33865, 1 } },	-- Amani Hex Stick
 							["groups"] = {
 								i(33926, {	-- Sealed Scroll Case
-									["description"] = "Can contain profession recipes." -- Only applies for the TBC version of Zul'Aman.
+									["description"] = "Can contain profession recipes.",	-- Only applies for the TBC version of Zul'Aman.
 								})
 							},
 						}),
@@ -157,9 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					}),
 					n(24396, {	-- Forest Frog
 						["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to get vendors and bags of gold, as well as have Mojo spawn and hop into your bags.",
-						["cost"] = {
-							{ "i", 33865, 1 },	-- Amani Hex Stick
-						},
+						["cost"] = { { "i", 33865, 1 } },	-- Amani Hex Stick
 						["groups"] = {
 							i(33993, {	-- Mojo (PET!)
 								["timeline"] = { ADDED_2_3_0 },
@@ -326,6 +322,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(77, {
-		q(35443),	-- Zul'Aman Reward Quest - Heroic completion
+		["_drop"] = { "isRaid" },	-- prevent merging isRaid from BC version
+		["groups"] = {
+			q(35443),	-- Zul'Aman Reward Quest - Heroic completion
+		},
 	}),
 })));

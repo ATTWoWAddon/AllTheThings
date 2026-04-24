@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(QUESTS, {
@@ -82,7 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 			}),
 			q(84719, {	-- The Expedition Awaits
-				--["sourceQuests"] = { ??? },	-- TODO: unknown
+				-- ["sourceQuests"] = { ??? },	-- TODO: unknown
 				["provider"] = { "n", 232132 },	-- Dawn
 				["coord"] = { 41.8, 26.1, DORNOGAL },
 			}),
@@ -108,7 +109,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = { i(230771) },	-- Earthen Prototype (QI!)
 					}),
 					o(475286, {	-- Overcharged Battery
-						["coord"] = { 71.2, 46, SIREN_ISLE },
+						["coord"] = { 71.2, 46.0, SIREN_ISLE },
 						["groups"] = { i(230773) },	-- Overcharged Battery (QI!)
 					}),
 				},
@@ -175,7 +176,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 39.3, 20.1, SIREN_ISLE },
 						["groups"] = { i(232862) },	-- Singing Fragments (QI!)
 					}),
-					--spell(472051),	-- Runecaster's Eye
+					-- spell(472051),	-- Runecaster's Eye
 					--
 					i(229365),	-- Raw Singing Citrine
 				},
@@ -185,7 +186,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 230242 },	-- Bargus
 				["coord"] = { 67.5, 42.0, SIREN_ISLE },
 				["races"] = { DARKIRON, DWARF, EARTHEN_ALLIANCE, EARTHEN_HORDE },
-				--TODO: I am not sure with this source quest because I used the alt skip
+				-- TODO: I am not sure with this source quest because I used the alt skip
 				["groups"] = {
 					i(234455),	-- Storm-flecked Debris (QI!)
 					sensemble(1215408),	-- Ensemble: Stonebound Earthen Regalia
@@ -205,7 +206,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["sourceQuests"] = { 84726 },	-- Uncovered Mysteries
 				["provider"] = { "n", 230242 },	-- Bargus
 				["coord"] = { 67.5, 42.0, SIREN_ISLE },
-				--TODO: I'm still not sure what exactly trigger it. It could be first filled bar for special assigment?
+				-- TODO: I'm still not sure what exactly trigger it. It could be first filled bar for special assigment?
 			}),
 			q(85653, {	-- Dipping a Toe
 				["sourceQuests"] = { 84726 },	-- Uncovered Mysteries
@@ -224,7 +225,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 46.2, 87.8, SIREN_ISLE },
 						["groups"] = { i(232861) },	-- Singing Fragments (QI!)
 					}),
-					--spell(470197),	-- Blessing of the Seadweller
+					-- spell(470197),	-- Blessing of the Seadweller
 					--
 					i(229365),	-- Raw Singing Citrine
 				},
@@ -234,7 +235,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 231997 },	-- Didi the Wrench
 				["coord"] = { 71.3, 45.9, SIREN_ISLE },
 				["groups"] = {
-					--spell(470167),	-- Superjuiced
+					-- spell(470167),	-- Superjuiced
 					--
 					i(229365),	-- Raw Singing Citrine
 				},
@@ -244,7 +245,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 228074 },	-- Angorla
 				["coord"] = { 71.2, 44.0, SIREN_ISLE },
 				["groups"] = {
-					--spell(470168),	-- Cyrce's Zephyr
+					-- spell(470168),	-- Cyrce's Zephyr
 					--
 					i(229365),	-- Raw Singing Citrine
 				},
@@ -257,7 +258,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(232860),	-- Singing Fragments (QI!)
 					i(232861),	-- Singing Fragments (QI!)
 					i(232862),	-- Singing Fragments (QI!)
-					--spell(470169),	-- Thieves of the Siren
+					-- spell(470169),	-- Thieves of the Siren
 					--
 					i(229365),	-- Raw Singing Citrine
 				},
@@ -267,7 +268,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 231997 },	-- Didi the Wrench
 				["coord"] = { 71.2, 45.8, SIREN_ISLE },
 				["groups"] = {
-					--spell(470170),	-- Wings of the Siren
+					-- spell(470170),	-- Wings of the Siren
 					i(235041),	-- Cyrce's Circlet (TOY!)
 				},
 			}),
@@ -294,17 +295,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			-- Random open world object with quest?
 			q(84547, {	-- Redemption Guaranteed
-				--["sourceQuests"] = { 85059 },	-- A Piece of the Action (TODO: ???)
+				-- ["sourceQuests"] = { 85059 },	-- A Piece of the Action (TODO: ???)
 				["provider"] = { "i", 228665 },	-- Empty Kaja'Cola
 				["coord"] = { 69.3, 43.7, SIREN_ISLE },
 			}),
 			q(85716, {	-- Rune-Seared Spear
-				--["sourceQuests"] = { 85059 },	-- A Piece of the Action (TODO: ???)
+				-- ["sourceQuests"] = { 85059 },	-- A Piece of the Action (TODO: ???)
 				["provider"] = { "i", 232439 },	-- Rune-Seared Spear
 				["coord"] = { 57.9, 78.5, SIREN_ISLE },
 			}),
 			q(85570, {	-- The Tattered Journal
-				--["sourceQuests"] = { ??? },	-- ???
+				-- ["sourceQuests"] = { ??? },	-- ???
 				["provider"] = { "o", 494923 },	-- Tattered Journal
 				["coord"] = { 37.1, 77.2, 2375 },	-- The Forgotten Vault
 				["groups"] = {
@@ -321,10 +322,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(235544),	-- Soggy Journal Page (QI!)
 					i(235546),	-- Torn Journal Page (QI!)
 					i(235547),	-- Weathered Journal Page (QI!)
-					--o(499443, {	-- Faded Journal Page
-					--	i(232651),	-- Faded Journal Page (QI!)
-					--	changed for some reason?
-					--}),
+					-- o(499443, {	-- Faded Journal Page
+					-- 	i(232651),	-- Faded Journal Page (QI!)
+					-- 	changed for some reason?
+					-- }),
 				},
 			}),
 			q(85572, {	-- A Group Effort
@@ -423,7 +424,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),--
 			hqt(86240, {	-- Give Marmaduke the well loved squeky toy
 				["name"] = "Give Marmaduke the Well Loved Squeaky Toy",
-				["cost"] = {{ "i", 233027, 1 }},	-- Well Loved Squeaky Toy
+				["cost"] = { { "i", 233027, 1 } },	-- Well Loved Squeaky Toy
 				["provider"] = { "n", 234172 },	-- Marmaduke
 				["coords"] = {
 					{ 42.5, 47.4, SIREN_ISLE },
@@ -457,8 +458,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				-- Snapdragon timer after quest
 				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
 				--
-				--It went live:
-				--it seems like questID fire per item drop for slot now
+				-- It went live:
+				-- it seems like questID fire per item drop for slot now
 				--
 				q(84839, name(HEADERS.Global, "INVTYPE_HEAD")),	-- leather / plate Head slot
 				q(84840, name(HEADERS.Global, "INVTYPE_SHOULDER")),	-- leather / mail / plate Shoulder slot

@@ -1,6 +1,7 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
+
 OPERATION_GNOMEREGAN = createHeader({
 	readable = "Operation: Gnomeregan",
 	icon = 255139,
@@ -9,8 +10,10 @@ OPERATION_GNOMEREGAN = createHeader({
 	},
 	description = {
 		en = "Operation: Gnomeregan was the name of Gelbin Mekkatorque's plan for the retaking of the surface of Gnomeregan. Only Alliance players between level 75 and 80 were able to serve during the operation, but lower level players helped by motivating other gnomes or by turning in items.",
+		cn = "夺回诺莫瑞根行动是格尔宾・梅卡托克为夺回诺莫瑞根地表制定的计划名称。只有 75 到 80 级的联盟玩家能够参与此次行动，但较低等级的玩家可以通过鼓舞其他侏儒或上交物品来提供帮助",
 	},
 });
+
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n(OPERATION_GNOMEREGAN,
 	bubbleDown({
 		["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
@@ -168,6 +171,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 						},
 					}),
 				},
+			}),
+			q(25286, {	-- Words for Delivery (for level 75 and below)
+				["sourceQuest"] = 25283,	-- Prepping the Speech
+				["altQuests"] = { 25500 },	-- Words for Delivery (1/2)
+				["providers"] = {
+					{ "n", 39678 },	-- Toby Zeigear
+					{ "i", 52731 },	-- Mekkatorque's Speech
+				},
+				["coord"] = { 49.32, 48.27, DUN_MOROGH },
 			}),
 			q(25500, {	-- Words for Delivery (1/2)
 				["sourceQuest"] = 25283,	-- Prepping the Speech

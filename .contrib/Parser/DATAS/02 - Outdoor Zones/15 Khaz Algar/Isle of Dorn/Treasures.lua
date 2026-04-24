@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(TREASURES, {
@@ -8,14 +9,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			o(444065, {	-- Elemental Geode
 				["coords"] = {
 					{ 45.6, 60.2, ISLE_OF_DORN },
+					{ 60.2, 62.6, ISLE_OF_DORN },
 					{ 77.1, 35.7, ISLE_OF_DORN },
 					{ 70.0, 53.8, ISLE_OF_DORN },
 				},
 			}),
 			o(444066, {	-- Keeper's Stash
 				["coords"] = {
-					{ 62.4, 38.3, ISLE_OF_DORN },
+					{ 20.2, 58.4, ISLE_OF_DORN },
+					{ 38.5, 82.8, ISLE_OF_DORN },
 					{ 38.8, 25.0, ISLE_OF_DORN },
+					{ 42.1, 56.5, ISLE_OF_DORN },
+					{ 44.3, 55.0, ISLE_OF_DORN },
+					{ 44.8, 31.9, ISLE_OF_DORN },
+					{ 53.6, 19.2, ISLE_OF_DORN },
+					{ 62.4, 38.4, ISLE_OF_DORN },
+					{ 63.4, 73.2, ISLE_OF_DORN },
+					{ 64.6, 42.0, ISLE_OF_DORN },
+					{ 74.4, 58.2, ISLE_OF_DORN },
+					{ 77.9, 45.4, ISLE_OF_DORN },
 				},
 			}),
 			--
@@ -31,17 +43,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					{ 53.7, 66.9, ISLE_OF_DORN },
 					{ 52.6, 67.1, ISLE_OF_DORN },
 				},
-				["groups"] = {
-					i(221550),	-- Boskroot Cap
-				},
+				["groups"] = { i(221550) },	-- Boskroot Cap
 			}),
 			n(212928, {	-- Dalaran Sewer Turtle
 				["description"] = "5 min wait after turnin of the Dornish Pike until the Goldengill Trout is available. You will be able to loot the battle pet in Dornogal.",
 				["coord"] = { 40.9, 73.8, ISLE_OF_DORN },
 				["questID"] = 79586,
 				["cost"] = {
-					{"i", 220143, 5},	-- 5x Dornish Pike
-					{"i", 222533, 1},	-- 1x Goldengill Trout
+					{ "i", 220143, 5 },	-- 5x Dornish Pike
+					{ "i", 222533, 1 },	-- 1x Goldengill Trout
 				},
 			}),
 			o(443754, {	-- Earthen Coffer
@@ -155,7 +165,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["crs"] = { 223159 },	-- Plump Snapcrab
 				["coord"] = { 40.6, 59.9, ISLE_OF_DORN },
 				["questID"] = 82212,	-- Weak Lionfish
-				["cost"] = {{"i", 222906, 5}},	-- 5x Plump Snapcrab
+				["cost"] = { { "i", 222906, 5 } },	-- 5x Plump Snapcrab
 				["groups"] = {
 					o(444022, {	-- Magical Treasure Chest
 						["coord"] = { 40.7, 59.7, ISLE_OF_DORN },
@@ -248,7 +258,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["description"] = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby.",
 				["coord"] = { 55.0, 65.6, ISLE_OF_DORN },
 				["questID"] = 82142,
-				["cost"] = {{"i", 221550, 1}},	-- 1x Boskroot Cap
+				["cost"] = { { "i", 221550, 1 } },	-- 1x Boskroot Cap
 				["groups"] = {
 					o(444233, {	-- Mushroom Cap
 						["questID"] = 83245,
@@ -284,7 +294,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(222847, {	-- Weary Water Elemental
 				["coord"] = { 54.1, 19.0, ISLE_OF_DORN },
 				["questID"] = 82134,
-				["cost"] = {{"i", 221504, 1}},	-- 1x Elemental Pearl
+				["cost"] = { { "i", 221504, 1 } },	-- 1x Elemental Pearl
 				["groups"] = {
 					o(444215, {	-- Mysterious Orb
 						["questID"] = 83244,

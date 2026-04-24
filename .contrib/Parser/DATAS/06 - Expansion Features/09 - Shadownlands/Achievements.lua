@@ -6,10 +6,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to SL)
 		ach(15654, bubbleDownSelf({	-- Back from the Beyond (Legacy)
 			["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-			-- #if BEFORE 10.0.2
-			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
-			-- #endif
-		},{
+		}, {
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				14715,	-- Castle Nathria
@@ -29,13 +26,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				15324,	-- Tower Ranger
 				15648,	-- Walking in Maw-mphis
 			}},
+			-- #if BEFORE 10.0.2
+			["sharedDescription"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+			-- #endif
 			["groups"] = {
 				title(463),	-- Veilstrider <Name>
 			},
 		})),
 		ach(20501, bubbleDownSelf({	-- Back from the Beyond
 			["timeline"] = { ADDED_10_2_6 },
-		},{
+		}, {
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				14715,	-- Castle Nathria
@@ -97,16 +97,3 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 		}),
 	}),
 }));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	n(ACHIEVEMENTS, {
-		-- Crypt Couture (automated)
-		-- q(62319),	-- using "Amethystine Dye"
-		-- q(62404),	-- using "Ashen Ink"
-		-- q(62266),	-- using "Discarded Grimoire"
-		-- q(62408),	-- using "Jagged Bonesaw"
-		-- q(62405),	-- using "Mucosal Pigment"
-		-- q(62311),	-- using "Ritualist's Mantle"
-		-- q(62306),	-- using "Sorcerer's Blade"
-	}),
-})));

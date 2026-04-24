@@ -178,7 +178,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 					return false;
 				end
 			end
-			return true;
+			return not t.locked;
 		end
 		return false;
 	end,
@@ -287,11 +287,9 @@ C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 	standing = function(t)
 		return C_GossipInfo_GetFriendshipReputationRanks(t[KEY]).currentLevel;
 	end,
-	maxstanding = app.IsClassic and function(t)
+	maxstanding = function(t)
 		local minReputation = t.minReputation;
 		if minReputation and minReputation[1] == t[KEY] then return minReputation[2]; end
-		return C_GossipInfo_GetFriendshipReputationRanks(t[KEY]).maxLevel;
-	end or function(t)
 		return C_GossipInfo_GetFriendshipReputationRanks(t[KEY]).maxLevel;
 	end,
 	standingName = function(t)
@@ -420,6 +418,7 @@ local function ScanForNewCollectedFactions()
 				-- factions can dynamically be during the 'UPDATE_FACTION' event (thanks Blizzard not telling us which Faction got rep...)
 				if faction.standing >= faction.maxstanding then
 					-- Character Cache
+					-- TODO: collect as accountWide if this Faction is account-wide
 					app.SetThingCollected(KEY, id, false, true)
 				end
 			else PrintMissingFaction(id)

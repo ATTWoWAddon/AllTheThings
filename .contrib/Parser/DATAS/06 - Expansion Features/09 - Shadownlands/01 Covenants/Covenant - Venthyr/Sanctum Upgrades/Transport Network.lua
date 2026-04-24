@@ -1,21 +1,25 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local BROKEN_MIRROR_INFO = {
 	readable = "Broken Mirror",
 	icon = 3854020,
 	text = {
 		en = "Broken Mirror",
-		es = "Espejo roto",
 		de = "Zerbrochener Spiegel",
+		es = "Espejo roto",
+		-- TODO: mx = "",
 		fr = "Miroir brisé",
 		it = "Specchio Rotto",
+		ko = "깨진 거울",
 		pt = "Espelho Quebrado",
 		ru = "Разбитое зеркало",
-		ko = "깨진 거울",
 		cn = "残破的镜子",
+		-- TODO: tw = "",
 	},
 };
+
 local function breakAnotherMirror(suffix)
 	local data = {};
 	for key,value in pairs(BROKEN_MIRROR_INFO) do

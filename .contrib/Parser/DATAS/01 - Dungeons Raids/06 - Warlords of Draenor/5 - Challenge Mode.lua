@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 } }, {
 	n(CHALLENGE_MODE, {
 		ach(8895, {	-- Challenge Warlord
@@ -53,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			["sym"] = {{"meta_achievement",
 				8882,	-- Auchindoun: Gold
 				8878,	-- Bloodmaul Slag Mines: Gold
-				8880,	-- Grimrail Depot: Gold
+				8890,	-- Grimrail Depot: Gold
 				9000,	-- Iron Docks: Gold
 				8886,	-- Shadowmoon Burial Grounds: Gold
 				8874,	-- Skyreach: Gold
@@ -148,7 +149,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			spell(159902),	-- Path of the Burning Mountain
 		}),
 		challengemaster(ach(9627, {		-- Challenge Master: Upper Blackrock Spire
-			--title_gendered(296, 297),	-- <Name>, Lord of Blackrock / <Name>, Lady of Blackrock
+			-- title_gendered(296, 297),	-- <Name>, Lord of Blackrock / <Name>, Lady of Blackrock
 			title_male(296),	-- <Name>, Lord of Blackrock
 			title_female(297),	-- <Name>, Lady of Blackrock
 		})),

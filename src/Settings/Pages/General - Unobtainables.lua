@@ -19,6 +19,7 @@ app.AddEventHandler("OnSettingsRefresh", function()
 end);
 
 local phases = L.PHASES;
+local UnobtainableSettingsBase = settings.__UnobtainableSettingsBase;
 local UnobtainableFilterOnClick = function(self)
 	settings:SetUnobtainableFilter(self.u, self:GetChecked());
 end;
@@ -30,7 +31,11 @@ local UnobtainableOnRefresh = function(self)
 	else
 		self:Enable();
 		self:SetAlpha(1);
-		self.Text:SetTextColor(1, 1, 1);
+		if UnobtainableSettingsBase.__index[self.u] then
+			self.Text:SetTextColor(0.6, 0.7, 1);
+		else
+			self.Text:SetTextColor(1, 1, 1);
+		end
 	end
 end;
 local AvailabilityConditions = {
@@ -50,23 +55,6 @@ local AvailabilityConditions = {
 
 if app.IsClassic then
 	-- Temporary stuff
-	local UnobtainableSettingsBase = settings.__UnobtainableSettingsBase;
-	UnobtainableOnRefresh = function(self)
-		self:SetChecked(settings:GetUnobtainableFilter(self.u));
-		if app.MODE_DEBUG then
-			self:Disable();
-			self:SetAlpha(0.2);
-		else
-			self:Enable();
-			self:SetAlpha(1);
-			if UnobtainableSettingsBase.__index[self.u] then
-				self.Text:SetTextColor(0.6, 0.7, 1);
-			else
-				self.Text:SetTextColor(1, 1, 1);
-			end
-		end
-	end;
-
 	-- The ids are different in classic.
 	AvailabilityConditions = {
 		1,	-- Never Implemented

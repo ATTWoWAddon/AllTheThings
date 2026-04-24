@@ -19,7 +19,7 @@ namespace ATT.DB
         /// <summary>
         /// All of the data stored in the database modules by Type.
         /// </summary>
-        private static readonly Dictionary<string, Type> AllDataTypes = new Dictionary<string, Type>();
+        private static readonly ConcurrentDictionary<string, Type> AllDataTypes = new ConcurrentDictionary<string, Type>();
 
         /// <summary>
         /// All of the supported locales mapped to proper locale keys.
@@ -129,6 +129,21 @@ namespace ATT.DB
         }
 
         /// <summary>
+        /// Get the exportable data for a given module.
+        /// </summary>
+        /// <param name="o">The object.</param>
+        /// <returns>The exportable data.</returns>
+        public static IEnumerable<IDictionary<string, object>> GetExportableData(string moduleName)
+        {
+            if (DataModuleAttribute.GetAllDataModules().TryGetValue(moduleName, out var module))
+            {
+                var getExportableData = typeof(Cache<>).MakeGenericType(module).GetMethod("GetAllExportable", BindingFlags.Public | BindingFlags.Static);
+                return (IEnumerable<IDictionary<string, object>>)getExportableData.Invoke(null, Array.Empty<object>());
+            }
+            return null;
+        }
+
+        /// <summary>
         /// The cached generic methods used by the default LoadFromCSV function.
         /// </summary>
         private static readonly ConcurrentDictionary<string, MethodInfo> CachedGenericMethods = new ConcurrentDictionary<string, MethodInfo>();
@@ -140,6 +155,8 @@ namespace ATT.DB
         /// <param name="path">The path of the CSV file.</param>
         public static void LoadFromCSV(string path)
         {
+            Framework.LogDebug($"Wago.LoadFromCSV: {path}");
+
             // Parse the filename for the database type and locale, if specified.
             var filename = path.Substring(path.LastIndexOf('\\') + 1);
             var segments = filename.Split('.', '-', '_'); // Example: Item_enUS.1.15.7.60277
@@ -157,6 +174,10 @@ namespace ATT.DB
                     return typeof(Cache<>).MakeGenericType(module).GetMethod("LoadFromCSV", BindingFlags.Public | BindingFlags.Static);
                 });
                 method.Invoke(null, new object[] { File.ReadAllText(path), SupportedLocales[locale] });
+            }
+            else
+            {
+                Framework.LogError($"Unsupported Wago File Encountered: {path}");
             }
         }
 
@@ -1078,6 +1099,7 @@ namespace ATT.DB
         /// <typeparam name="T">The subtype.</typeparam>
         private static class Cache<T> where T : IDBType
         {
+            private static readonly object _lock = new object();
             public static readonly Type ParseType = typeof(T);
             public static readonly PropertyInfo[] AllProperties = ParseType.GetProperties();
             public static readonly Dictionary<string, PropertyInfo> AllPropertiesByName = new Dictionary<string, PropertyInfo>();
@@ -1085,32 +1107,41 @@ namespace ATT.DB
             public static readonly List<PropertyInfo> LocalizedProperties;
             static Cache()
             {
-                var exportableDataProperties = new Dictionary<string, PropertyInfo>();
-                var localizedProperties = new List<PropertyInfo>();
-                foreach (var property in AllProperties)
+                lock (_lock)
                 {
-                    AllPropertiesByName[property.Name] = property;
-                    var dataAttribute = property.GetCustomAttribute<ExportableDataAttribute>();
-                    if (dataAttribute != null)
+                    if (AllDataTypes.ContainsKey(ParseType.Name))
                     {
-                        exportableDataProperties[dataAttribute.Name ?? property.Name] = property;
+                        Framework.LogWarn($"Skipped Loading repeated Wago content of Type {ParseType.Name}", ParseType);
+                        return;
                     }
-                    if (property.GetCustomAttribute<LocalizeAttribute>() != null)
-                    {
-                        localizedProperties.Add(property);
-                    }
-                }
-                if (exportableDataProperties.Count > 0)
-                {
-                    ExportableDataProperties = exportableDataProperties;
-                }
-                if (localizedProperties.Count > 0)
-                {
-                    LocalizedProperties = localizedProperties;
-                }
 
-                // Expose the data module to the WagoData class.
-                AllDataTypes[ParseType.Name] = typeof(Cache<T>);
+                    var exportableDataProperties = new Dictionary<string, PropertyInfo>();
+                    var localizedProperties = new List<PropertyInfo>();
+                    foreach (var property in AllProperties)
+                    {
+                        AllPropertiesByName[property.Name] = property;
+                        var dataAttribute = property.GetCustomAttribute<ExportableDataAttribute>();
+                        if (dataAttribute != null)
+                        {
+                            exportableDataProperties[dataAttribute.Name ?? property.Name] = property;
+                        }
+                        if (property.GetCustomAttribute<LocalizeAttribute>() != null)
+                        {
+                            localizedProperties.Add(property);
+                        }
+                    }
+                    if (exportableDataProperties.Count > 0)
+                    {
+                        ExportableDataProperties = exportableDataProperties;
+                    }
+                    if (localizedProperties.Count > 0)
+                    {
+                        LocalizedProperties = localizedProperties;
+                    }
+
+                    // Expose the data module to the WagoData class.
+                    AllDataTypes[ParseType.Name] = typeof(Cache<T>);
+                }
             }
             #region Data Caching + Loading
             /// <summary>
@@ -1187,14 +1218,27 @@ namespace ATT.DB
                         /*
                         else
                         {
-                            Console.WriteLine($"WAGO {ParseType.Name}: Missing property '{header}' in class.");
+                            Trace.WriteLine($"WAGO {ParseType.Name}: Missing property '{header}' in class.");
                         }
                         */
                     }
-                    CachedData.TryAdd(obj.ID, obj);
+                    if (CachedData.TryAdd(obj.ID, obj))
+                    {
+                        //Framework.LogWarn($"WagoData.Load.{ParseType.Name}.Add: {obj.ID}", line.Values);
+                    }
+                    else
+                    {
+                        //Framework.LogWarn($"WagoData.Load.{ParseType.Name}.Skip: {obj.ID}", line.Values);
+                    }
                     StoreLocalizedData(obj, locale);
                 }
+
+                Framework.LogDebug($"INFO: Wago Type {ParseType.Name} Loaded with {CachedData.Count} entries");
             }
+
+            public static IEnumerable<Dictionary<string, object>> GetAllExportable() => ExportableDataProperties is null
+                ? Array.Empty<Dictionary<string, object>>()
+                : CachedData.Values.Select(GetExportableData);
             #endregion
             #region Localized Data Caching + Checking
             /// <summary>
@@ -1247,16 +1291,7 @@ namespace ATT.DB
             public static void StoreLocalizedData(T o, string locale)
             {
                 if (LocalizedProperties == null) return;
-                var result = CachedLocalizedPropertyData.GetOrAdd(o.ID, _ => new ConcurrentDictionary<string, ConcurrentDictionary<string, object>>());
-                foreach (var property in LocalizedProperties)
-                {
-                    var value = (string)property.GetValue(o);
-                    if (!string.IsNullOrWhiteSpace(value))
-                    {
-                        var localizedData = result.GetOrAdd(property.Name, _ => new ConcurrentDictionary<string, object>());
-                        localizedData.TryAdd(locale, value.Trim());
-                    }
-                }
+                StoreLocalizedData(locale, o.ID, o);
             }
 
             /// <summary>
@@ -1269,15 +1304,25 @@ namespace ATT.DB
                 if (LocalizedProperties == null) return;
                 foreach (var updatedWagoDataPair in db)
                 {
-                    var result = CachedLocalizedPropertyData.GetOrAdd(updatedWagoDataPair.Key, _ => new ConcurrentDictionary<string, ConcurrentDictionary<string, object>>());
-                    foreach (var property in LocalizedProperties)
+                    StoreLocalizedData(locale, updatedWagoDataPair.Key, updatedWagoDataPair.Value);
+                }
+            }
+
+            /// <summary>
+            /// Store the localized property data for a key and value
+            /// </summary>
+            /// <param name="db">The db.</param>
+            /// <param name="locale">The locale.</param>
+            public static void StoreLocalizedData(string locale, long key, object keyValue)
+            {
+                var result = CachedLocalizedPropertyData.GetOrAdd(key, Framework.NewConcurrentDictionary_string_string_object);
+                foreach (var property in LocalizedProperties)
+                {
+                    var value = (string)property.GetValue(keyValue);
+                    if (!string.IsNullOrWhiteSpace(value))
                     {
-                        var value = (string)property.GetValue(updatedWagoDataPair.Value);
-                        if (!string.IsNullOrWhiteSpace(value))
-                        {
-                            var localizedData = result.GetOrAdd(property.Name, _ => new ConcurrentDictionary<string, object>());
-                            localizedData.TryAdd(locale, value.Trim());
-                        }
+                        var localizedData = result.GetOrAdd(property.Name, Framework.NewConcurrentDictionary_string_object);
+                        localizedData.TryAdd(locale, value.Trim());
                     }
                 }
             }

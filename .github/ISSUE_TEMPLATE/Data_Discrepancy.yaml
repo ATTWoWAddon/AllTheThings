@@ -1,0 +1,157 @@
+name: Data Discrepancy Report
+description: Report any mismatches between ATT's database and the actual in-game content.
+labels: ["Data Discrepancy"]
+
+body:
+  - type: dropdown
+    id: flavour
+    attributes:
+      label: "Which flavo(u)r of WoW are you using?"
+      description: "Select the versions of World of Warcraft."
+      options:
+        - "Beta"
+        - "PTR"
+        - "Retail"
+        - "MoP Classic"
+        - "Classic Era"
+        - "Hardcore"
+        - "Season of Discovery"
+        - "Anniversary Realms"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: realm
+    attributes:
+      label: "Which server realm are you in?"
+      description: "Select the region where you observed the discrepancy."
+      options:
+        - "US"
+        - "EU"
+        - "KR"
+        - "CN"
+        - "TW"
+    validations:
+      required: true
+
+  - type: input
+    id: wow_build
+    attributes:
+      label: "WoW Client Build"
+      description: "Provide the specific WoW build (e.g., from `/dump GetBuildInfo()` or found on the login screen)."
+      placeholder: "e.g., 10.1.7.51000"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: wow_event
+    attributes:
+      label: "WoW Event"
+      description: "Are you participating in special events like the Legion remix?"
+      options:
+        - "Mainline"
+        - "Legion remix"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: wow_language
+    attributes:
+      label: "WoW Client Language"
+      description: "Select the language of your WoW client."
+      options:
+        - "enUS"
+        - "deDE"
+        - "esES"
+        - "esMX"
+        - "frFR"
+        - "itIT"
+        - "koKR"
+        - "ptBR"
+        - "ruRU"
+        - "zhCN"
+        - "zhTW"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: att_version
+    attributes:
+      label: "ATT Version"
+      description: "Select the version of ATT you are using."
+      options:
+        - "Latest release"
+        - "Latest alpha"
+        - "git"
+    validations:
+      required: true
+
+  - type: input
+    id: att_build
+    attributes:
+      label: "ATT Build Number"
+      description: "Provide the specific ATT build (e.g., from `/dump ATTC.Version` or addon info)."
+      placeholder: "e.g., 4.1.11(release) / 4.1.11-34-g9b96b53(alpha)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: data_type
+    attributes:
+      label: "Type of Data Discrepancy"
+      description: "What category does the mismatch relate to?"
+      options:
+        - "Item"
+        - "Quest"
+        - "Achievement"
+        - "Illusion"
+        - "Appearance"
+        - "NPC"
+        - "Object"
+        - "Drop Source"
+        - "Profession"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: data_reference
+    attributes:
+      label: "Reference to ATT Data"
+      description: "Provide the ATT object ID, quest ID, achievement ID, illusion ID, etc."
+      placeholder: "e.g., ItemID 12345 / QuestID 9876"
+    validations:
+      required: true
+
+  - type: textarea
+    id: discrepancy_description
+    attributes:
+      label: "Describe the Data Discrepancy"
+      description: "What data does ATT show? What is actually in the game?"
+      placeholder: "Describe the mismatch here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshot"
+      description: "Attach a screenshot or image that helps illustrate the difference."
+      placeholder: "Drop image(s) here or paste links..."
+
+  - type: textarea
+    id: reproduce_steps
+    attributes:
+      label: "Steps to Confirm"
+      description: "Provide steps we can follow in-game to verify the discrepancy:\n1. Go to '...'\n2. Perform '...'\n3. Observe result."
+      placeholder: "List steps here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: "Add any other information that might help us validate and correct the data."
+      placeholder: "Anything else to add?"

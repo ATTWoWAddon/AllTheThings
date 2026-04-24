@@ -1,8 +1,8 @@
 -- Chat and Print functionality
 local appName, app = ...;
 
-local print, tostring, ipairs, pairs, type
-	= print, tostring, ipairs, pairs, type
+local print, tostring, ipairs, pairs, type,math_floor
+	= print, tostring, ipairs, pairs, type,math.floor
 
 app.print = function(...)
 	print(app.L.SHORTTITLE, ...);
@@ -30,10 +30,10 @@ app.PrintDebugPrior = function(...)
 	if app.Debugging then
 		local now = GetTimePreciseSec();
 		if DEBUG_PRINT_LAST then
-			local diff = now - DEBUG_PRINT_LAST;
-			print(now,"<>",diff,"Stutter @", math.ceil(1 / diff), ...)
+			local diff = now - DEBUG_PRINT_LAST
+			print(now,...,"<>",math_floor(diff * 10000 / 10),"ms @", math.ceil(1 / diff),"FPS")
 		else
-			print(now,0,...)
+			print(now,...)
 		end
 		DEBUG_PRINT_LAST = GetTimePreciseSec();
 	end
@@ -98,4 +98,10 @@ app.PrintTable = function(t,depth)
 	else
 		print(p,tostring(t),"RECURSIVE");
 	end
+end
+app.PrintError = function(err, source, co)
+	local errorID = app.UniqueCounter.errorID
+	local title, popupID = "Stack Trace #" .. errorID, "runner-error-" .. errorID;
+	app:SetupReportDialog(popupID, title, {"Source:",source,"Error:",err,"Stack:",co and debugstack(co) or debugstack()});
+	app.print(app:Linkify("ERROR "..title, app.Colors.ChatLinkError, "dialog:" .. popupID));
 end

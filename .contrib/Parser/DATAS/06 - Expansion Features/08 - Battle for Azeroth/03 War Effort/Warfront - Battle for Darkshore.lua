@@ -247,6 +247,14 @@ root(ROOTS.ExpansionFeatures,
 									i(165489),	-- Deathguard's Sabatons
 								},
 							}),
+							n(DECOR, sharedDataSelf({
+								["timeline"] = { ADDED_11_2_7 },
+							},{
+								i(245462),	-- Banshee Queen's Banner
+								i(245627),	-- Elven Temple Brazier
+								i(246110),	-- Filigree Moon Sconce
+								i(241066),	-- Forsaken Spiked Brazier
+							})),
 						},
 					})),
 					n(RARES, {
@@ -511,7 +519,7 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 39.79, 32.94, DARKSHORE },
 							["description"] = "Only shows up when Horde Controlled.",
 							["groups"] = {
-								--i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
+								-- i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!)	-- Possible it's a drop here; will need data
 								i(166435),	-- Kaldorei Nightsaber (MOUNT!)
 							},
 						}),
@@ -566,32 +574,134 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					}),
 					n(TREASURES, sharedData({["isDaily"] = true},{
+						o(319024, {	-- Darkshore Cache
+							["coords"] = {
+								{ 55.1, 15.7, DARKSHORE },
+								{ 56.7, 9.5, DARKSHORE },
+								{ 56.8, 9.4, DARKSHORE },
+								{ 57.8, 23.8, DARKSHORE },
+								{ 58.4, 10.0, DARKSHORE },
+								{ 58.8, 25.2, DARKSHORE },
+								{ 60.8, 22.3, DARKSHORE },
+								{ 61.2, 20.1, DARKSHORE },
+								{ 61.7, 19.4, DARKSHORE },
+								{ 62.5, 18.2, DARKSHORE },
+								{ 62.8, 14.5, DARKSHORE },
+							},
+						}),
+						o(319211, {	-- Darkshore Cache
+							["coords"] = {
+								{ 39.9, 26.9, DARKSHORE },
+								{ 42.6, 35.0, DARKSHORE },
+								{ 48.2, 27.4, DARKSHORE },
+								{ 49.2, 25.4, DARKSHORE },
+								{ 49.9, 18.2, DARKSHORE },
+								{ 50.6, 22.7, DARKSHORE },
+								{ 51.2, 28.0, DARKSHORE },
+								{ 51.7, 21.8, DARKSHORE },
+								{ 52.3, 18.1, DARKSHORE },
+							},
+						}),
+						o(319212, {	-- Darkshore Cache
+							["coords"] = {
+								{ 38.4, 43.4, DARKSHORE },
+								{ 39.2, 37.8, DARKSHORE },
+								{ 39.4, 43.3, DARKSHORE },
+								{ 39.9, 40.9, DARKSHORE },
+								{ 40.8, 43.4, DARKSHORE },
+								{ 41.1, 37.9, DARKSHORE },
+								{ 41.1, 41.7, DARKSHORE },
+								{ 42.3, 43.3, DARKSHORE },
+								{ 42.5, 38.5, DARKSHORE },
+							},
+						}),
 						o(319222, {	-- Darkshore Cache
 							["questID"] = 54880,
 							["coord"] = { 44.3, 53.4, DARKSHORE },
 						}),
+						o(319226, {	-- Darkshore Cache
+							["coords"] = {
+								{ 31.6, 85.4, DARKSHORE },
+								{ 37.3, 76.9, DARKSHORE },
+								{ 37.7, 61.7, DARKSHORE },
+								{ 37.9, 84.1, DARKSHORE },
+								{ 38.4, 60.6, DARKSHORE },
+								{ 39.6, 62.2, DARKSHORE },
+								{ 40.2, 73.7, DARKSHORE },
+								{ 41.8, 84.4, DARKSHORE },
+								{ 43.6, 81.2, DARKSHORE },
+								{ 44.2, 60.0, DARKSHORE },
+							},
+						}),
 						o(320514, {	-- Darkshore Cache
 							["questID"] = 54908,
 							["coords"] = {
+								{ 55.1, 15.7, DARKSHORE },
+								{ 56.7, 9.4, DARKSHORE },
+								{ 57.8, 23.9, DARKSHORE },
 								{ 58.4, 10.0, DARKSHORE },
-								{ 60.8, 22.2, DARKSHORE },
+								{ 58.5, 9.9, DARKSHORE },
+								{ 58.9, 25.2, DARKSHORE },
+								{ 60.8, 22.3, DARKSHORE },
+								{ 61.2, 20.1, DARKSHORE },
+								{ 61.7, 19.4, DARKSHORE },
+								{ 62.6, 18.2, DARKSHORE },
+								{ 62.8, 14.5, DARKSHORE },
 							},
 						}),
 						o(320515, {	-- Darkshore Cache
 							["questID"] = 54909,
-							["coord"] = { 50.5, 22.8, DARKSHORE },
+							["coords"] = {
+								{ 49.2, 25.5, DARKSHORE },
+								{ 50.5, 22.8, DARKSHORE },
+							},
 						}),
 						o(320516, {	-- Darkshore Cache
 							["questID"] = 54910,
-							["coord"] = { 41.1, 41.6, DARKSHORE },
+							["coords"] = {
+								{ 38.4, 43.4, DARKSHORE },
+								{ 38.4, 43.5, DARKSHORE },
+								{ 39.2, 37.8, DARKSHORE },
+								{ 39.4, 43.3, DARKSHORE },
+								{ 39.9, 40.9, DARKSHORE },
+								{ 40.8, 43.4, DARKSHORE },
+								{ 41.1, 38.0, DARKSHORE },
+								{ 41.1, 41.7, DARKSHORE },
+								{ 41.7, 42.7, DARKSHORE },
+								{ 42.4, 38.5, DARKSHORE },
+								{ 42.5, 43.3, DARKSHORE },
+							},
 						}),
 						o(320517, {	-- Darkshore Cache
 							["questID"] = 54911,
-							["coord"] = { 45.8, 44.1, DARKSHORE },
+							["coords"] = {
+								{ 36.8, 51.9, DARKSHORE },
+								{ 39.9, 50.4, DARKSHORE },
+								{ 40.0, 50.6, DARKSHORE },
+								{ 41.3, 48.2, DARKSHORE },
+								{ 42.5, 45.5, DARKSHORE },
+								{ 44.3, 53.4, DARKSHORE },
+								{ 44.7, 47.4, DARKSHORE },
+								{ 44.8, 44.5, DARKSHORE },
+								{ 45.5, 48.4, DARKSHORE },
+								{ 45.8, 44.2, DARKSHORE },
+								{ 46.8, 55.6, DARKSHORE },
+							},
 						}),
 						o(320518, {	-- Darkshore Cache
 							["questID"] = 54912,
-							["coord"] = { 41.8, 84.6, DARKSHORE },
+							["coords"] = {
+								{ 31.5, 85.5, DARKSHORE },
+								{ 37.3, 76.9, DARKSHORE },
+								{ 37.8, 61.7, DARKSHORE },
+								{ 37.9, 84.1, DARKSHORE },
+								{ 38.5, 60.4, DARKSHORE },
+								{ 39.4, 62.2, DARKSHORE },
+								{ 40.2, 73.7, DARKSHORE },
+								{ 41.8, 84.4, DARKSHORE },
+								{ 43.4, 81.4, DARKSHORE },
+								{ 44.2, 60.0, DARKSHORE },
+							},
 						}),
 					})),
 					n(WORLD_QUESTS, sharedData({	-- Alliance
@@ -757,12 +867,12 @@ root(ROOTS.ExpansionFeatures,
 								ach(14149, {	-- Heroic: War for the Shore (H)
 									["races"] = HORDE_ONLY,
 								}),
+								achpart(13302, 13305, {	-- Under Cover of Darkness (A)
+									["races"] = ALLIANCE_ONLY,
+								}),
 								ach(13305, {	-- Night Moves (A)
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
-										ach(13302, {	-- Under Cover of Darkness
-											["races"] = ALLIANCE_ONLY,
-										}),
 										crit(43889),	-- Bashal'Aran
 										crit(43896),	-- Gloomtide Strand
 										crit(43902),	-- Cinderfall Grove
@@ -772,12 +882,12 @@ root(ROOTS.ExpansionFeatures,
 										crit(43900),	-- Lor'danel Landing
 									},
 								}),
+								achpart(13301, 13306, {	-- Under Cover of Darkness
+									["races"] = HORDE_ONLY,
+								}),
 								ach(13306, {	-- Night Moves (H)
 									["races"] = HORDE_ONLY,
 									["groups"] = {
-										ach(13301, {	-- Under Cover of Darkness
-											["races"] = HORDE_ONLY,
-										}),
 										crit(43889),	-- Bashal'Aran
 										crit(43890),	-- Gloomtide Strand
 										crit(43891),	-- Cinderfall Grove
@@ -1043,14 +1153,14 @@ root(ROOTS.ExpansionFeatures,
 								q(54657, {	-- Arms and Armor
 									["sourceQuest"] = 54656,	-- Darkshore Recruits (H)
 									["provider"] = { "n", 148482 },	-- Apothecary Keever
-									["coord"] = { 51.8, 58, 1332 },
+									["coord"] = { 51.8, 58.0, 1332 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(54658, {	-- The Altar of Storms
 									["sourceQuest"] = 54657,	-- Arms and Armor (H)
 									["provider"] = { "n", 148482 },	-- Apothecary Keever
-									["coord"] = { 51.8, 58, 1332 },
+									["coord"] = { 51.8, 58.0, 1332 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
 								}),
@@ -1072,11 +1182,11 @@ root(ROOTS.ExpansionFeatures,
 									["lvl"] = 120,
 								}),
 								q(54661, {	-- Echolocation
+									-- ["sourceQuest"] = 54660,	-- Throwing Blight
 									["provider"] = { "n", 145554 },	-- Base Cap'n Crankshot
 									["coord"] = { 49.6, 35.0, 1203 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
-									-- ["sourceQuest"] = 54660,	-- Throwing Blight
 									["groups"] = {
 										spell(281872),	-- Flight Master's Whistle Upgrade: Warfronts
 										i(166389),	-- Crankshot's Note (QI!)
@@ -1533,7 +1643,7 @@ root(ROOTS.ExpansionFeatures,
 												i(165613),	-- Plaguebringer's Halberd
 												i(166802),	-- Plaguebringer's Spellblade
 												i(166762, {	-- Plaguebringer's Drape
-												--	["classes"] = { MAGE, PRIEST, WARLOCK },
+													-- ["classes"] = { MAGE, PRIEST, WARLOCK },
 													["description"] = "This might be only available as Cloth class.",
 												}),
 												i(166763, {	-- Deathstalker's Cloak
@@ -1614,7 +1724,7 @@ root(ROOTS.ExpansionFeatures,
 												i(165613),	-- Plaguebringer's Halberd
 												i(166802),	-- Plaguebringer's Spellblade
 												i(166762, {	-- Plaguebringer's Drape
-												--	["classes"] = { MAGE, PRIEST, WARLOCK },
+													-- ["classes"] = { MAGE, PRIEST, WARLOCK },
 													["description"] = "This might be only available as Cloth class.",
 												}),
 												i(166763, {	-- Deathstalker's Cloak

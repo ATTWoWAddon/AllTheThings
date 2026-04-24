@@ -2,6 +2,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_FOUR, inst(2789, bubbleDownSelf({["timeline"] = { ADDED_1_15_3 }}, {	-- The Tainted Scar
 		["lore"] = "The Tainted Scar is a small region in the western Blasted Lands, corrupted for years by the energies of the Dark Portal. Following the Third War, it became the demonic domain of Lord Kazzak and his army until the Invasion of Outland.",

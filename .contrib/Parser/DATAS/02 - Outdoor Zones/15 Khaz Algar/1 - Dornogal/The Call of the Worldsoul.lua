@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(DORNOGAL, {
 		header(HEADERS.Quest, 82449, {	-- The Call of the Worldsoul
@@ -25,7 +26,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 					}),
 				},
-			},{
+			}, {
 				q(89492, {	-- Dastardly Duos in the Dome!
 					["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" },
 				}),

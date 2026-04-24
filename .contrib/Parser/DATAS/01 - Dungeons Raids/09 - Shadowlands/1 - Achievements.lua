@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		ach(15684, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Fates of the Shadowlands Raids
@@ -21,7 +22,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				15682,	-- Heroic: Fate of the Sepulcher
 			}},
 			["groups"] = {
-				title(464),	-- <Name>, Hero of Fate (TITLE!)
+				title(464),	-- <Name>, Hero of Fate
 			},
 		})),
 		ach(15687, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Mythic: Fates of the Shadowlands Raids

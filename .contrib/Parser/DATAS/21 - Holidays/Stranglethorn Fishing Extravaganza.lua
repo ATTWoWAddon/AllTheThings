@@ -1,17 +1,18 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 	readable = "Stranglethorn Fishing Extravaganza",
 	icon = [[_.asset("Holiday_STV_Fishing")]],
 	eventID = EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA,
 	text = {
 		en = "Stranglethorn Fishing Extravaganza",
-		es = "Gran espectáculo de pesca de Tuercespina",
 		de = "Anglerwettbewerb im Schlingendorntal",
+		es = "Gran espectáculo de pesca de Tuercespina",
+		mx = "Gran espectáculo de pesca de Tuercespina",
 		fr = "Concours de pêche de Strangleronce",
 		it = "Gara di Pesca a Rovotorto",
-		mx = "Gran espectáculo de pesca de Tuercespina",
 		ko = "가시덤불 골짜기 낚시왕 선발대회",
 		pt = "Festerê de Pesca da Selva do Espinhaço",
 		ru = "Рыбомания Тернистой долины",
@@ -52,9 +53,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19807, 5 },	-- Speckled Tastyfish
-				},
+				["cost"] = { { "i", 19807, 5 } },	-- Speckled Tastyfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 			}),
@@ -89,23 +88,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19807, 40 },	-- Speckled Tastyfish
-				},
+				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
+				["_drop"] = { "g" },	-- API lists all quest rewards despite not being available in classic
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
 					i(19970),	-- Arcanite Fishing Pole
 					i(19979),	-- Hook of the Master Angler
-					-- #if AFTER 5.1.0
-					i(50287),	-- Boots of the Bay
+					i(50287, {	-- Boots of the Bay
+						["timeline"] = { ADDED_5_1_0 },
+					}),
 					i(50255, {	-- Dread Pirate Ring
 						["timeline"] = { ADDED_5_1_0, REMOVED_6_1_0 },
 					}),
 					i(122529, {	-- Dread Pirate Ring
 						["timeline"] = { ADDED_6_1_0 },
 					}),
-					-- #endif
 				},
 			}),
 			q(8225, {	-- Rare Fish - Brownell's Blue Striped Racer
@@ -117,9 +115,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19803, 1 },	-- Brownell's Blue Striped Racer
-				},
+				["cost"] = { { "i", 19803, 1 } },	-- Brownell's Blue Striped Racer
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
@@ -135,9 +131,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19806, 1 },	-- Dezian Angelfish
-				},
+				["cost"] = { { "i", 19806, 1 } },	-- Dezian Angelfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
@@ -153,9 +147,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19805, 1 },	-- Keefer's Angelfish
-				},
+				["cost"] = { { "i", 19805, 1 } },	-- Keefer's Angelfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
@@ -173,13 +165,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #endif
 				},
 				["timeline"] = { ADDED_5_1_0, REMOVED_7_1_0 },
-				["cost"] = {
-					{ "i", 19807, 40 },	-- Speckled Tastyfish
-				},
+				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
-					i(50287),	-- Boots of the Bay
+					i(50287, {	-- Boots of the Bay
+						["timeline"] = { ADDED_5_1_0 },
+					}),
 					i(50255, {	-- Dread Pirate Ring
 						["timeline"] = { ADDED_5_1_0, REMOVED_6_1_0 },
 					}),
@@ -199,9 +191,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #endif
 				},
 				["timeline"] = { ADDED_5_1_0, REMOVED_7_1_0 },
-				["cost"] = {
-					{ "i", 19807, 40 },	-- Speckled Tastyfish
-				},
+				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
@@ -223,7 +213,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				["isWorldQuest"] = true,
 				["groups"] = {
 					i(19970),	-- Arcanite Fishing Pole
-					i(50287),	-- Boots of the Bay,
+					i(50287),	-- Boots of the Bay
 					i(122529),	-- Dread Pirate Ring
 					i(19979),	-- Hook of the Master Angler
 					i(19971),	-- High Test Eternium Fishing Line
@@ -253,7 +243,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 							nil,
 							-- #endif
 						-- #if AFTER TWW
-						["collectible"] = false,  -- remove when Blizzard fix fish collection
+						["collectible"] = false,	-- remove when Blizzard fix fish collection
 						-- #endif
 					}),
 					i(19807),	-- Speckled Tastyfish

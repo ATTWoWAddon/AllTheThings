@@ -209,44 +209,44 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(10829, {	-- Arcing Aqueducts
-                    crit(31445, {	-- Skorpyron
-                        ["_encounter"] = { SKORPYRON, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(31444, {	-- Chronomatic Anomaly
-                        ["_encounter"] = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(31443, {	-- Trilliax
-                        ["_encounter"] = { TRILLIAX, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(31445, {	-- Skorpyron
+						["_encounter"] = { SKORPYRON, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(31444, {	-- Chronomatic Anomaly
+						["_encounter"] = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(31443, {	-- Trilliax
+						["_encounter"] = { TRILLIAX, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(10837, {	-- Royal Athenaeum
-                    crit(31447, {	-- Spellblade Aluriel
-                        ["_encounter"] = { ALURIEL, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(31448, {	-- Star Augur Etraeus
-                        ["_encounter"] = { ETRAEUS, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(31449, {	-- High Botanist Tel'arn
-                        ["_encounter"] = { TELARN, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(31447, {	-- Spellblade Aluriel
+						["_encounter"] = { ALURIEL, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(31448, {	-- Star Augur Etraeus
+						["_encounter"] = { ETRAEUS, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(31449, {	-- High Botanist Tel'arn
+						["_encounter"] = { TELARN, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(10838, {	-- Nightspire
-                    crit(31452, {	-- Tichondrius
-                        ["_encounter"] = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(31451, {	-- Krosus
-                        ["_encounter"] = { KROSUS, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(31450, {	-- Elisande
-                        ["_encounter"] = { ELISANDE, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(31452, {	-- Tichondrius
+						["_encounter"] = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(31451, {	-- Krosus
+						["_encounter"] = { KROSUS, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(31450, {	-- Elisande
+						["_encounter"] = { ELISANDE, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(10839, {	-- Betrayer's Rise
-                    crit(31453, {	-- Gul'dan
-                        ["_encounter"] = { GULDAN, DIFFICULTY.RAID.MULTI.ALL },
+					crit(31453, {	-- Gul'dan
+						["_encounter"] = { GULDAN, DIFFICULTY.RAID.MULTI.ALL },
 						["provider"] = { "n", 104154 },	-- Gul'dan
-                    }),
-                }),
+					}),
+				}),
 				ach(11628, {["timeline"] = {ADDED_7_2_0}}),	-- That's So Last Millennium (Nighthold)
 				ach(42030, {	-- The Nighthold (automated)
 					["timeline"] = { ADDED_11_1_7 },

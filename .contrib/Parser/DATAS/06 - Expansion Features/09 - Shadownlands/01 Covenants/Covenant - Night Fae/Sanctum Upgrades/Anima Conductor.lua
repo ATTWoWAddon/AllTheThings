@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local GRATEFUL_CURRENCY = currency(GRATEFUL);
 local GLIMMERLIGHT_STAFF = i(179518);
 local TWILIGHT_BLOOM = i(182453);

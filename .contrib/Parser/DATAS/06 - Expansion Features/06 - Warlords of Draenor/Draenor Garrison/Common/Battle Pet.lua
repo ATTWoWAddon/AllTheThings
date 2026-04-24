@@ -13,7 +13,7 @@ root(ROOTS.ExpansionFeatures,
 					n(QUESTS, {
 						q(36483, {	-- Battle Pet Roundup
 							["sourceQuest"] = 36423,	-- Pets Versus Pests
-							["provider"] = { "n", 85418 },	-- Lio the Lioness
+							["qg"] = 85418,	-- Lio the Lioness
 							["coords"] = {
 								{ 28.4, 39.92, LUNARFALL },
 								{ 29.2, 40.4, LUNARFALL },
@@ -32,7 +32,7 @@ root(ROOTS.ExpansionFeatures,
 								79858,	-- Serr'ah
 							},
 							["coords"] = {
-								{ 28.3, 38.8, LUNARFALL },	-- lvl 2/3 garrison
+								{ 28.3, 38.8, LUNARFALL },
 								{ 32.6, 39.8, FROSTWALL },
 							},
 							["isWeekly"] = true,
@@ -66,7 +66,7 @@ root(ROOTS.ExpansionFeatures,
 								91363,	-- Kura Thunderhoof (Sprouts, Prince Charming and Runts)
 								91364,	-- Kura Thunderhoof (Nicodemus, Brisby and Jenner)
 							},
-							["coord"] = { 32.6, 39.8, FROSTWALL },
+							["coord"] = { 33.3, 42.9, FROSTWALL },	-- level 3
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["_drop"] = { "g" },	-- Drop Flawless Battle-Training Stone
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						})),
 						q(37644, {	-- Mastering the Menagerie (A)
-							["provider"] = { "n", 85418 },	-- Lio the Lioness
+							["qg"] = 85418,	-- Lio the Lioness
 							["coords"] = {
 								{ 28.4, 39.9, LUNARFALL },
 								{ 29.2, 40.4, LUNARFALL },
@@ -102,7 +102,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37645, {	-- Mastering the Menagerie (H)
-							["provider"] = { "n", 79858 },	-- Serr'ah
+							["qg"] = 79858,	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -122,51 +122,57 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(36423, {	-- Pets Versus Pests
 							["sourceQuest"] = 38241,	-- Unearthed Magic
-							["provider"] = { "n", 85418 },	-- Lio the Lioness
+							["qg"] = 85418,	-- Lio the Lioness
 							["coords"] = {
 								{ 28.4, 39.92, LUNARFALL },
 								{ 29.2, 40.4, LUNARFALL },
 							},
 							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
-								garrisonBuilding(42),	-- Menagerie
-							},
+							["groups"] = { garrisonBuilding(42) },	-- Menagerie
 						}),
 						q(36469, {	-- Pets Versus Pests
 							["sourceQuest"] = 38242,	-- Unearthed Magic
-							["provider"] = { "n", 79858 },	-- Serr'ah
+							["qg"] = 79858,	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
-							["groups"] = {
-								garrisonBuilding(42),	-- Menagerie
-							},
+							["groups"] = { garrisonBuilding(42) },	-- Menagerie
 						}),
 						q(36662, {	-- Scrappin'
 							["sourceQuest"] = 36469,	-- Pets Versus Pests
-							["provider"] = { "n", 79858 },	-- Serr'ah
+							["qg"] = 79858,	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 						}),
 						q(38241, {	-- Unearthed Magic
-							["sourceQuests"] = { 36615 },	-- My Very Own Castle
-							["provider"] = { "n", 85418 },	-- Lio the Lioness
+							["sourceQuest"] = 36615,	-- My Very Own Castle
+							["qg"] = 85418,	-- Lio the Lioness
 							["coords"] = {
 								{ 28.4, 39.92, LUNARFALL },
 								{ 29.2, 40.4, LUNARFALL },
 							},
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								o(240357, {	-- Strange Stone
+									["coord"] = { 66.2, 42.9, LUNARFALL },
+									["groups"] = { i(122458) },	-- Strange Stone (QI!)
+								}),
+								--
 								i(122457),	-- Ultimate Battle-Training Stone
 							},
 						}),
 						q(38242, {	-- Unearthed Magic
-							["sourceQuests"] = { 36614 },	-- My Very Own Fortress
-							["provider"] = { "n", 79858 },	-- Serr'ah
+							["sourceQuest"] = 36614,	-- My Very Own Fortress
+							["qg"] = 79858,	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								o(240358, {	-- Strange Stone
+									["coord"] = { 62.5, 71.1, FROSTWALL },
+									["groups"] = { i(122467) },	-- Strange Stone (QI!)
+								}),
+								--
 								i(122457),	-- Ultimate Battle-Training Stone
 							},
 						}),

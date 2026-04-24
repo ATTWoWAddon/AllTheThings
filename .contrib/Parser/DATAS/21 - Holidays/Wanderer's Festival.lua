@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 root(ROOTS.Holidays, {
 	applyevent(EVENTS.WANDERERS_FESTIVAL, n(createHeader({
 		readable = "Wanderer's Festival",
@@ -17,9 +18,9 @@ root(ROOTS.Holidays, {
 			mx = "Festival del errante",
 			fr = "Festival de l’explorateur",
 			it = "Festa del Nomade",
+			ko = "유랑객의 축제",
 			pt = "Festival do Andarilho",
 			ru = "Фестиваль странника",
-			ko = "유랑객의 축제",
 			cn = "云游节",
 			tw = "遊子節",
 		},
@@ -43,6 +44,7 @@ root(ROOTS.Holidays, {
 		},
 	})),
 });
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	m(PANDARIA, {
 		m(KRASARANG_WILDS, {

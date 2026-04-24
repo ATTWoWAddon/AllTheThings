@@ -24,23 +24,19 @@ namespace ATT
             /// <summary>
             /// All of the items that have been parsed sorted by Item ID.
             /// </summary>
-            private static ConcurrentDictionary<decimal, IDictionary<string, object>> ITEMS = new ConcurrentDictionary<decimal, IDictionary<string, object>>();
+            private static readonly ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>> ITEMS =
+                new ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>>();
 
             /// <summary>
             /// All of the item IDs that have been referenced somewhere in the database.
             /// NOTE: This will be fully-populated following the 'Validation' stage of the Parse
             /// </summary>
-            private static ConcurrentDictionary<decimal, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<decimal, bool>();
-
-            /// <summary>
-            /// All of the items with species data that have been parsed sorted by Item ID.
-            /// </summary>
-            private static IDictionary<long, IDictionary<string, object>> ITEMS_WITH_SPECIES = new ConcurrentDictionary<long, IDictionary<string, object>>();
+            private static readonly ConcurrentDictionary<decimal, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<decimal, bool>();
 
             /// <summary>
             /// All of the specific ItemIDs and each corresponding SourceID value
             /// </summary>
-            private static IDictionary<decimal, long> SOURCES = new ConcurrentDictionary<decimal, long>();
+            private static readonly IDictionary<decimal, long> SOURCES = new ConcurrentDictionary<decimal, long>();
 
             /// <summary>
             /// Returns whether a specific ItemID has been referenced
@@ -67,7 +63,7 @@ namespace ATT
             /// <summary>
             /// All of the items that are in the database.
             /// </summary>
-            public static ICollection<IDictionary<string, object>> AllItems
+            public static ICollection<ConcurrentDictionary<string, object>> AllItems
             {
                 get
                 {
@@ -97,24 +93,6 @@ namespace ATT
                 }
             }
 
-
-
-            /// <summary>
-            /// All of the items that are in the database.
-            /// </summary>
-            public static IDictionary<long, IDictionary<string, object>> AllItemsWithSpecies
-            {
-                get
-                {
-                    return ITEMS_WITH_SPECIES;
-                }
-            }
-
-            /// <summary>
-            /// All Item SourceIDs that are in the database.
-            /// </summary>
-            public static IDictionary<decimal, long> AllItemSourceIDs => SOURCES;
-
             /// <summary>
             /// The total number of items loaded into the database.
             /// </summary>
@@ -141,9 +119,11 @@ namespace ATT
                 // Create a new item dictionary.
                 ++Count;
 
-                return ITEMS.GetOrAdd(itemID, _ => new Dictionary<string, object>
+                return ITEMS.GetOrAdd(itemID, _ =>
                 {
-                    { "itemID", itemID }
+                    var newItem = new ConcurrentDictionary<string, object>();
+                    newItem.TryAdd("itemID", itemID);
+                    return newItem;
                 });
             }
 
@@ -170,7 +150,7 @@ namespace ATT
             public static IDictionary<string, object> GetNull(decimal itemID)
             {
                 // Attempt to get an existing item dictionary.
-                return ITEMS.TryGetValue(itemID, out IDictionary<string, object> obj) ? obj : null;
+                return ITEMS.TryGetValue(itemID, out ConcurrentDictionary<string, object> obj) ? obj : null;
             }
 
             /// <summary>
@@ -187,44 +167,6 @@ namespace ATT
                 return GetNull(itemID);
             }
 
-            /// <summary>
-            /// Get the Item Species container which matches the data
-            /// </summary>
-            /// <param name="itemID">The Item ID.</param>
-            /// <returns>A dictionary representing the item.</returns>
-            public static IDictionary<string, object> GetWithSpecies(long itemID)
-            {
-                // Attempt to get an existing item dictionary.
-                if (ITEMS_WITH_SPECIES.TryGetValue(itemID, out IDictionary<string, object> obj))
-                {
-                    return obj;
-                }
-
-                // Create a new item dictionary.
-                return ITEMS_WITH_SPECIES[itemID] = new Dictionary<string, object>();
-            }
-
-            /// <summary>
-            /// Returns the 'name' field of the data, or the corresponding name based on the 'itemID' of the data if it has been
-            /// cached into the Item DB already
-            /// </summary>
-            /// <param name="data"></param>
-            /// <returns></returns>
-            public static bool TryGetName(IDictionary<string, object> data, out string name)
-            {
-                // get the name of the Sourced data
-                data.TryGetValue("name", out name);
-
-                // get the name for matching specific Item
-                if (name == null)
-                    GetNull(data)?.TryGetValue("name", out name);
-
-                // get the name for the general Item
-                if (name == null && data.TryGetValue("itemID", out decimal itemID))
-                    GetNull(itemID)?.TryGetValue("name", out name);
-
-                return name != null;
-            }
             #endregion
 
             #region Export
@@ -269,13 +211,13 @@ namespace ATT
                     else listing.Add(item);
 
                     // If an item doesn't have a name or only has 4 fields, then it's probably missing a database entry.
-                    if (!item.ContainsKey("name") || item.Count < 4)
+                    if (!item.TryGetName(out string itemName) || item.Count < 4)
                     {
                         itemsMissingData.Add(item);
                     }
                     else
                     {
-                        builder2.Append(itemID).Append('\t').Append(item["name"]).AppendLine();
+                        builder2.Append(itemID).Append('\t').Append(itemName).AppendLine();
                     }
                 }
 
@@ -297,7 +239,7 @@ namespace ATT
                         if (item.TryGetValue("itemID", out object id))
                         {
                             builder.Append("i(").Append(id).Append(");");
-                            if (item.TryGetValue("name", out object name))
+                            if (item.TryGetName(out string name))
                             {
                                 builder.Append("\t-- ").Append(name);
                             }
@@ -336,7 +278,7 @@ namespace ATT
                             if (item.TryGetValue("itemID", out object id))
                             {
                                 builder.Append("itemrecipe(\"");
-                                if (item.TryGetValue("name", out object name))
+                                if (item.TryGetName(out string name))
                                 {
                                     builder.Append(name.ToString().Replace("\"", "\\\""));
                                 }
@@ -452,7 +394,7 @@ namespace ATT
                     case "pb":
                     case "sr":
                         {
-                            item[field] = Convert.ToBoolean(value);
+                            Objects.Merge(item, field, value);
                             break;
                         }
 
@@ -462,7 +404,7 @@ namespace ATT
                     case "description":
                     case "type":
                         {
-                            item[field] = ATT.Export.ToString(value);
+                            Objects.Merge(item, field, value);
                             break;
                         }
 
@@ -473,7 +415,7 @@ namespace ATT
                     case "q":
                     case "learnedAt":
                     case "petBattleLvl":
-                        item[field] = Convert.ToInt64(value);
+                        Objects.Merge(item, field, value);
                         break;
 
                     case "altItemID":
@@ -515,7 +457,7 @@ namespace ATT
                             }
                             else
                             {
-                                item[field] = val;
+                                Objects.Merge(item, field, val);
                             }
                             break;
                         }
@@ -547,7 +489,7 @@ namespace ATT
                                     break;
                                 }
 
-                                item[field] = val;
+                                Objects.Merge(item, field, val);
                             }
                             break;
                         }
@@ -578,7 +520,7 @@ namespace ATT
                             }
                             else
                             {
-                                item[field] = val;
+                                Objects.Merge(item, field, val);
                             }
                             break;
                         }
@@ -602,23 +544,12 @@ namespace ATT
                     case "sourceQuests":
                     case "altQuests":
                         {
-                            Objects.MergeIntegerArrayData(item, field, value);
+                            Objects.MergeUniqueIntegerArrayData(item, field, value);
                             break;
                         }
                     // temp special case for 'lvl', only include data if it is in the expected new format of a list
                     case "lvl":
-                        if (value is List<object> lvls)
-                        {
-                            Objects.MergeIntegerArrayData(item, field, lvls);
-                        }
-                        else if (value is long lvl)
-                        {
-                            item[field] = lvl;
-                        }
-                        else
-                        {
-                            item[field] = Convert.ToInt64(value);
-                        }
+                        Objects.MergeUniqueIntegerArrayData(item, field, value);
                         break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
@@ -647,32 +578,7 @@ namespace ATT
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
                     case "sym":
                         {
-                            // Convert the data to a list of generic objects (validation is performed elsewhere)
-                            if (value is List<List<object>> newListOfLists)
-                            {
-                                item[field] = newListOfLists;
-                                return;
-                            }
-
-                            newListOfLists = new List<List<object>>();
-
-                            if (!(value is List<object> newList))
-                            {
-                                LogWarn($"Unable to merge 'sym' data: {ToJSON(value)}", item);
-                                return;
-                            }
-
-                            foreach (var o in newList)
-                            {
-                                if (!(o is List<object> list))
-                                {
-                                    LogWarn($"Unable to merge 'sym' data: {ToJSON(o)}", item);
-                                    continue;
-                                }
-
-                                newListOfLists.Add(list);
-                            }
-                            item[field] = newListOfLists;
+                            Objects.Merge(item, field, value);
                             break;
                         }
                     // 'cost' is specific based on Source, so it shouldn't merge for all Sources of an Item
@@ -699,7 +605,7 @@ namespace ATT
                     //case "OnClick":
                     //case "OnUpdate":
                     case "OnTooltip":
-                        item[field] = value;
+                        Objects.Merge(item, field, value);
                         break;
 
                     default:
@@ -711,7 +617,7 @@ namespace ATT
                         }
 
                         // for undefined parser-only fields, just use the base Object merge implementation for the Item
-                        if (field.StartsWith("_"))
+                        if (field[0] == '_')
                         {
                             Objects.Merge(item, field, value);
                             return;
@@ -784,33 +690,19 @@ namespace ATT
                 }
 
                 // Attempt to extract the itemID from the data table.
-                if (data.ContainsKey("itemID") ||
-                    data.ContainsKey("toyID"))
+                if (data.ContainsKey("itemID") || data.ContainsKey("toyID"))
                 {
                     var item = conditionalMerge ? GetNull(data) : Get(data);
                     if (item != null)
                     {
-                        foreach (var pair in data) Merge(item, pair.Key, pair.Value);
+                        // don't merge _drop fields into a data which defines those fields to be dropped
+                        foreach (var pair in data.WithoutDrops(item)) Merge(item, pair.Key, pair.Value);
                     }
                     else if (data["itemID"].TryConvert(out long itemID) && itemID > 0)
                     {
                         LogDebug($"INFO: Conditional Item data not merged: {itemID} =", data);
                     }
                 }
-            }
-
-
-            /// <summary>
-            /// Merge the data into the item database.
-            /// NOTE: Only data containing an itemID will merge.<para/>
-            /// Specify conditional merge to skip creating an ItemDB entry if it does not already exist
-            /// </summary>
-            /// <param name="data">The data to merge into the item database.</param>
-            public static void MergeFromDB(IDictionary<string, object> data, bool conditionalMerge = false)
-            {
-                // TODO: This is just Crieve trying to make it more clear where the source of this information is coming from.
-                // I'd like to (at some point) make all information from ItemDB always attribute and information from objects be limited to context.
-                Merge(data, conditionalMerge);
             }
 
             /// <summary>
@@ -908,7 +800,7 @@ namespace ATT
                     case "type":
                     case "_wipe":
                     case "collectible":
-                        data[field] = value;
+                        Objects.Merge(data, field, value);
                         break;
                     // Conditional merges
                     case "b":
@@ -916,7 +808,7 @@ namespace ATT
                     case "timeline":
                         if (!data.ContainsKey(field))
                         {
-                            data[field] = value;
+                            Objects.Merge(data, field, value);
                             if (field != "b") // bit spammy, even for debug logging
                             {
                                 LogDebug($"MergeInto {data["itemID"]}: {field} <==", value);
@@ -928,7 +820,7 @@ namespace ATT
                         {
                             // Check for Mark of Honor and don't merge!
                             if (itemID == 137642) break;
-                            data[field] = value;
+                            Objects.Merge(data, field, value);
                             break;
                         }
 
@@ -937,7 +829,7 @@ namespace ATT
                     case "OnClick":
                     case "OnUpdate":
                     case "OnTooltip":
-                        data[field] = value;
+                        Objects.Merge(data, field, value);
                         break;
 
                     // Ignore all of the other fields.
@@ -959,7 +851,7 @@ namespace ATT
             {
                 if (itemID < 1)
                     return;
-                foreach (var pair in item) MergeInto(itemID, data, pair.Key, pair.Value);
+                foreach (var pair in item.WithoutDrops(data)) MergeInto(itemID, data, pair.Key, pair.Value);
             }
 
             /// <summary>
@@ -1052,12 +944,17 @@ namespace ATT
                 long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
                 long AssignedItemAppearanceModifierID = 0;
                 if (data.TryGetValue("artifactID", out var artifactIDObj)
-                    && WagoData.TryGetValue((long)artifactIDObj, out ArtifactAppearance artifactAppearance))
+                    && artifactIDObj.TryConvert(out long artifactID)
+                    && WagoData.TryGetValue(artifactID, out ArtifactAppearance artifactAppearance))
                 {
                     ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
                 }
                 else
                 {
+                    if (artifactIDObj != null)
+                    {
+                        LogWarn($"Expected ArtifactID {artifactIDObj} to define ItemAppearanceModifierID but could not convert the value.", data);
+                    }
                     data.TryGetValue("ItemAppearanceModifierID", out AssignedItemAppearanceModifierID);
                 }
 

@@ -1,13 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["groups"] = sharedData({
 			["isRaid"] = true,
 			["isWeekly"] = true,
-		},{
+		}, {
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(814, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Nalak, The Storm Lord
 				["crs"] = { 69099 },	-- Nalak, the Storm Lord
 				["questID"] = 32518,
@@ -366,7 +367,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
 						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
-						--["sym"] = {MOP_SYM_PETS},
+						-- ["sym"] = {MOP_SYM_PETS},
 						-- #endif
 						["groups"] = {
 							i(95972),	-- Abandoned Zandalari Arrowlinks
@@ -452,7 +453,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
 						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
-						--["sym"] = {MOP_SYM_PETS},
+						-- ["sym"] = {MOP_SYM_PETS},
 						-- #endif
 						["groups"] = {
 							i(95972),	-- Abandoned Zandalari Arrowlinks
@@ -569,8 +570,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(104273, {	-- Flame-Scarred Cache of Offerings
 						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials. May follow your actual spec instead of loot spec, please provide more information to ATT Discord.",
 						["groups"] = {
-						--	NOTE FOR CONTRIBS: Only add items you receive to this if they are only currently obtainable from this container. The old listings on WoWHead may be inaccurate or out of date.
-						--	it's likely that the commented items drop also. if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
+							-- NOTE FOR CONTRIBS: Only add items you receive to this if they are only currently obtainable from this container. The old listings on WoWHead may be inaccurate or out of date.
+							-- it's likely that the commented items drop also. if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
 							i(105838),	-- Aeth's Swiftcinder Cloak Normal
 							i(105830),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
 							i(105826),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
@@ -604,18 +605,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90410, {	-- Cap of Wandering Pride
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90413),	-- Crest of the Grand Warband
 					i(90416, {	-- Crown of Ranging Invasion
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90411),	-- Facemask of Unrepentant Banditry
 					i(90408, {	-- Free Spirit Hood
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90415),	-- Giantfoot Headguard
@@ -623,6 +627,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90412, {	-- Helm of Restoring Wind
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90409),	-- Sky-Sear Cowl
@@ -636,6 +641,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90422, {	-- Armor of the Single Cloud
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90425),	-- Carapace of Crushed Conviction
@@ -643,11 +649,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90423, {	-- Chestguard of the Unbowed Back
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90419, {	-- Fireproofed Chestguard
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90420),	-- Flameshot Wrap
@@ -655,6 +663,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90417, {	-- Robes of Blue Skies
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90418),	-- Robes of the Lightning Rider
@@ -664,17 +673,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90448, {	-- Cannonfire Cord
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90450, {	-- Carrot-Holder Belt
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90456),	-- Cord of Crazed Strength
 					i(90454, {	-- Girdle of the Galloping Giant
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90453),	-- Girdle of the Raging Rider
@@ -682,17 +694,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90452, {	-- Sparkmaker Girdle
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					-- Boots
 					i(90443, {	-- Burnmender Boots
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90445, {	-- Firerider Treads
 						-- #if BEFORE WOD
-						["classes"] = { SHAMAN },
+						["classes"] = { PALADIN },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90442),	-- Flamefoot Tabi
@@ -701,11 +716,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90440, {	-- Slippers of Fiery Retribution
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90441, {	-- Stompdodger Boots
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90447),	-- Stompers of Vigorous Stomping
@@ -747,6 +764,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(86848),	-- Serrated Wasp Bracers
 							i(86841),	-- Shining Cicada Bracers
 							i(86843),	-- Smooth Beetle Wristbands
+							-- Trinkets
+							i(86772),	-- Jade Bandit Figurine [confirmed Retail drop 2025-06-02 Runaway]
 							-- #endif
 						},
 					}),

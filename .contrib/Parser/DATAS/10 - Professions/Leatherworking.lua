@@ -1,8 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_LEATHERWORKING_KNOWLEDGE = 2025;
-local TWW_LEATHERWORKING_KNOWLEDGE = 2792;
 root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18884),	-- A Test of Scale IV
@@ -944,7 +942,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["groups"] = {
 					i(167560),	-- Cleaned Brilliant Scales (QI!)
 					i(167558),	-- Etched Bones (QI!)
-					r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
+					r(293135, {["u"]=TRAINING}),	-- Drum of Primal Might (RECIPE!)
 					i(167561),	-- Drum of Primal Might (QI!)
 					i(167559),	-- Supple Hides (QI!)
 				},
@@ -961,7 +959,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["groups"] = {
 					i(167560),	-- Cleaned Brilliant Scales (QI!)
 					i(167558),	-- Etched Bones (QI!)
-					r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
+					r(293135, {["u"]=TRAINING}),	-- Drum of Primal Might (RECIPE!)
 					i(167561),	-- Drum of Primal Might (QI!)
 					i(167559),	-- Supple Hides (QI!)
 				},
@@ -987,6 +985,41 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, 1 }}
+		},{
+			pn(31182),	-- Awl Inspiring Works
+			pn(28537),	-- Belts
+			pn(28428),	-- Belts
+			pn(31144),	-- Bestial Primacy
+			pn(31181),	-- Bonding and Stitching
+			pn(28430),	-- Boots
+			pn(28536),	-- Boots
+			pn(28433),	-- Bracers
+			pn(28544),	-- Chestpieces
+			pn(31180),	-- Curing and Tanning
+			pn(31143),	-- Decaying Grasp
+			pn(31145),	-- Elemental Mastery
+			pn(28540),	-- Embroidered Leather Armor
+			pn(28431),	-- Gauntlets
+			pn(28538),	-- Gloves
+			pn(28435),	-- Greaves
+			pn(28543),	-- Helms
+			pn(28432),	-- Intricate Mail
+			pn(28437),	-- Large Mail
+			pn(28546),	-- Leather Armor Crafting
+			pn(31184),	-- Leatherworking Discipline
+			pn(28539),	-- Legguards
+			pn(28438),	-- Mail Armor Crafting
+			pn(28434),	-- Mail Helms
+			pn(28436),	-- Mail Shirts
+			pn(31146),	-- Primordial Leatherworking
+			pn(28545),	-- Shaped Leather Armor
+			pn(31183),	-- Shear Mastery of Leather
+			pn(28429),	-- Shoulderguards
+			pn(28542),	-- Shoulderpads
+			pn(28541),	-- Wristwraps
+		})),
 		n(QUESTS, {
 			q(70362, {	-- Dragon Isles Leatherworking
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
@@ -1132,7 +1165,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_LEATHERWORKING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, 1 }} }, {
 				r(375125),	-- Bow of the Dragon Hunters
 				r(375159),	-- Fang Adornments
 				r(375123),	-- Flame-Touched Chain
@@ -1254,7 +1287,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_LEATHERWORKING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.LEATHERWORKING),
 			},
 		},{
 			i(198613),	-- Leatherworking Designs
@@ -1303,21 +1336,56 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228778),	-- Algari Leatherworker's Journal
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, 1 }}
 		},{
+			pn(97559),	-- Arathi Armorer
+			pn(97707),	-- Armbands
+			pn(97557),	-- Beastly Bulwarks
+			pn(97775),	-- Bindings
+			pn(97782),	-- Breastplates
+			pn(97638),	-- Commanding Concentration
+			pn(97784),	-- Concrete Chitin
+			pn(97777),	-- Cuisses
+			pn(97706),	-- Embroidered Leather Armor
+			pn(97780),	-- Epaulets
+			pn(97556),	-- Epic Ensembles
+			pn(97560),	-- Flawless Fortes
+			pn(97776),	-- Gauntlets
+			pn(97704),	-- Grasps
+			pn(97781),	-- Guises
+			pn(97709),	-- Hoods
+			pn(97637),	-- Industrious Innovations
+			pn(97778),	-- Intricate Chitin
+			pn(97702),	-- Kickers
+			pn(97783),	-- Large Chitin
+			pn(97640),	-- Learned Leatherworker
+			pn(97705),	-- Legwraps
+			pn(97712),	-- Luxurious Leathers
+			pn(97708),	-- Mantles
+			pn(97558),	-- Nerubian Nous
+			pn(97711),	-- Shaped Leather Armor
+			pn(97555),	-- Spotless Stitching
+			pn(97774),	-- Stompers
+			pn(97710),	-- Tunics
+			pn(97779),	-- Vambraces
+			pn(97703),	-- Waistbands
+			pn(97639),	-- Waste Not
+		})),
+		n(QUESTS, {
 			q(84131, {	-- Leatherworking Services Requested
+				["sourceQuests"] = { 84280 },	-- Crafting Orders: Leatherworking
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228778),	-- Algari Leatherworker's Journal
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_LEATHERWORKING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, 1 }} }, {
 				r(441460),	-- Blessed Weapon Grip
 				r(441065),	-- Glyph-Etched Binding
 				r(441059),	-- Glyph-Etched Breastplate
@@ -1401,10 +1469,15 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_LEATHERWORKING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING),
 			},
 		},{
-			--i(),	-- Leatherworking Designs
+			i(228778),	-- Algari Leatherworker's Journal
+			q(83732, {	-- TWW Inscription Order: Leatherworking
+				["name"] = "TWW Inscription Order: Leatherworking",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222549 },	-- Algari Treatise on Leatherworking
+			}),
 			q(83267, {	-- TWW Weekly Leatherworking Knowledgepoint #1
 				["name"] = "TWW Weekly Leatherworking Treasure #1",
 				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace
@@ -1415,126 +1488,178 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42786, {	-- Leatherworking at Midnight
-				["timeline"] = { ADDED_12_0_0 },
+				i(264006),	-- Midnight Leatherworker's Shop Sign (DECOR!)
+			}),
+			ach(62237),	-- Leatherworking-on-Demand
+			ach(62245, {	-- Dedicated to the Craft: Leatherworking
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42786,	-- Leatherworking at Midnight
+					62237,	-- Leatherworking-on-Demand
+				}},
 				["groups"] = {
+					title(747),	-- Thalassian Leatherworker <Name>
 				},
 			}),
 		}),
-		--[[
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228778),	-- Algari Leatherworker's Journal
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.LEATHERWORKING, 1 }}
 		},{
-			q(84131, {	-- Leatherworking Services Requested
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-			}),
+			pn(107987),	-- Advanced Armor
+			pn(107816),	-- Artisanal Accessories
+			pn(107988),	-- Balanced Bracers
+			pn(107984),	-- Bettering Bands
+			pn(107992),	-- Bolstered Bulwarks
+			pn(107813),	-- Brimming Basics
+			pn(107886),	-- Capable Caps
+			pn(107815),	-- Commanding Commodities
+			pn(107919),	-- Concentrated Crafter
+			pn(107812),	-- Crucial Consumables
+			pn(107985),	-- Cutting Claws
+			pn(107883),	-- Embroidered Ensembles
+			pn(107986),	-- Fantastic Faulds
+			pn(107817),	-- Flawless Fortes
+			pn(107881),	-- Grand Gloves
+			pn(107889),	-- Lasting Leather
+			pn(107921),	-- Learned Leatherworker
+			pn(107918),	-- Mastering Multicraft
+			pn(107885),	-- Mighty Mantles
+			pn(107814),	-- Overwhelming Optionals
+			pn(107989),	-- Powerful Plumes
+			pn(107993),	-- Safeguarding Scales
+			pn(107888),	-- Securely Shaped
+			pn(107880),	-- Sturdy Sashes
+			pn(107983),	-- Talented Talons
+			pn(107879),	-- Tasteful Treads
+			pn(107887),	-- Terrific Tunics
+			pn(107882),	-- Toughened Tassets
+			pn(107991),	-- Valuable Vests
+			pn(107990),	-- Versatile Visages
+			pn(107920),	-- Waning Waste
+			pn(107884),	-- Wonderful Wristguards
 		})),
+		n(QUESTS, {
+			q(93695, {	-- Leatherworking Services Requested
+				["sourceQuests"] = { 93731 },	-- Crafting Orders: Leatherworking
+				["qgs"] = {
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+					243500,	-- Talmar <Leatherworking Trainer>
+				},
+				["coords"] = {
+					{ 43.1, 55.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
+				["isWeekly"] = true,
+				["groups"] = {
+					i(263459),	-- Thalassian Leatherworker's Journal
+				},
+			}),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_LEATHERWORKING_KNOWLEDGE, 1 }} }, {
-				r(441460),	-- Blessed Weapon Grip
-				r(441065),	-- Glyph-Etched Binding
-				r(441059),	-- Glyph-Etched Breastplate
-				r(441063),	-- Glyph-Etched Cuisses
-				r(441064),	-- Glyph-Etched Epaulets
-				r(441061),	-- Glyph-Etched Gauntlets
-				r(441062),	-- Glyph-Etched Guise
-				r(441060),	-- Glyph-Etched Stompers
-				r(441066),	-- Glyph-Etched Vambraces
-				r(441058),	-- Rune-Branded Armbands
-				r(441053),	-- Rune-Branded Grasps
-				r(441054),	-- Rune-Branded Hood
-				r(441052),	-- Rune-Branded Kickers
-				r(441055),	-- Rune-Branded Legwraps
-				r(441056),	-- Rune-Branded Mantle
-				r(441051),	-- Rune-Branded Tunic
-				r(441057),	-- Rune-Branded Waistband
-				r(443961),	-- Smoldering Pollen Hauberk
-				r(443951),	-- Weathered Stormfront Vest
-				r(441461),	-- Writhing Armor Banding
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.LEATHERWORKING, 1 }} }, {
+				r(1237545),	-- Blood Knight's Armor Kit
+				r(1237579),	-- Devouring Banding
+				r(1237541),	-- Farstrider's Brilliant Plumes
+				r(1237543),	-- Farstrider's Plated Bracers
+				r(1237537),	-- Farstrider's Razor Talons
+				r(1237540),	-- Farstrider's Reinforced Faulds
+				r(1237536),	-- Farstrider's Scouting Vest
+				r(1237538),	-- Farstrider's Sharpened Claws
+				r(1237542),	-- Farstrider's Trophy Belt
+				r(1237539),	-- Farstrider's Unwavering Visage
+				r(1237507),	-- Silvermoon Agent's Coat
+				r(1237510),	-- Silvermoon Agent's Cover
+				r(1237514),	-- Silvermoon Agent's Deflectors
+				r(1237509),	-- Silvermoon Agent's Handwraps
+				r(1237511),	-- Silvermoon Agent's Leggings
+				r(1237512),	-- Silvermoon Agent's Mantle
+				r(1237508),	-- Silvermoon Agent's Sneakers
+				r(1237513),	-- Silvermoon Agent's Utility Belt
 			}),
 		}),
 		n(TREASURES, {
-			o(455965, {	-- Arathi Beveler Set
-				["coord"] = { 47.5, 65.1, HALLOWFALL },
-				["questID"] = 83902,
+			o(525921, {	-- Amani Leatherworker's Tool
+				["coord"] = { 33.1, 78.9, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89089,
 				["groups"] = {
-					i(226328),	-- Arathi Beveler Set
+					i(238588),	-- Amani Leatherworker's Tool
 				},
 			}),
-			o(455964, {	-- Arathi Leather Burnisher
-				["coord"] = { 41.5, 57.8, HALLOWFALL },
-				["questID"] = 83903,
+			o(525914, {	-- Artisan's Considered Order
+				["coord"] = { 44.8, 56.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89096,
 				["groups"] = {
-					i(226329),	-- Arathi Leather Burnisher
+					i(238595),	-- Artisan's Considered Order
 				},
 			}),
-			o(455962, {	-- Curved Nerubian Skinning Knife
-				["coord"] = { 59.9, 54.0, AZJ_KAHET },
-				["questID"] = 83905,
+			o(525918, {	-- Bundle of Tanner's Trinkets
+				["coord"] = { 45.4, 45.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				["questID"] = 89092,
 				["groups"] = {
-					i(226331),	-- Curved Nerubian Skinning Knife
+					i(238591),	-- Bundle of Tanner's Trinkets
 				},
 			}),
-			o(455968, {	-- Dornogal Craftsman's Flat Knife
-				["coord"] = { 58.6, 30.7, ISLE_OF_DORN },
-				["questID"] = 83899,
+			o(525920, {	-- Ethereal Leatherworking Knife
+				["coord"] = { 34.7, 57.0, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 89090,
 				["groups"] = {
-					i(226325),	-- Dornogal Craftsman's Flat Knife
+					i(238589),	-- Ethereal Leatherworking Knife
 				},
 			}),
-			o(455966, {	-- Earthen Awl
-				["coord"] = { 64.3, 65.2, THE_RINGING_DEEPS },
-				["questID"] = 83901,
+			o(525915, {	-- Haranir Leatherworking Knife
+				["coord"] = { 36.1, 25.2, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89095,
 				["groups"] = {
-					i(226327),	-- Earthen Awl
+					i(238594),	-- Haranir Leatherworking Knife
 				},
 			}),
-			o(455969, {	-- Earthen Lacing Tools
-				["coord"] = { 68.2, 23.3, DORNOGAL },	-- TODO: re-check mapID
-				["questID"] = 83898,
+			o(525916, {	-- Haranir Leatherworking Mallet
+				["coord"] = { 51.7, 51.3, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89094,
 				["groups"] = {
-					i(226324),	-- Earthen Lacing Tools
+					i(238593),	-- Haranir Leatherworking Mallet
 				},
 			}),
-			o(455963, {	-- Nerubian Tanning Mallet
-				["coord"] = { 55.0, 27.0, NERUBAR },
-				["questID"] = 83904,
+			o(525917, {	-- Patterns: Beyond the Void
+				["coord"] = { 53.7, 51.7, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89093,
 				["groups"] = {
-					i(226330),	-- Nerubian Tanning Mallet
+					i(238592),	-- Patterns: Beyond the Void
 				},
 			}),
-			o(455967, {	-- Underground Stropping Compound
-				["coord"] = { 47.1, 34.9, THE_RINGING_DEEPS },
-				["questID"] = 83900,
+			o(525919, {	-- Prestigiously Racked Hide
+				["coord"] = { 30.8, 84.0, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89091,
 				["groups"] = {
-					i(226326),	-- Underground Stropping Compound
+					i(238590),	-- Prestigiously Racked Hide
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_LEATHERWORKING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.LEATHERWORKING),
 			},
 		},{
-			--i(),	-- Leatherworking Designs
-			q(83267, {	-- TWW Weekly Leatherworking Knowledgepoint #1
-				["name"] = "TWW Weekly Leatherworking Treasure #1",
-				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace
+			i(263459),	-- Thalassian Leatherworker's Journal
+			q(95134, {	-- MID Inscription Order: Leatherworking
+				["name"] = "MID Inscription Order: Leatherworking",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245758 },	-- Thalassian Treatise on Leatherworking
 			}),
-			q(83268, {	-- TWW Weekly Leatherworking Knowledgepoint #2
-				["name"] = "TWW Weekly Leatherworking Treasure #2",
-				["provider"] = { "i", 225222 },		-- Studded Leather Band
+			q(93540, {	-- MID Weekly Leatherworking Knowledgepoint #1
+				["name"] = "MID Weekly Leatherworking Treasure #1",
+				["provider"] = { "i", 259200 },		-- Amani Tanning Oil
 			}),
-		})),--]]
+			q(93541, {	-- MID Weekly Leatherworking Knowledgepoint #2
+				["name"] = "MID Weekly Leatherworking Treasure #2",
+				["provider"] = { "i", 259201 },		-- Thalassian Mana Oil
+			}),
+		})),
 	})),
 })));
 

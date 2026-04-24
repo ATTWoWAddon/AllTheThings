@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 	inst(945, {	-- Seat of the Triumvirate
 		["mapID"] = 903,
@@ -104,6 +105,27 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["lvl"] = 110,
 				}),
 			}),
+			n(ZONE_DROPS, {
+				i(152204, {	-- Glowing Key Fragment (QS!)
+					["maps"] = { EREDATH },
+					["crs"] = {
+						122316,	-- Saprish
+						126152,	-- General Zah'd
+						122423,	-- Grand Shadow-Weaver
+						127791,	-- Grand Shadow-Weaver
+						121670,	-- Shadowguard Adept
+						127797,	-- Shadowguard Champion
+						122403,	-- Shadowguard Champion
+						121672,	-- Shadowguard Phaseblade
+						122413,	-- Shadowguard Riftstalker
+						127796,	-- Shadowguard Riftstalker
+						124171,	-- Shadowguard Subjugator
+						122404,	-- Shadowguard Voidbender
+						122421,	-- Umbral War-Adept
+						122056,	-- Viceroy Nezhar
+					},
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter (TOY!)
@@ -117,6 +139,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(213015, {	-- Grimoire of the Eredathian Darkglare (CI!)
 						["timeline"] = { ADDED_10_2_5 },
 					}),
+					i(258514, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Umbral Spire of Zuraal
+				})),
+				cr(122316, e(1980, {	-- Saprish
+					i(258516, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Wand of Saprish's Gaze
+				})),
+				cr(122056, e(1981, {	-- Viceroy Nezhar
+					i(258524, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Grips of the Dark Viceroy
+					i(258523, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Nezhar's Netherclaw
 				})),
 				cr(122314, e(1982, {	-- L'ura
 					["crs"] = { 124729 },	-- L'ura
@@ -126,6 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 							["timeline"] = { ADDED_11_2_7 },
 						}),
 						i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
+						i(258525, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Scepter of the Endless Night
 					},
 				})),
 			}),

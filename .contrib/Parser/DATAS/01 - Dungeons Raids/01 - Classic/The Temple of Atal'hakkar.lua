@@ -1,19 +1,28 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local ATALAI_DEFENDERS = createHeader({
 	readable = "Atal'ai Defenders",
 	icon = 134177,
 	text = {
 		en = "Atal'ai Defenders",
-		fr = "Défenseurs Atal'ai",
+		de = "Verteidiger der Atal'ai",
+		es = "Defensores Atal'ai",
+		mx = "Defensores de Atal'ai",
+		fr = "Défenseurs atal’ai",
+		it = "",
+		ko = "아탈라이 파수병",
+		pt = "Defensores Atal'ai",
 		ru = "Защитники Атал'ай",
 		cn = "阿塔莱防御者",
+		tw = "阿塔萊防衛者",
 	},
 	description = {
 		en = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
 	},
 });
+
 local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 	if not t.collected and _.IsQuestFlaggedCompleted(3373) and ]] .. WOWAPI_GetItemCount(10455) .. [[ < 1 then
 		if not _.Settings.AccountWide.Quests then
@@ -34,6 +43,7 @@ local ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate = [[function(t)
 		t.description = "|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r";
 	end
 end]];
+
 local SUNKEN_TEMPLE_ZONE_DROPS = n(ZONE_DROPS, {
 	i(11318, {	-- Atal'ai Haze
 		["crs"] = {
@@ -78,13 +88,17 @@ local SUNKEN_TEMPLE_ZONE_DROPS = n(ZONE_DROPS, {
 	i(10629),	-- Mistwalker Boots
 	i(10634),	-- Mindseye Circle
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(237, {	-- The Temple of Atal'hakkar
 		-- #if BEFORE MOP
 		["lore"] = "Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",
 		-- #endif
 		-- #if BEFORE WRATH
-		["zone-text-areaID"] = 1417,	-- Sunken Temple
+		["zone-text-areas"] = {
+			1417,	-- Sunken Temple
+			1477,	-- The Temple of Atal'hakkar
+		},
 		-- #endif
 		["mapID"] = TEMPLE_OF_ATALHAKKAR,
 		["coords"] = {
@@ -139,7 +153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(10593, {	-- An Ancient Evil
 					["sourceQuest"] = 10592,	-- Wisdom of the Banshee Queen
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
-					["coord"] = { 57.8, 92, UNDERCITY },
+					["coord"] = { 57.8, 92.0, UNDERCITY },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
@@ -794,7 +808,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					n(QUESTS, {
 						q(82112, {	-- A Better Ingredient
-							--["sourceQuest"] = 9051,	-- Toxic Test
+							-- ["sourceQuest"] = 9051,	-- Toxic Test
 							["qg"] = 9619,	-- Torwa Pathfinder
 							["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 							["classes"] = { DRUID },
@@ -871,6 +885,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							icon = 136147,
 							text = {
 								en = "Aura of Paralyzing Dread",
+								cn = "痹体恐惧氛围",
 							},
 							description = {
 								en = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
@@ -882,7 +897,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(82111, {	-- Blood of Morphaz
-							--["sourceQuest"] = 8256,	-- The Ichor of Undeath
+							-- ["sourceQuest"] = 8256,	-- The Ichor of Undeath
 							["qg"] = 8405,	-- Ogtinc
 							["coord"] = { 42.2, 42.6, AZSHARA },
 							["classes"] = { PRIEST },
@@ -904,7 +919,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82113, {	-- Da Voodoo
-							--["sourceQuest"] = 8412,	-- Spirit Totem
+							-- ["sourceQuest"] = 8412,	-- Spirit Totem
 							["qg"] = 6176,	-- Bath'rah the Windwatcher
 							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 							-- #if BEFORE TBC
@@ -934,7 +949,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82114, {	-- Destroy Morphaz
-							--["sourceQuest"] = 8252,	-- The Siren's Coral
+							-- ["sourceQuest"] = 8252,	-- The Siren's Coral
 							["qg"] = 8379,	-- Archmage Xylem
 							["coord"] = { 29.6, 40.6, AZSHARA },
 							["classes"] = { MAGE },
@@ -960,6 +975,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							icon = 237552,
 							text = {
 								en = "Emotional Damage",
+								cn = "心理创伤",
 							},
 						}), {
 							["qg"] = 221477,	-- Field Captain Hannalah
@@ -969,7 +985,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(82106, {	-- Forging the Mightstone
-							--["sourceQuest"] = 8416,	-- Inert Scourgestones
+							-- ["sourceQuest"] = 8416,	-- Inert Scourgestones
 							["qg"] = 10838,	-- Commander Ashlam Valorfist
 							["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 							["classes"] = { PALADIN },
@@ -1099,7 +1115,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82110, {	-- The Azure Key
-							--["sourceQuest"] = 8235,	-- Encoded Fragments
+							-- ["sourceQuest"] = 8235,	-- Encoded Fragments
 							["qg"] = 8379,	-- Archmage Xylem
 							["coord"] = { 29.6, 40.6, AZSHARA },
 							["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -1167,7 +1183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82108, {	-- The Green Drake
-							--["sourceQuest"] = 8231,	-- Wavethrashing
+							-- ["sourceQuest"] = 8231,	-- Wavethrashing
 							["qg"] = 8405,	-- Ogtinc
 							["coord"] = { 42.2, 42.6, AZSHARA },
 							["classes"] = { HUNTER },
@@ -1214,7 +1230,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82115, {	-- Trolls of a Feather
-							--["sourceQuest"] = 8421,	-- The Wrong Stuff
+							-- ["sourceQuest"] = 8421,	-- The Wrong Stuff
 							["qg"] = 14470,	-- Impsy <Niby's Minion>
 							["coord"] = { 41.6, 45.0, FELWOOD },
 							["classes"] = { WARLOCK },
@@ -1241,7 +1257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82107, {	-- Voodoo Feathers
-							--["sourceQuest"] = 8424,	-- War on the Shadowsworn
+							-- ["sourceQuest"] = 8424,	-- War on the Shadowsworn
 							["qg"] = 7572,	-- Fallen Hero of the Horde
 							["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 							["classes"] = { WARRIOR },

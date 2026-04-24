@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Spawned",
 		-- TODO: de = "",
-		es = "Hace aparición",
-		mx = "Hace aparición",
+		es = "Hizo aparición a las ",
+		mx = "Hizo aparición a las ",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

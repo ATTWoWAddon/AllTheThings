@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(WORLD_QUESTS, {
@@ -8,12 +9,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
-				--[[
-				q(QUEST, {	-- NAME
-					["coord"] = { XX, YY, THALDRASZUS },
-				}),
-				]]--
+			["groups"] = sharedData({
+				["isWorldQuest"] = true,
+			}, {
 				q(70160, {	-- Alchemical Thesis Defense
 					["coord"] = { 62.3, 36.9, THALDRASZUS },
 				}),
@@ -24,7 +22,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.3, 83.4, THALDRASZUS },
 				}),
 				pvp(q(71225, {	-- Blown Through Wind: Rhuzast
-					["coord"] = { 53, 40.2, THALDRASZUS },
+					["coord"] = { 53.0, 40.2, THALDRASZUS },
 				})),
 				q(70073, {	-- Bluefeather Banners
 					["coord"] = { 50.9, 68.2, THALDRASZUS },

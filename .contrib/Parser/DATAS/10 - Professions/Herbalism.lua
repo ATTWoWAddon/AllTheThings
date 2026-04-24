@@ -1,8 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_HERBALISM_KNOWLEDGE = 2034;
-local TWW_HERBALISM_KNOWLEDGE = 2789;
 local function LifebloodRank(rankID)
 	-- #if BEFORE CATA
 	local rankID = rankID-1
@@ -181,6 +179,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					["description"] = "Farm around 1000-4000 Dreamleaves to make this quest spawn.",
 					["sourceQuests"] = { 40022 },	-- Choked by Nightmare
 					["provider"] = { "n", 98135 },	-- Wildcrafter Osme <Herbalism Trainer>
+					["coord"] = { 54.0, 73.9, VALSHARAH },
 					["groups"] = {
 						r(193297),	-- Dreamleaf [Rank 3]
 					},
@@ -1304,6 +1303,23 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				}),
 			}),
 		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.HERBALISM, 1 }}
+		},{
+			pn(59699),	-- Arboriculture
+			pn(59651),	-- Botany
+			pn(59701),	-- Bountiful Harvests
+			pn(59650),	-- Conversance
+			pn(59649),	-- Cultivation
+			pn(59617),	-- Decayed
+			pn(59697),	-- Floriculture
+			pn(59619),	-- Frigid
+			pn(59698),	-- Fungiculture
+			pn(59700),	-- Horticulture
+			pn(59621),	-- Mastering the Elements
+			pn(59618),	-- Titan-Touched
+			pn(59620),	-- Windswept
+		})),
 		n(QUESTS, {
 			q(70364, {	-- Dragon Isles Herbalism
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
@@ -1362,7 +1378,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_HERBALISM_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.HERBALISM, 1 }} }, {
 				r(391088),	-- Refine Herbs++
 				r(391089),	-- Refine Herbs+++
 				r(390392, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Herb
@@ -1371,7 +1387,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_HERBALISM_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.HERBALISM),
 			},
 		},{
 			i(199115),	-- Herbalism Field Notes
@@ -1407,6 +1423,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.HERBALISM, 1 }}
+		},{
+			pn(96296),	-- Altered
+			pn(96357),	-- Blossom Browser
+			pn(96248),	-- Botany
+			pn(96358),	-- Bountiful Harvests
+			pn(96356),	-- Carnivorous Connoisseur
+			pn(96297),	-- Crystallized
+			pn(96247),	-- Cultivation
+			pn(96355),	-- Fungus Forager
+			pn(96294),	-- Irradiated
+			pn(96246),	-- Mulching
+			pn(96354),	-- Orbinid Observer
+			pn(96298),	-- Overloading the Underground
+			pn(96353),	-- Spear Scavenger
+			pn(96295),	-- Sporefused
+		})),
 		n(QUESTS, sharedData({
 			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 219101 },	-- Akdan <Herbalism Trainer>
@@ -1423,7 +1457,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_HERBALISM_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.HERBALISM, 1 }} }, {
 				r(442990),	-- Empowered Mulch
 				r(442989),	-- Imbued Mulch
 				r(442988),	-- Magical Mulch
@@ -1515,10 +1549,15 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_HERBALISM_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.HERBALISM),
 			},
 		},{
 			i(224817),	-- Algari Herbalism Notes
+			q(83729, {	-- TWW Inscription Order: Herbalism
+				["name"] = "TWW Inscription Order: Herbalism",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222552 },	-- Algari Treatise on Herbalism
+			}),
 			q(81416, {	-- TWW Weekly Herbalism Knowledgepoint #1
 				["name"] = "TWW Weekly Herbalism Knowledgepoint #1",
 				["provider"] = { "i", 224264 },	-- Deepgrove Petal
@@ -1545,151 +1584,156 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42793, {	-- Herbalism at Midnight
-				["timeline"] = { ADDED_12_0_0 },
+				i(264003),	-- Midnight Herbalist's Shop Sign (DECOR!)
+			}),
+			ach(62247),	-- Herbalism-on-Demand
+			ach(62250, {	-- Dedicated to the Craft: Herbalism
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42793,	-- Herbalism at Midnight
+					62247,	-- Herbalism-on-Demand
+				}},
 				["groups"] = {
+					title(751),	-- Thalassian Herbalist <Name>
 				},
 			}),
 		}),
-		--[[
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.HERBALISM, 1 }}
+		},{
+			pn(104480),	-- Bloom Bringer
+			pn(104421),	-- Botany
+			pn(104481),	-- Bountiful Harvests
+			pn(104419),	-- Cultivation
+			pn(104706),	-- Lightfused
+			pn(104476),	-- Lily Looter
+			pn(104707),	-- Midnight Overload
+			pn(104420),	-- Mulching
+			pn(104704),	-- Primal
+			pn(104478),	-- Root Rummager
+			pn(104477),	-- Silver Searcher
+			pn(104479),	-- Thorn Thresher
+			pn(104703),	-- Voidbound
+			pn(104705),	-- Wild
+		})),
 		n(QUESTS, sharedData({
 			["sharedDescription"] = "Requires 25 Skill.",
-			["provider"] = { "n", 219101 },	-- Akdan <Herbalism Trainer>
-			["coord"] = { 44.8, 69.3, DORNOGAL },
+			["provider"] = { "n", 243355 },	-- Botanist Nathera <Herbalism Trainer>
+			["coord"] = { 48.3, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 			["groups"] = {
-				i(224817),	-- Algari Herbalism Notes
+				i(263462),	-- Thalassian Herbalist's Notes
 			},
 		},{
-			q(82970),	-- A Bloom and A Blossom
-			q(82962),	-- A handful of Luredrops
-			q(82965),	-- Light and Shadow
-			q(82916),	-- When Fungi Bloom
+			q(93700),	-- Experience Tranquility
+			q(93702),	-- The Root of Life
+			q(93703),	-- Sin'dorei Vices
+			q(93704),	-- Traditional Harvests
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_HERBALISM_KNOWLEDGE, 1 }} }, {
-				r(442990),	-- Empowered Mulch
-				r(442989),	-- Imbued Mulch
-				r(442988),	-- Magical Mulch
-				r(438811),	-- Refine Herbs++
-				r(438812),	-- Refine Herbs+++
-			}),
-		}),
-		n(QUESTS, sharedData({
-			["provider"] = { "n", 219101 },	-- Akdan <Herbalism Trainer>
-			["coord"] = { 44.8, 69.4, DORNOGAL },
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(224817),	-- Algari Herbalist's Notes
-			},
-		},{
-			q(82965),	-- Light and Shadow
-			q(82958),	-- Little Blessings
-		})),
-		n(QUESTS, {
-			q(91451, {	-- Stalk Market
-				["description"] = "Obtained the first time you harvest Phantom Bloom.",
-				["providers"] = {
-					{ "o", 527489 },	-- Lush Phantom Bloom
-					{ "o", 527488 },	-- Phantom Bloom
-				},
-				["timeline"] = { ADDED_11_2_0 },
-				["groups"] = { i(246582) },	-- Inscrutable Flora (QS!)
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.HERBALISM, 1 }} }, {
+				r(1221181),	-- Empowered Mulch
+				r(1221172),	-- Green Thumb
+				r(1221180),	-- Imbued Mulch
+				r(1221179),	-- Magical Mulch
+				r(1223014),	-- Overload Infused Herb
 			}),
 		}),
 		n(TREASURES, {
-			o(455993, {	-- Ancient Flower
-				["coord"] = { 57.5, 61.5, ISLE_OF_DORN },
-				["questID"] = 83874,
+			o(525974, {	-- A Spade
+				["coord"] = { 64.2, 30.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89158,
+				["groups"] = { i(238472) },	-- A Spade
+			}),
+			o(525970, {	-- Bloomed Bud
+				["coord"] = { 38.3, 67.0, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89162,
 				["groups"] = {
-					i(226300),	-- Ancient Flower
+					i(238468),	-- Bloomed Bud
 				},
 			}),
-			o(455989, {	-- Arathi Garden Trowel
-				["coord"] = { 47.7, 63.3, HALLOWFALL },
-				["questID"] = 83878,
+			o(525975, {	-- Harvester's Sickle
+				["coord"] = { 76.1, 51.1, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89157,
 				["groups"] = {
-					i(226304),	-- Arathi Garden Trowel
+					i(238473),	-- Harvester's Sickle
 				},
 			}),
-			o(455988, {	-- Arathi Herb Pruner
-				["coord"] = { 36.0, 55.0, HALLOWFALL },
-				["questID"] = 83879,
+			o(525973, {	-- Lightbloom Root
+				["coord"] = { 36.7, 25.1, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89159,
 				["groups"] = {
-					i(226305),	-- Arathi Herb Pruner
+					i(238471),	-- Lightbloom Root
 				},
 			}),
-			o(455992, {	-- Dornogal Gardening Scythe
-				["coord"] = { 59.2, 23.5, DORNOGAL },
-				["questID"] = 83875,
+			o(525976, {	-- Peculiar Lotus
+				["coord"] = { 34.7, 57.0, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 89156,
 				["groups"] = {
-					i(226301),	-- Dornogal Gardening Scythe
+					i(238474),	-- Peculiar Lotus
 				},
 			}),
-			o(455991, {	-- Earthen Digging Fork
-				["coord"] = { 48.2, 35.0, THE_RINGING_DEEPS },
-				["questID"] = 83876,
+			o(525977, {	-- Planting Shovel
+				["coord"] = { 51.1, 55.7, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89155,
 				["groups"] = {
-					i(226302),	-- Earthen Digging Fork
+					i(238475),	-- Planting Shovel
 				},
 			}),
-			o(455990, {	-- Fungarian Slicer's Knife
-				["coord"] = { 52.8, 65.8, THE_RINGING_DEEPS },
-				["questID"] = 83877,
+			o(525972, {	-- Simple Leaf Pruners
+				["coord"] = { 49.0, 75.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89160,
 				["groups"] = {
-					i(226303),	-- Fungarian Slicer's Knife
+					i(238470),	-- Simple Leaf Pruners
 				},
 			}),
-			o(455986, {	-- Tunneler's Shovel
-				["coord"] = { 46.8, 16.1, NERUBAR },
-				["questID"] = 83881,
+			o(525971, {	-- Sweeping Harvester's Scythe
+				["coord"] = { 41.9, 46.0, MAP.MIDNIGHT.ZULAMAN},
+				["questID"] = 89161,
 				["groups"] = {
-					i(226307),	-- Tunneler's Shovel
-				},
-			}),
-			o(455987, {	-- Web-Entangled Lotus
-				["coord"] = { 54.6, 20.9, NERUBAR },
-				["questID"] = 83880,
-				["groups"] = {
-					i(226306),	-- Web-Entangled Lotus
+					i(238469),	-- Sweeping Harvester's Scythe
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_HERBALISM_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.HERBALISM),
 			},
 		},{
-			i(224817),	-- Algari Herbalism Notes
-			q(81416, {	-- TWW Weekly Herbalism Knowledgepoint #1
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #1",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(95130, {	-- MID Inscription Order: Herbalism
+				["name"] = "MID Inscription Order: Herbalism",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245761 },	-- Thalassian Treatise on Herbalism
 			}),
-			q(81417, {	-- TWW Weekly Herbalism Knowledgepoint #2
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #2",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(81425, {	-- Midnight Weekly Herbalism Knowledgepoint #1
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #1",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			q(81418, {	-- TWW Weekly Herbalism Knowledgepoint #3
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #3",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(81426, {	-- Midnight Weekly Herbalism Knowledgepoint #2
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #2",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			q(81419, {	-- TWW Weekly Herbalism Knowledgepoint #4
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #4",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(81427, {	-- Midnight Weekly Herbalism Knowledgepoint #3
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #3",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			q(81420, {	-- TWW Weekly Herbalism Knowledgepoint #5
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #5",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(81428, {	-- Midnight Weekly Herbalism Knowledgepoint #4
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #4",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			q(81421, {	-- TWW Weekly Herbalism Knowledgepoint #6
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #6",
-				["provider"] = { "i", 224265 },	-- Deepgrove Rose
+			q(81429, {	-- Midnight Weekly Herbalism Knowledgepoint #5
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #5",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-		})),--]]
+			q(81430, {	-- Midnight Weekly Herbalism Knowledgepoint #6
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #6",
+				["provider"] = { "i", 238466 },	-- Thalassian Phoenix Tail
+			}),
+		})),
 	})),
 })));

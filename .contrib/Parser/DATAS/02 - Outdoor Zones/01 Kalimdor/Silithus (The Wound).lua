@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 SILITHUS_THE_WOUND = createHeader({
 	readable = "Silithus (The Wound)",
 	icon = 236829,
@@ -8,6 +9,7 @@ SILITHUS_THE_WOUND = createHeader({
 		en = [[~C_Map.GetAreaInfo(9310)]],
 	},
 });
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	n(SILITHUS_THE_WOUND, {
 		["description"] = "The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",
@@ -32,14 +34,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["lvl"] = { 50 },
 				["groups"] = {
 					n(ACHIEVEMENTS, {
-						ach(12955),		-- Champions of Azeroth
-						pvp(ach(13775, {	-- Essence Overload
-							["timeline"] = { ADDED_8_2_0 },
-							["groups"] = {
-								ach(13772),	-- Essence Essentials
-								ach(13773),	-- Essence Gains
-							},
-						})),
+						ach(12955),	-- Champions of Azeroth
+						pvp(ach(13772, {["timeline"] = { ADDED_8_2_0 }})),	-- Essence Essentials
+						pvp(ach(13773, {["timeline"] = { ADDED_8_2_0 }})),	-- Essence Gains
+						pvp(ach(13775, {["timeline"] = { ADDED_8_2_0 }})),	-- Essence Overload
 						ach(40958, {	-- Full Heart, Can't Lose
 							["timeline"] = { ADDED_11_0_7 },
 							-- Meta Achievement
@@ -54,13 +52,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 						}),
 						ach(13777, { ["timeline"] = { ADDED_8_2_0 }	}),	-- My Heart Container is Full
-						ach(13771, {	-- Power Is Beautiful
-							["timeline"] = { ADDED_8_2_0 },
-							["groups"] = {
-								ach(13769),	-- Power Up
-								ach(13770),	-- Power Creep
-							},
-						}),
+						ach(13769, {["timeline"] = { ADDED_8_2_0 }}),	-- Power Up
+						ach(13770, {["timeline"] = { ADDED_8_2_0 }}),	-- Power Creep
+						ach(13771, {["timeline"] = { ADDED_8_2_0 }}),	-- Power Is Beautiful
 						ach(13998, { ["timeline"] = { ADDED_8_3_0 }	}),	-- Pure of Heart
 						ach(14157, {	-- The Corruptor's End
 							["timeline"] = { ADDED_8_3_0 },
@@ -69,10 +63,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["sourceQuest"] = 58632,	-- Ny'alotha, the Waking City: The Corruptor's End
 								}),
 							},
-						}),
-						ach(13572, {	-- The Heart Forge
-							["timeline"] = { ADDED_8_2_0 },
-							["sourceQuest"] = 55618,	-- The Heart Forge
 						}),
 					}),
 					n(EMISSARY_QUESTS, {
@@ -106,21 +96,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 57275,	-- Something in Your Mind
 							["qg"] = 155496,	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
-							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
+							["cost"] = { { "i", 171176, 20 } },	-- 20x Shred of Insanity
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(57276, {	-- Maintaining Focus (H)
 							["sourceQuest"] = 57275,	-- Something in Your Mind
 							["qg"] = 155496,	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
-							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
+							["cost"] = { { "i", 171176, 20 } },	-- 20x Shred of Insanity
 							["races"] = HORDE_ONLY,
 						}),
 						q(57462, {	-- Dream Catcher
 							["sourceQuests"] = { 57276, 57464 },	-- Maintaining Focus (A, H)
 							["qg"] = 155496,	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
-							["cost"] = { { "i", 171176, 200 }, },	-- 200x Shred of Insanity
+							["cost"] = { { "i", 171176, 200 } },	-- 200x Shred of Insanity
 						}),
 					})),
 					n(QUESTS, {
@@ -134,7 +124,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_2_0 },
 							["groups"] = {
 								i(169292),	-- Charged Scale of the Blue Aspect (QI!)
-								i(168614), 	-- Charged Scale of the Blue Aspect
+								i(168614),	-- Charged Scale of the Blue Aspect
 							},
 						}),
 						q(54938, {	-- A Brother's Help
@@ -177,9 +167,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 51.0, 88.8, DAZARALOR },	-- Horde
 							},
 							["_drop"] = { "r" },	-- API claims this is Horde-only, but it's neutral
-							--	originally removed, then hotfixed back in for 50 characters
-							--	NOT Horde-only, this ID is offered in both Dazar'alor and Boralus. there used to be a separate ID for Alliance (52946), but it looks like that one was permanently removed.
-							--	used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore. Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
+							-- originally removed, then hotfixed back in for 50 characters
+							-- NOT Horde-only, this ID is offered in both Dazar'alor and Boralus. there used to be a separate ID for Alliance (52946), but it looks like that one was permanently removed.
+							-- used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore. Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
 						}),
 						q(55519, {	-- A Fresh Trauma
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
@@ -222,7 +212,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(55737, {	-- At the Azerite Time
-							["sourceQuest"] = 55735,	--	Defending the Maelstrom
+							["sourceQuest"] = 55735,	-- Defending the Maelstrom
 							["qg"] = 152815,	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },	-- Maelstrom (Scenario)
 							["timeline"] = { ADDED_8_2_0 },
@@ -276,12 +266,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 155496,	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_3_0 },
-							["cost"] = { { "i", 171219, 1 } },	-- Corrupt Black Dragonscales
 							["groups"] = {
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
 									["bonusID"] = 6272,	-- Rank 1 Appearance
 								}),
-								i(171219),	-- Corrupt Black Dragonscales (QI!)
+								o(334696, {	-- Corrupt Black Dragonscales
+									["coord"] = { 47.3, 68.6, 1539 },	-- Blackwing Descent (Scenario)
+									["groups"] = { i(171219) },	-- Corrupt Black Dragonscales (QI!)
+								}),
 								i(172072),	-- Experimental Vial
 							},
 						}),
@@ -335,6 +327,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(173447),	-- Nefarious Tormentor's Footguards
 								i(173818),	-- Nefarious Tormentor's Girdle
 								-- Leather
+								i(173439),	-- Footpads of the Insatiable Maw
+								i(173815),	-- Girdle of the Insatiable Maw
 								-- Cloth
 								i(173812),	-- Vile Manipulator's Cord
 								i(173431),	-- Vile Manipulator's Footwraps
@@ -357,7 +351,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 17.5, 62.1, 1472 },	-- The Dragon's Spine
 							["timeline"] = { ADDED_8_2_0 },
 							["groups"] = {
-								i(167830),	-- Petrified Ebony Scale (QI!)
+								o(324039, {	-- Petrified Dragon Scale
+									["coord"] = { 18.9, 57.8, 1472 },	-- Neltharion's Lair (Scenario)
+									["groups"] = { i(167830) },	-- Petrified Ebony Scale (QI!)
+								}),
 							},
 						}),
 						q(55395, {	-- Don't Close Your Eyes
@@ -488,7 +485,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_3_0 },
 						}),
 						q(55533, {	-- MOTHER Knows Best
-							--["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
+							-- ["sourceQuest"] = 55851,	-- Essential Empowerment	-- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
 							["qg"] = 152206,	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_2_0 },
@@ -525,8 +522,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["groups"] = {
 								i(169652),	-- Bolt of Embroidered Cloth
-								i(170490),	-- Torn Journal Page #58 (QI!)
-								i(170491),	-- Burnt Journal Page
+								o(329645, {	-- Wrathion's Journal Page
+									["coord"] = { 75.4, 45.1, 46 },	-- Karazan Catacombs
+									["groups"] = { i(170490) },	-- Torn Journal Page #58 (QI!)
+								}),
+								o(332577, {	-- Burnt Journal Page
+									["coord"] = { 73.4, 48.9, 46 },	-- Karazan Catacombs
+									["groups"] = { i(170491) },	-- Burnt Journal Page
+								}),
 								i(169651),	-- The Ways of the Old Gods
 							},
 						}),
@@ -769,7 +772,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 152194,	-- MOTHER
 							["coord"] = { 48.1, 72.4, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_2_0 },
-							["groups"] = { i(168611) },	-- Petrified Ebony Scale
+							["groups"] = {
+								ach(13572),	-- The Heart Forge
+								i(168611),	-- Petrified Ebony Scale
+							},
 						}),
 						q(51211, {	-- The Heart of Azeroth
 							["sourceQuests"] = {
@@ -1071,8 +1077,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = sharedData({
 								["timeline"] = { ADDED_8_3_0 },
 							}, {
+								i(247667, {	-- MOTHER's Titanic Brazier (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", 1803, 10000 } },	-- 10,000x Echoes of Ny'alotha
+								}),
+								i(247668, {	-- N'Zoth's Captured Eye (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "c", 1803, 10000 } },	-- 10,000x Echoes of Ny'alotha
+								}),
 								i(173363, {	-- Vessel of Horrific Visions
-									["cost"] = { { "c", 1803, 1750 }, },	-- 1750 Echoes of Ny'alotha
+									["cost"] = { { "c", 1803, 1750 } },	-- 1750 Echoes of Ny'alotha
 								}),
 								i(175062, {	-- Malefic Core
 									["cost"] = { { "c", 1803, 2000 } },	-- 2000 Echoes of Ny'alotha
@@ -1122,7 +1136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["modID"] = 14,
 								}),
 								i(168568, {	-- Null Force Nullifier
-									["cost"] = { { "c", 1803, 2500 }, },	-- 2500 Echoes of Ny'alotha
+									["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
 									["modID"] = 14,
 								}),
 								i(168860, {	-- Enhanced Purification Protocols
@@ -1196,7 +1210,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_3_0 },
 							["groups"] = {
 								i(173363, {	-- Vessel of Horrific Visions
-									["cost"] = { { "c", 1755, 10000 }, },	-- 10,000 Coalescing Visions
+									["cost"] = { { "c", 1755, 10000 } },	-- 10,000 Coalescing Visions
 								}),
 								i(173291, {	-- Luminous Azerite Geode (Rank 4)
 									["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
@@ -1216,13 +1230,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["classes"] = HEALERS,
 								}),
 								i(174876, {	-- Gouged Eye of N'Zoth
-									["cost"] = { { "c", 1719, 25000 }, },	-- 25,000 Corrupted Mementos
+									["cost"] = { { "c", 1719, 25000 } },	-- 25,000 Corrupted Mementos
 								}),
 								i(174361, {	-- Black Dragonscale Backpack
-									["cost"] = { { "c", 1719, 5000 }, },	-- 5,000 Corrupted Mementos
+									["cost"] = { { "c", 1719, 5000 } },	-- 5,000 Corrupted Mementos
 								}),
 								i(174770, {	-- Wicked Swarmer (MOUNT!)
-									["cost"] = { { "c", 1719, 100000 }, },	-- 100,000 Corrupted Mementos
+									["cost"] = { { "c", 1719, 100000 } },	-- 100,000 Corrupted Mementos
 									["modelScale"] = 1.5,
 								}),
 							},
@@ -1452,23 +1466,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(131837, {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					["coord"] = { 81.2, 18.4, SILITHUS },
-					["sym"] = {
-						{"select", "itemID", 137884 },	-- Pattern Dreadleather Bindings
-						{"select", "itemID", 137890 },	-- Pattern Dreadleather Footpads
-						{"select", "itemID", 137889 },	-- Pattern Dreadleather Gloves
-						{"select", "itemID", 137891 },	-- Pattern Dreadleather Jerkin
-						{"select", "itemID", 137888 },	-- Pattern Dreadleather Mask
-						{"select", "itemID", 137887 },	-- Pattern Dreadleather Pants
-						{"select", "itemID", 137886 },	-- Pattern Dreadleather Shoulderguard
-						{"select", "itemID", 142407 },	-- Pattern Drums Of The Mountain
-						{"select", "itemID", 137916 },	-- Pattern Gravenscale Armbands
-						{"select", "itemID", 137921 },	-- Pattern Gravenscale Grips
-						{"select", "itemID", 137923 },	-- Pattern Gravenscale Hauberk
-						{"select", "itemID", 137919 },	-- Pattern Gravenscale Leggings
-						{"select", "itemID", 137918 },	-- Pattern Gravenscale Spaulders
-						{"select", "itemID", 137922 },	-- Pattern Gravenscale Treads
-						{"select", "itemID", 137920 },	-- Pattern Gravenscale Warhelm
-					},
+					["sym"] = {{"select", "itemID",
+						137884,	-- Pattern Dreadleather Bindings
+						137890,	-- Pattern Dreadleather Footpads
+						137889,	-- Pattern Dreadleather Gloves
+						137891,	-- Pattern Dreadleather Jerkin
+						137888,	-- Pattern Dreadleather Mask
+						137887,	-- Pattern Dreadleather Pants
+						137886,	-- Pattern Dreadleather Shoulderguard
+						142407,	-- Pattern Drums Of The Mountain
+						137916,	-- Pattern Gravenscale Armbands
+						137921,	-- Pattern Gravenscale Grips
+						137923,	-- Pattern Gravenscale Hauberk
+						137919,	-- Pattern Gravenscale Leggings
+						137918,	-- Pattern Gravenscale Spaulders
+						137922,	-- Pattern Gravenscale Treads
+						137920,	-- Pattern Gravenscale Warhelm
+					}},
 				}),
 			}),
 		},

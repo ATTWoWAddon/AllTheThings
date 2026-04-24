@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(RARES, {
@@ -68,6 +69,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			header(HEADERS.Achievement, 14372, {	-- Theater of Pain
 				["description"] = "These mobs all spawn in the Theater of Pain, a free-for-all arena in the middle of Maldraxxus.",
 				["questID"] = 62786,	-- seems to trigger on first ToP rare killed each day
+				["isDaily"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
@@ -107,7 +109,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 58005,
 				["groups"] = {
 					i(184188),	-- Collector's Corpse Gambrel
-					i(183692, {	-- Jagged Bonesaw
+					i(183692, {	-- Jagged Bonesaw (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 					i(183833),	-- Kash's Bag of Junk
@@ -301,7 +303,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 29.0, 51.6, MALDRAXXUS },
 				["questID"] = 59290,
 				["groups"] = {
-					i(183690, {	-- Ashen Ink
+					i(183690, {	-- Ashen Ink (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 					i(184285),	-- Boneclutched Shackles
@@ -313,6 +315,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {

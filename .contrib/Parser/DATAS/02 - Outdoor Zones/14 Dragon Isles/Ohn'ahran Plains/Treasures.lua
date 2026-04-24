@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(TREASURES, {
@@ -47,16 +48,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(376581, {	-- Clan Chest
 				["coords"] = {
-					{ 35.3, 37.0, OHNAHRAN_PLAINS },
 					{ 25.0, 37.8, OHNAHRAN_PLAINS },
 					{ 25.3, 37.4, OHNAHRAN_PLAINS },
 					{ 31.3, 70.6, OHNAHRAN_PLAINS },
 					{ 32.2, 68.1, OHNAHRAN_PLAINS },
-					{ 32.4, 39.0, OHNAHRAN_PLAINS },
-					{ 32.5, 38.9, OHNAHRAN_PLAINS },
+					{ 32.4, 38.9, OHNAHRAN_PLAINS },
 					{ 32.7, 37.0, OHNAHRAN_PLAINS },
 					{ 33.5, 42.4, OHNAHRAN_PLAINS },
-					{ 33.5, 42.5, OHNAHRAN_PLAINS },
 					{ 34.8, 37.0, OHNAHRAN_PLAINS },
 					{ 35.0, 41.9, OHNAHRAN_PLAINS },
 					{ 35.4, 65.8, OHNAHRAN_PLAINS },
@@ -64,29 +62,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 36.1, 41.7, OHNAHRAN_PLAINS },
 					{ 49.4, 67.3, OHNAHRAN_PLAINS },
 					{ 49.4, 67.7, OHNAHRAN_PLAINS },
-					{ 49.5, 67.3, OHNAHRAN_PLAINS },
-					{ 50.4, 66.4, OHNAHRAN_PLAINS },
-					{ 50.5, 66.3, OHNAHRAN_PLAINS },
+					{ 50.4, 66.3, OHNAHRAN_PLAINS },
+					{ 50.5, 66.4, OHNAHRAN_PLAINS },
 					{ 50.9, 66.5, OHNAHRAN_PLAINS },
 					{ 71.9, 56.7, OHNAHRAN_PLAINS },
 					{ 73.4, 56.1, OHNAHRAN_PLAINS },
-					{ 73.5, 56.2, OHNAHRAN_PLAINS },
 					{ 74.6, 39.2, OHNAHRAN_PLAINS },
 					{ 74.7, 40.4, OHNAHRAN_PLAINS },
-					{ 74.7, 40.5, OHNAHRAN_PLAINS },
 					{ 75.2, 41.6, OHNAHRAN_PLAINS },
-					{ 75.5, 40.4, OHNAHRAN_PLAINS },
 					{ 75.5, 40.5, OHNAHRAN_PLAINS },
 					{ 83.7, 53.4, OHNAHRAN_PLAINS },
-					{ 83.7, 53.6, OHNAHRAN_PLAINS },
 					{ 85.4, 54.7, OHNAHRAN_PLAINS },
-					{ 85.5, 54.7, OHNAHRAN_PLAINS },
 					{ 86.4, 50.7, OHNAHRAN_PLAINS },
 					{ 86.4, 53.3, OHNAHRAN_PLAINS },
-					{ 86.5, 50.7, OHNAHRAN_PLAINS },
-					{ 86.5, 53.3, OHNAHRAN_PLAINS },
 				},
-				-- ["questID"] = ,
 				["groups"] = {
 					i(201028),	-- Nokhudon Boots
 					i(201027),	-- Nokhudon Breeches
@@ -123,7 +112,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(195884, {	-- Crystalline Petals
 						i(195542, {	-- Slumber Incense
 						-- Cost?
-						-- ["cost"] = { { "i", 195884, 5 }, },	-- Crystalline Petals
+						-- ["cost"] = { { "i", 195884, 5 } },	-- 5x Crystalline Petals
 						}),
 					}),
 				},
@@ -131,7 +120,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(380991, {	-- Dirt Mound
 				["coord"] = { 70.6, 35.4, OHNAHRAN_PLAINS },
 				["questID"] = 67950,
-				["cost"] = { { "i", 195453, 1 }, },	-- 1x Ludo's Stash Map
+				["cost"] = { { "i", 195453, 1 } },	-- 1x Ludo's Stash Map
 				["groups"] = {
 					i(199171, {	-- Slightly Chewed Duck Egg
 						i(199172),	-- Viridescent Duck (PET!)
@@ -162,7 +151,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 66.97, 50.36, OHNAHRAN_PLAINS },	-- Trasure
 				},
 				["description"] = "Combine 5 Crystalline Petals into the Slumber Incense.\nTalk to the Ancient Stone (Northern Waypoint) to gain the Lucid Dreaming Buff for 20 seconds.\nWhen under the effect of this buff you can walk on water and see colorful flowers on the river near the Ancient Stone, walking over a flower will refresh the buff.\nYou need to reach the cave at the southern Waypoint before the buff expires to open the Emerald Chest, which contains the Everliving Wooden Key.\n|cFFFFFFFFYou should be mounted for this.|r",
-				["cost"] = { { "i", 195542, 1 }, },	-- Slumber Incense
+				["cost"] = { { "i", 195542, 1 } },	-- 1x Slumber Incense
 				["groups"] = {
 					i(195041),	-- Everliving Wooden Key
 				},
@@ -170,7 +159,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(380847, {	-- Emerald Gem Cluster
 				["coord"] = { 33.2, 55.3, OHNAHRAN_PLAINS },
 				["questID"] = 70391,
-				["cost"] = { { "i", 198843, 1 }, },	-- 1x Emerald Gardens Explorer's Notes
+				["cost"] = { { "i", 198843, 1 } },	-- 1x Emerald Gardens Explorer's Notes
 				["groups"] = {
 					i(200865),	-- Glimmering Ysemerald Cluster
 					i(194648),	-- Design: Jeweled Emerald Whelpling (RECIPE!)
@@ -194,7 +183,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(378010, {	-- Forgotten Dragon Treasure
 				["questID"] = 74399,
 				["coord"] = { 53.3, 68.9, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 195041, 1 }, },	-- 1x Everliving Wooden Key
+				["cost"] = { { "i", 195041, 1 } },	-- 1x Everliving Wooden Key
 				["groups"] = {
 					i(197585),	-- Windborne Velocidrake: Maned Back (MM!)
 				}
@@ -209,7 +198,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(377900, {	-- Nokhud Warspear
 				["coord"] = { 32.5, 38.2, OHNAHRAN_PLAINS },
 				["questID"] = 67049,
-				["cost"] = { { "i", 194540, 1 }, },	-- 1x Nokhud Armorer's Notes
+				["cost"] = { { "i", 194540, 1 } },	-- 1x Nokhud Armorer's Notes
 				["groups"] = {
 					i(200861),	-- Stolen Shikaar Warspear
 				},

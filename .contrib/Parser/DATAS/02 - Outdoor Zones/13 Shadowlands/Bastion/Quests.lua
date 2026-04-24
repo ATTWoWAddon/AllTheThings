@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(QUESTS, {
@@ -359,7 +360,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 54.7, 64.1, BASTION },
 					["groups"] = {
 						i(178092),	-- Battered Scroll (QI!)
-						i(178046),	-- Locus Manual (QI!)
+						o_repeated({
+							i(178046),	-- Locus Manual (QI!)
+							o(350064),	-- Battered Scrollcase
+							o(350065),	-- Creased Scroll
+							o(350066),	-- Dusty Scroll Bundle
+							o(350067),	-- Tattered Scroll
+						}),
 					},
 				}),
 				q(58799, {	-- The Prime's Directive
@@ -410,8 +417,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
 					["coord"] = { 57.2, 55.2, BASTION },
 					["groups"] = {
-						i(178146),	-- Carved Kyrian Idol (QI!)
-						i(178145),	-- Ceremonial Offering (QI!)
+						o(350889, {	-- Cache of the Archon
+							["coord"] = { 60.6, 61.9, BASTION },
+							["groups"] = { i(178146) },	-- Carved Kyrian Idol (QI!)
+						}),
+						o(350888, {	-- Cache of the Paragons
+							["coord"] = { 59.9, 58.2, BASTION },
+							["groups"] = { i(178145) },	-- Ceremonial Offering (QI!)
+						}),
 					},
 				}),
 				q(58843, {	-- The Vault of the Archon
@@ -562,7 +575,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(59554, {	-- A Fine Journey
 					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["provider"] = { "o", 348558 },	-- Notice
-					["coord"] = { 51.9, 47.7, BASTION },
+					["coords"] = {
+						{ 51.9, 47.7, BASTION },
+						{ 45.3, 59.8, BASTION },
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(57549, {	-- In Agthia's Memory
@@ -1120,6 +1136,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(BASTION, {
@@ -1134,16 +1151,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				q(60261),	-- Your Personal Assistant - this one has triggered when choosing Thima and Syla so far
 				q(60262),	-- Your Personal Assistant - choosing Ipa/Akiris
 				q(60263),	-- Your Personal Assistant - choosing Ipa/Akiris
-				--	more steward info: https://imgur.com/0tLgE13
-				--	if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
-				--	Bumos / Ilapos / Asellia / Syla / Zenza
-				--	Abalus / Thima
-				--	Bola / Pico / Ipadipos / Chaermi
-				--	Gramilos / Apa / Dafi
-				--	Haka
-				--	Mupu / Deka / Laratis
-				--	Kimos / Toulis / Korinthe
-				--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
+				-- more steward info: https://imgur.com/0tLgE13
+				-- if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
+				-- Bumos / Ilapos / Asellia / Syla / Zenza
+				-- Abalus / Thima
+				-- Bola / Pico / Ipadipos / Chaermi
+				-- Gramilos / Apa / Dafi
+				-- Haka
+				-- Mupu / Deka / Laratis
+				-- Kimos / Toulis / Korinthe
+				-- Akiris / Isilios / Koukis / Tibo / Farra / Arathane
 			}),
 		}),
 	}),

@@ -7,6 +7,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		o_repeated({	-- Fel-Touched Lumber
+			["maps"] = {
+				AZSUNA,
+				BROKEN_SHORE,
+				EREDATH,
+				HIGHMOUNTAIN,
+				652,	-- Thunder Totem
+				750,	-- Thunder Totem
+				TRUESHOT_LODGE,
+				KROKUUN,
+				STORMHEIM,
+				SURAMAR,
+				VALSHARAH,
+				THE_DREAMGROVE,
+			},
+			["groups"] = {
+				-- Objects
+				o(559409),	-- [Azsuna]
+				o(562439),	-- [Broken Shore]
+				o(558389),	-- [Eredath]
+				o(560822),	-- [Highmountain/Thunder Totem/Trueshot Lodge]
+				o(558361),	-- [Krokuun]
+				o(560826),	-- [Stormheim]
+				o(562159),	-- [Suramar]
+				o(560358),	-- [Val'sharah/The Dreamgrove]
+				-- Drops
+				i(251767),	-- Fel-Touched Lumber
+			},
+		}),
+	})),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			spell(188299, {	-- Ancient Healing Potion [Rank 2]
@@ -169,7 +200,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(130904),	-- Highmountain Ritual-Stone
 		i(130905),	-- Mark of the Deceiver
 		i(87399),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_DEMONIC, sharedData({["cost"]={{"c",ARCH_CURRENCY_DEMONIC,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DEMONIC, sharedData({["cost"]={{"c",ARCH_CURRENCY_DEMONIC,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["providers"] = {
 				{ "o", 246812 },	-- Demonic Archaeology Find
 				-- #if AFTER 7.2.5
@@ -196,7 +227,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(130934),	-- Pristine Orb of Inner Chaos
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_HIGHBORNE, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHBORNE,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_HIGHBORNE, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHBORNE,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["providers"] = {
 				{ "o", 246811 },	-- Highborne Archaeology Find
 				-- #if AFTER 7.2.0
@@ -223,7 +254,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(130906),	-- Violetglass Vessel
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_HIGHMOUNTAIN, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHMOUNTAIN,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_HIGHMOUNTAIN, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHMOUNTAIN,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["providers"] = {
 				{ "o", 246804 },	-- Highmountain Tauren Archaeology Find
 				-- #if AFTER 7.2.0
@@ -317,7 +348,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(133570),	-- The Hungry Magister
 	}),
 	prof(ENCHANTING, {
-		spell(13262, {	-- Disenchant
+		header(HEADERS.Spell, 13262, {	-- Disenchant
 			i(124440),	-- Arkhana
 			i(124442),	-- Chaos Crystal
 			i(124441),	-- Leylight Shard
@@ -371,13 +402,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 	}),
 	prof(ENGINEERING, {
-		filter(BATTLE_PETS, {
-			i(132519),	-- Trigger (PET!)
-		}),
-		filter(TOYS, {
-			i(132518),	-- Blingtron's Circuit Design Tutorial (TOY!)
-			i(151652, {["timeline"] = {ADDED_7_3_0}}),	-- Wormhole Generator: Argus (TOY!)*
-		}),
 		n(ARMOR, {
 			i(132500),	-- Blink-Trigger Headgun
 			i(132502),	-- Bolt-Action Headgun
@@ -392,6 +416,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(132501),	-- Tactical Headgun
 			i(144331, {["timeline"] = {ADDED_7_1_5}}),	-- Tailored Skullblasters
 		}),
+		filter(BATTLE_PETS, {
+			i(132519),	-- Trigger (PET!)
+		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258226),	-- Dalaran Auto-Hammer (DECOR!)
+			i(258225),	-- Failed Failure Detection Pylon (DECOR!)
+		})),
 		filter(RELICS_F, {
 			i(136687),	-- "The Felic"
 			i(136688),	-- Shockinator
@@ -433,6 +464,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(144341, {["timeline"] = {ADDED_7_1_5}}),	-- Rechargeable Reaves Battery
 			i(132982),	-- Sonic Environment Enhancer
 		}),
+		filter(TOYS, {
+			i(132518),	-- Blingtron's Circuit Design Tutorial (TOY!)
+			i(151652, {["timeline"] = {ADDED_7_3_0}}),	-- Wormhole Generator: Argus (TOY!)*
+		}),
 	}),
 	-- #if BEFORE BFA
 	prof(FIRST_AID, {
@@ -470,11 +505,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(133731),	-- Mountain Puffer
 		i(133726),	-- Nar'thalas Hermit
 		i(133734),	-- Oodelfjisk
-		i(152912, {	-- Pond Nettle (MOUNT!)
-			["description"] = "Caught in green pools around Antoran Wastes.",
-			["mapID"] = ANTORAN_WASTES,
-			["timeline"] = { ADDED_7_3_0 },
-		}),
+		i(152912, { ["timeline"] = { ADDED_7_3_0 } }),	-- Pond Nettle (MOUNT!)
 		i(124111),	-- Runescale Koi
 		i(133741),	-- Seabottom Squid
 		i(133738),	-- Seerspine Puffer
@@ -560,6 +591,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			}),
 			i(139339),	-- Glyph of Yu'lon's Grace (CI!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(247916),	-- Covered Square Suramar Table (DECOR!)
+			i(258224),	-- Dalaran Display Shelves (DECOR!)
+			i(247918),	-- Nightborne Jeweler's Table (DECOR!)
+			i(245396),	-- Suramar Dresser (DECOR!)
+			i(247925),	-- Suramar Storage Crate (DECOR!)
+			i(245459),	-- Tauren Storage Chest (DECOR!)
+
+		})),
 		category(106, {	-- Tarot Cards
 			sp(191659, {	-- Darkmoon Card of the Legion
 				sp(191654, {	-- Dominion Deck
@@ -590,7 +630,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(136693),	-- Straszan Mark
 		}),
 	}),
-	prof(FISHING, {
+	prof(FISHING, bubbleDown({
+		["requireSkill"] = FISHING,
+	},{
 		spell(201943, {	-- Better Luck Next Time
 			["maps"] = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
 			["groups"] = {
@@ -612,7 +654,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				}),
 			},
 		}),
-	}),
+	})),
 	prof(JEWELCRAFTING, {
 		filter(TOYS, {
 			i(130254),	-- Chatterstone (TOY!)
@@ -660,6 +702,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(151579),	-- Labradorite
 			i(151719),	-- Lightsphene
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245557),	-- Shaded Suramar Window (DECOR!)
+			i(258227),	-- Suramar Jeweler's Assortment (DECOR!)
+		})),
 	}),
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
@@ -704,6 +750,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(146668, {["timeline"] = {ADDED_7_2_0}}),	-- Vigilance Perch
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(257400),	-- Highmountain Tanner's Frame (DECOR!)
+			i(245407),	-- Tauren Fencepost (DECOR!)
+			i(245406),	-- Tauren Leather Fence (DECOR!)
+		})),
 		filter(MISC, {
 			i(142406, {["timeline"] = {ADDED_7_1_0}}),	-- Drums of the Mountain
 			i(131746),	-- Stonehide Leather Barding
@@ -762,6 +813,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			--]]
 		}),
 	}),
+	prof(SKINNING, {
+		filter(BATTLE_PETS, {
+			i(153057, {	-- Fossorial Bile Larva (PET!)
+				["description"] = "This can be obtained from any skinnable Argus mob.",
+				["timeline"] = { ADDED_7_3_0 },
+			}),
+		}),
+		n(DISCOVERY, {
+			r(195125, {	-- Skinning (Legion)
+				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+				["collectible"] = false,
+			}),
+			r(194174),	-- Skinning Journal
+			applyclassicphase(BFA_PHASE_ONE, r(265867, {["timeline"] = {ADDED_8_0_1}})),	-- Skinning (Legion)
+		}),
+		spell(8613, {	-- Skinning
+			i(151566, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Leather
+			i(124115),	-- Stormscale
+			i(124113),	-- Stonehide Leather
+		}),
+		filter(TOYS, {
+			i(130102),	-- Mother's Skinning Knife (TOY!)
+		}),
+	}),
 	prof(TAILORING, {
 		n(ARMOR, {
 			i(146666, {["timeline"] = {ADDED_7_2_0}}),	-- Celumbra, the Night's Dichotomy
@@ -795,6 +870,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(142075, {["timeline"] = {ADDED_7_1_0}}),	-- Imbued Silkweave Bag
 			i(127035),	-- Silkweave Satchel
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258557),	-- Beloved Raptor Plushie (DECOR!)
+			i(247920),	-- Circular Shal'dorei Rug (DECOR!)
+			i(248010),	-- Shal'dorei Open-Air Tent (DECOR!)
+		})),
 		filter(MISC, {
 			i(139503),	-- Bloodtotem Saddle Blanket
 			i(137556),	-- Clothes Chest: Dalaran Citizens

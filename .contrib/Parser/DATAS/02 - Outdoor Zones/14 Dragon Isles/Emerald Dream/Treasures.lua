@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(TREASURES, {
@@ -88,7 +89,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			o(413784, {	-- Self-Baking Herb Based Cookies
 				["questID"] = 78834,
-				["coord"] = { 59.6, 19, EMERALD_DREAM },
+				["coord"] = { 59.6, 19.0, EMERALD_DREAM },
 				["isDaily"] = true,
 				["groups"] = {
 					i(210346),	-- Self-Baking Herb Based Cookies
@@ -219,9 +220,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			o(408720, {	-- Laden Somnut
 				["sym"] = {
-					--add zone drop into loot table
+					-- add zone drop into loot table
 					{"select","mapID",EMERALD_DREAM},{"pop"},{"where","headerID",ZONE_DROPS},
-					--replace small somnut at renown 11
+					-- replace small somnut at renown 11
 					{"select","objectID",408719},{"pop"},
 				},
 			}),

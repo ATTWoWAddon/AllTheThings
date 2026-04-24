@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(NAZMIR, {
 		n(VENDORS, {
 			n(126833, {	-- Blind Wunja <Medicine Woman>
@@ -10,13 +10,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					i(163506, {	-- Accursed Hexxer (PET!)
 						["sourceQuests"] = { 50976 },	-- An Ancient Curse
-						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 } },
 					}),
 					i(163500, {	-- Bloodfeaster Larva (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 					}),
 					i(163510, {	-- Crimson Frog (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 					}),
 					i(163563),	-- Primitive Watermelon
 				},
@@ -40,6 +40,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 39.1, 79.4, NAZMIR },
 				["groups"] = bubbleDownClassicRep(FACTION_TALANJIS_EXPEDITION, {
 					{		-- Neutral
+						i(245488, {	-- Zandalari Rickshaw (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						}),
 					}, {	-- Friendly
 					}, {	-- Honored
 						i(160531, {	-- Drape of the Blood Purge
@@ -50,6 +54,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						}),
 						i(162754, {	-- Technique: Contract: Talanji's Expedition [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
+						}),
+						i(245413, {	-- Zandalari Sconce (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+						}),
+						i(257394, {	-- Zandalari War Torch (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
 						}),
 					}, {	-- Revered
 						i(165242, {	-- Bracers of the Swamp Hunter
@@ -104,7 +116,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							["timeline"] = { CREATED_8_0_1 },	-- (Was in beta, not there on 9/16/18)
 						}),
 						i(163501, {	-- Tragg the Curious (PET!)
-							["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
+							["cost"] = { { "i", POLISHED_PET_CHARM, 75 } },
+						}),
+						i(245495, {	-- Dazar'alor Market Tent (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", 1560, 400 } },	-- 400x War Resources
+						}),
+						i(245500, {	-- Red Dazar'alor Tent (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", 1560, 400 } },	-- 400x War Resources
 						}),
 					}, {	-- Exalted
 						i(165240, {	-- Hir'eek Hide Cuffs
@@ -160,16 +180,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					i(163506, {	-- Accursed Hexxer (PET!)
 						["sourceQuests"] = { 50976 },	-- An Ancient Curse
-						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 } },
 					}),
 					i(163500, {	-- Bloodfeaster Larva (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 					}),
 					i(163510, {	-- Crimson Frog (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 					}),
 					i(163505, {	-- Swamp Toad (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 					}),
 				},
 			}),

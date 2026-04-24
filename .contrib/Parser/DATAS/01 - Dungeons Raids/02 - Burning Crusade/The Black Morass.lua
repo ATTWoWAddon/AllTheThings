@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(255, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Black Morass
 		["lore"] = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
@@ -108,7 +109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27988),	-- Burnoose of Shifting Ages
 						-- #if AFTER 7.3.5
 						i(27977),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
-						i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
+						i(27873),	-- Moonglade Pants (7.3.5	-- Moved from Aeonus)
 						-- #endif
 						i(27996),	-- Ring of Spiritual Precision
 						i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
@@ -166,9 +167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
-					{ "i", 30635, 1 },	-- Key of Time
-				},
+				["cost"] = { { "i", 30635, 1 } },	-- Key of Time
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
@@ -180,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30558),	-- Glimmering Fire Opal
 							i(30556),	-- Glinting Fire Opal
@@ -197,7 +196,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27988),	-- Burnoose of Shifting Ages
 							-- #if AFTER 7.3.5
 							i(27977),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
-							i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
+							i(27873),	-- Moonglade Pants (7.3.5	-- Moved from Aeonus)
 							-- #endif
 							i(27996),	-- Ring of Spiritual Precision
 							i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)

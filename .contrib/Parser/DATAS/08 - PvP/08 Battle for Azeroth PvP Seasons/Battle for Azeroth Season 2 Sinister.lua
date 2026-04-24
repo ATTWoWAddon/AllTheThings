@@ -1,11 +1,12 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 -- TODO: S2 BonusID to say "Elite" instead of "Mythic" (Maybe it's ModID3)
 root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_SINISTER, bubbleDownSelf({
 		["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0, ADDED_9_0_2_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
 			ach(13204),		-- Combatant: Battle for Azeroth Season 2
 			ach(13203),		-- Challenger: Battle for Azeroth Season 2
@@ -60,9 +61,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184672, {	-- Arsenal: Sinister Aspirant's Weapons [A]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(180186, {	-- Ensemble: Sinister Aspirant's Cloth Armor [A]
 							["classes"] = CLOTH_CLASSES,
@@ -144,9 +147,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184673, {	-- Arsenal: Sinister Aspirant's Weapons [H]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(180187, {	-- Ensemble: Sinister Aspirant's Cloth Armor [H]
 							["classes"] = CLOTH_CLASSES,
@@ -242,9 +247,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184670, {	-- Arsenal: Sinister Gladiator's Weapons [A]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(184427, {	-- Ensemble: Sinister Gladiator's Cloth Armor [A]
 							["classes"] = CLOTH_CLASSES,
@@ -382,9 +389,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184671, {	-- Arsenal: Sinister Gladiator's Weapons [H]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(184428, {	-- Ensemble: Sinister Gladiator's Cloth Armor [H]
 							["classes"] = CLOTH_CLASSES,

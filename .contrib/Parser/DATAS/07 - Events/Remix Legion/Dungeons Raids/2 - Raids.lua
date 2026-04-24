@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(RAIDS, {
 		n(ACHIEVEMENTS, {
@@ -13,7 +14,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					60870,	-- Tomb of Sargeras
 					60860,	-- Trial of Valor
 				}},
-				--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),},	-- Corruption Pit (DECOR!)
+				["groups"] = {
+					i(250406, {	-- Corruption Pit (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+				},
 			}),
 			ach(61075, {	-- Heroic Legion Remix Raider
 				-- Meta Achievement
@@ -35,7 +40,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					42639,	-- Heroic: Trial of Valor
 				}},
 				["groups"] = {
-					title(659),	-- %s of the Infinite Chaos (TITLE!)
+					title(659),	-- <Name> of the Infinite Chaos
 				},
 			}),
 			ach(61078, {	-- Mythic Legion Remix Raids

@@ -1,25 +1,26 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_SEASONSTART } }, {
+
+root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_13_0_0 } }, {
 	n(RATED, {
 		n(ACHIEVEMENTS, {
 			-- RBG
 			ach(61200, {	-- Battleground Blitz Medic: Midnight
-				-- While the Filter is correct, the ACM/Toy is hidden for none healers until you learn it.
-				-- Having it not filtered is providing information about the Toy which is good.
+				-- While the Filter is correct, the ACM/Cosmetic is hidden for none healers until you learn it.
+				-- Having it not filtered is providing information about the Cosmetic which is good.
 				--["classes"] = HEALERS,
 				["groups"] = {
-				--	i(227539),	-- Unbound Strategist's Pennant (TOY!)
+					i(255969),	-- Nightfall Strategist's Pennant (Cosmetic!)
 				},
 			}),
 			-- Solo
 			ach(61199, {	-- Solo Shuffle Medic: Midnight
-				-- While the Filter is correct, the ACM/Toy is hidden for none healers until you learn it.
-				-- Having it not filtered is providing information about the Toy which is good.
+				-- While the Filter is correct, the ACM/Cosmetic is hidden for none healers until you learn it.
+				-- Having it not filtered is providing information about the Cosmetic which is good.
 				--["classes"] = HEALERS,
 				["groups"] = {
-				--	i(227538),	-- Unbound Legend's Pennant (TOY!)
+					i(255968),	-- Nightfall Legend's Pennant (Cosmetic!)
 				},
 			}),
 		}),

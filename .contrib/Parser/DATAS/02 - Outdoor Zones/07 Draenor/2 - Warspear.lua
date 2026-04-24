@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(WARSPEAR, {
@@ -67,76 +68,62 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(37260, {	-- A Worthy Challenge: Gug'rokk
-						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["qg"] = 88161,	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							i(127831),	-- Challenger's Strongbox
-						},
+						["groups"] = { i(127831) },	-- Challenger's Strongbox
 					}),
 					q(37264, {	-- A Worthy Challenge: High Sage Viryx
-						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["qg"] = 88161,	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							i(127831),	-- Challenger's Strongbox
-						},
+						["groups"] = { i(127831) },	-- Challenger's Strongbox
 					}),
 					q(37263, {	-- A Worthy Challenge: Ner'zhul
-						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["qg"] = 88161,	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							i(127831),	-- Challenger's Strongbox
-						},
+						["groups"] = { i(127831) },	-- Challenger's Strongbox
 					}),
 					q(37262, {	-- A Worthy Challenge: Skullok, Son of Gruul
-						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["qg"] = 88161,	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							i(127831),	-- Challenger's Strongbox
-						},
+						["groups"] = { i(127831) },	-- Challenger's Strongbox
 					}),
 					q(37261, {	-- A Worthy Challenge: Skylord Tovra
-						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["qg"] = 88161,	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							i(127831),	-- Challenger's Strongbox
-						},
+						["groups"] = { i(127831) },	-- Challenger's Strongbox
 					}),
 					q(37266, {	-- A Worthy Challenge: Warlord Zaela
-						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["qg"] = 88161,	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							i(127831),	-- Challenger's Strongbox
-						},
+						["groups"] = { i(127831) },	-- Challenger's Strongbox
 					}),
 					q(37265, {	-- A Worthy Challenge: Yalnu
-						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["qg"] = 88161,	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							i(127831),	-- Challenger's Strongbox
-						},
+						["groups"] = { i(127831) },	-- Challenger's Strongbox
 					}),
 					q(36709, {	-- Burning Beauty
 						["sourceQuest"] = 36708,	-- Inspiring Ashran
-						["provider"] = { "n", 86312 },	-- Lieutenant Kragil
+						["qg"] = 86312,	-- Lieutenant Kragil
 						["coord"] = { 44.1, 45.4, WARSPEAR },
 					}),
 					q(36708, {	-- Inspiring Ashran
 						["sourceQuest"] = 36707,	-- Warspear Welcome
-						["provider"] = { "n", 86312 },	-- Lieutenant Kragil
+						["qg"] = 86312,	-- Lieutenant Kragil
 						["coord"] = { 44.1, 45.4, WARSPEAR },
 					}),
 					q(36055, {	-- Sealing Fate: Apexis Crystals
@@ -148,12 +135,12 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = { { "c", 823, 500 }, },	-- 500x Apexis Crystal
+						["cost"] = { { "c", APEXIS_CRYSTAL, 500 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(37458, {	-- Sealing Fate: Extended Honor
-						["sourceQuests"] = { 36057 },	-- Sealing Fate: Honor
+						["sourceQuest"] = 36057,	-- Sealing Fate: Honor
 						["qgs"] = {
 							87391,	-- Fate-Twister Seress
 							88570,	-- Fate-Twister Tiklal
@@ -162,7 +149,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = { { "c", 1792, 1000 }, },	-- 1000x Honor
+						["cost"] = { { "c", HONOR, 1000 } },
 						["isWeekly"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -175,7 +162,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = { { "c", 824, 1000 }, },	-- 1,000x Garrison Resources
+						["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
@@ -193,7 +180,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 100,
 					}),
 					q(37452, {	-- Sealing Fate: Heap of Apexis Crystals
-						["sourceQuests"] = { 36055 },	-- Sealing Fate: Apexis Crystals
+						["sourceQuest"] = 36055,	-- Sealing Fate: Apexis Crystals
 						["qgs"] = {
 							87391,	-- Fate-Twister Seress
 							88570,	-- Fate-Twister Tiklal
@@ -202,7 +189,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = { { "c", 823, 1000 }, },	-- 1,000x Apexis Crystal
+						["cost"] = { { "c", APEXIS_CRYSTAL, 1000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
@@ -215,12 +202,12 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = { { "c", 1792, 500 }, },	-- 500x Honor
+						["cost"] = { { "c", HONOR, 500 } },
 						["isWeekly"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(37455, {	-- Sealing Fate: Immense Fortune of Gold
-						["sourceQuests"] = { 37454 },	-- Sealing Fate: Piles of Gold
+						["sourceQuest"] = 37454,	-- Sealing Fate: Piles of Gold
 						["qgs"] = {
 							87391,	-- Fate-Twister Seress
 							88570,	-- Fate-Twister Tiklal
@@ -234,7 +221,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 100,
 					}),
 					q(37459, {	-- Sealing Fate: Monumental Honor
-						["sourceQuests"] = { 37458 },	-- Sealing Fate: Extended Honor
+						["sourceQuest"] = 37458,	-- Sealing Fate: Extended Honor
 						["qgs"] = {
 							87391,	-- Fate-Twister Seress
 							88570,	-- Fate-Twister Tiklal
@@ -243,12 +230,12 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = { { "c", 1792, 2000 }, },	-- 2000x Honor
+						["cost"] = { { "c", HONOR, 2000 } },
 						["isWeekly"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(37453, {	-- Sealing Fate: Mountain of Apexis Crystals
-						["sourceQuests"] = { 37452 },	-- Sealing Fate: Heap of Apexis Crystals
+						["sourceQuest"] = 37452,	-- Sealing Fate: Heap of Apexis Crystals
 						["qgs"] = {
 							87391,	-- Fate-Twister Seress
 							88570,	-- Fate-Twister Tiklal
@@ -257,12 +244,12 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = { { "c", 823, 2000 }, },	-- 2,000x Apexis Crystal
+						["cost"] = { { "c", APEXIS_CRYSTAL, 2000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(37454, {	-- Sealing Fate: Piles of Gold
-						["sourceQuests"] = { 36054 },	-- Sealing Fate: Gold
+						["sourceQuest"] = 36054,	-- Sealing Fate: Gold
 						["qgs"] = {
 							87391,	-- Fate-Twister Seress
 							88570,	-- Fate-Twister Tiklal
@@ -276,7 +263,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 100,
 					}),
 					q(37456, {	-- Sealing Fate: Stockpiled Garrison Resources
-						["sourceQuests"] = { 36056 },	-- Sealing Fate: Garrison Resources
+						["sourceQuest"] = 36056,	-- Sealing Fate: Garrison Resources
 						["qgs"] = {
 							87391,	-- Fate-Twister Seress
 							88570,	-- Fate-Twister Tiklal
@@ -285,12 +272,12 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = { { "c", 824, 2000 }, },	-- 2,000x Garrison Resources
+						["cost"] = { { "c", GARRISON_RESOURCES, 2000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(37457, {	-- Sealing Fate: Tremendous Garrison Resources
-						["sourceQuests"] = { 37456 },	-- Sealing Fate: Stockpiled Garrison Resources
+						["sourceQuest"] = 37456,	-- Sealing Fate: Stockpiled Garrison Resources
 						["qgs"] = {
 							87391,	-- Fate-Twister Seress
 							88570,	-- Fate-Twister Tiklal
@@ -299,21 +286,19 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = { { "c", 824, 4000 }, },	-- 4,000x Garrison Resources
+						["cost"] = { { "c", GARRISON_RESOURCES, 4000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(35243, {	-- The Dark Lady's Gift
 						["sourceQuest"] = 36709,	-- Burning Beauty
-						["provider"] = { "n", 81765 },	-- Vivianne
+						["qg"] = 81765,	-- Vivianne
 						["coord"] = { 62.1, 23.0, WARSPEAR },
-						["groups"] = {
-							follower(216),	-- Vivianne
-						},
+						["groups"] = { follower(216) },	-- Vivianne
 					}),
 					q(36707, {	-- Warspear Welcome
 						["sourceQuest"] = 36706,	-- Ashran Appearance
-						["provider"] = { "n", 86315 },	-- Stomphoof
+						["qg"] = 86315,	-- Stomphoof
 						["coord"] = { 45.5, 34.6, WARSPEAR },
 					}),
 				}),
@@ -326,7 +311,7 @@ root(ROOTS.Zones, {
 								{		-- Neutral
 								}, {	-- Friendly
 									i(118664, {	-- Frostwolf Elixir
-										["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
+										["cost"] = { { "c", APEXIS_CRYSTAL, 1 } },
 									}),
 								}, {	-- Honored
 									i(118677, {	-- Howl of the Frostwolf
@@ -341,13 +326,11 @@ root(ROOTS.Zones, {
 									}),
 									i(119161, {	-- Contract: Karg Bloodfury
 										["cost"] = 50000000,	-- 5,000g
-										["groups"] = {
-											follower(459),	-- Karg Bloodfury
-										},
+										["groups"] = { follower(459) },	-- Karg Bloodfury
 									}),
 									i(119141, {	-- Frostwolf Pup (PET!)
 										["cost"] = {
-											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "c", APEXIS_CRYSTAL, 2000 },
 											{ "g", 10000000 },	-- 1,000g
 										},
 									}),
@@ -355,7 +338,7 @@ root(ROOTS.Zones, {
 									i(119133),	-- Frostwolf Tabard
 									i(116785, {	-- Swift Frostwolf (MOUNT!)
 										["cost"] = {
-											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+											{ "c", APEXIS_CRYSTAL, 5000 },
 											{ "g", 50000000 },	-- 5,000g
 										},
 									}),
@@ -1085,12 +1068,10 @@ root(ROOTS.Zones, {
 							["groups"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "c", APEXIS_CRYSTAL, 5000 },
 										{ "g", 50000000 },	-- 5,000g
 									},
-									["groups"] = {
-										follower(462),	-- Dawnseeker Rukaryx
-									},
+									["groups"] = { follower(462) },	-- Dawnseeker Rukaryx
 								}),
 								i(115376, {	-- Crystal-Leaf Legguards
 									["cost"] = 10000000,	-- 1,000g
@@ -1139,7 +1120,7 @@ root(ROOTS.Zones, {
 								}),
 								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "c", APEXIS_CRYSTAL, 5000 },
 										{ "g", 500000000 },	-- 50,000g
 									},
 								}),
@@ -1455,7 +1436,7 @@ root(ROOTS.Zones, {
 								}, {	-- Revered
 								}, {	-- Exalted
 									moh(100, i(116775, {	-- Breezestrider Stallion (MOUNT!)
-										["cost"] = {{ "g", 50000000 }},		-- 5,000g
+										["cost"] = { { "g", 50000000 } },		-- 5,000g
 									})),
 									i(115518),	-- Vol'jin's Spear Tabard
 								},
@@ -1906,7 +1887,7 @@ root(ROOTS.Zones, {
 									moh(2, i(126401)),	-- Warmongering Gladiator's Warboots of Victory (H)
 								}),
 								moh(100, i(116775, {	-- Breezestrider Stallion (MOUNT!)
-									["cost"] = {{ "g", 50000000 }},	-- 5,000g
+									["cost"] = { { "g", 50000000 } },	-- 5,000g
 								})),
 								elitepvp(moh(10, i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 									["timeline"] = { ADDED_6_0_2 },
@@ -1926,47 +1907,67 @@ root(ROOTS.Zones, {
 									recipe(178497),	-- Warbinder's Ink
 									i(120136),		-- Recipe: Secrets of Draenor Inscription
 								}),
-								i(118605, {	-- Technique: Crystalfire Spellstaff
-									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								i(118605, {	-- Technique: Crystalfire Spellstaff (RECIPE!)
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
-								i(118606, {	-- Technique: Darkmoon Card of Draenor
-									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+								i(118606, {	-- Technique: Darkmoon Card of Draenor (RECIPE!)
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 								}),
-								i(120265, {	-- Technique: Ensorcelled Tarot
+								i(120265, {	-- Technique: Ensorcelled Tarot (RECIPE!)
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 									["collectible"] = false,
 								}),
-								i(118607, {	-- Technique: Etched-Blade Warstaff
-									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								i(118607, {	-- Technique: Etched-Blade Warstaff (RECIPE!)
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
-								i(202236, {	-- Technique: Impressive Weapon Crystal
+								i(257025, {	-- Technique: Frostwall Elevated Brazier (RECIPE!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
+								}),
+								i(202236, {	-- Technique: Impressive Weapon Crystal (RECIPE!)
 									["timeline"] = { ADDED_10_0_5 },
-									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 								}),
-								i(202237, {	-- Technique: Remarkable Weapon Crystal
+								i(257028, {	-- Technique: Orcish Banded Barrel (RECIPE!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
+								}),
+								i(262809, {	-- Technique: Orcish Fence (RECIPE!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
+								}),
+								i(262810, {	-- Technique: Orcish Fencepost (RECIPE!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
+								}),
+								i(202237, {	-- Technique: Remarkable Weapon Crystal (RECIPE!)
 									["timeline"] = { ADDED_10_0_5 },
-									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 								}),
-								i(118613, {	-- Technique: Shadowtome
-									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								i(118613, {	-- Technique: Shadowtome (RECIPE!)
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
-								i(118614, {	-- Technique: Volatile Crystal
-									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								i(118614, {	-- Technique: Volatile Crystal (RECIPE!)
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
-								i(118615, {	-- Technique: Warmaster's Firestick
-									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								i(118615, {	-- Technique: Warmaster's Firestick (RECIPE!)
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
-								i(118610, {	-- Technique: Weapon Crystal
+								i(118610, {	-- Technique: Weapon Crystal (RECIPE!)
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["timeline"] = { ADDED_6_0_2, REMOVED_10_0_5 },
-									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 									["collectible"] = false,
 								}),
-								i(118608, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Weapon Crystal
-								i(120266, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Ensorcelled Tarot
-								i(122548, { ["timeline"] = { CREATED_6_1_0 }}),	-- Technique: Powerful Ensorcelled Tarot
-								i(122553, { ["timeline"] = { CREATED_6_1_0 }}),	-- Technique: Powerful Weapon Crystal
+								i(257027, {	-- Technique: Wooden Shipping Crate (RECIPE!)
+									["timeline"] = { ADDED_11_2_7 },
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
+								}),
+								i(118608, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Weapon Crystal (RECIPE!)
+								i(120266, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Ensorcelled Tarot (RECIPE!)
+								i(122548, { ["timeline"] = { CREATED_6_1_0 }}),	-- Technique: Powerful Ensorcelled Tarot (RECIPE!)
+								i(122553, { ["timeline"] = { CREATED_6_1_0 }}),	-- Technique: Powerful Weapon Crystal (RECIPE!)
 							},
 						}),
 						n(88493, {	-- Mimi Wizzlebub <Steamwheedle Quartermaster>
@@ -1979,7 +1980,7 @@ root(ROOTS.Zones, {
 								{		-- Neutral
 								}, {	-- Friendly
 									i(118666, {	-- Arakkoa Elixir
-										["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
+										["cost"] = { { "c", APEXIS_CRYSTAL, 1 } },
 									}),
 								}, {	-- Honored
 									i(118682, {	-- Saberon Protector
@@ -1988,7 +1989,7 @@ root(ROOTS.Zones, {
 								}, {	-- Revered
 									i(119143, {	-- Son of Sethe (PET!)
 										["cost"] = {
-											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "c", APEXIS_CRYSTAL, 2000 },
 											{ "g", 10000000 },	-- 1,000g
 										},
 									}),
@@ -1996,7 +1997,7 @@ root(ROOTS.Zones, {
 									i(119136),	-- Arakkoa Outcasts Tabard
 									i(116772, {	-- Shadowmane Charger (MOUNT!)
 										["cost"] = {
-											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+											{ "c", APEXIS_CRYSTAL, 5000 },
 											{ "g", 50000000 },	-- 5,000g
 										},
 									}),
@@ -2016,19 +2017,19 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
 								}),
 								i(118727, {	-- Frostfire Treasure Map (CI!)
-									["cost"] = { { "g", 1000000 } }	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 								i(118729, {	-- Gorgrond Treasure Map (CI!)
-									["cost"] = { { "g", 1000000 } }	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 								i(118732, {	-- Nagrand Treasure Map (CI!)
-									["cost"] = { { "g", 1000000 } }	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 								i(118731, {	-- Spires of Arak Treasure Map (CI!)
-									["cost"] = { { "g", 1000000 } }	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 								i(118730, {	-- Talador Treasure Map (CI!)
-									["cost"] = { { "g", 1000000 } }	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 							},
 						}),
@@ -2422,64 +2423,64 @@ root(ROOTS.Zones, {
 							["coord"] = { 42.6, 36.4, WARSPEAR },
 							["groups"] = {
 								i(111929, {	-- Alchemy Lab, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111968, {	-- Barn, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111970, {	-- Barracks, Level 2
-									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 								i(111972, {	-- Enchanter's Study, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(109256, {	-- Engineering Works, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(116431, {	-- Frostwall Tavern, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111974, {	-- Gem Boutique, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111980, {	-- Gladiator's Sanctum, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(116200, {	-- Goblin Workshop, Level 2
-									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 								i(109254, {	-- Lumber Mill, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111976, {	-- Salvage Yard, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111978, {	-- Scribe's Quarters, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(116196, {	-- Spirit Lodge, Level 2
-									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 								i(112002, {	-- Stables, Level 2
-									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 								i(111982, {	-- Storehouse, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111992, {	-- Tailoring Emporium, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111990, {	-- The Forge, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111988, {	-- The Tannery, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111986, {	-- Trading Post, Level 2
-									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(116185, {	-- War Mill, Level 2
-									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 							},
 						}),

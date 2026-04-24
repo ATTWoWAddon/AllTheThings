@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- CRIEVE NOTE: Going to do a playthrough on the Cataclysm Beta to make sure the map coordinate stuff works correctly.
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(GILNEAS, {
@@ -51,7 +52,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(14218, {	-- By Blood and Ash
 							["sourceQuest"] = 14212,	-- Sacrifies
-							["qg"] = 35552,	-- Tobias Mistmantle
+							["qg"] = 35618,	-- Tobias Mistmantle
 							["coord"] = { 40.46, 39.37, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -223,7 +224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(14221, {	-- Never Surrender, Sometimes Retreat
 							["sourceQuest"] = 14218,	-- By Blood and Ash
-							["qg"] = 35552,	-- Tobias Mistmantle
+							["qg"] = 35618,	-- Tobias Mistmantle
 							["coord"] = { 40.46, 39.37, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
@@ -389,7 +390,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- Krennan Aranas rescued
 									["provider"] = { "n", 35753 },	-- Krennan Aranas <Journeyman Chemist>
-									["coord"] = { 66, 62.2, GILNEAS_CITY },
+									["coord"] = { 66.0, 62.2, GILNEAS_CITY },
 								}),
 							},
 						}),
@@ -652,7 +653,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Chance the Cat
 							["provider"] = { "i", 49281 },	-- Chance the Cat
-							["coord"] = { 35, 74.8, GILNEAS },
+							["coord"] = { 35.0, 74.8, GILNEAS },
 							["cr"] = 36461,	-- Lucius the Cruel
 						}),
 						i(55016),	-- Granny's Mallet
@@ -1008,7 +1009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Rygna slain
 							["provider"] = { "n", 37045 },	-- Rygna <Vilebrood Matriarch>
-							["coord"] = { 68, 81.8, GILNEAS },
+							["coord"] = { 68.0, 81.8, GILNEAS },
 						}),
 						i(54996),	-- Rygna-Silk Leggings
 						i(54997),	-- Arachnophobe's Breastplate

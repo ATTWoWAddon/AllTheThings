@@ -16,45 +16,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		["cost"] = {{"i", 231757, 2}},	-- Fractured Spark of Starlight
 		["timeline"] = { ADDED_11_2_0 },
 	}),
-	prof(ALCHEMY, {
-		n(DISCOVERY, {
-			salvagerecipe(430345, 211958, {	-- Meticulous Experimentation
-				r(430595),	-- Draught of Shocking Revelations
-				r(430594),	-- Draught of Silent Footfalls
-				r(430605),	-- Flask of Alchemical Chaos
-				r(430612),	-- Flask of Saving Graces
-				r(430601),	-- Flask of Tempered Aggression
-				r(430604),	-- Flask of Tempered Mastery
-				r(430602),	-- Flask of Tempered Swiftness
-				r(430603),	-- Flask of Tempered Versatility
-				r(430598),	-- Frontline Potion
-				r(430596),	-- Grotesque Vial
-				r(430617),	-- Phial of Bountiful Seasons
-				r(430614),	-- Phial of Concentrated Ingenuity
-				r(430616),	-- Phial of Enhanced Ambidexterity
-				r(430615),	-- Phial of Truesight
-				r(430600),	-- Potion of the Reborn Cheetah
-				r(430597),	-- Potion of Unwavering Focus
-				r(430599),	-- Tempered Potion
-			}),
-			salvagerecipe(430315, 211796, {	-- Thaumaturgy
-				i(223487),	-- Writhing Transmutagen (PET!)
-				r(430618),	-- Mercurial Blessings
-				r(449571),	-- Mercurial Herbs
-				r(430619),	-- Mercurial Storms
-				r(430622),	-- Ominous Call
-				r(430623),	-- Ominous Gloom
-				r(449572),	-- Ominous Herbs
-				r(430621),	-- Volatile Stone
-				r(430620),	-- Volatile Weaving
-			}),
-			salvagerecipe(427174, 210813, {	-- Wild Experimentation
-				r(430591),	-- Algari Mana Potion
-				r(430592),	-- Cavedweller's Delight
-				r(430345),	-- Meticulous Experimentation
-				r(430593),	-- Slumbering Soul Serum
-			}),
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		o_repeated({	-- Dornic Fir Lumber
+			["maps"] = {
+				AZJ_KAHET,
+				NERUBAR,
+				HALLOWFALL,
+				ISLE_OF_DORN,
+				DORNOGAL,
+				SIREN_ISLE,
+				THE_RINGING_DEEPS,
+			},
+			["groups"] = {
+				-- Objects
+				o(544781),	-- [Azj-Kahet/City of Threads]
+				o(546737),	-- [Hallowfall]
+				o(543723),	-- [Isle of Dorn/Dornogal]
+				o(546928),	-- [Siren Isle]
+				o(546738),	-- [The Ringing Deeps]
+				-- Drops
+				i(248012),	-- Dornic Fir Lumber
+			},
 		}),
+	})),
+	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(212719, {	-- Algari Flask Cauldron+
 				i(212739),	-- Fleeting Flask of Alchemical Chaos+
@@ -117,7 +102,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(212956),	-- Fleeting Draught of Silent Footfalls+++
 				i(212968),	-- Fleeting Frontline Potion+++
 				i(212962),	-- Fleeting Grotesque Vial+++
-				i(244849, {["timeline"]={ADDED_11_2_0}}),-- Fleeting Invigorating Healing Potion+++
+				i(244849, {["timeline"]={ADDED_11_2_0}}),	-- Fleeting Invigorating Healing Potion+++
 				i(212974),	-- Fleeting Potion of the Reborn Cheetah+++
 				i(212965),	-- Fleeting Potion of Unwavering Focus+++
 				i(212953),	-- Fleeting Slumbering Soul Serum+++
@@ -197,12 +182,49 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(252758),	-- Boulder Springs Hot Tub (DECOR!)
 			i(257102),	-- Nerubian Alchemist's Retort (DECOR!)
 		})),
+		n(DISCOVERY, {
+			salvagerecipe(430345, 211958, {	-- Meticulous Experimentation
+				r(430595),	-- Draught of Shocking Revelations
+				r(430594),	-- Draught of Silent Footfalls
+				r(430605),	-- Flask of Alchemical Chaos
+				r(430612),	-- Flask of Saving Graces
+				r(430601),	-- Flask of Tempered Aggression
+				r(430604),	-- Flask of Tempered Mastery
+				r(430602),	-- Flask of Tempered Swiftness
+				r(430603),	-- Flask of Tempered Versatility
+				r(430598),	-- Frontline Potion
+				r(430596),	-- Grotesque Vial
+				r(430617),	-- Phial of Bountiful Seasons
+				r(430614),	-- Phial of Concentrated Ingenuity
+				r(430616),	-- Phial of Enhanced Ambidexterity
+				r(430615),	-- Phial of Truesight
+				r(430600),	-- Potion of the Reborn Cheetah
+				r(430597),	-- Potion of Unwavering Focus
+				r(430599),	-- Tempered Potion
+			}),
+			salvagerecipe(430315, 211796, {	-- Thaumaturgy
+				i(223487),	-- Writhing Transmutagen (PET!)
+				r(430618),	-- Mercurial Blessings
+				r(449571),	-- Mercurial Herbs
+				r(430619),	-- Mercurial Storms
+				r(430622),	-- Ominous Call
+				r(430623),	-- Ominous Gloom
+				r(449572),	-- Ominous Herbs
+				r(430621),	-- Volatile Stone
+				r(430620),	-- Volatile Weaving
+			}),
+			salvagerecipe(427174, 210813, {	-- Wild Experimentation
+				r(430591),	-- Algari Mana Potion
+				r(430592),	-- Cavedweller's Delight
+				r(430345),	-- Meticulous Experimentation
+				r(430593),	-- Slumbering Soul Serum
+			}),
+		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ALCHEMY,
 		},{
 			-- Alchemy Essentials
 			FirstCraft(81132, 433087);	-- Formulated Courage
-			FirstCraft(81090, 430315);	-- Thaumaturgy
 			FirstCraft(78604, 427174);	-- Wild Experimentation
 			-- Reagents
 			FirstCraft(84492, 462121);	-- Bubbling Mycobloom Culture
@@ -258,9 +280,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Cuauldrons
 			FirstCraft(81130, 432962);	-- Algari Flask Cauldron
 			FirstCraft(81131, 432963);	-- Algari Potion Cauldron
-			-- Decor
-			--FirstCraft(XXXXX, 1259673, ADDED_11_2_7);	-- Boulder Springs Hot Tub
-			--FirstCraft(XXXXX, 1261878, ADDED_11_2_7);	-- Nerubian Alchemist's Retort
 		})),
 		filter(MISC, {
 			i(212781),	-- Formulated Courage
@@ -399,12 +418,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80652, 450274);	-- Proficient Blacksmith's Toolbox
 			FirstCraft(80659, 450281);	-- Artisan Blacksmith's Hammer
 			FirstCraft(80660, 450282);	-- Artisan Blacksmith's Toolbox
-			FirstCraft(80655, 450277);  -- Artisan Skinning Knife
-			FirstCraft(80654, 450276);  -- Artisan Pickaxe
-			FirstCraft(80653, 450275);  -- Artisan Sickle
-			FirstCraft(80657, 450279);  -- Artisan Leatherworker's Knife
-			FirstCraft(80656, 450278);  -- Artisan Needle Set
-			FirstCraft(80658, 450280);  -- Artisan Leatherworker's Toolset
+			FirstCraft(80655, 450277);	-- Artisan Skinning Knife
+			FirstCraft(80654, 450276);	-- Artisan Pickaxe
+			FirstCraft(80653, 450275);	-- Artisan Sickle
+			FirstCraft(80657, 450279);	-- Artisan Leatherworker's Knife
+			FirstCraft(80656, 450278);	-- Artisan Needle Set
+			FirstCraft(80658, 450280);	-- Artisan Leatherworker's Toolset
 			FirstCraft(80661, 450283);	-- Earthen Master's Hammer
 			-- Stonework
 			FirstCraft(80663, 450285);	-- Ironclaw Whetstone
@@ -417,9 +436,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Other
 			FirstCraft(83398, 450291);	-- Coreforged Repair Hammer
 			FirstCraft(83399, 450292);	-- Coreforged Skeleton Key
-			-- Decor
-			--FirstCraft(XXXXX, 1259675, ADDED_11_2_7);	-- Rusting Bolted Bench
-			--FirstCraft(XXXXX, 1259681, ADDED_11_2_7);	-- Shredderwheel Storage Chest
 		})),
 		filter(MISC, {
 			i(222520),	-- Coreforged Repair Hammer+
@@ -532,6 +548,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(246709),	-- Earthen Hospitality Cheese-Like Brick (DECOR!)
 			i(245326),	-- Kaheti Predator's Assortment (DECOR!)
 		})),
+		filter(REAGENTS, {
+			i(222737),	-- Chopped Mycobloom
+			i(222741),	-- Fresh Fillet
+			i(222738),	-- Portioned Steak
+			i(222739),	-- Spiced Meat Stock
+		}),
 		i(222727),	-- Angler's Delight
 		i(235805, {["timeline"] = {ADDED_11_1_0}}),	-- Authentic Undermine Clam Chowder
 		i(223971),	-- Azj-Kahet Special
@@ -618,31 +640,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222720),	-- The Sushi Special
 		i(222704),	-- Unseasoned Field Steak
 		i(222714),	-- Zesty Nibblers
-		filter(REAGENTS, {
-			i(222737),	-- Chopped Mycobloom
-			i(222741),	-- Fresh Fillet
-			i(222738),	-- Portioned Steak
-			i(222739),	-- Spiced Meat Stock
-		}),
 	}),
 	prof(ENCHANTING, {
-		spell(455970, {	-- Disenchant
-			i(219949),	-- Gleaming Shard+
-			i(219950),	-- Gleaming Shard++
-			i(219951),	-- Gleaming Shard+++
-			i(227661),	-- Gleaming Telluric Crystal
-			i(227659),	-- Fleeting Arcane Manifestation
-			i(219952),	-- Refulgent Crystal+
-			i(219954),	-- Refulgent Crystal++
-			i(219955),	-- Refulgent Crystal+++
-			i(227662),	-- Shimmering Dust	//Allegedly only rewarded as catchup KP, no quest attached?
-			i(219946),	-- Storm Dust+
-			i(219947),	-- Storm Dust++
-			i(219948),	-- Storm Dust+++
-		}),
-		spell(445466, {	-- Shatter Essence
-			i(220381),	-- Shatter Essence
-		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(223618),	-- Enchant Boots - Cavalry's March+
 			i(223649),	-- Enchant Boots - Cavalry's March++
@@ -742,6 +741,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(253039),	-- Dornogal Hanging Sconce (DECOR!)
 			i(253171),	-- Replica Awakening Machine Stasis Pod (DECOR!)
 		})),
+		header(HEADERS.Spell, 455970, {	-- Disenchant
+			i(219949),	-- Gleaming Shard+
+			i(219950),	-- Gleaming Shard++
+			i(219951),	-- Gleaming Shard+++
+			i(227661),	-- Gleaming Telluric Crystal
+			i(227659),	-- Fleeting Arcane Manifestation
+			i(219952),	-- Refulgent Crystal+
+			i(219954),	-- Refulgent Crystal++
+			i(219955),	-- Refulgent Crystal+++
+			i(227662),	-- Shimmering Dust	//Allegedly only rewarded as catchup KP, no quest attached?
+			i(219946),	-- Storm Dust+
+			i(219947),	-- Storm Dust++
+			i(219948),	-- Storm Dust+++
+		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
 		},{
@@ -839,10 +852,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81044, 445372);	-- Runed Ironclaw Rod
 			FirstCraft(80996, 445323);	-- Runed Null Stone Rod
 			FirstCraft(81028, 445355);	-- Scepter of Radiant Magics
-			-- Decor
-			--FirstCraft(XXXXX, 1259715, ADDED_11_2_7);	-- Dornogal Hanging Sconce
-			--FirstCraft(XXXXX, 1259690, ADDED_11_2_7);	-- Replica Awakening Machine Stasis Pod
 		})),
+		header(HEADERS.Spell, 470726, {	-- Gleaming Shatter
+			i(232492),	-- Gleaming Shatter
+		}),
 		filter(ILLUSIONS, {
 		}),
 		filter(MISC, {
@@ -945,9 +958,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224113),	-- Oil of Deep Toxins+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(224114),	-- Runed Bismuth Rod
-			i(224115),	-- Runed Ironclaw Rod
-			i(224116),	-- Runed Null Stone Rod
+			i(224114, {["requireSkill"] = ENCHANTING}),	-- Runed Bismuth Rod
+			i(224115, {["requireSkill"] = ENCHANTING}),	-- Runed Ironclaw Rod
+			i(224116, {["requireSkill"] = ENCHANTING}),	-- Runed Null Stone Rod
 		}),
 		filter(REAGENTS, {
 			i(224173),	-- Concentration Concentrate+
@@ -959,6 +972,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224177),	-- Mirror Powder+
 			i(224178),	-- Mirror Powder++
 			i(224176),	-- Mirror Powder+++
+		}),
+		header(HEADERS.Spell, 445466, {	-- Shatter Essence
+			i(220381),	-- Shatter Essence
 		}),
 		n(WEAPON_ENCHANTMENTS, {
 			i(223693),	-- Enchant Tool - Algari Deftness+
@@ -1010,6 +1026,49 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(ENGINEERING, {
+		n(ARMOR, {
+			i(225642),	-- Acolyte's Goggles
+			i(217155),	-- Algari Competitor's Cloth Bracers
+			i(217151),	-- Algari Competitor's Cloth Goggles
+			i(217156),	-- Algari Competitor's Leather Bracers
+			i(217152),	-- Algari Competitor's Leather Goggles
+			i(217157),	-- Algari Competitor's Mail Bracers
+			i(217153),	-- Algari Competitor's Mail Goggles
+			i(217158),	-- Algari Competitor's Plate Bracers
+			i(217154),	-- Algari Competitor's Plate Goggles
+			i(221805),	-- Blasting Bracers
+			i(221808),	-- Clanking Cuffs
+			i(221804),	-- Dangerous Distraction Inhibitor
+			i(225645),	-- Dredger's Goggles
+			i(221802),	-- Overclocked Idea Generator
+			i(225643),	-- Spelunker's Goggles
+			i(221801),	-- Studious Brilliance Expeditor
+			i(221803),	-- Supercharged Thought Enhancer
+			i(225644),	-- Tracker's Goggles
+			i(221806),	-- Venting Vambraces
+			i(221807),	-- Whirring Wristwraps
+			-- Tinker
+			i(225241),	-- Refurbished Tinker: Alarm-O-Turret
+			i(225242),	-- Refurbished Tinker: Plane Displacer
+		}),
+		filter(CONSUMABLES, {
+			i(221880),	-- Potion Bomb of Power+
+			i(221881),	-- Potion Bomb of Power++
+			i(221882),	-- Potion Bomb of Power+++
+			i(221876),	-- Potion Bomb of Recovery+
+			i(221877),	-- Potion Bomb of Recovery++
+			i(221878),	-- Potion Bomb of Recovery+++
+			i(221872),	-- Potion Bomb of Speed+
+			i(221873),	-- Potion Bomb of Speed++
+			i(221874),	-- Potion Bomb of Speed+++
+		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(253252),	-- Replica Rumbling Wastes Drill Pod (DECOR!)
+			i(246066),	-- Schmancy Goblin String Lights (DECOR!)
+		})),
+		salvagerecipe(447313, 225251, {	-- Disassemble Invention
+			-- any reason to list possible outputs here?
+		}),
 		n(DISCOVERY, {
 			salvagerecipe(447312, 224640, {	-- Invent / Invent
 				i(219191),	-- Hastily Scrawled Notes
@@ -1024,47 +1083,47 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				r(447312),	-- Invent
 				r(447339),	-- Safety Switch
 				r(447337),	-- Whimsical Wiring
-				i(227890, { -- Unrecognizable Prototype
-					i(221956, { -- Prototype: Algari Repair Bot 11O
+				i(227890, {	-- Unrecognizable Prototype
+					i(221956, {	-- Prototype: Algari Repair Bot 11O
 						r(447367),	-- Algari Repair Bot 11O
 					}),
-					i(221960, { -- Prototype: Barrel of Fireworks
+					i(221960, {	-- Prototype: Barrel of Fireworks
 						r(447369),	-- Barrel of Fireworks
 					}),
-					i(221952, { -- Prototype: Convincingly Realistic Jumper Cables
+					i(221952, {	-- Prototype: Convincingly Realistic Jumper Cables
 						r(447366),	-- Convincingly Realistic Jumper Cables
 					}),
-					i(221961, { -- Prototype: Defective Escape Pod
+					i(221961, {	-- Prototype: Defective Escape Pod
 						r(447370),	-- Defective Escape Pod
 					}),
-					i(221963, { -- Prototype: Filmless Camera
+					i(221963, {	-- Prototype: Filmless Camera
 						r(447371),	-- Filmless Camera
 					}),
-					i(221965, { -- Prototype: Wormhole Generator: Khaz Algar
+					i(221965, {	-- Prototype: Wormhole Generator: Khaz Algar
 						r(447372),	-- Wormhole Generator: Khaz Algar
 					}),
-					i(221958, { -- Prototype: Summon Portable Profession Possibility Projector
+					i(221958, {	-- Prototype: Summon Portable Profession Possibility Projector
 						r(447368),	-- Portable Profession Possibility Projector
 					}),
-					i(221875, { -- Prototype: Potion Bomb of Recovery
+					i(221875, {	-- Prototype: Potion Bomb of Recovery
 						r(447343),	-- Potion Bomb of Recovery
 					}),
-					i(221948, { -- Prototype: Pausing Pylon
+					i(221948, {	-- Prototype: Pausing Pylon
 						r(447365),	-- Pausing Pylon
 					}),
-					i(221879, { -- Prototype: Potion Bomb of Power
+					i(221879, {	-- Prototype: Potion Bomb of Power
 						r(447344),	-- Potion Bomb of Power
 					}),
-					i(221871, { -- Prototype: Potion Bomb of Speed
+					i(221871, {	-- Prototype: Potion Bomb of Speed
 						r(447342),	-- Potion Bomb of Speed
 					}),
-					i(221944, { -- Prototype: Irresistible Red Button
+					i(221944, {	-- Prototype: Irresistible Red Button
 						r(447364),	-- Irresistible Red Button
 					}),
-					i(221903, { -- Prototype: Earthen Delivery Drill
+					i(221903, {	-- Prototype: Earthen Delivery Drill
 						r(447350),	-- Tinker: Earthen Delivery Drill
 					}),
-					i(221907, { -- Prototype: Heartseeking Health Injector
+					i(221907, {	-- Prototype: Heartseeking Health Injector
 						r(447351),	-- Tinker: Heartseeking Health Injector
 					}),
 				}),
@@ -1078,7 +1137,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					r(447327, {	-- Aqirite Fisherfriend
 						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
-					r(447331, { -- Aqirite Miner's Headgear
+					r(447331, {	-- Aqirite Miner's Headgear
 						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447324),	-- Bismuth Brainwave Projector
@@ -1117,7 +1176,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447322),	-- Spring-Loaded Bismuth Fabric Cutters
-					r(447314, { -- Studious Brilliance Expeditor
+					r(447314, {	-- Studious Brilliance Expeditor
 						["description"] = "Requires specialization - Goggles to discover",
 					}),
 					r(447316, {	-- Supercharged Thought Enhancer
@@ -1131,48 +1190,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					}),
 				},
 			}),
-		}),
-		salvagerecipe(447311, 225202, {	-- Pilfer Through Parts
-			i(227769),	-- Bountiful Bolts
-		}),
-		salvagerecipe(447313, 225251, {	-- Disassemble Invention
-			-- any reason to list possible outputs here?
-		}),
-		n(ARMOR, {
-			i(225642),	-- Acolyte's Goggles
-			i(217155),	-- Algari Competitor's Cloth Bracers
-			i(217151),	-- Algari Competitor's Cloth Goggles
-			i(217156),	-- Algari Competitor's Leather Bracers
-			i(217152),	-- Algari Competitor's Leather Goggles
-			i(217157),	-- Algari Competitor's Mail Bracers
-			i(217153),	-- Algari Competitor's Mail Goggles
-			i(217158),	-- Algari Competitor's Plate Bracers
-			i(217154),	-- Algari Competitor's Plate Goggles
-			i(221805),	-- Blasting Bracers
-			i(221808),	-- Clanking Cuffs
-			i(221804),	-- Dangerous Distraction Inhibitor
-			i(225645),	-- Dredger's Goggles
-			i(221802),	-- Overclocked Idea Generator
-			i(225643),	-- Spelunker's Goggles
-			i(221801),	-- Studious Brilliance Expeditor
-			i(221803),	-- Supercharged Thought Enhancer
-			i(225644),	-- Tracker's Goggles
-			i(221806),	-- Venting Vambraces
-			i(221807),	-- Whirring Wristwraps
-			-- Tinker
-			i(225241),	-- Refurbished Tinker: Alarm-O-Turret
-			i(225242),	-- Refurbished Tinker: Plane Displacer
-		}),
-		filter(CONSUMABLES, {
-			i(221880),	-- Potion Bomb of Power+
-			i(221881),	-- Potion Bomb of Power++
-			i(221882),	-- Potion Bomb of Power+++
-			i(221876),	-- Potion Bomb of Recovery+
-			i(221877),	-- Potion Bomb of Recovery++
-			i(221878),	-- Potion Bomb of Recovery+++
-			i(221872),	-- Potion Bomb of Speed+
-			i(221873),	-- Potion Bomb of Speed++
-			i(221874),	-- Potion Bomb of Speed+++
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENGINEERING,
@@ -1313,21 +1330,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221913),	-- Serrated Cogwheel+++
 			i(221959),	-- Summon Portable Profession Possibility Projector
 		}),
+		salvagerecipe(447311, 225202, {	-- Pilfer Through Parts
+			i(227769),	-- Bountiful Bolts
+		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(221789),	-- Aqirite Brainwave Projector
-			i(221791),	-- Aqirite Fisherfriend
-			i(221798),	-- Aqirite Fueled Samophlange
-			i(221796),	-- Aqirite Miner's Headgear
-			i(221788),	-- Bismuth Brainwave Projector
-			i(221790),	-- Bismuth Fisherfriend
-			i(221797),	-- Bismuth-Fueled Samophlange
-			i(221795),	-- Bismuth Miner's Headgear
-			i(221793),	-- Lapidary's Aqirite Clamps
-			i(221792),	-- Lapidary's Bismuth Clamps
-			i(221800),	-- Miner's Aqirite Hoard
-			i(221799),	-- Miner's Bismuth Hoard
-			i(221787),	-- Spring-Loaded Aqirite Fabric Cutters
-			i(221786),	-- Spring-Loaded Bismuth Fabric Cutters
+			i(221789, {["requireSkill"] = ENGINEERING}),	-- Aqirite Brainwave Projector
+			i(221791, {["requireSkill"] = FISHING}),	-- Aqirite Fisherfriend
+			i(221798, {["requireSkill"] = ENGINEERING}),	-- Aqirite Fueled Samophlange
+			i(221796, {["requireSkill"] = MINING}),	-- Aqirite Miner's Headgear
+			i(221788, {["requireSkill"] = ENGINEERING}),	-- Bismuth Brainwave Projector
+			i(221790, {["requireSkill"] = FISHING}),	-- Bismuth Fisherfriend
+			i(221797, {["requireSkill"] = ENGINEERING}),	-- Bismuth-Fueled Samophlange
+			i(221795, {["requireSkill"] = MINING}),	-- Bismuth Miner's Headgear
+			i(221793, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Aqirite Clamps
+			i(221792, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Bismuth Clamps
+			i(221800, {["requireSkill"] = MINING}),	-- Miner's Aqirite Hoard
+			i(221799, {["requireSkill"] = MINING}),	-- Miner's Bismuth Hoard
+			i(221787, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Aqirite Fabric Cutters
+			i(221786, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Bismuth Fabric Cutters
 		}),
 		filter(MOUNTS, {
 			i(221967),	-- Crowd Pummeler 2-30 (MOUNT!)
@@ -1366,61 +1386,52 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(FISHING, {
-		n(DISCOVERY, {
-			r(471359, {["timeline"] = {ADDED_11_1_0}}),	-- "Gold" Fish
-			r(456154),	-- Anglerthread
-			r(444795),	-- Arathor Hammerfish
-			r(444803),	-- Awoken Coelacanth
-			r(456591),	-- Azj-Kahet
-			r(444787),	-- Bismuth Bitterling
-			r(444785),	-- Bloody Perch
-			r(444786),	-- Crystalline Sturgeon
-			r(444802),	-- Cursed Ghoulfish
-			r(444792),	-- Dilly-Dally Dace
-			r(444793),	-- Dornish Pike
-			r(454442),	-- Fishing Skill and You
-			r(444790),	-- Goldengill Trout
-			r(456590, {["learnedAt"]=150}),	-- Hallowfall
-			r(444797),	-- Kaheti Slum Shark
-			r(456180, {["learnedAt"]=150}),	-- Mereldar Fishing Derby
-			r(444788),	-- Nibbling Minnow
-			r(444798),	-- Pale Huskfish
-			r(444801),	-- Queen's Lurefish
-			r(454443),	-- Quiet River Bass
-			r(444796),	-- Regal Dottyback
-			r(444794),	-- Roaring Anglerseeker
-			r(444799),	-- Sanguine Dogfish
-			r(456152),	-- Seekerthread
-			r(444791),	-- Specular Rainbowfish
-			r(444800),	-- Spiked Sea Raven
-			r(456589),	-- The Ringing Deeps
-			r(444789),	-- Whispering Stargazer
+		filter(COSMETIC, {
+			i(225759),	-- Coreway Engineer's Forceps (COSMETIC!)
+			i(225762),	-- Coreway Engineer's Screwdriver (COSMETIC!)
+			i(225757),	-- Coreway Pickaxe (COSMETIC!)
+			i(225756),	-- Coreway Shovel (COSMETIC!)
+			i(225755),	-- Coreway Sledgehammer (COSMETIC!)
+			i(225752),	-- Dornogal Defender (COSMETIC!)
+			i(225754),	-- Dornogal Guard's Hammer (COSMETIC!)
+			i(225753),	-- Dornogal Guard's Splitter (COSMETIC!)
+			i(225760),	-- Dornogal Spear (COSMETIC!)
+			i(225884),	-- Extra Large Leek (COSMETIC!)
+			i(225763),	-- Fallen Dalaran Defender (COSMETIC!)
+			i(225758),	-- Hallowfall Harvester's Pitchfork (COSMETIC!)
+			i(225761),	-- Jeweler's Careful Crusher (COSMETIC!)
+			i(226385),	-- Oxidized Wrench	(COSMETIC!)
 		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = FISHING,
-		},{
-			FirstCraft(85857, 471359, ADDED_11_1_0),	-- "Gold" Fish
-			FirstCraft(82907, 444795),	-- Arathor Hammerfish
-			FirstCraft(82915, 444803),	-- Awoken Coelacanth
-			FirstCraft(82899, 444787),	-- Bismuth Bitterling
-			FirstCraft(82897, 444785),	-- Bloody Perch
-			FirstCraft(82898, 444786),	-- Crystalline Sturgeon
-			FirstCraft(82914, 444802),	-- Cursed Ghoulfish
-			FirstCraft(82896, 444792),	-- Dilly-Dally Dace
-			FirstCraft(82905, 444793),	-- Dornish Pike
-			FirstCraft(82902, 444790),	-- Goldengill Trout
-			FirstCraft(82909, 444797),	-- Kaheti Slum Shark
-			FirstCraft(82900, 444788),	-- Nibbling Minnow
-			FirstCraft(82910, 444798),	-- Pale Huskfish
-			FirstCraft(82913, 444801),	-- Queen's Lurefish
-			FirstCraft(82904, 454443),	-- Quiet River Bass
-			FirstCraft(82908, 444796),	-- Regal Dottyback
-			FirstCraft(82906, 444794),	-- Roaring Anglerseeker
-			FirstCraft(82911, 444799),	-- Sanguine Dogfish
-			FirstCraft(82903, 444791),	-- Specular Rainbowfish
-			FirstCraft(82912, 444800),	-- Spiked Sea Raven
-			FirstCraft(82901, 444789),	-- Whispering Stargazer
-		})),
+		n(DISCOVERY, {
+			r_withQuest(471359, 85857, ADDED_11_1_0),	-- "Gold" Fish
+			r(456154),	-- Anglerthread
+			r_withQuest(444795, 82907),	-- Arathor Hammerfish
+			r_withQuest(444803, 82915),	-- Awoken Coelacanth
+			r(456591, {["learnedAt"]=225}),	-- Azj-Kahet
+			r_withQuest(444787, 82899),	-- Bismuth Bitterling
+			r_withQuest(444785, 82897),	-- Bloody Perch
+			r_withQuest(444786, 82898),	-- Crystalline Sturgeon
+			r_withQuest(444802, 82914),	-- Cursed Ghoulfish
+			r_withQuest(444792, 82896),	-- Dilly-Dally Dace
+			r_withQuest(444793, 82905),	-- Dornish Pike
+			r(454442, {["learnedAt"]=25}),	-- Fishing Skill and You
+			r_withQuest(444790, 82902),	-- Goldengill Trout
+			r(456590, {["learnedAt"]=150}),	-- Hallowfall
+			r_withQuest(444797, 82909),	-- Kaheti Slum Shark
+			r(456180, {["learnedAt"]=150}),	-- Mereldar Fishing Derby
+			r_withQuest(444788, 82900),	-- Nibbling Minnow
+			r_withQuest(444798, 82910),	-- Pale Huskfish
+			r_withQuest(444801, 82913),	-- Queen's Lurefish
+			r_withQuest(454443, 82904),	-- Quiet River Bass
+			r_withQuest(444796, 82908),	-- Regal Dottyback
+			r_withQuest(444794, 82906),	-- Roaring Anglerseeker
+			r_withQuest(444799, 82911),	-- Sanguine Dogfish
+			r(456152),	-- Seekerthread
+			r_withQuest(444791, 82903),	-- Specular Rainbowfish
+			r_withQuest(444800, 82912),	-- Spiked Sea Raven
+			r(456589, {["learnedAt"]=75}),	-- The Ringing Deeps
+			r_withQuest(444789, 82901),	-- Whispering Stargazer
+		}),
 		i(227673, {["timeline"] = {ADDED_11_1_0}}),	-- "Gold" Fish
 		i(225770),	-- Algari Anglerthread
 		i(225771),	-- Algari Seekerthread
@@ -1450,7 +1461,49 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(220139),	-- Whispering Stargazer
 	}),
 	prof(HERBALISM, {
-		spell(2366, {	-- Herb Gathering
+		n(DISCOVERY, {
+			r_withQuest(435858, 79916),	-- Altered Luredrop
+			r_withQuest(435840, 79909),	-- Altered Mycobloom
+			r_withQuest(435864, 79923),	-- Altered Orbinid
+			r_withQuest(435826, 79933),	-- Arathor's Spear
+			r_withQuest(435823, 79927),	-- Blessing Blossom
+			r_withQuest(435879, 79937),	-- Camouflaged Arathor's Spear
+			r_withQuest(435872, 79931),	-- Camouflaged Blessing Blossom
+			r_withQuest(435860, 79918),	-- Camouflaged Luredrop
+			r_withQuest(435851, 79911),	-- Camouflaged Mycobloom
+			r_withQuest(435866, 79925),	-- Camouflaged Orbinid
+			r_withQuest(435877, 79935),	-- Crystallized Arathor's Spear
+			r_withQuest(435870, 79929),	-- Crystallized Blessing Blossom
+			r_withQuest(435857, 79915),	-- Crystallized Luredrop
+			r_withQuest(435838, 79908),	-- Crystallized Mycobloom
+			r_withQuest(435862, 79922),	-- Crystallized Orbinid
+			r(439871),	-- Green Thumb,
+			r_withQuest(435878, 79936),	-- Irradiated Arathor's Spear
+			r_withQuest(435871, 79930),	-- Irradiated Blessing Blossom
+			r_withQuest(435859, 79917),	-- Irradiated Luredrop
+			r_withQuest(435843, 79910),	-- Irradiated Mycobloom
+			r_withQuest(435865, 79924),	-- Irradiated Orbinid
+			r_withQuest(435821, 79913),	-- Luredrop
+			r_withQuest(435836, 79934),	-- Lush Arathor's Spear
+			r_withQuest(435834, 79928),	-- Lush Blessing Blossom
+			r_withQuest(435829, 79914),	-- Lush Luredrop
+			r_withQuest(435812, 79907),	-- Lush Mycobloom
+			r_withQuest(435830, 79921),	-- Lush Orbinid
+			r_withQuest(1250317, 92133, ADDED_11_2_0),	-- Lush Phantom Bloom
+			r_withQuest(435822, 79920),	-- Orbinid
+			r(438953),	-- Overload Altered Herb
+			r(438952),	-- Overload Crystallized Herb
+			r(423395),	-- Overload Empowered Herb
+			r(438955),	-- Overload Irradiated Herb
+			r(438961),	-- Overload Sporefused Herb
+			r_withQuest(1250314, 92132, ADDED_11_2_0),	-- Phantom Bloom
+			r_withQuest(435880, 79938),	-- Sporefused Arathor's Spear
+			r_withQuest(435873, 79932),	-- Sporefused Blessing Blossom
+			r_withQuest(435861, 79919),	-- Sporefused Luredrop
+			r_withQuest(435850, 79912),	-- Sporefused Mycobloom
+			r_withQuest(435867, 79926),	-- Sporefused Orbinid
+		}),
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
 			i(210808),	-- Arathor's Spear+
 			i(210809),	-- Arathor's Spear++
 			i(210810),	-- Arathor's Spear+++
@@ -1486,109 +1539,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(213612),	-- Viridescent Spores
 			i(213611),	-- Writhing Sample
 		}),
-		n(DISCOVERY, {
-			r(435858),	-- Altered Luredrop
-			r(435840),	-- Altered Mycobloom
-			r(435864),	-- Altered Orbinid
-			r(435826),	-- Arathor's Spear
-			r(435823),	-- Blessing Blossom
-			r(435879),	-- Camouflaged Arathor's Spear
-			r(435872),	-- Camouflaged Blessing Blossom
-			r(435860),	-- Camouflaged Luredrop
-			r(435851),	-- Camouflaged Mycobloom
-			r(435866),	-- Camouflaged Orbinid
-			r(435877),	-- Crystallized Arathor's Spear
-			r(435870),	-- Crystallized Blessing Blossom
-			r(435857),	-- Crystallized Luredrop
-			r(435838),	-- Crystallized Mycobloom
-			r(435862),	-- Crystallized Orbinid
-			r(439871),	-- Green Thumb
-			r(435878),	-- Irradiated Arathor's Spear
-			r(435871),	-- Irradiated Blessing Blossom
-			r(435859),	-- Irradiated Luredrop
-			r(435843),	-- Irradiated Mycobloom
-			r(435865),	-- Irradiated Orbinid
-			r(435821),	-- Luredrop
-			r(435836),	-- Lush Arathor's Spear
-			r(435834),	-- Lush Blessing Blossom
-			r(435829),	-- Lush Luredrop
-			r(435812),	-- Lush Mycobloom
-			r(435830),	-- Lush Orbinid
-			r(1250317, {["timeline"] = {ADDED_11_2_0}}),	-- Lush Phantom Bloom
-			r(435822),	-- Orbinid
-			r(438953),	-- Overload Altered Herb
-			r(438952),	-- Overload Crystallized Herb
-			r(423395),	-- Overload Empowered Herb
-			r(438955),	-- Overload Irradiated Herb
-			r(438961),	-- Overload Sporefused Herb
-			r(1250314, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom
-			r(435880),	-- Sporefused Arathor's Spear
-			r(435873),	-- Sporefused Blessing Blossom
-			r(435861),	-- Sporefused Luredrop
-			r(435850),	-- Sporefused Mycobloom
-			r(435867),	-- Sporefused Orbinid
-		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = HERBALISM,
-		},{
-			-- Arathor's Spear
-			FirstCraft(79933, 435826);	-- Arathor's Spear
-			FirstCraft(79937, 435879);	-- Camouflaged Arathor's Spear
-			FirstCraft(79935, 435877);	-- Crystallized Arathor's Spear
-			FirstCraft(79936, 435878);	-- Irradiated Arathor's Spear
-			FirstCraft(79934, 435836);	-- Lush Arathor's Spear
-			FirstCraft(79938, 435880);	-- Sporefused Arathor's Spear
-			-- Blessing Blossom
-			FirstCraft(79927, 435823);	-- Blessing Blossom
-			FirstCraft(79931, 435872);	-- Camouflaged Blessing Blossom
-			FirstCraft(79929, 435870);	-- Crystallized Blessing Blossom
-			FirstCraft(79930, 435871);	-- Irradiated Blessing Blossom
-			FirstCraft(79928, 435834);	-- Lush Blessing Blossom
-			FirstCraft(79932, 435873);	-- Sporefused Blessing Blossom
-			-- Luredrop
-			FirstCraft(79913, 435821);	-- Luredrop
-			FirstCraft(79916, 435858);	-- Altered Luredrop
-			FirstCraft(79918, 435860);	-- Camouflaged Luredrop
-			FirstCraft(79915, 435857);	-- Crystallized Luredrop
-			FirstCraft(79917, 435859);	-- Irradiated Luredrop
-			FirstCraft(79914, 435829);	-- Lush Luredrop
-			FirstCraft(79919, 435861);	-- Sporefused Luredrop
-			-- Mycobloom
-			FirstCraft(79906, 435811);	-- Mycobloom
-			FirstCraft(79909, 435840);	-- Altered Mycobloom
-			FirstCraft(79911, 435851);	-- Camouflaged Mycobloom
-			FirstCraft(79908, 435838);	-- Crystallized Mycobloom
-			FirstCraft(79910, 435843);	-- Irradiated Mycobloom
-			FirstCraft(79907, 435812);	-- Lush Mycobloom
-			FirstCraft(79912, 435850);	-- Sporefused Mycobloom
-			-- Orbinid
-			FirstCraft(79920, 435822);	-- Orbinid
-			FirstCraft(79923, 435864);	-- Altered Orbinid
-			FirstCraft(79925, 435866);	-- Camouflaged Orbinid
-			FirstCraft(79922, 435862);	-- Crystallized Orbinid
-			FirstCraft(79924, 435865);	-- Irradiated Orbinid
-			FirstCraft(79921, 435830);	-- Lush Orbinid
-			FirstCraft(79926, 435867);	-- Sporefused Orbinid
-			-- Phantom Bloom
-			FirstCraft(92132, 1250314, ADDED_11_2_0);	-- Phantom Bloom
-			FirstCraft(92133, 1250317, ADDED_11_2_0);	-- Lush Phantom Bloom
-		})),
 	}),
 	prof(INSCRIPTION, {
-		spell(444181, {	-- Khaz Algar Milling
-			i(224805),	-- Blossom Pigment+
-			i(224804),	-- Blossom Pigment++
-			i(224803),	-- Blossom Pigment+++
-			i(222612),	-- Luredrop Pigment+
-			i(222613),	-- Luredrop Pigment++
-			i(222614),	-- Luredrop Pigment+++
-			i(222618),	-- Nacreous Pigment+
-			i(222619),	-- Nacreous Pigment++
-			i(222620),	-- Nacreous Pigment+++
-			i(224802),	-- Orbinid Pigment+
-			i(224801),	-- Orbinid Pigment++
-			i(224800),	-- Orbinid Pigment+++
-		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(253164),	-- Algari Fence (DECOR!)
+			i(253165),	-- Algari Fencepost (DECOR!)
+			i(253022),	-- Dornogal Bookcase (DECOR!)
+			i(253167),	-- Forgeground Market Bins (DECOR!)
+			i(253036),	-- Freywold Table (DECOR!)
+			i(253169),	-- Meadery Storage Chest (DECOR!)
+		})),
 		n(DISCOVERY, {
 			header(HEADERS.Spell, 447868, {	-- Algari Treatise on Inscription
 				r(444187),	-- Algari Treatise on Alchemy
@@ -1607,60 +1567,60 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = INSCRIPTION,
 		},{
 			-- Competitor's Crafts (PvP)
-			FirstCraft(80748, 444338); -- Algari Competitor's Emblem
-			FirstCraft(80747, 444337); -- Algari Competitor's Insignia of Alacrity
-			FirstCraft(80743, 455006); -- Algari Competitor's Lamp
-			FirstCraft(80746, 444336); -- Algari Competitor's Medallion
-			FirstCraft(80744, 455007); -- Algari Competitor's Pillar
-			FirstCraft(80745, 455008); -- Algari Competitor's Staff
+			FirstCraft(80748, 444338);	-- Algari Competitor's Emblem
+			FirstCraft(80747, 444337);	-- Algari Competitor's Insignia of Alacrity
+			FirstCraft(80743, 455006);	-- Algari Competitor's Lamp
+			FirstCraft(80746, 444336);	-- Algari Competitor's Medallion
+			FirstCraft(80744, 455007);	-- Algari Competitor's Pillar
+			FirstCraft(80745, 455008);	-- Algari Competitor's Staff
 			-- Combat Stats
-			FirstCraft(80719, 444210); -- Algari Missive of the Aurora
-			FirstCraft(80720, 444211); -- Algari Missive of the Feverflare
-			FirstCraft(80721, 444212); -- Algari Missive of the Fireflash
-			FirstCraft(80722, 444213); -- Algari Missive of the Harmonious
-			FirstCraft(80723, 444214); -- Algari Missive of the Peerless
-			FirstCraft(80724, 444215); -- Algari Missive of the Quickblade
+			FirstCraft(80719, 444210);	-- Algari Missive of the Aurora
+			FirstCraft(80720, 444211);	-- Algari Missive of the Feverflare
+			FirstCraft(80721, 444212);	-- Algari Missive of the Fireflash
+			FirstCraft(80722, 444213);	-- Algari Missive of the Harmonious
+			FirstCraft(80723, 444214);	-- Algari Missive of the Peerless
+			FirstCraft(80724, 444215);	-- Algari Missive of the Quickblade
 			-- Contracts
-			FirstCraft(80725, 444217); -- Contract: Assembly of the Deeps
+			FirstCraft(80725, 444217);	-- Contract: Assembly of the Deeps
 			FirstCraft(85796, 471132, ADDED_11_1_0);	-- Contract: The Cartels of Undermine
-			FirstCraft(80728, 444220); -- Contract: Council of Dornogal
-			FirstCraft(80726, 444218); -- Contract: Hallowfall Arathi
+			FirstCraft(80728, 444220);	-- Contract: Council of Dornogal
+			FirstCraft(80726, 444218);	-- Contract: Hallowfall Arathi
 			FirstCraft(90908, 1236170, ADDED_11_2_0);	-- Contract: The K'aresh Trust
-			FirstCraft(80727, 444219); -- Contract: The Severed Threads
+			FirstCraft(80727, 444219);	-- Contract: The Severed Threads
 
 			FirstCraft(92075, 1249466, ADDED_11_2_0);	-- Deal: Cartel Ba
 			FirstCraft(92076, 1249468, ADDED_11_2_0);	-- Deal: Cartel Om
 			FirstCraft(92074, 1249463, ADDED_11_2_0);	-- Deal: Cartel Zo
 			-- Embellishments
-			FirstCraft(80704, 444195); -- Darkmoon Sigil: Vivacity
-			FirstCraft(80701, 444192); -- Darkmoon Sigil: Ascension
-			FirstCraft(80703, 444194); -- Darkmoon Sigil: Symbiosis
-			FirstCraft(80702, 444193); -- Darkmoon Sigil: Radiance
+			FirstCraft(80704, 444195);	-- Darkmoon Sigil: Vivacity
+			FirstCraft(80701, 444192);	-- Darkmoon Sigil: Ascension
+			FirstCraft(80703, 444194);	-- Darkmoon Sigil: Symbiosis
+			FirstCraft(80702, 444193);	-- Darkmoon Sigil: Radiance
 			-- Glyphs
-			FirstCraft(86453, 1213583); -- Glyph of the Admiral's Pistol Shot
-			FirstCraft(86451, 1213561); -- Glyph of the Ashvane Pistol Shot
-			FirstCraft(86454, 1213582); -- Glyph of the Gilded Pistol Shot
+			FirstCraft(86453, 1213583);	-- Glyph of the Admiral's Pistol Shot
+			FirstCraft(86451, 1213561);	-- Glyph of the Ashvane Pistol Shot
+			FirstCraft(86454, 1213582);	-- Glyph of the Gilded Pistol Shot
 			FirstCraft(90784, 1234336, ADDED_11_1_7);	-- Glyph of the Strix
-			FirstCraft(86455, 1213581); -- Glyph of the Twilight Pistol Shot
+			FirstCraft(86455, 1213581);	-- Glyph of the Twilight Pistol Shot
 			-- Inks
 			FirstCraft(80730, 444222);	-- Apricate Ink
 			FirstCraft(80729, 444221);	-- Shadow Ink
 			-- Reagents
-			FirstCraft(80699, 444190); -- Codified Greenwood
-			FirstCraft(80700, 444191); -- Boundless Cipher
+			FirstCraft(80699, 444190);	-- Codified Greenwood
+			FirstCraft(80700, 444191);	-- Boundless Cipher
 			FirstCraft(91581, 1243994, ADDED_11_2_0);	-- Inspired Writer's Quill
 			-- Runes
-			FirstCraft(86205, 472951, ADDED_11_1_0); -- Vantus Rune: Liberation of Undermine
+			FirstCraft(86205, 472951, ADDED_11_1_0);	-- Vantus Rune: Liberation of Undermine
 			FirstCraft(90941, 1236908, ADDED_11_2_0);	-- Vantus Rune: Manaforge Omega
-			FirstCraft(80712, 444203); -- Vantus Rune: Nerub-ar Palace
+			FirstCraft(80712, 444203);	-- Vantus Rune: Nerub-ar Palace
 			-- Profession Stats
-			FirstCraft(80735, 444232); -- Algari Missive of Crafting Speed
-			FirstCraft(80738, 444235); -- Algari Missive of Deftness
-			FirstCraft(80736, 444233); -- Algari Missive of Finesse
-			FirstCraft(80732, 444229); -- Algari Missive of Ingenuity
-			FirstCraft(80734, 444231); -- Algari Missive of Multicraft
-			FirstCraft(80737, 444234); -- Algari Missive of Perception
-			FirstCraft(80733, 444230); -- Algari Missive of Resourcefulness
+			FirstCraft(80735, 444232);	-- Algari Missive of Crafting Speed
+			FirstCraft(80738, 444235);	-- Algari Missive of Deftness
+			FirstCraft(80736, 444233);	-- Algari Missive of Finesse
+			FirstCraft(80732, 444229);	-- Algari Missive of Ingenuity
+			FirstCraft(80734, 444231);	-- Algari Missive of Multicraft
+			FirstCraft(80737, 444234);	-- Algari Missive of Perception
+			FirstCraft(80733, 444230);	-- Algari Missive of Resourcefulness
 			-- Profession Treatises
 			FirstCraft(80690, 444187);	-- Algari Treatise on Alchemy
 			FirstCraft(80698, 444184);	-- Algari Treatise on Blacksmithing
@@ -1674,19 +1634,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80739, 444236);	-- Algari Treatise on Skinning
 			FirstCraft(80691, 444186);	-- Algari Treatise on Tailoring
 			-- Profession Equipment
-			FirstCraft(80718, 444209); -- Inscribed Rolling Pin
-			FirstCraft(80714, 444205); -- Silver Tongue's Quill
-			FirstCraft(80716, 444207); -- Patient Alchemist's Mixing Rod
-			FirstCraft(80715, 444206); -- Hasty Alchemist's Mixing Rod
-			FirstCraft(80713, 444204); -- Lightweight Scribe's Quill
-			FirstCraft(80717, 444208); -- Burnt Rolling Pin
+			FirstCraft(80718, 444209);	-- Inscribed Rolling Pin
+			FirstCraft(80714, 444205);	-- Silver Tongue's Quill
+			FirstCraft(80716, 444207);	-- Patient Alchemist's Mixing Rod
+			FirstCraft(80715, 444206);	-- Hasty Alchemist's Mixing Rod
+			FirstCraft(80713, 444204);	-- Lightweight Scribe's Quill
+			FirstCraft(80717, 444208);	-- Burnt Rolling Pin
 			-- Weapons
-			FirstCraft(80708, 444199); -- Vagabond's Bounding Baton
-			FirstCraft(80707, 444198); -- Vagabond's Careful Crutch
-			FirstCraft(80706, 444197); -- Vagabond's Torch
-			FirstCraft(80710, 444201); -- Inquisitor's Baton
-			FirstCraft(80709, 444200); -- Inquisitor's Crutch
-			FirstCraft(80705, 444196); -- Inquisitor's Torch
+			FirstCraft(80708, 444199);	-- Vagabond's Bounding Baton
+			FirstCraft(80707, 444198);	-- Vagabond's Careful Crutch
+			FirstCraft(80706, 444197);	-- Vagabond's Torch
+			FirstCraft(80710, 444201);	-- Inquisitor's Baton
+			FirstCraft(80709, 444200);	-- Inquisitor's Crutch
+			FirstCraft(80705, 444196);	-- Inquisitor's Torch
 		})),
 		filter(GLYPHS, {
 			i(234246),	-- Glyph of the Admiral's Pistol Shot
@@ -1695,57 +1655,76 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(243051, {["timeline"] = {ADDED_11_1_7}}),	-- Glyph of the Strix
 			i(234248),	-- Glyph of the Twilight Pistol Shot
 		}),
+		salvagerecipe(444181, 222545, {	-- Khaz Algar Milling
+			i(224805),	-- Blossom Pigment+
+			i(224804),	-- Blossom Pigment++
+			i(224803),	-- Blossom Pigment+++
+			i(222612),	-- Luredrop Pigment+
+			i(222613),	-- Luredrop Pigment++
+			i(222614),	-- Luredrop Pigment+++
+			i(222618),	-- Nacreous Pigment+
+			i(222619),	-- Nacreous Pigment++
+			i(222620),	-- Nacreous Pigment+++
+			i(224802),	-- Orbinid Pigment+
+			i(224801),	-- Orbinid Pigment++
+			i(224800),	-- Orbinid Pigment+++
+		}),
 		filter(MISC, {
-			i(222635),	-- Algari Missive of Crafting Speed+
-			i(222636),	-- Algari Missive of Crafting Speed++
-			i(222637),	-- Algari Missive of Crafting Speed+++
-			i(222644),	-- Algari Missive of Deftness+
-			i(222645),	-- Algari Missive of Deftness++
-			i(222646),	-- Algari Missive of Deftness+++
-			i(222638),	-- Algari Missive of Finesse+
-			i(222639),	-- Algari Missive of Finesse++
-			i(222640),	-- Algari Missive of Finesse+++
-			i(222626),	-- Algari Missive of Ingenuity+
-			i(222627),	-- Algari Missive of Ingenuity++
-			i(222628),	-- Algari Missive of Ingenuity+++
-			i(222632),	-- Algari Missive of Multicraft+
-			i(222633),	-- Algari Missive of Multicraft++
-			i(222634),	-- Algari Missive of Multicraft+++
-			i(222641),	-- Algari Missive of Perception+
-			i(222642),	-- Algari Missive of Perception++
-			i(222643),	-- Algari Missive of Perception+++
-			i(222629),	-- Algari Missive of Resourcefulness+
-			i(222630),	-- Algari Missive of Resourcefulness++
-			i(222631),	-- Algari Missive of Resourcefulness+++
-			i(222579),	-- Algari Missive of the Aurora+
-			i(222580),	-- Algari Missive of the Aurora++
-			i(222581),	-- Algari Missive of the Aurora+++
-			i(222582),	-- Algari Missive of the Feverflare+
-			i(222583),	-- Algari Missive of the Feverflare++
-			i(222584),	-- Algari Missive of the Feverflare+++
-			i(222585),	-- Algari Missive of the Fireflash+
-			i(222586),	-- Algari Missive of the Fireflash++
-			i(222587),	-- Algari Missive of the Fireflash+++
-			i(222588),	-- Algari Missive of the Harmonious+
-			i(222589),	-- Algari Missive of the Harmonious++
-			i(222590),	-- Algari Missive of the Harmonious+++
-			i(222591),	-- Algari Missive of the Peerless+
-			i(222592),	-- Algari Missive of the Peerless++
-			i(222593),	-- Algari Missive of the Peerless+++
-			i(222594),	-- Algari Missive of the Quickblade+
-			i(222595),	-- Algari Missive of the Quickblade++
-			i(222596),	-- Algari Missive of the Quickblade+++
-			i(222546, {["questID"]=83725,["isWeekly"]=true}),	-- Algari Treatise on Alchemy
-			i(222554, {["questID"]=83726,["isWeekly"]=true}),	-- Algari Treatise on Blacksmithing
-			i(222550, {["questID"]=83727,["isWeekly"]=true}),	-- Algari Treatise on Enchanting
-			TempForceMisc(i(222621, {["questID"]=83728,["isWeekly"]=true})),	-- Algari Treatise on Engineering
-			i(222552, {["questID"]=83729,["isWeekly"]=true}),	-- Algari Treatise on Herbalism
-			i(222548, {["questID"]=83730,["isWeekly"]=true}),	-- Algari Treatise on Inscription
-			i(222551, {["questID"]=83731,["isWeekly"]=true}),	-- Algari Treatise on Jewelcrafting
-			i(222549, {["questID"]=83732,["isWeekly"]=true}),	-- Algari Treatise on Leatherworking
-			i(222553, {["questID"]=83733,["isWeekly"]=true}),	-- Algari Treatise on Mining
-			i(222649, {["questID"]=83734,["isWeekly"]=true}),	-- Algari Treatise on Skinning
-			i(222547, {["questID"]=83735,["isWeekly"]=true}),	-- Algari Treatise on Tailoring
+			i(222546, {	-- Algari Treatise on Alchemy
+				["questID"]= 83725,
+				["isWeekly"]=true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.ALCHEMY) },
+			}),
+			i(222554, {	-- Algari Treatise on Blacksmithing
+				["questID"]= 83726,
+				["isWeekly"]=true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING) },
+			}),
+			i(222550, {	-- Algari Treatise on Enchanting
+				["questID"]= 83727,
+				["isWeekly"]=true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.ENCHANTING) },
+			}),
+			TempForceMisc(i(222621, {	-- Algari Treatise on Engineering
+				["questID"]= 83728,
+				["isWeekly"]= true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.ENGINEERING) },
+			})),
+			i(222552, {	-- Algari Treatise on Herbalism
+				["questID"]= 83729,
+				["isWeekly"]= true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.HERBALISM) },
+			}),
+			i(222548, {	-- Algari Treatise on Inscription
+				["questID"]= 83730,
+				["isWeekly"]= true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION) },
+			}),
+			i(222551, {	-- Algari Treatise on Jewelcrafting
+				["questID"]= 83731,
+				["isWeekly"]= true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING) },
+			}),
+			i(222549, {	-- Algari Treatise on Leatherworking
+				["questID"]= 83732,
+				["isWeekly"]= true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING) },
+			}),
+			i(222553, {	-- Algari Treatise on Mining
+				["questID"]= 83733,
+				["isWeekly"]= true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.MINING) },
+			}),
+			i(222649, {	-- Algari Treatise on Skinning
+				["questID"]= 83734,
+				["isWeekly"]= true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.SKINNING) },
+			}),
+			i(222547, {	-- Algari Treatise on Tailoring
+				["questID"]= 83735,
+				["isWeekly"]= true,
+				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.TAILORING) },
+			}),
 			i(222600, {["questID"]=84484,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps+
 			i(222601, {["questID"]=84483,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps++
 			i(222602, {["questID"]=84482,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps+++
@@ -1764,18 +1743,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222606, {["questID"]=84478,["isWeekly"]=true}),	-- Contract: The Severed Threads+
 			i(222607, {["questID"]=84477,["isWeekly"]=true}),	-- Contract: The Severed Threads++
 			i(222608, {["questID"]=84476,["isWeekly"]=true}),	-- Contract: The Severed Threads+++
-			i(226022),	-- Darkmoon Sigil: Ascension+
-			i(226023),	-- Darkmoon Sigil: Ascension++
-			i(226024),	-- Darkmoon Sigil: Ascension+++
-			i(226025),	-- Darkmoon Sigil: Radiance+
-			i(226026),	-- Darkmoon Sigil: Radiance++
-			i(226027),	-- Darkmoon Sigil: Radiance+++
-			i(226028),	-- Darkmoon Sigil: Symbiosis+
-			i(226029),	-- Darkmoon Sigil: Symbiosis++
-			i(226030),	-- Darkmoon Sigil: Symbiosis+++
-			i(226031),	-- Darkmoon Sigil: Vivacity+
-			i(226032),	-- Darkmoon Sigil: Vivacity++
-			i(226033),	-- Darkmoon Sigil: Vivacity+++
 			i(249702, {	-- Deal: Cartel Ba
 				["timeline"] = {ADDED_11_2_0},
 				["questID"]= 92072,
@@ -1821,14 +1788,53 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(226036),	-- Vantus Rune: Nerub-ar Palace+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(222577),	-- Burnt Rolling Pin
-			i(222575),	-- Hasty Alchemist's Mixing Rod
-			i(222578),	-- Inscribed Rolling Pin
-			i(222573),	-- Lightweight Scribe's Quill
-			i(222576),	-- Patient Alchemist's Mixing Rod
-			i(222574),	-- Silver Tongue's Quill
+			i(222577, {["requireSkill"] = COOKING}),	-- Burnt Rolling Pin
+			i(222575, {["requireSkill"] = ALCHEMY}),	-- Hasty Alchemist's Mixing Rod
+			i(222578, {["requireSkill"] = COOKING}),	-- Inscribed Rolling Pin
+			i(222573, {["requireSkill"] = INSCRIPTION}),	-- Lightweight Scribe's Quill
+			i(222576, {["requireSkill"] = ALCHEMY}),	-- Patient Alchemist's Mixing Rod
+			i(222574, {["requireSkill"] = INSCRIPTION}),	-- Silver Tongue's Quill
 		}),
 		filter(REAGENTS, {
+			i(222635),	-- Algari Missive of Crafting Speed+
+			i(222636),	-- Algari Missive of Crafting Speed++
+			i(222637),	-- Algari Missive of Crafting Speed+++
+			i(222644),	-- Algari Missive of Deftness+
+			i(222645),	-- Algari Missive of Deftness++
+			i(222646),	-- Algari Missive of Deftness+++
+			i(222638),	-- Algari Missive of Finesse+
+			i(222639),	-- Algari Missive of Finesse++
+			i(222640),	-- Algari Missive of Finesse+++
+			i(222626),	-- Algari Missive of Ingenuity+
+			i(222627),	-- Algari Missive of Ingenuity++
+			i(222628),	-- Algari Missive of Ingenuity+++
+			i(222632),	-- Algari Missive of Multicraft+
+			i(222633),	-- Algari Missive of Multicraft++
+			i(222634),	-- Algari Missive of Multicraft+++
+			i(222641),	-- Algari Missive of Perception+
+			i(222642),	-- Algari Missive of Perception++
+			i(222643),	-- Algari Missive of Perception+++
+			i(222629),	-- Algari Missive of Resourcefulness+
+			i(222630),	-- Algari Missive of Resourcefulness++
+			i(222631),	-- Algari Missive of Resourcefulness+++
+			i(222579),	-- Algari Missive of the Aurora+
+			i(222580),	-- Algari Missive of the Aurora++
+			i(222581),	-- Algari Missive of the Aurora+++
+			i(222582),	-- Algari Missive of the Feverflare+
+			i(222583),	-- Algari Missive of the Feverflare++
+			i(222584),	-- Algari Missive of the Feverflare+++
+			i(222585),	-- Algari Missive of the Fireflash+
+			i(222586),	-- Algari Missive of the Fireflash++
+			i(222587),	-- Algari Missive of the Fireflash+++
+			i(222588),	-- Algari Missive of the Harmonious+
+			i(222589),	-- Algari Missive of the Harmonious++
+			i(222590),	-- Algari Missive of the Harmonious+++
+			i(222591),	-- Algari Missive of the Peerless+
+			i(222592),	-- Algari Missive of the Peerless++
+			i(222593),	-- Algari Missive of the Peerless+++
+			i(222594),	-- Algari Missive of the Quickblade+
+			i(222595),	-- Algari Missive of the Quickblade++
+			i(222596),	-- Algari Missive of the Quickblade+++
 			i(222615),	-- Apricate Ink+
 			i(222616),	-- Apricate Ink++
 			i(222617),	-- Apricate Ink+++
@@ -1838,11 +1844,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222555),	-- Codified Greenwood+
 			i(222556),	-- Codified Greenwood++
 			i(222557),	-- Codified Greenwood+++
+			i(226022),	-- Darkmoon Sigil: Ascension+
+			i(226023),	-- Darkmoon Sigil: Ascension++
+			i(226024),	-- Darkmoon Sigil: Ascension+++
+			i(226025),	-- Darkmoon Sigil: Radiance+
+			i(226026),	-- Darkmoon Sigil: Radiance++
+			i(226027),	-- Darkmoon Sigil: Radiance+++
+			i(226028),	-- Darkmoon Sigil: Symbiosis+
+			i(226029),	-- Darkmoon Sigil: Symbiosis++
+			i(226030),	-- Darkmoon Sigil: Symbiosis+++
+			i(226031),	-- Darkmoon Sigil: Vivacity+
+			i(226032),	-- Darkmoon Sigil: Vivacity++
+			i(226033),	-- Darkmoon Sigil: Vivacity+++
 			i(222609),	-- Shadow Ink+
 			i(222610),	-- Shadow Ink++
 			i(222611),	-- Shadow Ink+++
 		}),
-		spell(444224, {	-- Transcribe: Ascension
+		header(HEADERS.Spell, 444224, {	-- Transcribe: Ascension
 			i(222681),	-- Ace of Ascension
 			i(222682),	-- Two of Ascension
 			i(222683),	-- Three of Ascension
@@ -1852,7 +1870,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222687),	-- Seven of Ascension
 			i(222688),	-- Eight of Ascension
 		}),
-		spell(444227, {	-- Transcribe: Radiance
+		header(HEADERS.Spell, 444227, {	-- Transcribe: Radiance
 			i(222663),	-- Ace of Radiance
 			i(222664),	-- Two of Radiance
 			i(222665),	-- Three of Radiance
@@ -1862,7 +1880,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222669),	-- Seven of Radiance
 			i(222670),	-- Eight of Radiance
 		}),
-		spell(444226, {	-- Transcribe: Symbiosis
+		header(HEADERS.Spell, 444226, {	-- Transcribe: Symbiosis
 			i(222654),	-- Ace of Symbiosis
 			i(222655),	-- Two of Symbiosis
 			i(222656),	-- Three of Symbiosis
@@ -1872,7 +1890,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222660),	-- Seven of Symbiosis
 			i(222661),	-- Eight of Symbiosis
 		}),
-		spell(444225, {	-- Transcribe: Vivacity
+		header(HEADERS.Spell, 444225, {	-- Transcribe: Vivacity
 			i(222672),	-- Ace of Vivacity
 			i(222673),	-- Two of Vivacity
 			i(222674),	-- Three of Vivacity
@@ -1881,6 +1899,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222677),	-- Six of Vivacity
 			i(222678),	-- Seven of Vivacity
 			i(222679),	-- Eight of Vivacity
+		}),
+		header(HEADERS.Spell, 444224, {	-- Transcribe to Ascension
+			i(222622),	-- Transcribe to Ascension
+		}),
+		header(HEADERS.Spell, 444227, {	-- Transcribe to Radiance
+			i(222625),	-- Transcribe to Radiance
+		}),
+		header(HEADERS.Spell, 444226, {	-- Transcribe to Symbiosis
+			i(222624),	-- Transcribe to Symbiosis
+		}),
+		header(HEADERS.Spell, 444225, {	-- Transcribe to Vivacity
+			i(222623),	-- Transcribe to Vivacity
 		}),
 		filter(TRINKET_F, {
 			i(219933),	-- Algari Competitor's Emblem
@@ -1904,9 +1934,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(JEWELCRAFTING, {
-		n(DISCOVERY, {
-			r(434020),	-- Algari Crushing
-		}),
 		salvagerecipe(434018, 194709, {	-- Algari Prospecting
 			i(212498),	-- Ambivalent Amber
 			i(212505),	-- Extravagant Emerald
@@ -1930,6 +1957,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(215131),	-- Malleable Pendant
 			i(215132),	-- Marvelous Mood Ring
 			i(215135),	-- Ring of Earthen Craftsmanship
+		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(253253),	-- Gundargaz Candelabra (DECOR!)
+			i(245559),	-- Octagonal Ochre Window (DECOR!)
+		})),
+		n(DISCOVERY, {
+			r(434020),	-- Algari Crushing
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
@@ -2229,6 +2263,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(219501),	-- Vambraces of Deepening Darkness
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(239214),	-- Well-Lit Incontinental Couch (DECOR!)
+			i(243327),	-- Zhevra-Stripe Rug (DECOR!)
+		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = LEATHERWORKING,
 		},{
@@ -2353,22 +2391,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219506),	-- Writhing Armor Banding+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(219866),	-- Apothecary's Cap
-			i(219871),	-- Arathi Leatherworker's Smock
-			i(219870),	-- Charged Scrapmaster's Gauntlets
-			i(219869),	-- Deep Tracker's Cap
-			i(219868),	-- Deep Tracker's Pack
-			i(219874),	-- Earthen Forgemaster's Apron
-			i(219876),	-- Earthen Jeweler's Cover
-			i(219861),	-- Gardener's Basket
-			i(219875),	-- Gemcutter's Apron
-			i(219863),	-- Hideseeker's Hat
-			i(219862),	-- Hideseeker's Pack
-			i(219865),	-- Hideshaper's Cover
-			i(219872),	-- Nerubian Alchemist's Hat
-			i(219864),	-- Scrapsmith's Gloves
-			i(219873),	-- Steelsmith's Apron
-			i(219867),	-- Stonebound Herbalist's Pack
+			i(219866, {["requireSkill"] = ALCHEMY}),	-- Apothecary's Cap
+			i(219871, {["requireSkill"] = LEATHERWORKING}),	-- Arathi Leatherworker's Smock
+			i(219870, {["requireSkill"] = ENGINEERING}),	-- Charged Scrapmaster's Gauntlets
+			i(219869, {["requireSkill"] = SKINNING}),	-- Deep Tracker's Cap
+			i(219868, {["requireSkill"] = SKINNING}),	-- Deep Tracker's Pack
+			i(219874, {["requireSkill"] = BLACKSMITHING}),	-- Earthen Forgemaster's Apron
+			i(219876, {["requireSkill"] = JEWELCRAFTING}),	-- Earthen Jeweler's Cover
+			i(219861, {["requireSkill"] = HERBALISM}),	-- Gardener's Basket
+			i(219875, {["requireSkill"] = JEWELCRAFTING}),	-- Gemcutter's Apron
+			i(219863, {["requireSkill"] = SKINNING}),	-- Hideseeker's Hat
+			i(219862, {["requireSkill"] = SKINNING}),	-- Hideseeker's Pack
+			i(219865, {["requireSkill"] = LEATHERWORKING}),	-- Hideshaper's Cover
+			i(219872, {["requireSkill"] = ALCHEMY}),	-- Nerubian Alchemist's Hat
+			i(219864, {["requireSkill"] = ENGINEERING}),	-- Scrapsmith's Gloves
+			i(219873, {["requireSkill"] = BLACKSMITHING}),	-- Steelsmith's Apron
+			i(219867, {["requireSkill"] = HERBALISM}),	-- Stonebound Herbalist's Pack
 		}),
 		filter(REAGENTS, {
 			i(219880),	-- Carapace-Backed Hide+
@@ -2398,167 +2436,70 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(MINING, {
 		n(DISCOVERY, {
-			-- TODO: link to objects which provide, maybe using new sources tech eventually
-			r(439713, {	-- Aqirite Seam
-				["description"] = "Best farmed in 'The Underkeep' Delve during a story that allows ores to spawn. The first room on the right can an Aqirite Seam.\n\nCan also be found very very rarely in Caves in Hallowfall & Ajzkahet as well as in the Sinkhole, Skittering Breach and Underkeep Delve",
-				["maps"] = { HALLOWFALL, AZJ_KAHET, THE_SINKHOLE, SKITTERING_BREACH, THE_UNDERKEEP,}
-			}),
 			r(439707),	-- Aqirite
-			r(439712),	-- Bismuth Seam
-			r(439725),	-- Camouflaged Aqirite
-			r(439724),	-- Camouflaged Bismuth
-			r(439726),	-- Camouflaged Ironclaw
-			r(439716),	-- Crystallized Aqirite
-			r(439715),	-- Crystallized Bismuth
-			r(439717),	-- Crystallized Ironclaw
-			r(1250351, {["timeline"]={ADDED_11_2_0}}),-- Desolate Deposit
-			r(439722),	-- EZ-Mine Aqirite
-			r(439721),	-- EZ-Mine Bismuth
-			r(439723),	-- EZ-Mine Ironclaw
-			r(439708),	-- Ironclaw
-			r(439714),	-- Ironclaw Seam
+			r_withQuest(439713, 80357, ADDED_11_0_2,	-- Aqirite Seam
+				"Best farmed in 'The Underkeep' Delve during a story that allows ores to spawn. The first room on the right can an Aqirite Seam.\n\nCan also be found very very rarely in Caves in Hallowfall & Ajzkahet as well as in the Sinkhole, Skittering Breach and Underkeep Delve.",
+				{ HALLOWFALL, AZJ_KAHET, THE_SINKHOLE, SKITTERING_BREACH, THE_UNDERKEEP }
+			),
+			r_withQuest(439712, 80356),	-- Bismuth Seam
+			r_withQuest(439725, 80369),	-- Camouflaged Aqirite
+			r_withQuest(439724, 80368),	-- Camouflaged Bismuth
+			r_withQuest(439726, 80370),	-- Camouflaged Ironclaw
+			r_withQuest(439716, 80360),	-- Crystallized Aqirite
+			r_withQuest(439715, 80359),	-- Crystallized Bismuth
+			r_withQuest(439717, 80361),	-- Crystallized Ironclaw
+			r_withQuest(1250351, 92134, ADDED_11_2_0),	-- Desolate Deposit
+			r_withQuest(439722, 80366),	-- EZ-Mine Aqirite
+			r_withQuest(439721, 80365),	-- EZ-Mine Bismuth
+			r_withQuest(439723, 80367),	-- EZ-Mine Ironclaw
+			r_withQuest(439708, 80352),	-- Ironclaw
+			r_withQuest(439714, 80358),	-- Ironclaw Seam
 			r(439742),	-- Overload Crystallized
 			r(423394),	-- Overload Empowered Deposit
 			r(439744),	-- Overload Explosives
 			r(439747),	-- Overload Webbed Deposits
 			r(439743),	-- Overload Weeping
-			r(439710),	-- Rich Aqirite
-			r(439709),	-- Rich Bismuth
-			r(1250356, {["timeline"]={ADDED_11_2_0}}),	-- Rich Desolate Deposit
-			r(439711),	-- Rich Ironclaw
-			r(439728),	-- Webbed Aqirite
-			r(439727),	-- Webbed Bismuth
-			r(439729),	-- Webbed Ironclaw
-			r(439719),	-- Weeping Aqirite
-			r(439718),	-- Weeping Bismuth
-			r(439720, {providers={{"o",413902}}}),	-- Weeping Ironclaw
+			r_withQuest(439710, 80354),	-- Rich Aqirite
+			r_withQuest(439709, 80353),	-- Rich Bismuth
+			r_withQuest(1250356, 92135, ADDED_11_2_0),	-- Rich Desolate Deposit
+			r_withQuest(439711, 80355),	-- Rich Ironclaw
+			r_withQuest(439728, 80372),	-- Webbed Aqirite
+			r_withQuest(439727, 80371),	-- Webbed Bismuth
+			r_withQuest(439729, 80373),	-- Webbed Ironclaw
+			r_withQuest(439719, 80363),	-- Weeping Aqirite
+			r_withQuest(439718, 80362),	-- Weeping Bismuth
+			r_withQuest(439720, 80364),	-- Weeping Ironclaw
 		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = MINING,
-		},{
-			-- Aqirite
-			--FirstCraft(XXXXX, 439707);	-- Aqirite //??how do we not have this yet?
-			FirstCraft(80357, 439713);	-- Aqirite Seam
-			FirstCraft(80369, 439725);	-- Camouflaged Aqirite
-			FirstCraft(80360, 439716);	-- Crystallized Aqirite
-			FirstCraft(80366, 439722);	-- EZ-Mine Aqirite
-			FirstCraft(80354, 439710);	-- Rich Aqirite
-			FirstCraft(80372, 439728);	-- Webbed Aqirite
-			FirstCraft(80363, 439719);	-- Weeping Aqirite
-			-- Bismuth
-			FirstCraft(80350, 439705);	-- Bismuth
-			FirstCraft(80356, 439712);	-- Bismuth Seam
-			FirstCraft(80368, 439724);	-- Camouflaged Bismuth
-			FirstCraft(80359, 439715);	-- Crystallized Bismuth
-			FirstCraft(80365, 439721);	-- EZ-Mine Bismuth
-			FirstCraft(80353, 439709);	-- Rich Bismuth
-			FirstCraft(80371, 439727);	-- Webbed Bismuth
-			FirstCraft(80362, 439718);	-- Weeping Bismuth
-			-- Ironclaw
-			FirstCraft(80352, 439708);	-- Ironclaw
-			FirstCraft(80358, 439714);	-- Ironclaw Seam
-			FirstCraft(80370, 439726);	-- Camouflaged Ironclaw
-			FirstCraft(80361, 439717);	-- Crystallized Ironclaw
-			FirstCraft(80367, 439723);	-- EZ-Mine Ironclaw
-			FirstCraft(80355, 439711);	-- Rich Ironclaw
-			FirstCraft(80373, 439729);	-- Webbed Ironclaw
-			FirstCraft(80364, 439720);	-- Weeping Ironclaw
-			-- Desolate Talus
-			FirstCraft(92134, 1250351, ADDED_11_2_0);	-- Desolate Deposit
-			FirstCraft(92135, 1250356, ADDED_11_2_0);	-- Rich Desolate Deposit
-		})),
-		-- Gathered Items
-		i(210933),	-- Aqirite+
-		i(210934),	-- Aqirite++
-		i(210935),	-- Aqirite+++
-		i(210930),	-- Bismuth+
-		i(210931),	-- Bismuth++
-		i(210932),	-- Bismuth+++
-		i(213610),	-- Crystalline Powder
-		i(217707),	-- Imperfect Null Stone
-		i(210936),	-- Ironclaw Ore+
-		i(210937),	-- Ironclaw Ore++
-		i(210938),	-- Ironclaw Ore+++
-		i(238201, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus+
-		i(238212, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus++
-		i(238213, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus+++
-		i(240216, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Resonating Stone
-		i(246504, {["timeline"]={ADDED_11_2_0}}),	-- Inscrutable Ore (QS!)
-		i(224838),	-- Null Sliver
-		i(210939),	-- Null Stone
-		i(224583),	-- Slab of Slate
-		i(224584),	-- Erosion Polished Slate
-		i(213611),	-- Writhing Sample
-		-- Gatherable Objects
-		-- TODO: add the rest
+		header(HEADERS.Spell, 2575, {	-- Mining
+			i(210933),	-- Aqirite+
+			i(210934),	-- Aqirite++
+			i(210935),	-- Aqirite+++
+			i(210930),	-- Bismuth+
+			i(210931),	-- Bismuth++
+			i(210932),	-- Bismuth+++
+			i(213610),	-- Crystalline Powder
+			i(217707),	-- Imperfect Null Stone
+			i(210936),	-- Ironclaw Ore+
+			i(210937),	-- Ironclaw Ore++
+			i(210938),	-- Ironclaw Ore+++
+			i(238201, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus+
+			i(238212, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus++
+			i(238213, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus+++
+			i(240216, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Resonating Stone
+			i(246504, {["timeline"]={ADDED_11_2_0}}),	-- Inscrutable Ore (QS!)
+			i(224838),	-- Null Sliver
+			i(210939),	-- Null Stone
+			i(224583),	-- Slab of Slate
+			i(224584),	-- Erosion Polished Slate
+			i(213611),	-- Writhing Sample
+		}),
 		o(413902, {	-- Weeping Ironclaw
 			["description"] = "Has a chance to spawn only in a few Delves.",
 			["maps"] = { SKITTERING_BREACH, THE_UNDERKEEP, TAK_RETHAN_ABYSS },
 		}),
 	}),
 	prof(SKINNING, {
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
-		},{
-			FirstSkin(91127, 232098, ADDED_11_2_0),	-- Skinning "Chowdar"
-			FirstSkin(83410, 216031),	-- Skinning Abyssal Devourer
-			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall
-			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
-			FirstSkin(83414, 216042),	-- Skinning Cha'tak
-			FirstSkin(85549, 214757),	-- Skinning Croakit
-			FirstSkin(83408, 220286),	-- Skinning Deepflayer Broodmother
-			FirstSkin(83404, 218393),	-- Skinning Disturbed Earthgorger
-			FirstSkin(81446, 224924),	-- Skinning Elusive Gargantuan Stormscale
-			FirstSkin(81445, 224515),	-- Skinning Elusive Ironhide Maelstrom Wolf
-			FirstSkin(81447, 224963),	-- Skinning Elusive Kaheti Battle Tank
-			FirstSkin(81448, 226232),	-- Skinning Elusive Razormouth Steelhide
-			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
-			FirstSkin(85548, 220492),	-- Skinning Finclaw Bloodtide
-			FirstSkin(86795, 228601, ADDED_11_0_7),	-- Skinning Ghostmaker
-			FirstSkin(87592, 230935, ADDED_11_1_0),	-- Skinning Grease
-			FirstSkin(87593, 230936, ADDED_11_1_0),	-- Skinning Grime
-			FirstSkin(87590, 231017, ADDED_11_1_0),	-- Skinning Grimewick
-			FirstSkin(91132, 238540, ADDED_11_2_0),	-- Skinning Grubber
-			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
-			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
-			FirstSkin(81455, 220275),	-- Skinning King Splash
-			FirstSkin(91126, 232077, ADDED_11_2_0),	-- Skinning Korgorath the Ravager
-			FirstSkin(83409, 220285),	-- Skinning Lurker of the Deeps
-			FirstSkin(83400, 221534),	-- Skinning Lytfang the Lost
-			FirstSkin(83416, 216044),	-- Skinning Maddened Siegebomber
-			FirstSkin(91272, 245997, ADDED_11_2_0),	-- Skinning Malek'ta
-			FirstSkin(83406, 220890),	-- Skinning Matriarch Charfuria
-			FirstSkin(91134, 231981, ADDED_11_2_0),	-- Skinning Maw of the Sands
-			FirstSkin(91128, 232108, ADDED_11_2_0),	-- Skinning Morgil the Netherspawn
-			FirstSkin(81458, 218452),	-- Skinning Murkshade
-			FirstSkin(87589, 230995, ADDED_11_1_0),	-- Skinning Nitro
-			FirstSkin(91135, 232127, ADDED_11_2_0),	-- Skinning Orith the Dreadful
-			FirstSkin(81452, 219267),	-- Skinning Plaguehart
-			FirstSkin(83403, 221786),	-- Skinning Pride of Beledar
-			FirstSkin(87591, 230934, ADDED_11_1_0),	-- Skinning Ratspit
-			FirstSkin(85547, 207826),	-- Skinning Ravageant
-			FirstSkin(87594, 230931, ADDED_11_1_0),	-- Skinning Scrapbeak
-			FirstSkin(87596, 233471, ADDED_11_1_0),	-- Skinning Scrapchewer
-			FirstSkin(91125, 232129, ADDED_11_2_0),	-- Skinning Shadowhowl
-			FirstSkin(85550, 219278),	-- Skinning Shallowshell the Clacker
-			FirstSkin(91133, 232006, ADDED_11_2_0),	-- Skinning Sha'ryth the Cursed
-			FirstSkin(84259, 228439),	-- Skinning Slatefang
-			FirstSkin(83405, 221217),	-- Skinning Spore-infused Shalewing
-			FirstSkin(91130, 232193, ADDED_11_2_0),	-- Skinning Stalker of the Wastes
-			FirstSkin(85551, 221690),	-- Skinning Strength of Beledar
-			FirstSkin(83407, 221126),	-- Skinning Tephratennae
-			FirstSkin(81456, 220271),	-- Skinning Terror of the Forge
-			FirstSkin(91129, 232111, ADDED_11_2_0),	-- Skinning The Nightreaver
-			FirstSkin(83401, 221648),	-- Skinning The Perchfather
-			FirstSkin(81453, 219271),	-- Skinning Twice-Stinger the Wretched
-			FirstSkin(91131, 232195, ADDED_11_2_0),	-- Skinning Urmag
-			FirstSkin(83415, 216037),	-- Skinning Vilewing
-			FirstSkin(87595, 233472, ADDED_11_1_0),	-- Skinning Volstrike the Charged
-			FirstSkin(81449, 219263),	-- Skinning Warphorn
-			FirstSkin(83412, 216039),	-- Skinning Xishorr
-			FirstSkin(81457, 220270),	-- Skinning Zilthara
-		})),
-		spell(423342, {	-- Khaz Algar Skinning
+		header(HEADERS.Spell, 423342, {	-- Khaz Algar Skinning
 			i(224781),	-- Abyssal Fur
 			i(218338),	-- Bottled Storm
 			i(218339),	-- Burning Cinderbee Setae
@@ -2651,6 +2592,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222853),	-- Weavercloth Bag
 			i(222855),	-- Weavercloth Reagent Bag
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(252755),	-- Dornogal Framed Rug (DECOR!)
+			i(245305),	-- Undermine Bean Bag Chair (DECOR!)
+		})),
 		filter(MISC, {
 			i(225729),	-- Algari Weaverline
 			i(222879),	-- Bright Polishing Cloth+
@@ -2690,18 +2635,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222890),	-- Weavercloth Spellthread+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(222850),	-- Artisan Alchemist's Robe
-			i(222851),	-- Artisan Chef's Hat
-			i(222849),	-- Artisan Enchanter's Hat
+			i(222850, {["requireSkill"] = ALCHEMY}),	-- Artisan Alchemist's Robe
+			i(222851, {["requireSkill"] = COOKING}),	-- Artisan Chef's Hat
+			i(222849, {["requireSkill"] = ENCHANTING}),	-- Artisan Enchanter's Hat
 			i(222848),	-- Artisan Fishing Cap
 			i(222847, {_drop={"requireSkill"},requireSkill=HERBALISM}),	-- Artisan Gardening Hat
-			i(222852),	-- Artisan Tailor's Coat
-			i(222845),	-- Weavercloth Alchemist's Robe
-			i(222846),	-- Weavercloth Chef's Hat
-			i(222843),	-- Weavercloth Enchanter's Hat
-			i(222842),	-- Weavercloth Fishing Cap
-			i(222841),	-- Weavercloth Gardening Hat
-			i(222844),	-- Weavercloth Tailor's Coat
+			i(222852, {["requireSkill"] = TAILORING}),	-- Artisan Tailor's Coat
+			i(222845, {["requireSkill"] = ALCHEMY}),	-- Weavercloth Alchemist's Robe
+			i(222846, {["requireSkill"] = COOKING}),	-- Weavercloth Chef's Hat
+			i(222843, {["requireSkill"] = ENCHANTING}),	-- Weavercloth Enchanter's Hat
+			i(222842, {["requireSkill"] = FISHING}),	-- Weavercloth Fishing Cap
+			i(222841, {["requireSkill"] = HERBALISM}),	-- Weavercloth Gardening Hat
+			i(222844, {["requireSkill"] = TAILORING}),	-- Weavercloth Tailor's Coat
 		}),
 		filter(REAGENTS, {
 			i(228930),	-- Adorning Ribbon
@@ -2821,6 +2766,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82474),	-- Transmutation 30/30
 			q(82388, {["isDaily"]=true}),	-- Daily craft bonus potion
 			q(81898, {["isDaily"]=true}),	-- Daily craft bonus flask
+			q(81090, {["isDaily"]=true}),	-- Daily craft Thaumaturgy
 		}),
 		prof(BLACKSMITHING, {
 			q(83111),	-- 10/40 Everburning Forge
@@ -2844,6 +2790,65 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(81443),	-- 30/40 Meat Carver
 			q(81444),	-- 40/40 Meat Carver
 		}),
+		prof(SKINNING, sharedData({ ["isWeekly"] = true }, {
+			q(91127, name(HEADERS.NPC, 232098, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning "Chowdar"
+			q(83410, name(HEADERS.NPC, 216031)),	-- Skinning Abyssal Devourer
+			q(83411, name(HEADERS.NPC, 214151)),	-- Skinning Ahg'zagall
+			q(81450, name(HEADERS.NPC, 219264)),	-- Skinning Bloodmaw
+			q(83414, name(HEADERS.NPC, 216042)),	-- Skinning Cha'tak
+			q(85549, name(HEADERS.NPC, 214757)),	-- Skinning Croakit
+			q(83408, name(HEADERS.NPC, 220286)),	-- Skinning Deepflayer Broodmother
+			q(83404, name(HEADERS.NPC, 218393)),	-- Skinning Disturbed Earthgorger
+			q(81446, name(HEADERS.NPC, 224924)),	-- Skinning Elusive Gargantuan Stormscale
+			q(81445, name(HEADERS.NPC, 224515)),	-- Skinning Elusive Ironhide Maelstrom Wolf
+			q(81447, name(HEADERS.NPC, 224963)),	-- Skinning Elusive Kaheti Battle Tank
+			q(81448, name(HEADERS.NPC, 226232)),	-- Skinning Elusive Razormouth Steelhide
+			q(81451, name(HEADERS.NPC, 219265)),	-- Skinning Emperor Pitfang
+			q(85548, name(HEADERS.NPC, 220492)),	-- Skinning Finclaw Bloodtide
+			q(86795, name(HEADERS.NPC, 228601, {["timeline"] = { ADDED_11_0_7 }})),	-- Skinning Ghostmaker
+			q(87592, name(HEADERS.NPC, 230935, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Grease
+			q(87593, name(HEADERS.NPC, 230936, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Grime
+			q(87590, name(HEADERS.NPC, 231017, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Grimewick
+			q(91132, name(HEADERS.NPC, 238540, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Grubber
+			q(83402, name(HEADERS.NPC, 221668)),	-- Skinning Horror of the Shallows
+			q(83413, name(HEADERS.NPC, 221327)),	-- Skinning Kaheti Silk Hauler
+			q(81455, name(HEADERS.NPC, 220275)),	-- Skinning King Splash
+			q(91126, name(HEADERS.NPC, 232077, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Korgorath the Ravager
+			q(83409, name(HEADERS.NPC, 220285)),	-- Skinning Lurker of the Deeps
+			q(83400, name(HEADERS.NPC, 221534)),	-- Skinning Lytfang the Lost
+			q(83416, name(HEADERS.NPC, 216044)),	-- Skinning Maddened Siegebomber
+			q(91272, name(HEADERS.NPC, 245997, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Malek'ta
+			q(83406, name(HEADERS.NPC, 220890)),	-- Skinning Matriarch Charfuria
+			q(91134, name(HEADERS.NPC, 231981, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Maw of the Sands
+			q(91128, name(HEADERS.NPC, 232108, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Morgil the Netherspawn
+			q(81458, name(HEADERS.NPC, 218452)),	-- Skinning Murkshade
+			q(87589, name(HEADERS.NPC, 230995, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Nitro
+			q(91135, name(HEADERS.NPC, 232127, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Orith the Dreadful
+			q(81452, name(HEADERS.NPC, 219267)),	-- Skinning Plaguehart
+			q(83403, name(HEADERS.NPC, 221786)),	-- Skinning Pride of Beledar
+			q(87591, name(HEADERS.NPC, 230934, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Ratspit
+			q(85547, name(HEADERS.NPC, 207826)),	-- Skinning Ravageant
+			q(87594, name(HEADERS.NPC, 230931, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Scrapbeak
+			q(87596, name(HEADERS.NPC, 233471, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Scrapchewer
+			q(91125, name(HEADERS.NPC, 232129, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Shadowhowl
+			q(85550, name(HEADERS.NPC, 219278)),	-- Skinning Shallowshell the Clacker
+			q(91133, name(HEADERS.NPC, 232006, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Sha'ryth the Cursed
+			q(84259, name(HEADERS.NPC, 228439)),	-- Skinning Slatefang
+			q(83405, name(HEADERS.NPC, 221217)),	-- Skinning Spore-infused Shalewing
+			q(91130, name(HEADERS.NPC, 232193, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Stalker of the Wastes
+			q(85551, name(HEADERS.NPC, 221690)),	-- Skinning Strength of Beledar
+			q(83407, name(HEADERS.NPC, 221126)),	-- Skinning Tephratennae
+			q(81456, name(HEADERS.NPC, 220271)),	-- Skinning Terror of the Forge
+			q(91129, name(HEADERS.NPC, 232111, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning The Nightreaver
+			q(83401, name(HEADERS.NPC, 221648)),	-- Skinning The Perchfather
+			q(81453, name(HEADERS.NPC, 219271)),	-- Skinning Twice-Stinger the Wretched
+			q(91131, name(HEADERS.NPC, 232195, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Urmag
+			q(83415, name(HEADERS.NPC, 216037)),	-- Skinning Vilewing
+			q(87595, name(HEADERS.NPC, 233472, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Volstrike the Charged
+			q(81449, name(HEADERS.NPC, 219263)),	-- Skinning Warphorn
+			q(83412, name(HEADERS.NPC, 216039)),	-- Skinning Xishorr
+			q(81457, name(HEADERS.NPC, 220270)),	-- Skinning Zilthara
+		})),
 		prof(TAILORING, {
 			q(84591),	-- 0/20 Dawnweaving
 			q(84592),	-- 20/20 Dawnweaving

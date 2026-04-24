@@ -14,6 +14,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "[完成条件：%s]",
-		-- TODO: tw = "",
+		tw = "[完成條件：%s]",
 	},
 })

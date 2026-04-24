@@ -13,10 +13,11 @@ ihqt() - This is simply an Item which triggers a QuestID, but no noticeable diff
 --]]
 
 local Items = ItemDBConditional;
+local Spells
 -- #IF ANYCLASSIC
-local Spells = RecipeDB;
+Spells = RecipeDB;
 -- #ELSE
-local Spells = SpellDB;
+Spells = SpellDB;
 -- #ENDIF
 local iq = function(itemID, questID, classID, raceID)
 	if not itemID or itemID < 1 then
@@ -107,8 +108,8 @@ is(44811, 61780, MAGE);				-- Tome of Polymorph: Turkey
 is(82470, 120146, MAGE);			-- Ancient Tome of Portal: Dalaran
 is(82469, 120145, MAGE);			-- Ancient Tome of Teleport: Dalaran
 is(0, 119467);						-- Battle Pet Training
---iq(86125, 31304);					-- Kafa Press
---iq(86529, 31432);					-- Manipulator's Talisman
+-- iq(86125, 31304);					-- Kafa Press
+-- iq(86529, 31432);					-- Manipulator's Talisman
 
 -----------------
 -- PATCH 5.2.0 --
@@ -159,6 +160,7 @@ is(120140, 126819, MAGE);			-- Tome of Polymorph: Porcupine
 -----------------
 -- PATCH 6.2.0 --
 -----------------
+ihqt(128348, 39434);				-- Baleful Spaulders
 iq(128444, 39561);					-- Blueprint: Oil Rig [A]
 iq(128490, 39561);					-- Blueprint: Oil Rig [H]
 iq(128251, 39359);					-- Equipment Blueprint: Tuskarr Fishing Net
@@ -182,7 +184,7 @@ iq(128665, 39615);					-- Ball of Tangled Lights
 iq(128666, 39616);					-- Imported Trees
 iq(128667, 39767);					-- Little Helpers
 iq(128669, 39712);					-- Old Box of Decorations
---iq(128668, 39671);				-- Festive Outfits [this quest is not permanently completed, so it can't be a character unlock]
+-- iq(128668, 39671);				-- Festive Outfits [this quest is not permanently completed, so it can't be a character unlock]
 
 -----------------
 -- PATCH 7.0.3 --
@@ -258,18 +260,32 @@ is(162625, 277787, MAGE);			-- Tome of Polymorph: Direhorn
 -- Flight Path Maps --
 iq(166445, 54705);					-- 7th Legion Scouting Map
 iq(166444, 54704);					-- Honorbound Scouting Map
+-- Outpost Unlocks --
+iq(162975, 53751);					-- Grimwatt's Crash
+iq(162119, 53743);					-- Hillcrest Pasture
+iq(162645, 53749);					-- Mistvine Ledge
+iq(161482, 53745);					-- Mudfisher Cove
+iq(162576, 53748);					-- Mugamba Overlook
+iq(161385, 53740);					-- Stonefist Watch
+iq(162511, 53742);					-- Stonetusk Watch
+iq(161449, 53744);					-- Swiftwind Post
+iq(161121, 53739);					-- The Wolf's Den
+iq(162543, 53747);					-- Veiled Grotto
+iq(162603, 53746);					-- Verdant Hollow
+iq(163038, 53750);					-- Vulture's Nest
+iq(161487, 53741);					-- Windfall Cavern
 -- Outpost Upgrades --
-ihqt(165880, 54304);				-- Outpost Upgrade: Arom's Stand
-ihqt(165836, 54261);				-- Outpost Upgrade: Brennadam
-ihqt(165873, 54283);				-- Outpost Upgrade: Castaway Point
-ihqt(165728, 54226);				-- Outpost Upgrade: The Great Seal
-ihqt(165804, 54259);				-- Outpost Upgrade: Vulpera Hideaway
-ihqt(165750, 54238);				-- Outpost Upgrade: Zul'jan Ruins
+iq(165880, 54304);					-- Outpost Upgrade: Arom's Stand
+iq(165836, 54261);					-- Outpost Upgrade: Brennadam
+iq(165873, 54283);					-- Outpost Upgrade: Castaway Point
+iq(165728, 54226);					-- Outpost Upgrade: The Great Seal
+iq(165804, 54259);					-- Outpost Upgrade: Vulpera Hideaway
+iq(165750, 54238);					-- Outpost Upgrade: Zul'jan Ruins
 -- Random One-Time Items --
-ihqt(162580, 52854)					-- Fading Treasure Map
-ihqt(162584, 52860)					-- Singed Treasure Map
-ihqt(162571, 52853)					-- Soggy Treasure Map
-ihqt(162581, 52859)					-- Yellowed Treasure Map
+ihqt(162580, 52854);				-- Fading Treasure Map
+ihqt(162584, 52860);				-- Singed Treasure Map
+ihqt(162571, 52853);				-- Soggy Treasure Map
+ihqt(162581, 52859);				-- Yellowed Treasure Map
 
 -----------------
 -- PATCH 8.1.0 --
@@ -282,6 +298,8 @@ iq(166749, 54859);					-- Lyrics: Song of the Sea
 -----------------
 -- PATCH 8.2.0 --
 -----------------
+iq(168479, 55968);					-- Troop Requisition
+iq(168480, 55969);					-- Troop Requisition
 
 -----------------
 -- PATCH 8.2.5 --
@@ -294,6 +312,8 @@ is(172405, 309328, SHAMAN);			-- Tome of Hex: Living Honey
 iq(175158, 59029, nil, VULPERA);	-- Flames of Fury
 iq(175160, 59035, nil, VULPERA);	-- Holy Relic
 iq(175159, 59032, nil, VULPERA);	-- Sinister Shadows
+iq(174905, 58907);					-- Troop Requisition: Rajani Sparkcaller
+iq(174904, 58906);					-- Troop Requisition: Ramkahen Lancer
 ihqt(169693, 57063);				-- Zem'Lans Lost Treasure Map
 
 -----------------
@@ -318,6 +338,7 @@ iq(165840, 54264);					-- Shattered Pet Portal
 iq(187923, 65039);					-- Aurelid Lure
 iq(184220, 62821);					-- Encyclopedia of Sinstone Fragment Recovery
 iq(180705, 61160, HUNTER);			-- Gargon Training Manual
+ihqt(180085, 60587);				-- Kyrian Keepsake
 iq(184222, 62822);					-- Lemet's Requisition Orders
 iq(183517, 62372);					-- Page 76 of the Necronom-i-nom
 iq(183124, 62255, HUNTER);			-- Simple Tome of Bone-Binding
@@ -391,6 +412,14 @@ iq(177235, 59686);					-- Tubbins's Lucky Teapot
 iq(181436, 61452);					-- Vanity Mirror
 iq(177242, 59692);					-- Venthyr Arsenal
 iq(181442, 61458);					-- Visions of Sire Denathrius
+-- Necrolord
+iq(183401, 62319);					-- Amethystine Dye
+iq(183690, 62404);					-- Ashen Ink
+iq(183394, 62266);					-- Discarded Grimoire
+iq(183692, 62408);					-- Jagged Bonesaw
+iq(183691, 62405);					-- Mucosal Pigment
+iq(183399, 62311);					-- Ritualist's Mantle
+iq(183397, 62306);					-- Sorcerer's Blade
 
 -----------------
 -- PATCH 9.0.5 --
@@ -553,7 +582,7 @@ ihqt(202047, 72248);				-- Gleaming Incarnate Thunderstone
 iq(201791, 72094, HUNTER);			-- How to Train a Dragonkin
 iq(195453, 67718);					-- Ludo's Stash Map
 is(0, 390631, HUNTER);				-- Ottuk Taming
-is(200205 ,391622, MAGE);			-- Tome of Polymorph: Duck
+is(200205, 391622, MAGE);			-- Tome of Polymorph: Duck
 iq(199069, 70538);					-- Yennu's Map
 
 ------------------
@@ -823,6 +852,7 @@ ihqt(227432, 80873);				-- Pristine Tailor's Diagrams
 iq(229195, 84006);					-- Queen's Pheromone (8.8 Thousand)
 ihqt(224038, 82631);				-- Smithing After Saronite
 iq(228943, 84689);					-- Spymaster's Severed Thread
+ihqt(224026, 83620);				-- Storm Vessel
 ihqt(224024, 82633);				-- Theories of Bodily Transmutation, Chapter 8
 is(227710, 460392, MAGE);			-- Tome of Polymorph: Mosswool
 ihqt(224056, 82626);				-- Uses for Leftover Husks (After You Take Them Apart)
@@ -833,25 +863,32 @@ ihqt(224658, 83068);				-- Void-Lit Leatherworking Notes
 ihqt(224657, 83067);				-- Void-Lit Skinning Notes
 iq(228946, 84693);					-- Weaver's Lair Profession Table
 ihqt(224050, 82635);				-- Web Sparkles: Pretty and Powerful
+-- Biblo Archivist
+ihqt(225203, 83312);				-- Beledar - The Emperor's Vision
+ihqt(225207, 83310);				-- Care and Feeding of the Imperial Lynx
+ihqt(225216, 83309);				-- Palawltar's Codex of Dimensional Structure
+ihqt(225204, 83311);				-- Shadow Curfew Guidelines
+ihqt(225212, 83314);				-- The Big Book of Arathi Idioms
+ihqt(225215, 83313);				-- The Song of Renilash
 
 ------------------
 -- PATCH 11.0.5 --
 ------------------
-ihqt(230264, 85224);				-- Bronze Celebration Titles: Broken Isles Enthusiast
-ihqt(230261, 85221);				-- Bronze Celebration Titles: Cataclysm Enthusiast
-ihqt(230258, 85218);				-- Bronze Celebration Titles: Classic Enthusiast
-ihqt(230263, 85223);				-- Bronze Celebration Titles: Draenor Enthusiast
-ihqt(230268, 85228);				-- Bronze Celebration Titles: Dragon Isles Enthusiast
-ihqt(229826, 85015);				-- Bronze Celebration Titles: Grizzly Hills Hiker
-ihqt(231833, 85517);				-- Bronze Celebration Titles: Karazhan Graduate
-ihqt(230266, 85226);				-- Bronze Celebration Titles: Kul Tiras Enthusiast
-ihqt(231832, 85516);				-- Bronze Celebration Titles: Molten Core Prospector
-ihqt(230260, 85220);				-- Bronze Celebration Titles: Northrend Enthusiast
-ihqt(230259, 85219);				-- Bronze Celebration Titles: Outland Enthusiast
-ihqt(230262, 85222);				-- Bronze Celebration Titles: Pandaria Enthusiast
-ihqt(229827, 85014);				-- Bronze Celebration Titles: Plaguelands Survivor
-ihqt(230267, 85227);				-- Bronze Celebration Titles: Shadowlands Enthusiast
-ihqt(230265, 85225);				-- Bronze Celebration Titles: Zuldazar Enthusiast
+iq(230264, 85224);				-- Bronze Celebration Titles: Broken Isles Enthusiast
+iq(230261, 85221);				-- Bronze Celebration Titles: Cataclysm Enthusiast
+iq(230258, 85218);				-- Bronze Celebration Titles: Classic Enthusiast
+iq(230263, 85223);				-- Bronze Celebration Titles: Draenor Enthusiast
+iq(230268, 85228);				-- Bronze Celebration Titles: Dragon Isles Enthusiast
+iq(229826, 85015);				-- Bronze Celebration Titles: Grizzly Hills Hiker
+iq(231833, 85517);				-- Bronze Celebration Titles: Karazhan Graduate
+iq(230266, 85226);				-- Bronze Celebration Titles: Kul Tiras Enthusiast
+iq(231832, 85516);				-- Bronze Celebration Titles: Molten Core Prospector
+iq(230260, 85220);				-- Bronze Celebration Titles: Northrend Enthusiast
+iq(230259, 85219);				-- Bronze Celebration Titles: Outland Enthusiast
+iq(230262, 85222);				-- Bronze Celebration Titles: Pandaria Enthusiast
+iq(229827, 85014);				-- Bronze Celebration Titles: Plaguelands Survivor
+iq(230267, 85227);				-- Bronze Celebration Titles: Shadowlands Enthusiast
+iq(230265, 85225);				-- Bronze Celebration Titles: Zandalar Enthusiast
 ihqt(226241, 83824);				-- Shredded Green Hills of Stranglethorn
 
 ------------------
@@ -873,6 +910,8 @@ ihqt(234744, 86750);				-- Blackwater's Trove (Honored)
 ihqt(235260, 86751);				-- Blackwater's Trove (Revered)
 ihqt(235261, 86597);				-- Blackwater's Trove (Exalted)
 iq(235037, 86630);					-- Crumpled Schematic: Wormhole Generator: Undermine
+ihqt(233281, 86329);				-- Delver's Cosmetic Surprise Bag
+ihqt(233276, 86328);				-- Delver's Starter Kit
 ihqt(236852, 87353);				-- Gallagio Highroller's Boomstone
 ihqt(235608, 86878);				-- Nightfall Sanctum Campsite
 is(0, 467553);						-- Path of the Azerite Refinery [A]
@@ -936,11 +975,50 @@ ihqt(235858, 87260);				-- Ethereal Tome of Leatherworking Knowledge
 ihqt(235857, 87259);				-- Ethereal Tome of Mining Knowledge
 ihqt(235856, 87258);				-- Ethereal Tome of Skinning Knowledge
 ihqt(235855, 87257);				-- Ethereal Tome of Tailoring Knowledge
---ihqt(246737, ???);					-- K'areshi Voidstone
+ihqt(246737, 91521);				-- K'areshi Voidstone
 is(0, 1239155);						-- Path of the All-Devouring
 is(0, 1237215);						-- Path of the Eco-Dome
 
+------------------
+-- PATCH 11.2.5 --
+------------------
+iq(249242, 91961);					-- Bronze Celebration Titles: Khaz Algar Enthusiast
+ihqt(248127, 91783);				-- Delver's Cosmetic Surprise Bag
+ihqt(248126, 91784);				-- Delver's Starter Kit
 
+------------------
+-- PATCH 12.0.1 --
+------------------
+ihqt(262645, 93794);				-- Beyond the Event Horizon: Alchemy
+ihqt(262644, 93795);				-- Beyond the Event Horizon: Blacksmithing
+ihqt(262646, 93796);				-- Beyond the Event Horizon: Engineering
+iq(262966, 93866);					-- Budget Friendly
+iq(262964, 93868);					-- Death's Hope
+iq(253802, 92710);					-- Deed of Patronage
+iq(262965, 93867);					-- Delver's Delight
+ihqt(250445, 92186);				-- Echo of Abundance: Enchanting
+ihqt(250443, 92174);				-- Echo of Abundance: Herbalism
+ihqt(250444, 92187);				-- Echo of Abundance: Mining
+ihqt(250360, 92188);				-- Echo of Abundance: Skinning
+ihqt(265071, 94482);				-- Gleaming Sunmote
+is(0, 1254559);						-- Path of Cavernous Depths
+is(0, 1254563);						-- Path of the Fractured Core
+is(0, 1254572);						-- Path of Devoted Magistry
+is(0, 1254400);						-- Path of the Windrunners
+is(0, 1254551);						-- Path of Dark Dereliction
+is(0, 1254555);						-- Path of Unyielding Blight
+is(0, 1254557);						-- Path of the Crowning Pinnacle
+iq(262963, 93869);					-- Pious Memorial
+iq(262951, 93859);					-- Sin'dorei Gravestone
+ihqt(257600, 92374);				-- Skill Issue: Enchanting
+ihqt(257599, 93222);				-- Skill Issue: Jewelcrafting
+ihqt(257601, 93201);				-- Skill Issue: Tailoring
+ihqt(258410, 93411);				-- Traditions of the Haranir: Herbalism
+ihqt(258411, 93412);				-- Traditions of the Haranir: Inscription
+iq(264895, 87421, HUNTER);			-- Trials of the Florafaun Hunter
+ihqt(250922, 92371);				-- Whisper of the Loa: Leatherworking
+ihqt(250924, 92372);				-- Whisper of the Loa: Mining
+ihqt(250923, 92373);				-- Whisper of the Loa: Skinning
 
 ------------
 -- UNUSED --

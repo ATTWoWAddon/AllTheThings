@@ -67,6 +67,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(222539),	-- Whispering Stargazer
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.BFA, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					i(238498),	-- [PH] Trophy Coin
+					i(262651),	-- Pointed Spikesnail
+					i(241151),	-- Rootland Crab Lure
+					i(241150),	-- Sunwell Fish Lure
+					i(262650),	-- Writhing Wiggleworm
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
@@ -102,6 +112,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 8.0.1
 				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(272011),	-- Fishing
+				})),
+			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.BFA, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					r(1265721),	-- Finesse
+					-- With SpellID attached
+					i(244818),	-- Recipe: Rootland Crab Lure
+					i(258511),	-- Recipe: Sunwell Fish Lure
 				})),
 			}),
 		}),

@@ -50,12 +50,12 @@ local RaceDB = {
 	["Blood Elf"] = BLOODELF,
 	["Draenei"] = DRAENEI,
 	["Worgen"] = WORGEN,
-	["Pandaren"] = { -- NOTE: Faction Group dictates this.
+	["Pandaren"] = {	-- NOTE: Faction Group dictates this.
 		["Neutral"] = PANDAREN_NEUTRAL,
 		["Alliance"] = PANDAREN_ALLIANCE,
 		["Horde"] = PANDAREN_HORDE,
 	},
-	["Dracthyr"] = { -- NOTE: Faction Group dictates this.
+	["Dracthyr"] = {	-- NOTE: Faction Group dictates this.
 		["Alliance"] = DRACTHYR_ALLIANCE,
 		["Horde"] = DRACTHYR_HORDE,
 	},
@@ -282,6 +282,18 @@ for i,mapID in ipairs({
 
 	-- #if AFTER 11.2.0
 	2398,	-- K'aresh
+	-- #endif
+
+	-- #if AFTER 11.2.7
+	2401,	-- Alliance Housing District
+	2402,	-- Horde Housing District
+	-- #endif
+
+	-- #if AFTER MID
+	2481,	-- Eastern Kingdoms
+	2480,	-- Harandar
+	2479,	-- Voidstorm
+	2540,	-- Sunkiller Sanctum
 	-- #endif
 })
 do table.insert(FlightPathMapIDs, mapID); end

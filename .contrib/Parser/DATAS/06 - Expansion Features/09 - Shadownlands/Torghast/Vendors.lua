@@ -1,7 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local PHANTASMA = 1728;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	m(TORGHAST, {
 		n(VENDORS, {
@@ -113,6 +115,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					i(186636),	-- Cage of Mawrats
 					i(186678),	-- Mawforged Weapons Cache
 					i(186679),	-- Scroll of Domination
+					-- Misc
+					i(170540),	-- Ravenous Anima Cell
 				},
 			})),
 		}),

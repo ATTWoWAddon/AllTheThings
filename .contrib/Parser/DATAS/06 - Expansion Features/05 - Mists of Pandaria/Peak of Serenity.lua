@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 PEAK_OF_SERENITY = createHeader({
 	readable = "Peak of Serenity",
 	icon = 606547,
@@ -8,6 +9,7 @@ PEAK_OF_SERENITY = createHeader({
 		en = [[~C_Map.GetAreaInfo(6081)]],
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 	n(PEAK_OF_SERENITY, {
 		["lore"] = "The Peak of Serenity is a hidden monastery and sanctuary located high in the north-central reaches of Pandaria's Kun-Lai Summit. It served primarily as a training ground and place of refuge for monks, and was easily accessible to them through Zen Pilgrimage. In this way, it served a very similar function for monks as Moonglade did for druids and Acherus: The Ebon Hold did for death knights.",

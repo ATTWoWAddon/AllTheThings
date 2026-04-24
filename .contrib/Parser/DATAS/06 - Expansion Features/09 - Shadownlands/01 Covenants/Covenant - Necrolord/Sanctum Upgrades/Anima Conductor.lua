@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local GRATEFUL_CURRENCY = currency(GRATEFUL);
 local AMALGAMTED_FORWORNS_JOURNAL = i(184298);
 local TEMPERED_BONEPLASTE_WAISTGUARD = i(184291);
@@ -65,15 +66,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["isDaily"] = true,
 									["coord"] = { 38.0, 65.6, MALDRAXXUS },
 									["groups"] = {
-										o(1278968766, {	-- Rune -- TODO: proper objectID?
+										o(1278968766, {	-- Rune	-- TODO: proper objectID?
 											["questID"] = 61648,
 											["isDaily"] = true,
 										}),
-										o(1278968767, {	-- Rune -- TODO: proper objectID?
+										o(1278968767, {	-- Rune	-- TODO: proper objectID?
 											["questID"] = 61649,
 											["isDaily"] = true,
 										}),
-										o(1278968768, {	-- Rune -- TODO: proper objectID?
+										o(1278968768, {	-- Rune	-- TODO: proper objectID?
 											["questID"] = 61650,
 											["isDaily"] = true,
 										}),
@@ -151,13 +152,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							})),
 							n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 								q(61699, {	-- Not Much to Goo On
-									["coord"] = { 66, 66, MALDRAXXUS },
+									["coord"] = { 66.0, 66.0, MALDRAXXUS },
 									["groups"] = {
 										i(177844),	-- Plague Sample (QI!)
 									},
 								}),
 								q(61841, {	-- Not Much to Goo On
-									["coord"] = { 66, 66, MALDRAXXUS },
+									["coord"] = { 66.0, 66.0, MALDRAXXUS },
 								}),
 							})),
 						}),

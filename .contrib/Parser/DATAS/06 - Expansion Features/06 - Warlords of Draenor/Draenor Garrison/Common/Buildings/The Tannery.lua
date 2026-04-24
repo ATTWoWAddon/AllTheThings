@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 		n(BUILDINGS, {
@@ -32,11 +33,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 				}),
 				n(QUESTS, {
 					q(36642, {	-- Your First Leatherworking Work Order
-						["provider"] = { "n", 77383 },	-- Anders Longstitch
+						["qg"] = 77383,	-- Anders Longstitch
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37574, {	-- Your First Leatherworking Work Order
-						["provider"] = { "n", 79834 },	-- Murne Greenhoof
+						["qg"] = 79834,	-- Murne Greenhoof
 						["races"] = HORDE_ONLY,
 					}),
 				}),

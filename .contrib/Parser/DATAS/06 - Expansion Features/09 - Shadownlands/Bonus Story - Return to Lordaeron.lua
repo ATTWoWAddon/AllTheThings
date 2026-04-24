@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } }, {
 	header(HEADERS.Achievement, 15579, {	-- Return to Lordaeron
 		q(65656, {	-- Call to Lordaeron

@@ -16,6 +16,7 @@ local TUSSLETONKS = 2336
 local KUJO = 2339
 local MACHINIST = 2348
 local KING = 2331
+
 ------ EncounterToCRS ------
 local EncounterToCRS = {
 	[GOBBAMAK] = { 150159 },	-- King Gobbamak
@@ -24,7 +25,7 @@ local EncounterToCRS = {
 		150712,	-- Trixie Tazer
 		153755,	-- Naeno Megacrash
 		153756,	-- Mechacycle
-	 },
+	},
 	[HK8] = { 150190 },	-- HK-8 Aerial Oppression Unit
 	[TUSSLETONKS] = {
 		144244,	-- The Platinum Pummeler
@@ -38,6 +39,7 @@ local EncounterToCRS = {
 		144249,	-- Omega Buster
 	},
 }
+
 ------ EncounterToLoot ------
 local EncounterToLoot = {
 	[GOBBAMAK] = {
@@ -118,6 +120,7 @@ local EncounterToLoot = {
 		i(168988),	-- Royal Attendant's Trouser
 	},
 }
+
 --- Azerite Pieces ---
 local AzeriteLoot = {
 	[HK8] = {
@@ -133,6 +136,7 @@ local AzeriteLoot = {
 		i(168987),	-- Shoulderguards of Fraying Sanity
 	},
 }
+
 --- Azewrong Pieces ---
 local AzewrongLoot = {
 	-- [HK8] = {
@@ -145,6 +149,7 @@ local AzewrongLoot = {
 		i(235812),	-- Shoulderguards of Fraying Sanity
 	},
 }
+
 ------ Zone Drops ----------
 local ZoneDropLoot = {
 	i(170212),	-- Recipe: Mecha-Bytes (RECIPE!)
@@ -164,12 +169,14 @@ MECHAGON_JUNKYARD = createHeader({
 		en = "Junkyard",
 		de = "Schrottplatz",
 		es = "Desguace",
+		-- TODO: mx = "",
 		fr = "La casse",
 		it = "Discarica",
+		ko = "고철장",
 		pt = "Ferro-velho",
 		ru = "Свалка",
-		ko = "고철장",
 		cn = "垃圾场",
+		-- TODO: tw = "",
 	},
 });
 MECHAGON_WORKSHOP = createHeader({
@@ -669,7 +676,9 @@ local INSTANCE_GROUPS = {
 		n(MECHAGON_WORKSHOP, {
 			BossOnly(TUSSLETONKS, {
 				ach(13723, {	-- M.C., Hammered
-					i(246479, {["timeline"] = { ADDED_11_2_7 }}),	-- Gnomish T.O.O.L.B.O.X. (DECOR!)
+					i(246479, {	-- Gnomish T.O.O.L.B.O.X. (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				}),
 			}),
 			BossOnly(KUJO, {

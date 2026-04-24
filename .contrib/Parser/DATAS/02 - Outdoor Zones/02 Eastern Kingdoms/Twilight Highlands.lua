@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(TWILIGHT_HIGHLANDS, {
 		["lore"] = "Twilight Highlands is a new zone in Cataclysm. It is currently home of the Wildhammer dwarves and the Dragonmaw Orcs, both whom inhabited Grim Batol in the recent past. Twilight Cultists have also inhabited the area, sensing the presence of the Old Gods nearby, which is explored in the questline related to Consumed by Nightmare. There's also a Ring of Blood-style quest series that rewards a good weapon: Round Three. Fight!",
@@ -334,7 +335,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if ANYCLASSIC
- 			n(PROFESSIONS, {
+			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(208311, {	-- Deepsea Sagefish School
 						i(22739),	-- Tome of Polymorph: Turtle (CI!)
@@ -1198,6 +1199,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(63797),	-- Eye of Despair
 						i(63796),	-- Dark-Eye Ring
+						i(246427, {	-- Dilapidated Wildhammer Well (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						-- #if BEFORE MOP
 						i(63798, {	-- Winged Axe
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -2230,7 +2234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(63765),	-- Cloak of Valorous Direction
 					},
 				}),
-				q(28147, {	-- Purple is Your Color -- aa
+				q(28147, {	-- Purple is Your Color	-- aa
 					["qg"] = 47723,	-- Rotgrum
 					["coord"] = { 36.7, 37.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
@@ -3154,6 +3158,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48368,	-- Grundy MacGraff
 					["coord"] = { 54.2, 16.7, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(246428, {	-- Overgrown Wildhammer Fountain (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				q(28149, {	-- Whispers in the Wind
 					["sourceQuest"] = 28133,	-- Fury Unbound
@@ -3229,6 +3238,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
 					},
 				}),
+				n(253227, {	-- Breana Bitterbrand <Decor Specialist>
+					["coord"] = { 49.6, 29.6, TWILIGHT_HIGHLANDS },
+					["timeline"] = { ADDED_11_2_7 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(246427, {	-- Dilapidated Wildhammer Well (DECOR!)
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(246108, {	-- Embellished Dwarven Tome (DECOR!)
+							["minReputation"] = { FACTION_WILDHAMMER_CLAN, HONORED },	-- Wildhammer Clan, Honored
+							["cost"] = { { "g", 20000000 } },	-- 2,000g
+						}),
+						i(246428, {	-- Overgrown Wildhammer Fountain (DECOR!)
+							["cost"] = { { "g", 15000000 } },	-- 1,500g
+						}),
+						i(246425, {	-- Round Dwarven Table (DECOR!)
+							["minReputation"] = { FACTION_WILDHAMMER_CLAN, FRIENDLY },	-- Wildhammer Clan, Friendly
+							["cost"] = { { "g", 4000000 } },	-- 400g
+						}),
+					},
+				}),
 				n(49605, {	-- Brian Terrel <Bowyer>
 					["coord"] = { 43.8, 57.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -3265,9 +3295,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{	-- Neutral
 						},
 						{	-- Friendly
+							i(246425, {	-- Round Dwarven Table (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = { { "g", 4000000 } },	-- 400g
+							}),
 							i(65908),	-- Tabard of the Wildhammer Clan
 						},
 						{	-- Honored
+							i(246108, {	-- Embellished Dwarven Tome (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = { { "g", 20000000 } },	-- 2,000g
+							}),
 							i(62423),	-- Helm of the Skyborne
 							i(62426),	-- Mantle of Wild Feathers
 							i(62424),	-- Gloves of Aetherial Rumors

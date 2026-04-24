@@ -1,9 +1,13 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
-	n(ARMOR, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	n(ARMOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 		filter(BACK_F, {
+			i(266224),	-- Brittle Cape
+			i(266221),	-- Frayed Shroud
+			i(266223),	-- Stained Drape
+			i(266216),	-- Threadbare Cloak
 		}),
 		filter(CLOTH, {
 			i(258863),	-- Threadbare Armbands
@@ -14,8 +18,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 			i(258857),	-- Threadbare Sash
 			i(258861),	-- Threadbare Slippers
 			i(258862),	-- Threadbare Vestments
-		}),
-		filter(FINGER_F, {
 		}),
 		filter(LEATHER, {
 			i(258878),	-- Frayed Boots
@@ -28,7 +30,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 			i(258872),	-- Frayed Wristwraps
 		}),
 		filter(MAIL, {
-			--poor
 			i(258855),	-- Stained Armguards
 			i(258850),	-- Stained Fistguards
 			i(258848),	-- Stained Girdle
@@ -37,17 +38,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 			i(258849),	-- Stained Headguard
 			i(258854),	-- Stained Pauldrons
 			i(258853),	-- Stained Sabatons
-			--uncommon
-			i(258935),	-- Tarnished Dawnlit Sentinel's Armguards
-			i(258932),	-- Tarnished Dawnlit Sentinel's Chausses
-			i(258931),	-- Tarnished Dawnlit Sentinel's Cover
-			i(258933),	-- Tarnished Dawnlit Sentinel's Epaulets
-			i(258934),	-- Tarnished Dawnlit Sentinel's Girdle
-			i(258930),	-- Tarnished Dawnlit Sentinel's Handguards
-			i(258928),	-- Tarnished Dawnlit Sentinel's Hauberk
-			i(258929),	-- Tarnished Dawnlit Sentinel's Sabatons
-		}),
-		filter(NECK_F, {
 		}),
 		filter(PLATE, {
 			i(258871),	-- Brittle Armplates
@@ -59,34 +49,134 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 			i(258864),	-- Brittle Waistguard
 			i(258870),	-- Brittle Warboots
 		}),
+	})),
+	n(ARMOR, {
+		filter(BACK_F, {
+			i(266210),	-- Tarnished Dawnlit Commander's Cape
+			i(266208),	-- Tarnished Dawnlit Corsair's Shroud
+			i(266209),	-- Tarnished Dawnlit Sentinel's Drape
+			i(266207),	-- Tarnished Dawnlit Spellbinder's Cloak
+		}),
+		filter(CLOTH, {
+			i(258919),	-- Tarnished Dawnlit Spellbinder's Bands
+			i(258915),	-- Tarnished Dawnlit Spellbinder's Crown
+			i(258914),	-- Tarnished Dawnlit Spellbinder's Mitts
+			i(258917),	-- Tarnished Dawnlit Spellbinder's Pads
+			i(258912),	-- Tarnished Dawnlit Spellbinder's Robe
+			i(258918),	-- Tarnished Dawnlit Spellbinder's Sash
+			i(258913),	-- Tarnished Dawnlit Spellbinder's Slippers
+			i(258916),	-- Tarnished Dawnlit Spellbinder's Trousers
+		}),
+		filter(FINGER_F, {
+			i(258908),	-- Tarnished Dawnlit Band
+			i(258910),	-- Tarnished Dawnlit Loop
+			i(258909),	-- Tarnished Dawnlit Signet
+		}),
+		filter(LEATHER, {
+			i(258926),	-- Tarnished Dawnlit Corsair's Belt
+			i(258921),	-- Tarnished Dawnlit Corsair's Boots
+			i(258927),	-- Tarnished Dawnlit Corsair's Bracers
+			i(258924),	-- Tarnished Dawnlit Corsair's Breeches
+			i(258922),	-- Tarnished Dawnlit Corsair's Gloves
+			i(258923),	-- Tarnished Dawnlit Corsair's Hood
+			i(258925),	-- Tarnished Dawnlit Corsair's Spaulders
+			i(258920),	-- Tarnished Dawnlit Corsair's Tunic
+		}),
+		filter(MAIL, {
+			i(258935),	-- Tarnished Dawnlit Sentinel's Armguards
+			i(258932),	-- Tarnished Dawnlit Sentinel's Chausses
+			i(258931),	-- Tarnished Dawnlit Sentinel's Cover
+			i(258933),	-- Tarnished Dawnlit Sentinel's Epaulets
+			i(258934),	-- Tarnished Dawnlit Sentinel's Girdle
+			i(258930),	-- Tarnished Dawnlit Sentinel's Handguards
+			i(258928),	-- Tarnished Dawnlit Sentinel's Hauberk
+			i(258929),	-- Tarnished Dawnlit Sentinel's Sabatons
+		}),
+		filter(NECK_F, {
+			i(258911),	-- Tarnished Dawnlit Pendant
+		}),
+		filter(PLATE, {
+			i(258943),	-- Tarnished Dawnlit Commander's Armplates
+			i(258936),	-- Tarnished Dawnlit Commander's Breastplate
+			i(258938),	-- Tarnished Dawnlit Commander's Gauntlets
+			i(258942),	-- Tarnished Dawnlit Commander's Greatbelt
+			i(258940),	-- Tarnished Dawnlit Commander's Greaves
+			i(258939),	-- Tarnished Dawnlit Commander's Helmet
+			i(258941),	-- Tarnished Dawnlit Commander's Mantle
+			i(258937),	-- Tarnished Dawnlit Commander's Warboots
+		}),
 	}),
 	n(WEAPONS, {
-		--uncommon
-		--i(258944),	-- Tarnished Dawnlit Cleaver
-		--i(258945),	-- Tarnished Dawnlit Carver
-		--i(258946),	-- Tarnished Dawnlit Chopper
-		--i(258947),	-- Tarnished Dawnlit Dagger
-		--i(258948),	-- Tarnished Dawnlit Knife
-		--i(258949),	-- Tarnished Dawnlit Mace
-		--i(258950),	-- Tarnished Dawnlit Warmace
-		--i(258951),	-- Tarnished Dawnlit Shortsword
-		--i(258952),	-- Tarnished Dawnlit Longsword
-		--i(258953),	-- Tarnished Dawnlit Longbow
+		i(258960),	-- Tarnished Dawnlit Beacon
+		i(258959),	-- Tarnished Dawnlit Blade
+		i(258945),	-- Tarnished Dawnlit Carver
+		i(258946),	-- Tarnished Dawnlit Chopper
+		i(258944),	-- Tarnished Dawnlit Cleaver
+		i(258947),	-- Tarnished Dawnlit Dagger
+		i(258961),	-- Tarnished Dawnlit Defender
+		i(258958),	-- Tarnished Dawnlit Greatsword
+		i(258955),	-- Tarnished Dawnlit Halberd
+		i(258948),	-- Tarnished Dawnlit Knife
+		i(258953),	-- Tarnished Dawnlit Longbow
+		i(258952),	-- Tarnished Dawnlit Longsword
+		i(258949),	-- Tarnished Dawnlit Mace
 		i(258954),	-- Tarnished Dawnlit Poleaxe
-		--i(258955),	-- Tarnished Dawnlit Halberd
-		--i(258956),	-- Tarnished Dawnlit Scepter
-		--i(258957),	-- Tarnished Dawnlit Staff
-		--i(258958),	-- Tarnished Dawnlit Greatsword
-		--i(258959),	-- Tarnished Dawnlit Blade
-		--i(258960),	-- Tarnished Dawnlit Beacon
-		--i(258961),	-- Tarnished Dawnlit Defender
-		--i(258962),	-- Tarnished Dawnlit Warglaive
+		i(258956),	-- Tarnished Dawnlit Scepter
+		i(258951),	-- Tarnished Dawnlit Shortsword
+		i(258957),	-- Tarnished Dawnlit Staff
+		i(258962),	-- Tarnished Dawnlit Warglaive
+		i(258950),	-- Tarnished Dawnlit Warmace
 	}),
 	filter(MISC, {
+		i(264475),	-- Umbral Tin Lockbox
 	}),
 	filter(REAGENTS, {
+		i(236963),	-- Bright Linen+
+		i(236965),	-- Bright Linen++
+		i(237015),	-- Sunfire Silk+
+		i(237016),	-- Sunfire Silk++
+		i(237017),	-- Arcanoweave+
+		i(237018),	-- Arcanoweave++
+		i(251285),	-- Petrified Root (TODO: probably delves only)
+		i(242640),	-- Plant Protein
 		i(242639),	-- Practically Pork
+		i(236949),	-- Mote of Light
+		i(236950),	-- Mote of Primal Energy
+		i(236952),	-- Mote of Pure Void
+		i(236951),	-- Mote of Wild Magic
+		i(251923),	-- Thalassian Essence of the Faire
+		--Darkmoon cards (doesn't require Inscription on character)
+		i(245856),	-- Ace of Blood
+		i(245857),	-- Two of Blood
+		i(245858),	-- Three of Blood
+		i(245859),	-- Four of Blood
+		i(245860),	-- Five of Blood
+		i(245861),	-- Six of Blood
+		i(245862),	-- Seven of Blood
+		i(245863),	-- Eight of Blood
+		i(245830),	-- Ace of Hunt
+		i(245831),	-- Two of Hunt
+		i(245832),	-- Three of Hunt
+		i(245833),	-- Four of Hunt
+		i(245834),	-- Five of Hunt
+		i(245835),	-- Six of Hunt
+		i(245836),	-- Seven of Hunt
+		i(245837),	-- Eight of Hunt
+		i(245847),	-- Ace of Rot
+		i(245848),	-- Two of Rot
+		i(245849),	-- Three of Rot
+		i(245850),	-- Four of Rot
+		i(245851),	-- Five of Rot
+		i(245852),	-- Six of Rot
+		i(245853),	-- Seven of Rot
+		i(245854),	-- Eight of Rot
+		i(245838),	-- Ace of Void
+		i(245839),	-- Two of Void
+		i(245840),	-- Three of Void
+		i(245841),	-- Four of Void
+		i(245842),	-- Five of Void
+		i(245843),	-- Six of Void
+		i(245844),	-- Seven of Void
+		i(245845),	-- Eight of Void
 	}),
-	filter(RECIPES, {
-	}),
-}));
+})));

@@ -19,16 +19,11 @@ root(ROOTS.Zones, {
 					ach(10061, {	-- Hellbane
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(10069),		-- I Came, I Clawed, I Conquered
-					ach(10070, {	-- Jungle Stalker
-						["sym"] = {{ "achievement_criteria" }},
-						["groups"] = {
-							ach(10259),		-- Jungle Hunter
-						},
-					}),
-					ach(10262, {	-- Jungle Treasure Master
-						ach(10261),		-- Jungle Treasure Hunter
-					}),
+					ach(10069),	-- I Came, I Clawed, I Conquered
+					achpart(10259, 10070),	-- Jungle Hunter / Jungle Stalker
+					ach(10070),	-- Jungle Stalker
+					achpart(10261, 10262),	-- Jungle Treasure Hunter / Jungle Treasure Master
+					ach(10262),	-- Jungle Treasure Master
 					ach(10334, {	-- Predator
 						title(59),	-- Predator
 					}),
@@ -44,9 +39,7 @@ root(ROOTS.Zones, {
 							10071,	-- The Legion Will NOT Conquer All
 						}},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							title(318),	-- of the Jungle
-						},
+						["groups"] = { title(318) },	-- of the Jungle
 					}),
 					ach(10265, {	-- Rumble in the Jungle (H)
 						["sym"] = {{"meta_achievement",
@@ -60,9 +53,7 @@ root(ROOTS.Zones, {
 							10071,	-- The Legion Will NOT Conquer All
 						}},
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							title(318),	-- of the Jungle
-						},
+						["groups"] = { title(318) },	-- of the Jungle
 					}),
 					ach(10350, {	-- Tanaan Diplomat (Alliance)
 						["races"] = ALLIANCE_ONLY,
@@ -95,129 +86,99 @@ root(ROOTS.Zones, {
 								["questID"] = 39157,
 								["isDaily"] = true,
 								["coord"] = { 26.0, 31.6, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94637, {	-- Corrupted Thundertail
 								["questID"] = 39160,
 								["isDaily"] = true,
 								["coord"] = { 53.0, 65.2, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94638, {	-- Chaos Pup
 								["questID"] = 39161,
 								["isDaily"] = true,
 								["coord"] = { 25.0, 76.2, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94639, {	-- Cursed Spirit
 								["questID"] = 39162,
 								["isDaily"] = true,
 								["coord"] = { 31.4, 38.0, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94640, {	-- Felfly
 								["questID"] = 39163,
 								["isDaily"] = true,
 								["coord"] = { 55.8, 80.8, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94641, {	-- Tainted Maulclaw
 								["questID"] = 39164,
 								["isDaily"] = true,
 								["coord"] = { 43.4, 84.6, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94642, {	-- Direflame
 								["questID"] = 39165,
 								["isDaily"] = true,
 								["coord"] = { 57.8, 37.2, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94643, {	-- Mirecroak
 								["questID"] = 39166,
 								["isDaily"] = true,
 								["coord"] = { 42.2, 71.6, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94644, {	-- Dark Gazer
 								["questID"] = 39167,
 								["isDaily"] = true,
 								["coord"] = { 54.0, 29.8, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94645, {	-- Bleakclaw
 								["questID"] = 39168,
 								["isDaily"] = true,
 								["coord"] = { 15.8, 44.6, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94646, {	-- Vile Blood of Draenor
 								["questID"] = 39169,
 								["isDaily"] = true,
 								["coord"] = { 44.0, 45.8, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94647, {	-- Dreadwalker
 								["questID"] = 39170,
 								["isDaily"] = true,
 								["coord"] = { 47.2, 52.6, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94648, {	-- Netherfist
 								["questID"] = 39171,
 								["isDaily"] = true,
 								["coord"] = { 48.4, 35.6, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94649, {	-- Skrillix
 								["questID"] = 39172,
 								["isDaily"] = true,
 								["coord"] = { 48.4, 31.2, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 							n(94650, {	-- Defiled Earth
 								["questID"] = 39173,
 								["isDaily"] = true,
 								["coord"] = { 75.4, 37.4, TANAAN_JUNGLE },
-								["groups"] = {
-									i(127751),	-- Fel-Touched Pet Supplies
-								},
+								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 						}),
-						pet(1468),	--  Bloodbeak (PET!)
-						pet(1586),	--  Cerulean Moth (PET!)
-						pet(1581, {	--  Fen Crab (PET!)
+						pet(1468),	-- Bloodbeak (PET!)
+						pet(1586),	-- Cerulean Moth (PET!)
+						pet(1581, {	-- Fen Crab (PET!)
 							["description"] = "Found along the southern coast below Fang'rila.",
 						}),
-						pet(1591),	--  Violet Firefly (PET!)
+						pet(1591),	-- Violet Firefly (PET!)
 					},
 				}),
 				explorationHeader({
@@ -259,32 +220,41 @@ root(ROOTS.Zones, {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1643, {	-- Aktar's Post, Tanaan Jungle
-						["coord"] = { 26.0, 38.8, TANAAN_JUNGLE },
+						["cr"] = 90560,	-- Skytalon Kariz
+						["coord"] = { 26.1, 38.9, TANAAN_JUNGLE },
 					}),
 					fp(1620, {	-- Lion's Watch, Tanaan Jungle
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						["cr"] = 90960,	-- Skyguard Thann
 						["coord"] = { 57.4, 58.8, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(1647, {	-- Malo's Lookout, Tanaan Jungle
+						["cr"] = 92808,	-- Rocketmaster Malo
 						["coord"] = { 43.4, 42.2, TANAAN_JUNGLE },
 					}),
 					fp(1648, {	-- Sha'naari Refuge, Tanaan Jungle
-						["coord"] = { 29.6, 63.0, TANAAN_JUNGLE },
+						["cr"] = 92809,	-- Rangari Sha'ana
+						["coord"] = { 29.6, 63.1, TANAAN_JUNGLE },
 					}),
 					fp(1644, {	-- The Iron Front, Tanaan Jungle
-						["coord"] = { 9.20, 55.8, TANAAN_JUNGLE },
+						["cr"] = 90552,	-- Nasher
+						["coord"] = { 9.3, 55.9, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 					}),
 					fp(1645, {	-- The Iron Front, Tanaan Jungle
+						["cr"] = 91940,	-- Skyguard Blann
 						["coord"] = { 10.0, 53.0, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(1646, {	-- Vault of the Earth, Tanaan Jungle
+						["cr"] = 90562,	-- Urtol Skyshear
 						["coord"] = { 47.0, 70.2, TANAAN_JUNGLE },
 					}),
 					fp(1621, {	-- Vol'mar, Tanaan Jungle
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						["cr"] = 90550,	-- Gargash the Diver
 						["coord"] = { 60.4, 46.4, TANAAN_JUNGLE },
-						["creatureID"] = 90550,	-- Gargash the Diver
 						["races"] = HORDE_ONLY,
 					}),
 				}),
@@ -298,13 +268,13 @@ root(ROOTS.Zones, {
 							["isEnableTypeRecipe"] = true,
 						},{
 							r(187634, {	-- Immaculate Critical Strike Taladite
-								["cost"] = {{"i", 127771, 1}},	-- Gemcutter Module: Critical Strike
+								["cost"] = { { "i", 127771, 1 } },	-- Gemcutter Module: Critical Strike
 							}),
 							r(187635, {	-- Immaculate Haste Taladite
-								["cost"] = {{"i", 127772, 1}},	-- Gemcutter Module: Haste
+								["cost"] = { { "i", 127772, 1 } },	-- Gemcutter Module: Haste
 							}),
 							r(187636, {	-- Immaculate Mastery Taladite
-								["cost"] = {{ "i", 127773, 1}},	-- Gemcutter Module: Mastery
+								["cost"] = { { "i", 127773, 1 } },	-- Gemcutter Module: Mastery
 								["timeline"] = {
 									ADDED_6_2_0, REMOVED_7_0_3_LAUNCH,
 									ADDED_7_1_5, REMOVED_8_0_1_LAUNCH,
@@ -313,159 +283,159 @@ root(ROOTS.Zones, {
 								},
 							}),
 							r(187637, {	-- Immaculate Multistrike Taladite
-								["cost"] = {{ "i", 127774, 1}},	-- Gemcutter Module: Multistrike
+								["cost"] = { { "i", 127774, 1 } },	-- Gemcutter Module: Multistrike
 								["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },
 							}),
 							r(187640, {	-- Immaculate Stamina Taladite
-								["cost"] = {{"i", 127775, 1}},	-- Gemcutter Module: Stamina
+								["cost"] = { { "i", 127775, 1 } },	-- Gemcutter Module: Stamina
 							}),
 						}),
 					}),
 				}),
 				n(QUESTS, {
 					q(39568, {	-- A Little Wetwork [A]
-						["provider"] = { "n", 90974 },	-- Vindicator Krethos
+						["qg"] = 90974,	-- Vindicator Krethos
 						["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39510, {	-- A Little Wetwork [H]
-						["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
+						["qg"] = 96014,	-- Shadow Hunter Denjai
 						["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
-					q(38578, {	-- A Message of Terrible Import -- aa
-						["provider"] = { "n", 90584 },	-- Goi'orsh
+					q(38578, {	-- A Message of Terrible Import	-- aa
+						["qg"] = 90584,	-- Goi'orsh
 						["coord"] = { 44.2, 41.5, TANAAN_JUNGLE },
 					}),
 					q(39511, {	-- Blood of Fallen Brothers
-						["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
+						["qg"] = 96014,	-- Shadow Hunter Denjai
 						["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39567, {	-- Bloodied Blades of Zeth'Gol [A]
-						["provider"] = { "n", 90974 },	-- Vindicator Krethos
+						["qg"] = 90974,	-- Vindicator Krethos
 						["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39509, {	-- Bloodied Blades of Zeth'Gol [H]
-						["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
+						["qg"] = 96014,	-- Shadow Hunter Denjai
 						["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39313, {	-- Bring the Reinforcements [A]
 						["sourceQuest"] = 38445,	-- The Assault Base
-						["provider"] = { "n", 90963 },	-- Angar Steelbellow
+						["qg"] = 90963,	-- Angar Steelbellow
 						["coord"] = { 58.1, 58.6, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(39315, {	-- Bring the Reinforcements [H]
 						["sourceQuest"] = 37935,	-- The Assault Base
-						["provider"] = { "n", 90993 },	-- Fraggs
+						["qg"] = 90993,	-- Fraggs
 						["coord"] = { 59.9, 47.5, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 					}),
 					q(39569, {	-- Breaking Their Fel Bonds
-						["provider"] = { "n", 90974 },	-- Vindicator Krethos
+						["qg"] = 90974,	-- Vindicator Krethos
 						["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39586, {	-- Bringing Down the Iron Horde [A]
-						["provider"] = { "n", 96147 },	-- Parvink
+						["qg"] = 96147,	-- Parvink
 						["coord"] = { 57.8, 59.8, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39532, {	-- Bringing Down the Iron Horde [H]
-						["provider"] = { "n", 93396 },	-- Nimi Brightcastle
+						["qg"] = 93396,	-- Nimi Brightcastle
 						["coord"] = { 59.6, 45.9, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(38446, {	-- Commander in the Field! [A]
 						["sourceQuest"] = 38581,	-- The Battle for the West
-						["provider"] = { "n", 91935 },	-- Exarch Maladaar
+						["qg"] = 91935,	-- Exarch Maladaar
 						["coord"] = { 9.8, 53.5, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(38001, {	-- Commander in the Field! [H]
 						["sourceQuest"] = 38577,	-- The Battle for the West
-						["provider"] = { "n", 90553 },	-- Durotan
+						["qg"] = 90553,	-- Durotan
 						["coord"] = { 9.6, 56.2, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 					}),
 					q(39581, {	-- Demonslayer of Tanaan [A]
-						["provider"] = { "n", 96147 },	-- Parvink
+						["qg"] = 96147,	-- Parvink
 						["coord"] = { 57.8, 59.8, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39519, {	-- Demonslayer of Tanaan [H]
-						["provider"] = { "n", 93396 },	-- Nimi Brightcastle
+						["qg"] = 93396,	-- Nimi Brightcastle
 						["coord"] = { 59.6, 45.9, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39571, {	-- Disarming Sha'naar [A]
-						["provider"] = { "n", 90974 },	-- Vindicator Krethos
+						["qg"] = 90974,	-- Vindicator Krethos
 						["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39513, {	-- Disarming Sha'naar [H]
-						["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
+						["qg"] = 96014,	-- Shadow Hunter Denjai
 						["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39573, {	-- Harnessing Their Power [A]
-						["provider"] = { "n", 90974 },	-- Vindicator Krethos
+						["qg"] = 90974,	-- Vindicator Krethos
 						["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39514, {	-- Harnessing Their Power [H]
-						["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
+						["qg"] = 96014,	-- Shadow Hunter Denjai
 						["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(38444, {	-- In, Through, and Beyond! [A]
 						["sourceQuest"] = 38436,	-- Obstacle Course
-						["provider"] = { "n", 91923 },	-- Exarch Naielle
+						["qg"] = 91923,	-- Exarch Naielle
 						["coord"] = { 69.4, 52.9, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37934, {	-- In, Through, and Beyond! [H]
 						["sourceQuest"] = 37890,	-- Obstacle Course
-						["provider"] = { "n", 90238 },	-- Shadow Hunter Mutumba
+						["qg"] = 90238,	-- Shadow Hunter Mutumba
 						["coord"] = { 69.5, 54.2, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 					}),
 					q(38599, {	-- Infrastructure Improvements
-						["provider"] = { "n", 90991 },	-- Lil' Trix
+						["qg"] = 90991,	-- Lil' Trix
 						["coord"] = { 59.8, 47.5, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 					}),
 					q(39176, {	-- Mastery Of Taladite
-						["provider"] = { "n", 94686 },	-- Sun-Sage Chakkis
+						["qg"] = 94686,	-- Sun-Sage Chakkis
 						["coord"] = { 25.8, 39.8, TANAAN_JUNGLE },
 						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(38436, {	-- Obstacle Course [A]
 						["sourceQuest"] = 38435,	-- The Invasion of Tanaan
-						["provider"] = { "n", 91913 },	-- Exarch Yrel
+						["qg"] = 91913,	-- Exarch Yrel
 						["coord"] = { 73.4, 71.1, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37890, {	-- Obstacle Course [H]
 						["sourceQuest"] = 37889,	-- The Invasion of Tanaan
-						["provider"] = { "n", 89822 },	-- Draka
+						["qg"] = 89822,	-- Draka
 						["coord"] = { 73.4, 71.2, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 					}),
@@ -474,27 +444,25 @@ root(ROOTS.Zones, {
 							39394,	-- The Cipher of Damnation (A)
 							38463,	-- The Cipher of Damnation (H)
 						},
-						["provider"] = { "n", 92338 },	-- Oronok Torn-heart
+						["qg"] = 92338,	-- Oronok Torn-heart
 						["coord"] = { 62.8, 27.8, TANAAN_JUNGLE },
-						["groups"] = {
-							follower(468),	-- Oronok Torn-heart
-						},
+						["groups"] = { follower(468) },	-- Oronok Torn-heart
 					}),
 					q(39574, {	-- Pressing the Attack [A]
-						["provider"] = { "n", 90974 },	-- Vindicator Krethos
+						["qg"] = 90974,	-- Vindicator Krethos
 						["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39526, {	-- Pressing the Attack [H]
-						["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
+						["qg"] = 96014,	-- Shadow Hunter Denjai
 						["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39177, {	-- Ruined Construct
 						["sourceQuest"] = 39176,	-- Mastery of Taladite
-						["provider"] = { "n", 94605 },	-- Apexis Gemcutter
+						["qg"] = 94605,	-- Apexis Gemcutter
 						["coord"] = { 17.5, 45.1, TANAAN_JUNGLE },
 						["requireSkill"] = JEWELCRAFTING,
 						["groups"] = {
@@ -504,31 +472,31 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(39565, {	-- Rumble in the Jungle
-						["provider"] = { "n", 92805 },	-- Z'tenga the Walker
+						["qg"] = 92805,	-- Z'tenga the Walker
 						["coord"] = { 55.2, 74.7, TANAAN_JUNGLE },
 						["isWeekly"] = true,
 					}),
 					q(39570, {	-- Secrets of the Shadow Council [A]
-						["provider"] = { "n", 90974 },	-- Vindicator Krethos
+						["qg"] = 90974,	-- Vindicator Krethos
 						["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39512, {	-- Secrets of the Shadow Council [H]
-						["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
+						["qg"] = 96014,	-- Shadow Hunter Denjai
 						["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(38603, {	-- Setting the Signal
 						["sourceQuest"] = 38445,	-- The Assault Base
-						["provider"] = { "n", 92545 },	-- Norman Powerspark
+						["qg"] = 92545,	-- Norman Powerspark
 						["coord"] = { 58.1, 58.5, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(39422, {	-- Shipyard Report [A]
 						["sourceQuest"] = 38445,	-- The Assault Base
-						["provider"] = { "n", 90309 },	-- Exarch Yrel
+						["qg"] = 90309,	-- Exarch Yrel
 						["coord"] = { 58.4, 60.3, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -536,7 +504,7 @@ root(ROOTS.Zones, {
 					}),
 					q(39423, {	-- Shipyard Report [H]
 						["sourceQuest"] = 37935,	-- The Assault Base
-						["provider"] = { "n", 90481 },	-- Draka
+						["qg"] = 90481,	-- Draka
 						["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -544,36 +512,36 @@ root(ROOTS.Zones, {
 					}),
 					q(38445, {	-- The Assault Base [A]
 						["sourceQuest"] = 38444,	-- In, Through, and Beyond!
-						["provider"] = { "n", 91923 },	-- Exarch Naielle
+						["qg"] = 91923,	-- Exarch Naielle
 						["coord"] = { 62.4, 54.2, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37935, {	-- The Assault Base [H]
 						["sourceQuest"] = 37934,	-- In, Through, and Beyond!
-						["provider"] = { "n", 90238 },	-- Shadow Hunter Mutumba
+						["qg"] = 90238,	-- Shadow Hunter Mutumba
 						["coord"] = { 62.6, 50.9, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 					}),
 					q(38581, {	-- The Battle for the West [A]
 						["sourceQuest"] = 38445,	-- The Assault Base
-						["provider"] = { "n", 90309 },	-- Exarch Yrel
+						["qg"] = 90309,	-- Exarch Yrel
 						["coord"] = { 58.4, 60.3, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(38577, {	-- The Battle for the West [H]
 						["sourceQuest"] = 37935,	-- The Assault Base
-						["provider"] = { "n", 90481 },	-- Draka
+						["qg"] = 90481,	-- Draka
 						["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 					}),
 					q(39582, {	-- Tooth and Claw [A]
-						["provider"] = { "n", 96147 },	-- Parvink
+						["qg"] = 96147,	-- Parvink
 						["coord"] = { 57.8, 59.8, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39529, {	-- Tooth and Claw [H]
-						["provider"] = { "n", 93396 },	-- Nimi Brightcastle
+						["qg"] = 93396,	-- Nimi Brightcastle
 						["coord"] = { 59.6, 45.9, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -587,7 +555,7 @@ root(ROOTS.Zones, {
 							["sourceQuest"] = 37935,	-- The Assault Base
 							["coord"] = { 60.4, 46.7, TANAAN_JUNGLE },
 						},
-						["provider"] = { "n", 95424 },	-- Dawn-Seeker Krisek
+						["qg"] = 95424,	-- Dawn-Seeker Krisek
 					}),
 					q(39433, {	-- Unseen Influence
 						["allianceQuestData"] = {
@@ -597,7 +565,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.4, 46.6, TANAAN_JUNGLE },
 						},
 						["sourceQuest"] = 39432,	-- Unknowable Power
-						["provider"] = { "n", 95424 },	-- Dawn-Seeker Krisek
+						["qg"] = 95424,	-- Dawn-Seeker Krisek
 						["isDaily"] = true,
 					}),
 					q(38996, {	-- Your Orders, General? (A)
@@ -780,12 +748,12 @@ root(ROOTS.Zones, {
 							["isDaily"] = true,
 						}),
 						q(38866, {	-- Battle At The Iron Front (A)
-							--["sourceQuest"] = 38445,	-- The Assault Base (A)
+							-- ["sourceQuest"] = 38445,	-- The Assault Base (A)
 							["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(38865, {	-- Battle At The Iron Front (H)
-							--["sourceQuest"] = 37935,	-- The Assault Base (H)
+							-- ["sourceQuest"] = 37935,	-- The Assault Base (H)
 							["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
 							["races"] = HORDE_ONLY,
 						}),
@@ -810,13 +778,13 @@ root(ROOTS.Zones, {
 							["isDaily"] = true,
 						}),
 						q(39443, {	-- Battle At The Iron Front (A)
-							--["sourceQuest"] = 38445,	-- The Assault Base (A)
+							-- ["sourceQuest"] = 38445,	-- The Assault Base (A)
 							["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(39444, {	-- Battle At The Iron Front (H)
-							--["sourceQuest"] = 37935,	-- The Assault Base (H)
+							-- ["sourceQuest"] = 37935,	-- The Assault Base (H)
 							["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -852,13 +820,13 @@ root(ROOTS.Zones, {
 							["isDaily"] = true,
 						}),
 						q(39441, {	-- Bleeding the Bleeding Hollow (A)
-							--["sourceQuest"] = 38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+							-- ["sourceQuest"] = 38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow
 							["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(39442, {	-- Bleeding the Bleeding Hollow (H)
-							--["sourceQuest"] = 38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+							-- ["sourceQuest"] = 38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow
 							["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -877,9 +845,7 @@ root(ROOTS.Zones, {
 						["questID"] = 38430,
 						["isDaily"] = true,
 						["coord"] = { 52.6, 40.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127326),	-- Fel Destroyer Crossbow
-						},
+						["groups"] = { i(127326) },	-- Fel Destroyer Crossbow
 					}),
 					n(92552, {	-- Belgork
 						["questID"] = 38609,
@@ -896,9 +862,7 @@ root(ROOTS.Zones, {
 						["questID"] = 38262,
 						["isDaily"] = true,
 						["coord"] = { 23.6, 52.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127307),	-- Battle-Scuffed Spaulders
-						},
+						["groups"] = { i(127307) },	-- Battle-Scuffed Spaulders
 					}),
 					n(92657, {	-- Bleeding Hollow Horror
 						["questID"] = 38696,
@@ -907,9 +871,7 @@ root(ROOTS.Zones, {
 							{ 50.8, 74.2, TANAAN_JUNGLE },	-- Bleeding Hollow Horror
 							{ 44.6, 77.5, TANAAN_JUNGLE },	-- Cave Entrance
 						},
-						["groups"] = {
-							i(127654),	-- Burning Agony
-						},
+						["groups"] = { i(127654) },	-- Burning Agony
 					}),
 					n(90936, {	-- Bloodhunter Zulk
 						["questID"] = 38266,
@@ -918,9 +880,7 @@ root(ROOTS.Zones, {
 							{ 24.6, 50.0, TANAAN_JUNGLE },
 							{ 21.0, 53.0, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127303),	-- Zulk's Sneaky Slippers
-						},
+						["groups"] = { i(127303) },	-- Zulk's Sneaky Slippers
 					}),
 					n(91093, {	-- Bramblefell
 						["questID"] = 38209,
@@ -929,25 +889,19 @@ root(ROOTS.Zones, {
 							{ 41.0, 68.6, TANAAN_JUNGLE },
 							{ 39.2, 68.8, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127652),	-- Felflame Campfire (TOY!)
-						},
+						["groups"] = { i(127652) },	-- Felflame Campfire (TOY!)
 					}),
 					n(92429, {	-- Broodlord Ixkor
 						["questID"] = 38589,
 						["isDaily"] = true,
 						["coord"] = { 57.6, 67.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127349),	-- Silver Chitin Ring
-						},
+						["groups"] = { i(127349) },	-- Silver Chitin Ring
 					}),
 					n(93264, {	-- Captain Grok'mar
 						["questID"] = 38820,
 						["isDaily"] = true,
 						["coord"] = { 48.6, 57.4, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127664),	-- Grokmar's Greaves of Fortification
-						},
+						["groups"] = { i(127664) },	-- Grokmar's Greaves of Fortification
 					}),
 					n(93076, {	-- Captain Ironbeard <The True Scourge of the Iron Seas>
 						["questID"] = 38756,
@@ -967,11 +921,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.6, 68.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 						["groups"] = {
 							q(38428,{	-- A Fel Puppy Of My Own
-								["qgs"] = { 90426 },	-- Abandoned Fel Pup
+								["qg"] = 90426,	-- Abandoned Fel Pup
 								["coord"] = { 31.7, 67.1, TANAAN_JUNGLE },
-								["groups"] = {
-									i(129205),	-- Fel Pup (PET!)
-								},
+								["groups"] = { i(129205) },	-- Fel Pup (PET!)
 							}),
 						},
 					}),
@@ -990,9 +942,7 @@ root(ROOTS.Zones, {
 						["questID"] = 38746,
 						["isDaily"] = true,
 						["coord"] = { 15.0, 53.9, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127319),	-- Krag'goth's Iron Gauntlets
-						},
+						["groups"] = { i(127319) },	-- Krag'goth's Iron Gauntlets
 					}),
 					n(89675, {	-- Commander Org'mok
 						["questID"] = 38749,
@@ -1001,21 +951,19 @@ root(ROOTS.Zones, {
 							{ 51.2, 46.6, TANAAN_JUNGLE },
 							{ 48.0, 44.8, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127313),	-- Org'mok's Riding Chaps
-						},
+						["groups"] = { i(127313) },	-- Org'mok's Riding Chaps
 					}),
 					n(95053, {	-- Deathtalon <Avatar of Iskar>
 						["questID"] = 39287,
 						["isDaily"] = true,
 						["coord"] = { 22.8, 40.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 						["groups"] = {
+							i(128315),	-- Medallion of thee Legion
 							i(128025, {	-- Rattling Iron Cage
 								i(116669),	-- Armored Razorback (MOUNT!)
 								i(116658),	-- Tundra Icehoof (MOUNT!)
 								i(116780),	-- Warsong Direfang (MOUNT!)
 							}),
-							i(128315),	-- Medallion of thee Legion
 						},
 					}),
 					n(95056, {	-- Doomroller <Mar'tak's Creation>
@@ -1023,12 +971,12 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 47.0, 52.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 						["groups"] = {
+							i(128315),	-- Medallion of thee Legion
 							i(128025, {	-- Rattling Iron Cage
 								i(116669),	-- Armored Razorback (MOUNT!)
 								i(116658),	-- Tundra Icehoof (MOUNT!)
 								i(116780),	-- Warsong Direfang (MOUNT!)
 							}),
-							i(128315),	-- Medallion of thee Legion
 						},
 					}),
 					n(90887, {	-- Dorg the Bloody
@@ -1039,41 +987,31 @@ root(ROOTS.Zones, {
 							{ 22.8, 48.8, TANAAN_JUNGLE },
 						},
 						["isDaily"] = true,
-						["groups"] = {
-							i(127301),	-- Bloody Aberration Strap
-						},
+						["groups"] = { i(127301) },	-- Bloody Aberration Strap
 					}),
 					n(98283, {	-- Drakum
 						["questID"] = 40105,
 						["isDaily"] = true,
 						["coord"] = { 83.4, 43.6, TANAAN_JUNGLE },
-						["groups"] = {
-							i(108631),	-- Crashin' Thrashin' Roller Controller (TOY!)
-						},
+						["groups"] = { i(108631) },	-- Crashin' Thrashin' Roller Controller (TOY!)
 					}),
 					n(93028, {	-- Driss Vile
 						["questID"] = 38736,
 						["isDaily"] = true,
 						["coord"] = { 20.2, 53.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127331),	-- Double-Scoped Long Rifle
-						},
+						["groups"] = { i(127331) },	-- Double-Scoped Long Rifle
 					}),
 					n(90888, {	-- Drivnul
 						["questID"] = 38264,
 						["isDaily"] = true,
 						["coord"] = { 25.7, 46.1, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127298),	-- Blood-Infused Leggings
-						},
+						["groups"] = { i(127298) },	-- Blood-Infused Leggings
 					}),
 					n(91727, {	-- Executor Riloth
 						["questID"] = 38411,
 						["isDaily"] = true,
 						["coord"] = { 49.8, 36.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127323),	-- Bracers of Endless Suffering
-						},
+						["groups"] = { i(127323) },	-- Bracers of Endless Suffering
 					}),
 					n(92819, {	-- Eyepiercer <Crazed Blackfang Warmonger>
 						["description"] = "\nPurchase a Prime Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Eyepiercer.\n\n",
@@ -1085,9 +1023,7 @@ root(ROOTS.Zones, {
 						["questID"] = 40107,
 						["isDaily"] = true,
 						["coord"] = { 41.0, 56.3, TANAAN_JUNGLE },
-						["groups"] = {
-							i(129295),	-- Spike-Toed Booterang
-						},
+						["groups"] = { i(129295) },	-- Spike-Toed Booterang
 					}),
 					n(93168, {	-- Felbore
 						["questID"] = 38775,
@@ -1097,9 +1033,7 @@ root(ROOTS.Zones, {
 							{ 31.1, 53.3, TANAAN_JUNGLE },	-- cave entrance
 							{ 28.6, 50.8, TANAAN_JUNGLE },	-- felbore
 						},
-						["groups"] = {
-							i(127350),	-- Fel Imbued Band
-						},
+						["groups"] = { i(127350) },	-- Fel Imbued Band
 					}),
 					n(92647, {	-- Felsmith Damorka
 						["questID"] = 38634,
@@ -1120,41 +1054,31 @@ root(ROOTS.Zones, {
 							{ 53.0, 27.2, TANAAN_JUNGLE },
 							{ 52.2, 27.4, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127656),	-- Fel Singed Wraps
-						},
+						["groups"] = { i(127656) },	-- Fel Singed Wraps
 					}),
 					n(92508, {	-- Gloomtalon
 						["questID"] = 38604,
 						["isDaily"] = true,
 						["coord"] = { 63.6, 81.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127306),	-- Gloomtalon's Spare Kilt
-						},
+						["groups"] = { i(127306) },	-- Gloomtalon's Spare Kilt
 					}),
 					n(93125, {	-- Glub'glok
 						["questID"] = 38764,
 						["isDaily"] = true,
 						["coord"] = { 34.6, 78.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127317),	-- Murktide's Coveted Chestplate
-						},
+						["groups"] = { i(127317) },	-- Murktide's Coveted Chestplate
 					}),
 					n(98284, {	-- Gondar
 						["questID"] = 40106,
 						["isDaily"] = true,
 						["coord"] = { 80.6, 56.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(108633),	-- Crashin' Thrashin' Cannon Controller (TOY!)
-						},
+						["groups"] = { i(108633) },	-- Crashin' Thrashin' Cannon Controller (TOY!)
 					}),
 					n(92941, {	-- Gorabosh
 						["questID"] = 38709,
 						["isDaily"] = true,
 						["coord"] = { 33.3, 35.8, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127304),	-- Cave Keeper Wraps
-						},
+						["groups"] = { i(127304) },	-- Cave Keeper Wraps
 					}),
 					n(91695, {	-- Grand Warlock Nethekurse
 						["questID"] = 38400,
@@ -1163,25 +1087,19 @@ root(ROOTS.Zones, {
 							{ 47.4, 40.6, TANAAN_JUNGLE },
 							{ 46.2, 42.8, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127299),	-- Nehtekurse's Robe of Contempt
-						},
+						["groups"] = { i(127299) },	-- Nehtekurse's Robe of Contempt
 					}),
 					n(93057, {	-- Grannok
 						["questID"] = 38750,
 						["isDaily"] = true,
 						["coord"] = { 16.0, 59.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127649),	-- Trophy-Skull Choker
-						},
+						["groups"] = { i(127649) },	-- Trophy-Skull Choker
 					}),
 					n(90094, {	-- Harbormaster Korak
 						["questID"] = 39046,
 						["isDaily"] = true,
 						["coord"] = { 39.6, 32.6, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127309),	-- Korak's Reinforced Iron Tunic
-						},
+						["groups"] = { i(127309) },	-- Korak's Reinforced Iron Tunic
 					}),
 					n(90777, {	-- High Priest Ikzan
 						["questID"] = 38028,
@@ -1190,9 +1108,7 @@ root(ROOTS.Zones, {
 							{ 21.0, 37.4, TANAAN_JUNGLE },
 							{ 20.4, 41.6, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(122117),	-- Cursed Feather of Ikzan (TOY!)
-						},
+						["groups"] = { i(122117) },	-- Cursed Feather of Ikzan (TOY!)
 					}),
 					n(90429, {	-- Imp-Master Valessa
 						["questID"] = 38026,
@@ -1201,17 +1117,13 @@ root(ROOTS.Zones, {
 							{ 31.6, 72.6, TANAAN_JUNGLE },
 							{ 31.0, 71.4, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127655),	-- Sassy Imp (TOY!)
-						},
+						["groups"] = { i(127655) },	-- Sassy Imp (TOY!)
 					}),
 					n(90437, {	-- Jax'zor
 						["questID"] = 38030,
 						["isDaily"] = true,
 						["coord"] = { 26.6, 75.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127322),	-- Fel Burnished Waistguard
-						},
+						["groups"] = { i(127322) },	-- Fel Burnished Waistguard
 					}),
 					n(80398, {	-- Keravnos
 						["questID"] = 37407,
@@ -1222,9 +1134,7 @@ root(ROOTS.Zones, {
 						["questID"] = 38605,
 						["isDaily"] = true,
 						["coord"] = { 52.0, 83.9, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127418),	-- Soothing Incense Brazier
-						},
+						["groups"] = { i(127418) },	-- Soothing Incense Brazier
 					}),
 					n(93279, {	-- Kris'kar the Unredeemed
 						["questID"] = 38825,
@@ -1233,55 +1143,41 @@ root(ROOTS.Zones, {
 							{ 39.5, 68.1, TANAAN_JUNGLE },	-- Kris'kar the Unredeemed
 							{ 42.4, 68.7, TANAAN_JUNGLE },	-- Cave Entrance
 						},
-						["groups"] = {
-							i(127653),	-- Wingblade of Reckoning
-						},
+						["groups"] = { i(127653) },	-- Wingblade of Reckoning
 					}),
 					n(90438, {	-- Lady Oran
 						["questID"] = 38029,
 						["isDaily"] = true,
 						["coord"] = { 25.6, 76.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127316),	-- Oran's Cuffs of Malice
-						},
+						["groups"] = { i(127316) },	-- Oran's Cuffs of Malice
 					}),
 					n(96240, {	-- Lok'goron Hashslinger
 						["coord"] = { 40.4, 45.8, TANAAN_JUNGLE },
-						["groups"] = {
-							i(128501),	-- Recipe: Fel Eggs and Ham (RECIPE!)
-						},
+						["groups"] = { i(128501) },	-- Recipe: Fel Eggs and Ham (RECIPE!)
 					}),
 					n(93002, {	-- Magwia
 						["questID"] = 38726,
 						["isDaily"] = true,
 						["coord"] = { 52.1, 65.1, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127332),	-- Riverbeast Molar Club
-						},
+						["groups"] = { i(127332) },	-- Riverbeast Molar Club
 					}),
 					n(90442, {	-- Mistress Thavra
 						["questID"] = 38032,
 						["isDaily"] = true,
 						["coord"] = { 26.0, 79.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127300),	-- Shivan Shoulders of Scorn
-						},
+						["groups"] = { i(127300) },	-- Shivan Shoulders of Scorn
 					}),
 					n(92411, {	-- Overlord Ma'gruth
 						["questID"] = 38580,
 						["isDaily"] = true,
 						["coord"] = { 53.0, 19.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127320),	-- Mo'gruth's Discarded Parade Helm
-						},
+						["groups"] = { i(127320) },	-- Mo'gruth's Discarded Parade Helm
 					}),
 					n(92274, {	-- Painmistress Selora
 						["questID"] = 38557,
 						["isDaily"] = true,
 						["coord"] = { 53.6, 21.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127297),	-- Selora's Crown of Thorns
-						},
+						["groups"] = { i(127297) },	-- Selora's Crown of Thorns
 					}),
 					n(91374, {	-- Podlord Wakkawam
 						["questID"] = 38282,
@@ -1290,9 +1186,7 @@ root(ROOTS.Zones, {
 							{ 16.8, 48.4, TANAAN_JUNGLE },
 							{ 16.8, 49.6, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127336),	-- Rod of the One True Podlord
-						},
+						["groups"] = { i(127336) },	-- Rod of the One True Podlord
 					}),
 					n(91009, {	-- Putre'thar
 						["questID"] = 38457,
@@ -1301,34 +1195,26 @@ root(ROOTS.Zones, {
 							{ 57.0, 23.0, TANAAN_JUNGLE },
 							{ 57.6, 23.2, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127657),	-- Encroaching Void
-						},
+						["groups"] = { i(127657) },	-- Encroaching Void
 					}),
 					n(90782, {	-- Rasthe
 						["questID"] = 38034,
 						["isDaily"] = true,
 						["coord"] = { 17.4, 42.7, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127661),	-- Fang of Rasthe
-						},
+						["groups"] = { i(127661) },	-- Fang of Rasthe
 					}),
 					n(92197, {	-- Relgor
 						["questID"] = 38496,
 						["isDaily"] = true,
 						["coord"] = { 26.3, 54.3, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127335),	-- Relgor's Master Glaive
-						},
+						["groups"] = { i(127335) },	-- Relgor's Master Glaive
 					}),
 					n(91227, {	-- Remnant of the Blood Moon
 						["questID"] = 39159,
 						["isDaily"] = true,
 						["description"] = "Drain the Blood Moon to 0% health with Drained Blood Crystals to spawn Remnant of the Blood Moon.",
 						["coord"] = { 22.2, 50.6, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127666),	-- Vial of Red Goo (TOY!)
-						},
+						["groups"] = { i(127666) },	-- Vial of Red Goo (TOY!)
 					}),
 					n(92817, {	-- Rendarr <Warshaman of the Blackfang>
 						["description"] = "\nPurchase a Major Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Rendarr.\n\n",
@@ -1344,17 +1230,13 @@ root(ROOTS.Zones, {
 							{ 37.2, 68.6, TANAAN_JUNGLE },
 							{ 42.4, 77.6, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127356),	-- Musky Bat Fur Cloak
-						},
+						["groups"] = { i(127356) },	-- Musky Bat Fur Cloak
 					}),
 					n(90885, {	-- Rogond the Tracker
 						["questID"] = 38263,
 						["isDaily"] = true,
 						["coord"] = { 20.4, 49.5, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127314),	-- Rogond's Tracking Shoulderguards
-						},
+						["groups"] = { i(127314) },	-- Rogond's Tracking Shoulderguards
 					}),
 					n(94472, {	-- Savage Whale Shark
 						["questID"] = 36153,
@@ -1373,58 +1255,44 @@ root(ROOTS.Zones, {
 							{ 41.6, 37.6, TANAAN_JUNGLE },
 							{ 42.8, 36.6, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127318),	-- Iron Cleated Warboots
-						},
+						["groups"] = { i(127318) },	-- Iron Cleated Warboots
 					}),
 					n(93236, {	-- Shadowthrash
 						["questID"] = 38812,
 						["isDaily"] = true,
 						["coord"] = { 49.8, 61.3, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127665),	-- Warpscaled Wristwraps
-						},
+						["groups"] = { i(127665) },	-- Warpscaled Wristwraps
 					}),
 					n(98285, {	-- Smashum Grabb
 						["questID"] = 40104,
 						["isDaily"] = true,
 						["coord"] = { 88.2, 55.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(108634),	-- Crashin' Thrashin' Mortar Controller (TOY!)
-						},
+						["groups"] = { i(108634) },	-- Crashin' Thrashin' Mortar Controller (TOY!)
 					}),
 					n(92495, {	-- Soulslicer
 						["questID"] = 38600,
 						["isDaily"] = true,
 						["coord"] = { 62.6, 72.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127315),	-- Glowing Felskull Belt
-						},
+						["groups"] = { i(127315) },	-- Glowing Felskull Belt
 					}),
 					n(92887, {	-- Steelsnout
 						["questID"] = 38700,
 						["isDaily"] = true,
 						["coord"] = { 65.6, 36.7, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127357),	-- Steelsnout's Steely Hide
-						},
+						["groups"] = { i(127357) },	-- Steelsnout's Steely Hide
 					}),
 					n(92606, {	-- Sylissa
 						["questID"] = 38628,
 						["isDaily"] = true,
 						["coord"] = { 41.0, 78.7, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127311),	--  Serpentine Gloves
-						},
+						["groups"] = { i(127311) },	-- Serpentine Gloves
 					}),
 					n(93001, {	-- Szirek the Twisted
 						["description"] = "Capture Strongpoint (East) to make him spawn.",
 						["questID"] = 38752,
 						["isDaily"] = true,
 						["coord"] = { 16.2, 56.3, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127296),	-- Twisted Taboo Handwraps
-						},
+						["groups"] = { i(127296) },	-- Twisted Taboo Handwraps
 					}),
 					n(95044, {	-- Terrorfist <Son of Kormrok>
 						["questID"] = 39288,
@@ -1434,39 +1302,33 @@ root(ROOTS.Zones, {
 							{ 15.6, 63.4, TANAAN_JUNGLE },
 						},
 						["groups"] = {
+							i(128315),	-- Medallion of thee Legion
 							i(128025, {	-- Rattling Iron Cage
 								i(116669),	-- Armored Razorback (MOUNT!)
 								i(116658),	-- Tundra Icehoof (MOUNT!)
 								i(116780),	-- Warsong Direfang (MOUNT!)
 							}),
-							i(128315),	-- Medallion of thee Legion
 						},
 					}),
 					n(92465, {	-- The Blackfang
 						["questID"] = 38597,
 						["isDaily"] = true,
 						["coord"] = { 49.6, 74.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127330),	-- The Black Fang
-						},
+						["groups"] = { i(127330) },	-- The Black Fang
 					}),
 					n(92694, {	-- The Goreclaw
 						["questID"] = 38654,
 						["isDaily"] = true,
 						["coord"] = { 34.6, 72.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127305),	-- Frayed Hunting Cowl
-						},
+						["groups"] = { i(127305) },	-- Frayed Hunting Cowl
 					}),
 					n(92977, {	-- The Iron Houndmaster
 						["description"] = "Capture Strongpoint (West) to make him spawn.",
-						["crs"] = { 92969 },	-- Strongpoint
+						["cr"] = 92969,	-- Strongpoint
 						["questID"] = 38751,
 						["isDaily"] = true,
 						["coord"] = { 13.1, 57.0, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127321),	-- Iron Houndmaster's Pauldrons
-						},
+						["groups"] = { i(127321) },	-- Iron Houndmaster's Pauldrons
 					}),
 					n(92636, {	-- The Night Haunter
 						["description"] = "Gain 10 stacks of Marked by the Night Haunter by either finding The Night Haunter or clicking Mutilated Corpses.",
@@ -1484,45 +1346,37 @@ root(ROOTS.Zones, {
 							{ 38.0, 79.0, TANAAN_JUNGLE },
 							{ 44.0, 78.2, TANAAN_JUNGLE },
 						},
-						["groups"] = {
-							i(127355),	-- Haunter's Kurzed Cloak
-						},
+						["groups"] = { i(127355) },	-- Haunter's Kurzed Cloak
 					}),
 					n(91243, {	-- Tho'gar Gorefist
 						["questID"] = 38747,
 						["isDaily"] = true,
 						["coord"] = { 13.6, 56.8, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							i(127310),	-- Sabatons of Radiating Ire
-						},
+						["groups"] = { i(127310) },	-- Sabatons of Radiating Ire
 					}),
 					n(92574, {	-- Thromma the Gutslicer
 						["questID"] = 38620,
 						["isDaily"] = true,
 						["coord"] = { 34.0, 44.7, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127327),	-- Thromma's Gutslicer
-						},
+						["groups"] = { i(127327) },	-- Thromma's Gutslicer
 					}),
 					n(92451, {	-- Varyx the Damned
 						["questID"] = 37937,
 						["isDaily"] = true,
 						["coord"] = { 27.6, 32.7, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127351),	-- Varyx's Dark Oath Band
-						},
+						["groups"] = { i(127351) },	-- Varyx's Dark Oath Band
 					}),
 					n(95054, {	-- Vengeance <Avatar of Velhari>
 						["questID"] = 39290,
 						["isDaily"] = true,
 						["coord"] = { 32.6, 74.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 						["groups"] = {
+							i(128315),	-- Medallion of thee Legion
 							i(128025, {	-- Rattling Iron Cage
 								i(116669),	-- Armored Razorback (MOUNT!)
 								i(116658),	-- Tundra Icehoof (MOUNT!)
 								i(116780),	-- Warsong Direfang (MOUNT!)
 							}),
-							i(128315),	-- Medallion of thee Legion
 						},
 					}),
 					n(92408, {	-- Xanzith the Everlasting
@@ -1540,17 +1394,13 @@ root(ROOTS.Zones, {
 						["achievementID"] = 10334,
 						["description"] = "Attempt to teleport to him by using Master Hunter's Seeking Crystal. Do not get knocked off of his platform.",
 						["coord"] = { 69.6, 38.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-						["groups"] = {
-							title(59),	-- Predator
-						},
+						["groups"] = { title(59) },	-- Predator
 					}),
 					n(91087, {	-- Zeter'el
 						["questID"] = 38207,
 						["isDaily"] = true,
 						["coord"] = { 48.4, 28.6, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127340),	-- Felfire Lit Greatsword
-						},
+						["groups"] = { i(127340) },	-- Felfire Lit Greatsword
 					}),
 					n(90122, {	-- Zoug the Heavy
 						["questID"] = 39045,
@@ -1668,9 +1518,7 @@ root(ROOTS.Zones, {
 					o(241692, {	-- Axe of the Weeping Wolf
 						["questID"] = 38754,
 						["coord"] = { 14.9, 54.4, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127325),	-- Axe of the Weepiong Wolf
-						},
+						["groups"] = { i(127325) },	-- Axe of the Weepiong Wolf
 					}),
 					o(243690, {	-- Bejeweled Egg
 						["questID"] = 39469,
@@ -1679,9 +1527,6 @@ root(ROOTS.Zones, {
 					o(241449, {	-- Blackfang Island Cache
 						["questID"] = 38601,
 						["coord"] = { 61.1, 75.8, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
 					}),
 					o(241835, {	-- Bleeding Hollow Mushroom Stash
 						["questID"] = 38809,
@@ -1689,73 +1534,51 @@ root(ROOTS.Zones, {
 							{ 49.9, 76.7, TANAAN_JUNGLE },	-- Treasure Location
 							{ 44.6, 77.5, TANAAN_JUNGLE },	-- Cave Entrance
 						},
-						["groups"] = {
-							i(128223),	-- Bottomless Stygana Mushroom Brew (TOY!)
-						},
+						["groups"] = { i(128223) },	-- Bottomless Stygana Mushroom Brew (TOY!)
 					}),
 					o(241560, {	-- Bleeding Hollow Warchest
 						["questID"] = 38678,
 						["coord"] = { 22.0, 47.9, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
 					}),
 					o(241742, {	-- Book of Zyzzix
 						["questID"] = 38771,
 						["coord"] = { 46.8, 36.6, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127347),	-- Resonating Tome of Zyzzix
-						},
+						["groups"] = { i(127347) },	-- Resonating Tome of Zyzzix
 					}),
 					o(241664, {	-- "Borrowed" Enchanted Spyglass
 						["questID"] = 38735,
 						["coord"] = { 25.3, 50.3, TANAAN_JUNGLE },
 						["description"] = "At the top of the watchtower.",
-						["groups"] = {
-							i(128222),	-- Smokeglass Lens Spyglass
-						},
+						["groups"] = { i(128222) },	-- Smokeglass Lens Spyglass
 					}),
 					o(241775, {	-- Brazier of Awakening
 						["questID"] = 38788,
 						["coord"] = { 37.8, 80.8, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127770),	-- Brazier of Awakening
-						},
+						["groups"] = { i(127770) },	-- Brazier of Awakening
 					}),
 					o(241563, {	-- Censer of Torment
 						["questID"] = 38682,
 						["coord"] = { 62.6, 20.6, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127401),	-- Tormented Skull
-						},
+						["groups"] = { i(127401) },	-- Tormented Skull
 					}),
 					o(241605, {	-- Crystalized Essence of Elements
 						["questID"] = 38705,
 						["coord"] = { 47.9, 70.4, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127329),	-- Element-Infused Knuckles
-						},
+						["groups"] = { i(127329) },	-- Element-Infused Knuckles
 					}),
 					o(241450, {	-- Crystallized Fel Spike
 						["questID"] = 38602,
 						["coord"] = { 62.0, 70.8, TANAAN_JUNGLE },
-						["groups"] = {
-							i(128217),	-- Fel Shard
-						},
+						["groups"] = { i(128217) },	-- Fel Shard
 					}),
 					o(241848, {	-- Dazzling Rod
 						["questID"] = 38822,
 						["coord"] = { 42.8, 35.3, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127859),	-- Dazzling Rod (TOY!)
-						},
+						["groups"] = { i(127859) },	-- Dazzling Rod (TOY!)
 					}),
 					o(243693, {	-- Dead Man's Chest
 						["questID"] = 39470,
 						["coord"] = { 55.0, 90.4, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
 					}),
 					o(241600, {	-- Discarded Helm
 						["questID"] = 38702,
@@ -1763,44 +1586,30 @@ root(ROOTS.Zones, {
 							{ 49.9, 81.2, TANAAN_JUNGLE },
 							{ 51.3, 79.5, TANAAN_JUNGLE },	-- Cave Entrance
 						},
-						["groups"] = {
-							i(127312),	-- Fallen Adventurer's Helm
-						},
+						["groups"] = { i(127312) },	-- Fallen Adventurer's Helm
 					}),
 					o(241745, {	-- Fel-Drenched Satchel
 						["questID"] = 38773,
 						["coord"] = { 46.9, 44.3, TANAAN_JUNGLE },
-						["groups"] = {
-							i(128218),	-- Fel-Proof Goggles
-						},
+						["groups"] = { i(128218) },	-- Fel-Proof Goggles
 					}),
 					o(242649, {	-- Fel-Tainted Apexis Formation
 						["questID"] = 39075,
 						["coord"] = { 51.6, 32.6, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(823),	-- Apexis Crystal x500
-						},
 					}),
 					o(241533, {	-- Forgotten Champion's Blade
 						["questID"] = 38657,
 						["coord"] = { 41.5, 73.2, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127339),	-- Forgotten Champion's Blade
-						},
+						["groups"] = { i(127339) },	-- Forgotten Champion's Blade
 					}),
 					o(241602, {	-- Forgotten Iron Horde Supplies
 						["questID"] = 38704,
 						["coord"] = { 69.8, 55.9, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
 					}),
 					o(241433, {	-- Forgotten Sack
 						["questID"] = 38591,
 						["coord"] = { 56.9, 65.1, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127408),	-- Adventuring Journal
-						},
+						["groups"] = { i(127408) },	-- Adventuring Journal
 					}),
 					o(241671, {	-- Forgotten Shard of the Cipher
 						["questID"] = 38740,
@@ -1809,23 +1618,16 @@ root(ROOTS.Zones, {
 							39394,	-- The Cipher of Damnation [A]
 							38463,	-- The Cipher of Damnation [H]
 						},
-						["groups"] = {
-							i(128309),	-- Shard of Cyrukh (PET!)
-						},
+						["groups"] = { i(128309) },	-- Shard of Cyrukh (PET!)
 					}),
 					o(241712, {	-- Ironbeard's Treasure
 						["questID"] = 38758,
 						["coord"] = { 35.9, 78.6, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
 					}),
 					o(240580, {	-- Jewel of Hellfire
 						["questID"] = 38334,
 						["coord"] = { 28.7, 23.5, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127668),	-- Jewel of Hellfire (TOY!)
-						},
+						["groups"] = { i(127668) },	-- Jewel of Hellfire (TOY!)
 					}),
 					o(241561, {	-- Jewel of the Fallen Star
 						["questID"] = 38679,
@@ -1847,9 +1649,7 @@ root(ROOTS.Zones, {
 					o(241434, {	-- Lodged Hunting Spear
 						["questID"] = 38593,
 						["coord"] = { 54.8, 69.31, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127334),	-- Ravager Hunting Spear
-						},
+						["groups"] = { i(127334) },	-- Ravager Hunting Spear
 					}),
 					o(241565, {	-- Looted Bleeding Hollow Treasure
 						["questID"] = 38683,
@@ -1858,16 +1658,11 @@ root(ROOTS.Zones, {
 							38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow [A]
 							38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow [H]
 						},
-						["groups"] = {
-							i(127709),	-- Throbbing Blood Orb (TOY!)
-						},
+						["groups"] = { i(127709) },	-- Throbbing Blood Orb (TOY!)
 					}),
 					o(241673, {	-- Looted Bleeding Hollow Treasure
 						["questID"] = 38741,
 						["coord"] = { 26.5, 63.0, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(823),	-- Apexis Crystal x209
-						},
 					}),
 					o(241841, {	-- Looted Mystical Staff
 						["questID"] = 38814,
@@ -1875,37 +1670,25 @@ root(ROOTS.Zones, {
 							{ 48.5, 75.2, TANAAN_JUNGLE },	-- Looted Mystical Staff
 							{ 44.6, 77.5, TANAAN_JUNGLE },	-- Cave Entrance
 						},
-						["groups"] = {
-							i(127337),	-- Emanating Staff of Shadow
-						},
+						["groups"] = { i(127337) },	-- Emanating Staff of Shadow
 					}),
 					o(241666, {	-- Mysterious Corrupted Obelisk
 						["questID"] = 38739,
 						["coord"] = { 46.3, 72.8, TANAAN_JUNGLE },
-						["groups"] = {
-							i(128320),	-- Corrupted Primal Obelisk
-						},
+						["groups"] = { i(128320) },	-- Corrupted Primal Obelisk
 					}),
 					o(241656, {	-- Overgrown Relic
 						["questID"] = 38731,
 						["coord"] = { 50.8, 64.9, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127412),	-- Luminous Relic Ring
-						},
+						["groups"] = { i(127412) },	-- Luminous Relic Ring
 					}),
 					o(241524, {	-- Pale Removal Equipment
 						["questID"] = 38640,
 						["coord"] = { 37.1, 46.2, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
 					}),
 					o(242249, {	-- Partially Mined Apexis Crystal
 						["questID"] = 38863,
 						["coord"] = { 28.9, 34.6, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(823),	-- Apexis Crystal x150
-						},
 					}),
 					o(241504, {	-- Polished Crystal
 						["questID"] = 38629,
@@ -1920,44 +1703,31 @@ root(ROOTS.Zones, {
 					o(241566, {	-- Rune Etched Femur
 						["questID"] = 38686,
 						["coord"] = { 51.7, 24.3, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127341),	-- Rune-Etched Femur
-						},
+						["groups"] = { i(127341) },	-- Rune-Etched Femur
 					}),
 					o(241760, {	-- Sacrificial Blade
 						["questID"] = 38776,
 						["coord"] = { 46.8, 42.1, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127328),	-- Feltwisted Sacrificial Blade
-						},
+						["groups"] = { i(127328) },	-- Feltwisted Sacrificial Blade
 					}),
 					o(241601, {	-- Scout's Belongings
 						["questID"] = 38703,
 						["coord"] = { 49.9, 79.6, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127354),	-- Scout's Spy Cloak
-						},
+						["groups"] = { i(127354) },	-- Scout's Spy Cloak
 					}),
 					o(241674, {	-- Skull of the Mad Chief
 						["questID"] = 38742,
 						["coord"] = { 34.6, 34.6, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127669),	-- Skull of the Mad Chief (TOY!)
-						},
+						["groups"] = { i(127669) },	-- Skull of the Mad Chief (TOY!)
 					}),
 					o(241521, {	-- Snake Charmer's Flute
 						["questID"] = 38638,
 						["coord"] = { 40.6, 79.8, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127333),	-- Ogra'mal Snake Charming Flute
-						},
+						["groups"] = { i(127333) },	-- Ogra'mal Snake Charming Flute
 					}),
 					o(241699, {	-- Spoils of War
 						["questID"] = 38755,
 						["coord"] = { 17.4, 57.0, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
 					}),
 					o(241764, {	-- Stashed Bleeding Hollow Loot
 						["questID"] = 38779,
@@ -1966,30 +1736,21 @@ root(ROOTS.Zones, {
 					o(241714, {	-- Stashed Iron Sea Booty
 						["questID"] = 38760,
 						["coord"] = { 33.9, 78.1, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
 					}),
 					o(241715, {	-- Stashed Iron Sea Booty
 						["questID"] = 38761,
 						["coord"] = { 35.0, 77.5, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
 					}),
 					o(241716, {	-- Stashed Iron Sea Booty
 						["questID"] = 38762,
 						["coord"] = { 34.5, 78.3, TANAAN_JUNGLE },
-						["groups"] = {
-							currency(824),	-- Garrison Resources
-						},
+					}),
+					o(243796, {	-- Suspiciously Glowing Chest
 					}),
 					o(240543, {	-- Stolen Captain's Chest
 						["questID"] = 38283,
 						["coord"] = { 17.0, 52.9, TANAAN_JUNGLE },
-						["groups"] = {
-							i(128219),	-- Fel-Smoked Ham
-						},
+						["groups"] = { i(128219) },	-- Fel-Smoked Ham
 					}),
 					o(241599, {	-- Strange Fruit
 						["questID"] = 38701,
@@ -2009,52 +1770,38 @@ root(ROOTS.Zones, {
 					o(240003, {	-- Strange Sapphire
 						["questID"] = 37956,
 						["coord"] = { 36.4, 43.5, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127397),	-- Splendid Skettis Sapphire
-						},
+						["groups"] = { i(127397) },	-- Splendid Skettis Sapphire
 					}),
 					o(240577, {	-- The Blade of Kra'nak
 						["questID"] = 38320,
 						["coord"] = { 19.2, 40.9, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127338),	-- Guardian Swiftblade of Kra'nak
-						},
+						["groups"] = { i(127338) },	-- Guardian Swiftblade of Kra'nak
 					}),
 					o(241847, {	-- The Commander's Shield
 						["questID"] = 38821,
 						["coord"] = { 43.1, 38.3, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127348),	-- Commander's Citadel Shield
-						},
+						["groups"] = { i(127348) },	-- Commander's Citadel Shield
 					}),
 					o(241713, {	-- The Eye of Grannok
 						["questID"] = 38757,
 						["coord"] = { 16.0, 59.4, TANAAN_JUNGLE },
-						["groups"] = {
-							i(128220),	-- Grannok's Lidless Eye
-						},
+						["groups"] = { i(128220) },	-- Grannok's Lidless Eye
 					}),
 					o(241522, {	-- The Perfect Blossom
+						["description"] = "Eat |cFFFFD700Mysterious Fruit|r until you get the |cFFFFD700Pollen Protection|r buff.",
 						["questID"] = 38639,
 						["coord"] = { 40.8, 75.6, TANAAN_JUNGLE },
-						["description"] = "Eat |cFFFFD700Mysterious Fruit|r until you get the |cFFFFD700Pollen Protection|r buff.",
-						["groups"] = {
-							i(127766),	-- The Perfect Blossom (TOY!)
-						},
+						["groups"] = { i(127766) },	-- The Perfect Blossom (TOY!)
 					}),
 					o(240855, {	-- Tome of Secrets
 						["questID"] = 38426,
 						["coord"] = { 32.4, 70.4, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127670),	-- Accursed Tome of the Sargerei (TOY!)
-						},
+						["groups"] = { i(127670) },	-- Accursed Tome of the Sargerei (TOY!)
 					}),
 					o(240289, {	-- Weathered Axe
 						["questID"] = 38208,
 						["coord"] = { 15.9, 49.7, TANAAN_JUNGLE },
-						["groups"] = {
-							i(127324),	-- Weathered Memento Axe
-						},
+						["groups"] = { i(127324) },	-- Weathered Memento Axe
 					}),
 				}),
 				n(VENDORS, {
@@ -2071,18 +1818,16 @@ root(ROOTS.Zones, {
 							}, {	-- Friendly
 								i(128454),	-- Order of the Awakened Battle Standard
 								i(123974, {	-- Reins of the Corrupted Dreadwing (MOUNT!)
-									["cost"] = { { "c", 823, 150000 }, },	-- 150,000x Apexis Crystal
+									["cost"] = { { "c", APEXIS_CRYSTAL, 150000 } },
 								}),
 							}, {	-- Honored
 								i(128441, {	-- Contract: Solar Priest Vayx
-									["cost"] = { { "c", 823, 1000 }, },	-- 1,000x Apexis Crystal
-									["groups"] = {
-										follower(582),	-- Solar Priest Vayx
-									},
+									["cost"] = { { "c", APEXIS_CRYSTAL, 1000 } },
+									["groups"] = { follower(582) },	-- Solar Priest Vayx
 								}),
 								i(127774, {	-- Gemcutter Module: Multistrike
 									["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },
-									["cost"] = {{ "c", 823, 3000}},	-- 3000x Apexis Crystal
+									["cost"] = { { "c", APEXIS_CRYSTAL, 3000 } },
 								}),
 								i(128502, {	-- Hunter's Seeking Crystal
 									["cost"] = 10000000,	-- 1,000g
@@ -2095,11 +1840,11 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(122283, {	-- Rukhmar's Sacred Memory (TOY!)
-									["cost"] = { { "c", 823, 50000 }, },	-- 50,000x Apexis Crystal
+									["cost"] = { { "c", APEXIS_CRYSTAL, 50000 } },
 								}),
 							}, {	-- Exalted
 								i(128478, {	-- Blazing Firehawk (PET!)
-									["cost"] = { { "c", 823, 2000 }, },	-- 2,000x Apexis Crystal
+									["cost"] = { { "c", APEXIS_CRYSTAL, 2000 } },
 								}),
 								i(128450),	-- Order of the Awakened Tabard
 								i(128487, {	-- Ship: The Awakener
@@ -2118,46 +1863,46 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = {
 							i(124562, {	-- Baleful Armament
-								["cost"] = { { "c", 823, 10000 }, },	-- 10,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 10000 } },
 							}),
 							i(124550, {	-- Baleful Bracers
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124559, {	-- Baleful Choker
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124560, {	-- Baleful Cloak
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124553, {	-- Baleful Gauntlets
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124557, {	-- Baleful Girdle
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124554, {	-- Baleful Hood
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124555, {	-- Baleful Leggings
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124558, {	-- Baleful Ring
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124556, {	-- Baleful Spaulders
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124552, {	-- Baleful Treads
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124561, {	-- Baleful Trinket
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124551, {	-- Baleful Tunic
-								["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(128225, {	-- Empowered Apexis Fragment
-								["cost"] = { { "c", 823, 20000 }, },	-- 20,000x Apexis Crystal
+								["cost"] = { { "c", APEXIS_CRYSTAL, 20000 } },
 							}),
 						},
 					}),
@@ -2175,9 +1920,7 @@ root(ROOTS.Zones, {
 							}, {	-- Honored
 								i(128440, {	-- Contract: Dowser Bigspark
 									["cost"] = 6000000,	-- 600g
-									["groups"] = {
-										follower(581),	-- Dowser Goodwell
-									},
+									["groups"] = { follower(581) },	-- Dowser Goodwell
 								}),
 								i(128251, {	-- Equipment Blueprint: Tuskarr Fishing Net (CI!)
 									["cost"] = 2200000,	-- 220g
@@ -2214,9 +1957,7 @@ root(ROOTS.Zones, {
 					n(95650, {	-- Skoller
 						["description"] = "Talk to him and you will receive the toy.",
 						["coord"] = { 55.2, 75.0, TANAAN_JUNGLE },
-						["groups"] = {
-							i(128328),	-- Skoller's Bag of Squirrel Treats (TOY!)
-						},
+						["groups"] = { i(128328) },	-- Skoller's Bag of Squirrel Treats (TOY!)
 					}),
 					n(90974, {	-- Vindicator Krethos <Hand of the Prophet>
 						["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
@@ -2232,9 +1973,7 @@ root(ROOTS.Zones, {
 							}, {	-- Honored
 								i(128445, {	-- Contract: Dowser Bigspark
 									["cost"] = 6000000,	-- 600g
-									["groups"] = {
-										follower(581),	-- Dowser Bigspark
-									},
+									["groups"] = { follower(581) },	-- Dowser Bigspark
 								}),
 								i(128491, {	-- Equipment Blueprint: Tuskarr Fishing Net
 									["questID"] = 39359,	-- Equipment Blueprint: Tuskarr Fishing Net
@@ -2284,24 +2023,22 @@ root(ROOTS.Zones, {
 								i(128453),	-- Saberstalkers Battle Standard
 							}, {	-- Honored
 								i(128439, {	-- Contract: Pallas
-									["cost"] = { { "i", 124099, 100 }, },	-- 100x Blackfang Claw
-									["groups"] = {
-										follower(580),	-- Pallas
-									},
+									["cost"] = { { "i", 124099, 100 } },	-- 100x Blackfang Claw
+									["groups"] = { follower(580) },	-- Pallas
 								}),
 								i(116671, {	-- Wild Goretusk (MOUNT!)
-									["cost"] = { { "i", 124099, 1000 }, },	-- 1,000x Blackfang Claw
+									["cost"] = { { "i", 124099, 1000 } },	-- 1,000x Blackfang Claw
 								}),
 							}, {	-- Revered
 								i(128446, {	-- Saberstalker Teachings: Trailblazer (CI!)
 									["cost"] = 7000000,	-- 700g
 								}),
 								i(128477, {	-- Savage Cub (PET!)
-									["cost"] = { { "i", 124099, 1500 }, },	-- 1,500x Blackfang Claw
+									["cost"] = { { "i", 124099, 1500 } },	-- 1,500x Blackfang Claw
 								}),
 							}, {	-- Exalted
 								i(128481, {	-- Bristling Hellboar (MOUNT!)
-									["cost"] = { { "i", 124099, 5000 }, },	-- 5,000x Blackfang Claw
+									["cost"] = { { "i", 124099, 5000 } },	-- 5,000x Blackfang Claw
 								}),
 								i(128449),	-- Saberstalkers Tabard
 							},
@@ -2324,8 +2061,7 @@ root(ROOTS.Zones, {
 						i(124554),	-- Baleful Hood
 						i(124559),	-- Baleful Choker
 						i(124556),	-- Baleful Spaulders (normal kill)
-						i(128348, {	-- Baleful Spaulders (first kill)
-							["questID"] = 39434,	-- Short-Supply Reward - triggers on the first rare kill (Baleful Spaulders itemID 128348)
+						i(128348, {	-- Baleful Spaulders (CI!) (first kill)
 							["description"] = "|cfffd1818This token drops from your first Tanaan rare killed on any character. If you played during WoD and discarded the item before the introduction of the wardrobe, or if you recently sold the token itself without opening it, you will need to collect the appearance on a different character.\n\nYou CANNOT get these items from opening Baleful tokens purchased from the vendor.|r\n",
 							["groups"] = {
 								i(128349),	-- Felcast Mantle (Warforged)

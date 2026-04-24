@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(SPECIAL, {
@@ -23,7 +24,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 63.3, 16.9, UNDERMINE },
 				["groups"] = {
 					i(237130, {	-- Undermine Undershirt
-						["cost"] = {{ "i", 237129, 1 }},	-- Tarnished Undermine Real
+						["cost"] = { { "i", 237129, 1 } },	-- Tarnished Undermine Real
 					}),
 				},
 			}),

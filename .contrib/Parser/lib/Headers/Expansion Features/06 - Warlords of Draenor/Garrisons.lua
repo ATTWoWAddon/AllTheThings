@@ -8,14 +8,15 @@ GARRISONS = createHeader({
 	icon = 1041860,
 	text = {
 		en = "Garrisons",
-		es = "Ciudadelas",
 		de = "Garnisonen",
+		es = "Ciudadelas",
+		mx = "Fortalezas",
 		fr = "Garnisons",
 		it = "Guarnigioni",
-		mx = "Fortalezas",
+		ko = "수비대",
 		pt = "Guarnições",
 		ru = "Гарнизоны",
-		ko = "수비대",
 		cn = "要塞",
+		-- TODO: tw = "",
 	},
 });

@@ -1,7 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local COOKIE_GROUPS = {};
+
 root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(AZUREMYST_ISLE, {
 		["lore"] = "Azuremyst Isle is the zone the Draenei spaceship crashed into, leading to the formation of the Exodar as their capital city. Quests focus on the draenei acquainting themselves with the land and trying to strengthen their struggling settlements. Since this island was so far-out, there was very little other civilization before the crash.",
@@ -799,7 +801,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9612, {	-- A Hearty Thanks!
-					["description"] = "1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob\n.3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.",
+					["description"] = "1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob.\n3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.\n\nThis quest is presumably unobtainable by Warlocks.",
 					["qg"] = 17587,	-- Draenei Youngling
 					["coords"] = {
 						{ 37.6, 18.6, AZUREMYST_ISLE },
@@ -811,6 +813,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						{ 55.6, 47.8, AZUREMYST_ISLE },
 						{ 56.8, 59.6, AZUREMYST_ISLE },
 						{ 58.0, 41.6, AZUREMYST_ISLE },
+						{ 39.5, 37.4, AZUREMYST_ISLE },
 					},
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -959,7 +962,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(23430),	-- Mercenary Sword
 						-- #if BEFORE CATA
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
 					},
@@ -1376,7 +1379,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["altQuests"] = {
 						1665,	-- Bartleby's Mug
 						-- #if AFTER TBC
-						--9582,	-- Strength of One
+						-- 9582,	-- Strength of One
 						-- #endif
 						1678,	-- Vejrek
 						1683,	-- Vorlus Vilehoof
@@ -1397,7 +1400,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #if BEFORE CATA
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
 					},
@@ -1601,7 +1604,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- The Traitor Uncovered
 							["provider"] = { "i", 23792 },	-- Tree Disguise Kit
-							["coord"] = { 19, 83, AZUREMYST_ISLE },
+							["coord"] = { 19.0, 83.0, AZUREMYST_ISLE },
 							["cr"] = 17243,	-- Engineer "Spark" Overgrind <Envoy of Mekkatorque>
 						}),
 					},

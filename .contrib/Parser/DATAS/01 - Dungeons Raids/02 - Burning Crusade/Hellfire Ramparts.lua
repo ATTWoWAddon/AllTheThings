@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 	inst(248, {	-- Hellfire Ramparts
 		["lore"] = "Hellfire Ramparts make up the first wing of Hellfire Citadel. The citadel itself sits in the center of the zone, in the middle of a broken-up wall that divided the zone before the conflict began. The Ramparts takes place atop this wall along the sides of the citadel.",
@@ -242,6 +243,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["cost"] = {
 					{ "i", 30622, 1 },	-- Flamewrought Key [A]
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265830, 1 },	-- Communal Flamewrought Key [A]
+					{ "i", 265826, 1 },	-- Communal Flamewrought Key [H]
+					-- #endif
 				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
@@ -265,7 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,
+							BADGE_OF_JUSTICE(1),
 							-- #endif
 							i(30593),	-- Potent Fire Opal
 							i(30594),	-- Regal Chrysoprase

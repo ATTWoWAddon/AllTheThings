@@ -2,9 +2,65 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		n(VENDORS, {
+			n(251921, {	-- Arcanist Peroleth
+				["coord"] = { 58.1, 62.5, ZULDAZAR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_11_2_7 },
+				["groups"] = {
+					i(245463, {	-- Lordaeron Banded Barrel (DECOR!)
+						["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+					}),
+					i(245467, {	-- Lordaeron Banded Crate (DECOR!)
+						["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+					}),
+					i(245483, {	-- Lordaeron Spiked Weapon Rack (DECOR!)
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+					}),
+					i(241062, {	-- Lordaeron Rectangular Rug (DECOR!)
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+					}),
+					i(239606, {	-- Forsaken Round Rug (DECOR!)
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+					}),
+					i(245465, {	-- Tirisfal Wooden Chair (DECOR!)
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+					}),
+					i(245466, {	-- Forsaken Spiked Chair (DECOR!)
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+					}),
+					i(245475, {	-- Forsaken Long Table (DECOR!)
+						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+					}),
+					i(245473, {	-- Forsaken Studded Table (DECOR!)
+						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+					}),
+					i(245469, {	-- Lordaeron Lantern (DECOR!)
+						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+					}),
+					i(245470, {	-- Lordaeron Hanging Lantern (DECOR!)
+						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+					}),
+					i(245478, {	-- Lordaeron Sconce (DECOR!)
+						["minReputation"] = { FACTION_THE_HONORBOUND, HONORED },
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+					}),
+					i(245480, {	-- Lordaeron Torch (DECOR!)
+						["minReputation"] = { FACTION_THE_HONORBOUND, HONORED },
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+					}),
+					i(245479, {	-- Blightfire Sconce (DECOR!)
+						["minReputation"] = { FACTION_THE_HONORBOUND, REVERED },
+						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+					}),
+					i(245481, {	-- Blightfire Torch (DECOR!)
+						["minReputation"] = { FACTION_THE_HONORBOUND, REVERED },
+						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+					}),
+				},
+			}),
 			n(140137, {	-- Bugcatacher Cal'yoon
 				["coord"] = { 77.0, 15.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
@@ -42,7 +98,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(163513, {	-- Cou'pa (PET!)
-							["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+							["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 						}),
 						i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
@@ -154,7 +210,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 71.6, 29.4, ZULDAZAR },
 				["groups"] = {
 					i(163508, {	-- Blue Flitter (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 					}),
 				},
 			}),

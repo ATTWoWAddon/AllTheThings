@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ForConsortium = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -41,6 +42,7 @@ ExportDB.OnTooltipDB.ForMaghar = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NAGRAND, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -222,6 +224,15 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				-- #if BEFORE CATA
+				lockpicking({
+					o(184741, {	-- Dented Footlocker
+						["coord"] = { 71.7, 81.0, NAGRAND },
+						["requireSkill"] = LOCKPICKING,
+						["learnedAt"] = 325,
+					}),
+				}),
+				-- #endif
 				petbattles({
 					n(66552, {	-- Narrok <Master Pet Tamer>
 						["coord"] = { 61.0, 49.4, NAGRAND },
@@ -441,7 +452,7 @@ root(ROOTS.Zones, {
 					q(9955, {	-- Cho'war the Pillager (A)
 						["sourceQuest"] = 9954,	-- Corki's Ransom
 						["qg"] = 18445,	-- Corki
-						["coord"] = { 29.5, 26, NAGRAND },
+						["coord"] = { 29.5, 26.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Corki Freed
@@ -847,20 +858,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- #if NOT ANYCLASSIC
-						-- TODO: Investigate if this is necessary, we have maxReputation already.
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
-						-- #endif
 					}),
 					q(9886, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
-						-- #endif
 						["isMonthly"] = true,
 						["groups"] = {
 							i(25424),	-- Gem-Stuffed Envelope
@@ -871,10 +878,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.6 },	-- Consortium, Honored
-						-- #endif
 						["isMonthly"] = true,
 						["groups"] = {
 							i(25419),	-- Unmarked Bag of Gems
@@ -886,7 +891,7 @@ root(ROOTS.Zones, {
 						-- #endif
 						["qg"] = 18408,	-- Warden Moi'bff Jill
 						["coord"] = { 54.8, 70.8, NAGRAND },
-						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
+						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10477, {	-- More Warbeads!
@@ -894,12 +899,10 @@ root(ROOTS.Zones, {
 						["qg"] = 18408,	-- Warden Moi'bff Jill
 						["coord"] = { 54.8, 70.8, NAGRAND },
 						["maxReputation"] = { FACTION_KURENAI, EXALTED },	-- Kurenai, Exalted.
-						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
+						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 						["races"] = ALLIANCE_ONLY,
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 978.8 },	-- Kurenai, Exalted
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(9885, {	-- Membership Benefits
@@ -907,10 +910,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.7 },	-- Consortium, Revered
-						-- #endif
 						["isMonthly"] = true,
 						["groups"] = {
 							i(25422),	-- Bulging Sack of Gems
@@ -931,10 +932,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(9915, {	-- More Heads Full of Ivory
@@ -943,10 +942,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(9892, {	-- More Obsidian Warbeads
@@ -955,11 +952,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
-						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
-						-- #if NOT ANYCLASSIC
+						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.8 },	-- The Consortium, Exalted
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(10478, {	-- More Warbeads!
@@ -967,31 +962,30 @@ root(ROOTS.Zones, {
 						["qg"] = 18407,	-- Warden Bullrok
 						["coord"] = { 55.8, 37.8, NAGRAND },
 						["maxReputation"] = { FACTION_THE_MAGHAR, EXALTED },	-- The Maghar, Exalted.
-						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
+						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 						["races"] = HORDE_ONLY,
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 941.8 },	-- The Maghar, Exalted
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(10479, {	-- Proving Your Strength
 						["qg"] = 18407,	-- Warden Bullrok
 						["coord"] = { 55.8, 37.8, NAGRAND },
-						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
+						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 						["races"] = HORDE_ONLY,
 					}),
 					q(9893, {	-- Obsidian Warbeads
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },
-						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
+						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 					}),
 					q(9882, {	-- Stealing from Thieves
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9906, {	-- Message in a Battle
@@ -1612,9 +1606,7 @@ root(ROOTS.Zones, {
 						},
 						["qg"] = 18180,	-- Hemet Nesingwary
 						["coord"] = { 71.5, 40.8, NAGRAND },
-						["cost"] = {
-							{ "i", 24505, 1 },	-- Heart of Tusker
-						},
+						["cost"] = { { "i", 24505, 1 } },	-- Heart of Tusker
 						["groups"] = {
 							objective(1, {	-- 0/1 Heart of Tusker
 								["provider"] = { "i", 24505 },	-- Heart of Tusker
@@ -1764,7 +1756,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9936, {	-- WANTED: Giselda the Crone (A)
-						["provider"] = { "o", 182393 },	--	Telaar Bulletin Board
+						["provider"] = { "o", 182393 },	-- Telaar Bulletin Board
 						["coord"] = { 54.7, 70.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1784,7 +1776,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9935, {	-- WANTED: Giselda the Crone (H)
-						["provider"] = { "o", 182392 },	--	Garadar Bulletin Board
+						["provider"] = { "o", 182392 },	-- Garadar Bulletin Board
 						["coord"] = { 55.7, 38.0, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2188,7 +2180,7 @@ root(ROOTS.Zones, {
 							}),
 							i(33783, {	-- Design: Steady Talasite (RECIPE!)
 								["timeline"] = { ADDED_2_2_0 },
-								["cost"] = { { "i", 26044, 4 }, },	-- 4x Halaa Research Token
+								["cost"] = { { "i", 26044, 4 } },	-- 4x Halaa Research Token
 							}),
 							i(27648, {	-- Dreamstalker Leggings
 								["cost"] = {
@@ -2203,7 +2195,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							i(27680, {	-- Halaani Bag
-								["cost"] = { { "i", 26044, 8 }, },	-- 8x Halaa Research Token
+								["cost"] = { { "i", 26044, 8 } },	-- 8x Halaa Research Token
 							}),
 							i(27649, {	-- Hierophant's Leggings
 								["cost"] = {
@@ -2231,7 +2223,7 @@ root(ROOTS.Zones, {
 							}),
 							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["timeline"] = { ADDED_2_1_0 },
-								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
+								["cost"] = { { "i", 26044, 2 } },	-- 2x Halaa Research Token
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
 								["cost"] = {
@@ -2290,7 +2282,7 @@ root(ROOTS.Zones, {
 							}),
 							i(33783, {	-- Design: Steady Talasite (RECIPE!)
 								["timeline"] = { ADDED_2_2_0 },
-								["cost"] = { { "i", 26044, 4 }, },	-- 4x Halaa Research Token
+								["cost"] = { { "i", 26044, 4 } },	-- 4x Halaa Research Token
 							}),
 							i(27648, {	-- Dreamstalker Leggings
 								["cost"] = {
@@ -2305,7 +2297,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							i(27680, {	-- Halaani Bag
-								["cost"] = { { "i", 26044, 8 }, },	-- 8x Halaa Research Token
+								["cost"] = { { "i", 26044, 8 } },	-- 8x Halaa Research Token
 							}),
 							i(27649, {	-- Hierophant's Leggings
 								["cost"] = {
@@ -2333,7 +2325,7 @@ root(ROOTS.Zones, {
 							}),
 							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["timeline"] = { ADDED_2_1_0 },
-								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
+								["cost"] = { { "i", 26044, 2 } },	-- 2x Halaa Research Token
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
 								["cost"] = {

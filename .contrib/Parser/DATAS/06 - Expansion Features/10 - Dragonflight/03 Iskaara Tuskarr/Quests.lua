@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_ISKAARA_TUSKARR, {
 		n(RENOWN, {
@@ -29,7 +30,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-						["cost"] = {{ "i", 200071, 1 }},	-- 1x Sacred Tuskarr Totem
+						["cost"] = { { "i", 200071, 1 } },	-- 1x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 					q(70927, {	-- More Stolen Totems
@@ -37,7 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-						["cost"] = {{ "i", 200071, 5 }},	-- 5x Sacred Tuskarr Totem
+						["cost"] = { { "i", 200071, 5 } },	-- 5x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 					------ BoA Sacred Tuskarr Totem ------
@@ -46,7 +47,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-						["cost"] = {{ "i", 200449, 1 }},	-- 1x Sacred Tuskarr Totem
+						["cost"] = { { "i", 200449, 1 } },	-- 1x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 					q(71041, {	-- More Stolen Totems
@@ -54,7 +55,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-						["cost"] = {{ "i", 200449, 5 }},	-- 5x Sacred Tuskarr Totem
+						["cost"] = { { "i", 200449, 5 } },	-- 5x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 				}, {	-- RENOWN 3 --
@@ -95,9 +96,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 					}),
 					q(72291, {	-- Story of a Memorable Victory
+						-- ["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
 						["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
 						["isWeekly"] = true,
-						-- ["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
 					}),
 					q(72875, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
@@ -302,7 +303,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- 2024-05-16: This quest was no longer locked, possibly with 10.2.7
 						["lockCriteria"] = { 1, "questID", 72393 },	-- Dragon Isles Supplies [Renown 12]
 						["DisablePartySync"] = true,
-						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
+						-- ["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						-- #ENDIF
 						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
@@ -393,9 +394,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 					}),
 					q(72292, {	-- Story of a Spectacular Victory
+						-- ["sourceQuests"] = { 70978 },	-- Dragon Isles Champion's Tales (inaccurate)
 						["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
 						["isWeekly"] = true,
-						-- ["sourceQuests"] = { 70978 },	-- Dragon Isles Champion's Tales (inaccurate)
 					}),
 					q(72280, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik

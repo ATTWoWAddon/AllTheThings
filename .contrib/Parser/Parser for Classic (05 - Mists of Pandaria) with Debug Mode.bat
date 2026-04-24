@@ -1,1 +1,1 @@
-"Parser.exe" debug baseconfig=".config/classic/05 - Mists of Pandaria.config" config=".config/classic/Debug Mode.config"
+"Parser.exe" debug baseconfig=.config/retail/retail.config config=.config/retail/debug.config config=".config/classic/05 - Mists of Pandaria.config"

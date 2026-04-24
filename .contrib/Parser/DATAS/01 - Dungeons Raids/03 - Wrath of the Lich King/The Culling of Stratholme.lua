@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(279, {	-- The Culling of Stratholme
 		["mapID"] = THE_CULLING_OF_STRATHOLME,
@@ -335,6 +336,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								["timeline"] = { REMOVED_11_1_5 },
 							}),
 							i(238992, {	-- Mobius Band
+								["timeline"] = { ADDED_11_1_5 },
+							}),
+							i(238990, {	-- Necklace of the Chrono-Lord
 								["timeline"] = { ADDED_11_1_5 },
 							}),
 						},

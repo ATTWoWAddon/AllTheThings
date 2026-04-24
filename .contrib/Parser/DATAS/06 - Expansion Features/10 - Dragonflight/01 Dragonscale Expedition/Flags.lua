@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 CARTOGRAPHERS_FLAG = createHeader({
 	readable = "Cartographer's Flag",
 	icon = 1723999,
@@ -8,6 +9,7 @@ CARTOGRAPHERS_FLAG = createHeader({
 		en = WOWAPI_GetSpellName(382288),
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(CARTOGRAPHERS_FLAG, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 } }, {

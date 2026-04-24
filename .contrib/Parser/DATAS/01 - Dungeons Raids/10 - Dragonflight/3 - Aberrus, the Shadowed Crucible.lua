@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 ------ Encounter Constants ------
 local KAZZARA = 2522;
 local AMALGAMATION = 2529;
@@ -282,8 +283,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
--- TODO fix once Blizzard stops clowning old LFRs
-local TIMELINE_LFR = { ADDED_10_1_0, REMOVED_11_0_2 }
+local TIMELINE_LFR = { ADDED_10_1_0, REMOVED_11_0_2, ADDED_12_0_5 }
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
@@ -597,7 +597,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				n(205676, {	-- Norzko the Proud
 					["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
 					["groups"] = bubbleDownFiltered({
-						["cost"] = {{ "i", 204843, 1 }},	-- Draconic Mark of Mastery
+						["cost"] = { { "i", 204843, 1 } },	-- Draconic Mark of Mastery
 						["bonusID"] = 7532,
 					},FILTERFUNC_itemID,{
 						cl(DEATHKNIGHT, {
@@ -773,6 +773,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(206955),	-- Highland Drake: Embodiment of the Hellforged (MM!) [LFR, Normal, Heroic]
 				}),
 			}),
+			-- #if AFTER 12.0.5
+			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
+				["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
+				["coord"] = { 58.5, 35.4, VALDRAKKEN },
+			}),
+			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR, {["timeline"] = TIMELINE_LFR}).AddGroups({
 				ZoneDrops({
 					i(204075, {	-- Whelping's Shadowflame Crest Fragment

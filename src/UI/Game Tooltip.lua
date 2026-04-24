@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local pairs, ipairs, math_floor, tonumber, pi, MODELFRAME_DEFAULT_ROTATION

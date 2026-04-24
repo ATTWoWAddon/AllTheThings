@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	inst(1267, {	-- Priory of the Sacred Flame
 		["coord"] = { 41.3, 49.3, HALLOWFALL },
@@ -92,6 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 207940 },	-- Prioress Murrpray
 					["groups"] = {
 						ach(40596),	-- Mythic: Priory of the Sacred Flame
+						ach(61599, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: Priory of the Sacred Flame Guild Run
 					},
 				}),
 			})),

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
@@ -18,6 +19,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						["groups"] = { i(252301) },	-- Warden's Companion (PET!)
 					}),
 					ach(42317),	-- Campaign: Azsuna
+					ach(42318, {	-- Court of Farondis
+						i(250307, {	-- Tome of the Corrupt (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(42518),	-- Elusive Foes: Azsuna
 					ach(42516),	-- Explore Azsuna
 					ach(42517),	-- Hidden Treasures: Azsuna
@@ -36,6 +42,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}},
 					}),
 					ach(61103),	-- Sojourner of Azsuna
+					ach(61218, {	-- The Wardens
+						i(251778, {	-- Sentinel’s Moonwing Gaze (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(42515, {	-- Tour Azsuna
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -45,25 +56,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}},
 					}),
 				}),
-				n(FACTIONS, {
-					faction(FACTION_COURT_OF_FARONDIS, {
-						n(ACHIEVEMENTS, {
-							ach(42318, {	-- Court of Farondis
-								--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Tome of the Corrupt (DECOR!)
-							}),
-						}),
-					}),
-					faction(FACTION_THE_WARDENS, {
-						n(ACHIEVEMENTS, {
-							ach(61218, {	-- The Wardens
-								--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Sentinel’s Moonwing Gaze (DECOR!)
-							}),
-						}),
-					}),
-				}),
 				n(RARES, {
 					n(244782, {	-- Eye of Greed
 						["coord"] = { 66.0, 45.9, AZSUNA },
+					}),
+				}),
+				n(TREASURES, {
+					header(HEADERS.Object, 240645, {	-- Glimmering Treasure Chest
+						["provider"] = { "o", 240645 },	-- Glimmering Treasure Chest
+						["groups"] = { i(251674) },	-- Sssurine's Luxurious Sssandals
 					}),
 				}),
 				n(ZONE_REWARDS, {

@@ -1,29 +1,31 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local BEEGLE_BLASTFUSE = {
 	["crs"] = { 66635 },
-	["coord"] = { 28.6, 33.8, HOWLING_FJORD },									
+	["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 };
 local GUTRETCH = {
 	["crs"] = { 66639 },
-	["coord"] = { 13.2, 66.8, ZULDRAK },										
+	["coord"] = { 13.2, 66.8, ZULDRAK },
 };
 local MAYOR_PAYNE = {
 	["crs"] = { 66675 },
-	["coord"] = { 77.4, 19.6, ICECROWN },										
+	["coord"] = { 77.4, 19.6, ICECROWN },
 };
 local NEARLY_HEADLESS_JACOB = {
 	["crs"] = { 66636 },
-	["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },										
+	["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
 };
 local OKRUT_DRAGONWASTE = {
 	["crs"] = { 66638 },
-	["coord"] = { 59.0, 77.0, DRAGONBLIGHT },						
+	["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 };
+
 root(ROOTS.Zones, m(NORTHREND, {
 	n(ACHIEVEMENTS, {
-		header(HEADERS.Achievement, 60956, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Family Battler of Northrend
+		header(HEADERS.Achievement, 60956, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Family Battler of Northrend
 			petbattle(ach(60956, {	-- Family Battler of Northrend
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -38,10 +40,8 @@ root(ROOTS.Zones, m(NORTHREND, {
 					60953,	-- Mechanical Battler of Northrend
 					60954,	-- Undead Battler of Northrend
 				}},
-				["timeline"] = { ADDED_11_2_7 },
-				["groups"] = {
-					i(222967),	-- Webbers (PET!)
-				},
+				["timeline"] = { ADDED_12_0_0 },
+				["groups"] = { i(222967) },	-- Webbers (PET!)
 			})),
 			petbattle(ach(60942, {	-- Aquatic Battler of Northrend
 				crit(107709, {	-- Beegle Blastfuse

@@ -2,6 +2,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_FOUR, inst(2784, bubbleDownSelf({["timeline"] = { ADDED_1_15_3 }}, {	-- Demon Fall Canyon
 		["lore"] = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",

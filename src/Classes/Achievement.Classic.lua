@@ -1,4 +1,8 @@
 local _, app = ...
+if app.GameBuildVersion > 40000 then
+	-- Not compatible post-Cata.
+	return;
+end
 local L = app.L
 
 -- Globals
@@ -6,8 +10,7 @@ local select, tostring, ipairs, pairs, tinsert, tonumber
 	= select, tostring, ipairs, pairs, tinsert, tonumber;
 
 -- App & Module locals
-local SearchForField, SearchForFieldContainer
-	= app.SearchForField, app.SearchForFieldContainer;
+local SearchForField = app.SearchForField;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- WoW API Cache
@@ -193,19 +196,6 @@ local function OnTooltipForAchievementCriteriaData(t, tooltipInfo)
 			right = t.achievementData.text or achievementID,
 		});
 	end
-	if t.ShouldShowRelatedThingsInTooltip then
-		local relatedThings = {};
-		t.GetRelatedThings(t.data, relatedThings);
-		if #relatedThings > 0 then
-			tinsert(tooltipInfo, { left = " " });
-			for j,thing in ipairs(relatedThings) do
-				tinsert(tooltipInfo, {
-					left = "  |T" .. thing.icon .. ":0|t " .. thing.text,
-					right = app.GetProgressTextForTooltip(thing)
-				});
-			end
-		end
-	end
 	if not t.collectible and app.GameBuildVersion < 30000 then
 		tinsert(tooltipInfo, {
 			left = "\n \nCRIEVE NOTE: This cannot be collected prior to Wrath Classic as it lacks a permanent collectible state.",
@@ -251,6 +241,9 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 	["rank"] = function(t) return t.data.rank; end,
 	["collected"] = function(t)
 		if t.data.collectible then
+			if t.data.collected then
+				return 1;
+			end
 			if app.Settings.AccountWide.Achievements then
 				-- Check to see if the criteria was completed.
 				local achievementID = t.achievementID;
@@ -258,7 +251,6 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 					return 2;
 				end
 			end
-			return t.data.collected and 1;
 		end
 	end,
 	["saved"] = function(t)
@@ -269,11 +261,11 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 	["GetRelatedThings"] = function(t)
 		return t.data.GetRelatedThings;
 	end,
-	["ShouldShowRelatedThingsInTooltip"] = function(t)
-		return t.data.ShouldShowRelatedThingsInTooltip;
-	end,
 	["OnTooltip"] = function(t)
 		return OnTooltipForAchievementCriteriaData;
+	end,
+	["statistic"] = function(t)
+		return t.data.statistic;
 	end,
 }, function(t)
 	local data = AchievementCriteriaData[t.criteriaID];
@@ -352,6 +344,35 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	end
 	local GetAchievementNumCriteria = _G["GetAchievementNumCriteria"];
 	local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
+	local InvalidStatistics = setmetatable({
+		["0"] = 1,
+		["1"] = 1,
+		["2"] = 1,
+		["3"] = 1,
+		["4"] = 1,
+		["5"] = 1,
+		["6"] = 1,
+		["7"] = 1,
+		["8"] = 1,
+		["9"] = 1,
+		[""] = 1,
+	}, { __index=function(t,key)
+		if not key or key:match("%W") or not key:match(" %/ ") then return 1 end
+	end})
+	fields.statistic = function(t)
+		local achievementID = t.achievementID;
+		if achievementID then
+			if GetAchievementNumCriteria(achievementID) == 1 then
+				local quantity, reqQuantity = select(4, GetAchievementCriteriaInfo(achievementID, 1));
+				if quantity and reqQuantity and reqQuantity > 1 then
+					return tostring(quantity) .. " / " .. tostring(reqQuantity);
+				end
+			end
+			---@diagnostic disable-next-line: missing-parameter
+			local stat = GetStatistic(achievementID);
+			if stat and not InvalidStatistics[stat] then return stat; end
+		end
+	end
 	local onTooltipForAchievement = function(t, tooltipInfo)
 		local achievementID = t.achievementID;
 		if achievementID and IsShiftKeyDown() then
@@ -418,7 +439,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	local function refreshAchievementCollection()
 		if ATTAccountWideData then
 			local charAchievements = app.CurrentCharacter.Achievements;
-			for achievementID,container in pairs(SearchForFieldContainer("achievementID")) do
+			for achievementID,container in pairs(app.GetFieldContainer("achievementID")) do
 				if not AchievementData[achievementID] then
 					local collected = select(13, GetAchievementInfo(achievementID));
 					if collected ~= charAchievements[achievementID] then
@@ -478,6 +499,9 @@ app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields,
 	["parentCategoryID"] = function(t) return t.data.category or -1; end,
 	["collected"] = function(t)
 		if t.data.collectible then
+			if t.data.collected then
+				return 1;
+			end
 			if app.Settings.AccountWide.Achievements then
 				-- Check to see if the criteria was completed.
 				local achievementID = t.achievementID;
@@ -485,7 +509,6 @@ app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields,
 					return 2;
 				end
 			end
-			return t.data.collected and 1;
 		end
 	end,
 	["saved"] = function(t)
@@ -498,6 +521,9 @@ app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields,
 	end,
 	["OnTooltip"] = function(t)
 		return OnTooltipForAchievement;
+	end,
+	["statistic"] = function(t)
+		return t.data.statistic;
 	end,
 }, function(t)
 	local data = AchievementData[t.achievementID];

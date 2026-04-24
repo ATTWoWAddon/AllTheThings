@@ -178,7 +178,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(6201, { ["name"] = "<UNUSED> The Legacy of the Ashbringer", }),
 			q(6606, { ["name"] = "A Little Luck", }),	-- Winterspring
 			q(785, { ["name"] = "A Strategic Alliance", }),
-			q(908, { ["name"] = "Amongst the Ruins", }),
 			q(8489, { ["name"] = "An Intact Converter", }),
 			q(8478, { ["name"] = "Choose Your Weapon", }),
 			q(8230, { ["name"] = "Collin's Test Quest", }),
@@ -226,6 +225,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(7462, { ["name"] = "The Treasure of the Shen'dralar", }),
 			q(7790, { ["name"] = "The Written Word", }),
 			q(7521, { ["name"] = "Thunderaan the Windseeker", }),
+			q(6131, { ["name"] = "Timbermaw Ally (old version, deprecated)", }),
 			q(9556, { ["name"] = "To The Victor...", }),
 			q(2019, { ["name"] = "Tools of the Trade", }),
 			q(8340, { ["name"] = "Twilight Signet Ring <NYI> <TXT>", }),
@@ -2540,6 +2540,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(41820, { ["name"] = "Walk Without Rhythm", }),	-- Walk Without Rhythm
 			q(40590, { ["name"] = "Warrior Inbound", }),	-- Warrior Inbound
 			q(37927, { ["name"] = "We Meet at Light's Hope", }),	-- We Meet at Light's Hope
+			q(44115, { ["name"] = "Welcome to Legion!", }),	-- Welcome to Legion!
 			q(37930, { ["name"] = "Whelp? That Happened.", }),	-- Whelp? That Happened.
 			q(41559, { ["name"] = "Where's Our Wine? - Tracking", }),	-- Where's Our Wine? - Tracking
 			q(41832, { ["name"] = "White Water Terror", }),	-- White Water Terror
@@ -2668,8 +2669,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(43635, { ["name"] = "Needs of the Many", ["_drop"] = { "g" }, }),	-- Needs of the Many
 			q(44091, { ["name"] = "Needs of the Many", }),	-- Needs of the Many
 			q(39868, { ["name"] = "Neltharion's Lair Heroic Reward Quest", }),	-- Neltharion's Lair Heroic Reward Quest
-			q(41211, { ["name"] = "Neltharion's Lair: Neltharion's Treasure", }),	-- Neltharion's Lair: Neltharion's Treasure
-			q(41857, { ["name"] = "Neltharion's Lair: Stonedark Slaves", }),	-- Neltharion's Lair: Stonedark Slaves
 			q(38661, { ["name"] = "Nightmare Bombs", }),	-- Nightmare Bombs
 			q(40811, { ["name"] = "Not to Scale", }),	-- Not to Scale
 			q(43742, { ["name"] = "Odyn Death Conversation Enabled", }),	-- Odyn Death Conversation Enabled
@@ -4653,11 +4652,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 8.0.1.26918
 			-- 8.0.1.26926
 			q(53644),	--
-			q(53653),	--
-			q(53654),	--
-			q(53655),	--
-			q(53656),	--
-			q(53657),	--
 			-- 8.0.1.26936
 			q(53659),	--
 			q(53660),	--
@@ -4709,11 +4703,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 50,
 			}),
 			q(54748, {
-			}),
-			q(54979, {
-				["description"] = "Category: |cFFf09f26World PvP|r",
-				["lvl"] = 50,
-				["races"] = HORDE_ONLY,
 			}),
 			-- tools
 			-- 8.1.0.27826
@@ -5609,7 +5598,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(58898),	--
 			q(58899),	--
 			q(58913),	--
-			q(58925),	--
 			q(58935),	--
 			q(58942),	--
 			q(58943),	--
@@ -5891,10 +5879,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(59986),	-- Wide Worlds of Catalysts
 			q(60888),	-- Ceremony of Awakening
 			q(60599),	-- Soul Shape
-			q(62012),	-- Ensemble: Stitched Alacrity of Maldraxxus
-			q(62011),	-- Ensemble: Stitched Authority of Maldraxxus
-			q(62013),	-- Ensemble: Stitched Guile of Maldraxxus
-			q(62014),	-- Ensemble: Stitched Rationale of Maldraxxus
 			q(60380),	-- A Source of Sorrowvine (Kyrian)
 			q(60379),	-- A Source of Sorrowvine (Necrolords)
 			q(60373),	-- A Source of Sorrowvine (Night Fae)
@@ -6947,11 +6931,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(63464),	--
 			q(63477),	--
 			q(63577),	--
-			q(63596),	--
-			q(63600),	--
-			q(63629),	--
-			q(63632),	--
-			q(63636),	--
 			q(63640),	--
 			q(63715),	--
 			q(63716),	--
@@ -7249,7 +7228,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65423),	--
 			q(65430),	--
 			q(65434),	--
-			--q(65440),	-- used for questID 82059 (Transmutation Station) in 11.0.2 (TODO: not sure what a better way to solve this)
+			-- q(65440),	-- used for questID 82059 (Transmutation Station) in 11.0.2 (TODO: not sure what a better way to solve this)
 			q(65449),	--
 			q(65450),	--
 			q(65462),	--
@@ -7404,14 +7383,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66109),	-- Enchanted Compass
 			q(69840),	-- Enraged Sapphire
 			q(69849),	-- Enraged Steamburst Elemental
-			q(65569),	-- Ensemble: Twisted Arcanum Regalia
-			q(65676),	-- Ensemble: Chains of the Honored Valarjar
-			q(65734),	-- Ensemble: Battleplate of the Honored Valarjar
 			q(70596),	-- Essence of Arcana
 			q(66496),	-- Expedition Task Accepted (spellID 372078)
 			q(66497),	-- Expedition Task Accepted (spellID 372095)
 			q(70178),	-- Expedition Supply Kit
 			q(70811),	-- Expert Excavation Tools
+			q(71359),	-- First Craft: Reinforced Plating
 			q(66355),	-- Flag Tracking Quest (spellID 371096)
 			q(66161),	-- For the Future [NYI]
 			q(70508),	-- Fueling the Engine: Second Spark
@@ -7910,7 +7887,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(67228),	--
 			q(67749),	--
 			q(68086),	--
-			q(69556),	--
 			q(69853),	--
 			q(69860),	--
 			q(69881),	--
@@ -8035,7 +8011,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(71312),	--
 			q(71339),	--
 			q(71356),	--
-			q(71359),	--
 			q(71371),	--
 			q(71372),	--
 			q(71373),	--
@@ -8194,10 +8169,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75065),	-- Campaign Testing - Dummy Quest
 			q(73696),	-- Dragonscale Expedition Flag - Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
 			q(73702),	-- Dragonscale Expedition Flag - Flag at 80.5, 48.1, THE_FORBIDDEN_REACH
-			q(74363),	-- Ensemble: Cloudburst Regalia
-			q(74365),	-- Ensemble: Cyclonic Battlegear
-			q(74364),	-- Ensemble: Dust Devil Armor
-			q(74366),	-- Ensemble: Firestorm Armor
 			q(74361),	-- Deprecated Quest
 			q(74362),	-- Deprecated Quest
 			q(74774, {["_drop"] = {"g"}}),	-- More Keys
@@ -8399,8 +8370,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75536),	--
 			q(75605),	--
 			q(76198),	--
-			q(76226),	--
-			q(76237),	--
 			q(76245),	--
 			q(76289),	--
 			q(76360),	--
@@ -8636,45 +8605,1042 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
-			q(77904),	-- Treasures, Not Trash
+			q(81469),	-- charlie's test quest
+			q(82971),	-- Queue Bonus
+			q(82972),	-- Queue Bonus
+			q(82973),	-- Queue Bonus
+			q(82974),	-- Queue Bonus
+			q(82975),	-- Queue Bonus
+			q(82976),	-- Queue Bonus
+			q(82977),	-- Queue Bonus
+			q(82978),	-- Queue Bonus
+			q(82980),	-- Queue Bonus
+			q(83071),	-- Queue Bonus
+			q(83072),	-- Queue Bonus
+			q(83073),	-- Queue Bonus
+			q(83074),	-- Queue Bonus
 			q(77907),	-- Shadow Spear
+			q(82979),	-- Tracking Quest
+			q(83075),	-- Tracking Quest
+			q(83076),	-- Tracking Quest
+			q(83077),	-- Tracking Quest
+			q(77904),	-- Treasures, Not Trash
+			q(75889),	--
+			q(75933),	--
+			q(75934),	--
+			q(76022),	--
+			q(76023),	--
+			q(76068),	--
+			q(76069),	--
+			q(76115),	--
+			q(76119),	--
+			q(76148),	--
+			q(76149),	--
+			q(76150),	--
+			q(76151),	--
+			q(76152),	--
+			q(76153),	--
+			q(76154),	--
+			q(79436),	--
+			q(79454),	--
+			q(79488),	--
+			q(79516),	--
+			q(79549),	--
+			q(80319),	--
+			q(80379),	--
+			q(80381),	--
+			q(80390),	--
+			q(80445),	--
+			q(81585),	--
+			q(81665),	--
+			q(81958),	--
+			q(82136),	--
+			q(82353),	--
+			q(82415),	--
+			q(82834),	--
+			q(82999),	--
+			q(83000),	--
+			q(83001),	--
+			q(83002),	--
+			q(83003),	--
+			q(83006),	--
+			q(83007),	--
+			q(83008),	--
+			q(83009),	--
+			q(83010),	--
+			q(83011),	--
+			q(83014),	--
+			q(83015),	--
+			q(83016),	--
+			q(83017),	--
+			q(83018),	--
+			q(83019),	--
+			q(83020),	--
+
+			-- Unburied Aspirant's Cloak Rack (Item 223639)
+			q(82343),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82409),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82410),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82411),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82412),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82413),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			-- Unburied Gladiator's Cloak Rack (Item 223640)
+			q(82420),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82422),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82423),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82425),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82426),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82427),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82428),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82430),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82438),	-- Ensemble: Unburied Gladiator's Cloak Rack
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
 		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-			q(80950),	-- First Craft: Deepfury Hide
-			q(81114),	-- First Craft: Vicious Flask of Manifested Fury
+			q(79085),	-- A Pile of Fish
+			q(79087),	-- A Pile of Clams
+			q(82650),	-- A Pinch of Salt
+			q(80062),	-- Basic Kill Quest [DNT]
+			q(82705),	-- Bountiful Delves - Template
+			q(83742),	-- Call to Attention
+			q(83562),	-- Calling Quest (DNT)
+			q(83561),	-- Campaign Quest (DNT)
+			q(80023),	-- Cloning Conundrum [DNT]
+			q(82163),	-- Crackdown on Cask-cruncher
+			q(81711),	-- Creature Name
+			q(79255),	-- Crunchy Competition [DNT]
+			q(83564),	-- Daily Quest (DNT)
 			q(81651),	-- Delver's Guide to Delves
+			q(83085),	-- DEPRECATED
+			q(82627),	-- DNT REUSE ME
+			q(82334),	-- DO NOT USE
+			q(82366),	-- DO NOT USE
+			q(82368),	-- DO NOT USE
+			q(82380),	-- DO NOT USE
+			q(82405),	-- DO NOT USE
+			q(82408),	-- DO NOT USE
+			q(82419),	-- DO NOT USE
+			q(82429),	-- DO NOT USE
+			q(82447),	-- DO NOT USE
+			q(83040),	-- DO NOT USE
+			q(84134),	-- Enchanting Services Requested
+			q(79006),	-- Faction Switch
+			q(82454),	-- Firebath Tuning
+			q(80950),	-- First Craft: Deepfury Hide
+			q(81111),	-- First Craft: ItemID 212284
+			q(81114),	-- First Craft: Vicious Flask of Manifested Fury
+			q(82421),	-- For Your Next Delve
+			q(78038),	-- Forbidden Journal
+			q(83568),	-- Important Quest (DNT)
+			q(80400),	-- Item Collection [DNT]
+			q(76578),	-- Khaz Algar Rally
+			q(77581),	-- Kill them Gnolls!
+			q(82244),	-- Lava Pearls
+			q(83560),	-- Legendary Quest (DNT)
+			q(79567),	-- Legitimate Business Practices
+			q(83567),	-- Meta Quest (DNT)
+			q(79111),	-- Missing Lynx
+			q(79568),	-- Nothing to See Here
+			q(81984),	-- Push Back the Dark
+			q(78940),	-- Quest 00
+			q(83029),	-- Read-Only Memories
+			q(83559),	-- Regular Quest (DNT)
+			q(77164),	-- Scarab Test One
+			q(78060),	-- Strange Corpses
+			q(80397),	-- Sweets Seekers
+			q(79387),	-- Test Quest - Account Test (DNT)
+			q(79966),	-- Test Quest
+			q(82236),	-- Test
+			q(82337),	-- Test Quest - First time Rewards (DNT)
+			q(82842),	-- Test Quest - Combined First time Rewards (DNT)
+			q(79276),	-- The Squishier, the Better [DNT]
+			q(81486),	-- The Upper Hand
+			q(84373),	-- The Beta Within
 			q(82199),	-- TWW Alpha/Beta Questauren Isle of Dorn skip
 			q(82200),	-- TWW Alpha/Beta Questauren Ringing Deeps skip
 			q(82201),	-- TWW Alpha/Beta Questauren Hallowfall skip
 			q(82202),	-- TWW Alpha/Beta Questauren Azj-Kahet skip
-			q(82366, {	-- DO NOT USE
-			-- ["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
-			-- ["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
-			-- ["groups"] = {
-			-- 	i(226146),	-- Handful of Humming Shinies
-			-- },
-			}),
-			q(82421, {	-- For Your Next Delve
-			-- ["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
-			-- ["coord"] = { 55.3, 41.2, AZJ_KAHET },
-			}),
+			q(79113),	-- UNUSED PLACEHOLDER
+			q(81671),	-- UNUSED [DNT]
+			q(81684),	-- UNUSED [DNT]
+			q(83750),	-- Wanted: Zuramat the Obliterator
+			q(79622),	-- Warband Test Quest (DNT)
+			q(82757),	-- Webbed Ingots
+			q(82760),	-- Webbed Ingots
+			q(82761),	-- Webbed Ingots
+			q(83565),	-- Weekly Quest (DNT)
+			q(82397),	-- zzOLD Renown Quest DO NOT USE
 			q(85725),	-- (Argent Dawn Valor Token)
 			q(85726),	-- (Argent Dawn Valor Token)
 			q(85727),	-- (Death's Bargaining Chip)
 			q(85728),	-- (Death's Bargaining Chip)
+			q(84253),	-- [depreciated] Blacksmithing Orders Requested
+			q(78240),	-- [DNT] DEPRECATED
+			q(78351),	-- [DNT] DEPRECATED
+			q(79000),	-- [DNT]
+			q(80068),	-- [DNT] Infirmary Tracker
+			q(82336),	-- [DNT] Supplies Reward
+			q(82341),	-- [DNT] Supplies Reward
+			q(82350),	-- [DNT] Supplies Reward
+			q(82351),	-- [DNT] Delve Key Reward
+			q(82352),	-- [DNT] Supplies Reward
+			q(82357),	-- [DNT] Supplies Reward
+			q(82360),	-- [DNT] Delve Key Reward
+			q(82386),	-- [DNT] Valorstones Reward
+			q(82389),	-- [DNT] Delve Key Reward
+			q(82392),	-- [DNT] Valorstones Reward
+			q(82399),	-- [DNT] Delve Key Reward
+			q(82401),	-- [DNT] Delve Key Reward
+			q(82402),	-- [DNT] Supplies Reward
+			q(82424),	-- [DNT] Crests Reward
+			q(82436),	-- [DNT] Delve Key Reward
+			q(82437),	-- [DNT] Supplies Reward
+			q(82439),	-- [DNT] Crests Reward
+			q(82445),	-- [DNT] Valorstones Reward
+			q(83086),	-- [DNT] Local 1 - Q8 - Breadcrumb
+			q(82535),	-- [REUSE THIS RECORD]
+			q(82537),	-- [REUSE THIS RECORD]
+			q(79245),	-- [Unused - Reuse Quest Bit]
+			q(76243),	--
+			q(76260),	--
+			q(76353),	--
+			q(76454),	--
+			q(76596),	--
+			q(77676),	--
+			q(77782),	--
+			q(77821),	--
+			q(77956),	--
+			q(78036),	--
+			q(78059),	--
+			q(78123),	--
+			q(78125),	--
+			q(78205),	--
+			q(78227),	--
+			q(78230),	--
+			q(78241),	--
+			q(78243),	--
+			q(78556),	--
+			q(78603),	--
+			q(78605),	--
+			q(78673),	--
+			q(78698),	--
+			q(78740),	--
+			q(78750),	--
+			q(78828),	--
+			q(78836),	--
+			q(78930),	--
+			q(78935),	--
+			q(79005),	--
+			q(79075),	--
+			q(79076),	--
+			q(79083),	--
+			q(79084),	--
+			q(79086),	--
+			q(79138),	--
+			q(79141),	--
+			q(79161),	--
+			q(79169),	--
+			q(79170),	--
+			q(79171),	--
+			q(79172),	--
+			q(79181),	--
+			q(79182),	--
+			q(79183),	--
+			q(79185),	--
+			q(79187),	--
+			q(79190),	--
+			q(79195),	--
+			q(79228),	--
+			q(79238),	--
+			q(79277),	--
+			q(79279),	--
+			q(79280),	--
+			q(79281),	--
+			q(79283),	--
+			q(79284),	--
+			q(79285),	--
+			q(79286),	--
+			q(79287),	--
+			q(79288),	--
+			q(79289),	--
+			q(79290),	--
+			q(79291),	--
+			q(79292),	--
+			q(79293),	--
+			q(79294),	--
+			q(79296),	--
+			q(79299),	--
+			q(79307),	--
+			q(79334),	--
+			q(79345),	--
+			q(79347),	--
+			q(79386),	--
+			q(79478),	--
+			q(79479),	--
+			q(79491),	--
+			q(79506),	--
+			q(79509),	--
+			q(79519),	--
+			q(79524),	--
+			q(79531),	--
+			q(79548),	--
+			q(79557),	--
+			q(79560),	--
+			q(79562),	--
+			q(79566),	--
+			q(79569),	--
+			q(79570),	--
+			q(79571),	--
+			q(79572),	--
+			q(79623),	--
+			q(79640),	--
+			q(79653),	--
+			q(79656),	--
+			q(79657),	--
+			q(79660),	--
+			q(79665),	--
+			q(79673),	--
+			q(79696),	--
+			q(79697),	--
+			q(79699),	--
+			q(79943),	--
+			q(79962),	--
+			q(79993),	--
+			q(80002),	--
+			q(80050),	--
+			q(80051),	--
+			q(80111),	--
+			q(80146),	--
+			q(80192),	--
+			q(80193),	--
+			q(80194),	--
+			q(80195),	--
+			q(80317),	--
+			q(80326),	--
+			q(80327),	--
+			q(80328),	--
+			q(80329),	--
+			q(80330),	--
+			q(80331),	--
+			q(80332),	--
+			q(80333),	--
+			q(80340),	--
+			q(80341),	--
+			q(80351),	--
+			q(80374),	--
+			q(80375),	--
+			q(80376),	--
+			q(80377),	--
+			q(80403),	--
+			q(80419),	--
+			q(80486),	--
+			q(80491),	--
+			q(80493),	--
+			q(80495),	--
+			q(80496),	--
+			q(80528),	--
+			q(80532),	--
+			q(80533),	--
+			q(80537),	--
+			q(80561),	--
+			q(80575),	--
+			q(80588),	--
+			q(80621),	--
+			q(80622),	--
+			q(80674),	--
+			q(80675),	--
+			q(80683),	--
+			q(80686),	--
+			q(80711),	--
+			q(80740),	--
+			q(80741),	--
+			q(80742),	--
+			q(80752),	--
+			q(80753),	--
+			q(80754),	--
+			q(80755),	--
+			q(80756),	--
+			q(80757),	--
+			q(80758),	--
+			q(80759),	--
+			q(80760),	--
+			q(80761),	--
+			q(80762),	--
+			q(80763),	--
+			q(80764),	--
+			q(80765),	--
+			q(80766),	--
+			q(80767),	--
+			q(80768),	--
+			q(80769),	--
+			q(80770),	--
+			q(80771),	--
+			q(80772),	--
+			q(80773),	--
+			q(80774),	--
+			q(80775),	--
+			q(80776),	--
+			q(80777),	--
+			q(80778),	--
+			q(80779),	--
+			q(80780),	--
+			q(80781),	--
+			q(80782),	--
+			q(80783),	--
+			q(80784),	--
+			q(80785),	--
+			q(80786),	--
+			q(80787),	--
+			q(80788),	--
+			q(80789),	--
+			q(80790),	--
+			q(80809),	--
+			q(80844),	--
+			q(80845),	--
+			q(80857),	--
+			q(80858),	--
+			q(80874),	--
+			q(80875),	--
+			q(80876),	--
+			q(80877),	--
+			q(80878),	--
+			q(80879),	--
+			q(80880),	--
+			q(80881),	--
+			q(80882),	--
+			q(80883),	--
+			q(80884),	--
+			q(80885),	--
+			q(80886),	--
+			q(80887),	--
+			q(80888),	--
+			q(80889),	--
+			q(80981),	--
+			q(80982),	--
+			q(80983),	--
+			q(80984),	--
+			q(80985),	--
+			q(80986),	--
+			q(80987),	--
+			q(80988),	--
+			q(80989),	--
+			q(81079),	--
+			q(81080),	--
+			q(81081),	--
+			q(81082),	--
+			q(81083),	--
+			q(81084),	--
+			q(81085),	--
+			q(81086),	--
+			q(81087),	--
+			q(81088),	--
+			q(81089),	--
+			q(81091),	--
+			q(81093),	--
+			q(81094),	--
+			q(81117),	--
+			q(81133),	--
+			q(81134),	--
+			q(81135),	--
+			q(81136),	--
+			q(81137),	--
+			q(81138),	--
+			q(81139),	--
+			q(81149),	--
+			q(81150),	--
+			q(81151),	--
+			q(81152),	--
+			q(81153),	--
+			q(81154),	--
+			q(81155),	--
+			q(81156),	--
+			q(81157),	--
+			q(81158),	--
+			q(81159),	--
+			q(81160),	--
+			q(81161),	--
+			q(81162),	--
+			q(81163),	--
+			q(81164),	--
+			q(81165),	--
+			q(81166),	--
+			q(81167),	--
+			q(81168),	--
+			q(81169),	--
+			q(81170),	--
+			q(81171),	--
+			q(81172),	--
+			q(81173),	--
+			q(81174),	--
+			q(81175),	--
+			q(81176),	--
+			q(81177),	--
+			q(81178),	--
+			q(81179),	--
+			q(81180),	--
+			q(81181),	--
+			q(81182),	--
+			q(81183),	--
+			q(81184),	--
+			q(81185),	--
+			q(81186),	--
+			q(81187),	--
+			q(81188),	--
+			q(81189),	--
+			q(81190),	--
+			q(81191),	--
+			q(81230),	--
+			q(81231),	--
+			q(81247),	--
+			q(81254),	--
+			q(81256),	--
+			q(81262),	--
+			q(81263),	--
+			q(81264),	--
+			q(81265),	--
+			q(81266),	--
+			q(81267),	--
+			q(81268),	--
+			q(81269),	--
+			q(81270),	--
+			q(81271),	--
+			q(81272),	--
+			q(81273),	--
+			q(81274),	--
+			q(81275),	--
+			q(81276),	--
+			q(81277),	--
+			q(81278),	--
+			q(81279),	--
+			q(81280),	--
+			q(81281),	--
+			q(81282),	--
+			q(81283),	--
+			q(81284),	--
+			q(81285),	--
+			q(81286),	--
+			q(81287),	--
+			q(81288),	--
+			q(81289),	--
+			q(81299),	--
+			q(81300),	--
+			q(81302),	--
+			q(81334),	--
+			q(81335),	--
+			q(81336),	--
+			q(81337),	--
+			q(81338),	--
+			q(81348),	--
+			q(81362),	--
+			q(81367),	--
+			q(81368),	--
+			q(81369),	--
+			q(81370),	--
+			q(81371),	--
+			q(81372),	--
+			q(81373),	--
+			q(81374),	--
+			q(81375),	--
+			q(81376),	--
+			q(81377),	--
+			q(81378),	--
+			q(81379),	--
+			q(81380),	--
+			q(81381),	--
+			q(81383),	--
+			q(81384),	--
+			q(81385),	--
+			q(81389),	--
+			q(81393),	--
+			q(81394),	--
+			q(81395),	--
+			q(81396),	--
+			q(81397),	--
+			q(81398),	--
+			q(81399),	--
+			q(81400),	--
+			q(81401),	--
+			q(81402),	--
+			q(81403),	--
+			q(81404),	--
+			q(81405),	--
+			q(81406),	--
+			q(81407),	--
+			q(81408),	--
+			q(81409),	--
+			q(81410),	--
+			q(81411),	--
+			q(81412),	--
+			q(81413),	--
+			q(81414),	--
+			q(81431),	--
+			q(81432),	--
+			q(81433),	--
+			q(81434),	--
+			q(81435),	--
+			q(81436),	--
+			q(81437),	--
+			q(81438),	--
+			q(81439),	--
+			q(81454),	--
+			q(81466),	--
+			q(81474),	--
+			q(81515),	--
+			q(81516),	--
+			q(81538),	--
+			q(81554),	--
+			q(81629),	--
+			q(81637),	--
+			q(81698),	--
+			q(81760),	--
+			q(81841),	--
+			q(81845),	--
+			q(81918),	--
+			q(81989),	--
+			q(82149),	--
+			q(82150),	--
+			q(82151),	--
+			q(82152),	--
+			q(82165),	--
+			q(82166),	--
+			q(82172),	--
+			q(82178),	--
+			q(82184),	--
+			q(82188),	--
+			q(82196),	--
+			q(82228),	--
+			q(82463),	--
+			q(82469),	--
+			q(82471),	--
+			q(82472),	--
+			q(82517),	--
+			q(82522),	--
+			q(82528),	--
+			q(82530),	--
+			q(82534),	--
+			q(82571),	--
+			q(82572),	--
+			q(82617),	--
+			q(82671),	--
+			q(82677),	--
+			q(82683),	--
+			q(82684),	--
+			q(82685),	--
+			q(82686),	--
+			q(82703),	--
+			q(82704),	--
+			q(82713),	--
+			q(82717),	--
+			q(82723),	--
+			q(82724),	--
+			q(82725),	--
+			q(82726),	--
+			q(82734),	--
+			q(82735),	--
+			q(82744),	--
+			q(82745),	--
+			q(82750),	--
+			q(82758),	--
+			q(82759),	--
+			q(82763),	--
+			q(82764),	--
+			q(82765),	--
+			q(82766),	--
+			q(82769),	--
+			q(82790),	--
+			q(82791),	--
+			q(82811),	--
+			q(82812),	--
+			q(82837),	--
+			q(82838),	--
+			q(82839),	--
+			q(82840),	--
+			q(82841),	--
+			q(82860),	--
+			q(82882),	--
+			q(82883),	--
+			q(82884),	--
+			q(82885),	--
+			q(82886),	--
+			q(82887),	--
+			q(82888),	--
+			q(82889),	--
+			q(82890),	--
+			q(82891),	--
+			q(82892),	--
+			q(82893),	--
+			q(82917),	--
+			q(83034),	--
+			q(83037),	--
+			q(83095),	--
+			q(83107),	--
+			q(83133),	--
+			q(83135),	--
+			q(83136),	--
+			q(83214),	--
+			q(83218),	--
+			q(83220),	--
+			q(83221),	--
+			q(83224),	--
+			q(83225),	--
+			q(83227),	--
+			q(83250),	--
+			q(83327),	--
+			q(83340),	--
+			q(83370),	--
+			q(83371),	--
+			q(83372),	--
+			q(83373),	--
+			q(83374),	--
+			q(83461),	--
+			q(83478),	--
+			q(83498),	--
+			q(83504),	--
+			q(83506),	--
+			q(83509),	--
+			q(83510),	--
+			q(83512),	--
+			q(83513),	--
+			q(83514),	--
+			q(83525),	--
+			q(83526),	--
+			q(83549),	--
+			q(83571),	--
+			q(83572),	--
+			q(83575),	--
+			q(83576),	--
+			q(83577),	--
+			q(83578),	--
+			q(83579),	--
+			q(83580),	--
+			q(83581),	--
+			q(83582),	--
+			q(83583),	--
+			q(83584),	--
+			q(83585),	--
+			q(83586),	--
+			q(83588),	--
+			q(83589),	--
+			q(83590),	--
+			q(83591),	--
+			q(83592),	--
+			q(83593),	--
+			q(83594),	--
+			q(83595),	--
+			q(83596),	--
+			q(83597),	--
+			q(83598),	--
+			q(83599),	--
+			q(83600),	--
+			q(83601),	--
+			q(83602),	--
+			q(83603),	--
+			q(83604),	--
+			q(83605),	--
+			q(83606),	--
+			q(83607),	--
+			q(83608),	--
+			q(83609),	--
+			q(83610),	--
+			q(83611),	--
+			q(83612),	--
+			q(83653),	--
+			q(83654),	--
+			q(83655),	--
+			q(83656),	--
+			q(83657),	--
+			q(83674),	--
+			q(83675),	--
+			q(83676),	--
+			q(83693),	--
+			q(83694),	--
+			q(83695),	--
+			q(83703),	--
+			q(83704),	--
+			q(83705),	--
+			q(83765),	--
+			q(83774),	--
+			q(83791),	--
+			q(83792),	--
+			q(84003),	--
+			q(84145),	--
+			q(84297),	--
+			q(84437),	--
+			q(84443),	--
+			q(84472),	--
+			q(84498),	--
+			q(78944),	--
+			q(78945),	--
+			q(78946),	--
+			q(78947),	--
+			q(78949),	--
+			q(82331),	--
+		})),
+
+		-- 11.0.2
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+			q(85731),	-- Tracking Quest
+			q(84694),	-- Weaver's Lair Profession Table
+			q(84509),	--
+			q(84510),	--
+			q(84511),	--
+			q(84512),	--
+			q(84513),	--
+			q(84514),	--
+			q(84515),	--
+			q(84516),	--
+			q(84517),	--
+			q(84518),	--
+			q(84544),	--
+			q(84565),	--
+			q(84584),	--
+			q(84586),	--
+			q(84589),	--
+			q(84628),	--
+			q(84686),	--
+			q(84783),	--
+			q(84785),	--
+			q(84812),	--
+			q(77416),	--
+			q(85464),	--
+			q(85530),	--
+			q(85584),	--
+			q(85729),	--
+			q(85748),	--
+			q(85749),	--
+		})),
+
+		-- 11.0.5
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+			q(86481),	-- Short-Supply Reward
+			q(85561),	-- [DNT] Debugging Abandon
+			q(82779),	--
+			q(83161),	--
+			q(83736),	--
+			q(84283),	--
+			q(84486),	--
+			q(84600),	--
+			q(84601),	--
+			q(84602),	--
+			q(84603, {isDaily=true}),	--
+			q(84605),	--
+			q(84607),	--
+			q(84612),	--
+			q(84613),	--
+			q(84626),	--
+			q(84734),	--
+			q(84849),	--
+			q(85372),	--
+			q(85563),	--
+			q(82147),	--
+			q(82148),	--
+			q(85684),	--
+			q(85686),	--
+			q(85687),	--
+			q(85688),	--
+			q(85689),	--
+			q(85690),	--
+			q(85691),	--
+			q(85692),	--
+			q(85693),	--
+			q(85695),	--
+			q(85696),	--
+			q(85697),	--
+			q(85779),	--
+			q(85791),	--
+			q(85870),	--
+			q(85872),	--
+			q(85912),	--
+			q(86294),	--
+			q(83829),	--
+			q(83830),	--
+			q(83834),	--
+			q(83835),	--
+			q(83836),	--
+			q(83838),	--
+			q(83839),	--
+		})),
+
+		-- 11.0.7
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+			q(84731),	-- Storm Breadcrumb
+			q(85560),	-- TEST
+			q(85139),	-- [PH]
+			q(84663),	--
+			q(84732),	--
+			q(84793),	--
+			q(84804),	--
+			q(85040),	--
+			q(85041),	--
+			q(85095),	--
+			q(85138),	--
+			q(85188),	--
+			q(85197),	--
+			q(85198),	--
+			q(85231),	--
+			q(85407),	--
+			q(85408),	--
+			q(85436),	--
+			q(85439),	--
+			q(85440),	--
+			q(85566),	--
+			q(85567),	--
+			q(85568),	--
+			q(85569),	--
+			q(85652),	--
+			q(85939),	--
+			q(86197),	--
+			q(86208),	--
+			q(86209),	--
+			q(86210),	--
+			q(86211),	--
+			q(86214),	--
+			q(86215),	--
+			q(86216),	--
+			q(86217),	--
+			q(86222),	--
+			q(86223),	--
+			q(86224),	--
+			q(86226),	--
+			q(86227),	--
+			q(86230),	--
+			q(86234),	--
+			q(86235),	--
+			q(86237),	--
+			q(86238),	--
+			q(86239),	--
+			q(86242),	--
+			q(86243),	--
+			q(86245),	--
+			q(86247),	--
+			q(86248),	--
+			q(86249),	--
+			q(86251),	--
+			q(86253),	--
+			q(86254),	--
+			q(86255),	--
+			q(86257),	--
+			q(86258),	--
+			q(86259),	--
+			q(86283),	--
+			q(86284),	--
+			q(86338),	--
+			q(86425),	--
+			q(86452),	--
+			q(86617),	--
+			q(86765),	--
+			q(86803),	--
+			q(86817),	--
+			q(86932),	--
 		})),
 
 		-- 11.1.0
 		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
-			q(83447),
+			q(83110),	-- Deliver Equipment
+			q(84894),	-- G.E.T.A. 2
+			q(86448),	-- Piecing Things Together
+			q(83113),	-- Recover Tools
+			q(86388),	-- Spark - Template
+			q(85773),	-- Spirits for Hire
+			q(84123),	-- Test
+			q(86921),	-- This is a repro test
+			q(84981),	-- [DNT] World Quest 002
 			q(86651),	-- [DNT] Test (causes Bolt of Silk Cloth to be Sourced when not under NYI)
+			q(83447),	--
+			q(83090),	--
+			q(83533),	--
+			q(83544),	--
+			q(83545),	--
+			q(83640),	--
+			q(83642),	--
+			q(83647),	--
+			q(83809),	--
+			q(83999),	--
+			q(84005),	--
+			q(84027),	--
+			q(84035),	--
+			q(84120),	--
+			q(84219),	--
+			q(84240),	--
+			q(84243),	--
+			q(84245),	--
+			q(84250),	--
+			q(84251),	--
+			q(84353),	--
+			q(84354),	--
+			q(84364),	--
+			q(84635),	--
+			q(84661),	--
+			q(84662),	--
+			q(84733),	--
+			q(84979),	--
+			q(84982),	--
+			q(84983),	--
+			q(84984),	--
+			q(84986),	--
+			q(84987),	--
+			q(84988),	--
+			q(84989),	--
+			q(84990),	--
+			q(85012),	--
+			q(85094),	--
+			q(85173),	--
+			q(85176),	--
+			q(85178),	--
+			q(85180),	--
+			q(85182),	--
+			q(85193),	--
+			q(85230),	--
+			q(85245),	--
+			q(85246),	--
+			q(85247),	--
+			q(85264),	--
+			q(85265),	--
+			q(85391),	--
+			q(85392),	--
+			q(85393),	--
+			q(85491),	--
+			q(85756),	--
+			q(85770),	--
+			q(85789),	--
+			q(85790),	--
+			q(86079),	--
+			q(86080),	--
+			q(86081),	--
+			q(86082),	--
+			q(86083),	--
+			q(86113),	--
+			q(86114),	--
+			q(86115),	--
+			q(86116),	--
+			q(86312),	--
+			q(86316),	--
+			q(86337),	--
+			q(86397),	--
+			q(86404),	--
+			q(86405),	--
+			q(86424),	--
+			q(86432),	--
+			q(86450),	--
+			q(86729),	--
+			q(86759),	--
+			q(86888),	--
+			q(86889),	--
+			q(87319),	--
+			q(88862),	--
+			q(88863),	--
+			q(88864),	--
+			q(88865),	--
+			q(83521),	--
+			q(86529),	--
+			q(90711),	--
 		})),
 
 		-- 11.1.5
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			q(90661),	-- Dastardly Duos
 			q(90504),	-- Dastardly Duos Weekly Wins
 			q(90503),	-- Dastardly Duos Weekly Wins
 			q(90502),	-- Dastardly Duos Weekly Wins
@@ -8685,6 +9651,331 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(90497),	-- Dastardly Duos Weekly Wins
 			q(90496),	-- Dastardly Duos Weekly Wins
 			q(90495),	-- Dastardly Duos Weekly Wins
+			q(86406),	-- [DNT] Camp Assignment
+			q(86368),	-- [DNT] Repeatable - Camp 001
+			q(87476),	-- [DNT] Repeatable - Camp 003
+			q(87478),	-- [DNT] Repeatable - Camp 005
+			q(87479),	-- [DNT] Repeatable - Camp 006
+			q(87481),	-- [DNT] Repeatable - Camp 008
+			q(87482),	-- [DNT] Repeatable - Camp 009
+			q(87485),	-- [DNT] Repeatable - Camp 010
+			q(87403),	--
+			q(87536),	--
+			q(87537),	--
+			q(87538),	--
+			q(88973),	--
+			q(89064),	--
+			q(89214),	--
+			q(89215),	--
+			q(89216),	--
+			q(89217),	--
+			q(89218),	--
+			q(89219),	--
+			q(89220),	--
+			q(89333),	--
+			q(89335),	--
+			q(89336),	--
+			q(89337),	--
+			q(90475),	--
+			q(90476),	--
+			q(90477),	--
+			q(90478),	--
+			q(90479),	--
+			q(90480),	--
+			q(90774),	--
+			q(90900),	--
+			q(89566),	--
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			q(86469),	-- A Stromgarde Tour
+			q(84653),	-- DEPRECATED
+			q(86470),	-- Fearin's Version
+			q(84654),	--
+			q(84655),	--
+			q(84660),	--
+			q(84790),	--
+			q(85235),	--
+			q(85253),	--
+			q(86854),	--
+			q(89382),	--
+			q(90757),	--
+			q(91171),	--
+			q(91172),	--
+			q(91202),	--
+		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			q(85873),	-- Another Shadowy Invitation
+			q(85044),	-- DEPRECATED
+			q(90087),	-- Distance Tracker (DNT)
+			q(91768),	-- Sweating Mana
+			q(90119),	-- test
+			q(92018),	-- x.x Testing (YGR)
+			q(85038),	-- [DNT] Post Raid
+			q(84763),	--
+			q(84764),	--
+			q(85153),	--
+			q(85154),	--
+			q(85194),	--
+			q(85199),	--
+			q(85209),	--
+			q(85211),	--
+			q(85215),	--
+			q(85216),	--
+			q(85217),	--
+			q(85232),	--
+			q(85233),	--
+			q(85234),	--
+			q(85236),	--
+			q(85237),	--
+			q(85478),	--
+			q(85482),	--
+			q(85483),	--
+			q(85484),	--
+			q(85835),	--
+			q(85836),	--
+			q(86147),	--
+			q(86148),	--
+			q(86149),	--
+			q(86150),	--
+			q(86411),	--
+			q(86502),	--
+			q(86527),	--
+			q(86550),	--
+			q(86551),	--
+			q(86552),	--
+			q(86785),	--
+			q(87320),	--
+			q(87390),	--
+			q(88712),	--
+			q(88810),	--
+			q(88828),	--
+			q(88972),	--
+			q(89033),	--
+			q(89036),	--
+			q(89042),	--
+			q(89043),	--
+			q(90577),	--
+			q(90578),	--
+			q(90579),	--
+			q(90580),	--
+			q(90581),	--
+			q(90582),	--
+			q(90668),	--
+			q(90670),	--
+			q(90815),	--
+			q(90816),	--
+			q(90863),	--
+			q(90999),	--
+			q(91144),	--
+			q(91181),	--
+			q(91194),	--
+			q(91195),	--
+			q(91353),	--
+			q(91423),	--
+			q(91720),	--
+			q(91949),	--
+			q(86459),	--
+			q(92877),	--
+		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+			q(89403),	-- 11.2.5 Delves - Mid-Season Refresh - Player Choice Affix - TEST - ZGS
+			q(87540),	-- Begin the Sky Assaults
+			q(88750),	-- Tracking Quest
+			q(88752),	-- Tracking Quest
+			q(92523),	-- Tracking Quest
+			q(86497),	--
+			q(86906),	--
+			q(86908),	--
+			q(87199),	--
+			q(87200),	--
+			q(87202),	--
+			q(87207),	--
+			q(87213),	--
+			q(87217),	--
+			q(87223),	--
+			q(87541),	--
+			q(87542),	--
+			q(87545),	--
+			q(87549),	--
+			q(88753),	--
+			q(89410),	--
+			q(89419),	--
+			q(90628),	--
+			q(90704),	--
+			q(90808),	--
+			q(90809),	--
+			q(90810),	--
+			q(90811),	--
+			q(90891),	--
+			q(91641),	--
+			q(91650),	--
+			q(91651),	--
+			q(91652),	--
+			q(91653),	--
+			q(91654),	--
+			q(91655),	--
+			q(91656),	--
+			q(91657),	--
+			q(91658),	--
+			q(91659),	--
+			q(91660),	--
+			q(91661),	--
+			q(91662),	--
+			q(91663),	--
+			q(91664),	--
+			q(91665),	--
+			q(91666),	--
+			q(91667),	--
+			q(91668),	--
+			q(91669),	--
+			q(91670),	--
+			q(91671),	--
+			q(91672),	--
+			q(91673),	--
+			q(91674),	--
+			q(91675),	--
+			q(91676),	--
+			q(91677),	--
+			q(91678),	--
+			q(91679),	--
+			q(91680),	--
+			q(91681),	--
+			q(91682),	--
+			q(91683),	--
+			q(91684),	--
+			q(91727),	--
+			q(91766),	--
+			q(91957),	--
+			q(92394),	--
+			q(92538),	--
+			q(92587),	--
+			q(92602),	--
+			q(92610),	--
+			q(92686),	--
+			q(92843),	--
+			q(93516),	--
+			q(94008),	--
+		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			q(84934),	-- A Dark Descent
+			q(86962),	-- Blood in the Wound
+			q(92104),	-- Broomstick Express
+			q(91865),	-- Catch Up: Khaz Algar
+			q(91866),	-- Catch Up: The Ringing Deeps
+			q(91867),	-- Catch Up: Hallowfall
+			q(91869),	-- Catch Up: A Light in the Dark
+			q(93683),	-- Conditional Objectives - Singular
+			q(93877),	-- Conditional Objectives - Sequential
+			q(93878),	-- Conditional Objectives - Multiple Steps, No Sequence
+			q(93879),	-- Conditional Objectives - Conditional After Sequence
+			q(86905),	-- No More Sick Days
+			q(87000),	-- No Wood Left Behind
+			q(93452),	-- Retrieved Crumpled Present
+			q(92455),	-- Specter Inspector
+			q(86960),	-- The Key to Good Health
+			q(85017),	-- Tracking Quest to Send Mailer [DNT]
+			q(86936),	-- Warped Wood
+			q(83547),	-- Welcome to the Neighborhood
+			q(84832),	-- [DNT] Example Breadcrumb to DF
+			q(93076),	-- [DNT] TEST HOUSE ROOM REWARD
+			q(93119),	-- [DNT] TEST HOUSE DECOR REWARD
+			q(93901),	-- [DNT] House Level 2 Room Award
+			q(93902),	-- [DNT] House Level 4 Room Award
+			q(94431),	-- [DNT] House Level 3 Room Award
+			q(94437),	-- [DNT] House Level 5 Room Award
+			q(63415),	--
+			q(83557),	--
+			q(84382),	--
+			q(84387),	--
+			q(84388),	--
+			q(84389),	--
+			q(84390),	--
+			q(84391),	--
+			q(84420),	--
+			q(84422),	--
+			q(84427),	--
+			q(84428),	--
+			q(84431),	--
+			q(84436),	--
+			q(84505),	--
+			q(84522),	--
+			q(84523),	--
+			q(84524),	--
+			q(84678),	--
+			q(84679),	--
+			q(85000),	--
+			q(85016),	--
+			q(85049),	--
+			q(85062),	--
+			q(86330),	--
+			q(86331),	--
+			q(86937),	--
+			q(90973),	--
+			q(91200),	--
+			q(91204),	--
+			q(91692),	--
+			q(91870),	--
+			q(91878),	--
+			q(91879),	--
+			q(91880),	--
+			q(92475),	--
+			q(92476),	--
+			q(92477),	--
+			q(92478),	--
+			q(92498),	--
+			q(92535),	--
+			q(92536),	--
+			q(92537),	--
+			q(92584),	--
+			q(92585),	--
+			q(92876),	--
+			q(92943),	--
+			q(93183),	--
+			q(93321),	--
+			q(93322),	--
+			q(93324),	--
+			q(93325),	--
+			q(93326),	--
+			q(93327),	--
+			q(93330),	--
+			q(93331),	--
+			q(93333),	--
+			q(93334),	--
+			q(93336),	--
+			q(93337),	--
+			q(93338),	--
+			q(93398),	--
+			q(93400),	--
+			q(93401),	--
+			q(93402),	--
+			q(93405),	--
+			q(93441),	--
+			q(93468),	--
+			q(93492),	--
+			q(94364),	--
+			q(94780),	--
+			q(95139),	--
+			q(95281),	--
+		})),
+	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			q(93969),	-- BETA:Call Shot
+			q(93235),	-- First Craft: M0LL1, Atomic Anomaly
+			q(90436),	-- First Craft: Pigments of the Wind
+		})),
+		-- 12.0.1
+		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+			q(94423, {["_drop"] = {"g"}}),	-- Sanctum Secure
 		})),
 	}),
 }));

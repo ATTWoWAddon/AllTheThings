@@ -5,48 +5,39 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
-			n(RARES, {
-				n(SPECIAL, sharedData({["sharedDescription"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
-					n(109150, {	-- Malefica
-						["questID"] = 42862,
-						["crs"] = { 109155 },	-- Malefica
-						["coord"] = { 32.8, 66.6, HIGHMOUNTAIN },
-					}),
-					n(109059, {	-- Dareer
-						["questID"] = 42826,
-						["coord"] = { 39.8, 52.4, HIGHMOUNTAIN },
-						["crs"] = { 109062 },	-- Dareer
-					}),
-					n(109159, {	-- Holk the Wanderer
-						["questID"] = 42863,
-						["coord"] = { 39.6, 58.2, 750 },
-						["crs"] = { 109161 },	-- Holk the Wanderer
-					}),
-				})),
+			n(RARES, sharedData({
+				-- #IF AFTER 11.2.5
+				["isDaily"] = true,	-- Daily during Legion Remix 2025, and thereafter
+				-- #endif
+			}, {
 				n(createHeader({	-- Amateur Hunters
 					readable = "Amateur Hunters",
 					icon = 626000,
 					text = {
 						en = "Amateur Hunters",
-						es = "Cazadores Aficionados",
 						de = "Amateurjäger",
+						es = "Cazadores Aficionados",
+						mx = "Cazadores principiantes",
 						fr = "Chasseurs Amateurs",
 						it = "Cacciatori Dilettanti",
+						ko = "아마추어 사냥꾼",
 						pt = "Caçadores Amadores",
 						ru = "Охотники-любители",
-						ko = "아마추어 사냥꾼",
 						cn = "业余猎人",
+						-- TODO: tw = "",
 					},
 					description = {
 						en = "Three hunters have surrounded Mara Swiftmane. Engage them in combat, and a Battered Chest will spawn near Mara Swiftmane. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
-						es = "Tres cazadores han rodeado a Mara Swiftmane. Entra en combate con ellos y aparecerá un cofre maltratado cerca de Mara Swiftmane. Una vez que termine la batalla, Mara te lo agradecerá y te dejará con el Cofre Maltratado.",
-						de = "Drei Jäger haben Mara Swiftmane umzingelt. Wenn Sie sie in den Kampf verwickeln, wird in der Nähe von Mara Swiftmane eine zerschlagene Truhe erscheinen. Sobald der Kampf vorbei ist, wird Mara sich bei Ihnen bedanken und Sie mit der ramponierten Truhe zurücklassen.",
-						fr = "Trois chasseurs ont encerclé Mara Swiftmane. Engagez-les au combat et un coffre battu apparaîtra près de Mara Swiftmane. Une fois la bataille terminée, Mara vous remerciera et vous laissera avec le coffre battu.",
-						it = "Tre cacciatori hanno circondato Mara Mantoveloce. Coinvolgili in combattimento e un forziere malconcio verrà generato vicino a Mara Swiftmane. Una volta terminata la battaglia, Mara ti ringrazierà e ti lascerà con il baule malconcio.",
-						pt = "Três caçadores cercaram Mara Swiftmane. Envolva-os em combate e um baú maltratado aparecerá perto de Mara Swiftmane. Assim que a batalha terminar, Mara agradecerá e deixará você com o Baú Maltratado.",
-						ru = "Трое охотников окружили Мару Быстрогривую. Вступите с ними в бой, и рядом с Марой Быстрогривой появится потрепанный сундук. Как только битва закончится, Мара поблагодарит вас и оставит с потрепанным сундуком.",
+						de = "Drei Jäger haben Mara Flinkmähne umzingelt. Wenn Sie sie in den Kampf verwickeln, wird in der Nähe von Mara Flinkmähne eine Ramponierte Truhe erscheinen. Sobald der Kampf vorbei ist, wird Mara sich bei Ihnen bedanken und Sie mit der Ramponierte Truhe zurücklassen.",
+						es = "Tres cazadores han rodeado a Mara Crin Presta. Entra en combate con ellos y aparecerá un cofre maltratado cerca de Mara Crin Presta. Una vez que termine la batalla, Mara te lo agradecerá y te dejará con el Cofre maltrecho.",
+						mx = "Tres cazadores han rodeado a Mara Velocrín. Entra en combate con ellos y aparecerá un cofre maltratado cerca de Mara Velocrín. Una vez que termine la batalla, Mara te lo agradecerá y te dejará con el Cofre maltrecho.",
+						fr = "Trois chasseurs ont encerclé Mara Vif-Crins. Engagez-les au combat et un Coffre endommagé apparaîtra près de Mara Vif-Crins. Une fois la bataille terminée, Mara vous remerciera et vous laissera avec le Coffre endommagé.",
+						it = "Tre cacciatori hanno circondato Mara Manto Lesto. Coinvolgili in combattimento e un Cassa Danneggiata verrà generato vicino a Mara Manto Lesto. Una volta terminata la battaglia, Mara ti ringrazierà e ti lascerà con il Cassa Danneggiata.",
 						ko = "세 명의 사냥꾼이 마라 스위프트메인을 둘러싸고 있습니다. 전투에 참여하면 마라 스위프트메인 근처에 낡은 상자가 생성됩니다. 전투가 끝나면 마라는 감사 인사를 전하고 낡은 상자를 남겨줄 것입니다.",
+						pt = "Três caçadores cercaram Mara Crinaveloz. Envolva-os em combate e um Baú Desgastado aparecerá perto de Mara Crinaveloz. Assim que a batalha terminar, Mara agradecerá e deixará você com o Baú Desgastado.",
+						ru = "Трое охотников окружили Мару Стремительную Гриву. Вступите с ними в бой, и рядом с Марой Стремительной Гривой появится Побитый сундук. Как только битва закончится, Мара поблагодарит вас и оставит Побитый сундук.",
 						cn = "三名猎人包围了玛拉·斯威夫迈恩。与他们交战，玛拉·迅鬃附近会生成一个破烂的宝箱。战斗结束后，玛拉会感谢你，并给你留下破损的宝箱。",
+						-- TODO: tw = "",
 					},
 				}), {
 					["questID"] = 40413,	-- Amateur Hunters
@@ -59,13 +50,17 @@ root(ROOTS.Zones, {
 					},
 					["groups"] = {
 						o(245479, {	-- Battered Chest
-							i(131781),	-- Plate Hiking Boots
+							["questID"] = 40612,
+							["groups"] = {
+								i(131781),	-- Plate Hiking Boots
+							},
 						}),
 					},
 				}),
 				n(104481, {	-- Ala'washte
 					["questID"] = 45514,
 					["coord"] = { 28.4, 53.8, HIGHMOUNTAIN },
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				n(97215, {	-- Beastmaster Pao'lek
 					["questID"] = 39784,	-- Beastmaster Pao'lek
@@ -90,6 +85,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 37.7, 45.7, HIGHMOUNTAIN },
 					["groups"] = {
 						i(131761),	-- Thick Bristly Hood
+						i(139893),	-- Skinning Technique: Unbroken Tooth (RECIPE!)
 					},
 				}),
 				n(94877, {	-- Brogrul the Mighty
@@ -164,7 +160,7 @@ root(ROOTS.Zones, {
 					["questID"] = 39802,
 					["coord"] = { 51.0, 48.5, HIGHMOUNTAIN },
 					["groups"] = {
-					--	i(129190),	-- Rope of Friendship
+						-- i(129190),	-- Rope of Friendship
 					},
 				}),
 				n(98024, {	-- Luggut the Eggeater
@@ -208,11 +204,6 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						i(131793),	-- Oubdob's Smashin' Sweatband
 					},
-				}),
-				n(97102, {	-- Ram'Pag <The Treasure Worm>
-					["description"] = "Click on the Totally Safe Treasure Chest to spawn Ram'Pag.",
-					["questID"] = 39766,
-					["coord"] = { 52.3, 51.4, HIGHMOUNTAIN },
 				}),
 				n(97579, {	-- Scout Harefoot (Mynta Talonscreech)
 					["description"] = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
@@ -288,7 +279,7 @@ root(ROOTS.Zones, {
 						i(129175),	-- Crispin (PET!)
 					},
 				}),
-			}),
+			})),
 		}),
 	}),
 });

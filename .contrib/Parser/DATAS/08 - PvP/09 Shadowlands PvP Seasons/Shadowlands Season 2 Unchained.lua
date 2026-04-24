@@ -1,10 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_UNCHAINED, bubbleDownSelf({
 		["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 			ach(14968),		-- Combatant I: Shadowlands Season 2
 			ach(15232, {	-- Combatant II: Shadowlands Season 2
@@ -56,11 +57,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}, {
 					iensemble(201877, {	-- Arsenal: Unchained Aspirant's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(201860, {	-- Ensemble: Unchained Aspirant's Cloth Armor
 						["classes"] = CLOTH_CLASSES,
@@ -202,27 +203,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				["coord"] = { 35.0, 57.6, ORIBOS },
 				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 					iensemble(201876, {	-- Arsenal: Unchained Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 						["timeline"] = { ADDED_10_0_2_LAUNCH },
 					}),
 					iensemble(201864, {	-- Ensemble: Unchained Gladiator's Cloth Armor
 						["classes"] = CLOTH_CLASSES,
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["timeline"] = { ADDED_10_0_2_LAUNCH },
 					}),
 					iensemble(201863, {	-- Ensemble: Unchained Gladiator's Leather Armor
 						["classes"] = LEATHER_CLASSES,
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["timeline"] = { ADDED_10_0_2_LAUNCH },
 					}),
 					iensemble(201862, {	-- Ensemble: Unchained Gladiator's Mail Armor
 						["classes"] = MAIL_CLASSES,
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["timeline"] = { ADDED_10_0_2_LAUNCH },
 					}),
 					iensemble(201861, {	-- Ensemble: Unchained Gladiator's Plate Armor
 						["classes"] = PLATE_CLASSES,
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["timeline"] = { ADDED_10_0_2_LAUNCH },
 					}),
 				}),

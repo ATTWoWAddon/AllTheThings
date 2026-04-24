@@ -1,11 +1,12 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_FIERCE, bubbleDownSelf({
 		-- Not the Best Timelining.. /Braghe
 		["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2, ADDED_8_0_1_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 } }, {
 			ach(12032, {	-- Fierce  Combatant [A]
 				["races"] = ALLIANCE_ONLY,
@@ -67,7 +68,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(150252, {	-- Ensemble: Fierce Combatant's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -267,7 +270,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(150253, {	-- Ensemble: Fierce Combatant's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -503,7 +508,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(149483, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -703,7 +710,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(149482, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -910,15 +919,15 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 							["sourceAchievements"] = { 12045 },	-- Gladiator: Legion Season 5
-							["cost"] = {{"i", MOH, 12}},
+							["cost"] = { { "i", MOH, 12 } },
 						}),
 						i(149445, {	-- Fierce Gladiator's Cloak [A]
 							["sourceAchievements"] = { 12090 },	-- Fierce Elite
-							["cost"] = {{"i", MOH, 50}},
+							["cost"] = { { "i", MOH, 50 } },
 						}),
 						i(149443, {	-- Fierce Gladiator's Tabard [A]
 							["sourceAchievements"] = { 12090 },	-- Fierce Elite
-							["cost"] = {{"i", MOH, 50}},
+							["cost"] = { { "i", MOH, 50 } },
 						}),
 					}),
 				}),
@@ -932,7 +941,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							12135,	-- Dominant Elite
 							12198,	-- Demonic Elite
 						},
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(149458, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor [A]
@@ -1139,15 +1148,15 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 							["sourceAchievements"] = { 12045 },	-- Gladiator: Legion Season 5
-							["cost"] = {{"i", MOH, 12}},
+							["cost"] = { { "i", MOH, 12 } },
 						}),
 						i(149444, {	-- Fierce Gladiator's Cloak [H]
 							["sourceAchievements"] = { 12090 },	-- Fierce Elite
-							["cost"] = {{"i", MOH, 50}},
+							["cost"] = { { "i", MOH, 50 } },
 						}),
 						i(149442, {	-- Fierce Gladiator's Tabard [H]
 							["sourceAchievements"] = { 12090 },	-- Fierce Elite
-							["cost"] = {{"i", MOH, 50}},
+							["cost"] = { { "i", MOH, 50 } },
 						}),
 					}),
 				}),
@@ -1161,7 +1170,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							12135,	-- Dominant Elite
 							12198,	-- Demonic Elite
 						},
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(149459, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor [H]

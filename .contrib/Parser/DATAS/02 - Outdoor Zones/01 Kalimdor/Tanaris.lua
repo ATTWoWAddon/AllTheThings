@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if BEFORE CATA
 -- TODO: Fully implement this for Retail's faction tooltips, also look at cape of stranglethorn.
 local OnTooltipForGadgetzhan = [[function(t, tooltipInfo)
@@ -14,6 +15,7 @@ local OnTooltipForGadgetzhan = [[function(t, tooltipInfo)
 	end
 end]];
 -- #endif
+
 local BLOODTHIRSTY_GROUPS = {
 	cl(DEATHKNIGHT, {
 		moh(12, iensemble(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
@@ -58,6 +60,22 @@ local BLOODTHIRSTY_GROUPS = {
 	cl(MAGE, {
 		moh(12, iensemble(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 			["timeline"] = { ADDED_7_2_0 },
+			-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
+			-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
+			-- #if AFTER 11.0.0
+			["groups"] = sharedData({["timeline"] = { ADDED_7_2_0, REMOVED_11_0_0 }},{
+				i(64928),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+				i(64929),	-- Gladiator's Silk Robe - confirmed 14/10/21
+				i(64930),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+				i(64931),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+				i(64932),	-- Gladiator's Silk Amice - confirmed 14/10/21
+				i(88251),	-- Gladiator's Silk Amice - confirmed 14/10/21
+				i(88252),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+				i(88253),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+				i(88254),	-- Gladiator's Silk Robe - confirmed 14/10/21
+				i(88255),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+			}),
+			-- #endif
 		})),
 		moh(2, i(64853)),	-- Bloodthirsty Gladiator's Silk Amice
 		moh(3, i(64854)),	-- Bloodthirsty Gladiator's Silk Cowl
@@ -1035,6 +1053,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179496, {	-- Dented Footlocker
+					["coord"] = { 72.6, 45.4, TANARIS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 225,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					n(8736, {	-- Buzzek Bracketswing <Engineering Trainer>
@@ -1055,7 +1082,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8646, 1 }},	-- Bad Egg
+					["cost"] = { { "i", 8646, 1 } },	-- Bad Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 				}),
@@ -1104,7 +1131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8644, 1 }},	-- Fine Egg
+					["cost"] = { { "i", 8644, 1 } },	-- Fine Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1153,7 +1180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8643, 1 }},	-- Extraordinary Egg
+					["cost"] = { { "i", 8643, 1 } },	-- Extraordinary Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1165,7 +1192,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8645, 1 }},	-- Ordinary Egg
+					["cost"] = { { "i", 8645, 1 } },	-- Ordinary Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1231,7 +1258,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8483, 10 }},	-- Wastewander Water Pouch
+					["cost"] = { { "i", 8483, 10 } },	-- Wastewander Water Pouch
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 38,
@@ -1403,14 +1430,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6610, {	-- Clamlette Surprise
-					["description"] =
-						-- #if AFTER 8.0.1
-						"Becomes available at Classic Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
-						-- #elseif AFTER 4.0.3
-						"Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
-						-- #else
-						"Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Alliance breadcrumb for this quest is called 'I Know A Guy...' and is picked up from cooking trainer Daryl Riknussun in Ironforge. The Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar.",
-						-- #endif
 					["sourceQuests"] = {
 						6611,	-- To Gadgetzan You Go!
 						6612,	-- I Know A Guy...
@@ -1622,7 +1641,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7583 },	-- Sprinkle
 						{ "i", 8528 },	-- Violet Powder
 					},
-					["coord"] = { 51, 26.8, TANARIS },
+					["coord"] = { 51.0, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 44,
 				}),
@@ -1768,7 +1787,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 8585 },	-- Tapped Dowsing Widget
 								{ "i", 8584 },	-- Untapped Dowsing Widget
 							},
-							["coord"] = { 39, 29, TANARIS },
+							["coord"] = { 39.0, 29.0, TANARIS },
 						}),
 					},
 				}),
@@ -1781,9 +1800,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/30 Gahz'ridian Ornament
 							["providers"] = {
 								{ "i",   8443 },	-- Gahz'ridian Ornament
-								{ "i",   9978 },	-- Gahz'ridian Detector
 								{ "o", 140971 },	-- Gahz'ridian
 							},
+						}),
+						i(9978, {	-- Gahz'ridian Detector
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(10827, {	-- Surveyor's Tunic
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1943,9 +1964,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 20 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -1960,9 +1979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 40 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 40 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -1977,9 +1994,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 20 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -1994,9 +2009,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 60 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 60 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2011,9 +2024,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 50 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 50 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2028,9 +2039,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 60 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 60 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2045,9 +2054,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 20 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2182,6 +2189,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								5475,	-- Dunemaul Warlock
 							},
 						}),
+					},
+				}),
+				q(3644, {	-- Membership Card Renewal
+					["sourceQuest"] = 3639,	-- Show Your Work
+					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+					["coord"] = { 54.4, 27.2, TANARIS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["repeatable"] = true,
+					["lvl"] = 30,
+					["groups"] = {
+						i(10791),	-- Goblin Engineer Membership Card
 					},
 				}),
 				q(25121, {	-- Momentum (A)
@@ -2628,7 +2649,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8483, 5 }},	-- Wastewander Water Pouch
+					["cost"] = { { "i", 8483, 5 } },	-- Wastewander Water Pouch
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
@@ -2697,13 +2718,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",   8526 },	-- Violet Tragan
 								{ "o", 141853 },	-- Violet Tragan
 							},
-							["coord"] = { 40, 59, THE_HINTERLANDS },
+							["coord"] = { 40.0, 59.0, THE_HINTERLANDS },
 						}),
 					},
 				}),
 				q(2872, {	-- Stoley's Debt
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
-					["coord"] = { 27.8, 77, STRANGLETHORN_VALE },
+					["coord"] = { 27.8, 77.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 40,
@@ -2963,7 +2984,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",   8593 },	-- Scrimshank's Surveying Gear
 								{ "o", 144053 },	-- Scrimshank's Surveying Gear
 							},
-							["coord"] = { 56, 71, TANARIS },
+							["coord"] = { 56.0, 71.0, TANARIS },
 						}),
 					},
 				}),
@@ -3021,7 +3042,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
-					["cost"] = {{ "i", 8564, 1 }},	-- Hippogryph Egg
+					["cost"] = { { "i", 8564, 1 } },	-- Hippogryph Egg
 					["lvl"] = 42,
 					["groups"] = {
 						i(8647, {	-- Egg Crate
@@ -3048,7 +3069,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
-					["cost"] = {{ "i", 8564, 1 }},	-- Hippogryph Egg
+					["cost"] = { { "i", 8564, 1 } },	-- Hippogryph Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 					["groups"] = {
@@ -3267,7 +3288,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7882 },	-- Security Chief Bilgewhizzle
 					},
 					["coords"] = {
-						{ 51.9, 27, TANARIS },
+						{ 51.9, 27.0, TANARIS },
 						{ 66.8, 22.3, TANARIS },
 						{ 67.0, 23.8, TANARIS },
 					},
@@ -3276,7 +3297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Firebeard's Head
 							["provider"] = { "i", 9246 },	-- Firebeard's Head
-							["coord"] = { 73.4, 47, TANARIS },
+							["coord"] = { 73.4, 47.0, TANARIS },
 							["cr"] = 7883,	-- Andre Firebeard
 						}),
 					},
@@ -3288,7 +3309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					},
 					["coords"] = {
-						{ 51.9, 27, TANARIS },
+						{ 51.9, 27.0, TANARIS },
 						{ 66.8, 22.3, TANARIS },
 						{ 52.4, 28.4, TANARIS },
 					},
@@ -3349,7 +3370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7408,	-- Spigot Operator Luglunket
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8483, 5 }},	-- Wastewander Water Pouch
+					["cost"] = { { "i", 8483, 5 } },	-- Wastewander Water Pouch
 					["lvl"] = 40,
 					["groups"] = {
 						i(8484),	-- Gadgetzan Water Co. Care Package
@@ -3360,7 +3381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7408,	-- Spigot Operator Luglunket
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8483, 5 }},	-- Wastewander Water Pouch
+					["cost"] = { { "i", 8483, 5 } },	-- Wastewander Water Pouch
 					["repeatable"] = true,
 					["lvl"] = 40,
 					["groups"] = {
@@ -3634,7 +3655,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 75.3, 45.9, TANARIS },
 						-- #endif
 					},
-					["cost"] = {{ "i", 9249, 1 }},	-- 1x Captain's Key
+					["cost"] = { { "i", 9249, 1 } },	-- 1x Captain's Key
 					["groups"] = {
 						i(9359, {	-- Southsea Lamp (Patch 9.1.5: Renamed from 'Wirt's Third Leg')
 							["description"] =

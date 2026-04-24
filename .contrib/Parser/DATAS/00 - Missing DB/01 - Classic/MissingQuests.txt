@@ -1,5 +1,4 @@
 1.13.0.28211
-q(934),	-- Crown of the Earth	 CLASSIC:Crown of the Earth	 TBC:Crown of the Earth	 WOTLK:Crown of the Earth	 CATA:Crown of the Earth	 MOP:Crown of the Earth
 q(5628),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home	 MOP:Returning Home
 q(5629),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home	 MOP:Returning Home
 q(5630),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home	 MOP:Returning Home

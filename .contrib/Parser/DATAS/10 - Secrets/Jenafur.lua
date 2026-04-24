@@ -3,7 +3,7 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, {
-	n(159783, {	-- Jenafur
+	n(159783, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {	-- Jenafur
 		["description"] = "***Debug Mode is required to see all the steps.***\n",
 		["groups"] = {
 			hqt(58076, {	-- Step 1: Speak to Amara
@@ -61,5 +61,5 @@ root(ROOTS.Secrets, {
 				},
 			}),
 		},
-	}),
+	})),
 });

@@ -1,7 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---	IMPORTANT: if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map. if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
+-- IMPORTANT: if you add coordinates to any part of this file, make sure you verify them manually!
+-- The coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the Krasarang map.
+-- If you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
+
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(KRASARANG_WILDS, {
@@ -151,11 +154,11 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(QUESTS, {
-				--	TODO:
+				-- TODO:
 					-- try to figure out where the alternate versions of "Into the Wilds" come from for each faction. i picked up 30178 on Alliance and 30133 on Horde after completeing all the Zhu's Watch quests. the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't. possibly there are different versions if you abandon/re-pick up, or if you start questing elsewhere in the zone?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
 					-- try to figure out where the second version of "Going on the Offensive" comes from. does it have different SQs?  is it from starting somewhere else in the zone, or doing it in a different order?  the quest text is slightly different (one version says "I want you to look for my scout. I sent her to investigate the Crane Temple but she hasn't returned. Get her report and rendezvous with us at the Sentinel Basecamp further west."  the other doesn't mention a scout at all, and just says "We are pressing westward and could use your help. Meet us at the Sentinel Basecamp further west when you are ready.")
 					-- same as above but with "Going West" for Horde, as opposed to "Going on the Offensive" for Alliance. i picked up 30132, unsure what needs to happen to pick up 30464
-					-- ShadowBrooks -- NOTE FOR CRIEVE see changes for 30132 and 30464
+					-- ShadowBrooks	-- NOTE FOR CRIEVE see changes for 30132 and 30464
 					q(30695, {	-- Ahead on the Way
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
@@ -348,7 +351,7 @@ root(ROOTS.Zones, {
 						["qg"] = 58735,	-- Lyalia
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
-					--	does this also require "Lotus Tea" (30351) and "Threats from Dojan" (30349)?
+						-- does this also require "Lotus Tea" (30351) and "Threats from Dojan" (30349)?
 						["groups"] = {
 							i(79332),	-- Sentinel Scout's Report (QI!)
 						},
@@ -357,7 +360,7 @@ root(ROOTS.Zones, {
 						["qg"] = 58735,	-- Lyalia
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
-					--	does this have different SQs than the previous version?
+						-- does this have different SQs than the previous version?
 					}),
 					q(30132, {	-- Going West
 						["description"] = "This version is available if you have not completed the Temple of the Red Crane questline.",
@@ -406,9 +409,9 @@ root(ROOTS.Zones, {
 							30273,	-- In the House of the Red Crane
 							30117,	-- Stoneplow Thirsts
 							29990,	-- Training and Discipline
-						--	TODO: may also require the following quests:
-						--	29581,	-- The Golden Dream
-						--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+							-- TODO: may also require the following quests:
+							-- 29581,	-- The Golden Dream
+							-- 29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 						},
 						["qg"] = 59719,	-- Chi-Ji
 						["coord"] = { 41.6, 46.3, KRASARANG_WILDS },
@@ -431,7 +434,7 @@ root(ROOTS.Zones, {
 							30272,	-- Striking the Rain
 						},
 						["qg"] = 59608,	-- Anduin Wrynn
-					--	Anduin seems to follow you constantly even if you abandon this, so coords appear to be unnecessary
+						-- Anduin seems to follow you constantly even if you abandon this, so coords appear to be unnecessary
 						["groups"] = {
 							i(81493),	-- Dojani Girdle
 							i(81492),	-- Korjan Girdle
@@ -456,7 +459,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-					--	does this have different SQs than the previous version?
+						-- does this have different SQs than the previous version?
 					}),
 					q(30133, {	-- Into the Wilds
 						["sourceQuests"] = { 30090 },	-- Zhu's Despair
@@ -473,7 +476,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-					--	does this have different SQs than the previous version?
+						-- does this have different SQs than the previous version?
 					}),
 					q(30131, {	-- Life
 						["sourceQuests"] = {
@@ -596,7 +599,7 @@ root(ROOTS.Zones, {
 					}),
 					q(30169, {	-- Raid Leader Slovan
 						["qg"] = 58278,	-- Tired Shushen <Waterspeaker>
-						["coord"] = { 29.7, 39, KRASARANG_WILDS },
+						["coord"] = { 29.7, 39.0, KRASARANG_WILDS },
 						["groups"] = {
 							i(88387),	-- Shushen's Spittoon (TOY!)
 						},
@@ -899,7 +902,7 @@ root(ROOTS.Zones, {
 					}),
 					q(30168, {	-- Thieving Raiders
 						["qg"] = 58278,	-- Tired Shushen
-						["coord"] = { 29.7, 39, KRASARANG_WILDS },
+						["coord"] = { 29.7, 39.0, KRASARANG_WILDS },
 						["groups"] = {
 							i(78958),	-- Pillaged Jinyu Loot (QI!)
 							i(81532),	-- Silkspawn Carving
@@ -953,7 +956,7 @@ root(ROOTS.Zones, {
 					}),
 					q(30269, {	-- Unsafe Passage
 						["sourceQuests"] = {
-						--	unclear what the difference is in these. the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't. possibly there are different versions if you abandon/re-pick up?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
+							-- unclear what the difference is in these. the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't. possibly there are different versions if you abandon/re-pick up?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
 							30178,	-- Into the Wilds (A)
 							30462,	-- Into the Wilds (A)
 							30461,	-- Into the Wilds (H)
@@ -974,9 +977,9 @@ root(ROOTS.Zones, {
 							30117,	-- Stoneplow Thirsts
 							30445,	-- The Waters of Youth
 							29990,	-- Training and Discipline
-						--	TODO: may also require the following quests:
-						--	29581,	-- The Golden Dream
-						--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+							-- TODO: may also require the following quests:
+							-- 29581,	-- The Golden Dream
+							-- 29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 						},
 						["qg"] = 58821,	-- Lyalia
 						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
@@ -989,9 +992,9 @@ root(ROOTS.Zones, {
 							30273,	-- In the House of the Red Crane
 							30117,	-- Stoneplow Thirsts
 							29990,	-- Training and Discipline
-						--	TODO: may also require the following quests:
-						--	29581,	-- The Golden Dream
-						--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+							-- TODO: may also require the following quests:
+							-- 29581,	-- The Golden Dream
+							-- 29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 						},
 						["qg"] = 58607,	-- Sunwalker Dezco
 						["coord"] = { 29.1, 48.1, KRASARANG_WILDS },
@@ -1114,9 +1117,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
-						["provider"] = { "i", 90172, 1 },	-- Clamshell Band
+						["provider"] = { "i", 90172 },	-- Clamshell Band
 						["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
-						["coord"] = { 12.6, 82, KRASARANG_WILDS },
+						["coord"] = { 12.6, 82.0, KRASARANG_WILDS },
 						["cost"] = {
 							{ "i", 90170, 1 },	-- Clamstok's Clamshell [Dread Wastes]
 							{ "i", 90169, 1 },	-- Damlak's Clamshell [Krasarang Wilds]
@@ -1167,7 +1170,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50352, {	-- Qu'nas
-						["coord"] = { 67.2, 23, KRASARANG_WILDS },
+						["coord"] = { 67.2, 23.0, KRASARANG_WILDS },
 						["groups"] = {
 							i(90717),	-- Qu'nas' Apocryphal Legplates
 						},
@@ -1294,7 +1297,6 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(74844),	-- Red Blossom Leek
 				}),
 			},
 		}),

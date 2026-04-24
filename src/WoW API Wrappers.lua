@@ -1,11 +1,14 @@
 local app = select(2, ...);
 app.GameBuildVersion = select(4, GetBuildInfo());
-app.IsRetail = app.GameBuildVersion >= 100000;
+app.IsRetail = app.GameBuildVersion >= 110000;
 app.AfterCata = app.GameBuildVersion >= 40000;
 app.IsClassic = not app.IsRetail;
 
+app.EmptyFunction = function() end;
+app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
+
 -- This file was created because Blizzard likes to give Crieve heart attacks with all their API changes.
--- In the future, ATT will reference all its global APIs provided by Blizzard through out WOWAPI lib.
+-- In the future, ATT will reference all its global APIs provided by Blizzard through our WOWAPI lib.
 
 -- Currently, there are three flavors of World of Warcraft in operation: the Retail flavor, the Cataclysm Classic flavor, and the Classic flavor.
 -- Blizzard often restructures APIs in the Retail flavor of World of Warcraft first, and then introduces these changes to other flavors.
@@ -31,23 +34,31 @@ app.WOWAPI = lib;
 ---@param name string
 ---@param ... function|nil
 local function AssignAPIWrapper(name, ...)
-    for i = 1, select("#", ...) do
-        local api = select(i, ...)  -- Get API Function
-        if api then
-            if rawget(lib, name) then
-                print("Warning: existing ATT.WOWAPI replaced!", name)
-            end
-            lib[name] = api
-            return  -- Return immediately after successful assignment.
-        end
-    end
-    print("No valid function for", name)  -- If no valid function is found, print an error message.
+	for i = 1, select("#", ...) do
+		local api = select(i, ...)  -- Get API Function
+		if api then
+			if rawget(lib, name) then
+				print("Warning: existing ATT.WOWAPI replaced!", name)
+			end
+			lib[name] = api
+			return  -- Return immediately after successful assignment.
+		end
+	end
+	print("No valid function for", name)  -- If no valid function is found, print an error message.
 end
+
+-- System Level APIs
+AssignAPIWrapper("issecretvalue", issecretvalue, function() return false; end);
 
 -- ChatInfo APIs
 local C_ChatInfo = C_ChatInfo
-AssignAPIWrapper("SendChatMessage", C_ChatInfo and C_ChatInfo.SendChatMessage , SendChatMessage);
-AssignAPIWrapper("SendAddonMessage", C_ChatInfo and C_ChatInfo.SendAddonMessage , SendAddonMessage);
+AssignAPIWrapper("SendChatMessage", C_ChatInfo and C_ChatInfo.SendChatMessage, SendChatMessage);
+AssignAPIWrapper("SendAddonMessage", C_ChatInfo and C_ChatInfo.SendAddonMessage, SendAddonMessage);
+
+-- Currency APIs
+local C_CurrencyInfo = C_CurrencyInfo;
+AssignAPIWrapper("GetCurrencyInfo", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo, GetCurrencyInfo);
+AssignAPIWrapper("GetCurrencyLink", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyLink, GetCurrencyLink);
 
 -- Faction APIs
 local C_Reputation = C_Reputation;
@@ -109,6 +120,30 @@ AssignAPIWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSp
 if app.GameBuildVersion >= 70000 then
 	AssignAPIWrapper("IsArtifactRelicItem", C_ItemSocketInfo and C_ItemSocketInfo.IsArtifactRelicItem, IsArtifactRelicItem)
 end
+if C_Item and C_Item.GetItemLinkByGUID then
+	lib.GetItemLinkByGUID = C_Item.GetItemLinkByGUID;
+else
+	lib.GetItemLinkByGUID = function(item)
+		return item;
+	end
+end
+---@diagnostic enable: deprecated
+
+-- Merchant APIs
+local C_MerchantFrame = C_MerchantFrame;
+---@diagnostic disable: deprecated
+AssignAPIWrapper("GetMerchantNumItems", C_MerchantFrame and C_MerchantFrame.GetNumItems, GetMerchantNumItems)
+AssignAPIWrapper("GetMerchantItemLink", C_MerchantFrame and C_MerchantFrame.GetItemLink, GetMerchantItemLink)
+---@diagnostic enable: deprecated
+
+-- Party APIs
+local C_PartyInfo = C_PartyInfo;
+---@diagnostic disable: deprecated
+AssignAPIWrapper("GetLootMethod", C_PartyInfo and C_PartyInfo.GetLootMethod, GetLootMethod)
+AssignAPIWrapper("SetLootMethod", C_PartyInfo and C_PartyInfo.SetLootMethod, SetLootMethod)
+AssignAPIWrapper("ConvertToRaid", C_PartyInfo and C_PartyInfo.ConvertToRaid, ConvertToRaid)
+AssignAPIWrapper("InviteUnit", C_PartyInfo and C_PartyInfo.InviteUnit, InviteUnit)
+AssignAPIWrapper("LeaveParty", C_PartyInfo and C_PartyInfo.LeaveParty, LeaveParty)
 ---@diagnostic enable: deprecated
 
 -- Quest APIs
@@ -116,6 +151,7 @@ local C_QuestLog = C_QuestLog;
 AssignAPIWrapper("IsQuestFlaggedCompletedOnAccount",
 	C_QuestLog and C_QuestLog.IsQuestFlaggedCompletedOnAccount,
 	function(questID) return app.IsAccountCached("Quests",questID) end)
+AssignAPIWrapper("GetQuestRewardCurrencies", C_QuestLog and C_QuestLog.GetQuestRewardCurrencies, app.EmptyFunction)
 
 -- C_TradeSkillUI
 local C_TradeSkillUI = C_TradeSkillUI;
@@ -125,10 +161,11 @@ local C_TradeSkillUI = C_TradeSkillUI;
 -- As a result, the fallback to GetTradeSkillTexture has not been tested and is not guaranteed to work.
 ---@diagnostic disable-next-line: deprecated, undefined-global
 AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, GetTradeSkillTexture);
+AssignAPIWrapper("GetTradeSkillDisplayName", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillDisplayName, app.EmptyFunction);
 
 -- Specialization APIs
 local C_SpecializationInfo = C_SpecializationInfo
-AssignAPIWrapper("GetSpecialization", C_SpecializationInfo and C_SpecializationInfo.GetSpecialization, GetSpecialization);
+AssignAPIWrapper("GetSpecialization", C_SpecializationInfo and C_SpecializationInfo.GetSpecialization, GetSpecialization or GetActiveTalentGroup);
 AssignAPIWrapper("GetSpecializationInfo", C_SpecializationInfo and C_SpecializationInfo.GetSpecializationInfo, GetSpecializationInfo);
 
 -- Spell APIs
@@ -172,7 +209,7 @@ end
 -- SpellBook APIs
 local C_SpellBook = C_SpellBook
 AssignAPIWrapper("IsSpellKnown", C_SpellBook and C_SpellBook.IsSpellKnown , IsSpellKnown);
-AssignAPIWrapper("IsPlayerSpell", C_SpellBook and C_SpellBook.IsSpellKnown , IsPlayerSpell);
 AssignAPIWrapper("IsSpellKnownOrOverridesKnown", C_SpellBook and C_SpellBook.IsSpellInSpellBook , IsSpellKnownOrOverridesKnown);
+AssignAPIWrapper("GetNumSpellTabs", C_SpellBook and C_SpellBook.GetNumSpellBookSkillLines, GetNumSpellTabs);
 
 ---@diagnostic enable: deprecated

@@ -426,9 +426,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(10827, {	-- Mythic: Xavius
-					ach(11238),	-- Mythic: Xavius Guild Run
 						title(341),	-- The Dreamer
 					}),
+					ach(11238),	-- Mythic: Xavius Guild Run
 				}),
 			}),
 		},

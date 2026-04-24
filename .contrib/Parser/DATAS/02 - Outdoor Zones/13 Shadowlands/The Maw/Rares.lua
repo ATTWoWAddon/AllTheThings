@@ -1,12 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local function bo(questID)
     return { ["questID"] = questID, ["isDaily"] = true };
 end
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(THE_MAW, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		}, {
 			n(COMMON_BOSS_DROPS, {
 				i(184395, {	-- Fallen Adventurer's Cache
 					["description"] = "Drops from numerous rares, elites, and named mobs in The Maw and Korthia.",
@@ -34,7 +38,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						156203,	-- Stygian Incinerator
 						170302,	-- Talaporas, Herald of Pain
 						172862,	-- Yero the Skittish
-					--	Korthia
+						-- Korthia
 						179769,	-- Consumption
 						179755,	-- Consumption (Rare, non-Elite version)
 						179768,	-- Consumption (Rare Elite version)
@@ -537,6 +541,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {

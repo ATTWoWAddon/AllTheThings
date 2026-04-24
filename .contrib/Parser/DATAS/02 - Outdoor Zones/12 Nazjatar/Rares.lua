@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(RARES, {
 		n(COMMON_BOSS_DROPS, {
@@ -91,7 +92,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(169372),	-- Necrofin Tadpole (PET!)
 				i(170191, {	-- Skeletal Hand
 					["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
-				--	didn't trigger quest completion!
+					-- didn't trigger quest completion!
 				}),
 			},
 		}),
@@ -214,7 +215,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 			["isDaily"] = true,
 			["description"] = "Use a |cFFFFD700Prismatic Crystal|r to charm a |cFFFFD700Muck Slug|r and bring it to Kelpwillow to activate him.",
-			["cost"] = {{"i",167893,1}},	-- Prismatic Crystal
+			["cost"] = { { "i", 167893, 1 } },	-- Prismatic Crystal
 			["sym"] = {{"select","itemID",
 				170184,	-- Ancient Reefwalker Bark
 				170183,	-- Reefwalker Bark
@@ -234,7 +235,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(169371),	-- Murgle (PET!)
 			},
 		}),
-		n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
+		n(152549, {	-- Lost Algan	-- not identified with an Elite/Vignette indicator, but drops very important currency once per day
 			["questID"] = 56916,	-- triggered upon looting. can also trigger 55427 and 57082 upon looting. possible separate manapearl + benthic trigger?
 			-- 55427 & 56916 = manapearls only
 			-- 57082 = benthic only
@@ -494,11 +495,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = {
 				i(169376),	-- Skittering Eel (PET!)
 				i(170181),	-- Tidal Guard
-				i(170066),	-- Skinning Technique: Dredged Leather (Rank 2)
-				i(170067),	-- Skinning Technique: Cragscale (Rank 2)
+				i(170066),	-- Skinning Technique: Dredged Leather [Rank 2] (RECIPE!)
+				i(170067),	-- Skinning Technique: Cragscale [Rank 2] (RECIPE!)
 			},
 		}),
-		n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency
+		n(151166, {	-- Wayward Algan	-- not identified with an Elite/Vignette indicator, but drops very important currency
 			["description"] = "Wanders around Nazjatar. This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 			["questID"] = 56915,	-- triggered when looting manapearls; triggered 57083 when looting benthic gear
 			["isDaily"] = true,
@@ -512,7 +513,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	m(NAZJATAR, {
 		n(RARES, {
-			--	Naga Commanders
+			-- Naga Commanders
 			q(56882),	-- Commander Minezra
 			q(56895),	-- Incantatrix Vazina
 			q(56894),	-- Shadowbinder Athissa

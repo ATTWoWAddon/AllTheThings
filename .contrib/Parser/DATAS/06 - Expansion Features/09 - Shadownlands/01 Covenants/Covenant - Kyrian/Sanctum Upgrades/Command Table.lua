@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
@@ -10,9 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					n(TIER_ONE, {
 						["icon"] = 3675495,
 						["groups"] = {
-							n(FOLLOWERS, bubbleDownSelf({
-								["u"] = TRAINING,	-- Temporary troops
-							}, {
+							n_TrainingFollowers({
 								follower(1241),	-- Kyrian Halberdier
 								follower(1291),	-- Kyrian Halberdier
 								follower(1292),	-- Kyrian Halberdier
@@ -21,7 +20,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								follower(1289),	-- Kyrian Phalanx
 								follower(1290),	-- Kyrian Phalanx
 								follower(1320),	-- Kyrian Phalanx
-							})),
+							}),
 							n(QUESTS, {
 								q(57900, {	-- Across the Shadowlands
 									["sourceQuests"] = { 57899 },	-- More Work?
@@ -100,7 +99,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										58103,	-- Pride or Unit
 										57900,	-- Across the Shadowlands
 									},
-									["altQuests"] = { 61860 },	-- Adenturer: Pelodis
+									["altQuests"] = { 61860 },	-- Adventurer: Pelodis
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["DisablePartySync"] = true,
@@ -114,7 +113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										58103,	-- Pride or Unit
 										57900,	-- Across the Shadowlands
 									},
-									["altQuests"] = { 61859 },	-- Adenturer: Nemea
+									["altQuests"] = { 61859 },	-- Adventurer: Nemea
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["DisablePartySync"] = true,
@@ -142,8 +141,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["isBreadcrumb"] = true,
-								--	TODO: is altQuests necessary or do they complete each other?
-								--	quest is unavailable until you build your command table
+									-- TODO: is altQuests necessary or do they complete each other?
+									-- quest is unavailable until you build your command table
 								}),
 							}),
 							n(REWARDS, {

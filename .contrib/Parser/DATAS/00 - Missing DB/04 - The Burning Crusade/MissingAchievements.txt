@@ -1,22 +1,14 @@
 2.5.1.39399
-ach(15018),	-- Infernal Gladiator: Season 1 \\ Infernal Gladiator
-ach(15019),	-- Gladiator: Season 1
-ach(15020),	-- Duelist: Season 1
-ach(15021),	-- Rival: Season 1
-ach(15022),	-- Challenger: Season 1
 ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
-2.5.2.39570
-ach(15199),	-- Gladiator: Season 2
-ach(15200),	-- Gladiator: Season 4
-ach(15201),	-- Duelist: Season 4
-ach(15202),	-- Rival: Season 4
-ach(15203),	-- Challenger: Season 4
-ach(15204),	-- Gladiator: Season 3
-ach(15205),	-- Duelist: Season 3
-ach(15206),	-- Rival: Season 3
-ach(15207),	-- Challenger: Season 3
-ach(15208),	-- Duelist: Season 2
-ach(15209),	-- Rival: Season 2
-ach(15210),	-- Challenger: Season 2
 2.5.4.44833
 ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
+2.5.5.64616
+ach(62036),	-- [DNT] Raid Attunement Achieved - Karazhan
+ach(62037),	-- [DNT] Raid Attunement Achieved - Coilfang: Serpentshrine Cavern
+ach(62038),	-- [DNT] Raid Attunement Achieved - Tempest Keep
+ach(62039),	-- [DNT] Raid Attunement Achieved - The Battle for Mount Hyjal
+ach(62040),	-- [DNT] Raid Attunement Achieved - Black Temple
+2.5.5.65895
+ach(62503),	-- [DNT] TBC Mount Skill Clawback - 113274
+ach(62504),	-- [DNT] TBC Mount Skill Clawback - 113275
+ach(62505),	-- [DNT] TBC Mount Skill Clawback - 113286

@@ -210,6 +210,10 @@ ARTISAN_TAILORING = {
 	filter(BAGS, {
 		r(12079),	-- Red Mageweave Bag
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1261695),	-- Dwarven District Banner
+		r(1261688),	-- Elder Rise Rug
+	})),
 	filter(REAGENTS, {
 		r(18401),	-- Bolt of Runecloth
 	}),
@@ -254,6 +258,10 @@ TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	filter(BAGS, {
 		r(26746),	-- Netherweave Bag
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263692),	-- Draenei Weaver's Loom
+		r(1263669),	-- Grand Drape of the Exiles
+	})),
 	filter(MISC, {
 		-- #if AFTER BFA
 		r(27033),	-- Heavy Netherweave Bandage
@@ -371,6 +379,10 @@ WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] =
 	filter(BAGS, {
 		r(56007),	-- Frostweave Bag
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263620),	-- Gilded Dalaran Banner
+		r(1263627),	-- Kirin Tor Skyline Banner
+	})),
 	filter(MISC, {
 		-- #if AFTER BFA
 		r(45545),	-- Frostweave Bandage
@@ -509,6 +521,10 @@ CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(75268),	-- Hyjal Expedition Bag
 		r(75265),	-- Otherworldly Bag
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1262370),	-- "Unity of Thorns" Tapestry
+		r(1261317),	-- Surwich Expedition Tent
+	})),
 	filter(MISC, {
 		-- #if AFTER BFA
 		r(88893),	-- Dense Embersilk Bandage
@@ -662,7 +678,10 @@ MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] 
 	r(330245, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Mist of Pandaria]
 	r(330246, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Mist of Pandaria]
 	n(ARMOR, {
+		-- #if NOT ANYCLASSIC
+		-- Wouter NOTE: this is not available in Classic for some reason
 		r(134585, {["timeline"] = {ADDED_5_1_0}}),	-- Bipsi's Gloves
+		-- #endif
 		r(125530),	-- Windwool Belt
 		r(125529),	-- Windwool Boots
 		r(125528),	-- Windwool Bracers
@@ -696,6 +715,10 @@ MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] 
 			["rank"] = 3,
 		}),
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263553),	-- Pandaren Fishing Net
+		r(1261250),	-- Pandaren Meander Rug
+	})),
 	-- #if AFTER BFA
 	filter(MISC, {
 		r(102698),	-- Heavy Windwool Bandage
@@ -735,6 +758,18 @@ DRAENOR_TAILORING = applyclassicphase(WOD_PHASE_ONE, i(115357, bubbleDownSelf({ 
 	},
 })));
 COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	i(257109, {	-- Pattern: Argussian Circular Rug (RECIPE!)
+		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		["timeline"] = { ADDED_11_2_7 },
+	}),
+	i(258486, {	-- Pattern: Beloved Elekk Plushie (RECIPE!)
+		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		["timeline"] = { ADDED_11_2_7 },
+	}),
+	i(257110, {	-- Pattern: Karabor Bed (RECIPE!)
+		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		["timeline"] = { ADDED_11_2_7 },
+	}),
 	i(114863, {	-- Pattern: Brilliant Hexweave Cloak (RECIPE!)
 		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
@@ -799,6 +834,13 @@ COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({
 		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
 	}),
 }));
+LEGION_TAILORING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263858),	-- Beloved Raptor Plushie
+		r(1260774),	-- Circular Shal'dorei Rug
+		r(1260769),	-- Shal'dorei Open-Air Tent
+	})),
+}));
 BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(330257, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
 	r(330258, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
@@ -851,6 +893,10 @@ BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(257125),	-- Deep Sea Bag [Rank 1]
 		r(257126),	-- Deep Sea Bag [Rank 2]
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1260458),	-- Red Dazar'alor Rug
+		r(1260475),	-- Zanchuli Tapestry
+	})),
 	filter(MISC, {
 		r(287274, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Alteration
 		r(257134),	-- Battle Flag: Phalanx Defense [Rank 1]
@@ -933,6 +979,11 @@ SL_TAILORING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		r(310869),	-- Shrouded Cloth Sandals
 		r(310875),	-- Shrouded Cloth Spaulders
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1272578),	-- Aspirant's Ringed Banner
+		r(1272575),	-- Heart of the Forest Banner
+		r(1263853),	-- Kyrian Aspirant's Rolled Cushion
+	})),
 	filter(MISC, {
 		r(343204),	-- Crafter's Mark I
 		r(310923),	-- Heavy Shrouded Cloth Bandage
@@ -948,6 +999,9 @@ DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		["collectible"] = false,
 	}),
 	r(376562),	-- Dragon Isles Unravelling
+	-- Technically, not from the trainer - you temporarily learn these when you touch the crafting table.
+	r(376563, {["u"]=TRAINING}),	-- Fiddle with Draconium Fabric Cutters
+	r(376564, {["u"]=TRAINING}),	-- Fiddle with Khaz'gorite Fabric Cutters
 	n(ARMOR, {
 		r(376509),	-- Surveyor's Cloth Bands
 		r(376507),	-- Surveyor's Cloth Robe
@@ -959,6 +1013,10 @@ DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		r(395807),	-- Surveyor's Seasoned Hood
 		r(395815),	-- Surveyor's Seasoned Shoulders
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1259247),	-- Draconic Circular Rug
+		r(1261940),	-- Tapestry of the Five Flights
+	})),
 	filter(PROFESSION_EQUIPMENT, {
 		r(376543),	-- Wildercloth Alchemist's Robe
 		r(376547),	-- Wildercloth Chef's Hat
@@ -1001,6 +1059,10 @@ TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(446976),	-- Weavercloth Bag
 		r(446978),	-- Weavercloth Reagent Bag
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1260215),	-- Dornogal Framed Rug
+		r(1260326),	-- Undermine Bean Bag Chair
+	})),
 	filter(PROFESSION_EQUIPMENT, {
 		r(446975),	-- Artisan Tailor's Coat
 		r(446968),	-- Weavercloth Alchemist's Robe
@@ -1019,5 +1081,61 @@ TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	filter(REAGENTS, {
 		r(454397),	-- Exquisite Weavercloth Bolt
 		r(446929),	-- Weavercloth Bolt
+	}),
+});
+MID_TAILORING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	r(471015),	-- Midnight Tailoring
+	r(1265674),	-- Artisan Tailor's Moxie
+	r(1265682),	-- Concentration
+	r(1265708),	-- Ingenuity
+	r(1265621),	-- Knowledge
+	r(1265608),	-- Multicraft
+	r(1265658),	-- Quality
+	r(471047),	-- Recraft Equipment
+	r(1265700),	-- Resourcefulness
+	r(1265683),	-- Skill
+	r(1265666),	-- Sparks
+	n(ARMOR, {
+		r(1228953),	-- Courtly Belt
+		r(1228958),	-- Courtly Cloak
+		r(1228952),	-- Courtly Gloves
+		r(1228951),	-- Courtly Helm
+		r(1228956),	-- Courtly Pants
+		r(1228955),	-- Courtly Robes
+		r(1228959),	-- Courtly Shoulders
+		r(1228957),	-- Courtly Slippers
+		r(1228954),	-- Courtly Wrists
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(1228976),	-- Bright Linen Spellthread
+	}),
+	filter(BAGS, {
+		r(1228979),	-- Arcanoweave Reagent Rucksack
+		r(1228978),	-- Bright Linen Reagent Satchel
+		r(1228977),	-- Imbued Bright Linen Backpack
+		r(1228980),	-- Sunfire Silk Backpack
+	}),
+	filter(COSMETIC, {
+		r(1280545),	-- Blood-Tempered Cape
+		r(1280544),	-- Farstrider's Embroidered Cover
+		r(1280543),	-- Scout's Cape
+		r(1280542),	-- Silvermoon Agent's Drape
+		r(1280541),	-- Smuggler's Cloak
+		r(1280546),	-- Spellbreaker's Shroud
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(1228968),	-- Bright Linen Alchemy Apron
+		r(1228970),	-- Bright Linen Enchanting Hat
+		r(1228971),	-- Bright Linen Fishing Hat
+		r(1228972),	-- Bright Linen Herbalism Hat
+		r(1228973),	-- Bright Linen Tailoring Robe
+		r(1228969),	-- Chef's Bright Linen Cooking Chapeau
+	}),
+	filter(MISC, {
+		r(1228941),	-- Bright Linen Bandage
+	}),
+	filter(REAGENTS, {
+		r(1228939),	-- Bright Linen Bolt
+		r(1228940),	-- Imbued Bright Linen Bolt
 	}),
 });

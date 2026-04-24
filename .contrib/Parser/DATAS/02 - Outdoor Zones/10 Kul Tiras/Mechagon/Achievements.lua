@@ -18,7 +18,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				crit(44305),	-- Charging Station
 				crit(44307),	-- Rustbolt Armory
 				crit(44308),	-- Reclamation Rig
-				i(246483, {["timeline"] = { ADDED_11_2_7 }}),	-- Redundant Reclamation Rig (DECOR!)
+				i(246483, {	-- Redundant Reclamation Rig (DECOR!)
+					["timeline"] = { ADDED_11_2_7 },
+				}),
 			}),
 			ach(13776),	-- Explore Mechagon
 			ach(13482),	-- Head Financier of Mechagon
@@ -34,7 +36,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			ach(13477, {	-- Junkyard Apprentice
-				i(246598, {["timeline"] = { ADDED_11_2_7 }}),	-- Screw-Sealed Stembarrel (DECOR!)
+				i(246598, {	-- Screw-Sealed Stembarrel (DECOR!)
+					["timeline"] = { ADDED_11_2_7 },
+				}),
 			}),
 			ach(13479, {	-- Junkyard Architect
 				["sym"] = {{ "achievement_criteria" }},
@@ -45,7 +49,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13475, {	-- Junkyard Scavenger
-				--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Gnomish Cog Stack (DECOR!)
+				i(246603, {	-- Gnomish Cog Stack (DECOR!)
+					["timeline"] = { ADDED_11_2_7 },
+				}),
 			}),
 			ach(13476, {	-- Junkyard Tinkerer
 				["_noautomation"] = true,
@@ -69,9 +75,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						13686,	-- Junkyard Melomaniac
 						13790,	-- Armed for Action
 					}},
-				["groups"] = {
-					i(168329),	-- Mechacycle Model W (MOUNT!)
-				},
+				["groups"] = { i(168329) },	-- Mechacycle Model W (MOUNT!)
 			}),
 			petbattle(ach(13693, {	-- Mecha-Safari
 				crit(45579),	-- Junkheap Roach

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 ZANDALARI_INCURSIONS = createHeader({
 	readable = "Zandalari Incursions",
 	icon = 838687,
@@ -11,11 +12,11 @@ ZANDALARI_INCURSIONS = createHeader({
 		mx = "Incursiones zandalari",
 		-- TODO: fr = "",
 		-- TODO: it = "",
+		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: ko = "",
 		cn = "赞达拉入侵",
-		-- TODO: tw = "",
+		tw = "贊達拉入侵",
 	},
 	description = {
 		en = "The Zandalari Incursions into the main land of Pandaria began with the release of the Isle of Thunder. Warbringers can be found all around the continent with varying degrees of challenging solo mechanics and available mounts! Farm these with friends.",
@@ -24,13 +25,14 @@ ZANDALARI_INCURSIONS = createHeader({
 		-- TODO: mx = "",
 		-- TODO: fr = "",
 		-- TODO: it = "",
+		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: ko = "",
 		cn = "赞达拉部族对潘达利亚大陆的入侵始于雷神岛的开放。战争使者遍布整个大陆，拥有难度各异的单人挑战机制及可获取的坐骑！与好友一同刷取这些奖励吧。",
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
 	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, n(ZANDALARI_INCURSIONS, {
 		["coords"] = {
@@ -68,7 +70,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				["groups"] = {
 					i(94158, {	-- Big Bag of Zandalari Supplies
 						["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
-						["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
+						["sym"] = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 					}),
 					i(94159, {	-- Small Bag of Zandalari Supplies
 						["description"] = "Can contain all sorts of herbs, ore, and cloth.",
@@ -76,6 +78,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(94225),	-- Stolen Celestial Insignia
 					i(94227),	-- Stolen Golden Lotus Insignia
 					i(94226),	-- Stolen Klaxxi Insignia
+					i(94223),	-- Stolen Shado-Pan Insignia
 				},
 			}),
 			n(69768, {	-- Zandalari Warscout

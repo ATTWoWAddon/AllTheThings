@@ -101,7 +101,8 @@ local function FilterBind(group)
 end
 api.Filters.Bind = FilterBind;
 local function FilterInGame(item)
-	return not item.u or item.u > 2;
+	local u = item.u
+	return not u or u > 2
 end
 api.Filters.InGame = FilterInGame;
 -- manually track InGame in CurrentCharacterFilters
@@ -239,6 +240,16 @@ function(item)
 		if FilterFilterID_IgnoredTypes[item.__type or 0] then
 			return true;
 		end
+		local itemg = item.g
+		if itemg then
+			for i=1,#itemg do
+				if itemg[i].visible then
+					-- app.PrintDebug("filterID ignored",f,app:SearchLink(item))
+					return true
+				end
+			end
+			-- app.PrintDebug("filterID included after",#itemg,f,app:SearchLink(item))
+		end
 	else
 		return true;
 	end
@@ -272,9 +283,9 @@ end or function(item)
 		return true;
 	end
 end);
-app.AddEventHandler("OnStartup", function()
-	Professions = app.CurrentCharacter.Professions
-	ActiveSkills = app.CurrentCharacter.ActiveSkills
+app.AddEventHandler("OnAfterSavedVariablesAvailable", function(currentCharacter)
+	Professions = currentCharacter.Professions
+	ActiveSkills = currentCharacter.ActiveSkills
 end)
 
 -- Class
@@ -371,18 +382,20 @@ end);
 -- we actually don't "really" care to have level filter in the RawCharacterFilters... just causes more inaccurate quest reports since level req on every expac changes all the time
 RawCharacterFilters.Level = nil;
 
--- SkillLevel
+-- SkillLevel (Classic only)
+if app.IsClassic then
 app.MaximumSkillLevel = 99999;
 DefineToggleFilter("SkillLevel", CharacterFilters,
 function(group)
 	if group.learnedAt then
-        return app.MaximumSkillLevel >= group.learnedAt;
-    end
-    -- no skill level requirement on the group, have to include it
-    return true;
+		return app.MaximumSkillLevel >= group.learnedAt;
+	end
+	-- no skill level requirement on the group, have to include it
+	return true;
 end);
 -- SkillLevel doesn't really exclude a character from seeing a given Thing
 RawCharacterFilters.SkillLevel = nil;
+end
 
 -- Trackable
 -- Whether this group can be 'tracked'
@@ -428,10 +441,12 @@ if app.IsRetail then
 		ExpansionFilters[9] = app.Settings:Get("ExpansionFilter:SL")
 		ExpansionFilters[10] = app.Settings:Get("ExpansionFilter:DF")
 		ExpansionFilters[11] = app.Settings:Get("ExpansionFilter:TWW")
+		ExpansionFilters[12] = app.Settings:Get("ExpansionFilter:MID")
+		ExpansionFilters[13] = app.Settings:Get("ExpansionFilter:TLT")
 
 		-- Enable the filter if any expansion is disabled
 		local anyDisabled = false
-		for i = 1, 11 do
+		for i = 1, 12 do
 			if ExpansionFilters[i] == false then
 				anyDisabled = true
 				break

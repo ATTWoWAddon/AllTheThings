@@ -106,6 +106,10 @@ HORDE_ONLY = {
 		-- #endif
 	-- #endif
 };
-ALL_RACES = { PANDAREN_NEUTRAL }
+ALL_RACES = {
+	-- #if AFTER MOP
+	PANDAREN_NEUTRAL
+	-- #endif
+};
 for _,v in pairs(ALLIANCE_ONLY) do table.insert(ALL_RACES,v) end
 for _,v in pairs(HORDE_ONLY) do table.insert(ALL_RACES,v) end

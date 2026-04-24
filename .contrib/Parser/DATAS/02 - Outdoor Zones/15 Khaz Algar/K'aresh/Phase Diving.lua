@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		header(HEADERS.Spell, 1214374, {	-- Phase Diving
@@ -10,7 +11,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					Alex TODO: is there a better way?
 					Exo write-up:
 					This one will be tricky. You find orbs while Phase Diving and when you go through them, you get the item. Orb can't be targeted, no WoWhead data so far... We don't know if an Orb is an object or NPC.
-					Reshii Wraps Level 2 upgrade "Secrets of the Depths" is required for this as IT is the one unlocking this feature. "You may now find phase orbs ... Phase orbs have a chance to recover a Phase-Lost appearance.
+					Reshii Wraps Level 2 upgrade "Secrets of the Depths" is required for this as IT is the one unlocking this feature. "You may now find phase orbs ... Phase orbs have a chance to recover a Phase-Lost appearance."
 					So... When adventuring, you can find Orbs with Fixed coordinate and you can "go through" it multiple times on a same character. Example, { 50.1, 36.2, KARESH }, behind Hashim.
 					You either get a junk item 250305, [Phase-Lost Detritus] OR a Phase-Lost cosmetic. (Level 3) Upgrade "Orbs of Power" messes with the concept of coordinates.
 					"Enemies Killed while Phase Diving now have a chance to phase orb ... Phase orbs have a chance to recover a Phase-Lost appearance." + You can ride ground mount.
@@ -26,6 +27,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						{ 43.1, 21.6, KARESH },
 						{ 44.2, 16.9, KARESH },
 						{ 47.2, 15.8, KARESH },
+						{ 47.7, 37.3, KARESH },
 						{ 50.1, 36.2, KARESH },
 						{ 50.5, 54.1, KARESH },
 						{ 50.6, 35.1, KARESH },
@@ -49,13 +51,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						{ 61.1, 27.3, KARESH },
 						{ 61.2, 39.2, KARESH },
 						{ 62.6, 41.6, KARESH },
+						{ 64.0, 46.0, KARESH },
 						{ 64.9, 52.2, KARESH },
 						{ 64.9, 55.0, KARESH },
+						{ 66.0, 48.8, KARESH },
 						{ 69.7, 55.3, KARESH },
 						{ 70.3, 32.0, KARESH },
 						{ 74.0, 57.5, KARESH },
 						{ 75.7, 34.4, KARESH },
 						{ 76.0, 32.6, KARESH },
+						{ 76.0, 58.2, KARESH },
 						{ 77.3, 38.0, KARESH },
 						{ 78.4, 48.9, KARESH },
 						{ 34.9, 57.9, KARESH_TAZAVESH },
@@ -166,7 +171,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(RARES, sharedData({
 				["isDaily"] = true,
-			},{
+			}, {
 				n(232128, {	-- Ixthar the Unblinking
 					["coord"] = { 64.0, 43.6, KARESH },
 					["questID"] = 90596,
@@ -269,6 +274,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["groups"] = {
 						i(240171),	-- Observer's Soul Fetters
 						i(246160),	-- Sthaarbs's Last Lunch (MOUNT!)
+						i(240213),	-- Veiling Mana Shroud
 					},
 				}),
 				n(232111, {	-- The Nightreaver
@@ -317,7 +323,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							["coord"] = { 52.1, 68.3, KARESH },
 							["groups"] = {
 								ach(42730),	-- Jump, Jump, and Away!
-								i(246293), 	-- Buckler of the Last Stand (COSMETIC!)
+								i(246293),	-- Buckler of the Last Stand (COSMETIC!)
 							},
 						}),
 						o(529537, {	-- Efrat's Forgotten Bulwark
@@ -442,8 +448,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(WORLD_QUESTS, {
-				--["sourceQuests"] = {},
-				["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				-- ["sourceQuests"] = {},
+				["groups"] = bubbleDownFiltered({
+					["isWorldQuest"] = true,
+				},FILTERFUNC_questID,{
 					q(86872, {	-- Phase Diving: Experimental Extermination
 						["coord"] = { 52.8, 61.7, KARESH },
 					}),

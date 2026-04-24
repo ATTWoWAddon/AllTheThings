@@ -58,7 +58,7 @@ local function defaultComparison(a,b)
 	-- SortPriority
 	acomp = a.SortPriority or 0
 	bcomp = b.SortPriority or 0
-	if acomp ~= 0 or bcomp ~= 0 then
+	if acomp ~= bcomp then
 		return acomp < bcomp
 	end
 	-- Maps
@@ -242,6 +242,12 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		local acomp, bcomp;
+		-- SortPriority
+		acomp = a.SortPriority or 0
+		bcomp = b.SortPriority or 0
+		if acomp ~= bcomp then
+			return acomp < bcomp
+		end
 		acomp = a.total or 0;
 		bcomp = b.total or 0;
 		return acomp < bcomp;
@@ -337,8 +343,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		a = toLowerString(a.text);
-		b = toLowerString(b.text);
+		a = toLowerString(a.name or a.text);
+		b = toLowerString(b.name or b.text);
 		return a < b;
 	end,
 	name = function(a,b)
@@ -356,7 +362,7 @@ app.SortDefaults = setmetatable({
 		-- SortPriority
 		local acomp = a.SortPriority or 0
 		local bcomp = b.SortPriority or 0
-		if acomp ~= 0 or bcomp ~= 0 then
+		if acomp ~= bcomp then
 			return acomp < bcomp
 		end
 		-- Any two similar-type groups with text
@@ -404,6 +410,32 @@ app.SortDefaults = setmetatable({
 			return a < b;
 		else
 			return true;
+		end
+	end,
+	expansion = function(a, b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true
+			end
+		elseif b then
+			return false
+		else
+			-- neither a or b exists, equality returns false
+			return false
+		end
+
+		-- Compare by expansionID (lowest to highest)
+		local aExp = a.expansionID or 0
+		local bExp = b.expansionID or 0
+
+		if aExp == bExp then
+			-- fallback: alphabetical by name/text if same
+			a = toLowerString(a.name or a.text)
+			b = toLowerString(b.name or b.text)
+			return a < b
+		else
+			return aExp < bExp
 		end
 	end,
 	progress = function(a, b)

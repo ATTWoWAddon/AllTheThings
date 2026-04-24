@@ -1,6 +1,7 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
+
 ZALAZANES_FALL = createHeader({
 	readable = "Zalazane's Fall",
 	icon = 255135,
@@ -9,8 +10,10 @@ ZALAZANES_FALL = createHeader({
 	},
 	description = {
 		en = "Zalazane's Fall (also referred to as the Battle to reclaim the Echo Isles) was the final push by Vol'jin and the Darkspear tribe to retake the Echo Isles from the clutches of the evil Zalazane. It was a culminating event for the Horde to occur before the release of the next expansion, Cataclysm. Furthermore, all troll characters created after the liberation of the Echo Isles now have their new starting point there.",
+		cn = "扎拉赞恩的陨落（也被称作夺回回音群岛之战），是沃金与暗矛部族为从邪恶的扎拉赞恩手中夺回回音群岛而发起的最终总攻。这是在下一部资料片《大地的裂变》发布之前，部落所经历的一场重大收尾事件。此外，在回音群岛解放之后创建的所有巨魔角色，其新手出生地也变更为了这里"
 	},
 });
+
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n(ZALAZANES_FALL,
 	bubbleDown({
 		["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
@@ -53,7 +56,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				["groups"] = {
 					objective(1, {	-- Dance of the Spirits
 						["provider"] = { "n", 40352 },	-- Witch Doctor Hez'tok
-						["coord"] = { 57, 74.14, DUROTAR },
+						["coord"] = { 57.0, 74.14, DUROTAR },
 					}),
 					i(54653),	-- Darkspear Pride (TOY!)
 				},
@@ -81,7 +84,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				["groups"] = {
 					objective(1, {	-- Challenge the Tiger Matriarch
 						["provider"] = { "n", 40312 },	-- Tiger Matriarch
-						["coord"] = { 59, 82, DUROTAR },
+						["coord"] = { 59.0, 82.0, DUROTAR },
 					}),
 				},
 			}),

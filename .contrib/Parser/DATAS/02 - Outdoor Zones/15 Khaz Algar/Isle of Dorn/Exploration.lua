@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		explorationHeader({
@@ -21,6 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			exploration(14778),	-- Glimmering Shore
 			exploration(14779),	-- Golgrin's Reach
 			exploration(14782),	-- Ironwold
+			map_exploration(14717,{coord={52.5,51.6,ISLE_OF_DORN}}),	-- Isle of Dorn
 			exploration(15450),	-- Keeper's Breath
 			exploration(14787),	-- Mourning Rise
 			visit_exploration(15943,{coord={28.4,47.7,ISLE_OF_DORN}}),	-- Oztan Isle

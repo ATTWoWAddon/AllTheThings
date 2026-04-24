@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	applyclassicphase(WRATH_PHASE_ONE, m(128, bubbleDown({ ["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 }, }, {	-- Strand of the Ancients
 		["icon"] = 236394,

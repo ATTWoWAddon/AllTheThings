@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(QUESTS, {
@@ -490,7 +491,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 189188 },	-- Sharnax
 					["coord"] = { 54.8, 64.3, THALDRASZUS },
 					["groups"] = {
-						i(197103),	--	Highland Drake: Maned Chin (MM!)
+						i(197103),	-- Highland Drake: Maned Chin (MM!)
 					},
 				}),
 				q(66472, {	-- Primal List
@@ -1235,7 +1236,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			q(72519, {	-- Temporal Two-ning
 				["sourceQuests"] = { 66032 },	-- Return to the Present
 				["provider"] = { "n", 186931 },	-- Nozdormu
-				["coord"] = { 60, 82.4, THALDRASZUS },
+				["coord"] = { 60.0, 82.4, THALDRASZUS },
 			}),
 			q(67178, {	-- White Eyes, Blue Dragon
 				["sourceQuests"] = { 67167 },	-- It's Time To Duel!
@@ -1286,6 +1287,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(DRAGON_ISLES, {
 		m(THALDRASZUS, {

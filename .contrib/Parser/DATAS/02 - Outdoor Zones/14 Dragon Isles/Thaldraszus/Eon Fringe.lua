@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 EON_FRINGE = createHeader({
 	readable = "Eon's Fringe",
 	icon = 2026009,
@@ -8,14 +9,17 @@ EON_FRINGE = createHeader({
 		en = "Eon's Fringe",
 		de = "Grenze des Äons",
 		es = "Margen del Eón",
+		-- TODO: mx = "",
         fr = "marges des Éons",
 		it = "Confine degli Eoni",
+		ko = "영겁의 끝자락",
 		pt = "Orla do Eon",
         ru = "Грань Эпохи",
-		ko = "영겁의 끝자락",
         cn = "纪元边界",
+		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(EON_FRINGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
@@ -32,7 +36,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(QUESTS, {
 				q(77437, {	-- Eon's Fringe
 					["provider"] = { "n", 209020 },	-- Slaszerathel
-					["coord"] = { 79, 44.5, VALDRAKKEN },
+					["coord"] = { 79.0, 44.5, VALDRAKKEN },
 					["isBreadcrumb"] = true,
 				}),
 
@@ -275,7 +279,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(201664, {	-- Temporal Investi-gator
 					["sourceQuests"] = { 75986 },	-- Feats Per Minute
 					["description"] = "Go in Everywhere Inn at 2nd floor, borrow Melly's Metronographer, use it near Bartender Bob, buy Infinitea from Bartender Blob and fly at coords, use it and interact with object to summon rare",
-					["cost"] = {{"i",208448,1}},	-- Infinitea
+					["cost"] = { { "i", 208448, 1 } },	-- 1x Infinitea
 					["coords"] = {
 						{ 52.3, 81.4, THALDRASZUS },	-- Everywhere Inn
 						{ 54.6, 85.9, THALDRASZUS },	-- Rare summon spot
@@ -327,18 +331,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(206927, {	-- Depleted Chronoforged Mallet (COSMETIC!)
-							["cost"] = {{ "c", DRAGON_SUPPLIES, 600 }},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
 						}),
 						i(206928, {	-- Echoing Temporadic Gavel (COSMETIC!)
-							["cost"] = {{ "c", DRAGON_SUPPLIES, 600 }},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
 						}),
 						i(206926, {	-- Off-Sync Off-Hammer (COSMETIC!)
-							["cost"] = {{ "c", DRAGON_SUPPLIES, 600 }},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
 						}),
 						i(248105, {	-- Valdrakken Sconce (DECOR!)
 							["sourceAchievement"] = 19507,	-- Fringe Benefits
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", DRAGON_SUPPLIES, 150 }},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 					},
 				}),
@@ -354,6 +358,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	m(DRAGON_ISLES, {
 		m(THALDRASZUS, {

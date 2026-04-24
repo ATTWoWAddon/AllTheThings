@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(REWARDS, {
@@ -28,20 +29,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
-			--Note: confirm whether this is raid gear or not, copied over the symlink from weekly vault boxes as template for future
-			--i(206135, {	-- Heroic Dungeon Delver's Trophy Chest
-				--["sym"] = {
-						--{"select", "instanceID", 1200},			-- Vault of the Incarnates
-						--{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						--{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
-						--{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						--{"is","encounterID"},					-- Only Encounter Headers
-						--{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						--{"is", "itemID"},						-- Only Items!
-						--{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					--},
-				--}),
-			--}),
+			-- Note: confirm whether this is raid gear or not, copied over the symlink from weekly vault boxes as template for future
+			-- i(206135, {	-- Heroic Dungeon Delver's Trophy Chest
+			-- 	["sym"] = {
+			-- 			{"select", "instanceID", 1200},			-- Vault of the Incarnates
+			-- 			{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+			-- 			{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
+			-- 			{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+			-- 			{"is","encounterID"},					-- Only Encounter Headers
+			-- 			{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+			-- 			{"is", "itemID"},						-- Only Items!
+			-- 			{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+			-- 		},
+			-- 	}),
+			-- }),
 		}),
 		n(QUESTS, {
 			header(HEADERS.Achievement, 16556, {	-- Great Gourmand of The Ruby Feast
@@ -200,8 +201,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
 						["groups"] = {
+							o(384858, {	-- Chef's Hoard
+								["coord"] = { 62.6, 12.5, VALDRAKKEN },
+								["groups"] = { i(202013) },	-- Ruby Recipe Journal VIII (QI!)
+							}),
+							--
 							i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
-							i(202013),	-- Ruby Recipe Journal VIII (QI!)
 						},
 					}),
 				},
@@ -221,7 +226,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
-				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
+				["cost"] = { { "i", 197769, 1 } },	-- 1x Tasty Hatchling's Treat
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
@@ -233,7 +238,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["timeline"] = { ADDED_10_0_5 },
-				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
+				["cost"] = { { "i", 197769, 1 } },	-- 1x Tasty Hatchling's Treat
 				["isDaily"] = true,
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
@@ -246,7 +251,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["timeline"] = { ADDED_10_0_5 },
-				["cost"] = { { "i", 197766, 1 }, },	-- 1x Snow in a Cone
+				["cost"] = { { "i", 197766, 1 } },	-- 1x Snow in a Cone
 				["isDaily"] = true,
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
@@ -259,7 +264,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["timeline"] = { ADDED_10_0_5 },
-				["cost"] = { { "i", 197767, 1 }, },	-- 1x Blubbery Muffin
+				["cost"] = { { "i", 197767, 1 } },	-- 1x Blubbery Muffin
 				["isDaily"] = true,
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
@@ -272,7 +277,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["timeline"] = { ADDED_10_0_5 },
-				["cost"] = { { "i", 197768, 1 }, },	-- 1x Tasty Hatchling's Treat
+				["cost"] = { { "i", 197768, 1 } },	-- 1x Tasty Hatchling's Treat
 				["isDaily"] = true,
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
@@ -345,7 +350,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			q(72354, {	-- The Great Vault
 				["provider"] = { "n", 196499 },	-- Therazal
-				["coord"] = { 49.9, 56, VALDRAKKEN },
+				["coord"] = { 49.9, 56.0, VALDRAKKEN },
 				["groups"] = {
 					i(201793),	-- Resplendent Gemstone
 				},
@@ -371,7 +376,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 216946 },	-- Chromie
 				["coord"] = { 48.5, 60.4, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_7 },
-				--["isBreadcrumb"] = xx, TODO: re-check it
+				-- ["isBreadcrumb"] = xx, TODO: re-check it
 			}),
 			q(79512, {	-- Who Are You?
 				["sourceQuests"] = { 79511 },	-- Identity Crisis

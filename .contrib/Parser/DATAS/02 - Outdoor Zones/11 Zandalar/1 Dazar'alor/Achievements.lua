@@ -11,9 +11,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(12957, {	-- Champion of the Honorbound
 				["races"] = HORDE_ONLY,
 			}),
-			--	NEEDS CONFIRMATION: for boon of gonk and boon of pa'ku"loa expectations," do you need to do any other quests in the zuldazar storyline, or can you get both buffs right after you choose gonk or pa'ku?  i didn't do the achievement until after i had completely finished zuldazar/nazmir, so i'm not sure.
+			-- NEEDS CONFIRMATION: for boon of gonk and boon of pa'ku"loa expectations," do you need to do any other quests in the zuldazar storyline, or can you get both buffs right after you choose gonk or pa'ku?  i didn't do the achievement until after i had completely finished zuldazar/nazmir, so i'm not sure.
 			ach(12614, {	-- Loa Expectations
-			--	NEEDS CONFIRMATION: for gonk/pa'ku, do you need to do any other quests in the zuldazar storyline, or can you get both buffs right after you choose?  i didn't do the achievement until after i had completely finished zuldazar/nazmir, so i'm not sure.
+			-- NEEDS CONFIRMATION: for gonk/pa'ku, do you need to do any other quests in the zuldazar storyline, or can you get both buffs right after you choose?  i didn't do the achievement until after i had completely finished zuldazar/nazmir, so i'm not sure.
 				["description"] = "The best place to get this is in the \"Council Chambers\", where all six shrines are in one room. Head to the coordinates provided and enter the building. Turn left and go upstairs. There are shrines around the perimeter of the room for each loa.",
 				["coord"] = { 40.8, 11.4, DAZARALOR },
 				["races"] = HORDE_ONLY,

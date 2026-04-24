@@ -16,7 +16,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			o(385001, {	-- Step 2: Empty Fish Barrel
 				["description"] = "Once you wake up from your dance hangover, loot the Empty Fish Barrel. It's directly in front of you.",
 				["sourceQuests"] = { 72676 },	-- Step 1: Dance, Dance 'Til You're Dead
-				["coord"] = { 20, 40, THE_WAKING_SHORES },
+				["coord"] = { 20.0, 40.0, THE_WAKING_SHORES },
 				["groups"] = {
 					i(202061),	-- Empty Fish Barrel
 				},
@@ -30,7 +30,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["groups"] = {
 					i(202072, {	-- Frigid Floe Fish
 						["description"] = "You'll need 100 of these fish. They can be found in open waters in the Azure Span. After using them with the barrel, you'll receive a Half-Filled Fish Barrel.",
-						["coord"] = { 12.4, 50, THE_AZURE_SPAN },
+						["coord"] = { 12.4, 50.0, THE_AZURE_SPAN },
 					}),
 				},
 			}),
@@ -56,7 +56,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["groups"] = {
 					i(202074, {	-- Kingfin, the Wise Whiskerfish
 						["description"] = "Just one! But it'll take a while. Having good Perception on your Profession gear may help.",
-						["coord"] = { 56, 44.5, THALDRASZUS },
+						["coord"] = { 56.0, 44.5, THALDRASZUS },
 					}),
 					i(202068),	-- Brimming Fish Barrel
 				},
@@ -64,13 +64,13 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			i(202069, {	-- Step 6: Back to the Beginning
 				["name"] = "Step 6: Back to the Beginning",
 				["description"] = "Head back to where you originally picked up the empty barrel, and place the Overflowing Fish Barrel on the ground.",
-				["coord"] = { 20, 40, THE_WAKING_SHORES },
+				["coord"] = { 20.0, 40.0, THE_WAKING_SHORES },
 			}),
 			q(72738, {	-- Step 7: The Way to an Otto's Heart
 				["name"] = "Step 7: The Way to an Otto's Heart",
 				["sourceQuests"] = { 72808 },	-- Step 5: One Last Fish
 				["provider"] = { "n", 199563 },	-- Otto
-				["coord"] = { 20, 40, THE_WAKING_SHORES },
+				["coord"] = { 20.0, 40.0, THE_WAKING_SHORES },
 				["groups"] = {
 					i(198870),	-- Otto (Mount!!)
 				},

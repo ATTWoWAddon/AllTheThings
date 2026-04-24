@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(QUESTS, {
@@ -308,7 +309,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["sourceQuests"] = { 78538 },	-- Group Effort
 					["provider"] = { "n", 212747 },	-- Baelgrim
 					["coord"] = { 36.0, 52.8, DORNOGAL },
-					--dungeon quest which queue you into follower dungeon
+					-- dungeon quest which queue you into follower dungeon
 				}),
 				q(78539, {	-- Lasting Repairs
 					["sourceQuests"] = { 80022 },	-- Calling the Stormriders
@@ -711,17 +712,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(78757, {	-- Honey and Clay the Pain Away
 					["sourceQuests"] = { 78754 },	-- Lost Delivery
 					["provider"] = { "n", 213691 },	-- Harmot
-					["coord"] = { 67, 43.8, ISLE_OF_DORN },
+					["coord"] = { 67.0, 43.8, ISLE_OF_DORN },
 				}),
 				q(78758, {	-- Pulse within the Earth
 					["sourceQuests"] = { 78757 },	-- Honey and Clay the Pain Away
 					["provider"] = { "n", 213691 },	-- Harmot
-					["coord"] = { 67, 43.8, ISLE_OF_DORN },
+					["coord"] = { 67.0, 43.8, ISLE_OF_DORN },
 				}),
 				q(78755, {	-- Playing in the Mud
 					["sourceQuests"] = { 78758 },	-- Pulse within the Earth
 					["provider"] = { "n", 214921 },	-- Harmot
-					["coord"] = { 67, 47.3, ISLE_OF_DORN },
+					["coord"] = { 67.0, 47.3, ISLE_OF_DORN },
 					["groups"] = {
 						o(413246, {	-- Elemental Silt Mound
 							i(211485),	-- Elementally Charged Silt (QI!)
@@ -733,7 +734,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(78756, {	-- Lots and Lots of FIre Honey
 					["sourceQuests"] = { 78758 },	-- Pulse within the Earth
 					["provider"] = { "n", 214922 },	-- Harvester Farnee
-					["coord"] = { 67, 47.3, ISLE_OF_DORN },
+					["coord"] = { 67.0, 47.3, ISLE_OF_DORN },
 					["groups"] = {
 						i(211489),	-- Enormous Glob of Fire Honey (QI!)
 					},
@@ -744,7 +745,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						78755,	-- Playing in the Mud
 					},
 					["provider"] = { "n", 214921 },	-- Harmot
-					["coord"] = { 67, 47.3, ISLE_OF_DORN },
+					["coord"] = { 67.0, 47.3, ISLE_OF_DORN },
 					["groups"] = {
 						i(228380),	-- Earthmender's Signet
 					},
@@ -1077,7 +1078,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			header(HEADERS.Item, 228217, {	-- Design: Solid Amber
 				q(82441, {	-- For The Love of Gems
-					--["sourceQuests"] = { x },	-- ?
+					-- ["sourceQuests"] = { x },	-- ?
 					["provider"] = { "n", 223637 },	-- Natalia Pearce
 					["coord"] = { 43.0, 70.0, ISLE_OF_DORN },
 				}),

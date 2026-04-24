@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(158255),	-- Sea Raider's Crushers
 					i(158250),	-- Sea Raider's Legguards
 					--
-					h(i(161249)), 	-- Jambani Britches
+					h(i(161249)),	-- Jambani Britches
 					h(i(161253)),	-- Rastari Greaves
 					h(i(161251)),	-- Torcalin Leggings
 					h(i(161246)),	-- Zanchuli Woolies
@@ -836,9 +836,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127586 },	-- Joma
 				["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(152849),	-- Pulsating Extract (QI!)
-				},
+				["groups"] = { i(152849) },	-- Pulsating Extract (QI!)
 			}),
 			q(48089, {	-- Mountain Sounds
 				["sourceQuests"] = { 48087 },	-- Equine Retrieval
@@ -846,6 +844,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 52.5, 28.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					i(252392, {	-- Admiral's Chandelier (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(153357),	-- Battlehorn of the Mountain (PQI!)
 				},
 			}),
@@ -1257,7 +1258,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 52253 },	-- The Keys to Success in Freehold
 				["provider"] = { "n", 141032 },	-- Flynn Fairwind (mobileNPC)
 				["races"] = ALLIANCE_ONLY,
-				--	Coordinates depend on where you finish the previous quest
+				-- Coordinates depend on where you finish the previous quest
 			}),
 			q(48354, {	-- Tainted Shipments
 				["sourceQuests"] = {

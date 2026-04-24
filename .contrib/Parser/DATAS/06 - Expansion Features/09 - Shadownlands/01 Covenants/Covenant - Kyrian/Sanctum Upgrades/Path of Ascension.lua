@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local BRIGHTSCALE_HATCHLING = i(180815);	-- Brightscale Hatchling (PET!)
 local DUSTY_SPOREFLUTTER = i(180639);	-- Dusty Sporeflutter (PET!)
 local DAUNTLESS_DUSKRUNNER = i(181317);	-- Dauntless Duskrunner (MOUNT!)
@@ -52,7 +53,7 @@ local PHIXIN_GROUP = {
 		["cost"] = { { "c", ANIMA, 1000 } },
 	}),
 	i(180962, {	-- Sterling-Silver Cudgel
-		["cost"] = { { "c", ANIMA, 1000  } },
+		["cost"] = { { "c", ANIMA, 1000 } },
 	}),
 	i(181323, {	-- Blightclutched Greatstaff
 		["cost"] = { { "c", ANIMA, 500 } },
@@ -149,6 +150,7 @@ local CHAMPIONS_PELT = 180478;
 local ELYSIAN_FEATHERS = 180477;
 local NIGHTFORGED_STEEL = 180595;
 local SOUL_MIRROR = 179378;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
@@ -433,9 +435,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									i(179378, {	-- Soul Mirror
-										["cost"] = {
-											{ "i", 178995, 5 },	-- 5xSoul Mirror Shard
-										},
+										["cost"] = { { "i", 178995, 5 } },	-- 5xSoul Mirror Shard
 									}),
 									i(181278, {	-- Soulseeker Crystal
 										["cost"] = {
@@ -924,10 +924,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
+										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -949,10 +949,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(63171, {	-- Path of Ascension: Craven Corinth
+										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -974,10 +974,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(62951, {	-- Path of Ascension: Kleia
+										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -1007,10 +1007,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(62952, {	-- Path of Ascension: Pelagos
+										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -1307,7 +1307,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							["icon"] = 3565449,
 							["groups"] = {
 								n(REWARDS, {
-									title(439,	{	-- <Name> the Ascended (TITLE!)
+									title(439,	{	-- <Name> the Ascended
 										["description"] = "Finish all fights on Humility Difficulty.",
 									}),
 									n(171873, {	-- Athanos

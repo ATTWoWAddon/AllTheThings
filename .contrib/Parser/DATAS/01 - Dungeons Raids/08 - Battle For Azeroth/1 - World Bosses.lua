@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
@@ -122,7 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				["isRaid"] = true,
 				["coord"] = { 35.6, 33.6, NAZMIR },
 				["lvl"] = { 50 },
-				["creatureID"] = 132701,	-- T'zane <Tehe Soul Terror>
+				["creatureID"] = 132701,	-- T'zane <The Soul Terror>
 				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(161396),	-- Petrified Mask of the Afterlife
 					i(161391),	-- Deathshambler's Shoulderpads
@@ -181,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					1182,	-- Saltstone Mine
 					1183,	-- Thornheart
 				},
-				["creatureID"] = 140163,	-- Warbringeer Yenajz
+				["creatureID"] = 140163,	-- Warbringer Yenajz
 				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(161349),	-- Amice of the Rending Abyss
 					i(161357),	-- Spaulders of the Enveloping Maw
@@ -300,7 +301,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		n(WORLD_BOSSES, {
 			q(58508),	-- Grand Empress Shek'zara first kill??
 			q(58512),	-- Grand Empress Shek'zara bonus roll
-			--q(58770),	-- Grand Empress Shek'zara bonus roll
+			-- q(58770),	-- Grand Empress Shek'zara bonus roll
 		}),
 	}));
 	m(ZANDALAR, {

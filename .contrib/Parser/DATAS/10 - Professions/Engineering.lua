@@ -1,8 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_ENGINEERING_KNOWLEDGE = 2027;
-local TWW_ENGINEERING_KNOWLEDGE = 2788;
 root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18901, {	-- Chromatic Calibration: Holo-Gogs (automated)
@@ -70,134 +68,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["sourceQuestNumRequired"] = 1,
 			}),
 		})),
-		n(QUESTS, sharedData({
-			["learnedAt"] = 200,
-		}, {
-			q(3634, {	-- Gnome Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					--3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 62.6, 36.2, THE_BARRENS },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3630, {	-- Gnome Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					--3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 55.0, 8.6, STORMWIND_CITY },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3632, {	-- Gnome Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					--3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 68.8, 45.2, IRONFORGE },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3637, {	-- Gnome Engineering [H]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					--3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 62.6, 36.2, THE_BARRENS },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3635, {	-- Gnome Engineering [H]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					--3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 75.6, 74.6, UNDERCITY },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 30,
-			}),
+		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {
 			q(29477, {	-- Gnomish Engineering
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
@@ -210,7 +81,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
 					29475,	-- Goblin Engineering
-					--29477,	-- Gnomish Engineering
+					-- 29477,	-- Gnomish Engineering
 					-- #if AFTER CATA
 					29475,	-- Goblin Engineering
 					29477,	-- Gnomish Engineering
@@ -234,107 +105,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					{ "i", 4392, 2 },	-- Advanced Target Dummy
 					{ "i", 4407, 1 },	-- Accurate Scope
 				},
+				["requireSkill"] = ENGINEERING,
+				["learnedAt"] = 200,
 				["repeatable"] = true,
-			}),
-			q(3629, {	-- Goblin Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					--3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 55.0, 8.6, STORMWIND_CITY },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(4181, {	-- Goblin Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					--4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 68.8, 45.2, IRONFORGE },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3633, {	-- Goblin Engineering [H]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					--3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 62.6, 36.2, THE_BARRENS },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3526, {	-- Goblin Engineering [H]
-				["altQuests"] = {
-					--3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 75.6, 74.6, UNDERCITY },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 30,
 			}),
 			q(29475, {	-- Goblin Engineering
 				["altQuests"] = {
@@ -347,7 +120,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					3635,	-- Gnome Engineering
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
-					--29475,	-- Goblin Engineering
+					-- 29475,	-- Goblin Engineering
 					29477,	-- Gnomish Engineering
 				},
 				["qgs"] = {
@@ -368,78 +141,33 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					{ "i", 10507, 20 },	-- Solid Dynamite
 					{ "i", 4384, 5 },	-- Explosive Sheep
 				},
+				["requireSkill"] = ENGINEERING,
+				["learnedAt"] = 200,
 				["repeatable"] = true,
 			}),
 		})),
-		-- #if NOT ANYCLASSIC
-		n(QUESTS, sharedData({
-			["cost"] = { { "g", 20000 } },	-- 2g
-			["lvl"] = 30,
-			["repeatable"] = true,
-			["timeline"] = { REMOVED_4_0_3 },
-		}, {
-			q(3647, {	-- Membership Card Renewal [A]
-				["sourceQuest"] = 3641,	-- Show Your Work
-				["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-				["coord"] = { 69.8, 50.2, IRONFORGE },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(10790, {	-- Gnome Engineer Membership Card
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-				},
-			}),
-			q(3645, {	-- Membership Card Renewal [H]
-				["sourceQuest"] = 3643,	-- Show Your Work
-				["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-				["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(10790, {	-- Gnome Engineer Membership Card
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-				},
-			}),
-			q(3644, {	-- Membership Card Renewal
-				["sourceQuest"] = 3639,	-- Show Your Work
-				["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
-				["coord"] = { 54.4, 27.2, TANARIS },
-				["groups"] = {
-					i(10791, {	-- Goblin Engineer Membership Card
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-				},
-			}),
-			q(3646, {	-- Membership Card Renewal
-				["sourceQuest"] = 3639,	-- Show Your Work
-				["qg"] = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
-				["coord"] = { 62.6, 36.2, THE_BARRENS },
-				["groups"] = {
-					i(10791, {	-- Goblin Engineer Membership Card
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-				},
-			}),
-		})),
-		n(REWARDS, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {
+		n(REWARDS, {
 			i(11423, {	-- Gnome Engineer's Renewal Gift
 				["description"] = "If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+				["provider"] = { "i", 10790 },	-- Gnome Engineer Membership Card
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(10603),	-- Schematic: Catseye Ultra Goggles (RECIPE!)
-					i(11827),	-- Schematic: Lil' Smoky (RECIPE!)
+					i(11827, {["requireSkill"] = IGNORED_VALUE}),	-- Schematic: Lil' Smoky (RECIPE!)
 					i(10606),	-- Schematic: Parachute Cloak(RECIPE!)
 				},
 			}),
 			i(11422, {	-- Goblin Engineer's Renewal Gift
 				["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+				["provider"] = { "i", 10791 },	-- Goblin Engineer Membership Card
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 					i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
-					i(11828),	-- Schematic: Pet Bombling (RECIPE!)
+					i(11828, {["requireSkill"] = IGNORED_VALUE}),	-- Schematic: Pet Bombling (RECIPE!)
 				},
 			}),
-		})),
-		-- #endif
+		}),
 	}),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		ach(18908, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Bio-Optic Killshades (automated)
@@ -708,7 +436,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			------ 7.1.5 ------
-			q(46119, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, { -- Boon of the Builder
+			q(46119, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {	-- Boon of the Builder
 				["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
 				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
@@ -914,6 +642,25 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				crit(61601),	-- 2 Fire Souls Captured
 				crit(61602),	-- 2 Frost Souls Captured
 			}),
+		})),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENGINEERING, 1 }}
+		},{
+			pn(50893),	-- Creation
+			pn(50891),	-- EZ-Thro
+			pn(50894),	-- Explosives
+			pn(50929),	-- Function Over Form
+			pn(50928),	-- Gear
+			pn(50927),	-- Gears for Gear
+			pn(50990),	-- Generalist
+			pn(50955),	-- Inventions
+			pn(50956),	-- Mechanical Mind
+			pn(50954),	-- Novelties
+			pn(50993),	-- Optimized Efficiency
+			pn(50992),	-- Pieces Parts
+			pn(50991),	-- Scrapper
+			pn(50892),	-- Short Fuse
+			pn(50926),	-- Utility
 		})),
 		n(QUESTS, {
 			i(198156, {	-- Wyrmhole Generator: Dragon Isles (TOY!)
@@ -1125,7 +872,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_ENGINEERING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENGINEERING, 1 }} }, {
 				r(382345),	-- Assorted Safety Fuses
 				r(382408),	-- Cartomancy Cannon
 				r(382368),	-- Centralized Precipitation Emitter
@@ -1266,7 +1013,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_ENGINEERING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.ENGINEERING),
 			},
 		},{
 			i(198611),	-- Engineering Details
@@ -1300,21 +1047,42 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228775),	-- Algari Engineer's Notepad
-			},
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENGINEERING, 1 }}
 		},{
+			pn(100838),	-- Adjustable Cogwheel
+			pn(100762),	-- Bracers
+			pn(100764),	-- Calibrated Chaos
+			pn(100791),	-- Devices
+			pn(100765),	-- Engineered Equipment
+			pn(100790),	-- Explosives
+			pn(100759),	-- Goggles
+			pn(100763),	-- Guns
+			pn(100837),	-- Impeccable Cogwheel
+			pn(100842),	-- Ingenious
+			pn(100843),	-- Inventing
+			pn(100761),	-- Inventor's Necessities
+			pn(100840),	-- Overclocked Cogwheel
+			pn(100841),	-- Parts
+			pn(100760),	-- Profession Gear
+			pn(100836),	-- Scrapper
+			pn(100839),	-- Serrated Cogwheel
+			pn(100789),	-- Tinkers
+		})),
+		n(QUESTS, {
 			q(84128, {	-- Engineering Services Requested
+				["sourceQuests"] = { 84285 },	-- Crafting Orders: Engineering
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228775),	-- Algari Engineer's Notepad
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ENGINEERING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENGINEERING, 1 }} }, {
 				r(447356),	-- Adjustable Cogwheel
 				r(447333),	-- Aqirite Fueled Samophlange
 				r(447374),	-- Box o' Booms
@@ -1385,9 +1153,15 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ENGINEERING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.ENGINEERING),
 			},
 		},{
+			i(228775),	-- Algari Engineer's Notepad
+			q(83728, {	-- TWW Inscription Order: Engineering
+				["name"] = "TWW Inscription Order: Engineering",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
+			}),
 			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1
 				["name"] = "TWW Weekly Engineering Treasure #1",
 				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
@@ -1398,112 +1172,172 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42798, {	-- Engineering at Midnight
-				["timeline"] = { ADDED_12_0_0 },
+				i(264001),	-- Midnight Engineer's Shop Sign (DECOR!)
+			}),
+			ach(62234),	-- Engineering-on-Demand
+			ach(62242, {	-- Dedicated to the Craft: Engineering
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42798,	-- Engineering at Midnight
+					62234,	-- Engineering-on-Demand
+				}},
 				["groups"] = {
+					title(744),	-- Thalassian Engineer <Name>
+				},
+			}),
+			ach(60888),	-- Pushing My Buttons
+		}),
+		n(PROFESSION_NODES_HEADER, sharedData({
+			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENGINEERING, 1 }}
+		},{
+			pn(106788),	-- Bits
+			pn(106789),	-- Bits and Bots
+			pn(109138),	-- Boots
+			pn(106787),	-- Bots
+			pn(109139),	-- Bracers
+			pn(109141),	-- Combat Analytics
+			pn(106754),	-- Concentrated Effort
+			pn(106717),	-- Engineering Accessories
+			pn(106711),	-- Engineering Tools
+			pn(106718),	-- Finishing Touches
+			pn(106715),	-- Fishing Rods
+			pn(109140),	-- Goggles
+			pn(110352),	-- Guns
+			pn(106713),	-- Jewelcrafting Tools
+			pn(106714),	-- Mandatory Tools
+			pn(106719),	-- Market Mobility
+			pn(106716),	-- Mining Accessories
+			pn(106753),	-- Multicraft
+			pn(106755),	-- Recycling
+			pn(106752),	-- Resourcefulness
+			pn(106712),	-- Tailoring Tools
+		})),
+		n(QUESTS, {
+			q(93692, {	-- Engineering Services Requested
+				["sourceQuests"] = { 93727 },	-- Crafting Orders: Engineering
+				["qgs"] = {
+					243283,	-- Captain Flaresworn <Requisitions Officer>
+					241452,	-- Danwe <Engineering Trainer>
+				},
+				["coords"] = {
+					{ 43.5, 54.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 45.1, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
+				["isWeekly"] = true,
+				["groups"] = {
+					i(263456),	-- Thalassian Engineer's Notepad
 				},
 			}),
 		}),
-		--[[
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228775),	-- Algari Engineer's Notepad
-			},
-		},{
-			q(84128, {	-- Engineering Services Requested
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-			}),
-		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ENGINEERING_KNOWLEDGE, 1 }} }, {
-				r(447356),	-- Adjustable Cogwheel
-				r(447333),	-- Aqirite Fueled Samophlange
-				r(447374),	-- Box o' Booms
-				r(447355),	-- Impeccable Cogwheel
-				r(447354),	-- Overclocked Cogwheel
-				r(447352),	-- P.0.W. x2
-				r(447353),	-- Serrated Cogwheel
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENGINEERING, 1 }} }, {
+				r(1229875),	-- Aetherlume Bands
+				r(1229876),	-- Aetherlume Bracelets
+				r(1229880),	-- Aetherlume Clonkers
+				r(1229870),	-- Aetherlume Eye Wrap
+				r(1229877),	-- Aetherlume Guards
+				r(1229871),	-- Aetherlume Optics
+				r(1229879),	-- Aetherlume Runners
+				r(1229874),	-- Aetherlume Silken Cuffs
+				r(1229878),	-- Aetherlume Softsteppers
+				r(1229881),	-- Aetherlume Stompers
+				r(1229873),	-- Aetherlume Sun Guard
+				r(1229872),	-- Aetherlume Vision Shroud
+				r(1229921),	-- HU5H, Nonchalant Pup
+				r(1229906),	-- Junker's Big Ol' Bag
+				r(1229924),	-- M3DDY
+				r(1282456),	-- P.O.W. x3
+				r(1229902),	-- Sin'dorei Angler's Rod
+				r(1229905),	-- Sin'dorei Clampers
+				r(1229897),	-- Sin'dorei Gilded Hardhat
+				r(1229894),	-- Sin'dorei Headlamp
+				r(1229907),	-- Sin'dorei Snippers
+				r(1229903),	-- Turbo-Junker's Multitool
 			}),
 		}),
 		n(TREASURES, {
-			o(455996, {	-- Arathi Safety Gloves
-				["coord"] = { 41.5, 48.9, HALLOWFALL },
-				["questID"] = 83871,
+			o(525941, {	-- Ethereal Stormwrench
+				["coord"] = { 54.0, 51.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89137,
 				["groups"] = {
-					i(226297),	-- Arathi Safety Gloves
+					i(238560),	-- Ethereal Stormwrench
 				},
 			}),
-			o(456000, {	-- Dornogal Spectacles
-				["coord"] = { 64.7, 52.7, DORNOGAL },
-				["questID"] = 83867,
+			o(525942, {	-- Expeditious Pylon
+				["coord"] = { 68.0, 49.8, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89136,
 				["groups"] = {
-					i(226293),	-- Dornogal Spectacles
+					i(238559),	-- Expeditious Pylon
 				},
 			}),
-			o(455998, {	-- Earthen Construct Blueprints
-				["coord"] = { 64.5, 58.8, THE_RINGING_DEEPS },
-				["questID"] = 83869,
+			o(525938, {	-- Handy Wrench
+				["coord"] = { 34.2, 87.8, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89140,
 				["groups"] = {
-					i(226295),	-- Earthen Construct Blueprints
+					i(238563),	-- Handy Wrench
 				},
 			}),
-			o(455994, {	-- Emptied Venom Canister
-				["coord"] = { 63.1, 11.1, NERUBAR },
-				["questID"] = 83873,
+			o(525943, {	-- Manual of Mistakes and Mishaps
+				["coord"] = { 39.6, 45.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89135,
 				["groups"] = {
-					i(226299),	-- Emptied Venom Canister
+					i(238558),	-- Manual of Mistakes and Mishaps
 				},
 			}),
-			o(455997, {	-- Holy Firework Dud
-				["coord"] = { 46.3, 61.3, HALLOWFALL },
-				["questID"] = 83870,
+			o(525944, {	-- Miniaturized Transport Skiff
+				["coord"] = { 28.9, 39.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89134,
 				["groups"] = {
-					i(226296),	-- Holy Firework Dud
+					i(238557),	-- Miniaturized Transport Skiff
 				},
 			}),
-			o(455999, {	-- Inert Mining Bomb
-				["coord"] = { 42.6, 27.3, THE_RINGING_DEEPS },
-				["questID"] = 83868,
+			o(525940, {	-- Offline Helper Bot
+				["coord"] = { 65.3, 35.0, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				["questID"] = 89138,
 				["groups"] = {
-					i(226294),	-- Inert Mining Bomb
+					i(238561),	-- Offline Helper Bot
 				},
 			}),
-			o(455995, {	-- Puppeted Mechanical Spider
-				["coord"] = { 56.8, 38.6, AZJ_KAHET },
-				["questID"] = 83872,
+			o(525945, {	-- One Engineer's Junk
+				["coord"] = { 51.2, 74.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89133,
 				["groups"] = {
-					i(226298),	-- Puppeted Mechanical Spider
+					i(238556),	-- One Engineer's Junk
 				},
 			}),
-			o(456001, {	-- Rock Engineer's Wrench
-				["coord"] = { 61.3, 69.6, ISLE_OF_DORN },
-				["questID"] = 83866,
+			o(525939, {	-- What To Do When Nothing Works
+				["coord"] = { 51.3, 57.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89139,
 				["groups"] = {
-					i(226292),	-- Rock Engineer's Wrench
+					i(238562),	-- What To Do When Nothing Works
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ENGINEERING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.ENGINEERING),
 			},
 		},{
-			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1
-				["name"] = "TWW Weekly Engineering Treasure #1",
-				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
+			i(263456),	-- Thalassian Engineer's Notepad
+			q(95138, {	-- MID Inscription Order: Engineering
+				["name"] = "MID Inscription Order: Engineering",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245809 },	-- Thalassian Treatise on Engineering
 			}),
-			q(83261, {	-- TWW Weekly Engineering Knowledgepoint #2
-				["name"] = "TWW Weekly Engineering Treasure #2",
-				["provider"] = { "i", 225229 },	-- Earthen Induction Coil
+			q(93534, {	-- MID Weekly Engineering Knowledgepoint #1
+				["name"] = "MID Weekly Engineering Treasure #1",
+				["provider"] = { "i", 259194 },	-- Dance Gear
 			}),
-		})),--]]
+			q(93535, {	-- MID Weekly Engineering Knowledgepoint #2
+				["name"] = "MID Weekly Engineering Treasure #2",
+				["provider"] = { "i", 259195 },	-- Dawn Capacitor
+			}),
+		})),
 	})),
 })));
 

@@ -21,10 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						i(249459),	-- Illidari Glaiverest (DECOR!)
 					}),
 				})),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(665),	-- Ashtongue Warriors
 					follower(878),	-- Ashtongue Warriors
 					follower(879),	-- Ashtongue Warriors
@@ -48,7 +45,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 
 					-- TODO: itemID 143849
 					follower(991),	-- Coilskar Brute
-				})),
+				}),
 				n(QUESTS, {
 					q(39047, {	-- Call of the Illidari (Altruis)
 						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
@@ -126,43 +123,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						q(41119, {	-- The Hunt (Altruis)
 							["sourceQuest"] = 41121,	-- By Any Means (Altruis)
 							["provider"] = { "n", 103156 },	-- Altruis the Sufferer
-							["maps"] = { 723 },	-- Violet Hold
+							["coord"] = { 50.4, 70.0, 723 },	-- Violet Hold
 							["groups"] = {
 								o(251878, {	-- Twinblades of the Deceiver
 									["coord"] = { 33.0, 67.0, SURAMAR },
 									["groups"] = {
 										i(127829, {	-- Twinblades of the Deceiver [Main Hand]
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(26),	-- Standard
-											},
+											["groups"] = { artifact(26) },	-- Standard
 										}),
 									},
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(26),	-- Standard
-									},
+									["groups"] = { artifact(26) },	-- Standard
 								}),
 							},
 						}),
 						q(39247, {	-- The Hunt (Kayn)
 							["sourceQuest"] = 39051,	-- By Any Means (Kayn)
 							["provider"] = { "n", 94902 },	-- Kayn Sunfury
-							["coord"] = { 50.5, 70, 723 },	-- The Violet Hold
+							["coord"] = { 50.5, 70.0, 723 },	-- The Violet Hold
 							["groups"] = {
 								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(26),	-- Standard
-									},
+									["groups"] = { artifact(26) },	-- Standard
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(26),	-- Standard
-									},
+									["groups"] = { artifact(26) },	-- Standard
 								}),
 							},
 						}),
@@ -389,6 +378,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 108239 },	-- Akama
 						["coord"] = { 57.9, 57.4, 720 },
 						["groups"] = {
@@ -455,6 +445,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							39741,	-- Into Our Ranks (Altruis) — must be on this quest
 							42665,	-- Into Our Ranks (Kayn) — must be on this quest
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
@@ -701,7 +692,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(44694, {	-- One Battle at a Time
-						["sourceQuests"] = { 42669 },	-- Preparations for Invasion
+						["sourceQuests"] = { 42776 },	-- Two Worthies
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["coord"] = { 59.0, 73.8, 721 },
 						["lvl"] = 110,
@@ -912,10 +903,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 60.1, 50.8, 720 },
 						["maps"] = { 861 },	-- Mardum, the Shattered Abyss (scenario)
 						["lvl"] = 110,
-						["groups"] = {
-							mount(229417, {	-- Slayer's Felbroken Shrieker (MOUNT!)
-									}),
-						},
+						["groups"] = { mount(229417) },	-- Slayer's Felbroken Shrieker (MOUNT!)
 					}),
 					q(42776, {	-- Two Worthies
 						["sourceQuests"] = { 42775 },	-- The Crux of the Plan
@@ -967,13 +955,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 58.5, 51.6, 720 },
 						["lvl"] = 103,
-					--	didn't require "Securing Mardum" even though that quest was given at the same time as the SQ.
+						-- didn't require "Securing Mardum" even though that quest was given at the same time as the SQ.
 					}),
 					q(44213, {	-- You Will Be Prepared!
 						["provider"] = { "n", 112407 },	-- Falara Nightsong
 						["coord"] = { 57.7, 44.2, 720 },
 						["lvl"] = 110,
-					--	unknown if this has any SQs in the campaign or if it's automatically rewarded at 110 regardless of your class campaign progression. i had done up through "working with the wardens."
+						-- unknown if this has any SQs in the campaign or if it's automatically rewarded at 110 regardless of your class campaign progression. i had done up through "working with the wardens."
 						["groups"] = {
 							i(139718),	-- Helm of the Shattered Abyss
 						},
@@ -988,7 +976,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						n(113935, {	-- Candrael Twinshadow
 							["description"] = "You must have |cFF4A54E8Candrael's Charm|r in your bags before talking to Candrael. After asking her about the initials on the Charm, she will kick you off the cliff towards Downfall.\n|cFFE50D12NOTE:|rIf, by any chance, Charm is not consumed in the process, or you are not getting any loot, you will need to destroy it before re-trying to kill Downfall. DO NOT try to keep the Charm as a memento in your bank.",
 							["coord"] = { 28.2, 70.2, SURAMAR },
-							["cost"] = {{ "i", 141409, 1}},	-- 1xCandrael's Charm
+							["cost"] = { { "i", 141409, 1 } },	-- 1x Candrael's Charm
 							["groups"] = {
 								n(111110, {	-- Downfall
 									["description"] = "While near Downfall his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back. Make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
@@ -1097,7 +1085,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = {
 							i(147537, {	-- A Tiny Set of Warglaives (TOY!)
 								["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Back|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(139721, {	-- Belt of the Shattered Abyss
 								["cost"] = 5000000,	-- 500g
@@ -1109,9 +1097,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(249518, {	-- Fel Hammer Scouting Map (DECOR!)
-								["sourceAchievement"] = 60982,	-- Raise an Army for the Fel Hammer
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 2000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(139717, {	-- Gloves of the Shattered Abyss
 								["cost"] = 5000000,	-- 500g
@@ -1121,39 +1108,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(249462, {	-- Illidari Banner (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(249459, {	-- Illidari Glaiverest (DECOR!)
-								["sourceAchievement"] = 42271,	-- The Slayer's Campaign
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},	-- 1,500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(249463, {	-- Illidari Skull Sentinel (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(256675, {	-- Illidari Tent (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(249457, {	-- Replica Cursed Forge of the Nathrezim (DECOR!)
-								["sourceAchievement"] = 42288,	-- Hidden Potential of the Slayer
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},	-- 5,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(249690, {	-- Replica Tome of Fel Secrets (DECOR!)
-								["sourceAchievement"] = 60963,	-- Legendary Research of the Illidari
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},	-- 3,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
 							i(140936, {	-- Slayer's Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(140965, {	-- Slayer's Greater Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 4000 }},	-- 4,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 4000 } },
 							}),
 							i(140964, {	-- Slayer's Lesser Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(133670),	-- Slayer's Tabard
 							i(139720, {	-- Spaulders of the Shattered Abyss
@@ -1189,7 +1173,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(44599),	-- Tracking Quest: Working with the Wardens 3 - completed the "Working With the Wardens: Mellok, Son of Torok" mission
 			q(44600),	-- Tracking Quest: Working with the Wardens 4 - completed the "Working With the Wardens: Fathnyr" mission
 			q(44601),	-- Tracking Quest: Working with the Wardens 5 - completed the "Working With the Wardens: Mal'Dreth the Corruptor" mission
-			q(44602),	-- Tracking Quest: Preparations for Invasion 1  - completed the "Preparations for Invasion: Scouting their Hold" mission
+			q(44602),	-- Tracking Quest: Preparations for Invasion 1 - completed the "Preparations for Invasion: Scouting their Hold" mission
 			q(44604),	-- Tracking Quest: Preparations for Invasion 2 - completed the "Preparations for Invasion: Weapon Improvements" mission
 			q(44605),	-- Tracking Quest: Preparations for Invasion 3 - completed the "Preparations for Invasion: Snatch and Grab" mission
 			q(44606),	-- Tracking Quest: Preparations for Invasion 4 - completed the "Preparations for Invasion: Ship-Shape" mission

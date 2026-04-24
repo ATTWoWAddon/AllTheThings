@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["provider"] = { "i", 169656 },	-- Envenomed Spider Fang
 							["races"] = ALLIANCE_ONLY,
 							["isWeekly"] = true,
-						--	["cr"] = 155172,	-- Trapdoor Bee Hunter
+							-- ["cr"] = 155172,	-- Trapdoor Bee Hunter
 							["groups"] = {
 								i(172145),	-- Unremarkable Spider-Fang
 							},
@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["provider"] = { "i", 169655 },	-- Hivekiller Stinger
 							["races"] = ALLIANCE_ONLY,
 							["isWeekly"] = true,
-						--	["cr"] = 155171,	-- The Hivekiller
+							-- ["cr"] = 155171,	-- The Hivekiller
 							["groups"] = {
 								i(172144),	-- Glittering Stinger
 							},
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
 							["races"] = ALLIANCE_ONLY,
 							["isWeekly"] = true,
-						--	["cr"] = 155055,	-- Gurg the Hivethief
+							-- ["cr"] = 155055,	-- Gurg the Hivethief
 							["groups"] = {
 								i(172147),	-- Nugget Honey
 							},
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["provider"] = { "i", 169659 },	-- Old Nasha's Paw
 							["races"] = ALLIANCE_ONLY,
 							["isWeekly"] = true,
-						--	["cr"] = 155176,	-- Old Nasha
+							-- ["cr"] = 155176,	-- Old Nasha
 							["groups"] = {
 								i(172146),	-- Glazed Bear Meat
 							},
@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["provider"] = { "i", 169654 },	-- Spiral Yeti Horn
 							["races"] = ALLIANCE_ONLY,
 							["isWeekly"] = true,
-						--	["cr"] = 155059,	-- Yorag the Jelly Feaster
+							-- ["cr"] = 155059,	-- Yorag the Jelly Feaster
 							["groups"] = {
 								i(172143),	-- Perforated Spiral Horn
 							},
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["provider"] = { "i", 169658 },	-- Usurper's Scent Gland
 							["races"] = ALLIANCE_ONLY,
 							["isWeekly"] = true,
-						--	["cr"] = 155173,	-- Honeyback Usurper
+							-- ["cr"] = 155173,	-- Honeyback Usurper
 							["groups"] = {
 								i(172142),	-- Pilfered Beeswax
 							},
@@ -287,9 +287,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						n(155176, {	-- Honeyback Hivemother
 							i(169862, {	-- Alluring Bloom
 								["minReputation"] = { FACTION_HONEYBACK_HIVE, FRIENDLY },	-- Honeyback Hive, Friendly
-								["cost"] = {
-									{ "i", 168822, 5 },	-- Thin Jelly x5
-								},
+								["cost"] = { { "i", 168822, 35 } },	-- Thin Jelly x35
+							}),
+							i(172383, {	-- Collected Tidebloom Honey (QS!)
+								["cost"] = { { "i", 168828, 35 } },	-- Royal Jelly x35
+							}),
+							i(173533, {	-- Collected Tidebloom Honey (QS!)
+								["cost"] = { { "i", 168828, 35 } },	-- Royal Jelly x35
 							}),
 						}),
 					}),
@@ -313,12 +317,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 						q(56735),	-- triggers after going through Barry's initial dialogue after entering the cave
 						q(57528),	-- triggers after feeding first Thin Jelly to Nascent Harvester
 						q(57707),	-- triggered shortly after 57528
-						q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper (on a kill when i had not interacted with the bee to start the event) -- rare/daily event?  also popped again specifically when i interacted with the bee (npcID 155069) to summon it at 57.1, 51.2. so maybe just "you're in the area when the event starts," or something?  ETA: ALSO TRIGGERS WHILE ENGAGED WITH HONEY SMASHER. wtf is this quest!!!!!
+						q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper (on a kill when i had not interacted with the bee to start the event)	-- rare/daily event?  also popped again specifically when i interacted with the bee (npcID 155069) to summon it at 57.1, 51.2. so maybe just "you're in the area when the event starts," or something?  ETA: ALSO TRIGGERS WHILE ENGAGED WITH HONEY SMASHER. wtf is this quest!!!!!
 						q(57726),	-- triggers on Honey Smasher kill together with 57674 so putting it here
-						--	( 57.1, 51.2 )	-- looting honey triggered 56170, 56414, 57702, 57703
+						-- ( 57.1, 51.2 )	-- looting honey triggered 56170, 56414, 57702, 57703
 						q(56170),	-- \
-						q(56414),	--	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event. appears to be repeatable
-						q(57702),	--	/
+						q(56414),	-- 	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event. appears to be repeatable
+						q(57702),	-- 	/
 						q(57703),	-- /
 						q(56113),	-- triggered after Honeyback Harvester event that got to round 23 or 24
 						q(57700),	-- triggered after Honeyback Harvester event that got to round 23 or 24
@@ -326,7 +330,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 						q(57699),	-- triggered after Honeyback Harvester event that completed round 29
 						q(56101),	-- triggered after Honeyback Harvester event that completed round 40
 						q(57698),	-- triggered after Honeyback Harvester event that completed round 40
-						q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him. looted the jelly after the event, then ran to turn in since i was closeby. fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
+						q(56171),	-- not sure	-- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him. looted the jelly after the event, then ran to turn in since i was closeby. fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 						q(57701),	-- same as above
 						q(56107),	-- when nascent bee changed into Juvenile Harvester
 						q(56879),	-- when Juvenile Harvester changed into Honeyback Harvester (max bee friendship)

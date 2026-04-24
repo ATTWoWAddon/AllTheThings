@@ -167,7 +167,7 @@ namespace ATT
             /// Checks if the provided data has a 'type' field which matches a 'ConvertedKey' value of an ObjectData
             /// and returns the first matching ObjectData found
             /// </summary>
-            public static bool TryFindObjectConversion(IDictionary<string, object> data, out ObjectData conversionObject, out object convertValue)
+            public static bool TryFindObjectConversion(IDictionary<string, object> data, out ObjectData conversionObject, out decimal convertValue)
             {
                 if (data.TryGetValue("type", out string type))
                 {
@@ -182,7 +182,7 @@ namespace ATT
                 }
 
                 conversionObject = null;
-                convertValue = null;
+                convertValue = default;
                 return false;
             }
             #endregion
@@ -255,7 +255,7 @@ namespace ATT
                 for (int i = fields.Count - 1; i >= 0; i--)
                 {
                     string field = fields[i];
-                    if (field.StartsWith("_"))
+                    if (field[0] == '_')
                     {
                         fields.RemoveAt(i);
                     }

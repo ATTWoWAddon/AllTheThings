@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	inst(1274, {	-- City of Threads
 		["coord"] = { 46.7, 63.4, AZJ_KAHET },
@@ -94,6 +95,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 216658 },	-- Izo, the Grand Splicer
 					["groups"] = {
 						ach(40379),	-- Mythic: City of Threads
+						ach(61597, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: City of Threads Guild Run
 					},
 				}),
 			}),

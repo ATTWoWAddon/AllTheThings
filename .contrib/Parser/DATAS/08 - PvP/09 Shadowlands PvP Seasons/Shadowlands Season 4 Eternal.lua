@@ -1,10 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_ETERNAL, bubbleDownSelf({
 		["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 			ach(15599, {	-- Eternal Combatant [A]
 				["races"] = ALLIANCE_ONLY,
@@ -58,6 +59,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
 				["groups"] = {
+					-- Moved to NYI, it seems Blizzard will never fix this
+					--[[
 					i(223639, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Aspirant's Cloak Rack
 						["cost"] = { { "i", MOH, 1 } },	-- Placeholder cost?
 						["description"] = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
@@ -70,6 +73,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							i(192390),	-- Eternal Aspirant's Cape
 						},
 					})),
+					--]]
 				},
 			}),
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
@@ -198,8 +202,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				["coord"] = { 35.0, 57.6, ORIBOS },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = {
+					-- Moved to NYI, it seems Blizzard will never fix this
+					--[[
 					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
-						["cost"] = {{"i", MOH, 1}},
+						["cost"] = { { "i", MOH, 1 } },
 						["description"] = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
 						["groups"] = {
 							-- Gladiator
@@ -218,6 +224,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							i(192212, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Greatcloak
 						},
 					})),
+					]]--
 				},
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>

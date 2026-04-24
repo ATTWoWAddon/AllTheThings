@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Объект",
 		-- TODO: ko = "",
 		cn = "物件",
-		-- TODO: tw = "",
+		tw = "物體",
 	},
 })

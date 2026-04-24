@@ -1,10 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_CRUEL, bubbleDownSelf({
 		["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5, ADDED_7_3_0 },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 } }, {
 			ach(11008, {	-- Cruel Combatant [A]
 				["races"] = ALLIANCE_ONLY,
@@ -66,7 +67,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(147677, {	-- Ensemble: Cruel Combatant's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -266,7 +269,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(147678, {	-- Ensemble: Cruel Combatant's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -502,7 +507,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(147650, {	-- Ensemble: Cruel Gladiator's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -702,7 +709,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(147649, {	-- Ensemble: Cruel Gladiator's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -909,15 +918,15 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 							["sourceAchievements"] = { 11038 },	-- Gladiator: Legion Season 3
-							["cost"] = {{"i", MOH, 12}},
+							["cost"] = { { "i", MOH, 12 } },
 						}),
 						i(147360, {	-- Cruel Gladiator's Cloak [A]
 							["sourceAchievements"] = { 11697 },	-- Cruel Elite
-							["cost"] = {{"i", MOH, 50}},
+							["cost"] = { { "i", MOH, 50 } },
 						}),
 						i(147337, {	-- Cruel Gladiator's Tabard [A]
 							["sourceAchievements"] = { 11697 },	-- Cruel Elite
-							["cost"] = {{"i", MOH, 50}},
+							["cost"] = { { "i", MOH, 50 } },
 						}),
 					}),
 				}),
@@ -930,7 +939,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							11697,	-- Cruel Elite
 							11698,	-- Ferocious Elite
 						},
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(147625, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor [A]
@@ -1137,15 +1146,15 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 							["sourceAchievements"] = { 11038 },	-- Gladiator: Legion Season 3
-							["cost"] = {{"i", MOH, 12}},
+							["cost"] = { { "i", MOH, 12 } },
 						}),
 						i(147357, {	-- Cruel Gladiator's Cloak [H]
 							["sourceAchievements"] = { 11697 },	-- Cruel Elite
-							["cost"] = {{"i", MOH, 50}},
+							["cost"] = { { "i", MOH, 50 } },
 						}),
 						i(147336, {	-- Cruel Gladiator's Tabard [H]
 							["sourceAchievements"] = { 11697 },	-- Cruel Elite
-							["cost"] = {{"i", MOH, 50}},
+							["cost"] = { { "i", MOH, 50 } },
 						}),
 					}),
 				}),
@@ -1158,7 +1167,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							11697,	-- Cruel Elite
 							11698,	-- Ferocious Elite
 						},
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(147626, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor [H]

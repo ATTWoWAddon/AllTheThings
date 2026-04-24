@@ -1,5 +1,9 @@
 do
 local _, app = ...
+if app.GameBuildVersion > 40000 then
+	-- Not compatible post-Cata.
+	return;
+end
 
 -- Cache Achievement Data if it exists.
 local AchievementData = rawget(app.L, "ACHIEVEMENT_DATA");
@@ -14,11 +18,11 @@ local tostring, ipairs, pairs, tinsert
 local math_min = math.min;
 
 -- App & Module locals
-local SearchForField, SearchForFieldContainer
-	= app.SearchForField, app.SearchForFieldContainer;
+local SearchForField, GetFieldContainer
+	= app.SearchForField, app.GetFieldContainer;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local IsQuestFlaggedCompleted;
-local IsSpellKnown;
+local IsSpellKnownHelper;
 
 
 -- WoW API Cache
@@ -28,11 +32,12 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 local GetPVPLifetimeStats = GetPVPLifetimeStats;
 local GetNumBankSlots = GetNumBankSlots;
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
+local GetNumTalentGroups = GetNumTalentGroups;
 
 -- Locals from future-loaded Modules
 app.AddEventHandler("OnLoad", function()
 	IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
-	IsSpellKnown = app.IsSpellKnown;
+	IsSpellKnownHelper = app.IsSpellKnownHelper;
 end)
 
 -- Achievement Criteria Data have independent detection methods based on their internal type.
@@ -47,11 +52,14 @@ local BrokenTypeDescriptions = setmetatable({
 local IgnoredReputationsForAchievements = {
 	[169] = 1,	-- Steamweedle Cartel doesn't count toward reputation achievements
 };
+local function IsDualTalentSpecializationLearned()
+	return GetNumTalentGroups() > 1 and 1 or 0;
+end
 local function GetQuestCompleted(questID)
 	return IsQuestFlaggedCompleted(questID) and 1 or 0;
 end
 local function GetSpellCompleted(spellID)
-	if IsSpellKnown(spellID) then
+	if IsSpellKnownHelper(spellID) then
 		return 1;
 	else
 		local spells = SearchForField("spellID", spellID);
@@ -65,7 +73,7 @@ local function GetSpellCompleted(spellID)
 	return 0;
 end
 local function GetRelatedThingsForExaltedReputations(t, objects)
-	for factionID,g in pairs(SearchForFieldContainer("factionID")) do
+	for factionID,g in pairs(GetFieldContainer("factionID")) do
 		if not IgnoredReputationsForAchievements[factionID] then
 			for j,o in ipairs(g) do
 				if o.key == "factionID" then
@@ -81,18 +89,15 @@ local function GetRelatedThingsForOwnItem(t, objects)
 	if searchResults then tinsert(objects, searchResults[1]); end
 end
 local function GetRelatedThingsForMounts(t, objects)
-	for spellID,spells in pairs(SearchForFieldContainer("spellID")) do
+	for spellID,spells in pairs(GetFieldContainer("mountID")) do
 		for i,spell in ipairs(spells) do
-			if ((spell.f and spell.f == app.FilterConstants.MOUNTS)
-			or (spell.filterID and spell.filterID == app.FilterConstants.MOUNTS)) then
-				tinsert(objects, spell);
-				break;
-			end
+			tinsert(objects, spell);
+			break;
 		end
 	end
 end
 local function GetRelatedThingsForPets(t, objects)
-	for i,pets in pairs(SearchForFieldContainer("speciesID")) do
+	for i,pets in pairs(GetFieldContainer("speciesID")) do
 		tinsert(objects, pets[1]);
 	end
 end
@@ -137,7 +142,7 @@ local GetAchievementCriteriaCommandForSkillID = setmetatable({
 local AchievementCriteriaCommands = {
 	CriteriaTypeForExaltedReputations = function()
 		local count = 0;
-		for factionID,g in pairs(SearchForFieldContainer("factionID")) do
+		for factionID,g in pairs(GetFieldContainer("factionID")) do
 			if not IgnoredReputationsForAchievements[factionID] then
 				for j,o in ipairs(g) do
 					if o.key == "factionID" and o.standing == 8 then
@@ -157,13 +162,10 @@ local AchievementCriteriaCommands = {
 	end,
 	CriteriaTypeForMounts = function()
 		local count = 0;
-		for i,g in pairs(SearchForFieldContainer("spellID")) do
+		for i,g in pairs(GetFieldContainer("mountID")) do
 			for j,o in ipairs(g) do
-				if ((o.f and o.f == app.FilterConstants.MOUNTS)
-				or (o.filterID and o.filterID == app.FilterConstants.MOUNTS)) then
-					if o.collected then count = count + 1; end
-					break;
-				end
+				if o.collected then count = count + 1; end
+				break;
 			end
 		end
 		--print("Currently " .. count .. " Total Mounts!");
@@ -171,7 +173,7 @@ local AchievementCriteriaCommands = {
 	end,
 	CriteriaTypeForPets = function()
 		local count = 0;
-		for i,g in pairs(SearchForFieldContainer("speciesID")) do
+		for i,g in pairs(GetFieldContainer("speciesID")) do
 			for j,o in ipairs(g) do
 				if o.collected then count = count + 1; end
 				break;
@@ -207,9 +209,17 @@ local AchievementCriteriaQuestDataCache = setmetatable({}, {
 		return value;
 	end,
 });
+local AchievementCriteriaSpellDataCacheHelper = setmetatable({
+	[63624] = IsDualTalentSpecializationLearned,
+}, {
+	__index = function(t, key)
+		t[key] = GetSpellCompleted;
+		return GetSpellCompleted;
+	end,
+});
 local AchievementCriteriaSpellDataCache = setmetatable({}, {
 	__index = function(t, key)
-		local value = GetSpellCompleted(key);
+		local value = AchievementCriteriaSpellDataCacheHelper[key](key);
 		t[key] = value;
 		return value;
 	end,
@@ -265,17 +275,26 @@ local ForOwnItemFields = {	-- Type 36
 	["current"] = function(t)
 		return GetItemCount(t.asset, true);
 	end,
-	["provider"] = function(t)
-		local provider = {"i",t.asset};
-		t.provider = provider;
-		return provider;
+	["providers"] = function(t)
+		local providers = {{"i",t.asset}};
+		t.providers = providers;
+		return providers;
 	end,
 	["GetRelatedThings"] = function(t)
 		return GetRelatedThingsForOwnItem;
 	end,
 };
 local ForQuestFields = {	-- Type 27
-	["collectible"] = app.ReturnTrue,
+	["collectible"] = function(t)
+		local quests = app.SearchForField("questID", t.asset);
+		if quests and #quests > 0 then
+			-- Only non-repeatable quests can be tracked this way.
+			local collectible = not quests[1].repeatable;
+			t.collectible = collectible;
+			return collectible;
+		end
+		return true;
+	end,
 	["amount"] = function(t) return 1; end,
 	["collected"] = function(t)
 		return t.current >= t.amount;
@@ -301,6 +320,28 @@ local ForSkillCountFields = {	-- Type 75
 	["rank"] = function(t) return t.amount; end,
 	["GetRelatedThings"] = function(t)
 		return GetRelatedThingsForSkillID[t.asset];
+	end
+};
+local ForSkillLevelFields = {	-- Type 7
+	["collectible"] = app.ReturnTrue,
+	["collected"] = function(t)
+		return t.current >= t.total;
+	end,
+	["current"] = function(t)
+		local skill = app.CurrentCharacter.ActiveSkills[t.spellID];
+		if skill then return skill[1]; end
+		return 0;
+	end,
+	["name"] = function(t)
+		local spellID = t.spellID;
+		return spellID and GetSpellName(spellID);
+	end,
+	["total"] = function(t) return t.amount; end,
+	["spellID"] = function(t)
+		return app.SkillDB.SkillToSpell[t.asset];
+	end,
+	["GetRelatedThings"] = function(t)
+		return GetRelatedThingsForSkillRanks;
 	end
 };
 local ForSkillRankFields = {	-- Type 40
@@ -337,9 +378,6 @@ local ForReputationFields = {	-- Type 46
 	["GetRelatedThings"] = function(t)
 		return GetRelatedThingsForReputation;
 	end,
-	["ShouldShowRelatedThingsInTooltip"] = function(t)
-		return true;
-	end
 }
 local ForSpellsFields = {	-- Type 34
 	["collectible"] = app.ReturnTrue,
@@ -404,7 +442,7 @@ local CreateCriteriaType = app.CreateClass("CriteriaType", "__criteriaUID", {
 	["collectible"] = app.ReturnFalse,
 	["collected"] = app.ReturnFalse,
 	["amount"] = function(t) return 0; end,
-	["name"] = function(t) return t.__criteriaUID; end,
+	["name"] = function(t) return UNKNOWN; end,
 	["progress"] = function(t)
 		return math_min(t.current, t.total);
 	end,
@@ -419,8 +457,9 @@ local CreateCriteriaType = app.CreateClass("CriteriaType", "__criteriaUID", {
 		return OnTooltipForCriteriaData;
 	end,
 },
-"ForBrokenTypes", ForBrokenTypesFields, function(t) return t.type == 11 or t.type == 0; end,
+"ForBrokenTypes", ForBrokenTypesFields, function(t) return t.type == 11 or t.type == 0 or t.type == 74; end,	-- 74 appears to be if someone has a title, but no id is provided.
 "ForBankSlots", DefaultCriteriaFields, function(t) return t.type == 45; end,
+"ForSkillLevel", ForSkillLevelFields, function(t) return t.type == 7; end,
 "ForSkillRank", ForSkillRankFields, function(t) return t.type == 40; end,
 "ForSkillCount", ForSkillCountFields, function(t) return t.type == 75; end,
 "ForSubAchievement", ForSubAchievementFields, function(t) return t.type == 8; end,
@@ -428,9 +467,9 @@ local CreateCriteriaType = app.CreateClass("CriteriaType", "__criteriaUID", {
 "ForHonorableKills", DefaultCriteriaFields, function(t) return t.type == 113; end,
 "ForReputation", ForReputationFields, function(t) return t.type == 46; end,
 "ForLevel", ForLevelFields, function(t) return t.type == 5; end,
-"ForOwnItem", ForOwnItemFields, function(t) return t.type == 36 or t.type == 57; end,
+"ForOwnItem", ForOwnItemFields, function(t) return t.type == 36 or t.type == 57 or t.type == 41 or t.type == 42; end,	-- 41 is using the item, 42 is for specifically looting the item.
 "ForQuest", ForQuestFields, function(t) return t.type == 27; end,
-"ForSpells", ForSpellsFields, function(t) return t.type == 34; end,
+"ForSpells", ForSpellsFields, function(t) return t.type == 34 or t.type == 69; end,
 "ForExploration", ForExplorationFields, function(t)
 	if t.type == 43 then
 		t.overlayData = WorldMapOverlayData[t.asset] or {};
@@ -466,22 +505,6 @@ end
 local function OnTooltipForAchievementData(t, tooltipInfo)
 	local criteriaData = t.criteriaData;
 	if #criteriaData > 0 then
-		local relatedThings = {};
-		for i,criteria in ipairs(criteriaData) do
-			if criteria.ShouldShowRelatedThingsInTooltip then
-				criteria.GetRelatedThings(criteria, relatedThings);
-			end
-		end
-		
-		if #relatedThings > 0 then
-			tinsert(tooltipInfo, { left = " " });
-			for j,thing in ipairs(relatedThings) do
-				tinsert(tooltipInfo, {
-					left = "  |T" .. thing.icon .. ":0|t " .. thing.text,
-					right = app.GetProgressTextForTooltip(thing)
-				});
-			end
-		end
 		if not t.collectible and app.GameBuildVersion < 30000 then
 			tinsert(tooltipInfo, {
 				left = "\n \nCRIEVE NOTE: This achievement cannot be collected prior to Wrath Classic as it lacks any permanent collectible criteria.",
@@ -600,6 +623,26 @@ local CreateAchievementDataType = app.CreateClass("AchievementDataType", "__achU
 	["OnTooltip"] = function(t)
 		return OnTooltipForAchievementData;
 	end,
+	["statistic"] = function(t)
+		local criteriaData = t.criteriaData;
+		if criteriaData then
+			if #criteriaData == 1 then
+				local criteria = criteriaData[1];
+				if criteria.total > 1 then
+					return tostring(criteria.progress) .. " / " .. tostring(criteria.total);
+				end
+			elseif not t.requireAny then
+				local progress,total = 0,0;
+				for i,data in ipairs(criteriaData) do
+					if data.collectible then
+						progress = progress + (data.progress or 0);
+						total = total + (data.total or 1);
+					end
+				end
+				return tostring(progress) .. " / " .. tostring(total);
+			end
+		end
+	end,
 });
 for id,achievement in pairs(AchievementData) do
 	AchievementData[id] = CreateAchievementDataType(id, achievement);
@@ -618,4 +661,24 @@ if app.GameBuildVersion < 30000 then
 	app:RegisterEvent("PLAYERBANKSLOTS_CHANGED");
 	app.events.PLAYERBANKSLOTS_CHANGED = RefreshAchievementData;
 end
+app.AddEventHandler("OnNewPopoutGroup", function(group)
+	if group.GetRelatedThings then
+		local relatedThingsGroup = app.CreateRawText("Related Things", {
+			description = "The following contains things that may be related or relevant to the content.",
+			sourceIgnored = true,
+			skipFull = true,
+			icon = 133785,
+			g = {},
+		});
+		local relatedThings = {};
+		group.GetRelatedThings(group, relatedThings);
+		for i,o in ipairs(relatedThings) do
+			app.MergeObject(relatedThingsGroup.g, app.CloneClassInstance(o));
+		end
+		if #relatedThingsGroup.g > 0 then
+			if not group.g then group.g = {}; end
+			app.MergeObject(group.g, relatedThingsGroup);
+		end
+	end
+end);
 end

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(BADLANDS, {
 		["lore"] =
@@ -133,6 +134,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179490, {	-- Battered Footlocker
+					["coord"] = { 42.4, 29.6, BADLANDS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 150,
+				}),
+				o(179492, {	-- Dented Footlocker
+					["coord"] = { 41.5, 27.3, BADLANDS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 175,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(7867, {	-- Thorkaf Dragoneye <Master Dragonscale Leatherworker>
@@ -343,7 +358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2258, {	-- Badlands Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
-					["coord"] = { 2.6, 46, BADLANDS },
+					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
@@ -383,9 +398,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2203, {	-- Badlands Reagent Run II
 					["sourceQuest"] = 2202,	-- Uldaman Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
-					["coord"] = { 2.6, 46, BADLANDS },
+					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ALCHEMY,
+					["learnedAt"] = 210,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -436,7 +452,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Sign of the Earth
 							["provider"] = { "i", 4640 },	-- Sign of the Earth
-							["cr"] = 2944,	-- Boss Tho'grun
 						}),
 					},
 				}),
@@ -450,11 +465,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Blacklash's Bindings
 							["provider"] = { "i", 4615 },	-- Blacklash's Bindings
-							["cr"] = 2757,	-- Blacklash
 						}),
 						objective(2, {	-- 0/1 Chains of Hematus
 							["provider"] = { "i", 4645 },	-- Chains of Hematus
-							["cr"] = 2759,	-- Hematus
 						}),
 						i(11193, {	-- Blazewind Breastplate
 							["timeline"] = { REMOVED_4_0_3 },
@@ -479,7 +492,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1419, {	-- Coyote Thieves
 					["qg"] = 5394,	-- Neeka Bloodscar
-					["coord"] = { 6.4, 47, BADLANDS },
+					["coord"] = { 6.4, 47.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -516,7 +529,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3821, {	-- Dreadmaul Rock
 					["qg"] = 9082,	-- Thal'trak Proudtusk
-					["coord"] = { 3.4, 48, BADLANDS },
+					["coord"] = { 3.4, 48.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -1189,47 +1202,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				{
-					["provider"] = { "o", 2933 },	-- Seal of the Earth
-					["allianceQuestData"] = q(779),	-- Seal of the Earth [A]
-					["hordeQuestData"] = q(795),	-- Seal of the Earth [H]
-					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
-					["lvl"] = 40,
 					-- #if BEFORE 4.0.3
 					["description"] = "This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",
 					-- #endif
+					["providers"] = {
+						{ "o", 2933 },	-- Seal of the Earth
+						{ "i", 4845 },	-- Diamond Runestone
+						{ "i", 4844 },	-- Opal Runestone
+						{ "i", 4843 },	-- Amethyst Runestone
+					},
+					["allianceQuestData"] = q(779),	-- Seal of the Earth [A]
+					["hordeQuestData"] = q(795),	-- Seal of the Earth [H]
+					["timeline"] = { REMOVED_4_0_3 },
+					--[[
+					["cost"] = {
+						{ "i", 4845, 1 },	-- Diamond Runestone
+						{ "i", 4844, 1 },	-- Opal Runestone
+						{ "i", 4843, 1 },	-- Amethyst Runestone
+					},
+					]]--
+					["repeatable"] = true,
+					["lvl"] = 40,
 					["groups"] = {
-						objective(1, {	-- 0/1 Diamond Runestone
-							["providers"] = {
-								{ "i", 4845 },	-- Diamond Runestone
-								{ "o", 2842 },	-- Pillar of Diamond
-							},
-							["coord"] = { 83.5, 32.9, BADLANDS },
-						}),
-						objective(2, {	-- 0/1 Opal Runestone
-							["providers"] = {
-								{ "i", 4844 },	-- Opal Runestone
-								{ "o", 2848 },	-- Pillar of Opal
-							},
-							["coord"] = { 72.38, 66.94, BADLANDS },
-						}),
-						objective(3, {	-- 0/1 Amethyst Runestone
-							["providers"] = {
-								{ "i", 4843 },	-- Amethyst Runestone
-								{ "o", 2858 },	-- Pillar of Amethyst
-							},
-							["coord"] = { 81.27, 64.29, BADLANDS },
-						}),
-						{
-							["itemID"] = 4615,	-- Blacklash's Bindings
+						i(4615, {	-- Blacklash's Bindings
 							["coord"] = { 82.6, 48.8, BADLANDS },
 							["cr"] = 2757,	-- Blacklash
-						},
-						{
-							["itemID"] = 4645,	-- Chains of Hematus
+						}),
+						i(4645, {	-- Chains of Hematus
 							["coord"] = { 81.4, 50.6, BADLANDS },
 							["cr"] = 2759,	-- Hematus
-						},
+						}),
 					},
 				},
 				q(27766, {	-- Second Sample: Whelps
@@ -1281,7 +1283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(710, {	-- Study of the Elements: Rock (1/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1294,7 +1296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(711, {	-- Study of the Elements: Rock (2/3)
 					["sourceQuest"] = 710,	-- Study of the Elements: Rock (1/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1307,7 +1309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(712, {	-- Study of the Elements: Rock (3/3)
 					["sourceQuest"] = 711,	-- Study of the Elements: Rock (2/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1398,7 +1400,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(63193, {	-- Theldurin's Fist
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(63192, {  -- Tosselwrench's Shrinker
+						i(63192, { 	-- Tosselwrench's Shrinker
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63191, {	-- Martek's Knife
@@ -1781,7 +1783,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						712,	-- Study of the Elements: Rock (3/3)
 					},
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
@@ -1798,7 +1800,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(778, {	-- This Is Going to Be Hard (3/3)
 					["sourceQuest"] = 777,	-- This Is Going to Be Hard (2/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1863,7 +1865,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Sign of the Earth
 							["provider"] = { "i", 4640 },	-- Sign of the Earth
-							["cr"] = 2944,	-- Boss Tho'grun
 						}),
 					},
 				}),
@@ -1877,11 +1878,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Blacklash's Bindings
 							["provider"] = { "i", 4615 },	-- Blacklash's Bindings
-							["cr"] = 2757,	-- Blacklash
 						}),
 						objective(2, {	-- 0/1 Chains of Hematus
 							["provider"] = { "i", 4645 },	-- Chains of Hematus
-							["cr"] = 2759,	-- Hematus
 						}),
 						i(11193, {	-- Blazewind Breastplate
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1917,7 +1916,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2202, {	-- Uldaman Reagent Run
 					["sourceQuest"] = 2258,	-- Badlands Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
-					["coord"] = { 2.6, 46, BADLANDS },
+					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ULDAMAN },
 					["races"] = HORDE_ONLY,
@@ -1933,7 +1932,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9439, {	-- Unclaimed Baggage
 					["qg"] = 17097,	-- Advisor Sarophas
-					["coord"] = { 5.8, 48, BADLANDS },
+					["coord"] = { 5.8, 48.0, BADLANDS },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
@@ -2073,7 +2072,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 58, 54, BADLANDS },
+					["coord"] = { 58.0, 54.0, BADLANDS },
 					["groups"] = {
 						i(216951),	-- Slippery Dalaran Relic
 					},
@@ -2149,6 +2148,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(51018, {	-- Zormus
 					["coord"] = { 51.8, 34.2, BADLANDS },
 					["timeline"] = { ADDED_5_2_0 },
+				}),
+			}),
+			n(TREASURES, {
+				o(2842, {	-- Pillar of Diamond
+					["cost"] = {{ "i", 4640, 1 }},	-- Sign of the Earth
+					["coord"] = { 83.5, 32.9, BADLANDS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(4845),	-- Diamond Runestone
+					},
+				}),
+				o(2848, {	-- Pillar of Opal
+					["cost"] = {{ "i", 4640, 1 }},	-- Sign of the Earth
+					["coord"] = { 72.38, 66.94, BADLANDS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(4844),	-- Opal Runestone
+					},
+				}),
+				o(2858, {	-- Pillar of Amethyst
+					["cost"] = {{ "i", 4640, 1 }},	-- Sign of the Earth
+					["coord"] = { 81.27, 64.29, BADLANDS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(4843),	-- Amethyst Runestone
+					},
 				}),
 			}),
 			n(VENDORS, {
@@ -2281,6 +2306,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2739,	-- Shadowforge Tunneler
 						2743,	-- Shadowforge Warrior
 					},
+				}),
+				i(4640, {	-- Sign of the Earth
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 2944,	-- Boss Tho'grun
 				}),
 				i(2624, {	-- Thinking Cap
 					["coords"] = {

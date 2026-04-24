@@ -3,7 +3,6 @@ pet(115),	-- Baby Shark
 pet(382),	-- Sun Darter Hatchling \\ Raccoon Kit
 pet(666),	-- Micronax \\ Elayna
 5.5.0.60481
-pet(1243),	-- Living Fluid
 pet(1255),	-- Zeradar \\ Murkimus Tyrannicus
 pet(1259),	-- Widowling
 pet(1352),	-- Lord Piglet \\ Chubbs
@@ -20,6 +19,14 @@ pet(4228),	-- Alarming Clockbot
 pet(4229),	-- XS-001 Constructor Bot
 pet(4683),	-- Reven
 pet(4734),	-- Joyous
+5.5.3.64400
+pet(4862),	-- Smoldering Valor
+5.5.3.64530
+pet(5000),	-- Roofus \\ [PH] Charity Construction Dog
+5.5.3.65703
+pet(4902),	-- Auspicious Pixiu
+pet(4907),	-- Lil' Coalee
+pet(4998),	-- Smoldering Courage
 
 
 
@@ -41,3 +48,7 @@ pet(4683),	-- Reven
 pet(4734),	-- Joyous
 5.5.0.62044
 pet(4850),	-- Sa'bak's Favored
+5.5.3.64530
+pet(5000),	-- Roofus \\ [PH] Charity Construction Dog
+5.5.3.65703
+pet(4998),	-- Smoldering Courage

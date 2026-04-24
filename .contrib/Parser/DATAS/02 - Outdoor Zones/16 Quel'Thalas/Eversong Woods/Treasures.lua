@@ -1,0 +1,207 @@
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
+	m(MAP.MIDNIGHT.EVERSONG_WOODS, {
+		n(TREASURES, {
+			i(259369),	-- Design: Resplendent Highborne Statue (RECIPE!)
+			i(258131),	-- Pattern: Luxurious Silvermoon Lounge Cushion (RECIPE!)
+			header(HEADERS.Achievement, 62185, {	-- Ever Painting
+				o(621762, {	-- Anar'alah Belore
+					["coord"] = { 50.8, 41.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621700, {	-- Babble and Brook
+					["coord"] = { 46.1, 64.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621711, {	-- Elrendar's Song
+					["coord"] = { 42.6, 62.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621732, {	-- Light Consuming
+					["coord"] = { 55.1, 59.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621734, {	-- Lost Lamppost
+					["coord"] = { 41.8, 56.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621709, {	-- Memories of Ghosts
+					["coord"] = { 39.0, 78.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621707, {	-- Sway of Red and Gold
+					["coord"] = { 54.0, 75.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+			}),
+			header(HEADERS.Achievement, 61960, {	-- Treasures of Eversong Woods
+				o(613242, {	-- Antique Nobleman's Signet Ring
+					["coord"] = { 52.3, 45.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93455,
+					["groups"] = { i(265814) },	-- Noble's Signet Ring
+				}),
+				o(555351, {	-- Burbling Paint Pot
+					["coord"] = { 48.7, 75.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 91358,
+					["groups"] = { i(246314) },	-- Burbling Blob of Paint / Dali (PET!)
+				}),
+				o(613267, {	-- Farstrider's Lost Quiver
+					["coord"] = { 60.7, 67.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93457,
+					["groups"] = { i(265816) },	-- Lost Quiver
+				}),
+				o(617432, {	-- Forgotten Ink and Quill
+					["coord"] = { 43.3, 69.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93893,
+					["groups"] = { i(262616) },	-- Lively Songwriter's Quill (DECOR!)
+				}),
+				o(613697, {	-- Gift of the Phoenix
+					["coord"] = { 41.0, 19.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93544,
+					["groups"] = {
+						i(263211),	-- Gilded Eversong Cup (DECOR!)
+						o(613729, {	-- Sunstrider Vessel
+							["provider"] = { "o", 613708 },	-- Sunstrider Vessel / Gift of the Phoenix mid-phase ID for treasure
+							["description"] = "Pick up the Vessel and catch 5 Cinder Embers, then place it back where you picked it up.",
+							["questID"] = 93545,
+						}),
+					},
+				}),
+				o(617534, {	-- Gilded Arnillary Sphere
+					["coord"] = { 44.6, 45.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93908,
+					["groups"] = {
+						i(265828),	-- Gilded Armillary Sphere (750g JUNK!)
+						-- i(262453),	-- Heathlight Armillary (DECOR!) / I did not get this. -Exo
+					},
+				}),
+				o(617881, {	-- Rookery Cache
+					["coord"] = { 24.3, 69.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["questID"] = 93967,
+					["cost"] = { { "i", 263870, 1 } },	-- 1x Rookery Cache Key
+					["groups"] = {
+						i(267838),	-- Sunwing Hatchling (PET!)
+						n(257049, {	-- Mischevious Chick
+							["coord"] = { 24.2, 69.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+							["questID"] = 94626,
+							["cost"] = { { "i", 265674, 1 } },	-- 1x Tasty Meat
+						}),
+						o(620206, {	-- Rookery Cache Key
+							["coord"] = { 24.1, 69.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+							["groups"] = { i(263870) },	-- Rookery Cache Key
+						}),
+					},
+				}),
+				o(587307, {	-- Stone Vat
+					["coord"] = { 40.5, 61.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93061,
+					["cost"] = {
+						{ "i", 256232, 10 },	-- 10x Bunch of Ripe Grapes
+						{ "i", 256397,  1 },	-- 1x Packet of Instant Yeast
+					},
+					["groups"] = {
+						i(251912),	-- Goldenmist Grapes (DECOR!)
+						n(251405, {
+							["coord"] = { 40.8, 60.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["groups"] = { i(256397) },	-- Packet of Instant Yeast
+						}),
+						o_repeated({	-- Ripe Grapes
+							["groups"] = {
+								i(256232),	-- Bunch of Ripe Grapes
+								o(587443),	-- Ripe Grapes
+								o(626983),	-- Ripe Grapes
+								o(626987),	-- Ripe Grapes
+							},
+						}),
+					},
+				}),
+				o(613252, {	-- Triple-Locked Safebox
+					["description"] = "Pick up the torch and find three keys in your general area.",
+					["coord"] = { 38.9, 76.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93456,
+					["cost"] = {
+						{ "i", 258768, 1 },	-- 1x Battered Safebox Key
+						{ "i", 258770, 1 },	-- 1x Tarnished Safebox Key
+						{ "i", 258769, 1 },	-- 1x Worn Safebox Key
+					},
+					["groups"] = {
+						i(243106),	-- Gemmed Eversong Lantern (DECOR!)
+						o(613269, {	-- Battered Safebox Key
+							["coord"] = { 37.6, 74.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["groups"] = { i(258768) },	-- Battered Safebox Key
+						}),
+						o(613272, {	-- Tarnished Safebox Key
+							["coord"] = { 40.3, 75.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["groups"] = { i(258770) },	-- Tarnished Safebox Key
+						}),
+						o(613271, {	-- Worn Safebox Key
+							["coord"] = { 38.5, 73.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["groups"] = { i(258769) },	-- Worn Safebox Key
+						}),
+					},
+				}),
+			}),
+			header(HEADERS.Achievement, 62104, {	-- Midnight Lore Hunter
+				o(613850, {	-- Hawkstrider Husbandry: Unabridged Edition
+					["coord"] = { 57.8, 50.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93562,
+				}),
+				o(526903, {	-- Memorial Plaque
+					["coord"] = { 48.0, 88.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 91841,
+				}),
+				o(613847, {	-- Mirveda's Notes
+					["coord"] = { 50.5, 43.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93564,
+				}),
+				o(507966, {	-- Profane Research
+					["coord"] = { 36.1, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93565,
+				}),
+				o(613861, {	-- Shrine of Dath'Remar
+					["coord"] = { 37.6, 13.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 93563,
+				}),
+				o(613887, {	-- Unfinished Sheet Music
+					["coord"] = { 38.1, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["questID"] = 93570,
+				}),
+			}),
+			header(HEADERS.Achievement, 62288, {	-- Eversong Woods: The Highest Peaks
+				o(619621, {	-- Vista Point Flag
+					["coords"] = {	-- Same location but on both maps
+						{ 20.2, 79.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 43.0, 30.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					},
+					["questID"] = 94536,
+				}),
+				o(619647, {	-- Vista Point Flag
+					["coord"] = { 40.4, 10.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 94537,
+				}),
+				o(619648, {	-- Vista Point Flag
+					["coord"] = { 37.4, 47.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 94538,
+				}),
+				o(619649, {	-- Vista Point Flag
+					["coord"] = { 54.6, 51.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 94539,
+				}),
+				o(619650, {	-- Vista Point Flag
+					["coord"] = { 50.2, 85.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["questID"] = 94540,
+				}),
+			}),
+			o(531480, {	-- Dead Drop
+			}),
+			o(531478, {	-- Misplaced Tome
+			}),
+			o(531479, {	-- Ranger's Cache
+			}),
+		}),
+	}),
+}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
+			n(TREASURES, {
+				q(86645),	-- Hidden Quest [DNT] // Stone Vat treasure wrapper
+			}),
+		}),
+	}),
+}));

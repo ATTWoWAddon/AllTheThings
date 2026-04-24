@@ -1,9 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		}, {
 			n(161528, {	-- Aethon
 				["crs"] = { 161441 },	-- Orator Kloe
 				["coord"] = { 55.3, 80.3, BASTION },
@@ -51,7 +54,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 61083,
 				["groups"] = {
 					i(183607),	-- Uncertain Aspirant's Spear
-					i(180613),	-- Fragile Humility Scroll (not dropped by the boss, but putting here so that the source text associates it w/ the rare)
+					o(354848, {	-- Fragile Humility Scroll
+						["coords"] = {
+							{ 31.4, 22.9, BASTION },
+							{ 31.4, 23.9, BASTION },
+							{ 32.1, 21.2, BASTION },
+							{ 32.1, 23.0, BASTION },
+							{ 32.5, 24.4, BASTION },
+							{ 32.7, 20.4, BASTION },
+							{ 33.0, 20.7, BASTION },
+							{ 33.2, 23.2, BASTION },
+						},
+						["groups"] = { i(180613) },	-- Fragile Humility Scroll (not dropped by the boss, but putting here so that the source text associates it w/ the rare)
+					})
 				},
 			}),
 			n(160629, {	-- Baedos
@@ -194,8 +209,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(160721, {	-- Fallen Acolyte Erisne
-			--	you defeat a non-rare version of this mob while on 57977 'a temple in need' / 57264 'on the edge of revelation' - figure out when the rare version becomes available, these quests or later
-			--	cutscene phased the area during 57717, 'step back from that ledge, my friend' and the end of that storyline is 57447, 'purity's prerogative'
+			-- you defeat a non-rare version of this mob while on 57977 'a temple in need' / 57264 'on the edge of revelation' - figure out when the rare version becomes available, these quests or later
+			-- cutscene phased the area during 57717, 'step back from that ledge, my friend' and the end of that storyline is 57447, 'purity's prerogative'
 				["coord"] = { 60.5, 73.4, BASTION },
 				["questID"] = 58222,
 				["groups"] = {
@@ -247,8 +262,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = {
 					o(339625, {	-- Sophia's Radiance
 						["coord"] = { 61.3, 50.4, BASTION },
-						--["questID"] = ,
-						--["isDaily"] = true,
+						-- ["questID"] = ,
+						-- ["isDaily"] = true,
 						["groups"] = { i(183608) },	-- Evernote Vesper
 					}),
 				},
@@ -265,7 +280,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Requires two Buffs to mount the rare. First buff is from the statue next to the rare & the second buff comes from the Skystrider Glider item.",
 				["coord"] = { 60.6, 93.2, BASTION },
 				["questID"] = 60862,
-				["cost"] = {{ "i", 180445, 1 }},	-- 1xSkystrider Glider
+				["cost"] = { { "i", 180445, 1 } },	-- 1xSkystrider Glider
 				["groups"] = {
 					ach(14733, {	-- In the Hot Seat
 						["description"] = "Requires using the Skystrider Glider to bring Sundancer down. Being present for a kill will not grant credit.",
@@ -327,6 +342,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(BASTION, {

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	inst(1269, {	-- The Stonevault
 		["coord"] = { 46.8, 8.5, THE_RINGING_DEEPS },
@@ -80,6 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 213119 },	-- High Speaker Eirich
 					["groups"] = {
 						ach(40648),	-- Mythic: The Stonevault
+						ach(61602, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: The Stonevault Guild Run
 						i(226683),	-- Malfunctioning Mechsuit (QS!)
 					},
 				}),

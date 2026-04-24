@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.SL, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
 		["coords"] = {
@@ -23,10 +24,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61093, {	-- Flawless Transaction
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				}),
 				ach(61092, {	-- Hard Mode: Tazavesh, the Veiled Market
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				}),
 				ach(15190, {	-- Mischief!
 					crit(52460, {	-- Pickle
@@ -215,7 +216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					}),
 				},
 			}),
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
+			pickpocketing({
 				i(186161),	-- Stygian Lockbox
 			}),
 			-- #if AFTER 9.2.0

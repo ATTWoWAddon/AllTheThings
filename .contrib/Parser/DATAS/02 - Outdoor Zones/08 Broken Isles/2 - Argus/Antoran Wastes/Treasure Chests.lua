@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
@@ -27,30 +28,24 @@ root(ROOTS.Zones, {
 					}),
 					o(276425, {	-- Intact Fiend Bone
 						["description"] = "Near Vrax'thul, on the east side of a black pillar.",
-						["cost"] = {{ "i", 152786, 1 }},	-- Call of the Devourer
+						["cost"] = { { "i", 152786, 1 } },	-- Call of the Devourer
 						["coord"] = { 52.4, 35.3, ANTORAN_WASTES },
-						["groups"] = {
-							i(152991),	-- Fiend Bone
-						},
+						["groups"] = { i(152991) },	-- Fiend Bone
 					}),
 					o(276424, {	-- Intact Imp Bones
 						["description"] = "Can be found inside the imp cave.",
-						["cost"] = {{ "i", 152786, 1 }},	-- Call of the Devourer
+						["cost"] = { { "i", 152786, 1 } },	-- Call of the Devourer
 						["coords"] = {
 							{ 65.6, 26.3, ANTORAN_WASTES },	-- Entrance
 							{ 65.9, 19.4, ANTORAN_WASTES },	-- Imp Bone
 						},
-						["groups"] = {
-							i(152992),	-- Imp Bone
-						},
+						["groups"] = { i(152992) },	-- Imp Bone
 					}),
 					o(276426, {	-- Intact Ur'zul Bone
 						["description"] = "Next to the altar.",
-						["cost"] = {{ "i", 152786, 1 }},	-- Call of the Devourer
+						["cost"] = { { "i", 152786, 1 } },	-- Call of the Devourer
 						["coord"] = { 50.4, 56.1, ANTORAN_WASTES },
-						["groups"] = {
-							i(152993),	-- Ur'zul Bone
-						},
+						["groups"] = { i(152993) },	-- Ur'zul Bone
 					}),
 					o(277207, {	-- Legion Treasure Hoard
 						["description"] = "Located behind the fel waterfall.",
@@ -65,9 +60,7 @@ root(ROOTS.Zones, {
 						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 						["coord"] = { 57.5, 63.5, ANTORAN_WASTES },
 						["questID"] = 49159,
-						["groups"] = {
-							i(153285),	-- Augari Wakener's Mantle
-						},
+						["groups"] = { i(153285) },	-- Augari Wakener's Mantle
 					}),
 					o(277208, {	-- Timeworn Fel Chest
 						["coord"] = { 75.7, 52.6, ANTORAN_WASTES },
@@ -89,9 +82,10 @@ root(ROOTS.Zones, {
 							i(153342),	-- Triumvirate High Guard's Pauldrons
 							i(153338),	-- Triumvirate High Guard's Leggings
 							i(153345),	-- Triumvirate High Guard's Warboots
-						},sharedData({	-- Common Objects
+						},
+						sharedData({	-- Common Objects
 							["isDaily"] = true,
-						},{
+						}, {
 							o(273519, {	-- Legion War Supplies (east and south of small green lake in southeast area of map)
 								["questID"] = 48382,
 								["coords"] = {

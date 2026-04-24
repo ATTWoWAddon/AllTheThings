@@ -61,6 +61,9 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						o(240354, {	-- Genuinely Unguarded Treasure
 							["questID"] = 38239,
+							-- #if AFTER 11.2.7
+							["isDaily"] = true,	-- Maybe only daily during remix, and thereafter
+							-- #endif
 							["coord"] = { 65.1, 69.8, AZSUNA },
 							["groups"] = { i(129070) },	-- Ring of the Dread Pirate Bob
 						}),

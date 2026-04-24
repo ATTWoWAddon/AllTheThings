@@ -2,6 +2,42 @@
 --     I N - G A M E   S H O P     --
 -------------------------------------
 -- #if AFTER 2.0.1
+IN_GAME_SHOP = createHeader({
+	readable = "In-Game Shop",
+	constant = "IN_GAME_SHOP",
+	icon = [[~_.asset("Category_InGameShop")]],
+	text = {
+		en = [[~BATTLE_PET_SOURCE_10]],
+	},
+	description = {
+		-- #if ANYCLASSIC
+		en = "This section will show you things that you could buy in the In-Game Shop in Retail.",
+		-- TODO: de = "",
+		es = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego en Retail.",
+		mx = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego en Retail.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "此部分显示能在正式服的游戏内商城购买的东西。",
+		tw = "此部分顯示能在正式服的遊戲內商城購買的東西。",
+		-- #else
+		en = "This section will show you things that you can buy in the In-Game Shop.",
+		-- TODO: de = "",
+		es = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego.",
+		mx = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "此部分显示能在游戏内商城购买的东西。",
+		tw = "此部分顯示能在遊戲內商城購買的東西。",
+		-- #endif
+	},
+});
+assignRootCategoryHeader(85, ROOTS.InGameShop, IN_GAME_SHOP);
 root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 	-- #if AFTER 5.0.1.15662
 	n(ACHIEVEMENTS, {
@@ -69,15 +105,27 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 				-- #endif
 			},
 		}),
+		-- #if AFTER 11.2.5
+		i(248091, {	-- Anima Wyrmling (PET!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		-- #else
 		pet(2779, {	-- Anima Wyrmling (PET!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		-- #endif
 		i(118516, {	-- Argi (PET!)
 			["timeline"] = { ADDED_6_0_2 },
 		}),
+		-- #if AFTER 11.2.5
+		i(248092, {	-- Blinky (PET!)
+			["timeline"] = { ADDED_9_1_5 },
+		}),
+		-- #else
 		i(188837, {	-- Blinky (PET!)
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		-- #endif
 		i(98550, {	-- Blossoming Ancient (PET!)
 			["timeline"] = {
 				-- #if ANYCLASSIC
@@ -90,7 +138,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(128424, {	-- Brightpaw (PET!)
 			["timeline"] = { ADDED_6_2_3 },
 		}),
-		--i(229366),	-- Brrrgl (PET!)	-- Under TWW Promos
+		-- i(229366),	-- Brrrgl (PET!)	-- Under TWW Promos
 		i(92707, {	-- Cinder Kitten (PET!)
 			["timeline"] = {
 				-- #if ANYCLASSIC
@@ -122,7 +170,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
-		--i(229368),	-- Gill'el (PET!)	-- Under TWW Promos
+		-- i(229368),	-- Gill'el (PET!)	-- Under TWW Promos
+		cnONLY(i(252650, {	-- Heartglow Listener (PET!)
+			["timeline"] = { ADDED_11_2_7 },
+		})),
 		-- #if ANYCLASSIC
 		i(200060, {	-- Hoplet
 			["timeline"] = { ADDED_5_5_0 },
@@ -147,18 +198,25 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(246342, {	-- Mustyfur Fel Snooter (PET!)
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 		-- #if ANYCLASSIC
-		i(198665, {	-- Pebble's Pebble
+		i(198665, {	-- Pebble's Pebble (PET!)
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
-		i(239082, {	-- Sa'bak's Blessed
+		i(262982, {	-- Roofus (PET!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(239082, {	-- Sa'bak's Blessed (PET!)
 			["timeline"] = { ADDED_11_1_7 },
 		}),
 		i(151234, {	-- Shadow (PET!)
 			["timeline"] = { ADDED_7_3_0 },
+		}),
+		i(248073, {	-- Smoldering Valor
+			["timeline"] = { ADDED_11_2_7 },
 		}),
 		i(78916, {	-- Soul of the Aspects (PET!)
 			["timeline"] = {
@@ -284,7 +342,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 	-- #endif
 	-- #if AFTER 5.4.0.17227
 	filter(COSMETIC, {	-- AVAILABLE --
-		------ Cosmic Weapons Set ------
 		iensemble(208943, {	-- Arsenal: Cosmic Weapons Cache
 			["timeline"] = { ADDED_11_0_0 },
 		}),
@@ -324,14 +381,30 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 
-		------ Dreadlord's Shadowsbane Set ------
+		------ Cozy Kobold Collection ------
+		iensemble(262413, {	-- Ensemble: Blue Candlelight Kobold Romper
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		iensemble(262422, {	-- Ensemble: Brown Candlelight Kobold Romper
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		iensemble(262405, {	-- Ensemble: Pink Candlelight Kobold Romper
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		iensemble(262430, {	-- Ensemble: Tan Candlelight Kobold Romper
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+
 		iensemble(212218, {	-- Ensemble: Dreadlord's Shadowsbane Regalia
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 
-		------ Dreadlord's Venombane Set ------
 		iensemble(212219, {	-- Ensemble: Dreadlord's Venombane Regalia
 			["timeline"] = { ADDED_10_2_5 },
+		}),
+
+		iensemble(249754, {	-- Ensemble: The Drustvar Winter Collection
+			["timeline"] = { ADDED_11_2_7 },
 		}),
 
 		------ Feathered Archmage Set ------
@@ -347,10 +420,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(239000, {	-- Standard of the Prophet
 			["timeline"] = { ADDED_11_1_5 },
-		}),
-
-		iensemble(246989, {	-- Ensemble: Felreaver's Arcane Attire
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
 		}),
 
 		------ Fireplume Set ------
@@ -400,16 +469,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 
-		------ Green Snugglefin Murloc Romper Set ------
 		iensemble(223485, {	-- Ensemble: Green Snugglefin Murloc Romper
 			["timeline"] = { ADDED_10_2_7 },
 		}),
 
-		iensemble(246291, {	-- Ensemble: Lana'thel's Crimson Couture
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
-		}),
-
 		------ Murloc Shells Set ------
+		-- #if AFTER 11.2.5
+		iensemble(255839, {	-- Collection: Baby Murloc Satch-Shells
+			["timeline"] = { ADDED_11_2_5 },
+		}),
+		-- #else
 		i(188135, {	-- Frrgl's Shaking Shell
 			["timeline"] = { ADDED_9_1_5 },
 		}),
@@ -418,6 +487,18 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(188136, {	-- Mrrgl's Shiny Shell
 			["timeline"] = { ADDED_9_1_5 },
+		}),
+		-- #endif
+
+		------ South Guard's Copper Raiment Collection ------
+		iensemble(258802, {	-- Ensemble: South Guard's Copper Raiment
+			["timeline"] = { ADDED_12_0_0, "removed 12.0.1.66198" },	-- Removed March 2nd, 2026
+		}),
+		i(257711, {	-- Anubisath's Sunscorched Blade
+			["timeline"] = { ADDED_12_0_0, "removed 12.0.1.66198" },	-- Removed March 2nd, 2026
+		}),
+		i(257426, {	-- Anubisath's Sunscorched Greatblade
+			["timeline"] = { ADDED_12_0_0, "removed 12.0.1.66198" },	-- Removed March 2nd, 2026
 		}),
 
 		------ Spirit Healer Collection ------
@@ -468,12 +549,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_11_1_0 },
 		}),
 
-		------ Waveborne Diplomat's Regalia Set ------
 		iensemble(204888, {	-- Ensemble: Waveborne Diplomat's Regalia
 			["timeline"] = { ADDED_10_0_7 },
 		}),
 
 		------ Single Pieces ------
+		-- #if AFTER 11.2.5
+		iensemble(255827, {	-- Collection: Wings of Awakening
+			["timeline"] = { ADDED_11_2_5 },
+		}),
+		-- #else
 		i(188257, {	-- Azure Wings of Awakening
 			["timeline"] = { ADDED_10_2_0 },
 		}),
@@ -492,6 +577,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(188256, {	-- Obsidian Wings of Awakening
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		-- #endif
 
 		-- #if ANYCLASSIC
 		i(23705, {	-- Tabard of Flame
@@ -507,7 +593,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		iensemble(221847, {	-- Ensemble: Black Tropical Swimwear
 			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.63305" },	-- Removed September 15, 2025
 		}),
-		------ Gladiator's Ragged Armor Set ------
+		iensemble(246989, {	-- Ensemble: Felreaver's Arcane Attire
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
+		}),
 		iensemble(217029, {	-- Ensemble: Gladiator's Ragged Armor
 			["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6 },
 		}),
@@ -526,26 +614,26 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 },	-- Removed Oct 31st, 2023
 		}),
 
-		------ Lavaborn Emerald Attire Set ------
-		iensemble(238428, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Ensemble: Lavaborn Emerald Attire -- Removed July 14, 2025
-		i(238948, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Fel Inferno Helm -- Removed July 14, 2025
+		iensemble(246291, {	-- Ensemble: Lana'thel's Crimson Couture
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
+		}),
 
-		------ Sky Witch's Attire Set ------
+		------ Lavaborn Emerald Attire Set ------
+		iensemble(238428, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Ensemble: Lavaborn Emerald Attire	-- Removed July 14, 2025
+		i(238948, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }),	-- Fel Inferno Helm	-- Removed July 14, 2025
+
 		iensemble(212221, {	-- Ensemble: Sky Witch's Attire
 			["timeline"] = { ADDED_11_0_5, "removed 11.1.0.60037" },	-- Removed March 31, 2025
 		}),
 
-		------ Sky-Captain's Masquerade Attire Set ------
 		iensemble(210079, {	-- Sky-Captain's Masquerade Attire
 			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },	-- Removed Jan 1st, 2024
 		}),
 
-		------ Sprite Darter Set ------
 		iensemble(200925, {	-- Ensemble: Solemn Watchman's Garb
 			["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 },
 		}),
 
-		------ Twilight Witch's Attire Set ------
 		iensemble(212222, {	-- Ensemble: Twilight Witch's Attire
 			["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 },	-- Removed Feb 29th, 2024
 		}),
@@ -586,6 +674,60 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 	})),
 	-- #endif
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
+		i(260727),	-- Alliance Doormat (DECOR!)
+		i(263052),	-- Beloved Lion Plushie (DECOR!)
+		i(263053),	-- Beloved Wolf Plushie (DECOR!)
+		i(250795),	-- Colorful Dotted Egg (DECOR!)
+		i(250794),	-- Colorful Shroomic Egg (DECOR!)
+		i(250796),	-- Colorful Striped Egg (DECOR!)
+		i(260728),	-- Horde Doormat (DECOR!)
+		i(253546),	-- Lush Garden Butterfly Sconce (DECOR!)
+		i(252419),	-- Lush Garden Fungal Basin (DECOR!)
+		i(258567),	-- Lush Garden Fungal Chair (DECOR!)
+		i(258888),	-- Lush Garden Fungal Fountain (DECOR!)
+		i(258294),	-- Lush Garden Gnome-Like Statue (DECOR!)
+		i(250793),	-- Lush Garden Trellis (DECOR!)
+		i(259046, {	-- Paw Pal Bed (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(259045, {	-- Paw Pal Bed and Blanket (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(264275, {	-- Paw Pal House Durotar Roof (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(259094, {	-- Paw Pal House Elwynn Roof (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(264276, {	-- Paw Pal House Eversong Roof (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(259093, {	-- Paw Pal House Frame (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(264277, {	-- Paw Pal House Shadowglen Roof (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(259044, {	-- Paw Pal Water Dish (DECOR!)
+			["description"] = "Part of the charity Roofus Pack.",
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+		}),
+		i(250797),	-- Spring Blossom Ceiling Light (DECOR!)
+		i(258569),	-- Spring Blossom Gazebo (DECOR!)
+		i(254417),	-- Spring Blossom Hanging Chair (DECOR!)
+		i(250798),	-- Spring Blossom Shelf (DECOR!)
+		i(263290),	-- Spring Blossom Tree (DECOR!)
+		i(258568),	-- Spring Blossom Window (DECOR!)
+		i(253547),	-- Spring Blossom Wreath (DECOR!)
+	})),
 	filter(MOUNTS, {	-- AVAILABLE --
 		-- #if ANYCLASSIC
 		mount(1229672, {	-- Archmage's Great Crow
@@ -609,6 +751,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		-- #endif
 		i(219450, {	-- Charming Courier (MOUNT!)
 			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+		}),
+		i(250108, {	-- Cragstepper Crest-Horn (MOUNT!)
+			["timeline"] = { ADDED_11_2_7 },
 		}),
 		i(109013, {	-- Dread Raven (MOUNT!)
 			["timeline"] = { ADDED_10_1_0 },
@@ -653,16 +798,22 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(85870, {	-- Imperial Quilen (MOUNT!)
 			["timeline"] = { ADDED_8_3_0 },
 		}),
+		-- #if AFTER 11.2.5
+		i(248088, {	-- Jade, Bright Foreseer (MOUNT!)
+			["timeline"] = { ADDED_10_0_2 },
+		}),
+		-- #else
 		mount(369451, {	-- Jade, Bright Foreseer (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },
 		}),
+		-- #endif
 		-- #if ANYCLASSIC
 		i(192455, {	-- Kalu'ak Whalebone Glider (MOUNT!)
-			["timeline"] = { ADDED_2_5_4_A },
+			["timeline"] = { ADDED_3_4_0 },
 		}),
 		-- #endif
 		i(242795, {	-- Lana'Thel's Crimson Cascade (MOUNT!)
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 		mount(308087, {	-- Lucky Yun (MOUNT!)
 			["timeline"] = { ADDED_9_0_2 },
@@ -695,6 +846,19 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(347812, {	-- Sapphire Skyblazer (MOUNT!)
 			["timeline"] = { ADDED_9_0_5 },
 		}),
+		------ Scurrywind Groveglider Collection ------
+		mount(1251765, {	-- Blossombranch Groveglider (MOUNT!)
+			["timeline"] = { ADDED_12_0_1, },
+		}),
+		mount(1251762, {	-- Cindertuft Groveglider (MOUNT!)
+			["timeline"] = { ADDED_12_0_1, },
+		}),
+		mount(1251697, {	-- Frostfall Groveglider (MOUNT!)
+			["timeline"] = { ADDED_12_0_1, },
+		}),
+		mount(1251764, {	-- Gloombough Groveglider (MOUNT!)
+			["timeline"] = { ADDED_12_0_1, },
+		}),
 		i(156564, {	-- Shu-zen, the Divine Sentinel (MOUNT!)
 			["timeline"] = { ADDED_8_0_1 },
 		}),
@@ -704,24 +868,45 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(326390, {	-- Steamscale Incinerator (MOUNT!)
 			["timeline"] = { ADDED_8_3_7 },
 		}),
+		-- #if AFTER 11.2.0
+		i(246698, {	-- Sunwarmed Furline (MOUNT!)
+			["timeline"] = { ADDED_9_1_0 },
+		}),
+		-- #else
 		mount(317177, {	-- Sunwarmed Furline (MOUNT!)
 			["timeline"] = { ADDED_9_1_0 },
 		}),
+		-- #endif
 		i(166776, {	-- Sylverian Dreamer (MOUNT!)
 			["timeline"] = { ADDED_8_2_0 },
 		}),
+		-- #if AFTER 11.2.5
+		i(248089, {	-- Tangled Dreamweaver (MOUNT!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		-- #else
 		mount(359843, {	-- Tangled Dreamweaver (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		-- #endif
 		i(231297, {	-- Timbered Sky Snake (MOUNT!)
 			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
 			["timeline"] = { ADDED_11_0_7, },
 		}),
+		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
+			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238", "added 11.2.5.64395", "removed 11.2.7.64978" },	-- Removed Jan 6, 2025, Added Nov 17 2025, Removed Jan 5 2026
+		}),
+		-- #if AFTER 11.2.5
+		i(248090, {	-- Viridian Phase-Hunter (MOUNT!)
+			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
+		}),
+		-- #else
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
 		}),
+		-- #endif
 		i(246920, {	-- Void-Razed Elekk (MOUNT!)
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { ADDED_8_1_0 },
@@ -829,9 +1014,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(212228, {	-- Soaring Sky Fox (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.1.0.60037" },	-- Removed March 31, 2025
-		}),
-		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
-			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Removed January 6, 2025
 		}),
 		i(160589, {	-- The Dreadwake (MOUNT!)
 			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_10_1_7 },	-- Removed Sep 17th, 2023

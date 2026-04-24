@@ -98,7 +98,7 @@ root(ROOTS.Zones, {
 					},
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
 					["coord"] = { 36.5, 46.7, SURAMAR },
-					-- TODO:: may also require A Dance With Dragons (44876)
+					-- TODO:  may also require A Dance With Dragons (44876)
 					["groups"] = { i(143597) },	-- Fruit of the Arcan'dor (QI!)
 				}),
 				q(40401, {	-- A Way Back In
@@ -157,7 +157,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
 					["coord"] = { 41.5, 71.2, SURAMAR },
 					-- TODO: figure out the sourceQuest. this isn't always available
-					--["sourceQuest"] =
+					-- ["sourceQuest"] =
 					["groups"] = { i(134041) },	-- Bloodspattered Signet Ring (QI!)
 				}),
 				q(40012, {	-- An Old Ally
@@ -227,7 +227,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["coord"] = { 37.0, 46.2, SURAMAR },
 				}),
-				q(40009, {  -- Arcane Thirst
+				q(40009, { 	-- Arcane Thirst
 					["sourceQuest"] = 40123,	-- The Nightborne Pact
 					["provider"] = { "n", 98312 },	-- First Arcanist Thalyssra
 					["coord"] = { 35.3, 47.3, SURAMAR },
@@ -310,7 +310,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 99093 },	-- Thaedris Feathersong
 					["coord"] = { 49.1, 43.8, SURAMAR },
 				}),
-				q(42837, {  -- Balance to Spare
+				q(42837, { 	-- Balance to Spare
 					["sourceQuest"] = 42835,	-- The Old Fashioned Way
 					["provider"] = { "n", 108872 },	-- Margaux
 					["coord"] = { 60.6, 56.5, SURAMAR },
@@ -338,7 +338,7 @@ root(ROOTS.Zones, {
 								{ 71.8, 56.4, SURAMAR },
 							},
 							["groups"] = {
-								i(132371), 	-- Driftwood (QI!)
+								i(132371),	-- Driftwood (QI!)
 								o(245887),	-- Driftwood
 								o(245792),	-- Driftwood
 							},
@@ -466,7 +466,10 @@ root(ROOTS.Zones, {
 				}),
 				q(43314, {	-- Court of Stars: Beware the Fury of a Patient Elf
 					["sourceQuest"] = 44053,	-- Friends With Benefits
-					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
+					["qgs"] = {
+						97140,	-- First Arcanist Thalyssra
+						115736,	-- First Arcanist Thalyssra
+					},
 					["coord"] = { 36.5, 46.7, SURAMAR },
 					["groups"] = { i(140757 ) },	-- Melandrus' Spellstone (QI!)
 				}),
@@ -476,7 +479,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.6, 45.0, SURAMAR },
 				}),
 				q(44843, {	-- Crystal Clearing
-					["sourceQuests"] = { -- TODO: verify these
+					["sourceQuests"] = {	-- TODO: verify these
 						40391,	-- Take Me To Your Leader (A)
 						40632,	-- Take Me To Your Leader (H)
 					},
@@ -652,13 +655,13 @@ root(ROOTS.Zones, {
 					["isDaily"] = true,
 				}),
 				q(43994, {	-- Feed Thalyssra
-					["sourceQuest"] = 42229,	-- Shal'Aran -- TODO: verify. Fairly irrelevant, but worth figuring out for the sake of accuracy
+					["sourceQuest"] = 42229,	-- Shal'Aran	-- TODO: verify. Fairly irrelevant, but worth figuring out for the sake of accuracy
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["coord"] = { 36.9, 46.6, SURAMAR },
 					["isDaily"] = true,
 				}),
 				q(43995, {	-- Feed Valtrois
-					["sourceQuest"] = 41138,	-- Feeding Shal'Aran -- TODO: verify. Fairly irrelevant, but worth figuring out for the sake of accuracy
+					["sourceQuest"] = 41138,	-- Feeding Shal'Aran	-- TODO: verify. Fairly irrelevant, but worth figuring out for the sake of accuracy
 					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
 					["coord"] = { 37.0, 46.3, SURAMAR },
 					["isDaily"] = true,
@@ -750,7 +753,10 @@ root(ROOTS.Zones, {
 					["sourceQuest"] = 42079,	-- Masquerade
 					["provider"] = { "n", 105342 },	-- Ly'leth Lunastre
 					["coord"] = { 43.3, 78.7, SURAMAR },
-					["groups"] = { i(137010) },	-- Half-Full Bottle of Arcwine
+					["groups"] = {
+						i(137011),	-- Corked Bottle (QI!)
+						i(137010),	-- Half-Full Bottle of Arcwine
+					},
 				}),
 				q(40334, {	-- Fisherman's Tonic
 					["sourceQuests"] = {
@@ -796,7 +802,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 30.8, 59.1, SURAMAR },
 					["groups"] = { i(133743) },	-- Fresh Fel-Flesh (QI!)
 				}),
-				q(42722, {  -- Friends in Cages
+				q(42722, { 	-- Friends in Cages
 					["sourceQuest"] = 40745,	-- Shift Change
 					["provider"] = { "n", 108063 },	-- Korine
 					["coord"] = { 44.2, 73.0, SURAMAR },
@@ -1166,7 +1172,7 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(40796, {	-- Lingering on the Edge
-					["sourceQuest"] = 42229,	-- Shal'Aran -- TODO: verify this
+					["sourceQuest"] = 42229,	-- Shal'Aran	-- TODO: verify this
 					["provider"] = { "n", 101848 },	-- Absolon
 					["coord"] = { 30.3, 47.8, SURAMAR },
 				}),
@@ -1272,7 +1278,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 107302 },	-- Pearlhunter Phin
 					["coord"] = { 15.8, 54.8, SURAMAR },
 				}),
-				q(41143, {  -- Mglrgrs Of Our Grmlgrlr
+				q(41143, { 	-- Mglrgrs Of Our Grmlgrlr
 					["sourceQuest"] = 42728,	-- A Mlrglrmg For Grlmrgl
 					["provider"] = { "n", 108389 },	-- Mrgrlilgrl
 					["coord"] = { 15.1, 51.7, SURAMAR },
@@ -1318,6 +1324,10 @@ root(ROOTS.Zones, {
 					},
 					["provider"] = { "n", 115517 },	-- Magus Sendath
 					["coord"] = { 46.4, 58.1, SURAMAR },
+					["groups"] = {
+						i(142245),	-- Charged Arcshaper Staff (QI!)
+						i(142244),	-- Volatile Construct Core (QI!)
+					},
 				}),
 				q(44873, {	-- Oculeth Ex Machina
 					["sourceQuest"] = 44870,	-- Mouths to Feed
@@ -1394,7 +1404,7 @@ root(ROOTS.Zones, {
 					["groups"] = { i(136592) },	-- Fel Essence (QI!)
 				}),
 				q(44844, {	-- Powering Down the Portal
-					["sourceQuests"] = { -- TODO: verify these
+					["sourceQuests"] = {	-- TODO: verify these
 						40391,	-- Take Me To Your Leader (A)
 						40632,	-- Take Me To Your Leader (H)
 					},
@@ -1867,7 +1877,10 @@ root(ROOTS.Zones, {
 				}),
 				q(42491, {	-- The Arcway: Long Buried Knowledge
 					["sourceQuest"] = 44053,	-- Friends With Benefits
-					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
+					["qgs"] = {
+						103155,	--Arcanist Valtrois
+						115371,	-- Arcanist Valtrois
+					},
 					["coord"] = { 37.0, 46.2, SURAMAR },
 					["groups"] = { i(138394) },	-- Suramar Leyline Map (QI!)
 				}),
@@ -2331,7 +2344,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 20.9, 52.2, SURAMAR },
 					["groups"] = { i(136271) },	-- Spellstone of Kel'danath (QI!)
 				}),
-				q(41197, {  -- You've Got to Be Kitten Me Right Meow
+				q(41197, { 	-- You've Got to Be Kitten Me Right Meow
 					["sourceQuest"] = 41453,	-- Homeward Bounding
 					["provider"] = { "n", 103570 },	-- Mardranel Forestheart
 					["coord"] = { 21.4, 30.6, SURAMAR },

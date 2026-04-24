@@ -24,28 +24,41 @@ local C_VignetteInfo_GetVignetteInfo = C_VignetteInfo.GetVignetteInfo;
 local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
 local C_VignetteInfo_GetVignettePosition = C_VignetteInfo.GetVignettePosition;
 local Callback, DelayedCallback = app.CallbackHandlers.Callback, app.CallbackHandlers.DelayedCallback
+local Runner = app.CreateRunner("vignette")
+Runner.SetPerFrameDefault(10)
 
 -- Helper Functions
 local SettingsCache = {}
 local ActiveWaypointGUID;
+local SetTrackedVignette = C_SuperTrack.SetSuperTrackedVignette
+local GetTrackedVignette = C_SuperTrack.GetSuperTrackedVignette or function() return ActiveWaypointGUID end
 local function PlotUserWaypoint(pos)
 	C_SuperTrack.SetSuperTrackedUserWaypoint(false)
 	C_Map.ClearUserWaypoint()
 	C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(pos.mapID, pos.x, pos.y, pos.z))
 	C_SuperTrack.SetSuperTrackedUserWaypoint(true)
 	ActiveWaypointGUID = pos.guid
+	-- app.PrintDebug("ActiveWaypointGUID",ActiveWaypointGUID)
 end
 local function GetWaypointLink(guid, text)
 	-- Generates a waypoint link with text (optional) inside the link should the vignette guid have a valid position.
 	if guid and C_VignetteInfo_GetVignettePosition then
 		local mapID = app.CurrentMapID;
-		if mapID then
+		if mapID and mapID > 0 then
 			local pos = C_VignetteInfo_GetVignettePosition(guid, mapID);
 			if pos then
 				if SettingsCache.PlotWaypoints then
-					pos.mapID = mapID
-					pos.guid = guid
-					Callback(PlotUserWaypoint, pos)
+					-- don't user a UserWaypoint if direct Vignette tracking is available
+					if SetTrackedVignette then
+						-- Vignettes track at level 7, so don't replace higher priority tracking
+						if (C_SuperTrack.GetHighestPrioritySuperTrackingType() or 99) > 6 then
+							Runner.Run(SetTrackedVignette, guid)
+						end
+					else
+						pos.mapID = mapID
+						pos.guid = guid
+						Callback(PlotUserWaypoint, pos)
+					end
 					-- TODO: setting & logic here for incorporating into TomTom waypoints
 				end
 				return app:WaypointLink(mapID, pos.x, pos.y, text);
@@ -66,6 +79,23 @@ local Ignored = setmetatable({
 		[231409] = true,	-- Smaks Topskimmer [Renown Quartermaster - The Cartels of Undermine]
 		[235252] = true,	-- Om'sirik [Renown Quartermaster - The K'aresh Trust]
 		[245344] = true,	-- Zo'turu [Renown Quartermaster - Manaforge Vandals]
+		[250243] = true,	-- Timewarped Essence of Wyrmtongue
+		[240838] = true,	-- Caeris Fairdawn [Renown Quartermaster]
+		[243220] = true,	-- Irissa Bloodstar [Conquest Quartermaster]
+		[258181] = true,	-- Construct Ali'a [Decor Specialist]
+		[250982] = true,	-- Dethelin [Decor Specialist]
+		[243286] = true,	-- Lyrendal [Artisan's Consortium Quartermaster]
+		[254944] = true,	-- Tajaka Sawtusk [Decor Specialist]
+		[240279] = true,	-- Magovu [Amani Tribe Renown Quartermaster]
+		[248328] = true,	-- Void Researcher Anomander [The Singularity Renown Quartermaster]
+		[257042] = true,	-- Research Console
+		[259922] = true,	-- Void Researcher Aemely [Decor Specialist]
+		[259864] = true,	-- Sathren Azuredawn [Decor Specialist]
+		[256828] = true,	-- Dennia Silvertongue [Decor Specialist]
+		[252873] = true,	-- Morta Gage [Decor Specialist]
+		[240407] = true,	-- Naynar [Haranir Renown Quartermaster]
+		[255114] = true,	-- Maku [Decor Specialist]
+		[252910] = true,	-- Garnett [Decor Specialist]
 	},
 	object = {
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]
@@ -92,11 +122,11 @@ local function AlertForVignetteInfo(info)
 	elseif not SettingsCache.IncludeCompleted and (not group.visible or app.IsComplete(group)) then
 		return false
 	else
-		local progressText = group.progressText
+		local summaryText = group.summaryText
 			or GetProgressColorText(group.progress or 0, group.total or 0)
 			or (group.collectible and app.GetCollectionIcon(group.collected))
 			or (group.trackable and app.GetCompletionIcon(group.saved))
-		link = app:Linkify(info.name or id, app.Colors.ChatLink, "search:" .. link) .. " " .. progressText
+		link = app:Linkify(info.name or id, app.Colors.ChatLink, "search:" .. link) .. " " .. summaryText
 	end
 	-- app.PrintDebug("Vignette.Alert",link)
 
@@ -175,8 +205,8 @@ local function ClearVignette(guid)
 	-- app.PrintDebug("Vignette.Clear",vignetteInfo.SearchType,vignetteInfo.ID,guid);
 	ActiveVignettes[vignetteInfo.SearchType][vignetteInfo.ID] = nil
 	CachedVignetteInfo[guid] = nil
-	if ActiveWaypointGUID == guid and SettingsCache.ClearWaypoints then
-		C_Map.ClearUserWaypoint()
+	if SettingsCache.ClearWaypoints and GetTrackedVignette() == guid then
+		C_SuperTrack.ClearAllSuperTracked()
 		ActiveWaypointGUID = nil
 	end
 end
@@ -224,7 +254,7 @@ local function InitialVignetteScan()
 	CacheVignetteSettings()
 	DelayedCallback(Event_VIGNETTES_UPDATED, 0.1)
 	-- clean up the 1 time function, needs to be callback since it's removing within the same event
-	Callback(app.RemoveEventHandler, InitialVignetteScan)
+	app.FunctionRunner.Run(app.RemoveEventHandler, InitialVignetteScan)
 end
 app.AddEventHandler("OnRefreshCollectionsDone", InitialVignetteScan)
 app.AddEventHandler("Settings.OnSet", function(containerKey, key, value)

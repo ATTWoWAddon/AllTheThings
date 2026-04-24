@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 MIDSUMMER_FIRE_FESTIVAL_HEADER = createHeader({
 	readable = "Midsummer Fire Festival",
 	constant = "MIDSUMMER_FIRE_FESTIVAL_HEADER",
@@ -17,12 +18,12 @@ MIDSUMMER_FIRE_FESTIVAL_HEADER = createHeader({
 		en = "Midsummer Fire Festival",	-- Category 161 is "Midsummer", perhaps this is fine to use instead?
 		de = "Sonnenwendfest",
 		es = "Festival del Fuego del Solsticio de Verano",
+		mx = "Festival del Fuego del Solsticio de Verano",
 		fr = "Fête du Feu du solstice d’été",
 		it = "Fuochi di Mezza Estate",
-		mx = "Festival del Fuego del Solsticio de Verano",
+		ko = "한여름 불꽃축제",
 		pt = "Festival do Fogo do Solstício",
 		ru = "Огненный Солнцеворот",
-		ko = "한여름 불꽃축제",
 		cn = "仲夏火焰节",
 		tw = "仲夏火焰節慶",
 	},
@@ -35,15 +36,16 @@ local ALLIANCE_BONFIRE_OBJECT_DATA = {
 	model = 200079,
 	text = {
 		en = "Alliance Bonfire",
-		es = "Fogata de la Alianza",
 		de = "Freudenfeuer der Allianz",
+		es = "Fogata de la Alianza",
+		mx = "Fogata de la Alianza",
 		fr = "Feu de joie de l'Alliance",
 		it = "Falò dell'Alleanza",
-		mx = "Fogata de la Alianza",
+		ko = "얼라이언스 화톳불",
 		pt = "Fogueira da Aliança",
 		ru = "Большой костер Альянса",
-		ko = "얼라이언스 화톳불",
 		cn = "联盟篝火",
+		-- TODO: tw = "",
 	},
 };
 local HORDE_BONFIRE_OBJECT_DATA = {
@@ -54,17 +56,19 @@ local HORDE_BONFIRE_OBJECT_DATA = {
 	model = 200079,
 	text = {
 		en = "Horde Bonfire",
-		es = "Fogata de la Horda",
 		de = "Freudenfeuer der Horde",
+		es = "Fogata de la Horda",
+		mx = "Fogata de la Horda",
 		fr = "Feu de joie de la Horde",
 		it = "Falò dell'Orda",
-		mx = "Fogata de la Horda",
+		ko = "호드 화톳불",
 		pt = "Fogueira da Horda",
 		ru = "Большой костер Орды",
-		ko = "호드 화톳불",
 		cn = "部落篝火",
+		-- TODO: tw = "",
 	},
 };
+
 local ObjectDB = ObjectDB;
 function abonfire(questID, t)
 	t = q(questID, t);
@@ -1011,9 +1015,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 10.2, 15.3, ASHENVALE },
 			["timeline"] = { ADDED_2_4_0 },
-			["cost"] = {
-				{ "i", 35828, 1 },	-- Totemic Beacon
-			},
+			["cost"] = { { "i", 35828, 1 } },	-- Totemic Beacon
 			["lvl"] = lvlsquish(16, 1, 1),
 			["groups"] = {
 				objective(1, {	-- Listen to the plan of the Twilight Cultists
@@ -1125,9 +1127,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 16.0, 20.8, ASHENVALE },
 			["timeline"] = { ADDED_4_0_1 },
-			["cost"] = {
-				{ "i", 35828, 1 },	-- Totemic Beacon
-			},
+			["cost"] = { { "i", 35828, 1 } },	-- Totemic Beacon
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(16, 1, 1),
 		}),
@@ -1137,9 +1137,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 16.0, 20.8, ASHENVALE },
 			["timeline"] = { ADDED_2_4_0 },
-			["cost"] = {
-				{ "i", 35828, 1 },	-- Totemic Beacon
-			},
+			["cost"] = { { "i", 35828, 1 } },	-- Totemic Beacon
 			-- #if AFTER CATA
 			-- NOTE: This quest was originally served to both Horde and Alliance, but with Cataclysm, a new version specifically for the Alliance was added.
 			["races"] = HORDE_ONLY,
@@ -1441,7 +1439,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26204 },	-- Chillwind Lieutenant
 					["coords"] = {
 						-- #if BEFORE CATA
-						{ 21, 22, STRANGLETHORN_VALE },
+						{ 21.0, 22.0, STRANGLETHORN_VALE },
 						-- #else
 						{ 21.6, 41.4, NORTHERN_STRANGLETHORN },
 						-- #endif
@@ -1705,6 +1703,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
+			-- #IF AFTER 10.2.7
+			-- this quest, while removed at this point, becomes linked to a yearly quest bit which causes it to unflag
+			["isYearly"] = true,
+			-- #ENDIF
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
@@ -1717,6 +1719,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = HORDE_ONLY,
+			-- #IF AFTER 10.2.7
+			-- this quest, while removed at this point, becomes linked to a yearly quest bit which causes it to unflag
+			["isYearly"] = true,
+			-- #ENDIF
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
@@ -1729,6 +1735,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			["timeline"] = { ADDED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
 			["groups"] = { i(23247) },	-- Burning Blossom
 		}),
 		q(82105, {	-- Torch Tossing (H)
@@ -1736,6 +1743,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 			["timeline"] = { ADDED_10_2_7 },
 			["races"] = HORDE_ONLY,
+			["isYearly"] = true,
 			["groups"] = { i(23247) },	-- Burning Blossom
 		}),
 		q(11886, {	-- Unusual Activity
@@ -1743,9 +1751,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { ASHENVALE },
-			["cost"] = {
-				{ "i", 35828, 1 },	-- Totemic Beacon
-			},
+			["cost"] = { { "i", 35828, 1 } },	-- Totemic Beacon
 			["lvl"] = lvlsquish(16, 1, 1),
 			["groups"] = {
 				objective(1, {	-- 0/1 Twilight Correspondence
@@ -2775,7 +2781,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28945, {	-- Honor the Flame — Twilight Highlands
 					["qg"] = 51650,	-- Twilight Highlands Flame Warden
-					["coord"] = { 47.2, 29, TWILIGHT_HIGHLANDS },
+					["coord"] = { 47.2, 29.0, TWILIGHT_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(28950, {	-- Honor the Flame — Uldum

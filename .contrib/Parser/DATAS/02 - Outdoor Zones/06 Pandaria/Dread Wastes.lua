@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(DREAD_WASTES, {
@@ -15,65 +16,65 @@ root(ROOTS.Zones, {
 						crit(20511, {		-- Garalon
 							["crs"] = { 63667 },
 							["coords"] = {
-								{ 39, 35, DREAD_WASTES },
-								{ 41, 39, DREAD_WASTES },
+								{ 39.0, 35.0, DREAD_WASTES },
+								{ 41.0, 39.0, DREAD_WASTES },
 							},
 						}),
 						crit(20509, {		-- Wind Lord Mel'jarak
 							["crs"] = { 63665 },
-							["coord"] = { 39, 35, DREAD_WASTES },
+							["coord"] = { 39.0, 35.0, DREAD_WASTES },
 						}),
 						crit(20508, {		-- Blade Lord Ta'yak
 							["crs"] = { 63664 },
-							["coord"] = { 39, 35, DREAD_WASTES },
+							["coord"] = { 39.0, 35.0, DREAD_WASTES },
 						}),
 						crit(20510, {		-- Amber-Shaper Un'sok
 							["crs"] = { 63666 },
-							["coord"] = { 39, 35, DREAD_WASTES },
+							["coord"] = { 39.0, 35.0, DREAD_WASTES },
 						}),
 						crit(20507, {		-- Imperial Vizier Zor'lok
 							["crs"] = { 63662 },
-							["coord"] = { 39, 35, DREAD_WASTES },
+							["coord"] = { 39.0, 35.0, DREAD_WASTES },
 						}),
 						crit(21001, {		-- Amber Earthshaker
 							["crs"] = { 65456 },
-							["coord"] = { 51, 48, DREAD_WASTES },
+							["coord"] = { 51.0, 48.0, DREAD_WASTES },
 						}),
 						crit(20506, {		-- Amber Rocktunneler
 							["crs"] = { 63638 },
-							["coord"] = { 51, 21, DREAD_WASTES },
+							["coord"] = { 51.0, 21.0, DREAD_WASTES },
 						}),
 						crit(20505, {		-- Amber Venomlancer
 							["crs"] = { 63619 },
-							["coord"] = { 56, 13, DREAD_WASTES },
+							["coord"] = { 56.0, 13.0, DREAD_WASTES },
 						}),
 						crit(21002, {		-- Dread Ambercrusher
 							["crs"] = { 65435 },
-							["coord"] = { 41, 38, DREAD_WASTES },
+							["coord"] = { 41.0, 38.0, DREAD_WASTES },
 						}),
 						crit(21003, {		-- Dread Fearbringer
 							["crs"] = { 65439 },
-							["coord"] = { 39, 42, DREAD_WASTES },
+							["coord"] = { 39.0, 42.0, DREAD_WASTES },
 						}),
 						crit(21004, {		-- Essence of Dread
 							["crs"] = { 65491 },
-							["coord"] = { 55, 45, DREAD_WASTES },
+							["coord"] = { 55.0, 45.0, DREAD_WASTES },
 						}),
 						crit(21005, {		-- Essence of Fear
 							["crs"] = { 65487 },
-							["coord"] = { 59, 18, DREAD_WASTES },
+							["coord"] = { 59.0, 18.0, DREAD_WASTES },
 						}),
 						crit(21006, {		-- Essence of Horror
 							["crs"] = { 65490 },
-							["coord"] = { 45, 41, DREAD_WASTES },
+							["coord"] = { 45.0, 41.0, DREAD_WASTES },
 						}),
 						crit(21007, {		-- Essence of Panic
 							["crs"] = { 65489 },
-							["coord"] = { 61, 47, DREAD_WASTES },
+							["coord"] = { 61.0, 47.0, DREAD_WASTES },
 						}),
 						crit(21008, {		-- Essence of Terror
 							["crs"] = { 65488 },
-							["coord"] = { 43, 28, DREAD_WASTES },
+							["coord"] = { 43.0, 28.0, DREAD_WASTES },
 						}),
 					}),
 					ach(7321),	-- Spreading the Warmth
@@ -96,12 +97,12 @@ root(ROOTS.Zones, {
 							["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 						}),
 						crit(20956, {	-- Iron Mantid
-							["providers"] = {
-								{ "n",  62774 },	-- Malik the Unscathed
-								{ "o", 215872 },	-- Halberd of the Unscathed
-							},
+							["provider"] = { "n",  62774 },	-- Malik the Unscathed
 							["coord"] = { 55.1, 35.4, DREAD_WASTES },
 							["description"] = "If for some reason you can't find Malik, you can interact with the Halberd of the Unscathed instead to get the buff.",
+							["groups"] = {
+								o(215872),	-- Halberd of the Unscathed
+							},
 						}),
 						crit(20957, {	-- Silent Lucidity
 							["provider"] = { "n", 65305 },	-- Iyyokuk the Lucid
@@ -1826,7 +1827,7 @@ root(ROOTS.Zones, {
 								i(89067),	-- Links of the Lucid
 								i(89066),	-- Paragon's Pale Pendant
 								i(89068),	-- Wire of the Wakener
-								
+
 								-- Revered (pre-5.4.0)
 								i(89094),	-- Ambersmith Legplates
 								i(89090),	-- Dreadsworn Slayer Legs
@@ -1845,46 +1846,46 @@ root(ROOTS.Zones, {
 							}, {	-- Friendly
 							}, {	-- Honored
 								i(83791, {	-- Plans: Breastplate of Ancient Steel (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(83792, {	-- Plans: Gauntlets of Ancient Steel (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(90531, {	-- Plans: Ghost Iron Shield Spike (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(83787, {	-- Plans: Ghost Reaver's Breastplate (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(83788, {	-- Plans: Ghost Reaver's Gauntlets (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(84196, {	-- Plans: Living Steel Belt Buckle (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(83789, {	-- Plans: Living Steel Breastplate (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(83790, {	-- Plans: Living Steel Gauntlets (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(90532, {	-- Plans: Living Steel Weapon Chain (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(84197, {	-- Plans: Masterwork Forgewire Axe (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(84198, {	-- Plans: Masterwork Ghost Shard (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(84200, {	-- Plans: Masterwork Ghost-Forged Blade (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(84217, {	-- Plans: Masterwork Phantasmal Hammer (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(84218, {	-- Plans: Masterwork Spiritblade Decimator (RECIPE!)
-									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+									["cost"] = { { "i", 72093, 20 } },	-- 20x Kyparite
 								}),
 								i(89230),	-- Restorative Amber
 								-- #if BEFORE WOD

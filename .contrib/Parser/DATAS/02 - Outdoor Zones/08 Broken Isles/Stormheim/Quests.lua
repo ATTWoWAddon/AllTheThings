@@ -54,6 +54,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 44.1, 18.1, STORMHEIM },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(122746),	-- Head of Thane Wildsky (QI!)
 						i(121499),	-- Footwraps of the Blightcaller
 						i(121501),	-- Duskbat Exterminator's Treads
 						i(121500),	-- Blighthound Master's Greaves
@@ -89,7 +90,9 @@ root(ROOTS.Zones, {
 						i(129343),	-- Plaguebringer's Mask
 						i(129344),	-- Dark Ranger's Coif
 						i(129345),	-- Blightcaller's Braincage
-						i(245411, {["timeline"] = { ADDED_11_2_7 }}),	-- Dark Ship's Lantern (DECOR!)
+						i(245411, {	-- Dark Ship's Lantern (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 				q(39792, {	-- A Stack of Racks
@@ -818,6 +821,7 @@ root(ROOTS.Zones, {
 						i(132786),	-- Archived Record of Valor
 						i(132791),	-- Archived Record of Will
 						i(132775),	-- Blessing of the Watchers
+						i(141398),	-- Blessing of the Watchers
 						i(132796),	-- Breath of the Vault
 						i(132783),	-- Echo of Aggramar
 						i(132780),	-- Grasp of the God-King
@@ -852,7 +856,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["groups"] = {
 						o(241866, {	-- Soulthorn
-							i(124504),	 -- Soulcap (QI!)
+							i(124504),	-- Soulcap (QI!)
 						}),
 					},
 				}),
@@ -876,7 +880,10 @@ root(ROOTS.Zones, {
 				q(46340, {	-- The Gates Are Closed
 					["sourceQuests"] = { 45525 },	-- Unanswered Questions
 					["provider"] = { "n", 93628 },	-- Eyir
-					["coord"] = { 71.9, 51.1, STORMHEIM },
+					["coords"] = {
+						{ 65.0, 68.0, STORMHEIM },
+						{ 73.0, 51.0, 640 },	-- Vault of Eyir
+					},
 					["classes"] = {
 						MAGE,		-- Arcane
 						PALADIN,	-- Retribution
@@ -1018,7 +1025,10 @@ root(ROOTS.Zones, {
 				q(45522, {	-- To Silence the Bonespeakers
 					["sourceQuests"] = { 45486 },	-- The Reluctant Queen
 					["provider"] = { "n", 93628 },	-- Eyir
-					["coord"] = { 65.0, 68.0, STORMHEIM },
+					["coords"] = {
+						{ 65.0, 68.0, STORMHEIM },
+						{ 73.0, 51.0, 640 },	-- Vault of Eyir
+					},
 					["classes"] = {
 						MAGE,		-- Arcane
 						PALADIN,	-- Retribution
@@ -1184,6 +1194,7 @@ root(ROOTS.Zones, {
 						i(132810),	-- Erratic Stormforce
 						i(132802),	-- Hrydshal Forgeflame
 						i(132816),	-- Hrydshal Weald
+						i(141399),	-- Overcharged Stormscale
 						i(132804),	-- Sigil of Hrydshal
 						i(132817),	-- Shade of Thorim's Peak
 						i(132815),	-- Storm-Charged Lodestone

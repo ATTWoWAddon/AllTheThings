@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						i(256907),	-- Replica Tome of Blighted Implements (DECOR!)
 					}),
 					ach(60991, {	-- Raise an Army for the Dreadscar Rift
-						i(248941),	-- Dreadscar Battle Planning Map (DECOR!)
+						i(264242),	-- Dreadscar Battle Planning Map (DECOR!)
 					}),
 					ach(42281, {	-- The Netherlord's Campaign
 						i(248960),	-- Dreadscar Dais (DECOR!)
@@ -24,11 +24,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ARTIFACTS, {
 					cl(WARLOCK, AFFLICTION, {
 						i(140764, {	-- Grimoire of the First Necrolyte (QS!)
-							["description"] = "Any demon can drop this.",
+							["description"] = "Can be looted from any killed demon.",
 						}),
 						q(44083, {	-- The Grimoire of the First Necrolyte
-							["description"] = "Only available from rare elite WQs.",
+							["description"] = "Only available from Rare Elite (DANGER) World Quests.",
 							["provider"] = { "i", 140764 },	-- Grimoire of the First Necrolyte
+							["groups"] = { i(140762) },	-- Skull of the Executed (QI!)
 						}),
 						n(112862, {	-- Sataiel
 							["sourceQuest"] = 44083,	-- The Grimoire of the First Necrolyte
@@ -49,26 +50,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(140664),	-- Deficient Eredar Head
 							i(140665),	-- Nearly Satisfactory Eredar Head
 							hqt(44093, name(HEADERS.Item, 140661, {	-- Damaged Eredar Head
-								["provider"] = {"i",140661},	-- Damaged Eredar Head
+								["provider"] = { "i", 140661 },	-- Damaged Eredar Head
 							})),
 							hqt(44094, name(HEADERS.Item, 140662, {	-- Deformed Eredar Head
-								["sourceQuests"] = { 44093 },	-- Damaged Eredar Head
-								["provider"] = {"i",140662},	-- Deformed Eredar Head
+								["sourceQuest"] = 44093,	-- Damaged Eredar Head
+								["provider"] = { "i", 140662 },	-- Deformed Eredar Head
 							})),
 							hqt(44095, name(HEADERS.Item, 140663, {	-- Malformed Eredar Head
-								["sourceQuests"] = { 44094 },	-- Deformed Eredar Head
-								["provider"] = {"i",140663},	-- Malformed Eredar Head
+								["sourceQuest"] = 44094,	-- Deformed Eredar Head
+								["provider"] = { "i", 140663 },	-- Malformed Eredar Head
 							})),
 							hqt(44096, name(HEADERS.Item, 140664, {	-- Deficient Eredar Head
-								["sourceQuests"] = { 44095 },	-- Malformed Eredar Head
-								["provider"] = {"i",140664},	-- Deficient Eredar Head
+								["sourceQuest"] = 44095,	-- Malformed Eredar Head
+								["provider"] = { "i", 140664 },	-- Deficient Eredar Head
 							})),
 							hqt(44097, name(HEADERS.Item, 140665, {	-- Nearly Satisfactory Eredar Head
-								["sourceQuests"] = { 44096 },	-- Deficient Eredar Head
-								["provider"] = {"i",140665},	-- Nearly Satisfactory Eredar Head
+								["sourceQuest"] = 44096,	-- Deficient Eredar Head
+								["provider"] = { "i", 140665 },	-- Nearly Satisfactory Eredar Head
 							})),
 							i(139576, {	-- Visage of the First Wakener
-								["sourceQuests"] = { 44097 },	-- Nearly Satisfactory Eredar Head
+								["sourceQuest"] = 44097,	-- Nearly Satisfactory Eredar Head
 								["groups"] = {
 									artifact(937),	-- Skull of the Man'ari
 									artifact(937),	-- Spine of Thal'kiel
@@ -77,10 +78,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(729),	-- Black Harvest Acolytes
 					follower(730),	-- Black Harvest Acolytes
 					follower(740),	-- Black Harvest Acolytes
@@ -101,7 +99,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(736),	-- Swarm of Wild Imps
 					follower(737),	-- Swarm of Wild Imps
 					follower(738),	-- Swarm of Wild Imps
-				})),
+				}),
 				n(QUESTS, {
 					q(40716, {	-- The Sixth
 						["provider"] = { "n", 103506 },	-- Ritssyn Flamescowl
@@ -148,7 +146,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 101097 },	-- Calydus
 							["coords"] = {
-								{ 56.4, 64.6, LEGION_THE_UNDERBELLY },
+								{ 56.1, 65.7, LEGION_THE_UNDERBELLY },
 								{ 37.7, 31.8, DREADSCAR_RIFT },
 							},
 							["groups"] = {
@@ -173,7 +171,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "o", 245793 },	-- Battered Journal
 							["coord"] = { 52.3, 33.9, DEADWIND_PASS },
 							["groups"] = {
-								i(132377),	-- Ariden's Compass (QI!)
+								o(245794, {	-- Compass
+									["coord"] = { 52.2, 34.1, DEADWIND_PASS },
+									["groups"] = { i(132377) },	-- Ariden's Compass (QI!)
+								}),
 							},
 						}),
 						q(40611, {	-- The Fate of Deadwind
@@ -188,13 +189,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["groups"] = {
 								o(246021, {	-- Ulthalesh, the Deadwind Harvester
-									["coord"] = { 45.1, 67.8, 46 },	-- Karazhan Catacombs
+									["coord"] = { 69.5, 27.2, 46 },	-- Karazhan Catacombs
 									["groups"] = {
 										i(128942, {	-- Ulthalesh, the Deadwind Harvester
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(294),	-- Ulthalesh, the Deadwind Harvester
-											},
+											["groups"] = { artifact(294) },	-- Ulthalesh, the Deadwind Harvester
 										}),
 									},
 								}),
@@ -206,10 +205,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["groups"] = {
-								i(128942, {	-- Ulthalesh, the Deadwind Harvester
-									["ItemAppearanceModifierID"] = 9,
+								o(246021, {	-- Ulthalesh, the Deadwind Harvester
+									["coord"] = { 69.5, 27.2, 46 },	-- Karazhan Catacombs
 									["groups"] = {
-										artifact(294),	-- Ulthalesh, the Deadwind Harvester
+										i(128942, {	-- Ulthalesh, the Deadwind Harvester
+											["ItemAppearanceModifierID"] = 9,
+											["groups"] = { artifact(294) },	-- Ulthalesh, the Deadwind Harvester
+										}),
 									},
 								}),
 							},
@@ -247,9 +249,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									["coord"] = { 48.6, 38.5, LEGION_DALARAN },
 									["groups"] = { i(136987) },	-- Aged Snowplum Brandy (QI!)
 								}),
-								o(249744, {	-- Can of Overheated Oil
+								o_repeated({	-- Can of Overheated Oil
 									["coord"] = { 38.6, 24.9, LEGION_DALARAN },
-									["groups"] = { i(136985) },	-- Can of Overheated Oil (QI!)
+									["groups"] = {
+										i(136985),	-- Can of Overheated Oil (QI!)
+										o(249744),	-- Can of Overheated Oil
+										o(245661),	-- Can of Overheated Oil
+									},
 								}),
 								o(249742, {	-- Freshly Dug Grave
 									["coord"] = { 34.7, 38.1, LEGION_DALARAN },
@@ -268,17 +274,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 106610 },	-- Calydus
 							["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 							["groups"] = {
-								i(128943, {	-- Skull of the Man'ari
-									["ItemAppearanceModifierID"] = 0,
+								o(249821, {	-- Skull of the Man'ari
+									["coord"] = { 31.1, 65.9, SURAMAR },
 									["groups"] = {
-										artifact(811),	-- Skull of the Man'ari
+										i(128943, {	-- Skull of the Man'ari
+											["ItemAppearanceModifierID"] = 0,
+											["groups"] = { artifact(811) },	-- Skull of the Man'ari
+										}),
 									},
 								}),
 								i(137246, {	-- Spine of Thal'kiel
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(811),	-- Spine of Thal'kiel
-									},
+									["groups"] = { artifact(811) },	-- Spine of Thal'kiel
 								}),
 							},
 						}),
@@ -301,6 +308,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								i(173526, {	-- Caer Darrow Scroll (QI!)
 									["timeline"] = { ADDED_9_0_1 }
 								}),
+								i(139034),	-- Letter from Gul'dan (QI!)
 							},
 						}),
 						q(43153, {	-- An Eye for a Scepter
@@ -314,10 +322,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 109838 },	-- Calydus
 							["coord"] = { 73.8, 42.9, LEGION_DALARAN },
 							["groups"] = {
-								i(128941, {	-- Scepter of Sargeras
-									["ItemAppearanceModifierID"] = 9,
+								o(252054, {	-- Scepter of Sargeras
+									["coord"] = { 60.2, 25.4, BROKEN_SHORE },
 									["groups"] = {
-										artifact(188),	-- Scepter of Sargeras
+										i(128941, {	-- Scepter of Sargeras
+											["ItemAppearanceModifierID"] = 9,
+											["groups"] = { artifact(188) },	-- Scepter of Sargeras
+										}),
 									},
 								}),
 							},
@@ -330,13 +341,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							43254,	-- Ritual Ruination
 							41155,	-- The Dark Riders (Bad)
 							40623,	-- The Dark Riders (Good)
-							40712,	-- The Power Possessed (Good)
 							41156,	-- The Power Possessed (Bad)
+							40712,	-- The Power Possessed (Good)
 						},
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 56.4, 65.0, LEGION_THE_UNDERBELLY },
 						["maps"] = { 718 },	-- Dreadscar Rift (Scenario Map)
+						["groups"] = { i(132880) },	-- Heart of the Overlord (QI!)
 					}),
 					q(40821, {	-- Power Overwhelming
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
@@ -348,14 +360,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 40731,	-- The Heart of the Dreadscar
 						["provider"] = { "n", 112434 },	-- Gigi Gigavoid
 						["coord"] = { 58.7, 32.7, DREADSCAR_RIFT },
-						["groups"] = {
-							i(139765),	-- Visage of the Black Harvest
-						},
+						["groups"] = { i(139765) },	-- Visage of the Black Harvest
 					}),
 					q(40823, {	-- Rebuilding the Council
-					-- #if BEFORE 8.0.1
-						["sourceQuests"] = { 40821 },	-- Power Overwhelming
-						-- #endif
+						["sourceQuests"] = {
+							-- #IF BEFORE BFA
+							40821,	-- Power Overwhelming
+							-- #ELSE
+							40731,	-- The Heart of the Dreadscar
+							-- #ENDIF
+						},
 						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.7, 31.8, DREADSCAR_RIFT },
 					}),
@@ -381,17 +395,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.6, 31.8, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(616),	-- Calydus
-						},
+						["groups"] = { follower(616) },	-- Calydus
 					}),
 					q(41748, {	-- Champion: Ritssyn Flamescowl
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						["coord"] = { 65.4, 47.3, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(589),	-- Ritssyn Flamescowl
-						},
+						["groups"] = { follower(589) },	-- Ritssyn Flamescowl
 					}),
 					q(42603, {	-- Information at Any Cost
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
@@ -428,9 +438,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41759 },	-- An Unlikely Ally
 						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["coord"] = { 60.8, 30.6, AZSUNA },
-						["groups"] = {
-							i(127710),	-- Bloodstone (QI!)
-						},
+						["groups"] = { i(127710) },	-- Bloodstone (QI!)
 					}),
 					q(39389, {	-- It Hungers for Blood
 						["sourceQuests"] = { 39179 },	-- Bloodstone Bandit
@@ -441,9 +449,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 39389 },	-- It Hungers for Blood
 						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["coord"] = { 60.8, 30.6, AZSUNA },
-						["groups"] = {
-							i(136386),	-- Bloodstone (QI!)
-						},
+						["groups"] = { i(136386) },	-- Bloodstone (QI!)
 					}),
 					q(40218, {	-- Debt Repaid
 						["sourceQuests"] = { 39142 },	-- Testing a Theory
@@ -466,17 +472,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41767 },	-- A Daring Rescue
 						["provider"] = { "n", 105922 },	-- Jubeka Shadowbreaker <Council of the Black Harvest>
 						["coord"] = { 56.6, 34.0, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(619),	-- Jubeka Shadowbreaker
-						},
+						["groups"] = { follower(619) },	-- Jubeka Shadowbreaker
 					}),
 					q(41752, {	-- Champion: Zinnin Smythe
 						["sourceQuests"] = { 41767 },	-- A Daring Rescue
 						["provider"] = { "n", 105923 },	-- Zinnin Smythe <Council of the Black Harvest>
 						["coord"] = { 57.6, 35.0, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(618),	-- Zinnin Smythe
-						},
+						["groups"] = { follower(618) },	-- Zinnin Smythe
 					}),
 					-- Chap 2
 					q(42098, {	-- Black Rook Hold: An Unclaimed Soul
@@ -572,17 +574,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41784 },	-- Borrowed Time
 						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["coord"] = { 54.1, 34.9, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(617),	-- Kira Iresoul
-						},
+						["groups"] = { follower(617) },	-- Kira Iresoul
 					}),
 					q(41754, {	-- Champion: Shinfel Blightsworn
 						["sourceQuests"] = { 41784 },	-- Borrowed Time
 						["provider"] = { "n", 105140 },	-- Shinfel Blightsworn <Council of the Black Harvest>
 						["coord"] = { 54.0, 35.5, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(620),	-- Shinfel Blightsworn
-						},
+						["groups"] = { follower(620) },	-- Shinfel Blightsworn
 					}),
 					-- Chap 3
 					q(42102, {	-- One Who's Worthy
@@ -654,9 +652,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41793 },	-- Lulubelle on Loan
 						["provider"] = { "n", 105928 },	-- Lulubelle Fizzlebang
 						["coord"] = { 54.4, 39.3, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(590),	-- Lulubelle Fizzlebang
-						},
+						["groups"] = { follower(590) },	-- Lulubelle Fizzlebang
 					}),
 					-- Chap 4
 					q(41795, {	-- Summoning the Sisters
@@ -668,9 +664,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41795 },	-- Summoning the Sisters
 						["provider"] = { "n", 106228 },	-- Grand Warlock Alythess
 						["coord"] = { 58.3, 40.8, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(621),	-- Eredar Twins
-						},
+						["groups"] = { follower(621) },	-- Eredar Twins
 					}),
 					q(41796, {	-- Selecting a Sixth
 						["sourceQuests"] = { 41795 },	-- Summoning the Sisters
@@ -787,9 +781,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 46020 },	-- Crystal Containment
 						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
 						["coord"] = { 55.8, 34.4, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(997),	-- Kanrethad Ebonlocke
-						},
+						["groups"] = { follower(997) },	-- Kanrethad Ebonlocke
 					})),
 					q(46316, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Kanrethad Ebonlocke (If completed Green Fire)
 						["description"] = "This quest is only available if you completed the Green Fire Questline.",
@@ -799,15 +791,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
 						["coord"] = { 55.8, 34.4, DREADSCAR_RIFT },
-						["groups"] = {
-							follower(997),	-- Kanrethad Ebonlocke
-						},
+						["groups"] = { follower(997) },	-- Kanrethad Ebonlocke
 					})),
 					q(46237, {	-- Bloodbringer's Missive
 						["sourceQuests"] = {
 							46047,	-- Champion: Kanrethad Ebonlocke
 							46316,	-- Champion: Kanrethad Ebonlocke
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 117622 },	-- Elithys Firestorm
 						["coord"] = { 43.9, 63.2, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
@@ -859,17 +850,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 46241 },	-- The Minions of Hel'nurath
 						["timeline"] = { ADDED_7_2_0 },
 						["maps"] = { BROKEN_SHORE },
-						["groups"] = {
-							i(144445),	-- Xorothian Calling Stone (QI!)
-						},
+						["groups"] = { i(144445) },	-- Xorothian Calling Stone (QI!)
 					}),
 					q(46243, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wrathsteed of Xoroth
 						["sourceQuests"] = { 46242 },	-- The Dreadlord's Calling
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.6, 38.4, DREADSCAR_RIFT },
-						["groups"] = {
-							mount(232412),	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
-						},
+						["groups"] = { mount(232412) },	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
 					})),
 					-- Misc
 					q(43887, {	-- Hitting the Books
@@ -976,7 +963,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = {
 							i(143637, {	-- Netherlord's Brimstone Wrathsteed (MOUNT!)
 								["sourceQuests"] = { 46243 },	-- The Wrathsteed of Xoroth
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 						},
@@ -990,28 +977,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(248943, {	-- Black Harvest Banner (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(249004, {	-- Black Harvest Orrery (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(139769, {	-- Cinch of the Black Harvest
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(248941, {	-- Dreadscar Battle Planning Map (DECOR!)
-								["sourceAchievement"] = 60991,	-- Raise an Army for the Dreadscar Rift
+							i(264242, {	-- Dreadscar Battle Planning Map (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(248959, {	-- Dreadscar Bookcase (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(248960, {	-- Dreadscar Dais (DECOR!)
-								["sourceAchievement"] = 42281,	-- The Netherlord's Campaign
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},	-- 1,500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(139764, {	-- Gloves of the Black Harvest
 								["cost"] = 5000000,	-- 500g
@@ -1024,27 +1009,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140945, {	-- Netherlord's Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(140983, {	-- Netherlord's Greater Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 4000 }},	-- 4,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 4000 } },
 							}),
 							i(140982, {	-- Netherlord's Lesser Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(140553),	-- Netherlord's Staff of Summoning
 							i(139763, {	-- Path of the Black Harvest
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(248940, {	-- Replica Felblood Altar (DECOR!)
-								["sourceAchievement"] = 42297,	-- Hidden Potential of the Netherlord
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},	-- 5,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(256907, {	-- Replica Tome of Blighted Implements (DECOR!)
-								["sourceAchievement"] = 60972,	-- Legendary Research of the Black Harvest
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},	-- 3,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
 							i(139767, {	-- Robes of the Black Harvest
 								["cost"] = 5000000,	-- 500g
@@ -1067,10 +1050,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 	n(CLASS_HALL, {
 		cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
 			q(41154),	-- Attacking Revil Kost During Artifact Quest
-			q(42167),	-- Blood Gather Bit -- choose to use dark magic on NPC during q(42128)
-			q(42205),	-- Entrance Bit -  using Portal to Scenario during "Dark Whispers" (questID 42125)
+			q(42167),	-- Blood Gather Bit	-- choose to use dark magic on NPC during q(42128)
+			q(42205),	-- Entrance Bit - using Portal to Scenario during "Dark Whispers" (questID 42125)
 			q(40514),	-- Revil convinced
-			q(42203),	-- Ritual Bit -  using Portal to Scenario during "Dark Whispers" (questID 42125)
+			q(42203),	-- Ritual Bit - using Portal to Scenario during "Dark Whispers" (questID 42125)
 			q(42084),	-- Selecting a Sixth: Kira
 			q(42085),	-- Selecting a Sixth: Lulubelle
 			q(44655),	-- Tracking Quest: 7.0 Class Hall - Warlock - Pacing Mission 1 - completed the "Searching the Archives" mission

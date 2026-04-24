@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		petbattle(filter(BATTLE_PETS, {
@@ -20,7 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["coord"] = { 10.8, 48.0, THE_AZURE_SPAN },
 				}),
-				pet(3351,	{ -- Grizzlefur Cub (PET!)
+				pet(3351,	{	-- Grizzlefur Cub (PET!)
 					["coords"] = {
 						{ 48.4, 56.0, THALDRASZUS },
 						{ 68.6, 52.0, THALDRASZUS },

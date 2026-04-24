@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Sort By Progress",
 		de = "Nach Fortschritt sortieren",
-		es = "Ordenar por pogreso",
-		mx = "Ordenar por pogreso",
+		es = "Ordenar por progreso",
+		mx = "Ordenar por progreso",
 		fr = "Trier par progression",
 		-- TODO: it = "",
 		-- TODO: pt = "",

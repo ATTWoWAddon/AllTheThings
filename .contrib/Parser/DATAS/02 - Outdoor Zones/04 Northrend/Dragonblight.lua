@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.TheKaluak = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -27,6 +28,7 @@ ExportDB.OnTooltipDB.TheKaluak = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", preparingRep + puppyRep + heartRep, 42000);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(DRAGONBLIGHT, {
@@ -46,7 +48,7 @@ root(ROOTS.Zones, {
 							12123,	-- Informing the Queen
 							13343,	-- Mystery of the Infinite, Redux
 							12459,	-- That Which Creates Can Also Destroy
-							-- TODO:: confirm below
+							-- TODO:  confirm below
 							12266,	-- Tales of Destruction
 							12419,	-- The Fate of the Ruby Dragonshrine
 							12456,	-- The Plume of Alystros
@@ -72,7 +74,7 @@ root(ROOTS.Zones, {
 							12124,	-- Informing the Queen
 							13343,	-- Mystery of the Infinite, Redux
 							12459,	-- That Which Creates Can Also Destroy
-							-- TODO:: confirm below
+							-- TODO:  confirm below
 							12266,	-- Tales of Destruction
 							12419,	-- The Fate of the Ruby Dragonshrine
 							12456,	-- The Plume of Alystros
@@ -232,20 +234,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
-				header(HEADERS.Spell, 921, {	-- Pickpocketing
-					["classes"] = { ROGUE },
-					["groups"] = {
-						i(38268, {	-- Spare Hand
-							["coords"] = {
-								{ 81.0, 42.8, DRAGONBLIGHT },
-								{ 82.6, 68.6, DRAGONBLIGHT },
-							},
-							["crs"] = {
-								27224,	-- Forgotten Knight
-								27401,	-- Risen Wintergarde Miner
-							},
-						}),
-					},
+				pickpocketing({
+					i(38268, {	-- Spare Hand
+						["coords"] = {
+							{ 81.0, 42.8, DRAGONBLIGHT },
+							{ 82.6, 68.6, DRAGONBLIGHT },
+						},
+						["crs"] = {
+							27224,	-- Forgotten Knight
+							27401,	-- Risen Wintergarde Miner
+						},
+					}),
 				}),
 				n(QUESTS, {
 					q(12439, {	-- A Disturbance In The West
@@ -275,7 +274,7 @@ root(ROOTS.Zones, {
 					q(13266, {	-- A Life Without Regret
 						["sourceQuest"] = 13257,	-- Herald of War
 						["qg"] = 31412,	-- Thrall
-						["coord"] = { 32, 37.8, ORGRIMMAR },
+						["coord"] = { 32.0, 37.8, ORGRIMMAR },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 					}),
@@ -634,7 +633,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12032, {	-- Conversing With the Depths
 						["sourceQuest"] = 12031,	-- Freedom for the Lingering
-						["provider"] = { "o", 188419 },	--	Elder Mana'loa
+						["provider"] = { "o", 188419 },	-- Elder Mana'loa
 						["coord"] = { 36.6, 65.1, DRAGONBLIGHT },
 						["modelScale"] = 9.8,
 						["groups"] = {
@@ -809,7 +808,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12031, {	-- Freedom for the Lingering
 						["sourceQuest"] = 12030,	-- Elder Mana'loa
-						["provider"] = { "o", 188419 },	--	Elder Mana'loa
+						["provider"] = { "o", 188419 },	-- Elder Mana'loa
 						["coord"] = { 36.6, 65.1, DRAGONBLIGHT },
 						["modelScale"] = 9.8,
 					}),
@@ -1097,6 +1096,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 81.5, 42.2, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							o(189288, {	-- Wintergarde Mine Bomb
+								["coord"] = { 80.7, 41.5, DRAGONBLIGHT },
+								["groups"] = { i(37465) },	-- Wintergarde Mine Bomb (QI!)
+							}),
+							--
 							i(38002),	-- Honorborn Cloak
 							i(37960),	-- Oath Signet
 							i(38106),	-- Petrified Bone Footguards
@@ -1279,7 +1283,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12234, {	-- Need to Know
-						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths	-- TODO:: verify this
+						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths	-- TODO:  verify this
 						["qg"] = 27337,	-- Spy Mistress Repine
 						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
@@ -1706,12 +1710,22 @@ root(ROOTS.Zones, {
 						["qg"] = 27506,	-- Ceristrasz
 						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(189992, {	-- Ruby Acorn
+								["groups"] = { i(37727) },	-- Ruby Acorn (QI!)
+							}),
+						},
 					}),
 					q(12449, {	-- Return to the Earth (H)
 						["sourceQuest"] = 12448,	-- Heated Battle
 						["qg"] = 27763,	-- Vargastrasz
 						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							o(189992, {	-- Ruby Acorn
+								["groups"] = { i(37727) },	-- Ruby Acorn (QI!)
+							}),
+						},
 					}),
 					q(12251, {	-- Return to the High Commander
 						["sourceQuest"] = 12237,	-- Flight of the Wintergarde Defender
@@ -1815,7 +1829,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12312, {	-- Secrets of the Scourge
 						["sourceQuest"] = 12309,	-- Find Durkon!
-						["provider"] = { "o", 189311 },	--	Flesh-bound Tome
+						["provider"] = { "o", 189311 },	-- Flesh-bound Tome
 						["coord"] = { 78.6, 52.2, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -2087,7 +2101,7 @@ root(ROOTS.Zones, {
 					q(13377, {	-- The Battle for the Undercity (A)
 						["sourceQuest"] = 13371,	-- The Killing Time
 						["qg"] = 32376,	-- Broll Bearmantle
-						["coord"] = { 50, 68.4, TIRISFAL_GLADES },
+						["coord"] = { 50.0, 68.4, TIRISFAL_GLADES },
 						["timeline"] = { REMOVED_4_0_3 },
 						["maps"] = { STORMWIND_CITY, UNDERCITY },
 						["races"] = ALLIANCE_ONLY,
@@ -2259,7 +2273,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12419, {	-- The Fate of the Ruby Dragonshrine
-						["provider"] = { "i", 37833 },	--	Ruby Brooch
+						["provider"] = { "i", 37833 },	-- Ruby Brooch
 						["coord"] = { 47.7, 49.2, DRAGONBLIGHT },
 						["crs"] = { 27680 },	-- Dahlia Suntouch
 					}),
@@ -2959,8 +2973,8 @@ root(ROOTS.Zones, {
 				}),
 				n(SPECIAL, {
 					applyclassicphase(WRATH_PHASE_TWO, o(194238, {	-- Blade of Drak'Mar
-						["coord"] = { 93, 26, DRAGONBLIGHT },
-						["cost"] = {{ "i", 45000, 4 }},	-- Winter Hyacinth
+						["coord"] = { 93.0, 26.0, DRAGONBLIGHT },
+						["cost"] = { { "i", 45000, 4 } },	-- Winter Hyacinth
 						["cr"] = 33273,	-- Maiden of Drak'Mar
 						["groups"] = { i(44978) },	-- Blade of Drak'Mar
 					})),

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 SIEGE_ON_DRAGONBANE_KEEP = createHeader({
 	readable = "Siege on Dragonbane Keep",
 	icon = 1394891,
@@ -8,6 +9,7 @@ SIEGE_ON_DRAGONBANE_KEEP = createHeader({
 		en = WOWAPI_GetSpellName(388945),
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_VALDRAKKEN_ACCORD, {
 		n(SIEGE_ON_DRAGONBANE_KEEP, bubbleDownSelf({ ["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 5 } }, {

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 		-- Not really any reason to do this. Evokers/Dracthyr will never see this Zone unless enabling Account Mode
 		-- ["classes"] = exclude({ DEMONHUNTER, DEATHKNIGHT, EVOKER }, ALL_CLASSES),
@@ -33,8 +34,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 		m(DARKMAUL_CITADEL, {
 			["icon"] = 3759927,
 			["maps"] = {
-				1610,	-- Darkmaul Citadel upper floor
-				1611,	-- uh another part of Darkmaul Citadel i guess (a user on Discord reported it, it just shows up in the screenshot as Dark Citadel)
+				1610,	-- Darkmaul Citadel, Terrace of Reanimation
+				1611,	-- Darkmaul Citadel, Bonebreaker Hall
 			},
 			["groups"] = {
 				n(157300, {	-- Tunk
@@ -50,7 +51,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					i(178162),	-- Tunk's Whomper
 					i(178176),	-- Tunk's Trunk
 				}),
-				n(156501, {	-- Ravnyr
+				n(156501, {	-- Ravnyr / Kalecgos (Post 11.2.7)
+					-- Exo Note: No item drops from this encounter Post 11.2.7
 					["crs"] = { 156814 },	-- Gor'groth
 					["groups"] = {
 						i(178168),	-- Darkmaul Ritual Stone
@@ -91,9 +93,23 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 52.4, 55.2, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						o_repeated({	-- Old Spring
+							["coord"] = { 51.8, 51.7, EXILES_REACH },
+							["groups"] = {
+								i(175980),	-- Old Spring (QI!)
+								o(346277),	-- Old Spring
+								o(350814),	-- Old Spring
+							},
+						}),
+						o_repeated({	-- Rusted Chains
+							["coord"] = { 52.2, 53.1, EXILES_REACH },
+							["groups"] = {
+								i(175981),	-- Rusted Chain (QI!)
+								o(346278),	-- Rusted Chains
+								o(350813),	-- Rusted Chains
+							},
+						}),
 						i(175979),	-- Ice Mote (QI!)
-						i(175981),	-- Rusted Chain (QI!)
-						i(175980),	-- Old Spring (QI!)
 					},
 				}),
 				q(59356, {	-- Hunting the Stalker [A]
@@ -120,9 +136,23 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 52.4, 55.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						o_repeated({	-- Old Spring
+							["coord"] = { 51.8, 51.7, EXILES_REACH },
+							["groups"] = {
+								i(175980),	-- Old Spring (QI!)
+								o(346277),	-- Old Spring
+								o(350814),	-- Old Spring
+							},
+						}),
+						o_repeated({	-- Rusted Chain
+							["coord"] = { 52.2, 53.1, EXILES_REACH },
+							["groups"] = {
+								i(175981),	-- Rusted Chain (QI!)
+								o(346278),	-- Rusted Chains
+								o(350813),	-- Rusted Chains
+							},
+						}),
 						i(175979),	-- Ice Mote (QI!)
-						i(175981),	-- Rusted Chain (QI!)
-						i(175980),	-- Old Spring (QI!)
 					},
 				}),
 				q(59953, {	-- Hunting the Stalker [H]
@@ -273,7 +303,14 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(174916),	-- Withering Hemlock (QI!)
+						o_repeated({	-- Withering Hemlock
+							["coord"] = { 45.1, 54.8, EXILES_REACH },
+							["groups"] = {
+								i(174916),	-- Withering Hemlock (QI!)
+								o(341951),	-- Withering Hemlock
+								o(351426),	-- Withering Hemlock
+							},
+						}),
 					},
 				}),
 				q(58933, {	-- The Deadliest of Poisons [A]
@@ -288,7 +325,14 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(174916),	-- Withering Hemlock (QI!)
+						o_repeated({	-- Withering Hemlock
+							["coord"] = { 45.1, 54.8, EXILES_REACH },
+							["groups"] = {
+								i(174916),	-- Withering Hemlock (QI!)
+								o(341951),	-- Withering Hemlock
+								o(351426),	-- Withering Hemlock
+							},
+						}),
 					},
 				}),
 				q(59968, {	-- The Deadliest of Poisons [H]
@@ -304,7 +348,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 163329 },	-- Ghostwolf
 					["coord"] = { 52.3, 55.6, EXILES_REACH },
 					["groups"] = {
-						i(174968),	-- Veil Blossom (QI!)
+						o(342366, {	-- Veil Blossom
+							i(174968),	-- Veil Blossom (QI!)
+						}),
 					},
 				}),
 			})),
@@ -355,11 +401,11 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				}),
 			})),
 			q(56775, {	-- Warming Up [A]
-				["provider"] = { "n", 156280 },	-- Captain Garrick
+				["provider"] = { "n", 156280 },	-- Captain Garrick / Lady Jaina Proudmoore (Post 11.2.7)
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(59926, {	-- Warming Up [H]
-				["provider"] = { "n", 166573 },	-- Warlord Breka Grimaxe
+				["provider"] = { "n", 166573 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["races"] = HORDE_ONLY,
 			}),
 			q(58209, {	-- Stand Your Ground [A]
@@ -384,7 +430,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(55122, {	-- Murloc Mania [A]
 				["sourceQuests"] = { 58208 },	-- Brace for Impact [A]
-				["provider"] = { "n", 156626 },	-- Captain Garrick
+				["provider"] = { "n", 156626 },	-- Captain Garrick / Lady Jaina Proudmoore (Post 11.2.7)
 				["coord"] = { 61.8, 82.8, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -393,7 +439,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59929, {	-- Murloc Mania [H]
 				["sourceQuests"] = { 59928 },	-- Brace for Impact [H]
-				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
+				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 61.8, 82.8, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -402,31 +448,35 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(54951, {	-- Emergency First Aid [A]
 				["sourceQuests"] = { 55122 },	-- Murloc Mania [A]
-				["provider"] = { "n", 156626 },	-- Captain Garrick
+				["provider"] = { "n", 156626 },	-- Captain Garrick / Lady Jaina Proudmoore (Post 11.2.7)
 				["coord"] = { 61.8, 82.8, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					i(168410),	-- First Aid Kit (PQI!)
+					--
 					i(174780),	-- Emptied First Aid Kit
 				},
 			}),
 			q(59930, {	-- Emergency First Aid [H]
 				["sourceQuests"] = { 59929 },	-- Murloc Mania [H]
-				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
+				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 61.8, 82.8, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
+					i(168410),	-- First Aid Kit (PQI!)
+					--
 					i(174780),	-- Emptied First Aid Kit
 				},
 			}),
 			q(54952, {	-- Finding the Lost Expedition [A]
 				["sourceQuests"] = { 54951 },	-- Emergency First Aid [A]
-				["provider"] = { "n", 156626 },	-- Captain Garrick
+				["provider"] = { "n", 156626 },	-- Captain Garrick / Lady Jaina Proudmoore (Post 11.2.7)
 				["coord"] = { 61.8, 82.8, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(59931, {	-- Finding the Lost Expedition [H]
 				["sourceQuests"] = { 59930 },	-- Emergency First Aid [H]
-				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
+				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 61.8, 82.8, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 			}),
@@ -436,11 +486,11 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["coord"] = { 58.3, 74.6, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					i(174072),	-- Raw Meat (QI!)
 					o(349962, {	-- Campfire
 						["coord"] = { 58.5, 74.5, EXILES_REACH },
 						["groups"] = { i(174074) },	-- Cooked Meat (QI!)
 					}),
-					i(174072),	-- Raw Meat (QI!)
 				},
 			}),
 			q(59932, {	-- Cooking Meat [H]
@@ -449,24 +499,24 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["coord"] = { 58.3, 74.6, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					o(339769, {
+					i(174072),	-- Raw Meat (QI!)
+					o(339769, {	-- Campfire
 						["coord"] = { 58.5, 74.5, EXILES_REACH },
 						["groups"] = { i(174074) },	-- Cooked Meat (QI!)
 					}),
-					i(174072),	-- Raw Meat (QI!)
 				},
 			}),
 			q(59254, {	-- Enhanced Combat Tactics [A]
 				["sourceQuests"] = { 55174 },	-- Cooking Meat [A]
 				["provider"] = { "n", 156651 },	-- Captain Garrick
-				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["coord"] = { 58.4, 74.6, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
 			}),
 			q(59933, {	-- Enhanced Combat Tactics [H]
 				["sourceQuests"] = { 59932 },	-- Cooking Meat [H]
 				["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
-				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["coord"] = { 58.4, 74.6, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
 			}),
@@ -478,7 +528,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 175031 },	-- Alaria
-				["coord"] = { 58.3, 74.4, EXILES_REACH },
+				["coord"] = { 58.3, 74.5, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(167206),	-- Fire Essence (QI!)
@@ -495,7 +545,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					166854,	-- Won'sa
 					175030,	-- Won'sa (Note: this creatureID here at least from 11.0.5)
 				},
-				["coord"] = { 58.3, 74.4, EXILES_REACH },
+				["coord"] = { 58.3, 74.5, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(167206),	-- Fire Essence (QI!)
@@ -508,7 +558,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 154327 },	-- Austin Huxworth
-				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["coord"] = { 62.7, 69.9, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(59938, {	-- Down with the Quilboar [H]
@@ -518,10 +568,10 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
-				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["coord"] = { 62.7, 69.9, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 			}),
-			q(55184, {	-- Forbidden Quilboar Necromancy [A]
+			q(55184, {	-- Forbidden Quilboar Necromancy [A] / Forbidden Quilboar Shadow Magic [A] (Post 11.2.7)
 				["sourceQuests"] = {
 					55173,	-- Northbound [A]
 					59342,	-- Taming the Wilds [A] [Hunter]
@@ -541,7 +591,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					i(175180, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Plate Warboots
 				},
 			}),
-			q(59939, {	-- Forbidden Quilboar Necromancy [H]
+			q(59939, {	-- Forbidden Quilboar Necromancy [H] / Forbidden Quilboar Shadow Magic [H] (Post 11.2.7)
 				["sourceQuests"] = {
 					59935,	-- Northbound [H]
 					59937,	-- Taming the Wilds [H] [Hunter]
@@ -570,7 +620,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["coord"] = { 56.1, 59.1, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(59940, {	-- The Choppy Booster Mk 5
+			q(59940, {	-- The Choppy Booster Mk. 5
 				["sourceQuests"] = {
 					59938,	-- Down with the Quilboar [H]
 					59939,	-- Forbidden Quilboar Necromancy [H]
@@ -599,7 +649,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(55879, {	-- Ride of the Scientifically Enhanced Boar
 				["sourceQuests"] = { 56034 },	-- Re-sizing the Situation [A]
-				["provider"] = { "n", 156280 },	-- Captain Garrick
+				["provider"] = { "n", 156280 },	-- Captain Garrick / Lady Jaina Proudmoore (Post 11.2.7)
 				["coord"] = { 56.2, 59.0, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -629,7 +679,13 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(55194, {	-- Stocking Up on Supplies [A]
 				["sourceQuests"] = { 55879 },	-- Ride of the Scientifically Enhanced Boar
-				["provider"] = { "n", 156807 },	-- Captain Garrick
+				["qgs"] = {
+					-- #if AFTER 11.2.7
+					245394,	-- Captain Garrick
+					-- #else
+					156807,	-- Captain Garrick
+					-- #endif
+				},
 				["coord"] = { 52.3, 55.3, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -638,7 +694,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59950, {	-- Stocking Up on Supplies [H]
 				["sourceQuests"] = { 59942 },	-- The Re-Deather
-				["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
+				["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 52.1, 55.3, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -676,6 +732,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(168445),	-- Wand of Delugion (QI!)
+					--
 					i(175200),	-- Expeditionary Cloth Cord
 					i(175202),	-- Expeditionary Leather Belt
 					i(175201),	-- Expeditionary Mail Waistguard
@@ -689,6 +746,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(168445),	-- Wand of Delugion (QI!)
+					--
 					i(175238),	-- Expeditionary Cloth Cord
 					i(175233),	-- Expeditionary Leather Belt
 					i(175232),	-- Expeditionary Mail Waistguard
@@ -700,18 +758,12 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["provider"] = { "n", 156859 },	-- Henry Garrick
 				["coord"] = { 56.8, 46.1, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(168410),	-- First Aid Kit (QI!)
-				},
 			}),
 			q(59944, {	-- The Rescue of Herbert Gloomburst
 				["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
 				["provider"] = { "n", 167290 },	-- Shuja Grimaxe
 				["coord"] = { 56.8, 46.1, EXILES_REACH },
 				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(168410),	-- First Aid Kit (QI!)
-				},
 			}),
 			q(55882, {	-- Message to Base [A]
 				["sourceQuests"] = {
@@ -782,12 +834,19 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				},
 			}),
 			q(85678, {	-- Repair Yourself [A]
-				["qg"] = 156807,	-- Captain Garrick
+				["qgs"] = {
+					-- #if AFTER 11.2.7
+					245394,	-- Captain Garrick
+					-- #else
+					156807,	-- Captain Garrick
+					-- #endif
+				},
 				["coord"] = { 52.2, 55.2, EXILES_REACH },
 				["timeline"] = { ADDED_11_1_7 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(85679, {	-- Repair Yourself [H]
+				["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 52.4, 55.6, EXILES_REACH },
 				["timeline"] = { ADDED_11_1_7 },
 				["races"] = HORDE_ONLY,
@@ -804,7 +863,13 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					85678,	-- Repair Yourself
 					-- #endif
 				},
-				["provider"] = { "n", 156807 },	-- Captain Garrick
+				["qgs"] = {
+					-- #if AFTER 11.2.7
+					245394,	-- Captain Garrick
+					-- #else
+					156807,	-- Captain Garrick
+					-- #endif
+				},
 				["coord"] = { 52.1, 55.3, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -820,37 +885,56 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					85679,	-- Repair Yourself
 					-- #endif
 				},
-				["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
+				["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 52.1, 55.3, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 			}),
 			q(55981, {	-- Right Beneath Their Eyes [A]
 				["sourceQuests"] = { 56344 },	-- To Darkmaul Citadel [A]
-				["provider"] = { "n", 156941 },	-- Captain Garrick
+				["qgs"] = {
+					-- #if AFTER 11.2.7
+					245397,	-- Lady Jaina Proudmoore
+					-- #else
+					156941,	-- Captain Garrick
+					-- #endif
+				},
 				["coord"] = { 48.9, 49.2, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(59978, {	-- Right Beneath Their Eyes [H]
 				["sourceQuests"] = { 59975 },	-- To Darkmaul Citadel [H]
-				["provider"] = { "n", 167596 },	-- Warlord Breka Grimaxe
+				["provider"] = { "n", 167596 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 48.9, 49.3, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 			}),
 			q(55989, {	-- Catapult Destruction [A]
 				["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
+				["qgs"] = {
+					-- #if AFTER 11.2.7
+					245667,	-- Captain Garrick
+					-- #else
+					156960,	-- Meredy Huntswell
+					-- #endif
+				},
 				["provider"] = { "n", 156960 },	-- Meredy Huntswell
 				["coord"] = { 40.2, 32.3, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(59980, {	-- Catapult Destruction [H]
 				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
-				["provider"] = { "n", 167631 },	-- Herbert Gloomburst
+				["qgs"] = {
+					-- #if AFTER 11.2.7
+					167630,	-- Shuja Grimaxe
+					-- #else
+					167631,	-- Herbert Gloomburst
+					-- #endif
+				},
 				["coord"] = { 40.3, 32.4, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 			}),
 			q(55990, {	-- Controlling their Stones [A]
 				["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
-				["provider"] = { "n", 156961 },	-- Captain Garrick
+				["provider"] = { "n", 156961 },	-- Captain Garrick / Lady Jaina Proudmoore (Post 11.2.7)
 				["coord"] = { 40.1, 32.3, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -861,7 +945,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59981, {	-- Controlling Their Stones [H]
 				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
-				["provider"] = { "n", 167633 },	-- Warlord Breka Grimaxe
+				["provider"] = { "n", 167633 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 40.2, 32.4, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -884,7 +968,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59979, {	-- Like Ogres to the Slaughter [H]
 				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
-				["provider"] = { "n", 167632 },	-- Shuja Grimaxe
+				["provider"] = { "n", 167632 },	-- Shuja Grimaxe / Breka Grimaxe (Post 11.2.7)
 				["coord"] = { 40.2, 32.5, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -930,7 +1014,13 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(55991, {	-- An End to Beginnings [A]
 				["sourceQuests"] = { 55992 },	-- Dungeon: Darkmaul Citadel [A]
-				["provider"] = { "n", 156961 },	-- Captain Garrick
+				["qgs"] = {
+					-- #if AFTER 11.2.7
+					245686,	-- Lady Jaina Proudmoore
+					-- #else
+					156961,	-- Captain Garrick
+					-- #endif
+				},
 				["coord"] = { 39.6, 31.9, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["_drop"] = { "g" },
@@ -943,7 +1033,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59985, {	-- An End to Beginnings [H]
 				["sourceQuests"] = { 59984 },	-- Dungeon: Darkmaul Citadel [H]
-				["provider"] = { "n", 167675 },	-- Warlord Breka Grimaxe
+				["provider"] = { "n", 167675 },	-- Warlord Breka Grimaxe / Thrall (Post 11.2.7)
 				["coord"] = { 39.6, 31.9, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["_drop"] = { "g" },
@@ -955,8 +1045,58 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				},
 			}),
 
+				-- Dragon Isles, Alliance --
+			q(87547, {	-- What's Your Specialty?
+				["sourceQuests"] = { 55991 },	-- An End to Beginnings [A]
+				["provider"] = { "n", 238913 },	-- Kalecgos
+				["coord"] = { 82.0, 31.5, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = { i(246462) },	-- Draconic Polearm
+			}),
+			q(87555, {	-- Home Is Where the Hearth Is
+				["sourceQuests"] = { 87547 },	-- What's Your Specialty?
+				["provider"] = { "n", 238913 },	-- Kalecgos
+				["coord"] = { 82.0, 31.5, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(87562, {	-- Aiding the Dragon Isles
+				["sourceQuests"] = { 87555 },	-- Home Is Where the Hearth Is
+				["provider"] = { "n", 238913 },	-- Kalecgos
+				["coord"] = { 82.0, 31.5, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+
+				-- Dragon Isles, Horde --
+			q(90840, {	-- What's Your Specialty?
+				["sourceQuests"] = { 59985 },	-- An End to Beginnings [H]
+				["provider"] = { "n", 244496 },	-- Kalecgos
+				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
+				["races"] = HORDE_ONLY,
+				["groups"] = { i(246462) },	-- Draconic Polearm
+			}),
+			q(90842, {	-- Home Is Where the Hearth Is
+				["sourceQuests"] = { 90840 },	-- What's Your Specialty?
+				["provider"] = { "n", 244496 },	-- Kalecgos
+				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(90843, {	-- Aiding the Dragon Isles
+				["sourceQuests"] = { 90842 },	-- Home Is Where the Hearth Is
+				["provider"] = { "n", 244496 },	-- Kalecgos
+				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_11_2_7 },
+				["races"] = HORDE_ONLY,
+			}),
+
 				-- Stormwind --
 			q(59583, {	-- Welcome to Stormwind
+			-- Exo Note: This one may have been moved to regular questing seeing as the Decor reward is attached to it in 11.2.7
+			-- Not part of NPE post 11.2.7
 				["sourceQuests"] = { 55991 },	-- An End to Beginnings [A]
 				["provider"] = { "n", 154169 },	-- Captain Garrick
 				["coord"] = { 73.6, 91.3, STORMWIND_CITY },
@@ -971,6 +1111,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 59583 },	-- Welcome to Stormwind
 				["provider"] = { "n", 163095 },	-- Lindie Springstock
 				["coord"] = { 70.1, 85.3, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(58909, {	-- License to Ride [A]
@@ -984,6 +1125,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { DRUID },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -991,6 +1133,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { HUNTER },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -998,6 +1141,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { MAGE },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1005,6 +1149,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { MONK },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1012,6 +1157,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1019,6 +1165,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { PRIEST },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1026,6 +1173,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { ROGUE },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1033,6 +1181,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { SHAMAN },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1040,6 +1189,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { WARLOCK },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1047,6 +1197,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { WARRIOR },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1066,6 +1217,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 163097 },	-- Lindle Springstock
 				["coord"] = { 79.0, 69.8, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(58912, {	-- An Urgent Meeting [A]
@@ -1097,6 +1249,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 
 				-- Orgrimmar --
 			q(60343, {	-- Welcome to Orgrimmar
+			-- Exo Note: This one may have been moved to regular questing
+			-- Not part of NPE post 11.2.7
 				["sourceQuests"] = { 59985 },	-- An End to Beginnings [H]
 				["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
 				["coord"] = { 52.5, 88.0, ORGRIMMAR },
@@ -1106,6 +1260,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60343 },	-- Welcome to Orgrimmar
 				["provider"] = { "n", 168441 },	-- Cork Fizzlepop
 				["coord"] = { 51.9, 85.4, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(60345, {	-- License to Ride
@@ -1119,6 +1274,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { DRUID },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1126,6 +1282,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { HUNTER },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1133,6 +1290,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { MAGE },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1140,6 +1298,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { MONK },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1147,6 +1306,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { PALADIN },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1154,6 +1314,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { PRIEST },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1161,6 +1322,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { ROGUE },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1168,6 +1330,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { SHAMAN },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1175,6 +1338,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { WARLOCK },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1182,6 +1346,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["classes"] = { WARRIOR },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1201,6 +1366,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 				["coord"] = { 73.6, 43.4, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
 				["races"] = HORDE_ONLY,
 			}),
 			----- The original ending of the questline where new players got funneled into BfA -----

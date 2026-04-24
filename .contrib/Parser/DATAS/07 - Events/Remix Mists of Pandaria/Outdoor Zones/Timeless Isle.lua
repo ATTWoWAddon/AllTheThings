@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(TIMELESS_ISLE, {
 		["icon"] = 294481,
@@ -157,7 +158,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214005),	-- Mantle of the Dynast
 					i(214004),	-- Sash of the Dynastr
 					i(214009),	-- Slippers of the Dynast
-					-- i(220980),	-- Vest of the Dynast (does this drop? Gold 27.05.2024). Remove -- if it can drop
+					-- i(220980),	-- Vest of the Dynast (does this drop? Gold 27.05.2024). Remove	-- if it can drop
 					i(214010),	-- Vestment of the Dynast
 					i(214003),	-- Wristwraps of the Dynast
 				}),

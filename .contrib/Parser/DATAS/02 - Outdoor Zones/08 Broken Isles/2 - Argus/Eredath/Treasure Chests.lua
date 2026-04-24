@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
@@ -284,8 +285,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(277637, {	-- Void-Seeped Cache
-						--["isDaily"] = true, ?
-						--["questID"] = ?,
+						-- ["isDaily"] = true, ?
+						-- ["questID"] = ?,
 						["coords"] = {
 							{ 31.4, 25.4, EREDATH },
 							{ 31.4, 25.7, EREDATH },

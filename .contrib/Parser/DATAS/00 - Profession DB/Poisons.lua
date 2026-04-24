@@ -39,7 +39,7 @@ i(21302, 25347);	-- Deadly Poison V [TRAINER: 2.0.5]
 -- #else
 i(21302, 0);		-- Deadly Poison V
 -- #endif
---- Quest ---
+--- QUEST ---
 i(0, 2842);			-- Poisons
 i(0, 8681);			-- Instant Poison
 --- NYI ---

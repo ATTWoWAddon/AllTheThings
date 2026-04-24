@@ -41,6 +41,18 @@ APPRENTICE_JOURNEYMAN_ALCHEMY = {
 		r(7841),	-- Swim Speed Potion
 		r(3170),	-- Weak Troll's Blood Elixir / Weak Troll's Blood Potion
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1269228),	-- Black Dye Pigment
+		r(1269226),	-- Blue Dye Pigment
+		r(1269235),	-- Brown Dye Pigment
+		r(1269230),	-- Green Dye Pigment
+		r(1269233),	-- Orange Dye Pigment
+		r(1269231),	-- Purple Dye Pigment
+		r(1269229),	-- Red Dye Pigment
+		r(1269232),	-- Teal Dye Pigment
+		r(1269227),	-- White Dye Pigment
+		r(1269234),	-- Yellow Dye Pigment
+	})),
 	filter(REAGENTS, {
 		r(7836),	-- Blackmouth Oil
 		r(7837),	-- Fire Oil
@@ -143,6 +155,13 @@ TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 			r(33733),	-- Unstable Mana Potion
 			r(33732),	-- Volatile Healing Potion
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			r(1273064, {["timeline"] = { ADDED_12_0_0 }}),	-- Arakkoan Alchemist's Bottle
+			r(1273070, {["timeline"] = { ADDED_12_0_0 }}),	-- Arakkoan Alchemist's Concoction
+			r(1272712),	-- Glazed Sin'dorei Vial
+			r(1272723),	-- Shadow Council Torch
+			r(1272715),	-- Stranglekelp Sack
+		})),
 		filter(TRINKET_F, {
 			r(38070),	-- Mercurial Stone
 		}),
@@ -269,6 +288,13 @@ CATA_ALCHEMY = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(96252, {["timeline"] = {ADDED_4_0_6}}),	-- Volatile Alchemist Stone
 	}),
 }));
+CLASSIC_CATA_ALCHEMY = appendGroups(CLASSIC_ALCHEMY,
+-- #if AFTER CATA
+CATA_ALCHEMY
+-- #else
+{}
+-- #endif
+);
 MOP_ALCHEMY = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(105206, {	-- Alchemy (Zen Master)
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
@@ -544,6 +570,7 @@ DF_ALCHEMY = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 	r(366261),	-- Dragon Isles Alchemy
 	r(370746),	-- Basic Phial Experimentation
 	r(370743),	-- Basic Potion Experimentation
+	r(389190),	-- Recraft Equipment
 	filter(CONSUMABLES, {
 		r(370547),	-- Aerated Mana Potion
 		r(370551),	-- Elemental Potion of Power
@@ -555,18 +582,16 @@ DF_ALCHEMY = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 		r(1261882),	-- Dragon's Elixir Bottle
 		r(1261885),	-- Verdant Valdrakken Vase
 	})),
-	filter(MISC, {
-		r(389190),	-- Recraft Equipment
-		r(370711),	-- Transmute: Awakened Air
-	}),
 	filter(REAGENTS, {
 		r(370722),	-- Omnium Draconis
 		r(370717),	-- Primal Convergent
 		r(370748),	-- Reclaim Concoctions
+		r(370711),	-- Transmute: Awakened Air
 	}),
 }));
 TWW_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423321),	-- Khaz Algar Alchemy
+	r(425137),	-- Recraft Equipment
 	r(427174),	-- Wild Experimentation
 	filter(CONSUMABLES, {
 		r(430590),	-- Algari Healing Potion
@@ -575,12 +600,34 @@ TWW_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(1259673),	-- Boulder Springs Hot Tub
 		r(1261878),	-- Nerubian Alchemist's Retort
 	})),
-	filter(MISC, {
-		r(425137),	-- Recraft Equipment
-	}),
 	filter(REAGENTS, {
 		r(462121),	-- Bubbling Mycobloom Culture
 		r(427214),	-- Neutralize Concoctions
 		r(462122),	-- Petal Powder
+	}),
+});
+MID_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	r(471003),	-- Midnight Alchemy
+	r(1265667),	-- Artisan Alchemist's Moxie
+	r(1265675),	-- Concentration
+	r(1265701),	-- Ingenuity
+	r(1265614),	-- Knowledge
+	r(1265599),	-- Multicraft
+	r(1265651),	-- Quality
+	r(471040),	-- Recraft Equipment
+	r(1233130),	-- Recycle Flasks
+	r(1233129),	-- Recycle Potions
+	r(1265692),	-- Resourcefulness
+	r(1265732),	-- Skill
+	r(1265659),	-- Sparks
+	filter(CONSUMABLES, {
+		r(1230886),	-- Enlightenment Tonic
+		r(1230854),	-- Entropic Extract
+		r(1230866),	-- Midnight Healing Potion
+		r(1230868),	-- Refreshing Serum
+	}),
+	filter(REAGENTS, {
+		r(1230855),	-- Composite Flora
+		r(1230887),	-- Transmute: Mote of Wild Magic
 	}),
 });

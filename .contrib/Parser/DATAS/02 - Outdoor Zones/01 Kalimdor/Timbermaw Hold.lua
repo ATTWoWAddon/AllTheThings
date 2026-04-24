@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 TIMBERMAW_HOLD = createHeader({
 	readable = "Timbermaw Hold",
 	icon = 236696,
@@ -9,8 +10,10 @@ TIMBERMAW_HOLD = createHeader({
 	},
 	lore = {
 		en = "The Timbermaw Furbolgs inhabit two areas: Azshara and Felwood. They are presumed to be the only furbolg tribe to escape demonic corruption, though this may not be true due to the existence of Krolg, an uncorrupted furbolg of unknown tribe, and the Stillpine tribe on Azuremyst Isle in Burning Crusade. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.\n\nAdventurers who seek out Timbermaw Hold in northern Felwood and prove themselves as friends of the Timbermaw will learn that the furbolgs value their friends above all else. Though they possess no fine jewels or any worldly riches, the Timbermaw's shamanistic tradition is still strong. They know much about the art of crafting armors from animal hides, and they are more than happy to share their healing/resurrection knowledge with friends of their tribe. Besides, any reputation above Unfriendly will also grant you untroubled access to Moonglade and Winterspring through their tunnels.",
+		cn = "木喉熊怪居住在两个区域：艾萨拉和费伍德森林。人们认为他们是唯一一支未被恶魔腐化的熊怪部族，不过由于存在克罗格（一只未被腐化、所属部族不明的熊怪）以及《燃烧的远征》中秘蓝岛上的深须部族，这一点或许并不属实。然而，现在许多其他种族不加分辨地就对熊怪痛下杀手，根本不去判断对方是敌是友。正因如此，木喉熊怪极少信任他人。\n\n那些前往费伍德森林北部的木喉要塞，并证明自己是木喉熊怪之友的冒险者会发现，熊怪们将朋友看得比什么都重要。尽管他们没有珍贵的珠宝或任何世俗财富，但木喉熊怪的萨满传统依然深厚。他们精通用兽皮制作护甲的技艺，而且非常乐意与他们部族的朋友分享治疗与复活的知识。此外，只要与他们的声望高于 “冷淡”，你就能畅通无阻地通过他们的隧道进入月光林地和冬泉谷。",
 	},
 });
+
 ExportDB.OnTooltipDB.ForTimbermawHold = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -72,6 +75,7 @@ ExportDB.OnTooltipDB.ForTimbermawHold = [[~function(t, tooltipInfo)
 		-- #endif
 	end
 end]];
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	n(TIMBERMAW_HOLD, {
 		["zone-text-areaID"] = 1769,
@@ -170,7 +174,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.9, 85.0, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
@@ -183,7 +187,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.0, 10.3, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -193,7 +197,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.8, 8.2, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_1_15_3 },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 					["lvl"] = 45,
 				})),
@@ -210,7 +214,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						REMOVED_4_0_3,
 						-- #endif
 					},
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
@@ -233,7 +237,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
-					["cost"] = {{ "i", 14047, 30 }},	-- Runecloth
+					["cost"] = { { "i", 14047, 30 } },	-- Runecloth
 					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
 						i(15822),	-- Shadowskin Spaulders
@@ -250,7 +254,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
-					["cost"] = {{ "i", 14342, 2 }},	-- Mooncloth
+					["cost"] = { { "i", 14342, 2 } },	-- Mooncloth
 					["requireSkill"] = TAILORING,
 					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
@@ -389,7 +393,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11556,	-- Salfa
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {{ "i", 21383, 10 }},	-- Winterfall Spirit Beads
+					["cost"] = { { "i", 21383, 10 } },	-- Winterfall Spirit Beads
 					["groups"] = {
 						i(21318),	-- Earth Warder's Gloves
 						i(21319),	-- Gloves of the Pathfinder
@@ -435,7 +439,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28768, {	-- Winterspring!
 					["description"] = "Only available above level 40.",
-					--["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point //Fire in the Hole! is Horde only so cannot be the correct sourcequest
+					-- ["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point //Fire in the Hole! is Horde only so cannot be the correct sourcequest
 					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.0, 10.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },

@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 FEAST_OF_WINTER_VEIL_HEADER = createHeader({
 	readable = "Feast of Winter Veil",
 	constant = "FEAST_OF_WINTER_VEIL_HEADER",
@@ -15,10 +16,19 @@ FEAST_OF_WINTER_VEIL_HEADER = createHeader({
 	-- #endif
 	text = {
 		en = WOWAPI_GetSpellName(21953),
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "冬幕节",	-- WOWAPI_GetSpellName(21953) == 冬幕大餐
 		tw = "冬幕節",
 	},
 });
+
 local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
 local FROZEN_ARMS_OF_A_HERO = i(128314, {	-- Frozen Arms of a Hero
 	["timeline"] = { ADDED_6_2_0 },
@@ -251,6 +261,7 @@ local STOLEN_PRESENT_GROUPS = {
 		["timeline"] = { ADDED_11_0_7 },
 	}),
 };
+
 root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 	n(ACHIEVEMENTS, {
 		ach(1692, {	-- Merrymaker (A)
@@ -833,6 +844,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["provider"] = { "i", 218310 },	-- Box of Puntables (TOY!)
 			["timeline"] = { ADDED_11_0_7 },
 		}),
+		ach(42192, {	-- Snowball Fight (2025)
+			["provider"] = { "i", 243304 },	-- Jubilant Snowman Costume (TOY!)
+			["timeline"] = { ADDED_11_2_7 },
+		}),
 	}),
 	-- #if AFTER 7.3.0.24727
 	filter(BATTLE_PETS, {
@@ -1128,7 +1143,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "o", 180743 },	-- Carefully Wrapped Present
 				{ "i", 21191 },	-- Carefully Wrapped Present
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
+			["coords"] = {
+				{ 33.5, 66.5, IRONFORGE },
+				{ 49.5, 78.5, ORGRIMMAR },
+			},
 			["isYearly"] = true,
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -1152,20 +1170,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "o", 180793 },	-- Festive Gift
 				{ "i", 21363 },	-- Festive Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
+			["coords"] = {
+				{ 33.6, 66.1, IRONFORGE },
+				{ 49.6, 77.7, ORGRIMMAR },
+			},
 			["isYearly"] = true,
 			["lvl"] = 10,
 			["_drop"] = { "g" },
-			["groups"] = {
-				i(21328),	-- Wand of Holiday Cheer
-			},
+			["groups"] = { i(21328) },	-- Wand of Holiday Cheer
 		}),
 		q(8768, {	-- A Gaily Wrapped Present
 			["providers"] = {
 				{ "o", 180747 },	-- Gaily Wrapped Present
 				{ "i", 21310 },	-- Gaily Wrapped Present
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
+			["coords"] = {
+				{ 33.6, 66.3, IRONFORGE },
+				{ 49.6, 78.2, ORGRIMMAR },
+			},
 			["isYearly"] = true,
 			["lvl"] = 20,
 			["_drop"] = { "g" },
@@ -1413,12 +1435,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		})),
+		q(91041, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, "removed 11.2.7.64978" } }, {	-- A Gently Shaken Gift (2025)
+			["description"] = "Gift from 2025.",
+			["providers"] = {
+				{ "o", 180746 },	-- Gently Shaken Gift
+				{ "i", 244906 },	-- Gently Shaken Gift
+			},
+			["coords"] = {
+				{ 33.4, 65.6, IRONFORGE },
+				{ 49.5, 78.7, ORGRIMMAR },
+			},
+			["_drop"] = { "g" },
+			["groups"] = { i(245580) },	-- Rolling Snowball (TOY!)
+		})),
 		q(8769, {	-- A Ticking Present
 			["providers"] = {
 				{ "o", 180748 },	-- Ticking Present
 				{ "i", 21327 },	-- Ticking Present
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
+			["coords"] = {
+				{ 33.6, 66.5, IRONFORGE },
+				{ 49.5, 78.7, ORGRIMMAR },
+			},
 			["isYearly"] = true,
 			["lvl"] = 40,
 			["_drop"] = { "g" },
@@ -1440,7 +1478,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #if AFTER CATA
 				["coord"] = { 33.2, 67.8, IRONFORGE },
 				-- #else
-				["coord"] = { 33.4, 67, IRONFORGE },
+				["coord"] = { 33.4, 67.0, IRONFORGE },
 				-- #endif
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(30, 30, 10),
@@ -1449,7 +1487,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				["sourceQuest"] = 6983,	-- You're a Mean One... (Horde)
 				["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				-- #if AFTER CATA
-				["coord"] = { 52.4, 77, ORGRIMMAR },
+				["coord"] = { 52.4, 77.0, ORGRIMMAR },
 				-- #else
 				["coord"] = { 53.2, 66.6, ORGRIMMAR },
 				-- #endif
@@ -1775,12 +1813,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(232653),	-- Portentous Present (PET!)
 			},
 		})),
+		q(91042, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, "removed 11.2.7.64978" } }, {	-- A Winter Veil Gift (2025)
+			["description"] = "Gift from 2025.",
+			["providers"] = {
+				{ "o", 187236 },	-- Winter Veil Gift
+				{ "i", 244908 },	-- Winter Veil Gift
+			},
+			["coords"] = {
+				{ 33.5, 66.5, IRONFORGE },
+				{ 49.8, 77.9, ORGRIMMAR },
+			},
+			["lvl"] = 10,
+			["_drop"] = { "g" },
+			["groups"] = {
+				i(243304),	-- Jubilant Snowman Costume (TOY!)
+				i(245544),	-- Tiny Snow Buddy (PET!)
+			},
+		})),
 		q(7022, {	-- Greatfather Winter is Here! (Alliance)
 			["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 			-- #if AFTER CATA
 			["coord"] = { 33.2, 67.8, IRONFORGE },
 			-- #else
-			["coord"] = { 33.4, 67, IRONFORGE },
+			["coord"] = { 33.4, 67.0, IRONFORGE },
 			-- #endif
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1800,10 +1855,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #if AFTER CATA
 				{ 62.8, 70.2, STORMWIND_CITY },
 				-- #else
-				{ 55, 59.2, STORMWIND_CITY },
+				{ 55.0, 59.2, STORMWIND_CITY },
 				-- #endif
 				-- #if AFTER TBC
-				{ 55.6, 49, THE_EXODAR },
+				{ 55.6, 49.0, THE_EXODAR },
 				-- #endif
 				-- #if AFTER WOD
 				{ 41.8, 47.2, LUNARFALL },
@@ -1816,7 +1871,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		q(6961, {	-- Great-father Winter is Here! (Horde)
 			["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 			-- #if AFTER CATA
-			["coord"] = { 52.4, 77, ORGRIMMAR },
+			["coord"] = { 52.4, 77.0, ORGRIMMAR },
 			-- #else
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
@@ -1840,7 +1895,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #if AFTER CATA
 			["coord"] = { 67.8, 38.8, UNDERCITY },
 			-- #else
-			["coord"] = { 68, 39, UNDERCITY },
+			["coord"] = { 68.0, 39.0, UNDERCITY },
 			-- #endif
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1853,7 +1908,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["coords"] = {
 				{ 47.4, 37.6, FROSTWALL },
-				{ 44, 51.6, LUNARFALL },
+				{ 44.0, 51.6, LUNARFALL },
 			},
 			["timeline"] = { ADDED_6_2_2 },
 			["maps"] = { FROSTFIRE_RIDGE },
@@ -1876,7 +1931,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["coords"] = {
 				{ 47.4, 37.6, FROSTWALL },
-				{ 44, 51.6, LUNARFALL },
+				{ 44.0, 51.6, LUNARFALL },
 			},
 			["timeline"] = { ADDED_6_2_2 },
 			["maps"] = { FROSTFIRE_RIDGE },
@@ -1899,7 +1954,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #if AFTER CATA
 			["coord"] = { 33.2, 67.8, IRONFORGE },
 			-- #else
-			["coord"] = { 33.4, 67, IRONFORGE },
+			["coord"] = { 33.4, 67.0, IRONFORGE },
 			-- #endif
 			["timeline"] = { REMOVED_4_3_0 },
 			["maps"] = { SEARING_GORGE, TANARIS },
@@ -1927,7 +1982,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		q(8746, {	-- Metzen the Reindeer (Horde)
 			["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 			-- #if AFTER CATA
-			["coord"] = { 52.4, 77, ORGRIMMAR },
+			["coord"] = { 52.4, 77.0, ORGRIMMAR },
 			-- #else
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
@@ -2019,7 +2074,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #if AFTER CATA
 			["coord"] = { 33.2, 67.8, IRONFORGE },
 			-- #else
-			["coord"] = { 33.4, 67, IRONFORGE },
+			["coord"] = { 33.4, 67.0, IRONFORGE },
 			-- #endif
 			["timeline"] = { REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			["maps"] = { ALTERAC_MOUNTAINS },
@@ -2030,7 +2085,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		q(6963, {	-- Stolen Winter Veil Treats (Horde)
 			["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 			-- #if AFTER CATA
-			["coord"] = { 52.4, 77, ORGRIMMAR },
+			["coord"] = { 52.4, 77.0, ORGRIMMAR },
 			-- #else
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
@@ -2069,7 +2124,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #if AFTER CATA
 			["coord"] = { 33.2, 67.8, IRONFORGE },
 			-- #else
-			["coord"] = { 33.4, 67, IRONFORGE },
+			["coord"] = { 33.4, 67.0, IRONFORGE },
 			-- #endif
 			["timeline"] = { REMOVED_4_3_0 },
 			["cost"] = {
@@ -2080,16 +2135,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 40,
-			["groups"] = {
-				i(21213),	-- Preserved Holly
-			},
+			["groups"] = { i(21213) },	-- Preserved Holly
 		}),
 		q(8799, {	-- The Hero of the Day (Horde)
 			["description"] = 'Requires Cooking Skill Level 300',
 			["sourceQuest"] = 8746,	-- Metzen the Reindeer (Horde)
 			["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 			-- #if AFTER CATA
-			["coord"] = { 52.4, 77, ORGRIMMAR },
+			["coord"] = { 52.4, 77.0, ORGRIMMAR },
 			-- #else
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
@@ -2102,9 +2155,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 40,
-			["groups"] = {
-				i(21213),	-- Preserved Holly
-			},
+			["groups"] = { i(21213) },	-- Preserved Holly
 		}),
 		q(7062, {	-- The Reason for the Season (Alliance)
 			["qg"] = 1365,	-- Goli Krumn
@@ -2112,39 +2163,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 10,
-			["groups"] = {
-				i(17735),	-- The Feast of Winter Veil (QI!)
-			},
+			["groups"] = { i(17735)	},	-- The Feast of Winter Veil (QI!)
 		}),
 		q(6964, {	-- The Reason for the Season (Horde)
 			["qg"] = 9550,	-- Furmund
-			["coord"] = { 51, 65.4, ORGRIMMAR },
+			["coord"] = { 51.0, 71.1, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 10,
-			["groups"] = {
-				i(17735),	-- The Feast of Winter Veil (QI!)
-			},
+			["groups"] = { i(17735)	},	-- The Feast of Winter Veil (QI!)
 		}),
 		{	-- Treats for Greatfather Winter
 			["allianceQuestData"] = q(7025, {	-- Treats for Greatfather Winter (Alliance)
-				["qg"] = 13444,	-- Greatfather Winter
-				["coord"] = { 33.2, 65.8, IRONFORGE },
-				["races"] = ALLIANCE_ONLY,
-				-- ["sourceQuests"] = { -- Reported Not Required Discord 2022/2023
+				-- ["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
 				-- 	7022,	-- Greatfather Winter is Here! (Alliance)
 				-- 	7023,	-- Greatfather Winter is Here! (Alliance)
 				-- },
+				["qg"] = 13444,	-- Greatfather Winter
+				["coord"] = { 33.2, 65.8, IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			["hordeQuestData"] = q(6962, {	-- Treats for Great-father Winter (Horde)
-				["qg"] = 13445,	-- Great-father Winter
-				["coord"] = { 52.4, 68.8, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				-- ["sourceQuests"] = { -- Reported Not Required Discord 2022/2023
+				-- ["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
 				-- 	6961,	-- Great-father Winter is Here! (Horde)
 				-- 	7021,	-- Great-father Winter is Here! (Horde)
 				-- 	7024,	-- Great-father Winter is Here! (Horde)
 				-- },
+				["qg"] = 13445,	-- Great-father Winter
+				["coord"] = { 49.9, 78.4, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
 			}),
 			["cost"] = {
 				{ "i", 17197, 5 },	-- Gingerbread Cookie
@@ -2175,7 +2222,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["coords"] = {
 				{ 47.4, 37.6, FROSTWALL },
-				{ 44, 51.6, LUNARFALL },
+				{ 44.0, 51.6, LUNARFALL },
 			},
 			["timeline"] = { ADDED_6_2_2 },
 			["maps"] = { FROSTFIRE_RIDGE },
@@ -2198,7 +2245,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["coords"] = {
 				{ 47.4, 37.6, FROSTWALL },
-				{ 44, 51.6, LUNARFALL },
+				{ 44.0, 51.6, LUNARFALL },
 			},
 			["timeline"] = { ADDED_6_2_2 },
 			["maps"] = { FROSTFIRE_RIDGE },
@@ -2260,8 +2307,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["isYearly"] = true,
 		}),
 		q(81560, {	-- Winter's Presents
-			["qg"] = 220307,	-- Holiday Enthusiast
-			["coord"] = { 46, 55.1, DORNOGAL },
+			["qgs"] = {
+				220307,	-- Holiday Enthusiast
+				220865,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
+			},
+			["coords"] = {
+				{ 46.0, 55.1, DORNOGAL },
+				{ 56.9, 28.7, DORNOGAL },
+				{ 55.6, 61.2, DORNOGAL },
+			},
 			["timeline"] = { ADDED_11_0_7 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -2270,10 +2325,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["qgs"] = {
 				220307,	-- Holiday Enthusiast
 				220865,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
 			},
 			["coords"] = {
-				{ 46, 55.1, DORNOGAL },
+				{ 46.0, 55.1, DORNOGAL },
 				{ 56.9, 28.7, DORNOGAL },
+				{ 55.6, 61.2, DORNOGAL },
 			},
 			["timeline"] = { ADDED_11_0_7 },
 			["races"] = HORDE_ONLY,
@@ -2289,7 +2346,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				},
 				["coords"] = {
 					{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
-					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
+					{ 42.4, 41.0, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
 				},
 				-- #else
 				["maps"] = { IRONFORGE },
@@ -2303,8 +2360,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					13636,	-- Strange Snowman
 				},
 				["coords"] = {
-					{ 52.4, 77, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
-					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
+					{ 52.4, 77.0, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
+					{ 42.4, 41.0, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
 				},
 				-- #else
 				["maps"] = { ORGRIMMAR },
@@ -2336,8 +2393,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				i(149503, {	-- Stolen Gift
-					["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
-					["timeline"] = { ADDED_7_2_5 },
+					["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items thus it is not worth farming.",
+					["timeline"] = { ADDED_7_2_5, REMOVED_11_0_5 },	-- Danny Donkey: Stolen Present (116762) is rewarded in it's place with TWW, making it unobtainable.
 					-- #if AFTER SL
 					["lvl"] = { 30, 59 },
 					-- #elseif AFTER BFA
@@ -2345,7 +2402,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					-- #else
 					["lvl"] = { 30, 100 },
 					-- #endif
+					-- #if BEFORE TWW
 					["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
+					-- #endif
 				}),
 				i(93626, {	-- Stolen Present
 					["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
@@ -2361,7 +2420,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				i(116762, {	-- Stolen Present
 					["timeline"] = { ADDED_6_0_2 },
+					-- #if AFTER TWW
+					["description"] = "This gift is granted to any characters completing the daily quest, which requires lvl 30.",
+					["lvl"] = { 30, 80 },	-- Danny Donkey: Replaces Stolen Gift (149503) for the bracket 30-59.
+					-- #else
 					["lvl"] = 50,
+					-- #endif
 					["groups"] = STOLEN_PRESENT_GROUPS,
 				}),
 			},
@@ -2370,21 +2434,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 	-- #if AFTER 8.3.0
 	n(TREASURES, {
 		o(180746, {	-- Gently Shaken Gift
-			i(178529, {	-- Gently Shaken Gift
-				["timeline"] = { ADDED_9_0_1 },
-			}),
-			i(187520, {	-- Gently Shaken Gift
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(192093, {	-- Gently Shaken Gift
-				["timeline"] = { ADDED_10_0_2_LAUNCH },
-			}),
-			i(210657, {	-- Gently Shaken
-				["timeline"] = { ADDED_10_2_0 },
-			}),
-			i(218309, {	-- Gently Shaken
-				["timeline"] = { ADDED_11_0_7 },
-			}),
+			["coords"] = {
+				{ 33.5, 66.5, IRONFORGE },
+				{ 49.9, 78.5, ORGRIMMAR },
+			},
+			["groups"] = {
+				i(178529, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_9_0_1 },
+				}),
+				i(187520, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_9_1_5 },
+				}),
+				i(192093, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				}),
+				i(210657, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_10_2_0 },
+				}),
+				i(218309, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_11_0_7 },
+				}),
+				i(244906, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+			},
 		}),
 		o(341827, {	-- Greatfeather Pepe
 			["coords"] = {
@@ -2395,21 +2468,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["groups"] = { i(174865) },	-- A Tiny Winter Hat (Pepe!)
 		}),
 		o(187236, {	-- Winter Veil Gift
-			i(178528, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_9_0_1 },
-			}),
-			i(187561, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(192094, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_10_0_2_LAUNCH },
-			}),
-			i(209871, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_10_2_0 },
-			}),
-			i(218311, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_11_0_7 },
-			}),
+			["coords"] = {
+				{ 33.5, 66.5, IRONFORGE },
+				{ 49.9, 78.5, ORGRIMMAR },
+			},
+			["groups"] = {
+				i(178528, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_9_0_1 },
+				}),
+				i(187561, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_9_1_5 },
+				}),
+				i(192094, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				}),
+				i(209871, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_10_2_0 },
+				}),
+				i(218311, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_11_0_7 },
+				}),
+				i(244908, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+			},
 		}),
 	}),
 	-- #endif
@@ -2546,34 +2628,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["groups"] = {
 				i(108635, {	-- Crashin' Thrashin' Killdozer Controller (TOY!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_0_2 },
 				}),
 				i(128665, {	-- Ball of Tangled Lights (CI!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 				}),
 				i(128668, {	-- Festive Outfits
 					["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 					["questID"] = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically
 					["repeatable"] = true,
 				}),
 				i(128666, {	-- Imported Trees (CI!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 				}),
 				i(128667, {	-- Little Helpers (CI!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 				}),
 				i(128669, {	-- Old Box of Decorations (CI!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 				}),
 				i(128670, {	-- Savage Gift
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 					["groups"] = {
 						-- #if BEFORE 7.3.2
@@ -2620,8 +2702,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		n(96304, {	-- Tradurjo Jinglepocket <Smokywood Pastures>
 			["coords"] = {
-				{ 43, 46.6, LUNARFALL },
-				{ 52, 33.2, FROSTWALL },
+				{ 43.0, 46.6, LUNARFALL },
+				{ 52.0, 33.2, FROSTWALL },
 			},
 			["timeline"] = { ADDED_6_2_2 },
 			["groups"] = HOLIDAY_VENDOR_GROUPS_RED,
@@ -2635,7 +2717,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #if AFTER CATA
 			["coord"] = { 33.2, 67.8, IRONFORGE },
 			-- #else
-			["coord"] = { 33.4, 67, IRONFORGE },
+			["coord"] = { 33.4, 67.0, IRONFORGE },
 			-- #endif
 			["groups"] = HOLIDAY_VENDOR_GROUPS_RED,
 		}),

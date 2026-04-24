@@ -1,29 +1,24 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ARDENWEALD, {
 		n(TREASURES, {
 			o(364345, {	-- A Faintly Glowing Seed
 				["description"] = "Can be found anywhere in Ardenweald",
-				["groups"] = {
-					i(183902),	-- A Faintly Glowing Seed
-				},
+				["groups"] = { i(183902) },	-- A Faintly Glowing Seed
 			}),
 			n(171156, {		-- Aerto <Grove Ranger>
 				["coord"] = { 55.9, 21.0, ARDENWEALD },
 				["questID"] = 61072,
-				["groups"] = {
-					i(180630),	-- Gorm Harrier (PET!)
-				},
+				["groups"] = { i(180630) },	-- Gorm Harrier (PET!)
 			}),
 			o(354646, {		-- Ancient Cloudfeather Egg
 				["description"] = "The path to get up to the treasure starts at |cFFFFFFFF50.6, 38.8|r.",
 				["coord"] = { 52.9, 37.2, ARDENWEALD },
 				["questID"] = 61065,
-				["groups"] = {
-					i(180642),	-- Cloudfeather Fledgling (PET!)
-				},
+				["groups"] = { i(180642) },	-- Cloudfeather Fledgling (PET!)
 			}),
 			o(355041, {		-- Cache of the Moon
 				["description"] = "Combine the |cff1eff00Diary of the Night|r, |cff1eff00Gardener's Basket|r, |cff1eff00Gardener's Hammer|r, |cff1eff00Gardener's Flute|r, and |cff1eff00Gardener's Wand|r to create |cff0070ddTwinklestar's Gardening Toolkit|r. Take the toolkit to Twinklestar at |cFFFFFFFF63.8, 37.5|r. He will grant you the \"Moonsight\" buff, allowing you to see the treasure behind him.",
@@ -90,7 +85,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				i(179594),	-- Witherscorn Guise
 				i(180145),	-- Witherscorn Handaxe
 				i(180165),	-- Witherscorn Reaper
-			--	Objects
+				-- Objects
 				o(353306, {	-- Decayed Husk
 					["coord"] = { 54.4, 49.7, ARDENWEALD },
 					["questID"] = 60672,
@@ -136,9 +131,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 174911 },	-- Bounding Shroom
 				["coord"] = { 37.6, 37.0, ARDENWEALD },
 				["questID"] = 61070,
-				["groups"] = {
-					i(179510),	-- Dreamsong Warglaive
-				},
+				["groups"] = { i(179510) },	-- Dreamsong Warglaive
 			}),
 			o(354662, {		-- Elusive Faerie Cache
 				["description"] = "Use the Lamp at |cFFFFFFFF46.4, 70.1|r and open the chest while you have the debuff.",
@@ -157,9 +150,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(355020, {	-- Enchanted Bough
 				["description"] = "Under the platform with the big chair.",
 				["coord"] = { 42.4, 46.7, ARDENWEALD },
-				["groups"] = {
-					i(180656),	-- Enchanted Bough
-				},
+				["groups"] = { i(180656) },	-- Enchanted Bough
 			}),
 			o(353233, {		-- Enchanted Chest
 				["coords"] = {
@@ -174,26 +165,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			o(354651, {		-- Enchanted Dreamcatcher
 				["coord"] = { 36.4, 25.0, ARDENWEALD },
-				["groups"] = {
-					i(183129),	-- Anima-Laden Dreamcatcher
-				},
+				["groups"] = { i(183129) },	-- Anima-Laden Dreamcatcher
+			}),
+			o(358572, {	-- Extra Gooey Gorm Gunk
+				i(183718);	-- Extra Gooey Gorm Gunk
 			}),
 			o(373460, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Fae Net
 				["coord"] = { 38.3, 36.8, ARDENWEALD },
-				["groups"] = {
-					i(187943),	-- Fae Net
-				},
+				["groups"] = { i(187943) },	-- Fae Net
 			})),
 			o(355021, {	-- Fae Ornament
 				["description"] = "On the tree platform.",
 				["coord"] = { 51.5, 61.6, ARDENWEALD },
-				["groups"] = {
-					i(180654),	-- Fae Ornament
-				},
+				["groups"] = { i(180654) },	-- Fae Ornament
 			}),
 			o_repeated({	-- Faerie Stash
-			--	Rewards
-			--	Objects
+				-- Rewards
+				-- Objects
 				o(353329, {	-- Faerie Stash
 					["description"] = "Use the Bounding Shroom at |cFFFFFFFF32.7, 29.8|r to reach the treasure.",
 					["coord"] = { 32.7, 30.0, ARDENWEALD },
@@ -257,8 +245,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o_repeated({	-- Lunarlight Pod
-			--	Rewards
-			--	Objects
+				-- Rewards
+				-- Objects
 				o(353683, {	-- Lunarlight Pod
 					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r. To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
 					["coord"] = { 39.2, 54.4, ARDENWEALD },
@@ -403,11 +391,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(TREASURES, {
-				--	Treasures of Ardenweald achievement
+				-- Treasures of Ardenweald achievement
 				q(61126),	-- Cache of the Moon - turning in the Twinklestar Gardening Tools
 				q(61170),	-- Harmonic Chest - unlock trigger
 				--

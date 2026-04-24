@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if ANYCLASSIC
 local FISSURE_STONE_FRAGMENT = 3148;	-- Fissure Stone Fragment
 local frags = function(cost, item)

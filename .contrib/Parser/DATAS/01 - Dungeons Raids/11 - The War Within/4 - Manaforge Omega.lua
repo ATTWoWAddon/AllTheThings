@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 --- Need Zone Drop, AOTC Mount //Braghe
 ------ Encounter Constants ------
 local PLEXUS = 2684;
@@ -77,7 +78,6 @@ local EncounterToLoot = {
 		i(237545),	-- Discarded Nutrient Shackles
 		i(237524),	-- Laced Lair-Steppers
 		i(242393),	-- Loom'ithar's Living Silk
-		i(245510),	-- Loombeast Silk
 		i(237732),	-- Piercing Strandbow
 		i(237729),	-- Prodigious Gene Splicer
 		i(237723),	-- Ward of the Weaving-Beast
@@ -143,7 +143,6 @@ local EncounterToLoot = {
 		i(237724),	-- Iris of the Dark Beyond
 		i(237553),	-- Laboratory Test Slippers
 		i(237570),	-- Logic Gate: Omega
-		i(249218),	-- Manaforged Instrument
 		i(237726),	-- Marvel of Technomancy
 		i(237737),	-- Photon Sabre Prime
 	};
@@ -219,7 +218,6 @@ local EncounterToLoot = {
 		i(237532),	-- Beacons of False Righteousness
 		i(237564),	-- Darkrider Sabatons
 		i(237531),	-- Elite Shadowguard Legwraps
-		i(243365),	-- Maw of the Void
 		i(242400),	-- Nexus-King's Command
 		i(237734),	-- Oath-Breaker's Recompense
 		i(237555),	-- Pactbound Vambraces
@@ -401,7 +399,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					crit(103304, {	-- Nexus-King Salhadaar
 						["_encounter"] = { SALHADAAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(103305, {	-- 	Dimensius, the All-Devouring
+					crit(103305, {	-- Dimensius, the All-Devouring
 						["_encounter"] = { DIMENSIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
@@ -412,7 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					crit(103299, {	-- Loom'ithar
 						["_encounter"] = { LOOMITHAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(103300, {	-- 	Soulbinder Naazindhri
+					crit(103300, {	-- Soulbinder Naazindhri
 						["_encounter"] = { NAAZINDHRI, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(103301, {	-- Forgeweaver Araz
@@ -421,7 +419,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					crit(103302, {	-- The Soul Hunters
 						["_encounter"] = { HUNTERS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(103303, {	-- 	Fractillus
+					crit(103303, {	-- Fractillus
 						["_encounter"] = { FRACTILLUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(103304, {	-- Nexus-King Salhadaar
@@ -546,8 +544,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 							["timeline"] = { ADDED_11_2_0 },
 							["groups"] = { i(242728) },	-- The Bone Freezer (MOUNT!)
 						}),
-						title(640),	-- Star Savior <Name>
+						title(640, {	-- Star Savior <Name>
+							["provider"] = IGNORED_VALUE,
+							["coord"] = IGNORED_VALUE,
+						}),
 					}, {	-- RENOWN 15 --
+						q(91480, { ["timeline"] = { ADDED_11_2_0 } }),	-- Behind Enemy Lines V
 						spell(1239155),	-- Path of the All-Devouring
 					},
 				}))),
@@ -556,7 +558,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				n(245349, {	-- Zo'ropo <Eccentric Engineer>
 					["coord"] = { 42.0, 22.0, KARESH },
 					["groups"] = sharedData({
-						["cost"] = { { "i", 246727, 1 }, },	-- Ethereal Essence Sliver
+						["cost"] = { { "i", 246727, 1 } },	-- Ethereal Essence Sliver
 					}, {
 						i(249206),	-- Manaforge Raider's Cosmic Baton (COSMETIC!)
 						i(249170),	-- Manaforge Raider's Cosmic Beamglaive (COSMETIC!)
@@ -636,7 +638,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				n(245348, {	-- Ba'choso <Curious Curator>
 					["coord"] = { 42.0, 22.4, KARESH },
 					["groups"] = sharedData({
-						["cost"] = { { "i", 245510, 1 }, },	-- Loombeast Silk
+						["cost"] = { { "i", 245510, 1 } },	-- Loombeast Silk
 					}, {
 						iensemble(248977),	-- Ensemble: Augur's Ephemeral Brilliance
 						iensemble(248978),	-- Ensemble: Breeze of Fallen Storms
@@ -701,12 +703,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				BossOnly(PLEXUS),
 				BossOnly(LOOMITHAR, {
 					i(224435),	-- Pattern: Duskthread Lining (RECIPE!)
+					i(245510),	-- Loombeast Silk
 				}),
 				BossOnly(NAAZINDHRI, {
 					i(250104),	-- Soulbinder's Nethermantle (COSMETIC!)
 				}),
 				BossOnly(ARAZ, {
 					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
+					i(249218),	-- Manaforged Instrument
 				}),
 				BossOnly(HUNTERS, {
 					i(223097),	-- Pattern: Adrenal Surge Clasp (RECIPE!)
@@ -715,6 +719,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					i(223094),	-- Design: Magnificent Jeweler's Setting (RECIPE!)
 				}),
 				BossOnly(SALHADAAR, {
+					i(243365),	-- Maw of the Void
 					i(246727, {	-- Ethereal Essence Sliver
 						["description"] = "Has a small chance dropping as Personal Loot from Nexus-King Salhadaar once you have reached Renown 12 with the Manaforge Vandals.",
 						["minReputation"] = { FACTION_MANAFORGE_VANDALS, 12 },
@@ -731,7 +736,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				ZoneDrops({}),
 				CommonBossDrops({
 					currency(WEATHERED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 2799, {	-- Might of the Shadowguard
@@ -783,7 +788,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CARVED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 					}),
 				}),
 				ZoneDrops({}),
@@ -816,14 +821,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				BossOnly(FRACTILLUS),
 				BossOnly(SALHADAAR),
 				BossOnly(DIMENSIUS, {
-					i(246446, { ["timeline"] = { REMOVED_12_0_0 } }),	-- Mark of the Twilight Oath (QS!)
+					i(246446, { ["timeline"] = { REMOVED_12_0_1_SEASONSTART } }),	-- Mark of the Twilight Oath (QS!)
 					ach(41624, { ["timeline"] = { REMOVED_12_0_0 } }),	-- Ahead of the Curve: Dimensius, the All-Devouring
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(RUNED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 					}),
 				}),
 				ZoneDrops({}),
@@ -844,7 +849,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(GILDED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 					}),
 				}),
 				n(QUESTS, {
@@ -914,7 +919,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 		["isWeekly"] = true,
 	},{
 		-- All
-		q(91046, name(HEADERS.Item, 245510)),	-- Loombeast Silk chance per week (assumed -- also triggered on alt with no loot)
+		q(91046, name(HEADERS.Item, 245510)),	-- Loombeast Silk chance per week (assumed	-- also triggered on alt with no loot)
 		q(91010, name(HEADERS.Encounter, PLEXUS)),	-- Sentinel Plexus
 		q(91012, name(HEADERS.Encounter, LOOMITHAR)),	-- Loomithar
 		q(91011, name(HEADERS.Encounter, NAAZINDHRI)),	-- Soulbinder Naazindhr

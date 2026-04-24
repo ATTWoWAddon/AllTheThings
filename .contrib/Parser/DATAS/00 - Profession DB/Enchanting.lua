@@ -6,6 +6,11 @@ local i = GetRecipeHelperForProfession(ENCHANTING);
 -----------------
 --- ITEM ---
 i(186683, 27927);	-- Stats
+
+-----------------
+-- PATCH 5.2.0 --
+-----------------
+i(254315, 1257682);	-- Enchant Weapon - Tyranny
 -- #endif
 
 -- #if SEASON_OF_DISCOVERY
@@ -41,13 +46,21 @@ i(228981, 463869);	-- Conductive Shield Coating
 i(229008, 25081);	-- Enchant Cloak - Greater Fire Resistance
 i(229009, 25082);	-- Enchant Cloak - Greater Nature Resistance
 i(228982, 463871);	-- Enchant Shield - Law of Nature
+i(223163, 448624);	-- Scroll of Spatial Mending
+i(0, 446243);		-- Sigil of Living Dreams
 
+------------------
+-- PATCH 1.15.4 --
+------------------
+i(228979, 463866);	-- Sigil of Flowing Waters
 ------------------
 -- PATCH 1.15.5 --
 ------------------
 --- ITEM ---
 i(232610, 471400);	-- Magnificent Trollshine
 i(234272, 1213610);	-- Enchanted Repellent
+i(235528, 1217203);	-- Enchant Bracer - Agility
+i(235526, 1217189);	-- Enchant Bracer - Spell Power
 i(233997, 1213616);	-- Enchant Chest - Living Stats
 i(233998, 1213622);	-- Enchant Gloves - Holy Power
 i(233999, 1213626);	-- Enchant Gloves - Arcane Power
@@ -56,7 +69,7 @@ i(234277, 1213635);	-- Enchanted Mushroom
 i(234269, 1213600);	-- Enchanted Stopwatch
 i(234276, 1213633);	-- Enchanted Totem
 i(235133, 1216005);	-- Libram of Righteousness
-i(235134, 1216007); -- Libram of the Exorcist
+i(235134, 1216007);	-- Libram of the Exorcist
 i(235135, 1216010);	-- Libram of Sanctity
 i(235139, 1216020);	-- Idol of Sidereal Wrath
 i(235140, 1216022);	-- Idol of Feline Ferocity
@@ -69,6 +82,27 @@ i(234267, 1213595);	-- Tear of the Dreamer
 i(235136, 1216014);	-- Totem of Pyroclastic Thunder
 i(235137, 1216016);	-- Totem of Thunderous Strikes
 i(235138, 1216018);	-- Totem of Flowing Magma
+
+------------------
+-- PATCH 1.15.6 --
+------------------
+i(0, 1219577);	-- Enchant Off-Hand - Superior Intellect
+i(0, 1219578);	-- Enchant Off-Hand - Excellent Spirit
+i(0, 1219579);	-- Enchant Off-Hand - Wisdom
+i(0, 1219580);	-- Enchant 2H Weapon - Spellblasting
+i(0, 1219581);	-- Enchant Shield - Excellent Stamina
+i(0, 1219586);	-- Enchant Gloves - Superior Strength
+i(0, 1219587);	-- Enchant Cloak - Agility
+i(0, 1220623);	-- Enchant Shield - Critical Strike
+i(0, 1220624);	-- Enchant Bracer - Greater Spellpower
+
+------------------
+-- PATCH 1.15.7 --
+------------------
+i(241191, 1231128);	-- Enchant Weapon - Grand Crusader
+i(241195, 1231139);	-- Enchant 2H Weapon - Grand Arcanist
+i(241201, 1231164);	-- Enchant Weapon - Grand Sorcerer
+i(242361, 1232172);	-- Enchant 2H Weapon - Grand Inquisitor
 -- #endif
 
 -----------------
@@ -295,7 +329,7 @@ i(22533, 27914);	-- Fortitude [Bracers]
 i(28276, 34005);	-- Greater Arcane Resistance [REMOVED: 5.0.4]
 i(22530, 27906);	-- Greater Dodge / TBC: Major Defense [Bracers]
 i(28277, 34006);	-- Greater Shadow Resistance [REMOVED: 5.0.4]
-i(22537, 27926);	-- Healing Power [Ring] [REMOVED: 6.0.2]
+i(22537, 27926);	-- Healing Power [Ring] [REMOVED: 5.0.4]
 i(22539, 27945);	-- Intellect [Shield]
 i(22565, 28022);	-- Large Prismatic Shard
 i(22556, 27977);	-- Major Agility [Weapon]
@@ -1084,18 +1118,18 @@ i(177964, 0);		-- Enchant Weapon - Force Multiplier
 -- PATCH 9.0.1 --
 -----------------
 --- NYI ---
-i(0, 309628);		--	9.0 Enchanting - Modified Crafting Reagent 01
-i(0, 309629);		--	9.0 Enchanting - Modified Crafting Reagent 02
-i(0, 309630);		--	9.0 Enchanting - Modified Crafting Reagent 03
-i(0, 309631);		--	9.0 Enchanting - Modified Crafting Reagent 04
-i(0, 309632);		--	9.0 Enchanting - Modified Crafting Reagent 05
-i(0, 309633);		--	9.0 Enchanting - Modified Crafting Reagent 06
-i(0, 309634);		--	9.0 Enchanting - Modified Crafting Reagent 07
-i(0, 309635);		--	9.0 Enchanting - Modified Crafting Reagent 08
-i(0, 343682);		--	Crafter's Mark III
-i(0, 343681);		--	Crafter's Mark IV
-i(182666, 0);		--	Enchanted Elethium Bar
-i(183866, 0);		--	Crafter's Mark III
+i(0, 309628);		-- 9.0 Enchanting - Modified Crafting Reagent 01
+i(0, 309629);		-- 9.0 Enchanting - Modified Crafting Reagent 02
+i(0, 309630);		-- 9.0 Enchanting - Modified Crafting Reagent 03
+i(0, 309631);		-- 9.0 Enchanting - Modified Crafting Reagent 04
+i(0, 309632);		-- 9.0 Enchanting - Modified Crafting Reagent 05
+i(0, 309633);		-- 9.0 Enchanting - Modified Crafting Reagent 06
+i(0, 309634);		-- 9.0 Enchanting - Modified Crafting Reagent 07
+i(0, 309635);		-- 9.0 Enchanting - Modified Crafting Reagent 08
+i(0, 343682);		-- Crafter's Mark III
+i(0, 343681);		-- Crafter's Mark IV
+i(182666, 0);		-- Enchanted Elethium Bar
+i(183866, 0);		-- Crafter's Mark III
 
 -----------------
 -- PATCH 9.0.2 --
@@ -1453,3 +1487,115 @@ i(0, 1261998);		-- Venthyr Anima Bottle
 --- ITEM ---
 i(256941, 1260990);	-- Ancestral Signal Brazier
 i(256959, 1261008);	-- Draenethyst String Lights
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471006);		-- Midnight Enchanting
+i(0, 1280952);		-- Disenchant
+i(0, 1265669);		-- Artisan Enchanter's Moxie
+i(0, 1265677);		-- Concentration
+i(0, 1280401);		-- Dawn Shatter
+i(0, 1236070);		-- Enchant Helm - Blessing of Speed
+i(0, 1236055);		-- Enchant Helm - Hex of Leeching
+i(0, 1236083);		-- Enchant Helm - Rune of Avoidance
+i(0, 1236058);		-- Enchant Ring - Amani Mastery
+i(0, 1236073);		-- Enchant Ring - Nature's Wrath
+i(0, 1236086);		-- Enchant Ring - Thalassian Haste
+i(0, 1236087);		-- Enchant Ring - Thalassian Versatility
+i(0, 1236061);		-- Enchant Shoulders - Flight of the Eagle
+i(0, 1236075);		-- Enchant Shoulders - Nature's Grace
+i(0, 1236090);		-- Enchant Shoulders - Thalassian Recovery
+i(0, 1236097);		-- Enchant Weapon - Arcane Mastery
+i(0, 1236067);		-- Enchant Weapon - Berserker's Rage
+i(0, 1236066);		-- Enchant Weapon - Jan'alai's Precision
+i(0, 1236080);		-- Enchant Weapon - Worldsoul Aegis
+i(0, 1246904);		-- Ensorcelled Broom
+i(0, 1246905);		-- Font of Gleaming Water
+i(0, 1236461);		-- Gleeful Glamour - Blood Elf
+i(0, 1236463);		-- Gleeful Glamour - Dark Iron Dwarf
+i(0, 1236465);		-- Gleeful Glamour - Draenei
+i(0, 1236466);		-- Gleeful Glamour - Dwarf
+i(0, 1236594);		-- Gleeful Glamour - Earthen
+i(0, 1236467);		-- Gleeful Glamour - Gnome
+i(0, 1236468);		-- Gleeful Glamour - Goblin
+i(0, 1236469);		-- Gleeful Glamour - Highmountain Tauren
+i(0, 1236470);		-- Gleeful Glamour - Human
+i(0, 1236471);		-- Gleeful Glamour - Kul Tiran
+i(0, 1236472);		-- Gleeful Glamour - Lightforged Draenei
+i(0, 1236473);		-- Gleeful Glamour - Mag'har Orc
+i(0, 1236474);		-- Gleeful Glamour - Mechagnome
+i(0, 1236475);		-- Gleeful Glamour - Night Elf
+i(0, 1236476);		-- Gleeful Glamour - Nightborne
+i(0, 1236477);		-- Gleeful Glamour - Orc
+i(0, 1236478);		-- Gleeful Glamour - Pandaren
+i(0, 1236479);		-- Gleeful Glamour - Tauren
+i(0, 1236480);		-- Gleeful Glamour - Troll
+i(0, 1236481);		-- Gleeful Glamour - Undead
+i(0, 1236482);		-- Gleeful Glamour - Void Elf
+i(0, 1236483);		-- Gleeful Glamour - Vulpera
+i(0, 1236484);		-- Gleeful Glamour - Worgen
+i(0, 1236485);		-- Gleeful Glamour - Zandalari Troll
+i(0, 1236098);		-- Illusory Adornment - Blooming Light
+i(0, 1265703);		-- Ingenuity
+i(0, 1265616);		-- Knowledge
+i(0, 1265602);		-- Multicraft
+i(0, 1265653);		-- Quality
+i(0, 1280394);		-- Radiant Shatter
+i(0, 471042);		-- Recraft Equipment
+i(0, 1265695);		-- Resourcefulness
+i(0, 1236486);		-- Runed Refulgent Copper Rod
+i(0, 1265685);		-- Skill
+i(0, 1265661);		-- Sparks
+i(0, 1236491);		-- Thalassian Phoenix Oil
+i(0, 1236489);		-- Thalassian Spellweaver's Wand
+--- ITEM ---
+i(259364, 1246906);	-- Animated Sin'dorei Hammer
+i(259367, 1246902);	-- Animated Sin'dorei Pick
+i(256756, 1236085);	-- Enchant Boots - Farstrider's Hunt
+i(256747, 1236072);	-- Enchant Boots - Shaladrassil's Roots
+i(256737, 1236054);	-- Enchant Chest - Mark of Nalorakk
+i(256755, 1236082);	-- Enchant Chest - Mark of the Magister
+i(256745, 1236068);	-- Enchant Chest - Mark of the Rootwarden
+i(256738, 1236056);	-- Enchant Helm - Empowered Hex of Leeching
+i(256753, 1236084);	-- Enchant Helm - Empowered Rune of Avoidance
+i(256739, 1236059);	-- Enchant Ring - Eyes of the Eagle
+i(256752, 1236074);	-- Enchant Ring - Nature's Fury
+i(256760, 1236089);	-- Enchant Ring - Silvermoon's Tenacity
+i(256740, 1236062);	-- Enchant Shoulders - Akil'zon's Swiftness
+i(256748, 1236076);	-- Enchant Shoulders - Amirdrassil's Grace
+i(256744, 1236063);	-- Enchant Tool - Amani Perception
+i(256749, 1236078);	-- Enchant Tool - Haranir Multicrafting
+i(256758, 1236093);	-- Enchant Tool - Ren'dorei Ingenuity
+i(256757, 1236095);	-- Enchant Weapon - Acuity of the Ren'dorei
+i(256759, 1236094);	-- Enchant Weapon - Flames of the Sin'dorei
+i(256741, 1236065);	-- Enchant Weapon - Strength of Halazzi
+i(256750, 1236079);	-- Enchant Weapon - Worldsoul Cradle
+i(256751, 1236081);	-- Enchant Weapon - Worldsoul Tenacity
+i(268042, 1281342);	-- Endless Codex of Blooming Light
+i(268043, 1281348);	-- Endless Codex of Nature's Grace
+i(268044, 1281349);	-- Endless Codex of the Voidtouched
+i(256743, 1236464);	-- Gleeful Glamour - Haranir
+i(256754, 1236099);	-- Illusory Adornment - Nature's Embrace [Calls it "Shoulder Enchant" Still]
+i(256761, 1236100);	-- Illusory Adornment - Voidtouched [Calls it "Shoulder Enchant" Still]
+i(259373, 1246903);	-- Ren'dorei Postage Repository
+i(259370, 1246908);	-- Rootflame Campfire
+i(256742, 1236488);	-- Runed Dazzling Thorium Rod
+i(259375, 1246909);	-- Self-Pouring Thalassian Sunwine
+i(256746, 1236493);	-- Smuggler's Enchanted Edge
+i(259374, 1246907);	-- Spellbound Tome of Thalassian Magics
+--- SPECIALIZATION ---
+i(0, 1236057);		-- Enchant Boots - Lynx's Dexterity
+i(0, 1236069);		-- Enchant Chest - Mark of the Worldsoul
+i(0, 1236071);		-- Enchant Helm - Empowered Blessing of Speed
+i(0, 1236088);		-- Enchant Ring - Silvermoon's Alacrity
+i(0, 1236060);		-- Enchant Ring - Zul'jin's Mastery
+i(0, 1236091);		-- Enchant Shoulders - Silvermoon's Mending
+i(0, 1236064);		-- Enchant Tool - Amani Resourcefulness
+i(0, 1236077);		-- Enchant Tool - Haranir Finesse
+i(0, 1236092);		-- Enchant Tool - Sin'dorei Deftness
+i(0, 1236490);		-- Magister's Grand Focus
+i(0, 1236492);		-- Oil of Dawn
+i(0, 1236487);		-- Runed Brilliant Silver Rod
+i(0, 1235731);		-- Shatter Essence

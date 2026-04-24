@@ -40,7 +40,8 @@ def exploration_mapping(build):
         "7": "BfA",
         "8": "SL",
         "9": "DF",
-        "10": "TWW"
+        "10": "TWW",
+        "11": "MID"
     }
 
     # InstanceType translation table
@@ -51,14 +52,10 @@ def exploration_mapping(build):
         "3": "Battleground",
         "4": "Arena",
         "5": "Scenario",
-        "6": "Unknown"
+        "6": "Unknown",
+        "7": "Housing",
+        "8": "Neighborhood"
     }
-
-    # Ask user for sorting method
-    sort_choice = input("Sort by 'area' or 'map'? ").strip().lower()
-    if sort_choice not in ("area", "map"):
-        print("Invalid choice, defaulting to 'map'.")
-        sort_choice = "map"
 
     # Download CSVs into memory
     area_table_lines = download_csv("AreaTable", build)
@@ -125,11 +122,11 @@ def exploration_mapping(build):
             children_count += 1
 
         # Exploration type
-        # TODO: Change this to exploration / map_exploration only
-        if instance_name in ("Outdoor", "Unknown", "N/A"):
-            exploration_text = f"exploration({area_id}),"
+        # Map → map_exploration; otherwise → exploration
+        if label.startswith("Map"):
+            exploration_text = f"map_exploration({area_id}),"
         else:
-            exploration_text = f"instance_exploration({area_id}),"
+            exploration_text = f"exploration({area_id}),"
 
         line = f"[{expansion_name}] [{instance_name}] [{label}] {exploration_text}\t-- {area_name}"
         return (int(area_id), int(continent_id) if continent_id.isdigit() else 9999999, line)
@@ -140,24 +137,17 @@ def exploration_mapping(build):
         for child_id in sorted(children_map.get(area_id, []), key=int):
             process_area(child_id)
 
-    # Depending on sort, determine order
-    if sort_choice == "area":
-        # Flat sort: all areas by AreaID
-        for area_id in sorted(area_table_dict.keys(), key=int):
-            all_lines.append(build_line(area_id))
-    else:  # sort_choice == "map"
-        # Group top-level areas by MapID (parentless areas)
-        map_groups = defaultdict(list)
-        for area_id, row in area_table_dict.items():
-            parent_id = row["ParentAreaID"]
-            if not parent_id or parent_id == "0":
-                continent_id = row["ContinentID"]
-                map_groups[continent_id].append(area_id)
+    map_groups = defaultdict(list)
+    for area_id, row in area_table_dict.items():
+        parent_id = row["ParentAreaID"]
+        if not parent_id or parent_id == "0":
+            continent_id = row["ContinentID"]
+            map_groups[continent_id].append(area_id)
 
-        # Process each map
-        for map_id in sorted(map_groups.keys(), key=lambda x: int(x) if x.isdigit() else 9999999):
-            for parent_area in sorted(map_groups[map_id], key=int):
-                process_area(parent_area)  # Recursive, children processed after parent
+    # Process each map
+    for map_id in sorted(map_groups.keys(), key=lambda x: int(x) if x.isdigit() else 9999999):
+        for parent_area in sorted(map_groups[map_id], key=int):
+            process_area(parent_area)  # Recursive, children processed after parent
 
     # Count maps and children for header
     map_count = sum(
@@ -180,9 +170,8 @@ def exploration_mapping(build):
         for _, _, line in all_lines:
             output_file.write(line + "\n")
 
-    print(f"ExplorationOutput.txt created successfully (sorted by {sort_choice}).")
+    print(f"ExplorationOutput.txt created successfully.")
 
 """How to generate latest data from a new Build"""
 """Step 1: Run exploration_mapping(build: str) (You have to uncomment) with the build as a string ex. exploration_mapping("11.2.5.62785")."""
-# exploration_mapping("11.2.5.62785")
-"""Step 2: Choose if you want to generate the file sorted by AreaID or MapID/ParentID."""
+# exploration_mapping("12.0.1.66263")

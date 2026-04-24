@@ -1,7 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local SINSTONE_FRAGMENTS = 1816;
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(FACTIONS, {
@@ -158,7 +160,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 						}),
 						n(HIGH_INQUISITORS, {
-						--	TODO: add any missing loot (some is npc-specific, some is shared, ugh)
+							-- TODO: add any missing loot (some is npc-specific, some is shared, ugh)
 							n(COMMON_BOSS_DROPS, {
 								["crs"] = {
 									159155,	-- High Inquisitor Dacian
@@ -233,6 +235,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 						}),
 					}),
+					n(TREASURES, {
+						o(364482, {	-- Collected Sinstone Fragments
+							["coord"] = { 72.9, 52.0, REVENDRETH },
+							["isWeekly"] = true,
+							["groups"] = { currency(SINSTONE_FRAGMENTS) },
+						}),
+					}),
 					n(VENDORS, {
 						n(173705, {	-- Archivist Janeera <Avowed Quartermaster>
 							["coord"] = { 73.0, 52.0, REVENDRETH },
@@ -302,8 +311,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(173008),	-- Grand Inquisitor Aurica's Sinstone
 						i(173007),	-- Grand Inquisitor Nicu's Sinstone
 					}),
-				--	there are 10 different broken bells, 5 sets of 2 with the same name. not sure what the difference is, as they are not tied to specific souls (i saw Khongordzolo with two different bells in a row)
-				--	just putting this info here because it doesn't really belong in a specific header, it's just buffs you can get to boost your faction rep. will only show up in debug, but put tooltips on associated NPCs
+					-- there are 10 different broken bells, 5 sets of 2 with the same name. not sure what the difference is, as they are not tied to specific souls (i saw Khongordzolo with two different bells in a row)
+					-- just putting this info here because it doesn't really belong in a specific header, it's just buffs you can get to boost your faction rep. will only show up in debug, but put tooltips on associated NPCs
 					n(176006, {	-- Caretaker Pancha
 						["description"] = "Pancha periodically brings out a soul to help it earn atonement. When she has a soul and the broken bell next to her is present, you can repair it for 30 |cFFFFFFFFInfused Rubies|r. Depending on which soul Caretaker Pancha has, you will get a 20-minute buff that helps you earn reputation with The Avowed.\n\nThe bell will be unavailable from :00 to :30, at which point Caretaker Pancha will bring out a new soul until the next hour begins. Once the bell is repaired, anyone can ring it to get the buff, but it disappears a few minutes later.",
 					}),

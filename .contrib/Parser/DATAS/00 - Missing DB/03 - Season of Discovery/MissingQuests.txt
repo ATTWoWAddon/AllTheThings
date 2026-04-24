@@ -218,70 +218,6 @@ q(84136),	-- CLASSIC:The Beast Master of Moonglade
 q(84137),	-- CLASSIC:Mechanical Romance
 q(84138),	-- CLASSIC:Frosty Favors
 q(84146),	-- CLASSIC:Red Bag Blues
-q(84147),	-- CLASSIC:An Earnest Proposition
-q(84148),	-- CLASSIC:An Earnest Proposition
-q(84149),	-- CLASSIC:An Earnest Proposition
-q(84150),	-- CLASSIC:An Earnest Proposition
-q(84151),	-- CLASSIC:An Earnest Proposition
-q(84152),	-- CLASSIC:An Earnest Proposition
-q(84153),	-- CLASSIC:An Earnest Proposition
-q(84154),	-- CLASSIC:An Earnest Proposition
-q(84155),	-- CLASSIC:An Earnest Proposition
-q(84156),	-- CLASSIC:An Earnest Proposition
-q(84157),	-- CLASSIC:An Earnest Proposition
-q(84158),	-- CLASSIC:An Earnest Proposition
-q(84159),	-- CLASSIC:An Earnest Proposition
-q(84160),	-- CLASSIC:An Earnest Proposition
-q(84161),	-- CLASSIC:An Earnest Proposition
-q(84162),	-- CLASSIC:An Earnest Proposition
-q(84163),	-- CLASSIC:Just Compensation
-q(84164),	-- CLASSIC:Just Compensation
-q(84165),	-- CLASSIC:Just Compensation
-q(84166),	-- CLASSIC:Just Compensation
-q(84167),	-- CLASSIC:Just Compensation
-q(84168),	-- CLASSIC:Just Compensation
-q(84169),	-- CLASSIC:Just Compensation
-q(84170),	-- CLASSIC:Just Compensation
-q(84171),	-- CLASSIC:Just Compensation
-q(84172),	-- CLASSIC:Just Compensation
-q(84173),	-- CLASSIC:Just Compensation
-q(84174),	-- CLASSIC:Just Compensation
-q(84175),	-- CLASSIC:Just Compensation
-q(84176),	-- CLASSIC:Just Compensation
-q(84177),	-- CLASSIC:Just Compensation
-q(84178),	-- CLASSIC:Just Compensation
-q(84179),	-- CLASSIC:Anthion's Parting Words
-q(84180),	-- CLASSIC:Anthion's Parting Words
-q(84181),	-- CLASSIC:Anthion's Parting Words
-q(84182),	-- CLASSIC:Anthion's Parting Words
-q(84183),	-- CLASSIC:Anthion's Parting Words
-q(84184),	-- CLASSIC:Anthion's Parting Words
-q(84185),	-- CLASSIC:Anthion's Parting Words
-q(84186),	-- CLASSIC:Anthion's Parting Words
-q(84187),	-- CLASSIC:Anthion's Parting Words
-q(84188),	-- CLASSIC:Anthion's Parting Words
-q(84189),	-- CLASSIC:Anthion's Parting Words
-q(84190),	-- CLASSIC:Anthion's Parting Words
-q(84191),	-- CLASSIC:Anthion's Parting Words
-q(84192),	-- CLASSIC:Anthion's Parting Words
-q(84193),	-- CLASSIC:Anthion's Parting Words
-q(84194),	-- CLASSIC:Anthion's Parting Words
-q(84195),	-- CLASSIC:Saving the Best for Last
-q(84196),	-- CLASSIC:Saving the Best for Last
-q(84197),	-- CLASSIC:Saving the Best for Last
-q(84198),	-- CLASSIC:Saving the Best for Last
-q(84199),	-- CLASSIC:Saving the Best for Last
-q(84200),	-- CLASSIC:Saving the Best for Last
-q(84201),	-- CLASSIC:Saving the Best for Last
-q(84202),	-- CLASSIC:Saving the Best for Last
-q(84203),	-- CLASSIC:Saving the Best for Last
-q(84204),	-- CLASSIC:Saving the Best for Last
-q(84205),	-- CLASSIC:Saving the Best for Last
-q(84206),	-- CLASSIC:Saving the Best for Last
-q(84207),	-- CLASSIC:Saving the Best for Last
-q(84208),	-- CLASSIC:Saving the Best for Last
-q(84209),	-- CLASSIC:Saving the Best for Last
-q(84210),	-- CLASSIC:Saving the Best for Last
 q(84211),	-- CLASSIC:Poacher's Den
 q(84212),	-- CLASSIC:Bookin' it Back
 q(84213),	-- CLASSIC:Rift Away
@@ -389,7 +325,6 @@ q(85388),	-- CLASSIC:A Foul Interference
 q(85401),	-- CLASSIC:The Frigid Barrow
 q(85435),	-- CLASSIC:A Foul Interference
 q(85445),	-- CLASSIC:The Golden Disk
-q(85446),	-- CLASSIC:Scale of the Dragon Lord
 q(85447),	-- CLASSIC:Grim Batol
 q(85452),	--
 q(85453),	-- CLASSIC:No Good Deed Goes Unpunished
@@ -507,21 +442,12 @@ q(87371),	--
 q(87372),	--
 q(87373),	--
 1.15.6.58658
-q(87441),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
-q(87442),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
-q(87443),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
-q(87444),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
-q(87459),	-- CLASSIC:Scarlet Activities
-q(87493),	-- CLASSIC:Unrest at Tyr's Hand
-q(87497),	-- CLASSIC:The Schism
-q(87498),	-- CLASSIC:The Scarlet Reclamation
 q(87502),	-- CLASSIC:Gathering Intelligence
 q(87506),	-- CLASSIC:Weakening The Defenses
 q(87508),	-- CLASSIC:Report to Lord Tyrosus
 q(87509),	-- CLASSIC:The Wrath of the Dawn
 q(87516),	-- CLASSIC:Decapitation Strike
 q(87517),	-- CLASSIC:Red = Dead
-q(87518),	-- CLASSIC:Fall of the Grand Crusader
 q(87520),	-- CLASSIC:Antithesis of the Light
 1.15.6.58725
 q(87377),	-- CLASSIC:Never at Rest
@@ -533,9 +459,6 @@ q(88717),	-- CLASSIC:Never at Rest
 q(88718),	-- CLASSIC:Never at Rest
 q(88729),	-- CLASSIC:Ramaladni's Icy Grasp
 q(88730),	-- CLASSIC:The Only Song I Know...
-q(88744),	-- CLASSIC:Under the Shadow
-q(88748),	-- CLASSIC:Cracked Necrotic Crystal
-q(88749),	-- CLASSIC:Faint Necrotic Crystal
 1.15.6.58866
 q(88940),	--
 q(88943),	--
@@ -569,11 +492,9 @@ q(89376),	--
 q(89224),	-- CLASSIC:Food Shortage
 q(89226),	--
 q(89229),	-- CLASSIC:The Right Path
-q(89232),	--
 q(89234),	-- CLASSIC:A Personal Matter
 q(89235),	-- CLASSIC:The Culling
 q(89236),	-- CLASSIC:Wrangling Apples
-q(89237),	--
 q(89245),	-- CLASSIC:Fish in a Barrel
 q(89253),	-- CLASSIC:Main Course
 q(89255),	-- CLASSIC:Prove Your Worth: Headgear
@@ -586,10 +507,6 @@ q(89261),	-- CLASSIC:Prove Your Worth: Legguards
 q(89262),	-- CLASSIC:Prove Your Worth: Boots
 q(89298),	--
 q(89299),	--
-q(89300),	--
-q(89301),	--
-q(89303),	--
-q(89304),	--
 q(89310),	-- CLASSIC:Terrordale
 q(89328),	-- CLASSIC:Loss
 q(89329),	-- CLASSIC:Stomping Out The Infestation
@@ -598,37 +515,20 @@ q(89341),	-- CLASSIC:The Great Feast
 q(89342),	-- CLASSIC:VIP Haute Club Membership
 q(89381),	-- CLASSIC:Pin Cushion
 q(89421),	-- CLASSIC:Bullet Heaven
-q(89442),	--
-q(89443),	--
 q(89444),	-- CLASSIC:The Corrupted Emblem
-q(89445),	-- CLASSIC:Blades of Light
-q(89446),	-- CLASSIC:The Lost Craftsman
-q(89447),	-- CLASSIC:Extravagant Tastes
-q(89448),	-- CLASSIC:Gathering Light
-q(89449),	--
-q(89451),	--
-q(89462),	--
 q(89463),	-- CLASSIC:Nondisclosure Arguement
 q(89471),	-- CLASSIC:Goblin Tinkering
-q(89473),	--
-q(89474),	--
-q(89475),	--
 q(89485),	-- CLASSIC:Whimsical Horrors
 q(89486),	-- CLASSIC:A Pinch of Gunpowder
 q(89487),	-- CLASSIC:Much Ado About Magnets
-q(89488),	--
 q(89489),	-- CLASSIC:Increased Drop Rate
 q(89491),	-- CLASSIC:A Complicated Escape Plan
-q(89562),	-- CLASSIC:My Old Enemy
 q(89563),	-- CLASSIC:Leonid's Burden
 q(89567),	-- CLASSIC:The Wrecked Caravan
 q(89568),	-- CLASSIC:Something New
 q(89574),	-- CLASSIC:Servants of Death
 q(90106),	--
 q(90107),	-- CLASSIC:The Blade Reformed
-q(90506),	--
-q(90507),	--
-q(90508),	--
 q(90510),	-- CLASSIC:New Avalon
 q(90516),	--
 q(90518),	-- CLASSIC:An Apple a Day Keeps the Undead at Bay
@@ -636,7 +536,6 @@ q(90519),	-- CLASSIC:Fish On Demand
 q(90520),	-- CLASSIC:Food Safety
 q(90539),	--
 q(90558),	--
-q(90559),	--
 q(90566),	-- CLASSIC:Oh, My Bleeding Hearts!
 q(90603),	--
 q(90604),	--

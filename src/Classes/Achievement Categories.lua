@@ -31,9 +31,7 @@ if AchievementCategoryData then
 		parentCategoryID = function(t)
 			return t.defaultParentCategoryID;
 		end,
-		ignoreSourceLookup = function(t)
-			return true;
-		end,
+		ignoreSourceLookup = app.ReturnTrue,
 	},
 	"WithData", {	-- When there is data related to the category available in the database module.
 		name = function(t)
@@ -66,9 +64,7 @@ else
 		parentCategoryID = function(t)
 			return select(2, GetCategoryInfo(t.achievementCategoryID)) or -1;
 		end,
-		ignoreSourceLookup = function(t)
-			return true;
-		end,
+		ignoreSourceLookup = app.ReturnTrue,
 	});
 end
 end

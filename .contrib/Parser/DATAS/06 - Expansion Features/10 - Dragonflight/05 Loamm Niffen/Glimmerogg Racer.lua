@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	header(HEADERS.Faction, FACTION_LOAMM_NIFFEN, {
 		header(HEADERS.Faction, FACTION_GLIMMEROGG_RACER, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 7 } }, {
@@ -48,6 +49,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
 				["maxReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },
+				["lockCriteria"] = { 1, "factionID", FACTION_GLIMMEROGG_RACER + 0.5 },   	-- Rank 5, Professional, 2800
 			}, {
 				q(74948),	-- Snailspiration: Amethyst Softshell
 				q(74949),	-- Snailspiration: Archetype of Vigilance

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local DUTIFUL_COST_GROUP = {
 	{ "i", 178881, 1 },	-- 1x Dutiful Spirit
 	{ "i", 178880, 1 },	-- 1x Greater Dutiful Spirit
@@ -401,7 +402,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["provider"] = { "n", 174507 },	-- Ohm of Meditation
 										["coord"] = { 25.6, 47.5, 1662 },
 										["maps"] = { ARDENWEALD },
-										["cost"] = { { "i", 183805, 1 } },	-- Tranquil Spirit of the Cosmos
+										["cost"] = { { "i", 183805, 1 } },	-- 1x Tranquil Spirit of the Cosmos
 									}),
 									q(62587, {	-- In Search of Inner Calm (1)
 										["sourceQuests"] = { 62600 },	-- Finding Inner Peace
@@ -475,7 +476,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["provider"] = { "n", 174511 },	-- Lia the Curious
 										["coord"] = { 26.0, 63.8, 1662 },
 										["maps"] = { FROSTFIRE_RIDGE },
-										["cost"] = { { "i", 183806, 1 } },	-- 1 Energetic Spirit of Curiosity
+										["cost"] = { { "i", 183806, 1 } },	-- 1x Energetic Spirit of Curiosity
 									}),
 									q(62629, {	-- All Spirits Great and Small (2)
 										["sourceQuests"] = { 62627 },	-- All Spirits Great and Small (1)

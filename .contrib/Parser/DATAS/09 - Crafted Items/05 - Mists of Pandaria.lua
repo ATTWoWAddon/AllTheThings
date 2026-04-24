@@ -7,17 +7,42 @@ local function ClassicCost(cost)
 	return cost
 	-- #ENDIF
 end
-local MAPS_FIELD = "maps"
--- #if RETAIL_STYLE_FILL_ENABLED
--- Filling allows users to 'chose' whether the Items dropped from Objects should show up in lists and potentially be Filled
-MAPS_FIELD = "maps_disp"
--- #ENDIF
 root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
 	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
 	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		o_repeated({	-- Bamboo Lumber
+			["maps"] = {
+				DREAD_WASTES,
+				ISLE_OF_THUNDER,
+				KRASARANG_WILDS,
+				KUN_LAI_SUMMIT,
+				THE_JADE_FOREST,
+				TIMELESS_ISLE,
+				TOWNLONG_STEPPES,
+				VALE_OF_ETERNAL_BLOSSOMS,
+				NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,
+				VALLEY_OF_THE_FOUR_WINDS,
+			},
+			["groups"] = {
+				-- Objects
+				o(568305),	-- [Dread Wastes/Townlong Steppes]
+				o(568405),	-- [Isle of Thunder]
+				o(567867),	-- [Krasarang Wilds/Valley of the Four Winds]
+				o(568132),	-- [Kun-Lai Summit]
+				o(562440),	-- [The Jade Forest]
+				o(568199),	-- [Timeless Isle]
+				o(568137),	-- [Townlong Steppes]
+				o(567726),	-- [Vale of Eternal Blossoms/Vale of Eternal Blossoms]
+				o(567840),	-- [Valley of the Four Winds]
+				-- Drops
+				i(251763),	-- Bamboo Lumber
+			},
+		}),
+	})),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			r(114774),	-- Darkwater Potion
@@ -589,7 +614,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		i(81401),	-- Yak Cheese Curds
 	}),
 	prof(ENCHANTING, {
-		spell(13262, {	-- Disenchant
+		header(HEADERS.Spell, 13262, {	-- Disenchant
 			i(80433, {	-- Blood Spirit
 				["description"] = "Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",
 			}),
@@ -651,6 +676,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(74724),	-- Enchant Weapon - Jade Spirit
 			i(74728),	-- Enchant Weapon - River's Song
 			i(74723),	-- Enchant Weapon - Windsong
+			-- #if ANYCLASSIC
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING,i(254314, {["timeline"] = {ADDED_5_5_1}})),	-- Enchant Weapon - Tyranny
+			-- #endif
 		}),
 	}),
 	prof(ENGINEERING, {
@@ -697,6 +725,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(94903, {["timeline"] = {ADDED_5_4_0}})),	-- Pierre (PET!)
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(100905, {["timeline"] = {ADDED_5_4_0}})),	-- Rascal-Bot (PET!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(247733),	-- Halfhill Cookpot (DECOR!)
+			i(258216),	-- Reconstructed Mogu Lightning Drill (DECOR!)
+		})),
 		filter(GEMS, {
 			i(77544),	-- Flashing Tinker's Gear
 			i(77547),	-- Fractured Tinker's Gear
@@ -722,7 +754,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		filter(MOUNTS, {
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(95416, {["timeline"] = {ADDED_5_4_0}})),	-- Sky Golem (MOUNT!)
 		}),
-		i(89991, {  -- Pandaria Fireworks
+		i(89991, {	-- Pandaria Fireworks
 			i(89996),	-- Schematic: Autumn Flower Firework (RECIPE!)
 			i(89994),	-- Schematic: Celestial Firework (RECIPE!)
 			i(89993),	-- Schematic: Grand Celebration Firework (RECIPE!)
@@ -774,7 +806,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94933, {	-- Tiny Blue Carp (PET!)
 			["timeline"] = { ADDED_5_2_0 },
 			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Jewel Danio & Redbelly Mandarin\n\n|cFFFfffff— Fish of the Day:|r Townlong Steppes & Vale of Eternal Blossoms\n\n|cFFFfffff— Inland open water:|r Townlong Steppes & Vale of Eternal Blossoms\n",
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				TIMELESS_ISLE,
 				TOWNLONG_STEPPES,
 				VALE_OF_ETERNAL_BLOSSOMS,
@@ -783,7 +815,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94934, {	-- Tiny Green Carp (PET!)
 			["timeline"] = { ADDED_5_2_0 },
 			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Emperor Salmon, Jade Lungfish, & Krasarang Paddlefish\n\n|cFFFfffff— Fish of the Day:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n\n|cFFFfffff— Inland open water:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n",
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				KRASARANG_WILDS,
 				THE_JADE_FOREST,
 				TOWNLONG_STEPPES,
@@ -793,7 +825,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94932, {	-- Tiny Red Carp (PET!)
 			["timeline"] = { ADDED_5_2_0 },
 			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Spinefish\n\n|cFFFfffff— Fish of the Day:|r Kun-Lai Summit\n\n|cFFFfffff— Sha-Touched water:|r Dread Wastes, Kun-Lai Summit & Townlong Steppes\n",
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				DREAD_WASTES,
 				KUN_LAI_SUMMIT,
 				TOWNLONG_STEPPES,
@@ -802,7 +834,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94935, {	-- Tiny White Carp (PET!)
 			["timeline"] = { ADDED_5_2_0 },
 			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Giant Mantis Shrimp, Reef Octopus, & Tiger Gourami\n\n|cFFFfffff— Fish of the Day:|r Dread Wastes, Jade Forest, & Kun-Lai Summit\n\n|cFFFfffff— Inland open water:|r Kun-Lai Summit & The Veiled Stair\n\nIt can also be caught in most coastal open water.\n",
-			[MAPS_FIELD] = {
+			["maps_disp"] = {
 				DREAD_WASTES,
 				ISLE_OF_GIANTS,
 				ISLE_OF_THUNDER,
@@ -869,6 +901,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(40916, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Starfire / Glyph of the Moonbeast[5.0.4-5.4.0] / Glyph of Guided Stars[5.4.0-6.1.0] / Glyph of Untamed Stars[6.1.0+]
 			i(45622, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(247731),	-- Hanging Paper Lanterns (DECOR!)
+			i(247669),	-- Lorewalker's Bookcase (DECOR!)
+			i(247735),	-- Lucky Traveler's Bench (DECOR!)
+			i(245514),	-- Pandaren Wooden Table (DECOR!)
+			i(245513),	-- Square Pandaren Table (DECOR!)
+		})),
 		category(106, {	-- Tarot Cards
 			sp(111830, {	-- Darkmoon Card of Mists
 				i(79299),	-- Ace of Crane
@@ -1025,6 +1064,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(82774),	-- Jade Owl (PET!)
 			i(82775),	-- Sapphire Cub (PET!)
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(247736),	-- Jade Temple Dragon Fountain (DECOR!)
+			i(247728),	-- Pandaren Stone Post (DECOR!)
+			i(245509),	-- Pandaren Stone Wall (DECOR!)
+		})),
 		filter(FINGER_F, {
 			i(83801),	-- Band of Blood
 			i(83796),	-- Heart of the Earth
@@ -1746,6 +1790,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 				i(85848),	-- Stormscale Shoulders
 			}),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(247856),	-- Serenity Peak Tent (DECOR!)
+			i(247767),	-- Wise Pandaren's Bed (DECOR!)
+		})),
 		filter(MISC, {
 			i(83765),	-- Angerhide Leg Armor
 			i(85568),	-- Brutal Leg Armor
@@ -1882,7 +1930,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		}),
 		n(ARMOR, {
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98612, {["timeline"] = {ADDED_5_4_0}})),	-- Belt of the Night Sky
+			-- #if NOT ANYCLASSIC
+			-- Wouter NOTE: these are not available in Classic for some reason
 			i(92726),	-- Bipsi's Gloves
+			-- #endif
 			i(82430),	-- Contender's Satin Amice
 			i(82436),	-- Contender's Satin Belt
 			i(82429),	-- Contender's Satin Cowl
@@ -2018,6 +2069,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 				i(90902),	-- Imperial Silkworm (PET!)
 			}))),
 		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(258302),	-- Pandaren Fishing Net (DECOR!)
+			i(247738),	-- Pandaren Meander Rug (DECOR!)
+		})),
 		-- #if AFTER BFA
 		filter(MISC, {
 			i(72986),	-- Heavy Windwool Bandage

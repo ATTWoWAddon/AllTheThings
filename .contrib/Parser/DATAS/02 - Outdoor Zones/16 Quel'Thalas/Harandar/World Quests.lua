@@ -1,0 +1,138 @@
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
+root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
+	m(MAP.MIDNIGHT.HARANDAR, {
+		n(WORLD_QUESTS, {
+			--	["sourceQuests"] = {
+			--	},
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
+				q(92086, {	-- A Taste of Accord
+					["coord"] = { 41.5, 24.3, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						i(252259),	-- Drifter Jelly (QI!)
+						o(574619, {	-- Rick Loamy Soil
+							i(252257),	-- Rich Loamy Soil (QI!)
+						}),
+						i(252234),	-- Savory Saptor Slice (QI!)
+						i(252246),	-- Sweet Beetle Wings (QI!)
+					},
+				}),
+				q(92162, {	-- A Refined Potadpalate
+					["coord"] = { 36.2, 46.1, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92582, {	-- Apply to Roots
+					["coord"] = { 41.4, 32.3, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = { i(269603) },	-- Verdant Stalker Sludge (QI!)
+				}),
+				q(92119, {	-- Bitterbloom Burn Down
+					["coord"] = { 32.1, 69.5, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92085, {	-- Claw Enforcement
+					["coords"] = {
+						{ 52.9, 52.3, MAP.MIDNIGHT.HARANDAR },
+						{ 62.9, 70.4, 2576 },	-- The Den
+					},
+					["groups"] = {
+						ach(61219),	-- No Time to Paws
+					},
+				}),
+				q(93053, {	-- Cleaning the Den
+					["coord"] = { 47.8, 51.6, 2576 },	-- The Den
+				}),
+				q(91555, {	-- Defenders of the Vale
+					["coord"] = { 58.7, 52.8, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(91490, {	-- Dousing Teldrassil
+					["coord"] = { 37.8, 29.1, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(91785, {	-- Ensporcelled
+					["coord"] = { 41.1, 66.0, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92583, {	-- Fungicide
+					["coord"] = { 71.8, 64.4, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(93046, {	-- Nestled Belongings
+					["coord"] = { 31.3, 85.5, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						i(256145),	-- Bird Whistle (QI!)
+						i(256144),	-- Bone Comb (QI!)
+						i(256138),	-- Har'old (QI!)
+						i(256143),	-- Wooden Spoon (QI!)
+					},
+				}),
+				q(91927, {	-- Ooze Booting
+					["coord"] = { 61.2, 56.6, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(91937, {	-- Portraits in the Vale
+					["coord"] = { 63.4, 49.6, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92184, {	-- Potadpole Wrangling
+					["coord"] = { 67.9, 41.6, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(91582, {	-- Pruning the Lattice
+					["coord"] = { 55.0, 29.3, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(93071, {	-- Rotten to the Core
+					["coord"] = { 46.4, 66.2, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92063, {	-- Special Assignment: A Hunter's Regret
+					["coord"] = { 67.7, 37.2, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(93013, {	-- Special Assignment: Push Back the Light
+					["coord"] = { 32.7, 77.4, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92062, {	-- Tending the Roots
+					["coord"] = { 35.9, 24.6, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(91802, {	-- The Best Bites are Bog Bugs
+					["coord"] = { 43.2, 61.3, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						i(260453),	-- Leech Tick (QI!)
+					},
+				}),
+				q(91981, {	-- To Poison and to Heal
+					["coord"] = { 43.6, 54.6, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						o(539208, {	-- Healing Waters of Ahl'ua
+							["coords"] = {
+								{ 39.7, 53.1, MAP.MIDNIGHT.HARANDAR },
+								{ 40.3, 56.3, MAP.MIDNIGHT.HARANDAR },
+								{ 40.3, 56.5, MAP.MIDNIGHT.HARANDAR },
+								{ 40.4, 54.4, MAP.MIDNIGHT.HARANDAR },
+								{ 40.4, 54.6, MAP.MIDNIGHT.HARANDAR },
+								{ 40.4, 59.7, MAP.MIDNIGHT.HARANDAR },
+								{ 40.5, 54.6, MAP.MIDNIGHT.HARANDAR },
+								{ 40.5, 59.7, MAP.MIDNIGHT.HARANDAR },
+								{ 41.0, 52.2, MAP.MIDNIGHT.HARANDAR },
+								{ 41.0, 57.9, MAP.MIDNIGHT.HARANDAR },
+								{ 42.3, 52.4, MAP.MIDNIGHT.HARANDAR },
+								{ 42.3, 52.5, MAP.MIDNIGHT.HARANDAR },
+								{ 43.1, 54.2, MAP.MIDNIGHT.HARANDAR },
+								{ 44.7, 54.1, MAP.MIDNIGHT.HARANDAR },
+							},
+							["groups"] = { i(269022) },	-- Healing Waters of Ahl'ua (QI!)
+						}),
+						i(269023),	-- Phytogenic Poison Part (QI!)
+					},
+				}),
+				q(91799, {	-- Trial of Flight
+					["coord"] = { 51.5, 76.8, MAP.MIDNIGHT.HARANDAR },
+				}),
+			}),
+		}),
+	}),
+}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.HARANDAR, {
+			n(QUESTS, {
+				hqt(94390),	-- Special Assignment: A Hunter's Regret was unlocked
+				hqt(94391),	-- Special Assignment: Push Back the Light was unlocked
+			}),
+		}),
+	}),
+}));

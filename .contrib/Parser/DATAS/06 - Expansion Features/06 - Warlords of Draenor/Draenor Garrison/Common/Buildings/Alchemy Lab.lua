@@ -26,25 +26,25 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 						}),
 						q(35343, {	-- The Young Alchemist
-							["sourceQuests"] = { 35342 },	-- The Mysterious Flask
-							["provider"] = { "n", 82466 },	-- Aenir
+							["sourceQuest"] = 35342,	-- The Mysterious Flask
+							["qg"] = 82466,	-- Aenir
 							["coord"] = { 47.2, 45.8, LUNARFALL },
 							["requireSkill"] = ALCHEMY,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(35103, {	-- The Alchemist
-							["sourceQuests"] = { 35058 },	-- The Mysterious Flask
-							["provider"] = { "n", 81166 },	-- Refugee Lo'nash
+							["sourceQuest"] = 35058,	-- The Mysterious Flask
+							["qg"] = 81166,	-- Refugee Lo'nash
 							["coord"] = { 45.4, 50.4, FROSTWALL },
 							["requireSkill"] = ALCHEMY,
 							["races"] = HORDE_ONLY,
 						}),
 						q(36641, {	-- Your First Alchemy Work Order
-							["provider"] = { "n", 77363 },	-- Mary Kearie
+							["qg"] = 77363,	-- Mary Kearie
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37568, {	-- Your First Alchemy Work Order
-							["provider"] = { "n", 79813 },	-- Albert de Hyde
+							["qg"] = 79813,	-- Albert de Hyde
 							["races"] = HORDE_ONLY,
 						}),
 					}),

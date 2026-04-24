@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	n(ZONE_DROPS, {
 		i(228963, {	-- Unfamiliar Emblem (QS!)
@@ -117,7 +118,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 		}),
 		i(244865, {	-- Pinnacle Cache (S3)
-			["sym"] = { -- [K'aresh Zone Rewards content]
+			["sym"] = {	-- [K'aresh Zone Rewards content]
 				{"select","mapID",KARESH},{"pop"},
 				{"where","headerID",ZONE_REWARDS},{"pop"},
 				{"where","headerID",ARMOR},{"finalize"},
@@ -129,7 +130,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["timeline"] = { ADDED_11_2_0 },
 		}),
 		i(228361, {	-- Seasoned Adventurer's Cache (S1)
-			["sym"] = { -- [Khaz Algar Zone Rewards content]
+			["sym"] = {	-- [Khaz Algar Zone Rewards content]
 				{"select","mapID",KHAZ_ALGAR},{"pop"},
 				{"where","headerID",ZONE_REWARDS},{"pop"},
 				{"where","headerID",ARMOR},{"finalize"},
@@ -145,7 +146,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 		}),
 		i(235639, {	-- Seasoned Adventurer's Cache (Undermine)
-			["sym"] = { -- [Undermine Zone Rewards content]
+			["sym"] = {	-- [Undermine Zone Rewards content]
 				{"select","mapID",KHAZ_ALGAR},{"pop"},
 				{"where","mapID",UNDERMINE},{"pop"},
 				{"where","headerID",ZONE_REWARDS},{"pop"},
@@ -170,6 +171,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
 		}),
+		currency(RESONANCE_CRYSTALS),
 	}),
 }));
 

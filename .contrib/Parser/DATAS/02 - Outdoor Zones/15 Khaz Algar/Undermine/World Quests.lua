@@ -1,10 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(WORLD_QUESTS, {
-			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
 				petbattle(q(86952, {	-- Approach the Croach
 					["provider"] = { "n", 237718 },	-- Creech
 					["coord"] = { 31.8, 79.6, UNDERMINE },
@@ -74,8 +77,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(234281),	-- Undermine Cartel Work
 					},
 				}),
-				--Under Rares
-				--Darkfuse Precipitant
+				-- Under Rares
+				-- Darkfuse Precipitant
 				q(85524, {	-- Disarming the Darkfuse
 					["coord"] = { 43.7, 27.0, UNDERMINE },
 				}),

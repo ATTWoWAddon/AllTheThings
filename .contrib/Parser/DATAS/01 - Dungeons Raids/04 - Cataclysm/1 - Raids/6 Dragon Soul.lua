@@ -1,9 +1,10 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(187, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Dragon Soul
-		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
+		["mapID"] = 409,	-- Wyrmrest Temple [Starting Area]
 		["coords"] = {
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
@@ -30,9 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["sourceQuest"] = 29801,	-- Proving Your Worth
 						["qg"] = 55476,	-- Lord Afrasastrasz
 						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
-						["cost"] = {
-							{ "i", 74752, 1 },	-- Solved Cipher
-						},
+						["cost"] = { { "i", 74752, 1 } },	-- Solved Cipher
 						["groups"] = {
 							i(74749, {	-- Charging Decoder Ring
 								["description"] = "Just log out for 12 hours. Read a book or something!",
@@ -55,9 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(74750, {	-- Singed Cipher
 								["qg"] = 55488,	-- Corastrasza
 								["coord"] = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
-								["cost"] = {
-									{ "i", 74748, 1 },	-- Charged Decoder Ring
-								},
+								["cost"] = { { "i", 74748, 1 } },	-- Charged Decoder Ring
 								["groups"] = {
 									i(74752),	-- Solved Cipher
 								},
@@ -86,9 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["sourceQuest"] = 30106,	-- The Deed is Done
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						["cost"] = {
-							{ "i", 77951, 333 },	-- Shadowy Gem
-						},
+						["cost"] = { { "i", 77951, 333 } },	-- Shadowy Gem
 					}),
 					q(30092, {	-- Our Man in Gilneas
 						["sourceQuest"] = 29847,	-- To Catch a Thief
@@ -119,9 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["sourceQuest"] = 30113,	-- Victory in the Depths
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						["cost"] = {
-							{ "i", 77952, 60 },	-- Elementium Gem Cluster
-						},
+						["cost"] = { { "i", 77952, 60 } },	-- Elementium Gem Cluster
 					}),
 					q(30106, {	-- The Deed is Done
 						["sourceQuest"] = 30093,	-- Assassinate Creed
@@ -224,10 +217,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				n(58153, {	-- Dasnurimi <Geologist & Conservator>
 					i(78890, {	-- Crystalline Geode
 						["description"] = "Contains random uncut Cataclysm gems.",
-						["cost"] = {{ "c", 614, 1 }},	-- Mote of Darkness
+						["cost"] = { { "c", 614, 1 } },	-- Mote of Darkness
 					}),
 					i(78891, {	-- Elementium-coated Geode
-						["cost"] = {{ "c", 615, 1 }},	-- Essence of Corrupted Deathwing
+						["cost"] = { { "c", 615, 1 } },	-- Essence of Corrupted Deathwing
 					}),
 				}),
 			}),
@@ -239,9 +232,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					-- Placeholder for criteria
 				})),
 				cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-				--	i(152979, {	-- Faceless Mindlasher (PET!)
-				--		["timeline"] = { ADDED_7_3_0 },
-				--	}),
+					-- i(152979, {	-- Faceless Mindlasher (PET!)
+					-- 	["timeline"] = { ADDED_7_3_0 },
+					-- }),
 				})),
 				cr(55689, e(317, {	-- Hagara the Stormbinder
 					-- Placeholder for criteria
@@ -253,20 +246,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					-- Placeholder for criteria
 				})),
 				cr(53879, e(318, {	-- Spine of Deathwing
-				--	i(152980, {	-- Corrupted Blood (PET!)
-				--		["timeline"] = { ADDED_7_3_0 },
-				--	}),
-				--	i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
-				--		["timeline"] = { ADDED_6_1_0 },
-				--	}),
+					-- i(152980, {	-- Corrupted Blood (PET!)
+					-- 	["timeline"] = { ADDED_7_3_0 },
+					-- }),
+					-- i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
+					-- 	["timeline"] = { ADDED_6_1_0 },
+					-- }),
 				})),
 				cr(56173, e(333, {	-- Madness of Deathwing
-				--	i(152981, {	-- Unstable Tendril (PET!)
-				--		["timeline"] = { ADDED_7_3_0 },
-				--	}),
-				--	i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
-				--		["timeline"] = { ADDED_6_1_0 },
-				--	}),
+					-- i(152981, {	-- Unstable Tendril (PET!)
+					-- 	["timeline"] = { ADDED_7_3_0 },
+					-- }),
+					-- i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
+					-- 	["timeline"] = { ADDED_6_1_0 },
+					-- }),
 					-- #if AFTER 9.1.5
 					currency(615, {	-- Essence of Corrupted Deathwing
 						["description"] = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
@@ -491,7 +484,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					cr(55308, e(324, {	-- Warlord Zon'ozz
 						ach(6128, {	-- Ping Pong Champion
 							-- #if AFTER 6.0.3
-							["description"] = "Can be soloed without a pet to hold the boss, the ball occationaly have an immune phase where it can pass through the boss without losing the strike.",
+							["description"] = "Can be soloed without a pet to hold the boss, the ball occasionally has an immune phase where it can pass through the boss without losing the strike.",
 							-- #endif
 						}),
 					})),
@@ -562,7 +555,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
 						ach(6180, {	-- Chromatic Champion
-							["description"] = "Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlextraxa on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alextraza in time. Make sure the aspect is properly assaulted to get credit.",
+							["description"] = "Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlexstrasza on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alexstrasza in time. Make sure the aspect is properly assaulted to get credit.",
 							["groups"] = {
 								crit(18658, {	-- Alexstrasza Assaulted First
 									["provider"] = { "n", 56099 },	-- Alexstrasza
@@ -919,8 +912,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(191734),	-- Motion Sick Peon's Magical Elixir
 				})),
 			}),
-			--	Misc descriptions
-			n(53879, { -- Spine of Deathwing
+			-- Misc descriptions
+			n(53879, {	-- Spine of Deathwing
 				["sharedDescription"] = "For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in it's place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amangamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",
 				["groups"] = {
 					n(55891),	-- Ka'anu Reevs

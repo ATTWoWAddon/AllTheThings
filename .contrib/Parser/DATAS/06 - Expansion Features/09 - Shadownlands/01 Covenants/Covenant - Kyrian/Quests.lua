@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local CONDUIT_GROUP = {
 	-- DK
 	i(182113),	-- Fleeting Wind
@@ -47,6 +48,7 @@ local LFR_WEAPON_GROUP = {
 	i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(QUESTS, {
@@ -262,10 +264,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 			}),
 			q(63002, {	-- Dangerous to Go Alone
+				-- TODO: verify coordinates and SQs for this version (possibly when you bypass the 'tour' of Elysian Hold and say you already know your way around?)
+				-- ["sourceQuests"] = {  },	--
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
-			--	TODO: verify coordinates and SQs for this version (possibly when you bypass the 'tour' of Elysian Hold and say you already know your way around?)
-			--	["sourceQuests"] = {  },	--
 			}),
 			q(61772, {	-- Dark Developments
 				["sourceQuests"] = { 61769 },	-- Fight and Flight
@@ -346,7 +348,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			q(58793, {	-- Faith Through the Darkness
 				["sourceQuests"] = { 58792 },	-- Where a Soul Belongs
 				["provider"] = { "n", 162542 },	-- Kleia
-				["coord"] = { 43.6, 51.6, 1671 },	-- Oribos
+				["coord"] = { 43.6, 51.6, ORIBOS_RING },
 			}),
 			q(57117, {	-- Fallen to Their Vices
 				["sourceQuests"] = {
@@ -829,9 +831,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 61782 },	-- Pursuit of Justice
 				["provider"] = { "n", 173193 },	-- Xandria
 				["coord"] = { 31.0, 29.1, MALDRAXXUS },
-				["groups"] = {
-					i(182334),	-- Fleshshaper's Heart (QI!)
-				},
+				["groups"] = { i(182334) },	-- Fleshshaper's Heart (QI!)
 			}),
 			q(58939, {	-- The Blue Seed
 				["sourceQuests"] = {
@@ -840,9 +840,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 				["provider"] = { "n", 165110 },	-- Pelagos
 				-- no coords, is your 'pet'
-				["groups"] = {
-					i(176446),	-- Ripened Anima Seed (QI!)
-				},
+				["groups"] = { i(176446) },	-- Ripened Anima Seed (QI!)
 			}),
 			q(61770, {	-- The Butchers of Bastion
 				["sourceQuests"] = { 61769 },	-- Fight and Flight

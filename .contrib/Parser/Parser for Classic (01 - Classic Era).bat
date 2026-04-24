@@ -1,1 +1,1 @@
-"Parser.exe" config=".config/classic/01 - Classic Era.config"
+"Parser.exe" baseconfig=.config/retail/retail.config config=".config/classic/01 - Classic Era.config"

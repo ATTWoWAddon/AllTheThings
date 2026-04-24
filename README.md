@@ -28,7 +28,7 @@
 Do you find yourself completing old content just so that you can get literally everything for your Collections? Say no more! ALL THE THINGS will help you with your endeavor by giving you the ability to track your completion for everything.
 
 ## Features
-- Supports tracking of Achievements, Quests, Appearances, Mounts, Pets, Toys, Titles, and much more.
+- Supports tracking of Achievements, Quests, Appearances, Mounts, Pets, Toys, Titles, Decor, and much more.
 - Primary Collections Window is moveable and resizeable.
 - Auto Minilist
 - Datatext Support

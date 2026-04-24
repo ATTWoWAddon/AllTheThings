@@ -81,6 +81,13 @@ CATA_FISHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
+CLASSIC_CATA_FISHING = appendGroups(CLASSIC_FISHING,
+-- #if AFTER CATA
+CATA_FISHING
+-- #else
+{}
+-- #endif
+);
 MOP_FISHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110410, {	-- Fishing (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
@@ -146,4 +153,11 @@ TWW_FISHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(456588),	-- Isle of Dorn
 	r(471365, {["timeline"] = {ADDED_11_1_0}}),	-- Undermine
 	r(456150),	-- What is an Algari Weaverline?
+});
+MID_FISHING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	r(471008),	-- Midnight Fishing
+	r(1225322),	-- Eversong Woods
+	r(1225340),	-- Midnight Anglin'
+	r(1265725),	-- Perception
+	r(1265717),	-- Skill
 });

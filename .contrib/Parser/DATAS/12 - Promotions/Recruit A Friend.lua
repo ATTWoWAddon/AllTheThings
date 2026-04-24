@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 -- #if AFTER 2.3.0
 RECRUIT_A_FRIEND = createHeader({
 	readable = "Recruit A Friend",
@@ -9,6 +10,7 @@ RECRUIT_A_FRIEND = createHeader({
 		en = [[~REFER_A_FRIEND]],
 	},
 });
+
 root(ROOTS.Promotions, {
 	-- Retired Rewards
 	n(RECRUIT_A_FRIEND, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
@@ -71,40 +73,38 @@ root(ROOTS.Promotions, {
 
 		-- Desert Path
 		iensemble(173300, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 } }, {	-- Ensemble: Renowned Explorer's Attire
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 		})),
 		i(171363, {	-- Illusion: Stinging Sands (ILLUSION!)
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173299, {	-- Explorer's Jungle Hopper (MOUNT!)
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173297, {	-- Explorer's Dunetrekker (MOUNT!)
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173298, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 } }, {	-- Explorer's Certification
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
-			["groups"] = {
-				title(410),	-- Renowned Explorer <Name>
-			},
+			["groups"] = { title(410) },	-- Renowned Explorer <Name>
 		})),
 		i(171333, {	-- Renowned Explorer's Rucksack
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(171361, {	-- Renowned Explorer's Tabard
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173296, {	-- Rikki (PET!)
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 	})),
@@ -120,15 +120,15 @@ root(ROOTS.Promotions, {
 		ach(17426, {	-- Toolbox Trouble
 			["timeline"] = { ADDED_10_0_7 },
 		}),
-		i(204081, {	-- Shredderizing Glove
+		i(204081, {	-- Shredderizing Glove (COSMETIC!)
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { ADDED_10_0_7 },
 		}),
-		i(204082, {	-- Sappy Buddy
+		i(204082, {	-- Sappy Buddy (COSMETIC!)
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { ADDED_10_0_7 },
 		}),
-		i(204086, {	-- S.C.A.N.N.E.R. Mk3
+		i(204086, {	-- S.C.A.N.N.E.R. Mk3 (COSMETIC!)
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { ADDED_10_0_7 },
 		}),

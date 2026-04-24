@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(PANDARIA, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		m(THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Starter Zones
@@ -21,8 +22,11 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(1216, {	-- Shang Xi's Academy
+						-- #if BEFORE 11.2.7
+						-- Exalted is now obtainable with Heritage questline for Pandarens
 						["description"] = "The maximum obtainable reputation with this faction is 8510/12000 (Honored).",
 						["minReputation"] = { 1216, HONORED + 8510 },	-- Shang Xi's Academy, Honored + change.
+						-- #endif
 					}),
 				}),
 				n(QUESTS, {
@@ -66,6 +70,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					q(30989, {	-- An Old Pit Fighter
+						["sourceQuest"] = 30988,	-- The Alliance Way
+						["qg"] = 61796,	-- King Varian Wrynn
+						["coord"] = { 82.6, 28.2, STORMWIND_CITY },
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
+					}),
 					q(29410, {	-- Aysa of the Tushui
 						["sourceQuest"] = 29409,	-- The Disciple's Challenge
 						["qg"] = 53566,	-- Master Shang Xi
@@ -73,7 +84,7 @@ root(ROOTS.Zones, {
 					}),
 					q(29784, {	-- Balanced Perspective
 						["sourceQuests"] = {
-							29779, 	-- The Direct Solution
+							29779,	-- The Direct Solution
 							29780,	-- Do No Evil
 							29781,	-- MOnkey Advisory Warning
 						},
@@ -149,7 +160,7 @@ root(ROOTS.Zones, {
 									{ "n", 56007 },	-- Darkened Horror
 									{ "n", 56008 },	-- Darkened Terror
 								},
-								["coord"] = { 38, 75.4, THE_WANDERING_ISLE_STARTING_ZONE },
+								["coord"] = { 38.0, 75.4, THE_WANDERING_ISLE_STARTING_ZONE },
 							}),
 							i(74607),	-- Boots of Courage
 							i(74608),	-- Legguards of the Brave
@@ -235,6 +246,14 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					q(31014, {	-- Hellscream's Gift
+						["sourceQuest"] = 31013,	-- The Horde Way
+						["qg"] = 62092,	-- Garrosh Hellscream
+						["coord"] = { 70.6, 30.8, ORGRIMMAR },
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["maps"] = { 503 },	-- Brawl'gar Arena
+						["races"] = { PANDAREN_HORDE },
+					}),
 					q(29422, {	-- Huo, the Spirit of Fire
 						["sourceQuest"] = 29421,	-- Only the Worthy Shall Pass
 						["qg"] = 54135,	-- Master Li Fei
@@ -289,7 +308,7 @@ root(ROOTS.Zones, {
 									{ "o", 209326 },	-- Loose Dogwood Root
 									{ "o", 209327 },	-- Loose Dogwood Root
 								},
-								["coord"] = { 48, 31.8, THE_WANDERING_ISLE_STARTING_ZONE },
+								["coord"] = { 48.0, 31.8, THE_WANDERING_ISLE_STARTING_ZONE },
 							}),
 						},
 					}),
@@ -578,7 +597,7 @@ root(ROOTS.Zones, {
 							29677,	-- The Sun Pearl
 						},
 						["qg"] = 55020,	-- Old Man Liang
-						["coord"] = { 78.4, 43, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 78.4, 43.0, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Cross to the Pool of Reflection
 								["description"] = "Jump into the swirling blue effects on the closest rock to the shore to jump up the rest of the stones to ledge.",
@@ -604,7 +623,7 @@ root(ROOTS.Zones, {
 									{ "o", 209671 },	-- Kun-Pai Ritual Charm
 									{ "o", 209774 },	-- Kun-Pai Ritual Charm
 								},
-								["coord"] = { 23, 47.3, THE_WANDERING_ISLE_STARTING_ZONE },
+								["coord"] = { 23.0, 47.3, THE_WANDERING_ISLE_STARTING_ZONE },
 							}),
 						},
 					}),
@@ -768,6 +787,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					q(30988, {	-- The Alliance Way
+						["sourceQuest"] = 30987,	-- Joining the Alliance
+						["qg"] = 61796,	-- King Varian Wrynn
+						["coord"] = { 82.6, 28.2, STORMWIND_CITY },
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
+					}),
 					q(29664, {	-- The Challenger's Fires
 						["sourceQuest"] = 29420,	-- The Spirit's Guardian
 						["qg"] = 54135,	-- Master Li Fei
@@ -855,6 +881,13 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
+					}),
+					q(31013, {	-- The Horde Way
+						["sourceQuest"] = 31012,	-- Joining the Horde
+						["qg"] = 39605,	-- Garrosh Hellscream
+						["coord"] = { 48.2, 70.6, ORGRIMMAR },
+						["timeline"] = { ADDED_5_0_4 },
+						["races"] = { PANDAREN_NEUTRAL },
 					}),
 					q(29661, {	-- The Lesson of Dry Fur
 						["sourceQuest"] = 29521,	-- The Singing Pools
@@ -1160,7 +1193,7 @@ root(ROOTS.Zones, {
 							}),
 							objective(2, {	-- Uncover the source of Shen-zin Su's pain
 								["provider"] = { "n", 57769 },	-- Shen-zin Su
-								["coord"] = { 0, 50, THE_WANDERING_ISLE_STARTING_ZONE },
+								["coord"] = { 0.0, 50.0, THE_WANDERING_ISLE_STARTING_ZONE },
 							}),
 						},
 					}),
@@ -1264,7 +1297,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Guardian of the Elders slain
 								["provider"] = { "n", 56274 },	-- Guardian of the Elders
-								["coord"] = { 23, 52.8, THE_WANDERING_ISLE_STARTING_ZONE },
+								["coord"] = { 23.0, 52.8, THE_WANDERING_ISLE_STARTING_ZONE },
 							}),
 						},
 					}),

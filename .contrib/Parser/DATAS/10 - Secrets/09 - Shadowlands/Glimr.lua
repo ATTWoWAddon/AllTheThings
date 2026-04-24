@@ -36,7 +36,10 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 169415 },	-- Glimmerfin Oracle
 				["coord"] = { 17.1, 93.8, GRIZZLY_HILLS },
 				["groups"] = {
-					i(180026),	-- Giant Pearl (QI!)
+					o(352915, {	-- Giant Pearl
+						["coord"] = { 17.1, 93.8, GRIZZLY_HILLS },
+						["groups"] = { i(180026) },	-- Giant Pearl (QI!)
+					}),
 				},
 			}),
 			q(60617, {	-- Trainer's Test
@@ -49,9 +52,18 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 169415 },	-- Glimmerfin Oracle
 				["coord"] = { 17.1, 93.8, GRIZZLY_HILLS },
 				["groups"] = {
-					i(180031),	-- Bulbous Seaweed Stalk (QI!)
-					i(180033),	-- Warm Seaweed Stalk (QI!)
-					i(180032),	-- Young Seaweed Stalk (QI!)
+					o(352926, {	-- Bulbous Seaweed Stalk
+						["coord"] = { 12.7, 96.7, GRIZZLY_HILLS },
+						["groups"] = { i(180031) },	-- Bulbous Seaweed Stalk (QI!)
+					}),
+					o(352924, {	-- Warm Seaweed Stalk
+						["coord"] = { 11.2, 95.0, GRIZZLY_HILLS },
+						["groups"] = { i(180033) },	-- Warm Seaweed Stalk (QI!)
+					}),
+					o(352925, {	-- Young Seaweed Stalk
+						["coord"] = { 9.0, 94.2, GRIZZLY_HILLS },
+						["groups"] = { i(180032) },	-- Young Seaweed Stalk (QI!)
+					}),
 				},
 			}),
 			q(60620, {	-- Guardian of the Smallest

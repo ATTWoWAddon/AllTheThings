@@ -1,37 +1,38 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(ACHIEVEMENTS, {
 		ach(13711),	-- A Fistful of Manapearls
-		ach(13762, bubbleDownSelf({["races"] = ALLIANCE_ONLY},{	-- Aqua Team Murder Force (A)
-			ach(13744),	-- Seasoned: Bladesman Inowari
-			ach(13745),	-- Seasoned: Farseer Ori
-			ach(13743),	-- Seasoned: Hunter Akana
-			ach(13754),	-- Veteran: Bladesman Inowari
-			ach(13755),	-- Veteran: Farseer Ori
-			ach(13753),	-- Veteran: Hunter Akana
-			ach(13704, {	-- Nautical Battlefield Training
-				["description"] = "Requires hitting Rank 20 with each bodyguard.",
-			}),
-			ach(13759),	-- Battle-Scarred: Bladesman Inowari
-			ach(13760),	-- Battle-Scarred: Farseer Ori
-			ach(13758),	-- Battle-Scarred: Hunter Akana
+		-- Alliance Companions
+		a(ach(13744)),	-- Seasoned: Bladesman Inowari
+		a(ach(13745)),	-- Seasoned: Farseer Ori
+		a(ach(13743)),	-- Seasoned: Hunter Akana
+		a(ach(13754)),	-- Veteran: Bladesman Inowari
+		a(ach(13755)),	-- Veteran: Farseer Ori
+		a(ach(13753)),	-- Veteran: Hunter Akana
+		a(ach(13704, {	-- Nautical Battlefield Training
+			["description"] = "Requires hitting Rank 20 with each bodyguard.",
 		})),
-		ach(13761, bubbleDownSelf({["races"] = HORDE_ONLY},{	-- Aqua Team Murder Force (H)
-			ach(13746),	-- Seasoned: Neri Sharpfin
-			ach(13747),	-- Seasoned: Poen Gillbrack
-			ach(13748),	-- Seasoned: Vim Brineheart
-			ach(13749),	-- Veteran: Neri Sharpfin
-			ach(13751),	-- Veteran: Poen Gillbrack
-			ach(13752),	-- Veteran: Vim Brineheart
-			ach(13645, {	-- Nautical Battlefield Training
-				["description"] = "Requires hitting Rank 20 with each bodyguard.",
-			}),
-			ach(13750),	-- Battle-Scarred: Neri Sharpfin
-			ach(13756),	-- Battle-Scarred: Poen Gillbrack
-			ach(13757),	-- Battle-Scarred: Vim Brineheart
+		a(ach(13759)),	-- Battle-Scarred: Bladesman Inowari
+		a(ach(13760)),	-- Battle-Scarred: Farseer Ori
+		a(ach(13758)),	-- Battle-Scarred: Hunter Akana
+		a(ach(13762)),	-- Aqua Team Murder Force (A)
+		-- Horde Companions
+		h(ach(13746)),	-- Seasoned: Neri Sharpfin
+		h(ach(13747)),	-- Seasoned: Poen Gillbrack
+		h(ach(13748)),	-- Seasoned: Vim Brineheart
+		h(ach(13749)),	-- Veteran: Neri Sharpfin
+		h(ach(13751)),	-- Veteran: Poen Gillbrack
+		h(ach(13752)),	-- Veteran: Vim Brineheart
+		h(ach(13645, {	-- Nautical Battlefield Training
+			["description"] = "Requires hitting Rank 20 with each bodyguard.",
 		})),
+		h(ach(13750)),	-- Battle-Scarred: Neri Sharpfin
+		h(ach(13756)),	-- Battle-Scarred: Poen Gillbrack
+		h(ach(13757)),	-- Battle-Scarred: Vim Brineheart
+		h(ach(13761)),	-- Aqua Team Murder Force (H)
 		ach(13763, {	-- Back to the Depths!
 			["description"] = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time). A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
 		}),

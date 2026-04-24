@@ -407,7 +407,7 @@ root(ROOTS.Zones, {
 						["aqd"] = {
 							["qgs"] = {
 								64572,	-- Sara Finkleswitch
-								63596,	-- Audrey Burnhelp
+								63596,	-- Audrey Burnhep
 							},
 							["coords"] = {
 								{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
@@ -459,24 +459,27 @@ root(ROOTS.Zones, {
 							i(80484),	-- Explosive Keg (QI!)
 						},
 					})),
-					RemovedWithTOT(q(32016, {	-- Elder Charms of Good Fortune
-						["qg"] = 64029,	-- Elder Lin
-						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
+					{
+						["aqd"] = q(32016, {	-- Elder Charm of Good Fortune (A)
+							["qg"] = 64029,	-- Elder Lin
+							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						["hqd"] = q(32017, {	-- Elder Charm of Good Fortune (H)
+							["qg"] = 63996,	-- Elder Liao
+							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						["timeline"] = {
+							ADDED_5_0_4,
+							-- #if NOT ANYCLASSIC
+							REMOVED_5_2_0,
+							-- #endif
+						},
+						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
 						["isWeekly"] = true,
 						["groups"] = {
 							currency(697),	-- Elder Charm of Good Fortune
 						},
-					})),
-					RemovedWithTOT(q(32017, {	-- Elder Charms of Good Fortune
-						["qg"] = 63996,	-- Elder Lin
-						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["groups"] = {
-							currency(697),	-- Elder Charm of Good Fortune
-						},
-					})),
+					},
 					applyclassicphase(MOP_PHASE_ESCALATION, {	-- Heroic Deeds
 						["aqd"] = q(32900, {	-- Heroic Deeds (A)
 							["qg"] = 64101,	-- Taijin the Cyclone
@@ -489,7 +492,7 @@ root(ROOTS.Zones, {
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",
 						["timeline"] = { ADDED_5_3_0 },
 						["groups"] = {
-							i(98546),  -- Bulging Heroic Cache of Treasures
+							i(98546), 	-- Bulging Heroic Cache of Treasures
 						},
 					}),
 					-- Wouter NOTE: it's been confirmed by Blizzard that Into the Vale quests will NOT be added to MoP Classic (not deemed important enough to fix)
@@ -523,6 +526,41 @@ root(ROOTS.Zones, {
 						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					})),
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
+						["aqd"] = q(32719, {	-- Mogu Runes of Fate (A)
+							["qg"] = 64029,	-- Elder Lin
+							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						["hqd"] = q(32718, {	-- Mogu Runes of Fate (H)
+							["qg"] = 63996,	-- Elder Liao
+							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
+						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+						["isWeekly"] = true,
+						["groups"] = {
+							currency(752),	-- Mogu Rune of Fate
+						},
+					}),
+					-- #if ANYCLASSIC
+					-- CRIEVE NOTE: They added this new version of the quests probably to prevent them from randomly disappearing in later phases. We'll see if this set gets removed.
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(94404, {	-- Mogu Runes of Fate (Both)
+						["aqd"] = {
+							["qg"] = 64029,	-- Elder Lin
+							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["hqd"] = {
+							["qg"] = 63996,	-- Elder Liao
+							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["timeline"] = { ADDED_5_5_3 },
+						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+						["isWeekly"] = true,
+						["groups"] = {
+							currency(752),	-- Mogu Rune of Fate
+						},
+					})),
+					-- #endif
 					RemovedWithSOO(q(30633, {	-- Out with the Scouts
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
 						["qg"] = 58465,	-- Anji Autumnlight
@@ -742,7 +780,7 @@ root(ROOTS.Zones, {
 							i(101766), 	-- Recipe: Spiced Blossom Soup (RECIPE!)
 							i(101769), 	-- Recipe: Stuffed Lushrooms (RECIPE!)
 							i(103624),	-- Treasures of the Vale
-							applyclassicphase(MOP_PHASE_ONE, i(76061, { ["timeline"] = { ADDED_5_0_4 } })),	-- Spirit of Harmony
+							--applyclassicphase(MOP_PHASE_ONE, i(76061, { ["timeline"] = { ADDED_5_0_4 } })),	-- Spirit of Harmony // These are world drops
 						})),
 						{}),
 					}),
@@ -1019,20 +1057,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 82.8, 30.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["groups"] = sharedData({
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "g", 20000000 }},		-- 2,000g
+							["cost"] = { { "g", 20000000 } },		-- 2,000g
 						}, {
-							i(257354, {	-- Scroll of K'aresh's Fall (DECOR!)
-								["sourceAchievement"] = 42187,	-- Lorewalking: Ethereal Wisdom
-							}),
-							i(257351, {	-- Tale of the Penultimate Lich King (DECOR!)
-								["sourceAchievement"] = 42189,	-- Lorewalking: The Lich King
-							}),
-							i(245332, {	-- Tome of Silvermoon Intrigue (DECOR!)
-								["sourceAchievement"] = 61467,	-- Lorewalking: The Elves of Quel'thalas
-							}),
-							i(257355, {	-- Tome of the Survivor (DECOR!)
-								["sourceAchievement"] = 42188,	-- Lorewalking: Blade's Bane
-							}),
+							i(257354),	-- Scroll of K'aresh's Fall (DECOR!)
+							i(257351),	-- Tale of the Penultimate Lich King (DECOR!)
+							i(245332),	-- Tome of Silvermoon Intrigue (DECOR!)
+							i(257355),	-- Tome of the Survivor (DECOR!)
 						}),
 					}),
 					n(65172, {	-- Len at Arms <Adventuring Supplies>
@@ -1162,7 +1192,7 @@ root(ROOTS.Zones, {
 					}),
 					i(86547),	-- Skyshard
 					i(86546, {	-- Sky Crystal
-						["cost"] = {{ "i", 86547, 10 }},	-- 10x Skyshard
+						["cost"] = { { "i", 86547, 10 } },	-- 10x Skyshard
 					}),
 				}),
 			},

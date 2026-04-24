@@ -24,14 +24,14 @@ root(ROOTS.ExpansionFeatures,
 									77367,	-- Archmage Kem (A)
 									79836,	-- Gez'la (H)
 								},
-								["cost"] = { { "i", 117491, 25 } },	-- x25 Ogre Waystone
+								["cost"] = { { "i", 117491, 25 } },	-- 25x Ogre Waystone
 							}),
 							q(38354, {	-- Portable Portals
-								["provider"] = { "n", 77367 },	-- Archmage Kem
+								["qg"] = 77367,	-- Archmage Kem
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(38351, {	-- Portable Portals
-								["provider"] = { "n", 79836 },	-- Gez'la
+								["qg"] = 79836,	-- Gez'la
 								["races"] = HORDE_ONLY,
 							}),
 						}),

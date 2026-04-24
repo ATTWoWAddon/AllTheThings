@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 	-- #if BEFORE MOP
 	["lore"] = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
@@ -60,6 +61,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					iensemble(142273, {	-- Ensemble: Blackened Defias Armor
 						["timeline"] = { ADDED_7_1_0 },
 						["classes"] = { ROGUE },
+						["_IgnoreSharedEnsembleByQuestID"] = true,	-- some NYI mage ensemble shared questID
 					}),
 				},
 			}),
@@ -111,7 +113,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27842, {	-- Only the Beginning
-				--["sourceQuest"] = 28004,	-- Adventurers Wanted: The Deadmines [Horde]
+				-- ["sourceQuest"] = 28004,	-- Adventurers Wanted: The Deadmines [Horde]
 				["qg"] = 46889,	-- Kagtha
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
@@ -124,7 +126,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(214, {	-- Red Silk Bandanas
-				["sourceQuest"] = 153,	-- Red Leather Bandanas
+				["sourceQuests"] = {
+					153,	-- Red Leather Bandanas
+					155,	-- The Defias Brotherhood
+				},
 				["qg"] = 820,	-- Scout Riell <The People's Militia>
 				["coord"] = { 56.7, 47.4, WESTFALL },
 				["timeline"] = { REMOVED_4_0_3 },
@@ -228,7 +233,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27756, {	-- The Foreman
-				--["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
+				-- ["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
 				["providers"] = {
 					{ "n", 46612 },	-- Lieutenant Horatio Laine
 					{ "i", 62334 },	-- Stormwind Communicator Mk. II
@@ -265,7 +270,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					-- #if AFTER WRATH
 					{ 57.7, 47.9, STORMWIND_CITY },
 					-- #else
-					{ 49, 30.2, STORMWIND_CITY },
+					{ 49.0, 30.2, STORMWIND_CITY },
 					-- #endif
 				},
 				["timeline"] = { REMOVED_4_0_3 },

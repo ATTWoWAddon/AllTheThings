@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(ASHENVALE, {
 		["lore"] = "Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",
@@ -18,7 +19,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13853,	-- Return Fire
 						13979,	-- The Goblin Braintrust
 						13987,	-- The Last Stand
-						25607,	-- Ze Gnomecorder -- TODO:: verify if actually needed
+						25607,	-- Ze Gnomecorder	-- TODO:  verify if actually needed
 						26482,	-- True Power of the Rod
 						13886,	-- Vortex
 						13869,	-- Recover the Remains
@@ -40,7 +41,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13619,	-- Final Report
 						13805,	-- Pierce the Heart
 						13873,	-- Sheelah's Last Wish
-						13842,	-- Dread Head Redemption -- in orgrimmar
+						13842,	-- Dread Head Redemption	-- in orgrimmar
 						13920,	-- Before You Go...
 						13901,	-- Deep Despair
 						13883,	-- Lousy Pieces of Ship
@@ -191,6 +192,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179487, {	-- Waterlogged Footlocker
+					["coord"] = { 13.8, 24.7, ASHENVALE },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 70,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66136, {	-- Analynn <Master Pet Tamer>
 					["coord"] = { 20.2, 29.6, ASHENVALE },
@@ -230,14 +240,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					icon = 131013,
 					text = {
 						en = "Defeat a Lieutenant",
-						es = "Derrota a un Teniente",
 						de = "Besiege einen Leutnant",
+						es = "Derrota a un Teniente",
+						mx = "Derrota a un Teniente",
 						fr = "Battre un Lieutenant",
 						it = "Sconfiggi un Tenente",
+						ko = "중위를 처치하세요",
 						pt = "Derrote um Tenente",
 						ru = "Победить лейтенанта",
-						ko = "중위를 처치하세요",
 						cn = "击败一名中尉",
+						-- TODO: tw = "",
 					},
 				}), {
 					["aqd"] = {
@@ -282,14 +294,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					icon = [[~_.asset("Category_PvP")]],
 					text = {
 						en = "Win the Battle",
-						es = "Gana la Batalla",
 						de = "Gewinne den Kampf",
+						es = "Gana la Batalla",
+						mx = "Gana la Batalla",
 						fr = "Gagnez la Bataille",
 						it = "Vinci la Battaglia",
+						ko = "전투에서 승리하세요",
 						pt = "Ganhe a Batalha",
 						ru = "Выиграй битву",
-						ko = "전투에서 승리하세요",
 						cn = "赢得战斗",
+						-- TODO: tw = "",
 					},
 				}), {
 					["aqd"] = {
@@ -881,7 +895,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Dal Bloodclaw's Skull
 							["provider"] = { "i", 5544 },	-- Dal Bloodclaw's Skull
 							["coord"] = { 37.6, 35.4, ASHENVALE },
-							["cr"] = 3987,	--  Dal Bloodclaw
+							["cr"] = 3987,	-- Dal Bloodclaw
 						}),
 						i(1970, {	-- Restoring Balm
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1181,6 +1195,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5456, 1 },	-- Divining Scroll
 								{ "i", 12220, 5 },	-- Intact Elemental Bracer
 							},
+						}),
+						i(5456),	-- Divining Scroll
+						i(12220, {	-- Intact Elemental Bracer
 							["crs"] = {
 								3917,	-- Befouled Water Elemental
 								12759,	-- Tideress
@@ -1275,7 +1292,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5493 },	-- Elune's Tear
 								{ "o", 19015 },	-- Elune's Tear
 							},
-							["coord"] = { 46, 46.5, ASHENVALE },
+							["coord"] = { 46.0, 46.5, ASHENVALE },
 						}),
 					},
 				}),
@@ -1592,7 +1609,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 74.0, 60.6, ASHENVALE },
 						-- #else
-						{ 73.6, 60, ASHENVALE },
+						{ 73.6, 60.0, ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -1694,7 +1711,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 178227 },	-- Murgut's Totem Basket
 							},
 							["coord"] = { 56.5, 63.5, ASHENVALE },
-							["cost"] = {{ "i", 16972, 1 }},	-- Karang's Banner
+							["cost"] = { { "i", 16972, 1 } },	-- Karang's Banner
 							["cr"] = 12918,	-- Chief Murgut
 						}),
 						i(17005),	-- Boorguard Tunic
@@ -1877,8 +1894,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(24118, {	-- Signet of Argas
 							["timeline"] = { ADDED_2_0_1 },
 						}),
-						i(45476),	-- Seeker's Fel Spear (QI!)
-						i(45477),	-- Gorgannon's Flaming Blade (QI!)
 					},
 				}),
 				q(9522, {	-- Never Again! [Alliance]
@@ -2172,7 +2187,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 19022 },	-- Worn Chest
 							},
 							["coord"] = { 54.4, 35.3, ASHENVALE },
-							["cost"] = {{ "i", 5475, 1 }},	-- Wooden Key
+							["cost"] = { { "i", 5475, 1 } },	-- Wooden Key
 							["crs"] = {
 								3834,	-- Crazed Ancient
 								3919,	-- Withered Ancient
@@ -2501,6 +2516,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5456, 1 },	-- Divining Scroll
 								{ "i", 12220, 5 },	-- Intact Elemental Bracer
 							},
+						}),
+						i(5456),	-- Divining Scroll
+						i(12220, {	-- Intact Elemental Bracer
 							["crs"] = {
 								3917,	-- Befouled Water Elemental
 								12759,	-- Tideress
@@ -2537,7 +2555,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 409315 },	-- Shattered Orb
 						{ "i", 209800 },	-- Orb Fragments
 					},
-					["coord"] = { 89.4, 77, ASHENVALE },
+					["coord"] = { 89.4, 77.0, ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["groups"] = {
@@ -2579,10 +2597,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Ring of Zoram
 							["provider"] = { "i", 5445 },	-- Ring of Zoram
 							["coords"] = {
-								{ 7.2, 13, ASHENVALE },
+								{ 7.2, 13.0, ASHENVALE },
 								{ 9.4, 15.2, ASHENVALE },
 								{ 12.4, 19.6, ASHENVALE },
-								{ 11, 29.6, ASHENVALE },
+								{ 11.0, 29.6, ASHENVALE },
 							},
 							["crs"] = {
 								3943,	-- Ruuzel
@@ -2601,7 +2619,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 73.8, 62.4, ASHENVALE },
 						-- #else
-						{ 73, 61.4, ASHENVALE },
+						{ 73.0, 61.4, ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2810,20 +2828,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					icon = 131038,
 					text = {
 						en = "Speak to the Dead",
-						es = "Hablar con los Muertos",
 						de = "Sprich mit den Toten",
+						es = "Hablar con los Muertos",
+						-- TODO: mx = "",
 						fr = "Parlez aux Morts",
 						it = "Parla con i Morti",
+						ko = "죽은 자와 대화",
 						pt = "Fale com os Mortos",
 						ru = "Поговорите с мертвыми",
-						ko = "죽은 자와 대화",
 						cn = "与死者交谈",
+						-- TODO: tw = "",
 					},
 				}), {
 					["questID"] = 78907,	-- Dead Twilight Cultist HQT
 					["qg"] = 212334,	-- Dead Twilight Cultist
 					["coord"] = { 17.3, 26.7, ASHENVALE },
-					["cost"] = {{ "i", 210708, 1 }},	-- Elixir of Coalesced Regret
+					["cost"] = { { "i", 210708, 1 } },	-- Elixir of Coalesced Regret
 					["timeline"] = { REMOVED_2_0_1 },
 					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 				})),
@@ -3195,7 +3215,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6504, {	-- The Lost Pages
 					["qg"] = 12718,	-- Gurda Ragescar
-					["coord"] = { 70, 71, ASHENVALE },
+					["coord"] = { 70.0, 71.0, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
@@ -3330,7 +3350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Free the Highborne soul in Night Run
 							["provider"] = { "o", 19901 },	-- Circle of Imprisonment
-							["coord"] = { 66.7, 57, ASHENVALE },
+							["coord"] = { 66.7, 57.0, ASHENVALE },
 						}),
 						objective(2, {	-- Free the Highborne soul in Satyrnaar
 							["provider"] = { "o", 20352 },	-- Circle of Imprisonment
@@ -3649,7 +3669,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6641, {	-- Vorsha the Lasher
 					["qg"] = 12717,	-- Muglash
-					["coord"] = { 12, 34.6, ASHENVALE },
+					["coord"] = { 12.0, 34.6, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 7),
 					["groups"] = {
@@ -3731,9 +3751,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(6581, {	-- Warsong Saw Blades
 							["qg"] = 12724,	-- Pixel
-							["coord"] = { 73, 61.4, ASHENVALE },
+							["coord"] = { 73.0, 61.4, ASHENVALE },
 							["timeline"] = { REMOVED_4_0_3 },
-							["cost"] = {{ "i", 4369, 1 }},	-- Deadly Blunderbuss
+							["cost"] = { { "i", 4369, 1 } },	-- Deadly Blunderbuss
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
 							["lvl"] = 22,
@@ -4298,8 +4318,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(211531, {	-- Prophecy of Seven Visitors
 							["description"] = "Go north to the entrance of the cave. Don't go in the cave, instead climb up the big tree to the left and you'll see the dreamcatchers hanging in the branches.",
 							["coords"] = {
-								{ 38, 29, ASHENVALE },
-								{ 38, 26, ASHENVALE },
+								{ 38.0, 29.0, ASHENVALE },
+								{ 38.0, 26.0, ASHENVALE },
 							},
 							["classes"] = { PRIEST },
 							["groups"] = {

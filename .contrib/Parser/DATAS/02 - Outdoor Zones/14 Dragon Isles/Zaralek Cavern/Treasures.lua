@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(TREASURES, {
@@ -17,7 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["description"] = "You'll need to equip an Onyxia Scale Cloak in order to open this chest.",
 				["coord"] = { 28.6, 47.9, ZARALEK_CAVERN },
 				["questID"] = 72986,
-				["cost"] = { { "i", 15138, 1 }, },	-- 1x Onyxia Scale Cloak
+				["cost"] = { { "i", 15138, 1 } },	-- 1x Onyxia Scale Cloak
 				["groups"] = {
 					i(205418),	-- Blazing Shadowflame Cinder (TOY!)
 				},
@@ -96,7 +97,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["description"] = "Must catch the Thieving Rock Mouse 5 times for the key to open the chest",
 				["coord"] = { 43.1, 82.6, ZARALEK_CAVERN },
 				["questID"] = 74995,
-				["cost"] = {{"i",204323,1}},	-- Old Trunk Key
+				["cost"] = { { "i", 204323, 1 } },	-- Old Trunk Key
 				["groups"] = {
 					hqt(75526, {	-- First Rock Mouse
 						["name"] = "First Rock Mouse",
@@ -184,7 +185,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["description"] = "Loot the key under the massive corebeasts's head, then use it to open the chest",
 				["coord"] = { 29.7, 40.6, ZARALEK_CAVERN },
 				["questID"] = 73395,
-				["cost"] = { { "i", 202869, 1 }, },	-- 1x Scorching Key
+				["cost"] = { { "i", 202869, 1 } },	-- 1x Scorching Key
 			}),
 			-- Repeatable Treasure Chests?
 			o_repeated({	-- Ritual Offerings
@@ -292,7 +293,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					{ 62.9, 69.9, ZARALEK_CAVERN },
 					{ 65.2, 55.3, ZARALEK_CAVERN },
 				},
-				["cost"] = {{"i",191304,1}},	-- Sturdy Expedition Shovel
+				["cost"] = { { "i", 191304, 1 } },	-- Sturdy Expedition Shovel
 				["groups"] = {
 					o(401846, {	-- Smelly Treasure Chest
 						["isRepeatable"] = true,

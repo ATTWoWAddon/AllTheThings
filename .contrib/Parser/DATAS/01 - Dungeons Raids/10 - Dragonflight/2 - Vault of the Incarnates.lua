@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local VAULT_OF_THE_INCARNATES = 2390;
+
 local SymRaidVault = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1200,DiffID,ClassID}};
 end
+
 ------ Encounter Constants ------
 local ERANOG = 2480;
 local TERROS = 2500;
@@ -298,8 +299,7 @@ InstanceHelper.ExtraLoots = {
 	},
 }
 
--- add the added patch here once blizzard stops clowning about old LFR content
-local TIMELINE_LFR = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_2 }
+local TIMELINE_LFR = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_2, ADDED_12_0_5 }
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1200, {	-- Vault of the Incarnates
@@ -606,6 +606,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (MM!)
 				}),
 			}),
+			-- #if AFTER 12.0.5
+			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
+				["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
+				["coord"] = { 58.5, 35.4, VALDRAKKEN },
+			}),
+			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR, {["timeline"] = TIMELINE_LFR}).AddGroups({
 				ZoneDrops(),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark

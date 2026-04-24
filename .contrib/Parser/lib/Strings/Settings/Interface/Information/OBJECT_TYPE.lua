@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		cn = "目标类型",
-		tw = "目標類型",
+		cn = "物体类型",
+		tw = "物件類型",
 	},
 })

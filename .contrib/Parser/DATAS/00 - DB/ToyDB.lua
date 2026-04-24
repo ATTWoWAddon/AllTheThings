@@ -16,11 +16,28 @@ i(38233);	-- Path of Illidan
 -- Wrath Classic --
 i(40110);	-- Haunted Momento (Should be a toy...)
 i(198647);	-- Fishspeaker's Lucky Lure
-i(38506);	-- Don Carlos' Famous Hat -- With ICC Patch of Wrath Classic, they made the hat (the original removed version) into a Toy. Whether it also functions as a transmog still is not known.
+i(38506);	-- Don Carlos' Famous Hat	-- With ICC Patch of Wrath Classic, they made the hat (the original removed version) into a Toy. Whether it also functions as a transmog still is not known.
 
 -- Cata Classic
 i(216893);	-- Goblin Town-in-a-Box
 i(235464);	-- Sha-Touched Tea Set
+
+-- MOP Classic
+-----------------
+-- PATCH 5.5.2 --
+-----------------
+i(260622);	-- Exodar Replica
+i(260221);	-- Naaru's Embrace
+i(265414);	-- Platinum Amber
+i(265415);	-- Platinum Vial of Polyformic Acid
+i(265416);	-- Platinum Battle Banner
+i(265417);	-- Platinum Battle Horn
+i(265418);	-- Platinum Rod of Ambershaping
+i(265419);	-- Platinum Potion of Invisibility
+i(265573);	-- Platinum Sacrificial Dagger
+i(265774);	-- Platinum Boots of Expeditious Retreat
+i(265780);	-- Platinum "Little Ale"
+
 -- #endif
 
 -----------------
@@ -1483,7 +1500,7 @@ i(246908);	-- K'areshi Supply Crate
 i(246905);	-- Overtuned K'areshi Goggles
 i(245970);	-- P.O.S.T. Master's Express Hearthstone
 i(232303);	-- Unbound Banner of the Algari
---- UNSORTED ---
+--- NYI ---
 i(242534);	-- Azure Sea Skiff
 
 ------------------
@@ -1495,51 +1512,80 @@ i(141605);	-- Flight Master's Whistle
 i(131717);	-- Starlight Beacon
 i(138111);	-- Stormforged Grapple Launcher
 -- #endif
-
---- UNSORTED ---
-i(254666);	-- Lil' Exodar
+i(254666);	-- Exodar Replica
+i(263489);	-- Naaru's Enfold
 
 ------------------
 -- PATCH 11.2.7 --
 ------------------
 i(242520);	-- Festival Hot Air Balloon
-i(251491);	-- Magical Pet Clicker
---- UNSORTED ---
+i(243304);	-- Jubilant Snowman Costume
+i(245580);	-- Rolling Snowball
+i(256881);	-- Steward's Bauble
+i(256893);	-- Wretched Dredger's Brand
 
 ------------------
 -- PATCH 12.0.0 --
 ------------------
-i(256881);	-- Steward's Bauble
-i(256893);	-- Wretched Dredger's Brand
---- UNSORTED ---
-i(257736);	-- [DNT] [PH] 12.0 Holy Hearthstone
-i(243146);	-- [DNT] Ren'dorei Struggle
+i(258136);	-- Azure Thunder Coil Pillar
+i(256141);	-- Fortune's Waving Cat
+i(258135);	-- Gilded Coil Spire
+i(258840);	-- Gilded Fountain
+i(251491);	-- Magical Pet Clicker
+i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
+
+--- NYI ---
+i(258129);	-- Jade Monument
+i(250320);	-- Lightgraft
+
+------------------
+-- PATCH 12.0.1 --
+------------------
 i(250974);	-- Akil'zon's Updraft
-i(263933);	-- Astalor's Summons
+i(262431);	-- Bouncy Mushroom
 i(264805);	-- Brann-O-Vision 3000
 i(251633);	-- Bursting Bounty Bundle
+i(267291);	-- Coffer Key Glue
 i(265100);	-- Corewarden's Hearthstone
 i(264672);	-- Cosmic Ritual Stone
 i(264413);	-- Dominating Victory
+i(266370);	-- Dundun's Abundant Travel Method
 i(263244);	-- Enigmatic Fountain
 i(263975);	-- Feeling Fielder Mk. 7
 i(264517);	-- Galactic Flag of Victory
 i(259084);	-- Gift of the Cycle
 i(252265);	-- Hexed Potatoad Mucus
 i(263871);	-- Holy Pet Leash
+i(267139);	-- Hungry Black Hole
 i(264695);	-- Interdimensional Parcel Signal
-i(243304);	-- Jubilant Snowman Costume
-i(250320);	-- Lightgraft
+-- #if AFTER 12.0.1
+i(64457);	-- Last Relic of Argus
+-- #endif
+i(257736);	-- Lightcalled Hearthstone
+i(267456);	-- Lil' Scoots' Pillow
 i(264414);	-- Midnight Delver's Flare Gun
-i(263489);	-- Naaru's Enfold
+i(268717);	-- Pango Plating
 i(253629);	-- Personal Key to the Arcantina
-i(262431);	-- Pocket Mushroom Jump Pad
+i(268695);	-- Pin-o-Matic Camera
 i(251903);	-- Potatoad Egg
+i(263933);	-- Preyseeker's Hearthstone
+i(243146);	-- Ren'dorei Struggle
+i(250319);	-- Researcher's Shadowgraft
 i(264666);	-- Rod of Exanguishation
-i(245580);	-- Rolling Snowball
-i(250319);	-- Shadowgraft
+i(268728);	-- Saptor Salve
 i(258963);	-- Shroom Jumper's Parachute
 i(259240);	-- Sin'dorei Wine
-i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
 i(263198);	-- Valdekar's Special
 i(256552);	-- Verdant Rutaani Seed
+i(248485);	-- Wormhole Generator: Quel'Thalas
+
+------------------
+-- PATCH 12.0.5 --
+------------------
+i(268456);	-- Animated Bench
+i(268455);	-- Enchanted Hourglass
+--- Unsorted ---
+i(267472);	-- Gnomatic Projector
+i(272287);	-- Nap Mat
+i(267323);	-- Troll Scroll of Rainbow Roll
+i(272339);	-- Umbral Champion's Illustrious Banner

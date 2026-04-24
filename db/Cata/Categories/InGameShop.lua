@@ -1,7 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local flt,i,mnt,p=_.CreateFilter,_.CreateItem,_.CreateMount,_.CreateSpecies;
-_.Categories.InGameShop={
+_.AddEventHandler("OnBuildDataCache", function(categories)
+local flt,h,i,mnt,p=_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies;
+categories.InGameShop=
+h(-213,{SortPriority=85,g={
 flt(101,{u=3,g={
 p(297,{b=1,itemID=68385,npcID=51600,petTypeID=7,q=3,spellID=95787,u=1}),
 p(347,{b=1,itemID=78916,npcID=58163,petTypeID=2,q=3,spellID=110029,u=1}),
@@ -19,11 +21,12 @@ p(246,{awp=30302,b=1,description="This item is available only if you purchase th
 flt(100,{u=3,g={
 mnt(440915,{awp=30403,u=3}),
 mnt(110051,{b=1,itemID=78924,lvl=20,q=4,u=1}),
-mnt(372677,{awp=20504,b=1,itemID=192455,lvl=20,q=4,u=3}),
+mnt(372677,{awp=30400,b=1,itemID=192455,lvl=20,q=4,u=3}),
 mnt(348459,{awp=20501,b=1,itemID=184865,lvl=20,q=4,u=3}),
 mnt(75614,{awp=30303,b=1,itemID=54811,lvl=20,q=4,rwp=100002,u=2}),
 mnt(466948,{awp=40401,rwp=40402,u=2}),
 mnt(466983,{awp=40401,rwp=40402,u=2}),
 mnt(466980,{awp=40401,rwp=40402,u=2}),
 mnt(466977,{awp=40401,rwp=40402,u=2}),
-mnt(98727,{awp=40100,b=1,itemID=69846,lvl=20,q=4,rwp=100002,u=2})}})};
+mnt(98727,{awp=40100,b=1,itemID=69846,lvl=20,q=4,rwp=100002,u=2})}})}});
+end);

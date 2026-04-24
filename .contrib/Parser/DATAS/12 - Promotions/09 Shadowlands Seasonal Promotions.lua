@@ -1,21 +1,29 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 SHADOWLANDS_SEASONAL_PROMOTIONS = createHeader({
 	readable = "Shadowlands Seasonal Promotions",
 	icon = [[~_.asset("Expansion_SL")]],
 	text = {
 		en = "Shadowlands Seasonal Promotions",
+		-- TODO: de = "",
 		es = "Promociones temporada Shadowlands",
 		mx = "Promociones temporada Shadowlands",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Промо Shadowlands",
 		cn = "暗影国度季节性促销",
 		tw = "《暗影之境》季節性促銷",
 	},
 	description = {
 		en = "These promotions happened during the time Shadowlands was the most recent content between 13th October 2020 & 25th October 2022.\n\nThey are listed in the order of their first appearance.",
+		cn = "这些促销活动均发生在《暗影国度》作为最新内容的时期，时间为2020 年 10 月 13 日至 2022 年 10 月 25 日。\n\n以下按活动首次出现的时间顺序列出",
 	},
 });
+
 root(ROOTS.Promotions, {
 	n(SHADOWLANDS_SEASONAL_PROMOTIONS, {
 		["timeline"] = { ADDED_9_0_5 },
@@ -23,8 +31,7 @@ root(ROOTS.Promotions, {
 			-- SEASON 1
 			mount(348162, {	-- Wandering Ancient (MOUNT!)
 				["description"] = "Granted to players by logging in on character of at least level 20.",
-				["timeline"] = { ADDED_9_0_5 },
-				["u"] = REMOVED_FROM_GAME,	-- Not sure when it got removed. Maybe DF Prepatch?
+				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_0 },
 			}),
 			-- SEASON 2
 			i(187834, {		-- Tormented Banner of the Opportune (TOY!)
@@ -39,7 +46,7 @@ root(ROOTS.Promotions, {
 					REMOVED_9_2_0,	-- 8th April 2022, 1 day after the event ended.
 				},
 			}),
-			i(95474, {	-- Jewel of the Firelord
+			i(95474, {	-- Jewel of the Firelord (COSMETIC!)
 				["description"] = "Obtained through Prime Gaming from June 29th 2022 till July 26th 2022.",
 				["timeline"] = {
 					ADDED_9_2_5,
@@ -49,16 +56,14 @@ root(ROOTS.Promotions, {
 			-- SEASON 4
 			ach(15594, {	-- Fearless Spectator
 				["description"] = "Granted to players who watch MDI Global Finals, AWC Grand Finals or AWC Cross-Region Tournament for 2 total hours in July 2022. You have to link your Battle.net account to your YouTube account and watch eligible streams.",
-				["groups"] = {
-					title(459),	-- Fearless Spectator <Name>
-				},
+				["groups"] = { title(459) },	-- Fearless Spectator <Name>
 				["timeline"] = {
 					ADDED_9_2_5,
 					REMOVED_9_2_7,	-- 2nd August 2022, 7 days after the event ended
 				},
 			}),
-			i(97213, {	-- Hood of Hungering Darkness
-				--["description"] = "Obtained through Prime Gaming from July 27th 2022 till August 23rd 2022.",
+			i(97213, {	-- Hood of Hungering Darkness (COSMETIC!)
+				-- ["description"] = "Obtained through Prime Gaming from July 27th 2022 till August 23rd 2022.",
 				["timeline"] = { ADDED_9_2_5 },
 				["u"] = REMOVED_FROM_GAME,	-- Removed again on August 24th 2022
 			}),
@@ -70,14 +75,14 @@ root(ROOTS.Promotions, {
 				},
 				["u"] = REMOVED_FROM_GAME,	-- Removed again on October 12th 2022
 			}),
-			i(95475, {	-- Crown of the Eternal Winter
+			i(95475, {	-- Crown of Eternal Winter (COSMETIC!)
 				["description"] = "Obtained through Prime Gaming from August 24th 2022 till September 20th 2022.",
 				["timeline"] = {
 					ADDED_9_2_7,
 					REMOVED_9_2_7,	-- 23 September 2022, 3 days after the event ended.
 				},
 			}),
-			mount(386452, {	-- Frostbrood Proto-Wyrm
+			mount(386452, {	-- Frostbrood Proto-Wyrm (MOUNT!)
 				["description"] = "In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",
 				["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 			}),

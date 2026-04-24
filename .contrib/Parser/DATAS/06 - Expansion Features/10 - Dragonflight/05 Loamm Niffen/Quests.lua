@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	header(HEADERS.Faction, FACTION_LOAMM_NIFFEN, {
 		n(RENOWN, {
@@ -25,7 +26,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["groups"] = {
 									i(205982, {	-- Lost Dig Map
 										-- ["questID"] = 75882,
-										--["isWeekly"] = true,
+										-- ["isWeekly"] = true,
 									}),
 									i(202172),	-- Overflowing Satchel of Coins
 									i(204717),	-- Splintered Spark of Shadowflame

@@ -1,24 +1,35 @@
 -- Defines the set of Fields which will be merged across all Sources of any object which matches the respective key Field
 -- This makes it easy to ensure that certain types of groups always share common data, even when Sourced multiple times
 -- e.g. if a group contains 'spellID=123' then all matching groups with 'spellID=123' will share the same 'type' and 'learnedAt' values
+-- Reminder: This should match the 'compressed' field name, not necessarily the field name used in the DATAS folders!
 
 MERGE_OBJECT_FIELDS = {
-	spellID = { "type","learnedAt" },
-	recipeID = { "requireSkill","learnedAt" },
-	speciesID = { "pb","crs" },
+	spellID = { "type","learnedAt","requireSkill","skillID" },
+	recipeID = { "requireSkill","_requireSkill","learnedAt","skillID",
+	-- #IF ANYCLASSIC
+	-- Some Recipes are specifically marked with certain Phase values and this should apply to all versions of that Recipe
+		"u",
+	-- #ENDIF
+	},
+	speciesID = { "pb","crs","itemID" },
 	instanceID = { "isRaid" },
 	mapID = { "maps" },
-	questID = { "type","sourceQuests","altQuests","isBreadcrumb","c","r","races","lvl","OnTooltip","_type","_area","_category","_text","name","description","nextQuests","isDaily","isMonthly","isYearly","repeatable","g" },
-	itemID = { "_class","_subclass","_inventoryType","ignoreBonus","minReputation","spellID" },
+	mountID = { "itemID", "_drop" },
+	questID = { "type","sourceQuests","altQuests","isBreadcrumb","c","r","races","lvl","OnTooltip","_type","_area","_category","_text","name","description","nextQuests","isDaily","isMonthly","isYearly","repeatable","g","poiIDs","lc" },
+	itemID = { "_class","_subclass","_inventoryType","ignoreBonus","minReputation","spellID","decorID","crs","mountID","speciesID","recipeID","questID","type","illusionID","b","factionID","repeatable","OnTooltip","requireSkill","buildingID","runeforgepowerID","conduitID","races","c","collectible","_wipe","lvl","r","q","petTypeID","filterForRWP","f","learnedAt" },
+	achID = { "_criteriaTreeID", "isGuild" },
 }
 
 -- Will eventually be removed as all 'merge' data is migrated to DB-scoped data
 -- but dictates the allowed fields from any given Object which may be merged into matching
 -- Objects elsewhere
 MERGE_FROM_OBJECT_FIELDS = {
-	recipeID = { "requireSkill" },
 	speciesID = { "pb" },
 	instanceID = { "isRaid" },
 	mapID = { "maps" },
-	questID = { "sourceQuests", "isBreadcrumb", "nextQuests" }
+	questID = { "sourceQuests", "isBreadcrumb", "nextQuests" },
+	-- #IF ANYCLASSIC
+	-- Still some Recipes defining requireSkill directly on objects rather than using ProfessionDB
+	recipeID = { "requireSkill" },
+	-- #ENDIF
 }

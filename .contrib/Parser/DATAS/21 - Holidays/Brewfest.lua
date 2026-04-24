@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 -- #if AFTER 2.2.2
 BREWFEST_HEADER = createHeader({
 	readable = "Brewfest",
@@ -19,8 +20,16 @@ BREWFEST_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(162),
 		-- #else
 		en = "Brewfest",
+		-- TODO: de = "",
 		es = "Fiesta de la cerveza",
 		mx = "Fiesta de la cerveza",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "美酒节",
+		-- TODO: tw = "",
 		-- #endif
 	},
 });
@@ -30,6 +39,7 @@ BREWFEST_BANQUET = createHeader({
 	icon = [[~_.asset("Holiday_brewfest")]],
 	text = {
 		en = "Brewfest Banquet",
+		cn = "美酒节宴会",
 	},
 });
 -- Developer note: Use the BREWFEST_TOKEN constant in place of the reward.
@@ -57,13 +67,17 @@ local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
 	if not (_.IsQuestFlaggedCompleted(t.sourceQuests[1])) then
 -- #if NOT ANYCLASSIC
 		t.description = "You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(";
-		for i,item in ipairs(t.g) do
-			item.u = 2;
+		if t.g then
+			for i,item in ipairs(t.g) do
+				item.u = 2;
+			end
 		end
 -- #else
 		t.description = "You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";
-		for i,item in ipairs(t.g) do
-			item.u = ]] .. EVENTS.BREWFEST .. [[;
+		if t.g then
+			for i,item in ipairs(t.g) do
+				item.u = ]] .. EVENTS.BREWFEST .. [[;
+			end
 		end
 -- #endif
 	else
@@ -72,8 +86,10 @@ local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
 -- #else
 		t.description = "You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";
 -- #endif
-		for i,item in ipairs(t.g) do
-			item.u = ]] .. EVENTS.BREWFEST .. [[;
+		if t.g then
+			for i,item in ipairs(t.g) do
+				item.u = ]] .. EVENTS.BREWFEST .. [[;
+			end
 		end
 	end
 end]];
@@ -624,7 +640,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						},
 					}),
 				}),
-				n(QUESTS, {
+				n(QUESTS, sharedData({
+					["isYearly"] = true,
+				},{
 					q(90870, {	-- Gathering the Grub (A)
 						["qg"] = 242172,	-- Gritta Brewstone
 						["coord"] = { 56.0, 37.4, DUN_MOROGH },
@@ -687,7 +705,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { ADDED_11_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
-				}),
+				})),
 			},
 		}),
 		n(23872, {	-- Coren Direbrew
@@ -1275,7 +1293,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
-					["isYearly"] = true,
+
 					["groups"] = {
 						i(37892, {	-- Green Brewfest Stein
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
@@ -1298,7 +1316,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
+					-- #if AFTER CATA
 					["isYearly"] = true,
+					-- #endif
 					["groups"] = {
 						i(37892, {	-- Green Brewfest Stein
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
@@ -1330,6 +1350,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(11293, {	-- Bark for the Barleybrews! (A)
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
+					--[[
+					-- TODO: If they don't both check off when you complete one, uncomment.
+					["altQuests"] = {
+						11293,	-- Bark for the Barleybrews! (A)
+						11294,	-- Bark for the Thunderbrews! (A)
+					},
+					]]--
 					["qg"] = 23627,	-- Becan Barleybrew
 					["coords"] = {
 						-- #if AFTER CATA
@@ -1343,17 +1370,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					--[[
-					-- TODO: If they don't both check off when you complete one, uncomment.
-					["altQuests"] = {
-						11293,	-- Bark for the Barleybrews! (A)
-						11294,	-- Bark for the Thunderbrews! (A)
-					},
-					]]--
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11407, {	-- Bark for Drohn's Distillery! (H)
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
+					--[[
+					-- TODO: If they don't both check off when you complete one, uncomment.
+					["altQuests"] = {
+						11407,	-- Bark for Drohn's Distillery! (H)
+						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
+					},
+					]]--
 					["qg"] = 24498,	-- Cort Gorestein
 					["coords"] = {
 						-- #if AFTER CATA
@@ -1367,17 +1394,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					--[[
-					-- TODO: If they don't both check off when you complete one, uncomment.
-					["altQuests"] = {
-						11407,	-- Bark for Drohn's Distillery! (H)
-						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
-					},
-					]]--
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11294, {	-- Bark for the Thunderbrews! (A)
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
+					--[[
+					-- TODO: If they don't both check off when you complete one, uncomment.
+					["altQuests"] = {
+						11293,	-- Bark for the Barleybrews! (A)
+						11294,	-- Bark for the Thunderbrews! (A)
+					},
+					]]--
 					["qg"] = 23628,	-- Daran Thunderbrew
 					["coords"] = {
 						-- #if AFTER CATA
@@ -1391,17 +1418,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					--[[
-					-- TODO: If they don't both check off when you complete one, uncomment.
-					["altQuests"] = {
-						11293,	-- Bark for the Barleybrews! (A)
-						11294,	-- Bark for the Thunderbrews! (A)
-					},
-					]]--
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11408, {	-- Bark for T'chali's Voodoo Brewery! (H)
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
+					--[[
+					-- TODO: If they don't both check off when you complete one, uncomment.
+					["altQuests"] = {
+						11407,	-- Bark for Drohn's Distillery! (H)
+						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
+					},
+					]]--
 					["qg"] = 24498,	-- Cort Gorestein
 					["coords"] = {
 						-- #if AFTER CATA
@@ -1414,13 +1441,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					--[[
-					-- TODO: If they don't both check off when you complete one, uncomment.
-					["altQuests"] = {
-						11407,	-- Bark for Drohn's Distillery! (H)
-						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
-					},
-					]]--
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11441, {	-- Brewfest! (A)
@@ -1922,7 +1942,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
-					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
 							["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
@@ -1944,7 +1963,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
-					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
 							["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
@@ -2181,7 +2199,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
-					["isYearly"] = true,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
 							["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
@@ -2200,7 +2217,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
 					["cost"] = { { "i", 33955, 1 } },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
-					["isYearly"] = true,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
 							["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },

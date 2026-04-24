@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(WORLD_QUESTS, {
@@ -15,7 +16,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			},
 			]]--
 			["groups"] = {
-				n(QUESTS, sharedData({ ["isWorldQuest"] = true, ["maxReputation"] = { FACTION_DREAM_WARDENS, 20 }, }, {
+				n(QUESTS, sharedData({
+					["isWorldQuest"] = true,
+					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
+				}, {
 					q(76520, {	-- A Shared Dream
 						["coord"] = { 63.7, 73.4, EMERALD_DREAM },
 						["groups"] = {
@@ -47,7 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["coord"] = { 37.7, 67.5, EMERALD_DREAM },
 						["groups"] = {
 							ach(19293, {	-- Friends In Feathers
-								--require q(78370) / Claws for Concern
+								-- require q(78370) / Claws for Concern
 								i(210522),	-- Blueloo (PET!)
 								crit(62785, {	-- Beaks
 									["coord"] = { 36.9, 65.8, EMERALD_DREAM },

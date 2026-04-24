@@ -1,18 +1,16 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local tinsert = tinsert;
 local L = app.L;
 
 -- Implementation
 app:CreateWindow("New With Patch", {
 	Commands = { "attnwp" },
-	OnRebuild = function(self)
-		if self.data then return true; end
-		self.data = {
-			text = "New With Patch",
-			icon = app.asset("WindowIcon_RWP"), 
-			description = "This window shows you all of the things that were added with the most recent patch.",
-			visible = true, 
+	OnLoad = function(self, settings)
+		self:SetData(app.CreateRawText(L.NEW_WITH_PATCH, {
+			icon = app.asset("Interface_Newly_Added"),
+			description = L.NEW_WITH_PATCH_TOOLTIP,
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,
@@ -20,11 +18,12 @@ app:CreateWindow("New With Patch", {
 			OnUpdate = app.IsRetail and function(t)
 				local g = t.g;
 				if #g < 1 then
-					local results = app:BuildSearchResponse(app:GetDataCache().g, "awp", app.GameBuildVersion);
-					if #results > 0 then
+					local results = app:BuildSearchResponse(app:GetDatabaseRoot().g, "awp", app.GameBuildVersion);
+					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;
 						self:AssignChildren();
 					end
@@ -44,25 +43,25 @@ app:CreateWindow("New With Patch", {
 					local results;
 					if any then
 						-- Find all the content that matches the current conditions.
-						results = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+						results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
 							if group.u and currentConditions[group.u] then
 								return true;
 							end
 						end);
 					else
 						-- Fallback to the default behaviour
-						results = app:BuildSearchResponse(app:GetDataCache().g, "awp", currentPatch);
+						results = app:BuildSearchResponse(app:GetDatabaseRoot().g, "awp", currentPatch);
 					end
-					if #results > 0 then
+					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;
 						self:AssignChildren();
 					end
 				end
 			end,
-		};
-		return true;
+		}));
 	end,
 });

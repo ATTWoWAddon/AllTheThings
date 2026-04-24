@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(PANDARIA, {
 	m(SHRINE_OF_SEVEN_STARS, {	-- Shrine of Seven Stars
 		["lore"] = "The Shrine of Seven Stars is an ancient mogu structure located south of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. It has been claimed by the Alliance and serves as the main hub of the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.",
@@ -94,6 +95,33 @@ root(ROOTS.Zones, m(PANDARIA, {
 					["coord"] = { 71.2, 50.5, SHRINE_OF_SEVEN_STARS },
 					["groups"] = COMMON_MOP_BLACKSMITHING_RECIPES,
 				}),
+				--[[	-- ToDo: ADD Challenge Mode Recolors
+				n(64084, {	-- Jojo <Cooking Supplies>
+					["coord"] = { 63.0, 26.8, SHRINE_OF_SEVEN_STARS },
+					["groups"] = {
+						i(265322, {	-- Cache of the Azure Challenger
+							i(265329),	-- Azure Bracers of the Golden King
+							i(265321),	-- Azure Chestplate of the Golden King
+							i(265326),	-- Azure Crown of the Golden King
+							i(265323),	-- Azure Girdle of the Golden King
+							i(265324),	-- Azure Greatboots of the Golden King
+							i(265327),	-- Azure Greaves of the Golden King
+							i(265328),	-- Azure Mantle of the Golden King
+							i(265325),	-- Azure Reach of the Golden King
+						}),
+						i(265316, {  	-- Cache of the Golden Challenger
+							i(265313),	-- Golden Chestplate of the Holy Warrior
+							i(265315),	-- Golden Greathelm of the Holy Warrior
+							i(265314),	-- Golden Gauntlets of the Holy Warrior
+							i(265312),	-- Golden Greatboots of the Holy Warrior
+							i(265317),	-- Golden Legplates of the Holy Warrior
+							i(265318),	-- Golden Girdle of the Holy Warrior
+							i(265319),	-- Golden Wristguards of the Holy Warrior
+							i(265320),	-- Golden Shoulderplate of the Holy Warrior
+						}),
+
+					},
+				}),--]]
 				n(64084, {	-- Jojo <Cooking Supplies>
 					["coord"] = { 63.0, 26.8, SHRINE_OF_SEVEN_STARS },
 					["groups"] = {
@@ -105,8 +133,8 @@ root(ROOTS.Zones, m(PANDARIA, {
 					["coord"] = { 84.6, 60.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = IGNORED_VALUE,	-- technically available both factions
 					["groups"] = sharedData({
-						["cost"] = {{"i",76061,1}},	-- Spirit of Harmony
-					},{
+						["cost"] = { { "i", 76061, 1 } },	-- Spirit of Harmony
+					}, {
 						i(72094),	-- Black Trillium Ore
 						i(74247),	-- Ethereal Shard
 						i(72092),	-- Ghost Iron Ore
@@ -126,56 +154,26 @@ root(ROOTS.Zones, m(PANDARIA, {
 				n(64052, {	-- Raishen the Needle <Tailoring Supplies>
 					["requireSkill"] = TAILORING,
 					["coord"] = { 64.7, 44.1, SHRINE_OF_SEVEN_STARS },
-					["groups"] = {
-						i(86361, {	-- Pattern: Contender's Satin Amice (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86367, {	-- Pattern: Contender's Satin Belt (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86360, {	-- Pattern: Contender's Satin Cowl (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86365, {	-- Pattern: Contender's Satin Cuffs (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86366, {	-- Pattern: Contender's Satin Footwraps (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86363, {	-- Pattern: Contender's Satin Handwraps (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86364, {	-- Pattern: Contender's Satin Pants (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86362, {	-- Pattern: Contender's Satin Raiment (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86353, {	-- Pattern: Contender's Silk Amice (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86359, {	-- Pattern: Contender's Silk Belt (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86352, {	-- Pattern: Contender's Silk Cowl (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86357, {	-- Pattern: Contender's Silk Cuffs (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86358, {	-- Pattern: Contender's Silk Footwraps (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86355, {	-- Pattern: Contender's Silk Handwraps (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86356, {	-- Pattern: Contender's Silk Pants (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86354, {	-- Pattern: Contender's Silk Raiment (RECIPE!)
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-					},
+					["groups"] = sharedData({
+						["cost"] = { { "i", 76061, 1 } },	-- Spirit of Harmony
+					}, {
+						i(86361),	-- Pattern: Contender's Satin Amice (RECIPE!)
+						i(86367),	-- Pattern: Contender's Satin Belt (RECIPE!)
+						i(86360),	-- Pattern: Contender's Satin Cowl (RECIPE!)
+						i(86365),	-- Pattern: Contender's Satin Cuffs (RECIPE!)
+						i(86366),	-- Pattern: Contender's Satin Footwraps (RECIPE!)
+						i(86363),	-- Pattern: Contender's Satin Handwraps (RECIPE!)
+						i(86364),	-- Pattern: Contender's Satin Pants (RECIPE!)
+						i(86362),	-- Pattern: Contender's Satin Raiment (RECIPE!)
+						i(86353),	-- Pattern: Contender's Silk Amice (RECIPE!)
+						i(86359),	-- Pattern: Contender's Silk Belt (RECIPE!)
+						i(86352),	-- Pattern: Contender's Silk Cowl (RECIPE!)
+						i(86357),	-- Pattern: Contender's Silk Cuffs (RECIPE!)
+						i(86358),	-- Pattern: Contender's Silk Footwraps (RECIPE!)
+						i(86355),	-- Pattern: Contender's Silk Handwraps (RECIPE!)
+						i(86356),	-- Pattern: Contender's Silk Pants (RECIPE!)
+						i(86354),	-- Pattern: Contender's Silk Raiment (RECIPE!)
+					}),
 				}),
 				n(64096, {	-- Serenka <First Aid Supplies>
 					["coord"] = { 47.2, 61.2, SHRINE_OF_SEVEN_STARS },

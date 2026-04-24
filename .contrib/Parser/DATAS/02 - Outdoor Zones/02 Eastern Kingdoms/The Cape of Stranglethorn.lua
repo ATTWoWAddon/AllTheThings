@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if AFTER CATA
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(THE_CAPE_OF_STRANGLETHORN, {
@@ -36,26 +37,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
-			pvp(o(179697, {	-- Arena Treasure Chest
-				["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
-				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-				["groups"] = {
-					ach(389),	-- Gurubashi Arena Master
-					i(18706),	-- Arena Master
-					i(18711),	-- Arena Bands
-					i(18710),	-- Arena Bracers
-					i(18712),	-- Arena Vambraces
-					i(18709),	-- Arena Wristguards
-					i(126948, {	-- Defending Champion
-						["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
-						["timeline"] = { ADDED_6_2_0 },
-						["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
-					}),
-					i(122222, {	-- Music Roll: Angelic
-						["timeline"] = { ADDED_6_1_0 },
-					}),
-				},
-			})),
 			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
@@ -142,7 +123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(31917, {	-- A Tamer's Homecoming (A)
 					["sourceQuest"] = 31728,	-- Bill Buckler
-					["altQuests"] = { 31918 },	-- A Tamer's Homecoming (H) -- CRIEVE NOTE: Check this on MOP Classic
+					["altQuests"] = { 31918 },	-- A Tamer's Homecoming (H)	-- CRIEVE NOTE: Check this on MOP Classic
 					["qg"] = 65656,	-- Bill Buckler
 					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_5_0_4 },
@@ -650,7 +631,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1116, {	-- Dream Dust in the Swamp
 					["sourceQuest"] = 1115,	-- The Rumormonger
 					["qg"] = 773,	-- Krazek
-					["coord"] = { 27, 77.2, STRANGLETHORN_VALE },
+					["coord"] = { 27.0, 77.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 30,
@@ -806,7 +787,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2542,	-- Catelyn the Blade
 					["coord"] = { 41.3, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_6_2_0 },
-					["cost"] = {{ "i", 90561, 1 }},	-- Eternium Rose
+					["cost"] = { { "i", 90561, 1 } },	-- Eternium Rose
 					["requireSkill"] = ENGINEERING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -1040,7 +1021,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26435, {	-- I'm A Huge Liar and a Fraud	-- TODO:: part of loremaster?
+				q(26435, {	-- I'm A Huge Liar and a Fraud	-- TODO:  part of loremaster?
 					["sourceQuests"] = {
 						26592,	-- Diffractory Chromascope
 						26434,	-- Primal Reagents of Power
@@ -1301,11 +1282,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(594, {	-- Message in a Bottle (1/2)
-					["providers"] = {
-						{ "i", 4098 },	-- Carefully Folded Note
-						{ "o", 2560 },	-- Half-Buried Bottle
+				q(3645, {	-- Membership Card Renewal [H]
+					["sourceQuest"] = 3643,	-- Show Your Work
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["coord"] = { 43.0, 72.0, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["repeatable"] = true,
+					["lvl"] = 30,
+					["groups"] = {
+						i(10790),	-- Gnome Engineer Membership Card
 					},
+				}),
+				q(594, {	-- Message in a Bottle (1/2)
+					["provider"] = { "i", 4098 },	-- Carefully Folded Note
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
@@ -1355,7 +1348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Mok'rash the Cleaver slain
 							["provider"] = { "n", 1493 },	-- Mok'rash the Cleaver
-							["coord"] = { 35, 65.4, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 35.0, 65.4, THE_CAPE_OF_STRANGLETHORN },
 						}),
 						i(61562, {	-- Smott's Signet
 							["timeline"] = { ADDED_4_0_3 },
@@ -1454,7 +1447,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 60386 },	-- Pure Water
 								{ "o", 759 },	-- The Holy Spring
 							},
-							["coord"] = { 43, 48, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 43.0, 48.0, THE_CAPE_OF_STRANGLETHORN },
 						}),
 					},
 				}),
@@ -1726,7 +1719,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
 					["altQuests"] = { 3639, 3641 },	-- The Pledge of Secrecy
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["coord"] = { 43.0, 72.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
@@ -2135,7 +2128,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 4034 },	-- Stone of the Tides
 								{ "i", 4027 },	-- Catelyn's Blade
 							},
-							["coord"] = { 25, 23.6, STRANGLETHORN_VALE },
+							["coord"] = { 25.0, 23.6, STRANGLETHORN_VALE },
 							["cr"] = 2624,	-- Gazban
 						}),
 						i(4120, {	-- Robe of Crystal Waters
@@ -2211,7 +2204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 58811 },	-- The Holy Water of Clarity
 								{ "o", 759 },	-- The Holy Spring
 							},
-							["coord"] = { 43, 48, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 43.0, 48.0, THE_CAPE_OF_STRANGLETHORN },
 						}),
 					},
 				}),
@@ -2232,7 +2225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 58811 },	-- The Holy Water of Clarity
 								{ "o", 759 },	-- The Holy Spring
 							},
-							["coord"] = { 43, 48, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 43.0, 48.0, THE_CAPE_OF_STRANGLETHORN },
 						}),
 					},
 				}),
@@ -2254,9 +2247,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(8552, {	-- The Monogrammed Sash
 					["altQuests"] = { 620 },	-- The Monogrammed Sash [Old]
 					["provider"] = { "i", 3985 },	-- Monogrammed Sash
-					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 1493,	-- Mok'rash
 					["lvl"] = 35,
 				}),
 				q(3642, {	-- The Pledge of Secrecy
@@ -2674,6 +2665,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.2, 27.6, THE_CAPE_OF_STRANGLETHORN },
 				}),
 			}),
+			n(TREASURES, {
+				pvp(o(179697, {	-- Arena Treasure Chest
+					["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
+					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
+					["groups"] = {
+						ach(389),	-- Gurubashi Arena Master
+						i(18706),	-- Arena Master
+						i(18711),	-- Arena Bands
+						i(18710),	-- Arena Bracers
+						i(18712),	-- Arena Vambraces
+						i(18709),	-- Arena Wristguards
+						i(126948, {	-- Defending Champion
+							["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
+							["timeline"] = { ADDED_6_2_0 },
+							["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
+						}),
+						i(122222, {	-- Music Roll: Angelic
+							["timeline"] = { ADDED_6_1_0 },
+						}),
+					},
+				})),
+				o(2560, {	-- Half-Buried Bottle
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(4098),	-- Carefully Folded Note
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coord"] = { 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },
@@ -2854,6 +2873,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(2832, {	-- Nixxrax Fillamug <Food & Drink>
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.8, 73.6, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 40.8, 73.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
+					["groups"] = {
+						i(4595),	-- Junglevine Wine
+					},
+				}),
 				n(2626, {	-- Old Man Heming <Fisherman>
 					["coord"] = { 41.6, 73.4, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
@@ -2905,7 +2936,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["collectible"] = false,
 						["providers"] = {
 							{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
-							{ "n", 49887}, 	-- Gappy Silvertooth <Bling Merchant>
+							{ "n", 49887},	-- Gappy Silvertooth <Bling Merchant>
 							{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
 							{ "n", 2849},	-- Qixdi Goodstitch <Cloth Armor & Accessories>
 						},
@@ -3086,6 +3117,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This item has a chance to drop from any killed creature in the zone.",
 					-- #endif
 					["timeline"] = { ADDED_1_11_1 },
+				}),
+				i(3985, {	-- Monogrammed Sash
+					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cr"] = 1493,	-- Mok'rash
+					["lvl"] = 35,
 				}),
 				i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					["cr"] = 1561,	-- Bloodsail Raider

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR, {
 	inst(77, bubbleDownSelf({ ["timeline"] = { ADDED_2_3_0, REMOVED_4_1_0 } }, {	-- Zul'Aman
 		["lore"] = "When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",
@@ -43,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 								["provider"] = { "n", 24239 },	-- Hex Lord Malacrass
 							}),
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE,	-- Badge of Justice x5
+							BADGE_OF_JUSTICE(5),	-- Badge of Justice x5
 							-- #endif
 						},
 					}),
@@ -125,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						-- #if BEFORE CATA
 						["lvl"] = 70,
 						["groups"] = {
-							BADGE_OF_JUSTICE,	-- Badge of Justice x10
+							BADGE_OF_JUSTICE(10),	-- Badge of Justice x10
 						},
 						-- #endif
 					}),
@@ -161,9 +162,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 				}),
 				n(24396, {	-- Forest Frog
 					["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
-					["cost"] = {
-						{ "i", 33865, 1 },	-- Amani Hex Stick
-					},
+					["cost"] = { { "i", 33865, 1 } },	-- Amani Hex Stick
 					["groups"] = {
 						i(33993),	-- Mojo (PET!)
 						i(33931),	-- Amani Charm of Mighty Mojo
@@ -298,11 +297,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 					},
 				}),
 				e(191, {	-- Zul'jin [Old ID: 23863, they reused it for Daakara in the Cata remake]
-					-- #if AFTER BFA
-					["creatureID"] = 130255,	-- NEW ID from BFA
-					-- #else
-					["creatureID"] = 23863,	-- OLD ID from TBC
-					-- #endif
+					["crs"] = {
+						-- #if AFTER BFA
+						130255,	-- NEW ID from BFA
+						-- #else
+						23863,	-- OLD ID from TBC
+						-- #endif
+					},
 					["hideText"] = true,
 					["groups"] = {
 						ach(691),	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
@@ -327,6 +328,3 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 		},
 	})),
 })));
-
--- We don't want to apply a phase ID for this in this raid, that will be done elsewhere.
-BADGE_OF_JUSTICE.timeline = nil;

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	header(HEADERS.Quest, 89476, {	-- Infinite Research
 		n(QUESTS, sharedData({
@@ -156,7 +157,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240350),	-- Legwraps of Night Eternal
 					i(240352),	-- Robe of Night Eternal
 					i(240353),	-- Vestments of Night Eternal
-					}),
+				}),
 				filter(LEATHER, {
 					i(240775),	-- Lunarblight Leather Cowl
 					i(240781),	-- Lunarblight Leather Cuffs
@@ -166,7 +167,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240778),	-- Lunarblight Leather Strap
 					i(240780),	-- Lunarblight Leather Striders
 					i(240777),	-- Lunarblight Leather Tunic
-					}),
+				}),
 				filter(MAIL, {
 					i(240306),	-- Faceguard of Devouring Night
 					i(240299),	-- Handguards of Devouring Night
@@ -176,7 +177,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240301),	-- Stompers of Devouring Night
 					i(240303),	-- Waistband of Devouring Night
 					i(240300),	-- Wristguards of Devouring Night
-					}),
+				}),
 				filter(PLATE, {
 					i(240544),	-- Xorothian Battleplate
 					i(240539),	-- Xorothian Gauntlets
@@ -366,13 +367,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		------ Stay awhile and listen ------
-		--hqt(???, {	-- Stay awhile and listen: Eternus
-		--	["name"] = "Stay awhile and listen: Eternus",
-		--	["description"] = "Dialogue becomes available after you accept 'Eternal Gratitude' (89416).",
-		--	["sourceQuest"] = 89415,	-- Storm the Citadel
-		--	["qg"] = 241748,	-- Eternus
-		--	["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-		--}),
+		-- hqt(???, {	-- Stay awhile and listen: Eternus
+		-- 	["name"] = "Stay awhile and listen: Eternus",
+		-- 	["description"] = "Dialogue becomes available after you accept 'Eternal Gratitude' (89416).",
+		-- 	["sourceQuest"] = 89415,	-- Storm the Citadel
+		-- 	["qg"] = 241748,	-- Eternus
+		-- 	["coord"] = { 45.7, 68.5, BROKEN_ISLES },
+		-- }),
 		--
 		q(89417, {	-- Infinite Meetings
 			["sourceQuest"] = 89416,	-- Eternal Gratitude
@@ -465,6 +466,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		q(92430, {	-- Embracing the Infinite Chaos
 			["description"] = "Quest pops-up when you hit Level 25.",
 			["lockCriteria"] = { 1, "questID", 91061 },	-- Infinite Chaos
+			["isBreadcrumb"] = true,
 			["lvl"] = 25,
 		}),
 		q(91061, {	-- Infinite Chaos
@@ -495,7 +497,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
 			["lvl"] = 20,
 		}),
-		q(91844, {	-- Infinite Research: Honorary Chronographer
+		q(91844, {	-- Infinite Research Promotion: Honorary Chronographer
 			["description"] = "Quest becomes available after you complete 20 'Infinite Research' quests.",
 			["qg"] = 241748,	-- Eternus
 			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
@@ -570,27 +572,58 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		}),
 		-- Infinite Epilogues
 		q(91522, {	-- Order from Chaos
+			["sourceQuests"] = {
+				45354,	-- Dispersion of the Discs (Mage)
+				46792,	-- Gathering of the Storms (Shaman)
+				46089,	-- Hiding In Plain Sight [A] (Rogue)
+				46178,	-- Hiding In Plain Sight [H] (Rogue)
+				46337,	-- Night of the Wilds (Hunter)
+				45770,	-- Stirring in the Shadows (Paladin)
+				46813,	-- The Lost Glacier (Death Knight)
+				45789,	-- The Sunken Vault (Priest)
+				46350,	-- The Trial of Ban-Lu (Monk)
+				46207,	-- The Trial of Rage (Warrior)
+				46243,	-- The Wrathsteed of Xoroth (Warlock)
+				46334,	-- To Fel and Back (Demon Hunter)
+				46319,	-- You Can't Take the Sky from Me (Druid)
+			},
+			["sourceQuestNumRequired"] = 1,
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 		}),
 		q(91728, {	-- Suramar Liberated
-			["sourceQuest"] = 91522,	-- Order from Chaos
+			["sourceQuest"] = 44719,	-- Breaching the Sanctum (Exo Note: Unconfirmed)
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 		}),
 		q(91729, {	-- Armies Gathered
-			["sourceQuest"] = 91728,	-- Suramar Liberated
+			["sourceQuest"] = 46246,	-- Strike Them Down (Exo Note: Unconfirmed)
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 		}),
 		q(91730, {	-- Azeroth Saved
-			["sourceQuest"] = 91729,	-- Armies Gathered
+			["sourceQuest"] = 49015,	-- Antorus, the Burning Throne: The Death of a Titan (Exo Note: Unconfirmed)
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
+		}),
+		-- Phase 5: Infinite Echoes
+		q(91821, {	-- Out of Time
+			--["sourceQuest"] = XXXXX,
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
+			["lvl"] = 80,
+			["timeline"] = { ADDED_11_2_7 },
+		}),
+		q(91757, {	-- Until Our Next Hello
+			--["sourceQuest"] = XXXXX,
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
+			["lvl"] = 80,
+			["timeline"] = { ADDED_11_2_7 },
 		}),
 	}),
 })))

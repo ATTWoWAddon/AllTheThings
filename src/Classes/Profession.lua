@@ -31,10 +31,5 @@ app.CreateProfession = app.CreateClass(CLASS, KEY, {
 	requireSkill = function(t)
 		return t[KEY];
 	end,
-	ignoreSourceLookup = function(t)
-		return true;
-	end,
-	sym = app.IsClassic and function(t)
-		return {{"selectprofession", t.professionID}};
-	end
+	ignoreSourceLookup = app.ReturnTrue,
 })

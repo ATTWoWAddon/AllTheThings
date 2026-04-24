@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1188, {	-- De Other Side
 		["coord"] = { 68.6, 66.5, ARDENWEALD },
@@ -87,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2410, {	-- Mueh'zala
-					["crs"] = { 166608 },	--	Mueh'zala
+					["crs"] = { 166608 },	-- Mueh'zala
 					["groups"] = {
 						ach(14373),	-- De Other Side
 						-- Legendaries
@@ -118,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2410, {	-- Mueh'zala
-					["crs"] = { 166608 },	--	Mueh'zala
+					["crs"] = { 166608 },	-- Mueh'zala
 					["groups"] = {
 						ach(14408),	-- Heroic: De Other Side
 					},
@@ -144,7 +145,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2410, {	-- Mueh'zala
-					["crs"] = { 166608 },	--	Mueh'zala
+					["crs"] = { 166608 },	-- Mueh'zala
 					["groups"] = {
 						ach(14409),	-- Mythic: De Other Side
 						ach(14379),	-- Mythic: De Other Side Guild Run

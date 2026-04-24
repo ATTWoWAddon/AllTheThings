@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(ARATHI_HIGHLANDS, {
 		["lore"] = "The Arathi Highlands are located in southeastern Lordaeron, east of Hillsbrad Foothills and south of the Hinterlands. It is a flat but craggy region that has traditionally been the home of the humans of Arathor, who gave the region its name. The main hubs of activity are now Refuge Pointe and Hammerfall, which houses bases for Alliance and Horde, respectively. The large city of Stromgarde lies in ruins to the southwest, and pockets of Syndicate resistance dot the land. The Boulderfist Orges also infest Arathor, and prove to be a constant threat to the Alliance, Horde, and Syndicate factions vying for supremacy.",
@@ -107,6 +108,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			prof(MINING, {
+				o(2653, {	-- Lesser Bloodstone Deposit
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+					["requireSkill"] = MINING,
+					["learnedAt"] = 75,
+					["groups"] = {
+						i(4278),	-- Lesser Bloodstone Ore
+					},
+				}),
+			}),
+			pickpocketing({
+				i(17124, {	-- Syndicate Emblem
+					["crs"] = {
+						2590,	-- Syndicate Conjuror
+						2586,	-- Syndicate Highwayman
+						2591,	-- Syndicate Magus
+						2589,	-- Syndicate Mercenary
+						2587,	-- Syndicate Pathstalker
+						2588,	-- Syndicate Prowler
+					},
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -706,7 +729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(847, {	-- Guile of the Raptor (3/3)
 					["sourceQuest"] = 702,	-- Guile of the Raptor (2/3)
 					["qg"] = 2792,	-- Gor'mul
-					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
+					["coord"] = { 72.6, 34.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -746,7 +769,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(655, {	-- Hammerfall
 					["qg"] = 2792,	-- Gor'mul
-					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
+					["coord"] = { 72.6, 34.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -832,12 +855,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6623, {	-- Horde Trauma
-					["description"] =
-						-- #if AFTER BFA
-						"Needs a minimum of 225 skill in Tailoring.\n\nThis quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
-						-- #else
-						"Needs a minimum of 225 skill in First Aid.",
-						-- #endif
+					-- #if AFTER BFA
+					["description"] ="This quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
+					-- #endif
 					["qgs"] = {
 						-- #if AFTER CATA
 						45540,	-- Krenk Choplimb
@@ -859,6 +879,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #else
 						FIRST_AID,
 						-- #endif
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 7.3.5
 					-- ["DisablePartySync"] = true,
@@ -920,7 +941,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2789 },	-- Skuerto
 						{ "i", 4533 },	-- Sealed Letter to Archmage Malin
 					},
-					["coord"] = { 46.6, 47, ARATHI_HIGHLANDS },
+					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -1118,7 +1139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(675, {	-- Raising Spirits (3/3)
 					["sourceQuest"] = 674,	-- Raising Spirits (2/3)
 					["qg"] = 2792,	-- Gor'mul
-					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
+					["coord"] = { 72.6, 34.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -1236,7 +1257,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/5 Sigil Fragment
 							["provider"] = { "i", 4450 },	-- Sigil Fragment
-							["coord"] = { 15.2, 65, ARATHI_HIGHLANDS },
+							["coord"] = { 15.2, 65.0, ARATHI_HIGHLANDS },
 							["crs"] = {
 								2584,	-- Stromgarde Defender
 								2583,	-- Stromgarde Troll Hunter
@@ -1323,7 +1344,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 4485 },	-- Thundering Key
 								{ "o", 2690 },	-- Stone of Outer Binding
 							},
-							["coord"] = { 46.4, 52, ARATHI_HIGHLANDS },
+							["coord"] = { 46.4, 52.0, ARATHI_HIGHLANDS },
 						}),
 					},
 				}),
@@ -1405,6 +1426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["providers"] = {
 								{ "i", 4473 },	-- Eldritch Shackles
 								{ "i", 4472 },	-- Scroll of Myzrael
+								{ "o", 138492 },	-- Shards of Myzrael
 							},
 							["coord"] = { 62.6, 34.6, ARATHI_HIGHLANDS },
 							["cr"] = 2755,	-- Myzrael
@@ -2170,7 +2192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 60, 40, ARATHI_HIGHLANDS },
+					["coord"] = { 60.0, 40.0, ARATHI_HIGHLANDS },
 					["groups"] = {
 						i(216947),	-- Whirring Dalaran Relic
 					},
@@ -2663,7 +2685,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #else
 						"This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 						-- #endif
-					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
+					["coord"] = { 22.8, 61.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						2782,	-- Caretaker Alaric

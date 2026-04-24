@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.SL, {
 		["forcetimeline"] = { ADDED_9_0_1, REMOVED_9_0_2_LAUNCH },
@@ -682,7 +683,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["coord"] = { 53.1, 76.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = bubbleDown({
-					["cost"] = { { "c", 1754, 15 } },	-- Argent Commendation
+					["cost"] = { { "c", 1754, 15 } },	-- 15x Argent Commendation
 					["sharedDescription"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
 				},{
 					i(183552, {	-- Argent Conscript's Drape
@@ -731,14 +732,14 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					i(183542),	-- Argent Conscript's Wristplates
 					i(180454),	-- Anti-Doom Broom
 					i(183621, {	-- Putrid Geist (PET!)
-						["cost"] = { { "c", 1754, 20 } },
+						["cost"] = { { "c", 1754, 20 } },	-- 20x Argent Commendation
 					}),
 				}),
 			}),
 			n(169718, {	-- Veteran Crusader Aliocha Segard
 				["coord"] = { 71.04, 21.66, ICECROWN },
 				["groups"] = bubbleDown({
-					["cost"] = { { "c", 1754, 15 } },	-- Argent Commendation
+					["cost"] = { { "c", 1754, 15 } },	-- 15x Argent Commendation
 					["sharedDescription"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
 				},{
 					-- Alliance items
@@ -834,7 +835,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					-- Misc Items
 					i(180454),	-- Anti-Doom Broom
 					i(183621, {	-- Putrid Geist (PET!)
-						["cost"] = { { "c", 1754, 20 } },
+						["cost"] = { { "c", 1754, 20 } },	-- 20x Argent Commendation
 					}),
 				}),
 			}),
@@ -842,7 +843,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["coord"] = { 65.4, 76.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = bubbleDown({
-					["cost"] = { { "c", 1754, 15 } },	-- Argent Commendation
+					["cost"] = { { "c", 1754, 15 } },	-- 15x Argent Commendation
 					["sharedDescription"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
 				},{
 					i(183524, {	-- Argent Conscript's Drape
@@ -891,7 +892,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					i(183573),	-- Argent Conscript's Buckle
 					i(180454),	-- Anti-Doom Broom
 					i(183621, {	-- Putrid Geist (PET!)
-						["cost"] = { { "c", 1754, 20 } },
+						["cost"] = { { "c", 1754, 20 } },	-- 20x Argent Commendation
 					}),
 				}),
 			}),
@@ -899,7 +900,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["description"] = "While this vendor and his items are still available, the currency required to buy the items is not.\nTagging the vendor and his goods as removed as otherwise they would show up as collectible.",
 				["coord"] = { 69.4, 23.3, ICECROWN },
 				["groups"] = bubbleDown({
-					["cost"] = { { "c", 1754, 15 } },	-- Argent Commendation
+					["cost"] = { { "c", 1754, 15 } },	-- 15x Argent Commendation
 					["sharedDescription"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
 				},{
 					-- Alliance items

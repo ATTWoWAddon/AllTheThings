@@ -9,3 +9,9 @@ indent_size = 4
 [*.lua]
 end_of_line = crlf
 indent_style = tab
+
+[.contrib/Parser/DATAS/00 - Missing DB/**]
+trim_trailing_whitespace = false
+
+[.contrib/Harvesters/Database Harvester/**]
+trim_trailing_whitespace = false

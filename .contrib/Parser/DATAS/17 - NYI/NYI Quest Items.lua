@@ -744,5 +744,43 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(231766),	-- Hammerfall Horn
 			i(228964),	-- Scarlet Signet Ring
 		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			i(231805),	-- [DNT]Well-worn Coin
+			i(239566),	-- Arcane Runed Signet
+			i(233287),	-- Barrel of Swirling Energy
+			i(229898),	-- Capture Device
+			i(229404),	-- Carved Toy
+			i(229406),	-- Codex of The Exchange
+			i(242547),	-- Cracked Keystone
+			i(232280),	-- Cracked Pendant
+			i(232516),	-- Fading Essence
+			i(233012),	-- Flamethrower
+			i(232426),	-- Game Board
+			i(231804),	-- Game Piece
+			i(232522),	-- High Priest's Record[DNT]
+			i(231821),	-- Makeshift Explosives
+			i(233005),	-- Om'taha's Toolkit[DNT]
+			i(229399),	-- Patram's Tuning Key
+			i(232568),	-- Priest's Remains[DNT]
+			i(229398),	-- Sabeel's Tuning Key
+			i(229402),	-- Serving Tray
+			i(245523),	-- Shadowguard Credentials
+			i(246592),	-- Shadowguard Credentials
+			i(246593),	-- Shadowguard Credentials
+			i(242654),	-- Shadowtrade Overstock
+			i(231790),	-- Small Stone Tablet
+			i(232281),	-- Small Fossil
+			i(232553),	-- Temple Keystone[DNT]
+			i(229403),	-- Toy Boat
+			i(231094),	-- Unused - Tranquilizing Dart [DNT]
+			i(229166),	-- Void Stuffs
+			i(232554),	-- Waning Essence[DNT]
+			i(235983),	-- Warrant: Shatterpulse
+			i(231801),	-- Well-Worn Coin
+			i(229400),	-- Xaheen's Tuning Key
+			i(232630),	-- Xy Imports Ledger
+		})),
 	}),
 }));

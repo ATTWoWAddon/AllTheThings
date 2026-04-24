@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local MixedNormalAndHeroicLootTable = {
 	e(131, {	-- General Umbriss
 		["crs"] = { 39625 },	-- General Umbriss
@@ -79,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			n(QUESTS, {
 				q(28854, {	-- Closing A Dark Chapter
 					["provider"] = { "n", 50387 },	-- Baleflame
-					["coord"] = { 50, 50, 293 },	-- Grim Batol
+					["coord"] = { 50.0, 50.0, 293 },	-- Grim Batol
 					["groups"] = {
 						i(66933),	-- Breastplate of the Witness
 						i(66935),	-- Eradicator's Bracers
@@ -88,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 				q(28853, {	-- Kill the Courier
 					["provider"] = { "n", 50385 },	-- Farseer Tooranu
-					["coord"] = { 50, 50, 293 },	-- Grim Batol
+					["coord"] = { 50.0, 50.0, 293 },	-- Grim Batol
 					["groups"] = {
 						i(66936),	-- Helm of Secret Knowledge
 						i(66937),	-- Sandals of the Courier
@@ -96,8 +97,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28852, {	-- Soften them Up
+					["description"] = "Blizzard will occasionally mess with the way creatures scales with level, which can make this quest impossible to complete.",
 					["provider"] = { "n", 50390 },	-- Velastrasza
-					["coord"] = { 50, 50, 293 },	-- Grim Batol
+					["coord"] = { 50.0, 50.0, 293 },	-- Grim Batol
 				}),
 				q(28803, {	-- Vengeance of the Wildhammer
 					["provider"] = { "o", 207411 },	-- Dwarven Bone Pile
@@ -247,7 +249,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				e(131, {	-- General Umbriss
 					["crs"] = { 39625 },	-- General Umbriss
 					["groups"] = {
-						ach(5297),	-- Umbrage for Umbriss
+						ach(5297, {["timeline"] = { ADDED_4_0_3, REMOVED_11_1_0_SEASONSTART }}),	-- Umbrage for Umbriss
 					},
 				}),
 				e(134, {	-- Erudax

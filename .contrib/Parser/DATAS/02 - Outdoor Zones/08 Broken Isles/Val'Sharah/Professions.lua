@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		n(PROFESSIONS, {
@@ -15,26 +16,26 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 							-- extra info for the item can go here
 						}),
 						i(147309, {	-- Crate of Bobbers: Face of the Forest (TOY!)
-							["cost"] = { { "i", 146959, 100 }, },	-- 100x Corrupted Globule
+							["cost"] = { { "i", 146959, 100 } },	-- 100x Corrupted Globule
 						}),
 						i(152565, {	-- Recipe: Feast of the Fishes [Rank 1] (RECIPE!)
 							["timeline"] = { ADDED_7_3_0 },
-							["cost"] = { { "i", 146959, 50 }, },	-- 50x Corrupted Globule
+							["cost"] = { { "i", 146959, 50 } },	-- 50x Corrupted Globule
 						}),
 						i(133705, {		-- Rotten Fishbone
-							["cost"] = { { "i", 146959, 25 }, },	-- 25x Corrupted Globule
+							["cost"] = { { "i", 146959, 25 } },	-- 25x Corrupted Globule
 							["sym"] = {{"fill"}},
 						}),
 						i(133707, {		-- Nightmare Nightcrawler
-							["cost"] = { { "i", 146959, 25 }, },	-- 25x Corrupted Globule
+							["cost"] = { { "i", 146959, 25 } },	-- 25x Corrupted Globule
 							["sym"] = {{"fill"}},
 						}),
 						i(133708, {		-- Drowned Thistleleaf
-							["cost"] = { { "i", 146959, 25 }, },	-- 25x Corrupted Globule
+							["cost"] = { { "i", 146959, 25 } },	-- 25x Corrupted Globule
 							["sym"] = {{"fill"}},
 						}),
 						i(124108, {		-- Mossgill Perch
-							["cost"] = { { "i", 146959, 10 }, },	-- 10x Corrupted Globule
+							["cost"] = { { "i", 146959, 10 } },	-- 10x Corrupted Globule
 						}),
 					},
 				}),

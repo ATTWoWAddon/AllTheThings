@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local PRIESTESS_OF_THE_MOON_RACES = ALLIANCE_ONLY;
 -- #if BEFORE 7.2.5
 PRIESTESS_OF_THE_MOON_RACES = { NIGHTELF };
@@ -69,7 +70,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(4495, {	-- A Good Friend
 							["qg"] = 8583,	-- Dirania Silvershine
-							["coord"] = { 60.8, 42, TELDRASSIL },
+							["coord"] = { 60.8, 42.0, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
@@ -190,7 +191,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(921, {	-- Crown of the Earth (1/6)
 							["sourceQuest"] = 920,	-- Tenaron's Summons
 							["qg"] = 3514,	-- Tenaron Stormgrip
-							["coord"] = { 59, 39.4, TELDRASSIL },
+							["coord"] = { 59.0, 39.4, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -209,7 +210,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3514 },	-- Tenaron Stormgrip
 								{ "i", 5186 },	-- Partially Filled Vessel
 							},
-							["coord"] = { 59, 39.4, TELDRASSIL },
+							["coord"] = { 59.0, 39.4, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -280,9 +281,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -308,9 +309,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -383,9 +384,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -429,7 +430,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(3521, {	-- Iverron's Antidote (1/2)
 							["sourceQuest"] = 3519,	-- A Friend in Need
 							["qg"] = 8583,	-- Dirania Silvershine
-							["coord"] = { 60.8, 42, TELDRASSIL },
+							["coord"] = { 60.8, 42.0, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
@@ -462,7 +463,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 8583 },	-- Dirania Silvershine
 								{ "i", 10642 },	-- Iverron's Antidote
 							},
-							["coord"] = { 60.8, 42, TELDRASSIL },
+							["coord"] = { 60.8, 42.0, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
@@ -526,7 +527,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
 									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
-									--["coord"] = { , TELDRASSIL },	-- TODO: Find the coordinate for the closest moonwell.
+									-- ["coord"] = { , TELDRASSIL },	-- TODO: Find the coordinate for the closest moonwell.
 									["description"] = "Kneel (/kneel) in the Moonwell to gain a Meditation buff, then use the Rune to complete the quest.",
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance
@@ -694,9 +695,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -725,9 +726,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 50, 28, SHADOWGLEN },
+										{ 50.0, 28.0, SHADOWGLEN },
 										-- #else
-										{ 59, 28, TELDRASSIL },
+										{ 59.0, 28.0, TELDRASSIL },
 										-- #endif
 									},
 								}),
@@ -843,7 +844,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(459, {	-- The Woodland Protector (2/2)
 							["sourceQuest"] = 458,	-- The Woodland Protector (1/2)
 							["qg"] = 1992,	-- Tarindrella
-							["coord"] = { 57.8, 45, TELDRASSIL },
+							["coord"] = { 57.8, 45.0, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -876,9 +877,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -1080,79 +1081,76 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(208749, {	-- Gnarlpine Stash Key
-						["coord"] = { 41.6, 77.6, TELDRASSIL },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							2011,	-- Gnarlpine Augur
-							2013,	-- Gnarlpine Avenger
-							2012,	-- Gnarlpine Pathfinder
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208605, {	-- Teldrassil Treasure Map
-						["timeline"] = { REMOVED_2_0_1 },
-						["cost"] = {
-							{ "i", 208604, 1 },	-- Bottom-Left Map Piece
-							{ "i", 208603, 1 },	-- Bottom-Right Map Piece
-							{ "i", 208602, 1 },	-- Top-Left Map Piece
-							{ "i", 208601, 1 },	-- Top-Right Map Piece
-						},
-						["classes"] = { ROGUE },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208604, {	-- Bottom-Left Map Piece
-						["coord"] = { 52.6, 49.6, TELDRASSIL },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							2005,	-- Vicious Grell
-							2002,	-- Rascal Sprite
-							2004,	-- Dark Sprite
-							2003,	-- Shadow Sprite
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208603, {	-- Bottom-Right Map Piece
-						["coord"] = { 36.8, 37.6, TELDRASSIL },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							2019,	-- Bloodfeather Fury
-							2021,	-- Bloodfeather Matriarch
-							2015,	-- Bloodfeather Harpy
-							2020,	-- Bloodfeather Wind Witch
-							2018,	-- Bloodfeather Sorceress
-							2017,	-- Bloodfeather Rogue
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208602, {	-- Top-Left Map Piece
-						["coord"] = { 46.6, 52.4, TELDRASSIL },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							2010,	-- Gnarlpine Defender
-							2152,	-- Gnarlpine Ambusher
-							2009,	-- Gnarlpine Shaman
-							2011,	-- Gnarlpine Augur
-							2013,	-- Gnarlpine Avenger
-							2012,	-- Gnarlpine Pathfinder
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(208601, {	-- Top-Right Map Piece
-						["coord"] = { 60.0, 64.4, TELDRASSIL },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							2022,	-- Timberling
-							2027,	-- Timberling Trampler
-							2029,	-- Timberling Mire Beast
-							2030,	-- Elder Timberling
-							2025,	-- Timberling Bark Ripper
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(208749, {	-- Gnarlpine Stash Key
+					["coord"] = { 41.6, 77.6, TELDRASSIL },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						2011,	-- Gnarlpine Augur
+						2013,	-- Gnarlpine Avenger
+						2012,	-- Gnarlpine Pathfinder
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208605, {	-- Teldrassil Treasure Map
+					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = {
+						{ "i", 208604, 1 },	-- Bottom-Left Map Piece
+						{ "i", 208603, 1 },	-- Bottom-Right Map Piece
+						{ "i", 208602, 1 },	-- Top-Left Map Piece
+						{ "i", 208601, 1 },	-- Top-Right Map Piece
+					},
+					["classes"] = { ROGUE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208604, {	-- Bottom-Left Map Piece
+					["coord"] = { 52.6, 49.6, TELDRASSIL },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						2005,	-- Vicious Grell
+						2002,	-- Rascal Sprite
+						2004,	-- Dark Sprite
+						2003,	-- Shadow Sprite
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208603, {	-- Bottom-Right Map Piece
+					["coord"] = { 36.8, 37.6, TELDRASSIL },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						2019,	-- Bloodfeather Fury
+						2021,	-- Bloodfeather Matriarch
+						2015,	-- Bloodfeather Harpy
+						2020,	-- Bloodfeather Wind Witch
+						2018,	-- Bloodfeather Sorceress
+						2017,	-- Bloodfeather Rogue
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208602, {	-- Top-Left Map Piece
+					["coord"] = { 46.6, 52.4, TELDRASSIL },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						2010,	-- Gnarlpine Defender
+						2152,	-- Gnarlpine Ambusher
+						2009,	-- Gnarlpine Shaman
+						2011,	-- Gnarlpine Augur
+						2013,	-- Gnarlpine Avenger
+						2012,	-- Gnarlpine Pathfinder
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208601, {	-- Top-Right Map Piece
+					["coord"] = { 60.0, 64.4, TELDRASSIL },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						2022,	-- Timberling
+						2027,	-- Timberling Trampler
+						2029,	-- Timberling Mire Beast
+						2030,	-- Elder Timberling
+						2025,	-- Timberling Bark Ripper
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {
@@ -1207,7 +1205,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5639 },	-- Filled Jade Phial
 								{ "i", 5619 },	-- Jade Phial
 							},
-							["coord"] = { 63, 58, TELDRASSIL },
+							["coord"] = { 63.0, 58.0, TELDRASSIL },
 						}),
 					},
 				}),
@@ -1222,15 +1220,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5645 },	-- Filled Tourmaline Phial
 								{ "i", 5621 },	-- Tourmaline Phial
 							},
-							["coord"] = { 42, 67, TELDRASSIL },
+							["coord"] = { 42.0, 67.0, TELDRASSIL },
+						}),
+					},
+				}),
+				q(934, {	-- Crown of the Earth (5/6)
+					["sourceQuest"] = 933,	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
+					["qg"] = 3515,	-- Corithras Moonrage
+					["coord"] = { 56.2, 61.7, TELDRASSIL },
+					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER 1.7.0
+					["description"] = "This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",
+					-- #endif
+					["timeline"] = { REMOVED_1_7_0 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Filled Amethyst Phial
+							["providers"] = {
+								{ "i", 18151 },	-- Filled Amethyst Phial
+								{ "i", 18152 },	-- Amethyst Phial
+							},
+							["coord"] = { 38.0, 34.0, TELDRASSIL },
 						}),
 					},
 				}),
 				q(7383, {	-- Crown of the Earth (5/6) / Teldrassil: The Burden of the Kaldorei [CATA+]
 					["sourceQuest"] = 933,	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
-					["altQuests"] = { 934 },	-- Crown of the Earth (?/?) did the entire chain and never got this one yet it is marked as completed at the end
 					["qg"] = 3515,	-- Corithras Moonrage
 					["coord"] = { 56.2, 61.7, TELDRASSIL },
+					["timeline"] = { ADDED_1_7_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Amethyst Phial
@@ -1238,7 +1255,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 18151 },	-- Filled Amethyst Phial
 								{ "i", 18152 },	-- Amethyst Phial
 							},
-							["coord"] = { 38, 34, TELDRASSIL },
+							["coord"] = { 38.0, 34.0, TELDRASSIL },
 						}),
 					},
 				}),
@@ -1450,7 +1467,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3838 },	-- Vesprystus
 						{ "i", 16262 },	-- Nessa's Collection
 					},
-					["coord"] = { 58.4, 94, TELDRASSIL },
+					["coord"] = { 58.4, 94.0, TELDRASSIL },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 				}),
@@ -1607,7 +1624,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4161, {	-- Recipe of the Kaldorei
 					["qg"] = 6286,	-- Zarrin
-					["coord"] = { 57, 61.2, TELDRASSIL },
+					["coord"] = { 57.0, 61.2, TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 5465, 7 } },	-- Small Spider Leg
 					["requireSkill"] = COOKING,
@@ -1793,7 +1810,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 18151 },	-- Filled Amethyst Phial
 								{ "i", 18152 },	-- Amethyst Phial
 							},
-							["coord"] = { 40, 29, TELDRASSIL },
+							["coord"] = { 40.0, 29.0, TELDRASSIL },
 						}),
 					},
 				}),
@@ -1827,16 +1844,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5639 },	-- Filled Jade Phial
 								{ "i", 5619 },	-- Jade Phial
 							},
-							["coord"] = { 60, 50, TELDRASSIL },
+							["coord"] = { 60.0, 50.0, TELDRASSIL },
 						}),
 					},
 				}),
 				-- #endif
 				q(2241, {	-- The Apple Falls
-					["altQuests"] = {
-						2218,	-- Road to Salvation
-						2205,	-- Seek out SI: 7
-					},
 					["providers"] = {
 						{ "n", 3599 },	-- Jannok Breezesong
 						{ "i", 7735 },	-- Jannok's Rose
@@ -2000,7 +2013,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6722, {	-- The Hunter's Path [Dun Morogh]
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
-					["coord"] = { 45.8, 53, DUN_MOROGH },
+					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
@@ -2560,7 +2573,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(209928, {	-- Mowgh
 					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 48.3, 31.4, TELDRASSIL },
-					["cost"] = {{ "i", 208608, 1 }},	-- Teldrassil Bird Meat
+					["cost"] = { { "i", 208608, 1 } },	-- Teldrassil Bird Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
 							["classes"] = { HUNTER },
@@ -2594,7 +2607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 208760 },	-- Glade Crown
 					},
 					["coord"] = { 66.8, 58.0, TELDRASSIL },
-					["cost"] = { { "i", 208609, 3 }},	-- Glade Flower
+					["cost"] = { { "i", 208609, 3 } },	-- Glade Flower
 					["groups"] = {
 						i(206963, {	-- Rune of Natural Potential
 							["classes"] = { DRUID },
@@ -2706,7 +2719,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 407352 },	-- Gnarlpine Stash
 					["coord"] = { 37.9, 82.5, TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208749, 1 }},	-- Gnarlpine Stash Key
+					["cost"] = { { "i", 208749, 1 } },	-- Gnarlpine Stash Key
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
@@ -2716,7 +2729,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 55.3, 90.8, TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208605, 1 }},	-- Teldrassil Treasure Map
+					["cost"] = { { "i", 208605, 1 } },	-- Teldrassil Treasure Map
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw

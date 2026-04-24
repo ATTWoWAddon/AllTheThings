@@ -1,0 +1,1 @@
+"Parser.exe" baseconfig=.config/retail/retail.config config=.config/options/simplify.config

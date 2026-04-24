@@ -1,5 +1,5 @@
 @echo off
-SET BUILD=11.2.5.63834
+SET BUILD=11.2.7.65299
 
 @REM Download new file versions
 call :download Achievement
@@ -11,6 +11,7 @@ call :download Criteria
 call :download CriteriaTree
 call :download GlyphProperties
 call :downloadrenamed Holiday Holidays
+call :download HouseDecor
 call :download Item
 call :download ItemBonus
 call :download ItemEffect
@@ -18,6 +19,7 @@ call :download ItemModifiedAppearance
 call :download ItemXItemEffect
 call :download ItemSearchName
 call :download ModifierTree
+call :download SkillLineAbility
 call :download SpellEffect
 call :download TaxiNodes
 call :download TransmogSet

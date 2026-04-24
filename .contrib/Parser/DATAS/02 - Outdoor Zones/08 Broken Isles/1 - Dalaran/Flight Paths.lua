@@ -7,7 +7,7 @@ root(ROOTS.Zones, {
 		m(LEGION_DALARAN, {
 			n(FLIGHT_PATHS, {
 				fp(1774, {	-- Dalaran
-					["creatureID"] = 96813,	-- Aludane Whitecloud
+					["cr"] = 96813,	-- Aludane Whitecloud
 					["coord"] = { 69.8, 50.8, LEGION_DALARAN },
 				}),
 				-- This FlightPath is not collectible, but is faked on the map by Blizzard

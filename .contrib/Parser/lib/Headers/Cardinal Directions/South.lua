@@ -1,12 +1,25 @@
+createLocalizationString({
+	readable = "South",
+	constant = "SOUTH",
+	export = true,
+	text = {
+		en = "South",
+		-- TODO: de = "",
+		es = "Sur",
+		mx = "Sur",
+		fr = "Sud",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		ru = "Юг",
+		cn = "南部",
+		-- tw = "南部",
+	},
+});
 SOUTH = createHeader({
 	readable = "South",
 	icon = 450905,
 	text = {
-		en = "South",
-		es = "Sur",
-		fr = "Sud",
-		mx = "Sur",
-		ru = "Юг",
-		cn = "南部",
+		en = [[~L.SOUTH]],
 	},
 });

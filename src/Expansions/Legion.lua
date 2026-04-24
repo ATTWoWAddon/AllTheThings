@@ -1,5 +1,5 @@
 -- App locals
-local appName,app = ...;
+local _,app = ...;
 
 -- Check to see if Artifact APIs are available for Legion
 local C_ArtifactUI = C_ArtifactUI;
@@ -21,10 +21,15 @@ local IsArtifactRelicItem = app.WOWAPI.IsArtifactRelicItem;
 local CurrentArtifactRelicItemLevels = {}
 local pairs, select, math_floor,tinsert,tremove
 	= pairs, select, math.floor,tinsert,tremove
-local L, ColorizeRGB, contains = app.L, app.Modules.Color.ColorizeRGB, app.contains
-local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
+local L, ColorizeRGB, contains, CloneDictionary
+	= app.L, app.Modules.Color.ColorizeRGB, app.contains, app.CloneDictionary
+local GetRelativeField = app.GetRelativeField
 local GetDetailedItemLevelInfo = GetDetailedItemLevelInfo;
-local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
+local ArtifactDB = setmetatable(app.ArtifactDB or {}, { __index = function(t,key)
+	app.PrintDebug("ArtifactID not in DB!",key)
+	t[key] = app.EmptyTable
+	return t[key]
+end})
 
 local function GetArtifactModItemID(itemID, artifactID, isOffHand)
 	return itemID + (isOffHand and 0.0001 or 0) + (artifactID / 1000)
@@ -38,6 +43,8 @@ local ArtifactInfoStatic, ArtifactInfoCached
 ArtifactInfoStatic = setmetatable({}, { __index = function(t,key)
 	local info = { C_ArtifactUI_GetAppearanceInfoByID(key) }
 	if info[1] then
+		-- copy our DB data into the info
+		CloneDictionary(ArtifactDB[key], info)
 		t[key] = info
 		ArtifactInfoCached[key] = info
 	end
@@ -47,6 +54,8 @@ end})
 ArtifactInfoCached = setmetatable({}, { __index = function(t,key)
 	local info = { C_ArtifactUI_GetAppearanceInfoByID(key) }
 	if info[1] then
+		-- copy our DB data into the info
+		CloneDictionary(ArtifactDB[key], info)
 		t[key] = info
 		ArtifactInfoStatic[key] = info
 	end
@@ -69,15 +78,31 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 	collected = function(t)
 		return app.TypicalCharacterCollected(CACHE, t[KEY], SETTING)
 	end,
-	name = function(t)
+	text = function(t)
 		-- Artifact listing in the Main item sets category just show 'Variant #' but elsewhere show the Item's name
-		if t.parent and t.parent.headerID then
+		local parent = t.parent
+		if parent and parent.headerID then
 			return t.variantText;
 		end
 		return t.appearanceText;
 	end,
+	name = function(t)
+		-- Artifact listing in the Main item sets category just show 'Variant #' but elsewhere show the Item's name
+		local parent = t.parent
+		if parent and parent.headerID then
+			return t.variantName;
+		end
+		return t.appearanceName;
+	end,
 	title = function(t)
 		return t.variantText;
+	end,
+	variantName = function(t)
+		local info = t.artifactinfo
+		local variantName = info[4]
+		if not variantName then return UNKNOWN end
+		t.variantName = variantName
+		return variantName
 	end,
 	variantText = function(t)
 		local info = t.artifactinfo
@@ -90,6 +115,12 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 		end
 		t.variantText = text;
 		return text;
+	end,
+	appearanceName = function(t)
+		local info = t.artifactinfo
+		local name = info[3] or UNKNOWN
+		t.appearanceName = name
+		return name
 	end,
 	appearanceText = function(t)
 		local info = t.artifactinfo
@@ -113,15 +144,6 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 		local info = t.artifactinfo
 		return { info[9], info[10], info[11], 1.0 };
 	end,
-	model = function(t)
-		return GetRelativeValue(t.parent, "model");
-	end,
-	modelScale = function(t)
-		return GetRelativeValue(t.parent, "modelScale") or 0.95;
-	end,
-	modelRotation = function(t)
-		return GetRelativeValue(t.parent, "modelRotation") or 45;
-	end,
 	silentLink = function(t)
 		local itemID = t.itemID;
 		if itemID then
@@ -139,19 +161,15 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 	end,
 	-- only used when an artifact is listed without correpsonding itemID
 	itemID = function(t)
-		local artifactID = t.artifactID
-		local artifacts = app.SearchForField("artifactID", artifactID)
-		local i = 1
-		local itemID
-		while not itemID and i < #artifacts do
-			itemID = rawget(artifacts[i], "itemID")
-			i = i + 1
-		end
-		if not itemID then
-			app.PrintDebug("Failed to determine itemID from artifactID",artifactID)
-		end
-		t.itemID = itemID
-		return itemID
+		local info = t.artifactinfo
+		return t.isOffHand and info.itemOffhandID or info.itemID
+	end,
+	-- custom 'nmc' for Artifact since it doesn't use 'c' but rather 'class' from artifactinfo
+	nmc = function(t)
+		local nmc = t.artifactinfo.class ~= app.ClassIndex
+		-- app.PrintDebug("artifact.nmc",nmc,t[KEY])
+		t.nmc = nmc
+		return nmc
 	end,
 	modItemID = function(t)
 		-- Artifacts will use a fake modItemID by way of the ArtifactID and IsOffhand
@@ -172,16 +190,14 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 			-- app.PrintDebug("Artifact Source",sourceID,t.silentLink)
 			if sourceID and sourceID > 0 then
 				t.sourceID = sourceID;
-				app.SaveHarvestSource(t)
-				if app.IsAccountCached("Sources", sourceID) ~= 1 and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-					-- app.PrintDebug("Saved Known Source",sourceID)
-					app.SetAccountCached("Sources", sourceID, 1)
-				end
+				-- app.SaveHarvestSource(t)	-- only needed if needing to harvest artifact sourceIDs for some reason
 				return sourceID;
 			end
 		end
 	end,
 });
+
+app.AddGenericFieldConverter(KEY);
 app.AddEventHandler("OnRefreshCollections", function()
 	local object
 	wipe(ArtifactInfoCached)
@@ -257,6 +273,7 @@ app.AddEventHandler("OnLoad", function()
 			end
 		end
 	})
+	app.AddDynamicCategoryHeader({ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") });
 end)
 
 -- Resolve Functionality
@@ -491,7 +508,7 @@ app.AddEventRegistration("ARTIFACT_UPDATE", function(...)
 				CurrentArtifactRelicItemLevels[itemID] = myArtifactData;
 			end
 			for relicSlotIndex=1,count,1 do
-				local name, relicItemID, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
+				local _, _, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
 				myArtifactData[relicSlotIndex] = {
 					relicType = relicType,
 					iLvl = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,

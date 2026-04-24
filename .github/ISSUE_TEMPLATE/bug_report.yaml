@@ -9,14 +9,14 @@ body:
       label: "Which flavo(u)r of WoW are you using?"
       description: "Select the versions of World of Warcraft."
       options:
+        - "Beta"
+        - "PTR"
         - "Retail"
         - "MoP Classic"
-        - "WotLK Classic"
         - "Classic Era"
         - "Hardcore"
         - "Season of Discovery"
         - "Anniversary Realms"
-        - "Hardcore Anniversary Realms"
     validations:
       required: true
 
@@ -29,8 +29,8 @@ body:
         - "US"
         - "EU"
         - "KR"
-        - "TW"
         - "CN"
+        - "TW"
     validations:
       required: true
 

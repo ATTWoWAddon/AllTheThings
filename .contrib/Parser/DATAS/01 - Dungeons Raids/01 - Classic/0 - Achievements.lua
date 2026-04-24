@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 -- #if AFTER 3.0.2
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	n(ACHIEVEMENTS, {
@@ -39,9 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		}),
 		ach(7934, {	-- Raiding with Leashes
 			["timeline"] = { ADDED_5_1_0 },
-			["groups"] = {
-				i(93031),	-- Mr. Bigglesworth (PET!)
-			},
+			["groups"] = { i(93031) },	-- Mr. Bigglesworth (PET!)
 		}),
 	}),
 }));

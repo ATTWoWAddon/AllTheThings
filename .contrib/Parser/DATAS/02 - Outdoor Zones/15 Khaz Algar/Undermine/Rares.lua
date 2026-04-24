@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(RARES, {
@@ -12,8 +13,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					230746,	-- Ephemeral Agent Lathyd
 					230840,	-- Flyboy Snooty
 					234499,	-- Giovante
-					--230935,	-- Grease
-					--230936,	-- Grime
+					-- 230935,	-- Grease
+					-- 230936,	-- Grime
 					231017,	-- Grimewick
 					234480,	-- M.A.G.N.O.
 					230995,	-- Nitro
@@ -21,7 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					230979,	-- S.A.L.
 					230931,	-- Scrapbeak
 					233471,	-- Scrapchewer
-					--230947,	-- Slimesby
+					-- 230947,	-- Slimesby
 					230800,	-- Slugger the Smart
 					231288,	-- Swogs Farsight
 					230940,	-- Tally Doublespeak
@@ -53,7 +54,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["isWeekly"] = true,
 				}),
 				q(86414, {	-- Magno-Scrapper 9000
-					--["sourceQuests"] = { 84951 },	-- HQT: Bilgewater Cartel weekly contract
+					-- ["sourceQuests"] = { 84951 },	-- HQT: Bilgewater Cartel weekly contract
 					["provider"] = { "n", 234819 },	-- Ragzy Cashgrab
 					["coord"] = { 40.0, 22.4, UNDERMINE },
 					["isWeekly"] = true,
@@ -62,13 +63,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(86390, {	-- Noggenfogger Nuisance
-					--["sourceQuests"] = { 84952 },	-- HQT: Steamwheedle Cartel weekly contract
+					-- ["sourceQuests"] = { 84952 },	-- HQT: Steamwheedle Cartel weekly contract
 					["provider"] = { "n", 234751 },	-- Noggenfogger Recall Technician
 					["coord"] = { 32.0, 76.5, UNDERMINE },
 					["isWeekly"] = true,
 				}),
 				q(86428, {	-- Voltstrike the Charged
-					--["sourceQuests"] = { 84954 },	-- HQT: Blackwater Cartel weekly contract
+					-- ["sourceQuests"] = { 84954 },	-- HQT: Blackwater Cartel weekly contract
 					["provider"] = { "n", 234834 },	-- Boatwright Frankle
 					["coord"] = { 61.4, 25.2, UNDERMINE },
 					["isWeekly"] = true,
@@ -78,7 +79,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(86431, {	-- Scrapchewer
-					--["sourceQuests"] = { 84953 },	-- HQT: Venture Co. weekly contract
+					-- ["sourceQuests"] = { 84953 },	-- HQT: Venture Co. weekly contract
 					["provider"] = { "n", 236035 },	-- Scrapminer Krazzik
 					["coord"] = { 56.7, 79.0, UNDERMINE },
 					["isWeekly"] = true,
@@ -118,7 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					231329,	-- De-Pollution Station X1119
 					231336,	-- Vignette Bunny [DNT]
 				},
-				["cost"] = {{"i", 229823, 1}},	-- Canister of Darkfuse Solution
+				["cost"] = { { "i", 229823, 1 } },	-- Canister of Darkfuse Solution
 				["coord"] = { 41.2, 91.4, UNDERMINE },
 				["questID"] = 90492,
 				["isWeekly"] = true,
@@ -240,7 +241,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(233471, {	-- Scrapchewer
 				["description"] = "Can be summoned by anyone who has a contract with the Venture Co.",
-				["coord"] = { 56.8, 79, UNDERMINE },
+				["coord"] = { 56.8, 79.0, UNDERMINE },
 				["crs"] = {
 					234911,	-- Vignette Bunny [DNT]
 					234832,	-- Krazzik's Drill Rig
@@ -353,7 +354,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(UNDERMINE, {
-			n(RARES, { -- Orphaned Cartel Rare HQTs, used to trigger on each kill, no longer trigger at all?
+			n(RARES, {	-- Orphaned Cartel Rare HQTs, used to trigger on each kill, no longer trigger at all?
 				q(85010),	-- Related to killing Darkfuse Precipitant
 				q(86298),	-- Related to killing M.A.G.N.O.
 				q(86307),	-- Related to killing Giovante

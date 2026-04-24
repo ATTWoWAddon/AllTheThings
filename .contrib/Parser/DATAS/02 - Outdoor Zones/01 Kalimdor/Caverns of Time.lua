@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(CAVERNS_OF_TIME, {
 		["lore"] = "Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",
@@ -48,7 +49,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 39.4, 44.4, CAVERNS_OF_TIME },
 						-- #else
-						{ 59.6, 54, TANARIS },
+						{ 59.6, 54.0, TANARIS },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
@@ -102,6 +103,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 			}),
 			-- #endif
+			n(SPECIAL, {
+				hqt(53654, {	-- Speak to Wan'be infront of Zaladormu in the Caverns of Time
+					["name"] = "Speak to Wan'be infront of Zaladormu in the Caverns of Time",
+					["sourceQuest"] = 53653,	-- Speak to Wan'be at Frostsaber Rock in Winterspring
+					["providers"] = {
+						{ "n", 143129 },	-- Wan'be <The Explorer>
+						{ "i", 163213 },	-- Ghostly Explorer's Skull
+					},
+					["coord"] = { 53.6, 55.8, CAVERNS_OF_TIME },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_8_0_1 },
+				}),
+			}),
 			n(VENDORS, {
 				applyclassicphase(TBC_PHASE_THREE, n(19932, {	-- Andormu <Keepers of Time>
 					["groups"] = bubbleDownClassicRep(FACTION_KEEPERS_OF_TIME, {
@@ -194,11 +208,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(170739, {	-- Sunswarmed Sand
 							["timeline"] = { ADDED_8_2_0 },
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 10 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 10 } },
 						}),
 						i(170380, {	-- Jar of the Sunwarmed Sand (TOY!)
 							["timeline"] = { ADDED_8_2_0 },
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 					},
 				}),

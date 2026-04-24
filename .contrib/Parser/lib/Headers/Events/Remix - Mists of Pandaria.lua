@@ -12,10 +12,18 @@ REMIX_MOP = createHeader({
 	timerunningSeasonID = 1,
 	text = {
 		en = "Remix: Mists of Pandaria",
+		-- TODO: de = "",
+		es = "Mists of Pandaria: Remix",
+		mx = "Mists of Pandaria: Remix",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "熊猫人之谜：幻境新生",
 		tw = "混搭再造：潘達利亞之謎",
 	},
-	--description = {
-	--	en = "",
-	--},
+	-- description = {
+	-- 	en = "",
+	-- },
 });

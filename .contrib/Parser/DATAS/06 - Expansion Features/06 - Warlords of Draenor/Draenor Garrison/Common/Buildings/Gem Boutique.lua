@@ -9,35 +9,35 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(132, {	-- Gem Boutique (rank 1: 96, rank 2: 131, rank 3: 132)
 					n(QUESTS, {
 						q(37320, {	-- Jewelcrafting Special Order: A Fine Choker
-							["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+							["qg"] = 88545,	-- Jewelcrafting Follower - Alliance
 							["isDaily"] = true,
 						}),
 						q(37321, {	-- Jewelcrafting Special Order: A Yellow Brighter Than Gold
-							["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+							["qg"] = 88545,	-- Jewelcrafting Follower - Alliance
 							["isDaily"] = true,
 						}),
 						q(37323, {	-- Jewelcrafting Special Order: Blue the Shade of Sky and Sea
-							["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+							["qg"] = 88545,	-- Jewelcrafting Follower - Alliance
 							["isDaily"] = true,
 						}),
 						q(37319, {	-- Jewelcrafting Special Order: Wedding Bands
-							["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+							["qg"] = 88545,	-- Jewelcrafting Follower - Alliance
 							["isDaily"] = true,
 						}),
 						q(37324, {	-- Out of Stock: Blackrock Ore
-							["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+							["qg"] = 88545,	-- Jewelcrafting Follower - Alliance
 							["isDaily"] = true,
 						}),
 						q(37325, {	-- Out of Stock: True Iron Ore
-							["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+							["qg"] = 88545,	-- Jewelcrafting Follower - Alliance
 							["isDaily"] = true,
 						}),
 						q(36644, {	-- Your First Jewelcrafting Work Order
-							["provider"] = { "n", 77356 },	-- Costan Highwall
+							["qg"] = 77356,	-- Costan Highwall
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37573, {	-- Your First Jewelcrafting Work Order
-							["provider"] = { "n", 79832 },	-- Dorogarr
+							["qg"] = 79832,	-- Dorogarr
 							["races"] = HORDE_ONLY,
 						}),
 					}),

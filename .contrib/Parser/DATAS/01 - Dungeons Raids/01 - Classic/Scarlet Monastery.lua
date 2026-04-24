@@ -1,15 +1,22 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 SCARLET_MONASTERY_GRAVEYARD_HEADER = createHeader({
 	readable = "Graveyard",
 	icon = 133730,
 	text = {
 		en = "Graveyard",
 		de = "Friedhof",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Cimetière",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Кладбище",
 		cn = "墓地",
+		tw = "墓地",
 	},
 });
 SCARLET_MONASTERY_LIBRARY_HEADER = createHeader({
@@ -18,9 +25,15 @@ SCARLET_MONASTERY_LIBRARY_HEADER = createHeader({
 	text = {
 		en = "Library",
 		de = "Bibliothek",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Librairie",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Библиотека",
 		cn = "图书馆",
+		tw = "圖書館",
 	},
 });
 SCARLET_MONASTERY_ARMORY_HEADER = createHeader({
@@ -29,9 +42,15 @@ SCARLET_MONASTERY_ARMORY_HEADER = createHeader({
 	text = {
 		en = "Armory",
 		de = "Waffenkammer",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Armurerie",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Оружейная",
-		cn = "武器库",
+		cn = "军械库",
+		tw = "武器庫",
 	},
 });
 SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
@@ -40,11 +59,18 @@ SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
 	text = {
 		en = "Cathedral",
 		de = "Kathedrale",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Cathédrale",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Собор",
-		cn = "修道院",
+		cn = "大教堂",
+		tw = "修道院",
 	},
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(316, {	-- Scarlet Monastery
 		-- #if BEFORE MOP
@@ -345,7 +371,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								q(1951, {	-- Rituals of Power
 									["sourceQuest"] = 1950,	-- Get the Scoop
 									["qg"] = 6548,	-- Magus Tirth
-									["coord"] = { 478.2, 75.8, THOUSAND_NEEDLES },
+									["coord"] = { 47.82, 75.8, THOUSAND_NEEDLES },
 									["timeline"] = { REMOVED_4_0_3 },
 									["maps"] = { DUSTWALLOW_MARSH },
 									["classes"] = { MAGE },
@@ -1288,23 +1314,63 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				ach(6913, {	-- Scarlet Monastery: Gold
 					spell(131229),	-- Path of the Scarlet Mitre
 				}),
+				-- #if ANYCLASSIC
+				ach(61973, {	-- Scarlet Monastery: Platinum
+					i(265573),	-- Platinum Sacrificial Dagger
+				}),
+				-- #endif
 			})),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
 					e(674, {	-- High Inquisitor Whitemane
 						["creatureID"] = 3977,	-- High Inquisitor Whitemane
-						["groups"] = {
+						["groups"] = appendGroups(
+						{
 							ach(60898),	-- Celestial: Scarlet Monastery
-							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES,i(86879)),	-- Gao-Rei, Staff of the Legendary Protector (Terrace)
+						},
+						-- #if BEFORE 5.5.3
+						{	-- Season 1 Drops
+							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86879)),	-- Gao-Rei, Staff of the Legendary Protector (Terrace)
 							i(86796),	-- Torch of the Celestial Spark
 							i(86754),	-- Amulet of Seven Curses
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86872)),	-- Kaolan's Withering Necklace (Terrace)
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86820)),	-- Ring of the Bladed Tempest
 							i(86792),	-- Light of the Cosmos
 						},
+						-- #elseif BEFORE 5.5.5
+						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
+							i(95635),	-- Al'set's Tormented Leggings
+							i(95796),	-- Bracers of the Midnight Comet
+							i(95715),	-- Chain of Consuming Magic
+							i(95741),	-- Deadly Glare Cape
+							i(95742),	-- Durumu's Captive Eyeball
+							i(95860),	-- Fyn's Flickering Dagger
+							i(95797),	-- Girdle of Night and Day
+							i(95769),	-- Gore-Soaked Gear
+							i(95768),	-- Greatshield of the Gloaming
+							i(95770),	-- Hand of the Dark Animus
+							i(95716),	-- Ice-Scored Treads
+							i(95633),	-- Jin'rokh's Soulcrystal
+							i(95634),	-- Lightningweaver Gauntlets
+							i(95714),	-- Links of the Bifurcated Tongue
+							i(95964),	-- Necklace of the Terra-Cotta Invoker
+							i(95743),	-- Ritual Dagger of the Mind's Eye
+							i(95661),	-- Roots of Rampaging Earth
+							i(95963),	-- Silentflame Sandals
+							i(95662),	-- Spaulders of Dinomancy
+							i(95689),	-- Stonegaze Hood
+							i(95795),	-- Suen-Wo, Spire of the Falling Sun
+							i(95660),	-- Venomlord's Totemic Wand
+						}),
+						-- #else
+						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
+							
+						}),
+						-- #endif
+						{}),
 					}),
 				},
 			})),

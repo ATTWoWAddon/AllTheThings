@@ -564,7 +564,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 				["provider"] = { "o", 290138 },	-- Bot Buster Bomb
 				["coord"] = { 37.8, 28.5, STORMSONG_VALLEY },
-				--	SQ needs confirmation
+				-- SQ needs confirmation
 				["groups"] = {
 					o(286954, {	-- Bot Buster Bomb
 						i(160397),	-- Bot Buster Bomb (QI!)
@@ -665,7 +665,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131656 },	-- Houndmaster Archibald
 				["coord"] = { 51.0, 70.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				--	UNKNOWN SOURCE. unavailable prior to doing BFA/zone intro. first noticed after doing 'heavy artillery' but could just require zone intro.
+				-- UNKNOWN SOURCE. unavailable prior to doing BFA/zone intro. first noticed after doing 'heavy artillery' but could just require zone intro.
 			}),
 			q(50608, {	-- Forbidden Rites
 				["sourceQuests"] = {
@@ -770,7 +770,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 138924 },	-- Holger Nash
 				["coord"] = { 67.5, 38.6, 1182 },	-- Saltstone Mine
 				["races"] = ALLIANCE_ONLY,
-				--	unknown SQ. picked up after picking up "having a blast"
+				-- unknown SQ. picked up after picking up "having a blast"
 			}),
 			q(51720, {	-- Get Shredded
 				["sourceQuests"] = {	-- may also require 'get out of here'
@@ -848,7 +848,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 138735 },	-- Felecia Gladstone
 				["coord"] = { 46.9, 47.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				--	unknown SQ. possibly #50909, 'never outgunned'?
+				-- unknown SQ. possibly #50909, 'never outgunned'?
 			}),
 			q(49704, {	-- Haywire Harvesters
 				["sourceQuests"] = { 49703 },	-- House Stormsong
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 57.9, 55.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
-				--	may also require 'smells like trouble' and 'dangerous game'
+				-- may also require 'smells like trouble' and 'dangerous game'
 			}),
 			q(51221, {	-- Response Required
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
@@ -1244,7 +1244,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 50.0, 31.8, STORMSONG_VALLEY },	-- Horde
 				},
 				["lvl"] = 120,
-				--	unsure if this has any SQs or if it just requires being level 120.
+				-- unsure if this has any SQs or if it just requires being level 120.
 			}),
 			q(50365, {	-- Run For the Hills
 				["sourceQuests"] = {
@@ -1302,7 +1302,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131656 },	-- Houndmaster Archibald
 				["coord"] = { 51.0, 70.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				--	UNKNOWN SOURCE. unavailable prior to doing BFA/zone intro. first noticed after doing 'heavy artillery' but could just require zone intro.
+				-- UNKNOWN SOURCE. unavailable prior to doing BFA/zone intro. first noticed after doing 'heavy artillery' but could just require zone intro.
 			}),
 			q(50908, {	-- Smells like Trouble
 				["sourceQuests"] = { 52067 },	-- Survivors
@@ -1448,7 +1448,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50368, {	-- Terror of the Kraul
 				["sourceQuests"] = {
-					--	may also require 50340 'steal them back'. DOES NOT REQUIRE 'TOTEMS, TOTEMS, TOTEMS;' i picked it up before turning that one in.
+					-- may also require 50340 'steal them back'. DOES NOT REQUIRE 'TOTEMS, TOTEMS, TOTEMS;' i picked it up before turning that one in.
 					50367,	-- Anger in a Bottle (didn't appear until i turned this in, in addition to 'run for the hills' + 'war pigs')
 					50363,	-- War Pigs
 					50365,	-- Run For the Hills
@@ -1531,7 +1531,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					NAZMIR,
 					VOLDUN,
 					TIRAGARDE_SOUND,
-					--STORMSONG_VALLEY,
+					-- STORMSONG_VALLEY,
 					ZULDAZAR,
 					DRUSTVAR,
 				},
@@ -1553,7 +1553,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 146019 },	-- Cracked Mine Sweeper
 				["coord"] = { 48.1, 15.7, 1182 },
 				["races"] = ALLIANCE_ONLY,
-			--	unknown SQ. picked up after picking up "having a blast"
+				-- unknown SQ. picked up after picking up "having a blast"
 			}),
 			q(50139, {	-- The Missing Link
 				["sourceQuests"] = { 49975 },	-- Rest in the Depths
@@ -1738,7 +1738,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 297492 },	-- Bulletin Board
 				["coord"] = { 51.0, 33.6, STORMSONG_VALLEY },
 				["races"] = HORDE_ONLY,
-			--	unknown if this has any SQs
+				-- unknown if this has any SQs
 				["groups"] = {
 					i(163636),	-- Razorclaw Alpha Pelt (QI!)
 				},
@@ -1747,7 +1747,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 287958 },	-- Bulletin Board
 				["coord"] = { 30.6, 68.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			--	unknown SQ
+				-- unknown SQ
 				["groups"] = {
 					i(158300),	-- Thundersnout's Snout (QI!)
 				},
@@ -1756,7 +1756,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 297492 },	-- Bulletin Board
 				["coord"] = { 51.0, 33.6, STORMSONG_VALLEY },
 				["races"] = HORDE_ONLY,
-			--	unknown if this has any SQs
+				-- unknown if this has any SQs
 				["groups"] = {
 					i(158300),	-- Thundersnout's Snout (QI!)
 				},

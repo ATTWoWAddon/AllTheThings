@@ -1,4 +1,9 @@
-root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5, REMOVED_11_1_5, ADDED_11_1_7, REMOVED_11_2_0_SEASONSTART } }, {
+--------------------------------------------
+--       E V E N T S    M O D U L E       --
+--------------------------------------------
+
+root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+	-- #if BEFORE MID
 	["maps"] = {
 		DRAGON_ISLES,
 		EMERALD_DREAM,
@@ -22,9 +27,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 		THE_PROSCENIUM,	-- Theatre Troupe location
 		THE_RINGING_DEEPS,
 	},
+	-- #endif
 	["groups"] = {
 		i(235054, {	-- Pristine Mysterious Satchel
-			["description"] = "Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
+			["description"] =
+			-- #if BEFORE MID
+			"Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
+			-- #else
+			"Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
+			-- #endif
 			["groups"] = {
 				n(ARMOR, {
 					n(BACK, {
@@ -87,6 +98,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 					i(236959),	-- Empty Mysterious Potion
 					i(240995),	-- Fortuitous Satchel
 					i(200886),	-- Lemon Silverleaf Tea
+					i(225378),	-- Mohawk Grenade
 					i(235803),	-- Potion of Mysterious Celerity
 					i(236854),	-- Potion of Mysterious Conflagration
 					i(236857),	-- Potion of Mysterious Frostbound
@@ -123,15 +135,30 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 			},
 		}),
 		i(236944, {	-- Weathered Mysterious Satchel (Epic)
-			["description"] = "Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day will be Pristine and will have increased chance for better rewards.",
+			["description"] =
+			-- #if BEFORE MID
+			"Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
+			-- #else
+			"Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
+			-- #endif
 			["sym"] = {{"select","itemID",235054},{"pop"}},	-- Pristine Mysterious Satchel
 		}),
 		i(235911, {	-- Weathered Mysterious Satchel (Rare)
-			["description"] = "Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day will be Pristine and will have increased chance for better rewards.",
+			["description"] =
+			-- #if BEFORE MID
+			"Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
+			-- #else
+			"Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
+			-- #endif
 			["sym"] = {{"select","itemID",235054},{"pop"}},	-- Pristine Mysterious Satchel
 		}),
 		i(235052, {	-- Weathered Mysterious Satchel (Uncommon)
-			["description"] = "Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day will be Pristine and will have increased chance for better rewards.",
+			["description"] =
+			-- #if BEFORE MID
+			"Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
+			-- #else
+			"Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
+			-- #endif
 			["sym"] = {{"select","itemID",235054},{"pop"}},	-- Pristine Mysterious Satchel
 		}),
 	},

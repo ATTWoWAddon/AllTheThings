@@ -78,6 +78,69 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(18438),	-- Sergeant's Mark
 			}),
 		}),
+		-- #if SEASON_OF_DISCOVERY
+		i(226851),	-- Darkmantle Boots
+		i(226848),	-- Darkmantle Legs
+		i(226847),	-- Darkmantle Shoulders
+		i(226850),	-- Darkmantle Gloves
+		i(226846),	-- Darkmantle Waist
+		i(226903),	-- Beastmaster's Boots
+		i(226900),	-- Beastmaster's Legs
+		i(226899),	-- Beastmaster's Shoulders
+		i(226902),	-- Beastmaster's Gloves
+		i(226898),	-- Beastmaster's Waist
+		i(226999),	-- Soulforge Boots
+		i(226996),	-- Soulforge Legs
+		i(226995),	-- Soulforge Shoulders
+		i(226998),	-- Soulforge Gloves
+		i(226994),	-- Soulforge Waist
+		i(226967),	-- Virtuous Boots
+		i(226964),	-- Virtuous Legs
+		i(226963),	-- Virtuous Shoulders
+		i(226966),	-- Virtuous Gloves
+		i(226962),	-- Virtuous Waist
+		i(226821),	-- Feralheart Boots
+		i(226818),	-- Feralheart Legs
+		i(226817),	-- Feralheart Shoulders
+		i(226820),	-- Feralheart Gloves
+		i(226816),	-- Feralheart Waist
+		i(226927),	-- Deathmist Boots
+		i(226924),	-- Deathmist Legs
+		i(226923),	-- Deathmist Shoulders
+		i(226926),	-- Deathmist Gloves
+		i(226922),	-- Deathmist Waist
+		i(227039),	-- Boots of The Five Thunders
+		i(227036),	-- Legs of The Five Thunders
+		i(227035),	-- Shoulders of The Five Thunders
+		i(227038),	-- Gloves of The Five Thunders
+		i(227034),	-- Waist of The Five Thunders
+		i(226879),	-- Boots of Heroism
+		i(226876),	-- Legs of Heroism
+		i(226875),	-- Shoulders of Heroism
+		i(226878),	-- Gloves of Heroism
+		i(226874),	-- Waist of Heroism
+		i(226877),	-- Helm of Heroism
+		i(226880),	-- Chest of Heroism
+		i(226901),	-- Beastmaster's Helm
+		i(226904),	-- Beastmaster's Chest
+		i(226925),	-- Deathmist Helm
+		i(226928),	-- Deathmist Chest
+		i(226938),	-- Sorcerer's Waist
+		i(226941),	-- Sorcerer's Helm
+		i(226942),	-- Sorcerer's Gloves
+		i(226944),	-- Sorcerer's Chest
+		i(226965),	-- Virtuous Helm
+		i(226968),	-- Virtuous Chest
+		i(226775),	-- Feralheart Wraps
+		i(226819),	-- Feralheart Helm
+		i(226822),	-- Feralheart Chest
+		i(226849),	-- Darkmantle Helm
+		i(226852),	-- Darkmantle Chest
+		i(226997),	-- Soulforge Helm
+		i(227000),	-- Soulforge Chest
+		i(227037),	-- Helm of The Five Thunders
+		i(227040),	-- Chest of The Five Thunders
+		-- #endif
 	}),
 	expansion(EXPANSION.TBC, {
 		-- 2.x.x
@@ -378,7 +441,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		n(P4xx, {
 			filter(BACK_F, {
 				i(59791),	-- Giantslayer Cloak
-				i(58696),	-- QA Combat Test Healer Cloak 3 \\ QA Combat Test Healer Cloak 2
+				i(58696),	-- QA Combat Test Healer Cloak 3
 			}),
 			filter(LEATHER, {
 				i(59790),	-- Gnash-Crusher Helm
@@ -616,7 +679,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(55577),	-- Frayfeather Vest
 				-- #endif
 				i(65744),	-- Nimble Command Shoulderguards
-				i(54769),	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
+				i(54769),	-- Rough Bronze Bracers	-- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020	-- Gold
 				i(59789),	-- Sea-Snack Footguards
 				i(54783),	-- Silvered Bronze Shoulders
 				i(54781),	-- Thorbia's Gauntlets
@@ -2624,17 +2687,26 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			filter(CLOTH, {
 				i(134017),	-- Don Carlos' Famous Hat
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
 				i(138420),	-- Pilfered Ettin String
+				-- #endif
 			}),
 			filter(FINGER_F, {
 				i(141907),	-- Arena Victory Bonus
 			}),
 			filter(LEATHER, {
 				i(129046),	-- 7.0 PH Leather Helm
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
 				i(129127),	-- Ebon Stalker's Boots
+				-- #endif
 			}),
 			filter(MAIL, {
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
 				i(129152),	-- Boulderfall Stompers
+				-- #endif
 			}),
 			filter(NECK_F, {
 				i(131919),	-- Bitestone Incisor
@@ -2644,6 +2716,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(134599),	-- Vanguard Choker
 				i(134597),	-- Vanguard Necklace
 				i(134598),	-- Vanguard Pendant
+			}),
+			filter(PLATE, {
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
+				i(139603, {["bonusID"] = 1}),	-- Vault Patroller's Warboots
+				-- #endif
 			}),
 			n(RELICS, {
 				i(133018),	-- Azsuna Package 3 - Holy 1 - Unused
@@ -3063,7 +3141,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(166490),	-- Shiny Ring
 			}),
 			expansion(EXPANSION.BFA, patch(3,0), {
-				i(174470),	-- Bound Sinew Ring \\ Ring - PH
+				i(174470),	-- Bound Sinew Ring
 				i(174053),	-- Corrupted Ring - Overconfident
 				i(174050),	-- Corrupted Ring - Revel in Violence
 				i(174051),	-- Corrupted Ring - Spontaneous Fury
@@ -3073,7 +3151,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(174057),	-- Corrupted Ring - Mesmerizing
 				i(174055),	-- Corrupted Ring - Thing From Beyond
 				i(170738),	-- Felsoul Band of Destruction
-				i(174468),	-- Ring of Deceitful Rumors \\ Ring - PH
+				i(174468),	-- Ring of Deceitful Rumors
 			}),
 			n(P8xx, {
 				i(167135),	-- QA Combat Test Ring 1
@@ -4338,14 +4416,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					i(210540, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Visage of the Devouring Flame
 
 					-- These currenty don't want to take their sourceID, leaving it here uncommented
-					--i(207129, {["sourceID"] = 192432 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192433 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192434 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192435 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192436 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192437 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192438 }),	-- Robes of the Ashen Grove
-					--i(207129, {["sourceID"] = 192439 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192432 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192433 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192434 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192435 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192436 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192437 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192438 }),	-- Robes of the Ashen Grove
+					-- i(207129, {["sourceID"] = 192439 }),	-- Robes of the Ashen Grove
 				}),
 				filter(PLATE, {
 					i(210541, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Mask of the Unbidden Grim
@@ -4692,7 +4770,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(207390),	-- Delve Ring
 			-- Mail Belt
 			i(223458),	-- [PH] 11.0 - Belt
-			i(226165),	-- Unseemly Agate Choker
 
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
@@ -4741,9 +4818,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 451, ["modID"] = 0, ["sourceID"] = 221717 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 451, ["modID"] = 0, ["sourceID"] = 221713 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 4, ["sourceID"] = 221287 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4805,9 +4882,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221716 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221712 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221286 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4869,9 +4946,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225726, {["bonusID"] = 0, ["modID"] = 5, ["sourceID"] = 221288 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4933,9 +5008,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["modID"] = 163, ["sourceID"] = 221718 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225737, {["bonusID"] = 450, ["modID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["modID"] = 163, ["sourceID"] = 221714 }),	-- 11.0 Raid Template - Plate - Head
+						i(225736, {["bonusID"] = 450, ["modID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 6, ["sourceID"] = 221289 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4951,9 +5028,26 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225727),	-- Captured Earthen's Ironhorns
 					}),
 				})),
+				filter(BACK_F, {
+					itemsource(222783),	-- Royal Emblem of Nerub-ar
+					itemsource(222784),	-- Royal Emblem of Nerub-ar
+					itemsource(222785),	-- Royal Emblem of Nerub-ar
+					itemsource(222786),	-- Royal Emblem of Nerub-ar
+				}),
+				filter(MAIL, {
+					itemsource(222523),	-- Liquified Defector's Leggings
+					itemsource(222524),	-- Liquified Defector's Leggings
+					itemsource(222525),	-- Liquified Defector's Leggings
+					itemsource(222526),	-- Liquified Defector's Leggings
+				}),
 			}),
 			filter(CLOTH, {
 				i(225730, {["bonusID"] = 6894 }),	-- Stone Gaze Ceinture
+			}),
+			filter(NECK_F, {
+				i(226695),	-- Cunning Advisor's Favor
+				i(226696),	-- Mighty Advisor's Favor
+				i(226165),	-- Unseemly Agate Choker
 			}),
 			filter(TRINKET_F, {
 				i(213423),	-- Bygone Weapon Charm
@@ -4970,10 +5064,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(225683),	-- Grasping Necrotic Relic
 				i(225684),	-- Relicblood of Zekvir
 				i(225685),	-- Relic of Sentience
-				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
 				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
-				i(226695),	-- Cunning Advisor's Favor
-				i(226696),	-- Mighty Advisor's Favor
+			}),
+		})),
+
+		-- 11.0.2
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
+				filter(MAIL, {
+					itemsource(225006),	-- Liquified Defector's Leggings
+					itemsource(225007),	-- Liquified Defector's Leggings
+				}),
 			}),
 		})),
 
@@ -5016,6 +5117,26 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(227578),	-- White Tiger Greaves
 				i(227569),	-- White Tiger Handguards
 				i(227568),	-- White Tiger Legguards
+			}),
+			cl(HUNTER, {
+				i(232282),	-- Creche-Scout's Belt
+				i(232283),	-- Creche-Scout's Spaulders
+			}),
+			cl(MAGE, {
+				i(232338),	-- Creche-Magus's Cinch
+			}),
+			cl(PRIEST, {
+				i(232331),	-- Creche-Weaver's Sash
+			}),
+			cl(ROGUE, {
+				i(232293),	-- Creche-Talon's Clasp
+			}),
+			cl(WARLOCK, {
+				i(232033),	-- Creche-Binder's Cord
+			}),
+			cl(WARRIOR, {
+				i(232269),	-- Creche-Guard's Girdle
+				i(232270),	-- Creche-Guard's Pauldrons
 			}),
 		})),
 
@@ -5407,15 +5528,22 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
 			filter(LEATHER, {
 				i(241240),	-- Type II Bomber Jacket
+				i(241240, {["modID"] = 23 }),	-- Type II Bomber Jacket
 			}),
 			filter(MAIL, {
 				i(241239),	-- Epaulets of Arcing Power
+				i(241239, {["modID"] = 23 }),	-- Epaulets of Arcing Power
 			}),
 			filter(CLOAKS, {
-				i(237521),    -- Hemet's Cloak
+				i(237521),	-- Hemet's Cloak
+				i(231629),	-- zzOld
 			}),
 			n(HEAD, {
-				i(237520),    -- Hemet's Hood
+				i(243344),	-- Chef's Hat
+				i(237520, {["sourceID"] = 285331 }),	-- Hemet's Hood
+			}),
+			filter(TABARDS, {
+				i(231636),	-- zzOld
 			}),
 			header(HEADERS.LFGDungeon, 2805, {	-- Manaforge Omega
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
@@ -5693,76 +5821,8 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
 			header(HEADERS.LFGDungeon, 2831, {	-- The Emerald Nightmare
 				d(DIFFICULTY.RAID.LFR, {
-					filter(CLOAKS, {
-						i(247560),	-- Evergreen Vinewrap Drape
-						i(247512),	-- Gossamer-Spun Greatcloak
-					}),
-					filter(CLOTH, {
-						i(247517),	-- Ancient Dreamwoven Mantle
-						i(247514),	-- Celestially Aligned Hood
-						i(247513),	-- Clasp of Cosmic Insignificance
-						i(247520),	-- Cozy Dryad Hoof-Socks
-						i(247521),	-- Crimson Wool-Lined Slippers
-						i(247507),	-- Dreamscale Inlaid Vestments
-						i(247561),	-- Gloves of Murmured Promises
-						i(247505),	-- Handwraps of Delusional Power
-						i(247515),	-- Hood of Darkened Visions
-						i(247519),	-- Maddening Robe of Secrets
-						i(247518),	-- Mantle of Perpetual Bloom
-						i(247509),	-- Pliable Spider Silk Cinch
-						i(247516),	-- Ragged Horrorweave Leggings
-						i(247522),	-- Ragged Fur Wristwraps
-					}),
-					filter(LEATHER, {
-						i(247525),	-- Boots of Endless Betrayal
-						i(247531),	-- Cowl of Fright
-						i(247511),	-- Dragonspur Wristguards
-						i(247528),	-- Dreamsculptor's Gloves
-						i(247524),	-- Forest-Lord's Waistwrap
-						i(247562),	-- Grips of Silent Screams
-						i(247533),	-- Grove Keeper's Robe
-						i(247523),	-- Lifeless Buckled Girdle
-						i(247530),	-- Mask of Multitudinous Eyes
-						i(247532),	-- Otherworldly Leather Mantle
-						i(247529),	-- Repulsive Leathery Pants
-						i(247534),	-- Scarred Ragefang Chestpiece
-						i(247527),	-- Splotched Bloodfur Leggings
-						i(247526),	-- Stained Maggot Squishers
-						i(247535),	-- Wristwraps of Broken Trust
-					}),
 					filter(MAIL, {
-						i(247544),	-- Black Venom Sabatons
-						i(247537),	-- Creeping String of Larva
-						i(247541),	-- Disjointed Linkage Leggings
-						i(247564),	-- Gauntlets of Fractured Dreams
-						i(247538),	-- Gauntlets of Malevolent Intent
-						i(247506),	-- Gauntlets of the Demented Mind
 						i(247539),	-- Greyed Dragonscale Coif
-						i(247536),	-- Laughing Sister's Pouch-Chain
-						i(247504),	-- Malignant Sabatons
-						i(247547),	-- Manacles of the Nightmare Colossus
-						i(247542),	-- Matted Fur Pauldrons
-						i(247546),	-- Patient Ambusher's Hauberk
-						i(247545),	-- Scored Ironclaw Sabatons
-						i(247540),	-- Singular Chain Leggings
-						i(247543),	-- Thorny Bramblemail Pauldrons
-					}),
-					filter(PLATE, {
-						i(247555),	-- Crown of Steely Brambles
-						i(247510),	-- Dragonbone Wristclamps
-						i(247552),	-- Eon-Tempered Waistplate
-						i(247549),	-- Fitted Ironbark Gauntlets
-						i(247508),	-- Horror Inscribed Chestguard
-						i(247548),	-- Insect-Etched Chestplate
-						i(247556),	-- Midnight Herald's Pauldrons
-						i(247557),	-- Pauldrons of Shifting Runes
-						i(247550),	-- Primal Gauntlets of Rage
-						i(247554),	-- Storm-Battered Legplates
-						i(247565),	-- Tarnished Dreamkeeper's Gauntlets
-						i(247558),	-- Trampling Warboots
-						i(247553),	-- Venom-Fanged Barbute
-						i(247551),	-- Waistplate of Nameless Horror
-						i(247559),	-- Wristclamps of Mad Dreams
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
@@ -5778,136 +5838,48 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				d(DIFFICULTY.RAID.MYTHIC, {
 					filter(MAIL, {
 						i(247539),	-- Greyed Dragonscale Coif
-					}),
-				}),
-			}),
-			header(HEADERS.LFGDungeon, 2834, {	-- Trial of Valor
-				d(DIFFICULTY.RAID.LFR, {
-					filter(CLOAKS, {
-						i(247591),	-- Drape of the Unworthy
-						i(247592),	-- Mantle of the Victorious Dead
-						i(247568),	-- Windwhipped Sailcloth
-					}),
-					filter(CLOTH, {
-						i(247567),	-- Cinch of Light
-						i(247571),	-- Helhound Hair Bracers
-						i(249684),	-- Horns of Unwavering Faith
-						i(247569),	-- Leggings of the Lower Planes
-						i(249685),	-- Mantle of Unforgotten Souls
-						i(247584),	-- Oiled Rigger's Handwraps
-						i(247566),	-- Robes of Celestial Adornment
-						i(247570),	-- Treads of the Drowned
-					}),
-					filter(LEATHER, {
-						i(247585),	-- Gloves of Issued Challenge
-						i(247587),	-- Helbeast Skin Tunic
-						i(247573),	-- Moccasins of Silent Passage
-						i(249683),	-- Shoulderguards of Divine Arts
-						i(247575),	-- Sky-Valiant's Wristguards
-						i(249682),	-- Supreme Runecaster's Crown
-						i(247572),	-- Strand of Whelk Shells
-						i(247574),	-- Sucker-Scarred Leggings
-					}),
-					filter(MAIL, {
-						i(247576),	-- Anchor Chain Waistguard
-						i(247579),	-- Bite-Resistant Wristclamps
-						i(247588),	-- Corroded Val'kyr Chainmail
-						i(247589),	-- Kvaldir Exult's Grips
-						i(247577),	-- Leggings of the Undaunted
-						i(249680),	-- Ordained Hunter's Crown
-						i(247578),	-- Radiant Soul Sabatons
-						i(249681),	-- Shoulders of the Dragonslayer
-					}),
-					filter(PLATE, {
-						i(247583),	-- Calcareous Wristclamps
-						i(247586),	-- Gleaming Val'kyr Cuirass
-						i(247581),	-- Goldrune Legplates
-						i(249678),	-- Helheim Hound's Visor
-						i(247580),	-- Krakenbone Waistplate
-						i(247582),	-- Lead-Soled Seabed Striders
-						i(247590),	-- Reinforced Hound-Handler's Gauntlets
-						i(249679),	-- Sovereign Valarjar Mantle
 					}),
 				}),
 			}),
 			header(HEADERS.LFGDungeon, 2832, {	-- The Nighthold
 				d(DIFFICULTY.RAID.LFR, {
-					filter(CLOAKS, {
-						i(247489),	-- Aristocrat's Winter Drape
-						i(247481),	-- Astromancer's Greatcloak
-						i(247482),	-- Cloak of Temporal Recalibration
-						i(247491),	-- Cloak of Multitudinous Sheaths
-						i(247436),	-- Dreadlord's Tattered Wingcover
-						i(247492),	-- Fashionable Autumn Cloak
-						i(247490),	-- Feathermane Feather Cloak
-					}),
 					filter(CLOTH, {
-						i(247430),	-- Antiquated Highborne Cinch
-						i(247431),	-- Bracers of Harnessed Flame
 						i(247434),	-- Chaos-Scarred Mantle
-						i(247493),	-- Mana-Cord of Deception
 						i(247483),	-- Mantle of Prestidigitation
-						i(247467),	-- Man'ari Skullbuckled Cinch
 						i(247433),	-- Master Warmage's Leggings
 						i(247432),	-- Nighthold Custodian's Hood
-						i(247486),	-- Outcast Wanderer's Footrags
-						i(247435),	-- Perpetually Muddy Sandals
 						i(247429),	-- Robes of Fluctuating Energy
 						i(247468),	-- Scorpid Handler's Gloves
-						i(247465),	-- Treads of Galactic Odyssey
-						i(247466),	-- Woven Lasher Tendril Bracers
 					}),
 					filter(LEATHER, {
-						i(247469),	-- Bracers of Impossible Choices
-						i(247438),	-- Cake Carrier's Girdle
-						i(247439),	-- Girdle of Nefarious Strategy
 						i(247478),	-- Gloves of Synchronous Elements
 						i(247442),	-- Gnawed Nightfallen Britches¨
-						i(247441),	-- Grove-Tender's Moccasins
-						i(247488),	-- High Shadow Councilor's Wrap
 						i(247444),	-- Mantle of the Torn Sky
 						i(247446),	-- Nightborne Battle-Magus Hood
-						i(247440),	-- Stutterstep Treads
 						i(247443),	-- Temporally Displaced Gloves
 						i(247480),	-- Trousers of Cultivation
 						i(247445),	-- Tunic of Unwavering Devotion
 						i(247474),	-- Vintage Suramar Nobility Hat
-						i(247494),	-- Waistclasp of Unethical Power
-						i(247437),	-- Well-Flattened Wristguards
 					}),
 					filter(MAIL, {
+						-- #if BEFORE 11.2.7
 						i(247455),	-- Arcanochitin Hauberk
 						i(247450),	-- Architect's Coif of Despair
-						i(247470),	-- Belt of Celestial Alignment
-						i(247448),	-- Emblazoned Duskwatch Belt
+						-- #endif
 						i(247476),	-- Hood of Fading Opportunity
 						i(247487),	-- Netherbranded Shoulderpads
 						i(247452),	-- Pauldrons of Warped Memory
 						i(247451),	-- Pertinacious Legplates
-						i(247447),	-- Sabatons of Burning Steps
-						i(247453),	-- Shal'dorei Weedstompers
 						i(247449),	-- Sterilizer's Insulated Gauntlets
-						i(247456),	-- Stinger Resistant Bracers
-						i(247454),	-- Thistle-Proof Thorngrabbers
-						i(247495),	-- Vintage Duskwatch Cinch
 					}),
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
-						i(247458),	-- Duskwatch Plate Bracers
-						i(247473),	-- Eternally Recurring Bracers
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
-						i(247460),	-- Gilded Nightborne Waistplate
-						i(247496),	-- Gleaming Celestial Waistguard
-						i(247472),	-- Goresmeared Abyssal Waistplate
-						i(247477),	-- Immaculately Polished Boots
-						i(247475),	-- Jagged Carapace Wristclamps
-						i(247464),	-- Leystone-Toe Kickers
-						i(247471),	-- Sabatons of Unchanging Fate
 						i(247463),	-- Shoulderguard of the Eclipse
-						i(247484),	-- Waistplate of Fractured Realities
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
@@ -5930,8 +5902,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(247474),	-- Vintage Suramar Nobility Hat
 					}),
 					filter(MAIL, {
+						-- #if BEFORE 11.2.7
 						i(247455),	-- Arcanochitin Hauberk
 						i(247450),	-- Architect's Coif of Despair
+						-- #endif
 						i(247476),	-- Hood of Fading Opportunity
 						i(247487),	-- Netherbranded Shoulderpads
 						i(247452),	-- Pauldrons of Warped Memory
@@ -5941,6 +5915,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
@@ -5967,8 +5942,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(247474),	-- Vintage Suramar Nobility Hat
 					}),
 					filter(MAIL, {
+						-- #if BEFORE 11.2.7
 						i(247455),	-- Arcanochitin Hauberk
 						i(247450),	-- Architect's Coif of Despair
+						-- #endif
 						i(247476),	-- Hood of Fading Opportunity
 						i(247487),	-- Netherbranded Shoulderpads
 						i(247452),	-- Pauldrons of Warped Memory
@@ -5978,6 +5955,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
@@ -6004,8 +5982,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(247474),	-- Vintage Suramar Nobility Hat
 					}),
 					filter(MAIL, {
+						-- #if BEFORE 11.2.7
 						i(247455),	-- Arcanochitin Hauberk
 						i(247450),	-- Architect's Coif of Despair
+						-- #endif
 						i(247476),	-- Hood of Fading Opportunity
 						i(247487),	-- Netherbranded Shoulderpads
 						i(247452),	-- Pauldrons of Warped Memory
@@ -6015,6 +5995,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
@@ -6022,92 +6003,340 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					}),
 				}),
 			}),
-			header(HEADERS.LFGDungeon, 2833, {	-- Tomb of Sargeras
-				d(DIFFICULTY.RAID.LFR, {
-					filter(CLOTH, {
-						i(247617),	-- Acolyte's Abandoned Footwraps
-						i(247596),	-- Braided Torture Lash
-						i(247594),	-- Emberscatter Treads
-						i(247599),	-- Oathbreaker's Cuffs
-						i(247598),	-- Ravenous Devotee's Bracelets
-						i(247618),	-- Sash of the Unredeemed
-						i(247595),	-- Slippers of Enduring Vigilance
-						i(247597),	-- Strife-Riddled Cinch
-					}),
-					filter(LEATHER, {
-						i(247605),	-- Bracers of Rippling Darkness
-						i(247602),	-- Cinch of Sizzling Flesh
-						i(247620),	-- Cord of Pilfered Rosaries
-						i(247603),	-- Etched Bone Waistband
-						i(247601),	-- Felscape Pathfinders
-						i(247600),	-- Glacier Walkers
-						i(247604),	-- Sinew-Stitched Wristguards
-						i(247619),	-- Treads of Violent Intrusion
-						i(247616),	-- Waistguard of Profane Duplicity
-					}),
-					filter(MAIL, {
-						i(247608),	-- Belt of Screaming Slag
-						i(247606),	-- Insulated Finpads
-						i(247610),	-- Pain-Singed Armguards
-						i(247622),	-- Pristine Moon-Wrought Clasp
-						i(247607),	-- Star-Stalker Treads
-						i(247621),	-- Treads of Panicked Escape
-						i(247609),	-- Waistguard of Interminable Unity
-					}),
-					filter(PLATE, {
-						i(247615),	-- Bonemeal-Crusted Armplates
-						i(247624),	-- Girdle of the Crumbling Sanctum
-						i(247611),	-- Iron Ballast Sabatons
-						i(247613),	-- Shiversleet Waistguard
-						i(247614),	-- Soul-Render's Greatbelt
-						i(247623),	-- Spiked Terrorwake Greatboots
-						i(247612),	-- Steadfast Purifier's Warboots
-					}),
-				}),
+			filter(LEATHER, {
+				i(235915),	-- Highmountain Hide Cap
+				itemsource(290211),	-- The First Satyr's Spaulders
 			}),
-			header(HEADERS.LFGDungeon, 2830, {	-- Antorus, the Burning Throne
-				d(DIFFICULTY.RAID.LFR, {
+		})),
+	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			header(HEADERS.LFGDungeon, 3095, {	-- March on Quel'Danas
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					filter(CLOTH, {
-						i(247632),	-- Blood-Drenched Bindings
-						i(247627),	-- Cord of Surging Hysteria
-						i(247630),	-- Cord of Blossoming Petals
-						i(247629),	-- Enhanced Worldscorcher Cinch
-						i(247628),	-- Lady Dacidion's Silk Slippers
-						i(247631),	-- Man'ari Pyromancer Cuffs
-						i(247626),	-- Sandals of the Reborn Colossus
-						i(247625),	-- Whisperstep Runners
+						i(249328),	-- Echoing Void Mantle
+						i(249912),	-- Robes of Endless Oblivion
+						i(249376),	-- Whisper-Inscribed Sash
 					}),
 					filter(LEATHER, {
-						i(247637),	-- Belt of Fractured Sanity
-						i(247654),	-- Bracers of Wanton Morality
-						i(247635),	-- Death-Enveloping Cincture
-						i(247653),	-- Depraved Machinist's Footpads
-						i(247638),	-- Fiendish Logistician's Wristwraps
-						i(247633),	-- Life-Bearing Footpads
-						i(247636),	-- Portal Keeper's Cincture
-						i(247634),	-- Vicious Flamepaws
+						i(249913),	-- Mask of Darkest Intent
+						i(249322),	-- Radiant Clutchtender's Jerkin
 					}),
 					filter(MAIL, {
-						i(247639),	-- Deft Soulhunter's Sabatons
-						i(247641),	-- Depraved Tactician's Waistguard
-						i(247656),	-- Greatboots of the Searing Tempest
-						i(247640),	-- Nathrezim Shade-Walkers
-						i(247643),	-- Reality-Splitting Wristguards
-						i(247642),	-- Sash of the Gilded Rose
-						i(247651),	-- Scalding Shatterguards
-						i(247655),	-- World-Ravager Waistguard
+						i(249377),	-- Darkstrider Treads
+						i(249324),	-- Eternal Flame Scaleguards
+						i(249914),	-- Oblivion Guise
 					}),
 					filter(PLATE, {
-						i(247645),	-- Burning Coven Sabatons
-						i(247644),	-- Doomwalker Warboots
-						i(247646),	-- Eredar Warcouncil Sabatons
-						i(247648),	-- Flamelicked Girdle
-						i(247649),	-- Grond-Father Girdle
-						i(247647),	-- Nathrezim Battle Girdle
-						i(247650),	-- Vambraces of Life's Assurance
-						i(247652),	-- Varimathras' Shattered Manacles
+						i(249307),	-- Emberborn Grasps
+						i(249915),	-- Extinction Guards
 					}),
-				}),
+				})),
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249328),	-- Echoing Void Mantle
+						i(249912),	-- Robes of Endless Oblivion
+						i(249376),	-- Whisper-Inscribed Sash
+					}),
+					filter(LEATHER, {
+						i(249913),	-- Mask of Darkest Intent
+						i(249322),	-- Radiant Clutchtender's Jerkin
+					}),
+					filter(MAIL, {
+						i(249377),	-- Darkstrider Treads
+						i(249324),	-- Eternal Flame Scaleguards
+						i(249914),	-- Oblivion Guise
+					}),
+					filter(PLATE, {
+						i(249307),	-- Emberborn Grasps
+						i(249915),	-- Extinction Guards
+					}),
+				})),
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249328),	-- Echoing Void Mantle
+						i(249912),	-- Robes of Endless Oblivion
+						i(249376),	-- Whisper-Inscribed Sash
+					}),
+					filter(LEATHER, {
+						i(249913),	-- Mask of Darkest Intent
+						i(249322),	-- Radiant Clutchtender's Jerkin
+					}),
+					filter(MAIL, {
+						i(249377),	-- Darkstrider Treads
+						i(249324),	-- Eternal Flame Scaleguards
+						i(249914),	-- Oblivion Guise
+					}),
+					filter(PLATE, {
+						i(249307),	-- Emberborn Grasps
+						i(249915),	-- Extinction Guards
+					}),
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249328),	-- Echoing Void Mantle
+						i(249912),	-- Robes of Endless Oblivion
+						i(249376),	-- Whisper-Inscribed Sash
+					}),
+					filter(LEATHER, {
+						i(249913),	-- Mask of Darkest Intent
+						i(249322),	-- Radiant Clutchtender's Jerkin
+					}),
+					filter(MAIL, {
+						i(249377),	-- Darkstrider Treads
+						i(249324),	-- Eternal Flame Scaleguards
+						i(249914),	-- Oblivion Guise
+					}),
+					filter(PLATE, {
+						i(249307),	-- Emberborn Grasps
+						i(249915),	-- Extinction Guards
+					}),
+				})),
+			}),
+			header(HEADERS.LFGDungeon, 3165, {	-- The Dreamrift
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249373),	-- Dream-Scorched Striders
+					}),
+					filter(LEATHER, {
+						i(249374),	-- Scorn-Scarred Shul'ka's Belt
+					}),
+					filter(MAIL, {
+						i(249371),	-- Scornbane Waistguard
+					}),
+					filter(PLATE, {
+						i(249381),	-- Greaves of the Unformed
+					}),
+				})),
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249373),	-- Dream-Scorched Striders
+					}),
+					filter(LEATHER, {
+						i(249374),	-- Scorn-Scarred Shul'ka's Belt
+					}),
+					filter(MAIL, {
+						i(249371),	-- Scornbane Waistguard
+					}),
+					filter(PLATE, {
+						i(249381),	-- Greaves of the Unformed
+					}),
+				})),
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249373),	-- Dream-Scorched Striders
+					}),
+					filter(LEATHER, {
+						i(249374),	-- Scorn-Scarred Shul'ka's Belt
+					}),
+					filter(MAIL, {
+						i(249371),	-- Scornbane Waistguard
+					}),
+					filter(PLATE, {
+						i(249381),	-- Greaves of the Unformed
+					}),
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249373),	-- Dream-Scorched Striders
+					}),
+					filter(LEATHER, {
+						i(249374),	-- Scorn-Scarred Shul'ka's Belt
+					}),
+					filter(MAIL, {
+						i(249371),	-- Scornbane Waistguard
+					}),
+					filter(PLATE, {
+						i(249381),	-- Greaves of the Unformed
+					}),
+				})),
+			}),
+			header(HEADERS.LFGDungeon, 3094, {	-- The Voidspire
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249308),	-- Despotic Raiment
+						i(249319),	-- Endless March Waistwrap
+						i(249329),	-- Gaze of the Unrestrained
+						i(260371),	-- Infernal Greatlock Girdle
+						i(249323),	-- Leggings of the Devouring Advance
+						i(249305),	-- Slippers of the Midnight Flame
+						i(249315),	-- Voracious Wristwraps
+						i(260370),	-- Visage of Unseen Truths
+						i(249330),	-- War Chaplain's Grips
+					}),
+					filter(LEATHER, {
+						i(249333),	-- Blooming Barklight Spaulders
+						i(249382),	-- Canopy Walker's Footwraps
+						i(249306),	-- Devouring Night's Visage
+						i(249312),	-- Nightblade's Pantaloons
+						i(260372),	-- Nullstrider's Boots
+						i(260373),	-- Power Stance Breeches
+						i(249314),	-- Twisted Twilight Sash
+						i(249321),	-- Vaelgor's Fearsome Grasp
+						i(249334),	-- Void-Claimed Shinkickers
+						i(249327),	-- Void-Skinned Bracers
+					}),
+					filter(MAIL, {
+						i(249304),	-- Fallen King's Cuffs
+						i(249317),	-- Frenzy's Rebuke
+						i(249318),	-- Nullwalker's Dread Epaulettes
+						i(260374),	-- Primal Spark Pauldrons
+						i(260375),	-- Raging Storm Sash
+						i(249310),	-- Robes of the Voidbound
+						i(249320),	-- Sabatons of Obscurement
+						i(249325),	-- Untethered Berserker's Grips
+						i(249303),	-- Waistcord of the Judged
+					}),
+					filter(PLATE, {
+						i(260376),	-- Breastplate of the Final Defense
+						i(249316),	-- Crown of the Fractured Tyrant
+						i(249331),	-- Ezzorak's Gloombind
+						i(260377),	-- Fading Dawn Sabatons
+						i(249380),	-- Hate-Tied Waistchain
+						i(249311),	-- Lightblood Greaves
+						i(249326),	-- Light's March Bracers
+						i(249313),	-- Light-Judged Spaulders
+						i(249332),	-- Parasite Stompers
+						i(249309),	-- Sunbound Breastplate
+					}),
+				})),
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249308),	-- Despotic Raiment
+						i(249319),	-- Endless March Waistwrap
+						i(249329),	-- Gaze of the Unrestrained
+						i(260371),	-- Infernal Greatlock Girdle
+						i(249323),	-- Leggings of the Devouring Advance
+						i(249305),	-- Slippers of the Midnight Flame
+						i(249315),	-- Voracious Wristwraps
+						i(260370),	-- Visage of Unseen Truths
+						i(249330),	-- War Chaplain's Grips
+					}),
+					filter(LEATHER, {
+						i(249333),	-- Blooming Barklight Spaulders
+						i(249382),	-- Canopy Walker's Footwraps
+						i(249306),	-- Devouring Night's Visage
+						i(249312),	-- Nightblade's Pantaloons
+						i(260372),	-- Nullstrider's Boots
+						i(260373),	-- Power Stance Breeches
+						i(249314),	-- Twisted Twilight Sash
+						i(249321),	-- Vaelgor's Fearsome Grasp
+						i(249334),	-- Void-Claimed Shinkickers
+						i(249327),	-- Void-Skinned Bracers
+					}),
+					filter(MAIL, {
+						i(249304),	-- Fallen King's Cuffs
+						i(249317),	-- Frenzy's Rebuke
+						i(249318),	-- Nullwalker's Dread Epaulettes
+						i(260374),	-- Primal Spark Pauldrons
+						i(260375),	-- Raging Storm Sash
+						i(249310),	-- Robes of the Voidbound
+						i(249320),	-- Sabatons of Obscurement
+						i(249325),	-- Untethered Berserker's Grips
+						i(249303),	-- Waistcord of the Judged
+					}),
+					filter(PLATE, {
+						i(260376),	-- Breastplate of the Final Defense
+						i(249316),	-- Crown of the Fractured Tyrant
+						i(249331),	-- Ezzorak's Gloombind
+						i(260377),	-- Fading Dawn Sabatons
+						i(249380),	-- Hate-Tied Waistchain
+						i(249311),	-- Lightblood Greaves
+						i(249326),	-- Light's March Bracers
+						i(249313),	-- Light-Judged Spaulders
+						i(249332),	-- Parasite Stompers
+						i(249309),	-- Sunbound Breastplate
+					}),
+				})),
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249308),	-- Despotic Raiment
+						i(249319),	-- Endless March Waistwrap
+						i(249329),	-- Gaze of the Unrestrained
+						i(260371),	-- Infernal Greatlock Girdle
+						i(249323),	-- Leggings of the Devouring Advance
+						i(249305),	-- Slippers of the Midnight Flame
+						i(249315),	-- Voracious Wristwraps
+						i(260370),	-- Visage of Unseen Truths
+						i(249330),	-- War Chaplain's Grips
+					}),
+					filter(LEATHER, {
+						i(249333),	-- Blooming Barklight Spaulders
+						i(249382),	-- Canopy Walker's Footwraps
+						i(249306),	-- Devouring Night's Visage
+						i(249312),	-- Nightblade's Pantaloons
+						i(260372),	-- Nullstrider's Boots
+						i(260373),	-- Power Stance Breeches
+						i(249314),	-- Twisted Twilight Sash
+						i(249321),	-- Vaelgor's Fearsome Grasp
+						i(249334),	-- Void-Claimed Shinkickers
+						i(249327),	-- Void-Skinned Bracers
+					}),
+					filter(MAIL, {
+						i(249304),	-- Fallen King's Cuffs
+						i(249317),	-- Frenzy's Rebuke
+						i(249318),	-- Nullwalker's Dread Epaulettes
+						i(260374),	-- Primal Spark Pauldrons
+						i(260375),	-- Raging Storm Sash
+						i(249310),	-- Robes of the Voidbound
+						i(249320),	-- Sabatons of Obscurement
+						i(249325),	-- Untethered Berserker's Grips
+						i(249303),	-- Waistcord of the Judged
+					}),
+					filter(PLATE, {
+						i(260376),	-- Breastplate of the Final Defense
+						i(249316),	-- Crown of the Fractured Tyrant
+						i(249331),	-- Ezzorak's Gloombind
+						i(260377),	-- Fading Dawn Sabatons
+						i(249380),	-- Hate-Tied Waistchain
+						i(249311),	-- Lightblood Greaves
+						i(249326),	-- Light's March Bracers
+						i(249313),	-- Light-Judged Spaulders
+						i(249332),	-- Parasite Stompers
+						i(249309),	-- Sunbound Breastplate
+					}),
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(249308),	-- Despotic Raiment
+						i(249319),	-- Endless March Waistwrap
+						i(249329),	-- Gaze of the Unrestrained
+						i(249323),	-- Leggings of the Devouring Advance
+						i(249305),	-- Slippers of the Midnight Flame
+						i(249315),	-- Voracious Wristwraps
+						i(249330),	-- War Chaplain's Grips
+					}),
+					filter(LEATHER, {
+						i(249333),	-- Blooming Barklight Spaulders
+						i(249382),	-- Canopy Walker's Footwraps
+						i(249306),	-- Devouring Night's Visage
+						i(249312),	-- Nightblade's Pantaloons
+						i(249314),	-- Twisted Twilight Sash
+						i(249321),	-- Vaelgor's Fearsome Grasp
+						i(249334),	-- Void-Claimed Shinkickers
+						i(249327),	-- Void-Skinned Bracers
+					}),
+					filter(MAIL, {
+						i(249304),	-- Fallen King's Cuffs
+						i(249317),	-- Frenzy's Rebuke
+						i(249318),	-- Nullwalker's Dread Epaulettes
+						i(249310),	-- Robes of the Voidbound
+						i(249320),	-- Sabatons of Obscurement
+						i(249325),	-- Untethered Berserker's Grips
+						i(249303),	-- Waistcord of the Judged
+					}),
+					filter(PLATE, {
+						i(249316),	-- Crown of the Fractured Tyrant
+						i(249331),	-- Ezzorak's Gloombind
+						i(249380),	-- Hate-Tied Waistchain
+						i(249311),	-- Lightblood Greaves
+						i(249326),	-- Light's March Bracers
+						i(249313),	-- Light-Judged Spaulders
+						i(249332),	-- Parasite Stompers
+						i(249309),	-- Sunbound Breastplate
+					}),
+				})),
 			}),
 		})),
 	}),

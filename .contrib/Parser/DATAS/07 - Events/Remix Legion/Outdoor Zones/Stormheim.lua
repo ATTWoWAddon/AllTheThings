@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
@@ -9,20 +10,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				n(ACHIEVEMENTS, {
 					ach(42596),	-- Campaign: Stormheim
 					ach(60807),	-- Elusive Foes: Stormheim
-					ach(42640, {	-- Elusive Foes: Stormheim
-						-- Did 60807 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60806),	-- Explore Stormheim
-					ach(42608, {	-- Explore Stormheim
-						-- Did 60806 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60808),	-- Hidden Treasures: Stormheim
-					ach(42606, {	-- Hidden Treasures: Stormheim
-						-- Did 60808 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(42578, {	-- Looking for Group: Stormheim
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -64,13 +53,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							60808,	-- Hidden Treasures: Stormheim
 						}},
 					}),
-				}),
-				n(FACTIONS, {
-					faction(FACTION_VALAJAR, {
-						n(ACHIEVEMENTS, {
-							ach(42658, {	-- Valarjar
-								--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Vrykul Lord’s Throne (DECOR!)
-							}),
+					ach(42658, {	-- Valarjar
+						i(250402, {	-- Vrykul Lord’s Throne (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					}),
 				}),

@@ -351,7 +351,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 						["cr"] = 162241,	-- Corrupted Thoughtstealer
 					}),
-					crit(47228, {		-- Corrupted Tormentor slain -- TODO:: Add coords
+					crit(47228, {		-- Corrupted Tormentor slain	-- TODO:  Add coords
 						["description"] = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
 						["coords"] = {
 							{ 13.0, 64.6, NZOTH_ASSAULT_ULDUM },
@@ -376,9 +376,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["cr"] = 150829,	-- Corrupted Watcher
 					}),
 				}),
-				ach(14161),		-- Get In My Belly!	-- TODO:: update with map-specific criteria when they get added
+				ach(14161),		-- Get In My Belly!	-- TODO:  update with map-specific criteria when they get added
 				ach(14158),		-- It's Not A Tumor!
-				ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
+				ach(14160),		-- Rare to Well Done	-- TODO:  update criteria when they get added
 			}),
 			n(AZERITE_ESSENCES, {
 				i(168574, {	-- Petrified Living Bark (Rank 2)
@@ -496,8 +496,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			n(SPECIAL, {
 				i(175140, {	-- All-Seeing Eyes (TOY!)
 					["cost"] = {
-						{"i",175142,1},	-- All-Seeing Right Eye
-						{"i",175141,1},	-- All-Seeing Left Eye
+						{ "i", 175142, 1 },	-- All-Seeing Right Eye
+						{ "i", 175141, 1 },	-- All-Seeing Left Eye
 					},
 				}),
 			}),

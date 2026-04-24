@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 CHILDRENS_WEEK_HEADER = createHeader({
 	readable = "Cgi.Children's Week",	-- Prefix with "Cgi." to prevent sorting issues.
 	constant = "CHILDRENS_WEEK_HEADER",
@@ -18,11 +19,20 @@ CHILDRENS_WEEK_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(163),
 		-- #else
 		en = "Children's Week",
+		-- TODO: de = "",
 		es = "Semana de los niños",
 		mx = "Semana de los niños",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "儿童周",
+		tw = "兒童週",
 		-- #endif
 	},
 });
+
 -- TODO: Add vendors for Tigule's Strawberry Ice Cream (7228)
 local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 	["timeline"] = { ADDED_6_0_2 },
@@ -175,7 +185,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
-				--title_gendered(105, 104),	-- Patron / Matron
+				-- title_gendered(105, 104),	-- Patron / Matron
 				title_female(104),	-- Matron <Name>
 				title_male(105),	-- Patron <Name>
 			},
@@ -472,6 +482,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 47.2, 38.4, STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #endif
 			},
+			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -505,6 +516,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
 				-- #endif
 			},
+			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			-- #if AFTER CATA
 			["maps"] = {
 				86,	-- Orgrimmar: The Drag
@@ -639,7 +651,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Arom's Stand
-					--["provider"] = { "n",  },	-- Inquisitor Notley (not sure what the NPC ID is)
+					-- ["provider"] = { "n",  },	-- Inquisitor Notley (not sure what the NPC ID is)
 					["coord"] = { 36.25, 51.08, DRUSTVAR },	-- Birdfeather's Statue
 				}),
 			},
@@ -714,6 +726,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 47.4, 38.6, STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #endif
 			},
+			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -758,6 +771,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
 				-- #endif
 			},
+			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			-- #if AFTER CATA
 			["maps"] = {
 				86,	-- Orgrimmar: The Drag
@@ -823,7 +837,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = {
 				objective(1, {	-- Go to the docks of Ratchet in the Barrens.
 					["provider"] = { "n", 9558 },	-- Grimble <Shipmaster>
-					["coord"] = { 63, 38, THE_BARRENS },
+					["coord"] = { 63.0, 38.0, THE_BARRENS },
 				}),
 			},
 		}),
@@ -840,7 +854,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the Mor'shan Rampart in the Barrens.
-					["coord"] = { 47, 5, THE_BARRENS },
+					["coord"] = { 47.0, 5.0, THE_BARRENS },
 				}),
 			},
 		}),
@@ -1320,7 +1334,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Ulfar's Den
-					--["provider"] = { "n", 141159 },	-- Ulfar (not sure what the NPC ID is)
+					-- ["provider"] = { "n", 141159 },	-- Ulfar (not sure what the NPC ID is)
 					["coords"] = {
 						{ 45.94, 39.06, DRUSTVAR },	-- Path to Ulfar's Den Starts
 						{ 46.32, 43.86, DRUSTVAR },	-- Continue the path to Ulfar's Den
@@ -1343,7 +1357,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = {
 				objective(1, {	-- Go to the Westfall Lighthouse.
 					["provider"] = { "n", 392 },	-- Captain Grayson
-					["coord"] = { 29, 86, WESTFALL },
+					["coord"] = { 29.0, 86.0, WESTFALL },
 				}),
 			},
 		}),
@@ -1443,7 +1457,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.
-					["coord"] = { 41, 43, DARNASSUS },
+					["coord"] = { 41.0, 43.0, DARNASSUS },
 				}),
 			},
 		}),
@@ -1570,7 +1584,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Krag'wa's Burrow
-					--["provider"] = { "n", 131093 },	-- Krag'wa (not sure what the NPC ID is)
+					-- ["provider"] = { "n", 131093 },	-- Krag'wa (not sure what the NPC ID is)
 					["coords"] = {
 						{ 71.18, 49.19, NAZMIR },	-- Path Starts
 						{ 73.26, 53.42, NAZMIR },	-- The Frogmarsh
@@ -1691,7 +1705,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Lair of Gonk
-					--["provider"] = { "n", 139649 },	-- Gonk (not sure what the NPC ID is)
+					-- ["provider"] = { "n", 139649 },	-- Gonk (not sure what the NPC ID is)
 					["coords"] = {
 						{ 49.39, 31.22, ZULDAZAR },	-- Path Starts
 						{ 48.69, 31.76, ZULDAZAR },	-- Lair of Gonk
@@ -1712,7 +1726,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the top of the Stonewrought Dam in Loch Modan.
-					["coord"] = { 48, 12, LOCH_MODAN },
+					["coord"] = { 48.0, 12.0, LOCH_MODAN },
 				}),
 			},
 		}),
@@ -1729,7 +1743,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Shrine of the Storm
-					--["provider"] = { "n",  },	-- Brother Pike (not sure what the NPC ID is)
+					-- ["provider"] = { "n",  },	-- Brother Pike (not sure what the NPC ID is)
 					["coord"] = { 72.57, 49.94, STORMSONG_VALLEY },
 				}),
 			},
@@ -2097,7 +2111,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 	n(VENDORS, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, {
 		n(242651, {	-- Brundia Braidhammer <Toy and Pet Seller>
 			["coord"] = { 58.0, 56.8, STORMWIND_CITY },
-			["groups"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
+			["groups"] = sharedData({ ["cost"] = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
 		}),
 		n(243031, {	-- Clockwork Assistant
 			["coord"] = { 55.8, 26.6, DORNOGAL },
@@ -2109,11 +2123,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		}),
 		n(243032, {	-- Jepetto Joybuzz
 			["coord"] = { 55.8, 26.4, DORNOGAL },
-			["groups"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
+			["groups"] = sharedData({ ["cost"] = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
 		}),
 		n(242676, {	-- Leial Knitterton <Toy and Pet Seller>
 			["coord"] = { 58.0, 56.8, ORGRIMMAR },
-			["groups"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
+			["groups"] = sharedData({ ["cost"] = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
 		}),
 	})),
 })));

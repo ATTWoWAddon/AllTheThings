@@ -163,3 +163,46 @@ i(0, 471368);		-- Blair's "Gold" Fish Exchange
 i(0, 471365);		-- Undermine
 --- DISCOVERY ---
 i(0, 471359);		-- "Gold" Fish
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471008);		-- Midnight Fishing
+i(0, 1225322);		-- Eversong Woods
+i(0, 1225340);		-- Midnight Anglin'
+i(0, 1265725);		-- Perception
+i(0, 1265717);		-- Skill
+--- DISCOVERY ---
+i(0, 1225274);		-- Blood Hunter
+i(0, 1225266);		-- Bloomtail Minnow
+i(0, 1225283);		-- Eversong Trout
+i(0, 1225276);		-- Fungalskin Pike
+i(0, 1225275);		-- Gore Guppy
+i(0, 1225337);		-- Harandar
+i(0, 1225267);		-- Hollow Grouper
+i(0, 1225284);		-- Lucky Loa
+i(0, 1225270);		-- Lynxfish
+i(0, 1225268);		-- Null Voidfish
+i(0, 1225273);		-- Ominous Octopus
+i(0, 1225277);		-- Restored Songfish
+i(0, 1225269);		-- Root Crab
+i(0, 1225271);		-- Shimmersiren
+i(0, 1225272);		-- Shimmer Spinefish
+i(0, 1225245);		-- Sin'dorei Swarmer
+i(0, 1225278);		-- Sunwell Fish
+i(0, 1225281);		-- Tender Lumifin
+i(0, 1225280);		-- Twisted Tetra
+i(0, 1225336);		-- Voidstorm
+i(0, 1225279);		-- Warping Wise
+i(0, 1225282);		-- Wyrmfish
+i(0, 1225335);		-- Zul'Aman
+--- ITEM ---
+i(244791, 1226159);	-- Amani Angler's Ward
+i(244817, 1235486);	-- Blood Hunter Lure
+i(244816, 1226157);	-- Lucky Loa Lure
+i(244815, 1226161);	-- Ominous Octopus Lure
+--- NYI ---
+i(0, 1265721);		-- Finesse
+i(258511, 1226158);	-- Sunwell Fish Lure
+i(244818, 1231090);	-- Rootland Crab Lure

@@ -283,6 +283,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 				e(168, {	-- Sinestra
 					["creatureID"] = 45213,
+					-- #if AFTER 6.0.3
+					["description"] = "This encounter can be buggy to solo. Stand in Sinestra's melee range, only leave for attacking the Pulsing Twilight Eggs when Sinestra have removed their damage protection.",
+					-- #endif
 					["groups"] = {
 						un(REMOVED_FROM_GAME, ach(5313)),	-- I Can't Hear You Over the Sound of How Awesome I Am
 						ach(5121, {	-- Heroic: Sinestra

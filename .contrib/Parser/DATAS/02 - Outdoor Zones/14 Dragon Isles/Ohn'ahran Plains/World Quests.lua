@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(WORLD_QUESTS, {
@@ -37,7 +38,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 62.4, 57.8, OHNAHRAN_PLAINS },
 				}),
 				petbattle(q(74838, {	-- Lyver
-					["coord"] = { 73.38, 68, OHNAHRAN_PLAINS },
+					["coord"] = { 73.38, 68.0, OHNAHRAN_PLAINS },
 					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70780, {	-- Ohn'ahran Banners

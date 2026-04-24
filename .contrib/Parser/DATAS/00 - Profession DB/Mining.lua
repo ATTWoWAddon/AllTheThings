@@ -386,3 +386,44 @@ i(0, 442333);		-- Refine Ironclaw Ore+++
 --- DISCOVERY ---
 i(0, 1250351);		-- Desolate Deposit
 i(0, 1250356);		-- Rich Desolate Deposit
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+i(0, 1265815);		-- Artisan Miner's Moxie
+i(0, 1285705);		-- Dazzling Thorium
+i(0, 1265729);		-- Deftness
+i(0, 1265722);		-- Finesse
+i(0, 1265714);		-- Knowledge
+i(0, 1265726);		-- Perception
+i(0, 1265711);		-- Quality
+i(0, 1226062);		-- Septarian Nodule
+i(0, 1265718);		-- Skill
+--- DISCOVERY ---
+i(0, 1225348);		-- Brilliant Silver
+i(0, 1225357);		-- Brilliant Silver Seam
+i(0, 1225359);		-- Lightfused Brilliant Silver
+i(0, 1225351);		-- Lightfused Refulgent Copper
+i(0, 1225367);		-- Lightfused Umbral Tin
+i(0, 1225818);		-- Overload Lightfused Deposits
+i(0, 1225817);		-- Overload Primal Deposits
+i(0, 1225820);		-- Overload Voidbound Deposits
+i(0, 1225819);		-- Overload Wild Deposits
+i(0, 1225361);		-- Primal Brilliant Silver
+i(0, 1225354);		-- Primal Refulgent Copper
+i(0, 1225369);		-- Primal Umbral Tin
+i(0, 1225343);		-- Refulgent Copper
+i(0, 1225350);		-- Refulgent Copper Seam
+i(0, 1225355);		-- Rich Brilliant Silver
+i(0, 1225349);		-- Rich Refulgent Copper
+i(0, 1225365);		-- Rich Umbral Tin
+i(0, 1225347);		-- Umbral Tin
+i(0, 1225366);		-- Umbral Tin Seam
+i(0, 1225362);		-- Voidbound Brilliant Silver
+i(0, 1225352);		-- Voidbound Refulgent Copper
+i(0, 1225370);		-- Voidbound Umbral Tin
+i(0, 1225363);		-- Wild Brilliant Silver
+i(0, 1225353);		-- Wild Refulgent Copper
+i(0, 1225368);		-- Wild Umbral Tin
+--- SPECIALIZATION ---
+i(0, 1225392);		-- Overload Infused Deposit

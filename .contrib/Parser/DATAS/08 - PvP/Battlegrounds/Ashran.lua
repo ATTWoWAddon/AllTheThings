@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(1478, {	-- Ashran
 		["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
@@ -67,10 +68,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(9228, {	-- Down Goes Van Rook (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(9220, {	-- Grand Theft, 3rd Degree
-					ach(9219),	-- Grand Theft, 2nd Degree
-					ach(9218),	-- Grand Theft, 1st Degree
-				}),
+				ach(9218),	-- Grand Theft, 1st Degree
+				ach(9219),	-- Grand Theft, 2nd Degree
+				ach(9220),	-- Grand Theft, 3rd Degree
 				ach(9216, {	-- High-value Targets
 					crit(25843, {	-- Elder Darkweaver Kath
 						["cr"] = 85771,	-- Elder Darkweaver Kath
@@ -238,13 +238,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			n(FACTIONS, {
-				h(header(HEADERS.Faction, FACTION_VOLJINS_SPEAR, { -- Vol'jin's Spear
+				h(header(HEADERS.Faction, FACTION_VOLJINS_SPEAR, {	-- Vol'jin's Spear
 					faction(FACTION_VOLJINS_SPEAR),
 					ach(9473, {	-- Vol'jin's Spear
 						un(REMOVED_FROM_GAME, title(285)),	-- <Name>, Spear of Vol'jin
 					}),
 				})),
-				a(header(HEADERS.Faction, FACTION_WRYNNS_VANGUARD, { -- Wyrnn's Vanguard
+				a(header(HEADERS.Faction, FACTION_WRYNNS_VANGUARD, {	-- Wyrnn's Vanguard
 					faction(FACTION_WRYNNS_VANGUARD),
 					ach(9474, {	-- Wrynn's Vanguard
 						un(REMOVED_FROM_GAME, title(286)),	-- <Name>, Sword of Wrynn
@@ -261,17 +261,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(35872, {	-- A Bunch of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35690, {	-- A Bunch of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35868, {	-- A Bunch of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36031, {	-- A Bunch of Artifact Fragments (H)
 					["provider"] = { "n", 82204 },	-- Atomik
@@ -282,17 +279,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(36064, {	-- A Bunch of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36067, {	-- A Bunch of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36026, {	-- A Bunch of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35638, {	-- A Few Artifact Fragments (A)
 					["provider"] = { "n", 81870 },	-- Anenga
@@ -303,17 +297,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(35867, {	-- A Few Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35871, {	-- A Few Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35689, {	-- A Few Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36030, {	-- A Few Artifact Fragments (H)
 					["provider"] = { "n", 82204 },	-- Atomik
@@ -324,17 +315,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(36063, {	-- A Few Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36024, {	-- A Few Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36066, {	-- A Few Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35639, {	-- A TON of Artifact Fragments (A)
 					["provider"] = { "n", 81870 },	-- Anenga
@@ -345,17 +333,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(35873, {	-- A TON of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35691, {	-- A TON of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35869, {	-- A TON of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36032, {	-- A TON of Artifact Fragments (H)
 					["provider"] = { "n", 82204 },	-- Atomik
@@ -366,12 +351,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(36025, {	-- A TON of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36068, {	-- A TON of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36065, {	-- A TON of Artifact Fragments (H)
 					["provider"] = { "n", 83995 },	-- Fura
@@ -556,7 +539,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(56339, {	-- Tremblade Must Die
 					["provider"] = { "n", 84473 },	-- General Ushet Wolfbarger
-					["coord"] = { 45, 28.7, 1478 },
+					["coord"] = { 45.0, 28.7, 1478 },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),
@@ -823,7 +806,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						moh(100, i(116776, {	-- Pale Thorngrazer (MOUNT!)
-							["cost"] = {{ "g", 45000000 }},		-- 4500g
+							["cost"] = { { "g", 45000000 } },	-- 4500g
 						})),
 						moh(10, i(115501)),	-- Kowalski's Music Box (TOY!)
 						moh(10, i(116396)),	-- LeBlanc's Recorder (A) (TOY!)
@@ -839,7 +822,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						moh(100, i(116775, {	-- Breezestrider Stallion (MOUNT!)
-							["cost"] = {{ "g", 45000000 }},		-- 4500g
+							["cost"] = { { "g", 45000000 } },	-- 4500g
 						})),
 						moh(10, i(115501)),	-- Kowalski's Music Box (TOY!)
 						moh(10, i(115505)),	-- LeBlanc's Recorder (H) (TOY!)
@@ -1420,7 +1403,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				n(82877, {	-- High Warlord Volrath Elite Season 1/S1 - Season 2/S2 - Season 3/S3 -
 					["races"] = HORDE_ONLY,
-					--["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
+					-- ["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["groups"] = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },

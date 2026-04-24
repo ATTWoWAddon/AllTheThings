@@ -1,4 +1,4 @@
-local appName, app = ...;
+local _, app = ...;
 
 ---@diagnostic disable: deprecated
 if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) or app.GameBuildVersion >= 20000 then return; end
@@ -15,8 +15,8 @@ end
 app:CreateWindow("Season of Discovery", {
 	Commands = { "attsod" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateCustomHeader(app.HeaderConstants.SEASON_OF_DISCOVERY, {
-			visible = true, 
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.SEASON_OF_DISCOVERY, {
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,
@@ -24,7 +24,7 @@ app:CreateWindow("Season of Discovery", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
-					local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, IsExclusiveToSod);
+					local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, IsExclusiveToSod);
 					if #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
@@ -34,6 +34,6 @@ app:CreateWindow("Season of Discovery", {
 					end
 				end
 			end,
-		});
+		}));
 	end,
 });

@@ -1,14 +1,30 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
-local ipairs, pairs, floor, tinsert, tremove =
-	  ipairs, pairs, floor, tinsert, tremove;
+local ipairs, pairs, floor, tinsert
+	= ipairs, pairs, floor, tinsert
 
 -- App locals
 local GetRelativeValue, GetDeepestRelativeFunc = app.GetRelativeValue, app.GetDeepestRelativeFunc;
 
 -- Implementation
+local AnyProfessionRecipeGroups = {};
+local WhiteListedClassTypeForSpells = setmetatable({
+	Recipe = true,
+	RecipeWithItem = true,
+	Spell = true,
+}, {
+	__index = function(t, __type)
+		if __type then t[__type] = false; end
+		return false;
+	end,
+});
+local function AnyProfessionRecipeFilter(group)
+	if group.requireSkill and group.spellID and not group.g and WhiteListedClassTypeForSpells[group.__type] then
+		return true;
+	end
+end
 function app:CreateDynamicProfessionCategory(name, commands, professionID, specializationProfessionIDs)
 	app:CreateWindow("Recipes: " .. name, {
 		AllowCompleteSound = true,
@@ -19,11 +35,11 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 		OnInit = function(self, handlers)
 			local function ProfessionFilter(group)
 				local v = group.requireSkill;
-				if v and (v == professionID or app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == professionID) and group.spellID and not group.g and (not group.f or group.f == 200) then
+				if v and (v == professionID or app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == professionID) and group.spellID and not group.g and WhiteListedClassTypeForSpells[group.__type] then
 					return true;
 				end
 			end
-			self.data = app.CreateProfession(professionID, {
+			self:SetData(app.CreateProfession(professionID, {
 				description = "This list shows you all of the recipes you can collect for your profession.",
 				requireSkill = professionID,
 				visible = true,
@@ -33,8 +49,12 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 				OnUpdate = function(data)
 					local g = data.g;
 					if #g < 1 then
+						if #AnyProfessionRecipeGroups < 1 then
+							-- Build the base lookup table matching most of the filter requirements. (This is shared between all profession windows)
+							app:BuildFlatSearchFilteredResponse(app:GetDatabaseRoot().g, AnyProfessionRecipeFilter, AnyProfessionRecipeGroups);
+						end
 						local results = {};
-						app:BuildFlatSearchFilteredResponse(app:GetDataCache().g, ProfessionFilter, results);
+						app:BuildFlatSearchFilteredResponse(AnyProfessionRecipeGroups, ProfessionFilter, results);
 						if #results > 0 then
 							-- Find all associated spellIDs
 							local associatedSpellIDs = {};
@@ -43,7 +63,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									associatedSpellIDs[result.spellID] = true;
 								end
 							end
-							
+
 							-- Build specialization headers
 							local specializations = {};
 							if specializationProfessionIDs then
@@ -57,22 +77,19 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 								end
 							end
 							
-							local expansions, events = {}, {};
-							for expansionID,_ in pairs(app.SearchForFieldContainer("expansionID")) do
-								expansionID = floor(expansionID);
-								if not expansions[expansionID] then
+							local expansions = setmetatable({}, {
+								__index = function(t, expansionID)
 									local expansion = app.CreateExpansion(expansionID);
-									expansions[expansionID] = expansion;
+									t[expansionID] = expansion;
 									expansion.SortType = "name";
 									expansion.parent = data;
 									expansion.g = {};
-								end
-							end
-							
-							
-							
+									return expansion;
+								end,
+							});
+							local events = {};
 							local recipes = {};
-							for spellID,sources in pairs(app.SearchForFieldContainer("spellID")) do
+							for spellID,sources in pairs(app.GetFieldContainer("spellID")) do
 								if associatedSpellIDs[spellID] and not recipes[spellID] then
 									local count = #sources;
 									if count > 0 then
@@ -99,6 +116,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 											for key,value in pairs(mostAccessibleSource) do
 												recipe[key] = value;
 											end
+											recipe.parent = data;
 											recipe.progress = nil;
 											recipe.total = nil;
 											recipe.itemID = nil;
@@ -107,10 +125,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 											local specialization = recipe.requireSkill or professionID;
 											recipe.requireSkill = specialization;
 											if specialization ~= professionID then
-												recipe.parent = specializations[specialization];
-												if not recipe.parent then
-													recipe.parent = data;
-												end
+												recipe.parent = specializations[specialization] or data;
 											else
 												if not awp then awp = 10000 end;
 												for i=2,#sources,1 do
@@ -120,7 +135,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 													end
 												end
 												recipe.parent = expansions[floor(awp / 10000)] or data;
-												
+
 												if e then
 													local headerID = GetDeepestRelativeFunc(mostAccessibleSource.parent, function(group)
 														if group.e == e and group.headerID then
@@ -148,19 +163,19 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									end
 								end
 							end
-							
+
 							for expansionID,expansion in pairs(expansions) do
 								if #expansion.g > 0 then
 									tinsert(data.g, expansion);
 								end
 							end
-							
+
 							data.OnUpdate = nil;
 							self:AssignChildren();
 						end
 					end
 				end
-			});
+			}));
 		end,
 	});
 end

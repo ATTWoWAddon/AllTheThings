@@ -23,6 +23,11 @@ call :download UiMap
 call :download UiMapAssignment
 call :downloadrenamed WorldMapOverlay worldmapoverlay
 
+@REM Run the locale update script from its own folder
+pushd "%~dp0localized"
+call "Update Wago Build Files.bat"
+popd
+
 @REM Cleanup the SpellEffect file
 call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\SpellEffect.%BUILD%.csv" "..\SpellEffect.regex"
 exit /b

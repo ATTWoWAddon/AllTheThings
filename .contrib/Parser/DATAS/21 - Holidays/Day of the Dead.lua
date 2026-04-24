@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 DAY_OF_THE_DEAD_HEADER = createHeader({
 	readable = "Day of the Dead",
 	constant = "DAY_OF_THE_DEAD_HEADER",
@@ -15,18 +16,19 @@ DAY_OF_THE_DEAD_HEADER = createHeader({
 	-- #endif
 	text = {
 		en = "Day of the Dead",
-		es = "Festividad de los Muertos",
 		de = "Tag der Toten",
+		es = "Festividad de los Muertos",
+		mx = "Festividad de los Muertos",
 		fr = "Jour des morts",
 		it = "Giorno dei Morti",
 		ko = "망자의 날",
-		mx = "Festividad de los Muertos",
 		pt = "Dia dos Mortos",
 		ru = "День мертвых",
 		cn = "悼念日",
 		tw = "亡者節",
 	},
 });
+
 local COSTUME_PROVIDERS = {
 	{ "i", 116856 },	-- "Blooming Rose" Contender's Costume
 	{ "i", 116888 },	-- "Night Demon" Contender's Costume
@@ -34,6 +36,7 @@ local COSTUME_PROVIDERS = {
 	{ "i", 116890 },	-- "Santo's Sun" Contender's Costume
 	{ "i", 116891 },	-- "Snowy Owl" Contender's Costume
 };
+
 root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER, {
 	["timeline"] = { ADDED_3_2_2 },
 	["groups"] = {

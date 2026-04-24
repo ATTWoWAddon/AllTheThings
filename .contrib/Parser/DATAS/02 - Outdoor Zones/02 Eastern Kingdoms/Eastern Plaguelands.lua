@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local CRAFTSMANS_WRIT_QUEST = function(id, itemID, cost)
 	return applyclassicphase(PHASE_SIX, q(id, {	-- Craftsman's Writ - Quest
 		["provider"] = { "i", itemID },	-- Craftsman's Writ - Item
@@ -20,6 +21,7 @@ local CRAFTSMANS_WRIT_QUEST = function(id, itemID, cost)
 		-- #endif
 	}));
 end
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(EASTERN_PLAGUELANDS, {
 		["lore"] =
@@ -33,6 +35,108 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["maps"] = { LIGHTS_HOPE_CHAPEL },
 		-- #endif
 		["groups"] = {
+			-- #IF SEASON_OF_DISCOVERY
+			m(NEW_AVALON, {
+				["lore"] = "New Avalon is located just east of Tyr's Hand in the Eastern Plaguelands. The town encompasses Scarlet Hold, the New Avalon Orchard, the Scarlet Tavern, the Chapel of the Crimson Flame, the New Avalon Town Hall, and the New Avalon Forge. The Scarlet Overlook and King's Harbor are located to the southeast, and Havenshire is to the north.",
+				["groups"] = {
+					n(QUESTS, {
+						q(87459, {	-- Scarlet Activities
+							["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+							["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
+						}),
+						q(87493, {	-- Unrest at Tyr's Hand
+							["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+							["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
+							["sourceQuest"] = 87459,	-- Scarlet Activities
+						}),
+						q(87497, {	-- The Schism
+							["qg"] = 239032,	-- Commander Beatrix
+							["coord"] = { 67.8, 83.2, EASTERN_PLAGUELANDS },
+							["sourceQuest"] = 87493,	-- Unrest at Tyr's Hand
+						}),
+						q(89562, {	-- My Old Enemy
+							["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+							["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
+							["sourceQuest"] = 87497,	-- The Schism
+						}),
+						--••••• 5 Leonid's Burden Leonid's Burden
+						--•••••• 6 The Wrecked Caravan The Wrecked Caravan
+						--••••••• 7 Something New Something New
+						--•••••••• 8 Servants of Death Servants of Death
+						--••••••••• 9 A Personal Matter A Personal Matter
+						--•••••••••• 10 The Culling The Culling
+						--••••••••••• 11 Terrordale Terrordale
+						--•••••••••••• 12 Stomping Out The Infestation Stomping Out The Infestation
+						--••••••••••••• 13 Loss Loss
+						--•••••••••••••• 14 The Right Path The Right Path
+						-- The Scarlet Reclamation Questline
+						q(87498, {	-- The Scarlet Reclamation
+							["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+							["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
+							["sourceQuest"] = 87497,	-- The Schism
+						}),
+						--••••• 5 Gathering Intelligence Gathering Intelligence - Unlocks New Avalon New Avalon and Weakening The Defenses Weakening The Defenses
+
+						--•••••• 6 New Avalon New Avalon
+
+						--•••••• 6 Weakening The Defenses Weakening The Defenses
+						--••••••• 7 Report to Lord Tyrosus Report to Lord Tyrosus
+						--•••••••• 8 The Wrath of the Dawn The Wrath of the Dawn
+						--••••••••• 9 Decapitation Strike Decapitation Strike
+						--•••••••••• 10 Red = Dead Red = Dead
+						q(87518, {	-- Fall of the Grand Crusader
+							["qg"] = 239337,	-- Lord Maxwell Tyrosus <The Argent Dawn>
+						--	["coord"] = { 81.6, 57.8, SCARLET_ENCLAVE },
+							["maps"] = { SCARLET_ENCLAVE },
+						--	["sourceQuest"] = 87517,	-- Red = Dead
+							["groups"] = {
+								i(243229),	-- Hearthstone of the Dawn
+							},
+						}),
+					}),
+					n(PROFESSIONS, {
+						prof(ENCHANTING, {
+							["description"] = "Before you can enter the Mage Tower to pick up the books, you will need to complete a small puzzle. First use the Scarlet Insignia, to disguise yourself then head to the Mage Tower within New Avalon.\nRun through the Stone Arches, and you will get a buff called Mystical Refraction this allows you to see colored crystals in the area.\nYou need to blend the color of the crystals to match the Mage Tower Portal door. You blend these by running under the floating tree.\nOnce you have solved the puzzle, simply walk through the portal to enter the Mage Tower. Once inside you will be greeted with Distracted Scarlet Wizards who you must avoid.\nOnce in, you will find the books on the bookcases throughout.\nEach book equals a different enchanting formula. Once you have looted the book, disenchant it then use 15 Illusion Dust, and 1 Righteous Orb to learn the enchant.",
+							["groups"] = {
+								i(242268, {	-- If You Give a Crusader an Enchant
+									i(241191),	-- Formula: Enchant Weapon - Grand Crusader
+								}),
+								i(242363, {	-- Who, What, Where, When, and Die! Five Keys to a Good Inquisition
+									i(242361),	-- Formula: Enchant 2H Weapon - Grand Inquisitor
+								}),
+								i(242267, {	-- From Arcanist to Archmage
+									i(241195),	-- Formula: Enchant 2H Weapon - Grand Arcanist
+								}),
+								i(242268, {	-- World of Wardcraft
+									i(241201),	-- Formula: Enchant Weapon - Grand Sorcerer
+								}),
+							},
+						}),
+					}),
+					n(VENDORS, {
+						n(28512, {	-- Quartermaster Ozorg
+						}),
+					}),
+					n(ZONE_DROPS, {
+						i(238309),	-- Pattern: Scarlet Infiltrator's Bracers
+						i(238310),	-- Pattern: Scarlet Infiltrator's Gloves
+						i(238311),	-- Pattern: Scarlet Infiltrator's Belt
+						i(238312),	-- Pattern: Scarlet Infiltrator's Trousers
+						i(238313),	-- Pattern: Scarlet Infiltrator's Shoes
+						i(238317),	-- Pattern: Scarlet Huntsman's Wristguards
+						i(238318),	-- Pattern: Scarlet Huntsman's Handguards
+						i(238319),	-- Pattern: Scarlet Huntsman's Clasp
+						i(238320),	-- Pattern: Scarlet Huntsman's Legguards
+						i(238321),	-- Pattern: Scarlet Huntsman's Boots
+						i(238325),	-- Plans: Scarlet Soldier's Protectors
+						i(238326),	-- Plans: Scarlet Soldier's Grips
+						i(238327),	-- Plans: Scarlet Soldier's Waistguard
+						i(238328),	-- Plans: Scarlet Soldier's Legplates
+						i(238329),	-- Plans: Scarlet Soldier's Stompers
+					}),
+				},
+			}),
+			-- #ENDIF
 			-- #if AFTER WRATH
 			m(THE_SCARLET_ENCLAVE, {
 				["lore"] = "The Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.",
@@ -1061,7 +1165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["sourceQuest"] = 76290,	-- Omarion's Second Handbook
 								["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
 								["groups"] = sharedData({
-									["cost"] = {{ "i", 12844, 3 }},	-- 3x Argent Dawn Valor Token
+									["cost"] = { { "i", 12844, 3 } },	-- 3x Argent Dawn Valor Token
 									["timeline"] = { ADDED_10_1_5 },
 								}, {
 									i(206395),	-- Pattern: Glacial Chapeau (RECIPE!)
@@ -1167,11 +1271,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(76268, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Corruptor's Scourgestones
 							["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 							["coord"] = { 75.8, 53.8, EASTERN_PLAGUELANDS },
-							["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
+							["cost"] = { { "i", 206375, 1 } },	-- 1x Corruptor's Scourgestone
 							["repeatable"] = true,
-							["groups"] = {
-								i(12844),	-- Argent Dawn Valor Token
-							},
+							["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 						})),
 						q(76270, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Invader's Scourgestones
 							["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
@@ -1182,11 +1284,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 								-- #endif
 							},
-							["cost"] = {{ "i", 206374, 10 }},	-- 10x Corruptor's Scourgestone
+							["cost"] = { { "i", 206374, 10 } },	-- 10x Corruptor's Scourgestone
 							["repeatable"] = true,
-							["groups"] = {
-								i(12844),	-- Argent Dawn Valor Token
-							},
+							["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 						})),
 						q(77243, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Corruptor's Scourgestones
 							["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
@@ -1197,11 +1297,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 								-- #endif
 							},
-							["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
+							["cost"] = { { "i", 206375, 5 } },	-- 5x Corruptor's Scourgestone
 							["repeatable"] = true,
-							["groups"] = {
-								i(12844),	-- Argent Dawn Valor Token
-							},
+							["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 						})),
 						q(77242, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Invader's Scourgestones
 							["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
@@ -1212,11 +1310,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 								-- #endif
 							},
-							["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
+							["cost"] = { { "i", 206374, 50 } },	-- 50x Invader's Scourgestone
 							["repeatable"] = true,
-							["groups"] = {
-								i(12844),	-- Argent Dawn Valor Token
-							},
+							["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 						})),
 					}),
 					n(VENDORS, {
@@ -1457,9 +1553,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179498, {	-- Scarlet Footlocker
+					["coords"] = {
+						{ 80.8, 85.2, EASTERN_PLAGUELANDS },
+						{ 83.8, 80.1, EASTERN_PLAGUELANDS },
+						{ 87.9, 82.3, EASTERN_PLAGUELANDS },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 250,
+				}),
+			}),
+			-- #endif
 			petbattles({
 				n(66512, {	-- Deiza Plaguehorn <Master Pet Tamer>
-					["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
+					["coord"] = {
+						-- #if BEFORE MID
+						67.0, 52.4, EASTERN_PLAGUELANDS,
+						-- #else
+						66.5, 56.9, EASTERN_PLAGUELANDS,
+						-- #endif
+					},
 					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 14,
@@ -1629,15 +1744,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Seed planted in southeastern ziggurat
 							["provider"] = { "i", 61036 },	-- Rayne's Seeds
-							["coord"] = { 37, 48, EASTERN_PLAGUELANDS },
+							["coord"] = { 37.0, 48.0, EASTERN_PLAGUELANDS },
 						}),
 						objective(2, {	-- Seed planted in western ziggurat
 							["provider"] = { "i", 61036 },	-- Rayne's Seeds
-							["coord"] = { 33, 44, EASTERN_PLAGUELANDS },
+							["coord"] = { 33.0, 44.0, EASTERN_PLAGUELANDS },
 						}),
 						objective(3, {	-- Seed planted in northeastern ziggurat
 							["provider"] = { "i", 61036 },	-- Rayne's Seeds
-							["coord"] = { 37, 42, EASTERN_PLAGUELANDS },
+							["coord"] = { 37.0, 42.0, EASTERN_PLAGUELANDS },
 						}),
 						i(62965, {	-- Ring of New Life
 							["timeline"] = { ADDED_4_0_3 },
@@ -2605,7 +2720,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
 						-- #else
-						{ 53.4, 22, EASTERN_PLAGUELANDS },
+						{ 53.4, 22.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2629,7 +2744,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
 						-- #else
-						{ 53.4, 22, EASTERN_PLAGUELANDS },
+						{ 53.4, 22.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2922,13 +3037,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
-						i(15855, {  -- Ring of Protection
+						i(15855, { 	-- Ring of Protection
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						i(15856, {  -- Archlight Talisman
+						i(15856, { 	-- Archlight Talisman
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						i(15857, {  -- Magebane Scion
+						i(15857, { 	-- Magebane Scion
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
@@ -3020,7 +3135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Warlord Thresh'jin's Body burned
 							["provider"] = { "i", 61316 },	-- Body of Warlord Thresh'jin
-							["coord"] = { 67, 9, EASTERN_PLAGUELANDS },
+							["coord"] = { 67.0, 9.0, EASTERN_PLAGUELANDS },
 						}),
 						i(62991, {	-- Strength's Supremacy
 							["timeline"] = { ADDED_4_0_3 },
@@ -3695,6 +3810,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #IF SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX, q(88724, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coords"] = {
+						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
+					},
+					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
+					["cost"] = {
+						{ "i", 22524, 6 },	-- Insignia of the Crusade
+						{ "i", 22523, 6 },	-- Insignia of the Dawn
+					},
+					["repeatable"] = true,
+					["lvl"] = 55,
+					["groups"] = {
+						i(237284),	-- Supply Bag
+						i(237285),	-- Band of Resolution
+						i(237286),	-- Band of Piety
+						i(237287),	-- Verimonde's Last Resort
+						i(237288),	-- Sanctified Leather Helm
+						i(237289),	-- Leggings of the Plague Hunter
+					},
+				})),
+				-- #ELSE
 				applyclassicphase(PHASE_SIX, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coords"] = {
@@ -3733,6 +3871,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				-- #endif
+				-- #IF SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX, q(88721, {	-- Superior Armaments of Battle - Friend of the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coords"] = {
+						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
+					},
+					["minReputation"] = { FACTION_ARGENT_DAWN, FRIENDLY },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = {
+						{ "i", 22524, 30 },	-- Insignia of the Crusade
+						{ "i", 22523, 30 },	-- Insignia of the Dawn
+					},
+					["repeatable"] = true,
+					["lvl"] = 55,
+					["groups"] = {
+						i(237284),	-- Supply Bag
+						i(237285),	-- Band of Resolution
+						i(237286),	-- Band of Piety
+						i(237287),	-- Verimonde's Last Resort
+						i(237288),	-- Sanctified Leather Helm
+						i(237289),	-- Leggings of the Plague Hunter
+					},
+				})),
+				-- #ELSE
 				applyclassicphase(PHASE_SIX, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coords"] = {
@@ -3772,6 +3936,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				-- #endif
+				-- #IF SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX, q(88722, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coords"] = {
+						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
+					},
+					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = {
+						{ "i", 22524, 20 },	-- Insignia of the Crusade
+						{ "i", 22523, 20 },	-- Insignia of the Dawn
+					},
+					["repeatable"] = true,
+					["lvl"] = 55,
+					["groups"] = {
+						i(237284),	-- Supply Bag
+						i(237285),	-- Band of Resolution
+						i(237286),	-- Band of Piety
+						i(237287),	-- Verimonde's Last Resort
+						i(237288),	-- Sanctified Leather Helm
+						i(237289),	-- Leggings of the Plague Hunter
+					},
+				})),
+				-- #else
 				applyclassicphase(PHASE_SIX, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coords"] = {
@@ -3811,6 +4001,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				-- #endif
+				-- #IF SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX, q(88723, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coords"] = {
+						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
+					},
+					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = {
+						{ "i", 22524, 7 },	-- Insignia of the Crusade
+						{ "i", 22523, 7 },	-- Insignia of the Dawn
+					},
+					["repeatable"] = true,
+					["lvl"] = 55,
+					["groups"] = {
+						i(237284),	-- Supply Bag
+						i(237285),	-- Band of Resolution
+						i(237286),	-- Band of Piety
+						i(237287),	-- Verimonde's Last Resort
+						i(237288),	-- Sanctified Leather Helm
+						i(237289),	-- Leggings of the Plague Hunter
+					},
+				})),
+				-- #else
 				applyclassicphase(PHASE_SIX, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coords"] = {
@@ -3850,6 +4066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				-- #endif
 				q(27370, {	-- Tarenar Sunstrike
 					["qg"] = 45417,	-- Fiona
 					["coord"] = { 9.0, 66.5, EASTERN_PLAGUELANDS },
@@ -4042,7 +4259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 10936 },	-- Joseph Redpath
 								{ "i", 15209 },	-- Relic Bundle
 							},
-							["coord"] = { 35, 84, EASTERN_PLAGUELANDS },
+							["coord"] = { 35.0, 84.0, EASTERN_PLAGUELANDS },
 						}),
 						i(62957, {	-- Homecoming Wrap
 							["timeline"] = { ADDED_4_0_3 },
@@ -4072,6 +4289,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER 3.3.0
 					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
 					-- #endif
+					["sourceQuests"] = {
+						6135,	-- Duskwing, Oh How I Hate Thee...
+						6136,	-- The Corpulent One
+					},
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -4086,6 +4307,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 56,
 				}),
 				q(14349, {	-- The Call to Command
+					["sourceQuests"] = {
+						6135,	-- Duskwing, Oh How I Hate Thee...
+						6136,	-- The Corpulent One
+					},
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -4156,6 +4381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6136, {	-- The Corpulent One
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					["sourceQuest"] = 6133,	-- The Ranger Lord's Behest
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 23.0, 68.2, EASTERN_PLAGUELANDS },
@@ -4188,7 +4414,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Borelgore slain
 							["provider"] = { "n", 11896 },	-- Borelgore
-							["coord"] = { 58, 29, EASTERN_PLAGUELANDS },
+							["coord"] = { 58.0, 29.0, EASTERN_PLAGUELANDS },
 						}),
 						i(62987, {	-- Eastwall Gauntlets
 							["timeline"] = { ADDED_4_0_3 },
@@ -4457,7 +4683,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 15448 },	-- Coagulated Rot
 								{ "i", 15454 },	-- Mortar and Pestle
 							},
-							["cost"] = {{ "i", 15447, 7 }},	-- Living Rot
+							["cost"] = { { "i", 15447, 7 } },	-- Living Rot
 							["description"] = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
 							["crs"] = {
 								8526,	-- Dark Caster
@@ -4481,7 +4707,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 15448 },	-- Coagulated Rot
 								{ "i", 15454 },	-- Mortar and Pestle
 							},
-							["cost"] = {{ "i", 15447, 7 }},	-- Living Rot
+							["cost"] = { { "i", 15447, 7 } },	-- Living Rot
 							["crs"] = {
 								8526,	-- Dark Caster
 								8531,	-- Gibbering Ghoul
@@ -4516,7 +4742,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
 						-- #else
-						{ 53.4, 22, EASTERN_PLAGUELANDS },
+						{ 53.4, 22.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4605,7 +4831,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- Open portal wi thin Library Wing
 							["provider"] = { "o", 205877 },	-- Argent Portal
-							["coord"] = { 77, 71, EASTERN_PLAGUELANDS },
+							["coord"] = { 77.0, 71.0, EASTERN_PLAGUELANDS },
 						}),
 					},
 				}),
@@ -4955,7 +5181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_5_1_0 },
 				}),
-				n(10826, {  -- Lord Darkscythe
+				n(10826, { 	-- Lord Darkscythe
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 33.4, 49.6, EASTERN_PLAGUELANDS },
@@ -5033,7 +5259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if BEFORE CATA
-				n(10822, {  -- Warlord Thresh'jin
+				n(10822, { 	-- Warlord Thresh'jin
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 60.4, 17.4, EASTERN_PLAGUELANDS },
@@ -5122,6 +5348,124 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			n(TREASURES, {
+				-- #if BEFORE 4.0.3
+				o(176213, {	-- Blood of Heroes
+					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
+					["coords"] = {
+						-- Plaguewood
+						{ 34.5, 25.8, EASTERN_PLAGUELANDS },
+						{ 38.8, 26.7, EASTERN_PLAGUELANDS },
+						{ 33.6, 32.6, EASTERN_PLAGUELANDS },
+						{ 38.5, 31.1, EASTERN_PLAGUELANDS },
+						{ 36.7, 38.1, EASTERN_PLAGUELANDS },
+						{ 38.9, 36.1, EASTERN_PLAGUELANDS },
+						{ 44.9, 32.9, EASTERN_PLAGUELANDS },
+						{ 49.1, 35.5, EASTERN_PLAGUELANDS },
+
+						-- Blackwood Lake
+						{ 47.5, 40.8, EASTERN_PLAGUELANDS },
+						{ 50.3, 45.5, EASTERN_PLAGUELANDS },
+						{ 53.5, 50.7, EASTERN_PLAGUELANDS },
+
+						-- Light's Hope
+						{ 66.1, 53.1, EASTERN_PLAGUELANDS },
+						{ 73.8, 51.1, EASTERN_PLAGUELANDS },
+						{ 76.2, 50.7, EASTERN_PLAGUELANDS },
+						{ 75.6, 55.3, EASTERN_PLAGUELANDS },
+						{ 74.7, 58.7, EASTERN_PLAGUELANDS },
+						{ 78.5, 57.5, EASTERN_PLAGUELANDS },
+						{ 80.5, 59.6, EASTERN_PLAGUELANDS },
+						{ 78.7, 67.3, EASTERN_PLAGUELANDS },
+
+						-- Tirion's House
+						{ 7.1, 50.7, EASTERN_PLAGUELANDS },
+						{ 8.1, 54.4, EASTERN_PLAGUELANDS },
+						{ 14.2, 64.7, EASTERN_PLAGUELANDS },
+						{ 20.0, 60.9, EASTERN_PLAGUELANDS },
+						{ 20.5, 66.9, EASTERN_PLAGUELANDS },
+
+						-- Crypt
+						{ 22.1, 85.0, EASTERN_PLAGUELANDS },
+						{ 24.3, 88.2, EASTERN_PLAGUELANDS },
+						{ 28.8, 85.9, EASTERN_PLAGUELANDS },
+
+						-- Nathanos's House
+						{ 31.5, 73.9, EASTERN_PLAGUELANDS },
+						{ 27.3, 64.0, EASTERN_PLAGUELANDS },
+						{ 30.9, 65.5, EASTERN_PLAGUELANDS },
+						{ 26.7, 69.5, EASTERN_PLAGUELANDS },
+						{ 26.3, 70.5, EASTERN_PLAGUELANDS },
+						{ 26.0, 74.7, EASTERN_PLAGUELANDS },
+						{ 27.1, 75.5, EASTERN_PLAGUELANDS },
+						{ 32.0, 71.0, EASTERN_PLAGUELANDS },
+						{ 34.3, 67.8, EASTERN_PLAGUELANDS },
+						{ 29.2, 78.8, EASTERN_PLAGUELANDS },
+						{ 37.1, 65.7, EASTERN_PLAGUELANDS },
+						{ 37.6, 68.5, EASTERN_PLAGUELANDS },
+						{ 36.9, 70.6, EASTERN_PLAGUELANDS },
+						{ 35.9, 75.8, EASTERN_PLAGUELANDS },
+						{ 24.5, 76.9, EASTERN_PLAGUELANDS },
+						{ 34.0, 80.2, EASTERN_PLAGUELANDS },
+
+						-- Mushroom Kingdom
+						{ 40.0, 49.9, EASTERN_PLAGUELANDS },
+						{ 38.5, 54.0, EASTERN_PLAGUELANDS },
+
+						-- The Infectis Scar
+						{ 41.5, 65.7, EASTERN_PLAGUELANDS },
+						{ 46.3, 64.0, EASTERN_PLAGUELANDS },
+						{ 55.5, 58.7, EASTERN_PLAGUELANDS },
+						{ 41.5, 79.7, EASTERN_PLAGUELANDS },
+						{ 42.5, 75.7, EASTERN_PLAGUELANDS },
+						{ 48.9, 67.2, EASTERN_PLAGUELANDS },
+						{ 46.2, 70.8, EASTERN_PLAGUELANDS },
+						{ 46.5, 74.8, EASTERN_PLAGUELANDS },
+						{ 47.9, 80.0, EASTERN_PLAGUELANDS },
+						{ 50.5, 77.3, EASTERN_PLAGUELANDS },
+						{ 51.8, 70.3, EASTERN_PLAGUELANDS },
+						{ 56.2, 63.9, EASTERN_PLAGUELANDS },
+						{ 59.3, 62.2, EASTERN_PLAGUELANDS },
+						{ 58.5, 64.9, EASTERN_PLAGUELANDS },
+						{ 59.9, 67.5, EASTERN_PLAGUELANDS },
+						{ 57.5, 72.0, EASTERN_PLAGUELANDS },
+						{ 61.8, 70.2, EASTERN_PLAGUELANDS },
+						{ 63.6, 67.7, EASTERN_PLAGUELANDS },
+						{ 67.6, 66.8, EASTERN_PLAGUELANDS },
+
+						-- Lake Mereldar
+						{ 56.5, 76.1, EASTERN_PLAGUELANDS },
+						{ 57.8, 76.2, EASTERN_PLAGUELANDS },
+						{ 59.5, 76.0, EASTERN_PLAGUELANDS },
+						{ 59.2, 80.8, EASTERN_PLAGUELANDS },
+						{ 57.1, 81.9, EASTERN_PLAGUELANDS },
+						{ 59.2, 80.8, EASTERN_PLAGUELANDS },
+						{ 64.7, 81.0, EASTERN_PLAGUELANDS },
+
+						-- Tyr's Hand
+						{ 68.2, 70.6, EASTERN_PLAGUELANDS },
+						{ 70.7, 69.5, EASTERN_PLAGUELANDS },
+						{ 73.4, 69.8, EASTERN_PLAGUELANDS },
+						{ 76.6, 72.5, EASTERN_PLAGUELANDS },
+						{ 69.0, 71.5, EASTERN_PLAGUELANDS },
+						{ 68.3, 74.6, EASTERN_PLAGUELANDS },
+						{ 68.6, 78.5, EASTERN_PLAGUELANDS },
+						{ 68.8, 80.6, EASTERN_PLAGUELANDS },
+						{ 69.0, 83.5, EASTERN_PLAGUELANDS },
+						{ 70.6, 80.8, EASTERN_PLAGUELANDS },
+						{ 71.1, 75.3, EASTERN_PLAGUELANDS },
+						{ 73.6, 76.9, EASTERN_PLAGUELANDS },
+						{ 72.3, 78.5, EASTERN_PLAGUELANDS },
+						{ 76.1, 78.2, EASTERN_PLAGUELANDS },
+						{ 73.3, 82.2, EASTERN_PLAGUELANDS },
+						{ 74.1, 83.8, EASTERN_PLAGUELANDS },
+						{ 74.8, 83.5, EASTERN_PLAGUELANDS },
+					},
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(12938),	-- Blood of Heroes
+					},
+				}),
+				-- #endif
 				o(421153, {	-- Carved Eye
 					["coord"] = { 28.6, 13.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_10_2_5 },
@@ -5380,7 +5724,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(227813, {	-- Drinkable Stratholme Holy Water
 								["timeline"] = { ADDED_1_15_3 },
-								["cost"] = {{ "i", 13180, 1 }},	-- Stratholme Holy Water
+								["cost"] = { { "i", 13180, 1 } },	-- Stratholme Holy Water
 							})),
 							-- EPIC CRAFTED ITEMS UPGRADES
 							applyclassicphase(SOD_PHASE_FOUR, i(227816, {	-- Argent Elite Boots
@@ -5557,120 +5901,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				-- #if BEFORE 4.0.3
-				i(12938, {	-- Blood of Heroes
-					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
-					["provider"] = { "o", 176213 },	-- Blood of Heroes
-					["coords"] = {
-						-- Plaguewood
-						{ 34.5, 25.8, EASTERN_PLAGUELANDS },
-						{ 38.8, 26.7, EASTERN_PLAGUELANDS },
-						{ 33.6, 32.6, EASTERN_PLAGUELANDS },
-						{ 38.5, 31.1, EASTERN_PLAGUELANDS },
-						{ 36.7, 38.1, EASTERN_PLAGUELANDS },
-						{ 38.9, 36.1, EASTERN_PLAGUELANDS },
-						{ 44.9, 32.9, EASTERN_PLAGUELANDS },
-						{ 49.1, 35.5, EASTERN_PLAGUELANDS },
-
-						-- Blackwood Lake
-						{ 47.5, 40.8, EASTERN_PLAGUELANDS },
-						{ 50.3, 45.5, EASTERN_PLAGUELANDS },
-						{ 53.5, 50.7, EASTERN_PLAGUELANDS },
-
-						-- Light's Hope
-						{ 66.1, 53.1, EASTERN_PLAGUELANDS },
-						{ 73.8, 51.1, EASTERN_PLAGUELANDS },
-						{ 76.2, 50.7, EASTERN_PLAGUELANDS },
-						{ 75.6, 55.3, EASTERN_PLAGUELANDS },
-						{ 74.7, 58.7, EASTERN_PLAGUELANDS },
-						{ 78.5, 57.5, EASTERN_PLAGUELANDS },
-						{ 80.5, 59.6, EASTERN_PLAGUELANDS },
-						{ 78.7, 67.3, EASTERN_PLAGUELANDS },
-
-						-- Tirion's House
-						{ 7.1, 50.7, EASTERN_PLAGUELANDS },
-						{ 8.1, 54.4, EASTERN_PLAGUELANDS },
-						{ 14.2, 64.7, EASTERN_PLAGUELANDS },
-						{ 20.0, 60.9, EASTERN_PLAGUELANDS },
-						{ 20.5, 66.9, EASTERN_PLAGUELANDS },
-
-						-- Crypt
-						{ 22.1, 85.0, EASTERN_PLAGUELANDS },
-						{ 24.3, 88.2, EASTERN_PLAGUELANDS },
-						{ 28.8, 85.9, EASTERN_PLAGUELANDS },
-
-						-- Nathanos's House
-						{ 31.5, 73.9, EASTERN_PLAGUELANDS },
-						{ 27.3, 64.0, EASTERN_PLAGUELANDS },
-						{ 30.9, 65.5, EASTERN_PLAGUELANDS },
-						{ 26.7, 69.5, EASTERN_PLAGUELANDS },
-						{ 26.3, 70.5, EASTERN_PLAGUELANDS },
-						{ 26.0, 74.7, EASTERN_PLAGUELANDS },
-						{ 27.1, 75.5, EASTERN_PLAGUELANDS },
-						{ 32.0, 71.0, EASTERN_PLAGUELANDS },
-						{ 34.3, 67.8, EASTERN_PLAGUELANDS },
-						{ 29.2, 78.8, EASTERN_PLAGUELANDS },
-						{ 37.1, 65.7, EASTERN_PLAGUELANDS },
-						{ 37.6, 68.5, EASTERN_PLAGUELANDS },
-						{ 36.9, 70.6, EASTERN_PLAGUELANDS },
-						{ 35.9, 75.8, EASTERN_PLAGUELANDS },
-						{ 24.5, 76.9, EASTERN_PLAGUELANDS },
-						{ 34.0, 80.2, EASTERN_PLAGUELANDS },
-
-						-- Mushroom Kingdom
-						{ 40.0, 49.9, EASTERN_PLAGUELANDS },
-						{ 38.5, 54.0, EASTERN_PLAGUELANDS },
-
-						-- The Infectis Scar
-						{ 41.5, 65.7, EASTERN_PLAGUELANDS },
-						{ 46.3, 64.0, EASTERN_PLAGUELANDS },
-						{ 55.5, 58.7, EASTERN_PLAGUELANDS },
-						{ 41.5, 79.7, EASTERN_PLAGUELANDS },
-						{ 42.5, 75.7, EASTERN_PLAGUELANDS },
-						{ 48.9, 67.2, EASTERN_PLAGUELANDS },
-						{ 46.2, 70.8, EASTERN_PLAGUELANDS },
-						{ 46.5, 74.8, EASTERN_PLAGUELANDS },
-						{ 47.9, 80.0, EASTERN_PLAGUELANDS },
-						{ 50.5, 77.3, EASTERN_PLAGUELANDS },
-						{ 51.8, 70.3, EASTERN_PLAGUELANDS },
-						{ 56.2, 63.9, EASTERN_PLAGUELANDS },
-						{ 59.3, 62.2, EASTERN_PLAGUELANDS },
-						{ 58.5, 64.9, EASTERN_PLAGUELANDS },
-						{ 59.9, 67.5, EASTERN_PLAGUELANDS },
-						{ 57.5, 72.0, EASTERN_PLAGUELANDS },
-						{ 61.8, 70.2, EASTERN_PLAGUELANDS },
-						{ 63.6, 67.7, EASTERN_PLAGUELANDS },
-						{ 67.6, 66.8, EASTERN_PLAGUELANDS },
-
-						-- Lake Mereldar
-						{ 56.5, 76.1, EASTERN_PLAGUELANDS },
-						{ 57.8, 76.2, EASTERN_PLAGUELANDS },
-						{ 59.5, 76.0, EASTERN_PLAGUELANDS },
-						{ 59.2, 80.8, EASTERN_PLAGUELANDS },
-						{ 57.1, 81.9, EASTERN_PLAGUELANDS },
-						{ 59.2, 80.8, EASTERN_PLAGUELANDS },
-						{ 64.7, 81.0, EASTERN_PLAGUELANDS },
-
-						-- Tyr's Hand
-						{ 68.2, 70.6, EASTERN_PLAGUELANDS },
-						{ 70.7, 69.5, EASTERN_PLAGUELANDS },
-						{ 73.4, 69.8, EASTERN_PLAGUELANDS },
-						{ 76.6, 72.5, EASTERN_PLAGUELANDS },
-						{ 69.0, 71.5, EASTERN_PLAGUELANDS },
-						{ 68.3, 74.6, EASTERN_PLAGUELANDS },
-						{ 68.6, 78.5, EASTERN_PLAGUELANDS },
-						{ 68.8, 80.6, EASTERN_PLAGUELANDS },
-						{ 69.0, 83.5, EASTERN_PLAGUELANDS },
-						{ 70.6, 80.8, EASTERN_PLAGUELANDS },
-						{ 71.1, 75.3, EASTERN_PLAGUELANDS },
-						{ 73.6, 76.9, EASTERN_PLAGUELANDS },
-						{ 72.3, 78.5, EASTERN_PLAGUELANDS },
-						{ 76.1, 78.2, EASTERN_PLAGUELANDS },
-						{ 73.3, 82.2, EASTERN_PLAGUELANDS },
-						{ 74.1, 83.8, EASTERN_PLAGUELANDS },
-						{ 74.8, 83.5, EASTERN_PLAGUELANDS },
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
 				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
 					["timeline"] = { REMOVED_4_0_3 },
 				})),
@@ -5796,7 +6026,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 65.4, 22.6, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 8561,	-- Mossflayer Shadowhunter
 				}),
 			}),

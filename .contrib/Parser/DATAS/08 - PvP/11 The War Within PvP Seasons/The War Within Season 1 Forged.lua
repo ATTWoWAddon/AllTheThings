@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(SEASON_FORGED, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
@@ -65,6 +66,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			ach(40233, {	-- The Strategist: The War Within Season 1
 				i(225933),	-- Forged Legend's Pennant (TOY!)
+				title(539, {	-- Strategist <Name>
+					["collectible"] = false,
+				}),
 			}),
 			-- Solo
 			ach(40395, {	-- Legend: The War Within Season 1
@@ -77,7 +81,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["classes"] = HEALERS,
 			}),
 			-- Fashion
-			ach(40728),	-- Forged Finery
+			ach(40728, { ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0, ADDED_12_0_1_LAUNCH } }),	-- Forged Finery
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 			i(223511, {	-- Vicious Skyflayer [A] (MOUNT!)
@@ -87,17 +91,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["races"] = HORDE_ONLY,
 			}),
 		})),
-		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
+		n(PVP_WARMODE, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["groups"] = {
-					filter(BACK_F, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+					-- #if AFTER MID
+					moh(80, iensemble(251020)),	-- Arsenal: Forged Warmonger's Weapons
+					moh(12, iensemble(251016)),	-- Ensemble: Forged Warmonger's Cloth Armor
+					moh(12, iensemble(251017)),	-- Ensemble: Forged Warmonger's Leather Armor
+					moh(12, iensemble(251018)),	-- Ensemble: Forged Warmonger's Mail Armor
+					moh(12, iensemble(251019)),	-- Ensemble: Forged Warmonger's Plate Armor
+					-- #endif
+					filter(BACK_F, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223839)),	-- Forged Warmonger's Cape
 						bloody(525, i(223841)),	-- Forged Warmonger's Cloak
 						bloody(525, i(223842)),	-- Forged Warmonger's Drape
 						bloody(525, i(223840)),	-- Forged Warmonger's Shawl
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223813)),	-- Forged Warmonger's Bindings
 						bloody(700, i(223812)),	-- Forged Warmonger's Cord
 						bloody(875, i(223810)),	-- Forged Warmonger's Crown
@@ -106,8 +117,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(223814)),	-- Forged Warmonger's Mantle
 						bloody(875, i(223811)),	-- Forged Warmonger's Pants
 						bloody(700, i(223808)),	-- Forged Warmonger's Slippers
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(700, i(223819)),	-- Forged Warmonger's Belt
 						bloody(700, i(223815)),	-- Forged Warmonger's Boots
 						bloody(875, i(223818)),	-- Forged Warmonger's Breeches
@@ -116,8 +127,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(223821)),	-- Forged Warmonger's Jerkin
 						bloody(700, i(223822)),	-- Forged Warmonger's Shoulderguard
 						bloody(525, i(223820)),	-- Forged Warmonger's Wraps
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223838)),	-- Forged Warmonger's Armguards
 						bloody(875, i(223831)),	-- Forged Warmonger's Chestguard
 						bloody(700, i(223837)),	-- Forged Warmonger's Cinch
@@ -126,8 +137,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(223833)),	-- Forged Warmonger's Grips
 						bloody(875, i(223834)),	-- Forged Warmonger's Helm
 						bloody(875, i(223835)),	-- Forged Warmonger's Leggings
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223830)),	-- Forged Warmonger's Bracers
 						bloody(700, i(223829)),	-- Forged Warmonger's Clasp
 						bloody(875, i(223824)),	-- Forged Warmonger's Cuirass
@@ -136,8 +147,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(223827)),	-- Forged Warmonger's Legguards
 						bloody(700, i(223825)),	-- Forged Warmonger's Sabatons
 						bloody(700, i(223828)),	-- Forged Warmonger's Spaulders
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223859)),		-- Forged Warmonger's Aegis
 						bloody(875, i(223844)),		-- Forged Warmonger's Battleaxe
 						bloody(1750, i(223853)),	-- Forged Warmonger's Battlestaff
@@ -160,14 +171,28 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(1750, i(223852)),	-- Forged Warmonger's Spire
 						bloody(875, i(223848)),		-- Forged Warmonger's Twinblade
 						bloody(1225, i(223862)),	-- Forged Warmonger's Wand
-					}),
-				},
+					})),
+				}),
 			}),
-		})),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
+		}),
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_1_LAUNCH } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
-				["groups"] = {
+				["groups"] = sharedData({
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}, {
+					moh(80, iensemble(232864)),	-- Arsenal: Forged Aspirant's Weapons
+					moh(12, iensemble(232664)),	-- Ensemble: Forged Aspirant's Cloth Armor
+					moh(12, iensemble(232665)),	-- Ensemble: Forged Aspirant's Leather Armor
+					moh(12, iensemble(232666)),	-- Ensemble: Forged Aspirant's Mail Armor
+					moh(12, iensemble(232667)),	-- Ensemble: Forged Aspirant's Plate Armor
+				}),
+			}),
+			n(219217, {	-- Velerd <Honor Quartermaster>
+				["coord"] = { 55.0, 76.5, DORNOGAL },
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(218434)),	-- Forged Aspirant's Cape
 						honor(525, i(218433)),	-- Forged Aspirant's Cloak
@@ -281,14 +306,67 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						honor(1225, i(218452)),	-- Forged Aspirant's Wand
 						honor(875, i(218443)),	-- Forged Aspirant's Warglaive
 					}),
-				},
+				}),
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_1_LAUNCH } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
-				["groups"] = {
+				["groups"] = sharedData({
+					["cost"] = { { "i", MOH, 12 } },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}, {
+					iensemble(232865, {	-- Arsenal: Forged Gladiator's Weapons
+						["cost"] = { { "i", MOH, 80 } },
+					}),
+					iensemble(232668, {	-- Ensemble: Forged Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(232669, {	-- Ensemble: Forged Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(232670, {	-- Ensemble: Forged Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(232671, {	-- Ensemble: Forged Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(232672, {	-- Ensemble: Forged Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(232673, {	-- Ensemble: Forged Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(232674, {	-- Ensemble: Forged Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(232675, {	-- Ensemble: Forged Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(232676, {	-- Ensemble: Forged Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(232677, {	-- Ensemble: Forged Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(232678, {	-- Ensemble: Forged Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(232679, {	-- Ensemble: Forged Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(232680, {	-- Ensemble: Forged Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(219222, {	-- Lalandi <Conquest Quartermaster>
+				["coord"] = { 55.1, 76.2, DORNOGAL },
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(1, i(218650)),	-- Forged Gladiator's Chestguard
@@ -604,12 +682,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						conquest(875, i(218720)),	-- Forged Gladiator's Warglaive
 					}),
 					i(220378, {	-- Forged Equipment Chest
-						["timeline"] = { ADDED_11_0_5 },
+						["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0_SEASONSTART },
 					}),
-				},
+				}),
 			}),
-			o(456208, {	-- The Catalyst
-				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+			o(456208, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {	-- The Catalyst
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 8,	-- ItemBonus.Value_0 TWW:S1
@@ -759,10 +836,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					-- Elite catalyst gear is not obtainable this season
 				}),
-			}),
+			})),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 }, ["bonusID"] = 7532 }, {
-			n(CLASSES, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0, ADDED_12_0_1_LAUNCH }, ["bonusID"] = 7532 }, {
+			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
 				cl(DEATHKNIGHT, {
 					i(218650),	-- Forged Gladiator's Chestguard
 					i(218666),	-- Forged Gladiator's Cloak
@@ -906,10 +983,63 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					i(218690),	-- Forged Gladiator's Plate Warboots
 					i(218702),	-- Forged Gladiator's Plate Wristguards
 				}),
+			})),
+			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
+				["coord"] = { 59.8, 69.3, DORNOGAL },
+				["groups"] = sharedData({
+					["cost"] = { { "i", MOH, 12 } },
+					["u"] = ELITE_PVP_REQUIREMENT,
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				}, {
+					iensemble(232866, {	-- Arsenal: Elite Forged Gladiator's Weapons
+						["cost"] = { { "i", MOH, 80 } },
+					}),
+					iensemble(232681, {	-- Ensemble: Elite Forged Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(232682, {	-- Ensemble: Elite Forged Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(232683, {	-- Ensemble: Elite Forged Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(232684, {	-- Ensemble: Elite Forged Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(232685, {	-- Ensemble: Elite Forged Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(232686, {	-- Ensemble: Elite Forged Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(232687, {	-- Ensemble: Elite Forged Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(232688, {	-- Ensemble: Elite Forged Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(232689, {	-- Ensemble: Elite Forged Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(232690, {	-- Ensemble: Elite Forged Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(232691, {	-- Ensemble: Elite Forged Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(232692, {	-- Ensemble: Elite Forged Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(232693, {	-- Ensemble: Elite Forged Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
 			}),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
-				["groups"] = {
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+				},FILTERFUNC_itemID,{
 					honor(100, i(223616, {	-- Forged Gladiator's Tabard
 						["sourceAchievements"] = { 40392 },	-- Elite: The War Within Season 1
 					})),
@@ -930,7 +1060,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					moh(10, i(225861)),	-- Forged Gladiator's Staff
 					moh(5, i(225859)),	-- Forged Gladiator's Warglaive
 					moh(5, i(225874)),	-- Forged Gladiator's Wither-Blade
-				},
+				}),
 			}),
 		})),
 		n(REWARDS, {

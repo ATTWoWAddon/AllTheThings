@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(VENDORS, {
@@ -11,7 +12,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(190644, {	-- Vessel of Profound Possibilities (CI!)
 							["sourceAchievement"] = 14834,	-- Bound with Purpose
 							["timeline"] = { ADDED_9_2_0 },
-							["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
+							["cost"] = { { "c", 2009, 10000 } },	-- 10,000 Cosmic Flux
 							["sym"] = {
 								{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
 								{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -50,7 +51,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(184410),	-- Aspirant's Stretcher (TOY!)
 						i(184734),	-- Bracers of Regret
 						i(180857, {	-- Goldenpaw Kit (PET!)
-							["cost"] = {{ "i", POLISHED_PET_CHARM, 250 }},
+							["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 						}),
 						i(184732),	-- Manacles of Burden
 						i(183243, {	-- Memory of the Arbiter's Judgment
@@ -71,14 +72,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 			}),
-			n(175574, {	-- Angler Danica
-				i(180136),	-- The Brokers Angle'r
+			n(175574, {	-- Angler Danica <Fishing Supplies>
+				["coord"] = { 49.6, 63.2, BASTION },
+				["groups"] = { i(180136) },	-- The Brokers Angle'r
 			}),
 			n(171526, {	-- Kobri <Refreshments>
 				["coord"] = { 52.6, 47.4, BASTION },
-				["groups"] = {
-					i(180788),	-- Memorial Wine
-				},
+				["groups"] = { i(180788) },	-- Memorial Wine
 			}),
 			n(158625, {	-- Trader Ta'bix
 				["coord"] = { 33.4, 36.4, BASTION },

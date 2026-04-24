@@ -265,7 +265,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(161153, {	-- Long Forgotten Rum
-			-- ["provider"] = { "n", 140055 },	-- First Mate Grogtok -- Why is this here...
+			-- ["provider"] = { "n", 140055 },	-- First Mate Grogtok	-- Why is this here...
 			["crs"] = {
 				137040,	-- Linda Deepwater
 			},

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	inst(1268, {	-- The Rookery
 		["coord"] = { 32.2, 34.6, DORNOGAL },
@@ -68,6 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 207207 },	-- Voidstone Monstrosity
 					["groups"] = {
 						ach(40642),	-- Mythic: The Rookery
+						ach(61601, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: The Rookery Guild Run
 					},
 				}),
 			})),

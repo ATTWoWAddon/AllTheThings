@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		n(QUESTS, {
@@ -52,12 +53,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					q(60156, {	-- The Path to Bastion
 						["sourceQuests"] = { 60154 },	-- Understanding the Shadowlands
 						["provider"] = { "n", 175829 },	-- Overseer Kah-Sher
-						["coord"] = { 50.5, 62.0, 1671 },	-- Ring of Transference
+						["coord"] = { 50.5, 62.0, ORIBOS_RING },
 					}),
 					q(59773, {	-- Seek the Ascended
 						["sourceQuests"] = { 60156 },	-- The Path to Bastion
 						["provider"] = { "n", 175133 },	-- Pathscribe Roh-Avonavi
-						["coord"] = { 64.3, 49.7, 1671 },
+						["coord"] = { 64.3, 49.7, ORIBOS_RING },
 					}),
 				},
 			}),
@@ -628,7 +629,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["timeline"] = { ADDED_9_1_5 },
 				["lockCriteria"] = { 1, "lvl", 60 },
 				["isDaily"] = true,
-				--  "able to acquire this quest after skipping the campaign on my fresh level 10"
+				-- "able to acquire this quest after skipping the campaign on my fresh level 10"
 			}),
 			------ Oribos Return Quests ------
 			------ Ardenweald ------
@@ -936,8 +937,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 		})),
+		n(HIDDEN_QUESTS, {
+			hqt(66316, {	-- Stay awhile and listen with Bolvar (spellID )
+				["timeline"] = {ADDED_9_2_5},
+				["name"] = "Stay awhile and listen: Bolvar Fordragon",
+				-- ["sourceQuest"] = xxx,
+				["provider"] = { "n", 164079 },	-- Bolvar Fordragon
+				["coord"] = { 40.0, 65.3, ORIBOS },
+			}),
+			hqt(65618, {	-- Stay awhile and listen with Bolvar & Darion Mograine (9.2.0) (spellID 367008)
+				["timeline"] = {ADDED_9_2_0},
+				["name"] = "Stay awhile and listen: Bolvar Fordragon & Darion Mograine",
+				-- ["sourceQuest"] = xxx,
+				["provider"] = { "n", 184094 },	-- Bolvar Fordragon
+				["coord"] = { 44.6, 33.4, ORIBOS_RING },
+			}),
+		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(ORIBOS, {
@@ -958,12 +976,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				------ Stay awhile and listen ------ (TODO upgrade to proper HQT in Oribos)
 				hqt(65511, {	-- Stay awhile and listen with Vareesa Windrunner (spellID 366650)
 					["timeline"] = {ADDED_9_2_0},
-				}),
-				hqt(65618, {	-- Stay awhile and listen with Bolvar (9.2.0) (spellID 367008)
-					["timeline"] = {ADDED_9_2_0},
-				}),
-				hqt(66316, {	-- Stay awhile and listen with Bolvar (9.2.5)
-					["timeline"] = {ADDED_9_2_5},
 				}),
 				hqt(66313, {	-- Stay awhile and listen with Proundmoore
 					["timeline"] = {ADDED_9_2_5},

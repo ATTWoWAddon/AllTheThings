@@ -1,12 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- Currently all covenant assault quests show up in /attwq.
 -- Because each 'world quest' is used as a header, this makes the entirety of possible covenant assault contents show up in /attwq.
 -- This is good AND bad, in the sense that it shows you "hey, there is stuff you are missing here" but it's not necessarily clear that we do not know whether or not the stuff is up.
 -- You can't see which quests are available in the assault until after you start it, which means there's no way to get the actually active assault quests *only* to show up in /attwq.
 -- The choice is basically "show everything" or "show only that the assault is up and no other information." My preference is to show everything.
 -- Perhaps a compromise would be to add a description on each header explaining this but my brain is not functional enough atm to figure out what that description should say.
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(THE_MAW, {
 		n(COVENANT_ASSAULTS, {
@@ -647,8 +649,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					header(HEADERS.Spell, 354778, {	-- The Rift
 						["description"] = "The things in this section are only accessible when you are in the Rift, a version of the Maw populated by shades.\n\nIn Korthia, this phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r. To get there in the Maw, you can either walk to the Maw after entering a |cFFFFFFFFMaw Rift|r in Korthia, or use the |cFFFFFFFFUnbalanced Riftstone|r from the Night Fae covenant assault quest |cFF349cffA Shady Place|r.",
 						["cost"] = {
-							{"i",186969,1},	-- Collapsing Riftstone
-							{"i",186731,1},	-- Repaired Riftkey
+							{ "i", 186969, 1 },	-- Collapsing Riftstone
+							{ "i", 186731, 1 },	-- Repaired Riftkey
 						},
 						["groups"] = {
 							n(ACHIEVEMENTS, {
@@ -847,7 +849,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									-- ["coord"] = { 31.0, 13.2, THE_MAW },
 									-- ["groups"] = {
 									-- 	i(186969, {	-- Collapsing Riftstone
-									-- 		["cost"] = {{"c",1767,100}},	-- 100 Stygia
+									-- 		["cost"] = { { "c", 1767, 100 } },	-- 100 Stygia
 									-- 	}),
 									-- },
 								}),
@@ -919,6 +921,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {

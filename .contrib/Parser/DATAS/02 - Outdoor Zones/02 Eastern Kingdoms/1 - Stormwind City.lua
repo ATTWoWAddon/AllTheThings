@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local JEWELCRAFTING_AWARD_GROUPS = {
 	currency(361),	-- Illustrious Jewelcrafter's Token
 };
@@ -99,14 +100,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			petbattles({
-				n(63596, {	-- Audrey Burnheap <Battle Pet Tamer>
+				n(63596, {	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["description"] =
 						-- #if BEFORE 9.0.3
-						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
+						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The initial quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quests might not be given until the daily reset.",
 						-- #else
-						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
+						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The initial quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until the daily reset.",
 						-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -120,65 +121,50 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
 				q(32008, {	-- Audrey Burnhep
 					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31878, {	-- Audrey Burnhep
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31879, {	-- Audrey Burnhep
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31880, {	-- Audrey Burnhep
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31881, {	-- Audrey Burnhep
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31966, {	-- Battle Pet Tamers: Cataclysm (A)
 					["sourceQuest"] = 31984,	-- A Brief Reprieve (A)
 					-- ["altQuests"] = { 31967 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { MOUNT_HYJAL, DEEPHOLM, TWILIGHT_HIGHLANDS },
@@ -202,7 +188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms (A)
 					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
 					-- ["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["maps"] = { THE_HINTERLANDS, EASTERN_PLAGUELANDS, SEARING_GORGE, SWAMP_OF_SORROWS, BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
@@ -233,7 +219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31889, {	-- Battle Pet Tamers: Kalimdor (A)
 					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
 					-- ["altQuests"] = { 31891 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { FERALAS, DUSTWALLOW_MARSH, THOUSAND_NEEDLES, FELWOOD, MOONGLADE },
@@ -265,7 +251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31927, {	-- Battle Pet Tamers: Northrend (A)
 					["sourceQuest"] = 31981,	-- Exceeding Expectations (A)
 					-- ["altQuests"] = { 31929 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HOWLING_FJORD, CRYSTALSONG_FOREST, DRAGONBLIGHT, ZULDRAK },
@@ -296,7 +282,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						31976,	-- The Returning Champion (A)
 					},
 					-- ["altQuests"] = { 31921 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HELLFIRE_PENINSULA, ZANGARMARSH, NAGRAND, SHATTRATH_CITY },
@@ -324,7 +310,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31930, {	-- Battle Pet Tamers: Pandaria (A)
 					["sourceQuest"] = 31985,	-- The Triumphant Return (A)
 					-- ["altQuests"] = { 31952 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { THE_JADE_FOREST, VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, KUN_LAI_SUMMIT, TOWNLONG_STEPPES, DREAD_WASTES },
@@ -366,7 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(31316, {	-- Julia, The Pet Tamer
 					["sourceQuests"] = { 32008, 31878, 31879, 31880, 31881 },	-- Audrey Burnhep (all breadcrumbs)
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { ELWYNN_FOREST },
@@ -417,13 +403,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ALCHEMY,
-							-- #if AFTER CATA
-							CATA_ALCHEMY
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ALCHEMY,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -436,13 +416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_BLACKSMITHING,
-							-- #if AFTER CATA
-							CATA_BLACKSMITHING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_BLACKSMITHING,
 					}),
 				}),
 				prof(COOKING, {
@@ -457,13 +431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_COOKING,
-							-- #if AFTER CATA
-							CATA_COOKING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_COOKING,
 					})),
 				}),
 				prof(ENCHANTING, {
@@ -476,13 +444,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ENCHANTING,
-							-- #if AFTER CATA
-							CATA_ENCHANTING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ENCHANTING,
 					}),
 				}),
 				prof(ENGINEERING, {
@@ -497,26 +459,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_ENGINEERING,
-							-- #if AFTER CATA
-							CATA_ENGINEERING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_ENGINEERING,
 					}),
 				}),
 				prof(FIRST_AID, {
 					n(56796, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 } }, {	-- Angela Leifeld <Bandage Trainer>
 						["coord"] = { 52.2, 45.4, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FIRST_AID,
-							-- #if AFTER CATA
-							CATA_FIRST_AID
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FIRST_AID,
 					})),
 					n(2327, bubbleDownSelf({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- Shaina Fuller <First Aid Trainer>
 						["coords"] = {
@@ -527,13 +477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FIRST_AID,
-							-- #if AFTER CATA
-							CATA_FIRST_AID
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FIRST_AID,
 					})),
 				}),
 				prof(FISHING, {
@@ -546,48 +490,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_FISHING,
-							-- #if AFTER CATA
-							CATA_FISHING
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_FISHING,
 					}),
 					i(34864, {	-- Baby Crocolisk
 						["timeline"] = { ADDED_2_4_0 },
-					}),
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							26488,	-- Big Gulp
-							26420,	-- Diggin' For Worms
-							26414,	-- Hitting a Walleye
-							26442,	-- Rock Lobster
-							26536,	-- Thunder Falls
-						},
-						["provider"] = { "n", 5494 },	-- Catherine Leland
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { ADDED_2_4_0 },
-							}),
-							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-						},
 					}),
 				}),
 				prof(HERBALISM, {
@@ -602,13 +508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_HERBALISM,
-							-- #if AFTER CATA
-							CATA_HERBALISM
-							-- #else
-							{}
-							-- #endif
-						),
+						["groups"] = CLASSIC_CATA_HERBALISM,
 					}),
 				}),
 				-- #if AFTER WRATH
@@ -623,12 +523,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						["timeline"] = { ADDED_3_0_2 },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(
-							WRATH_INSCRIPTION,
-							-- #if AFTER CATA
-							CATA_INSCRIPTION,
-							-- #endif
-							{
+						["groups"] = appendGroups(CLASSIC_WRATH_CATA_INSCRIPTION, {
 							i(140566, {	-- Technique: Songs of the Alliance (RECIPE!)
 								["timeline"] = { ADDED_7_0_3 },
 							}),
@@ -644,7 +539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = appendGroups(COMMON_CATACLYSM_EPIC_JEWELCRAFTING_RECIPES, {
 							i(71949, {	-- Tome of Burning Jewels
-								["cost"] = {{"c", 361, 4}},	-- 4x Illustrious Jewelcrafter's Token
+								["cost"] = { { "c", 361, 4 } },	-- 4x Illustrious Jewelcrafter's Token
 								["filterID"] = CONSUMABLES,
 								["sym"] = {
 									{"select","npcID",56925},{"pop"},	-- this NPC
@@ -722,6 +617,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{}
 							-- #endif
 						),
+					}),
+				}),
+				prof(SKINNING, {
+					n(1292, {	-- Maris Granger <Skinning Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 72.6, 62.0, STORMWIND_CITY },
+							-- #else
+							{ 67.8, 49.0, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = CLASSIC_CATA_SKINNING,
 					}),
 				}),
 				prof(TAILORING, {
@@ -982,7 +890,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   5492 },	-- Katherine the Pure <Paladin Trainer>
 						{ "i", 209748 },	-- Althalaxx Orb
 					},
-					["coord"] = { 37.4, 32, STORMWIND_CITY },
+					["coord"] = { 37.4, 32.0, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 				})),
@@ -1025,7 +933,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5480,	-- Ilsa Corbin <Warrior Trainer>
 					},
 					["coords"] = {
-						{ 41, 65.8, ELWYNN_FOREST },
+						{ 41.0, 65.8, ELWYNN_FOREST },
 						-- #if AFTER WRATH
 						{ 80.4, 59.8, STORMWIND_CITY },
 						-- #else
@@ -1101,7 +1009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 57.7, 47.9, STORMWIND_CITY },
 						-- #else
-						{ 49, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1112,13 +1020,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
-				}),
-				q(30989, {	-- An Old Pit Fighter
-					["sourceQuest"] = 30988,	-- The Alliance Way
-					["qg"] = 61796,	-- King Varian Wrynn
-					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
 				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["description"] = "This quest is automatically offered.",
@@ -1149,7 +1050,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(7645, {	-- Ancient Equine Spirit
 							["qg"] = 2357,	-- Merideth Carlson <Horse Breeder>
-							["coord"] = { 52, 55.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 52.0, 55.6, HILLSBRAD_FOOTHILLS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
 								{ "i", 13724, 20 },	-- Enriched Manna Biscuit
@@ -1254,7 +1155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 77.1, 53.3, STORMWIND_CITY },
 						-- #else
-						{ 74, 37.2, STORMWIND_CITY },
+						{ 74.0, 37.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1265,7 +1166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1665, {	-- Bartleby's Mug
 					["sourceQuest"] = 1640,	-- Beat Bartleby
 					["altQuests"] = {
-						--1665,	-- Bartleby's Mug
+						-- 1665,	-- Bartleby's Mug
 						-- #if AFTER TBC
 						9582,	-- Strength of One
 						-- #endif
@@ -1290,7 +1191,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE CATA
 					["groups"] = {
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 					},
 					-- #endif
@@ -1494,7 +1395,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								898,	-- Nightbane Worgen
 							},
 						}),
-						objective(1, {	-- 0/1 Burning Rock
+						objective(2, {	-- 0/1 Burning Rock
 							["provider"] = { "i", 6845 },	-- Burning Rock
 							["coord"] = { 74.2, 77.8, DUSKWOOD },
 							["cr"] = 6170,	-- Gutspill
@@ -2054,7 +1955,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 7249 },	-- Charged Rift Gem
 								{ "o", 271 },	-- Miners' League Crates
 							},
-							["coord"] = { 35, 27, LOCH_MODAN },
+							["coord"] = { 35.0, 27.0, LOCH_MODAN },
 						}),
 					},
 				}),
@@ -2064,6 +1965,60 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(3630, {	-- Gnome Engineering [A]
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						-- 3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+						-- #if AFTER CATA
+						29475,	-- Goblin Engineering
+						29477,	-- Gnomish Engineering
+						-- #endif
+					},
+					["providers"] = {
+						{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["lvl"] = 30,
+				}),
+				q(3629, {	-- Goblin Engineering [A]
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						-- 3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+						-- #if AFTER CATA
+						29475,	-- Goblin Engineering
+						29477,	-- Gnomish Engineering
+						-- #endif
+					},
+					["providers"] = {
+						{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["lvl"] = 30,
 				}),
 				q(39800, {	-- Greymane's Gambit
 					["sourceQuest"] = 38206,	-- Making the Rounds
@@ -2238,7 +2193,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 57.7, 47.9, STORMWIND_CITY },
 						-- #else
-						{ 49, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2347,7 +2302,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER WRATH
 								{ 51.0, 95.0, STORMWIND_CITY },
 								-- #else
-								{ 39.4, 86, STORMWIND_CITY },
+								{ 39.4, 86.0, STORMWIND_CITY },
 								-- #endif
 							},
 							["cr"] = 6492,	-- Rift Spawn
@@ -2428,7 +2383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   8683 },	-- Clara's Fresh Apple
 								{ "o", 142076 },	-- Clara's Fresh Apples
 							},
-							["coord"] = { 34, 57.2, ELWYNN_FOREST },
+							["coord"] = { 34.0, 57.2, ELWYNN_FOREST },
 						}),
 					},
 				}),
@@ -2603,7 +2558,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 77.1, 53.3, STORMWIND_CITY },
 						-- #else
-						{ 74, 37.2, STORMWIND_CITY },
+						{ 74.0, 37.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2665,7 +2620,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 51.4, 73.8, STORMWIND_CITY },
 						-- #else
-						{ 40.8, 64, STORMWIND_CITY },
+						{ 40.8, 64.0, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2713,7 +2668,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 7206 },	-- Mirror Lake Water Sample
 								{ "i", 7207 },	-- Jennea's Flask
 							},
-							["coord"] = { 28, 62, ELWYNN_FOREST },
+							["coord"] = { 28.0, 62.0, ELWYNN_FOREST },
 						}),
 						i(7508, {	-- Ley Orb
 							-- #if AFTER 4.0.3
@@ -2974,7 +2929,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(175151),	-- Fearbreaker (QI!)
+						o(344604, {	-- Fearbreaker
+							["coord"] = { 87.6, 35.1, STORMWIND_CITY },
+							["groups"] = { i(175151) },	-- Fearbreaker (QI!)
+						}),
 					},
 				}),
 				q(26396, {	-- Return to Argus
@@ -3135,7 +3093,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 57.7, 47.9, STORMWIND_CITY },
 						-- #else
-						{ 49, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3145,7 +3103,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(79077, {	-- Sharing the Faith
 					["qg"] = 1212,	-- Bishop Farthing
-					["coord"] = { 39.2, 28, STORMWIND_CITY },
+					["coord"] = { 39.2, 28.0, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ELWYNN_FOREST },
 					["classes"] = { PRIEST },
@@ -3205,14 +3163,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					icon = 131038,
 					text = {
 						en = "Speak to Brother Romulus",
-						es = "Habla con el Hermano Romulus",
 						de = "Sprich mit Bruder Romulus",
+						es = "Habla con el Hermano Romulus",
+						mx = "Habla con el Hermano Romulus",
 						fr = "Parlez à Frère Romulus",
 						it = "Parla con Fratello Romulus",
+						ko = "로물루스 형제와 대화하세요",
 						pt = "Fale com o Irmão Romulus",
 						ru = "Поговорите с Брат Ромул",
-						ko = "로물루스 형제와 대화하세요",
 						cn = "与罗穆卢斯修士交谈",
+						-- TODO: tw = "",
 					},
 				}), {
 					["questID"] = 75939,	-- Brother Romulus HQT
@@ -3307,13 +3267,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(30988, {	-- The Alliance Way
-					["sourceQuest"] = 30987,	-- Joining the Alliance
-					["qg"] = 61796,	-- King Varian Wrynn
-					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
-				}),
 				q(434, {	-- The Attack!
 					["sourceQuest"] = 2746,	-- Items of Some Consequence
 					["qg"] = 7766,	-- Tyrion
@@ -3338,7 +3291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(42740, {	-- The Battle for Broken Shore
 					["sourceQuest"] = 42782,	-- To Be Prepared
-				--	["altQuests"] = { 43806 },	-- Scenario Skip (A)
+					-- ["altQuests"] = { 43806 },	-- Scenario Skip (A)
 					["qg"] = 108916,	-- Knight Dameron
 					["coord"] = { 19.0, 26.1, STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
@@ -3358,7 +3311,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(138766),	-- Stormwind Vanguard Stave
 						i(138764),	-- Stormwind Vanguard Waraxe
 						o(240215, {	-- Ashes of a Fallen Crusader
-							["coord"] = { 42, 42, BROKEN_ISLES},
+							["coord"] = { 42.0, 42.0, BROKEN_ISLES},
 							["groups"] = {
 								i(139389, {	-- Charred Locket
 									["description"] = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item. You will then go to 85, 69 in Elywnn Forest located at the Eastvale Logging Camp. From there you will go to the bedroom on the second floor to talk to Alaina. After talking to her leave (log or swap zones) and then come back to her to retrieve the item.",
@@ -3479,7 +3432,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 51.6, 69.4, STORMWIND_CITY },
 						-- #else
-						{ 41.2, 58, STORMWIND_CITY },
+						{ 41.2, 58.0, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3755,7 +3708,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84418, {	-- The Missing Knight
 					["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
-					["coord"] = { 37.4, 32, STORMWIND_CITY },
+					["coord"] = { 37.4, 32.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -3772,7 +3725,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(46728, {	-- The Nation of Kul Tiras
 					["sourceQuest"] = 46727,	-- Battle for Azeroth: Tides of War (BfA version)
 					["qg"] = 120756,	-- Anduin Wyrnn
-					["coord"] = { 85.0, 32.4, STORMWIND_CITY },
+					["coords"] = {
+						{ 80.4, 33.4, STORMWIND_CITY },
+						{ 85.0, 32.4, STORMWIND_CITY },
+					},
 					["timeline"] = { ADDED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3839,7 +3795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #elseif AFTER WRATH
 						{ 76.9, 47.8, STORMWIND_CITY },
 						-- #else
-						{ 74, 30, STORMWIND_CITY },
+						{ 74.0, 30.0, STORMWIND_CITY },
 						-- #endif
 					},
 					["maps"] = {
@@ -3881,7 +3837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1787,	-- The Tome of Divinity (8)
 					},
 					["qg"] = 927,	-- Brother Wilhelm
-					["coord"] = { 41, 66, ELWYNN_FOREST },
+					["coord"] = { 41.0, 66.0, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
@@ -3958,7 +3914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 63.8, 72.2, STORMWIND_CITY },
 						-- #else
-						{ 57, 61.8, STORMWIND_CITY },
+						{ 57.0, 61.8, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3974,7 +3930,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 63.8, 72.2, STORMWIND_CITY },
 						-- #else
-						{ 57, 61.8, STORMWIND_CITY },
+						{ 57.0, 61.8, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4066,7 +4022,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					-- #if BEFORE 4.0.1
 					["groups"] = {
-						--recipe(7328),	-- Redemption [Rank 1]
+						-- recipe(7328),	-- Redemption [Rank 1]
 					},
 					-- #endif
 				}),
@@ -4359,7 +4315,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 11406 },	-- High Priest Rohan <Priest Trainer>
 						{ "i", 18819 },	-- Rohan's Exorcism Censer
 					},
-					["coord"] = { 25, 8.2, IRONFORGE },
+					["coord"] = { 25.0, 8.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -4462,21 +4418,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									readable = "Archaeologist's Cart",
 									text = {
 										en = "Archaeologist's Cart",
-										-- TODO: Find the proper translation so it appears on the tooltip.
-										-- es = "",
-										-- de = "",
-										-- fr = "",
-										-- it = "",
-										-- pt = "",
-										-- ru = "",
-										-- ko = "",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
 										cn = "考古学家的车",
-										-- tw = "",
+										tw = "考古學家的推車",
 									},
 								}) },
 							},
-							["coord"] = { 26, 22, ASHENVALE },
-							["cost"] = {{ "i", 190308, 1 }},	-- Burning Torch
+							["coord"] = { 26.0, 22.0, ASHENVALE },
+							["cost"] = { { "i", 190308, 1 } },	-- Burning Torch
 						}),
 						i(190308, {	-- 0/1 Burning Torch
 							["description"] = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
@@ -4488,20 +4444,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									icon = 135434,
 									text = {
 										en = "Unlit Torch",
-										es = "Antorcha apagada",
 										de = "Nicht angezündete Fackel",
+										es = "Antorcha apagada",
+										-- TODO: mx = "",
 										fr = "Torche éteinte",
 										it = "Unlit Torch",
+										ko = "불을 붙이지 않은 횃불",
 										pt = "Tocha Apagada",
 										ru = "Незажженный факел",
-										ko = "불을 붙이지 않은 횃불",
 										cn = "未点燃的火把",
+										-- TODO: tw = "",
 									},
 								}) },
 							},
 							["coords"] = {
 								{ 26.79, 22.42, ASHENVALE },
-								{ 15, 31, ASHENVALE },
+								{ 15.0, 31.0, ASHENVALE },
 							},
 						}),
 					},
@@ -4633,7 +4591,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
-					--["provider"] = { "o",  },	-- Summoning Circle
+					-- ["provider"] = { "o",  },	-- Summoning Circle
 					["coord"] = { 25.8, 76.2, STORMWIND_CITY },
 					["cost"] = {
 						{ "i", 204905, 1 },	-- Ominous Tome
@@ -5102,85 +5060,75 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(248797, {	-- City Wanderer's Candleholder (DECOR!)
-								["sourceQuest"] = 26229,	-- "I TAKE Candle!"
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 500000 }},	-- 50g
+								["cost"] = { { "g", 500000 } },	-- 50g
 							}),
 							i(253168, {	-- Earthen Storage Crate (DECOR!)
-								["sourceQuest"] = 92572,	-- Furniture Favor
 								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248794, {	-- Elwynn Fence (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 500000 }},	-- 50g
+								["cost"] = { { "g", 500000 } },	-- 50g
 							}),
 							i(248795, {	-- Elwynn Fencepost (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 950000 }},	-- 95g
+								["cost"] = { { "g", 950000 } },	-- 95g
 							}),
 							i(248938, {	-- Hooded Iron Lantern (DECOR!)
-								["sourceQuest"] = 60,	-- Kobold Candles
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1900000 }},	-- 190g
+								["cost"] = { { "g", 1900000 } },	-- 190g
 							}),
 							i(248662, {	-- Jewelcrafter's Tent (DECOR!)
-								["sourceQuest"] = 543,	-- The Perenolde Tiara
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 5000000 }},	-- 500g
+								["cost"] = { { "g", 5000000 } },	-- 500g
 							}),
 							i(248798, {	-- Northshire Barrel (DECOR!)
-								["sourceQuest"] = 54,	-- Report to Goldshire
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 2550000 }},	-- 255g
+								["cost"] = { { "g", 2550000 } },	-- 255g
 							}),
 							i(248621, {	-- Stormwind Arched Trellis (DECOR!)
-								["sourceQuest"] = 26390,	-- Ending the Invasion!
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 3800000 }},	-- 380g
+								["cost"] = { { "g", 3800000 } },	-- 380g
 							}),
 							i(256673, {	-- Stormwind Forge (DECOR!)
-								["sourceQuest"] = 7604,	-- A Binding Contract
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 10000000 }},	-- 1000g
+								["cost"] = { { "g", 10000000 } },	-- 1000g
 							}),
 							i(45574, {	-- Stormwind Tabard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(248801, {	-- Stormwind Weapon Rack (DECOR!)
-								["sourceQuest"] = 26297,	-- The Dawning of a New Day
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1000000 }},	-- 100g
+								["cost"] = { { "g", 1000000 } },	-- 100g
 							}),
 							i(248336, {	-- Stormwind Wooden Table (DECOR!)
-								["sourceQuest"] = 59583,	-- Welcome to Stormwind
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 3800000 }},	-- 380g
+								["cost"] = { { "g", 3800000 } },	-- 380g
 							}),
 							i(248618, {	-- Westfall Woven Basket (DECOR!)
-								["sourceQuest"] = 26270,	-- You Have Our Thanks
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 2550000 }},	-- 255g
+								["cost"] = { { "g", 2550000 } },	-- 255g
 							}),
 						}, {	-- Honored
 							i(248939, {	-- Stormwind Lamppost (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1300000 }},	-- 130g
+								["cost"] = { { "g", 1300000 } },	-- 130g
 							}),
 							i(248333, {	-- Stormwind Large Wooden Table (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1300000 }},	-- 130g
+								["cost"] = { { "g", 1300000 } },	-- 130g
 							}),
 						}, {	-- Revered
 							i(248617, {	-- Stormwind Keg Stand (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1900000 }},	-- 190g
+								["cost"] = { { "g", 1900000 } },	-- 190g
 							}),
 							i(67531, {	-- Stormwind Satchel
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(248620, {	-- Stormwind Trellis and Basin (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1900000 }},	-- 190g
+								["cost"] = { { "g", 1900000 } },	-- 190g
 							}),
 						}, {	-- Exalted
 							i(64902, {	-- Cape of Stormwind
@@ -5194,11 +5142,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							i(248619, {	-- Stormwind Gazebo (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 3150000 }},	-- 315g
+								["cost"] = { { "g", 3150000 } },	-- 315g
 							}),
 							i(248665, {	-- Stormwind Peddler's Cart (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 3150000 }},	-- 315g
+								["cost"] = { { "g", 3150000 } },	-- 315g
 							}),
 						},
 					}),
@@ -5475,6 +5423,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { ADDED_4_1_0 },
 						})),
+						i(44481),	-- Grindgear Toy Gorilla
+						i(44601),	-- Heavy Copper Racer
+						i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
+						i(44482),	-- Trusty Copper Racer (3.0.2.8970)
+						i(44599),	-- Zippy Copper Racer
 					},
 				}),
 				n(133411, {	-- Dalia Skyblossom <Cooking Trainer>
@@ -5778,7 +5731,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
-							["cost"] = {{ "i", 205183, 1 }},	-- Fel-Powered Artifact
+							["cost"] = { { "i", 205183, 1 } },	-- Fel-Powered Artifact
 							["classes"] = { WARLOCK },
 							["groups"] = {
 								recipe(416009),	-- Engrave Chest - Demonic Tactics
@@ -5787,7 +5740,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				n(164947, { -- Gerald Black <Shady Dealer>
+				n(164947, {	-- Gerald Black <Shady Dealer>
 					["coord"] = { 78.8, 70.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -5978,7 +5931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(67312, {	-- Formula: Magic Lamp (RECIPE!)
 							["timeline"] = { ADDED_4_0_3 },
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+							["cost"] = { { "i", 52555, 20 } },	-- 20x Hypnotic Dust
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
@@ -6405,7 +6358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #if NOT ANYCLASSIC
 				-- Crieve NOTE: This NPC ID wasn't used for TBC Classic, so not sure how this was actually used.
-				n(23446, {	-- Lieutenant Tristia -- BC Vendor for Trinkets
+				n(23446, {	-- Lieutenant Tristia	-- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
 					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -6640,6 +6593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13897),	-- White Traditional Hanbok
 					},
 				}),
+				-- #if BEFORE TWW
 				-- #if AFTER 8.0.1
 				n(50307, {	-- Lord Candren <Gilneas Quartermaster>
 					["description"] = "Appears in Stormwind after War of Thorns.",
@@ -6647,28 +6601,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = bubbleDownClassicRep(FACTION_GILNEAS, {
 						{		-- Neutral
-							i(245620, {	-- Little Wolf's Loo (DECOR!)
-								["sourceQuest"] = 14402,	-- Ready to Go
-								["cost"] = 4500000,	-- 450g
-							}),
-							i(245518, {	-- Worgen's Chicken Coop (DECOR!)
-								["sourceQuest"] = 24675,	-- Last Meal
-								["cost"] = 1500000,	-- 150g
-							}),
 						}, {	-- Friendly
 							i(64882, {	-- Gilneas Tabard
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 						}, {	-- Honored
-							i(245605, {	-- Gilnean Stone Wall (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = 3000000,	-- 300g
-							}),
 						}, {	-- Revered
-							i(245603, {	-- Gilnean Noble's Trellis (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = 3500000,	-- 350g
-							}),
 							i(67532, {	-- Gilnean Satchel
 								["timeline"] = { ADDED_4_0_3 },
 							}),
@@ -6685,6 +6623,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				-- #endif
 				-- #endif
 				n(44246, {	-- Magatha Silverton <Justice Quartermaster>
 					["coords"] = {
@@ -7180,78 +7119,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
-						i(247757, {	-- Alliance Battlefield Banner (DECOR!)
-							["sourceAchievement"] = 158,	-- Me and the Cappin' Makin' It Happen
-							["cost"] = {{ "c", HONOR, 600 }},
-						}),
-						i(247744, {	-- Alliance Dueling Flag (DECOR!)
-							["sourceAchievement"] = 231,	-- Wrecking Ball
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247763, {	-- Berserker's Empowerment (DECOR!)
-							["sourceAchievement"] = 61683,	-- Entering Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247756, {	-- Challenger's Dueling Flag (DECOR!)
-							["sourceAchievement"] = 1157,	-- Duel-icious
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247769, {	-- Chaotic Empowerment (DECOR!)
-							["sourceAchievement"] = 61685,	-- Proficient in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247750, {	-- Deephaul Crystal (DECOR!)
-							["sourceAchievement"] = 40612,	-- Sprinting in the Ravine
-							["cost"] = {{ "c", HONOR, 2500 }},
-						}),
-						i(253170, {	-- Earthen Contender's Target (DECOR!)
-							["sourceAchievement"] = 40210,	-- Deephaul Ravine Victory
-							["cost"] = {{ "c", HONOR, 750 }},
-						}),
-						i(247758, {	-- Fortified Alliance Banner (DECOR!)
-							["sourceAchievement"] = 221,	-- Alterac Grave Robber
-							["cost"] = {{ "c", HONOR, 1200 }},
-						}),
-						i(247768, {	-- Guardian's Empowerment (DECOR!)
-							["sourceAchievement"] = 61684,	-- Progressing in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247765, {	-- Healer's Empowerment (DECOR!)
-							["sourceAchievement"] = 61687,	-- Champion in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247741, {	-- Kotmogu Orb of Power (DECOR!)
-							["sourceAchievement"] = 6981,	-- Master of Temple of Kotmogu
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247740, {	-- Kotmogu Pedestal (DECOR!)
-							["sourceAchievement"] = 6981,	-- Master of Temple of Kotmogu
-							["cost"] = {{ "c", HONOR, 2000 }},
-						}),
-						i(247770, {	-- Mysterious Empowerment (DECOR!)
-							["sourceAchievement"] = 61686,	-- Expert in Battle
-							["cost"] = {{ "i", 137642, 2 }},	-- 2x Mark of Honor
-						}),
-						i(247762, {	-- Netherstorm Battlefield Flag (DECOR!)
-							["sourceAchievement"] = 213,	-- Stormtrooper
-							["cost"] = {{ "c", HONOR, 300 }},
-						}),
-						i(247766, {	-- Runner's Empowerment (DECOR!)
-							["sourceAchievement"] = 61688,	-- Master in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247746, {	-- Silverwing Sentinels Flag (DECOR!)
-							["sourceAchievement"] = 200,	-- Persistent Defender
-							["cost"] = {{ "c", HONOR, 800 }},
-						}),
-						i(256896, {	-- Smoke Lamppost (DECOR!)
-							["sourceAchievement"] = 5245,	-- Battle for Gilneas Victory
-							["cost"] = {{ "c", HONOR, 450 }},
-						}),
-						i(247761, {	-- Uncontested Battlefield Banner (DECOR!)
-							["sourceAchievement"] = 212,	-- Storm Capper
-							["cost"] = {{ "c", HONOR, 400 }},
-						}),
+						-- Honor
+						honor(600, i(247757)),	-- Alliance Battlefield Banner (DECOR!)
+						honor(1000, i(247744)),	-- Alliance Dueling Flag (DECOR!)
+						honor(1000, i(247756)),	-- Challenger's Dueling Flag (DECOR!)
+						honor(2500, i(247750)),	-- Deephaul Crystal (DECOR!)
+						honor(750, i(253170)),	-- Earthen Contender's Target (DECOR!)
+						honor(1200, i(247758)),	-- Fortified Alliance Banner (DECOR!)
+						honor(1000, i(247741)),	-- Kotmogu Orb of Power (DECOR!)
+						honor(2000, i(247740)),	-- Kotmogu Pedestal (DECOR!)
+						honor(300, i(247762)),	-- Netherstorm Battlefield Flag (DECOR!)
+						honor(800, i(247746)),	-- Silverwing Sentinels Flag (DECOR!)
+						honor(450, i(256896)),	-- Smoke Lamppost (DECOR!)
+						honor(400, i(247761)),	-- Uncontested Battlefield Banner (DECOR!)
+						-- Mark of Honor
+						moh(5, i(247763)),	-- Berserker's Empowerment (DECOR!)
+						moh(5, i(247769)),	-- Chaotic Empowerment (DECOR!)
+						moh(5, i(247768)),	-- Guardian's Empowerment (DECOR!)
+						moh(5, i(247765)),	-- Healer's Empowerment (DECOR!)
+						moh(2, i(247770)),	-- Mysterious Empowerment (DECOR!)
+						moh(5, i(247766)),	-- Runner's Empowerment (DECOR!)
 					}),
 				}),
 				n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
@@ -7433,6 +7320,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(256071, {	-- Solelo <Traveling Book Shop>
+					["description"] = "Not all items are sold each day.",
+					["coord"] = { 49.4, 80.8, STORMWIND_CITY },
+					["timeline"] = { ADDED_11_2_7 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(239177, {	-- Open Tome of Twilight Nihilism (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246848, {	-- Scribe's Working Notes (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246847, {	-- Tome of Draenei Faith (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246860, {	-- Tome of Forsaken Resilience (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246845, {	-- Tome of Shadowforge Cunning (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(239179, {	-- Tome of Twilight Nihilism (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+					},
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, n(17804, {	-- Squire Rowe
 					["sourceQuest"] = 6502,	-- Drakefire Amulet
@@ -7536,8 +7449,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 69.4, 65.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_4_0_1 },
+					["groups"] = { i(33042) },	-- Black Coffee
+				}),
+				n(261231, {	-- Tuuran <Promotional Decor Resupply>
+					["coord"] = { 48.5, 58.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_12_0_0 },
 					["groups"] = {
-						i(33042),	-- Black Coffee
+						i(260785, {	-- Miniature Replica Dark Portal (DECOR!)
+							["cost"] = 14000000,	-- 1400g
+						}),
 					},
 				}),
 				n(1341, {	-- Wilhelm Strang <Mail Armor Merchant>

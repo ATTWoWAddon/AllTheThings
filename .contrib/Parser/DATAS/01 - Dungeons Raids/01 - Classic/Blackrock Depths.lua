@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 DETENTION_BLOCK = createHeader({
 	readable = "Detention Block",
 	icon = 236718,
@@ -15,7 +16,9 @@ SHADOWFORGE_CITY = createHeader({
 		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS2]],
 	},
 });
+
 local REPUTATION_FROM_CORES, REPUTATION_FROM_LEATHER, REPUTATION_FROM_DARKIRON = 500, 350, 75;	-- These are the reputation values after TBC, other than for Classic.
+
 -- #if BEFORE TBC
 -- Reputation in Classic
 REPUTATION_FROM_CORES = 200;
@@ -32,6 +35,7 @@ REPUTATION_FROM_DARKIRON = 300;
 -- #endif
 -- #endif
 -- #endif
+
 ExportDB.OnTooltipDB.ThoriumBrotherhood = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -41,6 +45,7 @@ ExportDB.OnTooltipDB.ThoriumBrotherhood = [[~function(t, tooltipInfo)
 		addRepInfo(tooltipInfo, reputation, "Turn In Dark Iron Ore (10x each)",]] .. REPUTATION_FROM_DARKIRON .. [[, 42000);
 	end
 end]];
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(228, {	-- Blackrock Depths
 		-- #if BEFORE MOP
@@ -62,13 +67,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84338, {	-- A Binding Contract
-					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
-					["providers"] = {
-						{ "n",  12944 },	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
-						{ "i", 227730 },	-- Thorium Brotherhood Contract
-					},
+					["provider"] = { "i", 227730 },	-- Thorium Brotherhood Contract
 					["timeline"] = { ADDED_1_15_3 },
-					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
 					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 60,
 					["groups"] = {
@@ -77,16 +77,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				q(7604, {	-- A Binding Contract
-					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
-					["providers"] = {
-						{ "n", 12944 },	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
-						{ "i", 18628 },	-- Thorium Brotherhood Contract
-					},
+					["provider"] = { "i", 18628 },	-- Thorium Brotherhood Contract
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
-					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
-					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = lvlsquish(60, 60, 20),
 					["groups"] = {
 						i(18592, {	-- Plans: Sulfuron Hammer (RECIPE!)
@@ -627,7 +621,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						{ 22.6, 15.0, THUNDER_BLUFF },	-- Archmage Shymm
-						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven
+						{ 59.2, 19.7, SILVERMOON_CITY },	-- Inethven
 						{ 85.2, 14.2, UNDERCITY },	-- Kaelystia Hatebringer
 					},
 					["timeline"] = { ADDED_4_0_3 },
@@ -700,11 +694,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						43881,	-- Delano Morisett
 						4563,	-- Kaal Soulreaper
 						16648,	-- Zanien
+						-- #if AFTER MID
+						241482,	-- Zanien Silvermoon <Warlock Trainer>
+						-- #endif
 					},
 					["coords"] = {
 						{ 25.2, 14.4, THUNDER_BLUFF },	-- Delano Morisett
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien
 						{ 86.0, 15.6, UNDERCITY },	-- Kaal Soulreaper
+						-- #if AFTER MID
+						{ 50.9, 61.0, MAP.MIDNIGHT.SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+						-- #endif
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
@@ -1394,7 +1394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						objective(2, {	-- 0/10 Giant Silver Vein
 							["provider"] = { "i", 11405 },	-- Giant Silver Vein
-							["coord"] = { 68, 17, AZSHARA },
+							["coord"] = { 68.0, 17.0, AZSHARA },
 							["crs"] = {
 								6146,	-- Cliff Breaker
 								6147,	-- Cliff Thunderer
@@ -1404,7 +1404,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(3, {	-- 0/1 Nagmara's Filled Vial
 							["provider"] = { "i", 11413 },	-- Nagmara's Filled Vial
 							["cost"] = { { "i", 11412, 1 } },	-- Nagmara's Vial
-							["coord"] = { 31, 49, UNGORO_CRATER },
+							["coord"] = { 31.0, 49.0, UNGORO_CRATER },
 						}),
 						i(11962, {	-- Manacle Cuffs
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1746,7 +1746,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28473, {	-- Weapons of Darkness (Blood Elf)
 					["sourceQuest"] = 28303,	-- Meet with Master Pyreanor / Meet With Avaros Dawnglaive [SL+]
-					["qg"] = 23128,	-- Master Pyreanor
+					["qgs"] = {
+						23128,	-- Master Pyreanor
+						-- #if AFTER SL
+						168597,	-- Avaros Dawnglaive <Paladin Trainer>
+						-- #endif
+					},
 					["coord"] = { 49.2, 71.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -2193,10 +2198,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- you are supposed to get these when doing the quest, but i completed it on 2 characters and haven't received them :) possible unknown race requirement?
 						-- Crieve note: The following items are still sourceless on WoWHead, so it's quite possible the intent was to make versions for Allied Races, but Blizzard realized that'd be dumb and smacked the intern that was doing the dumb.
-					--	i(141979),	-- Crown of the Hallowed
-					--	i(141980),	-- Crown of the Hallowed
-					--	i(141981),	-- Crown of the Hallowed
-					--	i(141982),	-- Crown of the Hallowed
+						-- i(141979),	-- Crown of the Hallowed
+						-- i(141980),	-- Crown of the Hallowed
+						-- i(141981),	-- Crown of the Hallowed
+						-- i(141982),	-- Crown of the Hallowed
 					},
 				}),
 
@@ -2282,7 +2287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27591, {	-- The Dark Iron Pact [Horde]
 					["sourceQuest"] = 27589,	-- The Grim Guzzler [Horde]
-					["qg"] = 45824,	--  Thunderheart
+					["qg"] = 45824,	-- Thunderheart
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2303,6 +2308,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(12944, bubbleDownClassicRep(FACTION_THORIUM_BROTHERHOOD, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 					{	-- Neutral
 						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227730, {	-- Thorium Brotherhood Contract
+							["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+							["timeline"] = { ADDED_1_15_3 },
+							["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
+							["lvl"] = 60,
+						})),
 						applyclassicphase(SOD_PHASE_FOUR, i(20754, {	-- Lesser Mana Oil (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
@@ -2313,6 +2324,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { ADDED_1_15_3 },
 						})),
 						-- #endif
+						i(18628, {	-- Thorium Brotherhood Contract
+							["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_3 },
+							-- #endif
+							["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
+							["lvl"] = lvlsquish(60, 60, 20),
+						}),
 					},
 					{	-- Friendly
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
@@ -2782,24 +2801,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11623),	-- Spritecaster Cape
 					},
 				}),
-				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16059, {	-- Theldren
+				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16059, {	-- Theldren
 					["provider"] = { "o", 181074 },	-- Arena Spoils
 					["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",
 					["cost"] = { { "i", 21986, 1 } },	-- Banner of Provocation
 					["timeline"] = { REMOVED_4_0_3 },
-					-- #if NOT ANYCLASSIC
-					["u"] = CONDITIONALLY_AVAILABLE,
-					-- #endif
 					-- #if AFTER 4.0.3
 					-- This init function unmarks the removed from game flag for folks with the brazier.
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 					-- #endif
-					["groups"] = bubbleDown({
-						["timeline"] = { REMOVED_4_0_3 },
-						-- #if NOT ANYCLASSIC
-						["u"] = CONDITIONALLY_AVAILABLE,
-						-- #endif
-					}, {
+					["groups"] = {
 						i(22047),	-- Top Piece of Lord Valthalak's Amulet
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228700, {	-- Ironweave Mantle
@@ -2807,18 +2818,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						})),
 						-- #endif
 						i(22305, {	-- Ironweave Mantle
-							["timeline"] = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
-								REMOVED_4_0_1,
-								-- #endif
-							},
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_3 },
+							-- #endif
 						}),
 						i(22317),	-- Lefty's Brass Knuckle
 						i(22318),	-- Malgen's Long Bow
 						i(22330),	-- Shroud of Arcane Mastery
-					}),
+					},
 				})),
 				e(372, {	-- Ring of Law
 					["description"] = "Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",
@@ -2961,7 +2968,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, n(223265, {	-- Delirious Ancient
 					["description"] = "Spawns after defeating High Interrogator Gerstahn, Houndmaster Grebmar, Ring of Law in the Dark Iron Highway.",
-					["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
+					["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 					["groups"] = {
 						i(221271),	-- Ace of Wilds
 						i(221262),	-- Wild Offering
@@ -3135,7 +3142,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #else
 								"Was used to turn in Librams prior to Cataclysm, is now without any purpose.",
 								-- #endif
-							["cost"] = {{ "i", 11197, 1 }},	-- Dark Keeper Key
+							["cost"] = { { "i", 11197, 1 } },	-- Dark Keeper Key
 							["groups"] = {
 								i(11752),	-- Black Blood of the Tormented
 								i(11751),	-- Burning Essence

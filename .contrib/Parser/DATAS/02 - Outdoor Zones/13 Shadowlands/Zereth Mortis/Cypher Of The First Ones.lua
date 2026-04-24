@@ -1,7 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local CYPHER = 1979;
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		header(HEADERS.Achievement, 15402, {	-- Cypher of the First Ones
@@ -107,7 +109,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64773, {	-- A Jiro Guide to Not Being Eaten
 					["sourceQuests"] = { 64772 },	-- Broken Circle
 					["provider"] = { "n", 181098 },	-- Olea Pau
-					["coord"] = { 38, 39.8, ZERETH_MORTIS },
+					["coord"] = { 38.0, 39.8, ZERETH_MORTIS },
 				}),
 				q(64713, {	-- Picking Up the Pieces... Literally
 					["sourceQuests"] = { 64772 },	-- Broken Circle
@@ -179,7 +181,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64642, {	-- Clearing the Ruins
 					["sourceQuests"] = { 64641 },	-- Mysterious Greenery
 					["provider"] = { "n", 179900 },	-- Koh Shira
-					["coord"] = { 60.5, 70, ZERETH_MORTIS },
+					["coord"] = { 60.5, 70.0, ZERETH_MORTIS },
 				}),
 				q(64643, {	-- Scavenging A Solution
 					["sourceQuests"] = { 64641 },	-- Mysterious Greenery
@@ -266,12 +268,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(373587, {	-- Excitable Concordance
 					["description"] = "Requires Dealic Understanding.",
-					["coord"] = { 50.4, 51, ZERETH_MORTIS },
+					["coord"] = { 50.4, 51.0, ZERETH_MORTIS },
 					["questID"] = 65216,
 				}),
 				o(373584, {	-- Excitable Concordance
 					["description"] = "Requires Dealic Understanding.",
-					["coord"] = { 39, 31.3, ZERETH_MORTIS },
+					["coord"] = { 39.0, 31.3, ZERETH_MORTIS },
 					["questID"] = 65213,
 				}),
 				o(373562, {	-- Excitable Concordance
@@ -334,7 +336,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				o(375985, {	-- Firim in Exile, Part 5
-					["coord"] = { 39, 31.1, ZERETH_MORTIS },
+					["coord"] = { 39.0, 31.1, ZERETH_MORTIS },
 					["questID"] = 65744,
 					["groups"] = {
 						i(189580),	-- Firim in Exile, Part 5
@@ -366,16 +368,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				o(375062, {	-- Cantaric Cache
 					["coords"] = {
 						{ 48.7, 87.5, ZERETH_MORTIS },
-						{ 55, 48.0, ZERETH_MORTIS },
-						{ 56, 79.6, ZERETH_MORTIS },
+						{ 55.0, 48.0, ZERETH_MORTIS },
+						{ 56.0, 79.6, ZERETH_MORTIS },
 					},
 					["questID"] = 65318,
 				}),
 				o(373474, {	-- Cantaric Cache
 					["coords"] = {
-						{ 38.5, 63.2, ZERETH_MORTIS },
-						{ 53, 45.6, ZERETH_MORTIS },
-						{ 43.7, 21.5, ZERETH_MORTIS },
+						{ 43.7, 21.7, ZERETH_MORTIS },
+						{ 53.0, 45.4, ZERETH_MORTIS },
+						{ 53.1, 45.5, ZERETH_MORTIS },
+						{ 65.6, 40.9, ZERETH_MORTIS },
 					},
 					["questID"] = 65094,
 				}),
@@ -406,13 +409,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						{ 57.5, 65.8, ZERETH_MORTIS },
 						{ 63.1, 37.4, ZERETH_MORTIS },
 						{ 47.1, 77.2, ZERETH_MORTIS },
-						{ 46, 64.5, ZERETH_MORTIS },
+						{ 46.0, 64.5, ZERETH_MORTIS },
 					},
 					["questID"] = 65093,
 				}),
 				o(375067, {	-- Glissandian Cache
 					["coords"] = {
-						{ 40, 72.9, ZERETH_MORTIS },
+						{ 40.0, 72.9, ZERETH_MORTIS },
 						{ 33.8, 54.3, ZERETH_MORTIS },
 						{ 44.7, 50.5, ZERETH_MORTIS },
 					},
@@ -428,7 +431,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				o(375060, {	-- Glissandian Cache
 					["coords"] = {
 						{ 38.5, 35.5, ZERETH_MORTIS },
-						{ 56, 84.1, ZERETH_MORTIS },
+						{ 56.0, 84.1, ZERETH_MORTIS },
 						{ 56.6, 61.4, ZERETH_MORTIS },
 					},
 					["questID"] = 65316,
@@ -436,7 +439,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				o(373471, {	-- Mezzonic Cache
 					["coords"] = {
 						{ 39.3, 60.4, ZERETH_MORTIS },
-						{ 55.7, 50, ZERETH_MORTIS },
+						{ 55.7, 50.0, ZERETH_MORTIS },
 						{ 52.2, 72.1, ZERETH_MORTIS },
 					},
 					["questID"] = 65091,
@@ -445,7 +448,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coords"] = {
 						{ 38.5, 35.5, ZERETH_MORTIS },
 						{ 43.6, 40.3, ZERETH_MORTIS },
-						{ 50, 30.5, ZERETH_MORTIS },
+						{ 50.0, 30.5, ZERETH_MORTIS },
 					},
 					["questID"] = 65320,
 				}),
@@ -457,8 +460,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(370494, {	-- Toccatian Cache
 					["coords"] = {
-						{ 46.8, 67, ZERETH_MORTIS },
-						{ 37, 46.5, ZERETH_MORTIS },
+						{ 46.8, 67.0, ZERETH_MORTIS },
+						{ 37.0, 46.5, ZERETH_MORTIS },
 						{ 34.6, 68.8, ZERETH_MORTIS },
 					},
 					["questID"] = 64972,
@@ -587,26 +590,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 37.2, 44.7, ZERETH_MORTIS },
 					["groups"] = {
 						i(189986, {	-- Armadillo Soul (SOUL!)
-							["cost"] = { { "c", CYPHER, 500 }, },
+							["cost"] = { { "c", CYPHER, 500 } },
 						}),
 						i(187421, {	-- Ashen Liniment
 							["timeline"] = {  ADDED_9_2_7 },
-							["cost"] = { { "c", CYPHER, 25 }, },
+							["cost"] = { { "c", CYPHER, 25 } },
 						}),
 						i(188793, {	-- Improvised Cypher Analysis Tool (CI!)
-							["cost"] = { { "c", CYPHER, 150 }, },
+							["cost"] = { { "c", CYPHER, 150 } },
 						}),
 						i(189980, {	-- Brutosaur Soul (SOUL!)
-							["cost"] = { { "c", CYPHER, 1000 }, },
+							["cost"] = { { "c", CYPHER, 1000 } },
 						}),
 						i(187824, {	-- Formula: Magically Regulated Automa Core (RECIPE!)
-							["cost"] = { { "c", CYPHER, 25 }, },
+							["cost"] = { { "c", CYPHER, 25 } },
 						}),
 						i(190333, {	-- Jiro Circle of Song (TOY!)
-							["cost"] = { { "c", CYPHER, 100 }, },
+							["cost"] = { { "c", CYPHER, 100 } },
 						}),
 						i(187781, {	-- Olea Cache
-							["cost"] = { { "c", CYPHER, 700 }, },
+							["cost"] = { { "c", CYPHER, 700 } },
 							["sym"] = {
 								{"select", "itemID",
 									188957,	-- Genesis Mote
@@ -666,14 +669,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							},
 						}),
 						i(191039, {	-- Pocopoc Traveler (PET!)
-							["cost"] = { { "c", CYPHER, 500 }, },
+							["cost"] = { { "c", CYPHER, 500 } },
 						}),
 						i(190739, {	-- Provis Wax
 							["timeline"] = { ADDED_9_2_7 },
-							["cost"] = { { "c", CYPHER, 25 }, },
+							["cost"] = { { "c", CYPHER, 25 } },
 						}),
 						i(187804, {	-- Recipe: Empty Kettle of Stone Soup (RECIPE!)
-							["cost"] = { { "c", CYPHER, 25 }, },
+							["cost"] = { { "c", CYPHER, 25 } },
 						}),
 					},
 				}),

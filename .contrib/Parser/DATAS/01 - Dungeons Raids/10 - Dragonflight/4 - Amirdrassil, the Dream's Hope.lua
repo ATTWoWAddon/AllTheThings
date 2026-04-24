@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 ------ Encounter Constants ------
 local GNARLROOT = 2564;
 local IGIRA = 2554;
@@ -11,8 +12,6 @@ local NYMUE = 2556;
 local SMOLDERON = 2563;
 local TINDRAL = 2565;
 local FYRAKK = 2519;
-
-local ADMIRDRASSIL_THE_DREAMS_HOPE = 2502;
 
 local SymRaidAdmirdrassil = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1207,DiffID,ClassID}}
@@ -330,25 +329,25 @@ InstanceHelper.ExtraLoots = {
 				i(217326),	-- Venerated Decelerating Chronograph
 				i(217327),	-- Zenith Decelerating Chronograph
 			},
-			[SMOLDERON] = { -- Shoulder
+			[SMOLDERON] = {	-- Shoulder
 				i(217332),	-- Dreadful Synchronous Timestrand
 				i(217333),	-- Mystic Synchronous Timestrand
 				i(217334),	-- Venerated Synchronous Timestrand
 				i(217335),	-- Zenith Synchronous Timestrand
 			},
-			[NYMUE] = { -- Chest
+			[NYMUE] = {	-- Chest
 				i(217316),	-- Dreadful Fleeting Hourglass
 				i(217317),	-- Mystic Fleeting Hourglass
 				i(217318),	-- Venerated Fleeting Hourglass
 				i(217319),	-- Zenith Fleeting Hourglass
 			},
-			[IGIRA] = { -- Hands
+			[IGIRA] = {	-- Hands
 				i(217320),	-- Dreadful Quickened Bronzestone
 				i(217321),	-- Mystic Quickened Bronzestone
 				i(217322),	-- Venerated Quickened Bronzestone
 				i(217323),	-- Zenith Quickened Bronzestone
 			},
-			[LARODAR] = { -- Legs
+			[LARODAR] = {	-- Legs
 				i(217328),	-- Dreadful Ephemeral Hypersphere
 				i(217329),	-- Mystic Ephemeral Hypersphere
 				i(217330),	-- Venerated Ephemeral Hypersphere
@@ -376,8 +375,7 @@ InstanceHelper.ExtraLoots = {
 	},
 }
 
--- TODO: fix when LFR DF is available again
-local TIMELINE_LFR = { ADDED_10_2_0, REMOVED_11_0_2 }
+local TIMELINE_LFR = { ADDED_10_2_0, REMOVED_11_0_2, ADDED_12_0_5 }
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
@@ -603,7 +601,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["sourceQuests"] = { 77192 },	-- An Axe Tempered
 						["provider"] = { "n", 208421 },	-- Wrathion
 						["coord"] = { 24.6, 60.6, THE_WAKING_SHORES },
-						--["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
+						-- ["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
 						-- It seems this subzone is still in The Waking Shores (mapID 2022)
 						["groups"] = {
 							i(206448),	-- Fyr'alath the Dreamrender
@@ -1341,7 +1339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				n(213285, {	-- Theozhaklos the Curious <Novice Explorer>
 					["coord"] = { 36.7, 33.3, EMERALD_DREAM },
 					["groups"] = bubbleDownFiltered({
-						["cost"] = {{ "i", 210944, 1 }},	-- Emerald Mark of Mastery
+						["cost"] = { { "i", 210944, 1 } },	-- Emerald Mark of Mastery
 						["bonusID"] = 7532,
 					},FILTERFUNC_itemID,{
 						cl(DEATHKNIGHT, {
@@ -1536,6 +1534,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					}),
 				}),
 			}),
+			-- #if AFTER 12.0.5
+			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
+				["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
+				["coord"] = { 58.5, 35.4, VALDRAKKEN },
+			}),
+			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades(bubbleDown({ ["timeline"] = TIMELINE_LFR }, {
 				ZoneDrops({
 				}),
@@ -1700,7 +1704,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				ZoneDrops({
 				}),
-				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
+				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
 					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },
 				},{
 					i(210548),	-- Daydreamer's Glimmering Ring [BoP]

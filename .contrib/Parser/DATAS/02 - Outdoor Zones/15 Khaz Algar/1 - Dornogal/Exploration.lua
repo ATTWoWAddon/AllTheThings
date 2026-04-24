@@ -1,11 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(DORNOGAL, {
 		explorationHeader({
 			visit_exploration(15110,{coord={55.7,70.6,DORNOGAL}}),	-- Contender's Gate
 			visit_exploration(15172,{coord={57.4,14.2,DORNOGAL}}),	-- Councilward's Rise
+			map_exploration(15329,{coord={47.6,45.7,DORNOGAL}}),	-- Delver's Headquarters
 			visit_exploration(15044,{coord={36.7,24.1,DORNOGAL}}),	-- Foundation Hall
 			visit_exploration(15042,{coord={48.1,35.6,DORNOGAL}}),	-- Keepers Terrace
 			visit_exploration(15183,{coord={65.4,29.3,DORNOGAL}}),	-- Oath Gate

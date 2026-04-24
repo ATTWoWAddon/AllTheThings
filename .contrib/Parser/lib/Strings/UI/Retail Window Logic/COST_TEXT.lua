@@ -5,13 +5,8 @@ createLocalizationString({
 	color = "ffdedade",
 	export = true,
 	text = {
-		en = "Currency",
-		de = "Währung",
+		en = [[~BONUS_ROLL_REWARD_CURRENCY]],
 		es = "Divisa",
 		mx = "Moneda",
-		fr = "Monnaie",
-		ru = "Валюта",
-		cn = "货币",
-		tw = "貨幣",
 	},
 })

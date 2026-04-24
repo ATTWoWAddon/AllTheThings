@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 local function MarkOfWHOOOWHATNow(t)
 	-- #if BEFORE LEGION
 	-- Programmatically remove all references to Mark of Honor.
@@ -20,6 +21,7 @@ local function MarkOfWHOOOWHATNow(t)
 	-- #endif
 	return t;
 end
+
 -- #if BEFORE WRATH
 local SEASONONE_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_TWO .. [[) then
@@ -50,6 +52,7 @@ local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.TBC, {
 	n(PVP_HONOR, {
 		-- Players have said that the Alliance versions were available through Cata.
@@ -385,12 +388,23 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 						["description"] = "Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",
 					}),
 					ach(11706, {["timeline"] = {ADDED_7_2_0}}),	-- The Original (PvP Season 1)
+					-- #if ANYCLASSIC
+					ach(15022),	-- Challenger: Season 1
+					ach(15020),	-- Duelist: Season 1
+					ach(15019, {	-- Gladiator: Season 1
+						i(30609),	-- Swift Nether Drake
+					}),
+					ach(15018, {	-- Infernal Gladiator
+						title(41),	-- Infernal Gladiator %s
+					}),
+					ach(15021),	-- Rival: Season 1
+					-- #endif
 				},
 			})),
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					moh(80, iensemble(146651, {	-- Arsenal: Gladiator's Weapons
-						["timeline"] = { -- combined with Season 2
+						["timeline"] = {	-- combined with Season 2
 							ADDED_7_2_0,
 							REMOVED_7_2_5,
 						},
@@ -488,7 +502,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(3, i(27882)),	-- Gladiator's Scaled Legguards
 				}),
 				cl(PRIEST, {
-					moh(12, iensemble(146615, {	-- Ensemble: Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
+					moh(12, iensemble(146615, {	-- Ensemble: Gladiator's Satin Armor	-- Confirmed August 2021 here+Outdoor BC
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(31410)),	-- Gladiator's Mooncloth Hood
@@ -536,7 +550,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(3, i(31406)),	-- Gladiator's Ringmail Leggings
 				}),
 				cl(WARLOCK, {
-					moh(12, iensemble(146611, {	-- Ensemble: Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
+					moh(12, iensemble(146611, {	-- Ensemble: Gladiator's Felweave Armor	-- Confirmed August 2021 here+Outdoor BC
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(24553)),	-- Gladiator's Dreadweave Hood
@@ -883,18 +897,18 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 				-- Horde OG: n(12793, {	-- Brave Stonehide
 				filter(NECK_F, {
 					i(28245, {	-- Pendant of Dominance
-						["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_TBC_PHASE_TWO },
 					}),
 					i(28244, {	-- Pendant of Triumph
-						["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_TBC_PHASE_TWO },
 					}),
 				}),
 				filter(FINGER_F, {
 					i(28247, {	-- Band of Dominance
-						["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_TBC_PHASE_TWO },
 					}),
 					i(28246, {	-- Band of Triumph
-						["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_TBC_PHASE_TWO },
 					}),
 				}),
 				filter(TRINKET_F, {
@@ -1016,6 +1030,14 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					i(34092, {	-- Merciless Nether Drake
 						["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
 					}),
+					-- #if ANYCLASSIC
+					ach(15210),	-- Challenger: Season 2
+					ach(15208),	-- Duelist: Season 2
+					ach(15199, {	-- Gladiator: Season 2
+						i(34092),	-- Merciless Nether Drake
+					}),
+					ach(15209),	-- Rival: Season 2
+					-- #endif
 				},
 			}))),
 			n(PVP_GLADIATOR, {
@@ -1118,7 +1140,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(3, i(32042)),	-- Merciless Gladiator's Scaled Legguards
 				}),
 				cl(PRIEST, {
-					moh(12, iensemble(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
+					moh(12, iensemble(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor	-- Confirmed August 2021 here+Outdoor BC
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(32016)),	-- Merciless Gladiator's Mooncloth Hood
@@ -1166,7 +1188,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(3, i(32032)),	-- Merciless Gladiator's Ringmail Leggings
 				}),
 				cl(WARLOCK, {
-					moh(12, iensemble(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
+					moh(12, iensemble(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor	-- Confirmed August 2021 here+Outdoor BC
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(31974)),	-- Merciless Gladiator's Dreadweave Hood
@@ -1255,7 +1277,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(2, i(32796)),	-- Veteran's Wyrmhide Boots
 				}),
 				-- Orinally sold Offhand/Neck/Finger by
-				-- Alliance SW: n(23446, {	-- Lieutenant Tristia --  &
+				-- Alliance SW: n(23446, {	-- Lieutenant Tristia	--  &
 				-- Horde OG: n(24520, {	-- Doris Volanthius --
 				filter(NECK_F, {
 					i(33067, {	-- Veteran's Pendant of Conquest
@@ -1342,6 +1364,14 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					i(37676, {	-- Vengeful Nether Drake
 						["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
 					}),
+					-- #if ANYCLASSIC
+					ach(15207),	-- Challenger: Season 3
+					ach(15205),	-- Duelist: Season 3
+					ach(15204, {	-- Gladiator: Season 3
+						i(37676),	-- Vengeful Nether Drake
+					}),
+					ach(15206),	-- Rival: Season 3
+					-- #endif
 				},
 			}))),
 			n(PVP_GLADIATOR, {
@@ -1582,7 +1612,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(2, i(33916)),	-- Vindicator's Wyrmhide Boots
 				}),
 				-- Orinally sold Offhand/Neck/Finger by
-				-- Alliance SW: n(23446, {	-- Lieutenant Tristia --  &
+				-- Alliance SW: n(23446, {	-- Lieutenant Tristia	--  &
 				-- Horde OG: n(24520, {	-- Doris Volanthius --
 				filter(NECK_F, {
 					i(33920, {	-- Vindicator's Pendant of Conquest
@@ -1695,6 +1725,14 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					i(43516, {	-- Brutal Nether Drake
 						["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
 					}),
+					-- #if ANYCLASSIC
+					ach(15203),	-- Challenger: Season 4
+					ach(15201),	-- Duelist: Season 4
+					ach(15200, {	-- Gladiator: Season 4
+						i(43516),	-- Brutal Nether Drake
+					}),
+					ach(15202),	-- Rival: Season 4
+					-- #endif
 				},
 			}))),
 			n(PVP_GLADIATOR, {

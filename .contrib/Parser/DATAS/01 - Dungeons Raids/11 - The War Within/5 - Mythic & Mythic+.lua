@@ -1,7 +1,30 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		i(234425, {	-- Forgotten Folio
+			["description"] = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
+			["sym"] = {{"select","itemID",
+				223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
+				223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
+				223143,	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
+				223115,	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
+				223116,	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
+				223117,	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
+				223118,	-- Formula: Enchant Ring - Radiant Versatility (RECIPE!)
+				223119,	-- Formula: Enchant Weapon - Authority of Air (RECIPE!)
+				223120,	-- Formula: Enchant Weapon - Authority of Radiant Power (RECIPE!)
+				224424,	-- Pattern: Artisan Chef's Hat (RECIPE!)
+				223102,	-- Pattern: Busy Bee's Buckle (RECIPE!)
+				223096,	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
+				223098,	-- Pattern: Waders of the Unifying Flame (RECIPE!)
+				226643,	-- Plans: Beledar's Bulwark (RECIPE!)
+				-- 223061,	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?] unsure if contained here due to strange acquisition
+			}},
+		}),
+	})),
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_TEMPERED, bubbleDownSelf({
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }
@@ -163,7 +186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_3_TWW, bubbleDownSelf({
-			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }
+			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH }
 		},{
 			ach(42169),	-- The War Within Keystone Explorer: Season Three
 			ach(42170, {	-- The War Within Keystone Conqueror: Season Three
@@ -177,7 +200,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				i(247822),	-- Scarlet Void Flyer (MOUNT!)
 			}),
 			ach(42174, {	-- Unbound Hero: The War Within Season Three
-				title(637),	-- <Name> the Unbound Hero
+				["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+				["groups"] = {
+					title(637, {	-- <Name> the Unbound Hero
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+					}),
+				},
 			}),
 			ach(20586, {	-- Keystone Hero: Ara-Kara, City of Echoes
 				spell(445417),	-- Path of the Ruined City
@@ -203,10 +231,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				spell(445414),	-- Path of the Arathi Flagship
 			}),
 			ach(61876, {	-- The Unbound Damage Dealer (automated)
-				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },	-- Added October 24th (hotfixed)
+				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 			}),
 			ach(61877, {	-- The Unbound Dungeon Master
-				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },	-- Added October 24th (hotfixed)
+				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 				-- Meta achievement
 				["sym"] = {{"meta_achievement",
 					61876,	-- The Unbound Damage Dealer
@@ -218,13 +246,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				},
 			}),
 			ach(61875, {	-- The Unbound Healer (automated)
-				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },	-- Added October 24th (hotfixed)
+				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 			}),
 			ach(61874, {	-- The Unbound Tank (automated)
-				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },	-- Added October 24th (hotfixed)
+				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 			}),
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
-			-- Have to see what Blizzard does with those kind of achievements -- Goldenshacal 20th August 2025
+			-- Have to see what Blizzard does with those kind of achievements	-- Goldenshacal 20th August 2025
 			ach(42149, {	-- The War Within Season 3: Resilient Keystone 12
 				["_noautomation"] = true,
 			}),
@@ -275,65 +303,32 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			ach(42804, {	-- The War Within Season 3: Resilient Keystone 28
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(42805, {	-- The War Within Season 3: Resilient Keystone 29
 				["_noautomation"] = true,
-				["collectible"] = false,
 			}),
 			ach(42806, {	-- The War Within Season 3: Resilient Keystone 30
 				["_noautomation"] = true,
-				["collectible"] = false,
-			}),
-		})),
-		n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
-			i(234425, {	-- Forgotten Folio
-				["description"] = "Drops from the last boss of Mythic+ Dungeons. It contains various dungeon dropped profession recipes.",
-				["sym"] = {{"select","itemID",
-					223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
-					223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
-					223143,	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
-					223115,	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
-					223116,	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
-					223117,	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
-					223118,	-- Formula: Enchant Ring - Radiant Versatility (RECIPE!)
-					223119,	-- Formula: Enchant Weapon - Authority of Air (RECIPE!)
-					223120,	-- Formula: Enchant Weapon - Authority of Radiant Power (RECIPE!)
-					224424,	-- Pattern: Artisan Chef's Hat (RECIPE!)
-					223102,	-- Pattern: Busy Bee's Buckle (RECIPE!)
-					223096,	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
-					223098,	-- Pattern: Waders of the Unifying Flame (RECIPE!)
-					226643,	-- Plans: Beledar's Bulwark (RECIPE!)
-					--223061,	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?] unsure if contained here due to strange acquisition
-				}},
 			}),
 		})),
 		n(QUESTS, {
 			q(87327, {	-- A Challenger's Resilience
 				["description"] = "Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",
-				["qg"] = 197915,	-- Lindormi
+				["qgs"] = {
+					197711,	-- Lindormi
+					197915,	-- Lindormi
+				},
+				["coords"] = {
+					{ 53.9, 39.0, DORNOGAL },
+					-- #if AFTER MID
+					{ 42.1, 58.8, SILVERMOON_CITY },
+					-- #endif
+				},
 				["timeline"] = { ADDED_11_1_0_SEASONSTART },
-				["maps"] = { DORNOGAL },
 				["isYearly"] = true,	-- can be completed once per season
 			}),
 		}),
 	}),
-	--[[	-- Maybe better here than under Tazavesh?
-	d(DIFFICULTY.DUNGEON.MYTHIC, {
-		header(HEADERS.Achievement, SEASON_3_TWW, bubbleDownSelf({
-			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }
-		},{
-			inst(1194, {	-- Tazavesh, the Veiled Market
-				ach(61093, {	-- Flawless Transaction
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
-				}),
-				ach(61092, {	-- Hard Mode: Tazavesh, the Veiled Market
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
-				}),
-			}),
-		})),
-	}),
-	--]]
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

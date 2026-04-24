@@ -193,5 +193,4 @@
 2916@@@Midnight Mining
 2917@@@Midnight Skinning
 2918@@@Midnight Tailoring
-2984@@@Dye Crafting
 2950@@@Alchemy Research

@@ -6,6 +6,7 @@ local L = app.L;
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
+local issecretvalue = app.WOWAPI.issecretvalue;
 
 -- Concepts:
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
@@ -47,6 +48,9 @@ local GetBestObjectIDForName;
 if app.IsRetail then
 	local InGame = app.Modules.Filter.Filters.InGame
 	GetBestObjectIDForName = function(name)
+		-- Account for Blizzard Shenanigans
+		if issecretvalue(name) then return; end
+
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
 		name = name and name:trim():lower()
@@ -61,7 +65,7 @@ if app.IsRetail then
 			return o[1]
 		end
 		local closestDistance = 99999
-		local closestObjectID, mappedObjectID, unmappedObjectID, dist, searchCoord
+		local closestObjectID, mappedObjectID, unmappedObjectID, dist
 		-- app.PrintDebug("Checking objects",#o,mapID,px,py)
 		for i,objectID in ipairs(o) do
 			-- SFO includes baked-in accessibility filtering/prioritization of the results
@@ -70,23 +74,12 @@ if app.IsRetail then
 				-- app.PrintDebug("Checking results",#searchResults,objectID)
 				for j,searchResult in ipairs(searchResults) do
 					if InGame(searchResult) then
-						searchCoord = searchResult.coord;
-						if searchCoord then
-							if searchCoord[3] == mapID then
-								dist = distance(px, py, searchCoord[1], searchCoord[2]);
+						if searchResult.coords and searchResult.coords[mapID] then
+							for _,coord in ipairs(searchResult.coords[mapID]) do
+								dist = distance(px, py, coord[1], coord[2]);
 								if dist and dist < closestDistance then
 									closestDistance = dist;
 									closestObjectID = objectID;
-								end
-							end
-						elseif searchResult.coords then
-							for k,coord in ipairs(searchResult.coords) do
-								if coord[3] == mapID then
-									dist = distance(px, py, coord[1], coord[2]);
-									if dist and dist < closestDistance then
-										closestDistance = dist;
-										closestObjectID = objectID;
-									end
 								end
 							end
 						end
@@ -132,28 +125,20 @@ else
 		if o and #o > 0 then
 			local objects = {};
 			local mapID, px, py = GetPlayerPosition();
-			local closestDistance, closestInstance, dist, searchCoord, searchResults;
+			if not mapID then mapID = app.CurrentMapID; end
+			local closestDistance, closestInstance, dist, searchResults;
 			for i,objectID in ipairs(o) do
 				closestInstance = nil;
 				closestDistance = 999999;
 				searchResults = SearchForField("objectID", objectID);
 				if searchResults and #searchResults > 0 then
 					for j,searchResult in ipairs(searchResults) do
-						searchCoord = searchResult.coord;
-						if searchCoord and searchCoord[3] == mapID then
-							dist = distance(px, py, searchCoord[1], searchCoord[2]);
-							if dist and dist < closestDistance then
-								closestDistance = dist;
-								closestInstance = searchResult;
-							end
-						elseif searchResult.coords then
-							for k,coord in ipairs(searchResult.coords) do
-								if coord[3] == mapID then
-									dist = distance(px, py, coord[1], coord[2]);
-									if dist and dist < closestDistance then
-										closestDistance = dist;
-										closestInstance = searchResult;
-									end
+						if searchResult.coords and searchResult.coords[mapID] then
+							for _,coord in ipairs(searchResult.coords[mapID]) do
+								dist = distance(px, py, coord[1], coord[2]);
+								if dist and dist < closestDistance then
+									closestDistance = dist;
+									closestInstance = searchResult;
 								end
 							end
 						end
@@ -520,9 +505,9 @@ tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, n
 	if leftSide then leftSide:SetText(L.PLAYER_TITLE_KING_OF_THE_ASYLUM:format(name)); end
 end
 for i,guid in ipairs({
-	"Player-4372-03E56CDC",	-- Slorche-Atiesh
-	"Player-4372-03F46784",	-- Bankmänfried-Atiesh
-	"Player-4372-03E57EE7",	-- Slorchey-Atiesh
+	"Player-4385-05E95D3F",	-- Slorche-LeiShen
+	"Player-4385-05EE08FF",	-- Bankmänfried-LeiShen
+	"Player-4385-05E843C6",	-- Slorchey-LeiShen
 	"Player-4372-03E57EE6",	-- Slorchejr-Atiesh
 	"Player-4372-03E57EFD",	-- Slorpp-Atiesh
 	"Player-4372-03E57EE4",	-- Slorloko-Atiesh
@@ -569,32 +554,36 @@ end
 -- because all kinds of addons create their own tooltips and use them to do weird stuff behind the scenes
 -- and there's no reason for ATT to care when it's not even visible to a player
 local HookableTooltips = {
-	["GameTooltip"]=1,
-	["GameTooltipTooltip"]=1,
-	["EmbeddedItemTooltipTooltip"]=1,
-	["EmbeddedItemTooltip"]=1,	-- did blizz fix the name of this finally?
-	["ItemRefTooltip"]=1,
-	["ShoppingTooltip1"]=1,
-	["ShoppingTooltip2"]=1,
-	["PerksProgramTooltip"]=1,	-- tooltip used for items within the Trading Post UI
-	["EncounterJournalTooltipItem1Tooltip"]=1,	-- various tooltips in Adventure Guide, some are actually useful to attach ATT data
-	["GarrisonShipyardMapMissionTooltipTooltip"]=1,	-- tooltips of Navel missions from WoD Garrison
+	GameTooltip=1,
+	GameTooltipTooltip=1,
+	EmbeddedItemTooltipTooltip=1,
+	EmbeddedItemTooltip=1,	-- did blizz fix the name of this finally?
+	ItemRefTooltip=1,
+	ShoppingTooltip1=1,
+	ShoppingTooltip2=1,
+	PerksProgramTooltip=1,	-- tooltip used for items within the Trading Post UI
+	EncounterJournalTooltipItem1Tooltip=1,	-- various tooltips in Adventure Guide, some are actually useful to attach ATT data
+	GarrisonShipyardMapMissionTooltipTooltip=1,	-- tooltips of Navel missions from WoD Garrison
 	-- other addons which create user-visible tooltips that ATT should attach into
+	-- UIWidgetBaseItemEmbeddedTooltip1 = 1,
 	-- SilverDragon
-	["SilverDragonLootTooltip"]=1,
+	SilverDragonLootTooltip=1,
 	-- RareScanner
-	["LootBarToolTip"]=1,
-	["RSMapItemToolTip"]=1,
+	LootBarToolTip=1,
+	RSMapItemToolTip=1,
 	-- Townlong Yak addons seem to use alternate, automatically appended tooltips now...
-	["NotGameTooltip"]=1,
-	["NotGameTooltip1"]=1,
-	["NotGameTooltip2"]=1,
-	["NotGameTooltip3"]=1,
-	["NotGameTooltip4"]=1,
-	["NotGameTooltip0"]=1,
-	["NotGameTooltip01"]=1,
-	["NotGameTooltip012"]=1,
-	["NotGameTooltip0123"]=1,
+	NotGameTooltip=1,
+	NotGameTooltip1=1,
+	NotGameTooltip2=1,
+	NotGameTooltip3=1,
+	NotGameTooltip4=1,
+	NotGameTooltip0=1,
+	NotGameTooltip01=1,
+	NotGameTooltip012=1,
+	NotGameTooltip0123=1,
+	-- WorldQuestList
+	WQLTooltip = 1,
+	WQLAreaPOITooltipTooltip = 1,
 };
 
 -- Shared Tooltip Functions
@@ -622,7 +611,7 @@ local function FindCommandEnd(txt, i, l)
 	return true, j;
 end
 local function StripColorAndTextureData(txt)
-	local str, l, c, c2 = "", txt:len();
+	local str, l, c = "", txt:len()
 	local i = 1;
 	while i < l do
 		c = txt:sub(i,i);
@@ -676,23 +665,30 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 			end
 		end
 	else
-		local progressText = entry.progress;
-		if progressText and progressText ~= "" and progressText ~= "---" then
+		local summaryText = entry.summaryText;
+		if summaryText and summaryText ~= "" and summaryText ~= "---" then
 			local prefix = SafeGetName(tooltip) .. "Text";
 			local leftText = _G[prefix .. "Left1"];
 			if leftText then
 				local rightText = _G[prefix .. "Right1"];
 				if rightText then
-					local strippedText = StripColorAndTextureData((leftText:GetText() or "  ") .. progressText);
-					if strippedText:len() < app.Settings:GetTooltipSetting("MaxTooltipTopLineLength") then
-						if tooltip.CloseButton then
-							-- dont think the region for the rightText can be modified within the tooltip, so pad instead
-							progressText = progressText .. "     ";
+					-- tooltip text became secret in 12.0.1.66562 because Blizzard
+					local strippedText = leftText:GetText() or "  "
+					if not issecretvalue(strippedText) then
+						strippedText = StripColorAndTextureData(strippedText .. summaryText);
+						if strippedText:len() < app.Settings:GetTooltipSetting("MaxTooltipTopLineLength") then
+							if tooltip.CloseButton then
+								-- dont think the region for the rightText can be modified within the tooltip, so pad instead
+								summaryText = summaryText .. "     ";
+							end
+							rightText:SetText(summaryText);
+							rightText:Show();
+						else
+							tooltip:AddDoubleLine(L.PROGRESS, summaryText);
 						end
-						rightText:SetText(progressText);
-						rightText:Show();
 					else
-						tooltip:AddDoubleLine(L.PROGRESS, progressText);
+						rightText:SetText(summaryText);
+						rightText:Show();
 					end
 				end
 			end
@@ -769,13 +765,13 @@ local function WipeTooltipInfoCache()
 	-- app.PrintDebug("WipeTooltipInfoCache")
 end
 app.WipeTooltipInfoCache = WipeTooltipInfoCache
--- app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", WipeTooltipInfoCache);
+-- app.AddEventHandler("OnCurrentDifficultiesChanged", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnRefreshComplete", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnThingCollected", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnThingRemoved", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnSettingsRefreshed", WipeTooltipInfoCache);
 local function AttachTooltipSearchResults(tooltip, method, ...)
-	-- app.PrintDebug("AttachTooltipSearchResults",...)
+	-- app.PrintDebug("AttachTooltipSearchResults",SafeGetName(tooltip),...)
 	app.SetSkipLevel(1);
 	local status, group, working = pcall(app.GetCachedSearchResults, method, ...)
 	app.SetSkipLevel(0);
@@ -811,16 +807,54 @@ do
 		objectID = NPCSearchOptions,
 	}, { __index = function() return DefaultSearchOptions end})
 
-	AttachTypicalSearchResults = app.IsRetail and
 	-- In Retail, we want to put the Thing being searched into the tooltip. Whether other content should be included
 	-- is based on Fillers and other logic based on that Thing and is not always included based on caching
-	function(self, field, id)
+	AttachTypicalSearchResults = function(self, field, id)
 		AttachTooltipSearchResults(self, SearchForObject, field, tonumber(id), SearchOptionByField[field])
 	end
-or
-	function(self, field, id)
-		AttachTooltipSearchResults(self, SearchForField, field, tonumber(id))
+end
+
+local function TryShowUnitTooltipInfo(self, guid)
+	if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, guid) end
+
+	-- Account for Blizzard Shenanigans
+	if issecretvalue(guid) then
+		if app.Settings:GetTooltipSetting("creatureID") then
+			if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
+			self:AddDoubleLine(L.CREATURE_ID, "<secret value???>");
+			-- self:AddLine("Blizzard says you aren't allowed to know what CreatureID this unit has. If you want ATT tooltips to ever appear on hostile npcs ever again, please yell at your local Blizzard Developer and tell them to allow UnitGUID and UnitCreatureID to be less secret while not in combat.\n \n -Crieve", 0.8, 0.4, 0.4, 1);
+		end
+		return true;
 	end
+
+	local t, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(guid);
+	-- print(target, t, npc_id);
+	if t == "Player" then
+		local method = PLAYER_TOOLTIPS[guid];
+		if method then method(self, GetPlayerInfoByGUID(guid)); end
+		local version = app.PlayerProgressCacheByGUID[guid];
+		if version and app.Settings:GetTooltipSetting("SocialProgress") then
+			self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
+		end
+	elseif t == "Creature" or t == "Vehicle" then
+		if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
+		if spawn_uid then
+			local showAliveTime = app.Settings:GetTooltipSetting("Alive");
+			local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
+			if showAliveTime or showSpawnTime then
+				local serverTime = GetServerTime();
+				local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
+				if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
+				if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
+				if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date(app.Settings:GetTooltipSetting("DateFormat"), spawnTime), app.Colors.White)); end
+			end
+		end
+		if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
+			self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
+		end
+		AttachTypicalSearchResults(self, "npcID", npc_id)
+	end
+	return true;
 end
 
 -- Tooltip API Differences between Modern and Legacy APIs.
@@ -830,6 +864,18 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 	-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
 	---@diagnostic disable-next-line: deprecated
 	local Enum_TooltipDataType, TooltipUtil = Enum.TooltipDataType, TooltipUtil;
+
+	local function SafelyCheckTooltipForUnitInfo(tooltip)
+		local ok, target, _, id = pcall(TooltipUtil.GetDisplayedUnit, tooltip)
+		if ok then
+			return target, _, id
+		-- else app.PrintDebug("Failed GetDisplayedUnit",SafeGetName(tooltip))
+		end
+	end
+	-- In Classic or where Blizzard hasn't ruined the game with secrets, we don't need the safety function
+	if not C_Secrets or not C_Secrets.HasSecretRestrictions() then
+		SafelyCheckTooltipForUnitInfo = TooltipUtil.GetDisplayedUnit
+	end
 	local TooltipTypes = {
 		[Enum_TooltipDataType.Toy] = "itemID",
 		[Enum_TooltipDataType.Item] = "itemID",
@@ -844,6 +890,8 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		[Enum_TooltipDataType.CompanionPet] = "speciesID",
 		[Enum_TooltipDataType.Currency] = "currencyID",
 		[Enum_TooltipDataType.InstanceLock] = "instanceID",
+		-- temp?
+		decor = "decorID",
 	};
 	-- Currently, ATT has no desired handling for these types, and most instances of them are already
 	-- ignored via GetOwner() check. But we can avoid that sooner since the tooltip type is provided
@@ -871,9 +919,15 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 
 		local ttType, ttId = ttdata and ttdata.type, nil;
 		if ttType then
+			-- Account for Blizzard Shenanigans
+			-- This seems to be only Auras in combat right now anyway, maybe it's fine to ignore it
+			if issecretvalue(ttType) then
+				-- self:AddLine("This tooltip is a <secret> type and Blizzard won't let any addon know what it is because that will make the game less fun and enjoyable!", 0.8, 0.4, 0.4, 1);
+				return true
+			end
 			ttId = ttdata.id;
 			-- Debugging without ATT exclusions
-			-- app.PrintDebug("TT",SafeGetName(self),ttType,ttId)
+			-- app.PrintDebug("TT",SafeGetName(self),ttType,ttId,ok,res)
 			-- app.PrintTable(ttdata)
 			if IgnoredTypes[ttType] then
 				return true
@@ -953,8 +1007,14 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 				self.AllTheThingsProcessing = link;
 			end
 		else
+			-- 12.0.5: TooltipUtil.GetDisplayedUnit now errors inside certain instances when used by any addon
+			local instance = IsInInstance()
 			-- name, type, UID
-			target, _, id = TooltipUtil.GetDisplayedUnit(self);
+			if not instance then
+				target, _, id = TooltipUtil.GetDisplayedUnit(self)
+			else
+				target, _, id = SafelyCheckTooltipForUnitInfo(self)
+			end
 			if target then
 				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
 					return true;
@@ -989,35 +1049,9 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target and id then
-			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, id) end
-			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(id);
-			-- print(target, type, npc_id);
-			if type == "Player" then
-				local method = PLAYER_TOOLTIPS[id];
-				if method then method(self, GetPlayerInfoByGUID(id)); end
-				local version = app.PlayerProgressCacheByGUID[id];
-				if version and app.Settings:GetTooltipSetting("SocialProgress") then
-					self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
-				end
-			elseif type == "Creature" or type == "Vehicle" then
-				if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
-				if spawn_uid then
-					local showAliveTime = app.Settings:GetTooltipSetting("Alive");
-					local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
-					if showAliveTime or showSpawnTime then
-						local serverTime = GetServerTime();
-						local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
-						if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
-						if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
-						if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
-					end
-				end
-				if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
-					self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
-				end
-				AttachTypicalSearchResults(self, "npcID", npc_id)
+			if TryShowUnitTooltipInfo(self, id) then
+				return true;
 			end
-			return true;
 		end
 
 		-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
@@ -1089,6 +1123,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 				end
 				return true;
 			end
+			-- app.PrintDebug("AttachTooltip-No Search",ttType,ttId)
 		end
 		-- app.PrintDebug("AttachTooltip-Return");
 	end
@@ -1100,6 +1135,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
 		-- TooltipDataProcessor.AddTooltipPostCall(Enum_TooltipDataType.Item, OnTooltipSetItem)
 	end);
+	app.ForceAttachTooltip = AttachTooltip
 else
 	-- Pre-10.0.2 (Legacy)
 	local function AttachTooltip(self)
@@ -1140,36 +1176,7 @@ else
 				if target then
 					-- Yes.
 					local guid = UnitGUID(target);
-					if guid then
-						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, guid) end
-						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
-						--print(guid, type, npcID);
-						if type == "Player" then
-							local method = PLAYER_TOOLTIPS[guid];
-							if method then method(self, GetPlayerInfoByGUID(guid)); end
-							local version = app.PlayerProgressCacheByGUID[guid];
-							if version and app.Settings:GetTooltipSetting("SocialProgress") then
-								self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
-							end
-						elseif type == "Creature" or type == "Vehicle" then
-							if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
-							if spawn_uid then
-								local showAliveTime = app.Settings:GetTooltipSetting("Alive");
-								local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
-								if showAliveTime or showSpawnTime then
-									local serverTime = GetServerTime();
-									local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
-									if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
-									if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
-									if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
-								end
-							end
-							if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
-								self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
-							end
-							AttachTooltipSearchResults(self, SearchForField, "npcID", tonumber(npcID));
-						end
-
+					if guid and TryShowUnitTooltipInfo(self, guid) then
 						return true;
 					end
 				end

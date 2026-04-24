@@ -22,14 +22,14 @@ EVENTS = {
 	-- Weekly Events
 	KALUAK_FISHING_DERBY = 161,
 	STRANGLETHORN_FISHING_EXTRAVAGANZA = 6,
-	--WANDERERS_FESTIVAL = 392,	-- This is the eventID for the yearly version, not the fake weekly one.
+	-- WANDERERS_FESTIVAL = 392,	-- This is the eventID for the yearly version, not the fake weekly one.
 	WANDERERS_FESTIVAL = 133900,	-- Generic Header [Crieve made this up, it's just supposed to be Unique!]
 
 	-- Micro-Holidays
 	CALL_OF_THE_SCARAB = 248,
 	FREE_T_SHIRT_DAY = 393,
 	MARCH_OF_THE_TADPOLES = 253,
---	SECRETS_OF_AZEROTH = 425,	-- No longer needed as the event is always active now.
+	-- SECRETS_OF_AZEROTH = 425,	-- No longer needed as the event is always active now.
 	THE_GREAT_GNOMEREGAN_RUN = 266,
 	THOUSAND_BOAT_BASH = 249,
 	TRIAL_OF_STYLE = 258,

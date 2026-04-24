@@ -1,10 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_CORRUPTED, bubbleDownSelf({
 		["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1, ADDED_9_0_2_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {
 			ach(13962),		-- Combatant: Battle for Azeroth Season 4
 			ach(13959),		-- Challenger: Battle for Azeroth Season 4
@@ -397,9 +398,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184678, {	-- Arsenal: Corrupted Gladiator's Weapons [A]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(180203, {	-- Ensemble: Corrupted Gladiator's Cloth Armor [A]
 							["classes"] = CLOTH_CLASSES,
@@ -538,9 +541,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184679, {	-- Arsenal: Corrupted Gladiator's Weapons [H]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(180203, {	-- Ensemble: Corrupted Gladiator's Cloth Armor [H]
 							["classes"] = CLOTH_CLASSES,

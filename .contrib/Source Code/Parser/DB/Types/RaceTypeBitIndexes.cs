@@ -25,6 +25,8 @@ namespace ATT.DB.Types
         DRACTHYR_ALLIANCE = 16,
         EARTHEN_HORDE = 17,
         EARTHEN_ALLIANCE = 18,
+        HARANIR_HORDE = 19,
+        HARANIR_ALLIANCE = 20,
         WORGEN = 21,
         PANDAREN_NEUTRAL = 23,
         PANDAREN_ALLIANCE = 24,

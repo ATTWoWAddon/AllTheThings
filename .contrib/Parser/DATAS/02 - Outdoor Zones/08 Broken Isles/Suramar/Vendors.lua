@@ -19,7 +19,7 @@ root(ROOTS.Zones, {
 						i(141205),	-- Souvenir Murloc
 						i(140671),	-- Souvenir Raptor
 						i(130151, {	-- The "Devilsaur" Lunchbox (TOY!)
-							["cost"] = {{ "c", 1155, 1000 }},	-- 1,000x Ancient Mana
+							["cost"] = { { "c", 1155, 1000 } },	-- 1,000x Ancient Mana
 						}),
 					},
 				}),
@@ -34,11 +34,18 @@ root(ROOTS.Zones, {
 							i(121738, {	-- Irongrove Refugee Boots
 								["cost"] = 5000000,	-- 500g
 							}),
+							i(247908, {	-- Nightborne Lantern (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = {
+									{ "g", 240000 },	-- 24g
+									{ "c", ORDER_RESOURCES, 50 },
+								},
+							}),
 							i(247921, {	-- Nightborne Wall Shelf (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 2400000 },	-- 240g
-									{ "c", ORDER_RESOURCES, 500 },	-- 500x Order Resources
+									{ "c", ORDER_RESOURCES, 500 },
 								},
 							}),
 							i(121736, {	-- Nightfall Slipeprs
@@ -51,7 +58,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 2400000 },	-- 240g
-									{ "c", ORDER_RESOURCES, 500 },	-- 500x Order Resources
+									{ "c", ORDER_RESOURCES, 500 },
 								},
 							}),
 						}, {	-- Honored
@@ -115,14 +122,14 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 4000000 },	-- 400g
-									{ "c", ORDER_RESOURCES, 750 },	-- 750x Order Resources
+									{ "c", ORDER_RESOURCES, 750 },
 								},
 							}),
 							i(247844, {	-- Suramar Library (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 4000000 },	-- 400g
-									{ "c", ORDER_RESOURCES, 750 },	-- 750x Order Resources
+									{ "c", ORDER_RESOURCES, 750 },
 								},
 							}),
 							i(140746, {	-- Treasure Map: Suramar
@@ -133,7 +140,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 5600000 },	-- 560g
-									{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
+									{ "c", ORDER_RESOURCES, 1000 },
 								},
 							}),
 							i(136899, {	-- Extinguished Eye (PET!)
@@ -153,7 +160,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 5600000 },	-- 560g
-									{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
+									{ "c", ORDER_RESOURCES, 1000 },
 								},
 							}),
 						}, {	-- Exalted
@@ -161,15 +168,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 8000000 },	-- 800g
-									{ "c", ORDER_RESOURCES, 2000 },	-- 2,000x Order Resources
-								},
-							}),
-							i(245448, {	-- "Night on the Jeweled Estate" Painting (DECOR!)
-								["sourceAchievement"] = 11124,	-- Good Suramaritan
-								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {
-									{ "g", 5600000 },	-- 560g
-									{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
+									{ "c", ORDER_RESOURCES, 2000 },
 								},
 							}),
 							i(139768, {	-- Amice of the Black Harvest
@@ -219,7 +218,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 5600000 },	-- 560g
-									{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
+									{ "c", ORDER_RESOURCES, 1000 },
 								},
 							}),
 							i(140575),	-- Nightfallen Tabard
@@ -259,6 +258,40 @@ root(ROOTS.Zones, {
 					["coord"] = { 49.0, 81.6, SURAMAR },
 					["groups"] = { i(137467) },	-- Shimmerfield Crystal
 				}),
+				n(252969, {	-- Jocenna
+					["coord"] = { 49.6, 62.8, SURAMAR },
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(245448, {	-- "Night on the Jeweled Estate" Painting (DECOR!)
+							["sourceAchievement"] = 11124,	-- Good Suramaritan
+							["cost"] = {
+								{ "g", 5600000 },	-- 560g
+								{ "c", ORDER_RESOURCES, 1000 },
+							},
+						}),
+						i(247914, {	-- Covered Ornate Suramar Table (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 400 } },
+						}),
+						i(247917, {	-- Covered Small Suramar Table (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+						}),
+						i(247843, {	-- Deluxe Suramar Sleeper (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 1200 } },
+						}),
+						i(245558, {	-- Elaborate Suramar Window (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 225 } },
+						}),
+						i(247842, {	-- Nightborne Merchant's Stall (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 600 } },
+						}),
+						i(247911, {	-- Shal'dorei Seat (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 100 } },
+						}),
+						i(248009, {	-- Suramar Window (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 175 } },
+						}),
+					},
+				}),
 				n(113843, {	-- Kieule <Souvenirs>
 					["coord"] = { 50.4, 53.0, SURAMAR },
 					["groups"] = {
@@ -267,7 +300,7 @@ root(ROOTS.Zones, {
 						i(140671),	-- Souvenir Raptor
 						--]]
 						i(130151, {	-- The "Devilsaur" Lunchbox (TOY!)
-							["cost"] = {{ "c", 1155, 1000 }},	-- 1,000x Ancient Mana
+							["cost"] = { { "c", 1155, 1000 } },	-- 1,000x Ancient Mana
 						}),
 					},
 				}),
@@ -275,16 +308,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 40.2, 69.6, SURAMAR },
 					["groups"] = {
 						i(127277, {	-- Imbued Silkweave Cover [Rank 1] (RECIPE!)
-							["cost"] = {{ "i", 124437, 100 }},	-- 100x Shal'dorei Silk
+							["cost"] = { { "i", 124437, 100 } },	-- 100x Shal'dorei Silk
 						}),
 						i(127278, {	-- Imbued Silkweave Drape [Rank 1] (RECIPE!)
-							["cost"] = {{ "i", 124437, 100 }},	-- 100x Shal'dorei Silk
+							["cost"] = { { "i", 124437, 100 } },	-- 100x Shal'dorei Silk
 						}),
 						i(127280, {	-- Imbued Silkweave Flourish [Rank 1] (RECIPE!)
-							["cost"] = {{ "i", 124437, 100 }},	-- 100x Shal'dorei Silk
+							["cost"] = { { "i", 124437, 100 } },	-- 100x Shal'dorei Silk
 						}),
 						i(127279, {	-- Imbued Silkweave Shade [Rank 1] (RECIPE!)
-							["cost"] = {{ "i", 124437, 100 }},	-- 100x Shal'dorei Silk
+							["cost"] = { { "i", 124437, 100 } },	-- 100x Shal'dorei Silk
+						}),
+						i(247912, {	-- Large Traditional Shal'dorei Rug (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", 1155, 250 } },	-- 250x Ancient Mana
+						}),
+						i(247919, {	-- Traditional Shal'dorei Rug (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", 1155, 100 } },	-- 150x SAncient Mana
 						}),
 					},
 				}),
@@ -292,13 +333,34 @@ root(ROOTS.Zones, {
 					["coord"] = { 49.4, 75.8, SURAMAR },
 					["groups"] = {
 						i(127025, {	-- Imbued Silkweave Hood [Rank 1] (RECIPE!)
-							["cost"] = {{ "i", 124437, 100 }},	-- 100x Shal'dorei Silk
+							["cost"] = { { "i", 124437, 100 } },	-- 100x Shal'dorei Silk
 						}),
 					},
 				}),
 				n(112226, {	-- Markus Hjolbruk
 					["coord"] = { 71.6, 48.8, SURAMAR },
 					["groups"] = { i(133819) },	-- Recipe: Koi-Scented Stormray [Rank 1] (RECIPE!)
+				}),
+				n(256826, {	-- Mrgrgrl
+					["timeline"] = { ADDED_12_0_0 },
+					["coord"] = { 15.1, 53.3, SURAMAR },
+					["groups"] = {
+						i(258222, {	-- Shellscale Standard (DECOR!!)
+							["sourceQuest"] = 41143,	-- Mglrgrs Of Our Grmlgrlr
+						}),
+					},
+				}),
+				n(255101, {	-- Mynde <Stone Skimmer>
+					["coord"] = { 45.6, 69.2, SURAMAR },
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(257393, {	-- Suramar Stepping Stone (DECOR!)
+							["cost"] = { { "c", 1155, 50 } },	-- 50x Ancient Mana
+						}),
+						i(257598, {	-- Suramar Stepping Stone Set (DECOR!)
+							["cost"] = { { "c", 1155, 125 } },	-- 125x Ancient Mana
+						}),
+					},
 				}),
 				n(112059, {	-- Sasunne Dameuse <Souvenirs>
 					["coord"] = { 51.2, 50.0, SURAMAR },
@@ -309,7 +371,16 @@ root(ROOTS.Zones, {
 						i(140671),	-- Souvenir Raptor
 						--]]
 						i(130151, {	-- The "Devilsaur" Lunchbox (TOY!)
-							["cost"] = {{ "c", 1155, 1000 }},	-- 1,000x Ancient Mana
+							["cost"] = { { "c", 1155, 1000 } },	-- 1,000x Ancient Mana
+						}),
+					},
+				}),
+				n(253434, {	-- Sileas Duskvine <Irongrove Goods>
+					["coord"] = { 26.2, 32.2, SURAMAR },
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(245701, {	-- Elven Round Table (DECOR!)
+							["cost"] = { { "c", ORDER_RESOURCES, 175 } },
 						}),
 					},
 				}),
@@ -329,7 +400,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(140641, {	-- Pattern: Dreadleather Gloves [Rank 1] (RECIPE!)
-							["cost"] = { { "i", 124113, 100 }, },	-- 100x Stonehide Leather
+							["cost"] = { { "i", 124113, 100 } },	-- 100x Stonehide Leather
 						}),
 						i(140643, {	-- Pattern: Dreadleather Jerkin [Rank 1] (RECIPE!)
 							["cost"] = {
@@ -406,7 +477,37 @@ root(ROOTS.Zones, {
 						i(147768, {	-- Suramarian Sapphire (QI!)
 							["b"] = 1,	-- Force BoP since this is only available as a quest item
 							["classes"] = { PALADIN },
-							["cost"] = {{ "c", 1155, 500 }},	-- 500x Ancient Mana
+							["cost"] = { { "c", 1155, 500 } },	-- 500x Ancient Mana
+						}),
+					},
+				}),
+				n(248594, {	-- Sundries Merchant
+					["coord"] = { 50.9, 77.8, SURAMAR },
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(246001, {	-- Orange Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, HONORED },
+							["cost"] = { { "c", 1155, 200 } },	-- 200x Ancient Mana
+						}),
+						i(244677, {	-- Purple Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, REVERED },
+							["cost"] = { { "c", 1155, 300 } },	-- 300x Ancient Mana
+						}),
+						i(246002, {	-- Red Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, REVERED },
+							["cost"] = { { "c", 1155, 300 } },	-- 300x Ancient Mana
+						}),
+						i(244654, {	-- Small Purple Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, FRIENDLY },
+							["cost"] = { { "c", 1155, 100 } },	-- 100x Ancient Mana
+						}),
+						i(244678, {	-- Small Red Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, FRIENDLY },
+							["cost"] = { { "c", 1155, 100 } },	-- 100x Ancient Mana
+						}),
+						i(244676, {	-- Teal Suramar Seat Cushion (DECOR!)
+							["minReputation"] = { FACTION_THE_NIGHTFALLEN, HONORED },
+							["cost"] = { { "c", 1155, 200 } },	-- 200x Ancient Mana
 						}),
 					},
 				}),
@@ -420,7 +521,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(123926, {	-- Plans: Demonsteel Boots [Rank 1] (RECIPE!)
-								["cost"] = {
+							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124438, 20 },	-- 20x Unbroken Claw
 							},

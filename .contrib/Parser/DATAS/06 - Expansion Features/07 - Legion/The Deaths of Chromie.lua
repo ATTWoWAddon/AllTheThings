@@ -327,16 +327,16 @@ root(ROOTS.ExpansionFeatures,
 								i(151828),		-- Ageless Bronze Drake (PET!)
 							}),
 							i(151551, {	-- Time-Lost Keepsake Box
-								i(151547),		--	Brimstone Beacon - When you use this, last rare will instantly spawn
+								i(151547),		-- Brimstone Beacon - When you use this, last rare will instantly spawn
 							}),
 							i(151552, {	-- Time-Lost Keepsake Box
-								i(151548),		--	Tyrande's Moonstone - Use it after you teleported into portal. Hippogryph will fly you to end.
+								i(151548),		-- Tyrande's Moonstone - Use it after you teleported into portal. Hippogryph will fly you to end.
 							}),
 							i(151553, {	-- Time-Lost Keepsake Box
-								i(151549),		--	Cenarion Circle Documents - Speaking with Adrine Towhide will instantly finish that one.
+								i(151549),		-- Cenarion Circle Documents - Speaking with Adrine Towhide will instantly finish that one.
 							}),
 							i(151554, {	-- Time-Lost Keepsake Box
-								i(151546),		--	Stratholme Gate Key
+								i(151546),		-- Stratholme Gate Key
 							}),
 						}),
 					},

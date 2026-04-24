@@ -1,9 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
-		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
+		n(WORLD_QUESTS, sharedData({
+			["isWorldQuest"] = true,
+		}, {
 			q(45924),	-- Abyssal Monstrosity (Invasion WQ)
 			q(45922),	-- Agmozuul (Invasion wq)
 			q(44033),	-- Aw, Nuts!

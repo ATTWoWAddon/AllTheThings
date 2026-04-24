@@ -14,6 +14,8 @@ namespace ATT
         /// </summary>
         public static bool IsErrored { get; private set; }
 
+        public static void ClearError() => IsErrored = false;
+
         public static bool DebugLogging { get; internal set; }
 
         /// <summary>
@@ -23,7 +25,7 @@ namespace ATT
         public static void LogDebug(string message, IDictionary<string, object> data)
         {
             if (DebugLogging)
-                Trace.WriteLine(message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+                Trace.WriteLine(message + GetDataJSON(data));
         }
 
         /// <summary>
@@ -33,7 +35,7 @@ namespace ATT
         public static void LogDebug(string message, object data = null)
         {
             if (DebugLogging)
-                Trace.WriteLine(message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+                Trace.WriteLine(message + GetDataJSON(data));
         }
 
         /// <summary>
@@ -53,7 +55,7 @@ namespace ATT
         public static void LogDebugWarn(string message, object data = null)
         {
             if (DebugLogging)
-                Log("WARN: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+                Log("WARN: " + message + GetDataJSON(data));
         }
 
         /// <summary>
@@ -68,7 +70,10 @@ namespace ATT
             if (!string.IsNullOrEmpty(CurrentSubFileName))
                 Trace.WriteLine(" -- SUBFILE: " + CurrentSubFileName);
 
-            Trace.WriteLine(message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+            if (!string.IsNullOrEmpty(CurrentImportFileName))
+                Trace.WriteLine(" -- IMPORT FILE: " + CurrentImportFileName);
+
+            Trace.WriteLine(message + GetDataJSON(data));
         }
 
         /// <summary>
@@ -77,7 +82,7 @@ namespace ATT
         /// <param name="message"></param>
         public static void LogWarn(string message, object data = null)
         {
-            Log("WARN: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+            Log("WARN: " + message + GetDataJSON(data));
         }
 
         /// <summary>
@@ -87,7 +92,7 @@ namespace ATT
         public static void LogError(string message, object data = null)
         {
             IsErrored = true;
-            Log("ERROR: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+            Log("ERROR: " + message + GetDataJSON(data));
         }
 
         /// <summary>
@@ -119,5 +124,8 @@ namespace ATT
                 Trace.WriteLine(ex.StackTrace);
             }
         }
+
+        private static string GetDataJSON(object data) =>
+            data != null ? (Environment.NewLine + " -DATA- " + ToJSON(data)) : string.Empty;
     }
 }

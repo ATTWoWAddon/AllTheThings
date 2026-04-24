@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 local function MarkOfWHOOOWHATNow(t)
 	-- #if BEFORE LEGION
 	-- Programmatically remove all references to Mark of Honor.
@@ -83,6 +84,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					i(46708, {	-- Deadly Gladiator's Frost Wyrm
 						["description"] = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
 					}),
+					-- #if ANYCLASSIC
+					ach(16316),	-- Challenger: Season 5
+					ach(16313),	-- Rival: Season 5
+					ach(16315),	-- Duelist: Season 5
+					ach(16314, {	-- Gladiator: Season 5
+						i(46708),	-- Deadly Gladiator's Twilight Drake
+					}),
+					-- #endif
 				},
 			}))),
 			n(PVP_HONOR, {
@@ -1017,6 +1026,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					i(46171, {	-- Furious Gladiator's Frost Wyrm
 						["description"] = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
 					}),
+					-- #if ANYCLASSIC
+					ach(17418),	-- Challenger: Season 6
+					ach(17415),	-- Rival: Season 6
+					ach(17417),	-- Duelist: Season 6
+					ach(17416, {	-- Gladiator: Season 6
+						i(46171),	-- Furious Gladiator's Twilight Drake
+					}),
+					-- #endif
 				},
 			}))),
 			n(PVP_GLADIATOR, {
@@ -1381,6 +1398,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					i(47840, {	-- Relentless Gladiator's Frost Wyrm
 						["description"] = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
 					}),
+					-- #if ANYCLASSIC
+					ach(18547),	-- Challenger: Season 7
+					ach(18544),	-- Rival: Season 7
+					ach(18546),	-- Duelist: Season 7
+					ach(18545, {	-- Gladiator: Season 7
+						i(47840),	-- Relentless Gladiator's Twilight Drake
+					}),
+					-- #endif
 				},
 			}))),
 			n(PVP_GLADIATOR, {
@@ -1751,6 +1776,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					i(50435, {	-- Wrathful Gladiator's Frost Wyrm
 						["description"] = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
 					}),
+					-- #if ANYCLASSIC
+					ach(18548),	-- Rival: Season 8
+					ach(18549),	-- Duelist: Season 8
+					ach(18550),	-- Challenger: Season 8
+					ach(18551, {	-- Gladiator: Season 8
+						i(50435),	-- Wrathful Gladiator's Twilight Drake
+					}),
+					-- #endif
 				},
 			}))),
 			n(PVP_GLADIATOR, {

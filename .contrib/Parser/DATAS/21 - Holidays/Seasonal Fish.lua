@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 root(ROOTS.Holidays, {
 	applyevent(EVENTS.SEASONAL_FISH_SUMMER_BASS, n(createHeader({
 		readable = "Seasonal Fish: Summer Bass",
@@ -13,14 +14,14 @@ root(ROOTS.Holidays, {
 		},
 		text = {
 			en = "Seasonal Fish: Summer Bass",
-			es = "Pescado de temporada: lubina de verano",
 			de = "Saisonfisch: Sommerbarsch",
+			es = "Pescado de temporada: lubina de verano",
+			mx = "Pescado de temporada: lubina de verano",
 			fr = "Poisson de saison : bar d'été",
 			it = "Pesce di stagione: spigola estiva",
-			mx = "Pescado de temporada: lubina de verano",
+			ko = "제철 생선: 여름 농어",
 			pt = "Peixe sazonal: robalo de verão",
 			ru = "Сезонная рыба: летний окунь",
-			ko = "제철 생선: 여름 농어",
 			cn = "时令鱼类：夏季鲈鱼",
 			tw = "季節性魚類：夏日鱸魚",
 		},
@@ -58,14 +59,14 @@ root(ROOTS.Holidays, {
 		},
 		text = {
 			en = "Seasonal Fish: Winter Squid",
-			es = "Pescado de temporada: calamares de invierno",
 			de = "Saisonfisch: Winterkalmar",
+			es = "Pescado de temporada: calamares de invierno",
+			mx = "Pescado de temporada: calamares de invierno",
 			fr = "Poisson de saison : calmar d'hiver",
 			it = "Pesce di stagione: calamari invernali",
-			mx = "Pescado de temporada: calamares de invierno",
+			ko = "제철 생선: 겨울 오징어",
 			pt = "Peixe sazonal: Lula de Inverno",
 			ru = "Сезонная рыба: зимний кальмар",
-			ko = "제철 생선: 겨울 오징어",
 			cn = "时令鱼类：冬鱿鱼",
 			tw = "季節性魚類：冬魷魚",
 		},

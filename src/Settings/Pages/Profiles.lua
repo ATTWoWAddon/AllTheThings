@@ -1,5 +1,4 @@
 local appName, app = ...;
-if app.IsClassic then return; end	-- Classic isn't ready for this yet, but I want it!
 local L, settings, tinsert = app.L, app.Settings, tinsert;
 local Callback = app.CallbackHandlers.Callback;
 
@@ -59,7 +58,7 @@ local buttonInitializeProfiles = child:CreateButton(
 	OnClick = function(self)
 		app:ShowPopupDialog(L.PROFILE_INITIALIZE_CONFIRM,
 		function()
-			app.SetupProfiles()
+			settings.SetupProfiles()
 			Callback(InitProfilesButton_Disable, self)
 		end)
 	end,
@@ -113,7 +112,7 @@ local buttonDeleteProfile = child:CreateButton(
 		end
 	end
 })
-buttonDeleteProfile:SetPoint("BOTTOMLEFT", profileScroller, "BOTTOMRIGHT", 5, -1)
+buttonDeleteProfile:SetPoint("BOTTOMLEFT", profileScroller, "BOTTOMRIGHT", 15, -1)
 
 -- Switch Button
 local buttonSwitchProfile = child:CreateButton(

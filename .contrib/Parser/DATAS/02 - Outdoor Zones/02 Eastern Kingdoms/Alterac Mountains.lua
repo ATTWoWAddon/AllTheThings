@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if BEFORE CATA
 -- This whole subzone used to be its own standalone zone and was merged with Hillsbrad with the Cataclysm.
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
@@ -43,11 +44,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maxReputation"] = { FACTION_SYNDICATE, NEUTRAL },	-- Syndicate, Neutral.
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(105570, {	-- Alliance Strongbox
+					["coords"] = {
+						{ 21.4, 62.3, ALTERAC_MOUNTAINS },
+						{ 12.6, 79.4, ALTERAC_MOUNTAINS },
+					},
+					["races"] = HORDE_ONLY,
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 70,
+				}),
+			}),
+			-- #endif
+			pickpocketing({
+				i(17124, {	-- Syndicate Emblem
+					["crs"] = {
+						14221,	-- Gravis Slipknot
+						2246,	-- Syndicate Assassin
+						2247,	-- Syndicate Enforcer
+						2240,	-- Syndicate Footpad
+						2245,	-- Syndicate Saboteur
+						2243,	-- Syndicate Sentry
+						2242,	-- Syndicate Spy
+						2241,	-- Syndicate Thief
+						2319,	-- Syndicate Wizard
+					},
+				}),
+			}),
 			n(PROFESSIONS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(214212, {	-- Shadowy Figure
 					["providers"] = {
-						--{ "o",  },	-- Shard of Pure Light
+						-- { "o",  },	-- Shard of Pure Light
 						{ "i", 211421 },	-- The Box
 					},
 					["coord"] = { 88.6, 73.6, ALTERAC_MOUNTAINS },
@@ -105,10 +134,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(522, {	-- Assassin's Contract
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
-					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["cr"] = 2434,	-- Shadowy Assassin
 					["lvl"] = 30,
 				}),
 				q(523, {	-- Baron's Demise
@@ -196,7 +223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Crushridge Warmonger
 							["provider"] = { "n", 2287 },	-- Crushridge Warmonger
-							["coord"] = { 38, 54.6, ALTERAC_MOUNTAINS },
+							["coord"] = { 38.0, 54.6, ALTERAC_MOUNTAINS },
 						}),
 						i(5249, {	-- Burning Sliver
 							["timeline"] = { REMOVED_4_0_3 },
@@ -269,7 +296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2318 },	-- Argus Shadow Mage
 						}),
 						objective(2, {	-- 0/1 Head of Nagaz
-							["provider"] = { "n", 3672 },	-- Head of Nagaz
+							["provider"] = { "i", 3672 },	-- Head of Nagaz
 							["coord"] = { 39.6, 15.8, ALTERAC_MOUNTAINS },
 							["cr"] = 2320,	-- Nagaz
 						}),
@@ -373,7 +400,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1356 },	-- Prospector Stormpike
 						{ "i", 3518 },	-- Decrypted Letter
 					},
-					["coord"] = { 74.4, 12, IRONFORGE },
+					["coord"] = { 74.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
@@ -395,7 +422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(533, {	-- Infiltration
-					["sourceQuest"] = 498,	-- The Rescue,
+					["sourceQuest"] = 498,	-- The Rescue
 					["qg"] = 2229,	-- Krusk
 					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -442,7 +469,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3521 },	-- Cleverly Encrypted Letter
 					},
-					["coord"] = { 50.4, 57, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -490,7 +517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   6777 },	-- Zan Shivsproket <Speciality Engineer>
 						{ "i", 217737 },	-- Modified Talisman
 					},
-					["coord"] = { 86, 80, ALTERAC_MOUNTAINS },
+					["coord"] = { 86.0, 80.0, ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { SILVERPINE_FOREST },
 					["classes"] = { ROGUE },

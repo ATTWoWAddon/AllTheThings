@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(AZSHARA, {
 		-- #if BEFORE CATA
@@ -124,7 +125,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				fp(44, {	-- Bilgewater Harbor, Azshara [CATA+] / Valormok, Azshara
 					["cr"] = 8610,	-- Kroum <Wind Rider Master>
-					["coord"] = { 53, 49.8, AZSHARA },
+					["coord"] = { 53.0, 49.8, AZSHARA },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
@@ -160,6 +161,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(179497, {	-- Mossy Footlocker
+					["coords"] = {
+						{ 49.6, 37.2, AZSHARA },
+						{ 59.8, 73.5, AZSHARA },
+						{ 80.3, 36.3, AZSHARA },
+					},
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 225,
+				}),
+			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(7866, {	-- Peter Galen <Master Dragonscale Leatherworker>
@@ -409,24 +423,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3602, {	-- Azsharite
 					["sourceQuest"] = 3511,	-- The Name of the Beast (3/3)
-					["providers"] = {
-						{ "n", 7783 },	-- Loramus Thalipedes
-						{ "i", 10834 },	-- Felhound Tracker Kit
-						{ "i", 10832 },	-- Fel Tracker Owner's Manual
-					},
+					["qg"] = 7783,	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/20 Crystallized Azsharite
-							["providers"] = {
-								{ "i",  10714 },	-- Crystallized Azsharite
-								{ "o", 152622 },	-- Azsharite Formation
-							},
-							["cost"] = {{ "i", 10831, 1 }},	-- Fel Orb
+							["provider"] = { "i",  10714 },	-- Crystallized Azsharite
 						}),
-						i(10839),	-- Crystallized Note
-						i(10840),	-- Crystallized Note
+						i(10834, {	-- Felhound Tracker Kit
+							i(10832),	-- Fel Tracker Owner's Manual
+							i(10831),	-- Fel Orb
+						}),
 					},
 				}),
 				q(14385, {	-- Azsharite Experiment Number One
@@ -499,7 +507,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 4485 },	-- Belgrom Rockmaul
 						{ "i", 10643 },	-- Sealed Letter to Ag'tor
 					},
-					["coord"] = { 75, 34.2, ORGRIMMAR },
+					["coord"] = { 75.0, 34.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
@@ -1036,6 +1044,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(45570, {	-- In Safer Hands
+					["sourceQuest"] = 44925,	-- Closing the Eye
 					["qg"] = 117252,	-- Archmage Xylem
 					["coord"] = { 25.2, 38.0, AZSHARA },
 					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
@@ -1072,7 +1081,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 8659 },	-- Jes'rimon
 						{ "i", 10680 },	-- Jes'rimon's Note
 					},
-					["coord"] = { 55.6, 34, ORGRIMMAR },
+					["coord"] = { 55.6, 34.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -2000,6 +2009,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.9, 71.8, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						o(201579, {	-- Keystone Shard
+							["coord"] = { 57.6, 71.0, AZSHARA },
+							["groups"] = { i(49094) },	-- Keystone Shard (QI!)
+						}),
+					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8151, {	-- The Hunter's Charm
 					["allianceQuestData"] = {
@@ -2037,7 +2052,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8405,	-- Ogtinc
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 7972, 1 }},	-- Ichor of Undeath
+					["cost"] = { { "i", 7972, 1 } },	-- Ichor of Undeath
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2446,27 +2461,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
-				n(14464, {	-- Avalanchion
-					-- TODO: Move this to an Elemental Invasion World Event file.
-					["description"] = "This is only available during an Elemental Invasion.",
-					["coords"] = {
-						{ 72.6, 20.0, AZSHARA },
-						{ 77.2, 16.6, AZSHARA },
-						{ 82.6, 21.0, AZSHARA },
-						{ 77.0, 24.2, AZSHARA },
-						{ 80.0, 24.2, AZSHARA },
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-					["groups"] = {
-						i(18673, {	-- Avalanchion's Stony Hide
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18674, {	-- Hardened Stone Band
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
-					},
-				}),
 				n(6651, {	-- Gatekeeper Rageroar
 					-- #if BEFORE 4.0.3
 					["description"] = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",
@@ -2541,7 +2535,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(107477, {	-- N.U.T.Z
-					["coord"] = { 44, 75.6, AZSHARA },
+					["coord"] = { 44.0, 75.6, AZSHARA },
 					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(13896, {	-- Scalebeard
@@ -2587,8 +2581,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				o(152620, {	-- Azsharite Formation
+					["coord"] = { 50.0, 70.1, AZSHARA },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(10714),	-- Crystallized Azsharite
+						i(10840),	-- Crystallized Note
+					},
+				}),
+				o(152621, {	-- Azsharite Formation
+					["coord"] = { 52.6, 78.3, AZSHARA },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(10714),	-- Crystallized Azsharite
+						i(10839),	-- Crystallized Note
+					},
+				}),
+				o(152622, {	-- Azsharite Formation
+					["coord"] = { 60.7, 86.5, AZSHARA },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(10714),	-- Crystallized Azsharite
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(226412, {	-- Rune of Pole Weapon Specialization
 					["provider"] = { "o", 457091 },	-- Chen's Training Manual
 					["coord"] = { 76.9, 44.2, AZSHARA },
@@ -2600,8 +2617,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				-- #endif
 			}),
-			-- #endif
 			n(VENDORS, {
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
 					["coord"] = { 45.2, 90.8, AZSHARA },
@@ -2643,6 +2660,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(10607, {	-- Schematic: Deepdive Helmet (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainer
 						}),
+					},
+				}),
+				n(3621, {	-- Kurll
+					["coord"] = { 21.8, 52.0, AZSHARA },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						i(231780, {	-- Tome of Conjure Water VIII
+							["timeline"] = { ADDED_1_15_4 },
+						}),
+						-- #endif
 					},
 				}),
 				n(49885, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>

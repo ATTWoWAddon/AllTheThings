@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(238, {	-- The Stockade
 		-- #if BEFORE MOP
@@ -8,6 +9,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 717,	-- The Stockade
+		["zone-text-names"] = {
+			"Stormwind Stockade",	-- enUS
+		},
 		-- #endif
 		["mapID"] = THE_STOCKADE,
 		["coords"] = {
@@ -16,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #elseif AFTER WRATH
 			{ 51.6, 69.4, STORMWIND_CITY },
 			-- #else
-			{ 41.2, 58, STORMWIND_CITY },
+			{ 41.2, 58.0, STORMWIND_CITY },
 			-- #endif
 		},
 		["lvl"] = 15,
@@ -95,7 +99,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if AFTER WRATH
 						{ 51.6, 69.4, STORMWIND_CITY },
 						-- #else
-						{ 41.2, 58, STORMWIND_CITY },
+						{ 41.2, 58.0, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_1 },
@@ -185,7 +189,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if AFTER WRATH
 						{ 51.6, 69.4, STORMWIND_CITY },
 						-- #else
-						{ 41.2, 58, STORMWIND_CITY },
+						{ 41.2, 58.0, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_1 },
@@ -199,7 +203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(386, {	-- What Comes Around...
 					["qg"] = 859,	-- Guard Berton
-					["coord"] = { 26, 43, REDRIDGE_MOUNTAINS },
+					["coord"] = { 26.0, 43.0, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,

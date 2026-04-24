@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(TREASURES, {
@@ -11,9 +12,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 61006,
 			}),
 			o_repeated({
-			-- Rewards
+				-- Rewards
 				i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
-			-- Objects
+				-- Objects
 				o(353687, {	-- Broken Bell
 					["coord"] = { 58.3, 66.2, BASTION },
 					["questID"] = 60795,
@@ -182,21 +183,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 53.5, 80.4, BASTION },	-- Treasure
 				},
 				["questID"] = 58298,	-- triggers 58292, 58293 and 58294 too
-				["cost"] = {{"i", 173973, 2}},	-- 2x Purian
+				["cost"] = { { "i", 173973, 2 } },	-- 2x Purian
 				["groups"] = {
 					i(173984),	-- Scroll of Aeons (TOY!)
 				},
 			}),
 			o_repeated({	-- Silver Strongbox
 				["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-				["cost"] = {
-					{ "i", 180049, 1 },	-- 1x Steward's Silver Key
-				},
+				["cost"] = { { "i", 180049, 1 } },	-- 1x Steward's Silver Key
 				["groups"] = sharedData({
 					["isDaily"] = true,
-				},{
+				}, {
 					-- Rewards
-					i(184418),	-- Acrobatic Steward (TOY!)
+					i(184418, {	-- Acrobatic Steward (TOY!)
+						["isDaily"] = IGNORED_VALUE,
+					}),
 					-- Objects
 					o(352754, {	-- Silver Strongbox
 						["coord"] = { 45.2, 83.2, BASTION },
@@ -245,7 +246,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 45.6, 33.8, BASTION },
 					{ 59.5, 66.3, BASTION },	-- triggered 60798 / 60799
 				},
-			--	TODO: updated objectIDs to match with coords when the data is available
+				-- TODO: updated objectIDs to match with coords when the data is available
 				["questID"] = 60798,	-- also triggered 60874... why two quests?
 				-- also triggered 60799 for non-kyrian
 				["isDaily"] = true,
@@ -260,9 +261,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 60779,
 				["isDaily"] = true,
 				["crs"] = { 170284 },	-- Elios
-				["cost"] = {
-					{ "i", 180285, 1 },	-- 1x Steward's Golden Key
-				},
+				["cost"] = { { "i", 180285, 1 } },	-- 1x Steward's Golden Key
 			}),
 			o(354208, {	-- Stolen Equipment
 				["coord"] = { 40.5, 49.8, BASTION },
@@ -277,6 +276,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = {
 					i(174007),	-- Purifying Draught
 				},
+			}),
+			o(334345, {	-- Treasure of Courage
+				["coord"] = { 27.1, 19.5, BASTION },
+			}),
+			o(334344, {	-- Treasure of Humility
+				["coord"] = { 24.7, 20.5, BASTION },
+			}),
+			o(334346, {	-- Treasure of Purity
+				["coord"] = { 26.8, 24.7, BASTION },
+			}),
+			o(334343, {	-- Treasure of Wisdom
+				["coord"] = { 23.7, 25.5, BASTION },
 			}),
 			o(352428, {	-- Vesper of Virtues
 				["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
@@ -304,6 +315,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(BASTION, {

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
@@ -9,20 +10,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				n(ACHIEVEMENTS, {
 					ach(42552),	-- Campaign: Highmountain
 					ach(60804),	-- Elusive Foes: Highmountain
-					ach(42579, {	-- Elusive Foes: Highmountain
-						-- Did 60804 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60803),	-- Explore Highmountain
-					ach(42528, {	-- Explore Highmountain
-						-- Did 60803 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60805),	-- Hidden Treasures: Highmountain
-					ach(42634, {	-- Hidden Treasures: Highmountain
-						-- Did 60805 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(42541, {	-- Highmountain
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -32,6 +21,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							42642,	-- Tour Highmountain
 						}},
 						["groups"] = { i(246339) },	-- Duskytooth Fel Snooter (PET!)
+					}),
+					ach(42547, {	-- Highmountain Tribe
+						i(258299, {	-- Hanging Felsteel Cage (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					}),
 					ach(42533, {	-- Looking for Group: Highmountain
 						-- Meta Achievement
@@ -54,15 +48,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							60803,	-- Explore Highmountain
 							60805,	-- Hidden Treasures: Highmountain
 						}},
-					}),
-				}),
-				n(FACTIONS, {
-					faction(FACTION_HIGHMOUNTAIN_TRIBE, {
-						n(ACHIEVEMENTS, {
-							ach(42547, {	-- Highmountain Tribe
-								--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Hanging Felsteel Cage (DECOR!)
-							}),
-						}),
 					}),
 				}),
 				n(ZONE_REWARDS, {

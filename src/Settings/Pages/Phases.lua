@@ -1,4 +1,4 @@
-local _, app = ...;
+local appName, app = ...;
 if not app.IsClassic then return; end	-- This is only available in Classic!
 local date, L, settings = date, app.L, app.Settings;
 
@@ -174,7 +174,7 @@ end
 if app.GameBuildVersion > 50000 then
 	local page = CreateExpansionPage(5);
 	last, yoffset = page.Label, -4;
-	for i,o in ipairs({ { 50, 0, 0 }, { 5001, spacing, -vspacing }, { 5002, spacing }, { 5003, spacing }, { 5004, spacing }, { 5005, spacing }, { 5006, spacing }, { 5007, spacing }, { 51, 0, -vspacing }, { 52, 0, -vspacing }, { 53, 0, -vspacing }, { 54, 0, -vspacing }, }) do
+	for i,o in ipairs({ { 50, 0, 0 }, { 5001, spacing, -vspacing }, { 5002, spacing }, { 5003, spacing }, { 5004, spacing }, { 5005, spacing }, { 5006, spacing }, { 5007, spacing }, { 51, 0, -vspacing }, { 52, 0, 0 }, { 5201, spacing, -vspacing }, { 53, 0, -vspacing }, { 54, 0, 0 }, { 5401, spacing, -vspacing }, }) do
 		local u = o[1];
 		yoffset = o[3] or 6;
 		local phase = phases[u];

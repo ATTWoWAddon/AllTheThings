@@ -821,6 +821,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36599),	-- Ocean Trident
 			i(36600),	-- Village Scythe
 			i(36601),	-- Patient Harpoon
+			i(36603, {	-- Archaic Longspear
+				["timeline"] = { CREATED_3_0_2, ADDED_4_0_1, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+			}),
 			i(36604),	-- Grizzly Glaive
 			i(36605),	-- Wind Scythe
 			i(36606),	-- Rugged Polearm
@@ -865,9 +868,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(37803),	-- Lola's Lifegiving Branch
 			i(37804),	-- Bloodwood Greatstaff
 			i(37806),	-- Zabra's Misplaced Staff
-			i(36603, {	-- Archaic Longspear
-				["timeline"] = { CREATED_3_0_2, ADDED_4_0_1, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
-			}),
 			i(36547, {	-- Jester's Stick
 				["timeline"] = { CREATED_2_0_3, ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
@@ -1236,7 +1236,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		prof(TAILORING, {
 			i(43876, {	-- A Guide to Northern Cloth Scavenging (RECIPE!)
 				-- #if NOT ANYCLASSIC
-				["filterID"] = MISC,	-- temporarily collectible apparently, but becomes unlearned at some
 				["collectible"] = false,
 				-- #endif
 			}),
@@ -1254,14 +1253,14 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 	filter(REAGENTS, {
 		["groups"] = appendAllGroups(
 			-- Table of Content:
-			--	Cloth + Silk
-			--	Elemetal reagents
-			--	Clams
-			--	Cooking reagents
-			--	Other reagents
-			--_________________________________
+			-- 	Cloth + Silk
+			-- 	Elemental reagents
+			-- 	Clams
+			-- 	Cooking reagents
+			-- 	Other reagents
+			-- _________________________________
 			--
-			--	Cloth + Silk:
+			-- 	Cloth + Silk:
 			{
 				i(33470, {
 					["description"] = "Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures."
@@ -1285,9 +1284,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					["maps"] = { NAXXRAMAS },
 				}),
 			},
-			--_________________________________
+			-- _________________________________
 			--
-			--	Elemental reagents:
+			-- 	Elemental reagents:
 			sharedData({	-- Air
 				["coords"] = {
 					{ 75.0, 54.6, GRIZZLY_HILLS },	-- Dun Argol
@@ -1454,9 +1453,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				i(35622),	-- Eternal Water
 			}),
 			{
-			--_________________________________
+			-- _________________________________
 			--
-			--	Clams:
+			-- 	Clams:
 				i(44700, {	-- Brooding Darkwater Clam
 					["coords"] = {
 						{ 60.9, 50.6, BOREAN_TUNDRA },	-- The Flood Plain, southwest
@@ -1530,9 +1529,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					},
 				}),
 				-- i(45909),	-- Giant Darkwater Clam > Properly sourced in Crafted Items/Fishing.
-			--_________________________________
+			-- _________________________________
 			--
-			--	Cooking reagents:
+			-- 	Cooking reagents:
 				i(43013, {	-- Chilled Meat
 					["description"] = "Can drop from any Northrend beasts.",
 				}),
@@ -1656,7 +1655,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						25454,	-- Tundra Crawler
 					},
 				}),
-			--__________________________________
+			-- __________________________________
 			--
 			-- Other reagents:
 				i(43102, {	-- Frozen Orb

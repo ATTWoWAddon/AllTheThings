@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(QUESTS, {
@@ -164,6 +165,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["groups"] = {
 						i(210882),	-- Candle Crown (QI!)
 						i(212575),	-- The Candle Keys (QI!)
+						--
 						i(219464),	-- Earthen Traveler's Boomstick
 						i(219466),	-- Earthen Traveler's Chopper
 						i(219462),	-- Earthen Traveler's Claymore
@@ -175,6 +177,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(219463),	-- Earthen Traveler's Javelin
 						i(219457),	-- Earthen Traveler's Saber
 						i(219459),	-- Earthen Traveler's Staff
+						i(258264, {	-- Kobold Candle Trio (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 				q(80082, {	-- Back to Gundargaz
@@ -332,7 +337,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["sourceQuests"] = { 79354 },	-- The Machine Speakers
 					["provider"] = { "n", 212742 },	-- Moira Thaurissan
 					["coord"] = { 47.2, 34.1, THE_RINGING_DEEPS },
-					--also look like not story quest, tbf... Very Weird...
+					-- also look like not story quest, tbf... Very Weird...
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.01, {	-- The Caretaker of Brunwin's Terrace
@@ -564,6 +569,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 220220 },	-- Berrund the Gleaming
 					["coord"] = { 69.6, 40.9, THE_RINGING_DEEPS },
 					["groups"] = {
+						i(258265, {	-- Kobold Wagon (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(228657),	-- Scrit's Handmade Girdle
 						i(228655),	-- Scrit's Handmade Gloves
 						i(228654),	-- Scrit's Handmade Shoes
@@ -830,7 +838,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(81999, {	-- New Home, New Candle!
-					--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
+					-- ["sourceQuests"] = { 80082 },	-- Back to Gundargaz
 					["provider"] = { "n", 216567 },	-- Janky
 					["coord"] = { 47.8, 35.4, THE_RINGING_DEEPS },
 				}),
@@ -879,12 +887,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						}),
 						i(217395),	-- Freshly Smithed Tools (QI!)
 						i(216681),	-- Merchant Stall Parts (QI!)
+						--
+						i(258267, {	-- Candle-Festooned Wooden Awning (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.10, {	-- Kobold Work Crew
 				q(80058, {	-- Kobold Kleanup
-					--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
+					-- ["sourceQuests"] = { 80082 },	-- Back to Gundargaz
 					["provider"] = { "n", 216568 },	-- Fourman Grimes
 					["coord"] = { 47.8, 35.4, THE_RINGING_DEEPS },
 				}),
@@ -911,7 +923,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 217131 },	-- Fourman Grimes
 					["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
 					["groups"] = {
-						--currency(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
+						-- currency(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
 					},
 				}),
 			}),
@@ -925,7 +937,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
 					-- Instance ID 2601
-					--["maps"] = { x },	-- could be scenario mapID but it is not here?
+					-- ["maps"] = { x },	-- could be scenario mapID but it is not here?
 					["groups"] = {
 						o(421525, {	-- Shinies
 							i(217997),	-- Shiny Rock (QI!)
@@ -938,14 +950,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
 					-- Instance ID 2601
-					--["maps"] = { x },	-- could be scenario mapID
+					-- ["maps"] = { x },	-- could be scenario mapID
 				}),
 				q(79507, {	-- The Day the Stoneheads Came
 					["sourceQuests"] = { 79505 },	-- Chomps and the Cave-In
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
 					-- Instance ID 2601
-					--["maps"] = { x },	-- could be scenario mapID
+					-- ["maps"] = { x },	-- could be scenario mapID
 					["groups"] = {
 						o(421597, {	-- Village Center
 							i(224403),	-- Heirloom Wax (QI!)
@@ -969,17 +981,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
 					-- Instance ID 2601
-					--["maps"] = { x },	-- could be scenario mapID
+					-- ["maps"] = { x },	-- could be scenario mapID
 				}),
 				q(79510, {	-- The Wickless Candle
 					["sourceQuests"] = { 79508 },	-- Mipsy Mole-Rider
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
 					-- Instance ID 2601
-					--["maps"] = { x },	-- could be scenario mapID
+					-- ["maps"] = { x },	-- could be scenario mapID
 					["groups"] = {
 						o(421735, {	-- Prooftelling Flower
 							i(219224),	-- Prooftelling Flower (QI!)
+						}),
+						--
+						i(258262, {	-- Kobold Digger's Chair (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					},
 				}),
@@ -1038,7 +1054,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(79327, {	-- The Glittering Shard
 					["sourceQuests"] = { 79944 },	-- Raging Rifts
 					["provider"] = { "i", 212595 },	-- Glittering Shard
-					["coord"] = { 57, 16, THE_RINGING_DEEPS },
+					["coord"] = { 57.0, 16.0, THE_RINGING_DEEPS },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.13, {	-- Abysmal Extraction
@@ -1153,7 +1169,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(80593, {	-- A Sip of Cinder
 					["sourceQuests"] = {
 						80577,	-- Readying the Recitation
-						--80578,	-- The Common Costume // unsure about this one
+						-- 80578,	-- The Common Costume // unsure about this one
 					},
 					["provider"] = { "n", 220600 },	-- Haimaz
 					["coord"] = { 62.0, 45.5, THE_RINGING_DEEPS },
@@ -1217,19 +1233,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["sourceQuest"] = 84020,	-- A Mech in Need
 					["provider"] = { "n", 213875  },	-- Speaker Jurlax
 					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
-					["cost"] = { { "i", 219301, 1 }, },	-- 1x Overclocked Gear-a-Rang Launcher
+					["cost"] = { { "i", 219301, 1 } },	-- 1x Overclocked Gear-a-Rang Launcher
 				}),
 				q(84023, {	-- Orienting Ourselves
 					["sourceQuest"] = 84021,	-- Machine Without Cogs
 					["provider"] = { "n", 213875  },	-- Speaker Jurlax
 					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
-					["cost"] = { { "i", 219299, 1 }, },	-- 1x Synergistic Brewterializer
+					["cost"] = { { "i", 219299, 1 } },	-- 1x Synergistic Brewterializer
 				}),
 				q(84024, {	-- Clutching Control
 					["sourceQuest"] = 84023,	-- Orienting Ourselves
 					["provider"] = { "n", 213875  },	-- Speaker Jurlax
 					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
-					["cost"] = { { "i", 219306, 1 }, },	-- 1x Burin of the Candle King
+					["cost"] = { { "i", 219306, 1 } },	-- 1x Burin of the Candle King
 				}),
 				q(84025, {	-- Repurposed, Restored
 					["sourceQuest"] = 84024,	-- Clutching Control
@@ -1278,7 +1294,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			-- ?
 			q(83165, {	-- Badly Behaved Bot
-				--["sourceQuests"] = { x },	-- ?
+				-- ["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 223759 },	-- Sinruna
 				["coord"] = { 60.2, 57.0, THE_RINGING_DEEPS },
 			}),
@@ -1294,25 +1310,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			q(78877, {	-- Bless These Homes
-				--["sourceQuests"] = { x },	-- ?
+				-- ["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 213875 },	-- Speaker Jurlax
 				["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
 				["classes"] = { PRIEST, PALADIN },
 			}),
 			q(78874, {	-- Conjured Help
-				--["sourceQuests"] = { x },	-- ?
+				-- ["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 213840 },	-- Innkeeper Brax <Innkeeper>
 				["coord"] = { 48.0, 32.2, THE_RINGING_DEEPS },
 				["classes"] = { MAGE },
 			}),
 			q(78879, {	-- Evoking the Forge
-				--["sourceQuests"] = { x },	-- ?
+				-- ["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 213841 },	-- Foreman Svart
 				["coord"] = { 47.4, 28.4, THE_RINGING_DEEPS },
 				["classes"] = { EVOKER },
 			}),
 			q(78827, {	-- Go Take Candle!
-				--["sourceQuests"] = { x },	-- ?
+				-- ["sourceQuests"] = { x },	-- ?
 				["provider"] = { "o", 413694 },	-- Suspicious Vent
 				["coord"] = { 48.1, 32.0, THE_RINGING_DEEPS },
 				["classes"] = { ROGUE },
@@ -1412,7 +1428,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(82991),	-- Talking to Ferno (225018) inside Camp Murrock, When bind hearthstone location to Camp Murroch tavern
 				q(82116),	-- First option selected with ZZ-01-47 during 79023 'Small Friend, Big Plans' (2nd/3rd options have no HQT)
 				hqt(84585, name(HEADERS.Object, 457120, {	-- Rappelling Anchor
-					["coord"] = { 51, 47.6, THE_RINGING_DEEPS },
+					["coord"] = { 51.0, 47.6, THE_RINGING_DEEPS },
 				})),
 			}),
 		}),

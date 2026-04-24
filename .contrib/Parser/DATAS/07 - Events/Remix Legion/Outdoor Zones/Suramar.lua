@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
@@ -9,20 +10,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				n(ACHIEVEMENTS, {
 					ach(42586),	-- Campaign: Suramar
 					ach(60813),	-- Elusive Foes: Suramar
-					ach(42650, {	-- Elusive Foes: Suramar
-						-- Did 60813 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60812),	-- Explore Suramar
-					ach(42665, {	-- Explore Suramar
-						-- Did 60812 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60814),	-- Hidden Treasures: Suramar
-					ach(42577, {	-- Hidden Treasures: Suramar
-						-- Did 60814 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(42537),	-- Insurrection
 					ach(42551, {	-- Looking for Group: Suramar
 						-- Meta Achievement
@@ -57,6 +46,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							i(253349),	-- Kaldorei Queen's Bangles
 						},
 					}),
+					ach(42628, {	-- The Nightfallen
+						i(256677, {	-- Large Legion Candle (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(42564, {	-- Tour Suramar
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -66,20 +60,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}},
 					}),
 				}),
-				n(FACTIONS, {
-					faction(FACTION_THE_NIGHTFALLEN, {
-						n(ACHIEVEMENTS, {
-							ach(42628, {	-- The Nightfallen
-								--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Large Legion Candle (DECOR!)
-								--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Small Legion Candle (DECOR!)
-							}),
-						}),
-					}),
-				}),
 				n(ZONE_REWARDS, {
-					filter(CLOAKS, {
-
-					}),
 					filter(CLOTH, {
 						i(240537),	-- Manasinged Amice
 						i(240534),	-- Manasinged Cinch

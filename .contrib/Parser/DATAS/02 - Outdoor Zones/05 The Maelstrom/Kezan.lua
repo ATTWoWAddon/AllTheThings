@@ -201,7 +201,7 @@ root(ROOTS.Zones, {
 					}),
 					q(14011, {	-- Primal Strike (Goblin)
 						["qg"] = 34695,	-- Maxx Avalanche <Shaman Trainer>
-						["coord"] = { 59.6, 77, KEZAN },
+						["coord"] = { 59.6, 77.0, KEZAN },
 						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						["races"] = { GOBLIN },
 						["classes"] = { SHAMAN },
@@ -261,7 +261,7 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 					}),
 					q(90869, {	-- It's All in the Image
-						--["sourceQuest"] = TODO,	-- TODO
+						-- ["sourceQuest"] = TODO,	-- TODO
 						["qg"] = 34874,	-- Megs Dreadshredder
 						["coord"] = { 58.3, 76.4, KEZAN },
 						["timeline"] = { ADDED_11_2_0 },
@@ -305,7 +305,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(VENDORS, {
-					n(37761, {	--	Sally "Salvager" Sandscrew <Armor Vendor>
+					n(37761, {	-- Sally "Salvager" Sandscrew <Armor Vendor>
 						["coord"] = { 59.8, 72.6, KEZAN },
 						["sym"] = { { "sub", "common_vendor", 49884 } },	-- Sally "Salvager" Sandscrew <Armor Vendor>
 					}),

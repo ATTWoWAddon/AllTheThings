@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		explorationHeader({
@@ -35,6 +36,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			exploration(14800),	-- The Earthenworks
 			exploration(14799),	-- The Hallowfall Gate
 			exploration(14811),	-- The Living Grotto
+			map_exploration(14795,{coord={37.8,28.3,THE_RINGING_DEEPS}}),	-- The Ringing Deeps
 			exploration(14808),	-- The Rumbling Wastes
 			exploration(14817),	-- The Stonevault Exterior
 			visit_exploration(15519,{coord={75.8,75.3,THE_RINGING_DEEPS}, timeline={ADDED_11_1_0}}),	-- The Verdant Gutters

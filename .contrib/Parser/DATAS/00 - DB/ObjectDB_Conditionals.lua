@@ -1,13 +1,8 @@
--- #if NOT DEBUG
 -- PROGRAMMATIC OBJECT LOCALES
 -- Brightly Colored Egg
 local brightlyColoredEgg = ObjectDB[113768];
 brightlyColoredEgg.icon = [[~_.asset("Holiday_noblegarden")]];
 brightlyColoredEgg.text.en = WOWAPI_GetSpellName(61820);
-
--- Research Equipment
-local researchEquipment = ObjectDB[161521];
-researchEquipment.icon = [[~_.asset("Icon_PetFamily_Mechanical")]];
 
 -- Spirit of the Wolf
 ObjectDB[226469].text.en = WOWAPI_GetSpellName(154259);
@@ -245,7 +240,6 @@ ObjectDB[176213].text.es = "Sangre de Héroes";	-- Blood of Heroes
 
 -- #if BEFORE CATA
 ObjectDB[182947].icon = 133738;	-- The Codex of Blood
--- #endif
 -- #endif
 
 -- Hero's Call Board

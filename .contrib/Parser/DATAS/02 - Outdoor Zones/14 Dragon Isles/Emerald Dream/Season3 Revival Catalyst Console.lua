@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local ADMIRDRASSIL_THE_DREAMS_HOPE = 2502;
 
 local SymRaidAdmirdrassil = function(ClassID, DiffID)

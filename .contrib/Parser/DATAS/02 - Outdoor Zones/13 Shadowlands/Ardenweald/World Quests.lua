@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ARDENWEALD, {
 		n(WORLD_QUESTS, {
@@ -211,7 +212,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(58975),	-- Pest Removal
 			q(60337, {	-- Pupa Trooper
 				["groups"] = {
-					o(352047, {	--Ardenmoth Cocoon
+					o(352047, {	-- Ardenmoth Cocoon
 						i(178717),	-- Ardenmoth Cocoon (QI!)
 					}),
 				},
@@ -305,7 +306,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 						},
 						}),
-					i(178876),	-- Sack of Supplies (QI!)
+					o(352089, {	-- Supply Baskets
+						i(178876),	-- Sack of Supplies (QI!)
+					}),
 				},
 			}),
 			q(60609),	-- Who Devours the Devourers?
@@ -313,6 +316,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {

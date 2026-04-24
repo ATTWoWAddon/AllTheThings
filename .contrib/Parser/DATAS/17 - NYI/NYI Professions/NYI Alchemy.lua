@@ -53,8 +53,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(171296),	-- [DNT] REUSE ME \\ Brilliant Concoction
 					i(171297),	-- [DNT] REUSE ME \\ Culinary Concoction
 					i(171294),	-- [DNT] REUSE ME \\ Slippery Concoction
-					i(171277),	-- [DNT] Spiritual Intellect Flask \\ Spiritual Intellect Flask
-					i(171279),	-- [DNT] Spiritual Strength Flask \\ Spiritual Strength Flask
+					i(171277),	-- [DNT] Spiritual Intellect Flask
+					i(171279),	-- [DNT] Spiritual Strength Flask
 					i(171293),	-- Alchemist's Pouch
 					i(171281),	-- Eternal Cauldron
 					i(171282),	-- Eternal Cauldron
@@ -100,6 +100,20 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(212295),	-- Vicious Flask of Manifested Fury
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					i(245900),	-- Fleeting Potion of Zealotry+
+					i(245901),	-- Fleeting Potion of Zealotry++
+					i(241315),	-- Haranir Phial of Concentrated Ingenuity+
+					i(241314),	-- Haranir Phial of Concentrated Ingenuity++
+					i(241279),	-- Midnight Catalyst
+					i(241328),	-- Midnight Stacking Heals Flask++
+					i(241329),	-- Midnight Stacking Heals Flask+
+					i(241290),	-- Midnight Void Potion 3
+					i(241335),	-- Vicious Thalassian Flask of Honor++
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
@@ -107,7 +121,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				n(P1xx, {
 					r(11447),	-- Elixir of Waterwalking
 					r(22430),	-- Refined Scale of Onyxia
-					-- With SpellID attched
+					-- With SpellID attached
 					i(5641),	-- Recipe: Cowardly Flight Potion
 					i(2556),	-- Recipe: Elixir of Tongues
 					i(13500),	-- Recipe: Greater Holy Protection Potion
@@ -116,7 +130,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.TBC, {
 				-- 2.3.0
 				expansion(EXPANSION.TBC, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
-					-- Without SpellID attched
+					-- Without SpellID attached
 					i(34481),	-- Recipe: Mad Alchemist's Potion
 				})),
 			}),
@@ -135,7 +149,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 
 				-- 4.3.0
 				expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
-					-- With SpellID attched
+					-- With SpellID attached
 					i(71955),	-- Recipe: Transmute Deepholm Iolite
 					i(71956),	-- Recipe: Transmute Elven Peridot
 					i(71958),	-- Recipe: Transmute Lava Coral
@@ -154,17 +168,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(156575),	-- Greater Draenor Armor Flask
 					r(156574),	-- Greater Draenor Spirit Flask
 					r(156583),	-- Draenor Treasure Finding Potion
-					-- With SpellID attched
-					i(112049),	--  Recipe: Alchemical Catalyst - Fireweed
-					i(112050),	--  Recipe: Alchemical Catalyst - Flytrap
-					i(112054),	--  Recipe: Alchemical Catalyst - Lotus
-					i(112053),	--  Recipe: Alchemical Catalyst - Orchid
-					i(112051),	--  Recipe: Alchemical Catalyst - Starflower
-					i(112025),	--  Recipe: Draenor Haste Flask
-					i(113625),	--  Recipe: Draenor Versatility Flask
-					i(112032),	--  Recipe: Greater Draenor Haste Flask
-					i(113626),	--  Recipe: Greater Draenor Versatility Flask
-					-- Without SpellID attched
+					-- With SpellID attached
+					i(112049),	-- Recipe: Alchemical Catalyst - Fireweed
+					i(112050),	-- Recipe: Alchemical Catalyst - Flytrap
+					i(112054),	-- Recipe: Alchemical Catalyst - Lotus
+					i(112053),	-- Recipe: Alchemical Catalyst - Orchid
+					i(112051),	-- Recipe: Alchemical Catalyst - Starflower
+					i(112025),	-- Recipe: Draenor Haste Flask
+					i(113625),	-- Recipe: Draenor Versatility Flask
+					i(112032),	-- Recipe: Greater Draenor Haste Flask
+					i(113626),	-- Recipe: Greater Draenor Versatility Flask
+					-- Without SpellID attached
 					i(112052),	-- Recipe: Alchemical Catalyst - Arrowbloom
 					i(112043),	-- Recipe: Draenic Mana Potion
 					i(112022),	-- Recipe: Mighty Shadow Protection Potion
@@ -194,7 +208,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 					r(298737),	-- Potion of Reconstitution [Rank 1]
 					r(298738),	-- Potion of Reconstitution [Rank 2]
-					-- With SpellID attched
+					-- With SpellID attached
 					i(169493),	-- Recipe: Potion of Reconstitution [Rank 3]
 					i(169601),	-- Recipe: Potion of Reconstitution [Rank 3]
 				})),
@@ -215,7 +229,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(307110),	-- Unknown
 					r(307111),	-- Unknown
 					r(307112),	-- Unknown
-					-- Without SpellID attched
+					-- Without SpellID attached
 					i(183868),	-- [DNT][REUSE ME] Recipe: Crafter's Mark III
 					i(182665),	-- Recipe: Sins to Virtue
 				})),
@@ -231,7 +245,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(371635),	-- Demonstration Item Recipe
 					r(370771),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
 					r(382571),	-- Opening
-					-- With SpellID attched
+					-- With SpellID attached
 					i(191598),	-- Recipe: Alchemical Flavor Pocket (RECIPE!)
 					i(191453),	-- Recipe: Frostfire Potion of Draconic Vigor (RECIPE!)
 					i(191457),	-- Recipe: Potion of Burning Purification (RECIPE!)
@@ -294,8 +308,22 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(433606),	-- Unknown
 					r(433607),	-- Unknown
 					r(433608),	-- Unknown
-					-- With SpellID attched
+					-- With SpellID attached
 					i(224019),	-- Recipe: Vicious Flask of Manifested Fury (RECIPE!)
+				})),
+			}),
+			expansion(EXPANSION.MID, {
+				-- 12.0.0
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+					r(1230772),	-- [DNT] 12.0 Alchemy Recipe Spell Template
+					r(1233131),	-- [DNT] 12.0 Alchemy Recipe Spell Template
+					r(1233139),	-- [DNT] 12.0 Alchemy Recipe Spell Template
+					r(1230871),	-- [DNT] Alchemy Recipe - Reuse Me
+					r(1230879),	-- [DNT] Midnight Stacking Heals Flask
+					r(1230884),	-- [DNT] Midnight Vicious Flask of Classical Spirits
+					r(1230882),	-- [DNT] Midnight Vicious Flask of Determination
+					r(1230881),	-- [DNT] Midnight Vicious Flask of Manifested Fury
+					r(1230880),	-- [DNT] Midnight Vicious Flask of the Wrecking Ball
 				})),
 			}),
 		}),

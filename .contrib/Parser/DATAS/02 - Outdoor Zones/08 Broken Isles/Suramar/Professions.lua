@@ -17,25 +17,25 @@ root(ROOTS.Zones, {
 								-- extra info for the item can go here
 							}),
 							i(147311, {	-- Crate of Bobbers: Replica Gondola (TOY!)
-								["cost"] = { { "i", 146962, 100 }, },	-- 100x Golden Minnow
+								["cost"] = { { "i", 146962, 100 } },	-- 100x Golden Minnow
 							}),
 							i(133717, {	-- Enchanted Lure
-								["cost"] = { { "i", 146962, 25 }, },	-- 25x Golden Minnow
+								["cost"] = { { "i", 146962, 25 } },	-- 25x Golden Minnow
 								["sym"] = {{"fill"}},
 							}),
 							i(133719, {	-- Sleeping Murloc
-								["cost"] = { { "i", 146962, 25 }, },	-- 25x Golden Minnow
+								["cost"] = { { "i", 146962, 25 } },	-- 25x Golden Minnow
 								["sym"] = {{"fill"}},
 							}),
 							i(133720, {	-- Demonic Detritus
-								["cost"] = { { "i", 146962, 25 }, },	-- 25x Golden Minnow
+								["cost"] = { { "i", 146962, 25 } },	-- 25x Golden Minnow
 								["sym"] = {{"fill"}},
 							}),
 							i(124111, {	-- Runescale Koi
-								["cost"] = { { "i", 146962, 10 }, },	-- 10x Golden Minnow
+								["cost"] = { { "i", 146962, 10 } },	-- 10x Golden Minnow
 							}),
 							i(143748, {	-- Leyscale Koi
-								["cost"] = { { "i", 146962, 5 }, },	-- 5x Golden Minnow
+								["cost"] = { { "i", 146962, 5 } },	-- 5x Golden Minnow
 							}),
 						},
 					}),

@@ -153,6 +153,10 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(10632),	-- Helm of Fire
 		-- #endif
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263633),	-- Camp Narache Rug
+		r(1261672),	-- Loch Modan Bearskin Rug
+	})),
 	filter(MISC,	{
 		r(3818),	-- Cured Heavy Hide
 		r(19047),	-- Cured Rugged Hide
@@ -236,6 +240,10 @@ TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(32480),	-- Wild Draenish Leggings
 		r(32481),	-- Wild Draenish Vest
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263818),	-- Arakkoa Decoy Scarecrow
+		r(1263819),	-- Outland Mag'har Banner
+	})),
 	filter(MISC, {
 		r(163231, {["timeline"] = {ADDED_6_0_2}}),	-- Cobra Scales
 		r(163226, {["timeline"] = {ADDED_6_0_2}}),	-- Crystal Infused Leather
@@ -250,10 +258,10 @@ TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] 
 		-- #endif
 		r(44970, {["timeline"] = {ADDED_2_3_0}}),	-- Heavy Knothide Armor Kit
 		r(32455),	-- Heavy Knothide Leather
-		r(44343, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}}),	-- Knothide Ammo Pouch
+		applyclassicphase(TBC_PHASE_FOUR, r(44343, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Knothide Ammo Pouch
 		r(32456),	-- Knothide Armor Kit
 		r(32454),	-- Knothide Leather
-		r(44344, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}}),	-- Knothide Quiver
+		applyclassicphase(TBC_PHASE_FOUR, r(44344, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Knothide Quiver
 		r(45100, {["timeline"] = {ADDED_2_3_0}}),	-- Leatherworker's Satchel
 		r(163230, {["timeline"] = {ADDED_6_0_2}}),	-- Nether Dragonscales
 		r(163225, {["timeline"] = {ADDED_6_0_2}}),	-- Thick Clefthoof Leather
@@ -379,6 +387,10 @@ WRATH_LEATHERWORKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timelin
 		r(60651),	-- Virulent Spaulders
 		r(60669),	-- Wildscale Breastplate
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1269499),	-- Snowfall Tribe Scare-Totem
+		r(1263613),	-- Wolvar Postbag
+	})),
 	filter(MISC, {
 		r(50962),	-- Borean Armor Kit
 		r(64661),	-- Borean Leather
@@ -602,6 +614,11 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"
 		r(99536, {["timeline"] = {ADDED_4_2_0}}),	-- Vicious Fur Cloak
 		r(99535, {["timeline"] = {ADDED_4_2_0}}),	-- Vicious Hide Cloak
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1272580),	-- Gilnean Spare Saddle
+		r(1272588),	-- Rolled Scarab Rug
+		r(1269550),	-- Scaled Twilight Mosaic
+	})),
 	filter(MISC, {
 		r(163216, {["timeline"] = {ADDED_6_0_2}}),	-- Blackened Dragonscale
 		r(85068, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Charscale Leg Reinforcements
@@ -834,6 +851,10 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeli
 		r(124583),	-- Stormscale Leggings
 		r(124580),	-- Stormscale Shoulders
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1261245),	-- Serenity Peak Tent
+		r(1261248),	-- Wise Pandaren's Bed
+	})),
 	filter(MISC, {
 		r(124127),	-- Angerhide Leg Armor
 		r(124126),	-- Brutal Leg Armor
@@ -961,6 +982,10 @@ DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, bubbleDownSe
 	},
 })));
 COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	i(257033, {	-- Pattern: Blackrock Bunkbed (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
+		["timeline"] = { ADDED_11_2_7 },
+	}),
 	i(116328, {	-- Pattern: Brilliant Burnished Cloak (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
@@ -995,6 +1020,10 @@ COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedD
 	}),
 	i(116327, {	-- Pattern: Nimble Burnished Cloak (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
+	}),
+	i(257058, {	-- Pattern: Orcish Sleeping Cot (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
+		["timeline"] = { ADDED_11_2_7 },
 	}),
 	i(116326, {	-- Pattern: Powerful Burnished Cloak (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
@@ -1055,7 +1084,14 @@ COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedD
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 }));
-LEGION_LEATHERWORKING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
+LEGION_LEATHERWORKING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1262273),	-- Highmountain Tanner's Frame
+		r(1260762),	-- Tauren Leather Fence
+		r(1260765),	-- Tauren Fencepost
+	})),
+}));
+LEGION_LEATHERWORKING_ADDED_TO_CLASSIC = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(ARMOR, {
 		r(226115),	-- Blue Chain Leggings
 		r(226119),	-- Chain Belt
@@ -1094,7 +1130,7 @@ LEGION_LEATHERWORKING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timel
 }))
 CLASSIC_CATA_LEGION_LEATHERWORKING = appendGroups(CLASSIC_CATA_LEATHERWORKING,
 -- #if AFTER 7.0.3
-LEGION_LEATHERWORKING
+LEGION_LEATHERWORKING_ADDED_TO_CLASSIC
 -- #else
 {}
 -- #endif
@@ -1162,6 +1198,10 @@ BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] 
 		r(304427, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Mail Treads [Rank 1]
 		r(304436, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Mail Waistguard [Rank 1]
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263859),	-- Sandfury Diplomat's Banner
+		r(1260485),	-- Zandalari Ritual Drum
+	})),
 	filter(MISC, {
 		r(287273, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Reskinning
 		r(278423),	-- Amber Rallying Horn
@@ -1298,6 +1338,10 @@ SL_LEATHERWORKING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = 
 			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
 		}),
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1263313),	-- Maldraxxian Crate
+		r(1263308),	-- Margrave's Stitched Leather Rug
+	})),
 	filter(MISC, {
 		r(324735),	-- Comfortable Rider's Barding
 		r(343195),	-- Crafter's Mark I
@@ -1334,6 +1378,10 @@ DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = 
 		r(395847),	-- Trailblazer's Toughened Legguards
 		r(395851),	-- Trailblazer's Toughened Spikes
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1259195),	-- Draconic Nesting Bed
+		r(1259233),	-- Valdrakken Market Tent
+	})),
 	filter(PROFESSION_EQUIPMENT, {
 		r(375188),	-- Alchemist's Hat
 		r(375182),	-- Durable Pack
@@ -1384,6 +1432,10 @@ TWW_LEATHERWORKING = sharedData({ ["timeline"] = { ADDED_11_0_2 } }, {
 			r(443708),	-- Tracker's Toughened Shoulderguards
 		}),
 	}),
+	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1270836),	-- Well-Lit Incontinental Couch
+		r(1260328),	-- Zhevra-Stripe Rug
+	})),
 	filter(PROFESSION_EQUIPMENT, {
 		r(444105),	-- Apothecary's Cap
 		r(444112),	-- Gardener's Basket
@@ -1408,3 +1460,77 @@ TWW_LEATHERWORKING = sharedData({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(444077),	-- Writhing Hide
 	}),
 });
+MID_LEATHERWORKING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	r(471012),	-- Midnight Leatherworking
+	r(1265672),	-- Artisan Leatherworker's Moxie
+	r(1265681),	-- Concentration
+	r(1265707),	-- Ingenuity
+	r(1265620),	-- Knowledge
+	r(1265607),	-- Multicraft
+	r(1265657),	-- Quality
+	r(471046),	-- Recraft Equipment
+	r(1265699),	-- Resourcefulness
+	r(1265691),	-- Skill
+	r(1265665),	-- Sparks
+	n(ARMOR, {
+		filter(LEATHER, {
+			r(1237500),	-- Smuggler's Leather Footpads
+			r(1237499),	-- Smuggler's Leather Tunic
+			r(1237506),	-- Smuggler's Leather Wristbands
+			r(1237505),	-- Smuggler's Reinforced Binding
+			r(1237501),	-- Smuggler's Reinforced Gloves
+			r(1237502),	-- Smuggler's Reinforced Hood
+			r(1237503),	-- Smuggler's Reinforced Pants
+			r(1237504),	-- Smuggler's Reinforced Shoulderguards
+		}),
+		filter(MAIL, {
+			r(1237530),	-- Scout's Polished Gauntlets
+			r(1237532),	-- Scout's Polished Legguards
+			r(1237531),	-- Scout's Polished Skullcap
+			r(1237533),	-- Scout's Polished Spaulders
+			r(1237534),	-- Scout's Polished Wrap
+			r(1237529),	-- Scout's Scaled Boots
+			r(1237535),	-- Scout's Scaled Bracers
+			r(1237528),	-- Scout's Scaled Vest
+		}),
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(1237546),	-- Thalassian Scout Armor Kit
+	}),
+	n(DECOR, {
+		r(1246937),	-- Embossed Sin'dorei Fur Rug
+		r(1246938),	-- Leather-Bound Haranir Wall Shelf
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(1237560),	-- Apprentice Jeweler's Apron
+		r(1237551),	-- Apprentice Smith's Apron
+		r(1237548),	-- Chemist's Cap
+		r(1237557),	-- Eversong Botanist's Satchel
+		r(1237563),	-- Hideworker's Cover
+		r(1237566),	-- Skinner's Backpack
+		r(1237569),	-- Skinner's Cap
+		r(1237554),	-- Tinker's Handguard
+	}),
+	filter(MISC, {
+		r(1237547),	-- Void-touched Drums
+	}),
+	filter(REAGENTS, {
+		r(1237573),	-- Infused Scalewoven Hide
+		r(1237572),	-- Scalewoven Hide
+		r(1237575),	-- Silvermoon Weapon Wrap
+		r(1237574),	-- Sin'dorei Armor Banding
+	}),
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

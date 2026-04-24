@@ -1,20 +1,21 @@
 -------------------------------------------------------------------
---	  E X P A N S I O N   F E A T U R E S	M O D U L E	   --
+--       E X P A N S I O N   F E A T U R E S   M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
-		ach(61451, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Worldsoul-Searching
+		ach(61451, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Worldsoul-Searching
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				40244,	-- Nerub-ar Palace
-				41222,	-- Liberation of Undermine 
-				41598,	-- Manaforge Omega 
+				41222,	-- Liberation of Undermine
+				41598,	-- Manaforge Omega
 				41555,	-- All That Khaz
 				41201,	-- You Xal Not Pass
-				40231,	-- The War Within Pathfinder 
+				40231,	-- The War Within Pathfinder
 				40438,	-- Glory of the Delver
-				41586,	-- Going Goblin Mode 
-				41997,	-- Owner of a Radiant Heart 
+				41586,	-- Going Goblin Mode
+				41997,	-- Owner of a Radiant Heart
 				60889,	-- Unraveled and Persevering
 			}},
 			["groups"] = {
@@ -369,7 +370,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			}),
 		})),
 		ach(40107, {	-- Harbinger of the Weatherd
-            -- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if prefered but this is good enough.
+			-- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if prefered but this is good enough.
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40115, {	-- Harbinger of the Carved
@@ -394,24 +395,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 		}),
 		ach(41886, {	-- Weathered of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(41887, {	-- Carved of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(41888, {	-- Runed of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(41892, {	-- Gilded of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(40591, {	-- Khaz Algar Diplomat
-            -- Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
-            -- Unfun fact the second: They never fixed the achievement, they just remade it.
-            -- crit(68907),    -- Council of Dornogal
-            -- crit(68908),    -- The Assembly of the Deeps
-            -- crit(68909),    -- Hallowfall Arathi
-            -- crit(68910),    -- The Severed Threads
+			-- Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
+			-- Unfun fact the second: They never fixed the achievement, they just remade it.
+			-- crit(68907),		-- Council of Dornogal
+			-- crit(68908),		-- The Assembly of the Deeps
+			-- crit(68909),		-- Hallowfall Arathi
+			-- crit(68910),		-- The Severed Threads
             ["timeline"] = { REMOVED_11_0_7 },
             ["groups"] = {
                 iensemble(219110),	-- Vermillion Patron's Elegance
@@ -427,21 +428,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
                 iensemble(219110),	-- Vermillion Patron's Elegance
             },
 		}),
-        -- INFO: Verified 2024-10-04, only shows one criteria without achraw
-		achraw(40660, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0_SEASONSTART }, }, {	-- The War Within Season 1: Spelunker Supreme
+       	-- INFO: Verified 2024-10-04, only shows one criteria without achraw
+		achraw(40660, {	-- The War Within Season 1: Spelunker Supreme
 			crit(67375),	-- Attained 1600+ Rated PVP rating
 			crit(66890),	-- Attained 2000+ Mythic Plus rating
 			crit(67597),	-- Defeated Queen Ansurek on Heroic or Mythic difficulty
 			i(226206),	-- Mark of the Spelunker Supreme
-		})),
+		}),
 		-- INFO: Verified 2025-01-12, shows no criteria without achraw
-		achraw(40911, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }, }, {	-- The War Within Season 2: Master Blaster
+		achraw(40911, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART }, }, {	-- The War Within Season 2: Master Blaster
 			crit(70046),	-- Attained 1600+ Rated PVP rating
 			crit(70053),	-- Attained 2000+ Mythic Plus rating
 			crit(70052),	-- Defeated Gallywix on Heroic or Mythic difficulty
 			i(236877),	-- Crystallized Essence of Kaja'mite
 		})),
-		ach(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, }, {	-- The War Within Season 3: Voidborne Victor
+		achraw(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART }, }, {	-- The War Within Season 3: Voidborne Victor
+			crit(70694),	-- Attained 1600+ Rated PVP rating
+			crit(104328),	-- Attained 2000+ Mythic Plus rating
+			crit(103332),	-- Defeated Dimensius on Heroic or Mythic difficulty
 			i(240175),	-- Crystallized Ethereal Voidsplinter
 		})),
 		ach(42325, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 }, }, {	-- Void Wear Prohibited (automated)
@@ -470,7 +474,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237646),	-- Midnight Herald's Cowl
 					}),
 					cl(MAGE, {
-						-- Mage has no items
+						i(237715),	-- Augur's Ephemeral Quillsash
+						i(237716),	-- Augur's Ephemeral Orbs of Power
+						i(237718),	-- Augur's Ephemeral Wide-Brim
 					}),
 					cl(MONK, {
 						i(237670),	-- Thunderbund of Fallen Storms
@@ -527,7 +533,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237646),	-- Midnight Herald's Cowl
 					}),
 					cl(MAGE, {
-						-- Mage has no items
+						i(237715),	-- Augur's Ephemeral Quillsash
+						i(237716),	-- Augur's Ephemeral Orbs of Power
+						i(237718),	-- Augur's Ephemeral Wide-Brim
 					}),
 					cl(MONK, {
 						i(237670),	-- Thunderbund of Fallen Storms
@@ -584,7 +592,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237646),	-- Midnight Herald's Cowl
 					}),
 					cl(MAGE, {
-						-- Mage has no items
+						i(237715),	-- Augur's Ephemeral Quillsash
+						i(237716),	-- Augur's Ephemeral Orbs of Power
+						i(237718),	-- Augur's Ephemeral Wide-Brim
 					}),
 					cl(MONK, {
 						i(237670),	-- Thunderbund of Fallen Storms
@@ -641,7 +651,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237646),	-- Midnight Herald's Cowl
 					}),
 					cl(MAGE, {
-						-- Mage has no items
+						i(237715),	-- Augur's Ephemeral Quillsash
+						i(237716),	-- Augur's Ephemeral Orbs of Power
+						i(237718),	-- Augur's Ephemeral Wide-Brim
 					}),
 					cl(MONK, {
 						i(237670),	-- Thunderbund of Fallen Storms
@@ -698,7 +710,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237646),	-- Midnight Herald's Cowl
 					}),
 					cl(MAGE, {
-						-- Mage has no items
+						i(237715),	-- Augur's Ephemeral Quillsash
+						i(237716),	-- Augur's Ephemeral Orbs of Power
+						i(237718),	-- Augur's Ephemeral Wide-Brim
 					}),
 					cl(MONK, {
 						i(237670),	-- Thunderbund of Fallen Storms
@@ -755,7 +769,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237646),	-- Midnight Herald's Cowl
 					}),
 					cl(MAGE, {
-						-- Mage has no items
+						i(237715),	-- Augur's Ephemeral Quillsash
+						i(237716),	-- Augur's Ephemeral Orbs of Power
+						i(237718),	-- Augur's Ephemeral Wide-Brim
 					}),
 					cl(MONK, {
 						i(237670),	-- Thunderbund of Fallen Storms

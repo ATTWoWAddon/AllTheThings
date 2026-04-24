@@ -33,30 +33,23 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				},
 			}),
-			ach(13573, {	-- How to Ptrain Your Pterrordax
+			ach(13030, {	-- How to Ptrain Your Pterrordax
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 56205 },	-- Just Ptrust Me On This
 				["groups"] = {
-					crit(45335),	-- Just Ptrust Me On This
-					ach(13030, {	-- How to Ptrain Your Pterrordax
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							crit(41773, {	-- Nature Versus Nurture
-								["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
-								["description"] = "Must complete ~7 daily quests to fill Kua'fon's experience bar.",
-							}),
-							crit(41771, {	-- Room to Grow
-								["sourceQuests"] = { 52447 },	-- Room to Grow
-								["description"] = "Must complete ~14 daily quests to fill Kua'fon's experience bar.",
-							}),
-							crit(41770, {	-- Eyes on the Skies
-								["sourceQuests"] = { 52748 },	-- Eyes on the Skies
-								["description"] = "Must complete 4 to 7 daily quests to fill Kua'fon's experience bar.",
-							}),
-							crit(41767, {	-- Down, But Not Out
-								["sourceQuests"] = { 50944 },	-- Down, But Not Out
-							}),
-						},
+					crit(41773, {	-- Nature Versus Nurture
+						["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
+						["description"] = "Must complete ~7 daily quests to fill Kua'fon's experience bar.",
+					}),
+					crit(41771, {	-- Room to Grow
+						["sourceQuests"] = { 52447 },	-- Room to Grow
+						["description"] = "Must complete ~14 daily quests to fill Kua'fon's experience bar.",
+					}),
+					crit(41770, {	-- Eyes on the Skies
+						["sourceQuests"] = { 52748 },	-- Eyes on the Skies
+						["description"] = "Must complete 4 to 7 daily quests to fill Kua'fon's experience bar.",
+					}),
+					crit(41767, {	-- Down, But Not Out
+						["sourceQuests"] = { 50944 },	-- Down, But Not Out
 					}),
 				},
 			}),

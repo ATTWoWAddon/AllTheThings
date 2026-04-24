@@ -1,21 +1,29 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+
 DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
 	readable = "Dragonflight Seasonal Promotions",
 	icon = [[~_.asset("Expansion_DF")]],
 	text = {
 		en = "Dragonflight Seasonal Promotions",
+		-- TODO: de = "",
 		es = "Promociones temporada Dragonflight",
 		mx = "Promociones temporada Dragonflight",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Промо Dragonflight",
 		cn = "巨龙时代季节性促销",
 		tw = "《巨龍崛起》季節性促銷",
 	},
 	description = {
 		en = "These promotions happened during the time Dragonflight was the most recent expansion between 25th October 2022 & 24th July 2024.\n\nThey are listed in the order of their first appearance.",
+		cn = "这些促销活动均发生在《巨龙时代》作为最新资料片的时期，时间为2022 年 10 月 25 日至 2024 年 7 月 24 日。\n\n以下按活动首次出现的时间顺序列出",
 	},
 });
+
 root(ROOTS.Promotions, {
 	n(DRAGONFLIGHT_SEASONAL_PROMOTIONS, {
 		["timeline"] = { ADDED_10_0_0 },
@@ -159,10 +167,10 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between July 11th, 10:00 a.m. & July 18th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				-- #ENDIF
 				-- #ENDIF
-				["timeline"] = { ADDED_10_1_5 },	-- REMOVED_10_1_0 },
+				["timeline"] = { ADDED_10_1_5 },
 				["u"] = REMOVED_FROM_GAME,	-- 18th July 2023
 			}),
-			iensemble(190923, {	-- Ensemble: Dashing Buccaneer's Slops
+			iensemble(190923, {	-- Ensemble: Dashing Buccaneer's Slops (COSMETIC!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between September 5th, 10:00 a.m. & September 12th, 01:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_10_1_5, REMOVED_10_1_5 },	-- Added 5th Sep, Removed 12th Sep
 			}),
@@ -222,11 +230,11 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 16, 10:00 a.m. & May 30, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				-- #ENDIF
 				-- #ENDIF
-				["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.99999" },
+				["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.54904" },
 			}),
 			i(218128, {	-- Draconic Banner of the Aspects (TOY!)
 				["description"] = "The Great Push returns in Dragonflight Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 15 Jun 2024 and The Proving Grounds are on 19-24 June (US).",
-				["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 10.2.7.99999" },
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 10.2.7.55142" },
 			}),
 			i(219450, {	-- Charming Courier (MOUNT!)
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription.",

@@ -77,7 +77,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		ach(18722, { ["timeline"] = { ADDED_10_1_7 } }),		-- Northrend Master of All
-		ach(734, {	-- Professional Grand Master / Professional Northrend Master [BFA] -- 1 Primary Profession at Max
+		ach(734, {	-- Professional Grand Master / Professional Northrend Master [BFA]	-- 1 Primary Profession at Max
 			["timeline"] = { ADDED_3_0_3 },
 		}),
 		ach(732, {	-- Professional Artisan / Professional Classic Master [BFA]
@@ -103,7 +103,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 			}},
 			["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 },
 		}),
-		ach(735, {	-- Working Day and Night / Working In the Cold [BFA] -- Some Primary Professions at Max
+		ach(735, {	-- Working Day and Night / Working In the Cold [BFA]	-- Some Primary Professions at Max
 			["timeline"] = { ADDED_3_0_3 },
 		}),
 	}),
@@ -295,16 +295,17 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.MID, {
 		ach(61438, {	-- Thalassian Profession Master		-- 1 Primary Professions at Max
-			["timeline"] = { ADDED_12_0_0_LAUNCH },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 		ach(61439, {	-- Thalassian Artisan				-- 2 Primary Professions at Max
-			["timeline"] = { ADDED_12_0_0_LAUNCH },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 		ach(61440, {	-- Thalassian Polymath				-- 5 Primary Professions at Max
-			["timeline"] = { ADDED_12_0_0_LAUNCH },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["groups"] = { i(FINERY_FUNDS) },
 		}),
 		ach(61441, {	-- Working WAY Past Midnight		-- ALL Primary Professions at Max
-			["timeline"] = { ADDED_12_0_0_LAUNCH },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 	}),
 }));

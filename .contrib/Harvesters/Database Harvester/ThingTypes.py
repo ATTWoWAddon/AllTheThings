@@ -28,7 +28,7 @@ FLAVOR_FOLDERS: dict[str, str] = {
     "WotLK": "05 - Wrath of the Lich King",
     "Cata": "06 - Cataclysm",
     "MoP": "07 - Mists of Pandaria",
-    "Retail": "99 - The War Within",
+    "Retail": "99 - Midnight",
 }
 
 

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(TREASURES, {
@@ -56,9 +57,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			o(375354, {	-- Domination Cache
 				["description"] = "The mob Mawsworn Inquisitor has a 1-2% drop chance for the key.",
-				["coord"] = { 60, 18, ZERETH_MORTIS },
+				["coord"] = { 60.0, 18.0, ZERETH_MORTIS },
 				["questID"] = 65465,
-				["cost"] = { { "i", 189704, 1}, },	-- 1xDominance Key
+				["cost"] = { { "i", 189704, 1 } },	-- 1x Dominance Key
 				["groups"] = {
 					i(189863),	-- Spatial Opener
 					i(190638),	-- Tormented Mawsteel Greatsword
@@ -70,7 +71,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["questID"] = 65346,
 				["groups"] = sharedData({
 					["sourceQuest"] = 65346,	-- Dormant Alcove Arrangement
-					["cost"] = { { "i", 189863, 1 }, },	-- 1 Spatial Opener
+					["cost"] = { { "i", 189863, 1 } },	-- 1x Spatial Opener
 					["sharedDescription"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 					["crs"] = {
 						184329,	-- Locus Shift (Gravid Repose)
@@ -79,7 +80,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},{
 					-- Sands
 					o(375397, {	-- Glinting Sand Pile
-						["coord"] = { 45.1, 36, 2029 },	-- Gravid Repose
+						["coord"] = { 45.1, 36.0, 2029 },	-- Gravid Repose
 						["questID"] = 65495,
 					}),
 					o(375399, {	-- Humming Sand Pile
@@ -167,7 +168,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			o(375369, {	-- Gnawed Valise
 				["description"] = "Jumping Puzzle, Start on the top of the nearby vault. On the big rock.",
-				["coord"] = { 39, 73.2, ZERETH_MORTIS },
+				["coord"] = { 39.0, 73.2, ZERETH_MORTIS },
 				["questID"] = 65480,
 			}),
 			o(375484, {	-- Grateful Boon
@@ -180,7 +181,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			o(373543, {	-- Library Vault
 				["description"] = "There are tablets around the Cave. The correct one is located in the back at 57.9 78.9.",
-				["coord"] = { 58.9, 77, ZERETH_MORTIS },
+				["coord"] = { 58.9, 77.0, ZERETH_MORTIS },
 				["questID"] = 65173,
 				["groups"] = {
 					i(189447),	-- Schematic: Viperid Menace
@@ -194,7 +195,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Inside the cave. Need to collect 5xLost Ovoids around Zereth Mortis.",
 				["coord"] = { 53.6, 72.2, ZERETH_MORTIS },
 				["questID"] = 65522,
-				["cost"] = { { "i", 190239, 5 } },	-- 5xLost Ovoid
+				["cost"] = { { "i", 190239, 5 } },	-- 5x Lost Ovoid
 				["groups"] = {
 					i(189435),	-- Schematic: Multichicken
 				},
@@ -234,7 +235,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			o(375478, {	-- Protomineral Extractor
 				["description"] = "Use the cosmic system to get to the top and use some form of glide/teleport/flying.",
-				["coord"] = { 46.6, 31, ZERETH_MORTIS },
+				["coord"] = { 46.6, 31.0, ZERETH_MORTIS },
 				["questID"] = 65540,
 				["groups"] = {
 					i(190942),	-- Protomineral Extractor
@@ -252,7 +253,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							184329,	-- Locus Shift (Gravid Repose)
 							184485,	-- Locus Shift (Interior)
 						},
-						["coord"] = { 31.3, 65, 2029 },	-- Gravid Repose
+						["coord"] = { 31.3, 65.0, 2029 },	-- Gravid Repose
 						["questID"] = 65532,	-- Fourth Option?
 						["isWeekly"] = true,
 						["groups"] = {
@@ -280,7 +281,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sym"] = {{"select","objectID",375270}},	-- Protoform Schematic
 				["groups"] = {
 					o(375494, {	-- Rondure Cache
-						["coord"] = { 43, 40, 2029 },	-- Gravid Repose
+						["coord"] = { 43.0, 40.0, 2029 },	-- Gravid Repose
 						["sourceQuest"] = 65345,	-- Rondure Alcove Arrangement
 						["questID"] = 65567,
 						["isDaily"] = true,
@@ -295,7 +296,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			o(375483, {	-- Stolen Scroll
 				["description"] = "Jumping Puzzle, climb ontop of the slumbering vault in Haven.",
-				["coord"] = { 34, 67.6, ZERETH_MORTIS },
+				["coord"] = { 34.0, 67.6, ZERETH_MORTIS },
 				["questID"] = 65543,
 				["groups"] = {
 					i(189863),	-- Spatial Opener
@@ -315,7 +316,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			o(374976, {	-- Symphonic Vault
 				["description"] = "The Broken Automa next to chest will give you sound queues, press the remaning 4 Broken Consonoles in the correct order. With your back against the entrance:\nTOP RIGHT\nDOWN LEFT\nDOWN RIGHT\nTOP LEFT.",
-				["coord"] = { 52.7, 63, ZERETH_MORTIS },
+				["coord"] = { 52.7, 63.0, ZERETH_MORTIS },
 				["questID"] = 65270,
 				["groups"] = {
 					i(189863),	-- Spatial Opener
@@ -353,7 +354,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["questID"] = 65572,
 				["groups"] = {
 					n(185390, {	-- Teleporter Lock
-						["coord"] = { 51, 82.1, ZERETH_MORTIS },
+						["coord"] = { 51.0, 82.1, ZERETH_MORTIS },
 						["questID"] = 65589,
 					}),
 					n(185391, {	-- Teleporter Lock
@@ -366,7 +367,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					}),
 					n(185393, {	-- Teleporter Lock
 						["description"] = "This lock is outside of the Wards, next to the console that opens the door.",
-						["coord"] = { 50, 76.2, ZERETH_MORTIS },
+						["coord"] = { 50.0, 76.2, ZERETH_MORTIS },
 						["questID"] = 65592,
 					}),
 					i(189863),	-- Spatial Opener
@@ -627,7 +628,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 66.0, 26.9, ZERETH_MORTIS },
 				},
 				["questID"] = 65611,
-				["cost"] = { { "i", 190197, 1 } },	-- Sandworn Chest Key
+				["cost"] = { { "i", 190197, 1 } },	-- 1x Sandworn Chest Key
 				["groups"] = {
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
@@ -679,9 +680,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 		n(TREASURES, sharedData({ ["isWeekly"] = true }, {
 			o(373568, {	-- Provis Cache
 				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
-				["coord"] = { 42, 51.9, ZERETH_MORTIS },
+				["coord"] = { 42.0, 51.9, ZERETH_MORTIS },
 				["questID"] = 65183,
-				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
+				["cost"] = { { "i", 188231, 1 } },	-- 1x Provis Cache Key
 				["groups"] = {
 					i(189710, {	-- Pocopoc's Ruby and Platinum Body
 						["questID"] = 65474,

@@ -599,6 +599,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					h(i(159067)),	-- Loa Speaker's Waistwrap
 					h(i(159073)),	-- Ritual Flayer's Bracers
 					h(i(159069)),	-- Ritual Flayer's Cord
+					h(i(159066)),	-- Nazmani Warplate Belt
+					h(i(159071)),	-- Nazmani Warplate Armsplints
 				},
 			}),
 			q(48517, {	-- Honorable Discharge
@@ -633,7 +635,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 48941 },	-- A Slight Detour
 				["provider"] = { "i", 159748 },	-- Rune-Etched Bone (QS!)
 				["races"] = ALLIANCE_ONLY,
-				-- Needs confirmation -- the quest didn't auto-pop and I didn't notice the item in my bags until later. This source is based on a wowhead comment.
+				-- Needs confirmation	-- the quest didn't auto-pop and I didn't notice the item in my bags until later. This source is based on a wowhead comment.
 				-- Not required for "Drust Do It."
 				["groups"] = {
 					i(159746),	-- Pristine Rune-Etched Bone (QI!)
@@ -807,6 +809,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(160193),	-- Wickerwoven Mittens
 					--
 					h(i(155373)),	-- Golden Lilypad
+					h(i(159079)),	-- Captivating Glowfly Lantern
 				},
 			}),
 			q(48170, {	-- Once Bitten, Twice Shy
@@ -826,7 +829,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(50911, {	-- One Man Against the Horde
-				--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
+					-- ["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
 				-- Not required for "Drust Do It."
 				["provider"] = { "n", 135673 },	-- Scout McKellis
 				["coord"] = { 34.6, 39.7, DRUSTVAR },
@@ -859,22 +862,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(53430, {	-- Order Of Embers Crossbow
 				["provider"] = { "o", 297939 },	-- Order Of Embers Crossbow
 				["coord"] = { 42.6, 25.1, DRUSTVAR },
-				["cost"] = {{"i",163749,1}},	-- Old Crossbow
+				["cost"] = { { "i", 163749, 1 } },	-- Old Crossbow
 			}),
 			q(53431, {	-- Order Of Embers Flask
 				["provider"] = { "o", 297942 },	-- Order Of Embers Flask
 				["coord"] = { 42.6, 25.1, DRUSTVAR },
-				["cost"] = {{"i",163746,1}},	-- Old Flask
+				["cost"] = { { "i", 163746, 1 } },	-- Old Flask
 			}),
 			q(53433, {	-- Order Of Embers Hat
 				["provider"] = { "o", 297941 },	-- Order Of Embers Hat
 				["coord"] = { 42.6, 25.1, DRUSTVAR },
-				["cost"] = {{"i",163748,1}},	-- Old Hat
+				["cost"] = { { "i", 163748, 1 } },	-- Old Hat
 			}),
 			q(53432, {	-- Order Of Embers Knife
 				["provider"] = { "o", 297940 },	-- Order Of Embers Knife
 				["coord"] = { 42.6, 25.2, DRUSTVAR },
-				["cost"] = {{"i",163747,1}},	-- Old Knife
+				["cost"] = { { "i", 163747, 1 } },	-- Old Knife
 			}),
 			q(50758, {	-- Painful Memories
 				["sourceQuests"] = { 50754 },	-- To Have Loved and Lost
@@ -922,7 +925,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(50929, {	-- Powder to the People
-				--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
+					-- ["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
 				-- Not required for "Drust Do It."
 				["provider"] = { "n", 135673 },	-- Scout McKellis
 				["coord"] = { 34.6, 39.7, DRUSTVAR },
@@ -1014,7 +1017,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(50912, {	-- Remix to Ignition
-			--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
+				-- ["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
 				["provider"] = {"o",284426},	-- Buried Mining Machine
 				["coord"] = { 34.7, 40.0, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
@@ -1222,8 +1225,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					azewrongItem(175323),	-- Waycrest Militia Spaulders (no azerite version)
 				},
 			}),
---							51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.
---							51852	-- Storming the Manor /	-- Not sure why, but there are three versions of this quest on wowhead.
+					-- 51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.
+					-- 51852	-- Storming the Manor /	-- Not sure why, but there are three versions of this quest on wowhead.
 			q(50960, {	-- Sweete's Orders
 				["provider"] = { "o", 286016 },	-- Ship's Log
 				["coord"] = { 27.4, 11.6, DRUSTVAR },
@@ -1366,7 +1369,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					48179,	-- Rescue Rangers
 					48183,	-- The Hills Are Alive
 					48182,	-- Total Cairnage
-					-- Definitely requires "The Hills Are Alive;" may not require others -- needs confirmation.
+					-- Definitely requires "The Hills Are Alive;" may not require others	-- needs confirmation.
 				},
 				["provider"] = { "n", 139926 },	-- Thornspeaker Birchgrove
 				["coord"] = { 61.8, 59.3, DRUSTVAR },

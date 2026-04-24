@@ -1,6 +1,6 @@
 do
 -- App locals
-local appName,app = ...;
+local _,app = ...;
 local Colorize = app.Modules.Color.Colorize;
 
 -- Global locals
@@ -175,9 +175,7 @@ app.CreateCharacterClass = app.CreateClassWithInfo("CharacterClass", "classID", 
 		t.nmc = nmc
 		return nmc
 	end,
-	["ignoreSourceLookup"] = function(t)
-		return true;
-	end,
+	["ignoreSourceLookup"] = app.ReturnTrue,
 });
 app.CreateUnit = app.CreateClass("Unit", "unit", {
 	["text"] = function(t)
@@ -188,7 +186,11 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 		for guid,character in pairs(ATTCharacterData) do
 			if guid == unit or character.name == unit then
 				rawset(t, "guid", character.guid);
-				rawset(t, "name", ("%s - %s"):format(character.name or UNKNOWN, character.realm or UNKNOWN));
+				if character.realm ~= GetRealmName() then
+					rawset(t, "name", ("%s - %s"):format(character.name or UNKNOWN, character.realm or UNKNOWN));
+				else
+					rawset(t, "name", character.name or UNKNOWN);
+				end
 				rawset(t, "lvl", character.lvl);
 				if character.classID then
 					rawset(t, "classID", character.classID);
@@ -200,7 +202,8 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 				end
 				if character.raceID then
 					rawset(t, "raceID", character.raceID);
-					rawset(t, "race", C_CreatureInfo.GetRaceInfo(character.raceID).raceName);
+					local raceInfo = C_CreatureInfo.GetRaceInfo(character.raceID);
+					if raceInfo then rawset(t, "race", raceInfo.raceName); end
 				end
 				return t;
 			end
@@ -215,6 +218,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 			name = UnitName(unit);
 			if name then
 				guid = UnitGUID(unit);
+				if guid and app.WOWAPI.issecretvalue(guid) then guid = nil; end
 				className, classFile, classID = UnitClass(unit);
 				raceName, raceFile, raceID = UnitRace(unit);
 			else
@@ -277,12 +281,31 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 		if icon then text = "|T" .. icon .. ":0|t " .. text; end
 		return text;
 	end,
-	["ignoreSourceLookup"] = function(t)
-		return true;
-	end,
+	["ignoreSourceLookup"] = app.ReturnTrue,
 	isHeader = app.ReturnTrue,
 	isMinilistHeader = app.ReturnTrue,
 });
+
+-- Track Yourself in the Main List, but only in Debug Mode!
+app.AddEventHandler("OnBuildDataCache", function(categories)
+	categories.Yourself = app.CreateUnit("player", {
+		description = app.L.DEBUG_LOGIN,
+		races = { app.RaceIndex },
+		c = { app.ClassIndex },
+		r = app.FactionID,
+		collected = 1,
+		nmr = false,
+		SortPriority = 200,
+		OnUpdate = function(self)
+			self.lvl = app.Level;
+			if app.MODE_DEBUG then
+				self.collectible = true;
+			else
+				self.collectible = false;
+			end
+		end
+	});
+end);
 
 -- External API
 app.ClassInfoByClassFile = ClassInfoByClassFile;

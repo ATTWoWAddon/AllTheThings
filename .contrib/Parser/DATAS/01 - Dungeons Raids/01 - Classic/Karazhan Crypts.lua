@@ -2,6 +2,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 APPRENTICE = createHeader({
 	readable = "Apprentice",
 	text = {
@@ -10,6 +11,7 @@ APPRENTICE = createHeader({
 		es = "Aprendiz",
 		mx = "Aprendiz",
 		fr = "Apprenti",
+		-- TODO: it = "",
 		ko = "수습생",
 		pt = "Aprendiz",
 		ru = "Ученик",
@@ -20,7 +22,6 @@ APPRENTICE = createHeader({
 		en = "Only 1 of 3 Apprentices can be chosen to challenge.",
 	},
 });
-
 OPERA_OF_MALEDICTION = createHeader({
 	readable = "Opera of Malediction",
 	text = {
@@ -29,6 +30,7 @@ OPERA_OF_MALEDICTION = createHeader({
 		es = "Ópera de la maldición",
 		mx = "Ópera de imprecación",
 		fr = "Opéra de malédiction",
+		-- TODO: it = "",
 		ko = "악심의 오페라",
 		pt = "Ópera da Maldição",
 		ru = "Проклятая опера",
@@ -59,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["coord"] = { 40.0, 74.2, DEADWIND_PASS },
 						}),
 					},
-				}),	
+				}),
 				q(86965, {	-- No Ordinary Shadows
 					["sourceQuest"] = 86964,	-- For Gold and Glory!
 					["qg"] = 237820,	-- Deceased Adventurer
@@ -79,7 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {
-							["provider"] = { "n", 237819 },	
+							["provider"] = { "n", 237819 },
 							["coords"] = {
 								{ 59.2, 73.4, DEADWIND_PASS },	-- Entrance of the Ogre Cave
 								{ 65.2, 78.6, DEADWIND_PASS },	-- Injured Adventurer
@@ -120,6 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["coord"] = { 52.0, 34.6, DEADWIND_PASS },
 					["lvl"] = 60,
 					["groups"] = {
+						i(236002),	-- List of Components
 						objective(1, {	-- 0/1 Flame of Life
 							["description"] = "loot from lvl 60 Elite Red Dragon, in the right side of Wetland.",
 							["provider"] = { "i", 235789 },	-- Flame of Life (QI!)
@@ -134,7 +137,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(2, {	-- 0/1 Ancient Ironwood Branch
 							["provider"] = { "i", 235787 },	-- Ancient Ironwood Branch (QI!)
 							["crs"] = {
-								11489, 	-- Tendris Warpwood
+								11489,	-- Tendris Warpwood
 								226923,	-- Grimroot <The Mourning Guardian>
 							},
 						}),
@@ -152,7 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["sharedDescription"] = "[TBC]\nIf the boss loot that is not in the boss's loot table, @NORPG on Discord.",
+			--	["sharedDescription"] = "[TBC]\nIf the boss loot that is not in the boss's loot table, @NORPG on Discord.",
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {	-- Common Boss Drops
 						i(226404),	-- Tarnished Undermine Real
@@ -160,22 +163,104 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(22484),	-- Necrotic Rune
 						}),
 					}),
+					n(PROFESSIONS, {
+						prof(ENCHANTING, {
+							n(238270, {	-- Encrypted Text
+								["description"] = "These enchants are learned from an Enchanted Text inside Karazhan Crypts. Encrypted Texts are found throughout the dungeon and can be decyphered by enchanters and mages using enchanting materials or Comprehension Charms respectively. Once the text is decyphered, it becomes a scroll; click on it to learn the recipe. Although the enchanting recipes are in randomized locations, the materials needed to decypher them are fixed by enchant according to the list below. This is helpful to know so you don't waste materials trying to learn enchants you already have.\n\n1x Nexus Crystal\nEnchant 2H Weapon - Spellblasting\nEnchant Off-Hand - Excellent Spirit\nEnchant Off-Hand - Superior Intellect\n\n1x Large Brilliant Shard\nEnchant Off-Hand - Wisdom\nEnchant Shield - Critical Strike\nEnchant Shield - Excellent Stamina\n\n1x Greater Eternal Essence\nEnchant Cloak - Agility\nEnchant Bracer - Greater Spellpower\nEnchant Gloves - Superior Strength",
+								["groups"] = {
+									r(1219577),	-- Enchant Off-Hand - Superior Intellect
+									r(1219578),	-- Enchant Off-Hand - Excellent Spirit
+									r(1219579),	-- Enchant Off-Hand - Wisdom
+									r(1219580),	-- Enchant 2H Weapon - Spellblasting
+									r(1219581),	-- Enchant Shield - Excellent Stamina
+									r(1219586),	-- Enchant Gloves - Superior Strength
+									r(1219587),	-- Enchant Cloak - Agility
+									r(1220623),	-- Enchant Shield - Critical Strike
+									r(1220624),	-- Enchant Bracer - Greater Spellpower
+								},
+							}),
+						}),
+					}),
+					n(ZONE_DROPS, {
+						i(236878),	-- Mysterious Relic (Sword)
+						i(236879),	-- Mysterious Relic (Staff)
+						n(238657, {	-- Crypt Dweller
+							i(236880),	-- Mysterious Relic (Scythe)
+						}),
+						n(238511, {	-- The Gravekeeper
+							i(237024),	-- Opera Ticket
+						}),
+						i(235867),	-- Scrap of Parchment
+						i(236708),	-- Breastplate of Undead Slaying
+						i(236709),	-- Chestguard of Undead Slaying
+						i(236718),	-- Robe of Undead Cleansing
+						i(236736),	-- Chestguard of Undead Cleansing
+						i(236707),	-- Tunic of Undead Slaying
+						i(236727),	-- Tunic of Undead Cleansing
+						i(236721),	-- Robe of Undead Purification
+						i(236730),	-- Tunic of Undead Purification
+						i(236742),	-- Chestguard of Undead Purification
+						i(236745),	-- Breastplate of Undead Purification
+						i(236724),	-- Robe of Undead Warding
+						i(236733),	-- Tunic of Undead Warding
+						i(236739),	-- Chestguard of Undead Warding
+						i(236748),	-- Breastplate of Undead Warding
+						i(236716),	-- Bracers of Undead Cleansing
+						i(236725),	-- Wristwraps of Undead Slaying
+						i(236710),	-- Wristguards of Undead Slaying
+						i(236712),	-- Bracers of Undead Slaying
+						i(236740),	-- Wristguards of Undead Purification
+						i(236737),	-- Wristguards of Undead Warding
+						i(236743),	-- Bracers of Undead Purification
+						i(236746),	-- Bracers of Undead Warding
+						i(236734),	-- Wristguards of Undead Cleansing
+						i(236731),	-- Wristwraps of Undead Warding
+						i(236728),	-- Wristwraps of Undead Purification
+						i(236722),	-- Bracers of Undead Warding
+						i(236711),	-- Wristwraps of Undead Slaying
+						i(236719),	-- Bracers of Undead Purification
+						i(236710),	-- Wristguards of Undead Slaying
+						i(236712),	-- Bracers of Undead Slaying
+					}),
 					n(APPRENTICE , {	-- Apprentice
-						n(COMMON_BOSS_DROPS, {	-- Common Boss Drops
-							i(235894),	-- Doomsayer's Demise
-							i(235880),	-- Pauper Soles
-							i(235879),	-- Nimble Links
-							i(235873),	-- Crypt's Keepers
-						}),
-						n(238233, {	-- Kaigy Maryla <The Failed Apprentice>
-							i(235886),	-- Kaigy's Clasp
-						}),
-						n(238213, {	-- Sairuh Maryla <The Failed Apprentice>
-							i(236782),	-- Sairuh's Collar
-						}),
-						n(238234, {	-- Barian Maryla <The Failed Apprentice>
-							i(235887),	-- Barian's Choker
-						}),
+						["description"] = "There are 3 Failed Apprentices locked in cells. The Warden can be found patrolling the Prison, if you kill him, he drops Portcullis Key. You can use this key to free one of the Failed Apprentices",
+						["groups"] = {
+							n(238560, {		-- The Warden
+								i(237011),	-- Portcullis Key
+							}),
+							n(COMMON_BOSS_DROPS, {	-- Common Boss Drops
+								["cost"] = { { "i", 237011, 1 } },	-- Portcullis Key
+								["crs"] = {
+									238233,	-- Kaigy Maryla <The Failed Apprentice>
+									238213,	-- Sairuh Maryla <The Failed Apprentice>
+									238234,	-- Barian Maryla <The Failed Apprentice>
+								},
+								["groups"] = {
+									i(235894),	-- Doomsayer's Demise
+									i(235880),	-- Pauper Soles
+									i(235879),	-- Nimble Links
+									i(235873),	-- Crypt's Keepers
+								},
+							}),
+							n(238233, {	-- Kaigy Maryla <The Failed Apprentice>
+								["cost"] = { { "i", 237011, 1 } },	-- Portcullis Key
+								["groups"] = {
+									i(235886),	-- Kaigy's Clasp
+								},
+							}),
+							n(238213, {	-- Sairuh Maryla <The Failed Apprentice>
+								["cost"] = { { "i", 237011, 1 } },	-- Portcullis Key
+								["groups"] = {
+									i(236782),	-- Sairuh's Collar
+								},
+							}),
+							n(238234, {	-- Barian Maryla <The Failed Apprentice>
+								["cost"] = { { "i", 237011, 1 } },	-- Portcullis Key
+								["groups"] = {
+									i(235887),	-- Barian's Choker
+								},
+							}),
+						},
 					}),
 					n(OPERA_OF_MALEDICTION, {	-- Opera of Malediction
 						i(235889),	-- Servant's Quarterstaff
@@ -196,8 +281,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(235869),	-- The Master's Cowl
 						i(235882),	-- Clattering Steps
 					}),
+					n(238678, {	--Unk'omon <The Winged Sorrow>
+						["description"] = "In the Library, use the torch to open the secret room behind the bookshelf. Mage, or Warlock should speak to Alfwhit Grigdert. He will spawn a portal and teleport back up to the Dark Rider room. Speak with Alfwhit Grigdert again and the boss will spawn. He will give Mark of the Master, a 25% attackspeed & 25% castspeed for 15minutes, when killed",
+						-- Nothing worth listining. Drops Felcloth, Demonic Rune, a sack of gems, random BoE greens/blues, and has a chance of dropping Sanctified armor
+					}),
 					n(237439, {	-- Kharon			(2)
-						["description"] = "Kharon's loots are special, as it will loot an item from the loot table of all dungeon bosses, including the Opera, plus Kharon's own loots.\nKharon's exclusive loot is ilv86, which has an additional random 1 of 6 Enchantments",
+						["description"] = "Players can summon Kharon by interacting with Dialogues of the Dead at his Altar.\n\nKharon's loots are special, as it will loot an item from the loot table of all dungeon bosses, including the Opera, plus Kharon's own loots.\nKharon's exclusive loot is ilv86, which has an additional random 1 of 6 Enchantments",
 						["groups"] = {
 							i(235874),	-- Cultist's Handwraps
 							i(236642),	-- Mender's Handwraps
@@ -210,10 +299,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(238365, {	-- Dark Rider		(4)
-						i(235892),	-- Darkrider's Spine
-						i(235868),	-- Bulwark of Ire
-						i(235872),	-- Stalker's Bands
-						i(235871),	-- Clutching Death Helm
+						["description"] = "To summon the Dark Rider Boss, you will need to collect 3 Mysterious Relics - a Staff, Sword, and Scythe. Once you have these you can use them to summon Dark Rider in the Prison",
+						["cost"] = {
+							{ "i", 236878, 1 },	-- Mysterious Relic (Sword)
+							{ "i", 236879, 1 },	-- Mysterious Relic (Staff)
+							{ "i", 236880, 1 },	-- Mysterious Relic (Scythe)
+						},
+						["groups"] = {
+							i(235892),	-- Darkrider's Spine
+							i(235868),	-- Bulwark of Ire
+							i(235872),	-- Stalker's Bands
+							i(235871),	-- Clutching Death Helm
+						},
 					}),
 					n(238678),	-- Unk'omon <The Winged Sorrow>	(6)
 				},

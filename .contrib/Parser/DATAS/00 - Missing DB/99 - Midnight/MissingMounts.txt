@@ -1,0 +1,14 @@
+12.0.0.65560
+mount(1258573),	-- Thunderhoof Celestial
+12.0.1.66013
+mount(1289395),	-- Swift Spectral Dragonhawk
+12.0.5.66330
+mount(1261362),	-- Witherbark Warbear Mother
+
+
+
+
+Missing in MountDB.lua
+
+12.0.1.66013
+mount(1289395),	-- Swift Spectral Dragonhawk

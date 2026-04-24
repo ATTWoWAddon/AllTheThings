@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		n(ACHIEVEMENTS, {
@@ -8,7 +9,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			ach(41979, {	-- Bounty Seeker (automated)
 				i(245255),	-- Starlight (PET!)
 			}),
-			ach(41778),	-- Brokers Don't Care How You Win (automated)
+			ach(41778, {	-- Brokers Don't Care How You Win
+				crit(103854, {
+					["_quests"] = { 85481 },	-- Ridge Racer
+				}),
+				crit(103855, {
+					["_quests"] = { 89065 },	-- Ray-cing for the Future
+				}),
+			}),
 			ach(42737),	-- Capstoned (automated)
 			ach(42729, {	-- Dangerous Prowlers of K'aresh (automated)
 				crit(106220, {	-- C.T. <Systems Scanner>
@@ -48,6 +56,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			ach(42742, {	-- Power of the Reshii
 				i(247703),	-- Reshii Hood
 				i(247704),	-- Reshii Mantle
+			}),
+			ach(61916, {	-- Rage of the Ren'dorei
+				["timeline"] = { ADDED_12_0_0 },
 			}),
 			ach(42761),	-- Remnants of a Shattered World (automated)
 			ach(60890),	-- Secrets of the K'areshi (automated)

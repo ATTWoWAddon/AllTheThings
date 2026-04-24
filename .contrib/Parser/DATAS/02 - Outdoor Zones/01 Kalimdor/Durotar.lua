@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DUROTAR, {
 		-- #if AFTER CATA
@@ -60,7 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 59.7, 52.1, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84, DUROTAR },
+								{ 68.2, 84.0, DUROTAR },
 								-- #endif
 							},
 							["classes"] = { MAGE },
@@ -79,7 +80,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83, DUROTAR },
+								{ 67.7, 83.0, DUROTAR },
 								-- #endif
 							},
 							["classes"] = { PRIEST },
@@ -139,7 +140,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 56.8, 63.7, ECHO_ISLES },
 								-- #else
-								{ 67.2, 88, DUROTAR },
+								{ 67.2, 88.0, DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -193,7 +194,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.9, 66.8, ECHO_ISLES },
 								-- #else
-								{ 69, 88.6, DUROTAR },
+								{ 69.0, 88.6, DUROTAR },
 								-- #endif
 							},
 							["classes"] = exclude({
@@ -342,7 +343,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 59.7, 52.1, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84, DUROTAR },
+								{ 68.2, 84.0, DUROTAR },
 								-- #endif
 							},
 							["classes"] = { MAGE },
@@ -361,7 +362,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83, DUROTAR },
+								{ 67.7, 83.0, DUROTAR },
 								-- #endif
 							},
 							["classes"] = { PRIEST },
@@ -480,7 +481,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 59.7, 52.1, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84, DUROTAR },
+								{ 68.2, 84.0, DUROTAR },
 								-- #endif
 							},
 							["classes"] = { MAGE },
@@ -507,7 +508,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83, DUROTAR },
+								{ 67.7, 83.0, DUROTAR },
 								-- #endif
 							},
 							["classes"] = { PRIEST },
@@ -669,9 +670,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 38246,	-- Soratha <Mage Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 59.6, 52, ECHO_ISLES },
+								{ 59.6, 52.0, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84, DUROTAR },
+								{ 68.2, 84.0, DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -688,7 +689,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83, DUROTAR },
+								{ 67.7, 83.0, DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -777,7 +778,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 59.7, 52.1, ECHO_ISLES },
 								-- #else
-								{ 68.2, 84, DUROTAR },
+								{ 68.2, 84.0, DUROTAR },
 								-- #endif
 							},
 							["classes"] = { MAGE },
@@ -796,7 +797,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 58.0, 49.3, ECHO_ISLES },
 								-- #else
-								{ 67.7, 83, DUROTAR },
+								{ 67.7, 83.0, DUROTAR },
 								-- #endif
 							},
 							["classes"] = { PRIEST },
@@ -1074,7 +1075,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25138,	-- Glyphic Parchment
 							["qg"] = 39206,	-- Acrypha <Mage Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 42.6, 69, DUROTAR },
+							["coord"] = { 42.6, 69.0, DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1165,7 +1166,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								1499,	-- Vile Familiars (Part 2 - Warlocks only!)
 							},
 							["qg"] = 3145,	-- Zureetha Fargaze
-							["coord"] = { 42.8, 69, DUROTAR },
+							["coord"] = { 42.8, 69.0, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1287,7 +1288,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(788, {	-- Cutting Teeth
 							["sourceQuest"] = 4641,	-- Your Place In The World
 							["qg"] = 3143,	-- Gornek
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1324,7 +1325,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9560 },	-- Encrypted Parchment
 							},
 							-- #if BEFORE MOP
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1336,7 +1337,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9554 },	-- Encrypted Tablet
 							},
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { ROGUE },
@@ -1348,7 +1349,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9553 },	-- Etched Parchment
 							},
 							-- #if BEFORE MOP
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1360,7 +1361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9564 },	-- Etched Tablet
 							},
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { HUNTER },
@@ -1453,7 +1454,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 41.7, 70.0, VALLEY_OF_TRIALS },
 								-- #else
-								{ 42.4, 69, DUROTAR },
+								{ 42.4, 69.0, DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -1479,7 +1480,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77585, {	-- Icons of Power [Orc]
 							["qg"] = 3157,	-- Shikrik <Shaman Trainer>
-							["coord"] = { 42.4, 69, DUROTAR },
+							["coord"] = { 42.4, 69.0, DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { ORC },
 							["classes"] = { SHAMAN },
@@ -1494,7 +1495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77587, {	-- Icons of Power [Troll]
 							["qg"] = 3157,	-- Shikrik <Shaman Trainer>
-							["coord"] = { 42.4, 69, DUROTAR },
+							["coord"] = { 42.4, 69.0, DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { TROLL },
 							["classes"] = { SHAMAN },
@@ -1512,7 +1513,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3090,	-- Tainted Parchment
 							["qg"] = 3156,	-- Nartok <Warlock Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 42.4, 68, DUROTAR },
+							["coord"] = { 42.4, 68.0, DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1559,7 +1560,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(37446, {	-- Lazy Peons
 							["sourceQuest"] = 25127,	-- Sting of the Scorpid
 							["qg"] = 11378,	-- Foreman Thazz'ril
-							["coord"] = { 46, 63.4, VALLEY_OF_TRIALS },
+							["coord"] = { 46.0, 63.4, VALLEY_OF_TRIALS },
 							["timeline"] = { ADDED_6_0_2 },
 							["races"] = HORDE_ONLY,
 							["groups"] = { i(16114) },	-- Foreman's Backpack (QI!)
@@ -1568,7 +1569,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 11378,	-- Foreman Thazz'ril
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 46, 63.4, VALLEY_OF_TRIALS },
+								{ 46.0, 63.4, VALLEY_OF_TRIALS },
 								-- #else
 								{ 43.3, 67.4, DUROTAR },
 								-- #endif
@@ -1598,7 +1599,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3089,	-- Rune-Inscribed Parchment
 							["qg"] = 3157,	-- Shikrik <Shaman Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 42.4, 69, DUROTAR },
+							["coord"] = { 42.4, 69.0, DUROTAR },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1624,7 +1625,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(805, {	-- Report to Sen'jin Village
 							["sourceQuest"] = 794,	-- Burning Blade Medallion
 							["qg"] = 3145,	-- Zureetha Fargaze
-							["coord"] = { 42.8, 69, DUROTAR },
+							["coord"] = { 42.8, 69.0, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
@@ -1653,7 +1654,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9568 },	-- Rune-Inscribed Parchment
 							},
 							-- #if BEFORE MOP
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1665,7 +1666,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9562 },	-- Rune-Inscribed Tablet
 							},
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { SHAMAN },
@@ -1724,7 +1725,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 12635 },	-- Simple Parchment
 							},
 							-- #if BEFORE MOP
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC },
@@ -1736,7 +1737,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 6488 },	-- Simple Tablet
 							},
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
 							["classes"] = { WARRIOR },
@@ -1747,7 +1748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5884 },	-- Mai'ah <Mage Trainer>
 								{ "i", 211809 },	-- Comprehension Primer
 							},
-							["coord"] = { 42.4, 69, DUROTAR },
+							["coord"] = { 42.4, 69.0, DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { TROLL },
 							["classes"] = { MAGE },
@@ -1806,7 +1807,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(789, {	-- Sting of the Scorpid
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["qg"] = 3143,	-- Gornek
-							["coord"] = { 42, 68.4, DUROTAR },
+							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1853,7 +1854,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER CATA
 								{ 43.2, 68.2, DUROTAR },
 								-- #else
-								{ 42, 68.4, DUROTAR },
+								{ 42.0, 68.4, DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { REMOVED_7_0_3 },
@@ -1872,7 +1873,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 11378,	-- Foreman Thazz'ril
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 46, 63.4, VALLEY_OF_TRIALS },
+								{ 46.0, 63.4, VALLEY_OF_TRIALS },
 								-- #else
 								{ 43.3, 67.4, DUROTAR },
 								-- #endif
@@ -2226,73 +2227,70 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(207110, {	-- Durotar Treasure Map
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cost"] = {
-							{ "i", 207106, 1 },	-- Bottom-Left Map Piece
-							{ "i", 207107, 1 },	-- Bottom-Right Map Piece
-							{ "i", 207108, 1 },	-- Top-Left Map Piece
-							{ "i", 207109, 1 },	-- Top-Right Map Piece
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207106, {	-- Bottom-Left Map Piece
-						["coord"] = { 67.2, 85.6, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3206,	-- Voodoo Troll
-							3207,	-- Hexed Troll
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207107, {	-- Bottom-Right Map Piece
-						["coord"] = { 43.0, 39.8, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3111,	-- Razormane Quilboar
-							3114,	-- Razormane Battleguard
-							3113,	-- Razormane Dustrunner
-							3112,	-- Razormane Scout
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207098, {	-- Note from Ba'so
-						["coord"] = { 53.0, 27.6, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3196,	-- Burning Blade Neophyte
-							3195,	-- Burning Blade Thug
-							3199,	-- Burning Blade Cultist
-							3197,	-- Burning Blade Fanatic
-							3198,	-- Burning Blade Apprentice
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207108, {	-- Top-Left Map Piece
-						["coord"] = { 53.0, 27.6, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3196,	-- Burning Blade Neophyte
-							3195,	-- Burning Blade Thug
-							3199,	-- Burning Blade Cultist
-							3197,	-- Burning Blade Fanatic
-							3198,	-- Burning Blade Apprentice
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207109, {	-- Top-Right Map Piece
-						["coord"] = { 58.8, 55.4, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3129,	-- Kul Tiras Marine
-							3128,	-- Kul Tiras Sailor
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(207110, {	-- Durotar Treasure Map
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 207106, 1 },	-- Bottom-Left Map Piece
+						{ "i", 207107, 1 },	-- Bottom-Right Map Piece
+						{ "i", 207108, 1 },	-- Top-Left Map Piece
+						{ "i", 207109, 1 },	-- Top-Right Map Piece
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207106, {	-- Bottom-Left Map Piece
+					["coord"] = { 67.2, 85.6, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3206,	-- Voodoo Troll
+						3207,	-- Hexed Troll
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207107, {	-- Bottom-Right Map Piece
+					["coord"] = { 43.0, 39.8, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3111,	-- Razormane Quilboar
+						3114,	-- Razormane Battleguard
+						3113,	-- Razormane Dustrunner
+						3112,	-- Razormane Scout
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207098, {	-- Note from Ba'so
+					["coord"] = { 53.0, 27.6, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3196,	-- Burning Blade Neophyte
+						3195,	-- Burning Blade Thug
+						3199,	-- Burning Blade Cultist
+						3197,	-- Burning Blade Fanatic
+						3198,	-- Burning Blade Apprentice
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207108, {	-- Top-Left Map Piece
+					["coord"] = { 53.0, 27.6, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3196,	-- Burning Blade Neophyte
+						3195,	-- Burning Blade Thug
+						3199,	-- Burning Blade Cultist
+						3197,	-- Burning Blade Fanatic
+						3198,	-- Burning Blade Apprentice
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207109, {	-- Top-Right Map Piece
+					["coord"] = { 58.8, 55.4, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3129,	-- Kul Tiras Marine
+						3128,	-- Kul Tiras Sailor
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {
@@ -2301,7 +2299,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 6786 },	-- Ukor
 						{ "i", 7629 },	-- Ukor's Burden
 					},
-					["coord"] = { 52, 68.2, DUROTAR },
+					["coord"] = { 52.0, 68.2, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2338,6 +2336,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(41002, {	-- A Weapon of the Horde
 					["sourceQuest"] = 40983,	-- Demons Among Them
 					["qg"] = 101035,	-- Lady Sylvanas Windrunner
+					["coord"] = { 45.7, 16.0, DUROTAR },
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
@@ -2527,7 +2526,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 4,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fizzle's Claw
-							["provider"] = { "i", 4869, 1 },	-- Fizzle's Claw
+							["provider"] = { "i", 4869 },	-- Fizzle's Claw
 							["coord"] = { 42.6, 26.4, DUROTAR },
 							["cr"] = 3203,	-- Fizzle Darkstorm
 						}),
@@ -2591,7 +2590,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(837, {	-- Encroachment
 					["qg"] = 3139,	-- Gar'Thok
-					["coord"] = { 52, 43.4, DUROTAR },
+					["coord"] = { 52.0, 43.4, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
@@ -2708,7 +2707,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(825, {	-- From The Wreckage....
 					["sourceQuest"] = 784,	-- Vanquish the Betrayers
 					["qg"] = 3139,	-- Gar'Thok
-					["coord"] = { 52, 43.4, DUROTAR },
+					["coord"] = { 52.0, 43.4, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -3094,14 +3093,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(813, {	-- Finding the Antidote
 							["qg"] = 3189,	-- Kor'ghan
-							["coord"] = { 47, 53.4, ORGRIMMAR },
+							["coord"] = { 47.0, 53.4, ORGRIMMAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
 							["lvl"] = 7,
 							["groups"] = {
 								objective(1, {	-- 0/4 Venomtail Poison Sac
-									["provider"] = { "i", 4886, 4 },	-- Venomtail Poison Sac
+									["cost"] = { { "i", 4886, 4 } },	-- Venomtail Poison Sac
 									["crs"] = {
 										3226,	-- Corrupted Scorpid
 										5823,	-- Death Flayer
@@ -3338,8 +3337,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 834,	-- Winds in the Desert
 					-- #endif
 					["qg"] = 3293,	-- Rezlak
-					["coord"] = { 46.4, 23, DUROTAR },
-					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+					["coord"] = { 46.4, 23.0, DUROTAR },
+					-- ["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
 						-- #if AFTER CATA
@@ -3459,8 +3458,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7311,	-- Uthel'nay <Mage Trainer>
 					},
 					["coords"] = {
-						{ 39, 86, ORGRIMMAR },
-						{ 25, 20.6, THUNDER_BLUFF },
+						{ 39.0, 86.0, ORGRIMMAR },
+						{ 25.0, 20.6, THUNDER_BLUFF },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD, TROLL },
@@ -3557,13 +3556,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(830, {	-- The Admiral's Orders (1/2)
-					["providers"] = {
-						{ "i", 4881 },	-- Aged Envelope
-						{ "o", 3239 },	-- Benedict's Chest
-					},
-					["coord"] = { 59.3, 57.7, DUROTAR },
+					["provider"] = { "i", 4881 },	-- Aged Envelope
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 4882, 1 }},	-- Benedict's Key
 					["races"] = HORDE_ONLY,
 				}),
 				q(831, {	-- The Admiral's Orders (2/2)
@@ -3572,14 +3566,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3139 },	-- Gar'Thok
 						{ "i", 4883 },	-- Admiral Proudmoore's Orders
 					},
-					["coord"] = { 52, 43.4, DUROTAR },
+					["coord"] = { 52.0, 43.4, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(40518, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- The Battle for Broken Shore
 					["description"] = "Legion expansion introduction quest.|r",
 					["sourceQuest"] = 44281,	-- To Be Prepared
-				--	["altQuest"] = 44543,	-- Scenario Skip (H)
+					-- ["altQuest"] = 44543,	-- Scenario Skip (H)
 					["qg"] = 113547,	-- Stone Guard Mukar
 					["coord"] = { 55.6, 11.0, DUROTAR },
 					["races"] = HORDE_ONLY,
@@ -3617,7 +3611,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(924, {	-- The Demon Seed
 					["sourceQuest"] = 809,	-- Ak'Zeloth
 					["qg"] = 3521,	-- Ak'Zeloth
-					["coord"] = { 62.4, 20, THE_BARRENS },
+					["coord"] = { 62.4, 20.0, THE_BARRENS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
@@ -3625,7 +3619,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(926, {	-- Flawed Power Stone
 							["sourceQuest"] = 924,	-- The Demon Seed
 							["provider"] = { "o", 5620 },	-- Flawed Power Stones
-							["coord"] = { 62.4, 20, THE_BARRENS },
+							["coord"] = { 62.4, 20.0, THE_BARRENS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -3636,7 +3630,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "o", 3525 },	-- The Altar of Fire
 										{ "i", 4986 },	-- Flawed Power Stone
 									},
-									["coord"] = { 47, 19, THE_BARRENS },
+									["coord"] = { 47.0, 19.0, THE_BARRENS },
 								}),
 							},
 						}),
@@ -3672,7 +3666,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6070, {	-- The Hunter's Path [Thunder Bluff]
 					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
-					["coord"] = { 58.4, 88, THUNDER_BLUFF },
+					["coord"] = { 58.4, 88.0, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
@@ -3693,7 +3687,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(139916),	-- Black Rose Amice
 						i(139925),	-- Black Rose Wristwraps
-						i(253251, {["timeline"] = { ADDED_11_2_7 }}),	-- Blightfire Candle (DECOR!)
+						i(253251, {	-- Blightfire Candle (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(139974),	-- Dark Ranger Shoulderguards
 						i(139987),	-- Dark Ranger Wristguards
 						i(140012),	-- Deathstalker Shoulderplates
@@ -3762,7 +3758,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(786, {	-- Thwarting Kolkar Aggression
-					--["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
+					-- ["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
 					["qg"] = 3140,	-- Lar Prowltusk
 					["coord"] = { 54.52, 75.20, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3857,7 +3853,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(784, {	-- Vanquish the Betrayers
 					["qg"] = 3139,	-- Gar'Thok
-					["coord"] = { 52, 43.4, DUROTAR },
+					["coord"] = { 52.0, 43.4, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -3890,8 +3886,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(834, {	-- Winds in the Desert
 					["qg"] = 3293,	-- Rezlak
-					["coord"] = { 46.4, 23, DUROTAR },
-					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+					["coord"] = { 46.4, 23.0, DUROTAR },
+					-- ["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Sack of Supplies
@@ -4003,7 +3999,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(208124, {	-- Raluk
 					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 69.1, 71.5, DUROTAR },
-					["cost"] = {{ "i", 207590, 1 }},	-- Durotar Pig Meat
+					["cost"] = { { "i", 207590, 1 } },	-- Durotar Pig Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
 							["classes"] = { HUNTER },
@@ -4036,7 +4032,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
-					--["provider"] = { "o",  },	-- Summoning Circle
+					-- ["provider"] = { "o",  },	-- Summoning Circle
 					["coord"] = { 67.6, 87.8, DUROTAR },
 					["cost"] = {
 						{ "i", 207731, 1 },	-- Ominous Tome
@@ -4109,8 +4105,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
-			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 48.0, 79.6, DUROTAR },
@@ -4142,8 +4138,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				-- #endif
+				o(3239, {	-- Benedict's Chest
+					["coord"] = { 59.3, 57.7, DUROTAR },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 4882, 1 } },	-- Benedict's Key
+					["groups"] = {
+						i(4881),	-- Aged Envelope
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
-					--["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
+					-- ["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
 					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
 					["coords"] = {
 						{ 38.01, 35.53, DUROTAR },
@@ -4175,15 +4181,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 62.1, 94.8, DUROTAR },
-					["cost"] = {{ "i", 207110, 1 }},	-- Durotar Treasure Map
+					["cost"] = { { "i", 207110, 1 } },	-- Durotar Treasure Map
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
 					},
 				})),
+				-- #endif
 			}),
-			-- #endif
 			n(VENDORS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208036, {	-- Ba'so
@@ -4191,7 +4197,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(203990, {	-- Rune of Mutilation
-							["cost"] = {{ "i", 207098, 1 }},	-- Note from Ba'so
+							["cost"] = { { "i", 207098, 1 } },	-- Note from Ba'so
 							["classes"] = { ROGUE },
 							["groups"] = {
 								recipe(400094),	-- Engrave Gloves - Mutilate
@@ -4240,7 +4246,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(208184, {	-- Razzil <Snake Charmer>
 					["description"] = "Use the pheromone and tame an adder and then bring it to Razzil.",
 					["coord"] = { 52.2, 44.0, DUROTAR },
-					["cost"] = {{ "i", 207631, 1 }},	-- Adder Pheromone
+					["cost"] = { { "i", 207631, 1 } },	-- Adder Pheromone
 					["crs"] = { 3300 },	-- Adder
 					["races"] = HORDE_ONLY,
 					["groups"] = {

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	n(WORLD_QUESTS, {
 		i(229899, {	-- Coffer Key Shard (Season 1)
@@ -13,7 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["timeline"] = { ADDED_11_2_0 },
 		}),
 		currency(RESTORED_COFFER_KEY, {
-			["cost"] = {{ "i",
+			["cost"] = { { "i",
 				-- #if AFTER 11.2
 				245653,
 				-- #elseif AFTER 11.1
@@ -21,7 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				-- #else
 				229899,
 				-- #endif
-			100 }},	-- 100x Coffer Key Shard (Current Season)
+			100 } },	-- 100x Coffer Key Shard (Current Season)
 		}),
 		skyriding(n(DRAGONRIDING_RACING, {
 			i(191140),	-- Bronze Timepiece

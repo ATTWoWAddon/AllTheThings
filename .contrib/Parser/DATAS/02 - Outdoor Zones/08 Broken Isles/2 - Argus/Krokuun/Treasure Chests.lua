@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
@@ -48,9 +49,10 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = appendAllGroups({	-- Shared Rewards
 							i(152857),	-- Chipped Man'ari Blade
-						},sharedData({	-- Common Objects
+						},
+						sharedData({	-- Common Objects
 							["isDaily"] = true,
-						},{
+						}, {
 							o(271849, {	-- Eredar War Supplies (very small circular spawn area west and a little south of Krokul Hovel (near Talestra the Vile)
 								["questID"] = 47753,
 								["coords"] = {
@@ -107,6 +109,7 @@ root(ROOTS.Zones, {
 								["questID"] = 47999,
 								["coords"] = {
 									{ 43.3, 36.3, KROKUUN },
+									{ 47.7, 28.9, KROKUUN },
 									{ 48.6, 31.0, KROKUUN },
 									{ 49.1, 33.5, KROKUUN },
 									{ 49.8, 36.7, KROKUUN },

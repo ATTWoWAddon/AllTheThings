@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 ------ Encounter Constants ------
 local ANTROS = 2468
 local MORGETH = 2456
@@ -20,7 +21,7 @@ local EncounterToCRS = {
 	},
 	[MORTANIS] = {
 		167525,	-- Mortanis
-	 },
+	},
 	[NURGASH] = {
 		167526,	-- Nurgash Muckformed
 	},
@@ -108,7 +109,7 @@ local EncounterToLoot = {
 
 ------ EncounterCoords ------
 local EncounterCoords = {
-	[ANTROS] = { 48, 5, ZERETH_MORTIS },
+	[ANTROS] = { 48.0, 5.0, ZERETH_MORTIS },
 	[MORGETH] = { 69.1, 44.2, THE_MAW },
 	[MORTANIS] = { 32.1, 67.3, MALDRAXXUS },
 	[NURGASH] = { 27.2, 14.9, REVENDRETH },

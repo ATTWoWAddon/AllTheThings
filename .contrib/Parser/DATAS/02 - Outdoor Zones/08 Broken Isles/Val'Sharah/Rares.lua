@@ -3,7 +3,9 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		}, {
 			n(93758, {	-- Antydas Nightcaller
 				["description"] = "This part of the 'Adventurer of Val'sharah' achievement doesn't involve killing a rare, but stealing an NPC's treasure. The treasure chest is on the second floor of the building and can be found directly across the room from Antydas, hidden next to the sink. Enjoy your foray into larceny!",
 				["coord"] = { 64.5, 85.3, VALSHARAH },

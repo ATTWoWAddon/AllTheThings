@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --       	   EF       M O D U L E   		     --
 ---------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_1_7 } }, {
 	n(QUESTS, {
 		header(HEADERS.Achievement, 41820, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {	-- Rise of the Red Dawn
@@ -50,7 +51,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			q(84640, {	-- Emblematic of Things to Come
 				["sourceQuests"] = { 84638 },	-- Trouble in the Highlands
 				["provider"] = { "i", 228963 },	-- Unfamiliar Emblem
-				--["coord"] = { 18.3, 40.1, 2372 },
+				-- ["coord"] = { 18.3, 40.1, 2372 },
 			}),
 			q(84641, {	-- Ill Tidings
 				["sourceQuests"] = {
@@ -310,7 +311,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					ach(41818, {	-- Rise of the Red Dawn (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							title(630, {	-- %s of Stromgarde
+							title(630, {	-- <Name> of Stromgarde
 								["races"] = ALLIANCE_ONLY,
 								["timeline"] = { ADDED_11_1_7 },
 							}),
@@ -319,7 +320,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					ach(41820, {	-- Rise of the Red Dawn (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							title(629, {	-- %s of Hammerfall
+							title(629, {	-- <Name> of Hammerfall
 								["races"] = HORDE_ONLY,
 								["timeline"] = { ADDED_11_1_7 },
 							}),

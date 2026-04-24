@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	header(HEADERS.Faction, FACTION_AZEROTHIAN_ARCHIVES, {
 		["maps"] = {
@@ -69,10 +70,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["groups"] = {
 						i(213133),	-- Reese (PET!)
 						crit(65408, {	-- Lost Atheneum
-							--["coord"] = {},
+							-- ["coord"] = {},
 						}),
 						crit(65409, {	-- The Riverbed
-							["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
+							["coord"] = { 69.0, 34.3, OHNAHRAN_PLAINS },
 						}),
 						crit(65410, {	-- Igira's Watch
 							["_quests"] = { 76734 },	-- Research: Djaradin of Zaralek Cavern
@@ -81,10 +82,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
 						}),
 						crit(65412, {	-- Concord Observatory
-							--["coord"] = {},
+							-- ["coord"] = {},
 						}),
 						crit(65413, {	-- Winglord's Perch
-							--["coord"] = {},
+							-- ["coord"] = {},
 						}),
 					},
 				}),
@@ -203,7 +204,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
 					["groups"] = {
-						--i(202247),	-- Technoscryers (QI!) (TODO: seems like qi didn't get removed from previous quest?)
+						-- i(202247),	-- Technoscryers (QI!) (TODO: seems like qi didn't get removed from previous quest?)
 					},
 				}),
 				q(75868, {	-- A Window into the Future
@@ -238,7 +239,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(77433, {	-- Excavation: Riverbed
 					["sourceQuests"] = { 77268 },	-- Hands-On Experience
 					["provider"] = { "n", 208614 },	-- Roska Rocktooth
-					["coord"] = { 61.5, 30, THALDRASZUS },
+					["coord"] = { 61.5, 30.0, THALDRASZUS },
 				}),
 				q(75493, {	-- Surveying the Riverbed
 					["sourceQuests"] = { 77433 },	-- Excavation: Riverbed
@@ -256,7 +257,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(75603, {	-- Do Rites by Her
 					["sourceQuests"] = { 75518 },	-- The Body on the Banks
 					["provider"] = { "n", 204643 },	-- Roska Rocktooth
-					["coord"] = { 66.4, 46, OHNAHRAN_PLAINS },
+					["coord"] = { 66.4, 46.0, OHNAHRAN_PLAINS },
 				}),
 				q(77327, {	-- Nirobin and the Office
 					["sourceQuests"] = {
@@ -268,7 +269,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						204835,	-- Zenata
 					},
 					["coords"] = {
-						{ 66.4, 46, OHNAHRAN_PLAINS },
+						{ 66.4, 46.0, OHNAHRAN_PLAINS },
 						{ 56.3, 43.9, THE_WAKING_SHORES },
 					},
 				}),
@@ -297,7 +298,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
 					["coord"] = { 61.5, 31.2, THALDRASZUS },
 					["groups"] = {
-						--spell(431591),	-- Azerothian Archives: Riverbed, Concord Observatory, and Lost Anethenum Sites (WQ unlock)
+						-- spell(431591),	-- Azerothian Archives: Riverbed, Concord Observatory, and Lost Anethenum Sites (WQ unlock)
 						i(208451, {	-- Archivist's Buckled Cap
 							["provider"] = { "i", 212371 },	-- Azerothian Archivist Initiation Token
 						}),
@@ -327,7 +328,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						o(405943, {	-- Drakonid Scroll Case
 							i(208202),	-- Neltharion Agent Instructions (QI!)
 						}),
-						--spell(431593),	-- Azerothian Archives: Dragonskull Island, Forbidden Reach Site (WQ unlock)
+						-- spell(431593),	-- Azerothian Archives: Dragonskull Island, Forbidden Reach Site (WQ unlock)
 					},
 				}),
 				q(77484, {	-- Technoscrying: Igira's Watch
@@ -350,9 +351,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["provider"] = { "n", 207763 },	-- Zenata
 					["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
 					["groups"] = {
-						--spell(431594),	-- Azerothian Archives: Igira's Watch, Zaralek Cavern Site (WQ unlock)
+						-- spell(431594),	-- Azerothian Archives: Igira's Watch, Zaralek Cavern Site (WQ unlock)
 						o(405996, {	-- Ancient Zaqali Trade-bond Tablet
-							["coord"] = { 42, 35, ZARALEK_CAVERN },
+							["coord"] = { 42.0, 35.0, ZARALEK_CAVERN },
 							["groups"] = {
 								i(208228),	-- Ancient Trade-bonded Tablet (QI!)
 							},
@@ -381,9 +382,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 76032 },	-- Hidden in the Midden
 					["provider"] = { "n", 205413 },	-- Roska Rocktooth (TODO: unsure, need to recheck npcID)
 					["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
-					--["groups"] = {
-					--	spell(431595),	-- Azerothian Archives: Gaze of Neltharion, Zaralek Cavern Site (WQ unlock)
-					--},
+					-- ["groups"] = {
+					-- 	spell(431595),	-- Azerothian Archives: Gaze of Neltharion, Zaralek Cavern Site (WQ unlock)
+					-- },
 				}),
 				q(77487, {	-- Excavation: Winglord's Perch
 					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
@@ -407,9 +408,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77151 },	-- The Cache in the Crag
 					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["coord"] = { 14.0, 14.7, THE_FORBIDDEN_REACH },
-					--["groups"] = {
-					--	spell(431592),	-- Azerothian Archives: Winglord's Perch, Forbidden Reach Site (WQ unlock)
-					--},
+					-- ["groups"] = {
+					-- 	spell(431592),	-- Azerothian Archives: Winglord's Perch, Forbidden Reach Site (WQ unlock)
+					-- },
 				}),
 				q(79231, {	-- Back to Headquarters! Again!
 					["sourceQuests"] = { 75604 },	-- Antiquated Antics (TODO: may be it require all 4 quests chain completed, so he can spawn with different coords? Or different qID?)
@@ -429,7 +430,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 					["coords"] = {
 						{ 61.6, 31.3, THALDRASZUS },
-						{ 27, 46.5, THE_AZURE_SPAN },
+						{ 27.0, 46.5, THE_AZURE_SPAN },
 						{ 55.3, 51.4, 2262 },	-- Traitor's Rest
 					},
 					["isWeekly"] = true,
@@ -476,49 +477,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(213536, {	-- Priceless Artifact
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 1000 } },
 						}),
-						i(212635, {	-- Historian's Utility Belt (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
-						}),
-						i(212634, {	-- Historian's Fingerless Gloves (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
-						}),
-						i(212637, {	-- Historian's Striders (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
-						}),
-						i(212636, {	-- Historian's Trousers (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
-						}),
-						i(212633, {	-- Historian's Fitted Vest (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
-						}),
-						i(213276, {	-- Archivist's Magnifying Mace (COSMETIC!)
+						i(212941, {	-- Archivist's "Light Touch" (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(213275, {	-- Archivist's Rockpuller (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						i(208456, {	-- Archivist's Elegant Bag (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
 						}),
-						i(213274, {	-- Archivist's Pathfinder (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(212870, {	-- Archivist's Stone Chisel (COSMETIC!)
+						i(208458, {	-- Archivist's Extravagant Lantern (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
 						i(208459, {	-- Archivist's Improvised Cudgetl (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208458, {	-- Archivist's Extravagant Lantern (COSMETIC!)
+						i(213276, {	-- Archivist's Magnifying Mace (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(212941, {	-- Archivist's "Light Touch" (COSMETIC!)
+						i(208454, {	-- Archivist's Mining Pick (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(213274, {	-- Archivist's Pathfinder (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208547, {	-- Archivist's Reading Spectacles (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
+						}),
+						i(213275, {	-- Archivist's Rockpuller (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208546, {	-- Archivist's Rose-Tinted Glasses (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
 						}),
 						i(208457, {	-- Archivist's Spelunking Torch (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208455, {	-- Archivist's Sturdy Hook (COSMETIC!)
+						i(212870, {	-- Archivist's Stone Chisel (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208454, {	-- Archivist's Mining Pick (COSMETIC!)
+						i(208455, {	-- Archivist's Sturdy Hook (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
 						i(208453, {	-- Archivist's Super Scooper (COSMETIC!)
@@ -527,23 +522,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(208450, {	-- Coiled Archivist's Rope (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208547, {	-- Archivist's Reading Spectacles (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
-						}),
-						i(208546, {	-- Archivist's Rose-Tinted Glasses (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
-						}),
-						i(208456, {	-- Archivist's Elegant Bag (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
-						}),
-						i(212794, {	-- Historian's Hefty Habersack (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
+						i(192796, {	-- Explorer's Stonehide Packbeast (MOUNT!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 20000 } },
 						}),
 						i(208452, {	-- Historian's Dapper Cap (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
 						}),
-						i(192796, {	-- Explorer's Stonehide Packbeast (MOUNT!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 20000 } },
+						i(212634, {	-- Historian's Fingerless Gloves (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
+						}),
+						i(212633, {	-- Historian's Fitted Vest (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
+						}),
+						i(212794, {	-- Historian's Hefty Habersack (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
+						}),
+						i(212637, {	-- Historian's Striders (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
+						}),
+						i(212636, {	-- Historian's Trousers (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
+						}),
+						i(212635, {	-- Historian's Utility Belt (COSMETIC!)
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
+						}),
+						i(248117, {	-- Studious Dracthyr's Tomes (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 4000 } },
 						}),
 					},
 				}),
@@ -552,11 +557,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = {
 					71232,	-- Renown of the Dragon Isles
 					DF_ACCOUNT_CAMPAIGN_QUEST,
-					--79996,	-- Dragonskull Island, Forbidden Reach Site
-					--79995,	-- Winglord's Perch, Forbidden Reach Site
-					--79992,	-- Riverbed, Concord Observatory, and Lost Anethenum Sites
-					--79997,	-- Igira's Watch, Zaralek Cavern Site
-					--79994,	-- Gaze of Neltharion, Zaralek Cavern Site
+					-- 79996,	-- Dragonskull Island, Forbidden Reach Site
+					-- 79995,	-- Winglord's Perch, Forbidden Reach Site
+					-- 79992,	-- Riverbed, Concord Observatory, and Lost Anethenum Sites
+					-- 79997,	-- Igira's Watch, Zaralek Cavern Site
+					-- 79994,	-- Gaze of Neltharion, Zaralek Cavern Site
 				},
 				["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
 					q(78662, {	-- Excavation: A Cliffside Full of Caches
@@ -596,7 +601,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(76587, {	-- Research: Centaur of Ohn'ahran Plains
-						["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
+						["coord"] = { 69.0, 34.3, OHNAHRAN_PLAINS },
 					}),
 					q(76734, {	-- Research: Djaradin of Zaralek Cavern
 						["coord"] = { 44.1, 54.1, ZARALEK_CAVERN },
@@ -617,7 +622,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 76.8, 38.0, THE_FORBIDDEN_REACH },
 					}),
 					q(78616, {	-- Technoscrying: The Mysteries of the Concord Observatory
-						["coord"] = { 55, 46.2, THE_WAKING_SHORES },
+						["coord"] = { 55.0, 46.2, THE_WAKING_SHORES },
 					}),
 					q(78820, {	-- Technoscrying: The Mysteries of Igira's Watch
 						["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
@@ -657,32 +662,32 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
 			q(79997),	-- After completing 'The Scale of it All' (questID 77425) (spellID 436778) (WQ unlock - Igira's Watch, Zaralek Cavern Site)
 			q(79994),	-- After completing 'Antiquated Antics' (questID 75604) (spellID 436766) (WQ unlock - Gaze of Neltharion, Zaralek Cavern Site)
-			--didn't pop on 2nd week, probably removed or attached only for certain WQs?
+			-- didn't pop on 2nd week, probably removed or attached only for certain WQs?
 			q(79661),	-- After completing ZC world quest for Azerothian Archive
 			q(79662),	-- After completing Ohn'ahran Plains world quest for Azerothian Archive
 			q(79663),	-- After completing 2nd ZC world quest for Azerothian Archive
-			--weekly 'wrapper'
-			--seems like constantly fire, but other two is different per week?
+			-- weekly 'wrapper'
+			-- seems like constantly fire, but other two is different per week?
 			q(79664),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434203)
-			--a (spellID 434934 (434928 & 434198))
+			-- a (spellID 434934 (434928 & 434198))
 			q(79616),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434198)
 			q(79670),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434928)
-			--b (spellID 434936 (434929 & 434197))
+			-- b (spellID 434936 (434929 & 434197))
 			q(79617),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434197)
 			q(79671),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434929) (fire same quest 2 times?)
-			--c (spellID 434937 (434930 & 434199))
+			-- c (spellID 434937 (434930 & 434199))
 			q(79618),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434199)
 			q(79672),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434930)
-			--d (spellID 434938 (434931 & 434200))
+			-- d (spellID 434938 (434931 & 434200))
 			q(79619),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434200)
 			q(79674),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434931)
-			--e (spellID 434939 (434932 & 434201))
+			-- e (spellID 434939 (434932 & 434201))
 			q(79620),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434201)
 			q(79675),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434932)
-			--f (spellID 434940 (434750 (this spellID abandon qIDs 79616 - 79621) & 434933))
-			--q(79621),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434750)
+			-- f (spellID 434940 (434750 (this spellID abandon qIDs 79616 - 79621) & 434933))
+			-- q(79621),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434750)
 			q(79684),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434750)
-			--q(79676),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434933)
+			-- q(79676),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434933)
 			-- TODO: figure out what 2nd qids are for and what this 2 spells is doing (rotation, may be?)
 			-- 434945 (434203 & 434944 (this spellID didn't have any attached qid to it atm))
 			-- odd 434203 (434196 (missing in wowhead db?) & 434198 & 434197 & 434199 & 434200 & 434201 & 434202 (this spellID didn't have any attached qid to it atm))

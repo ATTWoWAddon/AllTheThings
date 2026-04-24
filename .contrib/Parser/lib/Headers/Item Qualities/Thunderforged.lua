@@ -3,9 +3,15 @@ THUNDERFORGED = createHeader({
 	icon = 839979,
 	text = {
 		en = "Thunderforged",
-		es = "Forjas del trueno",
-		mx = "Forjas del trueno",
+		de = "Donnergeschmiedet",
+		es = "Forjas del Trueno",
+		mx = "Forjas del Trueno",
+		fr = "Forgé par le tonnerre",
+		it = "Tuonoforgiato",
+		ko = "천둥벼림",
+		pt = "Forjado no Trovão",
 		ru = "Создано в Кузне Грома",
 		cn = "雷霆",
+		tw = "雷霆鑄造",
 	},
 });

@@ -1,14 +1,23 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
+	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+		i(258839, {	-- Concealed Catalogue
+			["description"] = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
+			--["sym"] = {{"select","itemID",
+
+			--}},
+		}),
+	})),
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_UMBRAL, bubbleDownSelf({
-			["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 }
-		},{
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }
+		}, {
 			ach(61254),	-- Midnight Keystone Explorer: Season One
 			ach(61255, {	-- Midnight Keystone Conqueror: Season One
-				title(655),	-- %s the Umbral
+				title(655),	-- <Name> the Umbral
 			}),
 			ach(61256, {	-- Midnight Keystone Master: Season One
 				i(262620),	-- Calamitous Carrion (MOUNT!)
@@ -17,40 +26,87 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			ach(61258, {	-- Midnight Keystone Legend: Season One
 				i(262621),	-- Convalescent Carrion (MOUNT!)
 			}),
-			ach(61259, {	-- Umbral Hero: Midnight Season One
-				["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 },
+			--[[ach(, {	-- Midnight Keystone Myth: Season One
+				i(,	{-- Timelost Saddle
+				-- This item can be brought to Lindormi in Silvermoon or the Timeways, where it can be exchanged for a mount of your choice from a curated selection. 
+					i(174836),	-- Awakened Mindborer
+					i(182717),	-- Sintouched Deathwalker
+					i(187525),	-- Soultwisted Deathwalker
+					i(187682),	-- Wastewarped Deathwalker
+					i(192557),	-- Restoration Deathwalker
+					i(199412),	-- Hailstorm Armoredon
+					i(204798),	-- Inferno Armoredon
+					i(209060),	-- Verdant Armoredon
+					i(213438),	-- Infinite Armoredon
+					i(226357),	-- Diamond Mechsuit
+					i(235549),	-- Crimson Shreddertank
+					i(237141),	-- Enterprising Shreddertank
+					i(248248),	-- Azure Void Flyer
+					i(247822),	-- Scarlet Void Flyer
+					i(262620),	-- Calamitous Carrion
+					i(262621),	-- Convalescent Carrion
+				}),
+			}),
+			ach( ,{	-- Umbral Champion: Season One
 				["groups"] = {
-					title(656, {	-- <Name> the Umbral Hero
-						["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 },
-					}),
+					mount(),	-- new exclusive mount
+					title(),	-- <Name> the Umbral Champion
 				},
+			}),--]]
+			ach(61259, {	-- Umbral Hero: Midnight Season One
+				title(656),	-- <Name> the Umbral Hero
 			}),
 			ach(16643, {	-- Keystone Hero: Algeth'ar Academy
 				spell(393273),	-- Path of the Draconic Diploma
 			}),
 			ach(61269, {	-- Keystone Hero: Maisara Caverns
-			--	spell(445417),	-- Path of the Ruined City
+				spell(1254559),	-- Path of Cavernous Depths
 			}),
 			ach(61268, {	-- Keystone Hero: Nexus-Point Xenas
-			--	spell(445416),	-- Path of Nerubian Ascension
+				spell(1254563),	-- Path of the Fractured Core
 			}),
 			ach(61267, {	-- Keystone Hero: Magisters' Terrace
-			--	spell(445424),	-- Path of the Twilight Fortress
+				spell(1254572),	-- Path of Devoted Magistry
 			}),
 			ach(61262, {	-- Keystone Hero: Windrunner Spire
-			--	spell(354464),	-- Path of the Misty Forest
+				spell(1254400),	-- Path of the Windrunners
 			}),
 			ach(61270, {	-- Keystone Hero: Seat of the Triumvirate
-			--	spell(445414),	-- Path of the Arathi Flagship
+				spell(1254551),	-- Path of Dark Dereliction
 			}),
 			ach(61271, {	-- Keystone Hero: Pit of Saron
-			--	spell(354462),	-- Path of the Courageous
+				spell(1254555),	-- Path of Unyielding Blight
 			}),
 			ach(61272, {	-- Keystone Hero: Skyreach
-			--	spell(445269),	-- Path of the Corrupted Foundry
+				--NOT AWARDED spell(1254557),	-- Path of the Crowning Pinnacle
+				spell(159898),	-- Path of the Skies
+			}),
+			ach(61591, {	-- Keystone Victor: Algeth'ar Academy
+				title(682),	-- <Name>, Top Student
+			}),
+			ach(61587, {	-- Keystone Victor: Magisters' Terrace (Midnight)
+				title(687),	-- Terrace Terror <Name>
+			}),
+			ach(61588, {	-- Keystone Victor: Maisara Caverns
+				title(686),	-- Maisaran Soultender <Name>
+			}),
+			ach(61589, {	-- Keystone Victor: Nexus-Point Xenas
+				title(685),	-- <Name>, Nexus Navigator
+			}),
+			ach(61592, {	-- Keystone Victor: Pit of Saron
+				title(681),	-- Scourgebane <Name>
+			}),
+			ach(61593, {	-- Keystone Victor: Seat of the Triumvirate
+				title(683),	-- Despair Defier <Name>
+			}),
+			ach(61594, {	-- Keystone Victor: Skyreach
+				title(294),	-- <Name>, Scion of Rukhmar
+			}),
+			ach(61590, {	-- Keystone Victor: Windrunner Spire
+				title(684),	-- Windrunner Mediator <Name>
 			}),
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
-			-- Have to see what Blizzard does with those kind of achievements -- Goldenshacal October 2025
+			-- Have to see what Blizzard does with those kind of achievements	-- Goldenshacal October 2025
 			ach(61233, {	-- Midnight Season 1: Resilient Keystone 12
 				["_noautomation"] = true,
 			}),
@@ -112,5 +168,25 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				["collectible"] = false,
 			}),
 		})),
+		cnONLY(filter(TITLES, bubbleDownSelf({
+			["timeline"] = { ADDED_12_0_1 }
+		}, {
+			-- https://www.wowhead.com/news/chinese-community-earns-exclusive-titles-through-mythic-mentorship-380999
+			cnONLY(title(756)),	-- Volunteer <Name>						// 10 Dungeons
+			cnONLY(title(757)),	-- Caring Citizen <Name>				// 50 Dungeons
+			cnONLY(title(758)),	-- <Name>, The Backbone of the Realm	// 100 Dungeons
+			cnONLY(title(759)),	-- <Name>, The Philanthropist			// 200 Dungeons
+			cnONLY(title(760)),	-- <Name>, The Everlasting				// 500 Dungeons
+		}))),
 	}),
-})));
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(MYTHIC_PLUS, {
+		header(HEADERS.Achievement, SEASON_UMBRAL, bubbleDownSelf({
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }
+		}, {
+			q(92491, {isWeekly=true}),	-- first M+ key of the week
+		})),
+	}),
+}))

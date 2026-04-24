@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local RARE_GROUP_ONE = {
 	193664,	-- Ancient Protector
 	193220,	-- Broodweaver Araznae
@@ -174,6 +175,9 @@ local RARE_GROUP_SUNDERING = {
 	193271,	-- Shadeslash Trakken
 	193165,	-- Sparkspitter Vrak
 	201542,	-- Tikarr Frostclaw <<The Lazy>>
+	-- #IF AFTER 10.1
+	205227,	-- Tarasek Fighter
+	-- #ENDIF
 };
 local RARE_GROUP_AZRA = {
 	193135,	-- Azra's Prized Peony
@@ -225,6 +229,7 @@ local RARE_GROUP_TEMPEST = {
 	193258,	-- Tempestrian <Stormbringer>
 	201562,	-- Shardwing
 };
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(RARES, {
 		n(COMMON_BOSS_DROPS, {
@@ -317,7 +322,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(200193),	-- Manafrond Sandals
 				i(200232),	-- Raptor Talonglaive
 				i(200131),	-- Reclaimed Survivalist's Dagger
-				--i(200212),	-- Sand-Encrusted Graves // This item can drop from 70+ different rares, however there is 1 rare with a 75% chance. Listed under the specific rare with a note. --Goldenshacal October 2025
+				-- i(200212),	-- Sand-Encrusted Graves // This item can drop from 70+ different rares, however there is 1 rare with a 75% chance. Listed under the specific rare with a note. --Goldenshacal October 2025
 				i(200859),	-- Seasoned Hunter's Trophy
 				i(198409),	-- Personal Shell (TOY!)
 				i(200563),	-- Primal Ritual-shell
