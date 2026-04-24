@@ -872,6 +872,10 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		-- else app.PrintDebug("Failed GetDisplayedUnit",SafeGetName(tooltip))
 		end
 	end
+	-- In Classic or where Blizzard hasn't ruined the game with secrets, we don't need the safety function
+	if not C_Secrets or not C_Secrets.HasSecretRestrictions() then
+		SafelyCheckTooltipForUnitInfo = TooltipUtil.GetDisplayedUnit
+	end
 	local TooltipTypes = {
 		[Enum_TooltipDataType.Toy] = "itemID",
 		[Enum_TooltipDataType.Item] = "itemID",
