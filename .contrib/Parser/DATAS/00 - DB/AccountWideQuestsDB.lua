@@ -2763,6 +2763,14 @@ local AccountWideQuestsDB = {
 	95541,	-- Quest #95541*
 	95542,	-- Quest #95542*
 	95543,	-- Quest #95543*
+	95547,	-- Ritual Site Challenge Report: Tendrils
+	95548,	-- Tainted Sample
+	95549,	-- Raising Magical Alarms
+	95550,	-- Thin Their Ranks
+	95551,	-- Misappropriated Treasures
+	95552,	-- Dark Obelisk Investigation
+	95553,	-- Manifested Destiny
+	95554,	-- Questionable Power
 	96214,	-- Tracking Quest
 	96215,	-- Tracking Quest
 

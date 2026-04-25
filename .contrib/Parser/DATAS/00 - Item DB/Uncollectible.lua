@@ -2822,13 +2822,17 @@ i(260287);	-- World Roots Banquet
 ------------------
 -- PATCH 12.0.5 --
 ------------------
+i(272049);	-- Bloodied Propaganda Leaflet
+i(272109);	-- Crumpled Propaganda Page
 i(272047);	-- Deeplurk Scrying Stone
 i(273014);	-- Howling Glass Shard
 i(272046);	-- Mana-Singed Divining Rod
 i(272120);	-- Mysterious Vial
+i(272052);	-- Ripped Propaganda Page
 i(272048);	-- Shattered Containment Pearl
 i(272117);	-- Shattered Energy Weapon
 i(272892);	-- Shattered Gem
 i(272110);	-- Singed Propaganda Leaflet
+i(272051);	-- Sticky Propaganda Scroll
 i(272115);	-- Smashed Shield Emitter
 i(272116);	-- Water-Logged Transaction Scroll

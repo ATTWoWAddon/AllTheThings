@@ -135,7 +135,6 @@ root(ROOTS.Unsorted, {
 			i(266249),	-- Hanging Tavern Lantern
 			i(266250),	-- Long Hanging Tavern Lantern
 			i(266260),	-- [DNT] [AUTOGEN] 12PH_Opulent_Crate02_Open.M2
-			i(266448),	-- Hal'hadar Battery Core
 			i(267075),	-- Ornate Elven Stovetop
 			i(267083),	-- Razorwind Campfire Grill
 			i(267084),	-- Founder's Point Hay Bale
@@ -278,7 +277,6 @@ root(ROOTS.Unsorted, {
 			i(268792),	-- Dawnchaser's Painted Tunic
 			i(268793),	-- Ensemble: Dawnchaser's Painted Battle Garb
 			i(268806),	-- Scarred Tabard of Gilneas
-			i(268807),	-- Torn Twilight Missive
 			i(268830),	-- Stylish Flowered Brown Cap
 			i(268831),	-- Stylish Black Cap
 			i(268832),	-- Stylish Brown Top Hat
@@ -345,58 +343,6 @@ root(ROOTS.Unsorted, {
 			i(270297),	-- Crown of Sunny Springflowers
 			i(270932),	-- Wriggling Field Pouch
 			i(270933),	-- Bulging Field Pouch
-			i(270934),	-- Recruit's Field Pouch
-			i(270935),	-- Ranger Recruit's Sabatons
-			i(270936),	-- Ranger Recruit's Robes
-			i(270937),	-- Ranger Recruit's Breastplate
-			i(270938),	-- Ranger Recruit's Chainmail
-			i(270939),	-- Ranger Recruit's Jerkin
-			i(270940),	-- Ranger Recruit's Gloves
-			i(270941),	-- Ranger Recruit's Gauntlets
-			i(270942),	-- Ranger Recruit's Mitts
-			i(270943),	-- Ranger Recruit's Grips
-			i(270944),	-- Ranger Recruit's Crown
-			i(270945),	-- Ranger Recruit's Helmet
-			i(270946),	-- Ranger Recruit's Hood
-			i(270947),	-- Ranger Recruit's Legguards
-			i(270948),	-- Ranger Recruit's Pants
-			i(270949),	-- Ranger Recruit's Breeches
-			i(270950),	-- Ranger Recruit's Tights
-			i(270951),	-- Ranger Recruit's Shoulderpads
-			i(270952),	-- Ranger Recruit's Pauldrons
-			i(270953),	-- Ranger Recruit's Mantle
-			i(270954),	-- Ranger Recruit's Spaulders
-			i(270955),	-- Ranger Recruit's Girdle
-			i(270956),	-- Ranger Recruit's Sash
-			i(270957),	-- Ranger Recruit's Waistguard
-			i(270958),	-- Ranger Recruit's Belt
-			i(270959),	-- Ranger Recruit's Cuffs
-			i(270960),	-- Ranger Recruit's Vambraces
-			i(270961),	-- Ranger Recruit's Wristguards
-			i(270962),	-- Ranger Recruit's Wraps
-			i(270963),	-- Ranger Recruit's Ring
-			i(270964),	-- Ranger Recruit's Loop
-			i(270965),	-- Ranger Recruit's Chain
-			i(270966),	-- Ranger Recruit's Cloak
-			i(270967),	-- Ranger Recruit's Helm
-			i(270968),	-- Ranger Recruit's Slippers
-			i(270969),	-- Ranger Recruit's Boots
-			i(270970),	-- Ranger Recruit's Treads
-			i(270972),	-- Ranger Recruit's Mace
-			i(270973),	-- Ranger Recruit's Skullcracker
-			i(270974),	-- Ranger Recruit's Blade
-			i(270975),	-- Ranger Recruit's Acolyte's Blade
-			i(270976),	-- Ranger Recruit's Glaive
-			i(270977),	-- Ranger Recruit's Polearm
-			i(270978),	-- Ranger Recruit's Shield
-			i(270979),	-- Ranger Recruit's Longbow
-			i(270981),	-- Ranger Recruit's Fetish
-			i(270982),	-- Ranger Recruit's Stiletto
-			i(270983),	-- Ranger Recruit's Battle Stave
-			i(270984),	-- Ranger Recruit's Staff
-			i(270985),	-- Ranger Recruit's Cleaver
-			i(270986),	-- Ranger Recruit's Medallion
-			i(270987),	-- Recruit's Field Satchel
 			i(270988),	-- Wriggling Capybara
 			i(270990),	-- Curious Lynx Kitten
 			i(270991),	-- Sunfury Great Bulwark
@@ -473,17 +419,12 @@ root(ROOTS.Unsorted, {
 			i(271342),	-- Galactic Void Matrix
 			i(271353),	-- Collection of Valuables
 			i(271814),	-- Spring Dagger-Tined Rake
-			i(272049),	-- Bloodied Propaganda Leaflet
-			i(272051),	-- Sticky Propaganda Scroll
-			i(272052),	-- Ripped Propaganda Page
-			i(272109),	-- Crumpled Propaganda Page
 			i(272111),	-- Decaying Necromancer Cloak
 			i(272112),	-- Golden Rune-Etched Circlet
 			i(272113),	-- Scourge Shard Fragment
 			i(272114),	-- Discarded Excavation Tool
 			i(272118),	-- Inert Arcane Explosive
 			i(272119),	-- Residue-Covered Tool
-			i(272125),	-- Recruit's Cache
 			i(272144),	-- Onyx Bloodknight Bladestaff
 			i(272287),	-- Nap Mat
 			i(272339),	-- Umbral Champion's Illustrious Banner

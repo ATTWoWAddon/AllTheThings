@@ -86,7 +86,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				ach(62510),	-- Void Smasher: Zul'Aman
 			}),
 			n(DROPS, {
+				i(268809),	-- Enchanted Naga Scroll (QS!)
+				i(266448),	-- Hal'hadar Battery Core (QS!)
 				i(268808),	-- Permafrosted Keystone (QS!)
+				i(268807),	-- Torn Twilight Missive (QS!)
 			}),
 			n(QUESTS, {
 				q(94380, {	-- Ranger Captain's Summons
@@ -141,9 +144,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(271094),	-- Lady Darkglen's Device (QI!)
 					},
 				}),
-				q(95070, {	-- Permafrosted Keystone
-					["provider"] = { "i", 268808 },	-- Permafrosted Keystone (QS!)
-				}),
 				-- Repeatable Quests, Assaults are weekly per zone. 1 week is in Eversong, 1 week is in Zul'Aman
 				q(94385, {	-- Void Assaults: Eversong Woods
 					["sourceQuest"] = 94381,	-- Outfitting and Allies
@@ -156,6 +156,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["qg"] = 257415,	-- Kul'amara the Fierce
 					["coord"] = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["isWeekly"] = true,
+				}),
+				header(HEADERS.Achievement, 62569, {	-- Traces in the Dark
+					q(94920, {	-- Hal'hadar Battery Core
+						["provider"] = { "i", 266448 },	-- Hal'hadar Battery Core (QS!)
+					}),
+					q(95071, {	-- Enchanted Naga Scroll
+						["provider"] = { "i", 268809 },	-- Enchanted Naga Scroll (QS!)
+					}),
+					q(95070, {	-- Permafrosted Keystone
+						["provider"] = { "i", 268808 },	-- Permafrosted Keystone (QS!)
+					}),
+					q(95069, {	-- Torn Twilight Missive
+						["provider"] = { "i", 268807 },	-- Torn Twilight Missive (QS!)
+					}),
 				}),
 			}),
 			n(REWARDS, {
@@ -326,6 +340,58 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(263892),	-- Void-Laced Torc
 					}),
 				}),
+				n(LEVELING_CHARACTERS, {
+					i(270935),	-- Ranger Recruit's Sabatons
+					i(270936),	-- Ranger Recruit's Robes
+					i(270937),	-- Ranger Recruit's Breastplate
+					i(270938),	-- Ranger Recruit's Chainmail
+					i(270939),	-- Ranger Recruit's Jerkin
+					i(270940),	-- Ranger Recruit's Gloves
+					i(270941),	-- Ranger Recruit's Gauntlets
+					i(270942),	-- Ranger Recruit's Mitts
+					i(270943),	-- Ranger Recruit's Grips
+					i(270944),	-- Ranger Recruit's Crown
+					i(270945),	-- Ranger Recruit's Helmet
+					i(270946),	-- Ranger Recruit's Hood
+					i(270947),	-- Ranger Recruit's Legguards
+					i(270948),	-- Ranger Recruit's Pants
+					i(270949),	-- Ranger Recruit's Breeches
+					i(270950),	-- Ranger Recruit's Tights
+					i(270951),	-- Ranger Recruit's Shoulderpads
+					i(270952),	-- Ranger Recruit's Pauldrons
+					i(270953),	-- Ranger Recruit's Mantle
+					i(270954),	-- Ranger Recruit's Spaulders
+					i(270955),	-- Ranger Recruit's Girdle
+					i(270956),	-- Ranger Recruit's Sash
+					i(270957),	-- Ranger Recruit's Waistguard
+					i(270958),	-- Ranger Recruit's Belt
+					i(270959),	-- Ranger Recruit's Cuffs
+					i(270960),	-- Ranger Recruit's Vambraces
+					i(270961),	-- Ranger Recruit's Wristguards
+					i(270962),	-- Ranger Recruit's Wraps
+					i(270963),	-- Ranger Recruit's Ring
+					i(270964),	-- Ranger Recruit's Loop
+					i(270965),	-- Ranger Recruit's Chain
+					i(270966),	-- Ranger Recruit's Cloak
+					i(270967),	-- Ranger Recruit's Helm
+					i(270968),	-- Ranger Recruit's Slippers
+					i(270969),	-- Ranger Recruit's Boots
+					i(270970),	-- Ranger Recruit's Treads
+					i(270972),	-- Ranger Recruit's Mace
+					i(270973),	-- Ranger Recruit's Skullcracker
+					i(270974),	-- Ranger Recruit's Blade
+					i(270975),	-- Ranger Recruit's Acolyte's Blade
+					i(270976),	-- Ranger Recruit's Glaive
+					i(270977),	-- Ranger Recruit's Polearm
+					i(270978),	-- Ranger Recruit's Shield
+					i(270979),	-- Ranger Recruit's Longbow
+					i(270981),	-- Ranger Recruit's Fetish
+					i(270982),	-- Ranger Recruit's Stiletto
+					i(270983),	-- Ranger Recruit's Battle Stave
+					i(270984),	-- Ranger Recruit's Staff
+					i(270985),	-- Ranger Recruit's Cleaver
+					i(270986),	-- Ranger Recruit's Medallion
+				}),
 				n(WEAPONS, {
 					i(263905),	-- Void-Touched Apprentice's Gavel
 					i(263903),	-- Void-Touched Basher
@@ -358,10 +424,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					i(263915),	-- Void-Touched Torch
 					i(263902),	-- Void-Touched Twinblade
 				}),
-				-- Boxes
+				-- Boxes given to Max Level Characters
 				i(270244),	-- Field Pouch
 				i(270247),	-- Field Satchel
 				i(264914),	-- Ranger's Cache	// Pinnacle Cache - Midnight Season 1
+				-- Boxes given to Leveling Characters
+				i(272125),	-- Recruit's Cache
+				i(270934),	-- Recruit's Field Pouch
+				i(270987),	-- Recruit's Field Satchel
 			}),
 			n(VENDORS, {
 				n(255473, {	-- Maren Silverwing <Quartermaster>
@@ -694,7 +764,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						ach(62535),	-- Ritual Site Rogue: Daggerspine Point
 					}),
 					n(ZONE_DROPS, {
-						i(268809),	-- Enchanted Naga Scroll (QS!/QI!)
 						i(271644),	-- Ember of Power (QS!/QI!)
 						i(272128, {	-- Soggy Lynx Toy
 							["description"] = "Has a chance to drop from any Naga-type creature within the Ritual Site.",
@@ -760,9 +829,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				i(269817),	-- Ritual Site Challenge Report: Tendrils (QS!)
 			}),
 			n(QUESTS, {
-				q(95071, {	-- Enchanted Naga Scroll
-					["provider"] = { "i", 268809 },	-- Enchanted Naga Scroll (QS!/QI!)
-				}),
 				q(95551, {	-- Misappropriated Treasures
 					["providers"] = {	-- All of these trigger the Quest and also serve as Quest Items
 						{ "i", 271428 },	-- Crystalline Treasure (QS!/QI!)
