@@ -54,11 +54,13 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				n(156501, {	-- Ravnyr / Kalecgos (Post 11.2.7)
 					-- Exo Note: No item drops from this encounter Post 11.2.7
 					["crs"] = { 156814 },	-- Gor'groth
-					["groups"] = {
+					["groups"] = sharedData({
+						["timeline"] = { ADDED_9_0_1, REMOVED_11_2_7 },
+					}, {
 						i(178168),	-- Darkmaul Ritual Stone
 						i(178171),	-- Darkmaul Signet Ring
 						i(178169),	-- Decrepit Dragonscale Drape
-					},
+					}),
 				}),
 			},
 		}),

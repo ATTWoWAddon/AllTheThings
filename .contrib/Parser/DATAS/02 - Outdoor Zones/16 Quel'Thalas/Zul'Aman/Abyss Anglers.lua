@@ -49,6 +49,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["qg"] = 240195,	-- Depthdiver Jeju
 					["coord"] = { 68.2, 20.2, MAP.MIDNIGHT.ZULAMAN },
 				}),
+				q(94840, {	-- Blessings of The Depths
+					["provider"] = { "i", 265749 },	-- Idol of the Depths
+				}),
 				n(BONUS_OBJECTIVES, {	-- Appears as a Bonus Objective quest every time you dive
 					q(92447, {	-- Abyss Anglers
 						["coord"] = { 68.2, 19.9, MAP.MIDNIGHT.ZULAMAN },
