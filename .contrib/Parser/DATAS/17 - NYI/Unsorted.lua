@@ -279,7 +279,6 @@ root(ROOTS.Unsorted, {
 			i(268793),	-- Ensemble: Dawnchaser's Painted Battle Garb
 			i(268806),	-- Scarred Tabard of Gilneas
 			i(268807),	-- Torn Twilight Missive
-			i(268808),	-- Permafrosted Keystone
 			i(268830),	-- Stylish Flowered Brown Cap
 			i(268831),	-- Stylish Black Cap
 			i(268832),	-- Stylish Brown Top Hat
@@ -478,15 +477,12 @@ root(ROOTS.Unsorted, {
 			i(272051),	-- Sticky Propaganda Scroll
 			i(272052),	-- Ripped Propaganda Page
 			i(272109),	-- Crumpled Propaganda Page
-			i(272110),	-- Singed Propaganda Leaflet
 			i(272111),	-- Decaying Necromancer Cloak
 			i(272112),	-- Golden Rune-Etched Circlet
 			i(272113),	-- Scourge Shard Fragment
 			i(272114),	-- Discarded Excavation Tool
-			i(272115),	-- Smashed Shield Emitter
 			i(272118),	-- Inert Arcane Explosive
 			i(272119),	-- Residue-Covered Tool
-			i(272120),	-- Mysterious Vial
 			i(272125),	-- Recruit's Cache
 			i(272144),	-- Onyx Bloodknight Bladestaff
 			i(272287),	-- Nap Mat
@@ -494,11 +490,9 @@ root(ROOTS.Unsorted, {
 			i(272391),	-- Pattern: Rope Lynx Harness
 			i(272392),	-- Broken Lynx Leash
 			i(272400),	-- Fine Lynx Fur
-			i(272892),	-- Shattered Gem
 			i(272893),	-- Icy Harness
 			i(272894),	-- Inert Runestone
 			i(273013),	-- Void-Permeated Hide Scrap
-			i(273014),	-- Howling Glass Shard
 			i(273152),	-- Delve Gearbox
 			i(273153),	-- Delve Gearbox
 			i(273154),	-- Delve Gearbox

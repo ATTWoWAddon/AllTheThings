@@ -9,16 +9,16 @@ VOID_ASSAULTS = createHeader({
 	icon = 7501330,
 	text = {
 		en = "Void Assaults",
-		--de = "Void Assaults",
-		--es = "Void Assaults",
-		--mx = "Void Assaults",
-		--fr = "Void Assaults",
-		--it = "Void Assaults",
-		--ko = "Void Assaults",
-		--pt = "Void Assaults",
-		--ru = "Void Assaults",
-		--cn = "Void Assaults",
-		--tw = "Void Assaults",
+		de = "Angriffe der Leere",
+		es = "Asaltos del Vacío",
+		mx = "Asaltos del Vacío",
+		fr = "Assauts du Vide",
+		it = "Assalti del Vuoto",
+		ko = "공허 공세",
+		pt = "Investidas do Caos",
+		ru = "Натиски Бездны",
+		cn = "虚空侵袭",
+		tw = "虛無襲擊",
 	},
 });
 RITUAL_SITES = createHeader({
@@ -26,16 +26,16 @@ RITUAL_SITES = createHeader({
 	icon = 136194,
 	text = {
 		en = "Ritual Sites",
-		--de = "Ritual Sites",
-		--es = "Ritual Sites",
-		--mx = "Ritual Sites",
-		--fr = "Ritual Sites",
-		--it = "Ritual Sites",
-		--ko = "Ritual Sites",
-		--pt = "Ritual Sites",
-		--ru = "Ritual Sites",
-		--cn = "Ritual Sites",
-		--tw = "Ritual Sites",
+		de = "Ritualstätten",
+		es = "Lugares de ritual",
+		mx = "Sitios de ritual",
+		fr = "Sites rituels",
+		it = "Siti Rituali",
+		ko = "의식 지점",
+		pt = "Sítios Ritualísticos",
+		ru = "Места проведения ритуалов",
+		cn = "仪式场地",
+		tw = "儀式地點第",
 	},
 });
 
@@ -84,6 +84,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				ach(62568),	-- Void Shmoid
 				ach(62507),	-- Void Smasher: Eversong
 				ach(62510),	-- Void Smasher: Zul'Aman
+			}),
+			n(DROPS, {
+				i(268808),	-- Permafrosted Keystone (QS!)
 			}),
 			n(QUESTS, {
 				q(94380, {	-- Ranger Captain's Summons
@@ -137,6 +140,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["groups"] = {
 						i(271094),	-- Lady Darkglen's Device (QI!)
 					},
+				}),
+				q(95070, {	-- Permafrosted Keystone
+					["provider"] = { "i", 268808 },	-- Permafrosted Keystone (QS!)
 				}),
 				-- Repeatable Quests, Assaults are weekly per zone. 1 week is in Eversong, 1 week is in Zul'Aman
 				q(94385, {	-- Void Assaults: Eversong Woods
@@ -351,12 +357,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					i(263916),	-- Void-Touched Tome
 					i(263915),	-- Void-Touched Torch
 					i(263902),	-- Void-Touched Twinblade
-				}),
-				filter(MISC, {
-				}),
-				filter(REAGENTS, {
-				}),
-				filter(RECIPES, {
 				}),
 				-- Boxes
 				i(270244),	-- Field Pouch

@@ -26649,6 +26649,8 @@ localize(L.HEADER_NAMES, {
 	[-710] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 	[-729] = "Überfluss",
 	[-738] = "Legenden der Haranir",
+	[-741] = "Angriffe der Leere",
+	[-742] = "Ritualstätten",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -34412,6 +34414,8 @@ localize(L.HEADER_NAMES, {
 	[-710] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 	[-729] = "Abondance",
 	[-738] = "Légendes des Haranir",
+	[-741] = "Assauts du Vide",
+	[-742] = "Sites rituels",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -41781,6 +41785,8 @@ localize(L.HEADER_NAMES, {
 	[-710] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 	[-729] = "Abbondanza",
 	[-738] = "Leggende degli Haranir",
+	[-741] = "Assalti del Vuoto",
+	[-742] = "Siti Rituali",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -48471,6 +48477,8 @@ localize(L.HEADER_NAMES, {
 	[-710] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 	[-729] = "Abundância",
 	[-738] = "Lendas dos Haranir",
+	[-741] = "Investidas do Caos",
+	[-742] = "Sítios Ritualísticos",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -56345,6 +56353,8 @@ localize(L.HEADER_NAMES, {
 	[-710] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 	[-729] = "Изобилие",
 	[-738] = "Легенды хараниров",
+	[-741] = "Натиски Бездны",
+	[-742] = "Места проведения ритуалов",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -63780,6 +63790,8 @@ localize(L.HEADER_NAMES, {
 	[-710] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 	[-729] = "풍요",
 	[-738] = "하라니르의 전설",
+	[-741] = "공허 공세",
+	[-742] = "의식 지점",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -71228,6 +71240,8 @@ localize(L.HEADER_NAMES, {
 	[-723] = "Incursiones elementales",
 	[-729] = "Abundancia",
 	[-738] = "Leyendas de los haranir",
+	[-741] = "Asaltos del Vacío",
+	[-742] = "Lugares de ritual",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -78626,6 +78640,7 @@ localize(L.HEADER_NAMES, {
 	[-694] = "Mejoras de Burning Crusade Classic™ Edición Aniversario",
 	[-710] = "|cFFFFFFFFStep 1:|rNota sospechosa",
 	[-723] = "Invasiones elementales",
+	[-742] = "Sitios de ritual",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-29] = "Contiene cosas que se otorgan como recompensa al completar este evento.",
@@ -80341,6 +80356,8 @@ localize(L.HEADER_NAMES, {
 	[-729] = "丰饶",
 	[-730] = "深渊钓客",
 	[-738] = "哈籁尼尔的传说",
+	[-741] = "虚空侵袭",
+	[-742] = "仪式场地",
 	[-746] = "专业节点",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -87586,6 +87603,8 @@ localize(L.HEADER_NAMES, {
 	[-713] = "最高等級角色",
 	[-729] = "豐足",
 	[-738] = "哈拉尼爾的傳說",
+	[-741] = "虛無襲擊",
+	[-742] = "儀式地點第",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成探究時獎勵的東西。",
