@@ -7789,7 +7789,7 @@ flt(200,{description="These are learned by specialization.",requireSkill=186,g={
 r(1225392,{cost={{"c",3158,1}},requireSkill=186})}}),
 h(-56,{requireSkill=186,g={
 o(525908,{coords={
-[2536]={{33.3,65.9}}},questID=89149,requireSkill=186,g={
+[2536]={{33.5,66.2}}},questID=89149,requireSkill=186,g={
 i(238601,{b=1,requireSkill=186,spellID=1225656})}}),
 o(525909,{coords={
 [2444]={{28.8,38.5}}},questID=89148,requireSkill=186,g={

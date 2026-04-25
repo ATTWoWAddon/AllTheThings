@@ -2542,7 +2542,7 @@ q(25264,{awp=40003,coords={
 q(27277,{awp=40003,c={8},coords={
 [1456]={{22.8,14.5}},
 [1458]={{85,14}},
-[1954]={{53,19.6}}},isBreadcrumb=1,lvl=20,nextQuests={27400},qgs={3047,4566,16653},r=1}),
+[1954]={{59.2,19.7}}},isBreadcrumb=1,lvl=20,nextQuests={27400},qgs={3047,4566,16653},r=1}),
 q(2751,{coords={
 [1454]={{76.2,37.4}}},cost={{"i",5635,2},{"i",7957,2},{"i",2868,2}},description="Becomes available at Blacksmithing skill level 140 when character level requirement is met.",learnedAt=140,lvl=32,qgs={7790},r=1,requireSkill=164,g={
 r(9813,{description="This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",itemID=7979,learnedAt=160,q=2,requireSkill=164})}}),
@@ -5422,9 +5422,7 @@ qo(1,{crs={17300},providers={{"i",45477}}}),
 qo(2,{crs={6072},providers={{"i",45476}}}),
 i(24119,{awp=20001,b=1,f=52,q=2}),
 i(24120,{awp=20001,b=1,f=52,q=2}),
-i(24118,{awp=20001,b=1,f=52,q=2}),
-i(45476,{q=1}),
-i(45477,{q=1})}}),
+i(24118,{awp=20001,b=1,f=52,q=2})}}),
 q(9522,{awp=20001,coords={
 [1440]={{86.5,44.2}}},lvl=27,qgs={17303},r=2,rwp=40003,sourceQuests={9520},u=2,g={
 qo(1,{coords={
@@ -15680,7 +15678,7 @@ qo(1,{crs={34894},providers={{"i",56797}}})}}),
 q(26062,{awp=40003,coords={
 [1442]={{71.1,91.2}}},qgs={3995},r=1,sourceQuests={26060,26061},g={
 qo(1,{coords={
-[1442]={{60,87.5}}},providers={{"i",56795},{"o",178104}}})}}),
+[1442]={{60,87.5}}},providers={{"i",56795},{"o",178104},{"o",178105},{"o",178106}}})}}),
 q(26060,{awp=40003,coords={
 [1442]={{71.1,91.2}}},qgs={3995},r=1,sourceQuests={26059},g={
 qo(1,{crs={4008},providers={{"i",56796}}})}}),
@@ -29197,7 +29195,7 @@ s(208497,63017,{b=1,f=6,q=2}),
 s(208496,63016,{b=1,f=5,q=2}),
 s(208495,63015,{b=1,f=4,q=2})}}),
 q(6136,{coords={
-[1423]={{23,68.2}}},lvl=56,qgs={11878},r=1,rwp=40003,u=2,g={
+[1423]={{23,68.2}}},lvl=56,qgs={11878},r=1,rwp=40003,sourceQuests={6133},u=2,g={
 qo(1,{providers={{"n",11896}},u=2}),
 s(128676,17002,{b=1,f=21,q=2,u=2}),
 s(128677,17003,{b=1,f=23,q=2,u=2}),

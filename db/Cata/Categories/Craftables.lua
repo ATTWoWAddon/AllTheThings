@@ -1179,7 +1179,7 @@ o(176640,{learnedAt=280,maps={1448},requireSkill=182,rwp=40003,u=2}),
 o(1618,{maps={1411,1412,1420,1426,1429,1432,1436,1438,1439},requireSkill=182}),
 o(3724,{maps={1413},requireSkill=182}),
 o(142140,{coords={
-[1448]={{38.6,67.5},{39.45,45.1},{42.2,36.1},{49.35,30.85},{56.95,85.55}}},description="Can be found in elven ruins.",learnedAt=210,requireSkill=182}),
+[1448]={{38.6,67.5},{39.45,45.1},{42.2,36.1},{49.35,30.85},{56.95,85.55}}},description="Can be found in elven or troll ruins.",learnedAt=210,requireSkill=182}),
 o(1617,{maps={1411,1412,1420,1421,1426,1429,1432,1436,1438,1439},requireSkill=182}),
 o(3725,{maps={1413},requireSkill=182}),
 o(176587,{learnedAt=285,maps={1435},requireSkill=182}),

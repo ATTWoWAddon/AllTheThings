@@ -1182,7 +1182,7 @@ o(176640,{learnedAt=280,maps={77},requireSkill=182,rwp=40003,u=2}),
 o(1618,{maps={1,7,18,27,37,48,52,57,62},requireSkill=182}),
 o(3724,{maps={10},requireSkill=182}),
 o(142140,{coords={
-[77]={{38.6,67.5},{39.45,45.1},{42.2,36.1},{49.35,30.85},{56.95,85.55}}},description="Can be found in elven ruins.",learnedAt=210,requireSkill=182}),
+[77]={{38.6,67.5},{39.45,45.1},{42.2,36.1},{49.35,30.85},{56.95,85.55}}},description="Can be found in elven or troll ruins.",learnedAt=210,requireSkill=182}),
 o(1617,{maps={1,7,18,21,27,37,48,52,57,62},requireSkill=182}),
 o(3725,{maps={10},requireSkill=182}),
 o(176587,{learnedAt=285,maps={51},requireSkill=182}),
