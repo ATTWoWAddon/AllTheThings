@@ -438,6 +438,7 @@ root(ROOTS.Zones, {
 									92679,	-- Flawless Aquatic Battle-Stone
 									92675,	-- Flawless Beast Battle-Stone
 									92676,	-- Flawless Critter Battle-Stone
+									92683,	-- Flawless Dragonkin Battle-Stone
 									92665,	-- Flawless Elemental Battle-Stone
 									92677,	-- Flawless Flying Battle-Stone
 									92682,	-- Flawless Humanoid Battle-Stone
@@ -722,6 +723,7 @@ root(ROOTS.Zones, {
 						i(92679),	-- Flawless Aquatic Battle-Stone
 						i(92675),	-- Flawless Beast Battle-Stone
 						i(92676),	-- Flawless Critter Battle-Stone
+						i(92683),	-- Flawless Dragonkin Battle-Stone
 						i(92665),	-- Flawless Elemental Battle-Stone
 						i(92677),	-- Flawless Flying Battle-Stone
 						i(92682),	-- Flawless Humanoid Battle-Stone
