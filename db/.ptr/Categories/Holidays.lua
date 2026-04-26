@@ -2812,7 +2812,7 @@ q(96242,{coords={
 q(93870,{coords={
 [2393]={{31.5,76.4}}},isDaily=1,qgs={256697},sourceQuests={93719}})}),
 h(-47,{
-cu(3393)}),
+cu(3393,{description="You must personally find at least 1 person as a seeker to receive this currency, otherwise you get the 'try harder next time' popup and no reward, regardless of your performance.\n\nRecommended: Use the Spell Breaker Seeker with 'Leap' and 'Swift' upgrade find people."})}),
 h(-58,{
 n(264056,{coords={
 [2393]={{31.6,76.7}}},g={
