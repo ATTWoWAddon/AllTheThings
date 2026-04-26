@@ -42,6 +42,13 @@ RITUAL_SITES = createHeader({
 local FIELD_ACCOLADE = 3405;
 local DARK_PARTICLE = 267051;
 
+local LEVELING_BOX_SYM = {
+	{"select","expansionID",EXPANSION.MID},{"pop"},
+	{"where","headerID",VOID_ASSAULTS},{"pop"},
+	{"where","headerID",REWARDS},{"pop"},
+	{"where","headerID",LEVELING_CHARACTERS},{"pop"},
+}
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	["groups"] = sharedData({
 		["maps"] = {
@@ -173,10 +180,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				}),
 			}),
 			n(REWARDS, {
-				-- Currencies
-				currency(FIELD_ACCOLADE),
-				i(DARK_PARTICLE),
-				-- Gear
 				n(LEVELING_CHARACTERS, {
 					n(ARMOR, {
 						n(BACK, {
@@ -247,14 +250,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(270986),	-- Ranger Recruit's Medallion
 					}),
 				}),
+				-- Currencies
+				currency(FIELD_ACCOLADE),
 				-- Boxes given to Max Level Characters
-				i(270244),	-- Field Pouch
-				i(270247),	-- Field Satchel
-				i(264914),	-- Ranger's Cache
+				i(270244, {	-- Field Pouch
+					["groups"] = { i(DARK_PARTICLE), },
+				}),
+				i(270247, {	-- Field Satchel
+					["groups"] = { i(DARK_PARTICLE), },
+				}),
+				i(264914, {	-- Ranger's Cache
+					["groups"] = { i(DARK_PARTICLE), },
+				}),
 				-- Boxes given to Leveling Characters
-				i(272125),	-- Recruit's Cache
-				i(270934),	-- Recruit's Field Pouch
-				i(270987),	-- Recruit's Field Satchel
+				i(272125, {	-- Recruit's Cache
+					["sym"] = LEVELING_BOX_SYM,
+				}),
+				i(270934, {	-- Recruit's Field Pouch
+					["sym"] = LEVELING_BOX_SYM,
+				}),
+				i(270987, {	-- Recruit's Field Satchel
+					["sym"] = LEVELING_BOX_SYM,
+				}),
 			}),
 			n(VENDORS, {
 				n(255473, {	-- Maren Silverwing <Quartermaster>

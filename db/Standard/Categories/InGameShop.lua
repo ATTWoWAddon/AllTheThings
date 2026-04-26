@@ -37,7 +37,7 @@ p(4894,{awp=110207,itemID=252650,npcID=251511,spellID=1254822,u=3})),
 p(297,{awp=40003,b=1,itemID=68385,npcID=51600,spellID=95787,u=3}),
 p(3249,{awp=90205,b=1,itemID=190586,npcID=185586,spellID=367702,u=3}),
 p(671,{awp=80300,itemID=85871,npcID=63832,spellID=124660,u=3,g={
-crit(34637,{achID=6848,awp=50004,id=3,rwp=50407,u=2})}}),
+crit(34637,{achID=6848,id=3,u=2})}}),
 p(3175,{awp=100200,npcID=181535,u=3}),
 p(4855,{awp=110205,itemID=246342,npcID=246662,rwp=110207,spellID=1241760,u=2}),
 p(4969,{awp=120001,description="Part of the charity Roofus Pack.",itemID=262982,npcID=256698,rwp=120005,spellID=1269627,u=3}),
@@ -67,12 +67,12 @@ i(68384,{awp=40003,b=1,f=101,rwp=80300,u=2}),
 p(296,{awp=40003,b=1,itemID=68618,npcID=51601,r=2,rwp=80300,spellID=95786,u=2}),
 p(298,{awp=40003,b=1,itemID=68619,npcID=51649,r=1,rwp=80300,spellID=95909,u=2}),
 p(1691,{awp=60202,itemID=128426,npcID=95841,rwp=100107,spellID=190020,u=2,g={
-crit(28787,{achID=10321,id=1,rwp=70305,u=2})}}),
+crit(28787,{achID=10321,id=1,u=2})}}),
 p(248,{awp=30202,b=1,itemID=49665,npcID=36911,rwp=100002,spellID=69541,u=2}),
 p(4682,{awp=110005,b=1,itemID=231294,npcID=232502,rwp=110007,spellID=468186,u=2}),
 p(2890,{awp=100105,b=1,itemID=190601,npcID=171025,rwp=100107,spellID=333570,u=2}),
 p(2143,{awp=70305,itemID=153541,npcID=129049,rwp=100107,spellID=255702,u=2,g={
-crit(38154,{achID=12232,id=1,rwp=80307,u=2})}}),
+crit(38154,{achID=12232,id=1,u=2})}}),
 p(246,{awp=30302,b=1,description="This item is available only if you purchase the Plush Toy and redeem the code.",itemID=49663,npcID=36909,rwp=80300,spellID=69536,u=2})}}),
 flt(55,{awp=50400,u=3,g={
 i(103557,{f=55,rwp=60002,spellID=146939,u=2}),
