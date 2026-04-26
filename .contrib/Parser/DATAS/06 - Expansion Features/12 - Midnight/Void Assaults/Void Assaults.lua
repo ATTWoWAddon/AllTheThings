@@ -186,66 +186,66 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					i(270988),	-- Wriggling Capybara (PET!)
 				}),
 				filter(COSMETIC, {
-					i(271013), -- Adherent's Wriggling Backstabber (COSMETIC!)
-					i(270992), -- Amani Hex Crest (COSMETIC!)
-					i(271028), -- Amani War Spear (COSMETIC!)
-					i(271037), -- Battle Shaman's Ritual Staff (COSMETIC!)
-					i(271041), -- Blade of the Deeplurk Honorguard (COSMETIC!)
-					i(270997), -- Blood Oath Tome (COSMETIC!)
-					i(271045), -- Crystal Focus Spellslinger (COSMETIC!)
-					i(271008), -- Cultist's Sacrificial Kris (COSMETIC!)
-					i(271039), -- Curved Blade of the Drained Loa (COSMETIC!)
-					i(271009), -- Daggerspine Trident Tine (COSMETIC!)
-					i(271015), -- Deep Fathom Claw (COSMETIC!)
-					i(271018), -- Deepcrawler Pincher (COSMETIC!)
-					i(271004), -- Deepcrawler Recurve Bow (COSMETIC!)
-					i(271027), -- Deeplurk Battle Trident (COSMETIC!)
-					i(271026), -- Deeplurk Myrmidon's Trident (COSMETIC!)
-					i(271044), -- Deeplurk Shock Wand (COSMETIC!)
-					i(271035), -- Deeplurk Sorceress' Stave (COSMETIC!)
-					i(270994), -- Deepsea Behemoth Scale (COSMETIC!)
-					i(271024), -- Diseased Piranha Fetish (COSMETIC!)
-					i(271029), -- Fathom-Coral Lightstaff (COSMETIC!)
-					i(270998), -- Fetish of the Vanquished Foe (COSMETIC!)
-					i(270999), -- Forest Berserker's Hatchet (COSMETIC!)
-					i(271036), -- Forest Shaman's Voodoo Staff (COSMETIC!)
-					i(271006), -- Forest Stalker's Bow (COSMETIC!)
-					i(271012), -- Forest Tiki Twinblade (COSMETIC!)
-					i(271011), -- Frostdeep Spider's Fang (COSMETIC!)
-					i(271010), -- Glistening Sin'dorei Twinblade (COSMETIC!)
-					i(271016), -- Golden Phoenix's Beak (COSMETIC!)
-					i(271001), -- Greataxe of the Forest Tribe (COSMETIC!)
-					i(270996), -- Hex-Horn Buckler (COSMETIC!)
-					i(271030), -- Living Stave of the Deepdweller (COSMETIC!)
-					i(271021), -- Loa Battle Font (COSMETIC!)
-					i(271042), -- Myrmidon's Cutlass (COSMETIC!)
-					i(272144), -- Onyx Bloodknight Bladestaff (COSMETIC!)
-					i(271031), -- Onyx Bloodknight Stave (COSMETIC!)
-					i(271038), -- Ornate Blade of the Royal Guard (COSMETIC!)
-					i(271020), -- Phoenix Wing Basher (COSMETIC!)
-					i(271022), -- Ritual Overseer's Mace (COSMETIC!)
-					i(271034), -- Ritual Overseer's Polestaff (COSMETIC!)
-					i(271049), -- Ritual Weaver's Spellstick (COSMETIC!)
-					i(270995), -- Sin'dorei Crystal Focus (COSMETIC!)
-					i(271019), -- Sin'dorei Magister's Gavel (COSMETIC!)
-					i(271033), -- Skull-Bearer's Ritual Stave (COSMETIC!)
-					i(271047), -- Spell-Infused Wriggling Tentacles (COSMETIC!)
-					i(270991), -- Sunfury Great Bulwark (COSMETIC!)
-					i(271003), -- Sunfury Phoenix Bow (COSMETIC!)
-					i(271023), -- Swingable Piranha (COSMETIC!)
-					i(271032), -- Tiki-Bearer's Ritual Staff (COSMETIC!)
-					i(271043), -- Twilight Assassin's Glaive (COSMETIC!)
-					i(271002), -- Twilight Berserker's Cleaver (COSMETIC!)
-					i(270993), -- Twilight Blade Barrier (COSMETIC!)
-					i(271040), -- Twilight Captain's Short Sword (COSMETIC!)
-					i(271025), -- Twilight Guardian's Maul (COSMETIC!)
-					i(271000), -- Twilight Gut Ripper (COSMETIC!)
-					i(271007), -- Twilight Ritualist's Stiletto (COSMETIC!)
-					i(271014), -- Twilight Scout's Sticher (COSMETIC!)
-					i(271017), -- Twilight Slug Belcher (COSMETIC!)
-					i(271005), -- Violet Thalassian Greatbow (COSMETIC!)
-					i(271046), -- Voodoo Hex Stick (COSMETIC!)
-					i(271048), -- Wriggling Tentacle Fetish (COSMETIC!)
+					i(271013),	-- Adherent's Wriggling Backstabber (COSMETIC!)
+					i(270992),	-- Amani Hex Crest (COSMETIC!)
+					i(271028),	-- Amani War Spear (COSMETIC!)
+					i(271037),	-- Battle Shaman's Ritual Staff (COSMETIC!)
+					i(271041),	-- Blade of the Deeplurk Honorguard (COSMETIC!)
+					i(270997),	-- Blood Oath Tome (COSMETIC!)
+					i(271045),	-- Crystal Focus Spellslinger (COSMETIC!)
+					i(271008),	-- Cultist's Sacrificial Kris (COSMETIC!)
+					i(271039),	-- Curved Blade of the Drained Loa (COSMETIC!)
+					i(271009),	-- Daggerspine Trident Tine (COSMETIC!)
+					i(271015),	-- Deep Fathom Claw (COSMETIC!)
+					i(271018),	-- Deepcrawler Pincher (COSMETIC!)
+					i(271004),	-- Deepcrawler Recurve Bow (COSMETIC!)
+					i(271027),	-- Deeplurk Battle Trident (COSMETIC!)
+					i(271026),	-- Deeplurk Myrmidon's Trident (COSMETIC!)
+					i(271044),	-- Deeplurk Shock Wand (COSMETIC!)
+					i(271035),	-- Deeplurk Sorceress' Stave (COSMETIC!)
+					i(270994),	-- Deepsea Behemoth Scale (COSMETIC!)
+					i(271024),	-- Diseased Piranha Fetish (COSMETIC!)
+					i(271029),	-- Fathom-Coral Lightstaff (COSMETIC!)
+					i(270998),	-- Fetish of the Vanquished Foe (COSMETIC!)
+					i(270999),	-- Forest Berserker's Hatchet (COSMETIC!)
+					i(271036),	-- Forest Shaman's Voodoo Staff (COSMETIC!)
+					i(271006),	-- Forest Stalker's Bow (COSMETIC!)
+					i(271012),	-- Forest Tiki Twinblade (COSMETIC!)
+					i(271011),	-- Frostdeep Spider's Fang (COSMETIC!)
+					i(271010),	-- Glistening Sin'dorei Twinblade (COSMETIC!)
+					i(271016),	-- Golden Phoenix's Beak (COSMETIC!)
+					i(271001),	-- Greataxe of the Forest Tribe (COSMETIC!)
+					i(270996),	-- Hex-Horn Buckler (COSMETIC!)
+					i(271030),	-- Living Stave of the Deepdweller (COSMETIC!)
+					i(271021),	-- Loa Battle Font (COSMETIC!)
+					i(271042),	-- Myrmidon's Cutlass (COSMETIC!)
+					i(272144),	-- Onyx Bloodknight Bladestaff (COSMETIC!)
+					i(271031),	-- Onyx Bloodknight Stave (COSMETIC!)
+					i(271038),	-- Ornate Blade of the Royal Guard (COSMETIC!)
+					i(271020),	-- Phoenix Wing Basher (COSMETIC!)
+					i(271022),	-- Ritual Overseer's Mace (COSMETIC!)
+					i(271034),	-- Ritual Overseer's Polestaff (COSMETIC!)
+					i(271049),	-- Ritual Weaver's Spellstick (COSMETIC!)
+					i(270995),	-- Sin'dorei Crystal Focus (COSMETIC!)
+					i(271019),	-- Sin'dorei Magister's Gavel (COSMETIC!)
+					i(271033),	-- Skull-Bearer's Ritual Stave (COSMETIC!)
+					i(271047),	-- Spell-Infused Wriggling Tentacles (COSMETIC!)
+					i(270991),	-- Sunfury Great Bulwark (COSMETIC!)
+					i(271003),	-- Sunfury Phoenix Bow (COSMETIC!)
+					i(271023),	-- Swingable Piranha (COSMETIC!)
+					i(271032),	-- Tiki-Bearer's Ritual Staff (COSMETIC!)
+					i(271043),	-- Twilight Assassin's Glaive (COSMETIC!)
+					i(271002),	-- Twilight Berserker's Cleaver (COSMETIC!)
+					i(270993),	-- Twilight Blade Barrier (COSMETIC!)
+					i(271040),	-- Twilight Captain's Short Sword (COSMETIC!)
+					i(271025),	-- Twilight Guardian's Maul (COSMETIC!)
+					i(271000),	-- Twilight Gut Ripper (COSMETIC!)
+					i(271007),	-- Twilight Ritualist's Stiletto (COSMETIC!)
+					i(271014),	-- Twilight Scout's Sticher (COSMETIC!)
+					i(271017),	-- Twilight Slug Belcher (COSMETIC!)
+					i(271005),	-- Violet Thalassian Greatbow (COSMETIC!)
+					i(271046),	-- Voodoo Hex Stick (COSMETIC!)
+					i(271048),	-- Wriggling Tentacle Fetish (COSMETIC!)
 				}),
 				n(LEVELING_CHARACTERS, {
 					n(ARMOR, {
@@ -253,71 +253,71 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							i(270966),	-- Ranger Recruit's Cloak
 						}),
 						filter(CLOTH, {
-							i(270936),	-- Ranger Recruit's Robes
-							i(270942),	-- Ranger Recruit's Mitts
 							i(270944),	-- Ranger Recruit's Crown
-							i(270948),	-- Ranger Recruit's Pants
-							i(270953),	-- Ranger Recruit's Mantle
-							i(270956),	-- Ranger Recruit's Sash
 							i(270959),	-- Ranger Recruit's Cuffs
+							i(270953),	-- Ranger Recruit's Mantle
+							i(270942),	-- Ranger Recruit's Mitts
+							i(270948),	-- Ranger Recruit's Pants
+							i(270936),	-- Ranger Recruit's Robes
+							i(270956),	-- Ranger Recruit's Sash
 							i(270968),	-- Ranger Recruit's Slippers
 						}),
 						filter(FINGER_F, {
-							i(270963),	-- Ranger Recruit's Ring
 							i(270964),	-- Ranger Recruit's Loop
+							i(270963),	-- Ranger Recruit's Ring
 						}),
 						filter(LEATHER, {
-							i(270939),	-- Ranger Recruit's Jerkin
+							i(270958),	-- Ranger Recruit's Belt
 							i(270940),	-- Ranger Recruit's Gloves
 							i(270946),	-- Ranger Recruit's Hood
-							i(270950),	-- Ranger Recruit's Tights
+							i(270939),	-- Ranger Recruit's Jerkin
 							i(270951),	-- Ranger Recruit's Shoulderpads
-							i(270958),	-- Ranger Recruit's Belt
-							i(270962),	-- Ranger Recruit's Wraps
+							i(270950),	-- Ranger Recruit's Tights
 							i(270970),	-- Ranger Recruit's Treads
+							i(270962),	-- Ranger Recruit's Wraps
 						}),
 						filter(MAIL, {
+							i(270969),	-- Ranger Recruit's Boots
+							i(270949),	-- Ranger Recruit's Breeches
 							i(270938),	-- Ranger Recruit's Chainmail
 							i(270943),	-- Ranger Recruit's Grips
 							i(270945),	-- Ranger Recruit's Helmet
-							i(270949),	-- Ranger Recruit's Breeches
 							i(270954),	-- Ranger Recruit's Spaulders
 							i(270957),	-- Ranger Recruit's Waistguard
 							i(270961),	-- Ranger Recruit's Wristguards
-							i(270969),	-- Ranger Recruit's Boots
 						}),
 						filter(NECK_F, {
 							i(270965),	-- Ranger Recruit's Chain
 						}),
 						filter(PLATE, {
-							i(270935),	-- Ranger Recruit's Sabatons
 							i(270937),	-- Ranger Recruit's Breastplate
 							i(270941),	-- Ranger Recruit's Gauntlets
+							i(270955),	-- Ranger Recruit's Girdle
+							i(270967),	-- Ranger Recruit's Helm
 							i(270947),	-- Ranger Recruit's Legguards
 							i(270952),	-- Ranger Recruit's Pauldrons
-							i(270955),	-- Ranger Recruit's Girdle
+							i(270935),	-- Ranger Recruit's Sabatons
 							i(270960),	-- Ranger Recruit's Vambraces
-							i(270967),	-- Ranger Recruit's Helm
 						}),
 						filter(TRINKET_F, {
 							i(270986),	-- Ranger Recruit's Medallion
 						}),
 					}),
 					n(WEAPONS, {
-						i(270972),	-- Ranger Recruit's Mace
-						i(270973),	-- Ranger Recruit's Skullcracker
-						i(270974),	-- Ranger Recruit's Blade
 						i(270975),	-- Ranger Recruit's Acolyte's Blade
+						i(270983),	-- Ranger Recruit's Battle Stave
+						i(270974),	-- Ranger Recruit's Blade
+						i(270985),	-- Ranger Recruit's Cleaver
+						i(270981),	-- Ranger Recruit's Fetish
 						i(270976),	-- Ranger Recruit's Glaive
+						i(270979),	-- Ranger Recruit's Longbow
+						i(270972),	-- Ranger Recruit's Mace
 						i(270977),	-- Ranger Recruit's Polearm
 						i(270978),	-- Ranger Recruit's Shield
-						i(270979),	-- Ranger Recruit's Longbow
-						i(270981),	-- Ranger Recruit's Fetish
-						i(270982),	-- Ranger Recruit's Stiletto
-						i(270983),	-- Ranger Recruit's Battle Stave
-						i(270984),	-- Ranger Recruit's Staff
-						i(270985),	-- Ranger Recruit's Cleaver
+						i(270973),	-- Ranger Recruit's Skullcracker
 						i(270971),	-- Ranger Recruit's Spellblade
+						i(270984),	-- Ranger Recruit's Staff
+						i(270982),	-- Ranger Recruit's Stiletto
 						i(270980),	-- Ranger Recruit's Wand
 					}),
 				}),
