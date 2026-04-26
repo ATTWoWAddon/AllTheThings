@@ -1,12 +1,8 @@
 8.3.0.32489
 pet(2779),	-- Anima Wyrmling
-12.0.5.66330
-pet(5038),	-- Wriggling Capybara
 
 
 
 
 Missing in PetDB.lua
 
-12.0.5.66330
-pet(5038),	-- Wriggling Capybara

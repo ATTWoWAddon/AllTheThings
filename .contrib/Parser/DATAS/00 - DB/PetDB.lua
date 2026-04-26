@@ -4621,6 +4621,7 @@ i(270061, 5021);	-- Void-Bathed Snapdragon
 i(270331, 5037);	-- Void-Infused Mindbreaker Fry
 i(270062, 5022);	-- Void-Touched Chick
 i(270330, 5036);	-- Void-Touched Dragonhawk Egg
+i(270988, 5038);	-- Wriggling Capybara
 --- Unsorted ---
 i(270990, 5040);	-- Curious Lynx Kitten
 i(269999, 5020);	-- Overloaded Manaling

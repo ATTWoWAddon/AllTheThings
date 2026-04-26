@@ -341,69 +341,7 @@ root(ROOTS.Unsorted, {
 			i(270295),	-- Crown of Aquatic Springflowers
 			i(270296),	-- Crown of Snowy Springflowers
 			i(270297),	-- Crown of Sunny Springflowers
-			i(270932),	-- Wriggling Field Pouch
-			i(270933),	-- Bulging Field Pouch
-			i(270988),	-- Wriggling Capybara
 			i(270990),	-- Curious Lynx Kitten
-			i(270991),	-- Sunfury Great Bulwark
-			i(270992),	-- Amani Hex Crest
-			i(270993),	-- Twilight Blade Barrier
-			i(270994),	-- Deepsea Behemoth Scale
-			i(270995),	-- Sin'dorei Crystal Focus
-			i(270996),	-- Hex-Horn Buckler
-			i(270997),	-- Blood Oath Tome
-			i(270998),	-- Fetish of the Vanquished Foe
-			i(270999),	-- Forest Berserker's Hatchet
-			i(271000),	-- Twilight Gut Ripper
-			i(271001),	-- Greataxe of the Forest Tribe
-			i(271002),	-- Twilight Berserker's Cleaver
-			i(271003),	-- Sunfury Phoenix Bow
-			i(271004),	-- Deepcrawler Recurve Bow
-			i(271005),	-- Violet Thalassian Greatbow
-			i(271006),	-- Forest Stalker's Bow
-			i(271007),	-- Twilight Ritualist's Stiletto
-			i(271008),	-- Cultist's Sacrificial Kris
-			i(271009),	-- Daggerspine Trident Tine
-			i(271010),	-- Glistening Sin'dorei Twinblade
-			i(271011),	-- Frostdeep Spider's Fang
-			i(271012),	-- Forest Tiki Twinblade
-			i(271013),	-- Adherent's Wriggling Backstabber
-			i(271014),	-- Twilight Scout's Sticher
-			i(271015),	-- Deep Fathom Claw
-			i(271016),	-- Golden Phoenix's Beak
-			i(271017),	-- Twilight Slug Belcher
-			i(271018),	-- Deepcrawler Pincher
-			i(271019),	-- Sin'dorei Magister's Gavel
-			i(271020),	-- Phoenix Wing Basher
-			i(271021),	-- Loa Battle Font
-			i(271022),	-- Ritual Overseer's Mace
-			i(271023),	-- Swingable Piranha
-			i(271024),	-- Diseased Piranha Fetish
-			i(271025),	-- Twilight Guardian's Maul
-			i(271026),	-- Deeplurk Myrmidon's Trident
-			i(271027),	-- Deeplurk Battle Trident
-			i(271028),	-- Amani War Spear
-			i(271029),	-- Fathom-Coral Lightstaff
-			i(271030),	-- Living Stave of the Deepdweller
-			i(271031),	-- Onyx Bloodknight Stave
-			i(271032),	-- Tiki-Bearer's Ritual Staff
-			i(271033),	-- Skull-Bearer's Ritual Stave
-			i(271034),	-- Ritual Overseer's Polestaff
-			i(271035),	-- Deeplurk Sorceress' Stave
-			i(271036),	-- Forest Shaman's Voodoo Staff
-			i(271037),	-- Battle Shaman's Ritual Staff
-			i(271038),	-- Ornate Blade of the Royal Guard
-			i(271039),	-- Curved Blade of the Drained Loa
-			i(271040),	-- Twilight Captain's Short Sword
-			i(271041),	-- Blade of the Deeplurk Honorguard
-			i(271042),	-- Myrmidon's Cutlass
-			i(271043),	-- Twilight Assassin's Glaive
-			i(271044),	-- Deeplurk Shock Wand
-			i(271045),	-- Crystal Focus Spellslinger
-			i(271046),	-- Voodoo Hex Stick
-			i(271047),	-- Spell-Infused Wriggling Tentacles
-			i(271048),	-- Wriggling Tentacle Fetish
-			i(271049),	-- Ritual Weaver's Spellstick
 			i(271050),	-- Forest Hunter's Quiver
 			i(271163),	-- Blazing Guardian's Rug
 			i(271164),	-- Dream Guardian's Rug
@@ -413,8 +351,6 @@ root(ROOTS.Unsorted, {
 			i(271172),	-- Nightmare Guardian's Table
 			i(271173),	-- Blazing Guardian's Table
 			i(271174),	-- Dream Guardian's Table
-			i(271221),	-- Wriggling Recruit's Field Pouch
-			i(271222),	-- Bulging Recruit's Field Pouch
 			i(271341),	-- Galactic Voidsliver
 			i(271342),	-- Galactic Void Matrix
 			i(271353),	-- Collection of Valuables
@@ -425,7 +361,6 @@ root(ROOTS.Unsorted, {
 			i(272114),	-- Discarded Excavation Tool
 			i(272118),	-- Inert Arcane Explosive
 			i(272119),	-- Residue-Covered Tool
-			i(272144),	-- Onyx Bloodknight Bladestaff
 			i(272287),	-- Nap Mat
 			i(272339),	-- Umbral Champion's Illustrious Banner
 			i(272391),	-- Pattern: Rope Lynx Harness
