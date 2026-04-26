@@ -252,16 +252,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				}),
 				-- Currencies
 				currency(FIELD_ACCOLADE),
+				i(DARK_PARTICLE),
 				-- Boxes given to Max Level Characters
-				i(270244, {	-- Field Pouch
-					["groups"] = { i(DARK_PARTICLE), },
-				}),
-				i(270247, {	-- Field Satchel
-					["groups"] = { i(DARK_PARTICLE), },
-				}),
-				i(264914, {	-- Ranger's Cache
-					["groups"] = { i(DARK_PARTICLE), },
-				}),
+				i(270244),	-- Field Pouch
+				i(270247),	-- Field Satchel
+				i(264914),	-- Ranger's Cache
 				-- Boxes given to Leveling Characters
 				i(272125, {	-- Recruit's Cache
 					["sym"] = LEVELING_BOX_SYM,
