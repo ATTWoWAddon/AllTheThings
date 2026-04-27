@@ -405,7 +405,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							{ "n", 149717 },	-- Thog Hammerspace
 						},
 					}),
-					crit(109807, {	-- Unguloxx
+					crit(109801, {	-- Unguloxx
 						["providers"] = {
 							{ "i", 94186 },	-- Challenge Card: Unguloxx
 							{ "n", 68250 },	-- Unguloxx
