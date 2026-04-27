@@ -662,18 +662,39 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 					popup.callback(editBox:GetText());
 				end
 			end,
+			-- OnCancel = function(self)
+			-- end,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
 		};
 		StaticPopupDialogs.ALL_THE_THINGS_EDITBOX = popup;
 	end
-	popup.OnShow = function (self, data)
+	popup.OnShow = function(self, data)
 		local editBox = self.editBox or self.EditBox or (self.GetEditBox and self:GetEditBox())
-		editBox:SetText(text);
-		editBox:SetJustifyH("CENTER");
-		editBox:SetWidth(240);
+		editBox:SetText(text)
+		editBox:SetJustifyH("CENTER")
+		editBox:SetWidth(240)
 		if editBox.HighlightText then
-			editBox:HighlightText();
+			editBox:HighlightText()
 		end
+		editBox:SetFocus()
+
+		editBox:SetScript("OnEnterPressed", function(self)
+			local parent = self:GetOwningDialog()
+			local acceptButton = parent and parent.GetButton1 and parent:GetButton1()
+			if acceptButton then
+				acceptButton:Click()
+			end
+		end)
+
+		editBox:SetScript("OnEscapePressed", function(self)
+			local parent = self:GetOwningDialog()
+			local cancelButton = parent and parent.GetButton2 and parent:GetButton2()
+			if cancelButton then
+				cancelButton:Click()
+			else
+				StaticPopup_Hide("ALL_THE_THINGS_EDITBOX")
+			end
+		end)
 	end;
 	popup.text = msg or "";
 	popup.callback = callback;
