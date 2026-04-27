@@ -629,8 +629,8 @@ function app:ShowPopupDialog(msg, callback)
 	local popup = StaticPopupDialogs.ALL_THE_THINGS;
 	if not popup then
 		popup = {
-			button1 = "Yes",
-			button2 = "No",
+			button1 = YES,
+			button2 = NO,
 			timeout = 0,
 			showAlert = true,
 			whileDead = true,
@@ -649,8 +649,8 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	local popup = StaticPopupDialogs.ALL_THE_THINGS_EDITBOX;
 	if not popup then
 		popup = {
-			button1 = "Okay",
-			timeout = timeout,
+			button1 = OKAY,
+			button2 = CANCEL,
 			showAlert = true,
 			whileDead = true,
 			hideOnEscape = true,
@@ -677,6 +677,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	end;
 	popup.text = msg or "";
 	popup.callback = callback;
+	popup.timeout = timeout;
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
 end
