@@ -2400,6 +2400,7 @@ local AccountWideQuestsDB = {
 	92182,	-- The Sheep or the Wolf
 	92386,	-- A Handful of Voidlight Marl (Amani Tribe)
 	92387,	-- A Cluster of Voidlight Marl
+	92388,	-- A Trove of Voidlight Marl
 	92402,	-- Magical Touch
 	92417,	-- Farm to Table
 	92428,	-- Quest #92428*
@@ -2499,6 +2500,7 @@ local AccountWideQuestsDB = {
 	92886,	-- Taeshalach
 	92889,	-- Arsenal: Odyn's Spears
 	92890,	-- A Handful of Voidlight Marl (Hara'ti)
+	92891,	-- A Cluster of Voidlight Marl
 	92961,	-- Decor Treasure Hunt
 	92962,	-- Decor Treasure Hunt
 	92963,	-- Decor Treasure Hunt
@@ -2618,7 +2620,14 @@ local AccountWideQuestsDB = {
 	93483,	-- Tending the Lands--Part 3: The Cycle
 	93484,	-- Tending the Lands--Part 2: The Plan
 	93485,	-- Tending the Lands--Part 1: The Conflict
+	93486,	-- Ways of the Roots--Part 3: Pruning
+	93487,	-- Ways of the Roots--Part 2: Growing
+	93488,	-- Ways of the Roots--Part 1: Serving
+	93489,	-- Awe'ohna's Path--Part 3: The Cradle
+	93490,	-- Awe'ohna's Path--Part 2: Answers
+	93491,	-- Awe'ohna's Path--Part 1: Questions
 	93515,	-- Quest #93515*
+	93548,	-- A Trove of Voidlight Marl
 	93549,	-- A Cluster of Voidlight Marl
 	93554,	-- Tarnished Mural
 	93556,	-- Ancient Runestone
@@ -2632,31 +2641,54 @@ local AccountWideQuestsDB = {
 	93820,	-- The Singularity Rep
 	93821,	-- Silvermoon Court Rep
 	93822,	-- Hara'ti Rep
+	93859,	-- Sin'dorei Gravestone
 	93866,	-- Quest #93866*
+	93868,	-- Death's Hope
 	93872,	-- Prey Complete - Normal #1
 	93873,	-- ??
 	93874,	-- Prey Complete - Hard #2
 	93875,	-- ??
 	93880,	-- Delver's Starter Kit
 	93881,	-- Delver's Cosmetic Surprise Bag
+	93922,	-- A Singular Focus Unleashed
+	93924,	-- An Unrelenting March
 	93943,	-- Ancient Curiosity: Combat
 	93945,	-- Ancient Curiosity: Utility
 	93965,	-- Pet Wranglin'
 	93965,	-- Pet Wranglin'
+	94000,	-- Sturdy Chest
 	94001,	-- Sturdy Chest
+	94002,	-- Sturdy Chest
 	94012,	-- Lost Lil' Strider
 	94014,	-- Sturdy Chest
+	94015,	-- Sturdy Chest
 	94016,	-- Sturdy Chest
 	94017,	-- Sturdy Chest
+	94018,	-- Sturdy Chest
+	94019,	-- Sturdy Chest
+	94020,	-- Sturdy Chest
 	94021,	-- Sturdy Chest
+	94022,	-- Sturdy Chest
 	94023,	-- Sturdy Chest
+	94024,	-- Sturdy Chest
+	94025,	-- Sturdy Chest
+	94026,	-- Sturdy Chest
+	94027,	-- Sturdy Chest
+	94028,	-- Sturdy Chest
+	94029,	-- Sturdy Chest
+	94030,	-- Sturdy Chest
+	94033,	-- Sturdy Chest
+	94034,	-- Sturdy Chest
 	94037,	-- Sturdy Chest
+	94038,	-- Sturdy Chest
 	94039,	-- Sturdy Chest
 	94041,	-- Sturdy Chest
 	94042,	-- Sturdy Chest
 	94043,	-- Sturdy Chest
 	94044,	-- Sturdy Chest
+	94045,	-- Sturdy Chest
 	94210,	-- Feathering the Nest
+	94362,	-- Arsenal: Heirlooms of Atal'Aman
 	94377,	-- Warden's Companion
 	94378,	-- Duskytooth Fel Snooter
 	94379,	-- This Old Hearth
@@ -2665,6 +2697,9 @@ local AccountWideQuestsDB = {
 	94416,	-- Rehoming Technology
 	94455,	-- Home at Last
 	94469,	-- A Handful of Voidlight Marl (The Singularity)
+	94470,	-- A Cluster of Voidlight Marl
+	94471,	-- A Trove of Voidlight Marl
+	94482,	-- Gleaming Sunmote
 	94536,	-- Vista Point
 	94537,	-- Vista Point
 	94538,	-- Vista Point
@@ -2685,8 +2720,10 @@ local AccountWideQuestsDB = {
 	94553,	-- Vista Point
 	94554,	-- Vista Point
 	94555,	-- Vista Point
+	94570,	-- Arsenal: Twilight Blade
 	94623,	-- Building the Voidforge
 	94671,	-- Finery Funds
+	94675,	-- Voidforge Reforged
 	94681,	-- Warden of Weeds weekly reputation obtained.
 	94682,	-- Harried Hawkstrider weekly reputation obtained.
 	94683,	-- Necrohexxer Raz'ka weekly reputation obtained.
@@ -2700,9 +2737,11 @@ local AccountWideQuestsDB = {
 	94692,	-- Banuran weekly reputation
 	94693,	-- Lost Guardian weekly reputation obtained.
 	94694,	-- Duskburn weekly reputation
+	94695,	-- Malfunctioning Construct weekly reputation obtained.
 	94696,	-- Dame Bloodshed weekly reputation obtained.
 	94697,	-- The Snapping Scourge weekly reputation obtained.
 	94698,	-- Skullcrusher Harak weekly reputation obtained.
+	94699,	-- Lightwood Borer weekly reputation obtained.
 	94700,	-- Mrrlokk weekly reputation obtained.
 	94701,	-- Poacher Rav'ik weekly reputation obtained.
 	94702,	-- Spinefrill weekly reputation obtained.
@@ -2725,9 +2764,12 @@ local AccountWideQuestsDB = {
 	94720,	-- Mindrot weekly reputation obtained.
 	94721,	-- Dracaena weekly reputation
 	94722,	-- Treetop weekly reputation obtained.
+	94723,	-- Oro'ohna weekly reputation obtained.
 	94725,	-- Ahl'ua'huhi weekly reputation obtained.
 	94726,	-- Annulus the Worldshaker weekly reputation obtained.
 	94728,	-- Sundereth the Caller weekly reputation obtained.
+	94729,	-- Territorial Voidscythe weekly reputation obtained.
+	94730,	-- Tremora weekly reputation obtained.
 	94731,	-- Screammaxa the Matriarch weekly reputation obtained.
 	94732,	-- Bane of the Vilebloods weekly reputation obtained.
 	94747,	-- ???
@@ -2735,12 +2777,14 @@ local AccountWideQuestsDB = {
 	94751,	-- Aeonelle Blackstar weekly reputation
 	94752,	-- Bilemaw the Gluttonous weekly reputation obtained.
 	94753,	-- Blackcore weekly reputation
+	94754,	-- Eruundi weekly reputation obtained.
 	94755,	-- Far'thana the Mad weekly reputation obtained.
 	94758,	-- Lotus Darkblossom weekly reputation obtained.
 	94759,	-- Nightbrood weekly reputation obtained.
 	94760,	-- Nullspiral weekly reputation obtained.
 	94761,	-- Queen o' War weekly reputation obtained.
 	94762,	-- Rakshur the Bonegrinder weekly reputation obtained.
+	94763,	-- Ravengerus weekly reputation obtained.
 	94764,	-- The Many-Broken weekly reputation obtained.
 	94765,	-- Voidseer Orivane weekly reputation obtained.
 	94794,	-- Fine Fashion Funding
@@ -2752,7 +2796,10 @@ local AccountWideQuestsDB = {
 	95002,	-- Quest #95002*
 	95003,	-- Quest #95003*
 	95166,	-- Pet the Dog (245551)
+	95268,	-- New Tools, New Heights
 	95324,	-- The War Beyond the Roots
+	95373,	-- A Nebulous Endeavour
+	95406,	-- Lost Animals
 	95413,	-- Community Engagement
 	95416,	-- Going Postal
 	95438,	-- Lost Animals
@@ -2760,6 +2807,8 @@ local AccountWideQuestsDB = {
 	95535,	-- Quest #95535*
 	95536,	-- Quest #95536*
 	95537,	-- Quest #95537*
+	95538,	-- Quest #95538*
+	95539,	-- Quest #95539*
 	95541,	-- Quest #95541*
 	95542,	-- Quest #95542*
 	95543,	-- Quest #95543*
@@ -2771,6 +2820,10 @@ local AccountWideQuestsDB = {
 	95552,	-- Dark Obelisk Investigation
 	95553,	-- Manifested Destiny
 	95554,	-- Questionable Power
+	96121,	-- A Small Bundle of Goods
+	96122,	-- A Small Bundle of Goods
+	96123,	-- A Small Bundle of Goods
+	96124,	-- A Small Bundle of Goods
 	96214,	-- Tracking Quest
 	96215,	-- Tracking Quest
 
