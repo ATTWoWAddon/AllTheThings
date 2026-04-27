@@ -253,7 +253,7 @@ local function SendMessageChunks(method, target, detail, msg, chunksize)
 			tinsert(chunks, chunk);
 		end
 		QueueSendChunks(method, target, detail, chunks);
-		--print("Generated " .. #chunks .. " chunks for encoded string!");
+		-- app.PrintDebug("Generated " .. #chunks .. " chunks for encoded string!");
 	else
 		method(target, msg);
 	end
@@ -382,10 +382,10 @@ local function ProcessAddonMessageText(self, sender, text, responses)
 		local content = SplitString(",", message);
 		local handler = MESSAGE_HANDLERS[content[1]];
 		if handler then
-			--print("HANDLER[" .. content[1]  .. "]:", message);
+			-- app.PrintDebug("HANDLER[" .. content[1]  .. "]:", message);
 			handler(self, sender, content, responses);
 		else
-			print("Undefined handler", message);
+			app.print("Undefined handler", message);
 		end
 	end
 end
@@ -582,7 +582,7 @@ local function SerializeSequentialKeys(keys)
 	]]--
 	return str;
 end
-function ShowSerializationDebugger()
+local function ShowSerializationDebugger()
 	app:ShowPopupDialogWithMultiLineEditBox("Serialization Debugger", function(text)
 		text = text:gsub("    ", "\t");	-- The WoW UI converts tab characters into 4 spaces in the English Client.
 		DevTools_Dump(DeserializeSequentialKeys(text));
@@ -601,6 +601,520 @@ local typeListIDForType = {};
 for i,t in ipairs(typeList) do
 	typeListIDForType[t] = i;
 end
+-- Serialization
+local ser, dser = {}, {}
+do
+local bit = bit32 or bit  -- WoW compatibility
+local function idiv(a, b)
+    return math.floor(a / b)
+end
+
+local ROW_BITS  = 128
+local ROW_BYTES = idiv(ROW_BITS , 8)
+local b64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+local rowIdSep = "="
+local rowEnd = "/"
+
+local b64index = {}
+for i = 1, #b64chars do
+    b64index[b64chars:sub(i,i)] = i - 1
+end
+
+local function b64encode(bytes)
+    local t = {}
+    local n = #bytes
+    local i = 1
+
+    while i <= n do
+        local b1 = bytes[i];     i = i + 1
+        local b2 = bytes[i];     i = i + 1
+        local b3 = bytes[i];     i = i + 1
+
+        local n1 = bit.rshift(b1, 2)
+        local n2 = bit.bor(bit.lshift(bit.band(b1, 3), 4), bit.rshift(b2 or 0, 4))
+        local n3 = bit.bor(bit.lshift(bit.band(b2 or 0, 15), 2), bit.rshift(b3 or 0, 6))
+        local n4 = bit.band(b3 or 0, 63)
+
+        t[#t+1] = b64chars:sub(n1+1, n1+1)
+        t[#t+1] = b64chars:sub(n2+1, n2+1)
+
+        if b2 then
+            t[#t+1] = b64chars:sub(n3+1, n3+1)
+        end
+        if b3 then
+            t[#t+1] = b64chars:sub(n4+1, n4+1)
+        end
+    end
+
+    return table.concat(t)
+end
+
+-- Web-safe Base64 decode
+
+local function b64decode(str)
+    local bytes = {}
+    local n = #str
+    local i = 1
+
+    while i <= n do
+        local c1 = b64index[str:sub(i,i)]; i = i + 1
+        local c2 = b64index[str:sub(i,i)]; i = i + 1
+        local c3 = b64index[str:sub(i,i)]; i = i + 1
+        local c4 = b64index[str:sub(i,i)]; i = i + 1
+
+        local b1 = bit.bor(bit.lshift(c1, 2), bit.rshift(c2, 4))
+        bytes[#bytes+1] = bit.band(b1, 0xFF)
+
+        if c3 then
+            local b2 = bit.bor(bit.lshift(bit.band(c2, 15), 4), bit.rshift(c3, 2))
+            bytes[#bytes+1] = bit.band(b2, 0xFF)
+        end
+
+        if c4 then
+            local b3 = bit.bor(bit.lshift(bit.band(c3, 3), 6), c4)
+            bytes[#bytes+1] = bit.band(b3, 0xFF)
+        end
+    end
+
+    return bytes
+end
+local function rleEncodeBytes(bytes)
+    local out = {}
+    local n = #bytes
+    local i = 1
+
+    while i <= n do
+        local b = bytes[i]
+
+        if b == 0 then
+            -- compress zero run
+            local run = 1
+            while i + run <= n and bytes[i + run] == 0 and run < 255 do
+                run = run + 1
+            end
+            out[#out+1] = 0      -- marker: zero-run
+            out[#out+1] = run    -- run length
+            i = i + run
+        else
+            -- emit raw byte
+            out[#out+1] = b
+            i = i + 1
+        end
+    end
+
+    return out
+end
+
+local function rleDecodeBytes(bytes)
+    local out = {}
+    local n = #bytes
+    local i = 1
+
+    while i <= n do
+        local b = bytes[i]
+
+        if b == 0 then
+            -- zero-run marker
+            local run = bytes[i+1]
+            for _ = 1, run do
+                out[#out+1] = 0
+            end
+            i = i + 2
+        else
+            out[#out+1] = b
+            i = i + 1
+        end
+    end
+
+    return out
+end
+
+local function serializeSet(tbl)
+    local rows = {}
+
+    for value in pairs(tbl) do
+		value = tonumber(value) or 0
+        if value >= 1 and value <= 9999999 then
+            local row = idiv(value - 1, ROW_BITS)
+            local offset = (value - 1) % ROW_BITS
+
+            local byteIndex = idiv(offset, 8) + 1
+            local bitMask = bit.lshift(1, offset % 8)
+
+            local rowData = rows[row]
+            if not rowData then
+                rowData = {}
+                for i = 1, ROW_BYTES do rowData[i] = 0 end
+                rows[row] = rowData
+            end
+
+            rowData[byteIndex] = bit.bor(rowData[byteIndex], bitMask)
+        end
+    end
+
+    local parts = {}
+
+    for rowIndex, rowData in pairs(rows) do
+        -- RLE compress the byte array BEFORE Base64
+        local rle = rleEncodeBytes(rowData)
+        local encoded = b64encode(rle)
+
+        parts[#parts+1] = rowIndex .. rowIdSep .. encoded
+    end
+
+    return table.concat(parts, rowEnd)
+end
+ser.bitarray = serializeSet
+
+local function deserializeSet(str, result)
+    result = result or {}
+    local rowmatch = "([^"..rowEnd.."]+)"
+    local b64match = "^(%d+)"..rowIdSep.."(.+)$"
+
+    for chunk in string.gmatch(str, rowmatch) do
+        local rowIndex, b64 = chunk:match(b64match)
+        rowIndex = tonumber(rowIndex)
+
+        local rle = b64decode(b64)
+        local bytes = rleDecodeBytes(rle)
+
+        for byteIndex = 1, #bytes do
+            local byte = bytes[byteIndex]
+            if byte ~= 0 then
+                for bitpos = 0, 7 do
+                    local mask = bit.lshift(1, bitpos)
+                    if bit.band(byte, mask) ~= 0 then
+                        local offset = (byteIndex - 1) * 8 + bitpos
+                        local value = rowIndex * ROW_BITS + offset + 1
+                        result[value] = 1
+                    end
+                end
+            end
+        end
+    end
+
+    return result
+end
+dser.bitarray = deserializeSet
+
+-- Trie-based nested serialization
+local function trieInsert(root, value)
+    local s = tostring(value)
+    local node = root
+
+    for i = 1, #s do
+        local digit = s:sub(i,i)
+        node[digit] = node[digit] or {}
+        node = node[digit]
+    end
+
+    node.leaf = true
+end
+
+local function compressLeafChildren(children)
+    -- children are strings like "4", "5", "6"
+    table.sort(children)
+
+    local out = {}
+    local i = 1
+
+    while i <= #children do
+        local start = tonumber(children[i])
+        local finish = start
+        local j = i + 1
+
+        while j <= #children do
+            local nextVal = tonumber(children[j])
+            if nextVal == finish + 1 then
+                finish = nextVal
+                j = j + 1
+            else
+                break
+            end
+        end
+
+        if finish > start then
+            out[#out+1] = start .. "-" .. finish
+        else
+            out[#out+1] = tostring(start)
+        end
+
+        i = j
+    end
+
+    return out
+end
+
+local function serializeNode(node)
+    local leafChildren = {}
+    local branchChildren = {}
+
+    for digit, child in pairs(node) do
+        if digit ~= "leaf" then
+            local sub = serializeNode(child)
+            if sub == "" then
+                -- leaf child
+                leafChildren[#leafChildren+1] = digit
+            else
+                -- branch child
+                branchChildren[#branchChildren+1] = digit .. sub
+            end
+        end
+    end
+
+    table.sort(branchChildren)
+
+    -- Only compress if ALL children are leaf nodes
+    local children
+    if #branchChildren == 0 and #leafChildren > 0 then
+        children = compressLeafChildren(leafChildren)
+    else
+        -- mix of leaf + branch → no compression
+        for _, d in ipairs(leafChildren) do
+            branchChildren[#branchChildren+1] = d
+        end
+        table.sort(branchChildren)
+        children = branchChildren
+    end
+
+    local childStr = table.concat(children, ",")
+
+    if node.leaf then
+        if #children == 0 then
+            return ""
+        else
+            return ".(" .. childStr .. ")"
+        end
+    else
+        if #children == 0 then
+            return "()"
+        else
+            return "(" .. childStr .. ")"
+        end
+    end
+end
+
+local function serializeTrieSet(tbl)
+    local root = {}
+
+    for value in pairs(tbl) do
+        trieInsert(root, value)
+    end
+
+    local parts = {}
+    for digit, child in pairs(root) do
+        parts[#parts+1] = digit .. serializeNode(child)
+    end
+
+    table.sort(parts)
+    return table.concat(parts, ",")
+end
+ser.trie = serializeTrieSet
+
+local function parseChildToken(str, i)
+    -- token can be:
+    --   digit
+    --   digit-digit
+    --   digit(...)
+    --   digit.(...)
+    --
+    -- First read the digit
+    local digit = str:sub(i,i)
+    i = i + 1
+
+    -- Check for range: digit-digit
+    if str:sub(i,i) == "-" then
+        i = i + 1
+        local endDigit = str:sub(i,i)
+        i = i + 1
+        return { range = { tonumber(digit), tonumber(endDigit) } }, i
+    end
+
+    -- Check for leaf marker
+    local leaf = false
+    if str:sub(i,i) == "." then
+        leaf = true
+        i = i + 1
+    end
+
+    -- Check for children
+    if str:sub(i,i) == "(" then
+        i = i + 1
+        local children = {}
+
+        while true do
+            local c = str:sub(i,i)
+
+            if c >= "0" and c <= "9" then
+                local child
+                child, i = parseChildToken(str, i)
+                children[#children+1] = child
+
+            elseif c == ")" then
+                i = i + 1
+                break
+
+            elseif c == "," then
+                i = i + 1
+
+            else
+                error("Unexpected char: " .. c)
+            end
+        end
+
+        return { digit = digit, leaf = leaf, children = children }, i
+    end
+
+    -- Simple leaf
+    return { digit = digit, leaf = true, children = {} }, i
+end
+
+local function parseNode(str, i)
+    return parseChildToken(str, i)
+end
+
+local function parseForest(str)
+    local i = 1
+    local nodes = {}
+
+    while i <= #str do
+        local node
+        node, i = parseNode(str, i)
+        nodes[#nodes+1] = node
+
+        if str:sub(i,i) == "," then
+            i = i + 1
+        else
+            break
+        end
+    end
+
+    return nodes
+end
+
+local function expandTrie(node, prefix, out)
+    if node.range then
+        for d = node.range[1], node.range[2] do
+            out[tonumber(prefix .. d)] = 1
+        end
+        return
+    end
+
+    local newPrefix = prefix .. node.digit
+
+    if node.leaf then
+        out[tonumber(newPrefix)] = 1
+    end
+
+    for _, child in ipairs(node.children) do
+        expandTrie(child, newPrefix, out)
+    end
+end
+
+local function deserializeTrieSet(str)
+    local forest = parseForest(str)
+    local result = {}
+
+    for _, node in ipairs(forest) do
+        expandTrie(node, "", result)
+    end
+
+    return result
+end
+dser.trie = deserializeTrieSet
+
+local function serializeKV(tbl)
+    local parts = {}
+
+    for k, v in pairs(tbl) do
+        parts[#parts+1] = tostring(k) .. rowIdSep .. tostring(v)
+    end
+
+    table.sort(parts) -- optional but makes output deterministic
+    return table.concat(parts, rowEnd)
+end
+ser.numnumtbl = serializeKV
+
+local function deserializeKV(str)
+    local tbl = {}
+
+    for pair in string.gmatch(str, "([^"..rowEnd.."]+)") do
+        local k, v = pair:match("([^:]+)"..rowIdSep.."([^:]+)")
+        if k and v then
+            tbl[tonumber(k)] = tonumber(v)
+        end
+    end
+
+    return tbl
+end
+dser.numnumtbl = deserializeKV
+
+
+
+-- Debugging
+
+-- function ATTSerialize(tbl)
+-- 	local serialized = ser.bitarray(tbl)
+-- 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+-- 		local ok, deserialized = pcall(dser.bitarray, text)
+-- 		DevTools_Dump(deserialized)
+-- 	end)
+-- end
+
+--[[
+/run ATTSerialize_trie({[100]=1,[98239]=1,[9222]=1,[922]=1,[19992]=1})
+1(0(0),9(9(9(2)))),9(2(2(.,2)),8(2(3(9))))
+
+/run ATTSerialize_trie({[1]=1,[12]=1,[123]=1,[1234]=1,[1235]=1,[1236]=1})
+1.(2.(3.(4,5,6)))
+
+--]]
+
+-- function ATTSerialize_trie(tbl)
+-- 	local serialized = ser.trie(tbl)
+-- 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+-- 		local deserialized = dser.trie(text)
+-- 		DevTools_Dump(deserialized)
+-- 	end)
+-- end
+
+
+--[[
+
+/run ATTSerialize_comp({[1]=1,[12]=1,[123]=1,[1234]=1,[1235]=1,[1236]=1})
+1:12:123:1234>1236
+
+]]
+
+
+-- function ATTSerialize_comp(tbl)
+-- 	local keys = {};
+-- 	for index,v in pairs(tbl) do
+-- 		if v and index then tinsert(keys, tonumber(index)); end
+-- 	end
+-- 	local serialized = SerializeSequentialKeys(keys)
+-- 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+-- 		local deserialized = DeserializeSequentialKeys(text)
+-- 		DevTools_Dump(deserialized)
+-- 	end)
+-- end
+
+--[[
+
+/run ATTSerialize_numnumtbl({[1]=5,[12]=12,[123]=-23,[1234]=45,[1235]=92103,[1236]=0})
+1234:45;1235:92103;1236:0;123:-23;12:12;1:5
+
+]]
+
+-- function ATTSerialize_numnumtbl(tbl)
+-- 	local serialized = ser.numnumtbl(tbl)
+-- 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
+-- 		local ok, deserialized = pcall(dser.numnumtbl, text)
+-- 		DevTools_Dump(deserialized)
+-- 	end)
+-- end
+
+end
 local defaultDeserializer = function(field, currentValue, data)
 	if #data > 1 then
 		print("DEFAULT DESERIALIZER ENCOUNTERED MORE THAN ONE DATA FOR FIELD");
@@ -610,7 +1124,7 @@ local defaultDeserializer = function(field, currentValue, data)
 		end
 		return;
 	end
-	--print("PARSE: ", field .. " (DEFAULT)", data[1]);
+	-- app.PrintDebug("PARSE: ", field .. " (DEFAULT)", data[1]);
 	local values = SplitString(":", data[1]);
 	local t = typeList[tonumber(values[1])];
 	if not t then
@@ -626,28 +1140,17 @@ local defaultDeserializer = function(field, currentValue, data)
 	elseif t == "string" then
 		return values[2];
 	elseif t == "table" then
-		local totalValues = #values;
+		-- local totalValues = #values;
 		if currentValue then
 			wipe(currentValue);
 		else
 			currentValue = {};
 		end
-		for i=2,totalValues,1 do
-			local a,b = (">"):split(values[i]);
-			if b then
-				a = tonumber(a);
-				b = tonumber(b);
-				if (b - a) > 100000 then
-					app:ShowPopupDialogWithMultiLineEditBox("Rather than explode your RAM, Crieve decided instead to have you report this string of data to him for a fix.\n\nApologies for the inconvenience.\n\n" .. data[1], nil, "A parsing error occured during the sync process.");
-					break;
-				end
-				for j=a,b,1 do
-					currentValue[j] = 1;
-				end
-			else
-				currentValue[tonumber(a)] = 1;
-			end
+		-- if an empty table is transferred
+		if not values[2] or values[2] == "" then
+			return currentValue
 		end
+		dser.bitarray(values[2], currentValue)
 		return currentValue;
 	else
 		print("DEFAULT DESERIALIZER ENCOUNTERED UNHANDLED DATA TYPE");
@@ -656,7 +1159,7 @@ local defaultDeserializer = function(field, currentValue, data)
 end
 local defaultSerializer = function(field, value, timeStamp, lastUpdated)
 	local t = type(value);
-	if not field or type(field) == "function" then
+	if not field then
 		print("defaultSerializer NIL FIELD?!", field, value, timeStamp, lastUpdated);
 		return;
 	end
@@ -672,12 +1175,8 @@ local defaultSerializer = function(field, value, timeStamp, lastUpdated)
 				return;
 			end
 
-			local keys = {};
-			for index,v in pairs(value) do
-				if v and index then tinsert(keys, tonumber(index)); end
-			end
-			if #keys > 0 then
-				return field .. ";" .. typeListID .. ":" .. SerializeSequentialKeys(keys);
+			if next(value) then
+				return field .. ";" .. typeListID .. ":" .. ser.bitarray(value);
 			end
 		elseif t == "boolean" then
 			if value then
@@ -693,6 +1192,23 @@ local defaultSerializer = function(field, value, timeStamp, lastUpdated)
 		end
 	end
 end
+-- Raw serialize/deserialize methods expect table/string inputs respectively. These wrappers help to convert from the message-based
+-- serializer transfer
+local wrappers = {
+	ser = {
+		numnumtbl = function(field, value, timeStamp, lastUpdated)
+			if timeStamp and lastUpdated >= timeStamp then return end
+
+			return field .. ";" .. typeListIDForType.table .. ":" .. ser.numnumtbl(value)
+		end,
+	},
+	dser = {
+		numnumtbl = function(field, currentValue, data)
+			local _,tblstr = (":"):split(data[1])
+			return dser.numnumtbl(tblstr)
+		end,
+	}
+}
 local deserializers = setmetatable({
 	ActiveSkills = function(field, currentValue, data)
 		if currentValue then
@@ -708,6 +1224,10 @@ local deserializers = setmetatable({
 		end
 		return currentValue;
 	end,
+	__perf = ignoreField,			-- If performance data got captured to saved vars, ignore it
+	__perfscope = ignoreField,		-- If performance data got captured to saved vars, ignore it
+	CustomCollects = ignoreField,	-- Related to settings not collection
+	ArtifactRelicItemLevels = ignoreField,
 	gameAccountID = ignoreField,	-- This is a per-account setting, based on session context.
 	guid = ignoreField,				-- This is a no-brainer, already have it.
 	ignored = ignoreField,			-- This is a per-account setting
@@ -791,7 +1311,8 @@ local deserializers = setmetatable({
 			currentValue[tableName] = tonumber(lastUpdated);
 		end
 		return currentValue;
-	end
+	end,
+	AzeriteEssenceRanks = wrappers.dser.numnumtbl,
 }, {
 	__index = function(t)
 		return defaultDeserializer;
@@ -806,6 +1327,10 @@ local serializers = setmetatable({
 		end
 		if any then return str; end
 	end,
+	__perf = ignoreField,			-- If performance data got captured to saved vars, ignore it
+	__perfscope = ignoreField,		-- If performance data got captured to saved vars, ignore it
+	CustomCollects = ignoreField,	-- Related to settings not collection
+	ArtifactRelicItemLevels = ignoreField,
 	gameAccountID = ignoreField,
 	guid = ignoreField,
 	Lockouts = function(field, value, timeStamp, lastUpdated)
@@ -854,6 +1379,7 @@ local serializers = setmetatable({
 		end
 		if any then return str; end
 	end,
+	AzeriteEssenceRanks = wrappers.ser.numnumtbl,
 
 	-- The main data package containing the simple stuff.
 	Summary = function(character, value)
@@ -886,7 +1412,7 @@ local serializers = setmetatable({
 	end,
 });
 local function ReceiveCharacterSummary(self, sender, responses, guid, lastPlayed, shouldPrint)
-	--print("ReceiveCharacterSummary", guid, lastPlayed, shouldPrint);
+	-- app.PrintDebug("ReceiveCharacterSummary", guid, lastPlayed, shouldPrint);
 	if guid == app.GUID then return false; end
 	local character = CharacterData[guid];
 	if character then
@@ -1038,8 +1564,16 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 		local fieldData = SplitString(";", fieldDataString);
 		local fieldName = fieldData[1];
 		tremove(fieldData, 1);
-		local data = deserializers[fieldName](fieldName, character[fieldName], fieldData, character);
-		if data then character[fieldName] = data; end
+		-- app.PrintDebug("deserialize",fieldName,"@",fieldDataString:len())
+		-- app.PrintTable(fieldData)
+		local ok, data = pcall(deserializers[fieldName], fieldName, character[fieldName], fieldData, character);
+		if ok and data then
+			character[fieldName] = data;
+			-- app.PrintDebug("deserialized",fieldName,"@",fieldDataString:len(),"into",app.CountTable(data),"keys")
+		elseif not ok then
+			app.report("Failed to deserialize",fieldName,fieldDataString)
+			app.print(data)
+		end
 	end
 
 	-- Notify the player.
@@ -1084,8 +1618,15 @@ MESSAGE_HANDLERS.request = function(self, sender, content, responses)
 	local str = serializers.Summary(character);
 	if str then rawData = rawData .. "," .. str; end
 	for field,value in pairs(character) do
-		local str = serializers[field](field, value, timeStamps[field] or maxTimeStamp, lastUpdated);
-		if str then rawData = rawData .. "," .. str; end
+		local ok, str = pcall(serializers[field], field, value, timeStamps[field] or maxTimeStamp, lastUpdated);
+		if ok and str then
+			rawData = rawData .. "," .. str;
+			-- app.PrintDebug("serializing",field,"@",str:len(),"from",app.CountTable(value),"keys")
+		elseif not ok then
+			app.report("Failed to serialize",field,value)
+			app.print(str)
+			app.PrintTable(value)
+		end
 	end
 	tinsert(responses, { detail = character.text, msg = rawData });
 end
