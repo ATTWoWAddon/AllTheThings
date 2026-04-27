@@ -319,10 +319,7 @@ root(ROOTS.Unsorted, {
 			i(269668),	-- Hungering Oblivium
 			i(269768),	-- Nebulous Voidcache: Prey
 			i(269817),	-- Ritual Site Challenge Report: Tendrils
-			i(269829),	-- Void-Scarred Eaglet
-			i(269999),	-- Overloaded Manaling
 			i(270058),	-- Rope Lynx Harness
-			i(270063),	-- Void-Touched Lynx Kitten
 			i(270279),	-- Crown of Midnight Springflowers
 			i(270280),	-- Crown of Azure Springflowers
 			i(270281),	-- Crown of Sepia Springflowers

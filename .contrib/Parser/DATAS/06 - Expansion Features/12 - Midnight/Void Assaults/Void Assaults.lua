@@ -852,6 +852,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						},
 						["cost"] = { { "i", 271999, 1 } },	-- 1x Misplaced Ritual Candle
 					}),
+					i(269829),	-- Void-Scarred Eaglet (PET!)
 					o(649209, {	-- Misplaced Ritual Candle
 						["coord"] = { 51.5, 47.9, BROKEN_THRONE },
 						["groups"] = {
@@ -884,6 +885,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						ach(62535),	-- Ritual Site Rogue: Daggerspine Point
 					}),
 					filter(BATTLE_PETS, {
+						i(269999, {	-- Overloaded Manaling (PET!)
+							["minReputation"] = { FACTION_RITUAL_SITES, 8 },
+							["cr"] = 259971,	-- Mana-Gorged Greatwyrm
+							--["coord"] = { X, Y, DAGGERSPINE_POINT },	-- TODO
+						}),
 						i(270061, {	-- Void-Bathed Snapdragon (PET!)
 							-- TODO: Restructure and move to treasures when "Soggy Nest" ObjectID gets discovered
 							["description"] = "Use |cff1eff00Soggy Lynx Toy|r at the Soggy Nest.",
@@ -898,6 +904,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 55.8, 45.6, DAGGERSPINE_POINT },
 								{ 68.7, 47.7, DAGGERSPINE_POINT },
 								{ 71.6, 50.3, DAGGERSPINE_POINT },
+							},
+						}),
+						i(270063, {	-- Void-Touched Lynx Kitten (PET!)
+							["description"] = "Tier 3 or higher. Found by clicking the Rustling Bushes inside the Ritual Site.\nYou will have to find multiple Bushes across multiple instances as only 1 Bush is available per run.",
+							["coords"] = {
+								{ 66.40 52.46, DAGGERSPINE_POINT },
+								{ 55.00 79.30, DAGGERSPINE_POINT },
+								{ 35.10 44.50, DAGGERSPINE_POINT },
+								{ 68.46 37.62, DAGGERSPINE_POINT },
+								{ 63.58 65.58, DAGGERSPINE_POINT },
+								{ 42.03 80.03, DAGGERSPINE_POINT },
+								{ 41.76 49.69, DAGGERSPINE_POINT },
+								{ 43.31 57.99, DAGGERSPINE_POINT },
 							},
 						}),
 					}),

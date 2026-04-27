@@ -9975,6 +9975,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 		-- 12.0.1
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+			q(93523, {["_drop"] = {"g"}}),	-- Short-Supply Reward
 			q(94423, {["_drop"] = {"g"}}),	-- Sanctum Secure
 		})),
 	}),
