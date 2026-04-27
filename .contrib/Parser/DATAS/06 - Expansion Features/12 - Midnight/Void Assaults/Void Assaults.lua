@@ -110,6 +110,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["sourceQuest"] = 94380,	-- Ranger Captain's Summons
 					["qg"] = 257411,	-- Ranger Captain Lilatha
 					["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						-- Box given to Max Level Characters
+						i(264914),	-- Ranger's Cache
+						-- Box given to Leveling Characters
+						i(272125, {	-- Recruit's Cache
+							["sym"] = LEVELING_BOX_SYM,
+						}),
+					},
 				}),
 				q(94381, {	-- Outfitting and Allies
 					["sourceQuest"] = 96080,	-- Void Strike
@@ -159,12 +167,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["qg"] = 257411,	-- Ranger Captain Lilatha
 					["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["isWeekly"] = true,
+					["groups"] = {
+						-- Box given to Max Level Characters
+						i(264914),	-- Ranger's Cache
+						-- Box given to Leveling Characters
+						i(272125, {	-- Recruit's Cache
+							["sym"] = LEVELING_BOX_SYM,
+						}),
+					},
 				}),
 				q(94386, {	-- Void Assaults: Zul'Aman
 					["sourceQuest"] = 94381,	-- Outfitting and Allies
 					["qg"] = 257415,	-- Kul'amara the Fierce
 					["coord"] = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["isWeekly"] = true,
+					["groups"] = {
+						-- Box given to Max Level Characters
+						i(264914),	-- Ranger's Cache
+						-- Box given to Leveling Characters
+						i(272125, {	-- Recruit's Cache
+							["sym"] = LEVELING_BOX_SYM,
+						}),
+					},
 				}),
 				header(HEADERS.Achievement, 62569, {	-- Traces in the Dark
 					q(94920, {	-- Hal'hadar Battery Core
@@ -329,17 +353,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["sym"] = COSMETIC_BOX_SYM,
 				}),
 				i(270244),	-- Field Pouch
-				i(270247),	-- Field Satchel
-				i(264914),	-- Ranger's Cache
+				i(270247, {	-- Field Satchel
+					["sym"] = {
+						{ "select", "itemID", 270988 },{ "finalize" },	-- Wriggling Capybara (PET!)
+						unpack(COSMETIC_BOX_SYM),
+					},
+				}),
 				i(270932, {	-- Wriggling Field Pouch
 					["sym"] = { { "select", "itemID", 270988 } },	-- Wriggling Capybara (PET!)
 				}),
 				-- Boxes given to Leveling Characters
 				i(271222, {	-- Bulging Recruit's Field Pouch
 					["sym"] = COSMETIC_BOX_SYM,
-				}),
-				i(272125, {	-- Recruit's Cache
-					["sym"] = LEVELING_BOX_SYM,
 				}),
 				i(270934, {	-- Recruit's Field Pouch
 					["sym"] = LEVELING_BOX_SYM,
@@ -348,7 +373,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["sym"] = LEVELING_BOX_SYM,
 				}),
 				i(271221, {	-- Wriggling Recruit's Field Pouch
-					["sym"] = { { "select", "itemID", 270988 } },	-- Wriggling Capybara (PET!)
+					["sym"] = {
+						{ "select", "itemID", 270988 },{ "finalize" },	-- Wriggling Capybara (PET!)
+						unpack(LEVELING_BOX_SYM),
+					},
 				}),
 			}),
 			n(VENDORS, {
@@ -823,6 +851,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						ach(62537),	-- Neighborhood Ritual Team: Broken Throne
 						ach(62536),	-- Neighborhood Ritual Watch: Broken Throne
 						ach(62521),	-- Ritual Site: Broken Throne
+						ach(62524),	-- Ritual Site Challenge: Broken Throne
 						ach(62525),	-- Ritual Site Extreme: Broken Throne
 						ach(62523),	-- Ritual Site Mastery: Broken Throne
 						ach(62534),	-- Ritual Site Rogue: Broken Throne
@@ -922,7 +951,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				ach(62622),	-- Ritual Renown
 				ach(62530),	-- Ritual Site Achiever
 				ach(62531),	-- Ritual Site Adept
-				ach(62524),	-- Ritual Site Challenge: Broken Throne
 				ach(62562, {	-- Ritual Site Disruptor
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
