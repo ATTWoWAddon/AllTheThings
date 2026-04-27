@@ -3169,7 +3169,6 @@ root(ROOTS.Unsorted, {
 			i(164645),	-- Challenge Card: Zaxx Dreadslice
 			i(164647),	-- Challenge Card: Marcus
 			i(164721),	-- Challenge Card: Robe-Robber Robert
-			i(164772),	-- Kul Tiran Orphan Whistle
 			i(164934),	-- Super Soul Splinter
 			i(164939),	-- Overstuffed Silkweave Purse
 			i(164949),	-- Brawler's Guild Invitation
