@@ -338,7 +338,6 @@ root(ROOTS.Unsorted, {
 			i(270295),	-- Crown of Aquatic Springflowers
 			i(270296),	-- Crown of Snowy Springflowers
 			i(270297),	-- Crown of Sunny Springflowers
-			i(270990),	-- Curious Lynx Kitten
 			i(271050),	-- Forest Hunter's Quiver
 			i(271163),	-- Blazing Guardian's Rug
 			i(271164),	-- Dream Guardian's Rug

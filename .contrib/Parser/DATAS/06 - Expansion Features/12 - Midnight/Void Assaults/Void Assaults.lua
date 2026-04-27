@@ -218,7 +218,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			}),
 			n(REWARDS, {
 				filter(BATTLE_PETS, {
-					i(270988),	-- Wriggling Capybara (PET!)
+					i(270990, {	-- Curious Lynx Kitten (PET!)
+						["description"] = "This pet can drop only during Void Assault in Eversong Woods"
+					}),
+					i(270988, {	-- Wriggling Capybara (PET!)
+						["description"] = "This pet can drop only during Void Assault in Zul'Aman"
+					}),
 				}),
 				filter(COSMETIC, {
 					i(271013),	-- Adherent's Wriggling Backstabber (COSMETIC!)
@@ -366,12 +371,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				i(270244),	-- Field Pouch
 				i(270247, {	-- Field Satchel
 					["sym"] = {
+						{ "select", "itemID", 270990 },{ "finalize" },	-- Curious Lynx Kitten (PET!)
 						{ "select", "itemID", 270988 },{ "finalize" },	-- Wriggling Capybara (PET!)
 						unpack(COSMETIC_BOX_SYM),
 					},
 				}),
 				i(270932, {	-- Wriggling Field Pouch
-					["sym"] = { { "select", "itemID", 270988 } },	-- Wriggling Capybara (PET!)
+					["sym"] = { { "select", "itemID",
+						270990,	-- Curious Lynx Kitten (PET!)
+						270988,	-- Wriggling Capybara (PET!)
+					}},
 				}),
 				-- Boxes given to Leveling Characters
 				i(271222, {	-- Bulging Recruit's Field Pouch
@@ -385,6 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				}),
 				i(271221, {	-- Wriggling Recruit's Field Pouch
 					["sym"] = {
+						{ "select", "itemID", 270990 },{ "finalize" },	-- Curious Lynx Kitten (PET!)
 						{ "select", "itemID", 270988 },{ "finalize" },	-- Wriggling Capybara (PET!)
 						unpack(LEVELING_BOX_SYM),
 					},
