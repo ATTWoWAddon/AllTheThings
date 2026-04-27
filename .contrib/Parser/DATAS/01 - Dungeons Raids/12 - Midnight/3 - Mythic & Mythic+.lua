@@ -26,28 +26,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(61258, {	-- Midnight Keystone Legend: Season One
 				i(262621),	-- Convalescent Carrion (MOUNT!)
 			}),
-			--[[ach(, {	-- Midnight Keystone Myth: Season One
-				i(,	{-- Timelost Saddle
-				-- This item can be brought to Lindormi in Silvermoon or the Timeways, where it can be exchanged for a mount of your choice from a curated selection. 
-					i(174836),	-- Awakened Mindborer
-					i(182717),	-- Sintouched Deathwalker
-					i(187525),	-- Soultwisted Deathwalker
-					i(187682),	-- Wastewarped Deathwalker
-					i(192557),	-- Restoration Deathwalker
-					i(199412),	-- Hailstorm Armoredon
-					i(204798),	-- Inferno Armoredon
-					i(209060),	-- Verdant Armoredon
-					i(213438),	-- Infinite Armoredon
-					i(226357),	-- Diamond Mechsuit
-					i(235549),	-- Crimson Shreddertank
-					i(237141),	-- Enterprising Shreddertank
-					i(248248),	-- Azure Void Flyer
-					i(247822),	-- Scarlet Void Flyer
-					i(262620),	-- Calamitous Carrion
-					i(262621),	-- Convalescent Carrion
-				}),
-			}),
-			ach( ,{	-- Umbral Champion: Season One
+			ach(63097, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {	-- Midnight Keystone Myth: Season One
+				i(275436),	-- Timelost Saddle
+			})),
+			--[[ach( ,{	-- Umbral Champion: Season One
 				["groups"] = {
 					mount(),	-- new exclusive mount
 					title(),	-- <Name> the Umbral Champion
@@ -178,6 +160,40 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			cnONLY(title(759)),	-- <Name>, The Philanthropist			// 200 Dungeons
 			cnONLY(title(760)),	-- <Name>, The Everlasting				// 500 Dungeons
 		}))),
+	}),
+	n(VENDORS, {
+		n(197711, {	-- Lindormi <Mythic Keystones>
+			["coord"] = { 42.1, 58.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["groups"] = {
+				filter(MOUNTS, bubbleDownSelf({
+					["cost"] = { { "i", 275436, 1 } },	-- Timelost Saddle
+					["timeline"] = { ADDED_12_0_5 },
+				}, {
+					-- 'Keystone Master', and 'Keystone Legend' Mounts from previous seasons
+					i(174836),	-- Awakened Mindborer (MOUNT!) [BFA KSM S4]
+					i(182717),	-- Sintouched Deathwalker (MOUNT!) [SL KSM S1]
+					i(187525),	-- Soultwisted Deathwalker (MOUNT!) [SL KSM S2]
+					i(187682),	-- Wastewarped Deathwalker (MOUNT!) [SL KSM S3]
+					i(192557),	-- Restoration Deathwalker (MOUNT!) [SL KSM S4]
+					i(199412),	-- Hailstorm Armoredon (MOUNT!) [DF KSM S1]
+					i(204798),	-- Inferno Armoredon (MOUNT!) [DF KSM S2]
+					i(209060),	-- Verdant Armoredon (MOUNT!) [DF KSM S3]
+					i(213438),	-- Infinite Armoredon (MOUNT!) [DF KSM S4]
+					i(226357),	-- Diamond Mechsuit (MOUNT!) [TWW KSM S1]
+					i(237141),	-- Enterprising Shreddertank (MOUNT!) [TWW KSL S2]
+					i(235549),	-- Crimson Shreddertank (MOUNT!) [TWW KSM S2]
+					i(247822),	-- Scarlet Void Flyer (MOUNT!) [TWW KSL S3]
+					i(248248),	-- Azure Void Flyer (MOUNT!) [TWW KSM S3]
+					-- Newly Introduced (12.0.5) Mounts
+					i(275442),	-- Amethyst Mechsuit (MOUNT!)
+					i(275444),	-- Blue-Chip Shreddertank (MOUNT!)
+					i(275440),	-- Cerulean Deathwalker (MOUNT!)
+					i(275446),	-- High-Yield Shreddertank (MOUNT!)
+					i(275445),	-- Profit-Green Shreddertank (MOUNT!)
+					i(275447),	-- Speculative Shreddertank (MOUNT!)
+				})),
+			},
+		}),
 	}),
 }));
 

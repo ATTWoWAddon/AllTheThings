@@ -219,10 +219,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			n(REWARDS, {
 				filter(BATTLE_PETS, {
 					i(270990, {	-- Curious Lynx Kitten (PET!)
-						["description"] = "This pet can drop only during Void Assault in Eversong Woods"
+						["description"] = "This pet can drop only during Void Assault in Eversong Woods."
 					}),
 					i(270988, {	-- Wriggling Capybara (PET!)
-						["description"] = "This pet can drop only during Void Assault in Zul'Aman"
+						["description"] = "This pet can drop only during Void Assault in Zul'Aman."
 					}),
 				}),
 				filter(COSMETIC, {

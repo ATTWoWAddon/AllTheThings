@@ -2389,7 +2389,13 @@ i(257200, 1261351);	-- Witherbark Pango
 ------------------
 -- PATCH 12.0.5 --
 ------------------
+i(275442, 1296734);	-- Amethyst Mechsuit
+i(275444, 1296756);	-- Blue-Chip Shreddertank
 i(268481, 1282471);	-- Breaker Bee
+i(275440, 1296731);	-- Cerulean Deathwalker
+i(275446, 1296759);	-- High-Yield Shreddertank
+i(275445, 1296758);	-- Profit-Green Shreddertank
+i(275447, 1296760);	-- Speculative Shreddertank
 i(264348, 1271698);	-- Unbound Manawyrm
 i(268578, 1282936);	-- Void-Touched Hawkstrider
 i(270041, 1287357);	-- Void-Touched Snapdragon
