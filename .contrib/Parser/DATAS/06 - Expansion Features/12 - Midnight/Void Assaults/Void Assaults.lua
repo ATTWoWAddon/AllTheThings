@@ -53,6 +53,17 @@ local COSMETIC_BOX_SYM = {
 	{"where","headerID",REWARDS},{"pop"},
 	{"where","filterID",COSMETIC},{"pop"},
 }
+local COSMETIC_AND_LEVELING_BOX_SYM = {
+	{"select","expansionID",EXPANSION.MID},{"pop"},
+	{"where","headerID",VOID_ASSAULTS},{"pop"},
+	{"where","headerID",REWARDS},{"pop"},
+	{"where","filterID",COSMETIC},{"finalize"},
+
+	{"select","expansionID",EXPANSION.MID},{"pop"},
+	{"where","headerID",VOID_ASSAULTS},{"pop"},
+	{"where","headerID",REWARDS},{"pop"},
+	{"where","headerID",LEVELING_CHARACTERS},{"pop"},
+}
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	["groups"] = sharedData({
@@ -364,7 +375,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				}),
 				-- Boxes given to Leveling Characters
 				i(271222, {	-- Bulging Recruit's Field Pouch
-					["sym"] = COSMETIC_BOX_SYM,
+					["sym"] = COSMETIC_AND_LEVELING_BOX_SYM,
 				}),
 				i(270934, {	-- Recruit's Field Pouch
 					["sym"] = LEVELING_BOX_SYM,
