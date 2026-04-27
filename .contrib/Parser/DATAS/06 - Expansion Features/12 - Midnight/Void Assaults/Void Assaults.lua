@@ -6,7 +6,7 @@
 
 VOID_ASSAULTS = createHeader({
 	readable = "Void Assaults",
-	icon = 7501330,
+	icon = [[~_.asset("Category_Void_Assaults")]],
 	text = {
 		en = "Void Assaults",
 		de = "Angriffe der Leere",
@@ -23,7 +23,7 @@ VOID_ASSAULTS = createHeader({
 });
 RITUAL_SITES = createHeader({
 	readable = "Ritual Sites",
-	icon = 136194,
+	icon = [[~_.asset("Category_Ritual_Sites")]],
 	text = {
 		en = "Ritual Sites",
 		de = "Ritualstätten",
@@ -834,37 +834,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				["cr"] = 260103,	-- Curious Obelisk
 				["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["groups"] = {
-					i(270061, {	-- Void-Bathed Snapdragon (PET!)
-						-- TODO: Restructure when "Soggy Nest" ObjectID gets discovered
-						["description"] = "Use |cff1eff00Soggy Lynx Toy|r at the Soggy Nest.",
-						["coord"] = { 30.0, 63.1, DAGGERSPINE_POINT },
-						["cr"] = 263917,	-- Curious Snapdragon
-						["cost"] = { { "i", 272128, 1 } },	-- Soggy Lynx Toy
-					}),
-					i(270062, {	-- Void-Touched Chick (PET!)
-						["description"] = "A small, inconspicuous, egg is floating down the river. Catch it.",
-						["cr"] = 263805,	-- Egg
-						["coords"] = {
-							{ 55.8, 45.6, DAGGERSPINE_POINT },
-							{ 68.7, 47.7, DAGGERSPINE_POINT },
-							{ 71.6, 50.3, DAGGERSPINE_POINT },
-						},
-					}),
-					o(649380, {	-- Washed Up Kelp
-						["description"] = "Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",
-						["modelScale"] = 3,
-						["cr"] = 263617,	-- Void-Touched Snapdragon
-						["coords"] = {
-							{ 41.0, 73.0, DAGGERSPINE_POINT },	-- Not verified, WoWhead data
-							{ 46.6, 46.0, DAGGERSPINE_POINT },	-- Verified
-							{ 47.9, 72.1, DAGGERSPINE_POINT },	-- Verified
-							{ 50.1, 55.1, DAGGERSPINE_POINT },	-- Verified
-							{ 53.4, 55.4, DAGGERSPINE_POINT },	-- Verified
-							{ 62.0, 77.1, DAGGERSPINE_POINT },	-- Verified
-							{ 66.0, 74.0, DAGGERSPINE_POINT },	-- Not verified, WoWhead data
-						},
-						["groups"] = { i(270041) },	-- Void-Touched Snapdragon (MOUNT!)
-					}),
 					n(ACHIEVEMENTS, {
 						ach(62539),	-- Neighborhood Ritual Team: Daggerspine Point
 						ach(62538),	-- Neighborhood Ritual Watch: Daggerspine Point
@@ -873,6 +842,41 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						ach(62527),	-- Ritual Site Challenge: Daggerspine Point
 						ach(62528),	-- Ritual Site Extreme: Daggerspine Point
 						ach(62535),	-- Ritual Site Rogue: Daggerspine Point
+					}),
+					filter(BATTLE_PETS, {
+						i(270061, {	-- Void-Bathed Snapdragon (PET!)
+							-- TODO: Restructure and move to treasures when "Soggy Nest" ObjectID gets discovered
+							["description"] = "Use |cff1eff00Soggy Lynx Toy|r at the Soggy Nest.",
+							["coord"] = { 30.0, 63.1, DAGGERSPINE_POINT },
+							["cr"] = 263917,	-- Curious Snapdragon
+							["cost"] = { { "i", 272128, 1 } },	-- Soggy Lynx Toy
+						}),
+						i(270062, {	-- Void-Touched Chick (PET!)
+							["description"] = "A small, inconspicuous, egg is floating down the river. Catch it.",
+							["cr"] = 263805,	-- Egg
+							["coords"] = {
+								{ 55.8, 45.6, DAGGERSPINE_POINT },
+								{ 68.7, 47.7, DAGGERSPINE_POINT },
+								{ 71.6, 50.3, DAGGERSPINE_POINT },
+							},
+						}),
+					}),
+					n(TREASURES, {
+						o(649380, {	-- Washed Up Kelp
+							["description"] = "Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",
+							["modelScale"] = 3,
+							["cr"] = 263617,	-- Void-Touched Snapdragon
+							["coords"] = {
+								{ 41.0, 73.0, DAGGERSPINE_POINT },	-- Not verified, WoWhead data
+								{ 46.6, 46.0, DAGGERSPINE_POINT },	-- Verified
+								{ 47.9, 72.1, DAGGERSPINE_POINT },	-- Verified
+								{ 50.1, 55.1, DAGGERSPINE_POINT },	-- Verified
+								{ 53.4, 55.4, DAGGERSPINE_POINT },	-- Verified
+								{ 62.0, 77.1, DAGGERSPINE_POINT },	-- Verified
+								{ 66.0, 74.0, DAGGERSPINE_POINT },	-- Not verified, WoWhead data
+							},
+							["groups"] = { i(270041) },	-- Void-Touched Snapdragon (MOUNT!)
+						}),
 					}),
 					n(ZONE_DROPS, {
 						i(271644),	-- Ember of Power (QS!/QI!)

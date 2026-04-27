@@ -4,7 +4,7 @@
 
 PREY = createHeader({
 	readable = "Prey",
-	icon = 237274,
+	icon = [[~_.asset("Category_Prey")]],
 	text = {
 		en = "Prey",
 		de = "Beutejagd",
