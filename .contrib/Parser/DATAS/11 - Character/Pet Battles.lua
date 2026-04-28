@@ -654,8 +654,8 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 				i(92679),	-- Flawless Aquatic Battle-Stone
 				i(92675),	-- Flawless Beast Battle-Stone
 				i(92676),	-- Flawless Critter Battle-Stone
-				i(92665),	-- Flawless Elemental Battle-Stone
 				i(92683),	-- Flawless Dragonkin Battle-Stone
+				i(92665),	-- Flawless Elemental Battle-Stone
 				i(92677),	-- Flawless Flying Battle-Stone
 				i(92682),	-- Flawless Humanoid Battle-Stone
 				i(92678),	-- Flawless Magic Battle-Stone
