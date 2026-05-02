@@ -3928,9 +3928,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoonprizeticket(75, i(78341, {	-- Darkmoon Hammer
 						["timeline"] = { ADDED_4_3_0 },
 					})),
-					darkmoonprizeticket(50, i(97994, applyclassicphase(MOP_PHASE_ESCALATION, {	-- Darkmoon Seesaw (TOY!)
-						["timeline"] = { ADDED_5_3_0 },
-					}))),
+					darkmoonprizeticket(50, i(97994, {	-- Darkmoon Seesaw (TOY!)
+						["timeline"] = { ADDED_6_2_2 },
+					})),
 					darkmoonprizeticket(1, i(19291)),	-- Darkmoon Storage Box
 					darkmoonprizeticket(10, i(93730, {	-- Darkmoon Top Hat
 						["timeline"] = { ADDED_5_2_0, REMOVED_8_2_5 },

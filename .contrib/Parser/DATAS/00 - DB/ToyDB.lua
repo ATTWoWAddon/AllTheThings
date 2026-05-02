@@ -366,7 +366,6 @@ i(95568);	-- Sunreaver Beacon
 -- PATCH 5.3.0 --
 -----------------
 i(97921);	-- Bom'bay's Color-Seein' Sauce
-i(97994);	-- Darkmoon Seesaw
 i(98136);	-- Gastropod Shell
 i(97942);	-- Sen'jin Spirit Drum
 i(98132);	-- Shado-Pan Geyser Gun
@@ -545,6 +544,7 @@ i(127666);	-- Vial of Red Goo
 -- PATCH 6.2.2 --
 -----------------
 i(128807);	-- Coin of Many Faces
+i(97994);	-- Darkmoon Seesaw
 i(128636);	-- Endothermic Blaster
 i(129929);	-- Ever-Shifting Mirror
 i(129965);	-- Grizzlesnout's Fang
