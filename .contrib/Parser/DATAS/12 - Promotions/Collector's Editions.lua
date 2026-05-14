@@ -868,17 +868,15 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(MOP_CLASSIC_HEROIC_PACK, bubbleDownSelf({ ["timeline"] = { ADDED_4_4_2, REMOVED_5_5_2 } }, {
+	n(MOP_CLASSIC_HEROIC_PACK, bubbleDownSelf({ ["timeline"] = { ADDED_4_4_2, REMOVED_6_0_2 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
 			["groups"] = {
 				mount(473487),	-- Sha-Touched Cloud Serpent
 				mount(473478),	-- Sha-Touched Riding Tiger
-				-- i(235561),	-- Joyous (PET!)
-				-- iensemble(267294),	-- Ensemble: Stormstout's Sha-Warped Collection (COSMETIC!)
-				i(235464, {	-- Sha-Touched Tea Set (TOY!)
-					["timeline"] = { ADDED_4_4_2, REMOVED_5_5_2 },
-				}),
+				i(235561),	-- Joyous (PET!)
+				iensemble(267294),	-- Ensemble: Stormstout's Sha-Warped Collection (COSMETIC!)
+				i(235464),	-- Sha-Touched Tea Set (TOY!)
 			},
 		}),
 	})),
