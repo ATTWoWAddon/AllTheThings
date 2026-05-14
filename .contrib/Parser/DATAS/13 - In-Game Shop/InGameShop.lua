@@ -864,7 +864,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #if ANYCLASSIC
 		i(184865, {	-- Reawakened Phase-Hunter (MOUNT!)
-			["timeline"] = { ADDED_2_5_1 },
+			["timeline"] = { ADDED_3_4_0 },
 		}),
 		-- #endif
 		mount(347812, {	-- Sapphire Skyblazer (MOUNT!)
