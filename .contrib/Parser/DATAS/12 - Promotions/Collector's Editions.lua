@@ -461,7 +461,6 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				}),
 				-- #if ANYCLASSIC
 				q(91888, {	-- A Special Delivery
-					["altQuests"] = { 91889 },	-- Your Reward has Arrived! (Innkeepers)
 					["timeline"] = { ADDED_1_15_5, REMOVED_3_0_2 },
 					["description"] = "These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
@@ -570,7 +569,6 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	-- #else
 	q(63865, {	-- A Special Thank
-		["altQuests"] = { 63770 },	-- A Special Thanks (Innkeepers)
 		["timeline"] = { ADDED_2_5_1, REMOVED_3_0_2 },
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		["qg"] = 17249,	-- Landro Longshot <The Black Flame>
@@ -618,7 +616,6 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["description"] = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
 		["groups"] = {
 			q(63450, {	-- A Deluxe Delivery (Landro Longshot)
-				["altQuests"] = { 63448 },	-- A Deluxe Delivery (Cities)
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
 				["maps"] = {
@@ -668,7 +665,6 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
 		["groups"] = {
 			q(93824, {	-- A Grand Delivery (Landro Longshot)
-				["altQuests"] = { 93823 },	-- A Grand Delivery (Cities)
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
 				["maps"] = {
@@ -1402,6 +1398,26 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 })));
 
 root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY }, {
+	-- #if ANYCLASSIC
+	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_5, REMOVED_3_0_2 } }, {
+			q(91889),	-- A Special Thanks (Innkeepers)
+	}));
+	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_1, REMOVED_3_0_2 } }, {
+			q(63770),	-- A Special Thanks (Innkeepers)
+	}));
+	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_1, REMOVED_3_0_2 } }, {
+		n(TBC_CLASSIC_DELUXE_EDITION, {
+			q(63448),	-- A Deluxe Delivery (Innkeepers)
+		}),
+	}));
+	-- #endif
+	-- #if CLASSIC_ANNIVERSARY
+	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_5, REMOVED_3_0_2 } }, {
+		n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, {
+			q(93823),	-- A Deluxe Delivery (Innkeepers)
+		}),
+	}));
+	-- #endif
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 		n(HEROIC_EDITION, {
 			q(81991),	-- 3 Ensembles tints tied to single HQT
@@ -1416,5 +1432,5 @@ root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = R
 			q(84824),	-- triggered when accepting "The Stormrider's Bond" (81993) [Dragon Isle Version]
 			q(84825),	-- triggered when accepting "The Stormrider's Bond" (83024) [Khaz Algar Version]
 		}),
-	})),
-})))
+	}));
+})));
