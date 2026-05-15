@@ -711,8 +711,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			i(253573),	-- Cobalt Phase-Hunter (MOUNT!)
 			i(254666),	-- Exodar Replica (TOY!)
 			i(263489),	-- Naaru's Enfold (TOY!)
-			i(252950),	-- Starspark Netherdrake (MOUNT!)
 			i(253699),	-- Starshard Whelpling (PET!)
+			i(252950),	-- Starspark Netherdrake (MOUNT!)
 		},
 	})),
 	-- #endif
