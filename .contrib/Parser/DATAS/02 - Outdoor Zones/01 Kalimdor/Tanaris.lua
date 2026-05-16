@@ -3832,7 +3832,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(106940, {	-- Innkeeper Fizzgrimble <Innkeeper>
 					["coord"] = { 52.6, 27.0, TANARIS },
-					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },	-- this npc was avaliable only during the legion pre launch event
+					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 					["groups"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
