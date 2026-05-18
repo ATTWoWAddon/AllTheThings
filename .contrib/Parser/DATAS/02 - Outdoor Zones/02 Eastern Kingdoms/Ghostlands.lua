@@ -644,6 +644,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 22653 },	-- Dar'Khan's Head
 					},
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
+					["maps"] = { SILVERMOON_CITY },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
@@ -731,6 +732,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 22653 },	-- Dar'Khan's Head
 					},
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
+					["maps"] = { SILVERMOON_CITY },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
@@ -829,6 +831,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 22627 },	-- The Lady's Necklace
 					},
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
+					["maps"] = { UNDERCITY },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
@@ -839,6 +842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 22627 },	-- The Lady's Necklace
 					},
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
+					["maps"] = { UNDERCITY },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
