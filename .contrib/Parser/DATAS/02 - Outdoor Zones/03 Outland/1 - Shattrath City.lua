@@ -1130,12 +1130,6 @@ root(ROOTS.Zones, {
 							i(33857),	-- Crate of Meat
 						},
 					}),
-					q(10984, {	-- Speak with the Ogre
-						["altQuests"] = { 11022 },	-- Speak with Mog'dorg
-						["qg"] = 22497,	-- V'eru
-						["coord"] = { 56.4, 49.2, SHATTRATH_CITY },
-						["isBreadcrumb"] = true,
-					}),
 					q(10017, {	-- Strained Supplies
 						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
 						["qg"] = 18597,	-- Sha'nir

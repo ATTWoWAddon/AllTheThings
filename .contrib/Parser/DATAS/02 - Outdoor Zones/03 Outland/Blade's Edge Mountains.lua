@@ -601,6 +601,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Slaag's Standard
 								["providers"] = {
+									{ "n", 22199 },	-- Slaag <Son of Gruul>
 									{ "i", 32382 },	-- Slaag's Standard
 									{ "o", 185574 },	-- Slaag's Standard
 								},
@@ -815,6 +816,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Vim'gol's Vile Grimoire
 								["providers"] = {
+									{ "n", 22911 },	-- Vim'gol the Vile
 									{ "i", 32358 },	-- Vim'gol's Vile Grimoire
 									{ "o", 185562 },	-- Vim'gol's Vile Grimoire
 								},
@@ -849,6 +851,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Grulloc's Dragon Skull
 								["providers"] = {
+									{ "n", 20216 },	-- Grulloc <Son of Gruul>
 									{ "i", 32379 },	-- Grulloc's Dragon Skull
 									{ "o", 185567 },	-- Grulloc's Dragon Skull
 								},
@@ -972,7 +975,9 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Skulloc's Soul
 								["providers"] = {
+									{ "n", 22910 },	-- Skulloc Soulgrinder
 									{ "i", 32383 },	-- Skulloc's Soul
+									{ "i", 32467 },	-- Vim'gol's Grimoire
 									{ "o", 185577 },	-- Skulloc's Soul
 								},
 							}),
@@ -1048,6 +1053,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Maggoc's Treasure Chest
 								["providers"] = {
+									{ "n", 20600 },	-- Maggoc <Son of Gruul>
 									{ "i", 32380 },	-- Maggoc's Treasure Chest
 									{ "o", 185569 },	-- Maggoc's Treasure Chest
 								},
@@ -1123,19 +1129,32 @@ root(ROOTS.Zones, {
 					}),
 					q(10983, {	-- Mog'dorg the Wizened
 						["sourceQuest"] = 10984,	-- Speak with the Ogre
-						["altQuests"] = { 10989 },	-- Mog'dorg the Wizened
+						["altQuests"] = {
+							10989,	-- Mog'dorg the Wizened
+							11057,	-- The Trouble Below
+						},
 						["qg"] = 22940,	-- Grok
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 65.0, 68.4, SHATTRATH_CITY },
 						-- #IF ANYCLASSIC
 						-- maybe this is true in classic? in Retail was unable to pick up any quest from Mog'dorg until completing this
 						["isBreadcrumb"] = true,
 						-- #ENDIF
 						["lvl"] = lvlsquish(70, 70, 20),
-						-- cross-completes with 10989
+					}),
+					q(10984, {	-- Speak with the Ogre
+						["qg"] = 22497,	-- V'eru
+						["timeline"] = { ADDED_2_1_0 },
+						["coord"] = { 56.4, 49.2, SHATTRATH_CITY },
+						["isBreadcrumb"] = true,
 					}),
 					q(10989, {	-- Mog'dorg the Wizened
-						["altQuests"] = { 10983 },	-- Mog'dorg the Wizened
+						["altQuests"] = {
+							10983,	-- Mog'dorg the Wizened
+							11057,	-- The Trouble Below
+						},
 						["qg"] = 22995,	-- Chort
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 55.4, 45.2, BLADES_EDGE_MOUNTAINS },
 						-- #IF ANYCLASSIC
 						-- maybe this is true in classic? in Retail was unable to pick up any quest from Mog'dorg until completing this
@@ -1534,7 +1553,6 @@ root(ROOTS.Zones, {
 					}),
 					q(11022, {	-- Speak with Mog'dorg
 						["sourceQuest"] = 11000,	-- Into the Soulgrinder
-						["altQuests"] = { 10984 },	-- Speak with the Ogre
 						["qg"] = 23053,	-- Bladespire Supplicant
 						["coord"] = { 56.2, 48.0, BLADES_EDGE_MOUNTAINS },
 						["isBreadcrumb"] = true,
@@ -1964,19 +1982,14 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11057, {	-- The Trouble Below
 						["qg"] = 23233,	-- Chu'a'lor
+						["altQuests"] = {
+							10983,	-- Mog'dorg the Wizened
+							10989,	-- Mog'dorg the Wizened
+						},
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
-						["groups"] = {
-							objective(1, {	-- 0/1 Vindicator Vuuleen's Blade
-								["provider"] = { "i", 30413 },	-- Vindicator Vuuleen's Blade
-								["cr"] = 20731,	-- Droggam
-							}),
-							objective(2, {	-- 0/1 Vindicator Vuuleen's Shield
-								["provider"] = { "i", 30415 },	-- Vindicator Vuuleen's Shield
-								["cr"] = 20726,	-- Mugdorg
-							}),
-						},
 					})),
 					q(10825, {	-- The Truth Unorbed
 						["provider"] = { "i", 31489 },	-- Orb of the Grishna
