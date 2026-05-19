@@ -782,13 +782,19 @@ namespace ATT
             {
                 Log($"Using config: {filepath}");
                 Config = new CustomConfiguration(filepath);
-                Console.Title = $"ATT Parser: {filepath}";
+                if (OperatingSystem.IsWindows())
+                {
+                    Console.Title = $"ATT Parser: {filepath}";
+                }
             }
             else
             {
                 Log($"Added config: {filepath}");
                 Config.ApplyFile(filepath);
-                Console.Title += $" + {filepath}";
+                if (OperatingSystem.IsWindows())
+                {
+                    Console.Title += $" + {filepath}";
+                }
             }
         }
 

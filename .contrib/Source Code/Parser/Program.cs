@@ -236,6 +236,8 @@ namespace ATT
 
         static int Main(string[] args)
         {
+            string exePath = Assembly.GetExecutingAssembly().Location;
+            Console.WriteLine(exePath);
             // Setup tracing to the console.
             Tracer.OnWrite += Console.Write;
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(UnhandledExceptionHandler);
@@ -425,10 +427,10 @@ namespace ATT
                 string content = "";
                 try
                 {
-                    var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
+                    var mainFileName = $"{databaseRootFolder}{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}_main.lua";
                     if (!File.Exists(mainFileName))
                     {
-                        Trace.WriteLine("Could not find the '_main.lua' header file.");
+                        Trace.WriteLine($"Could not find the {mainFileName} header file.");
                         Trace.WriteLine("Operation cannot continue without it.");
                         Framework.WaitForUser("Press any key to close...");
                         return ErrorCode;
@@ -834,9 +836,9 @@ namespace ATT
         {
             // Attempt to parse a command that initiates a command block.
             int newLineIndex = content.IndexOf('\n', index += 4);
-            var command = content.Substring(index, (newLineIndex > 0 ? newLineIndex : length) - index).Trim().ToUpper().Split(' ');
+            var command = content.Substring(index, (newLineIndex > 0 ? newLineIndex : length) - index).Trim().Split(' ');
             index = newLineIndex;
-            switch (command[0])
+            switch (command[0].ToUpper())
             {
                 case "IF":
                     PreProcessorNestLevel = 0;
@@ -946,7 +948,7 @@ namespace ATT
             builder.Append("-- ").Append(shortname).AppendLine();
 
             // Are we already using the Retail DB?
-            string filename = ".\\DATAS\\" + shortname;
+            string filename = $".{Path.DirectorySeparatorChar}DATAS{Path.DirectorySeparatorChar}" + shortname.Replace('\\', Path.DirectorySeparatorChar);
             if (Directory.Exists(filename))
             {
                 int fileCount = 0;

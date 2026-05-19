@@ -1,188 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{47D83200-8E21-487B-8F44-B08C7A1CBC82}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ATT</RootNamespace>
-    <AssemblyName>Parser</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\Parser\</OutputPath>
-    <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <Optimize>true</Optimize>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\Parser\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
-    <Optimize>false</Optimize>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>ATT.Program</StartupObject>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Csv, Version=2.0.93.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Csv.2.0.93\lib\net40\Csv.dll</HintPath>
-    </Reference>
-    <Reference Include="KeraLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=04d04586786c6f34, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\KeraLua.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="NLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=8df2ab518030ea95, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\NLua.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="CollectedStatus.cs" />
-    <Compile Include="CustomConfiguration.cs" />
-    <Compile Include="DataValidator.cs" />
-    <Compile Include="DB\Attributes\ExportableDataAttribute.cs" />
-    <Compile Include="DB\Attributes\DataModuleAttribute.cs" />
-    <Compile Include="DB\Interfaces\IWagoHolidayNameID.cs" />
-    <Compile Include="DB\Interfaces\IWagoQuestID.cs" />
-    <Compile Include="DB\Interfaces\IWagoUiMapID.cs" />
-    <Compile Include="DB\Interfaces\IWagoAreaID.cs" />
-    <Compile Include="DB\Interfaces\IWagoItemModifiedAppearanceID.cs" />
-    <Compile Include="DB\Interfaces\IWagoTransmogSetID.cs" />
-    <Compile Include="DB\Interfaces\IWagoSpellID.cs" />
-    <Compile Include="DB\Interfaces\IWagoItemID.cs" />
-    <Compile Include="DB\Interfaces\IWagoChild.cs" />
-    <Compile Include="DB\Attributes\LocalizeAttribute.cs" />
-    <Compile Include="DB\Types\HolidayNames.cs" />
-    <Compile Include="DB\Types\Holiday.cs" />
-    <Compile Include="DB\Types\HouseDecor.cs" />
-    <Compile Include="DB\Types\SkillLineAbility.cs" />
-    <Compile Include="DB\Types\UiMapAssignment.cs" />
-    <Compile Include="DB\Types\UiMap.cs" />
-    <Compile Include="DB\Types\ContentTuning.cs" />
-    <Compile Include="DB\Types\AreaTable.cs" />
-    <Compile Include="DB\Types\AchievementCategory.cs" />
-    <Compile Include="DB\Types\BattlePetSpecies.cs" />
-    <Compile Include="DB\Types\ArtifactAppearance.cs" />
-    <Compile Include="DB\Types\ItemBonus.cs" />
-    <Compile Include="DB\Types\WorldMapOverlay.cs" />
-    <Compile Include="DB\Types\RaceTypeBitIndexes.cs" />
-    <Compile Include="DB\Types\ItemSearchName.cs" />
-    <Compile Include="DB\Types\TaxiNodes.cs" />
-    <Compile Include="DB\Types\ItemEffect.cs" />
-    <Compile Include="DB\Types\GlyphProperties.cs" />
-    <Compile Include="DB\Types\ItemXItemEffect.cs" />
-    <Compile Include="DB\Types\Item.cs" />
-    <Compile Include="DB\Types\SpellEffect.cs" />
-    <Compile Include="DB\Types\ItemModifiedAppearance.cs" />
-    <Compile Include="DB\Types\TransmogSet.cs" />
-    <Compile Include="DB\Types\TransmogSetItem.cs" />
-    <Compile Include="DB\Types\ClassTypeFlags.cs" />
-    <Compile Include="DB\Types\TransmogSourceTypeFlags.cs" />
-    <Compile Include="DB\Types\TypeFlags.cs" />
-    <Compile Include="DB\Types\ModifierTree.cs" />
-    <Compile Include="DB\WagoData.cs" />
-    <Compile Include="Export\Export %28Compressed Lua%29.cs" />
-    <Compile Include="Export\Export %28Pure Lua%29.cs" />
-    <Compile Include="Export\Export %28Raw Lua%29.cs" />
-    <Compile Include="Export\Export %28Shortcuts%29.cs" />
-    <Compile Include="Export\Export %28Structures%29.cs" />
-    <Compile Include="Export\Export.cs" />
-    <Compile Include="Export\Exporter.cs" />
-    <Compile Include="Export\Object Data\HeaderData.cs" />
-    <Compile Include="Export\Object Data\QuestData.cs" />
-    <Compile Include="Export\Object Data\MapData.cs" />
-    <Compile Include="Export\Object Data\CriteriaData.cs" />
-    <Compile Include="Export\Object Data\HeirloomData.cs" />
-    <Compile Include="Export\Object Data\ItemData.cs" />
-    <Compile Include="Export\Object Data\ItemSourceData.cs" />
-    <Compile Include="Export\Object Data\AchievementData.cs" />
-    <Compile Include="Export\Object Data\RecipeData.cs" />
-    <Compile Include="Export\Object Data\MountData.cs" />
-    <Compile Include="Export\Object Data\ObjectData.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="FieldTypes\Providers.cs" />
-    <Compile Include="FieldTypes\Coords.cs" />
-    <Compile Include="FieldTypes\Cost.cs" />
-    <Compile Include="FieldTypes\IExportableField.cs" />
-    <Compile Include="FieldTypes\IProcessedField.cs" />
-    <Compile Include="FieldTypes\LockCriteria.cs" />
-    <Compile Include="FieldTypes\Timeline.cs" />
-    <Compile Include="FieldTypes\TimelineEntry.cs" />
-    <Compile Include="Framework\ConcurrentHashSet.cs" />
-    <Compile Include="Framework\ConcurrentDataList.cs" />
-    <Compile Include="Framework\Framework.Objects.cs" />
-    <Compile Include="Framework\Framework.Items.cs" />
-    <Compile Include="Framework\Framework.cs" />
-    <Compile Include="Framework\Framework.Processing.cs" />
-    <Compile Include="Framework\Handler.cs" />
-    <Compile Include="Framework\HierarchicalFieldAdjustments.cs" />
-    <Compile Include="Framework\ReplacementTree.cs" />
-    <Compile Include="Framework\Structs.cs" />
-    <Compile Include="Harvesters\ObjectHarvester.cs" />
-    <Compile Include="Framework\ParseStage.cs" />
-    <Compile Include="MiniJSON.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tracer.cs" />
-    <Compile Include="DB\Interfaces\IDBType.cs" />
-    <Compile Include="DB\Types\Achievement.cs" />
-    <Compile Include="DB\Types\Criteria.cs" />
-    <Compile Include="DB\Types\CriteriaTree.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <Compile Include="Framework\Framework.Logging.cs" />
-    <Compile Include="Framework\Framework.Merge.cs" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="lib\att_logo_128_new_jrX_icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CsvHelper" Version="33.1.0" />
+        <PackageReference Include="KeraLua" Version="1.4.9" />
+        <PackageReference Include="NLua" Version="1.7.8" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="App.config" />
+        <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="lib\att_logo_128_new_jrX_icon.ico" />
+    </ItemGroup>
 </Project>
