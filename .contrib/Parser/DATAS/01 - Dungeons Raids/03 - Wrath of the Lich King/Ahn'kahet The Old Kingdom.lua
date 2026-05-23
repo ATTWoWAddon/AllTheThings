@@ -412,6 +412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(39246),	-- Amulet of Autopsy
 							i(39250),	-- Ring of Holy Cleansing
 							i(39258),	-- Legplates of Inescapable Death
+							i(39248), 	-- Tunic of the Lost Pack
 						},
 					}),
 					e(584, {	-- Herald Volazj

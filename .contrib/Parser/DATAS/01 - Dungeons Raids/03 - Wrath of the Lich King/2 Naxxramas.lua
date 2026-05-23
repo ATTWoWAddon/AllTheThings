@@ -187,15 +187,6 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 						["criteriaID"] = 7154,	-- Heigan the Unclean slain
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
-					-- #if NAXX_10MAN_DROPS_25MAN_LOOT
-					i(39248, {	-- Tunic of the Lost Pack
-						-- #if ANYCLASSIC
-						["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
-						["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
-						["isBounty"] = true,
-						-- #endif
-					}),
-					-- #endif
 				},
 			}),
 			e(1606, {	-- Loatheb
@@ -457,12 +448,7 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			i(39255),	-- Staff of the Plague Beast
 			i(39246),	-- Amulet of Autopsy
 			i(39249),	-- Shoulderplates of Bloodshed
-			i(39248, {	-- Tunic of the Lost Pack
-				-- #if ANYCLASSIC
-				["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
-				["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
-				-- #endif
-			}),
+			i(39248), 	-- Tunic of the Lost Pack
 			i(39247),	-- Cuffs of Dark Shadows
 			i(39252),	-- Preceptor's Bindings
 			i(39251),	-- Necrogenic Belt
