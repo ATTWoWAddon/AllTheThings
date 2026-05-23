@@ -1579,7 +1579,7 @@ i(268044, 1281349);	-- Endless Codex of the Voidtouched
 i(256743, 1236464);	-- Gleeful Glamour - Haranir
 i(256754, 1236099);	-- Illusory Adornment - Nature's Embrace [Calls it "Shoulder Enchant" Still]
 i(256761, 1236100);	-- Illusory Adornment - Voidtouched [Calls it "Shoulder Enchant" Still]
-i(259373, 1246903);	-- Ren'dorei Postage Repository
+i(259373, 1246903);	-- Ren'dorei Postal Repository
 i(259370, 1246908);	-- Rootflame Campfire
 i(256742, 1236488);	-- Runed Dazzling Thorium Rod
 i(259375, 1246909);	-- Self-Pouring Thalassian Sunwine

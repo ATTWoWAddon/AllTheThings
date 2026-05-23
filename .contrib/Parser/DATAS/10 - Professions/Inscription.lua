@@ -4498,7 +4498,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				-- #endif
 				r(59499, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Armor Vellum II
 				r(59500, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Armor Vellum III
+				-- #if BEFORE 10.2.7
 				r(59387),	-- Certificate of Ownership
+				-- #endif
 				-- #if AFTER CATA
 				r(52739),	-- Enchanting Vellum [CATA+] / Armor Vellum
 				-- #endif

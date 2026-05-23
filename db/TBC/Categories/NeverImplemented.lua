@@ -971,7 +971,8 @@ r(36670,{b=1,itemID=30473,q=1,requireSkill=197}),
 r(36669,{b=1,itemID=30472,q=1,requireSkill=197}),
 r(36667,{b=1,itemID=30470,q=1,requireSkill=197}),
 r(36668,{b=1,itemID=30471,q=1,requireSkill=197}),
-r(36665,{b=1,itemID=30469,q=1,requireSkill=197})}})})})})}),
+r(36665,{b=1,itemID=30469,q=1,requireSkill=197})}})})})}),
+flt(57)}),
 flt(104,{
 x(1,{
 h(-232,{

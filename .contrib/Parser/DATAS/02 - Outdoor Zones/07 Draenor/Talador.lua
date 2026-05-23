@@ -988,6 +988,11 @@ root(ROOTS.Zones, {
 					q(33873, {	-- Cure of Aruunem
 						["qg"] = 76665,	-- Seer Malune
 						["coord"] = { 65.4, 50.7, TALADOR },
+						["groups"] = {
+							o(226888, {	-- Aruunem Berry Bush
+								i(108655),	-- Aruunem Berries (QI!)
+							}),
+						},
 					}),
 					q(34091, {	-- Decommissioned Mission
 						["icon"] = 894222,

@@ -571,7 +571,8 @@ i(22685,{b=1,f=200,minReputation={529,21000},q=1,requireSkill=197}),
 i(22684,{b=1,f=200,minReputation={529,21000},q=1,requireSkill=197}),
 i(22686,{b=1,f=200,minReputation={529,21000},q=1,requireSkill=197}),
 i(22687,{b=1,f=200,minReputation={749,21000},q=1,requireSkill=197}),
-i(21924,{f=200,requireSkill=197})})})})}),
+i(21924,{f=200,requireSkill=197})})})}),
+flt(57)}),
 flt(104,{
 x(1,{
 h(-232,{

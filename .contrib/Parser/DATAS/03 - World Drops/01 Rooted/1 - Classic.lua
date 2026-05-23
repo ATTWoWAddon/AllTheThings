@@ -3426,7 +3426,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	}),
 	filter(PROFESSION_EQUIPMENT, {
 		i(1819, {	-- Gouging Pick
+			-- #IF BEFORE 12.0.5
 			["collectible"] = false,
+			-- #ENDIF
 		}),
 	}),
 	category(106, applyclassicphase(PHASE_THREE_DMF_CARDS, {	-- Tarot Cards
@@ -4008,7 +4010,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- 	Sacks of Gems
 		-- 	Other reagents
 		-- _______________________________
-		-- 
+		--
 		-- Cloth:
 		i(14256, {	-- Felcloth
 			-- #if AFTER CATA

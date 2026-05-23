@@ -1944,7 +1944,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 42337,	-- Tainted Nightstalker
 				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					-- #if AFTER TBC
 					["crs"] = {
 						5981,	-- Portal Seeker

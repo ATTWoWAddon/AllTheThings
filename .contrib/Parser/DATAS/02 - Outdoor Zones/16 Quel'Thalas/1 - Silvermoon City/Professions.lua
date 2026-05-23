@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(258504),	-- Technique: Gilded Eversong Book (RECIPE!)
 							i(267394),	-- Technique: Homely Sin'dorei Shelf (RECIPE!)
 							i(258502),	-- Technique: Lively Songwriter's Quill (RECIPE!)
-							i(258503),	-- Technique: Sin'dorei Opened Scroll (RECIPE!)
+							i(258503),	-- Technique: Opened Sin'dorei Scroll (RECIPE!)
 							i(258493),	-- Technique: Thalassian Missive of Crafting Speed (RECIPE!)
 							i(258489),	-- Technique: Thalassian Missive of Deftness (RECIPE!)
 							i(258492),	-- Technique: Thalassian Missive of Finesse (RECIPE!)

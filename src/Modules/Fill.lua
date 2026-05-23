@@ -614,7 +614,7 @@ local function HandleOnWindowFillComplete(window)
 	app.HandleEvent("OnWindowFillComplete", window, window.Suffix)
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
-local FillGroups = function(group, options)
+local function FillGroups(group, options)
 	group.__FillGroups = true
 	-- Sometimes entire sub-groups should be preventing from even allowing filling (i.e. Dynamic groups)
 	local skipFull = app.GetRelativeRawWithField(group, "skipFull");

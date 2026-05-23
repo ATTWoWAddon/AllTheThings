@@ -20,6 +20,10 @@ app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
 
 local lib = setmetatable({}, {
 	__index = function(t, key)
+		-- Blizzard tries accessing ToDebugString on every table randomly because no one knows why
+		if key == "ToDebugString" then
+			return
+		end
 		error("API " .. key .. " not available! Please yell at Runaway or Crieve to add it to the WoW API Wrappers function");
 	end
 });
@@ -211,5 +215,12 @@ local C_SpellBook = C_SpellBook
 AssignAPIWrapper("IsSpellKnown", C_SpellBook and C_SpellBook.IsSpellKnown , IsSpellKnown);
 AssignAPIWrapper("IsSpellKnownOrOverridesKnown", C_SpellBook and C_SpellBook.IsSpellInSpellBook , IsSpellKnownOrOverridesKnown);
 AssignAPIWrapper("GetNumSpellTabs", C_SpellBook and C_SpellBook.GetNumSpellBookSkillLines, GetNumSpellTabs);
+
+-- Aura APIs
+local C_UnitAuras = C_UnitAuras;
+AssignAPIWrapper("GetPlayerAuraBySpellID",
+    C_UnitAuras and C_UnitAuras.GetPlayerAuraBySpellID,
+    GetPlayerAuraBySpellID,
+	app.EmptyFunction);
 
 ---@diagnostic enable: deprecated

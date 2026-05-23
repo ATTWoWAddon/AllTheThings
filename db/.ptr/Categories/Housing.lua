@@ -244,21 +244,33 @@ q(95413,{awp=120001,coords={
 [2351]={{52.9,59.8}},
 [2352]={{51.9,39.5}},
 [2393]={{49.5,65.8}}},isWeekly=1,qgs={260942,260943,260957,260958},g={
+i(274070,{spellID=1293139}),
+i(274069,{spellID=1293136}),
+i(274071,{spellID=1293143}),
 i(269010,{description="Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",sym={{"select","itemID",245586,242691,251762,251764,251763,251766,251767,251768,251772,251773,248012,256963}}})}}),
 q(95416,{awp=120001,coords={
 [2351]={{52.9,59.8}},
 [2352]={{51.9,39.5}},
 [2393]={{49.5,65.8}}},isWeekly=1,qgs={260942,260943,260957,260958},g={
+i(274070,{spellID=1293139}),
+i(274069,{spellID=1293136}),
+i(274071,{spellID=1293143}),
 i(269010,{description="Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",sym={{"select","itemID",245586,242691,251762,251764,251763,251766,251767,251768,251772,251773,248012,256963}}})}}),
 q(95440,{awp=120001,coords={
 [2351]={{52.9,59.8}},
 [2352]={{51.9,39.5}},
 [2393]={{49.5,65.8}}},isWeekly=1,qgs={260942,260943,260957,260958},g={
+i(274070,{spellID=1293139}),
+i(274069,{spellID=1293136}),
+i(274071,{spellID=1293143}),
 i(269010,{description="Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",sym={{"select","itemID",245586,242691,251762,251764,251763,251766,251767,251768,251772,251773,248012,256963}}})}}),
 q(95438,{awp=120001,coords={
 [2351]={{52.9,59.8}},
 [2352]={{51.9,39.5}},
 [2393]={{49.5,65.8}}},isWeekly=1,qgs={260942,260943,260957,260958},g={
+i(274070,{spellID=1293139}),
+i(274069,{spellID=1293136}),
+i(274071,{spellID=1293143}),
 i(269010,{description="Converts to 20 of any other Lumber type. Receiving the Lumber also counts towards the respective 'Harvest 250 Lumber' achievement",sym={{"select","itemID",245586,242691,251762,251764,251763,251766,251767,251768,251772,251773,248012,256963}}})}})}}),
 h(-745,{awp=120001,g={
 q(95407,{coords={

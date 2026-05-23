@@ -2014,7 +2014,47 @@ root(ROOTS.NeverImplemented, {
 
 		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			i(246209),	-- 12.0 Monster - Arator - Sword1H - Sword_1H_Arator_D_01
+			i(259954),	-- [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
+			i(249608),	-- [PH] 12.0 Delves - Level-Up - Weapon - 1H Axe INT
+			i(249611),	-- [PH] 12.0 Delves - Level-Up - Weapon - 1H Fist AGI
+			i(249612),	-- [PH] 12.0 Delves - Level-Up - Weapon - 1H Sword STR
+			i(249613),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Axe STR
+			i(249614),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Crossbow AGI
+			i(249615),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Staff AGI
+			i(249616),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Staff INT
+			i(249617),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Sword 
+			i(248060),	-- [TEMPLATE] 1h Dagger Int
+			i(248079),	-- [TEMPLATE] Summer Soother's Wand
+			i(235802),	-- Blazing Demonhilt Sword
+			i(263448),	-- Eversong Bow
+			i(263475),	-- Eversong Dagger
+			i(263478),	-- Eversong Gavel
+			i(263472),	-- Eversong Greatsword
+			i(263479),	-- Eversong Halberd
+			i(263483),	-- Eversong Hatchet
+			i(263476),	-- Eversong Ripper
+			i(263470),	-- Eversong Staff
+			i(263477),	-- Eversong Sword
+			i(263474),	-- Eversong Warglaive
+			i(255618),	-- Galactic Gladiator's Splitter
+			i(264625),	-- Gale Force Focus
+			i(235225),	-- Garden Shears
+			i(260191),	-- Hand of the Rootkeeper
+			i(260190),	-- Heavy Bramblebolter
+			i(239133),	-- Infinity Blade
+			i(260475),	-- Ka'shuk Trainee's Cudgel
+			i(251936),	-- Nullified Quarterstaff
 			i(266268),	-- Rootbound Haranir Claws
+			i(246189),	-- The Brightstar
+			i(253388),	-- Tyrannus's Runeblade
+			i(235806),	-- Tytalor's Staff
+			i(248280),	-- Void Analysis Baton
+			i(257534),	-- Voidbreaker's 
+			i(257235),	-- Voidbreaker's Cleaver
+			i(257239),	-- Voidbreaker's Knife
+			i(257236),	-- Voidbreaker's Runeaxe
+			i(260192),	-- Wildthorn Razorfang
 		})),
 	}),
 	n(WEAPONS, {

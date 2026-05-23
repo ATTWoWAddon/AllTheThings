@@ -134,6 +134,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							i(238190),	-- Shield of Unyielding Will
 							i(238184),	-- Stave of Unyielding Will
 							i(238185),	-- Wand of Unyielding Will
+							i(269973, {	-- Warglaive of Unyielding Will
+								["timeline"] = { ADDED_12_0_1 },
+							}),
 						},
 					}),
 					q(84965, {	-- Core Contributions
@@ -254,6 +257,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["qg"] = 230814,	-- Ve'nari
 						["coord"] = { 47.1, 54.6, KARESH },
 						["groups"] = {
+							i(232517),	-- Biome Eco-Stabilizer (QI!)
 							o(502907, {	-- Rod of Activation
 								["coord"] = { 48.8, 59.0, KARESH },
 								["groups"] = { i(233326) },	-- Rod of Activation (QI!)
@@ -2681,9 +2685,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "i", 238665 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
-			-- Unsorted
-			-- q(86492),	-- TODO: Alex - ach(42736),	-- Ixthar's Legacy
-			-- q(90954),	-- TODO: Alex - ach(42742) Power of the Reshii / Regalia of the Reshii upgrade, should probably be automated in future?
 		}),
 	}),
 }));

@@ -1422,6 +1422,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						o(194997, {	-- Thorned Bloodcup
+							["groups"] = { i(46315) },	-- Thorned Bloodcup (QI!)
+						}),
+						i(46316, {	-- Orc-Hair Braid (QI!)
+							i(46314),	-- Bloodcup Braid (QI!)
+						}),
+						--
 						i(56655, {	-- Bloodcup Slippers
 							["timeline"] = { ADDED_4_0_3 },
 						}),

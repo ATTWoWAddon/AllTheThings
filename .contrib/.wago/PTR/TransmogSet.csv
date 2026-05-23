@@ -204,7 +204,7 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Grievous Gladiator's Ironskin Armor",213,512,45619,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Leather Armor",214,8,45620,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Plate Armor",215,1,45621,276,15,13301,0,1,4,50200,5220,0
-G'Hanir,4955,1024,0,450,0,0,0,1,10,110205,350,0
+Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Grievous Gladiator's Ringmail Armor",216,64,45622,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Satin Armor",217,16,45623,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Scaled Armor",218,2,45624,276,15,13301,0,1,4,50200,5220,0
@@ -3591,13 +3591,11 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Prowler's Deep Headgear",3916,0,85123,67,0,0,0,1,10,0,1640,0
 "Prowler's Camo Headgear",3917,0,85124,67,0,0,0,1,10,0,1640,0
 "Prowler's Brick Headgear",3918,0,85125,67,0,0,0,1,10,0,1640,0
-"Prowler's Lively Headgear",3919,0,85126,3,0,0,0,1,10,0,1640,0
 "Prowler's Faded Headgear",3920,0,85127,67,0,0,0,1,10,0,1640,0
 "Prowler's Icy Headgear",3921,0,85128,67,0,0,0,1,10,0,1640,0
 "Prowler's Pink Headgear",3922,0,85129,67,0,0,0,1,10,0,1640,0
 "Prowler's Carrot Headgear",3923,0,85130,67,0,0,0,1,10,0,1640,0
 "Prowler's Rosy Headgear",3924,0,85136,67,0,0,0,1,10,0,1640,0
-"Prowler's Plum Headgear",3925,0,85137,3,0,0,0,1,10,0,1640,0
 "Prowler's Crimson Headgear",3926,0,85131,67,0,0,0,1,10,0,1640,0
 "Prowler's Violet Headgear",3927,0,85132,67,0,0,0,1,10,0,1640,0
 "Prowler's Aquatic Headgear",3928,0,85133,67,0,0,0,1,10,0,1640,0
@@ -3931,14 +3929,13 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Ornaments of the Pearlescent Butterfly",4261,0,86714,2,300,14226,0,1,10,110100,10,0
 "Ornaments of the Spring Butterfly",4262,0,86726,2,300,14151,4261,1,10,110100,10,0
 "Ornaments of the Ruby Butterfly",4263,0,86727,2,300,13965,4261,1,10,110100,10,0
-"Ornaments of the Midnight Butterfly",4264,0,86729,3,300,14015,4261,1,10,110100,10,0
 "Goblin Bruiser's Attire",4265,0,0,0,301,13966,0,1,10,110100,10,0
 "Undermine Enforcer's Attire",4266,0,0,0,302,14015,4265,1,10,110100,10,0
 "Noxious Injector Apparatus",4267,400,89188,256,303,14174,4337,1,10,110100,10,0
 "Nitroclad Kit",4268,3592,89189,256,303,14174,4338,1,10,110100,10,0
 "Blastborne Loadout",4269,4164,89190,256,303,14174,4339,1,10,110100,10,0
 "Junkreaver's Plates",4270,35,89191,256,303,14174,4340,1,10,110100,10,0
-"Forest Dweller's Garden Attire",4271,0,86871,259,304,13968,0,1,10,110100,10,0
+"Forest Dweller's Garden Attire",4271,0,86871,258,304,13968,0,1,10,110100,10,0
 "Forest Dweller's Butterfly Attire",4272,0,86875,258,304,14151,4271,1,10,110100,10,0
 "Forest Dweller's Blooming Attire",4273,0,86876,258,304,14015,4271,1,10,110100,10,0
 "Forest Dweller's Rooted Attire",4274,0,86879,258,304,13967,4271,1,10,110100,10,0
@@ -4262,6 +4259,7 @@ Moonspirit,4946,1024,0,450,0,0,0,1,10,110205,350,0
 "Avatar of Ursol",4952,1024,0,450,0,0,0,1,10,110205,350,0
 "Fallen to Nightmare",4953,1024,0,450,0,0,0,1,10,110205,350,0
 Stonepaw,4954,1024,0,450,0,0,0,1,10,110205,350,0
+G'Hanir,4955,1024,0,450,0,0,0,1,10,110205,350,0
 "Warden's Crown",4956,1024,0,450,0,0,0,1,10,110205,350,0
 "Crystalline Awakening",4957,1024,0,450,0,0,0,1,10,110205,350,0
 "Deadwood Keeper",4958,1024,0,450,0,0,0,1,10,110205,350,0
@@ -4517,7 +4515,7 @@ Earth-Warder,5090,1,0,450,0,0,0,1,10,110205,350,0
 "The Noble's Winter Collection",5238,0,92095,258,342,13967,0,1,10,110205,4000,0
 "The Seafarer's Winter Collection",5239,0,92096,258,342,14145,5238,1,10,110205,4000,0
 "The Drustvar Winter Collection",5240,0,92097,258,342,13965,5238,1,10,110205,4000,0
-"The Kirin Tor Winter Collection",5241,0,92098,258,342,14015,5238,1,10,110205,4000,0
+"Void-Touched Winter Collection",5241,0,0,0,342,14015,5238,1,10,110205,4000,0
 "Villager's Forest Attire",5242,0,92112,258,343,13968,0,1,10,110205,4000,0
 "Villager's Seaside Attire",5243,0,92115,258,343,13967,5242,1,10,110205,4000,0
 "Villager's Country Attire",5244,0,92116,258,343,14125,5242,1,10,110205,4000,0
@@ -4640,7 +4638,6 @@ Taeshalach,5305,0,92886,323,0,0,0,1,6,70300,7000,0
 "Vengeful Regalia of the Crusader",5364,0,93403,258,357,13965,5362,1,10,110207,10,0
 "Pious Regalia of the Crusader",5365,0,93405,258,357,14120,5362,1,10,110207,10,0
 Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
-Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Wandering Isle",5368,0,0,0,0,13193,0,1,10,110207,10,147474
 "Elaborate Charcoal Mageweave",5369,0,93445,258,359,13966,0,1,11,120000,10,0
 "Elaborate Lavender Mageweave",5370,0,93446,258,359,14015,5369,1,11,120000,10,0
@@ -4674,6 +4671,14 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Haven Socialite's Attire",5398,0,0,0,366,13965,0,1,11,0,10,0
 "Galactic Gladiator's Tabard",5399,0,0,19,0,0,0,1,11,120000,10,0
 "Galactic Gladiator's Prestigious Cloak",5400,0,0,19,0,0,0,1,11,120000,1550,0
+"Earthwarden's Battlegear",5401,0,93741,320,367,13966,0,1,9,100100,10,0
+"Lost Plunder Key",5402,0,93748,321,0,0,0,1,9,100000,10,0
+,5403,0,93749,321,0,0,0,1,11,120007,10,0
+"Druid of the Shadowflame",5404,0,93750,320,368,13965,0,1,9,100200,10,0
+"Pristine Draconic Scholar's Finery",5409,0,93768,320,0,0,0,1,9,100000,10,0
+"Ensemble: Winter's Dreaming Garb",5410,0,93770,320,0,0,0,1,9,0,10,0
+"Razorscale Pauldrons",5411,0,93772,321,0,0,0,1,11,120007,10,0
+"Dragonstone Shoulderguards",5416,0,93781,321,0,0,0,1,11,120007,10,0
 "Relentless Rider's Lament",5417,32,0,512,372,1641,5418,1,11,120000,7000,0
 "Relentless Rider's Lament",5418,32,0,512,372,13193,0,1,11,120000,7001,0
 "Relentless Rider's Lament",5419,32,0,512,372,2015,5418,1,11,120000,7002,0
@@ -4891,7 +4896,7 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Thalassian Plate Armor",5643,35,0,0,380,14214,5642,1,11,120000,5,0
 "Thalassian Plate Armor",5644,35,0,0,380,14406,5642,1,11,120000,4,0
 "Thalassian Plate Armor",5645,35,0,0,380,13992,5642,1,11,120000,2,0
-"Depthdiver Vestments",5646,0,0,1,344,14015,0,1,11,120000,10,0
+"Depthdiver Vestments",5646,0,94942,1,344,14015,0,1,11,120000,10,0
 "Abundant Raiment",5647,0,0,1,344,14125,0,1,11,120000,10,0
 "Garb of the Hara'ti Seer",5648,0,0,1,384,14122,5650,1,11,120000,1000,0
 "Garb of the Hara'ti Sage",5649,0,0,1,384,13967,5650,1,11,120000,1000,0
@@ -4910,6 +4915,25 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "White Sunwalker Totem",5664,0,95348,259,0,14120,0,1,11,120005,10,0
 "Arsenal: Drakebreaker's Weapons",5665,0,0,273,0,0,0,1,9,100000,4150,0
 "Arsenal: Hellbloom Weapons",5666,0,0,273,0,0,0,1,9,100200,4150,0
+"Sunlit Petalweave",5691,0,95831,258,391,14120,0,1,11,120007,10,0
+"Scarlet Petalweave",5692,0,95832,258,391,13965,5691,1,11,120007,10,0
+"Blush Petalweave",5693,0,95833,258,391,14151,5691,1,11,120007,10,0
+"Azure Petalweave",5694,0,95834,258,391,13967,5691,1,11,120007,10,0
+"Righteous Lawbringer",5695,0,95914,258,392,14120,0,1,11,120007,4000,0
+"Bloodwatch Outlaw",5696,0,95915,258,392,13965,5695,1,11,120007,4000,0
+"Duskwatch Outlaw",5697,0,95920,258,392,14015,5695,1,11,120007,4000,0
+"Badlands Lawbringer",5698,0,95930,258,392,14097,5695,1,11,120007,4000,0
+"Midnight Outlaw",5699,0,95932,258,392,13966,5695,1,11,120007,4000,0
+"Slinger's Munitions",5706,0,96298,323,0,0,0,1,11,120007,1640,0
+"Response Team's Plate Armor",5707,35,0,0,395,13966,5617,1,11,120000,3000,0
+"Response Team's Mail Armor",5708,4164,0,0,395,13966,5616,1,11,120000,3000,0
+"Response Team's Leather Armor",5709,3592,0,0,395,13966,5615,1,11,120000,3000,0
+"Response Team's Cloth Armor",5710,400,0,0,395,13966,5614,1,11,120000,3000,0
+"Sun Festival's Flame Totems",5712,0,96977,259,0,14097,0,1,11,120007,10,0
+"Sun Festival's Painted Battle Garb",5713,0,97030,0,387,14097,5657,1,11,120007,10,0
+"Arsenal: Lightforged Armaments",5714,0,97090,259,0,14018,0,1,11,120000,10,0
+"Azshara's Darkscale Raiment",5667,0,95545,258,388,13965,0,1,11,120005,10,0
+"Azshara's Deepscale Raiment",5668,0,95546,258,388,14120,5667,1,11,120005,10,0
 "Pink Candlelight Kobold Romper",5405,0,93760,258,369,14151,0,1,11,120000,1000,0
 "Blue Candlelight Kobold Romper",5406,0,93761,258,369,13967,5405,1,11,120000,1000,0
 "Brown Candlelight Kobold Romper",5407,0,93762,258,369,14125,5405,1,11,120000,1000,0

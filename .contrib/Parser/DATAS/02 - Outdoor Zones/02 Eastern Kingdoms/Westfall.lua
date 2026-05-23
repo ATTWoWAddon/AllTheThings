@@ -266,13 +266,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
-					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map (QS!)
+				q(136, {	-- Captain Sanders' Hidden Treasure (1/4)
+					["provider"] = { "i", 1357 },	-- Captain Sanders' Treasure Map (QS!)
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 				}),
-				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
-					["sourceQuest"] = 136,	-- Captain Sander's Hidden Treasure (1/4)
+				q(138, {	-- Captain Sanders' Hidden Treasure (2/4)
+					["sourceQuest"] = 136,	-- Captain Sanders' Hidden Treasure (1/4)
 					["providers"] = {
 						{ "o",   35 },	-- Captain's Footlocker
 						{ "i", 1358 },	-- A Clue to Sander's Treasure (PQI!)
@@ -281,8 +281,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 				}),
-				q(139, {	-- Captain Sander's Hidden Treasure (3/4)
-					["sourceQuest"] = 138,	-- Captain Sander's Hidden Treasure (2/4)
+				q(139, {	-- Captain Sanders' Hidden Treasure (3/4)
+					["sourceQuest"] = 138,	-- Captain Sanders' Hidden Treasure (2/4)
 					["providers"] = {
 						{ "o",   36 },	-- Broken Barrel
 						{ "i", 1361 },	-- Another Clue to Sander's Treasure (PQI!)
@@ -291,11 +291,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 				}),
-				q(140, {	-- Captain Sander's Hidden Treasure (4/4)
-					["sourceQuest"] = 139,	-- Captain Sander's Hidden Treasure (3/4)
+				q(140, {	-- Captain Sanders' Hidden Treasure (4/4)
+					["sourceQuest"] = 139,	-- Captain Sanders' Hidden Treasure (3/4)
 					["providers"] = {
 						{ "o",   34 },	-- Old Jug
-						{ "i", 1362 },	-- Final Clue to Sander's Treasure (PQI!)
+						{ "i", 1362 },	-- Final Clue to Sanders' Treasure (PQI!)
 						{ "o",   33 },	-- Locked Chest
 					},
 					["coords"] = {
@@ -305,9 +305,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 					["groups"] = {
-						i(3343),	-- Captain Sander's Booty Bag
-						i(3344),	-- Captain Sander's Sash
-						i(3342),	-- Captain Sander's Shirt
+						i(3343),	-- Captain Sanders' Booty Bag
+						i(3344),	-- Captain Sanders' Sash
+						i(3342),	-- Captain Sanders' Shirt
 						i(2842),	-- Silver Bar
 					},
 				}),
@@ -2117,8 +2117,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				i(1357, {	-- Captain Sander's Treasure Map (QS!)
-					["timeline"] = { REMOVED_4_0_3 },
+				i(1357, {	-- Captain Sanders' Treasure Map (QS!)
+					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = {
 						126,	-- Murloc Coastrunner
 						458,	-- Murloc Hunter

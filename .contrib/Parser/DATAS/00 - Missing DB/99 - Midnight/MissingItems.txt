@@ -640,7 +640,6 @@ i(3584),	-- Deprecated Perenolde's Head
 i(3620),	-- Lillith's Remains
 i(3624),	-- Deprecated QDROP - Ma'ruk Wyrmscale
 i(3660),	-- s of Alterac \\ Tomes of Alterac
-i(3668),	-- Assassin's Contract
 i(3669),	-- tinous Goo \\ Gelatinous Goo
 i(3671),	-- less Skull \\ Lifeless Skull
 i(3673),	-- en Arrow \\ Broken Arrow
@@ -2000,9 +1999,6 @@ i(10789),	-- al of Engineering Disciplines \\ Manual of Engineering Disciplines
 i(10792),	-- 's Pledge of Secrecy \\ Nixx's Pledge of Secrecy
 i(10793),	-- spark's Pledge of Secrecy \\ Overspark's Pledge of Secrecy
 i(10818),	-- kinya's Scroll \\ Yeh'kinya's Scroll
-i(10831),	-- Orb \\ Fel Orb
-i(10832),	-- Tracker Owner's Manual \\ Fel Tracker Owner's Manual
-i(10834),	-- ound Tracker Kit \\ Felhound Tracker Kit
 i(11085),	-- Customer of the Month Coffer Key
 i(11099),	-- Old Dark Iron Ore \\ Dark Iron Ore
 i(11102),	-- tched Sprite Darter Egg \\ Unhatched Sprite Darter Egg
@@ -2011,7 +2007,6 @@ i(11107),	-- all Pack \\ A Small Pack
 i(11109),	-- ial Chicken Feed \\ Special Chicken Feed
 i(11111),	-- en Sprite Darter Egg \\ Broken Sprite Darter Egg
 i(11115),	-- Secret Safe Key
-i(11116),	-- ngled Journal \\ A Mangled Journal
 i(11125),	-- e Manifest \\ Grape Manifest
 i(11127),	-- enged Goods \\ Scavenged Goods
 i(11133),	-- en's Training Sword \\ Linken's Training Sword
@@ -2075,6 +2070,7 @@ i(11471),	-- ile Sprite Darter Egg \\ Fragile Sprite Darter Egg
 i(11473),	-- PX83-Enigmatron
 i(11507),	-- ted Hyena Pelt \\ Spotted Hyena Pelt
 i(11508),	-- master's Slippers \\ Gamemaster's Slippers
+i(11512),	-- h of Tainted Skin \\ Patch of Tainted Skin
 i(11513),	-- ted Vitriol \\ Tainted Vitriol
 i(11514),	-- Creep \\ Fel Creep
 i(11515),	-- upted Soul Shard \\ Corrupted Soul Shard
@@ -2084,9 +2080,7 @@ i(11602),	-- Guzzler Key \\ Grim Guzzler Key
 i(11609),	-- red Black Dragonflight Molt \\ Altered Black Dragonflight Molt
 i(11613),	-- G Samophlange Manual Cover \\ DEBUG Samophlange Manual Cover
 i(11616),	-- G Samophlange Manual Page \\ DEBUG Samophlange Manual Page
-i(11668),	-- e of Xavaric \\ Flute of Xavaric
 i(11804),	-- ggle's Canteen \\ Spraggle's Canteen
-i(11818),	-- Grimesilt Outhouse Key
 i(11843),	-- Voucher \\ Bank Voucher
 i(11844),	-- lezugg's Un'Goro Report \\ Pestlezugg's Un'Goro Report
 i(11846),	-- ang's Special Brew \\ Wizbang's Special Brew
@@ -2140,11 +2134,11 @@ i(12652),	-- u's Reconnaissance Report \\ Bijou's Reconnaissance Report
 i(12654),	-- shot \\ Doomshot
 i(12663),	-- hed Oaken Branch \\ Glyphed Oaken Branch
 i(12710),	-- ing Hunk of the Beast's Flesh \\ Glowing Hunk of the Beast's Flesh
+i(12721),	-- Luck Half-Charm \\ Good Luck Half-Charm
 i(12724),	-- ce's Parcel \\ Janice's Parcel
 i(12729),	-- Viagra
 i(12730),	-- sh's Scroll \\ Warosh's Scroll
 i(12733),	-- ed Frostsaber Meat \\ Sacred Frostsaber Meat
-i(12738),	-- on Outhouse Key \\ Dalson Outhouse Key
 i(12762),	-- Secrecy of Plans
 i(12763),	-- Un'Goro Etherfruit
 i(12770),	-- u's Information \\ Bijou's Information
@@ -2309,6 +2303,7 @@ i(15327),	-- en Wicked Throwing Dagger \\ Broken Wicked Throwing Dagger \\ Wicke
 i(15328),	-- ph's Key \\ Joseph's Key
 i(15409),	-- ned Deeprock Salt \\ Refined Deeprock Salt
 i(15420),	-- feather \\ Ironfeather
+i(15422),	-- tsaber Leather \\ Frostsaber Leather
 i(15446),	-- Stormwind Deputy Kit
 i(15447),	-- ng Rot \\ Living Rot
 i(15586),	-- Fast-Growing Flower \\ Fast-growing Flower
@@ -2818,7 +2813,10 @@ i(20463),	-- hed Crystal Prism \\ Glyphed Crystal Prism
 i(20467),	-- Recipe Page \\ Torn Recipe Page
 i(20485),	-- Duke's Seal
 i(20489),	-- Crown of the Council
+i(20498),	-- thid Chitin \\ Silithid Chitin
 i(20499),	-- en Silithid Chitin \\ Broken Silithid Chitin
+i(20500),	-- t Silithid Carapace \\ Light Silithid Carapace
+i(20501),	-- y Silithid Carapace \\ Heavy Silithid Carapace
 i(20516),	-- ing Apple \\ Bobbing Apple
 i(20541),	-- ded Twilight Text \\ Decoded Twilight Text
 i(20545),	-- ded Twilight Text \\ Decoded Twilight Text
@@ -6099,7 +6097,7 @@ i(42449),	-- ful Gladiator's War Edge \\ Hateful Gladiator's War Edge
 i(42450),	-- ly Gladiator's War Edge \\ Deadly Gladiator's War Edge
 i(42451),	-- ous Gladiator's War Edge \\ Furious Gladiator's War Edge
 i(42453),	-- Charred Glyph \\ red Glyph \\ Glyph of Hand of Gul'dan \\ Glyph of Incinerate
-i(42454),	-- Charred Glyph \\ red Glyph \\ Glyph of Conflagrate
+i(42454),	-- Charred Glyph \\ red Glyph \\ Glyph of Chaos Meteor \\ Glyph of Conflagrate
 i(42455),	-- Charred Glyph \\ red Glyph \\ Glyph of Siphon Life \\ Glyph of Corruption
 i(42456),	-- Charred Glyph \\ red Glyph \\ Glyph of Verdant Spheres \\ Glyph of Bane of Agony \\ Glyph of Curse of Agony
 i(42457),	-- Charred Glyph \\ red Glyph \\ Glyph of Nightmares \\ Glyph of Death Coil
@@ -12114,7 +12112,6 @@ i(69964),	-- y Smallfish \\ Randy Smallfish
 i(69967),	-- ous Mud Snapper \\ Amorous Mud Snapper
 i(69977),	-- ebull Crayfish \\ Stonebull Crayfish
 i(69980),	-- Trap \\ Rat Trap
-i(69983),	-- y Stone \\ Shiny Stone
 i(69988),	-- Nut \\ Pine Nut
 i(69989),	-- ted Fly \\ Bloated Fly
 i(69990),	-- ore Pine Cone \\ Mulgore Pine Cone
@@ -19311,7 +19308,6 @@ i(111735),	-- Sack of Supplies \\ of Supplies
 i(111736),	-- Garrison Records \\ ison Records
 i(111808),	-- Footman Longsword \\ man Longsword
 i(111809),	-- Thunderbrew Keg \\ derbrew Keg
-i(111845),	-- Snapdragon Frond \\ dragon Frond
 i(111846),	-- Riverhopper Eye \\ rhopper Eye
 i(111847),	-- Prowler Blood \\ ler Blood
 i(111849),	-- Ninjanite Bar \\ anite Bar
@@ -19326,19 +19322,12 @@ i(111892),	-- The Saga of Terokk \\ Saga of Terokk
 i(111905),	-- Irridium Dust \\ dium Dust
 i(111906),	-- Jovite Ore \\ te Ore
 i(111907),	-- Drudgeboat Salvage \\ geboat Salvage
-i(111908),	-- Draenei Bucket \\ nei Bucket
 i(111910),	-- Goren Gas Extractor \\ n Gas Extractor
-i(111937),	-- Lunarblossom \\ rblossom
 i(111938),	-- Lantresor's Blade \\ resor's Blade
 i(111947),	-- Blademaster's Banner \\ emaster's Banner
 i(112006),	-- Gordunni "Toothpick" \\ unni "Toothpick"
 i(112020),	-- Garrison Blueprints \\ ison Blueprints
-i(112082),	-- Living Flame \\ ng Flame
-i(112083),	-- Living Water \\ ng Water
-i(112084),	-- Living Earth \\ ng Earth
-i(112085),	-- Living Wind \\ ng Wind
 i(112088),	-- Gordunni Runebeads \\ unni Runebeads
-i(112089),	-- Ember Blossom \\ r Blossom
 i(112091),	-- Smoke Grenade \\ e Grenade
 i(112092),	-- Grimfrost Sorcerer Crown \\ frost Sorcerer Crown
 i(112095),	-- Half-Eaten Banana \\ -Eaten Banana
@@ -19391,7 +19380,6 @@ i(112270),	-- Darkmoon Card of Draenor \\ moon Card of Draenor
 i(112307),	-- Emergency Rocket Pack \\ gency Rocket Pack
 i(112308),	-- Fury of the Forge \\ of the Forge
 i(112322),	-- Complicated Wood \\ licated Wood
-i(112328),	-- Youngroot \\ groot
 i(112329),	-- Fara Poison \\ Poison
 i(112331),	-- "Tillik" of the Flock \\ lik" of the Flock
 i(112332),	-- Gathered Pebbles \\ ered Pebbles
@@ -19460,9 +19448,7 @@ i(112965),	-- Gorger's Hide \\ er's Hide
 i(112966),	-- Anima's Harness \\ a's Harness
 i(112970),	-- Enriched Seeds \\ ched Seeds
 i(112971),	-- Blacksmithing Work Order \\ ksmithing Work Order
-i(112990),	-- Doomshot \\ shot
 i(112991),	-- Placeholder, Blessed Holder of Places \\ eholder, Blessed Holder of Places
-i(112993),	-- Will of the Genesaur \\ of the Genesaur
 i(112994),	-- Lumber \\ er
 i(113036),	-- Goren Egg \\ n Egg
 i(113074),	-- Sargerei Cowl \\ erei Cowl
@@ -19489,7 +19475,6 @@ i(113112),	-- Shaman Stone \\ an Stone
 i(113121),	-- Apexis Interface \\ is Interface
 i(113122),	-- Armory Cannonball \\ ry Cannonball
 i(113127),	-- Armory Cannon \\ ry Cannon
-i(113136),	-- Ancient Growth Sap \\ ent Growth Sap
 i(113137),	-- Mine Guards \\ Guards
 i(113138),	-- Lunarfall Excavation \\ rfall Excavation
 i(113144),	-- Unstable Weapon Crystal \\ able Weapon Crystal
@@ -19677,7 +19662,6 @@ i(113501),	-- Book of Draenic Cures \\ of Draenic Cures
 i(113508),	-- Blademaster's Banner \\ emaster's Banner
 i(113509),	-- Conjured Mana Bun \\ ured Mana Bun
 i(113530),	-- Scaly Skin \\ y Skin
-i(113549),	-- Mixed Unit Tactics \\ d Unit Tactics
 i(113550),	-- Warsong Command Brief \\ ong Command Brief
 i(113551),	-- Warsong Outrider Orders \\ ong Outrider Orders
 i(113552),	-- Nagrand Scouting Report \\ and Scouting Report
@@ -19987,7 +19971,6 @@ i(115383),	-- Ring of Frozen Crystal \\ of Frozen Crystal
 i(115384),	-- Seal of Shining Crystal \\ of Shining Crystal
 i(115385),	-- Signet of Bloody Crystal \\ et of Bloody Crystal
 i(115386),	-- Loop of Chipped Crystal \\ of Chipped Crystal
-i(115442),	-- Saberon Herb Bundle \\ ron Herb Bundle
 i(115443),	-- Saberon Heart \\ ron Heart
 i(115444),	-- Apexis Interface \\ is Interface
 i(115445),	-- Rough Lava Diamond \\ h Lava Diamond
@@ -20283,7 +20266,6 @@ i(118641),	-- Flawless Signet of Bloody Crystal \\ less Signet of Bloody Crystal
 i(118642),	-- Flawless Loop of Chipped Crystal \\ less Loop of Chipped Crystal
 i(118670),	-- Inspiring Battle Standard \\ iring Battle Standard
 i(118679),	-- Goblin Emergency Continuance Kit \\ in Emergency Continuance Kit
-i(118681),	-- Ogre "Treasure" \\ "Treasure"
 i(118692),	-- Sethekk Idol \\ ekk Idol
 i(118693),	-- Rukhmar's Image \\ mar's Image
 i(118694),	-- Statue of Anzu \\ ue of Anzu
@@ -20293,7 +20275,6 @@ i(118701),	-- Talon Key \\ n Key
 i(118706),	-- Cracked Goren Egg \\ ked Goren Egg
 i(118707),	-- Clump of Gems \\ p of Gems
 i(118708),	-- Suntouched Spear \\ ouched Spear
-i(118717),	-- Beastskull Vessel \\ tskull Vessel
 i(118733),	-- Unstable Slag Mine \\ able Slag Mine
 i(118759),	-- Alchemy Experiment \\ emy Experiment
 i(118760),	-- Book of Rebirth \\ of Rebirth
@@ -20368,7 +20349,6 @@ i(119164),	-- Contract: Arakkoa Outcasts Follower \\ ract: Arakkoa Outcasts Foll
 i(119168),	-- Contract: Vol'jin's Spear Follower \\ ract: Vol'jin's Spear Follower
 i(119169),	-- Contract: Wrynn's Vanguard Follower \\ ract: Wrynn's Vanguard Follower
 i(119172),	-- Pouch of Pretty Trinkets \\ h of Pretty Trinkets
-i(119184),	-- Ancient Snarlpaw Skull \\ ent Snarlpaw Skull
 i(119185),	-- Expired Receipt \\ red Receipt
 i(119188),	-- Unclaimed Payment \\ aimed Payment
 i(119189),	-- Unclaimed Payment \\ aimed Payment
@@ -20489,7 +20469,6 @@ i(120269),	-- Autographed Portrait of Jaina Proudmoore \\ graphed Portrait of Ja
 i(120270),	-- Troll Sweat \\ l Sweat
 i(120271),	-- Extra Large Grooming Comb \\ a Large Grooming Comb
 i(120274),	-- Carafe of Moonwell Water \\ fe of Moonwell Water
-i(120290),	-- Secret Meeting Details \\ et Meeting Details
 i(120293),	-- Lukewarm Yak Roast Broth \\ warm Yak Roast Broth
 i(120300),	-- Charred Glyph \\ red Glyph
 i(120322),	-- Klinking Stacked Card Deck \\ king Stacked Card Deck
@@ -20558,10 +20537,8 @@ i(122425),	-- Stone of Remembrance \\ e of Remembrance
 i(122426),	-- Imp Blood \\ Blood
 i(122428),	-- Rush Order: Lumber Mill \\ Order: Lumber Mill
 i(122429),	-- Iskar's Tome of Shadows \\ r's Tome of Shadows
-i(122458),	-- Strange Stone \\ nge Stone
 i(122460),	-- Drained Blood Crystal \\ ned Blood Crystal
 i(122463),	-- Reshad's Volatile Concoction \\ ad's Volatile Concoction
-i(122467),	-- Strange Stone \\ nge Stone
 i(122478),	-- Scouting Report: Frostfire Ridge \\ ting Report: Frostfire Ridge
 i(122479),	-- Scouting Report: Shadowmoon Valley \\ ting Report: Shadowmoon Valley
 i(122480),	-- Scouting Report: Gorgrond \\ ting Report: Gorgrond
@@ -22400,7 +22377,6 @@ i(140393),	-- Repentia's Whip \\ ntia's Whip
 i(140394),	-- Thornstalk Barbs \\ nstalk Barbs
 i(140396),	-- Friendly Brawler's Wager \\ ndly Brawler's Wager
 i(140403),	-- Lylandre's Fel Crystal \\ ndre's Fel Crystal
-i(140404),	-- Intact Guardian Core \\ ct Guardian Core
 i(140406),	-- Primed Arcane Charge \\ ed Arcane Charge
 i(140424),	-- Taboo Knowledge \\ o Knowledge
 i(140425),	-- Thirsty Bloodstone \\ sty Bloodstone
@@ -23671,42 +23647,3 @@ i(155915),	-- Special Duty Assignments
 i(155918),	-- Special Duty Assignments
 i(156474),	-- Special Duty Assignments
 i(156477),	-- Special Duty Assignments
-8.0.1.25902
-i(152587),	-- Levae's Missive
-i(152666),	-- Recipe Rock
-8.1.5.29141
-i(167549),	-- Unwaning Bones
-8.2.5.31337
-i(172224),	-- Winter Veil Gift
-i(172225),	-- Gently Shaken Gift
-11.2.0.61624
-i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
-11.2.7.64011
-i(248941),	-- [DNT] Dreadscar Battle Planning Map - do not use - new asset
-11.2.7.64877
-i(268368),	-- Fragmented Memento of Epoch Challenges
-12.0.0.63534
-i(259996),	-- Quel'Thalas Equipment Chest
-12.0.0.63854
-i(262734),	-- [DNT] Mace of the Great Dark \\ Mace of the Great Dark
-12.0.0.64741
-i(262453),	-- Hearthlight Armillary
-12.0.1.66017
-i(271616),	-- Add Keystone Affix: Lindormi's Guidance
-12.0.1.66192
-i(271631),	-- Light Guardian's Reward
-i(271703),	-- Title: Volunteer
-i(271704),	-- Title: Caring Citizen
-i(271709),	-- Title: The Backbone of the Realm
-i(271710),	-- Title: The Philanthropist
-i(271711),	-- Title: The Everlasting
-i(271712),	-- Title: World Apex
-i(271713),	-- Title: Azeroth's Top Ten Youth
-i(271714),	-- Title: Model of the Era
-i(271715),	-- Title: Big Brother
-12.0.1.66263
-i(265106),	-- Farstriders' Pride Statue
-i(265631),	-- Farstriders' Glory Statue
-i(267466),	-- Silversun Compact Cape
-i(267467),	-- Silversun Compact Tabard
-i(267468),	-- Silversun Compact Shoulderpads

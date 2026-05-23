@@ -29,7 +29,12 @@ local ClassIcons = {
 local ClassInfoByID, ClassInfoByClassFile, ClassInfoByClassName = {}, {}, {};
 local GetSpecializationInfoByID, SpecInfoMetatable = GetSpecializationInfoByID, nil;
 if GetSpecializationInfoByID then
+	local tonumber = tonumber
 	SpecInfoMetatable = { __index = function(t, key)
+		key = tonumber(key)
+		-- Blizzard tries accessing ToDebugString on every table randomly because no one knows why
+		if not key then return end
+
 		local classID = math_floor(key);
 		local specID = math_floor((1000 * (key - classID)) + 0.00001);
 		local specID, name, description, icon, role, classFile = GetSpecializationInfoByID(specID);

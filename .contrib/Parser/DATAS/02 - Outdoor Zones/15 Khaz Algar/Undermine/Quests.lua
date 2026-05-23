@@ -186,6 +186,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							i(238251),	-- Grateful Goblin's Blade
 							i(232452),	-- Grateful Goblin's Cudgel
 							i(232449),	-- Grateful Goblin's Dagger
+							i(269979, {	-- Grateful Goblin's Glaive
+								["timeline"] = { ADDED_12_0_1 },
+							}),
 							i(232451),	-- Grateful Goblin's Mallet
 							i(232448),	-- Grateful Goblin's Shield
 							i(232450),	-- Grateful Goblin's Sword

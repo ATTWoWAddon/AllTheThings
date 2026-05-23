@@ -41,6 +41,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 50061,
 				["coord"] = { 77.9, 46.5, NAZMIR },
 			}),
+			o(293569, {	-- River Clam
+				["coords"] = {
+					{ 58.2, 36.9, NAZMIR },
+					{ 62.0, 35.3, NAZMIR },
+					{ 62.0, 35.5, NAZMIR },
+					{ 64.0, 33.9, NAZMIR },
+					{ 64.8, 41.1, NAZMIR },
+					{ 65.4, 60.7, NAZMIR },
+					{ 65.5, 60.7, NAZMIR },
+					{ 65.6, 50.9, NAZMIR },
+					{ 66.0, 47.6, NAZMIR },
+					{ 68.2, 57.4, NAZMIR },
+					{ 68.3, 57.5, NAZMIR },
+				},
+				["groups"] = { i(162127) },	-- River Clam Pearl
+			}),
 			o(278436, {	-- Shipwrecked Chest
 				["questID"] = 49483,
 				["coord"] = { 66.7, 17.5, NAZMIR },

@@ -1820,7 +1820,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36386,
 						["coord"] = { 48.6, 44.4, SPIRES_OF_ARAK },
-						["icon"] = 132372,	-- TODO: not working
+						["icon"] = 132372,
 						["groups"] = { i(118237) },	-- Anzu's Malice
 					}),
 					n(86941, {	-- Gift of Anzu
@@ -1828,7 +1828,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36388,
 						["coord"] = { 42.42, 26.69, SPIRES_OF_ARAK },
-						["icon"] = 132372,	-- TODO: not working
+						["icon"] = 132372,
 						["groups"] = { i(118242) },	-- Anzu's Scorn
 					}),
 					n(86962, {	-- Gift of Anzu
@@ -1836,7 +1836,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36389,
 						["coord"] = { 46.9, 40.46, SPIRES_OF_ARAK },
-						["icon"] = 132372,	-- TODO: not working
+						["icon"] = 132372,
 						["groups"] = { i(118238) },	-- Anzu's Reach
 					}),
 					n(86953, {	-- Gift of Anzu
@@ -1844,7 +1844,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36390,
 						["coord"] = { 57.01, 78.93, SPIRES_OF_ARAK },
-						["icon"] = 132372,	-- TODO: not working
+						["icon"] = 132372,
 						["groups"] = { i(118241) },	-- Anzu's Piercing Talon
 					}),
 					n(86956, {	-- Gift of Anzu
@@ -1852,7 +1852,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36392,
 						["coord"] = { 52.0, 19.7, SPIRES_OF_ARAK },
-						["icon"] = 132372,	-- TODO: not working
+						["icon"] = 132372,
 						["groups"] = { i(118239) },	-- Anzu's Stoicism
 					}),
 					o(235141, {	-- Iron Horde Explosives

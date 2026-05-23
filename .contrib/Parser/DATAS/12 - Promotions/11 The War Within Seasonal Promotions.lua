@@ -114,7 +114,9 @@ root(ROOTS.Promotions, {
 					["description"] = "Acquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Edition Collection.",
 				}),
 				i(224576, {	-- Lil' Flameo (PET!)
+					-- #if BEFORE 12.0.5.67314
 					["description"] = "Acquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Edition Collection.",
+					-- #endif
 				}),
 				i(224574, {	-- Savage Ebony Battle Turtle (MOUNT!)
 					["description"] = "Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",

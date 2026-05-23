@@ -71,14 +71,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}, {
 				q(91979),	-- Chop It Down
 				q(90574),	-- Fortify the Runestones: Blood Knights
-				q(91972),	-- Hold the Watch
-				q(91977),	-- Less Lawless
 				q(91971, {	-- Hitting the Hammer
 					i(249416),	-- Partially Eaten Rations (QI!)
 					i(249413),	-- Previously Loved Earring (QI!)
 					i(249412),	-- Smelly Left Shoe (QI!)
 					i(249415),	-- Throk's Scroll of Doom (QI!)
 					i(249411),	-- Twilight Tokens (QI!)
+				}),
+				q(91972),	-- Hold the Watch
+				q(91977),	-- Less Lawless
+				q(91976),	-- Lightbloom Dimmed
+				q(91973, {	-- Naga Blade
+					o(568483, {	-- Naga Scimitar
+						["coords"] = {
+							{ 35.0, 68.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.0, 68.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.6, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.2, 68.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						},
+						["groups"] = { i(249499) },	-- Naga Scimitar (QI!)
+					}),
 				}),
 				q(91974, {	-- Sunfire to the Blade
 					i(249691),	-- Holy Sunfire (QI!)
@@ -101,16 +113,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 				}),
-				q(91973, {	-- Naga Blade
-					o(568483, {	-- Naga Scimitar
-						["coords"] = {
-							{ 35.0, 68.2, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 36.0, 68.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 36.6, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 37.2, 68.7, MAP.MIDNIGHT.EVERSONG_WOODS },
-						},
-						["groups"] = { i(249499) },	-- Naga Scimitar (QI!)
-					}),
+				q(91975, {	-- That's Our Wood
+					i(249407),	-- Harvested Lightwood (QI!)
 				}),
 			})),
 			-- Farstriders weekly
@@ -135,6 +139,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(249497),	-- Ghostland Pepper (QI!)
 					}),
 				}),
+				q(91983, {	-- Lovely Plumage
+					i(249439),	-- Bright Feather (QI!)
+					i(249440),	-- Bright Feather (QI!)
+				}),
 				q(91987, {	-- Potted Lashers
 					i(249418),	-- Lightblooming Bulb (QI!)
 				}),
@@ -149,16 +157,30 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91985, {	-- Windrunner Memorabilia
 					i(249542),	-- Partially Used Memento (QI!)
-					o(568507, {	--
-						i(249552),	-- Mischievous Mask (QI!)
-						i(249531),	-- Mysterious Cube (QI!)
-						i(249540),	-- Oddly Sealed Book (QI!)
-						i(249554),	-- Variable Timepiece (QI!)
+					o(568507, {	-- Relocation Crate
+						["coords"] = {
+							{ 36.3, 73.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.4, 75.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.4, 75.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 36.7, 74.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.0, 73.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.4, 72.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.4, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.4, 73.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.5, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.8, 74.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 37.8, 74.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+						},
+						["groups"] = {
+							i(249527),	-- Elder Painting (QI!)
+							i(249553),	-- Lost Mirror (QI!)
+							i(249552),	-- Mischievous Mask (QI!)
+							i(249531),	-- Mysterious Cube (QI!)
+							i(249540),	-- Oddly Sealed Book (QI!)
+							i(249543),	-- Special Remedy (QI!)
+							i(249554),	-- Variable Timepiece (QI!)
+						},
 					}),
-				}),
-				q(91983, {	-- Lovely Plumage
-					i(249439),	-- Bright Feather (QI!)
-					i(249440),	-- Bright Feather (QI!)
 				}),
 			})),
 			-- Magisters weekly
@@ -178,7 +200,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(90573),	-- Fortify the Runestones: Magisters
+				q(89277, {	-- Illuminate the Space
+					i(239067),	-- Luminous Fibers
+				}),
 				q(89276),	-- Light Snacks
+				q(89278),	-- Minding Our Duty
 				q(91997, {	-- Power Clean
 					i(249452),	-- Inanimate Broom (QI!)
 				}),
@@ -230,6 +256,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{ 38.1, 45.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 							{ 39.2, 44.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 							{ 40.6, 43.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+							{ 40.6, 44.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 							{ 40.7, 44.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 						},
 						["groups"] = { i(249517) },	-- Smuggled Goods (QI!)

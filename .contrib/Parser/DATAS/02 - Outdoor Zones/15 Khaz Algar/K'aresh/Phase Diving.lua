@@ -2,32 +2,50 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+PHASE_CONDUITS = createHeader({
+	readable = "Phase Conduits",
+	icon = 6654410,
+	text = {
+		en = "Phase Conduits",
+		--de = "Phase Conduits",
+		--es = "Phase Conduits",
+		--mx = "Phase Conduits",
+		--fr = "Phase Conduits",
+		--it = "Phase Conduits",
+		--ko = "Phase Conduits",
+		--pt = "Phase Conduits",
+		--ru = "Phase Conduits",
+		cn = "相位导管",
+		--tw = "Phase Conduits",
+	},
+	description = {
+		en = "Phase Conduits are teleporters used to enter, exit, and instantly move around the Untethered Space (Phase Diving). All but two locations (on Vanquisher's Wake) are connected with each other.",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "相位导管是用于进入、退出和在无拘之域（相位潜行）中瞬间移动的传送器。除了两个位置（在征服者之痕）外，所有位置都相互连接。",
+		-- TODO: tw = "",
+	},
+
+});
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		header(HEADERS.Spell, 1214374, {	-- Phase Diving
 			n(ACHIEVEMENTS, {
 				ach(61017, {	-- Phase-Lost-and-Found
-				--[[
-					Alex TODO: is there a better way?
-					Exo write-up:
-					This one will be tricky. You find orbs while Phase Diving and when you go through them, you get the item. Orb can't be targeted, no WoWhead data so far... We don't know if an Orb is an object or NPC.
-					Reshii Wraps Level 2 upgrade "Secrets of the Depths" is required for this as IT is the one unlocking this feature. "You may now find phase orbs ... Phase orbs have a chance to recover a Phase-Lost appearance."
-					So... When adventuring, you can find Orbs with Fixed coordinate and you can "go through" it multiple times on a same character. Example, { 50.1, 36.2, KARESH }, behind Hashim.
-					You either get a junk item 250305, [Phase-Lost Detritus] OR a Phase-Lost cosmetic. (Level 3) Upgrade "Orbs of Power" messes with the concept of coordinates.
-					"Enemies Killed while Phase Diving now have a chance to phase orb ... Phase orbs have a chance to recover a Phase-Lost appearance." + You can ride ground mount.
-					Meaning, If we want an accurate coordinate pool, we will have to scour K'aresh and search for static orbs with fixed coordinates with Level 2 upgrade only.
-					However, using in consideration the sheer size of K'aresh, the point that there are (most likely) MORE than 17 Orbs (one for each cosmetic) and the fact this is account bound feature:
-					we can try to source (at least) 17 coordinates and ask a new tester (that didn't obtain a single of these) to go through gathered coordinates and see if the orb will award the cosmetic 100% on the first "going through".
-					If awarding a cosmetic is based on a chance, the best course is to slap a description that there are "Le wild Orbs" scattered throughout the zones and send players to find them themselves.
-					Peace!
-					30.07.2025. 1 day after the writeup. You can get more than one cosmetic from 1 Orb. I got Rod and Bullwark from the same Orb only a day or two in between...
-				]]--
 					["description"] = "|cff00ccffRank 3|r |cffe6cc80Reshii Wraps|r required in order to collect the Orbs. Reward is based on a % chance. Large amount of Orbs have Fixed Coordinates.\n|cff00ccffRank 4|r |cffe6cc80Reshii Wraps|r unlock the ability for Orbs to appear after you kill an enemy.\nIt is possible to obtain more than 1 item from the same Orb, after it respawns.",
 					["coords"] = {
 						{ 43.1, 21.6, KARESH },
 						{ 44.2, 16.9, KARESH },
 						{ 47.2, 15.8, KARESH },
 						{ 47.7, 37.3, KARESH },
+						{ 48.6, 38.5, KARESH },
 						{ 50.1, 36.2, KARESH },
 						{ 50.5, 54.1, KARESH },
 						{ 50.6, 35.1, KARESH },
@@ -113,62 +131,62 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 			}),
-			n(FLIGHT_PATHS, {
-				header(HEADERS.Spell, 1244306, {	-- Phase Conduit
-					fp(3161, {	-- Fracture of Laacuna
-						["coord"] = { 56.2, 21.5, KARESH },
-						["cr"] = 249778,	-- Phase Conduit
-					}),
-					fp(3164, {	-- Hosaas' Rest
-						["coord"] = { 53.9, 63.6, KARESH },
-						["cr"] = 249841,	-- Phase Conduit
-					}),
-					fp(3158, {	-- Lunnall River
-						["coord"] = { 65.4, 48.0, KARESH },
-						["cr"] = 249768,	-- Phase Conduit
-					}),
-					fp(3160, {	-- Naakroa
-						["coord"] = { 58.9, 57.9, KARESH },
-						["cr"] = 249775,	-- Phase Conduit
-					}),
-					fp(3159, {	-- North Sufaad
-						["coord"] = { 77.2, 48.9, KARESH },
-						["cr"] = 249771,	-- Phase Conduit
-					}),
-					fp(3163, {	-- Ruins of Yaathron
-						["coord"] = { 51.4, 67.1, KARESH },
-						["cr"] = 249811,	-- Phase Conduit
-					}),
-					fp(3156, {	-- Serrated Peaks
-						["coord"] = { 51.2, 48.6, KARESH },
-						["cr"] = 249764,	-- Phase Conduit
-					}),
-					fp(3155, {	-- Shadow Point
-						["coord"] = { 45.2, 23.9, KARESH },
-						["cr"] = 249761,	-- Phase Conduit
-					}),
-					fp(3147, {	-- Shan'dorah
-						["coord"] = { 60.2, 29.0, KARESH },
-						["cr"] = 249754,	-- Phase Conduit
-					}),
-					fp(3145, {	-- Tazavesh, the Veiled Market
-						["coord"] = { 46.8, 56.9, KARESH_TAZAVESH },
-						["cr"] = 249744,	-- Phase Conduit
-					}),
-					fp(3146, {	-- The Oasis
-						["coord"] = { 75.9, 33.0, KARESH },
-						["cr"] = 249747,	-- Phase Conduit
-					}),
-					fp(3157, {	-- Overlook Zo'Shuul
-						["coord"] = { 50.4, 36.4, KARESH },
-						["cr"] = 249765,	-- Phase Conduit
-					}),
-					fp(3162, {	-- Untethered Space
-						["coord"] = { 53.9, 26.8, KARESH },
-						["cr"] = 249781,	-- Phase Conduit
-					}),
+			n(PHASE_CONDUITS, sharedData({
+				["sourceQuest"] = 89345,	-- The Untethered Horror
+			}, {
+				fp(3161, {	-- Fracture of Laacuna
+					["coord"] = { 56.2, 21.5, KARESH },
+					["cr"] = 249778,	-- Phase Conduit
 				}),
-			}),
+				fp(3164, {	-- Hosaas' Rest
+					["coord"] = { 53.9, 63.6, KARESH },
+					["cr"] = 249841,	-- Phase Conduit
+				}),
+				fp(3158, {	-- Lunnall River
+					["coord"] = { 65.4, 48.0, KARESH },
+					["cr"] = 249768,	-- Phase Conduit
+				}),
+				fp(3160, {	-- Naakroa
+					["coord"] = { 58.9, 57.9, KARESH },
+					["cr"] = 249775,	-- Phase Conduit
+				}),
+				fp(3159, {	-- North Sufaad
+					["coord"] = { 77.2, 48.9, KARESH },
+					["cr"] = 249771,	-- Phase Conduit
+				}),
+				fp(3163, {	-- Ruins of Yaathron
+					["coord"] = { 51.4, 67.1, KARESH },
+					["cr"] = 249811,	-- Phase Conduit
+				}),
+				fp(3156, {	-- Serrated Peaks
+					["coord"] = { 51.2, 48.6, KARESH },
+					["cr"] = 249764,	-- Phase Conduit
+				}),
+				fp(3155, {	-- Shadow Point
+					["coord"] = { 45.2, 23.9, KARESH },
+					["cr"] = 249761,	-- Phase Conduit
+				}),
+				fp(3147, {	-- Shan'dorah
+					["coord"] = { 60.2, 29.0, KARESH },
+					["cr"] = 249754,	-- Phase Conduit
+				}),
+				fp(3145, {	-- Tazavesh, the Veiled Market
+					["coord"] = { 46.8, 56.9, KARESH_TAZAVESH },
+					["cr"] = 249744,	-- Phase Conduit
+				}),
+				fp(3146, {	-- The Oasis
+					["coord"] = { 75.9, 33.0, KARESH },
+					["cr"] = 249747,	-- Phase Conduit
+				}),
+				fp(3157, {	-- Overlook Zo'Shuul
+					["coord"] = { 50.4, 36.4, KARESH },
+					["cr"] = 249765,	-- Phase Conduit
+				}),
+				fp(3162, {	-- Untethered Space
+					["coord"] = { 53.9, 26.8, KARESH },
+					["cr"] = 249781,	-- Phase Conduit
+				}),
+			})),
 			n(RARES, sharedData({
 				["isDaily"] = true,
 			}, {

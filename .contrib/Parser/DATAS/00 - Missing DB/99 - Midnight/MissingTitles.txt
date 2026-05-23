@@ -58,6 +58,7 @@ title(737),	-- %s, Heir to the Mist
 5.5.3.64308
 title(738),	-- %s, the Thundering Stampede
 title(739),	-- %s, the Momentous Terror
-12.0.5.66330
-title(749),	-- Darkspear Dasher %s
-title(766),	-- %s, Mrglgrgl of Grglmrgl
+12.0.0.63534
+title(0),	-- Loa-speaker %s
+12.0.7.67227
+title(771),	-- Ritual Breaker %s

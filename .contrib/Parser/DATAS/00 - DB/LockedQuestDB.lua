@@ -172,6 +172,7 @@ ExportDB.OPAQDB = {
 	86535,	-- Test Run
 	88947,	-- Undermined Delves
 	91780,	-- Ethereal Delves
+	93519,	-- Midnight Delves!
 }
 
 -- This is a set of quest which mistakenly were added as OPA quests but were later determined to be inaccurately-assigned

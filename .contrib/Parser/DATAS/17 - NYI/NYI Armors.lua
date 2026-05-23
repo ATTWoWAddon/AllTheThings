@@ -6008,6 +6008,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				itemsource(290211),	-- The First Satyr's Spaulders
 			}),
 		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			i(254332),	-- Garden Tender's Shawl
+		})),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
@@ -6338,6 +6343,94 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					}),
 				})),
 			}),
+			-- Armor
+			i(260871),	-- [DNT] Cloth Feet Gear
+			i(260870),	-- [DNT] Leather Feet Gear
+			i(260869),	-- [DNT] Mail Feet Gear
+			i(260868),	-- [DNT] Plate Feet Gear
+			i(249566),	-- [PH] 12.0 Delves - Level-Up - Accessory - Cloth CLOAK - HC
+			i(249570),	-- [PH] 12.0 Delves - Level-Up - Accessory - Leather CLOAK - CM
+			i(249571),	-- [PH] 12.0 Delves - Level-Up - Accessory - Mail CLOAK - MV
+			i(249572),	-- [PH] 12.0 Delves - Level-Up - Accessory - Neck
+			i(249573),	-- [PH] 12.0 Delves - Level-Up - Accessory - Plate CLOAK - VH
+			i(249574),	-- [PH] 12.0 Delves - Level-Up - Armor - Cloth CHEST - A
+			i(249575),	-- [PH] 12.0 Delves - Level-Up - Armor - Cloth FEET - A
+			i(249576),	-- [PH] 12.0 Delves - Level-Up - Armor - Cloth HAND - A
+			i(249577),	-- [PH] 12.0 Delves - Level-Up - Armor - Cloth HEAD - A
+			i(249578),	-- [PH] 12.0 Delves - Level-Up - Armor - Cloth LEGS - A
+			i(249579),	-- [PH] 12.0 Delves - Level-Up - Armor - Cloth SHOULDER - A
+			i(249580),	-- [PH] 12.0 Delves - Level-Up - Armor - Cloth WAIST - A
+			i(249581),	-- [PH] 12.0 Delves - Level-Up - Armor - Cloth WRIST - A
+			i(249582),	-- [PH] 12.0 Delves - Level-Up - Armor - Leather CHEST - A
+			i(249583),	-- [PH] 12.0 Delves - Level-Up - Armor - Leather FEET - A
+			i(249584),	-- [PH] 12.0 Delves - Level-Up - Armor - Leather HAND - A
+			i(249585),	-- [PH] 12.0 Delves - Level-Up - Armor - Leather HEAD - A
+			i(249586),	-- [PH] 12.0 Delves - Level-Up - Armor - Leather LEGS - A
+			i(249587),	-- [PH] 12.0 Delves - Level-Up - Armor - Leather SHOULDER - A
+			i(249588),	-- [PH] 12.0 Delves - Level-Up - Armor - Leather WAIST - A
+			i(249589),	-- [PH] 12.0 Delves - Level-Up - Armor - Leather WRIST - A
+			i(249590),	-- [PH] 12.0 Delves - Level-Up - Armor - Mail CHEST - A
+			i(249591),	-- [PH] 12.0 Delves - Level-Up - Armor - Mail FEET - A
+			i(249592),	-- [PH] 12.0 Delves - Level-Up - Armor - Mail HAND - A
+			i(249593),	-- [PH] 12.0 Delves - Level-Up - Armor - Mail HEAD - A
+			i(249594),	-- [PH] 12.0 Delves - Level-Up - Armor - Mail LEGS - A
+			i(249595),	-- [PH] 12.0 Delves - Level-Up - Armor - Mail SHOULDER - A
+			i(249596),	-- [PH] 12.0 Delves - Level-Up - Armor - Mail WAIST - A
+			i(249597),	-- [PH] 12.0 Delves - Level-Up - Armor - Mail WRIST - A
+			i(249598),	-- [PH] 12.0 Delves - Level-Up - Armor - Plate CHEST - A
+			i(249599),	-- [PH] 12.0 Delves - Level-Up - Armor - Plate FEET - A
+			i(249600),	-- [PH] 12.0 Delves - Level-Up - Armor - Plate HAND - A
+			i(249601),	-- [PH] 12.0 Delves - Level-Up - Armor - Plate HEAD - A
+			i(249602),	-- [PH] 12.0 Delves - Level-Up - Armor - Plate LEGS - A
+			i(249603),	-- [PH] 12.0 Delves - Level-Up - Armor - Plate SHOULDER - A
+			i(249604),	-- [PH] 12.0 Delves - Level-Up - Armor - Plate WAIST - A
+			i(249605),	-- [PH] 12.0 Delves - Level-Up - Armor - Plate WRIST - A
+			i(243195),	-- Bonnie BYK TEST
+			i(260873),	-- Cowl of Infinite Gravity
+			i(260872),	-- Hazy Penumbral Cloak
+			i(266187),	-- Mind-Seeker Clutches
+			i(266186),	-- Mind-Seeker Leggings
+			i(266184),	-- Mind-Seeker Robes
+			i(266185),	-- Mind-Seeker Tome
+			-- Finger
+			i(249567),	-- [PH] 12.0 Delves - Level-Up - Accessory - FINGER - HC
+			i(249568),	-- [PH] 12.0 Delves - Level-Up - Accessory - FINGER - MH
+			i(249569),	-- [PH] 12.0 Delves - Level-Up - Accessory - FINGER - MV
+			i(260853),	-- Band of Infinite Gravity
+			i(251934),	-- Blessed Signet
+			i(267403),	-- Test Item [DNT] - Apply Poison - DISPEL TYPE
+			i(267388),	-- Test Item [DNT] - Apply Poison - Label
+			i(267391),	-- Test Item [DNT] - Dispelling a poison from target
+			i(267390),	-- Test Item [DNT] - If target is poisoned
+			i(267389),	-- Test Item [DNT] - When you are poisoned
+			i(267392),	-- Test Item [DNT] - When you have poison dispelled from you
+			i(267387),	-- Test Item [DNT] - While you are poisoned
+			-- Neck
+			i(260414),	-- Amulet of the Ascendant Void
+			i(264605),	-- Choker of Unyielding Winds
+			-- Trinket
+			i(260849),	-- [DNT] Trinket 1
+			i(260850),	-- [DNT] Trinket 2
+			i(260851),	-- [DNT] Trinket 3
+			i(260852),	-- [DNT] Trinket 4
+			i(251793),	-- Endosymbiotic Mycelium
+			i(251882),	-- Fragmented Light Shard
+			i(251794),	-- Gris-gris of Confidence
+			i(262753),	-- Shard of VoidStalker's Bracers
+			i(249142),	-- TEMPLATE 12.0 Raid - Ranged DPS - Trinket
+			i(251886),	-- Unstable Mana-Locket
+			i(262754),	-- Void Pearl of Haste
+		})),
+
+		-- 12.0.1
+		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+			-- Armor
+			i(248036),	-- Twilight Tamer's Mantle
+			i(248035),	-- Twilight Tamer's Pauldrons
+			i(248034),	-- Twilight Tamer's Shoulderpads
+			i(248037),	-- Twilight Tamer's Spaulders
+			-- Trinket
+			i(268534),	-- Sanctum's Decree
 		})),
 	}),
 }));

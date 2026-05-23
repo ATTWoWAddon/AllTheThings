@@ -11,7 +11,9 @@ i(0, 59487);	-- Arcane Tarot
 i(0, 59490);	-- Book of Stars
 i(0, 59478);	-- Book of Survival
 i(0, 57709);	-- Celestial Ink
+-- #if BEFORE 10.2.7
 i(0, 59387);	-- Certificate of Ownership
+-- #endif
 i(0, 59502);	-- Darkmoon Card
 i(0, 57706);	-- Dawnstar Ink
 i(0, 52739);	-- Enchanting Vellum / WRATH: Armor Vellum
@@ -909,7 +911,7 @@ i(141048, 225540);	-- Glyph of the Headhunter (8.0.1)
 i(141050, 225542);	-- Glyph of the Skullseye (8.0.1)
 i(141034, 225526);	-- Glyph of the Unholy Wraith (8.0.1)
 i(137740, 192848);	-- Glyph of the Wraith Walker (8.0.1)
--- NYI --
+--- NYI ---
 -- #if BEFORE 10.1.5
 i(141061, 225553);	-- Grimoire of the Abyssal
 -- #endif
@@ -1013,7 +1015,7 @@ i(137776, 192900);	-- Vantus Rune: Trilliax [Rank 3]
 -----------------
 i(147120, 240272);	-- Grimoire of the Shadow Succubus
 i(141067, 225559);	-- Grimoire of Wrathguard
--- NYI --
+--- NYI ---
 i(147118, 240269);	-- Glyph of the Fel Succubus
 
 -----------------
@@ -1583,6 +1585,12 @@ i(0, 422337);	-- Lydiara's Binding Rune
 i(211611, 430092);	-- Draconic Combatant's Emblem
 i(211610, 430091);	-- Draconic Combatant's Insignia of Alacrity
 i(211609, 430090);	-- Draconic Combatant's Medallion
+
+------------------
+-- PATCH 10.2.7 --
+------------------
+--- ITEM ---
+i(224270, 59387);	-- Certificate of Ownership
 
 ------------------
 -- PATCH 11.0.0 --

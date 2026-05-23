@@ -132,12 +132,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 53406,	-- The Chamber of Heart
 							["qgs"] = {
 								130216,	-- Magni Bronzebeard
+								136907,	-- Magni Bronzebeard
 								-- #if AFTER 8.2.0
 								152206,	-- Magni Bronzebeard
 								-- #endif
 							},
 							["coords"] = {
 								{ 42.1, 44.3, SILITHUS },
+								{ 49.6, 54.5, CHAMBER_OF_HEART },
 								{ 50.5, 59.9, REPAIRED_CHAMBER_OF_HEART },
 							},
 							["timeline"] = { ADDED_8_1_5 },
@@ -233,7 +235,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(56262, {	-- Back to the Chamber (A)
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
-							["qg"] = 154465,	-- Earthen Guardian
+							["qgs"] = {
+								154464,	-- Earthen Guardian
+								154465,	-- Earthen Guardian
+							},
 							["coord"] = { 74.8, 15.2, BORALUS },
 							["timeline"] = { ADDED_8_2_0 },
 							["races"] = ALLIANCE_ONLY,

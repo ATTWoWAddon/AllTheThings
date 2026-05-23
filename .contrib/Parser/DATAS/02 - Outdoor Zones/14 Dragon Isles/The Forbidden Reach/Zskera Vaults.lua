@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(74294, {	-- The Keys You Need
 					["sourceQuests"] = { 73159 },	-- Exploring Our Past
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
-					["coord"] = { 29.2, 53.1, THE_FORBIDDEN_REACH },	-- TODO: old 25.8, 47.9
+					["coord"] = { 29.2, 53.1, THE_FORBIDDEN_REACH },
 					["groups"] = {
 						-- Still available from the One-Time Quests, but since 10.2 its also buyable from a vendor
 						-- #if BEFORE 10.2.0
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(73089, {	-- What's Behind The Next Door
 					["sourceQuests"] = { 74294 },	-- The Keys You Need
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
-					["coord"] = { 29.2, 53.1, THE_FORBIDDEN_REACH },	-- TODO: old 25.8, 47.9, could be changed with TWW release?
+					["coord"] = { 29.2, 53.1, THE_FORBIDDEN_REACH },
 				}),
 				q(72956, {	-- More Doors to Open
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies

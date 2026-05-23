@@ -253,6 +253,7 @@ i(153570);	-- "Magic" Rock
 i(155842);	-- "Preserved" Foodstuffs
 i(153566);	-- "Shiny" Rock
 i(153567);	-- "Smooth" Rock
+i(158858);	-- Adder's Fork
 i(158862);	-- Ancient Grave Dust
 i(162634);	-- Ancient Nazmani Coins
 i(158811);	-- Ashen Coal
@@ -411,6 +412,7 @@ i(158775);	-- Thick Hivewax
 i(158808);	-- Thick Tendon
 i(158747);	-- Thorny Prickle
 i(163921);	-- Tiny Wicker Effigy
+i(158736);	-- Trophy Antlers
 i(158754);	-- Trueflight Fletching
 i(155844);	-- Unreliable Lodestone
 i(158872);	-- Unstable Essence
@@ -1518,6 +1520,7 @@ i(201210);	-- Albino Feather
 i(200804);	-- Ancestor's Scales
 i(192608);	-- Ancient Resin
 i(201220);	-- Ancient Tool
+i(192684);	-- Ancient War Tusk
 i(192717);	-- Animated Splinter
 i(194884);	-- Annoy-o-Tron Gang
 i(192646);	-- Aqueous Speck
@@ -2522,6 +2525,7 @@ i(200282);	-- A Steamy Romance Novel: The Lusty Draconian Mage
 i(238881);	-- Barbed Predator Tusk
 i(245672);	-- Blade of the Void Swamp
 i(238834);	-- Burnished Void Claw
+i(240937);	-- Celebratory Pack of Runed Undermine Crests
 i(238808);	-- Celeste-Touched Fin
 i(238874);	-- Congealed Mana
 i(246298);	-- Cracked Staff of the Desperate Defender
@@ -2536,16 +2540,18 @@ i(244359);	-- Ethereal Pylon Conduit
 i(238886);	-- Faintly Glowing Vellum
 i(238868);	-- Flickering Primeval Element
 i(238833);	-- Flowing Ridge Spikes
-i(238872);	-- Fragmented Fin
 i(238851);	-- Fractured Dragon Scale
+i(238872);	-- Fragmented Fin
+i(243246);	-- Funny Candle
+i(240935);	-- Glorious Cluster of Gilded Undermine Crests
 i(238799);	-- Harrowed Ichor
 i(238877);	-- Hollow Mandible
 i(238813);	-- Irridescent Eye
-i(243154);	-- Korgorath's Broken Nail
 i(244360);	-- K'aresh Nightbloom
+i(243154);	-- Korgorath's Broken Nail
 i(243014);	-- Light-Dimmed Cleaver
-i(243161);	-- Long-Pressed Flowers
 i(238812);	-- Long Fibrous Tongue
+i(243161);	-- Long-Pressed Flowers
 i(238871);	-- Luminous Brushtail
 i(238884);	-- Machine Remnant
 i(238876);	-- Malicious Mandible
@@ -2559,15 +2565,17 @@ i(246296);	-- Off-Balance Mace of the Tazavesh Lookout
 i(238880);	-- Oily Blubber
 i(238849);	-- Ominous Unblinking Eye
 i(245670);	-- P.O.S.T. Employee's Backup Stamp
+i(240932);	-- Pack of Runed Undermine Crests
 i(238870);	-- Pearly Incisor
 i(243018);	-- Petrified Twig of the Fennad
 i(250305);	-- Phase-Lost Detritus
 i(246301);	-- Pitted Blade of Lost Hope
+i(240934);	-- Pouch of Weathered Undermine Crests
 i(245674);	-- Rifle of Leaden Movement
 i(240933);	-- Satchel of Carved Undermine Crests
 i(238873);	-- Serrated Scale Shard
-i(243021);	-- Shadowguard Bonker
 i(238878);	-- Shadow-Touched Fang
+i(243021);	-- Shadowguard Bonker
 i(246294);	-- Shattered Buckler of the Last Stand
 i(238832);	-- Sinuous Wing Membrane
 i(238854);	-- Sleek Beak
@@ -2581,6 +2589,7 @@ i(248200);	-- The Brothers' Not-So-Final Present
 i(244357);	-- Time-Worn Memento
 i(238847);	-- Torn Maw Fragment
 i(238887);	-- Torn Voidscript Page
+i(240938);	-- Triumphant Satchel of Carved Undermine Crests
 i(243017);	-- Tulwar of the Pyrite Guard
 i(238875);	-- Twisted Sediment
 i(238885);	-- Unstable Power Source
@@ -2588,10 +2597,10 @@ i(238867);	-- Unstable Void Essence
 i(238814);	-- Vibrantly Colored Crest
 i(238866);	-- Void Dust
 i(238848);	-- Void Tendril
-i(244355);	-- Voidstorm Obsidian
 i(244361);	-- Void-Carved Amethyst
 i(238841);	-- Void-Seeping Eyeball
 i(238865);	-- Void-Warped Hoof
+i(244355);	-- Voidstorm Obsidian
 i(245668);	-- Warglaive of the Subdued Tracker
 i(243145);	-- Well-Preserved Wrappings
 
@@ -2599,16 +2608,23 @@ i(243145);	-- Well-Preserved Wrappings
 -- PATCH 11.2.7 --
 ------------------
 i(192604);	-- Ancient Lantern
+i(243206);	-- Cracked Predator's Claw
+i(260429);	-- Crescent Cove Crab
 i(243228);	-- Dim Elemental Essence
 i(176878);	-- Dulled Memento
+i(243215);	-- Enlarged Insect Organs
+i(260519);	-- Farm Carrots
+i(260589);	-- Flame-Blessed Beach Towel
+i(243226);	-- Glimmering Elemental Core
 i(243227);	-- Handful of Water Droplets
 i(263508);	-- Human Brain
 i(243199);	-- Majestic Whisker
 i(243225);	-- Mashed Carrot
+i(243201);	-- Massive Serpent Fang
 i(243207);	-- Matted Cat Hair
 i(158769);	-- Monkey's Paw
-i(243222);	-- Pillaged Rake
 i(243224);	-- Pilfered Spade
+i(243222);	-- Pillaged Rake
 i(260428);	-- Raw Mussel
 i(243223);	-- Shredded Linen Cloth
 i(163064);	-- Silver Monkey Statue
@@ -2629,6 +2645,7 @@ i(263517);	-- Ancient Text
 i(260641);	-- Arid Tendrils
 i(260292);	-- Asteroid Soup
 i(260298);	-- Astral Apple Pie
+i(246371);	-- Ballista Bolt
 i(260664);	-- Bioluminescent Flower Petals
 i(260608);	-- Bloated Animal Remains
 i(264992);	-- Blood Knight Burger
@@ -2642,19 +2659,25 @@ i(266002);	-- Broken Trap Mechanism
 i(260652);	-- Broken Wildfire Claw
 i(265664);	-- Budding Light
 i(244041);	-- Budding Seed
+i(246746);	-- Celebratory Pack of Runed Ethereal Crests
 i(265665);	-- Chanterelle Shandy
+i(250861);	-- Chieftain's Reserve
 i(260692);	-- Chunk of Mystery Meat
 i(260668);	-- Cloudy Purple Gem
+i(265059);	-- Collapsed Void Core
 i(260619);	-- Colorful Leaves
 i(260669);	-- Colorless Pebbles
 i(265097);	-- Conjured Cinnamon Roll
 i(265099);	-- Conjured Coffee
 i(265098);	-- Conjured Croissant
 i(265096);	-- Conjured Souffle
+i(265050);	-- Coral Shard
 i(263516);	-- Cosmic Ritual Bowl
+i(265047);	-- Cracked Soul Phylactery
 i(265054);	-- Cracked Tribal Mask
 i(260272);	-- Crisp Bluff Bock
 i(260640);	-- Crooked Bird Talons
+i(265052);	-- Crumbly Stone Shard
 i(260658);	-- Crystal Rock Shard
 i(238484);	-- Damp Washcloth
 i(264984);	-- Darkwell Draft
@@ -2666,6 +2689,7 @@ i(264993);	-- Delicate Dart Legs
 i(260274);	-- Denshroom Deep Roast
 i(265043);	-- Dented Voidblade Pommel
 i(260647);	-- Digested Human Hand
+i(265058);	-- Distorted Echo Fragment
 i(264989);	-- Dragonhawk Flight
 i(265049);	-- Drifting Conch Whistle
 i(260666);	-- Earthy Mushroom
@@ -2677,6 +2701,7 @@ i(260259);	-- Everspring Water
 i(263518);	-- Expensive-Looking Find
 i(260285);	-- Extract of Lightbloom
 i(260262);	-- Fairbreeze Feast
+i(264990);	-- Fairbreeze Franciacorta
 i(265669);	-- Fermented Rift Water
 i(260672);	-- Fetid Eye
 i(260674);	-- Fine Arcane Dust
@@ -2684,14 +2709,18 @@ i(260689);	-- Fine Bioluminescent Powder
 i(260683);	-- Fine Magenta Sand
 i(260638);	-- Fine Void Residue
 i(260679);	-- Fleshless Bone
+i(265056);	-- Flickering Energy Coil
 i(260642);	-- Fossilized Wildlife
 i(260694);	-- Foul Kelp
 i(260639);	-- Fractured Bone
 i(265040);	-- Fractured Void Focus
 i(265044);	-- Frayed Twilight Sash
+i(250858);	-- Genedar Synthol
 i(260257);	-- Ghostlands Pepper
+i(250871);	-- Gilnean Fog
 i(238481);	-- Glittering Garbage
 i(260690);	-- Gloomy Root
+i(246747);	-- Glorious Cluster of Gilded Ethereal Crests
 i(260646);	-- Glowing Gland
 i(254874);	-- Glowing Moth Dust
 i(260661);	-- Glowing Shrub
@@ -2701,12 +2730,16 @@ i(264981);	-- Goldengrove Juice
 i(264973);	-- Goldenmist Gouda
 i(238485);	-- Grotesque Globule
 i(260283);	-- Grotto Gulp
+i(250864);	-- Hair of the Worgen
 i(265668);	-- Har'kuai Mai Tai
+i(250862);	-- Highmountain Highball
 i(260657);	-- Holey Organ
+i(265057);	-- Hollow Binding Strand
 i(238496);	-- Hunk O' Junk
+i(266213);	-- Incense Materials
 i(251919);	-- Inscribe: Blood
-i(251920);	-- Inscribe: Rot
 i(251921);	-- Inscribe: Hunt
+i(251920);	-- Inscribe: Rot
 i(251922);	-- Inscribe: Void
 i(260688);	-- Insect Exoskeleton
 i(260604);	-- Insect Shedding
@@ -2735,20 +2768,26 @@ i(260693);	-- Mossy Lump of Dirt
 i(260275);	-- Mukleech Curry
 i(264991);	-- Murder Roe
 i(260680);	-- Nesting Materials
+i(250325);	-- Night's Embrace
+i(265062);	-- Nullflare Residue
 i(238495);	-- One Angler's Trash
 i(238480);	-- Opened Lockbox
 i(260671);	-- Oversized Gland
+i(246750);	-- Pack of Runed Ethereal Crests
 i(260268);	-- Pango and Mash
 i(260673);	-- Partially Digested Bracers
 i(260656);	-- Perforated Wing
-i(243845);	-- Petalwrap Sack
 i(243844);	-- Petalwrap Bag
+i(243845);	-- Petalwrap Sack
 i(264994);	-- Pickled Bloom Shoots
 i(250317);	-- Pile of Ash
 i(260643);	-- Pile of Feathers
+i(250866);	-- Pinn's Cup
 i(244039);	-- Pitcher Plant Vase
 i(260662);	-- Polished Purple Pebble
 i(260278);	-- Potatoad Salad
+i(246748);	-- Pouch of Weathered Ethereal Crests
+i(250860);	-- Prairie Pilsner
 i(260258);	-- Purified Cordial
 i(260295);	-- Purified Storm Water
 i(260660);	-- Putrid Mushroom Spores
@@ -2764,23 +2803,28 @@ i(260299);	-- Roasted Abyssal Eel
 i(260271);	-- Root Juice
 i(238477);	-- Rotten Meat
 i(260637);	-- Rotting Insect Eggs
+i(250857);	-- Rum-Ka
 i(244040);	-- Sack of Seeds
+i(246749);	-- Satchel of Carved Ethereal Crests
 i(260280);	-- Sauteed Fungal Tubers
+i(265048);	-- Scale Fragment
 i(238493);	-- Screaming Rock
 i(250856);	-- Screwdriver
+i(265045);	-- Sealed Blood Vial
 i(260277);	-- Sedge Crawler Gumbo
 i(260296);	-- Shadeleaf Tea
-i(260605);	-- Shattered Spear Tip
 i(260678);	-- Sharp Obsidian Chunk
 i(260684);	-- Sharp Scales
+i(260605);	-- Shattered Spear Tip
 i(238478);	-- Shimmering Seaweed
 i(260286);	-- Shrooms and Nectar
-i(263519);	-- Snake Oil
 i(238492);	-- Silent Rock
 i(247673);	-- Silvermoon Sin'gria
 i(260263);	-- Silvermoon Soiree Spread
+i(250867);	-- Silverpine Dry Gin
 i(265041);	-- Singed Ritual Parchment
 i(260665);	-- Sizable Tusk
+i(263519);	-- Snake Oil
 i(260616);	-- Soft Marine Fungi
 i(246376);	-- Solaarian Sintalia
 i(243478);	-- Spare Pamphlets
@@ -2798,10 +2842,12 @@ i(260667);	-- Tainted Organs
 i(265042);	-- Tarnished Shadow Torque
 i(260648);	-- Tattered Clothes
 i(260273);	-- Tea of Mists and Rain
+i(250859);	-- Terocone Wine
 i(260309);	-- Thrumming Plant Matter
 i(238479);	-- Torn Caster's Net
 i(265055);	-- Torn Dimensional Wrap
 i(238944);	-- Torn Material
+i(246745);	-- Triumphant Satchel of Carved Ethereal Crests
 i(260614);	-- Unrecognizable Organ
 i(260676);	-- Unremarkable Crystal
 i(260649);	-- Vibrant Vortex
@@ -2813,7 +2859,10 @@ i(260293);	-- Void Port
 i(260691);	-- Void-Tainted Pelt
 i(260297);	-- Voidfarer's Respite
 i(260294);	-- Voidwyrm Absinthe
+i(250865);	-- Warm Brown Ale
+i(265046);	-- Warped Summoning Sigil
 i(260645);	-- Water Filled Organ
+i(265061);	-- Whispering Rift Residue
 i(238491);	-- Whispering Rock
 i(264982);	-- Wine Not
 i(265666);	-- World Root Beer
@@ -2822,7 +2871,22 @@ i(260287);	-- World Roots Banquet
 ------------------
 -- PATCH 12.0.5 --
 ------------------
+i(272049);	-- Bloodied Propaganda Leaflet
+i(272109);	-- Crumpled Propaganda Page
 i(272047);	-- Deeplurk Scrying Stone
+i(272114);	-- Discarded Excavation Tool
+i(272112);	-- Golden Rune-Etched Circlet
+i(273014);	-- Howling Glass Shard
+i(272118);	-- Inert Arcane Explosive
+i(272894);	-- Inert Runestone
+i(272046);	-- Mana-Singed Divining Rod
+i(272120);	-- Mysterious Vial
+i(272052);	-- Ripped Propaganda Page
+i(272113);	-- Scourge Shard Fragment
 i(272048);	-- Shattered Containment Pearl
 i(272117);	-- Shattered Energy Weapon
+i(272892);	-- Shattered Gem
+i(272110);	-- Singed Propaganda Leaflet
+i(272051);	-- Sticky Propaganda Scroll
+i(272115);	-- Smashed Shield Emitter
 i(272116);	-- Water-Logged Transaction Scroll

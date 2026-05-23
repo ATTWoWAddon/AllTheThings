@@ -1283,6 +1283,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(JEWELCRAFTING, {
+		header(HEADERS.Spell, 31252, {	-- Prospecting
+			i(52179),	-- Alicite
+			i(52195),	-- Amberjewel
+			i(52177),	-- Carnelian
+			i(52194),	-- Demonseye
+			i(52192),	-- Dream Emerald
+			i(52193),	-- Ember Topaz
+			i(52181),	-- Hessonite
+			i(52190),	-- Inferno Ruby
+			i(52182),	-- Jasper
+			i(52180),	-- Nightstone
+			i(52191),	-- Ocean Sapphire
+			i(52178),	-- Zephyrite
+		}),
 		filter(COSMETIC, {
 			i(52487),	-- Jeweler's Amber Monocle
 			i(52485),	-- Jeweler's Ruby Monocle

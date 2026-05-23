@@ -120,7 +120,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["isWeekly"] = true,
 				["isRaid"] = true,
 				["groups"] = {
-					i(137847),	-- Design: Sorcerous Shadowruby Pendant [Rank 3]
+					i(137847),	-- Design: Sorcerous Shadowruby Pendant [Rank 3] (Recipe!)
 					i(141438),	-- Pendant of Cold Flame
 					i(141432),	-- Frostburned Sabatons
 					i(141430),	-- Mana-Tanned Sandals

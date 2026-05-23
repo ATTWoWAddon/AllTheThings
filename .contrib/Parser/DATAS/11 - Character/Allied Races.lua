@@ -63,7 +63,10 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 		["groups"] = {
 			q(51813, {	-- Blackrock Depths
 				["sourceQuests"] = { 50239 },	-- A Choice of Allies (A)
-				["provider"] = { "n", 133197 },	-- Moira Thaurissan
+				["qgs"] = {
+					126332,	-- Aysa Cloudsinger
+					133197,	-- Moira Thaurissan
+				},
 				["coord"] = { 52.0, 13.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -135,28 +138,7 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 	}),
 	header(HEADERS.Race, EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }}, {
 		n(ACHIEVEMENTS, {
-			-- TODO: Why isn't this achievement being automated? Is it because all quests already belong to other criteria of other achievements?
 			ach(40307, {	-- Allied Races: Earthen
-				crit(66993, {	-- The War Within campaign
-					["_quests"] = {
-						83503,	-- Return to Dornogal
-					},
-				}),
-				crit(68162, {	-- Mourning Rise
-					["_quests"] = {
-						82895,	-- Mourning Rise
-					},
-				}),
-				crit(67728, {	-- Broken Tools
-					["_quests"] = {
-						78564,	-- Broken Tools
-					},
-				}),
-				crit(67055, {	-- Merrix and Steelvein
-					["_quests"] = {
-						79530,	-- Merrix and Steelvein
-					},
-				}),
 				i(223572),	-- Slatestone Ramolith (MOUNT!)
 			}),
 		}),
@@ -430,7 +412,10 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 		["groups"] = {
 			q(48066, {	-- A Feast for Our Kin
 				["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
-				["provider"] = { "n", 125285 },	-- Baine Bloodhoof <High Chieftain>
+				["qgs"] = {
+					125285,	-- Baine Bloodhoof <High Chieftain>
+					133523,	-- Ji Firepaw
+				},
 				["coord"] = { 38.0, 81.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
@@ -568,7 +553,10 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 		["groups"] = {
 			q(54706, {	-- Made in Kul Tiras
 				["sourceQuests"] = { 50239 },	-- A Choice of Allies (A)
-				["provider"] = { "n", 148798 },	-- Lady Jaina Proudmoore
+				["qgs"] = {
+					126332,	-- Aysa Cloudsinger
+					148798,	-- Lady Jaina Proudmoore
+				},
 				["coord"] = { 52.3, 13.5, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -658,6 +646,12 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 				["provider"] = { "n", 150884 },	-- Chelsea Wright
 				["coord"] = { 33.1, 30.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					o(322620, {	-- Storeroom Keys
+						["coord"] = { 36.6, 28.9, DRUSTVAR },
+						["groups"] = { i(167168) },	-- Storehouse Key (QI!)
+					}),
+				},
 			}),
 			q(55136, {	-- Her Dog Days Are Over
 				["sourceQuests"] = { 54732 },	-- Drop It!
@@ -665,10 +659,19 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 				["coord"] = { 36.5, 28.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(167174),	-- Gnawed Bone (QI!)
-					i(167173),	-- Squeaky Toy (QI!)
+					o(322638, {	-- Gnawed Bone
+						["coord"] = { 35.3, 29.0, DRUSTVAR },
+						["groups"] = { i(167174) },	-- Gnawed Bone (QI!)
+					}),
+					o(322637, {	-- Squeaky Toy
+						["coord"] = { 34.6, 30.6, DRUSTVAR },
+						["groups"] = { i(167173) },	-- Squeaky Toy (QI!)
+					}),
+					o(322636, {	-- Worn Collar
+						["coord"] = { 36.0, 30.9, DRUSTVAR },
+						["groups"] = { i(167172) },	-- Worn Collar (QI!)
+					}),
 					i(167168),	-- Storehouse Key (QI!)
-					i(167172),	-- Worn Collar (QI!)
 				},
 			}),
 			q(54733, {	-- Make it Wright
@@ -811,7 +814,10 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 		["groups"] = {
 			q(53466, {	-- Vision of Time
 				["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
-				["provider"] = { "n", 126066 },	-- Eitrigg
+				["qgs"] = {
+					126066,	-- Eitrigg
+					133523,	-- Ji Firepaw
+				},
 				["coord"] = { 37.8, 80.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
@@ -824,7 +830,10 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 			q(53354, {	-- Echo of Gul'dan
 				["sourceQuests"] = { 53467 },	-- Caverns of Time
 				["provider"] = { "n", 15192 },	-- Anachronos
-				["coord"] = { 63.0, 57.2, TANARIS },
+				["coords"] = {
+					{ 41.7, 49.4, CAVERNS_OF_TIME },
+					{ 63.0, 57.2, TANARIS },
+				},
 				["races"] = HORDE_ONLY,
 			}),
 			q(53353, {	-- Echo of Warlord Zaela
@@ -1063,7 +1072,7 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 			}),
 			-- Nightborne Starter Quests
 			q(49933, {	-- For the Horde
-				["provider"] = { "n", 143845 },	-- First Arcanist Thalyssra
+				["provider"] = { "n", 131326 },	-- First Arcanist Thalyssra
 				["coord"] = { 59.4, 85.4, SURAMAR },
 				["races"] = { NIGHTBORNE },
 				["lvl"] = 20,
@@ -1174,7 +1183,7 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 			}),
 			q(53893, {	-- A Little Goodwill
 				["sourceQuests"] = { 53892 },	-- Where Are the Workers?
-				["provider"] = { "n", 145416 },	-- Kiro
+				["provider"] = { "n", 163488 },	-- Kiro
 				["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -1207,7 +1216,7 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 					53895,	-- Peon Promotions!
 					53894,	-- Worthwhile Repairs
 				},
-				["provider"] = { "n", 145416 },	-- Kiro
+				["provider"] = { "n", 145641 },	-- Kiro
 				["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1225,7 +1234,7 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 			}),
 			q(53899, {	-- On the Outskirts
 				["sourceQuests"] = { 54026 },	-- Job's Done
-				["provider"] = { "n", 145416 },	-- Kiro
+				["provider"] = { "n", 163489 },	-- Kiro
 				["coord"] = { 49.0, 73.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
@@ -1273,7 +1282,7 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 			}),
 			q(53903, {	-- Meet with Meerah
 				["sourceQuests"] = { 54027 },	-- Threat Contained
-				["provider"] = { "n", 145416 },	-- Kiro
+				["provider"] = { "n", 146261 },	-- Kiro
 				["coord"] = { 49.0, 73.6, ORGRIMMAR },
 			}),
 			q(53904, {	-- The Vintner's Assistants

@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			})),
 			ach(61864),	-- Sojourner of Voidstorm
 			ach(62385, {	-- Staring Into The Void
-				i(260697),	-- Lab-grown Stormray (MOUNT!)
+				i(260697),	-- Lab-Grown Stormray (MOUNT!)
 			}),
 			ach(62130, {	-- The Ultimate Predator
 				i(264493),	-- Opened Domanaar Storage Crate (DECOR!)

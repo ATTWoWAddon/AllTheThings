@@ -22,7 +22,7 @@ LOREWALKING = createHeader({
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 	n(LOREWALKING, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
-		["cr"] = 230246,	-- Lorewalker Cho
+		["cr"] = 230246,	-- Lorewalker Cho	// As of 12.0.7, this ID belongs to Li Li Stormstout
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(42188, {	-- Lorewalking: Blade's Bane
@@ -43,6 +43,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["timeline"] = { ADDED_11_2_7 },
 					}),
 				}),
+				ach(61442, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- Lorewalking: The Loa
+					--["groups"] = { i(271971) },	-- Tome of Kings (DECOR!)	// Decor 21857
+				})),
 			}),
 			n(REWARDS, {
 				i(242386,{	-- Lorewalker's Crate of Memorabilia
@@ -54,7 +57,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					["isBreadcrumb"] = true,	-- speculation
 					-- auto-pop at login @ 80s character
 				}),
-				-- Only quests that throw reports and not repeated (already sorted) quest in chain
+				-- As of commit 5c4a754fb418c49d4a0eae26641bafe0fdcc8f17 we should no longer see contrib reports about Inaccurate Quest Data while Lorewalking
 				header(HEADERS.Achievement, 42188, {	-- Lorewalking: Blade's Bane
 					q(84371, {	-- Lorewalking: The Blade and the High Priest
 						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
@@ -171,7 +174,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					}),
 				}),
 				header(HEADERS.Achievement, 61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
-					-- Exo Note: Reuses parts of the "Blood Elf Heritage" and Allied Race "Nightborne" and "Void Elves" quests, that throw contrib errors because of the wrong sourceQuests
 					q(85252, {	-- Lorewalking: Children of the Blood
 						["provider"] = { "n", 230246 },	-- Lorewalker Cho
 						["coords"] = {
@@ -235,6 +237,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["isRepeatable"] = true,
 					}),
 				}),
+				header(HEADERS.Achievement, 61442, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- Lorewalking: The Loa
+					q(92826, {	-- Lorewalking: The Loa of Kings
+						["qg"] = 253727,	-- Li Li Stormstout
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+						},
+						["isRepeatable"] = true,
+					}),
+					q(92829, {	-- Lorewalking: Death of the Drakkari Loa
+						["qg"] = 253727,	-- Li Li Stormstout
+						["coord"] = { 42.7, 37.7, ZULDAZAR },
+						["isRepeatable"] = true,
+					}),
+					q(92831, {	-- Lorewalking: The Blood Loa
+						["qg"] = 253727,	-- Li Li Stormstout
+						["coord"] = { 60.2, 57.7, ZULDRAK },
+						["isRepeatable"] = true,
+					}),
+					q(92832, {	-- Lorewalking: The Hash'ey
+						["qg"] = 253727,	-- Li Li Stormstout
+						["maps"] = { 1679 },	-- Zul'Gurub, De Other Side
+						["isRepeatable"] = true,
+						["groups"] = { i(275346) },	-- Lorewalker's Notes: The Loa
+					}),
+				})),
 				header(HEADERS.Quest, 93929, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- The War Within Recap
 					q(93929, {	-- The War Within Recap
 						["lvl"] = 71,
@@ -309,5 +339,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(91025),	-- After completing Lorewalking: Blade's Bane
 		q(91027),	-- After completing Lorewalking: The Lich King
 		q(91028),	-- After completing Lorewalking: Ethereal Wisdom
+	}),
+})));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
+	n(LOREWALKING, {
+		q(96552),	-- Triggered during Lorewalking: The Loa, after the cinematic where Rezan was turned into an undead
+		q(96556),	-- Triggered during Lorewalking: The Loa, after accepting 'My Prophet, My Enemy' (12646)
 	}),
 })));

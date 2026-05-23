@@ -2742,7 +2742,8 @@ r(1224208,{learnedAt=515,requireSkill=197}),
 r(1224214,{learnedAt=520,requireSkill=197}),
 r(1224210,{learnedAt=505,requireSkill=197}),
 r(1224216,{learnedAt=525,requireSkill=197}),
-r(1224212,{learnedAt=515,requireSkill=197})}})})})})}),
+r(1224212,{learnedAt=515,requireSkill=197})}})})})}),
+flt(57)}),
 flt(104,{
 x(1,{
 h(-232,{

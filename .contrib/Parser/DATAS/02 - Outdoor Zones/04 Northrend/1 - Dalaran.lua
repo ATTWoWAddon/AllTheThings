@@ -3935,6 +3935,7 @@ root(ROOTS.Zones, {
 									-- #endif
 								},
 							}),
+							i(224270, {["timeline"] = { ADDED_10_2_7 }}),	-- Certificate of Ownership (RECIPE!)
 						},
 					}),
 					n(32420, {	-- Mimbihi <Barmaid>

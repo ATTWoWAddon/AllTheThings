@@ -419,7 +419,7 @@ do
 
 	-- Criteria field values which will use the value of the respective Achievement instead
 	local UseParentAchievementValueKeys = {
-		"c", "classID", "races", "r", "u", "e", "sr", "pb", "pvp", "requireSkill", "icon"
+		"c", "classID", "races", "r", "u", "e", "sr", "pb", "pvp", "requireSkill"
 	}
 	local function GetParentAchievementInfo(t, key, _t)
 		-- if the Achievement data was already cached, but the criteria is still getting here
@@ -432,6 +432,7 @@ do
 			for _,key in ipairs(UseParentAchievementValueKeys) do
 				_t[key] = achievement[key]
 			end
+			_t.deficon = achievement.icon
 			t._cached = true;
 			return rawget(_t, key);
 		end
@@ -505,6 +506,9 @@ do
 		name = function(t)
 			return cache.GetCachedField(t, "name", default_name) or t.__questname
 		end,
+		icon = function(t)
+			return cache.GetCachedField(t, "icon", app.GetIconFromProviders) or cache.GetCachedField(t, "deficon")
+		end,
 		link = function(t)
 			if t.itemID then
 				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
@@ -531,8 +535,10 @@ do
 	};
 	-- apply parent Achievement field re-mappings
 	for _,key in ipairs(UseParentAchievementValueKeys) do
-		criteriaFields[key] = function(t)
-			return cache.GetCachedField(t, key, GetParentAchievementInfo)
+		if not criteriaFields[key] then
+			criteriaFields[key] = function(t)
+				return cache.GetCachedField(t, key, GetParentAchievementInfo)
+			end
 		end
 	end
 	app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteriaID", criteriaFields)

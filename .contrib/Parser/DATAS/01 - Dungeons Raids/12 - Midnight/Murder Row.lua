@@ -104,6 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 						}),
 					}),
 					n(236078, {	-- Feranin <Exotic Goods>
+						i(260311),	-- Empty Felwyrm Core
 						i(237766, {	-- Felwyrm Egg
 							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
 						}),

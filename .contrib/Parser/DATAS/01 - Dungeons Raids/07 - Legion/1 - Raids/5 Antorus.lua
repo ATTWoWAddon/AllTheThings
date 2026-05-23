@@ -426,10 +426,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				BossOnly(WORLDBREAKER),
 				BossOnly(FELHOUNDS, {
 					i(152816),	-- Antoran Charhound (MOUNT!)
-					i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
-					i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
-					i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
-					i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
+					i(151726),	-- Design: Empyrial Cosmic Crown [Rank 3] (RECIPE!)
+					i(151729),	-- Design: Empyrial Deep Crown [Rank 3] (RECIPE!)
+					i(151732),	-- Design: Empyrial Elemental Crown [Rank 3] (RECIPE!)
+					i(151735),	-- Design: Empyrial Titan Crown [Rank 3] (RECIPE!)
 					i(208051, {	-- Grimoire of the Antoran Felhunter (CI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),

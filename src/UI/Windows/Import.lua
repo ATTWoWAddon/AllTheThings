@@ -27,7 +27,7 @@ app:CreateWindow("Import", {
 
 		local function ParseIDs(str)
 			local ids = {}
-			for id in str:gmatch("%d+") do
+			for id in str:gmatch("%d+%.?%d*") do
 				id = tonumber(id)
 				if id then
 					ids[#ids + 1] = id
@@ -96,7 +96,7 @@ app:CreateWindow("Import", {
 			{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
 			{ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") },
 			{ id = "illusionID", name = L.FILTER_ID_TYPES[103], icon = app.asset("Category_Illusions") },
-			{ id = "itemID", name = ITEMS, icon = 135276 },
+			{ id = "modItemID", name = ITEMS, icon = 135276 },
 			{ id = "questID", name = TRACKER_HEADER_QUESTS, icon = app.asset("Interface_Quest_header") },
 			{ id = "spellID", name = SPELLS, icon = 135736 },
 			{ id = "titleID", name = PAPERDOLL_SIDEBAR_TITLES, icon = app.asset("Category_Titles") },

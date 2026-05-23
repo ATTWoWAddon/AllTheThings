@@ -1723,6 +1723,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 	})),
 	n(FACTIONS, {
 		faction(2640),	-- Brann Bronzebeard
+		faction(2644, {["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }}),	-- Delves: Season 1
+		faction(2683, {["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Delves: Season 2
+		faction(2722, {["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH }}),	-- Delves: Season 3
 	}),
 	n(HIDDEN_QUESTS, {
 		-- Brann Bronzebeard leveling quest

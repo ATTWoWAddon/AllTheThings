@@ -21,18 +21,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			ach(61183),	-- Challenger I: Midnight Season 1
 			ach(61184),	-- Challenger II: Midnight Season 1
 			ach(61187, {	-- Duelist: Midnight Season 1
-				i(264164, {	-- Galactic Gladiator's Tabard
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(260441, {	-- Galactic Gladiator's Tabard
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			ach(61197, {	-- Elite: Midnight Season 1
 				i(264010, {	-- Galactic Gladiator's Prestigious Cloak
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(260443, {	-- Galactic Gladiator's Prestigious Cloak
+					["races"] = HORDE_ONLY,
+				}),
+			}),
+			ach(61197, {	-- Elite: Midnight Season 1
+				i(264164, {	-- Galactic Gladiator's Tabard
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(260441, {	-- Galactic Gladiator's Tabard
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -947,6 +947,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			i(257194, {	-- Artisan's Consortium Flyer (QS!/QI!)
 				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				["description"] = "Rewarded within the first few wins in queued PvP Content.",
+			}),
+			i(271341, { 	-- Galactic Voidsliver
+				["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
+				["groups"] = { i(271342) },	-- Galactic Void Matrix
 			}),
 		}),
 	}),

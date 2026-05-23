@@ -2405,7 +2405,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 34.8, 36.3, BURNING_STEPPES },
 						{ 36.0, 36.6, BURNING_STEPPES },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_0_5 },
 					["crs"] = {
 						7025,	-- Blackrock Soldier
 						-- #if AFTER 10.0.5
@@ -2421,7 +2421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 34.8, 36.3, BURNING_STEPPES },
 						{ 36.0, 36.6, BURNING_STEPPES },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_0_5 },
 					["crs"] = {
 						-- #if AFTER 10.0.5
 						7025,	-- Blackrock Soldier
@@ -2438,7 +2438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 34.8, 36.3, BURNING_STEPPES },
 						{ 36.0, 36.6, BURNING_STEPPES },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
 					["crs"] = {
 						-- #if AFTER 10.0.5
 						7025,	-- Blackrock Soldier

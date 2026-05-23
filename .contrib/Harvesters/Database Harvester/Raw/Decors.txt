@@ -3074,6 +3074,18 @@
 12.0.1.66263
 16691@@@Farstriders' Pride Statue
 17294@@@Farstriders' Glory Statue
+12.0.1.66527
+12244@@@Paw Pal Water Dish
+12245@@@Paw Pal Bed and Blanket
+12246@@@Paw Pal Bed
+12264@@@Paw Pal Dog House Frame
+12265@@@Paw Pal Dog House Elwynn Roof
+15547@@@Paw Pal Dog House Durotar Roof
+15548@@@Paw Pal Dog House Eversong Roof
+15549@@@Paw Pal Dog House Shadowglen Roof
+12.0.1.66666
+2299@@@Grand Aethercharged Crystal
+8877@@@Sumptuous Berry Pie
 12.0.5.66330
 9630@@@Open Sturdy Wooden Crate
 12169@@@Reinforced Wooden Barrel
@@ -3416,3 +3428,44 @@
 22182@@@Runic Parchment
 22183@@@Void Flame Candle
 22388@@@Void Inkwell
+12.0.5.66529
+15293@@@Small Sturdy Wooden Trellis
+12.0.5.66591
+18614@@@Ornate Elven Stove
+12.0.5.67114
+16974@@@Spring Blossom Stepping Stone
+16975@@@Spring Blossom Privacy Screen
+16976@@@Spring Blossom Stepping Stone Duo
+16977@@@Spring Blossom Stepping Stone Trio
+16978@@@Spring Blossom Stepping Stone Collection
+17747@@@Spring Blossom Tea Set
+17748@@@Spring Blossom Table
+17792@@@Lush Garden Hedge
+17794@@@Lush Garden Fungal Picnic
+17795@@@Spring Blossom Lantern
+17796@@@Spring Blossom Tranquility Garden
+18794@@@Lush Garden Stable
+19848@@@Lush Garden Rug
+12.0.7.67227
+1283@@@Left-Bound Silvermoon Drapes
+1284@@@Right-Bound Silvermoon Drapes
+1451@@@Tied-Left Leather Curtains
+2606@@@Luminous Rotshroom
+5129@@@Large Amani Tiki Mask
+16098@@@Auspicious Curio Display
+16099@@@Auspicious Inkmaster's Desk
+16100@@@Auspicious Tree of Fortune
+16101@@@Auspicious Golden Carp Lantern
+16102@@@Auspicious Imperial Lion
+16314@@@Deactivated Consortium Translocation Portal
+17750@@@Auspicious Wooden Chair
+18897@@@Banner of Five Dawns
+19011@@@[DNT] [AUTOGEN] 12PH_Leg_7SR_SteppingStone_B01.M2 - duplicate do not use
+20679@@@Bartender Bob's "No Weapons Allowed" Rack
+21060@@@Auspicious Picnic Basket
+21061@@@Auspicious Meal Case
+21857@@@Tome of Kings
+21945@@@Auspicious Verdant Basin
+21946@@@Auspicious Stone Lion
+21950@@@[DNT] [AUTOGEN] 12PH_Folk_Rug04.M2
+25307@@@Sunstrider Omnium

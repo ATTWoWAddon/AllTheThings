@@ -5,6 +5,22 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(DRUSTVAR, {
 		n(VENDORS, {
+			n(136655, {	-- Alisha Darkwater
+				["coord"] = { 26.7, 72.5, DRUSTVAR },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(163110),	-- Fried Boar Sausage
+				},
+			}),
+			n(128467, {	-- Elijah Eggleton <Sausages>
+				["coord"] = { 55.6, 34.8, DRUSTVAR },
+				["groups"] = {
+					i(155812),	-- Goldshire Farms Smoked Sausage
+					i(155811),	-- Roland's Famous Frankfurter
+					i(155813),	-- Rosco Fryer's Mostly-Meat Brat
+					i(155814),	-- Timmy Gene Sunrise Pork
+				},
+			}),
 			n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 				["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
 				["coord"] = { 52.2, 31.6, DRUSTVAR },

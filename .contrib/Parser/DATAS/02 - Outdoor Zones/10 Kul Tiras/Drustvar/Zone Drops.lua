@@ -9,6 +9,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 38.4, 36.6, DRUSTVAR },
 				["cr"] = 135541,	-- Bilgewater Incinerator
 			}),
+			n(137468, {	-- Gorging Raven
+				["description"] = "Coords represent relative bounds of the area.",
+				["coords"] = {
+					{ 25.8, 19.8, DRUSTVAR },
+					{ 24.2, 30.4, DRUSTVAR },
+					{ 26.6, 29.2, DRUSTVAR },
+					{ 30.0, 22.6, DRUSTVAR },
+					{ 30.2, 29.0, DRUSTVAR },
+				},
+				["groups"] = {
+					i(163710),	-- Merchant's Key
+				},
+			}),
 			i(168126, {	-- Grasping Wicker Arm
 				["requireSkill"] = ENCHANTING,
 				["crs"] = {

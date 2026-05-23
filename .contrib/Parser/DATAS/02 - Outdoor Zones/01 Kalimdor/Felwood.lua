@@ -170,7 +170,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28218, {	-- A Destiny of Flame and Sorrow
 					["sourceQuest"] = 28217,	-- Wanted: The Demon Hunter
 					["qg"] = 47923,	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, FELWOOD },
+					["coords"] = {
+						{ 45.5, 20.1, FELWOOD },
+						{ 49.0, 24.0, KALIMDOR },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5242, {	-- A Final Blow
@@ -888,7 +891,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28261, {	-- Deceivers In Our Midst
 					["sourceQuest"] = 28257,	-- The Fall of Tichondrius
 					["qg"] = 47923,	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, FELWOOD },
+					["coords"] = {
+						{ 45.5, 20.1, FELWOOD },
+						{ 49.0, 24.0, KALIMDOR },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/12 Jadefire Shifter slain
@@ -933,7 +939,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28126, {	-- Dousing the Flames of Protection
 					["sourceQuest"] = 28119,	-- Purity from Corruption
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coord"] = { 36.3, 58.2, FELWOOD },
+					["coords"] = {
+						{ 36.3, 58.2, FELWOOD },
+						{ 47.5, 30.3, KALIMDOR },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Extinguish the Brazier of Pain
@@ -1546,7 +1555,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28119, {	-- Purity From Corruption
 					["sourceQuest"] = 28116,	-- Crying Violet
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coord"] = { 36.3, 58.2, FELWOOD },
+					["coords"] = {
+						{ 36.3, 58.2, FELWOOD },
+						{ 47.5, 30.3, KALIMDOR },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(12907),	-- Corrupt Moonwell Water (QI!)
@@ -2179,7 +2191,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28129, {	-- The Demon Prince
 					["sourceQuest"] = 28119,	-- Purity from Corruption
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coord"] = { 36.3, 58.2, FELWOOD },
+					["coords"] = {
+						{ 36.3, 58.2, FELWOOD },
+						{ 47.5, 30.3, KALIMDOR },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Prince Xavalis slain
@@ -2201,7 +2216,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28257, {	-- The Fall of Tichondrius
 					["sourceQuest"] = 28256,	-- The Skull of Gul'dan
 					["qg"] = 47923,	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, FELWOOD },
+					["coords"] = {
+						{ 45.5, 20.1, FELWOOD },
+						{ 49.0, 24.0, KALIMDOR },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(65284, {	-- Imposter's Mask
@@ -2229,7 +2247,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28128, {	-- The Inner Circle
 					["sourceQuest"] = 28119,	-- Purity From Corruption
 					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coord"] = { 36.3, 58.2, FELWOOD },
+					["coords"] = {
+						{ 36.3, 58.2, FELWOOD },
+						{ 47.5, 30.3, KALIMDOR },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/12 Shadow Hold Defenders Slain
@@ -2337,7 +2358,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28256, {	-- The Skull of Gul'dan
 					["sourceQuest"] = 28218,	-- A Destiny of Flame and Shadow
 					["qg"] = 47923,	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, FELWOOD },
+					["coords"] = {
+						{ 45.5, 20.1, FELWOOD },
+						{ 49.0, 24.0, KALIMDOR },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28190, {	-- The Tainted Ooze
@@ -3112,7 +3136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 38.6, 69.6, FELWOOD },
 						{ 33.8, 66.6, FELWOOD },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 7106,	-- Jadefire Rogue
 				}),
 			}),

@@ -188,7 +188,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["creatureID"] = 95676,	-- Odyn
 					["groups"] = {
 						ach(10788),	-- Heroic: Halls of Valor
-						i(137857),	-- Design: Raging Furystone Gorget (Rank 3)
+						i(137857),	-- Design: Raging Furystone Gorget [Rank 3] (RECIPE!)
 						i(127933),	-- Recipe: Flask of Ten Thousand Scars [Rank 2] (RECIPE!)
 					},
 				}),

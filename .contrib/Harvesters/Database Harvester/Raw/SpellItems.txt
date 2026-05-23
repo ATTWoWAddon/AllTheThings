@@ -4993,6 +4993,46 @@
 8643@@@+10 Dodge Rating
 8645@@@+6 to All Stats
 8647@@@+12 Spell Power
+3.80.1.66860
+2584@@@+$k1 Stamina/+$k2 Defense Rating
+2589@@@+$k1 Spell Power/+$k2 Critical Strike Rating
+2590@@@+$k1 Spell Power/+$k2 Mana every 5 seconds
+2605@@@+$k1 Spell Power and +$k2 Critical Strike Rating
+2629@@@Yojamba Mana Oil
+2672@@@+80 Spell Power
+2724@@@Scope (+50 Critical Strike Rating)
+2998@@@+60 All Resistances and +15 Stamina
+3262@@@+30 Stamina
+3754@@@+$k1 Attack Power/+$k2 Critical Strike Rating
+8652@@@+$k1 Spell Power/+$k2 Critical Strike Rating/+$k3 Hit Rating
+8653@@@+$k1 Spell Power/+$k2 Stamina/+$k3 Hit Rating
+8654@@@+$k1 Spell Power/+$k2 Stamina
+8655@@@+$k1 Attack Power/+$k2 Critical Strike Rating/+$k3 Hit Rating
+8656@@@+$k1 Spell Power/+$k2 Spirit/+$k3 Mana every 5 seconds
+8657@@@+$k1 Stamina/+$k2 Defense Rating/+$k3 Block Rating
+8658@@@+$k1 Stamina/+$k2 Defense Rating/+$k3 Hit Rating
+8659@@@+$k1 Attack Power/+$k2 Critical Strike Rating
+8660@@@+$k1 Attack Power/+$k2 Critical Strike Rating/+$k3 Hit Rating
+8661@@@+$k1 Spell Power/+$k2 Spirit
+8662@@@+$k1 Spell Power/+$k2 Spirit/+$k3 Mana every 5 seconds
+8663@@@+$k1 Stamina/+$k2 Agility
+8664@@@+$k1 Stamina/+$k2 Agility/+$k3 Hit Rating
+8665@@@+$k1 Spell Power and +$k2 Critical Strike Rating
+8666@@@+$k1 Spell Power and +$k2 Mana per 5 sec
+8667@@@+$k1 Spell Power and +$k2 Mana per 5 sec
+8668@@@+$k1 Attack Power and +$k2 Critical Strike Rating
+8669@@@+$k1 Attack Power and +$k2 Critical Strike Rating
+8670@@@+$k1 Dodge Rating and +$k2 Defense Rating
+8671@@@+$k1 Dodge Rating and +$k2 Defense Rating
+8672@@@Yojamba Wizard Oil
+8673@@@+50 Strength
+8676@@@+20 Strength
+8677@@@+20 Agility
+8678@@@+23 Spell Power
+8680@@@+35 Agility
+8681@@@+70 Agility
+8682@@@+14 Hit Rating and +14 Critical Strike Rating
+8683@@@+103 Spell Power
 4.0.1.12911
 2@@@Frostbrand
 5@@@Flametongue
@@ -13177,3 +13217,5 @@
 7976@@@Enchant Tool - Amani Resourcefulness |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
 7977@@@Enchant Tool - Amani Resourcefulness |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
 8674@@@Internal Testing Visual Enchant
+12.0.7.67227
+8679@@@12.0.7  FX Testing - Enchant Visual - Midsummer Fire

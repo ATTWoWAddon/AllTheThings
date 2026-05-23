@@ -16,8 +16,8 @@ local PlayerHasToy
 local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
 
 -- App locals
-local GetRawField, GetRelativeByFunc, SearchForObject, IsComplete
-	= app.GetRawField, app.GetRelativeByFunc, app.SearchForObject, app.IsComplete
+local GetRawField, GetRelativeByFunc, GetRelativeRawWithField, SearchForObject, IsComplete
+	= app.GetRawField, app.GetRelativeByFunc, app.GetRelativeRawWithField, app.SearchForObject, app.IsComplete
 local OneTimeQuests = app.EmptyTable
 local GetItemCount = app.WOWAPI.GetItemCount
 local IsSpellKnownHelper, CreateObject, FillGroups
@@ -25,8 +25,9 @@ local IsSpellKnownHelper, CreateObject, FillGroups
 -- Module locals
 local RecursiveGroupRequirementsFilter, RecursiveAccountFilter, DGU, UpdateRunner, ExtraFilters
 -- If a Thing which has a cost is not a quest or is available as a quest
+-- Also exclude anything marked with _nosearch in its parent chain.
 local function IsAvailable(ref)
-	return not ref.questID or app.IsQuestAvailable(ref)
+	return not GetRelativeRawWithField(ref, "_nosearch") and (not ref.questID or app.IsQuestAvailable(ref))
 end
 local CostLinkedFillOptions = {Fillers={}}
 

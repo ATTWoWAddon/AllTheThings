@@ -76,6 +76,19 @@ local function RefreshSkills()
 end
 app.AddEventHandler("OnRefreshCollections", RefreshSkills);
 
+-- Local variables that change per game flavor (Thanks, Blizzard.)
+local xOffSet, topYOffset, bottomYOffset = -37, -11, 72;	-- Original values...?
+if app.GameBuildVersion < 20000 then
+	-- Classic Era
+	xOffSet, topYOffset, bottomYOffset = -24, -7, 52;
+elseif app.GameBuildVersion < 50000 then
+	-- TBC / Wrath / Cata
+	xOffSet, topYOffset, bottomYOffset = -37, -11, 72;
+else
+	-- MOP
+	xOffSet, topYOffset, bottomYOffset = -50, -18, 106;
+end
+
 -- Implementation
 app:CreateWindow("Tradeskills", {
 	Commands = { "attskills" },
@@ -408,20 +421,22 @@ app:CreateWindow("Tradeskills", {
 				self:SetPoint("BOTTOMLEFT", SkilletFrame, "BOTTOMRIGHT", 0, 0);
 				self:SetMovable(false);
 				return true;
-			elseif CraftFrame and CraftFrame:IsVisible() then
-				-- Default Alignment on the Craft UI.
-				self:ClearAllPoints();
-				self:SetPoint("TOPLEFT", CraftFrame, "TOPRIGHT", -37, -11);
-				self:SetPoint("BOTTOMLEFT", CraftFrame, "BOTTOMRIGHT", -37, 72);
-				self:SetMovable(false);
-				return true;
-			elseif TradeSkillFrame and TradeSkillFrame:IsVisible() then
-				-- Default Alignment on the TradeSkill UI.
-				self:ClearAllPoints();
-				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", -37, -11);
-				self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", -37, 72);
-				self:SetMovable(false);
-				return true;
+			else
+				local frame;
+				if CraftFrame and CraftFrame:IsVisible() then
+					-- Default Alignment on the Craft UI.
+					frame = CraftFrame;
+				elseif TradeSkillFrame and TradeSkillFrame:IsVisible() then
+					-- Default Alignment on the TradeSkill UI.
+					frame = TradeSkillFrame;
+				end
+				if frame then
+					self:ClearAllPoints();
+					self:SetPoint("TOPLEFT", frame, "TOPRIGHT", xOffSet, topYOffset);
+					self:SetPoint("BOTTOMLEFT", frame, "BOTTOMRIGHT", xOffSet, bottomYOffset);
+					self:SetMovable(false);
+					return true;
+				end
 			end
 		end
 		self.UpdateFrameVisibility = function(self)

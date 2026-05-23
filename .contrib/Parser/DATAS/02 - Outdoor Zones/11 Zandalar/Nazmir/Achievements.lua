@@ -162,38 +162,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			pvp(ach(12574)),	-- Tour of Duty: Nazmir
-			ach(12771, {	-- Treasures of Nazmir
-				crit(40857, {		-- Lucky Horace's Lucky Chest
-					["_quests"] = { 49867 },
-				}),
-				crit(40858, {		-- Partially-Digested Treasure
-					["_quests"] = { 50061 },
-				}),
-				crit(40859, {		-- Cursed Nazmani Chest
-					["_quests"] = { 49979 },
-				}),
-				crit(40860, {		-- Cleverly Disguised Chest
-					["_quests"] = { 49885 },
-				}),
-				crit(40861, {		-- Lost Nazmani Treasure
-					["_quests"] = { 49891 },
-				}),
-				crit(40862, {		-- Offering to Bwonsamdi
-					["_quests"] = { 49484 },
-				}),
-				crit(40863, {		-- Shipwrecked Chest
-					["_quests"] = { 49483 },
-				}),
-				crit(40864, {		-- Venomous Seal
-					["_quests"] = { 49889 },
-				}),
-				crit(40865, {		-- Swallowed Naga Chest
-					["_quests"] = { 50045 },
-				}),
-				crit(40866, {		-- Wunja's Trove
-					["_quests"] = { 49313 },
-				}),
-			}),
+			ach(12771),	-- Treasures of Nazmir
 		}),
 	}),
 })));

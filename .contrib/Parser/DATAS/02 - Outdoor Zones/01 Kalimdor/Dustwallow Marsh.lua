@@ -3954,7 +3954,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 65.4, 44.4, DUSTWALLOW_MARSH },
 					},
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						-- #if AFTER 10.1.7
 						44390,	-- Spiny Rock Crab

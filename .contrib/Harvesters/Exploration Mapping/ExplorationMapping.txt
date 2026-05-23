@@ -5,8 +5,8 @@ Areas can also be sorted numerically.
 Generated as:
 [Expansion] [Instance type] [Map/Parent ID - Map/Parent Name] exploration(Exploration ID)	-- Exploration Name
 
-Build: 12.0.1.66263
-Maps: 1187, Children: 8661, Total explorations: 9848
+Build: 12.0.5.67314
+Maps: 1191, Children: 8689, Total explorations: 9880
 
 [Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(1),	-- Dun Morogh
 [Vanilla] [Outdoor] [Parent 1 - Dun Morogh] exploration(131),	-- Kharanos
@@ -5164,7 +5164,7 @@ Maps: 1187, Children: 8661, Total explorations: 9848
 [WoD] [Scenario] [Parent 6851 - Grommar] exploration(6971),	-- Shadowmoon Grotto
 [WoD] [Scenario] [Parent 6851 - Grommar] exploration(6972),	-- Grommar Hold
 [WoD] [Scenario] [Parent 6851 - Grommar] exploration(6973),	-- Grommar Docks
-[Legion] [Arena] [Map 1170 - Shado-Pan Showdown] map_exploration(8624),	-- Shado-Pan Showdown
+[Legion] [Battleground] [Map 1170 - Shado-Pan Showdown] map_exploration(8624),	-- Shado-Pan Showdown
 [N/A] [N/A] [N/A - N/A] exploration(7691),	-- Small Battleground D
 [WoD] [Dungeon] [Map 1175 - Bloodmaul Slag Mines] map_exploration(6874),	-- Bloodmaul Slag Mines
 [WoD] [Dungeon] [Map 1176 - Shadowmoon Burial Grounds] map_exploration(6932),	-- Shadowmoon Burial Grounds
@@ -9751,6 +9751,33 @@ Maps: 1187, Children: 8661, Total explorations: 9848
 [N/A] [N/A] [N/A - N/A] exploration(16309),	-- Castle Nathria
 [MID] [Dungeon] [Map 2874 - Maisara Caverns] map_exploration(16395),	-- Maisara Caverns
 [MID] [Dungeon] [Parent 16395 - Maisara Caverns] exploration(16664),	-- Wailing Depths
+[MID] [Scenario] [Map 2907 - 12.0 - Silvermoon City - Campaign Finale Scenario] map_exploration(16310),	-- Isle of Quel'Danas
+[MID] [Scenario] [Map 2907 - 12.0 - Silvermoon City - Campaign Finale Scenario] map_exploration(16311),	-- Silvermoon City
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16313),	-- Court of Blood
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16314),	-- Court of the Sun
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16315),	-- Falconwing Square
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16316),	-- Dawning Lane
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16317),	-- The Royal Exchange
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16318),	-- The Shining Span
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16319),	-- Murder Row
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16320),	-- Walk of Elders
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16321),	-- Silvermoon Harbor
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16322),	-- Sunwing Rookery
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16323),	-- Gardens of Remembrance
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16324),	-- The Bazaar
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16325),	-- Duskglow Gloriette
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16326),	-- Augurs' Terrace
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16327),	-- Lithiel's Landing
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16328),	-- Magister Academy
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16329),	-- North Sanctum
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16330),	-- Path of Dawn
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16331),	-- Sunstrider Isle
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16332),	-- The Great Sea
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16415),	-- Salabria
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16416),	-- The Starchaser
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16417),	-- The Crimson Treader
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16578),	-- Sanctum of Light
+[MID] [Scenario] [Map 2907 - 12.0 - Silvermoon City - Campaign Finale Scenario] map_exploration(16312),	-- Eversong Woods
 [N/A] [N/A] [N/A - N/A] exploration(16381),	-- [DNT]
 [N/A] [N/A] [N/A - N/A] exploration(16387),	-- [DNT]
 [N/A] [N/A] [N/A - N/A] exploration(16391),	-- [DNT]
@@ -9849,5 +9876,15 @@ Maps: 1187, Children: 8661, Total explorations: 9848
 [MID] [Scenario] [Map 2966 - Torment's Rise] map_exploration(16596),	-- Torment's Rise
 [MID] [Scenario] [Map 2979 - Shadowguard Point] map_exploration(16549),	-- Shadowguard Point
 [MID] [Scenario] [Map 3003 - The Darkway] map_exploration(16642),	-- The Darkway
-[MID] [Outdoor] [Map 3026 - 12.0 Warband - Founders Point] map_exploration(16874),	-- Founders Point Camp
+[Vanilla] [Scenario] [Map 3009 - 12.0.5 - Prop Hunt - Silvermoon] map_exploration(16686),	-- Silvermoon City
+[MID] [Scenario] [Map 3014 - Broken Throne] map_exploration(16748),	-- Ritual Site Outskirts
+[MID] [Scenario] [Map 3014 - Broken Throne] map_exploration(16770),	-- Zul'Aman
+[MID] [Scenario] [Map 3014 - Broken Throne] map_exploration(16796),	-- Ritual Site
+[MID] [Scenario] [Parent 16796 - Ritual Site] exploration(16747),	-- Speaker's Rest
+[MID] [Scenario] [Parent 16796 - Ritual Site] exploration(16766),	-- Broken Throne
+[MID] [Scenario] [Parent 16796 - Ritual Site] exploration(16823),	-- Daggerspine Point
+[MID] [Scenario] [Map 3022 - Silvermoon's Falconwing Square] map_exploration(16773),	-- Silvermoon City
+[MID] [Outdoor] [Map 3026 - 12.0 Warband - Founder's Point] map_exploration(16874),	-- Founders Point Camp
 [MID] [Outdoor] [Map 3027 - 12.0 Warband - Razorwind Shores] map_exploration(16873),	-- Razorwind Camp
+[MID] [Scenario] [Map 3074 - Daggerspine Point] map_exploration(16939),	-- Ritual Site
+[MID] [Scenario] [Parent 16939 - Ritual Site] exploration(16940),	-- Daggerspine Point

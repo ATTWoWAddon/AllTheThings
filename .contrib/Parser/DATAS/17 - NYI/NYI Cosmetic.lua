@@ -316,7 +316,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 10.2.0
 		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			n(ARMOR, {
-				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
 			}),
 			n(WEAPONS, {
@@ -743,8 +742,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
 			n(ARMOR, {
 				i(239003),	-- Feathered Mantle of the Guardian
-				i(235986),	-- Evil King's Half Shell
 				i(238949),	-- Inferno Helm
+				i(235986),	-- Pointy Half Shell
 			}),
 			n(SETS, {
 				------ Lavaborn Citrine Set ------
@@ -759,18 +758,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(238440),	-- Lavaborn Citrine Mantle
 				i(238441),	-- Lavaborn Citrine Pants
 				i(238448),	-- Lavaborn Citrine Treads
-
-				------ Woodland Gilneas Fox Set ------
-				i(237225),	-- Ensemble: Woodland Attire of the Gilneas Fox
-				q(87526),	-- Ensemble: Woodland Attire of the Gilneas Fox
-				i(237220),	-- Woodland Belt of the Gilneas Fox
-				i(237198),	-- Woodland Boots of the Gilneas Fox
-				i(237229),	-- Woodland Cloak of the Gilneas Fox
-				i(237208),	-- Woodland Cowl of the Gilneas Fox
-				i(237203),	-- Woodland Gloves of the Gilneas Fox
-				i(237216),	-- Woodland Mantle of the Gilneas Fox
-				i(237212),	-- Woodland Pants of the Gilneas Fox
-				i(237193),	-- Woodland Vestments of the Gilneas Fox
 
 				------ Woodland Grey Wolf Set ------
 				i(237223),	-- Ensemble: Woodland Attire of the Grey Wolf
@@ -1051,7 +1038,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(252741),	-- Camo Winter Toque
 				i(252714),	-- Cloudy Winter Toque
 				i(252715),	-- Deep Winter Toque
-				i(252744),	-- Faded Winter Toque
 				i(249719),	-- Fine Food Fanatic Backpack
 				i(235903),	-- Gold Lightforged Chestguard
 				i(249717),	-- Golden Food Fanatic Backpack
@@ -1071,19 +1057,18 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(251672),	-- Used Wearable Pot Lid
 			}),
 			n(SETS, {
-
-				------ The Kirin Tor Winter Set ------
-				i(249763),	-- Ensemble: The Kirin Tor Winter Collection
-				q(92098),	-- Ensemble: The Kirin Tor Winter Collection
-				i(249758),	-- Kirin Tor Winter Belt
-				i(249760),	-- Kirin Tor Winter Boots
-				i(249762),	-- Kirin Tor Winter Cloak
-				i(249761),	-- Kirin Tor Winter Gloves
-				i(249755),	-- Kirin Tor Winter Hood
-				i(249759),	-- Kirin Tor Winter Leggings
-				i(249756),	-- Kirin Tor Winter Pauldrons
-				i(249864),	-- Kirin Tor Winter Spaulders
-				i(249757),	-- Kirin Tor Winter Tunic
+				------ Void-Touched Winter Set ------
+				i(249763),	-- Ensemble: Void-Touched Winter Collection
+				q(92098),	-- Ensemble: Void-Touched Winter Collection
+				i(249758),	-- Void-Touched Winter Belt
+				i(249760),	-- Void-Touched Winter Boots
+				i(249762),	-- Void-Touched Winter Cloak
+				i(249761),	-- Void-Touched Winter Gloves
+				i(249755),	-- Void-Touched Winter Hood
+				i(249759),	-- Void-Touched Winter Leggings
+				i(249756),	-- Void-Touched Winter Pauldrons
+				i(249864),	-- Void-Touched Winter Spaulders
+				i(249757),	-- Void-Touched Winter Tunic
 
 				------ The Seafarer's Winter Set ------
 				i(249745),	-- Ensemble: The Seafarer's Winter Collection
@@ -1190,12 +1175,338 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(248737),	-- Well-Used Great Steak Knife
 			}),
 		})),
+		
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			n(ARMOR, {
+				i(260936),	-- Basic Brown Quiver
+				i(260413),	-- Copper Chainkini
+				i(256723),	-- Crest of Unending Grief
+				i(256724),	-- Crest of Unending Pain
+				i(256722),	-- Crest of Unending Sorrow
+				i(260412),	-- Rusty Chainkini
+			}),
+			n(SETS, {
+				------ Sorcerer's Aquatic Garb Set ------
+				i(258019),	-- Ensemble: Sorcerer's Aquatic Garb
+				i(257794),	-- Sorcerer's Aquatic Cape
+				i(257775),	-- Sorcerer's Aquatic Cowl
+
+				------ Sorcerer's Azure Garb Set ------
+				i(257971),	-- Ensemble: Sorcerer's Azure Garb
+				i(257780),	-- Sorcerer's Azure Cape
+				i(257760),	-- Sorcerer's Azure Cowl
+
+				------ Sorcerer's Camo Garb Set ------
+				i(257978),	-- Ensemble: Sorcerer's Camo Garb
+				i(257785),	-- Sorcerer's Camo Cape
+				i(257765),	-- Sorcerer's Camo Cowl
+
+				------ Sorcerer's Carrot Garb Set ------
+				i(257994),	-- Ensemble: Sorcerer's Carrot Garb
+				i(257789),	-- Sorcerer's Carrot Cape
+				i(257770),	-- Sorcerer's Carrot Cowl
+
+				------ Sorcerer's Cloudy Garb Set ------
+				i(257975),	-- Ensemble: Sorcerer's Cloudy Garb
+				i(257783),	-- Sorcerer's Cloudy Cape
+				i(257763),	-- Sorcerer's Cloudy Cowl
+
+				------ Sorcerer's Crimson Garb Set ------
+				i(258017),	-- Ensemble: Sorcerer's Crimson Garb
+				i(257792),	-- Sorcerer's Crimson Cape
+				i(257773),	-- Sorcerer's Crimson Cowl
+
+				------ Sorcerer's Deep Garb Set ------
+				i(257976),	-- Ensemble: Sorcerer's Deep Garb
+				i(257784),	-- Sorcerer's Deep Cape
+				i(257764),	-- Sorcerer's Deep Cowl
+
+				------ Sorcerer's Grassy Garb Set ------
+				i(257974),	-- Ensemble: Sorcerer's Grassy Garb
+				i(257782),	-- Sorcerer's Grassy Cape
+				i(257762),	-- Sorcerer's Grassy Cowl
+
+				------ Sorcerer's Midnight Garb Set ------
+				i(257970),	-- Ensemble: Sorcerer's Midnight Garb
+				i(257779),	-- Sorcerer's Midnight Cape
+				i(257759),	-- Sorcerer's Midnight Cowl
+
+				------ Sorcerer's Plum Garb Set ------
+				i(258003),	-- Ensemble: Sorcerer's Plum Garb
+				i(257791),	-- Sorcerer's Plum Cape
+				i(257772),	-- Sorcerer's Plum Cowl
+
+				------ Sorcerer's Snowy Garb Set ------
+				i(258020),	-- Ensemble: Sorcerer's Snowy Garb
+				i(257795),	-- Sorcerer's Snowy Cape
+				i(257776),	-- Sorcerer's Snowy Cowl
+
+				------ Sorcerer's Sunny Garb Set ------
+				i(258021),	-- Ensemble: Sorcerer's Sunny Garb
+				i(257796),	-- Sorcerer's Sunny Cape
+				i(257778),	-- Sorcerer's Sunny Cowl
+				
+				------ Corrupted Regalia of the Crusader Set ------
+				i(258186),	-- Ensemble: Corrupted Regalia of the Crusader
+				i(258178),	-- Corrupted Belt of the Crusader
+				i(258180),	-- Corrupted Boots of the Crusader
+				i(258183),	-- Corrupted Chestplate of the Crusader
+				i(258182),	-- Corrupted Cloak of the Crusader
+				i(258174),	-- Corrupted Cowl of the Crusader
+				i(258181),	-- Corrupted Gloves of the Crusader
+				i(258179),	-- Corrupted Legguards of the Crusader
+				i(258176),	-- Corrupted Mantle of the Crusader
+				i(258177),	-- Corrupted Robe of the Crusader
+				
+
+				------ Twilight Regalia of the Crusader Set ------
+				i(258251),	-- Ensemble: Twilight Regalia of the Crusader
+				i(258233),	-- Twilight Belt of the Crusader
+				i(258241),	-- Twilight Boots of the Crusader
+				i(258249),	-- Twilight Chestplate of the Crusader
+				i(258246),	-- Twilight Cloak of the Crusader
+				i(258228),	-- Twilight Cowl of the Crusader
+				i(258243),	-- Twilight Gloves of the Crusader
+				i(258236),	-- Twilight Legguards of the Crusader
+				i(258229),	-- Twilight Mantle of the Crusader
+				i(258231),	-- Twilight Robe of the Crusader
+
+				------ Pious Regalia of the Crusader Set ------
+				i(258317),	-- Ensemble: Pious Regalia of the Crusader
+				i(258311),	-- Pious Belt of the Crusader
+				i(258313),	-- Pious Boots of the Crusader
+				i(258316),	-- Pious Chestplate of the Crusader
+				i(258315),	-- Pious Cloak of the Crusader
+				i(258308),	-- Pious Cowl of the Crusader
+				i(258314),	-- Pious Gloves of the Crusader
+				i(258312),	-- Pious Legguards of the Crusader
+				i(258309),	-- Pious Mantle of the Crusader
+				i(258310),	-- Pious Robe of the Crusader
+
+				------ South Guard's Silver Raiment Set ------
+				i(258784),	-- Ensemble: South Guard's Silver Raiment
+				i(258780),	-- South Guard's Silver Boots
+				i(260405),	-- South Guard's Silver Chausses
+				i(258778),	-- South Guard's Silver Cinch
+				i(258782),	-- South Guard's Silver Cloak
+				i(258783),	-- South Guard's Silver Cuirass
+				i(258776),	-- South Guard's Silver Facemask
+				i(258781),	-- South Guard's Silver Gauntlets
+				i(258779),	-- South Guard's Silver Greaves
+				i(260401),	-- South Guard's Silver Handwraps
+				i(258777),	-- South Guard's Silver Mantle
+
+				------ South Guard's Iron Raiment Set ------
+				i(258811),	-- Ensemble: South Guard's Iron Raiment
+				i(258807),	-- South Guard's Iron Boots
+				i(260402),	-- South Guard's Iron Chausses
+				i(258805),	-- South Guard's Iron Cinch
+				i(258809),	-- South Guard's Iron Cloak
+				i(258810),	-- South Guard's Iron Cuirass
+				i(258803),	-- South Guard's Iron Facemask
+				i(258808),	-- South Guard's Iron Gauntlets
+				i(258806),	-- South Guard's Iron Greaves
+				i(260398),	-- South Guard's Iron Handwraps
+				i(258804),	-- South Guard's Iron Mantle
+			}),
+			n(WEAPONS, {
+				i(257713),	-- Anubisath's Ethereal Blade
+				i(257428),	-- Anubisath's Ethereal Greatblade
+				i(257710),	-- Anubisath's Green Blade
+				i(257425),	-- Anubisath's Green Greatblade
+				i(260379),	-- Black Wooden Shortbow
+				i(260380),	-- Blue Wooden Shortbow
+				i(260381),	-- Bronze Wooden Shortbow
+				i(253045),	-- Crusader's Amethyst Blade
+				i(253049),	-- Crusader's Amethyst Greatblade
+				i(253275),	-- Crusader's Amethyst Greatmace
+				i(253279),	-- Crusader's Amethyst Mace
+				i(253047),	-- Crusader's Citrine Blade
+				i(253051),	-- Crusader's Citrine Greatblade
+				i(253276),	-- Crusader's Citrine Greatmace
+				i(253281),	-- Crusader's Citrine Mace
+				i(253044),	-- Crusader's Emerald Blade
+				i(253048),	-- Crusader's Emerald Greatblade
+				i(253274),	-- Crusader's Emerald Greatmace
+				i(253278),	-- Crusader's Emerald Mace
+				i(260383),	-- Dark Blue Wooden Shortbow
+				i(260384),	-- Dark Red Wooden Shortbow
+				i(260385),	-- Frost Wooden Shortbow
+				i(250315),	-- Hunter's Etched Glaive
+				i(260387),	-- Icey Wooden Shortbow
+				i(260390),	-- Light Brown Wooden Shortbow
+				i(260388),	-- Light Wooden Shortbow
+				i(260391),	-- Pale Wooden Shortbow
+				i(260393),	-- Purple Wooden Shortbow
+				i(260395),	-- Rugged Wooden Shortbow
+				i(260397),	-- Sea Green Wooden Shortbow
+				i(251515),	-- Shield of Unending Grief
+				i(251516),	-- Shield of Unending Pain
+				i(251514),	-- Shield of Unending Sorrow
+				i(250309),	-- Simple Dagger
+				i(250310),	-- Simple Knife
+				i(250314),	-- Standard Hunter's Glaive
+				i(250311),	-- Standard Warrior's Sword
+				i(250313),	-- Vicious Warrior's Blade
+				i(250312),	-- Warrior's Katana
+				i(260378),	-- Wooden Shortbow
+			}),
+		})),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			n(ARMOR, {
+				i(266976),	-- [PH] Hara'ti Cloak - Blue
+				i(266971),	-- [PH] Hara'ti Cloak - Yellow
+				i(266977),	-- [PH] Hara'ti Set - Blue
+				i(266978),	-- [PH] Hara'ti Set - Yellow
+				i(266975),	-- [PH] Hara'ti Shoulders - Blue
+				i(266972),	-- [PH] Hara'ti Shoulders - Yellow
+				i(266974),	-- [PH] Hara'ti Tabard - Blue
+				i(266973),	-- [PH] Hara'ti Tabard - Yellow
+				i(262852),	-- Aquatic Dunecloth Belt
+				i(262834),	-- Aquatic Dunecloth Skirt
+				i(262870),	-- Aquatic Dunecloth Vest
+				i(262838),	-- Azure Dunecloth Belt
+				i(262820),	-- Azure Dunecloth Skirt
+				i(262856),	-- Azure Dunecloth Vest
+				i(266077),	-- Basic Black Quiver
+				i(266078),	-- Basic Blue Quiver
+				i(266079),	-- Basic Bronze Quiver
+				i(266081),	-- Basic Dark Blue Quiver
+				i(266082),	-- Basic Dark Red Quiver
+				i(266083),	-- Basic Frost Quiver
+				i(266085),	-- Basic Ice Quiver
+				i(266088),	-- Basic Light Brown Quiver
+				i(266086),	-- Basic Light Quiver
+				i(266089),	-- Basic Pale Quiver
+				i(266090),	-- Basic Purple Quiver
+				i(266091),	-- Basic Rugged Quiver
+				i(266092),	-- Basic Sea Green Quiver
+				i(262844),	-- Brick Dunecloth Belt
+				i(262826),	-- Brick Dunecloth Skirt
+				i(262862),	-- Brick Dunecloth Vest
+				i(262587),	-- Brown Lunch Bag
+				i(248933),	-- Burden of War
+				i(262843),	-- Camo Dunecloth Belt
+				i(262825),	-- Camo Dunecloth Skirt
+				i(262861),	-- Camo Dunecloth Vest
+				i(262847),	-- Carrot Dunecloth Belt
+				i(262829),	-- Carrot Dunecloth Skirt
+				i(262866),	-- Carrot Dunecloth Vest
+				i(262841),	-- Cloudy Dunecloth Belt
+				i(262823),	-- Cloudy Dunecloth Skirt
+				i(262858),	-- Cloudy Dunecloth Vest
+				i(262850),	-- Crimson Dunecloth Belt
+				i(262832),	-- Crimson Dunecloth Skirt
+				i(262868),	-- Crimson Dunecloth Vest
+				i(262842),	-- Deep Dunecloth Belt
+				i(262824),	-- Deep Dunecloth Skirt
+				i(262860),	-- Deep Dunecloth Vest
+				i(263575),	-- Ensemble: Elder Moss Outfit
+				i(263574),	-- Ensemble: Osseoclad's Wear
+				i(263576),	-- Ensemble: Rampant Thorn Armor
+				i(258032),	-- Ensemble: Skilled Preyseeker's Attire
+				i(263520),	-- Ensemble: Sprawling's Garb
+				i(262840),	-- Grassy Dunecloth Belt
+				i(262822),	-- Grassy Dunecloth Skirt
+				i(262859),	-- Grassy Dunecloth Vest
+				i(262837),	-- Midnight Dunecloth Belt
+				i(262819),	-- Midnight Dunecloth Skirt
+				i(262855),	-- Midnight Dunecloth Vest
+				i(262849),	-- Plum Dunecloth Belt
+				i(262831),	-- Plum Dunecloth Skirt
+				i(262867),	-- Plum Dunecloth Vest
+				i(262585),	-- Pristine Lunch Bag
+				i(262848),	-- Rosy Dunecloth Belt
+				i(262830),	-- Rosy Dunecloth Skirt
+				i(262865),	-- Rosy Dunecloth Vest
+				i(262588),	-- Sack Lunch
+				i(262853),	-- Snowy Dunecloth Belt
+				i(262835),	-- Snowy Dunecloth Skirt
+				i(262871),	-- Snowy Dunecloth Vest
+				i(262854),	-- Sunny Dunecloth Belt
+				i(262836),	-- Sunny Dunecloth Skirt
+				i(262872),	-- Sunny Dunecloth Vest
+				i(258031),	-- Vaunted Preyseeker's Knapsack
+				i(258029),	-- Vaunted Preyseeker's Plumed Helm
+				i(258027),	-- Vaunted Preyseeker's Shoulder-Spikes
+			}),
 			filter(TABARDS, {
 				i(242635),	-- Twilight's Blade - Armor - Tabard
+			}),
+			n(SETS, {
+				------ Elaborate Charcoal Set ------
+				i(258724),	-- Ensemble: Elaborate Charcoal Mageweave
+				q(93445),	-- Ensemble: Elaborate Charcoal Mageweave
+				i(258720),	-- Elaborate Charcoal Mageweave Belt
+				i(258700),	-- Elaborate Charcoal Mageweave Boots
+				i(258699),	-- Elaborate Charcoal Mageweave Chestpiece
+				i(258695),	-- Elaborate Charcoal Mageweave Chestwrap
+				i(258704),	-- Elaborate Charcoal Mageweave Gloves
+				i(258683),	-- Elaborate Charcoal Mageweave Headband
+				i(258712),	-- Elaborate Charcoal Mageweave Leggings
+				i(258708),	-- Elaborate Charcoal Mageweave Pants
+				i(258716),	-- Elaborate Charcoal Mageweave Shoulders
+				i(258691),	-- Elaborate Charcoal Mageweave Vest
+				i(258687),	-- Elaborate Charcoal Mageweave Vestments
+
+				------ Elaborate Golden Set ------
+				i(258728),	-- Ensemble: Elaborate Golden Mageweave
+				q(93448),	-- Ensemble: Elaborate Charcoal Mageweave
+				i(258723),	-- Elaborate Golden Mageweave Belt
+				i(258703),	-- Elaborate Golden Mageweave Boots
+				i(258696),	-- Elaborate Golden Mageweave Chestpiece
+				i(258692),	-- Elaborate Golden Mageweave Chestwrap
+				i(258707),	-- Elaborate Golden Mageweave Gloves
+				i(258680),	-- Elaborate Golden Mageweave Headband
+				i(258715),	-- Elaborate Golden Mageweave Leggings
+				i(258711),	-- Elaborate Golden Mageweave Pants
+				i(258719),	-- Elaborate Golden Mageweave Shoulders
+				i(258688),	-- Elaborate Golden Mageweave Vest
+				i(258684),	-- Elaborate Golden Mageweave Vestments
+
+				------ Rootlands Weaponry ------
+				i(263577),	-- Arsenal: Rootlands Weaponry
+				q(93962),	-- Arsenal: Rootlands Weaponry
+			}),
+			n(WEAPONS, {
+				i(262734),	-- [DNT] Mace of the Great Dark
+				i(262748),	-- Autumn Dagger-Tined Rake
+				i(262749),	-- Spring Dagger-Tined Rake
+				i(262750),	-- Red Dagger-Tined Rake
+				i(260742),	-- Big Lil' Black Whirlwind
+				i(260741),	-- Big Lil' Blue Whirlwind
+				i(260744),	-- Big Lil' Green Whirlwind
+				i(260745),	-- Big Lil' Red Whirlwind
+				i(264969),	-- Extinction Voulge
+				i(260737),	-- Forest Dweller's Dawn Staff
+				i(260736),	-- Forest Dweller's Mossy Staff
+				i(260739),	-- Forest Dweller's Night Staff
+				i(246726),	-- Greatsword of Returning Light
+				i(258405),	-- Lil' Black Whirlwind
+				i(260754),	-- Lil' Blue Claw
+				i(258404),	-- Lil' Blue Whirlwind
+				i(260755),	-- Lil' Green Claw
+				i(260764),	-- Lil' Green Popper
+				i(258407),	-- Lil' Green Whirlwind
+				i(260757),	-- Lil' Red Claw
+				i(260765),	-- Lil' Red Popper
+				i(258408),	-- Lil' Red Whirlwind
+				i(260763),	-- Lil' Tan Popper
+				i(253389),	-- Manaforge Raider's Umbral Ward (MAIN HAND SLOT)
+				i(260733),	-- Murgle's Lil' Fish Stick
+				i(260729),	-- Murky's Lil' Fish Stick
+				i(262758),	-- Pepe's Mobile Home
+				i(262759),	-- Pepe's Portable Home
+				i(262760),	-- Pepe's Traveling Home
+				i(262717),	-- Simple Rooting Trowl
+				i(262716),	-- Simple Rosy Trowl
+				i(262718),	-- Simple Withering Trowl
+				i(260731),	-- Snugglefin's Lil' Fish Stick
+				i(263009),	-- Valeera's Wicked Knife
 			}),
 		})),
 	}),

@@ -2946,7 +2946,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				q(8948, {	-- Anthion's Old Friend
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
-					["qg"] = 16016,	-- Anthion Harmon
+					["providers"] = {
+						{ "n", 16016 },	-- Anthion Harmon
+						{ "i", 21983 },	-- Incomplete Banner of Provocation
+					},
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
 					["maps"] = {
 						DIRE_MAUL,
@@ -2955,7 +2958,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						237,	-- Court of the Highborne
 						238,	-- Prison of Immol'Thar
 					},
-					["cost"] = { { "i", 21983, 1 } },	-- Incomplete Banner of Provocation
 					["lvl"] = 58,
 				}),
 				q(8947, {	-- Anthion's Strange Request
@@ -3195,7 +3197,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 								12178,	-- Tortured Druid
 								12179,	-- Tortured Sentinel
 							},
-							["cost"] = { { "i", 21946, 1 } },	-- Ectoplasmic Distiller
+							["cost"] = {
+								{ "i", 21946, 1 },	-- Ectoplasmic Distiller
+								{ "i", 9061, 1 },	-- Goblin Rocket Fuel
+							},
 						}),
 						objective(2, {	-- 0/12 Frozen Ectoplasm
 							["provider"] = { "i", 21936 },	-- Frozen Ectoplasm
@@ -3203,7 +3208,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 								7524,	-- Anguished Highborne
 								7523,	-- Suffering Highborne
 							},
-							["cost"] = { { "i", 21946, 1 } },	-- Ectoplasmic Distiller
+							["cost"] = {
+								{ "i", 21946, 1 },	-- Ectoplasmic Distiller
+								{ "i", 9061, 1 },	-- Goblin Rocket Fuel
+							},
 						}),
 						objective(3, {	-- 0/12 Stable Ectoplasm
 							["provider"] = { "i", 21935 },	-- Stable Ectoplasm
@@ -3214,7 +3222,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 								8540,	-- Torn Screamer
 								8538,	-- Unseen Servant
 							},
-							["cost"] = { { "i", 21946, 1 } },	-- Ectoplasmic Distiller
+							["cost"] = {
+								{ "i", 21946, 1 },	-- Ectoplasmic Distiller
+								{ "i", 9061, 1 },	-- Goblin Rocket Fuel
+							},
 						}),
 					},
 				}),
@@ -3444,8 +3455,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["coord"] = { 52.4, 27.2, TANARIS },
-					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
+					["groups"] = {
+						i(22115),	-- Extra-Dimensional Ghost Revealer
+					},
 				},
 				q(9015, {	-- The Challenge
 					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
@@ -3496,6 +3509,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							["cr"] = 10078,	-- Terrorspark
 						}),
 						i(22320),	-- Mux's Quality Goods
+						i(21946),	-- Ectoplasmic Distiller
 					},
 				}),
 				q(8950, {	-- The Instigator's Enchantment

@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64818, {	-- Reinforcements May Be Necessary
 					["sourceQuests"] = { 64817 },	-- In Plain Sight
 					["provider"] = { "n", 183615 },	-- Highlord Darion Mograine
-					["coord"] = { 41.9, 48.1, ZERETH_MORTIS },
+					["coord"] = { 41.5, 53.5, ZERETH_MORTIS },
 				}),
 				q(64820, {	-- This Is Your Fault, Fix it
 					["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary

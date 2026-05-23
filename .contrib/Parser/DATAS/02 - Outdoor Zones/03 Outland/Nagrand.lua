@@ -858,7 +858,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9886, {	-- Membership Benefits
@@ -866,7 +865,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 						["isMonthly"] = true,
 						["groups"] = {
@@ -878,7 +876,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.6 },	-- Consortium, Honored
 						["isMonthly"] = true,
 						["groups"] = {
@@ -901,7 +898,6 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_KURENAI, EXALTED },	-- Kurenai, Exalted.
 						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 						["races"] = ALLIANCE_ONLY,
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 978.8 },	-- Kurenai, Exalted
 						["repeatable"] = true,
 					}),
@@ -910,7 +906,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.7 },	-- Consortium, Revered
 						["isMonthly"] = true,
 						["groups"] = {
@@ -932,7 +927,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 						["repeatable"] = true,
 					}),
@@ -942,7 +936,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 						["repeatable"] = true,
 					}),
@@ -953,7 +946,6 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
 						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.8 },	-- The Consortium, Exalted
 						["repeatable"] = true,
 					}),
@@ -964,7 +956,6 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_THE_MAGHAR, EXALTED },	-- The Maghar, Exalted.
 						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 						["races"] = HORDE_ONLY,
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 941.8 },	-- The Maghar, Exalted
 						["repeatable"] = true,
 					}),
@@ -985,7 +976,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9906, {	-- Message in a Battle

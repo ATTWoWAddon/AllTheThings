@@ -17,7 +17,7 @@ i(128231, 39355);	-- Equipment Blueprint: Trained Shark Tank
 i(128252, 39360);	-- Equipment Blueprint: True Iron Rudder
 i(128491, 39359);	-- Equipment Blueprint: Tuskarr Fishing Net
 i(128489, 39358);	-- Equipment Blueprint: Unsinkable
--- NYI --
+--- NYI ---
 i(0, 39370);	-- Equipment Blueprint: Ammo Reserves
 i(0, 39369);	-- Equipment Blueprint: Automated Sky Scanner
 i(128260, 39368);	-- Equipment Blueprint: Blast Furnace

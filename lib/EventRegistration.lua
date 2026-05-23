@@ -6,6 +6,9 @@ local _, app = ...;
 local events = setmetatable({}, {
 	-- undefined event handler
 	__index = function(t, key)
+		-- Blizzard tries accessing ToDebugString on every table randomly because no one knows why
+		if key == "ToDebugString" then return end
+
 		local unhandledEventFunction = function(...)
 			app.print("UNHANDLED EVENT",key,...)
 		end

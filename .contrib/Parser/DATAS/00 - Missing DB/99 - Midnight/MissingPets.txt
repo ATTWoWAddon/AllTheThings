@@ -1,12 +1,22 @@
 8.3.0.32489
 pet(2779),	-- Anima Wyrmling
-12.0.5.66330
-pet(5038),	-- Wriggling Capybara
+12.0.7.67227
+pet(4949),	-- Shadowflame Remnant
+pet(5007),	-- Kinduwu
+pet(5041),	-- Emberlyn
+pet(5073),	-- Frosticus Maximus
+pet(5074),	-- Silento
+pet(5080),	-- Pinky
 
 
 
 
 Missing in PetDB.lua
 
-12.0.5.66330
-pet(5038),	-- Wriggling Capybara
+12.0.7.67227
+pet(4949),	-- Shadowflame Remnant
+pet(5007),	-- Kinduwu
+pet(5041),	-- Emberlyn
+pet(5073),	-- Frosticus Maximus
+pet(5074),	-- Silento
+pet(5080),	-- Pinky

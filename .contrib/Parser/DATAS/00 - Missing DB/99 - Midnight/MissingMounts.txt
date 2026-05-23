@@ -4,6 +4,21 @@ mount(1258573),	-- Thunderhoof Celestial
 mount(1289395),	-- Swift Spectral Dragonhawk
 12.0.5.66330
 mount(1261362),	-- Witherbark Warbear Mother
+12.0.7.67227
+mount(404018),	-- Black-Furred Bakar
+mount(1261369),	-- Amani Hex Bear
+mount(1264184),	-- Spawn of Vyranoth
+mount(1284973),	-- Luminous Sporeglider
+mount(1292102),	-- Blackwater X-TREME Firework Rocket
+mount(1292342),	-- Green Rocket Mount [PH]
+mount(1292344),	-- Bligewater X-TREME Firework Rocket
+mount(1292345),	-- Pink Rocket Mount [PH]
+mount(1294648),	-- Voidmancer's Starcarver
+mount(1294663),	-- Arcforged Nullframe
+mount(1294677),	-- [PH] Horse with Hat
+mount(1294767),	-- Badlands Buzzard
+mount(1297427),	-- Tortured Gorger
+mount(1298439),	-- Sun Festival's Painted Roc
 
 
 
@@ -12,3 +27,18 @@ Missing in MountDB.lua
 
 12.0.1.66013
 mount(1289395),	-- Swift Spectral Dragonhawk
+12.0.7.67227
+mount(404018),	-- Black-Furred Bakar
+mount(1261369),	-- Amani Hex Bear
+mount(1264184),	-- Spawn of Vyranoth
+mount(1284973),	-- Luminous Sporeglider
+mount(1292102),	-- Blackwater X-TREME Firework Rocket
+mount(1292342),	-- Green Rocket Mount [PH]
+mount(1292344),	-- Bligewater X-TREME Firework Rocket
+mount(1292345),	-- Pink Rocket Mount [PH]
+mount(1294648),	-- Voidmancer's Starcarver
+mount(1294663),	-- Arcforged Nullframe
+mount(1294677),	-- [PH] Horse with Hat
+mount(1294767),	-- Badlands Buzzard
+mount(1297427),	-- Tortured Gorger
+mount(1298439),	-- Sun Festival's Painted Roc

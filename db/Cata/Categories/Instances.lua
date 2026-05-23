@@ -318,7 +318,7 @@ q(8922,{c={1,2,3,4,5,7,8,9,11},coords={
 q(8923,{c={1,2,3,4,5,7,8,9,11},coords={
 [1454]={{35,38.3}}},lvl=58,maps={1446},providers={{"i",22382}},qgs={16012},r=1,sourceQuests={8913,8914,8915,8916,8917,8918,8919,8920,10493},u=2}),
 q(8948,{c={1,2,3,4,5,7,8,9,11},coords={
-[1423]={{30.9,16.8}}},cost={{"i",21983,1}},lvl=58,maps={234,235,236,237,238},qgs={16016},sourceQuests={8947},u=2}),
+[1423]={{30.9,16.8}}},lvl=58,maps={234,235,236,237,238},providers={{"i",21983}},qgs={16016},sourceQuests={8947},u=2}),
 q(8947,{c={1,2,3,4,5,7,8,9,11},coords={
 [1423]={{30.9,16.8}}},cost={{"i",15407,4},{"i",14342,3},{"i",12810,20},{"i",11371,3}},lvl=58,qgs={16016},sourceQuests={8946},u=2}),
 q(8997,{c={1,2,3,4,5,7,8,9,11},lvl=58,maps={33,1455},qgs={16033},r=2,sourceQuests={8996},u=2}),
@@ -346,9 +346,9 @@ q(8994,{c={1,2,3,4,5,7,8,9,11},cost={{"i",13512,1},{"i",22048,1}},lvl=58,maps={3
 qo(1,{providers={{"i",22138}},u=2})}}),
 q(8924,{c={1,2,3,4,5,7,8,9,11},coords={
 [1446]={{52.4,27.2}}},lvl=58,maps={1423,1451,1452},qgs={16014},sourceQuests={8921},u=2,g={
-qo(1,{cost={{"i",21946,1}},crs={12178,12179},providers={{"i",21937}},u=2}),
-qo(2,{cost={{"i",21946,1}},crs={7523,7524},providers={{"i",21936}},u=2}),
-qo(3,{cost={{"i",21946,1}},crs={8538,8539,8540,8541,8542},providers={{"i",21935}},u=2})}}),
+qo(1,{cost={{"i",9061,1},{"i",21946,1}},crs={12178,12179},providers={{"i",21937}},u=2}),
+qo(2,{cost={{"i",9061,1},{"i",21946,1}},crs={7523,7524},providers={{"i",21936}},u=2}),
+qo(3,{cost={{"i",9061,1},{"i",21946,1}},crs={8538,8539,8540,8541,8542},providers={{"i",21935}},u=2})}}),
 q(8970,{c={1,2,3,4,5,7,8,9,11},lvl=58,maps={33,1445},qgs={16033},sourceQuests={8966,8967,8968,8969},u=2,g={
 qo(1,{crs={4364,4366,4368,4370,4371,16072},providers={{"i",22094},{"o",181053}},u=2})}}),
 q(8929,{c={1,2,3,4,5,7,8,9,11},coords={
@@ -377,9 +377,11 @@ q(8996,{c={1,2,3,4,5,7,8,9,11},cost={{"i",22056,1}},lvl=58,maps={33,250,251,252,
 i(22057,{b=1,description="If you did complete the quest before the Cataclysm, you can request a new Brazier from Bodley.\nYou must have the Extra-Dimensional Ghost Revealer In order to see him outside UBRS Entrance in Black Rock Mountain.\nMux Manascrambler in Gadgetzan in Tanaris can assist you in getting the Ghost Revealer.",q=1,u=2}),
 i(22344,{b=1,q=1,u=2})}}),
 q(8977,{c={1,2,3,4,5,7,8,9,11},coords={
-[1446]={{52.4,27.2}}},cost={{"i",22115,1}},lvl=58,maps={1455},qgs={16014},r=2,sourceQuests={8928},u=2}),
+[1446]={{52.4,27.2}}},lvl=58,maps={1455},qgs={16014},r=2,sourceQuests={8928},u=2,g={
+i(22115,{b=1,q=1,u=2})}}),
 q(8978,{c={1,2,3,4,5,7,8,9,11},coords={
-[1446]={{52.4,27.2}}},cost={{"i",22115,1}},lvl=58,maps={1454},qgs={16014},r=1,sourceQuests={8928},u=2}),
+[1446]={{52.4,27.2}}},lvl=58,maps={1454},qgs={16014},r=1,sourceQuests={8928},u=2,g={
+i(22115,{b=1,q=1,u=2})}}),
 q(9015,{c={1,2,3,4,5,7,8,9,11},lvl=58,maps={234,235,236,237,238,242},qgs={16032},sourceQuests={8950},u=2,g={
 qo(1,{providers={{"i",21986}},u=2}),
 qo(2,{providers={{"i",22047}},u=2}),
@@ -387,7 +389,8 @@ i(21986,{b=1,description="Long after Classic is over, you can use this item to s
 q(8921,{c={1,2,3,4,5,7,8,9,11},coords={
 [1446]={{52.4,27.2}}},cost={{"i",13423,10},{"i",16203,4},{"i",16006,1},{"g",400000}},lvl=58,maps={1428},qgs={16014},sourceQuests={8922,8923},u=2,g={
 qo(4,{crs={10078},providers={{"i",22338},{"o",181098}},u=2}),
-i(22320,{b=1,q=1,u=2})}}),
+i(22320,{b=1,q=1,u=2}),
+i(21946,{b=1,q=1,u=2})}}),
 q(8950,{c={1,2,3,4,5,7,8,9,11},cost={{"i",14344,8},{"i",20520,4}},lvl=58,maps={234,235,236,237,238},qgs={16032},sourceQuests={8949},u=2,g={
 qo(1,{providers={{"i",22224}},u=2})}}),
 q(8966,{c={1,8},cost={{"i",22049,1},{"i",22115,1}},lvl=58,maps={33,250,251,252,253,254,255},qgs={16033},sourceQuests={8962},u=2,g={
@@ -5463,6 +5466,7 @@ qo(1,{awp=100105,providers={{"n",10508}}})}})}}),
 h(-56,{awp=100105,rwp=50004,g={
 i(12736,{awp=11101,b=1,description="Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",providers={{"o",175965}},q=1})}}),
 h(-63,{awp=100105,rwp=50004,g={
+i(20520,{q=2}),
 r(20035,{crs={10469},itemID=16255,learnedAt=300,q=2,requireSkill=333}),
 r(20032,{crs={10499},itemID=16254,learnedAt=300,q=3,requireSkill=333}),
 r(19102,{awp=11101,crs={11582},description="This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",itemID=15776,learnedAt=300,q=2,requireSkill=165,rwp=40003,u=2}),

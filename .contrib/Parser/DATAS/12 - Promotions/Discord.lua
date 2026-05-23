@@ -31,9 +31,10 @@ root(ROOTS.Promotions, n(DISCORD_PROMOTION, {
 			["timeline"] = { "added 11.0.5.57689", "removed 11.0.5.57689" },
 		}),
 		i(228758, {	-- Parrlok (PET!)
+			-- #if BEFORE 12.0.5.67314
 			["description"] = "In the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your pet.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until Parrlok Parrlok is yours!\n\nPromotion is available from August 23rd, 2024 until September 8th, 2024 (11:59PM UTC).",
-			["timeline"] = { ADDED_11_0_2 },
-			["u"] = REMOVED_FROM_GAME,	-- 8th September 2024
+			-- #endif
+			["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56513" },	-- 8th September 2024
 		}),
 		i(250292, {	-- Piping Hot Portable Bakery (COSMETIC!)
 			["description"] = "At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from January 27th, 2026 until February 2nd, 2026 (11:59PM UTC).",

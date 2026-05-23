@@ -48,7 +48,7 @@ WORLD_PVP = createHeader({
 root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 	["timeline"] = { ADDED_8_0_1_LAUNCH },
 	["groups"] = {
-		expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+		expansion(EXPANSION.BFA, timelineSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 			n(ACHIEVEMENTS, {
 				ach(12567),	-- The Horde Slayer
 				ach(12568),	-- The Alliance Slayer
@@ -63,7 +63,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				["description"] = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
 			}),
 			n(QUESTS, {
-				q(58274, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
+				q(58274, timelineSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
 					["description"] = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -72,7 +72,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 						i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 					},
 				})),
-				q(58273, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
+				q(58273, timelineSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
 					["description"] = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -158,7 +158,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					},
 					["timeline"] = { ADDED_10_0_5 },
 				}),
-				ach(17345, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 }, }, {	-- Airborne Tumbler (x50)
+				ach(17345, timelineSelf({ ["timeline"] = { ADDED_10_0_5 }, }, {	-- Airborne Tumbler (x50)
 					["maps"] = {
 						-- #if BEFORE 11.0.2
 						THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS,
@@ -267,7 +267,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				i(202184),	-- Trophy of Strife
 			}),
 		})),
-		expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(ACHIEVEMENTS, {
 				ach(40088, {	-- A Champion's Tour: The War Within (automated)
 					i(223802),	-- Ruby-Eyed Stagshell (PET!)
@@ -305,14 +305,21 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 						["maps"] = { AZJ_KAHET },
 					}),
 				}),
-				ach(40095),	-- Sparking Battle (x5)
+				ach(40095, {	-- Sparking Battle (x5)
+					["timeline"] = { ADDED_11_0_0, REMOVED_12_0_0 },
+				}),
 				ach(40096, {	-- Sparking Battle (x20)
-					i(225969),	-- Forged Flag of Victory (TOY!)
+					["timeline"] = { ADDED_11_0_0, REMOVED_12_0_0 },
+					["groups"] = {
+						i(225969),	-- Forged Flag of Victory (TOY!)
+					},
 				}),
 				ach(40089, {	-- Spoiled Goods (1x)
+					["provider"] = { "o", 441108, },	-- Unbound Spoils
 					["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS },
 				}),
 				ach(40090, {	-- Spoiled Goods (10x)
+					["provider"] = { "o", 441108, },	-- Unbound Spoils
 					["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS },
 				}),
 				ach(40087, {	-- Unbound Battle (automated)
@@ -332,17 +339,37 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				}),
 			}),
 			n(TREASURES, {
-				o(433370,{	-- War Supply Chest
+				-- These objects are shared across BFA/DF/TWW/MID... so contains is based on current zone...
+				o(433369, {	-- War Supply Chest [H]
 					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox
+					["groups"] = { currency(HONOR) },
+				}),
+				o(433370, {	-- War Supply Chest [A]
+					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox
+					["groups"] = { currency(HONOR) },
+				}),
+				o(441108, {	-- Unbound Spoils
+					["description"] = "Spawns ONCE per rotation in the matching zone determined by the zone where the Shadowlands PvP World Quest is active. The spawn can occur at any moment while that quest is up.\nArdenweald -> Isle of Dorn\nMaldraxxus -> Hallowfall\nRevendreth -> Azj-Kahet\nBastion -> The Ringing Deeps.\nThe box can be looted by many players of both factions within a few minutes after being opened. There's really no reason to fight about it. :)",
+					["coords"] = {
+						{ 44.6, 85.3, 2213 },	-- Azj-Kahet (City of Threads)
+						{ 38.5, 35.0, HALLOWFALL },
+						{ 66.7, 48.8, THE_RINGING_DEEPS }, -- (pre-11.1 shift)
+						{ 62.3, 20.3, ISLE_OF_DORN },
+					},
+					["crs"] = { 233446 },	-- Generic Bunny [Pre-Spawn Vignette]
+					["groups"] = {
+						currency(BLOODY_TOKENS, {skipFill=true}),
+						currency(HONOR, {skipFill=true}),
+					},
 				}),
 			}),
 			n(REWARDS, {
-				currency(2123, {	-- Bloody Tokens
+				currency(BLOODY_TOKENS, {
 					["timeline"] = { REMOVED_12_0_1_LAUNCH },
 				}),
 			}),
 		})),
-		expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+		expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 			n(ACHIEVEMENTS, {
 				ach(61234),	-- Hunt in the Night
 					-- ["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
@@ -396,8 +423,13 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				}),
 			}),
 			n(TREASURES, {
-				o(433370,{	-- War Supply Chest
-					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox
+				o(433369, {	-- War Supply Chest [H]
+					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox (was this only when current content?)
+					["groups"] = { currency(HONOR) },
+				}),
+				o(433370, {	-- War Supply Chest [A]
+					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox (was this only when current content?)
+					["groups"] = { currency(HONOR) },
 				}),
 			}),
 			n(REWARDS, {
@@ -410,7 +442,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(PVP, {
 			q(72376, {	-- looting first War Crate of the day
 				["name"] = "Warmode Crate Looted",
@@ -435,7 +467,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			}),
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PVP, {
 			q(80415, {	-- after looting War Supply chest, first time per day
 				["name"] = "First War Supply Chest of the Day!",
@@ -445,6 +477,7 @@ root(ROOTS.HiddenQuestTriggers, {
 				["name"] = "First War Supply Chest of the Day!",
 				["isDaily"] = true,
 			}),
+			-- Only triggered 1 time per 1 chest. likely one is a daily/per-zone bloody token lockout
 			q(84447, {	-- after looting an Unbound Spoils War Supply Chest
 				["name"] = "Unbound Spoils Looted.",
 			}),

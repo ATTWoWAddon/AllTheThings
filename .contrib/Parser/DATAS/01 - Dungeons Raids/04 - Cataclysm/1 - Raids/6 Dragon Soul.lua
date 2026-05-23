@@ -218,6 +218,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(78890, {	-- Crystalline Geode
 						["description"] = "Contains random uncut Cataclysm gems.",
 						["cost"] = { { "c", 614, 1 } },	-- Mote of Darkness
+						["groups"] = {
+							i(71807),	-- Deepholm Iolite
+							i(71810),	-- Elven Peridot
+							i(71808),	-- Lava Coral
+							i(71806),	-- Lightstone
+							i(71805),	-- Queen's Garnet
+							i(71809),	-- Shadow Spinel
+						},
 					}),
 					i(78891, {	-- Elementium-coated Geode
 						["cost"] = { { "c", 615, 1 } },	-- Essence of Corrupted Deathwing

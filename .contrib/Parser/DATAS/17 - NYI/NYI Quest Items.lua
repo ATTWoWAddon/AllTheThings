@@ -761,8 +761,10 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(231804),	-- Game Piece
 			i(232522),	-- High Priest's Record[DNT]
 			i(231821),	-- Makeshift Explosives
+			i(229405),	-- Entropic Core
 			i(233005),	-- Om'taha's Toolkit[DNT]
 			i(229399),	-- Patram's Tuning Key
+			i(238296),	-- Phase Disruptor
 			i(232568),	-- Priest's Remains[DNT]
 			i(229398),	-- Sabeel's Tuning Key
 			i(229402),	-- Serving Tray
@@ -781,6 +783,101 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(231801),	-- Well-Worn Coin
 			i(229400),	-- Xaheen's Tuning Key
 			i(232630),	-- Xy Imports Ledger
+		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+			i(247894),	-- Dalaran Hearthstone
+		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			i(252952),	-- Bewitched Berries
+			i(257891),	-- Dog Whistle
+			i(253043),	-- Duskwood Candies
+			i(253042),	-- Felwood Candies
+			i(229995),	-- Gorgoa Reed
+			i(258217),	-- Honey Drops
+			i(252947),	-- Honeycomb
+			i(229913),	-- Letter from Aysa
+			i(252423),	-- Truffles
+		})),
+	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			i(239226),	-- [DNT]zzOldVoid Resonator
+			i(246443),	-- Amani Hatchet
+			i(244462),	-- Amani Orders
+			i(237142),	-- Arcane Viewfinder
+			i(248608),	-- Blackrock Bulletin Message
+			i(248610),	-- Blackrock Bulletin Message
+			i(248611),	-- Blackrock Bulletin Message
+			i(248612),	-- Blackrock Bulletin Message
+			i(248715),	-- Bones of de Fallen
+			i(248208),	-- Bound Journal
+			i(255161),	-- Callum's Belongings
+			i(258329),	-- Carrion Essence
+			i(238256),	-- Cattail
+			i(235651),	-- Conveniently-Shaped Claw
+			i(258572),	-- Crystal Essence
+			i(260368),	-- Dirt
+			i(248083),	-- Dusty Quartz Amulet
+			i(265710),	-- Elementary Voidcore
+			i(237772),	-- Everburning Coal
+			i(246729),	-- Fang of Shadra
+			i(249414),	-- Feelings Journal
+			i(248087),	-- Fernroot Choker
+			i(263471),	-- Fire Thing
+			i(238923),	-- Fragmented Coal
+			i(244425),	-- Gibby's Marbles
+			i(238502),	-- Gleaming Seedpod
+			i(238476),	-- Irritating Spores
+			i(246374),	-- Juvenile Blood
+			i(248085),	-- Leafworn Amber Ring
+			i(246054),	-- Light Altered Eye
+			i(243588),	-- Limonite Ochre
+			i(239195),	-- Lothar's Crumpled Shield
+			i(250705),	-- Naga Missive PH NAME
+			i(238359),	-- Nalorakk's Totem
+			i(253519),	-- Pathogenic Essence
+			i(237575),	-- PH_Dezco's Hammer
+			i(258573),	-- Plant Dye
+			i(246087),	-- Precious Key
+			i(238864),	-- Proclamation of Light
+			i(235656),	-- Relic of Domination
+			i(239199),	-- Revitalizing Draught
+			i(265655),	-- Ritual Components
+			i(252192),	-- Rune Key
+			i(264009),	-- S.O.S in a Bottle
+			i(248756),	-- Shadra's Gift
+			i(238891),	-- Shard of Naaru
+			i(248082),	-- Shiny Object
+			i(254368),	-- Soul Essence
+			i(239498),	-- Strange Sigil
+			i(248931),	-- Tarnished Vilebranch Coin
+			i(254381),	-- Troll Torch
+			i(244459),	-- Twilight Skirmisher's Chest Key
+			i(240838),	-- Twilight's Blade Missive
+			i(249401),	-- Vial of Gelatinous Ooze
+			i(254665),	-- Void "Ink"
+			i(241155),	-- Void Condenser
+			i(245346),	-- Void Sample
+			i(245347),	-- Void Sample
+			i(245348),	-- Void Sample
+			i(264357),	-- Void-Ridden Crab Meat
+			i(245276),	-- Zal'vithra Pigment
+		})),
+
+		-- 12.0.1
+		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+			i(243295),	-- Letter from Rhonin
+			i(249005),	-- Rhonin's Focus
+			i(246152),	-- Saptor Frill
+			i(268551),	-- Scroll of Reflection
+			i(253210),	-- Soothsayer's Signet
+			i(243294),	-- Staff of Rhonin
+			i(248723),	-- Stolen Documents
 		})),
 	}),
 }));

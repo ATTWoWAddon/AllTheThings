@@ -4749,16 +4749,16 @@ exploration(15707),	-- Chamber of Whispers
 exploration(15708),	-- The Dawning Span
 exploration(15709),	-- Teeming Burrow
 exploration(16300),	-- Home Interior
-exploration(16309),	-- Castle Nathria
-exploration(16381),	-- [DNT] \\ [DNT] Later Patch
-exploration(16387),	-- [DNT] \\ [DNT] Later Patch
-exploration(16391),	-- [DNT] \\ [DNT] Later Patch
-exploration(16392),	-- [DNT] \\ [DNT] Later Patch
-exploration(16402),	-- [DNT] \\ [DNT] Later Patch
-exploration(16403),	-- [DNT] \\ [DNT] Later Patch
-exploration(16406),	-- [DNT] \\ [DNT] Later Patch
-exploration(16407),	-- [DNT] \\ [DNT] Later Patch
-exploration(16409),	-- [DNT] \\ [DNT] Later Patch
+exploration(16309),	-- [DO NOT DISTURB] \\ Castle Nathria
+exploration(16381),	-- [DO NOT DISTURB] \\ [DNT] \\ [DNT] Later Patch
+exploration(16387),	-- [DO NOT DISTURB] \\ [DNT] \\ [DNT] Later Patch
+exploration(16391),	-- [DO NOT DISTURB] \\ [DNT] \\ [DNT] Later Patch
+exploration(16392),	-- [DO NOT DISTURB] \\ [DNT] \\ [DNT] Later Patch
+exploration(16402),	-- [DO NOT DISTURB] \\ [DNT] \\ [DNT] Later Patch
+exploration(16403),	-- [DO NOT DISTURB] \\ [DNT] \\ [DNT] Later Patch
+exploration(16406),	-- [DO NOT DISTURB] \\ [DNT] \\ [DNT] Later Patch
+exploration(16407),	-- [DO NOT DISTURB] \\ [DNT] \\ [DNT] Later Patch
+exploration(16409),	-- [DO NOT DISTURB] \\ [DNT] \\ [DNT] Later Patch
 exploration(16428),	-- Arathi Highlands RPE
 exploration(16430),	-- The Hinterlands
 exploration(16431),	-- Twilight Highlands
@@ -4809,10 +4809,10 @@ exploration(16475),	-- Shadra'Alor
 exploration(16476),	-- Saltspray Glen
 exploration(16477),	-- Dun Modr
 exploration(16478),	-- Thandol Span
-exploration(16533),	-- Quillgrave \\ [DNT][PH]
-exploration(16540),	-- Quillgrave \\ [DNT][PH]
+exploration(16533),	-- [DO NOT DISTURB] \\ Quillgrave \\ [DNT][PH]
+exploration(16540),	-- [DO NOT DISTURB] \\ Quillgrave \\ [DNT][PH]
 exploration(16551),	-- Vault of the Incarnates (V2)
-exploration(16621),	-- [DNT] \\ Red Hollow
+exploration(16621),	-- [DO NOT DISTURB] \\ [DNT] \\ Red Hollow
 12.0.0.63534
 exploration(15173),	-- Eversong Woods
 exploration(15355),	-- Harandar
@@ -5032,8 +5032,31 @@ exploration(16873),	-- Razorwind Camp
 exploration(16874),	-- Founders Point Camp
 12.0.1.64914
 exploration(16875),	-- Den of the Undreamt
+12.0.1.66838
+exploration(16310),	-- Isle of Quel'Danas
+exploration(16311),	-- Silvermoon City
+exploration(16312),	-- Eversong Woods
+exploration(16313),	-- Court of Blood
+exploration(16314),	-- Court of the Sun
+exploration(16315),	-- Falconwing Square
+exploration(16316),	-- Dawning Lane
+exploration(16317),	-- The Royal Exchange
+exploration(16318),	-- The Shining Span
+exploration(16319),	-- Murder Row
+exploration(16320),	-- Walk of Elders
+exploration(16321),	-- Silvermoon Harbor
+exploration(16322),	-- Sunwing Rookery
+exploration(16323),	-- Gardens of Remembrance
+exploration(16324),	-- The Bazaar
+exploration(16325),	-- Duskglow Gloriette
+exploration(16326),	-- Augurs' Terrace
+exploration(16327),	-- Lithiel's Landing
+exploration(16329),	-- North Sanctum
+exploration(16330),	-- Path of Dawn
+exploration(16331),	-- Sunstrider Isle
+exploration(16332),	-- The Great Sea
 12.0.5.66330
-exploration(16686),	-- Silvermoon City
+exploration(16686),	-- Silvermoon City, Prop Hunt \\ Silvermoon City
 exploration(16747),	-- Speaker's Rest
 exploration(16748),	-- Ritual Site Outskirts
 exploration(16766),	-- Broken Throne
@@ -5043,3 +5066,47 @@ exploration(16796),	-- Ritual Site
 exploration(16823),	-- Daggerspine Point
 exploration(16939),	-- Ritual Site
 exploration(16940),	-- Daggerspine Point
+12.0.7.67227
+exploration(16279),	-- Sporefall
+exploration(16297),	-- Sporefall
+exploration(16298),	-- Funggor Hollow
+exploration(16404),	-- [DO NOT DISTURB]
+exploration(16405),	-- [DO NOT DISTURB]
+exploration(16408),	-- [DO NOT DISTURB]
+exploration(16410),	-- [DO NOT DISTURB]
+exploration(16411),	-- [DO NOT DISTURB]
+exploration(16412),	-- [DO NOT DISTURB]
+exploration(16413),	-- [DO NOT DISTURB]
+exploration(16414),	-- [DO NOT DISTURB]
+exploration(16668),	-- The Hinterlands
+exploration(16669),	-- Durnholde Keep
+exploration(16900),	-- Val
+exploration(16920),	-- Void Acropolis
+exploration(16921),	-- Umbral Base Camp
+exploration(16922),	-- The Lost Holdout
+exploration(16923),	-- Frost Chitter Grotto
+exploration(16924),	-- Sleet-Rune Hollow
+exploration(16925),	-- Glacial Reservoir
+exploration(16926),	-- Steam Ravine
+exploration(16943),	-- Naigtal
+exploration(16945),	-- Ritual Site
+exploration(16946),	-- Lightbloom
+exploration(17047),	-- The Collapsed Passage
+exploration(17060),	-- Void Acropolis
+exploration(17062),	-- The Forgotten Depths
+exploration(17067),	-- The Lycaneum
+exploration(17068),	-- The Hushed Foyer
+exploration(17072),	-- The South Atrium
+exploration(17095),	-- Nexus Port
+exploration(17096),	-- Sporeforge
+exploration(17097),	-- Vennorax Wreckage
+exploration(17098),	-- Extraction Coast
+exploration(17099),	-- The Holding Pens
+exploration(17100),	-- Soltian Marsh
+exploration(17101),	-- Staging Grounds
+exploration(17102),	-- Command Point: Primos
+exploration(17103),	-- Vilaldoun
+exploration(17104),	-- Naigtal Outpost
+exploration(17195),	-- Sleeper's Grotto
+exploration(17198),	-- Manaforge: Arcvein
+exploration(17199),	-- Shoals of Rememberance

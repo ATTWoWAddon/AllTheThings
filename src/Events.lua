@@ -1,8 +1,8 @@
 
 local _, app = ...;
 
-local rawget, pairs, rawset, setmetatable, print, type, pcall, tinsert
-	= rawget, pairs, rawset, setmetatable, print, type, pcall, tinsert
+local pairs, setmetatable, print, type, pcall, tinsert
+	= pairs, setmetatable, print, type, pcall, tinsert
 
 -- Declare Custom Event Handlers
 local EventHandlers = setmetatable({
@@ -294,11 +294,11 @@ local function OnEndSequenceEvents()
 end
 -- Whenever the Event Runner is Reset, make sure to queue up any Sequence Events that need to be processed
 Runner.DefaultOnReset(OnEndSequenceEvents)
-local function QueueSequenceEvents(eventName)
+local function QueueSequenceEvents(eventName, useRunner)
 	local sequenceEvents = EventSequence[eventName]
 	if sequenceEvents then
 		-- DebugQueueSequencedEvents(eventName,#SequenceEventsStack,"+",#sequenceEvents)
-		if not ImmediateEvents[eventName] and (#SequenceEventsStack > 0 or IsRunning()) then
+		if useRunner then
 			-- add sequence events to the SequenceEventsStack if there's a Runner running
 			for i=#sequenceEvents,1,-1 do
 				-- DebugQueuedSequenceEvent(sequenceEvents[i],i)
@@ -324,10 +324,12 @@ local function HandleEvent(eventName, ...)
 	-- additionally, since some events can process on a Runner, then following Events need to also be pushed onto
 	-- the Event Runner so that they execute in the expected sequence
 	local handlers = EventHandlers[eventName]
-	if not ImmediateEvents[eventName] and (#SequenceEventsStack > 0 or RunnerEvents[eventName] or IsRunning()) then
+	local handlerCount = #handlers
+	local useRunner = not ImmediateEvents[eventName] and (#SequenceEventsStack > 0 or RunnerEvents[eventName] or IsRunning())
+	if useRunner then
 		-- DebugStartRunnerEvent(eventName,...)
 		-- Run(DebugRunnerEventStart, eventName, ...)
-		for i=1,#handlers do
+		for i=1,handlerCount do
 			-- Debug ONLY
 			-- Run(function(...)DebugStartRunnerFunc("Handler #",i) handlers[i](...) DebugEndRunnerFunc("Handler Done") end, ...)
 			-- Live
@@ -338,14 +340,14 @@ local function HandleEvent(eventName, ...)
 	else
 		-- DebugEventTriggered(eventName, ...)
 		-- DebugEventStart(eventName, ...)
-		for i=1,#handlers do
+		for i=1,handlerCount do
 			-- DebugStartRunnerFunc("Handler #",i)
 			handlers[i](...)
 			-- DebugEndRunnerFunc("Handler Done")
 		end
 		-- DebugEventDone(eventName)
 	end
-	QueueSequenceEvents(eventName)
+	QueueSequenceEvents(eventName, useRunner)
 end
 app.HandleEvent = HandleEvent
 -- Provides a unique function per EventName which can be used in a Callback without interfering with other Callback Events

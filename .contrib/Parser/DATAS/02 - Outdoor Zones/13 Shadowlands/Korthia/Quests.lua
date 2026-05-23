@@ -1682,7 +1682,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 178842 },	-- Zayhad, The Builder
 				["coord"] = { 60.9, 21.3, KORTHIA },
 				["groups"] = {
-					i(186165),	-- Residual Anima (QI!)
+					o(368602, {	-- Seeping Cone
+						i(186165),	-- Residual Anima (QI!)
+					}),
 				},
 			}),
 			q(64166, {	-- Random Memory Access

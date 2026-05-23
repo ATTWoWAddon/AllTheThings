@@ -15,7 +15,7 @@ local function CacheAccountWideMiscQuests()
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 
 	-- Cache some collection states for misc. once-per-account quests
-	for _,questID in ipairs(app.OPAQ or app.EmptyTable) do
+	for _,questID in ipairs(app.OPAQDB or app.EmptyTable) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
 		if not oneTimeQuests[questID] and IsQuestFlaggedCompleted(questID) then
 			-- Mark the character which completed the Quest

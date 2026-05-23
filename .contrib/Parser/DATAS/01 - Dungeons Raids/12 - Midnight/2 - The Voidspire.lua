@@ -321,12 +321,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 
 					}),
 				}),
+				n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
+					i(268650, {	-- Ascendant Voidshard
+						i(268552),	-- Ascendant Voidcore
+					}),
+				})),
 				BossOnly(AVERZIAN, {
 					i(264497),	-- Imperator's Torment Crystal (DECOR!)
+					i(268459, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Imperator Averzian
 				}),
 				BossOnly(VORASIUS, {
 					i(258522),	-- Plans: Bloomforged Greataxe (RECIPE!)
 					i(264498),	-- Voltaic Trigore Egg (DECOR!)
+					i(268460, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Vorasius
 				}),
 				n(240864, {	-- Blinky
 					i(268274),	-- Blinky's Collar
@@ -335,18 +342,22 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(264672),	-- Cosmic Ritual Stone (TOY!)
 					i(258123),	-- Pattern: Sunfire Silk Spellthread (RECIPE!)
 					i(264494),	-- Banded Domanaar Storage Crate (DECOR!)
+					i(268461, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Fallen-King Salhadaar
 				}),
 				BossOnly(EZZORAK_VAELGOR, {
 					i(258521),	-- Plans: Blood Knight's Impetus (RECIPE!)
 					i(264491),	-- Voidbound Holding Cell (DECOR!)
+					i(268462, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Vaelgor & Ezzorak
 				}),
 				BossOnly(VANGUARD, {
 					i(258517),	-- Plans: Knight-Commander's Palisade (RECIPE!)
 					i(262957),	-- Tattered Vanguard Banner (DECOR!)
+					i(268463, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Lightblinded Vanguard
 				}),
 				BossOnly(COSMOS, {
 					i(269269),	-- Devouring Ritual Spire (DECOR!)
 					i(268049, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Argent Trophy (DECOR!)
+					i(267488, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Crown of the Cosmos
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({

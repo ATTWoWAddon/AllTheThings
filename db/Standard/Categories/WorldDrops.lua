@@ -280,7 +280,7 @@ i(19269,{spellID=23679}),
 i(19278,{spellID=23680}),
 i(19259,{spellID=23678})}),
 flt(57,{
-s(447,1819,{collectible=false,f=57,lvl=8})}),
+s(447,1819,{f=57,lvl=8})}),
 flt(50,{
 i(3670,{description="Drops from Slimes in Classic zones."}),
 i(11733,{description="This item is now completely worthless.",f=200,lvl=21}),

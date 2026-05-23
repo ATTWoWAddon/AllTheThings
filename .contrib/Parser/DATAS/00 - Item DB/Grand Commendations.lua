@@ -440,3 +440,13 @@ h(i(238817, FACTION_VOLDUNAI));				-- Commendation of the Voldunai [300 Rep]
 a(i(238809, FACTION_WAVEBLADE_ANKOAN));		-- Commendation of the Waveblade Ankoan [300 Rep]
 h(i(238818, FACTION_ZANDALARI_EMPIRE));		-- Commendation of the Zandalari Empire [300 Rep]
 i(244848, FACTION_THE_SEVERED_THREADS);		-- Severed Threads Commendation [100 rep with choice of three subreps.] Not technically correct to apply metafaction but is close while only one rep may be attached.
+
+------------------
+-- PATCH 12.0.7 --
+------------------
+i(258841, FACTION_DRAGONSCALE_EXPEDITION);	-- Commendation of the Dragonscale Expedition
+i(258846, FACTION_DREAM_WARDENS);			-- Commendation of the Dream Wardens
+i(258843, FACTION_ISKAARA_TUSKARR);			-- Commendation of the Iskaara Tuskarr
+i(258845, FACTION_LOAMM_NIFFEN);			-- Commendation of the Loamm Niffen
+i(258842, FACTION_MARUUK_CENTAUR);			-- Commendation of the Maruuk Centaur
+i(258844, FACTION_VALDRAKKEN_ACCORD);		-- Commendation of the Valdrakken Accord

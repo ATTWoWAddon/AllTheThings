@@ -255,7 +255,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(262729),	-- Hand of the Rootkeeper
 			i(262732),	-- Heavy Bramblebolter
 			i(251935),	-- Lightgrasp Worldroot
-			i(264970),	-- Oblivion's Edge
 			i(249669),	-- Organ Piercer's Briarspear
 			i(251885),	-- Radiant Foil
 			i(249610),	-- Resinous Blossomblade
@@ -381,10 +380,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				}),
 				filter(COSMETIC, {
 					i(264849, {	-- Dewy Vinepouch (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2000 } },
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(264856, {	-- Vilebranch Lifeseer (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(264860, {	-- Twilight Magus's Cowl (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
@@ -460,8 +459,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				ach(61863),	-- Atal'Aman Discoveries
 				ach(61729),	-- Atal'Aman Stories
 			}),
-			n(EXPLORATION, {
-			}),
 			n(QUESTS, {
 				q(93409, {	-- Delver's Call: Atal'Aman
 					["provider"] = { "n", 254726 },	-- Fallen Amani Scout
@@ -500,8 +497,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				ach(61894),	-- Collegiate Calamity Discoveries
 				ach(61726),	-- Collegiate Calamity Stories
 			}),
-			n(EXPLORATION, {
-			}),
 			n(QUESTS, {
 				q(93384, {	-- Delver's Call: Collegiate Calamity
 					["provider"] = { "o", 612038 },	-- Agitated Tome
@@ -535,8 +530,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				ach(61893),	-- Parhelion Plaza Discoveries
 				ach(61725),	-- Parhelion Plaza Stories
 			}),
-			n(EXPLORATION, {
-			}),
 			n(QUESTS, {
 				q(93386, {	-- Delver's Call: Parhelion Plaza
 					["provider"] = { "o", 612894 },	-- Parhelion Plaza
@@ -561,10 +554,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					["questID"] = 94033,
 				}),
 			}),
-			n(REWARDS, {
-				filter(MISC, {
-				}),
-			}),
 		},
 	}),
 	m(SHADOWGUARD_POINT, {
@@ -574,8 +563,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(61900),	-- Shadowguard Point Discoveries
 				ach(61733),	-- Shadowguard Point Stories
-			}),
-			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
 				q(93428, {	-- Delver's Call: Shadowguard Point
@@ -609,10 +596,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					["questID"] = 94044,
 				}),
 			}),
-			n(REWARDS, {
-				filter(MISC, {
-				}),
-			}),
 		},
 	}),
 	m(SUNKILLER_SANCTUM, {
@@ -623,8 +606,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(61899),	-- Sunkiller Sanctum Discoveries
 				ach(61732),	-- Sunkiller Sanctum Stories
-			}),
-			n(EXPLORATION, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(3169, {	-- Base Node
@@ -662,16 +643,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					["coord"] = { 38.1, 49.0, SUNKILLER_SANCTUM },
 					["questID"] = 94042,
 				}),
-				---o(, {	-- Sturdy Chest
-				---	["coord"] = { x, y, SUNKILLER_SANCTUM },
-				---	["questID"] = ,
-				---}),
-			}),
-			n(REWARDS, {
-				filter(COSMETIC, {
-					filter(MISC, {
-					}),
-				}),
 			}),
 		},
 	}),
@@ -683,8 +654,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(61895),	-- The Darkway Discoveries
 				ach(61728),	-- The Darkway Stories
-			}),
-			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
 				q(93385, {	-- Delver's Call: The Darkway
@@ -720,8 +689,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				ach(61898),	-- The Gulf of Memory Discoveries
 				ach(61731),	-- The Gulf of Memory Stories
 			}),
-			n(EXPLORATION, {
-			}),
 			n(QUESTS, {
 				q(93416, {	-- Delver's Call: The Gulf of Memory
 					["provider"] = { "o", 612259 },	-- The Gulf of Memory
@@ -747,8 +714,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					["groups"] = { i(264805) },	-- Brann-O-Vision 3000 (TOY!)
 				}),
 			}),
-			n(REWARDS, {
-				filter(MISC, {
+			n(ZONE_DROPS, {
+				i(255826, {	-- Mysterious Skyshards
+					["sourceQuest"] = 90474,	-- The Legend of Aln'sharan
 				}),
 			}),
 		},
@@ -761,8 +729,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(61897),	-- The Grudge Pit Discoveries
 				ach(61724),	-- The Grudge Pit Stories
-			}),
-			n(EXPLORATION, {
 			}),
 			filter(MISC, {
 				o_repeated({
@@ -794,8 +760,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					["questID"] = 94021,
 				}),
 			}),
-			n(REWARDS, {
-				filter(MISC, {
+			n(ZONE_DROPS, {
+				i(255826, {	-- Mysterious Skyshards
+					["sourceQuest"] = 90474,	-- The Legend of Aln'sharan
 				}),
 			}),
 		},
@@ -807,8 +774,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(61892),	-- The Shadow Enclave Discoveries
 				ach(61727),	-- The Shadow Enclave Stories
-			}),
-			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
 				q(93372, {	-- Delver's Call: Shadow Enclave
@@ -822,7 +787,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					i(263368),	-- Armageddon and You - A Beginner's Guide to Thriving in the Apocalypse
 					i(263361),	-- Chicken Soup for the Soulless
 					i(263354),	-- Filling the Void in Your Heart
-					i(263350),	-- Harbringer Fan Fiction
+					i(263350),	-- Harbinger Fan Fiction
 					i(263379),	-- Personal Advertising Platform
 					i(263348),	-- Purple Is The New Black
 					i(263380),	-- Recruitment Pamphlets
@@ -846,10 +811,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					["questID"] = 94028,
 				}),
 			}),
-			n(REWARDS, {
-				filter(MISC, {
-				}),
-			}),
 		},
 	}),
 	m(TWILIGHT_CRYPTS, {
@@ -860,8 +821,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			n(ACHIEVEMENTS, {
 				ach(61896),	-- Twilight Crypts Discoveries
 				ach(61730),	-- Twilight Crypts Stories
-			}),
-			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
 				q(93410, {	-- Delver's Call: Twilight Crypts
@@ -919,5 +878,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93820, name(HEADERS.Faction, FACTION_THE_SINGULARITY, {isWeekly=true})),	-- The Singularity Rep
 		q(93821, name(HEADERS.Faction, FACTION_SILVERMOON_COURT, {isWeekly=true})),	-- Silvermoon Court Rep
 		q(93822, name(HEADERS.Faction, FACTION_HARATI, {isWeekly=true})),	-- Hara'ti Rep
+		q(93935, {isWeekly=true}),	-- Bonus Hero item from Bountiful chest
 	})),
 }));

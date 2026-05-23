@@ -2897,3 +2897,12 @@
 12.0.5.66330
 3201@@@Quest Path 11282: 12.0.5 Event - Prop Hunt - Teleporter - Upper > Lower
 3202@@@Quest Path 11283: 12.0.5 Event - Prop Hunt - Teleporter - Lower > Upper
+12.0.7.67227
+3267@@@Val Outpost
+3268@@@Glacial Reservoir
+3269@@@Void Acropolis
+3270@@@Steam Ravine
+3277@@@Naigtal Outpost
+3278@@@Fungal Processing
+3279@@@Transit Hub
+3280@@@Fungal Forest

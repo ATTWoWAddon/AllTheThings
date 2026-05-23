@@ -1658,7 +1658,22 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(4887, {	-- Dundun (PET!)
 				["displayID"] = 128490,
 			}),
-
+			-- With SpeciesID Attached
+			i(258739, {	-- Chillcrawler (PET!)
+				["displayID"] = 111522,
+			}),
+			i(262768, {	-- Sleepy Mandrake (PET!)
+				["displayID"] = 139713,
+			}),
+			i(262763, {	-- Plump Mandrake (PET!)
+				["displayID"] = 139711,
+			}),
+			i(262769, {	-- Screechy Mandrake (PET!)
+				["displayID"] = 139714,
+			}),
+			i(260341, {	-- Star the Lucky Dragon (PET!)
+				["displayID"] = 139067,
+			}),
 			-- Without SpeciesID Attached
 			i(242251, {	-- [NYI] Magical Broom Pet (PET!)
 				--["displayID"] = ,

@@ -36,8 +36,8 @@ root(ROOTS.Secrets, header(HEADERS.Item, 193373,	-- Phoenix Wishwing
 			["provider"] = { "n", 196214 },	-- Tarjin the Blind
 			["coord"] = { 16.1, 62.6, THE_WAKING_SHORES },
 			["cost"] = {
-				{ "i", 202062, 20 },	-- Ash Feather
-				{ "i", 199080, 15 },	-- Smoldering Phoenix Ash
+				{ "i", 202062, 20 },	-- 20x Ash Feather
+				{ "i", 199080, 15 },	-- 15x Smoldering Phoenix Ash
 				{ "i", 199203, 1 },	-- Phoenix Ash Talisman
 			},
 			["groups"] = {

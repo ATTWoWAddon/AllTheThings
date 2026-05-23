@@ -849,7 +849,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 4551 },	-- Michael Garrett
 						{ "i", 16210 },	-- Gordon's Crate
 					},
-					["coord"] = { 63.4, 48.6, UNDERCITY },
+					["coords"] = {
+						{ 44.9, 38.9, EASTERN_KINGDOMS },
+						{ 63.4, 48.6, UNDERCITY },
+					},
 					["maps"] = {
 						-- #if AFTER CATA
 						TIRISFAL_GLADES,

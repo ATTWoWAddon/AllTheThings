@@ -683,7 +683,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(58582, {	-- Return of the Black Prince
 				["description"] = "Automatically granted.",
 				["provider"] = { "o", 369894 },	-- Urgent Missive
-				["coord"] = { 58.5, 62.6, ZANDALAR },
+				["coord"] = { 58.5, 62.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(50881, {	-- Royal Report

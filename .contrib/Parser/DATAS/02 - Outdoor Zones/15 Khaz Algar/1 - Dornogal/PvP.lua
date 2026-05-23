@@ -51,22 +51,34 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(80185),	-- Preserving Solo
 				q(80189),	-- Preserving Teamwork
 				q(81796, {	-- Sparks of War: Azj-Kahet
-					i(219934),	-- Spark of War (QI!)
+					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
+					["groups"] = {
+						i(219934),	-- Spark of War (QI!)
+					},
 				}),
 				q(81795, {	-- Sparks of War: Hallowfall
-					i(219934),	-- Spark of War (QI!)
+					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
+					["groups"] = {
+						i(219934),	-- Spark of War (QI!)
+					},
 				}),
 				q(81793, {	-- Sparks of War: Isle of Dorn
-					i(219934),	-- Spark of War (QI!)
+					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
+					["groups"] = {
+						i(219934),	-- Spark of War (QI!)
+					},
 				}),
 				q(81794, {	-- Sparks of War: The Ringing Deeps
-					i(219934),	-- Spark of War (QI!)
+					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
+					["groups"] = {
+						i(219934),	-- Spark of War (QI!)
+					},
 				}),
 				q(86853, {	-- Sparks of War: Undermine
-					["timeline"] = { ADDED_11_1_0 },
+					["timeline"] = { ADDED_11_1_0, REMOVED_12_0_0 },
 				}),
 				q(90781, {	-- Sparks of War: K'aresh
-					["timeline"] = { ADDED_11_2_0 },
+					["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 				}),
 				a(q(84687, {	-- Against Overwhelming Odds [A]
 					["timeline"] = { ADDED_12_0_0 },
@@ -76,6 +88,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				})),
 			})),
 			n(VENDORS, {
+				n(219213, {	-- Gilderann <War Mode Quartermaster>
+					["coord"] = { 55.2, 76.8, DORNOGAL },
+					["groups"] = {
+						i(225969, {	-- Forged Flag of Victory (TOY!)
+							["timeline"] = { ADDED_12_0_0 },
+							["cost"] = {{"c",BLOODY_TOKENS,1500}},	-- 1500 Bloody Tokens
+						}),
+					},
+				}),
 				n(219215, {	-- Hotharn <Competitor's Recipes>
 					["coord"] = { 55.5, 77.1, DORNOGAL },
 					["groups"] = sharedData({
@@ -178,7 +199,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}),
 							i(230285, {	-- Astral Combatant's Heraldry
 								["cost"] = { { "c", HONOR, 350 } },
-								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(230287, {	-- Astral Gladiator's Heraldry
 								["cost"] = { { "c", CONQUEST, 175 } },

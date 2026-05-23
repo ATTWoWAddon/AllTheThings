@@ -88,7 +88,7 @@ root(ROOTS.Zones, {
 								i(138016, {	-- Clothes Chest Pattern: Dalaran Citizens (RECIPE!)
 									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
-								i(137826, {	-- Design: Sorcerous Shadowruby Pendant [Rank 2]
+								i(137826, {	-- Design: Sorcerous Shadowruby Pendant [Rank 2] (RECIPE!)
 									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(139427, {	-- Wild Mana Wand

@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
 		n(TREASURES, {
 			-- From Voidstorm Treasures
-			i(259373),	-- Formula: Ren'dorei Postage Repository (RECIPE!)
+			i(259373),	-- Formula: Ren'dorei Postal Repository (RECIPE!)
 			i(247498),	-- Recipe: Entropic Illuminant (RECIPE)
 			header(HEADERS.Achievement, 62126, {	-- Treasures of Voidstorm
 				o(612891, {	-- Bloody Sack

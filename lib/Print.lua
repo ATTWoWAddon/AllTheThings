@@ -8,7 +8,7 @@ app.print = function(...)
 	print(app.L.SHORTTITLE, ...);
 end
 app.report = function(...)
-	if ... then
+	if select("#", ...) > 0 then
 		app.print(...);
 	end
 	app.print(app.Version..": "..app.L.PLEASE_REPORT_MESSAGE);

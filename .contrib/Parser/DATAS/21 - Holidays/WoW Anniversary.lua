@@ -261,6 +261,20 @@ WOW_ANNIVERSARY_TWENTYONE = createHeader({
 		en = WOWAPI_GetAchievementName(61406),
 	},
 });
+-- WOW_ANNIVERSARY_TWENTYTWO = createHeader({
+-- 	readable = "WoW's 22nd Anniversary",
+-- 	icon = 133783,
+-- 	eventID = 1808,
+-- 	eventSchedule = {
+-- 		0,	-- November 17th through December 8th
+-- 		2026, 11, 17,	-- 11/17/2026
+-- 		2026, 12, 8,	-- 12/08/2026
+-- 	},
+-- 	text = {
+-- 		-- en = WOWAPI_GetAchievementName(61406),
+-- 		en = "WoW's 22nd Anniversary",
+-- 	},
+-- });
 
 local BRONZE_TOKEN = 3100;
 

@@ -1,3 +1,9 @@
-12.0.5.66330
-fp(3201),	-- Quest Path 11282: 12.0.5 Event - Prop Hunt - Teleporter - Upper > Lower
-fp(3202),	-- Quest Path 11283: 12.0.5 Event - Prop Hunt - Teleporter - Lower > Upper
+12.0.7.67227
+fp(3267),	-- Val Outpost
+fp(3268),	-- Glacial Reservoir
+fp(3269),	-- Void Acropolis
+fp(3270),	-- Steam Ravine
+fp(3277),	-- Naigtal Outpost
+fp(3278),	-- Fungal Processing
+fp(3279),	-- Transit Hub
+fp(3280),	-- Fungal Forest

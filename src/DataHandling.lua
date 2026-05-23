@@ -91,6 +91,17 @@ local function Visibility_LootMode(group)
 		return 2
 	end
 end
+if app.__perf then
+	Visibility_ForceShow = app.__perf.CaptureFunction(Visibility_ForceShow, "Visibility_ForceShow", "app.Modules.DataHandling")
+	Visibility_Total_Group = app.__perf.CaptureFunction(Visibility_Total_Group, "Visibility_Total_Group", "app.Modules.DataHandling")
+	Visibility_Total_Thing = app.__perf.CaptureFunction(Visibility_Total_Thing, "Visibility_Total_Thing", "app.Modules.DataHandling")
+	Visibility_Cost = app.__perf.CaptureFunction(Visibility_Cost, "Visibility_Cost", "app.Modules.DataHandling")
+	Visibility_Upgrade = app.__perf.CaptureFunction(Visibility_Upgrade, "Visibility_Upgrade", "app.Modules.DataHandling")
+	Visibility_Trackable_Group = app.__perf.CaptureFunction(Visibility_Trackable_Group, "Visibility_Trackable_Group", "app.Modules.DataHandling")
+	Visibility_Trackable_Thing = app.__perf.CaptureFunction(Visibility_Trackable_Thing, "Visibility_Trackable_Thing", "app.Modules.DataHandling")
+	Visibility_Custom = app.__perf.CaptureFunction(Visibility_Custom, "Visibility_Custom", "app.Modules.DataHandling")
+	Visibility_LootMode = app.__perf.CaptureFunction(Visibility_LootMode, "Visibility_LootMode", "app.Modules.DataHandling")
+end
 local GroupVisibilityChecks = {
 	Visibility_ForceShow,
 	Visibility_Total_Group,
@@ -125,7 +136,16 @@ local function CacheFilterFunctions()
 	SetThingVisibility = DefaultThingVisibility and SetDefaultVisibility or BaseSetThingVisibility
 	-- Add Loot Visibility if in Settings
 	if app.Settings.Collectibles.Loot then
-		ThingVisibilityChecks[#ThingVisibilityChecks + 1] = Visibility_LootMode
+		local found = false
+		for i=#ThingVisibilityChecks,1,-1 do
+			if ThingVisibilityChecks[i] == Visibility_LootMode then
+				found = true
+				break
+			end
+		end
+		if not found then
+			ThingVisibilityChecks[#ThingVisibilityChecks + 1] = Visibility_LootMode
+		end
 	else
 		for i=#ThingVisibilityChecks,1,-1 do
 			if ThingVisibilityChecks[i] == Visibility_LootMode then

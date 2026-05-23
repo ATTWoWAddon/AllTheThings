@@ -1016,6 +1016,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				i(263461),	-- Thalassian Skinner's Notes
 			},
 		},{
+			q(93713),	-- Essential Materials
 			q(93714),	-- Minor Scales
 			q(93712),	-- Style and Skill
 			q(93710),	-- Tempered in Darkness
@@ -1056,7 +1057,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			o(525897, {	-- Lightbloom Afflicted Hide
 				["coord"] = { 76.0, 51.1, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 89166,
-				["groups"] = { i(238628) },	-- Lightbloom Afflicted Hide
+				["groups"] = { i(238628) },	-- Lightbloom-Afflicted Hide
 			}),
 			o(525895, {	-- Primal Hide
 				["coord"] = { 69.5, 49.2, MAP.MIDNIGHT.HARANDAR },

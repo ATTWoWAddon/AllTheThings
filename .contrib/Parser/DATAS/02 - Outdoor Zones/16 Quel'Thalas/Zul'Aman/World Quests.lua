@@ -25,6 +25,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								{ 27.5, 35.9, MAP.MIDNIGHT.ZULAMAN },
 								{ 27.6, 34.8, MAP.MIDNIGHT.ZULAMAN },
 								{ 28.1, 37.0, MAP.MIDNIGHT.ZULAMAN },
+								{ 28.6, 38.2, MAP.MIDNIGHT.ZULAMAN },
 								{ 28.1, 39.0, MAP.MIDNIGHT.ZULAMAN },
 								{ 28.4, 34.2, MAP.MIDNIGHT.ZULAMAN },
 								{ 28.5, 38.5, MAP.MIDNIGHT.ZULAMAN },
@@ -94,6 +95,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								{ 25.0, 64.5, MAP.MIDNIGHT.ZULAMAN },
 								{ 25.8, 63.7, MAP.MIDNIGHT.ZULAMAN },
 								{ 25.1, 64.6, MAP.MIDNIGHT.ZULAMAN },
+								{ 26.2, 62.4, MAP.MIDNIGHT.ZULAMAN },
 								{ 26.3, 62.8, MAP.MIDNIGHT.ZULAMAN },
 							},
 							["groups"] = {

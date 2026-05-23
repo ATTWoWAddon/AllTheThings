@@ -602,3 +602,23 @@ end, {
 	"Usage : /att [search|?] [link]",
 	"Allows performing a search against ATT data and navigating to the found result(s)",
 })
+
+do
+	local FilterBind = app.Modules.Filter.Filters.Bind
+	local function SearchForMissingItemsRecursively(group, listing)
+		-- app.PrintDebug("SearchForMissingItemsRecursively",app:SearchLink(group))
+		if group.visible then
+			if group.itemID and (group.collectible or (group.total and group.total > 0)) and not FilterBind(group) then
+				listing[#listing + 1] = group
+			end
+			local g = group.g
+			if g and group.expanded then
+				-- Go through the sub groups and determine if any of them have a response.
+				for i=1,#g do
+					SearchForMissingItemsRecursively(g[i], listing)
+				end
+			end
+		end
+	end
+api.SearchForMissingItemsRecursively = SearchForMissingItemsRecursively
+end

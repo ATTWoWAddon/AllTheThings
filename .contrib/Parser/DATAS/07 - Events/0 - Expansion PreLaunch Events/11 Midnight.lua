@@ -77,6 +77,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 						["groups"] = { i(246399) },	-- Cultist Dagger (QI!)
 					}),
 					i(246400),	-- Cultist Robes (QI!)
+					i(246397),	-- Twilight Cultist Robes (QI!)
 				},
 			}),
 			------ Stay awhile and listen ------

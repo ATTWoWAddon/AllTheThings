@@ -10,6 +10,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["collectible"] = false,
 				}),
 			}),
+			o(297879, {	-- Bespelled Chest
+				["description"] = "Click the inactive torches.",
+				["questID"] = 53472,
+				["coord"] = { 55.60, 51.80, DRUSTVAR },
+				["groups"] = {
+					i(163790),	-- Spooky Incantation
+				},
+			}),
 			o(297069, {	-- Dresser
 				["description"] = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and interact with this object.",
 				["sourceQuest"] = 50763,	-- One Last Request
@@ -49,6 +57,38 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(296917, {	-- Drust Stele: The Tree
 				["coord"] = { 27.3, 48.3, DRUSTVAR },
 			}),
+			o(297881, {	-- Enchanted Chest
+				["description"] = "Click the inactive torches.",
+				["questID"] = 53474,
+				["coord"] = { 25.50, 24.20, DRUSTVAR },
+				["groups"] = {
+					i(163796),	-- Wolf Pup Spine
+				},
+			}),
+			o(297880, {	-- Ensorcelled Chest
+				["questID"] = 53473,
+				["coord"] = { 67.70, 73.70, DRUSTVAR },
+				["groups"] = {
+					i(163791),	-- Miniature Stag Skull
+				},
+			}),
+			o(297878, {	-- Hexed Chest
+				["description"] = "Click the inactive torches.",
+				["questID"] = 53471,
+				["coord"] = { 18.50, 51.30, DRUSTVAR },
+				["groups"] = {
+					i(163789),	-- Bundle of Wicker Stick
+				},
+			}),
+			o(297828, {	-- Merchant's Chest
+				["questID"] = 53357,
+				["coord"] = { 25.69, 20.03, DRUSTVAR },
+				["description"] = "Look for the Gorging Raven flying above with the 'Holding Keys' buff, and kill it to get the key to open this chest.",
+				["cost"] = {{"i",163710,1}},	-- Merchant's Key
+				["groups"] = {
+					i(POLISHED_PET_CHARM),
+				},
+			}),
 			o(298766, {	-- Old Crossbow
 				["coord"] = { 35.53, 51.88, DRUSTVAR },
 				["groups"] = {
@@ -73,13 +113,43 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(163747),	-- Old Knife
 				},
 			}),
-			i(163497, {	-- Wicker Pup (PET!)
-				["description"] = "You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.\nRight-Click for more information.",
-				["cost"] = {
-					{ "i", 163790, 1 },	-- Spooky Incantation
-					{ "i", 163796, 1 },	-- Wolf Pup Spine
-					{ "i", 163791, 1 },	-- Miniature Stag Skull
-					{ "i", 163789, 1 },	-- Bundle of Wicker Stick
+			o(297891, {	-- Runebound Cache
+				["questID"] = 53385,
+				["coord"] = { 63.3, 65.8, DRUSTVAR },
+				["description"] = "Left. Down. Up. Right.",
+				["groups"] = {
+					i(163743),	-- Drust Soulcatcher
+				},
+			}),
+			o(297892, {	-- Runebound Chest
+				["questID"] = 53386,
+				["coord"] = { 44.2, 27.8, DRUSTVAR },
+				["description"] = "Left. Right. Down. Up.",
+				["groups"] = {
+					i(163742),	-- Heartsbane Grimoire (TOY!)
+				},
+			}),
+			o(297893, {	-- Runebound Coffer
+				["questID"] = 53387,
+				["coord"] = { 33.68, 71.74, DRUSTVAR },
+				["description"] = "Right. Up. Left. Down.",
+				["groups"] = {
+					i(163740),	-- Drust Ritual Knife (TOY!)
+				},
+			}),
+			o(298920, {	-- Stolen Thornspeaker Cache
+				["questID"] = 53475,
+				["coord"] = { 24.3, 48.5, DRUSTVAR },
+				["description"] = "Enter the cave at 24.70, 48.95.",
+				["sym"] = {{"select","itemID",
+					POLISHED_PET_CHARM,
+				}},
+			}),
+			o(297825, {	-- Web-Covered Chest
+				["questID"] = 53356,
+				["coord"] = { 33.7, 30.1, DRUSTVAR },
+				["groups"] = {
+					i(160053),	-- Battle-Scarred Augment Rune
 				},
 			}),
 		}),

@@ -1355,3 +1355,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		})),
 	})),
 })));
+
+root(ROOTS.HiddenQuestTriggers, prof(ALCHEMY, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+		q(42083),	-- on turn-in of (42081)
+	}))
+}));

@@ -206,6 +206,10 @@ local function CreateRunner(name)
 	end
 	local SetRunnerCoroutine = function()
 		RunnerCoroutine = c_create(function()
+			local FunctionQueue = FunctionQueue
+			local ParameterBucketQueue = ParameterBucketQueue
+			local ParameterSingleQueue = ParameterSingleQueue
+			local Config = Config
 			while true do
 				local frameStartTime = Config.DebugFrameTime and GetTimePreciseSec() or nil
 				perFrame = Config.PerFrame

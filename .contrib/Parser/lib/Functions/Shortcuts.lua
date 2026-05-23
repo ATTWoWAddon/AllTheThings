@@ -1465,6 +1465,9 @@ raceWithoutLock = function(id, t)						-- Create a CHARACTER RACE Object without
 	t.type = HEADERS.Race;
 	return t;
 end
+rawdecor = function(id, t)								-- Create a Raw Decor Object
+	return struct("decorID", id, t)
+end
 recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
 end

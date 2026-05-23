@@ -602,7 +602,9 @@ local INSTANCE_GROUPS = {
 				i(170509),	-- Performant Logic Board
 				i(168748),	-- Performant Refined Logic Board
 				i(169774),	-- Progression Sprocket
+				i(168785),	-- Subroutine: Defragmentation
 				i(167556),	-- Subroutine: Overclock
+				i(168800),	-- Subroutine: Recalibration
 			}),
 		}),
 	}),

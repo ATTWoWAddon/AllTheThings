@@ -100,6 +100,14 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 			title(662),	-- [PH] <Name>
 			title(663),	-- [PH] <Name>
 		})),
+
+		-- 12.0.1
+		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+			title(762),	-- Azeroth's Top Ten Youth <Name>
+			title(764),	-- Big Brother <Name>
+			title(763),	-- Model of the Era <Name>
+			title(761),	-- <Name>, World Apex
+		})),
 	}),
 }));
 -- #endif

@@ -621,6 +621,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86565 },	-- No Prayer for the Wicked
 						["provider"] = { "n", 239720 },	-- Lucia Nightbreaker
 						["coord"] = { 42.4, 75.4, MAP.MIDNIGHT.VOIDSTORM },
+						["groups"] = {
+							i(247713),	-- Reliquary of Darkness (QI!)
+						},
 					}),
 					q(91339, {	-- Smothered in the Crib
 						["sourceQuests"] = { 90910 },	-- Overwhelming Darkness
@@ -640,6 +643,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 239720 },	-- Lucia Nightbreaker
 						["coord"] = { 47.9, 78.6, MAP.MIDNIGHT.VOIDSTORM },
+						["groups"] = {
+							i(247854),	-- Filled Reliquary of Darkness (QI!)
+						},
 					}),
 					q(91343, {	-- Ambition's Reward
 						["sourceQuests"] = { 91341 },	-- Unlimited
@@ -1013,6 +1019,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									{ 28.3, 63.3, MAP.MIDNIGHT.VOIDSTORM },
 									{ 28.8, 62.8, MAP.MIDNIGHT.VOIDSTORM },
 									{ 29.3, 63.6, MAP.MIDNIGHT.VOIDSTORM },
+									{ 30.4, 62.5, MAP.MIDNIGHT.VOIDSTORM },
 									{ 30.4, 63.9, MAP.MIDNIGHT.VOIDSTORM },
 									{ 31.1, 64.6, MAP.MIDNIGHT.VOIDSTORM },
 									{ 31.8, 65.2, MAP.MIDNIGHT.VOIDSTORM },
@@ -1022,6 +1029,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								},
 								["groups"] = {
 									i(257728),	-- Condensed Void Shard (QI!)
+									i(257727),	-- Condensed Void Reserves (QI!)
+									i(257870),	-- Void Residue (QI!)
 									o(609910),	-- Depleted Void Canister
 									o(580092),	-- Brimming Void Canister
 								},
@@ -1614,8 +1623,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					248583,	-- Decimus
 				},
 				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
-				--["isWeekly"] = true,	-- TODO: likely will be on live
-				["repeatable"] = true,	-- TODO: beta only?
+				["repeatable"] = true,
 				["groups"] = {
 					--spell(1276894),	-- Transmute Elemental Voidcore
 					i(265695),	-- Elementary Voidcore Shard (QI!)
@@ -1625,6 +1633,55 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["sourceQuests"] = { 94625 },	-- An Elementary Voidcore (TODO: unsure if weekly is good questID as source)
 				["provider"] = { "n", 243907 },	-- Decimus
 				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+			}),
+			q(95268, {	-- New Tools, New Heights
+				["sourceQuests"] = { 94675 },	-- Voidforge Reforged
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_5 },
+				["groups"] = { i(269668) },	-- Hungering Oblivium (QI!)
+			}),
+			q(95373, {	-- A Nebulous Endeavour
+				["sourceQuests"] = { 94675 },	-- Voidforge Reforged
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_5 },
+				["repeatable"] = true,
+			}),
+			q(95279, {	-- Nebulous Voidcores: Gold
+				["sourceQuests"] = { 95373 },	-- A Nebulous Endeavour
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_5 },
+				["repeatable"] = true,
+			}),
+			q(95290, {	-- Nebulous Voidcores: Voidlight Marl
+				["sourceQuests"] = { 95373 },	-- A Nebulous Endeavour
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_5 },
+				["repeatable"] = true,
+			}),
+			q(95304, {	-- Nebulous Voidcores: Veteran Dawncrest
+				["sourceQuests"] = { 95373 },	-- A Nebulous Endeavour
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_5 },
+				["repeatable"] = true,
+			}),
+			q(95269, {	-- Feeding the Nilhammer
+				["sourceQuests"] = { 95268 },	-- New Tools, New Heights
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_5 },
+				["isWeekly"] = true,
+				["groups"] = { i(269668) },	-- Hungering Oblivium (QI!)
+			}),
+			q(95271, {	-- The Ascendant Nilhammer
+				["provider"] = { "n", 243907 },	-- Decimus
+				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
+				["timeline"] = { ADDED_12_0_5 },
+				["groups"] = { i(268650) },	-- Ascendant Voidshard
 			}),
 		}),
 	}),

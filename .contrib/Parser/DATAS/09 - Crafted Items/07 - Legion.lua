@@ -656,15 +656,70 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 	})),
 	prof(JEWELCRAFTING, {
-		filter(TOYS, {
-			i(130254),	-- Chatterstone (TOY!)
-			i(130251),	-- JewelCraft (TOY!)
+		header(HEADERS.Spell, 31252, {	-- Prospecting
+			i(151718, {["timeline"] = {ADDED_7_3_0}}),	-- Argulite
+			i(130174),	-- Azsunite
+			i(130175),	-- Chaotic Spinel
+			i(151720, {["timeline"] = {ADDED_7_3_0}}),	-- Chemirine
+			i(130180),	-- Dawnlight
+			i(130173),	-- Deep Amber
+			i(130179),	-- Eye of Prophecy
+			i(151722, {["timeline"] = {ADDED_7_3_0}}),	-- Florid Malachite
+			i(130178),	-- Furystone
+			i(129100),	-- Gem Chip
+			i(151721, {["timeline"] = {ADDED_7_3_0}}),	-- Hesselian
+			i(151579, {["timeline"] = {ADDED_7_3_0}}),	-- Labradorite
+			i(151719, {["timeline"] = {ADDED_7_3_0}}),	-- Lightsphene
+			i(130182),	-- Maelstrom Sapphire
+			i(130181),	-- Pandemonite
+			i(130177),	-- Queen's Opal
+			i(130172),	-- Sangrite
+			i(130183),	-- Shadowruby
+			i(130176),	-- Skystone
 		}),
-		n(HEAD, {
-			i(151587),	-- Empyrial Cosmic Crown
-			i(151588),	-- Empyrial Deep Crown
-			i(151589),	-- Empyrial Elemental Crown
-			i(151590),	-- Empyrial Titan Crown
+		n(DISCOVERY, {
+			r(225902),	-- Mass Prospect Leystone
+			r(225904),	-- Mass Prospect Felslate
+		}),
+		n(ARMOR, {
+			i(151587, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Cosmic Crown
+			i(151588, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Deep Crown
+			i(151589, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Elemental Crown
+			i(151590, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Titan Crown
+		}),
+		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(245557),	-- Shaded Suramar Window (DECOR!)
+			i(258227),	-- Suramar Jeweler's Assortment (DECOR!)
+		})),
+		filter(FINGER_F, {
+			i(130225),	-- Azsunite Loop
+			i(130231),	-- Dawnlight Band
+			i(130223),	-- Deep Amber Loop
+			i(130230),	-- Maelstrom Band
+			i(130229),	-- Prophetic Band
+			i(136711),	-- Queen's Opal Loop
+			i(136713),	-- Shadowruby Band
+			i(130224),	-- Skystone Loop
+		}),
+		filter(GEMS, {
+			i(130215),	-- Deadly Deep Amber
+			i(151580, {["timeline"] = {ADDED_7_3_0}}),	-- Deadly Deep Chemirine
+			i(130219),	-- Deadly Eye of Prophecy
+			i(151584, {["timeline"] = {ADDED_7_3_0}}),	-- Masterful Argulite
+			i(130218),	-- Masterful Queen's Opal
+			i(130222),	-- Masterful Shadowruby
+			i(130216),	-- Quick Azsunite
+			i(130220),	-- Quick Dawnlight
+			i(151583, {["timeline"] = {ADDED_7_3_0}}),	-- Quick Lightsphene
+			i(130247),	-- Saber's Eye of Agility
+			i(130248),	-- Saber's Eye of Intellect
+			i(130246),	-- Saber's Eye of Strength
+			i(151585, {["timeline"] = {ADDED_7_3_0}}),	-- Versatile Labradorite
+			i(130221),	-- Versatile Maelstrom Sapphire
+			i(130217),	-- Versatile Skystone
+		}),
+		filter(MISC, {
+			i(130250),	-- Jeweled Lockpick
 		}),
 		filter(NECK_F, {
 			i(130241),	-- Ancient Maelstrom Amulet
@@ -684,28 +739,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(130235),	-- Twisted Pandemonite Choker
 			i(130238),	-- Vindictive Pandemonite Choker
 		}),
-		filter(FINGER_F, {
-			i(130225),	-- Azsunite Loop
-			i(130231),	-- Dawnlight Band
-			i(130223),	-- Deep Amber Loop
-			i(130230),	-- Maelstrom Band
-			i(130229),	-- Prophetic Band
-			i(136711),	-- Queen's Opal Loop
-			i(136713),	-- Shadowruby Band
-			i(130224),	-- Skystone Loop
+		filter(REAGENTS, {
+			i(130245),	-- Saber's Eye
 		}),
-		spell(31252, {	-- Prospecting
-			i(151718),	-- Argulite
-			i(151720),	-- Chemirine
-			i(151722),	-- Florid Malachite
-			i(151721),	-- Hesselian
-			i(151579),	-- Labradorite
-			i(151719),	-- Lightsphene
+		filter(TOYS, {
+			i(130254),	-- Chatterstone (TOY!)
+			i(130251),	-- JewelCraft (TOY!)
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
-			i(245557),	-- Shaded Suramar Window (DECOR!)
-			i(258227),	-- Suramar Jeweler's Assortment (DECOR!)
-		})),
 	}),
 	prof(LEATHERWORKING, {
 		n(ARMOR, {

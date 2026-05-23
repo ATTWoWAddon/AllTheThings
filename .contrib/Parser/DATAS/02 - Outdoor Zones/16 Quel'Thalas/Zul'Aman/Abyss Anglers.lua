@@ -15,39 +15,74 @@ local ANGLER_PEARLS = 3373;
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
-		-- This event was postponed from 12.0.1 launch to 12.0.5
-		n(ABYSS_ANGLERS, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1_LAUNCH, ADDED_12_0_5 }, }, {
+		n(ABYSS_ANGLERS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 }, }, {
 			n(ACHIEVEMENTS, {	-- Achievements do not reward Cosmetics, Pets, or Diving Upgrades. They unlock the ability for you to buy them from the vendor.
-				ach(62118),	-- Abyss Anglers: Amazardhide Catch Case
-				ach(62117),	-- Abyss Anglers: Boarhide Catch Sack
+				ach(62776),	-- Abyss Anglers: All Blue Angler
+				ach(62760),	-- Abyss Anglers: Angler Physics
 				ach(62272),	-- Abyss Anglers: Certified Depthdiver
+				ach(62775),	-- Abyss Anglers: Delicate Diver
 				ach(62208),	-- Abyss Anglers: Depth Grease
 				ach(62210),	-- Abyss Anglers: Depthdiver's Used Tank
+				ach(62829),	-- Abyss Anglers: Don't Know What You Expected
 				ach(62218),	-- Abyss Anglers: Even The Best
 				ach(62211),	-- Abyss Anglers: Fathom-Tested Tank
+				ach(62117),	-- Abyss Anglers: Finnow Chum
+				ach(62222),	-- Abyss Anglers: Free Transport
 				ach(62221),	-- Abyss Anglers: Fresh Depth Tech
-				ach(62215),	-- Abyss Anglers: Heavy Harpoon Cannon
-				ach(62216),	-- Abyss Anglers: Hollowcore Harpoon Turret
-				ach(62217),	-- Abyss Anglers: Idol of the Depths
-				ach(62343),	-- Abyss Anglers: Legends Lurk Beneath
-				ach(62119),	-- Abyss Anglers: Loaknit-Woven Catch Satchel
+				ach(62759),	-- Abyss Anglers: History Below
+				ach(62217, {	-- Abyss Anglers: Idol of the Depths
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						62117,	-- Abyss Anglers: Finnow Chum
+						62210,	-- Abyss Anglers: Depthdiver's Used Tank
+						62218,	-- Abyss Anglers: Even The Best
+						62221,	-- Abyss Anglers: Fresh Depth Tech
+						62219,	-- Abyss Anglers: No Sea Can Hold Me
+						62220,	-- Abyss Anglers: Proper Procedure
+						62207,	-- Abyss Anglers: Reinforced Joints
+						62213,	-- Abyss Anglers: Shallows Net
+						62222,	-- Abyss Anglers: Free Transport
+					}},
+				}),
+				ach(62773, {	-- Abyss Anglers: Jeju's New Rival
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						62772, -- Abyss Anglers: Now That's Anglin'
+						62762, -- Abyss Anglers: Top of the Class
+						62271, -- Abyss Anglers: Trench Berserker
+						62763, -- Abyss Anglers: Vintage Collector
+					}},
+				}),
+				ach(62778),	-- Abyss Anglers: Luck of the Loa
+				ach(62343),	-- Abyss Anglers: Myths from Beneath
+				ach(62119),	-- Abyss Anglers: Murkskimmer Meat
 				ach(62212),	-- Abyss Anglers: Nalorakk's Breath Tank
 				ach(62219),	-- Abyss Anglers: No Sea Can Hold Me
+				ach(62774),	-- Abyss Anglers: Not Done Yet
+				ach(62772),	-- Abyss Anglers: Now That's Anglin'
+				ach(62761),	-- Abyss Anglers: One with the Depths
 				ach(62209),	-- Abyss Anglers: Pahk Trench Fins
+				ach(62777),	-- Abyss Anglers: Pearls to the Abyss
+				ach(62118),	-- Abyss Anglers: Plecofin Bait
 				ach(62506),	-- Abyss Anglers: Pressurized Eyeglass
 				ach(62220),	-- Abyss Anglers: Proper Procedure
 				ach(62207),	-- Abyss Anglers: Reinforced Joints
+				ach(62832),	-- Abyss Anglers: Reservation for One
 				ach(62213),	-- Abyss Anglers: Shallows Net
-				ach(62222),	-- Abyss Anglers: The Amani Way
 				ach(62342),	-- Abyss Anglers: The Finest of Fish
+				ach(62762),	-- Abyss Anglers: Top of the Class
 				ach(62271),	-- Abyss Anglers: Trench Berserker
 				ach(62214),	-- Abyss Anglers: Triple-Thread Net
+				ach(62763),	-- Abyss Anglers: Vintage Collector
 			}),
 			n(QUESTS, {
 				q(96388, {	-- Joining the Abyss Anglers
 					--["sourceQuests"] = { X },	-- Completing the Campaign, I guess
 					["qg"] = 240195,	-- Depthdiver Jeju
 					["coord"] = { 68.2, 20.2, MAP.MIDNIGHT.ZULAMAN },
+				}),
+				q(94840, {	-- Blessings of The Depths
+					["provider"] = { "i", 265749 },	-- Idol of the Depths
 				}),
 				n(BONUS_OBJECTIVES, {	-- Appears as a Bonus Objective quest every time you dive
 					q(92447, {	-- Abyss Anglers

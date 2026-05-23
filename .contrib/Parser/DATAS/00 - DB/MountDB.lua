@@ -344,7 +344,7 @@ i(33225, 42777);	-- Swift Spectral Tiger
 -----------------
 -- PATCH 2.2.3 --
 -----------------
--- NYI --
+--- NYI ---
 i(28482, 34407);	-- Great Elite Elekk
 
 -----------------
@@ -1609,13 +1609,13 @@ i(0, 385771);		-- PH Yellow Slyvern
 i(194722, 377849);	-- Carrier Yeti
 i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(192804, 374263);	-- Restless Hornstrider
+i(192778, 350220);	-- Liquid Hot Magma Slug
 i(198823, 385253);	-- [PH] Brown Wind Eagle
 i(192787, 351403);	-- [PH] Mammoth V2 Dark
 i(192771, 352927);	-- [PH] Water Salamander Blue
 i(192773, 374093);	-- [PH] Water Salamander Orange
 i(192748, 373913);	-- PH Moose Bull Brown
 i(192781, 374140);	-- PH Lava Slug Blue
-i(192778, 350220);	-- PH Lava Slug Orange
 i(192780, 350220);	-- PH Lava Slug Orange [Item: [PH] Lava Snail Orange]
 i(192782, 374142);	-- PH Lava Slug Yellow
 i(192802, 374258);	-- PH Primal Tallstrider Black
@@ -1806,7 +1806,6 @@ i(210145, 424611);	-- [PH] YellowBlack-Furred Bakar
 i(211075, 428013);	-- Deathbringer's Shadowcycle
 -- #endif
 i(211086, 428065);	-- Jeweled Jade Scarab
-i(210140, 0);		-- [PH] Black-Furred Bakar
 
 ------------------
 -- PATCH 10.2.5 --
@@ -2283,7 +2282,7 @@ i(242715, 1233516);	-- K'arroc Swiftwing
 i(260409, 1266248);	-- Savage Crimson Battle Turtle
 i(248681, 1247422);	-- Scorching Valor
 i(259463, 1264988);	-- Snowpaw Glimmerfur Prowler
---- UNSORTED ---
+--- NYI ---
 i(258488, 1263369);	-- Skypaw Glimmerfur
 
 ------------------
@@ -2296,8 +2295,12 @@ i(246594, 1243003);	-- Light-Forged Mechsuit
 i(257240, 1261391);	-- Relinquished Scarlet Charger
 i(224148, 451487);	-- Retrained Skyrazor
 i(254736, 1258574);	-- Stormgilded Celestial (CN ONLY)
---- UNSORTED ---
+--- NYI ---
+i(0, 1252141);		-- [DNT] Jellyfish
+i(0, 1238827);		-- Swift Spectral Dragonhawk
+i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
 i(260896, 1267004);	-- Accented Pseudoshell
+i(250921, 1251665);	-- Amani Blessed Bear
 i(262707, 1269279);	-- Blooded Snapvine
 i(260894, 1266997);	-- Cabbage Pseudoshell
 i(262496, 1268919);	-- Delver's Arcane Golem
@@ -2309,11 +2312,6 @@ i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
 i(262909, 1269556);	-- Hypo-Speed X6000
 i(260895, 1267002);	-- Lavender Pseudoshell
 i(262708, 1269280);	-- Savage Snapvine
---- NYI ---
-i(0, 1252141);		-- [DNT] Jellyfish
-i(0, 1238827);		-- Swift Spectral Dragonhawk
-i(250921, 1251665);	-- Amani Blessed Bear
-i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
 i(253587, 0);		-- Scale of Aln'sharan
 
 ------------------
@@ -2329,12 +2327,12 @@ i(263222, 1268949);	-- Arcanovoid Construct
 i(246590, 1242904);	-- Ashes of Belo'ren
 i(257085, 1261155);	-- Augmented Stormray
 i(257197, 1261348);	-- Blessed Amani Burrower
-i(0, 1251765);		-- Blossombranch Groveglider
+i(250973, 1251765);	-- Blossombranch Groveglider
 i(252011, 1253924);	-- Brilliant Petalwing
 i(262620, 1257058);	-- Calamitous Carrion
 i(257156, 1261323);	-- Cerulean Hawkstrider
 i(252014, 1253929);	-- Cerulean Sporeglider
-i(0, 1251762);		-- Cindertuft Groveglider
+i(250971, 1251762);	-- Cindertuft Groveglider
 i(257147, 1261302);	-- Cobalt Dragonhawk
 i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
 i(263452, 1270523);	-- Comfy Silvermoon Flying Quilt
@@ -2351,14 +2349,14 @@ i(262438, 1268809);	-- Fantastical Goblin Waveshredder
 i(246734, 1243593);	-- Fierce Grimlynx
 i(257142, 1261291);	-- Fiery Dragonhawk
 i(257448, 1261585);	-- Frenzied Shredclaw
-i(0, 1251697);		-- Frostfall Groveglider
+i(250930, 1251697);	-- Frostfall Groveglider
 i(260228, 1262840);	-- Galactic Gladiator's Goredrake
 i(257199, 1261349);	-- Giganto Manis
-i(0, 1251764);		-- Gloombough Groveglider
+i(250972, 1251764);	-- Gloombough Groveglider
 i(269009, 1284640);	-- Golden Ashened Cataclysm (CN ONLY)
 i(257444, 1261576);	-- Hexed Vilefeather Eagle
 i(257446, 1261583);	-- Insatiable Shredclaw
-i(260697, 1266703);	-- Lab-grown Stormray
+i(260697, 1266703);	-- Lab-Grown Stormray
 i(260231, 1265784);	-- Lucent Hawkstrider
 i(260916, 3363);	-- Nether-Swept Drake
 i(257143, 1261293);	-- Peridot Dragonhawk
@@ -2389,25 +2387,50 @@ i(257200, 1261351);	-- Witherbark Pango
 ------------------
 -- PATCH 12.0.5 --
 ------------------
+i(268474, 1282453);	-- Amberback Arboon
+i(275442, 1296734);	-- Amethyst Mechsuit
+i(268472, 1282450);	-- Blossomback Arboon
+i(275444, 1296756);	-- Blue-Chip Shreddertank
 i(268481, 1282471);	-- Breaker Bee
+i(275440, 1296731);	-- Cerulean Deathwalker
+i(268364, 1282276);	-- Gilneas Loyalist's Rouncey
+i(275446, 1296759);	-- High-Yield Shreddertank
+i(275445, 1296758);	-- Profit-Green Shreddertank
+i(268363, 1282275);	-- Pyrewood Rebel's Rouncey
+i(275447, 1296760);	-- Speculative Shreddertank
 i(264348, 1271698);	-- Unbound Manawyrm
 i(268578, 1282936);	-- Void-Touched Hawkstrider
 i(270041, 1287357);	-- Void-Touched Snapdragon
-i(260421, 1266285);	-- Void-Corrupted Amani Warbear Kit
 i(269828, 1286606);	-- Void-Corrupted Eagle Talon
+i(270058, 1287359);	-- Void-Corrupted Lynx
+i(257225, 1261362);	-- Witherbark Warbear Harness
 --- Unsorted ---
 i(268878, 1283906);	-- [PH] Giant Eagle Sunwalker Mount Blue
 i(268875, 1283911);	-- [PH] Giant Eagle Sunwalker Mount White
-i(268474, 1282453);	-- Amberback Arboon
-i(268472, 1282450);	-- Blossomback Arboon
 i(268877, 1283908);	-- Dusk-Painted Sun Roc
 i(268876, 1283910);	-- Flame-Painted Sun Roc
 i(268362, 1282274);	-- Gilnean Copper Charger
 i(268360, 1282268);	-- Gilnean Iron Charger
-i(268364, 1282276);	-- Gilneas Loyalist's Rouncey
-i(268363, 1282275);	-- Pyrewood Rebel's Rouncey
-i(264348, 1271698);	-- Unbound Manawyrm
-i(270058, 1287359);	-- Void-Corrupted Lynx
-i(0, 1261362);	-- Witherbark Warbear Mother
 --- NYI ---
+i(260421, 1266285);	-- Void-Corrupted Amani Warbear Kit
 
+------------------
+-- PATCH 12.0.7 --
+------------------
+i(210140, 404018);	-- Black-Furred Bakar
+i(258884, 1264184);	-- Spawn of Vyranoth
+i(274650, 1294663);	-- Starmech Cosmic-Collapser
+i(275664, 1297427);	-- Tortured Gorger
+i(274649, 1294648);	-- Voidmancer's Starcarver
+--- Unsorted ---
+i(0, 1294677);	-- [PH] Horse with Hat
+i(0, 1261369);	-- Amani Hex Bear
+i(274681, 1294767);	-- Badlands Buzzard
+i(273651, 1292344);	-- Bligewater X-TREME Firework Rocket
+i(273317, 1292102);	-- Blackwater X-TREME Firework Rocket
+i(273650, 1292342);	-- Green Rocket Mount [PH]
+i(269240, 1284973);	-- Luminous Sporeglider
+i(273652, 1292345);	-- Pink Rocket Mount [PH]
+i(275464, 1298439);	-- Sun Festival's Painted Roc
+i(268833, 1283837);	-- Zothwing Darkseeker
+i(268834, 1283838);	-- Zothwing Deepseeker

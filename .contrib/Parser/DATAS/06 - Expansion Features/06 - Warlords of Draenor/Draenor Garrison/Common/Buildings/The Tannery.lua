@@ -75,7 +75,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 				n(VENDORS, {
 					n(77383, {	-- Anders Longstitch <Leatherworker>
 						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{"sub", "common_vendor", 87062}},	-- Leara Moonsilk <Leatherworking Patterns>
+						["sym"] = {{"sub", "common_vendor", 87057}},	-- Leara Moonsilk <Leatherworking Patterns>
 					}),
 					n(79834, {	-- Murne Greenhoof <Leatherworker>
 						["races"] = HORDE_ONLY,

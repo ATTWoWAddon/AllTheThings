@@ -67,7 +67,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 93908,
 					["groups"] = {
 						i(265828),	-- Gilded Armillary Sphere (750g JUNK!)
-						-- i(262453),	-- Heathlight Armillary (DECOR!) / I did not get this. -Exo
+						i(262453, {	-- Heathlight Armillary (DECOR!)
+							["description"] = "Complete any quest after looting the 'Gilded Armillary Sphere' to automatically collect this item.",
+						}),
 					},
 				}),
 				o(617881, {	-- Rookery Cache

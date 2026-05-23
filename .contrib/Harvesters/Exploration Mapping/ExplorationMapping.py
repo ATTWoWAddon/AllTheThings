@@ -170,8 +170,8 @@ def exploration_mapping(build):
         for _, _, line in all_lines:
             output_file.write(line + "\n")
 
-    print(f"ExplorationOutput.txt created successfully.")
+    print(f"ExplorationMapping.txt created successfully.")
 
 """How to generate latest data from a new Build"""
 """Step 1: Run exploration_mapping(build: str) (You have to uncomment) with the build as a string ex. exploration_mapping("11.2.5.62785")."""
-# exploration_mapping("12.0.1.66263")
+# exploration_mapping("12.0.5.67314")

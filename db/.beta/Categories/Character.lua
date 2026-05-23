@@ -993,7 +993,7 @@ q(50254,{coords={
 [85]={{37.8,81}}},qgs={126065,133523},r=1,u=2}),
 ra(34,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",r=2,g={
 q(51813,{coords={
-[84]={{52,13.8}}},lc={1,"achID",12516},lvl=40,qgs={133197},r=2,sourceQuests={50239}}),
+[84]={{52,13.8}}},lc={1,"achID",12516},lvl=40,qgs={126332,133197},r=2,sourceQuests={50239}}),
 q(53351,{coords={
 [1159]={{57,30.6}}},lc={1,"achID",12516},lvl=40,maps={1160},qgs={140309},r=2,sourceQuests={51813},g={
 i(163708)}}),
@@ -1244,7 +1244,7 @@ q(94445,{coords={
 [84]={{53.1,15.3}}},lvl=10,qgs={133362},races={86},sourceQuests={90961}})}}),
 ra(28,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",r=1,g={
 q(48066,{coords={
-[85]={{38,81}}},lc={1,"achID",12452},lvl=40,qgs={125285},r=1,sourceQuests={50242}}),
+[85]={{38,81}}},lc={1,"achID",12452},lvl=40,qgs={125285,133523},r=1,sourceQuests={50242}}),
 q(48067,{coords={
 [88]={{61.2,51.8}}},lc={1,"achID",12452},lvl=40,qgs={129914},r=1,sourceQuests={48066}}),
 q(49756,{coords={
@@ -1287,7 +1287,7 @@ q(50319,{coords={
 [85]={{39.4,79.2}}},lvl=10,qgs={133407},races={28},sourceQuests={49773}})}}),
 ra(32,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",r=2,g={
 q(54706,{coords={
-[84]={{52.3,13.5}}},lc={1,"achID",13157},lvl=40,qgs={148798},r=2,sourceQuests={50239}}),
+[84]={{52.3,13.5}}},lc={1,"achID",13157},lvl=40,qgs={126332,148798},r=2,sourceQuests={50239}}),
 q(55039,{coords={
 [1161]={{67.9,22.1}}},lc={1,"achID",13157},lvl=40,qgs={122370},r=2,sourceQuests={54706}}),
 q(55043,{coords={
@@ -1316,13 +1316,22 @@ i(167200)}}),
 q(54729,{coords={
 [895]={{67.1,12.3}}},lc={1,"achID",13157},lvl=40,qgs={148870},r=2,sourceQuests={54727}}),
 q(54732,{coords={
-[896]={{33.1,30.4}}},lc={1,"achID",13157},lvl=40,qgs={150884},r=2,sourceQuests={54729}}),
+[896]={{33.1,30.4}}},lc={1,"achID",13157},lvl=40,qgs={150884},r=2,sourceQuests={54729},g={
+o(322620,{coords={
+[896]={{36.6,28.9}}},g={
+i(167168)}})}}),
 q(55136,{coords={
 [896]={{36.5,28.9}}},lc={1,"achID",13157},lvl=40,qgs={150885},r=2,sourceQuests={54732},g={
-i(167174,{b=4}),
-i(167173,{b=4}),
-i(167168),
+o(322638,{coords={
+[896]={{35.3,29}}},g={
+i(167174,{b=4})}}),
+o(322637,{coords={
+[896]={{34.6,30.6}}},g={
+i(167173,{b=4})}}),
+o(322636,{coords={
+[896]={{36,30.9}}},g={
 i(167172,{b=4})}}),
+i(167168)}}),
 q(54733,{coords={
 [896]={{33.1,30.4}}},lc={1,"achID",13157},lvl=40,qgs={150884},r=2,sourceQuests={55136},g={
 i(167199)}}),
@@ -1363,11 +1372,12 @@ q(50313,{coords={
 [84]={{53.1,15.4}}},lvl=10,qgs={133362},races={30},sourceQuests={49772}})}}),
 ra(36,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",r=1,g={
 q(53466,{coords={
-[85]={{37.8,80.6}}},lc={1,"achID",12517},lvl=40,qgs={126066},r=1,sourceQuests={50242}}),
+[85]={{37.8,80.6}}},lc={1,"achID",12517},lvl=40,qgs={126066,133523},r=1,sourceQuests={50242}}),
 q(53467,{coords={
 [1185]={{67,73.7}}},lc={1,"achID",12517},lvl=40,qgs={131443},r=1,sourceQuests={53466}}),
 q(53354,{coords={
-[71]={{63,57.2}}},lc={1,"achID",12517},lvl=40,qgs={15192},r=1,sourceQuests={53467}}),
+[71]={{63,57.2}},
+[75]={{41.7,49.4}}},lc={1,"achID",12517},lvl=40,qgs={15192},r=1,sourceQuests={53467}}),
 q(53353,{coords={
 [17]={{54.4,50.2}}},lc={1,"achID",12517},lvl=40,qgs={143692},r=1,sourceQuests={53354}}),
 q(53355,{coords={
@@ -1472,7 +1482,7 @@ q(53891,{coords={
 q(53892,{coords={
 [241]={{44.1,73.4}}},lc={1,"achID",13207},lvl=40,qgs={145641},r=1,sourceQuests={53891}}),
 q(53893,{coords={
-[241]={{46.8,66.2}}},lc={1,"achID",13207},lvl=40,qgs={145416},r=1,sourceQuests={53892},g={
+[241]={{46.8,66.2}}},lc={1,"achID",13207},lvl=40,qgs={163488},r=1,sourceQuests={53892},g={
 i(171358),
 i(171356,{spellID=307378}),
 i(164926),
@@ -1484,13 +1494,13 @@ i(164927)})}}),
 q(53895,{coords={
 [241]={{46.8,66.2}}},lc={1,"achID",13207},lvl=40,qgs={145416},r=1,sourceQuests={53892}}),
 q(53897,{coords={
-[241]={{46.8,66.2}}},lc={1,"achID",13207},lvl=40,qgs={145416},r=1,sourceQuests={53893,53894,53895}}),
+[241]={{46.8,66.2}}},lc={1,"achID",13207},lvl=40,qgs={145641},r=1,sourceQuests={53893,53894,53895}}),
 q(53898,{coords={
 [241]={{45,76.2}}},lc={1,"achID",13207},lvl=40,qgs={145416},r=1,sourceQuests={53897}}),
 q(54026,{coords={
 [241]={{45,76.2}}},lc={1,"achID",13207},lvl=40,qgs={145416},r=1,sourceQuests={53898}}),
 q(53899,{coords={
-[85]={{49,73.6}}},lc={1,"achID",13207},lvl=40,qgs={145416},r=1,sourceQuests={54026}}),
+[85]={{49,73.6}}},lc={1,"achID",13207},lvl=40,qgs={163489},r=1,sourceQuests={54026}}),
 q(58087,{coords={
 [862]={{74.8,63}}},lc={1,"achID",13207},lvl=40,qgs={145980},r=1,sourceQuests={53899}}),
 q(53901,{coords={
@@ -1508,7 +1518,7 @@ q(53902,{coords={
 q(54027,{coords={
 [862]={{74.8,63}}},lc={1,"achID",13207},lvl=40,qgs={145980},r=1,sourceQuests={53902}}),
 q(53903,{coords={
-[85]={{49,73.6}}},lc={1,"achID",13207},lvl=40,qgs={145416},r=1,sourceQuests={54027}}),
+[85]={{49,73.6}}},lc={1,"achID",13207},lvl=40,qgs={146261},r=1,sourceQuests={54027}}),
 q(53904,{coords={
 [680]={{58.9,55}}},lc={1,"achID",13207},lvl=40,qgs={146264},r=1,sourceQuests={53903}}),
 q(53905,{coords={
@@ -5792,8 +5802,9 @@ i(154115,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154114,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154116,{b=1,c={1},f=53,lvl=45,u=2}),
 i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}),
-x(11,{awp=110000,g={
-ah(15805,{description="These are gained by using a Level 70 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",type="a",g={
+x(11,{
+i(243235,{awp=110200,b=1,f=55}),
+ah(15805,{awp=110000,description="These are gained by using a Level 70 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",type="a",g={
 i(185940,{b=1,spellID=351857}),
 cl(6,{
 i(187659,{b=1,f=55,g={
@@ -6079,7 +6090,7 @@ s(91230,154027,{b=1,c={1},f=7,lvl=45}),
 i(154115,{b=1,c={1},f=52,lvl=45}),
 i(154114,{b=1,c={1},f=52,lvl=45}),
 i(154116,{b=1,c={1},f=53,lvl=45}),
-i(154117,{b=1,c={1},f=53,lvl=45})})})}})}})}),
+i(154117,{b=1,c={1},f=53,lvl=45})})})}})})}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{icon=374217,r=2}),
 faction(67,{icon=374221,r=1}),
@@ -8944,6 +8955,7 @@ i(92679,{awp=50100,f=55,pb=1,spellID=134488}),
 i(92741,{awp=50100,f=55,pb=1,spellID=134644}),
 i(92675,{awp=50100,f=55,pb=1,spellID=134482}),
 i(92676,{awp=50100,f=55,pb=1,spellID=134484}),
+i(92683,{awp=50100,f=55,pb=1,spellID=134492}),
 i(92665,{awp=50100,f=55,pb=1,spellID=134448}),
 i(92677,{awp=50100,f=55,pb=1,spellID=134486}),
 i(92682,{awp=50100,f=55,pb=1,spellID=134491}),
@@ -8963,6 +8975,7 @@ toy(37460,{b=1,pb=1}),
 i(92679,{f=55,pb=1,spellID=134488}),
 i(92675,{f=55,pb=1,spellID=134482}),
 i(92676,{f=55,pb=1,spellID=134484}),
+i(92683,{f=55,pb=1,spellID=134492}),
 i(92665,{f=55,pb=1,spellID=134448}),
 i(92677,{f=55,pb=1,spellID=134486}),
 i(92682,{f=55,pb=1,spellID=134491}),

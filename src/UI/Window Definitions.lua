@@ -14,6 +14,7 @@ local C_AddOns_GetAddOnMetadata
 local GameTooltip = GameTooltip;
 local RETRIEVING_DATA = RETRIEVING_DATA;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+local issecretvalue = app.WOWAPI.issecretvalue
 local debugprofilestop = debugprofilestop;
 local Callback = app.CallbackHandlers.Callback
 
@@ -33,30 +34,6 @@ app.UI = {
 		end,
 	}
 }
-
--- TODO: this doesnt really belong in this file imo... but can move around later for both Classic/Retail
-do
-	local FilterBind = app.Modules.Filter.Filters.Bind
-	local function SearchForMissingItemsRecursively(group, listing)
-		-- app.PrintDebug("SearchForMissingItemsRecursively",app:SearchLink(group))
-		if group.visible then
-			if group.itemID and (group.collectible or (group.total and group.total > 0)) and not FilterBind(group) then
-				listing[#listing + 1] = group
-			end
-			local g = group.g
-			if g and group.expanded then
-				-- Go through the sub groups and determine if any of them have a response.
-				for i=1,#g do
-					SearchForMissingItemsRecursively(g[i], listing)
-				end
-			end
-		end
-	end
-app.Search = {
-	SearchForMissingItemsRecursively = SearchForMissingItemsRecursively
-}
-end
-
 
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 local function GetUnobtainableTexture(group)
@@ -804,21 +781,26 @@ local function SetRowData(self, row, data)
 
 	-- Check to see what the text is currently
 	local text = data.text;
-	if IsRetrieving(text) then
-		-- This means the link is still rendering
-		text = RETRIEVING_DATA;
+	if issecretvalue(text) then
+		row.text = "<secret>"
+		row.Label:SetText(text)
+	else
+		if IsRetrieving(text) then
+			-- This means the link is still rendering
+			text = RETRIEVING_DATA;
 
-		local AsyncRefreshFunc = data.AsyncRefreshFunc
-		if AsyncRefreshFunc then
-			AsyncRefreshFunc(data)
-		else
-			-- app.PrintDebug("No Async Redraw Func for Type!",data.__type,data.hash)
-			Callback(self.Redraw, self)
+			local AsyncRefreshFunc = data.AsyncRefreshFunc
+			if AsyncRefreshFunc then
+				AsyncRefreshFunc(data)
+			else
+				-- app.PrintDebug("No Async Redraw Func for Type!",data.__type,data.hash)
+				Callback(self.Redraw, self)
+			end
 		end
-	end
-	if text ~= row.text then
-		row.text = text;
-		row.Label:SetText(text);
+		if text ~= row.text then
+			row.text = text;
+			row.Label:SetText(text);
+		end
 	end
 
 	-- If the data has a texture, assign it.
@@ -1035,7 +1017,7 @@ local function RowOnClick(self, button)
 				local isTSMOpen = TSM_API and TSM_API.IsUIVisible("AUCTION");
 				if isTSMOpen or (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
 					local missingItems = {};
-					app.Search.SearchForMissingItemsRecursively(reference, missingItems);
+					app.Modules.Search.SearchForMissingItemsRecursively(reference, missingItems);
 					local count = #missingItems;
 					if count > 0 then
 						if isTSMOpen then
@@ -1320,22 +1302,6 @@ local function RowOnEnter(self)
 			};
 		end
 	end
-	if reference.questID then
-		-- TODO: This could be moved to the Quests lib and hook in using settings.AppendInformationTextEntry.
-		local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[reference.questID];
-		if oneTimeQuestCharGuid then
-			local charData = ATTCharacterData[oneTimeQuestCharGuid];
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.QUEST_ONCE_PER_ACCOUNT,
-				right = L.COMPLETED_BY:format(charData and charData.text or UNKNOWN),
-			}
-		elseif oneTimeQuestCharGuid == false then
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.QUEST_ONCE_PER_ACCOUNT,
-				color = "ffcf271b",
-			}
-		end
-	end
 
 	-- Process all Information Types
 	if tooltip.ATT_AttachComplete == nil then
@@ -1377,228 +1343,6 @@ local function RowOnEnter(self)
 					left = requires .. ": " .. icon_color_str,
 					right = customCollectEx.desc or "",
 				}
-			end
-		end
-	end
-
-	-- Show Quest Prereqs
-	local isDebugMode = app.MODE_DEBUG;
-	local sourceQuests = reference.sourceQuests;
-	if sourceQuests and (isDebugMode or not reference.saved) then
-		local prereqs, bc, bestMatch, sqs = {}, {}, nil, nil;
-		local sourceQuestID, sq
-		for i=1,#sourceQuests do
-			sourceQuestID = sourceQuests[i]
-			if sourceQuestID > 0 and (isDebugMode or not app.IsQuestFlaggedCompleted(sourceQuestID)) then
-				sqs = app.SearchForField("questID", sourceQuestID);
-				if #sqs > 0 then
-					for j=1,#sqs do
-						sq = sqs[j]
-						if sq.questID == sourceQuestID and not sq.objectiveID then
-							if isDebugMode or (not app.IsQuestFlaggedCompleted(sourceQuestID) and app.GroupFilter(sq)) then
-								if sq.sourceQuests then
-									-- Always prefer the source quest with additional source quest data.
-									bestMatch = sq;
-								elseif not sq.itemID and (not bestMatch or not bestMatch.sourceQuests) then
-									-- Otherwise try to find the version of the quest that isn't an item.
-									bestMatch = sq;
-								end
-							end
-						end
-					end
-					if bestMatch then
-						if bestMatch.isBreadcrumb then
-							bc[#bc + 1] = bestMatch;
-						else
-							prereqs[#prereqs + 1] = bestMatch;
-						end
-						bestMatch = nil;
-					end
-				else
-					prereqs[#prereqs + 1] = app.CreateQuest(sourceQuestID);
-				end
-			end
-		end
-		if prereqs and #prereqs > 0 then
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.PREREQUISITE_QUESTS,
-				wrap = true,
-			};
-			AddQuestInfoToTooltip(tooltipInfo, prereqs, reference);
-		end
-		if bc and #bc > 0 then
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.BREADCRUMBS_WARNING,
-				wrap = true,
-			};
-			AddQuestInfoToTooltip(tooltipInfo, bc, reference);
-		end
-	end
-
-	-- Show Breadcrumb information
-	local lockedWarning;
-	if reference.isBreadcrumb then
-		tooltipInfo[#tooltipInfo + 1] = {
-			left = L.THIS_IS_BREADCRUMB,
-			color = app.Colors.Breadcrumb,
-		}
-		local nextQuests = reference.nextQuests
-		if nextQuests then
-			local isBreadcrumbAvailable = true;
-			local nextq, nq = {}, nil;
-			local nextQuestID
-			for i=1,#nextQuests do
-				nextQuestID = nextQuests[i]
-				if nextQuestID > 0 then
-					nq = app.SearchForObject("questID", nextQuestID, "field");
-					-- existing quest group
-					if nq then
-						nextq[#nextq + 1] = nq
-					else
-						nextq[#nextq + 1] = app.CreateQuest(nextQuestID)
-					end
-					if app.IsQuestFlaggedCompleted(nextQuestID) then
-						isBreadcrumbAvailable = false;
-					end
-				end
-			end
-			if isBreadcrumbAvailable then
-				-- The character is able to accept the breadcrumb quest without Party Sync
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = L.BREADCRUMB_PARTYSYNC,
-				}
-				AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
-			elseif reference.DisablePartySync == false then
-				-- unknown if party sync will function for this Thing
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = L.BREADCRUMB_PARTYSYNC_4,
-					color = app.Colors.LockedWarning,
-				}
-				AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
-			elseif not reference.DisablePartySync then
-				-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = L.BREADCRUMB_PARTYSYNC_2,
-					color = app.Colors.LockedWarning,
-				}
-				AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
-			else
-				-- known to not be possible in party sync
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = L.DISABLE_PARTYSYNC,
-				}
-			end
-			lockedWarning = true;
-		end
-	end
-
-	-- Show information about it becoming locked due to some criteria
-	local lockCriteria = reference.lc;
-	if lockCriteria then
-		-- list the reasons this may become locked due to lock criteria
-		local critKey, critValue;
-		local critFuncs = app.QuestLockCriteriaFunctions;
-		local critFunc;
-		tooltipInfo[#tooltipInfo + 1] = {
-			left = L.UNAVAILABLE_WARNING_FORMAT:format(lockCriteria[1]),
-			color = app.Colors.LockedWarning,
-		}
-		for i=2,#lockCriteria,2 do
-			critKey = lockCriteria[i];
-			critValue = lockCriteria[i + 1];
-			critFunc = critFuncs[critKey];
-			if critFunc then
-				local label = critFuncs["label_"..critKey];
-				local text = tostring(critFuncs["text_"..critKey](critValue))
-				-- TODO: probably a more general way to check this on lines that can be retrieving
-				if not working and IsRetrieving(text) then
-					working = true
-				end
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = app.GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
-				}
-			end
-		end
-	end
-	local altQuests = reference.altQuests;
-	if altQuests then
-		-- list the reasons this may become locked due to altQuests specifically
-		local critValue;
-		local critFuncs = app.QuestLockCriteriaFunctions;
-		local critFunc = critFuncs.questID;
-		local label = critFuncs.label_questID;
-		local text;
-		tooltipInfo[#tooltipInfo + 1] = {
-			left = L.UNAVAILABLE_WARNING_FORMAT:format(1),
-			color = app.Colors.LockedWarning,
-		}
-		for i=1,#altQuests,1 do
-			critValue = altQuests[i];
-			if critFunc then
-				text = critFuncs.text_questID(critValue);
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = app.GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
-				}
-			end
-		end
-	end
-
-	-- it is locked and no warning has been added to the tooltip
-	if not lockedWarning and reference.locked then
-		if reference.DisablePartySync == false then
-			-- unknown if party sync will function for this Thing
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.BREADCRUMB_PARTYSYNC_4,
-				color = app.Colors.LockedWarning,
-			}
-		elseif not reference.DisablePartySync then
-			-- should be possible in party sync
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.BREADCRUMB_PARTYSYNC_3,
-				color = app.Colors.LockedWarning,
-			}
-		else
-			-- known to not be possible in party sync
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.DISABLE_PARTYSYNC,
-			}
-		end
-	end
-	if reference.sourceAchievements and (isDebugMode or not reference.collected) then
-		local prereqs, bc, bestMatch, sas = {}, {}, nil, nil;
-		for i,sourceAchievementID in ipairs(reference.sourceAchievements) do
-			if sourceAchievementID > 0 and (isDebugMode or not ATTAccountWideData.Achievements[sourceAchievementID]) then
-				sas = app.SearchForField("achievementID", sourceAchievementID);
-				if #sas > 0 then
-					for j,sa in ipairs(sas) do
-						if sa.achievementID == sourceAchievementID and sa.key == "achievementID" then
-							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sa) and not sa.collected) then
-								bestMatch = sa;
-							end
-						end
-					end
-					if bestMatch then
-						prereqs[#prereqs + 1] = bestMatch;
-						bestMatch = nil;
-					end
-				else
-					prereqs[#prereqs + 1] = app.CreateAchievement(sourceAchievementID);
-				end
-			end
-		end
-
-		if prereqs and #prereqs > 0 then
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = "This has an incomplete prerequisite achievement that you need to complete first.",
-				wrap = true,
-			};
-			for i,prereq in ipairs(prereqs) do
-				local text = "   " .. prereq.achievementID .. ": " .. (prereq.text or RETRIEVING_DATA);
-				if prereq.isGuild then text = text .. " (" .. GUILD .. ")"; end
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = text,
-					right = app.GetCompletionIcon(prereq.collected),
-				};
 			end
 		end
 	end
@@ -3096,8 +2840,8 @@ end
 local OnInitForPopout;
 function app:CreateMiniListForGroup(group)
 
-	-- This re-directs Criteria popouts to instead popout their Achievement
-	local achievementID = group.achievementID;
+	-- This re-directs basic Criteria popouts to instead popout their Achievement
+	local achievementID = not (group.providers or group.cost) and group.achievementID;
 	if achievementID and group.criteriaID then
 		group = app.SearchForObject("achievementID", achievementID, "key") or group
 	end

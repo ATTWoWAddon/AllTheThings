@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(248047),	-- Lightbloom Band
 							i(248048),	-- Ring of Overgrowth
 							o(577805, {	-- Strange Seed
-								i(253386),	-- Light-pulsing Seed (QI!)
+								i(253386),	-- Light-Pulsing Seed (QI!)
 							}),
 						},
 					}),
@@ -136,6 +136,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86621 },	-- The Wayward Magister
 						["provider"] = { "n", 236100 },	-- Arator
 						["coord"] = { 47.7, 69.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(244194),	-- Torn-Out Page (QI!)
+							i(244195),	-- Torn-Out Page (QI!)
+							i(244197),	-- Torn-Out Page (QI!)
+						},
 					}),
 					q(90907, {	-- The First to Know
 						["sourceQuests"] = {
@@ -487,6 +492,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									{ 39.4, 72.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 									{ 39.5, 74.8, MAP.MIDNIGHT.EVERSONG_WOODS },
 									{ 39.5, 76.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 39.8, 76.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 									{ 40.0, 74.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 									{ 40.4, 73.1, MAP.MIDNIGHT.EVERSONG_WOODS },
 								},

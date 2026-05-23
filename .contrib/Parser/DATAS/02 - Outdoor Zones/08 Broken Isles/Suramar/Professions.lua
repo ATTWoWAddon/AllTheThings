@@ -39,7 +39,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					i(137845),	-- Design: Maelstrom Band (Rank 3)
+					i(137845),	-- Design: Maelstrom Band [Rank 3] (RECIPE!)
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
 				}),
 			}),

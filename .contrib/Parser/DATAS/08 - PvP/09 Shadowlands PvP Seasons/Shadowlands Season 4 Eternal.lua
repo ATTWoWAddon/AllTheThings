@@ -62,8 +62,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					-- Moved to NYI, it seems Blizzard will never fix this
 					--[[
 					i(223639, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Aspirant's Cloak Rack
-						["cost"] = { { "i", MOH, 1 } },	-- Placeholder cost?
+						["cost"] = { { "i", MOH, 1 } },
 						["description"] = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
+						["questID"] = 82343,
 						["groups"] = {
 							i(185128),	-- Unchained Aspirant's Cloak
 							i(185205),	-- Unchained Aspirant's Drape

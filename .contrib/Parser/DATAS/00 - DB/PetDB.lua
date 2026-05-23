@@ -4526,16 +4526,15 @@ i(221492, 4459);	-- Moss Skipper
 i(244911, 4830);	-- Rhay'Dahr
 i(232856, 4633);	-- Scruff
 i(222967, 4475);	-- Webbers
---- UNSORTED ---
-i(258739, 4914);	-- Chillcrawler
-i(262768, 4965);	-- Chirpy Mandrake
-i(262763, 4964);	-- Plump Mandrake
-i(262769, 4966);	-- Screechy Mandrake
-i(260341, 4943);	-- Star the Lucky Dragon
 --- NYI ---
 i(0, 4905);			-- [DNT] Baby Amazard (Red)
 i(0, 4945);			-- Aud'rei III
 i(0, 4887);			-- Dundun
+i(258739, 4914);	-- Chillcrawler
+i(262763, 4964);	-- Plump Mandrake
+i(262769, 4966);	-- Screechy Mandrake
+i(262768, 4965);	-- Sleepy Mandrake
+i(260341, 4943);	-- Star the Lucky Dragon
 i(242251, 0);		-- [NYI] Magical Broom Pet
 i(250141, 0);		-- Purple Swamp Leech
 
@@ -4616,13 +4615,23 @@ i(262394, 4954);	-- Ziorg'pharon
 ------------------
 i(270989, 5039);	-- Cappy
 i(269836, 5019);	-- Chubs
+i(270990, 5040);	-- Curious Lynx Kitten
 i(274266, 5065);	-- Ka'bubb
+i(269999, 5020);	-- Overloaded Manaling
 i(270061, 5021);	-- Void-Bathed Snapdragon
 i(270331, 5037);	-- Void-Infused Mindbreaker Fry
+i(269829, 5017);	-- Void-Scarred Eaglet
 i(270062, 5022);	-- Void-Touched Chick
 i(270330, 5036);	-- Void-Touched Dragonhawk Egg
---- Unsorted ---
-i(270990, 5040);	-- Curious Lynx Kitten
-i(269999, 5020);	-- Overloaded Manaling
-i(269829, 5017);	-- Void-Scarred Eaglet
 i(270063, 5023);	-- Void-Touched Lynx Kitten
+i(270988, 5038);	-- Wriggling Capybara
+
+------------------
+-- PATCH 12.0.7 --
+------------------
+i(268557, 5007);	-- Akiki
+i(275662, 5073);	-- Frosticus Maximus
+i(260885, 4949);	-- Shadowflame Remnant
+i(275663, 5074);	-- Silento
+--- Unsorted ---
+i(271185, 5041);	-- Emberlyn

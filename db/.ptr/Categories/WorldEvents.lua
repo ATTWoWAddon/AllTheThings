@@ -1559,7 +1559,8 @@ i(246398,{u=2})}}),
 o(553558,{coords={
 [241]={{46.5,72}}},u=2,g={
 i(246399,{u=2})}}),
-i(246400,{u=2})}}),
+i(246400,{u=2}),
+i(246397,{spellID=1242307,u=2})}}),
 hqt(92103,{coords={
 [241]={{49.9,80.8}}},description="Dialogue becomes available after accepting 'Midnight Dress' (90765).",qgs={237506},sourceQuests={90765},u=2}),
 q(90766,{coords={
@@ -1955,8 +1956,9 @@ crit(109814,{achID=61466,providers={{"i",94176},{"n",68252}}}),
 crit(109835,{achID=61466,providers={{"i",94167},{"n",67268}}}),
 crit(109831,{achID=61466,providers={{"i",97559},{"n",70983}}}),
 crit(109803,{achID=61466,providers={{"i",166809},{"n",149717}}}),
-crit(109807,{achID=61466,providers={{"i",94161},{"i",94186},{"n",67572},{"n",68250}}}),
+crit(109801,{achID=61466,providers={{"i",94186},{"n",68250}}}),
 crit(109815,{achID=61466,providers={{"i",93824},{"n",67579}}}),
+crit(109807,{achID=61466,providers={{"i",94161},{"n",67572}}}),
 crit(109821,{achID=61466,providers={{"i",94183},{"n",68256}}})}),
 ach(61413,{r=2}),
 ach(61414,{r=1}),
@@ -2249,7 +2251,8 @@ q(53935,{awp=80105,lvl=80,maps={109},qgs={149808},r=1,rwp=90002,sourceQuests={53
 mnt(289639,{b=1,itemID=166724,lvl=10,u=2})}}),
 q(92845,{coords={
 [84]={{66.6,72.2}},
-[2339]={{51.2,43.4}}},DisablePartySync=1,lvl=80,qgs={253181},r=2}),
+[2339]={{51.2,43.4}},
+[2393]={{43,77}}},DisablePartySync=1,lvl=80,qgs={253181},r=2}),
 q(92851,{coords={
 [499]={{53.7,61.6}}},DisablePartySync=1,lc={1,"achID",61413,"achID",61414},lvl=80,qgs={253170},r=2,sourceQuests={92845},g={
 i(254690,{b=1,lvl=10,spellID=136149})}}),

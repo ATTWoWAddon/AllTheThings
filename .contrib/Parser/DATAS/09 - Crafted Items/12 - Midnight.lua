@@ -98,40 +98,48 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ALCHEMY,
 		},{
-			fc(1230864),	-- Amani Extract
-			fc(1230892),	-- Bouquet of Herbs
-			fc(1230891),	-- Box of Rocks
-			fc(1230874),	-- Cauldron of Sin'dorei Flasks
-			fc(1230855),	-- Composite Flora
-			fc(1230860),	-- Draught of Rampant Abandon
+			-- Light Potions
 			fc(1230886),	-- Enlightenment Tonic
-			fc(1230854),	-- Entropic Extract
-			fc(1230875),	-- Flask of Thalassian Resistance
-			fc(1230876),	-- Flask of the Magisters
-			fc(1230877),	-- Flask of the Blood Knights
-			fc(1230878),	-- Flask of the Shattered Sun
-			fc(1230870),	-- Haranir Phial of Finesse
-			fc(1230872),	-- Haranir Phial of Ingenuity
-			fc(1230873),	-- Haranir Phial of Perception
 			fc(1230865),	-- Lightfused Mana Potion
 			fc(1230858),	-- Light's Preservation
 			fc(1230869),	-- Light's Potential
-			fc(1230885),	-- Magister's Alchemist Stone
-			fc(1230859),	-- Potion of Recklessness
-			fc(1230862),	-- Potion of Devoured Dreams
 			fc(1230863),	-- Potion of Zealotry
-			fc(1230861),	-- Primal Philosopher's Stone
 			fc(1230868),	-- Refreshing Serum
-			fc(1230893),	-- School of Gems
 			fc(1230866),	-- Silvermoon Health Potion
-			fc(1230887),	-- Transmute: Mote of Wild Magic
-			fc(1230888),	-- Transmute: Mote of Pure Void
-			fc(1230889),	-- Transmute: Mote of Primal Energy
-			fc(1230890),	-- Transmute: Mote of Light
-			fc(1230883),	-- Vicious Thalassian Flask of Honor
-			fc(1230857),	-- Voidlight Potion Cauldron
+			-- Void Potions
+			fc(1230864),	-- Amani Extract
+			fc(1230860),	-- Draught of Rampant Abandon
+			fc(1230854),	-- Entropic Extract
+			fc(1230862),	-- Potion of Devoured Dreams
+			fc(1230859),	-- Potion of Recklessness
 			fc(1230867),	-- Void-Shrouded Tincture
+			-- Cauldrons
+			fc(1230874),	-- Cauldron of Sin'dorei Flasks
+			fc(1230857),	-- Voidlight Potion Cauldron
+			-- Haranir Phials
+			fc(1230870),	-- Haranir Phial of Finesse
+			fc(1230872),	-- Haranir Phial of Ingenuity
+			fc(1230873),	-- Haranir Phial of Perception
+			-- Sin'dorei Flasks
+			fc(1230875),	-- Flask of Thalassian Resistance
+			fc(1230877),	-- Flask of the Blood Knights
+			fc(1230876),	-- Flask of the Magisters
+			fc(1230878),	-- Flask of the Shattered Sun
+			-- Vicious Flasks
+			fc(1230883),	-- Vicious Thalassian Flask of Honor
+			-- Transmutations
+			fc(1230892),	-- Bouquet of Herbs
+			fc(1230891),	-- Box of Rocks
+			fc(1230855),	-- Composite Flora
+			fc(1230893),	-- School of Gems
+			fc(1230890),	-- Transmute: Mote of Light
+			fc(1230889),	-- Transmute: Mote of Primal Energy
+			fc(1230888),	-- Transmute: Mote of Pure Void
+			fc(1230887),	-- Transmute: Mote of Wild Magic
 			fc(1230856),	-- Wondrous Synergist
+			-- Alchemist Stones
+			fc(1230885),	-- Magister's Alchemist Stone
+			fc(1230861),	-- Primal Philosopher's Stone
 		})),
 		filter(MISC, {
 			i(245650),	-- Bouquet of Herbs+
@@ -208,95 +216,103 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = BLACKSMITHING,
 		},{
-			fc(1229648),	-- Blood Knight's Warblade
-			fc(1229652),	-- Blood Knight's Mercy
-			fc(1229653),	-- Blood Knight's Impetus
-			fc(1229621),	-- Blood-Tempered Gauntlets
-			fc(1229622),	-- Blood-Tempered Pauldrons
-			fc(1229623),	-- Blood-Tempered Bracers
-			fc(1229624),	-- Blood-Tempered Leggings
+			-- Smelting
+			fc(1230762),	-- Gloaming Alloy
+			fc(1230761),	-- Refulgent Copper Ingot
+			fc(1230763),	-- Sterling Alloy
+			-- Armor
 			fc(1229625),	-- Blood-Tempered Basinet
+			fc(1229623),	-- Blood-Tempered Bracers
 			fc(1229626),	-- Blood-Tempered Bulwark
-			fc(1229627),	-- Blood-Tempered Greatbelt
 			fc(1229628),	-- Blood-Tempered Chestplate
+			fc(1229621),	-- Blood-Tempered Gauntlets
+			fc(1229627),	-- Blood-Tempered Greatbelt
 			fc(1229629),	-- Blood-Tempered Greaves
+			fc(1229624),	-- Blood-Tempered Leggings
+			fc(1229622),	-- Blood-Tempered Pauldrons
+			fc(1230767),	-- Knight-Commander's Palisade
+			fc(1230766),	-- Murder Row Fleet Feet
+			fc(1229662),	-- Spellbreaker's Bracers
+			fc(1229664),	-- Spellbreaker's Cover
+			fc(1229666),	-- Spellbreaker's Girdle
+			fc(1229663),	-- Spellbreaker's Legguards
+			fc(1229661),	-- Spellbreaker's Mantle
+			fc(1229668),	-- Spellbreaker's March
+			fc(1229665),	-- Spellbreaker's Rebuke
+			fc(1229660),	-- Spellbreaker's Resolve
+			fc(1229667),	-- Spellbreaker's Shelter
+			-- Weapons
+			fc(1229653),	-- Blood Knight's Impetus
+			fc(1229652),	-- Blood Knight's Mercy
+			fc(1229648),	-- Blood Knight's Warblade
 			fc(1229649),	-- Bloomforged Claw
 			fc(1229655),	-- Bloomforged Greataxe
+			fc(1229619),	-- Dawnforged Edge
+			fc(1229618),	-- Dawnforged Long Blade
+			fc(1229620),	-- Dawnforged Ritual Knife
 			fc(1229615),	-- Dawnforged Splitter
 			fc(1229616),	-- Dawnforged War Mace
-			fc(1229618),	-- Dawnforged Long Blade
-			fc(1229619),	-- Dawnforged Edge
-			fc(1229620),	-- Dawnforged Ritual Knife
 			fc(1229646),	-- Farstrider's Chopper
 			fc(1229659),	-- Farstrider's Mercy
-			fc(1230762),	-- Gloaming Alloy
-			fc(1230767),	-- Knight-Commander's Palisade
-			fc(1229647),	-- Magister's Valediction
-			fc(1229650),	-- Magister's Ritual Knife
-			fc(1229651),	-- Magister's Mana Sword
 			fc(1229654),	-- Magister's Cleaver
-			fc(1230766),	-- Murder Row Fleet Feet
+			fc(1229651),	-- Magister's Mana Sword
+			fc(1229650),	-- Magister's Ritual Knife
+			fc(1229647),	-- Magister's Valediction
 			fc(1230768),	-- Murder Row Fishhook
 			fc(1229614),	-- Primalforged Heavy Axe
 			fc(1229617),	-- Primalforged Knuckles
-			fc(1230758),	-- Refulgent Whetstone
-			fc(1230759),	-- Refulgent Weightstone
-			fc(1230760),	-- Refulgent Razorstone
-			fc(1230761),	-- Refulgent Copper Ingot
-			fc(1230764),	-- Refulgent Repair Hammer
+			fc(1229658),	-- Spellbreaker's Blade
 			fc(1229656),	-- Spellbreaker's Ultimatum
 			fc(1229657),	-- Spellbreaker's Warglaive
-			fc(1229658),	-- Spellbreaker's Blade
-			fc(1229660),	-- Spellbreaker's Resolve
-			fc(1229661),	-- Spellbreaker's Mantle
-			fc(1229662),	-- Spellbreaker's Bracers
-			fc(1229663),	-- Spellbreaker's Legguards
-			fc(1229664),	-- Spellbreaker's Cover
-			fc(1229665),	-- Spellbreaker's Rebuke
-			fc(1229666),	-- Spellbreaker's Girdle
-			fc(1229667),	-- Spellbreaker's Shelter
-			fc(1229668),	-- Spellbreaker's March
-			fc(1230763),	-- Sterling Alloy
+			-- Profession Equipment
 			fc(1230769),	-- Sunforged Blacksmith's Hammer
-			fc(1262899),	-- Sunforged Leatherworker's Knife
-			fc(1262905),	-- Sunforged Skinning Knife
-			fc(1262919),	-- Sunforged Pickaxe
 			fc(1264644),	-- Sunforged Blacksmith's Toolbox
+			fc(1262899),	-- Sunforged Leatherworker's Knife
 			fc(1264645),	-- Sunforged Leatherworker's Toolset
 			fc(1264646),	-- Sunforged Needle Set
+			fc(1262919),	-- Sunforged Pickaxe
 			fc(1264651),	-- Sunforged Sickle
+			fc(1262905),	-- Sunforged Skinning Knife
 			fc(1229598),	-- Sun-Blessed Blacksmith's Hammer
-			fc(1229599),	-- Sun-Blessed Leatherworker's Knife
-			fc(1229600),	-- Sun-Blessed Skinning Knife
-			fc(1229601),	-- Sun-Blessed Pickaxe
-			fc(1229602),	-- Sun-Blessed Sickle
 			fc(1229603),	-- Sun-Blessed Blacksmith's Toolbox
+			fc(1229599),	-- Sun-Blessed Leatherworker's Knife
 			fc(1229604),	-- Sun-Blessed Leatherworker's Toolset
 			fc(1229605),	-- Sun-Blessed Needle Set
+			fc(1229601),	-- Sun-Blessed Pickaxe
+			fc(1229602),	-- Sun-Blessed Sickle
+			fc(1229600),	-- Sun-Blessed Skinning Knife
 			fc(1229606),	-- Thalassian Blacksmith's Hammer
-			fc(1229607),	-- Thalassian Leatherworker's Knife
-			fc(1229608),	-- Thalassian Skinning Knife
-			fc(1229609),	-- Thalassian Pickaxe
-			fc(1229610),	-- Thalassian Sickle
 			fc(1229611),	-- Thalassian Blacksmith's Toolbox
+			fc(1229607),	-- Thalassian Leatherworker's Knife
 			fc(1229612),	-- Thalassian Leatherworker's Toolset
 			fc(1229613),	-- Thalassian Needle Set
-			fc(1229630),	-- Thalassian Competitor's Sword
-			fc(1229631),	-- Thalassian Competitor's Greatsword
-			fc(1229632),	-- Thalassian Competitor's Spelldagger [SKEWER NAME DOES NOT MATCH]
-			fc(1229633),	-- Thalassian Competitor's Splitter
+			fc(1229609),	-- Thalassian Pickaxe
+			fc(1229610),	-- Thalassian Sickle
+			fc(1229608),	-- Thalassian Skinning Knife
+			-- Stonework
+			fc(1230760),	-- Refulgent Razorstone
+			fc(1230759),	-- Refulgent Weightstone
+			fc(1230758),	-- Refulgent Whetstone
+			-- Competitor's Plate (PvP)
 			fc(1229634),	-- Thalassian Competitor's Bulwark
-			fc(1229635),	-- Thalassian Competitor's Maxim
+			fc(1229631),	-- Thalassian Competitor's Greatsword
 			fc(1229636),	-- Thalassian Competitor's Knife
+			fc(1229635),	-- Thalassian Competitor's Maxim
 			fc(1229637),	-- Thalassian Competitor's Pickaxe
 			fc(1229638),	-- Thalassian Competitor's Plate Armguards
-			fc(1229639),	-- Thalassian Competitor's Plate Waistguard
-			fc(1229640),	-- Thalassian Competitor's Plate Pauldrons
-			fc(1229641),	-- Thalassian Competitor's Plate Helm
-			fc(1229642),	-- Thalassian Competitor's Plate Gauntlets
-			fc(1229643),	-- Thalassian Competitor's Plate Sabatons
-			fc(1229644),	-- Thalassian Competitor's Plate Greaves
 			fc(1229645),	-- Thalassian Competitor's Plate Breastplate
+			fc(1229642),	-- Thalassian Competitor's Plate Gauntlets
+			fc(1229644),	-- Thalassian Competitor's Plate Greaves
+			fc(1229641),	-- Thalassian Competitor's Plate Helm
+			fc(1229640),	-- Thalassian Competitor's Plate Pauldrons
+			fc(1229643),	-- Thalassian Competitor's Plate Sabatons
+			fc(1229639),	-- Thalassian Competitor's Plate Waistguard
+			fc(1229632),	-- Thalassian Competitor's Skewer
+			fc(1229633),	-- Thalassian Competitor's Splitter
+			fc(1229630),	-- Thalassian Competitor's Sword
+			-- Other
+			fc(1230764),	-- Refulgent Repair Hammer
+			fc(1230765),	-- Thalassian Master Repair Hammer
 			fc(1265906),	-- Thalassian Skeleton Key
 		})),
 		filter(MISC, {
@@ -444,7 +460,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(242283),	-- Sun-Seared Lumifin
 		i(242293),	-- Sunwell Delight
 		i(242278),	-- Tasty Smoked Tetra
-		i(253403),	-- Thalassian Filet
+		i(253403),	-- Thalassian Fillet
 		i(242300),	-- Tranquility Bloom Tea
 		i(242288),	-- Twilight Angler's Medley
 		i(242284),	-- Void-Kissed Fish Rolls
@@ -548,56 +564,80 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
 		},{
-			fc(1236054),	-- Enchant Chest - Mark of Nalorakk
-			fc(1236055),	-- Enchant Helm - Hex of Leeching
-			fc(1236056),	-- Enchant Helm - Empowered Hex of Leeching
+			-- Rods
+			fc(1236487),	-- Runed Brilliant Silver Rod
+			fc(1236488),	-- Runed Dazzling Thorium Rod
+			fc(1236486),	-- Runed Refulgent Copper Rod
+			-- Wands
+			fc(1236490),	-- Magister's Grand Focus
+			fc(1236489),	-- Thalassian Spellweaver's Wand
+			-- Consumables
+			fc(1236492),	-- Oil of Dawn
+			fc(1236493),	-- Smuggler's Enchanted Edge
+			fc(1236491),	-- Thalassian Phoenix Oil
+			-- Boots Enchants
+			fc(1236085),	-- Enchant Boots - Farstrider's Hunt
 			fc(1236057),	-- Enchant Boots - Lynx's Dexterity
-			fc(1236058),	-- Enchant Ring - Amani Mastery
-			fc(1236059),	-- Enchant Ring - Eyes of the Eagle
-			fc(1236060),	-- Enchant Ring - Zul'jin's Mastery
-			fc(1236061),	-- Enchant Shoulders - Flight of the Eagle
-			fc(1236062),	-- Enchant Shoulders - Akil'zon's Swiftness
-			fc(1236063),	-- Enchant Tool - Amani Perception
-			fc(1236064),	-- Enchant Tool - Amani Resourcefulness
-			fc(1236065),	-- Enchant Weapon - Strength of Halazzi
-			fc(1236066),	-- Enchant Weapon - Jan'alai's Precision
-			fc(1236067),	-- Enchant Weapon - Berserker's Rage
+			fc(1236072),	-- Enchant Boots - Shaladrassil's Roots
+			-- Chest Enchants
+			fc(1236054),	-- Enchant Chest - Mark of Nalorakk
+			fc(1236082),	-- Enchant Chest - Mark of the Magister
 			fc(1236068),	-- Enchant Chest - Mark of the Rootwarden
 			fc(1236069),	-- Enchant Chest - Mark of the Worldsoul
+			-- Helm Enchants
 			fc(1236070),	-- Enchant Helm - Blessing of Speed
 			fc(1236071),	-- Enchant Helm - Empowered Blessing of Speed
-			fc(1236072),	-- Enchant Boots - Shaladrassil's Roots
-			fc(1236073),	-- Enchant Ring - Nature's Wrath
-			fc(1236074),	-- Enchant Ring - Nature's Fury
-			fc(1236075),	-- Enchant Shoulders - Nature's Grace
-			fc(1236076),	-- Enchant Shoulders - Amirdrassil's Grace
-			fc(1236077),	-- Enchant Tool - Haranir Finesse
-			fc(1236078),	-- Enchant Tool - Haranir Multicrafting
-			fc(1236079),	-- Enchant Weapon - Worldsoul Cradle
-			fc(1236080),	-- Enchant Weapon - Worldsoul Aegis
-			fc(1236081),	-- Enchant Weapon - Worldsoul Tenacity
-			fc(1236082),	-- Enchant Chest - Mark of the Magister
-			fc(1236083),	-- Enchant Helm - Rune of Avoidance
+			fc(1236056),	-- Enchant Helm - Empowered Hex of Leeching
 			fc(1236084),	-- Enchant Helm - Empowered Rune of Avoidance
-			fc(1236085),	-- Enchant Boots - Farstrider's Hunt
-			fc(1236086),	-- Enchant Ring - Thalassian Haste
-			fc(1236087),	-- Enchant Ring - Thalassian Versatility
+			fc(1236055),	-- Enchant Helm - Hex of Leeching
+			fc(1236083),	-- Enchant Helm - Rune of Avoidance
+			-- Rings Enchants
+			fc(1236058),	-- Enchant Ring - Amani Mastery
+			fc(1236059),	-- Enchant Ring - Eyes of the Eagle
+			fc(1236074),	-- Enchant Ring - Nature's Fury
+			fc(1236073),	-- Enchant Ring - Nature's Wrath
 			fc(1236088),	-- Enchant Ring - Silvermoon's Alacrity
 			fc(1236089),	-- Enchant Ring - Silvermoon's Tenacity
-			fc(1236090),	-- Enchant Shoulders - Thalassian Recovery
+			fc(1236086),	-- Enchant Ring - Thalassian Haste
+			fc(1236087),	-- Enchant Ring - Thalassian Versatility
+			fc(1236060),	-- Enchant Ring - Zul'jin's Mastery
+			-- Shoulder Enchants
+			fc(1236062),	-- Enchant Shoulders - Akil'zon's Swiftness
+			fc(1236076),	-- Enchant Shoulders - Amirdrassil's Grace
+			fc(1236061),	-- Enchant Shoulders - Flight of the Eagle
+			fc(1236075),	-- Enchant Shoulders - Nature's Grace
 			fc(1236091),	-- Enchant Shoulders - Silvermoon's Mending
-			fc(1236092),	-- Enchant Tool - Sin'dorei Deftness
-			fc(1236093),	-- Enchant Tool - Ren'dorei Ingenuity
-			fc(1236094),	-- Enchant Weapon - Flames of the Sin'dorei
+			fc(1236090),	-- Enchant Shoulders - Thalassian Recovery
+			-- Weapon Enchants
 			fc(1236095),	-- Enchant Weapon - Acuity of the Ren'dorei
 			fc(1236097),	-- Enchant Weapon - Arcane Mastery
+			fc(1236067),	-- Enchant Weapon - Berserker's Rage
+			fc(1236094),	-- Enchant Weapon - Flames of the Sin'dorei
+			fc(1236066),	-- Enchant Weapon - Jan'alai's Precision
+			fc(1236065),	-- Enchant Weapon - Strength of Halazzi
+			fc(1236080),	-- Enchant Weapon - Worldsoul Aegis
+			fc(1236079),	-- Enchant Weapon - Worldsoul Cradle
+			fc(1236081),	-- Enchant Weapon - Worldsoul Tenacity
+			-- Tool Enchants
+			fc(1236063),	-- Enchant Tool - Amani Perception
+			fc(1236064),	-- Enchant Tool - Amani Resourcefulness
+			fc(1236077),	-- Enchant Tool - Haranir Finesse
+			fc(1236078),	-- Enchant Tool - Haranir Multicrafting
+			fc(1236093),	-- Enchant Tool - Ren'dorei Ingenuity
+			fc(1236092),	-- Enchant Tool - Sin'dorei Deftness
+			-- Illusions
+			fc(1236098),	-- Illusory Adornment - Blooming Light
+			fc(1236099),	-- Illusory Adornment - Nature's Embrace
+			fc(1236100),	-- Illusory Adornment - Voidtouched
+			-- Greeful Glamours
 			fc(1236461),	-- Gleeful Glamour - Blood Elf
 			fc(1236463),	-- Gleeful Glamour - Dark Iron Dwarf
-			fc(1236464),	-- Gleeful Glamour - Haranir
 			fc(1236465),	-- Gleeful Glamour - Draenei
 			fc(1236466),	-- Gleeful Glamour - Dwarf
+			fc(1236594),	-- Gleeful Glamour - Earthen
 			fc(1236467),	-- Gleeful Glamour - Gnome
 			fc(1236468),	-- Gleeful Glamour - Goblin
+			fc(1236464),	-- Gleeful Glamour - Haranir
 			fc(1236469),	-- Gleeful Glamour - Highmountain Tauren
 			fc(1236470),	-- Gleeful Glamour - Human
 			fc(1236471),	-- Gleeful Glamour - Kul Tiran
@@ -615,18 +655,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			fc(1236483),	-- Gleeful Glamour - Vulpera
 			fc(1236484),	-- Gleeful Glamour - Worgen
 			fc(1236485),	-- Gleeful Glamour - Zandalari Troll
-			fc(1236594),	-- Gleeful Glamour - Earthen
-			fc(1236098),	-- Illusory Adornment - Blooming Light
-			fc(1236099),	-- Illusory Adornment - Nature's Embrace [Calls it "Shoulder Enchant" Still]
-			fc(1236100),	-- Illusory Adornment - Voidtouched [Calls it "Shoulder Enchant" Still]
-			fc(1236490),	-- Magister's Grand Focus
-			fc(1236492),	-- Oil of Dawn
-			fc(1236486),	-- Runed Refulgent Copper Rod
-			fc(1236487),	-- Runed Brilliant Silver Rod
-			fc(1236488),	-- Runed Dazzling Thorium Rod
-			fc(1236493),	-- Smuggler's Enchanted Edge
-			fc(1236489),	-- Thalassian Spellweaver's Wand
-			fc(1236491),	-- Thalassian Phoenix Oil
 		})),
 		filter(MISC, {
 			i(243773),	-- Gleeful Glamour - Blood Elf+
@@ -754,7 +782,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245340),	-- Evercore Greaseplates
 			i(244753),	-- Evercore Reconnaissance
 			i(244752),	-- Evercore Shade
-			i(245338),	-- Evercore Stichwraps
+			i(245338),	-- Evercore Stitchwraps
 			i(245337),	-- Evercore Swiftfeet
 			i(245339),	-- Evercore Turbochains
 			i(244754),	-- Evercore Vision Guard
@@ -801,93 +829,113 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENGINEERING,
 		},{
-			FirstCraft(90264, 1229875);	-- Aetherlume Bands
-			FirstCraft(90265, 1229876);	-- Aetherlume Bracelets
-			FirstCraft(90289, 1229880);	-- Aetherlume Clonkers
-			FirstCraft(90259, 1229870);	-- Aetherlume Eye Wrap
-			FirstCraft(90266, 1229877);	-- Aetherlume Guards
-			FirstCraft(90260, 1229871);	-- Aetherlume Optics
-			FirstCraft(90288, 1229879);	-- Aetherlume Runners
-			FirstCraft(90263, 1229874);	-- Aetherlume Silken Cuffs
-			FirstCraft(90287, 1229878);	-- Aetherlume Softsteppers
-			FirstCraft(90290, 1229881);	-- Aetherlume Stompers
-			FirstCraft(90262, 1229873);	-- Aetherlume Sun Guard
-			FirstCraft(90261, 1229872);	-- Aetherlume Vision Shroud
-			FirstCraft(93236, 1261945);	-- B0P, Curator of Booms
-			FirstCraft(90307, 1229922);	-- B1P, Scorcher of Souls
+			-- Parts
+			FirstCraft(90138, 1229755);	-- Song Gear
+			FirstCraft(90229, 1229853);	-- Soul Sprocket
+			-- Cogwheels
 			FirstCraft(90235, 1229858);	-- Consistent Cogwheel
-			FirstCraft(90303, 1229927);	-- Curious Red Button
-			FirstCraft(90311, 1229923);	-- Emergency Soul Link
-			FirstCraft(90296, 1229867);	-- Evercore Binding
-			FirstCraft(90298, 1229869);	-- Evercore Gear Weight
-			FirstCraft(90294, 1229938);	-- Evercore Greaseplates
-			FirstCraft(90297, 1229868);	-- Evercore Chainguards
-			FirstCraft(90269, 1229864);	-- Evercore Reconissance
-			FirstCraft(90268, 1229863);	-- Evercore Shade
-			FirstCraft(90292, 1229936);	-- Evercore Stichwraps
-			FirstCraft(90291, 1229935);	-- Evercore Swiftfeet
-			FirstCraft(90293, 1229937);	-- Evercore Turbochains
-			FirstCraft(90270, 1229865);	-- Evercore Vision Guard
-			FirstCraft(90295, 1229866);	-- Evercore Wrist Latch
-			FirstCraft(90267, 1229862);	-- Evercore Zoomshroud
-			FirstCraft(90243, 1229898);	-- Farstrider Clampers
-			FirstCraft(90237, 1229900);	-- Farstrider Fabric Cutters
-			FirstCraft(90245, 1229904);	-- Farstrider Hardhat
-			FirstCraft(90241, 1229895);	-- Farstrider Hobbyist Rod
-			FirstCraft(90249, 1229899);	-- Farstrider Rock Satchel
-			FirstCraft(93228, 1261866);	-- Farstrider's Hawkeye
 			FirstCraft(90232, 1229859);	-- Flux Cogwheel
 			FirstCraft(90233, 1229857);	-- Greased Cogwheel
-			FirstCraft(90318, 1229921);	-- HU5H, Nonchalant Pup
-			FirstCraft(90250, 1229906);	-- Junker's Big Ol' Bag
-			FirstCraft(90239, 1229901);	-- Junker's Junk Visor
-			FirstCraft(90247, 1229896);	-- Junker's Multitool
+			FirstCraft(90234, 1229856);	-- Perfected Cogwheel
+			-- Bits
+			FirstCraft(90303, 1229927);	-- Curious Red Button
+			FirstCraft(90311, 1229923);	-- Emergency Soul Link
+			FirstCraft(93228, 1261866);	-- Farstrider's Hawkeye
 			FirstCraft(90299, 1229919);	-- Kinetic Ankle Primers
 			FirstCraft(93231, 1261895);	-- Laced Zoomshots
 			FirstCraft(90306, 1229916);	-- Lucky Keychain
+			FirstCraft(93230, 1261893);	-- Smuggler's Lynxeye
+			FirstCraft(93231, 1261913);	-- Weighted Boomshots
+			FirstCraft(90304, 1229928);	-- Wormhole Generator: Quel'Thalas
+			-- Bots
+			FirstCraft(93236, 1261945);	-- B0P, Curator of Booms
+			FirstCraft(90307, 1229922);	-- B1P, Scorcher of Souls
+			FirstCraft(90318, 1229921);	-- HU5H, Nonchalant Pup
 			FirstCraft(90308, 1229924);	-- M3DDY
 			FirstCraft(90300, 1229917);	-- M3DDY, Travel-Sized
-			FirstCraft(90234, 1229856);	-- Perfected Cogwheel
-			FirstCraft(90272, 1229887);	-- Quel'dorei Bands
-			FirstCraft(90273, 1229888);	-- Quel'dorei Bracelets
-			FirstCraft(90285, 1229892);	-- Quel'dorei Clonkers
+			FirstCraft(90302, 1229926);	-- W-47CH D0G
+			-- Guns
+			--FirstCraft(TODO, 1282455);	-- Evercore Dome Dinger
+			--FirstCraft(TODO, 1282456);	-- P.O.W. x3
+			--FirstCraft(TODO, 1282457);	-- Thalassian Competitor's Rifle
+			-- Cloth Equipment
+			FirstCraft(90259, 1229870);	-- Aetherlume Eye Wrap
+			FirstCraft(90263, 1229874);	-- Aetherlume Silken Cuffs
+			FirstCraft(90287, 1229878);	-- Aetherlume Softsteppers
+			FirstCraft(90291, 1229935);	-- Evercore Swiftfeet
+			FirstCraft(90295, 1229866);	-- Evercore Wrist Latch
+			FirstCraft(90267, 1229862);	-- Evercore Zoomshroud
 			FirstCraft(90275, 1229882);	-- Quel'dorei Cloth Goggles
-			FirstCraft(90274, 1229889);	-- Quel'dorei Guards
-			FirstCraft(90276, 1229883);	-- Quel'dorei Leather Optics
-			FirstCraft(90277, 1229884);	-- Quel'dorei Mail Shroud
-			FirstCraft(90284, 1229891);	-- Quel'dorei Runners
 			FirstCraft(90271, 1229886);	-- Quel'dorei Silken Cuffs
 			FirstCraft(90283, 1229890);	-- Quel'dorei Softsteppers
+			FirstCraft(90255, 1229912);	-- Thalassian Competitor's Cloth Cuffs
+			FirstCraft(90251, 1229908);	-- Thalassian Competitor's Cloth Goggles
+			FirstCraft(90279, 1261490, ADDED_12_0_1_LAUNCH, REMOVED_12_0_5);	-- Thalassian Competitor's Cloth Tip-Toes
+			FirstCraft(95582, 1261490, ADDED_12_0_5);	-- Thalassian Competitor's Cloth Tip-Toes
+			-- Leather Equipment
+			FirstCraft(90264, 1229875);	-- Aetherlume Bands
+			FirstCraft(90260, 1229871);	-- Aetherlume Optics
+			FirstCraft(90288, 1229879);	-- Aetherlume Runners
+			FirstCraft(90296, 1229867);	-- Evercore Binding
+			FirstCraft(90268, 1229863);	-- Evercore Shade
+			FirstCraft(90292, 1229936);	-- Evercore Stichwraps
+			FirstCraft(90272, 1229887);	-- Quel'dorei Bands
+			FirstCraft(90276, 1229883);	-- Quel'dorei Leather Optics
+			FirstCraft(90284, 1229891);	-- Quel'dorei Runners
+			FirstCraft(90256, 1229913);	-- Thalassian Competitor's Leather Bands
+			FirstCraft(90280, 1261491, ADDED_12_0_1_LAUNCH, REMOVED_12_0_5);	-- Thalassian Competitor's Leather Sliders
+			FirstCraft(95579, 1261491, ADDED_12_0_5);	-- Thalassian Competitor's Leather Sliders
+			FirstCraft(90252, 1229909);	-- Thalassian Competitor's Leather Optics
+			-- Mail Equipment
+			FirstCraft(90265, 1229876);	-- Aetherlume Bracelets
+			FirstCraft(90289, 1229880);	-- Aetherlume Clonkers
+			FirstCraft(90261, 1229872);	-- Aetherlume Vision Shroud
+			FirstCraft(90297, 1229868);	-- Evercore Chainguards
+			FirstCraft(90269, 1229864);	-- Evercore Reconissance
+			FirstCraft(90293, 1229937);	-- Evercore Turbochains
+			FirstCraft(90273, 1229888);	-- Quel'dorei Bracelets
+			FirstCraft(90285, 1229892);	-- Quel'dorei Clonkers
+			FirstCraft(90277, 1229884);	-- Quel'dorei Mail Shroud
+			FirstCraft(90281, 1261492, ADDED_12_0_1_LAUNCH, REMOVED_12_0_5);	-- Thalassian Competitor's Mail Footlinks
+			FirstCraft(95581, 1261492, ADDED_12_0_5);	-- Thalassian Competitor's Mail Footlinks
+			FirstCraft(90257, 1229914);	-- Thalassian Competitor's Mail Links
+			FirstCraft(90253, 1229910);	-- Thalassian Competitor's Mail Visor
+			-- Plate Equipment
+			FirstCraft(90266, 1229877);	-- Aetherlume Guards
+			FirstCraft(90290, 1229881);	-- Aetherlume Stompers
+			FirstCraft(90262, 1229873);	-- Aetherlume Sun Guard
+			FirstCraft(90298, 1229869);	-- Evercore Gear Weight
+			FirstCraft(90294, 1229938);	-- Evercore Greaseplates
+			FirstCraft(90270, 1229865);	-- Evercore Vision Guard
+			FirstCraft(90274, 1229889);	-- Quel'dorei Guards
 			FirstCraft(90286, 1229893);	-- Quel'dorei Stompers
 			FirstCraft(90278, 1229885);	-- Quel'dorei Visor
+			FirstCraft(90258, 1229915);	-- Thalassian Competitor's Plate Bindings
+			FirstCraft(90282, 1261493, ADDED_12_0_1_LAUNCH, REMOVED_12_0_5);	-- Thalassian Competitor's Plate Dunkers
+			FirstCraft(95578, 1261493, ADDED_12_0_5);	-- Thalassian Competitor's Plate Dunkers
+			FirstCraft(90254, 1229911);	-- Thalassian Competitor's Plate Guard
+			-- Tools and Accessories
+			FirstCraft(90237, 1229900);	-- Farstrider Fabric Cutters
+			FirstCraft(90241, 1229895);	-- Farstrider Hobbyist Rod
+			FirstCraft(90243, 1229898);	-- Farstrider Clampers
+			FirstCraft(90245, 1229904);	-- Farstrider Hardhat
+			FirstCraft(90249, 1229899);	-- Farstrider Rock Satchel
+			--FirstCraft(TODO, 1264528);	-- Giga-Gem Grippers
+			--FirstCraft(TODO, 1264523);	-- Head-Mounted Beam Bummer
+			--FirstCraft(TODO, 1264525);	-- Heavy-Duty Rock Assister
+			FirstCraft(90239, 1229901);	-- Junker's Junk Visor
+			FirstCraft(90247, 1229896);	-- Junker's Multitool
+			FirstCraft(90250, 1229906);	-- Junker's Big Ol' Bag
+			--FirstCraft(TODO, 1264524);	-- Rock Bonkin' Hardhat
+			--FirstCraft(TODO, 1264526);	-- Self-Sharpening Sin'dorei Snippers
+			FirstCraft(90238, 1229907);	-- Sin'dorei Snippers
+			FirstCraft(90240, 1229894);	-- Sin'dorei Headlamp
 			FirstCraft(90242, 1229902);	-- Sin'dorei Angler's Rod
 			FirstCraft(90244, 1229905);	-- Sin'dorei Clampers
 			FirstCraft(90246, 1229897);	-- Sin'dorei Gilded Hardhat
-			FirstCraft(90240, 1229894);	-- Sin'dorei Headlamp
-			FirstCraft(90238, 1229907);	-- Sin'dorei Snippers
-			FirstCraft(93230, 1261893);	-- Smuggler's Lynxeye
-			FirstCraft(90138, 1229755);	-- Song Gear
-			FirstCraft(90229, 1229853);	-- Soul Sprocket
-			FirstCraft(90255, 1229912);	-- Thalassian Competitor's Cloth Cuffs
-			FirstCraft(90251, 1229908);	-- Thalassian Competitor's Cloth Goggles
-			FirstCraft(90279, 1261490);	-- Thalassian Competitor's Cloth Tip-Toes
-			FirstCraft(90258, 1261490);	-- Thalassian Competitor's Cloth Tip-Toes
-			FirstCraft(90256, 1229913);	-- Thalassian Competitor's Leather Bands
-			FirstCraft(90252, 1229909);	-- Thalassian Competitor's Leather Optics
-			FirstCraft(90280, 1261491);	-- Thalassian Competitor's Leather Sliders
-			FirstCraft(90258, 1261491);	-- Thalassian Competitor's Leather Sliders
-			FirstCraft(90281, 1261492);	-- Thalassian Competitor's Mail Footlinks
-			FirstCraft(90258, 1261492);	-- Thalassian Competitor's Mail Footlinks
-			FirstCraft(90257, 1229914);	-- Thalassian Competitor's Mail Links
-			FirstCraft(90253, 1229910);	-- Thalassian Competitor's Mail Visor
-			FirstCraft(90258, 1229915);	-- Thalassian Competitor's Plate Bindings
-			FirstCraft(90282, 1261493);	-- Thalassian Competitor's Plate Dunkers
-			FirstCraft(90258, 1261493);	-- Thalassian Competitor's Plate Dunkers
-			FirstCraft(90254, 1229911);	-- Thalassian Competitor's Plate Guard
-			FirstCraft(90248, 1229903);	-- Turbo-Junker's Multitool
-			FirstCraft(90302, 1229926);	-- W-47CH D0G
-			FirstCraft(93231, 1261913);	-- Weighted Boomshots
-			FirstCraft(90304, 1229928);	-- Wormhole Generator: Quel'Thalas
+			--FirstCraft(TODO, 1264527);	-- Sin'dorei Reeler's Rod
+			FirstCraft(90248, 1229903);	-- Turbo-Junker's Multitool v1
+			--FirstCraft(TODO, 1264529);	-- Turbo-Junker's Multitool v9
 		})),
 		filter(MISC, {
 			i(248138),	-- Curious Red Button
@@ -1044,6 +1092,39 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1225282, 88608),	-- Wyrmfish
 			r(1225335, {["learnedAt"]=75}),	-- Zul'Aman
 		}),
+		header(HEADERS.Item, 262796, {	-- Midnight Angler's Grand Line
+			i(262796, {	-- Midnight Angler's Grand Line
+				["cost"] = {
+					{ "i", 262795, 1 },	-- Angler's Bloomline
+					{ "i", 262800, 1 },	-- Angler's Glimmerline
+				},
+			}),
+			i(262795, {	-- Angler's Bloomline (Epic Quality)
+				["cost"] = { { "i", 262794, 5 } },	-- 5x Weak Bloomline
+			}),
+			i(262800, {	-- Angler's Glimmerline (Epic Quality)
+				["cost"] = { { "i", 262799, 20 } },	-- 20x Weak Glimmerline
+			}),
+			i(262794, {	-- Weak Bloomline (Rare Quality)
+				["cost"] = { { "i", 262793, 20 } },	-- 20x Stranded Bloomline
+			}),
+			i(262799, {	-- Weak Glimmerline (Rare Quality)
+				["cost"] = { { "i", 262798, 20 } },	-- 20x Stranded Glimmerline
+			}),
+			i(262793, {	-- Stranded Bloomline (Uncommon Quality)
+				["cost"] = { { "i", 262792, 100 } },	-- 100x Shredded Bloomline
+			}),
+			i(262798, {	-- Stranded Glimmerline (Uncommon Quality)
+				["cost"] = { { "i", 262797, 100 } },	-- 100x Shredded Glimmerline
+			}),
+			i(262792),	-- Shredded Bloomline
+			i(262797),	-- Shredded Glimmerline
+		}),
+		filter(MOUNTS, {
+			i(268730, {	-- Nether-Warped Egg
+				i(260916),	-- Nether-Swept Drake (MOUNT!)
+			}),
+		}),
 		i(238490, {	-- Ambiguous Rock
 			i(266102),	-- Ambiguous Rock
 		}),
@@ -1060,6 +1141,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(243342),	-- Bloom Bauble
 		i(238369),	-- Bloomtail Minnow
 		i(238489),	-- Definitely Not a Rock
+		i(262787),	-- Dredged Journal Entry
 		i(238383),	-- Eversong Trout
 		i(238375),	-- Fungalskin Pike
 		i(238382),	-- Gore Guppy
@@ -1067,25 +1149,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(263938),	-- Idol of Peril (QS!)
 		i(238376),	-- Lucky Loa
 		i(238366),	-- Lynxfish
-		i(268730, {	-- Nether-Warped Egg
-			i(260916),	-- Nether-Swept Drake (MOUNT!)
-		}),
 		i(238380),	-- Null Voidfish
 		i(238373),	-- Ominous Octopus
 		i(241149),	-- Ominous Octopus Lure
+		i(262651, {["timeline"] = {ADDED_12_0_5}}),	-- Pointed Spikesnail
 		i(238372),	-- Restored Songfish
 		i(238367),	-- Root Crab
 		i(238378),	-- Shimmersiren
 		i(238370),	-- Shimmer Spinefish
-		i(262792),	-- Shredded Bloomline
-		i(262797),	-- Shredded Glimmerline
-		i(262793),	-- Stranded Bloomline (Green Quality)
-		i(262798),	-- Stranded Glimmerline (Green Quality)
 		i(238365),	-- Sin'dorei Swarmer
 		i(238384),	-- Sunwell Fish
 		i(238374),	-- Tender Lumifin
 		i(238368),	-- Twisted Tetra
 		i(238379),	-- Warping Wise
+		i(262650, {["timeline"] = {ADDED_12_0_5}}),	-- Writhing Wiggleworm
 	}),
 	prof(HERBALISM, {
 		n(DISCOVERY, {
@@ -1360,8 +1437,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245779, {["requireSkill"] = COOKING}),	-- Hobbyist Rolling Pin
 			i(245775, {["requireSkill"] = INSCRIPTION}),	-- Hobbyist Scribe's Quill
 			i(245778, {["requireSkill"] = ALCHEMY}),	-- Sin'dorei Alchemist's Mixing Rod
-			i(245776, {["requireSkill"] = COOKING}),	-- Sin'dorei Quill
-			i(245780, {["requireSkill"] = INSCRIPTION}),	-- Sin'dorei Rolling Pin
+			i(245776, {["requireSkill"] = INSCRIPTION}),	-- Sin'dorei Quill
+			i(245780, {["requireSkill"] = COOKING}),	-- Sin'dorei Rolling Pin
 		}),
 		filter(REAGENTS, {
 			i(245764),	-- Codified Azeroot+
@@ -1873,6 +1950,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		filter(MISC, {
 			i(244639),	-- Void-Touched Drums
 		}),
+		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
+			i(270058),	-- Rope Lynx Harness (MOUNT!)
+		})),
 		filter(PROFESSION_EQUIPMENT, {
 			i(244629, {["requireSkill"] = JEWELCRAFTING}),	-- Apprentice Jeweler's Apron
 			i(244627, {["requireSkill"] = BLACKSMITHING}),	-- Apprentice Smith's Apron
@@ -2062,6 +2142,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = TAILORING,
 		},{
 			FirstCraft(90027, 1228950);	-- Adherent's Silken Shroud
+			FirstCraft(90061, 1228984);	-- Arcanoweave Bracers
 			FirstCraft(90082, 1227926);	-- Arcanoweave Bolt
 			FirstCraft(90062, 1228985);	-- Arcanoweave Cloak
 			FirstCraft(90065, 1228988);	-- Arcanoweave Cord

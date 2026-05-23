@@ -710,6 +710,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(198821, {	-- Divine Kiss of Ohn'ahra (MOUNT!)
 				["displayID"] = 110505,
 			}),
+			i(192778, {	-- Liquid Hot Magma Slug
+				["displayID"] = 108836,
+			}),
 			i(198823, {	-- [PH] Brown Wind Eagle (MOUNT!)
 				["displayID"] = 108742,
 			}),
@@ -727,9 +730,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 			i(192781, {	-- PH Lava Slug Blue (MOUNT!)
 				["displayID"] = 108841,
-			}),
-			i(192778, {	-- PH Lava Slug Orange (MOUNT!)
-				["displayID"] = 108836,
 			}),
 			i(192780, {	-- PH Lava Slug Orange [Item: [PH] Lava Snail Orange] (MOUNT!)
 				["displayID"] = 108836,
@@ -787,15 +787,16 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(210145, {	-- [PH] YellowBlack-Furred Bakar (MOUNT!)
 				["displayID"] = 111731,
 			}),
+			-- #if BEFORE 12.0.7
+			i(210140, {	-- Black-Furred Bakar (MOUNT!)
+				["displayID"] = 111718,
+			}),
+			-- #endif
 			i(211075, {	-- Deathbringer's Shadowcycle (MOUNT!)
 				["displayID"] = 114788,
 			}),
 			i(211086, {	-- Jeweled Jade Scarab (MOUNT!)
 				["displayID"] = 114744,
-			}),
-			-- Without MountID Attached
-			i(210140, {	-- [PH] Black-Furred Bakar (MOUNT!)
-				-- ["displayID"] = ,
 			}),
 		})),
 
@@ -1066,6 +1067,13 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				-- ["displayID"] = ,
 			}),
 		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			i(258488, {	-- Skypaw Glimmerfur (MOUNT!)
+				["displayID"] = 138435,
+			}),
+		})),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
@@ -1080,14 +1088,57 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(257157, {	-- [DNT] 12.0 Black Hawkstrider (MOUNT!)
 				["displayID"] = 131413,
 			}),
+			i(260896, {	-- Accented Pseudoshell (MOUNT!)
+				["displayID"] = 139487,
+			}),
 			i(250921, {	-- Amani Blessed Bear (MOUNT!)
 				["displayID"] = 120151,
+			}),
+			i(262707, {	-- Blooded Snapvine (MOUNT!)
+				["displayID"] = 139692,
+			}),
+			i(260894, {	-- Cabbage Pseudoshell (MOUNT!)
+				["displayID"] = 139485,
+			}),
+			i(262496, {	-- Delver's Arcane Golem (MOUNT!)
+				["displayID"] = 138593,
+			}),
+			i(264273, {	-- Fel Spirehawk (MOUNT!)
+				["displayID"] = 140095,
+			}),
+			i(262706, {	-- Ferocious Snapvine (MOUNT!)
+				["displayID"] = 139691,
+			}),
+			i(263449, {	-- Fluffy Comfy Flying Quilt (MOUNT!)
+				["displayID"] = 139896,
+			}),
+			i(262661, {	-- Ghastropod (MOUNT!)
+				["displayID"] = 139670,
+			}),
+			i(263450, {	-- Gruffy Comfy Flying Quilt (MOUNT!)
+				["displayID"] = 139897,
+			}),
+			i(262909, {	-- Hypo-Speed X6000 (MOUNT!)
+				["displayID"] = 139761,
+			}),
+			i(260895, {	-- Lavender Pseudoshell (MOUNT!)
+				["displayID"] = 139486,
+			}),
+			i(262708, {	-- Savage Snapvine (MOUNT!)
+				["displayID"] = 139693,
 			}),
 			-- Without MountID attached
 			i(253587, {	-- Scale of Aln'sharan (MOUNT!)
 				["displayID"] = 137945,
 			}),
+		})),
 
+		-- 12.0.5
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+			-- With MountID attached
+			i(260421, {	-- Void-Corrupted Amani Warbear Kit (MOUNT!)
+				-- ["displayID"] = ,
+			}),
 		})),
 	}),
 }));

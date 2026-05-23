@@ -2749,3 +2749,9 @@ i(0, 1237513);		-- Silvermoon Agent's Utility Belt
 i(0, 1237576);		-- Recraft Equipment
 i(256651, 0);		-- Pattern: Blood Knight's Armor Kit
 i(256648, 0);		-- Pattern: Devouring Banding
+
+------------------
+-- PATCH 12.0.5 --
+------------------
+--- ITEM ---
+i(272391, 1291046);	-- Rope Lynx Harness

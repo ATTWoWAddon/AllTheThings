@@ -679,7 +679,6 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			faction(2610),	-- Azj-Kaheti Nerubian (Always Hostile) (Hidden)
 			faction(2612),	-- Council of Dornogal (Paragon)
-			faction(2644),	-- Delves: Season 1
 			faction(2645),	-- Earthen
 			faction(2611),	-- Hallowfall Arathi (Paragon)
 			faction(2595),	-- Order of Night
@@ -712,7 +711,6 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2652),	-- Darkfuse Enforcement
 			faction(2668),	-- Darkfuse Solutions (Paragon)
 			faction(2693),	-- Delver's Journey (Season 1)
-			faction(2683),	-- Delves: Season 2
 			faction(2684),	-- Gallagio Loyalty Rewards Club (Paragon)
 			faction(2676),	-- Steamwheedle Cartel (Paragon)
 			faction(2695),	-- Test Account Wide Stormwind (DNT)
@@ -731,7 +729,6 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
 			faction(2657),	-- 11.2 Ethereum
 			faction(2739),	-- Delves: Coffer Key Shards Conversion
-			faction(2722),	-- Delves: Season 3
 			faction(2659),	-- The K'aresh Trust (Paragon)
 		})),
 
@@ -749,7 +746,6 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
 			faction(2705),	-- Amani Tribe (Paragon)
 			faction(2716),	-- Blood Knights (Paragon)
-			faction(2742),	-- Delves: Season 1
 			faction(2700),	-- DEPRECATED Fungarian Fighting Ring
 			faction(2717),	-- Farstriders (Paragon)
 			faction(2726),	-- Hara'ti (Paragon)
@@ -765,6 +761,11 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2725),	-- The Singularity (Paragon)
 			faction(2709),	-- Vanguard of the Light
 			faction(2706),	-- Witherbark Tribe
+		})),
+
+		-- 12.0.5
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+			faction(2793),	-- Ritual Sites (Paragon)
 		})),
 	}),
 }));

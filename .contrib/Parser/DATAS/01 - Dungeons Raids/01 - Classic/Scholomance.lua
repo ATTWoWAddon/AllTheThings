@@ -9,7 +9,7 @@ local ignoreTimeline = function(item)	-- Items applied with this were never actu
 	return item;
 end
 
-local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 } }, {
+local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4, ADDED_10_1_5 } }, {
 		ach(18368, {	-- Memory of Scholomance
 			["sourceQuest"] = 76249,	-- Memory of Scholomance
@@ -745,6 +745,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 	}),
 	n(ZONE_DROPS, {
+		i(20520),	-- Dark Rune
 		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
 			["cr"] = 10469,	-- Scholomance Adept
 		}),

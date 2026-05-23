@@ -300,7 +300,7 @@ q(8922,{coords={
 q(8923,{coords={
 [1454]={{35,38.3}}},lvl=58,maps={1446},providers={{"i",22382}},qgs={16012},r=1,sourceQuests={8913,8914,8915,8916,8917,8918,8919,8920},u=15}),
 q(8948,{coords={
-[1423]={{30.9,16.8}}},cost={{"i",21983,1}},lvl=58,maps={234,235,236,237,238},qgs={16016},sourceQuests={8947},u=15}),
+[1423]={{30.9,16.8}}},lvl=58,maps={234,235,236,237,238},providers={{"i",21983}},qgs={16016},sourceQuests={8947},u=15}),
 q(8947,{coords={
 [1423]={{30.9,16.8}}},cost={{"i",15407,4},{"i",14342,3},{"i",12810,20},{"i",11371,3}},lvl=58,qgs={16016},sourceQuests={8946},u=15}),
 q(8997,{lvl=58,maps={33,1455},qgs={16033},r=2,sourceQuests={8996},u=15}),
@@ -328,9 +328,9 @@ q(8994,{cost={{"i",13512,1},{"i",22048,1}},lvl=58,maps={33,250,251,252,253,254,2
 qo(1,{providers={{"i",22138}},u=15})}}),
 q(8924,{coords={
 [1446]={{52.4,27.2}}},lvl=58,maps={1423,1451,1452},qgs={16014},sourceQuests={8921},u=15,g={
-qo(1,{cost={{"i",21946,1}},crs={12178,12179},providers={{"i",21937}},u=15}),
-qo(2,{cost={{"i",21946,1}},crs={7523,7524},providers={{"i",21936}},u=15}),
-qo(3,{cost={{"i",21946,1}},crs={8538,8539,8540,8541,8542},providers={{"i",21935}},u=15})}}),
+qo(1,{cost={{"i",9061,1},{"i",21946,1}},crs={12178,12179},providers={{"i",21937}},u=15}),
+qo(2,{cost={{"i",9061,1},{"i",21946,1}},crs={7523,7524},providers={{"i",21936}},u=15}),
+qo(3,{cost={{"i",9061,1},{"i",21946,1}},crs={8538,8539,8540,8541,8542},providers={{"i",21935}},u=15})}}),
 q(8970,{lvl=58,maps={33,1445},qgs={16033},sourceQuests={8966,8967,8968,8969},u=15,g={
 qo(1,{crs={4364,4366,4368,4370,4371,16072},providers={{"i",22094},{"o",181053}},u=15})}}),
 q(8929,{coords={
@@ -359,9 +359,11 @@ q(8996,{cost={{"i",22056,1}},lvl=58,maps={33,250,251,252,253,254,255},qgs={16073
 i(22057,{b=1,q=1,u=15}),
 i(22344,{b=1,q=1,u=15})}}),
 q(8977,{coords={
-[1446]={{52.4,27.2}}},cost={{"i",22115,1}},lvl=58,maps={1455},qgs={16014},r=2,sourceQuests={8928},u=15}),
+[1446]={{52.4,27.2}}},lvl=58,maps={1455},qgs={16014},r=2,sourceQuests={8928},u=15,g={
+i(22115,{b=1,q=1,u=15})}}),
 q(8978,{coords={
-[1446]={{52.4,27.2}}},cost={{"i",22115,1}},lvl=58,maps={1454},qgs={16014},r=1,sourceQuests={8928},u=15}),
+[1446]={{52.4,27.2}}},lvl=58,maps={1454},qgs={16014},r=1,sourceQuests={8928},u=15,g={
+i(22115,{b=1,q=1,u=15})}}),
 q(9015,{lvl=58,maps={234,235,236,237,238,242},qgs={16032},sourceQuests={8950},u=15,g={
 qo(1,{providers={{"i",21986}},u=15}),
 qo(2,{providers={{"i",22047}},u=15}),
@@ -369,7 +371,8 @@ i(21986,{b=1,description="Long after Classic is over, you can use this item to s
 q(8921,{coords={
 [1446]={{52.4,27.2}}},cost={{"i",13423,10},{"i",16203,4},{"i",16006,1},{"g",400000}},lvl=58,maps={1428},qgs={16014},sourceQuests={8922,8923},u=15,g={
 qo(4,{crs={10078},providers={{"i",22338},{"o",181098}},u=15}),
-i(22320,{b=1,q=1,u=15})}}),
+i(22320,{b=1,q=1,u=15}),
+i(21946,{b=1,q=1,u=15})}}),
 q(8950,{cost={{"i",14344,8},{"i",20520,4}},lvl=58,maps={234,235,236,237,238},qgs={16032},sourceQuests={8949},u=15,g={
 qo(1,{providers={{"i",22224}},u=15})}}),
 q(8966,{c={1,8},cost={{"i",22049,1},{"i",22115,1}},lvl=58,maps={33,250,251,252,253,254,255},qgs={16033},sourceQuests={8962},u=15,g={
@@ -4666,7 +4669,7 @@ s(159010,7727,{f=5,lvl=27,q=3}),
 s(159026,7757,{f=28,lvl=32,q=3})})}}),
 inst(246,{coords={
 [1422]={{69.07,72.96}}},cost={{"i",13704,1}},lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,maps={306,307,308,309},savedInstanceID=289,sourceQuests={5505,5511},["zone-text-areaID"]=2057,g={
-h(-45,{awp=100105,rwp=50004,g={
+h(-45,{awp=10300,rwp=50004,g={
 q(8259,{altQuests={8258},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7668},u=14,g={
 s(164185,20134,{b=1,f=6,q=4,u=14})}}),
@@ -4700,8 +4703,8 @@ q(5531,{coords={
 [1423]={{81.73,57.83}}},lvl=57,providers={{"i",13761}},qgs={11036},rwp=40003,sourceQuests={5522}}),
 q(4771,{coords={
 [1423]={{81.5,59.7}}},description="After completing this quest, you can return to Betina to have her give you another Gambit.",lvl=57,qgs={11035},rwp=40003,sourceQuests={5531},g={
-qo(1,{awp=100105,providers={{"n",10432}},rwp=50004}),
-qo(2,{awp=100105,description="This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",providers={{"i",12368}},rwp=50004}),
+qo(1,{awp=10300,providers={{"n",10432}},rwp=50004}),
+qo(2,{awp=10300,description="This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",providers={{"i",12368}},rwp=50004}),
 s(162619,15854,{b=1,f=28,q=3}),
 s(162618,15853,{b=1,f=21,q=3})}}),
 q(5382,{coords={
@@ -4761,11 +4764,11 @@ q(5465,{coords={
 [1423]={{81.7,57.8}}},lvl=57,providers={{"i",13624}},qgs={11036},rwp=40003,sourceQuests={5464}}),
 q(7668,{c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=10700,sourceQuests={7667},u=2,g={
-qo(1,{awp=100105,crs={14516},providers={{"i",18880}},rwp=50004}),
+qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004}),
 s(163692,18807,{b=1,f=6,q=3,u=2})}}),
 q(8258,{altQuests={7668},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7667},u=14,g={
-qo(1,{awp=100105,crs={14516},providers={{"i",18880}},rwp=50004,u=14}),
+qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004,u=14}),
 s(164185,20134,{b=1,f=6,q=4,u=14})}}),
 q(5462,{coords={
 [1422]={{70.6,74.1}}},lvl=57,providers={{"i",13544},{"i",13585}},qgs={11286},rwp=40003,sourceQuests={5461}}),
@@ -4781,24 +4784,25 @@ q(5511,{coords={
 i(13704,{q=1})}}),
 q(5344,{coords={
 [1422]={{43.5,83.7}}},lvl=52,maps={1420},qgs={11023},r=2,rwp=40003,sourceQuests={5343},g={
-qo(1,{awp=100105,coords={
+qo(1,{awp=10300,coords={
 [1420]={{83,71.6}}},crs={11022},providers={{"i",13470}},rwp=50004}),
 i(14023,{b=1,f=53,q=3})}}),
 q(5342,{coords={
 [1420]={{83.06,71.6}}},lvl=52,maps={1422},qgs={11022},r=1,rwp=40003,sourceQuests={5341},g={
-qo(1,{awp=100105,coords={
+qo(1,{awp=10300,coords={
 [1422]={{43.4,83.6}}},crs={11023},providers={{"i",13469}},rwp=50004}),
 i(14022,{b=1,f=53,q=3})}}),
 q(5466,{coords={
 [1422]={{70.6,74.1}}},lvl=57,providers={{"i",13544}},qgs={11286},rwp=40003,sourceQuests={5465},g={
-qo(1,{awp=100105,providers={{"i",13626}},rwp=50004}),
+qo(1,{awp=10300,providers={{"i",13626}},rwp=50004}),
 s(161210,14002,{b=1,f=8,q=3}),
 s(161208,13984,{b=1,f=20,q=3}),
 s(161206,13982,{b=1,f=26,q=3}),
 s(161209,13986,{b=1,f=4,q=3})}})}}),
-h(-56,{awp=100105,rwp=50004,g={
+h(-56,{awp=10300,rwp=50004,g={
 i(12736,{awp=11101,b=1,description="Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",providers={{"o",175965}},q=1})}}),
-h(-63,{awp=100105,rwp=50004,g={
+h(-63,{awp=10300,rwp=50004,g={
+i(20520,{q=2}),
 r(20035,{crs={10469},itemID=16255,learnedAt=300,q=2,requireSkill=333}),
 r(20032,{crs={10499},itemID=16254,learnedAt=300,q=3,requireSkill=333}),
 r(19102,{awp=11101,crs={11582},itemID=15776,learnedAt=300,q=2,requireSkill=165,rwp=40003}),
@@ -4807,7 +4811,7 @@ i(22526,{q=1,u=16}),
 i(12843,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=2,rwp=40003}),
 i(12841,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
 i(12840,{awp=11101,b=1,description="Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
-i(13920,{b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=55,q=1,rwp=40003}),
+i(13920,{awp=100105,b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=55,q=1,rwp=40003}),
 i(12753,{awp=11101,b=1,q=2,rwp=40003}),
 s(163643,18702,{f=7,lvl=55,q=3}),
 s(162986,16671,{crs={10478},f=6,lvl=52,q=3,rwp=40003}),
@@ -4825,9 +4829,9 @@ s(163025,16710,{crs={10472,10488,11284},f=5,lvl=52,q=3,rwp=40003}),
 s(163640,18698,{f=5,lvl=51,q=3}),
 s(163031,16716,{crs={10499,10500,11257},f=5,lvl=53,q=3,rwp=40003}),
 s(163029,16714,{crs={10495},f=5,lvl=52,q=3,rwp=40003})}}),
-n(14861,{awp=100105,rwp=50004,g={
+n(14861,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1})}}),
-n(10506,{awp=100105,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"i",13523},{"o",175564}},rwp=50004,g={
+n(10506,{awp=10300,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"i",13523},{"o",175564}},rwp=50004,g={
 s(161211,14024,{b=1,f=20,lvl=56,q=3}),
 s(161207,13983,{b=1,f=22,lvl=57,q=3}),
 i(13960,{b=1,f=51,lvl=56,q=3}),
@@ -4837,7 +4841,7 @@ s(161197,13957,{b=1,f=5,lvl=56,q=3}),
 s(161196,13956,{b=1,f=4,lvl=56,q=3}),
 s(163049,16734,{b=1,f=7,lvl=54,q=3,rwp=40003}),
 s(161204,13967,{b=1,f=6,lvl=56,q=3})}}),
-n(10503,{awp=100105,rwp=50004,g={
+n(10503,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1}),
 i(13725,{q=1}),
 o(180794,{description="Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",g={
@@ -4850,7 +4854,7 @@ s(161575,14548,{b=1,f=6,lvl=57,q=3}),
 s(161573,14543,{b=1,f=4,lvl=57,q=3,rwp=20001}),
 s(161574,14545,{b=1,f=5,lvl=57,q=3}),
 s(163633,18690,{b=1,f=7,lvl=57,q=3})}}),
-n(11622,{awp=100105,rwp=50004,g={
+n(11622,{awp=10300,rwp=50004,g={
 i(13873,{awp=11101,b=1,description="You must use this item on the door prior to Vectus and Marduk.",q=1,rwp=40003}),
 i(18782,{awp=11101,lvl=50,q=3,rwp=40003}),
 s(161563,14531,{b=1,f=24,lvl=54,q=3}),
@@ -4867,13 +4871,13 @@ s(163681,18759,{b=1,f=22,lvl=57,q=3}),
 s(163682,18761,{b=1,f=27,lvl=57,q=3}),
 s(163680,18758,{b=1,f=20,lvl=57,q=3}),
 i(18760,{b=1,f=52,lvl=57,q=3})}}),
-n(10433,{awp=100105,rwp=50004,g={
+n(10433,{awp=10300,rwp=50004,g={
 s(161600,14576,{b=1,f=25,lvl=54,q=3}),
 s(163634,18692,{b=1,f=7,lvl=54,q=3})}}),
-n(10432,{awp=100105,rwp=50004,g={
+n(10432,{awp=10300,rwp=50004,g={
 i(18691,{b=1,f=51,lvl=56,q=3}),
 s(161601,14577,{b=1,f=4,lvl=56,q=3})}}),
-n(10508,{awp=100105,rwp=50004,g={
+n(10508,{awp=10300,rwp=50004,g={
 i(13626,{cost={{"i",13752,1}},description="Use the Keepsake on him before he dies to turn him back into a human.",q=1}),
 r(17637,{itemID=13521,learnedAt=300,q=2,requireSkill=171}),
 s(161555,14487,{b=1,f=23,lvl=57,q=3}),
@@ -4889,13 +4893,13 @@ s(161467,14340,{b=1,f=4,lvl=57,q=3}),
 s(161556,14502,{b=1,f=5,lvl=57,q=3}),
 s(161558,14522,{b=1,f=6,lvl=57,q=3}),
 s(163636,18694,{b=1,f=6,lvl=57,q=3})}}),
-n(16118,{awp=100105,cost={{"i",22057,1},{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=50004,u=15,g={
+n(16118,{awp=10300,cost={{"i",22057,1},{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=50004,u=15,g={
 s(164907,22332,{b=1,f=25,lvl=57,q=3,u=15}),
 s(164908,22333,{b=1,f=24,lvl=57,q=3,u=15}),
 s(164891,22303,{b=1,c={5,8,9},f=4,lvl=57,q=3,rwp=40003,u=15}),
 i(22326,{b=1,f=52,lvl=58,q=3,u=15}),
 i(22331,{b=1,f=52,lvl=57,q=3,u=15})}}),
-h(-19,{awp=100105,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",rwp=50004,g={
+h(-19,{awp=10300,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",rwp=50004,g={
 s(163627,18680,{b=1,f=32,lvl=56,q=3}),
 s(163630,18683,{b=1,f=23,lvl=56,q=3}),
 s(161632,14611,{b=1,f=6,lvl=56,q=3}),
@@ -4923,19 +4927,19 @@ s(161647,14632,{b=1,f=4,lvl=56,q=3}),
 s(161646,14631,{b=1,f=4,lvl=56,q=3}),
 i(23201,{b=1,f=54,lvl=60,q=3,u=15}),
 i(23200,{b=1,f=54,lvl=60,q=3,u=15})}}),
-n(10505,{awp=100105,rwp=50004,g={
+n(10505,{awp=10300,rwp=50004,g={
 s(163025,16710,{f=5,lvl=52,q=3,rwp=40003})}}),
-n(11261,{awp=100105,rwp=50004,g={
+n(11261,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1}),
 s(162999,16684,{f=4,lvl=54,q=3,rwp=40003}),
 s(161637,14617,{b=1,f=10,filterForRWP=2,q=1})}}),
-n(10901,{awp=100105,rwp=50004,g={
+n(10901,{awp=10300,rwp=50004,g={
 s(163020,16705,{f=4,lvl=54,q=3,rwp=40003})}}),
-n(10507,{awp=100105,rwp=50004,g={
+n(10507,{awp=10300,rwp=50004,g={
 s(163031,16716,{f=5,lvl=53,q=3,rwp=40003})}}),
-n(10504,{awp=100105,rwp=50004,g={
+n(10504,{awp=10300,rwp=50004,g={
 s(163037,16722,{f=7,lvl=52,q=3,rwp=40003})}}),
-n(1853,{awp=100105,description="You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
+n(1853,{awp=10300,description="You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
 r(18458,{itemID=14514,learnedAt=300,q=4,requireSkill=197}),
 r(17580,{b=1,itemID=13501,learnedAt=295,q=2,requireSkill=171}),
 s(161187,13937,{b=1,f=28,lvl=57,q=4}),

@@ -35,6 +35,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["timeline"] = { ADDED_12_0_1_LAUNCH },
 			["maps"] = {
 				MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO,	-- Isle of Quel'Danas (Intro)
+				-- #if AFTER 12.0.7
+				2649,	-- Magister's Terrace
+				-- #endif
 				2565,	-- Parhelion Plaza, Isle of Quel'Danas (Intro)
 				2566,	-- The Sunwell, Isle of Quel'Danas (Intro)
 			},

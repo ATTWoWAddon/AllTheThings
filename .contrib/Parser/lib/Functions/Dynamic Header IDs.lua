@@ -440,6 +440,7 @@ HeaderAssignments = {
 	["Peak of Serenity"] = -418,
 	["Pet Battle Dungeons"] = -556,
 	["Pet Battles"] = -43,
+	["Phase Conduits"] = -750,
 	["Pilgrim's Bounty"] = -584,
 	["Pirates' Day"] = -585,
 	["Plunderstore"] = -477,
@@ -729,4 +730,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -750;
+NextHeaderID = -751;

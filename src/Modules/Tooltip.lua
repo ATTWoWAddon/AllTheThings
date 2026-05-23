@@ -742,6 +742,9 @@ end);
 -- but otherwise, Search cache would only need to be cleared when changing something that affects Search
 -- outcome, and Tooltip cache cleared when changing Tooltip-related settings
 local TooltipInfoCache = setmetatable({}, { __mode = "kv", __index = function(t,group)
+	-- Blizzard tries accessing ToDebugString on every table randomly because no one knows why
+	if group == "ToDebugString" then return end
+
 	-- We need to generate tooltip-only content for this group since it hasn't been cached
 	-- Classic still has some tooltipInfo generated into the group directly
 	local tooltipInfo = group.tooltipInfo

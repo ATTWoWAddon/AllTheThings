@@ -35,6 +35,9 @@ ExportDB.OnTooltipDB.ForSporeggar = [[~function(t, tooltipInfo)
 			end
 			addRepInfo(tooltipInfo, reputation, "Turn in Fertile Spores (x6)", 750, ]] .. EXALTED .. [[);
 			addRepInfo(tooltipInfo, reputation, "Turn in Sanguine Hibiscus (x5)", 750, ]] .. EXALTED .. [[);
+			-- #if AFTER 6.0.2
+			addRepInfo(tooltipInfo, reputation, "Killing everything inside Underbog dungeon grants reputation 21 per enemy and 100 per boss.", ]] .. EXALTED .. [[);
+			-- #endif
 		end
 	end
 end]];

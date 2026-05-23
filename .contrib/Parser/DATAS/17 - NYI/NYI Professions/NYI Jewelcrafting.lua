@@ -49,6 +49,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(52150),	-- Perfect Resolute Hessonite
 					i(52092),	-- Mystic Alicite
 					i(52165),	-- Perfect Mystic Alicite
+					i(52488),	-- Jeweler's Sapphire Monocle
 				})),
 			}),
 			expansion(EXPANSION.MOP, {
@@ -159,6 +160,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
 				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+					r(73233),	-- Mystic Alicite
+					r(73259),	-- Resolute Hessonite
+					-- With SpellID attached
+					i(52497),	-- Design: Jeweler's Sapphire Monocle
+					i(52499),	-- Design: Figurine - King of Boars
+					i(52500),	-- Design: Figurine - Demon Panther
+					i(52501),	-- Design: Figurine - Earthen Guardian
+					i(52502),	-- Design: Figurine - Jeweled Serpent
+					i(52503),	-- Design: Figurine - Dream Owl
+					-- Without SpellID attached
 					i(41403),	-- ZZOLD Design: Insightful Earthsiege Diamond
 					i(41404),	-- ZZOLD Design: Bracing Earthsiege Diamond
 					i(41405),	-- ZZOLD Design: Eternal Earthsiege Diamond
@@ -180,34 +191,42 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(41421),	-- ZZOLD Design: Enigmatic Skyflare Diamond
 					i(41422),	-- ZZOLD Design: Swift Skyflare Diamond
 					i(41423),	-- ZZOLDDesign: Thundering Skyflare Diamond
-					r(73233),	-- Mystic Alicite
-					r(73259),	-- Resolute Hessonite
-				})),
-
-				-- 4.0.3
-				expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
-					i(52497),	-- Design: Jeweler's Sapphire Monocle
-					i(52499),	-- Design: Figurine - King of Boars
-					i(52500),	-- Design: Figurine - Demon Panther
-					i(52501),	-- Design: Figurine - Earthen Guardian
-					i(52502),	-- Design: Figurine - Jeweled Serpent
-					i(52503),	-- Design: Figurine - Dream Owl
 				})),
 			}),
 			expansion(EXPANSION.WOD, {
-				-- 6.0.1
-				expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
-					i(116080),	-- Design: Greater Taladite Amplifier
-					i(120131),	-- Recipe: Secrets of Draenor Jewelcrafting
+				-- 6.0.2
+				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					-- Without SpellID attached
 					i(116087),	-- Design: Glowing Blackrock Band
 					i(116081),	-- Design: Glowing Iron Band
 					i(116084),	-- Design: Glowing Iron Choker
+					i(116080),	-- Design: Greater Taladite Amplifier
 					i(116088),	-- Design: Shifting Blackrock Band
 					i(116082),	-- Design: Shifting Iron Band
 					i(116085),	-- Design: Shifting Iron Choker
 					i(116089),	-- Design: Whispering Blackrock Band
 					i(116083),	-- Design: Whispering Iron Band
 					i(116086),	-- Design: Whispering Iron Choker
+					i(120131),	-- Recipe: Secrets of Draenor Jewelcrafting
+				})),
+			}),
+			expansion(EXPANSION.LEGION, {
+				-- 7.0.3
+				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+					-- Without SpellID attached
+					i(137800),	-- Design: Dawnlight Band [Rank 1]
+					i(137799),	-- Design: Maelstrom Band [Rank 1]
+					i(141312),	-- Design: Mass Prospect Felslate
+					i(141311),	-- Design: Mass Prospect Leystone
+					i(137798),	-- Design: Prophetic Band [Rank 1]
+				})),
+
+				-- 7.3.0
+				expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
+					i(151736),	-- Design: Deadly Deep Chemirine
+					i(151737),	-- Design: Quick Lightsphene
+					i(151738),	-- Design: Masterful Argulite
+					i(151739),	-- Design: Versatile Labradorite
 				})),
 			}),
 			expansion(EXPANSION.BFA, {

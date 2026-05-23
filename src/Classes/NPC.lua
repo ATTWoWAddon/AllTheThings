@@ -20,6 +20,10 @@ NPCHarvester:SetPoint("TOPRIGHT", UIParent, "BOTTOMRIGHT", 0, 0)
 NPCHarvester:SetSize(1, 1)
 NPCHarvester:Hide()
 local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
+	id = tonumber(id)
+	-- Blizzard tries accessing ToDebugString on every table randomly because no one knows why
+	if not id then return end
+
 	if id > 0 then
 		NPCHarvester:SetDisplayInfo(0)
 		NPCHarvester:SetUnit("none")
@@ -39,32 +43,58 @@ local blacklisted = {
 	[TOOLTIP_UNIT_LEVEL:format("??")] = true,
 	[TOOLTIP_UNIT_LEVEL_TYPE:format("??", ELITE)] = true,
 }
+local MAX_RETRY = 500
+local RetryNames = setmetatable({}, { __index = function() return 0 end})
 if C_TooltipInfo_GetHyperlink then
 	local issecretvalue = app.WOWAPI.issecretvalue
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		id = tonumber(id)
-		if id and id > 0 then
+		-- Blizzard tries accessing ToDebugString on every table randomly because no one knows why
+		if not id then return end
+
+		if id > 0 then
 			local tooltipData = C_TooltipInfo_GetHyperlink(("unit:Creature-0-0-0-0-%d-0000000000"):format(id))
 			if tooltipData then
 				local title = tooltipData.lines[1].leftText
 				if title and #tooltipData.lines > 2 then
+					-- 12.0.5 began returning secrets for this text
 					local leftText = tooltipData.lines[2].leftText
-					-- 12.0.5 began returning secrets for this function
-					if issecretvalue(leftText) then return end
-
-					if leftText and not blacklisted[leftText] then
+					if leftText
+						and not issecretvalue(leftText)
+						and not blacklisted[leftText]
+					then
 						NPCTitlesFromID[id] = leftText
 					end
 				end
-				if not IsRetrievingData(title) then
-					t[id] = title
+				-- return a secret name but don't cache it for re-use
+				if app.WOWAPI.issecretvalue(title) then
+					-- app.PrintDebug("returning secret name", title)
 					return title
 				end
+				if not IsRetrievingData(title) then
+					t[id] = title
+					RetryNames[id] = nil
+					return title
+				end
+			end
+			RetryNames[id] = RetryNames[id] + 1
+			if RetryNames[id] > MAX_RETRY then
+				t[id] = AUCTION_MAIL_ITEM_STACK:format("NPC", id)
+				RetryNames[id] = 0
 			end
 		else
 			return L.HEADER_NAMES[id]
 		end
 	end})
+	app.AddEventHandler("OnCurrentMapIDChanged", function()
+		-- Wipe failed name retrievals from cache if the player changes maps
+		for id,count in pairs(RetryNames) do
+			if count == 0 then
+				NPCNameFromID[id] = nil
+				RetryNames[id] = nil
+			end
+		end
+	end)
 else
 	---@class ATTNPCHarvesterForRetail: GameTooltip
 	local ATTCNPCHarvester = CreateFrame("GameTooltip", "ATTCNPCHarvester", UIParent, "GameTooltipTemplate")
@@ -222,6 +252,7 @@ end
 local BlockedDisplayID = {
 	[11686] = 0,	-- empty blue thing
 	[16925] = 0,	-- nothing
+	[16946] = 0,	-- nothing
 	[21072] = 0,	-- empty blue thing
 	[23767] = 0,	-- empty blue thing
 	[24719] = 0,	-- nothing

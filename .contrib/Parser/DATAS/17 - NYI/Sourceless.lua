@@ -672,6 +672,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 11.1.5
 			expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
 				q(90899),	--
+				q(90900),	-- completed in The Jade Forest?
 			})),
 
 			-- 11.1.7

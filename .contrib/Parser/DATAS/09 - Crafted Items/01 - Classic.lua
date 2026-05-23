@@ -225,7 +225,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(9206),	-- Elixir of Giants
 			i(9187),	-- Elixir of Greater Agility
 			i(8951),	-- Elixir of Greater Defense
-			i(21546, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Elixir of Greater Firepower
+			i(21546, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Elixir of Greater Firepower
 			i(9179),	-- Elixir of Greater Intellect
 			i(18294),	-- Elixir of Greater Water Breathing
 			i(3390),	-- Elixir of Lesser Agility
@@ -242,7 +242,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(SOD_PHASE_SIX, i(233969, {["timeline"] = { ADDED_1_15_5 }})),	-- Elixir of the Ironside
 			applyclassicphase(SOD_PHASE_SIX, i(233968, {["timeline"] = { ADDED_1_15_5 }})),	-- Elixir of the Mage-Lord
 			-- #endif
-			i(13452, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Elixir of the Mongoose
+			i(13452, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Elixir of the Mongoose
 			i(13447),	-- Elixir of the Sages
 			i(5996),	-- Elixir of Water Breathing
 			i(3383),	-- Elixir of Wisdom
@@ -274,11 +274,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(13461, {["timeline"] = { REMOVED_4_0_3, ADDED_9_1_0 }}),	-- Greater Arcane Protection Potion
 			applyclassicphase(PHASE_FOUR, i(20002, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Greater Dreamless Sleep Potion
 			i(13457),	-- Greater Fire Protection Potion
-			i(13456, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Greater Frost Protection Potion
+			i(13456, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Greater Frost Protection Potion
 			i(1710),	-- Greater Healing Potion
 			i(6149),	-- Greater Mana Potion
 			i(13458),	-- Greater Nature Protection Potion
-			i(13459, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Greater Shadow Protection Potion
+			i(13459, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Greater Shadow Protection Potion
 			i(13455),	-- Greater Stoneshield Potion
 			i(929),		-- Healing Potion
 			i(6051),	-- Holy Protection Potion
@@ -919,10 +919,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Icebellow Anvil can be found on the right side of the second room of the Military Quarter in Naxxramas."
 					-- #endif
 				}, {
-					applyclassicphase(PHASE_SIX, i(22671, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Bracers
-					applyclassicphase(PHASE_SIX, i(22669, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Breastplate
+					applyclassicphase(PHASE_SIX, i(22671, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Bracers
+					applyclassicphase(PHASE_SIX, i(22669, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Breastplate
 					i(206444, {["timeline"] = { ADDED_10_1_5 }}),	-- Icebane Coif
-					applyclassicphase(PHASE_SIX, i(22670, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Gauntlets
+					applyclassicphase(PHASE_SIX, i(22670, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Gauntlets
 					i(206442, {["timeline"] = { ADDED_10_1_5 }}),	-- Icebane Leggings
 					i(206443, {["timeline"] = { ADDED_10_1_5 }}),	-- Icebane Mantle
 					i(206446, {["timeline"] = { ADDED_10_1_5 }}),	-- Icebane Trudgers
@@ -991,7 +991,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					i(3472),	-- Runed Copper Gauntlets
 					i(3473),	-- Runed Copper Pants
 					i(12611),	-- Runic Plate Boots
-					i(12613, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Runic Breastplate
+					i(12613, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Runic Breastplate
 					i(12612),	-- Runic Plate Helm
 					i(12614),	-- Runic Plate Leggings
 					i(12610),	-- Runic Plate Shoulders
@@ -6056,13 +6056,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				i(7358),	-- Pilferer's Gloves
 				i(206435, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Belt
-				applyclassicphase(PHASE_SIX, i(22663, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Polar Bracers
+				applyclassicphase(PHASE_SIX, i(22663, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Polar Bracers
 				i(206436, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Footwarmers
-				applyclassicphase(PHASE_SIX, i(22662, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Polar Gloves
+				applyclassicphase(PHASE_SIX, i(22662, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Polar Gloves
 				i(206434, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Helm
 				i(206432, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Leggings
 				i(206433, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Spaulders
-				applyclassicphase(PHASE_SIX, i(22661, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Polar Tunic
+				applyclassicphase(PHASE_SIX, i(22661, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Polar Tunic
 				applyclassicphase(PHASE_FOUR, i(19687, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Batskin Bracers
 				applyclassicphase(PHASE_FOUR, i(19686, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Batskin Gloves
 				applyclassicphase(PHASE_FOUR, i(19685, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Batskin Jerkin
@@ -6233,16 +6233,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(132534, {["timeline"] = { ADDED_7_0_3 }}),	-- Heavy Scale Wraps
 				i(15082),	-- Heavy Scorpid Belt
 				i(15077),	-- Heavy Scorpid Bracers
-				i(15078, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 }}),	-- Heavy Scorpid Gauntlets
-				i(15079, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 }}),	-- Heavy Scorpid Leggings
+				i(15078, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_0_5 }}),	-- Heavy Scorpid Gauntlets
+				i(15079, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_0_5 }}),	-- Heavy Scorpid Leggings
 				i(15080),	-- Heavy Scorpid Helm
-				i(15081, {["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 }}),	-- Heavy Scorpid Shoulders
-				i(15076, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 }}),	-- Heavy Scorpid Vest
+				i(15081, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 }}),	-- Heavy Scorpid Shoulders
+				i(15076, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_0_5 }}),	-- Heavy Scorpid Vest
 				i(206482, {["timeline"] = { ADDED_10_1_5 }}),	-- Helm of Lingering Power
-				applyclassicphase(PHASE_SIX, i(22665, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icy Scale Bracers
-				applyclassicphase(PHASE_SIX, i(22664, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icy Scale Breastplate
+				applyclassicphase(PHASE_SIX, i(22665, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icy Scale Bracers
+				applyclassicphase(PHASE_SIX, i(22664, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icy Scale Breastplate
 				i(206439, {["timeline"] = { ADDED_10_1_5 }}),	-- Icy Scale Crown
-				applyclassicphase(PHASE_SIX, i(22666, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icy Scale Gauntlets
+				applyclassicphase(PHASE_SIX, i(22666, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icy Scale Gauntlets
 				i(206437, {["timeline"] = { ADDED_10_1_5 }}),	-- Icy Scale Leggings
 				i(206438, {["timeline"] = { ADDED_10_1_5 }}),	-- Icy Scale Shoulderpads
 				i(206441, {["timeline"] = { ADDED_10_1_5 }}),	-- Icy Scale Stompers
@@ -8218,10 +8218,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(2568),	-- Brown Linen Vest
 			i(10044),	-- Cindercloth Boots
 			i(14044),	-- Cindercloth Cloak
-			i(14043, {["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 }}),	-- Cindercloth Gloves
+			i(14043, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_8_1_5 }}),	-- Cindercloth Gloves
 			i(14045),	-- Cindercloth Pants
 			i(10042),	-- Cindercloth Robe
-			i(14042, {["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 }}),	-- Cindercloth Vest
+			i(14042, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_8_1_5 }}),	-- Cindercloth Vest
 			i(14134),	-- Cloak of Fire
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18413, {["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 }})),	-- Cloak of Warding
 			i(10048),	-- Colorful Kilt
@@ -8313,14 +8313,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(14144),	-- Ghostweave Pants
 			i(14141),	-- Ghostweave Vest
 			i(206429, {["timeline"] = { ADDED_10_1_5 }}),	-- Glacial Chapeau
-			applyclassicphase(PHASE_SIX, i(22658, {["timeline"] = { REMOVED_3_0_2,ADDED_10_1_5 }})),	-- Glacial Cloak
+			applyclassicphase(PHASE_SIX, i(22658, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2,ADDED_10_1_5 }})),	-- Glacial Cloak
 			i(206428, {["timeline"] = { ADDED_10_1_5 }}),	-- Glacial Epaulets
 			i(206431, {["timeline"] = { ADDED_10_1_5 }}),	-- Glacial Footwear
-			applyclassicphase(PHASE_SIX, i(22654, {["timeline"] = { REMOVED_3_0_2,ADDED_10_1_5 }})),	-- Glacial Gloves
+			applyclassicphase(PHASE_SIX, i(22654, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2,ADDED_10_1_5 }})),	-- Glacial Gloves
 			i(206427, {["timeline"] = { ADDED_10_1_5 }}),	-- Glacial Leggings
 			i(206430, {["timeline"] = { ADDED_10_1_5 }}),	-- Glacial Tether
-			applyclassicphase(PHASE_SIX, i(22652, {["timeline"] = { REMOVED_3_0_2,ADDED_10_1_5 }})),	-- Glacial Vest
-			applyclassicphase(PHASE_SIX, i(22655, {["timeline"] = { REMOVED_3_0_2,ADDED_10_1_5 }})),	-- Glacial Wrists
+			applyclassicphase(PHASE_SIX, i(22652, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2,ADDED_10_1_5 }})),	-- Glacial Vest
+			applyclassicphase(PHASE_SIX, i(22655, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2,ADDED_10_1_5 }})),	-- Glacial Wrists
 			i(4318),	-- Gloves of Meditation
 			i(14146),	-- Gloves of Spell Mastery
 			-- #if SEASON_OF_DISCOVERY
@@ -8553,7 +8553,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(SOD_PHASE_EIGHT, i(239147, {["timeline"] = { ADDED_1_15_7 }})),	-- Crusader's Knapsack
 			-- #endif
 			i(22246),	-- Enchanted Mageweave Pouch
-			i(21341),	-- Felcloth Bag
+			i(21341, {["timeline"] = { ADDED_1_3_0 }}),	-- Felcloth Bag
 			i(5764),	-- Green Silk Pack
 			i(4241),	-- Green Woolen Bag
 			-- #if SEASON_OF_DISCOVERY

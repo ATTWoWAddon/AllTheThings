@@ -3,7 +3,7 @@
 ## Name: AllTheThings
 ## Author: Crieve
 ## Version: @project-version@
-## Interface: 11508, 20505, 30403, 38001, 40402, 50503, 50504, 120001, 120005, 120007
+## Interface: 11508, 20505, 30403, 38001, 40402, 50503, 50504, 120005, 120007
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
 ## Category-enUS: Collections

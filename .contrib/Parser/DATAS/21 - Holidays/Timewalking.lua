@@ -18,6 +18,7 @@ ExportDB.TW_EventIDs = {
 	EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT,
 	EVENTS.TIMEWALKING_BATTLE_FOR_AZEROTH_DUNGEON_EVENT,
 	EVENTS.TIMEWALKING_SHADOWLANDS_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_DRAGONFLIGHT_DUNGEON_EVENT,
 }
 -- Helper function to build a CRS list for the Timereaver Mount.
 -- Since this data is all in the same file, we no longer have to do this as part of a post-processor.
@@ -103,6 +104,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 			ach(61394, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, REMOVED_12_0_1_LAUNCH } }, {	-- Master of the Turbulent Timeways IV (automated!)
 				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(254694) },	-- Ta'readon's Mount Voucher
+			})),
+			ach(61463, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- Master of the Turbulent Timeways V (automated!)
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = { i(258884) },	-- Spawn of Vyranoth (MOUNT!)
 			})),
 		}),
 		n(COMMON_BOSS_DROPS, {
@@ -8026,6 +8031,353 @@ AddInstancesToRotation(EXPANSION.SL, {
 	1189,	-- Sanguine Depths
 	1186,	-- Spires of Ascension
 	1182,	-- The Necrotic Wake
+});
+
+
+-- Dragonflight Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONFLIGHT_DUNGEON_EVENT, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 }},{
+		n(GROUP_FINDER, {
+			i(262918, {	-- Lost Iridescent Flightstone (QS!)
+				["description"] = "Drops from the last boss of any 'Dragonflight Timewalking' dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+		}),
+		n(VENDORS, {
+			--n(252687, {	-- Xydan <Timewalking Vendor>
+				--["coord"] = { X, Y, VALDRAKKEN },
+				["groups"] = {
+					n(ARMOR, {
+					}),
+					filter(BATTLE_PETS, {
+						i(260885),	-- Shadowflame Remnant (PET!)
+					}),
+					filter(COSMETIC, {
+					}),
+					filter(MISC, {
+						i(258841),	-- Commendation of the Dragonscale Expedition
+						i(258846),	-- Commendation of the Dream Wardens
+						i(258843),	-- Commendation of the Iskaara Tuskarr
+						i(258845),	-- Commendation of the Loamm Niffen
+						i(258842),	-- Commendation of the Maruuk Centaur
+						i(258844),	-- Commendation of the Valdrakken Accord
+					}),
+					filter(MOUNTS, {
+						i(210140),	-- Black-Furred Bakar (MOUNT!)
+					}),
+					filter(TOYS, {
+						i(259335),	-- Photo Finisher (TOY!)
+						i(259899),	-- Ashen Horn of the Fallen Keeper (TOY!)
+						i(260170),	-- Oathstone Fragment (TOY!)
+					}),
+					n(WEAPONS, {
+					}),
+				},
+			--}),
+		}),
+		inst_tw(1201, {	-- Algeth'ar Academy
+			e(2509, {	-- Vexamus
+					["crs"] = {
+						189668,	-- Professor Madormu
+						195416,	-- Magic Book
+						194181,	-- Vexamus
+					},
+					["sym"] = {{"select", "itemID",
+						193708,	-- Platinum Star Band
+						193711,	-- Spellbane Cutlass
+						193710,	-- Spellboon Saber
+						193709,	-- Vexamus' Expulsion Rod
+					}},
+				}),
+				e(2512, {	-- Overgrown Ancient
+					["crs"] = { 196482 },	-- Overgrown Ancient
+					["sym"] = {{"select", "itemID",
+						193716,	-- Algeth'ar Hedgecleaver
+						193715,	-- Boots of Explosive Growth
+						193713,	-- Experimental Safety Gloves
+						193714,	-- Frenzyroot Cuffs
+						193717,	-- Mystakra's Harvester
+						193712,	-- Potion-Stained Cloak
+					}},
+				}),
+				e(2495, {	-- Crawth
+					["crs"] = { 191736 },	-- Crawth
+					["sym"] = {{"select", "itemID",
+						193722,	-- Azure Belt of Competition
+						193720,	-- Bronze Challenger's Robe
+						193719,	-- Dragon Games Equipment
+						193718,	-- Emerald Coach's Whistle
+						193723,	-- Obsidian Goaltending Spire
+						193721,	-- Ruby Contestant's Gloves
+					}},
+				}),
+				e(2514, {	-- Echo of Doragosa
+					["crs"] = { 190609 },	-- Echo of Doragosa
+					["sym"] = {{"select", "itemID",
+						197147,	-- Highland Drake: Heavy Scales (MM!)
+						197112,	-- Highland Drake: Single Horned Head (MM!)
+						198910,	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
+						260359,	-- Valdrakken Bookcase (DECOR!)
+						193701,	-- Algeth'ar Puzzle Box
+						193705,	-- Breastplate of Proven Knowledge
+						193707,	-- Final Grade
+						193703,	-- Organized Pontificator's Cap
+						193704,	-- Scaled Commencement Spaulders
+						193706,	-- Venerated Professor's Greaves
+					}},
+				}),
+		}),
+		inst_tw(1196, {	-- Brackenhide Hollow
+			e(2471, {	-- Hackclaw's War-Band
+				["crs"] = {
+					186124,	-- Gashtooth
+					186122,	-- Rira Hackclaw
+					186125,	-- Tricktotem
+				},
+				["sym"] = {{"select", "itemID",
+					193674,	-- Ancestral Stone Shaper
+					193671,	-- Bloodied Wedding Ring
+					193672,	-- Frenzying Signoll Flare
+					193675,	-- Poached Kalu'ak Spear
+					193673,	-- Ravenous Pursuer's Footwraps
+				}},
+			}),
+			e(2473, {	-- Treemouth
+				["crs"] = { 186120 },	-- Treemouth
+				["sym"] = {{"select", "itemID",
+					193654,	-- Ancient Rot Walkers
+					193657,	-- Binders of the Moldering
+					193658,	-- Crushing Bough of Deterioration
+					193653,	-- Mask of Imperishable Leaves
+					193655,	-- Rooted Shoulders of Putrefaction
+					193656,	-- Swollen Bark Clasp
+					193652,	-- Treemouth's Festering Splinter
+				}},
+			}),
+			e(2472, {	-- Gutshot
+				["crs"] = { 186116 },	-- Gutshot
+				["sym"] = {{"select", "itemID",
+					193667,	-- Boastful Stalker's Epaulets
+					193793,	-- Ferocious Hyena Hidebinders
+					193670,	-- Gutshot's Trophy Hunter
+					193669,	-- Trapmaster's Utility Belt
+					193666,	-- Tuskarr Bone Necklace
+				}},
+			}),
+			e(2474, {	-- Decatriarch Wratheye
+				["crs"] = { 186121 },	-- Decatriarch Wratheye
+				["sym"] = {{"select", "itemID",
+					197396,	-- Renewed Proto-Drake: Skyterror Pattern (MM!)
+					197598,	-- Windborne Velocidrake: Gray Hair (MM!)
+					193661,	-- Blight Weaver's Clutches
+					193665,	-- Decatriarch's Bone Pestle
+					193663,	-- Decay Mother's Wrathful Gaze
+					193662,	-- Densified Ooze Tassets
+					193660,	-- Idol of Pure Decay
+					193664,	-- Rot-Carved Totemic Shank
+				}},
+			}),
+		}),
+		inst_tw(1204, {	-- Halls of Infusion
+			e(2504, {	-- Watcher Irideus
+				["crs"] = { 189719 },	-- Watcher Irideus
+				["sym"] = {{"select", "itemID",
+					193746,	-- Gauntlets of Incalculable Power
+					193743,	-- Irideus Fragment
+					193745,	-- Rod of Perfect Order
+					193747,	-- Titan-Forged Blaster
+					193744,	-- Watcher's Circlet of Purpose
+				}},
+			}),
+			e(2507, {	-- Gulping Goliath
+				["crs"] = { 189722 },	-- Gulping Goliath
+				["sym"] = {{"select", "itemID",
+					193726,	-- Amphibian's Bellowing Crown
+					193725,	-- Ancient Hornswog Spaulders
+					193730,	-- Croaking Dagger
+					193724,	-- Lily-Laced Bracelets
+					193760,	-- Ravenous Omnivore's Girdle
+					193770,	-- Swoglet Stompers
+					193729,	-- Tongue Hacker
+				}},
+			}),
+			e(2510, {	-- Khajin the Unyielding
+				["crs"] = { 189727 },	-- Khajin the Unyielding
+				["sym"] = {{"select", "itemID",
+					193731,	-- Circle of Ascended Frost
+					193735,	-- Earthshaker's Steel Visor
+					212683,	-- Globe of Jagged Ice
+					193734,	-- Hauberk of Frozen Fervor
+					193733,	-- Khajin's Hailstone Footwraps
+				}},
+			}),
+			e(2511, {	-- Primal Tsunami
+				["crs"] = { 189729 },	-- Primal Tsunami
+				["sym"] = {{"select", "itemID",
+					196975,	-- Cliffside Wylderdrake: Head Fin (MM!)
+					197007,	-- Cliffside Wylderdrake: Wide Stripes Pattern (MM!)
+					193741,	-- Mantle of Crushing Waves
+					193738,	-- Robe of Plunging Depths
+					193740,	-- Torrential Downpour Gauntlets
+					193739,	-- Treads of Restored Order
+					193742,	-- Undertow Tideblade
+					212682,	-- Water's Beating Heart
+				}},
+			}),
+		}),
+		inst_tw(1199, {	-- Neltharus
+			e(2490, {	-- Chargath, Bane of Scales
+				["crs"] = { 189340 },	-- Chargath, Bane of Scales
+				["sym"] = {{"select", "itemID",
+					193772,	-- Dragonscale Ripper
+					193769,	-- Erupting Spear Fragment
+					193727,	-- Obsidian-Hardened Wraps
+					193771,	-- Pristine Magma Stompers
+					193768,	-- Scalebane Signet
+				}},
+			}),
+			e(2489, {	-- Forgemaster Gorek
+				["crs"] = { 189478 },	-- Forgemaster Gorek
+				["sym"] = {{"select", "itemID",
+					194508,	-- Plans: Alvin the Anvil (RECIPE!)
+					193782,	-- Emberguard Harness
+					193780,	-- Flare-Singed Strap
+					193784,	-- Forgemaster's Grips
+					193785,	-- Forgestorm
+					193783,	-- Irontorch Igniter
+					193781,	-- Lavabearer Legwraps
+				}},
+			}),
+			e(2494, {	-- Magmatusk
+				["crs"] = { 181861 },	-- Magmatusk
+				["sym"] = {{"select", "itemID",
+					193789,	-- Fural's Blazing Faulds
+					193787,	-- Mammoth Trainer Drape
+					193788,	-- Molten Magma Mantle
+					193786,	-- Mutated Magmammoth Scale
+					193790,	-- Searing Tusk Shard
+				}},
+			}),
+			e(2501, {	-- Warlord Sargha
+				["crs"] = { 189901 },	-- Warlord Sargha
+				["sym"] = {{"select", "itemID",
+					256354,	-- Qalashi Goulash (DECOR!)
+					197376,	-- Renewed Proto-Drake: Ears (MM!)
+					197397,	-- Renewed Proto-Drake: Heavy Scales (MM!)
+					193776,	-- Dragonkiln Chestguard
+					193777,	-- Helm of Hardened Gold
+					193778,	-- Qalashi Defender
+					193779,	-- Sargha's Smasher
+					193773,	-- Spoils of Neltharus
+					193775,	-- Warlord's Cindermitts
+				}},
+			}),
+		}),
+		inst_tw(1202, {	-- Ruby Life Pools
+			e(2488, {	-- Melidrussa Chillworn
+				["crs"] = { 188252 },	-- Melidrussa Chillworn
+				["sym"] = {{"select", "itemID",
+					193761,	-- Chillworn's Infusion Staff
+					193759,	-- Egg Tender's Leggings
+					193757,	-- Ruby Whelp Shell
+					193728,	-- Scaleguard's Stalwart Greatboots
+					193758,	-- Subjugator's Chilling Grip
+				}},
+			}),
+			e(2485, {	-- Kokia Blazehoof
+				["crs"] = { 189232 },	-- Kokia Blazehoof
+				["sym"] = {{"select", "itemID",
+					193762,	-- Blazebinder's Hoof
+					193765,	-- Blazebound Lieutenant's Helm
+					193763,	-- Fireproof Drape of Cinders
+					193767,	-- Havoc Crusher
+					193764,	-- Invader's Firestorm Chestguard
+					193766,	-- Kokia's Burnout Rod
+				}},
+			}),
+			e(2503, {	-- Kyrakka and Erkhart Stormvein
+				["crs"] = {
+					190484,	-- Kyrakka
+					190485,	-- Erkhart Stormvein
+				},
+				["sym"] = {{"select", "itemID",
+					197401,	-- Renewed Proto-Drake: Beaked Snout (MM!)
+					197601,	-- Windborne Velocidrake: Wavy Horns (MM!)
+					201742,	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
+					256428,	-- Valdrakken Hanging Lamp (DECOR!)
+					193755,	-- Backdraft Cleaver
+					193753,	-- Breastplate of Soaring Terror
+					193751,	-- Crown of Roaring Storms
+					193754,	-- Drake Rider's Stecktarge
+					193752,	-- Galerattle Gauntlets
+					193748,	-- Kyrakka's Searing Embers
+					193691,	-- Sky Saddle Cord
+					193756,	-- Skyferno Rondel
+					193750,	-- Wind Soarer's Breeches
+				}},
+			}),
+		}),
+		inst_tw(1203, {	-- The Azure Vault
+			e(2492, {	-- Leymor
+				["crs"] = { 186644 },	-- Leymor
+				["sym"] = {{"select", "itemID",
+					193634,	-- Burgeoning Seed
+					193636,	-- Cinch of Forgotten Duty
+					193635,	-- Infused Elemental Bands
+					193638,	-- Ley-Line Tracer
+					193637,	-- Spaulders of Wild Growth
+					193633,	-- Unstable Arcane Loop
+				}},
+			}),
+			e(2505, {	-- Azureblade
+				["crs"] = { 186739 },	-- Azureblade
+				["sym"] = {{"select", "itemID",
+					193629,	-- Cloak of Lost Devotion
+					193632,	-- Fear Striker Tz'onna
+					193631,	-- Horizon Splitter,
+					212685, -- Tome of Unstable Power
+					193630,	-- Twenty-Two-League Striders
+				}},
+			}),
+			e(2483, {	-- Telash Greywing
+				["crs"] = { 186737 },	-- Telash Greywing
+				["sym"] = {{"select", "itemID",
+					193648,	-- Azureblade's Work Gloves
+					193647,	-- Custodian's Seal of Delusion
+					193651,	-- Golden-Winged Rod
+					193650,	-- Illusion Breaker's Wristguards
+					193649,	-- Mirage Bindings
+				}},
+			}),
+			e(2508, {	-- Umbrelskul
+				["crs"] = { 186738 },	-- Umbrelskul
+				["sym"] = {{"select", "itemID",
+					197127,	-- Highland Drake: Grand Thorn Horns (MM!)
+					197140,	-- Highland Drake: Small Spotted Pattern (MM!)
+					193644,	-- Breastplate of Irreparable Madness
+					193645,	-- Crystalized Bulwark
+					193641,	-- Headwrap of the Abandoned
+					193642,	-- Mantle of Yearned Freedom
+					193646,	-- Refraction's Edge
+					193643,	-- Stasis Freed Leggings
+					212684, -- Umbrelskul's Fractured Heart
+				}},
+			}),
+		}),
+	})),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.DF, {
+	-- Dungeons
+	1201,	-- Algeth'ar Academy
+	1196,	-- Brackenhide Hollow
+	1204,	-- Halls of Infusion
+	1199,	-- Neltharus
+	1202,	-- Ruby Life Pools
+	1203,	-- The Azure Vault
 });
 --[[
 -- Post Processors

@@ -1579,8 +1579,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(20, i(233152)),	-- Banded Midnight War Wraps
 				traderstender(20, i(233184)),	-- Banded Snowy War Slippers
 				traderstender(20, i(233167)),	-- Banded Snowy War Wraps
-				traderstender(50, i(246015)),	-- Classic Midnight Eye Patch
-				traderstender(50, i(246016)),	-- Classic Snowy Eye Patch
+				traderstender(50, i(246015)),	-- Classic Midnight Eyepatch
+				traderstender(50, i(246016)),	-- Classic Snowy Eyepatch
 				traderstender(75, i(212627)),	-- Dueler's Azure Shoulder Cape
 				traderstender(75, i(212617)),	-- Dueler's Crimson Shoulder Cape
 				traderstender(550, iensemble(243258)),	-- Ensemble: Grandmaster's Prophetic Attire
@@ -1846,8 +1846,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(252746)),	-- Rosy Winter Toque
 				traderstender(40, i(233090)),	-- Short Rosy War Skirt
 				traderstender(50, i(233129)),	-- Short Rosy War Skirt and Leg Wraps
-				traderstender(130, i(262358)),	-- Sindorei Captain's Mantle
-				traderstender(130, i(262369)),	-- Sindorei Handglaive
+				traderstender(130, i(262358)),	-- Sin'dorei Captain's Mantle
+				traderstender(130, i(262369)),	-- Sin'dorei Handglaive
 				traderstender(130, i(262374)),	-- Sunfury Apprentice's Wand
 				traderstender(160, i(262377)),	-- Sunfury Battlemage's Stave
 				traderstender(80, i(260396)),	-- Tranquillien Archer's Bow
@@ -2174,7 +2174,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(225, i(234602)),	-- Wings of the Blood Monarch
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66709", "removed 12.0.5.99999" } }, {	-- TODO: Timeline out correctly
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66709", "removed 12.0.5.67314" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(235593),	-- Ensemble: Forest Dweller's Butterfly Attire
 			}),
@@ -2211,6 +2211,50 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(40, i(266160)),	-- Trapper's Green Slippers
 				traderstender(50, i(235027)),	-- Vigilante's Lively Mask
 				traderstender(100, i(251987)),	-- Wildstalker's Hunting Quiver
+			}),
+		})),
+		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.67314", "removed 12.0.5.99999" } }, {	-- TODO: Timeline out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				iensemble(268445),	-- Ensemble: Pyrewood Rebel Streetwear
+			}),
+			filter(MOUNTS, {
+				traderstender(325, i(210141)),	-- Brown-Furred Spiky Bakar (MOUNT!)
+				traderstender(500, i(268364)),	-- Gilneas Loyalist's Rouncey (MOUNT!)
+				traderstender(500, i(268363)),	-- Pyrewood Rebel's Rouncey (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(250, i(224576)),	-- Lil' Flameo (PET!)
+				traderstender(250, i(228758)),	-- Parrlok (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(50, i(270289)), -- Crown of Faded Springflowers
+				traderstender(440, iensemble(237225)),	-- Ensemble: Attire of the Gilneas Fox
+				traderstender(440, iensemble(237222)),	-- Ensemble: Attire of the Woodland Raccoon
+				traderstender(440, iensemble(237224)),	-- Ensemble: Attire of the Swift Fox
+				traderstender(475, iensemble(268431)),	-- Ensemble: Gilneas Loyalist Streetwear
+				traderstender(100, iensemble(257989)),	-- Ensemble: Sorcerer's Faded Garb
+				traderstender(30, i(262846)), -- Faded Dunecloth Belt
+				traderstender(35, i(262828)), -- Faded Dunecloth Skirt
+				traderstender(35, i(262864)), -- Faded Dunecloth Vest
+				traderstender(50, i(252744)), -- Faded Winter Toque
+				traderstender(125, i(268494)), -- Gilneas Loyalist Bonecracker
+				traderstender(125, i(268498)), -- Gilneas Loyalist Knuckleblades
+				traderstender(150, i(268514)), -- Gilneas Loyalist Boltshot
+				traderstender(130, i(238252)), -- Large Renaissance Katana
+				traderstender(120, i(237343)), -- Nunchuck of the Renaissance
+				traderstender(120, i(238217)), -- Offhand Renaissance Nunchuck
+				traderstender(125, i(268492)), -- Pyrewood Rebel Bonecracker
+				traderstender(125, i(268496)), -- Pyrewood Rebel Knuckleblades
+				traderstender(150, i(268512)), -- Pyrewood Rebel Boltshot
+				traderstender(110, i(237344)), -- Renaissance Katana
+				traderstender(120, i(237342)), -- Renaissance Sai
+				traderstender(80, i(260389)), -- Ren'dorei Aspirant's Bow
+				traderstender(100, i(266087)), -- Ren'dorei Aspirant's Quiver
+				traderstender(100, i(268806)), -- Scarred Tabard of Gilneas
+				traderstender(50, i(268830)), -- Stylish Flowered Brown Cap
+				traderstender(50, i(268831)), -- Stylish Black Cap
+				traderstender(50, i(268832)), -- Stylish Brown Top Hat
+				traderstender(100, i(210856)), -- Trader's Faded Sarong
 			}),
 		})),
 	}),

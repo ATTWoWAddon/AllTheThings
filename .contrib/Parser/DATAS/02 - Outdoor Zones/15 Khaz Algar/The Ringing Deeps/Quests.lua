@@ -783,9 +783,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 41.1, 21.4, THE_RINGING_DEEPS },
 					["groups"] = {
 						i(219464),	-- Earthen Traveler's Boomstick
+						i(269978, {	-- Earthen Traveler's Breaker
+							["timeline"] = { ADDED_12_0_1 },
+						}),
 						i(219466),	-- Earthen Traveler's Chopper
 						i(219462),	-- Earthen Traveler's Claymore
 						i(219465),	-- Earthen Traveler's Crossbow
+						i(269974, {	-- Earthen Traveler's Crusher
+							["timeline"] = { ADDED_12_0_1 },
+						}),
 						i(219458),	-- Earthen Traveler's Dagger
 						i(219467),	-- Earthen Traveler's Fist
 						i(219461),	-- Earthen Traveler's Gavel

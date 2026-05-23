@@ -4124,7 +4124,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1_LAUNCH } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 			-- 12.0.1.64889
 			ach(62292),	-- Adventurer Dawncrests earned
 			ach(62293),	-- Veteran Dawncrests earned
@@ -4142,6 +4142,71 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(62603),	-- [DNT] <Hidden> Mythic+ Rating > 0 (Midnight, any season) \\ [DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season) (copy)
 			ach(62612),	-- [DNT] Midnight Epic Edition Decor
 			ach(62620),	-- Allied Race: Haranir (copy)
+
+			-- 12.0.1.66431
+			ach(62653),	-- [DNT] Midnight Alchemy Knowledge Fix
+			ach(62654),	-- [DNT] Midnight Blacksmithing Knowledge Fix
+			ach(62655),	-- [DNT] Midnight Enchanting Knowledge Fix
+			ach(62656),	-- [DNT] Midnight Herbalism Knowledge Fix
+			ach(62657),	-- [DNT] Midnight Inscription Knowledge Fix
+			ach(62658),	-- [DNT] Midnight Leatherworking Knowledge Fix
+			ach(62659),	-- [DNT] Midnight Mining Knowledge Fix
+			ach(62660),	-- [DNT] Midnight Skinning Knowledge Fix
+			ach(62688),	-- [DNT] Midnight Engineering Knowledge Fix
+
+			-- 12.0.1.66666
+			ach(62839),	-- [DNT] Haranir Reputation Fix
+		})),
+
+		-- 12.0.5
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
+			-- 12.0.5.66330
+			ach(62519),	-- [DNT] Research Sites: Collection - Bear Pet - Tracking
+			ach(62520),	-- [DNT] Research Sites: Collection - Bear Mount - Tracking
+			ach(62586),	-- [DNT] Research Sites: Collection - Eagle Pet - Tracking
+			ach(62587),	-- [DNT] Research Sites: Collection - Eagle Mount - Tracking
+			ach(62599),	-- [DNT] Research Sites: Collection - Hawkstrider Pet - Tracking
+			ach(62602),	-- [DNT] Research Sites: Collection - Lynx Pet - Tracking
+			ach(62605),	-- [DNT] Research Sites: Collection - Snapdragon Pet - Tracking
+
+			-- 12.0.5.66741
+			ach(62811),	-- [PH] JZB Test Achievement 01
+			ach(62812),	-- [PH] JZB Test Achievement 02
+			ach(62813),	-- [PH] JZB Test Achievement 03
+			ach(62814),	-- [PH] JZB Test Achievement 04
+
+			-- 12.0.5.67235
+			ach(63263),	-- [DNT]Midnight Keystone Myth: Season One Personal Achievement
+		})),
+
+		-- 12.0.7
+		expansion(EXPANSION.MID, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
+			-- 12.0.7.67227
+			ach(62879),	-- [DNT] Moth Hunt - 1 Moths Acquired
+			ach(62857),	-- [DNT] Moth Hunt - 10 Moths Acquired
+			ach(62858),	-- [DNT] Moth Hunt - 20 Moths Acquired
+			ach(62859),	-- [DNT] Moth Hunt - 30 Moths Acquired
+			ach(62860),	-- [DNT] Moth Hunt - 40 Moths Acquired
+			ach(62861),	-- [DNT] Moth Hunt - 50 Moths Acquired
+			ach(62862),	-- [DNT] Moth Hunt - 60 Moths Acquired
+			ach(62863),	-- [DNT] Moth Hunt - 70 Moths Acquired
+			ach(62864),	-- [DNT] Moth Hunt - 80 Moths Acquired
+			ach(62865),	-- [DNT] Moth Hunt - 90 Moths Acquired
+			ach(62866),	-- [DNT] Moth Hunt - 100 Moths Acquired
+			ach(62867),	-- [DNT] Moth Hunt - 110 Moths Acquired
+			ach(62942),	-- [DNT] Pinnacle Ritual Work - Broken Throne
+			ach(62943),	-- [DNT] Pinnacle Ritual Work - Daggerspine Point
+			ach(62875),	-- [DNT] Storm mitigation 1 - Val - Hidden
+			ach(62876),	-- [DNT] Storm mitigation 1 - Naigtal - Hidden
+			ach(62877),	-- [DNT] Storm mitigation 2 - Val - Hidden
+			ach(62878),	-- [DNT] Storm mitigation 2 - Naigtal - Hidden
+			ach(62607),	-- Ritualized Arcana (2nd Omnium Point)
+			ach(62608),	-- Leyline Assaults (3rd Omnium Point)
+			ach(62609),	-- Magical Primeessence (4th Omnium Point)
+			ach(62610),	-- Off-World Magic (5th Omnium Point)
+			ach(62944),	-- Showdown Unlock: Bouncy Mushrooms
+			ach(62945),	-- Showdown Unlock: Grapple Skiffs
+			ach(62949),	-- Showdown Unlock: Naigtal Spores
 		})),
 	}),
 });

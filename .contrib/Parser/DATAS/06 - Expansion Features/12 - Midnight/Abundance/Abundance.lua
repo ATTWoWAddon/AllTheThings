@@ -4,7 +4,7 @@
 
 ABUNDANCE = createHeader({
 	readable = "Abundance",
-	icon = 237556,
+	icon = [[~_.asset("Category_Abundance")]],
 	text = {
 		en = "Abundance",
 		de = "Überfluss",
@@ -82,7 +82,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					["sourceQuest"] = 91932,	-- The Abundant Awakening
 					["qg"] = 251601,	-- Dundun <Loa of Abundance>
 					["coord"] = { 31.6, 26.1, MAP.MIDNIGHT.ZULAMAN },
-					["groups"] = { i(252607) },	-- Abundant Beacon (QI!)
+					["groups"] = {
+						i(252607),	-- Abundant Beacon (QI!)
+						i(252608),	-- Unalloyed Abundance
+					},
 				}),
 				q(94361, {	-- The Abundant Life
 					["sourceQuest"] = 91933,	-- The Abundant Honor
@@ -276,6 +279,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(94426),	-- Popped after Loaknit Den
 			q(91432),	-- Popped after entering Wath'nan Crypts
 			q(94952),	-- Accepted 'Abudant Offerings' (questID 89507)
+
+			--q(91496),	-- Tiggered during Abundant Voidburrow
 		}),
 	}),
 }));

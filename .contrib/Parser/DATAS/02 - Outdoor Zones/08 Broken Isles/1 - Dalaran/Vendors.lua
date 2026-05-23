@@ -766,24 +766,24 @@ root(ROOTS.Zones, {
 						i(137794),	-- Design: Azsunite Loop [Rank 1] (RECIPE!)
 						i(137797),	-- Design: Azsunite Pendant [Rank 1] (RECIPE!)
 						i(137802),	-- Design: Blessed Dawnlight Medallion [Rank 1] (RECIPE!)
-						i(138451),	-- Design: Deadly Deep Amber
-						i(138454),	-- Design: Deadly Eye of Prophecy
+						i(138451),	-- Design: Deadly Deep Amber (RECIPE!)
+						i(138454),	-- Design: Deadly Eye of Prophecy (RECIPE!)
 						i(137792),	-- Design: Deep Amber Loop [Rank 1] (RECIPE!)
 						i(137795),	-- Design: Deep Amber Pendant [Rank 1] (RECIPE!)
 						i(137812),	-- Design: Grim Furystone Gorget [Rank 1] (RECIPE!)
 						i(137808),	-- Design: Intrepid Necklace of Prophecy [Rank 1] (RECIPE!)
-						i(138453),	-- Design: Masterful Queen's Opal
-						i(138456),	-- Design: Masterful Shadowruby
+						i(138453),	-- Design: Masterful Queen's Opal (RECIPE!)
+						i(138456),	-- Design: Masterful Shadowruby (RECIPE!)
 						i(137859),	-- Design: Queen's Opal Loop [Rank 1] (RECIPE!)
 						i(137860),	-- Design: Queen's Opal Pendant [Rank 1] (RECIPE!)
-						i(138452),	-- Design: Quick Azsunite
-						i(138455),	-- Design: Quick Dawnlight
+						i(138452),	-- Design: Quick Azsunite (RECIPE!)
+						i(138455),	-- Design: Quick Dawnlight (RECIPE!)
 						i(137811),	-- Design: Raging Furystone Gorget [Rank 1] (RECIPE!)
 						i(137810),	-- Design: Righteous Dawnlight Medallion [Rank 1] (RECIPE!)
-						i(137813),	-- Design: Saber's Eye
-						i(137815),	-- Design: Saber's Eye of Agility
-						i(137816),	-- Design: Saber's Eye of Intellect
-						i(137814),	-- Design: Saber's Eye of Strength
+						i(137813),	-- Design: Saber's Eye (RECIPE!)
+						i(137815),	-- Design: Saber's Eye of Agility (RECIPE!)
+						i(137816),	-- Design: Saber's Eye of Intellect (RECIPE!)
+						i(137814),	-- Design: Saber's Eye of Strength (RECIPE!)
 						i(137861),	-- Design: Shadowruby Band [Rank 1] (RECIPE!)
 						i(137793),	-- Design: Skystone Loop [Rank 1] (RECIPE!)
 						i(137796),	-- Design: Skystone Pendant [Rank 1] (RECIPE!)
@@ -1118,6 +1118,9 @@ root(ROOTS.Zones, {
 					["coord"] = { 57.3, 42.4, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 32216},	-- Mei Francis <Exotic Mounts> (Dalaran Northrend)
+					},
+					["groups"] = {
+						i(224270, {["timeline"] = { ADDED_10_2_7 }}),	-- Certificate of Ownership (RECIPE!)
 					},
 				}),
 				n(96987, {	-- Norvin Alderman <Cloaks>

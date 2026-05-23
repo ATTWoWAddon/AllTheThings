@@ -206,7 +206,7 @@ r(57251),	-- Glyph of Water Shield \\ Glyph of Water Mastery
 r(57252),	-- Glyph of Windfury Weapon
 r(57253),	-- Glyph of Thunderstorm
 r(57257),	-- Glyph of Incinerate
-r(57258),	-- Glyph of Conflagrate
+r(57258),	-- Glyph of Chaos Meteor \\ Glyph of Conflagrate
 r(57259),	-- Glyph of Corruption
 r(57260),	-- Glyph of Bane of Agony \\ Glyph of Curse of Agony
 r(57261),	-- Glyph of Death Coil

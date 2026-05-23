@@ -2780,7 +2780,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 56.2, 83.4, WINTERSPRING },
 					},
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				i(16054, {	-- Schematic: Arcanite Dragonling
 					-- [[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023

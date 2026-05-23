@@ -710,7 +710,6 @@ root(ROOTS.Zones, {
 								["cr"] = 19823,	-- Crazed Colossus
 							}),
 							-- #if AFTER CATA
-							-- TODO: Do something about this being assumed a collectible.
 							i(31279, {	-- Enchanted Illidari Tabard [Temp Quest Item]
 								["collectible"] = false,
 							}),

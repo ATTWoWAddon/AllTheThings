@@ -656,6 +656,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(194416),	-- Titan Lightning Generator
 						i(194372),	-- Vault Guardian's Missive
 						i(194376),	-- Vault Guardian's Poleaxe
+						i(269987, {	-- Vault Guard's Axe
+							["timeline"] = { ADDED_12_0_1 },
+						}),
 						i(194417),	-- Vault Guard's Talon
 					},
 				}),

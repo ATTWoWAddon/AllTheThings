@@ -39,7 +39,7 @@ root(ROOTS.Zones, {
 				i(136901, {	-- Eye of Inquisition (PET!)
 					["crs"] = { 101878 },	-- Felsoul Inquisitor
 				}),
-				i(137841),	-- Design: Deep Amber Pendant (Rank 3)
+				i(137841),	-- Design: Deep Amber Pendant [Rank 3] (RECIPE!)
 				i(136704),	-- Formula: Immaculate Fibril (RECIPE!)
 				i(139559, {	-- The Stars' Design
 					artifact(893),	-- Fire Mage Hidden Appearance

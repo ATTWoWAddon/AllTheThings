@@ -348,6 +348,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	local character, unavailable, unobtainable = {}, {}, {}
 	local showUnsorted = settings:GetTooltipSetting("SourceLocations:Unsorted");
 	local showCompleted = settings:GetTooltipSetting("SourceLocations:Completed");
+	local issecretvalue = app.WOWAPI.issecretvalue
 	local FilterSettings, FilterInGame, FilterCharacter, FirstParent
 		= app.RecursiveGroupRequirementsFilter, app.Modules.Filter.Filters.InGame, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 	local abbrevs = L.ABBREVIATIONS;
@@ -365,7 +366,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 		then
 			text = GenerateSourcePath(parent, parent.objectiveID and 0 or 1);
 			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
-			if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
+			if showUnsorted or issecretvalue(text) or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
 				-- doesn't meet current unobtainable filters from the Thing itself and its parent chain
 				if not FilterInGame(j) or not FilterInGame(parent) then
 					unobtainable[#unobtainable + 1] = text..UnobtainableTexture
@@ -405,14 +406,20 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 		end
 	end
 	if #character > 0 then
-		local listing = {};
+		local listing = {}
+		local secretListings = {}
 		local maximum = settings:GetTooltipSetting("Locations");
 		local count = 0;
 		app.Sort(character, app.SortDefaults.Strings);
 		for _,text in ipairs(character) do
 			-- since the strings are sorted, we only need to add ones that are not equal to the previously-added one
 			-- instead of checking all existing strings
-			if listing[#listing] ~= text then
+			if issecretvalue(text) then
+				count = count + 1
+				if count <= maximum then
+					secretListings[#secretListings + 1] = text
+				end
+			elseif listing[#listing] ~= text then
 				count = count + 1;
 				if count <= maximum then
 					listing[#listing + 1] = text
@@ -437,6 +444,12 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 			end
 			tooltipInfo.hasSourceLocations = true;
 			return working
+		end
+		if #secretListings > 0 then
+			local wrap = settings:GetTooltipSetting("SourceLocations:Wrapping");
+			for i=1,#secretListings do
+				tooltipInfo[#tooltipInfo + 1] = { left = secretListings[i], wrap = wrap }
+			end
 		end
 	end
 end

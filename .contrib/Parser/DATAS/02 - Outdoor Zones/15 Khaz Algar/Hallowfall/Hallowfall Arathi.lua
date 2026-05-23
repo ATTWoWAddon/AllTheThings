@@ -794,7 +794,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 											i(229121),	-- Warstone's Sabatons
 										}),
 									})),
-									n(WEAPONS, sharedData({["modID"] = 0},{	-- TODO: get one of these to drop and tell me the modID :D
+									n(WEAPONS, sharedData({["modID"] = 134},{
 										i(229135),	-- Lamplighter Elite's Blade
 										i(229131),	-- Lamplighter Elite's Dagger
 										i(229146),	-- Lamplighter Elite's Glaive

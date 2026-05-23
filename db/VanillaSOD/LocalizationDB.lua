@@ -6,7 +6,6 @@ if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end
 local localize = function(t, data) for k,v in pairs(data) do t[k] = v; end end
 local appName, _, a = ...;
 local L = _.L;
-
 -- Localization Strings
 L._BETA_LABEL = "|cff4AA7FF [Beta]|r";
 L.ABOUT_BOTTOM = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
@@ -432,6 +431,8 @@ L.KNOWN_BY = "Known by %s";
 L.KNOWN_BY_CHECKBOX = "Known By";
 L.KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
 L.LAYER = "Layer";
+L.LEAVE_DELVE = "Leave Delve";
+L.LEAVE_DELVE_DESC = "Click here to leave the delve.";
 L.LEAVE_GROUP = "Leave Group";
 L.LEAVE_GROUP_DESC = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.";
 L.LEGACY_RAID_DIFF = "Legacy Raid Difficulty";
@@ -921,7 +922,6 @@ L.WRONG_FACTION = "You might need to be on the other faction to view this.";
 L.YOU_DID_IT = "YOU DID IT!";
 L.ZONE = ZONE;
 L.ZONE_DESC = "Click this button to select a random zone based on what you're missing.";
-
 -- Category Database Module
 _.CategoryNames = {
 	[2] = "Consumable",
@@ -967,7 +967,6 @@ _.CategoryIcons = {
 	[258] = 132544,
 	[259] = 133755,
 }
-
 -- Custom Header Database Module
 _.HeaderConstants = {
 	ACHIEVEMENTS = -12,
@@ -1412,7 +1411,6 @@ localize(L.EVENT_REMAPPING, {
 	[374] = 1,
 	[375] = 1,
 });
-
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -1465,8 +1463,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=6,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=13,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=20,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=27,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=4,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=11,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=18,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=25,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
@@ -1491,9 +1487,10 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=22,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=1,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=8,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=15,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=22,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=29,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=5,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=12,["weekday"]=2,["year"]=2027},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=5,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=12,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=19,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=26,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=3,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=10,["weekday"]=2,["year"]=2027},{["remappedID"]=374})
 });
-
 -- Filter Database Module
 _.FilterConstants = {
 	ACHIEVEMENTS = 105,
@@ -1636,7 +1633,6 @@ L.FILTER_ID_ICONS = {
 	[114] = 132261,
 	[200] = 134941,
 }
-
 -- Flight Path Database Module
 _.FlightPathNames = {
 	[1] = "Northshire Abbey",
@@ -1724,7 +1720,6 @@ _.FlightPathNames = {
 	[86] = "Eastwall Tower, Eastern Plaguelands",
 	[87] = "Crown Guard Tower, Eastern Plaguelands",
 }
-
 -- Object Database Module
 local ObjectNames = {
 	[31] = "Old Lion Statue",
@@ -3951,7 +3946,6 @@ local ObjectModels = {
 	[495578] = 200953,
 	[100000001] = 201129,
 }; _.ObjectModels = ObjectModels;
-
 -- Phase Database Module
 _.PhaseConstants = {
 	ELITE_PVP_REQUIREMENT = 4,
@@ -4067,7 +4061,6 @@ local phases = {
 	},
 };
 L.PHASES = phases;
-
 -- Achievement Data Module
 local achievements = {
 	[6] = {
@@ -5235,7 +5228,6 @@ local achievements = {
 	},
 };
 L.ACHIEVEMENT_DATA = achievements;
-
 local achievementCategories = {
 	[81] = {
 		name = "Feats of Strength",
@@ -5315,7 +5307,6 @@ local achievementCategories = {
 	},
 };
 L.ACHIEVEMENT_CATEGORY_DATA = achievementCategories;
-
 local achievementCriterias = {
 	[-180] = {
 		name = "Level up to 40.",
@@ -11392,7 +11383,6 @@ local worldMapOverlayData = {
 	[1557] = { 4281,4544,4546 },
 };
 L.WORLD_MAP_OVERLAY_DATA = worldMapOverlayData;
-
 -- Automatic Types
 if (C_Seasons and C_Seasons.GetActiveSeason() == 2) then
 L.ITEM_NAMES = {
@@ -11682,7 +11672,6 @@ L.QUEST_NAMES = {
 	[9695] = "The Sun King's Command",
 }
 end
-
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2);
 if simplifiedLocale == "de" then
@@ -27012,7 +27001,7 @@ L.NOT_TRADEABLE = "No comerciable";
 L.NOTHING_TO_SELECT_FROM = "No se encontró nada para seleccionar aleatoriamente.";
 L.NPC = "PNJ";
 L.NPC_ID = "Pnj ID";
-L.OBJECT_ID = "Objeto ID";
+L.OBJECT_ID = "Objeto de entorno ID";
 L.OBJECT_TYPE = "Tipo de objeto";
 L.OBJECTIVES = "Objetivos";
 L.ONLY_NOT_TRASH = "Filtrar objetos basura";
@@ -29951,7 +29940,7 @@ L.MUSIC_ROLLS_DESC_2 = "\n\nPrimero debes desbloquear los Rollos musicales compl
 L.NO_ENTRIES_DESC = "Si cree que se trata de un error, intente activar el modo de debug. Es posible que alguno de sus filtros esté restringiendo la visibilidad del grupo.";
 L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333No coleccionado|r";
 L.NPC_ID = "ID de Pnj";
-L.OBJECT_ID = "ID de objeto";
+L.OBJECT_ID = "ID de objeto de entorno";
 L.ONLY_RWP = "Sólo Removido con el parche";
 L.ONLY_RWP_TOOLTIP = "Activa esta opción para rastrear solamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Removido en el Parche' cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.";
 L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser buena idea que desactives esto. Esto se hizo para forzar a Blizzard a arreglar y/o conocer algunos bug.";
@@ -36545,8 +36534,6 @@ for key,value in pairs({
 do achievementCriterias[key].name = value; end
 end
 end
-
-
 -- Add a Header & Filter debugger
 setmetatable(_.FilterConstants, {
 	__index = function(t, key)

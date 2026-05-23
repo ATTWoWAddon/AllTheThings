@@ -869,7 +869,11 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42797, {	-- Fishing at Midnight
-				["cost"] = {{ "i", 254875, 2 }},	-- 2xMuck-Covered Writings
+				["providers"] = {
+					{ "i", 262649 },	-- An Angler's Deep Dive
+					{ "i", 262787 },	-- Dredged Journal Entry
+					{ "i", 254875 },	-- Muck-Covered Writings
+				},
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 				["groups"] = { i(264002) },	-- Midnight Fisher's Shop Sign (DECOR!)
 			}),

@@ -2901,6 +2901,40 @@
 62095@@@Onyxia's Lair Reforged
 62197@@@Titanic Embers acquired
 62198@@@Titanic Fragments acquired
+3.80.1.67155
+63160@@@[DNT] Player has learned - Sha-Warped Beaky
+63190@@@Realm First! Heart of Ruin
+63193@@@Realm First! Titanic Crusader
+63194@@@Realm First! Dawnbringer
+63199@@@Realm First! Apex Predator
+63200@@@Realm First! Starbreaker
+63203@@@Realm First! Keeper of Secrets
+63204@@@Realm First! Earthsplitter
+63205@@@Realm First! Lord of the Pit
+63206@@@Realm First! Wyrm Slayer
+63207@@@Realm First! The Unscarred
+63208@@@Realm First! Eye of Madness
+63210@@@Realm First! Usurper
+63211@@@Realm First! Twilight Slayer
+63212@@@Realm First! Shadow of the Betrayer
+63213@@@Realm First! Ancient Defender
+63215@@@Realm First! Lord of Ashes
+63216@@@Ahead of the Curve: Hakkar
+63217@@@Ahead of the Curve: Anub'arak
+63218@@@Ahead of the Curve: Zul'jin
+63219@@@Ahead of the Curve: Kil'jaeden
+63220@@@Ahead of the Curve: Yogg-Saron
+63221@@@Ahead of the Curve: Prince Malchezaar
+63222@@@Ahead of the Curve: Gruul the Dragonkiller
+63223@@@Ahead of the Curve: Magtheridon
+63224@@@Ahead of the Curve: Onyxia
+63225@@@Ahead of the Curve: Nefarian
+63226@@@Ahead of the Curve: Ossirian the Unscarred
+63227@@@Ahead of the Curve: C'Thun
+63228@@@Ahead of the Curve: The Lich King
+63229@@@Ahead of the Curve: Halion
+63230@@@Ahead of the Curve: Illidan Stormrage
+63231@@@Ahead of the Curve: Archimonde
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
@@ -5319,6 +5353,8 @@
 62350@@@Hidden - Mistwalker
 5.5.3.65703
 62399@@@The Mistwalker
+5.5.3.67158
+63096@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy)
 6.0.1.18179
 8394@@@The Frostwind Slayer
 8463@@@Mythic: Immerseus
@@ -17836,6 +17872,18 @@
 62603@@@[DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season) (copy)
 62612@@@[DNT] Midnight Epic Edition Decor
 62620@@@Allied Race: Haranir (copy)
+12.0.1.66431
+62653@@@[DNT] Midnight Alchemy Knowledge Fix
+62654@@@[DNT] Midnight Blacksmithing Knowledge Fix
+62655@@@[DNT] Midnight Enchanting Knowledge Fix
+62656@@@[DNT] Midnight Herbalism Knowledge Fix
+62657@@@[DNT] Midnight Inscription Knowledge Fix
+62658@@@[DNT] Midnight Leatherworking Knowledge Fix
+62659@@@[DNT] Midnight Mining Knowledge Fix
+62660@@@[DNT] Midnight Skinning Knowledge Fix
+62688@@@[DNT] Midnight Engineering Knowledge Fix
+12.0.1.66666
+62839@@@[DNT] Haranir Reputation Fix
 12.0.5.66330
 40899@@@Allied Races: Earthen (Hidden Character Achievement)
 61792@@@T-A-G that spells "Gotcha!"
@@ -17930,3 +17978,96 @@
 62605@@@[DNT] Research Sites: Collection - Snapdragon Pet - Tracking
 62621@@@Challenging Sites
 62622@@@Ritual Renown
+12.0.5.66529
+62452@@@Ritual Sites 320: Ritual Items and Their Uses in Quel'Thalas
+12.0.5.66591
+62759@@@Abyss Anglers: History Below
+62760@@@Abyss Anglers: Angler Physics
+62761@@@Abyss Anglers: One with the Depths
+62762@@@Abyss Anglers: Top of the Class
+62763@@@Abyss Anglers: Vintage Collector
+62772@@@Abyss Anglers: Now That's Anglin'
+62773@@@Abyss Anglers: Jeju's New Rival
+62774@@@Abyss Anglers: Not Done Yet
+62775@@@Abyss Anglers: Delicate Diver
+62776@@@Abyss Anglers: All Blue Angler
+62777@@@Abyss Anglers: Pearls to the Abyss
+62778@@@Abyss Anglers: Luck of the Loa
+62829@@@Abyss Anglers: Don't Know What You Expected
+62832@@@Abyss Anglers: Reservation for One
+12.0.5.66741
+62811@@@[PH] JZB Test Achievement 01
+62812@@@[PH] JZB Test Achievement 02
+62813@@@[PH] JZB Test Achievement 03
+62814@@@[PH] JZB Test Achievement 04
+12.0.5.67165
+63097@@@Midnight Keystone Myth: Season One
+12.0.5.67235
+63263@@@[DNT]Midnight Keystone Myth: Season One Personal Achievement
+12.0.7.67227
+61335@@@Flame Keeper of Midnight
+61336@@@Flame Warden of Midnight
+61442@@@Lorewalking: The Loa
+61463@@@Master of the Turbulent Timeways V
+62413@@@The Curse of Ula'tek
+62606@@@The Sunstrider Omnium
+62607@@@Ritualized Arcana
+62608@@@Leyline Assaults
+62609@@@Magical Primeessence
+62610@@@Off-World Magic
+62842@@@A Celestial Pain
+62857@@@[DNT] Moth Hunt - 10 Moths Acquired
+62858@@@[DNT] Moth Hunt - 20 Moths Acquired
+62859@@@[DNT] Moth Hunt - 30 Moths Acquired
+62860@@@[DNT] Moth Hunt - 40 Moths Acquired
+62861@@@[DNT] Moth Hunt - 50 Moths Acquired
+62862@@@[DNT] Moth Hunt - 60 Moths Acquired
+62863@@@[DNT] Moth Hunt - 70 Moths Acquired
+62864@@@[DNT] Moth Hunt - 80 Moths Acquired
+62865@@@[DNT] Moth Hunt - 90 Moths Acquired
+62866@@@[DNT] Moth Hunt - 100 Moths Acquired
+62867@@@[DNT] Moth Hunt - 110 Moths Acquired
+62873@@@A Trip Around the Stars
+62874@@@A Trip Through the Stars
+62875@@@[DNT] Storm mitigation 1 - Val - Hidden
+62876@@@[DNT] Storm mitigation 1 - Naigtal - Hidden
+62877@@@[DNT] Storm mitigation 2 - Val - Hidden
+62878@@@[DNT] Storm mitigation 2 - Naigtal - Hidden
+62879@@@[DNT] Moth Hunt - 1 Moths Acquired
+62880@@@Showdown Success: Val
+62881@@@Showdown Slugger: Val
+62882@@@Showdown Success: Naigtal
+62883@@@Showdown Slugger: Naigtal
+62887@@@Heroic: Worlds Ahead
+62896@@@Power Creep
+62898@@@Cradle of Power
+62899@@@Absolute Power
+62900@@@Power Beyond Measure
+62901@@@Heroic: Power Creep
+62903@@@Climate Strange: Val
+62904@@@Climate Strange: Naigtal
+62905@@@Pain of Command
+62909@@@Heroic: Pain of Command
+62917@@@Heroic Climate Strange: Val
+62919@@@Heroic Climate Strange: Naigtal
+62940@@@Ritual Sites 612: Practical Ritual Work
+62941@@@Pinnacle Ritual Work
+62942@@@[DNT] Pinnacle Ritual Work - Broken Throne
+62943@@@[DNT] Pinnacle Ritual Work - Daggerspine Point
+62944@@@[DNT] Showdown Unlock: Bouncy Mushrooms
+62945@@@[DNT] Showdown Unlock: Grapple Skiffs
+62949@@@[DNT] Showdown Unlock: Naigtal Spores
+63164@@@Big Prey Hunter (Season 1)
+63182@@@Advanced Ritual Site Studies
+63233@@@Rotmire (Raid Finder Sporefall)
+63234@@@Rotmire (Normal Sporefall)
+63235@@@Rotmire (Heroic Sporefall)
+63236@@@Rotmire (Mythic Sporefall)
+63237@@@Rotmire
+63240@@@Heroic: Rotmire
+63241@@@Mythic: Rotmire
+63242@@@Rotmire Guild Run
+63246@@@Heroic: Rotmire Guild Run
+63247@@@Mythic: Rotmire Guild Run
+63264@@@Heroic Showdowns
+63323@@@Heroic Tendencies

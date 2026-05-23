@@ -113,12 +113,6 @@ q(63450,{altQuests={63448},coords={
 mnt(348459,{b=1,itemID=184865,lvl=20,q=4,u=2}),
 toy(184871,{b=1,q=3,u=2}),
 toy(38233,{b=1,q=3,u=2})}})}}),
-h(-694,{awp=50502,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",rwp=60002,u=3,g={
-mnt(1256677,{itemID=253573,u=3}),
-toy(254666,{u=3}),
-toy(263489,{u=3}),
-p(4903,{itemID=253699,u=3}),
-mnt(1255246,{itemID=252950,u=3})}}),
 x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(683,{providers={{"i",39286}},rwp=30305,u=2}),
 p(188,{b=1,itemID=39286,npcID=28883,q=3,rwp=30305,spellID=52615,u=2,g={

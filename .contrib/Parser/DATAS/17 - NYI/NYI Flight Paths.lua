@@ -822,5 +822,11 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(3240),	-- Quest Path 11404: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Up - Force Taxi - SJC
 			fp(3241),	-- Quest Path 11405: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Down - Force Taxi - SJC
 		})),
+
+		-- 12.0.5
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+			fp(3201),	-- Quest Path 11282: 12.0.5 Event - Prop Hunt - Teleporter - Upper > Lower
+			fp(3202),	-- Quest Path 11283: 12.0.5 Event - Prop Hunt - Teleporter - Lower > Upper
+		})),
 	}),
 }));

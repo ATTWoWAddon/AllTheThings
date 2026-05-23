@@ -1011,3 +1011,9 @@
 12.0.5.66330
 749@@@Darkspear Dasher %s
 766@@@%s, Mrglgrgl of Grglmrgl
+12.0.5.67088
+772@@@Void Breacher %s
+12.0.5.67165
+773@@@%s the Umbral Contender
+12.0.7.67227
+771@@@Ritual Breaker %s

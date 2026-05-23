@@ -691,6 +691,8 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			ach(62215),	-- Abyss Anglers: Heavy Harpoon Cannon
+			ach(62216),	-- Abyss Anglers: Hollowcore Harpoon Turret
 			ach(42575),	-- Elusive Foes: Antoran Wastes
 			ach(42646),	-- Elusive Foes: Eredath
 			ach(42579),	-- Elusive Foes: Highmountain

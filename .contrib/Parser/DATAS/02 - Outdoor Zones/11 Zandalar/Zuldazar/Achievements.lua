@@ -72,38 +72,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			ach(12956),		-- Tortollan Seekers
 			pvp(ach(12575)),	-- Tour of Duty: Zuldazar
-			ach(12851, {	-- Treasures of Zuldazar
-				crit(40988, {	-- Offerings of the Chosen
-					["_quests"] = { 48938 },
-				}),
-				crit(40989, {	-- Witch Doctor's Hoard
-					["_quests"] = { 50259 },
-				}),
-				crit(40990, {	-- Spoils of Pandaria
-					["_quests"] = { 49936 },
-				}),
-				crit(40991, {	-- Gift of the Brokenhearted
-					["_quests"] = { 50582 },
-				}),
-				crit(40992, {	-- Warlord's Cache
-					["_quests"] = { 49257 },
-				}),
-				crit(40993, {	-- Dazar's Forgotten Chest
-					["_quests"] = { 50707 },
-				}),
-				crit(40994, {	-- Da White Shark's Bounty
-					["_quests"] = { 50947 },
-				}),
-				crit(40995, {	-- The Exile's Lament
-					["_quests"] = { 50949 },
-				}),
-				crit(40996, {	-- Cache of Secrets
-					["_quests"] = { 51338 },
-				}),
-				crit(40997, {	-- Riches of Tor'nowa
-					["_quests"] = { 51624 },
-				}),
-			}),
+			ach(12851),	-- Treasures of Zuldazar
 		}),
 	}),
 })));

@@ -8669,7 +8669,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(83009),	--
 			q(83010),	--
 			q(83011),	--
-			q(83014),	--
 			q(83015),	--
 			q(83016),	--
 			q(83017),	--
@@ -9683,7 +9682,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(90479),	--
 			q(90480),	--
 			q(90774),	--
-			q(90900),	--
 			q(89566),	--
 		})),
 
@@ -9945,7 +9943,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(93325),	--
 			q(93326),	--
 			q(93327),	--
-			q(93330),	--
 			q(93331),	--
 			q(93333),	--
 			q(93334),	--
@@ -9975,6 +9972,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 		-- 12.0.1
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+			q(93523, {["_drop"] = {"g"}}),	-- Short-Supply Reward
 			q(94423, {["_drop"] = {"g"}}),	-- Sanctum Secure
 		})),
 	}),

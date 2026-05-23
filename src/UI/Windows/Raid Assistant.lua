@@ -17,6 +17,8 @@ local IsInGroup, IsInInstance, IsInLFGDungeon, IsAllowedToUserTeleport, LFGTelep
 	= IsInGroup, IsInInstance, IsInLFGDungeon, IsAllowedToUserTeleport, LFGTeleport;
 local C_LFGList_GetActiveEntryInfo = C_LFGList and C_LFGList.GetActiveEntryInfo;
 local C_LFGList_RemoveListing = C_LFGList and C_LFGList.RemoveListing;
+local C_PartyInfo_DelveTeleportOut = C_PartyInfo and  C_PartyInfo.DelveTeleportOut;
+local C_PartyInfo_IsDelveInProgress = C_PartyInfo and C_PartyInfo.IsDelveInProgress;
 local C_Scenario_IsInScenario = C_Scenario and C_Scenario.IsInScenario;
 
 local Callback = app.CallbackHandlers.Callback;
@@ -788,6 +790,22 @@ app:CreateWindow("RaidAssistant", {
 				return true;
 			end,
 		}));
+		if app.GameBuildVersion >= 100000 then
+			tinsert(options, app.CreateRawText(L.LEAVE_DELVE, {
+				icon = 132331,
+				description = L.LEAVE_DELVE_DESC,
+				priority = 24,
+				OnClick = function(row, button)
+					C_PartyInfo_DelveTeleportOut();
+					self:ResetWindow();
+					return true;
+				end,
+				OnUpdate = function(data)
+					data.visible = C_PartyInfo_IsDelveInProgress();
+					return true;
+				end,
+			}));
+		end
 		tinsert(options, app.CreateRawText("Port to Graveyard", {
 			icon = 132331,
 			description = "Click here to create a group and then immediately leave it. This will port you to the nearest graveyard after 1 minute.",

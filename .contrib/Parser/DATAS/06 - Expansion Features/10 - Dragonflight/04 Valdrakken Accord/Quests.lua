@@ -670,6 +670,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
 						["groups"] = {
 							i(192547),	-- Garden Seed (QI!)
+							i(254335, {	-- Springleaf Swatch
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						},
 					}),
 					q(66180, {	-- Wake the Ancients
@@ -677,7 +680,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 187525 },	-- Merithra
 						["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
 						["groups"] = {
-							i(192555),	-- Borrowed Breath
+							i(192555),	-- Borrowed Breath (QI!)
+							i(257246, {	-- Dreamfriend's Belt
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257245, {	-- Dreamfriend's Girdle
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257247, {	-- Dreamfriend's Sash
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257244, {	-- Dreamfriend's Waistguard
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						},
 					}),
 					q(66182, {	-- Gerithus's Reseach
@@ -696,6 +711,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							objective(1, {	-- 0/8 Emerald Tear's
 								["provider"] = { "i", 192558 },	-- Emerald Tear (QI!)
 							}),
+							i(257267, {	-- Dreamfriend's Cap
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257268, {	-- Dreamfriend's Greathelm
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257266, {	-- Dreamfriend's Helm
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257265, {	-- Dreamfriend's Hood
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						},
 					}),
 					q(66181, {	-- A Frenzied Defender
@@ -710,6 +737,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 						["provider"] = { "n", 189849 },	-- Gerithus
 						["coord"] = { 28.3, 48.6, OHNAHRAN_PLAINS },
+						["groups"] = {
+							i(257286, {	-- Dream-Touched Choker
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66393, {	-- To Somnikus
 						["sourceQuests"] = { 66184 },	-- Anchors to Life
@@ -720,6 +752,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66393 },	-- To Somnikus
 						["provider"] = { "n", 186469 },	-- Somnikus
 						["coord"] = { 21.9, 50.9, OHNAHRAN_PLAINS },
+						["groups"] = {
+							i(257287, {	-- Wistful Signet
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66396, {	-- Guarded Appreciation
 						["sourceQuests"] = { 66393 },	-- To Somnikus
@@ -727,6 +764,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 22.0, 50.8, OHNAHRAN_PLAINS },
 						["groups"] = {
 							i(192744),	-- Rymek's Gift
+							i(257291, {	-- Dreamfriend's Gauntlets
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257292, {	-- Dreamfriend's Gloves
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257290, {	-- Dreamfriend's Grips
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257293, {	-- Dreamfriend's Handguards
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						},
 					}),
 					q(66190, {	-- So Close
@@ -736,6 +785,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 						["provider"] = { "n", 189857 },	-- Rymek
 						["coord"] = { 22.0, 50.8, OHNAHRAN_PLAINS },
+						["groups"] = {
+							i(257297, {	-- Dreamfriend's Breeches
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257295, {	-- Dreamfriend's Leggings
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257294, {	-- Dreamfriend's Legguards
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257296, {	-- Dreamfriend's Scales
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66191, {	-- And Yet So Far
 						["sourceQuests"] = { 66190 },	-- So Close
@@ -746,6 +809,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66191 },	-- And Yet So Far
 						["provider"] = { "n", 187561 },	-- Merithra
 						["coord"] = { 22.0, 49.2, OHNAHRAN_PLAINS },
+						["groups"] = {
+							i(257299, {	-- Relic of the Somnambulant
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66185, {	-- Across the Weald
 						["sourceQuests"] = { 66392 },	-- Rallying Nature's Allies
@@ -756,6 +824,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66185 },	-- Across the Weald
 						["provider"] = { "n", 187634 },	-- Ysera
 						["coord"] = { 45.8, 60.9, ARDENWEALD },
+						["groups"] = {
+							i(257288, {	-- Loop of Dreams
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66188, {	-- Storm's Rest
 						["sourceQuests"] = { 66186 },	-- The Price
@@ -767,11 +840,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 188348 },	-- Ysera
 						["coord"] = { 45.2, 63.6, ARDENWEALD },
 						["maps"] = { 2084 },	-- The Emerald Dreamway
+						["groups"] = {
+							i(257303, {	-- Dreamfriend's Bracers
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257304, {	-- Dreamfriend's Bindings
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257302, {	-- Dreamfriend's Vambraces
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257301, {	-- Dreamfriend's Wraps
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66394, {	-- Thin the Veil
 						["sourceQuests"] = { 66189 },	-- Step Into the Life
 						["provider"] = { "n", 187646 },	-- Ysera
 						["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
+						["groups"] = {
+							i(257307, {	-- Dreamfriend's Mantle
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257308, {	-- Dreamfriend's Monnion
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257306, {	-- Dreamfriend's Pauldrons
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257305, {	-- Dreamfriend's Spaulders
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66397, {	-- Our Full Strength
 						["sourceQuests"] = { 66189 },	-- Step Into the Life
@@ -793,21 +894,89 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66635 },	-- Reunited, Once Again
 						["provider"] = { "n", 187660 },	-- Merithra
 						["coord"] = { 18.8, 51.1, OHNAHRAN_PLAINS },
+						["groups"] = {
+							i(257300, {	-- Seed from the Dream
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66399, {	-- We'll Cross the Bridge
 						["sourceQuests"] = { 66398 },	-- The Emerald Dragonflight
 						["provider"] = { "n", 188787 },	-- Gerithus
 						["coord"] = { 21.9, 76.0, OHNAHRAN_PLAINS },
+						["groups"] = {
+							i(257312, {	-- Dreamfriend's Boots
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257311, {	-- Dreamfriend's Cover
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257309, {	-- Dreamfriend's Sabatons
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257310, {	-- Dreamfriend's Slippers
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66400, {	-- Winter's Fall
 						["sourceQuests"] = { 66399 },	-- We'll Cross the Bridge
 						["provider"] = { "n", 188840 },	-- Somnikus
 						["coord"] = { 20.8, 79.7, OHNAHRAN_PLAINS },
+						["groups"] = {
+							i(257314, {	-- Dreamfriend's Chestplate
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257315, {	-- Dreamfriend's Hauberk
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257316, {	-- Dreamfriend's Vest
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257313, {	-- Dreamfriend's Vestments
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66401, {	-- The Dreamer
 						["sourceQuests"] = { 66400 },	-- Winter's Fall
 						["provider"] = { "n", 188847 },	-- Merithra
 						["coord"] = { 19.7, 81.6, OHNAHRAN_PLAINS },
+						["groups"] = {
+							i(257321, {	-- Dreamdaughter's Walking Stick
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(269986, {	-- Dreamer's Spellblade
+								["timeline"] = { ADDED_12_0_1 },
+							}),
+							i(257324, {	-- Dreamforged Bludgeon
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257322, {	-- Dreamwood Crossbow
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257323, {	-- Drusahl's Hatchet
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257327, {	-- Drusahl's Polearm
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257325, {	-- Greatsword of the Somnambulant
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257318, {	-- Lucid Dreamer's Guide
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257320, {	-- Thornwood Sticker
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257317, {	-- Verdant Defender's Bulwark
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(257319, {	-- Viridian Shortsword
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+						},
 					}),
 					q(66402, {	-- Like Mother, Like Daughter
 						["sourceQuests"] = { 66401 },	-- The Dreamer

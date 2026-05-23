@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 		}),
 		q(78713, {	-- The War Within [H]
 			["races"] = HORDE_ONLY,
+			["qg"] = 221949,	-- Thrall
 			["groups"] = {
 				i(227669),	-- Teleportation Scroll (QI!)
 			},

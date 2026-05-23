@@ -5,8 +5,9 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(QUESTS, {
 		q(94993, {	-- Adventuring in Midnight
-			["description"] = "Pops up the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",
+			["description"] = "Pops up on Alts the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",
 			["coord"] = { 45.7, 67.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["lockCriteria"] = { 1, "lvl", 80 },	-- Added because this quest pops up only on Alts and can't be completed on a Main Character.	-- Exo
 		}),
 		header(HEADERS.Achievement, 41805, {	-- Arator's Journey
 			header(HEADERS.AchCriteria, 41805.01, {	-- The Path of Light
@@ -914,6 +915,187 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				--
 			}),
 		}),
+		header(HEADERS.Achievement, 62413, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- The Curse of Ula'tek
+			header(HEADERS.AchCriteria, 62413.01, {	-- Legacy of the Amani
+				q(92897, {	-- The Preparations Are Complete
+					["description"] = "You can get this Breadcrumb Quest from your Adventure Journal.",
+					["sourceQuest"] = 90867,	-- From Darkness, Light (Exo Note: This should be correct as the story picks up after the main campaign)
+					["isBreadcrumb"] = true,
+				}),
+				q(92895, {	-- Hagar's Invitation
+					["sourceQuest"] = 92897,	-- The Preparations Are Complete
+					["qg"] = 253640,	-- Orweyna
+					["coord"] = { 45.3, 70.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(92899, {	-- History Lesson
+					["sourceQuest"] = 92895,	-- Hagar's Invitation
+					["qg"] = 253654,	-- Orweyna
+					["coord"] = { 43.9, 53.2, 2576 },	-- The Den
+				}),
+				q(92900, {	-- A Favor for Kinduru
+					["sourceQuest"] = 92899,	-- History Lesson
+					["qg"] = 253651,	-- Loa Speaker Kinduru
+					["coord"] = { 43.5, 51.1, 2576 },	-- The Den
+				}),
+				------ Stay awhile and listen ------
+				--hqt(XXXXX, {	-- Stay awhile and listen: The Elves
+				--	["name"] = "Stay awhile and listen: The Elves",
+				--	["description"] = "Dialogue becomes available after accepting 'A Favor for Kinduru' (92900).",
+				--	["sourceQuest"] = 92899,	-- History Lesson
+				--	["qg"] = 253656,	-- Lady Liadrin
+				--	["coord"] = { 44.6, 47.7, 2576 },	-- The Den
+				--}),
+				--hqt(XXXXX, {	-- Stay awhile and listen: The Trolls
+				--	["name"] = "Stay awhile and listen: The Trolls",
+				--	["description"] = "Dialogue becomes available after accepting 'A Favor for Kinduru' (92900).",
+				--	["sourceQuest"] = 92899,	-- History Lesson
+				--	["qg"] = 253661,	-- Rokhan
+				--	["coord"] = { 49.5, 41.7, 2576 },	-- The Den
+				--}),
+				--
+				q(92901, {	-- Revisionist History
+					["sourceQuest"] = 92900,	-- A Favor for Kinduru
+					["qg"] = 253675,	-- Orweyna
+					["coord"] = { 38.7, 46.8, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92904, {	-- Return to Zul'Aman
+					["sourceQuest"] = 92901,	-- Revisionist History
+					["qg"] = 255660,	-- Zul'jan
+					["coord"] = { 34.9, 44.0, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92907, {	-- Amani Answers
+					["sourceQuest"] = 92904,	-- Return to Zul'Aman
+					["qg"] = 253788,	-- Zul'jan
+					["coord"] = { 16.4, 20.4, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				}),
+				q(92955, {	-- The Tablets of Numazon
+					["sourceQuest"] = 92907,	-- Amani Answers
+					["qg"] = 256363,	-- Zul'jan
+					["coord"] = { 16.9, 20.7, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				}),
+				q(92957, {	-- There's the Rub
+					["sourceQuest"] = 92955,	-- The Tablets of Numazon
+					["qg"] = 253834,	-- Zul'jan
+					["coord"] = { 39.0, 38.8, MAP.MIDNIGHT.ZULAMAN },
+					["groups"] = {
+						o(616804, {	-- Ancient Amani Tablet
+							["coords"] = {
+								{ 36.7, 37.0, MAP.MIDNIGHT.ZULAMAN },
+								{ 36.9, 37.9, MAP.MIDNIGHT.ZULAMAN },
+								{ 37.3, 36.9, MAP.MIDNIGHT.ZULAMAN },
+								{ 37.7, 36.7, MAP.MIDNIGHT.ZULAMAN },
+								{ 37.7, 38.7, MAP.MIDNIGHT.ZULAMAN },
+								{ 37.8, 38.0, MAP.MIDNIGHT.ZULAMAN },
+								{ 38.0, 35.9, MAP.MIDNIGHT.ZULAMAN },
+								{ 38.0, 36.9, MAP.MIDNIGHT.ZULAMAN },
+								{ 38.2, 38.0, MAP.MIDNIGHT.ZULAMAN },
+								{ 38.5, 38.3, MAP.MIDNIGHT.ZULAMAN },
+								{ 38.6, 36.7, MAP.MIDNIGHT.ZULAMAN },
+							},
+							["groups"] = { i(262654) },	-- Amani Tablet Rubbing (QI!)
+						}),
+					},
+				}),
+				q(92958, {	-- Brain Drain
+					["sourceQuest"] = 92955,	-- The Tablets of Numazon
+					["qg"] = 253833,	-- Befuddled Amani Mask
+					["coord"] = { 39.0, 38.9, MAP.MIDNIGHT.ZULAMAN },
+					["groups"] = { i(262659) },	-- Vilebranch Hex Fetish
+				}),
+				q(92952, {	-- Mission to Maisara
+					["sourceQuests"] = {
+						92957,	-- There's the Rub
+						92958,	-- Brain Drain
+					},
+					["qg"] = 253833,	-- Befuddled Amani Mask
+					["coord"] = { 39.0, 38.9, MAP.MIDNIGHT.ZULAMAN },
+				}),
+				------ Stay awhile and listen ------
+				--hqt(XXXXX, {	-- Stay awhile and listen: Zul'jan
+				--	["name"] = "Stay awhile and listen: Zul'jan",
+				--	["description"] = "Dialogue becomes available after accepting 'Mission to Maisara' (92952).",
+				--	["sourceQuests"] = {
+				--		92957,	-- There's the Rub
+				--		92958,	-- Brain Drain
+				--	},
+				--	["qg"] = 253834,	-- Zul'jan
+				--	["coord"] = { 39.0, 38.8, MAP.MIDNIGHT.ZULAMAN },
+				--}),
+				--
+				q(92953, {	-- Memories of Malacrass
+					["sourceQuest"] = 92952,	-- Mission to Maisara
+					["qgs"] = {
+						253805,	-- Enchanted Amani Mask
+						259125, -- Enchanted Amani Mask (mobileNPC)
+					},
+					["coord"] = { 44.5, 36.7, MAP.MIDNIGHT.ZULAMAN },
+				}),
+				q(92951, {	-- Digging Deeper
+					["sourceQuest"] = 92952,	-- Mission to Maisara
+					["qg"] = 253806,	-- Zul'jan
+					["coord"] = { 44.5, 36.6, MAP.MIDNIGHT.ZULAMAN },
+					["groups"] = {
+						o(617077, {	-- Vilebranch Scroll
+							i(262752),	-- Vilebranch Scroll (QI!)
+						}),
+					},
+				}),
+				q(92954, {	-- Maisara Caverns: Master of Souls
+					["sourceQuests"] = {
+						92953,	-- Memories of Malacrass
+						92951,	-- Digging Deeper
+					},
+					["qg"] = 253806,	-- Zul'jan
+					["coord"] = { 44.5, 36.6, MAP.MIDNIGHT.ZULAMAN },
+					["groups"] = { i(262791) },	-- Malacrass's Notes (QI!)
+				}),
+				------ Stay awhile and listen ------
+				--hqt(XXXXX, {	-- Stay awhile and listen: Loa Speaker Kinduru
+				--	["name"] = "Stay awhile and listen: Loa Speaker Kinduru",
+				--	["description"] = "Dialogue becomes available after accepting 'Maisara Caverns: Master of Souls' (92954).",
+				--	["sourceQuests"] = {
+				--		92953,	-- Memories of Malacrass
+				--		92951,	-- Digging Deeper
+				--	},
+				--	["qg"] = 253804,	-- Loa Speaker Kinduru
+				--	["coord"] = { 44.5, 36.7, MAP.MIDNIGHT.ZULAMAN },
+				--}),
+				--
+				q(93010, {	-- The Serpent Shrine
+					["sourceQuest"] = 92954,	-- Maisara Caverns: Master of Souls
+					["qg"] = 253806,	-- Zul'jan
+					["coord"] = { 44.5, 36.6, MAP.MIDNIGHT.ZULAMAN },
+				}),
+				q(93011, {	-- Legacy of the Amani
+					["sourceQuest"] = 93010,	-- The Serpent Shrine
+					["qg"] = 253840,	-- Zul'jan
+					["coord"] = { 67.8, 47.3, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				}),
+				q(93012, {	-- Dead End
+					["sourceQuest"] = 93011,	-- Legacy of the Amani
+					["qg"] = 259778,	-- Orweyna
+					["coord"] = { 44.4, 66.7, MAP.MIDNIGHT.ZULAMAN },
+					["groups"] = { i(268557) },	-- Akiki (PET!)
+				}),
+				------ Stay awhile and listen ------
+				hqt(92898, {	-- Stay awhile and listen: Zul'jara
+					["name"] = "Stay awhile and listen: Zul'jara",
+					["description"] = "Dialogue becomes available after completing 'Dead End' (93012).",
+					["sourceQuest"] = 93012,	-- Dead End
+					["qg"] = 253848,	-- Zul'jara
+					["coord"] = { 43.8, 68.4, MAP.MIDNIGHT.ZULAMAN },
+				}),
+				--
+			}),
+			--header(HEADERS.AchCriteria, 62413.02, {	-- An Island of Fangs
+			--}),
+			--header(HEADERS.AchCriteria, 62413.03, {	-- Ghosts of the Past
+			--}),
+			--header(HEADERS.AchCriteria, 62413.04, {	-- Original Sin
+			--}),
+			--header(HEADERS.AchCriteria, 62413.05, {	-- The Battle for Atal'Utek
+			--}),
+		})),
 	}),
 })));
 

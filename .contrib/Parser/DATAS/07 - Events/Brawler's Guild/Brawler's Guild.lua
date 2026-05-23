@@ -405,7 +405,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							{ "n", 149717 },	-- Thog Hammerspace
 						},
 					}),
-					crit(109807, {	-- Unguloxx
+					crit(109801, {	-- Unguloxx
 						["providers"] = {
 							{ "i", 94186 },	-- Challenge Card: Unguloxx
 							{ "n", 68250 },	-- Unguloxx
@@ -1049,6 +1049,9 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["coords"] = {
 						{ 51.2, 43.4, DORNOGAL },
 						{ 66.6, 72.2, STORMWIND_CITY },
+						-- #if AFTER MID
+						{ 43.0, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+						-- #endif
 					},
 				}),
 				q(92851, {	-- Questionable Qualifications

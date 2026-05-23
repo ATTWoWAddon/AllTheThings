@@ -207,7 +207,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		-- #endif
 		i(262982, {	-- Roofus (PET!)
 			["description"] = "Part of the charity Roofus Pack.",
-			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(239082, {	-- Sa'bak's Blessed (PET!)
 			["timeline"] = { ADDED_11_1_7 },
@@ -686,45 +686,63 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(252419),	-- Lush Garden Fungal Basin (DECOR!)
 		i(258567),	-- Lush Garden Fungal Chair (DECOR!)
 		i(258888),	-- Lush Garden Fungal Fountain (DECOR!)
+		i(266164, {["timeline"] = { ADDED_12_0_5 }}),	-- Lush Garden Fungal Picnic (DECOR!)
+		i(266163, {["timeline"] = { ADDED_12_0_5 }}),	-- Lush Garden Fungal Planter (DECOR!)
+		i(266070, {["timeline"] = { ADDED_12_0_5 }}),	-- Lush Garden Fungal Table (DECOR!)
 		i(258294),	-- Lush Garden Gnome-Like Statue (DECOR!)
+		i(266162, {["timeline"] = { ADDED_12_0_5 }}),	-- Lush Garden Hedge (DECOR!)
+		i(268550, {["timeline"] = { ADDED_12_0_5 }}),	-- Lush Garden Rug (DECOR!)
+		i(267203, {["timeline"] = { ADDED_12_0_5 }}),	-- Lush Garden Stable (DECOR!)
 		i(250793),	-- Lush Garden Trellis (DECOR!)
+		i(264692, {["timeline"] = { ADDED_12_0_5 }}),	-- Lush Garden Window (DECOR!)
 		i(259046, {	-- Paw Pal Bed (DECOR!)
 			["description"] = "Part of the charity Roofus Pack.",
-			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(259045, {	-- Paw Pal Bed and Blanket (DECOR!)
 			["description"] = "Part of the charity Roofus Pack.",
-			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(264275, {	-- Paw Pal House Durotar Roof (DECOR!)
 			["description"] = "Part of the charity Roofus Pack.",
-			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(259094, {	-- Paw Pal House Elwynn Roof (DECOR!)
 			["description"] = "Part of the charity Roofus Pack.",
-			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(264276, {	-- Paw Pal House Eversong Roof (DECOR!)
 			["description"] = "Part of the charity Roofus Pack.",
-			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(259093, {	-- Paw Pal House Frame (DECOR!)
 			["description"] = "Part of the charity Roofus Pack.",
-			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(264277, {	-- Paw Pal House Shadowglen Roof (DECOR!)
 			["description"] = "Part of the charity Roofus Pack.",
-			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(259044, {	-- Paw Pal Water Dish (DECOR!)
 			["description"] = "Part of the charity Roofus Pack.",
-			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.99999" },	-- Removed May 12, 2026
+			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(250797),	-- Spring Blossom Ceiling Light (DECOR!)
 		i(258569),	-- Spring Blossom Gazebo (DECOR!)
 		i(254417),	-- Spring Blossom Hanging Chair (DECOR!)
+		i(266165, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Lantern (DECOR!)
+		i(265556, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Privacy Screen (DECOR!)
+		i(266167, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Pond (DECOR!)
 		i(250798),	-- Spring Blossom Shelf (DECOR!)
+		i(265555, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone (DECOR!)
+		i(265557, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone Duo (DECOR!)
+		i(265558, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone Trio (DECOR!)
+		i(265559, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone Collection (DECOR!)
+		i(266069, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Table (DECOR!)
+		i(266068, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Tea Set (DECOR!)
+		i(266166, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Tranquility Garden (DECOR!)
 		i(263290),	-- Spring Blossom Tree (DECOR!)
+		i(263291, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Tree Pond (DECOR!)
 		i(258568),	-- Spring Blossom Window (DECOR!)
 		i(253547),	-- Spring Blossom Wreath (DECOR!)
 	})),
@@ -734,6 +752,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_1 },
 		}),
 		-- #endif
+		i(268474, {	-- Amberback Arboon (MOUNT!)
+			["timeline"] = { ADDED_12_0_5 },
+		}),
 		i(238994, {	-- Archmage's Great Raven (MOUNT!)
 			["timeline"] = { ADDED_11_1_5 },
 		}),
@@ -749,6 +770,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		-- #endif
+		i(268472, {	-- Blossomback Arboon (MOUNT!)
+			["timeline"] = { ADDED_12_0_5 },
+		}),
 		i(219450, {	-- Charming Courier (MOUNT!)
 			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 		}),
@@ -840,23 +864,23 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #if ANYCLASSIC
 		i(184865, {	-- Reawakened Phase-Hunter (MOUNT!)
-			["timeline"] = { ADDED_2_5_1 },
+			["timeline"] = { ADDED_3_4_0 },
 		}),
 		-- #endif
 		mount(347812, {	-- Sapphire Skyblazer (MOUNT!)
 			["timeline"] = { ADDED_9_0_5 },
 		}),
 		------ Scurrywind Groveglider Collection ------
-		mount(1251765, {	-- Blossombranch Groveglider (MOUNT!)
+		i(250973, {	-- Blossombranch Groveglider (MOUNT!)
 			["timeline"] = { ADDED_12_0_1, },
 		}),
-		mount(1251762, {	-- Cindertuft Groveglider (MOUNT!)
+		i(250971, {	-- Cindertuft Groveglider (MOUNT!)
 			["timeline"] = { ADDED_12_0_1, },
 		}),
-		mount(1251697, {	-- Frostfall Groveglider (MOUNT!)
+		i(250930, {	-- Frostfall Groveglider (MOUNT!)
 			["timeline"] = { ADDED_12_0_1, },
 		}),
-		mount(1251764, {	-- Gloombough Groveglider (MOUNT!)
+		i(250972, {	-- Gloombough Groveglider (MOUNT!)
 			["timeline"] = { ADDED_12_0_1, },
 		}),
 		i(156564, {	-- Shu-zen, the Divine Sentinel (MOUNT!)

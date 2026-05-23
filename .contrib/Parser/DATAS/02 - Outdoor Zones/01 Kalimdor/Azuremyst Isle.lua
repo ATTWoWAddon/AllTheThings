@@ -970,7 +970,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9566, {	-- Blood Crystals
 					["sourceQuest"] = 9565,	-- Search Stillpine Hold
 					["provider"] = { "o", 181748 },	-- Blood Crystal
-					["coord"] = { 50.5, 11.6, AZUREMYST_ISLE },
+					["coords"] = {
+						{ 50.5, 11.6, AZUREMYST_ISLE },
+						{ 64.2, 33.3, 99 },	-- Stillpine Hold
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
 				}),

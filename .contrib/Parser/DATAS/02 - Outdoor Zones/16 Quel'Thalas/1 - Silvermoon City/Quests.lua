@@ -89,6 +89,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 45.4, 70.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["lockCriteria"] = { 1, "lvl", 90 },
 			}),
+			q(96245, {	-- You've Seen it All Before
+				["description"] = "Automatically acquired on reaching level 90 if you have another level 90 character who has completed the campaign.",
+				["timeline"] = { ADDED_12_0_5 },
+			}),
 		}),
 		-- PVP 4 part quest
 		n(QUESTS, sharedData({
@@ -150,9 +154,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93769),	-- Midnight: Housing
 			q(93891),	-- Midnight: Legends of the Haranir
 			q(93910),	-- Midnight: Prey
+			q(95843, {["timeline"] = { ADDED_12_0_5 }}),	-- Midnight: Ritual Sites
 			q(93889),	-- Midnight: Saltheril's Soiree
 			q(93892),	-- Midnight: Stormarion Assault
 			q(93766),	-- Midnight: World Quests
+			q(95842, {["timeline"] = { ADDED_12_0_5 }}),	-- Midnight: Void Assaults
 		})),
 	}),
 }));

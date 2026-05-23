@@ -37,7 +37,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(258189),	-- Do, child of Filo (PET!)
 			}),
 			ach(62057),	-- Midnight: The Highest Peaks
-			ach(61910),	-- Mrglgrgl of Grglmrgl
+			ach(61910, {	-- Mrglgrgl of Grglmrgl
+				title(766, {["timeline"] = { ADDED_12_0_5 }}),	-- <Name>, Mrglgrgl of Grglmrgl
+			}),
 			ach(60891, {	-- The Crimson Rogue
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),

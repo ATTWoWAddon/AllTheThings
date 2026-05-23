@@ -4,6 +4,45 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cq,crit,de,en,h,hqt,i,m,mnt,n,o,p,prof,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Secrets=
 h(-50,{SortPriority=65,g={
+x(7,{awp=70300,g={
+ah(254763,{description="This secret is a prerequisite for Baa'l. It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a Rare Elite in Antoran Wastes.",displayID=76829,lore="Uuna was found bound to an Ur'zul, and was released into the Shadowlands, where she wandered in the utter darkness.",modelScale=1.1,type="s",g={
+q(50098,{description="1. Summon Uuna and wait for her to say one of the following lines:\n'|cffffffffMama? Mama! Why is it so dark? It's scary here...|r'\n'|cffffffffCan anybody hear me?|r'\n'|cffffffffC-c-cold...|r'\n",icon=134506,g={
+q(50099,{description="2. |cffffffff/whistle|r at Uuna.\n",sourceQuests={50098}}),
+q(50100,{description="3. When she asks you questions, |cffffffff/roar|r at her.\n",sourceQuests={50098}}),
+q(50101,{description="4. Resummon Uuna and |cffffffff/cry|r at her. She will tell you that she wishes she could see you better, but it's too dark where she is.",sourceQuests={50098}})}}),
+q(50102,{coords={
+[111]={{54,44.7}}},description="Take Uuna to A'dal in Shattrath City. The light of the Naaru is too bright, and she will run away.",icon=134506,sourceQuests={50098}}),
+q(50103,{coords={
+[63]={{18.9,41.6}}},description="Take Uuna to the moonlight by Ashenvale's Lake Falathim.",icon=134506,sourceQuests={50102}}),
+q(50104,{coords={
+[882]={{25.1,59.8},{32.6,74.9}}},description="Most classes will need 2 |cffffffffGoblin Glider Kits|r to reach Nuu, who is in a house on a floating island in southwest Eredath.\n\nStart near the entrance to Seat of the Triumvirate and glide to the small rock, and then use your second glider to coast to the island further to the south.",icon=133632,sourceQuests={50103}}),
+q(50105,{coords={
+[106]={{56.5,56.6}}},description="Take Uuna to Blood Watch on Bloodmyst Isle.",icon=134506,sourceQuests={50104}}),
+q(50106,{coords={
+[539]={{56,41.1}}},description="Take Uuna to the small campsite northwest of Path of the Light in Draenor's Shadowmoon Valley. She will pick up the flower crown that is resting on one of the chairs around the campfire.",icon=134506,sourceQuests={50105}}),
+q(50107,{description="Wait for a little while after Uuna picks up the flower crown. Void tendrils will eventually erupt from the ground and take her captive.",icon=134506,sourceQuests={50106}}),
+q(50108,{coords={
+[539]={{52.1,47.7}}},description="Die and ask a Spirit Healer if they have seen Uuna. The Spirit Healer will give you permission to enter the spirit realm to try to find her. Resurrect (no need to do it through the Spirit Healer, just return to your corpse) and continue to the next step.",icon=134506,sourceQuests={50107}}),
+q(50109,{coords={
+[115]={{66.2,74.5}}},description="Click on the Shadow Tear in Dragonblight's Emerald Dragonshrine to look for Uuna in the spirit realm. Once inside, do the following:\n\n1. |cffffffff/cheer|r at Uuna.\n2. Place a |cffffffffCooking Fire|r next to her.\n3. Survive the gauntlet for 3 minutes, running into the |cff883325Soul-Eaters|r to scare them away.\n4. When Uuna wraps her arms around herself and cries, |cffffffff/hug|r her.",icon=134506,providers={{"o",280747}},sourceQuests={50108}}),
+h(-508,{
+q(50140,{coords={
+[390]={{8,59}}},icon=134506,sourceQuests={50109}}),
+q(50141,{coords={
+[680]={{62.3,83.7}}},icon=134506,sourceQuests={50140}}),
+q(50142,{coords={
+[627]={{72.4,45.9}}},icon=134506,sourceQuests={50141}}),
+q(50143,{coords={
+[115]={{57.8,54.6}}},icon=134506,sourceQuests={50142}}),
+q(50144,{coords={
+[198]={{59,24.1}}},icon=134506,sourceQuests={50143}}),
+q(50145,{coords={
+[379]={{44.8,52.3}}},icon=134506,sourceQuests={50144}}),
+q(50146,{coords={
+[33]={{37.5,67.4}},
+[36]={{21.1,38.4}}},icon=134506,sourceQuests={50145}}),
+q(50147,{coords={
+[539]={{70.7,46.7}}},icon=134506,sourceQuests={50146}})})}})}}),
 x(8,{awp=80001,g={
 ah(277461,{description="***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",displayID=80456,modelScale=1.1,type="s",g={
 q(52819,{coords={
@@ -1025,43 +1064,6 @@ q(92082,{coords={
 [2371]={{42,22.1}}},lvl=70,qgs={245344},sourceQuests={92079,92080,92081},g={
 toy(249713,{b=1}),
 mnt(353264,{b=1,itemID=186639})}})}}),
-ah(254763,{awp=70300,description="This secret is a prerequisite for Baa'l. It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a rare elite in Antoran Wastes.",displayID=76829,modelScale=1.1,type="s",g={
-q(50098,{description="1. Summon Uuna and wait for her to say one of the following lines:\n'|cffffffffMama? Mama! Why is it so dark? It's scary here...|r'\n'|cffffffffCan anybody hear me?|r'\n'|cffffffffC-c-cold...|r'\n",icon=134506,g={
-q(50099,{description="2. |cffffffff/whistle|r at Uuna.\n",sourceQuests={50098}}),
-q(50100,{description="3. When she asks you questions, |cffffffff/roar|r at her.\n",sourceQuests={50098}}),
-q(50101,{description="4. Resummon Uuna and |cffffffff/cry|r at her. She will tell you that she wishes she could see you better, but it's too dark where she is.",sourceQuests={50098}})}}),
-q(50102,{coords={
-[111]={{54,44.7}}},description="Take Uuna to A'dal in Shattrath City. The light of the Naaru is too bright, and she will run away.",icon=134506,sourceQuests={50098}}),
-q(50103,{coords={
-[63]={{18.9,41.6}}},description="Take Uuna to the moonlight by Ashenvale's Lake Falathim.",icon=134506,sourceQuests={50102}}),
-q(50104,{coords={
-[882]={{25.1,59.8},{32.6,74.9}}},description="Most classes will need 2 |cffffffffGoblin Glider Kits|r to reach Nuu, who is in a house on a floating island in southwest Eredath.\n\nStart near the entrance to Seat of the Triumvirate and glide to the small rock, and then use your second glider to coast to the island further to the south.",icon=133632,sourceQuests={50103}}),
-q(50105,{coords={
-[106]={{56.4,56.6}}},description="Take Uuna to Blood Watch on Bloodmyst Isle.",icon=134506,sourceQuests={50104}}),
-q(50106,{coords={
-[539]={{55.9,41.1}}},description="Take Uuna to the small campsite northwest of Path of the Light in Draenor's Shadowmoon Valley. She will pick up the flower crown that is resting on one of the chairs around the campfire.",icon=134506,sourceQuests={50105}}),
-q(50107,{description="Wait for a little while after Uuna picks up the flower crown. Void tendrils will eventually erupt from the ground and take her captive.",icon=134506,sourceQuests={50106}}),
-q(50108,{description="Die and ask a Spirit Healer if they have seen Uuna. The Spirit Healer will give you permission to enter the spirit realm to try to find her. Resurrect (no need to do it through the Spirit Healer, just return to your corpse) and continue to the next step.",icon=134506,sourceQuests={50107}}),
-q(50109,{coords={
-[115]={{66.1,74.5}}},description="Click on the Shadow Tear in Dragonblight's Emerald Dragonshrine to look for Uuna in the spirit realm. Once inside, do the following:\n\n1. |cffffffff/cheer|r at Uuna.\n2. Place a |cffffffffCooking Fire|r next to her.\n3. Survive the gauntlet for 3 minutes, running into the |cff883325Soul-Eaters|r to scare them away.\n4. When Uuna wraps her arms around herself and cries, |cffffffff/hug|r her.",icon=134506,providers={{"o",280747}},sourceQuests={50108}}),
-h(-508,{
-q(50140,{coords={
-[390]={{8,59}}},icon=134506,sourceQuests={50109}}),
-q(50141,{coords={
-[680]={{62.3,83.7}}},icon=134506,sourceQuests={50140}}),
-q(50142,{coords={
-[627]={{72.4,45.9}}},icon=134506,sourceQuests={50141}}),
-q(50143,{coords={
-[115]={{57.8,54.6}}},icon=134506,sourceQuests={50142}}),
-q(50144,{coords={
-[198]={{59,24.1}}},icon=134506,sourceQuests={50143}}),
-q(50145,{coords={
-[379]={{44.8,52.3}}},icon=134506,sourceQuests={50144}}),
-q(50146,{coords={
-[33]={{37.5,67.4}},
-[36]={{21.1,38.4}}},icon=134506,sourceQuests={50145}}),
-q(50147,{coords={
-[539]={{70.7,46.7}}},icon=134506,sourceQuests={50146}})})}}),
 ah(162690,{awp=80001,description="***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",type="i",g={
 o(9999946,{description="Souls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!",displayID=80456,questID=52829,sourceQuests={52828}}),
 o(294096,{coords={

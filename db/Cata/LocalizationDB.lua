@@ -5,7 +5,6 @@
 local localize = function(t, data) for k,v in pairs(data) do t[k] = v; end end
 local appName, _, a = ...;
 local L = _.L;
-
 -- Localization Strings
 L._BETA_LABEL = "|cff4AA7FF [Beta]|r";
 L.ABOUT_BOTTOM = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
@@ -431,6 +430,8 @@ L.KNOWN_BY = "Known by %s";
 L.KNOWN_BY_CHECKBOX = "Known By";
 L.KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
 L.LAYER = "Layer";
+L.LEAVE_DELVE = "Leave Delve";
+L.LEAVE_DELVE_DESC = "Click here to leave the delve.";
 L.LEAVE_GROUP = "Leave Group";
 L.LEAVE_GROUP_DESC = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.";
 L.LEGACY_RAID_DIFF = "Legacy Raid Difficulty";
@@ -920,7 +921,6 @@ L.WRONG_FACTION = "You might need to be on the other faction to view this.";
 L.YOU_DID_IT = "YOU DID IT!";
 L.ZONE = ZONE;
 L.ZONE_DESC = "Click this button to select a random zone based on what you're missing.";
-
 -- Category Database Module
 _.CategoryNames = {
 	[3] = "Tarot Decks",
@@ -1054,7 +1054,6 @@ _.CategoryIcons = {
 	[933] = 132607,
 	[935] = 132513,
 }
-
 -- Custom Header Database Module
 _.HeaderConstants = {
 	ACHIEVEMENTS = -12,
@@ -1619,7 +1618,6 @@ localize(L.EVENT_REMAPPING, {
 	[423] = 9,
 	[479] = 1,
 });
-
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025}),
@@ -1639,7 +1637,6 @@ _.Modules.Events.SetEventInformation(133889, {
 _.Modules.Events.SetEventInformation(444, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})
 });
-
 -- Filter Database Module
 _.FilterConstants = {
 	ACHIEVEMENTS = 105,
@@ -1791,7 +1788,6 @@ L.FILTER_ID_ICONS = {
 	[114] = 132261,
 	[200] = 134941,
 }
-
 -- Flight Path Database Module
 _.FlightPathNames = {
 	[1] = "Northshire Abbey",
@@ -2324,7 +2320,6 @@ _.FlightPathNames = {
 	[906] = "Dragon Soul Raid - Wyrmrest Temple Base",
 	[907] = "Dragon Soul Raid - East Sarlac",
 }
-
 -- Glyphs Database Module
 _.GlyphDB = {
 	[161] = 54810,
@@ -2675,7 +2670,6 @@ _.GlyphDB = {
 	[950] = 101052,
 	[961] = 107906,
 }
-
 -- Object Database Module
 local ObjectNames = {
 	[31] = "Old Lion Statue",
@@ -3383,6 +3377,8 @@ local ObjectNames = {
 	[178087] = "Thazz'ril's Pick",
 	[178090] = "Marla's Grave",
 	[178104] = "Resonite Crystal",
+	[178105] = "Resonite Crystal",
+	[178106] = "Resonite Crystal",
 	[178144] = "Troll Chest",
 	[178145] = "Resonite Cask",
 	[178184] = "Sapphire of Aku'Mai",
@@ -4148,6 +4144,7 @@ local ObjectNames = {
 	[194787] = "Charred Book",
 	[194908] = "Lance Rack",
 	[194909] = "Lance Rack",
+	[194997] = "Thorned Bloodcup",
 	[195001] = "Wolf Chains",
 	[195002] = "Lava Fissure",
 	[195003] = "Wolf Chains",
@@ -6165,6 +6162,8 @@ local ObjectModels = {
 	[178087] = 189834,
 	[178090] = 189528,
 	[178104] = 202123,
+	[178105] = 202125,
+	[178106] = 202126,
 	[178144] = 197063,
 	[178145] = 201125,
 	[178184] = 190804,
@@ -6912,6 +6911,7 @@ local ObjectModels = {
 	[194787] = 200910,
 	[194908] = 198636,
 	[194909] = 200609,
+	[194997] = 196278,
 	[195001] = 199210,
 	[195002] = 191550,
 	[195003] = 199210,
@@ -7601,7 +7601,6 @@ local ObjectModels = {
 	[375544] = 201094,
 	[100000001] = 201129,
 }; _.ObjectModels = ObjectModels;
-
 -- Consolidated Object Data
 local ALLIANCE_BONFIRES = { 187564,187914,187916,187917,187919,187920,187921,187922,187923,187924,187925,187926,187927,187928,187929,187930,187931,187932,187933,187934,187935,187936,187937,187938,187939,187940,187941,187942,187943,187944,187945,187946,194032,194035,194036,194038,194040,194044,194045,194049,207982,207984,207985,207987,207988,207993,208089,208093 };
 local CANDY_BUCKETS = { 189303,190034,190035,190036,190037,190038,190039,190040,190041,190042,190043,190044,190045,190046,190047,190048,190049,190050,190051,190052,190053,190054,190055,190056,190057,190058,190059,190060,190061,190062,190063,190064,190065,190066,190067,190068,190069,190070,190071,190072,190073,190074,190075,190076,190077,190078,190079,190080,190081,190082,190083,190084,190085,190086,190087,190088,190089,190090,190091,190096,190097,190098,190099,190100,190101,190102,190103,190104,190105,190106,190107,190108,190109,190110,190111,190112,190113,190114,190115,190116,191878,191879,191880,191881,191882,191883,192018,194056,194057,194058,194059,194060,194061,194062,194063,194064,194065,194066,194067,194068,194069,194070,194071,194072,194073,194074,194075,194076,194077,194078,194079,194080,194081,194084,194119,208115,208116,208117,208118,208119,208120,208121,208122,208123,208124,208125,208126,208127,208128,208129,208130,208131,208132,208133,208134,208135,208136,208137,208138,208139,208140,208141,208142,208143,208144,208145,208146,208147,208148,208149,208150,208151,208152,208153,208154,208155,208156,208157,208158,208159,208160,208161,208162,208163,208164,208165,208166,208167,208168,208169,208170,208171,208172,208173,208174,208175,208176,208177,208178,208179,208180,208181,208183 };
@@ -7620,7 +7619,6 @@ for i,objectID in ipairs(HORDE_BONFIRES) do
 	ObjectIcons[objectID] = 135805;
 	ObjectModels[objectID] = 200079;
 end
-
 -- Phase Database Module
 _.PhaseConstants = {
 	ELITE_PVP_REQUIREMENT = 4,
@@ -7975,7 +7973,6 @@ local phases = {
 	},
 };
 L.PHASES = phases;
-
 -- Automatic Types
 L.ITEM_NAMES = {
 	[20946] = "Tactical Task Briefing III",
@@ -8484,7 +8481,6 @@ L.QUEST_NAMES = {
 	[25484] = "LFGDungeons - Holiday Dungeon - Ahune - 1st",
 	[25485] = "LFGDungeons - Holiday Dungeon - Crown Chemical - 1st",
 }
-
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2);
 if simplifiedLocale == "de" then
@@ -9603,6 +9599,8 @@ localize(ObjectNames, {
 	[178087] = "Thazz'rils Hacke",
 	[178090] = "Marlas Grab",
 	[178104] = "Resonitkristall",
+	[178105] = "Resonitkristall",
+	[178106] = "Resonitkristall",
 	[178144] = "Trolltruhe",
 	[178145] = "Resonitbehälter",
 	[178184] = "Saphir von Aku'mai",
@@ -10313,6 +10311,7 @@ localize(ObjectNames, {
 	[194787] = "Versengtes Buch",
 	[194908] = "Lanzenständer",
 	[194909] = "Lanzenständer",
+	[194997] = "Dorniger Blutkelch",
 	[195002] = "Lavafelsspalt",
 	[195006] = "Köderbotsteuerkonsole",
 	[195007] = "Feder eines getöteten Wildekin",
@@ -12119,6 +12118,8 @@ localize(ObjectNames, {
 	[178087] = "Pioche de Thazz'ril",
 	[178090] = "Tombe de Marla",
 	[178104] = "Cristal de résonite",
+	[178105] = "Cristal de résonite",
+	[178106] = "Cristal de résonite",
 	[178144] = "Coffre de Troll",
 	[178145] = "Gangue de résonite",
 	[178184] = "Saphir d’Aku’Mai",
@@ -12835,6 +12836,7 @@ localize(ObjectNames, {
 	[194787] = "Livre calciné",
 	[194908] = "Râtelier de lances",
 	[194909] = "Râtelier de lances",
+	[194997] = "Sanguinette épineuse",
 	[195002] = "Crevasse de lave",
 	[195006] = "Console de contrôle du robot-leurre",
 	[195007] = "Plume d'indomptable tué",
@@ -13942,6 +13944,8 @@ localize(ObjectNames, {
 	[178087] = "Piccone di Thazz'ril",
 	[178090] = "Tomba di Marla",
 	[178104] = "Cristallo di Resonite",
+	[178105] = "Cristallo di Resonite",
+	[178106] = "Cristallo di Resonite",
 	[178144] = "Cassa dei Troll",
 	[178184] = "Zaffiro di Aku'mai",
 	[178185] = "Zaffiro di Aku'mai",
@@ -14606,6 +14610,7 @@ localize(ObjectNames, {
 	[194787] = "Libro Carbonizzato",
 	[194908] = "Rastrelliera delle Lance",
 	[194909] = "Rastrelliera delle Lance",
+	[194997] = "Sanguigna Spinosa",
 	[195002] = "Fenditura Lavica",
 	[195006] = "Console di Controllo del Robot Esca",
 	[195007] = "Penna di Silvagufo Ucciso",
@@ -16076,6 +16081,8 @@ localize(ObjectNames, {
 	[178087] = "Picareta de Thazz'ril",
 	[178090] = "Túmulo de Marla",
 	[178104] = "Cristal de Ressonita",
+	[178105] = "Cristal de Ressonita",
+	[178106] = "Cristal de Ressonita",
 	[178144] = "Baú dos Trolls",
 	[178184] = "Safira de Aku'Mai",
 	[178185] = "Safira de Aku'Mai",
@@ -16760,6 +16767,7 @@ localize(ObjectNames, {
 	[194787] = "Livro Queimado",
 	[194908] = "Cavalete de Lanças",
 	[194909] = "Cavalete de Lanças",
+	[194997] = "Copo-de-sangue Espinhoso",
 	[195002] = "Fissura de Lava",
 	[195006] = "Painel de Controle do Robô Chamariz",
 	[195007] = "Pena de Coruscante Massacrado",
@@ -18936,6 +18944,8 @@ localize(ObjectNames, {
 	[178087] = "Кирка Тазз'рила",
 	[178090] = "Могила Марлы",
 	[178104] = "Кристалл резонита",
+	[178105] = "Кристалл резонита",
+	[178106] = "Кристалл резонита",
 	[178144] = "Тролльский сундук",
 	[178145] = "Резонитовый ящик",
 	[178184] = "Сапфир Аку'мая",
@@ -19656,6 +19666,7 @@ localize(ObjectNames, {
 	[194787] = "Обожженная книга",
 	[194908] = "Подставка для копий",
 	[194909] = "Подставка для копий",
+	[194997] = "Колючковая кровавая чашечка",
 	[195002] = "Лавовый разлом",
 	[195006] = "Панель управления ловушкой",
 	[195007] = "Перо убитого дикого совуха",
@@ -21133,6 +21144,8 @@ localize(ObjectNames, {
 	[178087] = "타즈릴의 곡괭이",
 	[178090] = "말라의 무덤",
 	[178104] = "리조나이트 수정",
+	[178105] = "리조나이트 수정",
+	[178106] = "리조나이트 수정",
 	[178144] = "트롤 궤짝",
 	[178145] = "리조나이트 광석",
 	[178184] = "아쿠마이의 사파이어",
@@ -21805,6 +21818,7 @@ localize(ObjectNames, {
 	[194787] = "까맣게 탄 책",
 	[194908] = "창 선반",
 	[194909] = "창 선반",
+	[194997] = "가시 핏빛주발꽃",
 	[195002] = "용암 균열",
 	[195006] = "유인 로봇 제어장치",
 	[195007] = "죽은 올빼미야수 깃털",
@@ -22938,7 +22952,7 @@ L.NOT_TRADEABLE = "No comerciable";
 L.NOTHING_TO_SELECT_FROM = "No se encontró nada para seleccionar aleatoriamente.";
 L.NPC = "PNJ";
 L.NPC_ID = "Pnj ID";
-L.OBJECT_ID = "Objeto ID";
+L.OBJECT_ID = "Objeto de entorno ID";
 L.OBJECT_TYPE = "Tipo de objeto";
 L.OBJECTIVES = "Objetivos";
 L.ONLY_NOT_TRASH = "Filtrar objetos basura";
@@ -24157,6 +24171,8 @@ localize(ObjectNames, {
 	[178087] = "Pico de Thazz'ril",
 	[178090] = "Tumba de Marla",
 	[178104] = "Cristal de resonita",
+	[178105] = "Cristal de resonita",
+	[178106] = "Cristal de resonita",
 	[178144] = "Cofre trol",
 	[178145] = "Barril de resonita",
 	[178184] = "Zafiro de Aku'Mai",
@@ -24864,6 +24880,7 @@ localize(ObjectNames, {
 	[194787] = "Libro carbonizado",
 	[194908] = "Expositor de lanzas",
 	[194909] = "Expositor de lanzas",
+	[194997] = "Peziza escarlata espinada",
 	[195002] = "Fisura de lava",
 	[195006] = "Consola de control de Bot señuelo",
 	[195007] = "Pluma de lechúcico salvaje muerto",
@@ -25827,7 +25844,7 @@ L.MUSIC_ROLLS_DESC_2 = "\n\nPrimero debes desbloquear los Rollos musicales compl
 L.NO_ENTRIES_DESC = "Si cree que se trata de un error, intente activar el modo de debug. Es posible que alguno de sus filtros esté restringiendo la visibilidad del grupo.";
 L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333No coleccionado|r";
 L.NPC_ID = "ID de Pnj";
-L.OBJECT_ID = "ID de objeto";
+L.OBJECT_ID = "ID de objeto de entorno";
 L.ONLY_RWP = "Sólo Removido con el parche";
 L.ONLY_RWP_TOOLTIP = "Activa esta opción para rastrear solamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Removido en el Parche' cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.";
 L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser buena idea que desactives esto. Esto se hizo para forzar a Blizzard a arreglar y/o conocer algunos bug.";
@@ -27613,6 +27630,8 @@ localize(ObjectNames, {
 	[177964] = "深渊之石",
 	[178087] = "塔兹利尔的镐",
 	[178104] = "共鸣水晶",
+	[178105] = "共鸣水晶",
+	[178106] = "共鸣水晶",
 	[178144] = "巨魔的箱子",
 	[178195] = "战歌之油",
 	[178204] = "一箱战歌之斧",
@@ -28208,6 +28227,7 @@ localize(ObjectNames, {
 	[194714] = "恶心的工作台",
 	[194908] = "长枪架",
 	[194909] = "长枪架",
+	[194997] = "带刺的血盅花",
 	[195002] = "熔岩裂缝",
 	[195006] = "诱饵机器人控制台",
 	[195007] = "死去野枭兽的羽毛",
@@ -29814,8 +29834,6 @@ for key,value in pairs({
 do phases[key].lore = value; end
 end
 end
-
-
 -- Add a Header & Filter debugger
 setmetatable(_.FilterConstants, {
 	__index = function(t, key)

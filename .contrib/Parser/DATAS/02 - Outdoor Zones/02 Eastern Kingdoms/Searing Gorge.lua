@@ -2005,7 +2005,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 19.4, 36.6, SEARING_GORGE },
 						{ 25.4, 25.4, SEARING_GORGE },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_8_2_0 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_8_2_0 },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					-- Started dropping again in 8.2. The new version (167887) is also available from Time-Lost Trader
 				}),
@@ -2014,7 +2014,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 19.4, 36.6, SEARING_GORGE },
 						{ 25.4, 25.4, SEARING_GORGE },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_8_2_0 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_8_2_0 },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					-- Started dropping again in 8.2. The new version (167886) is also available from Time-Lost Trader
 				}),
@@ -2032,7 +2032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 63.6, 59.0, SEARING_GORGE },
 						{ 65.4, 65.6, SEARING_GORGE },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						5844,	-- Dark Iron Slaver
 						5846,	-- Dark Iron Taskmaster

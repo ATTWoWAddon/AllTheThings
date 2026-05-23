@@ -129,19 +129,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(253245),	-- Cracked Keystone (QI!/QS!)
 				i(268297),	-- Rattling Bag o' Gold
 				i(252415),	-- Trovehunter's Bounty
-				--Blessings
+				-- Blessings
 				i(264669),	-- Blessing of Potency
 				i(264670),	-- Blessing of Zeal
 				i(260913),	-- Crimson Blessing
 				i(260924),	-- Sentinel's Blessing
-				i(262389),	-- Veiled Blessing // alpha
+				i(262389),	-- Veiled Blessing
+				-- Bonus roll
+				i(268969, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Delver's Trove
 			})),
+			n(FACTIONS, {
+				faction(2742),	-- Delves: Season 1
+			}),
 			n(QUESTS, {
 				q(93519, {	-- Midnight Delves! (it pop on login but after cancel it	-- didn't re-pop)
-					["description"] = "Pops on login",
+					["description"] = "Pops on login. Do not abandon!",
+					["isBreadcrumb"] = true,
 				}),
 				q(93501, {	-- The Season Starts: Midnight
-					--TODO: could be account wide one time quest per season, breadcrumb?
 					["sourceQuests"] = { 93519 },	-- Midnight Delves!
 					["provider"] = { "n", 242381 },	-- Valeera Sanguinar
 					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -173,6 +178,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["maps"] = ALL_REGULAR_DELVES_MID,
 				}),
 			}),
+			n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
+				i(268650, {	-- Ascendant Voidshard
+					i(268552),	-- Ascendant Voidcore
+				}),
+			})),
 			mapped(n(TREASURES, {
 				o(584752, {	-- Mislaid Curiosity
 					["groups"] = {
@@ -202,6 +212,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["isWeekly"] = true,
 					["cost"] = {{"i",253342,1}},	-- Beacon of Hope
 					["groups"] = {
+						i(264971),	-- Annihilation Rod (COSMETIC!)
+						i(264970),	-- Oblivion's Edge (COSMETIC!)
 						i(262391),	-- Ominous Domanus (PET!)
 						i(265368),	-- Twilight Destroyer (COSMETIC!)
 						i(265366),	-- Twilight Executioner (COSMETIC!)
@@ -353,6 +365,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				--q(93882),	-- Restored Coffer Key (itemID 263188)
 				--q(93883),	-- Restored Coffer Key (itemID 263191)
 				--q(93859),	-- Sin'dorei Gravestone (itemID 262951)
+
+
+				--q(93686),	-- tiggered after a delve
 			}),
 		},
 	}),

@@ -990,7 +990,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 				i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
 			})),
 		}),
-		header(HEADERS.Spell, 382973, {	-- Kul Tiras and Zandalar Prospecting
+		header(HEADERS.Spell, 31252, {	-- Prospecting
 			i(154123),	-- Amberblaze
 			i(168193, { ["timeline"] = { ADDED_8_2_0 } }),	-- Azsharine
 			i(168189, { ["timeline"] = { ADDED_8_2_0 } }),	-- Dark Opal

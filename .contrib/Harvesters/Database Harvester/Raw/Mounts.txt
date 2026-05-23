@@ -368,6 +368,12 @@
 110051@@@Heart of the Aspects
 1266345@@@Cerulean Phase-Hunter
 1266866@@@Reins of the Starshard Netherdrake
+3.80.1.67155
+457485@@@Grizzly Hills Packmaster
+1266982@@@The Sire's Palanquin
+1267077@@@Scarlet Lady
+1284679@@@Sha-Warped Riding Wolf
+1285897@@@Sha-Warped Owl
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -552,6 +558,11 @@
 1257516@@@Lana'thel's Sanguine Cascade
 1285724@@@Stormgilded Celestial
 1285725@@@Thunderhoof Celestial
+5.5.3.66509
+1257673@@@Snowfall Groveglider
+1257674@@@Embertuft Groveglider
+1257676@@@Petalbranch Groveglider
+1257677@@@Shadowbough Groveglider
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -2042,7 +2053,6 @@
 453785@@@Earthen Ordinant's Ramolith
 11.0.0.55939
 454682@@@Startouched Furline
-457485@@@Grizzly Hills Packmaster
 459784@@@Golden Ashes of Al'ar
 11.0.0.55960
 464443@@@Harmonious Salutations Bear
@@ -2498,6 +2508,8 @@
 1251762@@@Cindertuft Groveglider
 1251764@@@Gloombough Groveglider
 1251765@@@Blossombranch Groveglider
+12.0.1.66838
+1265785@@@Emerald Hawkstrider
 12.0.5.66330
 3363@@@Nether-Swept Drake
 1261362@@@Witherbark Warbear Mother
@@ -2517,3 +2529,27 @@
 1286606@@@Void-Corrupted Hex Eagle
 1287357@@@Void-Touched Snapdragon
 1287359@@@Void-Corruped Lynx
+12.0.5.66529
+1287359@@@Void-Corrupted Lynx
+12.0.5.67165
+1296731@@@Cerulean Deathwalker
+1296734@@@Amethyst Mechsuit
+1296756@@@Blue-Chip Shreddertank
+1296758@@@Profit-Green Shreddertank
+1296759@@@High-Yield Shreddertank
+1296760@@@Speculative Shreddertank
+12.0.7.67227
+404018@@@Black-Furred Bakar
+1261369@@@Amani Hex Bear
+1264184@@@Spawn of Vyranoth
+1284973@@@Luminous Sporeglider
+1292102@@@Blackwater X-TREME Firework Rocket
+1292342@@@Green Rocket Mount [PH]
+1292344@@@Bligewater X-TREME Firework Rocket
+1292345@@@Pink Rocket Mount [PH]
+1294648@@@Voidmancer's Starcarver
+1294663@@@Arcforged Nullframe
+1294677@@@[PH] Horse with Hat
+1294767@@@Badlands Buzzard
+1297427@@@Tortured Gorger
+1298439@@@Sun Festival's Painted Roc

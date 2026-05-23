@@ -183,7 +183,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			pvp(ach(40086)),	-- Tour of Duty: Azj-Kahet
 			ach(40828),		-- Treasures of Azj-Kahet (automated)
-			-- TODO: Worm Theory looks like it should have criteria but Blizzard didn't add them yet (Wagotools has them though?). Check this later.
 			ach(40869, {	-- Worm Theory (automated)
 				i(225934),	-- Lil' Bonechewer (PET!)
 			}),

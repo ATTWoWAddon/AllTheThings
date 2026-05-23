@@ -98,18 +98,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(QUESTS, {
 					q(93924, {	-- An Unrelenting March
-						["qg"] = 90092,	-- Hurried Courier
+						["qg"] = 260421,	-- Hurried Courier
 					}),
 				}),
+				n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
+					i(268650, {	-- Ascendant Voidshard
+						i(268552),	-- Ascendant Voidcore
+					}),
+				})),
 				BossOnly(BELOREN, {
 					i(256715),	-- Design: Thalassian Phoenix Torque (RECIPE!)
 					i(264187),	-- Blessed Phoenix Egg (DECOR!)
+					i(268458, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Belo'ren, Child of Al'ar
 				}),
 				BossOnly(LURA, {
-					--i(258519),	-- Plans: Magister's Valediction (RECIPE!)
 					i(264492),	-- Chaotic Void Maw (DECOR!)
 					i(260408),	-- Lightless Lament
 					i(267646, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- March on Quel'Danas Vanquisher's Argent Trophy (DECOR!)
+					i(262658, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Midnight Falls
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
@@ -225,6 +231,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["isWeekly"] = true,
 	},{	--TODO Uncomment when source and npcids are confirmed and added
 		-- LFR
+		q(94564, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 		-- Normal
 		q(94561, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
 		q(94565, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
@@ -232,5 +239,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(94563, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
 		q(94567, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 		-- Mythic
+		q(94562, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
+		-- q(94566, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 	})),
 }));

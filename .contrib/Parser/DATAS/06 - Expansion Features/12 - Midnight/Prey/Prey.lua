@@ -4,7 +4,7 @@
 
 PREY = createHeader({
 	readable = "Prey",
-	icon = 237274,
+	icon = [[~_.asset("Category_Prey")]],
 	text = {
 		en = "Prey",
 		de = "Beutejagd",
@@ -57,6 +57,7 @@ local TrapNPCs = {	-- probably a ton of these, it seems unique per target & diff
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(PREY, {
 		n(ACHIEVEMENTS, {
+			ach(63164, { ["timeline"] = { ADDED_12_0_7 } }),	-- Big Prey Hunter (Season 1)
 			ach(62403),	-- 'Tis But A Scratch
 			ach(62383),	-- Gotta Hunt Them All
 			ach(62142),	-- I Didn't Hear No Bell
@@ -257,10 +258,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					i(253342),	-- Beacon of Hope
 				},
 			}),
+			q(91277, {	-- Preferential Killing
+				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["minReputation"] = { 2764, 10 },	-- Prey Season 1, 10
+				["isWeekly"] = true,
+			}),
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 245824 },	-- Hunt Table
 			["coord"] = { 56.8, 65.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["maxReputation"] = { 2764, 10 },	-- Prey Season 1, 10
 			["isWeekly"] = true,
 		}, {
 			q(91114),	-- Prey: Consul Nebulor (Normal)
@@ -357,6 +365,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		n(REWARDS, {
 			-- Currency
 			currency(3392),	-- Remnant of Anguish
+			-- Bonus roll
+			i(269768, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Prey
 			-- Gear
 			n(ARMOR, {
 				filter(BACK_F, {
@@ -632,6 +642,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(95537),	-- same as above, but after Banuran was kiiled during Prey in zone (hard mode)
 			--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
 			--q(95539),	-- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
+			q(91414),	-- Flags and unflags after accepting and completing Random Prey contracts
+			q(91415),	-- After choosing a Preference Killing
+			q(97115),	-- First Preference Killing of the week
 		}),
 	}),
 }));

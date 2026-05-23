@@ -167,6 +167,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				-- ["lockCriteria"] = { 1, "questID", 86485 },	-- TODO: probably a spellID will be better?
 				["coord"] = { 69.2, 45.8, SIREN_ISLE },
 				["groups"] = {
+					i(163110),	-- Fried Boar Sausage
 					i(233497),	-- Kaja'Cola-Braised Snapdragon Treat (CI!)
 				},
 			}),

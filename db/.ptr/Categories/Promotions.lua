@@ -55,7 +55,7 @@ mnt(153489,{b=1,description="Acquired alongside the purchase of a 150$ Razer Nag
 p(4690,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=232519,npcID=233481,spellID=470914,u=2})}}),
 h(-517,{awp=110002,u=3,g={
 mnt(163025,{b=1,description="Acquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=112327,lvl=10,u=3}),
-p(4595,{b=1,description="Acquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224576,npcID=225354,spellID=453266,u=3}),
+p(4595,{b=1,itemID=224576,npcID=225354,spellID=453266,u=3}),
 mnt(453255,{description="Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224574,lvl=10,u=3})}}),
 h(-691,{awp=110205,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255159,{itemID=252679,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -183,14 +183,15 @@ de(15555,{awp=120001,description="Available from the Pinterest Craft Your World 
 de(15554,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Azeroth Inspiration' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264282,rwp=120001,spellID=1271563,u=2}),
 de(15553,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Kalimdor Collage' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264281,rwp=120001,spellID=1271562,u=2}),
 s(302459,262660,{awp=120001,description="Available in a limited quantity from ign.com/rewards/claim-a-code-to-get-world-of-warcraft-in-game-content, you'll receive a code to redeem on Battle.net.",f=3,rwp=120001,u=2}),
-h(-748,{awp=120001,rwp=120007,g={
-mnt(1268809,{itemID=262438,lvl=10}),
-de(15550,{itemID=264278,spellID=1271559}),
-de(15229,{itemID=263383,spellID=1270445}),
-de(15551,{itemID=264279,spellID=1271560}),
-de(15552,{itemID=264280,spellID=1271561})}}),
+h(-748,{awp=120001,rwp=120007,u=2,g={
+mnt(1268809,{itemID=262438,lvl=10,u=2}),
+de(15550,{itemID=264278,spellID=1271559,u=2}),
+de(15229,{itemID=263383,spellID=1270445,u=2}),
+de(15551,{itemID=264279,spellID=1271560,u=2}),
+de(15552,{itemID=264280,spellID=1271561,u=2})}}),
 p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to May 15, 2026 (12pm ET). During the offer period, complete a purchase of eligible World of Warcraft items through the Blizzard Gear Store and receive a digital code.",itemID=262881,npcID=256663,rwp=120005,spellID=1269535,u=2}),
-de(16818,{awp=120005,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265394,rwp=120005,spellID=1275771,u=2})}}),
+de(16818,{awp=120005,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265394,rwp=120005,spellID=1275771,u=2}),
+toy(272339,{awp=120005,rwp=120005,u=2})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
@@ -879,7 +880,7 @@ s(187933,206276,{f=24,u=2}),
 s(187750,206005,{f=23,u=2})}})}),
 h(-541,{awp=110002,g={
 s(230544,233053,{awp=110005,description="Quest is only available with an US IP. Codes are useable worldwide.\n\nIn the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your transmog.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until the Crown of the Violet Rose is yours!\n\nPromotion is available from December 2nd, 2024 until December 9th, 2024 (11:59PM UTC).",f=2,rwp=110005,u=2}),
-p(4615,{description="In the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your pet.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until Parrlok Parrlok is yours!\n\nPromotion is available from August 23rd, 2024 until September 8th, 2024 (11:59PM UTC).",itemID=228758,npcID=229846,spellID=463079,u=2}),
+p(4615,{itemID=228758,npcID=229846,rwp=110002,spellID=463079,u=2}),
 s(297814,250292,{awp=120000,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from January 27th, 2026 until February 2nd, 2026 (11:59PM UTC).",f=3,rwp=120000,u=2}),
 p(4975,{awp=120001,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from March 2nd, 2026 until March 16th, 2026.",itemID=264366,npcID=257493,rwp=120001,spellID=1271843,u=2})}}),
 h(-542,{awp=50300,u=3,g={

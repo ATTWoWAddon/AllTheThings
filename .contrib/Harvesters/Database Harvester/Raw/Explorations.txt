@@ -10735,6 +10735,29 @@
 16874@@@Founders Point Camp
 12.0.1.64914
 16875@@@Den of the Undreamt
+12.0.1.66838
+16310@@@Isle of Quel'Danas
+16311@@@Silvermoon City
+16312@@@Eversong Woods
+16313@@@Court of Blood
+16314@@@Court of the Sun
+16315@@@Falconwing Square
+16316@@@Dawning Lane
+16317@@@The Royal Exchange
+16318@@@The Shining Span
+16319@@@Murder Row
+16320@@@Walk of Elders
+16321@@@Silvermoon Harbor
+16322@@@Sunwing Rookery
+16323@@@Gardens of Remembrance
+16324@@@The Bazaar
+16325@@@Duskglow Gloriette
+16326@@@Augurs' Terrace
+16327@@@Lithiel's Landing
+16329@@@North Sanctum
+16330@@@Path of Dawn
+16331@@@Sunstrider Isle
+16332@@@The Great Sea
 12.0.5.66330
 16686@@@Silvermoon City
 16747@@@Speaker's Rest
@@ -10746,3 +10769,61 @@
 16823@@@Daggerspine Point
 16939@@@Ritual Site
 16940@@@Daggerspine Point
+12.0.7.67227
+16279@@@Sporefall
+16297@@@Sporefall
+16298@@@Funggor Hollow
+16309@@@[DO NOT DISTURB]
+16381@@@[DO NOT DISTURB]
+16387@@@[DO NOT DISTURB]
+16391@@@[DO NOT DISTURB]
+16392@@@[DO NOT DISTURB]
+16402@@@[DO NOT DISTURB]
+16403@@@[DO NOT DISTURB]
+16404@@@[DO NOT DISTURB]
+16405@@@[DO NOT DISTURB]
+16406@@@[DO NOT DISTURB]
+16407@@@[DO NOT DISTURB]
+16408@@@[DO NOT DISTURB]
+16409@@@[DO NOT DISTURB]
+16410@@@[DO NOT DISTURB]
+16411@@@[DO NOT DISTURB]
+16412@@@[DO NOT DISTURB]
+16413@@@[DO NOT DISTURB]
+16414@@@[DO NOT DISTURB]
+16533@@@[DO NOT DISTURB]
+16540@@@[DO NOT DISTURB]
+16621@@@[DO NOT DISTURB]
+16668@@@The Hinterlands
+16669@@@Durnholde Keep
+16686@@@Silvermoon City, Prop Hunt
+16900@@@Val
+16920@@@Void Acropolis
+16921@@@Umbral Base Camp
+16922@@@The Lost Holdout
+16923@@@Frost Chitter Grotto
+16924@@@Sleet-Rune Hollow
+16925@@@Glacial Reservoir
+16926@@@Steam Ravine
+16943@@@Naigtal
+16945@@@Ritual Site
+16946@@@Lightbloom
+17047@@@The Collapsed Passage
+17060@@@Void Acropolis
+17062@@@The Forgotten Depths
+17067@@@The Lycaneum
+17068@@@The Hushed Foyer
+17072@@@The South Atrium
+17095@@@Nexus Port
+17096@@@Sporeforge
+17097@@@Vennorax Wreckage
+17098@@@Extraction Coast
+17099@@@The Holding Pens
+17100@@@Soltian Marsh
+17101@@@Staging Grounds
+17102@@@Command Point: Primos
+17103@@@Vilaldoun
+17104@@@Naigtal Outpost
+17195@@@Sleeper's Grotto
+17198@@@Manaforge: Arcvein
+17199@@@Shoals of Rememberance

@@ -82,7 +82,7 @@ root(ROOTS.Housing, {
 			i(254560),	-- Small Razorwind Square Table (DECOR!)
 			i(246038),	-- Stitched Leather Rug (DECOR!)
 			i(245265),	-- Stitched Pillow Roll (DECOR!)
-			i(244661),	-- Tied-Open Leather Curtains (DECOR!)
+			i(244661),	-- Tied-Left Leather Curtains (DECOR!)
 			i(252657),	-- Tied-Right Leather Curtains (DECOR!)
 			i(246687),	-- Tusked Candleholder (DECOR!)
 			i(251974),	-- Tusked Chandelier (DECOR!)

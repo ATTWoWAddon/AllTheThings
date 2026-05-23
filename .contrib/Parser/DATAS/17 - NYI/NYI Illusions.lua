@@ -20,5 +20,11 @@ root(ROOTS.NeverImplemented, filter(ILLUSIONS, {
 			i(250776),	-- Illusion: Sha Corruption (ILLUSION!)
 		})),
 	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.5
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+			ill(8674),	-- Internal Testing Visual Enchant (ILLUSION!)
+		})),
+	}),
 }));
 -- #endif

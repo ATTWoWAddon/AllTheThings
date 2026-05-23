@@ -2583,7 +2583,7 @@ i(238221, 1229641);	-- Thalassian Competitor's Plate Helm
 i(238223, 1229640);	-- Thalassian Competitor's Plate Pauldrons
 i(238219, 1229643);	-- Thalassian Competitor's Plate Sabatons
 i(238224, 1229639);	-- Thalassian Competitor's Plate Waistguard
-i(238231, 1229632);	-- Thalassian Competitor's Spelldagger [SKEWER NAME DOES NOT MATCH]
+i(238231, 1229632);	-- Thalassian Competitor's Skewer
 i(238230, 1229633);	-- Thalassian Competitor's Splitter
 i(238233, 1229630);	-- Thalassian Competitor's Sword
 i(260246, 1265906);	-- Thalassian Skeleton Key

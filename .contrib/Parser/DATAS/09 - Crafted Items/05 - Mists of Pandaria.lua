@@ -978,6 +978,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		}),
 	}),
 	prof(JEWELCRAFTING, {
+		header(HEADERS.Spell, 31252, {	-- Prospecting
+			i(76137),	-- Alexandrite
+			i(76141),	-- Imperial Amethyst
+			i(76133),	-- Lapis Lazuli
+			i(76136),	-- Pandarian Garnet
+			i(76131),	-- Primordial Ruby
+			i(76138),	-- River's Heart
+			i(76135),	-- Roguestone
+			i(76142),	-- Sun's Radiance
+			i(76134),	-- Sunstone
+			i(76130),	-- Tiger Opal
+			i(76140),	-- Vermilion Onyx
+			i(76139),	-- Wild Jade
+		}),
 		n(DISCOVERY, {
 			spell(131691, {	-- Imperial Amethyst
 				r(107693),	-- Accurate Imperial Amethyst

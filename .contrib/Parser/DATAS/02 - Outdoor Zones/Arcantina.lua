@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			ach(61083),	-- Highly Decorated
 			ach(61082),	-- Old Soldiers
 			ach(61081, {	-- Share a Drink
+				["description"] = "NOTE: You currently also get credit for YOUR character's Race when sharing a drink!",
 				["cost"] = { { "i", 251039, 26 } },	-- 26x Toasting Brew
 			}),
 		}),
@@ -20,9 +21,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["groups"] = {
 					o(579193, {	-- Rusty Axe
 						i(254283),	-- Rusty Axe (QI!)
-					}),
-					o(572029, {	-- Scarred Spear
-						i(250872),	-- Scarred Spear
 					}),
 					--
 					i(253542),	-- Scarred Orcish Spear (DECOR!)
@@ -38,10 +36,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["groups"] = {
 					o(614636, {	-- Frostbitten Tabard
 						i(260227),	-- Frostbitten Tabard (QI!)
-					}),
-					o(572030, {	-- Ebon Banner
-						["questID"] = 92376,
-						["groups"] = { i(250873) },	-- Ebon Banner
 					}),
 					--
 					i(253598),	-- Banner of the Ebon Blade (DECOR!)
@@ -121,14 +115,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 						},
 						["groups"] = { i(257756) },	-- Handful of Sand (QI!)
 					}),
-					o(572036, {	-- Heavy Anchor
-						["coord"] = { 35.9, 36.1, VOLDUN },
-						["groups"] = { i(250879) },	-- Heavy Anchor
-					}),
-					o(572037, {	-- Sandy Tapestry
-						["coord"] = { 58.6, 50.3, VOLDUN },
-						["groups"] = { i(250880) },	-- Sandy Tapestry
-					}),
 					--
 					i(253179),	-- Ornamental Proudmoore Anchor (DECOR!)
 					i(253700),	-- Sandy Vulpera Banner (DECOR!)
@@ -153,9 +139,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					o(584750, {	-- Lost Page from Nostro's Compendium
 						i(255681),	-- Lost Page from Nostro's Compendium (QI!)
 					}),
-					o(572034, {	-- Pylon Fragment
-						i(250877),	-- Pylon Fragment
-					}),
 					--
 					i(253177),	-- Pylon Fragment (DECOR!)
 				},
@@ -168,10 +151,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 						i(263872),	-- Lucifern (QI!)
 					}),
 					--
-					o(572033, {	-- Evergreen Vine
-						["questID"] = 92379,	-- ??
-						["groups"] = { i(250876) },	-- Evergreen Vine
-					}),
 					i(253175),	-- Hyjal Climbing Vine (DECOR!)
 				},
 			}),
@@ -181,14 +160,43 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["coord"] = { 47.4, 69.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = { i(260165) },	-- Request for Reagents (PQI!)
 			}),
-			-- Unsorted, these are part of the highly decorated achievement, need to be fitted into the rest of the structure of this file. Do not put them in HQT or you will get parser warnings.
-			hqt(92380),	-- Defense Fragment
 		}),
-		n(TREASURES, {
-			-- TODO: objects which have cost of the items which are placed on them. idk why they went into ignored in contributor file...
-			-- they're achievement criteria they should be listed here with questID so parser can put the criteria under them
-			-- [572448] = true,	-- Ebon Banner (Arcantina)
-			-- [572453] = true,	-- Pylon Fragment (Arcantina)
+		n(TREASURES, {	-- "optional" Objects to loot while on or after completing Quests to get the Cost items for 'Highly Decorated'
+			o(572030, {	-- Ebon Banner
+				["sourceQuest"] = 92321,	-- A Frostbitten Tally
+				["description"] = "On the left side of Lady Deathwhisper's room.",
+				["maps"] = { 186 },
+				["groups"] = { i(250873) },	-- Ebon Banner
+			}),
+			o(572033, {	-- Evergreen Vine
+				["sourceQuest"] = 92323,	-- Where the Fire Once Burned
+				["questID"] = 92379,	-- ??
+				["groups"] = { i(250876) },	-- Evergreen Vine
+			}),
+			o(572036, {	-- Heavy Anchor
+				["sourceQuest"] = 92326,	-- The Fragrance of the Dunes
+				["coord"] = { 35.9, 36.1, VOLDUN },
+				["groups"] = { i(250879) },	-- Heavy Anchor
+			}),
+			o(572034, {	-- Pylon Fragment
+				["sourceQuest"] = 92324,	-- Uncrowned's Cold Case
+				["description"] = "On the left side of Tendris Warpwood's room.",
+				["maps"] = { DIRE_MAUL_CAPITAL_GARDENS },
+				["groups"] = { i(250877) },	-- Pylon Fragment
+			}),
+			o(572037, {	-- Sandy Tapestry
+				["sourceQuest"] = 92326,	-- The Fragrance of the Dunes
+				["coord"] = { 58.6, 50.3, VOLDUN },
+				["groups"] = { i(250880) },	-- Sandy Tapestry
+			}),
+			o(572029, {	-- Scarred Spear
+				["sourceQuest"] = 92319,	-- A Favor to Axe
+				["description"] = "Located to the left of the path towards Omar the Unscarred.",
+				["maps"] = { HELLFIRE_CITADEL_RAMPARTS },
+				["groups"] = { i(250872) },	-- Scarred Spear
+			}),
+		}),
+		n(TREASURES, {	-- Highly Decorated placement Objects
 			o(572450, {	-- Ancient Zandalari Scroll
 				["questID"] = 92378,
 				["cost"] = { { "i", 250875, 1 } },	-- Ancient Zandalari Scroll
@@ -204,6 +212,11 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["cost"] = { { "i", 250881, 1 } },	-- Dried Roses
 				["coord"] = { 41.7, 48.1, ARCANTINA },
 			}),
+			o(572448, {	-- Ebon Banner
+				["questID"] = 92376,
+				["cost"] = { { "i", 250873, 1 } },	-- Ebon Banner
+				["coord"] = { 39.8, 49.7, ARCANTINA },
+			}),
 			o(572451, {	-- Evergreen Vine
 				["questID"] = 94976,	-- ??
 				["cost"] = { { "i", 250876, 1 } },	-- Evergreen Vine
@@ -214,6 +227,11 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["cost"] = { { "i", 250879, 1 } },	-- Heavy Anchor
 				["coord"] = { 38.1, 73.9, ARCANTINA },
 			}),
+			o(572453, {	-- Pylon Fragment
+				["questID"] = 92380,
+				["cost"] = { { "i", 250877, 1 } },	-- Pylon Fragment
+				["coord"] = { 23.9, 22.0, ARCANTINA },
+			}),
 			o(572456, {	-- Sandy Tapestry
 				["questID"] = 92383,
 				["cost"] = { { "i", 250880, 1 } },	-- Sandy Tapestry
@@ -222,7 +240,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			o(572446, {	-- Scarred Spear
 				["questID"] = 92375,
 				["cost"] = { { "i", 250872, 1 } },	-- Scarred Spear
-				["coord"] = { 67.0, 53.0, ARCANTINA },
+				["coord"] = { 67.0, 52.8, ARCANTINA },
 			}),
 			o(572454, {	-- Weathered Tome
 				["questID"] = 92381,

@@ -34,37 +34,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["description"] = "Currently requires completing all 7 Legends on ONE character, and due to the account-wide lockout per week of completing 'Lost Legends' (89268) you can only get credit for one legend for one character per week! Choose wisely!",
 				}),
 			}),
-			n(QUESTS, bubbleDownFiltered({ ["isWeekly"] = true },FILTERFUNC_questID,{	-- Legends Never Die
-				q(89268, {	-- Lost Legends
-					["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
-					["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
-				}),
+			n(QUESTS, {	-- Legends Never Die
 				header(HEADERS.AchCriteria, 61574.01, {	-- Wey'nan's Ward
 					q(88993, {	-- Wey'nan's Ward
 						["sourceQuest"] = 89268,	-- Lost Legends
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(263037) },	-- Replica Wey'nan's Ward (DECOR!)
-					}),
-					q(90536, {	-- The Tale of Wey'nan's Ward
-						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
-						["sourceQuest"] = 88993,	-- Wey'nan's Ward
-						["provider"] = { "n", 241117 },	-- Ancient Visionstone
-						["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							o(531174, {	-- Fragrant Mushroom
-								["coords"] = {
-									{ 41.1, 35.9, MAP.MIDNIGHT.HARANDAR },
-									{ 41.3, 34.9, MAP.MIDNIGHT.HARANDAR },
-									{ 41.4, 36.2, MAP.MIDNIGHT.HARANDAR },
-									{ 41.5, 35.4, MAP.MIDNIGHT.HARANDAR },
-									{ 41.7, 36.3, MAP.MIDNIGHT.HARANDAR },
-									{ 41.8, 36.5, MAP.MIDNIGHT.HARANDAR },
-								},
-								["groups"] = { i(241349) },	-- Fragrant Mushroom Cap (QI!)
-							}),
-							i(241611),	-- Zarat's Head (QI!)
-						},
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.02, {	-- The Cauldron of Echoes
@@ -74,17 +50,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(263315) },	-- Bubbling Haranir Cauldron (DECOR!)
 					}),
-					q(90889, {	-- Tale of the Echoes of Sai'alyo
-						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
-						["sourceQuest"] = 88994,	-- The Cauldron of Echoes
-						["provider"] = { "n", 245531 },	-- Ancient Visionstone
-						["coord"] = { 61.6, 20.6, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(243589),	-- Alndust (QI!)
-							i(243584),	-- Amethryl Petals (QI!)
-							i(243583),	-- Iridescent Carapace (QI!)
-						},
-					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.03, {	-- Aln'hara's Bloom
 					q(88995, {	-- Aln'hara's Bloom
@@ -92,18 +57,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(263196) },	-- Harandar Glowvine Lantern (DECOR!)
-					}),
-					q(91492, {	-- The Tale of Aln'hara's Bloom
-						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
-						["sourceQuest"] = 88995,	-- Aln'hara's Bloom
-						["provider"] = { "n", 241541 },	-- Ancient Visionstone
-						["coord"] = { 54.7, 65.1, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							o(564560, {	-- Aln'hara's Bloom
-								["coord"] = { 55.8, 67.0, MAP.MIDNIGHT.HARANDAR },
-								["groups"] = { i(248139) },	-- Aln'hara's Bloom (QI!)
-							}),
-						},
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.04, {	-- The Echoless Flame
@@ -113,12 +66,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(264262) },	-- Haranir Whistling Arrow (DECOR!)
 					}),
-					q(91506, {	-- Tale of the First Shul'ka and the Flame
-						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
-						["sourceQuest"] = 88996,	-- The Echoless Flame
-						["provider"] = { "n", 241836 },	-- Ancient Visionstone
-						["coord"] = { 64.6, 38.6, MAP.MIDNIGHT.HARANDAR },
-					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.05, {	-- Russula's Outreach
 					q(88997, {	-- Russula's Outreach
@@ -127,24 +74,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(262906) },	-- Harandar Anvil (DECOR!)
 					}),
-					q(91507, {	-- The Tale of Russula
-						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
-						["sourceQuest"] = 88997,	-- Russula's Outreach
-						["provider"] = { "n", 241836 },	-- Ancient Visionstone
-						["coord"] = { 64.6, 38.6, MAP.MIDNIGHT.HARANDAR },
-					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.06, {	-- Root of the World
 					q(88998, {	-- Root of the World
 						["sourceQuest"] = 90740,	-- A Legend to Know
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
-					}),
-					q(91508, {	-- Tale of Rootways and Wardens
-						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
-						["sourceQuest"] = 88998,	-- Root of the World
-						["provider"] = { "n", 241836 },	-- Ancient Visionstone
-						["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.07, {	-- Sky's Hope
@@ -154,12 +89,89 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 					}),
-					q(91509, {	-- The Tale of a Stone Falls from the Sky
-						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
-						["sourceQuest"] = 88999,	-- Sky's Hope
-						["provider"] = { "n", 241836 },	-- Ancient Visionstone
-						["coord"] = { 72.3, 55.7, MAP.MIDNIGHT.HARANDAR },
-					}),
+				}),
+			}),
+			n(QUESTS, sharedData({
+				["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+				["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+				["maxReputation"] = { FACTION_HARATI, 20 },
+				["isWeekly"] = true
+			}, {
+				q(92713),	-- Echoes Rekindled
+				q(89268),	-- Lost Legends
+				q(92720),	-- The Story of Aln'hara's Bloom
+				q(91492, {	-- The Tale of Aln'hara's Bloom
+					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["sourceQuest"] = 88995,	-- Aln'hara's Bloom
+					["provider"] = { "n", 241541 },	-- Ancient Visionstone
+					["coord"] = { 54.7, 65.1, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						o(564560, {	-- Aln'hara's Bloom
+							["coord"] = { 55.8, 67.0, MAP.MIDNIGHT.HARANDAR },
+							["groups"] = { i(248139) },	-- Aln'hara's Bloom (QI!)
+						}),
+					},
+				}),
+				q(92722),	-- The Story of Russula's Outreach
+				q(91507, {	-- The Tale of Russula
+					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["sourceQuest"] = 88997,	-- Russula's Outreach
+					["provider"] = { "n", 241836 },	-- Ancient Visionstone
+					["coord"] = { 64.6, 38.6, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92725),	-- The Story of Sky's Hope
+				q(91509, {	-- The Tale of a Stone Falls from the Sky
+					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["sourceQuest"] = 88999,	-- Sky's Hope
+					["provider"] = { "n", 241836 },	-- Ancient Visionstone
+					["coord"] = { 72.3, 55.7, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92719),	-- The Story of the Cauldron of Echoes
+				q(90889, {	-- Tale of the Echoes of Sai'alyo
+					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["sourceQuest"] = 88994,	-- The Cauldron of Echoes
+					["provider"] = { "n", 245531 },	-- Ancient Visionstone
+					["coord"] = { 61.6, 20.6, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						i(243589),	-- Alndust (QI!)
+						i(243584),	-- Amethryl Petals (QI!)
+						i(243583),	-- Iridescent Carapace (QI!)
+					},
+				}),
+				q(92724),	-- The Story of the Root of the World
+				q(91508, {	-- Tale of Rootways and Wardens
+					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["sourceQuest"] = 88998,	-- Root of the World
+					["provider"] = { "n", 241836 },	-- Ancient Visionstone
+					["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92721),	-- The Story of the Echoless Flame
+				q(91506, {	-- Tale of the First Shul'ka and the Flame
+					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["sourceQuest"] = 88996,	-- The Echoless Flame
+					["provider"] = { "n", 241836 },	-- Ancient Visionstone
+					["coord"] = { 64.6, 38.6, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92716),	-- The Story of Wey'nan's Ward
+				q(90536, {	-- The Tale of Wey'nan's Ward
+					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["sourceQuest"] = 88993,	-- Wey'nan's Ward
+					["provider"] = { "n", 241117 },	-- Ancient Visionstone
+					["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						o(531174, {	-- Fragrant Mushroom
+							["coords"] = {
+								{ 41.1, 35.9, MAP.MIDNIGHT.HARANDAR },
+								{ 41.3, 34.9, MAP.MIDNIGHT.HARANDAR },
+								{ 41.4, 36.2, MAP.MIDNIGHT.HARANDAR },
+								{ 41.5, 35.4, MAP.MIDNIGHT.HARANDAR },
+								{ 41.7, 36.3, MAP.MIDNIGHT.HARANDAR },
+								{ 41.8, 36.5, MAP.MIDNIGHT.HARANDAR },
+							},
+							["groups"] = { i(241349) },	-- Fragrant Mushroom Cap (QI!)
+						}),
+						i(241611),	-- Zarat's Head (QI!)
+					},
 				}),
 			})),
 			n(QUESTS, {
@@ -168,7 +180,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 					["sourceQuests"] = {
 						91456,	-- Aln'hara's Bloom
+						88998,	-- Root of the World
 						91512,	-- Russula's Outreach
+						88999,	-- Sky's Hope
 						91054,	-- The Cauldron of Echoes
 						91511,	-- The Echoless Flame
 						91053,	-- Wey'nan's Ward

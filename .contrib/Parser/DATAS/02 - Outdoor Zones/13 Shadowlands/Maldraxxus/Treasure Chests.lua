@@ -402,7 +402,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(350802, {		-- Web Sealed Chest
-				["coord"] = { 54.9, 26.1, MALDRAXXUS },
+				["coords"] = {
+					{ 53.1, 21.0, MALDRAXXUS },
+					{ 55.0, 17.8, MALDRAXXUS },
+					{ 55.0, 26.1, MALDRAXXUS },
+					{ 55.4, 24.4, MALDRAXXUS },
+					{ 55.8, 23.0, MALDRAXXUS },
+					{ 55.9, 24.5, MALDRAXXUS },
+					{ 56.0, 21.6, MALDRAXXUS },
+					{ 56.7, 18.2, MALDRAXXUS },
+				},
 				["questID"] = 60109,
 				["isDaily"] = true,
 				["groups"] = {

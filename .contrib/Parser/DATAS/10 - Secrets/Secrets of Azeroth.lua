@@ -288,7 +288,6 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					{ 47.4, 48.1, VALDRAKKEN },		-- Preservationist Kathos
 					{ 58.88, 54.09, VALDRAKKEN },	-- Chalice Placement
 				},
-				-- TODO: does it go away after event?
 				["groups"] = {
 					i(208054, {	-- A Mystery Box
 						i(208056),	-- Golden Chalice
@@ -309,7 +308,6 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["repeatable"] = true,
 				["groups"] = {
 					i(207105),	-- Tuskarr Ceremonial Spear
-					-- TODO: not really sure how to list this situation yet...
 					i(207580, {	-- Shomko's Unyielding Spear
 						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },

@@ -28,10 +28,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93502),	-- Enshrouded Solo
 				q(93503),	-- Enshrouded in Teamwork
 				q(93505),	-- Enshrouded in War
-				q(93423),	-- Sparks of War: Eversong Woods
-				q(93425),	-- Sparks of War: Harandar
-				q(93426),	-- Sparks of War: Voidstorm
-				q(93424),	-- Sparks of War: Zul'Aman
+				q(93423, {	-- Sparks of War: Eversong Woods
+					i(219934),	-- Spark of War (QI!)
+				}),
+				q(93425, {	-- Sparks of War: Harandar
+					i(219934),	-- Spark of War (QI!)
+				}),
+				q(93426, {	-- Sparks of War: Voidstorm
+					i(219934),	-- Spark of War (QI!)
+				}),
+				q(93424, {	-- Sparks of War: Zul'Aman
+					i(219934),	-- Spark of War (QI!)
+				}),
 				-- #IF AFTER MID
 				-- #IF BEFORE TLT
 				pvp(q(47148)),				-- Something Different

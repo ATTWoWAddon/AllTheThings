@@ -13,6 +13,7 @@ local GetQuestID,C_QuestLog_IsOnQuest
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
 local round = app.round
 local SearchForObject = app.SearchForObject
+local GetPlayerAura = app.WOWAPI.GetPlayerAuraBySpellID
 local DebugPrinting
 
 local api = {};
@@ -52,6 +53,9 @@ local function GetReportPlayerLocation()
 end
 
 local function DoReport(reporttype, id)
+	-- ignore contrib reports if the player is in Lorewalking
+	if GetPlayerAura(463943) then return end
+
 	local dialogID = reporttype.."-"..id
 	-- app.PrintDebug("Contributor.DoReport",reporttype,id)
 
@@ -200,6 +204,7 @@ api.AddReportData = AddReportData
 local MapPrecisionOverrides = {
 	  [24] = 2,	-- Light's Hope Chapel
 	  [46] = 3,	-- Karazhan Catacombs
+	 [590] = 2.5,	-- Frostwall
 	 [626] = 4,	-- The Hall of Shadows
 	 [629] = 3,	-- Aegwynn's Gallery
 	 [640] = 9,	-- Vault of Eyir, Stormheim
@@ -275,7 +280,7 @@ local function Check_coords(objRef, maxCoordDistance)
 	local relCoords = not objRef.coords
 	local dist, sameMap
 	local closest = 9999
-	maxCoordDistance = MapPrecisionOverrides[mapID] or maxCoordDistance or 1
+	maxCoordDistance = maxCoordDistance or MapPrecisionOverrides[mapID] or 1
 	if coords[mapID] then
 		sameMap = mapID
 		for i,coord in ipairs(coords[mapID]) do
@@ -303,6 +308,25 @@ local function Check_coords(objRef, maxCoordDistance)
 	end
 	return true
 end
+
+local function Check_ingame(objRef, reportData)
+	-- check if the object is considered in-game for the current ATT version
+	if not objRef then return end
+
+	if DebugPrinting then
+		app.print("Contrib.ingame:",objRef.__type,objRef.keyval,app.Modules.Filter.Filters.InGame(objRef) and "TRUE" or "FALSE")
+	end
+	if not app.Modules.Filter.Filters.InGame(objRef) then
+		local id = objRef.keyval
+		-- object does NOT meet the filter
+		local reportData = reportData or BuildGenericReportData(objRef, id)
+		reportData.NotAvailableInGame = "This is not properly considered available in " .. app.GameBuildVersion
+		AddReportData(objRef.__type, id, reportData)
+		return 1
+	end
+	return true
+end
+
 
 -- Temporary implementation until better, global DB(s) provides similar data references
 -- These should be NPCs which are mobile in that they can have completely variable coordinates in game
@@ -622,7 +646,7 @@ MobileDB.Creature = {
 	[161431] = true,	-- Kael'thas Sunstrider
 	[161436] = true,	-- Kael'thas Sunstrider
 	[161439] = true,	-- Kael'thas Sunstrider
-	[161460] = true,	-- The Shadowforge Lock
+	[162174] = true,	-- Emeni
 	[162476] = true,	-- Ta'eran
 	[163097] = true,	-- Lindie Springstock
 	[164679] = true,	-- Whisperer Vyn
@@ -686,6 +710,7 @@ MobileDB.Creature = {
 	[251891] = true,	-- Lingering Shade
 	[252807] = true,	-- Vanguard Paladin
 	[256867] = true,	-- Grieving Amani
+	[259125] = true,	-- Enchanted Amani Mask
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
 -- either by following the player or having player-based decisions that cause them to have any coordinates
@@ -709,6 +734,7 @@ MobileDB.GameObject = {
 	  [1731] = true,	-- Copper Vein
 	  [1732] = true,	-- Tin Vein
 	  [1733] = true,	-- Silver Vein
+	  [1734] = true,	-- Gold Vein
 	  [2040] = true,	-- Mithril Deposit
 	  [2045] = true,	-- Stranglekelp
 	  [2068] = true,	-- Pupellyverbos Port (q:26486)
@@ -771,6 +797,7 @@ MobileDB.GameObject = {
 	[152631] = true,	-- Azsharite Formation (q:14370)
 	[153464] = true,	-- Large Solid Chest
 	[154357] = true,	-- Glinting Mud (q:26508)
+	[161460] = true,	-- The Shadowforge Lock
 	[164658] = true,	-- Blue Power Crystal
 	[164659] = true,	-- Green Power Crystal
 	[164660] = true,	-- Red Power Crystal
@@ -908,6 +935,7 @@ MobileDB.GameObject = {
 	[194612] = true,	-- Ritual Gem (q:13806)
 	[194822] = true,	-- Gift of the Observer [Algalon The Observer]
 	[194956] = true,	-- Cache of Innovation [Mimiron]
+	[194997] = true,	-- Thorned Bloodcup (q:13875)
 	[195002] = true,	-- Lava Fissure (q:13880)
 	[195007] = true,	-- Slain Wildkin Feather (q:13578)
 	[195012] = true,	-- Sunken Scrap Metal (q:13883)
@@ -1048,6 +1076,7 @@ MobileDB.GameObject = {
 	[203982] = true,	-- Okra (q:26241)
 	[203989] = true,	-- Ooze-coated Supply Crate (q:26492)
 	[204019] = true,	-- Makeshift Cage (q:26284)
+	[204042] = true,	-- Detonator
 	[204087] = true,	-- Mosh'Ogg Bounty (q:26782)
 	[204102] = true,	-- Shadraspawn Egg (q:26641)
 	[204120] = true,	-- Cache of Shadra (q:26529)
@@ -1225,6 +1254,7 @@ MobileDB.GameObject = {
 	[225924] = true,	-- Shadowmoon Cage
 	[226468] = true,	-- Frostwolf Shamanstone
 	[226521] = true,	-- Draenor Clans Archaeology Find
+	[226888] = true,	-- Aruunem Berry Bush (q:33873))
 	[229325] = true,	-- Bleeding Hollow Cage (q:35240, 34421)
 	[229350] = true,	-- Bleeding Hollow Cage (q:35240, 34421)
 	[230527] = true,	-- Tree Marking (q:34375)
@@ -1871,6 +1901,9 @@ MobileDB.GameObject = {
 	[279655] = true,	-- Cache of Heroic Innovation [Mimiron]
 	[279656] = true,	-- Cache of Heroic Storms [Thorim]
 	[280335] = true,	-- Essence Collector
+	[280348] = true,	-- The Word of Zul II (q:49424)
+	[280349] = true,	-- The Word of Zul II (q:49424)
+	[280350] = true,	-- The Word of Zul III (q:49424)
 	[280571] = true,	-- Essence Collector
 	[280572] = true,	-- Essence Collector
 	[280603] = true,	-- Ritual Effigy (q:51657)
@@ -2013,6 +2046,7 @@ MobileDB.GameObject = {
 	[311206] = true,	-- Spider Ichor (q:54104)
 	[311564] = true,	-- Abandoned Tidepriest Cache [Stormwall Blockade] Normal
 	[312293] = true,	-- Mana Crystal
+	[312348] = true,	-- Crate of Supplies
 	[315945] = true,	-- Prisoner Cage (q:54008)
 	[315946] = true,	-- Prisoner Cage (q:54008)
 	[315947] = true,	-- Prisoner Cage (q:54008)
@@ -2024,6 +2058,7 @@ MobileDB.GameObject = {
 	[322065] = true,	-- Reinforced Cage (q:54959)
 	[322358] = true,	-- Waterlogged Alliance Crate (q:57331)
 	[322413] = true,	-- Glimmering Chest
+	[322651] = true,	-- Storage Crate (q:54733)
 	[322787] = true,	-- Shrine of Torcali (q:55252)
 	[322791] = true,	-- Kelpberry (q:56146 & q:55638)
 	[322803] = true,	-- Kelpberry (q:56146 & q:55638)
@@ -2127,14 +2162,18 @@ MobileDB.GameObject = {
 	[344738] = true,	-- Titan Console (q:56541)
 	[345458] = true,	-- Prize Bag
 	[348639] = true,	-- Anima Stores (q:59581)
+	[348740] = true,	-- Anima Container (q:59599)
+	[348741] = true,	-- Anima Container (q:59599)
 	[349136] = true,	-- Forgotten Memorandum (q:59717)
 	[349274] = true,	-- Forgotten Memorandum (q:59717)
 	[349382] = true,	-- Basket of Enchanted Wings (q:60337)
 	[349383] = true,	-- Basket of Enchanted Wings (q:60337)
 	[349393] = true,	-- Battered Chest (q:59740)
 	[349543] = true,	-- Animacone
+	[349593] = true,	-- Banner of Remembrance
 	[349607] = true,	-- Soul Cage
 	[349613] = true,	-- Banner of Remembrance (q:61342)
+	[349614] = true,	-- Banner of Remembrance (q:61342)
 	[349885] = true,	-- Guide To Marching (q:58622)
 	[350064] = true,	-- Battered Scrollcase (q:58771)
 	[350065] = true,	-- Creased Scroll (q:58771)
@@ -2166,6 +2205,8 @@ MobileDB.GameObject = {
 	[354132] = true,	-- Stage Light (Ember Court)
 	[354134] = true,	-- Stage Prop (Ember Court)
 	[354649] = true,	-- Relic Hoard
+	[355197] = true,	-- Rune of Constructs
+	[355198] = true,	-- Rune of Constructs
 	[355295] = true,	-- Dusty Cache of Ancient Treasure [Mueh'zala]
 	[355346] = true,	-- Kaal's Armaments [General Kaal]
 	[355436] = true,	-- Crate of Gnomish Machinations [The Manastorms]
@@ -2186,6 +2227,7 @@ MobileDB.GameObject = {
 	[356763] = true,	-- Rune of the Chosen
 	[356764] = true,	-- Rune of the Chosen
 	[356765] = true,	-- Rune of the Chosen
+	[356766] = true,	-- Burden of Penitences
 	[356885] = true,	-- Stolen Memento (Ember Court)
 	[357751] = true,	-- Spoils of Sin (Artificer Xy'mox) [M]
 	[357752] = true,	-- Cache of the Sun King (Sun King's Salvation) [M]
@@ -2197,9 +2239,12 @@ MobileDB.GameObject = {
 	[358568] = true,	-- Remains (q:62630)
 	[363824] = true,	-- Cage (q:62720)
 	[364345] = true,	-- A Faintly Glowing Seed
+	[364940] = true,	-- Banner of Remembrance
 	[364950] = true,	-- Scroll of Dark Empowerment (q:63056, 63063)
 	[364975] = true,	-- Prime Scroll (q:63054)
 	[364976] = true,	-- Prime Scroll (q:63055)
+	[364979] = true,	-- Prime Scroll (q:63057)
+	[364980] = true,	-- Prime Scroll (q:63058, 63061)
 	[364983] = true,	-- Scroll of Dark Empowerment (q:63064)
 	[364996] = true,	-- Teleportation Pad (Tomb of Sargeras)
 	[364997] = true,	-- Teleportation Pad (Tomb of Sargeras)
@@ -2211,6 +2256,7 @@ MobileDB.GameObject = {
 	[368304] = true,	-- Damaged Binding
 	[368332] = true,	-- Focusing Prism
 	[368333] = true,	-- Focusing Prism
+	[368602] = true,	-- Seeping Cone (q:63935)
 	[368604] = true,	-- Mawsworn Cage
 	[368605] = true,	-- Cage (SoD)
 	[368606] = true,	-- Cage (SoD)
@@ -2288,6 +2334,7 @@ MobileDB.GameObject = {
 	[381213] = true,	-- Windswept Hochenblume
 	[381214] = true,	-- Frigid Hochenblume
 	[381256] = true,	-- Great Horn of Imbu
+	[381259] = true,	-- Perfect Throwing Rock
 	[381365] = true,	-- Dragonscale Expedition Flag
 	[381367] = true,	-- Dragonscale Expedition Flag
 	[381369] = true,	-- Dragonscale Expedition Flag
@@ -2356,6 +2403,7 @@ MobileDB.GameObject = {
 	[383820] = true,	-- Brackenhide Supply Crate
 	[384279] = true,	-- Abandoned Tuskarr Supplies
 	[384315] = true,	-- Key Fragment
+	[384837] = true,	-- Waking Frost
 	[384839] = true,	-- Waking Earth
 	[384842] = true,	-- Best-root Bush (q:72552)
 	[385357] = true,	-- Ancestors' Treasure Trove [Terra and Maruuk]
@@ -2383,8 +2431,15 @@ MobileDB.GameObject = {
 	[390139] = true,	-- Lambent Hochenblume
 	[390140] = true,	-- Lambent Saxifrage
 	[390142] = true,	-- Lambent Bubble Poppy
+	[390557] = true,	-- Drakeforged Arming Rack (q:75151)
+	[392033] = true,	-- Drakeforged Shield (q:75151)
 	[396020] = true,	-- Stolen Stash
 	[398017] = true,	-- Underlight Moth Cocoon
+	[398131] = true,	-- Drakeforged Sword (q:75151)
+	[398134] = true,	-- Drakeforged Helm (q:75151)
+	[398136] = true,	-- Drakeforged Breastplate (q:75151)
+	[398137] = true,	-- Drakeforged Vambrace (q:75151)
+	[398139] = true,	-- Drakeforged Gauntlets (q:75151)
 	[398751] = true,	-- Lush Bubble Poppy
 	[398753] = true,	-- Lush Hochenblume
 	[398754] = true,	-- Lush Saxifrage
@@ -2462,6 +2517,11 @@ MobileDB.GameObject = {
 	[408328] = true,	-- Rubyscale Melon
 	[408329] = true,	-- Orangeroot
 	[408720] = true,	-- Laden Somnut
+	[408956] = true,	-- Auchenai Translocator (q:78073)
+	[408957] = true,	-- Auchenai Translocator (q:78073)
+	[408958] = true,	-- Auchenai Translocator (q:78073)
+	[408959] = true,	-- Auchenai Translocator (q:78073)
+	[408964] = true,	-- Satyr Totem (q:78078)
 	[409220] = true,	-- Dreamseed Cache
 	[409221] = true,	-- Dreamseed Cache
 	[409223] = true,	-- Dreamseed Cache
@@ -2489,14 +2549,19 @@ MobileDB.GameObject = {
 	[410998] = true,	-- Formula: Intoxicating Toxic Perfume (q:78332 [A], q:78982 [H])
 	[410999] = true,	-- Memo from Apothecary Hummel (q:78332 [A], q:78982 [H])
 	[411013] = true,	-- Confusing Tracks (q:77673)
+	[411107] = true,	-- Draenite Crate (q:78071)
 	[411292] = true,	-- Crown Chemical Co. Supplies (q:78332)
 	[411376] = true,	-- Discarded Perfume Bottle (q:78332)
+	[411524] = true,	-- Arkonite Pillar (q:78069)
 	[411560] = true,	-- Lavenbloom (q:78565 & q:78986)
 	[411561] = true,	-- Sugar Orchid (q:78565 & q:78986)
 	[411562] = true,	-- Orange Illicium (q:78565 & q:78986)
 	[411628] = true,	-- Wax-Encrusted Chest [Darkflame Cleft]
 	[411656] = true,	-- Hallowfall Scythe
 	[411755] = true,	-- Flickerflame Candles (q:78635, q:82519)
+	[411793] = true,	-- Arkonite Pillar (q:78069)
+	[411794] = true,	-- Arkonite Pillar (q:78069)
+	[411795] = true,	-- Arkonite Pillar (q:78069)
 	[411878] = true,	-- Intriguing Scrap (q:79205)
 	[411930] = true,	-- Blackpowder Barre
 	[412967] = true,	-- Helm of Memories
@@ -2515,6 +2580,9 @@ MobileDB.GameObject = {
 	[414927] = true,	-- Rittsyn's Soulstone (q:78531)
 	[414957] = true,	-- Hastily-Prepared Antidote
 	[415296] = true,	-- Repair Kit
+	[415727] = true,	-- Draenite Crate (q:78071)
+	[415728] = true,	-- Draenite Crate (q:78071)
+	[415766] = true,	-- Draenite Fragments (q:78071)
 	[416265] = true,	-- Pilfered Trunk
 	[416392] = true,	-- Weapons Crate
 	[416400] = true,	-- Weapons Crate
@@ -2531,6 +2599,7 @@ MobileDB.GameObject = {
 	[417311] = true,	-- Climbing Rope (q:82699)
 	[419657] = true,	-- Abandoned Tools
 	[419696] = true,	-- Waxy Lump
+	[420040] = true,	-- Artificing Tools (q:78069)
 	[420090] = true,	-- Massive Remnant
 	[421070] = true,	-- Remnent Satchel
 	[421903] = true,	-- Earthen Console (q:78761)
@@ -2591,6 +2660,7 @@ MobileDB.GameObject = {
 	[454188] = true,	-- Spoils of K'aresh [Nexus-Princess Ky'veza]
 	[454311] = true,	-- Redberry
 	[454312] = true,	-- Redberry
+	[454415] = true,	-- Transpositional Signal Recombobulatron (q:83495)
 	[455204] = true,	-- Salvage Crate (q:83715)
 	[455759] = true,	-- Hulking Raptorial Claw
 	[456100] = true,	-- Blacksteel Cannonballs (q:83753)
@@ -2817,6 +2887,7 @@ MobileDB.GameObject = {
 	[527827] = true,	-- Trampled Bush (q:86740)
 	[527829] = true,	-- Hasty Nest (q:86740)
 	[527831] = true,	-- Territorial Dispute (q:86740)
+	[527903] = true,	-- Spectral Battle Chest
 	[528004] = true,	-- Weeping Caps (q:89503)
 	[528074] = true,	-- Missing Voidband (q:89505)
 	[528080] = true,	-- Missing Token Box (q:89505)
@@ -3083,6 +3154,7 @@ MobileDB.GameObject = {
 	[613789] = true,	-- Paint Globule (q:92695)
 	[613852] = true,	-- Potion of Unquestionable Strength (q:93569)
 	[613945] = true,	-- Orb of Translocation
+	[614044] = true,	-- Dropped Trinket
 	[614762] = true,	-- UNKNOWN
 	[614787] = true,	-- Summons to Broken Shorw (q:92320)
 	[614788] = true,	-- Summons to Broken Shorw (q:92320)
@@ -3090,9 +3162,13 @@ MobileDB.GameObject = {
 	[614893] = true,	-- Paint Bowl (q:90535)
 	[616052] = true,	-- Flame-Hardened Sap of Teldrassil
 	[616055] = true,	-- Forgotten Cache [Windrunner Spire]
+	[616622] = true,	-- Woodworking Tool (q:92907)
+	[616628] = true,	-- Woodworking Supplies (q:92907)
+	[616804] = true,	-- Ancient Amani Tablet (q:92957)
 	[616916] = true,	-- Eye of the Void
 	[616917] = true,	-- Cosmic Void
 	[616918] = true,	-- Void Rift
+	[617077] = true,	-- Vilebranch Scroll (q:92951)
 	[617397] = true,	-- Dark Chest of Forbiden Evils (q:92320)
 	[617497] = true,	-- Out of Place Knapsack (q:92166)
 	[617500] = true,	-- Scattered Papers (q:92166)
@@ -3134,6 +3210,21 @@ MobileDB.GameObject = {
 	[638873] = true,	-- Orb of Translocation
 	[641533] = true,	-- Corrupted Lantern (q:92320)
 	[650051] = true,	-- Faithbreaker Ger'lok's Ritual Chest [Broken Throne, Ritual Site]
+	[653416] = true,	-- Cynosure of Twilight (q:96051)
+	[653485] = true,	-- Cynosure of Twilight (q:96052)
+	[654422] = true,	-- Energized Crystal Conductor (q:96569)
+	[655270] = true,	-- Dominaar Storage Vessel [Ritual Site: Val]
+	[655271] = true,	-- Hal'hadar Pocket-Storage [Ritual Site: Naigtal]
+}
+
+-- Represents content which will trigger the 'not in game' contrib check, but only because it is available from a 'not in game' source (i.e. an NPC spawned from a removed Item used by a Player; an Object which spawns during a Quest which is removed but accessible if a Player still has it, etc.) Or perhaps an object/npc which is actually in the game but whose entire use has been made obsolete and is thus marked in ATT
+local NotInGameDB = {
+	Creature = {
+
+	},
+	GameObject = {
+
+	},
 }
 
 local ReturnEmptyFunctionMeta = { __index = function() return app.ReturnFalse end}
@@ -3143,16 +3234,20 @@ local IgnoredChecksByType = setmetatable({
 	Item = setmetatable({
 		coord = app.ReturnTrue,
 		provider = app.ReturnTrue,
+		ingame = app.ReturnTrue,
 	}, ReturnEmptyFunctionMeta),
 	Player = setmetatable({
 		coord = app.ReturnTrue,
-		provider = app.ReturnTrue
+		provider = app.ReturnTrue,
+		ingame = app.ReturnTrue,
 	}, ReturnEmptyFunctionMeta),
 	Creature = setmetatable({
 		coord = function(id) return MobileDB.Creature[id] end,
+		ingame = function(id) return NotInGameDB.Creature[id] end,
 	}, ReturnEmptyFunctionMeta),
 	GameObject = setmetatable({
 		coord = function(id) return MobileDB.GameObject[id] end,
+		ingame = function(id) return NotInGameDB.GameObject[id] end,
 	}, ReturnEmptyFunctionMeta),
 	Vehicle = setmetatable({
 		coord = app.ReturnTrue,
@@ -3362,8 +3457,14 @@ local function OnPLAYER_SOFT_INTERACT_CHANGED(previousGuid, newGuid)
 	local mapsNoCoords = objRef.maps and not objRef.coords
 	-- check sourced object coords
 	if not mapsNoCoords and not IgnoredChecksByType[guidtype].coord(id) then
-		-- object auto-detect can happen from rather far, so using 2 distance
-		local checkCoords = Check_coords(objRef, 2)
+		-- if this is a quest object, i.e. directly within a Quest object, we will be a bit more lenient on the distance
+		-- as long as the coords are relatively nearby
+		local objParent = objRef.parent
+		local checkDistanceOverride
+		if objParent and objParent.__type and objParent.__type == "Quest" then
+			checkDistanceOverride = 3
+		end
+		local checkCoords = Check_coords(objRef, checkDistanceOverride)
 		if not checkCoords then
 			local reportData = {
 				id = id,
@@ -3374,6 +3475,11 @@ local function OnPLAYER_SOFT_INTERACT_CHANGED(previousGuid, newGuid)
 		elseif checkCoords == 1 then
 			-- no extra data to add for object detection
 		end
+	end
+
+	-- check in-game
+	if not IgnoredChecksByType[guidtype].ingame(id) then
+		Check_ingame(objRef)
 	end
 end
 AddEventFunc("PLAYER_SOFT_INTERACT_CHANGED", OnPLAYER_SOFT_INTERACT_CHANGED)

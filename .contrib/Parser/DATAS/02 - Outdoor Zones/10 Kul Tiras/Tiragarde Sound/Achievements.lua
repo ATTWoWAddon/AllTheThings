@@ -146,38 +146,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 			})),
 			pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
-			ach(12852, {	-- Treasures of Tiragarde Sound
-				crit(41012, {	-- Hay Covered Chest
-					["_quests"] = { 49963 },	-- Hay Covered Chest
-				}),
-				crit(41013, {	-- Cutwater Treasure Chest
-					["_quests"] = { 50442 },	-- Cutwater Treasure Chest
-				}),
-				crit(41014, {	-- Precarious Noble Cache
-					["_quests"] = { 52866 },	-- Precarious Noble Cache
-				}),
-				crit(41015, {	-- Forgotten Smuggler's Stash
-					["_quests"] = { 52867 },	-- Forgotten Smuggler's Stash
-				}),
-				crit(41016, {	-- Scrimshaw Cache
-					["_quests"] = { 52870 },	-- Scrimshaw Cache
-				}),
-				crit(41017, {	-- Secret of the Depths
-					["_quests"] = { 52195 },	-- Secrets of the Depths (Gem of Acquiescence)
-				}),
-				crit(41018, {	-- Soggy Treasure Map
-					["_quests"] = { 52807 },	-- Soggy Treasure Map
-				}),
-				crit(41019, {	-- Faded Treasure Map
-					["_quests"] = { 52833 },	-- Faded Treasure Map
-				}),
-				crit(41020, {	-- Yellowed Treasure Map
-					["_quests"] = { 52836 },	-- Yellowed Treasure Map
-				}),
-				crit(41021, {	-- Singed Treasure Map
-					["_quests"] = { 52845 },	-- Singed Treasure Map
-				}),
-			}),
+			ach(12852),	-- Treasures of Tiragarde Sound
 		}),
 	}),
 })));

@@ -157,6 +157,8 @@ root(ROOTS.Zones, {
 						["qg"] = 28561,	-- Spirit of Rhunok
 						["coord"] = { 53.4, 39.0, ZULDRAK },
 						["groups"] = {
+							i(38696),	-- Tormentor's Incense (QI!)
+							--
 							i(39789),	-- Bloodbinder's Shoulderpads
 							i(39858),	-- Drape of the Bloodletter
 							i(39825),	-- Belt of the Bloodbinder
@@ -245,6 +247,8 @@ root(ROOTS.Zones, {
 						["qg"] = 28401,	-- Har'koa
 						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["groups"] = {
+							i(38676),	-- Whisker of Har'koa (PQI!)
+							--
 							i(39787),	-- Soothsayer's Handwraps
 							i(39856),	-- Bloodletter's Pants
 							i(39821),	-- Spiritist's Focus
@@ -278,7 +282,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						-- #if NOT ANYCLASSIC
-						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 1106.8 },	-- Argent Crusade, Exalted
 						-- #endif
 						["isDaily"] = true,
@@ -300,6 +303,8 @@ root(ROOTS.Zones, {
 						["qg"] = 28401,	-- Har'koa
 						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["groups"] = {
+							i(39566),	-- Prophet of Akali Convocation (PQI!)
+							--
 							i(41890),	-- Robe of the Conquered Prophet
 							i(41891),	-- Intricate Zandalari Tunic
 							i(41905),	-- Chestguard of Rampaging Fury
@@ -565,6 +570,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12642,	-- Spirit of Rhunok
 						["qg"] = 28561,	-- Spirit of Rhunok
 						["coord"] = { 53.4, 39.0, ZULDRAK },
+						["groups"] = { i(38695) },	-- Arctic Bear God Mojo (QI!)
 					}),
 					q(12637, {	-- Near Miss
 						["sourceQuest"] = 12631,	-- An Invitation, of Sorts...
@@ -668,6 +674,8 @@ root(ROOTS.Zones, {
 						["qg"] = 28401,	-- Har'koa
 						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["groups"] = {
+							i(39434),	-- Key of Warlord Zol'Maz (PQI!)
+							--
 							i(39794),	-- Bloodbinder's Gloves
 							i(39862),	-- Supple Vest of the Bloodletter
 							i(39846),	-- Bloodletter's Headgear
@@ -933,6 +941,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12721,	-- Rampage
 						["qg"] = 28479,	-- Witch Doctor Khufu
 						["coord"] = { 59.5, 58.0, ZULDRAK },
+						["groups"] = {
+							i(39541),	-- Gusty Essence of the Warden (QI!)
+							i(39540),	-- Unblemished Heart of the Guardian (QI!)
+						},
 					}),
 					q(12712, {	-- The Key of Warlord Zol'Maz
 						["sourceQuest"] = 12685,	-- You Reap What You Sow

@@ -179,30 +179,6 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(QUESTS, {
-						q(48075, {	-- A Colorful Key
-							["sourceQuests"] = { 46941 },	-- The Path Forward
-							["provider"] = { "n", 125343 },		-- Vorel
-							["requireSkill"] = JEWELCRAFTING,
-							["groups"] = {
-								i(151736),	-- Design: Deadly Deep Chemirine (RECIPE!)
-								i(151738),	-- Design: Masterful Argulite (RECIPE!)
-								i(151737),	-- Design: Quick Lightsphene (RECIPE!)
-								i(151739),	-- Design: Versatile Labradorite (RECIPE!)
-								i(151876),	-- Vorel's Design Book (QI!)
-							},
-						}),
-						q(48076, {	-- A Crowning Achievment
-							["sourceQuests"] = { 48075 },	-- A Colorful Key
-							["provider"] = { "n", 125343 },		-- Vorel
-							["coord"] = { 44.45, 73.35, THE_VINDICAAR_KROKUUN_UPPER },
-							["requireSkill"] = JEWELCRAFTING,
-							["groups"] = {
-								i(151724),	-- Design: Empyrial Cosmic Crown [Rank 1] (RECIPE!)
-								i(151727),	-- Design: Empyrial Deep Crown [Rank 1] (RECIPE!)
-								i(151730),	-- Design: Empyrial Elemental Crown [Rank 1] (RECIPE!)
-								i(151733),	-- Design: Empyrial Titan Crown [Rank 1] (RECIPE!)
-							},
-						}),
 						q(48081, {	-- A Floating Ruin
 							["sourceQuests"] = { 47994 },	-- Forming a Bond
 							["provider"] = { "n", 126307 },	-- Prophet Velen

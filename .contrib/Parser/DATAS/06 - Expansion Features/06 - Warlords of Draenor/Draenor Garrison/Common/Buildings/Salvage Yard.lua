@@ -48,6 +48,7 @@ root(ROOTS.ExpansionFeatures,
 							-- Only adding items where Salvage Crates were realistically the only source
 							i(36533),	-- Adorned Broadsword
 							i(36603),	-- Archaic Longspear
+							i(67051),	-- Blood Gout Amulet
 							i(25285),	-- Bloodwood Wand
 							i(36575),	-- Dragonflayer Hatchet
 							i(55631),	-- Frayfeather Belt

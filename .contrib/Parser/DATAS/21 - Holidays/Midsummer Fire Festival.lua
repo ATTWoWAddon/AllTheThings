@@ -747,6 +747,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { ADDED_11_1_7 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			ach(61335, {	-- Flame Keeper of Midnight
+				["timeline"] = { ADDED_12_0_7 },
+			}),
+			ach(61336, {	-- Flame Warden of Midnight
+				["timeline"] = { ADDED_12_0_7 },
+			}),
 		})),
 		n(FACTION_HEADER_HORDE, bubbleDown({ ["races"] = HORDE_ONLY }, {
 			ach(1039, {	-- The Flame Keeper (Horde)

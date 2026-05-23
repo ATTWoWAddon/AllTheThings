@@ -153,7 +153,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 41.6, 61.6, TEROKKAR_FOREST },
 				["groups"] = {
 					o(408954, {	-- Artificer's Lockbox
-						i(210189),	-- Exarch Hataaru's Artificing Lens (QI!)
+						["coord"] = { 36.8, 62.7, TEROKKAR_FOREST },
+						["groups"] = { i(210189) },	-- Exarch Hataaru's Artificing Lens (QI!)
 					}),
 				},
 			}),
@@ -228,15 +229,16 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					i(210538),	-- Velen's Memory Stone (QI!)
 				},
 			}),
+			------ Stay awhile and listen ------
 			hqt(82162, {	-- Stay awhile and Listen: Prophet Velen
 				["name"] = "Stay awhile and listen: Prophet Velen",
-				["sourceQuests"] = {
-					78082,	-- A Burden Shared (Accepted)
-				},
+				["description"] = "Dialogue becomes available after you collect a Memory Stone from Prophet Velen during 'A Burden Shared' (78082).",
+				["sourceQuests"] = { 78082 },	-- A Burden Shared (Accepted)
 				["provider"] = { "n", 210670 },	-- Prophet Velen
 				["coord"] = { 53.8, 83.8, THE_EXODAR },
 				["lockCriteria"] = { 1, "questID", 78082 },	-- A Burden Shared (Completed)
 			}),
+			--
 			q(78083, {	-- Our Path Forward
 				["sourceQuests"] = { 78082 },	-- A Burden Shared
 				["provider"] = { "n", 212387 },	-- Grand Anchorite Almonen

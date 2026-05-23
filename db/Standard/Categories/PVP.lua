@@ -43801,12 +43801,12 @@ ach(61183,{pvp=1,g={
 crit(109682,{achID=2090,awp=30002,id=34,pvp=1})}}),
 ach(61184,{pvp=1}),
 ach(61187,{pvp=1,g={
-s(303229,264164,{b=1,f=9,lvl=90,pvp=1,r=2}),
-s(302180,260441,{b=1,f=9,lvl=90,pvp=1,r=1}),
-crit(109688,{achID=2092,awp=30002,id=33,pvp=1})}}),
-ach(61197,{pvp=1,g={
 s(303228,264010,{b=1,f=3,lvl=90,pvp=1,r=2}),
 s(302182,260443,{b=1,f=3,lvl=90,pvp=1,r=1}),
+crit(109688,{achID=2092,awp=30002,id=33,pvp=1})}}),
+ach(61197,{pvp=1,g={
+s(303229,264164,{b=1,f=9,lvl=90,pvp=1,r=2}),
+s(302180,260441,{b=1,f=9,lvl=90,pvp=1,r=1}),
 crit(111102,{achID=61858,id=2})}}),
 ach(61180,{pvp=1,g={
 title(654,{pvp=1})}}),
@@ -44602,7 +44602,9 @@ s(303889,265629,{bonusID=7532,cost={{"i",137642,5}},f=25,lvl=90,pvp=1}),
 s(303882,265618,{bonusID=7532,cost={{"i",137642,5}},f=1,lvl=90,pvp=1}),
 s(303877,265613,{bonusID=7532,cost={{"i",137642,5}},f=35,lvl=90,pvp=1})}})}}),
 h(-47,{pvp=1,g={
-i(257194,{b=1,description="Rewarded within the first few wins in queued PvP Content.",pvp=1,rwp=120100})}})}})}}),
+i(257194,{b=1,description="Rewarded within the first few wins in queued PvP Content.",pvp=1,rwp=120100}),
+i(271341,{awp=120005,f=55,pvp=1,rwp=120100,spellID=1288884,g={
+i(271342,{awp=120001,f=55,pvp=1,spellID=1288889})}})}})}})}}),
 h(-291,{awp=30002,pvp=1,g={
 h(-12,{pvp=1,g={
 ach(397,{pvp=1}),
@@ -47763,7 +47765,10 @@ s(78338,134668,{b=1,f=29,pvp=1}),
 s(78340,134667,{b=1,f=23,pvp=1}),
 s(78337,134666,{b=1,f=20,pvp=1}),
 s(78343,134688,{b=1,f=25,pvp=1}),
-i(134691,{b=1,f=53,pvp=1})}}),
+i(134691,{b=1,f=53,pvp=1}),
+i(273831,{awp=120001,f=52,pvp=1}),
+i(273833,{awp=120001,f=52,pvp=1}),
+i(273834,{awp=120001,f=52,pvp=1})}}),
 i(135540,{b=1,description="Rewarded for winning a random battleground in the level 40-59 range before 9.0.",pvp=1,rwp=90001,u=2,g={
 s(77839,134672,{b=1,f=4,pvp=1,u=2}),
 s(77836,134670,{b=1,f=4,pvp=1,u=2}),
@@ -47975,7 +47980,9 @@ i(211773,{awp=100206,b=2,f=55,lvl=70,pvp=1,rwp=110002,spellID=432160,u=2})}}),
 i(224557,{awp=110002,b=1,f=55,pvp=1,g={
 i(225493,{b=2,f=55,lvl=80,pvp=1,rwp=110100,spellID=455075,u=2}),
 i(232790,{awp=110100,f=55,lvl=80,pvp=1,rwp=110200,spellID=471864,u=2}),
-i(232791,{awp=110200,f=55,lvl=80,pvp=1,spellID=471865})}})}}),
+i(232791,{awp=110200,f=55,lvl=80,pvp=1,spellID=471865})}}),
+i(258620,{awp=120001,b=1,f=55,pvp=1,g={
+i(258622,{f=55,lvl=90,pvp=1,rwp=120100,spellID=1263647})}})}}),
 m(1335,{awp=80100,pvp=1}),
 m(843,{awp=70200,pvp=1})}}),
 flt(100,{awp=50400,pvp=1,g={
@@ -48645,16 +48652,16 @@ i(163825,{b=1,pvp=1}),
 i(170539,{awp=80200,b=1,pvp=1})}}),
 h(-56,{description="Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",pvp=1}),
 h(-45,{pvp=1,g={
-q(58274,{awp=80300,description="Granted upon killing 10 Horde players without dying after you became an Assassin.",lvl=80,pvp=1,r=2,rwp=90001,u=2,g={
-title(414,{pvp=1,u=2}),
-toy(173951,{b=1,pvp=1,u=2}),
-i(174020,{pvp=1,spellID=313172,u=2}),
-crit(47765,{achID=14191,id=1,pvp=1,u=2})}}),
-q(58273,{awp=80300,description="Granted upon killing 10 Alliance players without dying after you became an Assassin.",lvl=80,pvp=1,r=1,rwp=90001,u=2,g={
-title(414,{pvp=1,u=2}),
-toy(173951,{b=1,pvp=1,u=2}),
-i(174020,{pvp=1,spellID=313172,u=2}),
-crit(47766,{achID=14191,id=1,pvp=1,u=2})}}),
+q(58274,{description="Granted upon killing 10 Horde players without dying after you became an Assassin.",lvl=80,pvp=1,r=2,g={
+title(414,{awp=80300,pvp=1,rwp=90001,u=2}),
+toy(173951,{awp=80300,b=1,pvp=1,rwp=90001,u=2}),
+i(174020,{awp=80300,pvp=1,rwp=90001,spellID=313172,u=2}),
+crit(47765,{achID=14191,awp=80300,id=1,pvp=1,rwp=90001,u=2})}}),
+q(58273,{description="Granted upon killing 10 Alliance players without dying after you became an Assassin.",lvl=80,pvp=1,r=1,g={
+title(414,{awp=80300,pvp=1,rwp=90001,u=2}),
+toy(173951,{awp=80300,b=1,pvp=1,rwp=90001,u=2}),
+i(174020,{awp=80300,pvp=1,rwp=90001,spellID=313172,u=2}),
+crit(47766,{achID=14191,awp=80300,id=1,pvp=1,rwp=90001,u=2})}}),
 q(52786,{lvl=10,pvp=1,r=1,rwp=100002,u=2,g={
 title(376,{pvp=1,r=1,u=2}),
 crit(40938,{achID=12568,awp=80001,id=1,pvp=1})}}),
@@ -48676,8 +48683,8 @@ ach(16590,{pvp=1,g={
 crit(55960,{achID=16601,id=2,pvp=1})}}),
 ach(17335,{awp=100005,maps={2022,2023,2024,2025,2214,2215,2248,2255,2339},pvp=1}),
 ach(17336,{awp=100005,maps={2022,2023,2024,2025,2214,2215,2248,2255,2339},pvp=1}),
-ach(17345,{awp=100005,maps={2022,2023,2024,2025,2214,2215,2248,2255,2339},pvp=1,g={
-title(492,{pvp=1})}}),
+ach(17345,{maps={2022,2023,2024,2025,2214,2215,2248,2255,2339},pvp=1,g={
+title(492,{awp=100005,pvp=1})}}),
 ach(16615,{cost={{"c",2123,3000}},pvp=1}),
 ach(16614,{cost={{"c",2123,750}},pvp=1}),
 ach(16603,{pvp=1,g={
@@ -48721,11 +48728,11 @@ ach(40091,{pvp=1,g={
 crit(66982,{achID=40091,maps={2248},pvp=1}),
 crit(66983,{achID=40091,maps={2214},pvp=1}),
 crit(66984,{achID=40091,maps={2255},pvp=1})}}),
-ach(40095,{pvp=1}),
-ach(40096,{pvp=1,g={
-toy(225969,{b=1,pvp=1})}}),
-ach(40089,{maps={2214,2215,2248,2255},providers={{"s",446869}},pvp=1}),
-ach(40090,{maps={2214,2215,2248,2255},providers={{"s",446869}},pvp=1}),
+ach(40095,{awp=110000,pvp=1,rwp=120000,u=2}),
+ach(40096,{awp=110000,pvp=1,rwp=120000,u=2,g={
+toy(225969,{b=1,pvp=1,u=2})}}),
+ach(40089,{maps={2214,2215,2248,2255},providers={{"o",441108},{"s",446869}},pvp=1}),
+ach(40090,{maps={2214,2215,2248,2255},providers={{"o",441108},{"s",446869}},pvp=1}),
 ach(40087,{maps={2214,2215,2248,2255},pvp=1,g={
 crit(67006,{achID=40097,id=1,pvp=1})}}),
 ach(40465,{maps={2214,2215,2248,2255},pvp=1,g={
@@ -48737,7 +48744,17 @@ ach(40466,{maps={2214,2215,2248,2255,2346},providers={{"s",271400}},pvp=1}),
 ach(40467,{maps={2214,2215,2248,2255,2346},providers={{"s",271400}},pvp=1}),
 ach(40468,{maps={2214,2215,2248,2255,2346},providers={{"s",271400}},pvp=1})}}),
 h(-56,{awp=110002,pvp=1,g={
-o(433370,{pvp=1,sym={{"select","itemID",224556},{"pop"}}})}}),
+o(433369,{pvp=1,sym={{"select","itemID",224556},{"pop"}},g={
+cu(1792,{pvp=1})}}),
+o(433370,{pvp=1,sym={{"select","itemID",224556},{"pop"}},g={
+cu(1792,{pvp=1})}}),
+o(441108,{coords={
+[2213]={{44.6,85.3}},
+[2214]={{62.5,48.8}},
+[2215]={{38.5,35}},
+[2248]={{62.3,20.3}}},crs={233446},description="Spawns ONCE per rotation in the matching zone determined by the zone where the Shadowlands PvP World Quest is active. The spawn can occur at any moment while that quest is up.\nArdenweald -> Isle of Dorn\nMaldraxxus -> Hallowfall\nRevendreth -> Azj-Kahet\nBastion -> The Ringing Deeps.\nThe box can be looted by many players of both factions within a few minutes after being opened. There's really no reason to fight about it. :)",pvp=1,g={
+cu(2123,{pvp=1,skipFill=1}),
+cu(1792,{pvp=1,skipFill=1})}})}}),
 h(-47,{awp=110002,pvp=1,g={
 cu(2123,{pvp=1,rwp=120001,u=2})}})}}),
 x(12,{pvp=1,g={
@@ -48777,7 +48794,10 @@ ach(61266,{pvp=1,g={
 crit(109643,{achID=61446,id=3,pvp=1})}}),
 i(257535,{b=1,f=55,lvl=90,pvp=1,rwp=120100,spellID=1261765})}})}})}}),
 h(-56,{awp=120001,pvp=1,g={
-o(433370,{pvp=1,sym={{"select","itemID",224556},{"pop"}}})}}),
+o(433369,{pvp=1,sym={{"select","itemID",224556},{"pop"}},g={
+cu(1792,{pvp=1})}}),
+o(433370,{pvp=1,sym={{"select","itemID",224556},{"pop"}},g={
+cu(1792,{pvp=1})}})}}),
 h(-47,{awp=120001,pvp=1,g={
 cu(2123,{pvp=1,rwp=130000})}})}})}})}});
 end);

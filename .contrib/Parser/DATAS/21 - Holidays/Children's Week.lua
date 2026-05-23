@@ -158,6 +158,7 @@ local WELL_LOVED_FIGURINE_VENDOR_GROUP = {
 	i(69648),	-- Legs (PET!)
 	i(167008),	-- Mr. Crabs (PET!)
 	i(23007),	-- Mr. Wiggles (PET!)
+	i(272287),	-- Nap Mat (TOY!)
 	i(32622),	-- Peanut (PET!)
 	i(167009),	-- Scaley (PET!)
 	i(66073),	-- Scooter the Snail (PET!)
@@ -2117,6 +2118,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["coord"] = { 55.8, 26.6, DORNOGAL },
 			["groups"] = {
 				i(140309, {	-- Prismatic Bauble (TOY!) (More accessible than Mad Merchant)
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_1_5 },	-- During June 2023
 					["cost"] = 2500000000,	-- 250,000g
 				}),
 			},

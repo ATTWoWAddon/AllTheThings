@@ -366,7 +366,6 @@ i(95568);	-- Sunreaver Beacon
 -- PATCH 5.3.0 --
 -----------------
 i(97921);	-- Bom'bay's Color-Seein' Sauce
-i(97994);	-- Darkmoon Seesaw
 i(98136);	-- Gastropod Shell
 i(97942);	-- Sen'jin Spirit Drum
 i(98132);	-- Shado-Pan Geyser Gun
@@ -545,6 +544,7 @@ i(127666);	-- Vial of Red Goo
 -- PATCH 6.2.2 --
 -----------------
 i(128807);	-- Coin of Many Faces
+i(97994);	-- Darkmoon Seesaw
 i(128636);	-- Endothermic Blaster
 i(129929);	-- Ever-Shifting Mirror
 i(129965);	-- Grizzlesnout's Fang
@@ -1584,8 +1584,21 @@ i(248485);	-- Wormhole Generator: Quel'Thalas
 ------------------
 i(268456);	-- Animated Bench
 i(268455);	-- Enchanted Hourglass
+i(272287);	-- Nap Mat
+i(272339);	-- Umbral Champion's Illustrious Banner
 --- Unsorted ---
 i(267472);	-- Gnomatic Projector
-i(272287);	-- Nap Mat
 i(267323);	-- Troll Scroll of Rainbow Roll
-i(272339);	-- Umbral Champion's Illustrious Banner
+
+------------------
+-- PATCH 12.0.7 --
+------------------
+i(259899);	-- Ashen Horn of the Fallen Keeper
+i(264313);	-- Madcap Redcap
+i(264367);	-- Mycomancer's Hearthspore
+i(260170);	-- Oathstone Fragment
+i(259335);	-- Photo Finisher
+--- Unsorted ---
+i(276370);	-- Lightveil Hearth Beacon
+i(276371);	-- Lightveil Recall Beacon
+i(264368);	-- ??

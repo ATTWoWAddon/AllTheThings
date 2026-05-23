@@ -2812,7 +2812,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 56.6, 23.6, AZSHARA },
 						{ 53.6, 23.8, AZSHARA },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
 				i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus (RECIPE!)

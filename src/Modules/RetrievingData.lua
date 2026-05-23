@@ -9,9 +9,11 @@ local _, app = ...;
 -- Encapsulates the functionality for determining whether a value is to be considered 'retrieving'
 
 -- Global locals
-local wipe, RETRIEVING_DATA = wipe, RETRIEVING_DATA
+local wipe,RETRIEVING_DATA
+	= wipe,RETRIEVING_DATA
 
 -- App locals
+local issecretvalue = app.WOWAPI.issecretvalue
 
 -- Module locals
 local RetrievingTexts = {
@@ -31,6 +33,7 @@ app.Modules.RetrievingData = api;
 -- Returns whether the provided string matches a string which indicates the data is not yet loaded in the Client
 local function IsRetrieving(text)
 	return (not text
+		or issecretvalue(text)
 		or RetrievingTexts[text]
 		or text:find(RETRIEVING_DATA)
 		or text:find("%[%]"))
@@ -40,7 +43,9 @@ end
 api.IsRetrieving = IsRetrieving;
 -- Returns whether the provided string is empty or equals RETRIEVING_DATA which indicates the data is not yet loaded in the Client (not used for Items or in general)
 api.IsRetrievingData = function(text)
-	return (not text or RetrievingTexts[text])
+	return (not text
+		or issecretvalue(text)
+		or RetrievingTexts[text])
 		-- make sure regardless of conditional return we return a true here for consistency
 		and true;
 end

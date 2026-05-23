@@ -247,6 +247,13 @@
 260686@@@Lil' Coalee
 3.80.0.65749
 255051@@@Gilded Fountain
+3.80.1.66860
+71488@@@Blossoming Ancient
+173842@@@Char
+264419@@@[PH] Lucky Dragon Recolor
+3.80.1.67155
+263232@@@The Sire's Ghastly Screecher
+263923@@@Sha-Warped Beaky
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -1872,7 +1879,6 @@
 71439@@@Image of Niuzao
 71441@@@Image of Chi-ji
 71457@@@Honor's Stand Gyrocopter
-71488@@@Blossoming Ancient
 71504@@@Siegecrafter Blackfuse
 71514@@@Gong
 71589@@@Big Blossom Digger
@@ -15905,7 +15911,6 @@
 173815@@@Baroness Vashj
 173816@@@Plague Deviser Marileth
 173817@@@Baroness Draka
-173842@@@Char
 173844@@@Fleshsewn Scavenger
 173846@@@Fleshsewn Scavenger
 173847@@@Carpal
@@ -24261,6 +24266,38 @@
 260381@@@Scouting Table
 12.0.1.66384
 264213@@@Abysslick
+12.0.1.66431
+264499@@@Archmage Lan'dalock
+12.0.1.66527
+256698@@@Roofus
+264469@@@Kapara
+264857@@@Obscurion Obliterator
+264858@@@Abyssal Caller
+12.0.1.66838
+239798@@@Vereesa Windrunner
+239844@@@Blood Elf Spellbreaker
+239849@@@Twilight Void Swarmer
+239854@@@Twilight Shadowblade
+239856@@@Twilight Duskwarden
+239857@@@Twilight Voidcaller
+239863@@@Shadowguard Engineer
+239915@@@Nightborne Arcanist
+239948@@@Silver Covenant Ranger
+239949@@@Night Elf Sentinel
+239950@@@Night Elf Archer
+239953@@@Devouring Colossus
+239956@@@Devouring Voidripper
+239959@@@Devouring Maw
+239960@@@Devouring Darkcaster
+239967@@@Domanaar Shadowlord
+239970@@@Imperator Nocturnius
+239976@@@Void Elf Riftwalker
+240288@@@Devouring Remnant
+240513@@@Twilight Nether-Rider
+240514@@@Devouring Skystinger
+242981@@@Twilight Living Shadow
+244647@@@Shandris Feathermoon
+248342@@@Nightborne Telemancer
 12.0.5.66330
 61317@@@Long-Tailed Mole
 252608@@@Domanaar Ritualist
@@ -24290,3 +24327,90 @@
 263227@@@[DNT] Death Bunny
 264250@@@Nina Mear
 264252@@@Mark Mear
+12.0.5.66591
+264933@@@Ka'bubb
+264934@@@Ka'bubb
+12.0.5.66741
+265196@@@Ka'bubb
+12.0.7.67227
+230246@@@Li Li Stormstout
+231891@@@Lorewalker Cho
+248113@@@Fire Ring
+248206@@@Airborne Sun Blossom
+248207@@@Fire Ring
+248208@@@Fire Ring
+248209@@@Fire Ring
+248210@@@Fire Ring
+248211@@@Fire Ring
+248212@@@Fire Ring
+248213@@@Fire Ring
+248214@@@Fire Ring
+250857@@@General Purpose Stalker
+252369@@@Boost
+253222@@@Thrall
+253655@@@Lor'themar Theron
+253656@@@Lady Liadrin
+253660@@@Queen Talanji
+253661@@@Rokhan
+253727@@@Li Li Stormstout
+253804@@@Loa Speaker Kinduru
+253806@@@Zul'jan
+253832@@@Loa Speaker Kinduru
+253833@@@Befuddled Amani Mask
+253834@@@Zul'jan
+253846@@@Loa Speaker Kinduru
+253848@@@Zul'jarra
+254217@@@Rezan
+254224@@@Nalorakk
+254238@@@King Rastakhan
+254242@@@Hakkar the Soulflayer
+254244@@@Kimbul
+254245@@@Hir'eek
+254247@@@Krag'wa the Huge
+254248@@@Bwonsamdi
+254249@@@Kevo ya Siti
+254254@@@Mueh'zala
+254258@@@Forming Loa
+254260@@@Forming Loa
+254262@@@Forming Loa
+256080@@@Shadowflame Remnant
+256547@@@Thrall
+256565@@@Sleepy Mandrake
+257252@@@Zandalari Prophet
+257256@@@Zandalari Citizen
+257285@@@Gurubashi Cultist
+257343@@@Amani Villager
+257344@@@Kinduru
+257438@@@Wild Panther
+257439@@@Wild Butterfly
+257474@@@Gurubashi Villager
+257475@@@Gurubashi Warrior
+257934@@@Zekhan
+258035@@@Vereesa Windrunner
+259839@@@Orweyna
+260149@@@Kinduwu
+260224@@@Underhold Elite Guard
+261089@@@Li Li Stormstout
+261090@@@Mishi
+261847@@@Loa Speaker Kinduru
+261849@@@Zul'jan
+261854@@@Enchanted Amani Mask
+262693@@@[DNT] Ethereal Skiff Gun
+262985@@@Emberlyn
+263482@@@Riftblade Maella
+263946@@@Loa Speaker Kinduru
+264024@@@Riftblade Maella
+264065@@@Magister Umbric
+264066@@@Grand Magister Rommath
+264069@@@Magister Umbric
+264070@@@Grand Magister Rommath
+264879@@@Decimus
+265015@@@Hex Lord Malacrass
+265154@@@Invisible Bunny - Fireworks
+265303@@@Decimus
+266035@@@Background
+266036@@@Lightveil Decrypter
+266548@@@Invisible Bunny - Explosion
+266577@@@Frosticus Maximus
+266580@@@Silento
+266912@@@Pinky

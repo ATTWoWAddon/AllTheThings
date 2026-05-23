@@ -1,4 +1,3 @@
-
 -- Table Lib
 local _, app = ...;
 
@@ -123,15 +122,38 @@ app.TableKeyDiff = function(a,b)
 	end
     -- Check keys in a that are missing in b
     for k in next,a do
-        if not b[k] then
+        if b[k] == nil then
             return true
         end
     end
 
     -- Check keys in b that are missing in a
     for k in next,b do
-        if not a[k] then
+        if a[k] == nil then
             return true
         end
     end
+end
+-- Returns true if the two tables do not have any key-based differences
+app.TablesIdentical = function(a, b)
+    if type(a) ~= "table" or type(b) ~= "table" then return end
+    if a == b then return true end
+
+    for k, va in next,a do
+        if b[k] ~= va then return end
+    end
+    for k, vb in next,b do
+        if a[k] ~= vb then return end
+    end
+
+    return true
+end
+app.CountTable = function(a)
+    if type(a) ~= "table" then return -1 end
+
+    local c = 0
+    for _ in next,a do
+        c = c + 1
+    end
+    return c
 end

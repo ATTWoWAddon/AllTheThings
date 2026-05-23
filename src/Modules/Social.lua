@@ -284,6 +284,8 @@ SlashCmdList.ALLTHETHINGSYOU = function(cmd)
 				local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true,IgnoreCache=true});
 				app.SetSkipLevel(0);
 				if group then app:CreateMiniListForGroup(group); end
+			else
+				app.print("Cannot open popout for Target!", EVENTTRACE_SECRET_FMT:format(guid))
 			end
 		end
 	end

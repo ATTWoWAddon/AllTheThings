@@ -53,7 +53,9 @@ WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"]
 		r(59490),	-- Book of Stars
 		r(59478),	-- Book of Survival
 		r(57709),	-- Celestial Ink
+		-- #if BEFORE 10.2.7
 		r(59387),	-- Certificate of Ownership
+		-- #endif
 		r(59502),	-- Darkmoon Card
 		r(57706),	-- Dawnstar Ink
 		r(57710),	-- Fiery Ink

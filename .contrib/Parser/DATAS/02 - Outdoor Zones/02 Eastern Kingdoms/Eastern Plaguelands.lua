@@ -1791,7 +1791,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27465, {	-- Argent Call: The Noxious Glade
 					["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
-					["qg"] = 11034,	-- Lord Maxwell Tyrosus
+					["qgs"] = {
+						-- #if AFTER MID
+						260828,	-- Lord Maxwell Tyrosus
+						-- #else
+						11034,	-- Lord Maxwell Tyrosus
+						-- #endif
+					},
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 43.4, 87.3, LIGHTS_HOPE_CHAPEL },
@@ -1819,7 +1825,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27464, {	-- Argent Call: The Trial of the Crypt
 					["sourceQuest"] = 27463,	-- A Boyhood Dream
-					["qg"] = 11034,	-- Lord Maxwell Tyrosus
+					["qgs"] = {
+						-- #if AFTER MID
+						260828,	-- Lord Maxwell Tyrosus
+						-- #else
+						11034,	-- Lord Maxwell Tyrosus
+						-- #endif
+					},
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 43.4, 87.3, LIGHTS_HOPE_CHAPEL },
@@ -2873,7 +2885,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27369, {	-- Greasing the Wheel
 					["sourceQuest"] = 27368,	-- Just Encased
-					["qg"] = 45431,	-- Gidwin Goldbraids
+					["qgs"] = {
+						45428,	-- Gidwin Goldbraids
+						45431,	-- Gidwin Goldbraids
+					},
 					["coord"] = { 4.1, 36.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -4274,7 +4289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27459, {	-- The Brotherhood of Light
-					["sourceQuest"] = 27463,	-- A Boyhood Dream
+					--["sourceQuest"] = 27463,	-- A Boyhood Dream
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered
 					["coords"] = {
 						-- #if AFTER LEGION
@@ -4899,7 +4914,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27684, {	-- Visitors
-					["qg"] = 11034,	-- Lord Maxwell Tyrosus
+					["qgs"] = {
+						-- #if AFTER MID
+						260828,	-- Lord Maxwell Tyrosus
+						-- #else
+						11034,	-- Lord Maxwell Tyrosus
+						-- #endif
+					},
 					["coord"] = { 43.3, 87.2, LIGHTS_HOPE_CHAPEL },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
@@ -6002,7 +6023,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 83.6, 44.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						8546,	-- Dark Adept <Cult of the Damned>
 						8550,	-- Shadowmage <Cult of the Damned>

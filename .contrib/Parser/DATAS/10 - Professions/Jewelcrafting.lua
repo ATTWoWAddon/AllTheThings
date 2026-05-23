@@ -114,6 +114,346 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 	}))),
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+		q(40523, {	-- Facet-nating Friends
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.3, 34.7, LEGION_DALARAN },
+			["groups"] = {
+				r(195116, {	-- Jewelcrafting (Legion Master)
+					["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+					["collectible"] = false,
+				}),
+				applyclassicphase(BFA_PHASE_ONE, r(264546, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Jewelcrafting
+				applyclassicphase(DF_PHASE_ONE, r(382975, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Jewelcrafting
+			},
+		}),
+		q(40529, {	-- Truly Outrageous
+			["sourceQuests"] = { 40523 },	-- Facet-nating Friends
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			["cost"] = {{"i", 129100, 5}},	-- 5x Gem Chip
+			["groups"] = {
+				r(195850),	-- Versatile Skystone
+			},
+		}),
+		q(40530, {	-- An Eye for Detail
+			["sourceQuests"] = { 40529 },	-- Truly Outrageous
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+		}),
+		q(40531, {	-- Swift Vengeance
+			["sourceQuests"] = { 40530 },	-- An Eye for Detail
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			["groups"] = {
+				i(132259),	-- Bag of Real Jewels (QI!)
+			},
+		}),
+		q(40532, {	-- Making the Cut (Deadly Deep Amber)
+			["sourceQuest"] = 40531,	-- Swift Vengeance
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			["groups"] = {
+				recipe(195848),	-- Deadly Deep Amber
+				i(132265),	-- Crude Deadly Deep Amber (QI!)
+			},
+		}),
+		q(40534, {	-- Making the Cut (Masterful Queen's Opal)
+			["sourceQuest"] = 40531,	-- Swift Vengeance
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			["groups"] = {
+				recipe(195851),	-- Masterful Queen's Opal
+				i(132267),	-- Crude Masterful Queen's Opal (QI!)
+			},
+		}),
+		q(40533, {	-- Making the Cut (Quick Azsunite)
+			["sourceQuest"] = 40531,	-- Swift Vengeance
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			["groups"] = {
+				recipe(195849),	-- Quick Azsunite
+				i(132266),	-- Crude Quick Azsunite (QI!)
+			},
+		}),
+		q(40524, {	-- A Familiar Ring to It
+			["sourceQuest"] = 40523,	-- Facet-nating Friends
+			["provider"] = { "n", 93527 },	-- Timothy Jones
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+		}),
+		q(40525, {	-- Getting the Band Back Together
+			["sourceQuest"] = 40524,	-- A Familiar Ring to It
+			["provider"] = { "n", 100538 },	-- Timothy Jones
+			["coord"] = { 46.6, 41.4, AZSUNA },
+			["groups"] = {
+				i(132368),	-- First Piece of the Band of Farondis (QI!)
+				i(132875),	-- Second Piece of the Band of Farondis (QI!)
+				i(132876),	-- Third Piece of the Band of Farondis (QI!)
+			},
+		}),
+		q(42214, {	-- Knocked for a Loop
+			["sourceQuest"] = 40524,	-- A Familiar Ring to It
+			["provider"] = { "n", 100538 },	-- Timothy Jones
+			["coord"] = { 46.6, 41.4, AZSUNA },
+			["groups"] = {
+				i(132370),	-- Salteye Bangle
+			},
+		}),
+		q(40528, {	-- Finishing Touches (Azsunite Loop)
+			["sourceQuests"] = {
+				42214,	-- Knocked for a Loop
+				40525,	-- Getting the Band Back Together
+			},
+			["provider"] = { "n", 100538 },	-- Timothy Jones
+			["coord"] = { 46.6, 41.4, AZSUNA },
+			["groups"] = {
+				i(137215),	-- Cut Azsunite (QI!)
+				r(195858),	-- Azsunite Loop [Rank 1] (RECIPE!)
+			},
+		}),
+		q(40526, {	-- Finishing Touches (Skystone Loop)
+			["sourceQuests"] = {
+				42214,	-- Knocked for a Loop
+				40525,	-- Getting the Band Back Together
+			},
+			["provider"] = { "n", 100538 },	-- Timothy Jones
+			["coord"] = { 46.6, 41.4, AZSUNA },
+			["groups"] = {
+				i(137212),	-- Cut Skystone (QI!)
+				r(195857),	-- Skystone Loop [Rank 1] (RECIPE!)
+			},
+		}),
+		q(40527, {	-- Finishing Touches (Deep Amber Loop)
+			["sourceQuests"] = {
+				42214,	-- Knocked for a Loop
+				40525,	-- Getting the Band Back Together
+			},
+			["provider"] = { "n", 100538 },	-- Timothy Jones
+			["coord"] = { 46.6, 41.4, AZSUNA },
+			["groups"] = {
+				i(137214),	-- Cut Deep Amber (QI!)
+				r(195856),	-- Deep Amber Loop [Rank 1] (RECIPE!)
+			},
+		}),
+		q(40535, {	-- Raising the Drogbar
+			["sourceQuests"] = {
+				40532,	-- Making the Cut (Deadly Deep Amber)
+				40534,	-- Making the Cut (Masterful Queen's Opal)
+				40533,	-- Making the Cut (Quick Azsunite)
+				40527,	-- Finishing Touches (Deep Amber Loop)
+				40526,	-- Finishing Touches (Skystone Loop)
+				40528,	-- Finishing Touches (Azsunite Loop)
+			},
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			["groups"] = {
+				i(132446),	-- Jabrul's Jewels
+			},
+		}),
+		q(40536, {	-- Bruls Before Jewels
+			["sourceQuest"] = 40535,	-- Raising the Drogbar
+			["provider"] = { "n", 100776 },	-- Jabrul <Jewelcrafting Master>
+			["coord"] = { 45.3, 73.3, VALSHARAH },
+			["groups"] = {
+				i(132469),	-- Design: Azsunite Pendant [Rank 1]
+				i(132468),	-- Design: Deep Amber Pendant [Rank 1]
+				i(132467),	-- Design: Skystone Pendant [Rank 1]
+			},
+		}),
+		q(40538, {	-- Lapidary Lessons
+			["sourceQuests"] = { 40536 },	-- Bruls Before Jewels
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			["groups"] = {
+				r(195854),	-- Versatile Maelstrom Sapphire (RECIPE!)
+			},
+		}),
+		q(40539, {	-- Hidden Intentions
+			["sourceQuests"] = { 40536 },	-- Bruls Before Jewels
+			["provider"] = { "n", 100939 },	-- Clive Cozen
+			["coord"] = { 38.3, 36.2, LEGION_DALARAN },
+			["groups"] = {
+				r(195881),	-- Jeweled Lockpick (RECIPE!)
+				i(137624),	-- Black Market Diamond (QI!)
+				i(137625),	-- Diamond Lockpicks (QI!)
+				i(132882),	-- Lockpick Design (QI!)
+			},
+		}),
+		q(40540, {	-- Come at Me, Brul
+			["sourceQuests"] = { 40538 },	-- Lapidary Lessons
+			["provider"] = { "n", 93526 },	-- Tiffany Cartier
+			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+		}),
+		q(40541, {	-- The Charge Within
+			["sourceQuests"] = { 40540 },	-- Come at Me, Brul
+			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			["coord"] = { 42.2, 35.0, STORMHEIM },
+			["groups"] = {
+				i(132760),	-- Conducting Jewel (QI!)
+			},
+		}),
+		q(40546, {	-- Mysteries of Nature
+			["sourceQuests"] = { 40541 },	-- The Charge Within
+			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			["coord"] = { 42.2, 35.0, STORMHEIM },
+			["groups"] = {
+				r(195883),	-- Chatterstone
+				i(132820),	-- Dragon Glass (QI!)
+			},
+		}),
+		q(40542, {	-- Eyes of Nashal (Deadly Eye of Prophecy)
+			["sourceQuests"] = { 40546 },	-- Mysteries of Nature
+			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			["coord"] = { 42.2, 35.0, STORMHEIM },
+			["groups"] = {
+				r(195852),	-- Deadly Eye of Prophecy
+				i(132767),	-- Eye of Nashal (QI!)
+			},
+		}),
+		q(40543, {	-- Eyes of Nashal (Quick Dawnlight)
+			["sourceQuests"] = { 40546 },	-- Mysteries of Nature
+			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			["coord"] = { 42.2, 35.0, STORMHEIM },
+			["groups"] = {
+				r(195853),	-- Quick Dawnlight
+				i(132768),	-- Eye of Nashal (QI!)
+			},
+		}),
+		q(40544, {	-- Eyes of Nashal (Masterful Shadowruby)
+			["sourceQuests"] = { 40546 },	-- Mysteries of Nature
+			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			["coord"] = { 42.2, 35.0, STORMHEIM },
+			["groups"] = {
+				r(195855),	-- Masterful Shadowruby
+				i(132769),	-- Eye of Nashal (QI!)
+			},
+		}),
+		q(40556, {	-- Jabrul Needs You
+			["sourceQuests"] = {
+				40542,	-- Eyes of Nashal
+				40543,	-- Eyes of Nashal
+				40544,	-- Eyes of Nashal
+			},
+			["provider"] = { "o", 246250 },	-- Letter From Jabrul
+			["coord"] = { 40.0, 35.3, LEGION_DALARAN },
+			["isBreadcrumb"] = true,
+		}),
+		q(40547, {	-- To Dalaran, With Love
+			["sourceQuests"] = { 40556 },	-- Jabrul Needs You
+			["provider"] = { "n", 100521 },	-- Jabrul
+			["coord"] = { 56.4, 59.6, AZSUNA },
+			["groups"] = {
+				i(132823),	-- Wooden Plank
+			},
+		}),
+		q(40558, {	-- Socket to Me
+			["sourceQuests"] = { 40547 },	-- To Dalaran, With Love
+			["provider"] = { "o", 246154 },	-- Broken Toy Box
+			["coord"] = { 40.0, 35.3, LEGION_DALARAN },
+			["groups"] = {
+				r(195882),	-- JewelCraft
+				i(132839),	-- Crystal Core (QI!)
+				i(132841),	-- Crystal Heart (QI!)
+				i(132843),	-- Crystal Plume (QI!)
+				i(132840),	-- Crystal Scale (QI!)
+				i(132842),	-- Crystal Shard (QI!)
+				i(132838),	-- Crystal Shell (QI!)
+				i(132976),	-- Golden Hare (QI!)
+				i(132925),	-- Tiffany's Notebook (QI!)
+			},
+		}),
+		q(40559, {	-- Black Rook Hold: The Raven's Wisdom
+			["sourceQuests"] = { 40558 },	-- Socket to Me
+			["provider"] = { "n", 93527 },	-- Timothy Jones
+			["coord"] = { 39.8, 35.0, LEGION_DALARAN },
+			["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
+			["groups"] = {
+				r(195864),	-- Dawnlight Band [Rank 1] (RECIPE!)
+				i(132859),	-- Delayeth's Journal: The Jewels of the Isles (QI!)
+			},
+		}),
+		q(40561, {	-- Halls of Valor: Jewel of the Heavens
+			["sourceQuests"] = { 40558 },	-- Socket to Me
+			["provider"] = { "n", 93527 },	-- Timothy Jones
+			["coord"] = { 39.8, 35.0, LEGION_DALARAN },
+			["maps"] = { 703, 704, 705 },	-- Halls of Valor
+			["groups"] = {
+				r(195863),	-- Maelstrom Band [Rank 1] (RECIPE!)
+				i(132866),	-- Thrymja, Ring of the Gods (QI!)
+			},
+		}),
+		q(40560, {	-- Maw of Souls: Spiriting Away
+			["sourceQuests"] = { 40558 },	-- Socket to Me
+			["provider"] = { "n", 93527 },	-- Timothy Jones
+			["coord"] = { 39.8, 35.0, LEGION_DALARAN },
+			["maps"] = { 706, 707, 708 },	-- Maw of Souls
+			["groups"] = {
+				r(195862),	-- Prophetic Band [Rank 1] (RECIPE!)
+				i(132862),	-- Ring of the Fallen (QI!)
+			},
+		}),
+		q(40562, {	-- A Personal Touch
+			["sourceQuests"] = {
+				40559,	-- Black Rook Hold: The Raven's Wisdom
+				40561,	-- Halls of Valor: Jewel of the Heavens
+				40560,	-- Maw of Souls: Spiriting Away
+			},
+			["provider"] = { "n", 93543 },	-- Sminx Glasseye
+			["coord"] = { 39.8, 35.0, LEGION_DALARAN },
+			["groups"] = {
+				r(195873),	-- Ancient Maelstrom Amulet [Rank 1] (RECIPE!)
+				r(195866),	-- Blessed Dawnlight Medallion [Rank 1] (RECIPE!)
+				r(195876),	-- Grim Furystone Gorget [Rank 1] (RECIPE!)
+				r(195872),	-- Intrepid Necklace of Prophecy [Rank 1] (RECIPE!)
+				r(195875),	-- Raging Furystone Gorget [Rank 1] (RECIPE!)
+				r(195874),	-- Righteous Dawnlight Medallion [Rank 1] (RECIPE!)
+				r(195865),	-- Sorcerous Shadowruby Pendant [Rank 1] (RECIPE!)
+				r(195868),	-- Subtle Shadowruby Pendant [Rank 1] (RECIPE!)
+				r(195871),	-- Sylvan Maelstrom Amulet [Rank 1] (RECIPE!)
+				r(195869),	-- Tranquil Necklace of Prophecy [Rank 1] (RECIPE!)
+				r(195867),	-- Twisted Pandemonite Choker [Rank 1] (RECIPE!)
+				r(195870),	-- Vindictive Pandemonite Choker [Rank 1] (RECIPE!)
+				i(139886),	-- Custom Jewelry Order (QI!)
+				i(139887),	-- Nightborne Jewelry Case (QI!)
+				i(132867),	-- Nightborne Loupe (QI!)
+			},
+		}),
+		------ 7.3.0 ------
+		q(48075, {	-- A Colorful Key
+			["sourceQuests"] = { 46941 },	-- The Path Forward
+			["provider"] = { "n", 125343 },		-- Vorel
+			["coord"] = { 44.5, 73.4, THE_VINDICAAR_KROKUUN_UPPER },
+			["timeline"] = { ADDED_7_3_0 },
+			["groups"] = {
+				r(247771),	-- Deadly Deep Chemirine
+				r(247772),	-- Quick Lightsphene
+				r(247773),	-- Masterful Argulite
+				r(247774),	-- Versatile Labradorite
+				i(151876),	-- Vorel's Design Book (QI!)
+			},
+		}),
+		q(48076, {	-- A Crowning Achievment
+			["sourceQuests"] = { 48075 },	-- A Colorful Key
+			["provider"] = { "n", 125343 },		-- Vorel
+			["coord"] = { 44.5, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
+			["timeline"] = { ADDED_7_3_0 },
+			["groups"] = {
+				i(151724),	-- Design: Empyrial Cosmic Crown [Rank 1] (RECIPE!)
+				i(151727),	-- Design: Empyrial Deep Crown [Rank 1] (RECIPE!)
+				i(151730),	-- Design: Empyrial Elemental Crown [Rank 1] (RECIPE!)
+				i(151733),	-- Design: Empyrial Titan Crown [Rank 1] (RECIPE!)
+				r(248937, {["u"]=TRAINING}),	-- Empyrial Circlet
+				r(248940, {["u"]=TRAINING}),	-- Empyrial Crown
+				r(248939, {["u"]=TRAINING}),	-- Empyrial Florid Malachite Setting
+				r(248938, {["u"]=TRAINING}),	-- Empyrial Hesselian Setting
+				i(151931),	-- Empyrial Circlet (QI!)
+				i(151878),	-- Empyrial Crown (QI!)
+				i(151933),	-- Empyrial Florid Malachite Setting (QI!)
+				i(151932),	-- Empyrial Hesselian Setting (QI!)
+				
+			},
+		}),
+	})),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18773, {	-- Jewelhammer's Focus
@@ -5000,826 +5340,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				}
 			}
 		}
-	})),
-	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, {
-		{
-			["name"] = "Reagents and Research",
-			["categoryID"] = 374,
-			["groups"] = {
-				{
-					["name"] = "Primal Gemcutting",
-					["recipeID"] = 182127
-				},
-				{
-					["name"] = "Secrets of Draenor Jewelcrafting",
-					["recipeID"] = 176087
-				},
-				{
-					["name"] = "Taladite Crystal",
-					["recipeID"] = 170832,
-					["timeline"] = { CREATED_6_0_2 },
-				},
-				{
-					["name"] = "Taladite Crystal",
-					["recipeID"] = 170700,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,
-					-- Beleive this is tied to the non-JC users
-					-- #endif
-				}
-			}
-		},
-		{
-			["name"] = "Jewelry Enhancers",
-			["categoryID"] = 375,
-			["groups"] = {
-				{
-					["name"] = "Mighty Taladite Amplifier",
-					["timeline"] = { REMOVED_9_0_1 },
-					["recipeID"] = 187493,
-				},
-				{
-					["name"] = "Savage Taladite Amplifier",
-					["timeline"] = { REMOVED_9_0_1 },
-					["recipeID"] = 187517,
-				},
-				{
-					["name"] = "Taladite Amplifier",
-					["timeline"] = { REMOVED_9_0_1 },
-					["recipeID"] = 170702,
-				},
-				{
-					["name"] = "Taladite Recrystalizer",
-					["recipeID"] = 170701
-				}
-			}
-		},
-		{
-			["name"] = "Jewelry",
-			["categoryID"] = 376,
-			["groups"] = {
-				{
-					["name"] = "Glowing Blackrock Band",
-					["recipeID"] = 170710
-				},
-				{
-					["name"] = "Glowing Iron Band",
-					["recipeID"] = 170704
-				},
-				{
-					["name"] = "Glowing Iron Choker",
-					["recipeID"] = 170707
-				},
-				{
-					["name"] = "Glowing Taladite Pendant",
-					["recipeID"] = 170716
-				},
-				{
-					["name"] = "Glowing Taladite Ring",
-					["recipeID"] = 170713
-				},
-				{
-					["name"] = "Shifting Blackrock Band",
-					["recipeID"] = 170711
-				},
-				{
-					["name"] = "Shifting Iron Band",
-					["recipeID"] = 170705
-				},
-				{
-					["name"] = "Shifting Iron Choker",
-					["recipeID"] = 170708
-				},
-				{
-					["name"] = "Shifting Taladite Pendant",
-					["recipeID"] = 170717
-				},
-				{
-					["name"] = "Shifting Taladite Ring",
-					["recipeID"] = 170714
-				},
-				{
-					["name"] = "Whispering Blackrock Band",
-					["recipeID"] = 170712
-				},
-				{
-					["name"] = "Whispering Iron Band",
-					["recipeID"] = 170706
-				},
-				{
-					["name"] = "Whispering Iron Choker",
-					["recipeID"] = 170709
-				},
-				{
-					["name"] = "Whispering Taladite Pendant",
-					["recipeID"] = 170718
-				},
-				{
-					["name"] = "Whispering Taladite Ring",
-					["recipeID"] = 170715
-				}
-			}
-		},
-		{
-			["name"] = "Gems",
-			["categoryID"] = 377,
-			["groups"] = {
-				{
-					["name"] = "Critical Strike Taladite",
-					["recipeID"] = 170719
-				},
-				{
-					["name"] = "Greater Critical Strike Taladite",
-					["recipeID"] = 170725
-				},
-				{
-					["name"] = "Greater Haste Taladite",
-					["recipeID"] = 170726
-				},
-				{
-					["name"] = "Greater Mastery Taladite",
-					["recipeID"] = 170727
-				},
-				{
-					["name"] = "Greater Stamina Taladite",
-					["recipeID"] = 170730
-				},
-				{
-					["name"] = "Greater Versatility Taladite",
-					["recipeID"] = 170729
-				},
-				{
-					["name"] = "Haste Taladite",
-					["recipeID"] = 170720
-				},
-				{
-					["name"] = "Immaculate Critical Strike Taladite",
-					["recipeID"] = 187634
-				},
-				{
-					["name"] = "Immaculate Haste Taladite",
-					["recipeID"] = 187635
-				},
-				{
-					["name"] = "Immaculate Mastery Taladite",
-					["recipeID"] = 187636
-				},
-				{
-					["name"] = "Immaculate Stamina Taladite",
-					["recipeID"] = 187640
-				},
-				{
-					["name"] = "Immaculate Versatility Taladite",
-					["recipeID"] = 187639
-				},
-				{
-					["name"] = "Mastery Taladite",
-					["recipeID"] = 170721
-				},
-				{
-					["name"] = "Stamina Taladite",
-					["recipeID"] = 170724
-				},
-				{
-					["name"] = "Versatility Taladite",
-					["recipeID"] = 170723
-				}
-			}
-		},
-		{
-			["name"] = "Other",
-			["categoryID"] = 378,
-			["groups"] = {
-				{
-					["name"] = "Prismatic Focusing Lens",
-					["recipeID"] = 170732
-				},
-				{
-					["name"] = "Reflecting Prism",
-					["recipeID"] = 170731
-				}
-			}
-		}
-	})),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
-		{
-			["name"] = "Training",
-			["categoryID"] = 536,
-			["groups"] = {
-				{
-					["name"] = "Empyrial Circlet",
-					["recipeID"] = 248937,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,				-- Profession Training Recipe
-					-- #endif
-				},
-				{
-					["name"] = "Empyrial Crown",
-					["recipeID"] = 248940,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,				-- Profession Training Recipe
-					-- #endif
-				},
-				{
-					["name"] = "Empyrial Florid Malachite Setting",
-					["recipeID"] = 248939,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,				-- Profession Training Recipe
-					-- #endif
-				},
-				{
-					["name"] = "Empyrial Hesselian Setting",
-					["recipeID"] = 248938,
-					-- #if NOT ANYCLASSIC
-					["u"] = TRAINING,				-- Profession Training Recipe
-					-- #endif
-				},
-			},
-		},
-		{
-			["name"] = "Rings",
-			["categoryID"] = 465,
-			["groups"] = {
-				{
-					["name"] = "Azsunite Loop",
-					["nextRecipeID"] = 195904,
-					["recipeID"] = 195858
-				},
-				{
-					["name"] = "Azsunite Loop",
-					["nextRecipeID"] = 195925,
-					["previousRecipeID"] = 195858,
-					["recipeID"] = 195904
-				},
-				{
-					["name"] = "Azsunite Loop",
-					["previousRecipeID"] = 195904,
-					["recipeID"] = 195925
-				},
-				{
-					["name"] = "Dawnlight Band",
-					["nextRecipeID"] = 195910,
-					["recipeID"] = 195864
-				},
-				{
-					["name"] = "Dawnlight Band",
-					["nextRecipeID"] = 195931,
-					["previousRecipeID"] = 195864,
-					["recipeID"] = 195910
-				},
-				{
-					["name"] = "Dawnlight Band",
-					["previousRecipeID"] = 195910,
-					["recipeID"] = 195931
-				},
-				{
-					["name"] = "Deep Amber Loop",
-					["nextRecipeID"] = 195902,
-					["recipeID"] = 195856
-				},
-				{
-					["name"] = "Deep Amber Loop",
-					["nextRecipeID"] = 195923,
-					["previousRecipeID"] = 195856,
-					["recipeID"] = 195902
-				},
-				{
-					["name"] = "Deep Amber Loop",
-					["previousRecipeID"] = 195902,
-					["recipeID"] = 195923
-				},
-				{
-					["name"] = "Maelstrom Band",
-					["nextRecipeID"] = 195909,
-					["recipeID"] = 195863
-				},
-				{
-					["name"] = "Maelstrom Band",
-					["nextRecipeID"] = 195930,
-					["previousRecipeID"] = 195863,
-					["recipeID"] = 195909
-				},
-				{
-					["name"] = "Maelstrom Band",
-					["previousRecipeID"] = 195909,
-					["recipeID"] = 195930
-				},
-				{
-					["name"] = "Prophetic Band",
-					["nextRecipeID"] = 195908,
-					["recipeID"] = 195862
-				},
-				{
-					["name"] = "Prophetic Band",
-					["nextRecipeID"] = 195929,
-					["previousRecipeID"] = 195862,
-					["recipeID"] = 195908
-				},
-				{
-					["name"] = "Prophetic Band",
-					["previousRecipeID"] = 195908,
-					["recipeID"] = 195929
-				},
-				{
-					["name"] = "Queen's Opal Loop",
-					["nextRecipeID"] = 209606,
-					["recipeID"] = 209603
-				},
-				{
-					["name"] = "Queen's Opal Loop",
-					["nextRecipeID"] = 209609,
-					["previousRecipeID"] = 209603,
-					["recipeID"] = 209606
-				},
-				{
-					["name"] = "Queen's Opal Loop",
-					["previousRecipeID"] = 209606,
-					["recipeID"] = 209609
-				},
-				{
-					["name"] = "Shadowruby Band",
-					["nextRecipeID"] = 209608,
-					["recipeID"] = 209605
-				},
-				{
-					["name"] = "Shadowruby Band",
-					["nextRecipeID"] = 209611,
-					["previousRecipeID"] = 209605,
-					["recipeID"] = 209608
-				},
-				{
-					["name"] = "Shadowruby Band",
-					["previousRecipeID"] = 209608,
-					["recipeID"] = 209611
-				},
-				{
-					["name"] = "Skystone Loop",
-					["nextRecipeID"] = 195903,
-					["recipeID"] = 195857
-				},
-				{
-					["name"] = "Skystone Loop",
-					["nextRecipeID"] = 195924,
-					["previousRecipeID"] = 195857,
-					["recipeID"] = 195903
-				},
-				{
-					["name"] = "Skystone Loop",
-					["previousRecipeID"] = 195903,
-					["recipeID"] = 195924
-				}
-			}
-		},
-		{
-			["name"] = "Necklaces",
-			["categoryID"] = 507,
-			["groups"] = {
-				{
-					["name"] = "Ancient Maelstrom Amulet",
-					["nextRecipeID"] = 195919,
-					["recipeID"] = 195873
-				},
-				{
-					["name"] = "Ancient Maelstrom Amulet",
-					["nextRecipeID"] = 195940,
-					["previousRecipeID"] = 195873,
-					["recipeID"] = 195919
-				},
-				{
-					["name"] = "Ancient Maelstrom Amulet",
-					["previousRecipeID"] = 195919,
-					["recipeID"] = 195940
-				},
-				{
-					["name"] = "Azsunite Pendant",
-					["nextRecipeID"] = 195907,
-					["recipeID"] = 195861
-				},
-				{
-					["name"] = "Azsunite Pendant",
-					["nextRecipeID"] = 195928,
-					["previousRecipeID"] = 195861,
-					["recipeID"] = 195907
-				},
-				{
-					["name"] = "Azsunite Pendant",
-					["previousRecipeID"] = 195907,
-					["recipeID"] = 195928
-				},
-				{
-					["name"] = "Blessed Dawnlight Medallion",
-					["nextRecipeID"] = 195912,
-					["recipeID"] = 195866
-				},
-				{
-					["name"] = "Blessed Dawnlight Medallion",
-					["nextRecipeID"] = 195933,
-					["previousRecipeID"] = 195866,
-					["recipeID"] = 195912
-				},
-				{
-					["name"] = "Blessed Dawnlight Medallion",
-					["previousRecipeID"] = 195912,
-					["recipeID"] = 195933
-				},
-				{
-					["name"] = "Deep Amber Pendant",
-					["nextRecipeID"] = 195905,
-					["recipeID"] = 195859
-				},
-				{
-					["name"] = "Deep Amber Pendant",
-					["nextRecipeID"] = 195926,
-					["previousRecipeID"] = 195859,
-					["recipeID"] = 195905
-				},
-				{
-					["name"] = "Deep Amber Pendant",
-					["previousRecipeID"] = 195905,
-					["recipeID"] = 195926
-				},
-				{
-					["name"] = "Grim Furystone Gorget",
-					["nextRecipeID"] = 195922,
-					["recipeID"] = 195876
-				},
-				{
-					["name"] = "Grim Furystone Gorget",
-					["nextRecipeID"] = 195943,
-					["previousRecipeID"] = 195876,
-					["recipeID"] = 195922
-				},
-				{
-					["name"] = "Grim Furystone Gorget",
-					["previousRecipeID"] = 195922,
-					["recipeID"] = 195943
-				},
-				{
-					["name"] = "Intrepid Necklace of Prophecy",
-					["nextRecipeID"] = 195918,
-					["recipeID"] = 195872
-				},
-				{
-					["name"] = "Intrepid Necklace of Prophecy",
-					["nextRecipeID"] = 195939,
-					["previousRecipeID"] = 195872,
-					["recipeID"] = 195918
-				},
-				{
-					["name"] = "Intrepid Necklace of Prophecy",
-					["previousRecipeID"] = 195918,
-					["recipeID"] = 195939
-				},
-				{
-					["name"] = "Queen's Opal Pendant",
-					["nextRecipeID"] = 209607,
-					["recipeID"] = 209604
-				},
-				{
-					["name"] = "Queen's Opal Pendant",
-					["nextRecipeID"] = 209610,
-					["previousRecipeID"] = 209604,
-					["recipeID"] = 209607
-				},
-				{
-					["name"] = "Queen's Opal Pendant",
-					["previousRecipeID"] = 209607,
-					["recipeID"] = 209610
-				},
-				{
-					["name"] = "Raging Furystone Gorget",
-					["nextRecipeID"] = 195921,
-					["recipeID"] = 195875
-				},
-				{
-					["name"] = "Raging Furystone Gorget",
-					["nextRecipeID"] = 195942,
-					["previousRecipeID"] = 195875,
-					["recipeID"] = 195921
-				},
-				{
-					["name"] = "Raging Furystone Gorget",
-					["previousRecipeID"] = 195921,
-					["recipeID"] = 195942
-				},
-				{
-					["name"] = "Righteous Dawnlight Medallion",
-					["nextRecipeID"] = 195920,
-					["recipeID"] = 195874
-				},
-				{
-					["name"] = "Righteous Dawnlight Medallion",
-					["nextRecipeID"] = 195941,
-					["previousRecipeID"] = 195874,
-					["recipeID"] = 195920
-				},
-				{
-					["name"] = "Righteous Dawnlight Medallion",
-					["previousRecipeID"] = 195920,
-					["recipeID"] = 195941
-				},
-				{
-					["name"] = "Skystone Pendant",
-					["nextRecipeID"] = 195906,
-					["recipeID"] = 195860
-				},
-				{
-					["name"] = "Skystone Pendant",
-					["nextRecipeID"] = 195927,
-					["previousRecipeID"] = 195860,
-					["recipeID"] = 195906
-				},
-				{
-					["name"] = "Skystone Pendant",
-					["previousRecipeID"] = 195906,
-					["recipeID"] = 195927
-				},
-				{
-					["name"] = "Sorcerous Shadowruby Pendant",
-					["nextRecipeID"] = 195911,
-					["recipeID"] = 195865
-				},
-				{
-					["name"] = "Sorcerous Shadowruby Pendant",
-					["nextRecipeID"] = 195932,
-					["previousRecipeID"] = 195865,
-					["recipeID"] = 195911
-				},
-				{
-					["name"] = "Sorcerous Shadowruby Pendant",
-					["previousRecipeID"] = 195911,
-					["recipeID"] = 195932
-				},
-				{
-					["name"] = "Subtle Shadowruby Pendant",
-					["nextRecipeID"] = 195914,
-					["recipeID"] = 195868
-				},
-				{
-					["name"] = "Subtle Shadowruby Pendant",
-					["nextRecipeID"] = 195935,
-					["previousRecipeID"] = 195868,
-					["recipeID"] = 195914
-				},
-				{
-					["name"] = "Subtle Shadowruby Pendant",
-					["previousRecipeID"] = 195914,
-					["recipeID"] = 195935
-				},
-				{
-					["name"] = "Sylvan Maelstrom Amulet",
-					["nextRecipeID"] = 195917,
-					["recipeID"] = 195871
-				},
-				{
-					["name"] = "Sylvan Maelstrom Amulet",
-					["nextRecipeID"] = 195938,
-					["previousRecipeID"] = 195871,
-					["recipeID"] = 195917
-				},
-				{
-					["name"] = "Sylvan Maelstrom Amulet",
-					["previousRecipeID"] = 195917,
-					["recipeID"] = 195938
-				},
-				{
-					["name"] = "Tranquil Necklace of Prophecy",
-					["nextRecipeID"] = 195915,
-					["recipeID"] = 195869
-				},
-				{
-					["name"] = "Tranquil Necklace of Prophecy",
-					["nextRecipeID"] = 195936,
-					["previousRecipeID"] = 195869,
-					["recipeID"] = 195915
-				},
-				{
-					["name"] = "Tranquil Necklace of Prophecy",
-					["previousRecipeID"] = 195915,
-					["recipeID"] = 195936
-				},
-				{
-					["name"] = "Twisted Pandemonite Choker",
-					["nextRecipeID"] = 195913,
-					["recipeID"] = 195867
-				},
-				{
-					["name"] = "Twisted Pandemonite Choker",
-					["nextRecipeID"] = 195934,
-					["previousRecipeID"] = 195867,
-					["recipeID"] = 195913
-				},
-				{
-					["name"] = "Twisted Pandemonite Choker",
-					["previousRecipeID"] = 195913,
-					["recipeID"] = 195934
-				},
-				{
-					["name"] = "Vindictive Pandemonite Choker",
-					["nextRecipeID"] = 195916,
-					["recipeID"] = 195870
-				},
-				{
-					["name"] = "Vindictive Pandemonite Choker",
-					["nextRecipeID"] = 195937,
-					["previousRecipeID"] = 195870,
-					["recipeID"] = 195916
-				},
-				{
-					["name"] = "Vindictive Pandemonite Choker",
-					["previousRecipeID"] = 195916,
-					["recipeID"] = 195937
-				}
-			}
-		},
-		{
-			["name"] = "Gems",
-			["categoryID"] = 466,
-			["groups"] = {
-				{
-					["name"] = "Deadly Deep Amber",
-					["recipeID"] = 195848
-				},
-				{
-					["name"] = "Deadly Deep Chemirine",
-					["recipeID"] = 247771
-				},
-				{
-					["name"] = "Deadly Eye of Prophecy",
-					["recipeID"] = 195852
-				},
-				{
-					["name"] = "Masterful Argulite",
-					["recipeID"] = 247773
-				},
-				{
-					["name"] = "Masterful Queen's Opal",
-					["recipeID"] = 195851
-				},
-				{
-					["name"] = "Masterful Shadowruby",
-					["recipeID"] = 195855
-				},
-				{
-					["name"] = "Quick Azsunite",
-					["recipeID"] = 195849
-				},
-				{
-					["name"] = "Quick Dawnlight",
-					["recipeID"] = 195853
-				},
-				{
-					["name"] = "Quick Lightsphene",
-					["recipeID"] = 247772
-				},
-				{
-					["name"] = "Saber's Eye",
-					["recipeID"] = 195877
-				},
-				{
-					["name"] = "Saber's Eye of Agility",
-					["recipeID"] = 195879
-				},
-				{
-					["name"] = "Saber's Eye of Intellect",
-					["recipeID"] = 195880
-				},
-				{
-					["name"] = "Saber's Eye of Strength",
-					["recipeID"] = 195878
-				},
-				{
-					["name"] = "Versatile Labradorite",
-					["recipeID"] = 247774
-				},
-				{
-					["name"] = "Versatile Maelstrom Sapphire",
-					["recipeID"] = 195854
-				},
-				{
-					["name"] = "Versatile Skystone",
-					["recipeID"] = 195850
-				}
-			}
-		},
-		{
-			["name"] = "Crowns",
-			["categoryID"] = 535,
-			["groups"] = {
-				{
-					["name"] = "Empyrial Cosmic Crown",
-					["nextRecipeID"] = 247754,
-					["recipeID"] = 247751
-				},
-				{
-					["name"] = "Empyrial Cosmic Crown",
-					["nextRecipeID"] = 247755,
-					["previousRecipeID"] = 247751,
-					["recipeID"] = 247754
-				},
-				{
-					["name"] = "Empyrial Cosmic Crown",
-					["previousRecipeID"] = 247754,
-					["recipeID"] = 247755
-				},
-				{
-					["name"] = "Empyrial Deep Crown",
-					["nextRecipeID"] = 247757,
-					["recipeID"] = 247756
-				},
-				{
-					["name"] = "Empyrial Deep Crown",
-					["nextRecipeID"] = 247758,
-					["previousRecipeID"] = 247756,
-					["recipeID"] = 247757
-				},
-				{
-					["name"] = "Empyrial Deep Crown",
-					["previousRecipeID"] = 247757,
-					["recipeID"] = 247758
-				},
-				{
-					["name"] = "Empyrial Elemental Crown",
-					["nextRecipeID"] = 247763,
-					["recipeID"] = 247762
-				},
-				{
-					["name"] = "Empyrial Elemental Crown",
-					["nextRecipeID"] = 247764,
-					["previousRecipeID"] = 247762,
-					["recipeID"] = 247763
-				},
-				{
-					["name"] = "Empyrial Elemental Crown",
-					["previousRecipeID"] = 247763,
-					["recipeID"] = 247764
-				},
-				{
-					["name"] = "Empyrial Titan Crown",
-					["nextRecipeID"] = 247766,
-					["recipeID"] = 247765
-				},
-				{
-					["name"] = "Empyrial Titan Crown",
-					["nextRecipeID"] = 247767,
-					["previousRecipeID"] = 247765,
-					["recipeID"] = 247766
-				},
-				{
-					["name"] = "Empyrial Titan Crown",
-					["previousRecipeID"] = 247766,
-					["recipeID"] = 247767
-				}
-			}
-		},
-		{
-			["name"] = "Other",
-			["categoryID"] = 467,
-			["groups"] = {
-				{
-					["name"] = "Chatterstone",
-					["recipeID"] = 195883
-				},
-				{
-					["name"] = "JewelCraft",
-					["recipeID"] = 195882
-				},
-				{
-					["name"] = "Jeweled Lockpick",
-					["recipeID"] = 195881
-				}
-			}
-		},
-		{
-			["name"] = "Mass Prospecting",
-			["categoryID"] = 505,
-			["groups"] = {
-				{
-					["name"] = "Mass Prospect Empyrium",
-					["recipeID"] = 247761
-				},
-				{
-					["name"] = "Mass Prospect Felslate",
-					["recipeID"] = 225904
-				},
-				{
-					["name"] = "Mass Prospect Leystone",
-					["recipeID"] = 225902
-				}
-			}
-		},
-		n(DISCOVERY, {
-			i(141312, {	-- Design: Mass Prospect Felslate
-				["cost"] = {
-					{ "i", 123919, 5 },	-- Felslate
-				},
-			}),
-			i(141311, {	-- Design: Mass Prospect Leystone
-				["cost"] = {
-					{ "i", 123918, 5 },	-- Leystone Ore
-				},
-			}),
-		}),
 	})),
 }));
 

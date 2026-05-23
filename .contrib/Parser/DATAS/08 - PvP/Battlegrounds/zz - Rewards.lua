@@ -83,6 +83,15 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(134666),	-- Recruit's Shanker*
 				i(134688),	-- Recruit's Slicer*
 				i(134691),	-- Recruit's Badge*
+				i(273831, {	-- Recruit's Signet
+					["timeline"] = { ADDED_12_0_1 },
+				}),
+				i(273833, {	-- Recruit's Band
+					["timeline"] = { ADDED_12_0_1 },
+				}),
+				i(273834, {	-- Recruit's Ring
+					["timeline"] = { ADDED_12_0_1 },
+				}),
 			},
 		}),
 		i(135540, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Crate of Battlefield Goods 40-59 before 9.0
@@ -350,8 +359,16 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(232790, {	-- Cracked Medal of Conquest
 					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 				}),
-				i(232791, {	-- Medal of Conquest
+				i(232791, {	-- Cracked Medal of Conquest
 					["timeline"] = { ADDED_11_2_0_SEASONSTART },
+				}),
+			},
+		}),
+		i(258620, {	-- Field Medic's Hazard Payout
+			["timeline"] = { ADDED_12_0_1_SEASONSTART },
+			["groups"] = {
+				i(258622, {	-- Medal of Conquest
+					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				}),
 			},
 		}),

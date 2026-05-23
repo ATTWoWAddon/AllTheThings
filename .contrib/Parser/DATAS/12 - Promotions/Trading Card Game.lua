@@ -349,6 +349,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(83013, name(HEADERS.Item, 69227)),	-- Redeemed Fool's Gold
 		q(83011, name(HEADERS.Item, 54212)),	-- Redeemed Instant Statue Pedestal
 		q(83003, name(HEADERS.Item, 72159)),	-- Redeemed Magical Ogre Idol
+		q(83014, name(HEADERS.Item, 71628)),	-- Redeemed Sack of Starfish
 		q(83004, name(HEADERS.Item, 72161)),	-- Redeemed Spurious Sarcophagus
 		q(83012, name(HEADERS.Item, 69215)),	-- Redeemed War Party Hitching Post
 	}),

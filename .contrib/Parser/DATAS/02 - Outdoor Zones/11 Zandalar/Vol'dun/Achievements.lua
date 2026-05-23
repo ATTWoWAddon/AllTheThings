@@ -146,38 +146,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			pvp(ach(12576)),	-- Tour of Duty: Vol'dun
-			ach(12849, {	-- Treasures of Vol'dun
-				crit(40966, {	-- Ashvane Spoils
-					["_quests"] = { 50237 },
-				}),
-				crit(40967, {	-- Grayal's Last Offering
-					["_quests"] = { 51093 },
-				}),
-				crit(40968, {	-- Lost Explorer's Bounty
-					["_quests"] = { 51132 },
-				}),
-				crit(40969, {	-- Sandfury Reserve
-					["_quests"] = { 51133 },
-				}),
-				crit(40970, {	-- Stranded Cache
-					["_quests"] = { 51135 },
-				}),
-				crit(40971, {	-- Excavator's Greed
-					["_quests"] = { 51136 },
-				}),
-				crit(40972, {	-- Zem'lan's Buried Treasure
-					["_quests"] = { 51137 },
-				}),
-				crit(41002, {	-- Lost Offerings of Kimbul
-					["_quests"] = { 52992 },
-				}),
-				crit(41003, {	-- Deadwood Chest
-					["_quests"] = { 52994 },
-				}),
-				crit(41004, {	-- Sandsunken Treasure
-					["_quests"] = { 53004 },
-				}),
-			}),
+			ach(12849),	-- Treasures of Vol'dun
 			h(ach(13014, {	-- Vorrik's Champion
 				crit(41356, {	-- Faithless slain with Vorrik's Bulwark slain
 					["_quests"] = { 51957 },	-- The Wrath of Vorrik

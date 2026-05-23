@@ -1779,7 +1779,6 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 		i(26767),	-- 70 TEST Green Wand
 		i(26768),	-- 71 TEST Green Wand
 		i(26769),	-- 72 TEST Green Wand
-		i(25285),	-- Bloodwood Wand
 	}),
 	filter(28, {	-- Staff
 		i(26798),	-- 59 TEST Green Feral Staff
@@ -1810,7 +1809,6 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 		i(26656),	-- 71 TEST Green Staff
 		i(26811),	-- 72 TEST Green Feral Staff
 		i(26657),	-- 72 TEST Green Staff
-		i(25173),	-- Master's Bo Staff
 	}),
 	filter(29, {	-- Polearm
 		i(26700),	-- 59 TEST Green Polearm

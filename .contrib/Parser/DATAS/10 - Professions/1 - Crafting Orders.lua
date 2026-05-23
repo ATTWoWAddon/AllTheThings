@@ -98,6 +98,7 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(246450),	-- Artisan's Consortium Gold Star
 				i(246585),	-- Artisan's Consortium Payout
 				i(246448),	-- Artisan's Ledger
+				i(262724),	-- Currency Wallet
 				i(246320, {	-- Flicker of Midnight Alchemy Knowledge
 					currency(PROFESSION_KNOWLEDGE.MID.ALCHEMY),
 				}),

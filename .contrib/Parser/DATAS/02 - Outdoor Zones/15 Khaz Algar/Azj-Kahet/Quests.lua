@@ -1173,6 +1173,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 208782 },	-- Executor Nizrek
 				["coord"] = { 52.9, 46.1, NERUBAR },
 				["groups"] = {
+					i(260583, {	-- Arathi Bartender's Shelves (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(224072),	-- Enchanted Runed Harbinger Crest
 					i(225896),	-- Void-Touched Valorstone
 				},

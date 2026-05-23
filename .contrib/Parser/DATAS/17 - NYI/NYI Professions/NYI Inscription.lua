@@ -533,12 +533,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(198956),	-- Technique: Vantus Rune: Vault of the Incarnates (RECIPE!)
 					i(198786),	-- Technique: Wrathion Darkmoon Deckbox (RECIPE!)
 				})),
-
-				-- 10.2.7
-				expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
-					-- Without SpellID attached
-					i(224270),	-- Tattered Technique: Certificate of Ownership
-				})),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0

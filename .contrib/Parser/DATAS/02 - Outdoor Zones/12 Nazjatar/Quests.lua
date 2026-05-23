@@ -1850,6 +1850,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55500,	-- Save A Friend
 			["provider"] = { "n", 156187 },	-- Disgruntled Laborer
 			["coords"] = {
+				{ 46.4, 65.7, THE_GREAT_SEAL },
 				{ 48.4, 60.6, NAZJATAR },
 				{ 50.1, 92.8, DAZARALOR },
 			},

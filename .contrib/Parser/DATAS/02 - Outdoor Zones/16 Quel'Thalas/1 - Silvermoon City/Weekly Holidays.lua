@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--q(XXX),	-- A Burning Path Through Time
 				--q(XXX),	-- A Fel Path Through Time
 				--q(XXX),	-- A Frozen Path Through Time
-				--q(XXX),	-- A Savage Path Through Time
+				q(93613),	-- A Savage Path Through Time
 				--q(XXX),	-- A Scarred Path Through Time
 				q(93628),	-- A Shadowed Path Through Time
 				q(93611),	-- A Shattered Path Through Time
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				petbattle(pvp(q(93599, {	-- The Very Best
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 				}))),
-				--q(XXXX),	-- The World Awaits
+				q(93605),	-- The World Awaits
 			})),
 			n(QUESTS, {
 				q(93595, {	-- A Call to Delves

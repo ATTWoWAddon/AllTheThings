@@ -1345,6 +1345,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			-- ["sourceQuests"] = { 86930 },	-- To Sow the Seed (perhaps a different quest is required?)
 			["qg"] = 249361,	-- Shul'ka Li'tya
 			["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
+			["maxReputation"] = { FACTION_HARATI, 20 },
 			["isWeekly"] = true,	-- Probably? Blue !
 		}, {
 			q(92013, {	-- WANTED: Dionaea's Thorntusks

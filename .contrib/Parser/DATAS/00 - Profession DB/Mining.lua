@@ -390,6 +390,7 @@ i(0, 1250356);		-- Rich Desolate Deposit
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(0, 471013);   	-- Midnight Mining
 i(0, 1265815);		-- Artisan Miner's Moxie
 i(0, 1285705);		-- Dazzling Thorium
 i(0, 1265729);		-- Deftness

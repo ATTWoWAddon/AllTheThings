@@ -9,8 +9,8 @@ local _, app = ...;
 -- Encapsulates the functionality for all filtering logic which is used to check if a given Object meets the applicable filters via User Settings
 
 -- Global locals
-local select, pairs, type, rawget, wipe,math_floor
-	= select, pairs, type, rawget, wipe,math.floor
+local select, next, type, rawget, wipe,math_floor
+	= select, next, type, rawget, wipe,math.floor
 
 -- WoW API Cache
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
@@ -237,7 +237,7 @@ function(item)
 			return true;
 		end
 		-- don't filter Types by their FilterID in some cases
-		if FilterFilterID_IgnoredTypes[item.__type or 0] then
+		if FilterFilterID_IgnoredTypes[item.__type] then
 			return true;
 		end
 		local itemg = item.g
@@ -478,7 +478,7 @@ local function PrintExclusionCause(name, o)
 	app.PrintDebug("F-EX",name,o.hash,o.link or o.name)
 end
 local function ApplySettingsFilters(o, filters)
-	for name,filter in pairs(filters) do
+	for _,filter in next, filters do
 		-- if not filter(o) then PrintExclusionCause(name, o) return end
 		if not filter(o) then return end
 	end
@@ -499,9 +499,10 @@ end
 local function SettingsExtraFilters(item, extraFilters)
 	if SettingsFilters(item) then
 		if extraFilters then
+			local filters = api.Filters
 			local filter
-			for name,_ in pairs(extraFilters) do
-				filter = api.Filters[name]
+			for name in next, extraFilters do
+				filter = filters[name]
 				if filter then
 					-- if not filter(item) then PrintExclusionCause(name, item) return end
 					if not filter(item) then return end
@@ -519,7 +520,7 @@ local function SettingsFilters_IgnoreBoEFilter(item)
 end
 api.SettingsFilters.IgnoreBoEFilter = SettingsFilters_IgnoreBoEFilter
 local function CurrentCharacterFilters(o)
-	for name,filter in pairs(RawCharacterFilters) do
+	for _,filter in next, RawCharacterFilters do
 		-- if not filter(o) then PrintExclusionCause(name, o) return end
 		if not filter(o) then return end
 	end
@@ -648,12 +649,13 @@ local function CacheSettingsData()
 	SettingsUnobtainable = app.Settings:GetRawSettings("Unobtainable");
 	wipe(SettingsFilterIDs)
 	local rawFilters = app.Settings:GetRawFilters();
-	for k,v in pairs(rawFilters) do
+	for k,v in next, rawFilters do
 		-- app.PrintDebug("f:user",k,v)
 		SettingsFilterIDs[k] = v;
 	end
 	-- settings uses a meta-table to default filters... let's push those up for our local use
-	for k,v in pairs(getmetatable(rawFilters).__index) do
+	local rawFiltersIndex = getmetatable(rawFilters).__index
+	for k,v in next, rawFiltersIndex do
 		if SettingsFilterIDs[k] == nil then
 			-- app.PrintDebug("f:default",k,v)
 			SettingsFilterIDs[k] = v;

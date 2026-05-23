@@ -55,7 +55,7 @@ mnt(153489,{b=1,description="Acquired alongside the purchase of a 150$ Razer Nag
 p(4690,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=232519,npcID=233481,spellID=470914,u=2})}}),
 h(-517,{awp=110002,u=3,g={
 mnt(163025,{b=1,description="Acquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=112327,lvl=10,u=3}),
-p(4595,{b=1,description="Acquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224576,npcID=225354,spellID=453266,u=3}),
+p(4595,{b=1,itemID=224576,npcID=225354,spellID=453266,u=3}),
 mnt(453255,{description="Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224574,lvl=10,u=3})}}),
 h(-691,{awp=110205,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255159,{itemID=252679,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -132,7 +132,7 @@ s(266784,235343,{awp=110207,description="Obtained through watching Twitch Stream
 mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,lvl=10,u=3})}}),
 h(-669,{awp=120000,g={
 de(15151,{description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369,u=2}),
-s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120005}),
+s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120005,u=2}),
 h(-708,{rwp=120000,u=2,g={
 mnt(367620,{itemID=190539,lvl=10,u=2}),
 mnt(153489,{b=1,itemID=107951,lvl=10,u=2}),
@@ -178,7 +178,7 @@ de(15149,{awp=120001,description="Obtained through watching Twitch Streamers wit
 p(4897,{awp=120001,description="Obtained by gifting an eligible creator's channel two Twitch subscriptions between February 26th, 03:00 p.m. & March 26th, 03:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nSpecial Note: If you buy a sub for yourself and gift one more, that will also reward the pet!",itemID=252194,npcID=251819,rwp=120001,spellID=1254207,u=2}),
 p(4944,{awp=120001,b=1,description="Trolli + Xbox promotional item. Available between March 1st 2026 - September 30th 2026 by purchasing Trolli Gummi Pop products in any retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Sometime later you should receive a code to your email to redeem on Battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",itemID=260360,npcID=255750,rwp=120100,spellID=1266148,u=3}),
 mnt(1244247,{awp=120001,b=1,description="Available from the pringleswow.de promotion in a limited quantity to the first 3000 players who scanned a QR code found around cities in Germany.",itemID=246917,rwp=120001,u=2}),
-de(16965,{awp=120001,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between March 26th, 3:00 p.m. & April 23rd, 3:00 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265545,rwp=120005,spellID=1276129}),
+de(16965,{awp=120001,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between March 26th, 3:00 p.m. & April 23rd, 3:00 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265545,rwp=120005,spellID=1276129,u=2}),
 de(15555,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Horde Board' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264283,rwp=120001,spellID=1271564,u=2}),
 de(15554,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Azeroth Inspiration' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264282,rwp=120001,spellID=1271563,u=2}),
 de(15553,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Kalimdor Collage' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264281,rwp=120001,spellID=1271562,u=2}),
@@ -189,8 +189,9 @@ de(15550,{itemID=264278,spellID=1271559}),
 de(15229,{itemID=263383,spellID=1270445}),
 de(15551,{itemID=264279,spellID=1271560}),
 de(15552,{itemID=264280,spellID=1271561})}}),
-p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to May 15, 2026 (12pm ET). During the offer period, complete a purchase of eligible World of Warcraft items through the Blizzard Gear Store and receive a digital code.",itemID=262881,npcID=256663,rwp=120005,spellID=1269535,u=3}),
-de(16818,{awp=120005,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265394,rwp=120005,spellID=1275771})}}),
+p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to May 15, 2026 (12pm ET). During the offer period, complete a purchase of eligible World of Warcraft items through the Blizzard Gear Store and receive a digital code.",itemID=262881,npcID=256663,rwp=120005,spellID=1269535,u=2}),
+de(16818,{awp=120005,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265394,rwp=120005,spellID=1275771}),
+toy(272339,{awp=120005,rwp=120005,u=2})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
@@ -310,8 +311,8 @@ p(268,{itemID=62540,npcID=46896,rwp=40302,spellID=87344,u=2,g={
 crit(34636,{achID=5377,id=3,u=2})}})}}),
 h(-526,{awp=100200,rwp=110200,u=2,g={
 h(-522,{description="These rewards were made available to anyone who purchased Blazing Heroic Edition.",u=2,g={
-mnt(424009,{b=1,itemID=210008,lvl=10,u=2}),
-p(4316,{b=1,itemID=210964,npcID=213407,spellID=427682,u=2})}})}}),
+p(4316,{b=1,itemID=210964,npcID=213407,spellID=427682,u=2}),
+mnt(424009,{b=1,itemID=210008,lvl=10,u=2})}})}}),
 x(5,{awp=50004,description="These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
 ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
@@ -320,9 +321,9 @@ p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
 crit(34637,{achID=6848,id=3,u=2})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
+p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
 mnt(1216422,{b=1,itemID=235286,lvl=10,u=3}),
 mnt(1216430,{b=1,itemID=235287,lvl=10,u=3}),
-p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
 toy(235288,{b=1,lvl=10,u=3}),
 en(238050,{awp=110107,questID=88806,spellID=1224080,tmogSetID=4372,u=3,g={
 s(287330,238043,{f=2}),
@@ -337,11 +338,11 @@ p(1386,{itemID=109014,npcID=77137,rwp=60202,spellID=155748,u=2,g={
 crit(24600,{achID=8917,awp=100100,id=3,u=3})}}),
 mnt(155741,{b=1,itemID=109013,lvl=10,rwp=60202,u=2})}}),
 x(7,{awp=60202,description="These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
-ach(10321,{rwp=70305,u=2}),
 ach(10320,{providers={{"i",128425}},rwp=70305,u=2}),
+ach(10321,{rwp=70305,u=2}),
+mnt(189998,{b=1,itemID=128425,lvl=10,rwp=70305,u=2}),
 p(1691,{itemID=128426,npcID=95841,rwp=70305,spellID=190020,u=2,g={
-crit(28787,{achID=10321,id=1,u=2})}}),
-mnt(189998,{b=1,itemID=128425,lvl=10,rwp=70305,u=2})}}),
+crit(28787,{achID=10321,id=1,u=2})}})}}),
 x(8,{awp=70305,description="These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
 ach(12230,{providers={{"i",153540}},r=1,rwp=80307,u=2}),
 ach(12229,{providers={{"i",153539}},r=2,rwp=80307,u=2}),
@@ -357,26 +358,26 @@ mnt(307932,{u=2}),
 h(-45,{u=2,g={
 q(57686,{description="You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",lvl=50,qgs={158635},u=3,g={
 i(172954,{rwp=90205,u=2}),
-s(106487,172075,{f=2,rwp=90205,u=2}),
-s(106488,172076,{f=2,rwp=90205,u=2}),
 s(106490,172078,{f=3,rwp=90205,u=2}),
-s(106489,172077,{f=2,rwp=90205,u=2}),
 s(106491,172079,{f=2,rwp=90205,u=2}),
 s(106492,172080,{f=2,rwp=90205,u=2}),
-s(106493,172081,{f=2,rwp=90205,u=2}),
+s(106487,172075,{f=2,rwp=90205,u=2}),
 s(106494,172082,{f=2,rwp=90205,u=2}),
-s(106495,172083,{f=2,rwp=90205,u=2})}})}})}}),
+s(106489,172077,{f=2,rwp=90205,u=2}),
+s(106488,172076,{f=2,rwp=90205,u=2}),
+s(106495,172083,{f=2,rwp=90205,u=2}),
+s(106493,172081,{f=2,rwp=90205,u=2})}})}})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Shadowlands Epic Edition.",rwp=90205,u=2,g={
 i(248091,{b=1,f=101,spellID=308067,u=2}),
 toy(172179,{b=1,u=2}),
 ill(6162,{b=1,itemID=172177,questID=57596,u=2})}})}}),
 x(10,{awp=90205,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",rwp=100107,u=2,g={
-p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
-p(3175,{npcID=181535,u=2}),
-mnt(359843,{b=1,itemID=248089,lvl=10,u=2}),
 ach(17314,{providers={{"s",359843}},u=2}),
-ach(17305,{awp=100005,rwp=100200,u=2})}}),
+ach(17305,{awp=100005,rwp=100200,u=2}),
+mnt(359843,{b=1,itemID=248089,lvl=10,u=2}),
+p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
+p(3175,{npcID=181535,u=2})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",rwp=100107,u=2,g={
 toy(193588,{b=1,u=2}),
 en(255827,{spellID=1259474,tmogSetID=2293,u=2,g={
@@ -388,7 +389,6 @@ s(165614,188260,{f=3})}}),
 s(180744,193610,{f=2,u=2})}})}}),
 x(11,{awp=100107,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased The War Within Heroic Edition.",rwp=110200,u=2,g={
-mnt(417888,{b=1,itemID=258479,lvl=10,u=2}),
 ach(19027,{providers={{"s",417888}},u=2}),
 en(209336,{questID=78048,spellID=422666,tmogSetID=3128,u=2,g={
 s(190677,209321,{f=2}),
@@ -400,6 +400,7 @@ s(190678,209325,{f=2}),
 s(190679,209327,{f=2}),
 s(190680,209328,{f=2}),
 s(190684,209332,{f=2})}}),
+mnt(417888,{b=1,itemID=258479,lvl=10,u=2}),
 h(-52,{sr=1,u=2,g={
 h(-12,{sr=1,u=2,g={
 ach(18928,{sr=1,u=2}),
@@ -533,6 +534,7 @@ p(4591,{b=1,itemID=224260,npcID=224718,spellID=452223,u=3})}})}})}}),
 x(12,{awp=110200,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Midnight Heroic Edition.",u=3,g={
 ach(61401,{providers={{"s",1234305}},u=3}),
+mnt(1234305,{itemID=243020,lvl=10,u=3}),
 en(248249,{questID=91814,spellID=1246785,tmogSetID=5165,u=3,g={
 s(295504,248382,{f=2}),
 s(295503,248381,{f=2}),
@@ -543,16 +545,15 @@ s(295501,248379,{f=2}),
 s(295502,248380,{f=2}),
 s(295507,248385,{f=2}),
 s(295506,248384,{f=2}),
-s(295509,248387,{f=2})}}),
-mnt(1234305,{itemID=243020,lvl=10,u=3})}}),
+s(295509,248387,{f=2})}})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Midnight Epic Edition.",u=3,g={
 ach(61402,{providers={{"s",1239138}},u=3}),
-p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
-p(4811,{itemID=243062,npcID=244145,spellID=1234588,u=3}),
 de(9151,{awp=110207,itemID=252668,spellID=1254915,u=3}),
 de(9149,{awp=110207,itemID=252666,spellID=1254913,u=3}),
 de(9150,{awp=110207,itemID=252667,spellID=1254914,u=3}),
 de(9152,{awp=110207,itemID=252669,spellID=1254916,u=3}),
+p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
+p(4811,{itemID=243062,npcID=244145,spellID=1234588,u=3}),
 de(1458,{awp=110207,itemID=244668,spellID=1237798,u=3}),
 de(2231,{awp=110207,itemID=246414,spellID=1242068,u=3}),
 de(1894,{awp=110207,itemID=245939,spellID=1240036,u=3}),
@@ -582,8 +583,8 @@ ach(8795,{providers={{"i",106256}},u=3}),
 p(1365,{itemID=106256,npcID=74413,spellID=149810,u=3,g={
 crit(34640,{achID=8795,id=3,u=3})}})}}),
 h(-532,{awp=100002,description="These rewards are available to anyone who purchases Diablo 4 Standard Edition.",rwp=110007,u=2,g={
-mnt(369476,{b=1,itemID=191114,u=2}),
-ach(15640,{providers={{"i",191114}},u=2})}}),
+ach(15640,{providers={{"i",191114}},u=2}),
+mnt(369476,{b=1,itemID=191114,u=2})}}),
 h(-703,{awp=110207,description="These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",u=3,g={
 i(265804,{spellID=1277191,u=3,g={
 de(12247,{itemID=259055,spellID=1264380,u=3}),
@@ -605,16 +606,16 @@ de(12249,{itemID=259057,spellID=1264382,u=3})}})}}),
 h(-722,{awp=120001,description="These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",u=3,g={
 de(11287,{itemID=256764,spellID=1260747,u=3})}}),
 h(-533,{awp=60203,description="These rewards are available to anyone who purchases Overwatch Origins Collection.",rwp=100002,u=2,g={
-p(1828,{b=1,itemID=134047,npcID=103159,spellID=204148,u=2}),
-ach(11064,{providers={{"n",103159}},u=2})}}),
+ach(11064,{providers={{"n",103159}},u=2}),
+p(1828,{b=1,itemID=134047,npcID=103159,spellID=204148,u=2})}}),
 h(-534,{awp=30305,description="These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",u=3,g={
 ach(4824,{providers={{"i",56806}},u=3}),
 p(258,{itemID=56806,npcID=42078,spellID=78381,u=3,g={
 crit(34635,{achID=4824,id=3,u=3})}})}}),
 h(-535,{awp=50004,description="These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",u=3,g={
+ach(7842,{providers={{"i",90177}},u=3}),
 p(903,{itemID=90177,npcID=66984,spellID=131650,u=3,g={
-crit(34639,{achID=7842,id=2,u=3})}}),
-ach(7842,{providers={{"i",90177}},u=3})}}),
+crit(34639,{achID=7842,id=2,u=3})}})}}),
 h(-536,{awp=60202,description="These rewards are available to anyone who purchases Starcraft 2: Legacy of the Void Collection.",u=3,g={
 ach(10309,{providers={{"i",128423}},u=3}),
 p(1255,{b=1,itemID=128423,npcID=71655,spellID=143637,u=3,g={
@@ -879,7 +880,7 @@ s(187933,206276,{f=24,u=2}),
 s(187750,206005,{f=23,u=2})}})}),
 h(-541,{awp=110002,g={
 s(230544,233053,{awp=110005,description="Quest is only available with an US IP. Codes are useable worldwide.\n\nIn the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your transmog.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until the Crown of the Violet Rose is yours!\n\nPromotion is available from December 2nd, 2024 until December 9th, 2024 (11:59PM UTC).",f=2,rwp=110005,u=2}),
-p(4615,{description="In the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your pet.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until Parrlok Parrlok is yours!\n\nPromotion is available from August 23rd, 2024 until September 8th, 2024 (11:59PM UTC).",itemID=228758,npcID=229846,spellID=463079,u=2}),
+p(4615,{itemID=228758,npcID=229846,rwp=110002,spellID=463079,u=2}),
 s(297814,250292,{awp=120000,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from January 27th, 2026 until February 2nd, 2026 (11:59PM UTC).",f=3,rwp=120000,u=2}),
 p(4975,{awp=120001,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from March 2nd, 2026 until March 16th, 2026.",itemID=264366,npcID=257493,rwp=120001,spellID=1271843,u=2})}}),
 h(-542,{awp=50300,u=3,g={
