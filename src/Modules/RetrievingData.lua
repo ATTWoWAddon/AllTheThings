@@ -31,10 +31,13 @@ local RetrievingTexts = {
 local api = {};
 app.Modules.RetrievingData = api;
 -- Returns whether the provided string matches a string which indicates the data is not yet loaded in the Client
-local function IsRetrieving(text)
-	return (not text
-		or issecretvalue(text)
-		or RetrievingTexts[text]
+local function IsRetrieving(text, allowSecrets)
+	if not text then return true end
+	if issecretvalue(text) then
+		if allowSecrets then return end
+		return true
+	end
+	return (RetrievingTexts[text]
 		or text:find(RETRIEVING_DATA)
 		or text:find("%[%]"))
 		-- make sure regardless of conditional return we return a true here for consistency
@@ -42,10 +45,13 @@ local function IsRetrieving(text)
 end
 api.IsRetrieving = IsRetrieving;
 -- Returns whether the provided string is empty or equals RETRIEVING_DATA which indicates the data is not yet loaded in the Client (not used for Items or in general)
-api.IsRetrievingData = function(text)
-	return (not text
-		or issecretvalue(text)
-		or RetrievingTexts[text])
+api.IsRetrievingData = function(text, allowSecrets)
+	if not text then return true end
+	if issecretvalue(text) then
+		if allowSecrets then return end
+		return true
+	end
+	return (RetrievingTexts[text])
 		-- make sure regardless of conditional return we return a true here for consistency
 		and true;
 end

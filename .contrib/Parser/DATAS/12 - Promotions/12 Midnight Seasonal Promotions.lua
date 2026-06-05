@@ -171,6 +171,11 @@ root(ROOTS.Promotions, {
 				["description"] = "Available from the pringleswow.de promotion in a limited quantity to the first 3000 players who scanned a QR code found around cities in Germany.",
 				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_LAUNCH },
 			}),
+			iensemble(229822, {	-- Arsenal: Golden Crests of the Kingdom (COSMETIC!)
+				["description"] = "Included as a code when ordering the World of Warcraft The Lich King 7-Inch Deluxe Figure (McFarlane Elite Edition #9)",
+				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.5.67165" },
+				["u"] = REAL_MONEY,
+			}),
 			i(265545, {	-- Cuddly Void Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between March 26th, 3:00 p.m. & April 23rd, 3:00 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.5.67165" },	-- Removed April 23rd, 2026
@@ -207,7 +212,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(265394, {	-- Cuddly Pearl Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_12_0_5, "removed 12.0.5.99999" }, -- TODO: Timeline out. Available through May 21 at 3:00 pm PDT
+				["timeline"] = { ADDED_12_0_5, "removed 12.0.5.67602" },
 			}),
 			i(272339, {	-- Umbral Champion's Illustrious Banner (TOY!)
 				-- ["description"] = "",	-- TODO

@@ -871,7 +871,7 @@ q(7497,{coords={
 r(19093,{awp=30202,learnedAt=300,requireSkill=165}),
 r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
 q(7493,{coords={
-[1454]={{52.2,75.8}}},learnedAt=300,lvl=60,qgs={14392},r=1,requireSkill=165,sourceQuests={7491,24429},g={
+[1454]={{51.5,83}}},learnedAt=300,lvl=60,qgs={14392},r=1,requireSkill=165,sourceQuests={7491,24429},g={
 r(19093,{awp=30202,learnedAt=300,requireSkill=165}),
 r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
 q(7495,{awp=10001,lvl=60,maps={1453},providers={{"i",18423}},r=2,rwp=100000}),
@@ -5306,10 +5306,10 @@ h(-12,{awp=30002,rwp=50004,g={
 ach(645,{
 crit(3956,{achID=1283,id=1})}),
 gach(5054,{awp=40003})}}),
-h(-45,{awp=100105,rwp=50004,g={
+h(-45,{awp=10300,rwp=50004,g={
 q(28756,{awp=40003,coords={
 [1423]={{76.2,50.9}}},lvl=40,maxReputation={529,42000},qgs={49856},repeatable=1,sourceQuests={27464},g={
-qo(1,{awp=100105,providers={{"n",11622}}})}}),
+qo(1,{awp=10300,providers={{"n",11622}}})}}),
 q(8259,{altQuests={8258},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7668},u=2,g={
 s(130748,20134,{b=1,f=6,q=4,u=2})}}),
@@ -5320,8 +5320,8 @@ q(7669,{c={7},coords={
 [1454]={{38.7,35.9}}},lvl=60,qgs={13417},r=1,repeatable=1,rwp=40003,sourceQuests={8258},u=2,g={
 i(18746,{q=1,u=2})}}),
 q(27140,{awp=40003,lvl=38,qgs={45110},g={
-qo(1,{awp=100105,providers={{"n",10432}}}),
-qo(2,{awp=100105,providers={{"n",10433}}})}}),
+qo(1,{awp=10300,providers={{"n",10432}}}),
+qo(2,{awp=10300,providers={{"n",10433}}})}}),
 q(5803,{coords={
 [1422]={{42.7,83.8}}},lvl=55,qgs={11056},r=2,rwp=40003,sourceQuests={5801},u=2,g={
 qo(1,{coords={
@@ -5343,17 +5343,17 @@ qo(2,{description="Can be found right next to Alexi Barov.",providers={{"i",1344
 qo(3,{description="Can be found in the very back of the first room hidden behind some bookshelves.",providers={{"i",13450},{"o",176486}},rwp=50004}),
 qo(4,{description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}},rwp=50004})}}),
 q(27143,{awp=40003,lvl=38,qgs={45109},g={
-qo(1,{awp=100105,description="Can be found along the wall in Ras Frostwhisper's room.",providers={{"i",13471},{"o",176484}}}),
-qo(2,{awp=100105,description="Can be found right next to Alexi Barov.",providers={{"i",13448},{"o",176485}}}),
-qo(3,{awp=100105,description="Can be found in the very back of the first room hidden behind some bookshelves.",providers={{"i",13450},{"o",176486}}}),
-qo(4,{awp=100105,description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}}}),
+qo(1,{awp=10300,description="Can be found along the wall in Ras Frostwhisper's room.",providers={{"i",13471},{"o",176484}}}),
+qo(2,{awp=10300,description="Can be found right next to Alexi Barov.",providers={{"i",13448},{"o",176485}}}),
+qo(3,{awp=10300,description="Can be found in the very back of the first room hidden behind some bookshelves.",providers={{"i",13450},{"o",176486}}}),
+qo(4,{awp=10300,description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}}}),
 i(65923,{b=1,f=53,q=3})}}),
 q(5531,{coords={
 [1423]={{81.73,57.83}}},lvl=57,providers={{"i",13761}},qgs={11036},rwp=40003,sourceQuests={5522},u=2}),
 q(4771,{coords={
 [1423]={{81.5,59.7}}},lvl=57,qgs={11035},rwp=40003,sourceQuests={5531},u=2,g={
-qo(1,{awp=100105,providers={{"n",10432}},rwp=50004}),
-qo(2,{awp=100105,description="This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",providers={{"i",12368}},rwp=50004}),
+qo(1,{awp=10300,providers={{"n",10432}},rwp=50004}),
+qo(2,{awp=10300,description="This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",providers={{"i",12368}},rwp=50004}),
 s(127745,15854,{b=1,f=28,q=3,u=2}),
 s(127744,15853,{b=1,f=21,q=3,u=2})}}),
 q(5382,{coords={
@@ -5362,9 +5362,9 @@ qo(1,{providers={{"n",11261}},rwp=50004}),
 qo(2,{providers={{"o",176544}},rwp=50004}),
 qo(3,{providers={{"o",176545}},rwp=50004})}}),
 q(27146,{awp=40003,lvl=38,qgs={45107},g={
-qo(1,{awp=100105,providers={{"n",11261}}}),
-qo(2,{awp=100105,providers={{"o",176544}}}),
-qo(3,{awp=100105,providers={{"o",176545}}})}}),
+qo(1,{awp=10300,providers={{"n",11261}}}),
+qo(2,{awp=10300,providers={{"o",176544}}}),
+qo(3,{awp=10300,providers={{"o",176545}}})}}),
 q(5801,{coords={
 [1446]={{51.5,28.8}}},lvl=55,maps={1449},qgs={5411},r=2,rwp=40003,sourceQuests={5538},u=2,g={
 qo(1,{coords={
@@ -5381,7 +5381,7 @@ s(127717,15806,{b=1,f=25,q=3,u=2}),
 s(127716,15805,{b=1,f=1,q=3,u=2}),
 i(13544,{b=1,f=53,q=2,u=2})}}),
 q(27147,{awp=40003,lvl=38,qgs={45107},g={
-qo(1,{awp=100105,providers={{"n",10506}}})}}),
+qo(1,{awp=10300,providers={{"n",10506}}})}}),
 q(5515,{coords={
 [1422]={{70.2,73.7}}},lvl=55,qgs={11216},rwp=40003,sourceQuests={5382},u=2,g={
 qo(1,{providers={{"i",13725}},rwp=50004})}}),
@@ -5406,14 +5406,14 @@ q(5529,{coords={
 [1423]={{81.47,59.66}}},lvl=55,qgs={11035},rwp=40003,u=2,g={
 qo(1,{providers={{"n",10678}},rwp=50004})}}),
 q(27145,{awp=40003,lvl=38,qgs={45109},g={
-qo(1,{awp=100105,providers={{"n",10678}}}),
-qo(2,{awp=100105,providers={{"n",11622}}})}}),
+qo(1,{awp=10300,providers={{"n",10678}}}),
+qo(2,{awp=10300,providers={{"n",11622}}})}}),
 q(5533,{coords={
 [1422]={{42.7,84}}},lvl=55,qgs={10838},r=2,rwp=40003,sourceQuests={5097},u=2}),
 q(838,{coords={
 [1420]={{83.1,68.9}}},lvl=55,qgs={10837},r=1,rwp=40003,sourceQuests={5098},u=2}),
 q(27148,{awp=40003,lvl=38,qgs={45108},g={
-qo(1,{awp=100105,providers={{"n",1853}}}),
+qo(1,{awp=10300,providers={{"n",1853}}}),
 s(210180,65974,{b=1,f=23,q=3}),
 s(210136,65925,{b=1,f=5,q=3}),
 s(210159,65950,{b=1,f=6,q=3}),
@@ -5428,11 +5428,11 @@ q(5465,{coords={
 [1423]={{81.7,57.8}}},lvl=57,providers={{"i",13624}},qgs={11036},rwp=40003,sourceQuests={5464},u=2}),
 q(7668,{c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=10700,sourceQuests={7667},u=2,g={
-qo(1,{awp=100105,crs={14516},providers={{"i",18880}},rwp=50004}),
+qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004}),
 s(129711,18807,{b=1,f=6,q=3,u=2})}}),
 q(8258,{altQuests={7668},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7667},u=2,g={
-qo(1,{awp=100105,crs={14516},providers={{"i",18880}},rwp=50004,u=14}),
+qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004,u=14}),
 s(130748,20134,{b=1,f=6,q=4,u=2})}}),
 q(5462,{coords={
 [1422]={{70.6,74.1}}},lvl=57,providers={{"i",13544},{"i",13585}},qgs={11286},rwp=40003,sourceQuests={5461},u=2}),
@@ -5446,26 +5446,26 @@ q(5511,{coords={
 [1420]={{83.2,69.2}}},lvl=55,maps={1422},qgs={11057},r=1,rwp=40003,sourceQuests={5804},u=2}),
 q(5344,{coords={
 [1422]={{43.5,83.7}}},lvl=52,maps={1420},qgs={11023},r=2,rwp=40003,sourceQuests={5343},u=2,g={
-qo(1,{awp=100105,coords={
+qo(1,{awp=10300,coords={
 [1420]={{83,71.6}}},crs={11022},providers={{"i",13470}},rwp=50004}),
 i(14023,{b=1,f=53,q=3,u=2})}}),
 q(5342,{coords={
 [1420]={{83.06,71.6}}},lvl=52,maps={1422},qgs={11022},r=1,rwp=40003,sourceQuests={5341},u=2,g={
-qo(1,{awp=100105,coords={
+qo(1,{awp=10300,coords={
 [1422]={{43.4,83.6}}},crs={11023},providers={{"i",13469}},rwp=50004}),
 i(14022,{b=1,f=53,q=3,u=2})}}),
 q(5466,{coords={
 [1422]={{70.6,74.1}}},lvl=57,providers={{"i",13544}},qgs={11286},rwp=40003,sourceQuests={5465},u=2,g={
-qo(1,{awp=100105,providers={{"i",13626}},rwp=50004}),
+qo(1,{awp=10300,providers={{"i",13626}},rwp=50004}),
 s(126129,14002,{b=1,f=8,q=3,u=2}),
 s(126126,13984,{b=1,f=20,q=3,u=2}),
 s(126124,13982,{b=1,f=26,q=3,u=2}),
 s(126128,13986,{b=1,f=4,q=3,u=2})}}),
 q(27142,{awp=40003,lvl=38,qgs={45110},g={
-qo(1,{awp=100105,providers={{"n",10508}}})}})}}),
-h(-56,{awp=100105,rwp=50004,g={
+qo(1,{awp=10300,providers={{"n",10508}}})}})}}),
+h(-56,{awp=10300,rwp=50004,g={
 i(12736,{awp=11101,b=1,description="Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",providers={{"o",175965}},q=1})}}),
-h(-63,{awp=100105,rwp=50004,g={
+h(-63,{awp=10300,rwp=50004,g={
 i(20520,{q=2}),
 r(20035,{crs={10469},itemID=16255,learnedAt=300,q=2,requireSkill=333}),
 r(20032,{crs={10499},itemID=16254,learnedAt=300,q=3,requireSkill=333}),
@@ -5475,7 +5475,7 @@ i(22526,{u=16}),
 i(12843,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=2,rwp=40003,u=2}),
 i(12841,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003,u=2}),
 i(12840,{awp=11101,b=1,description="Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003,u=2}),
-i(13920,{b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=45,q=1,rwp=40003,u=2}),
+i(13920,{awp=100105,b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=45,q=1,rwp=40003,u=2}),
 i(12753,{awp=11101,b=1,q=2,rwp=40003,u=2}),
 s(129606,18702,{f=7,lvl=40,q=3}),
 s(128380,16671,{crs={10478},f=6,lvl=52,q=3,rwp=40003,u=2}),
@@ -5493,9 +5493,9 @@ s(128419,16710,{crs={10472,10488,11284},f=5,lvl=52,q=3,rwp=40003,u=2}),
 s(129602,18698,{f=5,lvl=40,q=3}),
 s(128425,16716,{crs={10499,10500,11257},f=5,lvl=53,q=3,rwp=40003,u=2}),
 s(128423,16714,{crs={10495},f=5,lvl=52,q=3,rwp=40003,u=2})}}),
-n(14861,{awp=100105,rwp=50004,g={
+n(14861,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1})}}),
-n(10506,{awp=100105,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"i",13523},{"o",175564}},rwp=50004,g={
+n(10506,{awp=10300,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"i",13523},{"o",175564}},rwp=50004,g={
 s(126132,14024,{b=1,f=20,lvl=40,q=3}),
 s(126125,13983,{b=1,f=22,lvl=40,q=3}),
 i(13960,{b=1,f=51,lvl=40,q=3}),
@@ -5505,7 +5505,7 @@ s(126111,13957,{b=1,f=5,lvl=40,q=3}),
 s(126110,13956,{b=1,f=4,lvl=40,q=3}),
 s(128443,16734,{b=1,f=7,lvl=54,q=3,rwp=40003,u=2}),
 s(126121,13967,{b=1,f=6,lvl=40,q=3})}}),
-n(10503,{awp=100105,rwp=50004,g={
+n(10503,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1}),
 i(13725,{q=1}),
 o(180794,{description="Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",g={
@@ -5518,7 +5518,7 @@ s(126553,14548,{b=1,f=6,lvl=40,q=3}),
 s(126548,14543,{b=1,description="This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",f=4,isBounty=1,lvl=40,q=3,rwp=20001,u=2}),
 s(126550,14545,{b=1,f=5,lvl=40,q=3}),
 s(129594,18690,{b=1,f=7,lvl=40,q=3})}}),
-n(11622,{awp=100105,rwp=50004,g={
+n(11622,{awp=10300,rwp=50004,g={
 i(13873,{awp=11101,description="You must use this item on the door prior to Vectus and Marduk.",rwp=40003,u=2}),
 i(18782,{awp=11101,q=3,rwp=40003,u=2}),
 s(126536,14531,{b=1,f=24,lvl=40,q=3}),
@@ -5535,13 +5535,13 @@ s(129663,18759,{b=1,f=22,lvl=57,q=3,u=2}),
 s(129665,18761,{b=1,f=27,lvl=57,q=3,u=2}),
 s(129662,18758,{b=1,f=20,lvl=57,q=3,u=2}),
 i(18760,{b=1,f=52,lvl=57,q=3,u=2})}}),
-n(10433,{awp=100105,rwp=50004,g={
+n(10433,{awp=10300,rwp=50004,g={
 s(126581,14576,{b=1,f=25,lvl=40,q=3}),
 s(129596,18692,{b=1,f=7,lvl=40,q=3})}}),
-n(10432,{awp=100105,rwp=50004,g={
+n(10432,{awp=10300,rwp=50004,g={
 i(18691,{b=1,f=51,lvl=40,q=3}),
 s(126582,14577,{b=1,f=4,lvl=40,q=3})}}),
-n(10508,{awp=100105,rwp=50004,g={
+n(10508,{awp=10300,rwp=50004,g={
 i(13626,{cost={{"i",13752,1}},description="Use the Keepsake on him before he dies to turn him back into a human.",q=1}),
 r(17637,{itemID=13521,learnedAt=300,q=2,requireSkill=171}),
 s(126505,14487,{b=1,f=23,lvl=40,q=3}),
@@ -5558,13 +5558,13 @@ s(126516,14502,{b=1,f=5,lvl=40,q=3}),
 s(126527,14522,{b=1,f=6,lvl=40,q=3}),
 s(129598,18694,{b=1,f=6,lvl=40,q=3}),
 crit(548,{achID=645,awp=30002,id=1})}}),
-n(16118,{awp=100105,cost={{"i",22057,1},{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=50004,u=15,g={
+n(16118,{awp=10300,cost={{"i",22057,1},{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=50004,u=15,g={
 s(132731,22332,{b=1,f=25,lvl=40,q=3,u=15}),
 s(132732,22333,{b=1,f=24,lvl=40,q=3,u=15}),
 s(132702,22303,{b=1,c={5,8,9},f=4,lvl=57,q=3,rwp=40003,u=2}),
 i(22326,{b=1,f=52,lvl=40,q=3,u=15}),
 i(22331,{b=1,f=52,lvl=40,q=3,u=15})}}),
-h(-19,{awp=100105,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",rwp=50004,g={
+h(-19,{awp=10300,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",rwp=50004,g={
 s(129584,18680,{b=1,f=32,lvl=40,q=3}),
 s(129587,18683,{b=1,f=23,lvl=40,q=3}),
 s(126614,14611,{b=1,f=6,lvl=40,q=3}),
@@ -5592,19 +5592,19 @@ s(126635,14632,{b=1,f=4,lvl=40,q=3}),
 s(126634,14631,{b=1,f=4,lvl=40,q=3}),
 i(23201,{b=1,c={2,7,11},lvl=40,q=3,u=15}),
 i(23200,{b=1,c={2,7,11},lvl=40,q=3,u=15})}}),
-n(10505,{awp=100105,rwp=50004,g={
+n(10505,{awp=10300,rwp=50004,g={
 s(128419,16710,{f=5,lvl=52,q=3,rwp=40003,u=2})}}),
-n(11261,{awp=100105,rwp=50004,g={
+n(11261,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1}),
 s(128393,16684,{f=4,lvl=54,q=3,rwp=40003,u=2}),
 s(126620,14617,{b=1,f=10,filterForRWP=2,q=1})}}),
-n(10901,{awp=100105,rwp=50004,g={
+n(10901,{awp=10300,rwp=50004,g={
 s(128414,16705,{f=4,lvl=54,q=3,rwp=40003,u=2})}}),
-n(10507,{awp=100105,rwp=50004,g={
+n(10507,{awp=10300,rwp=50004,g={
 s(128425,16716,{f=5,lvl=53,q=3,rwp=40003,u=2})}}),
-n(10504,{awp=100105,rwp=50004,g={
+n(10504,{awp=10300,rwp=50004,g={
 s(128431,16722,{f=7,lvl=52,q=3,rwp=40003,u=2})}}),
-n(1853,{awp=100105,description="You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
+n(1853,{awp=10300,description="You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
 r(18458,{itemID=14514,learnedAt=300,q=4,requireSkill=197}),
 r(17580,{b=1,itemID=13501,learnedAt=295,q=2,requireSkill=171}),
 s(126091,13937,{b=1,f=28,lvl=40,q=4}),
@@ -20083,7 +20083,13 @@ h(-19,{crs={55265,55294,55308,55312,55689,56427},u=42,g={
 cu(614,{description="Used to buy uncut gems contained in Crystalline Geode from vendor Dasnurimi in Wyrmrest Temple.",u=42})}}),
 h(-58,{u=42,g={
 n(58153,{u=42,g={
-i(78890,{b=1,cost={{"c",614,1}},description="Contains random uncut Cataclysm gems.",q=4,u=42}),
+i(78890,{b=1,cost={{"c",614,1}},description="Contains random uncut Cataclysm gems.",q=4,u=42,g={
+i(71807,{q=4,u=42}),
+i(71810,{q=4,u=42}),
+i(71808,{q=4,u=42}),
+i(71806,{q=4,u=42}),
+i(71805,{q=4,u=42}),
+i(71809,{q=4,u=42})}}),
 i(78891,{b=1,cost={{"c",615,1}},q=4,u=42})}})}}),
 d(114,{difficulties={7,1,2,3,4,5,6},u=42,g={
 e(311,{npcID=55265,u=42,g={

@@ -61,7 +61,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 110,
 				["groups"] = {
 					a(ach(13285, {	-- Upright Citizens
-						i(166247),		-- Citizens Brigade Whistle (TOY!)
+						i(166247, {	-- Citizens Brigade Whistle (TOY!)
+							n(148048, {	-- Brigade Member
+								i(163391),	-- Anchormaker
+								i(156873),	-- Boozy Boot
+								i(162551),	-- Jani Juice
+								i(166419),	-- Kelp'thar Bubble Tea
+								i(156872),	-- Loa Sweat
+								i(163637),	-- Old Ironforge
+								i(155907),	-- Undercity "Skull Shocker"
+								i(166420),	-- Xibala Kombucha
+							}),
+						}),
 						hqt(54400, name(HEADERS.AchCriteria, 13285.01)),	-- Russel the Bard recruited
 						hqt(54401, name(HEADERS.AchCriteria, 13285.02)),	-- Flynn Fairwind recruited
 						hqt(54399, name(HEADERS.AchCriteria, 13285.03)),	-- Leeroy Jenkins recruited

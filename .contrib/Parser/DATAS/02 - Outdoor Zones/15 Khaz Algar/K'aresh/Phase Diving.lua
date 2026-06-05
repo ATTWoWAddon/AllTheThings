@@ -31,7 +31,6 @@ PHASE_CONDUITS = createHeader({
 		cn = "相位导管是用于进入、退出和在无拘之域（相位潜行）中瞬间移动的传送器。除了两个位置（在征服者之痕）外，所有位置都相互连接。",
 		-- TODO: tw = "",
 	},
-
 });
 
 root(ROOTS.Zones, m(KHAZ_ALGAR, {

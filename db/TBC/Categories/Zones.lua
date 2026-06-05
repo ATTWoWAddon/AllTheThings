@@ -7645,7 +7645,7 @@ n(15165,{awp=20402,coords={
 r(49677,{isLimited=1,itemID=37915,learnedAt=250,q=1,requireSkill=197}),
 r(50644,{itemID=38327,learnedAt=250,q=1,requireSkill=197}),
 r(50647,{itemID=38328,learnedAt=245,q=1,requireSkill=197})}}),
-n(7733,{coords={
+n(7733,{awp=20505,coords={
 [1446]={{52.4,27.8}}},g={
 r(22480,{itemID=18046,learnedAt=225,q=1,requireSkill=185})}}),
 n(8139,{coords={
@@ -14987,7 +14987,7 @@ n(844,{coords={
 [1429]={{42.6,66.6},{68.8,71.6},{75,72.4}},
 [1431]={{19.6,60.6},{50.8,66.6},{75,46.4}},
 [1433]={{29.1,47.4}},
-[1436]={{57.4,52.2},{57.8,65}}},description="This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest. If you cannot find him in this zone, check one of the other three.",r=2,sym={{"select","itemID",2453,2449,3356,3357,785,3355}},g={
+[1436]={{57.4,52.2},{57.8,65}}},description="This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest. If you cannot find him in this zone, check one of the other three.",r=2,g={
 s(119900,4777,{f=24,isLimited=1,lvl=13,q=2}),
 s(119901,4778,{f=24,isLimited=1,lvl=14,q=2}),
 s(119918,4795,{f=5,isLimited=1,lvl=20,q=2}),
@@ -15736,7 +15736,7 @@ q(9157,{coords={
 qo(1,{coords={
 [1942]={{71.6,22.3}}},providers={{"i",22674},{"o",181151}},u=17})}}),
 q(9811,{coords={
-[1942]={{55,48.8}}},lvl=15,providers={{"i",22653}},qgs={16239},races={2,5,6,8},sourceQuests={9167},u=17}),
+[1942]={{55,48.8}}},lvl=15,maps={1954},providers={{"i",22653}},qgs={16239},races={2,5,6,8},sourceQuests={9167},u=17}),
 q(9139,{coords={
 [1942]={{46.3,28.3}}},lvl=9,qgs={16197},r=1,sourceQuests={9138},u=17,g={
 qo(1,{providers={{"n",16325}},u=17}),
@@ -15754,7 +15754,7 @@ i(23717,{f=52,q=1,u=17})}}),
 q(9145,{coords={
 [1942]={{45.4,32.4}}},isBreadcrumb=1,lvl=9,minReputation={922,3000},nextQuests={9143},qgs={16213},r=1,sourceQuests={9327,9329},u=17}),
 q(9328,{coords={
-[1942]={{55,48.8}}},lvl=15,providers={{"i",22653}},qgs={16239},races={10},sourceQuests={9167},u=17}),
+[1942]={{55,48.8}}},lvl=15,maps={1954},providers={{"i",22653}},qgs={16239},races={10},sourceQuests={9167},u=17}),
 q(9162,{coords={
 [1942]={{79.6,17.5}}},lvl=15,providers={{"i",22706},{"o",181150}},r=1,sourceQuests={9161},u=17}),
 q(9163,{coords={
@@ -15777,9 +15777,9 @@ qo(1,{providers={{"n",16330}},u=17}),
 qo(2,{coords={
 [1942]={{38,14.4}}},u=17})}}),
 q(9177,{coords={
-[1942]={{44.7,32.4}}},lvl=15,providers={{"i",22627}},qgs={16252},races={2,5,6,8},sourceQuests={9175},u=17}),
+[1942]={{44.7,32.4}}},lvl=15,maps={1458},providers={{"i",22627}},qgs={16252},races={2,5,6,8},sourceQuests={9175},u=17}),
 q(9180,{coords={
-[1942]={{44.7,32.4}}},lvl=15,providers={{"i",22627}},qgs={16252},races={10},sourceQuests={9175},u=17}),
+[1942]={{44.7,32.4}}},lvl=15,maps={1458},providers={{"i",22627}},qgs={16252},races={10},sourceQuests={9175},u=17}),
 q(9217,{coords={
 [1942]={{48.9,31.3}}},cost={{"i",22641,10}},lvl=15,qgs={16205},r=1,repeatable=1,sourceQuests={9216},u=17,g={
 i(22779,{b=1,f=55,q=1,u=17})}}),

@@ -149,8 +149,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								44370,	-- Completing Your Arsenal
 							},
 							["sourceQuestNumRequired"] = 1,
-							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+							["qgs"] = {
+								90259,	-- Lord Maxwell Tyrosus
+								90369,	-- Lord Maxwell Tyrosus
+							},
+							["coords"] = {
+								{ 49.8, 72.4, SANCTUM_OF_LIGHT },
+								{ 74.8, 47.4, LEGION_DALARAN },
+							},
 						}),
 						q(42120, {	-- The Silver Hand
 							["sourceQuests"] = { 42377 },	-- The Brother's Trail

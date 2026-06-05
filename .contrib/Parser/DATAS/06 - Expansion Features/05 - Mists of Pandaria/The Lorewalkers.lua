@@ -209,6 +209,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				applyclassicphase(MOP_PHASE_ESCALATION, q(32815, {	-- The Old Seer
 					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["qg"] = 61962,	-- Lorewalker Cho
+					["coord"] = { 83.1, 29.7, VALE_OF_ETERNAL_BLOSSOMS },
 					["timeline"] = { ADDED_5_3_0 },
 				})),
 				q(31102, {	-- The Seven Burdens of Shaohao

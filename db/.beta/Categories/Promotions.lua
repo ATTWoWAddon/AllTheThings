@@ -309,8 +309,8 @@ p(268,{itemID=62540,npcID=46896,rwp=40302,spellID=87344,u=2,g={
 crit(34636,{achID=5377,id=3,u=2})}})}}),
 h(-526,{awp=100200,rwp=110200,u=2,g={
 h(-522,{description="These rewards were made available to anyone who purchased Blazing Heroic Edition.",u=2,g={
-mnt(424009,{b=1,itemID=210008,lvl=10,u=2}),
-p(4316,{b=1,itemID=210964,npcID=213407,spellID=427682,u=2})}})}}),
+p(4316,{b=1,itemID=210964,npcID=213407,spellID=427682,u=2}),
+mnt(424009,{b=1,itemID=210008,lvl=10,u=2})}})}}),
 x(5,{awp=50004,description="These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
 ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
@@ -319,9 +319,9 @@ p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
 crit(34637,{achID=6848,id=3,u=2})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
+p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
 mnt(1216422,{b=1,itemID=235286,lvl=10,u=3}),
 mnt(1216430,{b=1,itemID=235287,lvl=10,u=3}),
-p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
 toy(235288,{b=1,lvl=10,u=3}),
 en(238050,{awp=110107,questID=88806,spellID=1224080,tmogSetID=4372,u=3,g={
 s(287330,238043,{f=2}),
@@ -336,11 +336,11 @@ p(1386,{itemID=109014,npcID=77137,rwp=60202,spellID=155748,u=2,g={
 crit(24600,{achID=8917,awp=100100,id=3,u=3})}}),
 mnt(155741,{b=1,itemID=109013,lvl=10,rwp=60202,u=2})}}),
 x(7,{awp=60202,description="These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
-ach(10321,{rwp=70305,u=2}),
 ach(10320,{providers={{"i",128425}},rwp=70305,u=2}),
+ach(10321,{rwp=70305,u=2}),
+mnt(189998,{b=1,itemID=128425,lvl=10,rwp=70305,u=2}),
 p(1691,{itemID=128426,npcID=95841,rwp=70305,spellID=190020,u=2,g={
-crit(28787,{achID=10321,id=1,u=2})}}),
-mnt(189998,{b=1,itemID=128425,lvl=10,rwp=70305,u=2})}}),
+crit(28787,{achID=10321,id=1,u=2})}})}}),
 x(8,{awp=70305,description="These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
 ach(12230,{providers={{"i",153540}},r=1,rwp=80307,u=2}),
 ach(12229,{providers={{"i",153539}},r=2,rwp=80307,u=2}),
@@ -356,26 +356,26 @@ mnt(307932,{u=2}),
 h(-45,{u=2,g={
 q(57686,{description="You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",lvl=50,qgs={158635},u=3,g={
 i(172954,{rwp=90205,u=2}),
-s(106487,172075,{f=2,rwp=90205,u=2}),
-s(106488,172076,{f=2,rwp=90205,u=2}),
 s(106490,172078,{f=3,rwp=90205,u=2}),
-s(106489,172077,{f=2,rwp=90205,u=2}),
 s(106491,172079,{f=2,rwp=90205,u=2}),
 s(106492,172080,{f=2,rwp=90205,u=2}),
-s(106493,172081,{f=2,rwp=90205,u=2}),
+s(106487,172075,{f=2,rwp=90205,u=2}),
 s(106494,172082,{f=2,rwp=90205,u=2}),
-s(106495,172083,{f=2,rwp=90205,u=2})}})}})}}),
+s(106489,172077,{f=2,rwp=90205,u=2}),
+s(106488,172076,{f=2,rwp=90205,u=2}),
+s(106495,172083,{f=2,rwp=90205,u=2}),
+s(106493,172081,{f=2,rwp=90205,u=2})}})}})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Shadowlands Epic Edition.",rwp=90205,u=2,g={
 i(248091,{b=1,f=101,spellID=308067,u=2}),
 toy(172179,{b=1,u=2}),
 ill(6162,{b=1,itemID=172177,questID=57596,u=2})}})}}),
 x(10,{awp=90205,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",rwp=100107,u=2,g={
-p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
-p(3175,{npcID=181535,u=2}),
-mnt(359843,{b=1,itemID=248089,lvl=10,u=2}),
 ach(17314,{providers={{"s",359843}},u=2}),
-ach(17305,{awp=100005,rwp=100200,u=2})}}),
+ach(17305,{awp=100005,rwp=100200,u=2}),
+mnt(359843,{b=1,itemID=248089,lvl=10,u=2}),
+p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
+p(3175,{npcID=181535,u=2})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",rwp=100107,u=2,g={
 toy(193588,{b=1,u=2}),
 en(255827,{spellID=1259474,tmogSetID=2293,u=2,g={
@@ -387,7 +387,6 @@ s(165614,188260,{f=3})}}),
 s(180744,193610,{f=2,u=2})}})}}),
 x(11,{awp=100107,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased The War Within Heroic Edition.",rwp=110200,u=2,g={
-mnt(417888,{b=1,itemID=258479,lvl=10,u=2}),
 ach(19027,{providers={{"s",417888}},u=2}),
 en(209336,{questID=78048,spellID=422666,tmogSetID=3128,u=2,g={
 s(190677,209321,{f=2}),
@@ -399,6 +398,7 @@ s(190678,209325,{f=2}),
 s(190679,209327,{f=2}),
 s(190680,209328,{f=2}),
 s(190684,209332,{f=2})}}),
+mnt(417888,{b=1,itemID=258479,lvl=10,u=2}),
 h(-52,{sr=1,u=2,g={
 h(-12,{sr=1,u=2,g={
 ach(18928,{sr=1,u=2}),
@@ -532,6 +532,7 @@ p(4591,{b=1,itemID=224260,npcID=224718,spellID=452223,u=3})}})}})}}),
 x(12,{awp=110200,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Midnight Heroic Edition.",u=3,g={
 ach(61401,{providers={{"s",1234305}},u=3}),
+mnt(1234305,{itemID=243020,lvl=10,u=3}),
 en(248249,{questID=91814,spellID=1246785,tmogSetID=5165,u=3,g={
 s(295504,248382,{f=2}),
 s(295503,248381,{f=2}),
@@ -542,16 +543,15 @@ s(295501,248379,{f=2}),
 s(295502,248380,{f=2}),
 s(295507,248385,{f=2}),
 s(295506,248384,{f=2}),
-s(295509,248387,{f=2})}}),
-mnt(1234305,{itemID=243020,lvl=10,u=3})}}),
+s(295509,248387,{f=2})}})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Midnight Epic Edition.",u=3,g={
 ach(61402,{providers={{"s",1239138}},u=3}),
-p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
-p(4811,{itemID=243062,npcID=244145,spellID=1234588,u=3}),
 de(9151,{awp=110207,itemID=252668,spellID=1254915,u=3}),
 de(9149,{awp=110207,itemID=252666,spellID=1254913,u=3}),
 de(9150,{awp=110207,itemID=252667,spellID=1254914,u=3}),
 de(9152,{awp=110207,itemID=252669,spellID=1254916,u=3}),
+p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
+p(4811,{itemID=243062,npcID=244145,spellID=1234588,u=3}),
 de(1458,{awp=110207,itemID=244668,spellID=1237798,u=3}),
 de(2231,{awp=110207,itemID=246414,spellID=1242068,u=3}),
 de(1894,{awp=110207,itemID=245939,spellID=1240036,u=3}),
@@ -581,8 +581,8 @@ ach(8795,{providers={{"i",106256}},u=3}),
 p(1365,{itemID=106256,npcID=74413,spellID=149810,u=3,g={
 crit(34640,{achID=8795,id=3,u=3})}})}}),
 h(-532,{awp=100002,description="These rewards are available to anyone who purchases Diablo 4 Standard Edition.",rwp=110007,u=2,g={
-mnt(369476,{b=1,itemID=191114,u=2}),
-ach(15640,{providers={{"i",191114}},u=2})}}),
+ach(15640,{providers={{"i",191114}},u=2}),
+mnt(369476,{b=1,itemID=191114,u=2})}}),
 h(-703,{awp=110207,description="These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",u=3,g={
 i(265804,{spellID=1277191,u=3,g={
 de(12247,{itemID=259055,spellID=1264380,u=3}),
@@ -604,16 +604,16 @@ de(12249,{itemID=259057,spellID=1264382,u=3})}})}}),
 h(-722,{awp=120001,description="These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",u=3,g={
 de(11287,{itemID=256764,spellID=1260747,u=3})}}),
 h(-533,{awp=60203,description="These rewards are available to anyone who purchases Overwatch Origins Collection.",rwp=100002,u=2,g={
-p(1828,{b=1,itemID=134047,npcID=103159,spellID=204148,u=2}),
-ach(11064,{providers={{"n",103159}},u=2})}}),
+ach(11064,{providers={{"n",103159}},u=2}),
+p(1828,{b=1,itemID=134047,npcID=103159,spellID=204148,u=2})}}),
 h(-534,{awp=30305,description="These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",u=3,g={
 ach(4824,{providers={{"i",56806}},u=3}),
 p(258,{itemID=56806,npcID=42078,spellID=78381,u=3,g={
 crit(34635,{achID=4824,id=3,u=3})}})}}),
 h(-535,{awp=50004,description="These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",u=3,g={
+ach(7842,{providers={{"i",90177}},u=3}),
 p(903,{itemID=90177,npcID=66984,spellID=131650,u=3,g={
-crit(34639,{achID=7842,id=2,u=3})}}),
-ach(7842,{providers={{"i",90177}},u=3})}}),
+crit(34639,{achID=7842,id=2,u=3})}})}}),
 h(-536,{awp=60202,description="These rewards are available to anyone who purchases Starcraft 2: Legacy of the Void Collection.",u=3,g={
 ach(10309,{providers={{"i",128423}},u=3}),
 p(1255,{b=1,itemID=128423,npcID=71655,spellID=143637,u=3,g={

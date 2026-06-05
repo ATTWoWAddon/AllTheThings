@@ -29,7 +29,7 @@ local DefaultConversionMethod = function(value)
 end
 -- Handles checking the 'text' and assigning 'reference.working' if the text is in a 'retrieving' state
 local function IsRetrievingConversionMethod(text, reference)
-	if IsRetrieving(text) then
+	if IsRetrieving(text, true) then
 		reference.working = true
 		text = RETRIEVING_DATA
 	end
@@ -1417,8 +1417,13 @@ app.ProcessInformationTypes = function(tooltipInfo, reference)
 end
 app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference)
 	-- app.PrintDebug("PITFET",#tooltipInfo,app.ActiveRowReference and true)
+	-- local workingChanged
 	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
 		informationType:Process(reference, tooltipInfo);
+		-- if not workingChanged and reference.working then
+		-- 	app.PrintDebug("PITFET.working.set",informationType.textLower)
+		-- 	workingChanged = true
+		-- end
 	end
 	-- app.PrintDebug("PITFET.Done",#tooltipInfo)
 end

@@ -465,16 +465,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			------ Battlegrounds ------
 			q(65032, {	-- Battleground Observers
 				["sourceQuests"] = { 65031 },	-- Battlegrounds
-				["provider"] = { "n", 167486 },	-- Tal-Inara
-				["coord"] = { 40.5, 65.9, ORIBOS },
+				["provider"] = { "n", 159478 },	-- Tal-Inara
+				["coord"] = { 38.7, 69.5, ORIBOS },
 				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["isBreadcrumb"] = true,
 			}),
 			------ Torghast ------
 			q(64849, {	-- Tower of the Damned
 				["sourceQuests"] = { 64846 },	-- Torghast
-				["provider"] = { "n", 167486 },	-- Tal-Inara
-				["coord"] = { 40.5, 65.9, ORIBOS },
+				["provider"] = { "n", 159478 },	-- Tal-Inara
+				["coord"] = { 39.2, 69.2, ORIBOS },
 				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["isBreadcrumb"] = true,
 			}),
@@ -511,8 +511,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					62159,	-- Aiding the Shadowlands
 					62704,	-- The Threads of Fate
 				},
-				["provider"] = { "n", 163427 },	-- Kalisthene
-				["coord"] = { 51.1, 43.7, BASTION },
+				["qgs"] = {
+					163427,	-- Kalisthene
+					168517,	-- Kalisthene
+				},
+				["coords"] = {
+					{ 37.4, 61.4, ARCHONS_RISE },
+					{ 51.0, 46.8, BASTION },
+				},
 				["groups"] = {
 					i(181635),	-- Honortoll Gavel
 					i(181630),	-- Honortoll Spear
@@ -625,7 +631,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(64850, {	-- Traversing Torghast
 				["sourceQuest"] = 64849,	-- Tower of the Damned
 				["provider"] = { "n", 181328 },	-- Ve'nish
-				["coord"] = { 35.5, 46.9, 1627 },
+				["coord"] = { 35.5, 46.9, 1911 },
 				["timeline"] = { ADDED_9_1_5 },
 				["lockCriteria"] = { 1, "lvl", 60 },
 				["isDaily"] = true,
@@ -644,8 +650,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			------ Bastion ------
 			q(62729, {	-- Return to Oribos
 				["sourceQuests"] = { 62723 },	-- Bolstering Bastion
-				["provider"] = { "n", 159478 },	-- Kalisthene
-				["coord"] = { 51.1, 43.7, BASTION },
+				["qgs"] = {
+					163427,	-- Kalisthene
+					168517,	-- Kalisthene
+				},
+				["coords"] = {
+					{ 37.6, 61.6, ARCHONS_RISE },
+					{ 51.1, 46.8, BASTION },
+				},
 				-- #if BEFORE DF
 				["lvl"] = { 48, 60 },
 				-- #endif

@@ -12998,7 +12998,7 @@ n(844,{coords={
 [1429]={{42.6,66.6},{68.8,71.6},{75,72.4}},
 [1431]={{19.6,60.6},{50.8,66.6},{75,46.4}},
 [1433]={{29.1,47.4}},
-[1436]={{57.4,52.2},{57.8,65}}},description="This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest. If you cannot find him in this zone, check one of the other three.",r=2,sym={{"select","itemID",2453,2449,3356,3357,785,3355}},g={
+[1436]={{57.4,52.2},{57.8,65}}},description="This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest. If you cannot find him in this zone, check one of the other three.",r=2,g={
 s(157903,4777,{f=24,isLimited=1,lvl=13,q=2}),
 s(157904,4778,{f=24,isLimited=1,lvl=14,q=2}),
 s(157915,4795,{f=5,isLimited=1,lvl=20,q=2}),

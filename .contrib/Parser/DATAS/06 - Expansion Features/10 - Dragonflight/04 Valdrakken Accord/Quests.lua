@@ -590,6 +590,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70895, {	-- Soaring in Style
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
+						["lockCriteria"] = {6,
+							"questID", 69174,	-- Cliffside Wylderdrake: Four-Horned Chin (MM!)
+							"questID", 69198,	-- Cliffside Wylderdrake: Hook Horns (MM!)
+							"questID", 69209,	-- Cliffside Wylderdrake: Scaled Pattern (MM!)
+							"questID", 69220,	-- Cliffside Wylderdrake: Spear Tail (MM!)
+							"questID", 69204,	-- Cliffside Wylderdrake: Spiked Legs (MM!)
+							"questID", 69189,	-- Cliffside Wylderdrake: White Hair (MM!)
+						},
 						["groups"] = {
 							i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (MM!)
 								["timeline"] = { ADDED_10_0_7 },

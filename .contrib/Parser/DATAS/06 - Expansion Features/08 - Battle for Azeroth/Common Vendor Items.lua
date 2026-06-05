@@ -312,6 +312,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				142760,	-- Barserver Aspen
 				142767,	-- Barserver Donlyuk
 				142775,	-- Barserver Vince
+				148048,	-- Brigade Member
 				140640,	-- Commander Langton
 				134729,	-- Crimper Mirjam
 				142770,	-- Kevin Tack
@@ -337,6 +338,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				142767,	-- Barserver Donlyuk
 				142775,	-- Barserver Vince
 				139113,	-- Bored Barkeep
+				148048,	-- Brigade Member
 				140640,	-- Commander Langton
 				123639,	-- Harold Atkey
 				142770,	-- Kevin Tack
@@ -397,6 +399,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		i(163549, {	-- Thornspeaker Moonshine
 			["crs"] = {
 				142188,	-- Allison Weber
+				148048,	-- Brigade Member
 				137411,	-- Joseph Stephens
 				137040,	-- Linda Deepwater
 			},

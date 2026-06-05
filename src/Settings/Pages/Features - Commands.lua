@@ -67,12 +67,12 @@ CreateText1(L.DECOR)
 CreateText1(L.DIFFICULTY)
 CreateText1(L.ENCOUNTER)
 --CreateText1("Event")	-- TODO: Does not work currently
-CreateText1(L.EXPANSION)
+--CreateText1(L.EXPANSION)	-- This causes only confusion and AWP command should be used instead for users
 CreateText1(L.EXPLORATION)
 CreateText1(L.FACTION)
 CreateText1(L.FLIGHT_PATHS)
+CreateText1(L.FOLLOWER)
 
-CreateText2(L.FOLLOWER)
 CreateText2(L.HEADER)
 CreateText2(L.HEIRLOOM)
 CreateText2(L.ILLUSION)
@@ -105,12 +105,12 @@ CreateText3("/att decor:ID")
 CreateText3("/att difficulty:ID")
 CreateText3("/att encounter:ID")
 --CreateText3("/att event:ID")	-- TODO: Does not work currently
-CreateText3("/att expansion:ID")
+--CreateText3("/att expansion:ID")	-- This causes only confusion and AWP command should be used instead for users
 CreateText3("/att exploration:ID")
 CreateText3("/att faction:ID")
 CreateText3("/att flightpath:ID")
+CreateText3("/att follower:ID")
 
-CreateText4("/att follower:ID")
 CreateText4("/att header:ID")
 CreateText4("/att heirloomid:ID")	-- TODO: Change once the non-ID version works
 CreateText4("/att illusion:ID")

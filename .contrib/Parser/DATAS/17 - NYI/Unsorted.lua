@@ -7,24 +7,13 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.MID, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
 			n(ARMOR, {	-- New Void Assault Things (Probably)
 				-- Misc
-				i(274772),	-- Ethereal Bandage
-				i(274774),	-- Frost-Injected Vapor
-				i(274775),	-- Void Hungerer's Vapor
-				i(274780),	-- Fungal Spore Vapor
-				i(274782),	-- Tether Severing Vapor
-				i(274793),	-- Mana Barrier Projector
-				i(274794),	-- Shockwave
-				i(276090),	-- Field Accolades
-				i(276092),	-- Lost Armaments
-				i(276094),	-- Nexus-Captain Leth'ir
-				i(276096),	-- Imperator Pertinax
+				i(274780),	-- Fungal Spore Vapor [NYI]
 				i(276097),	-- Lost Armaments
 				i(276098),	-- Raided Items
 
 				-- Rares??
 				i(274818),	-- Drape of Intense Darkness
 				i(274819),	-- Fungle Fold Frock
-				i(274821),	-- Drape of the Hal'hadar Assassin
 				i(274822),	-- Band of the Beast Reaper
 				i(274823),	-- Spongy Gill Loop
 				i(274824),	-- Worldeater's Bone Ring
@@ -65,7 +54,6 @@ root(ROOTS.Unsorted, {
 				i(274859),	-- Klaxid Plate Vambraces
 				i(274860),	-- Ancient Spore-Coated Axe
 				i(274861),	-- Frosty Broodmother's Fang
-				i(274862),	-- Corrupted Draenei Priest's Kris
 				i(274863),	-- Cudgel of the Twisted Reaper
 				i(274864),	-- Sporebloom Gavel
 				i(274865),	-- Destroyer's Drop Hammer
@@ -74,7 +62,6 @@ root(ROOTS.Unsorted, {
 				i(274868),	-- Portal Master's Shortblade
 				i(274869),	-- Void-Iced Warglaives
 				i(274870),	-- Assassin's Void-String Bow
-				i(274871),	-- Giant Worm Piercer
 				i(274872),	-- Darkness's Horrific Barb
 				i(274873),	-- Funeral Attendant's Spire
 				i(274874),	-- Flickering Wing Seperator
@@ -105,7 +92,6 @@ root(ROOTS.Unsorted, {
 				i(275158),	-- Voidwarped Scale Girdle
 				i(275159),	-- Construct Manipulator Bracers
 				i(275160),	-- Slaipaan's Carapace
-				i(275161),	-- Swamp-Resistant Stompers
 				i(275162),	-- Spore-Shined Gloves
 				i(275163),	-- Uarn's Reinforced Headplate
 				i(275164),	-- Indomitable Mechanized Legplates
@@ -119,18 +105,12 @@ root(ROOTS.Unsorted, {
 				i(274893),	-- Frosty Klaxid Stinger
 				-- Cosmetic
 				i(274877),	-- Phaseblade Headsplitter
-				i(274878),	-- Hal'hadar Shadowripper's Blade
 				i(274879),	-- Mana-Amplified Crusher
-				i(274880),	-- Hal'hadar Adjutant's Gavel
 				i(274881),	-- Phase Igniter
-				i(274882),	-- Hal'hadar Pulse Rifle
-				i(274883),	-- Hal'hadar Warpguard's Poleaxe
 				i(274884),	-- Arcanografter's Beacon
 				i(274885),	-- Phase-Edged Falchion
 				i(274886),	-- Eradicator's Censer
 				i(274887),	-- Mana-Overloaded Bulwark
-				i(274888),	-- Hal'hadar Legion Glaives
-				i(274889),	-- Hal'hadar Darkblade's Edge
 				i(275216),	-- Phaseblade's Edges
 				i(275217),	-- Nexus-Captain's Phaseblade
 				i(275218),	-- Mertei's Command Baton
@@ -145,23 +125,11 @@ root(ROOTS.Unsorted, {
 				i(275227),	-- Leth'ir's Dress Sabatons
 			}),
 			filter(BATTLE_PETS, {
-				i(271185),	-- Emberlyn
 				i(275818),	-- Pinky
 			}),
 			filter(COSMETIC, {
 				i(260383),	-- Quel'Danil Shortbow
 				i(266081),	-- Quel'Danil Quiver
-				i(260739),	-- Swamp Dweller's Night Staff
-				i(260914),	-- Arsenal: Lost Plunder Key
-				i(260915),	-- Arsenal: Found Plunder Key
-				i(262720),	-- Lost Plunder Key
-				i(262721),	-- Lost Plunder Key
-				i(262722),	-- Lost Plunder Key
-				i(262723),	-- Lost Plunder Key
-				i(262725),	-- Found Plunder Key
-				i(262726),	-- Found Plunder Key
-				i(262727),	-- Found Plunder Key
-				i(262728),	-- Found Plunder Key
 				i(269751),	-- Artisan Sai
 				i(269752),	-- Nunchuck of the Artisan
 				i(269753),	-- Artisan Katana
@@ -398,14 +366,10 @@ root(ROOTS.Unsorted, {
 				i(274681),	-- Badlands Buzzard
 			}),
 			filter(QUEST_ITEMS, {
-				i(269612),	-- Pungent Crab Tomalley
-				i(269666),	-- Feather of Jan'alai
 				i(272975),	-- Hal'Hadar Keeper Keycode
-				i(273844),	-- Shaja's Cleansing Vial
 				i(274580),	-- Primessence of Disorder
 				i(274913),	-- Brazier Pieces
 				i(274924),	-- Spore Infused Lungs
-				i(274990),	-- Infantry's Data-Node
 				i(274581),	-- Primessence of Shadow
 				i(274582),	-- Primessence of Life
 				i(274583),	-- Primessence of Arcane
@@ -416,84 +380,8 @@ root(ROOTS.Unsorted, {
 				i(274783),	-- Fel Embers
 				i(274798),	-- Remote Detonator
 				i(275134),	-- Otherworldly Spark of War
-				i(275135),	-- Firewall Decryption Key
-				i(275391),	-- Lightveil Data Decrypter
-				i(275477),	-- Nullframe Holoprint
-				i(275520),	-- Technoseer's Communique
 				i(275667),	-- Domanaar Disguise
-				i(275686),	-- Decrypted Intel Sphere
-				i(275687),	-- Soul Lattice Holoprint
-				i(275689),	-- Sunken Crypt Holoprint
 				i(275699),	-- Veraan's Soul Lattice Report
-			}),
-			n(TIMEWALKING_HEADER, {	-- Timewalking Dragonflight
-				i(260899),	-- Ensemble: Time-Lost Earthwarden's Battlegear
-				i(260906),	-- Earthwarden's Battle Pauldrons
-				i(260909),	-- Earthwarden's Battle Helm
-				i(260917),	-- Infinite Broodkeeper's Greatstaff
-				i(260919),	-- Scavenger's Banner
-				i(260920),	-- Emergency Landing Kit
-				i(260921),	-- Khan's Ceremonial Crossbow
-				i(260923),	-- Infinite Timeslicer
-				i(260926),	-- Ensemble: Shadowflame-Seared Druidic Garb
-				i(260941),	-- Ensemble: Winter's Dreaming Garb
-				i(260944),	-- Ensemble: Pristine Draconic Scholar's Finery
-				i(260945),	-- Ensemble: Razorscale Pauldrons
-				i(260946),	-- Ensemble: Dragonstone Shoulderguards
-				i(262359),	-- Djardin Sparring Spear
-				i(262360),	-- Storyteller's Verses
-				i(262361),	-- Rothide Crusher
-				i(262362),	-- Expeditioner's Spellblade
-				i(262363),	-- Expeditioner's Mallet
-				i(262364),	-- Drakkanid Stabber
-				i(262365),	-- Maruuk Hunting Bow
-				i(262366),	-- Headmaster's Emberstaff
-				i(262367),	-- Slumbering Guardian's Bulwark
-				i(262368),	-- Centaur Battleglaive
-				i(262378),	-- Chronomental Grips
-				i(262379),	-- Chronomental Halfgloves
-				i(262380),	-- Chronomental Gauntlets
-				i(262381),	-- Chronomental Gloves
-				i(262382),	-- Teerai Watcher Breeches
-				i(262383),	-- Ohn'ir Initiate Leggings
-				i(262384),	-- Shikaar Scout Breeches
-				i(262385),	-- Nokhud Reaver Legplates
-				i(262386),	-- Bronze Drake's Promise
-				i(262387),	-- Silver Keeper's Band
-				i(262388),	-- Vaultkeeper's Signet
-				i(262439),	-- Shadowflame Mantle
-				i(262440),	-- Shadowflame Wings
-				i(262441),	-- Shadowflame Talons
-				i(262444),	-- Shadowflame Binding
-				i(262445),	-- Shadowflame Dressings
-				i(262446),	-- Winter's Dreaming Epaulets
-				i(262447),	-- Winter's Dreaming Tabard
-				i(262448),	-- Winter's Dreaming Cloak
-				i(262478),	-- Pristine Draconic Scholar's Cape
-				i(262479),	-- Pristine Draconic Scholar's Spaulders
-				i(262480),	-- Pristine Draconic Scholar's Tabard
-				i(262482),	-- Razorscale Royal Pauldrons
-				i(262485),	-- Razorscale Azure Pauldrons
-				i(262486),	-- Razorscale Bronze Pauldrons
-				i(262488),	-- Razorscale Green Pauldrons
-				i(262489),	-- Razorscale Onyx Pauldrons
-				i(262490),	-- Razorscale Silver Pauldrons
-				i(262491),	-- Razorscale Dusk Pauldrons
-				i(262492),	-- Razorscale Verdant Pauldrons
-				i(262493),	-- Razorscale Mauve Pauldrons
-				i(262494),	-- Razorscale Red Pauldrons
-				i(262568),	-- Royal Dragonstone Shoulderguards
-				i(262569),	-- Purple Dragonstone Shoulderguardsrds
-				i(262571),	-- Wild Dragonstone Shoulderguards
-				i(262570),	-- Gleaming Dragonstone Shouldergua
-				i(262572),	-- Bronze Dragonstone Shoulderguards
-				i(262573),	-- Silver Dragonstone Shoulderguards
-				i(262574),	-- Dusk Dragonstone Shoulderguards
-				i(262575),	-- Verdant Dragonstone Shoulderguards
-				i(262576),	-- Mauve Dragonstone Shoulderguards
-				i(262577),	-- Crimson Dragonstone Shoulderguards
-				i(263262),	-- Shadowflame Vest
-				i(263263),	-- Shadowflame Kilt
 			}),
 		})),
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
@@ -514,7 +402,6 @@ root(ROOTS.Unsorted, {
 					i(270291),	-- Crown of Rosy Springflowers
 					i(270281),	-- Crown of Sepia Springflowers
 					i(270296),	-- Crown of Snowy Springflowers
-					i(270297),	-- Crown of Sunny Springflowers
 					i(270294),	-- Crown of Violet Springflowers
 				}),
 				filter(TABARDS, {
@@ -559,36 +446,6 @@ root(ROOTS.Unsorted, {
 					i(268602),	-- Blue Sunwalker Helmet
 					i(268603),	-- Blue Sunwalker Tunic
 
-					------ Duskrunner's Painted Battle Garb Set ------
-					i(268693),	-- Ensemble: Duskrunner's Painted Battle Garb
-					i(268681),	-- Duskrunner's Painted Hauberk
-					i(268682),	-- Duskrunner's Painted Wrap
-					i(268683),	-- Duskrunner's Painted Gauntlets
-					i(268684),	-- Duskrunner's Painted Striders
-					i(268685),	-- Duskrunner's Painted Greaves
-					i(268686),	-- Duskrunner's Painted Leggings
-					i(268687),	-- Duskrunner's Painted Sash
-					i(268688),	-- Duskrunner's Painted Girdle
-					i(268689),	-- Duskrunner's Painted Mantle
-					i(268690),	-- Duskrunner's Painted Wings
-					i(268691),	-- Duskrunner's Painted Mask
-					i(268692),	-- Duskrunner's Painted Tunic
-
-					------ Sunbringer's Painted Battle Garb Set ------
-					i(268743),	-- Ensemble: Sunbringer's Painted Battle Garb
-					i(268731),	-- Sunbringer's Painted Hauberk
-					i(268732),	-- Sunbringer's Painted Wrap
-					i(268733),	-- Sunbringer's Painted Gauntlets
-					i(268734),	-- Sunbringer's Painted Striders
-					i(268735),	-- Sunbringer's Painted Greaves
-					i(268736),	-- Sunbringer's Painted Leggings
-					i(268737),	-- Sunbringer's Painted Sash
-					i(268738),	-- Sunbringer's Painted Girdle
-					i(268739),	-- Sunbringer's Painted Mantle
-					i(268740),	-- Sunbringer's Painted Wings
-					i(268741),	-- Sunbringer's Painted Mask
-					i(268742),	-- Sunbringer's Painted Tunic
-
 					------ Dawnchaser's Painted Battle Garb Set ------
 					i(268793),	-- Ensemble: Dawnchaser's Painted Battle Garb
 					i(268781),	-- Dawnchaser's Painted Hauberk
@@ -609,16 +466,6 @@ root(ROOTS.Unsorted, {
 					i(268884),	-- Blue Sunwalker Totem
 					i(268885),	-- Blue Sunwalker Sun Totem
 
-					------ Duskrunner's Guiding Totems Set ------
-					i(268893),	-- Ensemble: Duskrunner's Guiding Totems
-					i(268886),	-- Duskrunner's Painted Sun-Totem
-					i(268887),	-- Duskrunner's Painted Sun-Beacon
-
-					------ Sunbringer's Guiding Totems Set ------
-					i(268894),	-- Ensemble: Sunbringer's Guiding Totems
-					i(268888),	-- Sunbringer's Painted Sun-Totem
-					i(268889),	-- Sunbringer's Painted Sun-Beacon
-
 					------ White Sunwalker Totem Set ------
 					i(268895),	-- Ensemble: White Sunwalker Totem
 					i(268890),	-- White Sunwalker Totem
@@ -636,18 +483,10 @@ root(ROOTS.Unsorted, {
 					i(268907),	-- Dawnchaser Totemic Greataxe
 					i(268899),	-- Dawnchaser's Flamebrand
 					i(268903),	-- Dawnchaser's Torchblade
-					i(268897),	-- Duskrunner's Flamebrand
-					i(268901),	-- Duskrunner's Torchblade
-					i(268909),	-- Duskrunner's Totemic Edge
-					i(268905),	-- Duskrunner's Totemic Greataxe
 					i(268513),	-- Emberstone Loyalist Boltshot
 					i(268493),	-- Emberstone Loyalist Bonecracker
 					i(268497),	-- Emberstone Loyalist Knuckleblades
 					i(271814),	-- Spring Dagger-Tined Rake
-					i(268898),	-- Sunbringer's Flamebrand
-					i(268902),	-- Sunbringer's Torchblade
-					i(268910),	-- Sunbringer's Totemic Edge
-					i(268906),	-- Sunbringer's Totemic Greataxe
 				}),
 			}),
 			n(DECOR, {
@@ -657,8 +496,6 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				i(267278),	-- Angler Pearls
 				i(271353),	-- Collection of Valuables
-				i(272111),	-- Decaying Necromancer Cloak
-				i(272114),	-- Discarded Excavation Tool
 				i(268122),	-- Dispelled Coins
 				i(264162),	-- Enchanted Snowflake [PH]
 				i(272400),	-- Fine Lynx Fur
@@ -668,7 +505,6 @@ root(ROOTS.Unsorted, {
 				i(267352),	-- Pocket Rainbow
 				i(267353),	-- Pocket Sand
 				i(268694),	-- Rainbow Runners
-				i(272119),	-- Residue-Covered Tool
 				i(273013),	-- Void-Permeated Hide Scrap
 				i(267380),	-- Volatile Pink Brightbursts
 				i(260892),	-- "Arcane Ranger" Kit
@@ -677,8 +513,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(268878),	-- [PH] Giant Eagle Sunwalker Mount Blue (MOUNT!)
 				i(268875),	-- [PH] Giant Eagle Sunwalker Mount White (MOUNT!)
-				i(268877),	-- Dusk-Painted Sun Roc (MOUNT!)
-				i(268876),	-- Flame-Painted Sun Roc (MOUNT!)
 				i(268362),	-- Gilnean Copper Charger (MOUNT!)
 				i(268360),	-- Gilnean Iron Charger (MOUNT!)
 			}),
@@ -696,7 +530,6 @@ root(ROOTS.Unsorted, {
 				i(267323),	-- Troll Scroll of Rainbow Roll (TOY!)
 			}),
 			i(274427),	-- Sha Loot Box
-			i(273307),	-- Vial of Intrepid Lemonade
 			i(274578),	-- Offering of Unalloyed Abundance
 		})),
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
@@ -1411,8 +1244,6 @@ root(ROOTS.Unsorted, {
 				i(154132),	-- Wikket Weaksauce
 				i(154133),	-- Lorkin' Ikkin' Ooked Tik-Flipper
 				i(155592),	-- Stolen Candy
-				i(156872),	-- Loa Sweat
-				i(156873),	-- Boozy Boot
 				i(158466),	-- Fort Victory Sausage
 				i(158926),	-- Fried Turtle Bits
 				i(159867),	-- Rockskip Mineral Water
@@ -1523,13 +1354,11 @@ root(ROOTS.Unsorted, {
 				i(163207),	-- Gral's Growler
 				i(163208),	-- Uncle Sezahjin's Fried Chicken
 				i(163387),	-- Toil and Trouble
-				i(163391),	-- Anchormaker
 				i(163395),	-- Sunken Pylon
 				i(163399),	-- Sludge Fizz
 				i(163407),	-- Drustvine
 				i(163411),	-- Briartini
 				i(163417),	-- Journey's End
-				i(163637),	-- Old Ironforge
 				i(163640),	-- Huangtze Pure Malt
 				i(163641),	-- Brunnhildar Rime
 				i(163642),	-- The Aerie 8 Year, Hinterlands Malt
@@ -2410,7 +2239,6 @@ root(ROOTS.Unsorted, {
 			i(166397),	-- Set Keystone Map: Tol Dagor
 			i(166398),	-- Set Keystone Map: Waycrest Manor
 			i(166399),	-- Add Keystone Affix: Infested
-			i(166419),	-- Kelp'thar Bubble Tea
 			i(166421),	-- PH Alliance Warfront Skullcleaver
 			i(166423),	-- PH Horde Warfront Claymore
 			i(166424),	-- PH Horde Warfront Warhammer

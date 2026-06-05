@@ -432,6 +432,9 @@ root(ROOTS.Zones, {
 								n(110486, {	-- Huk'roth the Huntmaster
 									["altQuests"] = { 44004 },	-- Bringer of the Light
 									["questID"] = 43480,
+									-- #IF AFTER 11.2.5
+									["isDaily"] = true,	-- Daily during Legion Remix 2025, and thereafter
+									-- #endif
 									["groups"] = {
 										i(140533),	-- Huntmaster's Injector
 									},

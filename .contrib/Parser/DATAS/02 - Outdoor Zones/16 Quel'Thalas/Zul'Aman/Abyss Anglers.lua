@@ -75,6 +75,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				ach(62214),	-- Abyss Anglers: Triple-Thread Net
 				ach(62763),	-- Abyss Anglers: Vintage Collector
 			}),
+			n(EVENT_COMPLETION, {
+				currency(ANGLER_PEARLS),
+			}),
 			n(QUESTS, {
 				q(96388, {	-- Joining the Abyss Anglers
 					--["sourceQuests"] = { X },	-- Completing the Campaign, I guess
@@ -90,9 +93,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["isRepeatable"] = true,
 					}),
 				}),
-			}),
-			n(REWARDS, {
-				currency(ANGLER_PEARLS),
 			}),
 			n(VENDORS, {
 				n(240195, {	-- Depthdiver Jeju <Veteran Abyss Angler>

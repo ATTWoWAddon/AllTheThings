@@ -5,6 +5,12 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
 		n(QUESTS, {
+			n(BONUS_OBJECTIVES, {
+				q(91040, {	-- Vexatious Vilebranch
+					["sourceQuests"] = { 86659 },	-- Breaching the Mist
+					["coord"] = { 33.8, 33.6, MAP.MIDNIGHT.ZULAMAN },
+				}),
+			}),
 			header(HEADERS.Achievement, 41803, {	-- For Zul'Aman!
 				header(HEADERS.AchCriteria, 41803.01, {	-- Dis Was Our Land
 					q(86708, {	-- The Gates of Zul'Aman
@@ -436,13 +442,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 			}),
-			n(BONUS_OBJECTIVES, {
-				q(91040, {	-- Vexatious Vilebranch
-					["sourceQuests"] = { 86659 },	-- Breaching the Mist
-					["coord"] = { 33.8, 33.6, MAP.MIDNIGHT.ZULAMAN },
-				}),
-			}),
-			--Sojourner
 			header(HEADERS.Achievement, 61452, {	-- Sojourner of Zul'Aman
 				header(HEADERS.AchCriteria, 61452.01, {	-- Healing the Spirit
 					q(91206, {	-- Loa Disturbance
@@ -1447,6 +1446,62 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 			}),
+			n(createHeader({
+				readable = "A Fiery Blast from the Past",
+				icon = 6119038,
+				text = {
+					en = "A Fiery Blast from the Past",
+					-- de = "",
+					-- es = "",
+					-- mx = "",
+					-- fr = "",
+					-- it = "",
+					-- ko = "",
+					-- pt = "",
+					-- ru = "",
+					-- cn = "",
+					-- tw = "",
+				},
+			}), {
+				["description"] = "With the return of Jan’alai, Loa of Fire comes a return to past traditions. She’s ready to bring a new clutch of eggs into the world but Loa Speaker Brek requires assistance with the ceremony and with ensuring all the Loa’s young are released safely from their eggs. Be a part of welcoming the first of her offspring and protecting them as they take their first steps.",
+				["timeline"] = { ADDED_12_0_7 },
+				["groups"] = {
+					q(94868, {	-- It Takes Two
+						["qg"] = 245512,	-- Loa Speaker Brek
+						["coord"] = { 55.1, 18.3, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(273844) },	-- Shaja's Cleansing Vial (PQI!)
+					}),
+					q(94869, {	-- Hungry Hungry Hatchlings
+						["qg"] = 245512,	-- Loa Speaker Brek
+						["coord"] = { 55.1, 18.3, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(269612) },	-- Pungent Crab Tomalley (QI!)
+					}),
+					q(94870, {	-- Eggstra Protection Never Hurts
+						["sourceQuests"] = {
+							94868,	-- It Takes Two
+							94869,	-- Hungry Hungry Hatchlings
+						},
+						["qg"] = 245512,	-- Loa Speaker Brek
+						["coord"] = { 55.1, 18.3, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							o(639875, {	-- Feather of Jan'alai
+								i(269666),	-- Feather of Jan'alai (QI!)
+							}),
+						},
+					}),
+					q(94882, {	-- Perfect Timing
+						["sourceQuest"] = 94870,	-- Eggstra Protection Never Hurts
+						["qg"] = 245512,	-- Loa Speaker Brek
+						["coord"] = { 55.1, 18.3, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(94883, {	-- Like Dragonhawks to a Flame
+						["sourceQuest"] = 94882,	-- Perfect Timing
+						["qg"] = 264710,	-- Shaja
+						["coord"] = { 55.1, 18.4, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(271185) },	-- Emberlyn (PET!)
+					}),
+				},
+			}),
 			-- Altar of Blessings
 			q(93792, {	-- Blessings of the Loa
 				-- Exo Note: Quest completion is a criterion for ach:62270 (Altar of Blessings: One for Altar)
@@ -1464,6 +1519,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 	}),
 }));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.ZULAMAN, {

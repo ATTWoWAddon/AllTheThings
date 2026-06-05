@@ -1,6 +1,7 @@
 --------------------------------------------
 --     S E C R E T S  M O D U L E       --
 --------------------------------------------
+
 root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 	["description"] = "***Using Debug Mode is recommended.***\n",
 	["timeline"] = { ADDED_11_0_5 },

@@ -34,6 +34,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["description"] = "Currently requires completing all 7 Legends on ONE character, and due to the account-wide lockout per week of completing 'Lost Legends' (89268) you can only get credit for one legend for one character per week! Choose wisely!",
 				}),
 			}),
+			n(EVENT_COMPLETION, {
+				i(269703, {	-- Avid Learner's Supply Pack
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+				}),
+				i(268487, {	-- Avid Learner's Supply Pack (Pre-Season)
+					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+				}),
+				i(263467, {	-- Avid Learner's Supply Pack (Season 1)
+					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+				}),
+			}),
 			n(QUESTS, {	-- Legends Never Die
 				header(HEADERS.AchCriteria, 61574.01, {	-- Wey'nan's Ward
 					q(88993, {	-- Wey'nan's Ward
@@ -267,19 +280,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 53.4, 49.4, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(260306) },	-- Distorted Memory (PET!)
 					}),
-				}),
-			}),
-			n(REWARDS, {
-				i(269703, {	-- Avid Learner's Supply Pack
-					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
-				}),
-				i(268487, {	-- Avid Learner's Supply Pack (Pre-Season)
-					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
-					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
-				}),
-				i(263467, {	-- Avid Learner's Supply Pack (Season 1)
-					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 			}),
 			n(TREASURES, {

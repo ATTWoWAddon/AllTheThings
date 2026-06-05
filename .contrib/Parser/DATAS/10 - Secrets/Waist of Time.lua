@@ -25,7 +25,10 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDownSelf({ ["timeline"] =
 			["questID"] = 52831,
 			["sourceQuests"] = { 52830 },
 			["description"] = "Stormwind City\n\nThe Strange Seed reads: \n\n\"<Something is written here.>\n\nSadness, Keynoted\"",
-			["coord"] = { 17.5, 56.5, ELWYNN_FOREST },	-- Strange Seed
+			["coords"] = {
+				{ 17.5, 56.5, ELWYNN_FOREST },
+				{ 43.3, 77.9, EASTERN_KINGDOMS },
+			},
 		}),
 		o(294098, {	-- Tiny Frog
 			["model"] = 367326,

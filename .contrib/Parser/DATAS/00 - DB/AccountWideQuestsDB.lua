@@ -710,6 +710,7 @@ local AccountWideQuestsDB = {
 	42948,
 	42973,
 	43016,
+	44184,	-- In the Blink of an Eye
 	44767,
 	44948,
 	44949,
@@ -1368,17 +1369,18 @@ local AccountWideQuestsDB = {
 	77250,
 	77253,
 	77285,
-	77288,
-	77289,
-	77290,
-	77291,
-	77292,
-	77293,
-	77294,
-	77296,
-	77297,
-	77298,
-	77299,
+	77288,	-- Loose Dirt Mound
+	77289,	-- Loose Dirt Mound
+	77290,	-- Loose Dirt Mound
+	77291,	-- Loose Dirt Mound
+	77292,	-- Loose Dirt Mound
+	77293,	-- Loose Dirt Mound
+	77294,	-- Loose Dirt Mound
+	77295,	-- Loose Dirt Mound
+	77296,	-- Loose Dirt Mound
+	77297,	-- Loose Dirt Mound
+	77298,	-- Loose Dirt Mound
+	77299,	-- Loose Dirt Mound
 	77300,	-- Loose Dirt Mound
 	77301,	-- Loose Dirt Mound
 	77302,	-- Loose Dirt Mound
@@ -1422,6 +1424,7 @@ local AccountWideQuestsDB = {
 	78101,
 	78130,
 	78207,	-- Loose Dirt Mound
+	78208,	-- Loose Dirt Mound
 	78363,
 	78386,
 	78422,
@@ -2654,6 +2657,7 @@ local AccountWideQuestsDB = {
 	93875,	-- ??
 	93880,	-- Delver's Starter Kit
 	93881,	-- Delver's Cosmetic Surprise Bag
+	93907,	-- Edification of the Worthy
 	93922,	-- A Singular Focus Unleashed
 	93923,	-- Tenacity of the Shul'ka
 	93924,	-- An Unrelenting March

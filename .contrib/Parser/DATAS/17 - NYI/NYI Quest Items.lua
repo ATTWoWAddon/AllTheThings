@@ -332,17 +332,11 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		-- 9.1.0
 		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 			i(185732),	-- Archive Tablet
-			i(187004),	-- Bone Chew
 			i(185736),	-- Brilliant Golden Feather
-			i(187002),	-- Delicious Pet Cookie
 			i(185727),	-- Draka's Battlehorn
-			i(186733),	-- Lovely Pet Caller
 			i(185766),	-- Necrolite Focusing Crystal
-			i(187003),	-- Pet Plushy
-			i(187001),	-- Stylish Pet Collar
 			i(187505),	-- Super Cool Dragon Head
 			i(185743),	-- Torn Page
-			i(187005),	-- Wizard Pet Hat
 		})),
 
 		-- 9.2.0

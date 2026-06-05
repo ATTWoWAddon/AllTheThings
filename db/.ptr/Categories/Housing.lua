@@ -198,7 +198,7 @@ q(94379,{coords={
 i(266892,{awp=120000,spellID=1278769,g={
 campsite(146),
 campsite(145)}})}}),
-q(92816,{lvl=10,maps={2351,2352},sourceQuests={94379},g={
+q(92816,{customCollect={"NPE"},lc={1,"questID",91863,"lvl",60},lvl=10,maps={2351,2352},sourceQuests={94379},g={
 i(254504,{spellID=1258142})}}),
 q(93647,{coords={
 [2351]={{54.2,58}},

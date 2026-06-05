@@ -180,7 +180,7 @@ do
 		ImportFields = { "name", "link", "icon", "specs", "tsm", "costCollectibles", "AsyncRefreshFunc" },
 	},
 	function(t) return t.itemID end)
-	
+
 	-- Spell Rank Handling
 	local GetSpellRank = GetSpellRank;
 	local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -213,7 +213,7 @@ do
 			for i,spell in ipairs(g) do
 				CacheRankForSpell(id, spell.rank);
 			end
-			
+
 			-- Don't cache other cached spells within Spells, they're handled separately
 			if not IsAccountCached("Mounts", id) then
 				state = IsSpellKnownHelper(id)
@@ -262,7 +262,7 @@ do
 				end
 			end
 		end
-		
+
 		-- If we know a higher rank of the spell, then flag all lower ranks of the spell as collected.
 		for spellName,rankedSpell in pairs(RankedSpellNames) do
 			--print("Max Rank", spellName, rankedSpell.max);
@@ -281,12 +281,10 @@ do
 				end
 			end
 		end
-		
+
 		-- Character Cache
 		app.SetBatchCached(CACHE, saved, 1)
 		app.SetBatchCached(CACHE, none)
-		-- Account Cache (removals handled by Sync)
-		app.SetBatchAccountCached(CACHE, saved, 1)
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
@@ -369,8 +367,6 @@ do
 			-- Character Cache
 			app.SetBatchCached("Spells", char, 1)
 			app.SetBatchCached("Spells", none)
-			-- Account Cache (removals handled by Sync)
-			app.SetBatchAccountCached("Spells", saved, 1)
 		end);
 		app.AddEventRegistration("USE_GLYPH", function()
 			-- TODO: Refresh Glyphs somehow.

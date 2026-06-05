@@ -383,7 +383,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(41240),	-- Cobalt Tenderizer
 			i(40668),	-- Cobalt Triangle Shield
 			i(42443),	-- Cudgel of Saronite Justice
-			i(41245, {["timeline"] = {ADDED_3_0_3}}),	-- Deadly Saronite Dirk (made grey in 5.0.4 but not removed)
+			i(41245),	-- Deadly Saronite Dirk (made grey in 5.0.4 but not removed)
 			i(41242),	-- Forged Cobalt Claymore
 			i(41185),	-- Furious Saronite Beatstick
 			i(41181),	-- Honed Cobalt Cleaver

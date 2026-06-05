@@ -335,9 +335,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						}),
 						q(63753, {	-- Centurions March!
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
+							["qg"] = 177175,	-- Mikanikos <Forgelite Prime>
 							["coord"] = { 37.0, 63.5, THE_MAW },
 							["groups"] = {
-								i(185733),	-- Anima Mote (QI!)
+								o(367983, {	-- Anima Canister
+									["coords"] = {
+										{ 31.7, 68.2, THE_MAW },
+										{ 32.9, 68.4, THE_MAW },
+										{ 33.0, 68.5, THE_MAW },
+										{ 33.4, 66.2, THE_MAW },
+										{ 33.5, 66.2, THE_MAW },
+										{ 33.9, 71.6, THE_MAW },
+										{ 34.0, 67.2, THE_MAW },
+										{ 34.9, 68.2, THE_MAW },
+										{ 35.4, 66.0, THE_MAW },
+										{ 35.5, 66.0, THE_MAW },
+										{ 36.4, 65.3, THE_MAW },
+										{ 36.5, 65.3, THE_MAW },
+									},
+									["groups"] = { i(185733) },	-- Anima Mote (QI!)
+								}),
 							},
 						}),
 						q(63594, {	-- Clearing the Walls

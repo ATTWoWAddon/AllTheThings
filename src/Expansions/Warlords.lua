@@ -79,8 +79,6 @@ do
 		-- Character Cache
 		app.SetBatchCached(CACHE, saved, 1)
 		-- can't un-cache because API data is incorrect unless in Garrison, thanks Blizzard
-		-- Account Cache (removals handled by Sync)
-		app.SetBatchAccountCached(CACHE, saved, 1)
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
@@ -212,8 +210,6 @@ do
 		end
 		-- Character Cache
 		app.SetBatchCached(CACHE, saved, 1)
-		-- Account Cache (removals handled by Sync)
-		app.SetBatchAccountCached(CACHE, saved, 1)
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end

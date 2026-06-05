@@ -775,6 +775,7 @@ iq(216902, 80089);					-- Yellow Duck Disguise
 is(0, 432257);						-- Path of the Bitter Legacy
 is(0, 432254);						-- Path of the Primal Prison
 is(0, 432258);						-- Path of the Scorching Dream
+ihqt(217705, 80436);				-- Pirate's Booty
 
 ------------------
 -- PATCH 11.0.0 --
@@ -993,9 +994,12 @@ ihqt(262645, 93794);				-- Beyond the Event Horizon: Alchemy
 ihqt(262644, 93795);				-- Beyond the Event Horizon: Blacksmithing
 ihqt(262646, 93796);				-- Beyond the Event Horizon: Engineering
 iq(262966, 93866);					-- Budget Friendly
+ihqt(253245, 92601);				-- Cracked Keystone
 iq(262964, 93868);					-- Death's Hope
 iq(253802, 92710);					-- Deed of Patronage
+ihqt(263179, 93881);				-- Delver's Cosmetic Surprise Bag
 iq(262965, 93867);					-- Delver's Delight
+ihqt(263178, 93880);				-- Delver's Starter Kit
 ihqt(250445, 92186);				-- Echo of Abundance: Enchanting
 ihqt(250443, 92174);				-- Echo of Abundance: Herbalism
 ihqt(250444, 92187);				-- Echo of Abundance: Mining

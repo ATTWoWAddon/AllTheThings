@@ -2251,7 +2251,8 @@ q(53935,{awp=80105,lvl=80,maps={109},qgs={149808},r=1,rwp=90002,sourceQuests={53
 mnt(289639,{b=1,itemID=166724,lvl=10,u=2})}}),
 q(92845,{coords={
 [84]={{66.6,72.2}},
-[2339]={{51.2,43.4}}},DisablePartySync=1,lvl=80,qgs={253181},r=2}),
+[2339]={{51.2,43.4}},
+[2393]={{43,77}}},DisablePartySync=1,lvl=80,qgs={253181},r=2}),
 q(92851,{coords={
 [499]={{53.7,61.6}}},DisablePartySync=1,lc={1,"achID",61413,"achID",61414},lvl=80,qgs={253170},r=2,sourceQuests={92845},g={
 i(254690,{b=1,lvl=10,spellID=136149})}}),

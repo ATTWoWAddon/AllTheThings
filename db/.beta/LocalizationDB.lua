@@ -1726,6 +1726,7 @@ localize(L.HEADER_NAMES, {
 	[-745] = "Mail Delivery Races",
 	[-746] = "Profession Nodes",
 	[-748] = "Fanta",
+	[-750] = "Phase Conduits",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1843,6 +1844,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
 	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
 	[-748] = "Go to https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, play a short game and get 1 reward per week. Sweepstakes starts on April 1, 2026 and ends at 11:59 pm ET on July 30, 2026 or once all rewards have been claimed, whichever occurs first. 2392 of each reward available per week. Resets at 12:00 am ET weekly. No purchase necessary.",
+	[-750] = "Phase Conduits are teleporters used to enter, exit, and instantly move around the Untethered Space (Phase Diving). All but two locations (on Vanquisher's Wake) are connected with each other.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2445,6 +2447,7 @@ localize(L.HEADER_ICONS, {
 	[-745] = 413580,
 	[-746] = 4622272,
 	[-748] = 4672182,
+	[-750] = 6654410,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -2659,7 +2662,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=31,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=31,["weekday"]=1,["year"]=2026}),
@@ -2711,7 +2713,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=18,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=4,["monthDay"]=18,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=25,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=4,["monthDay"]=25,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=2,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=2,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=16,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=16,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -79514,6 +79517,8 @@ L.KNOWN_BY = "已知 %s";
 L.KNOWN_BY_CHECKBOX = "已知";
 L.KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中查看所有服务器上已知此配方的完整角色列表，请启用此选项。";
 L.LAYER = "位面";
+L.LEAVE_DELVE = "离开地下堡";
+L.LEAVE_DELVE_DESC = "点击这里离开地下堡。";
 L.LEAVE_GROUP = "离开队伍";
 L.LEAVE_GROUP_DESC = "点击此处离开队伍。在大多数情况下，这也会在60秒左右后将你送到最近的墓地。\n\n注意：只有当你在一个队伍中或者游戏认为你在一个队伍中时才有效。";
 L.LEGACY_RAID_DIFF = "经典团队难度";
@@ -80244,7 +80249,7 @@ localize(L.HEADER_NAMES, {
 	[-522] = "英雄礼包",
 	[-523] = "史诗礼包",
 	[-524] = "'燃烧的远征'怀旧服典藏包",
-	[-525] = "'巫妖王之怒'怀旧服 - 北裂境升级",
+	[-525] = "'巫妖王之怒'怀旧服 - 诺森德升级",
 	[-526] = "'大地的裂变'怀旧服 - 炽炎升级",
 	[-527] = "'熊猫人之谜'怀旧服 - 宿煞英雄礼包",
 	[-529] = "魔兽世界15周年典藏版",
@@ -80319,16 +80324,18 @@ localize(L.HEADER_NAMES, {
 	[-694] = "'燃烧的远征'周年纪念版 - 外域升级",
 	[-696] = "虚空传送门",
 	[-700] = "哈提的后裔",
-	[-703] = "暗黑破坏神 IV：憎恨之王",
+	[-703] = "暗黑破坏神IV：憎恨之王",
 	[-708] = "雷蛇",
 	[-709] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
 	[-710] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 	[-712] = "升级中角色",
 	[-713] = "最高等级角色",
+	[-722] = "暗黑破坏神II重制版 - 术士君临",
 	[-723] = "元素入侵",
 	[-729] = "丰饶",
 	[-738] = "哈籁尼尔的传说",
 	[-746] = "专业节点",
+	[-750] = "相位导管",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",
@@ -80386,6 +80393,15 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-517] = "赛睿《魔兽世界》限量版系列促销活动",
 	[-518] = "雷蛇《魔兽世界》系列游戏外设促销：购买任意一件，即可获赠全部三个促销兑换码",
 	[-519] = "亚马逊 Prime Gaming 为《魔兽世界》正式服提供游戏内内容。根据你所在的国家 / 地区，包含 Prime Gaming 权益的亚马逊 Prime 会员每月费用在 4–16 美元 / 欧元 之间，偶尔也会提供月度免费试用。\n\n创建一个 Twitch 账号，并将其绑定你的亚马逊 Prime 账号。\n\n接下来将你的战网账号与 Twitch 账号绑定。\n\n最后前往 gaming.amazon.com/loot/wow 领取每月专属奖励。\n\n亚马逊 Prime 会员还附带免费的 Twitch 订阅资格，你可以用它来支持 AllTheThings。\n\n推荐主播：\n\nTwitch.tv/Crieve\nTwitch.tv/Goldenshacal",
+	[-529] = "这些奖励是提供给购买了魔兽世界15周年典藏版的玩家的。",
+	[-530] = "这些奖励是提供给购买了暗黑破坏神III典藏版的玩家的。",
+	[-531] = "这些奖励是提供给购买了暗黑破坏神III：夺魂之镰典藏版的玩家的。",
+	[-532] = "这些奖励是提供给购买了暗黑破坏神IV基础版的玩家的。",
+	[-533] = "这些奖励是提供给购买了守望先锋：起源典藏版的玩家的。",
+	[-534] = "这些奖励是提供给购买了星际争霸II：自由之翼典藏版的玩家的。",
+	[-535] = "这些奖励是提供给购买了星际争霸II：虫群之心典藏版的玩家的。",
+	[-536] = "这些奖励是提供给购买了星际争霸II：虚空之遗典藏版的玩家的。",
+	[-537] = "这些奖励是提供给购买了魔兽争霸III战争嘉奖版的玩家的。",
 	[-547] = "本板块用于收录现实中开展的各类杂项促销活动，以及与账号管理相关的内容",
 	[-549] = "以下物品套装作为复活卷轴接受者的角色提升奖励而实施。\n\n在复活卷轴服务退役后，它们后来被添加到海加尔山和瓦丝琪尔的商人处。",
 	[-550] = "这是一个以战场为基础的活动，与夏季奥运会的开始同时进行。唯一一次庆祝是在2008年，以配合北京奥运会，虽然似乎有意图重复这个活动，但它从未回归。",
@@ -80404,13 +80420,16 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-652] = "赞达拉部族对潘达利亚大陆的入侵始于雷神岛的开放。战争使者遍布整个大陆，拥有难度各异的单人挑战机制及可获取的坐骑！与好友一同刷取这些奖励吧。",
 	[-669] = "这些促销活动均发生在《至暗之夜（Midnight）》作为最新资料片的时期。以下按活动首次出现的时间顺序列出",
 	[-691] = "为庆祝泰坦重铸服务器上线，中国玩家可参与艾泽拉斯宝藏活动，赢取全新奖励。奖励不跨游戏类型共享，需在各自版本中分别获取",
+	[-703] = "这些奖励是提供给购买了暗黑破坏神IV：憎恨之王标准版的玩家的。",
 	[-708] = "雷蛇 ×《魔兽世界》坐骑抽奖活动,活动时间：2025 年 1 月 21 日太平洋时间上午 10:00 至 2026 年 1 月 31 日太平洋时间晚上 11:59,无需购买即可参与",
 	[-712] = "包含只能由未达到最高等级的角色获得的物品。",
 	[-713] = "包含只能由最高等级角色获得的物品。",
 	[-721] = "包含当前区域可用但实际源自其他区域的内容。",
+	[-722] = "这些奖励是提供给购买了暗黑破坏神II重制版 - 术士君临的玩家的。",
 	[-723] = "在卡利姆多的不同地区，元素入侵的报告正在增加。每隔几天，一股新的元素浪潮就会强行涌入希利苏斯、安戈洛环形山、艾萨拉和冬泉谷的区域——显然，只是为了看看它们能在这些领土上深入到什么程度，直到被部落或联盟的军队击退。调查这些地区并帮助你的盟友对抗这些神秘的入侵。",
 	[-735] = "这个部分是为在一个扩展中引入的系统而设立的，这些系统涉及几个区域。\n如果一个扩展功能仅限于一个区域，那么它可以在ATT中的那个区域找到，否则为了减少数据库重复和膨胀，它可以在下面找到。",
 	[-736] = "此部分用于介绍现实世界的促销活动，这些活动在某些极稀有内容出现在游戏商店之前，就将其引入了游戏中",
+	[-750] = "相位导管是用于进入、退出和在无拘之域（相位潜行）中瞬间移动的传送器。除了两个位置（在征服者之痕）外，所有位置都相互连接。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
@@ -87568,6 +87587,7 @@ localize(L.HEADER_NAMES, {
 	[-703] = "暗黑破壞神IV：憎恨之王",
 	[-712] = "升級中角色",
 	[-713] = "最高等級角色",
+	[-722] = "暗黑破壞神II：獄火重生 ─ 術士軍臨",
 	[-729] = "豐足",
 	[-738] = "哈拉尼爾的傳說",
 });
@@ -87586,12 +87606,23 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-356] = "副本的這部分可以從最北邊的傳送門進入。",
 	[-357] = "副本的這部分可以從最西邊的傳送門進入。（左側）",
 	[-479] = "這些物品是由在混搭再造活動中創建的時光奔走角色，在活動結束後轉移到正式服時獲得的。",
+	[-529] = "這些獎勵是提供給購買了魔獸世界15週年典藏版的玩家的。",
+	[-530] = "這些獎勵是提供給購買了暗黑破壞神III典藏版的玩家的。",
+	[-531] = "這些獎勵是提供給購買了暗黑破壞神III：奪魂之鐮典藏版的玩家的。",
+	[-532] = "這些獎勵是提供給購買了暗黑破壞神IV基礎版的玩家的。",
+	[-533] = "這些獎勵是提供給購買了守望先鋒：啟元版的玩家的。",
+	[-534] = "這些獎勵是提供給購買了星海爭霸II：自由之翼典藏版的玩家的。",
+	[-535] = "這些獎勵是提供給購買了星海爭霸II：蟲族之心典藏版的玩家的。",
+	[-536] = "這些獎勵是提供給購買了星海爭霸II：虛空之遺典藏版的玩家的。",
+	[-537] = "這些獎勵是提供給購買了魔獸爭霸III：淬鍊重生 - 數位戰利版的玩家的。",
 	[-552] = "這些是在《魔獸：崛起》電影仍在上映期間，每個陣營至少登入一次所獲得的獎勵。",
 	[-553] = "手遊《魔獸兵團》的促銷活動",
 	[-592] = "這是一個每年重複的活動，發生在十一月初到年底之間。",
+	[-703] = "這些獎勵是提供給購買了暗黑破壞神IV：憎恨之王標準版的玩家的。",
 	[-712] = "包含只能由未達到最高等級的角色獲得的物品。",
 	[-713] = "包含只能由最高等級角色獲得的物品。",
 	[-721] = "包含在當前區域可取得，但來源直接來自另一個區域的內容。",
+	[-722] = "這些獎勵是提供給購買了暗黑破壞神II：獄火重生 ─ 術士軍臨的玩家的。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",

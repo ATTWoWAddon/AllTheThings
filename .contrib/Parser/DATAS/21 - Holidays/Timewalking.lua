@@ -8043,38 +8043,208 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 			}),
 		}),
 		n(QUESTS, {
+			q(93495, {	-- A Soaring Journey Through Time
+				["qg"] = 255019,	-- Xydan <Timewalking Vendor>
+				["coord"] = { 81.5, 47.2, VALDRAKKEN },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(93497, {	-- A Soaring Path Through Time
+				["qg"] = 255019,	-- Xydan <Timewalking Vendor>
+				["coord"] = { 81.5, 47.2, VALDRAKKEN },
+				["isWeekly"] = true,
+				["lvl"] = 80,
+				["groups"] = { i(250116) },	-- Cache of Quel'Thalas Treasures
+			}),
+			q(93852, {	-- Lost Iridescent Flightstone
+				["provider"] = { "i", 262918 },	-- Lost Iridescent Flightstone (QS!)
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
 		}),
 		n(VENDORS, {
-			--n(252687, {	-- Xydan <Timewalking Vendor>
-				--["coord"] = { X, Y, VALDRAKKEN },
+			n(255019, {	-- Xydan <Timewalking Vendor>
+				["coord"] = { 81.5, 47.2, VALDRAKKEN },
 				["groups"] = {
 					n(ARMOR, {
+						filter(CLOTH, {
+							i(262379, {	-- Chronomental Halfgloves
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262383, {	-- Ohn'ir Initiate Leggings
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(FINGER_F, {
+							i(262386, {	-- Bronze Drake's Promise
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262387, {	-- Silver Keeper's Band
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262388, {	-- Vaultkeeper's Signet
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(LEATHER, {
+							i(262378, {	-- Chronomental Grips
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262382, {	-- Teerai Watcher Breeches
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(MAIL, {
+							i(262381, {	-- Chronomental Gloves
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262384, {	-- Shikaar Scout Breeches
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(PLATE, {
+							i(262380, {	-- Chronomental Gauntlets
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262385, {	-- Nokhud Reaver Legplates
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
 					}),
 					filter(BATTLE_PETS, {
-						i(260885),	-- Shadowflame Remnant (PET!)
+						i(260885, {	-- Shadowflame Remnant (PET!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
+						}),
 					}),
 					filter(COSMETIC, {
+						i(260920, {	-- Emergency Landing Kit
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
+						}),
+						i(260917, {	-- Infinite Broodkeeper's Greatstaff
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(260923, {	-- Infinite Timeslicer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(260921, {	-- Khan's Ceremonial Crossbow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(260919, {	-- Scavenger's Banner
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
+						}),
+						iensemble(260915, {	-- Arsenal: Found Plunder Key
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						iensemble(260914, {	-- Arsenal: Lost Plunder Key
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						iensemble(260946, {	-- Ensemble: Dragonstone Shoulderguards
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+						iensemble(260944, {	-- Ensemble: Pristine Draconic Scholar's Finery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+						iensemble(260945, {	-- Ensemble: Razorscale Pauldrons
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+						iensemble(260926, {	-- Ensemble: Shadowflame-Seared Druidic Garb
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						iensemble(260899, {	-- Ensemble: Time-Lost Earthwarden's Battlegear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						iensemble(260941, {	-- Ensemble: Winter's Dreaming Garb
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
 					}),
 					filter(MISC, {
-						i(258841),	-- Commendation of the Dragonscale Expedition
-						i(258846),	-- Commendation of the Dream Wardens
-						i(258843),	-- Commendation of the Iskaara Tuskarr
-						i(258845),	-- Commendation of the Loamm Niffen
-						i(258842),	-- Commendation of the Maruuk Centaur
-						i(258844),	-- Commendation of the Valdrakken Accord
+						i(258841, {	-- Commendation of the Dragonscale Expedition
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258846, {	-- Commendation of the Dream Wardens
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258843, {	-- Commendation of the Iskaara Tuskarr
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258845, {	-- Commendation of the Loamm Niffen
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258842, {	-- Commendation of the Maruuk Centaur
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258844, {	-- Commendation of the Valdrakken Accord
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
 					}),
 					filter(MOUNTS, {
-						i(210140),	-- Black-Furred Bakar (MOUNT!)
+						i(210140, {	-- Black-Furred Bakar (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+						i(192778, {	-- Liquid Hot Magma Slug (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+					}),
+					n(MOUNT_MODS, {
+						i(196993, {	-- Cliffside Wylderdrake: Sleek Horns (MM!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(210478, {	-- Flourishing Whimsydrake: Gold and Pink Armor (MM!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(207757, {	-- Grotto Netherwing Drake: Purple and Silver Armor (MM!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(207777, {	-- Grotto Netherwing Drake: Yellow Scales (MM!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
 					}),
 					filter(TOYS, {
-						i(259335),	-- Photo Finisher (TOY!)
-						i(259899),	-- Ashen Horn of the Fallen Keeper (TOY!)
-						i(260170),	-- Oathstone Fragment (TOY!)
+						i(259899, {	-- Ashen Horn of the Fallen Keeper (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
+						}),
+						i(260170, {	-- Oathstone Fragment (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(259335, {	-- Photo Finisher (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
 					}),
 					n(WEAPONS, {
+						i(262368, {	-- Centaur Battleglaive
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(262359, {	-- Djardin Sparring Spear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(262364, {	-- Drakkanid Stabber
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(262363, {	-- Expeditioner's Mallet
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(262362, {	-- Expeditioner's Spellblade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(262366, {	-- Headmaster's Emberstaff
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(262365, {	-- Maruuk Hunting Bow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(262361, {	-- Rothide Crusher
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(262367, {	-- Slumbering Guardian's Bulwark
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+						}),
+						i(262360, {	-- Storyteller's Verses
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+						}),
 					}),
 				},
-			--}),
+			}),
 		}),
 		inst_tw(1201, {	-- Algeth'ar Academy
 			e(2509, {	-- Vexamus

@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 		n(QUESTS, {
 			n(REWARDS, {
 				i(246697, {	-- Self-Assembling Homeware Kit
-					["description"] = "Randomly can replace the one of the rewards of between 3-4 of the island's daily quests, with some exceptions.",
+					["description"] = "Randomly can replace the one of the rewards of between 3-4 of the island's daily quests, with some exceptions.\nUse /attwq to quickly check all daily quests visible on the map.",
 					["timeline"] = { ADDED_11_2_7 },
 					["groups"] = {
 						i(246481),	-- Retired Industrial Gnomegrabber (DECOR!)

@@ -1220,8 +1220,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50.0, ZERETH_MORTIS },
 				["groups"] = {
+					o(375106, {	-- Instructional Bit
+						i(189438),	-- Composition Mote (QI!)
+					}),
 					i(189439),	-- Compilation Nodule (QI!)
-					i(189438),	-- Composition Mote (QI!)
 				},
 			}),
 			q(65445, {	-- Necessary Resourcing

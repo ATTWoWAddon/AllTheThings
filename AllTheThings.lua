@@ -183,7 +183,7 @@ local function AddContainsData(group, tooltipInfo)
 			item = entries[i];
 			entry = item.group;
 			left = entry.text;
-			if not left or IsRetrieving(left) then
+			if not left or IsRetrieving(left, true) then
 				left = RETRIEVING_DATA
 
 				if not working then
@@ -290,7 +290,7 @@ local function AddContainsData(group, tooltipInfo)
 						-- the source entry is different from the raw parent and the search context, then show the source parent text for reference
 						if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, key, id) then
 							local parentText = sParent.text;
-							if IsRetrieving(parentText) then
+							if IsRetrieving(parentText, true) then
 								working = true;
 							end
 							right = locationName .. " > " .. parentText .. " " .. right;

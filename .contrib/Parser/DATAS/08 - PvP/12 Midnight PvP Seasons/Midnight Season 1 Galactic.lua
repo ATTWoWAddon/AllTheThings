@@ -624,9 +624,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						conquest(525, i(255625)),	-- Galactic Gladiator's Tome
 						conquest(875, i(255620)),	-- Galactic Gladiator's Warglaive
 					}),
-					--i(256553, {	-- Galactic Equipment Chest
-					--	["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
-					--}),
+					i(256553, {	-- Galactic Equipment Chest
+						["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
+					}),
 				},
 			}),
 			o(532226, {	-- The Catalyst

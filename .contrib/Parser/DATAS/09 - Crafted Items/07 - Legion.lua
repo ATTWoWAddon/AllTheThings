@@ -679,7 +679,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 		n(DISCOVERY, {
 			r(225902),	-- Mass Prospect Leystone
-			r(225904),	-- Mass Prospect Felslate
+			i(141312),	-- Design: Mass Prospect Felslate
 		}),
 		n(ARMOR, {
 			i(151587, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Cosmic Crown

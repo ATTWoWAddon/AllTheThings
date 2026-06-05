@@ -204,7 +204,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				q(29103, {	-- Serpents and Poison (A)
 					["sourceQuest"] = 29102,	-- To Fort Livingston
 					["qg"] = 52281,	-- Livingston Marshal
-					["coord"] = { 64.6, 40.4, NORTHERN_STRANGLETHORN },
+					["coord"] = { 52.8, 67.2, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Jungle Serpent slain

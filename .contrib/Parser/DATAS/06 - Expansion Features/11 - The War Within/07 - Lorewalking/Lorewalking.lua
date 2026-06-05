@@ -44,7 +44,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					}),
 				}),
 				ach(61442, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- Lorewalking: The Loa
-					--["groups"] = { i(271971) },	-- Tome of Kings (DECOR!)	// Decor 21857
+					["groups"] = { i(271971) },	-- Tome of Kings (DECOR!)
 				})),
 			}),
 			n(REWARDS, {

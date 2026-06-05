@@ -710,9 +710,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(198821, {	-- Divine Kiss of Ohn'ahra (MOUNT!)
 				["displayID"] = 110505,
 			}),
-			i(192778, {	-- Liquid Hot Magma Slug
-				["displayID"] = 108836,
-			}),
 			i(198823, {	-- [PH] Brown Wind Eagle (MOUNT!)
 				["displayID"] = 108742,
 			}),

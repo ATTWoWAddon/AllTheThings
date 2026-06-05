@@ -406,7 +406,7 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(55201),	-- Cobalt Tenderizer
 		r(54550),	-- Cobalt Triangle Shield
 		r(56280),	-- Cudgel of Saronite Justice
-		r(55206, {["timeline"] = {ADDED_3_0_3,REMOVED_5_0_4}}),	-- Deadly Saronite Dirk
+		r(55206),	-- Deadly Saronite Dirk
 		r(55203),	-- Forged Cobalt Claymore
 		r(55182),	-- Furious Saronite Beatstick
 		r(55174),	-- Honed Cobalt Cleaver

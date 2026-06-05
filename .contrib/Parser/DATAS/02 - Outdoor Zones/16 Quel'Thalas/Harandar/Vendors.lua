@@ -8,8 +8,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(251259, {	-- Mothkeeper Wew'tam
 				["coord"] = { 49.3, 54.3, MAP.MIDNIGHT.HARANDAR },
 				["groups"] = sharedData({
+					-- #if AFTER 12.0.7
+					["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					-- #else
 					["cost"] = { { "c", 3385, 10 } },	-- Luminous Dust
+					-- #endif
 				}, {
+					-- #if AFTER 12.0.7
+					i(264243),	-- Firm Haranir Pillow (DECOR!)
+					i(263038, {	-- Haranir Reclined Bed (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+					}),
+					i(264245),	-- Warm Haranir Blanket (DECOR!)
+					-- #else
 					i(222988),	-- Elder Glowmite (MOUNT!)
 					i(265943, {	-- Firm Haranir Pillow (DECOR!)
 						i(264243, {	-- Firm Haranir Pillow (DECOR!) (Available for Marl after first dust purchase)
@@ -25,7 +36,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(263284),	-- Groovewarden's Staff (COSMETIC!)
 					i(265946, {	-- Haranir Reclined Bed (DECOR!)
 						i(263038, {	-- Haranir Reclined Bed (DECOR!) (Available for Marl after first dust purchase)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 						}),
 					}),
 					i(263580),	-- Vivid Chloroceros (MOUNT!)
@@ -34,6 +45,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 						}),
 					}),
+					-- #endif
 				}),
 			}),
 			n(255114, {	-- Maku <Decor Specialist>

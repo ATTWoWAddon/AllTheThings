@@ -1502,11 +1502,10 @@ root(ROOTS.Zones, {
 							{ 37.7, 87.0, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 							{ 47.8, 89.0, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 							{ 56.5, 64.7, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
+							{ 64.9, 21.5, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 						},
 						["description"] = "Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",
-						["groups"] = {
-							i(86516),	-- Fragment of Dread
-						},
+						["groups"] = { i(86516) },	-- Fragment of Dread
 					}),
 					o(213959, {	-- Hardened Sap of Kri'vess
 						["questID"] = 31424,

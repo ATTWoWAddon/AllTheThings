@@ -10,14 +10,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["collectible"] = false,
 				}),
 			}),
-			o(297879, {	-- Bespelled Chest
-				["description"] = "Click the inactive torches.",
-				["questID"] = 53472,
-				["coord"] = { 55.60, 51.80, DRUSTVAR },
-				["groups"] = {
-					i(163790),	-- Spooky Incantation
-				},
-			}),
 			o(297069, {	-- Dresser
 				["description"] = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and interact with this object.",
 				["sourceQuest"] = 50763,	-- One Last Request
@@ -56,29 +48,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			o(296917, {	-- Drust Stele: The Tree
 				["coord"] = { 27.3, 48.3, DRUSTVAR },
-			}),
-			o(297881, {	-- Enchanted Chest
-				["description"] = "Click the inactive torches.",
-				["questID"] = 53474,
-				["coord"] = { 25.50, 24.20, DRUSTVAR },
-				["groups"] = {
-					i(163796),	-- Wolf Pup Spine
-				},
-			}),
-			o(297880, {	-- Ensorcelled Chest
-				["questID"] = 53473,
-				["coord"] = { 67.70, 73.70, DRUSTVAR },
-				["groups"] = {
-					i(163791),	-- Miniature Stag Skull
-				},
-			}),
-			o(297878, {	-- Hexed Chest
-				["description"] = "Click the inactive torches.",
-				["questID"] = 53471,
-				["coord"] = { 18.50, 51.30, DRUSTVAR },
-				["groups"] = {
-					i(163789),	-- Bundle of Wicker Stick
-				},
 			}),
 			o(297828, {	-- Merchant's Chest
 				["questID"] = 53357,

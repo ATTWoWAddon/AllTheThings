@@ -2609,8 +2609,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				o(240624, {	-- Faerie Dragon Nest
+					["description"] = "Rougly every 15 minutes, 7 Fey-Drunk Darters will group around the Giant Mushroom circle, one by one. They will channel the golden beams of light and begin singing their song.\nOnce event starts, loot the nest quickly, as the event does not run for long.",
+					["sourceQuests"] = {
+						38356,	-- Bringing the Bass [A]
+						37961,	-- Bringing the Bass [H]
+					},
 					["coord"] = { 17.6, 67.6, TIRISFAL_GLADES },
-					["description"] = "The nest materialises directly in the centre of the white mushroom circle at 17.57, 67.53 once the 7 dragons channel the beams and begin their song. It is not visible before this.",
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
 						i(122234, {	-- Music Roll: Faerie Dragon

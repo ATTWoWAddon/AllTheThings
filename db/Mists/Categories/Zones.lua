@@ -11039,6 +11039,7 @@ q(28340,{awp=40003,coords={
 [77]={{54.6,18.3}}},qgs={48333},r=1,sourceQuests={28380},g={
 qo(1,{providers={{"i",63516},{"o",207105}}})}}),
 q(28218,{awp=40003,coords={
+[12]={{49,24}},
 [77]={{45.5,20.1}}},qgs={47923},sourceQuests={28217}}),
 q(5242,{coords={
 [77]={{51.2,82.2}}},lvl=48,qgs={10922},rwp=40003,sourceQuests={5165},u=2,g={
@@ -11228,11 +11229,13 @@ s(209699,65299,{b=1,f=6,q=2}),
 s(209715,65318,{b=1,f=23,q=2}),
 s(209728,65336,{b=1,f=3,q=2})}}),
 q(28261,{awp=40003,coords={
+[12]={{49,24}},
 [77]={{45.5,20.1}}},qgs={47923},sourceQuests={28257},g={
 qo(1,{providers={{"n",48154}}})}}),
 q(28000,{awp=40003,coords={
 [77]={{41.9,72}}},qgs={47341},sourceQuests={27995,27997,28148,28150}}),
 q(28126,{awp=40003,coords={
+[12]={{47.5,30.3}},
 [77]={{36.3,58.2}}},qgs={51664},sourceQuests={28119},g={
 qo(1,{providers={{"o",176158}}}),
 qo(2,{providers={{"o",176159}}}),
@@ -11370,6 +11373,7 @@ q(4442,{coords={
 [77]={{51.2,81.6}}},lvl=49,qgs={9116},r=2,rwp=40003,sourceQuests={4441},u=2,g={
 i(11445,{description="You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",q=1,u=2})}}),
 q(28119,{awp=40003,coords={
+[12]={{47.5,30.3}},
 [77]={{36.3,58.2}}},qgs={51664},sourceQuests={28116},g={
 i(12907,{q=1}),
 i(12922,{f=55,q=1})}}),
@@ -11508,11 +11512,13 @@ qo(1,{providers={{"n",7109}},u=2}),
 qo(2,{providers={{"n",7110}},u=2}),
 qo(3,{providers={{"n",7106}},u=2})}}),
 q(28129,{awp=40003,coords={
+[12]={{47.5,30.3}},
 [77]={{36.3,58.2}}},qgs={51664},sourceQuests={28119},g={
 qo(1,{providers={{"n",9877}}})}}),
 q(28381,{awp=40003,coords={
 [77]={{44.2,28}}},isBreadcrumb=1,nextQuests={28382},qgs={48491},r=2,sourceQuests={28224,28264}}),
 q(28257,{awp=40003,coords={
+[12]={{49,24}},
 [77]={{45.5,20.1}}},qgs={47923},sourceQuests={28256},g={
 s(209685,65284,{b=1,f=5,q=2}),
 s(209704,65304,{b=1,f=6,q=2}),
@@ -11520,6 +11526,7 @@ s(209719,65323,{b=1,f=7,q=2})}}),
 q(28305,{awp=40003,coords={
 [77]={{44.1,61.8}}},isBreadcrumb=1,nextQuests={28207},qgs={47617},sourceQuests={28126,28128,28155}}),
 q(28128,{awp=40003,coords={
+[12]={{47.5,30.3}},
 [77]={{36.3,58.2}}},qgs={51664},sourceQuests={28119},g={
 qo(1,{providers={{"n",7114},{"n",7118},{"n",7120},{"n",7126},{"n",9862}}}),
 s(209681,65280,{b=1,f=23,q=2}),
@@ -11535,6 +11542,7 @@ q(28337,{awp=40003,coords={
 [77]={{56.8,18.4}}},qgs={48493},r=2,sourceQuests={28384},g={
 qo(1,{providers={{"n",48259}}})}}),
 q(28256,{awp=40003,coords={
+[12]={{49,24}},
 [77]={{45.5,20.1}}},qgs={47923},sourceQuests={28218}}),
 q(28190,{awp=40003,coords={
 [77]={{41.2,49.9}}},qgs={47692},g={
@@ -28519,7 +28527,7 @@ i(8244,{crs={7664,7668,7846},description="A very rare zone drop. It has a higher
 r(18540,{b=1,c={9},crs={8716,12396},itemID=4213,lvl=60,rwp=40003,u=2}),
 i(10593,{description="A rare zone drop from any creature in the zone.",lvl=54,q=2}),
 i(57178,{awp=40003,crs={42337},q=1}),
-r(19051,{crs={5981,6005},itemID=15727,learnedAt=265,q=2,requireSkill=165,rwp=40003,u=2}),
+r(19051,{awp=11101,crs={5981,6005},itemID=15727,learnedAt=265,q=2,requireSkill=165,rwp=40003,u=2}),
 i(8393,{crs={5988,8301},q=1,rwp=40003,u=2}),
 i(57182,{awp=40003,cost={{"i",57179,1}},q=1}),
 i(57179,{awp=40003,crs={42338},q=1}),
@@ -32504,7 +32512,9 @@ q(10071,{c={4},coords={
 [94]={{38.9,20}}},isBreadcrumb=1,lvl=3,nextQuests={8330},qgs={15285},races={10},rwp=70003,sourceQuests={9392},u=17}),
 q(8335,{coords={
 [94]={{35.4,22.4}}},lvl=3,qgs={15281},races={10},sourceQuests={8334},u=17,g={
-qo(1,{coords={
+qo(1,{providers={{"n",15273}},u=17}),
+qo(2,{providers={{"n",15298}},u=17}),
+qo(3,{coords={
 [94]={{30.8,27.1}}},crs={15367},providers={{"i",20799}},u=17}),
 s(131329,20838,{b=1,f=32,q=1,u=17}),
 s(131332,20841,{b=1,f=8,q=1,u=17})}}),
@@ -67502,6 +67512,7 @@ o(213407,{coords={
 [418]={{81.4,11.4}}},g={
 crit(20415,{achID=7230,id=1,u=50})}}),
 o(213750,{coords={
+[376]={{75.1,55.1}},
 [418]={{71,9}}},description="Located at the back of the cave, to the right of the junk pile.",questID=31408,g={
 i(86220,{b=1}),
 crit(20906,{achID=7997,id=6,u=50})}}),
@@ -73130,7 +73141,7 @@ o(213418,{coords={
 [388]={{65.5,50}}},g={
 crit(19774,{achID=6847,id=2,u=50})}}),
 o(213956,{coords={
-[389]={{37.7,87},{47.8,89},{56.5,64.7},{64.2,20.3}}},description="Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",questID=31423,g={
+[389]={{37.7,87},{47.8,89},{56.5,64.7},{64.2,20.3},{64.9,21.5}}},description="Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",questID=31423,g={
 i(86516,{b=1}),
 crit(20921,{achID=7997,id=14,u=50})}}),
 o(213959,{coords={

@@ -698,7 +698,7 @@ i(0, 54550);		-- Cobalt Triangle Shield
 i(0, 56280);		-- Cudgel of Saronite Justice
 i(0, 55301);		-- Daunting Handguards
 i(0, 55303);		-- Daunting Legplates
-i(0, 55206);		-- Deadly Saronite Dirk [REMOVED: 5.0.4]
+i(0, 55206);		-- Deadly Saronite Dirk
 i(0, 55656);		-- Eternal Belt Buckle
 i(0, 55203);		-- Forged Cobalt Claymore
 i(0, 55182);		-- Furious Saronite Beatstick

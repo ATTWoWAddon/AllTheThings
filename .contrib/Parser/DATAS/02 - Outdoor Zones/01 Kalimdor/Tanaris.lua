@@ -3832,7 +3832,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(106940, {	-- Innkeeper Fizzgrimble <Innkeeper>
 					["coord"] = { 52.6, 27.0, TANARIS },
-					["timeline"] = { ADDED_7_0_3 },
+					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 					["groups"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
@@ -3846,7 +3846,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
+						i(18046, {	-- Recipe: Tender Wolf Steak (RECIPE!)
+							-- #if CLASSIC_ANNIVERSARY
+							["timeline"] = { ADDED_2_5_5 },
+							-- #endif
+						}),
 					},
 				}),
 				n(8139, {	-- Jabbey <General Goods>

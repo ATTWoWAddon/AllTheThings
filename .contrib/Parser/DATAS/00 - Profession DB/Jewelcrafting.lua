@@ -1924,11 +1924,10 @@ i(137831, 195916);	-- Vindictive Pandemonite Choker [Rank 2]
 i(137852, 195937);	-- Vindictive Pandemonite Choker [Rank 3]
 --- DISCOVERY ---
 i(0, 225902);		-- Mass Prospect Leystone
-i(0, 225904);		-- Mass Prospect Felslate
+i(141312, 225904);		-- Mass Prospect Felslate
 --- NYI ---
 i(137800, 0);		-- Dawnlight Band [Rank 1]
 i(137799, 0);		-- Maelstrom Band [Rank 1]
-i(141312, 0);		-- Mass Prospect Felslate
 i(141311, 0);		-- Mass Prospect Leystone
 i(137798, 0);		-- Prophetic Band [Rank 1]
 

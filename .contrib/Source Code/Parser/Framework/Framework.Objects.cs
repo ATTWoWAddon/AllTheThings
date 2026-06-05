@@ -648,22 +648,21 @@ namespace ATT
                     {
                         data[kvp.Key] = kvp.Value;
                     }
-                    else
+                    // Don't replace existing raw values with different merge DB values, unless they can merge
+                    else if (existingVal is IMergeField existingMergeField)
                     {
-                        // Don't replace existing raw values with different merge DB values
-                        if (existingVal != null && !(existingVal is IEnumerable enumerableVal))
-                        {
-                            if (!existingVal.IsEquivalent(kvp.Value))
-                            {
-                                LogDebugWarn($"Ignoring different value on merge of Object. {kvp.Key}='{ToJSON(existingVal)}' from DB='{ToJSON(kvp.Value)}'", data);
-                            }
-                        }
-                        else if (!existingVal.IsEquivalent(kvp.Value))
-                        {
-                            // this allows merging any IEnumerable value
-                            LogDebugWarn($"Merging additional value into Object.{kvp.Key}='{ToJSON(existingVal)}' from DB='{ToJSON(kvp.Value)}'", data);
-                            Merge(data, kvp.Key, kvp.Value);
-                        }
+                        existingMergeField.Merge(kvp.Value);
+                    }
+                    else if (existingVal is IEnumerable enumerableVal && !enumerableVal.IsEquivalent(kvp.Value))
+                    {
+                        // this allows merging any IEnumerable value
+                        LogDebugWarn($"Merging additional value into Object.{kvp.Key}='{ToJSON(existingVal)}' from DB='{ToJSON(kvp.Value)}'", data);
+                        Merge(data, kvp.Key, kvp.Value);
+                    }
+                    else if (!existingVal.IsEquivalent(kvp.Value))
+                    {
+                        // TODO: regular warn once all issues removed
+                        LogDebugWarn($"Ignoring different value on merge of Object. {kvp.Key}='{ToJSON(existingVal)}' from DB='{ToJSON(kvp.Value)}'", data);
                     }
                 }
 
@@ -2104,7 +2103,7 @@ end");
                         Providers.Merge(item, value);
                         break;
                     case "lc":
-                        MergeField_lockCriteria(item, value);
+                        LockCriteria.Merge(item, value);
                         break;
                     case "coord":
                     case Coords.Field:
@@ -2200,48 +2199,6 @@ end");
                 {
                     LogError($"Expected '{typeof(T).Name}' convertible value for merge! {field} <= {value}", data);
                 }
-            }
-
-            internal static void MergeField_lockCriteria(IDictionary<string, object> item, object value)
-            {
-                const string field = "lc";
-
-                List<object> lockCriteria = ConvertToList(item, field, value);
-
-                // validate that the lock criteria is the expected format
-                if (lockCriteria == null || (lockCriteria.Count % 2) != 1)
-                    throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}Expected an odd number of elements in an array of values.");
-
-                // first item is a number > 0
-                try
-                {
-                    int criteriaCount = Convert.ToInt32(lockCriteria[0]);
-                    if (criteriaCount < 1)
-                        throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}First value must be a number > 0.");
-                }
-                catch (Exception)
-                {
-                    throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}First value must be a number > 0.");
-                }
-
-                // following sequence should be pairs of string-number values
-                for (int i = 1; i < lockCriteria.Count; i += 2)
-                {
-                    try
-                    {
-                        string critKey = lockCriteria[i] as string;
-                        int critVal = Convert.ToInt32(lockCriteria[i + 1]);
-
-                        if (string.IsNullOrWhiteSpace(critKey) || critVal < 1)
-                            throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}Must consist of a flat sequence of [string,number] pairs of values.");
-                    }
-                    catch (Exception)
-                    {
-                        throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}Must consist of a flat sequence of [string,number] pairs of values.");
-                    }
-                }
-
-                item[field] = lockCriteria;
             }
 
             public static void MergeSpecificItemDataDictionary(IDictionary<string, object> data, string field, object value)

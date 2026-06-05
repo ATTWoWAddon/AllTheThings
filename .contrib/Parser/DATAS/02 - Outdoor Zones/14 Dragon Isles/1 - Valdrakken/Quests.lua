@@ -349,11 +349,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 			}),
 			q(72354, {	-- The Great Vault
-				["provider"] = { "n", 196499 },	-- Therazal
-				["coord"] = { 49.9, 56.0, VALDRAKKEN },
-				["groups"] = {
-					i(201793),	-- Resplendent Gemstone
+				["qgs"] = {
+					196499,	-- Therazal <Dragon Isles Emissary>
+					199336,	-- Kerazal <Dragon Isles Emissary>
+					213930,	-- Koszaru
 				},
+				["coords"] = {
+					{ 48.0, 59.3, VALDRAKKEN },
+					{ 49.9, 56.0, VALDRAKKEN },
+				},
+				["groups"] = { i(201793) },	-- Resplendent Gemstone
 			}),
 			------ 10.2.6
 			q(79448, {	-- Leave No Flightstone Unturned

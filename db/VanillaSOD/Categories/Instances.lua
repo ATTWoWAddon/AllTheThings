@@ -4939,7 +4939,7 @@ s(249343,235014,{b=1,f=23,lvl=60,q=4,u=1610}),
 s(266765,235282,{b=1,f=27,lvl=60,q=4,u=1610})}})}})}})}}),
 inst(754,{awp=11100,description="[TBC] \nNAXX is the raid that opened in SoD Phase 7. \nThe Loot and Quest information is still unclear. It will be added after the wowhead guide is updated.",isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},rwp=30002,savedInstanceID=533,sourceQuests={9121},u=1611,["zone-text-areaID"]=3456,g={
 ah(22631,{c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},type="i",u=1611,g={
-ach(425,{c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}},u=1611,g={
+ach(425,{c={5,8,9,11},providers={{"i",236398},{"i",236399},{"i",236400},{"i",236401}},u=1611,g={
 crit(749,{achID=425,id=1,questID=9257,u=1}),
 crit(748,{achID=425,id=1,questID=9270,u=1}),
 crit(747,{achID=425,id=1,questID=9269,u=1}),
@@ -4956,11 +4956,12 @@ s(284780,236398,{b=1,c={9},f=28,lvl=60,q=5,u=1611})}}),
 q(87443,{c={11},maps={317},providers={{"i",22737}},qgs={15192},sourceQuests={9251},u=1611,g={
 s(284783,236401,{b=1,c={11},f=28,lvl=60,q=5,u=1611})}}),
 q(9250,{c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",lvl=60,providers={{"i",22727}},u=1611})}}),
-h(-12,{u=1611,g={
-ach(15637,{awp=11403,rwp=11500,u=2}),
-s(169660,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this aswell)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
-h(-45,{u=1611,g={
-cl(1,{rwp=11506,u=2,g={
+d(9,{rwp=11506,u=2,g={
+h(-12,{awp=11403,u=2,g={
+ach(15637,{rwp=11500,u=2}),
+s(169660,191481,{b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this aswell)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
+h(-45,{u=2,g={
+cl(1,{u=2,g={
 q(9037,{coords={
 [1423]={{81.8,58.1}}},cost={{"i",20725,1},{"i",12360,5},{"i",22375,15},{"i",22353,1}},lvl=60,qgs={16112},repeatable=1,sourceQuests={9033},u=2,g={
 s(164938,22418,{b=1,f=7,lvl=60,q=4,u=2})}}),
@@ -4985,7 +4986,7 @@ s(164937,22417,{b=1,f=7,lvl=60,q=4,u=2})}}),
 q(9039,{coords={
 [1423]={{81.8,58.1}}},cost={{"i",15407,3},{"i",12360,2},{"i",22375,12},{"i",22358,1}},lvl=60,qgs={16112},repeatable=1,sourceQuests={9033},u=2,g={
 s(164940,22420,{b=1,f=7,lvl=60,q=4,u=2})}})}}),
-cl(2,{rwp=11506,u=2,g={
+cl(2,{u=2,g={
 q(9045,{coords={
 [1423]={{81.5,58.2}}},cost={{"i",15407,2},{"i",12360,5},{"i",22375,15},{"i",22360,1}},lvl=60,qgs={16115},repeatable=1,sourceQuests={9033},u=2,g={
 s(164948,22428,{b=1,f=7,lvl=60,q=4,u=2})}}),
@@ -5010,7 +5011,7 @@ s(164947,22427,{b=1,f=7,lvl=60,q=4,u=2})}}),
 q(9047,{coords={
 [1423]={{81.5,58.2}}},cost={{"i",15407,3},{"i",12360,2},{"i",22375,12},{"i",22365,1}},lvl=60,qgs={16115},repeatable=1,sourceQuests={9033},u=2,g={
 s(164950,22430,{b=1,f=7,lvl=60,q=4,u=2})}})}}),
-cl(3,{rwp=11506,u=2,g={
+cl(3,{u=2,g={
 q(9056,{coords={
 [1423]={{82.5,58.6}}},cost={{"i",20725,2},{"i",12360,4},{"i",22374,15},{"i",22360,1}},lvl=60,qgs={16132},repeatable=1,sourceQuests={9033},u=2,g={
 s(164954,22438,{b=1,f=6,lvl=60,q=4,u=2})}}),
@@ -5035,7 +5036,7 @@ s(164953,22437,{b=1,f=6,lvl=60,q=4,u=2})}}),
 q(9058,{coords={
 [1423]={{82.5,58.6}}},cost={{"i",20725,3},{"i",12360,1},{"i",22374,12},{"i",22365,1}},lvl=60,qgs={16132},repeatable=1,sourceQuests={9033},u=2,g={
 s(164956,22440,{b=1,f=6,lvl=60,q=4,u=2})}})}}),
-cl(4,{rwp=11506,u=2,g={
+cl(4,{u=2,g={
 q(9079,{coords={
 [1423]={{81.4,58.5}}},cost={{"i",20725,1},{"i",15407,8},{"i",22373,15},{"i",22353,1},{"g",750000}},lvl=60,qgs={16131},repeatable=1,sourceQuests={9033},u=2,g={
 s(164972,22478,{b=1,f=5,lvl=60,q=4,u=2})}}),
@@ -5060,7 +5061,7 @@ s(164971,22477,{b=1,f=5,lvl=60,q=4,u=2})}}),
 q(9081,{coords={
 [1423]={{81.4,58.5}}},cost={{"i",20725,2},{"i",15407,3},{"i",22373,12},{"i",22358,1},{"g",250000}},lvl=60,qgs={16131},repeatable=1,sourceQuests={9033},u=2,g={
 s(164974,22480,{b=1,f=5,lvl=60,q=4,u=2})}})}}),
-cl(5,{rwp=11506,u=2,g={
+cl(5,{u=2,g={
 q(9113,{coords={
 [1423]={{81.5,58.2}}},cost={{"i",20725,3},{"i",14342,3},{"i",22376,15},{"i",22367,1}},lvl=60,qgs={16113},repeatable=1,sourceQuests={9033},u=2,g={
 s(165004,22514,{b=1,f=4,lvl=60,q=4,u=2})}}),
@@ -5084,7 +5085,7 @@ s(165003,22513,{b=1,f=4,lvl=60,q=4,u=2})}}),
 q(9115,{coords={
 [1423]={{81.5,58.2}}},cost={{"i",15407,3},{"i",14342,2},{"i",22376,12},{"i",22372,1}},lvl=60,qgs={16113},repeatable=1,sourceQuests={9033},u=2,g={
 s(165006,22516,{b=1,f=4,lvl=60,q=4,u=2})}})}}),
-cl(7,{rwp=11506,u=2,g={
+cl(7,{u=2,g={
 q(9070,{coords={
 [1423]={{81.1,59}}},cost={{"i",20725,2},{"i",12360,4},{"i",22374,15},{"i",22360,1}},lvl=60,qgs={16134},repeatable=1,sourceQuests={9033},u=2,g={
 s(164963,22466,{b=1,f=6,lvl=60,q=4,u=2})}}),
@@ -5109,7 +5110,7 @@ s(164962,22465,{b=1,f=6,lvl=60,q=4,u=2})}}),
 q(9072,{coords={
 [1423]={{81.1,59}}},cost={{"i",20725,3},{"i",12360,1},{"i",22374,12},{"i",22365,1}},lvl=60,qgs={16134},repeatable=1,sourceQuests={9033},u=2,g={
 s(164965,22468,{b=1,f=6,lvl=60,q=4,u=2})}})}}),
-cl(8,{rwp=11506,u=2,g={
+cl(8,{u=2,g={
 q(9097,{coords={
 [1423]={{81.5,58.3}}},cost={{"i",20725,3},{"i",14342,3},{"i",22376,15},{"i",22367,1}},lvl=60,qgs={16116},repeatable=1,sourceQuests={9033},u=2,g={
 s(164988,22498,{b=1,f=4,lvl=60,q=4,u=2})}}),
@@ -5134,7 +5135,7 @@ s(164987,22497,{b=1,f=4,lvl=60,q=4,u=2})}}),
 q(9099,{coords={
 [1423]={{81.5,58.3}}},cost={{"i",15407,3},{"i",14342,2},{"i",22376,12},{"i",22372,1}},lvl=60,qgs={16116},repeatable=1,sourceQuests={9033},u=2,g={
 s(164990,22500,{b=1,f=4,lvl=60,q=4,u=2})}})}}),
-cl(9,{rwp=11506,u=2,g={
+cl(9,{u=2,g={
 q(9105,{coords={
 [1423]={{81.4,58.2}}},cost={{"i",14344,3},{"i",14342,3},{"i",22376,15},{"i",22367,1}},lvl=60,qgs={16133},repeatable=1,sourceQuests={9033},u=2,g={
 s(164996,22506,{b=1,f=4,lvl=60,q=4,u=2})}}),
@@ -5159,7 +5160,7 @@ s(164995,22505,{b=1,f=4,lvl=60,q=4,u=2})}}),
 q(9107,{coords={
 [1423]={{81.4,58.2}}},cost={{"i",15407,3},{"i",14342,2},{"i",22376,12},{"i",22372,1}},lvl=60,qgs={16133},repeatable=1,sourceQuests={9033},u=2,g={
 s(164998,22508,{b=1,f=4,lvl=60,q=4,u=2})}})}}),
-cl(11,{rwp=11506,u=2,g={
+cl(11,{u=2,g={
 q(9088,{coords={
 [1423]={{81.2,59}}},cost={{"i",20725,2},{"i",15407,6},{"i",22373,15},{"i",22360,1}},lvl=60,qgs={16135},repeatable=1,sourceQuests={9033},u=2,g={
 s(164980,22490,{b=1,f=5,lvl=60,q=4,u=2})}}),
@@ -5185,107 +5186,102 @@ q(9090,{coords={
 [1423]={{81.2,59}}},cost={{"i",14342,3},{"i",15407,2},{"i",22373,12},{"i",22365,1}},lvl=60,qgs={16135},repeatable=1,sourceQuests={9033},u=2,g={
 s(164982,22492,{b=1,f=5,lvl=60,q=4,u=2})}})}}),
 q(9033,{coords={
-[1423]={{81.5,58.2}}},lvl=60,qgs={16115},rwp=11506,sourceQuests={9121,9122,9123},u=2,g={
+[1423]={{81.5,58.2}}},lvl=60,qgs={16115},sourceQuests={9121,9122,9123},u=2,g={
 qo(1,{providers={{"n",16145}},u=2}),
 qo(2,{providers={{"n",15976}},u=2}),
 qo(3,{providers={{"n",16021}},u=2}),
 qo(4,{providers={{"n",16168}},u=2})}}),
 q(9237,{coords={
-[1423]={{81,59.6}}},cost={{"i",14227,4},{"i",14048,4},{"i",7080,2},{"i",22682,5},{"g",2000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",14227,4},{"i",14048,4},{"i",7080,2},{"i",22682,5},{"g",2000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165020,22658,{f=3,lvl=60,q=4,u=2})}}),
 q(9239,{c={5,8,9},coords={
-[1423]={{81,59.6}}},cost={{"i",14227,2},{"i",14048,4},{"i",7080,4},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",14227,2},{"i",14048,4},{"i",7080,4},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165017,22654,{f=4,lvl=60,q=4,u=2})}}),
 q(9240,{c={5,8,9},coords={
-[1423]={{81,59.6}}},cost={{"i",14227,4},{"i",14048,8},{"i",7080,6},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",14227,4},{"i",14048,8},{"i",7080,6},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165016,22652,{f=4,lvl=60,q=4,u=2})}}),
 q(9238,{c={5,8,9},coords={
-[1423]={{81,59.6}}},cost={{"i",14227,2},{"i",14048,2},{"i",7080,2},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",14227,2},{"i",14048,2},{"i",7080,2},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165018,22655,{f=4,lvl=60,q=4,u=2})}}),
 q(9235,{c={1,2},coords={
-[1423]={{81,59.6}}},cost={{"i",12360,2},{"i",12359,12},{"i",7080,2},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",12360,2},{"i",12359,12},{"i",7080,2},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165032,22671,{f=7,lvl=60,q=4,u=2})}}),
 q(9236,{c={1,2},coords={
-[1423]={{81,59.6}}},cost={{"i",12360,2},{"i",12359,16},{"i",7080,4},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",12360,2},{"i",12359,16},{"i",7080,4},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165030,22669,{f=7,lvl=60,q=4,u=2})}}),
 q(9234,{c={1,2},coords={
-[1423]={{81,59.6}}},cost={{"i",12360,2},{"i",12359,12},{"i",7080,2},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",12360,2},{"i",12359,12},{"i",7080,2},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165031,22670,{f=7,lvl=60,q=4,u=2})}}),
 q(9244,{c={3,7},coords={
-[1423]={{81,59.6}}},cost={{"i",15408,16},{"i",15407,3},{"i",7080,5},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",15408,16},{"i",15407,3},{"i",7080,5},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165026,22665,{f=6,lvl=60,q=4,u=2})}}),
 q(9246,{c={3,7},coords={
-[1423]={{81,59.6}}},cost={{"i",15408,24},{"i",15407,5},{"i",7080,7},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",15408,24},{"i",15407,5},{"i",7080,7},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165025,22664,{f=6,lvl=60,q=4,u=2})}}),
 q(9245,{c={3,7},coords={
-[1423]={{81,59.6}}},cost={{"i",15408,16},{"i",15407,3},{"i",7080,5},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",15408,16},{"i",15407,3},{"i",7080,5},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165027,22666,{f=6,lvl=60,q=4,u=2})}}),
-q(9233,{description="You must not have a profession above 270 skill for you to get this item from Omarion.",lvl=60,minReputation={529,21000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,providers={{"i",22719}},rwp=11506,u=2}),
+q(9233,{description="You must not have a profession above 270 skill for you to get this item from Omarion.",lvl=60,minReputation={529,21000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,providers={{"i",22719}},u=2}),
 q(9241,{c={4,11},coords={
-[1423]={{81,59.6}}},cost={{"i",15407,3},{"i",12810,12},{"i",7080,3},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",15407,3},{"i",12810,12},{"i",7080,3},{"i",22682,4},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165024,22663,{f=5,lvl=60,q=4,u=2})}}),
 q(9242,{c={4,11},coords={
-[1423]={{81,59.6}}},cost={{"i",12810,12},{"i",15407,3},{"i",7080,3},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",12810,12},{"i",15407,3},{"i",7080,3},{"i",22682,5},{"g",2000000}},lvl=60,OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165023,22662,{f=5,lvl=60,q=4,u=2})}}),
 q(9243,{c={4,11},coords={
-[1423]={{81,59.6}}},cost={{"i",12810,16},{"i",15407,5},{"i",7080,5},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},rwp=11506,sourceQuests={9233},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",12810,16},{"i",15407,5},{"i",7080,5},{"i",22682,8},{"g",3000000}},lvl=60,minReputation={529,42000},OnUpdate=_.OnUpdateDB.OMARIONS_HANDBOOK,qgs={16376},sourceQuests={9233},u=2,g={
 s(165022,22661,{f=5,lvl=60,q=4,u=2})}}),
 q(9230,{coords={
-[1423]={{81.8,58.1}}},cost={{"i",12360,1},{"i",12361,1},{"i",22682,1}},lvl=60,qgs={16112},rwp=11506,sourceQuests={9229},u=2,g={
+[1423]={{81.8,58.1}}},cost={{"i",12360,1},{"i",12361,1},{"i",22682,1}},lvl=60,qgs={16112},sourceQuests={9229},u=2,g={
 i(22707,{b=1,f=52,q=4,u=2})}}),
 q(9121,{altQuests={9122,9123,9378},coords={
-[1423]={{81.5,58.3}}},cost={{"i",12811,1},{"i",20725,2},{"i",14344,2},{"i",12363,5},{"g",600000}},lvl=60,minReputation={529,9000},qgs={16116},rwp=11506,u=2}),
+[1423]={{81.5,58.3}}},cost={{"i",12811,1},{"i",20725,2},{"i",14344,2},{"i",12363,5},{"g",600000}},lvl=60,minReputation={529,9000},qgs={16116},u=2}),
 q(9122,{altQuests={9121,9123,9378},coords={
-[1423]={{81.5,58.3}}},cost={{"i",20725,1},{"i",12363,2},{"g",300000}},lvl=60,minReputation={529,21000},qgs={16116},rwp=11506,u=2}),
+[1423]={{81.5,58.3}}},cost={{"i",20725,1},{"i",12363,2},{"g",300000}},lvl=60,minReputation={529,21000},qgs={16116},u=2}),
 q(9123,{altQuests={9121,9122,9378},coords={
-[1423]={{81.5,58.3}}},lvl=60,minReputation={529,42000},qgs={16116},rwp=11506,u=2}),
-q(9120,{lvl=60,providers={{"i",22520}},rwp=11506,u=2,g={
+[1423]={{81.5,58.3}}},lvl=60,minReputation={529,42000},qgs={16116},u=2}),
+q(9120,{lvl=60,providers={{"i",22520}},u=2,g={
 i(23206,{b=1,f=53,q=4,u=2}),
 i(23207,{b=1,f=53,q=4,u=2})}}),
 q(9229,{coords={
-[1423]={{81.8,58.1}}},lvl=60,qgs={16112},rwp=11506,sourceQuests={9033},u=2,g={
+[1423]={{81.8,58.1}}},lvl=60,qgs={16112},sourceQuests={9033},u=2,g={
 qo(1,{providers={{"i",22708}},u=2})}}),
 q(9232,{coords={
-[1423]={{81,59.6}}},cost={{"i",12361,2},{"i",7080,2},{"i",22682,2},{"g",300000}},lvl=60,qgs={16376},rwp=11506,sourceQuests={9033},u=2,g={
+[1423]={{81,59.6}}},cost={{"i",12361,2},{"i",7080,2},{"i",22682,2},{"g",300000}},lvl=60,qgs={16376},sourceQuests={9033},u=2,g={
 s(165041,22700,{b=1,f=4,q=4,u=2}),
 s(165040,22699,{b=1,f=7,q=4,u=2}),
 s(165043,22702,{b=1,f=6,q=4,u=2}),
 s(165042,22701,{b=1,f=5,q=4,u=2})}})}}),
-h(-63,{u=1611,g={
-i(22708,{q=1,rwp=11505,u=2}),
-i(22682,{cost={{"i",23055,1}},description="Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",lvl=60,q=3,rwp=11505,u=2}),
-i(22374,{q=3,u=1611}),
-i(22376,{q=3,u=1611}),
-i(22373,{q=3,u=1611}),
-i(22375,{q=3,u=1611}),
-i(23055,{description="These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",q=1,rwp=11505,u=2}),
-s(165207,23221,{b=1,f=23,lvl=60,q=4,rwp=11505,u=2}),
-s(165164,23044,{b=1,f=20,lvl=60,q=4,rwp=11505,u=2}),
-s(165209,23238,{b=1,f=8,lvl=60,q=4,rwp=11505,u=2}),
-s(165297,23664,{b=1,c={7},f=6,lvl=60,q=4,rwp=11505,u=2}),
-s(165300,23667,{b=1,c={2},f=7,lvl=60,q=4,rwp=11505,u=2}),
-s(165208,23226,{b=1,f=5,lvl=60,q=4,rwp=11505,u=2}),
-s(165172,23069,{b=1,c={5,8,9},f=4,lvl=60,q=4,rwp=11505,u=2}),
-s(165299,23666,{b=1,c={2},f=7,lvl=60,q=4,rwp=11505,u=2}),
-s(165296,23663,{b=1,f=6,lvl=60,q=4,rwp=11505,u=2}),
-s(165298,23665,{b=1,c={7},f=6,lvl=60,q=4,rwp=11505,u=2}),
-s(165301,23668,{b=1,c={2},f=7,lvl=60,q=4,rwp=11505,u=2}),
-i(23237,{b=1,f=52,lvl=60,q=4,rwp=11505,u=2})}}),
-h(-19,{u=1611,g={
-i(22354,{b=1,c={1,4},crs={15931,15932,16028},lvl=60,q=4,rwp=11506,u=2}),
-i(22368,{b=1,c={5,8,9},crs={15931,15932,16028},lvl=60,q=4,rwp=11506,u=2}),
-i(22361,{b=1,c={2,3,7,11},crs={15931,15932,16028},lvl=60,q=4,rwp=11506,u=2}),
-i(22369,{b=1,c={5,8,9},crs={15932,15953,15956},lvl=60,q=4,rwp=11506,u=2}),
-i(22355,{b=1,c={1,4},crs={15932,15953,15956},lvl=60,q=4,rwp=11506,u=2}),
-i(22362,{b=1,c={2,3,7,11},crs={15932,15953,15956},lvl=60,q=4,rwp=11506,u=2}),
-i(22370,{b=1,c={5,8,9},crs={15932,15936,15954},lvl=60,q=4,rwp=11506,u=2}),
-i(22363,{b=1,c={2,3,7,11},crs={15932,15936,15954},lvl=60,q=4,rwp=11506,u=2}),
-i(22356,{b=1,c={1,4},crs={15932,15936,15954},lvl=60,q=4,rwp=11506,u=2}),
-i(22365,{b=1,c={2,3,7,11},crs={15932,16060,16061},lvl=60,q=4,rwp=11506,u=2}),
-i(22358,{b=1,c={1,4},crs={15932,16060,16061},lvl=60,q=4,rwp=11506,u=2}),
-i(22372,{b=1,c={5,8,9},crs={15932,16060,16061},lvl=60,q=4,rwp=11506,u=2}),
-i(22726,{b=1,c={5,8,9,11},crs={15928,15931,15932,15936,15952,15953,15954,15956,16011,16028,16060,16061,16062},lvl=60,q=5,rwp=11506,u=2})}}),
-d(148,{rwp=11506,u=2,g={
+h(-63,{u=2,g={
+i(23055,{description="These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",q=1,u=2}),
+s(165207,23221,{b=1,f=23,lvl=60,q=4,u=2}),
+s(165164,23044,{b=1,f=20,lvl=60,q=4,u=2}),
+s(165209,23238,{b=1,f=8,lvl=60,q=4,u=2}),
+s(165297,23664,{b=1,c={7},f=6,lvl=60,q=4,u=2}),
+s(165300,23667,{b=1,c={2},f=7,lvl=60,q=4,u=2}),
+s(165208,23226,{b=1,f=5,lvl=60,q=4,u=2}),
+s(165172,23069,{b=1,c={5,8,9},f=4,lvl=60,q=4,u=2}),
+s(165299,23666,{b=1,c={2},f=7,lvl=60,q=4,u=2}),
+s(165296,23663,{b=1,f=6,lvl=60,q=4,u=2}),
+s(165298,23665,{b=1,c={7},f=6,lvl=60,q=4,u=2}),
+s(165301,23668,{b=1,c={2},f=7,lvl=60,q=4,u=2}),
+i(23237,{b=1,f=52,lvl=60,q=4,u=2})}}),
+h(-56,{u=2,g={
+i(22682,{lvl=60,q=3,u=2})}}),
+h(-19,{u=2,g={
+i(22354,{b=1,c={1,4},crs={15931,15932,16028},lvl=60,q=4,u=2}),
+i(22368,{b=1,c={5,8,9},crs={15931,15932,16028},lvl=60,q=4,u=2}),
+i(22361,{b=1,c={2,3,7,11},crs={15931,15932,16028},lvl=60,q=4,u=2}),
+i(22369,{b=1,c={5,8,9},crs={15932,15953,15956},lvl=60,q=4,u=2}),
+i(22355,{b=1,c={1,4},crs={15932,15953,15956},lvl=60,q=4,u=2}),
+i(22362,{b=1,c={2,3,7,11},crs={15932,15953,15956},lvl=60,q=4,u=2}),
+i(22370,{b=1,c={5,8,9},crs={15932,15936,15954},lvl=60,q=4,u=2}),
+i(22363,{b=1,c={2,3,7,11},crs={15932,15936,15954},lvl=60,q=4,u=2}),
+i(22356,{b=1,c={1,4},crs={15932,15936,15954},lvl=60,q=4,u=2}),
+i(22365,{b=1,c={2,3,7,11},crs={15932,16060,16061},lvl=60,q=4,u=2}),
+i(22358,{b=1,c={1,4},crs={15932,16060,16061},lvl=60,q=4,u=2}),
+i(22372,{b=1,c={5,8,9},crs={15932,16060,16061},lvl=60,q=4,u=2}),
+i(22726,{b=1,c={5,8,9,11},crs={15928,15931,15932,15936,15952,15953,15954,15956,16011,16028,16060,16061,16062},lvl=60,q=5,u=2})}}),
 h(-78,{icon=135442,u=2,g={
 n(15956,{u=2,g={
 s(165137,22937,{b=1,f=1,lvl=60,q=4,u=2}),
@@ -5889,8 +5885,15 @@ n(16112,{coords={
 i(236022,{b=1,c={1},cost={{"i",237381,1},{"i",12363,3},{"i",12938,1}},f=52,lvl=60,q=4,u=1611}),
 i(236013,{b=1,c={1},cost={{"i",237381,1},{"i",12363,3},{"i",12938,1}},f=52,lvl=60,q=4,u=1611})}}),
 h(-63,{u=1611,g={
-i(236656,{cost={{"i",237773,1}},description="Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",lvl=60,q=3,u=1611}),
+i(22708,{q=1,u=1611}),
+i(22374,{q=3,u=1611}),
+i(22376,{q=3,u=1611}),
+i(22373,{q=3,u=1611}),
+i(22375,{q=3,u=1611}),
 i(237773,{description="These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",q=2,u=1611})}}),
+h(-56,{u=1611,g={
+o(181287,{cost={{"i",237773,1}},description="Use a Word of Thawing on this to collect 3-6 Frozen Runes.",u=1611,g={
+i(236656,{lvl=60,q=3,u=1611})}})}}),
 h(-19,{u=1611,g={
 i(236237,{b=1,c={1,3,8},crs={15931,15932,16028},lvl=60,q=4,u=1611}),
 i(236240,{b=1,c={4,5,9},crs={15931,15932,16028},lvl=60,q=4,u=1611}),
@@ -9408,7 +9411,7 @@ s(159010,7727,{f=5,lvl=27,q=3}),
 s(159026,7757,{f=28,lvl=32,q=3})})}}),
 inst(246,{coords={
 [1422]={{69.07,72.96}}},cost={{"i",13704,1}},lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,maps={306,307,308,309},savedInstanceID=289,sourceQuests={5505,5511},u=1608,["zone-text-areaID"]=2057,g={
-h(-45,{awp=100105,rwp=50004,g={
+h(-45,{awp=10300,rwp=50004,g={
 q(8259,{altQuests={8258},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7668},u=1609,g={
 s(164185,20134,{b=1,f=6,q=4,u=1609})}}),
@@ -9442,8 +9445,8 @@ q(5531,{coords={
 [1423]={{81.73,57.83}}},lvl=57,providers={{"i",13761}},qgs={11036},rwp=40003,sourceQuests={5522}}),
 q(4771,{coords={
 [1423]={{81.5,59.7}}},description="After completing this quest, you can return to Betina to have her give you another Gambit.",lvl=57,qgs={11035},rwp=40003,sourceQuests={5531},g={
-qo(1,{awp=100105,providers={{"n",10432}},rwp=50004}),
-qo(2,{awp=100105,description="This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",providers={{"i",12368}},rwp=50004}),
+qo(1,{awp=10300,providers={{"n",10432}},rwp=50004}),
+qo(2,{awp=10300,description="This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",providers={{"i",12368}},rwp=50004}),
 s(162619,15854,{b=1,f=28,q=3}),
 s(162618,15853,{b=1,f=21,q=3})}}),
 q(5382,{coords={
@@ -9503,11 +9506,11 @@ q(5465,{coords={
 [1423]={{81.7,57.8}}},lvl=57,providers={{"i",13624}},qgs={11036},rwp=40003,sourceQuests={5464}}),
 q(7668,{c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=10700,sourceQuests={7667},u=2,g={
-qo(1,{awp=100105,crs={14516},providers={{"i",18880}},rwp=50004}),
+qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004}),
 s(163692,18807,{b=1,f=6,q=3,u=2})}}),
 q(8258,{altQuests={7668},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7667},u=1609,g={
-qo(1,{awp=100105,crs={14516},providers={{"i",18880}},rwp=50004,u=1609}),
+qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004,u=1609}),
 s(164185,20134,{b=1,f=6,q=4,u=1609})}}),
 q(5462,{coords={
 [1422]={{70.6,74.1}}},lvl=57,providers={{"i",13544},{"i",13585}},qgs={11286},rwp=40003,sourceQuests={5461}}),
@@ -9523,24 +9526,24 @@ q(5511,{coords={
 i(13704,{q=1})}}),
 q(5344,{coords={
 [1422]={{43.5,83.7}}},lvl=52,maps={1420},qgs={11023},r=2,rwp=40003,sourceQuests={5343},g={
-qo(1,{awp=100105,coords={
+qo(1,{awp=10300,coords={
 [1420]={{83,71.6}}},crs={11022},providers={{"i",13470}},rwp=50004}),
 i(14023,{b=1,f=53,q=3})}}),
 q(5342,{coords={
 [1420]={{83.06,71.6}}},lvl=52,maps={1422},qgs={11022},r=1,rwp=40003,sourceQuests={5341},g={
-qo(1,{awp=100105,coords={
+qo(1,{awp=10300,coords={
 [1422]={{43.4,83.6}}},crs={11023},providers={{"i",13469}},rwp=50004}),
 i(14022,{b=1,f=53,q=3})}}),
 q(5466,{coords={
 [1422]={{70.6,74.1}}},lvl=57,providers={{"i",13544}},qgs={11286},rwp=40003,sourceQuests={5465},g={
-qo(1,{awp=100105,providers={{"i",13626}},rwp=50004}),
+qo(1,{awp=10300,providers={{"i",13626}},rwp=50004}),
 s(161210,14002,{b=1,f=8,q=3}),
 s(161208,13984,{b=1,f=20,q=3}),
 s(161206,13982,{b=1,f=26,q=3}),
 s(161209,13986,{b=1,f=4,q=3})}})}}),
-h(-56,{awp=100105,rwp=50004,g={
+h(-56,{awp=10300,rwp=50004,g={
 i(12736,{awp=11101,b=1,description="Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",providers={{"o",175965}},q=1})}}),
-h(-63,{awp=100105,rwp=50004,g={
+h(-63,{awp=10300,rwp=50004,g={
 i(20520,{q=2}),
 r(20035,{crs={10469},itemID=16255,learnedAt=300,q=2,requireSkill=333}),
 r(20032,{crs={10499},itemID=16254,learnedAt=300,q=3,requireSkill=333}),
@@ -9550,7 +9553,7 @@ i(22526,{q=1,u=1611}),
 i(12843,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=2,rwp=40003}),
 i(12841,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
 i(12840,{awp=11101,b=1,description="Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
-i(13920,{b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=55,q=1,rwp=40003}),
+i(13920,{awp=100105,b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=55,q=1,rwp=40003}),
 i(12753,{awp=11101,b=1,q=2,rwp=40003}),
 s(163643,18702,{f=7,lvl=55,q=3}),
 s(223249,226751,{awp=11503,crs={10478},f=6,lvl=52,q=3,u=1608}),
@@ -9578,9 +9581,9 @@ s(223210,226712,{awp=11503,crs={10499,10500,11257},f=5,lvl=53,q=3,u=1608}),
 s(163031,16716,{crs={10499,10500,11257},f=5,lvl=53,q=3,rwp=11503,u=2}),
 s(223212,226714,{awp=11503,crs={10495},f=5,lvl=52,q=3,u=1608}),
 s(163029,16714,{crs={10495},f=5,lvl=52,q=3,rwp=11503,u=2})}}),
-n(14861,{awp=100105,rwp=50004,g={
+n(14861,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1})}}),
-n(10506,{awp=100105,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"i",13523},{"o",175564}},rwp=50004,g={
+n(10506,{awp=10300,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"i",13523},{"o",175564}},rwp=50004,g={
 s(224236,228015,{awp=11503,b=1,f=20,lvl=56,q=3,u=1608}),
 s(161211,14024,{b=1,f=20,lvl=56,q=3,rwp=11503,u=2}),
 s(224248,228029,{awp=11503,b=1,f=22,lvl=57,q=3,u=1608}),
@@ -9598,7 +9601,7 @@ s(223262,226764,{awp=11503,b=1,f=7,lvl=54,q=3,u=1608}),
 s(163049,16734,{b=1,f=7,lvl=54,q=3,rwp=11503,u=2}),
 s(224225,228004,{awp=11503,b=1,f=6,lvl=56,q=3,u=1608}),
 s(161204,13967,{b=1,f=6,lvl=56,q=3,rwp=11503,u=2})}}),
-n(10503,{awp=100105,rwp=50004,g={
+n(10503,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1}),
 i(13725,{q=1}),
 o(180794,{description="Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",g={
@@ -9616,7 +9619,7 @@ s(224259,228040,{awp=11503,b=1,f=5,lvl=57,q=3,u=1608}),
 s(161574,14545,{b=1,f=5,lvl=57,q=3,rwp=11503,u=2}),
 s(224260,228041,{awp=11503,b=1,f=7,lvl=57,q=3,u=1608}),
 s(163633,18690,{b=1,f=7,lvl=57,q=3,rwp=11503,u=2})}}),
-n(11622,{awp=100105,rwp=50004,g={
+n(11622,{awp=10300,rwp=50004,g={
 i(13873,{awp=11101,b=1,description="You must use this item on the door prior to Vectus and Marduk.",q=1,rwp=40003}),
 i(18782,{awp=11101,lvl=50,q=3,rwp=40003}),
 s(224215,227994,{awp=11503,b=1,f=24,lvl=54,q=3,u=1608}),
@@ -9639,15 +9642,15 @@ s(163682,18761,{b=1,f=27,lvl=57,q=3}),
 s(163680,18758,{b=1,f=20,lvl=57,q=3}),
 i(228045,{awp=11503,b=1,f=52,lvl=57,q=3,u=1608}),
 i(18760,{b=1,f=52,lvl=57,q=3,rwp=11503,u=2})}}),
-n(10433,{awp=100105,rwp=50004,g={
+n(10433,{awp=10300,rwp=50004,g={
 s(224214,227993,{b=1,description="There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",f=25,lvl=54,q=3,u=1}),
 s(161600,14576,{b=1,f=25,lvl=54,q=3}),
 s(163634,18692,{b=1,f=7,lvl=54,q=3})}}),
-n(10432,{awp=100105,rwp=50004,g={
+n(10432,{awp=10300,rwp=50004,g={
 i(18691,{b=1,f=51,lvl=56,q=3}),
 s(224237,228017,{awp=11503,b=1,f=4,lvl=56,q=3,u=1608}),
 s(161601,14577,{b=1,f=4,lvl=56,q=3,rwp=11503,u=2})}}),
-n(10508,{awp=100105,rwp=50004,g={
+n(10508,{awp=10300,rwp=50004,g={
 i(13626,{cost={{"i",13752,1}},description="Use the Keepsake on him before he dies to turn him back into a human.",q=1}),
 r(17637,{itemID=13521,learnedAt=300,q=2,requireSkill=171}),
 s(161555,14487,{b=1,f=23,lvl=57,q=3}),
@@ -9670,7 +9673,7 @@ s(161556,14502,{b=1,f=5,lvl=57,q=3}),
 s(224263,228044,{awp=11503,b=1,f=6,lvl=57,q=3,u=1608}),
 s(161558,14522,{b=1,f=6,lvl=57,q=3,rwp=11503,u=2}),
 s(163636,18694,{b=1,f=6,lvl=57,q=3})}}),
-n(16118,{awp=100105,cost={{"i",22057,1},{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=50004,u=1610,g={
+n(16118,{awp=10300,cost={{"i",22057,1},{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=50004,u=1610,g={
 s(224245,228026,{awp=11503,b=1,f=25,lvl=57,q=3,u=1608}),
 s(224247,228028,{awp=11503,b=1,f=25,lvl=57,q=3,u=1608}),
 s(164907,22332,{b=1,f=25,lvl=57,q=3,rwp=11503,u=2}),
@@ -9681,7 +9684,7 @@ s(164891,22303,{b=1,c={5,8,9},f=4,lvl=57,q=3,rwp=11503,u=2}),
 i(228047,{awp=11503,b=1,f=52,lvl=58,q=3,u=1608}),
 i(22326,{b=1,f=52,lvl=58,q=3,rwp=11503,u=2}),
 i(22331,{b=1,f=52,lvl=57,q=3,u=1610})}}),
-h(-19,{awp=100105,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",rwp=50004,g={
+h(-19,{awp=10300,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",rwp=50004,g={
 s(224217,227996,{awp=11503,b=1,f=32,lvl=56,q=3,u=1608}),
 s(163627,18680,{b=1,f=32,lvl=56,q=3,rwp=11503,u=2}),
 s(163630,18683,{b=1,f=23,lvl=56,q=3}),
@@ -9726,24 +9729,24 @@ s(224230,228009,{awp=11503,b=1,f=4,lvl=56,q=3,u=1608}),
 s(161646,14631,{b=1,f=4,lvl=56,q=3,rwp=11503,u=2}),
 i(23201,{b=1,f=54,lvl=60,q=3,u=1610}),
 i(23200,{b=1,f=54,lvl=60,q=3,u=1610})}}),
-n(10505,{awp=100105,rwp=50004,g={
+n(10505,{awp=10300,rwp=50004,g={
 s(223202,226704,{awp=11503,f=5,lvl=52,q=3,u=1608}),
 s(163025,16710,{f=5,lvl=52,q=3,rwp=11503,u=2})}}),
-n(11261,{awp=100105,rwp=50004,g={
+n(11261,{awp=10300,rwp=50004,g={
 i(13523,{b=1,q=1}),
 s(223229,226731,{awp=11503,f=4,lvl=54,q=3,u=1608}),
 s(162999,16684,{f=4,lvl=54,q=3,rwp=11503,u=2}),
 s(161637,14617,{b=1,f=10,filterForRWP=2,q=1})}}),
-n(10901,{awp=100105,rwp=50004,g={
+n(10901,{awp=10300,rwp=50004,g={
 s(223256,226758,{awp=11503,f=4,lvl=54,q=3,u=1608}),
 s(163020,16705,{f=4,lvl=54,q=3,rwp=11503,u=2})}}),
-n(10507,{awp=100105,rwp=50004,g={
+n(10507,{awp=10300,rwp=50004,g={
 s(223210,226712,{awp=11503,f=5,lvl=53,q=3,u=1608}),
 s(163031,16716,{f=5,lvl=53,q=3,rwp=11503,u=2})}}),
-n(10504,{awp=100105,rwp=50004,g={
+n(10504,{awp=10300,rwp=50004,g={
 s(223237,226739,{awp=11503,f=7,lvl=52,q=3,u=1608}),
 s(163037,16722,{f=7,lvl=52,q=3,rwp=11503,u=2})}}),
-n(1853,{awp=100105,description="You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
+n(1853,{awp=10300,description="You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
 r(18458,{itemID=14514,learnedAt=300,q=4,requireSkill=197}),
 r(17580,{b=1,itemID=13501,learnedAt=295,q=2,requireSkill=171}),
 s(224241,228022,{awp=11503,b=1,f=28,lvl=60,q=4,u=1608}),

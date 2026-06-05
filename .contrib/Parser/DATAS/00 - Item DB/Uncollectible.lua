@@ -457,7 +457,6 @@ i(166872);	-- Sterling Truesilver Flatware
 i(166796);	-- Sunset Amber (Opulence Crown Consumable)
 i(170038);	-- Torn Mesh
 i(166288);	-- Waterlogged Junk
-i(166420);	-- Xibala Kombucha
 i(166859);	-- Zinj'alor Blue Diamond
 
 -----------------
@@ -1015,7 +1014,6 @@ i(181723);	-- Meticulously Pickled Head
 i(179283);	-- Millet Wafers
 i(179012);	-- Mirecrawler Goulash
 i(181515);	-- Miserable Pile of Secrets
-i(181558);	-- Missing Ritual Pages
 i(184387);	-- Misty Shimmerleaf
 i(184763);	-- Mnemis Neural Network
 i(183935);	-- Modified Death Warrant
@@ -2874,6 +2872,7 @@ i(260287);	-- World Roots Banquet
 i(272049);	-- Bloodied Propaganda Leaflet
 i(272109);	-- Crumpled Propaganda Page
 i(272047);	-- Deeplurk Scrying Stone
+i(272111);	-- Decaying Necromancer Cloak
 i(272114);	-- Discarded Excavation Tool
 i(272112);	-- Golden Rune-Etched Circlet
 i(273014);	-- Howling Glass Shard
@@ -2881,6 +2880,7 @@ i(272118);	-- Inert Arcane Explosive
 i(272894);	-- Inert Runestone
 i(272046);	-- Mana-Singed Divining Rod
 i(272120);	-- Mysterious Vial
+i(272119);	-- Residue-Covered Tool
 i(272052);	-- Ripped Propaganda Page
 i(272113);	-- Scourge Shard Fragment
 i(272048);	-- Shattered Containment Pearl

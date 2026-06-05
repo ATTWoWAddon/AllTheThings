@@ -880,7 +880,7 @@ q(7497,{coords={
 r(19093,{awp=30202,learnedAt=300,requireSkill=165}),
 r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
 q(7493,{coords={
-[85]={{52.2,75.8}}},learnedAt=300,lvl=60,qgs={14392},r=1,requireSkill=165,sourceQuests={7491,24429},g={
+[85]={{51.5,83}}},learnedAt=300,lvl=60,qgs={14392},r=1,requireSkill=165,sourceQuests={7491,24429},g={
 r(19093,{awp=30202,learnedAt=300,requireSkill=165}),
 r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
 q(7495,{awp=10001,lvl=60,maps={84},providers={{"i",18423}},r=2,rwp=100000}),
@@ -20515,7 +20515,13 @@ h(-19,{crs={55265,55294,55308,55312,55689,56427},u=42,g={
 cu(614,{description="Used to buy uncut gems contained in Crystalline Geode from vendor Dasnurimi in Wyrmrest Temple.",u=42})}}),
 h(-58,{u=42,g={
 n(58153,{u=42,g={
-i(78890,{b=1,cost={{"c",614,1}},description="Contains random uncut Cataclysm gems.",q=4,u=42}),
+i(78890,{b=1,cost={{"c",614,1}},description="Contains random uncut Cataclysm gems.",q=4,u=42,g={
+i(71807,{q=4,u=42}),
+i(71810,{q=4,u=42}),
+i(71808,{q=4,u=42}),
+i(71806,{q=4,u=42}),
+i(71805,{q=4,u=42}),
+i(71809,{q=4,u=42})}}),
 i(78891,{b=1,cost={{"c",615,1}},q=4,u=42})}})}}),
 d(114,{difficulties={7,1,2,3,4,5,6},u=42,g={
 e(311,{npcID=55265,u=42,g={

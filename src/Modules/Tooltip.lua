@@ -268,19 +268,31 @@ for i,guid in ipairs({
 	"Player-5825-01FD365B",	-- Anysil-Wild Growth (SoD)
 	-- Tag
 	"Player-1091-04F6F553",	-- Tag-Bloodscalp EU
-	"Player-1091-0A9BC8B5",	-- Teleportag-Bloodscalp EU
+	"Player-1091-0A44C31D", -- Potentag-Bloodscalp EU
 	"Player-1091-04FEE79B",	-- Tagalong-Bloodscalp EU
-	"Player-1091-0772987D",	-- Tagimonde-Bloodscalp EU
+	"Player-1091-08D91860", -- Twilightag-Bloodscalp EU
+	"Player-1091-0772987D", -- Afflictag-Bloodscalp EU
+	"Player-1091-0B36F363", -- Tagoat-Bloodscalp EU
 	"Player-1091-079A210A",	-- Tageras-Bloodscalp EU
+	"Player-1091-0A464A3E", -- Frightag-Bloodscalp EU
+	"Player-1091-091A259B", -- Ptag-Bloodscalp EU
 	"Player-1091-06DA8328",	-- Taggles-Bloodscalp EU
 	"Player-1091-06D4E2FB",	-- Tagsenpai-Bloodscalp EU
+	"Player-1091-0A352BA7", -- Aratag-Bloodscalp EU
 	"Player-1091-04F9E1C9",	-- Tagu-Bloodscalp EU
+	"Player-1091-0A69D4B1", -- Abductag-Bloodscalp EU
 	"Player-1091-0A81CBF8",	-- Taguise-Bloodscalp EU
+	"Player-1091-0ADC8628", -- Adamantag-Bloodscalp EU
 	"Player-1091-04FEE745",	-- Tagarang-Bloodscalp EU
+	"Player-1091-09912A29", -- Huntag-Bloodscalp EU
 	"Player-1091-04FC9C87",	-- Tagelicious-Bloodscalp EU
-	"Player-1091-06D4E4E5",	-- Tagov-Bloodscalp EU
+	"Player-1091-0A30D372", -- Goatag-Bloodscalp EU
+	"Player-1091-06D4E4E5", -- Tagov-Bloodscalp EU
+	"Player-1091-099137B0", -- Frostag-Bloodscalp EU
 	"Player-1091-04F9A20C",	-- Taggie-Bloodscalp EU
-	"Player-1091-04FEE76F",	-- Taggieboy-Bloodscalp EU
+	"Player-1091-08D77F91", -- Lightag-Bloodscalp EU
+	"Player-1091-04FEE76F", -- Tagrond-Bloodscalp EU
+	"Player-1091-0ADDA19E", -- Gutentag-Bloodscalp EU
 	-- Darkal
 	"Player-3391-0A512DEB",	-- Claella-Silvermoon EU
 	"Player-3391-07DAA0FA",	-- Cresaida-Silvermoon EU
@@ -717,17 +729,18 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
-local function ReshowGametooltip()
-	if GameTooltip and GameTooltip:IsVisible() then
-		-- app.PrintDebug("Auto-refresh tooltip",GameTooltip.AllTheThingsProcessing)
+local function ReshowGametooltip(tt)
+	tt = tt or GameTooltip
+	-- app.PrintDebug("Auto-refresh tooltip",SafeGetName(tt),tt.AllTheThingsProcessing,tt:IsVisible())
+	if tt and tt.AllTheThingsProcessing and tt:IsVisible() then
 		-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
 		---@diagnostic disable-next-line: inject-field
-		GameTooltip.ATT_AttachComplete = nil
-		GameTooltip:Show()
+		tt.ATT_AttachComplete = nil
+		tt:Show()
 	end
 end
-app.ReshowGametooltip = function()
-	Callback(ReshowGametooltip)
+app.ReshowGametooltip = function(tt)
+	Callback(ReshowGametooltip, tt)
 end
 app.AddEventHandler("OnRefreshComplete", function()
 	Callback(ReshowGametooltip)
@@ -795,7 +808,7 @@ local function AttachTooltipSearchResults(tooltip, method, ...)
 		app.PrintDebug("pcall tooltip failed",group)
 	end
 	tooltip.ATT_AttachComplete = not (working or (group and group.working));
-	-- app.PrintDebug("ATT_AttachComplete",group.hash,tooltip.ATT_AttachComplete,working,group.working)
+	-- app.PrintDebug("AttachTooltipSearchResults.Complete",app:SearchLink(group),tooltip.ATT_AttachComplete,working,group.working)
 end
 
 local AttachTypicalSearchResults
@@ -813,6 +826,8 @@ do
 	-- In Retail, we want to put the Thing being searched into the tooltip. Whether other content should be included
 	-- is based on Fillers and other logic based on that Thing and is not always included based on caching
 	AttachTypicalSearchResults = function(self, field, id)
+		self.ATT_SearchField = field
+		self.ATT_SearchID = id
 		AttachTooltipSearchResults(self, SearchForObject, field, tonumber(id), SearchOptionByField[field])
 	end
 end
@@ -912,7 +927,8 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 	]]--
 
 	local function RerenderCurrency(self, currencyID)
-		if self:IsVisible() then
+		-- only redraw the currency if that's what the tooltip still is
+		if self:IsVisible() and self.ATT_SearchField == "currencyID" and self.ATT_SearchID == currencyID then
 			---@diagnostic disable-next-line: redundant-parameter
 			GameTooltip.SetCurrencyByID(self, currencyID, 1);
 		end
@@ -930,7 +946,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 			end
 			ttId = ttdata.id;
 			-- Debugging without ATT exclusions
-			-- app.PrintDebug("TT",SafeGetName(self),ttType,ttId,ok,res)
+			-- app.PrintDebug("TT",SafeGetName(self),ttType,ttId)
 			-- app.PrintTable(ttdata)
 			if IgnoredTypes[ttType] then
 				return true
@@ -1012,8 +1028,9 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		else
 			-- 12.0.5: TooltipUtil.GetDisplayedUnit now errors inside certain instances when used by any addon
 			local instance = IsInInstance()
-			-- name, type, UID
+			-- this was hotfixed at some point during 12.0.5 to not error anymore, still returns useless secret values
 			if not instance then
+				-- name, type, UID
 				target, _, id = TooltipUtil.GetDisplayedUnit(self)
 			else
 				target, _, id = SafelyCheckTooltipForUnitInfo(self)
@@ -1121,7 +1138,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 					if knownSearchField == "currencyID" then
 						app.CallbackHandlers.DelayedCallback(RerenderCurrency, 0.05, self, ttId)
 					else
-						app.ReshowGametooltip()
+						app.ReshowGametooltip(self)
 					end
 				end
 				return true;

@@ -11,6 +11,61 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 		}),
 		n(QUESTS, {
+			header(HEADERS.Achievement, 61052, bubbleDownSelf({	-- Dust 'Em Off
+				["qg"] = 251259,	-- Mothkeeper Wew'tam
+				["coord"] = { 49.3, 54.3, MAP.MIDNIGHT.HARANDAR },
+				["timeline"] = { ADDED_12_0_7 },
+			}, {
+				-- Ordered by the Unlock progression
+				q(96498, {	-- Grovewarden's Kris
+					["description"] = "Unlocks after you have captured 10 Moths.",
+					["groups"] = { i(257155) },	-- Grovewarden's Kris (COSMETIC!)
+				}),
+				q(96499, {	-- Grovewarden's Dagger
+					["description"] = "Unlocks after you have captured 20 Moths.",
+					["groups"] = { i(263283) },	-- Grovewarden's Dagger (COSMETIC!)
+				}),
+				q(96500, {	-- Firm Haranir Pillow
+					["description"] = "Unlocks after you have captured 30 Moths.",
+					["groups"] = { i(264243) },	-- Firm Haranir Pillow (DECOR!)
+				}),
+				q(96501, {	-- Grovewarden's Rapier
+					["description"] = "Unlocks after you have captured 40 Moths.",
+					["groups"] = { i(257158) },	-- Grovewarden's Rapier (COSMETIC!)
+				}),
+				q(96502, {	-- Vivid Chloroceros
+					["description"] = "Unlocks after you have captured 50 Moths.",
+					["groups"] = { i(263580) },	-- Vivid Chloroceros (MOUNT!)
+				}),
+				q(96504, {	-- Warm Haranir Blanket
+					["description"] = "Unlocks after you have captured 60 Moths.",
+					["groups"] = { i(264245) },	-- Warm Haranir Blanket (DECOR!)
+				}),
+				q(96505, {	-- Grovewarden's Buckler
+					["description"] = "Unlocks after you have captured 70 Moths.",
+					["groups"] = { i(257159) },	-- Grovewarden's Buckler (COSMETIC!)
+				}),
+				q(96506, {	-- Grovewarden's Staff
+					["description"] = "Unlocks after you have captured 80 Moths.",
+					["groups"] = { i(263284) },	-- Grovewarden's Staff (COSMETIC!)
+				}),
+				q(96507, {	-- Haranir Reclined Bed
+					["description"] = "Unlocks after you have captured 90 Moths.",
+					["groups"] = { i(263038) },	-- Haranir Reclined Bed (DECOR!)
+				}),
+				q(96508, {	-- Grovewarden's Halberd
+					["description"] = "Unlocks after you have captured 100 Moths.",
+					["groups"] = { i(257161) },	-- Grovewarden's Halberd (COSMETIC!)
+				}),
+				q(96509, {	-- Grovewarden's Greatsword
+					["description"] = "Unlocks after you have captured 110 Moths.",
+					["groups"] = { i(263285) },	-- Grovewarden's Greatsword (COSMETIC!)
+				}),
+				q(96510, {	-- Elder Glowmite
+					["description"] = "Unlocks after you have captured 120 Moths.",
+					["groups"] = { i(222988) },	-- Elder Glowmite (MOUNT!)
+				}),
+			})),
 			header(HEADERS.Achievement, 41804, {	-- One Does Not Simply Walk Into Harandar
 				header(HEADERS.AchCriteria, 41804.01, {	-- Of Caves and Cradles
 					q(89402, {	-- Harandar
@@ -961,7 +1016,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(91875, {	-- Natural Remedy
 						["sourceQuests"] = { 91873 },	-- Buffer Zone
 						["provider"] = { "n", 252497 },	-- Hagar
-						["coord"] = { 42.4, 34.4, MAP.MIDNIGHT.HARANDAR },
+						["coord"] = { 42.3, 34.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(252649) },	-- Verdant Stalker Sludge (QI!)
 					}),
 					q(91874, {	-- Flare Up

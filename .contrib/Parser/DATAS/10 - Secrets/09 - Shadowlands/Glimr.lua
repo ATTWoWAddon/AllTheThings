@@ -1,10 +1,11 @@
 -------------------------------------------
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
-root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_1 } }, {
-	header(HEADERS.Spell, 329900, {	-- Glimr
+
+root(ROOTS.Secrets, expansion(EXPANSION.SL, {
+	header(HEADERS.Spell, 329900, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Glimr
 		["displayID"] = 96259,
-		["modelScale"] = 1.1,
+		["modelScale"] = .8,
 		["groups"] = {
 			q(60605, {	-- Glimmerfin Scale
 				["provider"] = { "o", 352909 },	-- Glimmerfin Scale
@@ -75,5 +76,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 		},
-	})
-})));
+	})),
+}));

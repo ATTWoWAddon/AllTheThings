@@ -216,7 +216,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- Without SpellID attached
 					i(137800),	-- Design: Dawnlight Band [Rank 1]
 					i(137799),	-- Design: Maelstrom Band [Rank 1]
-					i(141312),	-- Design: Mass Prospect Felslate
 					i(141311),	-- Design: Mass Prospect Leystone
 					i(137798),	-- Design: Prophetic Band [Rank 1]
 				})),

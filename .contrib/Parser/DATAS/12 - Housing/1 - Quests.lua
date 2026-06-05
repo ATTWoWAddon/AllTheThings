@@ -57,10 +57,11 @@ root(ROOTS.Housing, {
 				},
 			}),
 			q(92816, {	-- A Letter for Adventure
-				-- It seems most people are not getting this
-				-- Figure out lock criteria for this
 				["sourceQuests"] = { 94379 },	-- This Old Hearth
 				["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+				-- apparently only obtainable via an Exile's Reach character as first Housing Tutorial on BNet account...
+				["lockCriteria"] = { 1, "questID", 91863, "lvl", 60 },	-- My First House / 60
+				["customCollect"] = { "NPE" },
 				["groups"] = {
 					i(254504),	-- Adventuring Letter (QI!)
 				},

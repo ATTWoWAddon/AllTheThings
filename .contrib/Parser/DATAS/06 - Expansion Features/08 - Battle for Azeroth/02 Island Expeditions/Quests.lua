@@ -42,12 +42,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["DisablePartySync"] = true,
+				["lockCriteria"] = { 1, "questID", 51994 },	-- This HQT is likely the lock criterium according to Jewel
 			}),
 			q(53062, {	-- The Azerite Advantage (H)
 				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["DisablePartySync"] = true,
+				["lockCriteria"] = { 1, "questID", 51994 },	-- This HQT is likely the lock criterium according to Jewel
 			}),
 			q(53436, {	-- Azerite for the Alliance
 				["provider"] = { "n", 131290 },	-- Flynn

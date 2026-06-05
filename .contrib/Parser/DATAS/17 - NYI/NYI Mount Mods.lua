@@ -8,7 +8,6 @@ root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			-- With QuestID attached
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw (MM!)
-			i(196993),	-- Cliffside Wylderdrake: Sleek Horns (MM!)
 			i(192523),	-- Renewed Proto-Drake: Green Scales (MM!)
 			i(197356),	-- Renewed Proto-Drake: Hairy Back (MM!)
 			i(197354),	-- Renewed Proto-Drake: Horned Back (MM!)
@@ -41,10 +40,7 @@ root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 
 		-- 10.2.0
 		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor (MM!)
-			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor (MM!)
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales (MM!)
-			i(207777),	-- Grotto Netherwing Drake: Yellow Scales (MM!)
 		})),
 	}),
 	expansion(EXPANSION.TWW, {

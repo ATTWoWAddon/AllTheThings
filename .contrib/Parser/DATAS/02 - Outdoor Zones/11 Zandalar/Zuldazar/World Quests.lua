@@ -159,7 +159,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 45,
 				["groups"] = {
-					i(165877),	-- BOOM-O-MATIC 9000 (QI!)
+					o(311900, {	-- BOOM-O-MATIC 9000
+						["coords"] = { 76.8, 48.9, ZULDAZAR },
+						["groups"] = { i(165877) },	-- BOOM-O-MATIC 9000 (QI!)
+					}),
+
 				},
 			}),
 			q(53327, {	-- Hardened Monelite

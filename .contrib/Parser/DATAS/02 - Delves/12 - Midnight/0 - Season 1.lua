@@ -74,6 +74,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(61797, {	-- My Shady Nemesis
 								i(263413),	-- Nullaeus Domaneye
 							}),
+							i(262391),	-- Ominous Domanus (PET!)
 						},
 					}),
 					n(252892, {	-- Nullaeus ??
@@ -91,6 +92,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(61798, {	-- Lighting the Dark
 								title(688),	-- <Name> the Ominous
 							}),
+							i(262391),	-- Ominous Domanus (PET!)
 						},
 					}),
 				},
@@ -126,7 +128,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				-- Currently unaware of objectIDs so treated just as reward
 				i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
 				i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
-				i(253245),	-- Cracked Keystone (QI!/QS!)
+				i(253245),	-- Cracked Keystone (QI!/QS!/CI!)
 				i(268297),	-- Rattling Bag o' Gold
 				i(252415),	-- Trovehunter's Bounty
 				-- Blessings
@@ -211,13 +213,17 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["questID"] = 92887,
 					["isWeekly"] = true,
 					["cost"] = {{"i",253342,1}},	-- Beacon of Hope
+					["sym"] = {{"select","itemID",
+					--	264971,	-- Annihilation Rod (COSMETIC!)
+					--	264970,	-- Oblivion's Edge (COSMETIC!)
+						265368,	-- Twilight Destroyer (COSMETIC!)
+						265366,	-- Twilight Executioner (COSMETIC!)
+						265367,	-- Twilight Fang (COSMETIC!)
+					}},
 					["groups"] = {
+						i(262391),	-- Ominous Domanus (PET!)
 						i(264971),	-- Annihilation Rod (COSMETIC!)
 						i(264970),	-- Oblivion's Edge (COSMETIC!)
-						i(262391),	-- Ominous Domanus (PET!)
-						i(265368),	-- Twilight Destroyer (COSMETIC!)
-						i(265366),	-- Twilight Executioner (COSMETIC!)
-						i(265367),	-- Twilight Fang (COSMETIC!)
 					},
 				}),
 				--TODO Should these really be in the seasonal file vs the midnight delves file? Since when to objects change per season
@@ -273,7 +279,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							["cost"] = { { "c", UNDERCOIN, 5000 } },
 							--["questID"] = ???,
 						}),
-						i(263178, {	-- Delver's Starter Kit
+						i(263178, {	-- Delver's Starter Kit (CI!)
 							--["cost"] = { { "c", UNDERCOIN, 0 } },
 						}),
 						i(263188, {	-- Restored Coffer Key
@@ -319,10 +325,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							}),
 						}),
 						filter(MISC, {
-							i(263179, {	-- Delver's Cosmetic Surprise Bag
+							i(263179, {	-- Delver's Cosmetic Surprise Bag (CI!) [Contains any unlearned cosmetic from delves]
 								-- ["cost"] = { { "c", VOIDLIGHT_MARL, 0 } },
 								-- Renown 0?
-								-- Just sym the cosmetic header
 							}),
 							i(262951, {	-- Sin'dorei Gravestone (CI!)
 								["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
@@ -358,14 +363,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["groups"] = {
 			n(DELVES_MID_S1, {
 				-- Seasonal Delver's Journey Rewards
-				--q(92601),	-- pop after looting Cracked Keystone
 				--automated stuff
-				--q(93880),	-- Delver's Starter Kit (itemID 263178)
-				--q(93881),	-- Delver's Cosmetic Surprise Bag (itemID 263179)
 				--q(93882),	-- Restored Coffer Key (itemID 263188)
 				--q(93883),	-- Restored Coffer Key (itemID 263191)
-				--q(93859),	-- Sin'dorei Gravestone (itemID 262951)
-
 
 				--q(93686),	-- tiggered after a delve
 			}),

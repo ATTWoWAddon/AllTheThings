@@ -22,22 +22,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.2, 46.0, EYE_OF_AZSHARA },
 					}),
 				}),
-				n(RARES, {
-					n(111573, {	-- Kosumoth the Hungering
-						["description"] = "For a detailed explanation on how to get this world quest to be available, find |cFFFFD700Kosumoth the Hungering|r in the Secrets section of the ATT main list (type /att main, or click the minimap button).",
-						["questID"] = 45479,
-						["groups"] = {
-							q(43798, {	-- DANGER: Kosumoth the Hungering
-								["sourceQuest"] = 43761,	-- Step 12: Hungering Orb
-								["repeatable"] = true,
-								["groups"] = {
-									i(140261),	-- Hungering Claw (PET!)
-									i(138201),	-- Fathom Dweller (MOUNT!)
-								},
-							}),
-						},
-					}),
-				}),
 				n(WORLD_QUESTS, {
 					q(43805, {	-- Aquatic Assassination
 						["isWorldQuest"] = true,

@@ -75,11 +75,14 @@ local function PlotCachedCoords()
 					if first then
 						local sourcePath = app.GenerateSourceHash(first);
 						for i=2,#root,1 do sourcePath = sourcePath .. ";" .. app.GenerateSourceHash(root[i]); end
+						-- app.PrintDebug("plot.sourcePath",sourcePath,app.WOWAPI.issecretvalue(sourcePath))
+						-- app.PrintDebug("plot.title",first.text,app.WOWAPI.issecretvalue(first.text))
+						local isSecret = app.WOWAPI.issecretvalue(first.text)
 						TomTom:AddWaypoint(mapID, xnormal, y / 1000, {
 							from = "ATT",
 							persistent = true,
 							sourcePath = sourcePath,
-							title = (first.text or RETRIEVING_DATA)
+							title = (isSecret and EVENTTRACE_SECRET_FMT:format(NAME)) or first.text or RETRIEVING_DATA
 						}, root);
 					end
 				end

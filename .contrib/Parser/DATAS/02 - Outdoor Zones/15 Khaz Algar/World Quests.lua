@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 		}),
 		i(245653, {	-- Coffer Key Shard (Season 3)
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
+			["timeline"] = { ADDED_11_2_0 },
 		}),
 		currency(RESTORED_COFFER_KEY, {
 			["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH },

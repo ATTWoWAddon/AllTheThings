@@ -2213,7 +2213,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, i(251987)),	-- Wildstalker's Hunting Quiver
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.67314", "removed 12.0.5.99999" } }, {	-- TODO: Timeline out correctly
+		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.67314", "removed 12.0.5.67823" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(268445),	-- Ensemble: Pyrewood Rebel Streetwear
 			}),
@@ -2255,6 +2255,48 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(268831)), -- Stylish Black Cap
 				traderstender(50, i(268832)), -- Stylish Brown Top Hat
 				traderstender(100, i(210856)), -- Trader's Faded Sarong
+			}),
+		})),
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.67823", "removed 12.0.5.99999" } }, {	-- TODO: Timeline out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(268876),	-- Flame-Painted Sun Roc (MOUNT!)
+			}),
+			filter(MOUNTS, {
+				traderstender(700, i(238941)),	-- Coldflame Cormaera (MOUNT!)
+				traderstender(700, i(268877)),	-- Dusk-Painted Sun Roc (MOUNT!)
+				traderstender(325, i(236415)),	-- Reins of the Spotted Black Riding Goat (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(250, i(72153)),	-- Sand Scarab (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(100, i(228764)), -- Classic Sunny Tabard
+				traderstender(50, i(270297)), -- Crown of Sunny Springflowers
+				traderstender(260, i(268897)), -- Duskrunner's Flamebrand
+				traderstender(230, i(268901)), -- Duskrunner's Torchblade
+				traderstender(230, i(268909)), -- Duskrunner's Totemic Edge
+				traderstender(260, i(268905)), -- Duskrunner's Totemic Greataxe
+				traderstender(350, iensemble(268893)), -- Ensemble: Duskrunner's Guiding Totems
+				traderstender(675, iensemble(268693)), -- Ensemble: Duskrunner's Painted Battle Garb
+				traderstender(550, iensemble(238438)), -- Ensemble: Lavaborn Battleplate
+				traderstender(100, iensemble(258021)), -- Ensemble: Sorcerer's Sunny Garb
+				traderstender(350, iensemble(268894)), -- Ensemble: Sunbringer's Guiding Totems
+				traderstender(675, iensemble(268743)), -- Ensemble: Sunbringer's Painted Battle Garb
+				traderstender(100, iensemble(242492)), -- Ensemble: Sunny Sweatsuit
+				traderstender(200, i(238894)), -- Lavaborn Barb
+				traderstender(200, i(238399)), -- Lavaborn Ruby's Edge
+				traderstender(300, i(238950)), -- Molten Inferno Helm
+				traderstender(150, i(238953)), -- Red Flame Burner
+				traderstender(260, i(268898)), -- Sunbringer's Flamebrand
+				traderstender(230, i(268902)), -- Sunbringer's Torchblade
+				traderstender(230, i(268910)), -- Sunbringer's Totemic Edge
+				traderstender(260, i(268906)), -- Sunbringer's Totemic Greataxe
+				traderstender(30, i(262854)), -- Sunny Dunecloth Belt
+				traderstender(35, i(262836)), -- Sunny Dunecloth Skirt
+				traderstender(35, i(262872)), -- Sunny Dunecloth Vest
+				traderstender(50, i(252752)), -- Sunny Winter Toque
+				traderstender(245, i(237856)), -- Sunwell Bardiche
+				traderstender(50, i(235036)), -- Vigilante's Sunny Mask
 			}),
 		})),
 	}),

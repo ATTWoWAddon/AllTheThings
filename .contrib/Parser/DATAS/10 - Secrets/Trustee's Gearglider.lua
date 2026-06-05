@@ -1,7 +1,7 @@
 -------------------------------------------
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
--- This really doesn't feel like it needs its own file
+
 root(ROOTS.Secrets, header(HEADERS.Item, 186639, {	-- Xy Trustee's Gearglider
 	["description"] = "You can use one Cartel Deal per week on your account, across three weeks, equip the granted title then collect each dead drop within Manaforge Omega (Any difficulty) then return to the quartermaster for a new quest awarding your mount.",
 	["minReputation"] = { FACTION_MANAFORGE_VANDALS, 8 },

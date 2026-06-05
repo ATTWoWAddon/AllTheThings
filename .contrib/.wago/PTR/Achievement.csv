@@ -13114,7 +13114,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Raise two primary professions within the Midnight category to maximum skill.","Thalassian Artisan",,61439,-1,-1,61438,169,2,10,131072,27,132281,0,218285,0,0,0,0
 "Raise five primary professions within the Midnight category to maximum skill.","Thalassian Polymath","Reward: Finery Funds",61440,-1,-1,61439,169,5,30,136192,28,3622200,0,218297,0,0,0,0
 "Raise all primary professions within the Midnight category to maximum skill.","Working WAY Past Midnight",,61441,-1,-1,61440,169,0,50,143360,29,7548930,0,218309,0,0,0,0
-"Complete the Loa Lorewalking Campaign.","Lorewalking: The Loa","Decor Reward: Tome of Kings",61442,-1,-1,0,15552,0,5,131072,2,2446017,271971,218328,0,0,0,0
+"Complete the Loa Lorewalking Campaign.","Lorewalking: The Loa","Decor Reward: Tome of Kings",61442,-1,-1,0,15552,0,5,131072,2,2446017,0,218328,0,0,0,0
 "Earn 2500 Conquest on this character during Midnight Season 1.","Galactic Weapons of Conquest","Item Reward: Galactic Gladiator's Weapon Token (x2)",61443,-1,-1,0,15270,0,0,33554432,525,1594747,0,218352,0,0,0,0
 ,"Vicious Saddle (43)",,61444,-1,1,42123,15270,0,0,1179648,139,1379171,103533,218377,0,0,0,0
 ,"Vicious Saddle (43)",,61445,-1,0,42124,15270,0,0,1179648,72,1379171,103533,218379,0,0,0,0
@@ -13129,7 +13129,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Chimaerus after plucking all Corrupted Feathers from Sergeant Quackers and rescuing him from the Aln in The Dreamrift on Normal difficulty or higher.","Falling Between The Quacks",,61454,2939,-1,0,15566,0,10,0,28,4048814,0,218528,0,0,0,0
 "Find all of the Shadowpine Songseekers in Zul'aman.","Shadowpine Scattered",,61455,-1,-1,0,15553,0,5,131072,39,6119037,0,218534,0,0,0,0
 ,"Die in Lordaeron or Undercity",,61456,-1,-1,0,15522,0,0,1048576,2,136243,0,218541,0,0,0,0
-"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways V event.","Master of the Turbulent Timeways V","Mount: Spawn of Vyranoth",61463,-1,-1,0,15454,0,20,131072,5,609811,258884,218588,0,0,0,0
+"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways V event.","Master of the Turbulent Timeways V","Mount: Spawn of Vyranoth",61463,-1,-1,0,15454,0,0,131072,5,609811,258884,218588,0,0,0,0
 "Complete the Sparks of War quest in Midnight 5 times.","Spark in the Night",,61464,-1,-1,0,15283,0,5,131072,2,132147,0,218749,0,0,0,0
 "Complete the Sparks of War quest in Midnight 20 times.","Spark in the Night",,61465,-1,-1,61464,15283,0,10,131072,3,132147,0,218754,0,0,0,0
 "Defeat 15 Challenge Card exclusive bosses.","The Best There Is",,61466,-1,-1,0,15567,0,10,131072,3,1036482,0,218765,0,0,0,0
@@ -13712,7 +13712,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the quest The Omnium Reawakens.","The Sunstrider Omnium",,62606,-1,-1,0,15610,0,10,131072,48,632353,0,225744,0,0,0,0
 "Complete the quest Seeking Knowledge: Ritualized Arcana.","Ritualized Arcana",,62607,-1,-1,0,15610,0,0,1179648,50,7439232,0,225746,0,0,0,0
 "Complete the quest Seeking Knowledge: Leyline Assaults.","Leyline Assaults",,62608,-1,-1,0,15610,0,0,1179648,51,7439213,0,225748,0,0,0,0
-"Complete the quest Seeking Knowledge: Magical Primeessence.","Magical Primeessence",,62609,-1,-1,0,15610,0,0,1179648,52,2011125,0,225750,0,0,0,0
+"Complete the quest Seeking Knowledge: Magical Primessence.","Magical Primessence",,62609,-1,-1,0,15610,0,0,1179648,52,2011125,0,225750,0,0,0,0
 "Complete the quest Seeking Knowledge: Off-World Magic.","Off-World Magic",,62610,-1,-1,0,15610,0,0,1179648,53,236855,0,225752,0,0,0,0
 ,"[DNT] Midnight Epic Edition Decor",,62612,-1,-1,0,15268,0,0,3276804,95,136243,0,225372,0,0,0,0
 "Complete the Midnight storylines listed below.","Allied Race: Haranir (copy)","Reward: Haranir Race Unlocked",62620,-1,-1,0,15547,0,0,1048580,13,7448213,0,225376,0,0,0,0
@@ -13802,11 +13802,9 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 ,"[DNT]Midnight Keystone Myth: Season One Personal Achievement",,63263,-1,-1,0,15272,0,0,9437188,227,136243,0,228514,0,0,0,0
 "Complete the following achievements:","Heroic Showdowns",,63264,-1,-1,0,15610,0,15,196608,37,255347,0,229642,0,0,0,0
 "Defeat a world boss in Naigtal or Val.","Heroic Tendencies","Unlocks Heroic World Tier for Naigtal and Val",63323,-1,-1,0,15610,0,10,131072,36,236497,0,229215,0,0,0,0
-"Earn 5 Motes of Omnial Inquiry to use in the Omnium Folio.
-
-Additional decor available from Rae'ana in Silvermoon City.","Omnium Folio Studies","Decor Reward: Sunstrider Omnium Simulacrum",63325,-1,-1,0,15610,0,10,131072,49,7549225,0,229349,0,0,0,0
-"Defeat 15 rare creatures found in Val or Naigtal on Heroic World Tier.","Heroic Slugger",,63348,-1,-1,0,15610,0,5,196608,39,4554456,0,229606,0,0,0,0
-"Kill 100 enemies while controlling the Ultradon Slayer on the World Quest Until it is Done on Val.","Ultradon Carnage","Pet Reward: Unlock Frosticus Maxiums for purchase",63349,-1,-1,0,15610,0,10,131072,31,7388252,0,229776,0,0,0,0
+"Earn 5 Motes of Omnial Inquiry to use in the Omnium Folio.","Omnium Folio Studies","Decor Reward: Sunstrider Omnium Simulacrum",63325,-1,-1,0,15610,0,10,131072,49,7549225,0,229349,0,0,0,0
+"Defeat 15 rare creatures found in Val or Naigtal on Heroic World Tier.","Heroic Slugger",,63348,-1,-1,0,15610,0,5,131072,39,4554456,0,229606,0,0,0,0
+"Kill 100 enemies while controlling the Ultradon Slayer on the World Quest Until it is Done on Val.","Ultradon Carnage","Pet Reward: Unlock Frosticus Maximus for purchase",63349,-1,-1,0,15610,0,10,131072,31,7388252,0,229776,0,0,0,0
 "Complete the introduction quest lines for Naigtal and Val.","Into the Stars",,63383,-1,-1,0,15610,0,5,0,32,2065615,0,229858,0,0,0,0
 "Complete the following quests on Val and Naigtal.","Prepared for a Showdown",,63384,-1,-1,0,15610,0,5,0,33,132594,0,229865,0,0,0,0
 "Complete the following quest lines on Naigtal.","A Hal'hadar Walks into a Swamp",,63385,-1,-1,0,15610,0,10,0,34,1711338,0,229872,0,0,0,0

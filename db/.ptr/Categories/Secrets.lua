@@ -4,8 +4,83 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cq,crit,de,en,h,hqt,i,m,mnt,n,o,p,prof,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Secrets=
 h(-50,{SortPriority=65,g={
-x(7,{awp=70300,g={
-ah(254763,{description="This secret is a prerequisite for Baa'l. It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a Rare Elite in Antoran Wastes.",displayID=76829,lore="Uuna was found bound to an Ur'zul, and was released into the Shadowlands, where she wandered in the utter darkness.",modelScale=1.1,type="s",g={
+x(7,{
+ah(111573,{awp=70003,description="***Quest tracking enabled is required to see all the steps.***\n\nThis will show you how to unlock |cFFFFD700Kosumoth the Hungering|r, which has a world quest that awards the |cFFFFD700Hungering Claw|r pet or the |cFFFFD700Fathom Dweller|r mount.",displayID=71850,type="n",g={
+h(-56,{
+n(102695,{coords={
+[646]={{37.2,71.8}}},description="|cFFFFFFFFStep 1:|r Head to |cFFFFFFFF37.2, 71.8|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffThe demons are taking over this island, you may want to leave.|r \n\nChoose option 1 again. \n\n|cffcc33ffYou must know much. Will you help us defeat them?|r \n\nHe tells you to go away.",questID=43715}),
+o(252412,{coords={
+[646]={{57.4,55.9},{58.5,54}}},description="|cFFFFFFFFStep :2|r Head to the |cFFFFD700Feldust Cavern|r at |cFFFFFFFF58.56, 53.99|r. Walk inside to |cFFFFFFFF57.45, 55.95|r and click the |cFFFFD700Mound of Dirt|r to loot the |cFFFFD700Weathered Relic|r\n\nHead back to |cFFFFFFFF37.17, 71.82|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffDo you recognize this relic?|r \n\nSpeak to him again and choose option 1. \n\n|cffcc33ffTell me of these whispers.|r\n\nSpeak to him again and choose option 1.\n\n|cffcc33ffDrak'thul?|r.\n\nSpeak to him again and choose option 1. \n\n|cffcc33ffYou are yourself again. What happened?|r \n\nSpeak to him again and he will tell you to go away",model=658558,modelScale=0.5,questID=43729,sourceQuests={43715}}),
+o(252557,{coords={
+[630]={{37.9,37.4}}},description="|cFFFFFFFFStep 3:|r This step will send you to |cFFFFD700Azsuna|r. Head to |cFFFFFFFF37.96, 37.41|r, walk down into the cave and click on the purple |cFFFFD700Hungering Orb|r in the fountain.",model=249664,modelScale=2,questID=43730,sourceQuests={43729}}),
+o(252558,{coords={
+[634]={{32.9,75.9}}},description="|cFFFFFFFFStep 4:|r This step will send you to |cFFFFD700Stormheim|r. Head to |cFFFFFFFF32.92, 75.90|r, walk into the cave and make sure to avoid the |cFFFFD700Kangaxx|r. Click on the |cFFFFD700Hungering Orb|r at the back of the cave in the sack of scrolls.",model=249664,modelScale=2,questID=43731,sourceQuests={43730}}),
+o(252559,{coords={
+[641]={{41.5,81.1}}},description="|cFFFFFFFFStep 5:|r This step will send you to Val'sharah|r. Head to |cFFFFFFFF41.51, 84.18|r, walk into the cave and take a left to see a table with a note on it. Turn left and walk over the rocks, turn back right and kill the |cFFFFD700Arcane Servitor|r. Click the |cFFFFD700Hungering Orb|r sitting on the ground between two sleeping pads.",model=249664,modelScale=2,questID=43732,sourceQuests={43731}}),
+o(252560,{coords={
+[646]={{29.2,78.5}}},description="|cFFFFFFFFStep 6:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Broken Shore|r. Head to |cFFFFFFFF29.16, 78.57|r, swim down and the cave is under the rock ledge. Walk forward avoiding the steam explosions and click on the |cFFFFD700Hungering Orb|r sitting under a leanto in some leaves.\n\n|cffcc33ffNote: Be careful not to die to fatigue, fatigue will stop once in the cave.|r",model=249664,modelScale=2,questID=43733,sourceQuests={43732}}),
+o(252561,{coords={
+[630]={{59.3,13.1}}},description="|cFFFFFFFFStep 7:|r This step will send you to |cFFFFD700Azsuna|r. Head to |cFFFFFFFF59.37, 13.13|r, walk down into the cave and click on the |cFFFFD700Hungering Orb|r that is wrapped in stone beside a broken table.",model=249664,modelScale=2,questID=43734,sourceQuests={43733}}),
+o(252562,{coords={
+[619]={{67.3,14.7}}},description="|cFFFFFFFFStep 8:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Stormheim|r. Head to the |cFFFFD700Shield's Rest|r flight point. Fly northwest until you see a broken statue with a large axe in the water named |cFFFFD700Sotnar's Rest|r. Swim down where the hand comes out of the water between the 2 jutting  stones and you should see a |cFFFFD700Toothless Great White|r. Swim down beneath the shark and turn into the opening then swim up into the cave. Avoid the steam explosions and click on the |cFFFFD700Hungering Orb|r.",model=249664,modelScale=2,questID=43735,sourceQuests={43734}}),
+o(252563,{coords={
+[650]={{55.8,38.4}}},description="|cFFFFFFFFStep 9:|r This step will send you to |cFFFFD700Highmountain|r. Head to |cFFFFFFFF55.84, 38.47|r. This cave is to the right of the main cave here through the bushes. Click on the |cFFFFD700Hungering Orb|r that is under the dead animal skull on the ground.",model=249664,modelScale=2,questID=43736,sourceQuests={43735}}),
+o(252564,{coords={
+[630]={{54,26.1}}},description="|cFFFFFFFFStep 10:|r This step will send you to |cFFFFD700Azsuna|r. Head to |cFFFFFFFF54.02, 26.18|r, walk down into the cave and click the |cFFFFD700Hungering Orb|r that is under the plant next to the second pillar.",model=249664,modelScale=2,questID=43737,sourceQuests={43736}}),
+o(252565,{coords={
+[790]={{79.5,89.3}}},description="|cFFFFFFFFStep 11:|r This step will send you to |cFFFFD700Eye of Azshara|r, the zone. Head to |cFFFFFFFF79.52, 89.31|r. Swim down to find a wrecked ship, you can swim into the ship between the anchor and the rock throught the seaweed. Swim up and to the platform above and through the hole on right side. Now swim through the seaweed hole on left and down. Turn around and swim under the beam then through the seaweed to the left. Click the  |cFFFFD700Hungering Orb|r that is on the right side in the water.",model=249664,modelScale=2,questID=43760,sourceQuests={43737}}),
+o(252434,{coords={
+[646]={{37.1,71.8}}},description="|cFFFFFFFFStep 12:|r This step will send you to |cFFFFD700Broken Shore|r. Head to |cFFFFFFFF37.17, 71.82|r. Click the |cFFFFD700Hungering Orb|r that is on the stone table near |cFFFFD700Drak'Thul|r",model=249664,modelScale=2,questID=43761,sourceQuests={43760}})}),
+h(-46,{
+n(111573,{maps={790},questID=45479,g={
+q(43798,{repeatable=1,sourceQuests={43761},g={
+p(1926,{b=1,itemID=140261,npcID=111984,spellID=223027}),
+mnt(223018,{b=1,itemID=138201,lvl=10}),
+crit(33774,{achID=11189,id=132})}})}})})}}),
+ah(247402,{awp=70300,description="***Quest tracking enabled is required to see all the steps.***",displayID=78092,modelScale=0.8,type="s",g={
+o(270855,{coords={
+[627]={{50.6,54.1}}},description="|cFFFFFFFFStep 1:|r Go to |cFFFFFFFF50.6, 54.1|r in Broken Isles Dalaran. On the second floor of |cFFFFD700Curiosities & Moore|r you will see a table with three chairs. An |cFFFFD700Inconspicuous Note|r will be on the table. Click it. The note reads...\n\n|cFFFFFFFFIt begins in the 2104059.|r\n|cFFFFFFFFWith a most pleasing sign.|r\n|cFFFFFFFF(These letters will not always rhyme.)|r\n",model=1661948,questID=47826}),
+o(272039,{coords={
+[120]={{41.5,17.9}}},description="|cFFFFFFFFStep 2:|r This step requires visiting |cFFFFD700Ulduar|r. Head to |cFFFFD700XT-002 Deconstructor's|r room. Go to the trash pile in the upper-left corner of the map. You will see a broken body with blue legs on the ground. Look directly above it and you will see a head with a |cFFFFD700Rusty Lever|r. Click the lever to activate the lights in the middle of the Scrapyard. Click each light in the pattern below.\n\n0 = OFF     |cffcc33ff1|r = ON\n\n0 0 0 0 0 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 0 0 0 0 0 \n0 0 0 0 |cffcc33ff1|r 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 |cffcc33ff1|r 0 0 0 0 \n0 0 0 |cffcc33ff1 1 1|r 0 |cffcc33ff1 1 1 1 1 1|r 0 |cffcc33ff1 1 1|r 0 0 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 0 \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n0 0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 0 0 |cffcc33ff1 1 1|r 0 |cffcc33ff1 1 1 1 1 1|r 0 |cffcc33ff1 1 1|r 0 0 0 \n0 0 0 0 |cffcc33ff1|r 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 |cffcc33ff1|r 0 0 0 0 \n0 0 0 0 0 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 0 0 0 0 0 \n\nOnce you have turned on all the necessary lights, the next |cFFFFD700Inconspicuous Note|r will spawn in the middle. Click it. The note reads...\n\n|cFFFFFFFF1000 years imprisoned.|r\n|cFFFFFFFFSurely it wears on the mind.|r\n",model=1661948,questID=47837,sourceQuests={47826}}),
+o(272046,{coords={
+[327]={{46.76,7.53}}},description="|cFFFFFFFFStep 3:|r This step requires visiting |cFFFFD700Temple of Ahn'Qiraj|r. Go all the way through the instance, past |cFFFFD700C'thun|r's room into the room with three vendors. Once you see the three vendors, go up the stairs and you will see a table that has a glowing |cFFFFD700Mind Larva|r on it. Click the |cFFFFD700Mind Larva|r to activate a game similar to the |cFFFFD700Jewelcraft|r toy.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface and then scroll into first-person view. You can also use the right mouse button to turn your character around for easier viewing.|r\n\nYou need to play until you can line up five brains horizontally or vertically, or until you reach an unknown point cap. Just keep playing, and you'll eventually trigger it.|r\n",model=202390,questID=47840,sourceQuests={47837}}),
+o(272061,{coords={
+[207]={{58.2,25.5}}},description="|cFFFFFFFFStep 4:|r The next |cFFFFD700Inconspicuous Note|r will spawn on the table. Click it. The note reads...\r\r|cFFFFFFFFDeeper than deep.|r\r|cFFFFFFFFAwaits your seat.|r\n",model=1661948,questID=47841,sourceQuests={47840}}),
+o(272163,{coords={
+[207]={{58.3,25.6},{63.7,22.6}}},cost={{"i",10025,1}},description="|cFFFFFFFFStep 5:|r First, obtain a |cFFFFD700Shadoweave Mask|r. |cffcc33ffNote: You will need the actual item; it cannot be transmogged on your character.|r\n\nThis step requires visiting Deepholm. Take the |cFFFFD700Therazane's Throne|r portal if it is available; otherwise, fly to |cFFFFFFFF58.3, 25.6|r and you will see a cave opening to |cFFFFD700Crumbling Depths|r.\n\nOnce you are in the cave, mount up and go past the |cFFFFD700Colossal Gyreworm|r into the next section of the cavern. Go to the big grey rock in the center of the room at |cFFFFFFFF63.7, 22.6|r and you will see a |cFFFFD700Dark Fissure|r. Click it. Once you click it, a warning will pop up, saying: \n\n|cffcc33ff'WARNING: you are about to fall into a dark fissure. You may not be able to climb back out again. Are you very sure you want to do this?'|r\n\nOnce inside the fissure, you will see a chair. Go behind the chair and click on the |cFFFFD700Dingy Plaque|r. The plaque reads... \r\r|cFFFFFFFFSupremacy?|r\r|cFFFFFFFFGet...|r\r|cFFFFFFFFShirk...|r\r|cFFFFFFFF...eke...|r\r\rThis will spawn a |cFFFFD700Strange Skull|r on the seat of the chair. Equip the Shadoweave Mask and interact with the |cFFFFD700Strange Skull|r and you will see a purple explosion.|r\n",model=985300,questID=47849,sourceQuests={47841}}),
+o(272165,{coords={
+[641]={{66.5,36}}},description="|cFFFFFFFFStep 6:|r The next |cFFFFD700Inconspicuous Note|r spawns in front of the chair. Click it. The note reads...\r\r|cFFFFFFFFWhere the shaded delegate may appear.|r\n",model=1661948,questID=47850,sourceQuests={47849}}),
+o(272172,{coords={
+[30]={{30.11,74.64}}},description="|cFFFFFFFFStep 7:|r This step requires visiting |cFFFFD700Gnomeregan|r. \n\nNote: Horde players can easily get to Gnomeregan by taking the zeppelin from Orgrimmar and using the teleporter at Grom'gol Base Camp. Players of either faction who have done the Gnomeregan pet battle dungeon can be teleported there directly by speaking to |cff006812Manapoof|r in Broken Isles Dalaran or their BfA capital city.\n\nOnce inside the instance, go straight and jump down into the |cFFFFD700Hall of Gears|r. From here, take the winding hallway towards the |cFFFFD700Launch Bay|r. About halfway between the |cFFFFD700Launch Bay|r and |cff863325Crowd-Pummeler 9-60|r, there will be a plaque on the wall called |cFFFFD700Instructions|r and a set of 10 |cFFFFD700Numerical Consoles|r. Click the Instructions. They read:\n\n|cFFFFFFFF0111011 00100 10010110 1010|r\n|cFFFFFFFF11110111 01100 01111111 01000|r\n|cFFFFFFFF01101011100101 1010010110 10111101|r\n|cFFFFFFFF11001 00111111 10010 01001001|r\n|cFFFFFFFF10000 011010010110100111010110|r\n|cFFFFFFFF01011011 11110 11110001 11111|r\n|cFFFFFFFF11100000 00010 11111111 01000|r\n|cFFFFFFFF10110111 10101 01111111 00001|r\n|cFFFFFFFF10101110 11111 00110000 01000|r\n|cFFFFFFFF101101010010101110010110|r\n\n|cFFFFFFFF180|r\n\n|cFFFFFFFF+1111111111|r\n\nSetting the consoles to |cFFFFFFFF1222176597|r will cause the fifth |cFFFFD700Inconspicuous Note|r to spawn.\n\n|cffcc33ffNote: You can use the following scripts as macros for 'up' and 'down,' respectively:|r\n|cffcc33ff/script SelectGossipOption(1)|r\n|cffcc33ff/script SelectGossipOption(2)|r\n\nClick it. The note reads...\n\n|cFFFFFFFFGames and toys are left behind.|r\n|cFFFFFFFFWhen you awaken screaming.|r\n",model=1661948,questID=47852,sourceQuests={47850}}),
+o(272181,{coords={
+[641]={{66,36.5}}},description="|cFFFFFFFFStep 8:|r This step requires visiting |cFFFFD700Val'sharah|r. Head to |cFFFFFFFF66.0, 36.5|r. Inside the house next to |cff863325Wraithtalon|r is a |cFFFFD700Nightmare Tumor|r. Click it to start the next puzzle.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface and then scroll into first-person view. You can also use the right mouse button to turn your character around for easier viewing.|r\n\nThis puzzle is similar to |cFFFFD700Blingtron's Circuit Design Tutorial|r or the ley line puzzles in |cFFFFD700Nazjatar|r.\n\nThe object of the puzzle is to untangle all of the lines so that none cross each other and turn blue. Once you complete it, another |cFFFFD700Inconspicuous Note|r will appear. Click it. The note reads...\r\r|cFFFFFFFFWhat you seek is buried within.|r\n",model=1661948,questID=47863,sourceQuests={47852}}),
+o(272220,{coords={
+[379]={{53.4,49}}},description="|cFFFFFFFFStep 9:|r This step requires visiting |cFFFFD700Kun-Lai Summit|r. Head to |cFFFFFFFF53.4, 49.0|r. This is the entrance to the |cFFFFD700Tomb of Secrets|r. At the very back of the tomb, there will be an |cFFFFD700Urn|r at the base of a tall Mogu statue. Click it.\r\r|cffcc33ffWARNING: You are about to consume the ashes of an evil sorcerer. There is no way to tell what will happen. Are you VERY sure you want to do this?|r\n\nYou will be teleported to the |cFFFFD700Endless Halls|r where you will have to figure a way out. \r\r1. (Optional) Download the addon |cFFFFFFFFLucid Nightmare Helper|r, which will help you with the endless maze by generating a map of the rooms as you go and letting you notate special things in each one.\n2. Each room in the Endless Halls is identical, but some doorways will be blocked by stones. \r3. Each room has an altar in the middle. The runes spawn on the altar and the orbs spawn on the torches to either side. \r4. Most rooms will have unlit torches and no rune. \r5. The goal is to find a colored orb and then take the orb to the corresponding rune. \r6. The colors are |cFFFFD700Red, Blue, Green, Yellow, and Purple|r. \r\r|cffcc33ffNotes:|r\n|cffcc33ff1. Do not try this close to server reset. It could easily take a couple of hours to complete.\n|cffcc33ff2.If you are struggling with the maze and want to reset it, you need to leave the area for one hour.|r\n\nOnce you match all the orbs and runes, walk through any doorway. In the next room, there will be another |cFFFFD700Inconspicuous Note|r on an altar. Click it. After you read it, turn around and walk up the stairs to exit the maze. The note reads...\n\n|cFFFFFFFFThe way is now open.|r\n|cFFFFFFFFTo the greatest secret never told.|r\n|cFFFFFFFFA fitting end to your journey.|r\n",model=1661948,questID=47881,sourceQuests={47863}}),
+o(272270,{coords={
+[42]={{39.8,73.6}}},description="|cFFFFFFFFStep 10:|r This step requires visiting |cFFFFD700Deadwind Pass|r. Head to |cFFFFFFFF39.8, 73.6|r, the entrance to the Forgotten Crypt.\n\nOnce inside, head down the stairs into the |cFFFFD700Well of the Forgotten|r. Head into the |cFFFFD700Pauper's Walk|r hallway and follow it into the |cFFFFD700Forgotten Crypt.|r\n\nTake a right and then another right back into |cFFFFD700Pauper's Walk|r, then take a right at the Y and walk down the spiral, back into the |cFFFFD700Forgotten Crypt|r.\nTake a left and another left into the |cFFFFD700Tomb of the Unrepentant.|r\nOpen the gate and fall down the hole to the right (just drop down one level, not two). Walk into |cFFFFD700The Pit of Criminals|r, and |cFFFFD700Puzzler's Desire|r is on top of the bone pile.\n\n|cffcc33ffNote: If you are on the Warlock Affiction artifact quest and can't see the Puzzler's Desire, then you will have to abandon the quest to solve the phasing issue.\n\nCongratulations on your mount!|r\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r for solving yet another puzzle.\n",model=942865,questID=47885,sourceQuests={47881},g={
+mnt(247402,{b=1,itemID=151623,lvl=10})}})}}),
+ah(243025,{awp=70200,description="***'Show All Trackable Things' is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",displayID=74314,modelScale=0.7,type="s",g={
+o(148502,{coords={
+[627]={{48.8,42.1}}},description="|cFFFFFFFFStep 1:|r We will begin in |cFFFFD700Dalaran|r. Head to the |cFFFFD700Legerdemain Lounge|r at |cFFFFFFFF48.80, 42.10|r. |cFFFFD700Page 9|r will be on the third shelf of the bookcase. Click this to continue. The page reads...\n\n|cFFFFFFFF...of sea, spirit and self...|r",model=305393,questID=45470}),
+o(209270,{coords={
+[47]={{49.2,34}}},description="|cFFFFFFFFStep 2:|r This step will take us to |cFFFFD700Duskwood|r. Head to |cFFFFFFFF49.25, 34.01|r. |cFFFFD700Page 78|r is found on the table beside the moonwell. Click this to continue. The page reads...\n\n|cFFFFFFFF...first of the lords to fall...|r",isWeekly=1,model=305393,questID=47207,sourceQuests={45470}}),
+o(245216,{coords={
+[198]={{47.3,78.1}}},description="|cFFFFFFFFStep 3:|r This step will take us to |cFFFFD700Firelands|r. |cFFFFD700Page 161|r will be found on the left rear side of the |cFFFFD700Ragnaros|r platform. Click this to continue. The page reads...\n\n|cFFFFFFFF...the wind, the eye...|r",isWeekly=1,model=305393,questID=47208,sourceQuests={47207}}),
+o(251564,{coords={
+[249]={{70.4,78.1}}},description="|cFFFFFFFFStep 4:|r This step will take us to |cFFFFD700Uldum|r. Head to |cFFFFFFFF70.44, 78.11|r. |cFFFFD700Page 655|r will be between the two small trees. Click this to continue. The page reads...\n\n|cFFFFFFFF...the plume, the tomb, a scarab moon...|r",isWeekly=1,model=305393,questID=47209,sourceQuests={47208}}),
+o(220821,{coords={
+[390]={{72.4,44.3}}},description="|cFFFFFFFFStep 5:|r This step will take us to |cFFFFD700Siege of Orgrimmar|r. This does not spawn on LFR. Head to the |cFFFFD700Sha of Pride|r room. |cFFFFD700Page 845|r is found in the far back left corner of the room (southwest on the minimap). Click this to continue. The page reads...\n\n|cFFFFFFFF...in snow, sand, and stone...|r",isWeekly=1,model=305393,questID=47210,sourceQuests={47209}}),
+o(220820,{coords={
+[71]={{64.7,49.9}},
+[75]={{22.9,64.4}}},description="|cFFFFFFFFStep 6:|r This step will take us to the |cFFFFD700Well of Eternity|r instance in |cFFFFD700Caverns of Time|r. Kill the first 2 bosses. Take the drake and when you are dropped off walk to the left to the stone stairs. |cFFFFD700Page 1127|r will be on the bottom stair next to a large stone divider. Click this to continue. The page reads...\n\n|cFFFFFFFF...behold the battle, unblinking...|r",isWeekly=1,model=305393,questID=47211,sourceQuests={47210}}),
+o(19023,{coords={
+[379]={{34.6,50.9}}},description="|cFFFFFFFFStep 7:|r This step will take us to |cFFFFD700Kun-Lai Summit|r near the |cFFFFD700Shado-Pan Monastery|r. Head to |cFFFFFFFF34.61, 50.88|r. |cFFFFD700Page 2351|r will be between the statue's paws on the platform. Click this to continue. The page reads...\n\n|cFFFFFFFF...bejeweled watcher...|r",isWeekly=1,model=305393,questID=47212,sourceQuests={47211}}),
+o(244678,{coords={
+[249]={{76.4,53.6}}},description="|cFFFFFFFFStep 8:|r This step will take us to |cFFFFD700Uldum|r. Head to |cFFFFFFFF76.45, 53.67|r. |cFFFFD700Page 5555|r will be on the platform slightly offcenter in front of the left foot of the statue. Click this to continue. The page reads...\n\n|cFFFFFFFF...ray of sunshine...|r",isWeekly=1,model=305393,questID=47213,sourceQuests={47212}}),
+o(269830,{coords={
+[52]={{30.5,27.5}}},description="|cFFFFFFFFStep 9:|r This step will take us to |cFFFFD700Westfall|r. Head to |cFFFFFFFF30.53, 27.56|r. |cFFFFD700Gift of the Mind-Seekers|r will be on the ground here in a broken boat. Click this to obtain your mount. Congratulations on getting the |cFFFFD700Riddler's Mind-Worm|r.\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving this puzzle.",isWeekly=1,model=942865,questID=47214,sourceQuests={47213},g={
+mnt(243025,{b=1,itemID=147835,lvl=10})}})}}),
+ah(254763,{awp=70300,description="This secret is a prerequisite for Baa'l. It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a Rare Elite in Antoran Wastes.",displayID=76829,lore="Uuna was found bound to an Ur'zul, and was released into the Shadowlands, where she wandered in the utter darkness.",modelScale=1.1,type="s",g={
 q(50098,{description="1. Summon Uuna and wait for her to say one of the following lines:\n'|cffffffffMama? Mama! Why is it so dark? It's scary here...|r'\n'|cffffffffCan anybody hear me?|r'\n'|cffffffffC-c-cold...|r'\n",icon=134506,g={
 q(50099,{description="2. |cffffffff/whistle|r at Uuna.\n",sourceQuests={50098}}),
 q(50100,{description="3. When she asks you questions, |cffffffff/roar|r at her.\n",sourceQuests={50098}}),
@@ -42,207 +117,42 @@ q(50146,{coords={
 [33]={{37.5,67.4}},
 [36]={{21.1,38.4}}},icon=134506,sourceQuests={50145}}),
 q(50147,{coords={
-[539]={{70.7,46.7}}},icon=134506,sourceQuests={50146}})})}})}}),
-x(8,{awp=80001,g={
-ah(277461,{description="***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",displayID=80456,modelScale=1.1,type="s",g={
+[539]={{70.7,46.7}}},icon=134506,sourceQuests={50146}})})}})}),
+x(8,{
+ah(277461,{awp=80001,description="***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",displayID=80456,modelScale=1.1,type="s",g={
 q(52819,{coords={
 [863]={{51.8,59}}},description="|cFFFFFFFFStep 1:|r Head to Nazmir. The note is high up on the side of the temple in the middle of the zone. If you don't have flying, you can access the top of the temple via a bridge that starts at |cFFFFFFFF46.3, 53.9|r.\n\nThe note reads: \"Begin at the beginning\"\n",providers={{"o",293849}}}),
 o(293837,{coords={
 [646]={{37.5,71.6}}},description="|cFFFFFFFFStep 2:|r Head to Broken Shore. At the coordinates provided, there is a small stone table with various non-interactable objects — some candles, parchment, a quill, a purple crystal ball, and some scattered grey pebbles. One of the pebbles is pale, almost the same color as the table, and it's the only thing on the table you can interact with. You may need to zoom in to see it.\n\nThe text reads: \"<An ordinary pebble, unremarkable in every way.>\"\n",modelScale=0.5,questID=52809,sourceQuests={52819}}),
 o(293838,{coords={
-[1161]={{49.7,40}}},description="|cFFFFFFFFStep 3:|r Head to Boralus. At the coordinates provided, there is a raised piece of dock with a horse, an NPC named Chance Cogswaddle, and a mechanical contraption called a Homing Copter. Hop down from the dock and go underneath it — there's a net that looks like it will block your path, but you can walk through it.\n\nWalk forward once you're underneath the dock and you'll pass through a sheet of seaweed and descend into a cave. The pebble you're looking for is tiny and pale and located close to the middle of the cave, around |cFFFFFFFF44.7, 38.5|r.\n\nThere's no text when you click on this one, but if you shift+click anywhere in the ATT mini or main list this step should get checked off your to-do list.\n",modelScale=0.5,questID=52810,sourceQuests={52809}}),
+[1161]={{47.7,38.5},{49.7,40}}},description="|cFFFFFFFFStep 3:|r Head to Boralus. At the coordinates provided, there is a raised piece of dock with a horse, an NPC named Chance Cogswaddle, and a mechanical contraption called a Homing Copter. Hop down from the dock and go underneath it — there's a net that looks like it will block your path, but you can walk through it.\n\nWalk forward once you're underneath the dock and you'll pass through a sheet of seaweed and descend into a cave. The pebble you're looking for is tiny and pale and located close to the middle of the cave, around |cFFFFFFFF44.7, 38.5|r.\n\nThere's no text when you click on this one, but if you shift+click anywhere in the ATT mini or main list this step should get checked off your to-do list.\n",modelScale=0.5,questID=52810,sourceQuests={52809}}),
 o(293839,{coords={
-[862]={{31.5,36}}},description="|cFFFFFFFFStep 4:|r Head to Zuldazar. The next pebble is hidden in a cave behind Atal'dazar (not inside the instance itself). You can get there without flying, but it's tricky and will probably require a Goblin Glider — if you haven't unlocked flying, you can find video guides online showing you how to navigate to the correct area. If you do have flying, simply fly to the coordinates provided, and once you get there you'll see the tops of a couple trees on the side of the mountain. Underneath the trees you'll find a cave entrance.\n\nRun into the cave, and on the left-hand side you'll see a root growing up against the cave wall. The pebble is right next to it, around |cFFFFFFFF31.9, 35.3.|r\n\nAgain, there's no text when you click on it, so shift+click anywhere in an ATT list to refresh your collection.\n",modelScale=0.5,questID=52818,sourceQuests={52810}}),
+[862]={{31.5,36},{31.9,35.3}}},description="|cFFFFFFFFStep 4:|r Head to Zuldazar. The next pebble is hidden in a cave behind Atal'dazar (not inside the instance itself). You can get there without flying, but it's tricky and will probably require a Goblin Glider — if you haven't unlocked flying, you can find video guides online showing you how to navigate to the correct area. If you do have flying, simply fly to the coordinates provided, and once you get there you'll see the tops of a couple trees on the side of the mountain. Underneath the trees you'll find a cave entrance.\n\nRun into the cave, and on the left-hand side you'll see a root growing up against the cave wall. The pebble is right next to it, around |cFFFFFFFF31.9, 35.3.|r\n\nAgain, there's no text when you click on it, so shift+click anywhere in an ATT list to refresh your collection.\n",modelScale=0.5,questID=52818,sourceQuests={52810}}),
 o(293840,{coords={
-[896]={{35,54.9}}},description="|cFFFFFFFFStep 5:|r Head to Drustvar. At the coordinates provided, there is a cave entrance hidden behind a narrow waterfall. If you don't have flying, you'll have to fall or glide down to it from the cliffs above.\n\nHead all the way to the back of the cave. The pebble is hidden inside the skull on the effigy, behind the left eye socket (the right-hand side when you're facing the effigy).\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52817,sourceQuests={52818}}),
+[896]={{35,54.9},{36.3,53.8}}},description="|cFFFFFFFFStep 5:|r Head to Drustvar. At the coordinates provided, there is a cave entrance hidden behind a narrow waterfall. If you don't have flying, you'll have to fall or glide down to it from the cliffs above.\n\nHead all the way to the back of the cave. The pebble is hidden inside the skull on the effigy, behind the left eye socket (the right-hand side when you're facing the effigy).\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52817,sourceQuests={52818}}),
 o(293841,{coords={
-[864]={{63.2,21.3}}},description="|cFFFFFFFFStep 6:|r Head to Vol'dun. At the coordinates provided, there is a very skinny, tall tree sticking out of the rocks. If you have enemy nameplates enabled, you'll see a |ccccc3333Clatterback|r nearby.\n\nYou can sort of fall down behind the tree into the Clatterback's cave. If you're lucky (or careful) he may not attack you, but you might want to use an invisibility potion to protect yourself, because he hits like a truck.\n\nThe pebble is close to the mouth of the cave, hidden behind a small rock, around |cFFFFFFFF63.0, 21.6|r.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52816,sourceQuests={52817}}),
+[864]={{63,21.6},{63.2,21.3}}},description="|cFFFFFFFFStep 6:|r Head to Vol'dun. At the coordinates provided, there is a very skinny, tall tree sticking out of the rocks. If you have enemy nameplates enabled, you'll see a |ccccc3333Clatterback|r nearby.\n\nYou can sort of fall down behind the tree into the Clatterback's cave. If you're lucky (or careful) he may not attack you, but you might want to use an invisibility potion to protect yourself, because he hits like a truck.\n\nThe pebble is close to the mouth of the cave, hidden behind a small rock, around |cFFFFFFFF63.0, 21.6|r.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52816,sourceQuests={52817}}),
 o(293842,{coords={
-[942]={{68.3,10.5}}},description="|cFFFFFFFFStep 7:|r Head to Stormsong Valley. At the coordinates provided, there is a cave entrance obscured by some trees. There are some pirates inside, so fight your way to the middle of the cave and you'll find a wheelbarrow housing the next pebble around |cFFFFFFFF67.9, 12.9|r.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52815,sourceQuests={52816}}),
+[942]={{67.9,13},{68.3,10.5}}},description="|cFFFFFFFFStep 7:|r Head to Stormsong Valley. At the coordinates provided, there is a cave entrance obscured by some trees. There are some pirates inside, so fight your way to the middle of the cave and you'll find a wheelbarrow housing the next pebble around |cFFFFFFFF67.9, 13.0|r.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52815,sourceQuests={52816}}),
 o(293843,{coords={
 [863]={{39.8,4}},
 [875]={{54.5,7.3}}},description="|cFFFFFFFFStep 8:|r Head to Nazmir. There are two coordinates provided, although you may only be able to see one on your map when you start. Head to the southern coordinate and then fly north, into fatigue waters, to the northern coordinate.\n\nUse Underlight Angler or a potion to increase your swim speed, and swim down until you get to a shipwreck. The back of the ship is made of stained glass. In the middle of the glass is a skull with a semicircle of pebbles underneath it. The one you can interact with is the second from the left.\n\n  Shift-click to refresh your collection.",modelScale=0.5,questID=52814,sourceQuests={52815}}),
 o(293844,{coords={
-[1161]={{37.5,80.3}}},description="|cFFFFFFFFStep 9:|r Head to Boralus. At the coordinates provided, there is a large tree in the hedge maze. Behind it is the entrance to a cellar.\n\nOn the left side of the cellar, you'll see two crates stacked up with two barrels stacked to their left and a small chest on their right. The pebble is hidden behind the barrel, around |cFFFFFFFF37.3, 79.7|r.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52813,sourceQuests={52814}}),
+[1161]={{37.2,79.8},{37.5,80.3}}},description="|cFFFFFFFFStep 9:|r Head to Boralus. At the coordinates provided, there is a large tree in the hedge maze. Behind it is the entrance to a cellar.\n\nOn the left side of the cellar, you'll see two crates stacked up with two barrels stacked to their left and a small chest on their right. The pebble is hidden behind the barrel, around |cFFFFFFFF37.2, 79.8|r.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52813,sourceQuests={52814}}),
 o(293845,{coords={
-[896]={{18.3,7.4}}},description="|cFFFFFFFFStep 10:|r Head to Drustvar. At the coordinates provided is a cave on the side of a small island (if you don't have flying, you'll have to fall/glide from up above). Don't go into the cave, but hop up on the large rock at the entrance.\n\nThe pebble is on top of the rock, partially obscured by vines. It's hard to see, so you'll probably have to zoom in a bit and jiggle your camera around a little to find it.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52812,sourceQuests={52813}}),
+[896]={{17.2,6.5}}},description="|cFFFFFFFFStep 10:|r Head to Drustvar. At the coordinates provided is a cave on the side of a small island (if you don't have flying, you'll have to fall/glide from up above). Don't go into the cave, but hop up on the large rock at the entrance.\n\nThe pebble is on top of the rock, partially obscured by vines. It's hard to see, so you'll probably have to zoom in a bit and jiggle your camera around a little to find it.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=52812,sourceQuests={52813}}),
 o(293846,{coords={
-[895]={{75.4,70.7}}},description="|cFFFFFFFFStep 11:|r Head to Tiragarde Sound. At the coordinates provided, there's a well-hidden cave entrance in the ground. The cave is full of |ccccc3333Clatterbacks|r, but this time they're hidden underground and will jump out at you — if you don't have invisibility potions, be prepared to die.\n\nAgain, the pebble here is very hard to see. It's hidden between a rock and a pile of gore around |cFFFFFFFF74.3, 70.9|r, and it's covered in blood so it doesn't look as pale and bright as the previous pebbles.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=53632,sourceQuests={52812}}),
+[895]={{74.3,70.9},{75.4,70.7}}},description="|cFFFFFFFFStep 11:|r Head to Tiragarde Sound. At the coordinates provided, there's a well-hidden cave entrance in the ground. The cave is full of |ccccc3333Clatterbacks|r, but this time they're hidden underground and will jump out at you — if you don't have invisibility potions, be prepared to die.\n\nAgain, the pebble here is very hard to see. It's hidden between a rock and a pile of gore around |cFFFFFFFF74.3, 70.9|r, and it's covered in blood so it doesn't look as pale and bright as the previous pebbles.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=53632,sourceQuests={52812}}),
 o(303018,{coords={
-[895]={{80.2,19.2}}},description="|cFFFFFFFFStep 12:|r The next pebble is also in Tiragarde Sound. At the coordinates provided, there is a cave hidden behind a waterfall. At the back right-hand side of the cave, there is a pillar with a couple of scrolls pinned to it.\n\nThe pebble is very well hidden, underneath the scroll that is unfurled over the ground. It's around |cFFFFFFFF79.6, 18.0|r, and you have to be standing practically on top of it with your camera tilted very far back in order to see it.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=53633,sourceQuests={53632}}),
+[895]={{79.7,18},{80.2,19.2}}},description="|cFFFFFFFFStep 12:|r The next pebble is also in Tiragarde Sound. At the coordinates provided, there is a cave hidden behind a waterfall. At the back right-hand side of the cave, there is a pillar with a couple of scrolls pinned to it.\n\nThe pebble is very well hidden, underneath the scroll that is unfurled over the ground. It's around |cFFFFFFFF79.7, 18.0|r, and you have to be standing practically on top of it with your camera tilted very far back in order to see it.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=53633,sourceQuests={53632}}),
 o(303017,{coords={
-[1161]={{10,82.7}}},description="|cFFFFFFFFStep 13:|r Head to Boralus. At the coordinates provided, there is a well hidden underwater cave. Its entrance is covered in a layer of seaweed that you can swim through. Head to the little island inside the cave, and on the right you'll see stalagmites on either side of some red kelp./n/nThe pebble is hidden underneath the kelp around |cFFFFFFFF59.6, 41.8|r, and it's another one where you have to really play with your camera angle to find it.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=53634,sourceQuests={53633}}),
+[895]={{59.7,41.8}},
+[1161]={{10,82.7}}},description="|cFFFFFFFFStep 13:|r Head to Boralus. At the coordinates provided, there is a well hidden underwater cave. Its entrance is covered in a layer of seaweed that you can swim through. Head to the little island inside the cave, and on the right you'll see stalagmites on either side of some red kelp.\n\nThe pebble is hidden underneath the kelp around |cFFFFFFFF59.7, 41.8|r, and it's another one where you have to really play with your camera angle to find it.\n\nShift+click to refresh your collection.\n",modelScale=0.5,questID=53634,sourceQuests={53633}}),
 o(303016,{coords={
 [875]={{45.9,3.7},{47.7,-3},{55.7,-10.2}}},description="|cFFFFFFFFStep 14:|r Head to the very northernmost point in Vol'dun. There will be three waypoints on your map, which you may have to zoom out to the continent map to see — south, central, and north.\n\nStart from the southern waypoint, fly to the central waypoint to reset your fatigue, and then head to the final waypoint to find an underwater cave. Again, Underlight Angler or other swim speed increases are probably necessary.\n\nYou can swim into the cave to reset your fatigue again, but the pebble is right inside the entrance. Swim down to the bottom and it's next to a rock and what looks like a small shard of rock, around |cFFFFFFFF55.8, -10.0|r.\n\nThe stone reads:\n\"<Something is carved into the stone.>\n\nHeckler of the Murkiest Thugs, sheathe \nyour\nBat and remove the Keg Cork, Wot?\"\n",modelScale=0.5,questID=52827,sourceQuests={53634}}),
 n(141909,{coords={
 [525]={{62.3,22.9}}},description="|cFFFFFFFFStep 15:|r Head to Frostfire Ridge. You'll find Baa'l at the coordinates provided, in a volcano, just chilling, like you do.\n\nSummon your empowered Uuna to weaken him, and then attack!  Dragonkin pets are a wise choice, but he's very easy to beat post-Uuna Reckoning regardless.\n\nEnjoy your new pet!  Hail Satan!\n",questID=52828,sourceQuests={52827},g={
-p(2352,{b=1,itemID=162578,npcID=141941,spellID=277461})}})}})}}),
-x(9,{
-ah(344577,{awp=90005,cost={{"i",184870,1}},description="Requires |cFF006812Appreciative|r reputation with Ve'nari and a total of 3,500 Stygia.\n\nEnable quest tracking to see all the steps.\n\nPurchase a |cFF0070ddStygia Dowser|r from Ve'nari for 1,500 Stygia.Throughout the secret, harvest every Stygia Nexus you find, as you will eventually need 200 |cFF1eff00Stygia Dust|r and |cFF1eff00Stygia Slivers|r.",displayID=92632,maps={1543},modelScale=1.1,type="s",g={
-prof(2811,{
-r(350276,{requireSkill=2811,u=5}),
-r(350399,{requireSkill=2811,u=5})}),
-i(185618),
-i(185617),
-n(177073,{coords={
-[1543]={{23.1,68.3},{23.7,75.3}}},description="Click the first grapple point at |cFFFFFFFF23.1, 68.3|r and the next grapple point at |cFFFFFFFF23.7, 75.3|r.\n\nUse your |cFF0070ddStygia Dowser|r when you are on the platform covered with green fog, and you will be transformed into a spirit.\n\nEach of the spikes on the platform is topped with a glowing rune. To open the chest, match the runes in the puzzle to the positioning of the runes atop the spikes. With your back to the grapple point, start with the rune to your left and continue, moving clockwise.\n\n|cffde1c1cIf you match the runes incorrectly, you will die and get a debuff that prevents you from trying the puzzle again for 2 hours.|r",questID=63611,g={
-i(185056,{b=1})}}),
-i(185353,{coords={
-[1543]={{24.6,12.5},{27.6,17.3}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to the teleport pad that takes you to Dartanos's platform, and the page is all the way at the back on a table, behind where the rare spawns.",questID=63643,sourceQuests={63611},spellID=349984,type="ihqt"}),
-i(185351,{coords={
-[1543]={{48.8,84.7}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to a cave entrance, and the page is at the back of the cave on the left side.",questID=63641,sourceQuests={63611},spellID=349982,type="ihqt"}),
-i(185352,{coords={
-[1543]={{27.2,72.3}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe page is on the right side of Thanassos' platform.",questID=63642,sourceQuests={63611},spellID=349983,type="ihqt"}),
-i(185632,{description="Received after collecting and using all the Rune Codex Pages.",questID=63668,sourceQuests={63641,63642,63643},type="ihqt"}),
-i(185473,{b=1,crs={166398},description="Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters who have collected the |cFFa335eeIntact Rune Codex|r.",questID=63667,sourceQuests={63668},type="ihqt"}),
-n(177392,{coords={
-[1543]={{20.2,67},{23,68.4}}},cost={{"i",185474,1}},description="Once you have the |cFFa335eeIntact Rune Codex|r, you can collect |cFFa335eeSoulforger's Tools|r from the rare mob Soulforger Rhovus and finish collecting all your |cFF1eff00Stygia Dust|r and |cFF1eff00Stygia Slivers|r (200 of each).\n\nGrapple all the way up to the Soulsteel Anvil — the first grapple point is at |cFFFFFFFF23.0, 68.4|r, and the anvil is at |cFFFFFFFF20.2, 67.0|r.\n\nCraft 20 |cFF0070ddStygia Bar|r and 1 |cFFa335eeArmored Husk|r.",questID=63707,sourceQuests={63667},g={
-i(185630,{cost={{"i",185617,10},{"i",185618,10}}}),
-i(185474,{b=1,cost={{"i",185630,20},{"i",185473,1}}})}}),
-n(177195,{coords={
-[1543]={{23.2,46.8}}},description="Find a Stray Soul patting along Gorgoa, the River of Souls. Interact with it, and you will receive a |cFFa335eeWilling Wolf Soul|r.\n\nThe coordinates are near the beginning of the soul's path, where it respawns, but if no one interacts with the soul it can pat all the way to |cFFFFFFFF49.8, 16.4|r.",questID=63666,sourceQuests={63707},g={
-i(185471)}}),
-i(185475,{cost={{"i",185471,1},{"i",185474,1}},f=55,sourceQuests={63666}}),
-q(63684,{description="Once you have the |cFFa335eeArmored Husk|r and the |cFFa335eeWilling Wolf Soul|r, click on the Binding Altar at |cFFFFFFFF45.2, 48.3|r.\n\n|cffde1c1cAs soon as you summon the mount, it will start running, so make sure you're facing towards the interior of the zone and that you won't run off the edge and into the void!|r\n\nOnce you're mounted, your hotkeys will be replaced with runes. Use them in the order provided by your |cFFa335eeCrumbling Stele|r, and you will receive the mount!",lvl=60,providers={{"i",185475}},g={
-mnt(344577,{b=1,itemID=184168}),
-i(185616,{spellID=350274})}})}}),
-ah(329900,{awp=90001,displayID=96259,modelScale=1.1,type="s",g={
-q(60605,{coords={
-[116]={{18.4,88.2}}},providers={{"o",352909}},g={
-i(5996,{f=55,lvl=4,spellID=7178})}}),
-q(60606,{coords={
-[114]={{43.5,13.9}}},qgs={25197},sourceQuests={60605},g={
-i(180010)}}),
-q(60614,{coords={
-[116]={{17.8,93.2}}},qgs={169414},sourceQuests={60606},g={
-i(180025)}}),
-q(60615,{coords={
-[116]={{17.8,93.2}}},qgs={169414},sourceQuests={60614}}),
-q(60616,{coords={
-[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60615},g={
-o(352915,{coords={
-[116]={{17.1,93.8}}},g={
-i(180026)}})}}),
-q(60617,{coords={
-[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60616}}),
-q(60619,{coords={
-[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60617},g={
-o(352926,{coords={
-[116]={{12.7,96.7}}},g={
-i(180031)}}),
-o(352924,{coords={
-[116]={{11.2,95}}},g={
-i(180033)}}),
-o(352925,{coords={
-[116]={{9,94.2}}},g={
-i(180032)}})}}),
-q(60620,{coords={
-[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60619},g={
-p(2888,{b=1,itemID=180034,npcID=169514,spellID=329900})}})}}),
-ah(186553,{awp=90105,displayID=100676,modelScale=1.1,type="i",g={
-q(64167,{coords={
-[627]={{58.5,39.1}}},qgs={96479},g={
-i(187128,{spellID=356054})}}),
-q(64196,{coords={
-[627]={{58.5,39.1}}},qgs={96479},sourceQuests={64167},g={
-i(186695,{spellID=354656})}}),
-q(64203,{coords={
-[790]={{73.2,74.9}}},qgs={179566},sourceQuests={64196},g={
-i(186730)}}),
-q(64215,{coords={
-[790]={{73.2,74.9}}},qgs={179566},sourceQuests={64203},g={
-i(186772,{spellID=354851})}}),
-q(64237,{coords={
-[790]={{73.2,74.9}}},qgs={179566},sourceQuests={64215},g={
-p(3107,{b=1,itemID=186553,npcID=179140,spellID=353460})}})}}),
-ah(192485,{awp=90205,type="i",g={
-n(162804,{coords={
-[1543]={{46.9,41.7}}},description="If you talk to Ve'nari at her usual location in her hideout in the Maw, you'll see that she is an echo and no longer physically present. Talking to her reveals an extra dialogue option, where she will mention that she has finally found Zereth Mortis.",questID=65470}),
-n(185083,{coords={
-[1970]={{47.4,88.6}}},description="After talking to Ve'nari's echo in her hideout, head to the Creation Catalyst in Zereth Mortis. There, you will find Ve'nari's charred corpse in the center of the room. Interact with it, and select the dialogue option to take a closer look.",questID=65488,sourceQuests={65470}}),
-h(-39,{description="You should receive a letter from Ve'nari with the toy attached 5 days after interacting with her decoy corpse in Zereth Mortis.",sourceQuests={65488},g={
-toy(192485,{b=1})}})}})}),
-x(10,{
-ah(206040,{awp=100100,type="i",g={
-h(-47,{maps={2022,2023,2024,2025,2151},g={
-p(3581,{b=1,description="You need to collect all 15 motes to receive this pet. Requires Quest Tracking to see the motes' Location.",itemID=206040,npcID=205649,spellID=411800})}}),
-h(-56,{
-n(205876,{coords={
-[2023]={{61.2,64.4}}},nomerge=1,questID=76182}),
-n(205876,{coords={
-[2023]={{34.3,58.7}}},nomerge=1,questID=76183}),
-n(205876,{coords={
-[2025]={{62.7,13.2}}},nomerge=1,questID=76189}),
-n(205876,{coords={
-[2025]={{61.2,40.7}}},nomerge=1,questID=76190}),
-n(205876,{coords={
-[2025]={{72.9,55.1}}},nomerge=1,questID=76191}),
-n(205876,{coords={
-[2025]={{70.9,69.8}}},nomerge=1,questID=76192}),
-n(205876,{coords={
-[2025]={{62.6,85.1}}},nomerge=1,questID=76193}),
-n(205876,{coords={
-[2024]={{78.8,34.1}}},nomerge=1,questID=76178}),
-n(205876,{coords={
-[2024]={{61.6,71.4}}},nomerge=1,questID=76179}),
-n(205876,{coords={
-[2024]={{36.4,56.5}}},nomerge=1,questID=76180}),
-n(205876,{coords={
-[2024]={{8.2,53.1}}},nomerge=1,questID=76181}),
-n(205876,{coords={
-[2151]={{36,34.2}}},nomerge=1,questID=76188}),
-n(205876,{coords={
-[2022]={{22.8,88.4}}},nomerge=1,questID=76184}),
-n(205876,{coords={
-[2022]={{24.1,55.6}}},nomerge=1,questID=76185}),
-n(205876,{coords={
-[2022]={{58.5,67.7}}},nomerge=1,questID=76186}),
-n(205876,{coords={
-[2022]={{63.9,44.8}}},nomerge=1,questID=76187})})}}),
-ah(376873,{awp=100002,cost={{"i",202042,1}},description="***Debugg Mode enabled is required to see all the steps. Fishing is required for this Secret!***\n\nYou need to buy an Immaculate Bag of Swog Treasures to get the Aquatic Shades, which costs 1 Gold Coin of the Isles. If you're unlucky, this means fishing up a total of 75 Copper Coins of the Isles to trade up!",displayID=102074,modelScale=0.8,type="s",g={
-q(72676,{coords={
-[2022]={{19.6,36.5}}},description="Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off."}),
-o(385001,{coords={
-[2022]={{20,40}}},description="Once you wake up from your dance hangover, loot the Empty Fish Barrel. It's directly in front of you.",sourceQuests={72676},g={
-i(202061,{requireSkill=356,sourceQuests={72676},spellID=396616})}}),
-i(202061,{cost={{"i",202072,100}},description="Time to go fishing! You'll need to fill up the barrel with various fish from around The Dragon Isles.",requireSkill=356,sourceQuests={72676},spellID=396616,g={
-i(202072,{b=1,coords={
-[2024]={{12.4,50}}},description="You'll need 100 of these fish. They can be found in open waters in the Azure Span. After using them with the barrel, you'll receive a Half-Filled Fish Barrel."})}}),
-i(202066,{cost={{"i",202073,25}},description="Now that your barrel is half full, the fishing gets harder. You're looking for lava fish now.",requireSkill=356,sourceQuests={72676},spellID=396699,g={
-i(202073,{b=1,coords={
-[2022]={{35.8,64.6}}},description="You'll need 25 of these fish. Keep in mind, they're rarer drops, so this will take longer than the Frigid Floe Fish."})}}),
-q(72808,{cost={{"i",202074,1}},description="Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",requireSkill=356,sourceQuests={72676},g={
-i(202074,{b=1,coords={
-[2025]={{56,44.5}}},description="Just one! But it'll take a while. Having good Perception on your Profession gear may help."}),
-i(202068,{spellID=396698})}}),
-i(202069,{coords={
-[2022]={{20,40}}},description="Head back to where you originally picked up the empty barrel, and place the Overflowing Fish Barrel on the ground.",spellID=396703}),
-q(72738,{coords={
-[2022]={{20,40}}},lvl=10,qgs={199563},sourceQuests={72808},g={
-mnt(376873,{b=1,itemID=198870,lvl=10})}})}})}),
-ah(193373,{awp=100007,description="Below is a detailed explanation on how to obtain the Phoenix Wishwing pet.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",type="i",g={
-o(13000040,{description="|cFFFFFFFFStep 1:|r Obtain the Phoenix Ash Talisman from Zektar in Spires of Arak.",providers={{"i",199203}},g={
-o(13000041,{description="|cFFFFFFFFStep 1A:|r Obtain the Glittering Phoenix Ember from Alysrazor in Firelands Timewalking.",providers={{"i",199099}}}),
-o(13000042,{description="|cFFFFFFFFStep 1B:|r Obtain 20 Inert Phoenix Ash from fire elementals in Un'Goro Crater.",providers={{"i",199092}}}),
-o(13000043,{description="|cFFFFFFFFStep 1C:|r Obtain 10 Sacred Phoenix Ash from cookpots in Spires of Arak.",providers={{"i",199097}}})}}),
-o(13000044,{description="|cFFFFFFFFStep 2:|r Obtain 20 Ash Feathers spawned by Griftah's Ash Feather Amulet.",providers={{"i",202062}}}),
-o(13000045,{description="|cFFFFFFFFStep 3:|r Obtain 15 Smoldering Phoenix Ash from phoenixes around the Dragon Isles.",providers={{"i",199080}}}),
-q(72798,{coords={
-[2022]={{16.1,62.6}}},cost={{"i",199203,1},{"i",199080,15},{"i",202062,20}},lvl=10,qgs={196214},repeatable=1,sourceQuests={70779},g={
-p(3292,{b=1,itemID=193373,npcID=189117,spellID=375084})}})}}),
-h(-503,{awp=50004,description="Multi-expansion secret to obtaining Dog as a companion pet.",g={
-q(30526,{coords={
-[376]={{42.4,50.2}}},lvl=15,minReputation={1272,21600},qgs={59533},g={
-i(80144),
-de(4488,{awp=110207,itemID=248663,sourceQuests={30526},spellID=1247392})}}),
-q(46952,{awp=70200,coords={
-[582]={{58.8,53.8}},
-[590]={{44.6,84.8}}},description="Find a Loose Pebble on the streets of (Legion) Dalaran. Build an Herb Garden in your garrison.\nSpeak with Dog and show him the Pebble. Do not throw the Pebble at Dog.",qgs={87553},qis={147420},sourceQuests={30526,34193,36404}}),
-q(83093,{awp=110002,coords={
-[2248]={{31.4,51.3}}},description="Interact with the bowl near Dalaran's crash site to bring Dog out of hiding.",providers={{"o",452438}},sourceQuests={46952}}),
-q(83094,{awp=110002,coords={
-[2248]={{31.4,51.3}}},description="Interact with Dog and <Pet his head> to get him as a pet.",qgs={225486},sourceQuests={83093},g={
-p(4596,{b=1,itemID=224766,npcID=225537,spellID=453741})}})}}),
+p(2352,{b=1,itemID=162578,npcID=141941,spellID=277461})}})}}),
 ah(156798,{awp=80001,description="Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",displayID=88835,modelScale=1.1,type="i",g={
 o(13000000,{coords={
 [594]={{65.6,69.3}}},description="|cFFFFFFFFSTEP 1:|r Purchase |cFFFFD700Talisman of True Treasure Tracking|r. This can be bought from |cFFFFD700Griftah|r in |cFFFFD700Shattrath City|r at |cFFFFFFFF65.6, 69.3|r for 35g\n",g={
@@ -346,11 +256,11 @@ o(13000035,{description="There multiple solutions to this puzzle. One of them is
 o(13000036,{description="First identify the 5 people in your group who can cross with whom;\nPerson A = can make it across with any duo or make it across with 1 specific trio\nPerson B = can make it across with person A in a duo or the specific trio\nSo the specific trio will be Person A, B, and either (C, D, or E) and you'll have to do some trial and error to identify who the last person is.Person C, D, E = can all can make it across with person A in a duo BUT like I said, 1 of these people will also be the last person in the specific trio (once you've identified them, just call them person C, from there person D and E don't matter)\n1. Person A, B, and C get on and go across.\n2. Person C gets off on other side, A and B go back across.\n3. Person B gets off at the start and A and D go back.\n4. Person D gets off on other side and person A and C come back to start.\n5. Person B gets on with person A and C and they travel back to the finish.\n6. Person C gets off at finish, person A and B go back to start.\n7. Person B gets off, person E gets on with person A.\n8. Person E gets off at finish, person A and C go back to the start.\n9. Person B gets on with A and C and go to finish."}),
 o(13000037,{description="Each player needs to take one position each around the circle.",g={
 mnt(261395,{b=1,itemID=156798,lvl=10})}})}}),
-n(159783,{awp=80205,description="***Debug Mode is required to see all the steps.***\n",g={
+ah(311289,{awp=80205,description="***Debug Mode is required to see all the steps.***\n",displayID=81387,type="s",g={
 hqt(58076,{coords={
-[63]={{17.4,49.3}}},description="|cFFFFFFFFStep 1:|r Go to |cFFFFFFFF17.4, 49.3|r in Ashenvale. Speak with |cFFFFD700Amara Lunastar|r and follow her dialogue about her cat.\n",providers={{"n",159799}}}),
+[63]={{17.4,49.3}}},description="|cFFFFFFFFStep 1:|r Speak with |cFFFFD700Amara Lunastar|r and follow her dialogue about her cat.\n",providers={{"n",159799}}}),
 hqt(58098,{coords={
-[37]={{44.2,53}}},description="|cFFFFFFFFStep 2:|r Go inside the house at |cFFFFFFFF44.2, 53.0|r in Elwynn Forest to find the |cFFFFD700Empty Dish|r.\n",DisablePartySync=1,lc={1,"questID",58099},providers={{"o",339211}},sourceQuests={58076}}),
+[37]={{44.2,53}}},description="|cFFFFFFFFStep 2:|r Go inside the house in Elwynn Forest to find the |cFFFFD700Empty Dish|r.\n",DisablePartySync=1,lc={1,"questID",58099},providers={{"o",339211}},sourceQuests={58076}}),
 hqt(58099,{coords={
 [42]={{46.7,70.1}}},description="|cFFFFFFFFStep 3:|r This step requires collecting various meats throughout |cffffd200Return to Karazhan|r and placing them in the Opera Hall to mimic a section of the Amara's Wish sheet music.\n\n|cffde1c1cOnce the items are picked up, you have 5 minutes to place them into the puzzle. Once placed, they despawn after 5 minutes and 20 seconds. Because of these time limits, it may be wise to ensure you have cleared the trash in the dungeon and have acquainted yourself with the locations of all the meats you need to pick up.\n\nTurn on Debug Mode to see descriptions for the locations of each meat and how to place them in the correct order!|r\n\nYou will need to collect items from Moroes' room as well as the hallways near Maiden of Virtue, and then take the items back to the audience area of the Opera Hall to place them.\n",providers={{"n",160370},{"n",160371},{"n",160372},{"n",160373},{"n",160374}},sourceQuests={58098},g={
 i(173787,{b=1,description="Two are required.\n\n|cFFFFFFFF1.|r The first Fishy Bits can be found in the hallway prior to Maiden of Virtue. Near the middle of hall on the left side, there is a doorway flanked by two lion statues. The Fishy Bits are just past the lion statues and before the left-hand bust directly after them, against the wall.\n\n|cFFFFFFFF2.|r The second Fishy Bits can be found in Moroes' room, very close to the boss's platform. It's between the bottom right corner of the platform and the upper left corner of the small right-hand table.\n",npcID=160374,spellID=312285}),
@@ -360,246 +270,174 @@ i(173779,{b=1,description="Can be found about halfway down the hallway prior to 
 i(173777,{b=1,description="Can be found in Moroes' room, on the right side of the long table. There are a couple on the table, but the easiest one to spot is on a gold platter sitting between a large roast pig and fish.\n",npcID=160372,spellID=312275}),
 o(9999921,{description="After you have all the meats collected, head back to the audience area of the Opera Hall. To orient yourself in the room, you want to have your back to the stage.\n\nYou will be placing each meat relative to two very tiny piles of kibble on the left side of the room (again, while faced away from the stage). You will probably need to zoom in to see them. Each tile on the floor represents a box in a 12-by-12 grid.\n\n|cff413f43 00|r = Empty cell\n|cff4db62c 00|r = Pile of Kibble\n|cffeea016 00|r = Fishy Bits\n|cffeee116 00|r = Juicy Drumstick\n|cff16ceee 00|r = Meaty Morsel\n|cffce16ee 00|r = Marbled Steak\n|cff9e5ced 00|r = Slathered Rib\n\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00|r|cffeee116 00|r|cff413f43 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00|r|cff9e5ced 00|r|cff413f43 00|r|cffeea016 00|r|cff413f43 00 00|r\n|cff413f43 00|r|cff4db62c 00|r|cff413f43 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00|r|cffce16ee 00|r|cff413f43 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00|r|cff16ceee 00|r|cff413f43 00 00 00 00 00 00|r\n|cff413f43 00|r|cff4db62c 00|r|cff413f43 00 00|r|cffeea016 00|r|cff413f43 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00|r|cffce16ee 00|r|cff413f43 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00|r|cffeee116 00|r|cff413f43 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n\nIf you have placed all the meats properly, Jenafur will spawn as soon as you finish. You can use |cFFFFFFFF/tar Jenafur|r to find her in the room, and then all you have to do is walk over and pet her for her to be added to your collection.\n"}),
 p(2795,{npcID=159783})}})}}),
-n(111573,{awp=70003,description="***Quest tracking enabled is required to see all the steps.***\n\nThis will show you how to unlock |cFFFFD700Kosumoth the Hungering|r, which has a world quest that awards the |cFFFFD700Hungering Claw|r pet or the |cFFFFD700Fathom Dweller|r mount.",g={
-n(102695,{coords={
-[646]={{37.2,71.8}}},description="|cFFFFFFFFStep 1:|r Head to |cFFFFFFFF37.2, 71.8|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffThe demons are taking over this island, you may want to leave.|r \n\nChoose option 1 again. \n\n|cffcc33ffYou must know much. Will you help us defeat them?|r \n\nHe tells you to go away.",questID=43715}),
-o(252412,{coords={
-[646]={{57.4,55.9},{58.5,54}}},description="|cFFFFFFFFStep :2|r Head to the |cFFFFD700Feldust Cavern|r at |cFFFFFFFF58.56, 53.99|r. Walk inside to |cFFFFFFFF57.45, 55.95|r and click the |cFFFFD700Mound of Dirt|r to loot the |cFFFFD700Weathered Relic|r\n\nHead back to |cFFFFFFFF37.17, 71.82|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffDo you recognize this relic?|r \n\nSpeak to him again and choose option 1. \n\n|cffcc33ffTell me of these whispers.|r\n\nSpeak to him again and choose option 1.\n\n|cffcc33ffDrak'thul?|r.\n\nSpeak to him again and choose option 1. \n\n|cffcc33ffYou are yourself again. What happened?|r \n\nSpeak to him again and he will tell you to go away",model=658558,modelScale=0.5,questID=43729,sourceQuests={43715}}),
-o(252557,{coords={
-[630]={{37.9,37.4}}},description="|cFFFFFFFFStep 3:|r This step will send you to |cFFFFD700Azsuna|r. Head to |cFFFFFFFF37.96, 37.41|r, walk down into the cave and click on the purple |cFFFFD700Hungering Orb|r in the fountain.",model=249664,modelScale=2,questID=43730,sourceQuests={43729}}),
-o(252558,{coords={
-[634]={{32.9,75.9}}},description="|cFFFFFFFFStep 4:|r This step will send you to |cFFFFD700Stormheim|r. Head to |cFFFFFFFF32.92, 75.90|r, walk into the cave and make sure to avoid the |cFFFFD700Kangaxx|r. Click on the |cFFFFD700Hungering Orb|r at the back of the cave in the sack of scrolls.",model=249664,modelScale=2,questID=43731,sourceQuests={43730}}),
-o(252559,{coords={
-[641]={{41.5,81.1}}},description="|cFFFFFFFFStep 5:|r This step will send you to Val'sharah|r. Head to |cFFFFFFFF41.51, 84.18|r, walk into the cave and take a left to see a table with a note on it. Turn left and walk over the rocks, turn back right and kill the |cFFFFD700Arcane Servitor|r. Click the |cFFFFD700Hungering Orb|r sitting on the ground between two sleeping pads.",model=249664,modelScale=2,questID=43732,sourceQuests={43731}}),
-o(252560,{coords={
-[646]={{29.2,78.5}}},description="|cFFFFFFFFStep 6:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Broken Shore|r. Head to |cFFFFFFFF29.16, 78.57|r, swim down and the cave is under the rock ledge. Walk forward avoiding the steam explosions and click on the |cFFFFD700Hungering Orb|r sitting under a leanto in some leaves.\n\n|cffcc33ffNote: Be careful not to die to fatigue, fatigue will stop once in the cave.|r",model=249664,modelScale=2,questID=43733,sourceQuests={43732}}),
-o(252561,{coords={
-[630]={{59.3,13.1}}},description="|cFFFFFFFFStep 7:|r This step will send you to |cFFFFD700Azsuna|r. Head to |cFFFFFFFF59.37, 13.13|r, walk down into the cave and click on the |cFFFFD700Hungering Orb|r that is wrapped in stone beside a broken table.",model=249664,modelScale=2,questID=43734,sourceQuests={43733}}),
-o(252562,{coords={
-[619]={{67.3,14.7}}},description="|cFFFFFFFFStep 8:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Stormheim|r. Head to the |cFFFFD700Shield's Rest|r flight point. Fly northwest until you see a broken statue with a large axe in the water named |cFFFFD700Sotnar's Rest|r. Swim down where the hand comes out of the water between the 2 jutting  stones and you should see a |cFFFFD700Toothless Great White|r. Swim down beneath the shark and turn into the opening then swim up into the cave. Avoid the steam explosions and click on the |cFFFFD700Hungering Orb|r.",model=249664,modelScale=2,questID=43735,sourceQuests={43734}}),
-o(252563,{coords={
-[650]={{55.8,38.4}}},description="|cFFFFFFFFStep 9:|r This step will send you to |cFFFFD700Highmountain|r. Head to |cFFFFFFFF55.84, 38.47|r. This cave is to the right of the main cave here through the bushes. Click on the |cFFFFD700Hungering Orb|r that is under the dead animal skull on the ground.",model=249664,modelScale=2,questID=43736,sourceQuests={43735}}),
-o(252564,{coords={
-[630]={{54,26.1}}},description="|cFFFFFFFFStep 10:|r This step will send you to |cFFFFD700Azsuna|r. Head to |cFFFFFFFF54.02, 26.18|r, walk down into the cave and click the |cFFFFD700Hungering Orb|r that is under the plant next to the second pillar.",model=249664,modelScale=2,questID=43737,sourceQuests={43736}}),
-o(252565,{coords={
-[790]={{79.5,89.3}}},description="|cFFFFFFFFStep 11:|r This step will send you to |cFFFFD700Eye of Azshara|r, the zone. Head to |cFFFFFFFF79.52, 89.31|r. Swim down to find a wrecked ship, you can swim into the ship between the anchor and the rock throught the seaweed. Swim up and to the platform above and through the hole on right side. Now swim through the seaweed hole on left and down. Turn around and swim under the beam then through the seaweed to the left. Click the  |cFFFFD700Hungering Orb|r that is on the right side in the water.",model=249664,modelScale=2,questID=43760,sourceQuests={43737}}),
-o(252434,{coords={
-[646]={{37.1,71.8}}},description="|cFFFFFFFFStep 12:|r This step will send you to |cFFFFD700Broken Shore|r. Head to |cFFFFFFFF37.17, 71.82|r. Click the |cFFFFD700Hungering Orb|r that is on the stone table near |cFFFFD700Drak'Thul|r",model=249664,modelScale=2,questID=43761,sourceQuests={43760}})}}),
-ah(247402,{awp=70300,description="***Quest tracking enabled is required to see all the steps.***",displayID=78092,modelScale=0.8,type="s",g={
-o(270855,{coords={
-[627]={{50.6,54.1}}},description="|cFFFFFFFFStep 1:|r Go to |cFFFFFFFF50.6, 54.1|r in Broken Isles Dalaran. On the second floor of |cFFFFD700Curiosities & Moore|r you will see a table with three chairs. An |cFFFFD700Inconspicuous Note|r will be on the table. Click it. The note reads...\n\n|cFFFFFFFFIt begins in the 2104059.|r\n|cFFFFFFFFWith a most pleasing sign.|r\n|cFFFFFFFF(These letters will not always rhyme.)|r\n",model=1661948,questID=47826}),
-o(272039,{coords={
-[120]={{41.5,17.9}}},description="|cFFFFFFFFStep 2:|r This step requires visiting |cFFFFD700Ulduar|r. Head to |cFFFFD700XT-002 Deconstructor's|r room. Go to the trash pile in the upper-left corner of the map. You will see a broken body with blue legs on the ground. Look directly above it and you will see a head with a |cFFFFD700Rusty Lever|r. Click the lever to activate the lights in the middle of the Scrapyard. Click each light in the pattern below.\n\n0 = OFF     |cffcc33ff1|r = ON\n\n0 0 0 0 0 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 0 0 0 0 0 \n0 0 0 0 |cffcc33ff1|r 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 |cffcc33ff1|r 0 0 0 0 \n0 0 0 |cffcc33ff1 1 1|r 0 |cffcc33ff1 1 1 1 1 1|r 0 |cffcc33ff1 1 1|r 0 0 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 0 \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n0 0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 0 0 |cffcc33ff1 1 1|r 0 |cffcc33ff1 1 1 1 1 1|r 0 |cffcc33ff1 1 1|r 0 0 0 \n0 0 0 0 |cffcc33ff1|r 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 |cffcc33ff1|r 0 0 0 0 \n0 0 0 0 0 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 0 0 0 0 0 \n\nOnce you have turned on all the necessary lights, the next |cFFFFD700Inconspicuous Note|r will spawn in the middle. Click it. The note reads...\n\n|cFFFFFFFF1000 years imprisoned.|r\n|cFFFFFFFFSurely it wears on the mind.|r\n",model=1661948,questID=47837,sourceQuests={47826}}),
-o(272046,{coords={
-[327]={{46.76,7.53}}},description="|cFFFFFFFFStep 3:|r This step requires visiting |cFFFFD700Temple of Ahn'Qiraj|r. Go all the way through the instance, past |cFFFFD700C'thun|r's room into the room with three vendors. Once you see the three vendors, go up the stairs and you will see a table that has a glowing |cFFFFD700Mind Larva|r on it. Click the |cFFFFD700Mind Larva|r to activate a game similar to the |cFFFFD700Jewelcraft|r toy.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface and then scroll into first-person view. You can also use the right mouse button to turn your character around for easier viewing.|r\n\nYou need to play until you can line up five brains horizontally or vertically, or until you reach an unknown point cap. Just keep playing, and you'll eventually trigger it.|r\n",model=202390,questID=47840,sourceQuests={47837}}),
-o(272061,{coords={
-[207]={{58.2,25.5}}},description="|cFFFFFFFFStep 4:|r The next |cFFFFD700Inconspicuous Note|r will spawn on the table. Click it. The note reads...\r\r|cFFFFFFFFDeeper than deep.|r\r|cFFFFFFFFAwaits your seat.|r\n",model=1661948,questID=47841,sourceQuests={47840}}),
-o(272163,{coords={
-[207]={{58.3,25.6},{63.7,22.6}}},description="|cFFFFFFFFStep 5:|r First, obtain a |cFFFFD700Shadoweave Mask|r. |cffcc33ffNote: You will need the actual item; it cannot be transmogged on your character.|r\n\nThis step requires visiting Deepholm. Take the |cFFFFD700Therazane's Throne|r portal if it is available; otherwise, fly to |cFFFFFFFF58.3, 25.6|r and you will see a cave opening to |cFFFFD700Crumbling Depths|r.\n\nOnce you are in the cave, mount up and go past the |cFFFFD700Colossal Gyreworm|r into the next section of the cavern. Go to the big grey rock in the center of the room at |cFFFFFFFF63.7, 22.6|r and you will see a |cFFFFD700Dark Fissure|r. Click it. Once you click it, a warning will pop up, saying: \n\n|cffcc33ff'WARNING: you are about to fall into a dark fissure. You may not be able to climb back out again. Are you very sure you want to do this?'|r\n\nOnce inside the fissure, you will see a chair. Go behind the chair and click on the |cFFFFD700Dingy Plaque|r. The plaque reads... \r\r|cFFFFFFFFSupremacy?|r\r|cFFFFFFFFGet...|r\r|cFFFFFFFFShirk...|r\r|cFFFFFFFF...eke...|r\r\rThis will spawn a |cFFFFD700Strange Skull|r on the seat of the chair. Equip the Shadoweave Mask and interact with the |cFFFFD700Strange Skull|r and you will see a purple explosion.|r\n",model=985300,questID=47849,sourceQuests={47841},g={
-s(3660,10025,{f=4,lvl=19})}}),
-o(272165,{coords={
-[641]={{66.5,36}}},description="|cFFFFFFFFStep 6:|r The next |cFFFFD700Inconspicuous Note|r spawns in front of the chair. Click it. The note reads...\r\r|cFFFFFFFFWhere the shaded delegate may appear.|r\n",model=1661948,questID=47850,sourceQuests={47849}}),
-o(272172,{coords={
-[30]={{30.11,74.64}}},description="|cFFFFFFFFStep 7:|r This step requires visiting |cFFFFD700Gnomeregan|r. \n\nNote: Horde players can easily get to Gnomeregan by taking the zeppelin from Orgrimmar and using the teleporter at Grom'gol Base Camp. Players of either faction who have done the Gnomeregan pet battle dungeon can be teleported there directly by speaking to |cff006812Manapoof|r in Broken Isles Dalaran or their BfA capital city.\n\nOnce inside the instance, go straight and jump down into the |cFFFFD700Hall of Gears|r. From here, take the winding hallway towards the |cFFFFD700Launch Bay|r. About halfway between the |cFFFFD700Launch Bay|r and |cff863325Crowd-Pummeler 9-60|r, there will be a plaque on the wall called |cFFFFD700Instructions|r and a set of 10 |cFFFFD700Numerical Consoles|r. Click the Instructions. They read:\n\n|cFFFFFFFF0111011 00100 10010110 1010|r\n|cFFFFFFFF11110111 01100 01111111 01000|r\n|cFFFFFFFF01101011100101 1010010110 10111101|r\n|cFFFFFFFF11001 00111111 10010 01001001|r\n|cFFFFFFFF10000 011010010110100111010110|r\n|cFFFFFFFF01011011 11110 11110001 11111|r\n|cFFFFFFFF11100000 00010 11111111 01000|r\n|cFFFFFFFF10110111 10101 01111111 00001|r\n|cFFFFFFFF10101110 11111 00110000 01000|r\n|cFFFFFFFF101101010010101110010110|r\n\n|cFFFFFFFF180|r\n\n|cFFFFFFFF+1111111111|r\n\nSetting the consoles to |cFFFFFFFF1222176597|r will cause the fifth |cFFFFD700Inconspicuous Note|r to spawn.\n\n|cffcc33ffNote: You can use the following scripts as macros for 'up' and 'down,' respectively:|r\n|cffcc33ff/script SelectGossipOption(1)|r\n|cffcc33ff/script SelectGossipOption(2)|r\n\nClick it. The note reads...\n\n|cFFFFFFFFGames and toys are left behind.|r\n|cFFFFFFFFWhen you awaken screaming.|r\n",model=1661948,questID=47852,sourceQuests={47850}}),
-o(272181,{coords={
-[641]={{66,36.5}}},description="|cFFFFFFFFStep 8:|r This step requires visiting |cFFFFD700Val'sharah|r. Head to |cFFFFFFFF66.0, 36.5|r. Inside the house next to |cff863325Wraithtalon|r is a |cFFFFD700Nightmare Tumor|r. Click it to start the next puzzle.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface and then scroll into first-person view. You can also use the right mouse button to turn your character around for easier viewing.|r\n\nThis puzzle is similar to |cFFFFD700Blingtron's Circuit Design Tutorial|r or the ley line puzzles in |cFFFFD700Nazjatar|r.\n\nThe object of the puzzle is to untangle all of the lines so that none cross each other and turn blue. Once you complete it, another |cFFFFD700Inconspicuous Note|r will appear. Click it. The note reads...\r\r|cFFFFFFFFWhat you seek is buried within.|r\n",model=1661948,questID=47863,sourceQuests={47852}}),
-o(272220,{coords={
-[379]={{53.4,49}}},description="|cFFFFFFFFStep 9:|r This step requires visiting |cFFFFD700Kun-Lai Summit|r. Head to |cFFFFFFFF53.4, 49.0|r. This is the entrance to the |cFFFFD700Tomb of Secrets|r. At the very back of the tomb, there will be an |cFFFFD700Urn|r at the base of a tall Mogu statue. Click it.\r\r|cffcc33ffWARNING: You are about to consume the ashes of an evil sorcerer. There is no way to tell what will happen. Are you VERY sure you want to do this?|r\n\nYou will be teleported to the |cFFFFD700Endless Halls|r where you will have to figure a way out. \r\r1. (Optional) Download the addon |cFFFFFFFFLucid Nightmare Helper|r, which will help you with the endless maze by generating a map of the rooms as you go and letting you notate special things in each one.\n2. Each room in the Endless Halls is identical, but some doorways will be blocked by stones. \r3. Each room has an altar in the middle. The runes spawn on the altar and the orbs spawn on the torches to either side. \r4. Most rooms will have unlit torches and no rune. \r5. The goal is to find a colored orb and then take the orb to the corresponding rune. \r6. The colors are |cFFFFD700Red, Blue, Green, Yellow, and Purple|r. \r\r|cffcc33ffNotes:|r\n|cffcc33ff1. Do not try this close to server reset. It could easily take a couple of hours to complete.\n|cffcc33ff2.If you are struggling with the maze and want to reset it, you need to leave the area for one hour.|r\n\nOnce you match all the orbs and runes, walk through any doorway. In the next room, there will be another |cFFFFD700Inconspicuous Note|r on an altar. Click it. After you read it, turn around and walk up the stairs to exit the maze. The note reads...\n\n|cFFFFFFFFThe way is now open.|r\n|cFFFFFFFFTo the greatest secret never told.|r\n|cFFFFFFFFA fitting end to your journey.|r\n",model=1661948,questID=47881,sourceQuests={47863}}),
-o(272270,{coords={
-[42]={{39.8,73.6}}},description="|cFFFFFFFFStep 10:|r This step requires visiting |cFFFFD700Deadwind Pass|r. Head to |cFFFFFFFF39.8, 73.6|r, the entrance to the Forgotten Crypt.\n\nOnce inside, head down the stairs into the |cFFFFD700Well of the Forgotten|r. Head into the |cFFFFD700Pauper's Walk|r hallway and follow it into the |cFFFFD700Forgotten Crypt.|r\n\nTake a right and then another right back into |cFFFFD700Pauper's Walk|r, then take a right at the Y and walk down the spiral, back into the |cFFFFD700Forgotten Crypt|r.\nTake a left and another left into the |cFFFFD700Tomb of the Unrepentant.|r\nOpen the gate and fall down the hole to the right (just drop down one level, not two). Walk into |cFFFFD700The Pit of Criminals|r, and |cFFFFD700Puzzler's Desire|r is on top of the bone pile.\n\n|cffcc33ffNote: If you are on the Warlock Affiction artifact quest and can't see the Puzzler's Desire, then you will have to abandon the quest to solve the phasing issue.\n\nCongratulations on your mount!|r\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r for solving yet another puzzle.\n",model=942865,questID=47885,sourceQuests={47881},g={
-mnt(247402,{b=1,itemID=151623,lvl=10})}})}}),
-ah(62189,{awp=120000,coords={
-[204]={{15,90}}},description="Swim out to the coordinates then further out south just until fatigue kicks in, then retreat.\nSwim down until fatigue kicks in again then mad dash towards the glowing orb by the skeleton.\n\nYou will want the Vash'jir seahorse and water breathing to make it in time.",type="a",g={
-n(256536,{description="Around the room are displays tracking various 'secret' activities you may or may not have completed. If you've completed enough (17+), speak to Anakron to become a Mind Seeker.",g={
-hqt(94828),
-ach(62189,{sourceQuests={94828},g={
-title(671)}})}}),
-n(256667,{
-i(166545,{b=1,f=55,spellID=11629}),
-i(232005,{f=55,spellID=433}),
-i(232006,{f=55,spellID=104235}),
-i(232009,{f=55,spellID=433}),
-i(232007,{f=55,spellID=431}),
-i(262880,{f=55,spellID=11629})})}}),
-ah(40967,{awp=110005,description="***Using Debug Mode is recommended.***\n",type="a",g={
-o(182030,{coords={
-[78]={{44.5,8}}},description="Inside a rotten tree trunk in the far north of Un'Goro Crater. Use your Torch of Pyrreth to reveal it.",providers={{"i",208092}},g={
-i(228941,{b=1,spellID=463482})}}),
-hqt(84685,{coords={
-[2339]={{54.9,28.9}}},sourceAchievements={40870}}),
-q(84684,{coords={
-[2339]={{54.9,28.9}}},description="Find 3 notes scattered around Azj-Kahet then confront Ratts in Pillar-nest Vosh.",lvl=10,qgs={230042},sourceQuests={84685},g={
-i(228934,{spellID=462610}),
-o(466118,{coords={
-[2255]={{69.3,93.3}}},description="#1. In a cave in Azj'Kahet in the center of 5 Rotglow Settlers.",g={
-i(228935,{spellID=462610})}}),
-o(466119,{coords={
-[2213]={{31.5,20.8}}},description="#2. High up on a ridge overlooking the City of Threads.",g={
-i(228936,{spellID=462610})}}),
-o(466120,{coords={
-[2215]={{50.7,86.6}}},description="#3. Underwater in the center of a lake on the right side of the Azj-Kahet-Hallowfall transition.",g={
-i(228937,{spellID=462610})}}),
-o(466128,{coords={
-[2255]={{55.1,19},{56.4,17.5}}},description="#4. To turn in the quest, enter Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall."}),
-i(228938,{b=1})}}),
-i(44124,{b=1,cost={{"i",228938,1},{"i",228941,1}},description="Once reformed, go to the entrance of the Karazhan Catacombs in Deadwind Pass and use your Torch of Pyrreth by the gate to teleport into a secret scenario."}),
-m(46,{coords={
-[42]={{46.3,69.1}}},description="Deep into the catacombs the bike is just sitting there out of reach, but is surrounded by 12 basins which can light up with orbs if enough actions are performed.",providers={{"i",44124},{"i",208092}},g={
-hqt(84676,{coords={
-[10]={{55,40.2}},
-[550]={{49.2,48},{74.2,37.5}},
-[1536]={{27.3,61.3}}},crs={82688,175815},description="Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Northern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\n\nFully lights up the 1 O'clock basin.",providers={{"i",208092}},sourceQuests={84684}}),
-hqt(84677,{description="Requires the 1 O'clock basin to have been completed to see the obelisk personally.\n1. Acquire the Twitching Eyaball or All-Seeing Eyes toys\n2. Acquire a Perky Pug with either the Dogg-Saron costume from Vashti the Wandering Merchant in Azsuna or the Yipp-Saron costume from Hallow's End (or the AH.)\n3. Bring these items OR find a friend who has them and visit the Ny'Alotha Obelisk above the Seat of Knowledge in the Vale of Eternal Blossoms (BFA).\n4. Have someone summon a perky pug and use the toys, then /pray in front of the obelisk to be granted the Key of Shadows.\n\nThere is a 5-15 minute delay even if you do everything right. Everyone within 10 yards should get the key if anyone in range does it correctly.\n\nFully lights up the 2 O'clock basin",providers={{"n",37865},{"n",153297}},g={
-n(153297,{coords={
-[1530]={{83.7,27.6}}},cost={{"i",116812,1},{"i",229413,1}},providers={{"i",168123},{"i",175140}},g={
-i(53156,{b=1,description="Opens both doors in the room with the Red Button.",spellID=3366})}})}}),
-ah(228967,{description="1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin, fully lighting with 9 orbs.",providers={{"i",53156}},sourceQuests={84677},type="i",g={
-i(228965,{b=1,sourceQuests={84677},spellID=3366}),
-o(466393,{coords={
-[46]={{48.4,79.5}}},providers={{"i",228965}},sourceQuests={84677},g={
-toy(228966,{b=1,sourceQuests={84677}})}}),
-o(466400,{coords={
-[46]={{48.9,80.3}}},description="Code to open at the adjacent decryption console: 88224646",questID=84757,sourceQuests={84677},g={
-i(228967,{b=1,sourceQuests={84677}})}}),
-o(466413,{coords={
-[46]={{42.9,70.6}}},description="Code to open at the adjacent decryption console: 17112317",questID=84758,sourceQuests={84677},g={
-i(228967,{b=1,sourceQuests={84677}})}}),
-o(466479,{coords={
-[46]={{49.5,65.1}}},description="Code to open at the adjacent decryption console: 1533, 3457, 8265, or 10638",providers={{"i",228966}},questID=84768,sourceQuests={84677},g={
-i(228967,{b=1,sourceQuests={84677}})}}),
-o(466495,{coords={
-[46]={{67.4,84.3}}},description="Code to open at the adjacent decryption console: 19019",providers={{"i",228966}},questID=84771,sourceQuests={84677},g={
-i(228967,{b=1,sourceQuests={84677}})}}),
-o(466484,{coords={
-[46]={{56.3,62.6}}},description="Code to open at the adjacent decryption console: 5661",providers={{"i",228966}},questID=84769,sourceQuests={84677},g={
-i(228967,{b=1,sourceQuests={84677}})}}),
-o(466420,{coords={
-[46]={{64.9,48.3}}},description="Code to open at the adjacent decryption console: 52233",providers={{"i",228966}},questID=84766,sourceQuests={84677},g={
-i(228967,{b=1,sourceQuests={84677}})}}),
-o(466497,{coords={
-[46]={{70.3,55.4}}},description="Code to open at the adjacent decryption console: 51567",providers={{"i",228966}},questID=84772,sourceQuests={84677},g={
-i(228967,{b=1,sourceQuests={84677}})}}),
-o(466489,{coords={
-[46]={{66.3,15.2}}},description="Code to open at the adjacent decryption console: 115",providers={{"i",228966}},questID=84770,sourceQuests={84677},g={
-i(228967,{b=1,sourceQuests={84677}})}}),
-ah(84786,{description="In the felcycle room is over a dozen slot machine consoles around the walls, any of them work for this coin. Variations of 777, 888 and 168 are correct answers but the machines only pay out a coin if you are deemed lucky.\nYour luck can be increased by obtaining at least 5 unique lucky things. It's not clear what counts but Blizzard states there are 13 possible lucky sources, some have been listed as a provider for this step. If you see the 'You feel lucky' emote in chat, you should be good, but try at least once anyway, the machine will pay out on first attempt if you're lucky enough, it is not random.\nNo chest will spawn, you will be given the Piece of Hate directly.",providers={{"i",5373},{"i",138382},{"i",138385},{"i",198400},{"i",198857},{"i",200265},{"i",202046}},sourceQuests={84677},type="q",g={
-i(228967,{b=1,sourceQuests={84677}}),
-hqt(84786,{sourceQuests={84677}})}})}}),
-hqt(84780,{coords={
-[22]={{52.1,85.1}}},cost={{"i",228987,1}},description="1. Use the Scroll of Fel Binding sold by Vashti the Wandering Merchant in Azsuna (Broken Isles) right outside Uther's Tomb in the Western Plaugelands.\n2. You will die, return to your corpse and fight the Doomguard while inspecting the four writings on the floor of the tomb. Anyone can summon the demon and writings will stay visible as long as it lives.\n\nFully lights up the 4 O'clock basin."}),
-q(84781,{coords={
-[554]={{43.1,41.4}},
-[555]={{39.6,38.4},{53.3,56.8}}},crs={71876},description="1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Francois, Gizmo the Pure, Glimr, Hungering Claw, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Renny, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Tobias, Wicker Pup",lvl=10,qgs={16445,61087,111984,134406,139770,141941,143189,143730,159783,160704,163897,169514,179008,189117,191381,192343,204367,208643,229779,232048},sourceQuests={84780},g={
-i(228995,{b=1})}}),
-hqt(84811,{description="Use your Torch of Pyrreth at various alters to summon a Spirit of Collections. Perform several actions to appease the spirits on each alter of acquisition, an action may require summoning a mount, pet, or toy associated with each spirit, emoting in some way, or changing your transmog.\n\nSomeone in your phase can appease a spirit for you if nearby, but they must fulfill each part of a spirit's appeasement themselves. If one person covers mount, and another covers pet for example, it will not work.\n\nEach appeased spirit will add an orb to the 6 O'clock basin, and looting the final chest will light it fully.",providers={{"i",208092}},g={
-hqt(84809,{coords={
-[50]={{77.1,46.3}}},crs={230430},description="Confirmed actions to appease:\nMounts: Any with 'blood' in their name\n\nPets: Any with 'blood' in their name\n\nToys: Throbbing Blood Orb"}),
-hqt(84807,{coords={
-[50]={{77.5,43.9}}},crs={230424},description="Confirmed actions to appease:\nOutfit: Cloak of Overwhelming Corruption (or a cloak with the same appearance)\n\nEmotes: /cower with the spirit targeted\n\nMounts: Any with 'corrupted' in their name\n\nPets: Any with 'corrupted' in their name\n\nToys: Ring of Broken Promises, Accursed Tome of the Sargerei"}),
-hqt(84810,{coords={
-[50]={{78.1,46.3}}},crs={230440},description="Confirmed actions to appease:\nOutfit: Cloak of the Black Void (or a cloak with the same appearance)\n\nEmotes: /smirk with the spirit targeted\n\nPets: Lesser Voidcaller, Sir Shady Mrrgglton Junior, Voidwiggler\n\nToys: Shadowy Disguise, Void Totem"}),
-hqt(84806,{coords={
-[50]={{78.3,44}}},crs={230423},description="Confirmed actions to appease:\nOutfit: Any sinstone back cosmetic\n\nPets: Sinheart\n\nToys: Bondable Sinstone"}),
-hqt(84808,{coords={
-[50]={{77.1,44.9}}},crs={230425},description="Confirmed actions to appease:\nOutfit: Be naked\n\nEmotes: /flirt with the spirit targeted\n\nPets: Sister of Temptation\n\nToys: Moroes' Famous Polish, Steamy Romance Novel Kit"}),
-o(466808,{coords={
-[50]={{78.2,47.7}}},description="Appears by the wall nearby the Shadow alter once each spirit has been appeased. Use your goggles to see it.",providers={{"i",228966}},sourceQuests={84781,84806,84807,84808,84809,84810},g={
-i(229007,{b=1,spellID=444913})}})}}),
-hqt(84823,{description="Empower your owl pet with the Owl statues in Azsuna then enter the Vault of the Wardens to find a Sentry Statue. Use it to solve a puzzle to receive the mirror.\n\nEmpowering your owl will add 4 orbs to the 7 O'clock basin, and solving the sentry puzzle will light it fully.",maps={630,710,711,712},g={
-ah(254262,{coords={
-[630]={{37.1,82.16},{40.52,75.19},{40.54,73.15},{43.24,85.3},{43.66,87.51},{44.18,72.41},{45.97,84.06},{47.48,84.74},{50.45,91.67}}},description="On the Isle of the Watchers in Azsuna are 9 Owl of the Watchers statues, on any shard, only 4 of them will be interactable at any given time.\n\nYou need an owl pet, the Fledgling Warden Owl sold by the Wardens quartermaster on the same island is confirmed to work, but other owls may work too.\n\nSummon your owl and don't let it disappear by flying too far away. Find an interactable statue and sit in the aura it creates with your pet until an audible sound cue plays and a secret magnifying glass icon appears over your head. Do that again for 4 different statue auras, Red, Green, Blue and Purple.\nYou'll know you're done when your owl has a distinct white orb above their head. Unlocks 4 orbs at Basin 7.",providers={{"n",97128}},type="o",g={
-hqt(39353,{description="Unlocks an orb at the 7 O'clock basin."}),
-hqt(26741,{description="Unlocks an orb at the 7 O'clock basin."}),
-hqt(40721,{description="Unlocks an orb at the 7 O'clock basin."}),
-hqt(26704,{description="Unlocks an orb at the 7 O'clock basin."})}}),
-o(466943,{description="You must first have completed the previous steps with the watcher statues and empowering your owl.\n1. Clear Vault of the Wardens (any difficulty) with your owl pet summoned through to last boss.\n2. Pick up Elune's light from a statue in the corner of Cordana's arena and QUICKLY get back up to the first boss's room.\n3. Backtrack from the first boss room towards the dungeon entrance, enter the newly opened door on your right, the statue will sit in the center.",maps={710,711,712},providers={{"n",97128}},g={
-i(229046,{b=1,description="Place in the center platform before the last set of stairs leading to Glazer's platform in the Vault of Mirrors.",spellID=464277})}}),
-hqt(84916,{description="Place in the center platform before the last set of stairs leading to Glazer's platform in the Vault of Mirrors.",maps={710,711,712}}),
-o(466960,{crs={109300},description="Once you place the Sentry Statue in the Vault of Mirrors, a 5x5 grid of watcher statues will appear. You need to make each statue descend into the floor, but each statue you click will toggle the state of 4 other statues.\n\nThere are addons and website tools to solve this, for your sanity, use one. You may solve this secret in a group.\n\nFully lights up the 7 O'clock basin.",maps={710,711,712},providers={{"i",208092},{"n",97128}},g={
-i(229054,{b=1})}})}}),
-o(466975,{coords={
-[46]={{59.9,42.6}}},description="On the left side of the hallway after the second stairwell.",g={
-hqt(84829,{cost={{"i",229007,1}},sourceQuests={84811}}),
-hqt(84830,{cost={{"i",229054,1}},sourceQuests={84823}}),
-hqt(84837,{description="1. Hit begin on the console, then hit submit. A randomized number of rats will spawn in the catacombs.\n2. Count the number of Rats in the whole catacombs, use a targeting macro to make sure you don't miss one. There will also be Catacombs Rats, those DO NOT COUNT. Kill both types of rats once you are sure of your count so they cannot interfere with pressure plates.\n3. Depending on the number of rats, you need to drag a certain number of statues to a specific pressure plate and stack them, the beacon color will shift from Blue->Green->Yellow->Orange->Purple as a plate has 1->2->3->4->5 entities stack on it.\n4. Head back to the Enigma Machine and submit, you will be electrocuted if you get it wrong, leave and reset the instance if you do, restarting at lock 1. Otherwise, continue counting the next set of rats and submitting results using info from the next column until you've completed all 7 locks.\n\nPlate 1 is at 71.6, 20.1 at the top of the map in the felcycle room\nPlate 2 is at 68.5, 34.2 right at the entrance to the felcycle room\nPlate 3 is at 73.6, 43.0 behind the locked gate on the right of the map, use your Relic of Crystal Connections to teleport to the humming crystal in the room by targeting it\nPlate 4 is at 68.8, 50.9 in the center of the hallway opposite the felcycle room\nPlate 5 is at 73.6, 65.3 in the flooded dead end hallway right as you enter the catacombs\nPlate 6 is at 60.2, 71.6 on the left side of the hallway before the cat room\nPlate 7 is at 47.8, 78.9 in the corner of the room with the Astral chest\n\n[# Rats | Lock 1| Lock 2| Lock 3|\n[1 Rats | 1 > P1 | 1 > P2 | 1 > P3 |\n[2 Rats | 1 > P2 | 1 > P4 | 1 > P6 |\n[3 Rats | 1 > P3 | 1 > P6 | 2 > P2 |\n[4 Rats | 1 > P4 | 2 > P1 | 2 > P5 |\n[5 Rats | 1 > P5 | 2 > P3 | 3 > P1 |\n[6 Rats | 1 > P6 | 2 > P3 | 3 > P4 |\n[7 Rats | 1 > P7 | 2 > P7 | 1 > P1 |\n[8 Rats | 2 > P1 | 3 > P2 | 1 > P4 |\n[9 Rats | 2 > P2 | 3 > P4 | 1 > P7 |\n[10Rats| 2 > P3 | 3 > P6 | 2 > P3 |\nExample: Counting 2 rats during Lock 2, stack 1 statue on pressure plate 4.\n\nFully lights up the 8 O'clock basin.",providers={{"i",228996}},sourceQuests={84829,84830},g={
-n(230653,{coords={
-[46]={{70.6,34.5}}},description="Right of the entrance of the felcycle room."}),
-n(230654,{coords={
-[46]={{61.2,47.9}}},description="Opposite the Enigma Machine."}),
-n(230655,{coords={
-[46]={{43.4,64.9}}},description="On the right inside the room ahead of the Red Button."}),
-n(230652,{coords={
-[46]={{49.3,75.9}}},description="In the room with the Astral Chest, left of the Red Button."}),
-n(230657,{coords={
-[46]={{70.3,79.1}}},description="At the bottom of the entrance stairwell."}),
-n(230596,{description="This is a |cff4caf50VALID|r rat, it counts!"}),
-n(230599,{description="This is an |cffff0000INVALID|r rat, it DOESN'T count!"})}})}}),
-o(467191,{coords={
-[2255]={{55.1,19},{56.1,17.9},{56.4,17.5}}},description="Return to Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall.\n\nUse your Starry-Eyed goggles to reveal a translucent platform, use your Relic of Crystal Connections on the humming crystal to get up to it.\n\nCode to open at the adjacent decryption console: 84847078.\n\nFully lights the 9 O'clock Basin.",providers={{"i",228966},{"i",228996}},questID=84854,sourceQuests={84837},g={
-mnt(428013,{b=1,itemID=229348,lvl=10}),
-ach(40967)}}),
-n(230070,{coords={
-[46]={{47.4,68.3}}},description="Interacting with the button starts a 20 second timer, refreshing on clicking again. The orb to the left of the button reports how many times the button has been clicked within that window.",g={
-hqt(84702,{description="Unlocks an orb at the 10 O'clock basin."}),
-hqt(84703,{description="Unlocks an orb at the 10 O'clock basin."})}}),
-n(182086,{coords={
-[2022]={{66.2,70.2}}},cost={{"i",200638,1}},description="Feed Hek a Bubblefilled Flounder to be vomited a Duck Egg.",g={
-o(616048,{awp=120001,coords={
-[2022]={{66.3,70.2}}},g={
-i(260522,{b=1})}})}}),
-n(197973,{coords={
-[2112]={{40,78.3}}},description="If Papa and the shiny gift are missing, click the nearby Papa's Feather to call him home.",g={
-o(616053,{awp=120001,coords={
-[2112]={{40,78.3}}},providers={{"i",260522}},g={
-i(260532,{b=1})}})}}),
-n(184166,{coords={
-[2151]={{29.8,47.5},{35.3,40.7},{37.4,23.2},{41.3,38},{54.4,46.4},{54.6,55.4},{62.7,61.4},{63.9,50.7},{73.9,37.6}}},description="Hiding on the Forbidden Reach in one of several locations, To'No and Ko will be stealthed until you're right on top of them. May not be up in any locations, you might have to loop around until a spawn. Disappears a few minutes after being found. \nThe second dialogue interaction awards the Oddsight Focus while the first gives you some random loot.",g={
-i(260533,{awp=120001,b=1,cost={{"i",260532,1}},spellID=1266536})}}),
-hqt(93688,{awp=120001,description="Obtaining the focus fully lights up the 10 O'Clock Basin and removes the void from 11 and 12 O'Clock.",providers={{"i",260533}}}),
-n(255888,{awp=120001,coords={
-[2215]={{33.2,54.6}}},providers={{"i",260533}}}),
-hqt(93764,{awp=120001,description="This step is pretty complicated and requires a 40 man raid, you're also gonna probably need an addon like BeledarOrchestra.\n\nFully lights up the 11 O'Clock Basin.",providers={{"n",255888}},g={
-ach(61516)}}),
-hqt(93765,{awp=120001,coords={
-[630]={{57.8,42.8}},
-[680]={{82.5,67.4}}},description="Head to the southeast of Suramar near the coordinates. Use your Torch of Pyrreth to find a wandering invisible ghost, once found, an extra action button will spawn an Orb of Shadows.\n\nYou must take this orb to Golk the Rumble in the center of Azsuna at the second coordinates and talk to them. The player carrying the orb cannot take damage, jump, or swim, and enemies will spark periodically to attack them, a group of players and water walking of some kind will make this easier. Don't be over water for too long though or your buff will drop. The Starry-Eyed Goggles will stop the Darkness debuff.\n\nFully lights up the 12 O'Clock Basin.",g={
-i(262432,{b=1,g={
-en(246973,{questID=91636,spellID=1244440,tmogSetID=5152,g={
-s(293225,246968,{f=2}),
-s(293223,246966,{f=2}),
-s(293228,246971,{f=2}),
-s(293226,246969,{f=2}),
-s(293224,246967,{f=2}),
-s(293227,246970,{f=2}),
-s(293229,246972,{f=2})}})}}),
-i(262559,{b=1,spellID=1268983})}}),
-o(616681,{awp=120001,coords={
-[46]={{68.5,20.9}}},cost={{"i",262559,1}},description="In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having posession of the Spare Key.",providers={{"i",228966},{"i",260533}},g={
-i(262561)}}),
-o(475116,{coords={
-[46]={{47,78.1},{56.3,73.3},{70.1,90.3},{70.3,81},{70.5,61.7},{70.9,53.9}}},description="These pebbles can be found throughout the catacombs.\n1. Halfway down the entrance stairwell, behind a candelabra sitting on the bannister.\n2. Behind the frame of the archway halfway down the entrance stairwell, opposite the skeleton sitting on the other side of the arch.\n3. To the left of the tilted Replica Owl of the Watchers in the first room after the entrance stairs.\n4. On the inside corner of the doorway to the cat room, interactable through the gate.\n5. In the hand of a skeleton in the corner of the hallway leading to the Felcycle.\n6. On a shelf in the back in the Nature statue room."}),
-i(228953)}})}}),
-ah(147835,{awp=70200,description="***'Show All Trackable Things' is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",displayID=74314,modelScale=0.7,type="i",g={
-o(148502,{coords={
-[627]={{48.8,42.1}}},description="|cFFFFFFFFStep 1:|r We will begin in |cFFFFD700Dalaran|r. Head to the |cFFFFD700Legerdemain Lounge|r at |cFFFFFFFF48.80, 42.10|r. |cFFFFD700Page 9|r will be on the third shelf of the bookcase. Click this to continue. The page reads...\n\n|cFFFFFFFF...of sea, spirit and self...|r",model=305393,questID=45470}),
-o(209270,{coords={
-[47]={{49.2,34}}},description="|cFFFFFFFFStep 2:|r This step will take us to |cFFFFD700Duskwood|r. Head to |cFFFFFFFF49.25, 34.01|r. |cFFFFD700Page 78|r is found on the table beside the moonwell. Click this to continue. The page reads...\n\n|cFFFFFFFF...first of the lords to fall...|r",isWeekly=1,model=305393,questID=47207,sourceQuests={45470}}),
-o(245216,{coords={
-[198]={{47.3,78.1}}},description="|cFFFFFFFFStep 3:|r This step will take us to |cFFFFD700Firelands|r. |cFFFFD700Page 161|r will be found on the left rear side of the |cFFFFD700Ragnaros|r platform. Click this to continue. The page reads...\n\n|cFFFFFFFF...the wind, the eye...|r",isWeekly=1,model=305393,questID=47208,sourceQuests={47207}}),
-o(251564,{coords={
-[249]={{70.4,78.1}}},description="|cFFFFFFFFStep 4:|r This step will take us to |cFFFFD700Uldum|r. Head to |cFFFFFFFF70.44, 78.11|r. |cFFFFD700Page 655|r will be between the two small trees. Click this to continue. The page reads...\n\n|cFFFFFFFF...the plume, the tomb, a scarab moon...|r",isWeekly=1,model=305393,questID=47209,sourceQuests={47208}}),
-o(220821,{coords={
-[390]={{72.4,44.3}}},description="|cFFFFFFFFStep 5:|r This step will take us to |cFFFFD700Siege of Orgrimmar|r. This does not spawn on LFR. Head to the |cFFFFD700Sha of Pride|r room. |cFFFFD700Page 845|r is found in the far back left corner of the room (southwest on the minimap). Click this to continue. The page reads...\n\n|cFFFFFFFF...in snow, sand, and stone...|r",isWeekly=1,model=305393,questID=47210,sourceQuests={47209}}),
-o(220820,{coords={
-[71]={{64.7,49.9}},
-[75]={{22.9,64.4}}},description="|cFFFFFFFFStep 6:|r This step will take us to the |cFFFFD700Well of Eternity|r instance in |cFFFFD700Caverns of Time|r. Kill the first 2 bosses. Take the drake and when you are dropped off walk to the left to the stone stairs. |cFFFFD700Page 1127|r will be on the bottom stair next to a large stone divider. Click this to continue. The page reads...\n\n|cFFFFFFFF...behold the battle, unblinking...|r",isWeekly=1,model=305393,questID=47211,sourceQuests={47210}}),
-o(19023,{coords={
-[379]={{34.6,50.9}}},description="|cFFFFFFFFStep 7:|r This step will take us to |cFFFFD700Kun-Lai Summit|r near the |cFFFFD700Shado-Pan Monastery|r. Head to |cFFFFFFFF34.61, 50.88|r. |cFFFFD700Page 2351|r will be between the statue's paws on the platform. Click this to continue. The page reads...\n\n|cFFFFFFFF...bejeweled watcher...|r",isWeekly=1,model=305393,questID=47212,sourceQuests={47211}}),
-o(244678,{coords={
-[249]={{76.4,53.6}}},description="|cFFFFFFFFStep 8:|r This step will take us to |cFFFFD700Uldum|r. Head to |cFFFFFFFF76.45, 53.67|r. |cFFFFD700Page 5555|r will be on the platform slightly offcenter in front of the left foot of the statue. Click this to continue. The page reads...\n\n|cFFFFFFFF...ray of sunshine...|r",isWeekly=1,model=305393,questID=47213,sourceQuests={47212}}),
-o(269830,{coords={
-[52]={{30.5,27.5}}},description="|cFFFFFFFFStep 9:|r This step will take us to |cFFFFD700Westfall|r. Head to |cFFFFFFFF30.53, 27.56|r. |cFFFFD700Gift of the Mind-Seekers|r will be on the ground here in a broken boat. Click this to obtain your mount. Congratulations on getting the |cFFFFD700Riddler's Mind-Worm|r.\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving this puzzle.",isWeekly=1,model=942865,questID=47214,sourceQuests={47213},g={
-mnt(243025,{b=1,itemID=147835,lvl=10})}})}}),
+ah(279213,{awp=80001,description="You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.",displayID=86805,modelScale=0.8,type="s",g={
+h(-47,{maps={896},g={
+p(2411,{b=1,cost={{"i",163796,1},{"i",163790,1},{"i",163791,1},{"i",163789,1}},itemID=163497,npcID=143189,spellID=279213})}}),
+o(297879,{coords={
+[896]={{55.6,51.8}}},description="Click the inactive torches.",modelScale=1.5,questID=53472,g={
+i(163790,{b=1,spellID=280310}),
+crit(41703,{achID=12995,id=7})}}),
+o(297881,{coords={
+[896]={{25.5,24.2}}},description="Click the inactive torches.",modelScale=1.5,questID=53474,g={
+i(163796,{b=1,spellID=280310}),
+crit(41705,{achID=12995,id=9})}}),
+o(297880,{coords={
+[896]={{67.7,73.7}}},modelScale=1.5,questID=53473,g={
+i(163791,{b=1,spellID=280310}),
+crit(41704,{achID=12995,id=8})}}),
+o(297878,{coords={
+[896]={{18.5,51.3}}},description="Click the inactive torches.",modelScale=1.5,questID=53471,g={
+i(163789,{b=1,spellID=280310}),
+crit(41702,{achID=12995,id=6})}})}})}),
+x(9,{
+ah(344577,{awp=90005,cost={{"i",184870,1}},description="Requires |cFF006812Appreciative|r reputation with Ve'nari and a total of 3,500 Stygia.\n\nEnable quest tracking to see all the steps.\n\nPurchase a |cFF0070ddStygia Dowser|r from Ve'nari for 1,500 Stygia.Throughout the secret, harvest every Stygia Nexus you find, as you will eventually need 200 |cFF1eff00Stygia Dust|r and |cFF1eff00Stygia Slivers|r.",displayID=92632,maps={1543},modelScale=1.1,type="s",g={
+prof(2811,{
+r(350276,{requireSkill=2811,u=5}),
+r(350399,{requireSkill=2811,u=5})}),
+i(185618),
+i(185617),
+n(177073,{coords={
+[1543]={{23.1,68.3},{23.7,75.3}}},description="Click the first grapple point at |cFFFFFFFF23.1, 68.3|r and the next grapple point at |cFFFFFFFF23.7, 75.3|r.\n\nUse your |cFF0070ddStygia Dowser|r when you are on the platform covered with green fog, and you will be transformed into a spirit.\n\nEach of the spikes on the platform is topped with a glowing rune. To open the chest, match the runes in the puzzle to the positioning of the runes atop the spikes. With your back to the grapple point, start with the rune to your left and continue, moving clockwise.\n\n|cffde1c1cIf you match the runes incorrectly, you will die and get a debuff that prevents you from trying the puzzle again for 2 hours.|r",questID=63611,g={
+i(185056,{b=1})}}),
+i(185353,{coords={
+[1543]={{24.6,12.5},{27.6,17.3}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to the teleport pad that takes you to Dartanos's platform, and the page is all the way at the back on a table, behind where the rare spawns.",questID=63643,sourceQuests={63611},spellID=349984,type="ihqt"}),
+i(185351,{coords={
+[1543]={{48.8,84.7}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to a cave entrance, and the page is at the back of the cave on the left side.",questID=63641,sourceQuests={63611},spellID=349982,type="ihqt"}),
+i(185352,{coords={
+[1543]={{27.2,72.3}}},cost={{"i",185350,1}},description="Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe page is on the right side of Thanassos' platform.",questID=63642,sourceQuests={63611},spellID=349983,type="ihqt"}),
+i(185632,{description="Received after collecting and using all the Rune Codex Pages.",questID=63668,sourceQuests={63641,63642,63643},type="ihqt"}),
+i(185473,{b=1,crs={166398},description="Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters who have collected the |cFFa335eeIntact Rune Codex|r.",questID=63667,sourceQuests={63668},type="ihqt"}),
+n(177392,{coords={
+[1543]={{20.2,67},{23,68.4}}},cost={{"i",185474,1}},description="Once you have the |cFFa335eeIntact Rune Codex|r, you can collect |cFFa335eeSoulforger's Tools|r from the rare mob Soulforger Rhovus and finish collecting all your |cFF1eff00Stygia Dust|r and |cFF1eff00Stygia Slivers|r (200 of each).\n\nGrapple all the way up to the Soulsteel Anvil — the first grapple point is at |cFFFFFFFF23.0, 68.4|r, and the anvil is at |cFFFFFFFF20.2, 67.0|r.\n\nCraft 20 |cFF0070ddStygia Bar|r and 1 |cFFa335eeArmored Husk|r.",questID=63707,sourceQuests={63667},g={
+i(185630,{cost={{"i",185617,10},{"i",185618,10}}}),
+i(185474,{b=1,cost={{"i",185630,20},{"i",185473,1}}})}}),
+n(177195,{coords={
+[1543]={{23.2,46.8}}},description="Find a Stray Soul patting along Gorgoa, the River of Souls. Interact with it, and you will receive a |cFFa335eeWilling Wolf Soul|r.\n\nThe coordinates are near the beginning of the soul's path, where it respawns, but if no one interacts with the soul it can pat all the way to |cFFFFFFFF49.8, 16.4|r.",questID=63666,sourceQuests={63707},g={
+i(185471)}}),
+i(185475,{cost={{"i",185471,1},{"i",185474,1}},f=55,sourceQuests={63666}}),
+q(63684,{description="Once you have the |cFFa335eeArmored Husk|r and the |cFFa335eeWilling Wolf Soul|r, click on the Binding Altar at |cFFFFFFFF45.2, 48.3|r.\n\n|cffde1c1cAs soon as you summon the mount, it will start running, so make sure you're facing towards the interior of the zone and that you won't run off the edge and into the void!|r\n\nOnce you're mounted, your hotkeys will be replaced with runes. Use them in the order provided by your |cFFa335eeCrumbling Stele|r, and you will receive the mount!",lvl=60,providers={{"i",185475}},g={
+mnt(344577,{b=1,itemID=184168}),
+i(185616,{spellID=350274})}})}}),
+ah(329900,{awp=90001,displayID=96259,modelScale=0.8,type="s",g={
+q(60605,{coords={
+[116]={{18.4,88.2}}},providers={{"o",352909}},g={
+i(5996,{f=55,lvl=4,spellID=7178})}}),
+q(60606,{coords={
+[114]={{43.5,13.9}}},qgs={25197},sourceQuests={60605},g={
+i(180010)}}),
+q(60614,{coords={
+[116]={{17.8,93.2}}},qgs={169414},sourceQuests={60606},g={
+i(180025)}}),
+q(60615,{coords={
+[116]={{17.8,93.2}}},qgs={169414},sourceQuests={60614}}),
+q(60616,{coords={
+[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60615},g={
+o(352915,{coords={
+[116]={{17.1,93.8}}},g={
+i(180026)}})}}),
+q(60617,{coords={
+[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60616}}),
+q(60619,{coords={
+[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60617},g={
+o(352926,{coords={
+[116]={{12.7,96.7}}},g={
+i(180031)}}),
+o(352924,{coords={
+[116]={{11.2,95}}},g={
+i(180033)}}),
+o(352925,{coords={
+[116]={{9,94.2}}},g={
+i(180032)}})}}),
+q(60620,{coords={
+[116]={{17.1,93.8}}},qgs={169415},sourceQuests={60619},g={
+p(2888,{b=1,itemID=180034,npcID=169514,spellID=329900})}})}}),
+ah(192485,{awp=90205,type="i",g={
+n(162804,{coords={
+[1543]={{46.9,41.7}}},description="If you talk to Ve'nari at her usual location in her hideout in the Maw, you'll see that she is an echo and no longer physically present. Talking to her reveals an extra dialogue option, where she will mention that she has finally found Zereth Mortis.",questID=65470}),
+n(185083,{coords={
+[1970]={{47.4,88.6}}},description="After talking to Ve'nari's echo in her hideout, head to the Creation Catalyst in Zereth Mortis. There, you will find Ve'nari's charred corpse in the center of the room. Interact with it, and select the dialogue option to take a closer look.",questID=65488,sourceQuests={65470}}),
+h(-39,{description="You should receive a letter from Ve'nari with the toy attached 5 days after interacting with her decoy corpse in Zereth Mortis.",sourceQuests={65488},g={
+toy(192485,{b=1})}})}})}),
+x(10,{
+ah(201933,{awp=100002,description="***Debugg Mode enabled is required to see all the steps.***\n\nFollow the steps as ordered in the descriptions.",displayID=110513,modelScale=1.6,type="i",g={
+o(377485,{coords={
+[2022]={{43.7,71.7}}},description="Step 1: Get a Sour Apple.",modelScale=0.1,g={
+i(194122,{spellID=376662})}}),
+n(191851,{coords={
+[2022]={{43.2,67.3}}},cost={{"i",194122,1}},description="Step 2: Use the Sour Apple on the Blacktalon Shadowclaw and then, mount up on it.",modelScale=0.8}),
+o(379168,{coords={
+[2022]={{43.7,69.6}}},description="Step 3: Loot the 'Lost Cache Key'.",modelScale=0.2,g={
+i(198085,{b=1,spellID=331657})}}),
+o(378857,{coords={
+[2022]={{44.6,70.1}}},cost={{"i",198085,1}},description="Step 4: Venture into the cave to locate the 'Lost Obsidian Cache'.",modelScale=1.6,questID=70018,g={
+toy(201933,{b=1})}})}}),
+ah(206040,{awp=100100,description="You need to collect all 15 motes to receive this pet. Requires Quest Tracking to see the motes' Location.",displayID=112636,type="i",g={
+h(-47,{maps={2022,2023,2024,2025,2151},g={
+p(3581,{b=1,itemID=206040,npcID=205649,spellID=411800})}}),
+h(-56,{
+n(205876,{coords={
+[2023]={{61.2,64.4}}},nomerge=1,questID=76182}),
+n(205876,{coords={
+[2023]={{34.3,58.7}}},nomerge=1,questID=76183}),
+n(205876,{coords={
+[2025]={{62.7,13.2}}},nomerge=1,questID=76189}),
+n(205876,{coords={
+[2025]={{61.2,40.7}}},nomerge=1,questID=76190}),
+n(205876,{coords={
+[2025]={{72.9,55.1}}},nomerge=1,questID=76191}),
+n(205876,{coords={
+[2025]={{70.9,69.8}}},nomerge=1,questID=76192}),
+n(205876,{coords={
+[2025]={{62.6,85.1}}},nomerge=1,questID=76193}),
+n(205876,{coords={
+[2024]={{78.8,34.1}}},nomerge=1,questID=76178}),
+n(205876,{coords={
+[2024]={{61.6,71.4}}},nomerge=1,questID=76179}),
+n(205876,{coords={
+[2024]={{36.4,56.5}}},nomerge=1,questID=76180}),
+n(205876,{coords={
+[2024]={{8.2,53.1}}},nomerge=1,questID=76181}),
+n(205876,{coords={
+[2151]={{36,34.2}}},nomerge=1,questID=76188}),
+n(205876,{coords={
+[2022]={{22.8,88.4}}},nomerge=1,questID=76184}),
+n(205876,{coords={
+[2022]={{24.1,55.6}}},nomerge=1,questID=76185}),
+n(205876,{coords={
+[2022]={{58.5,67.7}}},nomerge=1,questID=76186}),
+n(205876,{coords={
+[2022]={{63.9,44.8}}},nomerge=1,questID=76187})})}}),
+ah(376873,{awp=100002,cost={{"i",202042,1}},description="***Debugg Mode enabled is required to see all the steps. Fishing is required for this Secret!***\n\nYou need to buy an Immaculate Bag of Swog Treasures to get the Aquatic Shades, which costs 1 Gold Coin of the Isles. If you're unlucky, this means fishing up a total of 75 Copper Coins of the Isles to trade up!",displayID=102074,modelScale=0.8,type="s",g={
+q(72676,{coords={
+[2022]={{19.6,36.5}}},description="Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off."}),
+o(385001,{coords={
+[2022]={{20,40}}},description="Once you wake up from your dance hangover, loot the Empty Fish Barrel. It's directly in front of you.",sourceQuests={72676},g={
+i(202061,{requireSkill=356,sourceQuests={72676},spellID=396616})}}),
+i(202061,{cost={{"i",202072,100}},description="Time to go fishing! You'll need to fill up the barrel with various fish from around The Dragon Isles.",requireSkill=356,sourceQuests={72676},spellID=396616,g={
+i(202072,{b=1,coords={
+[2024]={{12.4,50}}},description="You'll need 100 of these fish. They can be found in open waters in the Azure Span. After using them with the barrel, you'll receive a Half-Filled Fish Barrel."})}}),
+i(202066,{cost={{"i",202073,25}},description="Now that your barrel is half full, the fishing gets harder. You're looking for lava fish now.",requireSkill=356,sourceQuests={72676},spellID=396699,g={
+i(202073,{b=1,coords={
+[2022]={{35.8,64.6}}},description="You'll need 25 of these fish. Keep in mind, they're rarer drops, so this will take longer than the Frigid Floe Fish."})}}),
+q(72808,{cost={{"i",202074,1}},description="Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",requireSkill=356,sourceQuests={72676},g={
+i(202074,{b=1,coords={
+[2025]={{56,44.5}}},description="Just one! But it'll take a while. Having good Perception on your Profession gear may help."}),
+i(202068,{spellID=396698})}}),
+i(202069,{coords={
+[2022]={{20,40}}},description="Head back to where you originally picked up the empty barrel, and place the Overflowing Fish Barrel on the ground.",spellID=396703}),
+q(72738,{coords={
+[2022]={{20,40}}},lvl=10,qgs={199563},sourceQuests={72808},g={
+mnt(376873,{b=1,itemID=198870,lvl=10})}})}}),
+ah(193373,{awp=100007,description="Below is a detailed explanation on how to obtain the Phoenix Wishwing pet.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",displayID=106643,type="i",g={
+o(13000040,{description="|cFFFFFFFFStep 1:|r Obtain the Phoenix Ash Talisman from Zektar in Spires of Arak.",providers={{"i",199203}},g={
+o(13000041,{description="|cFFFFFFFFStep 1A:|r Obtain the Glittering Phoenix Ember from Alysrazor in Firelands Timewalking.",providers={{"i",199099}}}),
+o(13000042,{description="|cFFFFFFFFStep 1B:|r Obtain 20 Inert Phoenix Ash from fire elementals in Un'Goro Crater.",providers={{"i",199092}}}),
+o(13000043,{description="|cFFFFFFFFStep 1C:|r Obtain 10 Sacred Phoenix Ash from cookpots in Spires of Arak.",providers={{"i",199097}}})}}),
+o(13000044,{description="|cFFFFFFFFStep 2:|r Obtain 20 Ash Feathers spawned by Griftah's Ash Feather Amulet.",providers={{"i",202062}}}),
+o(13000045,{description="|cFFFFFFFFStep 3:|r Obtain 15 Smoldering Phoenix Ash from phoenixes around the Dragon Isles.",providers={{"i",199080}}}),
+q(72798,{coords={
+[2022]={{16.1,62.6}}},cost={{"i",199203,1},{"i",199080,15},{"i",202062,20}},lvl=10,qgs={196214},repeatable=1,sourceQuests={70779},g={
+p(3292,{b=1,itemID=193373,npcID=189117,spellID=375084})}})}}),
 h(-505,{awp=100105,description="***Using Debug Mode is recommended.***\n",g={
 h(-12,{
 ach(18644,{sym={{"select","questID",77289,77288,77291,77292,77290,77293,77296,77294,77297,77298,77299,78208,78207,77300,77302,77301,77295}},g={
@@ -611,10 +449,10 @@ ach(18642,{coords={
 title(512),
 crit(60752,{achID=18646,id=2})}}),
 ach(18645,{
-s(189591,208149,{f=2}),
 crit(60754,{achID=18645,providers={{"i",206696}}}),
 crit(60755,{achID=18645,providers={{"i",208092}}}),
-crit(60756,{achID=18645,providers={{"i",207730}}})}),
+crit(60756,{achID=18645,providers={{"i",207730}}}),
+s(189591,208149,{f=2})}),
 ach(18646,{
 mnt(418078,{b=1,itemID=208152}),
 title(519)}),
@@ -679,13 +517,13 @@ h(-45,{
 q(77202,{coords={
 [2112]={{55,37}}},DisablePartySync=1,isBreadcrumb=1,nextQuests={77203},qgs={199261},repeatable=1}),
 q(77203,{coords={
-[2112]={{47.4,48.1},{58.88,54.09}}},description="Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",qgs={206864},sourceQuests={77202},g={
+[2112]={{47.4,48.1},{58.9,54.1}}},description="Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",qgs={206864},sourceQuests={77202},g={
 i(208054,{
 i(208056),
 i(208055)}),
 crit(60849,{achID=18646,id=1})}}),
 q(76735,{coords={
-[114]={{33.63,58.45}},
+[114]={{33.6,58.5}},
 [115]={{48,74.8}},
 [2024]={{12.4,49.2}},
 [2112]={{47.4,48.1}}},description="Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",lvl=10,qgs={206864},repeatable=1,sourceQuests={77203},g={
@@ -980,7 +818,192 @@ mnt(424082,{b=1,cost={{"i",209055,1},{"i",209781,1},{"i",208984,1}},description=
 h(-58,{
 n(206864,{coords={
 [2112]={{47.3,48.2}}},g={
-i(229375,{awp=110005,b=1,f=55,spellID=464886})}})})}}),
+i(229375,{awp=110005,b=1,f=55,spellID=464886})}})})}})}),
+x(12,{awp=120000,g={
+ah(62189,{coords={
+[204]={{15,90}}},description="Swim out to the coordinates then further out south just until fatigue kicks in, then retreat.\nSwim down until fatigue kicks in again then mad dash towards the glowing orb by the skeleton.\n\nYou will want the Vash'jir seahorse and water breathing to make it in time.",type="a",g={
+n(256536,{description="Around the room are displays tracking various 'secret' activities you may or may not have completed. If you've completed enough (17+), speak to Anakron to become a Mind Seeker.",g={
+hqt(94828),
+ach(62189,{sourceQuests={94828},g={
+title(671)}})}}),
+n(256667,{
+i(166545,{b=1,f=55,spellID=11629}),
+i(232005,{f=55,spellID=433}),
+i(232006,{f=55,spellID=104235}),
+i(232009,{f=55,spellID=433}),
+i(232007,{f=55,spellID=431}),
+i(262880,{f=55,spellID=11629})})}})}}),
+h(-503,{awp=50004,description="Multi-expansion secret to obtaining Dog as a companion pet.",displayID=1100,g={
+q(30526,{coords={
+[376]={{42.4,50.2}}},lvl=15,minReputation={1272,21600},qgs={59533},g={
+i(80144),
+de(4488,{awp=110207,itemID=248663,sourceQuests={30526},spellID=1247392})}}),
+q(46952,{awp=70200,coords={
+[582]={{58.8,53.8}},
+[590]={{44.6,84.8}}},description="Find a Loose Pebble on the streets of (Legion) Dalaran. Build an Herb Garden in your garrison.\nSpeak with Dog and show him the Pebble. Do not throw the Pebble at Dog.",qgs={87553},qis={147420},sourceQuests={30526,34193,36404}}),
+q(83093,{awp=110002,coords={
+[2248]={{31.4,51.3}}},description="Interact with the bowl near Dalaran's crash site to bring Dog out of hiding.",providers={{"o",452438}},sourceQuests={46952}}),
+q(83094,{awp=110002,coords={
+[2248]={{31.4,51.3}}},description="Interact with Dog and <Pet his head> to get him as a pet.",qgs={225486},sourceQuests={83093},g={
+p(4596,{b=1,itemID=224766,npcID=225537,spellID=453741})}})}}),
+ah(40967,{awp=110005,description="***Using Debug Mode is recommended.***\n",type="a",g={
+o(182030,{coords={
+[78]={{44.5,8}}},description="Inside a rotten tree trunk in the far north of Un'Goro Crater. Use your Torch of Pyrreth to reveal it.",providers={{"i",208092}},g={
+i(228941,{b=1,spellID=463482})}}),
+hqt(84685,{coords={
+[2339]={{54.9,28.9}}},sourceAchievements={40870}}),
+q(84684,{coords={
+[2339]={{54.9,28.9}}},description="Find 3 notes scattered around Azj-Kahet then confront Ratts in Pillar-nest Vosh.",lvl=10,qgs={230042},sourceQuests={84685},g={
+i(228934,{spellID=462610}),
+o(466118,{coords={
+[2255]={{69.3,93.3}}},description="#1. In a cave in Azj'Kahet in the center of 5 Rotglow Settlers.",g={
+i(228935,{spellID=462610})}}),
+o(466119,{coords={
+[2213]={{31.5,20.8}}},description="#2. High up on a ridge overlooking the City of Threads.",g={
+i(228936,{spellID=462610})}}),
+o(466120,{coords={
+[2215]={{50.7,86.6}}},description="#3. Underwater in the center of a lake on the right side of the Azj-Kahet-Hallowfall transition.",g={
+i(228937,{spellID=462610})}}),
+o(466128,{coords={
+[2255]={{55.1,19},{56.4,17.5}}},description="#4. To turn in the quest, enter Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall."}),
+i(228938,{b=1})}}),
+i(44124,{b=1,cost={{"i",228938,1},{"i",228941,1}},description="Once reformed, go to the entrance of the Karazhan Catacombs in Deadwind Pass and use your Torch of Pyrreth by the gate to teleport into a secret scenario."}),
+m(46,{coords={
+[42]={{46.3,69.1}}},description="Deep into the catacombs the bike is just sitting there out of reach, but is surrounded by 12 basins which can light up with orbs if enough actions are performed.",providers={{"i",44124},{"i",208092}},g={
+hqt(84676,{coords={
+[10]={{55,40.2}},
+[550]={{49.2,48},{74.2,37.5}},
+[1536]={{27.3,61.3}}},crs={82688,175815},description="Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Northern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\n\nFully lights up the 1 O'clock basin.",providers={{"i",208092}},sourceQuests={84684}}),
+hqt(84677,{description="Requires the 1 O'clock basin to have been completed to see the obelisk personally.\n1. Acquire the Twitching Eyaball or All-Seeing Eyes toys\n2. Acquire a Perky Pug with either the Dogg-Saron costume from Vashti the Wandering Merchant in Azsuna or the Yipp-Saron costume from Hallow's End (or the AH.)\n3. Bring these items OR find a friend who has them and visit the Ny'Alotha Obelisk above the Seat of Knowledge in the Vale of Eternal Blossoms (BFA).\n4. Have someone summon a perky pug and use the toys, then /pray in front of the obelisk to be granted the Key of Shadows.\n\nThere is a 5-15 minute delay even if you do everything right. Everyone within 10 yards should get the key if anyone in range does it correctly.\n\nFully lights up the 2 O'clock basin",providers={{"n",37865},{"n",153297}},g={
+n(153297,{coords={
+[1530]={{83.7,27.6}}},cost={{"i",116812,1},{"i",229413,1}},providers={{"i",168123},{"i",175140}},g={
+i(53156,{b=1,description="Opens both doors in the room with the Red Button.",spellID=3366})}})}}),
+ah(228967,{description="1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin, fully lighting with 9 orbs.",providers={{"i",53156}},sourceQuests={84677},type="i",g={
+i(228965,{b=1,sourceQuests={84677},spellID=3366}),
+o(466393,{coords={
+[46]={{48.4,79.5}}},providers={{"i",228965}},sourceQuests={84677},g={
+toy(228966,{b=1,sourceQuests={84677}})}}),
+o(466400,{coords={
+[46]={{48.9,80.3}}},description="Code to open at the adjacent decryption console: 88224646",questID=84757,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
+o(466413,{coords={
+[46]={{42.9,70.6}}},description="Code to open at the adjacent decryption console: 17112317",questID=84758,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
+o(466479,{coords={
+[46]={{49.5,65.1}}},description="Code to open at the adjacent decryption console: 1533, 3457, 8265, or 10638",providers={{"i",228966}},questID=84768,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
+o(466495,{coords={
+[46]={{67.4,84.3}}},description="Code to open at the adjacent decryption console: 19019",providers={{"i",228966}},questID=84771,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
+o(466484,{coords={
+[46]={{56.3,62.6}}},description="Code to open at the adjacent decryption console: 5661",providers={{"i",228966}},questID=84769,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
+o(466420,{coords={
+[46]={{64.9,48.3}}},description="Code to open at the adjacent decryption console: 52233",providers={{"i",228966}},questID=84766,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
+o(466497,{coords={
+[46]={{70.3,55.4}}},description="Code to open at the adjacent decryption console: 51567",providers={{"i",228966}},questID=84772,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
+o(466489,{coords={
+[46]={{66.3,15.2}}},description="Code to open at the adjacent decryption console: 115",providers={{"i",228966}},questID=84770,sourceQuests={84677},g={
+i(228967,{b=1,sourceQuests={84677}})}}),
+ah(84786,{description="In the felcycle room is over a dozen slot machine consoles around the walls, any of them work for this coin. Variations of 777, 888 and 168 are correct answers but the machines only pay out a coin if you are deemed lucky.\nYour luck can be increased by obtaining at least 5 unique lucky things. It's not clear what counts but Blizzard states there are 13 possible lucky sources, some have been listed as a provider for this step. If you see the 'You feel lucky' emote in chat, you should be good, but try at least once anyway, the machine will pay out on first attempt if you're lucky enough, it is not random.\nNo chest will spawn, you will be given the Piece of Hate directly.",providers={{"i",5373},{"i",138382},{"i",138385},{"i",198400},{"i",198857},{"i",200265},{"i",202046}},sourceQuests={84677},type="q",g={
+i(228967,{b=1,sourceQuests={84677}}),
+hqt(84786,{sourceQuests={84677}})}})}}),
+hqt(84780,{coords={
+[22]={{52.1,85.1}}},cost={{"i",228987,1}},description="1. Use the Scroll of Fel Binding sold by Vashti the Wandering Merchant in Azsuna (Broken Isles) right outside Uther's Tomb in the Western Plaugelands.\n2. You will die, return to your corpse and fight the Doomguard while inspecting the four writings on the floor of the tomb. Anyone can summon the demon and writings will stay visible as long as it lives.\n\nFully lights up the 4 O'clock basin."}),
+q(84781,{coords={
+[554]={{43.1,41.4}},
+[555]={{39.6,38.4},{53.3,56.8}}},crs={71876},description="1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Francois, Gizmo the Pure, Glimr, Hungering Claw, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Renny, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Tobias, Wicker Pup",lvl=10,qgs={16445,61087,111984,134406,139770,141941,143189,143730,159783,160704,163897,169514,179008,189117,191381,192343,204367,208643,229779,232048},sourceQuests={84780},g={
+i(228995,{b=1})}}),
+hqt(84811,{description="Use your Torch of Pyrreth at various alters to summon a Spirit of Collections. Perform several actions to appease the spirits on each alter of acquisition, an action may require summoning a mount, pet, or toy associated with each spirit, emoting in some way, or changing your transmog.\n\nSomeone in your phase can appease a spirit for you if nearby, but they must fulfill each part of a spirit's appeasement themselves. If one person covers mount, and another covers pet for example, it will not work.\n\nEach appeased spirit will add an orb to the 6 O'clock basin, and looting the final chest will light it fully.",providers={{"i",208092}},g={
+hqt(84809,{coords={
+[50]={{77.1,46.3}}},crs={230430},description="Confirmed actions to appease:\nMounts: Any with 'blood' in their name\n\nPets: Any with 'blood' in their name\n\nToys: Throbbing Blood Orb"}),
+hqt(84807,{coords={
+[50]={{77.5,43.9}}},crs={230424},description="Confirmed actions to appease:\nOutfit: Cloak of Overwhelming Corruption (or a cloak with the same appearance)\n\nEmotes: /cower with the spirit targeted\n\nMounts: Any with 'corrupted' in their name\n\nPets: Any with 'corrupted' in their name\n\nToys: Ring of Broken Promises, Accursed Tome of the Sargerei"}),
+hqt(84810,{coords={
+[50]={{78.1,46.3}}},crs={230440},description="Confirmed actions to appease:\nOutfit: Cloak of the Black Void (or a cloak with the same appearance)\n\nEmotes: /smirk with the spirit targeted\n\nPets: Lesser Voidcaller, Sir Shady Mrrgglton Junior, Voidwiggler\n\nToys: Shadowy Disguise, Void Totem"}),
+hqt(84806,{coords={
+[50]={{78.3,44}}},crs={230423},description="Confirmed actions to appease:\nOutfit: Any sinstone back cosmetic\n\nPets: Sinheart\n\nToys: Bondable Sinstone"}),
+hqt(84808,{coords={
+[50]={{77.1,44.9}}},crs={230425},description="Confirmed actions to appease:\nOutfit: Be naked\n\nEmotes: /flirt with the spirit targeted\n\nPets: Sister of Temptation\n\nToys: Moroes' Famous Polish, Steamy Romance Novel Kit"}),
+o(466808,{coords={
+[50]={{78.2,47.7}}},description="Appears by the wall nearby the Shadow alter once each spirit has been appeased. Use your goggles to see it.",providers={{"i",228966}},sourceQuests={84781,84806,84807,84808,84809,84810},g={
+i(229007,{b=1,spellID=444913})}})}}),
+hqt(84823,{description="Empower your owl pet with the Owl statues in Azsuna then enter the Vault of the Wardens to find a Sentry Statue. Use it to solve a puzzle to receive the mirror.\n\nEmpowering your owl will add 4 orbs to the 7 O'clock basin, and solving the sentry puzzle will light it fully.",maps={630,710,711,712},g={
+ah(254262,{coords={
+[630]={{37.1,82.16},{40.52,75.19},{40.54,73.15},{43.24,85.3},{43.66,87.51},{44.18,72.41},{45.97,84.06},{47.48,84.74},{50.45,91.67}}},description="On the Isle of the Watchers in Azsuna are 9 Owl of the Watchers statues, on any shard, only 4 of them will be interactable at any given time.\n\nYou need an owl pet, the Fledgling Warden Owl sold by the Wardens quartermaster on the same island is confirmed to work, but other owls may work too.\n\nSummon your owl and don't let it disappear by flying too far away. Find an interactable statue and sit in the aura it creates with your pet until an audible sound cue plays and a secret magnifying glass icon appears over your head. Do that again for 4 different statue auras, Red, Green, Blue and Purple.\nYou'll know you're done when your owl has a distinct white orb above their head. Unlocks 4 orbs at Basin 7.",providers={{"n",97128}},type="o",g={
+hqt(39353,{description="Unlocks an orb at the 7 O'clock basin."}),
+hqt(26741,{description="Unlocks an orb at the 7 O'clock basin."}),
+hqt(40721,{description="Unlocks an orb at the 7 O'clock basin."}),
+hqt(26704,{description="Unlocks an orb at the 7 O'clock basin."})}}),
+o(466943,{description="You must first have completed the previous steps with the watcher statues and empowering your owl.\n1. Clear Vault of the Wardens (any difficulty) with your owl pet summoned through to last boss.\n2. Pick up Elune's light from a statue in the corner of Cordana's arena and QUICKLY get back up to the first boss's room.\n3. Backtrack from the first boss room towards the dungeon entrance, enter the newly opened door on your right, the statue will sit in the center.",maps={710,711,712},providers={{"n",97128}},g={
+i(229046,{b=1,description="Place in the center platform before the last set of stairs leading to Glazer's platform in the Vault of Mirrors.",spellID=464277})}}),
+hqt(84916,{description="Place in the center platform before the last set of stairs leading to Glazer's platform in the Vault of Mirrors.",maps={710,711,712}}),
+o(466960,{crs={109300},description="Once you place the Sentry Statue in the Vault of Mirrors, a 5x5 grid of watcher statues will appear. You need to make each statue descend into the floor, but each statue you click will toggle the state of 4 other statues.\n\nThere are addons and website tools to solve this, for your sanity, use one. You may solve this secret in a group.\n\nFully lights up the 7 O'clock basin.",maps={710,711,712},providers={{"i",208092},{"n",97128}},g={
+i(229054,{b=1})}})}}),
+o(466975,{coords={
+[46]={{59.9,42.6}}},description="On the left side of the hallway after the second stairwell.",g={
+hqt(84829,{cost={{"i",229007,1}},sourceQuests={84811}}),
+hqt(84830,{cost={{"i",229054,1}},sourceQuests={84823}}),
+hqt(84837,{description="1. Hit begin on the console, then hit submit. A randomized number of rats will spawn in the catacombs.\n2. Count the number of Rats in the whole catacombs, use a targeting macro to make sure you don't miss one. There will also be Catacombs Rats, those DO NOT COUNT. Kill both types of rats once you are sure of your count so they cannot interfere with pressure plates.\n3. Depending on the number of rats, you need to drag a certain number of statues to a specific pressure plate and stack them, the beacon color will shift from Blue->Green->Yellow->Orange->Purple as a plate has 1->2->3->4->5 entities stack on it.\n4. Head back to the Enigma Machine and submit, you will be electrocuted if you get it wrong, leave and reset the instance if you do, restarting at lock 1. Otherwise, continue counting the next set of rats and submitting results using info from the next column until you've completed all 7 locks.\n\nPlate 1 is at 71.6, 20.1 at the top of the map in the felcycle room\nPlate 2 is at 68.5, 34.2 right at the entrance to the felcycle room\nPlate 3 is at 73.6, 43.0 behind the locked gate on the right of the map, use your Relic of Crystal Connections to teleport to the humming crystal in the room by targeting it\nPlate 4 is at 68.8, 50.9 in the center of the hallway opposite the felcycle room\nPlate 5 is at 73.6, 65.3 in the flooded dead end hallway right as you enter the catacombs\nPlate 6 is at 60.2, 71.6 on the left side of the hallway before the cat room\nPlate 7 is at 47.8, 78.9 in the corner of the room with the Astral chest\n\n[# Rats | Lock 1| Lock 2| Lock 3|\n[1 Rats | 1 > P1 | 1 > P2 | 1 > P3 |\n[2 Rats | 1 > P2 | 1 > P4 | 1 > P6 |\n[3 Rats | 1 > P3 | 1 > P6 | 2 > P2 |\n[4 Rats | 1 > P4 | 2 > P1 | 2 > P5 |\n[5 Rats | 1 > P5 | 2 > P3 | 3 > P1 |\n[6 Rats | 1 > P6 | 2 > P3 | 3 > P4 |\n[7 Rats | 1 > P7 | 2 > P7 | 1 > P1 |\n[8 Rats | 2 > P1 | 3 > P2 | 1 > P4 |\n[9 Rats | 2 > P2 | 3 > P4 | 1 > P7 |\n[10Rats| 2 > P3 | 3 > P6 | 2 > P3 |\nExample: Counting 2 rats during Lock 2, stack 1 statue on pressure plate 4.\n\nFully lights up the 8 O'clock basin.",providers={{"i",228996}},sourceQuests={84829,84830},g={
+n(230653,{coords={
+[46]={{70.6,34.5}}},description="Right of the entrance of the felcycle room."}),
+n(230654,{coords={
+[46]={{61.2,47.9}}},description="Opposite the Enigma Machine."}),
+n(230655,{coords={
+[46]={{43.4,64.9}}},description="On the right inside the room ahead of the Red Button."}),
+n(230652,{coords={
+[46]={{49.3,75.9}}},description="In the room with the Astral Chest, left of the Red Button."}),
+n(230657,{coords={
+[46]={{70.3,79.1}}},description="At the bottom of the entrance stairwell."}),
+n(230596,{description="This is a |cff4caf50VALID|r rat, it counts!"}),
+n(230599,{description="This is an |cffff0000INVALID|r rat, it DOESN'T count!"})}})}}),
+o(467191,{coords={
+[2255]={{55.1,19},{56.1,17.9},{56.4,17.5}}},description="Return to Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall.\n\nUse your Starry-Eyed goggles to reveal a translucent platform, use your Relic of Crystal Connections on the humming crystal to get up to it.\n\nCode to open at the adjacent decryption console: 84847078.\n\nFully lights the 9 O'clock Basin.",providers={{"i",228966},{"i",228996}},questID=84854,sourceQuests={84837},g={
+mnt(428013,{b=1,itemID=229348,lvl=10}),
+ach(40967)}}),
+n(230070,{coords={
+[46]={{47.4,68.3}}},description="Interacting with the button starts a 20 second timer, refreshing on clicking again. The orb to the left of the button reports how many times the button has been clicked within that window.",g={
+hqt(84702,{description="Unlocks an orb at the 10 O'clock basin."}),
+hqt(84703,{description="Unlocks an orb at the 10 O'clock basin."})}}),
+n(182086,{coords={
+[2022]={{66.2,70.2}}},cost={{"i",200638,1}},description="Feed Hek a Bubblefilled Flounder to be vomited a Duck Egg.",g={
+o(616048,{awp=120001,coords={
+[2022]={{66.3,70.2}}},g={
+i(260522,{b=1})}})}}),
+n(197973,{coords={
+[2112]={{40,78.3}}},description="If Papa and the shiny gift are missing, click the nearby Papa's Feather to call him home.",g={
+o(616053,{awp=120001,coords={
+[2112]={{40,78.3}}},providers={{"i",260522}},g={
+i(260532,{b=1})}})}}),
+n(184166,{coords={
+[2151]={{29.8,47.5},{35.3,40.7},{37.4,23.2},{41.3,38},{54.4,46.4},{54.6,55.4},{62.7,61.4},{63.9,50.7},{73.9,37.6}}},description="Hiding on the Forbidden Reach in one of several locations, To'No and Ko will be stealthed until you're right on top of them. May not be up in any locations, you might have to loop around until a spawn. Disappears a few minutes after being found. \nThe second dialogue interaction awards the Oddsight Focus while the first gives you some random loot.",g={
+i(260533,{awp=120001,b=1,cost={{"i",260532,1}},spellID=1266536})}}),
+hqt(93688,{awp=120001,description="Obtaining the focus fully lights up the 10 O'Clock Basin and removes the void from 11 and 12 O'Clock.",providers={{"i",260533}}}),
+n(255888,{awp=120001,coords={
+[2215]={{33.2,54.6}}},providers={{"i",260533}}}),
+hqt(93764,{awp=120001,description="This step is pretty complicated and requires a 40 man raid, you're also gonna probably need an addon like BeledarOrchestra.\n\nFully lights up the 11 O'Clock Basin.",providers={{"n",255888}},g={
+ach(61516)}}),
+hqt(93765,{awp=120001,coords={
+[630]={{57.8,42.8}},
+[680]={{82.5,67.4}}},description="Head to the southeast of Suramar near the coordinates. Use your Torch of Pyrreth to find a wandering invisible ghost, once found, an extra action button will spawn an Orb of Shadows.\n\nYou must take this orb to Golk the Rumble in the center of Azsuna at the second coordinates and talk to them. The player carrying the orb cannot take damage, jump, or swim, and enemies will spark periodically to attack them, a group of players and water walking of some kind will make this easier. Don't be over water for too long though or your buff will drop. The Starry-Eyed Goggles will stop the Darkness debuff.\n\nFully lights up the 12 O'Clock Basin.",g={
+i(262432,{b=1,g={
+en(246973,{questID=91636,spellID=1244440,tmogSetID=5152,g={
+s(293225,246968,{f=2}),
+s(293223,246966,{f=2}),
+s(293228,246971,{f=2}),
+s(293226,246969,{f=2}),
+s(293224,246967,{f=2}),
+s(293227,246970,{f=2}),
+s(293229,246972,{f=2})}})}}),
+i(262559,{b=1,spellID=1268983})}}),
+o(616681,{awp=120001,coords={
+[46]={{68.5,20.9}}},cost={{"i",262559,1}},description="In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having posession of the Spare Key.",providers={{"i",228966},{"i",260533}},g={
+i(262561)}}),
+o(475116,{coords={
+[46]={{47,78.1},{56.3,73.3},{70.1,90.3},{70.3,81},{70.5,61.7},{70.9,53.9}}},description="These pebbles can be found throughout the catacombs.\n1. Halfway down the entrance stairwell, behind a candelabra sitting on the bannister.\n2. Behind the frame of the archway halfway down the entrance stairwell, opposite the skeleton sitting on the other side of the arch.\n3. To the left of the tilted Replica Owl of the Watchers in the first room after the entrance stairs.\n4. On the inside corner of the doorway to the cat room, interactable through the gate.\n5. In the hand of a skeleton in the corner of the hallway leading to the Felcycle.\n6. On a shelf in the back in the Nature statue room."}),
+i(228953)}})}}),
 h(-507,{awp=70305,g={
 cq(49762,{an="s:258803",cost={{"i",122674,1}},crs={124828},maps={909,910,911,912,913,914,915,916,917,918,919,920},OnTooltip=_.OnTooltipDB.SelfieFilter,spellID=258803}),
 cq(49761,{an="s:258749",cost={{"i",122674,1}},crs={52409},maps={367,368,369},OnTooltip=_.OnTooltipDB.SelfieFilter,spellID=258749}),
@@ -1069,6 +1092,7 @@ o(9999946,{description="Souls fEast on the enDless shrieKing, in darKNess they w
 o(294096,{coords={
 [542]={{35.5,32}}},description="Your journey continues in Spires of Arak. You must have summoned Baa'l at least once before you can continue. \n\nInside the small basket \n\nThe Orb Reads: \n\n\"<Something is written here.>\n\nPassive Ice Veins\"",model=1046021,questID=52830,sourceQuests={52829}}),
 o(294097,{coords={
+[13]={{43.3,77.9}},
 [37]={{17.5,56.5}}},description="Stormwind City\n\nThe Strange Seed reads: \n\n\"<Something is written here.>\n\nSadness, Keynoted\"",model=940623,modelScale=2,questID=52831,sourceQuests={52830}}),
 o(294098,{coords={
 [542]={{53.5,10.8}}},description="Spires of Arak\n\nUnderwater on top of the large rock. \n\nThe Tiny Frog says:\n\n\"<Something is written here.>\n\nDog wig moss?\"",model=367326,modelScale=0.5,questID=52898,sourceQuests={52831}}),

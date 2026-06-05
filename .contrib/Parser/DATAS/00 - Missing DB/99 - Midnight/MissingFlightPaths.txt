@@ -3,7 +3,3 @@ fp(3267),	-- Val Outpost
 fp(3268),	-- Glacial Reservoir
 fp(3269),	-- Void Acropolis
 fp(3270),	-- Steam Ravine
-fp(3277),	-- Naigtal Outpost
-fp(3278),	-- Fungal Processing
-fp(3279),	-- Transit Hub
-fp(3280),	-- Fungal Forest

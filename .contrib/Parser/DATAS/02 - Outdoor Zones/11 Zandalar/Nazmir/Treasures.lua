@@ -82,8 +82,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(282722, {	-- Treasure Chest
 					["questID"] = 50894,
 					["coords"] = {
-						{ 34.0, 36.8, NAZMIR },
+						{ 30.9, 47.4, NAZMIR },
 						{ 31.5, 61.5, NAZMIR },
+						{ 34.0, 36.8, NAZMIR },
 					},
 				}),
 				o(282721, {	-- Treasure Chest

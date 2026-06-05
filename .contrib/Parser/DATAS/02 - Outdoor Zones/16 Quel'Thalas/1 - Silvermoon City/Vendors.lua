@@ -10,27 +10,55 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(261303, {	-- Agmera
 				["coord"] = { 42.1, 58.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
-					-- i(259996, {	-- Quel'Thalas Equipment Chest
-					-- 	["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
-					-- 	["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
-					-- 	["sym"] = {
-					-- 		-- All MID Season 1 dungeons (Normal+ difficulty)
-					-- 		{"select", "instanceID"
-					-- 			,1201	-- Algeth'ar Academy
-					-- 			,945	-- TODO: Seat of the Triumvirate (does not work currently)
-					-- 			,476	-- TODO: Skyreach (does not work currently)
-					-- 			,278	-- TODO: Pit of Saron (does not work currently)
-					-- 			,1300	-- Magister's Terrace
-					-- 			,1315	-- Maisara Caverns
-					-- 			,1316	-- Nexus-Point Xenas
-					-- 			,1299	-- Windrunner Spire
-					-- 		},
-					-- 		{"pop"},
-					-- 		{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
-					-- 		{"extract", "itemID"},
-					-- 		{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					-- 	},
-					-- }),
+					i(259996, {	-- Quel'Thalas Equipment Chest
+					 	["timeline"] = { "added 12.0.5.67602" },
+					 	["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+						["sym"] = {
+							-- MID Season 1 dungeons (Normal+ difficulty)
+							{"select", "instanceID"
+								,1201	-- Algeth'ar Academy
+								,1300	-- Magister's Terrace
+								,1315	-- Maisara Caverns
+								,1316	-- Nexus-Point Xenas
+								,1299	-- Windrunner Spire
+							},
+							{"pop"},
+							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
+							{"extract", "itemID"},
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+							{"finalize"},
+
+							-- MID Season 1 dungeons (Heroic difficulty)
+							{"select", "instanceID"
+								,278	-- Pit of Saron
+							},
+							{"pop"},
+							{"where","difficultyID",DIFFICULTY.DUNGEON.HEROIC},
+							{"extract", "itemID"},
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+							{"finalize"},
+
+							-- MID Season 1 dungeons (Heroic+ difficulty)
+							{"select", "instanceID"
+								,945	-- Seat of the Triumvirate
+								,476	-- Skyreach
+							},
+							{"pop"},
+							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS},
+							{"extract", "itemID"},
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+							{"finalize"},
+
+							-- MID Season 1 dungeons (Mythic difficulty)
+							{"select", "instanceID"
+								,945	-- Seat of the Triumvirate
+							},
+							{"pop"},
+							{"where","difficultyID",DIFFICULTY.DUNGEON.MYTHIC},
+							{"extract", "itemID"},
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+					}),
 				},
 			}),
 			n(259722, {	-- Andra <Thalassian Finery>
@@ -119,7 +147,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(257939, {	-- Enchanter Erodin <Heirloom Vendor>
 				["coord"] = { 41.8, 66.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_12_0_1_LAUNCH },
+					["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
 				},FILTERFUNC_itemID,{
 					filter(CLOTH, {
 						-- Base
@@ -340,6 +368,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					})),
 				},
 			}),
+			n(251248, {	-- Intrepid Entrepreneur
+				["coord"] = { 57.7, 71.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_0_5 } }, {
+					i(273307),	-- Vial of Intrepid Lemonade
+				}),
+			}),
 			n(239676, {	-- Vaskarn
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
@@ -376,11 +410,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["cost"] = { { "c", VETERAN_DAWNCREST, 30 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
-					--i(246752, {	-- Celebratory Pack of Hero Dawncrests (TODO: Blizzard bug - same item ID as vault vendor, speculation)
-					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
-					--	["cost"] = { { "c", CHAMPION_DAWNCREST, 30 } },
-					--	["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
-					--}),
+					i(246752, {	-- Celebratory Pack of Hero Dawncrests (TODO: Blizzard bug - same item ID as vault vendor)
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
+						["cost"] = { { "c", CHAMPION_DAWNCREST, 30 } },
+						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+					}),
 					i(246753, {	-- Glorious Cluster of Myth Dawncrests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
 						["cost"] = { { "c", HERO_DAWNCREST, 30 } },

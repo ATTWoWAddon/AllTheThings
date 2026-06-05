@@ -102,9 +102,7 @@ root(ROOTS.Holidays,
 				}),
 			}),
 			n(REWARDS, {
-				currency(ILLUSIONARY_COIN, {
-					["description"] = "You must personally find at least 1 person as a seeker to receive this currency, otherwise you get the 'try harder next time' popup and no reward, regardless of your performance.\n\nRecommended: Use the Spell Breaker Seeker with 'Leap' and 'Swift' upgrade find people.",
-				}),
+				currency(ILLUSIONARY_COIN),
 				i(268122),	-- Dispelled Coins
 			}),
 			n(VENDORS, {

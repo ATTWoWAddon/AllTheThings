@@ -229,8 +229,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1308, bubbleDown({	-- March on Quel'Danas
 		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["isWeekly"] = true,
-	},{	--TODO Uncomment when source and npcids are confirmed and added
+	},{
 		-- LFR
+		q(94560, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
 		q(94564, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 		-- Normal
 		q(94561, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
@@ -240,6 +241,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(94567, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 		-- Mythic
 		q(94562, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
-		-- q(94566, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
+		q(94566, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 	})),
 }));

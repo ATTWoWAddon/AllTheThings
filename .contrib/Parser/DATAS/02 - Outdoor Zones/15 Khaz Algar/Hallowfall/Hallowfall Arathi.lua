@@ -869,17 +869,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["provider"] = {"i", 218107},	-- Sparkbug Jar
 								["groups"] = { i(220771) },	-- Hallowed Glowfly (PET!)
 							}),
-							o(452005, {	-- Lil Piggy
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
-								["coords"] = {
-									{ 63.8, 26.4, HALLOWFALL },
-									{ 64.0, 26.0, HALLOWFALL },
-									{ 64.8, 27.4, HALLOWFALL },
-									{ 64.8, 26.7, HALLOWFALL },
-								},
-								["questID"] = 83217,
-								["groups"] = { i(224457) },	-- Lil Piggy (QS!/QI!)
-							}),
 							o(451993, {	-- Nerubian Device
 								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
 								["coords"] = {
@@ -993,6 +982,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["groups"] = {
 									i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 								},
+							}),
+							o(452005, {	-- Lil Piggy
+								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
+								["coords"] = {
+									{ 63.8, 26.4, HALLOWFALL },
+									{ 64.0, 26.0, HALLOWFALL },
+									{ 64.8, 27.4, HALLOWFALL },
+									{ 64.8, 26.7, HALLOWFALL },
+								},
+								["questID"] = 83217,
+								["groups"] = { i(224457) },	-- Lil Piggy (QS!/QI!)
 							}),
 							o(453186, {	-- Nightfarm Growthling (may be daily)
 								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",

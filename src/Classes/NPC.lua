@@ -264,6 +264,7 @@ local BlockedDisplayID = {
 	[110046] = 0,	-- nothing
 	[111386] = 0,	-- nothing
 	[112684] = 0,	-- nothing
+	[143866] = 0,	-- nothing
 }
 local AllowedDisplayID = setmetatable({}, {
 	__index = function(t, key)

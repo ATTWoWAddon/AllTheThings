@@ -986,16 +986,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62715, {	-- More Than A Gift
 				["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
 				["provider"] = { "n", 174900 },	-- Acolyte Amalthina
-				["coord"] = { 47.8, 73.2, BASTION },
+				["coord"] = { 53.8, 73.8, BASTION },
 				["groups"] = {
-					i(183967),	-- Cultivated Windblossom (QI!)
+					o(361387, {	-- Cultivated Windblossom
+						["groups"] = { i(183967) },	-- Cultivated Windblossom (QI!)
+					}),
 				},
 			}),
 			------ Miscellaneous ------
 			q(57444, {	-- An Inspired Moral Inventory
 				["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 				["provider"] = { "n", 160647 },	-- Acolyte Galistos
-				["coord"] = { 61.1, 74.4, BASTION },
+				["coords"] = {
+					{ 54.0, 73.8, BASTION },
+					{ 58.0, 75.8, BASTION },
+					{ 61.0, 74.4, BASTION },
+				},
 			}),
 			q(62730, {	-- Fruit of the Gods
 				["provider"] = { "n", 170284 },	-- Elios
@@ -1094,12 +1100,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(62737, {	-- Aspirant For a Day [Pre-60]
 					["coord"] = { 54.1, 80.4, BASTION },
 					["groups"] = {
+						o(363993, {	-- Lost Library Scroll
+							["coords"] = {
+								{ 52.9, 78.4, BASTION },
+								{ 53.0, 78.8, BASTION },
+								{ 53.2, 82.7, BASTION },
+								{ 53.4, 80.3, BASTION },
+								{ 53.6, 80.3, BASTION },
+								{ 54.1, 81.9, BASTION },
+								{ 54.4, 82.6, BASTION },
+								{ 54.5, 79.4, BASTION },
+								{ 54.5, 79.5, BASTION },
+								{ 54.5, 82.3, BASTION },
+								{ 54.5, 82.5, BASTION },
+								{ 54.5, 83.8, BASTION },
+								{ 55.6, 81.0, BASTION },
+								{ 56.1, 82.8, BASTION },
+							},
+							["groups"] = { i(184043) },	-- Lost Scroll (QI!)
+						}),
 						i(172518),	-- Adrima's Lily (QI!)
-						i(181571),	-- Spiritmender's Handwraps
-						i(181580),	-- Soulbearer's Gloves
 						i(181596),	-- Forgehand's Handguards
 						i(181608),	-- Shieldguard's Gauntlets
-						i(184043),	-- Lost Scroll (QI!)
+						i(181580),	-- Soulbearer's Gloves
+						i(181571),	-- Spiritmender's Handwraps
 					},
 				}),
 				q(62735, {	-- Hostile Recollection [Pre-60]

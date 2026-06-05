@@ -2178,7 +2178,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(243613),	-- Farstriders Reputation
 			i(265817),	-- Forgotten Songwriter's Quill
 			i(260603),	-- Frail and Flexible Wing
-			i(256553),	-- Galactic Equipment Chest
 			i(251287),	-- Generous Bundle of Petrified Roots
 			i(256342),	-- Griftah's Fool-Proof Embellishing Powder
 			i(255686),	-- Huge Bag of Midnight Alchemy Goods
@@ -2218,7 +2217,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(262596),	-- Preyseeker's Satchel of Voidlight Marl
 			i(256136),	-- Professor Instructaur's Brain Pertaining to Midnight
 			i(239611),	-- Pure Loanite
-			i(259996),	-- Quel'Thalas Equipment Chest
 			i(254275),	-- Radiant Echo
 			i(254276),	-- Radiant Echo
 			i(263974),	-- Relaxing Tisane

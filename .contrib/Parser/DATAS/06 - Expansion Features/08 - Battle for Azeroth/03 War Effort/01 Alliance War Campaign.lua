@@ -568,6 +568,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["DisablePartySync"] = true,
+						["lockCriteria"] = { 1, "questID", 51722 },	-- This HQT is likely the lock criterium according to Jewel
 					}),
 					q(51918, {	-- Uniting Kul Tiras - completed once per account
 						["sourceQuests"] = { 52654 },	-- The War Campaign

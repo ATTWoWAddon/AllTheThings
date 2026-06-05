@@ -21,7 +21,7 @@ mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Su
 q(96254,{altQuests={96253},awp=20505,coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=40200,u=3,g={
 i(273162,{u=3,g={
-mnt(1291813,{description="Earned by completing the introductory questline for Midnight in retail servers",itemID=273150,u=3})}})}})}}),
+mnt(1291813,{description="Earned by completing the introductory questline for Midnight in retail servers",itemID=273150,lvl=70,u=3})}})}})}}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=20001,u=2,g={
@@ -56,10 +56,10 @@ h(-694,{awp=20505,description="These rewards were made available to anyone who p
 q(93824,{coords={
 [1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=3,g={
 i(262788,{u=3,g={
-mnt(1266345,{itemID=260438,u=3}),
+mnt(1266345,{itemID=260438,lvl=30,u=3}),
 toy(260622,{u=3}),
 toy(260221,{u=3}),
-mnt(1266866,{itemID=260759,u=3}),
+mnt(1266866,{itemID=260759,lvl=70,u=3}),
 p(4962,{itemID=260433,u=3})}})}})}})}}),
 h(-546,{awp=11201,u=2,g={
 p(757,{b=1,itemID=19055,petTypeID=2,q=1,spellID=23531,u=2}),

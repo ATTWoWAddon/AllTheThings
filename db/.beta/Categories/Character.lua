@@ -1452,7 +1452,7 @@ q(49614,{coords={
 ach(12244),
 mnt(258845,{b=1,itemID=156487,lvl=10})}}),
 q(49933,{coords={
-[680]={{59.4,85.4}}},lvl=10,qgs={143845},races={27},g={
+[680]={{59.4,85.4}}},lvl=10,qgs={131326},races={27},g={
 s(93940,157759,{b=1,f=9,races={27}}),
 i(157028,{b=1,spellID=262258})}}),
 q(50303,{coords={
@@ -7113,7 +7113,8 @@ q(78073,{coords={
 [108]={{37.5,64.3}}},lvl=50,qgs={210578},races={11},sourceQuests={78072}}),
 q(78074,{coords={
 [108]={{41.6,61.6}}},lvl=50,qgs={210581},races={11},sourceQuests={78073},g={
-o(408954,{races={11},g={
+o(408954,{coords={
+[108]={{36.8,62.7}}},races={11},g={
 i(210189,{races={11}})}})}}),
 q(78075,{coords={
 [111]={{39.1,46.3}}},lvl=50,qgs={210569},races={11},sourceQuests={78074},g={
@@ -7149,7 +7150,7 @@ i(210588,{races={11}}),
 i(210576,{races={11}}),
 i(210538,{races={11}})}}),
 hqt(82162,{coords={
-[103]={{53.8,83.8}}},lc={1,"questID",78082},providers={{"n",210670}},races={11},sourceQuests={78082}}),
+[103]={{53.8,83.8}}},description="Dialogue becomes available after you collect a Memory Stone from Prophet Velen during 'A Burden Shared' (78082).",lc={1,"questID",78082},providers={{"n",210670}},races={11},sourceQuests={78082}}),
 q(78083,{coords={
 [103]={{64.4,87.3}}},lvl=50,qgs={212387},races={11},sourceQuests={78082},g={
 toy(210455,{b=1,races={11}}),

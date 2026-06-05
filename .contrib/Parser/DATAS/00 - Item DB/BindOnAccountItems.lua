@@ -777,7 +777,6 @@ ib(45654);	-- Legplates of the Wayward Protector
 ib(45655);	-- Legplates of the Wayward Vanquisher
 
 -- Tier 9 Tier Tokens [ToC]
-
 ib(47242);	-- Trophy of the Crusade
 ib(47557);	-- Regalia of the Grand Conqueror [25H]
 ib(47558);	-- Regalia of the Grand Protector [25H]
@@ -1189,7 +1188,7 @@ i(191009);	-- Zenith Shoulder Module
 i(191010);	-- Dreadful Chest Module
 i(191011);	-- Mystic Chest Module
 i(191012);	-- Venerated Chest Module
-i(191013);	-- Zenith Chest Modulefs
+i(191013);	-- Zenith Chest Module
 i(191014);	-- Dreadful Hand Module
 i(191015);	-- Mystic Hand Module
 i(191016);	-- Venerated Hand Module
@@ -1212,3 +1211,74 @@ i(251768)	-- Darkpine Lumber
 i(251772)	-- Arden Lumber
 i(251773)	-- Dragonpine Lumber
 i(248012)	-- Dornic Fir Lumber
+
+-- #IF AFTER 12.0.5
+-- Vault of the Incarnates
+i(196588)	-- Dreadful Jade Forgestone
+i(196598)	-- Mystic Jade Forgestone
+i(196603)	-- Venerated Jade Forgestone
+i(196593)	-- Zenith Jade Forgestone
+i(196587)	-- Dreadful Garnet Forgestone
+i(196597)	-- Mystic Garnet Forgestone
+i(196602)	-- Venerated Garnet Forgestone
+i(196592)	-- Zenith Garnet Forgestone
+i(196586)	-- Dreadful Amethyst Forgestone
+i(196596)	-- Mystic Amethyst Forgestone
+i(196601)	-- Venerated Amethyst Forgestone
+i(196591)	-- Zenith Amethyst Forgestone
+i(196589)	-- Dreadful Lapis Forgestone
+i(196599)	-- Mystic Lapis Forgestone
+i(196604)	-- Venerated Lapis Forgestone
+i(196594)	-- Zenith Lapis Forgestone
+i(196590)	-- Dreadful Topaz Forgestone
+i(196600)	-- Mystic Topaz Forgestone
+i(196605)	-- Venerated Topaz Forgestone
+i(196595)	-- Zenith Topaz Forgestone
+
+-- Aberrus
+i(202624)	-- Dreadful Mixing Fluid
+i(202625)	-- Mystic Mixing Fluid
+i(202626)	-- Venerated Mixing Fluid
+i(202638)	-- Zenith Mixing Fluid
+i(202634)	-- Dreadful Cooling Fluid
+i(202635)	-- Mystic Cooling Fluid
+i(202636)	-- Venerated Cooling Fluid
+i(202640)	-- Zenith Cooling Fluid
+i(202631)	-- Dreadful Ventilation Fluid
+i(202632)	-- Mystic Ventilation Fluid
+i(202633)	-- Venerated Ventilation Fluid
+i(202639)	-- Zenith Ventilation Fluid
+i(202627)	-- Dreadful Melting Fluid
+i(202628)	-- Mystic Melting Fluid
+i(202629)	-- Venerated Melting Fluid
+i(202630)	-- Zenith Melting Fluid
+i(202621)	-- Dreadful Corrupting Fluid
+i(202622)	-- Mystic Corrupting Fluid
+i(202623)	-- Venerated Corrupting Fluid
+i(202637)	-- Zenith Corrupting Fluid
+i(206046)	-- Void-Touched Curio
+
+-- Amirdrassil
+i(207466)	-- Dreadful Tormented Dreamheart
+i(207467)	-- Mystic Tormented Dreamheart
+i(207468)	-- Venerated Tormented Dreamheart
+i(207469)	-- Zenith Tormented Dreamheart
+i(207474)	-- Dreadful Ashen Dreamheart
+i(207475)	-- Mystic Ashen Dreamheart
+i(207476)	-- Venerated Ashen Dreamheart
+i(207477)	-- Zenith Ashen Dreamheart
+i(207462)	-- Dreadful Verdurous Dreamheart
+i(207463)	-- Mystic Verdurous Dreamheart
+i(207464)	-- Venerated Verdurous Dreamheart
+i(207465)	-- Zenith Verdurous Dreamheart
+i(207478)	-- Dreadful Smoldering Dreamheart
+i(207479)	-- Mystic Smoldering Dreamheart
+i(207480)	-- Venerated Smoldering Dreamheart
+i(207481)	-- Zenith Smoldering Dreamheart
+i(207470)	-- Dreadful Blazing Dreamheart
+i(207471)	-- Mystic Blazing Dreamheart
+i(207472)	-- Venerated Blazing Dreamheart
+i(207473)	-- Zenith Blazing Dreamheart
+i(210947)	-- Flame-Warped Curio
+
+-- #ENDIF

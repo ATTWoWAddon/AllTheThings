@@ -663,7 +663,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(57481, {	-- Running a Muck
 					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
-					["provider"] = { "n", 157898 },	-- Bootus
+					["provider"] = { "n", 158001 },	-- Bootus
 					["coord"] = { 72.8, 73.9, REVENDRETH },
 					["groups"] = {
 						i(177655),	-- Air Bootuses
@@ -1012,7 +1012,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 168698 },	-- Chiselgrump
 				["coord"] = { 69.5, 53.3, REVENDRETH },
 				["groups"] = {
-					i(179002),	-- Dredger Chisel (QI!)
+					o(352452, {	-- Dredger Chisel
+						i(179002),	-- Dredger Chisel (QI!)
+					}),
 				},
 			}),
 			q(61432, {	-- Lost Journals

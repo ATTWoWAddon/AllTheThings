@@ -3365,7 +3365,7 @@ r(18413,{crs={7864},itemID=14477,learnedAt=270,q=2,requireSkill=197,rwp=40003}),
 r(19079,{crs={6138},itemID=15753,learnedAt=285,q=3,requireSkill=165,rwp=40003}),
 r(19090,{crs={6144},itemID=15764,learnedAt=295,q=3,requireSkill=165,rwp=40003}),
 r(19052,{crs={6201},itemID=15728,learnedAt=265,q=2,requireSkill=165,rwp=40003}),
-r(17571,{awp=100107,coords={
+r(17571,{awp=11101,coords={
 [1447]={{53.6,23.8},{56.6,23.6}}},crs={6201},itemID=13491,learnedAt=280,q=2,requireSkill=171,rwp=40003}),
 r(19794,{crs={6195},itemID=16045,learnedAt=270,q=2,requireSkill=202,rwp=40003})})}}),
 m(1943,{awp=20001,icon=236715,lore="Azuremyst Isle is the zone the Draenei spaceship crashed into, leading to the formation of the Exodar as their capital city. Quests focus on the draenei acquainting themselves with the land and trying to strengthen their struggling settlements. Since this island was so far-out, there was very little other civilization before the crash.",maps={98,99},u=17,g={
@@ -5824,7 +5824,7 @@ h(-63,{
 p(56,{crs={4324},itemID=10822,petTypeID=2,q=1,spellID=10695}),
 i(4639,{crs={4363},q=1}),
 r(6695,{crs={4834},itemID=5775,learnedAt=185,q=2,requireSkill=197,rwp=40003}),
-r(16731,{awp=100107,b=1,crs={4368,16072},itemID=12718,learnedAt=300,q=2,requireSkill=164,rwp=40003}),
+r(16731,{awp=11101,b=1,crs={4368,16072},itemID=12718,learnedAt=300,q=2,requireSkill=164,rwp=40003}),
 r(16726,{b=1,crs={4364},itemID=12714,learnedAt=300,q=2,requireSkill=164}),
 r(16664,{b=1,crs={4366},itemID=12706,learnedAt=300,q=2,requireSkill=164}),
 i(20766,{crs={4391,4392,4393},q=1})})}}),
@@ -6208,7 +6208,7 @@ r(19078,{awp=100107,coords={
 r(19065,{crs={7112},itemID=15739,learnedAt=275,q=2,requireSkill=165,rwp=40003}),
 r(19080,{b=1,crs={7156,7158},itemID=15754,learnedAt=285,q=1,requireSkill=165,rwp=11101,u=2}),
 r(19071,{crs={7107},itemID=15744,learnedAt=280,q=2,requireSkill=165,rwp=40003}),
-r(17571,{awp=100107,coords={
+r(17571,{awp=11101,coords={
 [1448]={{33.8,66.6},{38.6,69.6}}},crs={7106},itemID=13491,learnedAt=280,q=2,requireSkill=171,rwp=40003})})}}),
 m(1444,{icon=236764,lore="Feralas is a rainforest surrounded by arid zones in southern Kalimdor. It is known for the mystery surrounding Dire Maul--a former city of the Highborne that remained hermetic and drew upon demonic energy to stay immortal. There is a strong Night Elf presence--both in Feathermoon Stronghold, the base of operations for the Sentinels, and in the numerous ruins scattered around the zones.",g={
 h(-12,{awp=30002,g={
@@ -10580,7 +10580,7 @@ r(19104,{awp=100107,coords={
 [1452]={{65.6,37.6},{69.6,38.2}}},crs={7438},itemID=15779,learnedAt=300,q=2,requireSkill=165,rwp=70305}),
 r(18436,{b=1,crs={7437},itemID=14493,learnedAt=285,q=3,requireSkill=197,rwp=40003}),
 r(17577,{crs={7437},itemID=13497,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
-r(17575,{awp=100107,coords={
+r(17575,{awp=11101,coords={
 [1452]={{61.8,68.6},{64.2,69}}},crs={7428},itemID=13495,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
 r(19830,{coords={
 [1452]={{23.4,35.4},{25.4,35.4}}},crs={7437},itemID=16054,learnedAt=300,q=2,requireSkill=202,rwp=40003}),
@@ -14291,7 +14291,7 @@ i(8392,{crs={5992,5993,8303},q=1,rwp=40003}),
 i(8244,{crs={7664,7668,7846},description="A very rare zone drop. It has a higher chance to drop from Rare Creatures.",q=3}),
 r(18540,{b=1,c={9},crs={8716,12396},itemID=4213,lvl=60,q=2,rwp=40003}),
 i(10593,{description="A rare zone drop from any creature in the zone.",q=2}),
-r(19051,{crs={5981,6005},itemID=15727,learnedAt=265,q=2,requireSkill=165,rwp=40003}),
+r(19051,{awp=11101,crs={5981,6005},itemID=15727,learnedAt=265,q=2,requireSkill=165,rwp=40003}),
 i(8393,{crs={5988,8301},q=1,rwp=40003}),
 i(8391,{crs={5984,5985,8300},q=1,rwp=40003}),
 i(18665,{c={5},crs={8716,8717,8718,12396,12397},f=53,lvl=60,q=4,rwp=40003}),
@@ -14438,11 +14438,11 @@ r(18418,{coords={
 [1428]={{43.8,39.4},{58.8,37.2}}},crs={7037},itemID=14482,learnedAt=275,q=2,requireSkill=197}),
 r(18434,{coords={
 [1428]={{43.8,39.4},{58.8,37.2}}},crs={7037},itemID=14490,learnedAt=280,q=2,requireSkill=197}),
-r(19064,{awp=100005,coords={
+r(19064,{awp=11101,coords={
 [1428]={{34.8,36.3},{36,36.6}}},crs={7025},itemID=15738,learnedAt=275,q=2,requireSkill=165,rwp=40003}),
-r(19075,{awp=100005,coords={
+r(19075,{awp=11101,coords={
 [1428]={{34.8,36.3},{36,36.6}}},crs={7027},itemID=15748,learnedAt=285,q=2,requireSkill=165,rwp=40003}),
-r(19100,{awp=50004,coords={
+r(19100,{awp=11101,coords={
 [1428]={{34.8,36.3},{36,36.6}}},crs={7029},itemID=15774,learnedAt=300,q=2,requireSkill=165,rwp=40003}),
 r(19059,{awp=100107,coords={
 [1428]={{80.4,45.8},{83.6,40}}},crs={7035},description="Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",itemID=15732,learnedAt=270,q=2,requireSkill=165,rwp=40003}),
@@ -16056,7 +16056,7 @@ r(18421,{crs={8551},itemID=14485,learnedAt=275,q=2,requireSkill=197,rwp=40003}),
 r(18446,{crs={8526},itemID=14500,learnedAt=300,q=2,requireSkill=197,rwp=40003}),
 r(18450,{crs={8526},itemID=14505,learnedAt=300,q=2,requireSkill=197,rwp=40003}),
 r(17555,{crs={9449,9450,9451,9452},itemID=13479,learnedAt=270,q=2,requireSkill=171,rwp=40003}),
-r(17578,{awp=100107,coords={
+r(17578,{awp=11101,coords={
 [1423]={{41,50.2},{67.8,39.8},{83.6,44}}},crs={8546,8550},itemID=13499,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
 i(12811,{crs={12339},description="Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",q=2}),
 r(19833,{awp=11101,coords={
@@ -16425,7 +16425,9 @@ q(8347,{coords={
 [1941]={{35.4,22.4}}},isBreadcrumb=1,lvl=3,nextQuests={9704},qgs={15281},races={10},sourceQuests={8335},u=17}),
 q(8335,{coords={
 [1941]={{35.4,22.4}}},lvl=3,qgs={15281},races={10},sourceQuests={8334},u=17,g={
-qo(1,{coords={
+qo(1,{providers={{"n",15273}},u=17}),
+qo(2,{providers={{"n",15298}},u=17}),
+qo(3,{coords={
 [1941]={{30.8,27.1}}},crs={15367},providers={{"i",20799}},u=17}),
 s(131329,20838,{b=1,f=32,q=1,u=17}),
 s(131332,20841,{b=1,f=8,q=1,u=17})}}),
@@ -19273,11 +19275,11 @@ n(14624,{coords={
 h(-63,{
 i(18944,{crs={9318},q=1}),
 i(11818,{crs={5840,5844,5846,8504,8566,15692},lvl=43,q=1,rwp=40003}),
-r(18412,{awp=80200,coords={
+r(18412,{awp=11101,coords={
 [1427]={{19.4,36.6},{25.4,25.4}}},crs={5861},itemID=14476,learnedAt=270,q=2,requireSkill=197,rwp=40003}),
-r(18408,{awp=80200,coords={
+r(18408,{awp=11101,coords={
 [1427]={{19.4,36.6},{25.4,25.4}}},crs={5861},itemID=14471,learnedAt=260,q=2,requireSkill=197,rwp=40003}),
-r(26277,{awp=100107,coords={
+r(26277,{awp=11101,coords={
 [1427]={{37,42.8},{39,50.8},{41.6,42.2},{43.6,27.6},{63.6,59},{65.4,65.6}}},crs={5844,5846,8637},itemID=21547,learnedAt=250,q=2,requireSkill=171,rwp=40003,u=15})})}}),
 m(1421,{icon=236830,lore="Silverpine Forest is a vast ancient wood that runs along Lordaeron's rugged western coast. The land ranges from fairly flat to hilly, and is nestled among even taller mountains. The forest is eerily silent save for the occasional unnatural howling echoing among the trees. Mossy overhangs shiver in the cold breeze, and the trees are all sickly or dying. Dilapidated farmsteads and abandoned mines dot the land, home now to the darker denizens of the woods.\n\nThis woodland is haunted and wild, characterized by its tall, silver-barked pines towering over grassy knolls. The Alliance once protected Silverpine Forest when it was verdant and lively. Now the place is shrouded in ghostly mists. Forsaken control the northern forest. What remains of the human population retains control of the southern forest, but they are desperate and their forces thinly stretched. Dalaran sends frequent expeditions into Silverpine to defend these people and study the undead plague and worgen curse — a mysterious affliction that causes its victims to transform into bloodthirsty, lycanthropic worgen when the moon rises.",g={
 h(-12,{awp=30002,g={

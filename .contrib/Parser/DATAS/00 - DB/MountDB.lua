@@ -1609,7 +1609,6 @@ i(0, 385771);		-- PH Yellow Slyvern
 i(194722, 377849);	-- Carrier Yeti
 i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(192804, 374263);	-- Restless Hornstrider
-i(192778, 350220);	-- Liquid Hot Magma Slug
 i(198823, 385253);	-- [PH] Brown Wind Eagle
 i(192787, 351403);	-- [PH] Mammoth V2 Dark
 i(192771, 352927);	-- [PH] Water Salamander Blue
@@ -2393,6 +2392,8 @@ i(268472, 1282450);	-- Blossomback Arboon
 i(275444, 1296756);	-- Blue-Chip Shreddertank
 i(268481, 1282471);	-- Breaker Bee
 i(275440, 1296731);	-- Cerulean Deathwalker
+i(268877, 1283908);	-- Dusk-Painted Sun Roc
+i(268876, 1283910);	-- Flame-Painted Sun Roc
 i(268364, 1282276);	-- Gilneas Loyalist's Rouncey
 i(275446, 1296759);	-- High-Yield Shreddertank
 i(275445, 1296758);	-- Profit-Green Shreddertank
@@ -2407,8 +2408,6 @@ i(257225, 1261362);	-- Witherbark Warbear Harness
 --- Unsorted ---
 i(268878, 1283906);	-- [PH] Giant Eagle Sunwalker Mount Blue
 i(268875, 1283911);	-- [PH] Giant Eagle Sunwalker Mount White
-i(268877, 1283908);	-- Dusk-Painted Sun Roc
-i(268876, 1283910);	-- Flame-Painted Sun Roc
 i(268362, 1282274);	-- Gilnean Copper Charger
 i(268360, 1282268);	-- Gilnean Iron Charger
 --- NYI ---
@@ -2418,6 +2417,7 @@ i(260421, 1266285);	-- Void-Corrupted Amani Warbear Kit
 -- PATCH 12.0.7 --
 ------------------
 i(210140, 404018);	-- Black-Furred Bakar
+i(192778, 350220);	-- Liquid Hot Magma Slug
 i(258884, 1264184);	-- Spawn of Vyranoth
 i(274650, 1294663);	-- Starmech Cosmic-Collapser
 i(275664, 1297427);	-- Tortured Gorger

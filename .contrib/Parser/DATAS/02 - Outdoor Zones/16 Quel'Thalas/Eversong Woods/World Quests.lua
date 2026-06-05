@@ -104,19 +104,57 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 40.7, 61.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {
 						ach(62187, {	-- Grand Magister's Sommelier
-						--TODO: automation lead into weird npcIDs, proper in order list as in criteria list for achievement in-game
-						-- Heron Skygaze 249861 @ 39.3, 60.2
-						-- Innkeeper Areyn 249879 @ 39.3, 61.4
-						-- Kyrenna 251409 @ 40.7, 59.5
-						-- Lady Marilin 252649 @ 40.3, 61.2
-						-- Landraelanis 251406 @ 41.5, 61.3
-						-- Limien Bountcask 249426 @ 40.7, 60.1
-						-- Magister Duskwither 249862 @ 38.3, 58.4
-						-- Nara Fadebranch 249437 @ 39.6, 60.6
-						-- Quarelestra 251408 @ 39.8, 60.9
-						-- Sheri 251405 @ 40.8, 60.5
-						-- Vehn Sorrelstride 249436 @ 39.3, 61.1
-						-- Zalene Firstlight 249882 @ 40.3, 61.5
+							["description"] = "Set to 'Raid' group to complete all dialogs without completing the quest.",
+							["groups"] = {
+								crit(111945, {	-- Heron's Vision of Cloudwalking
+									["provider"] = { "n", 249861 },
+									["coords"] = { { 39.3, 60.2, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111957, {	-- Areyn's Elrendar Red
+									["provider"] = { "n", 249879 },
+									["coords"] = { { 39.3, 61.4, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111958, {	-- Kreynna's Khadgar's Imitation
+									["provider"] = { "n", 251409 },
+									["coords"] = { { 40.7, 59.5, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111959, {	-- Lady Marilin's Arcwine Reserve
+									["provider"] = { "n", 252649 },
+									["coords"] = { { 40.3, 61.2, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111960, {	-- Landraelanis' Muskmelon Draught
+									["provider"] = { "n", 251406 },
+									["coords"] = { { 41.5, 61.3, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111961, {	-- Limien's Arcane Infusion
+									["provider"] = { "n", 249426 },
+									["coords"] = { { 40.7, 60.1, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111962, {	-- Duskwither's Dancing Merlot
+									["provider"] = { "n", 249862 },
+									["coords"] = { { 38.3, 58.4, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111963, {	-- Nara's Essence of Butterfly
+									["provider"] = { "n", 249437 },
+									["coords"] = { { 39.6, 60.6, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111964, {	-- Quarelestra's Sanguine Affair
+									["provider"] = { "n", 251408 },
+									["coords"] = { { 39.8, 60.9, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111965, {	-- Sheri's Laughing Rose
+									["provider"] = { "n", 251405 },
+									["coords"] = { { 40.8, 60.5, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111966, {	-- Vehn's Shimmerveil Blanc
+									["provider"] = { "n", 249436 },
+									["coords"] = { { 39.3, 61.1, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+								crit(111967, {	-- Zalene's Twilight Claret
+									["provider"] = { "n", 249882 },
+									["coords"] = { { 40.3, 61.5, MAP.MIDNIGHT.EVERSONG_WOODS } },
+								}),
+							},
 						}),
 						i(254373),	-- Areyn's Elrendar Red
 						i(254387),	-- Duskwither's Dancing Merlot

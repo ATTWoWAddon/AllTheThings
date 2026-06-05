@@ -93,6 +93,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				q(44803, {	-- Return to Karazhan: Master of the House
 					["provider"] = { "i", 142246 },	-- Broken Pocket Watch
+					["groups"] = {
+						i(142248),	-- Exquisitely Stinky Cheese (QI!)
+						i(142249),	-- Falanaar Fine Vintage (QI!)
+						i(142275),	-- Master's Bell (QI!)
+					},
 				}),
 				q(45293, {	-- Return to Karazhan: New Shoes
 					["sourceQuest"] = 45292,	-- Return to Karazhan: Rebooting the Cleaner

@@ -154,6 +154,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.0, 10.3, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/7 Deadwood Weapons
+							["providers"] = {
+								{ "i",  63689 },	-- Deadwood Weapons
+								{ "o", 207126 },	-- Deadwood Weapon Pile
+							},
+						}),
+						--
 						i(65343, {	-- Timbermaw Breastplate
 							["timeline"] = { ADDED_4_0_3 },
 						}),

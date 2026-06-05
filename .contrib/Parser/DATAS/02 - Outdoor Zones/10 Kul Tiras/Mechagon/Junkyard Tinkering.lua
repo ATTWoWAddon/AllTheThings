@@ -150,7 +150,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					r(295290),	-- Scrap Grenade
 					r(291524),	-- Scrap Trap
 					r(300122, {["u"]=TRAINING}),	-- Scrapmaster's Blowtorch
-					r(298141, {["u"]=TRAINING}),	-- Subroutine: Optimization (Might not be collectible)
+					r(298141, {	-- Subroutine: Optimization (Might not be collectible)
+						["description"] = "Only available when wearing Pocket-Sized Computation Device with Remote Circuit Bypasser socketed.",
+						["u"]=TRAINING,
+						["providers"] = {
+							{ "i", 168435 },	-- Remote Circuit Bypasser
+							{ "i", 167555 },	-- Pocket-Sized Computation Device
+						},
+					}),
 					r(291987),	-- Ultrasafe Transporter: Mechagon
 					r(300269),	-- Utility Mechanoclaw
 					r(291788),	-- Vaultbot Key

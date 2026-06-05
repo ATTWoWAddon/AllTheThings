@@ -61,6 +61,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 60662,	-- same quest triggers for both versions of chest
 				["isDaily"] = true,
 			}),
+			o(356366, {	-- Book of Binding Rituals
+				["coord"] = { 64.7, 24.6, MALDRAXXUS },
+				["cost"] = { { "i", 181558, 1 } },	-- Missing Ritual Pages
+			}),
 			o(352433, {		-- Cache of Eyes
 				["description"] = "Coordinates are to the entrance of Sightless Hold. The cache spawns in numerous locations within the cave. The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
 				["coord"] = { 54.0, 12.3, MALDRAXXUS },
@@ -190,13 +194,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(180855),	-- Competitor's Signet
 				},
 			}),
+			o(355979, {	-- Ritual Pages
+				["coord"] = { 64.8, 24.8, MALDRAXXUS },
+				["groups"] = { i(181558) },	-- Missing Ritual Pages
+			}),
 			o(355980, {		-- Ritualist's Cache
 				["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room. Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
-				["coord"] = { 62.4, 76.5, MALDRAXXUS },
+				["provider"] = { "o", 356366 },	-- Book of Binding Rituals
+				["coord"] = { 64.7, 24.7, MALDRAXXUS },
 				["questID"] = 61514,
-				["groups"] = {
-					i(183517),	-- Page 76 of the Necronom-i-nom (CI!)
-				},
+				["groups"] = { i(183517) },	-- Page 76 of the Necronom-i-nom (CI!)
 			}),
 			o(355037, {		-- Runebound Coffer
 				["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Constructs|r and click them to deactivate the corresponding runes on the chest.",
@@ -305,11 +312,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(354856, {		-- Slime-Coated Crate
 				["coords"] = {
 					{ 65.0, 82.1, MALDRAXXUS },
-					{ 65.8, 76.0, MALDRAXXUS },
-					{ 65.8, 88.3, MALDRAXXUS },
+					{ 65.8, 75.9, MALDRAXXUS },
+					{ 65.9, 88.3, MALDRAXXUS },
+					{ 67.1, 78.4, MALDRAXXUS },
+					{ 67.1, 78.5, MALDRAXXUS },
 					{ 68.4, 85.9, MALDRAXXUS },
-					{ 68.5, 79.6, MALDRAXXUS },
+					{ 68.5, 85.9, MALDRAXXUS },
+					{ 68.6, 79.6, MALDRAXXUS },
+					{ 69.9, 85.6, MALDRAXXUS },
 					{ 70.4, 75.3, MALDRAXXUS },
+					{ 70.5, 75.4, MALDRAXXUS },
 					{ 72.1, 88.8, MALDRAXXUS },
 				},
 				["questID"] = 61093,

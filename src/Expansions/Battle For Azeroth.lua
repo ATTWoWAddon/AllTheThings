@@ -70,8 +70,6 @@ app.AddEventHandler("OnRefreshCollections", function()
 	for rank,ids in ipairs(ranks) do
 		-- Character Cache
 		app.SetBatchCached(CACHE, ids, rank)
-		-- Account Cache (removals handled by Sync)
-		app.SetBatchAccountCached(CACHE, ids, rank)
 	end
 end);
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)

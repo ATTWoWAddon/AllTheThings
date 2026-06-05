@@ -815,6 +815,21 @@ local function SetRowData(self, row, data)
 		row.Indicator:Hide();
 	end
 end
+-- Allow re-attempting the RowOnEnter logic for a row
+local function RedrawRowTooltip()
+	-- app.PrintDebug("RedrawRowTooltip",GameTooltip and GameTooltip:IsVisible(),GameTooltip and GameTooltip:GetOwner())
+	if GameTooltip and GameTooltip:IsVisible() then
+		local row = GameTooltip:GetOwner()
+		if row and row.ref then
+			-- app.PrintDebug("owner.ref",app:SearchLink(row.ref))
+			-- force tooltip to refresh since the scroll has changed but the tooltip is still visible
+			local OnLeave = row:GetScript("OnLeave")
+			local OnEnter = row:GetScript("OnEnter")
+			OnLeave(row)
+			OnEnter(row)
+		end
+	end
+end
 local function UpdateVisibleRowData(self)
 	-- app.PrintDebug(app.Modules.Color.Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
 	-- If there is no raw data, then return immediately.
@@ -915,17 +930,7 @@ local function UpdateVisibleRowData(self)
 		end
 
 		-- app.PrintDebugPrior("UpdateVisibleRowDataComplete:",self.Suffix,rowCount,"/",#rows)
-		if GameTooltip and GameTooltip:IsVisible() then
-			local row = GameTooltip:GetOwner()
-			if row and row.__ref ~= row.ref then
-				-- app.PrintDebug("owner.ref",app:SearchLink(row.ref))
-				-- force tooltip to refresh since the scroll has changed but the tooltip is still visible
-				local OnLeave = row:GetScript("OnLeave")
-				local OnEnter = row:GetScript("OnEnter")
-				OnLeave(row)
-				OnEnter(row)
-			end
-		end
+		RedrawRowTooltip()
 	end
 end
 local function StopMovingOrSizing(self)
@@ -1177,8 +1182,7 @@ local function RowOnClick(self, button)
 						window:RecordSettings();
 
 						-- force tooltip to refresh since locked state drives tooltip content
-						self:GetScript("OnLeave")(self)
-						self:GetScript("OnEnter")(self)
+						RedrawRowTooltip()
 					else
 						self:SetScript("OnMouseUp", function(self)
 							self:SetScript("OnMouseUp", nil);
@@ -1212,6 +1216,7 @@ local function AddQuestInfoToTooltip(info, quests, reference)
 end
 local function RowOnEnter(self)
 	local reference = self.ref;
+	-- app.PrintDebug("RowOnEnter",app:SearchLink(reference),reference and reference.working,GameTooltip.ATT_IsRefreshing,GameTooltip.ATT_AttachComplete,GameTooltip.ATT_IsModifierKeyDown)
 	if not reference then return; end
 	reference.working = nil;
 	local tooltip = GameTooltip;
@@ -1469,7 +1474,11 @@ local function RowOnEnter(self)
 	working = working or reference.working
 	-- don't capture working in the reference itself
 	reference.working = nil
-	tooltip.ATT_AttachComplete = not working
+	tooltip.ATT_AttachComplete = not working and tooltip.ATT_AttachComplete ~= false
+	-- app.PrintDebug("RowOnEnter.Complete",reference.hash,tooltip.ATT_AttachComplete,working)
+	if not tooltip.ATT_AttachComplete then
+		Callback(RedrawRowTooltip)
+	end
 end
 local function RowOnLeave(self)
 	local reference = self.ref;
@@ -2939,6 +2948,10 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 	end
 end
 app.CreatePopoutForSearch = function(search)
+	if search:match("^expansion:?") and not app.Debugging then	-- Keep expansion search only when debugging
+		app.print("Expansion command is deprecated. Please use the Added With Patch command instead. Example: \"/att awp tww\"")
+		return
+	end
 	-- Performs a search for ATT content, then opens the single result in a new popout window
 	app.SetSkipLevel(2)
 	local group = app.GetCachedSearchResults(app.SearchForLink, search, nil, {SkipFill=true,IgnoreCache=true})

@@ -295,6 +295,10 @@ for i,mapID in ipairs({
 	2479,	-- Voidstorm
 	2540,	-- Sunkiller Sanctum
 	-- #endif
+
+	-- #if AFTER 12.0.7
+	2623,	-- Naigtal
+	-- #endif
 })
 do table.insert(FlightPathMapIDs, mapID); end
 end

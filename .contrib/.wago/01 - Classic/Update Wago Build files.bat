@@ -1,5 +1,5 @@
 @echo off
-SET BUILD=1.15.8.65300
+SET BUILD=1.15.8.67156
 
 @REM Download new file versions
 call :downloadrenamed AreaTable areatable

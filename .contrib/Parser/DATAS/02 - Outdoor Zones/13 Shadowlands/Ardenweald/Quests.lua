@@ -1036,7 +1036,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(62774, {	-- Tranquil Pools [Pre-60]
 					["coord"] = { 63.3, 39.3, ARDENWEALD },
 					["groups"] = {
-						i(172948),	-- Animacone (QI!)
+						o(336906, {	-- Animacone
+							i(172948),	-- Animacone (QI!)
+						}),
 						i(179921),	-- Hydra Gutter (QI!)
 						i(181420),	-- Faemoss Amice
 						i(181421),	-- Gormhusk Mantle

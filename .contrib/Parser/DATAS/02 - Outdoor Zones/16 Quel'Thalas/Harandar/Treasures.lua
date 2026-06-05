@@ -29,353 +29,352 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(TREASURES, {
 			i(259362),	-- Pattern: Haranir Canopy Bed (RECIPE!)
 			header(HEADERS.Achievement, 61052, {	-- Dust 'Em Off
-				n(REWARDS, {
+				n(REWARDS, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_7 } }, {
 					currency(3385),	-- Luminous Dust
-				}),
-				-- Alex: there should be 120 in total, whoever do this in Blizz - was it fun to implement this?
+				})),
 				n(MOTH_RENOWN2, {	-- Exo: Verified Renown 2
-					o(571099, {	-- Glowing Moth (R2)
+					o(571099, {	-- Glowing Moth
 						["coord"] = { 36.4, 48.4, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92196,
 					}),
-					o(571121, {	-- Glowing Moth (R2)
+					o(571121, {	-- Glowing Moth
 						["coord"] = { 36.1, 26.4, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92197,
 					}),
-					o(571122, {	-- Glowing Moth (R2)
+					o(571122, {	-- Glowing Moth
 						["coord"] = { 49.9, 25.5, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92198,
 					}),
-					o(571123, {	-- Glowing Moth (R2)
+					o(571123, {	-- Glowing Moth
 						["coord"] = { 55.0, 27.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92199,
 					}),
-					o(571124, {	-- Glowing Moth (R2)
+					o(571124, {	-- Glowing Moth
 						["coord"] = { 66.3, 62.8, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92200,
 					}),
-					o(571125, {	-- Glowing Moth (R2)
+					o(571125, {	-- Glowing Moth
 						["coord"] = { 33.4, 63.5, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92201,
 					}),
-					o(571126, {	-- Glowing Moth (R2)
+					o(571126, {	-- Glowing Moth
 						["coord"] = { 33.4, 75.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92202,
 					}),
-					o(571127, {	-- Glowing Moth (R2)
+					o(571127, {	-- Glowing Moth
 						["coord"] = { 31.8, 81.8, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92203,
 					}),
-					o(571128, {	-- Glowing Moth (R2)
+					o(571128, {	-- Glowing Moth
 						["coord"] = { 42.2, 66.5, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92204,
 					}),
-					o(571129, {	-- Glowing Moth (R2)
+					o(571129, {	-- Glowing Moth
 						["coord"] = { 52.4, 80.8, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92205,
 					}),
-					o(571130, {	-- Glowing Moth (R2)
+					o(571130, {	-- Glowing Moth
 						["coord"] = { 48.5, 55.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92307,
 					}),
-					o(571131, {	-- Glowing Moth (R2)	- No vignette on the minimap
+					o(571131, {	-- Glowing Moth
 						["coord"] = { 67.7, 68.9, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92306,
 					}),
-					o(571132, {	-- Glowing Moth (R2)	- No vignette on the minimap
+					o(571132, {	-- Glowing Moth
 						["coord"] = { 60.0, 43.0, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92305,
 					}),
-					o(571133, {	-- Glowing Moth (R2)
+					o(571133, {	-- Glowing Moth
 						["coord"] = { 69.0, 31.2, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92304,
 					}),
-					o(571134, {	-- Glowing Moth (R2)
+					o(571134, {	-- Glowing Moth
 						["coord"] = { 65.4, 27.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92303,
 					}),
-					o(571135, {	-- Glowing Moth (R2)	- No vignette on the minimap
+					o(571135, {	-- Glowing Moth
 						["coord"] = { 50.6, 40.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92302,
 					}),
-					o(571136, {	-- Glowing Moth (R2)	- No vignette on the minimap
+					o(571136, {	-- Glowing Moth
 						["coord"] = { 41.6, 27.4, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92301,
 					}),
-					o(571137, {	-- Glowing Moth (R2)
+					o(571137, {	-- Glowing Moth
 						["coord"] = { 40.4, 34.5, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92300,
 					}),
-					o(571138, {	-- Glowing Moth (R2)
+					o(571138, {	-- Glowing Moth
 						["coord"] = { 56.6, 47.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92299,
 					}),
-					o(571139, {	-- Glowing Moth (R2)
+					o(571139, {	-- Glowing Moth
 						["coord"] = { 59.5, 54.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92206,
 					}),
-					o(571140, {	-- Glowing Moth (R2)
+					o(571140, {	-- Glowing Moth
 						["coord"] = { 71.4, 58.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92215,
 					}),
-					o(571141, {	-- Glowing Moth (R2)
+					o(571141, {	-- Glowing Moth
 						["coords"] = {
 							{ 52.9, 50.7, MAP.MIDNIGHT.HARANDAR },
 							{ 61.2, 32.3, 2576 },	-- The Den
 						},
 						["questID"] = 92214,
 					}),
-					o(571142, {	-- Glowing Moth (R2)
+					o(571142, {	-- Glowing Moth
 						["coord"] = { 32.1, 67.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92213,
 					}),
-					o(571143, {	-- Glowing Moth (R2)
+					o(571143, {	-- Glowing Moth
 						["coord"] = { 32.6, 84.8, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92212,
 					}),
-					o(571144, {	-- Glowing Moth (R2)
+					o(571144, {	-- Glowing Moth
 						["coord"] = { 30.3, 73.4, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92211,
 					}),
-					o(571145, {	-- Glowing Moth (R2)
+					o(571145, {	-- Glowing Moth
 						["coord"] = { 43.2, 53.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92210,
 					}),
-					o(571146, {	-- Glowing Moth (R2)
+					o(571146, {	-- Glowing Moth
 						["coord"] = { 60.4, 48.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92209,
 					}),
-					o(571147, {	-- Glowing Moth (R2)
+					o(571147, {	-- Glowing Moth
 						["coord"] = { 34.0, 44.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92208,
 					}),
-					o(571148, {	-- Glowing Moth (R2)
+					o(571148, {	-- Glowing Moth
 						["coord"] = { 38.4, 47.4, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92207,
 					}),
-					o(571149, {	-- Glowing Moth (R2)
+					o(571149, {	-- Glowing Moth
 						["coord"] = { 62.3, 37.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92226,
 					}),
-					o(571150, {	-- Glowing Moth (R2)
+					o(571150, {	-- Glowing Moth
 						["coord"] = { 49.3, 75.5, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92235,
 					}),
-					o(571151, {	-- Glowing Moth (R2)
+					o(571151, {	-- Glowing Moth
 						["coord"] = { 50.3, 69.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92234,
 					}),
-					o(571152, {	-- Glowing Moth (R2)
+					o(571152, {	-- Glowing Moth
 						["coord"] = { 68.7, 36.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92233,
 					}),
-					o(571153, {	-- Glowing Moth (R2)
+					o(571153, {	-- Glowing Moth
 						["coord"] = { 50.3, 33.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92232,
 					}),
-					o(571154, {	-- Glowing Moth (R2)
+					o(571154, {	-- Glowing Moth
 						["coord"] = { 47.6, 47.0, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92231,
 					}),
-					o(571155, {	-- Glowing Moth (R2)
+					o(571155, {	-- Glowing Moth
 						["coord"] = { 41.6, 40.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92230,
 					}),
-					o(571156, {	-- Glowing Moth (R2)
+					o(571156, {	-- Glowing Moth
 						["coord"] = { 53.8, 59.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92229,
 					}),
-					o(571157, {	-- Glowing Moth (R2)
+					o(571157, {	-- Glowing Moth
 						["coord"] = { 67.0, 56.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92228,
 					}),
-					o(571158, {	-- Glowing Moth (R2)
+					o(571158, {	-- Glowing Moth
 						["coord"] = { 55.1, 32.9, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92227,
 					}),
-					o(571159, {	-- Glowing Moth (R2)
+					o(571159, {	-- Glowing Moth
 						["coord"] = { 46.4, 24.9, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92225,
 					}),
 				}),
 				n(MOTH_RENOWN4, {	-- Exo: Verified Renown 4, Mini-map Vignettes are unlocked at Renown 6
-					o(571162, {	-- Glowing Moth (R4)
+					o(571162, {	-- Glowing Moth
 						["coord"] = { 43.1, 39.5, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92224,
 					}),
-					o(571163, {	-- Glowing Moth (R4)
+					o(571163, {	-- Glowing Moth
 						["coord"] = { 44.0, 38.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92223,
 					}),
-					o(571164, {	-- Glowing Moth (R4)
+					o(571164, {	-- Glowing Moth
 						["coord"] = { 60.3, 17.8, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92222,
 					}),
-					o(571165, {	-- Glowing Moth (R4)
+					o(571165, {	-- Glowing Moth
 						["coord"] = { 71.7, 58.8, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92221,
 					}),
-					o(571166, {	-- Glowing Moth (R4)
+					o(571166, {	-- Glowing Moth
 						["coord"] = {
 							{ 72.7, 57.7, MAP.MIDNIGHT.HARANDAR },	-- Cave Entrance
 							{ 74.0, 57.2, MAP.MIDNIGHT.HARANDAR },	-- Glowing Moth
 						},
 						["questID"] = 92220,
 					}),
-					o(571167, {	-- Glowing Moth (R4)
+					o(571167, {	-- Glowing Moth
 						["coord"] = { 55.6, 64.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92219,
 					}),
-					o(571168, {	-- Glowing Moth (R4)
+					o(571168, {	-- Glowing Moth
 						["coord"] = { 55.8, 66.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92218,
 					}),
-					o(571169, {	-- Glowing Moth (R4)
+					o(571169, {	-- Glowing Moth
 						["coords"] = {
 							{ 61.5, 38.5, MAP.MIDNIGHT.HARANDAR },	-- Cave Entrance
 							{ 61.3, 35.2, MAP.MIDNIGHT.HARANDAR },	-- Glowing Moth
 						},
 						["questID"] = 92217,
 					}),
-					o(571170, {	-- Glowing Moth (R4)
+					o(571170, {	-- Glowing Moth
 						["coord"] = { 63.7, 41.4, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92216,
 					}),
-					o(571171, {	-- Glowing Moth (R4)
+					o(571171, {	-- Glowing Moth
 						["coord"] = { 62.4, 40.8, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92245,
 					}),
-					o(571172, {	-- Glowing Moth (R4)
+					o(571172, {	-- Glowing Moth
 						["coords"] = {
 							{ 61.5, 38.5, MAP.MIDNIGHT.HARANDAR },	-- Cave Entrance
 							{ 61.4, 37.1, MAP.MIDNIGHT.HARANDAR },	-- Glowing Moth
 						},
 						["questID"] = 92244,
 					}),
-					o(571173, {	-- Glowing Moth (R4)
+					o(571173, {	-- Glowing Moth
 						["coord"] = { 46.9, 48.5, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92243,
 					}),
-					o(571174, {	-- Glowing Moth (R4)
+					o(571174, {	-- Glowing Moth
 						["coord"] = { 43.3, 40.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92242,
 					}),
-					o(571175, {	-- Glowing Moth (R4)
+					o(571175, {	-- Glowing Moth
 						["coord"] = { 42.0, 37.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92241,
 					}),
-					o(571176, {	-- Glowing Moth (R4)
+					o(571176, {	-- Glowing Moth
 						["coord"] = { 73.7, 61.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92240,
 					}),
-					o(571177, {	-- Glowing Moth (R4)
+					o(571177, {	-- Glowing Moth
 						["coord"] = { 73.7, 68.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92239,
 					}),
-					o(571178, {	-- Glowing Moth (R4)
+					o(571178, {	-- Glowing Moth
 						["coord"] = { 58.6, 30.2, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92238,
 					}),
-					o(571179, {	-- Glowing Moth (R4)
+					o(571179, {	-- Glowing Moth
 						["coord"] = { 51.4, 20.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92237,
 					}),
-					o(571180, {	-- Glowing Moth (R4)
+					o(571180, {	-- Glowing Moth
 						["coord"] = { 44.8, 35.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92236,
 					}),
-					o(571181, {	-- Glowing Moth (R4)
+					o(571181, {	-- Glowing Moth
 						["coord"] = { 54.5, 38.9, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92255,
 					}),
-					o(571264, {	-- Glowing Moth (R4)
+					o(571264, {	-- Glowing Moth
 						["coord"] = { 62.5, 44.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92254,
 					}),
-					o(571265, {	-- Glowing Moth (R4)
+					o(571265, {	-- Glowing Moth
 						["coords"] = {
 							{ 60.3, 46.1, MAP.MIDNIGHT.HARANDAR },	-- Cave Entrance
 							{ 60.7, 45.4, MAP.MIDNIGHT.HARANDAR },	-- Glowing Moth
 						},
 						["questID"] = 92253,
 					}),
-					o(571266, {	-- Glowing Moth (R4)
+					o(571266, {	-- Glowing Moth
 						["coord"] = { 61.2, 50.5, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92252,
 					}),
-					o(571267, {	-- Glowing Moth (R4)
+					o(571267, {	-- Glowing Moth
 						["coord"] = { 48.3, 50.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92251,
 					}),
-					o(571268, {	-- Glowing Moth (R4)
+					o(571268, {	-- Glowing Moth
 						["coord"] = { 51.9, 76.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92250,
 					}),
-					o(571269, {	-- Glowing Moth (R4)
+					o(571269, {	-- Glowing Moth
 						["coord"] = { 36.1, 81.4, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92249,
 					}),
-					o(571270, {	-- Glowing Moth (R4)
+					o(571270, {	-- Glowing Moth
 						["coord"] = { 30.8, 63.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92248,
 					}),
-					o(571271, {	-- Glowing Moth (R4)
+					o(571271, {	-- Glowing Moth
 						["coord"] = { 35.9, 74.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92247,
 					}),
-					o(571272, {	-- Glowing Moth (R4)
+					o(571272, {	-- Glowing Moth
 						["coord"] = { 41.3, 66.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92246,
 					}),
-					o(571273, {	-- Glowing Moth (R4)
+					o(571273, {	-- Glowing Moth
 						["coord"] = { 41.3, 68.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92265,
 					}),
-					o(571274, {	-- Glowing Moth (R4)
+					o(571274, {	-- Glowing Moth
 						["coord"] = {
 							{ 63.1, 58.0, MAP.MIDNIGHT.HARANDAR },	-- Cave Entrance
 							{ 65.3, 57.7, MAP.MIDNIGHT.HARANDAR },	-- Glowing Moth
 						},
 						["questID"] = 92264,
 					}),
-					o(571275, {	-- Glowing Moth (R4)
+					o(571275, {	-- Glowing Moth
 						["coord"] = { 62.5, 58.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92263,
 					}),
-					o(571276, {	-- Glowing Moth (R4)
+					o(571276, {	-- Glowing Moth
 						["coord"] = { 64.0, 48.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92262,
 					}),
-					o(571277, {	-- Glowing Moth (R4)
+					o(571277, {	-- Glowing Moth
 						["coord"] = { 65.9, 44.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92261,
 					}),
-					o(571278, {	-- Glowing Moth (R4)
+					o(571278, {	-- Glowing Moth
 						["coord"] = { 72.9, 37.2, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92260,
 					}),
-					o(571279, {	-- Glowing Moth (R4)
+					o(571279, {	-- Glowing Moth
 						["coord"] = { 42.2, 22.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92259,
 					}),
-					o(571280, {	-- Glowing Moth (R4)
+					o(571280, {	-- Glowing Moth
 						["coord"] = { 54.5, 52.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92258,
 					}),
-					o(571281, {	-- Glowing Moth (R4)
+					o(571281, {	-- Glowing Moth
 						["coord"] = { 68.0, 20.0, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92257,
 					}),
-					o(571282, {	-- Glowing Moth (R4)
+					o(571282, {	-- Glowing Moth
 						["coord"] = { 37.0, 48.3, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92256,
 					}),
-					o(571283, {	-- Glowing Moth (R4)
+					o(571283, {	-- Glowing Moth
 						["coord"] = { 39.1, 55.1, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92266,
 					}),
 				}),
-				n(MOTH_RENOWN9, {
+				n(MOTH_RENOWN9, {	-- Exo: Verified Renown 9, Mini-map Vignettes are unlocked at Renown 11
 					o(571289, {	-- Glowing Moth
 						["coord"] = { 39.4, 61.4, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 92308,

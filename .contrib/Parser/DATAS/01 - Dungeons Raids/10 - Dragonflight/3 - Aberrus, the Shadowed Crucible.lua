@@ -956,7 +956,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						},
 					}),
 				}),
-				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
+				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },
 				},{
 					i(204413),	-- Bands of Purified Purpose

@@ -175,26 +175,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381343, {	-- Learn and Grow
 				["coord"] = { 51.6, 20.0, THE_WAKING_SHORES },
 			}),
-			o(379168, {	-- Lost Cache Key
-				["description"] = "Collect a Sour Apple from the ground around the Blacktalon Pack Goat along the road leading up to Obsidian Bulwark at 43.7, 71.8\n\nThrow an apple at the Blacktalon Shadowclaw in Obsidian Bulwark 43.1, 67.2\n\nYou can now interact with the bird, it will fly you up to the cave where the Cache key will be visible beside the corpse.",
-				["coord"] = { 43.0, 70.0, THE_WAKING_SHORES },
-				["groups"] = {
-					i(198085),	-- Lost Obsidian Cache Key
-				},
-			}),
-			o(378857, {	-- Lost Obsidian Cache
-				["description"] = "Collect a Sour Apple from the ground around the Blacktalon Pack Goat along the road leading up to Obsidian Bulwark at 43.7, 71.8\n\nThrow an apple at the Blacktalon Shadowclaw in Obsidian Bulwark 43.1, 67.2\n\nYou can now interact with the bird, it will fly you up to the cave where the Cache key will be visible beside the corpse.",
-				["coord"] = { 45.0, 70.0, THE_WAKING_SHORES },
-				["crs"] = { 191851 },	-- Blacktalon Shadowclaw
-				["questID"] = 70018,
-				["cost"] = {
-					{ "i", 198085, 1 },	-- 1x Lost Obsidian Cache Key
-					{ "i", 194122, 1 },	-- 1x Sour Apple
-				},
-				["groups"] = {
-					i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
-				},
-			}),
 			o(381340, { 	-- Neltharus Stands
 				["coord"] = { 26.2, 56.3, THE_WAKING_SHORES },
 			}),
@@ -217,12 +197,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- ["questID"] = ???,
 				["groups"] = {
 					i(198045),	-- Slam Bam Swill
-				},
-			}),
-			o(377485, {	-- Sour Apple
-				["coord"] = { 43.7, 71.7, THE_WAKING_SHORES },
-				["groups"] = {
-					i(194122),	-- Sour Apple
 				},
 			}),
 			o(381153, {	-- Ruby Gem Cluster

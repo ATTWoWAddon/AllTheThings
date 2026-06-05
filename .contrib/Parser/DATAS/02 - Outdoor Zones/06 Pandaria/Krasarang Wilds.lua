@@ -1268,11 +1268,12 @@ root(ROOTS.Zones, {
 					}),
 					o(213750, {	-- Saurok Stone Tablet
 						["questID"] = 31408,
-						["coord"] = { 71.0, 9.0, KRASARANG_WILDS },
-						["description"] = "Located at the back of the cave, to the right of the junk pile.",
-						["groups"] = {
-							i(86220),	-- Saurok Stone Tablet
+						["coords"] = {
+							{ 71.0, 9.0, KRASARANG_WILDS },
+							{ 75.1, 55.1, VALLEY_OF_THE_FOUR_WINDS },
 						},
+						["description"] = "Located at the back of the cave, to the right of the junk pile.",
+						["groups"] = { i(86220) },	-- Saurok Stone Tablet
 					}),
 					o(214403, {	-- Stack of Papers
 						["provider"] = { "i", 87798 },	-- Stack of Papers

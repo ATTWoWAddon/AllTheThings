@@ -47,7 +47,7 @@ do
 			end,
 			lvl = function(t) return 60; end,
 		});
-		
+
 		app.AddGenericFieldConverter(KEY);
 		app.AddEventHandler("OnRefreshCollections", function()
 			local state
@@ -63,8 +63,6 @@ do
 			-- Character Cache
 			app.SetBatchCached(CACHE, saved, 1)
 			app.SetBatchCached(CACHE, none)
-			-- Account Cache (removals handled by Sync)
-			app.SetBatchAccountCached(CACHE, saved, 1)
 		end);
 		app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 			if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
@@ -93,7 +91,7 @@ do
 			collected = function(t) return app.IsAccountCached(CACHE, t[KEY]) and 1 end,
 			lvl = function(t) return 60; end,
 		});
-		
+
 		app.AddGenericFieldConverter(KEY);
 		app.AddEventHandler("OnRefreshCollections", function()
 			local check

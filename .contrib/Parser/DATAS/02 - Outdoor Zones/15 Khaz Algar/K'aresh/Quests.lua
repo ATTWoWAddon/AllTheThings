@@ -2600,7 +2600,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							{ 44.4, 50.3, DORNOGAL },
 							{ 53.6, 65.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 						},
-						["lockCriteria"] = { 1, "questID", 90972 },	-- A Common Cause
+						["lockCriteria"] = { 1,
+							-- "questID", 90972,	-- A Common Cause (this was assumed. commenting for now so account-wide logic works correct on 'The Pursuit Continues')
+							"questID", 92630,	-- The Pursuit Continues
+						},
 					}),
 					q(92630, {	-- The Pursuit Continues
 						["qgs"] = {

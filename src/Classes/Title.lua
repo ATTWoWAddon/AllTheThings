@@ -141,6 +141,4 @@ app.AddEventHandler("OnRefreshCollections", function()
 	-- Character Cache
 	app.SetBatchCached(CACHE, saved, 1)
 	app.SetBatchCached(CACHE, none)
-	-- Account Cache (removals handled by Sync)
-	app.SetBatchAccountCached(CACHE, saved, 1)
 end);

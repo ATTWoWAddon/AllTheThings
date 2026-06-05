@@ -3556,16 +3556,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							2453,	-- Bruiseweed
-							2449,	-- Earthroot
-							3356,	-- Kingsblood
-							3357,	-- Liferoot
-							785,	-- Mageroyal
-							3355,	-- Wild Steelbloom
-						},
-					},
 					["groups"] = {
 						-- #if BEFORE CATA
 						i(4777, {	-- Ironwood Maul

@@ -1061,6 +1061,9 @@ root(ROOTS.Zones, {
 						}, {
 							i(257354),	-- Scroll of K'aresh's Fall (DECOR!)
 							i(257351),	-- Tale of the Penultimate Lich King (DECOR!)
+							i(271971, {	-- Tome of Kings (DECOR!)
+								["timeline"] = { ADDED_12_0_7 },
+							}),
 							i(245332),	-- Tome of Silvermoon Intrigue (DECOR!)
 							i(257355),	-- Tome of the Survivor (DECOR!)
 						}),

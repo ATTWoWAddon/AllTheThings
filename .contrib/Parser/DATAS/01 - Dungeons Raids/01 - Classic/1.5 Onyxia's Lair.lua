@@ -507,7 +507,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					["qg"] = 14392,		-- Overlord Runthak / Overlord Natoj
-					["coord"] = { 52.2, 75.8, ORGRIMMAR },
+					["coords"] = {
+						-- #if BEFORE CATA
+						{ 52.2, 75.8, ORGRIMMAR },
+						-- #else
+						{ 51.5, 83.0, ORGRIMMAR },
+						-- #endif
+					},
 					["requireSkill"] = LEATHERWORKING,
 					["learnedAt"] = 300,
 					["races"] = HORDE_ONLY,

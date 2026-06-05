@@ -1390,6 +1390,7 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Twilight Zone",
 	[-679] = CATALOG_SHOP_TYPE_DECOR,
 	[-691] = "Treasures of Azeroth",
+	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
 	[-723] = "Elemental Invasions",
@@ -1697,6 +1698,7 @@ localize(L.HEADER_ICONS, {
 	[-661] = 236471,
 	[-679] = _.asset("interface_decor"),
 	[-691] = 7259806,
+	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
 	[-721] = 450908,
 	[-723] = 135793,
@@ -1757,7 +1759,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=31,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=31,["weekday"]=1,["year"]=2026}),
@@ -1809,7 +1810,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=18,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=4,["monthDay"]=18,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=25,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=4,["monthDay"]=25,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=2,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=2,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=16,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=16,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -9482,7 +9484,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753981200,
+		release = 1753956000,
 		state = 2,
 	},
 	[5002] = {
@@ -9491,7 +9493,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755018000,
+		release = 1754992800,
 		state = 2,
 	},
 	[5003] = {
@@ -9500,7 +9502,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755795600,
+		release = 1755770400,
 		state = 2,
 	},
 	[5004] = {
@@ -9509,7 +9511,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756227600,
+		release = 1756202400,
 		state = 2,
 	},
 	[5005] = {
@@ -9518,7 +9520,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756832400,
+		release = 1756807200,
 		state = 2,
 	},
 	[5006] = {
@@ -9527,7 +9529,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1757005200,
+		release = 1756980000,
 		state = 2,
 	},
 	[5007] = {
@@ -9536,7 +9538,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758042000,
+		release = 1758016800,
 		state = 2,
 	},
 	[51] = {
@@ -9561,7 +9563,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765994400,
+		release = 1765969200,
 		state = 2,
 	},
 	[53] = {
@@ -9586,7 +9588,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50505,
-		release = 1776704400,
+		release = 1776679200,
 		state = 2,
 	},
 };
@@ -28767,6 +28769,7 @@ localize(L.HEADER_NAMES, {
 	[-660] = "Dúo Crepuscular",
 	[-661] = "Dimensión Desconocida",
 	[-691] = "Tesoros de Azeroth",
+	[-694] = "Mejora de la edición del aniversario de Burning Crusade Classic™",
 	[-723] = "Incursiones elementales",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -31840,6 +31843,7 @@ localize(L.HEADER_NAMES, {
 	[-654] = "Cosechando",
 	[-655] = "Calabozos celestiales",
 	[-656] = "Gremio de luchadores",
+	[-694] = "Mejoras de Burning Crusade Classic™ Edición Aniversario",
 	[-723] = "Invasiones elementales",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -32252,6 +32256,8 @@ L.KNOWN_BY = "已知 %s";
 L.KNOWN_BY_CHECKBOX = "已知";
 L.KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中查看所有服务器上已知此配方的完整角色列表，请启用此选项。";
 L.LAYER = "位面";
+L.LEAVE_DELVE = "离开地下堡";
+L.LEAVE_DELVE_DESC = "点击这里离开地下堡。";
 L.LEAVE_GROUP = "离开队伍";
 L.LEAVE_GROUP_DESC = "点击此处离开队伍。在大多数情况下，这也会在60秒左右后将你送到最近的墓地。\n\n注意：只有当你在一个队伍中或者游戏认为你在一个队伍中时才有效。";
 L.LEGACY_RAID_DIFF = "经典团队难度";
@@ -32875,7 +32881,7 @@ localize(L.HEADER_NAMES, {
 	[-522] = "英雄礼包",
 	[-523] = "史诗礼包",
 	[-524] = "'燃烧的远征'怀旧服典藏包",
-	[-525] = "'巫妖王之怒'怀旧服 - 北裂境升级",
+	[-525] = "'巫妖王之怒'怀旧服 - 诺森德升级",
 	[-526] = "'大地的裂变'怀旧服 - 炽炎升级",
 	[-527] = "'熊猫人之谜'怀旧服 - 宿煞英雄礼包",
 	[-530] = "暗黑破坏神III",
@@ -32917,6 +32923,7 @@ localize(L.HEADER_NAMES, {
 	[-660] = "暮光二重奏",
 	[-661] = "暮光领域",
 	[-691] = "艾泽拉斯的宝藏",
+	[-694] = "'燃烧的远征'周年纪念版 - 外域升级",
 	[-723] = "元素入侵",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -32944,6 +32951,10 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-483] = "除了服务器上所有玩家共同努力完成备战任务外，还需要一名玩家制作出流沙节杖 —— 这是一项极为艰巨的任务，在该任务线刚推出时，只有服务器上顶尖的公会才能完成。当备战任务结束，联盟与部落的军队抵达希利苏斯后，流沙节杖可用于敲响甲虫之锣。敲响铜锣后，安其拉之门就会开启。每个服务器上第一个敲响甲虫之锣的玩家将获得 “甲虫之王” 称号（在《燃烧的远征》中，经典旧世的这个称号不会再出现！）以及黑色其拉共鸣水晶坐骑。在随后 10 小时内敲响铜锣的其他玩家也能获得该称号。\n\n尽管在服务器上安其拉之门开启后，玩家仍可完成流沙节杖的任务线，但完成后既不会获得黑色其拉共鸣水晶坐骑，也不会获得 “甲虫之王” 称号。",
 	[-484] = "天灾入侵是1.11 补丁中的一项世界事件，并在巫妖王之怒前置补丁 3.0.1中再度开启，预示着令人闻风丧胆的克尔苏加德的要塞 ——纳克萨玛斯即将开放。\n\n艾泽拉斯的多个地区遭到了天灾军团部队的袭击。银色黎明的成员组织了一场对抗天灾入侵的全球反击，他们密切监视着任何浮空死灵城堡的动向，并将情报分享给所有愿意投身这场战斗的冒险者。\n\n每一次对天灾军团的胜利，都会让防线愈发坚固。随着越来越多的入侵企图被守军击退，银色黎明将为抗击入侵者的勇士们赋予越来越强大的祝福。\n\n如果凡人们齐心协力，清除散落在世界各地、每一座浮空死灵城堡下方出现的天灾营地，这场入侵或许就能被有效遏制，甚至彻底击退。\n\n凡有意拿起武器对抗亡灵入侵者的勇士，可与银色黎明的代表交谈，了解哪些地区需要支援，以及防线当前的状况",
 	[-485] = "扎拉赞恩的陨落（也被称作夺回回音群岛之战），是沃金与暗矛部族为从邪恶的扎拉赞恩手中夺回回音群岛而发起的最终总攻。这是在下一部资料片《大地的裂变》发布之前，部落所经历的一场重大收尾事件。此外，在回音群岛解放之后创建的所有巨魔角色，其新手出生地也变更为了这里",
+	[-530] = "这些奖励是提供给购买了暗黑破坏神III典藏版的玩家的。",
+	[-531] = "这些奖励是提供给购买了暗黑破坏神III：夺魂之镰典藏版的玩家的。",
+	[-534] = "这些奖励是提供给购买了星际争霸II：自由之翼典藏版的玩家的。",
+	[-535] = "这些奖励是提供给购买了星际争霸II：虫群之心典藏版的玩家的。",
 	[-547] = "本板块用于收录现实中开展的各类杂项促销活动，以及与账号管理相关的内容",
 	[-550] = "这是一个以战场为基础的活动，与夏季奥运会的开始同时进行。唯一一次庆祝是在2008年，以配合北京奥运会，虽然似乎有意图重复这个活动，但它从未回归。",
 	[-554] = "与普通拍卖行不同，黑市拍卖行的物品由 NPC 生成并列出。物品仅列出一天。出售的物品从变得无法获得的物品到稀有掉落和 TCG 物品不等。所有物品都很少列出，因此，这不应该被视为一种可靠的刷稀有物品的方法。\n\n坐骑的起始竞价为20,000金，某些例外情况除外。\n宠物的起始竞价在1金和20,000金之间，具体取决于原始来源以及获取难度。\n外观/杂项物品的起始竞价在10,000金和15,000金之间。\n\n竞价与普通拍卖行一样工作。没有直接购买价格。当与其他玩家竞争最终竞价时，价格上不封顶（甚至可以到金币上限）。成功购买后，物品将通过邮件发送。正常的拾取绑定规则适用，因此您必须在正确的角色上进行竞价。\n\n物品供应基于服务器。每个服务器在任何时候都会有不同的出售物品，并且价格可能会因服务器而异。\n\n如果为空，物品窗口将显示“目前没有物品。请稍后再来查看。”",
@@ -36210,6 +36221,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "暮光協助",
 	[-660] = "暮光雙人組",
 	[-661] = "暮光地帶",
+	[-694] = "燃燒的遠征：經典週年紀念版 - 外域升級",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "你可能需要在特定節日的活動中才能完成本節中的事物。",
@@ -36220,6 +36232,10 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-355] = "副本的這部分可以從最東邊的傳送門進入。（右側）",
 	[-356] = "副本的這部分可以從最北邊的傳送門進入。",
 	[-357] = "副本的這部分可以從最西邊的傳送門進入。（左側）",
+	[-530] = "這些獎勵是提供給購買了暗黑破壞神III典藏版的玩家的。",
+	[-531] = "這些獎勵是提供給購買了暗黑破壞神III：奪魂之鐮典藏版的玩家的。",
+	[-534] = "這些獎勵是提供給購買了星海爭霸II：自由之翼典藏版的玩家的。",
+	[-535] = "這些獎勵是提供給購買了星海爭霸II：蟲族之心典藏版的玩家的。",
 	[-592] = "這是一個每年重複的活動，發生在十一月初到年底之間。",
 	[-721] = "包含在當前區域可取得，但來源直接來自另一個區域的內容。",
 });

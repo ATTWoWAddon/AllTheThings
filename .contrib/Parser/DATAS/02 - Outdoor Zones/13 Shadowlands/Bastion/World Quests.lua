@@ -50,8 +50,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(59601, {	-- Assault on the Vestibule
+				o(348830, {	-- Depleted Anima Canister
+					i(172451),	-- Weak Anima Mote (QI!)
+				}),
 				i(176805),	-- Centurion Armor Fragment (QI!)
-				i(172451),	-- Weak Anima Mote (QI!)
 				i(176806),	-- Drained Anima-Core (QI!)
 			}),
 			q(62451),	-- Assault on the Vestibule

@@ -102,7 +102,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 						i(217420, {	-- Large Pouch of Whelpling's Awakened Crests
 							["cost"] = { { "i", 217397, 2 } },	-- 2x Keg-Stamped Coin
 						}),
-						i(217705, {	-- Pirate's Booty
+						i(217705, {	-- Pirate's Booty (CI!)
 							["cost"] = 18	-- 18c
 						}),
 					},
@@ -532,7 +532,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 		n(PLUNDERSTORM, {
 			q(80110),	-- First WQ of the Day
-			-- q(80436),	-- Purchasing Pirate's Booty	-- Once per account lockout
 			q(80262),	-- Renown 6 - Shabby Swabbie outfit unlocked in Plunderstorm
 			q(81657),	-- Renown 16 - Marveouls Multi-Shot unlocked in Plunderstorm
 			q(80263),	-- Renown 17 - Snazzy Swabbie outfit unlocked in Plunderstorm

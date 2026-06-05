@@ -465,7 +465,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28219, {	-- Buzzers for Baby
 					["sourceQuest"] = 28229,	-- Nature and Nurture
-					["qg"] = 48032,	-- Seedling Protector
+					["qg"] = 48032,	-- Seedling Protector (mobileNPC)
 					["coord"] = { 48.6, 25.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -947,15 +947,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Extinguish the Brazier of Pain
 							["provider"] = { "o", 176158 },	-- Brazier of Pain
+							["coord"] = { 37.0, 55.9, FELWOOD },
 						}),
 						objective(2, {	-- 0/1 Extinguish the Brazier of Malice
 							["provider"] = { "o", 176159 },	-- Brazier of Malice
+							["coord"] = { 38.3, 52.5, FELWOOD },
 						}),
 						objective(3, {	-- 0/1 Extinguish the Brazier of Suffering
 							["provider"] = { "o", 176160 },	-- Brazier of Suffering
+							["coord"] = { 37.4, 53.1, FELWOOD },
 						}),
 						objective(4, {	-- 0/1 Extinguish the Brazier of Hatred
 							["provider"] = { "o", 176161 },	-- Brazier of Hatred
+							["coord"] = { 37.2, 54.9, FELWOOD },
 						}),
 						i(65281, {	-- Belt of the Lost Barrow
 							["timeline"] = { ADDED_4_0_3 },
@@ -1567,7 +1571,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28228, {	-- Rejoining the Forest
 					["sourceQuest"] = 28224,	-- The Last Protector
-					["qg"] = 48044,	-- Flourishing Protector
+					["qg"] = 48044,	-- Flourishing Protector (mobileNPC)
 					["coord"] = { 48.7, 25.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2281,7 +2285,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28222,	-- Singin' in the Sun
 						28221,	-- These Roots Were Made For Stompin'
 					},
-					["qg"] = 48044,	-- Flourishing Protector
+					["qg"] = 48044,	-- Flourishing Protector (mobileNPC)
 					["coord"] = { 48.7, 25.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -2491,7 +2495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28219,	-- Buzzers for Baby
 						28220,	-- Seeking Soil
 					},
-					["qg"] = 48042,	-- Sapling Protector
+					["qg"] = 48042,	-- Sapling Protector (mobileNPC)
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Irontree Stomper slain

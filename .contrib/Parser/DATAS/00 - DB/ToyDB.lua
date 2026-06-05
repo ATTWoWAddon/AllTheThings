@@ -1594,11 +1594,11 @@ i(267323);	-- Troll Scroll of Rainbow Roll
 -- PATCH 12.0.7 --
 ------------------
 i(259899);	-- Ashen Horn of the Fallen Keeper
+i(276371);	-- Lightveil Recall Beacon
 i(264313);	-- Madcap Redcap
 i(264367);	-- Mycomancer's Hearthspore
 i(260170);	-- Oathstone Fragment
 i(259335);	-- Photo Finisher
 --- Unsorted ---
 i(276370);	-- Lightveil Hearth Beacon
-i(276371);	-- Lightveil Recall Beacon
 i(264368);	-- ??

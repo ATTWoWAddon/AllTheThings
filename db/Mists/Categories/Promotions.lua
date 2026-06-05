@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,crit,flt,h,i,mnt,p,q,s,settings,toy,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
+local ach,crit,en,flt,h,i,mnt,p,q,s,settings,toy,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
 categories.Promotions=
 h(-736,{SortPriority=90,g={
 h(-520,{
@@ -87,7 +87,7 @@ q(5842,{maps={57},providers={{"i",14648}},races={4},u=2}),
 q(5843,{maps={1},providers={{"i",14649}},races={2,8},u=2}),
 q(5844,{maps={7},providers={{"i",14650}},races={6},u=2}),
 q(5847,{maps={18},providers={{"i",14651}},races={5},u=2}),
-q(91888,{altQuests={91889},awp=11505,coords={
+q(91888,{awp=11505,coords={
 [224]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",maps={84,85,87,88,103,110,111,998},qgs={17249},rwp=30002,u=2,g={
 ach(662,{awp=30002,u=2}),
 ach(663,{awp=30002,u=2}),
@@ -102,26 +102,32 @@ ach(664,{awp=30002,providers={{"i",13582}},rwp=30002,u=2}),
 p(93,{awp=11101,b=1,itemID=13584,npcID=11326,q=3,spellID=17708,u=3}),
 p(92,{awp=11101,b=1,itemID=13583,npcID=11325,q=3,spellID=17707,u=3}),
 p(94,{awp=11101,b=1,itemID=13582,npcID=11327,q=3,spellID=17709,u=3})}})}}),
-q(63865,{altQuests={63770},awp=20501,coords={
+q(63865,{awp=20501,coords={
 [210]={{42.6,71.6}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",maps={84,85,87,88,103,110,111,998},qgs={17249},rwp=30002,u=2,g={
 p(131,{b=1,itemID=25535,npcID=18381,q=3,spellID=32298,u=2}),
 ach(665,{awp=30002,u=2}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
 p(111,{b=1,description="This was only available in the EU.",itemID=30360,npcID=15358,q=3,spellID=24988,u=2}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=30400,u=2,g={
-q(63450,{altQuests={63448},coords={
+q(63450,{coords={
 [224]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
-mnt(348459,{b=1,itemID=184865,lvl=20,q=4,u=2}),
 toy(184871,{b=1,q=3,u=2}),
-toy(38233,{b=1,q=3,u=2})}})}}),
+toy(38233,{b=1,q=3,u=2}),
+mnt(348459,{b=1,itemID=184865,lvl=20,q=4,u=2})}})}}),
+h(-694,{awp=50502,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",rwp=60002,u=3,g={
+mnt(1256677,{itemID=253573,u=3}),
+toy(254666,{u=3}),
+toy(263489,{u=3}),
+p(4903,{itemID=253699,u=3}),
+mnt(1255246,{itemID=252950,u=3})}}),
 x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(683,{providers={{"i",39286}},rwp=30305,u=2}),
 p(188,{b=1,itemID=39286,npcID=28883,q=3,rwp=30305,spellID=52615,u=2,g={
 crit(69844,{achID=683,id=3,u=2})}})}}),
 h(-525,{awp=30400,rwp=40001,u=2,g={
 h(-522,{description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,u=2,g={
+ach(16332,{cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},u=2}),
 p(4234,{b=1,itemID=198665,npcID=194870,q=4,spellID=384796,u=2}),
-toy(198647,{b=1,q=4,u=2}),
-ach(16332,{cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},u=2})}}),
+toy(198647,{b=1,q=4,u=2})}}),
 h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,u=2,g={
 mnt(372677,{b=1,itemID=192455,lvl=20,q=4,u=2})}})}}),
 x(4,{awp=40001,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
@@ -130,8 +136,8 @@ p(268,{b=1,itemID=62540,npcID=46896,q=3,rwp=40302,spellID=87344,u=2,g={
 crit(69845,{achID=5377,id=3,u=2})}})}}),
 h(-526,{awp=30400,rwp=40402,u=2,g={
 h(-522,{description="These rewards were made available to anyone who purchased Blazing Heroic Edition.",u=2,g={
-mnt(423869,{u=2}),
 p(4274,{b=1,itemID=209945,npcID=211025,q=3,spellID=423868,u=2}),
+mnt(423869,{u=2}),
 s(220352,224380,{awp=40400,b=1,f=4,q=4,u=2}),
 s(220355,224383,{awp=40400,f=4,q=4,u=2}),
 s(220354,224382,{awp=40400,f=4,q=4,u=2}),
@@ -147,11 +153,13 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=20,q=4,rwp=50407,u=2}),
 p(671,{b=1,itemID=85871,npcID=63832,q=3,rwp=50407,spellID=124660,u=2})}}),
-h(-527,{awp=40402,rwp=50502,u=2,g={
-h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=2,g={
-mnt(473487,{u=2}),
-mnt(473478,{u=2}),
-toy(235464,{b=1,q=3,u=2})}})}}),
+h(-527,{awp=40402,rwp=60002,u=3,g={
+h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
+i(235561,{b=1,f=101,q=3,u=3}),
+toy(235464,{b=1,q=3,u=3}),
+en(267294,{u=3}),
+mnt(473487,{u=3}),
+mnt(473478,{u=3})}})}}),
 h(-530,{description="These rewards are available to anyone who purchases Diablo 3 Collection.",u=1,g={
 ach(7412,{providers={{"i",76062}},u=1}),
 p(346,{b=1,itemID=76062,npcID=56266,q=3,spellID=105633,u=1})}}),
@@ -162,8 +170,8 @@ h(-534,{description="These rewards are available to anyone who purchases Starcra
 ach(4824,{providers={{"i",56806}},u=1}),
 p(258,{b=1,itemID=56806,npcID=42078,q=3,spellID=78381,u=1})}}),
 h(-535,{description="These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",u=1,g={
-p(903,{b=1,itemID=90177,npcID=66984,q=3,spellID=131650,u=1}),
-ach(7842,{providers={{"i",90177}},u=1})}})}}),
+ach(7842,{providers={{"i",90177}},u=1}),
+p(903,{b=1,itemID=90177,npcID=66984,q=3,spellID=131650,u=1})}})}}),
 h(-542,{u=1,g={
 ach(8345,{providers={{"s",142073}},u=1}),
 mnt(142073,{b=1,itemID=98618,lvl=20,q=4,u=1})}}),

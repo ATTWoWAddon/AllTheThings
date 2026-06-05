@@ -174,6 +174,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["description"] = "This rare only spawns when the |cFFFFD700Cogfrenzy's Construction Frenzy|r quest is active and requires three |cFF0070ddPressure Relief Valves|r to summon.",
 				["questID"] = 56419,
 				["coord"] = { 81.0, 20.2, MECHAGON },
+				["cost"] = {{"i",169470,3}},	-- Pressure Relief Valve
 				["isDaily"] = true,
 				["groups"] = {
 					i(168631),	-- Metal Detector
@@ -253,6 +254,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			n(151124, {	-- Mechagonian Nullifier
 				["questID"] = 55207,
 				["coord"] = { 56.9, 52.1, MECHAGON },
+				["providers"] = {
+					{ "i", 168435 },	-- Remote Circuit Bypasser
+					{ "i", 167555 },	-- Pocket-Sized Computation Device
+					{ "n", 152174 },	-- Hackable Nullifier Relay
+				},
 				["isDaily"] = true,
 				["groups"] = {
 					i(168490),	-- Blueprint: Protocol Transference Device
@@ -417,7 +423,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 				["groups"] = {
 					i(167846),	-- Blueprint: Mechano-Treat
-					i(168435),	-- Remote Circuit Bypasser
+					i(168435, {	-- Remote Circuit Bypasser
+						["sourceQuest"] = 55708,	-- Upgraded
+					}),
 					i(170467),	-- Whirring Chainblade
 				},
 			}),

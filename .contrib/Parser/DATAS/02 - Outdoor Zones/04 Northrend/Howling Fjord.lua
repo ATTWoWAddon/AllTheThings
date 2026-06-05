@@ -591,6 +591,7 @@ root(ROOTS.Zones, {
 						["qg"] = 24130,	-- Winterhoof Brave
 						["coord"] = { 44.7, 29.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33343) },	-- Brave's Torch (QI!)
 					}),
 					q(11411, {	-- Camp Winterhoof
 						["sourceQuest"] = 11309,	-- Parts for the Job
@@ -987,6 +988,7 @@ root(ROOTS.Zones, {
 						["qg"] = 24130,	-- Winterhoof Brave
 						["coord"] = { 44.7, 29.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33342) },	-- The Brave's Machete (QI!)
 					}),
 					q(11232, {	-- Guide Our Sights
 						["sourceQuest"] = 11230,	-- Ambushed!
@@ -1546,12 +1548,14 @@ root(ROOTS.Zones, {
 						["qg"] = 24038,	-- Father Levariol
 						["coord"] = { 28.8, 43.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = { i(33284) },	-- Gjalerbron Cage Key (QI!)
 					}),
 					q(11265, {	-- Of Keys and Cages (H)
 						["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
 						["qg"] = 24135,	-- Greatmother Ankha
 						["coord"] = { 48.1, 10.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33284) },	-- Gjalerbron Cage Key (QI!)
 					}),
 					q(12297, {	-- Of Traitors and Treason
 						["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
@@ -1854,6 +1858,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/5 Dormant Vrykul slain
 								["provider"] = { "n", 24669 },	-- Dormant Vrykul
 							}),
+							i(34083),	-- Awakening Rod (QI!)
 						},
 					}),
 					q(11433, {	-- Sleeping Giants (H)
@@ -1865,6 +1870,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/5 Dormant Vrykul slain
 								["provider"] = { "n", 24669 },	-- Dormant Vrykul
 							}),
+							i(34083),	-- Awakening Rod (QI!)
 						},
 					}),
 					q(11253, {	-- Sniff Out the Enemy
@@ -1996,6 +2002,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 Halfdan the Ice-Hearted slain
 								["provider"] = { "n", 23671 },	-- Halfdan the Ice-Hearted
 							}),
+							i(33346),	-- Vrykul Scroll of Ascension (QI!)
 							i(35900),	-- Supple Doeskin Moccasins
 							i(35902),	-- Shock-Bound Spaulders
 							i(35903),	-- Onyx Grips
@@ -2521,7 +2528,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11453, {	-- The Slumbering King (H)
-						["provider"] = { "i", 34083 },	-- Awakening Rod
+						["provider"] = { "i", 34091 },	-- Mezhen's Writings
 						["races"] = HORDE_ONLY,
 						["crs"] = { 24018 },	-- Necro Overlord Mezhen
 						["groups"] = {
@@ -2648,6 +2655,7 @@ root(ROOTS.Zones, {
 						["qg"] = 24130,	-- Winterhoof Brave
 						["coord"] = { 44.7, 29.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33344) },	-- Brave's Flare (QI!)
 					}),
 					q(11241, {	-- Trail of Fire
 						["sourceQuest"] = 11232,	-- Guide Our Sights

@@ -1,6 +1,7 @@
 ---------------------------------------------
 --        S E C R E T S       M O D U L E  --
 ---------------------------------------------
+
 SELFIE_FILTER = createHeader({
 	readable = "Selfie Filter",
 	icon = [[~_.asset("Category_SelfieFilters")]],

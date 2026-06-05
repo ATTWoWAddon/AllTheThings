@@ -267,6 +267,57 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(249662),	-- Wild Fiberknife
 			i(262731),	-- Wildthorn Razorfang
 		}),
+		n(TREASURES, {
+			o(584503, {	-- Grand Sanctified Spoils
+				["description"] = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
+				["coords"] = {
+					-- Atal'Aman
+					{40.57, 57.84, ATAL_AMAN},
+					{57.38, 83.09, ATAL_AMAN},
+					{43.12, 65.28, ATAL_AMAN},
+					{44.41, 46.27, ATAL_AMAN},
+					-- Collegiate Calamity
+					{81.36, 39.86, COLLEGIATE_CALAMITY},
+					{46.60, 84.29, COLLEGIATE_CALAMITY},
+					{30.00, 22.00, COLLEGIATE_CALAMITY},
+					-- Parhelion Plaza
+					{24.13, 88.14, PARHELION_PLAZA},
+					{64.70, 63.50, PARHELION_PLAZA},
+					{23.03, 15.09, PARHELION_PLAZA},
+					-- Shadowguard Point
+					{49.47, 55.11, SHADOWGUARD_POINT},
+					{57.17, 33.16, SHADOWGUARD_POINT},
+					{37.98, 44.75, SHADOWGUARD_POINT},
+					-- Sunkiller Sanctum
+					{65.58, 38.55, SUNKILLER_SANCTUM},
+					{43.23, 46.23, SUNKILLER_SANCTUM},
+					{53.35, 37.61, SUNKILLER_SANCTUM},
+					-- The Darkway
+					{49.61, 37.52, THE_DARKWAY},
+					{53.66, 49.89, THE_DARKWAY},
+					-- The Gulf of Memory
+					{56.51, 46.52, THE_GULF_OF_MEMORY},
+					{42.00, 23.90, THE_GULF_OF_MEMORY},
+					-- The Grudge Pit
+					{55.22, 64.39, THE_GRUDGE_PIT},
+					{43.30, 22.68, THE_GRUDGE_PIT},
+					-- The Shadow Enclave
+					{46.00, 22.00, THE_SHADOW_ENCLAVE},
+					{47.94, 57.33, THE_SHADOW_ENCLAVE},
+					-- Twilight Crypts
+					{44.91, 54.72, TWILIGHT_CRYPTS},
+					{39.45, 84.72, TWILIGHT_CRYPTS},
+					{20.85, 62.86, TWILIGHT_CRYPTS},
+				},
+				["groups"] = {
+				--	i(264971),	-- Annihilation Rod (COSMETIC!)
+				--	i(264970),	-- Oblivion's Edge (COSMETIC!)
+					i(265368),	-- Twilight Destroyer (COSMETIC!)
+					i(265366),	-- Twilight Executioner (COSMETIC!)
+					i(265367),	-- Twilight Fang (COSMETIC!)
+				},
+			}),
+		}),
 	})),
 	n(FACTIONS, {
 		faction(2744),	-- Valeera Sanguinar

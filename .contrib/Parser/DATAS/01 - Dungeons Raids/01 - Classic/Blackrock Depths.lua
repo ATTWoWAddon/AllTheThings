@@ -1110,7 +1110,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28465, {	-- Slaves of the Firelord (H)
 					["sourceQuest"] = 28301,	-- Meet with Terga Earthbreaker / Meet with Hretar Riverspeaker [SL+]
-					["qg"] = 72939,	-- Terga Earthbreaker
+					["qgs"] = {
+						-- #if AFTER SL
+						168628,	-- Hretar Riverspeaker <Shaman Trainer>
+						-- #else
+						72939,	-- Terga Earthbreaker
+						-- #endif
+					},
 					["coords"] = {
 						-- #if AFTER SL
 						{ 73.6, 43.3, ORGRIMMAR },
@@ -1122,6 +1128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(64312),	-- Totem of Freedom (QI!)
 						i(65643, {	-- Mask of the Speaker
 							["timeline"] = { ADDED_4_0_3 },
 						}),

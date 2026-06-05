@@ -666,7 +666,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 11.0.5
 			expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
-				q(84611),	--
+				-- Marked as repeatable because of Inaccurate Unflagged Quests report
+				q(84611, {["isRepeatable"] = true}),	--
 			})),
 
 			-- 11.1.5

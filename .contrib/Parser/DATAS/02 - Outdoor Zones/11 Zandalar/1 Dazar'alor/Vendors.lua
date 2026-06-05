@@ -328,6 +328,14 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					15810,	-- Short Spear
 				}},
 			}),
+			n(133230, {	-- Holaja Da Drunk <Boots 'n' Booze Vendor>
+				["coord"] = { 57.2, 89.0, DAZARALOR },
+				["groups"] = {
+					i(156873),	-- Boozy Boot
+					i(162551),	-- Jani Juice
+					i(156872),	-- Loa Sweat
+				},
+			}),
 			n(122465, {	-- Koatini
 				["coord"] = { 48.8, 91.0, DAZARALOR },
 				["groups"] = {

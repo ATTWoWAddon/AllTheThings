@@ -71,6 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
                     i(264313),	-- Madcap Redcap (TOY!)
                     i(264367),	-- Mycomancer's Hearthspore (TOY!)
 					i(268280),	-- Sporelord's Shroom Cap (COSMETIC!)
+					-- mount thingy drops once per week, needs 4 in total
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({

@@ -288,21 +288,6 @@ ach(5540,{awp=40003,pvp=1,rwp=70003,u=2}),
 ach(5539,{awp=40003,pvp=1,rwp=70003,u=2}),
 ach(11468,{awp=70003,pvp=1,rwp=80001,u=2}),
 ach(19418,{awp=100200,pvp=1}),
-ach(19412,{awp=100200,pvp=1}),
-ach(19411,{awp=100200,pvp=1}),
-ach(19413,{awp=100200,pvp=1}),
-ach(40221,{awp=110002,pvp=1}),
-ach(40217,{awp=110002,pvp=1}),
-ach(40219,{awp=110002,pvp=1,g={
-crit(67431,{achID=40219,pvp=1}),
-crit(67425,{achID=40219,pvp=1}),
-crit(67430,{achID=40219,pvp=1}),
-crit(67432,{achID=40219,pvp=1}),
-crit(67428,{achID=40219,pvp=1}),
-crit(67429,{achID=40219,pvp=1}),
-crit(67433,{achID=40219,pvp=1}),
-crit(67427,{achID=40219,pvp=1}),
-crit(67426,{achID=40219,pvp=1})}}),
 ach(611,{awp=30002,maps={88},providers={{"n",36648}},pvp=1,r=2,rwp=90001,u=2}),
 ach(449,{awp=10400,pvp=1,r=1,rwp=20001,u=2,g={
 title(21,{pvp=1,r=1,u=2})}}),
@@ -43801,12 +43786,12 @@ ach(61183,{pvp=1,g={
 crit(109682,{achID=2090,awp=30002,id=34,pvp=1})}}),
 ach(61184,{pvp=1}),
 ach(61187,{pvp=1,g={
-s(303229,264164,{b=1,f=9,lvl=90,pvp=1,r=2}),
-s(302180,260441,{b=1,f=9,lvl=90,pvp=1,r=1}),
-crit(109688,{achID=2092,awp=30002,id=33,pvp=1})}}),
-ach(61197,{pvp=1,g={
 s(303228,264010,{b=1,f=3,lvl=90,pvp=1,r=2}),
 s(302182,260443,{b=1,f=3,lvl=90,pvp=1,r=1}),
+crit(109688,{achID=2092,awp=30002,id=33,pvp=1})}}),
+ach(61197,{pvp=1,g={
+s(303229,264164,{b=1,f=9,lvl=90,pvp=1,r=2}),
+s(302180,260441,{b=1,f=9,lvl=90,pvp=1,r=1}),
 crit(111102,{achID=61858,id=2})}}),
 ach(61180,{pvp=1,g={
 title(654,{pvp=1})}}),
@@ -44316,7 +44301,8 @@ s(300583,255629,{b=1,cost={{"c",1602,875}},f=34,lvl=90,pvp=1}),
 s(300576,255622,{b=1,cost={{"c",1602,1750}},f=28,lvl=90,pvp=1}),
 s(300589,255635,{b=1,cost={{"c",1602,875}},f=25,lvl=90,pvp=1}),
 s(300579,255625,{b=1,cost={{"c",1602,525}},f=1,lvl=90,pvp=1}),
-s(300574,255620,{b=1,cost={{"c",1602,875}},f=35,lvl=90,pvp=1})}})}}),
+s(300574,255620,{b=1,cost={{"c",1602,875}},f=35,lvl=90,pvp=1})}}),
+i(256553,{awp=120005,f=55,lvl=90,pvp=1,spellID=1260504})}}),
 o(532226,{catalystID=12,coords={
 [2393]={{40.3,65.5}}},description="Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",modelScale=4,pvp=1})}}),
 h(-295,{pvp=1,rwp=120100,g={
@@ -44603,7 +44589,8 @@ s(303882,265618,{bonusID=7532,cost={{"i",137642,5}},f=1,lvl=90,pvp=1}),
 s(303877,265613,{bonusID=7532,cost={{"i",137642,5}},f=35,lvl=90,pvp=1})}})}}),
 h(-47,{pvp=1,g={
 i(257194,{b=1,description="Rewarded within the first few wins in queued PvP Content.",pvp=1,rwp=120100}),
-i(271341,{awp=120005,f=55,pvp=1,rwp=120100,spellID=1288884})}})}})}}),
+i(271341,{awp=120005,f=55,pvp=1,rwp=120100,spellID=1288884,g={
+i(271342,{awp=120001,f=55,pvp=1,spellID=1288889})}})}})}})}}),
 h(-291,{awp=30002,pvp=1,g={
 h(-12,{pvp=1,g={
 ach(397,{pvp=1}),
@@ -48172,7 +48159,22 @@ title(153,{pvp=1})}}),
 ach(5824,{awp=40200,pvp=1,g={
 mnt(100333,{itemID=70910,lvl=10,pvp=1,r=1})}}),
 ach(5326,{pvp=1,g={
-title(144,{pvp=1})}})}})}}),
+title(144,{pvp=1})}})}}),
+ach(19412,{awp=100200,pvp=1}),
+ach(19411,{awp=100200,pvp=1}),
+ach(19413,{awp=100200,pvp=1}),
+ach(40221,{awp=110002,pvp=1}),
+ach(40217,{awp=110002,pvp=1}),
+ach(40219,{awp=110002,pvp=1,g={
+crit(67431,{achID=40219,pvp=1}),
+crit(67425,{achID=40219,pvp=1}),
+crit(67430,{achID=40219,pvp=1}),
+crit(67432,{achID=40219,pvp=1}),
+crit(67428,{achID=40219,pvp=1}),
+crit(67429,{achID=40219,pvp=1}),
+crit(67433,{achID=40219,pvp=1}),
+crit(67427,{achID=40219,pvp=1}),
+crit(67426,{achID=40219,pvp=1})}})}}),
 h(-47,{pvp=1,g={
 flt(200,{awp=70003,pvp=1,rwp=80001,u=2,g={
 r(194729,{b=1,itemID=137894,lvl=10,pvp=1,requireSkill=165,skillID=2526,u=2}),
@@ -48644,29 +48646,29 @@ i(165718,{awp=80100,b=1,pvp=1,r=1})}}),
 h(-488,{awp=80001,pvp=1,g={
 x(8,{pvp=1,g={
 h(-12,{pvp=1,g={
-ach(12567,{pvp=1}),
-ach(12568,{pvp=1})}}),
+ach(12567,{pvp=1,r=2}),
+ach(12568,{pvp=1,r=1})}}),
 h(-487,{pvp=1,g={
 i(163825,{b=1,pvp=1}),
 i(170539,{awp=80200,b=1,pvp=1})}}),
 h(-56,{description="Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",pvp=1}),
 h(-45,{pvp=1,g={
-q(58274,{description="Granted upon killing 10 Horde players without dying after you became an Assassin.",lvl=80,pvp=1,r=2,g={
-title(414,{awp=80300,pvp=1,rwp=90001,u=2}),
-toy(173951,{awp=80300,b=1,pvp=1,rwp=90001,u=2}),
-i(174020,{awp=80300,pvp=1,rwp=90001,spellID=313172,u=2}),
-crit(47765,{achID=14191,awp=80300,id=1,pvp=1,rwp=90001,u=2})}}),
-q(58273,{description="Granted upon killing 10 Alliance players without dying after you became an Assassin.",lvl=80,pvp=1,r=1,g={
-title(414,{awp=80300,pvp=1,rwp=90001,u=2}),
-toy(173951,{awp=80300,b=1,pvp=1,rwp=90001,u=2}),
-i(174020,{awp=80300,pvp=1,rwp=90001,spellID=313172,u=2}),
-crit(47766,{achID=14191,awp=80300,id=1,pvp=1,rwp=90001,u=2})}}),
+q(58274,{awp=80300,description="Granted upon killing 10 Horde players without dying after you became an Assassin.",lvl=80,pvp=1,r=2,rwp=90001,u=2,g={
+title(414,{pvp=1,u=2}),
+toy(173951,{b=1,pvp=1,u=2}),
+i(174020,{pvp=1,spellID=313172,u=2}),
+crit(47765,{achID=14191,id=1,pvp=1,u=2})}}),
+q(58273,{awp=80300,description="Granted upon killing 10 Alliance players without dying after you became an Assassin.",lvl=80,pvp=1,r=1,rwp=90001,u=2,g={
+title(414,{pvp=1,u=2}),
+toy(173951,{b=1,pvp=1,u=2}),
+i(174020,{pvp=1,spellID=313172,u=2}),
+crit(47766,{achID=14191,id=1,pvp=1,u=2})}}),
 q(52786,{lvl=10,pvp=1,r=1,rwp=100002,u=2,g={
 title(376,{pvp=1,r=1,u=2}),
-crit(40938,{achID=12568,awp=80001,id=1,pvp=1})}}),
+crit(40938,{achID=12568,awp=80001,id=1,pvp=1,r=1})}}),
 q(52784,{lvl=10,pvp=1,r=2,rwp=100002,u=2,g={
 title(375,{pvp=1,r=2,u=2}),
-crit(40937,{achID=12567,awp=80001,id=1,pvp=1})}})}})}}),
+crit(40937,{achID=12567,awp=80001,id=1,pvp=1,r=2})}})}})}}),
 x(9,{pvp=1,g={
 h(-12,{awp=90002,pvp=1,g={
 ach(14516,{pvp=1}),
@@ -48706,10 +48708,10 @@ crit(55993,{achID=16611,id=4,maps={2025},providers={{"s",271400}},pvp=1})}})}}),
 h(-45,{awp=100002,pvp=1,g={
 q(71143,{description="If you die while on the quest, and are resurrected you will continue gaining credit.",lvl=10,pvp=1,r=2,g={
 title(375,{pvp=1}),
-crit(58302,{achID=12567,awp=80001,id=2,pvp=1})}}),
+crit(58302,{achID=12567,awp=80001,id=2,pvp=1,r=2})}}),
 q(71144,{description="If you die while on the quest, and are resurrected you will continue gaining credit.",lvl=10,pvp=1,r=1,g={
 title(376,{pvp=1}),
-crit(58303,{achID=12568,awp=80001,id=2,pvp=1})}})}}),
+crit(58303,{achID=12568,awp=80001,id=2,pvp=1,r=1})}})}}),
 h(-47,{awp=100002,pvp=1,g={
 cu(2123,{pvp=1,rwp=110000,u=2}),
 i(201756,{b=1,pvp=1}),

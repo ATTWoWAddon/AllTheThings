@@ -95,7 +95,7 @@ app.AddEventHandler("OnRefreshCollections", function()
 		PerCharacter.HighestLifetimeRank = HighestLifetimeRank;
 		app.SetThingCollected(KEY, HighestLifetimeRank, true, true);
 	end
-	
+
 	local saved, none = {}, {}
 	for i=1,HighestLifetimeRank,1 do
 		saved[i] = true
@@ -106,6 +106,4 @@ app.AddEventHandler("OnRefreshCollections", function()
 	-- Character Cache
 	app.SetBatchCached(CACHE, saved, 1)
 	app.SetBatchCached(CACHE, none)
-	-- Account Cache (removals handled by Sync)
-	app.SetBatchAccountCached(CACHE, saved, 1)
 end);
