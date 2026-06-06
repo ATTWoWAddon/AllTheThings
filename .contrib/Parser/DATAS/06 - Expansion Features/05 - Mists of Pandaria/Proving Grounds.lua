@@ -15,6 +15,88 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 		["maps"] = { 480 },	-- Proving Grounds
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(8507, {	-- Proving Yourself: Endless Damage (Wave 30) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+					["groups"] = {
+						title(215, { -- the Proven Assailant
+							["timeline"] = { ADDED_5_4_0 },
+						}),
+					},
+				}),
+				ach(8504, {	-- Proving Yourself: Endless Damage (Wave 20) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8501, {	-- Proving Yourself: Endless Damage (Wave 10) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8496, {	-- Proving Yourself: Gold Damage (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8491, {	-- Proving Yourself: Silver Damage (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8486, {	-- Proving Yourself: Bronze Damage (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8509, {	-- Proving Yourself: Endless Healer (Wave 30) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+					["groups"] = {
+						title(219, { -- the Proven Healer
+							["timeline"] = { ADDED_5_4_0 },
+						}),
+					},
+				}),
+				ach(8506, {	-- Proving Yourself: Endless Healer (Wave 20) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8503, {	-- Proving Yourself: Endless Healer (Wave 10) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8498, {	-- Proving Yourself: Gold Healer (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8493, {	-- Proving Yourself: Silver Healer (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8488, {	-- Proving Yourself: Bronze Healer (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8508, {	-- Proving Yourself: Endless Tank (Wave 30) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+					["groups"] = {
+						title(216, { -- the Proven Defender
+							["timeline"] = { ADDED_5_4_0 },
+						}),
+					},
+				}),
+				ach(8505, {	-- Proving Yourself: Endless Tank (Wave 20) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8502, {	-- Proving Yourself: Endless Tank (Wave 10) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8497, {	-- Proving Yourself: Gold Tank (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8492, {	-- Proving Yourself: Silver Tank (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8487, {	-- Proving Yourself: Bronze Tank (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8697, {	-- You're Doing it Wrong (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+			}),
+		},
+	}),
+}))));
+
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_2 } }, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
+	n(PROVING_GROUNDS, {
+		["maps"] = { 480 },	-- Proving Grounds
+		["groups"] = {
+			n(ACHIEVEMENTS, {
 				ach(9572),	-- Proving Yourself: Bronze Damage
 				ach(9573),	-- Proving Yourself: Silver Damage
 				ach(9574),	-- Proving Yourself: Gold Damage
@@ -39,68 +121,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				ach(9583, {	-- Proving Yourself: Endless Tank (Wave 30) (Tank Series)
 					title(216),	-- the Proven Defender
 				}),
-				ach(8507, {		-- Proving Yourself: Endless Damage (Wave 30) (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8504, {		-- Proving Yourself: Endless Damage (Wave 20) (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8501, {		-- Proving Yourself: Endless Damage (Wave 10) (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8496, {		-- Proving Yourself: Gold Damage (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8491, {		-- Proving Yourself: Silver Damage (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8486, {		-- Proving Yourself: Bronze Damage (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8509, {		-- Proving Yourself: Endless Healer (Wave 30) (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8506, {		-- Proving Yourself: Endless Healer (Wave 20) (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8503, {		-- Proving Yourself: Endless Healer (Wave 10) (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8498, {		-- Proving Yourself: Gold Healer (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8493, {		-- Proving Yourself: Silver Healer (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8488, {		-- Proving Yourself: Bronze Healer (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8508, {		-- Proving Yourself: Endless Tank (Wave 30) (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8505, {		-- Proving Yourself: Endless Tank (Wave 20) (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8502, {		-- Proving Yourself: Endless Tank (Wave 10) (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8497, {		-- Proving Yourself: Gold Tank (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8492, {		-- Proving Yourself: Silver Tank (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8487, {		-- Proving Yourself: Bronze Tank (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8697, {		-- You're Doing it Wrong (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
-				ach(8812, {	-- You're Really Doing It Wrong (Level 90)
-					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				}),
 				ach(9590),	-- You're Doing it Wrong (META)
-				ach(9597),	-- You're Really Doing It Wrong
+				ach(9597), 	-- You're Really Doing It Wrong
+				un(NEVER_IMPLEMENTED,ach(8812)), 	-- You're Really Doing It Wrong (Level 90)
 			}),
 		},
 	}),
