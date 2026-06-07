@@ -584,7 +584,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							})),
 							i(32308),	-- Design: Wicked Pyrestone (RECIPE!)
 							-- #else
-							i(32308),	-- Design: Deadly Pyrestone (RECIPE!)
 							applyclassicphase(TBC_PHASE_FIVE, i(35765, {	-- Design: Forceful Seaspray Emerald (RECIPE!)
 								["timeline"] = { ADDED_2_4_0 },
 							})),
@@ -624,6 +623,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							i(32302, {	-- Design: Purified Shadowsong Amethyst (RECIPE!)
 								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
+							i(32308),	-- Design: Deadly Pyrestone (RECIPE!)
 							i(32309),	-- Design: Regal Seaspray Emerald (RECIPE!)
 							i(32292),	-- Design: Rigid Empyrean Sapphire (RECIPE!)
 							-- #endif
