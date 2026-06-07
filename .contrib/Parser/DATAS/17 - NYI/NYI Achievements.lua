@@ -387,6 +387,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(10328),	-- Item slots equipped with Rare items
 			ach(10327),	-- Item slots equipped with Uncommon items
 			ach(9368),	-- Total deaths in raids
+			ach(8812),	-- You're Really Doing It Wrong (Level 90)
 		}),
 	}),
 	expansion(EXPANSION.LEGION, {

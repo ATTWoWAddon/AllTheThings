@@ -18,7 +18,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				ach(8507, {	-- Proving Yourself: Endless Damage (Wave 30) (Level 90)
 					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 					["groups"] = {
-						title(215, { -- the Proven Assailant
+						title(215, {	-- the Proven Assailant
 							["timeline"] = { ADDED_5_4_0 },
 						}),
 					},
@@ -41,7 +41,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				ach(8509, {	-- Proving Yourself: Endless Healer (Wave 30) (Level 90)
 					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 					["groups"] = {
-						title(219, { -- the Proven Healer
+						title(219, {	-- the Proven Healer
 							["timeline"] = { ADDED_5_4_0 },
 						}),
 					},
@@ -64,7 +64,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				ach(8508, {	-- Proving Yourself: Endless Tank (Wave 30) (Level 90)
 					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 					["groups"] = {
-						title(216, { -- the Proven Defender
+						title(216, {	-- the Proven Defender
 							["timeline"] = { ADDED_5_4_0 },
 						}),
 					},
@@ -122,8 +122,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 					title(216),	-- the Proven Defender
 				}),
 				ach(9590),	-- You're Doing it Wrong (META)
-				ach(9597), 	-- You're Really Doing It Wrong
-				un(NEVER_IMPLEMENTED,ach(8812)), 	-- You're Really Doing It Wrong (Level 90)
+				ach(9597),	-- You're Really Doing It Wrong
 			}),
 		},
 	}),
