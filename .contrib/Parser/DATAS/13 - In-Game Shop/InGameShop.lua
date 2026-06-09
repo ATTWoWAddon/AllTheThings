@@ -218,6 +218,20 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(248073, {	-- Smoldering Valor
 			["timeline"] = { ADDED_11_2_7 },
 		}),
+		i(208751, {	-- Squally (PET!)
+			["timeline"] = { ADDED_11_2_7 },
+			["groups"] = {
+				ach(19030),	-- Squally
+				q(82809, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Gryphons of a Feather
+					["provider"] = { "n", 209681 },	-- Squally
+					["groups"] = {
+						i(224259),	-- Flash (PET!)
+						i(224261),	-- Gale (PET!)
+						i(224260),	-- Thundo (PET!)
+					},
+				})),
+			},
+		}),
 		i(78916, {	-- Soul of the Aspects (PET!)
 			["timeline"] = {
 				-- #if ANYCLASSIC
@@ -540,7 +554,99 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_8_3_0 },
 		}),
 		-- #endif
-
+		------ Stormrider's Attire Sets ------
+		iensemble(209336, {	-- Ensemble: Stormrider's Attire (COSMETIC!)
+			["timeline"] = { ADDED_11_2_7 },
+			["groups"] = {
+				q(77813, {	-- Lightning Strikes
+					["provider"] = { "n", 197478 },	-- Herald Flaps
+					["coord"] = { 45.4, 55.2, VALDRAKKEN },
+					["isBreadcrumb"] = true,	-- was unflagged for some players on the day it was released, sad
+					["DisablePartySync"] = true,
+				}),
+				q(77815, {	-- The Storm Race Tour
+					["sourceQuest"] = 77813,	-- Lightning Strikes
+					["provider"] = { "n", 193359 },	-- Lord Andestrasz
+					["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
+					["groups"] = { iensemble(209417) },	-- Ensemble: Thundering Stormrider's Attire (COSMETIC!)
+				}),
+				q(81993, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- The Stormrider's Bond [Dragon Isle Version]
+					["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
+					["coord"] = { 38.3, 94.9, VALDRAKKEN },
+					["groups"] = {
+						i(220737),	-- Storm Spirit (QI!)
+						--
+						i(220710),	-- Champion Stormrider's Boots (COSMETIC!)
+						i(220709),	-- Champion Stormrider's Breastplate (COSMETIC!)
+						i(220716),	-- Champion Stormrider's Buckle (COSMETIC!)
+						i(220711),	-- Champion Stormrider's Cape (COSMETIC!)
+						i(220715),	-- Champion Stormrider's Epaulets (COSMETIC!)
+						i(220712),	-- Champion Stormrider's Grips (COSMETIC!)
+						i(220713),	-- Champion Stormrider's Helmet (COSMETIC!)
+						i(220714),	-- Champion Stormrider's Pants (COSMETIC!)
+						i(220717),	-- Champion Stormrider's Wristguards (COSMETIC!)
+						i(220696),	-- Deep Stormrider's Boots (COSMETIC!)
+						i(220695),	-- Deep Stormrider's Breastplate (COSMETIC!)
+						i(220702),	-- Deep Stormrider's Buckle (COSMETIC!)
+						i(220697),	-- Deep Stormrider's Cape (COSMETIC!)
+						i(220701),	-- Deep Stormrider's Epaulets (COSMETIC!)
+						i(220698),	-- Deep Stormrider's Grips (COSMETIC!)
+						i(220699),	-- Deep Stormrider's Helmet (COSMETIC!)
+						i(220700),	-- Deep Stormrider's Pants (COSMETIC!)
+						i(220703),	-- Deep Stormrider's Wristguards (COSMETIC!)
+						i(220719),	-- Shining Stormrider's Boots (COSMETIC!)
+						i(220718),	-- Shining Stormrider's Breastplate (COSMETIC!)
+						i(220725),	-- Shining Stormrider's Buckle (COSMETIC!)
+						i(220720),	-- Shining Stormrider's Cape (COSMETIC!)
+						i(220724),	-- Shining Stormrider's Epaulets (COSMETIC!)
+						i(220721),	-- Shining Stormrider's Grips (COSMETIC!)
+						i(220722),	-- Shining Stormrider's Helmet (COSMETIC!)
+						i(220723),	-- Shining Stormrider's Pants (COSMETIC!)
+						i(220726),	-- Shining Stormrider's Wristguards (COSMETIC!)
+					},
+				})),
+				q(84908, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Stormrider's Honors [Khaz Algar Version]
+					["lockCriteria"] = { 1, "questID", 83024 },	-- The Stormrider's Bond [Khaz Algar Version]
+					["DisablePartySync"] = true,
+					-- Pops on login directs you to quest 83024
+				})),
+				q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- The Stormrider's Bond [Khaz Algar Version]
+					["provider"] = { "n", 225347 },	-- Stormrider Bruelda
+					["coord"] = { 35.3, 38.2, DORNOGAL },
+					["sym"] = {{"select","questID",81993},{"pop"}},	-- The Stormrider's Bond [Dragon Isle Version]
+				})),
+				q(81994, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- A Sacred Connection [Dragon Isles Version]
+					["sourceQuests"] = {
+						81993,	-- The Stormrider's Bond [Dragon Isle Version]
+						83024,	-- The Stormrider's Bond [Khaz Algar Version]
+					},
+					["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
+					["coord"] = { 38.3, 94.9, VALDRAKKEN },
+					["groups"] = {
+						i(220708),	-- Frenzied Stormrider's Breastplate (COSMETIC!)
+						i(220706),	-- Frenzied Stormrider's Buckle (COSMETIC!)
+						i(220705),	-- Frenzied Stormrider's Epaulets (COSMETIC!)
+						i(220707),	-- Frenzied Stormrider's Grips (COSMETIC!)
+						i(220704),	-- Frenzied Stormrider's Helmet (COSMETIC!)
+						i(220736),	-- Shocking Stormrider's Breastplate (COSMETIC!)
+						i(220734),	-- Shocking Stormrider's Buckle (COSMETIC!)
+						i(220733),	-- Shocking Stormrider's Epaulets (COSMETIC!)
+						i(220735),	-- Shocking Stormrider's Grips (COSMETIC!)
+						i(220732),	-- Shocking Stormrider's Helmet (COSMETIC!)
+						i(220731),	-- Sparking Stormrider's Breastplate (COSMETIC!)
+						i(220729),	-- Sparking Stormrider's Buckle (COSMETIC!)
+						i(220728),	-- Sparking Stormrider's Epaulets (COSMETIC!)
+						i(220730),	-- Sparking Stormrider's Grips (COSMETIC!)
+						i(220727),	-- Sparking Stormrider's Helmet (COSMETIC!)
+					},
+				})),
+				q(83025, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- A Sacred Connection [Khaz Algar Version]
+					["provider"] = { "n", 225347 },	-- Stormrider Bruelda
+					["coord"] = { 35.3, 38.2, DORNOGAL },
+					["sym"] = {{"select","questID",81994},{"pop"}},	-- A Sacred Connection [Dragon Isle Version]
+				})),
+			},
+		}),
 		------ Vestments of the Heavens Sets ------
 		iensemble(233052, {	-- Ensemble: Radiant Vestments of the Heavens
 			["timeline"] = { ADDED_11_1_0 },
@@ -747,6 +853,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(253547),	-- Spring Blossom Wreath (DECOR!)
 	})),
 	filter(MOUNTS, {	-- AVAILABLE --
+		i(258479, {	-- Algarian Stormrider (MOUNT!)
+			["timeline"] = { ADDED_11_2_7 },
+		}),
 		-- #if ANYCLASSIC
 		mount(1229672, {	-- Archmage's Great Crow
 			["timeline"] = { ADDED_5_5_1 },
@@ -1066,6 +1175,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
+		i(208704, {	-- Deepdweller's Earthen Hearthstone (TOY!)
+			["timeline"] = { ADDED_11_2_7 }
+		}),
 		i(172179, {	-- Eternal Traveler's Hearthstone (TOY!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
@@ -1096,6 +1208,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
+		i(208883, {	-- Sandbox Storm Gryphon (TOY!)
+			["timeline"] = { ADDED_11_2_7 }
+		}),
 		i(193588, {	-- Timewalker's Hearthstone (TOY!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),

@@ -1073,7 +1073,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 							["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
 							["groups"] = { iensemble(209417) },	-- Ensemble: Thundering Stormrider's Attire (COSMETIC!)
 						}),
-						q(81993, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Dragon Isle Version]
+						q(81993, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_2_0 } }, {	-- The Stormrider's Bond [Dragon Isle Version]
 							["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
 							["coord"] = { 38.3, 94.9, VALDRAKKEN },
 							["groups"] = {
@@ -1108,17 +1108,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 								i(220726),	-- Shining Stormrider's Wristguards (COSMETIC!)
 							},
 						})),
-						q(84908, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- Stormrider's Honors [Khaz Algar Version]
+						q(84908, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_2_0 } }, {	-- Stormrider's Honors [Khaz Algar Version]
 							["lockCriteria"] = { 1, "questID", 83024 },	-- The Stormrider's Bond [Khaz Algar Version]
 							["DisablePartySync"] = true,
 							-- Pops on login directs you to quest 83024
 						})),
-						q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Khaz Algar Version]
+						q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_2_0 } }, {	-- The Stormrider's Bond [Khaz Algar Version]
 							["provider"] = { "n", 225347 },	-- Stormrider Bruelda
 							["coord"] = { 35.3, 38.2, DORNOGAL },
 							["sym"] = {{"select","questID",81993},{"pop"}},	-- The Stormrider's Bond [Dragon Isle Version]
 						})),
-						q(81994, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection [Dragon Isles Version]
+						q(81994, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_2_0 } }, {	-- A Sacred Connection [Dragon Isles Version]
 							["sourceQuests"] = {
 								81993,	-- The Stormrider's Bond [Dragon Isle Version]
 								83024,	-- The Stormrider's Bond [Khaz Algar Version]
@@ -1143,7 +1143,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 								i(220727),	-- Sparking Stormrider's Helmet (COSMETIC!)
 							},
 						})),
-						q(83025, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection [Khaz Algar Version]
+						q(83025, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_2_0 } }, {	-- A Sacred Connection [Khaz Algar Version]
 							["provider"] = { "n", 225347 },	-- Stormrider Bruelda
 							["coord"] = { 35.3, 38.2, DORNOGAL },
 							["sym"] = {{"select","questID",81994},{"pop"}},	-- A Sacred Connection [Dragon Isle Version]
