@@ -1221,6 +1221,9 @@ root(ROOTS.Zones, {
 						["qg"] = 22373,	-- Defender Grashna
 						["coord"] = { 51.8, 20.8, SHATTRATH_CITY },
 						["groups"] = {
+								objective(1, {	-- 0/1 Attack thwarted
+								["provider"] = { "n", 22375 },	-- Avatar of Terokk
+							}),
 							i(31727),	-- Choker of Bloodied Feathers
 							i(31726),	-- Necklace of Bloodied Feathers
 						},
