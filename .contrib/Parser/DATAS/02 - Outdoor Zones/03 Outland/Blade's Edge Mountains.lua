@@ -2003,12 +2003,14 @@ root(ROOTS.Zones, {
 					q(10867, {	-- There Can Be Only One Response
 						["sourceQuest"] = 10865,	-- Inform Leoroxx!
 						["qg"] = 22004,	-- Leoroxx
+						["description"] = "Nexus-Prince Razaan spawns killing etereals in the area",
 						["coord"] = { 75.3, 60.9, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 						["groups"] = {
 							objective(1, {	-- 0/1 Collection of Souls
 								["providers"] = {
+									{ "n", 21057 },	-- Nexus-Prince Razaan
 									{ "i", 30890 },	-- Collection of Souls
 									{ "o", 185033 },	-- Collection of Souls
 								},
