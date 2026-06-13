@@ -122,6 +122,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
 			},
 			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
+			["learnedAt"] = 325,
 			["isBreadcrumb"] = true,
 			["lvl"] = 68,
 		}),
@@ -136,6 +137,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["coord"] = { 45.8, 20.4, SHATTRATH_CITY },
 			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
 			["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS },
+			["learnedAt"] = 325,
 			["cost"] = {
 				{ "i", 31753, 10 },	-- Essence of Infinity
 				{ "i", 22834, 5 },	-- Elixir of Major Defense
@@ -167,6 +169,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
 			},
 			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
+			["learnedAt"] = 325,
 			["isBreadcrumb"] = true,
 			["lvl"] = 68,
 		}),
@@ -180,6 +183,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["qg"] = 17909,	-- Lauranna Thar'well <Expedition Cataloguer>
 			["coord"] = { 44.1, 36.6, ZANGARMARSH },
 			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
+			["learnedAt"] = 325,
 			["maps"] = { TEMPEST_KEEP_BOTANICA },
 			["cost"] = {
 				{ "i", 22829, 5 },	-- Super Healing Potion
@@ -215,7 +219,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
 			},
 			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
-			["requireSkill"] = ALCHEMY,
+			["learnedAt"] = 325,
 			["isBreadcrumb"] = true,
 			["lvl"] = 68,
 		}),
@@ -233,6 +237,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				{ "i", 23571, 4 },	-- Primal Might
 			},
 			["lvl"] = 68,
+			["learnedAt"] = 325,
 			["groups"] = {
 				r(28672, {	-- Transmutation Master
 					-- #if NOT ANYCLASSIC
