@@ -716,6 +716,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10853,	-- Spirit Calling
 						["qg"] = 22312,	-- Spiritcaller Dohgar
 						["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
+						["groups"] = {
+							objective(1, {	-- 0/15 	Razaani Light Orb collected
+								["providers"] = {
+									{ "n", 21929 },	-- Trapping the Light Kill Credit Trigger
+									{ "i", 31668 },	-- Orb Collecting Totem
+								},
+							}),
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
