@@ -1136,6 +1136,15 @@ root(ROOTS.Zones, {
 					q(10426, {	-- Flora of the Eco-Domes
 						["qg"] = 20871,	-- Aurine Moonblaze
 						["coord"] = { 42.3, 32.6, NETHERSTORM },
+						["groups"] = {
+							objective(1, {	-- 0/10	Test Energy Modulator
+								["providers"] = { "i", 29818 },	-- Energy Field Modulator
+								["crs"] = {
+									20774,	-- Farahlon Lasher
+									20983,	-- Mutated Farahlon Lasher
+								},
+							}),
+						},
 					}),
 					q(10281, {	-- Formal Introductions
 						["sourceQuest"] = 10271,	-- Getting Down to Business
