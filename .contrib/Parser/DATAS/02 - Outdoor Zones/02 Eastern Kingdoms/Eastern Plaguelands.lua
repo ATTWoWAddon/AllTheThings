@@ -3427,14 +3427,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 					["groups"] = {
+						objective(1, {	-- 0/1 The Grand Crusader's Command
+							["provider"] = { "i", 13852 },	-- The Grand Crusader's Command
+						}),
 						i(15876, {	-- Nathanos' Chest
 							["groups"] = {
 								i(15875),	-- Rotten Apple
 								i(13852),	-- The Grand Crusader's Command
 							},
-						}),
-						objective(1, {	-- 0/1 The Grand Crusader's Command
-							["provider"] = { "i", 13852 },	-- The Grand Crusader's Command
 						}),
 					},
 				}),
