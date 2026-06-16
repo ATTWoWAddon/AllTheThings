@@ -1176,6 +1176,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 76.1, 60.3, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
+						["cost"] = {
+								{ "i", 31670, 3 },	-- Raptor Ribs
+								{ "i", 31671, 3 },	-- Serpent Flesh
+							},
 						["groups"] = {
 							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
 							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
