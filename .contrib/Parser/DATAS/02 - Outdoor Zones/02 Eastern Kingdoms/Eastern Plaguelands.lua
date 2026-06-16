@@ -3431,10 +3431,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(15875),	-- Rotten Apple
 								i(13852),	-- The Grand Crusader's Command
-								objective(1, {	-- 0/1 The Grand Crusader's Command
-									["provider"] = { "i", 13852 },	-- The Grand Crusader's Command
-								}),
 							},
+						}),
+						objective(1, {	-- 0/1 The Grand Crusader's Command
+							["provider"] = { "i", 13852 },	-- The Grand Crusader's Command
 						}),
 					},
 				}),
