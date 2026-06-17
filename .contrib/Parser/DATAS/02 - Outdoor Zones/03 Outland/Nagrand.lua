@@ -1475,27 +1475,50 @@ root(ROOTS.Zones, {
 					q(9962, {	-- The Ring of Blood: Brokentoe
 						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 Brokentoe Defeated
+								["provider"] = { "n", 18398 },	-- Brokentoe
+							}),
+						},
 					}),
 					q(9970, {	-- The Ring of Blood: Rokdar the Sundered Lord
 						["sourceQuest"] = 9967,	-- The Ring of Blood: The Blue Brothers
 						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 Rokdar the Sundered Lord Defeated
+								["provider"] = { "n", 18400 },	-- Rokdar the Sundered Lord
+							}),
+						},
 					}),
 					q(9972, {	-- The Ring of Blood: Skra'gath
 						["sourceQuest"] = 9970,	-- The Ring of Blood: Rokdar the Sundered Lord
 						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 Skra'gath Defeated
+								["provider"] = { "n", 18401 },	-- Skra'gath
+							}),
+						},
 					}),
 					q(9967, {	-- The Ring of Blood: The Blue Brothers
 						["sourceQuest"] = 9962,	-- The Ring of Blood: Brokentoe
 						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 The Blue Brothers Defeated
+								["provider"] = { "n", 18399 },	-- Murkblood Twin
+							}),
+						},
 					}),
 					q(9977, {	-- The Ring of Blood: The Final Challenge
 						["sourceQuest"] = 9973,	-- The Ring of Blood: The Warmaul Champion
 						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
 						["groups"] = {
+							objective(1, {	-- 0/1 Mogor, Hero of the Warmaul Defeated
+								["provider"] = { "n", 18069 },	-- Mogor <Hero of the Warmaul>
+							}),
 							i(25760),	-- Battle Mage's Baton
 							i(25763),	-- Ceremonial Warmaul Blood-Blade
 							i(25762),	-- Honed Voidaxe
@@ -1508,6 +1531,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9972,	-- The Ring of Blood: Skra'gath
 						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 	The Warmaul Champion Defeated
+								["provider"] = { "n", 18402 },	-- Warmaul Champion
+							}),
+						},
 					}),
 					q(9921, {	-- The Ruins of Burning Blade
 						["sourceQuest"] = 9920,	-- Mo'mor the Breaker
