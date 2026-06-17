@@ -1144,6 +1144,7 @@ root(ROOTS.Zones, {
 									20983,	-- Mutated Farahlon Lasher
 								},
 							}),
+							i(29818),	-- Energy Field Modulator
 						},
 					}),
 					q(10281, {	-- Formal Introductions
