@@ -7,6 +7,7 @@ ENDEAVOR = createHeader({
 	icon = 134495,
 	text = {
 		en = "Endeavor",
+		cn = "文化节",
 	},
 });
 KARESHI_ENDEAVOR = createHeader({
@@ -14,6 +15,7 @@ KARESHI_ENDEAVOR = createHeader({
 	icon = 7413585,
 	text = {
 		en = "K'areshi Endeavor",
+		cn = "卡雷什文化",
 	},
 });
 GRUMMLE_ENDEAVOR = createHeader({
@@ -21,6 +23,7 @@ GRUMMLE_ENDEAVOR = createHeader({
 	icon = 7301740,
 	text = {
 		en = "Grummle Endeavor",
+		cn = "土地精文化",
 	},
 });
 NIFFEN_ENDEAVOR = createHeader({
@@ -28,6 +31,7 @@ NIFFEN_ENDEAVOR = createHeader({
 	icon = 7413586,
 	text = {
 		en = "Niffen Endeavor",
+		cn = "鼹鼠人文化",
 	},
 });
 SINDOREI_ENDEAVOR = createHeader({
@@ -35,6 +39,7 @@ SINDOREI_ENDEAVOR = createHeader({
 	icon = 7301737,
 	text = {
 		en = "Sin'dorei Endeavor",
+		cn = "辛多雷文化"
 	},
 });
 DRACONIC_ENDEAVOR = createHeader({
@@ -42,6 +47,7 @@ DRACONIC_ENDEAVOR = createHeader({
 	icon = 7301738,
 	text = {
 		en = "Draconic Endeavor",
+		cn = "巨龙文化",
 	},
 });
 MECHAGNOME_ENDEAVOR = createHeader({
@@ -49,6 +55,7 @@ MECHAGNOME_ENDEAVOR = createHeader({
 	icon = 7301741,
 	text = {
 		en = "Mechagnome Endeavor",
+		cn = "机械侏儒文化",
 	},
 });
 

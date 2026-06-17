@@ -7,6 +7,7 @@ MAIL_DELIVERY_RACES = createHeader({
 	icon = 413580,
 	text = {
 		en = "Mail Delivery Races",
+		cn = "邮件分发比赛",
 	},
 });
 
