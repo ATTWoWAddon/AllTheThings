@@ -1003,6 +1003,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(25607),	-- Burning Blade Cultist Band
 							i(25609),	-- Burning Blade Devotee's Cinch
+							i(25586),	-- Burning Blade Peace Offering (QI)
 							i(25608),	-- Lantresor's Warblade
 						},
 					}),

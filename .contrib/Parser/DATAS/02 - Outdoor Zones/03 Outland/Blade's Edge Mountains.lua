@@ -720,7 +720,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/15 Razaani Light Orb collected
 								["provider"] = { "i", 31668 },	-- Orb Collecting Totem
 							}),
-							i(31668),	-- Orb Collecting Totem
+							i(31668),	-- Orb Collecting Totem (QI)
 						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
