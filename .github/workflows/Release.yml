@@ -38,7 +38,7 @@ jobs:
 
       - name: Checkout code
         if: steps.release_type.outputs.release_type == 'alpha'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
            fetch-depth: 300
 
@@ -70,7 +70,7 @@ jobs:
     if: needs.check-changes.outputs.release_type == 'release' || needs.check-changes.outputs.changes_detected == 'true'
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
            fetch-depth: 300
 
@@ -137,7 +137,7 @@ jobs:
     needs: build-windows
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
            fetch-depth: 300
 
