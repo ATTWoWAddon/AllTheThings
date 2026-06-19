@@ -625,6 +625,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/5 Mag'har Prisoner Freed
 								["providers"] = {
 									{ "i", 25604 },	-- Warmaul Prison Key
+									{ "n", 18428 },	-- Mag'har Prisoner
 									{ "o", 182484 },	-- Warmaul Prison
 									{ "o", 182486 },	-- Warmaul Prison
 									{ "o", 182487 },	-- Warmaul Prison
