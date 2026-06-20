@@ -332,7 +332,13 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11025,	-- The Crystals
 						["qg"] = 23233,	-- Chu'a'lor
 						["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
+						["groups"] = {
+							objective(1, {	-- 	Apexis Vibrations attained
+								["provider"] = { "o", 185890 },	-- Apexis Relic
+							}),
+						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11119, {	-- Assault on Bash'ir Landing!
 						["sourceQuest"] = 11010,	-- Bombing Run
@@ -1751,7 +1757,9 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11025, {	-- The Crystals
 						["qg"] = 23233,	-- Chu'a'lor
 						["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
+						["cost"] = { { "i", 32569, 5 } },	-- Apexis Shard
 					})),
 					q(10690, {	-- The Den Mother
 						["provider"] = { "o", 185035 },	-- Wanted Poster
@@ -1881,7 +1889,13 @@ root(ROOTS.Zones, {
 						["qg"] = 23233,	-- Chu'a'lor
 						["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 						["isDaily"] = true,
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
+						["groups"] = {
+							objective(1, {	-- 	Apexis Vibrations attained
+								["provider"] = { "o", 185890 },	-- Apexis Relic
+							}),
+						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11062, {	-- The Skyguard Outpost
 						["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger

@@ -319,5 +319,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "[Warmaul Prison]",
 		},
 	},
+	[185890] = {
+		readable = "Apexis Relic",
+		text = {
+			en = "Apexis Relic",
+			de = "Apexisrelikt",
+			es = "Reliquia apexis",
+			mx = "Reliquia de ápices",
+			fr = "Relique apogide",
+			it = "Reliquia Apexis",
+			pt = "Relíquia Apexis",
+			ru = "Апекситовая реликвия",
+			ko = "에펙시스 유물",
+			cn = "埃匹希斯圣物",
+			tw = "頂尖聖物",
+		},
+	},
 })
 do ObjectDB[objectID] = objectData; end
