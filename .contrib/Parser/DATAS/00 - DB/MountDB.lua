@@ -2432,6 +2432,7 @@ i(274650, 1294663);	-- Netherforged Nullframe
 i(192778, 350220);	-- Liquid Hot Magma Slug
 i(269240, 1284973);	-- Luminous Sporeglider
 i(258884, 1264184);	-- Spawn of Vyranoth
+i(275464, 1298439);	-- Sun Festival's Painted Roc
 i(275664, 1297427);	-- Tortured Gorger
 i(274649, 1294648);	-- Voidmancer's Starcarver
 --- UNSORTED ---
@@ -2442,7 +2443,6 @@ i(273651, 1292344);	-- Bligewater X-TREME Firework Rocket
 i(273317, 1292102);	-- Blackwater X-TREME Firework Rocket
 i(273650, 1292342);	-- Green Rocket Mount [PH]
 i(273652, 1292345);	-- Pink Rocket Mount [PH]
-i(275464, 1298439);	-- Sun Festival's Painted Roc
 
 ------------------
 -- PATCH 12.1.0 --

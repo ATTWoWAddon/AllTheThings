@@ -249,6 +249,10 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { ADDED_6_0_2 },
 	}),
+	iensemble(275461, {	-- Ensemble: Sun Festival's Flame Totems
+		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
 	i(166746, {	-- Fire Eater's Hearthstone (TOY!)
 		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
 		["timeline"] = { ADDED_8_1_5 },
@@ -277,6 +281,10 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { ADDED_4_3_0 },
 	}),
+	i(74278, {	-- Illusion: Summer Sun Blossom (ILLUSION!)
+		["cost"] = { { "i", 23247, 250 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
 	i(188699, {	-- Insulated Dancing Insoles (TOY!)
 		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
 		["timeline"] = { ADDED_9_2_0 },
@@ -300,6 +308,70 @@ local MERCHANT_GROUPS = {
 	i(188695, {	-- Summer Cranial Skillet (TOY!)
 		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
 		["timeline"] = { ADDED_9_2_0 },
+	}),
+	i(275460, {	-- Sun Festival's Flamebrand
+		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275469, {	-- Sun Festival's Painted Girdle
+		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275472, {	-- Sun Festival's Painted Greaves
+		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275474, {	-- Sun Festival's Painted Gauntlets
+		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275476, {	-- Sun Festival's Painted Hauberk
+		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275471, {	-- Sun Festival's Leggings
+		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275468, {	-- Sun Festival's Painted Mantle
+		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275466, {	-- Sun Festival's Painted Mask
+		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275470, {	-- Sun Festival's Painted Sash
+		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275473, {	-- Sun Festival's Painted Striders
+		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275460, {	-- Sun Festival's Painted Tunic
+		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275475, {	-- Sun Festival's Painted Wrap
+		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275467, {	-- Sun Festival's Painted Wings
+		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275458, {	-- Sun Festival's Totemic Greataxe
+		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275459, {	-- Sun Festival's Torchblade
+		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
+	}),
+	i(275457, {	-- Sun Festival's Totemic Edge
+		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["timeline"] = { ADDED_12_0_7 },
 	}),
 	-- #if AFTER 2.4.0.7994
 	-- This item was originally exclusively available as a quest reward.
@@ -416,6 +488,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 							}),
 							i(246570, {	-- Rethfuras, Scorched Stave of Cinders (COSMETIC!)
 								["timeline"] = { ADDED_11_1_7 },
+							}),
+							i(275464, {	-- Sun Festival's Painted Roc(MOUNT!)
+								["timeline"] = { ADDED_12_0_7 },
 							}),
 						},
 					}),

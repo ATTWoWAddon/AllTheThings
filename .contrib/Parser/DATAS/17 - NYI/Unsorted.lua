@@ -2347,25 +2347,6 @@ root(ROOTS.Unsorted, {
 				i(274715),	-- Duskwatch Outlaw's Hand Cannon
 				i(274716),	-- Righteous Lawbringer's Hand Cannon
 				i(274717),	-- Badlands Lawbringer's Hand Cannon
-				i(275457),	-- Sun Festival's Totemic Edge
-				i(275458),	-- Sun Festival's Totemic Greataxe
-				i(275459),	-- Sun Festival's Torchblade
-				i(275460),	-- Sun Festival's Flamebrand
-				i(275461),	-- Ensemble: Sun Festival's Flame Totems
-				i(275462),	-- Sun Festival's Painted Beacon
-				i(275463),	-- Sun Festival's Painted Totem
-				i(275464),	-- Sun Festival's Painted Roc
-				i(275465),	-- Sun Festival's Painted Tunic
-				i(275466),	-- Sun Festival's Painted Mask
-				i(275467),	-- Sun Festival's Painted Wings
-				i(275468),	-- Sun Festival's Painted Mantle
-				i(275469),	-- Sun Festival's Painted Girdle
-				i(275470),	-- Sun Festival's Painted Sash
-				i(275471),	-- Sun Festival's Painted Leggings
-				i(275472),	-- Sun Festival's Painted Greaves
-				i(275473),	-- Sun Festival's Painted Striders
-				i(275474),	-- Sun Festival's Painted Gauntlets
-				i(275475),	-- Sun Festival's Painted Wrap
 				i(275476),	-- Sun Festival's Painted Hauberk
 				i(275999),	-- Flowering Mantle
 				i(276299),	-- Umbralwarden's Soul Gavel
@@ -2390,9 +2371,6 @@ root(ROOTS.Unsorted, {
 				fp(3268),	-- The Devouring Ingress
 				fp(3267),	-- Umbral Base Camp
 				fp(3269),	-- Void Acropolis
-			}),
-			filter(ILLUSIONS, {
-				i(276546),	-- Illusion: Summer Sun Blossom
 			}),
 			filter(MISC, {
 				-- Delve
