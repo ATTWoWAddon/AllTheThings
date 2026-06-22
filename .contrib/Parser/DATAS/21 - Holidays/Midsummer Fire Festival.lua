@@ -510,9 +510,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			i(54536, {	-- Satchel of Chilled Goods
 				["timeline"] = { ADDED_3_3_3, REMOVED_6_0_2 },
 				["groups"] = {
+					-- NOTE: Blizzard added 528 ilvl items specific to MOP_PHASE_ONE Classic
+					-- #if ANYCLASSIC
+					i(280389, {	-- Frostscythe of Lord Ahune [Level 90]
+						["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
+					}),
+					-- #else
 					i(95426, {	-- Frostscythe of Lord Ahune [Level 90]
 						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					}),
+					-- #endif
 
 					-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
 					-- #if ANYCLASSIC
@@ -571,6 +578,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { ADDED_6_0_2 },
 			}),
 
+			-- NOTE: Blizzard added 528 ilvl items specific to MOP Classic
+			-- #if ANYCLASSIC
+			i(280386, {	-- Cloak of the Frigid Winds [528]
+				["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
+			}),
+			i(280383, {	-- Icebound Cloak [Level 90]
+				["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
+			}),
+			i(280385, {	-- Shroud of Winter's Chill [Level 90]
+				["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
+			}),
+			i(280384, {	-- The Frost Lord's Battle Shroud [Level 90]
+				["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
+			}),
+			i(280387, {	-- The Frost Lord's War Cloak [Level 90]
+				["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
+			}),
+			-- #else
 			-- Pandaria Rewards
 			i(95425, {	-- Cloak of the Frigid Winds [Level 90]
 				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
@@ -587,6 +612,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			i(95430, {	-- The Frost Lord's War Cloak [Level 90]
 				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
+			-- #endif
 
 			-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
 			-- #if ANYCLASSIC
