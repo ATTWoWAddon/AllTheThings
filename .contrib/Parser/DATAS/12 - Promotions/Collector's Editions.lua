@@ -664,7 +664,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_5, REMOVED_3_0_2, ADDED_5_5_2 } }, { -- For historical context, MOP Classic originally used the same IDs as Retail, but these were removed from Classic with the release of SoO.
 		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
 		["groups"] = {
-		-- #if BEFORE WRATH
+			-- #if BEFORE WRATH
 			q(93824, {	-- A Grand Delivery (Landro Longshot)
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
@@ -703,13 +703,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 					}),
 				},
 			}),
-		-- #else
+			-- #else
 			i(260438),	-- Cerulean Phase-Hunter (MOUNT!)
 			i(260622),	-- Exodar Replica (TOY!)
 			i(260221),	-- Naaru's Embrace (TOY!)
 			i(260759),	-- Reins of the Starshard Netherdrake (MOUNT!)
 			i(260433),	-- Starshard Whelpling (PET!)
-		-- #endif
+			-- #endif
 		},
 	})),
 	-- #else
