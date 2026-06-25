@@ -686,6 +686,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 
 			-- Original Rewards
+			-- #if CLASSIC_ANNIVERSARY
+			i(278827, {	-- Amulet of Bitter Hatred [Level 70]
+				["timeline"] = { ADDED_2_5_5_PHASE_2 },
+			}),
+			i(278838, {	-- Amulet of Glacial Tranquility [Level 70]
+				["timeline"] = { ADDED_2_5_5_PHASE_2 },
+			}),
+			i(278833, {	-- Choker of the Arctic Flow [Level 70]
+				["timeline"] = { ADDED_2_5_5_PHASE_2 },
+			}),
+			i(278774, {	-- Cloak of the Frigid Winds [Level 70]
+				["timeline"] = { ADDED_2_5_5_PHASE_2 },
+			}),
+			i(278953, {	-- Frostscythe of Lord Ahune [Level 70]
+				["timeline"] = { ADDED_2_5_5_PHASE_2 },
+			}),
+			i(278847, {	-- Hailstone Pendant [Level 70]
+				["timeline"] = { ADDED_2_5_5_PHASE_2 },
+			}),
+			i(278823, {	-- Icebound Cloak [Level 70]
+				["timeline"] = { ADDED_2_5_5_PHASE_2 },
+			}),
+			i(279240, {	-- Shroud of Winter's Chill [Level 70]
+				["timeline"] = { ADDED_2_5_5_PHASE_2 },
+			}),
+			i(278819, {	-- The Frost Lord's War Cloak [Level 70]
+				["timeline"] = { ADDED_2_5_5_PHASE_2 },
+			}),
+			-- #else
 			i(35514, {	-- Frostscythe of Lord Ahune [Level 70]
 				["timeline"] = { REMOVED_3_3_3 },
 			}),
@@ -713,6 +742,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			i(35495, {	-- The Frost Lord's War Cloak [Level 70]
 				["timeline"] = { REMOVED_3_3_3 },
 			}),
+			-- #endif
 			HUGE_SNOWBALL,
 		},
 	}),
