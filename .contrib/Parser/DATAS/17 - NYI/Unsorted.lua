@@ -2164,7 +2164,6 @@ root(ROOTS.Unsorted, {
 				i(274716),	-- Righteous Lawbringer's Hand Cannon
 				i(274717),	-- Badlands Lawbringer's Hand Cannon
 				i(275999),	-- Flowering Mantle
-				i(276299),	-- Umbralwarden's Soul Gavel
 				i(276291),	-- Forgotten Saber of the Ice Temple
 			}),
 			n(DECOR, {

@@ -312,7 +312,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 					}),
 					n(RARES, sharedData({ ["isRepeatable"] = true }, {
-						-- Rare at Vennorax Wreckage. It was gone by the time I got there. Coord 29.7, 19.2,	-- Exo
 						n(264569, {	-- Auredar's Chassis <The Vacant Vigilant>
 							["coord"] = { 28.8, 62.9, NAIGTAL },
 							["questID"] = 96316,

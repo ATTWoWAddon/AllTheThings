@@ -297,6 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					})),
 					n(ZONE_DROPS, {
 						i(276330),	-- Taken Riftwalker's Starbarb (COSMETIC!)
+						i(276299),	-- Umbralwarden's Soul Gavel (COSMETIC!)
 					}),
 					n(ZONE_REWARDS, {
 						i(278116),	-- Player Experience
