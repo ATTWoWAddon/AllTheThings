@@ -2,6 +2,8 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
+local BURNING_BLOSSOM = 23247;
+
 MIDSUMMER_FIRE_FESTIVAL_HEADER = createHeader({
 	readable = "Midsummer Fire Festival",
 	constant = "MIDSUMMER_FIRE_FESTIVAL_HEADER",
@@ -201,7 +203,7 @@ local FLAME_STEAL_LEVEL_REQUIREMENT = 1;	-- Level requirement reduced to 1 after
 local FLAME_STEAL_LEVEL_REQUIREMENT = 50;
 -- #endif
 local FLAME_STEAL_REWARDS = {
-	i(23247),	-- Burning Blossom x25
+	i(BURNING_BLOSSOM), x25
 	i(23211),	-- Toasted Smorc
 	i(23326),	-- Midsummer Sausage
 	i(23327),	-- Fire-toasted Bun
@@ -214,35 +216,35 @@ local FLAME_STEAL_REWARDS = {
 
 local MERCHANT_GROUPS = {
 	i(122338, {	-- Ancient Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 350 } },
 		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 600 } },
 		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 600 } },
 		["timeline"] = { ADDED_9_1_5 },
 	}),
 	i(122340, {	-- Timeworn Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 600 } },
 		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(151614, {	-- Weathered Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 600 } },
 		["timeline"] = { ADDED_7_2_5 },
 	}),
 	i(116439, {	-- Blazing Cindercrawler (PET!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 350 } },
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(34686, {	-- Brazier of Dancing Flames (TOY!)
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 300 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 300 },
 			-- #else
-			{ "i", 23247, 350 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 350 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_2_4_0 },
@@ -250,9 +252,9 @@ local MERCHANT_GROUPS = {
 	i(116440, {	-- Burning Defender's Medallion (TOY!)
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 300 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 300 },
 			-- #else
-			{ "i", 23247, 500 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 500 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_6_0_2 },
@@ -260,31 +262,31 @@ local MERCHANT_GROUPS = {
 	i(116435, {	-- Cozy Bonfire (TOY!)
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 300 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 300 },
 			-- #else
-			{ "i", 23247, 350 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 350 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	iensemble(275461, {	-- Ensemble: Sun Festival's Flame Totems
-		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 300 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(166746, {	-- Fire Eater's Hearthstone (TOY!)
-		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 300 } },
 		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(188701, {	-- Fire Festival Batons (TOY!)
-		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 50 } },
 		["timeline"] = { ADDED_9_2_0 },
 	}),
 	i(206038, {	-- Flamin' Ring of Flashiness (TOY!)
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 300 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 300 },
 			-- #else
-			{ "i", 23247, 500 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 500 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_10_1_0 },
@@ -292,9 +294,9 @@ local MERCHANT_GROUPS = {
 	i(242742, {	-- Grand Belt of the Fire Festival (COSMETIC!)
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247,  75 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM,  75 },
 			-- #else
-			{ "i", 23247, 150 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 150 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_11_1_7 },
@@ -302,9 +304,9 @@ local MERCHANT_GROUPS = {
 	i(242740, {	-- Grand Helm of the Fire Festival (COSMETIC!)
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 100 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 100 },
 			-- #else
-			{ "i", 23247, 350 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 350 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_11_1_7 },
@@ -312,9 +314,9 @@ local MERCHANT_GROUPS = {
 	i(242741, {	-- Grand Mantle of the Fire Festival (COSMETIC!)
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 150 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 150 },
 			-- #else
-			{ "i", 23247, 350 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 350 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_11_1_7 },
@@ -322,31 +324,31 @@ local MERCHANT_GROUPS = {
 	i(74278, {	-- Helm of the Fire Festival
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247,  50 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM,  50 },
 			-- #else
-			{ "i", 23247, 350 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 350 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_4_3_0 },
 	}),
 	i(276546, {	-- Illusion: Summer Sun Blossom (ILLUSION!)
-		["cost"] = { { "i", 23247, 250 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 250 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(188699, {	-- Insulated Dancing Insoles (TOY!)
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 100 } },
 		["timeline"] = { ADDED_9_2_0 },
 	}),
 	i(141714, {	-- Igneous Flameling (PET!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 350 } },
 		["timeline"] = { ADDED_7_1_0 },
 	}),
 	i(220787, {	-- Mantle of Midsummer
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 150 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 150 },
 			-- #else
-			{ "i", 23247, 350 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 350 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_10_2_7 },
@@ -354,9 +356,9 @@ local MERCHANT_GROUPS = {
 	i(220785, {	-- Midsummer Safeguard
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 150 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 150 },
 			-- #else
-			{ "i", 23247, 350 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 350 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_10_2_7 },
@@ -364,85 +366,85 @@ local MERCHANT_GROUPS = {
 	i(141649, {	-- Set of Matches (TOY!)
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 300 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 300 },
 			-- #else
-			{ "i", 23247, 500 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 500 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_7_1_0 },
 	}),
 	i(188695, {	-- Summer Cranial Skillet (TOY!)
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_9_2_0 },
 	}),
 	i(275460, {	-- Sun Festival's Flamebrand
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275469, {	-- Sun Festival's Painted Girdle
-		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 50 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275472, {	-- Sun Festival's Painted Greaves
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 100 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275474, {	-- Sun Festival's Painted Gauntlets
-		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 75 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275476, {	-- Sun Festival's Painted Hauberk
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 100 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275471, {	-- Sun Festival's Painted Leggings
-		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 75 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275468, {	-- Sun Festival's Painted Mantle
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275466, {	-- Sun Festival's Painted Mask
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 100 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275470, {	-- Sun Festival's Painted Sash
-		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 75 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275473, {	-- Sun Festival's Painted Striders
-		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 75 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275465, {	-- Sun Festival's Painted Tunic
-		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 50 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275475, {	-- Sun Festival's Painted Wrap
-		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 50 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275467, {	-- Sun Festival's Painted Wings
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275458, {	-- Sun Festival's Totemic Greataxe
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275459, {	-- Sun Festival's Torchblade
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275457, {	-- Sun Festival's Totemic Edge
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	-- #if AFTER 2.4.0.7994
 	-- This item was originally exclusively available as a quest reward.
 	i(23083, {	-- Captured Flame (PET!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 350 } },
 	}),
 	-- #endif
 	-- #if AFTER 2.4.0.7994
@@ -450,9 +452,9 @@ local MERCHANT_GROUPS = {
 	i(23324, {	-- Mantle of the Fire Festival
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247,  50 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM,  50 },
 			-- #else
-			{ "i", 23247, 100 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 100 },
 			-- #endif
 		},
 	}),
@@ -460,9 +462,9 @@ local MERCHANT_GROUPS = {
 	i(34685, {	-- Vestment of Summer
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247,  50 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM,  50 },
 			-- #else
-			{ "i", 23247, 100 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 100 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_2_4_0 },
@@ -470,9 +472,9 @@ local MERCHANT_GROUPS = {
 	i(34683, {	-- Sandals of Summer
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247,  50 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM,  50 },
 			-- #else
-			{ "i", 23247, 200 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 200 },
 			-- #endif
 		},
 		["timeline"] = { ADDED_2_4_0 },
@@ -481,38 +483,38 @@ local MERCHANT_GROUPS = {
 		-- #if AFTER WRATH
 		["description"] = "You will need 10 of these torches to complete the |cffffff00Torch Juggler|r achievement.",
 		-- #endif
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 		["timeline"] = { ADDED_2_4_0 },
 	}),
 	i(23215, {	-- Bag of Smorc Ingredients
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 		["timeline"] = { ADDED_2_4_0 },
 	}),
 	-- #if AFTER 2.4.0.7994
 	i(23435, {	-- Elderberry Pie
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 	}),
 	i(23327, {	-- Fire-Toasted Bun
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 	}),
 	i(23326, {	-- Midsummer Sausage
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 	}),
 	i(23211, {	-- Toasted Smorc
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 	}),
 	i(23246, {	-- Fiery Festival Brew
 		["cost"] = {
 			-- #if AFTER MID
-			{ "i", 23247, 2 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 2 },
 			-- #else
-			{ "i", 23247, 5 },	-- Burning Blossom
+			{ "i", BURNING_BLOSSOM, 5 },
 			-- #endif
 		},
 	}),
 	-- #endif
 	i(34684, {	-- Handful of Summer Petals
-		["cost"] = { { "i", 23247, 2 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 2 } },
 		["timeline"] = { ADDED_2_4_0 },
 	}),
 };
@@ -1085,7 +1087,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["timeline"] = { ADDED_1_11_1 },
 				}),
 				-- #endif
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(9386, {	-- A Light in Dark Places
@@ -1116,7 +1118,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(3),	-- Flame of Stratholme
 				objective(4),	-- Flame of the Scholomance
 				-- #endif
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(9365, {	-- A Thief's Reward (A)
@@ -1183,7 +1185,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "i", 35237 },	-- Orb of the Crawler
 					["coord"] = { 9.1, 12.5, ASHENVALE },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(9389, {	-- Flickering Flames in Eastern Kingdoms
@@ -1334,7 +1336,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 				i(35725),	-- Summer Incense (QI!)
 			},
 		}),
@@ -1344,7 +1346,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 				i(35725),	-- Summer Incense (QI!)
 			},
 		}),
@@ -1398,7 +1400,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Catch 4 torches in a row.
 					["provider"] = { "i", 34833 },	-- Unlit Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11925, {	-- More Torch Catching (H)
@@ -1412,7 +1414,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Catch 4 torches in a row.
 					["provider"] = { "i", 34833 },	-- Unlit Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11921, {	-- More Torch Tossing (A)
@@ -1426,7 +1428,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11926, {	-- More Torch Tossing (H)
@@ -1440,7 +1442,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		{	-- More Torch Tossing
@@ -1460,7 +1462,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		},
 		q(11882, {	-- Playing with Fire (A)
@@ -1642,7 +1644,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26116 },	-- Frostwave Lieutenant
 					["coord"] = { 9.6, 12.2, ASHENVALE },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11947, {	-- Striking Back [Level 32, Desolace]
@@ -1665,7 +1667,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26178 },	-- Hailstone Lieutenant
 					["coord"] = { 39.2, 30.6, DESOLACE },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11948, {	-- Striking Back [Level 43, Stranglethorn Vale]
@@ -1700,7 +1702,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						-- #endif
 					},
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11952, {	-- Striking Back [Level 51, Burning Steppes]
@@ -1723,7 +1725,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26214 },	-- Frigid Lieutenant
 					["coord"] = { 15.6, 33.2, BURNING_STEPPES },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11953, {	-- Striking Back [Level 60, Silithus]
@@ -1746,7 +1748,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26215 },	-- Glacial Lieutenant
 					["coord"] = { 69.0, 20.6, SILITHUS },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11954, {	-- Striking Back [Level 67, Hellfire Peninsula]
@@ -1772,7 +1774,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						{ 84.2, 53.4, HELLFIRE_PENINSULA },
 					},
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(9367, {	-- The Festival of Fire (A)
@@ -1789,7 +1791,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["coord"] = { 56.6, 92.3, TELDRASSIL },
 				}),
 				i(23246),	-- Fiery Festival Brew
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 			-- #endif
 			["qg"] = FESTIVAL_LOREMASTER_ID,
@@ -1815,7 +1817,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["coord"] = { 62.6, 66.9, UNDERCITY },
 				}),
 				i(23246),	-- Fiery Festival Brew
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 			-- #endif
 			["qg"] = FESTIVAL_TALESPINNER_ID,
@@ -1874,7 +1876,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11971, {	-- The Spinner of Summer Tales (H)
@@ -1922,7 +1924,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["races"] = HORDE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(92185, {	-- The Tale of the Frost Lord
@@ -1948,7 +1950,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "i", 34833 },	-- Unlit Torches
 				}),
 				i(34599),	-- Juggling Torch
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11923, {	-- Torch Catching (H)
@@ -1962,7 +1964,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "i", 34833 },	-- Unlit Torches
 				}),
 				i(34599),	-- Juggling Torch
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11731, {	-- Torch Tossing (A)
@@ -1978,7 +1980,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11922, {	-- Torch Tossing (H)
@@ -1994,7 +1996,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(82087, {	-- Torch Tossing (A)
@@ -2003,7 +2005,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { ADDED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
-			["groups"] = { i(23247) },	-- Burning Blossom
+			["groups"] = { i(BURNING_BLOSSOM) },
 		}),
 		q(82105, {	-- Torch Tossing (H)
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
@@ -2011,7 +2013,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { ADDED_10_2_7 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
-			["groups"] = { i(23247) },	-- Burning Blossom
+			["groups"] = { i(BURNING_BLOSSOM) },
 		}),
 		q(11886, {	-- Unusual Activity
 			["qg"] = EARTHEN_RING_ELDER_ID,
@@ -2068,7 +2070,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["timeline"] = { REMOVED_2_4_0 },
 				}),
 				-- #if BEFORE TBC
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 				-- #endif
 			},
 		}),
@@ -2091,7 +2093,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #if BEFORE 2.4.0.7994
 				i(23324),	-- Mantle of the Fire Festival
 				-- #endif
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 			-- #endif
 			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
