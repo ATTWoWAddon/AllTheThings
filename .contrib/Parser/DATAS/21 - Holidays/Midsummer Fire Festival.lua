@@ -203,7 +203,7 @@ local FLAME_STEAL_LEVEL_REQUIREMENT = 1;	-- Level requirement reduced to 1 after
 local FLAME_STEAL_LEVEL_REQUIREMENT = 50;
 -- #endif
 local FLAME_STEAL_REWARDS = {
-	i(BURNING_BLOSSOM), x25
+	i(BURNING_BLOSSOM),	-- x25
 	i(23211),	-- Toasted Smorc
 	i(23326),	-- Midsummer Sausage
 	i(23327),	-- Fire-toasted Bun
