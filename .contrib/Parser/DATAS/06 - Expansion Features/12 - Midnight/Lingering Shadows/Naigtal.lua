@@ -2,6 +2,9 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
+local FIELD_ACCOLADE = 3405;
+local DARK_PARTICLE = 267051;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	["groups"] = sharedData({
 		["timeline"] = { ADDED_12_0_5 },
@@ -601,6 +604,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 					})),
 					n(ZONE_DROPS, {
+						i(DARK_PARTICLE),
 						i(276298),	-- Forgotten Fel-Shard Talon (COSMETIC!)
 						i(276288),	-- Forgotten Sword of Vilaldoun (COSMETIC!)
 						i(276368),	-- Partially-Digested Redcap
@@ -612,6 +616,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(276300),	-- Vilaldoun Anchorite's Scepter (COSMETIC!)
 					}),
 					n(ZONE_REWARDS, {
+						currency(FIELD_ACCOLADE),
 						i(278116),	-- Player Experience
 						n(ARMOR, {
 							filter(BACK_F, {

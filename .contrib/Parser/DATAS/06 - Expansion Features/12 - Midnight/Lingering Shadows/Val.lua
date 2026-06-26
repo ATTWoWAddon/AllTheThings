@@ -2,6 +2,9 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
+local FIELD_ACCOLADE = 3405;
+local DARK_PARTICLE = 267051;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	["groups"] = sharedData({
 		["timeline"] = { ADDED_12_0_5 },
@@ -296,10 +299,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 					})),
 					n(ZONE_DROPS, {
+						i(DARK_PARTICLE),
 						i(276330),	-- Taken Riftwalker's Starbarb (COSMETIC!)
 						i(276299),	-- Umbralwarden's Soul Gavel (COSMETIC!)
 					}),
 					n(ZONE_REWARDS, {
+						currency(FIELD_ACCOLADE),
 						i(278116),	-- Player Experience
 						n(ARMOR, {
 							filter(BACK_F, {
