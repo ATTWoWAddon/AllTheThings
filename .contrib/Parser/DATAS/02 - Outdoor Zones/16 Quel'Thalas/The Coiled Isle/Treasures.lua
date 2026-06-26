@@ -40,16 +40,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--	["questID"] = XXXXXX,
 					--	["groups"] = {  },
 				}),
-				o(642786, {	-- Cracked Skull
+				o(642316, {	-- Cracked Skull
 					["coord"] = { 58.1, 43.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95594,
+					["groups"] = { i(278031) },	-- Cracked Amani Skull
 				}),
-				-- Crumbling Urn
-				--o(XXXXXX, {	-- Damaged Loa Trinket
-				--	["coord"] = { 46.9, 29.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-				--	["questID"] = 95596,
-				--	["groups"] = { i(278032) },	-- Damaged Loa Trinket
-				--}),
+				o(641984),	-- Crumbling Urn
+				o(642322, {	-- Damaged Loa Trinket
+					["coord"] = { 46.9, 29.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 95596,
+					["groups"] = { i(278032) },	-- Damaged Loa Trinket
+				}),
 				o(645410, {	-- Fangbound Sack
 					["coord"] = { 45.9, 66.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95938,
@@ -65,10 +66,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--	["questID"] = XXXXXX,
 					--	["groups"] = {  },
 				}),
-				-- Jaktu's Cursed Blade
+				o(642071, {	-- Jaktu's Cursed Blade
+					["groups"] = {
+						i(277954),	-- Jaktu's Cursed Blade (TOY!)
+						i(277961),	-- Jaktu's Cursed Blade
+					},
+				}),
 				-- Lost Spirit
 					--["cr"] = 261867,	-- Lost Spirit
 					--["coord"] = { 68.1, 65.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					--["questID"] = 95571,
 				o(629421, {	-- Malfunctioning Staff
 					["coord"] = { 75.4, 57.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95164,
@@ -79,7 +86,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 95836,
 					["groups"] = { i(278035) },	-- Ornate Healing Potion
 				}),
-				-- Posessed Vase
+				q(96985),	-- Posessed Vase
 				o(645422, {	-- Profane Ritual Spoils (Ritual Chest)
 					["coord"] = { 43.7, 67.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95941,
@@ -105,38 +112,42 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				o(645208, {	-- Sunken Diver's Chest
 					["coord"] = { 65.4, 5.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-					-- ["cost"] = 1x Diver's Key
-					--	["questID"] = XXXXXX,
+					--["cost"] = 1x Diver's Key
+					--["questID"] = XXXXXX,
 				}),
 				o(642021, {	-- Tarnished Amani Glaive
 					["coord"] = { 55.2, 38.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95563,
-					--["groups"] = {  },
+					["groups"] = { i(275920) },	-- Tarnished Amani Glaive
 				}),
-				-- Venomjade Necklace
-				--[[header(HEADERS.Object, XXXXXX, {	-- Vul'zahn's Smuggled Treasure
-					Step 1: npc 253837, Apothecary Dezi
-					57.2, 48.5
-					Talk to him to get the potion
-					i(271791),	-- Potion of Headache Relief
-					--
-					Step 2: npc 262204, Witherbark Cook
-					58.0, 48.8
-					Talk to him, give potion to get the stew
-					Cost: 1x Potion
-					i(271788),	-- Snuffling Boar Stew
-					--
-					Step 3: npc 263265, Vul'zahn
-					58.2, 45.7
-					Talk to him, give stew, get the key
-					Cost: 1x Stew
-					i(271792),	-- Soldier's Smuggled Treasure Key
-					--
-					Step 4: object X, Vul'zahn's Smuggled Treasure
-					58.2, 45.7 (right in front of Vul'zahn)
-					Cost: 1x Key
-					questID = 95976
-				}),--]]
+				o(644654, {	-- Venomjade Necklace
+					["coord"] = { 64.7, 36.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					--["questID"] = XXXXXX,
+				}),
+				header(HEADERS.Object, 648564, {	-- Vul'zahn's Smuggled Treasure
+					["description"] = "1. Talk to Apothecary Dezi and ask him to give you a Potion.\n2. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n3. Talk to Vul'zahn, give him the Stew. He will give you the key.\n4. Open the treasure.",
+					["groups"] = {
+						n(253837, {	-- Apothecary Dezi
+							["coord"] = { 57.2, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["groups"] = { i(271791) },	-- Potion of Headache Relief
+						}),
+						n(262204, {	-- Witherbark Cook
+							["coord"] = { 58.0, 48.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["cost"] = { { "i", 271791, 1 } },	-- 1x Potion of Headache Relief
+							["groups"] = { i(271788) },	-- Snuffling Boar Stew
+						}),
+						n(263265, {	-- Vul'zahn
+							["coord"] = { 58.2, 45.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["cost"] = { { "i", 271788, 1 } },	-- 1x Snuffling Boar Stew
+							["groups"] = { i(271792) },	-- Soldier's Smuggled Treasure Key
+						}),
+						o(648564, {	-- Vul'zahn's Smuggled Treasure
+							["coord"] = { 58.2, 45.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["cost"] = { { "i", 271792, 1 } },	-- 1x Soldier's Smuggled Treasure Key
+							["questID"] = 95976,
+						}),
+					},
+				}),
 				o(644791, {	-- Waterlogged Basket
 					["coord"] = { 49.5, 32.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95854,
@@ -147,18 +158,39 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(270268) },	-- Crumpled Note
 				}),
 			}),
-			--header(HEADERS.Achievement, XXXXX, {	-- Loremaster of the Coiled Isle
+			header(HEADERS.Achievement, 63662, {	-- Student of Hissstory
+				q(98302),	-- Abandoned Tablet
+				o(653579),	-- Amani Exile's Words
+				q(98305),	-- Forum Rules
+				o(653515),	-- Head Mason's Tablet
+				-- Message in a Bottle
+				o(669316, {	-- Oily Black Stone
+					["coord"] = { 45.8, 47.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 98304,
+				}),
+				q(98308),	-- Profaned Plaque
+				o(669318, {	-- Survival Journals
+					["coord"] = { 34.1, 36.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 98306,
+				}),
 				o(654586, {	-- Worn Tablet
 					["coord"] = { 70.0, 66.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					--["questID"] = XXXXX,
 				}),
-			--}),
-			--Repeatables
-			o(656039, {	-- Venom-Clotted Bauble
-				["description"] = "Spawns randomly around the poisoned areas.",
+				q(98307),	-- Zandalari Logbook
+				n(REWARDS, {
+					i(280419),	-- Cursed Badge of the Soulcoilers (TOY!)
+				}),
 			}),
+			--Repeatables
 			o(654991, {	-- Cracked Canopic Jar
 				["description"] = "Spawns randomly around the temples.",
+			}),
+			o(656044, {	-- Singing Shell
+				["description"] = "Spawns randomly around coastal regions.",
+			}),
+			o(656039, {	-- Venom-Clotted Bauble
+				["description"] = "Spawns randomly around the poisoned areas.",
 			}),
 		}),
 	}),

@@ -49,6 +49,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 58.9, 48.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			ach(63641),	-- Snake Charmed, I'm Sure
+			ach(63662),	-- Student of Hissstory
 			skyriding(ach(63395, {	-- The Coiled Isles Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{ "meta_achievement",

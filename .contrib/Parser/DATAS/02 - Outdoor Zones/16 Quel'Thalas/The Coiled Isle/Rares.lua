@@ -35,6 +35,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--["questID"] = XXXXX,
 				--["groups"] = {  },
 			}),
+			n(261109, {	-- Sss'alik
+				["coord"] = { 58.1, 40.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+				--["questID"] = XXXXX,
+				--["groups"] = {  },
+			}),
 		}),
 	}),
 }));

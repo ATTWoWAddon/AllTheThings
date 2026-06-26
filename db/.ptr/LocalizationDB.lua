@@ -26161,6 +26161,7 @@ L.QUEST_NAMES = {
 	[95136] = "MID Inscription Order: Skinning",
 	[95137] = "MID Inscription Order: Tailoring",
 	[95138] = "MID Inscription Order: Engineering",
+	[95389] = "Looted Essence of Lumber from harvesting trees (Weekly)",
 	[95958] = "Stay awhile and listen: Magister Umbric",
 	[95959] = "Stay awhile and listen: Arator",
 	[95960] = "Stay awhile and listen: Arator",

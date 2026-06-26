@@ -809,7 +809,6 @@ root(ROOTS.Unsorted, {
 			i(274467),	-- Crazy Carrot
 			i(274468),	-- Blue Housing Dye
 			i(274469),	-- Brown Housing Dye
-			i(274470),	-- Green Housing Dye
 			i(274471),	-- Orange Housing Dye
 			i(274472),	-- Purple Housing Dye
 			i(274473),	-- Red Housing Dye
@@ -1070,7 +1069,6 @@ root(ROOTS.Unsorted, {
 			i(275917),	-- Preyhunter's Veteran Sack
 			i(275918),	-- Preyhunter's Adventurer Chest
 			i(275919),	-- Preyhunter's Adventurer Sack
-			i(275920),	-- Tarnished Amani Glaive
 			i(275936),	-- Delve-O-Bot 7001: Midnight Software Update Chip
 			i(275978),	-- Delver's Starter Kit
 			i(275986),	-- Delver's Cosmetic Surprise Bag
@@ -1314,9 +1312,7 @@ root(ROOTS.Unsorted, {
 			i(277945),	-- Melancholic Offering
 			i(277946),	-- Choleric Offering
 			i(277951),	-- Venomous Aspirant's Slicer
-			i(277954),	-- Jaktu's Cursed Blade
 			i(277955),	-- Ethereal Bead Strand
-			i(277961),	-- Jaktu's Cursed Blade
 			i(277968),	-- Contract: Zul'jarra's Forces
 			i(277969),	-- Contract: Zul'jarra's Forces
 			i(277970),	-- Venomous Warmonger's Warblade
@@ -1334,7 +1330,6 @@ root(ROOTS.Unsorted, {
 			i(278000),	-- Sealed Vial of Mysterious Green Liquid
 			i(278001),	-- Forgotten Amani Fishing Rod
 			i(278003),	-- Forgotten Mask
-			i(278031),	-- Cracked Amani Skull
 			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
 			i(278048),	-- Corrosive Relic
