@@ -30,6 +30,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--["questID"] = XXXXX,
 				--["groups"] = {  },
 			}),
+			n(258920, {	-- Nar'zira
+				["coord"] = { 63.2, 62.4, 2642 },	-- Tomb of the Lost Priest
+				--["questID"] = 94619,	-- Shared with 'Garsecg'???
+				--["groups"] = {  },
+			}),
 			n(268049, {	-- Siltmouth
 				["coord"] = { 50.2, 69.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 				--["questID"] = XXXXX,

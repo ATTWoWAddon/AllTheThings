@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--["questID"] = XXXXXX,
 				}),
 				header(HEADERS.Object, 648564, {	-- Vul'zahn's Smuggled Treasure
-					["description"] = "1. Talk to Apothecary Dezi and ask him to give you a Potion.\n2. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n3. Talk to Vul'zahn, give him the Stew. He will give you the key.\n4. Open the treasure.",
+					["description"] = "Steps must be followed in order to unlock gossip options.\n\n1. Talk to Vul'zahn and ask him if you can have the treasure.\n2. Talk to Witherbark Cook and ask him for the Bowl of Stew.\3. Talk to Apothecary Dezi and ask him to give you a Potion.\n4. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n5. Talk to Vul'zahn, give him the Stew. He will give you the key.\n6. Open the treasure.",
 					["groups"] = {
 						n(253837, {	-- Apothecary Dezi
 							["coord"] = { 57.2, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -182,7 +182,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(280419),	-- Cursed Badge of the Soulcoilers (TOY!)
 				}),
 			}),
-			--Repeatables
+			-- Uncertain
+			o(622048, {	-- Journal of a Literate Lich
+				-- Exo Note: I don't know if this one will matter or not. It sparkles as if it is important. Currently has no HQT. Will remove if it turns out it is related to a quest or something.
+				["coord"] = { 51.4, 26.1, 2642 },	-- Tomb of the Lost Priest
+			}),
+			-- Repeatables
 			o(654991, {	-- Cracked Canopic Jar
 				["description"] = "Spawns randomly around the temples.",
 			}),

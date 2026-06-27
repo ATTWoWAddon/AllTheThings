@@ -472,7 +472,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--
 				}),
 			}),
-			--header(HEADERS.Achievement, 63641, {	-- Snake Charmed, I'm Sure (Sojourner)
+			header(HEADERS.Achievement, 63641, {	-- Snake Charmed, I'm Sure (Sojourner)
 				--header(HEADERS.AchCriteria, 63641.01, {	-- Strange Friends in Odd Places
 				--}),
 				--header(HEADERS.AchCriteria, 63641.02, {	-- Tokka's Crew
@@ -485,8 +485,29 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--}),
 				--header(HEADERS.AchCriteria, 63641.06, {	-- Don't be Afrayed
 				--}),
-				--header(HEADERS.AchCriteria, 63641.07, {	-- A Band of Brothers
-				--}),
+				header(HEADERS.AchCriteria, 63641.07, {	-- A Band of Brothers
+					q(94936, {	-- A Bond of Brothers
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 258717,	-- Aol'ggin
+						["coord"] = { 56.5, 43.1, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(94937, {	-- Too Quiet on the Northern Front
+						["sourceQuest"] = 94936,	-- A Bond of Brothers
+						["qg"] = 259295,	-- Tekkan
+						["coord"] = { 53.2, 35.2, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(94941, {	-- Saving Recruit Jabat
+						["sourceQuest"] = 94937,	-- Too Quiet on the Northern Front
+						["qg"] = 259297,	-- Aol'ggin
+						["coord"] = { 53.4, 33.5, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(278890),	-- Armbands of Brothers
+							i(278892),	-- Bands of Brothers
+							i(278889),	-- Warbands of Brothers
+							i(278891),	-- Wristbands of Brothers
+						},
+					}),
+				}),
 				--header(HEADERS.AchCriteria, 63641.08, {	-- The Troubles of Mlurkrr Mire
 				--}),
 				--header(HEADERS.AchCriteria, 63641.09, {	-- Somethin' Bad Inside
@@ -495,7 +516,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--}),
 				--header(HEADERS.AchCriteria, 63641.11, {	-- The Monster's Mother
 				--}),
-			--}),
+			}),
 		}),
 	}),
 }));

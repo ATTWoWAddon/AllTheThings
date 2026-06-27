@@ -1512,10 +1512,6 @@ root(ROOTS.Unsorted, {
 			i(278874),	-- Lil' Dark Armageddon
 			i(278875),	-- Lil' Green Armageddon
 			i(278876),	-- Lil' Red Armageddon
-			i(278889),	-- Warbands of Brothers
-			i(278890),	-- Armbands of Brothers
-			i(278891),	-- Wristbands of Brothers
-			i(278892),	-- Bands of Brothers
 			i(278909),	-- Cloak of Chumming
 			i(278910),	-- Yl'mul's Waterlogged Wrap
 			i(278911),	-- Shipwrecked Shroud

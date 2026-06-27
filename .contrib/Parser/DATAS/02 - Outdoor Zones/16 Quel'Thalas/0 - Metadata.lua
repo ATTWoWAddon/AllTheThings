@@ -48,6 +48,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["timeline"] = { ADDED_12_1_0 },
 			["maps"] = {
 				2639,	-- Crypt of the Denied
+				2641,	-- Crypt of the Lost Warrior
+				2642,	-- Tomb of the Lost Priest
 			},
 		}),
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
