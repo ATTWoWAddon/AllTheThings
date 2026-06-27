@@ -2376,9 +2376,6 @@ root(ROOTS.Unsorted, {
 				i(259474),	-- Lost Amani Toy
 				i(259475),	-- Misplaced Loa Statue
 			}),
-			filter(TITLES, {
-				title(749),	-- Darkspear Dasher <Name>
-			}),
 			filter(TOYS, {
 				i(267472),	-- Gnomatic Projector (TOY!)
 			}),

@@ -47,6 +47,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
 				},
 				["races"] = HORDE_ONLY,	-- Currently horde only
 				["groups"] = {
+					title(749, {	-- Darkspear Dasher <Name>
+						["collectible"] = false,	-- Only for 1 day
+					}),
 					i(267323),	-- Troll Scroll of Rainbow Roll (TOY!)
 				},
 			}),
