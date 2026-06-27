@@ -2014,6 +2014,14 @@ root(ROOTS.NeverImplemented, {
 
 		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.0
+			expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+				itemsource(301399),	-- Chakram-Breaker Greatsword
+				itemsource(301401),	-- Spire of the Furious Construct
+				itemsource(301404),	-- Beakbreaker Scimitar
+				itemsource(301407),	-- Viryx's Indomitable Bulwark
+				itemsource(301410),	-- Arcanic of the High Sage
+			})),
 			i(246209),	-- 12.0 Monster - Arator - Sword1H - Sword_1H_Arator_D_01
 			i(259954),	-- [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
 			i(249608),	-- [PH] 12.0 Delves - Level-Up - Weapon - 1H Axe INT
@@ -2060,10 +2068,12 @@ root(ROOTS.NeverImplemented, {
 		-- 12.0.5
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.5
-			i(116391, {["sourceID"] = 65277 }),	-- Blackhand Forgehammer
-			i(116364, {["sourceID"] = 65223 }),	-- Dagger of Enfeeblement
-			i(116393, {["sourceID"] = 65280 }),	-- Dagger of the Shattered Crucible
-			i(113979, {["sourceID"] = 62894 }),	-- The Black Hand
+			expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+				itemsource(65277),	-- Blackhand Forgehammer
+				itemsource(65223),	-- Dagger of Enfeeblement
+				itemsource(65280),	-- Dagger of the Shattered Crucible
+				itemsource(62894),	-- The Black Hand
+			})),
 		})),
 	}),
 	n(WEAPONS, {

@@ -35368,75 +35368,15 @@ s(192439)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 10.2.6.53840
 s(197334)/i(216027),	-- Draconic Gladiator's Silk Blouse
 12.0.0.63534
-s(287077)/i(237828),	-- Spellbreaker's March
-s(287078)/i(237829),	-- Spellbreaker's Shelter
-s(287079)/i(237830),	-- Spellbreaker's Girdle
-s(287081)/i(237832),	-- Spellbreaker's Cover
-s(287082)/i(237833),	-- Spellbreaker's Legguards
-s(287083)/i(237834),	-- Spellbreaker's Bracers
-s(287084)/i(237835),	-- Spellbreaker's Mantle
-s(287085)/i(237836),	-- Spellbreaker's Resolve
-s(287157)/i(237917),	-- Blood-Tempered Greaves
-s(287158)/i(237918),	-- Blood-Tempered Chestplate
-s(287159)/i(237919),	-- Blood-Tempered Greatbelt
-s(287161)/i(237921),	-- Blood-Tempered Basinet
-s(287162)/i(237922),	-- Blood-Tempered Leggings
-s(287163)/i(237923),	-- Blood-Tempered Bracers
-s(287164)/i(237924),	-- Blood-Tempered Pauldrons
-s(287165)/i(237925),	-- Blood-Tempered Gauntlets
-s(287208)/i(237947),	-- Thalassian Leatherworker's Toolset
-s(292216)/i(244463),	-- Murder Row Fleet Feet
 s(295608)/i(248577),	-- Ring of Doubt
 s(295609)/i(248578),	-- Band of Impatience
-s(297855)/i(250456),	-- Wretched Scholar's Gilded Robe
-s(297856)/i(250456),	-- Wretched Scholar's Gilded Robe
-s(297857)/i(250456),	-- Wretched Scholar's Gilded Robe
-s(297859)/i(250457),	-- Devouring Outrider's Chausses
-s(297860)/i(250457),	-- Devouring Outrider's Chausses
-s(297861)/i(250457),	-- Devouring Outrider's Chausses
-s(297863)/i(250458),	-- Host Commander's Casque
-s(297864)/i(250458),	-- Host Commander's Casque
-s(297865)/i(250458),	-- Host Commander's Casque
-s(297867)/i(250459),	-- Bramblestalker's Feathered Cowl
-s(297868)/i(250459),	-- Bramblestalker's Feathered Cowl
-s(297869)/i(250459),	-- Bramblestalker's Feathered Cowl
 s(298430)/i(251904),	-- Crown of the High King
-s(301399)/i(258046),	-- Chakram-Breaker Greatsword
-s(301401)/i(258047),	-- Spire of the Furious Construct
-s(301404)/i(258048),	-- Beakbreaker Scimitar
-s(301407)/i(258049),	-- Viryx's Indomitable Bulwark
-s(301410)/i(258050),	-- Arcanic of the High Sage
-s(301480)/i(258574),	-- Legwraps of Swirling Light
-s(301483)/i(258575),	-- Rigid Scale Greatcloak
-s(301486)/i(258576),	-- Sharpeye Chestguard
-s(301489)/i(258577),	-- Boots of Burning Focus
-s(301492)/i(258578),	-- Lightbinder Shoulderguards
-s(301496)/i(258579),	-- Gutcrusher Greathelm
-s(301498)/i(258580),	-- Bracers of Blazing Light
-s(301501)/i(258581),	-- Bloodfeather Mantle
-s(301504)/i(258582),	-- Rigid Scale Boots
-s(301507)/i(258583),	-- Incarnadine Gauntlets
-s(301510)/i(258584),	-- Lightbinder Treads
-s(301513)/i(258585),	-- Sharpeye Gleam
-s(301516)/i(258586),	-- Bloodfeather Chestguard
-s(301519)/i(258587),	-- Spaulders of Scorching Ray
 s(301830)/i(259029),	-- Shadowguard Intelligence
 12.0.0.63967
 s(303352)/i(264447),	-- Ring of the Threshadon's Heart
 s(303353)/i(264448),	-- Featherwoven Promise Band
-12.0.0.64124
-s(303634)/i(264969),	-- Extinction Voulge
 12.0.0.64228
 s(303985)/i(265814),	-- Noble's Signet Ring
-12.0.1.66013
-s(307643)/i(249335),	-- Imperator's Banner \\ 12.0 Raid - Generic - Cloak
-s(307644)/i(249335),	-- Imperator's Banner \\ 12.0 Raid - Generic - Cloak
-s(307645)/i(249335),	-- Imperator's Banner \\ 12.0 Raid - Generic - Cloak
-s(307646)/i(249335),	-- Imperator's Banner \\ 12.0 Raid - Generic - Cloak
-s(307647)/i(249370),	-- Draconic Nullcape \\ 12.0 Raid - Generic - Cloak
-s(307648)/i(249370),	-- Draconic Nullcape \\ 12.0 Raid - Generic - Cloak
-s(307649)/i(249370),	-- Draconic Nullcape \\ 12.0 Raid - Generic - Cloak
-s(307650)/i(249370),	-- Draconic Nullcape \\ 12.0 Raid - Generic - Cloak
 12.1.0.68209
 s(302222)/i(260586),	--
 s(303640)/i(265068),	--

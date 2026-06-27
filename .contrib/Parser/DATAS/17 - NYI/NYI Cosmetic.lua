@@ -1464,7 +1464,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(260741),	-- Big Lil' Blue Whirlwind
 				i(260744),	-- Big Lil' Green Whirlwind
 				i(260745),	-- Big Lil' Red Whirlwind
-				i(264969),	-- Extinction Voulge
+				i(264969, {["sourceID"] = 303634}),	-- Extinction Voulge
 				i(260737),	-- Forest Dweller's Dawn Staff
 				i(260736),	-- Forest Dweller's Mossy Staff
 				i(260739),	-- Forest Dweller's Night Staff

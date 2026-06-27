@@ -765,6 +765,23 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 12.0.0
 				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
 					i(238206),	-- [PH] Weightstone - Quality 1
+					itemsource(287161),	-- Blood-Tempered Basinet
+					itemsource(287163),	-- Blood-Tempered Bracers
+					itemsource(287158),	-- Blood-Tempered Chestplate
+					itemsource(287165),	-- Blood-Tempered Gauntlets
+					itemsource(287159),	-- Blood-Tempered Greatbelt
+					itemsource(287157),	-- Blood-Tempered Greaves
+					itemsource(287162),	-- Blood-Tempered Leggings
+					itemsource(287164),	-- Blood-Tempered Pauldrons
+					itemsource(292216),	-- Murder Row Fleet Feet
+					itemsource(287083),	-- Spellbreaker's Bracers
+					itemsource(287081),	-- Spellbreaker's Cover
+					itemsource(287079),	-- Spellbreaker's Girdle
+					itemsource(287082),	-- Spellbreaker's Legguards
+					itemsource(287084),	-- Spellbreaker's Mantle
+					itemsource(287077),	-- Spellbreaker's March
+					itemsource(287085),	-- Spellbreaker's Resolve
+					itemsource(287078),	-- Spellbreaker's Shelter
 				})),
 			}),
 		}),
