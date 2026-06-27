@@ -157,3 +157,18 @@ app.CountTable = function(a)
     end
     return c
 end
+app.UnpackTable = function(t,withKeys)
+    local tmp = {}
+	local tostring = tostring
+	if withKeys then
+		for k,v in next,t do
+			tmp[#tmp+1] = tostring(k)..":"..tostring(v)
+		end
+	else
+		for _,v in next,t do
+			tmp[#tmp+1] = v
+		end
+	end
+    return unpack(tmp)
+end
+
