@@ -25,6 +25,22 @@ local DARKSPEAR_DASH = createHeader({
 root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
 	["timeline"] = { ADDED_12_0_7 },
 	["groups"] = {
+		n(VENDORS, {
+			n(259188, {	-- Naz'do
+				["coord"] = { 47.5, 46.6, ECHO_ISLES },
+				["groups"] = {
+					i(267280),	-- Darkspear Dash Tabard
+					i(267352),	-- Pocket Rainbow
+					i(267353),	-- Pocket Sand
+					i(268694),	-- Rainbow Runners
+					i(226127),	-- Recruit's Shirt
+				},
+				["sym"] = {{"select","itemID",
+					210469,	-- Personal Tabard
+					140309,	-- Prismatic Bauble
+				}},
+			}),
+		}),
 		n(QUESTS, {
 			q(95009, {	-- Doing the Dash
 				["qgs"] = {

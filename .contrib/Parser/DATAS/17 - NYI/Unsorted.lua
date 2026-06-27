@@ -2260,9 +2260,6 @@ root(ROOTS.Unsorted, {
 					i(270296),	-- Crown of Snowy Springflowers
 					i(270294),	-- Crown of Violet Springflowers
 				}),
-				filter(TABARDS, {
-					i(267280),	-- Darkspear Dash Tabard
-				}),
 				n(SETS, {
 					i(269001),	-- Arsenal: Drakebreaker's Weapons
 					i(269002),	-- Arsenal: Hellbloom Weapons
@@ -2360,9 +2357,6 @@ root(ROOTS.Unsorted, {
 				i(272893),	-- Icy Harness
 				i(259472),	-- Lost Revantusk Possessions
 				i(267381),	-- Official G.G.R. Rehydration Container
-				i(267352),	-- Pocket Rainbow
-				i(267353),	-- Pocket Sand
-				i(268694),	-- Rainbow Runners
 				i(273013),	-- Void-Permeated Hide Scrap
 				i(267380),	-- Volatile Pink Brightbursts
 				i(260892),	-- "Arcane Ranger" Kit
