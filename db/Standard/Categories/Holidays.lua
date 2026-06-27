@@ -2533,7 +2533,7 @@ i(62044,{awp=40003,cost={{"i",62019,1},{"i",62018,1},{"i",62017,1},{"i",62016,1}
 i(44294,{awp=30002,cost={{"i",44293,1},{"i",44292,1},{"i",44291,1},{"i",44290,1},{"i",44289,1},{"i",44288,1},{"i",44287,1},{"i",44286,1}},e=1}),
 i(62021,{awp=40003,cost={{"i",61995,1},{"i",61994,1},{"i",61993,1},{"i",61992,1},{"i",61991,1},{"i",61990,1},{"i",61989,1},{"i",61988,1}},e=1}),
 i(19257,{cost={{"i",19265,1},{"i",19264,1},{"i",19263,1},{"i",19262,1},{"i",19261,1},{"i",19260,1},{"i",19259,1},{"i",19258,1}},e=1})}})}}),
-h(-755,{awp=120007,e=1793,g={
+h(-755,{awp=120007,description="The Darkspear Dash is a weekend Horde-only micro-holiday taking place at the end of June. Players will join in on a 'dash' from Echo Isles to Silvermoon City.\n\nThe event is inspired by the 'Running of the Trolls' community charity event.",e=1793,g={
 h(-45,{e=1793,g={
 q(95009,{coords={
 [2339]={{46,55}},

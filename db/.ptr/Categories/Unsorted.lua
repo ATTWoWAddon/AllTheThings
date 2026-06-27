@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local de,flt,fp,h,i,mnt,p,q,s,title,toy,x=_.CreateDecor,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local de,flt,fp,h,i,mnt,p,q,s,toy,x=_.CreateDecor,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.Unsorted={
 x(12,{
 x(12.01,{awp=120100,g={
@@ -2093,8 +2093,6 @@ s(305035,270291,{f=2}),
 s(305026,270281,{f=2}),
 s(305040,270296,{f=2}),
 s(305038,270294,{f=2})}),
-flt(9,{
-s(304259,267280,{f=9})}),
 h(-51,{
 i(269001,{f=55,spellID=1284566}),
 i(269002,{f=55,spellID=1284569}),
@@ -2176,9 +2174,6 @@ i(272400,{spellID=1291056}),
 i(272893),
 i(259472),
 i(267381,{f=55,spellID=1280336}),
-i(267352,{f=55,spellID=203534}),
-i(267353,{f=55,spellID=393985}),
-i(268694,{f=55,spellID=1283386}),
 i(273013),
 i(267380,{f=55,spellID=431058}),
 i(260892,{spellID=1269046}),
@@ -2194,11 +2189,8 @@ flt(104,{
 i(259473),
 i(259474),
 i(259475)}),
-flt(110,{
-title(749)}),
 flt(102,{
-toy(267472),
-toy(267323)}),
+toy(267472)}),
 i(274427,{spellID=1294060}),
 i(274578,{f=55})}}),
 x(12.0001,{awp=120001,g={

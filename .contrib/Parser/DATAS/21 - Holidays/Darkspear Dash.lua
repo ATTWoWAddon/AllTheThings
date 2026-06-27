@@ -5,24 +5,25 @@
 local DARKSPEAR_DASH = createHeader({
 	readable = "Darkspear Dash",
 	constant = "DARKSPEAR_DASH",
-	icon = nil--[[~_.asset("Holiday_DarkspearDash")]],
+	icon = 461790,	-- [[~_.asset("Holiday_DarkspearDash")]]
 	eventID = EVENTS.DARKSPEAR_DASH,
 	text = {
 		en = "Darkspear Dash",
-		-- TODO: de = "",
-		-- TODO es = "",
-		-- TODO mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO ru = "",
-		-- TODO cn = "",
-		-- TODO tw = "",
+		de = "Dunkelspeerrennen",
+		es = "Carrera Lanza Negra",
+		mx = "Carrera Lanza Negra",
+		fr = "Marathon des Sombrelances",
+		it = "Slancio dei Lanciascura",
+		ko = "검은창 대질주",
+		pt = "Arremetida Lançanegra",
+		ru = "Забег Черного Копья",
+		cn = "暗矛冲刺赛",
+		tw = "暗矛衝刺賽",
 	},
 });
 
 root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
+	["description"] = "The Darkspear Dash is a weekend Horde-only micro-holiday taking place at the end of June. Players will join in on a 'dash' from Echo Isles to Silvermoon City.\n\nThe event is inspired by the 'Running of the Trolls' community charity event.",
 	["timeline"] = { ADDED_12_0_7 },
 	["groups"] = {
 		n(QUESTS, {
@@ -52,7 +53,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
 					}),
 					i(267323, {	-- Troll Scroll of Rainbow Roll (TOY!)
 						-- Temp description because the toy is only available for 2 days for Horde only. Needs to be visible on both Factions
-						-- #if before 12.1
+						-- #if BEFORE 12.1
 						["description"] = "The Quest for this Toy is Horde Only!",
 						-- #endif
 					}),

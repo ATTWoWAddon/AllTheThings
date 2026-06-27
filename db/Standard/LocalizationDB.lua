@@ -2466,6 +2466,7 @@ localize(L.HEADER_ICONS, {
 	[-750] = 6654410,
 	[-753] = 6119038,
 	[-754] = 6654410,
+	[-755] = 461790,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -26839,6 +26840,7 @@ localize(L.HEADER_NAMES, {
 	[-741] = "Angriffe der Leere",
 	[-742] = "Ritualstätten",
 	[-745] = "Postroute in der Nachbarschaft",
+	[-755] = "Dunkelspeerrennen",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -34668,6 +34670,7 @@ localize(L.HEADER_NAMES, {
 	[-741] = "Assauts du Vide",
 	[-742] = "Sites rituels",
 	[-745] = "Tournée postale dans le quartier",
+	[-755] = "Marathon des Sombrelances",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -42102,6 +42105,7 @@ localize(L.HEADER_NAMES, {
 	[-741] = "Assalti del Vuoto",
 	[-742] = "Siti Rituali",
 	[-745] = "Percorso postale nel Vicinato",
+	[-755] = "Slancio dei Lanciascura",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -48848,6 +48852,7 @@ localize(L.HEADER_NAMES, {
 	[-741] = "Investidas do Caos",
 	[-742] = "Sítios Ritualísticos",
 	[-745] = "Rota postal na vizinhança",
+	[-755] = "Arremetida Lançanegra",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -56784,6 +56789,7 @@ localize(L.HEADER_NAMES, {
 	[-741] = "Натиски Бездны",
 	[-742] = "Места проведения ритуалов",
 	[-745] = "Pайонный почтовый маршрут",
+	[-755] = "Забег Черного Копья",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -64284,6 +64290,7 @@ localize(L.HEADER_NAMES, {
 	[-741] = "공허 공세",
 	[-742] = "의식 지점",
 	[-745] = "거주구 우편 경로를",
+	[-755] = "검은창 대질주",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -71792,6 +71799,7 @@ localize(L.HEADER_NAMES, {
 	[-741] = "Asaltos del Vacío",
 	[-742] = "Lugares de ritual",
 	[-745] = "Ruta postal del vecindario",
+	[-755] = "Carrera Lanza Negra",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -80987,6 +80995,7 @@ localize(L.HEADER_NAMES, {
 	[-746] = "专业节点",
 	[-749] = "装饰决斗",
 	[-750] = "相位导管",
+	[-755] = "暗矛冲刺赛",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",
@@ -88293,6 +88302,7 @@ localize(L.HEADER_NAMES, {
 	[-741] = "虛無襲擊",
 	[-742] = "儀式地點第",
 	[-745] = "社區郵政路線",
+	[-755] = "暗矛衝刺賽",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成探究時獎勵的東西。",
