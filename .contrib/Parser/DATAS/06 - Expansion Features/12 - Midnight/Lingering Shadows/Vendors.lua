@@ -827,8 +827,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(252195, {	-- Fishstick Keith (PET!)
 							["sourceAchievement"] = 62903,	-- Climate Strange: Val
 							["cost"] = {
-								{ "c", FIELD_ACCOLADE, 30 },
-								{ "i", 238365, 250 },	-- 250x Sin'dorei Swarmer
+								{ "i", 238365, 50 },	-- 50x Sin'dorei Swarmer
 							},
 						}),
 						i(275662, {	-- Frosticus Maximus (PET!)
