@@ -26,14 +26,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
 	["timeline"] = { ADDED_12_0_7 },
 	["groups"] = {
 		n(QUESTS, {
+			q(95009, {	-- Doing the Dash
+				["qgs"] = {
+					220307,	-- Holiday Enthusiast
+				},
+				-- ["isYearly"] = true,	-- expected but obviously not confirmed
+				["coords"] = {
+					{ 46.0, 55.0, DORNOGAL },
+					{ 51.1, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				},
+				["races"] = HORDE_ONLY,	-- Currently horde only
+				["isBreadcrumb"] = true,
+			}),
 			q(94954, {	-- Darkspear Dash
+				["sourceQuest"] = 95009,	-- Doing the Dash
 				["provider"] = { "n", 259191 },	-- Kalaya
 				-- ["isYearly"] = true,	-- expected but obviously not confirmed
 				["coords"] = {
 					{ 46.7, 47.4, ECHO_ISLES },
 				},
 				["groups"] = {
-					i(267323),	-- Troll Scroll of Rainbow Roll
+					i(267323),	-- Troll Scroll of Rainbow Roll (TOY!)
 				},
 			}),
 		}),
