@@ -473,8 +473,67 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 			header(HEADERS.Achievement, 63641, {	-- Snake Charmed, I'm Sure (Sojourner)
-				--header(HEADERS.AchCriteria, 63641.01, {	-- Strange Friends in Odd Places
-				--}),
+				header(HEADERS.AchCriteria, 63641.01, {	-- Strange Friends in Odd Places
+					q(93387, {	-- Dealing with Pests
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 263327,	-- Ofi the Sly (mobileNPC)
+						["coord"] = { 61.1, 32.9, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the camp
+					}),
+					q(93388, {	-- Unusual Alchemy
+						["sourceQuest"] = 93387,	-- Dealing with Pests
+						["qg"] = 263327,	-- Ofi the Sly (mobileNPC)
+						["coord"] = { 61.1, 32.9, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the camp
+						["groups"] = {
+							i(268584),	-- Undamaged Serpent Scale (QI!)
+							o(631027, {	-- Bowl of Innards
+								["coord"] = { 64.1, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+								["groups"] = { i(258168) },	-- Pile of Fish Guts (QI!)
+							}),
+							o(612012, {	-- Tarnished Pearl
+								["coord"] = { 69.0, 32.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+								["groups"] = { i(258044) },	-- Tarnished Pearl (QI!)
+							}),
+						},
+					}),
+					q(93389, {	-- Rocksblood
+						["sourceQuest"] = 93387,	-- Dealing with Pests
+						["qg"] = 260710,	-- Jelvik (mobileNPC)
+						["coord"] = { 61.1, 32.9, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Follows Ofi around
+					}),
+					q(93390, {	-- Acceptable Apprentice
+						["sourceQuests"] = {
+							93388,	-- Unusual Alchemy
+							93389,	-- Rocksblood
+						},
+						["qg"] = 260226,	-- Ofi the Sly (mobileNPC)
+						["coord"] = { 60.4, 33.1, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the Alchemist Table, Cauldron and Workstation
+						["groups"] = { i(268959) },	-- Pungent Concoction (QI!)
+					}),
+					q(93391, {	-- Make it Stinky
+						["sourceQuest"] = 93390,	-- Acceptable Apprentice
+						["qg"] = 260226,	-- Ofi the Sly (mobileNPC)
+						["coord"] = { 60.4, 33.1, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the Alchemist Table, Cauldron and Workstation
+						["groups"] = { i(268950) },	-- Murloc Deterrent (PQI!)
+					}),
+					q(93392, {	-- Recovering Memories
+						["sourceQuest"] = 93391,	-- Make it Stinky
+						["qg"] = 254605,	-- Jelvik
+						["coord"] = { 60.9, 32.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93393, {	-- A Little Kindness
+						["sourceQuest"] = 93392,	-- Recovering Memories
+						["qg"] = 254605,	-- Jelvik
+						["coord"] = { 60.9, 32.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							o(633653, {	-- Purified Egg
+								["coord"] = { 61.1, 32.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+								["groups"] = { i(268961) },	-- Purified Egg (QI!)
+							}),
+							--
+							i(268644),	-- Zan (PET!)
+						},
+					}),
+				}),
 				--header(HEADERS.AchCriteria, 63641.02, {	-- Tokka's Crew
 				--}),
 				--header(HEADERS.AchCriteria, 63641.03, {	-- Ancient Anthropology
@@ -489,17 +548,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(94936, {	-- A Bond of Brothers
 						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
 						["qg"] = 258717,	-- Aol'ggin
-						["coord"] = { 56.5, 43.1, MAP.MIDNIGHT.ZULAMAN },
+						["coord"] = { 56.5, 43.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
 					q(94937, {	-- Too Quiet on the Northern Front
 						["sourceQuest"] = 94936,	-- A Bond of Brothers
 						["qg"] = 259295,	-- Tekkan
-						["coord"] = { 53.2, 35.2, MAP.MIDNIGHT.ZULAMAN },
+						["coord"] = { 53.2, 35.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
 					q(94941, {	-- Saving Recruit Jabat
 						["sourceQuest"] = 94937,	-- Too Quiet on the Northern Front
 						["qg"] = 259297,	-- Aol'ggin
-						["coord"] = { 53.4, 33.5, MAP.MIDNIGHT.ZULAMAN },
+						["coord"] = { 53.4, 33.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
 							i(278890),	-- Armbands of Brothers
 							i(278892),	-- Bands of Brothers

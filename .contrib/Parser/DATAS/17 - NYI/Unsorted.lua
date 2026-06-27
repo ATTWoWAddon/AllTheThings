@@ -37,8 +37,6 @@ root(ROOTS.Unsorted, {
 			i(258027),	-- Vaunted Preyhunter's Shoulder-Spikes
 			i(258029),	-- Vaunted Preyhunter's Plumed Helm
 			i(258031),	-- Vaunted Preyhunter's Knapsack
-			i(258044),	-- Tarnished Pearl
-			i(258168),	-- Pile of Fish Guts
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
@@ -103,19 +101,15 @@ root(ROOTS.Unsorted, {
 			i(270167),	-- Wavecaller's Seastone
 			i(268281),	-- Ula'guts
 			i(268519),	-- Heirloom Blossom Nectar
-			i(268584),	-- Undamaged Serpent Scale
 			i(268585),	-- Pup Treat
 			i(268628),	-- Zapgut Gland
-			i(268644),	-- Zan
 			i(268823),	-- Scroll of Seeking
 			i(268826),	-- Ballast Stone
 			i(268871),	-- Specifically Sized Rock
 			i(268929),	-- Hastily Written Note
-			i(268950),	-- Murloc Deterrent
 			i(268951),	-- Familiar Threshadon Tooth Necklace
 			i(268952),	-- Hastily Written Note
 			i(268953),	-- Familiar Amani Headdress
-			i(268959),	-- Pungent Concoction
 			i(268964),	-- Familiar Amani Headdress
 			i(268965),	-- Familiar Threshadon Tooth Necklace
 			i(268968),	-- Hastily Written Note
@@ -130,7 +124,6 @@ root(ROOTS.Unsorted, {
 			i(270191),	-- Lil'Kruul's Hilt
 			i(270210),	-- Bird Feathers
 			i(270211),	-- Furiostraza's Filter
-			i(270214),	-- Poisoned Parasite
 			i(270248),	-- Autumn Snapling
 			i(270249),	-- Cursed Spawn
 			i(270250),	-- Steady Croakfrog

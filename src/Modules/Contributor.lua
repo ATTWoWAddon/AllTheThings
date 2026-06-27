@@ -749,6 +749,9 @@ MobileDB.Creature = {
 	[255270] = true,	-- Orweyna
 	[256867] = true,	-- Grieving Amani
 	[259125] = true,	-- Enchanted Amani Mask
+	[260226] = true,	-- Ofi the Sly
+	[260710] = true,	-- Jelvik
+	[263327] = true,	-- Ofi the Sly
 	[265166] = true,	-- Baraat the Longshot
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
