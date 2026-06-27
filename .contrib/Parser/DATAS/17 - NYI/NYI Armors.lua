@@ -3816,6 +3816,75 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				}),
 			}),
 		}),
+		-- 9.1.0
+		expansion(EXPANSION.SL, patch(1,0), bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
+			n(WORLD_BOSSES, {
+				filter(CLOTH, {
+					itemsource(145873),	-- Sorrowful Trousers
+					itemsource(145874),	-- Sorrowful Trousers
+					itemsource(145875),	-- Sorrowful Trousers
+					itemsource(145865),	-- Wristwraps of Anguish
+					itemsource(145866),	-- Wristwraps of Anguish
+					itemsource(145867),	-- Wristwraps of Anguish
+				}),
+				filter(LEATHER, {
+					itemsource(145889),	-- Grips of Unleashed Suffering
+					itemsource(145890),	-- Grips of Unleashed Suffering
+					itemsource(145891),	-- Grips of Unleashed Suffering
+					itemsource(145885),	-- Tormented Soul Harness
+					itemsource(145886),	-- Tormented Soul Harness
+					itemsource(145887),	-- Tormented Soul Harness
+				}),
+				filter(MAIL, {
+					itemsource(145917),	-- Mor'geth's Gauntlets of Damnation
+					itemsource(145918),	-- Mor'geth's Gauntlets of Damnation
+					itemsource(145919),	-- Mor'geth's Gauntlets of Damnation
+					itemsource(145909),	-- Stygian Chain Greaves
+					itemsource(145910),	-- Stygian Chain Greaves
+					itemsource(145911),	-- Stygian Chain Greaves
+				}),
+				filter(PLATE, {
+					itemsource(145925),	-- Caged Legplates
+					itemsource(145926),	-- Caged Legplates
+					itemsource(145927),	-- Caged Legplates
+					itemsource(145933),	-- Tormentor's Greatbelt
+					itemsource(145934),	-- Tormentor's Greatbelt
+					itemsource(145935),	-- Tormentor's Greatbelt
+				}),
+			}),
+			filter(CLOTH, {
+				itemsource(146701),	-- Attendant Scholar's Waistcord
+				itemsource(146702),	-- Attendant Scholar's Waistcord
+				itemsource(146703),	-- Attendant Scholar's Waistcord
+				itemsource(146721),	-- Cincture of Enveloping Death
+				itemsource(146722),	-- Cincture of Enveloping Death
+				itemsource(146723),	-- Cincture of Enveloping Death
+			}),
+			filter(LEATHER, {
+				itemsource(146713),	-- Gloves of Advancing Death
+				itemsource(146714),	-- Gloves of Advancing Death
+				itemsource(146715),	-- Gloves of Advancing Death
+				itemsource(146709),	-- Subtle Mortality Manipulators
+				itemsource(146710),	-- Subtle Mortality Manipulators
+				itemsource(146711),	-- Subtle Mortality Manipulators
+			}),
+			filter(MAIL, {
+				itemsource(146725),	-- Chain of Encircling Death
+				itemsource(146726),	-- Chain of Encircling Death
+				itemsource(146727),	-- Chain of Encircling Death
+				itemsource(146697),	-- Korthite Crystal Waistguard
+				itemsource(146698),	-- Korthite Crystal Waistguard
+				itemsource(146699),	-- Korthite Crystal Waistguard
+			}),
+			filter(PLATE, {
+				itemsource(146717),	-- Gauntlets of Death's Guardian
+				itemsource(146718),	-- Gauntlets of Death's Guardian
+				itemsource(146719),	-- Gauntlets of Death's Guardian
+				itemsource(146705),	-- Prototype Guardian Grips
+				itemsource(146706),	-- Prototype Guardian Grips
+				itemsource(146707),	-- Prototype Guardian Grips
+			}),
+		})),
 		-- TODO:
 		--- 9.0.1 ---
 		i(178768),	-- Binds of the Unwitting Servant
