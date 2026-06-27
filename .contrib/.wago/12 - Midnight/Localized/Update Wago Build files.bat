@@ -1,7 +1,7 @@
 @echo off
 
 @REM Download Midnight Classic database
-SET BUILD=12.0.7.68256
+SET BUILD=12.0.7.68275
 call :downloadlocalized HolidayNames
 exit /b
 
@@ -20,6 +20,7 @@ call :downloadlocale %1 zhTW
 exit /b
 
 :downloadbaselocale
+echo Downloading %1...
 if not exist "%1.%BUILD%.csv" (
 	if "%1" == "AchievementCategory" (
 		curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/Achievement_Category/csv?build=%BUILD%"
@@ -30,6 +31,7 @@ if not exist "%1.%BUILD%.csv" (
 exit /b
 
 :downloadlocale
+echo Downloading %1 for locale %2...
 if not exist "%1.%2.%BUILD%.csv" (
 	if "%1" == "AchievementCategory" (
 		curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/Achievement_Category/csv?build=%BUILD%&locale=%2"
@@ -40,6 +42,7 @@ if not exist "%1.%2.%BUILD%.csv" (
 exit /b
 
 :downloadrenamed
+echo Downloading %2 as %1...
 if not exist "%1.%BUILD%.csv" (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"

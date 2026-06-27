@@ -1,5 +1,5 @@
 @echo off
-SET BUILD=12.0.7.68256
+SET BUILD=12.0.7.68275
 
 @REM Download new file versions
 call :download Achievement
@@ -40,6 +40,7 @@ call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\SpellEffect.%BUILD%.csv" "..\Spel
 exit /b
 
 :download
+echo Downloading %1...
 if not exist "%1.%BUILD%.csv" (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
@@ -49,6 +50,7 @@ if not exist "%1.%BUILD%.csv" (
 exit /b
 
 :downloadrenamed
+echo Downloading %2 as %1...
 if not exist "%1.%BUILD%.csv" (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
