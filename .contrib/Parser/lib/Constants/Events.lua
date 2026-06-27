@@ -27,6 +27,7 @@ EVENTS = {
 
 	-- Micro-Holidays
 	CALL_OF_THE_SCARAB = 248,
+	DARKSPEAR_DASH = 1793,
 	FREE_T_SHIRT_DAY = 393,
 	MARCH_OF_THE_TADPOLES = 253,
 	-- SECRETS_OF_AZEROTH = 425,	-- No longer needed as the event is always active now.

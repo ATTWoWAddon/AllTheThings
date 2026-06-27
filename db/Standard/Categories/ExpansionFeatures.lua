@@ -33441,7 +33441,7 @@ ach(41181,{awp=110007,minReputation={2511,30},g={
 crit(64607,{achID=19466,awp=100206,id=3})}})}}),
 q(70893,{coords={
 [2024]={{13.5,48.5}}},isWeekly=1,lvl=60,minReputation={2511,3},qgs={196620},g={
-i(200095,{b=1,f=55,lvl=60,minReputation={2511,3},sym={{"select","mapID",1978,2022,2023,2024,2025},{"pop"},{"where","headerID",-64},{"pop"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}},g={
+i(200095,{b=1,f=55,lvl=60,minReputation={2511,3},sym={{"select","mapID",1978,2022,2023,2024,2025},{"pop"},{"where","headerID",-64},{"pop"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}},g={
 i(200652,{minReputation={2511,3}}),
 i(215362,{awp=100206,b=1,f=55,lvl=70,minReputation={2511,3}}),
 r(381418,{b=1,itemID=198131,minReputation={2511,3},requireSkill=185,skillID=2824}),
@@ -34698,7 +34698,7 @@ crit(64578,{achID=19483,awp=100206,id=2})}})}}),
 h(-29,{minReputation={2510,5},g={
 toy(200116,{b=1,minReputation={2510,5}}),
 i(202142,{b=1,f=55,lvl=60,minReputation={2510,5}}),
-i(200072,{b=1,f=55,lvl=60,minReputation={2510,5},sym={{"select","mapID",1978,2022,2023,2024,2025},{"pop"},{"where","headerID",-64},{"pop"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}}})}}),
+i(200072,{b=1,f=55,lvl=60,minReputation={2510,5},sym={{"select","mapID",1978,2022,2023,2024,2025},{"pop"},{"where","headerID",-64},{"pop"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}}})}}),
 h(-56,{minReputation={2510,5},g={
 o(381357,{coords={
 [2022]={{27.8,68.4}}},minReputation={2510,5},g={
@@ -41409,6 +41409,7 @@ crit(115110,{achID=62887,id=10})}}),
 q(96660,{coords={
 [2600]={{34.8,31.6}}},isWorldQuest=1})}),
 h(-63,{
+i(267051),
 s(309647,276298,{f=20}),
 s(309640,276288,{f=25}),
 i(276368),
@@ -41417,6 +41418,7 @@ i(275520,{coords={
 [2600]={{74.2,73.5}}},crs={265537}}),
 s(309649,276300,{f=23})}),
 h(-64,{
+cu(3405),
 i(278116,{f=55,spellID=1303631}),
 h(-88,{
 flt(3,{
@@ -41792,6 +41794,10 @@ i(276092,{spellID=1298540}),
 i(276095,{spellID=1298539}),
 i(276096,{spellID=1298541}),
 i(276098,{spellID=1298543})}),
+h(-55,{
+ah(1300397,{coords={
+[2599]={{61.4,78.8},{70.5,84.3}}},description="Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. Return to the hilt again to claim your rwward.",type="s",g={
+s(309642,276290,{f=25})}})}),
 h(-56,{
 o(655270,{description="Spawns randomly throughout the zone."})}),
 h(-62,{
@@ -41855,7 +41861,12 @@ q(95395,{coords={
 [2599]={{32.3,50.1}}},isWorldQuest=1,g={
 crit(113991,{achID=62880,id=11}),
 crit(115121,{achID=62887,id=21})}})}),
+h(-63,{
+i(267051),
+s(309654,276330,{f=29}),
+s(309648,276299,{f=23})}),
 h(-64,{
+cu(3405),
 i(278116,{f=55,spellID=1303631}),
 h(-88,{
 flt(3,{
@@ -42654,10 +42665,10 @@ i(274261)}}),
 q(96229,{coords={
 [2395]={{62.6,63.1}}},qgs={264067},sourceQuests={96228},g={
 i(274036)}}),
-q(96232,{coords={
-[2395]={{62.5,62.6}}},lc={1,"questID",96238},qgs={264787,269814},sourceQuests={96229,96231}}),
-q(96238,{coords={
-[2424]={{59,59.3}}},lc={1,"questID",96232},qgs={264944},sourceQuests={96229,96231}}),
+q(96232,{altQuests={96238},coords={
+[2395]={{62.5,62.6}}},qgs={264787,269814},sourceQuests={96229,96231}}),
+q(96238,{altQuests={96232},coords={
+[2424]={{59,59.3}}},qgs={264944},sourceQuests={96229,96231}}),
 q(96233,{coords={
 [2649]={{63.4,16.4}}},qgs={264066},sourceQuests={96226,96227}})}}),
 ah(63325,{awp=120007,type="a",g={

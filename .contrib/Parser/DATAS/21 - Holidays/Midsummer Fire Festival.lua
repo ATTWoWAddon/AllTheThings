@@ -688,9 +688,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = {
 					ADDED_5_0_4,
 					-- #if ANYCLASSIC
-					REMOVED_5_5_4
+					REMOVED_5_5_4,
 					-- #else
-					REMOVED_6_0_2
+					REMOVED_6_0_2,
 					-- #endif
 				},
 			}, {

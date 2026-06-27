@@ -1588,7 +1588,6 @@ i(272287);	-- Nap Mat
 i(272339);	-- Umbral Champion's Illustrious Banner
 --- Unsorted ---
 i(267472);	-- Gnomatic Projector
-i(267323);	-- Troll Scroll of Rainbow Roll
 
 ------------------
 -- PATCH 12.0.7 --
@@ -1599,6 +1598,7 @@ i(264313);	-- Madcap Redcap
 i(264367);	-- Mycomancer's Hearthspore
 i(260170);	-- Oathstone Fragment
 i(259335);	-- Photo Finisher
+i(267323);	-- Troll Scroll of Rainbow Roll
 --- Unsorted ---
 i(276370);	-- Lightveil Hearth Beacon
 i(264368);	-- ??

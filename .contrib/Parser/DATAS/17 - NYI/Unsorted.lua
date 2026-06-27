@@ -2387,7 +2387,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(TOYS, {
 				i(267472),	-- Gnomatic Projector (TOY!)
-				i(267323),	-- Troll Scroll of Rainbow Roll (TOY!)
 			}),
 			i(274427),	-- Sha Loot Box
 			i(274578),	-- Offering of Unalloyed Abundance

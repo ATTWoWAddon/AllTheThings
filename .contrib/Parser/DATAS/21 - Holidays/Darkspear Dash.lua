@@ -1,0 +1,41 @@
+--------------------------------------------
+--     H O L I D A Y S  M O D U L E       --
+--------------------------------------------
+
+local DARKSPEAR_DASH = createHeader({
+	readable = "Darkspear Dash",
+	constant = "DARKSPEAR_DASH",
+	icon = nil--[[~_.asset("Holiday_DarkspearDash")]],
+	eventID = EVENTS.DARKSPEAR_DASH,
+	text = {
+		en = "Darkspear Dash",
+		-- TODO: de = "",
+		-- TODO es = "",
+		-- TODO mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO ru = "",
+		-- TODO cn = "",
+		-- TODO tw = "",
+	},
+});
+
+root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
+	["timeline"] = { ADDED_12_0_7 },
+	["groups"] = {
+		n(QUESTS, {
+			q(94954, {	-- Darkspear Dash
+				["provider"] = { "n", 259191 },	-- Kalaya
+				-- ["isYearly"] = true,	-- expected but obviously not confirmed
+				["coords"] = {
+					{ 46.7, 47.4, ECHO_ISLES },
+				},
+				["groups"] = {
+					i(267323),	-- Troll Scroll of Rainbow Roll
+				},
+			}),
+		}),
+	},
+})))

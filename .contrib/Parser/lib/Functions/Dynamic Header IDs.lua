@@ -150,6 +150,7 @@ HeaderAssignments = {
 	["Daily Event Roll"] = -424,
 	["Darkmoon Dance"] = -561,
 	["Darkmoon Faire"] = -37,
+	["Darkspear Dash"] = -755,
 	["Dastardly Duos"] = -565,
 	["Day of the Dead"] = -566,
 	["Deadly Gladiator"] = -251,
@@ -734,4 +735,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -755;
+NextHeaderID = -756;
