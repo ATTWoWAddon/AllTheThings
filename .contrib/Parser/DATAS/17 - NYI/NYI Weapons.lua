@@ -1921,7 +1921,7 @@ root(ROOTS.NeverImplemented, {
 			i(218236),	-- 11.0 Leveling Quest Template - Polearms - Str
 			i(218237),	-- 11.0 Leveling Quest Template - Staff - Int
 			i(218238),	-- 11.0 Leveling Quest Template - Warglaive - Agi
-			i(224467),	-- Forgotten Axe [2h axe]
+			i(224467, {["sourceID"] = 220382}),	-- Forgotten Axe
 			i(225873),	-- Forged Gladiator's Sword
 			i(225349, {["sourceID"] = 220997}),	-- Kaheti Confiscated Borers
 

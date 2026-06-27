@@ -129,7 +129,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(221575),	-- Adaptive Delver's Shawl
 					i(221663),	-- Adaptive Delver's Shawl
-					i(222813),	-- Adaptive Delver's Shawl
+					i(222813, {["sourceID"] = 219604}),	-- Adaptive Delver's Shawl
 					i(221609),	-- Alchemy Bag
 					i(221709),	-- Alchemy Bag
 					i(222375),	-- Alchemy Bag

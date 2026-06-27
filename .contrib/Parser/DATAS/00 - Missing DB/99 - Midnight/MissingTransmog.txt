@@ -35367,11 +35367,6 @@ s(192438)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 s(192439)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 10.2.6.53840
 s(197334)/i(216027),	-- Draconic Gladiator's Silk Blouse
-11.0.0.54311
-s(219604)/i(222813),	-- Adaptive Delver's Shawl
-s(219648)/i(222493),	-- Artisan Leatherworker's Toolset
-11.0.0.54361
-s(220382)/i(224467),	-- Forgotten Axe
 12.0.0.63534
 s(287077)/i(237828),	-- Spellbreaker's March
 s(287078)/i(237829),	-- Spellbreaker's Shelter

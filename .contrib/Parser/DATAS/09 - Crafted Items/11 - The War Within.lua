@@ -458,7 +458,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222494, {["requireSkill"] = BLACKSMITHING}),	-- Artisan Blacksmith's Hammer
 			i(222495, {["requireSkill"] = BLACKSMITHING}),	-- Artisan Blacksmith's Toolbox
 			i(222492, {["requireSkill"] = LEATHERWORKING}),	-- Artisan Leatherworker's Knife
-			i(222493, {["requireSkill"] = LEATHERWORKING, ["collectible"] = false, }),	-- Artisan Leatherworker's Toolset
+			i(222493, {	-- Artisan Leatherworker's Toolset
+				["requireSkill"] = LEATHERWORKING,
+				["sourceID"] = 219648,
+				["collectible"] = false,
+			}),
 			i(222491, {["requireSkill"] = TAILORING}),	-- Artisan Needle Set
 			i(222489, {["requireSkill"] = MINING}),	-- Artisan Pickaxe
 			i(222488, {["requireSkill"] = HERBALISM}),	-- Artisan Sickle
