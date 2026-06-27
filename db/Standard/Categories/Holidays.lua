@@ -2535,9 +2535,21 @@ i(62021,{awp=40003,cost={{"i",61995,1},{"i",61994,1},{"i",61993,1},{"i",61992,1}
 i(19257,{cost={{"i",19265,1},{"i",19264,1},{"i",19263,1},{"i",19262,1},{"i",19261,1},{"i",19260,1},{"i",19259,1},{"i",19258,1}},e=1})}})}}),
 h(-755,{awp=120007,e=1793,g={
 h(-45,{e=1793,g={
+q(95009,{coords={
+[2339]={{46,55}},
+[2393]={{51.1,76.4}}},e=1793,isBreadcrumb=1,nextQuests={94954},qgs={220307},r=1}),
 q(94954,{coords={
-[463]={{46.7,47.4}}},e=1793,qgs={259191},g={
-toy(267323,{e=1793})}})}})}}),
+[463]={{46.7,47.4}}},e=1793,qgs={259191},sourceQuests={95009},g={
+title(749,{collectible=false,e=1793}),
+toy(267323,{description="The Quest for this Toy is Horde Only!",e=1793})}})}}),
+h(-58,{e=1793,g={
+n(259188,{coords={
+[463]={{47.5,46.6}}},e=1793,sym={{"select","itemID",210469,140309}},g={
+s(304259,267280,{e=1793,f=9}),
+i(267352,{e=1793,f=55,spellID=203534}),
+i(267353,{e=1793,f=55,spellID=393985}),
+i(268694,{e=1793,f=55,spellID=1283386}),
+s(222939,226127,{b=1,e=1793,f=10})}})}})}}),
 h(-565,{awp=110105,e=451,maps={2447},rwp=110107,u=2,g={
 h(-12,{e=451,u=2,g={
 ach(41995,{description="Die 30 times within one match solo or collectively as a group THEN complete the fight and loot the prize chest. The arena will will with 15 gravestones to the left and right of the entrance to count your progress.",e=451,providers={{"s",1231766}},u=2}),

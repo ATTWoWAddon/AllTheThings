@@ -45,12 +45,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
 				["coords"] = {
 					{ 46.7, 47.4, ECHO_ISLES },
 				},
-				["races"] = HORDE_ONLY,	-- Currently horde only
+			--	["races"] = HORDE_ONLY,	-- Currently horde only
 				["groups"] = {
 					title(749, {	-- Darkspear Dasher <Name>
 						["collectible"] = false,	-- Only for 1 day
 					}),
-					i(267323),	-- Troll Scroll of Rainbow Roll (TOY!)
+					i(267323, {	-- Troll Scroll of Rainbow Roll (TOY!)
+						-- Temp description because the toy is only available for 2 days for Horde only. Needs to be visible on both Factions
+						-- #if before 12.1
+						["description"] = "The Quest for this Toy is Horde Only!",
+						-- #endif
+					}),
 				},
 			}),
 		}),
