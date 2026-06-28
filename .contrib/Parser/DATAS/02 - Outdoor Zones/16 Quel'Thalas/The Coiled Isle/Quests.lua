@@ -584,8 +584,57 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 96439,	-- Gone Dark
 						["qg"] = 265194,	-- Ulantu
 						["coord"] = { 80.7, 46.1, 2640 },	-- Blistering Terrace
+						["groups"] = {
+							o(660399, {	-- Experiment Notes
+								["coord"] = { 58.4, 23.3, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276910) },	-- Lokago's Experiment Notes (QI!)
+							}),
+							o(660427, {	-- Lokago's Ledger
+								["coord"] = { 28.6, 41.3, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276913) },	-- Lokago's Ledger (QI!)
+							}),
+							o(660407, {	-- Missive from Malacrass
+								["coord"] = { 41.5, 37.2, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276911) },	-- Missive from Malacrass (QI!)
+							}),
+							-- Optional Objective
+							i(277525),	-- Ulantu's Belongings
+							-- Following count as Ulantu's Belongings on Quest Turn-in
+							o(653374, {	-- A Message from Kul'amara
+								["coord"] = { 57.0, 37.2, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276883) },	-- A Message From Kul'amara
+							}),
+							o(660393, {	-- Fragment of Ulantu's Log 1
+								["coord"] = { 64.9, 38.2, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276905) },	-- Beginning Fragment of Ulantu's Log
+							}),
+							o(660420, {	-- Fragment of Ulantu's Log 2
+								["coord"] = { 36.8, 18.2, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276912) },	-- Middle Fragment of Ulantu's Log
+							}),
+							o(660431, {	-- Fragment of Ulantu's Log 3
+								["coord"] = { 21.0, 21.8, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276914) },	-- End Fragment of Ulantu's Log
+							}),
+						},
 					}),
-					-- Bugged, You can't accept 'Sideways' after tuning in the breadcrumb quest
+					q(96451, {	-- A Child of Ula'tek
+						["sourceQuest"] = 96450,	-- Sideways
+						["qg"] = 265229,	-- Ulantu
+						["coord"] = { 20.1, 36.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(279064) },	-- Naj'kula Flame Amulet (QI!)
+					}),
+					q(96458, {	-- Last Promise
+						["sourceQuest"] = 96451,	-- A Child of Ula'tek
+						["qg"] = 265278,	-- Ulantu
+						["coord"] = { 58.1, 68.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96457, {	-- Nothing Must Remain
+						["sourceQuest"] = 96458,	-- Last Promise
+						["provider"] = { "o", 660985 },	-- Ulantu's Scout Pack
+						["coord"] = { 56.9, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(279064) },	-- Naj'kula Flame Amulet (PQI!)
+					}),
 				}),
 			}),
 		}),
