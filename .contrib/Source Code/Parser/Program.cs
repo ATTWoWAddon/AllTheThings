@@ -289,6 +289,16 @@ namespace ATT
                 return ErrorCode;
             }
 
+            // Default is relative to where the executable is. (.contrib/Parser)
+            string addonRootFolder = Framework.Config["root-addon"] ?? "../..";
+            string dbRootFolder = Framework.Config["db-relative"] ?? Framework.GetBaseDBRootFolder();
+
+            // Setup the output folder (/db)
+            var outputFolder = Directory.CreateDirectory($"{addonRootFolder}/db/{dbRootFolder}");
+
+            // Initialize the Tracer to log to a file.
+            if (!Framework.Automated) Tracer.GenerateLogFile(outputFolder.FullName);
+
             // Load the Database
             // Since we have Object types defined in the Export static constructor, they need to exist before any data is merged in or we potentially get failed ObjectData checks
             Export.Initialize();
@@ -653,7 +663,7 @@ namespace ATT
                 }
 
                 // Export all of the data for the Framework.
-                Framework.Export();
+                Framework.Export(addonRootFolder, dbRootFolder, outputFolder);
 
                 Framework.CurrentParseStage = ParseStage.FinalLogging;
                 foreach (KeyValuePair<string, HashSet<decimal>> idSet in Framework.OutputSets)
