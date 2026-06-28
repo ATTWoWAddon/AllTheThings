@@ -33,7 +33,6 @@ root(ROOTS.Unsorted, {
 			i(254561),	-- Ogre Champion's Prized Skull
 			i(255649),	-- Amani Water Well
 			i(255702),	-- [PH] Snake Corpse
-			i(257977),	-- Feathered Trinket
 			i(258027),	-- Vaunted Preyhunter's Shoulder-Spikes
 			i(258029),	-- Vaunted Preyhunter's Plumed Helm
 			i(258031),	-- Vaunted Preyhunter's Knapsack

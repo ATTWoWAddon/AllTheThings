@@ -3272,6 +3272,7 @@ MobileDB.GameObject = {
 	[605174] = true,	-- Haunted Weapon Rack
 	[605196] = true,	-- Mature Blood Petal (q:91560)
 	[609858] = true,	-- Budget Friendly (q:93453)
+	[611269] = true,	-- Feathered Trinket (q:93339)
 	[612079] = true,	-- Foul Carcass (q:93397)
 	[612081] = true,	-- Foul Carcass (q:93397)
 	[612102] = true,	-- Transplanted Tranquility Bloom

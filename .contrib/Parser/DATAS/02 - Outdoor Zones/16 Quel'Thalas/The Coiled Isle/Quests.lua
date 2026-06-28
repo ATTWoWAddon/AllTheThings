@@ -631,8 +631,66 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 				}),
-				--header(HEADERS.AchCriteria, 63641.08, {	-- The Troubles of Mlurkrr Mire
-				--}),
+				header(HEADERS.AchCriteria, 63641.08, {	-- The Troubles of Mlurkrr Mire
+					q(93449, {	-- Trouble in the Swamp
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 257091,	-- Ra'kamu
+						["coord"] = { 57.5, 47.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93229, {	-- Fried Eggs
+						["sourceQuest"] = 93449,	-- Trouble in the Swamp
+						["qg"] = 254372,	-- Zawadi
+						["coord"] = { 63.0, 44.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93199, {	-- Slithering in the Mire
+						["sourceQuest"] = 93449,	-- Trouble in the Swamp
+						["qg"] = 254372,	-- Zawadi
+						["coord"] = { 63.0, 44.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93576, {	-- The Search for Wa'kani
+						["sourceQuests"] = {
+							93229,	-- Fried Eggs
+							93199,	-- Slithering in the Mire
+						},
+						["qg"] = 254376,	-- Zawadi
+						["coord"] = { 66.0, 39.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(94447, {	-- Ophidia the Broodmother
+						["sourceQuest"] = 93576,	-- The Search for Wa'kani
+						["qg"] = 255978,	-- Wa'kani
+						["coord"] = { 64.7, 37.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93239, {	-- Scouts in the Swamp
+						["sourceQuest"] = 94447,	-- Ophidia the Broodmother
+						["qg"] = 254376,	-- Zawadi
+						["coord"] = { 66.0, 39.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93233, {	-- Savagery Among the Ruins
+						["sourceQuest"] = 94447,	-- Ophidia the Broodmother
+						["qg"] = 254376,	-- Zawadi
+						["coord"] = { 66.0, 39.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93339, {	-- Trinket Trading
+						["sourceQuest"] = 94447,	-- Ophidia the Broodmother
+						["qg"] = 255226,	-- Wa'kani
+						["coord"] = { 66.0, 39.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							o(611269, {	-- Feathered Trinket
+								i(257977),	-- Feathered Trinket (QI!)
+							}),
+						},
+					}),
+					q(93340, {	-- The Shadow Shard
+						["sourceQuests"] = {
+							93239,	-- Scouts in the Swamp
+							93233,	-- Savagery Among the Ruins
+							93339,	-- Trinket Trading
+						},
+						["qg"] = 255553,	-- Wa'kani
+						["coord"] = { 68.9, 37.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(280376) },	-- Shadow Shard Sliver
+					}),
+				}),
 				--header(HEADERS.AchCriteria, 63641.09, {	-- Somethin' Bad Inside
 				--}),
 				--header(HEADERS.AchCriteria, 63641.10, {	-- Living Legend
