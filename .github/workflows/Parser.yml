@@ -33,7 +33,7 @@ jobs:
           run: |
             cd .contrib/Parser
             "Parser.exe" auto baseconfig=.config/retail/retail.config
-            shell: cmd
+          shell: cmd
 
         - name: Database Parser for Classic Era
           id: Parse-ClassicEra
@@ -42,7 +42,7 @@ jobs:
           run: |
             cd .contrib/Parser
             "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/01 - Classic Era.config"
-            shell: cmd
+          shell: cmd
 
         - name: Database Parser for Season of Discovery
           id: Parse-ClassicSoD
@@ -51,7 +51,7 @@ jobs:
           run: |
             cd .contrib/Parser
             "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/01 - Classic SOD.config"
-            shell: cmd
+          shell: cmd
 
         - name: Database Parser for The Burning Crusade
           id: Parse-TBC
@@ -60,7 +60,7 @@ jobs:
           run: |
             cd .contrib/Parser
             "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/02 - TBC.config"
-            shell: cmd
+          shell: cmd
 
         - name: Database Parser for Wrath of the Lich King
           id: Parse-WOTLK
@@ -69,7 +69,7 @@ jobs:
           run: |
             cd .contrib/Parser
             "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/03 - Wrath.config"
-            shell: cmd
+          shell: cmd
 
         - name: Database Parser for Cataclysm
           id: Parse-CATA
@@ -78,7 +78,7 @@ jobs:
           run: |
             cd .contrib/Parser
             "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/04 - Cataclysm.config"
-            shell: cmd
+          shell: cmd
 
         - name: Database Parser for Mists of Pandaria
           id: Parse-MOP
@@ -87,7 +87,7 @@ jobs:
           run: |
             cd .contrib/Parser
             "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/05 - Mists of Pandaria.config"
-            shell: cmd
+          shell: cmd
 
       - name: Full Success Check
         shell: pwsh
