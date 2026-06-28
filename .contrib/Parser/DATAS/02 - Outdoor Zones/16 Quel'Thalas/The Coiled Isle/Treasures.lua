@@ -50,7 +50,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 95594,
 					["groups"] = { i(278031) },	-- Cracked Amani Skull
 				}),
-				o(641984),	-- Crumbling Urn
+				o(641984, {	-- Crumbling Urn (Broken Amani Urn)
+					["coord"] = { 73.5, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 95558,
+				}),
 				o(642322, {	-- Damaged Loa Trinket
 					["coord"] = { 46.9, 29.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95596,

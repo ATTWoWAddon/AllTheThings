@@ -8,8 +8,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["groups"] = bubbleDownFiltered({
 				["isWorldQuest"] = true,
 			},FILTERFUNC_questID,{
+				q(94572, {	-- Shell the Future
+					["coord"] = { 74.5, 59.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(96066, {	-- Slithering Surveyor
 					["coord"] = { 56.9, 49.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
+				q(95429, {	-- Swift of Foot
+					["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95451, {	-- Who Ordered the Bag of Snakes?
 					["coord"] = { 58.1, 47.7, MAP.MIDNIGHT.THE_COILED_ISLE },

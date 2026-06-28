@@ -1069,7 +1069,6 @@ root(ROOTS.Unsorted, {
 			i(276034),	-- Entangling Brood Ring
 			i(276035),	-- Soulcoiler's Signet
 			i(276036),	-- Ever-Constricting Band
-			i(276037),	-- Counter-Curse Circlet
 			i(276042),	-- Templetusk Shield
 			i(276043),	-- Vilefang Censer
 			i(276044),	-- Loa-Infused Battlestaff
@@ -1086,7 +1085,6 @@ root(ROOTS.Unsorted, {
 			i(276055),	-- Soulweaver's Curseblade
 			i(276057),	-- Cryptbound Scepter
 			i(276058),	-- Ruinous Slitherslicer
-			i(276059),	-- Headhunter's Hacker
 			i(276060),	-- Hexxer's Blastin' Rod
 			i(276061),	-- Witch Doctor's Bloodletter
 			i(276062),	-- Hydra Neckchopper
