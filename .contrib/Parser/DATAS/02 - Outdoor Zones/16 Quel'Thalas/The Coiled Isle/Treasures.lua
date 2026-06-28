@@ -100,7 +100,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 96985,
 					["groups"] = { i(279051) },	-- Possessed Vase
 				}),
-				q(96985),	-- Posessed Vase
 				o(645422, {	-- Profane Ritual Spoils (Ritual Chest)
 					["coord"] = { 43.7, 67.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95941,
