@@ -766,8 +766,6 @@ root(ROOTS.Unsorted, {
 			i(274272),	-- Amani Equipment Chest
 			i(274281),	-- Black-Venom Grouper
 			i(274282),	-- Venom-Charged Dubloon
-			i(274296),	-- Virulent Ula'tek Venom
-			i(274297),	-- Dezi's Potion Bottle
 			i(274372),	-- Big ol' Bag of Polished Pet Charms
 			i(274374),	-- Trovehunter's Bounty
 			i(274416),	-- Warded Key
@@ -786,7 +784,6 @@ root(ROOTS.Unsorted, {
 			i(274457),	-- Emperor Crab
 			i(274458),	-- Kun-Lai Runt
 			i(274459),	-- Squirky
-			i(274462),	-- Sobering Elixir
 			i(274464),	-- Black Housing Dye
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
@@ -799,11 +796,8 @@ root(ROOTS.Unsorted, {
 			i(274475),	-- Yellow Housing Dye
 			i(274476),	-- Spark of Tides
 			i(274481),	-- Keepsake Corruption
-			i(274486),	-- Ruma's Satchel
-			i(274492),	-- Infectious Wildlife Sample
 			i(274494),	-- Chiral Marrowgrafter
 			i(274495),	-- Pulse Seeker's Oculus
-			i(274496),	-- Ophidian Bone Whistle
 			i(274497),	-- Spirit-Rending Poison
 			i(274498),	-- Spirit Ward
 			i(274499),	-- Toxiferous Transfusion
@@ -819,8 +813,6 @@ root(ROOTS.Unsorted, {
 			i(274535),	-- Shrine of Nalorakk, Loa of War
 			i(274537),	-- Shrine of Jan'alai, Loa of Fire
 			i(274539),	-- Shrine of Halazzi, Loa of the Hunt
-			i(274574),	-- A'pone's Necklace
-			i(274575),	-- Pieces of Uha'ne's Necklace
 			i(274579),	-- Undamaged Trap Needle
 			i(274587),	-- Spotted Killifish
 			i(274588),	-- Toxic Tlhapi
@@ -832,9 +824,6 @@ root(ROOTS.Unsorted, {
 			i(274594),	-- Polluted Puffer
 			i(274595),	-- Pristine Polygon
 			i(274680),	-- Loa-Blessed Orb
-			i(274682),	-- Tetla'ketl's Conjuring Crest
-			i(274685),	-- Tsssaani's Scales of Summoning
-			i(274705),	-- Ruma's Infestation Eradicator
 			i(274707),	-- Crystallized Venomblight Manaflux
 			i(274708),	-- Nebulous Voidcache: Nymrissa Wavecaller
 			i(274713),	-- Cache of Amani Treasures
@@ -1082,7 +1071,6 @@ root(ROOTS.Unsorted, {
 			i(276117),	-- Clouded Blood-Pearl
 			i(276124),	-- Ancient Knucklebone
 			i(276126),	-- Serpent's Feather
-			i(276135),	-- Dezi's Emetic
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
 			i(276144),	-- Pearl of Jubilation
@@ -1714,7 +1702,6 @@ root(ROOTS.Unsorted, {
 			i(280178),	-- Poison Dart Frog
 			i(280189),	-- Cauldron Concoction
 			i(280215),	-- Tortollan Tarp Tent
-			i(280218),	-- Tortollan Scholar Satchel
 			i(280221),	-- Sealeather Sack
 			i(280223),	-- Collector's Tortollan Display Rack
 			i(280225),	-- Mason's Tortollan Display Rack

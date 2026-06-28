@@ -691,8 +691,92 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = { i(280376) },	-- Shadow Shard Sliver
 					}),
 				}),
-				--header(HEADERS.AchCriteria, 63641.09, {	-- Somethin' Bad Inside
-				--}),
+				header(HEADERS.AchCriteria, 63641.09, {	-- Somethin' Bad Inside
+					q(96089, {	-- Somethin's Not Right
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 263618,	-- Scout Oma'ema
+						["coord"] = { 57.0, 48.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96090, {	-- Venemetic
+						["sourceQuest"] = 96089,	-- Somethin's Not Right
+						["qg"] = 253837,	-- Apothecary Dezi
+						["coord"] = { 57.2, 48.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274297),	-- Dezi's Potion Bottle (PQI!)
+							i(274296),	-- Virulent Ula'tek Venom (QI!)
+						},
+					}),
+					q(96091, {	-- Get the Balance Right
+						["sourceQuest"] = 96090,	-- Venemetic
+						["qg"] = 253837,	-- Apothecary Dezi
+						["coord"] = { 57.2, 48.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(276135) },	-- Dezi's Emetic (QI!)
+					}),
+					q(96092, {	-- That Fool, Ruma
+						["sourceQuest"] = 96091,	-- Get the Balance Right
+						["qg"] = 253837,	-- Apothecary Dezi
+						["coord"] = { 57.2, 48.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(274462) },	-- Sobering Elixir (PQI!)
+					}),
+					q(96093, {	-- It's a Satchel, Not a Bag
+						["sourceQuest"] = 96092,	-- That Fool, Ruma
+						["qg"] = 263663,	-- Scrollmaster Ruma
+						["coord"] = { 64.5, 77.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							o(649453, {	-- Ruma's Satchel
+								["coord"] = { 25.4, 34.8, 2635 },	-- Gnarldor Isle
+								["groups"] = { i(274486) },	-- Ruma's Satchel (QI!)
+							}),
+						},
+					}),
+					q(96094, {	-- To the Forum
+						["sourceQuest"] = 96093,	-- It's a Satchel, Not a Bag
+						["qg"] = 263663,	-- Scrollmaster Ruma
+						["coord"] = { 64.5, 77.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96095, {	-- Sampling the Local Wildlife
+						["sourceQuest"] = 96094,	-- To the Forum
+						["qg"] = 263674,	-- Scrollmaster Ruma
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(274492) },	-- Infectious Wildlife Sample (QI!)
+					}),
+					q(96096, {	-- Scout Team Seven
+						["sourceQuest"] = 96094,	-- To the Forum
+						["qg"] = 263675,	-- Scout Oma'ema
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274574),	-- A'pone's Necklace (QI!)
+							i(274575),	-- Pieces of Uha'ne's Necklace (QI!)
+						},
+					}),
+					q(96097, {	-- What the Scouts Saw
+						["sourceQuests"] = {
+							96095,	-- Sampling the Local Wildlife
+							96096,	-- Scout Team Seven
+						},
+						["qg"] = 263674,	-- Scrollmaster Ruma
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96098, {	-- The Final Reagents
+						["sourceQuest"] = 96097,	-- What the Scouts Saw
+						["qg"] = 263675,	-- Scout Oma'ema
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274682),	-- Tetla'ketl's Conjuring Crest (QI!)
+							i(274685),	-- Tsssaani's Scales of Summoning (QI!)
+						},
+					}),
+					q(96099, {	-- La'una's Fate
+						["sourceQuest"] = 96098,	-- The Final Reagents
+						["qg"] = 263674,	-- Scrollmaster Ruma
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274705),	-- Ruma's Infestation Eradicator (PQI!)
+							--
+							i(280218),	-- Tortollan Scholar Satchel (DECOR!)
+						},
+					}),
+				}),
 				--header(HEADERS.AchCriteria, 63641.10, {	-- Living Legend
 				--}),
 				header(HEADERS.AchCriteria, 63641.11, {	-- The Monster's Mother
