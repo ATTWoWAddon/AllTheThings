@@ -356,12 +356,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(275163),	-- Uarn's Reinforced Headplate
 							},
 						}),
-						n(263955, {	-- Lomelith
+						n(263955, {	-- Lomelith <The Bogshaker>
 							["description"] = "Roams around the area.",
 							["coord"] = { 67.7, 62.9, NAIGTAL },
 							["questID"] = 96208,
 						}),
-						n(263954, {	-- Swalewing Matriarch
+						n(263954, {	-- Swalewing Matriarch <The Manabog Apex>
 							["description"] = "Roams around the area.",
 							["coord"] = { 77.7, 38.0, NAIGTAL },
 							["questID"] = 96207,
@@ -372,7 +372,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(275161),	-- Swamp-Resistant Stompers
 							},
 						}),
-						n(264576, {	-- Slaipaan
+						n(264576, {	-- Slaipaan <The Fel-Gorged>
 							["description"] = "Roams around the area.",
 							["coord"] = { 56.1, 61.4, NAIGTAL },
 							["questID"] = 96320,
@@ -393,7 +393,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(275150),	-- Sporebat Leather Belt
 							},
 						}),
-						n(267422, {	-- Warbringer Thal'kuur
+						n(267422, {	-- Warbringer Thal'kuur <The Mutinied>
 							["description"] = "Roams around the area.",
 							["coord"] = { 56.1, 61.4, NAIGTAL },
 							["questID"] = 97014,
@@ -404,7 +404,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(275157),	-- Swampwalker's Spaulders
 							},
 						}),
-						n(264574, {	-- Warp Agent Xi'grivr
+						n(264574, {	-- Warp Agent Xi'grivr <Ky'veza's Second>
 							["coord"] = { 70.3, 76.4, NAIGTAL },
 							["questID"] = 96319,
 						}),

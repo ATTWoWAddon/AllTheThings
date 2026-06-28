@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["coords"] = {
 					{ 53.9, 39.0, DORNOGAL },
 					-- #if AFTER MID
-					{ 42.1, 58.8, SILVERMOON_CITY },
+					{ 42.1, 58.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 					-- #endif
 				},
 				["timeline"] = { ADDED_11_1_0_SEASONSTART },

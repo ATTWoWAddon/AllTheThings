@@ -110,8 +110,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						-- Repeatable
 						q(96713, {	-- Showdown on Val
 							["sourceQuest"] = 96051,	-- Through the Cold Rift
-							["qg"] = 263482,	-- Riftblade Maella
+							["qgs"] = {
+								263479, -- Riftblade Maella
+								263482,	-- Riftblade Maella
+							},
 							["coords"] = {
+								{ 47.7, 51.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 								{ 59.3, 19.5, VAL },
 								{ 59.5, 22.1, VAL },
 							},
@@ -193,11 +197,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["coord"] = { 23.2, 41.9, VAL },
 							["questID"] = 96374,
 						}),
+						n(264868, {	-- Opprimius <Reaper of Beasts>
+							["coord"] = { 33.0, 43.0, VAL },
+							["questID"] = 96373,
+						}),
 						n(265269, {	-- Shadowguard Destroyer
 							["coord"] = { 46.0, 64.6, VAL },
 							--["questID"] = 96465, -- I got 96373 - Darkal
 						}),
-						n(261965, {	-- Sleet-Rune <The Void Infused Watcher>
+						n(261965, {	-- Sleet-Rune <The Void-Infused Watcher>
 							["coord"] = { 55.2, 65.6, VAL },
 							["questID"] = 95939,
 						}),
@@ -205,7 +213,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["coord"] = { 35.5, 57.6, VAL },
 							["questID"] = 96375,
 						}),
-						n(264864, {	-- Xirah
+						n(264864, {	-- Xirah <Voracious Glutton>
 							["coord"] = { 28.6, 74.6, VAL },
 							["questID"] = 96370,
 						}),

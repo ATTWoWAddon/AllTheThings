@@ -154,12 +154,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					i(253175),	-- Hyjal Climbing Vine (DECOR!)
 				},
 			}),
-			q(90718, {	-- Request of the Arcantina
+			h(q(90718, {	-- Request of the Arcantina
 				["sourceQuests"] = { 92520 },	-- Wake of the Darkwell
 				["qg"] = 240265,	-- Chief Telemancer Oculeth
 				["coord"] = { 47.4, 69.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = { i(260165) },	-- Request for Reagents (PQI!)
-			}),
+			})),
 		}),
 		n(TREASURES, {	-- "optional" Objects to loot while on or after completing Quests to get the Cost items for 'Highly Decorated'
 			o(572030, {	-- Ebon Banner
