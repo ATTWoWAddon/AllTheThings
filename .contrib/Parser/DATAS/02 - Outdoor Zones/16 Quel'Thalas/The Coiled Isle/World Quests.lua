@@ -8,6 +8,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["groups"] = bubbleDownFiltered({
 				["isWorldQuest"] = true,
 			},FILTERFUNC_questID,{
+				q(94967, {	-- Ki'clak Snack Attack
+					--["sourceQuest"] = 93906,	-- Untethering the Two
+					["coord"] = { 69.6, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["groups"] = { i(267085) },	-- Swirling Ectoplasm
+				}),
 				q(94572, {	-- Shell the Future
 					["coord"] = { 74.5, 59.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),

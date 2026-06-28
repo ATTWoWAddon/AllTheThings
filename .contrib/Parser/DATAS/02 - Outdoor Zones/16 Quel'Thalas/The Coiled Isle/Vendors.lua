@@ -12,6 +12,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
 			}),
+			n(256686, {	-- Mab'jul <Spectral Drinks Vendor>
+				["coord"] = { 69.3, 52.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["groups"] = {
+					i(266435, {	-- Ki'clak Snack
+						["cost"] = { { "i", 267085, 10 } },	-- Swirling Ectoplasm
+					}),
+				},
+			}),
 		}),
 	}),
 }));

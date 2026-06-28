@@ -560,8 +560,54 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--}),
 				--header(HEADERS.AchCriteria, 63641.05, {	-- The Honored Mad'jai
 				--}),
-				--header(HEADERS.AchCriteria, 63641.06, {	-- Don't be Afrayed
-				--}),
+				header(HEADERS.AchCriteria, 63641.06, {	-- Don't be Afrayed
+					q(93841, {	-- Ghosts of the Arena
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 258068,	-- Olawu
+						["coord"] = { 58.6, 47.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["isBreadcrumb"] = true,
+					}),
+					q(93842, {	-- Bloom and Fade
+						["sourceQuest"] = 93841,	-- Ghosts of the Arena
+						["qg"] = 256674,	-- Ja'bonu (mobileNPC)
+						["coord"] = { 66.0, 53.3, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the area
+						["groups"] = {
+							o(619677, {	-- Sweetsaw Bloom
+								i(262886),	-- Sweetsaw Bloom (QI!)
+							}),
+						},
+					}),
+					q(93843, {	-- Ectoplasmic Extractions
+						["sourceQuest"] = 93841,	-- Ghosts of the Arena
+						["qg"] = 256674,	-- Ja'bonu (mobileNPC)
+						["coord"] = { 66.0, 53.3, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the area
+						["groups"] = { i(262904) },	-- Ectoplasm (QI!)
+					}),
+					q(93849, {	-- Ectoplasmic Emporium
+						["sourceQuests"] = {
+							93842,	-- Bloom and Fade
+							93843,	-- Ectoplasmic Extractions
+						},
+						["qg"] = 256874,	-- Ja'bonu
+						["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(265715),	-- Bouquet of Blooms (PQI!)
+							i(265931),	-- Collected Ectoplasm (PQI!)
+							i(263341),	-- Spectral Brew (QI!)
+						},
+					}),
+					q(93851, {	-- Communing with Ghosts
+						["sourceQuest"] = 93849,	-- Ectoplasmic Emporium
+						["qg"] = 256874,	-- Ja'bonu
+						["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93906, {	-- Untethering the Two
+						["sourceQuest"] = 93851,	-- Communing with Ghosts
+						["qg"] = 256874,	-- Ja'bonu
+						["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(280136) },	-- Gift of the Soulmates
+					}),
+				}),
 				header(HEADERS.AchCriteria, 63641.07, {	-- A Band of Brothers
 					q(94936, {	-- A Bond of Brothers
 						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog

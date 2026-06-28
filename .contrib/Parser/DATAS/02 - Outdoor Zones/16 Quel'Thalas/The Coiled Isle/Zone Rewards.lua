@@ -32,6 +32,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				filter(FINGER_F, {
 					i(276037),	-- Counter-Curse Circlet
+					i(276036),	-- Ever-Constricting Band
 				}),
 				filter(LEATHER, {
 					i(276006),	-- Shadowclaw Footpads

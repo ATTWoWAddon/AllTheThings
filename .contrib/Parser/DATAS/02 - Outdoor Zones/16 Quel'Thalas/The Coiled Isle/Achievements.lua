@@ -4,7 +4,10 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		n(ACHIEVEMENTS, {
-			ach(63633),	-- A Stack of Snacks
+			ach(63633, {	-- A Stack of Snacks
+				["coord"] = { 69.3, 52.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["cr"] = 256872,	-- Ki'clak <The Snip Shapper>
+			}),
 			ach(63631),	-- Captain Tokka's Crew
 			ach(63358, {	-- Coiled to Strike
 				i(263873),	-- Amani Forge (DECOR!)

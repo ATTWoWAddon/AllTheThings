@@ -46,12 +46,9 @@ root(ROOTS.Unsorted, {
 			i(260424),	-- Lumpy Gallstone
 			i(260425),	-- Morsel of Crab Meat
 			i(260426),	-- Bloodied Whetstone
-			i(262886),	-- Sweetsaw Bloom
-			i(262904),	-- Ectoplasm
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
 			i(263317),	-- Amani Wicker Crate
-			i(263341),	-- Spectral Brew
 			i(263520),	-- Ensemble: Sprawling Garb
 			i(263708),	-- Amani Anvil
 			i(263874),	-- Emerald-Encrusted Amani Ritual Skull
@@ -71,15 +68,11 @@ root(ROOTS.Unsorted, {
 			i(265620),	-- Rehydrated Zandalari Peppers
 			i(265622),	-- Knotted Swamp Stick
 			i(265626),	-- Shattered Teapot
-			i(265715),	-- Bouquet of Blooms
 			i(265790),	-- Cache of Mistcrests
-			i(265931),	-- Collected Ectoplasm
 			i(266169),	-- Soulcoiler Canopy
 			i(266327),	-- Pristine Spinal Barb
-			i(266435),	-- Ki'clak Snack
 			i(267045),	-- Quivering Egg
 			i(267080),	-- Amani Blueflame Chandelier
-			i(267085),	-- Swirling Ectoplasm
 			i(267207),	-- Amani Territorial Totem
 			i(267233),	-- Dehydrated Troll Eye Necklace
 			i(267378),	-- Venom Scholar's Focus
@@ -126,7 +119,6 @@ root(ROOTS.Unsorted, {
 			i(270211),	-- Furiostraza's Filter
 			i(270248),	-- Autumn Snapling
 			i(270249),	-- Cursed Spawn
-			i(270250),	-- Steady Croakfrog
 			i(270252),	-- Nightfur Kapara
 			i(270253),	-- Jaundiced Slitherer
 			i(270254),	-- Caustic Writhling
@@ -1068,7 +1060,6 @@ root(ROOTS.Unsorted, {
 			i(276033),	-- Loa Watcher's Pendant
 			i(276034),	-- Entangling Brood Ring
 			i(276035),	-- Soulcoiler's Signet
-			i(276036),	-- Ever-Constricting Band
 			i(276042),	-- Templetusk Shield
 			i(276043),	-- Vilefang Censer
 			i(276044),	-- Loa-Infused Battlestaff
@@ -1708,7 +1699,6 @@ root(ROOTS.Unsorted, {
 			i(280118),	-- Venomous Aspirant's Medallion
 			i(280123),	-- Sharp Axe Holster
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280136),	-- Gift of the Soulmates
 			i(280138),	-- Zesty
 			i(280142),	-- Small Wooden Floor Tile
 			i(280144),	-- Large Wooden Floor Tile

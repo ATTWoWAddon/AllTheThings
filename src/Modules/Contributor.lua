@@ -756,6 +756,7 @@ MobileDB.Creature = {
 	[260710] = true,	-- Jelvik
 	[263327] = true,	-- Ofi the Sly
 	[265166] = true,	-- Baraat the Longshot
+	[256674] = true,	-- Ja'bonu
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
 -- either by following the player or having player-based decisions that cause them to have any coordinates
@@ -3304,6 +3305,7 @@ MobileDB.GameObject = {
 	[618520] = true,	-- Thalassian Lumber
 	[618844] = true,	-- Mislaid Curiosity
 	[619092] = true,	-- Flyer Crate (q:92138)
+	[619677] = true,	-- Sweetsaw Bloom (q:93842)
 	[619736] = true,	-- Netherstorm Structural Cage
 	[620105] = true,	-- Rookery Cache Key
 	[621526] = true,	-- Cache of L'ura [Seat of Triumvirate]

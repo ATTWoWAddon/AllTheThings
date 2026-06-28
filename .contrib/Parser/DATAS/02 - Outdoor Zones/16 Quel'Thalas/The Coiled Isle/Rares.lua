@@ -4,6 +4,11 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		n(RARES, {
+			n(256631, {	-- Big Mon (Ancient Hulk)
+				["coord"] = { 69.8, 63.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+				--["questID"] = XXXXX,
+				--["groups"] = {  },
+			}),
 			n(261142, {	-- Destra
 				["coord"] = { 52.1, 32.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				--["questID"] = XXXXX,
