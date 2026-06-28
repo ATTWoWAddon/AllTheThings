@@ -886,6 +886,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["groups"] = {
 										i(184205),	-- Long-Lost Crown
 										i(184204),	-- Otherworld Hat
+										i(183760),	-- Venthyr Spectacles
 									},
 								}),
 							},

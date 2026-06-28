@@ -712,6 +712,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130905 },	-- Cala Cruzpot
 				["coord"] = { 64.0, 35.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(156860),	-- Aggression Formula (QI!)
+					i(160752),	-- Voodoo'ed Aggression Formula (QI!)
+				},
 			}),
 			q(48400, {	-- Grand Theft Telemancy (H)
 				["sourceQuests"] = { 48317 },	-- A Nose for Magic

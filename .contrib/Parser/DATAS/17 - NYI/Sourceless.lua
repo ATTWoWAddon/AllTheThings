@@ -579,7 +579,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 				q(64110),	--
 				q(64115),	--
-				q(64116),	--
+				q(64116),	-- Obtained in The Maw
 				q(64117),	--
 				q(64118),	--
 				q(64119),	-- Tormentors of Torghast related
@@ -691,7 +691,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 11.2.7
 			expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-				q(84833),	--
+				q(84833),	-- Obtained in The Waking Shores
 			})),
 		}),
 		expansion(EXPANSION.MID, {

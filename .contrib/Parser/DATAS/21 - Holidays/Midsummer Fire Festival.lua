@@ -1471,10 +1471,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #if AFTER 11.1.7
 				240483,	-- Flame Eater
 				-- #endif
+				-- #if AFTER 12.0.7
+				248988,	-- Flame Eater
+				-- #endif
 			},
-			-- #if AFTER 11.1.7
-			["coord"] = { 47.2, 53.6, DORNOGAL },
-			-- #endif
+			["coords"] = {
+				{ 43.6, 62.2, ELWYNN_FOREST },
+				-- #if AFTER 11.1.7
+				{ 47.2, 53.6, DORNOGAL },
+				-- #endif
+				-- #if AFTER 12.0.7
+				{ 48.6, 80.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				-- #endif
+			},
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -1484,10 +1493,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #if AFTER 11.1.7
 				240483,	-- Flame Eater
 				-- #endif
+				-- #if AFTER 12.0.7
+				248988,	-- Flame Eater
+				-- #endif
 			},
-			-- #if AFTER 11.1.7
-			["coord"] = { 47.2, 53.6, DORNOGAL },
-			-- #endif
+			["coords"] = {
+				{ 52.4, 47.2, DUROTAR },
+				-- #if AFTER 11.1.7
+				{ 47.2, 53.6, DORNOGAL },
+				-- #endif
+				-- #if AFTER 12.0.7
+				{ 48.6, 80.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				-- #endif
+			},
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 		}),
@@ -2837,11 +2855,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(11812, {	-- Honor the Flame — Desolace
 					["qg"] = 25894,	-- Desolace Flame Warden
 					["coords"] = {
-						-- #if AFTER CATA
 						{ 65.0, 17.0, DESOLACE },
-						-- #else
 						{ 66.1, 17.1, DESOLACE },
-						-- #endif
 					},
 				}),
 				honortheflame(13487, {	-- Honor the Flame — Dragonblight
@@ -3197,11 +3212,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(11847, {	-- Honor the Flame — Dustwallow Marsh
 					["qg"] = 25930,	-- Dustwallow Marsh Flame Keeper
 					["coords"] = {
-						-- #if AFTER CATA
 						{ 33.0, 30.0, DUSTWALLOW_MARSH },
-						-- #else
 						{ 33.4, 30.9, DUSTWALLOW_MARSH },
-						-- #endif
 					},
 				}),
 				honortheflame(11848, {	-- Honor the Flame — Eversong Woods
@@ -3229,11 +3241,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(11851, {	-- Honor the Flame — Hellfire Peninsula
 					["qg"] = 25934,	-- Hellfire Peninsula Flame Keeper
 					["coords"] = {
-						-- #if AFTER CATA
 						{ 55.0, 40.0, HELLFIRE_PENINSULA },
-						-- #else
 						{ 57.1, 42.0, HELLFIRE_PENINSULA },
-						-- #endif
 					},
 				}),
 				honortheflame(11853, {	-- Honor the Flame — Hillsbrad Foothills

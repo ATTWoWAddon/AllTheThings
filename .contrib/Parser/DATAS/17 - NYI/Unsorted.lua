@@ -3793,7 +3793,6 @@ root(ROOTS.Unsorted, {
 				i(156848),	-- Idol of Rezan
 				i(156856),	-- Traitorous Zandalari Head
 				i(156857),	-- Un-'vooded'-ed Aggression Formula
-				i(156860),	-- Aggression Formula
 				i(156870),	-- Samantha's Sword
 				i(156878),	-- Freshwater Crab Meat
 				i(156939),	-- Wand of Embers
@@ -3874,7 +3873,6 @@ root(ROOTS.Unsorted, {
 				i(160735),	-- Ashvane Garb
 				i(160738),	-- Bundle of Dynamite
 				i(160739),	-- Goblin Rocket Launcher
-				i(160752),	-- Voodoo'ed Aggression Formula
 				i(160754),	-- Void Essence
 				i(160895),	-- Irontide Key
 				i(160897),	-- Grizz's Lunchbox

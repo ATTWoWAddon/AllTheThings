@@ -349,15 +349,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		}),
-		q(91787, {	-- The Journey Ends
-			["sourceQuests"] = { 86903 },	-- The Arcantina
-			["provider"] = { "n", 237502 },	-- Arator
-			["coord"] = { 52.2, 60.6, ARCANTINA },
+		q(95008, {	-- Adventuring in Midnight
+			["qg"] = 259153,	-- Soridormi
+			["coord"] = { 55.7, 70.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 		}),
 		q(91854, {	-- Deepening Shadows
 			["description"] = "Available after completing one of the optional zones after Eversong's campaign.",
 			["provider"] = { "n", 248631 },	-- Commander Koruth Mountainfist
 			["coord"] = { 45.4, 70.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+		}),
+		q(91787, {	-- The Journey Ends
+			["sourceQuests"] = { 86903 },	-- The Arcantina
+			["provider"] = { "n", 237502 },	-- Arator
+			["coord"] = { 52.2, 60.6, ARCANTINA },
 		}),
 		header(HEADERS.Achievement, 60891, {	-- The Crimson Rogue
 			header(HEADERS.AchCriteria, 60891.01, {	-- The Regent's Request
@@ -921,7 +925,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(QUESTS, {
-			q(95008),	-- Adventuring in Midnight - Triggered after accepting 'Voidstorm' (89388) from the Scouting Map
 			-- During questing
 			q(89196, {repeatable=true}),	-- Zone Choice Active (spellID 1254861), after accepting questID 89193 (Arator)
 			q(89247),	-- [DNT] (spellID 1227720), after accepting questID 86837 (Meet at the Sunwell)
