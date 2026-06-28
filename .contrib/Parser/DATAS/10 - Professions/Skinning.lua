@@ -2,58 +2,33 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-		ach(18834, {	-- Broken Isles Skinning Techniques
-			crit(61485, {	-- Felhide
-				["sourceQuests"] = { 40159 },	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
-			}),
-			crit(61486, {	-- Fiendish Leather
-				["sourceQuests"] = { 48042 },	-- Order of Operations
-				["provider"] = { "i", 151868 },	-- Corrupted Tooth
-			}),
-			crit(61487, {	-- Legion Butchery
-				["provider"] = { "i", 139895 },	-- Skinning Technique: Legion Butchery
-			}),
-			crit(61488, {	-- Legion Gutting
-				["provider"] = { "i", 139896 },	-- Skinning Technique: Legion Gutting
-			}),
-			crit(61489, {	-- Stonehide Leather
-				["sourceQuests"] = { 40140 },	-- Ske'rit's Leather Handbook
-			}),
-			crit(61490, {	-- Stormscale
-				["sourceQuests"] = { 40155 },	-- Ske'rit's Scale-Skinning Suggestions
-			}),
-			crit(61491, {	-- Unbroken Claw
-				["provider"] = { "i", 139894 },	-- Skinning Technique: Unbroken Claw
-			}),
-			crit(61492, {	-- Unbroken Tooth
-				["provider"] = { "i", 139893 },	-- Skinning Technique: Unbroken Tooth
-			}),
-		}),
-	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-			ach(18837, {	-- Broken Isles Herbalism Techniques
-				crit(61501, {	-- Aethril
-					["sourceQuests"] = { 40017 },	-- A Slip of the Hand
+			ach(18834, {	-- Broken Isles Skinning Techniques
+				crit(61485, {	-- Felhide
+					["sourceQuests"] = { 40159 },	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
 				}),
-				crit(61507, {	-- Astral Glory
-					["sourceQuests"] = { 48029 },	-- The Heart of It
+				crit(61486, {	-- Fiendish Leather
+					["sourceQuests"] = { 48042 },	-- Order of Operations
+					["provider"] = { "i", 151868 },	-- Corrupted Tooth
 				}),
-				crit(61502, {	-- Dreamleaf
-					["sourceQuests"] = { 40023 },	-- The Last Straw
+				crit(61487, {	-- Legion Butchery
+					["provider"] = { "i", 139895 },	-- Skinning Technique: Legion Butchery
 				}),
-				crit(61506, {	-- Felwort
-					["sourceQuests"] = { 40042 },	-- The Emerald Nightmare: Felwort Mastery
+				crit(61488, {	-- Legion Gutting
+					["provider"] = { "i", 139896 },	-- Skinning Technique: Legion Gutting
 				}),
-				crit(61504, {	-- Fjarnskaggl
-					["sourceQuests"] = { 40033 },	-- Fjarnskaggl
+				crit(61489, {	-- Stonehide Leather
+					["sourceQuests"] = { 40140 },	-- Ske'rit's Leather Handbook
 				}),
-				crit(61503, {	-- Foxflower
-					["sourceQuests"] = { 40028 },	-- The Pied Picker
+				crit(61490, {	-- Stormscale
+					["sourceQuests"] = { 40155 },	-- Ske'rit's Scale-Skinning Suggestions
 				}),
-				crit(61505, {	-- Starlight Rose
-					["sourceQuests"] = { 40039 },	-- Tharillon's Fall
+				crit(61491, {	-- Unbroken Claw
+					["provider"] = { "i", 139894 },	-- Skinning Technique: Unbroken Claw
+				}),
+				crit(61492, {	-- Unbroken Tooth
+					["provider"] = { "i", 139893 },	-- Skinning Technique: Unbroken Tooth
 				}),
 			}),
 		})),
