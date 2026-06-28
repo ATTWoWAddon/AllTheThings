@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 40.6, 90.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			skyriding(ach(63394, {	-- Skyriding Glyphs: The Fangs
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["coord"] = { 37.4, 60.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			skyriding(ach(63420, {	-- Skyriding Glyphs: The Forum
 				["coord"] = { 26.6, 63.1, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 70.3, 48.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			skyriding(ach(63421, {	-- Skyriding Glyphs: The Wreck of Sethralis's Scales
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["coord"] = { 28.8, 75.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			skyriding(ach(63424, {	-- Skyriding Glyphs: Tokka's Landing
 				["coord"] = { 58.9, 48.9, MAP.MIDNIGHT.THE_COILED_ISLE },

@@ -4642,6 +4642,7 @@ i(246723, 4860);	-- Unfazed Diver
 -- PATCH 12.1.0 --
 ------------------
 i(270214, 5028);	-- Poisoned Parasite
+i(270251, 5033);	-- Sleek Snakebiter
 i(276248, 5093);	-- Snek'zali
 i(279387, 5130);	-- Ul'ava'took
 i(268644, 5011);	-- Zan
@@ -4670,7 +4671,6 @@ i(275702, 5076);	-- Preyhunter's Prismguard
 i(275704, 5078);	-- Preyhunter's Riftbreaker
 i(280305, 5125);	-- Soulcoil Remnant
 i(270250, 5034);	-- Steady Croakfrog
-i(270251, 5033);	-- Sleek Snakebiter
 i(279197, 5129);	-- Slitherfang
 i(275020, 5070);	-- Venom Elemental
 i(276234, 5092);	-- Vibrant Venomfang

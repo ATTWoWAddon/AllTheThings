@@ -7,18 +7,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			header(HEADERS.Achievement, 63359, {	-- Treasures of the Coiled Isle
 				header(HEADERS.Object, 619906, {	-- Abandoned Amani Privateer's Cache
 					-- Description is a WiP until objects are properly sourced
-					["description"] = "You may need to enable *DEBUG MODE* to see all the steps.\n\n1. Fish out a 'Grisly Morsel' from 'Grisly Cod Pool'.\n2. Feed the 'Hungry Dolphin' to gain it as your companion.\n3. Dive down and swim around the bay area until the Dolphin helps you find both pieces of the key. DO NOT RESURFACE!\n4. Combine both halves of the key.\n5. Loot the treasure.",
+					["description"] = "1. Fish out a 'Grisly Morsel' from 'Grisly Cod Pool'.\n2. Feed the 'Hungry Dolphin' to gain it as your companion.\n3. Dive down and swim around the bay area until the Dolphin helps you find both pieces of the key. DO NOT RESURFACE!\n4. Combine both halves of the key.\n5. Loot the treasure.",
 					["coord"] = { 72.5, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },	-- General area where everything related to the treasure happens
 					["cr"] = 258076,	-- Hungry Dolphin
 					["groups"] = {
-						i(265525, {	-- Grisly Morsel
-							["coord"] = { 73.4, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Grisly Cod Pool location
+						o(619768, {	-- Grisly Cod Pool
+							["coord"] = { 73.4, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["groups"] = { i(265525) },	-- Grisly Morsel
 						}),
-						i(265610, {	-- Privateer's Loop Half of Key
-							["coord"] = { 73.1, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Waterlogged Crate location
+						o(619921, {	-- Waterlogged Crate
+							["coord"] = { 73.1, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["groups"] = { i(265610) },	-- Privateer's Loop Half of Key
 						}),
-						i(265603, {	-- Privateer's Teeth Half of Key
-							["coord"] = { 72.4, 68.4, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Broken Urn location
+						o(619908, {	-- Broken Urn
+							["coord"] = { 72.4, 68.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["groups"] = { i(265603) },	-- Privateer's Teeth Half of Key
 						}),
 						i(265602, {	-- Amani Privateer's Key
 							["cost"] = {
@@ -30,7 +33,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["coord"] = { 71.9, 66.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["cost"] = { { "i", 265602, 1 } },	-- 1x Amani Privateer's Key
 							["questID"] = 94569,
-							["groups"] = { i(279054) },	-- Idol of Blue Water and Blue Sky (TOY!)
+							["groups"] = {
+								i(279054),	-- Idol of Blue Water and Blue Sky (TOY!)
+								i(279055),	-- Privateer's Dolphin Idol
+							},
 						}),
 					},
 				}),
@@ -58,11 +64,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(642307, {	-- Forgotten Mask
 					["coord"] = { 64.9, 78.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95591,
-					--	["groups"] = {  },
+					["groups"] = { i(278003) },	-- Forgotten Mask
 				}),
 				o(645549, {	-- Grave of Someone Forgotten
 					["coord"] = { 67.3, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-					["cr"] = 263244,	-- Forgotten Soldier
+					["providers"] = {
+						{ "n", 263244 },	-- Forgotten Soldier
+						{ "o", 645553 },	-- Nameless Grave
+					},
 					--	["questID"] = XXXXXX,
 					--	["groups"] = {  },
 				}),
@@ -85,6 +94,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 67.0, 28.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95836,
 					["groups"] = { i(278035) },	-- Ornate Healing Potion
+				}),
+				o(656678, {	-- Possessed Vase
+					["coord"] = { 31.4, 83.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 96985,
+					["groups"] = { i(279051) },	-- Possessed Vase
 				}),
 				q(96985),	-- Posessed Vase
 				o(645422, {	-- Profane Ritual Spoils (Ritual Chest)
@@ -159,23 +173,41 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 			header(HEADERS.Achievement, 63662, {	-- Student of Hissstory
-				q(98302),	-- Abandoned Tablet
-				o(653579),	-- Amani Exile's Words
-				q(98305),	-- Forum Rules
-				o(653515),	-- Head Mason's Tablet
-				-- Message in a Bottle
+				o(669308, {	-- Abandoned Tablet
+					["coord"] = { 50.7, 68.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 98302,
+				}),
+				o(653579, {	-- Amani Exile's Words
+					["coord"] = { 57.3, 80.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 96947,
+				}),
+				o(669317, {	-- Forum Rules
+					["coord"] = { 25.0, 67.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 98305,
+				}),
+				o(653515, {	-- Head Mason's Tablet
+					["coord"] = { 42.4, 65.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 96946,
+				}),
+				o(669312, {	-- Message in a Bottle
+					["coord"] = { 31.6, 83.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 98303,
+				}),
 				o(669316, {	-- Oily Black Stone
 					["coord"] = { 45.8, 47.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 98304,
 				}),
-				q(98308),	-- Profaned Plaque
+				o(669320, {	-- Profaned Plaque
+					["coord"] = { 32.6, 63.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 98308,
+				}),
 				o(669318, {	-- Survival Journals
 					["coord"] = { 34.1, 36.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 98306,
 				}),
 				o(654586, {	-- Worn Tablet
 					["coord"] = { 70.0, 66.0, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--["questID"] = XXXXX,
+					["questID"] = 96945,
 				}),
 				q(98307),	-- Zandalari Logbook
 				n(REWARDS, {

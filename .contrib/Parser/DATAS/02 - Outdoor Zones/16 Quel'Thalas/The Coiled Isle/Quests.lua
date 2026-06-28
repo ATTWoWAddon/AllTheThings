@@ -573,8 +573,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--}),
 				--header(HEADERS.AchCriteria, 63641.10, {	-- Living Legend
 				--}),
-				--header(HEADERS.AchCriteria, 63641.11, {	-- The Monster's Mother
-				--}),
+				header(HEADERS.AchCriteria, 63641.11, {	-- The Monster's Mother
+					q(96439, {	-- Gone Dark
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 265173,	-- Kul'amara the Fierce
+						["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["isBreadcrumb"] = true,
+					}),
+					q(96450, {	-- Sideways
+						["sourceQuest"] = 96439,	-- Gone Dark
+						["qg"] = 265194,	-- Ulantu
+						["coord"] = { 80.7, 46.1, 2640 },	-- Blistering Terrace
+					}),
+					-- Bugged, You can't accept 'Sideways' after tuning in the breadcrumb quest
+				}),
 			}),
 		}),
 	}),

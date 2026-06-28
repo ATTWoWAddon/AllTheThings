@@ -127,7 +127,6 @@ root(ROOTS.Unsorted, {
 			i(270248),	-- Autumn Snapling
 			i(270249),	-- Cursed Spawn
 			i(270250),	-- Steady Croakfrog
-			i(270251),	-- Sleek Snakebiter
 			i(270252),	-- Nightfur Kapara
 			i(270253),	-- Jaundiced Slitherer
 			i(270254),	-- Caustic Writhling
@@ -811,7 +810,6 @@ root(ROOTS.Unsorted, {
 			i(274481),	-- Keepsake Corruption
 			i(274486),	-- Ruma's Satchel
 			i(274492),	-- Infectious Wildlife Sample
-			i(274493),	-- Effigy of Ula'Tek's Faithful
 			i(274494),	-- Chiral Marrowgrafter
 			i(274495),	-- Pulse Seeker's Oculus
 			i(274496),	-- Ophidian Bone Whistle
@@ -1066,48 +1064,12 @@ root(ROOTS.Unsorted, {
 			i(275978),	-- Delver's Starter Kit
 			i(275986),	-- Delver's Cosmetic Surprise Bag
 			i(275988),	-- Corrosive Victory
-			i(276000),	-- Stonehide Vambraces
-			i(276001),	-- Flamebeak Armguards
-			i(276002),	-- Shadowclaw Wristguards
-			i(276003),	-- Skytalon Bracers
-			i(276004),	-- Stonehide Sabatons
-			i(276005),	-- Flamebeak Treads
-			i(276006),	-- Shadowclaw Footpads
-			i(276007),	-- Skytalon Sandals
-			i(276008),	-- Stonehide Gauntlets
-			i(276009),	-- Flamebeak Gloves
-			i(276010),	-- Shadowclaw Handguards
-			i(276011),	-- Skytalon Grips
-			i(276012),	-- Stonehide Chestguard
-			i(276013),	-- Flamebeak Hauberk
-			i(276014),	-- Shadowclaw Jerkin
-			i(276015),	-- Skytalon Robes
-			i(276016),	-- Stonehide Casque
-			i(276017),	-- Flamebeak Helmet
-			i(276018),	-- Shadowclaw Headdress
-			i(276019),	-- Skytalon Crown
-			i(276020),	-- Stonehide Pauldrons
-			i(276021),	-- Flamebeak Spaulders
-			i(276022),	-- Shadowclaw Shoulderpads
-			i(276023),	-- Skytalon Mantle
-			i(276024),	-- Stonehide Greaves
-			i(276025),	-- Flamebeak Breeches
-			i(276026),	-- Shadowclaw Legguards
-			i(276027),	-- Skytalon Leggings
-			i(276028),	-- Stonehide Girdle
-			i(276029),	-- Flamebeak Belt
-			i(276030),	-- Shadowclaw Sash
-			i(276031),	-- Skytalon Cord
 			i(276032),	-- Bad Juju Necklace
 			i(276033),	-- Loa Watcher's Pendant
 			i(276034),	-- Entangling Brood Ring
 			i(276035),	-- Soulcoiler's Signet
 			i(276036),	-- Ever-Constricting Band
 			i(276037),	-- Counter-Curse Circlet
-			i(276038),	-- Flamebeak Cloak
-			i(276039),	-- Skytalon Drape
-			i(276040),	-- Shadowclaw Shroud
-			i(276041),	-- Stonehide Cape
 			i(276042),	-- Templetusk Shield
 			i(276043),	-- Vilefang Censer
 			i(276044),	-- Loa-Infused Battlestaff
@@ -1322,7 +1284,6 @@ root(ROOTS.Unsorted, {
 			i(277999),	-- Ritual Dagger
 			i(278000),	-- Sealed Vial of Mysterious Green Liquid
 			i(278001),	-- Forgotten Amani Fishing Rod
-			i(278003),	-- Forgotten Mask
 			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
 			i(278048),	-- Corrosive Relic
@@ -1526,10 +1487,8 @@ root(ROOTS.Unsorted, {
 			i(279021),	-- Forgotten Memento
 			i(279022),	-- [ph] Ensemble: SpiceWitch Blue Attire
 			i(279049),	-- Forgotten Memento
-			i(279051),	-- Possessed Vase
 			i(279052),	-- Ancient Amani Mask
 			i(279053),	-- Ancient Amani Mask
-			i(279055),	-- Privateer's Dolphin Idol
 			i(279056),	-- [ph] SpiceWitch Chest - Green
 			i(279057),	-- [ph] SpiceWitch Feet - Green
 			i(279058),	-- [ph] SpiceWitch Waist - Green

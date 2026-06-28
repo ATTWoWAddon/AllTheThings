@@ -11,8 +11,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(264854, {	-- Farthik the Plunderer
 				["coord"] = { 53.8, 72.0, MAP.MIDNIGHT.THE_COILED_ISLE },
-				--["provider"] = { "o", XXXXXX },	-- Unguarded Chest
-				--["questID"] = XXXXX,
+				["provider"] = { "o", 653176 },	-- Unguarded Chest
+				["questID"] = 96491,
 				--["groups"] = {  },
 			}),
 			n(258916, {	-- Garsecg
@@ -25,9 +25,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--["questID"] = XXXXX,
 				--["groups"] = {  },
 			}),
+			n(268090, {	-- Kari'zah the Forgotten
+				["coord"] = { 24.9, 73.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+				--["questID"] = XXXXX,
+				--["groups"] = {  },
+			}),
 			n(265237, {	-- Lockjaw
 				["coord"] = { 31.7, 56.7, MAP.MIDNIGHT.THE_COILED_ISLE },
-				--["questID"] = XXXXX,
+				["questID"] = 96456,
 				--["groups"] = {  },
 			}),
 			n(258920, {	-- Nar'zira
@@ -40,7 +45,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--["questID"] = XXXXX,
 				--["groups"] = {  },
 			}),
-			n(261109, {	-- Sss'alik
+			n(261109, {	-- Sss'alik <The Rotten Claw>
 				["coord"] = { 58.1, 40.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 				--["questID"] = XXXXX,
 				--["groups"] = {  },
