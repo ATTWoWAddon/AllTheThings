@@ -226,6 +226,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	inst(1308, {	-- March on Quel'Danas
+		["timeline"] = { ADDED_12_0_1_SEASONSTART },
+		["groups"] = {
+			q(95538),	-- First kill of Midnight Falls Normal
+			q(95539),	-- First kill of Midnight Falls Heroic
+			q(95540),	-- First kill of Midnight Falls Mythic
+		},
+	}),
 	inst(1308, bubbleDown({	-- March on Quel'Danas
 		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["isWeekly"] = true,
@@ -242,6 +250,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		-- Mythic
 		q(94562, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
 		q(94566, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
-		q(95540, name(HEADERS.NPC, 214650)),	-- L'ura (Mythic) (First only??)
 	})),
 }));

@@ -578,7 +578,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire
 		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["groups"] = {
-			--q(95535),	-- Alleria
+			q(95535),	-- First kill of Crown of the Cosmos Normal
+			q(95536),	-- First kill of Crown of the Cosmos Heroic
+			q(95537),	-- First kill of Crown of the Cosmos Mythic
 		},
 	}),
 	inst(1307, bubbleDown({	-- The Voidspire

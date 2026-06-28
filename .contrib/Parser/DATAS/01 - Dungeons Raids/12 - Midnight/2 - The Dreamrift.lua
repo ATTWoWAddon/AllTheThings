@@ -167,8 +167,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1314, {	-- The Dreamrift
 		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["groups"] = {
-			q(95541),	-- CHIMAERUS - LFR
-			--q(95542),	-- Chimaerus, also LFR?
+			q(95541),	-- First kill of Chimaerus the Undreamt God Normal
+			q(95542),	-- First kill of Chimaerus the Undreamt God Heroic
+			q(95543),	-- First kill of Chimaerus the Undreamt God Mythic
 		},
 	}),
 }))
