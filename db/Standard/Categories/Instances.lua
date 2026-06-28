@@ -62185,8 +62185,8 @@ ach(42805,{u=2}),
 ach(42806,{u=2})}}),
 h(-45,{
 q(87327,{awp=110100,coords={
-[110]={{42.1,58.8}},
-[2339]={{53.9,39}}},description="Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",isYearly=1,lvl=80,qgs={197711,197915}})})}}),
+[2339]={{53.9,39}},
+[2393]={{42.1,58.8}}},description="Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",isYearly=1,lvl=80,qgs={197711,197915}})})}}),
 inst(1271,{awp=110002,coords={
 [2216]={{52.2,45.8}}},maps={2357,2358},savedInstanceID=2660,g={
 h(-45,{

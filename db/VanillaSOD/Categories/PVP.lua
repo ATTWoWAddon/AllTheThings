@@ -31,7 +31,7 @@ ach(700,{providers={{"i",18834},{"i",18845},{"i",18846},{"i",18849},{"i",18850},
 ach(714,{pvp=1,r=1,u=1608}),
 ach(907,{pvp=1,r=2,u=1608})}}),
 x(1,{description="In order to collect these, you need to have the original title associated with the gear.",pvp=1,g={
-h(-298,{awp=11101,pvp=1,rwp=20001,g={
+h(-298,{awp=11101,maps={1459,1460,1461},pvp=1,rwp=20001,g={
 pvprank(1,{pvp=1}),
 pvprank(2,{pvp=1}),
 pvprank(3,{pvp=1}),

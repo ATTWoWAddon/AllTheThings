@@ -30540,7 +30540,7 @@ q(60160,{coords={
 h(-321,{customCollect={"SL_COV_VEN"},description="Each day, a set of 3 Broken Mirrors is active in Revendreth. They are not on a predictable cycle, so the same set may be up two days in a row. Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",icon=3854020,g={
 h(-177,{customCollect={"SL_COV_VEN"},g={
 n(166133,{customCollect={"SL_COV_VEN"},g={
-i(181363,{b=1,cost={{"c",1820,20}},customCollect={"SL_COV_VEN"},f=55,sourceQuests={59740}})}}),
+i(181363,{b=1,cost={{"c",1820,10}},customCollect={"SL_COV_VEN"},f=55,sourceQuests={59740}})}}),
 h(-178,{customCollect={"SL_COV_VEN"},description="Wowhead: |cffffffffGroup 1|r",g={
 h(-447,{coords={
 [1525]={{29.5,37.3}}},cost={{"i",181363,1}},customCollect={"SL_COV_VEN"},isDaily=1,questID=61818,g={
@@ -41012,7 +41012,6 @@ crit(115055,{achID=62898,id=7,providers={{"n",267647}}}),
 crit(115056,{achID=62898,id=8,providers={{"n",267648}}})}}),
 ach(63264,{awp=120007,maps={2599,2600}}),
 ach(63348,{awp=120007,maps={2599,2600},g={
-crit(115263,{achID=63348,id=16,providers={{"n",264868}}}),
 crit(115272,{achID=63264,id=6})}}),
 ach(63323,{awp=120007,maps={2599,2600}}),
 ach(62909,{awp=120007,maps={2599,2600},g={
@@ -41685,7 +41684,6 @@ crit(115477,{achID=62873,id=3})}),
 ach(62917,{
 crit(115270,{achID=63264,id=4})}),
 ach(62881,{
-crit(114001,{achID=62881,id=7,providers={{"n",264868}}}),
 crit(115480,{achID=62873,id=5})}),
 ach(62880,{
 crit(113981,{achID=62880,id=1,questID=96400}),
@@ -41725,7 +41723,8 @@ crit(115419,{achID=63384,id=1})}}),
 hqt(97294,{coords={
 [2599]={{59.5,22}}},qgs={263482},sourceQuests={96473}}),
 q(96713,{coords={
-[2599]={{59.3,19.5},{59.5,22.1}}},isWeekly=1,qgs={263482},sourceQuests={96051},g={
+[2393]={{47.7,51.1}},
+[2599]={{59.3,19.5},{59.5,22.1}}},isWeekly=1,qgs={263479,263482},sourceQuests={96051},g={
 i(272125,{f=55}),
 i(275690,{f=55})}}),
 q(96714,{coords={
@@ -41769,6 +41768,10 @@ n(264869,{coords={
 [2599]={{23.2,41.9}}},questID=96374,repeatable=1,g={
 crit(114002,{achID=62881,id=8}),
 crit(115264,{achID=63348,id=9})}}),
+n(264868,{coords={
+[2599]={{33,43}}},questID=96373,repeatable=1,g={
+crit(114001,{achID=62881,id=7}),
+crit(115263,{achID=63348,id=16})}}),
 n(265269,{coords={
 [2599]={{46,64.6}}},repeatable=1,g={
 crit(114004,{achID=62881,id=10}),
@@ -42463,7 +42466,7 @@ s(296319,249759,{f=2}),
 s(296316,249756,{f=2}),
 s(296332,249864,{f=2}),
 s(296317,249757,{f=2})}}),
-p(4898,{cost={{"i",238365,250},{"c",3405,30}},itemID=252195,npcID=251820,sourceAchievements={62903},spellID=1254208}),
+p(4898,{cost={{"i",238365,50}},itemID=252195,npcID=251820,sourceAchievements={62903},spellID=1254208}),
 p(5073,{cost=1000000,itemID=275662,npcID=266577,sourceAchievements={63349},sourceQuests={95395},spellID=1297417}),
 p(5074,{cost={{"c",3316,1800}},itemID=275663,npcID=266580,sourceAchievements={62880,62882},spellID=1297418}),
 mnt(1294663,{cost={{"c",3316,4500}},itemID=274650,sourceAchievements={62874}}),

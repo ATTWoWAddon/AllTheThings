@@ -4340,7 +4340,7 @@ cu(2027,{requireSkill=202})}}),
 q(66380,{isWeekly=1,providers={{"i",193903}},requireSkill=202,g={
 cu(2027,{requireSkill=202})}}),
 q(70517,{coords={
-[2025]={{49.4,62.6}}},crs={194656},description="Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198970}},requireSkill=202,g={
+[2025]={{49.4,62.6}}},crs={196632},description="Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198970}},requireSkill=202,g={
 cu(2027,{requireSkill=202})}}),
 q(70516,{coords={
 [2025]={{57.2,60.4}}},crs={193244},description="Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",isWeekly=1,providers={{"i",198969}},requireSkill=202,g={
@@ -7336,7 +7336,7 @@ cu(2025,{requireSkill=165})}}),
 q(66385,{isWeekly=1,providers={{"i",193913}},requireSkill=165,g={
 cu(2025,{requireSkill=165})}}),
 q(70522,{coords={
-[2022]={{79.4,32.5},{80.6,33.8}}},crs={190056,196420},description="Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198975}},requireSkill=165,g={
+[2022]={{79.4,32.5},{80.6,33.8}}},crs={190056,195241,196420},description="Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198975}},requireSkill=165,g={
 cu(2025,{requireSkill=165})}}),
 q(70523,{coords={
 [2025]={{31.3,76.5},{32.4,73.5},{35.4,72.8},{36.6,72.8}}},crs={188277,191203,191317},description="Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198976}},requireSkill=165,g={
