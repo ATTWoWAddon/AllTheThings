@@ -559,6 +559,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						hqt(83134, {	-- Has rolled for Ahune Special Loot (Daily Accountwide)
+							-- Likely changed to q(97111) in 2026 and contains anything but mount.
+							-- Possibly also only triggers when you get a reward, and not just on opening like the mount.
+							-- Doublecheck in 2027
 							["name"] = "Has rolled for Ahune Special Loot (Daily Accountwide)",
 							["description"] = "Items under this group only have a chance to drop on your first kill per day for your warband.",
 							["timeline"] = { ADDED_10_2_7 },
@@ -585,6 +588,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 							},
 						}),
 						hqt(97116, {	-- Has rolled for Ahune Special Loot (Daily Accountwide)
+						-- This ID is likely only for the Mount. Verify in 2027
 							["name"] = "Has rolled for Ahune Special Loot (Daily Accountwide)",
 							["description"] = "Items under this group only have a chance to drop on your first kill per day for your warband.",
 							["timeline"] = { ADDED_12_0_7 },
