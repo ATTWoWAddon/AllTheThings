@@ -8000,15 +8000,13 @@ cu(3158,{requireSkill=186})}}),
 q(88678,{isWeekly=1,providers={{"i",237506}},requireSkill=186,g={
 cu(3158,{requireSkill=186})}})}})}})}),
 prof(393,{
+x(7,{requireSkill=393,g={
 h(-12,{awp=100107,requireSkill=393,g={
 ach(18834,{requireSkill=393,g={
 crit(61487,{achID=18834,id=3,providers={{"i",139895}},requireSkill=393}),
 crit(61488,{achID=18834,id=4,providers={{"i",139896}},requireSkill=393}),
 crit(61491,{achID=18834,id=7,providers={{"i",139894}},requireSkill=393}),
 crit(61492,{achID=18834,id=8,providers={{"i",139893}},requireSkill=393})}})}}),
-x(7,{requireSkill=393,g={
-h(-12,{awp=100107,requireSkill=393,g={
-ach(18837,{requireSkill=393})}}),
 ah(247842,{awp=70300,requireSkill=393,type="s",g={
 q(48040,{lvl=45,maps={830,882,885},providers={{"i",151866}},requireSkill=393,g={
 r(247842,{requireSkill=393})}})}}),

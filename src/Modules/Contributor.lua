@@ -287,6 +287,7 @@ local MapPrecisionOverrides = {
 	[2584] = 5,	-- Revantusk Sedge
 	[2639] = 5,	-- Crypt of the Denied, The Coiled Isle
 	[2640] = 5,	-- Blistering Terrace, The Coiled Isle
+	[2644] = 5,	-- Crypt of the Disgraced, The Coiled Isle
 }
 
 local function Check_coords(objRef, maxCoordDistance)

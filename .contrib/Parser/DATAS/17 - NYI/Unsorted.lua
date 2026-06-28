@@ -1707,7 +1707,6 @@ root(ROOTS.Unsorted, {
 			i(280090),	-- Mask Fragment
 			i(280091),	-- Latent Purifier
 			i(280097),	-- Venomous Aspirant's Insignia of Alacrity
-			i(280105),	-- Disgraced Amani Tablet
 			i(280118),	-- Venomous Aspirant's Medallion
 			i(280123),	-- Sharp Axe Holster
 			i(280131),	-- Nebulous Voidcache: Prey

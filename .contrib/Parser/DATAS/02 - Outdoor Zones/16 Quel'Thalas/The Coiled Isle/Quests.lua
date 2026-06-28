@@ -536,8 +536,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				--header(HEADERS.AchCriteria, 63641.02, {	-- Tokka's Crew
 				--}),
-				--header(HEADERS.AchCriteria, 63641.03, {	-- Ancient Anthropology
-				--}),
+				header(HEADERS.AchCriteria, 63641.03, {	-- Ancient Anthropology
+					q(96467, {	-- Thirst for Knowledge
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 265173,	-- Kul'amara the Fierce
+						["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["isBreadcrumb"] = true,
+					}),
+					q(96469, {	-- The Crypt of the Disgraced
+						["description"] = "To bypass the barrier, interact with the objects in the following order:\n\nCharm, Mortar and Pestle, Urn, Bones.",
+						["sourceQuest"] = 96467,	-- Thirst for Knowledge
+						["qg"] = 265329,	-- Zei'ka
+						["coord"] = { 75.0, 62.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96471, {	-- Crumble and Tumble
+						["sourceQuest"] = 96469,	-- The Crypt of the Disgraced
+						["qg"] = 265330,	-- Zei'ka
+						["coord"] = { 61.1, 59.7, 2644 },	-- Crypt of the Disgraced
+						["groups"] = { i(280105) },	-- Disgraced Amani Tablet
+					}),
+				}),
 				--header(HEADERS.AchCriteria, 63641.04, {	-- Bone Deep
 				--}),
 				--header(HEADERS.AchCriteria, 63641.05, {	-- The Honored Mad'jai

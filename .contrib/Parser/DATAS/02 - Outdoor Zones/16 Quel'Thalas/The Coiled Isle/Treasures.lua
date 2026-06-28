@@ -6,7 +6,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(TREASURES, {
 			header(HEADERS.Achievement, 63359, {	-- Treasures of the Coiled Isle
 				header(HEADERS.Object, 619906, {	-- Abandoned Amani Privateer's Cache
-					-- Description is a WiP until objects are properly sourced
 					["description"] = "1. Fish out a 'Grisly Morsel' from 'Grisly Cod Pool'.\n2. Feed the 'Hungry Dolphin' to gain it as your companion.\n3. Dive down and swim around the bay area until the Dolphin helps you find both pieces of the key. DO NOT RESURFACE!\n4. Combine both halves of the key.\n5. Loot the treasure.",
 					["coord"] = { 72.5, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },	-- General area where everything related to the treasure happens
 					["cr"] = 258076,	-- Hungry Dolphin

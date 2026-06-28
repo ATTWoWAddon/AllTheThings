@@ -49,6 +49,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["maps"] = {
 				2640,	-- Blistering Terrace
 				2639,	-- Crypt of the Denied
+				2644,	-- Crypt of the Disgraced
 				2641,	-- Crypt of the Lost Warrior
 				2642,	-- Tomb of the Lost Priest
 			},
