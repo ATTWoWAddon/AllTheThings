@@ -2112,7 +2112,6 @@ root(ROOTS.Unsorted, {
 				i(276351),	-- Muckfaded Crystalline Figure
 				i(276352),	-- Scuffed Prayer Bangle
 				i(276354),	-- Frozen Fel Core
-				i(276355),	-- Shattered Frostforged Hilt
 				i(276356),	-- Frost-Shredded Demon Cloak
 				i(276360),	-- Etched Ice Chip
 				i(276361),	-- Frost-Calloused Remains
@@ -3843,7 +3842,6 @@ root(ROOTS.Unsorted, {
 				i(160706),	-- Enriched Coal
 				i(160707),	-- Reinforced Shells
 				i(160730),	-- Bubbling Totem
-				i(160735),	-- Ashvane Garb
 				i(160738),	-- Bundle of Dynamite
 				i(160739),	-- Goblin Rocket Launcher
 				i(160754),	-- Void Essence

@@ -12,7 +12,7 @@ local CASSANDRA_KABOOM = {
 };
 local DAGRA_THE_FIERCE = {
 	["crs"] = { 66135 },
-	["coord"] = { 43.9, 28.9, DUROTAR },
+	["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
 };
 local ELENA_FLUTTERFLY = {
 	["crs"] = { 66412 },

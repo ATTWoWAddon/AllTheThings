@@ -2909,6 +2909,7 @@ i(276353);	-- Frozen Sliver of Darkness
 i(280183);	-- Harrier Hotcakes
 i(276357);	-- Razor-Ice Flake
 i(274953);	-- Serpentine Iris
+i(276355);	-- Shattered Frostforged Hilt
 i(276358);	-- Shattered Shadowgraft
 i(280184);	-- Sweetsaw Surprise
 i(276359);	-- Twisted Domanaar Armament

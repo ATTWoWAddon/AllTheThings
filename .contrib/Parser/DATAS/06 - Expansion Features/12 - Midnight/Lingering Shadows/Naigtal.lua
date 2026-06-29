@@ -90,11 +90,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(97256, {	-- Knocking Off the Top (Heroic!)
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
-							["qg"] = 265303,	-- Decimus
+							["qgs"] = {
+								264879,	-- Decimus
+								265303,	-- Decimus
+							},
 							["coords"] = {
 								{ 48.2, 81.2, NAIGTAL },
 								{ 48.5, 81.9, NAIGTAL },
-								--val coords too
+								{ 60.0, 22.1, VAL },
 							},
 							["timeline"] = { ADDED_12_0_7 },
 							["groups"] = sharedData({ ["modID"] = 6 }, {
@@ -231,7 +234,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["coord"] = { 74.2, 73.5, NAIGTAL },
 						}),
 						-- Repeatable
-						q(96720, {	-- Showdown on Naigtal (Low Level?)
+						q(96720, {	-- Showdown on Naigtal (Low Level)
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
 							["qgs"] = {
 								265303,	-- Decimus
@@ -243,6 +246,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 48.5, 81.9, NAIGTAL },
 							},
 							["isWeekly"] = true,
+							["groups"] = { i(272125) },	-- Recruit's Cache
 						}),
 						q(96717, {	-- Showdown on Naigtal
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
@@ -255,12 +259,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 48.2, 81.2, NAIGTAL },
 								{ 48.5, 81.9, NAIGTAL },
 							},
-							["groups"] = {
-								-- Box given to Leveling Characters
-								i(272125),	-- Recruit's Cache
-								-- Box given to Max Level Characters
-								i(275690),	-- Riftstalker's Cache
-							},
+							["Level"] = 90,
+							["groups"] = { i(275690) },	-- Riftstalker's Cache
 							["isWeekly"] = true,
 						}),
 						q(96718, {	-- Showdown on Naigtal (Heroic)
@@ -270,6 +270,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 48.2, 81.2, NAIGTAL },
 								{ 48.5, 81.9, NAIGTAL },
 							},
+							["Level"] = 90,
 							["groups"] = { i(275691) },	-- Riftstalker's Overflowing Cache
 							["isWeekly"] = true,
 						}),

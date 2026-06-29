@@ -394,7 +394,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			["isWeekly"] = true,
 		}),
 		q(93453, {	-- A Grave Concern
-			["provider"] = { "i", 258738 },	-- A Cordial Invitation (QI!/QS!)
+			["providers"] = {
+				{ "i", 258738 },	-- A Cordial Invitation (QI!/QS!)
+				{ "n", 254616 },	-- Nelthius Shadestone <Master Engraver>
+			},
+			["coord"] = { 52.7, 77.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["groups"] = { i(262966), },	-- Budget Friendly (CI!)
 		}),
 	}),

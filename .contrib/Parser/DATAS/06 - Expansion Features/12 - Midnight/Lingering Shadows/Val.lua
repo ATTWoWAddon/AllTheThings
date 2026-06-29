@@ -108,6 +108,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["coord"] = { 59.5, 22.0, VAL },
 						}),
 						-- Repeatable
+						q(96716, {	-- Showdown on Val (Low Level)
+							["qgs"] = {
+								263479, -- Riftblade Maella
+								263482,	-- Riftblade Maella
+							},
+							["coords"] = {
+								{ 47.7, 51.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+								{ 59.3, 19.5, VAL },
+								{ 59.5, 22.1, VAL },
+							},
+							["groups"] = { i(272125) },	-- Recruit's Cache
+						}),
 						q(96713, {	-- Showdown on Val
 							["sourceQuest"] = 96051,	-- Through the Cold Rift
 							["qgs"] = {
@@ -119,12 +131,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 59.3, 19.5, VAL },
 								{ 59.5, 22.1, VAL },
 							},
-							["groups"] = {
-								-- Box given to Leveling Characters
-								i(272125),	-- Recruit's Cache
-								-- Box given to Max Level Characters
-								i(275690),	-- Riftstalker's Cache
-							},
+							["Level"] = 90,
+							["groups"] = { i(275690) },	-- Riftstalker's Cache
 							["isWeekly"] = true,
 						}),
 						q(96714, {	-- Showdown on Val (Heroic)
@@ -138,6 +146,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 59.3, 19.5, VAL },
 								{ 59.5, 22.1, VAL },
 							},
+							["Level"] = 90,
 							["groups"] = { i(275691) },	-- Riftstalker's Overflowing Cache
 							["isWeekly"] = true,
 						}),
@@ -203,7 +212,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						n(265269, {	-- Shadowguard Destroyer
 							["coord"] = { 46.0, 64.6, VAL },
-							--["questID"] = 96465, -- I got 96373 - Darkal
+							["questID"] = 96465,
 						}),
 						n(261965, {	-- Sleet-Rune <The Void-Infused Watcher>
 							["coord"] = { 55.2, 65.6, VAL },
