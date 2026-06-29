@@ -558,12 +558,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						hqt(83134, {	-- Has rolled for Ahune Special Loot (Daily Accountwide)
-							-- Likely changed to q(97111) in 2026 and contains anything but mount.
-							-- Possibly also only triggers when you get a reward, and not just on opening like the mount.
-							-- Doublecheck in 2027
-							["name"] = "Has rolled for Ahune Special Loot (Daily Accountwide)",
-							["description"] = "Items under this group only have a chance to drop on your first kill per day for your warband.",
+						hqt(83134, {	-- Has rolled for Ahune Special Loot (2025) (Daily Accountwide)
+							["name"] = "Has rolled for Ahune Special Loot (2025) (Daily Accountwide)",
+							["description"] = "These items are only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
 							["timeline"] = { ADDED_10_2_7 },
 							["isDaily"] = true,
 							["groups"] = {
@@ -587,31 +584,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 								}),
 							},
 						}),
-						hqt(97116, {	-- Has rolled for Ahune Special Loot (Daily Accountwide)
-						-- This ID is likely only for the Mount. Verify in 2027
-							["name"] = "Has rolled for Ahune Special Loot (Daily Accountwide)",
-							["description"] = "Items under this group only have a chance to drop on your first kill per day for your warband.",
+						hqt(97111, {	-- Sun Festival's Painted Roc Attempt (Daily Account Lockout)
+							["name"] = "Sun Festival's Painted Roc Attempt (Daily Account Lockout)",
 							["timeline"] = { ADDED_12_0_7 },
 							["isDaily"] = true,
+							["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
 							["groups"] = {
 								i(275464, {	-- Sun Festival's Painted Roc (MOUNT!)
 									["timeline"] = { ADDED_12_0_7 },
 								}),
 							},
-							["sym"] = {{"select","itemID",
-								275469,	-- Sun Festival's Painted Girdle
-								275472,	-- Sun Festival's Painted Greaves
-								275474,	-- Sun Festival's Painted Gauntlets
-								275476,	-- Sun Festival's Painted Hauberk
-								275471,	-- Sun Festival's Painted Leggings
-								275468,	-- Sun Festival's Painted Mantle
-								275466,	-- Sun Festival's Painted Mask
-								275470,	-- Sun Festival's Painted Sash
-								275473,	-- Sun Festival's Painted Striders
-								275465,	-- Sun Festival's Painted Tunic
-								275475,	-- Sun Festival's Painted Wrap
-								275467,	-- Sun Festival's Painted Wings
-							}},
+						}),
+						hqt(97116, {	-- Has rolled for Ahune Special Loot (2026) (Daily Accountwide)
+							["name"] = "Has rolled for Ahune Special Loot (2026) (Daily Accountwide)",
+							["description"] = "These items are only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+							["timeline"] = { ADDED_12_0_7 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(275469),	-- Sun Festival's Painted Girdle
+								i(275472),	-- Sun Festival's Painted Greaves
+								i(275474),	-- Sun Festival's Painted Gauntlets
+								i(275476),	-- Sun Festival's Painted Hauberk
+								i(275471),	-- Sun Festival's Painted Leggings
+								i(275468),	-- Sun Festival's Painted Mantle
+								i(275466),	-- Sun Festival's Painted Mask
+								i(275470),	-- Sun Festival's Painted Sash
+								i(275473),	-- Sun Festival's Painted Striders
+								i(275465),	-- Sun Festival's Painted Tunic
+								i(275475),	-- Sun Festival's Painted Wrap
+								i(275467),	-- Sun Festival's Painted Wings
+							},
 						}),
 					},
 				}),
@@ -3676,7 +3678,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MID, {
 		applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE_FESTIVAL_HEADER, {
 			n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
-				q(97111),	-- Looted 12.0.7 cosmetic/mount from the bag
 			})),
 		})),
 	}),

@@ -26986,7 +26986,8 @@ s(114186,182498,{customCollect={"SL_COV_NEC"},description="This cloak is only aw
 s(114195,182507,{customCollect={"SL_COV_NEC"},description="This cloak is only awarded to cloth characters.",f=3,lvl=60}),
 s(114204,182516,{customCollect={"SL_COV_NEC"},description="This cloak is only awarded to mail characters.",f=3,lvl=60}),
 i(184205,{b=1,customCollect={"SL_COV_NEC"}}),
-i(184204,{b=1,customCollect={"SL_COV_NEC"}})}}),
+i(184204,{b=1,customCollect={"SL_COV_NEC"}}),
+i(183760,{b=1,customCollect={"SL_COV_NEC"}})}}),
 n(158300,{coords={
 [1536]={{54.3,68.1}}},crs={167157},customCollect={"SL_COV_NEC"},sourceQuests={57597},g={
 s(114189,182501,{customCollect={"SL_COV_NEC"},f=4,lvl=60}),

@@ -42045,7 +42045,7 @@ toy(242636,{b=1,lvl=80,pvp=1,u=2}),
 title(539,{collectible=false,pvp=1,u=2})}}),
 ach(42023,{pvp=1,u=2,g={
 toy(242636,{b=1,lvl=80,pvp=1,u=2})}}),
-ach(42044,{pvp=1,u=2}),
+ach(42044,{c={2,5,7,10,11,13},pvp=1,u=2}),
 ach(42033,{pvp=1,u=2,g={
 title(634,{pvp=1,u=2})}}),
 ach(42800,{pvp=1,g={
