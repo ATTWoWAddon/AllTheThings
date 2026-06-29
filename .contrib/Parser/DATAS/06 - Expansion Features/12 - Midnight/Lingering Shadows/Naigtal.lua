@@ -318,17 +318,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						n(264569, {	-- Auredar's Chassis <The Vacant Vigilant>
 							["coord"] = { 28.8, 62.9, NAIGTAL },
 							["questID"] = 96316,
-							["groups"] = {	-- Wrists
+							["groups"] = {
 								i(275151),	-- Bands of Draenic Mourning
 								i(275159),	-- Construct Manipulator Bracers
 								i(275143),	-- Draeni Ceremonial Cuffs
 								i(275167),	-- Intact Construct Plates
+								i(274873),	-- Funeral Attendant's Spire
 							},
 						}),
 						n(263950, {	-- Broxion <Contagious Anomaly>
 							["coord"] = { 44.2, 51.0, NAIGTAL },
 							["questID"] = 96206,
-							["groups"] = {	-- Hands
+							["groups"] = {
 								i(275138),	-- Spore-Handler's Handwraps
 								i(275146),	-- Spore-Membrane Gloves
 								i(275162),	-- Spore-Shined Gloves
@@ -339,74 +340,90 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["description"] = "Patrols up and down the central road.",
 							["coord"] = { 53.8, 51.6, NAIGTAL },
 							["questID"] = 96317,
-							["groups"] = {	-- Legs
+							["groups"] = {
 								i(275164),	-- Indomitable Mechanized Legplates
 								i(275156),	-- Gear-Linked Leggings
 								i(275140),	-- Leggings of Tainted Stuffing
 								i(275148),	-- Reaver's Padded Trousers
+								i(276298),	-- Forgotten Fel-Shard Talon
 							},
 						}),
 						n(263947, {	-- Interminable Uarn <The Undying Stalk>
 							["coord"] = { 37.6, 61.8, NAIGTAL },
 							["questID"] = 96205,
-							["groups"] = {	-- Head
+							["groups"] = {
 								i(275147),	-- Bioluminescent Swamp Mask
 								i(275139),	-- Crown of Fungal Spores
 								i(275155),	-- Interminable Fungal Helmet
 								i(275163),	-- Uarn's Reinforced Headplate
+								i(274876),	-- Reinforced Fungalhide Bulwark
+								i(274862),	-- Corrupted Draenei Priest's Kris
 							},
 						}),
 						n(263955, {	-- Lomelith <The Bogshaker>
 							["description"] = "Roams around the area.",
 							["coord"] = { 67.7, 62.9, NAIGTAL },
 							["questID"] = 96208,
+							["groups"] = {
+								i(274819),	-- Fungal Fold Frock
+								i(274860),	-- Ancient Spore-Coated Axe
+							},
 						}),
 						n(263954, {	-- Swalewing Matriarch <The Manabog Apex>
 							["description"] = "Roams around the area.",
 							["coord"] = { 77.7, 38.0, NAIGTAL },
 							["questID"] = 96207,
-							["groups"] = {	-- Feet
+							["groups"] = {
 								i(275153),	-- Flickering Scale Sabatons
 								i(275137),	-- Flickering Soft-Steppers
 								i(275145),	-- Swalewing Skin Footpads
 								i(275161),	-- Swamp-Resistant Stompers
+								i(274874),	-- Flickering Wing Separator
 							},
 						}),
 						n(264576, {	-- Slaipaan <The Fel-Gorged>
 							["description"] = "Roams around the area.",
 							["coord"] = { 56.1, 61.4, NAIGTAL },
 							["questID"] = 96320,
-							["groups"] = {	-- Chests
+							["groups"] = {
 								i(275152),	-- Burrower's Linked Hauberk
 								i(275136),	-- Leaf-Woven Blouse
 								i(275144),	-- Leafy-Hide Coat
 								i(275160),	-- Slaipaan's Carapace
+								i(274871),	-- Giant Worm Piercer
 							},
 						}),
 						n(265698, {	-- Voidwarped Sporebat
 							["coord"] = { 48.8, 47.4, NAIGTAL },
 							["questID"] = 96566,
-							["groups"] = {	-- Waists
+							["groups"] = {
 								i(275166),	-- Voidwarped Greatbelt
 								i(275142),	-- Voidwarped Sash
 								i(275158),	-- Voidwarped Scale Girdle
 								i(275150),	-- Sporebat Leather Belt
+								i(274866),	-- Voidwarped Edge
 							},
 						}),
 						n(267422, {	-- Warbringer Thal'kuur <The Mutinied>
 							["description"] = "Roams around the area.",
 							["coord"] = { 56.1, 61.4, NAIGTAL },
 							["questID"] = 97014,
-							["groups"] = {	-- Shoulders
+							["groups"] = {
 								i(275149),	-- Fungal Draped Epaulets
 								i(275165),	-- Petrified Mushroom Shoulderplates
 								i(275141),	-- Spore-Speckled Shoulderpads
 								i(275157),	-- Swampwalker's Spaulders
+								i(274864),	-- Sporebloom Gavel
+								i(276298),	-- Forgotten Fel-Shard Talon
 							},
 						}),
 						n(264574, {	-- Warp Agent Xi'grivr <Ky'veza's Second>
 							["coord"] = { 70.3, 76.4, NAIGTAL },
 							["questID"] = 96319,
+							["groups"] = {
+								i(274821),	-- Drape of the Hal'hadar Assassin
+								i(274870),	-- Assassin's Void-String Bow
+							},
 						}),
 					})),
 					n(REWARDS, {

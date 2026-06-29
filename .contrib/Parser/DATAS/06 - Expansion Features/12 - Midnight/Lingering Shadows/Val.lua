@@ -174,28 +174,55 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						n(262421, {	-- Atomus <Portal Master>
 							["coord"] = { 38.2, 79.4, VAL },
 							["questID"] = 95940,
+							["groups"] = {
+								i(274831),	-- Portal Shaper's Circlet
+								i(274839),	-- Cold-World Cover
+								i(274847),	-- Atomus's Headcover
+								i(274855),	-- Portal-Keeper's Helm
+								i(274868),	-- Portal Master's Shortblade
+							},
 						}),
 						n(261716, {	-- Glacial Broodmother <Frost-Hive Alpha>
 							["coord"] = { 67.2, 42.4, VAL },
 							["questID"] = 95559,
+							["groups"] = {
+								i(274833),	-- Icy Spidersilk Mantle
+								i(274841),	-- Frigid Cavedweller's Shoulderpads
+								i(274849),	-- Frostscale Spider's Monnion
+								i(274857),	-- Chitonous Broodmother's Spaulders
+								i(274861),	-- Frosty Broodmother's Fang
+							},
 						}),
 						n(264866, {	-- Krilkan
 							["coord"] = { 44.6, 52.8, VAL },
 							["questID"] = 96372,
+							["groups"] = {	-- Wrist
+								i(274835),	-- Bands of Pincher Sinew
+								i(274843),	-- Pincher-Proof Wristguards
+								i(274851),	-- Glittering Frostscale Wraps
+								i(274859),	-- Klaxid Plate Vambraces
+							},
 						}),
 						n(264865, {	-- Mercilus
 							["coord"] = { 49.7, 79.2, VAL },
 							["questID"] = 96371,
-							["groups"] = {	-- Hands
-								i(275138),	-- Spore-Handler's Handwraps
-								i(275146),	-- Spore-Membrane Gloves
-								i(275162),	-- Spore-Shined Gloves
-								i(275154),	-- Swamp Trekker's Grips
+							["groups"] = {
+								i(274834),	-- Cord of Domineering Resolve
+								i(274842),	-- Gatekeeper's Leather Waistguard
+								i(274850),	-- Mercilus's Chain Waistguard
+								i(274858),	-- Domanaar Battle Belt
+								i(274867),	-- Inscribed Domanaar's Sword
 							},
 						}),
 						n(264869, {	-- Nelgothar <The Forgotten>
 							["coord"] = { 23.2, 41.9, VAL },
 							["questID"] = 96374,
+							["groups"] = {
+								i(274832),	-- Fel-Tainted Trousers
+								i(274840),	-- Pants of the Lost Legion
+								i(274848),	-- Legguards of Fel-Corruption
+								i(274856),	-- Felguard's Frozen Greaves
+							},
 						}),
 						n(264868, {	-- Opprimius <Reaper of Beasts>
 							["coord"] = { 33.0, 43.0, VAL },
@@ -203,19 +230,52 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						n(265269, {	-- Shadowguard Destroyer
 							["coord"] = { 46.0, 64.6, VAL },
-							--["questID"] = 96465, -- I got 96373 - Darkal
+							["questID"] = 96465,
+							["groups"] = {
+								i(274830),	-- Ice-Glazed Gloves
+								i(274838),	-- Gloves of the Descending Destroyer
+								i(274846),	-- Glacier Basin Gauntlets
+								i(274854),	-- Shadowguard Plate Gauntlets
+								i(274865),	-- Destroyer's Drop Hammer
+							},
 						}),
 						n(261965, {	-- Sleet-Rune <The Void-Infused Watcher>
 							["coord"] = { 55.2, 65.6, VAL },
 							["questID"] = 95939,
+							["groups"] = {
+								i(274828),	-- Domanaar Subjugator's Vestments
+								i(274836),	-- Sleet-Resistant Jerkin
+								i(274844),	-- Sleetlink Hauberk
+								i(274852),	-- Sleetstone Chestplate
+								i(274869),	-- Void-Iced Warglaives
+							},
 						}),
 						n(264870, {	-- The Horror Below <The Living Whisper>
 							["coord"] = { 35.5, 57.6, VAL },
 							["questID"] = 96375,
+							["groups"] = {
+								i(274818),	-- Drape of Intense Darkness
+								i(274872),	-- Darkness' Horrific Barb
+							},
 						}),
 						n(264864, {	-- Xirah <Voracious Glutton>
 							["coord"] = { 28.6, 74.6, VAL },
 							["questID"] = 96370,
+							["groups"] = {
+								i(274820),	-- Cloak of the Voracious Gorger
+								i(274875),	-- Riftwalker's Lantern
+							},
+						}),
+						n(264868, {	-- Opprimius <Reaper of Beasts>
+							["coord"] = { 33.0, 43.0, VAL },
+							["questID"] = 96373,
+							["groups"] = {
+								i(274829),	-- Creature Corruptor Slippers
+								i(274837),	-- Corrupted Hide Boots
+								i(274845),	-- Greaves of Corrupted Scale
+								i(274853),	-- Creature Crushers
+								i(274863),	-- Cudgel of the Twisted Reaper
+							},
 						}),
 					})),
 					n(REWARDS, {
