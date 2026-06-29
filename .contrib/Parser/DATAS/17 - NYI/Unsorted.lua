@@ -1997,10 +1997,8 @@ root(ROOTS.Unsorted, {
 				i(271689),	-- Bloodwatch Outlaw's Bandana
 				i(271690),	-- Duskwatch Outlaw's Hat
 				i(271691),	-- Duskwatch Outlaw's Bandana
-				i(273126),	-- Classic Azure Eyepatch
 				i(273132),	-- Stylish Violet Top Hat
 				i(273133),	-- Stylish Crimson Top Hat
-				i(273134),	-- Stylish Snowy Top Hat
 				i(273151),	-- Slinger's Shot Pouch
 				i(273768),	-- Slinger's Fur-Lined Quiver
 				i(273769),	-- Ensemble: Slinger's Munitions
@@ -2023,7 +2021,6 @@ root(ROOTS.Unsorted, {
 				i(274051),	-- Bandit's Azure Highboot
 				i(274052),	-- Bandit's Sepia Highboot
 				i(274053),	-- Bandit's Grassy Highboot
-				i(274054),	-- Bandit's Cloudy Highboot
 				i(274055),	-- Bandit's Deep Highboot
 				i(274056),	-- Bandit's Camo Highboot
 				i(274057),	-- Bandit's Brick Highboot
@@ -2037,18 +2034,12 @@ root(ROOTS.Unsorted, {
 				i(274065),	-- Bandit's Aquatic Highboot
 				i(274066),	-- Bandit's Snowy Highboot
 				i(274067),	-- Bandit's Sunny Highboot
-				i(274072),	-- Azure Extravaganza Rocketstaff
 				i(274073),	-- Lively Extravaganza Rocketstaff
 				i(274074),	-- Suntouched Extravaganza Rocketstaff
-				i(274075),	-- Rosy Extravaganza Rocketstaff
-				i(274079),	-- Azure Extravaganza Rocketmace
 				i(274080),	-- Lively Extravaganza Rocketmace
 				i(274081),	-- Suntouched Extravaganza Rocketmace
-				i(274082),	-- Rosy Extravaganza Rocketmace
-				i(274085),	-- Azure Extravaganza Sparkwheel
 				i(274086),	-- Lively Extravaganza Sparkwheel
 				i(274087),	-- Suntouched Extravaganza Sparkwheel
-				i(274088),	-- Rosy Extravaganza Sparkwheel
 				i(274403),	-- Badlands Lawbringer's Brand
 				i(274404),	-- Righteous Lawbringer's Brand
 				i(274405),	-- Duskwatch Outlaw's Brand
@@ -2062,7 +2053,6 @@ root(ROOTS.Unsorted, {
 				i(274621),	-- Gunslinger's Azure Lid
 				i(274622),	-- Gunslinger's Sepia Lid
 				i(274623),	-- Gunslinger's Grassy Lid
-				i(274624),	-- Gunslinger's Cloudy Lid
 				i(274625),	-- Gunslinger's Deep Lid
 				i(274626),	-- Gunslinger's Camo Lid
 				i(274627),	-- Gunslinger's Brick Lid
@@ -2128,8 +2118,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				-- Trading Post
 				i(274681),	-- Badlands Buzzard
-				i(273317),	-- Blackwater X-TREME Firework Rocket
-				i(273651),	-- Bilgewater X-TREME Firework Rocket
 				i(273650),	-- Green Rocket Mount [PH]
 				i(273652),	-- Pink Rocket Mount [PH]
 				-- NYI?
@@ -2168,7 +2156,6 @@ root(ROOTS.Unsorted, {
 					i(270287),	-- Crown of Brick Springflowers
 					i(270286),	-- Crown of Camo Springflowers
 					i(270290),	-- Crown of Carrot Springflowers
-					i(270284),	-- Crown of Cloudy Springflowers
 					i(270293),	-- Crown of Crimson Springflowers
 					i(270285),	-- Crown of Deep Springflowers
 					i(270283),	-- Crown of Grassy Springflowers

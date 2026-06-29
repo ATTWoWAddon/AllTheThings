@@ -2446,7 +2446,9 @@ i(268834, 1283838);	-- Zothwing Deepseeker
 ------------------
 -- PATCH 12.0.7 --
 ------------------
+i(273651, 1292344);	-- Bligewater X-TREME Firework Rocket
 i(210140, 404018);	-- Black-Furred Bakar
+i(273317, 1292102);	-- Blackwater X-TREME Firework Rocket
 i(246731, 1243582);	-- Dusk Grimlynx
 i(274650, 1294663);	-- Netherforged Nullframe
 i(192778, 350220);	-- Liquid Hot Magma Slug
@@ -2459,8 +2461,6 @@ i(274649, 1294648);	-- Voidmancer's Starcarver
 i(0, 1294677);	-- [PH] Horse with Hat
 i(0, 1261369);	-- Amani Hex Bear
 i(274681, 1294767);	-- Badlands Buzzard
-i(273651, 1292344);	-- Bligewater X-TREME Firework Rocket
-i(273317, 1292102);	-- Blackwater X-TREME Firework Rocket
 i(273650, 1292342);	-- Green Rocket Mount [PH]
 i(273652, 1292345);	-- Pink Rocket Mount [PH]
 
