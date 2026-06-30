@@ -265,8 +265,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(96718, {	-- Showdown on Naigtal (Heroic)
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
-							["qg"] = 265303,	-- Decimus
+							["qgs"] = {
+								265303,	-- Decimus
+								263531,	-- Projected Image of Decimus
+							},
 							["coords"] = {
+								{ 47.7, 51.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 								{ 48.2, 81.2, NAIGTAL },
 								{ 48.5, 81.9, NAIGTAL },
 							},

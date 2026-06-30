@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(48539, {	-- Freehold
 				["sourceQuests"] = { 48505 },	-- Lovesick and Lost
-				["provider"] = { "n", 126158 },	-- Flynn Fairwind
+				["provider"] = { "n", 126620 },	-- Flynn Fairwind
 				["coord"] = { 80.2, 75.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -932,7 +932,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(48773, {	-- Papers, Please
 				["sourceQuests"] = { 48539 },	-- Freehold
-				["provider"] = { "n", 126158 },	-- Flynn Fairwind
+				["provider"] = { "n", 126620 },	-- Flynn Fairwind
 				["coord"] = { 80.2, 75.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -1136,12 +1136,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53041, {	-- Sampling the Goods
 				["sourceQuests"] = { 50531 },	-- Under Their Noses
-				["provider"] = { "n", 121239 },	-- Flynn Fairwind
+				["provider"] = { "n", 134166 },	-- Flynn Fairwind
 				["coord"] = { 75.85, 49.08, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					o(294542, {	-- Raw Azerite Sample
+						["coord"] = { 74.8, 50.1, TIRAGARDE_SOUND },
+						["groups"] = { i(163034) },	-- Raw Azerite Sample (QI!)
+					}),
 					i(163032),	-- Chemist's Notes (QI!)
-					i(163034),	-- Raw Azerite Sample (QI!)
 				},
 			}),
 			q(48597, {	-- Saurolisk Escape
@@ -1239,7 +1242,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47489, {	-- Stow and Go
 				["sourceQuests"] = { 53041 },	-- Sampling the Goods
-				["provider"] = { "n", 121239 },	-- Flynn Fairwind
+				["provider"] = { "n", 134166 },	-- Flynn Fairwind
 				["coord"] = { 75.8, 49.0, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -1313,7 +1316,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					49398,	-- Raise a Glass!
 					49401,	-- Rodrigo's Roost
 				},
-				["provider"] = { "n", 126158 },	-- Flynn Fairwind
+				["provider"] = { "n", 126620 },	-- Flynn Fairwind
 				["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -1373,7 +1376,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(48558, {	-- The Irontide Crew
 				["sourceQuests"] = { 48539 },	-- Freehold
-				["provider"] = { "n", 126158 },	-- Flynn Fairwind
+				["provider"] = { "n", 126620 },	-- Flynn Fairwind
 				["coord"] = { 80.2, 75.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 					["groups"] = {
