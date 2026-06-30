@@ -2446,7 +2446,7 @@ i(268834, 1283838);	-- Zothwing Deepseeker
 ------------------
 -- PATCH 12.0.7 --
 ------------------
-i(273651, 1292344);	-- Bligewater X-TREME Firework Rocket
+i(273651, 1292344);	-- Bilgewater X-TREME Firework Rocket
 i(210140, 404018);	-- Black-Furred Bakar
 i(273317, 1292102);	-- Blackwater X-TREME Firework Rocket
 i(246731, 1243582);	-- Dusk Grimlynx
