@@ -3254,8 +3254,8 @@ for i,o in ipairs({
 						["timeline"] = { ADDED_3_3_0 },
 						["filterID"] = MOUNTS,
 					}),
-					hqt(74957, {    -- X-45 Heartbreaker Attempt (Daily Account Lockout)
-						["name"] = "X-45 Heartbreaker Attempt (Daily Account Lockout)",
+					hqt(74957, {    -- X-45 Heartbreaker Attempt (Daily Accountwide)
+						["name"] = "X-45 Heartbreaker Attempt (Daily Accountwide)",
 						["timeline"] = { ADDED_10_0_5 },
 						["isDaily"] = true,
 						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
@@ -3265,8 +3265,8 @@ for i,o in ipairs({
 							}),
 						},
 					}),
-					hqt(86172, {    -- Love Witch's Sweeper Attempt (Daily Account Lockout)
-						["name"] = "Love Witch's Sweeper Attempt (Daily Account Lockout)",
+					hqt(86172, {    -- Love Witch's Sweeper Attempt (Daily Accountwide)
+						["name"] = "Love Witch's Sweeper Attempt (Daily Accountwide)",
 						["timeline"] = { ADDED_11_0_7 },
 						["isDaily"] = true,
 						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
@@ -3276,8 +3276,8 @@ for i,o in ipairs({
 							}),
 						},
 					}),
-					hqt(79104, {    -- Renewed Proto-Drake: Love Armor Attempt (Daily Account Lockout)
-						["name"] = "Renewed Proto-Drake: Love Armor Attempt (Daily Account Lockout)",
+					hqt(79104, {    -- Renewed Proto-Drake: Love Armor Attempt (Daily Accountwide)
+						["name"] = "Renewed Proto-Drake: Love Armor Attempt (Daily Accountwide)",
 						["timeline"] = { ADDED_10_2_5 },
 						["isDaily"] = true,
 						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
@@ -3287,8 +3287,8 @@ for i,o in ipairs({
 							}),
 						},
 					}),
-					hqt(93466, {    -- Spring Butterfly Attempt (Daily Account Lockout)
-						["name"] = "Spring Butterfly Attempt (Daily Account Lockout)",
+					hqt(93466, {    -- Spring Butterfly Attempt (Daily Accountwide)
+						["name"] = "Spring Butterfly Attempt (Daily Accountwide)",
 						["timeline"] = { ADDED_12_0_0 },
 						["isDaily"] = true,
 						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
