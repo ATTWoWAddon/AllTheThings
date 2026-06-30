@@ -331,7 +331,39 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(99668),	-- Shoulders of the Cursed Vanquisher
+							i(99673),	-- Helm of the Cursed Protector
+							i(99674),	-- Leggings of the Cursed Vanquisher
+							i(99676),	-- Leggings of the Cursed Protector
+							i(99678),	-- Chest of the Cursed Conqueror
+							i(99681),	-- Gauntlets of the Cursed Conqueror
+							i(102292),	-- Assurance of Consequence
+							i(102302),	-- Sigil of Rampage
+							i(102304),	-- Thok's Acid-Grooved Tooth
+							i(103728),	-- Hood of Blackened Tears
+							i(103748),	-- Krugruk's Rigid Shoulderplates
+							i(103752),	-- Bolt-Burst Grips
+							i(103782),	-- Precision Cutters
+							i(103793),	-- Sorrowpath Signet
+							i(103796),	-- Seal of the Forgotten Kings
+							i(103811),	-- Bracers of the Broken Fault
+							i(103816),	-- Shoulderguards of Foul Streams
+							i(103838),	-- Leggings of Unabashed Anger
+							i(103840),	-- Greathelm of the Warchief
+							i(103855),	-- Sash of the Last Guardian
+							i(103870),	-- Shield of Mockery
+							i(103875),	-- Drakebinder Greatstaff
+							i(103890),	-- Wristguards of Ruination
+							i(103910),	-- Bomber's Blackened Wristwatch
+							i(103923),	-- Robes of Riven Dreams
+							i(103924),	-- Shoulders of the Roiling Inferno
+							i(103925),	-- Hopeglow Spaulders
+							i(103926),	-- Haromm's Frozen Crescent
+							i(103934),	-- Poisonmist Nightcloak
+							i(103947),	-- Robes of the Warrior's Fall
+							i(103966),	-- Greatbelt of Living Waters
+							i(103971),	-- Korven's Crimson Crescent
+							i(103974),	-- Kor'kron Spire of Supremacy
 						}),
 						-- #endif
 						{}),

@@ -499,7 +499,42 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(99667),	-- Gauntlets of the Cursed Protector
+							i(99668),	-- Shoulders of the Cursed Vanquisher
+							i(99671),	-- Helm of the Cursed Vanquisher
+							i(99672),	-- Helm of the Cursed Conqueror
+							i(99674),	-- Leggings of the Cursed Vanquisher
+							i(99676),	-- Leggings of the Cursed Protector
+							i(99677),	-- Chest of the Cursed Vanquisher
+							i(99678),	-- Chest of the Cursed Conqueror
+							i(99680),	-- Gauntlets of the Cursed Vanquisher
+							i(104915),	-- Corruption-Rotted Gauntlets
+							i(104924),	-- Purified Bindings of Immerseus
+							i(104933),	-- Stonetoe's Tormented Treads
+							i(104942),	-- Robes of the Tendered Heart
+							i(104951),	-- Gaze of Echoing Despair
+							i(104960),	-- Drape of the Despairing Pit
+							i(104969),	-- Boots of Broken Reliance
+							i(104978),	-- Self-Reflecting Mask
+							i(104987),	-- Korgra's Venom-Soaked Gauntlets
+							i(104996),	-- Scalebane Bracers
+							i(105005),	-- Windfire Legplates
+							i(105014),	-- Earthbreaker's Steaming Chestplate
+							i(105023),	-- Juggernaut's Power Core
+							i(105032),	-- Haromm's Horrifying Helm
+							i(105041),	-- Ashflare Pendant
+							i(105058),	-- Bulwark of the Fallen General
+							i(105059),	-- Spaulders of Kor'kron Fealty
+							i(105068),	-- Malkorok's Tainted Dog Tags
+							i(105077),	-- Visage of the Monstrous
+							i(105086),	-- Arrowflight Girdle
+							i(105095),	-- Lost Necklace of the Mogu Empress
+							i(105104),	-- Gleaming Eye of the Devilsaur
+							i(105113),	-- Devilfang Band
+							i(105122),	-- Asgorathian Blood Seal
+							i(105131),	-- Amber Parasite Wraps
+							i(105140),	-- Penetrating Gaze of Y'Shaarj
+							i(105149),	-- Ebon Ritual Hood
 						}),
 						-- #endif
 						{}),

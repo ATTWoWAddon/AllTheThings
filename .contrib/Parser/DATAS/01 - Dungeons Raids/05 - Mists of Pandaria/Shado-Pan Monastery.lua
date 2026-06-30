@@ -482,7 +482,32 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(99667),	-- Gauntlets of the Cursed Protector
+							i(99668),	-- Shoulders of the Cursed Vanquisher
+							i(99675),	-- Leggings of the Cursed Conqueror
+							i(99681),	-- Gauntlets of the Cursed Conqueror
+							i(104914),	-- Chestplate of Congealed Corrosion
+							i(104923),	-- Cloak of Misguided Power
+							i(104932),	-- Softfoot's Last Resort
+							i(104941),	-- Sha-Seared Sandals
+							i(104950),	-- Grips of the Fallen Council
+							i(104959),	-- Rage-Blind Greathelm
+							i(104977),	-- Gaze of Arrogance
+							i(104986),	-- Unrepentant Heels
+							i(104995),	-- Bone-Inlaid Sandals
+							i(105004),	-- Smoldering Drakescale Bracers
+							i(105013),	-- Tar-Coated Gauntlets
+							i(105022),	-- Laser-Slice Signet
+							i(105031),	-- Riou's Vigilant Leggings
+							i(105040),	-- Iron Wolf Hood
+							i(105049),	-- Nazgrim's Gutripper
+							i(105057),	-- Gar'tok, Strength of the Faithful
+							i(105076),	-- Seal of Sullen Fury
+							i(105094),	-- Mantid Vizier's Robes
+							i(105103),	-- Hvitserk's Formidable Shanker
+							i(105112),	-- Britomart's Jagged Pike
+							i(105121),	-- Calixian Bladebreakers
+							i(105130),	-- Iyyokuk's Hereditary Seal
 						}),
 						-- #endif
 						{}),

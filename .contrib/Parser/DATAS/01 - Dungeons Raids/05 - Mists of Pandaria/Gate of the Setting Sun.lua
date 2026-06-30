@@ -469,7 +469,36 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(99668),	-- Shoulders of the Cursed Vanquisher
+							i(99669),	-- Shoulders of the Cursed Conqueror
+							i(99670),	-- Shoulders of the Cursed Protector
+							i(99673),	-- Helm of the Cursed Protector
+							i(99677),	-- Chest of the Cursed Vanquisher
+							i(104909),	-- Immerseus' Crystalline Eye
+							i(104918),	-- Pauldrons of Violent Eruption
+							i(104927),	-- Bracers of Purified Spirit
+							i(104936),	-- Darkfallen Shoulderplates
+							i(104945),	-- Petrified Pennyroyal Ring
+							i(104954),	-- Robes of the Blackened Watcher
+							i(104963),	-- Bracers of Broken Causation
+							i(104972),	-- Shadow-Binder's Kilt
+							i(104990),	-- Thranok's Shattering Helm
+							i(104999),	-- Shoulderpads of Pulsing Protection
+							i(105008),	-- Ricocheting Shoulderguards
+							i(105017),	-- Belt of Ominous Trembles
+							i(105026),	-- Cavemaker Wristguards
+							i(105035),	-- Ashen Wall Girdle
+							i(105052),	-- Arcweaver Spell Sword
+							i(105062),	-- Halberd of Inner Shadows
+							i(105071),	-- Miasmic Skullbelt
+							i(105089),	-- Untarnishable Greatbelt
+							i(105098),	-- Shado-Pan Reliquary Kilt
+							i(105107),	-- Festering Primordial Globule
+							i(105116),	-- Lever of the Megantholithic Apparatus
+							i(105125),	-- Hisek's Reserve Longbow
+							i(105134),	-- Skeer's Bloodsoaked Talisman
+							i(105143),	-- Spaulders of the Fallen Warchief
+							i(105152),	-- Revelations of Y'Shaarj
 						}),
 						-- #endif
 						{}),
