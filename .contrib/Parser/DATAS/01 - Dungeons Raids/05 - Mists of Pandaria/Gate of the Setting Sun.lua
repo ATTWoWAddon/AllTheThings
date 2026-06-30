@@ -437,8 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86851)),	-- Painful Thorned Ring (HoF)
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86885)),	-- Spirits of the Sun (Terrace)
 						},
-						-- #endif
-						-- #if BEFORE 5.5.4
+						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95877),	-- Bo-Ris, Horror in the Night
 							i(95732),	-- Caustic Spike Bracers
@@ -468,8 +467,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							i(95734),	-- Treads of the Blind Eye
 							i(95814),	-- Unerring Vision of Lei Shen
 						}),
-						-- #endif
-						-- #if BEFORE 5.5.5
+						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
 							i(105052),	-- Arcweaver Spell Sword
 							i(105035),	-- Ashen Wall Girdle

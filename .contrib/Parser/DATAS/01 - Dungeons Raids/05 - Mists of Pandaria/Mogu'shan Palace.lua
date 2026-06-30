@@ -450,8 +450,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							i(86748),	-- Cape of Three Lanterns
 							i(86790),	-- Vial of Dragon's Blood
 						},
-						-- #endif
-						-- #if BEFORE 5.5.4
+						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95735),	-- Artery Rippers
 							i(95681),	-- Beady-Eye Bracers
@@ -481,8 +480,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							i(95878),	-- Visage of the Doomed
 							i(95791),	-- Wu-Lai, Bladed Fan of the Empyreans
 						}),
-						-- #endif
-						-- #if BEFORE 5.5.5
+						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
 							i(104991),	-- Arcsmasher Bracers
 							i(105045),	-- Belt of the Iron Prison

@@ -304,8 +304,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(89967),	-- Feng's Seal of Binding
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86858)),	-- Seal of the Profane (HoF)
 						},
-						-- #endif
-						-- #if BEFORE 5.5.4
+						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95961),	-- Abandoned Zandalari Firecord
 							i(95962),	-- Abandoned Zandalari Shadowgirdle
@@ -330,8 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(95794),	-- Shield of Twinned Despair
 							i(95767),	-- Spaulders of Primordial Growth
 						}),
-						-- #endif
-						-- #if BEFORE 5.5.5
+						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
 							i(104974),	-- Assurance of Consequence
 							i(104920),	-- Bolt-Burster Grips
