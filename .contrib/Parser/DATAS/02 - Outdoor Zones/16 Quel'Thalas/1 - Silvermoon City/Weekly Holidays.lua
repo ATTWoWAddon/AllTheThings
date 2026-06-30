@@ -13,16 +13,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(250116, {	-- Cache of Quel'Thalas Treasures (N)
 						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
+					i(274714, {	-- Cache of Amani Treasures
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
 				},
 			}, {
 				--q(XXX),	-- A Burning Path Through Time
-				q(93614),	-- A Fel Path Through Time
+				q(93614, { ["timeline"] = { ADDED_12_0_7 } }),	-- A Fel Path Through Time
 				--q(XXX),	-- A Frozen Path Through Time
 				q(93613),	-- A Savage Path Through Time
 				--q(XXX),	-- A Scarred Path Through Time
 				q(93628),	-- A Shadowed Path Through Time
 				q(93611),	-- A Shattered Path Through Time
-				q(93612),	-- A Shrouded Path Through Time
+				q(93612, { ["timeline"] = { ADDED_12_0_5 } }),	-- A Shrouded Path Through Time
+				q(93497, { ["timeline"] = { ADDED_12_1_0 } }),	-- A Soaring Path Through Time
 				--q(XXX),	-- An Original Path Through Time
 			})),
 			n(QUESTS, sharedData({			-- No Cache Quests

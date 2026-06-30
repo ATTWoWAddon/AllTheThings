@@ -392,7 +392,7 @@ local function MatchOrCloneParentInHierarchy(group)
 		local parent = group.parent;
 		if not Eval_ParentInclusionCriteria(parent) then
 			-- app.PrintDebug("PIH-PCrit",app:SearchLink(parent))
-			return
+			return false
 		end
 
 		-- is this a top-level group?
@@ -441,9 +441,9 @@ local function BuildClonedHierarchy(sources)
 				-- need to map the cloned Thing also since it may end up being a parent of another Thing
 				ClonedHierarachyMapping[source] = thing;
 				NestObject(parent, thing);
-			else
+			elseif parent == nil then
 				-- app.PrintDebug("CloneHierarchy-Fail",source.parent,app:SearchLink(source))
-				app.PrintDebug("Search results are missing expected hierarchy (parent). Ensure searches are performed against hierarchical datasets.")
+				app.PrintDebug("Search results are missing expected hierarchy (parent). Ensure searches are performed against hierarchical datasets. ==>",app:SearchLink(source))
 			end
 		-- else app.PrintDebug("Criteria-Fail:",app:SearchLink(source))
 		end

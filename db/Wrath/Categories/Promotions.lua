@@ -90,6 +90,12 @@ q(63450,{coords={
 toy(184871,{u=2}),
 toy(38233,{b=1,q=3,u=2}),
 mnt(348459,{itemID=184865,lvl=20,u=2})}})}}),
+h(-694,{awp=50502,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",rwp=30002,u=2,g={
+mnt(1266345,{itemID=260438,u=2}),
+toy(260622,{u=2}),
+toy(260221,{u=2}),
+mnt(1266866,{itemID=260759,u=2}),
+p(4962,{itemID=260433,u=2})}}),
 x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(683,{providers={{"i",39286}},rwp=30305,u=2,g={
 crit(69846,{achID=683,id=3,providers={{"n",28883}},u=2})}}),

@@ -504,8 +504,7 @@ app:CreateWindow("WorldQuests", {
 					-- print(dungeonID,name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel);
 					local _, gold, unknown, xp, unknown2, numRewards, unknown = GetLFGDungeonRewards(dungeonID);
 					-- print("GetLFGDungeonRewards",dungeonID,GetLFGDungeonRewards(dungeonID));
-					local hg = {}
-					local header = app.CreateRawText(name, { g = hg, dungeonID = dungeonID, description = description, lvl = { minRecLevel or 1, maxRecLevel }, OnUpdate = OnUpdateForLFGHeader})
+					local header = app.CreateRawText(name, { dungeonID = dungeonID, description = description, lvl = { minRecLevel or 1, maxRecLevel }, OnUpdate = OnUpdateForLFGHeader})
 					if expansionLevel and not isHoliday then
 						header.icon = app.CreateExpansion(expansionLevel + 1).icon;
 					elseif isTimeWalker then
@@ -533,20 +532,23 @@ app:CreateWindow("WorldQuests", {
 							end
 							-- Should the rewards be listed in the window based on the level of the rewards
 							if lvl <= minRecLevel then
-								NestObjects(thing, data.g);	-- no need to clone, everything is re-created at the end
+								NestObjects(thing, data.g, true)	-- need to clone here since these are from search results
 							end
 						end
-						hg[#hg + 1] = thing
+						NestObject(header, thing)
 					end
 					gfg[#gfg + 1] = header
 				end
 				MergeObject(temp, groupFinder)
 			end
 
+			app.EnsureObject(temp)
 			-- put all the things into the window data, turning them into objects as well
 			NestObjects(self.data, temp);
 			-- Build the heirarchy
 			self:AssignChildren();
+			-- Fill up the window
+			app.FillGroups(self.data)
 			-- Force Update
 			self:Update(true);
 		end

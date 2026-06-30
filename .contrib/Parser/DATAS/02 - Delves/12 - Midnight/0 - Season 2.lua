@@ -1,0 +1,3 @@
+-- Venomfall Deeps (Nemesis Lair), 51.2, 30.3, MAP.MIDNIGHT.THE_COILED_ISLE
+-- The Ring of Glory, 71.2, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE
+-- Gnarldor Isle, 64.4, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE

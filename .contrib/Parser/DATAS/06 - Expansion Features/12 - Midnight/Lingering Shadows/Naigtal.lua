@@ -2,6 +2,9 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
+local FIELD_ACCOLADE = 3405;
+local DARK_PARTICLE = 267051;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	["groups"] = sharedData({
 		["timeline"] = { ADDED_12_0_5 },
@@ -87,11 +90,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(97256, {	-- Knocking Off the Top (Heroic!)
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
-							["qg"] = 265303,	-- Decimus
+							["qgs"] = {
+								264879,	-- Decimus
+								265303,	-- Decimus
+							},
 							["coords"] = {
 								{ 48.2, 81.2, NAIGTAL },
 								{ 48.5, 81.9, NAIGTAL },
-								--val coords too
+								{ 60.0, 22.1, VAL },
 							},
 							["timeline"] = { ADDED_12_0_7 },
 							["groups"] = sharedData({ ["modID"] = 6 }, {
@@ -228,7 +234,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["coord"] = { 74.2, 73.5, NAIGTAL },
 						}),
 						-- Repeatable
-						q(96720, {	-- Showdown on Naigta (Low Level?)
+						q(96720, {	-- Showdown on Naigtal (Low Level)
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
 							["qgs"] = {
 								265303,	-- Decimus
@@ -240,6 +246,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 48.5, 81.9, NAIGTAL },
 							},
 							["isWeekly"] = true,
+							["groups"] = { i(272125) },	-- Recruit's Cache
 						}),
 						q(96717, {	-- Showdown on Naigtal
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
@@ -252,12 +259,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 48.2, 81.2, NAIGTAL },
 								{ 48.5, 81.9, NAIGTAL },
 							},
-							["groups"] = {
-								-- Box given to Leveling Characters
-								i(272125),	-- Recruit's Cache
-								-- Box given to Max Level Characters
-								i(275690),	-- Riftstalker's Cache
-							},
+							["Level"] = 90,
+							["groups"] = { i(275690) },	-- Riftstalker's Cache
 							["isWeekly"] = true,
 						}),
 						q(96718, {	-- Showdown on Naigtal (Heroic)
@@ -267,6 +270,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 48.2, 81.2, NAIGTAL },
 								{ 48.5, 81.9, NAIGTAL },
 							},
+							["Level"] = 90,
 							["groups"] = { i(275691) },	-- Riftstalker's Overflowing Cache
 							["isWeekly"] = true,
 						}),
@@ -291,18 +295,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["groups"] = { i(276388) },	-- Riftstalker's Overflowing Favor
 						}),
 						q(97085, {	-- Dangerous Enemies: Naigtal
-							--["sourceQuest"] = ??
+							["sourceQuest"] = 96717,	-- Showdown on Naigtal
+							["qg"] = 265303,	-- Decimus
+							["coords"] = {
+								{ 48.2, 81.2, NAIGTAL },
+								{ 48.5, 81.9, NAIGTAL },
+							},
 							["isWeekly"] = true,
 							["groups"] = { i(276389) },	-- Riftstalker's Prize
 						}),
 						q(97086, {	-- Dangerous Enemies: Naigtal (Heroic)
-							--["sourceQuest"] = ??
+							["sourceQuest"] = 96718,	-- Showdown on Naigtal (Heroic)
+							["qg"] = 265303,	-- Decimus
+							["coords"] = {
+								{ 48.2, 81.2, NAIGTAL },
+								{ 48.5, 81.9, NAIGTAL },
+							},
 							["isWeekly"] = true,
 							["groups"] = { i(276390) },	-- Riftstalker's Overflowing Prize
 						}),
 					}),
 					n(RARES, sharedData({ ["isRepeatable"] = true }, {
-						-- Rare at Vennorax Wreckage. It was gone by the time I got there. Coord 29.7, 19.2,	-- Exo
 						n(264569, {	-- Auredar's Chassis <The Vacant Vigilant>
 							["coord"] = { 28.8, 62.9, NAIGTAL },
 							["questID"] = 96316,
@@ -344,12 +357,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(275163),	-- Uarn's Reinforced Headplate
 							},
 						}),
-						n(263955, {	-- Lomelith
+						n(263955, {	-- Lomelith <The Bogshaker>
 							["description"] = "Roams around the area.",
 							["coord"] = { 67.7, 62.9, NAIGTAL },
 							["questID"] = 96208,
 						}),
-						n(263954, {	-- Swalewing Matriarch
+						n(263954, {	-- Swalewing Matriarch <The Manabog Apex>
 							["description"] = "Roams around the area.",
 							["coord"] = { 77.7, 38.0, NAIGTAL },
 							["questID"] = 96207,
@@ -360,7 +373,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(275161),	-- Swamp-Resistant Stompers
 							},
 						}),
-						n(264576, {	-- Slaipaan
+						n(264576, {	-- Slaipaan <The Fel-Gorged>
 							["description"] = "Roams around the area.",
 							["coord"] = { 56.1, 61.4, NAIGTAL },
 							["questID"] = 96320,
@@ -381,7 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(275150),	-- Sporebat Leather Belt
 							},
 						}),
-						n(267422, {	-- Warbringer Thal'kuur
+						n(267422, {	-- Warbringer Thal'kuur <The Mutinied>
 							["description"] = "Roams around the area.",
 							["coord"] = { 56.1, 61.4, NAIGTAL },
 							["questID"] = 97014,
@@ -392,7 +405,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(275157),	-- Swampwalker's Spaulders
 							},
 						}),
-						n(264574, {	-- Warp Agent Xi'grivr
+						n(264574, {	-- Warp Agent Xi'grivr <Ky'veza's Second>
 							["coord"] = { 70.3, 76.4, NAIGTAL },
 							["questID"] = 96319,
 						}),
@@ -592,6 +605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 					})),
 					n(ZONE_DROPS, {
+						i(DARK_PARTICLE),
 						i(276298),	-- Forgotten Fel-Shard Talon (COSMETIC!)
 						i(276288),	-- Forgotten Sword of Vilaldoun (COSMETIC!)
 						i(276368),	-- Partially-Digested Redcap
@@ -602,7 +616,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						i(276300),	-- Vilaldoun Anchorite's Scepter (COSMETIC!)
 					}),
-					n(ZONE_REWARDS, {	--TODO Not sure if available in Val too
+					n(ZONE_REWARDS, {
+						currency(FIELD_ACCOLADE),
 						i(278116),	-- Player Experience
 						n(ARMOR, {
 							filter(BACK_F, {

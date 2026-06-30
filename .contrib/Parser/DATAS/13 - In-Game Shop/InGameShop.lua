@@ -895,6 +895,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(109013, {	-- Dread Raven (MOUNT!)
 			["timeline"] = { ADDED_10_1_0 },
 		}),
+		-- #if ANYCLASSIC
+		mount(1257674, {	-- Embertuft Groveglider
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
 		i(97989, {	-- Enchanted Fey Dragon (MOUNT!)
 			["timeline"] = {
 				-- #if ANYCLASSIC
@@ -968,6 +973,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_9_2_5 },
 		}),
 		-- #if ANYCLASSIC
+		mount(1257676, {	-- Petalbranch Groveglider
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
+		-- #if ANYCLASSIC
 		mount(1229670, {	-- Prophet's Great Crow
 			["timeline"] = { ADDED_5_5_1 },
 		}),
@@ -996,9 +1006,19 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(250972, {	-- Gloombough Groveglider (MOUNT!)
 			["timeline"] = { ADDED_12_0_1, },
 		}),
+		-- #if ANYCLASSIC
+		mount(1257677, {	-- Shadowbough Groveglider
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
 		i(156564, {	-- Shu-zen, the Divine Sentinel (MOUNT!)
 			["timeline"] = { ADDED_8_0_1 },
 		}),
+		-- #if ANYCLASSIC
+		mount(1257673, {	-- Snowfall Groveglider
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
 		mount(308078, {	-- Squeakers, the Trickster (MOUNT!)
 			["timeline"] = { ADDED_8_3_0 },
 		}),

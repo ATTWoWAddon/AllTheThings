@@ -662,7 +662,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(46930, {	-- Rastakhan
 				["sourceQuests"] = { 46957 },	-- Welcome to Zuldazar
 				["provider"] = { "n", 122661 },	-- General Jakra'zet
-				["coord"] = { 49.9, 82.5, DAZARALOR },
+				["coords"] = {
+					{ 49.9, 82.5, DAZARALOR },
+					{ 50.0, 46.1, DAZARALOR },
+				},
 				["races"] = HORDE_ONLY,
 			}),
 			q(47915, {	-- Rescuing the Taken

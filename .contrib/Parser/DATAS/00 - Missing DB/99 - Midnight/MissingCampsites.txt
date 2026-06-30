@@ -1,3 +1,0 @@
-12.1.0.68209
-campsite(155),	-- Silvermoon City
-campsite(158),	-- Silvermoon in Void

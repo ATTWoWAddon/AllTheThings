@@ -47,7 +47,7 @@ mnt(416158,{b=1,description="Obtained if you set up a 12 Month WoW Subscription 
 p(4273,{b=1,description="Obtained if you set up a 6 Month WoW Subscription after 10th January 2024.",itemID=209877,npcID=211012,q=3,spellID=423843,u=2}),
 mnt(49290,{description="Obtained if you set up a 3 Month WoW Subscription between 10th October 2022 until 8th January 2024.",u=2}),
 mnt(74856,{b=1,description="Obtained if you set up a 3 Month WoW Subscription between 8th January 2024 until 8th April 2024.",itemID=74269,lvl=20,q=4,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(471440,{awp=30400,description="Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original for a limited time in the Ingame Shop.",rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(471440,{awp=30400,b=1,description="Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original for a limited time in the Ingame Shop.",itemID=232614,lvl=70,q=4,rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1217476,{awp=30400,description="Rewarded from the Treasure Workshop.",rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(235378,{awp=30400,description="Can be bought for ¥200 RMB (~$27 USD) for a limited time in the Ingame Shop.",rwp=40400,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(459784,{itemID=227362,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -74,7 +74,7 @@ p(333,{b=1,itemID=72134,npcID=54730,q=3,spellID=102317,u=3})),(function(t)if Get
 toy(72159,{b=1,q=3,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(79769,{b=1,q=3,u=3}))}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(235378,{awp=50502,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(267279,{u=3}))}}))}}),
+i(267279,{f=55,u=3}))}}))}}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=20001,u=2,g={
@@ -113,12 +113,12 @@ q(63450,{coords={
 toy(184871,{b=1,q=3,u=2}),
 toy(38233,{b=1,q=3,u=2}),
 mnt(348459,{b=1,itemID=184865,lvl=20,q=4,u=2})}})}}),
-h(-694,{awp=50502,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",rwp=60002,u=3,g={
-mnt(1256677,{itemID=253573,u=3}),
-toy(254666,{u=3}),
-toy(263489,{u=3}),
-p(4903,{itemID=253699,u=3}),
-mnt(1255246,{itemID=252950,u=3})}}),
+h(-694,{awp=50502,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",u=3,g={
+mnt(1266345,{itemID=260438,lvl=30,u=3}),
+toy(260622,{u=3}),
+toy(260221,{u=3}),
+mnt(1266866,{itemID=260759,lvl=70,u=3}),
+p(4962,{itemID=260433,npcID=255820,u=3})}}),
 x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(683,{providers={{"i",39286}},rwp=30305,u=2}),
 p(188,{b=1,itemID=39286,npcID=28883,q=3,rwp=30305,spellID=52615,u=2,g={
@@ -181,7 +181,7 @@ p(124,{b=1,itemID=22781,npcID=16456,q=1,spellID=28505,u=2}),
 p(758,{b=1,itemID=19054,npcID=14756,q=1,spellID=23530,u=2}),
 p(1073,{b=1,itemID=22780,npcID=16445,q=3,spellID=28487,u=2})}}),
 h(-547,{
-s(129974,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,q=1,u=2}),
+s(129974,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,q=2,u=2}),
 p(244,{b=1,description="Granted to players that attach an authenticator to their account.",itemID=49646,npcID=36871,q=3,spellID=69452,u=1}),
 p(240,{awp=40003,b=1,description="Reward from a Korean-exclusive World Event that mailed you this pet.",itemID=48527,npcID=35468,q=3,spellID=67527,u=2,g={
 ach(3896,{u=2})}}),

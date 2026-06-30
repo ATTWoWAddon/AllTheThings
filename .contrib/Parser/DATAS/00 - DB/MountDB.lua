@@ -24,21 +24,21 @@ i(216570, 436329);	-- Reins of the Golden Sabercat
 i(216492, 436288);	-- Whistle of the Mottled Blood Raptor
 
 -- Phase 6
-i(233351, 0); -- Light Green Qiraji Resonating Crystal
-i(233352, 0); -- Dark Blue Qiraji Resonating Crystal
-i(233353, 0); -- Light Blue Qiraji Resonating Crystal
-i(233356, 0); -- Orange Qiraji Resonating Crystal
-i(233357, 0); -- Twilight Qiraji Resonating Crystal
+i(233351, 473847); -- Light Green Qiraji Resonating Crystal
+i(233352, 473856); -- Dark Blue Qiraji Resonating Crystal
+i(233353, 473862); -- Light Blue Qiraji Resonating Crystal
+i(233356, 473872); -- Orange Qiraji Resonating Crystal
+i(233357, 473881); -- Twilight Qiraji Resonating Crystal
 
 -- Phase 7
-i(236662, 0); -- Reins of War
-i(236663, 0); -- Reins of Conquest
-i(236664, 0); -- Reins of Death
-i(236665, 0); -- Reins of Famine
+i(236662, 1220565); -- Reins of War
+i(236663, 1220566); -- Reins of Conquest
+i(236664, 1220567); -- Reins of Death
+i(236665, 1220568); -- Reins of Famine
 
 -- Phase 8
-i(239694, 0); -- Covenant of Light
-i(239695, 0); -- Scarlet Steed
+i(239694, 1229305); -- Covenant of Light
+i(239695, 1229308); -- Scarlet Steed
 
 -- TBC Classic --
 i(184865, 348459);	-- Reawakened Phase-Hunter
@@ -56,10 +56,22 @@ i(201699, 394209);	-- Festering Emerald Drake
 i(207097, 416158);	-- Nightmarish Emerald Drake
 i(0, 440915);		-- Auspicious Arborwyrm
 i(0, 423869);		-- Avatar of Flame
+-- #if AFTER 5.5.3
+i(265937, 446902);	-- Polly Roger
+-- #else
 i(0, 446902);		-- Polly Roger
+-- #endif
+-- #if AFTER 5.5.2
+i(232614, 471440);	-- Skybound Spectral Tiger		(CN Only)
+-- #else
 i(0, 471440);		-- Skybound Spectral Tiger		(CN Only)
+-- #endif
 i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
+-- #if AFTER 5.5.2
+i(226805, 459784);	-- Golden Ashes of Al'ar		(CN Only Classic Version)
+-- #else
 i(0, 459784);		-- Golden Ashes of Al'ar		(CN Only Classic Version)
+-- #endif
 
 -- Cata Classic --
 i(0, 463045);		-- Lava Drake
@@ -71,10 +83,18 @@ i(0, 466980);	-- Chaos-Born Hippogryph
 i(0, 466977);	-- Chaos-Born Wind Rider
 
 --- MOP CLASSIC ---
+i(0, 1229672);		-- Archmage's Great Crow
 i(248741, 1247591);	-- Celestial Riding Crane
 i(248744, 1247597);	-- Celestial Riding Ox
 i(248743, 1247596);	-- Celestial Riding Serpent
 i(248742, 1247598);	-- Celestial Riding Tiger
+i(0, 1257674);		-- Embertuft Groveglider
+i(277652, 1302506);	-- Juvenile Frostwyrm
+i(0, 1257676);		-- Petalbranch Groveglider
+i(0, 1229670);		-- Prophet's Great Crow
+i(0, 1257677);		-- Shadowbough Groveglider
+i(0, 1257673);		-- Snowfall Groveglider
+i(276075, 1298512);	-- Stormcrow
 i(254735, 1258573);	-- Thunderhoof Celestial (CN ONLY)
 --- NYI? ---
 i(0, 1224647);	-- Meeksi Brewrobber
@@ -2254,7 +2274,7 @@ i(246920, 1244260);	-- Void-Razed Elekk
 i(239687, 1229288);	-- Wretched Fel Bat
 --- NYI ---
 i(0, 1254363);	-- (PH LEGION REMIX MOUNT)
-i(250191, 1250481);	-- Bilebound Ur'zul-horn
+i(250191, 1250481);	-- Bilebound Ur'zul
 i(239647, 1229264);	-- Bloodguard Fel Ba
 i(250762, 0);		-- Felfueled Memento of the Abyss
 i(250106, 1250287);	-- Floestrider Crest-Horn
@@ -2426,7 +2446,9 @@ i(268834, 1283838);	-- Zothwing Deepseeker
 ------------------
 -- PATCH 12.0.7 --
 ------------------
+i(273651, 1292344);	-- Bilgewater X-TREME Firework Rocket
 i(210140, 404018);	-- Black-Furred Bakar
+i(273317, 1292102);	-- Blackwater X-TREME Firework Rocket
 i(246731, 1243582);	-- Dusk Grimlynx
 i(274650, 1294663);	-- Netherforged Nullframe
 i(192778, 350220);	-- Liquid Hot Magma Slug
@@ -2439,8 +2461,6 @@ i(274649, 1294648);	-- Voidmancer's Starcarver
 i(0, 1294677);	-- [PH] Horse with Hat
 i(0, 1261369);	-- Amani Hex Bear
 i(274681, 1294767);	-- Badlands Buzzard
-i(273651, 1292344);	-- Bligewater X-TREME Firework Rocket
-i(273317, 1292102);	-- Blackwater X-TREME Firework Rocket
 i(273650, 1292342);	-- Green Rocket Mount [PH]
 i(273652, 1292345);	-- Pink Rocket Mount [PH]
 
@@ -2452,3 +2472,30 @@ i(276802, 1300778);	-- Indigo Coiled Horror
 i(275658, 1297405);	-- Primeval Skyfriend
 i(276801, 1300777);	-- Venomous Coiler
 i(276551, 1299963);	-- Violet-Backed Skyfang
+--- UNSORTED ---
+i(275570, 1296985);	-- [PH] Broomstick Spice - Green
+i(275571, 1296986);	-- [PH] Broomstick Spice - Grey
+i(275572, 1296987);	-- [PH] Broomstick Spice - Hallow
+i(275551, 1296724);	-- [PH] Broomstick Spice - Orange
+i(275573, 1296988);	-- [PH] Broomstick Spice - Pink
+i(275574, 1296989);	-- [PH] Broomstick Spice - Red
+i(277261, 1301817);	-- [PH] Pygmy Owl
+i(275657, 1297404);	-- Apophic Soul Crusher
+i(276881, 1301070);	-- Breath of Blight
+i(276882, 1301074);	-- Breath of Ruin
+i(275654, 1297217);	-- Caustic Venomfang
+i(276162, 1298808);	-- Corroded Soul Crusher
+i(278574, 1305206);	-- Crested Aqua Leafmimic
+i(278573, 1305204);	-- Crested Burnished Leafmimic
+i(278575, 1305207);	-- Crested Verdant Leafmimic
+i(278576, 1305209);	-- Crested Violet Leafmimic
+i(276553, 1299965);	-- Emerald Skyfang
+i(275659, 1297407);	-- Hexflame Reaver
+i(275660, 1297408);	-- Preyhunter's Courser
+i(273838, 1292668);	-- Spirit of Tok'jara
+i(0, 1295958);	-- Swift Spectral Eagle
+i(276804, 1300776);	-- The Writhing Brood
+i(277192, 1301775);	-- Umbral Ashes
+i(275302, 1266211);	-- Venomous Gladiator's Goredrake
+i(275433, 1296670);	-- Vicious Lightbloom Boar [A]
+i(275432, 1296672);	-- Vicious Lightbloom Boar [H]

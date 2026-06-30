@@ -811,7 +811,7 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 		ResolveFunctions.finalize(finalized, searchResults);
 		return;
 	end
-	app.print("Could not find subroutine", sub);
+	app.report("Could not find subroutine", sub);
 end;
 local NonSelectCommands = {
 	finalize = true,
@@ -838,7 +838,7 @@ local HandleCommands = app.Debugging and function(finalized, searchResults, o, o
 				debug = false
 			end
 		else
-			app.print("Unknown symlink command",cmd);
+			app.report("Unknown symlink command",cmd);
 		end
 		-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"from",o.hash,"with:",unpack(sym))
 	end
@@ -851,7 +851,7 @@ end or function(finalized, searchResults, o, oSym)
 		if cmdFunc then
 			cmdFunc(finalized, searchResults, o, unpack(sym));
 		else
-			app.print("Unknown symlink command",cmd);
+			app.report("Unknown symlink command",cmd);
 		end
 	end
 end
@@ -896,7 +896,7 @@ ResolveSymbolicLink = function(o, refonly)
 		-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 		sHash = clone.hash;
 		if clone == o or (sHash and sHash == oHash) then
-			app.print("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text,i,FinalizeModID)
+			app.report("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text,i,FinalizeModID)
 		else
 			clone = CreateObject(clone)
 			cloned[#cloned + 1] = clone

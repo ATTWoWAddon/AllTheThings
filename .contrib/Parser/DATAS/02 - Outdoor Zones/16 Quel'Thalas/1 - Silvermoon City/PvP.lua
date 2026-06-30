@@ -38,6 +38,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["timeline"] = { ADDED_12_0_7 },
 					["groups"] = { i(275134) },	-- Otherworldly Spark of War (QI!)
 				}),
+				q(96725, {	-- Sparks of War: Val
+					["timeline"] = { ADDED_12_0_7 },
+					["groups"] = { i(275134) },	-- Otherworldly Spark of War (QI!)
+				}),
 				q(93426, {	-- Sparks of War: Voidstorm
 					i(219934),	-- Spark of War (QI!)
 				}),

@@ -19,9 +19,9 @@ q(65562,{altQuests={65561},coords={
 s(134092,23705,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",f=9,q=4,u=3})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=60,q=4,u=2})),
 q(96254,{altQuests={96253},awp=20505,coords={
-[1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=20505,u=3,g={
-i(273162,{u=3,g={
-mnt(1291813,{description="Earned by completing the introductory questline for Midnight in retail servers",itemID=273150,lvl=70,u=3})}})}})}}),
+[1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=20505,u=2,g={
+i(273162,{u=2,g={
+mnt(1291813,{description="Earned by completing the introductory questline for Midnight in retail servers",itemID=273150,lvl=70,u=2})}})}})}}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=20001,u=2,g={

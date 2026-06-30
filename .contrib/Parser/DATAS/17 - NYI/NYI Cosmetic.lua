@@ -545,22 +545,16 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233931),	-- [PH] Shoulder
 				i(233933),	-- [PH] Tabard
 				i(233238),	-- Azure Pack of Lunar Explosives
-				i(233173),	-- Banded Cloudy War Slippers
-				i(233156),	-- Banded Cloudy War Wraps
 				i(233172),	-- Banded Grassy War Slippers
 				i(233155),	-- Banded Grassy War Wraps
 				i(233177),	-- Banded Lively War Slippers
 				i(233160),	-- Banded Lively War Wraps
 				i(234758),	-- Korkron Spaulders
-				i(233100),	-- Long Cloudy War Skirt
-				i(233139),	-- Long Cloudy War Skirt and Leg Wraps
 				i(233099),	-- Long Grassy War Skirt
 				i(233138),	-- Long Grassy War Skirt and Leg Wraps
 				i(233104),	-- Long Lively War Skirt
 				i(233143),	-- Long Lively War Skirt and Leg Wraps
 				i(232924),	-- Sailor's Belt
-				i(233083),	-- Short Cloudy War Skirt
-				i(233122),	-- Short Cloudy War Skirt and Leg Wraps
 				i(233082),	-- Short Grassy War Skirt
 				i(233121),	-- Short Grassy War Skirt and Leg Wraps
 				i(233087),	-- Short Lively War Skirt
@@ -844,12 +838,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(242443),	-- Brick Sweatpants
 				i(242414),	-- Brick Sweatshirt
 
-				------ Cloudy Sweatsuit Set ------
-				i(242459),	-- Ensemble: Cloudy Sweatsuit
-				q(90643),	-- Ensemble: Cloudy Sweatsuit
-				i(242440),	-- Cloudy Sweatpants
-				i(242411),	-- Cloudy Sweatshirt
-
 				------ Deep Sweatsuit Set ------
 				i(242460),	-- Ensemble: Deep Sweatsuit
 				q(90644),	-- Ensemble: Deep Sweatsuit
@@ -1033,7 +1021,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(252742),	-- Brick Winter Toque
 				i(249718),	-- Bronze Food Fanatic Backpack
 				i(252741),	-- Camo Winter Toque
-				i(252714),	-- Cloudy Winter Toque
 				i(252715),	-- Deep Winter Toque
 				i(249719),	-- Fine Food Fanatic Backpack
 				i(235903),	-- Gold Lightforged Chestguard
@@ -1070,26 +1057,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(249738),	-- Seafarer's Winter Pauldrons
 				i(249862),	-- Seafarer's Winter Spaulders
 				i(249739),	-- Seafarer's Winter Tunic
-
-				------ Villager's Seaside Set 1 ------
-				i(249932),	-- Ensemble: Villager's Seaside Attire
-				q(92115),	-- Ensemble: Villager's Seaside Attire
-				i(249931),	-- Villager's Seaside Boots
-				i(249929),	-- Villager's Seaside Buckle
-				i(249926),	-- Villager's Seaside Cap
-				i(249927),	-- Villager's Seaside Handwraps
-				i(249930),	-- Villager's Seaside Pants
-				i(249928),	-- Villager's Seaside Tunic
-
-				------ Villager's Seaside Set 2 ------
-				i(250897),	-- Ensemble: Villager's Seaside Collection
-				q(92368),	-- Ensemble: Villager's Seaside Collection
-				i(250894),	-- Villager's Seaside Belt
-				i(250893),	-- Villager's Seaside Blouse
-				i(250891),	-- Villager's Seaside Bonnet
-				i(250892),	-- Villager's Seaside Gloves
-				i(250896),	-- Villager's Seaside Sabatons
-				i(250895),	-- Villager's Seaside Skirt
 
 				------ Unused duplicated Ensembles ------
 				i(241600),	-- Ensemble: Chains of the Chosen Dead
@@ -1194,11 +1161,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(257994),	-- Ensemble: Sorcerer's Carrot Garb
 				i(257789),	-- Sorcerer's Carrot Cape
 				i(257770),	-- Sorcerer's Carrot Cowl
-
-				------ Sorcerer's Cloudy Garb Set ------
-				i(257975),	-- Ensemble: Sorcerer's Cloudy Garb
-				i(257783),	-- Sorcerer's Cloudy Cape
-				i(257763),	-- Sorcerer's Cloudy Cowl
 
 				------ Sorcerer's Crimson Garb Set ------
 				i(258017),	-- Ensemble: Sorcerer's Crimson Garb
@@ -1313,7 +1275,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(253048),	-- Crusader's Emerald Greatblade
 				i(253274),	-- Crusader's Emerald Greatmace
 				i(253278),	-- Crusader's Emerald Mace
-				i(260383),	-- Quel'Danil Shortbow
 				i(260384),	-- Dark Red Wooden Shortbow
 				i(260385),	-- Frost Wooden Shortbow
 				i(250315),	-- Hunter's Etched Glaive
@@ -1358,7 +1319,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(266077),	-- Basic Black Quiver
 				i(266078),	-- Basic Blue Quiver
 				i(266079),	-- Basic Bronze Quiver
-				i(266081),	-- Quel'Danil Quiver
 				i(266082),	-- Basic Dark Red Quiver
 				i(266083),	-- Basic Frost Quiver
 				i(266085),	-- Basic Ice Quiver
@@ -1379,9 +1339,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(262847),	-- Carrot Dunecloth Belt
 				i(262829),	-- Carrot Dunecloth Skirt
 				i(262866),	-- Carrot Dunecloth Vest
-				i(262841),	-- Cloudy Dunecloth Belt
-				i(262823),	-- Cloudy Dunecloth Skirt
-				i(262858),	-- Cloudy Dunecloth Vest
 				i(262850),	-- Crimson Dunecloth Belt
 				i(262832),	-- Crimson Dunecloth Skirt
 				i(262868),	-- Crimson Dunecloth Vest
@@ -1464,7 +1421,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(260741),	-- Big Lil' Blue Whirlwind
 				i(260744),	-- Big Lil' Green Whirlwind
 				i(260745),	-- Big Lil' Red Whirlwind
-				i(264969),	-- Extinction Voulge
+				i(264969, {["sourceID"] = 303634}),	-- Extinction Voulge
 				i(260737),	-- Forest Dweller's Dawn Staff
 				i(260736),	-- Forest Dweller's Mossy Staff
 				i(260739),	-- Forest Dweller's Night Staff

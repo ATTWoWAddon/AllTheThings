@@ -21,6 +21,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264480),	-- Greenvine Amani Tapestry (DECOR!)
 					i(253469),	-- Ritual-Cursed Sarcophagus (DECOR!)
 					i(264479),	-- Skyweave Amani Tapestry (DECOR!)
+					i(278691, {	-- Twilight Brazier (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+					}),
 					i(255648, {	-- Zul'Aman Ancestral Fountain (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),

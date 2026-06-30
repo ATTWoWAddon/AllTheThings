@@ -2299,5 +2299,59 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(235036)), -- Vigilante's Sunny Mask
 			}),
 		})),
+		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.67823", "removed 12.0.7.99999" } }, {	-- TODO: Timeline in/out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(273651),	-- Bilgewater X-TREME Firework Rocket (MOUNT!)
+			}),
+			filter(MOUNTS, {
+				traderstender(700, i(273317)),	-- Blackwater X-TREME Firework Rocket (MOUNT!)
+				traderstender(575, i(243596)),	-- Wailing Banshee's Charger (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(250, i(228793)),	-- Chillbot 9000 (PET!)
+				traderstender(250, i(228790)),	-- Thrillbot 9000 (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(250, i(274079)),	-- Azure Extravaganza Rocketmace
+				traderstender(250, i(274072)),	-- Azure Extravaganza Rocketstaff
+				traderstender(250, i(274085)),	-- Azure Extravaganza Sparkwheel
+				traderstender(40, i(274054)),	-- Bandit's Cloudy Highboot
+				traderstender(20, i(233173)),	-- Banded Cloudy War Slippers
+				traderstender(20, i(233156)),	-- Banded Cloudy War Wraps
+				traderstender(50, i(228907)),	-- Bot Wrangler's Belt
+				traderstender(100, i(228909)),	-- Bot Wrangler's Crimson Apron
+				traderstender(100, i(228908)),	-- Bot Wrangler's Violet Apron
+				traderstender(50, i(273126)),	-- Classic Azure Eyepatch
+				traderstender(30, i(262841)),	-- Cloudy Dunecloth Belt
+				traderstender(35, i(262823)),	-- Cloudy Dunecloth Skirt
+				traderstender(35, i(262858)),	-- Cloudy Dunecloth Vest
+				traderstender(50, i(252714)),	-- Cloudy Winter Toque
+				traderstender(50, i(270284)),	-- Crown of Cloudy Springflowers
+				traderstender(100, iensemble(242459)),	-- Ensemble: Cloudy Sweatsuit
+				traderstender(100, iensemble(257975)),	-- Ensemble: Sorcerer's Cloudy Garb
+				traderstender(440, iensemble(249932)),	-- Ensemble: Villager's Seaside Attire
+				traderstender(440, iensemble(250897)),	-- Ensemble: Villager's Seaside Collection
+				traderstender(700, iensemble(244226)),	-- Ensemble: Wailing Banshee's Collection
+				traderstender(50, i(274624)),	-- Gunslinger's Cloudy Lid
+				traderstender(40, i(233100)),	-- Long Cloudy War Skirt
+				traderstender(50, i(233139)),	-- Long Cloudy War Skirt and Leg Wraps
+				traderstender(100, i(266081)),	-- Quel'Danil Quiver
+				traderstender(80, i(260383)),	-- Quel'Danil Shortbow
+				traderstender(250, i(274082)),	-- Rosy Extravaganza Rocketmace
+				traderstender(250, i(274075)),	-- Rosy Extravaganza Rocketstaff
+				traderstender(250, i(274088)),	-- Rosy Extravaganza Sparkwheel
+				traderstender(40, i(233083)),	-- Short Cloudy War Skirt
+				traderstender(50, i(233122)),	-- Short Cloudy War Skirt and Leg Wraps
+				traderstender(50, i(273134)),	-- Stylish Snowy Top Hat
+				traderstender(200, i(242523)),	-- Wailing Banshee's Cauldron
+				traderstender(200, i(242629)),	-- Wailing Banshee's Blade
+				traderstender(245, i(242633)),	-- Wailing Banshee's Great Blade
+				traderstender(175, i(242378)),	-- Wailing Banshee's Longbow
+				traderstender(200, i(242350)),	-- Wailing Banshee's Mace
+				traderstender(175, i(242383)),	-- Wailing Banshee's Quiver
+				traderstender(200, i(242354)),	-- Wailing Banshee's Warglaives
+				traderstender(150, i(242388)),	-- Wailing Banshee's Wand
+			}),
+		})),
 	}),
 }));

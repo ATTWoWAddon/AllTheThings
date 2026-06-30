@@ -818,9 +818,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 										["groups"] = {
-											i(178682),	-- Atticus's Ledger (QI!)
+											o(352018, {	-- Atticus's Lockbox
+												["coord"] = { 55.1, 55.1, MALDRAXXUS },
+												["groups"] = { i(178682) },	-- Atticus's Ledger (QI!)
+											}),
 											i(178678),	-- Call Atticus (QI!)
-											i(175133),	-- Ossein Battlemail (QI!)
+											o(352019, {	-- Ossein Battlemail
+												["coords"] = {
+													{ 53.4, 57.0, MALDRAXXUS },
+													{ 53.5, 57.0, MALDRAXXUS },
+													{ 54.4, 57.6, MALDRAXXUS },
+													{ 54.9, 59.1, MALDRAXXUS },
+													{ 55.3, 58.4, MALDRAXXUS },
+													{ 55.9, 53.7, MALDRAXXUS },
+													{ 56.2, 51.8, MALDRAXXUS },
+												},
+												["groups"] = { i(175133) },	-- Ossein Battlemail (QI!)
+											}),
 											i(178681),	-- Slim Shinbone (QI!)
 										},
 									}),
@@ -872,6 +886,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["groups"] = {
 										i(184205),	-- Long-Lost Crown
 										i(184204),	-- Otherworld Hat
+										i(183760),	-- Venthyr Spectacles
 									},
 								}),
 							},
@@ -1238,8 +1253,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 										["groups"] = {
-											i(183138),	-- Chosen Razorstone (QI!)
 											i(183127),	-- Call Guillotine (QI!)
+											o(335503, {	-- Bonesheared Grinder
+												["coords"] = {
+													{ 38.7, 64.2, MALDRAXXUS },
+													{ 39.4, 64.5, MALDRAXXUS },
+													{ 40.0, 60.7, MALDRAXXUS },
+													{ 41.3, 62.9, MALDRAXXUS },
+													{ 41.7, 71.0, MALDRAXXUS },
+												},
+												["groups"] = { i(183138) },	-- Chosen Razorstone (QI!)
+											}),
 										},
 									}),
 									q(60340, {	-- Hands on Approach

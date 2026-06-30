@@ -4340,7 +4340,7 @@ cu(2027,{requireSkill=202})}}),
 q(66380,{isWeekly=1,providers={{"i",193903}},requireSkill=202,g={
 cu(2027,{requireSkill=202})}}),
 q(70517,{coords={
-[2025]={{49.4,62.6}}},crs={194656},description="Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198970}},requireSkill=202,g={
+[2025]={{49.4,62.6}}},crs={196632},description="Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198970}},requireSkill=202,g={
 cu(2027,{requireSkill=202})}}),
 q(70516,{coords={
 [2025]={{57.2,60.4}}},crs={193244},description="Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",isWeekly=1,providers={{"i",198969}},requireSkill=202,g={
@@ -7336,7 +7336,7 @@ cu(2025,{requireSkill=165})}}),
 q(66385,{isWeekly=1,providers={{"i",193913}},requireSkill=165,g={
 cu(2025,{requireSkill=165})}}),
 q(70522,{coords={
-[2022]={{79.4,32.5},{80.6,33.8}}},crs={190056,196420},description="Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198975}},requireSkill=165,g={
+[2022]={{79.4,32.5},{80.6,33.8}}},crs={190056,195241,196420},description="Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198975}},requireSkill=165,g={
 cu(2025,{requireSkill=165})}}),
 q(70523,{coords={
 [2025]={{31.3,76.5},{32.4,73.5},{35.4,72.8},{36.6,72.8}}},crs={188277,191203,191317},description="Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198976}},requireSkill=165,g={
@@ -7673,7 +7673,9 @@ ah(253335,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276616}
 q(48752,{coords={
 [1161]={{75.01,7.61}}},description="Requires 50 Kul'Tiran Mining.",lvl=10,qgs={136091},r=2,requireSkill=186,g={
 r(253334,{requireSkill=186}),
-i(160902,{requireSkill=186})}}),
+o(291242,{coords={
+[895]={{78.2,49},{79,48.2},{79.2,47.3},{79.4,49.7},{79.7,47.4},{79.7,50.5},{79.8,46},{79.8,47.5},{80,49.6},{80.1,48.8},{80.5,49.6},{80.6,46.7},{80.8,49}}},requireSkill=186,g={
+i(160902,{requireSkill=186})}})}}),
 q(51962,{coords={
 [1165]={{44,39}}},description="Requires 50 Zandalari Mining",lvl=10,qgs={122694},r=1,requireSkill=186,g={
 r(253334,{requireSkill=186}),

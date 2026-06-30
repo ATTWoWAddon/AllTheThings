@@ -1760,8 +1760,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=14,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=6,["monthDay"]=14,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=21,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=6,["monthDay"]=21,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=28,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=6,["monthDay"]=28,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=7,["monthDay"]=12,["weekday"]=1,["year"]=2026}),
@@ -1812,7 +1810,9 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=23,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=23,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=30,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=5,["monthDay"]=30,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=6,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=6,["monthDay"]=6,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=13,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=6,["monthDay"]=13,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=13,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=6,["monthDay"]=13,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=20,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=6,["monthDay"]=20,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=27,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=6,["monthDay"]=27,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -4198,6 +4198,7 @@ local ObjectNames = {
 	[185861] = "Fel Cannonball Stack",
 	[185877] = "Nethercite Deposit",
 	[185881] = "Netherdust Bush",
+	[185890] = "Apexis Relic",
 	[185913] = "Skull Pile",
 	[185915] = "Netherwing Egg",
 	[185928] = "Ancient Skull Pile",
@@ -7544,6 +7545,7 @@ local ObjectModels = {
 	[185861] = 192333,
 	[185877] = 219544,
 	[185881] = 219493,
+	[185890] = 191535,
 	[185913] = 190688,
 	[185915] = 200966,
 	[185928] = 190688,
@@ -9491,7 +9493,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753956000,
+		release = 1753981200,
 		state = 2,
 	},
 	[5002] = {
@@ -9500,7 +9502,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1754992800,
+		release = 1755018000,
 		state = 2,
 	},
 	[5003] = {
@@ -9509,7 +9511,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755770400,
+		release = 1755795600,
 		state = 2,
 	},
 	[5004] = {
@@ -9518,7 +9520,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756202400,
+		release = 1756227600,
 		state = 2,
 	},
 	[5005] = {
@@ -9527,7 +9529,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756807200,
+		release = 1756832400,
 		state = 2,
 	},
 	[5006] = {
@@ -9536,7 +9538,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756980000,
+		release = 1757005200,
 		state = 2,
 	},
 	[5007] = {
@@ -9545,7 +9547,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758016800,
+		release = 1758042000,
 		state = 2,
 	},
 	[51] = {
@@ -9570,7 +9572,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765969200,
+		release = 1765994400,
 		state = 2,
 	},
 	[53] = {
@@ -9595,7 +9597,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1776679200,
+		release = 1776704400,
 		state = 2,
 	},
 };
@@ -11932,6 +11934,7 @@ localize(ObjectNames, {
 	[185861] = "Stapel mit Teufelskanonenkugeln",
 	[185877] = "Netheritvorkommen",
 	[185881] = "Netherstaubbusch",
+	[185890] = "Apexisrelikt",
 	[185913] = "Schädelhaufen",
 	[185915] = "Ei der Netherschwingen",
 	[185928] = "Uralter Schädelhaufen",
@@ -15020,6 +15023,7 @@ localize(ObjectNames, {
 	[185861] = "Pile de boulets de gangrecanon",
 	[185877] = "Gisement de néanticite",
 	[185881] = "Buisson de pruinéante",
+	[185890] = "Relique apogide",
 	[185913] = "Pile de crânes",
 	[185915] = "Œuf de l'Aile-du-Néant",
 	[185928] = "Pile de crânes anciens",
@@ -17357,6 +17361,7 @@ localize(ObjectNames, {
 	[185861] = "Pila di Palle del Vilcannone",
 	[185877] = "Deposito di Faturcite",
 	[185881] = "Cespuglio di Nubefatua",
+	[185890] = "Reliquia Apexis",
 	[185913] = "Pila di Teschi",
 	[185915] = "Uovo di Alafatua",
 	[185928] = "Cumulo di Antichi Teschi",
@@ -20061,6 +20066,7 @@ localize(ObjectNames, {
 	[185861] = "Pilha de Balas de Canhão Vil",
 	[185877] = "Depósito de Etercita",
 	[185881] = "Arbusto de Poeira Etérea",
+	[185890] = "Relíquia Apexis",
 	[185913] = "Pilha de Crânios",
 	[185915] = "Ovo da Asa Etérea",
 	[185928] = "Pilha de Crânios Antiga",
@@ -23523,6 +23529,7 @@ localize(ObjectNames, {
 	[185861] = "Груда пушечных ядер Скверны",
 	[185877] = "Залежи хаотита",
 	[185881] = "Куст пустопраха",
+	[185890] = "Апекситовая реликвия",
 	[185913] = "Груда черепов",
 	[185915] = "Яйцо дракона из стаи Крыльев Пустоты",
 	[185928] = "Груда древних черепов",
@@ -26257,6 +26264,7 @@ localize(ObjectNames, {
 	[185861] = "지옥 포탄 더미",
 	[185877] = "황천연 광맥",
 	[185881] = "황천티끌 덤불",
+	[185890] = "에펙시스 유물",
 	[185913] = "해골 더미",
 	[185915] = "황천날개 알",
 	[185928] = "고대 해골 더미",
@@ -29890,6 +29898,7 @@ localize(ObjectNames, {
 	[185861] = "Montón de balas de cañón vil",
 	[185877] = "Depósito de abisalita",
 	[185881] = "Arbusto de polvo abisal",
+	[185890] = "Reliquia apexis",
 	[185913] = "Montón de cráneos",
 	[185915] = "Huevo de Ala Abisal",
 	[185928] = "Montón de cráneos antiguos",
@@ -33907,6 +33916,7 @@ localize(ObjectNames, {
 	[185861] = "邪能炮弹堆",
 	[185877] = "虚空矿脉",
 	[185881] = "灵尘灌木丛",
+	[185890] = "埃匹希斯圣物",
 	[185913] = "颅骨堆",
 	[185915] = "灵翼龙卵",
 	[185928] = "上古颅骨堆",

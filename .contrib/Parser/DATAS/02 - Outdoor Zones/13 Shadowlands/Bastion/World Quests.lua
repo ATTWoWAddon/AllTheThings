@@ -45,9 +45,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(62235, {	-- Allay Their Fears
-				["groups"] = {
-					i(183045),	-- Korinna's Allaying Crook (QI!)
-				},
+				o(357754, {	-- Korinna's Allaying Crook
+					["coord"] = { 51.3, 59.6, BASTION },
+					["groups"] = { i(183045) },	-- Korinna's Allaying Crook (QI!)
+				}),
 			}),
 			q(59601, {	-- Assault on the Vestibule
 				o(348830, {	-- Depleted Anima Canister

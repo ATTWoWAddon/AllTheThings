@@ -5,6 +5,7 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(VOLDUN, {
 		n(ZONE_DROPS, {
+			i(160735),	-- Ashvane Garb
 			i(158909, {	-- Beastbreaker Cage Key
 				["coords"] = {
 					{ 48.2, 39.6, VOLDUN },

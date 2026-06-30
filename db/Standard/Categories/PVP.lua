@@ -42045,7 +42045,7 @@ toy(242636,{b=1,lvl=80,pvp=1,u=2}),
 title(539,{collectible=false,pvp=1,u=2})}}),
 ach(42023,{pvp=1,u=2,g={
 toy(242636,{b=1,lvl=80,pvp=1,u=2})}}),
-ach(42044,{pvp=1,u=2}),
+ach(42044,{c={2,5,7,10,11,13},pvp=1,u=2}),
 ach(42033,{pvp=1,u=2,g={
 title(634,{pvp=1,u=2})}}),
 ach(42800,{pvp=1,g={
@@ -43770,9 +43770,9 @@ i(230284,{b=1,description="Rewarded within the first few wins in queued PvP Cont
 x(12,{awp=120001,pvp=1,g={
 h(-305,{pvp=1,rwp=130000,g={
 h(-12,{pvp=1,g={
-ach(61200,{pvp=1,g={
+ach(61200,{c={2,5,7,10,11,13},pvp=1,g={
 s(300663,255969,{b=1,f=3,lvl=90,pvp=1})}}),
-ach(61199,{pvp=1,g={
+ach(61199,{c={2,5,7,10,11,13},pvp=1,g={
 s(300662,255968,{b=1,f=3,lvl=90,pvp=1})}})}})}}),
 h(-666,{pvp=1,g={
 h(-12,{pvp=1,rwp=120100,g={

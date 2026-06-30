@@ -370,6 +370,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				--q(93883),	-- Restored Coffer Key (itemID 263191)
 
 				--q(93686),	-- tiggered after a delve
+				q(95155),	-- Nullaeus ?
+				q(96416),	-- Nullaeus ??
 			}),
 		},
 	}),

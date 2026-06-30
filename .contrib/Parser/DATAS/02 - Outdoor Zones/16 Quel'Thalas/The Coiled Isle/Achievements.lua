@@ -4,7 +4,10 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		n(ACHIEVEMENTS, {
-			ach(63633),	-- A Stack of Snacks
+			ach(63633, {	-- A Stack of Snacks
+				["coord"] = { 69.3, 52.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["cr"] = 256872,	-- Ki'clak <The Snip Shapper>
+			}),
 			ach(63631),	-- Captain Tokka's Crew
 			ach(63358, {	-- Coiled to Strike
 				i(263873),	-- Amani Forge (DECOR!)
@@ -28,7 +31,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 40.6, 90.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			skyriding(ach(63394, {	-- Skyriding Glyphs: The Fangs
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["coord"] = { 37.4, 60.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			skyriding(ach(63420, {	-- Skyriding Glyphs: The Forum
 				["coord"] = { 26.6, 63.1, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -43,12 +46,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 70.3, 48.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			skyriding(ach(63421, {	-- Skyriding Glyphs: The Wreck of Sethralis's Scales
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["coord"] = { 28.8, 75.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			skyriding(ach(63424, {	-- Skyriding Glyphs: Tokka's Landing
 				["coord"] = { 58.9, 48.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			ach(63641),	-- Snake Charmed, I'm Sure
+			ach(63662),	-- Student of Hissstory
 			skyriding(ach(63395, {	-- The Coiled Isles Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{ "meta_achievement",

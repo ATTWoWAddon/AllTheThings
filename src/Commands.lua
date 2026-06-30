@@ -22,9 +22,9 @@ end
 
 -- Clickable ATT Chat Link Handling
 local reports = {};
-function app:SetupReportDialog(id, reportMessage, text)
+function app:SetupReportDialog(id, reportMessage, text, replace)
 	-- Store some information for use by a report popup by id
-	if not reports[id] then
+	if not reports[id] or replace then
 		-- print("Setup Report", id, reportMessage)
 		reports[id] = {
 			msg = reportMessage,
@@ -71,9 +71,12 @@ hooksecurefunc("SetItemRef", function(link, text)
 end);
 
 -- Chat Links
+do
+local LeftClickAtlas = CreateAtlasMarkup('NPE_LeftClick', 14, 13)
 function app:Linkify(text, color, operation)
 	-- Turns a bit of text into a colored link which ATT will attempt to understand
-	return "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
+	return LeftClickAtlas.."|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
+end
 end
 function app:SearchLink(group)
 	if not group then return end

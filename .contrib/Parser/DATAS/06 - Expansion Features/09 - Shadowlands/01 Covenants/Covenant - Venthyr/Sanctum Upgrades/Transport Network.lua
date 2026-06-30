@@ -97,7 +97,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								n(MIRROR_RESTORATION, {
 									n(166133, {	-- Simone
 										i(181363, {	-- Handcrafted Mirror Repair Kit
-											["cost"] = { { "c", 1820, 20 } },	-- 20x Infused Ruby
+											["cost"] = { { "c", 1820, 10 } },	-- 10x Infused Ruby
 											["sourceQuest"] = 59740,	-- Repair and Restore
 										}),
 									}),

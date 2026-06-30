@@ -753,6 +753,9 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 			l:SetPoint("TOP", f, "TOP", 0, -3);
 			l:SetJustifyH("CENTER");
 			l:SetText(label or "");
+			l:SetWordWrap(true)
+			l:SetPoint("LEFT", f, "LEFT", 10, -10)
+			l:SetPoint("RIGHT", f, "RIGHT", -10, -10)
 			f.Label = l;
 			sf:SetPoint("TOP", l, "BOTTOM", 0, -5)
 		else

@@ -1514,49 +1514,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if ANYCLASSIC
-				q(5634, {	-- Desperate Prayer
-					["altQuests"] = {
-						5635,	-- Desperate Prayer [Elwynn Forest]
-						5636,	-- Desperate Prayer [Teldrassil]
-						5637,	-- Desperate Prayer [Dun Morogh]
-						5638,	-- Desperate Prayer [Stormwind City #2]
-						5639,	-- Desperate Prayer [Ironforge]
-						5640,	-- Desperate Prayer [Darnassus]
-					},
-					["qgs"] = {
-						11401,	-- Priestess Alathea <Priest Trainer>
-						1226,	-- Maxan Anvol <Priest Trainer>
-						377,	-- Priestess Josetta <Priest Trainer>
-						11406,	-- High Priest Rohan <Priest Trainer>
-						11397,	-- Nara Meideros <Priest Trainer>
-						376,	-- High Priestess Laurena <Priest Trainer>
-						3600,	-- Laurna Morninglight <Priest Trainer>
-					},
-					["coords"] = {
-						{ 39.6, 80.8, DARNASSUS },
-						{ 47.2, 52.2, DUN_MOROGH },
-						{ 43.4, 65.6, ELWYNN_FOREST },
-						{ 26.4, 7.6, IRONFORGE },
-						{ 20.8, 50.2, STORMWIND_CITY },
-						{ 38.8, 26.6, STORMWIND_CITY },
-						{ 55.6, 56.8, TELDRASSIL },
-					},
-					["timeline"] = { REMOVED_3_0_2 },
-					["races"] = { HUMAN, DWARF },
-					["classes"] = { PRIEST },
-					["lvl"] = 10,
-					-- #if BEFORE 3.0.2
-					["groups"] = {
-						{
-							["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
-							["rank"] = 1,
-						},
-					},
-					-- #endif
-				}),
-				-- #endif
-				-- #if NOT ANYCLASSIC
 				q(5634, {	-- Desperate Prayer
 					["altQuests"] = {
 						5635,	-- Desperate Prayer [Elwynn Forest]
@@ -1581,8 +1538,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				-- #endif
-				-- #if NOT ANYCLASSIC
 				q(5638, {	-- Desperate Prayer
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
@@ -1607,7 +1562,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				-- #endif
 				q(26420, {	-- Diggin' For Worms
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
@@ -1696,7 +1650,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
 				}),
-				-- #if NOT ANYCLASSIC
 				q(5673, {	-- Elune's Grace [Stormwind City]
 					["altQuests"] = {
 						5672,	-- Elune's Grace [Darnassus]
@@ -1717,7 +1670,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				-- #endif
 				q(7637, {	-- Emphasis on Sacrifice
 					["sourceQuests"] = {
 						7670,	-- Lord Grayson Shadowbreaker [Ironforge]

@@ -1333,6 +1333,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 				["crs"] = {
 					196420,	-- Cavern Hunter (Thaldraszus)
+					195241,	-- Primal Proto-Drake
 					190056,	-- Primal Proto-Drake
 				},
 			}),

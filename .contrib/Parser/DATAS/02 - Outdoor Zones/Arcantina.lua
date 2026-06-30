@@ -154,12 +154,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					i(253175),	-- Hyjal Climbing Vine (DECOR!)
 				},
 			}),
-			q(90718, {	-- Request of the Arcantina
+			h(q(90718, {	-- Request of the Arcantina
 				["sourceQuests"] = { 92520 },	-- Wake of the Darkwell
 				["qg"] = 240265,	-- Chief Telemancer Oculeth
 				["coord"] = { 47.4, 69.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = { i(260165) },	-- Request for Reagents (PQI!)
-			}),
+			})),
 		}),
 		n(TREASURES, {	-- "optional" Objects to loot while on or after completing Quests to get the Cost items for 'Highly Decorated'
 			o(572030, {	-- Ebon Banner
@@ -254,101 +254,98 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			o_repeated({	-- Giant Growth Potion
 				i(6662),	-- Elixir of Giant Growth
 				o(571494, {	-- Giant Growth Potion
-					["coord"] = { 44.9, 60.5, ARCANTINA },
+					["coord"] = { 45.0, 60.5, ARCANTINA },
 					["questID"] = 92349,
 				}),
 				o(571554, {	-- Giant Growth Potion
-					["coord"] = { 30.6, 43.8, ARCANTINA },
+					["coord"] = { 28.4, 39.5, ARCANTINA },
 					["questID"] = 92350,
 				}),
 				o(571555, {	-- Giant Growth Potion
-					["coord"] = { 20.0, 44.2, ARCANTINA },
+					["coord"] = { 18.4, 44.1, ARCANTINA },
 					["questID"] = 92351,
 				}),
-				o(614767, {	-- Giant Growth Potion
-					["coord"] = { 46.7, 61.5, ARCANTINA },
-				}),
+				-- o(614767, {	-- Giant Growth Potion
+				-- 	["coord"] = { 46.7, 61.5, ARCANTINA },
+				-- }),
 			}),
 			o_repeated({	-- Inky Black Potion
 				i(124640),	-- Inky Black Potion
 				o(571493, {	-- Inky Black Potion
-					["coord"] = { 60.9, 58.2, ARCANTINA },
+					["coord"] = { 61.4, 58.1, ARCANTINA },
 					["questID"] = 92352,
 				}),
 				o(571556, {	-- Inky Black Potion
-					["coord"] = { 40.4, 78.5, ARCANTINA },
+					["coord"] = { 39.4, 81.1, ARCANTINA },
 					["questID"] = 92353,
 				}),
 				o(571557, {	-- Inky Black Potion
-					["coord"] = { 37.1, 54.9, ARCANTINA },
+					["coord"] = { 36.7, 54.8, ARCANTINA },
 					["questID"] = 92354,
 				}),
-				o(627841, {	-- Inky Black Potion
-					["coord"] = { 60.5, 59.6, ARCANTINA },
-				}),
-				o(614789, {	-- Inky Black Potion
-					["coord"] = { 59.8, 60.1, ARCANTINA },
-				}),
+				-- o(614789, {	-- Inky Black Potion [Likely wrong ObjectID]
+				-- 	["coord"] = { 59.8, 60.1, ARCANTINA },
+				-- }),
 			}),
 			o_repeated({	-- Pygmy Oil
 				i(40195),	-- Pygmy Oil
 				o(571496, {	-- Pygmy Oil
-					["coord"] = { 59.4, 51.8, ARCANTINA },
+					["coord"] = { 61.9, 51.1, ARCANTINA },
 					["questID"] = 92355,
 				}),
 				o(571558, {	-- Pygmy Oil
-					["coord"] = { 33.1, 18.1, ARCANTINA },
+					["coord"] = { 34.2, 13.5, ARCANTINA },
 					["questID"] = 92356,
 				}),
 				o(571559, {	-- Pygmy Oil
-					["coord"] = { 73.0, 58.4, ARCANTINA },
+					["coord"] = { 74.8, 61.9, ARCANTINA },
 					["questID"] = 92357,
 				}),
-				o(553966, {	-- Pygmy Oil
-					["coord"] = { 33.7, 15.2, ARCANTINA },
-				}),
+				-- o(553966, {	-- Pygmy Oil
+				-- 	["coord"] = { 33.7, 15.2, ARCANTINA },
+				-- }),
 			}),
 			o_repeated({	-- Reflecting Prism
 				i(112384),	-- Reflecting Prism
 				o(571497, {	-- Reflecting Prism
-					["coord"] = { 55.6, 46.4, ARCANTINA },
+					["coord"] = { 54.3, 44.1, ARCANTINA },
 					["questID"] = 92358,
 				}),
 				o(571560, {	-- Reflecting Prism
-					["coord"] = { 42.4, 43.3, ARCANTINA },
+					["coord"] = { 42.2, 42.4, ARCANTINA },
 					["questID"] = 92359,
 				}),
 				o(571561, {	-- Reflecting Prism
-					["coord"] = { 78.6, 45.9, ARCANTINA },
+					["coord"] = { 78.7, 45.9, ARCANTINA },
 					["questID"] = 92360,
 				}),
 			}),
 			o_repeated({	-- Savory Deviate Delight
 				i(6657),	-- Savory Deviate Delight
 				o(571495, {	-- Savory Deviate Delight
-					["coord"] = { 55.5, 71.7, ARCANTINA },
+					["coord"] = { 55.8, 71.1, ARCANTINA },
 					["questID"] = 92361,
 				}),
 				o(571562, {	-- Savory Deviate Delight
-					["coord"] = { 35.2, 29.8, ARCANTINA },
+					["coord"] = { 35.3, 30.1, ARCANTINA },
 					["questID"] = 92362,
 				}),
 				o(571563, {	-- Savory Deviate Delight
-					["coord"] = { 69.9, 52.6, ARCANTINA },
+					["coord"] = { 68.0, 52.2, ARCANTINA },
 					["questID"] = 92363,
 				}),
-				o(614803, {	-- Savory Deviate Delight
-					["coord"] = { 34.0, 28.3, ARCANTINA },
-				}),
-				o(614821, {	-- Savory Deviate Delight
-					["coord"] = { 69.4, 52.2, ARCANTINA },
-				}),
-				o(614822, {	-- Savory Deviate Delight
-					["coord"] = { 68.0, 52.2, ARCANTINA },
-				}),
-				o(627107, {	-- Savory Deviate Delight
-					["coord"] = { 68.0, 52.2, ARCANTINA },
-				}),
+				-- o(614803, {	-- Savory Deviate Delight
+				-- 	["coord"] = { 34.0, 28.3, ARCANTINA },
+				-- }),
+				-- o(614821, {	-- Savory Deviate Delight
+				-- 	["coord"] = { 69.4, 52.2, ARCANTINA },
+				-- }),
+				-- o(614822, {	-- Savory Deviate Delight
+				-- 	["coord"] = { 68.0, 52.2, ARCANTINA },
+				-- }),
+				-- o(627107, {	-- Savory Deviate Delight
+				-- 	["coord"] = { 68.0, 52.2, ARCANTINA },
+				-- }),
 			}),
 		})),
 		n(VENDORS, {

@@ -3,6 +3,7 @@
 ---------------------------------------------------
 
 local THALASSIAN_TOKEN_OF_MERIT_S1 = 258556;
+local THALASSIAN_TOKEN_OF_MERIT_S2 = 269862;
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
@@ -25,7 +26,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
 							{"extract", "itemID"},
-							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+							SYM.SUB.INVTYPE_ALL_SLOTS,
 							{"finalize"},
 
 							-- MID Season 1 dungeons (Heroic difficulty)
@@ -35,7 +36,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.HEROIC},
 							{"extract", "itemID"},
-							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+							SYM.SUB.INVTYPE_ALL_SLOTS,
 							{"finalize"},
 
 							-- MID Season 1 dungeons (Heroic+ difficulty)
@@ -46,7 +47,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS},
 							{"extract", "itemID"},
-							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+							SYM.SUB.INVTYPE_ALL_SLOTS,
 							{"finalize"},
 
 							-- MID Season 1 dungeons (Mythic difficulty)
@@ -56,7 +57,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MYTHIC},
 							{"extract", "itemID"},
-							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+							SYM.SUB.INVTYPE_ALL_SLOTS,
 						},
 					}),
 				},
@@ -443,6 +444,49 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["cost"] = { { "c", HERO_DAWNCREST, 30 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
+					-- Season 2
+					--- Trade DOWN
+					i(269856, {	-- Bundle of Adventurer Mistcrests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: LFR Crest\nReceive: Adventurer Crest",
+						["cost"] = { { "c", VETERAN_MISTCREST, 10 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
+					i(269859, {	-- Pouch of Veteran Mistcrests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
+						["cost"] = { { "c", CHAMPION_MISTCREST, 10 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
+					i(269857, {	-- Satchel of Champion Mistcrests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
+						["cost"] = { { "c", HERO_MISTCREST, 10 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
+					i(269858, {	-- Pack of Hero Mistcrests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
+						["cost"] = { { "c", MYTH_MISTCREST, 10 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
+					--- Trade UP
+					i(269867, {	-- Venerable Satchel of Veteran Mistcrests
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Adventurer Crest\nReceive: LFR Crest",
+						["cost"] = { { "c", ADVENTURER_MISTCREST, 30 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
+					i(269864, {	-- Triumphant Satchel of Champion Mistcrests
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+						["cost"] = { { "c", VETERAN_MISTCREST, 30 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
+					i(269865, {	-- Celebratory Pack of Hero Mistcrests
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
+						["cost"] = { { "c", CHAMPION_MISTCREST, 30 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
+					i(269866, {	-- Glorious Cluster of Myth Mistcrests
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
+						["cost"] = { { "c", HERO_MISTCREST, 30 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
 				},
 			}),
 			n(239670, {	-- Vaultkeeper Elysa <Token of Merit Exchange>
@@ -455,21 +499,33 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- Season 1
 					i(246752, {	-- Celebratory Pack of Hero Dawncrests
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 2 } },
-						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 					i(263897, {	-- Radiant Jewelbinder
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 6 } },
-						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 					i(232875, {	-- Spark of Radiance
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 6 } },
-						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 					i(246751, {	-- Triumphant Satchel of Champion Dawncrests
 						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S1, 1 } },
-						["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 					-- Season 2
+					i(269865, {	-- Celebratory Pack of Hero Mistcrests
+						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S2, 2 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
+					i(275707, {	-- Miasmic Jewelbinder
+						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S2, 6 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
+					i(269864, {	-- Triumphant Satchel of Champion Mistcrests
+						["cost"] = { { "i", THALASSIAN_TOKEN_OF_MERIT_S2, 1 } },
+						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					}),
 					-- Season 3
 				},
 			}),

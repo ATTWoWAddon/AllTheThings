@@ -115,6 +115,12 @@ root(ROOTS.Housing, {
 					i(259126),	-- Void Violet Dye
 				},
 			}),
+			hqt(95389, {	-- Looted Essence of Lumber from logging trees (Weekly)
+				["name"] = "Looted Essence of Lumber from harvesting trees (Weekly)",
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_12_0_7 },
+				["groups"] = { i(269010) },	-- Essence of Lumber
+			}),
 		},
 	}),
 	n(QUESTS, sharedData({

@@ -9822,10 +9822,10 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16773,12SilvermoonEasternKingdomsPropHuntPropHunt,"Silvermoon City",3022,0,0,96,0,3390,0,3528,0,0,0,0,0,13,-1,0,0,0,0,67616,4224,0,0,0,0
 16774,TokkasLanding,"Tokka's Landing",0,16365,13316,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
 16775,OfisHut,"Ofi's Hut",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
-16776,MlurkkrMire,"Mlurkkr Mire",0,16365,13320,67,0,3420,3400,0,0,0,0,0,0,15,-1,0,0,0,0,64,0,0,0,0,0
-16777,CloudlightBeacon,"Cloudlight Beacon",0,16776,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
+16776,MlurkkrMire,"Mlurkkr Mire",0,16365,13320,67,0,3420,3400,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
+16777,CloudlightBeacon,"Cloudlight Beacon",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16778,WreckofPakusTalon,"Wreck of Paku's Talon",0,16365,13315,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
-16779,WreckofTorgasBeak,"Wreck of Torga's Beak",0,16776,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
+16779,WreckofTorgasBeak,"Wreck of Torga's Beak",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16780,TheWhisperingMarsh,"The Whispering Marsh",0,16365,13317,67,0,3420,3400,0,0,0,0,0,0,15,-1,0,0,0,5381,1073741888,0,0,0,0,0
 16781,TheRingOfGlory,"The Ring of Glory",0,16365,13326,67,0,3420,3400,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
 16782,DefiantRing,"Defiant Ring",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073774656,128,0,0,0,0
@@ -9839,7 +9839,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16790,PathofWhispers,"Path of Whispers",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16791,GateoftheSerpentsEye,"Gate of the Serpent's Eye",0,16365,13323,67,0,3418,3400,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
 16792,VenomRise,"Venom Rise",0,16365,13325,67,0,3488,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
-16793,BlisteringTerrace,"Blistering Terrace",0,16365,13324,67,0,3419,0,0,0,0,0,0,0,15,-1,0,0,0,5381,64,0,0,0,0,0
+16793,BlisteringTerrace,"Blistering Terrace",0,16365,13324,67,0,3419,0,0,0,0,0,0,0,15,-1,0,0,0,5381,1073741888,0,0,0,0,0
 16795,TheSerpentsTail,"The Serpent's Tail",0,16365,13318,67,0,3487,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
 16796,RitualSite,"Ritual Site",3014,0,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,4096,128,0,0,0,0
 16799,LightbloomLuminousGarden,"The Luminous Garden",2859,16359,0,0,0,0,0,3425,0,0,0,0,0,13,-1,0,0,0,0,-805306368,136,0,0,0,0
@@ -9906,10 +9906,10 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16981,12DelvesUlatek02,"The Ring of Glory",3077,0,0,200,0,3374,2689,3478,0,0,0,0,0,13,-1,0,0,0,4898,268439552,128,0,0,0,0
 16987,12DelvesUlatekBoss,"Venomfall Deeps",3079,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,4898,268441600,128,0,0,0,0
 16989,HousingCursedCurios,"Cursed Keepsake",3081,0,8111,0,0,1144,0,542,0,0,0,0,1,0,-1,0,0,0,4285,20480,8,0,0,0,0
-16990,BigMicroUlatek,"The Underbelly",2916,16535,0,75,0,3527,3400,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073741888,128,0,0,0,0
+16990,BigMicroUlatek,"The Underbelly",2916,16535,0,75,0,3528,3400,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16992,121CryptoftheLostMason,"Crypt of the Lost Mason",0,16365,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,5381,1073741824,128,0,0,0,0
 16993,121KinsRest,"Kin's Rest",0,16365,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,5381,1073741824,128,0,0,0,0
-16994,BlisteringVault,"Blistering Vault",0,16793,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,5381,1073741824,128,0,0,0,0
+16994,BlisteringVault,"Blistering Vault",0,16365,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,5381,1073741824,128,0,0,0,0
 16995,121TomboftheLostPriest,"Tomb of the Lost Priest",0,16365,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,5381,1073741824,128,0,0,0,0
 16996,CryptoftheLostWarrior,"Crypt of The Lost Warrior",0,16365,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,5381,1073741824,128,0,0,0,0
 16997,121CryptoftheDisgraced,"Crypt of the Disgraced",0,16365,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,5381,1073741824,128,0,0,0,0
@@ -9950,13 +9950,13 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 17687,TheVileCrypt,"The Vile Crypt",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
 17688,TheVenomducts,"The Venomducts",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
 17689,HallsoftheMalignant,"Halls of the Malignant",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
-17701,TheCrucibleofVenom,"The Crucible of Venom",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
+17701,TheCoiledAltar,"The Coiled Altar",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
 17702,TheTombofUlatek,"The Tomb of Ula'tek",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
-17710,AltarofFangsDungeonBoss1Arena,"The Carnage Pit",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-1073741824,128,0,0,0,0
-17711,AltarofFangsDungeonBoss3Arena,"The Altar of Fangs",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-1073741824,128,0,0,0,0
-17712,AltarofFangsDungeonTrash1,"Sacrificial Approach",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-1073741824,128,0,0,0,0
-17713,AltarofFangsDungeonTrash3,"Mutation Chambers",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-1073741824,128,0,0,0,0
-17714,AltarofFangsDungeonBoss2,"Ancient Burrow",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-1073741824,128,0,0,0,0
+17710,AltarofFangsDungeonBoss1Arena,"The Carnage Pit",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
+17711,AltarofFangsDungeonBoss3Arena,"The Altar of Fangs",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
+17712,AltarofFangsDungeonTrash1,"Sacrificial Approach",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
+17713,AltarofFangsDungeonTrash3,"Mutation Chambers",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
+17714,AltarofFangsDungeonBoss2,"Ancient Burrow",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
 17715,TheChamberofVirulence,"The Chamber of Virulence",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
 16310,NewQuelDanas12CampaignFinaleScenario,"Isle of Quel'Danas",2907,0,0,96,0,3009,675,0,0,0,0,0,0,15,-1,0,0,0,3320,4160,128,0,0,0,0
 16311,SilvermoonEasternKingdoms12CampaignFinaleScenario,"Silvermoon City",2907,0,0,96,0,3249,0,3404,0,0,0,0,0,15,-1,0,0,0,3320,4096,128,0,0,0,0

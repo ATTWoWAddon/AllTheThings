@@ -151,6 +151,12 @@ root(ROOTS.ExpansionFeatures,
 						n(QUESTS, {
 							q(39278, {	-- The Missing Manifest
 								["provider"] = { "i", 127989 },	-- Waterlogged Manifest
+								["groups"] = {
+									o(243345, {	-- Black Market Chest
+										["coord"] = { 59.5, 1.2, DRAENOR_NAGRAND },
+										["groups"] = { i(128027) },	-- Black Market Shipment (QI!)
+									}),
+								},
 							}),
 							q(39665, {	-- A True Naval Commander
 								["sourceQuest"] = 39666,	-- Equipping Our Fleet

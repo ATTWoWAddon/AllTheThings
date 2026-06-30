@@ -9,9 +9,18 @@ app.print = function(...)
 end
 app.report = function(...)
 	if select("#", ...) > 0 then
-		app.print(...);
+		local addReport = app.Modules.Contributor.AddReportData
+		if addReport then
+			local data = {...}
+			local reportID = data[1]
+			tremove(data, 1)
+			data.ALLOWREPEAT = true
+			addReport("Report", reportID, data, reportID)
+		else
+			app.print(...);
+			app.print(app.Version..": "..app.L.PLEASE_REPORT_MESSAGE);
+		end
 	end
-	app.print(app.Version..": "..app.L.PLEASE_REPORT_MESSAGE);
 end
 app.PrintMemoryUsage = function(...)
 	collectgarbage()

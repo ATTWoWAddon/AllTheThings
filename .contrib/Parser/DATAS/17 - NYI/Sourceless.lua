@@ -524,7 +524,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(56618),	-- killed Tidelord Aquatus (153898)?
 				q(56666, {["repeatable"]=true}),	-- Unflagged at some point for L:80 R:10 (BloodElf) C:9 (WARLOCK)
 				q(56667),	--
-				q(56717),	--
+				q(56717, {["repeatable"]=true}),	-- Unflagged at some point for L:90 R:52 (Dracthyr) C:13 (EVOKER)
 				q(56742),	--
 				q(56744),	--
 				q(56844),	--
@@ -579,7 +579,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 				q(64110),	--
 				q(64115),	--
-				q(64116),	--
+				q(64116),	-- Obtained in The Maw
 				q(64117),	--
 				q(64118),	--
 				q(64119),	-- Tormentors of Torghast related
@@ -668,8 +668,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 11.0.5
 			expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
-				-- Marked as repeatable because of Inaccurate Unflagged Quests report
-				q(84611, {["isRepeatable"] = true}),	--
+				q(84611, {["isRepeatable"] = true}),	-- Marked as repeatable because of Inaccurate Unflagged Quests report
 			})),
 
 			-- 11.1.5
@@ -692,7 +691,13 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 11.2.7
 			expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-				q(84833),	--
+				q(84833),	-- Obtained in The Waking Shores
+			})),
+		}),
+		expansion(EXPANSION.MID, {
+			-- 11.0.0
+			expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+				q(94747),	--
 			})),
 		}),
 	}),

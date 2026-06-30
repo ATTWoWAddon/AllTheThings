@@ -827,8 +827,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(252195, {	-- Fishstick Keith (PET!)
 							["sourceAchievement"] = 62903,	-- Climate Strange: Val
 							["cost"] = {
-								{ "c", FIELD_ACCOLADE, 30 },
-								{ "i", 238365, 250 },	-- 250x Sin'dorei Swarmer
+								{ "i", 238365, 50 },	-- 50x Sin'dorei Swarmer
 							},
 						}),
 						i(275662, {	-- Frosticus Maximus (PET!)
@@ -850,7 +849,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(260739, {	-- Swamp Dweller's Night Staff (COSMETIC!)
 							["cost"] = {
 								{ "c", FIELD_ACCOLADE, 60 },
-								{ "i", VOIDLIGHT_MARL, 500 },
+								{ "c", VOIDLIGHT_MARL, 500 },
 							},
 						}),
 						i(275664, {	-- Tortured Gorger (MOUNT!)
@@ -903,17 +902,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["sourceAchievement"] = 63384,	-- Prepared for a Showdown
 							["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 						}),
-						i(276301, {	-- Lightruned Crystal Beacon (COSMETIC!)
+						i(276289, {	-- Lightveil Argunite Blade (COSMETIC!)
 							["cost"] = {
 								{ "c", FIELD_ACCOLADE,  60 },
 								{ "c", VOIDLIGHT_MARL, 500 },
 							},
 						}),
-						i(276316, {	-- Lightveil's Transport Pad (DECOR!)
-							["sourceAchievement"] = 63384,	-- Prepared for a Showdown
-							["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-						}),
-						i(276289, {	-- Lightveil Argunite Blade (COSMETIC!)
+						i(276301, {	-- Lightruned Crystal Beacon (COSMETIC!)
 							["cost"] = {
 								{ "c", FIELD_ACCOLADE,  60 },
 								{ "c", VOIDLIGHT_MARL, 500 },
@@ -922,6 +917,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(276321, {	-- Luminant Defender's Golden Barricade (DECOR!)
 							["sourceAchievement"] = 62905,	-- Pain of Command
 							["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+						}),
+						i(276374),	-- Lightveil Rune Reader
+						i(276316, {	-- Lightveil's Transport Pad (DECOR!)
+							["sourceAchievement"] = 63384,	-- Prepared for a Showdown
+							["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 						}),
 						i(267211, {	-- Luminant Scout's Golden Fence (DECOR!)
 							["sourceAchievement"] = 62905,	-- Pain of Command

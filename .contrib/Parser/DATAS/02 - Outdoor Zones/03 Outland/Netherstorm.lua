@@ -1596,7 +1596,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10280, {	-- Special Delivery to Shattrath City
-						["description"] = "Items do not show up on quest rewards but appearances are awarded upon turn in to A'dal.",
 						["sourceQuest"] = 10276,	-- Full Triangle
 						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["coord"] = { 45.9, 36.0, NETHERSTORM },

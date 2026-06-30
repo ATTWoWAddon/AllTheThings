@@ -526,7 +526,7 @@ local function PrintDiscordInformationForExploration(o, type)
 
 	local inInstance = IsInInstance()
 	if not inInstance and (not x or not y) then
-		app.print("Area", areaID, "has no valid coords on mapID", mapID)
+		app.report("Area", areaID, "has no valid coords on mapID", mapID)
 	end
 
 	local luaFormat

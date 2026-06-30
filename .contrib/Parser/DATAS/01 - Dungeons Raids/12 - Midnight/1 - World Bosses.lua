@@ -106,16 +106,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 		}),
 	}),
 	n(WORLD_BOSSES, {
-		["timeline"] = { ADDED_12_0_7 },
 		["groups"] = sharedData({
 			["isRaid"] = true,
 			["isWeekly"] = true,
 		}, {
 			n(260875, {	-- Nexus-Captain Leth'ir
+				["timeline"] = { ADDED_12_0_7 },
 				["coord"] = { 78.4, 69.2, NAIGTAL },
 				["groups"] = {
-					d(DIFFICULTY.RAID.NORMAL, {
-						-- Normal appearances
+					d(DIFFICULTY.RAID.MULTI.NORMAL_HEROIC, {
+						-- Shared appearances
 						i(275216),	-- Phaseblade's Edges
 						i(275217),	-- Nexus-Captain's Phaseblade
 						i(275218),	-- Mertei's Command Baton
@@ -124,6 +124,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 						i(275221),	-- Beast Collector's Cudgel
 						i(275222),	-- Base Commander's Decapitator
 						i(275223),	-- Phasebolt Thrower
+					}),
+					d(DIFFICULTY.RAID.NORMAL, {
+						-- Normal appearances
 						i(275224),	-- Mertei's Adjutant Leggings
 						i(275225),	-- Toxic Voidscythe Spaulders
 						i(275226),	-- Shredclaw Handler's Grips
@@ -136,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 							i(275225),	-- Toxic Voidscythe Spaulders
 							i(275226),	-- Shredclaw Handler's Grips
 							i(275227),	-- Leth'ir's Dress Sabatons
-							n(UPGRADE, bubbleDown({ ["modID"] = 6 }, {
+							n(UPGRADE, bubbleDownSelf({ ["modID"] = 6, ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
 								-- Mythic appearances
 								i(275224),	-- Mertei's Adjutant Leggings
 								i(275225),	-- Toxic Voidscythe Spaulders
@@ -144,25 +147,53 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 								i(275227),	-- Leth'ir's Dress Sabatons
 							})),
 						},
-						["sym"] = {{"select", "itemID",
-							-- These are same as Normal
-							275216,	-- Phaseblade's Edges
-							275217,	-- Nexus-Captain's Phaseblade
-							275218,	-- Mertei's Command Baton
-							275219,	-- Pertinax's Beast Prod
-							275220,	-- Imperator's Voidedged Cutlass
-							275221,	-- Beast Collector's Cudgel
-							275222,	-- Base Commander's Decapitator
-							275223,	-- Phasebolt Thrower
-						}},
 					}),
 				},
 			}),
 			n(260833, {	-- Adjutant Mertei
+				["timeline"] = { ADDED_12_0_7 },
 				["coord"] = { 76.2, 68.8, NAIGTAL },
-				-- ["sym"] = {{"select", "itemID",
-				-- TODO
-				-- }},
+				["sym"] = {{"select", "npcID", 260875},{"pop"}},	-- Nexus-Captain Leth'ir
+			}),
+			n(261072, {	-- Imperator Pertinax
+				["timeline"] = { ADDED_12_0_7 },
+				["coord"] = { 40.2, 77.5, 2618 },	-- Void Acropolis (Lower)
+				["groups"] = {
+					d(DIFFICULTY.RAID.MULTI.NORMAL_HEROIC, {
+						-- Shared appearances
+						i(275216),	-- Phaseblade's Edges
+						i(275217),	-- Nexus-Captain's Phaseblade
+						i(275218),	-- Mertei's Command Baton
+						i(275219),	-- Pertinax's Beast Prod
+						i(275220),	-- Imperator's Voidedged Cutlass
+						i(275221),	-- Beast Collector's Cudgel
+						i(275222),	-- Base Commander's Decapitator
+						i(275223),	-- Phasebolt Thrower
+					}),
+					d(DIFFICULTY.RAID.NORMAL, {
+						-- Normal appearances
+						i(275224),	-- Mertei's Adjutant Leggings
+						i(275225),	-- Toxic Voidscythe Spaulders
+						i(275226),	-- Shredclaw Handler's Grips
+						i(275227),	-- Leth'ir's Dress Sabatons
+					}),
+					d(DIFFICULTY.RAID.HEROIC, {
+						["groups"] = {
+							-- Heroic appearances
+							i(275224),	-- Mertei's Adjutant Leggings
+							i(275225),	-- Toxic Voidscythe Spaulders
+							i(275226),	-- Shredclaw Handler's Grips
+							i(275227),	-- Leth'ir's Dress Sabatons
+							n(UPGRADE, bubbleDownSelf({ ["modID"] = 6, ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
+								-- Mythic appearances
+								i(275224),	-- Mertei's Adjutant Leggings
+								i(275225),	-- Toxic Voidscythe Spaulders
+								i(275226),	-- Shredclaw Handler's Grips
+								i(275227),	-- Leth'ir's Dress Sabatons
+							})),
+						},
+					}),
+				},
 			}),
 		}),
 	}),

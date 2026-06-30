@@ -342,33 +342,507 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--}),
 					--
 				}),
-				--header(HEADERS.AchCriteria, 62297.06, {	-- The Call of the Void
-				--}),
+				header(HEADERS.AchCriteria, 62297.06, {	-- The Call of the Void
+					q(95973, {	-- Echoes of the Darkwell
+						["sourceQuest"] = 93420,	-- Lor'themar's Judgement	-- Exo Note: Available from the get-go on PTR, this may change when Patch goes live. 93420 should be a proper sourceQuest as the story continuation fits nicely.
+						["qg"] = 235787,	-- Lor'themar Theron
+						["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					}),
+					q(94519, {	-- What Hope in the Light?
+						["sourceQuest"] = 95973,	-- Echoes of the Darkwell
+						["qg"] = 258019,	-- Magister Umbric
+						["coord"] = { 46.2, 47.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+					}),
+					q(94520, {	-- Resurgence in Deatholme
+						["sourceQuest"] = 94519,	-- What Hope in the Light?
+						["qg"] = 262269,	-- Magister Umbric
+						["coord"] = { 52.3, 48.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+					}),
+					q(94521, {	-- The Direct Method
+						["sourceQuest"] = 94520,	-- Resurgence in Deatholme
+						["qg"] = 258022,	-- Arator
+						["coord"] = { 43.8, 82.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(266893, {	-- Twilight Clues (QI!)
+								-- Following items count as "Clues" when looted
+								i(270266),	-- Fragmented Void (QI!)
+								i(266894),	-- Twilight Journal (QI!)
+								i(266896),	-- Twilight Letter (QI!)
+							}),
+						},
+					}),
+					q(94522, {	-- They Always Write It Down
+						["sourceQuest"] = 94520,	-- Resurgence in Deatholme
+						["qg"] = 258021,	-- Magister Umbric
+						["coord"] = { 43.7, 82.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(94523, {	-- My Poor Beautiful Self
+						["sourceQuest"] = 94520,	-- Resurgence in Deatholme
+						["qg"] = 258024,	-- Pathetic Voidling
+						["coord"] = { 43.0, 85.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(94524, {	-- Under New Management
+						["sourceQuests"] = {
+							94521,	-- The Direct Method
+							94522,	-- They Always Write It Down
+							94523,	-- My Poor Beautiful Self
+						},
+						["qg"] = 258029,	-- Arator
+						["coord"] = { 42.9, 85.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					------ Stay awhile and listen ------
+					hqt(95960, {	-- Stay awhile and listen: Arator
+						["name"] = "Stay awhile and listen: Arator",
+						["description"] = "Dialogue becomes available after accepting 'Under New Management' (94524).",
+						["sourceQuests"] = {
+							94521,	-- The Direct Method
+							94522,	-- They Always Write It Down
+							94523,	-- My Poor Beautiful Self
+						},
+						["qg"] = 258029,	-- Arator
+						["coord"] = { 42.9, 85.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					--
+					q(94525, {	-- A Comeback Story
+						["sourceQuests"] = {
+							94521,	-- The Direct Method
+							94522,	-- They Always Write It Down
+							94523,	-- My Poor Beautiful Self
+						},
+						["qg"] = 258024, -- Pathetic Voidling
+						["coord"] = { 43.0, 85.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(94526, {	-- Verifiably Untrustworthy
+						["sourceQuests"] = {
+							94524,	-- Under New Management
+							94525,	-- A Comeback Story
+						},
+						["qg"] = 258095,	-- Magister Umbric
+						["coord"] = { 42.7, 88.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(94527, {	-- Null Space
+						["sourceQuest"] = 94526,	-- Verifiably Untrustworthy
+						["qg"] = 259707,	-- Magister Umbric
+						["coord"] = { 42.5, 89.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(94528, {	-- Carving Out Room
+						["sourceQuest"] = 94527,	-- Null Space
+						["qg"] = 263465,	-- Arator
+						["coord"] = { 38.8, 74.1, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(94529, {	-- A Dark Shadow Looms
+						["sourceQuest"] = 94527,	-- Null Space
+						["qg"] = 258151,	-- Magister Umbric
+						["coord"] = { 38.9, 74.0, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					------ Stay awhile and listen ------
+					hqt(95959, {	-- Stay awhile and listen: Arator
+						["name"] = "Stay awhile and listen: Arator",
+						["description"] = "Dialogue becomes available after accepting 'A Dark Shadow Looms' (94529).",
+						["sourceQuest"] = 94527,	-- Null Space
+						["qg"] = 263465,	-- Arator
+						["coord"] = { 38.8, 74.1, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					--
+					q(94530, {	-- The Call of the Void
+						["sourceQuests"] = {
+							94528,	-- Carving Out Room
+							94529,	-- A Dark Shadow Looms
+						},
+						["qg"] = 258151,	-- Magister Umbric
+						["coord"] = { 38.9, 74.0, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(94531, {	-- Like Mother, Like Son
+						["sourceQuest"] = 94530,	-- The Call of the Void
+						["qg"] = 258150,	-- Arator
+						["coord"] = { 38.8, 74.1, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(271970),	-- Dawn's Radiance (COSMETIC!)
+							i(278691),	-- Twilight Brazier (DECOR!)
+						},
+					}),
+					------ Stay awhile and listen ------
+					hqt(95958, {	-- Stay awhile and listen: Magister Umbric
+						["name"] = "Stay awhile and listen: Magister Umbric",
+						["description"] = "Dialogue becomes available after completing 'Like Mother, Like Son' (94531).",
+						["sourceQuest"] = 94531,	-- Like Mother, Like Son
+						["qg"] = 258538,	-- Magister Umbric
+						["coord"] = { 45.3, 70.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+					}),
+					--
+				}),
 			}),
-			--header(HEADERS.Achievement, 63641, {	-- Snake Charmed, I'm Sure (Sojourner)
-				--header(HEADERS.AchCriteria, 63641.01, {	-- Strange Friends in Odd Places
-				--}),
+			header(HEADERS.Achievement, 63641, {	-- Snake Charmed, I'm Sure (Sojourner)
+				header(HEADERS.AchCriteria, 63641.01, {	-- Strange Friends in Odd Places
+					q(93387, {	-- Dealing with Pests
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 263327,	-- Ofi the Sly (mobileNPC)
+						["coord"] = { 61.1, 32.9, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the camp
+					}),
+					q(93388, {	-- Unusual Alchemy
+						["sourceQuest"] = 93387,	-- Dealing with Pests
+						["qg"] = 263327,	-- Ofi the Sly (mobileNPC)
+						["coord"] = { 61.1, 32.9, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the camp
+						["groups"] = {
+							i(268584),	-- Undamaged Serpent Scale (QI!)
+							o(631027, {	-- Bowl of Innards
+								["coord"] = { 64.1, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+								["groups"] = { i(258168) },	-- Pile of Fish Guts (QI!)
+							}),
+							o(612012, {	-- Tarnished Pearl
+								["coord"] = { 69.0, 32.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+								["groups"] = { i(258044) },	-- Tarnished Pearl (QI!)
+							}),
+						},
+					}),
+					q(93389, {	-- Rocksblood
+						["sourceQuest"] = 93387,	-- Dealing with Pests
+						["qg"] = 260710,	-- Jelvik (mobileNPC)
+						["coord"] = { 61.1, 32.9, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Follows Ofi around
+					}),
+					q(93390, {	-- Acceptable Apprentice
+						["sourceQuests"] = {
+							93388,	-- Unusual Alchemy
+							93389,	-- Rocksblood
+						},
+						["qg"] = 260226,	-- Ofi the Sly (mobileNPC)
+						["coord"] = { 60.4, 33.1, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the Alchemist Table, Cauldron and Workstation
+						["groups"] = { i(268959) },	-- Pungent Concoction (QI!)
+					}),
+					q(93391, {	-- Make it Stinky
+						["sourceQuest"] = 93390,	-- Acceptable Apprentice
+						["qg"] = 260226,	-- Ofi the Sly (mobileNPC)
+						["coord"] = { 60.4, 33.1, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the Alchemist Table, Cauldron and Workstation
+						["groups"] = { i(268950) },	-- Murloc Deterrent (PQI!)
+					}),
+					q(93392, {	-- Recovering Memories
+						["sourceQuest"] = 93391,	-- Make it Stinky
+						["qg"] = 254605,	-- Jelvik
+						["coord"] = { 60.9, 32.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93393, {	-- A Little Kindness
+						["sourceQuest"] = 93392,	-- Recovering Memories
+						["qg"] = 254605,	-- Jelvik
+						["coord"] = { 60.9, 32.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							o(633653, {	-- Purified Egg
+								["coord"] = { 61.1, 32.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+								["groups"] = { i(268961) },	-- Purified Egg (QI!)
+							}),
+							--
+							i(268644),	-- Zan (PET!)
+						},
+					}),
+				}),
 				--header(HEADERS.AchCriteria, 63641.02, {	-- Tokka's Crew
 				--}),
-				--header(HEADERS.AchCriteria, 63641.03, {	-- Ancient Anthropology
-				--}),
+				header(HEADERS.AchCriteria, 63641.03, {	-- Ancient Anthropology
+					q(96467, {	-- Thirst for Knowledge
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 265173,	-- Kul'amara the Fierce
+						["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["isBreadcrumb"] = true,
+					}),
+					q(96469, {	-- The Crypt of the Disgraced
+						["description"] = "To bypass the barrier, interact with the objects in the following order:\n\nCharm, Mortar and Pestle, Urn, Bones.",
+						["sourceQuest"] = 96467,	-- Thirst for Knowledge
+						["qg"] = 265329,	-- Zei'ka
+						["coord"] = { 75.0, 62.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96471, {	-- Crumble and Tumble
+						["sourceQuest"] = 96469,	-- The Crypt of the Disgraced
+						["qg"] = 265330,	-- Zei'ka
+						["coord"] = { 61.1, 59.7, 2644 },	-- Crypt of the Disgraced
+						["groups"] = { i(280105) },	-- Disgraced Amani Tablet
+					}),
+				}),
 				--header(HEADERS.AchCriteria, 63641.04, {	-- Bone Deep
 				--}),
 				--header(HEADERS.AchCriteria, 63641.05, {	-- The Honored Mad'jai
 				--}),
-				--header(HEADERS.AchCriteria, 63641.06, {	-- Don't be Afrayed
-				--}),
-				--header(HEADERS.AchCriteria, 63641.07, {	-- A Band of Brothers
-				--}),
-				--header(HEADERS.AchCriteria, 63641.08, {	-- The Troubles of Mlurkrr Mire
-				--}),
-				--header(HEADERS.AchCriteria, 63641.09, {	-- Somethin' Bad Inside
-				--}),
+				header(HEADERS.AchCriteria, 63641.06, {	-- Don't be Afrayed
+					q(93841, {	-- Ghosts of the Arena
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 258068,	-- Olawu
+						["coord"] = { 58.6, 47.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["isBreadcrumb"] = true,
+					}),
+					q(93842, {	-- Bloom and Fade
+						["sourceQuest"] = 93841,	-- Ghosts of the Arena
+						["qg"] = 256674,	-- Ja'bonu (mobileNPC)
+						["coord"] = { 66.0, 53.3, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the area
+						["groups"] = {
+							o(619677, {	-- Sweetsaw Bloom
+								i(262886),	-- Sweetsaw Bloom (QI!)
+							}),
+						},
+					}),
+					q(93843, {	-- Ectoplasmic Extractions
+						["sourceQuest"] = 93841,	-- Ghosts of the Arena
+						["qg"] = 256674,	-- Ja'bonu (mobileNPC)
+						["coord"] = { 66.0, 53.3, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the area
+						["groups"] = { i(262904) },	-- Ectoplasm (QI!)
+					}),
+					q(93849, {	-- Ectoplasmic Emporium
+						["sourceQuests"] = {
+							93842,	-- Bloom and Fade
+							93843,	-- Ectoplasmic Extractions
+						},
+						["qg"] = 256874,	-- Ja'bonu
+						["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(265715),	-- Bouquet of Blooms (PQI!)
+							i(265931),	-- Collected Ectoplasm (PQI!)
+							i(263341),	-- Spectral Brew (QI!)
+						},
+					}),
+					q(93851, {	-- Communing with Ghosts
+						["sourceQuest"] = 93849,	-- Ectoplasmic Emporium
+						["qg"] = 256874,	-- Ja'bonu
+						["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93906, {	-- Untethering the Two
+						["sourceQuest"] = 93851,	-- Communing with Ghosts
+						["qg"] = 256874,	-- Ja'bonu
+						["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(280136) },	-- Gift of the Soulmates
+					}),
+				}),
+				header(HEADERS.AchCriteria, 63641.07, {	-- A Band of Brothers
+					q(94936, {	-- A Bond of Brothers
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 258717,	-- Aol'ggin
+						["coord"] = { 56.5, 43.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(94937, {	-- Too Quiet on the Northern Front
+						["sourceQuest"] = 94936,	-- A Bond of Brothers
+						["qg"] = 259295,	-- Tekkan
+						["coord"] = { 53.2, 35.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(94941, {	-- Saving Recruit Jabat
+						["sourceQuest"] = 94937,	-- Too Quiet on the Northern Front
+						["qg"] = 259297,	-- Aol'ggin
+						["coord"] = { 53.4, 33.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(278890),	-- Armbands of Brothers
+							i(278892),	-- Bands of Brothers
+							i(278889),	-- Warbands of Brothers
+							i(278891),	-- Wristbands of Brothers
+						},
+					}),
+				}),
+				header(HEADERS.AchCriteria, 63641.08, {	-- The Troubles of Mlurkrr Mire
+					q(93449, {	-- Trouble in the Swamp
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 257091,	-- Ra'kamu
+						["coord"] = { 57.5, 47.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93229, {	-- Fried Eggs
+						["sourceQuest"] = 93449,	-- Trouble in the Swamp
+						["qg"] = 254372,	-- Zawadi
+						["coord"] = { 63.0, 44.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93199, {	-- Slithering in the Mire
+						["sourceQuest"] = 93449,	-- Trouble in the Swamp
+						["qg"] = 254372,	-- Zawadi
+						["coord"] = { 63.0, 44.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93576, {	-- The Search for Wa'kani
+						["sourceQuests"] = {
+							93229,	-- Fried Eggs
+							93199,	-- Slithering in the Mire
+						},
+						["qg"] = 254376,	-- Zawadi
+						["coord"] = { 66.0, 39.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(94447, {	-- Ophidia the Broodmother
+						["sourceQuest"] = 93576,	-- The Search for Wa'kani
+						["qg"] = 255978,	-- Wa'kani
+						["coord"] = { 64.7, 37.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93239, {	-- Scouts in the Swamp
+						["sourceQuest"] = 94447,	-- Ophidia the Broodmother
+						["qg"] = 254376,	-- Zawadi
+						["coord"] = { 66.0, 39.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93233, {	-- Savagery Among the Ruins
+						["sourceQuest"] = 94447,	-- Ophidia the Broodmother
+						["qg"] = 254376,	-- Zawadi
+						["coord"] = { 66.0, 39.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(93339, {	-- Trinket Trading
+						["sourceQuest"] = 94447,	-- Ophidia the Broodmother
+						["qg"] = 255226,	-- Wa'kani
+						["coord"] = { 66.0, 39.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							o(611269, {	-- Feathered Trinket
+								i(257977),	-- Feathered Trinket (QI!)
+							}),
+						},
+					}),
+					q(93340, {	-- The Shadow Shard
+						["sourceQuests"] = {
+							93239,	-- Scouts in the Swamp
+							93233,	-- Savagery Among the Ruins
+							93339,	-- Trinket Trading
+						},
+						["qg"] = 255553,	-- Wa'kani
+						["coord"] = { 68.9, 37.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(280376) },	-- Shadow Shard Sliver
+					}),
+				}),
+				header(HEADERS.AchCriteria, 63641.09, {	-- Somethin' Bad Inside
+					q(96089, {	-- Somethin's Not Right
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 263618,	-- Scout Oma'ema
+						["coord"] = { 57.0, 48.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96090, {	-- Venemetic
+						["sourceQuest"] = 96089,	-- Somethin's Not Right
+						["qg"] = 253837,	-- Apothecary Dezi
+						["coord"] = { 57.2, 48.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274297),	-- Dezi's Potion Bottle (PQI!)
+							i(274296),	-- Virulent Ula'tek Venom (QI!)
+						},
+					}),
+					q(96091, {	-- Get the Balance Right
+						["sourceQuest"] = 96090,	-- Venemetic
+						["qg"] = 253837,	-- Apothecary Dezi
+						["coord"] = { 57.2, 48.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(276135) },	-- Dezi's Emetic (QI!)
+					}),
+					q(96092, {	-- That Fool, Ruma
+						["sourceQuest"] = 96091,	-- Get the Balance Right
+						["qg"] = 253837,	-- Apothecary Dezi
+						["coord"] = { 57.2, 48.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(274462) },	-- Sobering Elixir (PQI!)
+					}),
+					q(96093, {	-- It's a Satchel, Not a Bag
+						["sourceQuest"] = 96092,	-- That Fool, Ruma
+						["qg"] = 263663,	-- Scrollmaster Ruma
+						["coord"] = { 64.5, 77.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							o(649453, {	-- Ruma's Satchel
+								["coord"] = { 25.4, 34.8, 2635 },	-- Gnarldor Isle
+								["groups"] = { i(274486) },	-- Ruma's Satchel (QI!)
+							}),
+						},
+					}),
+					q(96094, {	-- To the Forum
+						["sourceQuest"] = 96093,	-- It's a Satchel, Not a Bag
+						["qg"] = 263663,	-- Scrollmaster Ruma
+						["coord"] = { 64.5, 77.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96095, {	-- Sampling the Local Wildlife
+						["sourceQuest"] = 96094,	-- To the Forum
+						["qg"] = 263674,	-- Scrollmaster Ruma
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(274492) },	-- Infectious Wildlife Sample (QI!)
+					}),
+					q(96096, {	-- Scout Team Seven
+						["sourceQuest"] = 96094,	-- To the Forum
+						["qg"] = 263675,	-- Scout Oma'ema
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274574),	-- A'pone's Necklace (QI!)
+							i(274575),	-- Pieces of Uha'ne's Necklace (QI!)
+						},
+					}),
+					q(96097, {	-- What the Scouts Saw
+						["sourceQuests"] = {
+							96095,	-- Sampling the Local Wildlife
+							96096,	-- Scout Team Seven
+						},
+						["qg"] = 263674,	-- Scrollmaster Ruma
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96098, {	-- The Final Reagents
+						["sourceQuest"] = 96097,	-- What the Scouts Saw
+						["qg"] = 263675,	-- Scout Oma'ema
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274682),	-- Tetla'ketl's Conjuring Crest (QI!)
+							i(274685),	-- Tsssaani's Scales of Summoning (QI!)
+						},
+					}),
+					q(96099, {	-- La'una's Fate
+						["sourceQuest"] = 96098,	-- The Final Reagents
+						["qg"] = 263674,	-- Scrollmaster Ruma
+						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274705),	-- Ruma's Infestation Eradicator (PQI!)
+							--
+							i(280218),	-- Tortollan Scholar Satchel (DECOR!)
+						},
+					}),
+				}),
 				--header(HEADERS.AchCriteria, 63641.10, {	-- Living Legend
 				--}),
-				--header(HEADERS.AchCriteria, 63641.11, {	-- The Monster's Mother
-				--}),
-			--}),
+				header(HEADERS.AchCriteria, 63641.11, {	-- The Monster's Mother
+					q(96439, {	-- Gone Dark
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 265173,	-- Kul'amara the Fierce
+						["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["isBreadcrumb"] = true,
+					}),
+					q(96450, {	-- Sideways
+						["sourceQuest"] = 96439,	-- Gone Dark
+						["qg"] = 265194,	-- Ulantu
+						["coord"] = { 80.7, 46.1, 2640 },	-- Blistering Terrace
+						["groups"] = {
+							o(660399, {	-- Experiment Notes
+								["coord"] = { 58.4, 23.3, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276910) },	-- Lokago's Experiment Notes (QI!)
+							}),
+							o(660427, {	-- Lokago's Ledger
+								["coord"] = { 28.6, 41.3, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276913) },	-- Lokago's Ledger (QI!)
+							}),
+							o(660407, {	-- Missive from Malacrass
+								["coord"] = { 41.5, 37.2, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276911) },	-- Missive from Malacrass (QI!)
+							}),
+							-- Optional Objective
+							i(277525),	-- Ulantu's Belongings
+							-- Following count as Ulantu's Belongings on Quest Turn-in
+							o(653374, {	-- A Message from Kul'amara
+								["coord"] = { 57.0, 37.2, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276883) },	-- A Message From Kul'amara
+							}),
+							o(660393, {	-- Fragment of Ulantu's Log 1
+								["coord"] = { 64.9, 38.2, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276905) },	-- Beginning Fragment of Ulantu's Log
+							}),
+							o(660420, {	-- Fragment of Ulantu's Log 2
+								["coord"] = { 36.8, 18.2, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276912) },	-- Middle Fragment of Ulantu's Log
+							}),
+							o(660431, {	-- Fragment of Ulantu's Log 3
+								["coord"] = { 21.0, 21.8, 2640 },	-- Blistering Terrace
+								["groups"] = { i(276914) },	-- End Fragment of Ulantu's Log
+							}),
+						},
+					}),
+					q(96451, {	-- A Child of Ula'tek
+						["sourceQuest"] = 96450,	-- Sideways
+						["qg"] = 265229,	-- Ulantu
+						["coord"] = { 20.1, 36.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(279064) },	-- Naj'kula Flame Amulet (QI!)
+					}),
+					q(96458, {	-- Last Promise
+						["sourceQuest"] = 96451,	-- A Child of Ula'tek
+						["qg"] = 265278,	-- Ulantu
+						["coord"] = { 58.1, 68.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96457, {	-- Nothing Must Remain
+						["sourceQuest"] = 96458,	-- Last Promise
+						["provider"] = { "o", 660985 },	-- Ulantu's Scout Pack
+						["coord"] = { 56.9, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(279064) },	-- Naj'kula Flame Amulet (PQI!)
+					}),
+				}),
+			}),
 		}),
 	}),
 }));

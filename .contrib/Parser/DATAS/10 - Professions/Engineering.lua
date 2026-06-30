@@ -1035,7 +1035,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
 				["coord"] = { 49.4, 62.6, THALDRASZUS },
-				["crs"] = { 194656 },	-- Reservoir Dapple
+				["crs"] = { 196632 },	-- Reservoir Dapple
 			}),
 			q(70516, {	-- DF Weekly Engineering Knowledgepoint #4
 				["name"] = "DF Engineering Drop #2: Tyrhold Ancient",

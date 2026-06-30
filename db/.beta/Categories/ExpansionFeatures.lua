@@ -7732,7 +7732,10 @@ follower(576,{u=5}),
 follower(527,{u=5}),
 follower(524,{u=5})}})}),
 h(-45,{
-q(39278,{lvl=40,providers={{"i",127989}}}),
+q(39278,{lvl=40,providers={{"i",127989}},g={
+o(243345,{coords={
+[550]={{59.5,1.2}}},g={
+i(128027)}})}}),
 q(39665,{coords={
 [539]={{28.6,10.8}}},lvl=40,qgs={93812},r=2,sourceQuests={39666},g={
 i(128373,{b=1,lvl=40,spellID=189962}),
@@ -27103,9 +27106,13 @@ q(60048,{coords={
 [1536]={{55.1,68.8}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={167150},sourceQuests={58727}}),
 q(59126,{coords={
 [1536]={{55.3,68.3}}},customCollect={"SL_COV_NEC"},isWeekly=1,lvl=60,qgs={159238},sourceQuests={58410},g={
-i(178682,{customCollect={"SL_COV_NEC"}}),
+o(352018,{coords={
+[1536]={{55.1,55.1}}},customCollect={"SL_COV_NEC"},g={
+i(178682,{customCollect={"SL_COV_NEC"}})}}),
 i(178678,{customCollect={"SL_COV_NEC"},questID=57602,spellID=327203}),
-i(175133,{customCollect={"SL_COV_NEC"}}),
+o(352019,{coords={
+[1536]={{53.4,57},{53.5,57},{54.4,57.6},{54.9,59.1},{55.3,58.4},{55.9,53.7},{56.2,51.8}}},customCollect={"SL_COV_NEC"},g={
+i(175133,{customCollect={"SL_COV_NEC"}})}}),
 i(178681,{b=1,customCollect={"SL_COV_NEC"},spellID=302865}),
 crit(49661,{achID=14684,id=3})}}),
 q(58670,{coords={
@@ -27249,8 +27256,10 @@ i(174270,{customCollect={"SL_COV_NEC"},spellID=314497}),
 crit(49719,{achID=14684,id=28})}}),
 q(62261,{coords={
 [1536]={{54.4,67.9}}},crs={173030},customCollect={"SL_COV_NEC"},isWeekly=1,lvl=60,qgs={159214},sourceQuests={58416},g={
-i(183138,{customCollect={"SL_COV_NEC"}}),
 i(183127,{customCollect={"SL_COV_NEC"},questID=57859,spellID=340839}),
+o(335503,{coords={
+[1536]={{38.7,64.2},{39.4,64.5},{40,60.7},{41.3,62.9},{41.7,71}}},customCollect={"SL_COV_NEC"},g={
+i(183138,{customCollect={"SL_COV_NEC"}})}}),
 crit(49716,{achID=14684,id=25})}}),
 q(60340,{coords={
 [1536]={{54.4,67.9}}},crs={173030},customCollect={"SL_COV_NEC"},isWeekly=1,lvl=60,qgs={159214},sourceQuests={58416},g={
@@ -30530,7 +30539,7 @@ q(60160,{coords={
 h(-321,{customCollect={"SL_COV_VEN"},description="Each day, a set of 3 Broken Mirrors is active in Revendreth. They are not on a predictable cycle, so the same set may be up two days in a row. Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",icon=3854020,g={
 h(-177,{customCollect={"SL_COV_VEN"},g={
 n(166133,{customCollect={"SL_COV_VEN"},g={
-i(181363,{b=1,cost={{"c",1820,20}},customCollect={"SL_COV_VEN"},f=55,sourceQuests={59740}})}}),
+i(181363,{b=1,cost={{"c",1820,10}},customCollect={"SL_COV_VEN"},f=55,sourceQuests={59740}})}}),
 h(-178,{customCollect={"SL_COV_VEN"},description="Wowhead: |cffffffffGroup 1|r",g={
 h(-447,{coords={
 [1525]={{29.5,37.3}}},cost={{"i",181363,1}},customCollect={"SL_COV_VEN"},isDaily=1,questID=61818,g={
@@ -33431,7 +33440,7 @@ ach(41181,{awp=110007,minReputation={2511,30},g={
 crit(64607,{achID=19466,awp=100206,id=3})}})}}),
 q(70893,{coords={
 [2024]={{13.5,48.5}}},isWeekly=1,lvl=60,minReputation={2511,3},qgs={196620},g={
-i(200095,{b=1,f=55,lvl=60,minReputation={2511,3},sym={{"select","mapID",1978,2022,2023,2024,2025},{"pop"},{"where","headerID",-64},{"pop"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}},g={
+i(200095,{b=1,f=55,lvl=60,minReputation={2511,3},sym={{"select","mapID",1978,2022,2023,2024,2025},{"pop"},{"where","headerID",-64},{"pop"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}},g={
 i(200652,{minReputation={2511,3}}),
 i(215362,{awp=100206,b=1,f=55,lvl=70,minReputation={2511,3}}),
 r(381418,{b=1,itemID=198131,minReputation={2511,3},requireSkill=185,skillID=2824}),
@@ -34688,7 +34697,7 @@ crit(64578,{achID=19483,awp=100206,id=2})}})}}),
 h(-29,{minReputation={2510,5},g={
 toy(200116,{b=1,minReputation={2510,5}}),
 i(202142,{b=1,f=55,lvl=60,minReputation={2510,5}}),
-i(200072,{b=1,f=55,lvl=60,minReputation={2510,5},sym={{"select","mapID",1978,2022,2023,2024,2025},{"pop"},{"where","headerID",-64},{"pop"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}}})}}),
+i(200072,{b=1,f=55,lvl=60,minReputation={2510,5},sym={{"select","mapID",1978,2022,2023,2024,2025},{"pop"},{"where","headerID",-64},{"pop"},{"invtype","INVTYPE_HEAD","INVTYPE_NECK","INVTYPE_SHOULDER","INVTYPE_CLOAK","INVTYPE_CHEST","INVTYPE_ROBE","INVTYPE_WRIST","INVTYPE_HAND","INVTYPE_WAIST","INVTYPE_LEGS","INVTYPE_FEET","INVTYPE_FINGER","INVTYPE_TRINKET","INVTYPE_WEAPON","INVTYPE_SHIELD","INVTYPE_RANGED","INVTYPE_RANGEDRIGHT","INVTYPE_2HWEAPON","INVTYPE_WEAPONMAINHAND","INVTYPE_WEAPONOFFHAND","INVTYPE_HOLDABLE"}}})}}),
 h(-56,{minReputation={2510,5},g={
 o(381357,{coords={
 [2022]={{27.8,68.4}}},minReputation={2510,5},g={

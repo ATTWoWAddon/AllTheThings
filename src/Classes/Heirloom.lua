@@ -313,7 +313,7 @@ do
 
 	-- app.AddCollectionReportFormatFunc("HeirloomLevel", function(t)
 	-- 	local itemID, link = t.itemID, t.link or t.silentLink
-	-- 	app.print(L.ITEM_ID_ADDED_RANK:format(link, itemID, (select(5, C_Heirloom_GetHeirloomInfo(itemID)) or 1)))
+	-- 	app.report(L.ITEM_ID_ADDED_RANK:format(link, itemID, (select(5, C_Heirloom_GetHeirloomInfo(itemID)) or 1)))
 	-- end)
 	app.AddEventRegistration("HEIRLOOMS_UPDATED", function(itemID, kind, ...)
 		-- app.PrintDebug("HEIRLOOMS_UPDATED",itemID,kind,...)
@@ -326,7 +326,7 @@ do
 
 			if app.Settings:GetTooltipSetting("Report:Collected") then
 				local _, link = GetItemInfo(itemID);
-				if link then app.print(L.ITEM_ID_ADDED_RANK:format(link, itemID, (select(5, C_Heirloom_GetHeirloomInfo(itemID)) or 1))); end
+				if link then app.report(L.ITEM_ID_ADDED_RANK:format(link, itemID, (select(5, C_Heirloom_GetHeirloomInfo(itemID)) or 1))); end
 			end
 		end
 	end)

@@ -427,6 +427,9 @@ local function GetUniqueRemovedSourceIDs(sourceID, visualID, filter)
 	end
 	return removedSourceIDs
 end
+local function GetSourceAppearanceLink(sourceID)
+	return "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"
+end
 app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 	-- based on the current ItemSourceFilter assignment (i.e. collection mode)
 	local tkey = t.key
@@ -438,12 +441,18 @@ app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 		local sourceID = t.sourceID
 		if not t._missing then
 			if app.Settings:GetTooltipSetting("Report:Collected") then
-				app.print(L.ITEM_ID_ADDED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), t.itemID))
+				app.print(L.ITEM_ID_ADDED:format(app:SearchLink(t) or GetSourceAppearanceLink(sourceID), t.itemID))
 			end
 		else
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
 			-- always report missing
-			app.print(L.ITEM_ID_ADDED_MISSING:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo and sourceInfo.itemID, app.Version))
+			app.report(L.ITEM_ID_ADDED_MISSING:format(
+					sourceID,
+					sourceInfo and sourceInfo.itemID,
+					app.Version),
+				GetSourceAppearanceLink(sourceID),
+				t.rawlink or t.link,
+				t.modItemID)
 		end
 		app.HandleEvent("OnThingCollected", t)
 	else
@@ -458,14 +467,25 @@ app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 			-- TODO eventual setting to control reporting of already collected Things
 			if newAppearancesLearned > 0 then
 				if app.Settings:GetTooltipSetting("Report:Collected") then
-					app.print(L.ITEM_ID_ADDED_SHARED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), t.itemID, newAppearancesLearned));
+					app.print(L.ITEM_ID_ADDED_SHARED:format(
+						app:SearchLink(t) or GetSourceAppearanceLink(sourceID),
+						t.itemID,
+						newAppearancesLearned))
 				end
 				app.HandleEvent("OnThingCollected", t)
 				app.UpdateRawIDs(tkey, unlockedSourceIDs)
 			end
 		else
 			-- always report missing
-			app.print(L[newCollected and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned, app.Version));		app.HandleEvent("OnThingCollected", t)
+			app.report((newCollected and L.ITEM_ID_ADDED_SHARED_MISSING or L.ITEM_ID_ADDED_MISSING):format(
+					sourceID,
+					sourceInfo and sourceInfo.itemID,
+					newAppearancesLearned,
+					app.Version),
+				GetSourceAppearanceLink(sourceID),
+				t.rawlink or t.link,
+				t.modItemID)
+			app.HandleEvent("OnThingCollected", t)
 			app.UpdateRawIDs(tkey, unlockedSourceIDs)
 		end
 	end
@@ -481,7 +501,7 @@ app.AddRemovalTypeHandler("ItemWithAppearance", function(t)
 		-- app.PrintDebug("Completionist Remove",app:SearchLink(t))
 		local sourceID = t.sourceID
 		if app.Settings:GetTooltipSetting("Report:Collected") then
-			app.print(L.ITEM_ID_REMOVED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), t.itemID))
+			app.print(L.ITEM_ID_REMOVED:format(app:SearchLink(t) or GetSourceAppearanceLink(sourceID), t.itemID))
 		end
 		app.HandleEvent("OnThingRemoved", t)
 	else
@@ -494,7 +514,11 @@ app.AddRemovalTypeHandler("ItemWithAppearance", function(t)
 		-- TODO eventual setting to control reporting of already collected Things
 		if uniqueRemoved > 0 then
 			if app.Settings:GetTooltipSetting("Report:Collected") then
-				app.print(L.ITEM_ID_REMOVED_SHARED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, uniqueRemoved))
+				app.report(L.ITEM_ID_REMOVED_SHARED:format(
+						GetSourceAppearanceLink(sourceID),
+						sourceInfo.itemID,
+						uniqueRemoved),
+					t.rawlink or t.link)
 			end
 			app.HandleEvent("OnThingRemoved", t)
 			app.UpdateRawIDs(tkey, removedSourceIDs)
@@ -827,9 +851,6 @@ app.SaveHarvestSource = function(data)
 		AllTheThingsHarvestItems[itemID] = sourceID;
 	end
 end
-local function BuildAppearanceLink(sourceID)
-	return "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"
-end
 
 -- Items With Appearances (Item Source)
 do
@@ -841,14 +862,14 @@ do
 
 		local link = app.DetermineItemLink(sourceID);
 		if not link then
-			group.link = BuildAppearanceLink(sourceID)
+			group.link = GetSourceAppearanceLink(sourceID)
 			return
 		end
 		-- app.PrintDebug("GGLUS",sourceID,"=>",link)
 
 		if IsRetrieving(link) then
 			if not group.CanRetry then
-				group.link = BuildAppearanceLink(sourceID)
+				group.link = GetSourceAppearanceLink(sourceID)
 				return
 			end
 			app.FunctionRunner.Run(GenerateGroupLinkUsingSourceID, group)
@@ -955,7 +976,7 @@ do
 			return rawget(t, "itemID")
 		end,
 		baselink = function(t)
-			return BuildAppearanceLink(t.sourceID)
+			return GetSourceAppearanceLink(t.sourceID)
 		end,
 	});
 	app.CreateItemSource = function(sourceID, itemID, t)
@@ -1007,7 +1028,7 @@ local function GetLinkTooltipInfo(sourceGroup, useItemIDs, sameItem)
 			link = RETRIEVING_DATA
 		else
 			missingStr = " |CFFFF0000(INVALID BLIZZARD DATA)|r"
-			link = sourceID and BuildAppearanceLink(sourceID) or UNKNOWN
+			link = sourceID and GetSourceAppearanceLink(sourceID) or UNKNOWN
 		end
 	end
 	local text

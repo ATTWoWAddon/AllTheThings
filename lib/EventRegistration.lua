@@ -9,9 +9,8 @@ local events = setmetatable({}, {
 		-- Blizzard tries accessing ToDebugString on every table randomly because no one knows why
 		if key == "ToDebugString" then return end
 
-		local unhandledEventFunction = function(...)
-			app.print("UNHANDLED EVENT",key,...)
-		end
+		app.report("UNHANDLED EVENT",key)
+		local unhandledEventFunction = app.EmptyFunction
 		t[key] = unhandledEventFunction
 		return unhandledEventFunction
 	end

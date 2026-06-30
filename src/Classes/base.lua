@@ -457,8 +457,10 @@ local function CreateClassInstance(key, id, t)
 			end
 		end
 	end
-	app.PrintDebug(app.Modules.Color.Colorize("CreateClassInstance::Failed to Find Class Constructor for",app.Colors.ChatLinkError),key,id)
-	app.PrintTable(t)
+	if next(t) then
+		app.PrintDebug(app.Modules.Color.Colorize("CreateClassInstance::Failed to Find Class Constructor",app.Colors.ChatLinkError))
+		app.PrintTable(t)
+	end
 	-- if the t has absolutely no useable data to become a valid object, then just use the BaseClass to ensure it at least has some
 	-- proper handling if sent into a row
 	return setmetatable(t, app.BaseClass)

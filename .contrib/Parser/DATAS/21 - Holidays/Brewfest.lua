@@ -745,7 +745,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						77775,	-- Has rolled for Coren Special Loot (Daily Accountwide)(DF Version)
 						-- #endif
 						{
-							["name"] = "Coren Special Loot (Daily Accountwide)",
+							["name"] = "Coren Special Loot Attempt (Daily Accountwide)",
 							["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
 							-- #if AFTER 11.2.0
 							["timeline"] = { ADDED_11_2_0 },

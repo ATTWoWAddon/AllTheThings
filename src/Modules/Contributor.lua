@@ -52,9 +52,13 @@ local function GetReportPlayerLocation()
 	return tostring(px or UNKNOWN)..", "..tostring(py or UNKNOWN)..", "..tostring(mapID or UNKNOWN).." \""..(app.GetMapName(mapID) or "??").."\" "..diffVal
 end
 
+local LorewalkingIgnoredReportTypes = {
+	Quest = true,
+	["Inaccurate Unflagged Quests"] = true,
+}
 local function DoReport(reporttype, id)
-	-- ignore contrib reports if the player is in Lorewalking
-	if GetPlayerAura(463943) then return end
+	-- ignore certain contrib reports if the player is in Lorewalking
+	if LorewalkingIgnoredReportTypes[reporttype] and GetPlayerAura(463943) then return end
 
 	local dialogID = reporttype.."-"..id
 	-- app.PrintDebug("Contributor.DoReport",reporttype,id)
@@ -63,6 +67,8 @@ local function DoReport(reporttype, id)
 	-- report-based fields
 	local chatlink = reportData.CHATLINK
 	reportData.CHATLINK = nil
+	local allowRepeat = reportData.ALLOWREPEAT
+	reportData.ALLOWREPEAT = nil
 	-- ordered report data
 	local orderedReportData = {}
 	-- id/type are ordered first always if existing
@@ -132,7 +138,7 @@ local function DoReport(reporttype, id)
 	reportData[#reportData + 1] = "ATT: "..app.Version.." GameBuild: "..app.GameBuildVersion.." UTC: "..date("!%Y-%m-%dT%H:%M:%SZ", time())
 	reportData[#reportData + 1] = "```";	-- discord fancy box end
 
-	if app:SetupReportDialog(dialogID, "Contributor Report: " .. dialogID, reportData) then
+	if app:SetupReportDialog(dialogID, "Contributor Report: " .. dialogID, reportData, allowRepeat) then
 		app.print(app:Linkify(chatlink or "Contributor Report: "..dialogID, app.Colors.ChatLinkError, "dialog:" .. dialogID));
 		app.Audio:PlayReportSound();
 	end
@@ -154,7 +160,23 @@ local function AddReportData(reporttype, id, data, chatlink)
 	-- app.PrintDebug("Contributor.AddReportData",reporttype,id)
 	-- app.PrintTable(data)
 	local reportData = Reports[reporttype][id]
-	if reportData.REPORTED then app.PrintDebug("Duplicate Report Ignored",reporttype,id) return end
+	if not data.ALLOWREPEAT and reportData.REPORTED then app.PrintDebug("Duplicate Report Ignored",reporttype,id) return end
+
+	-- If this report has already been reported, then the existing useful lines need to be moved to the new report data
+	if reportData.REPORTED then
+		reportData.REPORTED = nil
+		if type(data) ~= "table" then
+			data = {data}
+		end
+		local line = 3
+		local i = 1
+		repeat
+			tinsert(data,i,reportData[line])
+			line = line + 1
+			i = i + 1
+		until reportData[line] == "---- User Info ----" or line > #reportData
+		app.wipearray(reportData)
+	end
 
 	if type(data) == "table" then
 		-- if the incoming data has an OBJREF then capture that information into a generic table
@@ -264,6 +286,8 @@ local MapPrecisionOverrides = {
 	[2583] = 2,	-- Wit'Kalar Crypt
 	[2584] = 5,	-- Revantusk Sedge
 	[2639] = 5,	-- Crypt of the Denied, The Coiled Isle
+	[2640] = 5,	-- Blistering Terrace, The Coiled Isle
+	[2644] = 5,	-- Crypt of the Disgraced, The Coiled Isle
 }
 
 local function Check_coords(objRef, maxCoordDistance)
@@ -371,6 +395,7 @@ MobileDB.Creature = {
 	 [22818] = true,	-- Draenei Orphan
 	 [23870] = true,	-- Ember Clutch Ancient
 	 [24130] = true,	-- Winterhoof Brave
+	 [25324] = true,	-- Earthen Ring Guide
 	 [25962] = true,	-- Flame Eater [A]
 	 [25994] = true,	-- Flame Eater [H]
 	 [26206] = true,	-- Keristrasza
@@ -727,6 +752,11 @@ MobileDB.Creature = {
 	[255270] = true,	-- Orweyna
 	[256867] = true,	-- Grieving Amani
 	[259125] = true,	-- Enchanted Amani Mask
+	[260226] = true,	-- Ofi the Sly
+	[260710] = true,	-- Jelvik
+	[263327] = true,	-- Ofi the Sly
+	[265166] = true,	-- Baraat the Longshot
+	[256674] = true,	-- Ja'bonu
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
 -- either by following the player or having player-based decisions that cause them to have any coordinates
@@ -1082,6 +1112,7 @@ MobileDB.GameObject = {
 	[203264] = true,	-- Wobbling Raptor Egg (q:25854)
 	[203279] = true,	-- Alliance Weapon Crate (q:25822)
 	[203280] = true,	-- Alliance Weapon Crate (q:25822)
+	[203282] = true,	-- Gnoll Cage
 	[203283] = true,	-- Swiftgear Gizmo (q:25853)
 	[203285] = true,	-- Swiftgear Gizmo (q:25855)
 	[203286] = true,	-- Swiftgear Gizmo (q:25855)
@@ -1122,6 +1153,8 @@ MobileDB.GameObject = {
 	[205089] = true,	-- Stabthistle Seed (q:27025)
 	[205092] = true,	-- Nascent Elementium (q:27077)
 	[205099] = true,	-- Ferocious Doomweed (q:26992)
+	[205137] = true,	-- Northridge Lumber (q:27011)
+	[205158] = true,	-- Cultist Cage (q:26955)
 	[205216] = true,	-- Neptulon's Cache (Throne of the Tides)
 	[205367] = true,	-- Wolfsbane (q:27342)
 	[205368] = true,	-- Grimtotem Weapon Rack (q:27310)
@@ -1255,6 +1288,10 @@ MobileDB.GameObject = {
 	[212318] = true,	-- Shan'ze Tablet (q:31043)
 	[212319] = true,	-- Shan'ze Tablet (q:31043)
 	[213076] = true,	-- Box of Fancy Stuff [] 25N
+	[213304] = true,	-- Sra'thik Idol
+	[213305] = true,	-- Sra'thik Idol
+	[213306] = true,	-- Sra'thik Idol
+	[213309] = true,	-- Sra'thik Idol
 	[213888] = true,	-- Taran Zhu's Personal Stash (Shado-Pan Monastery)
 	[214383] = true,	-- Cache of Pure Energy [Elegon] 10N
 	[214385] = true,	-- Cache of Pure Energy [Elegon] ?
@@ -1317,6 +1354,8 @@ MobileDB.GameObject = {
 	[232166] = true,	-- Unlocked Stockpile of Pandaren Spoils [Spoils of Pandaria] LFR
 	[232396] = true,	-- Void Crystal (q:35088)
 	[232403] = true,	-- Escape Pod
+	[232507] = true,	-- Lunarfall Egg
+	[232542] = true,	-- Blackrock Deposit
 	[232652] = true,	-- Finalize Garrison Plot
 	[233028] = true,	-- Tears of the Vale
 	[233029] = true,	-- Vault of Forbidden Treasures [] ?
@@ -1329,6 +1368,7 @@ MobileDB.GameObject = {
 	[234106] = true,	-- Ogre Archaeology Find
 	[234165] = true,	-- Cache of Arakkoan Treasures [Rukhran]
 	[235331] = true,	-- Flask of Blazegrease (q:36758)
+	[235338] = true,	-- Gladiator's Shield (q:36765)
 	[235916] = true,	-- Keg of Grog (q:36566)
 	[235985] = true,	-- Gold Coins
 	[235986] = true,	-- Gold Coins
@@ -1341,6 +1381,7 @@ MobileDB.GameObject = {
 	[236187] = true,	-- Finalize Garrison Plot
 	[236188] = true,	-- Finalize Garrison Plot
 	[236190] = true,	-- Finalize Garrison Plot
+	[236192] = true,	-- Finalize Garrison Plot
 	[236261] = true,	-- Finalize Garrison Plot
 	[236262] = true,	-- Finalize Garrison Plot
 	[236263] = true,	-- Finalize Garrison Plot
@@ -2394,6 +2435,7 @@ MobileDB.GameObject = {
 	[378437] = true,	-- Alexstrasza's Welcome
 	[378802] = true,	-- Corrupted Dragon Egg
 	[378819] = true,	-- Rock Wall
+	[379148] = true,	-- Mysterious Glyph (q:70134)
 	[379159] = true,	-- Shovel
 	[379195] = true,	-- Anvil
 	[379248] = true,	-- Draconium Deposit
@@ -2645,6 +2687,7 @@ MobileDB.GameObject = {
 	[411795] = true,	-- Arkonite Pillar (q:78069)
 	[411878] = true,	-- Intriguing Scrap (q:79205)
 	[411930] = true,	-- Blackpowder Barre
+	[412931] = true,	-- On the Nature of the Dream
 	[412967] = true,	-- Helm of Memories
 	[413046] = true,	-- Bismuth
 	[413126] = true,	-- Box of Artisanal Goods (q:78369 [A], q:78984 [H])
@@ -3229,7 +3272,9 @@ MobileDB.GameObject = {
 	[602746] = true,	-- Lady Selen'vjar Ritual Chest [Daggerspine Landing, Ritual Site]
 	[605174] = true,	-- Haunted Weapon Rack
 	[605196] = true,	-- Mature Blood Petal (q:91560)
+	[609857] = true,	-- The Classic
 	[609858] = true,	-- Budget Friendly (q:93453)
+	[611269] = true,	-- Feathered Trinket (q:93339)
 	[612079] = true,	-- Foul Carcass (q:93397)
 	[612081] = true,	-- Foul Carcass (q:93397)
 	[612102] = true,	-- Transplanted Tranquility Bloom
@@ -3263,6 +3308,7 @@ MobileDB.GameObject = {
 	[618520] = true,	-- Thalassian Lumber
 	[618844] = true,	-- Mislaid Curiosity
 	[619092] = true,	-- Flyer Crate (q:92138)
+	[619677] = true,	-- Sweetsaw Bloom (q:93842)
 	[619736] = true,	-- Netherstorm Structural Cage
 	[620105] = true,	-- Rookery Cache Key
 	[621526] = true,	-- Cache of L'ura [Seat of Triumvirate]
@@ -3303,6 +3349,7 @@ MobileDB.GameObject = {
 	[654422] = true,	-- Energized Crystal Conductor (q:96569)
 	[655270] = true,	-- Dominaar Storage Vessel [Ritual Site: Val]
 	[655271] = true,	-- Hal'hadar Pocket-Storage [Ritual Site: Naigtal]
+	[656044] = true,	-- Singing Shell [The Coiled Isle]
 	[656135] = true,	-- Slumbering Starfish [The Coiled Isle]
 	[658802] = true,	-- Ancient Crypt Reliquary
 	[659301] = true,	-- Highland Redcap [Ritual Site: Naigtal]
@@ -3475,7 +3522,7 @@ local function OnQUEST_DETAIL(...)
 					AddReportData(objRef.__type,questID,questData)
 				elseif checkCoords == 1 then
 					-- Check_coords did a report, so add more info for the quest parent
-					AddReportData(questParent,questData)
+					AddReportData(questParent.__type,questParent.keyval,questData)
 				end
 			else
 				questData.MissingCoords = "No Coordinates for this quest!"

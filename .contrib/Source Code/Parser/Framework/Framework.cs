@@ -1972,7 +1972,7 @@ namespace ATT
         }
         #endregion
 
-        private static string GetBaseDBRootFolder()
+        public static string GetBaseDBRootFolder()
         {
 #if TLT
             return "TLT/";
@@ -2054,14 +2054,12 @@ namespace ATT
         /// Export the database.
         /// This also exports for debugging as well.
         /// </summary>
-        public static void Export()
+        /// <param name="addonRootFolder">The root folder for the addon.</param>
+        /// <param name="dbRootFolder">The root folder for the database.</param>
+        /// <param name="outputFolder">The output folder.</param>
+        public static void Export(string addonRootFolder, string dbRootFolder, DirectoryInfo outputFolder)
         {
-            // Default is relative to where the executable is. (.contrib/Parser)
-            string addonRootFolder = Config["root-addon"] ?? "../..";
-            string dbRootFolder = Config["db-relative"] ?? GetBaseDBRootFolder();
-
             // Setup the output folder (/db)
-            var outputFolder = Directory.CreateDirectory($"{addonRootFolder}/db/{dbRootFolder}");
             if (outputFolder.Exists)
             {
                 // Mark references to the Custom Headers in Root Categories

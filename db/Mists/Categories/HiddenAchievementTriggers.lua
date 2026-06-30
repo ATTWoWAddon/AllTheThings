@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local ach,x=_.CreateAchievement,_.CreateExpansion;
+local ach,crit,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateExpansion;
 categories.HiddenAchievementTriggers={
 x(1,{
 ach(15330,{u=1604}),
@@ -860,14 +860,23 @@ ach(8636),
 ach(8637),
 ach(8638),
 ach(42242),
-ach(61944),
-ach(61945),
-ach(61946),
-ach(61947),
-ach(61948),
-ach(61949),
-ach(61950),
-ach(61951),
-ach(61952),
+ach(61944,{
+crit(111504,{achID=61987,awp=50502,id=1,rwp=50503,u=2})}),
+ach(61945,{
+crit(111506,{achID=61987,awp=50502,id=3,rwp=50503,u=2})}),
+ach(61946,{
+crit(111507,{achID=61987,awp=50502,id=4,rwp=50503,u=2})}),
+ach(61947,{
+crit(111508,{achID=61987,awp=50502,id=5,rwp=50503,u=2})}),
+ach(61948,{
+crit(111509,{achID=61987,awp=50502,id=6,rwp=50503,u=2})}),
+ach(61949,{
+crit(111510,{achID=61987,awp=50502,id=7,rwp=50503,u=2})}),
+ach(61950,{
+crit(111511,{achID=61987,awp=50502,id=8,rwp=50503,u=2})}),
+ach(61951,{
+crit(111512,{achID=61987,awp=50502,id=9,rwp=50503,u=2})}),
+ach(61952,{
+crit(111505,{achID=61987,awp=50502,id=2,rwp=50503,u=2})}),
 ach(61680)}})};
 end);

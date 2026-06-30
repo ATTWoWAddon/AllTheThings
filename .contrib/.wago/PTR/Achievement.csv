@@ -12435,7 +12435,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Shaman class Order Campaign.","The Farseer's Campaign","Decor Reward: Maelstrom Lava Lamp",42280,-1,-1,0,15304,0,5,132096,13,538566,0,211090,0,0,0,0
 "Complete the Warlock class Order Campaign.","The Netherlord's Campaign","Decor Reward: Dreadscar Dais",42281,-1,-1,0,15304,0,5,132096,14,626007,0,211092,0,0,0,0
 "Complete the Warrior class Order Campaign.","The Battlelord's Campaign","Decor Reward: Valarjar Shield Wall",42282,-1,-1,0,15304,0,5,132096,15,1394957,0,211094,0,0,0,0
-"Complete the Abundance achievements listed below.","Abundance: Azeroth Runs on Dundun","Reward: Unlock Dundun's Abundant Travel Method for purchase.",42283,-1,-1,0,15553,0,10,0,75,538536,0,221301,0,0,0,0
+"Complete the Abundance achievements listed below.","Abundance: Azeroth Runs on Dundun","Reward: Unlock Dundun's Abundant Travel Method for purchase.",42283,-1,-1,0,15553,0,10,0,76,538536,0,221301,0,0,0,0
 "Locate and unlock a hidden appearance for your artifact as a Death Knight.","Hidden Potential of the Deathlord","Decor Reward: Replica Acherus Soul Forge",42287,-1,-1,0,15304,0,5,132096,57,236348,0,211278,0,0,0,0
 "Locate and unlock a hidden appearance for your artifact as a Demon Hunter.","Hidden Potential of the Slayer","Decor Reward: Replica Cursed Forge of the Nathrezim",42288,-1,-1,0,15304,0,5,132096,58,236348,0,211282,0,0,0,0
 "Locate and unlock a hidden appearance for your artifact as a Druid.","Hidden Potential of the Archdruid","Decor Reward: Seed of Ages Cutting",42289,-1,-1,0,15304,0,5,132096,59,236348,0,211285,0,0,0,0
@@ -12872,7 +12872,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat the following trainers of Kalimdor with a team of all level 25 Mechanical pets.","Mechanical Battler of Kalimdor",,61049,-1,-1,0,15119,0,5,131072,120,618979,0,215129,0,0,0,0
 "Defeat the following trainers of Kalimdor with a team of all level 25 Undead pets.","Undead Battler of Kalimdor",,61050,-1,-1,0,15119,0,5,131072,121,618980,0,215142,0,0,0,0
 "Complete the following achievements.","Family Battler of Kalimdor","Pet: Moon Darter",61051,-1,-1,0,15119,0,10,135168,164,655854,258737,215159,0,0,0,0
-"Find all of the Glowing Moths hiding in Harandar.","Dust 'Em Off","Reward: Title: ""Dustlord""",61052,-1,-1,0,15553,0,10,131200,48,1003597,0,215172,0,0,0,0
+"Find all of the Glowing Moths hiding in Harandar.","Dust 'Em Off","Reward: Title: ""Dustlord""",61052,-1,-1,0,15553,0,10,131200,49,1003597,0,215172,0,0,0,0
 "Defeat 50 empowered enemies in Heroic World Tier as a Legion Timerunner.","Legionslayer III","+1 Infinite Knowledge",61053,-1,-1,61058,15604,0,0,134144,53,1723990,0,215819,0,0,0,0
 "Complete 50 World Quests in Heroic World Tier as a Legion Timerunner.","Heroic Broken Isles World Quests III","Greater Bronze Cache, Decor Reward: Legion Torture Rack",61054,-1,-1,61056,15604,0,0,134144,28,7266188,0,215837,0,0,0,0
 "Activate 25 Timewarped Obelisks in Heroic World Tier as a Legion Timerunner.","Power of the Obelisks III","Bronze Cache",61055,-1,-1,61060,15604,0,0,134144,84,1378283,0,215827,0,0,0,0
@@ -12901,9 +12901,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete all Legion Raids on Mythic difficulty","Mythic Legion Remix Raids","Appearance: Sargerei Commander's Lightbound Regalia",61078,-1,-1,0,15604,0,0,134144,27,464118,0,215415,0,0,0,0
 "Complete all Legion Raids on Heroic difficulty.","Heroic Legion Remix Raids","Title: Of the Infinite Chaos",61079,-1,-1,0,15604,0,0,134144,15,464118,0,215409,0,0,0,0
 "Defeat the four World Bosses on the Broken Shore","Broken Shore World Bosses","+1 Infinite Knowledge",61080,-1,-1,0,15604,0,0,134144,263,4622478,0,215493,0,0,0,0
-"Share a Toasting Brew in the Arcantina with all of the following races.","Share a Drink",,61081,-1,-1,0,15553,0,10,131072,51,135999,0,215683,0,0,0,0
-"Complete quests from all of the following visitors in the Arcantina.","Old Soldiers",,61082,-1,-1,0,15553,0,10,131072,52,135321,0,215710,0,0,0,0
-"Retrieve and display all of the following items in the Arcantina.","Highly Decorated",,61083,-1,-1,0,15553,0,10,131072,54,466729,0,215720,0,0,0,0
+"Share a Toasting Brew in the Arcantina with all of the following races.","Share a Drink",,61081,-1,-1,0,15553,0,10,131072,52,135999,0,215683,0,0,0,0
+"Complete quests from all of the following visitors in the Arcantina.","Old Soldiers",,61082,-1,-1,0,15553,0,10,131072,53,135321,0,215710,0,0,0,0
+"Retrieve and display all of the following items in the Arcantina.","Highly Decorated",,61083,-1,-1,0,15553,0,10,131072,55,466729,0,215720,0,0,0,0
 "Reach level 80 with a Rogue in Legion: Remix.","Timerunner: Rogue","Mount: Shadowblade's Felscorned Omen",61084,-1,-1,0,15604,0,0,134144,67,4622478,0,215866,0,0,0,0
 "Reach level 80 with a Monk in Legion: Remix.","Timerunner: Monk","Mount: Felscorned Grandmaster's Companion",61085,-1,-1,0,15604,0,0,134144,71,4622478,0,215863,0,0,0,0
 "Reach level 80 with a Druid in Legion: Remix.","Timerunner: Druid","Mount: Feldruid's Scornwing Idol",61086,-1,-1,0,15604,0,0,134144,78,4622478,0,215869,0,0,0,0
@@ -13126,7 +13126,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the optional Zul'Aman storylines listed below.","Sojourner of Zul'Aman",,61452,-1,-1,0,15547,0,10,131072,18,7210235,0,218492,0,0,0,0
 "Complete all of the Zul'Aman achievements listed below.","Making an Amani Out of You",,61453,-1,-1,0,15553,0,25,131072,9,7127505,0,218513,0,0,0,0
 "Defeat Chimaerus after plucking all Corrupted Feathers from Sergeant Quackers and rescuing him from the Aln in The Dreamrift on Normal difficulty or higher.","Falling Between The Quacks",,61454,2939,-1,0,15566,0,10,0,28,4048814,0,218528,0,0,0,0
-"Find all of the Shadowpine Songseekers in Zul'aman.","Shadowpine Scattered",,61455,-1,-1,0,15553,0,5,131072,62,6119037,0,218534,0,0,0,0
+"Find all of the Shadowpine Songseekers in Zul'aman.","Shadowpine Scattered",,61455,-1,-1,0,15553,0,5,131072,63,6119037,0,218534,0,0,0,0
 ,"Die in Lordaeron or Undercity",,61456,-1,-1,0,15522,0,0,1048576,2,136243,0,218541,0,0,0,0
 "Gain Mastery of Timeways for 4 weeks during the Turbulent Timeways V event.","Master of the Turbulent Timeways V","Mount: Spawn of Vyranoth",61463,-1,-1,0,15454,0,0,131072,4,609811,258884,218588,0,0,0,0
 "Complete the Sparks of War quest in Midnight 5 times.","Spark in the Night",,61464,-1,-1,0,15283,0,5,131072,2,132147,0,218749,0,0,0,0
@@ -13285,7 +13285,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Ziekket kills (Mythic The Blinding Vale)",,61661,2859,-1,0,15542,0,0,1,18,7354408,0,219901,0,0,0,0
 "Equip a Superior or better item, with a minimum item level of 220, in every slot.","Midnight Superior",,61678,-1,-1,0,92,0,10,0,52,135865,0,219904,0,0,0,0
 "Equip an Epic or better item, with a minimum item level of 233, in every slot.","Midnight Epic",,61679,-1,-1,0,92,0,10,0,53,132885,0,219920,0,0,0,0
-"Harvest a total lifetime amount of 1,000,000 Abundance.","Abundance: You Should See Him in a Crown","Reward: The Loa of Abundance gains a crown.",61681,-1,-1,0,15553,0,10,131072,94,1670851,0,223076,0,0,0,0
+"Harvest a total lifetime amount of 1,000,000 Abundance.","Abundance: You Should See Him in a Crown","Reward: The Loa of Abundance gains a crown.",61681,-1,-1,0,15553,0,10,131072,95,1670851,0,223076,0,0,0,0
 "Participate in 5 instanced PvP matches.","Entering Battle","Decor Reward: Berserker's Empowerment",61683,-1,-1,0,95,1,5,132096,45,132147,0,220209,0,0,0,0
 "Participate in 20 instanced PvP matches.","Progressing in Battle","Decor Reward: Guardian's Empowerment",61684,-1,-1,61683,95,1,5,132096,46,132147,0,220211,0,0,0,0
 "Participate in 50 instanced PvP matches.","Proficient in Battle","Decor Reward: Chaotic Empowerment",61685,-1,-1,61684,95,1,5,132096,47,132147,0,220213,0,0,0,0
@@ -13365,7 +13365,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete a Tier 1 delve.","Midnight Delves: Tier 1","Unlock: Tier 2 delves in Midnight",61832,-1,-1,0,15571,0,10,131072,2,6025441,0,220765,0,0,0,0
 "Complete a Tier 2 delve.","Midnight Delves: Tier 2","Unlock: Tier 3 delves in Midnight",61835,-1,-1,61832,15571,0,10,131072,3,6025441,0,220767,0,0,0,0
 "Complete a Tier 3 delve.","Midnight Delves: Tier 3",,61836,-1,-1,61835,15571,0,10,131072,4,6025441,0,220769,0,0,0,0
-"Complete the Midnight achievements listed below.","Midnight Pathfinder","Reward: Finery Funds",61839,-1,-1,0,15553,0,10,2229248,61,237386,0,220771,0,0,0,0
+"Complete the Midnight achievements listed below.","Midnight Pathfinder","Reward: Finery Funds",61839,-1,-1,0,15553,0,10,2229248,62,237386,0,220771,0,0,0,0
 "Collect the appearances of a class set from Midnight Season 1.",Quel'Dressed,,61843,-1,-1,0,15259,0,10,131072,58,7454100,0,220775,0,0,0,0
 "Explore the Lands of Midnight.","The Midnight Explorer",,61854,-1,-1,0,97,0,10,131072,13,7488399,0,220789,0,0,0,0
 "Explore Eversong Woods, revealing the covered areas of the world map.","Explore Eversong Woods",,61855,-1,-1,0,15553,0,10,131072,4,7578704,0,220791,0,0,0,0
@@ -13373,8 +13373,8 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Explore Voidstorm, revealing the covered areas of the world map.","Explore Voidstorm",,61857,-1,-1,0,15553,0,10,131072,7,7507880,0,220795,0,0,0,0
 "Complete one of the achievements or feats of strength listed below:","Light of the Party","Reward: Gleaming Sunmote",61858,-1,-1,0,15259,0,10,131072,59,876916,0,220805,0,0,0,0
 "Visit each Flight Master in Midnight to discover their flight points for your Warband.","Midnight Flight Master",,61859,-1,-1,0,15553,0,10,131072,12,7112304,0,220809,0,0,0,0
-"Attempt to fly to The Cradle high in the sky above Harandar.","From The Cradle to the Grave",,61860,-1,-1,0,15553,0,5,0,47,464030,0,220854,0,0,0,0
-"Chase an Opportunistic Harrower back to its nest in Voidstorm.","Oh, No You Don't!",,61861,-1,-1,0,15553,0,5,131072,49,7388254,0,220856,0,0,0,0
+"Attempt to fly to The Cradle high in the sky above Harandar.","From The Cradle to the Grave",,61860,-1,-1,0,15553,0,5,0,48,464030,0,220854,0,0,0,0
+"Chase an Opportunistic Harrower back to its nest in Voidstorm.","Oh, No You Don't!",,61861,-1,-1,0,15553,0,5,131072,50,7388254,0,220856,0,0,0,0
 ,"<DNT> Brewgarden Tutorial Completed",,61862,-1,-1,0,162,0,0,3276804,13,136243,0,220858,0,0,0,0
 "Find and open all Sturdy Chests hidden in Atal'Aman.","Atal'Aman Discoveries",,61863,-1,-1,0,15571,0,5,131200,37,4203076,0,220861,0,0,0,0
 "Complete the optional Voidstorm storylines listed below.","Sojourner of Voidstorm",,61864,-1,-1,0,15547,0,10,131072,19,7448210,0,220881,0,0,0,0
@@ -13404,19 +13404,19 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Midnight delve achievements listed below.","Glory of the Midnight Delver","Mount: Giganto Manis",61906,-1,-1,0,15571,0,25,143360,50,6025441,257199,221069,0,0,0,0
 "Complete the storylines involving King Mrgl-Mrgl in Borean Tundra, Highmountain, and Zul'Aman.","Mrglgrgl of Grglmrgl","Title: Mrglgrgl of Grglmrgl",61910,-1,-1,0,15547,0,5,131072,12,134169,0,221077,0,0,0,0
 "Defeat Vaelgor & Ezzorak after all players break each Nullzone's tethers within 3 seconds in The Voidspire on Normal difficulty or higher.","Ready, Set, Snap!",,61911,2912,-1,0,15566,0,10,0,25,615099,0,221094,0,0,0,0
-"Construct one of each of the following defenses for the Stormarion Assault.","Anchoring the Defense",,61912,-1,-1,0,15553,0,5,0,44,7431083,0,221137,0,0,0,0
-"Complete all three waves of the Stormarion Assault.","A Singular Problem",,61913,-1,-1,0,15553,0,10,0,45,3610524,0,221142,0,0,0,0
+"Construct one of each of the following defenses for the Stormarion Assault.","Anchoring the Defense",,61912,-1,-1,0,15553,0,5,0,45,7431083,0,221137,0,0,0,0
+"Complete all three waves of the Stormarion Assault.","A Singular Problem",,61913,-1,-1,0,15553,0,10,0,46,3610524,0,221142,0,0,0,0
 "Complete the Rage of the Ren'dorei storyline.","Rage of the Ren'dorei","Reward: Void Elf Demon Hunter Unlocked",61916,-1,-1,0,15547,0,10,131072,11,1305156,0,221170,0,0,0,0
 "Get killed by a Fungal Strider.","""Hold aggro, I got this""",,61917,-1,-1,0,81,0,0,133120,5,464342,0,221182,0,0,0,0
-"Finish Stormarion Assault with the Singularity Anchor at 90 percent health or higher.","Ninety Percent is Good Enough",,61922,-1,-1,0,15553,0,10,0,46,464068,0,221224,0,0,0,0
+"Finish Stormarion Assault with the Singularity Anchor at 90 percent health or higher.","Ninety Percent is Good Enough",,61922,-1,-1,0,15553,0,10,0,47,464068,0,221224,0,0,0,0
 "Defeat the Lightblinded Vanguard while your entire raid has Maximum Aura in The Voidspire on Normal difficulty or higher.","Aura Farming",,61936,2912,-1,0,15566,0,10,0,26,135872,0,221315,0,0,0,0
-"Earn 250,000 Abundance at the Watha'nan Crypts in Eversong Woods.","Abundance: Artisan of Mausoloa",,61937,-1,-1,0,15553,0,5,0,76,132853,0,221291,0,0,0,0
-"Earn 250,000 Abundance at the Loaknit Den in Zul'Aman.","Abundance: Artisan of Loaknit",,61938,-1,-1,0,15553,0,5,0,79,4620680,0,221295,0,0,0,0
-"Earn 250,000 Abundance at the Floaret Grotto in Harandar.","Abundance: Artisan of Floaret",,61939,-1,-1,0,15553,0,5,0,77,4620675,0,221297,0,0,0,0
-"Earn 250,000 Abundance at the Abundant Voidburrow in Voidstorm.","Abundance: Artisan of Loanite",,61940,-1,-1,0,15553,0,5,0,78,136248,0,221299,0,0,0,0
-"Unlock Abundance by completing its tutorial with Dundun and Chel the Chip.","Abundance: Acolyte of a Glorious Entity",,61941,-1,-1,0,15553,0,5,0,72,6351950,0,221306,0,0,0,0
+"Earn 250,000 Abundance at the Watha'nan Crypts in Eversong Woods.","Abundance: Artisan of Mausoloa",,61937,-1,-1,0,15553,0,5,0,77,132853,0,221291,0,0,0,0
+"Earn 250,000 Abundance at the Loaknit Den in Zul'Aman.","Abundance: Artisan of Loaknit",,61938,-1,-1,0,15553,0,5,0,80,4620680,0,221295,0,0,0,0
+"Earn 250,000 Abundance at the Floaret Grotto in Harandar.","Abundance: Artisan of Floaret",,61939,-1,-1,0,15553,0,5,0,78,4620675,0,221297,0,0,0,0
+"Earn 250,000 Abundance at the Abundant Voidburrow in Voidstorm.","Abundance: Artisan of Loanite",,61940,-1,-1,0,15553,0,5,0,79,136248,0,221299,0,0,0,0
+"Unlock Abundance by completing its tutorial with Dundun and Chel the Chip.","Abundance: Acolyte of a Glorious Entity",,61941,-1,-1,0,15553,0,5,0,73,6351950,0,221306,0,0,0,0
 "Earn level 50 on a newly created haranir character.","Heritage of the Haranir","Reward: Haranir Heritage Armor",61942,-1,-1,61506,15547,0,10,131072,15,7288045,0,221308,0,0,0,0
-"Complete each Abundance event location.","Abundance: Prosperous Plentitude!",,61943,-1,-1,0,15553,0,5,0,73,237376,0,221310,0,0,0,0
+"Complete each Abundance event location.","Abundance: Prosperous Plentitude!",,61943,-1,-1,0,15553,0,5,0,74,237376,0,221310,0,0,0,0
 "Win 10 matches of Training Grounds.","Putting in the Practice",,61953,-1,-1,0,15575,0,5,131072,3,236652,0,221335,0,0,0,0
 "Win 25 matches of Training Grounds.","Putting in the Practice",,61954,-1,-1,61953,15575,0,5,131072,4,236652,0,221337,0,0,0,0
 "Win 100 matches of Training Grounds.","Putting in the Practice",,61955,-1,-1,61954,15575,0,10,131072,5,236652,0,221339,0,0,0,0
@@ -13425,7 +13425,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Slay each of the 15 Horde champions listed below.","Focused Target",,61958,-1,1,0,15575,0,10,131072,1,1322722,0,221361,0,0,0,0
 "Slay each of the 15 Alliance champions listed below.","Focused Target",,61959,-1,0,0,15575,0,10,131072,2,1322722,0,221365,0,0,0,0
 "Discover the hidden treasures across Eversong Woods.","Treasures of Eversong Woods","Pet: Sootpaw",61960,-1,-1,0,15553,0,5,131072,22,4641307,269028,221369,0,0,0,0
-"Defend all of the runestones in Eversong Woods.","Runestone Rush",,61961,-1,-1,0,15553,0,5,131072,56,134423,0,221379,0,0,0,0
+"Defend all of the runestones in Eversong Woods.","Runestone Rush",,61961,-1,-1,0,15553,0,5,131072,57,134423,0,221379,0,0,0,0
 "Place telescopes on the tallest peaks in Midnight.","Midnight: The Highest Peaks",,62057,-1,-1,0,15553,0,10,131072,1,134442,0,221620,0,0,0,0
 "Defeat Vorasius after every player feeds a hatchling enough to put it to sleep in The Voidspire on Normal difficulty or higher.","Hungry Hungry Hatchlings",,62058,2912,-1,0,15566,0,10,0,23,7126992,0,221690,0,0,0,0
 "Obtain 600 mounts (usable by a single character).","Insurmountable Collection","Mount: Anu'shalla, Shadow's Guidance",62096,-1,0,15833,15248,0,10,131072,30,7545241,265656,221822,0,0,0,0
@@ -13443,16 +13443,16 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Take 50 flags in Arathi Basin Training Grounds.","Learning the Landscape: Arathi Basin",,62114,-1,-1,0,15575,0,5,131072,10,1391691,0,222002,0,0,0,0
 "Take 30 flags in Battle for Gilneas Training Grounds.","Learning the Landscape: Battle for Gilneas",,62115,-1,-1,0,15575,0,5,131072,11,1391692,0,222004,0,0,0,0
 "Take control of 100 carts in Silvershard Mines Training Grounds.","Learning the Landscape: Silvershard Mines",,62116,-1,-1,0,15575,0,5,131072,12,1391693,0,222006,0,0,0,0
-"Collect 10 fish from Abyss Bubbles while on Abyss Angler dives.","Abyss Anglers: Finnow Chum","Reward: Unlock Finnow Chum for purchase from Depthdiver Jeju",62117,-1,-1,0,15553,0,5,131072,106,461135,0,223645,0,0,0,0
-"Collect 25 fish from Abyss Bubbles while on Abyss Angler dives, and acquire the Finnow Chum upgrade.","Abyss Anglers: Plecofin Bait","Reward: Unlock Plecofin Bait for purchase from Depthdiver Jeju",62118,-1,-1,0,15553,0,5,131072,107,237340,0,222418,0,0,0,0
-"Collect 50 fish from Abyss Bubbles while on Abyss Angler dives, and acquire the Murkskimmer Meat upgrade.","Abyss Anglers: Murkskimmer Meat","Reward: Unlock Murkskimmer Meat for purchase from Depthdiver Jeju",62119,-1,-1,0,15553,0,10,131072,108,351505,0,222420,0,0,0,0
-"Develop bonds with all Loa and unlock them for worship at the Altar of Blessings.","Altar of Blessings: The Penitent Troll",,62120,-1,-1,0,15553,0,5,131072,98,1850548,0,222483,0,0,0,0
-"Trigger each of the Blessing effects listed.","Altar of Blessings: Sacred Buffet Devotee",,62121,-1,-1,0,15553,0,5,131072,99,135876,0,222493,0,0,0,0
+"Collect 10 fish from Abyss Bubbles while on Abyss Angler dives.","Abyss Anglers: Finnow Chum","Reward: Unlock Finnow Chum for purchase from Depthdiver Jeju",62117,-1,-1,0,15553,0,5,131072,107,461135,0,223645,0,0,0,0
+"Collect 25 fish from Abyss Bubbles while on Abyss Angler dives, and acquire the Finnow Chum upgrade.","Abyss Anglers: Plecofin Bait","Reward: Unlock Plecofin Bait for purchase from Depthdiver Jeju",62118,-1,-1,0,15553,0,5,131072,108,237340,0,222418,0,0,0,0
+"Collect 50 fish from Abyss Bubbles while on Abyss Angler dives, and acquire the Murkskimmer Meat upgrade.","Abyss Anglers: Murkskimmer Meat","Reward: Unlock Murkskimmer Meat for purchase from Depthdiver Jeju",62119,-1,-1,0,15553,0,10,131072,109,351505,0,222420,0,0,0,0
+"Develop bonds with all Loa and unlock them for worship at the Altar of Blessings.","Altar of Blessings: The Penitent Troll",,62120,-1,-1,0,15553,0,5,131072,99,1850548,0,222483,0,0,0,0
+"Trigger each of the Blessing effects listed.","Altar of Blessings: Sacred Buffet Devotee",,62121,-1,-1,0,15553,0,5,131072,100,135876,0,222493,0,0,0,0
 "Defeat all of the rare creatures found in Zul'Aman.","Tallest Tree in the Forest","Decor Reward: Colossal Amani Stone Visage",62122,-1,-1,0,15553,0,10,131072,16,463283,0,222024,0,0,0,0
 "Discover the hidden treasures across Zul'Aman.","Treasures of Zul'Aman","Toy: Pango Plating",62125,-1,-1,0,15553,0,5,131072,24,1519429,268717,222041,0,0,0,0
 "Discover the hidden treasures across Voidstorm","Treasures of Voidstorm","Toy: Interdimensional Parcel Signal",62126,-1,-1,0,15553,0,5,131072,23,7137586,264695,222052,0,0,0,0
 "Defeat all of the rare creatures found in Voidstorm.","The Ultimate Predator","Decor Reward: Opened Domanaar Storage Crate",62130,-1,-1,0,15553,0,10,131072,15,7448210,0,222082,0,0,0,0
-"Evade the Hungering Presence's grasp in Voidstorm for at least 60 seconds.","Thrill of the Chase",,62133,-1,-1,0,15553,0,5,131072,50,4622488,0,222101,0,0,0,0
+"Evade the Hungering Presence's grasp in Voidstorm for at least 60 seconds.","Thrill of the Chase",,62133,-1,-1,0,15553,0,5,131072,51,4622488,0,222101,0,0,0,0
 "Complete 5 Prey Hunts in War Mode.","The Deadliest of Prey",,62134,-1,-1,0,15605,0,5,131072,12,1450139,0,222107,0,0,0,0
 "Complete a Nightmare Hunt while in War Mode.","Now It's A Party",,62135,-1,-1,0,15605,0,5,131072,13,132295,0,222108,0,0,0,0
 "Kill 50 players while on a Nightmare Hunt in War Mode.","I'm Good At What I Do",,62136,-1,-1,0,15605,0,5,131072,14,538039,0,222109,0,0,0,0
@@ -13501,9 +13501,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Lost Theldrin or Neydra the Starving on Nightmare mode.","Prey: No Rest for the Wretched (Nightmare)","Decor Reward: Preyseeker's Wretched Effigy",62182,-1,-1,0,15605,0,5,132096,50,3565724,0,222256,0,0,0,0
 "Defeat Thornspeaker Edgath or Thorn-Witch Liset on Nightmare mode.","Prey: A Thorn in the Side (Nightmare)","Decor Reward: Preyseeker's Thornspeaker Effigy",62183,-1,-1,0,15605,0,5,132096,51,3565724,0,222259,0,0,0,0
 "Defeat Grothoz, the Burning Shadow or Dengzag, the Darkened Blaze on Nightmare mode.","Prey: Breaking the Blade (Nightmare)","Decor Reward: Preyseeker's Twilight Effigy",62184,-1,-1,0,15605,0,5,132096,52,3565724,0,222262,0,0,0,0
-"Discover all painter's easels found outdoors in Eversong Woods.","Ever Painting","Decor Reward: Silvermoon Painter's Cushion",62185,-1,-1,0,15553,0,5,132096,58,7549082,0,222267,0,0,0,0
-"Invite all four factions to Saltheril's Haven in Eversong Woods.","The Party Must Go On","Decor Reward: Eversong Feast Platter",62186,-1,-1,0,15553,0,5,131072,57,133460,0,222151,0,0,0,0
-"Sample every drink available for Grand Magister Rommath in Eversong Woods.","Grand Magister's Sommelier",,62187,-1,-1,0,15553,0,5,131072,59,132809,0,222265,0,0,0,0
+"Discover all painter's easels found outdoors in Eversong Woods.","Ever Painting","Decor Reward: Silvermoon Painter's Cushion",62185,-1,-1,0,15553,0,5,132096,59,7549082,0,222267,0,0,0,0
+"Invite all four factions to Saltheril's Haven in Eversong Woods.","The Party Must Go On","Decor Reward: Eversong Feast Platter",62186,-1,-1,0,15553,0,5,131072,58,133460,0,222151,0,0,0,0
+"Sample every drink available for Grand Magister Rommath in Eversong Woods.","Grand Magister's Sommelier",,62187,-1,-1,0,15553,0,5,131072,60,132809,0,222265,0,0,0,0
 "Listen to the stories of the Haranir who went to the surface, seeking the world trees.","More Than Just Their Roots",,62188,-1,-1,0,15553,0,5,131072,3,236160,0,222268,0,0,0,0
 "Joined the secretive cabal of the Mind-Seekers.",Mind-Seeker,,62189,-1,-1,0,81,0,0,133120,275,6035316,0,222284,0,0,0,0
 "Reach the maximum reputation with each Silvermoon Court faction in Eversong Woods.","Life of the Party","Mount Reward: Umbral Dragonhawk",62190,-1,-1,0,15600,0,10,131072,1,669452,257144,225359,0,0,0,0
@@ -13513,27 +13513,27 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Healer.","Midnight Dungeon Healer",,62194,-1,-1,0,15541,0,10,131072,3,7431122,0,222362,0,0,0,0
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Tank.","Midnight Dungeon Tank",,62195,-1,-1,0,15541,0,10,131072,4,7392266,0,222371,0,0,0,0
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Tank, Healer, and Damage Dealer.","Midnight Dungeoneer","Reward: Finery Funds",62196,-1,-1,0,15541,0,30,132096,1,7259236,0,222380,0,0,0,0
-"Find and join Chu'ke the possessed doll in Zul'Aman.","Put a Pin in It",,62199,-1,-1,0,15553,0,5,131072,64,5206188,0,222398,0,0,0,0
-"Collect all of the lost gnome's writings in Zul'Aman.","Gnome Alone",,62200,-1,-1,0,15553,0,5,131072,65,133740,0,222400,0,0,0,0
-"/kiss all of the ""princess"" frogs in Zul'Aman.","The Frog and the Princesses",,62201,-1,-1,0,15553,0,5,131072,66,2399262,0,222402,0,0,0,0
-"Assist the Spiritpaw Runner in Zul'Aman.","Spiritpaw Marathon",,62202,-1,-1,0,15553,0,5,131072,67,4891426,0,222404,0,0,0,0
+"Find and join Chu'ke the possessed doll in Zul'Aman.","Put a Pin in It",,62199,-1,-1,0,15553,0,5,131072,65,5206188,0,222398,0,0,0,0
+"Collect all of the lost gnome's writings in Zul'Aman.","Gnome Alone",,62200,-1,-1,0,15553,0,5,131072,66,133740,0,222400,0,0,0,0
+"/kiss all of the ""princess"" frogs in Zul'Aman.","The Frog and the Princesses",,62201,-1,-1,0,15553,0,5,131072,67,2399262,0,222402,0,0,0,0
+"Assist the Spiritpaw Runner in Zul'Aman.","Spiritpaw Marathon",,62202,-1,-1,0,15553,0,5,131072,68,4891426,0,222404,0,0,0,0
 "Complete every Midnight delve on Tier 11 or higher with lives remaining as a Damage Dealer, Healer, and Tank.","Midnight Delver III",,62206,-1,-1,61721,15571,0,50,132096,21,4887539,0,222406,0,0,0,0
-"Catch at least 3 fish during Abyss Anglers dives.","Abyss Anglers: Reinforced Joints","Reward: Unlock Reinforced Joints for purchase from Depthdiver Jeju",62207,-1,-1,0,15553,0,5,131072,100,5728024,0,222422,0,0,0,0
-"Catch at least 25 fish during a single Abyss Anglers dive, and acquire the Reinforced Joints upgrade.","Abyss Anglers: Depth Grease","Reward: Unlock Depth Grease for purchase from Depthdiver Jeju",62208,-1,-1,0,15553,0,5,131072,101,5728024,0,222424,0,0,0,0
-"Catch at least 500 fish from Abyss Angler dives, and acquire the Depth Grease upgrade.","Abyss Anglers: Pahk Trench Fins","Reward: Unlock Pahk Trench Fins for purchase from Depthdiver Jeju",62209,-1,-1,0,15553,0,10,131072,102,5728024,0,222426,0,0,0,0
-"Collect each of the creatures listed below during Abyss Anglers dives.","Abyss Anglers: Depthdiver's Used Tank","Reward: Unlock Depthdiver's Used Tank for purchase from Depthdiver Jeju",62210,-1,-1,0,15553,0,5,131072,103,5727887,0,222428,0,0,0,0
-"Collect each of the creatures listed below during Abyss Anglers dives, and acquire the Depthdiver's Used Tank upgrade.","Abyss Anglers: Fathom-Tested Tank","Reward: Unlock Fathom-Tested Tank for purchase from Depthdiver Jeju",62211,-1,-1,0,15553,0,5,131072,104,5727887,0,222430,0,0,0,0
-"Collect each of the creatures listed below during Abyss Anglers dives, and acquire the Fathom-Tested Tank.","Abyss Anglers: Nalorakk's Breath Tank","Reward: Unlock Nalorakk's Breath Tank for purchase from Depthdiver Jeju",62212,-1,-1,0,15553,0,10,131072,105,5727887,0,222432,0,0,0,0
-"Discover 50 Sunken Relics throughout your Abyss Anglers dives.","Abyss Anglers: Shallows Net","Reward: Unlock Shallows Net for purchase from Depthdiver Jeju",62213,-1,-1,0,15553,0,5,131072,109,2124986,0,222434,0,0,0,0
-"Discover 10 Ancient Relics throughout your Abyss Anglers dives, and acquire the Shallows Net upgrade.","Abyss Anglers: Triple-Thread Net","Reward: Unlock Triple-Thread Net for purchase from Depthdiver Jeju",62214,-1,-1,0,15553,0,5,131072,110,2124986,0,222436,0,0,0,0
-"Catch each of the Shallows creatures listed below throughout your Abyss Anglers dives.","Abyss Anglers: Heavy Harpoon Cannon","Reward: Unlock Heavy Harpoon Cannon for purchase",62215,-1,-1,0,15553,0,10,1179648,114,4038104,0,222438,0,0,0,0
-"Catch each of the Trench creatures listed below throughout your Abyss Anglers dives.","Abyss Anglers: Hollowcore Harpoon Turret","Reward: Unlock Hollowcore Harpoon Turret for purchase",62216,-1,-1,0,15553,0,10,1179648,116,236339,0,222453,0,0,0,0
-"Complete each of the Abyss Anglers Achievements listed.","Abyss Anglers: Idol of the Depths","Reward: Unlock Idol of the Depths for purchase from Depthdiver Tu'nakit",62217,-1,-1,0,15553,0,10,131072,117,2027958,0,222466,0,0,0,0
-"Run out of breath during an Abyss Anglers dive.","Abyss Anglers: Even The Best",,62218,-1,-1,0,15553,0,5,131072,112,132322,0,222475,0,0,0,0
-"Get forcibly removed from an Abyss Anglers dive while attempting to swim beyond the trench.","Abyss Anglers: No Sea Can Hold Me",,62219,-1,-1,0,15553,0,5,131072,115,135861,0,222477,0,0,0,0
-"Use your Surface! ability during an Abyss Anglers diver with less than 10 seconds of breath remaining.","Abyss Anglers: Proper Procedure",,62220,-1,-1,0,15553,0,5,131072,119,136148,0,222479,0,0,0,0
-"Swim through 25 Schools of Fish during a single Abyss Anglers dive.","Abyss Anglers: Fresh Depth Nets",,62221,-1,-1,0,15553,0,5,131072,120,2159816,0,222481,0,0,0,0
-"Get knocked away by a Brakpuffer during an Abyss Anglers dive.","Abyss Anglers: Free Transport",,62222,-1,-1,0,15553,0,5,131072,113,463836,0,222530,0,0,0,0
+"Catch at least 3 fish during Abyss Anglers dives.","Abyss Anglers: Reinforced Joints","Reward: Unlock Reinforced Joints for purchase from Depthdiver Jeju",62207,-1,-1,0,15553,0,5,131072,101,5728024,0,222422,0,0,0,0
+"Catch at least 25 fish during a single Abyss Anglers dive, and acquire the Reinforced Joints upgrade.","Abyss Anglers: Depth Grease","Reward: Unlock Depth Grease for purchase from Depthdiver Jeju",62208,-1,-1,0,15553,0,5,131072,102,5728024,0,222424,0,0,0,0
+"Catch at least 500 fish from Abyss Angler dives, and acquire the Depth Grease upgrade.","Abyss Anglers: Pahk Trench Fins","Reward: Unlock Pahk Trench Fins for purchase from Depthdiver Jeju",62209,-1,-1,0,15553,0,10,131072,103,5728024,0,222426,0,0,0,0
+"Collect each of the creatures listed below during Abyss Anglers dives.","Abyss Anglers: Depthdiver's Used Tank","Reward: Unlock Depthdiver's Used Tank for purchase from Depthdiver Jeju",62210,-1,-1,0,15553,0,5,131072,104,5727887,0,222428,0,0,0,0
+"Collect each of the creatures listed below during Abyss Anglers dives, and acquire the Depthdiver's Used Tank upgrade.","Abyss Anglers: Fathom-Tested Tank","Reward: Unlock Fathom-Tested Tank for purchase from Depthdiver Jeju",62211,-1,-1,0,15553,0,5,131072,105,5727887,0,222430,0,0,0,0
+"Collect each of the creatures listed below during Abyss Anglers dives, and acquire the Fathom-Tested Tank.","Abyss Anglers: Nalorakk's Breath Tank","Reward: Unlock Nalorakk's Breath Tank for purchase from Depthdiver Jeju",62212,-1,-1,0,15553,0,10,131072,106,5727887,0,222432,0,0,0,0
+"Discover 50 Sunken Relics throughout your Abyss Anglers dives.","Abyss Anglers: Shallows Net","Reward: Unlock Shallows Net for purchase from Depthdiver Jeju",62213,-1,-1,0,15553,0,5,131072,110,2124986,0,222434,0,0,0,0
+"Discover 10 Ancient Relics throughout your Abyss Anglers dives, and acquire the Shallows Net upgrade.","Abyss Anglers: Triple-Thread Net","Reward: Unlock Triple-Thread Net for purchase from Depthdiver Jeju",62214,-1,-1,0,15553,0,5,131072,111,2124986,0,222436,0,0,0,0
+"Catch each of the Shallows creatures listed below throughout your Abyss Anglers dives.","Abyss Anglers: Heavy Harpoon Cannon","Reward: Unlock Heavy Harpoon Cannon for purchase",62215,-1,-1,0,15553,0,10,1179648,115,4038104,0,222438,0,0,0,0
+"Catch each of the Trench creatures listed below throughout your Abyss Anglers dives.","Abyss Anglers: Hollowcore Harpoon Turret","Reward: Unlock Hollowcore Harpoon Turret for purchase",62216,-1,-1,0,15553,0,10,1179648,117,236339,0,222453,0,0,0,0
+"Complete each of the Abyss Anglers Achievements listed.","Abyss Anglers: Idol of the Depths","Reward: Unlock Idol of the Depths for purchase from Depthdiver Tu'nakit",62217,-1,-1,0,15553,0,10,131072,118,2027958,0,222466,0,0,0,0
+"Run out of breath during an Abyss Anglers dive.","Abyss Anglers: Even The Best",,62218,-1,-1,0,15553,0,5,131072,113,132322,0,222475,0,0,0,0
+"Get forcibly removed from an Abyss Anglers dive while attempting to swim beyond the trench.","Abyss Anglers: No Sea Can Hold Me",,62219,-1,-1,0,15553,0,5,131072,116,135861,0,222477,0,0,0,0
+"Use your Surface! ability during an Abyss Anglers diver with less than 10 seconds of breath remaining.","Abyss Anglers: Proper Procedure",,62220,-1,-1,0,15553,0,5,131072,120,136148,0,222479,0,0,0,0
+"Swim through 25 Schools of Fish during a single Abyss Anglers dive.","Abyss Anglers: Fresh Depth Nets",,62221,-1,-1,0,15553,0,5,131072,121,2159816,0,222481,0,0,0,0
+"Get knocked away by a Brakpuffer during an Abyss Anglers dive.","Abyss Anglers: Free Transport",,62222,-1,-1,0,15553,0,5,131072,114,463836,0,222530,0,0,0,0
 "Fulfill 50 Midnight crafting orders for Alchemy.",Alchemy-on-Demand,,62223,-1,-1,0,15489,0,5,131072,79,7548896,0,222577,0,0,0,0
 ,"Die in a Delve",,62230,-1,-1,0,15571,0,0,1179648,1,136243,0,222808,0,0,0,0
 "Fulfill 50 Midnight crafting orders for Blacksmithing.",Blacksmithing-on-Demand,,62232,-1,-1,0,15490,0,5,131072,23,7548936,0,222840,0,0,0,0
@@ -13564,14 +13564,14 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Reach rank 20 with the Amani Tribe.","Amani Tribe Champion",,62263,-1,-1,0,15600,0,10,131072,3,7505698,0,223070,0,0,0,0
 "Reach rank 20 with the Hara'ti.","Hara'ti Champion",,62264,-1,-1,0,15600,0,10,131072,4,7505704,0,223072,0,0,0,0
 "Reach rank 20 with The Singularity.","The Singularity Champion",,62265,-1,-1,0,15600,0,10,131072,5,7505702,0,223074,0,0,0,0
-"Harvest a total lifetime amount of 10,000,000 Abundance.","Abundance: An Acolyte no Longer",,62266,-1,-1,0,15553,0,10,131072,95,895888,0,221272,0,0,0,0
-"Experience the rage of Filo, Loa of Childhood.","A Most Violent Loa",,62267,-1,-1,0,15553,0,5,131072,63,1320372,0,223103,0,0,0,0
-"Harvest from an Artisan Node in an Abundance event.","Abundance: Professionals Only",,62268,-1,-1,0,15553,0,5,131072,74,236575,0,223105,0,0,0,0
-"Unlock any Loa for worship at the Altar of Blessings.","Altar of Blessings: Amani Curious",,62269,-1,-1,0,15553,0,5,131072,96,7636662,0,223107,0,0,0,0
-"Complete Blessings of the Loa from Du'gal the Alter Keeper in Amani'Zar Village.","Altar of Blessings: One for Altar",,62270,-1,-1,0,15553,0,5,131072,97,135944,0,223117,0,0,0,0
-"Catch 100 fish during Abyss Anglers dives.","Abyss Anglers: Trench Berserker",,62271,-1,-1,0,15553,0,5,131072,125,4554374,0,223119,0,0,0,0
-"Catch a Mythic creature 6 times from Abyss Anglers dives.","Abyss Anglers: Myths from Beneath",,62343,-1,-1,0,15553,0,5,131072,136,970811,0,223320,0,0,0,0
-"Earn 250,000 points in cumulative Abyss Anglers dives.","Abyss Anglers: Certified Depthdiver","Reward: Gain an adventurous dive companion",62272,-1,-1,0,15553,0,5,131072,138,633007,0,223121,0,0,0,0
+"Harvest a total lifetime amount of 10,000,000 Abundance.","Abundance: An Acolyte no Longer",,62266,-1,-1,0,15553,0,10,131072,96,895888,0,221272,0,0,0,0
+"Experience the rage of Filo, Loa of Childhood.","A Most Violent Loa",,62267,-1,-1,0,15553,0,5,131072,64,1320372,0,223103,0,0,0,0
+"Harvest from an Artisan Node in an Abundance event.","Abundance: Professionals Only",,62268,-1,-1,0,15553,0,5,131072,75,236575,0,223105,0,0,0,0
+"Unlock any Loa for worship at the Altar of Blessings.","Altar of Blessings: Amani Curious",,62269,-1,-1,0,15553,0,5,131072,97,7636662,0,223107,0,0,0,0
+"Complete Blessings of the Loa from Du'gal the Alter Keeper in Amani'Zar Village.","Altar of Blessings: One for Altar",,62270,-1,-1,0,15553,0,5,131072,98,135944,0,223117,0,0,0,0
+"Catch 100 fish during Abyss Anglers dives.","Abyss Anglers: Trench Berserker",,62271,-1,-1,0,15553,0,5,131072,126,4554374,0,223119,0,0,0,0
+"Catch a Mythic creature 6 times from Abyss Anglers dives.","Abyss Anglers: Myths from Beneath",,62343,-1,-1,0,15553,0,5,131072,137,970811,0,223320,0,0,0,0
+"Earn 250,000 points in cumulative Abyss Anglers dives.","Abyss Anglers: Certified Depthdiver","Reward: Gain an adventurous dive companion",62272,-1,-1,0,15553,0,5,131072,139,633007,0,223121,0,0,0,0
 "Joined in the defense of the Sunwell against the forces of Xal'atath during Midnight.","Echoes of Midnight","Midnight themed cross-promotional game rewards",62273,-1,-1,0,15268,0,0,133120,103,7578704,0,223144,0,0,0,0
 "Defeat Zul'jan in Altar of Fangs.","Altar of Fangs",,62282,2993,-1,0,15541,0,10,0,37,7956175,0,223159,0,0,0,0
 "Defeat Zul'jan in Altar of Fangs on Heroic difficulty or higher.","Heroic: Altar of Fangs",,62283,2993,-1,0,15541,0,10,0,38,7956175,0,223161,0,0,0,0
@@ -13579,31 +13579,31 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Zul'jan kills (Normal Altar of Fangs)",,62285,2993,-1,0,15542,0,0,1,61,7956175,0,223165,0,0,0,0
 ,"Zul'jan kills (Heroic Altar of Fangs)",,62286,2993,-1,0,15542,0,0,1,63,7956175,0,223167,0,0,0,0
 ,"Zul'jan kills (Mythic Altar of Fangs)",,62287,2993,-1,0,15542,0,0,1,66,7956175,0,223169,0,0,0,0
-"Place telescopes on the tallest peaks in Eversong Woods.","Eversong Woods: The Highest Peaks","Decor Reward: ""Eversong Lantern"" Painting",62288,-1,-1,0,15553,0,5,132096,68,134442,0,223171,0,0,0,0
-"Place telescopes on the tallest peaks in Zul'Aman.","Zul'Aman: The Highest Peaks","Decor Reward: Amani Spearhunter's Spit",62289,-1,-1,0,15553,0,5,131072,69,134442,0,223177,0,0,0,0
-"Place telescopes on the tallest peaks in Harandar.","Harandar: The Highest Peaks","Decor Reward: Fungarian Vine Fence",62290,-1,-1,0,15553,0,5,131072,70,134442,0,223183,0,0,0,0
-"Place telescopes on the tallest peaks in Voidstorm.","Voidstorm: The Highest Peaks","Decor Reward: Void Elf Weapon Rack",62291,-1,-1,0,15553,0,5,131072,71,134442,0,223189,0,0,0,0
+"Place telescopes on the tallest peaks in Eversong Woods.","Eversong Woods: The Highest Peaks","Decor Reward: ""Eversong Lantern"" Painting",62288,-1,-1,0,15553,0,5,132096,69,134442,0,223171,0,0,0,0
+"Place telescopes on the tallest peaks in Zul'Aman.","Zul'Aman: The Highest Peaks","Decor Reward: Amani Spearhunter's Spit",62289,-1,-1,0,15553,0,5,131072,70,134442,0,223177,0,0,0,0
+"Place telescopes on the tallest peaks in Harandar.","Harandar: The Highest Peaks","Decor Reward: Fungarian Vine Fence",62290,-1,-1,0,15553,0,5,131072,71,134442,0,223183,0,0,0,0
+"Place telescopes on the tallest peaks in Voidstorm.","Voidstorm: The Highest Peaks","Decor Reward: Void Elf Weapon Rack",62291,-1,-1,0,15553,0,5,131072,72,134442,0,223189,0,0,0,0
 ,"Adventurer Dawncrests earned",,62292,-1,-1,0,15176,0,0,1,41,136243,0,223201,0,0,0,0
 ,"Veteran Dawncrests earned",,62293,-1,-1,0,15176,0,0,1,42,136243,0,223203,0,0,0,0
 ,"Champion Dawncrests earned",,62294,-1,-1,0,15176,0,0,1,43,136243,0,223205,0,0,0,0
 ,"Hero Dawncrests earned",,62295,-1,-1,0,15176,0,0,1,44,136243,0,223207,0,0,0,0
 ,"Myth Dawncrests earned",,62296,-1,-1,0,15176,0,0,1,45,136243,0,223209,0,0,0,0
 "Complete the following storylines in Zul'aman and the Coiled Isle.","The Curse of Ula'tek",,62297,-1,-1,0,15547,0,10,131072,24,7578560,0,223231,0,0,0,0
-"Complete an Abundance event having earned points in every score catagory.","Abundance: Loa of all Trades",,62324,-1,-1,0,15553,0,5,131072,80,6712973,0,223262,0,0,0,0
-"Trigger the Treasure Dundun Bonus in each Abundance location.","Abundance: Treasures Aplenty",,62325,-1,-1,0,15553,0,5,131072,89,1604165,0,223264,0,0,0,0
-"Trigger the Golden Glow Bonus in each Abundance location.","Abundance: Golden Opportunities",,62326,-1,-1,0,15553,0,5,131072,90,236261,0,223269,0,0,0,0
-"Trigger the Runaways Bonus in each Abundance location.","Abundance: Squash the Competition",,62329,-1,-1,0,15553,0,5,131072,91,6035313,0,223274,0,0,0,0
-"Trigger the Gigantic Harvest Bonus in each Abundance location.","Abundance: One Bite at a Time",,62330,-1,-1,0,15553,0,5,131072,92,4622465,0,223279,0,0,0,0
-"Trigger the Rain of Abundance Bonus in each Abundance location.","Abundance: Drops of Prosperity",,62331,-1,-1,0,15553,0,5,131072,93,4644002,0,223284,0,0,0,0
-"Complete each of the Abundance achievements below.","Abundance: Dundun's Favored",,62332,-1,-1,0,15553,0,10,131072,88,135931,0,223289,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Materials Harvested catagory.","Abundance: Harvester",,62333,-1,-1,0,15553,0,5,131072,82,7549106,0,223295,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Materials Contributed catagory.","Abundance: Contributor",,62336,-1,-1,0,15553,0,5,131072,83,7549090,0,223297,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Basic Nodes catagory.","Abundance: Professional",,62337,-1,-1,0,15553,0,5,131072,84,7549096,0,223299,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Artisan Nodes catagory.","Abundance: Artisan",,62338,-1,-1,0,15553,0,5,131072,85,7549316,0,223301,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Bonus Events catagory.","Abundance: Gambler",,62339,-1,-1,0,15553,0,5,131072,87,237284,0,223305,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Large Orbs catagory.","Abundance: Investor",,62340,-1,-1,0,15553,0,5,131072,86,4632783,0,223303,0,0,0,0
-"Complete each of the Abundance achievements below.","Abundance: Ain't Dun Till It's Dun",,62341,-1,-1,0,15553,0,10,131072,81,236248,0,223307,0,0,0,0
-"Catch a Mythic creature 3 times from Abyss Anglers dives.","Abyss Anglers: The Finest of Fish",,62342,-1,-1,0,15553,0,5,131072,134,4777763,0,223318,0,0,0,0
+"Complete an Abundance event having earned points in every score catagory.","Abundance: Loa of all Trades",,62324,-1,-1,0,15553,0,5,131072,81,6712973,0,223262,0,0,0,0
+"Trigger the Treasure Dundun Bonus in each Abundance location.","Abundance: Treasures Aplenty",,62325,-1,-1,0,15553,0,5,131072,90,1604165,0,223264,0,0,0,0
+"Trigger the Golden Glow Bonus in each Abundance location.","Abundance: Golden Opportunities",,62326,-1,-1,0,15553,0,5,131072,91,236261,0,223269,0,0,0,0
+"Trigger the Runaways Bonus in each Abundance location.","Abundance: Squash the Competition",,62329,-1,-1,0,15553,0,5,131072,92,6035313,0,223274,0,0,0,0
+"Trigger the Gigantic Harvest Bonus in each Abundance location.","Abundance: One Bite at a Time",,62330,-1,-1,0,15553,0,5,131072,93,4622465,0,223279,0,0,0,0
+"Trigger the Rain of Abundance Bonus in each Abundance location.","Abundance: Drops of Prosperity",,62331,-1,-1,0,15553,0,5,131072,94,4644002,0,223284,0,0,0,0
+"Complete each of the Abundance achievements below.","Abundance: Dundun's Favored",,62332,-1,-1,0,15553,0,10,131072,89,135931,0,223289,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Materials Harvested catagory.","Abundance: Harvester",,62333,-1,-1,0,15553,0,5,131072,83,7549106,0,223295,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Materials Contributed catagory.","Abundance: Contributor",,62336,-1,-1,0,15553,0,5,131072,84,7549090,0,223297,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Basic Nodes catagory.","Abundance: Professional",,62337,-1,-1,0,15553,0,5,131072,85,7549096,0,223299,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Artisan Nodes catagory.","Abundance: Artisan",,62338,-1,-1,0,15553,0,5,131072,86,7549316,0,223301,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Bonus Events catagory.","Abundance: Gambler",,62339,-1,-1,0,15553,0,5,131072,88,237284,0,223305,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Large Orbs catagory.","Abundance: Investor",,62340,-1,-1,0,15553,0,5,131072,87,4632783,0,223303,0,0,0,0
+"Complete each of the Abundance achievements below.","Abundance: Ain't Dun Till It's Dun",,62341,-1,-1,0,15553,0,10,131072,82,236248,0,223307,0,0,0,0
+"Catch a Mythic creature 3 times from Abyss Anglers dives.","Abyss Anglers: The Finest of Fish",,62342,-1,-1,0,15553,0,5,131072,135,4777763,0,223318,0,0,0,0
 "Complete the achievements listed below.","Preying For Midnight","Title: Preyseeker",62351,-1,-1,0,15605,0,30,131072,22,7493985,0,223405,0,0,0,0
 "Get consumed by the Devouring Host in The Voidspire or March on Quel'Danas.","Nothing to See Here",,62352,-1,-1,0,15566,0,10,0,21,4914666,0,223416,0,0,0,0
 "Harvest 250 Ironwood Lumber","Classically Trained Lumberjack","Reward: Mounted Lumber Harvesting in Classic Zones",62357,-1,-1,0,15606,0,5,131072,26,7467227,0,223403,0,0,0,0
@@ -13627,7 +13627,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect 10000 Community Coupons.","A Few Coupons More",,62378,-1,-1,62377,15606,0,10,131072,22,351042,0,223511,0,0,0,0
 "Defeat all of the following Prey targets on any difficulty.","Gotta Hunt Them All",,62383,-1,-1,0,15605,0,10,131072,11,3565724,0,223523,0,0,0,0
 "Fully unlock the Research Console in Voidstorm.","Staring Into The Void","Mount: Lab-grown Stormray",62385,-1,-1,0,15547,0,10,0,2,4914666,260697,224708,0,0,0,0
-"Rally your forces against Xal'atath by completing the achievements below.","Light Up the Night","Mount: Brilliant Petalwing",62386,-1,-1,0,15553,0,40,131072,60,7636523,252011,223795,0,0,0,0
+"Rally your forces against Xal'atath by completing the achievements below.","Light Up the Night","Mount: Brilliant Petalwing",62386,-1,-1,0,15553,0,40,131072,61,7636523,252011,223795,0,0,0,0
 "Log in during the events heralding the launch of Midnight.","It's Nearly Midnight","Decor Reward: Miniature Replica Dark Portal",62387,-1,-1,0,15274,0,0,10617856,97,7476681,0,223807,0,0,0,0
 "Earn a Five Star Review for your services at the Illicit Rain.","Illicit Rain: Five Stars","Toy: Feeling Fielder Mk. 7",62388,-1,-1,0,15272,0,0,133120,195,3750310,263975,223810,0,0,0,0
 "Proud owner of a Pin-o-Matic Camera.","Craft Your World",,62400,-1,-1,0,15268,0,0,133120,109,7704166,268695,0,0,0,0,0
@@ -13708,7 +13708,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Earn 2500 Conquest on this character during Midnight Season 2.","Venomous Weapons of Conquest","Item Reward: Venomous Gladiator's Weapon Token (x2)",62497,-1,-1,0,15270,0,0,33554432,537,1594747,0,224795,0,0,0,0
 "Complete a Void Strike or Incursion in Eversong.","Void Assault: Eversong",,62498,-1,-1,0,15610,0,5,131072,2,236762,0,224935,0,0,0,0
 "Complete a Void Strike or Incursion in Zul'Aman.","Void Assault: Zul'Aman",,62499,-1,-1,0,15610,0,5,131072,6,7488399,0,224939,0,0,0,0
-"Catch a Mythic creature during an Abyss Anglers dive.","Abyss Anglers: Pressurized Eyeglass","Reward: Unlock Pressurized Eyeglass for purchase from Depthdiver Jeju",62506,-1,-1,0,15553,0,5,131072,111,4631357,0,224921,0,0,0,0
+"Catch a Mythic creature during an Abyss Anglers dive.","Abyss Anglers: Pressurized Eyeglass","Reward: Unlock Pressurized Eyeglass for purchase from Depthdiver Jeju",62506,-1,-1,0,15553,0,5,131072,112,4631357,0,224921,0,0,0,0
 "Complete 5 Void Strikes in Eversong.","Void Smasher: Eversong",,62507,-1,-1,62498,15610,0,5,196608,3,236762,0,224941,0,0,0,0
 "Complete 25 Void Strikes in Eversong.","Void Eradicator: Eversong",,62508,-1,-1,62507,15610,0,10,196608,4,236762,0,224943,0,0,0,0
 "Complete 50 Void Strikes in Eversong.","Void Bane: Eversong",,62509,-1,-1,62508,15610,0,10,196608,5,236762,0,224945,0,0,0,0
@@ -13775,11 +13775,11 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"[DNT] Research Sites: Collection - Eagle Pet - Tracking",,62586,-1,-1,0,15608,0,0,1179648,56,136243,0,225201,0,0,0,0
 ,"[DNT] Research Sites: Collection - Eagle Mount - Tracking",,62587,-1,-1,0,15608,0,0,1179648,57,136243,0,225204,0,0,0,0
 ,"[DNT] Research Sites: Collection - Hawkstrider Pet - Tracking",,62599,-1,-1,0,15608,0,0,1179648,58,136243,0,225288,0,0,0,0
-"Deliver one of each of the following offerings to the Summoning Ritual event within the Vaults of Atal'Utek.","Ritual Behavior",,62600,-1,-1,0,15553,0,10,0,35,5212672,0,225293,0,0,0,0
-"Eliminate the following threats inside the Underbelly within the Vaults of Atal'Utek","Soft Underbelly",,62601,-1,-1,0,15553,10,10,0,34,134306,0,225297,0,0,0,0
+"Deliver one of each of the following offerings to the Summoning Ritual event within the Vaults of Atal'Utek.","Ritual Behavior",,62600,-1,-1,0,15553,0,10,0,36,5212672,0,225293,0,0,0,0
+"Eliminate the following threats inside the Underbelly within the Vaults of Atal'Utek","Soft Underbelly",,62601,-1,-1,0,15553,10,10,0,35,134306,0,225297,0,0,0,0
 ,"[DNT] Research Sites: Collection - Lynx Pet - Tracking",,62602,-1,-1,0,15608,0,0,1179648,59,136243,0,225313,0,0,0,0
 ,"[DNT] <Hidden> Mythic+ Rating > 0 (Midnight, any season)",,62603,-1,-1,0,15428,0,0,9568260,5,136243,0,225325,0,0,0,0
-"Dance while defending each of the stones in the Cache of Three event within the Vaults of Atal'Utek.","Dance While Everyone Watches",,62604,-1,-1,0,15553,0,10,0,33,132566,0,225329,0,0,0,0
+"Dance while defending each of the stones in the Cache of Three event within the Vaults of Atal'Utek.","Dance While Everyone Watches",,62604,-1,-1,0,15553,0,10,0,34,132566,0,225329,0,0,0,0
 ,"[DNT] Research Sites: Collection - Snapdragon Pet - Tracking",,62605,-1,-1,0,15608,0,0,1179648,60,136243,0,225342,0,0,0,0
 "Complete the quest The Omnium Reawakens.","The Sunstrider Omnium",,62606,-1,-1,0,15610,0,10,131072,48,632353,0,225744,0,0,0,0
 "Complete the quest Seeking Knowledge: Ritualized Arcana.","Ritualized Arcana",,62607,-1,-1,0,15610,0,0,1179648,50,7439232,0,225746,0,0,0,0
@@ -13790,7 +13790,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Midnight storylines listed below.","Allied Race: Haranir (copy)","Reward: Haranir Race Unlocked",62620,-1,-1,0,15547,0,0,1048580,13,7448213,0,225376,0,0,0,0
 "Unlock all of the following Ritual Sites challenges.","Challenging Sites",,62621,-1,-1,0,15608,0,20,0,2,236368,0,225380,0,0,0,0
 "Obtain Ritual Sites Renown Rank 8.","Ritual Renown",,62622,-1,-1,0,15608,0,20,0,3,136194,0,225393,0,0,0,0
-"Collect the large wandering Soul Globes during the Earth and Sky event within the Vaults of Atal'Utek.","A Lone Wanderer",,62649,-1,-1,0,15553,0,10,0,32,4632783,0,225402,0,0,0,0
+"Collect the large wandering Soul Globes during the Earth and Sky event within the Vaults of Atal'Utek.","A Lone Wanderer",,62649,-1,-1,0,15553,0,10,0,33,4632783,0,225402,0,0,0,0
 ,"[DNT] Midnight Alchemy Knowledge Fix",,62653,-1,-1,0,15489,0,0,1048576,2,136243,0,0,0,0,0,0
 ,"[DNT] Midnight Blacksmithing Knowledge Fix",,62654,-1,-1,0,15490,0,0,1048576,2,136243,0,0,0,0,0,0
 ,"[DNT] Midnight Enchanting Knowledge Fix",,62655,-1,-1,0,15491,0,0,1048576,2,136243,0,0,0,0,0,0
@@ -13800,33 +13800,33 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"[DNT] Midnight Mining Knowledge Fix",,62659,-1,-1,0,15497,0,0,1048576,2,136243,0,0,0,0,0,0
 ,"[DNT] Midnight Skinning Knowledge Fix",,62660,-1,-1,0,15498,0,0,1048576,2,136243,0,0,0,0,0,0
 ,"[DNT] Midnight Engineering Knowledge Fix",,62688,-1,-1,0,15492,0,0,1048576,2,136243,0,0,0,0,0,0
-"Discover 3 Sunken Relics during a single Abyss Anglers dive.","Abyss Anglers: History Below",,62759,-1,-1,0,15553,0,5,131072,122,1542848,0,225605,0,0,0,0
-"Catch fish from 3 Abyss Bubbles during a single Abyss Anglers dive.","Abyss Anglers: Angler Physics",,62760,-1,-1,0,15553,0,5,131072,123,132852,0,225603,0,0,0,0
-"Earn 1,000,000 points in cumulative Abyss Anglers dives.","Abyss Anglers: One with the Depths",,62761,-1,-1,0,15553,0,10,131072,141,463829,0,225601,0,0,0,0
-"Swim through 250 Schools of Fish during Abyss Anglers dives.","Abyss Anglers: Top of the Class",,62762,-1,-1,0,15553,0,5,131072,129,1029584,0,225607,0,0,0,0
-"Discover 250 Sunken or Ancient Treasures during Abyss Anglers dives.","Abyss Anglers: Vintage Collector",,62763,-1,-1,0,15553,0,5,131072,130,454046,0,225609,0,0,0,0
-"Collect 100 fish from Abyss Bubbles during Abyss Anglers Dives.","Abyss Anglers: Now That's Anglin'",,62772,-1,-1,0,15553,0,5,131072,127,4611534,0,225612,0,0,0,0
-"Complete each of the Abyss Anglers Achievements listed.","Abyss Anglers: Jeju's New Rival",,62773,-1,-1,0,15553,0,10,131072,124,236572,0,225614,0,0,0,0
-"Regain your breath at one of the two air vents during an Abyss Angler dive.","Abyss Anglers: Not Done Yet",,62774,-1,-1,0,15553,0,5,131072,118,538558,0,225619,0,0,0,0
-"Use the Shallows Net or Triple-Thread Net to capture the small creatures listed.","Abyss Anglers: Delicate Diver",,62775,-1,-1,0,15553,0,5,131072,126,135928,0,225622,0,0,0,0
-"Capture a fish of every rarity during Abyss Anglers dives.","Abyss Anglers: All Blue Angler","Reward: Unlock Ka'bubb for purchase from Depthdiver Tu'nakit",62776,-1,-1,0,15553,0,5,131072,131,463565,0,225627,0,0,0,0
-"Acquire every Abyss Anglers upgrade sold by Depthdiver Jeju.","Abyss Anglers: Pearls to the Abyss",,62777,-1,-1,0,15553,0,5,131072,133,413570,0,225634,0,0,0,0
-"Collect an Epic rarity fish from an Abyss Bubble during an Abyss Anglers dive.","Abyss Anglers: Luck of the Loa",,62778,-1,-1,0,15553,0,5,131072,132,970851,0,225640,0,0,0,0
-"Get caught by an Axetooth Thresher, an Abyss Fangray, or a Deepbash Thresher.","Abyss Anglers: Don't Know What You Expected",,62829,-1,-1,0,15553,0,5,131072,121,463487,0,225673,0,0,0,0
-"Achieve a final score in Abyss Anglers where all points were earned from catching Mythic fish only.","Abyss Anglers: Reservation for One",,62832,-1,-1,0,15553,0,5,131072,128,4630415,0,225675,0,0,0,0
+"Discover 3 Sunken Relics during a single Abyss Anglers dive.","Abyss Anglers: History Below",,62759,-1,-1,0,15553,0,5,131072,123,1542848,0,225605,0,0,0,0
+"Catch fish from 3 Abyss Bubbles during a single Abyss Anglers dive.","Abyss Anglers: Angler Physics",,62760,-1,-1,0,15553,0,5,131072,124,132852,0,225603,0,0,0,0
+"Earn 1,000,000 points in cumulative Abyss Anglers dives.","Abyss Anglers: One with the Depths",,62761,-1,-1,0,15553,0,10,131072,142,463829,0,225601,0,0,0,0
+"Swim through 250 Schools of Fish during Abyss Anglers dives.","Abyss Anglers: Top of the Class",,62762,-1,-1,0,15553,0,5,131072,130,1029584,0,225607,0,0,0,0
+"Discover 250 Sunken or Ancient Treasures during Abyss Anglers dives.","Abyss Anglers: Vintage Collector",,62763,-1,-1,0,15553,0,5,131072,131,454046,0,225609,0,0,0,0
+"Collect 100 fish from Abyss Bubbles during Abyss Anglers Dives.","Abyss Anglers: Now That's Anglin'",,62772,-1,-1,0,15553,0,5,131072,128,4611534,0,225612,0,0,0,0
+"Complete each of the Abyss Anglers Achievements listed.","Abyss Anglers: Jeju's New Rival",,62773,-1,-1,0,15553,0,10,131072,125,236572,0,225614,0,0,0,0
+"Regain your breath at one of the two air vents during an Abyss Angler dive.","Abyss Anglers: Not Done Yet",,62774,-1,-1,0,15553,0,5,131072,119,538558,0,225619,0,0,0,0
+"Use the Shallows Net or Triple-Thread Net to capture the small creatures listed.","Abyss Anglers: Delicate Diver",,62775,-1,-1,0,15553,0,5,131072,127,135928,0,225622,0,0,0,0
+"Capture a fish of every rarity during Abyss Anglers dives.","Abyss Anglers: All Blue Angler","Reward: Unlock Ka'bubb for purchase from Depthdiver Tu'nakit",62776,-1,-1,0,15553,0,5,131072,132,463565,0,225627,0,0,0,0
+"Acquire every Abyss Anglers upgrade sold by Depthdiver Jeju.","Abyss Anglers: Pearls to the Abyss",,62777,-1,-1,0,15553,0,5,131072,134,413570,0,225634,0,0,0,0
+"Collect an Epic rarity fish from an Abyss Bubble during an Abyss Anglers dive.","Abyss Anglers: Luck of the Loa",,62778,-1,-1,0,15553,0,5,131072,133,970851,0,225640,0,0,0,0
+"Get caught by an Axetooth Thresher, an Abyss Fangray, or a Deepbash Thresher.","Abyss Anglers: Don't Know What You Expected",,62829,-1,-1,0,15553,0,5,131072,122,463487,0,225673,0,0,0,0
+"Achieve a final score in Abyss Anglers where all points were earned from catching Mythic fish only.","Abyss Anglers: Reservation for One",,62832,-1,-1,0,15553,0,5,131072,129,4630415,0,225675,0,0,0,0
 ,"[DNT] Haranir Reputation Fix",,62839,-1,-1,0,92,0,0,1048576,2,136243,0,0,0,0,0,0
 "Evade 100 lightning strikes in a row in Val during Thunder Pains.","A Celestial Pain",,62842,-1,-1,0,15274,1,0,133120,1,839979,0,225720,0,0,0,0
-"[DNT] Tracking achievement for acquiring 10 moths.","[DNT] Moth Hunt - 10 Moths Acquired",,62857,-1,-1,0,15553,0,0,1179648,137,136243,0,225817,0,0,0,0
-"[DNT] Tracking achievement for acquiring 20 moths.","[DNT] Moth Hunt - 20 Moths Acquired",,62858,-1,-1,0,15553,0,0,1179648,139,136243,0,225938,0,0,0,0
-"[DNT] Tracking achievement for acquiring 30 moths.","[DNT] Moth Hunt - 30 Moths Acquired",,62859,-1,-1,0,15553,0,0,1179648,140,136243,0,226059,0,0,0,0
-"[DNT] Tracking achievement for acquiring 40 moths.","[DNT] Moth Hunt - 40 Moths Acquired",,62860,-1,-1,0,15553,0,0,1179648,142,136243,0,226180,0,0,0,0
-"[DNT] Tracking achievement for acquiring 50 moths.","[DNT] Moth Hunt - 50 Moths Acquired",,62861,-1,-1,0,15553,0,0,1179648,143,136243,0,226301,0,0,0,0
-"[DNT] Tracking achievement for acquiring 60 moths.","[DNT] Moth Hunt - 60 Moths Acquired",,62862,-1,-1,0,15553,0,0,1179648,144,136243,0,226422,0,0,0,0
-"[DNT] Tracking achievement for acquiring 70 moths.","[DNT] Moth Hunt - 70 Moths Acquired",,62863,-1,-1,0,15553,0,0,1179648,145,136243,0,226543,0,0,0,0
-"[DNT] Tracking achievement for acquiring 80 moths.","[DNT] Moth Hunt - 80 Moths Acquired",,62864,-1,-1,0,15553,0,0,1179648,146,136243,0,226664,0,0,0,0
-"[DNT] Tracking achievement for acquiring 90 moths.","[DNT] Moth Hunt - 90 Moths Acquired",,62865,-1,-1,0,15553,0,0,1179648,147,136243,0,226785,0,0,0,0
-"[DNT] Tracking achievement for acquiring 100 moths.","[DNT] Moth Hunt - 100 Moths Acquired",,62866,-1,-1,0,15553,0,0,1179648,148,136243,0,226906,0,0,0,0
-"[DNT] Tracking achievement for acquiring 110 moths.","[DNT] Moth Hunt - 110 Moths Acquired",,62867,-1,-1,0,15553,0,0,1179648,149,136243,0,227027,0,0,0,0
+"[DNT] Tracking achievement for acquiring 10 moths.","[DNT] Moth Hunt - 10 Moths Acquired",,62857,-1,-1,0,15553,0,0,1179648,138,136243,0,225817,0,0,0,0
+"[DNT] Tracking achievement for acquiring 20 moths.","[DNT] Moth Hunt - 20 Moths Acquired",,62858,-1,-1,0,15553,0,0,1179648,140,136243,0,225938,0,0,0,0
+"[DNT] Tracking achievement for acquiring 30 moths.","[DNT] Moth Hunt - 30 Moths Acquired",,62859,-1,-1,0,15553,0,0,1179648,141,136243,0,226059,0,0,0,0
+"[DNT] Tracking achievement for acquiring 40 moths.","[DNT] Moth Hunt - 40 Moths Acquired",,62860,-1,-1,0,15553,0,0,1179648,143,136243,0,226180,0,0,0,0
+"[DNT] Tracking achievement for acquiring 50 moths.","[DNT] Moth Hunt - 50 Moths Acquired",,62861,-1,-1,0,15553,0,0,1179648,144,136243,0,226301,0,0,0,0
+"[DNT] Tracking achievement for acquiring 60 moths.","[DNT] Moth Hunt - 60 Moths Acquired",,62862,-1,-1,0,15553,0,0,1179648,145,136243,0,226422,0,0,0,0
+"[DNT] Tracking achievement for acquiring 70 moths.","[DNT] Moth Hunt - 70 Moths Acquired",,62863,-1,-1,0,15553,0,0,1179648,146,136243,0,226543,0,0,0,0
+"[DNT] Tracking achievement for acquiring 80 moths.","[DNT] Moth Hunt - 80 Moths Acquired",,62864,-1,-1,0,15553,0,0,1179648,147,136243,0,226664,0,0,0,0
+"[DNT] Tracking achievement for acquiring 90 moths.","[DNT] Moth Hunt - 90 Moths Acquired",,62865,-1,-1,0,15553,0,0,1179648,148,136243,0,226785,0,0,0,0
+"[DNT] Tracking achievement for acquiring 100 moths.","[DNT] Moth Hunt - 100 Moths Acquired",,62866,-1,-1,0,15553,0,0,1179648,149,136243,0,226906,0,0,0,0
+"[DNT] Tracking achievement for acquiring 110 moths.","[DNT] Moth Hunt - 110 Moths Acquired",,62867,-1,-1,0,15553,0,0,1179648,150,136243,0,227027,0,0,0,0
 "Unlocked your class set bonuses during Midnight Season 2.","Midnight Season 2: Catalyst Unbound","Reward: Venomblight Manaflux drops more frequently.",62871,-1,-1,0,81,0,0,2048,4,4622293,0,227156,0,0,37,0
 "Accomplished one of the following feats during Season 2 of Midnight on your current character:","Midnight Season 2: Serpent Scion","Item Reward: Crystallized Venomblight Manaflux",62872,-1,-1,0,81,0,0,2048,270,5764920,0,227197,0,0,0,0
 "Complete the following achievements:","A Trip Around the Stars","Reward: Unlock the Voidmancer's Starcarver for purchase",62873,-1,-1,0,15610,0,15,196608,19,7649260,0,229649,0,0,0,0
@@ -13835,7 +13835,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Spore Storms in Naigtal will affect you slower and have a lower total effectiveness.","[DNT] Storm mitigation 1 - Naigtal - Hidden",,62876,-1,-1,0,15610,0,0,1179652,56,133693,0,227441,0,0,0,0
 "Storms in Val will affect you slower and have a lower total effectiveness.","[DNT] Storm mitigation 2 - Val - Hidden",,62877,-1,-1,0,15610,0,0,1179652,55,135798,0,227439,0,0,0,0
 "Spore Storms in Naigtal will affect you slower and have a lower total effectiveness.","[DNT] Storm mitigation 2 - Naigtal - Hidden",,62878,-1,-1,0,15610,0,0,1179652,57,7501332,0,227443,0,0,0,0
-"[DNT] Tracking achievement for acquiring 11 moths.","[DNT] Moth Hunt - 1 Moths Acquired",,62879,-1,-1,0,15553,0,0,1179648,135,136243,0,227249,0,0,0,0
+"[DNT] Tracking achievement for acquiring 11 moths.","[DNT] Moth Hunt - 1 Moths Acquired",,62879,-1,-1,0,15553,0,0,1179648,136,136243,0,227249,0,0,0,0
 "Complete 8 different World Quests in Val.","Showdown Success: Val","Pet Reward: Required to unlock Silento for purchase",62880,-1,-1,0,15610,0,5,196608,21,4226156,0,227372,0,0,0,0
 "Defeat 6 rare creatures found in Val.","Showdown Slugger: Val","Transmog Reward: Required to unlock Lightforged Armaments for purchase",62881,-1,-1,0,15610,0,5,196608,23,4554459,0,227387,0,0,0,0
 "Complete 8 different World Quests in Naigtal.","Showdown Success: Naigtal","Pet Reward: Required to unlock Silento for purchase",62882,-1,-1,0,15610,0,5,196608,22,451162,0,227398,0,0,0,0
@@ -13928,13 +13928,13 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Kill 100 enemies while controlling the Ultradon Slayer on the World Quest Until it is Done on Val.","Ultradon Carnage","Pet Reward: Unlock Frosticus Maximus for purchase",63349,-1,-1,0,15610,0,10,131072,31,7388252,0,229776,0,0,0,0
 "Defeat all of the rare creatures found on the Coiled Isle.","Coiled to Strike","Decor Reward: Amani Forge",63358,-1,-1,0,15553,0,10,131072,18,132211,0,229657,0,0,0,0
 "Discover the hidden treasures across the Coiled Isle.","Treasures of the Coiled Isle",,63359,-1,-1,0,15553,0,10,131072,26,7956752,0,229674,0,0,0,0
-"Defeat 300 Curse Surges on the Coiled Isle.",Cursebreaker,"Title: The Cursebreaker",63381,-1,-1,0,15553,0,10,131072,41,5764919,0,229949,0,0,0,0
-"Become a mother on the Coiled Isle.","It's Definitely Something",,63382,-1,-1,0,15553,0,5,131072,42,136182,0,229813,0,0,0,0
+"Defeat 300 Curse Surges on the Coiled Isle.",Cursebreaker,"Title: The Cursebreaker",63381,-1,-1,0,15553,0,10,131072,42,5764919,0,229949,0,0,0,0
+"Become a mother on the Coiled Isle.","It's Definitely Something",,63382,-1,-1,0,15553,0,5,131072,43,136182,0,229813,0,0,0,0
 "Complete the introduction quest lines for Naigtal and Val.","Into the Stars",,63383,-1,-1,0,15610,0,5,0,32,2065615,0,229858,0,0,0,0
 "Complete the following quests on Val and Naigtal.","Prepared for a Showdown",,63384,-1,-1,0,15610,0,5,0,33,132594,0,229865,0,0,0,0
 "Complete the following quest lines on Naigtal.","A Hal'hadar Walks into a Swamp",,63385,-1,-1,0,15610,0,10,0,34,1711338,0,229872,0,0,0,0
 "Complete the following quest lines on Val.","Frosty Domanaar Politics",,63386,-1,-1,0,15610,0,10,0,35,6994479,0,229883,0,0,0,0
-"Defeat each of the Curse Surges on the Coiled Isles.","Turn the Surge",,63390,-1,-1,0,15553,0,10,131072,40,5764921,0,229799,0,0,0,0
+"Defeat each of the Curse Surges on the Coiled Isles.","Turn the Surge",,63390,-1,-1,0,15553,0,10,131072,41,5764921,0,229799,0,0,0,0
 "Defeat Sszorak while jumping through each ring that appears in The Venomous Abyss on Normal difficulty or higher.","Jumping Through Hoops",,63391,3004,-1,0,15566,0,10,0,52,1392558,0,229963,0,0,0,0
 "Collect the Skyriding Glyph at the Fangs in the Coiled Isles.","Skyriding Glyphs: The Fangs",,63394,-1,-1,0,15462,0,0,1179648,1827,5926319,0,0,0,0,0,0
 "Discover the following Skyriding Glyphs in the Coiled Isles:","The Coiled Isles Glyph Hunter",,63395,-1,-1,0,15462,0,10,131072,1836,5926319,0,229975,0,0,0,0
@@ -13954,7 +13954,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Collect the Skyriding Glyph at The Serpent's Tail in the Coiled Isles.","Skyriding Glyphs: The Serpent's Tail",,63427,-1,-1,0,15462,0,0,1179648,1881,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Blistering Terrace in the Coiled Isles.","Skyriding Glyphs: Blistering Terrace",,63428,-1,-1,0,15462,0,0,1179648,1882,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Gate of the Serpent's Eye in the Coiled Isles.","Skyriding Glyphs: Gate of the Serpent's Eye",,63430,-1,-1,0,15462,0,0,1179648,1883,5926319,0,0,0,0,0,0
-"Collect all of the following types of offerings from Ofi's Cauldron.","Mysterious Mix Master",,63432,-1,-1,0,15553,0,5,131072,43,133778,0,230409,0,0,0,0
+"Collect all of the following types of offerings from Ofi's Cauldron.","Mysterious Mix Master",,63432,-1,-1,0,15553,0,5,131072,44,133778,0,230409,0,0,0,0
 "Complete the Delver's Journey before Midnight: Season 2 ends.","Midnight: Journey's End (Season 2)",,63433,-1,-1,0,15531,0,0,133120,30,6025441,0,230426,0,0,0,0
 "Raise delve companion Valeera to level 70.","Buddy System VII: Valeera",,63434,-1,-1,40461,15571,0,10,131072,51,236568,0,230430,0,0,0,0
 "Raise delve companion Valeera to level 80.","Buddy System VIII: Valeera",,63435,-1,-1,41537,15571,0,10,131072,52,236569,0,230428,0,0,0,0
@@ -14017,23 +14017,23 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 ,"Ula'tek (Normal The Venomous Abyss)",,63567,3004,-1,0,15542,0,0,1,97,0,0,230965,0,0,0,0
 ,"Ula'tek (Heroic The Venomous Abyss)",,63568,3004,-1,0,15542,0,0,1,98,0,0,230967,0,0,0,0
 ,"Ula'tek (Mythic The Venomous Abyss)",,63569,3004,-1,0,15542,0,0,1,99,0,0,230969,0,0,0,0
-"Stomp on 1000 Insidious Snakes within the Vaults of Atal'Utek.","Snake Stompin'",,63596,-1,-1,0,15553,0,5,0,38,2399230,0,231019,0,0,0,0
-"Complete the following patrols within the Vaults of Atal'Utek.","Roll the Patrol",,63598,-1,-1,0,15553,0,10,131072,28,7474699,0,231037,0,0,0,0
-"Complete the following incursions within the Vaults of Atal'Utek.","Submerge the Incursion",,63599,-1,-1,0,15553,0,10,131072,30,5764923,0,231056,0,0,0,0
-"Complete the following strikes within the Vaults of Atal'Utek.","Spike the Strike",,63600,-1,-1,0,15553,0,10,131072,29,236200,0,231178,0,0,0,0
-"Defeat the following Ancient Foes within the Vaults of Atal'Utek.","Oppose the Foes",,63601,-1,-1,0,15553,0,10,131072,31,2399269,0,231185,0,0,0,0
+"Stomp on 1000 Insidious Snakes within the Vaults of Atal'Utek.","Snake Stompin'",,63596,-1,-1,0,15553,0,5,0,39,2399230,0,231019,0,0,0,0
+"Complete the following patrols within the Vaults of Atal'Utek.","Roll the Patrol",,63598,-1,-1,0,15553,0,10,131072,29,7474699,0,231037,0,0,0,0
+"Complete the following incursions within the Vaults of Atal'Utek.","Submerge the Incursion",,63599,-1,-1,0,15553,0,10,131072,31,5764923,0,231056,0,0,0,0
+"Complete the following strikes within the Vaults of Atal'Utek.","Spike the Strike",,63600,-1,-1,0,15553,0,10,131072,30,236200,0,231178,0,0,0,0
+"Defeat the following Ancient Foes within the Vaults of Atal'Utek.","Oppose the Foes",,63601,-1,-1,0,15553,0,10,131072,32,2399269,0,231185,0,0,0,0
 "During the Vacation Season endeavor, find every Secret Souvenir in your Founder's Point neighborhood.","Souvenir Seeker, Founder's Point",,63605,2736,-1,0,15606,0,0,131072,3,136243,0,231200,0,0,0,0
 "Complete the Souvenir Seeker achievements for both Razorwind Shores and Founder's Point.","Superlative Souvenir Seeker",,63606,-1,-1,0,15606,0,0,133120,4,136243,0,231261,0,0,0,0
 "Collect any armor set from Midnight PvP Season 2.","Venomous Vestments",,63608,-1,-1,0,15259,0,10,131072,97,7871829,0,231279,0,0,0,0
-"Defeat Ula'tek before the Greasy Hatchling breaks in The Venomous Abyss on Normal difficulty or higher.","No Egg Scramble","Companion Pet: Ul'ava'took",63609,3004,-1,0,15566,0,10,0,53,236999,279387,231281,0,0,0,0
-"Discover the Funerary Inscriptions throughout the Vaults of Atal'Utek","The Honored Dead",,63610,-1,-1,0,15553,0,5,0,36,7253129,0,231283,0,0,0,0
+"Defeat Ula'tek before the Greasy Hatchling breaks in The Venomous Abyss on Normal difficulty or higher.","No Egg Scramble","Companion Pet: Ula'took",63609,3004,-1,0,15566,0,10,0,53,236999,279387,231281,0,0,0,0
+"Discover the Funerary Inscriptions throughout the Vaults of Atal'Utek","The Honored Dead",,63610,-1,-1,0,15553,0,5,0,37,7253129,0,231283,0,0,0,0
 "Complete the Season 2 Prey Journey before Midnight: Season 2 ends.","Big Prey Hunter (Season 2)",,63611,-1,-1,0,81,0,0,133120,3,7493985,0,231296,0,0,0,0
 ,"Nymrissa Wavecaller (World The Tidebound Grotto)",,63613,2987,-1,0,15542,0,0,1,100,0,0,231302,0,0,0,0
 ,"Nymrissa Wavecaller (Normal The Tidebound Grotto)",,63614,2987,-1,0,15542,0,0,1,101,0,0,231304,0,0,0,0
 ,"Nymrissa Wavecaller (Heroic The Tidebound Grotto)",,63615,2987,-1,0,15542,0,0,1,102,0,0,231306,0,0,0,0
 ,"Nymrissa Wavecaller (Mythic The Tidebound Grotto)",,63616,2987,-1,0,15542,0,0,1,103,0,0,231308,0,0,0,0
-"Complete quests from all of the following visitors in the Arcantina.","New Friends",,63619,-1,-1,0,15553,0,5,131072,53,135321,0,231314,0,0,0,0
-"Retrieve and display all of the following items in the Arcantina.","Well Decorated",,63620,-1,-1,0,15553,0,5,131072,55,466729,0,231317,0,0,0,0
+"Complete quests from all of the following visitors in the Arcantina.","New Friends",,63619,-1,-1,0,15553,0,5,131072,54,135321,0,231314,0,0,0,0
+"Retrieve and display all of the following items in the Arcantina.","Well Decorated",,63620,-1,-1,0,15553,0,5,131072,56,466729,0,231317,0,0,0,0
 "Attain a region-best keystone dungeon completion for Altar of Fangs.","Keystone Victor: Altar of Fangs",,63621,-1,-1,0,15272,0,0,6144,227,7956175,0,0,0,0,0,0
 "Attain a region-best keystone dungeon completion for Den of Nalorakk.","Keystone Victor: Den of Nalorakk",,63622,-1,-1,0,15272,0,0,6144,228,7266214,0,0,0,0,0,0
 "Attain a region-best keystone dungeon completion for Murder Row.","Keystone Victor: Murder Row",,63623,-1,-1,0,15272,0,0,6144,229,7266213,0,0,0,0,0,0
@@ -14043,26 +14043,27 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Attain a region-best keystone dungeon completion for Ruby Life Pools.","Keystone Victor: Ruby Life Pools",,63627,-1,-1,0,15272,0,0,6144,233,4578416,0,0,0,0,0,0
 "Attain a region-best keystone dungeon completion for Temple of Sethraliss.","Keystone Victor: Temple of Sethraliss",,63628,-1,-1,0,15272,0,0,6144,234,2011143,0,0,0,0,0,0
 "Catch every fish from The Coiled Isle.","Angler of The Coiled Isle",,63629,-1,-1,0,171,0,10,131072,102,7816885,0,231357,0,0,0,0
-"Prove your mastery over the inhospitable Vaults of Atal'Utek by completing the achievements below.","Assault the Vault","Mount: Venomous Coiler",63630,-1,-1,0,15553,0,10,131072,27,136070,276801,231372,0,0,0,0
+"Prove your mastery over the inhospitable Vaults of Atal'Utek by completing the achievements below.","Assault the Vault","Mount: Venomous Coiler",63630,-1,-1,0,15553,0,10,131072,28,136070,276801,231372,0,0,0,0
 "Reach ""Bloodsworn Crew"" with Captain Tokka.","Captain Tokka's Crew",,63631,-1,-1,0,15600,0,10,131072,7,2065576,0,231390,0,0,0,0
 "Earn ""Trophy"" rank with the following fish:","Toxic Trophies",,63632,-1,-1,0,171,0,10,131072,103,7816874,0,231395,0,0,0,0
 "Feed Ki'clak 5 snacks via completing the world quest ""Ki'clak Snack Attack"" in the Coiled Isle.","A Stack of Snacks","Pet: Ki'clak",63633,-1,-1,0,15547,0,5,131072,25,8032875,0,231415,0,0,0,0
 "Speak with Captain Tokka while The Coiled Huntress is equipped.","Where Did You Get That?",,63634,-1,-1,0,171,0,5,131072,104,7949493,0,231419,0,0,0,0
 "Prove your seaworthiness to Captain Tokka by completing the achievements below.","Tokka's Terrible Trials","Title: Bloodsworn Mariner",63635,-1,-1,0,171,0,10,131072,105,7816872,0,231421,0,0,0,0
-"Unlock every talent point at the Altar of Corrosion within the Vaults of Atal'Utek.","Fully Corroded",,63636,-1,-1,0,15553,0,10,0,37,348565,0,231481,0,0,0,0
+"Unlock every talent point at the Altar of Corrosion within the Vaults of Atal'Utek.","Fully Corroded",,63636,-1,-1,0,15553,0,10,0,38,348565,0,231481,0,0,0,0
 "Conquer the Coiled Isle by completing the achievements below.","Ula'tek Uncoiled",,63639,-1,-1,0,15553,0,20,131072,19,7636668,0,231485,0,0,0,0
 "Explore the Coiled Isle, revealing the covered areas of the world map.","Explore the Coiled Isle",,63640,-1,-1,0,15553,0,10,131072,20,7488399,0,231502,0,0,0,0
 "Complete the optional Coiled Isle storylines listed below.","Snake Charmed, I'm Sure",,63641,-1,-1,0,15547,0,10,131072,5,8032874,0,231490,0,0,0,0
 "Survive 100 Toxic Snare barrages on Hard or Nightmare Mode.","Sashay Away",,63642,-1,-1,0,15605,0,5,131200,57,1305155,0,231513,0,0,0,0
 "Kill 150 Pack Scouts on Hard or Nightmare Mode.","You Guys, Again?",,63643,-1,-1,0,15605,0,5,131200,59,643249,0,231515,0,0,0,0
 "Kill 200 Venom-Bloated Python while in Hard or Nightmare Mode.","Kill Me Now",,63644,-1,-1,0,15605,0,5,131200,58,132211,0,231517,0,0,0,0
-"Defeat The Lost Explorers including Hoji in The Venomous Abyss on Normal difficulty or higher.","Accidental Inclusion",,63645,3043,-1,0,15566,0,10,0,51,7966622,0,231546,0,0,0,0
+"Defeat The Lost Explorers including Hoji in The Venomous Abyss on Normal difficulty or higher.","Accidental Inclusion",,63645,3004,-1,0,15566,0,10,0,51,7966622,0,231546,0,0,0,0
 "Defeat the following bosses in The Venomous Abyss on Normal difficulty or higher while in a guild group.","The Venomous Abyss Guild Run",,63646,3004,-1,0,15570,0,10,61440,13,8039569,0,231548,0,0,0,0
 "Defeat the following bosses in The Venomous Abyss on Heroic difficulty or higher while in a guild group.","Heroic: The Venomous Abyss Guild Run",,63647,3004,-1,0,15570,0,10,61440,14,8039569,0,231559,0,0,0,0
 "Defeat Ula'tek in The Venomous Abyss on Mythic difficulty while in a guild group.","Mythic: Ula'tek Guild Run",,63648,3004,-1,0,15570,0,10,61440,15,7966624,0,231568,0,0,0,0
 "Defeat Ula'tek in The Venomous Abyss on Heroic difficulty or higher, before the release of the next raid tier.","Ahead of the Curve: Ula'tek",,63650,3004,-1,0,15271,0,0,6144,101,7966624,0,231570,0,0,0,0
 "Defeat Ula'tek in The Venomous Abyss on Mythic difficulty, before the release of the next raid tier.","Cutting Edge: Ula'tek",,63651,3004,-1,63650,15271,0,0,6144,102,7966624,0,231574,0,0,0,0
 "Among the first two hundred guilds worldwide to defeat Ula'tek on Mythic difficulty.","Hall of Fame: Ula'tek","Title: Famed Slayer of Ula'tek",63652,3004,-1,0,15093,0,0,4258304,55,7966624,0,231576,0,0,0,0
-"Complete 250 patrols within the Vaults of Atal'Utek.","Pro Poison Patroller","Mount: Emerald Skyfang",63653,-1,-1,0,15553,0,10,131072,39,7474744,276553,231595,0,0,0,0
-"Defeat the Twin Fangs after feeding Ithraz the following items in order during Ravenous Feast on Normal difficulty or higher.","Four-Course Meal",,63656,3004,-1,0,15566,0,10,0,50,2066013,0,231621,0,0,0,0
+"Complete 250 patrols within the Vaults of Atal'Utek.","Pro Poison Patroller","Mount: Emerald Skyfang",63653,-1,-1,0,15553,0,10,131072,40,7474744,276553,231595,0,0,0,0
+"Defeat the Twin Fangs after feeding Ithraz the following slimes in order during Ravenous Feast on Normal difficulty or higher.","Taking a Bite out of Slime",,63656,3004,-1,0,15566,0,10,0,50,3459153,0,231621,0,0,0,0
+"Discover all of the lore objects found on the Coiled Isle.","Student of Hissstory","Reward: Cursed Badge of the Soulcoilers",63662,-1,-1,0,15553,0,10,131072,27,8032876,280419,231730,0,0,0,0
 "Score a goal with the Kickable Practice Ball in Silvermoon while wearing a Tabard of Participation.",Goal!,"Decor Reward: Prized Orb of Azeroth, Framed Horde Pride and Framed Alliance Pride",63343,-1,-1,0,15268,0,0,131072,120,660531,0,229492,0,0,0,0

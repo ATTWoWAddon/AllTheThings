@@ -333,7 +333,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(246536, {["requireSkill"] = LEATHERWORKING}),	-- Sunforged Leatherworker's Knife
 			i(259232, {["requireSkill"] = LEATHERWORKING}),	-- Sunforged Leatherworker's Toolset
 			i(238012, {["requireSkill"] = LEATHERWORKING}),	-- Thalassian Leatherworker's Knife
-			i(237947, {["requireSkill"] = LEATHERWORKING}),	-- Thalassian Leatherworker's Toolset
+			i(237947, {	-- Thalassian Leatherworker's Toolset
+				["requireSkill"] = LEATHERWORKING,
+				["sourceID"] = 287208,
+				["collectible"] = false,
+			}),
 			i(238015, {["requireSkill"] = MINING}),	-- Sun-Blessed Pickaxe
 			i(246534, {["requireSkill"] = MINING}),	-- Sunforged Pickaxe
 			i(238010, {["requireSkill"] = MINING}),	-- Thalassian Pickaxe

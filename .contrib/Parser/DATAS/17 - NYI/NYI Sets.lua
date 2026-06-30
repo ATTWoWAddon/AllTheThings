@@ -5192,14 +5192,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(175501),	-- Shoulders of Pained Absolution
 				i(178074),	-- Cover of Pained Absolution
 				-- PvP?
-				i(178439),	-- zzzRated - Cloth Cord
-				i(178425),	-- zzzRated - Cloth Gloves
-				i(178427),	-- zzzRated - Cloth Hood
-				i(178431),	-- zzzRated - Cloth Leggings
-				i(178436),	-- zzzRated - Cloth Mantle
-				i(178415),	-- zzzRated - Cloth Robe
-				i(178420),	-- zzzRated - Cloth Treads
-				i(178443),	-- zzzRated - Cloth Wristwraps
+				i(178439, {["sourceID"] = 115291}),	-- zzzRated - Cloth Cord
+				i(178425, {["sourceID"] = 115287}),	-- zzzRated - Cloth Gloves
+				i(178427, {["sourceID"] = 115288}),	-- zzzRated - Cloth Hood
+				i(178431, {["sourceID"] = 115289}),	-- zzzRated - Cloth Leggings
+				i(178436, {["sourceID"] = 115290}),	-- zzzRated - Cloth Mantle
+				i(178415, {["sourceID"] = 115285}),	-- zzzRated - Cloth Robe
+				i(178420, {["sourceID"] = 115286}),	-- zzzRated - Cloth Treads
+				i(178443, {["sourceID"] = 115292}),	-- zzzRated - Cloth Wristwraps
 				-- Unknown
 				i(181111),	-- Soulbreaker Drape
 				i(181105),	-- Soulbreaker Handwraps
@@ -5238,14 +5238,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(175499),	-- Nightcloaked Shoulderpads
 				i(178076),	-- Nightcloaked Cover
 				-- PvP?
-				i(178441),	-- zzzRated - Leather Belt
-				i(178422),	-- zzzRated - Leather Boots
-				i(178433),	-- zzzRated - Leather Breeches
-				i(178423),	-- zzzRated - Leather Gloves
-				i(178429),	-- zzzRated - Leather Helm
-				i(178434),	-- zzzRated - Leather Spaulders
-				i(178418),	-- zzzRated - Leather Vest
-				i(178446),	-- zzzRated - Leather Wristwraps
+				i(178441, {["sourceID"] = 115315}),	-- zzzRated - Leather Belt
+				i(178422, {["sourceID"] = 115310}),	-- zzzRated - Leather Boots
+				i(178433, {["sourceID"] = 115313}),	-- zzzRated - Leather Breeches
+				i(178423, {["sourceID"] = 115311}),	-- zzzRated - Leather Gloves
+				i(178429, {["sourceID"] = 115312}),	-- zzzRated - Leather Helm
+				i(178434, {["sourceID"] = 115314}),	-- zzzRated - Leather Spaulders
+				i(178418, {["sourceID"] = 115309}),	-- zzzRated - Leather Vest
+				i(178446, {["sourceID"] = 115316}),	-- zzzRated - Leather Wristwraps
 				-- Unknown
 				i(181037),	-- Death Shroud Belt
 				i(181038),	-- Death Shroud Bindings
@@ -5317,14 +5317,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(175502),	-- Soul Hunter's Mantle
 				i(178075),	-- Soul Hunter's Cover
 				-- PvP?
-				i(178440),	-- zzzRated - Mail Belt
-				i(178426),	-- zzzRated - Mail Gauntlets
-				i(178428),	-- zzzRated - Mail Helm
-				i(178432),	-- zzzRated - Mail Leggings
-				i(178437),	-- zzzRated - Mail Monnion
-				i(178421),	-- zzzRated - Mail Sabatons
-				i(178417),	-- zzzRated - Mail Vest
-				i(178445),	-- zzzRated - Mail Wristwraps
+				i(178440, {["sourceID"] = 115339}),	-- zzzRated - Mail Belt
+				i(178426, {["sourceID"] = 115335}),	-- zzzRated - Mail Gauntlets
+				i(178428, {["sourceID"] = 115336}),	-- zzzRated - Mail Helm
+				i(178432, {["sourceID"] = 115337}),	-- zzzRated - Mail Leggings
+				i(178437, {["sourceID"] = 115338}),	-- zzzRated - Mail Monnion
+				i(178421, {["sourceID"] = 115334}),	-- zzzRated - Mail Sabatons
+				i(178417, {["sourceID"] = 115333}),	-- zzzRated - Mail Vest
+				i(178445, {["sourceID"] = 115340}),	-- zzzRated - Mail Wristwraps
 				-- Unknown
 				i(181136),	-- Fearstalker's Belt
 				i(181137),	-- Fearstalker's Bracers
@@ -6110,6 +6110,154 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				})),
+			}),
+			n(SEASON_COSMIC, {
+				filter(BACK_F, {
+					itemsource(146215),	-- Cosmic Gladiator's Cloak
+					itemsource(146216),	-- Cosmic Gladiator's Cloak
+					itemsource(146217),	-- Cosmic Gladiator's Drape
+					itemsource(146218),	-- Cosmic Gladiator's Drape
+					itemsource(146221),	-- Cosmic Gladiator's Greatcloak
+					itemsource(146222),	-- Cosmic Gladiator's Greatcloak
+					itemsource(146219),	-- Cosmic Gladiator's Shawl
+					itemsource(146220),	-- Cosmic Gladiator's Shawl
+				}),
+				filter(CLOTH, {
+					itemsource(146245),	-- Cosmic Gladiator's Silk Amice
+					itemsource(146246),	-- Cosmic Gladiator's Silk Amice
+					itemsource(146253),	-- Cosmic Gladiator's Silk Armbands
+					itemsource(146254),	-- Cosmic Gladiator's Silk Armbands
+					itemsource(146249),	-- Cosmic Gladiator's Silk Belt
+					itemsource(146250),	-- Cosmic Gladiator's Silk Belt
+					itemsource(146247),	-- Cosmic Gladiator's Silk Cord
+					itemsource(146248),	-- Cosmic Gladiator's Silk Cord
+					itemsource(146231),	-- Cosmic Gladiator's Silk Gloves
+					itemsource(146232),	-- Cosmic Gladiator's Silk Gloves
+					itemsource(146237),	-- Cosmic Gladiator's Silk Guise
+					itemsource(146238),	-- Cosmic Gladiator's Silk Guise
+					itemsource(146233),	-- Cosmic Gladiator's Silk Handwraps
+					itemsource(146234),	-- Cosmic Gladiator's Silk Handwraps
+					itemsource(146235),	-- Cosmic Gladiator's Silk Hood
+					itemsource(146236),	-- Cosmic Gladiator's Silk Hood
+					itemsource(146239),	-- Cosmic Gladiator's Silk Leggings
+					itemsource(146240),	-- Cosmic Gladiator's Silk Leggings
+					itemsource(146243),	-- Cosmic Gladiator's Silk Mantle
+					itemsource(146244),	-- Cosmic Gladiator's Silk Mantle
+					itemsource(146223),	-- Cosmic Gladiator's Silk Robe
+					itemsource(146224),	-- Cosmic Gladiator's Silk Robe
+					itemsource(146227),	-- Cosmic Gladiator's Silk Slippers
+					itemsource(146228),	-- Cosmic Gladiator's Silk Slippers
+					itemsource(146229),	-- Cosmic Gladiator's Silk Treads
+					itemsource(146230),	-- Cosmic Gladiator's Silk Treads
+					itemsource(146241),	-- Cosmic Gladiator's Silk Trousers
+					itemsource(146242),	-- Cosmic Gladiator's Silk Trousers
+					itemsource(146225),	-- Cosmic Gladiator's Silk Vestments
+					itemsource(146226),	-- Cosmic Gladiator's Silk Vestments
+					itemsource(146251),	-- Cosmic Gladiator's Silk Wristwraps
+					itemsource(146252),	-- Cosmic Gladiator's Silk Wristwraps
+				}),
+				filter(LEATHER, {
+					itemsource(146279),	-- Cosmic Gladiator's Leather Belt
+					itemsource(146280),	-- Cosmic Gladiator's Leather Belt
+					itemsource(146259),	-- Cosmic Gladiator's Leather Boots
+					itemsource(146260),	-- Cosmic Gladiator's Leather Boots
+					itemsource(146271),	-- Cosmic Gladiator's Leather Breeches
+					itemsource(146272),	-- Cosmic Gladiator's Leather Breeches
+					itemsource(146263),	-- Cosmic Gladiator's Leather Gloves
+					itemsource(146264),	-- Cosmic Gladiator's Leather Gloves
+					itemsource(146265),	-- Cosmic Gladiator's Leather Grips
+					itemsource(146266),	-- Cosmic Gladiator's Leather Grips
+					itemsource(146267),	-- Cosmic Gladiator's Leather Helm
+					itemsource(146268),	-- Cosmic Gladiator's Leather Helm
+					itemsource(146257),	-- Cosmic Gladiator's Leather Jerkin
+					itemsource(146258),	-- Cosmic Gladiator's Leather Jerkin
+					itemsource(146273),	-- Cosmic Gladiator's Leather Legwraps
+					itemsource(146274),	-- Cosmic Gladiator's Leather Legwraps
+					itemsource(146269),	-- Cosmic Gladiator's Leather Mask
+					itemsource(146270),	-- Cosmic Gladiator's Leather Mask
+					itemsource(146277),	-- Cosmic Gladiator's Leather Shoulderpads
+					itemsource(146278),	-- Cosmic Gladiator's Leather Shoulderpads
+					itemsource(146275),	-- Cosmic Gladiator's Leather Spaulders
+					itemsource(146276),	-- Cosmic Gladiator's Leather Spaulders
+					itemsource(146281),	-- Cosmic Gladiator's Leather Strap
+					itemsource(146282),	-- Cosmic Gladiator's Leather Strap
+					itemsource(146261),	-- Cosmic Gladiator's Leather Treads
+					itemsource(146262),	-- Cosmic Gladiator's Leather Treads
+					itemsource(146255),	-- Cosmic Gladiator's Leather Vest
+					itemsource(146256),	-- Cosmic Gladiator's Leather Vest
+					itemsource(146285),	-- Cosmic Gladiator's Leather Wristguards
+					itemsource(146286),	-- Cosmic Gladiator's Leather Wristguards
+					itemsource(146283),	-- Cosmic Gladiator's Leather Wristwraps
+					itemsource(146284),	-- Cosmic Gladiator's Leather Wristwraps
+				}),
+				filter(MAIL, {
+					itemsource(146311),	-- Cosmic Gladiator's Chain Belt
+					itemsource(146312),	-- Cosmic Gladiator's Chain Belt
+					itemsource(146293),	-- Cosmic Gladiator's Chain Boots
+					itemsource(146294),	-- Cosmic Gladiator's Chain Boots
+					itemsource(146317),	-- Cosmic Gladiator's Chain Bracers
+					itemsource(146318),	-- Cosmic Gladiator's Chain Bracers
+					itemsource(146305),	-- Cosmic Gladiator's Chain Breeches
+					itemsource(146306),	-- Cosmic Gladiator's Chain Breeches
+					itemsource(146301),	-- Cosmic Gladiator's Chain Faceguard
+					itemsource(146302),	-- Cosmic Gladiator's Chain Faceguard
+					itemsource(146295),	-- Cosmic Gladiator's Chain Gauntlets
+					itemsource(146296),	-- Cosmic Gladiator's Chain Gauntlets
+					itemsource(146313),	-- Cosmic Gladiator's Chain Girdle
+					itemsource(146314),	-- Cosmic Gladiator's Chain Girdle
+					itemsource(146297),	-- Cosmic Gladiator's Chain Handguards
+					itemsource(146298),	-- Cosmic Gladiator's Chain Handguards
+					itemsource(146299),	-- Cosmic Gladiator's Chain Helm
+					itemsource(146300),	-- Cosmic Gladiator's Chain Helm
+					itemsource(146303),	-- Cosmic Gladiator's Chain Leggings
+					itemsource(146304),	-- Cosmic Gladiator's Chain Leggings
+					itemsource(146307),	-- Cosmic Gladiator's Chain Monnion
+					itemsource(146308),	-- Cosmic Gladiator's Chain Monnion
+					itemsource(146291),	-- Cosmic Gladiator's Chain Sabatons
+					itemsource(146292),	-- Cosmic Gladiator's Chain Sabatons
+					itemsource(146309),	-- Cosmic Gladiator's Chain Shoulderguard
+					itemsource(146310),	-- Cosmic Gladiator's Chain Shoulderguard
+					itemsource(146289),	-- Cosmic Gladiator's Chain Tunic
+					itemsource(146290),	-- Cosmic Gladiator's Chain Tunic
+					itemsource(146287),	-- Cosmic Gladiator's Chain Vest
+					itemsource(146288),	-- Cosmic Gladiator's Chain Vest
+					itemsource(146315),	-- Cosmic Gladiator's Chain Wristguards
+					itemsource(146316),	-- Cosmic Gladiator's Chain Wristguards
+				}),
+				filter(PLATE, {
+					itemsource(146319),	-- Cosmic Gladiator's Plate Chestguard
+					itemsource(146320),	-- Cosmic Gladiator's Plate Chestguard
+					itemsource(146321),	-- Cosmic Gladiator's Plate Chestplate
+					itemsource(146322),	-- Cosmic Gladiator's Plate Chestplate
+					itemsource(146327),	-- Cosmic Gladiator's Plate Gauntlets
+					itemsource(146328),	-- Cosmic Gladiator's Plate Gauntlets
+					itemsource(146343),	-- Cosmic Gladiator's Plate Girdle
+					itemsource(146344),	-- Cosmic Gladiator's Plate Girdle
+					itemsource(146345),	-- Cosmic Gladiator's Plate Greatbelt
+					itemsource(146346),	-- Cosmic Gladiator's Plate Greatbelt
+					itemsource(146329),	-- Cosmic Gladiator's Plate Handguards
+					itemsource(146330),	-- Cosmic Gladiator's Plate Handguards
+					itemsource(146331),	-- Cosmic Gladiator's Plate Helm
+					itemsource(146332),	-- Cosmic Gladiator's Plate Helm
+					itemsource(146333),	-- Cosmic Gladiator's Plate Helmet
+					itemsource(146334),	-- Cosmic Gladiator's Plate Helmet
+					itemsource(146335),	-- Cosmic Gladiator's Plate Legguards
+					itemsource(146336),	-- Cosmic Gladiator's Plate Legguards
+					itemsource(146341),	-- Cosmic Gladiator's Plate Pauldrons
+					itemsource(146342),	-- Cosmic Gladiator's Plate Pauldrons
+					itemsource(146339),	-- Cosmic Gladiator's Plate Shoulders
+					itemsource(146340),	-- Cosmic Gladiator's Plate Shoulders
+					itemsource(146325),	-- Cosmic Gladiator's Plate Stompers
+					itemsource(146326),	-- Cosmic Gladiator's Plate Stompers
+					itemsource(146349),	-- Cosmic Gladiator's Plate Vambraces
+					itemsource(146350),	-- Cosmic Gladiator's Plate Vambraces
+					itemsource(146323),	-- Cosmic Gladiator's Plate Warboots
+					itemsource(146324),	-- Cosmic Gladiator's Plate Warboots
+					itemsource(146337),	-- Cosmic Gladiator's Plate Wargreaves
+					itemsource(146338),	-- Cosmic Gladiator's Plate Wargreaves
+					itemsource(146347),	-- Cosmic Gladiator's Plate Wristguards
+					itemsource(146348),	-- Cosmic Gladiator's Plate Wristguards
+				}),
 			}),
 		})),
 	}),

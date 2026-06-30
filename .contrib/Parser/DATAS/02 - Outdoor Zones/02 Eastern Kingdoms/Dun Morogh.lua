@@ -2988,7 +2988,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #if NOT ANYCLASSIC
 				q(5637, {	-- Desperate Prayer
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
@@ -3013,7 +3012,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				-- #endif
 				q(25840, {	-- Eliminate the Resistance
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 					["qg"] = 41298,	-- Slamp Wobblecog

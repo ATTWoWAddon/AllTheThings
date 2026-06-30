@@ -77,7 +77,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			ach(42023, {	-- Legend: The War Within Season 3
 				i(242636),	-- Astral Legend's Pennant (TOY!)
 			}),
-			ach(42044),	-- Battle Mender: The War Within Season 3
+			ach(42044, {	-- Battle Mender: The War Within Season 3
+				["classes"] = HEALERS,
+			}),
 			ach(42033, {	-- Astral Legend: The War Within Season 3
 				title(634),	-- Astral Legend <Name>
 			}),

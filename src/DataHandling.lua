@@ -765,7 +765,7 @@ local SourceSpecificFields = {
 				check = phase.state or 0
 			else
 				-- otherwise it's an invalid unobtainable filter
-				app.print("Invalid Unobtainable Filter:",u)
+				app.report("Invalid Unobtainable Filter:",u)
 				return
 			end
 			-- track the highest unobtainable value, which is the most obtainable (according to PHASES)
@@ -972,6 +972,29 @@ local function CreateObject(t, rootOnly)
 	return t;
 end
 app.__CreateObject = CreateObject;
+-- Function to ensure a table and recursively any .g groups are properly 'objects', without replacing the table references themselves
+local function EnsureObject(t)
+	-- app.PrintDebug("EO",t)
+	if not t then return end
+	-- is it an array of raw datas which needs to be turned into an array of usable objects
+	if t[1] then
+		-- array
+		-- app.PrintDebug("EO.[]","=>",t)
+		for i=1,#t do
+			EnsureObject(t[i])
+		end
+	-- not an object, so need to convert to an object
+	elseif not t.__type then
+		-- use the highest-priority piece of data which exists in the table to turn it into an object
+		-- no re-assign needed because t itself is now an object
+		app.CreateClassInstance(nil, nil, t)
+	end
+
+	-- app.PrintDebug("EO key/value",app:SearchLink(t))
+	-- ensure objects on all sub-groups
+	EnsureObject(t.g)
+end
+app.EnsureObject = EnsureObject
 
 local function GetHash(t)
 	local hash = app.CreateHash(t);

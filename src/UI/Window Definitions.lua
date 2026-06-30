@@ -40,7 +40,7 @@ local function GetUnobtainableTexture(group)
 	if not group then return; end
 	if type(group) ~= "table" then
 		-- This function shouldn't be used with only u anymore!
-		app.print("Invalid use of GetUnobtainableTexture", group);
+		app.report("Invalid use of GetUnobtainableTexture", group);
 		return;
 	end
 
@@ -2791,12 +2791,12 @@ end
 function app:CreateWindow(suffix, definition)
 	app.WindowDefinitions[suffix] = definition;
 	if not definition then
-		app.print("Cannot create a Window without a definition",suffix)
+		app.report("Cannot create a Window without a definition",suffix)
 		return
 	end
 
 	if definition.Suffix and definition.Suffix ~= suffix then
-		app.print("WARN: Window re-using Definition from another Window:",suffix,"==>",definition.Suffix)
+		app.report("WARN: Window re-using Definition from another Window:",suffix,"==>",definition.Suffix)
 	end
 	definition.Suffix = suffix
 	-- Dynamic Categories are neat, but currently only a Classic Feature (for now?)

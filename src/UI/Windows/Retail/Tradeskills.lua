@@ -438,81 +438,79 @@ app:CreateWindow("Tradeskills", {
 				self:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT", 0, 0);
 				self:SetMovable(false);
 
-				if app.IsRetail then
-					app.Settings:SetTooltipSetting("Auto:ProfessionList", false)
-					self:SetResizable(false)
-					self:SetWidth(350)
-					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
-					self:Hide()
+				app.Settings:SetTooltipSetting("Auto:ProfessionList", false)
+				self:SetResizable(false)
+				self:SetWidth(350)
+				self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
+				self:Hide()
 
-					if not ProfessionsFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame
-						ProfessionsFrameTabSideBar = CreateFrame("Frame", nil, ProfessionsFrame, "")
-						ProfessionsFrameTabSideBar:SetWidth(1)
-						ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
-						ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
-						ProfessionsFrameTabSideBar.Tabs = {}
-						ProfessionsFrameTabSideBar.selTab = 0
-					end
+				if not ProfessionsFrameTabSideBar then	-- This runs in other addons as well, to create the shared parent frame
+					ProfessionsFrameTabSideBar = CreateFrame("Frame", nil, ProfessionsFrame, "")
+					ProfessionsFrameTabSideBar:SetWidth(1)
+					ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
+					ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
+					ProfessionsFrameTabSideBar.Tabs = {}
+					ProfessionsFrameTabSideBar.selTab = 0
+				end
 
-					if not app.TradeskillTab then
-						app.TradeskillTab = CreateFrame("Frame", nil, ProfessionsFrameTabSideBar, "AllTheThings_Tab")
-						app.TradeskillTab:SetPoint("TOPLEFT", ProfessionsFrameTabSideBar, "TOPRIGHT", -2, -52)
-						ProfessionsFrameTabSideBar.Tabs[1] = app.TradeskillTab
-					end
+				if not app.TradeskillTab then
+					app.TradeskillTab = CreateFrame("Frame", nil, ProfessionsFrameTabSideBar, "AllTheThings_Tab")
+					app.TradeskillTab:SetPoint("TOPLEFT", ProfessionsFrameTabSideBar, "TOPRIGHT", -2, -52)
+					ProfessionsFrameTabSideBar.Tabs[1] = app.TradeskillTab
+				end
 
-					local function toggleProfTab()
-						local newState = not self:IsShown()
-						app.TradeskillTab:SetChecked(newState)
-						app.TradeskillTab.Icon:SetTexture("Interface\\Addons\\AllTheThings\\assets\\logo_32x32")
-						app.TradeskillTab.Icon:SetSize(24, 24)
-
-						ProfessionsFrameTabSideBar:ClearAllPoints()
-						if newState then
-							for i = 1, #ProfessionsFrameTabSideBar.Tabs do
-								if ProfessionsFrameTabSideBar.selTab == i and i ~= 1 then
-									ProfessionsFrameTabSideBar.Tabs[i]:GetScript("OnMouseUp")(ProfessionsFrameTabSideBar.Tabs[i])
-								end
-							end
-							ProfessionsFrameTabSideBar.selTab = 1
-							self:SetVisible(true)
-
-							ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", self, "TOPRIGHT")
-							ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", self, "BOTTOMRIGHT")
-						else
-							ProfessionsFrameTabSideBar.selTab = 0
-							self:SetVisible(false)
-
-							ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
-							ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
-						end
-					end
-					app.TradeskillTab:SetCustomOnMouseUpHandler(toggleProfTab)
-					app.TradeskillTab:SetChecked(false)
+				local function toggleProfTab()
+					local newState = not self:IsShown()
+					app.TradeskillTab:SetChecked(newState)
 					app.TradeskillTab.Icon:SetTexture("Interface\\Addons\\AllTheThings\\assets\\logo_32x32")
 					app.TradeskillTab.Icon:SetSize(24, 24)
 
-					if not app.CreatedTabTradeskill then
-						local function hide(self)
-							ProfessionsFrameTabSideBar.selTab = 0
-							app.TradeskillTab:SetChecked(false)
-							app.TradeskillTab.Icon:SetTexture("Interface\\Addons\\AllTheThings\\assets\\logo_32x32")
-							app.TradeskillTab.Icon:SetSize(24, 24)
-							self:Hide()
-						end
-
-						ProfessionsFrame:HookScript("OnHide", function()
-							hide(self)
-						end)
-
-						if C_AddOns.IsAddOnLoaded("TradeSkillMaster") then
-							self:RegisterEvent("TRADE_SKILL_CLOSE")
-							handlers.TRADE_SKILL_CLOSE = function(self)
-								hide(self)
+					ProfessionsFrameTabSideBar:ClearAllPoints()
+					if newState then
+						for i = 1, #ProfessionsFrameTabSideBar.Tabs do
+							if ProfessionsFrameTabSideBar.selTab == i and i ~= 1 then
+								ProfessionsFrameTabSideBar.Tabs[i]:GetScript("OnMouseUp")(ProfessionsFrameTabSideBar.Tabs[i])
 							end
 						end
+						ProfessionsFrameTabSideBar.selTab = 1
+						self:SetVisible(true)
 
-						app.CreatedTabTradeskill = true
+						ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", self, "TOPRIGHT")
+						ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", self, "BOTTOMRIGHT")
+					else
+						ProfessionsFrameTabSideBar.selTab = 0
+						self:SetVisible(false)
+
+						ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
+						ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
 					end
+				end
+				app.TradeskillTab:SetCustomOnMouseUpHandler(toggleProfTab)
+				app.TradeskillTab:SetChecked(false)
+				app.TradeskillTab.Icon:SetTexture("Interface\\Addons\\AllTheThings\\assets\\logo_32x32")
+				app.TradeskillTab.Icon:SetSize(24, 24)
+
+				if not app.CreatedTabTradeskill then
+					local function hide(self)
+						ProfessionsFrameTabSideBar.selTab = 0
+						app.TradeskillTab:SetChecked(false)
+						app.TradeskillTab.Icon:SetTexture("Interface\\Addons\\AllTheThings\\assets\\logo_32x32")
+						app.TradeskillTab.Icon:SetSize(24, 24)
+						self:Hide()
+					end
+
+					ProfessionsFrame:HookScript("OnHide", function()
+						hide(self)
+					end)
+
+					if C_AddOns.IsAddOnLoaded("TradeSkillMaster") then
+						self:RegisterEvent("TRADE_SKILL_CLOSE")
+						handlers.TRADE_SKILL_CLOSE = function(self)
+							hide(self)
+						end
+					end
+
+					app.CreatedTabTradeskill = true
 				end
 			else
 				self:SetMovable(false);
@@ -553,7 +551,7 @@ app:CreateWindow("Tradeskills", {
 			end
 			if app.Settings:GetTooltipSetting("Auto:ProfessionList") and app.IsClassic then
 				self:SetVisible(true)
-			elseif ProfessionsFrameTabSideBar and app.IsRetail then
+			elseif ProfessionsFrameTabSideBar then
 				ProfessionsFrameTabSideBar:ClearAllPoints()
 				ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
 				ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")

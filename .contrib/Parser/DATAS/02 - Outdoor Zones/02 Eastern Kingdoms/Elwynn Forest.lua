@@ -2521,7 +2521,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 				}),
-				-- #if NOT ANYCLASSIC
 				q(5635, {	-- Desperate Prayer
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
@@ -2546,7 +2545,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				-- #endif
 				q(45, {	-- Discover Rolf's Fate
 					["sourceQuest"] = 37,	-- Find the Lost Guards
 					["provider"] = { "o", 55 },	-- A half-eaten body

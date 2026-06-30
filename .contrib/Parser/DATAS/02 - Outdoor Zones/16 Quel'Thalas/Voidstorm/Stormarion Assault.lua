@@ -168,8 +168,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(566083, {	-- Stormarion Supplies
 					["description"] = "Spawns randomly around Stormarion Citadel.",
 				}),
-				o(618828, {	--Stormarion Fragment
-					i(264506),	-- Stormarion Fragment
+				o(618828, {	-- Stormarion Fragment
+					["coord"] = { 27.1, 68.3, MAP.MIDNIGHT.VOIDSTORM },
+					["groups"] = { i(264506) },	-- Stormarion Fragment
 				}),
 			}),
 		}),

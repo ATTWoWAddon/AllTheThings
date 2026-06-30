@@ -2,6 +2,8 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
+local BURNING_BLOSSOM = 23247;
+
 MIDSUMMER_FIRE_FESTIVAL_HEADER = createHeader({
 	readable = "Midsummer Fire Festival",
 	constant = "MIDSUMMER_FIRE_FESTIVAL_HEADER",
@@ -201,7 +203,7 @@ local FLAME_STEAL_LEVEL_REQUIREMENT = 1;	-- Level requirement reduced to 1 after
 local FLAME_STEAL_LEVEL_REQUIREMENT = 50;
 -- #endif
 local FLAME_STEAL_REWARDS = {
-	i(23247),	-- Burning Blossom x25
+	i(BURNING_BLOSSOM),	-- x25
 	i(23211),	-- Toasted Smorc
 	i(23326),	-- Midsummer Sausage
 	i(23327),	-- Fire-toasted Bun
@@ -214,215 +216,305 @@ local FLAME_STEAL_REWARDS = {
 
 local MERCHANT_GROUPS = {
 	i(122338, {	-- Ancient Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 350 } },
 		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 600 } },
 		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 600 } },
 		["timeline"] = { ADDED_9_1_5 },
 	}),
 	i(122340, {	-- Timeworn Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 600 } },
 		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(151614, {	-- Weathered Heirloom Armor Casing
-		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 600 } },
 		["timeline"] = { ADDED_7_2_5 },
 	}),
 	i(116439, {	-- Blazing Cindercrawler (PET!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 350 } },
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(34686, {	-- Brazier of Dancing Flames (TOY!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 300 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 350 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_2_4_0 },
 	}),
 	i(116440, {	-- Burning Defender's Medallion (TOY!)
-		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 300 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 500 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(116435, {	-- Cozy Bonfire (TOY!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 300 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 350 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_6_0_2 },
 	}),
 	iensemble(275461, {	-- Ensemble: Sun Festival's Flame Totems
-		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 300 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(166746, {	-- Fire Eater's Hearthstone (TOY!)
-		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 300 } },
 		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(188701, {	-- Fire Festival Batons (TOY!)
-		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 50 } },
 		["timeline"] = { ADDED_9_2_0 },
 	}),
 	i(206038, {	-- Flamin' Ring of Flashiness (TOY!)
-		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 300 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 500 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_10_1_0 },
 	}),
 	i(242742, {	-- Grand Belt of the Fire Festival (COSMETIC!)
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM,  75 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 150 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_11_1_7 },
 	}),
 	i(242740, {	-- Grand Helm of the Fire Festival (COSMETIC!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 100 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 350 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_11_1_7 },
 	}),
 	i(242741, {	-- Grand Mantle of the Fire Festival (COSMETIC!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 150 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 350 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_11_1_7 },
 	}),
 	i(74278, {	-- Helm of the Fire Festival
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM,  50 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 350 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_4_3_0 },
 	}),
 	i(276546, {	-- Illusion: Summer Sun Blossom (ILLUSION!)
-		["cost"] = { { "i", 23247, 250 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 250 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(188699, {	-- Insulated Dancing Insoles (TOY!)
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 100 } },
 		["timeline"] = { ADDED_9_2_0 },
 	}),
 	i(141714, {	-- Igneous Flameling (PET!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 350 } },
 		["timeline"] = { ADDED_7_1_0 },
 	}),
 	i(220787, {	-- Mantle of Midsummer
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 150 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 350 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_10_2_7 },
 	}),
 	i(220785, {	-- Midsummer Safeguard
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 150 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 350 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_10_2_7 },
 	}),
 	i(141649, {	-- Set of Matches (TOY!)
-		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 300 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 500 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_7_1_0 },
 	}),
 	i(188695, {	-- Summer Cranial Skillet (TOY!)
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_9_2_0 },
 	}),
 	i(275460, {	-- Sun Festival's Flamebrand
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275469, {	-- Sun Festival's Painted Girdle
-		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 50 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275472, {	-- Sun Festival's Painted Greaves
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 100 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275474, {	-- Sun Festival's Painted Gauntlets
-		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 75 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275476, {	-- Sun Festival's Painted Hauberk
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 100 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
-	i(275471, {	-- Sun Festival's Leggings
-		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+	i(275471, {	-- Sun Festival's Painted Leggings
+		["cost"] = { { "i", BURNING_BLOSSOM, 75 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275468, {	-- Sun Festival's Painted Mantle
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275466, {	-- Sun Festival's Painted Mask
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 100 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275470, {	-- Sun Festival's Painted Sash
-		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 75 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275473, {	-- Sun Festival's Painted Striders
-		["cost"] = { { "i", 23247, 75 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 75 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275465, {	-- Sun Festival's Painted Tunic
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 50 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275475, {	-- Sun Festival's Painted Wrap
-		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 50 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275467, {	-- Sun Festival's Painted Wings
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275458, {	-- Sun Festival's Totemic Greataxe
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275459, {	-- Sun Festival's Torchblade
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	i(275457, {	-- Sun Festival's Totemic Edge
-		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 150 } },
 		["timeline"] = { ADDED_12_0_7 },
 	}),
 	-- #if AFTER 2.4.0.7994
 	-- This item was originally exclusively available as a quest reward.
 	i(23083, {	-- Captured Flame (PET!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 350 } },
 	}),
 	-- #endif
 	-- #if AFTER 2.4.0.7994
 	-- This item was originally exclusively available as a quest reward.
 	i(23324, {	-- Mantle of the Fire Festival
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM,  50 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 100 },
+			-- #endif
+		},
 	}),
 	-- #endif
 	i(34685, {	-- Vestment of Summer
-		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM,  50 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 100 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_2_4_0 },
 	}),
 	i(34683, {	-- Sandals of Summer
-		["cost"] = { { "i", 23247, 200 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM,  50 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 200 },
+			-- #endif
+		},
 		["timeline"] = { ADDED_2_4_0 },
 	}),
 	i(34599, {	-- Juggling Torch
 		-- #if AFTER WRATH
 		["description"] = "You will need 10 of these torches to complete the |cffffff00Torch Juggler|r achievement.",
 		-- #endif
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 		["timeline"] = { ADDED_2_4_0 },
 	}),
 	i(23215, {	-- Bag of Smorc Ingredients
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 		["timeline"] = { ADDED_2_4_0 },
 	}),
 	-- #if AFTER 2.4.0.7994
 	i(23435, {	-- Elderberry Pie
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 	}),
 	i(23327, {	-- Fire-Toasted Bun
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 	}),
 	i(23326, {	-- Midsummer Sausage
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 	}),
 	i(23211, {	-- Toasted Smorc
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 	}),
 	i(23246, {	-- Fiery Festival Brew
-		["cost"] = { { "i", 23247, 5 } },	-- Burning Blossom
+		["cost"] = {
+			-- #if AFTER MID
+			{ "i", BURNING_BLOSSOM, 2 },
+			-- #else
+			{ "i", BURNING_BLOSSOM, 5 },
+			-- #endif
+		},
 	}),
 	-- #endif
 	i(34684, {	-- Handful of Summer Petals
-		["cost"] = { { "i", 23247, 2 } },	-- Burning Blossom
+		["cost"] = { { "i", BURNING_BLOSSOM, 2 } },
 		["timeline"] = { ADDED_2_4_0 },
 	}),
 };
@@ -441,174 +533,192 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		["timeline"] = { ADDED_2_4_0 },
 		["provider"] = { "o", 188192 },	-- Ice Chest
 		["isDaily"] = true,
-		["groups"] = {
-			ach(263, {	-- Ice the Frost Lord
-				["timeline"] = { ADDED_3_0_2 },
-			}),
-			i(149753, {	-- Knapsack of Chilled Goods [Uncommon Quality]
-				["timeline"] = { ADDED_7_2_5 },
-				["groups"] = {
-					i(117373, {	-- Frostscythe of Lord Ahune
-						["timeline"] = { ADDED_6_0_2 },
-					}),
-				},
-			}),
-			i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
-				["timeline"] = { ADDED_6_0_2 },
-				["groups"] = {
-					i(117373, {	-- Frostscythe of Lord Ahune
-						["timeline"] = { ADDED_6_0_2 },
-					}),
-					i(53641, {	-- Frigid Frostling (PET!)
-						["timeline"] = { ADDED_3_3_3 },
-					}),
-					i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
-					hqt(83134, {	-- Has rolled for Ahune Special Loot (Daily Accountwide)
-						["name"] = "Has rolled for Ahune Special Loot (Daily Accountwide)",
-						["description"] = "Items under this group only have a chance to drop on your first kill per day for your warband.",
-						["timeline"] = { ADDED_10_2_7 },
-						["isDaily"] = true,
-						["groups"] = {
-							i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
-								["timeline"] = { ADDED_10_2_7 },
-							}),
-							i(244356, {	-- Crown of the Frost Lord (COSMETIC!)
-								["timeline"] = { ADDED_11_1_7 },
-							}),
-							i(244422, {	-- Glazfuris, Scythe of the Deep Chill (COSMETIC!)
-								["timeline"] = { ADDED_11_1_7 },
-							}),
-							i(246571, {	-- Glazfuris, Spire of the Deep Chill (COSMETIC!)
-								["timeline"] = { ADDED_11_1_7 },
-							}),
-							i(244423, {	-- Rethfuras, Scorched Scythe of Cinders (COSMETIC!)
-								["timeline"] = { ADDED_11_1_7 },
-							}),
-							i(246570, {	-- Rethfuras, Scorched Stave of Cinders (COSMETIC!)
-								["timeline"] = { ADDED_11_1_7 },
-							}),
-						},
-					}),
-					hqt(97116, {	-- Has rolled for Ahune Special Loot (Daily Accountwide)
-						["name"] = "Has rolled for Ahune Special Loot (Daily Accountwide)",
-						["description"] = "Items under this group only have a chance to drop on your first kill per day for your warband.",
-						["timeline"] = { ADDED_12_0_7 },
-						["isDaily"] = true,
-						["groups"] = {
-							i(275464, {	-- Sun Festival's Painted Roc (MOUNT!)
-								["timeline"] = { ADDED_12_0_7 },
-							}),
-						},
-						--["sym"] = {
-						--	-- TODO: Vendor items probably
-						--},
-					}),
-				},
-			}),
-			i(54536, {	-- Satchel of Chilled Goods
-				["timeline"] = { ADDED_3_3_3, REMOVED_6_0_2 },
-				["groups"] = {
-					i(95426, {	-- Frostscythe of Lord Ahune [Level 90]
-						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					}),
+		["groups"] = appendGroups(
+			{	-- Drops that are timelined manually.
+				ach(263, {	-- Ice the Frost Lord
+					["timeline"] = { ADDED_3_0_2 },
+				}),
+				i(149753, {	-- Knapsack of Chilled Goods [Uncommon Quality]
+					["timeline"] = { ADDED_7_2_5 },
+					["groups"] = {
+						i(117373, {	-- Frostscythe of Lord Ahune
+							["timeline"] = { ADDED_6_0_2 },
+						}),
+					},
+				}),
+				i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(117373, {	-- Frostscythe of Lord Ahune
+							["timeline"] = { ADDED_6_0_2 },
+						}),
+						i(53641, {	-- Frigid Frostling (PET!)
+							["timeline"] = { ADDED_3_3_3 },
+						}),
+						i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+						hqt(83134, {	-- Has rolled for Ahune Special Loot (2025) (Daily Accountwide)
+							["name"] = "Has rolled for Ahune Special Loot (2025) (Daily Accountwide)",
+							["description"] = "These items are only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+							["timeline"] = { ADDED_10_2_7 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
+									["timeline"] = { ADDED_10_2_7 },
+								}),
+								i(244356, {	-- Crown of the Frost Lord (COSMETIC!)
+									["timeline"] = { ADDED_11_1_7 },
+								}),
+								i(244422, {	-- Glazfuris, Scythe of the Deep Chill (COSMETIC!)
+									["timeline"] = { ADDED_11_1_7 },
+								}),
+								i(246571, {	-- Glazfuris, Spire of the Deep Chill (COSMETIC!)
+									["timeline"] = { ADDED_11_1_7 },
+								}),
+								i(244423, {	-- Rethfuras, Scorched Scythe of Cinders (COSMETIC!)
+									["timeline"] = { ADDED_11_1_7 },
+								}),
+								i(246570, {	-- Rethfuras, Scorched Stave of Cinders (COSMETIC!)
+									["timeline"] = { ADDED_11_1_7 },
+								}),
+							},
+						}),
+						hqt(97111, {	-- Sun Festival's Painted Roc Attempt (Daily Account Lockout)
+							["name"] = "Sun Festival's Painted Roc Attempt (Daily Account Lockout)",
+							["timeline"] = { ADDED_12_0_7 },
+							["isDaily"] = true,
+							["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+							["groups"] = {
+								i(275464, {	-- Sun Festival's Painted Roc (MOUNT!)
+									["timeline"] = { ADDED_12_0_7 },
+								}),
+							},
+						}),
+						hqt(97116, {	-- Has rolled for Ahune Special Loot (2026) (Daily Accountwide)
+							["name"] = "Has rolled for Ahune Special Loot (2026) (Daily Accountwide)",
+							["description"] = "These items are only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+							["timeline"] = { ADDED_12_0_7 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(275469),	-- Sun Festival's Painted Girdle
+								i(275472),	-- Sun Festival's Painted Greaves
+								i(275474),	-- Sun Festival's Painted Gauntlets
+								i(275476),	-- Sun Festival's Painted Hauberk
+								i(275471),	-- Sun Festival's Painted Leggings
+								i(275468),	-- Sun Festival's Painted Mantle
+								i(275466),	-- Sun Festival's Painted Mask
+								i(275470),	-- Sun Festival's Painted Sash
+								i(275473),	-- Sun Festival's Painted Striders
+								i(275465),	-- Sun Festival's Painted Tunic
+								i(275475),	-- Sun Festival's Painted Wrap
+								i(275467),	-- Sun Festival's Painted Wings
+							},
+						}),
+					},
+				}),
+				i(54536, {	-- Satchel of Chilled Goods
+					["timeline"] = { ADDED_3_3_3, REMOVED_6_0_2 },
+					["groups"] = {
+						-- NOTE: Blizzard added 528 ilvl items specific to MOP_PHASE_ONE Classic
+						-- #if ANYCLASSIC
+						i(280389, {	-- Frostscythe of Lord Ahune [Level 90]
+							["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
+						}),
+						-- #else
+						i(95426, {	-- Frostscythe of Lord Ahune [Level 90]
+							["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+						}),
+						-- #endif
 
-					-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
-					-- #if ANYCLASSIC
-					i(248747, {	-- Frostscythe of Lord Ahune [Level 85 - ilvl 403]
-						["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
-					}),
-					-- #endif
+						-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
+						-- #if ANYCLASSIC
+						i(248747, {	-- Frostscythe of Lord Ahune [Level 85 - ilvl 403]
+							["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+						}),
+						-- #endif
 
-					i(69771, {	-- Frostscythe of Lord Ahune [Level 85]
-						["timeline"] = {
-							ADDED_4_0_1,
-							-- #if ANYCLASSIC
-							REMOVED_4_4_2,
-							-- #else
-							REMOVED_5_0_4,
-							-- #endif
-						},
-					}),
-					i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
-						["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
-					}),
-					i(53641),	-- Frigid Frostling (PET!)
-				},
-			}),
-			i(35723, {	-- Shards of Ahune
-				["description"] = "This item can be looted and completed once per character.",
-				["timeline"] = { ADDED_2_4_0 },
-			}),
-			i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
-				["timeline"] = { ADDED_7_0_3 },
-			}),
-			applyclassicphase(TBC_PHASE_THREE, i(35498, {["timeline"]={ADDED_2_4_2}})),	-- Formula: Enchant Weapon - Deathfrost (RECIPE!)
+						i(69771, {	-- Frostscythe of Lord Ahune [Level 85]
+							["timeline"] = {
+								ADDED_4_0_1,
+								-- #if ANYCLASSIC
+								REMOVED_4_4_2,
+								-- #else
+								REMOVED_5_0_4,
+								-- #endif
+							},
+						}),
+						i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
+							["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+						}),
+						i(53641),	-- Frigid Frostling (PET!)
+					},
+				}),
+				i(35723, {	-- Shards of Ahune
+					["description"] = "This item can be looted and completed once per character.",
+					["timeline"] = { ADDED_2_4_0 },
+				}),
+				i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
+					["timeline"] = { ADDED_7_0_3 },
+				}),
+				applyclassicphase(TBC_PHASE_THREE, i(35498, {["timeline"]={ADDED_2_4_2}})),	-- Formula: Enchant Weapon - Deathfrost (RECIPE!)
 
-			-- #if BEFORE 4.2.0
-			-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
-			-- Between Patch 3.3.3 and 4.2.0 it had no available source.
-			i(34955, {	-- Searing Scorchling (PET!)
-				["timeline"] = { REMOVED_3_3_3, ADDED_4_2_0 },
-			}),
-			-- #endif
-
-			-- WoD+ Rewards (Scalable)
-			i(117372, {	-- Cloak of the Frigid Winds
-				["timeline"] = { ADDED_6_0_2 },
-			}),
-			i(117374, {	-- Icebound Cloak
-				["timeline"] = { ADDED_6_0_2 },
-			}),
-			i(117375, {	-- Shroud of Winter's Chill
-				["timeline"] = { ADDED_6_0_2 },
-			}),
-			i(117376, {	-- The Frost Lord's Battle Shroud
-				["timeline"] = { ADDED_6_0_2 },
-			}),
-			i(117377, {	-- The Frost Lord's War Cloak
-				["timeline"] = { ADDED_6_0_2 },
-			}),
-
-			-- Pandaria Rewards
-			i(95425, {	-- Cloak of the Frigid Winds [Level 90]
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
-			i(95427, {	-- Icebound Cloak [Level 90]
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
-			i(95428, {	-- Shroud of Winter's Chill [Level 90]
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
-			i(95429, {	-- The Frost Lord's Battle Shroud [Level 90]
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
-			i(95430, {	-- The Frost Lord's War Cloak [Level 90]
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
-
-			-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
+				-- #if BEFORE 4.2.0
+				-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
+				-- Between Patch 3.3.3 and 4.2.0 it had no available source.
+				i(34955, {	-- Searing Scorchling (PET!)
+					["timeline"] = { REMOVED_3_3_3, ADDED_4_2_0 },
+				}),
+				-- #endif
+			},
+			applyclassicphase(WOD_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_6_0_2 } }, {	-- WoD+ Rewards (Scalable)
+				i(117372),	-- Cloak of the Frigid Winds
+				i(117374),	-- Icebound Cloak
+				i(117375),	-- Shroud of Winter's Chill
+				i(117376),	-- The Frost Lord's Battle Shroud
+				i(117377),	-- The Frost Lord's War Cloak
+			})),
 			-- #if ANYCLASSIC
-			i(248751, {	-- Cloak of the Frigid Winds [Level 85]
-				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
-			}),
-			i(248752, {	-- Icebound Cloak [Level 85]
-				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
-			}),
-			i(248750, {	-- Shroud of Winter's Chill [Level 85]
-				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
-			}),
-			i(248749, {	-- The Frost Lord's Battle Shroud [Level 85]
-				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
-			}),
-			i(248748, {	-- The Frost Lord's War Cloak [Level 85]
-				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
-			}),
+			-- NOTE: Blizzard added 528 ilvl items specific to MOP Classic
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDown({	-- MoP Rewards (MOP Classic)
+				["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 }
+			}, {
+				i(280386),	-- Cloak of the Frigid Winds [528]
+				i(280383),	-- Icebound Cloak [Level 90]
+				i(280385),	-- Shroud of Winter's Chill [Level 90]
+				i(280384),	-- The Frost Lord's Battle Shroud [Level 90]
+				i(280387),	-- The Frost Lord's War Cloak [Level 90]
+			})),
 			-- #endif
-
-			-- Cataclysm Rewards
-			i(69769, {	-- Cloak of the Frigid Winds [Level 85]
+			applyclassicphase(MOP_PHASE_ONE, bubbleDown({	-- MoP Rewards (Original Timeline)
+				["timeline"] = {
+					ADDED_5_0_4,
+					-- #if ANYCLASSIC
+					REMOVED_5_5_4,
+					-- #else
+					REMOVED_6_0_2,
+					-- #endif
+				},
+			}, {
+				i(95425),	-- Cloak of the Frigid Winds [Level 90]
+				i(95427),	-- Icebound Cloak [Level 90]
+				i(95428),	-- Shroud of Winter's Chill [Level 90]
+				i(95429),	-- The Frost Lord's Battle Shroud [Level 90]
+				i(95430),	-- The Frost Lord's War Cloak [Level 90]
+			})),
+			-- #if ANYCLASSIC
+			-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, bubbleDown({	-- Cataclysm Rewards (Cata Classic)
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 }
+			}, {
+				i(248751),	-- Cloak of the Frigid Winds [Level 85]
+				i(248752),	-- Icebound Cloak [Level 85]
+				i(248750),	-- Shroud of Winter's Chill [Level 85]
+				i(248749),	-- The Frost Lord's Battle Shroud [Level 85]
+				i(248748),	-- The Frost Lord's War Cloak [Level 85]
+			})),
+			-- #endif
+			applyclassicphase(CATA_PHASE_ONE, bubbleDown({	-- Cataclysm Rewards (Original Timeline)
 				["timeline"] = {
 					ADDED_4_0_1,
 					-- #if ANYCLASSIC
@@ -617,94 +727,61 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					REMOVED_5_0_4,
 					-- #endif
 				},
-			}),
-			i(69770, {	-- Icebound Cloak [Level 85]
+			}, {
+				i(69769),	-- Cloak of the Frigid Winds [Level 85]
+				i(69770),	-- Icebound Cloak [Level 85]
+				i(69768),	-- Shroud of Winter's Chill [Level 85]
+				i(69767),	-- The Frost Lord's Battle Shroud [Level 85]
+				i(69766),	-- The Frost Lord's War Cloak [Level 85]
+			})),
+			applyclassicphase(WRATH_PHASE_ONE, bubbleDown({	-- Wrath Rewards (Original Timeline)
 				["timeline"] = {
-					ADDED_4_0_1,
-					-- #if ANYCLASSIC
-					REMOVED_4_4_2,
+					ADDED_3_3_3,
+					REMOVED_4_0_1,
+				},
+			}, {
+				i(54805),	-- Cloak of the Frigid Winds [Level 80]
+				i(54801),	-- Icebound Cloak [Level 80]
+				i(54804),	-- Shroud of Winter's Chill [Level 80]
+				i(54803),	-- The Frost Lord's Battle Shroud [Level 80]
+				i(54802),	-- The Frost Lord's War Cloak [Level 80]
+			})),
+			-- #if CLASSIC_ANNIVERSARY
+			applyclassicphase(TBC_PHASE_ONE, bubbleDown({	-- TBC Rewards (TBC Classic Anniversary)
+				["timeline"] = { ADDED_2_5_5_PHASE_2, REMOVED_3_3_3 },
+			}, {
+				i(278827),	-- Amulet of Bitter Hatred [Level 70]
+				i(278838),	-- Amulet of Glacial Tranquility [Level 70]
+				i(278833),	-- Choker of the Arctic Flow [Level 70]
+				i(278774),	-- Cloak of the Frigid Winds [Level 70]
+				i(278953),	-- Frostscythe of Lord Ahune [Level 70]
+				i(278847),	-- Hailstone Pendant [Level 70]
+				i(278823),	-- Icebound Cloak [Level 70]
+				i(279240),	-- Shroud of Winter's Chill [Level 70]
+				i(278819),	-- The Frost Lord's War Cloak [Level 70]
+			})),
+			-- #endif
+			applyclassicphase(TBC_PHASE_ONE, bubbleDown({	-- TBC Rewards (Original Timeline)
+				["timeline"] = {
+					ADDED_2_0_1,
+					-- #if CLASSIC_ANNIVERSARY
+					REMOVED_2_5_5,
 					-- #else
-					REMOVED_5_0_4,
+					REMOVED_3_3_3,
 					-- #endif
 				},
-			}),
-			i(69768, {	-- Shroud of Winter's Chill [Level 85]
-				["timeline"] = {
-					ADDED_4_0_1,
-					-- #if ANYCLASSIC
-					REMOVED_4_4_2,
-					-- #else
-					REMOVED_5_0_4,
-					-- #endif
-				},
-			}),
-			i(69767, {	-- The Frost Lord's Battle Shroud [Level 85]
-				["timeline"] = {
-					ADDED_4_0_1,
-					-- #if ANYCLASSIC
-					REMOVED_4_4_2,
-					-- #else
-					REMOVED_5_0_4,
-					-- #endif
-				},
-			}),
-			i(69766, {	-- The Frost Lord's War Cloak [Level 85]
-				["timeline"] = {
-					ADDED_4_0_1,
-					-- #if ANYCLASSIC
-					REMOVED_4_4_2,
-					-- #else
-					REMOVED_5_0_4,
-					-- #endif
-				},
-			}),
-
-			i(54805, {	-- Cloak of the Frigid Winds [Level 80]
-				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
-			}),
-			i(54801, {	-- Icebound Cloak [Level 80]
-				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
-			}),
-			i(54804, {	-- Shroud of Winter's Chill [Level 80]
-				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
-			}),
-			i(54803, {	-- The Frost Lord's Battle Shroud [Level 80]
-				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
-			}),
-			i(54802, {	-- The Frost Lord's War Cloak [Level 80]
-				["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
-			}),
-
-			-- Original Rewards
-			i(35514, {	-- Frostscythe of Lord Ahune [Level 70]
-				["timeline"] = { REMOVED_3_3_3 },
-			}),
-			i(35507, {	-- Amulet of Bitter Hatred [Level 70]
-				["timeline"] = { REMOVED_3_3_3 },
-			}),
-			i(35509, {	-- Amulet of Glacial Tranquility [Level 70]
-				["timeline"] = { REMOVED_3_3_3 },
-			}),
-			i(35508, {	-- Choker of the Arctic Flow [Level 70]
-				["timeline"] = { REMOVED_3_3_3 },
-			}),
-			i(35511, {	-- Hailstone Pendant [Level 70]
-				["timeline"] = { REMOVED_3_3_3 },
-			}),
-			i(35497, {	-- Cloak of the Frigid Winds [Level 70]
-				["timeline"] = { REMOVED_3_3_3 },
-			}),
-			i(35496, {	-- Icebound Cloak [Level 70]
-				["timeline"] = { REMOVED_3_3_3 },
-			}),
-			i(35494, {	-- Shroud of Winter's Chill [Level 70]
-				["timeline"] = { REMOVED_3_3_3 },
-			}),
-			i(35495, {	-- The Frost Lord's War Cloak [Level 70]
-				["timeline"] = { REMOVED_3_3_3 },
-			}),
-			HUGE_SNOWBALL,
-		},
+			}, {
+				i(35514),	-- Frostscythe of Lord Ahune [Level 70]
+				i(35507),	-- Amulet of Bitter Hatred [Level 70]
+				i(35509),	-- Amulet of Glacial Tranquility [Level 70]
+				i(35508),	-- Choker of the Arctic Flow [Level 70]
+				i(35511),	-- Hailstone Pendant [Level 70]
+				i(35497),	-- Cloak of the Frigid Winds [Level 70]
+				i(35496),	-- Icebound Cloak [Level 70]
+				i(35494),	-- Shroud of Winter's Chill [Level 70]
+				i(35495),	-- The Frost Lord's War Cloak [Level 70]
+			})),
+			{ HUGE_SNOWBALL }, {}),
 	}),
 	-- #if AFTER WRATH
 	n(ACHIEVEMENTS, {
@@ -1016,7 +1093,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["timeline"] = { ADDED_1_11_1 },
 				}),
 				-- #endif
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(9386, {	-- A Light in Dark Places
@@ -1047,7 +1124,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(3),	-- Flame of Stratholme
 				objective(4),	-- Flame of the Scholomance
 				-- #endif
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(9365, {	-- A Thief's Reward (A)
@@ -1114,7 +1191,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "i", 35237 },	-- Orb of the Crawler
 					["coord"] = { 9.1, 12.5, ASHENVALE },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(9389, {	-- Flickering Flames in Eastern Kingdoms
@@ -1265,7 +1342,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 				i(35725),	-- Summer Incense (QI!)
 			},
 		}),
@@ -1275,7 +1352,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 				i(35725),	-- Summer Incense (QI!)
 			},
 		}),
@@ -1329,7 +1406,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Catch 4 torches in a row.
 					["provider"] = { "i", 34833 },	-- Unlit Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11925, {	-- More Torch Catching (H)
@@ -1343,7 +1420,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Catch 4 torches in a row.
 					["provider"] = { "i", 34833 },	-- Unlit Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11921, {	-- More Torch Tossing (A)
@@ -1357,7 +1434,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11926, {	-- More Torch Tossing (H)
@@ -1371,7 +1448,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		{	-- More Torch Tossing
@@ -1391,7 +1468,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		},
 		q(11882, {	-- Playing with Fire (A)
@@ -1400,10 +1477,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #if AFTER 11.1.7
 				240483,	-- Flame Eater
 				-- #endif
+				-- #if AFTER 12.0.7
+				248988,	-- Flame Eater
+				-- #endif
 			},
-			-- #if AFTER 11.1.7
-			["coord"] = { 47.2, 53.6, DORNOGAL },
-			-- #endif
+			["coords"] = {
+				{ 43.6, 62.2, ELWYNN_FOREST },
+				-- #if AFTER 11.1.7
+				{ 47.2, 53.6, DORNOGAL },
+				-- #endif
+				-- #if AFTER 12.0.7
+				{ 48.6, 80.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				-- #endif
+			},
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -1413,10 +1499,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #if AFTER 11.1.7
 				240483,	-- Flame Eater
 				-- #endif
+				-- #if AFTER 12.0.7
+				248988,	-- Flame Eater
+				-- #endif
 			},
-			-- #if AFTER 11.1.7
-			["coord"] = { 47.2, 53.6, DORNOGAL },
-			-- #endif
+			["coords"] = {
+				{ 52.4, 47.2, DUROTAR },
+				-- #if AFTER 11.1.7
+				{ 47.2, 53.6, DORNOGAL },
+				-- #endif
+				-- #if AFTER 12.0.7
+				{ 48.6, 80.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				-- #endif
+			},
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 		}),
@@ -1573,7 +1668,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26116 },	-- Frostwave Lieutenant
 					["coord"] = { 9.6, 12.2, ASHENVALE },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11947, {	-- Striking Back [Level 32, Desolace]
@@ -1596,7 +1691,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26178 },	-- Hailstone Lieutenant
 					["coord"] = { 39.2, 30.6, DESOLACE },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11948, {	-- Striking Back [Level 43, Stranglethorn Vale]
@@ -1631,7 +1726,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						-- #endif
 					},
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11952, {	-- Striking Back [Level 51, Burning Steppes]
@@ -1654,7 +1749,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26214 },	-- Frigid Lieutenant
 					["coord"] = { 15.6, 33.2, BURNING_STEPPES },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11953, {	-- Striking Back [Level 60, Silithus]
@@ -1677,7 +1772,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26215 },	-- Glacial Lieutenant
 					["coord"] = { 69.0, 20.6, SILITHUS },
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11954, {	-- Striking Back [Level 67, Hellfire Peninsula]
@@ -1703,7 +1798,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						{ 84.2, 53.4, HELLFIRE_PENINSULA },
 					},
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(9367, {	-- The Festival of Fire (A)
@@ -1720,7 +1815,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["coord"] = { 56.6, 92.3, TELDRASSIL },
 				}),
 				i(23246),	-- Fiery Festival Brew
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 			-- #endif
 			["qg"] = FESTIVAL_LOREMASTER_ID,
@@ -1746,7 +1841,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["coord"] = { 62.6, 66.9, UNDERCITY },
 				}),
 				i(23246),	-- Fiery Festival Brew
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 			-- #endif
 			["qg"] = FESTIVAL_TALESPINNER_ID,
@@ -1805,7 +1900,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11971, {	-- The Spinner of Summer Tales (H)
@@ -1853,7 +1948,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["races"] = HORDE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(92185, {	-- The Tale of the Frost Lord
@@ -1879,7 +1974,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "i", 34833 },	-- Unlit Torches
 				}),
 				i(34599),	-- Juggling Torch
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11923, {	-- Torch Catching (H)
@@ -1893,7 +1988,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "i", 34833 },	-- Unlit Torches
 				}),
 				i(34599),	-- Juggling Torch
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11731, {	-- Torch Tossing (A)
@@ -1909,7 +2004,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(11922, {	-- Torch Tossing (H)
@@ -1925,7 +2020,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
 				}),
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 		}),
 		q(82087, {	-- Torch Tossing (A)
@@ -1934,7 +2029,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { ADDED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
-			["groups"] = { i(23247) },	-- Burning Blossom
+			["groups"] = { i(BURNING_BLOSSOM) },
 		}),
 		q(82105, {	-- Torch Tossing (H)
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
@@ -1942,7 +2037,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { ADDED_10_2_7 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
-			["groups"] = { i(23247) },	-- Burning Blossom
+			["groups"] = { i(BURNING_BLOSSOM) },
 		}),
 		q(11886, {	-- Unusual Activity
 			["qg"] = EARTHEN_RING_ELDER_ID,
@@ -1999,7 +2094,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["timeline"] = { REMOVED_2_4_0 },
 				}),
 				-- #if BEFORE TBC
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 				-- #endif
 			},
 		}),
@@ -2022,7 +2117,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #if BEFORE 2.4.0.7994
 				i(23324),	-- Mantle of the Fire Festival
 				-- #endif
-				i(23247),	-- Burning Blossom
+				i(BURNING_BLOSSOM),
 			},
 			-- #endif
 			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
@@ -2766,11 +2861,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(11812, {	-- Honor the Flame — Desolace
 					["qg"] = 25894,	-- Desolace Flame Warden
 					["coords"] = {
-						-- #if AFTER CATA
 						{ 65.0, 17.0, DESOLACE },
-						-- #else
 						{ 66.1, 17.1, DESOLACE },
-						-- #endif
 					},
 				}),
 				honortheflame(13487, {	-- Honor the Flame — Dragonblight
@@ -3126,11 +3218,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(11847, {	-- Honor the Flame — Dustwallow Marsh
 					["qg"] = 25930,	-- Dustwallow Marsh Flame Keeper
 					["coords"] = {
-						-- #if AFTER CATA
 						{ 33.0, 30.0, DUSTWALLOW_MARSH },
-						-- #else
 						{ 33.4, 30.9, DUSTWALLOW_MARSH },
-						-- #endif
 					},
 				}),
 				honortheflame(11848, {	-- Honor the Flame — Eversong Woods
@@ -3158,11 +3247,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(11851, {	-- Honor the Flame — Hellfire Peninsula
 					["qg"] = 25934,	-- Hellfire Peninsula Flame Keeper
 					["coords"] = {
-						-- #if AFTER CATA
 						{ 55.0, 40.0, HELLFIRE_PENINSULA },
-						-- #else
 						{ 57.1, 42.0, HELLFIRE_PENINSULA },
-						-- #endif
 					},
 				}),
 				honortheflame(11853, {	-- Honor the Flame — Hillsbrad Foothills
@@ -3518,7 +3604,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(92558, {	-- Honor the Flame - Voidstorm
 					["qg"] = 252194,	-- Voidstorm Void Flame Guardian
-					["coord"] = { 55.7, 70.2, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 53.7, 70.2, MAP.MIDNIGHT.VOIDSTORM },
 					["timeline"] = { ADDED_12_0_7 },
 				}),
 				honortheflame(92559, {	-- Honor the Flame - Harandar
@@ -3592,7 +3678,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MID, {
 		applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE_FESTIVAL_HEADER, {
 			n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
-				q(97111),	-- Looted 12.0.7 cosmetic/mount from the bag
 			})),
 		})),
 	}),

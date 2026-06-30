@@ -1291,7 +1291,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
-				-- #if NOT ANYCLASSIC
 				q(5636, {	-- Desperate Prayer
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
@@ -1316,7 +1315,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				-- #endif
 				q(2561, {	-- Druid of the Claw
 					["sourceQuest"] = 2541,	-- The Sleeping Druid
 					["qg"] = 7317,	-- Oben Rageclaw

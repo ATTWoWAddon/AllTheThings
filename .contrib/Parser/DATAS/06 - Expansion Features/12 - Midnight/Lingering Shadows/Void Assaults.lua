@@ -465,7 +465,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									264787,	-- Magister Umbric
 									269814,	-- Magister Umbric
 								},
-								["lockCriteria"] = { 1, "questID", 96238 },	-- Return to the Omnium
+								["altQuests"] = { 96238 },	-- Return to the Omnium
 								["coord"] = { 62.5, 62.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 							}),
 							q(96238, {	-- Return to the Omnium
@@ -474,7 +474,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									96231,	-- Unravelling the Wards
 								},
 								["qg"] = 264944,	-- Grand Magister Rommath
-								["lockCriteria"] = { 1, "questID", 96232 },	-- Return to the Omnium
+								["altQuests"] = { 96232 },	-- Return to the Omnium
 								["coord"] = { 59.0, 59.3, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 							}),
 							q(96233, {	-- The Omnium Reawakens

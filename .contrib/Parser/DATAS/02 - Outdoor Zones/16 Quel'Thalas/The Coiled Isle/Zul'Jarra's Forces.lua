@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				n(QUESTS, sharedData({
 					["provider"] = { "n", 268228 },	-- Jan'sari the Watchful <Renown Quartermaster>
-					["coord"] = { 58.8, 45.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["coord"] = { 58.8, 45.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}, bubbleDownRep(FACTION_ZULJARRAS_FORCES, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --
@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 4 --
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
+						q(97670),	-- A Handful of Voidlight Marl
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
@@ -46,7 +47,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}))),
 				n(VENDORS, {
 					n(268228, {	-- Jan'sari the Watchful <Renown Quartermaster>
-						["coord"] = { 58.8, 45.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["coord"] = { 58.8, 45.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = bubbleDownRep(FACTION_ZULJARRAS_FORCES, {
 							{		-- RENOWN 1 --
 							}, {	-- RENOWN 2 --

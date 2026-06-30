@@ -83,7 +83,7 @@ local function GetAutomaticHeaderData(id, type)
 		local name = obj.name or obj.link;
 		return { name = not IsRetrieving(name) and name or nil, icon = obj.icon };
 	end
-	app.print("Failed finding object/function for automatic header",type,id);
+	app.report("Failed finding object/function for automatic header",type,id);
 end
 -- Allows for directly accessing the Automatic Header Name logic for a specific ID/Type combination
 app.GetAutomaticHeaderData = GetAutomaticHeaderData;
@@ -99,7 +99,7 @@ local function CacheInfo(t, field)
 			_t[key] = value;
 		end
 	else
-		app.print("FAILED TO FIND AUTO HEADER DATA", id, type);
+		app.report("FAILED TO FIND AUTO HEADER DATA", id, type);
 	end
 	-- determine an icon from any providers otherwise
 	if not _t.icon then

@@ -593,7 +593,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if NOT ANYCLASSIC
 				q(5675, {	-- Elune's Grace [Ironforge]
 					["altQuests"] = {
 						5672,	-- Elune's Grace [Darnassus]
@@ -614,8 +613,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				-- #endif
-				-- #if NOT ANYCLASSIC
 				q(5639, {	-- Desperate Prayer
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
@@ -640,7 +637,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				-- #endif
 				q(2039, {	-- Find Bingles
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.4, 50.6, IRONFORGE },

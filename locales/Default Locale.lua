@@ -118,7 +118,7 @@ local L = {
 	},
 };
 L = setmetatable(L, { __index = function(t, k)
-	app.print(("MISSING LOCALE: %s"):format(k))
+	app.report("MISSING LOCALE",k)
 	rawset(t, k, UNKNOWN)
 	return UNKNOWN
 end })

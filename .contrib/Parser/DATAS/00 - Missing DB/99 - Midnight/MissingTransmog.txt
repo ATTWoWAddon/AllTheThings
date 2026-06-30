@@ -34731,31 +34731,6 @@ s(114995)/i(183782),	-- Deathguard's Chestplate
 s(114997)/i(183783),	-- Deathguard's Helm
 s(114999)/i(183784),	-- Plaguebringer's Robe
 s(115001)/i(183785),	-- Deathguard's Pauldrons
-9.0.1.35755
-s(115285)/i(178415),	-- zzzRated - Cloth Robe \\ Rated - Cloth Robe
-s(115286)/i(178420),	-- zzzRated - Cloth Treads \\ Rated - Cloth Treads
-s(115287)/i(178425),	-- zzzRated - Cloth Gloves \\ Rated - Cloth Gloves
-s(115288)/i(178427),	-- zzzRated - Cloth Hood \\ Rated - Cloth Hood
-s(115289)/i(178431),	-- zzzRated - Cloth Leggings \\ Rated - Cloth Leggings
-s(115290)/i(178436),	-- zzzRated - Cloth Mantle \\ Rated - Cloth Mantle
-s(115291)/i(178439),	-- zzzRated - Cloth Cord \\ Rated - Cloth Cord
-s(115292)/i(178443),	-- zzzRated - Cloth Wristwraps \\ Rated - Cloth Wristwraps
-s(115309)/i(178418),	-- zzzRated - Leather Vest \\ Rated - Leather Vest
-s(115310)/i(178422),	-- zzzRated - Leather Boots \\ Rated - Leather Boots
-s(115311)/i(178423),	-- zzzRated - Leather Gloves \\ Rated - Leather Gloves
-s(115312)/i(178429),	-- zzzRated - Leather Helm \\ Rated - Leather Helm
-s(115313)/i(178433),	-- zzzRated - Leather Breeches \\ Rated - Leather Breeches
-s(115314)/i(178434),	-- zzzRated - Leather Spaulders \\ Rated - Leather Spaulders
-s(115315)/i(178441),	-- zzzRated - Leather Belt \\ Rated - Leather Belt
-s(115316)/i(178446),	-- zzzRated - Leather Wristwraps \\ Rated - Leather Wristwraps
-s(115333)/i(178417),	-- zzzRated - Mail Vest \\ Rated - Mail Vest
-s(115334)/i(178421),	-- zzzRated - Mail Sabatons \\ Rated - Mail Sabatons
-s(115335)/i(178426),	-- zzzRated - Mail Gauntlets \\ Rated - Mail Gauntlets
-s(115336)/i(178428),	-- zzzRated - Mail Helm \\ Rated - Mail Helm
-s(115337)/i(178432),	-- zzzRated - Mail Leggings \\ Rated - Mail Leggings
-s(115338)/i(178437),	-- zzzRated - Mail Monnion \\ Rated - Mail Monnion
-s(115339)/i(178440),	-- zzzRated - Mail Belt \\ Rated - Mail Belt
-s(115340)/i(178445),	-- zzzRated - Mail Wristwraps \\ Rated - Mail Wristwraps
 9.0.2.35978
 s(115650)/i(182067),	-- Antique Duelist's Rapier
 s(115651)/i(182043),	-- Antique Necromancer's Staff
@@ -34767,196 +34742,11 @@ s(115718)/i(184567),	-- Hand-Knitted Steward Sweater
 9.1.0.38312
 s(115880)/i(184826),	-- Random Package Ammo
 s(115881)/i(184826),	-- Random Package Ammo
-s(145865)/i(186355),	-- Wristwraps of Anguish \\ PH - DNT - 9.1 Raid Cloth Bracers 3
-s(145866)/i(186355),	-- Wristwraps of Anguish \\ PH - DNT - 9.1 Raid Cloth Bracers 3
-s(145867)/i(186355),	-- Wristwraps of Anguish \\ PH - DNT - 9.1 Raid Cloth Bracers 3
-s(145873)/i(186357),	-- Sorrowful Trousers \\ PH - DNT - 9.1 Raid Cloth Pants 3
-s(145874)/i(186357),	-- Sorrowful Trousers \\ PH - DNT - 9.1 Raid Cloth Pants 3
-s(145875)/i(186357),	-- Sorrowful Trousers \\ PH - DNT - 9.1 Raid Cloth Pants 3
-s(145885)/i(186360),	-- Tormented Soul Harness \\ PH - DNT - 9.1 Raid Leather Belt 3
-s(145886)/i(186360),	-- Tormented Soul Harness \\ PH - DNT - 9.1 Raid Leather Belt 3
-s(145887)/i(186360),	-- Tormented Soul Harness \\ PH - DNT - 9.1 Raid Leather Belt 3
-s(145889)/i(186361),	-- Grips of Unleashed Suffering \\ PH - DNT - 9.1 Raid Leather Gloves 3
-s(145890)/i(186361),	-- Grips of Unleashed Suffering \\ PH - DNT - 9.1 Raid Leather Gloves 3
-s(145891)/i(186361),	-- Grips of Unleashed Suffering \\ PH - DNT - 9.1 Raid Leather Gloves 3
-s(145909)/i(186366),	-- Stygian Chain Greaves \\ PH - DNT - 9.1 Raid Mail Boots 3
-s(145910)/i(186366),	-- Stygian Chain Greaves \\ PH - DNT - 9.1 Raid Mail Boots 3
-s(145911)/i(186366),	-- Stygian Chain Greaves \\ PH - DNT - 9.1 Raid Mail Boots 3
-s(145917)/i(186368),	-- Mor'geth's Gauntlets of Damnation \\ PH - DNT - 9.1 Raid Mail Gloves 3
-s(145918)/i(186368),	-- Mor'geth's Gauntlets of Damnation \\ PH - DNT - 9.1 Raid Mail Gloves 3
-s(145919)/i(186368),	-- Mor'geth's Gauntlets of Damnation \\ PH - DNT - 9.1 Raid Mail Gloves 3
-s(145925)/i(186370),	-- Caged Legplates \\ PH - DNT - 9.1 Raid Plate Pants 3
-s(145926)/i(186370),	-- Caged Legplates \\ PH - DNT - 9.1 Raid Plate Pants 3
-s(145927)/i(186370),	-- Caged Legplates \\ PH - DNT - 9.1 Raid Plate Pants 3
-s(145933)/i(186372),	-- Tormentor's Greatbelt \\ PH - DNT - 9.1 Raid Plate Belt 3
-s(145934)/i(186372),	-- Tormentor's Greatbelt \\ PH - DNT - 9.1 Raid Plate Belt 3
-s(145935)/i(186372),	-- Tormentor's Greatbelt \\ PH - DNT - 9.1 Raid Plate Belt 3
 s(145966)/i(186398),	-- Edge of Night \\ DNT - PH - 9.1 Raid Dagger Agi (Sylvanas)
-9.1.0.38950
-s(146697)/i(187534),	-- Korthite Crystal Waistguard
-s(146698)/i(187534),	-- Korthite Crystal Waistguard
-s(146699)/i(187534),	-- Korthite Crystal Waistguard
-s(146701)/i(187535),	-- Attendant Scholar's Waistcord
-s(146702)/i(187535),	-- Attendant Scholar's Waistcord
-s(146703)/i(187535),	-- Attendant Scholar's Waistcord
-s(146705)/i(187536),	-- Prototype Guardian Grips
-s(146706)/i(187536),	-- Prototype Guardian Grips
-s(146707)/i(187536),	-- Prototype Guardian Grips
-s(146709)/i(187537),	-- Subtle Mortality Manipulators
-s(146710)/i(187537),	-- Subtle Mortality Manipulators
-s(146711)/i(187537),	-- Subtle Mortality Manipulators
-s(146713)/i(187538),	-- Gloves of Advancing Death
-s(146714)/i(187538),	-- Gloves of Advancing Death
-s(146715)/i(187538),	-- Gloves of Advancing Death
-s(146717)/i(187539),	-- Gauntlets of Death's Guardian
-s(146718)/i(187539),	-- Gauntlets of Death's Guardian
-s(146719)/i(187539),	-- Gauntlets of Death's Guardian
-s(146721)/i(187540),	-- Cincture of Enveloping Death
-s(146722)/i(187540),	-- Cincture of Enveloping Death
-s(146723)/i(187540),	-- Cincture of Enveloping Death
-s(146725)/i(187541),	-- Chain of Encircling Death
-s(146726)/i(187541),	-- Chain of Encircling Death
-s(146727)/i(187541),	-- Chain of Encircling Death
 9.2.0.41089
 s(115373)/i(184123),	-- Sinful Gladiator's Cape
 s(115524)/i(184232),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Copper
 s(115525)/i(184231),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Blue
-s(146215)/i(186780),	-- Cosmic Gladiator's Cloak
-s(146216)/i(186780),	-- Cosmic Gladiator's Cloak
-s(146217)/i(186781),	-- Cosmic Gladiator's Drape
-s(146218)/i(186781),	-- Cosmic Gladiator's Drape
-s(146219)/i(186782),	-- Cosmic Gladiator's Shawl
-s(146220)/i(186782),	-- Cosmic Gladiator's Shawl
-s(146221)/i(186783),	-- Cosmic Gladiator's Greatcloak
-s(146222)/i(186783),	-- Cosmic Gladiator's Greatcloak
-s(146223)/i(186790),	-- Cosmic Gladiator's Silk Robe
-s(146224)/i(186790),	-- Cosmic Gladiator's Silk Robe
-s(146225)/i(186791),	-- Cosmic Gladiator's Silk Vestments
-s(146226)/i(186791),	-- Cosmic Gladiator's Silk Vestments
-s(146227)/i(186792),	-- Cosmic Gladiator's Silk Slippers
-s(146228)/i(186792),	-- Cosmic Gladiator's Silk Slippers
-s(146229)/i(186793),	-- Cosmic Gladiator's Silk Treads
-s(146230)/i(186793),	-- Cosmic Gladiator's Silk Treads
-s(146231)/i(186794),	-- Cosmic Gladiator's Silk Gloves
-s(146232)/i(186794),	-- Cosmic Gladiator's Silk Gloves
-s(146233)/i(186795),	-- Cosmic Gladiator's Silk Handwraps
-s(146234)/i(186795),	-- Cosmic Gladiator's Silk Handwraps
-s(146235)/i(186796),	-- Cosmic Gladiator's Silk Hood
-s(146236)/i(186796),	-- Cosmic Gladiator's Silk Hood
-s(146237)/i(186797),	-- Cosmic Gladiator's Silk Guise
-s(146238)/i(186797),	-- Cosmic Gladiator's Silk Guise
-s(146239)/i(186798),	-- Cosmic Gladiator's Silk Leggings
-s(146240)/i(186798),	-- Cosmic Gladiator's Silk Leggings
-s(146241)/i(186799),	-- Cosmic Gladiator's Silk Trousers
-s(146242)/i(186799),	-- Cosmic Gladiator's Silk Trousers
-s(146243)/i(186800),	-- Cosmic Gladiator's Silk Mantle
-s(146244)/i(186800),	-- Cosmic Gladiator's Silk Mantle
-s(146245)/i(186801),	-- Cosmic Gladiator's Silk Amice
-s(146246)/i(186801),	-- Cosmic Gladiator's Silk Amice
-s(146247)/i(186802),	-- Cosmic Gladiator's Silk Cord
-s(146248)/i(186802),	-- Cosmic Gladiator's Silk Cord
-s(146249)/i(186803),	-- Cosmic Gladiator's Silk Belt
-s(146250)/i(186803),	-- Cosmic Gladiator's Silk Belt
-s(146251)/i(186804),	-- Cosmic Gladiator's Silk Wristwraps
-s(146252)/i(186804),	-- Cosmic Gladiator's Silk Wristwraps
-s(146253)/i(186805),	-- Cosmic Gladiator's Silk Armbands
-s(146254)/i(186805),	-- Cosmic Gladiator's Silk Armbands
-s(146255)/i(186806),	-- Cosmic Gladiator's Leather Vest
-s(146256)/i(186806),	-- Cosmic Gladiator's Leather Vest
-s(146257)/i(186807),	-- Cosmic Gladiator's Leather Jerkin
-s(146258)/i(186807),	-- Cosmic Gladiator's Leather Jerkin
-s(146259)/i(186808),	-- Cosmic Gladiator's Leather Boots
-s(146260)/i(186808),	-- Cosmic Gladiator's Leather Boots
-s(146261)/i(186809),	-- Cosmic Gladiator's Leather Treads
-s(146262)/i(186809),	-- Cosmic Gladiator's Leather Treads
-s(146263)/i(186810),	-- Cosmic Gladiator's Leather Gloves
-s(146264)/i(186810),	-- Cosmic Gladiator's Leather Gloves
-s(146265)/i(186811),	-- Cosmic Gladiator's Leather Grips
-s(146266)/i(186811),	-- Cosmic Gladiator's Leather Grips
-s(146267)/i(186812),	-- Cosmic Gladiator's Leather Helm
-s(146268)/i(186812),	-- Cosmic Gladiator's Leather Helm
-s(146269)/i(186813),	-- Cosmic Gladiator's Leather Mask
-s(146270)/i(186813),	-- Cosmic Gladiator's Leather Mask
-s(146271)/i(186814),	-- Cosmic Gladiator's Leather Breeches
-s(146272)/i(186814),	-- Cosmic Gladiator's Leather Breeches
-s(146273)/i(186815),	-- Cosmic Gladiator's Leather Legwraps
-s(146274)/i(186815),	-- Cosmic Gladiator's Leather Legwraps
-s(146275)/i(186816),	-- Cosmic Gladiator's Leather Spaulders
-s(146276)/i(186816),	-- Cosmic Gladiator's Leather Spaulders
-s(146277)/i(186817),	-- Cosmic Gladiator's Leather Shoulderpads
-s(146278)/i(186817),	-- Cosmic Gladiator's Leather Shoulderpads
-s(146279)/i(186818),	-- Cosmic Gladiator's Leather Belt
-s(146280)/i(186818),	-- Cosmic Gladiator's Leather Belt
-s(146281)/i(186819),	-- Cosmic Gladiator's Leather Strap
-s(146282)/i(186819),	-- Cosmic Gladiator's Leather Strap
-s(146283)/i(186820),	-- Cosmic Gladiator's Leather Wristwraps
-s(146284)/i(186820),	-- Cosmic Gladiator's Leather Wristwraps
-s(146285)/i(186821),	-- Cosmic Gladiator's Leather Wristguards
-s(146286)/i(186821),	-- Cosmic Gladiator's Leather Wristguards
-s(146287)/i(186822),	-- Cosmic Gladiator's Chain Vest
-s(146288)/i(186822),	-- Cosmic Gladiator's Chain Vest
-s(146289)/i(186823),	-- Cosmic Gladiator's Chain Tunic
-s(146290)/i(186823),	-- Cosmic Gladiator's Chain Tunic
-s(146291)/i(186824),	-- Cosmic Gladiator's Chain Sabatons
-s(146292)/i(186824),	-- Cosmic Gladiator's Chain Sabatons
-s(146293)/i(186825),	-- Cosmic Gladiator's Chain Boots
-s(146294)/i(186825),	-- Cosmic Gladiator's Chain Boots
-s(146295)/i(186826),	-- Cosmic Gladiator's Chain Gauntlets
-s(146296)/i(186826),	-- Cosmic Gladiator's Chain Gauntlets
-s(146297)/i(186827),	-- Cosmic Gladiator's Chain Handguards
-s(146298)/i(186827),	-- Cosmic Gladiator's Chain Handguards
-s(146299)/i(186828),	-- Cosmic Gladiator's Chain Helm
-s(146300)/i(186828),	-- Cosmic Gladiator's Chain Helm
-s(146301)/i(186829),	-- Cosmic Gladiator's Chain Faceguard
-s(146302)/i(186829),	-- Cosmic Gladiator's Chain Faceguard
-s(146303)/i(186830),	-- Cosmic Gladiator's Chain Leggings
-s(146304)/i(186830),	-- Cosmic Gladiator's Chain Leggings
-s(146305)/i(186831),	-- Cosmic Gladiator's Chain Breeches
-s(146306)/i(186831),	-- Cosmic Gladiator's Chain Breeches
-s(146307)/i(186832),	-- Cosmic Gladiator's Chain Monnion
-s(146308)/i(186832),	-- Cosmic Gladiator's Chain Monnion
-s(146309)/i(186833),	-- Cosmic Gladiator's Chain Shoulderguard
-s(146310)/i(186833),	-- Cosmic Gladiator's Chain Shoulderguard
-s(146311)/i(186834),	-- Cosmic Gladiator's Chain Belt
-s(146312)/i(186834),	-- Cosmic Gladiator's Chain Belt
-s(146313)/i(186835),	-- Cosmic Gladiator's Chain Girdle
-s(146314)/i(186835),	-- Cosmic Gladiator's Chain Girdle
-s(146315)/i(186836),	-- Cosmic Gladiator's Chain Wristguards
-s(146316)/i(186836),	-- Cosmic Gladiator's Chain Wristguards
-s(146317)/i(186837),	-- Cosmic Gladiator's Chain Bracers
-s(146318)/i(186837),	-- Cosmic Gladiator's Chain Bracers
-s(146319)/i(186838),	-- Cosmic Gladiator's Plate Chestguard
-s(146320)/i(186838),	-- Cosmic Gladiator's Plate Chestguard
-s(146321)/i(186839),	-- Cosmic Gladiator's Plate Chestplate
-s(146322)/i(186839),	-- Cosmic Gladiator's Plate Chestplate
-s(146323)/i(186840),	-- Cosmic Gladiator's Plate Warboots
-s(146324)/i(186840),	-- Cosmic Gladiator's Plate Warboots
-s(146325)/i(186841),	-- Cosmic Gladiator's Plate Stompers
-s(146326)/i(186841),	-- Cosmic Gladiator's Plate Stompers
-s(146327)/i(186842),	-- Cosmic Gladiator's Plate Gauntlets
-s(146328)/i(186842),	-- Cosmic Gladiator's Plate Gauntlets
-s(146329)/i(186843),	-- Cosmic Gladiator's Plate Handguards
-s(146330)/i(186843),	-- Cosmic Gladiator's Plate Handguards
-s(146331)/i(186844),	-- Cosmic Gladiator's Plate Helm
-s(146332)/i(186844),	-- Cosmic Gladiator's Plate Helm
-s(146333)/i(186845),	-- Cosmic Gladiator's Plate Helmet
-s(146334)/i(186845),	-- Cosmic Gladiator's Plate Helmet
-s(146335)/i(186846),	-- Cosmic Gladiator's Plate Legguards
-s(146336)/i(186846),	-- Cosmic Gladiator's Plate Legguards
-s(146337)/i(186847),	-- Cosmic Gladiator's Plate Wargreaves
-s(146338)/i(186847),	-- Cosmic Gladiator's Plate Wargreaves
-s(146339)/i(186848),	-- Cosmic Gladiator's Plate Shoulders
-s(146340)/i(186848),	-- Cosmic Gladiator's Plate Shoulders
-s(146341)/i(186849),	-- Cosmic Gladiator's Plate Pauldrons
-s(146342)/i(186849),	-- Cosmic Gladiator's Plate Pauldrons
-s(146343)/i(186850),	-- Cosmic Gladiator's Plate Girdle
-s(146344)/i(186850),	-- Cosmic Gladiator's Plate Girdle
-s(146345)/i(186851),	-- Cosmic Gladiator's Plate Greatbelt
-s(146346)/i(186851),	-- Cosmic Gladiator's Plate Greatbelt
-s(146347)/i(186852),	-- Cosmic Gladiator's Plate Wristguards
-s(146348)/i(186852),	-- Cosmic Gladiator's Plate Wristguards
-s(146349)/i(186853),	-- Cosmic Gladiator's Plate Vambraces
-s(146350)/i(186853),	-- Cosmic Gladiator's Plate Vambraces
 s(165479)/i(188091),	-- [PH] Copy Korthian Keeper's Buckler
 s(165480)/i(188092),	-- [PH] Copy Korthian Anima Vessel
 s(165481)/i(188093),	-- [PH] Copy Korthian Energy Bow
@@ -35367,81 +35157,16 @@ s(192438)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 s(192439)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 10.2.6.53840
 s(197334)/i(216027),	-- Draconic Gladiator's Silk Blouse
-11.0.0.54311
-s(219604)/i(222813),	-- Adaptive Delver's Shawl
-s(219648)/i(222493),	-- Artisan Leatherworker's Toolset
-11.0.0.54361
-s(220382)/i(224467),	-- Forgotten Axe
 12.0.0.63534
-s(287077)/i(237828),	-- Spellbreaker's March
-s(287078)/i(237829),	-- Spellbreaker's Shelter
-s(287079)/i(237830),	-- Spellbreaker's Girdle
-s(287081)/i(237832),	-- Spellbreaker's Cover
-s(287082)/i(237833),	-- Spellbreaker's Legguards
-s(287083)/i(237834),	-- Spellbreaker's Bracers
-s(287084)/i(237835),	-- Spellbreaker's Mantle
-s(287085)/i(237836),	-- Spellbreaker's Resolve
-s(287157)/i(237917),	-- Blood-Tempered Greaves
-s(287158)/i(237918),	-- Blood-Tempered Chestplate
-s(287159)/i(237919),	-- Blood-Tempered Greatbelt
-s(287161)/i(237921),	-- Blood-Tempered Basinet
-s(287162)/i(237922),	-- Blood-Tempered Leggings
-s(287163)/i(237923),	-- Blood-Tempered Bracers
-s(287164)/i(237924),	-- Blood-Tempered Pauldrons
-s(287165)/i(237925),	-- Blood-Tempered Gauntlets
-s(287208)/i(237947),	-- Thalassian Leatherworker's Toolset
-s(292216)/i(244463),	-- Murder Row Fleet Feet
 s(295608)/i(248577),	-- Ring of Doubt
 s(295609)/i(248578),	-- Band of Impatience
-s(297855)/i(250456),	-- Wretched Scholar's Gilded Robe
-s(297856)/i(250456),	-- Wretched Scholar's Gilded Robe
-s(297857)/i(250456),	-- Wretched Scholar's Gilded Robe
-s(297859)/i(250457),	-- Devouring Outrider's Chausses
-s(297860)/i(250457),	-- Devouring Outrider's Chausses
-s(297861)/i(250457),	-- Devouring Outrider's Chausses
-s(297863)/i(250458),	-- Host Commander's Casque
-s(297864)/i(250458),	-- Host Commander's Casque
-s(297865)/i(250458),	-- Host Commander's Casque
-s(297867)/i(250459),	-- Bramblestalker's Feathered Cowl
-s(297868)/i(250459),	-- Bramblestalker's Feathered Cowl
-s(297869)/i(250459),	-- Bramblestalker's Feathered Cowl
 s(298430)/i(251904),	-- Crown of the High King
-s(301399)/i(258046),	-- Chakram-Breaker Greatsword
-s(301401)/i(258047),	-- Spire of the Furious Construct
-s(301404)/i(258048),	-- Beakbreaker Scimitar
-s(301407)/i(258049),	-- Viryx's Indomitable Bulwark
-s(301410)/i(258050),	-- Arcanic of the High Sage
-s(301480)/i(258574),	-- Legwraps of Swirling Light
-s(301483)/i(258575),	-- Rigid Scale Greatcloak
-s(301486)/i(258576),	-- Sharpeye Chestguard
-s(301489)/i(258577),	-- Boots of Burning Focus
-s(301492)/i(258578),	-- Lightbinder Shoulderguards
-s(301496)/i(258579),	-- Gutcrusher Greathelm
-s(301498)/i(258580),	-- Bracers of Blazing Light
-s(301501)/i(258581),	-- Bloodfeather Mantle
-s(301504)/i(258582),	-- Rigid Scale Boots
-s(301507)/i(258583),	-- Incarnadine Gauntlets
-s(301510)/i(258584),	-- Lightbinder Treads
-s(301513)/i(258585),	-- Sharpeye Gleam
-s(301516)/i(258586),	-- Bloodfeather Chestguard
-s(301519)/i(258587),	-- Spaulders of Scorching Ray
 s(301830)/i(259029),	-- Shadowguard Intelligence
 12.0.0.63967
 s(303352)/i(264447),	-- Ring of the Threshadon's Heart
 s(303353)/i(264448),	-- Featherwoven Promise Band
-12.0.0.64124
-s(303634)/i(264969),	-- Extinction Voulge
 12.0.0.64228
 s(303985)/i(265814),	-- Noble's Signet Ring
-12.0.1.66013
-s(307643)/i(249335),	-- Imperator's Banner \\ 12.0 Raid - Generic - Cloak
-s(307644)/i(249335),	-- Imperator's Banner \\ 12.0 Raid - Generic - Cloak
-s(307645)/i(249335),	-- Imperator's Banner \\ 12.0 Raid - Generic - Cloak
-s(307646)/i(249335),	-- Imperator's Banner \\ 12.0 Raid - Generic - Cloak
-s(307647)/i(249370),	-- Draconic Nullcape \\ 12.0 Raid - Generic - Cloak
-s(307648)/i(249370),	-- Draconic Nullcape \\ 12.0 Raid - Generic - Cloak
-s(307649)/i(249370),	-- Draconic Nullcape \\ 12.0 Raid - Generic - Cloak
-s(307650)/i(249370),	-- Draconic Nullcape \\ 12.0 Raid - Generic - Cloak
 12.1.0.68209
 s(302222)/i(260586),	--
 s(303640)/i(265068),	--

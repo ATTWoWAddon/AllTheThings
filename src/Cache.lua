@@ -766,7 +766,7 @@ if app.Debugging and app.Version == "[Git]" then
 	cacheObjectID = function(group, objectID)
 		if group.__ignoreCaching then return end
 		if not app.ObjectNames[objectID] then
-			app.print("Object Missing Name ", objectID);
+			app.report("Object Missing Name ", objectID);
 			app.ObjectNames[objectID] = "Object #" .. objectID;
 		end
 		CacheField(group, "objectID", objectID);
@@ -842,7 +842,7 @@ end
 if app.Debugging and app.Version == "[Git]" then
 	cacheHeaderID = function(group, headerID)
 		if not group.type and not app.L.HEADER_NAMES[headerID] then
-			app.print("Header Missing Name ", headerID);
+			app.report("Header Missing Name ", headerID);
 			app.L.HEADER_NAMES[headerID] = "Header #" .. headerID;
 		end
 		CacheField(group, "headerID", headerID);

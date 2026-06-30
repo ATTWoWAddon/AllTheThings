@@ -146,7 +146,7 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 	-- app.PrintDebug("TAXIMAP_OPENED",mapID)
 	if mapID < 0 then return end
 	if app.Contributor and not contains(FlightPathDB.FlightPathMapIDs, mapID) then
-		app.print("Missing FlightPath Map:",app.GetMapName(mapID) or UNKNOWN,mapID)
+		app.report("Missing FlightPath Map:",app.GetMapName(mapID) or UNKNOWN,mapID)
 	end
 	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID)
 	if allNodeData then
@@ -161,7 +161,7 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 			if app.Contributor then
 				local fp = app.SearchForObject(KEY, nodeID, "key")
 				if (not fp or not app.Modules.Filter.Filters.InGame(fp)) then
-					app.print("FlightPath",nodeData.name,"#",nodeID,"is available on the Map",mapID,app.GetMapName(mapID) or UNKNOWN,"but is not found in game for ATT!")
+					app.report("FlightPath",nodeData.name,"#",nodeID,"is available on the Map",mapID,app.GetMapName(mapID) or UNKNOWN,"but is not found in game for ATT!")
 					app.Audio:PlayReportSound();
 				end
 			end
@@ -199,7 +199,9 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 						t[nodeData.nodeID] = nodeData.name
 					end
 				else
-					app.print("No taxi nodes found for map", mapID);
+					-- this sometimes fires for valid taxi maps when the player tries to load the names of other FPs but is in a location
+					-- where Blizzard decides not to return valid data, OR the player/character has not "unlocked" FPs for that map yet
+					app.PrintDebug("No taxi nodes found for map", mapID);
 				end
 			end
 

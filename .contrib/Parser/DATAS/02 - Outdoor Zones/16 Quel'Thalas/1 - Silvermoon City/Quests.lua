@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["timeline"] = { ADDED_12_0_1_SEASONSTART },
 				["coord"] = { 40.2, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
-			-- Crests
+			-- Crests, Season 1
 			q(94430, {	-- Adventuring Gear
 				--["sourceQuests"] = { ??? },	-- ??
 				["provider"] = { "n", 239676 },	-- Vaskarn
@@ -62,6 +62,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["sourceQuests"] = { 94432 },	-- Veteran Equipment
 				["provider"] = { "n", 239676 },	-- Vaskarn
 				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			-- Crests, Season 2
+			q(96633, {	-- Equipment Seminar
+				["provider"] = { "n", 239676 },	-- Vaskarn
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			-- Sparks
@@ -94,22 +100,31 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["timeline"] = { ADDED_12_0_5 },
 			}),
 		}),
-		-- PVP 4 part quest
+		-- PVP 4 Part Quest
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreave
 			["coord"] = { 48.9, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-		},{
-			q(94835, {	-- Early Morning Training: Week 1 of 4
+		}, {
+			-- Season 1
+			q(94835, {	-- Early Morning Training
+				["timeline"] = { ADDED_12_0_1, REMOVED_12_1_0 },
 				["groups"] = { i(267076) },	-- Novice Combatant's Medallion
 			}),
-			q(94836, {	-- Late Night Training: Week 2 of 4
-				["sourceQuests"] = { 94835 },	-- Early Morning Training: Week 1 of 4
+			q(94836, {	-- Late Night Training: Week 1 of 3
+				["sourceQuests"] = { 94835 },	-- Early Morning Training
+				["timeline"] = { ADDED_12_0_1, REMOVED_12_1_0 },
 			}),
-			q(94837, {	-- Midnight Training: Week 3 of 4
-				["sourceQuests"] = { 94836 },	-- Late Night Training: Week 2 of 4
+			q(94837, {	-- Midnight Training: Week 2 of 3
+				["sourceQuests"] = { 94836 },	-- Late Night Training: Week 1 of 3
+				["timeline"] = { ADDED_12_0_1, REMOVED_12_1_0 },
 			}),
-			q(94838, {	-- Final Training: Week 4 of 4
-				["sourceQuests"] = { 94837 },	-- Midnight: Week 3 of 4
+			q(94838, {	-- Final Training: Week 3 of 3
+				["sourceQuests"] = { 94837 },	-- Midnight: Week 2 of 3
+				["timeline"] = { ADDED_12_0_1, REMOVED_12_1_0 },
+			}),
+			-- Season 2
+			q(98234, {	-- Week 1 of 3: Gladiator's Distinction
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 			}),
 		})),
 		-- Dungeons
@@ -129,7 +144,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		})),
 		-- Unity Against the Void (unsure if worth separate file)
 		n(QUESTS, sharedData({
-			--["provider"] = { "n", 256203 },	-- Vaeli
+			--["provider"] = { "n", 256203 },	-- Lady Liadrin
 			["coord"] = { 49.0, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 			["groups"] = {
@@ -140,6 +155,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(254677, {	-- Apex Cache (Season 1)
 					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+				}),
+				i(279527, {	-- Apex Cache (Season 2)
+					["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+				}),
+				i(279575, {	-- Silvermoon Citizen's Emblem
+					["timeline"] = { ADDED_12_1_0 },	-- Exo Note: Unsure if it will be removed at 12.2.0 Launch.
 				}),
 			},
 		}, {
@@ -160,6 +182,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93892),	-- Midnight: Stormarion Assault
 			q(93766),	-- Midnight: World Quests
 			q(95842, { ["timeline"] = { ADDED_12_0_5 } }),	-- Midnight: Void Assaults
+		})),
+		-- Hunt for Xal'atath
+		n(QUESTS, sharedData({
+			["provider"] = { "n", 270645 },	-- Vareesa Windrunner
+			["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["isWeekly"] = true,
+			["timeline"] = { ADDED_12_1_0 },	-- Exo Note: Unsure if it will be removed at 12.2.0 Launch.
+			["groups"] = {
+				i(279576),	-- Void Vestige
+			},
+		}, {
+			q(98172, {	-- Trailing Xal'atath
+				i(279573),	-- Fading Voidwhisper (QI!)
+			}),
+		})),
+		n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+			campsite(155, {	-- Silvermoon City (CAMPSITE!)
+				["cost"] = { { "i", 279575, 4 } },	-- 4x Silvermoon Citizen's Emblem
+			}),
+			campsite(158, {	-- Silvermoon in Void (CAMPSITE!)
+				["cost"] = { { "i", 279576, 4 } },	-- 4x Void Vestige
+			}),
 		})),
 	}),
 }));
