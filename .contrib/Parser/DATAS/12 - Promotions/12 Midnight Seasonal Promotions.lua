@@ -224,7 +224,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(272339, {	-- Umbral Champion's Illustrious Banner (TOY!)
 				["description"] = "Break the Meta: Midnight Season 1\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on July 14th at 8:00 AM PDT and lasts for 1 week.\nFor more details & requirements check out: raider.io/events/break-the-meta-midnight-season-1/event-info-rules",
-				["timeline"] = { ADDED_12_0_7 "removed 12.0.7.99999" },	-- Removed July 21st
+				["timeline"] = { ADDED_12_0_7, "removed 12.0.7.99999" },	-- Removed July 21st
 			}),
 			-- Season 2
 
