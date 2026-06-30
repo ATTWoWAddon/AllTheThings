@@ -505,7 +505,14 @@ local function GetNextItemUnlockBonusID(item)
 end
 api.GetNextItemUnlockBonusID = GetNextItemUnlockBonusID;
 
-local ItemSourceCache = {}
+local ItemSourceCache = setmetatable({}, { __mode = "v" })
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Upgrade sources", function()
+		local entries = 0
+		for _ in pairs(ItemSourceCache) do entries = entries + 1 end
+		return entries, entries, "generated item-source objects"
+	end)
+end
 local function GetUpgrade(t, up)
 	local itemID = t.itemID
 	local upmodID = floor(up);
@@ -550,6 +557,9 @@ local function GetUpgrade(t, up)
 	return itemSource
 end
 api.GetUpgrade = GetUpgrade;
+app.AddEventHandler("OnMemoryCleanup", function()
+	wipe(ItemSourceCache)
+end)
 
 -- Returns the different and upgraded version of 't' (via 'up' field only)
 local function HasUpgrade(t)
@@ -654,7 +664,7 @@ local function UpdateUpgrades()
 	wipe(UpgradeSources)
 	-- Get all up entries
 	for up,refs in pairs(app.SearchForFieldContainer("up")) do
-		Runner.Run(UpdateUpgradeGroups, refs)
+		Runner.Run(UpdateUpgradeGroups, app.GetCachedFieldResults(refs, true))
 	end
 
 	-- Any re-try updates can try faster

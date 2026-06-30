@@ -58,6 +58,13 @@ end
 
 -- Search Results Lib
 local searchCache, working = {}, nil;
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Retrieval search", function()
+		local entries = 0
+		for _ in pairs(searchCache) do entries = entries + 1 end
+		return entries, entries, "cached search roots"
+	end)
+end
 app.GetCachedData = function(cacheKey, method, ...)
 	if IsRetrieving(cacheKey) then return; end
 	local cache = searchCache[cacheKey];
@@ -85,3 +92,4 @@ app.AddEventHandler("OnThingCollected", WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", WipeSearchCache);
 app.AddEventHandler("OnSettingsRefreshed", WipeSearchCache);
 app.AddEventHandler("Fill.RefreshFillers", WipeSearchCache)
+app.AddEventHandler("OnMemoryCleanup", WipeSearchCache)

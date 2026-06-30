@@ -444,7 +444,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 					local collected = select(13, GetAchievementInfo(achievementID));
 					if collected ~= charAchievements[achievementID] then
 						local reference;
-						for i,o in ipairs(container) do
+						for i,o in app.IterateCachedFieldResults(container) do
 							if validAchievementKeys[o.key] then
 								reference = o;
 								break;

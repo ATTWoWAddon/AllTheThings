@@ -3547,11 +3547,24 @@ AddEventFunc("QUEST_COMPLETE", OnQUEST_DETAIL)
 -- PLAYER_SOFT_INTERACT_CHANGED
 -- Whenever we can't find a ObjectID in ATT data, create a cached version of it so we can keep resolved data
 -- instead of always generating new
-local UnknownObjectsCache = setmetatable({}, { __index = function(t, objectID)
-	local o = app.CreateObject(objectID)
-	t[objectID] = o
-	return o
-end})
+local UnknownObjectsCache = setmetatable({}, {
+	__mode = "v",
+	__index = function(t, objectID)
+		local o = app.CreateObject(objectID)
+		t[objectID] = o
+		return o
+	end,
+})
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Unknown objects", function()
+		local entries = 0
+		for _ in pairs(UnknownObjectsCache) do entries = entries + 1 end
+		return entries, entries, "generated object placeholders"
+	end)
+end
+app.AddEventHandler("OnMemoryCleanup", function()
+	wipe(UnknownObjectsCache)
+end)
 local LastSoftInteract = {}
 local RegisterUNIT_SPELLCAST_SENT, UnregisterUNIT_SPELLCAST_SENT
 -- Allows automatically tracking nearby ObjectID's and running check functions on them for data verification

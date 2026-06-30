@@ -855,19 +855,37 @@ end or function(finalized, searchResults, o, oSym)
 		end
 	end
 end
-local ResolveCache = {};
+-- Resolved symlink data can be very large. Keep it only while another live object/window
+-- still references it instead of retaining every resolved result for the entire session.
+local ResolveCache = setmetatable({}, { __mode = "v" });
+local ObjectResolveCache = setmetatable({}, { __mode = "kv" });
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Symlink results", function()
+		local entries, resolvedObjects = 0, 0
+		for _,results in pairs(ResolveCache) do
+			entries = entries + 1
+			if type(results) == "table" then resolvedObjects = resolvedObjects + #results end
+		end
+		for _,results in pairs(ObjectResolveCache) do
+			entries = entries + 1
+			if type(results) == "table" then resolvedObjects = resolvedObjects + #results end
+		end
+		return entries, resolvedObjects, "cached symlinks / resolved objects"
+	end)
+end
 ResolveSymbolicLink = function(o, refonly)
 	local oSym = o.sym
 	if not oSym then return end
 
 	local oHash, oKey = o.hash, o.key;
-	if o.resolved or (oKey and app.ThingKeys[oKey] and ResolveCache[oHash]) then
+	local cached = ObjectResolveCache[o] or (oKey and app.ThingKeys[oKey] and ResolveCache[oHash]);
+	if cached then
 		if refonly then
-			return o.resolved or ResolveCache[oHash]
+			return cached
 		end
-		-- app.PrintDebug(o.resolved and "Object Resolve" or "Cache Resolve",oHash,#(o.resolved or ResolveCache[oHash]))
+		-- app.PrintDebug(ObjectResolveCache[o] and "Object Resolve" or "Cache Resolve",oHash,#cached)
 		local cloned = {};
-		MergeObjects(cloned, o.resolved or ResolveCache[oHash], true);
+		MergeObjects(cloned, cached, true);
 		return cloned;
 	end
 
@@ -929,14 +947,22 @@ ResolveSymbolicLink = function(o, refonly)
 		-- app.PrintDebug("Thing Results",oHash,#cloned)
 		ResolveCache[oHash] = cloned;
 	elseif oKey ~= false then
-		-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
-		o.resolved = cloned;
+		-- Non-Thing symlinks are cached by object with a weak value so closed/rebuilt
+		-- windows do not leave their cloned result trees retained for the whole session.
+		ObjectResolveCache[o] = cloned;
 		-- app.PrintDebug("Object Results",oHash,#cloned)
 	end
 	-- app.PrintDebug("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.")
 	return cloned;
 end
+if app.ProfileWrap then
+	ResolveSymbolicLink = app.ProfileWrap("Symlink.ResolveSymbolicLink", ResolveSymbolicLink)
+end
 app.ResolveSymbolicLink = ResolveSymbolicLink
+app.AddEventHandler("OnMemoryCleanup", function()
+	wipe(ResolveCache)
+	wipe(ObjectResolveCache)
+end)
 
 -- Performance Tracking
 if app.__perf then

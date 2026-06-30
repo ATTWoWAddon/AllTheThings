@@ -24,7 +24,7 @@ local pairs, select, math_floor,tinsert,tremove
 local L, ColorizeRGB, contains, CloneDictionary
 	= app.L, app.Modules.Color.ColorizeRGB, app.contains, app.CloneDictionary
 local GetRelativeField = app.GetRelativeField
-local GetDetailedItemLevelInfo = GetDetailedItemLevelInfo;
+local GetDetailedItemLevelInfo = app.WOWAPI.GetDetailedItemLevelInfo;
 local ArtifactDB = setmetatable(app.ArtifactDB or {}, { __index = function(t,key)
 	app.PrintDebug("ArtifactID not in DB!",key)
 	t[key] = app.EmptyTable

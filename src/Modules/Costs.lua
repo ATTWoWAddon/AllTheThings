@@ -472,17 +472,17 @@ local function UpdateCosts()
 
 	-- Get all itemIDAsCost entries
 	for itemID,refs in pairs(app.GetFieldContainer("itemIDAsCost")) do
-		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
+		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, app.GetCachedFieldResults(refs, true))
 	end
 
 	-- Get all currencyIDAsCost entries
 	for currencyID,refs in pairs(app.GetFieldContainer("currencyIDAsCost")) do
-		UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, false, refs)
+		UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, false, app.GetCachedFieldResults(refs, true))
 	end
 
 	-- Get all spellIDAsCost entries
 	for spellID,refs in pairs(app.GetFieldContainer("spellIDAsCost")) do
-		UpdateRunner.Run(UpdateCostsBySpellID, spellID, refresh, false, refs)
+		UpdateRunner.Run(UpdateCostsBySpellID, spellID, refresh, false, app.GetCachedFieldResults(refs, true))
 	end
 end
 

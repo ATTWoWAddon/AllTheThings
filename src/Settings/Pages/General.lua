@@ -177,7 +177,7 @@ local function presetStore()
 	settings:Set("PresetRestore", settingsTable)
 end
 
-local modeButton = CreateFrame("Button", nil, child, "UIDropDownMenuButtonScriptTemplate")
+local modeButton = CreateFrame("Button", nil, child)
 modeButton:SetSize(24, 24)
 modeButton:SetPoint("LEFT", headerMode, "RIGHT", 1, 0)
 modeButton:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up")

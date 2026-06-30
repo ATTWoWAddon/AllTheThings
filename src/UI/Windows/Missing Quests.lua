@@ -79,9 +79,9 @@ app:CreateWindow("Missing Quests", {
 				end
 
 				for id,questData in pairs(app.GetFieldContainer("questID")) do
-					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] and #questData > 1 and questData[1].u ~= 1 then
+					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] and app.GetCachedFieldCount(questData) > 1 and app.GetFirstCachedFieldResult(questData).u ~= 1 then
 						local shouldAdd = true;
-						for i,quest in ipairs(questData) do
+						for i,quest in app.IterateCachedFieldResults(questData) do
 							if not quest.parent or GetRelativeValue(quest, "u") == 1 or GetRelativeValue(quest, "_hqt") then
 								shouldAdd = false;
 							end

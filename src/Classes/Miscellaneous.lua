@@ -112,7 +112,7 @@ local DynamicCategory_Simple = function(self)
 			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
 			if dynamicValueCache then
 				-- app.PrintDebug("DC:S",self.dynamic,self.dynamic_value,self.dynamic_withsubgroups)
-				for _,source in pairs(dynamicValueCache) do
+				for _,source in app.IterateCachedFieldResults(dynamicValueCache) do
 					-- only pull in actual 'Things' to the simple dynamic group
 					if thingKeys[source.key] and (not searchcriteria or searchcriteria(source)) then
 						-- find the top-level parent of the Thing
@@ -135,7 +135,7 @@ local DynamicCategory_Simple = function(self)
 		else
 			local thingKeys = app.ThingKeys
 			for id,sources in pairs(dynamicCache) do
-				for _,source in pairs(sources) do
+				for _,source in app.IterateCachedFieldResults(sources) do
 					-- only pull in actual 'Things' to the simple dynamic group
 					if thingKeys[source.key] and (not searchcriteria or searchcriteria(source)) then
 						-- find the top-level parent of the Thing

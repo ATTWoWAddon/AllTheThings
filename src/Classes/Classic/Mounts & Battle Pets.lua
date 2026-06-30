@@ -74,7 +74,7 @@ app.AddEventHandler("OnRefreshCollections", function()
 		if IsSpellKnown(id) then
 			char[id] = true;
 		else
-			for i,o in ipairs(g) do
+			for i,o in app.IterateCachedFieldResults(g) do
 				if (o.questID and app.IsQuestFlaggedCompleted(o.questID)) or (o.itemID and GetItemCount(o.itemID, true) > 0) then
 					state = true;
 					break;
@@ -135,7 +135,7 @@ end);
 app.AddEventHandler("OnRefreshCollections", function()
 	local char, none, state = {}, {}, nil
 	for id,g in pairs(app.GetFieldContainer(KEY)) do
-		for i,o in ipairs(g) do
+		for i,o in app.IterateCachedFieldResults(g) do
 			if o.itemID and GetItemCount(o.itemID, true) > 0 then
 				state = true;
 				break;

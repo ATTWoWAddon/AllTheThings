@@ -1555,8 +1555,7 @@ local function PrePopulateAchievementSymlinks()
 		local Run = app.FillRunner.Run
 		local group
 		for achID,groups in pairs(achCache) do
-			for i=1,#groups do
-				group = groups[i]
+			for _,group in app.IterateCachedFieldResults(groups) do
 				if group.__type == "Achievement" and not GetRelativeValue(group, "sourceIgnored") then
 					-- app.PrintDebug("FillAchSym",group.hash)
 					Run(FillSym, group)

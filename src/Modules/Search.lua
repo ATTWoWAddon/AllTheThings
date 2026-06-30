@@ -494,12 +494,12 @@ local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 	-- app.PrintDebug("BSR:Cached",value)
 	if cacheContainer then
 		if value then
-			local sources = cacheContainer[value];
+			local sources = app.GetCachedFieldResults(cacheContainer[value]);
 			BuildClonedHierarchy(sources);
 		else
 			for id,sources in pairs(cacheContainer) do
 				-- each Thing's Sources need to be built
-				BuildClonedHierarchy(sources);
+				BuildClonedHierarchy(app.GetCachedFieldResults(sources));
 			end
 		end
 	end

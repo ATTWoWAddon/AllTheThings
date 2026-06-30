@@ -14,10 +14,22 @@ local SearchFilter;
 
 -- when changing settings, we need the random cache to be cleared since it's determined based on search
 -- results with specific settings
-local searchCache = {};
-app.AddEventHandler("OnRecalculate_NewSettings", function()
+local searchCache = setmetatable({}, { __mode = "v" });
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Random searches", function()
+		local entries, results = 0, 0
+		for _,values in pairs(searchCache) do
+			entries = entries + 1
+			if type(values) == "table" then results = results + #values end
+		end
+		return entries, results, "search modes / result references"
+	end)
+end
+local function WipeRandomSearchCache()
 	wipe(searchCache)
-end)
+end
+app.AddEventHandler("OnRecalculate_NewSettings", WipeRandomSearchCache)
+app.AddEventHandler("OnMemoryCleanup", WipeRandomSearchCache)
 local function SearchRecursively(group, results, func, field)
 	if group.visible and not (group.saved or group.collected) then
 		if group.g then

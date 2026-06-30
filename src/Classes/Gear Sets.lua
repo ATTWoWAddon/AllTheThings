@@ -15,7 +15,6 @@ local GetItemIcon = app.WOWAPI.GetItemIcon;
 -- Global locals
 local ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink,
 		C_TransmogCollection_GetSourceInfo, C_TransmogSets_GetSetInfo, C_TransmogSets_GetAllSourceIDs
-	---@diagnostic disable-next-line: deprecated
 	= ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink,
 		C_TransmogCollection.GetSourceInfo, C_TransmogSets.GetSetInfo, C_TransmogSets.GetAllSourceIDs;
 

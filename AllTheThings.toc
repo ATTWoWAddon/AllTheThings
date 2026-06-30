@@ -4,6 +4,8 @@
 ## Author: Crieve
 ## Version: @project-version@
 ## Interface: 11508, 11509, 20505, 20506, 38001, 40402, 50504, 120007, 120100
+## X-ATT-Midnight-API-Audit: 120007
+## X-ATT-Memory-Optimization: compact-index-v4-adaptive-gc-profiler
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
 ## Category-enUS: Collections
@@ -55,6 +57,7 @@ lib\Callback.lua
 src\base.lua
 src\Commands.lua
 src\Events.lua
+src\Modules\Performance.lua
 src\DataHandling.lua
 
 # Not really a lib concept...
@@ -89,6 +92,7 @@ src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
 src\Modules\Vignette.lua
 src\Modules\Contributor.lua
+src\Modules\Memory.lua
 #src\__test.lua
 
 # Load Database Files

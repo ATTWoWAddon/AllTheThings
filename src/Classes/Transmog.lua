@@ -33,7 +33,6 @@ local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local ipairs, select, tinsert, pairs, rawget,rawset
 	= ipairs, select, tinsert, pairs, rawget,rawset
 local C_Item_IsDressableItemByID, GetSlotForInventoryType
----@diagnostic disable-next-line: deprecated
 	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local L, contains, containsAny, SearchForField
@@ -527,11 +526,83 @@ app.AddRemovalTypeHandler("ItemWithAppearance", function(t)
 	app.UpdateRawID(tkey, tval)
 end)
 
-local VisualIDSourceIDsCache = setmetatable({}, { __index = function(t, visualID)
-	local sourceIDs = C_TransmogCollection_GetAllAppearanceSources(visualID)
-	t[visualID] = sourceIDs or app.EmptyTable
-	return sourceIDs
-end})
+local VisualIDSourceIDsCache = setmetatable({}, {
+	__mode = "v",
+	__index = function(t, visualID)
+		local sourceIDs = C_TransmogCollection_GetAllAppearanceSources(visualID)
+		if sourceIDs then
+			t[visualID] = sourceIDs
+			return sourceIDs
+		end
+		return app.EmptyTable
+	end,
+})
+-- Returns whether the account knows the appearance represented by a SourceID.
+-- This checks the exact source and every other source sharing the same visual so
+-- tooltips correctly identify appearances unlocked from a different item variant.
+app.IsAppearanceKnown = function(sourceID)
+	if not sourceID or not AccountSources then return end
+	if AccountSources[sourceID] or AccountUniqueSources[sourceID] then return true end
+	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
+	if not sourceInfo or not sourceInfo.visualID then return end
+	if sourceInfo.isCollected then return true end
+	for _,otherSourceID in ipairs(VisualIDSourceIDsCache[sourceInfo.visualID]) do
+		if AccountSources[otherSourceID] then return true end
+		local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID)
+		if otherSourceInfo and otherSourceInfo.isCollected then return true end
+	end
+end
+if app.ProfileWrap then
+	app.IsAppearanceKnown = app.ProfileWrap("Transmog.IsAppearanceKnown", app.IsAppearanceKnown)
+end
+
+-- Appends characters for which ATT recorded acquisition of this appearance.
+-- Existing account-wide appearances may not have an owner because Blizzard does not
+-- expose historical acquisition characters; new source-added events are recorded below.
+app.GetAppearanceKnownCharacters = function(sourceID, results)
+	results = results or {}
+	if not sourceID or not CharacterData then return results end
+	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
+	local visualID = sourceInfo and sourceInfo.visualID
+	local sourceSet = { [sourceID] = true }
+	if visualID then
+		for _,otherSourceID in ipairs(VisualIDSourceIDsCache[visualID]) do
+			sourceSet[otherSourceID] = true
+		end
+	end
+	local seen = {}
+	for guid,character in pairs(CharacterData) do
+		local knownAppearance = visualID and character.KnownAppearances and character.KnownAppearances[visualID]
+		if not knownAppearance then
+			-- Preserve compatibility with older ATT builds which stored SourceIDs per character.
+			local transmog = character.Transmog
+			if transmog then
+				for knownSourceID in pairs(sourceSet) do
+					if transmog[knownSourceID] then
+						knownAppearance = true
+						break
+					end
+				end
+			end
+		end
+		if knownAppearance and not seen[guid] then
+			seen[guid] = true
+			results[#results + 1] = character
+		end
+	end
+	return results
+end
+
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Appearance source arrays", function()
+		local entries, sourceIDs = 0, 0
+		for _,sources in pairs(VisualIDSourceIDsCache) do
+			entries = entries + 1
+			if type(sources) == "table" then sourceIDs = sourceIDs + #sources end
+		end
+		return entries, sourceIDs, "visual IDs / source-ID references"
+	end)
+end
 local CurrentCharacterFilterIDSet
 local ArmorTypeMogs = {
 	[2] = true,	-- Cosmetic
@@ -1011,11 +1082,21 @@ end
 
 -- Whenever we can't find a SourceID in ATT data, create a cached version of it so we can keep resolved data
 -- instead of always generating new
-local UnknownAppearancesCache = setmetatable({}, { __index = function(t, sourceID)
-	local sourceGroup = app.CreateItemSource(sourceID)
-	t[sourceID] = sourceGroup
-	return sourceGroup
-end})
+local UnknownAppearancesCache = setmetatable({}, {
+	__mode = "v",
+	__index = function(t, sourceID)
+		local sourceGroup = app.CreateItemSource(sourceID)
+		t[sourceID] = sourceGroup
+		return sourceGroup
+	end,
+})
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Unknown appearances", function()
+		local entries = 0
+		for _ in pairs(UnknownAppearancesCache) do entries = entries + 1 end
+		return entries, entries, "generated appearance placeholders"
+	end)
+end
 local function GetLinkTooltipInfo(sourceGroup, useItemIDs, sameItem)
 	local sourceID = sourceGroup.sourceID
 	-- when the link never resolves, this link lookup triggers CanRetry prior to being checked below
@@ -1304,12 +1385,45 @@ app.AddEventHandler("OnNewPopoutGroup", BuildSourceInformationForPopout)
 
 -- Event Handling
 app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_ADDED", function(sourceID)
+	if app.InvalidateKnownByCache then app.InvalidateKnownByCache("appearance") end
+	-- Remember the visual once per character rather than every shared SourceID.
+	-- This restores owner attribution with far less SavedVariables memory.
+	local sourceInfo = sourceID and C_TransmogCollection_GetSourceInfo(sourceID)
+	local visualID = sourceInfo and sourceInfo.visualID
+	if visualID and app.SetCached then
+		app.SetCached("KnownAppearances", visualID, 1)
+	end
 	-- app.PrintDebug("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
 	app.SetThingCollected("sourceID", sourceID, true, true)
 end)
 app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_REMOVED", function(sourceID)
+	if app.InvalidateKnownByCache then app.InvalidateKnownByCache("appearance") end
+	local sourceInfo = sourceID and C_TransmogCollection_GetSourceInfo(sourceID)
+	local visualID = sourceInfo and sourceInfo.visualID
 	-- app.PrintDebug("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
 	app.SetThingCollected("sourceID", sourceID, true)
+	-- The event may fire before Blizzard's appearance state settles. Clear owner
+	-- attribution only if no source sharing the visual remains known afterward.
+	if visualID and CharacterData and app.CallbackHandlers then
+		app.CallbackHandlers.DelayedCallback(function()
+			if app.InvalidateKnownByCache then app.InvalidateKnownByCache("appearance") end
+			if app.IsAppearanceKnown(sourceID) then return end
+			local sharedSources = VisualIDSourceIDsCache[visualID]
+			for _,character in pairs(CharacterData) do
+				if character.KnownAppearances then character.KnownAppearances[visualID] = nil end
+				if character.Transmog then
+					for _,sharedSourceID in ipairs(sharedSources) do
+						character.Transmog[sharedSourceID] = nil
+					end
+				end
+			end
+		end, 0.5)
+	end
+end)
+
+app.AddEventHandler("OnMemoryCleanup", function()
+	wipe(VisualIDSourceIDsCache)
+	wipe(UnknownAppearancesCache)
 end)
 
 app.AddEventHandler("OnLoad", function()
@@ -1349,6 +1463,7 @@ app.AddEventHandler("OnStartup", function()
 end);
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
+	if not currentCharacter.KnownAppearances then currentCharacter.KnownAppearances = {}; end
 	if not accountWideData.Sources then accountWideData.Sources = {}; end
 	AccountSources = ATTAccountWideData.Sources
 

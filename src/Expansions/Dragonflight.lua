@@ -84,7 +84,7 @@ do
 		local saved, none = {}, {}
 		local o
 		for id,cache in pairs(app.GetRawFieldContainer(KEY)) do
-			o = cache[1]
+			o = app.GetFirstCachedFieldResult(cache)
 			-- If saved, then the FC is cached
 			if o.saved then
 				saved[id] = true
