@@ -1340,7 +1340,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86820)),	-- Ring of the Bladed Tempest
 							i(86792),	-- Light of the Cosmos
 						},
-						-- #elseif BEFORE 5.5.5
+						-- #endif
+						-- #if BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95635),	-- Al'set's Tormented Leggings
 							i(95796),	-- Bracers of the Midnight Comet
@@ -1365,7 +1366,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(95795),	-- Suen-Wo, Spire of the Falling Sun
 							i(95660),	-- Venomlord's Totemic Wand
 						}),
-						-- #else
+						-- #endif
+						-- #if BEFORE 5.5.5
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
 							i(99669),	-- Shoulders of the Cursed Conqueror
 							i(99670),	-- Shoulders of the Cursed Protector

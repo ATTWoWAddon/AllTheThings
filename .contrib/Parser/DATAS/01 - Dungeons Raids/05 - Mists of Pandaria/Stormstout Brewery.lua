@@ -402,7 +402,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							i(86776),	-- Amulet of the Hidden Kings
 							i(86767),	-- Circuit of the Frail Soul
 						},
-						-- #elseif BEFORE 5.5.5
+						-- #endif
+						-- #if BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95870),	-- Abandoned Spaulders of Arrowflight
 							i(95871),	-- Abandoned Spaulders of Renewal
@@ -429,7 +430,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							i(95809),	-- Uroe, Harbinger of Terror
 							i(95781),	-- Voice of the Quilen
 						}),
-						-- #else
+						-- #endif
+						-- #if BEFORE 5.5.5
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
 							i(99667),	-- Gauntlets of the Cursed Protector
 							i(99669),	-- Shoulders of the Cursed Conqueror

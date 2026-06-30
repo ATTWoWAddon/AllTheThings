@@ -455,7 +455,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86814)),	-- Fragment of Fear Made Flesh
 							i(86791),	-- Bottle of Infinite Stars
 						},
-						-- #elseif BEFORE 5.5.5
+						-- #endif
+						-- #if BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95731),	-- Aberrant Chestguard of Torment
 							i(95758),	-- Acid-Spine Bonemace
@@ -484,7 +485,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							i(95810),	-- Ultimate Protection of the Emperor
 							i(95675),	-- Zerat, Malakk's Soulburning Greatsword
 						}),
-						-- #else
+						-- #endif
+						-- #if BEFORE 5.5.5
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
 							i(99667),	-- Gauntlets of the Cursed Protector
 							i(99668),	-- Shoulders of the Cursed Vanquisher

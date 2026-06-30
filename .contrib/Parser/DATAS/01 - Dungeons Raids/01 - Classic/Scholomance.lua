@@ -2520,7 +2520,8 @@ table.insert(SCHOLOMANCE_GROUPS, applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGE
 					i(89968),	-- Feng's Ring of Dreams
 					i(86802),	-- Lei Shen's Final Orders
 				},
-				-- #elseif BEFORE 5.5.5
+				-- #endif
+				-- #if BEFORE 5.5.4
 				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 					i(95664),	-- Armplates of the Vanquished Abomination
 					i(95665),	-- Bad Juju
@@ -2548,7 +2549,8 @@ table.insert(SCHOLOMANCE_GROUPS, applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGE
 					i(95745),	-- Vein-Cover Bracers
 					i(95861),	-- Zeeg's Ancient Kegsmasher
 				}),
-				-- #else
+				-- #endif
+				-- #if BEFORE 5.5.5
 				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
 					i(99667),	-- Gauntlets of the Cursed Protector
 					i(99668),	-- Shoulders of the Cursed Vanquisher
