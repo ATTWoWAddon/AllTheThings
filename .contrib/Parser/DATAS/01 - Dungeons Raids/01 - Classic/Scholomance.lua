@@ -2552,41 +2552,41 @@ table.insert(SCHOLOMANCE_GROUPS, applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGE
 				-- #endif
 				-- #if BEFORE 5.5.5
 				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-					i(99667),	-- Gauntlets of the Cursed Protector
-					i(99668),	-- Shoulders of the Cursed Vanquisher
-					i(99673),	-- Helm of the Cursed Protector
-					i(99674),	-- Leggings of the Cursed Vanquisher
-					i(99675),	-- Leggings of the Cursed Conqueror
-					i(99678),	-- Chest of the Cursed Conqueror
-					i(99680),	-- Gauntlets of the Cursed Vanquisher
-					i(99681),	-- Gauntlets of the Cursed Conqueror
-					i(104913),	-- Bubble-Burst Bracers
-					i(104922),	-- Hood of Swirling Senses
-					i(104931),	-- Death Lotus Crossbow
-					i(104940),	-- Rook's Unlucky Talisman
-					i(104949),	-- Shoulderguards of Dark Meditations
-					i(104958),	-- Bracers of Blind Hatred
-					i(104967),	-- Untainted Guardian's Chain
-					i(104976),	-- Prismatic Prison of Pride
-					i(104985),	-- Swift Serpent Signet
-					i(105003),	-- Grips of Tidal Force
-					i(105012),	-- Wall-Borer Bracers
-					i(105021),	-- Shock Pulse Robes
-					i(105030),	-- Damron's Belt of Darkness
-					i(105039),	-- Toxic Tornado Treads
-					i(105048),	-- Shoulderplates of Gushing Geysers
-					i(105056),	-- Crown of Tragic Truth
-					i(105066),	-- Blood Rage Bracers
-					i(105075),	-- Black-Blooded Drape
-					i(105084),	-- Pandaren Roofsprinters
 					i(105093),	-- Avool's Ancestral Bracers
-					i(105102),	-- Mogu Mindbender's Greaves
-					i(105111),	-- Thok's Tail Tip
-					i(105120),	-- Powder-Stained Totemic Treads
-					i(105129),	-- Rik'kal's Bloody Scalpel
-					i(105138),	-- Kor'kron Elite Skullmask
-					i(105147),	-- Curse of Hubris
+					i(105075),	-- Black-Blooded Drape
+					i(105066),	-- Blood Rage Bracers
+					i(104913),	-- Bubble-Burst Bracers
+					i(104958),	-- Bracers of Blind Hatred
+					i(99678),	-- Chest of the Cursed Conqueror
 					i(105156),	-- Chestplate of Fallen Passion
+					i(105056),	-- Crown of Tragic Truth
+					i(105147),	-- Curse of Hubris
+					i(105030),	-- Damron's Belt of Darkness
+					i(104931),	-- Death Lotus Crossbow
+					i(99681),	-- Gauntlets of the Cursed Conqueror
+					i(99667),	-- Gauntlets of the Cursed Protector
+					i(99680),	-- Gauntlets of the Cursed Vanquisher
+					i(105003),	-- Grips of Tidal Force
+					i(99673),	-- Helm of the Cursed Protector
+					i(104922),	-- Hood of Swirling Senses
+					i(105138),	-- Kor'kron Elite Skullmask
+					i(99675),	-- Leggings of the Cursed Conqueror
+					i(99674),	-- Leggings of the Cursed Vanquisher
+					i(105102),	-- Mogu Mindbender's Greaves
+					i(105084),	-- Pandaren Roofsprinters
+					i(105120),	-- Powder-Stained Totemic Treads
+					i(104976),	-- Prismatic Prison of Pride
+					i(105129),	-- Rik'kal's Bloody Scalpel
+					i(104940),	-- Rook's Unlucky Talisman
+					i(105021),	-- Shock Pulse Robes
+					i(99668),	-- Shoulders of the Cursed Vanquisher
+					i(104949),	-- Shoulderguards of Dark Meditations
+					i(105048),	-- Shoulderplates of Gushing Geysers
+					i(104985),	-- Swift Serpent Signet
+					i(105111),	-- Thok's Tail Tip
+					i(105039),	-- Toxic Tornado Treads
+					i(104967),	-- Untainted Guardian's Chain
+					i(105012),	-- Wall-Borer Bracers
 				}),
 				-- #endif
 				{}),
