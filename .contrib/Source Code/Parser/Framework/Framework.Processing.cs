@@ -1341,6 +1341,9 @@ namespace ATT
 
             // If this Ensemble is part of an Event, apply that Event to all the raw sources
             data.TryGetValue("e", out long eventID);
+            // If this Ensemble has an explicit modID or bonusID, apply that to all the raw sources
+            data.TryGetValue("modID", out long modID);
+            data.TryGetValue("bonusID", out long bonusID);
 
             // add the raw sources to the ensemble
             foreach (IDictionary<string, object> source in rawSources)
@@ -1348,6 +1351,14 @@ namespace ATT
                 if (eventID > 0)
                 {
                     Objects.Merge(source, "e", eventID);
+                }
+                if (modID > 0)
+                {
+                    Objects.Merge(source, "modID", modID);
+                }
+                if (bonusID > 0)
+                {
+                    Objects.Merge(source, "bonusID", bonusID);
                 }
 
                 Items.DetermineItemID(source);
