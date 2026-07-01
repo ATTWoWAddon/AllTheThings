@@ -402,7 +402,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							i(86776),	-- Amulet of the Hidden Kings
 							i(86767),	-- Circuit of the Frail Soul
 						},
-						-- #elseif BEFORE 5.5.5
+						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95870),	-- Abandoned Spaulders of Arrowflight
 							i(95871),	-- Abandoned Spaulders of Renewal
@@ -431,7 +431,43 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(105087),	-- Ancient Archer's Chestguard
+							i(105150),	-- Black Blood of Y'Shaarj
+							i(105078),	-- Boots of Perilous Infusion
+							i(104988),	-- Cannoneer's Multipocket Gunbelt
+							i(105024),	-- Castlebreaker Bracers
+							i(99678),	-- Chest of the Cursed Conqueror
+							i(99677),	-- Chest of the Cursed Vanquisher
+							i(105132),	-- Chestguard of Toxic Injections
+							i(104970),	-- Confident Grips
+							i(104979),	-- Crown of Boastful Words
+							i(104997),	-- Flameslinger's Fiery Cowl
+							i(104961),	-- Fusion-Fire Core
+							i(99681),	-- Gauntlets of the Cursed Conqueror
+							i(99667),	-- Gauntlets of the Cursed Protector
+							i(99680),	-- Gauntlets of the Cursed Vanquisher
+							i(104934),	-- Grips of Unending Anguish
+							i(99672),	-- Helm of the Cursed Conqueror
+							i(105096),	-- Immaculately Preserved Wand
+							i(105015),	-- Juggernaut's Ignition Keys
+							i(105042),	-- Kardris' Toxic Totem
+							i(99676),	-- Leggings of the Cursed Protector
+							i(99674),	-- Leggings of the Cursed Vanquisher
+							i(105069),	-- Malkorok's Skullcleaver
+							i(105105),	-- Montak's Grips of Scorching Breath
+							i(104952),	-- Norushen's Shortblade
+							i(105060),	-- Ring of Restless Energy
+							i(105050),	-- Sandals of Two Little Bees
+							i(104925),	-- Seal of Eternal Sorrow
+							i(105006),	-- Seismic Bore
+							i(105141),	-- Shoulderguards of Intended Power
+							i(104943),	-- Shoulderpads of Dou Dou Chong
+							i(99669),	-- Shoulders of the Cursed Conqueror
+							i(99670),	-- Shoulders of the Cursed Protector
+							i(105123),	-- Siegecrafter's Forge Hammer
+							i(105114),	-- Ticking Ebon Detonator
+							i(104916),	-- Treads of Unchained Hate
+							i(105033),	-- Wolf-Rider Spurs
 						}),
 						-- #endif
 						{}),

@@ -1340,7 +1340,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86820)),	-- Ring of the Bladed Tempest
 							i(86792),	-- Light of the Cosmos
 						},
-						-- #elseif BEFORE 5.5.5
+						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95635),	-- Al'set's Tormented Leggings
 							i(95796),	-- Bracers of the Midnight Comet
@@ -1367,7 +1367,37 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(105092),	-- Ancient Mogu Tower Shield
+							i(105119),	-- Bracers of Infinite Pipes
+							i(105128),	-- Bracers of Sonic Projection
+							i(105137),	-- Cord of Black Dreams
+							i(105155),	-- Cowl of Smoking Dreams
+							i(104984),	-- Dagryn's Discarded Longbow
+							i(105011),	-- Demolisher's Reinforced Belt
+							i(105002),	-- Dragonmaw Emergency Strap
+							i(105083),	-- Enchanted Shao-Tien Saber
+							i(105074),	-- Frenzied Crystal of Rage
+							i(99680),	-- Gauntlets of the Cursed Vanquisher
+							i(104939),	-- Gloomwrap Greatcloak
+							i(99673),	-- Helm of the Cursed Protector
+							i(104921),	-- Ichor-Dripping Shoulderpads
+							i(105110),	-- Icy Blood Chestplate
+							i(99675),	-- Leggings of the Cursed Conqueror
+							i(99676),	-- Leggings of the Cursed Protector
+							i(99674),	-- Leggings of the Cursed Vanquisher
+							i(105065),	-- Malkorok's Giant Stompers
+							i(104975),	-- Necklace of Fading Light
+							i(105101),	-- Plate Belt of the War-Healer
+							i(104912),	-- Puddle Punishers
+							i(104957),	-- Quarantine Shoulderguards
+							i(105055),	-- Ravager's Pathwalkers
+							i(105038),	-- Ring of the Iron Tomb
+							i(104966),	-- Rime-Rift Shoulders
+							i(105047),	-- Shackles of Stinking Slime
+							i(99669),	-- Shoulders of the Cursed Conqueror
+							i(99670),	-- Shoulders of the Cursed Protector
+							i(104930),	-- Waterwalker Greatboots
+							i(105146),	-- Xal'atoh, Desecrated Image of Gorehowl
 						}),
 						-- #endif
 						{}),

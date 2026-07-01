@@ -450,7 +450,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							i(86748),	-- Cape of Three Lanterns
 							i(86790),	-- Vial of Dragon's Blood
 						},
-						-- #elseif BEFORE 5.5.5
+						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95735),	-- Artery Rippers
 							i(95681),	-- Beady-Eye Bracers
@@ -482,7 +482,41 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(104991),	-- Arcsmasher Bracers
+							i(105045),	-- Belt of the Iron Prison
+							i(104964),	-- Blight Hurlers
+							i(105036),	-- Bloodclaw Band
+							i(105027),	-- Borer Drill Boots
+							i(99679),	-- Chest of the Cursed Protector
+							i(99677),	-- Chest of the Cursed Vanquisher
+							i(105099),	-- Chitin-Link Chain Belt
+							i(104982),	-- Choker of the Final Word
+							i(105117),	-- Dysmorphic Samophlange of Discontinuity
+							i(104919),	-- Encapsulated Essence of Immerseus
+							i(105000),	-- Extinguished Ember of Galakras
+							i(99681),	-- Gauntlets of the Cursed Conqueror
+							i(99680),	-- Gauntlets of the Cursed Vanquisher
+							i(104955),	-- Gloves of the Golden Protector
+							i(99673),	-- Helm of the Cursed Protector
+							i(105072),	-- Hood of Perpetual Implosion
+							i(105126),	-- Kil'ruk's Band of Ascendancy
+							i(105135),	-- Kil'ruk's Furious Blade
+							i(105063),	-- Lazahk's Lost Shadowrap
+							i(105018),	-- Leggings of Furious Flame
+							i(99675),	-- Leggings of the Cursed Conqueror
+							i(99676),	-- Leggings of the Cursed Protector
+							i(105009),	-- Minelayer's Padded Boots
+							i(105090),	-- Ominous Mogu Greatboots
+							i(104946),	-- Purehearted Cricket Cage
+							i(105153),	-- Seal of Karmic Return
+							i(104937),	-- Shockstriker Gauntlets
+							i(105053),	-- Shoulderguards of the Righteous Stand
+							i(99668),	-- Shoulders of the Cursed Vanquisher
+							i(105108),	-- Signet of the Dinomancers
+							i(104928),	-- Soul-Soaked Gloves
+							i(105081),	-- Terrorguard Chestplate
+							i(104910),	-- Trident of Corrupted Waters
+							i(104973),	-- Wristplates of Broken Doubt
 						}),
 						-- #endif
 						{}),

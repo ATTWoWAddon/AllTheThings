@@ -455,7 +455,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86814)),	-- Fragment of Fear Made Flesh
 							i(86791),	-- Bottle of Infinite Stars
 						},
-						-- #elseif BEFORE 5.5.5
+						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95731),	-- Aberrant Chestguard of Torment
 							i(95758),	-- Acid-Spine Bonemace
@@ -486,7 +486,44 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(105106),	-- Akolik's Acid-Soaked Robes
+							i(105124),	-- Blackfuse's Blasting Cord
+							i(104917),	-- Bracers of Sordid Sleep
+							i(105079),	-- Bracers of Averted Fatality
+							i(104971),	-- Bracers of Final Serenity
+							i(99678),	-- Chest of the Cursed Conqueror
+							i(99679),	-- Chest of the Cursed Protector
+							i(105034),	-- Breastplate of Shamanic Mirrors
+							i(104989),	-- Dagryn's Fuselight Bracers
+							i(105115),	-- Fusespark Gloves
+							i(99667),	-- Gauntlets of the Cursed Protector
+							i(99680),	-- Gauntlets of the Cursed Vanquisher
+							i(105133),	-- Gauntlets of Insane Calculations
+							i(104980),	-- Greaves of Sublime Superiority
+							i(99671),	-- Helm of the Cursed Vanquisher
+							i(99672),	-- Helm of the Cursed Conqueror
+							i(99673),	-- Helm of the Cursed Protector
+							i(105088),	-- Helm of the Night Watchman
+							i(105151),	-- Horned Mace of the Old Ones
+							i(104909),	-- Immerseus' Crystalline Eye
+							i(105016),	-- Juggernaut's Focusing Crystal
+							i(105043),	-- Kardris' Scepter
+							i(105097),	-- Klaxxi Grips of Rejuvenation
+							i(105061),	-- Kor'kron Hand Cannon
+							i(105007),	-- Laser Burn Bracers
+							i(99675),	-- Leggings of the Cursed Conqueror
+							i(99674),	-- Leggings of the Cursed Vanquisher
+							i(105142),	-- Legplates of Unthinking Strife
+							i(104944),	-- Lifebane Bracers
+							i(105051),	-- Nazgrim's Burnished Insignia
+							i(104935),	-- Poisonbinder Girth
+							i(104953),	-- Reality Ripper Ring
+							i(104926),	-- Salt Water Sandals
+							i(99668),	-- Shoulders of the Cursed Vanquisher
+							i(104998),	-- Skydancer Boots
+							i(105025),	-- Treads of Autonomic Motion
+							i(105070),	-- Vial of Living Corruption
+							i(104962),	-- Xifeng, Longblade of the Titanic Guardian
 						}),
 						-- #endif
 						{}),

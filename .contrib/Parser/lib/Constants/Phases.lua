@@ -3391,8 +3391,8 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS = createClassicPhase({
 	phaseID = 5401,
 	release = os.time({
 		year=2026,
-		month=4,
-		day=20,
+		month=6,
+		day=16,
 	}),
 	text = {
 		en = "Celestial Dungeons (SoO)",

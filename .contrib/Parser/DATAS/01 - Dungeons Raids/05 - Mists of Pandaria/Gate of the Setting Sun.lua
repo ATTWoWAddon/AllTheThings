@@ -437,7 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86851)),	-- Painful Thorned Ring (HoF)
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86885)),	-- Spirits of the Sun (Terrace)
 						},
-						-- #elseif BEFORE 5.5.5
+						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95877),	-- Bo-Ris, Horror in the Night
 							i(95732),	-- Caustic Spike Bracers
@@ -469,7 +469,36 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(105052),	-- Arcweaver Spell Sword
+							i(105035),	-- Ashen Wall Girdle
+							i(105017),	-- Belt of Ominous Trembles
+							i(104963),	-- Bracers of Broken Causation
+							i(104927),	-- Bracers of Purified Spirit
+							i(105026),	-- Cavemaker Wristguards
+							i(99677),	-- Chest of the Cursed Vanquisher
+							i(104936),	-- Darkfallen Shoulderplates
+							i(105107),	-- Festering Primordial Globule
+							i(105062),	-- Halberd of Inner Shadows
+							i(99673),	-- Helm of the Cursed Protector
+							i(105125),	-- Hisek's Reserve Longbow
+							i(104909),	-- Immerseus' Crystalline Eye
+							i(105116),	-- Lever of the Megantholithic Apparatus
+							i(105071),	-- Miasmic Skullbelt
+							i(104918),	-- Pauldrons of Violent Eruption
+							i(104945),	-- Petrified Pennyroyal Ring
+							i(105152),	-- Revelations of Y'Shaarj
+							i(105008),	-- Ricocheting Shoulderguards
+							i(104954),	-- Robes of the Blackened Watcher
+							i(105098),	-- Shado-Pan Reliquary Kilt
+							i(104972),	-- Shadow-Binder's Kilt
+							i(104999),	-- Shoulderpads of Pulsing Protection
+							i(99669),	-- Shoulders of the Cursed Conqueror
+							i(99670),	-- Shoulders of the Cursed Protector
+							i(99668),	-- Shoulders of the Cursed Vanquisher
+							i(105134),	-- Skeer's Bloodsoaked Talisman
+							i(105143),	-- Spaulders of the Fallen Warchief
+							i(104990),	-- Thranok's Shattering Helm
+							i(105089),	-- Untarnishable Greatbelt
 						}),
 						-- #endif
 						{}),

@@ -304,7 +304,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(89967),	-- Feng's Seal of Binding
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86858)),	-- Seal of the Profane (HoF)
 						},
-						-- #elseif BEFORE 5.5.5
+						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
 							i(95961),	-- Abandoned Zandalari Firecord
 							i(95962),	-- Abandoned Zandalari Shadowgirdle
@@ -331,7 +331,39 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- #else
 						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
-							
+							i(104974),	-- Assurance of Consequence
+							i(104920),	-- Bolt-Burster Grips
+							i(105118),	-- Bomber's Blackened Wristwatch
+							i(105019),	-- Bracers of the Broken Fault
+							i(99678),	-- Chest of the Cursed Conqueror
+							i(105001),	-- Drakebinder Greatstaff
+							i(99681),	-- Gauntlets of the Cursed Conqueror
+							i(104929),	-- Greatbelt of Living Waters
+							i(105145),	-- Greathelm of the Warchief
+							i(99673),	-- Helm of the Cursed Protector
+							i(105154),	-- Hopeglow Spaulders
+							i(104911),	-- Hood of Blackened Tears
+							i(105037),	-- Haromm's Frozen Crescent
+							i(105127),	-- Korven's Crimson Crescent
+							i(105136),	-- Kor'kron Spire of Supremacy
+							i(104992),	-- Krugruk's Rigid Shoulderplates
+							i(99676),	-- Leggings of the Cursed Protector
+							i(99674),	-- Leggings of the Cursed Vanquisher
+							i(104956),	-- Leggings of Unabashed Anger
+							i(104939),	-- Poisonmist Nightcloak
+							i(105010),	-- Precision Cutters
+							i(105073),	-- Robes of Riven Dreams
+							i(105054),	-- Robes of the Warrior's Fall
+							i(104965),	-- Sash of the Last Guardian
+							i(105091),	-- Seal of the Forgotten Kings
+							i(104983),	-- Shield of Mockery
+							i(105046),	-- Shoulderguards of Foul Streams
+							i(99668),	-- Shoulders of the Cursed Vanquisher
+							i(104947),	-- Shoulders of the Roiling Inferno
+							i(105082),	-- Sigil of Rampage
+							i(104938),	-- Sorrowpath Signet
+							i(105109),	-- Thok's Acid-Grooved Tooth
+							i(105064),	-- Wristguards of Ruination
 						}),
 						-- #endif
 						{}),
