@@ -237,27 +237,37 @@ root(ROOTS.Promotions, {
 				["u"] = REMOVED_FROM_GAME,	-- 5th November 2024
 			}),
 			i(228907, {	-- Bot Wrangler’s Belt (COSMETIC!)
+				-- #if BEFORE 11.1.0
 				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58867" },
 				["u"] = REAL_MONEY,
 			}),
 			i(228909, {	-- Bot Wrangler’s Crimson Apron (COSMETIC!)
+				-- #if BEFORE 11.1.0
 				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58867" },
 				["u"] = REAL_MONEY,
 			}),
 			i(228908, {	-- Bot Wrangler’s Violet Apron (COSMETIC!)
+				-- #if BEFORE 11.1.0
 				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58867" },
 				["u"] = REAL_MONEY,
 			}),
 			i(228793, {	-- Chillbot 9000 (PET!)
+				-- #if BEFORE 11.1.0
 				["description"] = "Available to redeem for 400 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58867" },
 				["u"] = REAL_MONEY,
 			}),
 			i(228790, {	-- Thrillbot 9000 (PET!)
+				-- #if BEFORE 11.1.0
 				["description"] = "Available to redeem for 400 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58867" },
 				["u"] = REAL_MONEY,
 			}),

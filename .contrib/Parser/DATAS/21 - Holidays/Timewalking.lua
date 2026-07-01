@@ -8051,8 +8051,14 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(93497, {	-- A Soaring Path Through Time
-				["qg"] = 255019,	-- Xydan <Timewalking Vendor>
-				["coord"] = { 81.5, 47.2, VALDRAKKEN },
+				["qgs"] = {
+					255019,	-- Xydan <Timewalking Vendor>
+					256212,	-- Archmage Aethas Sunreaver
+				},
+				["coords"] = {
+					{ 48.7, 64.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 81.5, 47.2, VALDRAKKEN },
+				},
 				["isWeekly"] = true,
 				["lvl"] = 80,
 				["groups"] = { i(250116) },	-- Cache of Quel'Thalas Treasures
