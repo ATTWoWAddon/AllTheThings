@@ -2085,8 +2085,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						clusters(50, i(105070)),	-- Vial of Living Corruption
 					},
 					{	-- Bags
-						clusters(10, i(276086, {	-- Coffer  of Celestial Chance
-
+						clusters(10, i(276086, {	-- Coffer of Celestial Chance
+							i(248743),	-- Celestial Riding Serpent (MOUNT!)
 						})),
 						clusters(10, i(276085)),	-- Satchel of Stone Clusters
 					},
