@@ -5,7 +5,7 @@
 -- #if ANYCLASSIC
 local AUGUST_STONE_FRAGMENT = 3350;	-- August Stone Fragment (Season 1)
 local AUGUST_STONE_SHARD = 3414;	-- August Stone Shard (Season 2)
-local AUGUST_STONE_CLUSTER = 3414;	-- August Stone Cluster (Season 3)
+local AUGUST_STONE_CLUSTER = 3416;	-- August Stone Cluster (Season 3)
 local frags = function(cost, item)
 	return applycost(item, { "c", AUGUST_STONE_FRAGMENT, cost });
 end
