@@ -5,15 +5,15 @@
 -- #if ANYCLASSIC
 local AUGUST_STONE_FRAGMENT = 3350;	-- August Stone Fragment (Season 1)
 local AUGUST_STONE_SHARD = 3414;	-- August Stone Shard (Season 2)
-local AUGUST_STONE_CRYSTAL = 3414;	-- August Stone Crystal? (Season 3)
+local AUGUST_STONE_CLUSTER = 3416;	-- August Stone Cluster (Season 3)
 local frags = function(cost, item)
 	return applycost(item, { "c", AUGUST_STONE_FRAGMENT, cost });
 end
 local shards = function(cost, item)
 	return applycost(item, { "c", AUGUST_STONE_SHARD, cost });
 end
-local crystals = function(cost, item)
-	return applycost(item, { "c", AUGUST_STONE_CRYSTAL, cost });
+local clusters = function(cost, item)
+	return applycost(item, { "c", AUGUST_STONE_CLUSTER, cost });
 end
 
 local CELESTIAL_DUNGEON_MAPS_SIGIL_OF_POWER = {
@@ -281,7 +281,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 				["isDaily"] = true,
 				["groups"] = {
 					-- #if AFTER 5.5.5
-					applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CRYSTAL)),
+					applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CLUSTER)),
 					-- #endif
 					-- #if AFTER 5.5.3
 					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_SHARD)),
@@ -306,7 +306,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 				["isDaily"] = true,
 				["groups"] = {
 					-- #if AFTER 5.5.5
-					applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CRYSTAL)),
+					applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CLUSTER)),
 					-- #endif
 					-- #if AFTER 5.5.3
 					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_SHARD)),
@@ -326,7 +326,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 			})),
 			n(REWARDS, {
 				-- #if AFTER 5.5.5
-				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CRYSTAL, {
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CLUSTER, {
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 					["description"] = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
 					["maps"] = CELESTIAL_DUNGEON_MAPS,
@@ -1733,113 +1733,377 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						})),
 					}),
 				}))),
-				--[[
-				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, n(,	-- TODO <August Stone Crystal Exchange>
-					bubbleDownSelf({ ["timeline"] = { ADDED_5_5_5 } }, {
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, n(267317,	-- Celestial Harbinger <August Stone Cluster Exchange>
+					bubbleDownSelf({ ["timeline"] = { ADDED_5_5_4 } }, {
 					["aqd"] = {
-						["coord"] = { , SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+						["coord"] = { 49.4, 75.2, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 						["maps"] = { SHRINE_OF_SEVEN_STARS, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					},
 					["hqd"] = {
-						["coord"] = { , SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						["coord"] = { 43.8, 42.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 						["maps"] = { SHRINE_OF_TWO_MOONS, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					},
 					["groups"] = appendGroups(
 					{	-- Tier Tokens
-						crystals(60, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.HELM)),
-						crystals(50, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.SHOULDERS)),
-						crystals(55, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.CHEST)),
-						crystals(45, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.GAUNTLETS)),
-						crystals(55, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.LEGS)),
+						clusters(60, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.HELM)),
+						clusters(50, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.SHOULDERS)),
+						clusters(55, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.CHEST)),
+						clusters(45, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.GAUNTLETS)),
+						clusters(55, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.LEGS)),
 
-						crystals(60, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.HELM)),
-						crystals(50, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.SHOULDERS)),
-						crystals(55, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.CHEST)),
-						crystals(45, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.GAUNTLETS)),
-						crystals(55, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.LEGS)),
+						clusters(60, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.HELM)),
+						clusters(50, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.SHOULDERS)),
+						clusters(55, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.CHEST)),
+						clusters(45, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.GAUNTLETS)),
+						clusters(55, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.LEGS)),
 
-						crystals(60, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.HELM)),
-						crystals(50, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.SHOULDERS)),
-						crystals(55, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.CHEST)),
-						crystals(45, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.GAUNTLETS)),
-						crystals(55, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.LEGS)),
+						clusters(60, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.HELM)),
+						clusters(50, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.SHOULDERS)),
+						clusters(55, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.CHEST)),
+						clusters(45, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.GAUNTLETS)),
+						clusters(55, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.LEGS)),
 					},
 					{	-- Weapons
+						-- One-Handed
+						clusters(30, i(105052)),	-- Arcweaver Spell Sword
+						clusters(30, i(104919)),	-- Encapsulated Essence of Immerseus
+						clusters(30, i(105083)),	-- Enchanted Shao-Tien Saber
+						clusters(30, i(105037)),	-- Haromm's Frozen Crescent
+						clusters(30, i(105151)),	-- Horned Mace of the Old Ones
+						clusters(30, i(105103)),	-- Hvitserk's Formidable Shanker
+						clusters(30, i(105043)),	-- Kardris' Scepter
+						clusters(30, i(105135)),	-- Kil'ruk's Furious Blade
+						clusters(30, i(105127)),	-- Korven's Crimson Crescent
+						clusters(30, i(105069)),	-- Malkorok's Skullcleaver
+						clusters(30, i(105049)),	-- Nazgrim's Gutripper
+						clusters(30, i(104952)),	-- Norushen's Shortblade
+						clusters(30, i(105129)),	-- Rik'kal's Bloody Scalpel
+						clusters(30, i(105006)),	-- Seismic Bore
+						clusters(30, i(105123)),	-- Siegecrafter's Forge Hammer
+						clusters(30, i(104932)),	-- Softfoot's Last Resort
+						clusters(30, i(104962)),	-- Xifeng, Longblade of the Titanic Guardian
 
+						-- Two-Handed
+						clusters(50, i(105112)),	-- Britomart's Jagged Pike
+						clusters(50, i(105001)),	-- Drakebinder Greatstaff
+						clusters(50, i(105057)),	-- Gar'tok, Strength of the Faithful
+						clusters(50, i(104977)),	-- Gaze of Arrogance
+						clusters(50, i(104981)),	-- Greatsword of Pride's Fall
+						clusters(50, i(105062)),	-- Halberd of Inner Shadows
+						clusters(50, i(105136)),	-- Kor'kron Spire of Supremacy
+						clusters(50, i(105116)),	-- Lever of the Megantholithic Apparatus
+						clusters(50, i(104910)),	-- Trident of Corrupted Waters
+						clusters(50, i(105146)),	-- Xal'atoh, Desecrated Image of Gorehowl
+
+						-- Ranged
+						clusters(50, i(104984)),	-- Dagryn's Discarded Longbow
+						clusters(50, i(104931)),	-- Death Lotus Crossbow
+						clusters(50, i(105125)),	-- Hisek's Reserve Longbow
+						clusters(30, i(105096)),	-- Immaculately Preserved Wand
+						clusters(50, i(105061)),	-- Kor'kron Hand Cannon
+
+						-- Off-Hand
+						clusters(20, i(105107)),	-- Festering Primordial Globule
+						clusters(20, i(105023)),	-- Juggernaut's Power Core
+						clusters(20, i(104946)),	-- Purehearted Cricket Cage
+						clusters(20, i(105152)),	-- Revelations of Y'Shaarj
+					},
+					{	-- Shields
+						clusters(20, i(105092)),	-- Ancient Mogu Tower Shield
+						clusters(20, i(105058)),	-- Bulwark of the Fallen General
+						clusters(20, i(104968)),	-- Norushen's Enigmatic Barrier
+						clusters(20, i(104983)),	-- Shield of Mockery
+						clusters(20, i(105077)),	-- Visage of the Monstrous
 					},
 					{	-- Necks
-
+						clusters(30, i(105041)),	-- Ashflare Pendant
+						clusters(30, i(105124)),	-- Blackfuse's Blasting Cord
+						clusters(30, i(104982)),	-- Choker of the Final Word
+						clusters(30, i(105104)),	-- Gleaming Eye of the Devilsaur
+						clusters(30, i(104909)),	-- Immerseus' Crystalline Eye
+						clusters(30, i(105015)),	-- Juggernaut's Ignition Keys
+						clusters(30, i(105095)),	-- Lost Necklace of the Mogu Empress
+						clusters(30, i(105068)),	-- Malkorok's Tainted Dog Tags
+						clusters(30, i(104975)),	-- Necklace of Fading Light
+						clusters(30, i(104967)),	-- Untainted Guardian's Chain
 					},
 					{	-- Cloaks
-
+						clusters(30, i(105852)),	-- Aeth's Swiftcinder Cloak
+						clusters(30, i(105573)),	-- Black-Blooded Drape
+						clusters(30, i(105844)),	-- Brave Niunai's Cloak
+						clusters(30, i(105840)),	-- Cape of the Alpha
+						clusters(30, i(105421)),	-- Cloak of Misguided Power
+						clusters(30, i(105458)),	-- Drape of the Despairing Pit
+						clusters(30, i(105843)),	-- Drape of the Omega
+						clusters(30, i(105437)),	-- Gloomwrap Greatcloak
+						clusters(30, i(105028)),	-- Poisonmist Nightcloak
+						clusters(30, i(105853)),	-- Turtleshell Greatcloak
 					},
 					{	-- Plate Armor
 						-- Head
+						clusters(50, i(104979)),	-- Crown of Boastful Words
+						clusters(50, i(104951)),	-- Gaze of Echoing Despair
+						clusters(50, i(105145)),	-- Greathelm of the Warchief
+						clusters(50, i(105088)),	-- Helm of the Night Watchman
+						clusters(50, i(104959)),	-- Rage-Blind Greathelm
+						clusters(50, i(104990)),	-- Thranok's Shattering Helm
 						-- Shoulders
+						clusters(30, i(104936)),	-- Darkfallen Shoulderplates
+						clusters(30, i(104992)),	-- Krugruk's Rigid Shoulderplates
+						clusters(30, i(105157)),	-- Mantle of Looming Darkness
+						clusters(30, i(104918)),	-- Pauldrons of Violent Eruption
+						clusters(30, i(105048)),	-- Shoulderplates of Gushing Geysers
+						clusters(30, i(105143)),	-- Spaulders of the Fallen Warchief
 						-- Chest
+						clusters(50, i(105034)),	-- Breastplate of Shamanic Mirrors
+						clusters(50, i(104914)),	-- Chestplate of Congealed Corrosion
+						clusters(50, i(105156)),	-- Chestplate of Fallen Passion
+						clusters(50, i(105014)),	-- Earthbreaker's Steaming Chestplate
+						clusters(50, i(105110)),	-- Icy Blood Chestplate
+						clusters(50, i(105081)),	-- Terrorguard Chestplate
 						-- Wrist
+						clusters(30, i(104991)),	-- Arcsmasher Bracers
+						clusters(30, i(105066)),	-- Blood Rage Bracers
+						clusters(30, i(104958)),	-- Bracers of Blind Hatred
+						clusters(30, i(104917)),	-- Bracers of Sordid Sleep
+						clusters(30, i(104913)),	-- Bubble-Burst Bracers
+						clusters(30, i(105047)),	-- Shackles of Stinking Slime
+						clusters(30, i(105004)),	-- Smoldering Drakescale Bracers
+						clusters(30, i(105012)),	-- Wall-Borer Bracers
+						clusters(30, i(104973)),	-- Wristplates of Broken Doubt
 						-- Hands
+						clusters(30, i(105121)),	-- Calixian Bladebreakers
+						clusters(30, i(104915)),	-- Corruption-Rotted Gauntlets
+						clusters(30, i(105823)),	-- Gauntlets of Discarded Time
+						clusters(30, i(105133)),	-- Gauntlets of Insane Calculations
+						clusters(30, i(104950)),	-- Grips of the Fallen Council
+						clusters(30, i(105821)),	-- Romy's Reliable Grips
+						clusters(30, i(104937)),	-- Shockstriker Gauntlets
+						clusters(30, i(105013)),	-- Tar-Coated Gauntlets
+						clusters(30, i(105822)),	-- Zoid's Molten Gauntlets
 						-- Waist
+						clusters(50, i(105035)),	-- Ashen Wall Girdle
+						clusters(50, i(105011)),	-- Demolisher's Reinforced Belt
+						clusters(50, i(104929)),	-- Greatbelt of Living Waters
+						clusters(50, i(105101)),	-- Plate Belt of the War-Healer
+						clusters(50, i(104935)),	-- Poisonbinder Girth
+						clusters(50, i(105089)),	-- Untarnishable Greatbelt
 						-- Legs
+						clusters(50, i(105142)),	-- Legplates of Unthinking Strife
+						clusters(50, i(105067)),	-- Legplates of Willful Doom
+						clusters(50, i(105005)),	-- Windfire Legplates
 						-- Feet
+						clusters(50, i(105027)),	-- Borer Drill Boots
+						clusters(50, i(104980)),	-- Greaves of Sublime Superiority
+						clusters(50, i(105065)),	-- Malkorok's Giant Stompers
+						clusters(50, i(105102)),	-- Mogu Mindbender's Greaves
+						clusters(50, i(105090)),	-- Ominous Mogu Greatboots
+						clusters(50, i(104916)),	-- Treads of Unchained Hate
+						clusters(50, i(104930)),	-- Waterwalker Greatboots
+						clusters(50, i(105033)),	-- Wolf-Rider Spurs
 					},
 					{	-- Mail Armor
 						-- Head
+						clusters(50, i(105155)),	-- Cowl of Smoking Dreams
+						clusters(50, i(105056)),	-- Crown of Tragic Truth
+						clusters(50, i(105032)),	-- Haromm's Horrifying Helm
+						clusters(50, i(105140)),	-- Penetrating Gaze of Y'Shaarj
 						-- Shoulders
+						clusters(30, i(104957)),	-- Quarantine Shoulderguards
+						clusters(30, i(104949)),	-- Shoulderguards of Dark Meditations
+						clusters(30, i(105046)),	-- Shoulderguards of Foul Streams
+						clusters(30, i(105141)),	-- Shoulderguards of Intended Power
 						-- Chest
+						clusters(50, i(105087)),	-- Ancient Archer's Chestguard
+						clusters(50, i(105139)),	-- Chestguard of Relentless Tyranny
+						clusters(50, i(105132)),	-- Chestguard of Toxic Injections
+						clusters(50, i(105080)),	-- Ebon Blood Chestguard
 						-- Wrist
+						clusters(30, i(104971)),	-- Bracers of Final Serenity
+						clusters(30, i(105119)),	-- Bracers of Infinite Pipes
+						clusters(30, i(105100)),	-- Bracers of the Pristine Purifier
+						clusters(30, i(105026)),	-- Cavemaker Wristguards
+						clusters(30, i(104989)),	-- Dagryn's Fuselight Bracers
+						clusters(30, i(105064)),	-- Wristguards of Ruination
 						-- Hands
+						clusters(30, i(105003)),	-- Grips of Tidal Force
+						clusters(30, i(104934)),	-- Grips of Unending Anguish
+						clusters(30, i(105819)),	-- Keengrip Arrowpullers
+						clusters(30, i(105820)),	-- Marco's Crackling Gloves
+						clusters(30, i(105010)),	-- Precision Cutters
+						clusters(30, i(104928)),	-- Soul-Soaked Gloves
 						-- Waist
+						clusters(50, i(105086)),	-- Arrowflight Girdle
+						clusters(50, i(105045)),	-- Belt of the Iron Prison
+						clusters(50, i(104988)),	-- Cannoneer's Multipocket Gunbelt
+						clusters(50, i(105099)),	-- Chitin-Link Chain Belt
 						-- Legs
+						clusters(50, i(104956)),	-- Leggings of Unabashed Anger
+						clusters(50, i(104972)),	-- Shadow-Binder's Kilt
 						-- Feet
+						clusters(50, i(105009)),	-- Minelayer's Padded Boots
+						clusters(50, i(105120)),	-- Powder-Stained Totemic Treads
+						clusters(50, i(104912)),	-- Puddle Punishers
+						clusters(50, i(105055)),	-- Ravager's Pathwalkers
+						clusters(50, i(104948)),	-- Sabatons of Defilement
+						clusters(50, i(105025)),	-- Treads of Autonomic Motion
 					},
 					{	-- Leather Armor
 						-- Head
+						clusters(50, i(105044)),	-- Darkfang Mask
+						clusters(50, i(104911)),	-- Hood of Blackened Tears
+						clusters(50, i(105138)),	-- Kor'kron Elite Skullmask
+						clusters(50, i(104978)),	-- Self-Reflecting Mask
 						-- Shoulders
+						clusters(30, i(105154)),	-- Hopeglow Spaulders
+						clusters(30, i(105008)),	-- Ricocheting Shoulderguards
+						clusters(30, i(105053)),	-- Shoulderguards of the Righteous Stand
+						clusters(30, i(104947)),	-- Shoulders of the Roiling Inferno
 						-- Chest
+						clusters(50, i(105131)),	-- Amber Parasite Wraps
+						clusters(50, i(105063)),	-- Lazahk's Lost Shadowrap
+						clusters(50, i(104954)),	-- Robes of the Blackened Watcher
+						clusters(50, i(105054)),	-- Robes of the Warrior's Fall
 						-- Wrist
+						clusters(30, i(105118)),	-- Bomber's Blackened Wristwatch
+						clusters(30, i(105079)),	-- Bracers of Averted Fatality
+						clusters(30, i(104927)),	-- Bracers of Purified Spirit
+						clusters(30, i(105024)),	-- Castlebreaker Bracers
+						clusters(30, i(105007)),	-- Laser Burn Bracers
+						clusters(30, i(105085)),	-- Mantid Carapace Augments
 						-- Hands
+						clusters(30, i(104970)),	-- Confident Grips
+						clusters(30, i(105818)),	-- Crimson Gauntlets of Death
+						clusters(30, i(104955)),	-- Gloves of the Golden Protector
+						clusters(30, i(105097)),	-- Klaxxi Grips of Rejuvenation
+						clusters(30, i(104987)),	-- Korgra's Venom-Soaked Gauntlets
+						clusters(30, i(105817)),	-- Siid's Silent Stranglers
 						-- Waist
+						clusters(50, i(105137)),	-- Cord of Black Dreams
+						clusters(50, i(105030)),	-- Damron's Belt of Darkness
+						clusters(50, i(105002)),	-- Dragonmaw Emergency Strap
+						clusters(50, i(105153)),	-- Seal of Karmic Return
 						-- Legs
+						clusters(50, i(105031)),	-- Riou's Vigilant Leggings
+						clusters(50, i(105098)),	-- Shado-Pan Reliquary Kilt
 						-- Feet
+						clusters(50, i(104969)),	-- Boots of Broken Reliance
+						clusters(50, i(105078)),	-- Boots of Perilous Infusion
+						clusters(50, i(105084)),	-- Pandaren Roofsprinters
+						clusters(50, i(104926)),	-- Salt Water Sandals
+						clusters(50, i(104933)),	-- Stonetoe's Tormented Treads
+						clusters(50, i(104986)),	-- Unrepentant Heels
 					},
 					{	-- Cloth Armor
 						-- Head
+						clusters(50, i(105149)),	-- Ebon Ritual Hood
+						clusters(50, i(104997)),	-- Flameslinger's Fiery Cowl
+						clusters(50, i(105072)),	-- Hood of Perpetual Implosion
+						clusters(50, i(104922)),	-- Hood of Swirling Senses
+						clusters(50, i(105040)),	-- Iron Wolf Hood
 						-- Shoulders
+						clusters(30, i(104921)),	-- Ichor-Dripping Shoulderpads
+						clusters(30, i(104966)),	-- Rime-Rift Shoulders
+						clusters(30, i(104943)),	-- Shoulderpads of Dou Dou Chong
+						clusters(30, i(104999)),	-- Shoulderpads of Pulsing Protection
+						clusters(30, i(105059)),	-- Spaulders of Kor'kron Fealty
 						-- Chest
+						clusters(50, i(105106)),	-- Akolik's Acid-Soaked Robes
+						clusters(50, i(105094)),	-- Mantid Vizier's Robes
+						clusters(50, i(105073)),	-- Robes of Riven Dreams
+						clusters(50, i(104942)),	-- Robes of the Tendered Heart
+						clusters(50, i(105021)),	-- Shock Pulse Robes
 						-- Wrist
+						clusters(30, i(105093)),	-- Avool's Ancestral Bracers
+						clusters(30, i(104963)),	-- Bracers of Broken Causation
+						clusters(30, i(105128)),	-- Bracers of Sonic Projection
+						clusters(30, i(105019)),	-- Bracers of the Broken Fault
+						clusters(30, i(104944)),	-- Lifebane Bracers
+						clusters(30, i(104996)),	-- Scalebane Bracers
 						-- Hands
+						clusters(30, i(104964)),	-- Blight Hurlers
+						clusters(30, i(104920)),	-- Bolt-Burster Grips
+						clusters(30, i(105020)),	-- Earthripper Gloves
+						clusters(30, i(105115)),	-- Fusespark Gloves
+						clusters(30, i(105813)),	-- Kalaena's Arcane Handwraps
+						clusters(30, i(105105)),	-- Montak's Grips of Scorching Breath
+						clusters(30, i(105814)),	-- Seebo's Sainted Touch
 						-- Waist
+						clusters(50, i(105017)),	-- Belt of Ominous Trembles
+						clusters(50, i(105148)),	-- Belt of the Broken Pact
+						clusters(50, i(105071)),	-- Miasmic Skullbelt
+						clusters(50, i(104965)),	-- Sash of the Last Guardian
 						-- Legs
+						clusters(50, i(105018)),	-- Leggings of Furious Flame
 						-- Feet
+						clusters(50, i(104995)),	-- Bone-Inlaid Sandals
+						clusters(50, i(105050)),	-- Sandals of Two Little Bees
+						clusters(50, i(104941)),	-- Sha-Seared Sandals
+						clusters(50, i(104998)),	-- Skydancer Boots
+						clusters(50, i(105039)),	-- Toxic Tornado Treads
 					},
 					{	-- Rings
-
+						clusters(30, i(105122)),	-- Asgorathian Blood Seal
+						clusters(30, i(105036)),	-- Bloodclaw Band
+						clusters(30, i(105113)),	-- Devilfang Band
+						clusters(30, i(105000)),	-- Extinguished Ember of Galakras
+						clusters(30, i(104994)),	-- Galakrond Control Band
+						clusters(30, i(105130)),	-- Iyyokuk's Hereditary Seal
+						clusters(30, i(105126)),	-- Kil'ruk's Band of Ascendancy
+						clusters(30, i(105022)),	-- Laser-Slice Signet
+						clusters(30, i(104945)),	-- Petrified Pennyroyal Ring
+						clusters(30, i(104953)),	-- Reality Ripper Ring
+						clusters(30, i(105060)),	-- Ring of Restless Energy
+						clusters(30, i(105038)),	-- Ring of the Iron Tomb
+						clusters(30, i(104925)),	-- Seal of Eternal Sorrow
+						clusters(30, i(105076)),	-- Seal of Sullen Fury
+						clusters(30, i(105091)),	-- Seal of the Forgotten Kings
+						clusters(30, i(105108)),	-- Signet of the Dinomancers
+						clusters(30, i(104938)),	-- Sorrowpath Signet
+						clusters(30, i(104985)),	-- Swift Serpent Signet
 					},
 					{	-- Trinkets
-
+						clusters(50, i(104974)),	-- Assurance of Consequence
+						clusters(50, i(105150)),	-- Black Blood of Y'Shaarj
+						clusters(50, i(105147)),	-- Curse of Hubris
+						clusters(50, i(105117)),	-- Dysmorphic Samophlange of Discontinuity
+						clusters(50, i(104993)),	-- Evil Eye of Galakras
+						clusters(50, i(105074)),	-- Frenzied Crystal of Rage
+						clusters(50, i(104961)),	-- Fusion-Fire Core
+						clusters(50, i(105029)),	-- Haromm's Talisman
+						clusters(50, i(105016)),	-- Juggernaut's Focusing Crystal
+						clusters(50, i(105042)),	-- Kardris' Toxic Totem
+						clusters(50, i(105051)),	-- Nazgrim's Burnished Insignia
+						clusters(50, i(104976)),	-- Prismatic Prison of Pride
+						clusters(50, i(104924)),	-- Purified Bindings of Immerseus
+						clusters(50, i(104940)),	-- Rook's Unlucky Talisman
+						clusters(50, i(105082)),	-- Sigil of Rampage
+						clusters(50, i(105134)),	-- Skeer's Bloodsoaked Talisman
+						clusters(50, i(105109)),	-- Thok's Acid-Grooved Tooth
+						clusters(50, i(105111)),	-- Thok's Tail Tip
+						clusters(50, i(105114)),	-- Ticking Ebon Detonator
+						clusters(50, i(105070)),	-- Vial of Living Corruption
 					},
 					{	-- Bags
-						crystals(10, i(, {	-- Sack of Celestial Chance
-
+						clusters(10, i(276086, {	-- Coffer of Celestial Chance
+							i(248743),	-- Celestial Riding Serpent (MOUNT!)
 						})),
-						crystals(10, i()),	-- Satchel of Stone Crystals
+						clusters(10, i(276085)),	-- Satchel of Stone Clusters
 					},
 					{	-- Quest Items
-						crystals(35, i(94867)),	-- Heart of the Thunder King
-						crystals(5, i(94593)),	-- Secrets of the Empire
-						crystals(15, i(94594)),	-- Titan Runestone
-						crystals(15, i(87208)),	-- Sigil of Power
-						crystals(15, i(87209)),	-- Sigil of Wisdom
+						clusters(35, i(94867)),	-- Heart of the Thunder King
+						clusters(5, i(94593)),	-- Secrets of the Empire
+						clusters(15, i(94594)),	-- Titan Runestone
+						clusters(15, i(87208)),	-- Sigil of Power
+						clusters(15, i(87209)),	-- Sigil of Wisdom
 					},
 					{	-- Currency Conversion
-						crystals(1, currency(AUGUST_STONE_SHARD)),	-- 2x Shards for 1 Crystal
-						crystals(2, i(247796, {	-- Commendation of Service
+						clusters(1, currency(AUGUST_STONE_SHARD)),	-- 2x Shards for 1 Cluster
+						clusters(2, i(247796, {	-- Commendation of Service
 							currency(395),	-- Justice Points
 						})),
 					}),
 				}))),
-				]]--
 			}),
 		},
 	})),
