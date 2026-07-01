@@ -2806,7 +2806,8 @@ h(-39,{
 i(258738,{b=1,description="Mailed to you after your first death in a delve."})}),
 h(-45,{
 q(93784,{isWeekly=1,lvl=80,providers={{"i",262586}}}),
-q(93453,{lvl=78,providers={{"i",258738}},g={
+q(93453,{coords={
+[2393]={{52.7,77.6}}},lvl=78,providers={{"i",258738},{"n",254616}},g={
 cq(93866,{b=1,itemID=262966,spellID=1269622})}})}),
 h(-46),
 h(-56,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},g={

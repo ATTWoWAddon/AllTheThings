@@ -1436,7 +1436,6 @@ _.Modules.Events.SetEventInformation(7, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=20,["weekday"]=2,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=4,["weekday"]=2,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026},{["remappedID"]=376}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=7,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=14,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026},{["remappedID"]=376}),
@@ -1446,7 +1445,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=13,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["remappedID"]=376}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=4,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["remappedID"]=375})
 });
 -- Filter Database Module
 _.FilterConstants = {
@@ -4564,7 +4564,7 @@ local phases = {
 		description = "|cFFAAFFAAThis was not available until Phase 2 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Serpentshrine Cavern, Tempest Keep: The Eye, and Swift Druid Flight Forms.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20506,
+		buildVersion = 20505,
 		state = 2,
 	},
 	[1801] = {
@@ -4572,7 +4572,7 @@ local phases = {
 		description = "|cFFAAFFAAThis became available with the Ogri'la Faction during TBC Classic.|r",
 		lore = "|cFFFFAAAAIf the Ogri'la Faction is available on your server, simply turn this on.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20506,
+		buildVersion = 20505,
 		state = 2,
 	},
 	[1802] = {
@@ -4580,7 +4580,7 @@ local phases = {
 		description = "|cFFAAFFAAThis became available with the Skyguard Faction during TBC Classic.|r",
 		lore = "|cFFFFAAAAIf the Skyguard Faction is available on your server, simply turn this on.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20506,
+		buildVersion = 20505,
 		state = 2,
 	},
 	[19] = {
@@ -4588,7 +4588,7 @@ local phases = {
 		description = "|cFFAAFFAAThis was not available until Phase 3 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20507,
+		buildVersion = 20506,
 		state = 2,
 	},
 	[1901] = {
@@ -4596,7 +4596,7 @@ local phases = {
 		description = "|cFFAAFFAAThis became available with the Netherwing Faction during TBC Classic.|r",
 		lore = "|cFFFFAAAAIf the Netherwing Faction is available on your server, simply turn this on.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20507,
+		buildVersion = 20506,
 		state = 2,
 	},
 	[1902] = {

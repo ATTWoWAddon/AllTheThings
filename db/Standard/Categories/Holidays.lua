@@ -2539,9 +2539,9 @@ q(95009,{coords={
 [2339]={{46,55}},
 [2393]={{51.1,76.4}}},e=1793,isBreadcrumb=1,nextQuests={94954},qgs={220307},r=1}),
 q(94954,{coords={
-[463]={{46.7,47.4}}},e=1793,qgs={259191},sourceQuests={95009},g={
+[463]={{46.7,47.4}}},e=1793,qgs={259191},r=1,sourceQuests={95009},g={
 title(749,{collectible=false,e=1793}),
-toy(267323,{description="The Quest for this Toy is Horde Only!",e=1793})}})}}),
+toy(267323,{e=1793})}})}}),
 h(-58,{e=1793,g={
 n(259188,{coords={
 [463]={{47.5,46.6}}},e=1793,sym={{"select","itemID",210469,140309}},g={
