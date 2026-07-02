@@ -841,7 +841,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					-- #if ANYCLASSIC
+					-- #if MOP
 					n(257969, {	-- Jaelof Ironhart <Challenge Mode Exchange>
 						["coord"] = { 39.4, 45.2, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
