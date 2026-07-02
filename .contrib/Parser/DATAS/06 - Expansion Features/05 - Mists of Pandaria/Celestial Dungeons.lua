@@ -2086,7 +2086,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					},
 					{	-- Bags
 						clusters(10, i(276086, {	-- Coffer of Celestial Chance
-							i(248743),	-- Celestial Riding Serpent (MOUNT!)
+							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
+							i(87786),	-- Reins of the Black Riding Yak (MOUNT!)
+							i(248743),	-- Reins of the Celestial Riding Serpent (MOUNT!)
+							i(87794),	-- Reins of the Golden Water Strider (MOUNT!)
+							i(94231),	-- Reins of the Jade Primordial Direhorn (MOUNT!)
+							i(84753),	-- Reins of the White Riding Yak (MOUNT!)
+							i(93666),	-- Spawn of Horridon (MOUNT!)
+
+							i(104158),	-- Blackfuse Bombling (PET!)
+							i(97960),	-- Dark Quivering Blob (PET!)
+							i(94573),	-- Direhorn Runt (PET!)
+							i(104162),	-- Droplet of Y'Shaarj (PET!)
+							i(97961),	-- Half-Empty Food Container (PET!)
+							i(86563),	-- Hollow Reed (PET!)
+							i(86564),	-- Imbued Jade Fragment (PET!)
+							i(88148),	-- Jade Crane Chick (PET!)
+							i(94835),	-- Ji-Kun Hatchling (PET!)
+							i(104165),	-- Kovok (PET!)
+							i(94125),	-- Living Sandling (PET!)
+							i(89587),	-- Porcupette (PET!)
+							i(94574),	-- Pygmy Direhorn (PET!)
+							i(97959),	-- Quivering Blob (PET!)
+							i(94152),	-- Son of Animus (PET!)
+							i(94595),	-- Spawn of G'nathus (PET!)
+							i(94124),	-- Sunreaver Micro-Sentry (PET!)
+							i(94933),	-- Tiny Blue Carp (PET!)
+							i(94934),	-- Tiny Green Carp (PET!)
+							i(94932),	-- Tiny Red Carp (PET!)
+							i(95423),	-- Zandalari Footslasher (PET!)
+							i(94126),	-- Zandalari Kneebiter (PET!)
+							i(95424),	-- Zandalari Toenibbler (PET!)
 						})),
 						clusters(10, i(276085)),	-- Satchel of Stone Clusters
 					},
