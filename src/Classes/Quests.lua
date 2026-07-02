@@ -2649,7 +2649,7 @@ local function TryPopulateQuestRewards(questObject)
 	local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 	for j=1,numQuestRewards,1 do
 		local itemID = select(6, GetQuestLogRewardInfo(j, questID));
-		-- app.PrintDebug("TPQR:REWARDINFO",questID,j,HaveQuestData(questID),GetQuestLogRewardInfo(j, questID),"=>",itemID)
+		-- app.PrintDebug("TPQR:REWARDINFO",questID,j,HaveQuestRewardData(questID),GetQuestLogRewardInfo(j, questID),"=>",itemID)
 		if itemID then
 			---@diagnostic disable-next-line: inject-field
 			QuestHarvester.AllTheThingsProcessing = true;
@@ -2698,6 +2698,7 @@ local function TryPopulateQuestRewards(questObject)
 					if skipCollectibleCurrencies or SuperSpammyWorldQuestDrops[itemID] then
 						item.skipFull = true
 					end
+					app.EnsureObject(item)
 					app.NestObject(questObject, item, true);
 				end
 			end
@@ -2795,6 +2796,7 @@ local function TryPopulateQuestRewards(questObject)
 		for _,item in pairs(apiItems) do
 			item.sourceParent = nil;
 		end
+		app.EnsureObject(nonItemNested)
 		app.NestObjects(questObject, nonItemNested, true);
 	end
 

@@ -515,6 +515,7 @@ app:CreateWindow("WorldQuests", {
 						-- common logic
 						local idType = (rewardType or "item").."ID";
 						local thing = { [idType] = itemID };
+						app.EnsureObject(thing)
 						local _cache = app.SearchForField(idType, itemID);
 						for _,data in ipairs(_cache) do
 							-- copy any sourced data for the dungeon reward into the list
