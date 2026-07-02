@@ -12750,6 +12750,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
+
+			-- #if BEFORE MID
+			-- Added to TWW Elite Ensembles with Midnight
 			header(HEADERS.Object, 456208, {	-- The Catalyst
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
@@ -12897,6 +12900,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
+			-- #endif
+
+			-- #if BEFORE MID
+			-- Added to TWW Elite Ensembles with Midnight
 			n(SEASON_FORGED, {
 				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
@@ -13057,6 +13064,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
+			-- #endif
 		})),
 
 		-- 11.0.5
@@ -14573,6 +14581,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
+
+			-- #if BEFORE MID
+			-- Added to TWW Elite Ensembles with Midnight
 			n(SEASON_PRIZED, {
 				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
@@ -14733,6 +14744,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
+			-- #endif
 		})),
 
 		-- 11.2.0
@@ -15969,6 +15981,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
+
+			-- #if BEFORE MID
+			-- Added to TWW Elite Ensembles with Midnight
 			header(HEADERS.Object, 456208, {	-- The Catalyst
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
@@ -16116,6 +16131,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
+			-- #endif
+
+			-- #if BEFORE MID
+			-- Added to TWW Elite Ensembles with Midnight
 			n(SEASON_ASTRAL, {
 				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
@@ -16276,6 +16295,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
+			-- #endif
 		})),
 
 		-- 11.2.5
