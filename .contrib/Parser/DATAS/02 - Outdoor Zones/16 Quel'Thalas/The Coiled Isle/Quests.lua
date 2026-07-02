@@ -556,8 +556,53 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = { i(280105) },	-- Disgraced Amani Tablet
 					}),
 				}),
-				--header(HEADERS.AchCriteria, 63641.04, {	-- Bone Deep
-				--}),
+				header(HEADERS.AchCriteria, 63641.04, {	-- Bone Deep
+					q(94031, {	-- Bones of My Soul
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 257298,	-- Loa Speaker Yl'mul
+						["coord"] = { 59.1, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							o(618320, {	-- Yl'mul's Other Arm
+								["coord"] = { 57.0, 67.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+								["groups"] = { i(264697) },	-- Yl'mul's Other Arm (QI!)
+							}),
+							o(618319, {	-- Yl'mul's Ribcage
+								["coord"] = { 56.9, 65.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+								["groups"] = { i(264698) },	-- Yl'mul's Ribcage (QI!)
+							}),
+							o(618321, {	-- Yl'mul's Skull
+								["coord"] = { 58.2, 66.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+								["groups"] = { i(264696) },	-- Yl'mul's Skull (QI!)
+							}),
+						},
+					}),
+					q(94035, {	-- Meat for the Bones
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 257298,	-- Loa Speaker Yl'mul
+						["coord"] = { 59.1, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(264704) },	-- Sea Creature Meat (QI!)
+					}),
+					q(94036, {	-- One Final Prisoner
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 257298,	-- Loa Speaker Yl'mul
+						["coord"] = { 59.1, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(94040, {	-- Meat and Bone and Soul
+						["sourceQuests"] = {
+							94031,	-- Bones of My Soul
+							94035,	-- Meat for the Bones
+							94036,	-- One Final Prisoner
+						},
+						["qg"] = 257298,	-- Loa Speaker Yl'mul
+						["coord"] = { 59.1, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(278909),	-- Cloak of Chumming
+							i(278912),	-- Gral-Blessed Greatcloak
+							i(278911),	-- Shipwrecked Shroud
+							i(278910),	-- Yl'mul's Waterlogged Wrap
+						},
+					}),
+				}),
 				--header(HEADERS.AchCriteria, 63641.05, {	-- The Honored Mad'jai
 				--}),
 				header(HEADERS.AchCriteria, 63641.06, {	-- Don't be Afrayed

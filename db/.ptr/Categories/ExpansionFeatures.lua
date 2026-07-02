@@ -43572,6 +43572,8 @@ r(1236085,{cost={{"c",3392,500},{"c",3258,150}},itemID=256756,requireSkill=333,s
 r(1248619,{cost={{"c",3392,500},{"c",3261,150}},itemID=267399,requireSkill=773,skillID=2913}),
 r(1248628,{cost={{"c",3392,500},{"c",3261,150}},itemID=267400,requireSkill=773,skillID=2913})}})}),
 h(-62,{
+q(95974,{awp=120100,coords={
+[2512]={{54.2,43.2}}},isWorldQuest=1}),
 q(91601,{coords={
 [2395]={{42.7,56}}},isWorldQuest=1}),
 q(91602,{isWorldQuest=1}),

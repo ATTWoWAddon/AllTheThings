@@ -565,6 +565,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		n(WORLD_QUESTS, sharedData({
 			["isWorldQuest"] = true,
 		}, {
+			q(95974, {	-- Prey: Abandoned Camp
+				["coord"] = { 54.2, 43.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			q(91601, {	-- Prey: Apex Predator
 				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),

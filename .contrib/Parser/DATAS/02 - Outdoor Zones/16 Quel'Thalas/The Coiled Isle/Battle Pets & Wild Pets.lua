@@ -4,6 +4,12 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		filter(BATTLE_PETS, {
+			i(270248, {	-- Autumn Snapling (PET!)
+				["crs"] = { 262248 },	-- Autumn Snapling
+				["coords"] = {
+					{ 67.9, 81.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+				},
+			}),
 			i(270214, {	-- Poisoned Parasite (PET!)
 				["crs"] = { 262222 },	-- Poisoned Parasite
 				["coords"] = {

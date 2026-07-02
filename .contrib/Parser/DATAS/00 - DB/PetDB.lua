@@ -4641,6 +4641,7 @@ i(246723, 4860);	-- Unfazed Diver
 ------------------
 -- PATCH 12.1.0 --
 ------------------
+i(270248, 5035);	-- Autumn Snapling
 i(270214, 5028);	-- Poisoned Parasite
 i(270251, 5033);	-- Sleek Snakebiter
 i(276248, 5093);	-- Snek'zali
@@ -4650,7 +4651,6 @@ i(268644, 5011);	-- Zan
 --- UNSORTED ---
 i(277322, 5119);	-- Amewbis
 i(275703, 5077);	-- ArcaneGolem2 Pet - Red
-i(270248, 5035);	-- Autumn Snapling
 i(277318, 5116);	-- Catsramas
 i(277319, 5117);	-- Cat'Thuzad
 i(280189, 5134);	-- Cauldron Concoction

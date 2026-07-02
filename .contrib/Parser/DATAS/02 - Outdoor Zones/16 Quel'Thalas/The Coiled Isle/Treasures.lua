@@ -220,6 +220,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				-- Exo Note: I don't know if this one will matter or not. It sparkles as if it is important. Currently has no HQT. Will remove if it turns out it is related to a quest or something.
 				["coord"] = { 51.4, 26.1, 2642 },	-- Tomb of the Lost Priest
 			}),
+			-- Decrepit Caches, there's a number of them throughout the Isle and crypts however they are locked and each of them require i(275048), -- Decrepit Key to open
 			-- Repeatables
 			o(654991, {	-- Cracked Canopic Jar
 				["description"] = "Spawns randomly around the temples.",

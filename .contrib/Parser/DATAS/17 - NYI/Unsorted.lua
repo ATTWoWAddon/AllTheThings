@@ -54,10 +54,6 @@ root(ROOTS.Unsorted, {
 			i(263875),	-- Griftah's Resizing Hex-Skull
 			i(263880),	-- Cherished Pet's Rug
 			i(264162),	-- Enchanted Snowflake
-			i(264696),	-- Yl'mul's Skull
-			i(264697),	-- Yl'mul's Other Arm
-			i(264698),	-- Yl'mul's Ribcage
-			i(264704),	-- Sea Creature Meat
 			i(265033),	-- Zul'Aman Brazier Post
 			i(265386),	-- Zul'Aman Amani Awning
 			i(265399),	-- Ritually-Charred Bones
@@ -116,7 +112,6 @@ root(ROOTS.Unsorted, {
 			i(270191),	-- Lil'Kruul's Hilt
 			i(270210),	-- Bird Feathers
 			i(270211),	-- Furiostraza's Filter
-			i(270248),	-- Autumn Snapling
 			i(270249),	-- Cursed Spawn
 			i(270252),	-- Nightfur Kapara
 			i(270253),	-- Jaundiced Slitherer
@@ -1441,10 +1436,6 @@ root(ROOTS.Unsorted, {
 			i(278874),	-- Lil' Dark Armageddon
 			i(278875),	-- Lil' Green Armageddon
 			i(278876),	-- Lil' Red Armageddon
-			i(278909),	-- Cloak of Chumming
-			i(278910),	-- Yl'mul's Waterlogged Wrap
-			i(278911),	-- Shipwrecked Shroud
-			i(278912),	-- Gral-Blessed Greatcloak
 			i(278982),	-- Hatchery of Hissing Eggs
 			i(278993),	-- Big Blue Armageddon
 			i(278994),	-- Big Green Armageddon
