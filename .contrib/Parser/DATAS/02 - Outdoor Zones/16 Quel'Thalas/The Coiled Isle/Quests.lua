@@ -344,7 +344,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 62297.06, {	-- The Call of the Void
 					q(95973, {	-- Echoes of the Darkwell
-						["sourceQuest"] = 93420,	-- Lor'themar's Judgement	-- Exo Note: Available from the get-go on PTR, this may change when Patch goes live. 93420 should be a proper sourceQuest as the story continuation fits nicely.
+						--["sourceQuest"] = 93420,	-- Lor'themar's Judgement	-- Exo Note: Available from the get-go on PTR, this may change when Patch goes live. 93420 should be a proper sourceQuest as the story continuation fits nicely.
 						["qg"] = 235787,	-- Lor'themar Theron
 						["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),
@@ -777,8 +777,55 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 				}),
-				--header(HEADERS.AchCriteria, 63641.10, {	-- Living Legend
-				--}),
+				header(HEADERS.AchCriteria, 63641.10, {	-- Living Legend
+					q(96523, {	-- Living Legend
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 265476,	-- Kehiah
+						["coord"] = { 59.4, 50.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96539, {	-- Last Resort
+						["sourceQuest"] = 96523,	-- Living Legend
+						["qg"] = 265660,	-- Kehiah
+						["coord"] = { 45.6, 48.3, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(96540, {	-- Strong Hands
+						["sourceQuest"] = 96539,	-- Last Resort
+						["qg"] = 265661,	-- Kehiah
+						["coord"] = { 44.4, 48.1, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(96541, {	-- Strong Mind
+						["sourceQuest"] = 96540,	-- Strong Hands
+						["qg"] = 265662,	-- Kehiah
+						["coord"] = { 43.6, 47.9, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(96543, {	-- Root of Survival
+						["sourceQuest"] = 96541,	-- Strong Mind
+						["qg"] = 265660,	-- Kehiah
+						["coord"] = { 45.6, 48.3, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(279995),	-- Critter Meat (QI!)
+							o(654240, {	-- Mound of Dirt
+								i(279994),	-- Withered Root (QI!)
+							}),
+						},
+					}),
+					q(96544, {	-- Bravely Burning
+						["sourceQuest"] = 96543,	-- Root of Survival
+						["qg"] = 265660,	-- Kehiah
+						["coord"] = { 45.6, 48.3, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(96545, {	-- Strong Voice
+						["sourceQuest"] = 96544,	-- Bravely Burning
+						["qg"] = 265666,	-- Kehiah
+						["coord"] = { 45.7, 49.0, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(96546, {	-- Strong Heart
+						["sourceQuest"] = 96545,	-- Strong Voice
+						["qg"] = 265668,	-- Kehiah
+						["coord"] = { 45.3, 48.7, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(280201) },	-- Book of Storytime (TOY!)
+					}),
+				}),
 				header(HEADERS.AchCriteria, 63641.11, {	-- The Monster's Mother
 					q(96439, {	-- Gone Dark
 						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog

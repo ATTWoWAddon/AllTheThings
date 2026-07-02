@@ -72,6 +72,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(WEAPONS, {
 				i(276059),	-- Headhunter's Hacker
+				i(276048),	-- Vipersbane Dagger
 			}),
 		}),
 	}),

@@ -1054,7 +1054,6 @@ root(ROOTS.Unsorted, {
 			i(276045),	-- Trailblazing Soulblade
 			i(276046),	-- Superclutch Smasher
 			i(276047),	-- Swamp Whomper
-			i(276048),	-- Vipersbane Dagger
 			i(276049),	-- Snakeslayer's Claymore
 			i(276050),	-- Victorious Spiritstaff
 			i(276051),	-- Fangmouth Warspear
@@ -1670,8 +1669,6 @@ root(ROOTS.Unsorted, {
 			i(279919),	-- Soulcoiler Jaw
 			i(279921),	-- Ki'clak
 			i(279922),	-- Altar of Corrosion
-			i(279994),	-- Withered Root
-			i(279995),	-- Critter Meat
 			i(279997),	-- Insidious Venomstone
 			i(280003),	-- Excising Knife
 			i(280004),	-- Corroded Key

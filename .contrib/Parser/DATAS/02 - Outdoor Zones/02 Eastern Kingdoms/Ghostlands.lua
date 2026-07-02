@@ -15,6 +15,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		["icon"] = 236765,
 		["timeline"] = { ADDED_2_0_1 },
 		["lvl"] = lvlsquish(10, 10, 1),
+		-- #if AFTER MID
+		["cr"] = 259326,	-- Zidormi
+		["coord"] = { 53.8, 8.6, EASTERN_PLAGUELANDS },
+		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(858),	-- Explore Ghostlands
