@@ -28,6 +28,12 @@ local PHOENIX_MOUNT_ONUPDATE = [[function(t)
 		t.collectible = false;
 	end
 end]];
+
+-- Challenge Modes
+local PLATINUM_COINS = 3407;	-- Platinum Coins
+local platinum = function(cost, item)
+	return applycost(item, { "c", PLATINUM_COINS, cost });
+end
 -- #endif
 
 local function RemovedWithSOO(t)
@@ -835,6 +841,446 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					-- #if MOP
+					n(257969, {	-- Jaelof Ironhart <Challenge Mode Exchange>
+						["coord"] = { 39.4, 45.2, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = sharedData({ ["timeline"] = { ADDED_5_5_0, REMOVED_6_0_2 } }, {
+							-- Cloth Armors
+							platinum(5, i(265220)),	-- Crimson Amice of the Betrayer
+							platinum(5, i(265215)),	-- Crimson Belt of the Betrayer
+							platinum(5, i(265216)),	-- Crimson Boots of the Betrayer
+							platinum(5, i(265221)),	-- Crimson Bracers of the Betrayer
+							platinum(5, i(265217)),	-- Crimson Handguards of the Betrayer
+							platinum(5, i(265218)),	-- Crimson Horns of the Betrayer
+							platinum(5, i(265219)),	-- Crimson Leggings of the Betrayer
+							platinum(5, i(265214)),	-- Crimson Robes of the Betrayer
+							platinum(5, i(265274)),	-- Golden Bracers of the Light
+							platinum(5, i(265267)),	-- Golden Cord of the Light
+							platinum(5, i(265270)),	-- Golden Cowl of the Light
+							platinum(5, i(265269)),	-- Golden Hands of the Light
+							platinum(5, i(265271)),	-- Golden Leggings of the Light
+							platinum(5, i(265273)),	-- Golden Pauldrons of the Light
+							platinum(5, i(265272)),	-- Golden Robes of the Light
+							platinum(5, i(265268)),	-- Golden Steps of the Light
+							platinum(5, i(265304)),	-- Ivory Boots of the Elemental Triad
+							platinum(5, i(265308)),	-- Ivory Bracers of the Elemental Triad
+							platinum(5, i(265303)),	-- Ivory Girdle of the Elemental Triad
+							platinum(5, i(265306)),	-- Ivory Gloves of the Elemental Triad
+							platinum(5, i(265307)),	-- Ivory Hood of the Elemental Triad
+							platinum(5, i(265309)),	-- Ivory Leggings of the Elemental Triad
+							platinum(5, i(265310)),	-- Ivory Robes of the Elemental Triad
+							platinum(5, i(265311)),	-- Ivory Spaulders of the Elemental Triad
+							platinum(5, i(265176)),	-- Obsidian Boots of the Elemental Triad
+							platinum(5, i(265181)),	-- Obsidian Bracers of the Elemental Triad
+							platinum(5, i(265173)),	-- Obsidian Bracers of the Light
+							platinum(5, i(265171)),	-- Obsidian Cord of the Light
+							platinum(5, i(265168)),	-- Obsidian Cowl of the Light
+							platinum(5, i(265175)),	-- Obsidian Girdle of the Elemental Triad
+							platinum(5, i(265177)),	-- Obsidian Gloves of the Elemental Triad
+							platinum(5, i(265169)),	-- Obsidian Hands of the Light
+							platinum(5, i(265178)),	-- Obsidian Hood of the Elemental Triad
+							platinum(5, i(265179)),	-- Obsidian Leggings of the Elemental Triad
+							platinum(5, i(265167)),	-- Obsidian Leggings of the Light
+							platinum(5, i(265172)),	-- Obsidian Pauldrons of the Light
+							platinum(5, i(265174)),	-- Obsidian Robes of the Elemental Triad
+							platinum(5, i(265166)),	-- Obsidian Robes of the Light
+							platinum(5, i(265180)),	-- Obsidian Spaulders of the Elemental Triad
+							platinum(5, i(265170)),	-- Obsidian Steps of the Light
+							platinum(5, i(265301)),	-- Twilight Amice of the Betrayer
+							platinum(5, i(265294)),	-- Twilight Belt of the Betrayer
+							platinum(5, i(265296)),	-- Twilight Boots of the Betrayer
+							platinum(5, i(265302)),	-- Twilight Bracers of the Betrayer
+							platinum(5, i(265297)),	-- Twilight Handguards of the Betrayer
+							platinum(5, i(265298)),	-- Twilight Horns of the Betrayer
+							platinum(5, i(265299)),	-- Twilight Leggings of the Betrayer
+							platinum(5, i(265300)),	-- Twilight Robes of the Betrayer
+
+							-- Leather Armors
+							platinum(5, i(265248)),	-- Azure Bracers of the Cycle
+							platinum(5, i(265189)),	-- Azure Bracers of the Regal Lord
+							platinum(5, i(265247)),	-- Azure Branches of the Cycle
+							platinum(5, i(265182)),	-- Azure Chestwrap of the Regal Lord
+							platinum(5, i(265186)),	-- Azure Crown of the Regal Lord
+							platinum(5, i(265243)),	-- Azure Gloves of the Cycle
+							platinum(5, i(265183)),	-- Azure Greatbelt of the Regal Lord
+							platinum(5, i(265185)),	-- Azure Handwraps of the Regal Lord
+							platinum(5, i(265244)),	-- Azure Hood of the Cycle
+							platinum(5, i(265245)),	-- Azure Leggings of the Cycle
+							platinum(5, i(265187)),	-- Azure Legwraps of the Regal Lord
+							platinum(5, i(265246)),	-- Azure Robes of the Cycle
+							platinum(5, i(265242)),	-- Azure Sandals of the Cycle
+							platinum(5, i(265188)),	-- Azure Shoulderguards of the Regal Lord
+							platinum(5, i(265184)),	-- Azure Treads of the Regal Lord
+							platinum(5, i(265240)),	-- Azure Waistguard of the Cycle
+							platinum(5, i(265157)),	-- Crimson Bracers of the Cycle
+							platinum(5, i(265156)),	-- Crimson Branches of the Cycle
+							platinum(5, i(265152)),	-- Crimson Gloves of the Cycle
+							platinum(5, i(265153)),	-- Crimson Hood of the Cycle
+							platinum(5, i(265154)),	-- Crimson Leggings of the Cycle
+							platinum(5, i(265155)),	-- Crimson Robes of the Cycle
+							platinum(5, i(265151)),	-- Crimson Sandals of the Cycle
+							platinum(5, i(265150)),	-- Crimson Waistguard of the Cycle
+							platinum(5, i(265266)),	-- Emerald Bracers of the Regal Lord
+							platinum(5, i(265261)),	-- Emerald Chestwrap of the Regal Lord
+							platinum(5, i(265263)),	-- Emerald Crown of the Regal Lord
+							platinum(5, i(265258)),	-- Emerald Greatbelt of the Regal Lord
+							platinum(5, i(265262)),	-- Emerald Handwraps of the Regal Lord
+							platinum(5, i(265264)),	-- Emerald Legwraps of the Regal Lord
+							platinum(5, i(265265)),	-- Emerald Shoulderguards of the Regal Lord
+							platinum(5, i(265260)),	-- Emerald Treads of the Regal Lord
+							platinum(5, i(265205)),	-- Obsidian Bracers of the Silent Assassin
+							platinum(5, i(265199)),	-- Obsidian Girdle of the Silent Assassin
+							platinum(5, i(265201)),	-- Obsidian Gloves of the Silent Assassin
+							platinum(5, i(265202)),	-- Obsidian Hood of the Silent Assassin
+							platinum(5, i(265203)),	-- Obsidian Leggings of the Silent Assassin
+							platinum(5, i(265198)),	-- Obsidian Shadowwrap of the Silent Assassin
+							platinum(5, i(265204)),	-- Obsidian Spaulders of the Silent Assassin
+							platinum(5, i(265200)),	-- Obsidian Tabi of the Silent Assassin
+							platinum(5, i(265284)),	-- Platinum Bracers of the Silent Assassin
+							platinum(5, i(265276)),	-- Platinum Girdle of the Silent Assassin
+							platinum(5, i(265279)),	-- Platinum Gloves of the Silent Assassin
+							platinum(5, i(265281)),	-- Platinum Hood of the Silent Assassin
+							platinum(5, i(265282)),	-- Platinum Leggings of the Silent Assassin
+							platinum(5, i(265280)),	-- Platinum Shadowwrap of the Silent Assassin
+							platinum(5, i(265283)),	-- Platinum Spaulders of the Silent Assassin
+							platinum(5, i(265278)),	-- Platinum Tabi of the Silent Assassin
+
+							-- Mail Armors
+							platinum(5, i(265207)),	-- Azure Windfury Belt
+							platinum(5, i(265213)),	-- Azure Windfury Bracers
+							platinum(5, i(265209)),	-- Azure Windfury Crushers
+							platinum(5, i(265206)),	-- Azure Windfury Harness
+							platinum(5, i(265211)),	-- Azure Windfury Legguards
+							platinum(5, i(265210)),	-- Azure Windfury Mask
+							platinum(5, i(265208)),	-- Azure Windfury Sandals
+							platinum(5, i(265212)),	-- Azure Windfury Spirit Guides
+							platinum(5, i(265285)),	-- Emerald Windfury Belt
+							platinum(5, i(265293)),	-- Emerald Windfury Bracers
+							platinum(5, i(265289)),	-- Emerald Windfury Crushers
+							platinum(5, i(265288)),	-- Emerald Windfury Harness
+							platinum(5, i(265291)),	-- Emerald Windfury Legguards
+							platinum(5, i(265290)),	-- Emerald Windfury Mask
+							platinum(5, i(265287)),	-- Emerald Windfury Sandals
+							platinum(5, i(265292)),	-- Emerald Windfury Spirit Guides
+							platinum(5, i(265250)),	-- Ivory Boots of the Howling Beast
+							platinum(5, i(265251)),	-- Ivory Chestguard of the Howling Beast
+							platinum(5, i(265249)),	-- Ivory Cinch of the Howling Beast
+							platinum(5, i(265252)),	-- Ivory Grips of the Howling Beast
+							platinum(5, i(265253)),	-- Ivory Helm of the Howling Beast
+							platinum(5, i(265255)),	-- Ivory Legguards of the Howling Beast
+							platinum(5, i(265256)),	-- Ivory Shoulderguards of the Howling Beast
+							platinum(5, i(265254)),	-- Ivory Wristwraps of the Howling Beast
+							platinum(5, i(265159)),	-- Obsidian Boots of the Howling Beast
+							platinum(5, i(265160)),	-- Obsidian Chestguard of the Howling Beast
+							platinum(5, i(265158)),	-- Obsidian Cinch of the Howling Beast
+							platinum(5, i(265161)),	-- Obsidian Grips of the Howling Beast
+							platinum(5, i(265162)),	-- Obsidian Helm of the Howling Beast
+							platinum(5, i(265163)),	-- Obsidian Legguards of the Howling Beast
+							platinum(5, i(265164)),	-- Obsidian Shoulderguards of the Howling Beast
+							platinum(5, i(265165)),	-- Obsidian Wristwraps of the Howling Beast
+
+							-- Plate Armors
+							platinum(5, i(265329)),	-- Azure Bracers of the Golden King
+							platinum(5, i(265321)),	-- Azure Chestplate of the Golden King
+							platinum(5, i(265326)),	-- Azure Crown of the Golden King
+							platinum(5, i(265323)),	-- Azure Girdle of the Golden King
+							platinum(5, i(265324)),	-- Azure Greatboots of the Golden King
+							platinum(5, i(265327)),	-- Azure Greaves of the Golden King
+							platinum(5, i(265328)),	-- Azure Mantle of the Golden King
+							platinum(5, i(265325)),	-- Azure Reach of the Golden King
+							platinum(5, i(265229)),	-- Crimson Bracers of the Golden King
+							platinum(5, i(265149)),	-- Crimson Bracers of the Lich Lord
+							platinum(5, i(265144)),	-- Crimson Chestguard of the Lich Lord
+							platinum(5, i(265224)),	-- Crimson Chestplate of the Golden King
+							platinum(5, i(265190)),	-- Crimson Chestplate of the Holy Warrior
+							platinum(5, i(265226)),	-- Crimson Crown of the Golden King
+							platinum(5, i(265146)),	-- Crimson Crown of the Lich Lord
+							platinum(5, i(265192)),	-- Crimson Gauntlets of the Holy Warrior
+							platinum(5, i(265222)),	-- Crimson Girdle of the Golden King
+							platinum(5, i(265195)),	-- Crimson Girdle of the Holy Warrior
+							platinum(5, i(265142)),	-- Crimson Girdle of the Lich Lord
+							platinum(5, i(265145)),	-- Crimson Grasps of the Lich Lord
+							platinum(5, i(265223)),	-- Crimson Greatboots of the Golden King
+							platinum(5, i(265191)),	-- Crimson Greatboots of the Holy Warrior
+							platinum(5, i(265193)),	-- Crimson Greathelm of the Holy Warrior
+							platinum(5, i(265227)),	-- Crimson Greaves of the Golden King
+							platinum(5, i(265194)),	-- Crimson Legplates of the Holy Warrior
+							platinum(5, i(265147)),	-- Crimson Legplates of the Lich Lord
+							platinum(5, i(265228)),	-- Crimson Mantle of the Golden King
+							platinum(5, i(265225)),	-- Crimson Reach of the Golden King
+							platinum(5, i(265148)),	-- Crimson Shoulderguards of the Lich Lord
+							platinum(5, i(265196)),	-- Crimson Shoulderplate of the Holy Warrior
+							platinum(5, i(265143)),	-- Crimson Treads of the Lich Lord
+							platinum(5, i(265197)),	-- Crimson Wristguards of the Holy Warrior
+							platinum(5, i(265239)),	-- Emerald Bracers of the Lich Lord
+							platinum(5, i(265234)),	-- Emerald Chestguard of the Lich Lord
+							platinum(5, i(265236)),	-- Emerald Crown of the Lich Lord
+							platinum(5, i(265231)),	-- Emerald Girdle of the Lich Lord
+							platinum(5, i(265235)),	-- Emerald Grasps of the Lich Lord
+							platinum(5, i(265237)),	-- Emerald Legplates of the Lich Lord
+							platinum(5, i(265238)),	-- Emerald Shoulderguards of the Lich Lord
+							platinum(5, i(265232)),	-- Emerald Treads of the Lich Lord
+							platinum(5, i(265313)),	-- Golden Chestplate of the Holy Warrior
+							platinum(5, i(265314)),	-- Golden Gauntlets of the Holy Warrior
+							platinum(5, i(265318)),	-- Golden Girdle of the Holy Warrior
+							platinum(5, i(265312)),	-- Golden Greatboots of the Holy Warrior
+							platinum(5, i(265315)),	-- Golden Greathelm of the Holy Warrior
+							platinum(5, i(265317)),	-- Golden Legplates of the Holy Warrior
+							platinum(5, i(265320)),	-- Golden Shoulderplate of the Holy Warrior
+							platinum(5, i(265319)),	-- Golden Wristguards of the Holy Warrior
+
+							-- Pets
+							platinum(15, i(265789)),	-- Eye of the Legion
+
+							-- Toys
+							platinum(50, i(49704)),		-- Carved Ogre Idol
+							platinum(15, i(265786)),	-- Demon Hunter's Aspect
+							platinum(15, i(54212)),		-- Instant Statue Pedestal
+							platinum(30, i(266999)),	-- Swift Yak Pelt
+
+							-- Mounts
+							platinum(70, i(265787)),	-- Magic Rooster Egg
+							platinum(50, i(90710)),		-- Reins of the Ashen Pandaren Phoenix
+							platinum(50, i(89154)),		-- Reins of the Crimson Pandaren Phoenix
+							platinum(50, i(90711)),		-- Reins of the Emerald Pandaren Phoenix
+							platinum(300, i(277652)),	-- Reins of the Juvenile Frostwyrm
+							platinum(50, i(90712)),		-- Reins of the Violet Pandaren Phoenix
+							platinum(150, i(276081)),	-- Spectral Wind Rider
+							platinum(300, i(276075)),	-- Stormcrow
+							platinum(40, i(265788)),	-- Wooly White Rhino
+
+							-- Tabards
+							platinum(30, i(265784)),	-- Tabard of Brilliance
+							platinum(30, i(276080)),	-- Tabard of Flame
+							platinum(30, i(276079)),	-- Tabard of Frost
+							platinum(30, i(265783)),	-- Tabard of Fury
+							platinum(30, i(276076)),	-- Tabard of Nature
+							platinum(30, i(276078)),	-- Tabard of the Arcane
+							platinum(30, i(276077)),	-- Tabard of the Defender
+							platinum(30, i(265785)),	-- Tabard of the Void
+						}),
+					}),
+					n(258126, {	-- Viktor Felhallow <Challenge Mode Exchange>
+						["coord"] = { 40.5, 73.3, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = HORDE_ONLY,
+						["groups"] = sharedData({ ["timeline"] = { ADDED_5_5_0, REMOVED_6_0_2 } }, {
+							-- Cloth Armors
+							platinum(5, i(265220)),	-- Crimson Amice of the Betrayer
+							platinum(5, i(265215)),	-- Crimson Belt of the Betrayer
+							platinum(5, i(265216)),	-- Crimson Boots of the Betrayer
+							platinum(5, i(265221)),	-- Crimson Bracers of the Betrayer
+							platinum(5, i(265217)),	-- Crimson Handguards of the Betrayer
+							platinum(5, i(265218)),	-- Crimson Horns of the Betrayer
+							platinum(5, i(265219)),	-- Crimson Leggings of the Betrayer
+							platinum(5, i(265214)),	-- Crimson Robes of the Betrayer
+							platinum(5, i(265274)),	-- Golden Bracers of the Light
+							platinum(5, i(265267)),	-- Golden Cord of the Light
+							platinum(5, i(265270)),	-- Golden Cowl of the Light
+							platinum(5, i(265269)),	-- Golden Hands of the Light
+							platinum(5, i(265271)),	-- Golden Leggings of the Light
+							platinum(5, i(265273)),	-- Golden Pauldrons of the Light
+							platinum(5, i(265272)),	-- Golden Robes of the Light
+							platinum(5, i(265268)),	-- Golden Steps of the Light
+							platinum(5, i(265304)),	-- Ivory Boots of the Elemental Triad
+							platinum(5, i(265308)),	-- Ivory Bracers of the Elemental Triad
+							platinum(5, i(265303)),	-- Ivory Girdle of the Elemental Triad
+							platinum(5, i(265306)),	-- Ivory Gloves of the Elemental Triad
+							platinum(5, i(265307)),	-- Ivory Hood of the Elemental Triad
+							platinum(5, i(265309)),	-- Ivory Leggings of the Elemental Triad
+							platinum(5, i(265310)),	-- Ivory Robes of the Elemental Triad
+							platinum(5, i(265311)),	-- Ivory Spaulders of the Elemental Triad
+							platinum(5, i(265176)),	-- Obsidian Boots of the Elemental Triad
+							platinum(5, i(265181)),	-- Obsidian Bracers of the Elemental Triad
+							platinum(5, i(265173)),	-- Obsidian Bracers of the Light
+							platinum(5, i(265171)),	-- Obsidian Cord of the Light
+							platinum(5, i(265168)),	-- Obsidian Cowl of the Light
+							platinum(5, i(265175)),	-- Obsidian Girdle of the Elemental Triad
+							platinum(5, i(265177)),	-- Obsidian Gloves of the Elemental Triad
+							platinum(5, i(265169)),	-- Obsidian Hands of the Light
+							platinum(5, i(265178)),	-- Obsidian Hood of the Elemental Triad
+							platinum(5, i(265179)),	-- Obsidian Leggings of the Elemental Triad
+							platinum(5, i(265167)),	-- Obsidian Leggings of the Light
+							platinum(5, i(265172)),	-- Obsidian Pauldrons of the Light
+							platinum(5, i(265174)),	-- Obsidian Robes of the Elemental Triad
+							platinum(5, i(265166)),	-- Obsidian Robes of the Light
+							platinum(5, i(265180)),	-- Obsidian Spaulders of the Elemental Triad
+							platinum(5, i(265170)),	-- Obsidian Steps of the Light
+							platinum(5, i(265301)),	-- Twilight Amice of the Betrayer
+							platinum(5, i(265294)),	-- Twilight Belt of the Betrayer
+							platinum(5, i(265296)),	-- Twilight Boots of the Betrayer
+							platinum(5, i(265302)),	-- Twilight Bracers of the Betrayer
+							platinum(5, i(265297)),	-- Twilight Handguards of the Betrayer
+							platinum(5, i(265298)),	-- Twilight Horns of the Betrayer
+							platinum(5, i(265299)),	-- Twilight Leggings of the Betrayer
+							platinum(5, i(265300)),	-- Twilight Robes of the Betrayer
+
+							-- Leather Armors
+							platinum(5, i(265248)),	-- Azure Bracers of the Cycle
+							platinum(5, i(265189)),	-- Azure Bracers of the Regal Lord
+							platinum(5, i(265247)),	-- Azure Branches of the Cycle
+							platinum(5, i(265182)),	-- Azure Chestwrap of the Regal Lord
+							platinum(5, i(265186)),	-- Azure Crown of the Regal Lord
+							platinum(5, i(265243)),	-- Azure Gloves of the Cycle
+							platinum(5, i(265183)),	-- Azure Greatbelt of the Regal Lord
+							platinum(5, i(265185)),	-- Azure Handwraps of the Regal Lord
+							platinum(5, i(265244)),	-- Azure Hood of the Cycle
+							platinum(5, i(265245)),	-- Azure Leggings of the Cycle
+							platinum(5, i(265187)),	-- Azure Legwraps of the Regal Lord
+							platinum(5, i(265246)),	-- Azure Robes of the Cycle
+							platinum(5, i(265242)),	-- Azure Sandals of the Cycle
+							platinum(5, i(265188)),	-- Azure Shoulderguards of the Regal Lord
+							platinum(5, i(265184)),	-- Azure Treads of the Regal Lord
+							platinum(5, i(265240)),	-- Azure Waistguard of the Cycle
+							platinum(5, i(265157)),	-- Crimson Bracers of the Cycle
+							platinum(5, i(265156)),	-- Crimson Branches of the Cycle
+							platinum(5, i(265152)),	-- Crimson Gloves of the Cycle
+							platinum(5, i(265153)),	-- Crimson Hood of the Cycle
+							platinum(5, i(265154)),	-- Crimson Leggings of the Cycle
+							platinum(5, i(265155)),	-- Crimson Robes of the Cycle
+							platinum(5, i(265151)),	-- Crimson Sandals of the Cycle
+							platinum(5, i(265150)),	-- Crimson Waistguard of the Cycle
+							platinum(5, i(265266)),	-- Emerald Bracers of the Regal Lord
+							platinum(5, i(265261)),	-- Emerald Chestwrap of the Regal Lord
+							platinum(5, i(265263)),	-- Emerald Crown of the Regal Lord
+							platinum(5, i(265258)),	-- Emerald Greatbelt of the Regal Lord
+							platinum(5, i(265262)),	-- Emerald Handwraps of the Regal Lord
+							platinum(5, i(265264)),	-- Emerald Legwraps of the Regal Lord
+							platinum(5, i(265265)),	-- Emerald Shoulderguards of the Regal Lord
+							platinum(5, i(265260)),	-- Emerald Treads of the Regal Lord
+							platinum(5, i(265205)),	-- Obsidian Bracers of the Silent Assassin
+							platinum(5, i(265199)),	-- Obsidian Girdle of the Silent Assassin
+							platinum(5, i(265201)),	-- Obsidian Gloves of the Silent Assassin
+							platinum(5, i(265202)),	-- Obsidian Hood of the Silent Assassin
+							platinum(5, i(265203)),	-- Obsidian Leggings of the Silent Assassin
+							platinum(5, i(265198)),	-- Obsidian Shadowwrap of the Silent Assassin
+							platinum(5, i(265204)),	-- Obsidian Spaulders of the Silent Assassin
+							platinum(5, i(265200)),	-- Obsidian Tabi of the Silent Assassin
+							platinum(5, i(265284)),	-- Platinum Bracers of the Silent Assassin
+							platinum(5, i(265276)),	-- Platinum Girdle of the Silent Assassin
+							platinum(5, i(265279)),	-- Platinum Gloves of the Silent Assassin
+							platinum(5, i(265281)),	-- Platinum Hood of the Silent Assassin
+							platinum(5, i(265282)),	-- Platinum Leggings of the Silent Assassin
+							platinum(5, i(265280)),	-- Platinum Shadowwrap of the Silent Assassin
+							platinum(5, i(265283)),	-- Platinum Spaulders of the Silent Assassin
+							platinum(5, i(265278)),	-- Platinum Tabi of the Silent Assassin
+
+							-- Mail Armors
+							platinum(5, i(265207)),	-- Azure Windfury Belt
+							platinum(5, i(265213)),	-- Azure Windfury Bracers
+							platinum(5, i(265209)),	-- Azure Windfury Crushers
+							platinum(5, i(265206)),	-- Azure Windfury Harness
+							platinum(5, i(265211)),	-- Azure Windfury Legguards
+							platinum(5, i(265210)),	-- Azure Windfury Mask
+							platinum(5, i(265208)),	-- Azure Windfury Sandals
+							platinum(5, i(265212)),	-- Azure Windfury Spirit Guides
+							platinum(5, i(265285)),	-- Emerald Windfury Belt
+							platinum(5, i(265293)),	-- Emerald Windfury Bracers
+							platinum(5, i(265289)),	-- Emerald Windfury Crushers
+							platinum(5, i(265288)),	-- Emerald Windfury Harness
+							platinum(5, i(265291)),	-- Emerald Windfury Legguards
+							platinum(5, i(265290)),	-- Emerald Windfury Mask
+							platinum(5, i(265287)),	-- Emerald Windfury Sandals
+							platinum(5, i(265292)),	-- Emerald Windfury Spirit Guides
+							platinum(5, i(265250)),	-- Ivory Boots of the Howling Beast
+							platinum(5, i(265251)),	-- Ivory Chestguard of the Howling Beast
+							platinum(5, i(265249)),	-- Ivory Cinch of the Howling Beast
+							platinum(5, i(265252)),	-- Ivory Grips of the Howling Beast
+							platinum(5, i(265253)),	-- Ivory Helm of the Howling Beast
+							platinum(5, i(265255)),	-- Ivory Legguards of the Howling Beast
+							platinum(5, i(265256)),	-- Ivory Shoulderguards of the Howling Beast
+							platinum(5, i(265254)),	-- Ivory Wristwraps of the Howling Beast
+							platinum(5, i(265159)),	-- Obsidian Boots of the Howling Beast
+							platinum(5, i(265160)),	-- Obsidian Chestguard of the Howling Beast
+							platinum(5, i(265158)),	-- Obsidian Cinch of the Howling Beast
+							platinum(5, i(265161)),	-- Obsidian Grips of the Howling Beast
+							platinum(5, i(265162)),	-- Obsidian Helm of the Howling Beast
+							platinum(5, i(265163)),	-- Obsidian Legguards of the Howling Beast
+							platinum(5, i(265164)),	-- Obsidian Shoulderguards of the Howling Beast
+							platinum(5, i(265165)),	-- Obsidian Wristwraps of the Howling Beast
+
+							-- Plate Armors
+							platinum(5, i(265329)),	-- Azure Bracers of the Golden King
+							platinum(5, i(265321)),	-- Azure Chestplate of the Golden King
+							platinum(5, i(265326)),	-- Azure Crown of the Golden King
+							platinum(5, i(265323)),	-- Azure Girdle of the Golden King
+							platinum(5, i(265324)),	-- Azure Greatboots of the Golden King
+							platinum(5, i(265327)),	-- Azure Greaves of the Golden King
+							platinum(5, i(265328)),	-- Azure Mantle of the Golden King
+							platinum(5, i(265325)),	-- Azure Reach of the Golden King
+							platinum(5, i(265229)),	-- Crimson Bracers of the Golden King
+							platinum(5, i(265149)),	-- Crimson Bracers of the Lich Lord
+							platinum(5, i(265144)),	-- Crimson Chestguard of the Lich Lord
+							platinum(5, i(265224)),	-- Crimson Chestplate of the Golden King
+							platinum(5, i(265190)),	-- Crimson Chestplate of the Holy Warrior
+							platinum(5, i(265226)),	-- Crimson Crown of the Golden King
+							platinum(5, i(265146)),	-- Crimson Crown of the Lich Lord
+							platinum(5, i(265192)),	-- Crimson Gauntlets of the Holy Warrior
+							platinum(5, i(265222)),	-- Crimson Girdle of the Golden King
+							platinum(5, i(265195)),	-- Crimson Girdle of the Holy Warrior
+							platinum(5, i(265142)),	-- Crimson Girdle of the Lich Lord
+							platinum(5, i(265145)),	-- Crimson Grasps of the Lich Lord
+							platinum(5, i(265223)),	-- Crimson Greatboots of the Golden King
+							platinum(5, i(265191)),	-- Crimson Greatboots of the Holy Warrior
+							platinum(5, i(265193)),	-- Crimson Greathelm of the Holy Warrior
+							platinum(5, i(265227)),	-- Crimson Greaves of the Golden King
+							platinum(5, i(265194)),	-- Crimson Legplates of the Holy Warrior
+							platinum(5, i(265147)),	-- Crimson Legplates of the Lich Lord
+							platinum(5, i(265228)),	-- Crimson Mantle of the Golden King
+							platinum(5, i(265225)),	-- Crimson Reach of the Golden King
+							platinum(5, i(265148)),	-- Crimson Shoulderguards of the Lich Lord
+							platinum(5, i(265196)),	-- Crimson Shoulderplate of the Holy Warrior
+							platinum(5, i(265143)),	-- Crimson Treads of the Lich Lord
+							platinum(5, i(265197)),	-- Crimson Wristguards of the Holy Warrior
+							platinum(5, i(265239)),	-- Emerald Bracers of the Lich Lord
+							platinum(5, i(265234)),	-- Emerald Chestguard of the Lich Lord
+							platinum(5, i(265236)),	-- Emerald Crown of the Lich Lord
+							platinum(5, i(265231)),	-- Emerald Girdle of the Lich Lord
+							platinum(5, i(265235)),	-- Emerald Grasps of the Lich Lord
+							platinum(5, i(265237)),	-- Emerald Legplates of the Lich Lord
+							platinum(5, i(265238)),	-- Emerald Shoulderguards of the Lich Lord
+							platinum(5, i(265232)),	-- Emerald Treads of the Lich Lord
+							platinum(5, i(265313)),	-- Golden Chestplate of the Holy Warrior
+							platinum(5, i(265314)),	-- Golden Gauntlets of the Holy Warrior
+							platinum(5, i(265318)),	-- Golden Girdle of the Holy Warrior
+							platinum(5, i(265312)),	-- Golden Greatboots of the Holy Warrior
+							platinum(5, i(265315)),	-- Golden Greathelm of the Holy Warrior
+							platinum(5, i(265317)),	-- Golden Legplates of the Holy Warrior
+							platinum(5, i(265320)),	-- Golden Shoulderplate of the Holy Warrior
+							platinum(5, i(265319)),	-- Golden Wristguards of the Holy Warrior
+
+							-- Pets
+							platinum(15, i(265789)),	-- Eye of the Legion
+
+							-- Toys
+							platinum(50, i(49704)),		-- Carved Ogre Idol
+							platinum(15, i(265786)),	-- Demon Hunter's Aspect
+							platinum(15, i(54212)),		-- Instant Statue Pedestal
+							platinum(30, i(266999)),	-- Swift Yak Pelt
+
+							-- Mounts
+							platinum(70, i(265787)),	-- Magic Rooster Egg
+							platinum(50, i(90710)),		-- Reins of the Ashen Pandaren Phoenix
+							platinum(50, i(89154)),		-- Reins of the Crimson Pandaren Phoenix
+							platinum(50, i(90711)),		-- Reins of the Emerald Pandaren Phoenix
+							platinum(300, i(277652)),	-- Reins of the Juvenile Frostwyrm
+							platinum(50, i(90712)),		-- Reins of the Violet Pandaren Phoenix
+							platinum(150, i(276081)),	-- Spectral Wind Rider
+							platinum(300, i(276075)),	-- Stormcrow
+							platinum(40, i(265788)),	-- Wooly White Rhino
+
+							-- Tabards
+							platinum(30, i(265784)),	-- Tabard of Brilliance
+							platinum(30, i(276080)),	-- Tabard of Flame
+							platinum(30, i(276079)),	-- Tabard of Frost
+							platinum(30, i(265783)),	-- Tabard of Fury
+							platinum(30, i(276076)),	-- Tabard of Nature
+							platinum(30, i(276078)),	-- Tabard of the Arcane
+							platinum(30, i(276077)),	-- Tabard of the Defender
+							platinum(30, i(265785)),	-- Tabard of the Void
+						}),
+					}),
+					-- #endif
 					n(64028, {	-- Challenger Soong <Challenge Dungeons>
 						["description"] = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
 						["coord"] = { 86.3, 61.5, VALE_OF_ETERNAL_BLOSSOMS },
