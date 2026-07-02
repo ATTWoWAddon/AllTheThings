@@ -333,7 +333,11 @@ local RetailMapDataStyleMetatable = {
 				if mapData.classID then
 					mapData = app.CreateCharacterClass(mapData.classID, mapData);
 				elseif mapData.headerID then
-					mapData = app.CreateHeader(mapData.headerID, mapData)
+					if mapData.headerID > 0 then
+						mapData = app.CreateHeader(mapData.headerID, mapData)
+					else
+						mapData = app.CreateCustomHeader(mapData.headerID, mapData)
+					end
 				else
 					mapData = app.CreateMap(mapData.mapID, mapData);
 				end
