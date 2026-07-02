@@ -3287,7 +3287,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25943,	-- The Northern Barrens Flame Keeper
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 50.0, 55.0, NORTHERN_BARRENS },
+						{ 50.0, 54.7, NORTHERN_BARRENS },
 						-- #else
 						{ 52.2, 28.0, THE_BARRENS },
 						-- #endif
