@@ -10,6 +10,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					{ 67.9, 81.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
 			}),
+			i(270252, {	-- Nightfur Kapara (PET!)
+				["crs"] = { 262245 },	-- Nightfur Kapara
+				["coords"] = {
+					{ 62.0, 81.9, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Walks around this general area
+				},
+			}),
 			i(270214, {	-- Poisoned Parasite (PET!)
 				["crs"] = { 262222 },	-- Poisoned Parasite
 				["coords"] = {

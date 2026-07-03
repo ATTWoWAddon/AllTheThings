@@ -534,8 +534,57 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 				}),
-				--header(HEADERS.AchCriteria, 63641.02, {	-- Tokka's Crew
-				--}),
+				header(HEADERS.AchCriteria, 63641.02, {	-- Tokka's Crew
+					q(96110, {	-- Proof is in the Ooze
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["qg"] = 258755,	-- Captain Tokka
+						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = { i(274076) },	-- Venom-Cursed Killifish (QI!)
+					}),
+					q(98343, {	-- My Second-Best
+						["sourceQuest"] = 96110,	-- Proof is in the Ooze
+						["qg"] = 258755,	-- Captain Tokka
+						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(98414, {	-- A Request from the Captain
+						["sourceQuest"] = 98343,	-- My Second-Best
+						["qg"] = 257598,	-- Second Mate Sluggs
+						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+					}),
+					q(96111, {	-- Shell of Yourself
+						["sourceQuest"] = 98414,	-- A Request from the Captain
+						["qg"] = 258755,	-- Captain Tokka
+						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274083),	-- Birdie's Bombardment Pack (QI!)
+							o(649481, {	-- Wood Debris
+								i(274033),	-- Wood Debris (QI!)
+							}),
+						},
+					}),
+					-- Chain not finished. Need to figure out the prerequisites. Since the faction related to these is Fishing related and quests unlock Venom/Temple Fishing, maybe increase fishing?
+					-- Following is WoWhead data
+					q(96112, {	-- Maddening Concoction
+						["sourceQuest"] = 96111,	-- Shell of Yourself
+						--["qg"] = 258755,	-- Captain Tokka
+						--["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274103),	-- Leathertongue's Backup Stewpot (QI!)
+							i(274090),	-- Resplendent Ectobarb (QI!)
+							i(274089),	-- Souplrgr's Fine Breadcrumbs (QI!)
+							i(274091),	-- Tough Crab Meat (QI!)
+						},
+					}),
+					q(96113, {	-- Maximum Potency
+						["sourceQuest"] = 96112,	-- Maddening Concoction
+						--["qg"] = 258755,	-- Captain Tokka
+						--["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["groups"] = {
+							i(274281),	-- Black-Venom Grouper (QI!)
+							i(274282),	-- Venom-Charged Dubloon (QI!)
+						},
+					}),
+				}),
 				header(HEADERS.AchCriteria, 63641.03, {	-- Ancient Anthropology
 					q(96467, {	-- Thirst for Knowledge
 						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog

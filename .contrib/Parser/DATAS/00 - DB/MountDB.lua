@@ -2472,6 +2472,7 @@ i(275652, 1297220);	-- Crimson Venomfang
 i(276553, 1299965);	-- Emerald Skyfang
 i(276802, 1300778);	-- Indigo Coiled Horror
 i(275658, 1297405);	-- Primeval Skyfriend
+i(275653, 1297216);	-- Sea-Dwelling Isle Serpent
 i(277192, 1301775);	-- Umbral Ashes
 i(276801, 1300777);	-- Venomous Coiler
 i(276551, 1299963);	-- Violet-Backed Skyfang

@@ -267,7 +267,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_11_0_7 },
 		})),
 	}),
-	filter(BATTLE_PETS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- REMOVED --
+	filter(BATTLE_PETS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- REMOVED --
 		pet(156, {	-- Bananas (PET!)
 			["timeline"] = { ADDED_9_0_5, REMOVED_9_1_5 },
 		}),
@@ -691,7 +691,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 	}),
-	filter(COSMETIC, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- REMOVED --
+	filter(COSMETIC, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- REMOVED --
 		-- Black Tropical
 		iensemble(221540, {	-- Ensemble: Black Tropical Beachwear
 			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.63305" },	-- Removed September 15, 2025
@@ -932,7 +932,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(239076, {	-- Herald of Sa'bak (MOUNT!)
 			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
-			["timeline"] = { ADDED_11_1_7, },
+			["timeline"] = { ADDED_11_1_7 },
 		}),
 		i(166774, {	-- Hogrus, Swine of Good Fortune (MOUNT!)
 			["timeline"] = { ADDED_8_1_0 },
@@ -995,16 +995,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		------ Scurrywind Groveglider Collection ------
 		i(250973, {	-- Blossombranch Groveglider (MOUNT!)
-			["timeline"] = { ADDED_12_0_1, },
+			["timeline"] = { ADDED_12_0_1 },
 		}),
 		i(250971, {	-- Cindertuft Groveglider (MOUNT!)
-			["timeline"] = { ADDED_12_0_1, },
+			["timeline"] = { ADDED_12_0_1 },
 		}),
 		i(250930, {	-- Frostfall Groveglider (MOUNT!)
-			["timeline"] = { ADDED_12_0_1, },
+			["timeline"] = { ADDED_12_0_1 },
 		}),
 		i(250972, {	-- Gloombough Groveglider (MOUNT!)
-			["timeline"] = { ADDED_12_0_1, },
+			["timeline"] = { ADDED_12_0_1 },
 		}),
 		-- #if ANYCLASSIC
 		mount(1257677, {	-- Shadowbough Groveglider
@@ -1048,7 +1048,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		-- #endif
 		i(231297, {	-- Timbered Sky Snake (MOUNT!)
 			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
-			["timeline"] = { ADDED_11_0_7, },
+			["timeline"] = { ADDED_11_0_7 },
 		}),
 		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238", "added 11.2.5.64395", "removed 11.2.7.64978" },	-- Removed Jan 6, 2025, Added Nov 17 2025, Removed Jan 5 2026
@@ -1075,7 +1075,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_1_0 },
 		}),
 	}),
-	filter(MOUNTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- REMOVED --
+	filter(MOUNTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- REMOVED --
 		i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 },	-- Removed 17th April 2023
 			["races"] = ALLIANCE_ONLY,

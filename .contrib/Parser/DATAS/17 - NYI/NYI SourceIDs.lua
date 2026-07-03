@@ -5629,7 +5629,6 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(242665, {["sourceID"] = 291543 }),	-- Unknown Name [NYI]
 			i(242666, {["sourceID"] = 291544 }),	-- Unknown Name [NYI]
 			i(244192, {["sourceID"] = 292023 }),	-- Unknown Name [NYI]
-			i(244790, {["sourceID"] = 292442 }),	-- Unknown Name [NYI]
 			i(245572, {["sourceID"] = 292833 }),	-- Unknown Name [NYI]
 			i(245577, {["sourceID"] = 292834 }),	-- Unknown Name [NYI]
 			i(245676, {["sourceID"] = 292843 }),	-- Unknown Name [NYI]

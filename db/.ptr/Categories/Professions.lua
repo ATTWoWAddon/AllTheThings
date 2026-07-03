@@ -7336,7 +7336,7 @@ cu(2025,{requireSkill=165})}}),
 q(66385,{isWeekly=1,providers={{"i",193913}},requireSkill=165,g={
 cu(2025,{requireSkill=165})}}),
 q(70522,{coords={
-[2022]={{79.4,32.5},{80.6,33.8}}},crs={190056,195241,196420},description="Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198975}},requireSkill=165,g={
+[2022]={{79.4,32.5},{80.6,33.8}}},crs={190056,193806,195241,196420},description="Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198975}},requireSkill=165,g={
 cu(2025,{requireSkill=165})}}),
 q(70523,{coords={
 [2025]={{31.3,76.5},{32.4,73.5},{35.4,72.8},{36.6,72.8}}},crs={188277,191203,191317},description="Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198976}},requireSkill=165,g={

@@ -13,7 +13,6 @@ root(ROOTS.Unsorted, {
 			i(243337),	-- Bound-Left Silvermoon Drapes
 			i(243338),	-- Bound-Right Silvermoon Drapes
 			i(244344),	-- Griftah's Mystical Polter-Urn
-			i(244790),	-- The Coiled Huntress
 			i(245539),	-- Elegant Enchanted Vanity
 			i(246958),	-- Mastercrafted Fungal Row Planter
 			i(247776),	-- Glowing Zangarshroom Cup
@@ -113,7 +112,6 @@ root(ROOTS.Unsorted, {
 			i(270210),	-- Bird Feathers
 			i(270211),	-- Furiostraza's Filter
 			i(270249),	-- Cursed Spawn
-			i(270252),	-- Nightfur Kapara
 			i(270253),	-- Jaundiced Slitherer
 			i(270254),	-- Caustic Writhling
 			i(270267),	-- Twilight Missive
@@ -618,7 +616,6 @@ root(ROOTS.Unsorted, {
 			i(271888),	-- Recipe: Liquid Luster
 			i(271889),	-- Alluring Nostrum
 			i(271890),	-- Alluring Nostrum
-			i(271891),	-- Recipe: Alluring Nostrum
 			i(271944),	-- Set Keystone Map: Altar of Fangs
 			i(271947),	-- Set Keystone Map: Murder Row
 			i(271952),	-- Set Keystone Map: Voidscar Arena
@@ -747,20 +744,11 @@ root(ROOTS.Unsorted, {
 			i(273838),	-- Spirit of Tok'jara
 			i(273848),	-- Snake Scales
 			i(273881),	-- Anti-Venom Shell
-			i(274033),	-- Wood Debris
-			i(274076),	-- Venom-Cursed Killifish
-			i(274083),	-- Birdie's Bombardment Pack
-			i(274089),	-- Souplrgr's Fine Breadcrumbs
-			i(274090),	-- Resplendent Ectobarb
-			i(274091),	-- Tough Crab Meat
-			i(274103),	-- Leathertongue's Backup Stewpot
 			i(274145),	-- Sheaf of Papers
 			i(274146),	-- Tortollan Belongings
 			i(274147),	-- Bottle of Sand
 			i(274148),	-- Packet of Fishing Lures
 			i(274272),	-- Amani Equipment Chest
-			i(274281),	-- Black-Venom Grouper
-			i(274282),	-- Venom-Charged Dubloon
 			i(274372),	-- Big ol' Bag of Polished Pet Charms
 			i(274374),	-- Trovehunter's Bounty
 			i(274416),	-- Warded Key
@@ -809,7 +797,6 @@ root(ROOTS.Unsorted, {
 			i(274537),	-- Shrine of Jan'alai, Loa of Fire
 			i(274539),	-- Shrine of Halazzi, Loa of the Hunt
 			i(274579),	-- Undamaged Trap Needle
-			i(274587),	-- Spotted Killifish
 			i(274588),	-- Toxic Tlhapi
 			i(274589),	-- Ula-tek Snakehead
 			i(274590),	-- Sulfurous Sludgefish
@@ -832,7 +819,6 @@ root(ROOTS.Unsorted, {
 			i(274788),	-- Seaside Depths Porthole
 			i(274796),	-- Envenomed Deathblade
 			i(274801),	-- Envenomed Snakefang
-			i(274802),	-- Envenomed Gavel
 			i(274803),	-- Envenomed Trollsplitter
 			i(274804),	-- Envenomed Elfcleaver
 			i(274805),	-- Envenomed Chopper
@@ -844,7 +830,6 @@ root(ROOTS.Unsorted, {
 			i(274811),	-- Envenomed Sacrificial Dagger
 			i(274812),	-- Envenomed Hunter's Spear
 			i(274813),	-- Envenomed Hammer
-			i(274814),	-- Envenomed Game Ripper
 			i(274815),	-- Envenomed Pages
 			i(274816),	-- Envenomed False Promise
 			i(274817),	-- Gold Starfish
@@ -861,10 +846,7 @@ root(ROOTS.Unsorted, {
 			i(274970),	-- Ancient Curio
 			i(274988),	-- Seaside Tiki Gazebo
 			i(274991),	-- Seaside Fire Pit
-			i(275012),	-- Recipe: Tokka's Multi-Ward
 			i(275013),	-- Tokka's Multi-Ward
-			i(275018),	-- Recipe: Coiled Stargorger Lure
-			i(275020),	-- Venom Elemental
 			i(275030),	-- Slugg's Favorite Fishing Rod
 			i(275038),	-- Stormstout Ingredients
 			i(275047),	-- Stormstout Brewery Lantern
@@ -913,7 +895,6 @@ root(ROOTS.Unsorted, {
 			i(275287),	-- Cellular Slab
 			i(275288),	-- Photosynthesized Scrap
 			i(275289),	-- Winged Stalk
-			i(275301),	-- Recipe: Feast of Knowledge
 			i(275302),	-- Venomous Gladiator's Goredrake
 			i(275303),	-- Amani Forgemaster's Workbench
 			i(275305),	-- Amani Forgemaster's Glaive
@@ -921,14 +902,11 @@ root(ROOTS.Unsorted, {
 			i(275308),	-- Plans: Amani Forgemaster's Rack
 			i(275312),	-- Formula: Furious Tiki Mask
 			i(275314),	-- Formula: Enchanted Eversong Trout
-			i(275318),	-- Schematic: Fine Captain's Bottle
 			i(275320),	-- Schematic: Aetherlume Field Lamp
-			i(275322),	-- Technique: Ferocious Feline Trinket
 			i(275324),	-- Technique: Inscribed Amani Mural
 			i(275326),	-- Technique: Chiseled Amani Tablet
 			i(275328),	-- Technique: Turquoise Amani Tapestry
 			i(275334),	-- Pattern: Stretched Snakeskin Rack
-			i(275336),	-- Pattern: Mounted Moby
 			i(275338),	-- Pattern: Rolled Bed Linens
 			i(275342),	-- Pattern: Tortollan Slingsack
 			i(275380),	-- Venomous Combatant's Heraldry
@@ -1006,7 +984,6 @@ root(ROOTS.Unsorted, {
 			i(275631),	-- Corrosive Writhling
 			i(275632),	-- Volatile Venomfang
 			i(275634),	-- Artisan's Consortium Flyer
-			i(275653),	-- Sea-Dwelling Isle Serpent
 			i(275654),	-- Caustic Venomfang
 			i(275655),	-- Venom Serpent - White
 			i(275657),	-- Apophic Soul Crusher
@@ -1015,7 +992,6 @@ root(ROOTS.Unsorted, {
 			i(275676),	-- R0CKY-To-Go
 			i(275683),	-- G-00
 			i(275684),	-- Schematic: DU5TY, Lazy Looter
-			i(275693),	-- Design: Opalescent Amani Peridot
 			i(275695),	-- Design: Piercing Amani Lapis
 			i(275697),	-- Design: Roaring Amani Garnet
 			i(275702),	-- Preyhunter's Prismguard
@@ -1217,12 +1193,6 @@ root(ROOTS.Unsorted, {
 			i(277848),	-- Untouched Crab Lure
 			i(277849),	-- Mushed Crab
 			i(277920),	-- Vibrant Crownfeather
-			i(277921),	-- Traditional Tortollan Tent
-			i(277923),	-- Aged Tortollan Scroll Case
-			i(277925),	-- Blue Tortollan Signpost
-			i(277927),	-- Yellowed Kelp Pile
-			i(277929),	-- Rustic Fishing Rack
-			i(277931),	-- Hanging Yellowed Kelp
 			i(277935),	-- Pungent Leech Leg
 			i(277937),	-- Balanced Offering
 			i(277938),	-- Virulent Offering
@@ -1297,7 +1267,6 @@ root(ROOTS.Unsorted, {
 			i(278329),	-- Thalassian Recipe in a Bottle
 			i(278330),	-- Schematic: R0CKY
 			i(278331),	-- Recipe: Sweet-And-Sour Skewers
-			i(278332),	-- Recipe: Puffer Plate
 			i(278333),	-- Schematic: R0CKY-To-Go
 			i(278335),	-- Cerulean Pearl
 			i(278337),	-- Amber Pearl
@@ -1309,7 +1278,6 @@ root(ROOTS.Unsorted, {
 			i(278376),	-- Preyhunter's Terror Effigy
 			i(278378),	-- Preyhunter's Scaled Bust
 			i(278380),	-- Preyhunter's Terror Bust
-			i(278391),	-- Eerie Lure
 			i(278470),	-- Malefic Venom
 			i(278472),	-- Noxious Corrosive Coin
 			i(278517),	-- Lost Med'jai Amulet
