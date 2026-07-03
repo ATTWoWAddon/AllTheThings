@@ -1592,6 +1592,7 @@ root(ROOTS.Zones, {
 					q(38936, {	-- The Road to Kun-Lai (Adventure guide)
 						["description"] = "This quest needs to be accepted from the 'Adventure Guide'.",
 						["isBreadcrumb"] = true,
+						["timeline"] = { ADDED_6_2_0 },
 					}),
 					q(30806, {	-- The Scent of Life
 						["sourceQuest"] = 30794,	-- Emergency Care
