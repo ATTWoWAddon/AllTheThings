@@ -26,11 +26,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(61258, {	-- Midnight Keystone Legend: Season One
 				i(262621),	-- Convalescent Carrion (MOUNT!)
 			}),
-			ach(63097, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {	-- Midnight Keystone Myth: Season One
+			ach(63097, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 } }, {	-- Midnight Keystone Myth: Season One
 				title(773),	-- <Name> the Umbral Contender
 			})),
 			ach(63104,{	-- Umbral Champion: Midnight Season 1
-				["timeline"] = { ADDED_12_1_0 },
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },
 				["groups"] = {
 					i(277192),	-- Umbral Ashes (MOUNT!)
 					--title(),	-- <Name> the Umbral Champion
