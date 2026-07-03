@@ -1323,17 +1323,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							i(87792),	-- Orange Water Strider (MOUNT!)
 							i(84753),	-- White Riding Yak (MOP) / Kafa Yak (Retail) (MOUNT!)
 
-							-- Unconfirmed (but speculated)
-							-- CRIEVE NOTE: I don't know who made this list, but half of them are from content that gets added later. I highly doubt they'd make them drop before they're supposed to.
-							-- i(248744),	-- Celestial Riding Ox (MOUNT!)
-							-- i(248743),	-- Celestial Riding Serpent (MOUNT!)
-							-- i(248742),	-- Celestial Riding Tiger (MOUNT!)
-							-- i(87776),	-- Heavenly Azure Cloud Serpent (MOUNT!)
-							-- i(87774),	-- Heavenly Golden Cloud Serpent (MOUNT!)
-							-- i(87775),	-- Heavenly Jade Cloud Serpent (MOUNT!)
-							-- i(95057),	-- Thundering Cobalt Cloud Serpent (MOUNT!)
-							-- i(94228),	-- Cobalt Primordial Direhorn (MOUNT!)
-
 							-- Pets
 							i(86563),	-- Aqua Strider (PET!)
 							i(86564),	-- Imbued Jade Fragment (PET!)
@@ -2086,7 +2075,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					},
 					{	-- Bags
 						clusters(10, i(276086, {	-- Coffer of Celestial Chance
-							i(248743),	-- Celestial Riding Serpent (MOUNT!)
+							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
+							i(87786),	-- Reins of the Black Riding Yak (MOUNT!)
+							i(248743),	-- Reins of the Celestial Riding Serpent (MOUNT!)
+							i(87794),	-- Reins of the Golden Water Strider (MOUNT!)
+							i(94231),	-- Reins of the Jade Primordial Direhorn (MOUNT!)
+							i(84753),	-- Reins of the White Riding Yak (MOUNT!)
+							i(93666),	-- Spawn of Horridon (MOUNT!)
+
+							i(104158),	-- Blackfuse Bombling (PET!)
+							i(97960),	-- Dark Quivering Blob (PET!)
+							i(94573),	-- Direhorn Runt (PET!)
+							i(104162),	-- Droplet of Y'Shaarj (PET!)
+							i(97961),	-- Half-Empty Food Container (PET!)
+							i(86563),	-- Hollow Reed (PET!)
+							i(86564),	-- Imbued Jade Fragment (PET!)
+							i(88148),	-- Jade Crane Chick (PET!)
+							i(94835),	-- Ji-Kun Hatchling (PET!)
+							i(104165),	-- Kovok (PET!)
+							i(94125),	-- Living Sandling (PET!)
+							i(89587),	-- Porcupette (PET!)
+							i(94574),	-- Pygmy Direhorn (PET!)
+							i(97959),	-- Quivering Blob (PET!)
+							i(94152),	-- Son of Animus (PET!)
+							i(94595),	-- Spawn of G'nathus (PET!)
+							i(94124),	-- Sunreaver Micro-Sentry (PET!)
+							i(94933),	-- Tiny Blue Carp (PET!)
+							i(94934),	-- Tiny Green Carp (PET!)
+							i(94932),	-- Tiny Red Carp (PET!)
+							i(95423),	-- Zandalari Footslasher (PET!)
+							i(94126),	-- Zandalari Kneebiter (PET!)
+							i(95424),	-- Zandalari Toenibbler (PET!)
 						})),
 						clusters(10, i(276085)),	-- Satchel of Stone Clusters
 					},
