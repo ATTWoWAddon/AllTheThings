@@ -195,7 +195,7 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "It's never too soon to summon this tiny aspect of the dread Firelord.","|cFFFFD200In-Game Shop|r",297,51600,95787,254652,6,131154,9,35,7,0
 "The distinct roar of the moonkin is one of the most terrifying sounds in nature.","|cFFFFD200In-Game Shop:|r Horde",298,51649,95909,467894,0,338,9,6,7,0
 "It looked up at you with those huge black eyes and seemed to ask, 'Are you my mommy?'","|cFFFFD200Quest:|r Some Good Will Come|n|cFFFFD200Zone:|r Northern Stranglethorn|n|n",301,52226,96571,132225,7,18,1,6,7,0
-"How the goblin Landro Longshot initially came into possession of the lichling remains a mystery, but he was all too eager to wager it in a game of cards.","|cFFFFD200Trading Card Game:|r Worldbreaker",302,52343,96817,254094,3,2,8,36,7,0
+"How the goblin Landro Longshot initially came into possession of the lichling remains a mystery, but he was all too eager to wager it in a game of cards.","|cFFFFD200Trading Card Game:|r Worldbreaker",302,52343,96817,254094,3,131074,8,36,7,0
 "Elune made nightsabers silver and black so they could meld into the shadows on a moonlit night.","|cFFFFD200Trading Card Game:|r Twilight of the Dragons",303,52344,96819,132242,7,2,8,6,7,0
 "Winterspring cubs are happiest when frolicking in freshly fallen snow.","|cFFFFD200Vendor: |rMichelle De Rum|n|cFFFFD200Zone: |rWinterspring|n|cFFFFD200Cost: |r50|TINTERFACE\MONEYFRAME\UI-GOLDICON.BLP:0|t",306,52831,97638,132252,7,2,2,6,7,0
 "Born in the jungles of Stranglethorn, unlucky raptor hatchlings are often captured by the Gurubashi and taken to the troll city of Zul'Gurub.","|cFFFFD200Quest: |rAn Old Friend|n|cFFFFD200Zone: |rZul'Gurub",307,52894,97779,132193,7,18,1,6,7,0
@@ -1763,7 +1763,7 @@ Unburdened now, forever free to play.","|cFFFFD200Profession:|r Archaeology",153
 "Though not real rats, they have taken over the back alleys of Mechagon City and carry diseased programs, earning them the name.","|cFFFFD200Pet Battle: |rOperation: Mechagon",2672,154789,0,2126359,9,26,4,6,7,0
 "Natural burrowing tendencies were programmed into these critters, and now they perform vital functions breaking down the great piles of scrap.","|cFFFFD200Pet Battle: |rMechagon",2673,154791,0,2126361,9,26,4,6,7,0
 "When you need a hand, you know who to call.","|cFFFFD200Pet Battle: |rOperation: Mechagon",2674,154794,0,1521022,9,131098,4,6,7,0
-"The machinists of Mechagon may automate many of the tasks of the city, but they also spend a lot of time repairing and maintaining their inventions.","|cFFFFD200Pet Battle: |rOperation: Mechagon",2675,154796,0,1521022,9,26,4,6,7,0
+"The machinists of Mechagon may automate many of the tasks of the city, but they also spend a lot of time repairing and maintaining their inventions.","|cFFFFD200Pet Battle: |rOperation: Mechagon",2675,154796,0,1521022,9,131098,4,6,7,0
 "Doesn't remember what it was originally programmed to do, just wants to battle other pets.","|cFFFFD200Pet Battle: |rMechagon",2676,154798,0,2735924,9,26,4,6,7,0
 "A re-emergence of whelps outside of Grim Batol has the red dragonflight worried -- something is happening in the lost city.","|cFFFFD200Pet Battle: |rTwilight Highlands",2677,154803,0,134154,1,26,4,6,7,0
 "The eels that inhabit the trenches and chasms of Nazjatar are a favored food of many creatures that inhabit the area.","|cFFFFD200Pet Battle: |rNazjatar",2678,154814,0,2027955,8,26,4,6,7,0
@@ -1804,7 +1804,7 @@ Unburdened now, forever free to play.","|cFFFFD200Profession:|r Archaeology",153
 "A rare snooter, and hard to find, it's known for burrowing itself deep under wet foliage to nest.","|cFFFFD200Vendor: |rStolen Royal Vendorbot|n|cFFFFD200Zone: |rMechagon|n|cFFFFD200Faction: |rRustbolt Resistance - Honored|n|cFFFFD200Cost: |r500|TINTERFACE\MONEYFRAME\UI-GOLDICON.BLP:0|t",2713,154852,301051,2205593,7,2,2,6,7,0
 "Many advancements have been made to the initial prototype homing beacon over the years.","|cFFFFD200Zone: |rMechagon",2714,154853,301052,3004141,9,2,0,6,7,0
 "It's not clear who the original owner of this arm was, but they're not getting it back now.","|cFFFFD200Drop: |rMalfunctioning Beastbot|n|cFFFFD200Zone: |rMechagon",2715,154854,301053,1521022,9,131074,0,6,7,0
-"As handy as this invention is, it was also programmed to absolutely despise hand puns.","|cFFFFD200Profession: |rJunkyard Tinkering",2716,154855,301054,1521022,9,2,3,6,7,0
+"As handy as this invention is, it was also programmed to absolutely despise hand puns.","|cFFFFD200Profession: |rJunkyard Tinkering",2716,154855,301054,1521022,9,131074,3,6,7,0
 "One of the microbots used to guard the city of Rustbolt, now purchasable for a reasonable price.","|cFFFFD200Profession: |rJunkyard Tinkering",2717,154856,301055,2735922,9,2,3,6,7,0
 "He's just so happy to be programmed to exist.","|cFFFFD200Drop: |rHK-8 Aerial Oppression Unit|n|cFFFFD200Zone: |rOperation: Mechagon",2718,154857,301056,2735923,9,2,0,6,7,0
 "Absolutely do not let him bite your bones.","|cFFFFD200Drop: |rBonepicker|n|cFFFFD200Zone: |rMechagon",2719,154893,301136,2027842,1,2,0,6,7,0
@@ -1991,13 +1991,13 @@ Cats go to Revendreth.","|cFFFFD200In-Game Shop|r ",2890,171025,333570,3604137,7
 "The mane on this tiny foal reflects a majestic indigo color when the light hits it in just the right way.","|cFFFFD200Covenant Feature: |rPath of Ascension|n|cFFFFD200Covenant: |rKyrian",2941,171716,335085,3387069,7,2,2,6,7,0
 "Few things are as adorable as a young skyfoal.","|cFFFFD200Adventures:|r Shadowlands",2942,171719,335087,3387070,7,2,0,6,7,0
 "These flying creatures do not leave feathers out in the wild. If a feather happens to ever detach from their body, the feather glows brilliantly for a moment and then vanishes from sight.","|cFFFFD200Pet Battle:|r Bastion",2943,171666,0,3046536,2,26,4,6,7,0
-"The thrill of battle and the grip of war have not yet left the bones of Oonar.","|cFFFFD200Drop:|r Oonar's Arm|n|cFFFFD200Zone:|r Maldraxxus",2944,171954,335698,3386320,3,2,0,6,7,0
+"The thrill of battle and the grip of war have not yet left the bones of Oonar.","|cFFFFD200Drop:|r Oonar's Arm|n|cFFFFD200Zone:|r Maldraxxus",2944,171954,335698,3386320,3,131074,0,6,7,0
 "A newborn bonetusk has no visible tusks, but within weeks their tusks grow to a size proportional to their body.","|cFFFFD200Covenant Feature: |rThe Ember Court|n|cFFFFD200Covenant: |rVenthyr|n|n|cFFFFD200Covenant Feature: |rQueen's Conservatory|n|cFFFFD200Covenant: |rNight Fae|n|n|cFFFFD200Covenant Feature: |rPath of Ascension|n|cFFFFD200Covenant: |rKyrian|n|n|cFFFFD200Covenant Feature: |rAbomination Factory|n|cFFFFD200Covenant: |rNecrolord",2945,171982,335753,3456126,7,2,2,6,7,0
 "The tusks on these creatures are fused to their skulls in such a manner that they feel no pain when charging or ramming into anything.","|cFFFFD200Adventures:|r Shadowlands",2946,171984,335755,3456127,7,2,0,6,7,0
 "The bright color of the luminous webspinner taunts would-be predators to chase them into their webs.","|cFFFFD200Treasure: |rCache of Eyes|n|cFFFFD200Zone: |rMaldraxxus",2947,171985,335762,2027857,7,2,0,6,7,0
 "Maldraxxus is full of mighty and terrifying creatures, causing most denizens to be abnormally calm when around the indigenous species of giant spiders.","|cFFFFD200Drop: |rSister Chelicerae|n|cFFFFD200Zone: |rMaldraxxus",2948,171986,335764,2027855,7,2,0,6,7,0
 "If this species spits venom at its prey, is it still technically considered venom, or just really gross?","|cFFFFD200Treasure: |rSprouting Growth|n|cFFFFD200Zone: |rMaldraxxus",2949,171987,335765,2027951,7,2,0,6,7,0
-"That place on your back you can't quite scratch? Get the help of this little guy. Problem solved.","|cFFFFD200Pet Battle: |rMaldraxxus",2950,172130,0,3386321,3,26,4,6,7,0
+"That place on your back you can't quite scratch? Get the help of this little guy. Problem solved.","|cFFFFD200Pet Battle: |rMaldraxxus",2950,172130,0,3386321,3,131098,4,6,7,0
 "The bubbles inside of these ooze creatures make a very satisfying pop noise when they finally surface and rupture.","|cFFFFD200Treasure: |rSlime-Coated Crate|n|cFFFFD200Zone: |rMaldraxxus",2952,172132,335966,3459800,5,2,0,6,7,0
 ,,3000,173373,0,3065166,4,32802,-1,6,7,0
 "One of Plague Deviser Marileth's first creations, Shy Melvin was too timid for the demands placed on slimes by the House of Plagues.","|cFFFFD200Drop: |rDeadly Dapperling|n|cFFFFD200Zone: |rMaldraxxus",2953,172134,335969,3459798,5,2,0,6,7,0
@@ -2067,11 +2067,11 @@ Cats go to Revendreth.","|cFFFFD200In-Game Shop|r ",2890,171025,333570,3604137,7
 "These critters are capable of holding a tremendous amount of food in their cheeks for easy transportation between hiding spaces.","|cFFFFD200Treasure: |rFaerie Trove|n|cFFFFD200Zone: |rArdenweald",3022,173591,339999,3749005,4,2,0,6,7,0
 "No one is quite sure where Reginald got his or her name, but what we do know is they don't answer to anything else.","|cFFFFD200Vendor: |rCortinarius|n|cFFFFD200Zone: |rArdenweald|n|cFFFFD200Faction: |rMarasmius - Friendly|n|cFFFFD200Covenant: |rNight Fae|n|cFFFFD200Cost: |r250|Hitem:163036|h|TInterface\ICONS\INV_Currency_PetBattle.BLP:0|t|h",3023,173593,340002,3749006,4,2,2,6,7,0
 "The skies may have scorched part of Revendreth, but persistent creatures are still able to exist in these harsh conditions.","|cFFFFD200Drop:|r Ashen Amalgamation|n|cFFFFD200Covenant Feature:|r Ember Court|n|cFFFFD200Covenant:|r Venthyr|n|cFFFFD200Zone:|r Revendreth",3024,173842,340710,134389,6,2,0,6,7,0
-"Nobody knows why all of these skeletal hands are from the left hand. Where did the right hands go?","|cFFFFD200Treasure:|r Skeletal Hand Fragments|n|cFFFFD200Zone:|r Maldraxxus",3025,173847,340717,3386322,3,2,0,6,7,0
+"Nobody knows why all of these skeletal hands are from the left hand. Where did the right hands go?","|cFFFFD200Treasure:|r Skeletal Hand Fragments|n|cFFFFD200Zone:|r Maldraxxus",3025,173847,340717,3386322,3,131074,0,6,7,0
 "Torghast is a tower of hardship and perpetual agony, which is a perfect environment for these creatures.","|cFFFFD200Drop:|r Torghast|n",3026,173849,340721,3579945,4,2,0,6,7,0
 "Many have asked where these creatures came from, and how they made it to the Maw, but none that researched them have ever been heard from again.","|cFFFFD200Drop:|r Torghast|n|n",3027,173850,340722,3579948,4,2,0,6,7,0
-"If a detached hand claps by itself inside of Torghast, can the Jailer hear it?","|cFFFFD200Drop:|r Torghast|n|n",3028,173851,340723,3862168,3,2,0,6,7,0
-"The mysterious forces that animate this mobile mitt don't seem particularly evil, yet.","|cFFFFD200Drop:|r Torghast|n",3029,173988,341289,3862169,3,2,0,6,7,0
+"If a detached hand claps by itself inside of Torghast, can the Jailer hear it?","|cFFFFD200Drop:|r Torghast|n|n",3028,173851,340723,3862168,3,131074,0,6,7,0
+"The mysterious forces that animate this mobile mitt don't seem particularly evil, yet.","|cFFFFD200Drop:|r Torghast|n",3029,173988,341289,3862169,3,131074,0,6,7,0
 "Sometimes it is best to leave what strange creature you found in a mysterious jar in the depths of Torghast alone.","|cFFFFD200Drop:|r Torghast|n",3030,173989,341292,3453807,4,2,0,6,7,0
 "Its teeth are razor sharp and will chew through just about anything.","|cFFFFD200Drop:|r Torghast|n",3032,173990,341293,3860392,4,2,0,6,7,0
 "These guardians of Torghast are always watching for suspicious activity.","|cFFFFD200Drop:|r Torghast|n|n",3033,173991,341295,3729719,5,2,0,6,7,0
@@ -2081,7 +2081,7 @@ Cats go to Revendreth.","|cFFFFD200In-Game Shop|r ",2890,171025,333570,3604137,7
 "Staring at one of these creates a deep void of emotion at the very core of your being, then fills it with a sense of dread.","|cFFFFD200Drop: |rEternas the Tormentor|n|cFFFFD200Zone: |rThe Maw",3037,174081,341492,651083,6,2,0,6,7,0
 "This species has a very distinct set of markings on its back that makes it easy to identify in the unending horrors of the Maw.","|cFFFFD200Drop:|r The Maw|n",3038,174082,341493,3579949,4,2,0,6,7,0
 "Tiny flakes of skin seem to perpetually fall off of this horrible creature, leaving behind a trail and a very distinct, foul odor.","|cFFFFD200Drop:|r The Maw|n",3039,174083,341494,3860390,4,2,0,6,7,0
-"The razor sharp claws will tear into anything with ease, making for an excellent emergency can opener.","|cFFFFD200Drop: |rSanngror the Torturer|n|cFFFFD200Zone: |rThe Maw",3040,174084,341495,3862170,3,2,0,6,7,0
+"The razor sharp claws will tear into anything with ease, making for an excellent emergency can opener.","|cFFFFD200Drop: |rSanngror the Torturer|n|cFFFFD200Zone: |rThe Maw",3040,174084,341495,3862170,3,131074,0,6,7,0
 "What horrors these eyes have seen in the tower of Torghast, with their unsleeping, unblinking gaze?","|cFFFFD200Achievement: |rTwisting Corridors: Layer 2|n|cFFFFD200Category: |rTorghast",3041,174085,341497,3729814,5,82,5,6,7,0
 "Plucking a feather from a steward is considered a sin worthy of a trip to Revendreth.","|cFFFFD200Covenant: |rKyrian|n|cFFFFD200Zone: |rBastion",3042,174087,341515,3731724,0,16466,2,6,7,0
 "Though not very fuzzy, this slimy feline is still one of the most adorable things you've ever seen.","|cFFFFD200Covenant: |rNecrolord|n|cFFFFD200Zone: |rMaldraxxus|n",3043,174088,341516,3732497,5,16466,2,6,7,0
@@ -2139,15 +2139,15 @@ Cats go to Revendreth.","|cFFFFD200In-Game Shop|r ",2890,171025,333570,3604137,7
 "Skrats are an especially invasive species, in that they can reproduce with only a sole skrat, and consume almost anything.","|cFFFFD200Pet Battle: |rTazavesh, the Veiled Market",3112,179168,0,3856135,4,26,4,6,7,0
 "One particular Broker has taken a liking to the skrat species, kept this rare specimin as a pet, and inherited the smell as a souvenir.","|cFFFFD200Zone:|r Tazavesh, the Veiled Market|n",3113,179169,353528,3856134,4,2,0,6,7,0
 "When you're a Maldraxxian stitchcrafter and you have to name a lot of abominations, sometimes you just go with the obvious choice.","|cFFFFD200Drop:|r War Chest of the Undying Army|n|cFFFFD200Zone:|r The Maw|n",3114,179171,353529,3622122,3,2,0,6,7,0
-"Not quite alive, not quite dead, simply an arm, with no head.","|cFFFFD200Pet Battle: |rThe Maw",3115,179179,0,3386323,3,26,4,6,7,0
+"Not quite alive, not quite dead, simply an arm, with no head.","|cFFFFD200Pet Battle: |rThe Maw",3115,179179,0,3386323,3,131098,4,6,7,0
 "Gorm find a way to invade just about anywhere, and the Maw is no exception.","|cFFFFD200Drop:|r War Chest of the Wild Hunt|n|cFFFFD200Zone:|r The Maw",3116,179180,353569,3084138,2,2,0,6,7,0
 "Though the spawn of a gorm queen lost within the Maw, this pet appears to be untainted by the Jailer's foul magics.","|cFFFFD200Drop: |rGralebboih
 |cFFFFD200Zone: |rThe Maw",3117,179181,353570,3084141,2,2,0,6,7,0
 "The nails of the mawrat can inflict one of several afterlife-ending illnesses.","|cFFFFD200Pet Battle: |rThe Maw",3118,179182,0,3860391,4,26,4,6,7,0
-"Fragments of souls abound in the Maw, searching for meaning, or an end to their torment. But some just want to give you a hand.","|cFFFFD200Pet Battle: |rThe Maw",3119,179183,0,3862167,3,26,4,6,7,0
-"These ensorcelled gauntlets are used by the mawsworn to capture escaping prisoners.","|cFFFFD200Pet Battle: |rThe Maw",3120,179219,0,3861531,3,26,4,6,7,0
-"Struggle all you want, it will just grip harder.","|cFFFFD200Drop:|r The Maw|n",3121,179220,353638,3861530,3,2,0,6,7,0
-"There was once a mawsworn so vile that he was killed by his own minions. So great was his malice that a fragment of him lives on in this glove.","|cFFFFD200Drop: |rSoulrender Dormazain|n|cFFFFD200Zone: |rSanctum of Domination",3122,179222,353639,3861529,3,2,0,6,7,0
+"Fragments of souls abound in the Maw, searching for meaning, or an end to their torment. But some just want to give you a hand.","|cFFFFD200Pet Battle: |rThe Maw",3119,179183,0,3862167,3,131098,4,6,7,0
+"These ensorcelled gauntlets are used by the mawsworn to capture escaping prisoners.","|cFFFFD200Pet Battle: |rThe Maw",3120,179219,0,3861531,3,131098,4,6,7,0
+"Struggle all you want, it will just grip harder.","|cFFFFD200Drop:|r The Maw|n",3121,179220,353638,3861530,3,131074,0,6,7,0
+"There was once a mawsworn so vile that he was killed by his own minions. So great was his malice that a fragment of him lives on in this glove.","|cFFFFD200Drop: |rSoulrender Dormazain|n|cFFFFD200Zone: |rSanctum of Domination",3122,179222,353639,3861529,3,131074,0,6,7,0
 "A species of wild pest that exists within the Maw, no one is quite sure what it eats or why it exists, but they can't get rid of it.","|cFFFFD200Pet Battle: |rThe Maw",3123,179226,0,3579946,4,26,4,6,7,0
 "Every deathroach is technically considered vile, but these really take the cake.","|cFFFFD200Pet Battle: |rThe Maw",3124,179227,0,3579947,4,26,4,6,7,0
 "See reflections on the water? There's more than darkness in the depths.","|cFFFFD200Drop: |rHelsworn Soulseeker|n|cFFFFD200Zone: |rThe Maw",3125,179228,353644,3729672,5,2,0,6,7,0
@@ -2817,7 +2817,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Meet your new best mech-friend, Maya. Maya loves a good, tight wind-up so she can spring into action.","|cFFFFD200In-Game Shop|r",4730,236016,1215317,6231701,9,16466,9,6,7,0
 "Snapdragon pups that were abandoned on the shores have become infused with the energies of the Seafury Tempest, as the other Siren Isle creatures have.","|cFFFFD200Pet Battle: |rSiren Isle: Seafury Tempest",4731,236040,0,2766226,8,26,4,6,7,0
 "It is said that from the moment they hatch snapdragons are independent from their parents, though the more recent venture to Nazjatar has seemingly debunked this theory.","|cFFFFD200Pet Battle:|r Siren Isle, Seafury Tempest|n",4732,236041,0,2766228,8,26,4,6,7,0
-"This thing is equally as evil as it is adorable.","|cFFFFD200Promotion|r |n",4733,236783,1216564,6243478,6,16466,7,6,7,0
+"This thing is equally as evil as it is adorable.","|cFFFFD200Promotion|r |n",4733,236783,1216564,6243478,6,147538,7,6,7,0
 ,"|cFFFFD200Pet Battle:|r Undermine|n",4737,237701,0,892833,9,33824,4,6,7,0
 ,,4738,237706,0,667691,2,32802,-1,6,7,0
 ,,4739,237707,0,6351952,4,32802,-1,6,7,0
@@ -2915,7 +2915,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "If you have a fish odds are Lil' Chompers will be nearby.","|cFFFFD200Trading Post|r",4895,251804,1254162,7277076,8,16466,11,6,7,0
 "Slippery Saul loves to slide around the ground or the sea looking for fish.","|cFFFFD200Trading Post|r",4896,251817,1254201,7277076,8,16466,11,6,7,0
 "You can never have too many fish according to May.","|cFFFFD200Trading Post|r",4897,251819,1254207,7277052,8,16466,11,6,7,0
-"Frozen fish are Keiths favorite treat. If you've got frozen fish, you've got a new best friend.","|cFFFFD200Achievement:|r Climate Strange: Val|n|cFFFFD200Vendor: |rKifaan|n|cFFFFD200Zone: |rNaigtal or Val|n|cFFFFD200Cost: |r50|Hitem:238365|h|TInterface\ICONS\INV_Misc_Fish_41.blp:0|t|h |n|n",4898,251820,1254208,7277052,8,82,2,6,7,0
+"Frozen fish are Keith's favorite treat. If you've got frozen fish, you've got a new best friend.","|cFFFFD200Achievement:|r Climate Strange: Val|n|cFFFFD200Vendor: |rKifaan|n|cFFFFD200Zone: |rNaigtal or Val|n|cFFFFD200Cost: |r50|Hitem:238365|h|TInterface\ICONS\INV_Misc_Fish_41.blp:0|t|h |n|n",4898,251820,1254208,7277052,8,82,2,6,7,0
 "Winter festivities seem to follow Eve wherever she goes.","|cFFFFD200Trading Post|r",4899,251821,1254212,7277045,8,16466,11,6,7,0
 "Once native to the northern regions of the Eastern Kingdoms, this species of seal is now only common in Northrend after being hunted for food and leather during the Second War.","|cFFFFD200Trading Post|r",4900,251822,1254213,7277045,8,16466,11,6,7,0
 "This young fledgeling is ready and eager to begin training.","|cFFFFD200World Event:|r WoW Remix: Legion",4901,251889,1254381,7197225,2,16466,6,6,7,0
@@ -2940,7 +2940,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "This potadpole is grateful for your assistance after having been exposed to the Lightboom.","|cFFFFD200Quest:|r OK Bloomer|n",4946,255921,1266590,7132152,8,210,1,6,7,0
 "Assistant Botanist Leafy is an expert at identifying edible plants... which is all of them.","|cFFFFD200Quest:|r Re-Hydra-ted|n",4947,256014,1266770,7152802,6,210,1,6,7,0
 "After being rudely stuffed into a gourd in a vain effort to treat a Lightbloom infestation, this sporebat's just grateful to be out.","|cFFFFD200Treasure: |rImpenatrably Sealed Gourd|n|cFFFFD200Zone: |rHarandar",4948,256059,1266834,7233369,2,210,0,6,7,0
-"A lingering remnant of Fryakk's attempt at corrupting Amirdrassil.","|cFFFFD200Vendor: |rXydan|n|cFFFFD200Zone: |rValdrakken|n|cFFFFD200Cost: |r2200|Hcurrency:1166|h|TInterface\ICONS\PVECurrency-Justice.blp:0|t|h",4949,256080,1266976,4952369,6,18,2,6,7,0
+"A lingering remnant of Fyrakk's attempt at corrupting Amirdrassil.","|cFFFFD200Vendor: |rXydan|n|cFFFFD200Zone: |rValdrakken|n|cFFFFD200Cost: |r2200|Hcurrency:1166|h|TInterface\ICONS\PVECurrency-Justice.blp:0|t|h",4949,256080,1266976,4952369,6,18,2,6,7,0
 "While it didn't make a good test subject, perhaps it will make a good companion.","|cFFFFD200Quest:|r Mighty and Superior|n",4950,256107,1267050,7126994,7,210,1,6,7,0
 "What a happy snapling!","|cFFFFD200Profession:|r Fishing|n",4951,256201,1267090,7116030,7,154,3,6,7,0
 "Evolving in the Voidstorm has really made its smaller inhabitants significantly more aggressive.","|cFFFFD200Vendor: |rVoid Researcher Anomander|n|cFFFFD200Zone: |rVoidstorm|n|cFFFFD200Cost: |r2500|Hcurrency:3316|h|TInterface\ICONS\INV_112_RaidTrinkets_VoidPrism.BLP:0|t|h",4952,256271,1268696,7119299,7,10,1,6,7,0
@@ -2959,6 +2959,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 ,"|cFFFFD200Trading Post|r",4966,256566,1269358,7467155,6,16466,11,6,7,0
 "A living anomaly and Kasreth's most treasured experiment, this pink-furred creature scampers joyfully through conduits and pipes.","|cFFFFD200Zone: |rNexus-Point Xenas",4967,256567,1269361,2205238,7,82,5,6,7,0
 "Stars walk among us in the shape of a baby brutosaur.","|cFFFFD200Promotion|r |n",4968,256663,1269535,7489719,7,16466,7,6,7,0
+"Roofus is ready to lend a paw for any construction project. Treats aren't required, but are appreciated.",|cFFFFD200Promotion|r,4969,256698,1269627,7481108,7,16466,7,6,7,0
 "Luma knows all kinds of tricks such as ""sit,"" ""stay,"" and ""steal.""","|cFFFFD200Quest: |rThief at Bark
 |cFFFFD200Zone: |rEversong Woods",4971,256759,1269889,6891875,7,210,1,6,7,0
 "This bold elfhound was born to chase mana wyrms, and mana wyrm-shaped objects... Like unattended sausages.","|cFFFFD200Treasure: |rHalf-Digested Viscera|n|cFFFFD200Zone: |rVoidstorm",4972,256985,1270553,6891874,7,210,0,41,7,0
@@ -2986,7 +2987,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "They suck. That's it.","|cFFFFD200Zone:|r The Coiled Isle",5028,262222,1287537,7119299,7,154,4,6,7,0
 "The Curse of Ula'tek manifests serpents of all varieties. Including ones that are tiny and vaguely cute!","|cFFFFD200Zone:|r The Coiled Isle",5029,262226,1287600,2399230,7,154,4,6,7,0
 "These snakes dredge themselves out of the venom to live miserable existences. Also, do you mind if they crash at your place for a weekend?","|cFFFFD200Zone:|r The Coiled Isle",5030,262246,1287593,2399235,7,154,4,6,7,0
-"There's Children of Ula'tek, and then there's the BABY of Ula'tek!","|cFFFFD200Zone:|r Temple of Atal'Utek",5031,262247,1287592,8032872,7,154,4,6,7,0
+"There's Children of Ula'tek, and then there's the BABY of Ula'tek!","|cFFFFD200Pet Battle: |rVaults of Atal'Utek",5031,262247,1287592,8032872,7,154,4,6,7,0
 "It's said that the capybara has no enemies, but the Children of Ula'tek didn't get that memo.","|cFFFFD200Zone:|r The Coiled Isle",5032,262245,1287594,2205590,4,154,4,6,7,0
 "The snakebiters of Atal'Utek have had their hands full as of late. They're bigs fans of your recent arrival.","|cFFFFD200Zone:|r The Coiled Isle",5033,262244,1287598,2027893,4,154,4,6,7,0
 "Really, really good at staring contests.","|cFFFFD200Zone:|r The Coiled Isle",5034,262243,1287599,2399288,8,154,4,6,7,0
@@ -3009,21 +3010,21 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Each step hums with mana; each punch ends the chase.","|cFFFFD200Vendor: |rConstruct V'anore|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r1200|Hcurrency:3392|h|TInterface\ICONS\INV_10_ElementalCombinedFoozles_Blood.BLP:0|t|h",5078,266835,1297704,7881307,9,18,2,6,7,0
 "Ula'tek's venom gave rise to new color variants of wind serpents, like this little pink one.","|cFFFFD200Drop: |rWriggling Venom-Soaked Satchel|n|cFFFFD200Zone: |rThe Coiled Isle",5092,267689,1299089,8125117,7,210,0,6,7,0
 "Demands scritches and blood sacrifices.","|cFFFFD200Vendor: |rJan'sari the Watchful|n|cFFFFD200Zone: |rThe Coiled Isle|n|cFFFFD200Cost: |r2500|Hcurrency:3316|h|TInterface\ICONS\INV_112_RaidTrinkets_VoidPrism.BLP:0|t|h|n|n",5093,267805,1299255,8125118,7,210,2,6,7,0
-,"|cFFFFD200Trading Post|r",5114,268609,1301935,8014864,7,16466,11,6,7,0
-,"|cFFFFD200Trading Post|r",5115,268636,1302008,8014864,7,16466,11,6,7,0
-,"|cFFFFD200Trading Post|r",5116,268671,1302084,7977787,7,16466,11,6,7,0
-,"|cFFFFD200Trading Post|r",5117,268672,1302088,7977787,7,16466,11,6,7,0
-,"|cFFFFD200Trading Post|r",5118,268675,1302094,7977817,7,16466,11,6,7,0
-,"|cFFFFD200Trading Post|r",5119,268676,1302095,7977817,7,16466,11,6,7,0
+"Don't be put off by this cat's icy demeanor.","|cFFFFD200Trading Post|r",5114,268609,1301935,8014864,7,16466,11,6,7,0
+"Knocks potions and reagents off shelves for ""research purposes.""","|cFFFFD200Trading Post|r",5115,268636,1302008,8014864,7,16466,11,6,7,0
+"Sometimes a good cat nap is all you need to stave of death.","|cFFFFD200Trading Post|r",5116,268671,1302084,7977787,7,16466,11,6,7,0
+"Do not let this cat cross your path.","|cFFFFD200Trading Post|r",5117,268672,1302088,7977787,7,16466,11,6,7,0
+"When a cat has been raised among the Tol'vir can you blame themd being a bit aloof?","|cFFFFD200Trading Post|r",5118,268675,1302094,7977817,7,16466,11,6,7,0
+"Amewbisath is a meance to the smallest of qiraji.","|cFFFFD200Trading Post|r",5119,268676,1302095,7977817,7,16466,11,6,7,0
 "Even a failed ritual can leave something behind.","|cFFFFD200Drop: |rNek'zali the Soulcoiler|n|cFFFFD200Zone: |rThe Venomous Abyss",5125,269501,1304581,7558868,5,202,0,6,7,0
 "Its bite carries more than venom.","|cFFFFD200Drop:|r Ral'kala|n",5126,269712,1305199,2399234,7,18,0,6,7,0
-"Found amidst the rubble and ruin of the Altar of Fangs, Slitherfang is a tenacious, fierce, and positively adorable survivor.","|cFFFFD200Drop:|r Zul'jan's Strongbox|n|cFFFFD200Zone:|r Altar of Fangs",5129,270147,1306197,8032873,7,194,0,6,7,0
+"Rescued from the Altar of Fangs, Slitherfang is a tenacious, fierce, and positively adorable survivor.","|cFFFFD200Zone:|r Altar of Fangs",5129,270147,1306197,8032873,7,194,5,6,7,0
 "Found during your ordeal in The Venemous Abyss, this little fella sure has a strong bite!","|cFFFFD200Achievement: |rNo Egg Scramble|n|cFFFFD200Category: |rMidnight Raid",5130,270425,1306694,8125119,7,210,5,6,7,0
 "The Snip Snapper. Also known as the Snip Snacker.","|cFFFFD200Achievement: |rA Stack of Snacks|n|cFFFFD200Category: |rMidnight",5131,270857,1307328,8032875,8,210,5,6,7,0
 "His bite has a zing to it.","|cFFFFD200Achievement: |rThe Coiled Isle Safari",5132,271086,1307843,8125120,7,210,5,6,7,0
 "Lost in an eternal battle of who croaks first.","|cFFFFD200Treasure: |rUnfortunate Scout's Satchel|n|cFFFFD200Zone: |rThe Coiled Isle",5133,271106,1307875,2399247,7,210,0,6,7,0
 "Infused with a raging spirit and a combination of pristine ritual ingredients.","|cFFFFD200Discovery: |rOfi's Offerings",5134,271163,1307902,7558868,5,138,0,6,7,0
-"Roofus is ready to lend a paw for any construction project. Treats aren't required, but are appreciated.",|cFFFFD200Promotion|r,4969,256698,1269627,7481108,7,16466,7,6,7,0
+"Big Mon was all alone until he found an injured snakebiter. He nursed the snakebiter back to health and named him Lil' Mon. Big Mon may have been undead, but he wasn't heartless. He loved Lil' Mon and would do anything to protect his only friend.","|cFFFFD200Drop:|r Big Mon|n|cFFFFD200Zone:|r The Coiled Isle|n",5137,271772,1309175,2027894,7,210,0,6,7,0
 "A rare mutation gives this dredbat its green, ghastly glow making it a sought after gift for pet collectors with eclectic tastes.","|cFFFFD200In-Game Shop|r",5042,263232,1289296,7657804,2,16466,9,6,7,0
 "After getting lost in the thick of battle, this hawkstrider chick needs a new home.","|cFFFFD200World Quest: |rThe Battle of the Bridge|n|cFFFFD200Zone: |rSilvermoon City",4909,254647,1262832,6703755,4,210,1,6,7,0
 "Sha has warped this hippogryph hatchling into an adorable but fearsome creature. The big emotions that flow through this creature make it an adorable harbinger of doom.","|cFFFFD200In-Game Shop|r",5060,264163,1291667,7657991,2,16466,9,6,7,0

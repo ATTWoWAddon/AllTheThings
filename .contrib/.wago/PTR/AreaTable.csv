@@ -9791,7 +9791,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16668,TheHinterlands1207Thrall,"The Hinterlands",3007,0,0,0,11,605,675,1,0,0,0,0,0.40000000596,12,-1,11,12,0,20,16448,128,0,0,0,0
 16669,EscapefromDurnholdeLorewalking,"Durnholde Keep",3007,16668,0,0,11,605,675,1,0,0,0,0,0.40000000596,12,-1,11,12,0,20,1073758272,128,0,0,0,0
 16670,AltarofMalacrass,"Altar of Malacrass",0,16194,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,8320,0,0,0,0
-16671,NagaLair,"The Tidebound Grotto",2987,0,0,75,11,3464,3285,0,0,0,0,0,0,12,-1,0,0,0,5856,16384,136,0,0,0,0
+16671,NagaLair,"The Tidebound Grotto",2987,0,0,75,11,3464,3285,0,0,0,0,0,0,0,-1,0,0,0,5856,268451840,136,0,0,0,0
 16680,MurderRowDungeonDenOfIndulgence,"Den of Indulgence",2813,16091,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,0,-1073741824,136,0,0,0,0
 16681,MurderRowDungeonSilvermoonPetShop,"Silvermoon Pet Shop",2813,16091,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,0,-1073741824,136,0,0,0,0
 16686,12SilvermoonEasternKingdomsPropHunt,"Silvermoon City, Prop Hunt",3009,0,0,96,0,2998,0,0,0,0,0,0,0,15,-1,0,0,0,0,2344,4224,0,0,0,0
@@ -9834,7 +9834,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16785,GateoftheEasternFang,"Gate of the Eastern Fang",0,16365,13322,67,0,3418,3400,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
 16786,GateoftheWesternFang,"Gate of the Western Fang",0,16365,0,67,0,3418,3400,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16787,TheForum,"The Forum",0,16365,13319,67,0,3418,3400,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
-16788,WreckofSethralissScale,"Wreck of Sethralis's Scale",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
+16788,WreckofSethralissScale,"Wreck of Sethraliss's Scale",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16789,TheFangs,"The Fangs",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16790,PathofWhispers,"Path of Whispers",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16791,GateoftheSerpentsEye,"Gate of the Serpent's Eye",0,16365,13323,67,0,3418,3400,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,0,0,0,0,0
@@ -9876,7 +9876,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16850,PvPAllianceHubInn,"Retribution Hold",2771,15959,0,0,0,3059,2708,3290,0,0,0,0,0,15,-1,0,0,0,3084,1082146848,8320,0,0,0,0
 16851,PvPHordeHubInn,"Mettle's Hold",2771,15959,0,0,0,3059,2708,3309,0,0,0,0,0,15,-1,0,0,0,3084,1077952544,8320,0,0,0,0
 16855,SlayersRiseBGMinibossPOI,"Voidscar Arena",2799,16423,0,0,0,0,2708,3240,0,0,0,0,0,13,-1,0,0,0,4278,1895940096,128,0,0,0,0
-16860,12ZulAmanGreatSea,"The Great Sea",0,0,0,0,0,0,675,0,0,0,0,0,0,15,-1,0,0,0,3086,2112,128,0,0,0,0
+16860,12ZulAmanGreatSea,"The Great Sea",0,15947,0,0,0,0,675,0,0,0,0,0,0,15,-1,0,0,0,3086,1073741888,128,0,0,0,0
 16863,Local13CaveB,"Quiet Cavern",2771,15458,0,0,0,2705,2708,0,0,0,0,0,0,15,-1,0,0,0,3084,1073758272,8320,0,0,0,0
 16864,Local13CaveA,"Consumptor Cave",2771,15458,0,0,0,2705,2708,0,0,0,0,0,0,15,-1,0,0,0,3084,1073758272,8320,0,0,0,0
 16865,AltarofFangsDungeon,"Altar of Fangs",2993,0,0,72,0,3495,3400,0,0,0,0,0,0,0,-1,0,0,0,6666,-1879048192,136,0,0,0,0
@@ -9931,7 +9931,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 17102,NaigtalManaforgeHQ,"Command Point: Primos",3075,16943,0,0,0,0,0,3544,0,0,0,0,0.15000000596,13,-1,0,0,0,3321,1140850752,128,0,0,0,0
 17103,NaigtalVilaldoun,Vilaldoun,3075,16943,0,0,0,0,0,0,0,0,0,0,0.15000000596,13,-1,0,0,0,3321,1140850752,128,0,0,0,0
 17104,UmbralBaseNaigtal,"Umbral Base Camp",3075,16943,0,0,0,0,0,0,0,0,0,0,0.15000000596,13,-1,0,0,0,3321,1140852800,128,0,0,0,0
-17107,DelvesGoblinBossUndermine,"Demolition Dome",3105,0,0,0,0,2926,0,3129,0,0,0,0,0,0,-1,0,0,0,2677,268441600,128,0,0,0,0
+17107,DummyDome,"Dummy Dome",3105,0,0,0,0,2926,0,3129,0,0,0,0,0,0,-1,0,0,0,7359,268441600,128,0,0,0,0
 17195,sleepersgrotto,"Sleeper's Grotto",3075,16943,0,0,0,0,0,0,0,0,0,0,0.15000000596,0,-1,0,0,0,3321,1140850688,128,0,0,0,0
 17198,NaigtalManaforge,"Manaforge: Arcvein",3075,16943,0,0,0,0,0,3544,0,0,0,0,0.15000000596,13,-1,0,0,0,3321,1140850752,128,0,0,0,0
 17199,NaigtalDraeneiCryptShore,"Shoals of Rememberance",3075,16943,0,0,0,0,0,0,0,0,0,0,0.15000000596,13,-1,0,0,0,3321,1140850752,128,0,0,0,0
@@ -9958,6 +9958,11 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 17713,AltarofFangsDungeonTrash3,"Mutation Chambers",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
 17714,AltarofFangsDungeonBoss2,"Ancient Burrow",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
 17715,TheChamberofVirulence,"The Chamber of Virulence",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
+17718,121CoiledIsleGreatSea,"The Great Sea",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,5381,1073741888,128,0,0,0,0
+17719,121CoiledIsleTheForbiddingSea,"The Forbidding Sea",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,5381,1073741888,128,0,0,0,0
+17720,121ZulAmanTheForbiddingSea,"The Forbidding Sea",0,15947,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3086,1073741888,128,0,0,0,0
+17729,UnderlevelCaves,"North Amani Outpost",2916,16535,0,75,0,3527,0,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
+17730,UnderlevelCaves,"East Amani Outpost",2916,16535,0,75,0,3527,0,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
 16310,NewQuelDanas12CampaignFinaleScenario,"Isle of Quel'Danas",2907,0,0,96,0,3009,675,0,0,0,0,0,0,15,-1,0,0,0,3320,4160,128,0,0,0,0
 16311,SilvermoonEasternKingdoms12CampaignFinaleScenario,"Silvermoon City",2907,0,0,96,0,3249,0,3404,0,0,0,0,0,15,-1,0,0,0,3320,4096,128,0,0,0,0
 16312,EversongWoodsEasternKingdoms12CampaignFinaleScenario,"Eversong Woods",2907,0,0,96,0,3250,0,0,0,0,0,0,0,15,-1,0,0,0,3320,4160,128,0,0,0,0
