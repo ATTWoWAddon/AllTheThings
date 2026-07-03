@@ -1009,7 +1009,6 @@ root(ROOTS.Unsorted, {
 			i(275653),	-- Sea-Dwelling Isle Serpent
 			i(275654),	-- Caustic Venomfang
 			i(275655),	-- Venom Serpent - White
-			i(275656),	-- Venom Serpent - Yellow
 			i(275657),	-- Apophic Soul Crusher
 			i(275659),	-- Hexflame Reaver
 			i(275660),	-- Preyhunter's Courser
@@ -1123,7 +1122,6 @@ root(ROOTS.Unsorted, {
 			i(276549),	-- Wind Serpent - Yellow
 			i(276550),	-- Wind Serpent - White
 			i(276552),	-- Wind Serpent - Pink
-			i(276553),	-- Emerald Skyfang
 			i(276611),	-- Clam Stuffed Crab
 			i(276612),	-- The Shell-Shocker
 			i(276613),	-- Sparkling LaKoi
@@ -1302,7 +1300,6 @@ root(ROOTS.Unsorted, {
 			i(278332),	-- Recipe: Puffer Plate
 			i(278333),	-- Schematic: R0CKY-To-Go
 			i(278335),	-- Cerulean Pearl
-			i(278336),	-- Sinful Pearl
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
@@ -1658,7 +1655,6 @@ root(ROOTS.Unsorted, {
 			i(279819),	-- Basic Steel Sabatons
 			i(279917),	-- Soulcoiler Skull
 			i(279919),	-- Soulcoiler Jaw
-			i(279921),	-- Ki'clak
 			i(279922),	-- Altar of Corrosion
 			i(279997),	-- Insidious Venomstone
 			i(280003),	-- Excising Knife
@@ -1674,7 +1670,6 @@ root(ROOTS.Unsorted, {
 			i(280118),	-- Venomous Aspirant's Medallion
 			i(280123),	-- Sharp Axe Holster
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280138),	-- Zesty
 			i(280142),	-- Small Wooden Floor Tile
 			i(280144),	-- Large Wooden Floor Tile
 			i(280146),	-- Small Triangular Tile

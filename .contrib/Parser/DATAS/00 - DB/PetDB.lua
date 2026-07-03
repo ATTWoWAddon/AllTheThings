@@ -4642,12 +4642,14 @@ i(246723, 4860);	-- Unfazed Diver
 -- PATCH 12.1.0 --
 ------------------
 i(270248, 5035);	-- Autumn Snapling
+i(279921, 5131);	-- Ki'clak
 i(270214, 5028);	-- Poisoned Parasite
 i(270251, 5033);	-- Sleek Snakebiter
 i(276248, 5093);	-- Snek'zali
 i(270250, 5034);	-- Steady Croakfrog
 i(279387, 5130);	-- Ul'ava'took
 i(268644, 5011);	-- Zan
+i(280138, 5132);	-- Zesty
 --- UNSORTED ---
 i(277322, 5119);	-- Amewbis
 i(275703, 5077);	-- ArcaneGolem2 Pet - Red
@@ -4660,7 +4662,6 @@ i(275631, 5071);	-- Corrosive Writhling
 i(270249, 5029);	-- Cursed Spawn
 i(270211, 5027);	-- Furiostraza
 i(270253, 5030);	-- Jaundiced Slitherer
-i(279921, 5131);	-- Ki'clak
 i(277282, 5115);	-- Kirin Tor Cat
 i(277270, 5114);	-- Kirin Tor Kitty
 i(270191, 5026);	-- Lil'Kruul
@@ -4675,4 +4676,3 @@ i(279197, 5129);	-- Slitherfang
 i(275020, 5070);	-- Venom Elemental
 i(276234, 5092);	-- Vibrant Venomfang
 i(275632, 5072);	-- Volatile Venomfang
-i(280138, 5132);	-- Zesty

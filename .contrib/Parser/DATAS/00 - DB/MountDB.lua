@@ -2467,9 +2467,12 @@ i(273652, 1292345);	-- Pink Rocket Mount [PH]
 ------------------
 -- PATCH 12.1.0 --
 ------------------
+i(275656, 1297224);	-- Auriferous Venomfang
 i(275652, 1297220);	-- Crimson Venomfang
+i(276553, 1299965);	-- Emerald Skyfang
 i(276802, 1300778);	-- Indigo Coiled Horror
 i(275658, 1297405);	-- Primeval Skyfriend
+i(277192, 1301775);	-- Umbral Ashes
 i(276801, 1300777);	-- Venomous Coiler
 i(276551, 1299963);	-- Violet-Backed Skyfang
 --- UNSORTED ---
@@ -2489,13 +2492,11 @@ i(278574, 1305206);	-- Crested Aqua Leafmimic
 i(278573, 1305204);	-- Crested Burnished Leafmimic
 i(278575, 1305207);	-- Crested Verdant Leafmimic
 i(278576, 1305209);	-- Crested Violet Leafmimic
-i(276553, 1299965);	-- Emerald Skyfang
 i(275659, 1297407);	-- Hexflame Reaver
 i(275660, 1297408);	-- Preyhunter's Courser
 i(273838, 1292668);	-- Spirit of Tok'jara
 i(0, 1295958);	-- Swift Spectral Eagle
 i(276804, 1300776);	-- The Writhing Brood
-i(277192, 1301775);	-- Umbral Ashes
 i(275302, 1266211);	-- Venomous Gladiator's Goredrake
 i(275433, 1296670);	-- Vicious Lightbloom Boar [A]
 i(275432, 1296672);	-- Vicious Lightbloom Boar [H]

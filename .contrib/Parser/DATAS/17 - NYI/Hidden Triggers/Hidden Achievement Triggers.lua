@@ -4212,5 +4212,54 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(62945),	-- Showdown Unlock: Grapple Skiffs
 			ach(62949),	-- Showdown Unlock: Naigtal Spores
 		})),
+
+		-- 12.1.0
+		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+			-- 12.1.0.68209
+			ach(62912),	-- Adventurer Mistcrests earned
+			ach(62913),	-- Veteran Mistcrests earned
+			ach(62914),	-- Champion Mistcrests earned
+			ach(62915),	-- Hero Mistcrests earned
+			ach(62916),	-- Myth Mistcrests earned
+			ach(63537),	-- Entombed Sentinels (Raid Finder The Venomous Abyss)
+			ach(63538),	-- Entombed Sentinels (Normal The Venomous Abyss)
+			ach(63539),	-- Entombed Sentinels (Heroic The Venomous Abyss)
+			ach(63540),	-- Entombed Sentinels (Mythic The Venomous Abyss)
+			ach(63533),	-- Nek'zali the Soulcoiler (Raid Finder The Venomous Abyss)
+			ach(63534),	-- Nek'zali the Soulcoiler (Normal The Venomous Abyss)
+			ach(63535),	-- Nek'zali the Soulcoiler (Heroic The Venomous Abyss)
+			ach(63536),	-- Nek'zali the Soulcoiler (Mythic The Venomous Abyss)
+			ach(63613),	-- Nymrissa Wavecaller (World The Tidebound Grotto)
+			ach(63614),	-- Nymrissa Wavecaller (Normal The Tidebound Grotto)
+			ach(63615),	-- Nymrissa Wavecaller (Heroic The Tidebound Grotto)
+			ach(63616),	-- Nymrissa Wavecaller (Mythic The Tidebound Grotto)
+			ach(63548),	-- Sszorak (Raid Finder The Venomous Abyss)
+			ach(63558),	-- Sszorak (Normal The Venomous Abyss)
+			ach(63559),	-- Sszorak (Heroic The Venomous Abyss)
+			ach(63560),	-- Sszorak (Mythic The Venomous Abyss)
+			ach(63550),	-- The Bargained Crown (Raid Finder The Venomous Abyss)
+			ach(63564),	-- The Bargained Crown (Normal The Venomous Abyss)
+			ach(63565),	-- The Bargained Crown (Heroic The Venomous Abyss)
+			ach(63566),	-- The Bargained Crown (Mythic The Venomous Abyss)
+			ach(63541),	-- The Lost Explorers (Raid Finder The Venomous Abyss)
+			ach(63552),	-- The Lost Explorers (Normal The Venomous Abyss)
+			ach(63553),	-- The Lost Explorers (Heroic The Venomous Abyss)
+			ach(63554),	-- The Lost Explorers (Mythic The Venomous Abyss)
+			ach(63549),	-- The Twin Fangs (Raid Finder The Venomous Abyss)
+			ach(63561),	-- The Twin Fangs (Normal The Venomous Abyss)
+			ach(63562),	-- The Twin Fangs (Heroic The Venomous Abyss)
+			ach(63563),	-- The Twin Fangs (Mythic The Venomous Abyss)
+			ach(63551),	-- Ula'tek (Raid Finder The Venomous Abyss)
+			ach(63567),	-- Ula'tek (Normal The Venomous Abyss)
+			ach(63568),	-- Ula'tek (Heroic The Venomous Abyss)
+			ach(63569),	-- Ula'tek (Mythic The Venomous Abyss)
+			ach(63547),	-- Vashnik the Malignant (Raid Finder The Venomous Abyss)
+			ach(63555),	-- Vashnik the Malignant (Normal The Venomous Abyss)
+			ach(63556),	-- Vashnik the Malignant (Heroic The Venomous Abyss)
+			ach(63557),	-- Vashnik the Malignant (Mythic The Venomous Abyss)
+			ach(62285),	-- Zul'jan kills (Normal Altar of Fangs)
+			ach(62286),	-- Zul'jan kills (Heroic Altar of Fangs)
+			ach(62287),	-- Zul'jan kills (Mythic Altar of Fangs)
+		})),
 	}),
 });

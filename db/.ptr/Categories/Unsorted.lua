@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local de,flt,fp,h,i,mnt,p,q,s,toy,x=_.CreateDecor,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
+local crit,de,flt,fp,h,i,mnt,p,q,s,toy,x=_.CreateAchievementCriteria,_.CreateDecor,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.Unsorted={
 x(12,{
 x(12.01,{awp=120100,g={
@@ -111,10 +111,14 @@ i(269935),
 p(5026,{itemID=270191,npcID=262210,spellID=1287493}),
 i(270210),
 p(5027,{itemID=270211,npcID=262220,spellID=1287534}),
-p(5029,{itemID=270249,npcID=262226,spellID=1287600}),
-p(5032,{itemID=270252,npcID=262245,spellID=1287594}),
-p(5030,{itemID=270253,npcID=262246,spellID=1287593}),
-p(5031,{itemID=270254,npcID=262247,spellID=1287592}),
+p(5029,{itemID=270249,npcID=262226,spellID=1287600,g={
+crit(113426,{achID=62492,id=2})}}),
+p(5032,{itemID=270252,npcID=262245,spellID=1287594,g={
+crit(113423,{achID=62492,id=5})}}),
+p(5030,{itemID=270253,npcID=262246,spellID=1287593,g={
+crit(113422,{achID=62492,id=6})}}),
+p(5031,{itemID=270254,npcID=262247,spellID=1287592,g={
+crit(113421,{achID=62492,id=7})}}),
 i(270267),
 i(270274),
 i(270335),
@@ -1008,7 +1012,6 @@ i(275634),
 i(275653,{f=100,spellID=1297216}),
 mnt(1297217,{itemID=275654}),
 i(275655,{f=100,spellID=1297223}),
-i(275656,{f=100,spellID=1297224}),
 mnt(1297404,{itemID=275657}),
 mnt(1297407,{itemID=275659}),
 mnt(1297408,{itemID=275660}),
@@ -1122,7 +1125,6 @@ i(276548,{f=55,spellID=1306916}),
 i(276549,{f=100,spellID=1299961}),
 i(276550,{f=100,spellID=1299962}),
 i(276552,{f=100,spellID=1299964}),
-mnt(1299965,{itemID=276553}),
 i(276611,{f=55,spellID=5005}),
 i(276612,{f=55,spellID=11009}),
 i(276613,{f=55,spellID=1300021}),
@@ -1301,7 +1303,6 @@ i(278331,{f=200,spellID=1295776}),
 i(278332,{f=200,spellID=1295776}),
 i(278333,{f=200,spellID=1297585}),
 i(278335,{f=55,spellID=1304657}),
-i(278336,{f=55,spellID=1304663}),
 i(278337,{f=55,spellID=1304665}),
 i(278339,{f=55,spellID=1304667}),
 i(278340,{f=55,spellID=1304670}),
@@ -1657,7 +1658,6 @@ s(311352,279818,{f=2}),
 s(311353,279819,{f=2}),
 de(24512,{itemID=279917,spellID=1307311}),
 de(24519,{itemID=279919,spellID=1307313}),
-p(5131,{itemID=279921,npcID=270857,spellID=1307328}),
 de(25292,{itemID=279922,spellID=1307326}),
 i(279997,{f=55,spellID=1307442}),
 i(280003,{spellID=1307536}),
@@ -1673,7 +1673,6 @@ i(280097,{f=53,spellID=345229}),
 i(280118,{f=53,spellID=336126}),
 i(280123,{f=53,spellID=1307781}),
 i(280131),
-p(5132,{itemID=280138,npcID=271086,spellID=1307843}),
 de(23553,{itemID=280142,spellID=1307851}),
 de(23554,{itemID=280144,spellID=1307853}),
 de(23555,{itemID=280146,spellID=1307855}),

@@ -7,8 +7,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(63633, {	-- A Stack of Snacks
 				["coord"] = { 69.3, 52.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["cr"] = 256872,	-- Ki'clak <The Snip Shapper>
+				["groups"] = { i(279921) },	-- Ki'clak (PET!)
 			}),
-			ach(63631),	-- Captain Tokka's Crew
 			ach(63358, {	-- Coiled to Strike
 				i(263873),	-- Amani Forge (DECOR!)
 			}),
@@ -52,7 +52,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 58.9, 48.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
 			ach(63641),	-- Snake Charmed, I'm Sure
-			ach(63662),	-- Student of Hissstory
+			ach(63662, {	-- Student of Hissstory
+				i(280419),	-- Cursed Badge of the Soulcoilers (TOY!)
+			}),
+			ach(62492, {	-- The Coiled Isle Safari
+				i(280138),	-- Zesty (PET!)
+			}),
 			skyriding(ach(63395, {	-- The Coiled Isles Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{ "meta_achievement",
@@ -70,7 +75,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}},
 			})),
 			ach(62297),	-- The Curse of Ula'tek
-			ach(63359),	-- Treasures of the Coiled Isle
+			ach(63359, {	-- Treasures of the Coiled Isle
+				i(275656),	-- Auriferous Venomfang (MOUNT!)
+			}),
 			ach(63390),	-- Turn the Surge
 			ach(63639),	-- Ula'tek Uncoiled
 		}),

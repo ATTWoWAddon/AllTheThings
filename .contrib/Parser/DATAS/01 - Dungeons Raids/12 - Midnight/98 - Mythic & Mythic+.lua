@@ -13,7 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	})),
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_UMBRAL, bubbleDownSelf({
-			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}, {
 			ach(61254),	-- Midnight Keystone Explorer: Season One
 			ach(61255, {	-- Midnight Keystone Conqueror: Season One
@@ -29,12 +29,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(63097, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {	-- Midnight Keystone Myth: Season One
 				title(773),	-- <Name> the Umbral Contender
 			})),
-			--[[ach( ,{	-- Umbral Champion: Season One
+			ach(63104,{	-- Umbral Champion: Midnight Season 1
+				["timeline"] = { ADDED_12_1_0 },
 				["groups"] = {
-					mount(),	-- new exclusive mount
-					title(),	-- <Name> the Umbral Champion
+					i(277192),	-- Umbral Ashes (MOUNT!)
+					--title(),	-- <Name> the Umbral Champion
 				},
-			}),--]]
+			}),
 			ach(61259, {	-- Umbral Hero: Midnight Season One
 				title(656),	-- <Name> the Umbral Hero
 			}),
@@ -162,6 +163,101 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				["collectible"] = false,
 			}),
 			ach(61253, {	-- Midnight Season 1: Resilient Keystone 30
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+		})),
+		header(HEADERS.Achievement, SEASON_VENOMOUS, bubbleDownSelf({
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+		}, {
+			ach(62441),	-- Keystone Hero: Altar of Fangs
+			ach(62439),	-- Keystone Hero: Den of Nalorakk
+			ach(62444),	-- Keystone Hero: Kings' Rest
+			ach(62440),	-- Keystone Hero: Murder Row
+			ach(62442),	-- Keystone Hero: Ruby Life Pools (Midnight Season 2)
+			ach(62443),	-- Keystone Hero: Temple of Sethraliss
+			ach(62437),	-- Keystone Hero: The Blinding Vale
+			ach(62438),	-- Keystone Hero: Voidscar Arena
+			ach(62445),	-- Midnight Keystone Explorer: Season 2
+			ach(62446),	-- Midnight Keystone Conqueror: Season 2
+			ach(62447),	-- Midnight Keystone Master: Season 2
+			ach(62448),	-- Midnight Keystone Hero: Season 2
+			ach(62449),	-- Midnight Keystone Legend: Season 2
+			ach(62436),	-- Venomous Hero: Midnight Season 2
+			-- Check the comment on previous season
+			ach(62417, {	-- Midnight Season 2: Resilient Keystone 12
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62418, {	-- Midnight Season 2: Resilient Keystone 13
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62419, {	-- Midnight Season 2: Resilient Keystone 14
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62420, {	-- Midnight Season 2: Resilient Keystone 15
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62421, {	-- Midnight Season 2: Resilient Keystone 16
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62422, {	-- Midnight Season 2: Resilient Keystone 17
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62423, {	-- Midnight Season 2: Resilient Keystone 18
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62424, {	-- Midnight Season 2: Resilient Keystone 19
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62425, {	-- Midnight Season 2: Resilient Keystone 20
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62426, {	-- Midnight Season 2: Resilient Keystone 21
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62427, {	-- Midnight Season 2: Resilient Keystone 22
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62428, {	-- Midnight Season 2: Resilient Keystone 23
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62429, {	-- Midnight Season 2: Resilient Keystone 24
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62430, {	-- Midnight Season 2: Resilient Keystone 25
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62431, {	-- Midnight Season 2: Resilient Keystone 26
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62432, {	-- Midnight Season 2: Resilient Keystone 27
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62433, {	-- Midnight Season 2: Resilient Keystone 28
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62434, {	-- Midnight Season 2: Resilient Keystone 29
+				["_noautomation"] = true,
+				["collectible"] = false,
+			}),
+			ach(62435, {	-- Midnight Season 2: Resilient Keystone 30
 				["_noautomation"] = true,
 				["collectible"] = false,
 			}),

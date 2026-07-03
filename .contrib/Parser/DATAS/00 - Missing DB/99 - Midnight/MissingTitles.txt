@@ -77,6 +77,5 @@ title(785),	-- Voidscar Champion %s
 title(786),	-- %s, the Uncrowned Conqueror
 title(787),	-- %s, Flame of Life
 title(788),	-- %s, Wrath of Sethraliss
-title(789),	-- Bloodsworn Mariner %s
 title(790),	-- %s, Famed Slayer of Ula'tek
 title(791),	-- %s, Venom's End

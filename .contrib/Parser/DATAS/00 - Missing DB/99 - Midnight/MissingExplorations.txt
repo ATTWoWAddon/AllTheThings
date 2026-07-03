@@ -5121,27 +5121,17 @@ exploration(16671),	-- The Tidebound Grotto
 exploration(16755),	-- Crypt of the Denied
 exploration(16769),	-- Zail'Zar Span
 exploration(16771),	-- The Altar of Wrath
-exploration(16774),	-- Tokka's Landing
 exploration(16775),	-- Ofi's Hut
-exploration(16776),	-- Mlurkkr Mire
 exploration(16777),	-- Cloudlight Beacon
-exploration(16778),	-- Wreck of Paku's Talon
 exploration(16779),	-- Wreck of Torga's Beak
-exploration(16780),	-- The Whispering Marsh
 exploration(16781),	-- The Ring of Glory
 exploration(16782),	-- Defiant Ring
 exploration(16783),	-- Wreck of Gral's Belly
-exploration(16784),	-- Gnarldor Isle
-exploration(16785),	-- Gate of the Eastern Fang
 exploration(16786),	-- Gate of the Western Fang
-exploration(16787),	-- The Forum
 exploration(16788),	-- Wreck of Sethralis's Scale
 exploration(16789),	-- The Fangs
 exploration(16790),	-- Path of Whispers
-exploration(16791),	-- Gate of the Serpent's Eye
 exploration(16792),	-- Venom Rise
-exploration(16793),	-- Blistering Terrace
-exploration(16795),	-- The Serpent's Tail
 exploration(16822),	-- Labyrinth
 exploration(16824),	-- Tooth of Sargoth
 exploration(16830),	-- Tokka's Folly

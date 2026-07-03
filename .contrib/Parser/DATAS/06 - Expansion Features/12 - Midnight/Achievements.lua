@@ -4,6 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
 	n(ACHIEVEMENTS, {
+		-- Season 1
 		ach(61809, {	-- Adventurer of the Dawn
 			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
@@ -379,6 +380,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					}),
 				})),
 			}),
+		}),
+		-- Season 2
+		ach(62410, {	-- Adventurer of the Mist
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+		}),
+		ach(62411, {	-- Veteran of the Mist
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+		}),
+		ach(62412, {	-- Champion of the Mist
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+		}),
+		ach(62414, {	-- Hero of the Mist
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+		}),
+		ach(62416, {	-- Myth of the Mist
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+		}),
+		ach(62871, {	-- Midnight Season 2: Catalyst Unbound
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+		}),
+		ach(62872, {	-- Midnight Season 2: Serpent Scion
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}),
 	}),
 })));

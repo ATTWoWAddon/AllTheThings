@@ -8,10 +8,16 @@ root(ROOTS.Zones, m(ARCANTINA, {
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(61083),	-- Highly Decorated
+			ach(63619, {	-- New Friends
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			ach(61082),	-- Old Soldiers
 			ach(61081, {	-- Share a Drink
 				["description"] = "NOTE: You currently also get credit for YOUR character's Race when sharing a drink!",
 				["cost"] = { { "i", 251039, 26 } },	-- 26x Toasting Brew
+			}),
+			ach(63620, {	-- Well Decorated
+				["timeline"] = { ADDED_12_1_0 },
 			}),
 		}),
 		n(QUESTS, {	-- TODO: same source for all, ["sourceQuests"] = { 86903 },	-- The Arcantina

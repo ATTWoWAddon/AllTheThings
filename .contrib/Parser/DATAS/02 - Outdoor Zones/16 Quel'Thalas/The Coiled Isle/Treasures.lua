@@ -211,9 +211,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 96945,
 				}),
 				q(98307),	-- Zandalari Logbook
-				n(REWARDS, {
-					i(280419),	-- Cursed Badge of the Soulcoilers (TOY!)
-				}),
 			}),
 			-- Uncertain
 			o(622048, {	-- Journal of a Literate Lich
