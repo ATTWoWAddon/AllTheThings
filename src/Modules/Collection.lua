@@ -72,7 +72,7 @@ local DefaultCollectedThingFunc = function(t)
 	if not t._missing then
 		app.print(L.ITEM_ID_ADDED:format(app:SearchLink(t) or t.text or UNKNOWN, t.keyval or "???"))
 	else
-		app.report(L.ITEM_ID_ADDED_MISSING:format(t.text or UNKNOWN, t.keyval or "???"),app.UnpackTable(t,true))
+		app.report(L.ITEM_ID_ADDED_MISSING:format(t.name or UNKNOWN, t.keyval or "???"),app.UnpackTable(t,true))
 	end
 end
 local CollectionReportFormats = setmetatable({}, { __index = function(t,key) return DefaultCollectedThingFunc end})
