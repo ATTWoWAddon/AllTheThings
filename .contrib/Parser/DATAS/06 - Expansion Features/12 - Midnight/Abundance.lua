@@ -279,8 +279,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(94426),	-- Popped after Loaknit Den
 			q(91432),	-- Popped after entering Wath'nan Crypts
 			q(94952),	-- Accepted 'Abudant Offerings' (questID 89507)
-			q(90092),	-- Entered Abundance in Zul'Aman
-			q(91496),	-- Entered Abundance in Voidstorm
+			q(90092),	-- First time spending Shard of Dundun in Zul'Aman
+			q(91303),	-- First time spending Shard of Dundun in Harandar
+			q(91496),	-- First time spending Shard of Dundun in Voidstorm
 		}),
 	}),
 }));
