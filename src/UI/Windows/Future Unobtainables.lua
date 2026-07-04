@@ -17,16 +17,18 @@ local function ParseCommand(self, cmd)
 		cmd = cmd:lower();
 		local patch = 0;
 		local major, minor, build = ("."):split(cmd);
+		major = tonumber(major)
+		if not major then return 0; end
 		if not minor then
 			if cmd == "default" then
 				patch = DefaultRWP;
 			elseif cmd == "classic" then
 				patch = 19999;
-			elseif cmd == "tbc" then
+			elseif cmd == "tbc" or cmd == "bc" then
 				patch = 29999;
 			elseif cmd == "wrath" then
 				patch = 39999;
-			elseif cmd == "cata" then
+			elseif cmd == "cataclysm" or cmd == "cata" then
 				patch = 49999;
 			elseif cmd == "mop" then
 				patch = 59999;
@@ -42,7 +44,7 @@ local function ParseCommand(self, cmd)
 				patch = 109999;
 			elseif cmd == "tww" then
 				patch = 119999;
-			elseif cmd == "midnight" then
+			elseif cmd == "midnight" or cmd == "mid" then
 				patch = 129999;
 			elseif cmd == "any" or cmd == "all" then
 				patch = 9999999999;

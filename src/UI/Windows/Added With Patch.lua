@@ -12,8 +12,10 @@ local ExpansionKeywords = {
 	all = { 0, 14 },
 	classic = { 0, 2 },
 	tbc = { 2, 3 },
+	bc = { 2, 3 },
 	wrath = { 3, 4 },
 	wotlk = { 3, 4 },
+	cataclysm = { 4, 5 },
 	cata = { 4, 5 },
 	mop = { 5, 6 },
 	wod = { 6, 7 },
@@ -41,6 +43,8 @@ local function ParsePatch(cmd)
 	else
 		local patch = 0;
 		local major, minor, build = ("."):split(cmd);
+		major = tonumber(major)
+		if not major then return 0; end
 		if minor then
 			if build then patch = patch + tonumber(build); end
 			patch = patch + (tonumber(minor) * 100);
