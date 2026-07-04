@@ -479,16 +479,17 @@ app.Race = race;
 app.IgnoreDataCaching = function()
 	-- This function currently returns false on Tournament realms. Very good. >_<
 	if IsOnTournamentRealm() then
-		app.print("Data will not be saved for this Realm");
+		app.print("Data will not be saved for Tournament Realms");
 		app.IgnoreDataCaching = app.ReturnTrue;
 		return true;
 	end
 	local realmName = GetRealmName();
 	if  realmName:find("Mythic Dungeons") or
 		realmName:find("Arena Champions") or
-		realmName:find("US") or
-		realmName:find("AU") or
-		realmName:find("EU")
+		realmName:find("Tournament")
+		-- realmName:find("US") or
+		-- realmName:find("AU") or
+		-- realmName:find("EU") or
 		-- confirm realm tournament names elsewhere
 		-- or realmName:find("CN")
 		-- or realmName:find("TW")
