@@ -1546,7 +1546,7 @@ settings.CreateInformationType("LinkSourceID", {
 	text = "DEBUG: Link SourceID",
 	HideCheckBox = not app.Debugging,
 	Process = function(t, data, tooltipInfo)
-		local link, source = data.link or data.silentLink, data.sourceID
+		local link, source = data.link or data.silentLink or data.rawlink, data.sourceID
 		local rowSource = app.ActiveRowReference and app.ActiveRowReference.sourceID
 		if not link then return; end
 		local itemName = GetItemInfo(link)
