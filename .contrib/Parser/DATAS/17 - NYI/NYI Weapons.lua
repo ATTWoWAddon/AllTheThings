@@ -282,7 +282,7 @@ root(ROOTS.NeverImplemented, {
 		filter(PROFESSION_EQUIPMENT, {
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, patch(0,0,1), {
-					i(199898),	-- Iskaara Fishing Pole
+					i(199898, {["sourceID"] = 182324 }),	-- Iskaara Fishing Pole
 				}),
 			}),
 		}),
@@ -1382,12 +1382,12 @@ root(ROOTS.NeverImplemented, {
 				-- 10.0.0
 				expansion(EXPANSION.DF, patch(0,0,1), {
 					i(189702),	-- 10.0 Dungeon Template - Wand - RangedRight
-					i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
-					i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
+					i(199932, {["sourceID"] = 182327 }),	-- 10.0 Enchanting - Weapon - Wand 1
+					i(199933, {["sourceID"] = 182328 }),	-- 10.0 Enchanting - Weapon - Wand 2
 					i(189140),	-- 10.0 QRP Template <Descriptor> Wand
 					i(189359),	-- 10.0 Zone Uncommon Template <Descriptor> Wand
 					i(201246),	-- Coiled Green Draketail
-					i(201775),	-- Crimson Aspirant's Wand
+					i(201775, {["sourceID"] = 183900 }),	-- Crimson Aspirant's Wand
 				}),
 
 				-- 10.1.5

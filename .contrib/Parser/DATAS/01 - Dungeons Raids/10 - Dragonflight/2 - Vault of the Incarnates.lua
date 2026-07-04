@@ -45,7 +45,10 @@ local EncounterToLoot = {
 		i(195475),	-- Flame Marshal's Bulwark
 		i(195479),	-- Flametender's Legwraps
 		i(195477),	-- Scaldrons of Molten Might
-		i(195480),	-- Seal of Diurna's Chosen
+		i(195480, {	-- Seal of Diurna's Chosen
+			["sourceID"] = 181139,
+			["collectible"] = false,
+		}),
 		i(195490),	-- Searing Blazecaster
 		i(195478),	-- Valdrakken Protector's Turncoat
 	},
@@ -58,7 +61,10 @@ local EncounterToLoot = {
 		i(195498),	-- Gaze of the Living Quarry
 		i(195497),	-- Quake-Detecting Seismostaff
 		i(194303),	-- Rumbling Ruby
-		i(195502),	-- Terros' Captive Core
+		i(195502, {	-- Terros' Captive Core
+			["sourceID"] = 181161,
+			["collectible"] = false,
+		}),
 	},
 	[THE_PRIMAL_COUNCIL] = {
 		i(194300),	-- Conjured Chillglobe
@@ -85,7 +91,10 @@ local EncounterToLoot = {
 		i(195493),	-- Ascended Squallspires
 		i(195495),	-- Daring Chasm-Leapers
 		i(195494),	-- Dathea's Cyclonic Cage
-		i(195496),	-- Eye of the Vengeful Hurricane
+		i(195496, {	-- Eye of the Vengeful Hurricane
+			["sourceID"] = 181155,
+			["collectible"] = false,
+		}),
 		i(195491),	-- Infused Stormglaives
 		i(195481),	-- Scepter of Drastic Measures
 		i(194302),	-- Storm-Eater's Boon
@@ -111,7 +120,10 @@ local EncounterToLoot = {
 		i(194308),	-- Manic Grieftorch
 		i(195524),	-- Matriarch's Opulent Girdle
 		i(195521),	-- Ornamental Drakonid Claw
-		i(195526),	-- Seal of Filial Duty
+		i(195526, {	-- Seal of Filial Duty
+			["sourceID"] = 181185,
+			["collectible"] = false,
+		}),
 		i(195522),	-- Tassets of the Tarasek Legion
 	},
 	[RASZAGETH] = {
@@ -130,7 +142,10 @@ local EncounterToLoot = {
 ------ Zone Drops ----------
 local ZoneDropLoot = {
 	i(202004),	-- Brawler's Earthen Cuirass [BoE]
-	i(201992),	-- Emissary's Flamewrought Seal [BoE]
+	i(201992, {	-- Emissary's Flamewrought Seal [BoE]
+		["sourceID"] = 184046,
+		["collectible"] = false,
+	}),
 	i(202005),	-- Frozen Claw Mantle [BoE]
 	i(202008),	-- Galvanic Gaiters [BoE]
 	i(202006),	-- Greathelm of Horned Fury [BoE]
@@ -731,7 +746,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH },
 				},{
 					i(202146),	-- Brawler's Earthen Cuirass [BoP]
-					i(202148),	-- Emissary's Flamewrought Seal [BoP]
+					i(202148, {	-- Emissary's Flamewrought Seal [BoP]
+						["sourceID"] = 184133,
+						["collectible"] = false,
+					}),
 					i(202145),	-- Frozen Claw Mantle [BoP]
 					i(202150),	-- Galvanic Gaiters [BoP]
 					i(202144),	-- Greathelm of Horned Fury [BoP]

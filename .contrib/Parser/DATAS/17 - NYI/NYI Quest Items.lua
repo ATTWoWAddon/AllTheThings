@@ -408,9 +408,9 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 
 			--- Might Appear In Game ---
 			i(191916),	-- [DNT] Engraved Spyglass
-			i(198813),	-- [DNT] Key to Knowledge
+			i(198813, {["sourceID"] = 181828 }),	-- [DNT] Key to Knowledge
 			i(191567),	-- [DNT] Placeholder Item
-			i(198820),	-- [DNT] The Book of Knowledge
+			i(198820, {["sourceID"] = 181829 }),	-- [DNT] The Book of Knowledge
 			i(191923),	-- [DNT] Worn Key
 			i(192477),	-- [PH] Primalist Keystone
 			i(191121),	-- Abalone-Inlaid Key
@@ -428,7 +428,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(191243),	-- Blue Dragon Relic
 			i(192507),	-- Boku's Empowerment Totems
 			i(191090),	-- Broken Lock
-			i(190965),	-- Bundle of Duck Feathers
+			i(190965, {["sourceID"] = 169562 }),	-- Bundle of Duck Feathers
 			i(191668),	-- Carved Stone Whale
 			i(194032),	-- Chaos Ysemerald
 			i(192561),	-- Chrono-Stabilizer
@@ -445,7 +445,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(192194),	-- Draconic Tools
 			i(191848),	-- Draconium Angle Iron (profession?)
 			i(193417),	-- Dreamwisp of Entangled Memories
-			i(190960),	-- Duck Tail Feathers
+			i(190960, {["sourceID"] = 169560 }),	-- Duck Tail Feathers
 			i(191104),	-- Durgun's Paw
 			i(193049),	-- Earth Key [DNT/UNUSED]
 			i(194428),	-- Elemental Soul Cage NYI
@@ -475,7 +475,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(200544),	-- Mistvale Map: Illegible
 			i(190191),	-- Muck-Covered Map
 			i(192783),	-- Nokhud Vanguard Orders
-			i(190964),	-- Ornate Chest Key
+			i(190964, {["sourceID"] = 169561 }),	-- Ornate Chest Key
 			i(191947),	-- Parachutes
 			i(189362),	-- Pheromone Gland
 			i(191246),	-- Pieces of Firewood

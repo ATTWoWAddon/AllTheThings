@@ -33,7 +33,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(613242, {	-- Antique Nobleman's Signet Ring
 					["coord"] = { 52.3, 45.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["questID"] = 93455,
-					["groups"] = { i(265814) },	-- Noble's Signet Ring
+					["groups"] = {
+						i(265814, {	-- Noble's Signet Ring
+							["sourceID"] = 303985,
+							["collectible"] = false,
+						}),
+					},
 				}),
 				o(555351, {	-- Burbling Paint Pot
 					["coord"] = { 48.7, 75.5, MAP.MIDNIGHT.EVERSONG_WOODS },

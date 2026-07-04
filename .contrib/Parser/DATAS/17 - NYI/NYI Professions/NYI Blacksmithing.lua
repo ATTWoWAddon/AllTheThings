@@ -496,7 +496,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(191070),	-- Blacksmithing Gloves
 					i(191025),	-- Blacksmith Hammer - DO NOT USE
 					i(191033),	-- Blacksmith Hammer 2 - DO NOT USE
-					i(199687),	-- BWU Test Hammer
+					i(199687, {["sourceID"] = 182205 }),	-- BWU Test Hammer
 					i(191259),	-- DNT - Stonename Razorstone
 					i(191258),	-- DNT - Stonename Weightstone
 					i(191257),	-- DNT - Stonename Whetstone

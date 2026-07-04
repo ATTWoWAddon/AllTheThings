@@ -3897,6 +3897,20 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
 		expansion(EXPANSION.DF, patch(0,0,1), bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+			filter(BACK_F, {
+				i(189669),	-- 10.0 Dungeon Template - Generic - Cloak
+				i(189061),	-- 10.0 End Game Template <Descriptor> Shawl
+				i(192038),	-- 10.0 PH Dragonscale Expedition Shawl
+				i(189102),	-- 10.0 QRP Template <Descriptor> Cloak
+				i(189101),	-- 10.0 QRP Template <Descriptor> Shroud
+				i(189622),	-- 10.0 Raid Template - Generic - Cloak
+				i(189622, {["sourceID"] = 167643 }),	-- 10.0 Raid Template - Generic - Cloak
+				i(189622, {["sourceID"] = 167644 }),	-- 10.0 Raid Template - Generic - Cloak
+				i(189622, {["sourceID"] = 167645 }),	-- 10.0 Raid Template - Generic - Cloak
+				i(189006),	-- 10.0 Zone Uncommon Template <Descriptor> Cape
+				i(200710),	-- Ashjra'kamas
+				i(200708),	-- Polymorphic Cloak of Absorption
+			}),
 			filter(CLOTH, {
 				i(189683),	-- 10.0 Dungeon Template - Cloth - Feet
 				i(189641),	-- 10.0 Dungeon Template - Cloth - Hand
@@ -3923,13 +3937,37 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189064),	-- 10.0 QRP Template <Descriptor> Vestments
 				i(189087),	-- 10.0 QRP Template <Descriptor> Wraps
 				i(189595),	-- 10.0 Raid Template - Cloth - Chest
+				i(189595, {["sourceID"] = 167535 }),	-- 10.0 Raid Template - Cloth - Chest
+				i(189595, {["sourceID"] = 167536 }),	-- 10.0 Raid Template - Cloth - Chest
+				i(189595, {["sourceID"] = 167537 }),	-- 10.0 Raid Template - Cloth - Chest
 				i(189592),	-- 10.0 Raid Template - Cloth - Feet
+				i(189592, {["sourceID"] = 167523 }),	-- 10.0 Raid Template - Cloth - Feet
+				i(189592, {["sourceID"] = 167524 }),	-- 10.0 Raid Template - Cloth - Feet
+				i(189592, {["sourceID"] = 167525 }),	-- 10.0 Raid Template - Cloth - Feet
 				i(189617),	-- 10.0 Raid Template - Cloth - Hand
+				i(189617, {["sourceID"] = 167623 }),	-- 10.0 Raid Template - Cloth - Hand
+				i(189617, {["sourceID"] = 167624 }),	-- 10.0 Raid Template - Cloth - Hand
+				i(189617, {["sourceID"] = 167625 }),	-- 10.0 Raid Template - Cloth - Hand
 				i(189616),	-- 10.0 Raid Template - Cloth - Head
+				i(189616, {["sourceID"] = 167619 }),	-- 10.0 Raid Template - Cloth - Head
+				i(189616, {["sourceID"] = 167620 }),	-- 10.0 Raid Template - Cloth - Head
+				i(189616, {["sourceID"] = 167621 }),	-- 10.0 Raid Template - Cloth - Head
 				i(189610),	-- 10.0 Raid Template - Cloth - Legs
+				i(189610, {["sourceID"] = 167595 }),	-- 10.0 Raid Template - Cloth - Legs
+				i(189610, {["sourceID"] = 167596 }),	-- 10.0 Raid Template - Cloth - Legs
+				i(189610, {["sourceID"] = 167597 }),	-- 10.0 Raid Template - Cloth - Legs
 				i(189615),	-- 10.0 Raid Template - Cloth - Shoulder
+				i(189615, {["sourceID"] = 167615 }),	-- 10.0 Raid Template - Cloth - Shoulder
+				i(189615, {["sourceID"] = 167616 }),	-- 10.0 Raid Template - Cloth - Shoulder
+				i(189615, {["sourceID"] = 167617 }),	-- 10.0 Raid Template - Cloth - Shoulder
 				i(189606),	-- 10.0 Raid Template - Cloth - Waist
+				i(189606, {["sourceID"] = 167579 }),	-- 10.0 Raid Template - Cloth - Waist
+				i(189606, {["sourceID"] = 167580 }),	-- 10.0 Raid Template - Cloth - Waist
+				i(189606, {["sourceID"] = 167581 }),	-- 10.0 Raid Template - Cloth - Waist
 				i(189602),	-- 10.0 Raid Template - Cloth - Wrist
+				i(189602, {["sourceID"] = 167563 }),	-- 10.0 Raid Template - Cloth - Wrist
+				i(189602, {["sourceID"] = 167564 }),	-- 10.0 Raid Template - Cloth - Wrist
+				i(189602, {["sourceID"] = 167565 }),	-- 10.0 Raid Template - Cloth - Wrist
 				i(188965),	-- 10.0 Zone Uncommon Template <Descriptor> Cord
 				i(188962),	-- 10.0 Zone Uncommon Template <Descriptor> Handwraps
 				i(188963),	-- 10.0 Zone Uncommon Template <Descriptor> Hood
@@ -3938,6 +3976,24 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(188991),	-- 10.0 Zone Uncommon Template <Descriptor> Shoulderpads
 				i(188960),	-- 10.0 Zone Uncommon Template <Descriptor> Vestment
 				i(188966),	-- 10.0 Zone Uncommon Template <Descriptor> Wristwraps
+			}),
+			filter(FINGER_F, {
+				i(189662),	-- 10.0 Dungeon Template - Generic - Finger
+				i(189049),	-- 10.0 End Game Template <Descriptor> Band
+				i(189059),	-- 10.0 End Game Template <Descriptor> Band
+				i(189050),	-- 10.0 End Game Template <Descriptor> Signet
+				i(192026),	-- 10.0 PH Dragonscale Expedition Band
+				i(192036),	-- 10.0 PH Dragonscale Expedition Band
+				i(192027),	-- 10.0 PH Dragonscale Expedition Signet
+				i(189093),	-- 10.0 QRP Template <Descriptor> Band
+				i(189091),	-- 10.0 QRP Template <Descriptor> Signet
+				i(189094),	-- 10.0 QRP Template <Descriptor> Signet
+				i(189119),	-- 10.0 QRP Template <Descriptor> Signet
+				i(189623),	-- 10.0 Raid Template - Generic - Finger
+				i(189003),	-- 10.0 Zone Uncommon Template <Descriptor> Band
+				i(189002),	-- 10.0 Zone Uncommon Template <Descriptor> Signet
+				i(200280),	-- Decaying Ghostly Band
+				i(197933),	-- Lutokk's Wedding Ring
 			}),
 			filter(LEATHER, {
 				i(189638),	-- 10.0 Dungeon Template - Leather - Chest
@@ -3966,13 +4022,37 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189079),	-- 10.0 QRP Template <Descriptor> Spaulders
 				i(189067),	-- 10.0 QRP Template <Descriptor> Vest
 				i(189609),	-- 10.0 Raid Template - Leather - Chest
+				i(189609, {["sourceID"] = 167591 }),	-- 10.0 Raid Template - Leather - Chest
+				i(189609, {["sourceID"] = 167592 }),	-- 10.0 Raid Template - Leather - Chest
+				i(189609, {["sourceID"] = 167593 }),	-- 10.0 Raid Template - Leather - Chest
 				i(189621),	-- 10.0 Raid Template - Leather - Feet
+				i(189621, {["sourceID"] = 167639 }),	-- 10.0 Raid Template - Leather - Feet
+				i(189621, {["sourceID"] = 167640 }),	-- 10.0 Raid Template - Leather - Feet
+				i(189621, {["sourceID"] = 167641 }),	-- 10.0 Raid Template - Leather - Feet
 				i(189608),	-- 10.0 Raid Template - Leather - Hand
+				i(189608, {["sourceID"] = 167587 }),	-- 10.0 Raid Template - Leather - Hand
+				i(189608, {["sourceID"] = 167588 }),	-- 10.0 Raid Template - Leather - Hand
+				i(189608, {["sourceID"] = 167589 }),	-- 10.0 Raid Template - Leather - Hand
 				i(189593),	-- 10.0 Raid Template - Leather - Head
+				i(189593, {["sourceID"] = 167527 }),	-- 10.0 Raid Template - Leather - Head
+				i(189593, {["sourceID"] = 167528 }),	-- 10.0 Raid Template - Leather - Head
+				i(189593, {["sourceID"] = 167529 }),	-- 10.0 Raid Template - Leather - Head
 				i(189599),	-- 10.0 Raid Template - Leather - Legs
+				i(189599, {["sourceID"] = 167551 }),	-- 10.0 Raid Template - Leather - Legs
+				i(189599, {["sourceID"] = 167552 }),	-- 10.0 Raid Template - Leather - Legs
+				i(189599, {["sourceID"] = 167553 }),	-- 10.0 Raid Template - Leather - Legs
 				i(189620),	-- 10.0 Raid Template - Leather - Shoulder
+				i(189620, {["sourceID"] = 167635 }),	-- 10.0 Raid Template - Leather - Shoulder
+				i(189620, {["sourceID"] = 167636 }),	-- 10.0 Raid Template - Leather - Shoulder
+				i(189620, {["sourceID"] = 167637 }),	-- 10.0 Raid Template - Leather - Shoulder
 				i(189601),	-- 10.0 Raid Template - Leather - Waist
+				i(189601, {["sourceID"] = 167559 }),	-- 10.0 Raid Template - Leather - Waist
+				i(189601, {["sourceID"] = 167560 }),	-- 10.0 Raid Template - Leather - Waist
+				i(189601, {["sourceID"] = 167561 }),	-- 10.0 Raid Template - Leather - Waist
 				i(189614),	-- 10.0 Raid Template - Leather - Wrist
+				i(189614, {["sourceID"] = 167611 }),	-- 10.0 Raid Template - Leather - Wrist
+				i(189614, {["sourceID"] = 167612 }),	-- 10.0 Raid Template - Leather - Wrist
+				i(189614, {["sourceID"] = 167613 }),	-- 10.0 Raid Template - Leather - Wrist
 				i(188971),	-- 10.0 Zone Uncommon Template <Descriptor> Belt
 				i(188972),	-- 10.0 Zone Uncommon Template <Descriptor> Bindings
 				i(188970),	-- 10.0 Zone Uncommon Template <Descriptor> Breeches
@@ -3982,59 +4062,41 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(188967),	-- 10.0 Zone Uncommon Template <Descriptor> Treads
 				i(188989),	-- 10.0 Zone Uncommon Template <Descriptor> Tunic
 			}),
-			filter(PLATE, {
-				i(189636),	-- 10.0 Dungeon Template - Plate - Chest
-				i(189634),	-- 10.0 Dungeon Template - Plate - Feet
-				i(189640),	-- 10.0 Dungeon Template - Plate - Hand
-				i(189682),	-- 10.0 Dungeon Template - Plate - Head
-				i(189646),	-- 10.0 Dungeon Template - Plate - Legs
-				i(189651),	-- 10.0 Dungeon Template - Plate - Shoulder
-				i(189654),	-- 10.0 Dungeon Template - Plate - Waist
-				i(189659),	-- 10.0 Dungeon Template - Plate - Wrist
-				i(189035),	-- 10.0 End Game Template <Descriptor> Armplates
-				i(189029),	-- 10.0 End Game Template <Descriptor> Breastplate
-				i(189031),	-- 10.0 End Game Template <Descriptor> Gauntlets
-				i(189034),	-- 10.0 End Game Template <Descriptor> Girdle
-				i(189028),	-- 10.0 End Game Template <Descriptor> Helm
-				i(189032),	-- 10.0 End Game Template <Descriptor> Legguards
-				i(189033),	-- 10.0 End Game Template <Descriptor> Mantle
-				i(189030),	-- 10.0 End Game Template <Descriptor> Sabatons
-				i(189065),	-- 10.0 QRP Template <Descriptor> ChestPlate
-				i(189115),	-- 10.0 QRP Template <Descriptor> Helm
-				i(189069),	-- 10.0 QRP Template <Descriptor> Gauntlets
-				i(189083),	-- 10.0 QRP Template <Descriptor> Girdle
-				i(189075),	-- 10.0 QRP Template <Descriptor> Legguards
-				i(189063),	-- 10.0 QRP Template <Descriptor> Sabatons
-				i(189080),	-- 10.0 QRP Template <Descriptor> Spaulders
-				i(189092),	-- 10.0 QRP Template <Descriptor> Ring
-				i(189088),	-- 10.0 QRP Template <Descriptor> Vambraces
-				i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
-				i(197912),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
-				i(197915),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
-				i(197914),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
-				i(197913),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
-				i(197911),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
-				i(197910),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
-				i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
-				i(189619),	-- 10.0 Raid Template - Plate - Feet
-				i(189594),	-- 10.0 Raid Template - Plate - Hand
-				i(189603),	-- 10.0 Raid Template - Plate - Head
-				i(189596),	-- 10.0 Raid Template - Plate - Chest
-				i(189598),	-- 10.0 Raid Template - Plate - Legs
-				i(189600),	-- 10.0 Raid Template - Plate - Shoulder
-				i(189613),	-- 10.0 Raid Template - Plate - Wrist
-				i(189618),	-- 10.0 Raid Template - Plate - Waist
-				i(188988),	-- 10.0 Zone Uncommon Template <Descriptor> Armplates
-				i(188982),	-- 10.0 Zone Uncommon Template <Descriptor> Breastplate
-				i(188987),	-- 10.0 Zone Uncommon Template <Descriptor> Cincture
-				i(188983),	-- 10.0 Zone Uncommon Template <Descriptor> Footguards
-				i(188984),	-- 10.0 Zone Uncommon Template <Descriptor> Gauntlets
-				i(188981),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
-				i(188985),	-- 10.0 Zone Uncommon Template <Descriptor> Legguards
-				i(188986),	-- 10.0 Zone Uncommon Template <Descriptor> Pauldrons
-				i(200737),	-- Pauldrons of Infinite Darkness
-				i(200230),	-- Terrorclaw Shoulderplates
-				i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
+			n(LEGENDARIES, {
+				cl(EVOKER, {
+					-- LFR
+					i(199551, {	-- Clasp of Unity Evoker
+						["bonusID"] = 6898
+					}),
+					i(199551, {	-- Clasp of Unity Evoker
+						["modID"] = 4
+					}),
+					-- Normal
+					i(199551, {	-- Clasp of Unity Evoker
+						["bonusID"] = 6895
+					}),
+					-- Heroic
+					i(199551, {	-- Clasp of Unity Evoker
+						["bonusID"] = 8107
+					}),
+					i(199551, {	-- Clasp of Unity Evoker
+						["modID"] = 2
+					}),
+					-- Mythic
+					i(199551, {	-- Clasp of Unity Evoker
+						["bonusID"] = 6897
+					}),
+					i(199551, {	-- Clasp of Unity Evoker
+						["modID"] = 6
+					}),
+					-- PvP
+					i(199551, {	-- Clasp of Unity Evoker
+						["bonusID"] = 6896
+					}),
+					i(199551, {	-- Clasp of Unity Evoker
+						["bonusID"] = 6894
+					}),
+				}),
 			}),
 			filter(MAIL, {
 				i(189637),	-- 10.0 Dungeon Template - Mail - Chest
@@ -4062,13 +4124,37 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189077),	-- 10.0 QRP Template <Descriptor> Leggings
 				i(189082),	-- 10.0 QRP Template <Descriptor> Monnion
 				i(189597),	-- 10.0 Raid Template - Mail - Chest
+				i(189597, {["sourceID"] = 167543 }),	-- 10.0 Raid Template - Mail - Chest
+				i(189597, {["sourceID"] = 167544 }),	-- 10.0 Raid Template - Mail - Chest
+				i(189597, {["sourceID"] = 167545 }),	-- 10.0 Raid Template - Mail - Chest
 				i(189607),	-- 10.0 Raid Template - Mail - Feet
+				i(189607, {["sourceID"] = 167583 }),	-- 10.0 Raid Template - Mail - Feet
+				i(189607, {["sourceID"] = 167584 }),	-- 10.0 Raid Template - Mail - Feet
+				i(189607, {["sourceID"] = 167585 }),	-- 10.0 Raid Template - Mail - Feet
 				i(189612),	-- 10.0 Raid Template - Mail - Hand
+				i(189612, {["sourceID"] = 167603 }),	-- 10.0 Raid Template - Mail - Hand
+				i(189612, {["sourceID"] = 167604 }),	-- 10.0 Raid Template - Mail - Hand
+				i(189612, {["sourceID"] = 167605 }),	-- 10.0 Raid Template - Mail - Hand
 				i(189604),	-- 10.0 Raid Template - Mail - Head
+				i(189604, {["sourceID"] = 167571 }),	-- 10.0 Raid Template - Mail - Head
+				i(189604, {["sourceID"] = 167572 }),	-- 10.0 Raid Template - Mail - Head
+				i(189604, {["sourceID"] = 167573 }),	-- 10.0 Raid Template - Mail - Head
 				i(189611),	-- 10.0 Raid Template - Mail - Legs
+				i(189611, {["sourceID"] = 167599 }),	-- 10.0 Raid Template - Mail - Legs
+				i(189611, {["sourceID"] = 167600 }),	-- 10.0 Raid Template - Mail - Legs
+				i(189611, {["sourceID"] = 167601 }),	-- 10.0 Raid Template - Mail - Legs
 				i(189605),	-- 10.0 Raid Template - Mail - Shoulder
+				i(189605, {["sourceID"] = 167575 }),	-- 10.0 Raid Template - Mail - Shoulder
+				i(189605, {["sourceID"] = 167576 }),	-- 10.0 Raid Template - Mail - Shoulder
+				i(189605, {["sourceID"] = 167577 }),	-- 10.0 Raid Template - Mail - Shoulder
 				i(189590),	-- 10.0 Raid Template - Mail - Waist
+				i(189590, {["sourceID"] = 167515 }),	-- 10.0 Raid Template - Mail - Waist
+				i(189590, {["sourceID"] = 167516 }),	-- 10.0 Raid Template - Mail - Waist
+				i(189590, {["sourceID"] = 167517 }),	-- 10.0 Raid Template - Mail - Waist
 				i(189591),	-- 10.0 Raid Template - Mail - Wrist
+				i(189591, {["sourceID"] = 167519 }),	-- 10.0 Raid Template - Mail - Wrist
+				i(189591, {["sourceID"] = 167520 }),	-- 10.0 Raid Template - Mail - Wrist
+				i(189591, {["sourceID"] = 167521 }),	-- 10.0 Raid Template - Mail - Wrist
 				i(188980),	-- 10.0 Zone Uncommon Template <Descriptor> Bracers
 				i(188973),	-- 10.0 Zone Uncommon Template <Descriptor> Chainmail
 				i(188979),	-- 10.0 Zone Uncommon Template <Descriptor> Cinch
@@ -4080,47 +4166,129 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(191942),	-- Belloc's Hat [Added SpellIDs regarding this.. Belloc also lost his hat... In Waking Shores 371683 (Wear Belloc's Hat [DNT]), 371665 (Sit on Belloc's Head [DNT]) /Brage ]
 				i(191934),	-- TEMP Event Stream TEMP - No Buckle Fleshscale Belt
 			}),
-			filter(BACK_F, {
-				i(189669),	-- 10.0 Dungeon Template - Generic - Cloak
-				i(189061),	-- 10.0 End Game Template <Descriptor> Shawl
-				i(192038),	-- 10.0 PH Dragonscale Expedition Shawl
-				i(189102),	-- 10.0 QRP Template <Descriptor> Cloak
-				i(189101),	-- 10.0 QRP Template <Descriptor> Shroud
-				i(189622),	-- 10.0 Raid Template - Generic - Cloak
-				i(189006),	-- 10.0 Zone Uncommon Template <Descriptor> Cape
-				i(200710),	-- Ashjra'kamas
-				i(200708),	-- Polymorphic Cloak of Absorption
-			}),
-			filter(FINGER_F, {
-				i(189662),	-- 10.0 Dungeon Template - Generic - Finger
-				i(189049),	-- 10.0 End Game Template <Descriptor> Band
-				i(189059),	-- 10.0 End Game Template <Descriptor> Band
-				i(189050),	-- 10.0 End Game Template <Descriptor> Signet
-				i(192026),	-- 10.0 PH Dragonscale Expedition Band
-				i(192036),	-- 10.0 PH Dragonscale Expedition Band
-				i(192027),	-- 10.0 PH Dragonscale Expedition Signet
-				i(189093),	-- 10.0 QRP Template <Descriptor> Band
-				i(189091),	-- 10.0 QRP Template <Descriptor> Signet
-				i(189094),	-- 10.0 QRP Template <Descriptor> Signet
-				i(189119),	-- 10.0 QRP Template <Descriptor> Signet
-				i(189623),	-- 10.0 Raid Template - Generic - Finger
-				i(189003),	-- 10.0 Zone Uncommon Template <Descriptor> Band
-				i(189002),	-- 10.0 Zone Uncommon Template <Descriptor> Signet
-				i(200280),	-- Decaying Ghostly Band
-				i(197933),	-- Lutokk's Wedding Ring
-			}),
 			filter(NECK_F, {
 				i(189667),	-- 10.0 Dungeon Template - Generic - Neck
 				i(189062),	-- 10.0 End Game Template <Descriptor> Choker
 				i(192039),	-- 10.0 PH Dragonscale Expedition Choker
 				i(189099),	-- 10.0 QRP Template <Descriptor> Pendant
 				i(189100),	-- 10.0 QRP Template <Descriptor> Pendant
+				i(189092),	-- 10.0 QRP Template <Descriptor> Ring
 				i(189624),	-- 10.0 Raid Template - Generic - Neck
 				i(189005),	-- 10.0 Zone Uncommon Template <Descriptor> Necklace
 			}),
+			filter(PLATE, {
+				i(189636),	-- 10.0 Dungeon Template - Plate - Chest
+				i(189634),	-- 10.0 Dungeon Template - Plate - Feet
+				i(189640),	-- 10.0 Dungeon Template - Plate - Hand
+				i(189682),	-- 10.0 Dungeon Template - Plate - Head
+				i(189646),	-- 10.0 Dungeon Template - Plate - Legs
+				i(189651),	-- 10.0 Dungeon Template - Plate - Shoulder
+				i(189654),	-- 10.0 Dungeon Template - Plate - Waist
+				i(189659),	-- 10.0 Dungeon Template - Plate - Wrist
+				i(189035),	-- 10.0 End Game Template <Descriptor> Armplates
+				i(189029),	-- 10.0 End Game Template <Descriptor> Breastplate
+				i(189031),	-- 10.0 End Game Template <Descriptor> Gauntlets
+				i(189034),	-- 10.0 End Game Template <Descriptor> Girdle
+				i(189028),	-- 10.0 End Game Template <Descriptor> Helm
+				i(189032),	-- 10.0 End Game Template <Descriptor> Legguards
+				i(189033),	-- 10.0 End Game Template <Descriptor> Mantle
+				i(189030),	-- 10.0 End Game Template <Descriptor> Sabatons
+				i(189065),	-- 10.0 QRP Template <Descriptor> ChestPlate
+				i(189115),	-- 10.0 QRP Template <Descriptor> Helm
+				i(189069),	-- 10.0 QRP Template <Descriptor> Gauntlets
+				i(189083),	-- 10.0 QRP Template <Descriptor> Girdle
+				i(189075),	-- 10.0 QRP Template <Descriptor> Legguards
+				i(189063),	-- 10.0 QRP Template <Descriptor> Sabatons
+				i(189080),	-- 10.0 QRP Template <Descriptor> Spaulders
+				i(189088),	-- 10.0 QRP Template <Descriptor> Vambraces
+				-- i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+				-- i(197912),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+				-- i(197915),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+				-- i(197914),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+				-- i(197913),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+				-- i(197911),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+				-- i(197910),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+				-- i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+				i(197916, {["sourceID"] = 181351 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+				i(197916, {["sourceID"] = 181373 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+				i(197916, {["sourceID"] = 181374 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+				i(197916, {["sourceID"] = 181375 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+				i(197912, {["sourceID"] = 181347 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+				i(197912, {["sourceID"] = 181361 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+				i(197912, {["sourceID"] = 181362 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+				i(197912, {["sourceID"] = 181363 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+				i(197915, {["sourceID"] = 181350 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+				i(197915, {["sourceID"] = 181370 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+				i(197915, {["sourceID"] = 181371 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+				i(197915, {["sourceID"] = 181372 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+				i(197914, {["sourceID"] = 181349 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+				i(197914, {["sourceID"] = 181367 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+				i(197914, {["sourceID"] = 181368 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+				i(197914, {["sourceID"] = 181369 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+				i(197913, {["sourceID"] = 181348 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+				i(197913, {["sourceID"] = 181364 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+				i(197913, {["sourceID"] = 181365 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+				i(197913, {["sourceID"] = 181366 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+				i(197911, {["sourceID"] = 181346 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+				i(197911, {["sourceID"] = 181358 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+				i(197911, {["sourceID"] = 181359 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+				i(197911, {["sourceID"] = 181360 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+				i(197910, {["sourceID"] = 181345 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+				i(197910, {["sourceID"] = 181355 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+				i(197910, {["sourceID"] = 181356 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+				i(197910, {["sourceID"] = 181357 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+				i(197917, {["sourceID"] = 181352 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+				i(197917, {["sourceID"] = 181376 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+				i(197917, {["sourceID"] = 181377 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+				i(197917, {["sourceID"] = 181378 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+				i(189596),	-- 10.0 Raid Template - Plate - Chest
+				i(189596, {["sourceID"] = 167539 }),	-- 10.0 Raid Template - Plate - Chest
+				i(189596, {["sourceID"] = 167540 }),	-- 10.0 Raid Template - Plate - Chest
+				i(189596, {["sourceID"] = 167541 }),	-- 10.0 Raid Template - Plate - Chest
+				i(189619),	-- 10.0 Raid Template - Plate - Feet
+				i(189619, {["sourceID"] = 167631 }),	-- 10.0 Raid Template - Plate - Feet
+				i(189619, {["sourceID"] = 167632 }),	-- 10.0 Raid Template - Plate - Feet
+				i(189619, {["sourceID"] = 167633 }),	-- 10.0 Raid Template - Plate - Feet
+				i(189594),	-- 10.0 Raid Template - Plate - Hand
+				i(189594, {["sourceID"] = 167531 }),	-- 10.0 Raid Template - Plate - Hand
+				i(189594, {["sourceID"] = 167532 }),	-- 10.0 Raid Template - Plate - Hand
+				i(189594, {["sourceID"] = 167533 }),	-- 10.0 Raid Template - Plate - Hand
+				i(189603),	-- 10.0 Raid Template - Plate - Head
+				i(189603, {["sourceID"] = 167567 }),	-- 10.0 Raid Template - Plate - Head
+				i(189603, {["sourceID"] = 167568 }),	-- 10.0 Raid Template - Plate - Head
+				i(189603, {["sourceID"] = 167569 }),	-- 10.0 Raid Template - Plate - Head
+				i(189598),	-- 10.0 Raid Template - Plate - Legs
+				i(189598, {["sourceID"] = 167547 }),	-- 10.0 Raid Template - Plate - Legs
+				i(189598, {["sourceID"] = 167548 }),	-- 10.0 Raid Template - Plate - Legs
+				i(189598, {["sourceID"] = 167549 }),	-- 10.0 Raid Template - Plate - Legs
+				i(189600),	-- 10.0 Raid Template - Plate - Shoulder
+				i(189600, {["sourceID"] = 167555 }),	-- 10.0 Raid Template - Plate - Shoulder
+				i(189600, {["sourceID"] = 167556 }),	-- 10.0 Raid Template - Plate - Shoulder
+				i(189600, {["sourceID"] = 167557 }),	-- 10.0 Raid Template - Plate - Shoulder
+				i(189618),	-- 10.0 Raid Template - Plate - Waist
+				i(189618, {["sourceID"] = 167627 }),	-- 10.0 Raid Template - Plate - Waist
+				i(189618, {["sourceID"] = 167628 }),	-- 10.0 Raid Template - Plate - Waist
+				i(189618, {["sourceID"] = 167629 }),	-- 10.0 Raid Template - Plate - Waist
+				i(189613),	-- 10.0 Raid Template - Plate - Wrist
+				i(189613, {["sourceID"] = 167607 }),	-- 10.0 Raid Template - Plate - Wrist
+				i(189613, {["sourceID"] = 167608 }),	-- 10.0 Raid Template - Plate - Wrist
+				i(189613, {["sourceID"] = 167609 }),	-- 10.0 Raid Template - Plate - Wrist
+				i(188988),	-- 10.0 Zone Uncommon Template <Descriptor> Armplates
+				i(188982),	-- 10.0 Zone Uncommon Template <Descriptor> Breastplate
+				i(188987),	-- 10.0 Zone Uncommon Template <Descriptor> Cincture
+				i(188983),	-- 10.0 Zone Uncommon Template <Descriptor> Footguards
+				i(188984),	-- 10.0 Zone Uncommon Template <Descriptor> Gauntlets
+				i(188981),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
+				i(188985),	-- 10.0 Zone Uncommon Template <Descriptor> Legguards
+				i(188986),	-- 10.0 Zone Uncommon Template <Descriptor> Pauldrons
+				i(200737),	-- Pauldrons of Infinite Darkness
+				i(200230),	-- Terrorclaw Shoulderplates
+				i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
+			}),
 			filter(TABARDS, {
-				i(191271),	-- Black Smith's Tabard
-				i(194676),	-- Emboldened Dracthyr's Tabard [Lol they changed model]
+				i(191271, {["sourceID"] = 169644 }),	-- Black Smith's Tabard
+				i(194676),	-- Emboldened Dracthyr's Tabard
+				i(194676, {["sourceID"] = 181042 }),	-- Emboldened Dracthyr's Tabard
 			}),
 			filter(TRINKET_F, {
 				i(189666),	-- 10.0 Dungeon Template - Generic - Trinket
@@ -4149,7 +4317,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(198435),	-- zzOldDarkmoon Deckbox: Watcher
 			}),
 			n(WAIST, {
-				i(198681),	-- Luke Test Belt [DNT]
+				i(198681, {["sourceID"] = 181765 }),	-- Luke Test Belt [DNT]
 			}),
 		})),
 
@@ -4247,12 +4415,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				filter(CLOTH, {
 					i(202651, {["sourceID"] = 184583 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - FEET 2
 					i(202653, {["sourceID"] = 184585 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - WRIST 2
-					itemsource(185571),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
-					itemsource(186478),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
-					itemsource(186480),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
-					itemsource(185570),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
-					itemsource(186496),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
-					itemsource(186498),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
+					itemsource(185571),	-- Bands of Purified Purpose
+					itemsource(186478),	-- Bands of Purified Purpose
+					itemsource(186480),	-- Bands of Purified Purpose
+					itemsource(185570),	-- Crucible Curator's Wingspan
+					itemsource(186496),	-- Crucible Curator's Wingspan
+					itemsource(186498),	-- Crucible Curator's Wingspan
 				}),
 				filter(FINGER_F, {
 					i(202649),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - FINGER 2
@@ -4262,22 +4430,22 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					i(202654, {["sourceID"] = 184586 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - FEET 2
 					i(202581, {["sourceID"] = 184554 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
 					i(202656, {["sourceID"] = 184588 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 2
-					itemsource(185574),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
-					itemsource(186632),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
-					itemsource(186634),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
-					itemsource(185575),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
-					itemsource(186647),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
-					itemsource(186649),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
+					itemsource(185574),	-- Laboratory Assistant's Abductors
+					itemsource(186632),	-- Laboratory Assistant's Abductors
+					itemsource(186634),	-- Laboratory Assistant's Abductors
+					itemsource(185575),	-- Mantle of Sunless Kindling
+					itemsource(186647),	-- Mantle of Sunless Kindling
+					itemsource(186649),	-- Mantle of Sunless Kindling
 				}),
 				filter(MAIL, {
 					i(202657, {["sourceID"] = 184589 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - FEET 2
 					i(202658, {["sourceID"] = 184590 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - WAIST 2
-					itemsource(186544),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-					itemsource(186546),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-					itemsource(185579),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-					itemsource(186517),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
-					itemsource(186519),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
-					itemsource(185578),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
+					itemsource(186544),	-- Faulds of Failed Experiments
+					itemsource(186546),	-- Faulds of Failed Experiments
+					itemsource(185579),	-- Faulds of Failed Experiments
+					itemsource(186517),	-- Sundered Edgelord's Breastplate
+					itemsource(186519),	-- Sundered Edgelord's Breastplate
+					itemsource(185578),	-- Sundered Edgelord's Breastplate
 				}),
 				filter(NECK_F, {
 					i(202650),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - NECK 2
@@ -4287,12 +4455,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					i(202660, {["sourceID"] = 184592 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - FEET 2
 					i(202661, {["sourceID"] = 184593 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WAIST 2
 					i(202662, {["sourceID"] = 184594 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WRIST 2
-					itemsource(185585),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
-					itemsource(186695),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
-					itemsource(186697),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
-					itemsource(185586),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
-					itemsource(186662),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
-					itemsource(186664),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
+					itemsource(185585),	-- Devoted Warden's Gaze
+					itemsource(186695),	-- Devoted Warden's Gaze
+					itemsource(186697),	-- Devoted Warden's Gaze
+					itemsource(185586),	-- Sanctum Guard's Forgewalkers
+					itemsource(186662),	-- Sanctum Guard's Forgewalkers
+					itemsource(186664),	-- Sanctum Guard's Forgewalkers
 				}),
 				filter(TRINKET_F, {
 					i(202609),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - Trinket - INT
@@ -4306,19 +4474,19 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			n(WORLD_BOSSES, {
 				filter(CLOTH, {
-					itemsource(186505),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
-					itemsource(186506),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
-					itemsource(186507),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
+					itemsource(186505),	-- Gholna's Lavaborne Legwraps
+					itemsource(186506),	-- Gholna's Lavaborne Legwraps
+					itemsource(186507),	-- Gholna's Lavaborne Legwraps
 				}),
 				filter(LEATHER, {
-					itemsource(186617),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
-					itemsource(186618),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
-					itemsource(186619),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
+					itemsource(186617),	-- Cavernous Foliage Wristbands
+					itemsource(186618),	-- Cavernous Foliage Wristbands
+					itemsource(186619),	-- Cavernous Foliage Wristbands
 				}),
 				filter(MAIL, {
-					itemsource(186532),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
-					itemsource(186533),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
-					itemsource(186534),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
+					itemsource(186532),	-- Crown of the Twin Elders
+					itemsource(186533),	-- Crown of the Twin Elders
+					itemsource(186534),	-- Crown of the Twin Elders
 				}),
 			}),
 		})),

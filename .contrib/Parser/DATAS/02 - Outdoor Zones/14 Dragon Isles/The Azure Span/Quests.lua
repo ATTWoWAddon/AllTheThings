@@ -975,7 +975,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 196254 },	-- Kattigat
 					["coord"] = { 67.2, 44.4, THE_AZURE_SPAN },
 					["groups"] = {
-						i(194747),	-- Frozen Venom Gland (QI!)
+						i(194747, {	-- Frozen Venom Gland (QI!)
+							["sourceID"] = 181045,
+							["collectible"] = false,
+						}),
 					},
 				}),
 				q(67724, {	-- The Fending Flames

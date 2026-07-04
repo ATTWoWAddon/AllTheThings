@@ -159,6 +159,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								{ "i", ESSENCE_OF_THE_STORM, 30 },
 								{ "c", ELEMENTAL_OVERFLOW, 750 },
 							},
+							["sourceID"] = 184009,
+							["collectible"] = false,
 						}),
 						i(202015, {	-- Sands of Temporal Perfection
 							["cost"] = {

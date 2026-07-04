@@ -654,7 +654,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(191888, {["requireSkill"] = BLACKSMITHING}),	-- Khaz'gorite Blacksmith's Hammer
 			i(191230, {["requireSkill"] = BLACKSMITHING}),	-- Khaz'gorite Blacksmith's Toolbox
 			i(191227, {["requireSkill"] = LEATHERWORKING}),	-- Khaz'gorite Leatherworker's Knife
-			i(191229, {["requireSkill"] = LEATHERWORKING}),	-- Khaz'gorite Leatherworker's Toolset
+			i(191229, {	-- Khaz'gorite Leatherworker's Toolset
+				["requireSkill"] = LEATHERWORKING,
+				["sourceID"] = 180390,
+				["collectible"] = false,
+			}),
 			i(191226, {["requireSkill"] = TAILORING}),	-- Khaz'gorite Needle Set
 			i(191223, {["requireSkill"] = MINING}),	-- Khaz'gorite Pickaxe
 			i(191224, {["requireSkill"] = HERBALISM}),	-- Khaz'gorite Sickle

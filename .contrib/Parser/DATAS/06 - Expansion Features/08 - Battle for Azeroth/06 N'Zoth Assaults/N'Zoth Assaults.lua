@@ -482,7 +482,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				})),
 				n(ZONE_DROPS, {
 					i(169294),	-- Resilient Soul
-					i(173888),	-- Shard of Self Sacrifice \\ Lingering Soul
+					i(173888),	-- Shard of Self Sacrifice
 					i(173293),	-- Vial of Self Preservation
 				}),
 			}),

@@ -316,8 +316,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 236162 },	-- Zul'jarra
 						["coord"] = { 55.0, 18.3, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
-							i(248578),	-- Band of Impatience
-							i(248577),	-- Ring of Doubt
+							i(248578, {	-- Band of Impatience
+								["sourceID"] = 295609,
+								["collectible"] = false,
+							}),
+							i(248577, {	-- Ring of Doubt
+								["sourceID"] = 295608,
+								["collectible"] = false,
+							}),
 						},
 					}),
 					q(86665, {	-- Face in the Fire
@@ -600,8 +606,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 240975 },	-- Namaji
 						["coord"] = { 44.4, 65.7, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
-							i(264448),	-- Featherwoven Promise Band
-							i(264447),	-- Ring of the Threshadon's Heart
+							i(264448, {	-- Featherwoven Promise Band
+								["sourceID"] = 303353,
+								["collectible"] = false,
+							}),
+							i(264447, {	-- Ring of the Threshadon's Heart
+								["sourceID"] = 303352,
+								["collectible"] = false,
+							}),
 						},
 					}),
 				}),

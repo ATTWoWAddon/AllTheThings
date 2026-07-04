@@ -1072,7 +1072,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(192127),	-- Basilisk Eggs
 			i(192560),	-- Bossy Storm Stuff
 			i(192078),	-- Bottled Putrescence
-			i(199690),	-- BWU Test Profession Accessory
+			i(199690, {["sourceID"] = 182206 }),	-- BWU Test Profession Accessory
 			i(200950),	-- Consortium Packaging String
 			i(191058),	-- Dilapidated Parchment: Bottom Half
 			i(191059),	-- Dilapidated Parchment: Top Half

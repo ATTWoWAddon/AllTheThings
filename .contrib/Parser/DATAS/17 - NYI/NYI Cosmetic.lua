@@ -176,14 +176,14 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			}),
 			n(WEAPONS, {
 				i(194318),	-- Book of Ancient Lore
-				i(198385),	-- Draconian Garden Pick
+				i(198385, {["sourceID"] = 181695 }),	-- Draconian Garden Pick
 				i(194329),	-- Elaborate Reliquary Candelabra
-				i(198386),	-- Gardener's Tilling Spork
+				i(198386, {["sourceID"] = 181696 }),	-- Gardener's Tilling Spork
 				i(194314),	-- Light of the Enlightened
 				i(194331),	-- Pristine Research Journal
 				i(194316),	-- Tome of Forgotten Legends
-				i(198342),	-- Tuskarr Expedition Pack
-				i(191647),	-- Tuskarr Fishing Pole
+				i(198342, {["sourceID"] = 181576 }),	-- Tuskarr Expedition Pack
+				i(191647, {["sourceID"] = 169691 }),	-- Tuskarr Fishing Pole
 			}),
 		})),
 

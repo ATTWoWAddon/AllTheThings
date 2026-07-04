@@ -16,7 +16,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["groups"] = {
 					i(201698),	-- Black Dragon Red Eye
 					i(201697),	-- Coldarra Coldbrew
-					i(201046),	-- Dreamwarding Dripbrew
+					i(201046, {	-- Dreamwarding Dripbrew
+						["sourceID"] = 183122,
+						["collectible"] = false,
+					}),
 					i(201725),	-- Flappuccino
 					i(201721),	-- Life Fire Latte
 				},

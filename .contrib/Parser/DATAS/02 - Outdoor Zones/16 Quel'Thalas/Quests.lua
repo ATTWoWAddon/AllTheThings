@@ -751,7 +751,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						i(251899),	-- Anasterian's Book of Law (QI!)
 						o(573743, {	-- Crown of the High King
 							["coord"] = { 30.2, 90.8, MAP.MIDNIGHT.EVERSONG_WOODS },
-							["groups"] = { i(251904) },	-- Crown of the High King (QI!)
+							["groups"] = {
+								i(251904, {	-- Crown of the High King (QI!)
+									["sourceID"] = 298430,
+									["collectible"] = false,
+								}),
+							},
 						}),
 						--
 						i(264286),	-- Voidbreaker's Choker

@@ -1339,7 +1339,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["groups"] = {
 					i(198450),	-- Old Crabshell (QI!)
 					i(198456),	-- Oliveye Fry (QI!)
-					i(198455),	-- Tangled Roots (QI!)
+					i(198455, {	-- Tangled Roots (QI!)
+						["sourceID"] = 181708,
+						["collectible"] = false,
+					}),
 				},
 			}),
 			q(70319, {	-- Nergazurai

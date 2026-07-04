@@ -59,7 +59,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(194843),	-- Explorer's Barding Manuscript
 					i(192464),	-- Darkmoon Deck: Ysera
 					i(191783),	-- Draconic Treatise on Blacksmithing
-					i(191078),	-- Gold Rolling Pin
+					i(191078, {["sourceID"] = 169602 }),	-- Gold Rolling Pin
 					i(194842),	-- Regal Barding Manuscript
 				})),
 			}),

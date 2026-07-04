@@ -85,7 +85,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93517, {	-- Otherworldly Intelligence
 					["coord"] = { 47.3, 70.3, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
-						i(259029),	-- Shadowguard Intelligence (QI!)
+						i(259029, {	-- Shadowguard Intelligence (QI!)
+							["sourceID"] = 301830,
+							["collectible"] = false,
+						}),
 					},
 				}),
 				q(93579, {	-- Path of Purgation

@@ -172,7 +172,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 200074 },	-- Rannan Korren
 					["coord"] = { 62.6, 73.3, ZARALEK_CAVERN },
 					["groups"] = {
-						i(204387),	-- Buzzing Orb Core
+						i(204387, {	-- Buzzing Orb Core
+							["sourceID"] = 185789,
+							["collectible"] = false,
+						}),
 						i(204833),	-- Buzzing Orb Core (QI!)
 					},
 				}),

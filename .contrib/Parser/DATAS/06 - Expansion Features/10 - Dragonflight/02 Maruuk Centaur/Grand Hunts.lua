@@ -323,10 +323,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 				["groups"] = {
 					i(194097),	-- Hunter's Fabulous Treasure
-					i(194108),	-- Mighty Hunter's Horn
+					i(194108, {	-- Mighty Hunter's Horn
+						["sourceID"] = 180922,
+						["collectible"] = false,
+					}),
 					i(194086),	-- Proof of Cunning
 					i(194085),	-- Proof of Might
-					i(194099),	-- Shikaar Hunting Horn
+					i(194099, {	-- Shikaar Hunting Horn
+						["sourceID"] = 180919,
+						["collectible"] = false,
+					}),
 					i(194092),	-- Timbertooth Pelt
 					q(70906, {
 						["name"] = "1st Weekly Grand Hunt",

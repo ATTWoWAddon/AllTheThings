@@ -418,7 +418,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["groups"] = {
-							i(194099),	-- Shikaar Hunting Horn
+							i(194099, {	-- Shikaar Hunting Horn
+								["sourceID"] = 180919,
+								["collectible"] = false,
+							}),
 						},
 					}),
 				}, {	-- RENOWN 24 --
