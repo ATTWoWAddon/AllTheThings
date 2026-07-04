@@ -781,6 +781,16 @@ local function WipeTooltipInfoCache()
 	-- app.PrintDebug("WipeTooltipInfoCache")
 end
 app.WipeTooltipInfoCache = WipeTooltipInfoCache
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Tooltip info", function()
+		local entries, lines = 0, 0
+		for _,tooltipInfo in pairs(TooltipInfoCache) do
+			entries = entries + 1
+			if type(tooltipInfo) == "table" then lines = lines + #tooltipInfo end
+		end
+		return entries, lines, "cached tooltips / tooltip lines"
+	end)
+end
 -- app.AddEventHandler("OnCurrentDifficultiesChanged", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnRefreshComplete", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnThingCollected", WipeTooltipInfoCache);
