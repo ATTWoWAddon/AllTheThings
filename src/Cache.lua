@@ -1,21 +1,175 @@
 local _, app = ...;
 
 -- Global locals
-local next, rawget
-	= next, rawget
+local next, rawget, rawset, getmetatable, setmetatable, type
+	= next, rawget, rawset, getmetatable, setmetatable, type
 
 -- CRIEVE NOTE: This might look weird, but keeping this out of the scope made it run really quite fast.
 local CacheFields;
 
+-- Retail uses compact singleton entries to reduce table overhead. Classic keeps the
+-- historical array-per-key contract because several Classic-only consumers still
+-- index and iterate field-container values directly.
+local UseCompactCache = app.IsRetail
+
+-- Tracks structural mutations to the central index so maintenance can skip expensive
+-- full-index scans when no keys or references changed since the previous pass.
+local CacheMutationGeneration = 0
+local function MarkCacheMutation()
+	CacheMutationGeneration = CacheMutationGeneration + 1
+end
+
+-- Compact cache storage
+-- Most ATT search keys point at exactly one object. Storing every singleton in its own Lua array
+-- costs a large amount of persistent memory. A singleton is now stored as the object itself and
+-- promoted to a normal array only when a second object shares the same key/value.
+local CacheListMeta = { __attCacheList = true }
+local ResultListMeta = { __attCacheResults = true }
+local SingletonResults = setmetatable({}, { __mode = "kv" })
+local function IsCacheList(entry)
+	return entry and getmetatable(entry) == CacheListMeta
+end
+local function IsResultList(entry)
+	if not entry then return false end
+	local meta = getmetatable(entry)
+	return meta == CacheListMeta or meta == ResultListMeta
+end
+local function GetCacheContainer(cache, field, create)
+	if field == "npcID" then field = "creatureID" end
+	local container = rawget(cache, field)
+	if not container and create then
+		container = {}
+		rawset(cache, field, container)
+		if field == "creatureID" then rawset(cache, "npcID", container) end
+		MarkCacheMutation()
+	end
+	return container
+end
+local function AddCacheEntry(cache, field, value, group)
+	if value == nil or group == nil then return end
+	local container = GetCacheContainer(cache, field, true)
+	local entry = rawget(container, value)
+	if not entry then
+		if UseCompactCache then
+			rawset(container, value, group)
+		else
+			-- Classic code historically expects every container value to be an array.
+			rawset(container, value, setmetatable({ group }, CacheListMeta))
+		end
+	elseif IsCacheList(entry) then
+		entry[#entry + 1] = group
+	else
+		-- This branch is only expected for Retail compact singleton entries.
+		local results = SingletonResults[entry]
+		if results then
+			SingletonResults[entry] = nil
+			setmetatable(results, CacheListMeta)
+			results[#results + 1] = group
+			rawset(container, value, results)
+		else
+			rawset(container, value, setmetatable({ entry, group }, CacheListMeta))
+		end
+	end
+	MarkCacheMutation()
+end
+local function RemoveCacheEntry(cache, field, value, group)
+	local container = GetCacheContainer(cache, field, false)
+	if not container then return end
+	local entry = rawget(container, value)
+	if entry == group then
+		local results = SingletonResults[entry]
+		if results then
+			SingletonResults[entry] = nil
+			for i=#results,1,-1 do results[i] = nil end
+		end
+		rawset(container, value, nil)
+		MarkCacheMutation()
+	elseif IsCacheList(entry) then
+		for i=#entry,1,-1 do
+			if entry[i] == group then
+				table.remove(entry, i)
+				if #entry == 0 then
+					rawset(container, value, nil)
+				elseif UseCompactCache and #entry == 1 then
+					local remaining = entry[1]
+					setmetatable(entry, ResultListMeta)
+					SingletonResults[remaining] = entry
+					rawset(container, value, remaining)
+				end
+				MarkCacheMutation()
+				return
+			end
+		end
+	end
+end
+local function CacheEntryCount(entry)
+	if not entry then return 0 end
+	return IsResultList(entry) and #entry or 1
+end
+local function CacheEntryFirst(entry)
+	if IsResultList(entry) then return entry[1] end
+	return entry
+end
+local function CacheEntryIterator(entry, index)
+	index = index + 1
+	if IsResultList(entry) then
+		local value = entry[index]
+		if value ~= nil then return index, value end
+	elseif index == 1 and entry ~= nil then
+		return 1, entry
+	end
+end
+local function IterateCacheEntry(entry)
+	return CacheEntryIterator, entry, 0
+end
+local function CacheEntryResults(entry, emptyWhenMissing)
+	if not entry then return emptyWhenMissing and app.EmptyTable or nil end
+	if IsResultList(entry) then return entry end
+	local results = SingletonResults[entry]
+	if not results then
+		results = setmetatable({ entry }, ResultListMeta)
+		SingletonResults[entry] = results
+	end
+	return results
+end
+local function AppendCacheEntry(results, entry)
+	if IsResultList(entry) then
+		for i=1,#entry do results[#results + 1] = entry[i] end
+	elseif entry then
+		results[#results + 1] = entry
+	end
+end
+
+app.GetCachedFieldResults = CacheEntryResults
+app.GetCachedFieldCount = CacheEntryCount
+app.GetFirstCachedFieldResult = CacheEntryFirst
+app.IterateCachedFieldResults = IterateCacheEntry
+
+-- Shared registry for lightweight cache diagnostics. Providers return:
+-- top-level entry count, retained child-reference count, optional note.
+local MemoryCacheStatsProviders = {}
+app.RegisterMemoryCacheStats = function(name, provider)
+	if name and type(provider) == "function" then
+		MemoryCacheStatsProviders[name] = provider
+	end
+end
+app.GetRegisteredMemoryCacheStats = function()
+	return MemoryCacheStatsProviders
+end
+
 -- Cache a given group into the current cache for the provided field and value
 local currentCache;
+local CacheMeta = {
+	__index = function(cache, field)
+		return GetCacheContainer(cache, field, true)
+	end,
+}
 local AllCaches = setmetatable({}, {
 	__index = function(t, name)
 		local cache = { name = name, skipMapCaching = false };
 		t[name] = cache;
 		cache.CacheField = function(group, field, value)
-			local c = cache[field][value]
-			c[#c + 1] = group
+			AddCacheEntry(cache, field, value, group)
 		end
 		cache.CacheFields = function(groups, skipMapCaching)
 			local oldCache = currentCache;
@@ -23,35 +177,238 @@ local AllCaches = setmetatable({}, {
 			CacheFields(groups, skipMapCaching or cache.skipMapCaching);
 			currentCache = oldCache;
 		end
-		setmetatable(cache, app.MetaTable.AutoTableOfTables);
-		cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate creatureID use eventually)
+		setmetatable(cache, CacheMeta)
 		return cache;
 	end,
 });
 currentCache = AllCaches.default;
 
+-- Explicit mutation helpers keep compact singleton entries and shared-key arrays consistent.
+app.AddCachedFieldResult = function(field, value, group)
+	AddCacheEntry(currentCache, field, value, group)
+end
+app.RemoveCachedFieldResult = function(field, value, group)
+	RemoveCacheEntry(currentCache, field, value, group)
+end
+
+-- Memory diagnostics for the compact index.
+app.GetCacheMemoryStats = function()
+	local fields, keys, singletons, lists, references = 0, 0, 0, 0, 0
+	for _,cache in next,AllCaches do
+		for field,container in next,cache do
+			if type(container) == "table" and field ~= "npcID" then
+				fields = fields + 1
+				for _,entry in next,container do
+					keys = keys + 1
+					if IsCacheList(entry) then
+						lists = lists + 1
+						references = references + #entry
+					else
+						singletons = singletons + 1
+						references = references + 1
+					end
+				end
+			end
+		end
+	end
+	return fields, keys, singletons, lists, references
+end
+
+app.GetCacheMemoryDetailStats = function()
+	local details = {}
+	for cacheName,cache in next,AllCaches do
+		for field,container in next,cache do
+			if type(container) == "table" and field ~= "npcID" then
+				local keys, singletons, lists, references = 0, 0, 0, 0
+				for _,entry in next,container do
+					keys = keys + 1
+					if IsCacheList(entry) then
+						lists = lists + 1
+						references = references + #entry
+					else
+						singletons = singletons + 1
+						references = references + 1
+					end
+				end
+				details[#details + 1] = {
+					cache = cache.name or cacheName,
+					field = field,
+					keys = keys,
+					singletons = singletons,
+					lists = lists,
+					references = references,
+				}
+			end
+		end
+	end
+	return details
+end
+
+app.GetSearchIndexGeneration = function()
+	return CacheMutationGeneration
+end
+
+-- Removes invalid/duplicate references from the live compact index without replacing
+-- field-container tables. This is safe for automatic maintenance because code which
+-- temporarily holds a container reference continues to see the same table.
+app.CleanSearchIndex = function()
+	local scannedKeys, scannedReferences = 0, 0
+	local removedKeys, removedReferences, demotedLists, removedContainers = 0, 0, 0, 0
+	for _,cache in next,AllCaches do
+		for field,container in next,cache do
+			if type(container) == "table" and field ~= "npcID" then
+				for value,entry in next,container do
+					scannedKeys = scannedKeys + 1
+					if IsCacheList(entry) then
+						local originalCount, write = #entry, 0
+						scannedReferences = scannedReferences + originalCount
+						for read=1,originalCount do
+							local group = entry[read]
+							local keep = type(group) == "table"
+							if keep then
+								for i=1,write do
+									if entry[i] == group then
+										keep = false
+										break
+									end
+								end
+							end
+							if keep then
+								write = write + 1
+								entry[write] = group
+							else
+								removedReferences = removedReferences + 1
+							end
+						end
+						for i=originalCount,write + 1,-1 do entry[i] = nil end
+						if write == 0 then
+							rawset(container, value, nil)
+							removedKeys = removedKeys + 1
+						elseif UseCompactCache and write == 1 then
+							local remaining = entry[1]
+							setmetatable(entry, ResultListMeta)
+							SingletonResults[remaining] = entry
+							rawset(container, value, remaining)
+							demotedLists = demotedLists + 1
+						end
+					elseif type(entry) == "table" then
+						scannedReferences = scannedReferences + 1
+					else
+						rawset(container, value, nil)
+						removedKeys = removedKeys + 1
+						removedReferences = removedReferences + 1
+					end
+				end
+				if not next(container) then
+					rawset(cache, field, nil)
+					if field == "creatureID" then rawset(cache, "npcID", nil) end
+					removedContainers = removedContainers + 1
+				elseif field == "creatureID" then
+					rawset(cache, "npcID", container)
+				end
+			end
+		end
+	end
+	if removedKeys > 0 or removedReferences > 0 or demotedLists > 0 or removedContainers > 0 then
+		MarkCacheMutation()
+	end
+	return scannedKeys, scannedReferences, removedKeys, removedReferences, demotedLists, removedContainers
+end
+
+-- Rebuilds every field-container hash table and shared-key array from the currently
+-- indexed object references. Unlike CacheFields(root), this does not rerun converters
+-- or mutate database objects, so custom-map and dynamic-data side effects are avoided.
+-- Intended for explicit maintenance rather than every zone transition.
+app.RebuildSearchIndex = function()
+	local rebuiltFields, rebuiltKeys, rebuiltReferences = 0, 0, 0
+	local removedKeys, removedReferences = 0, 0
+	for _,cache in next,AllCaches do
+		for field,container in next,cache do
+			if type(container) == "table" and field ~= "npcID" then
+				local newContainer = {}
+				for value,entry in next,container do
+					local first, values, count
+					for _,group in IterateCacheEntry(entry) do
+						if type(group) == "table" then
+							local duplicate
+							if count then
+								if count == 1 then
+									duplicate = first == group
+								else
+									for i=1,count do
+										if values[i] == group then
+											duplicate = true
+											break
+										end
+									end
+								end
+							end
+							if duplicate then
+								removedReferences = removedReferences + 1
+							else
+								count = (count or 0) + 1
+								if count == 1 then
+									first = group
+								elseif count == 2 then
+									values = { first, group }
+								else
+									values[count] = group
+								end
+							end
+						else
+							removedReferences = removedReferences + 1
+						end
+					end
+					if count == 1 then
+						if UseCompactCache then
+							rawset(newContainer, value, first)
+						else
+							rawset(newContainer, value, setmetatable({ first }, CacheListMeta))
+						end
+						rebuiltKeys = rebuiltKeys + 1
+						rebuiltReferences = rebuiltReferences + 1
+					elseif count and count > 1 then
+						setmetatable(values, CacheListMeta)
+						rawset(newContainer, value, values)
+						rebuiltKeys = rebuiltKeys + 1
+						rebuiltReferences = rebuiltReferences + count
+					else
+						removedKeys = removedKeys + 1
+					end
+				end
+				rawset(cache, field, newContainer)
+				rebuiltFields = rebuiltFields + 1
+			end
+		end
+		local creatureContainer = rawget(cache, "creatureID")
+		rawset(cache, "npcID", creatureContainer)
+	end
+	for group in next,SingletonResults do SingletonResults[group] = nil end
+	MarkCacheMutation()
+	return rebuiltFields, rebuiltKeys, rebuiltReferences, removedKeys, removedReferences
+end
+
 do	-- Cache & Search Functions
-local ipairs, print, type, math_floor
-	= ipairs, print, type, math.floor
-local ArrayAppend = app.ArrayAppend
+local ipairs, print, math_floor
+	= ipairs, print, math.floor
 
 -- All Cache Searching
 app.SearchForFieldInAllCaches = function(field, id)
 	-- Returns: A table containing all groups which contain the provided id for a given field from all established data caches.
 	local groups = {};
 	for _,cache in next,AllCaches do
-		ArrayAppend(groups, cache[field][id]);
+		local container = GetCacheContainer(cache, field, false)
+		if container then AppendCacheEntry(groups, rawget(container, id)) end
 	end
 	return groups;
 end;
 app.SearchForManyInAllCaches = function(field, ids)
-	-- Returns: A table containing all groups which contain the provided each of the provided ids for a given field from all established data caches.
+	-- Returns: A table containing all groups which contain each of the provided ids for a given field from all established data caches.
 	local groups = {};
-	local fieldCache;
 	for _,cache in next,AllCaches do
-		fieldCache = cache[field];
-		for i=1,#ids do
-			ArrayAppend(groups, fieldCache[ids[i]]);
+		local fieldCache = GetCacheContainer(cache, field, false)
+		if fieldCache then
+			for i=1,#ids do AppendCacheEntry(groups, rawget(fieldCache, ids[i])) end
 		end
 	end
 	return groups;
@@ -63,53 +420,45 @@ end
 
 -- Cache-Based Searching
 app.GetField = function(field, id)
-	-- Returns: A table containing all groups which contain the provided id for a given field.
-	return currentCache[field][id];
+	local container = GetCacheContainer(currentCache, field, true)
+	return CacheEntryResults(rawget(container, id), true)
 end
 app.GetFieldContainer = function(field)
-	-- Returns: A table containing all groups which contain a given field.
-	return currentCache[field];
+	-- Container values are compact cache entries. Use app.IterateCachedFieldResults,
+	-- app.GetCachedFieldResults, app.GetCachedFieldCount, or app.GetFirstCachedFieldResult.
+	return GetCacheContainer(currentCache, field, true)
+end
+local function GetRawCacheEntry(field, id)
+	local container = GetCacheContainer(currentCache, field, false)
+	if container then return rawget(container, id) end
 end
 local function GetRawField(field, id)
-	-- Returns: A table containing all groups which contain the provided id for a given field.
-	-- NOTE: Can be nil for simplicity in use
-	local container = rawget(currentCache, field)
-	if container then return rawget(container, id) end
+	return CacheEntryResults(GetRawCacheEntry(field, id), false)
 end
 app.GetRawField = GetRawField;
 app.GetRawFieldContainer = function(field)
-	-- Returns: The actual table containing all groups which contain a given field
-	-- NOTE: Can be nil for simplicity in use
-	return rawget(currentCache, field);
+	return GetCacheContainer(currentCache, field, false)
 end
 
 -- NOTE: Planning on repurposing these to build the results if they're missing.
 -- For situations where you don't want that, use GetRaw or GetField
-local function BuildFieldContainerRecursively(group, field, cache)
-	if group[field] then
-		local r = cache[group[field]];
-		r[#r + 1] = group
-	end
+local function BuildFieldContainerRecursively(group, field)
+	if group[field] then AddCacheEntry(currentCache, field, group[field], group) end
 	if group.g then
-		-- Go through the sub groups and determine if any of them have a response.
-		for i, subgroup in ipairs(group.g) do
-			BuildFieldContainerRecursively(subgroup, field, cache);
-		end
+		for i, subgroup in ipairs(group.g) do BuildFieldContainerRecursively(subgroup, field); end
 	end
 end
 app.SearchForFieldContainer = function(field)
-	-- Returns: A table containing all groups which contain a given field.
-	local cache = rawget(currentCache, field);
+	local cache = GetCacheContainer(currentCache, field, false);
 	if not cache then
-		-- Build the cache now, this will create and store it in the current cache
-		cache = currentCache[field];
-		BuildFieldContainerRecursively(app:GetDatabaseRoot(), field, cache);
+		cache = GetCacheContainer(currentCache, field, true)
+		BuildFieldContainerRecursively(app:GetDatabaseRoot(), field);
 	end
 	return cache;
 end
 app.SearchForField = function(field, id)
-	-- Returns: A table containing all groups which contain the provided id for a given field.
-	return currentCache[field][id];
+	local container = GetCacheContainer(currentCache, field, true)
+	return CacheEntryResults(rawget(container, id), true)
 end
 
 -- Recursive Searching
@@ -152,100 +501,62 @@ app.SearchForFieldRecursively = SearchForFieldRecursively;
 -- Search for a thing that matches some requirements
 app.SearchForObject = function(field, id, require, allowMultiple)
 	-- app.PrintDebug("SFO",field,id,require,allowMultiple)
-	-- This method performs the SearchForField logic, but then may verifies that ONLY a specific matching, filtered-priority object is returned
-	-- require - Determine the required level of matching found objects:
-	-- * "key" - only accept objects whose key is also the field with value
-	-- * "field" - only accept objects which contain the exact field with value
-	-- * none - accept any object which is cached against the specific field value
-	-- allowMultiple - Whether to return multiple matching objects as an array (within the 'require' restriction)
-	local fcache, count
-	-- Direct search by modItemID means not to allow an itemID fallback in the search
-	-- however, base itemIDs are not cached by modItemID, so a modItemID search on a base itemID
-	-- should instead be considered as an itemID search
+	local entry, count
 	if field == "modItemID" then
 		local idBase = math_floor(id)
 		if idBase == id then
 			id = idBase
 			field = "itemID"
 		end
-	-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
-	-- match requirement accuracy if possible, with fallback to base itemID
 	elseif field == "itemID" then
-		-- try searching by modItemID cache, any results are the EXACT id searched for
-		fcache = GetRawField("modItemID", id)
-		if fcache and #fcache > 0 then
-			-- use modItemID as the field for 'require' since it returned results
+		entry = GetRawCacheEntry("modItemID", id)
+		if entry then
 			field = "modItemID"
 			require = "field"
 		else
 			local idBase = math_floor(id)
-			-- if we're NOT searching for a plain itemID and found no results, we can revert to the plain itemID
-			if idBase ~= id and (not fcache or #fcache == 0) then
-				id = idBase
-				fcache = nil
-			end
+			if idBase ~= id then id = idBase end
 		end
 	end
-	fcache = fcache or GetRawField(field, id)
-	count = fcache and #fcache or 0;
-	if count == 0 then
-		-- app.PrintDebug("SFO:",field,id,require,"0~")
-		return allowMultiple and app.EmptyTable or nil
-	end
-	local fcacheObj;
-	require = (require == "key" and 2) or (require == "field" and 1) or 0;
-	-- quick escape for single cache results! hooray!
+	entry = entry or GetRawCacheEntry(field, id)
+	count = CacheEntryCount(entry)
+	if count == 0 then return allowMultiple and app.EmptyTable or nil end
+
+	local required = (require == "key" and 2) or (require == "field" and 1) or 0
 	if count == 1 then
-		fcacheObj = fcache[1];
-		if (require == 0) or
-			(require == 1 and fcacheObj[field] == id) or
-			(require == 2 and fcacheObj.key == field and fcacheObj[field] == id)
+		local obj = CacheEntryFirst(entry)
+		if required == 0
+			or (required == 1 and obj[field] == id)
+			or (required == 2 and obj.key == field and obj[field] == id)
 		then
-			-- app.PrintDebug("SFO:",field,id,require,"1=",fcacheObj.hash)
-			return allowMultiple and {fcacheObj} or fcacheObj
+			return allowMultiple and CacheEntryResults(entry, true) or obj
 		end
-		-- one result, but doesn't meet the 'require'
-		-- app.PrintDebug("SFO:",field,id,require,"1~",fcacheObj.hash)
 		return allowMultiple and app.EmptyTable or nil
 	end
 
-	local results
-
-	-- split logic based on require to reduce conditionals within loop
-	if require == 2 then
-		-- Key require
-		results = {}
-		for i=1,count,1 do
-			fcacheObj = fcache[i];
-			-- field matching id
-			if fcacheObj[field] == id then
-				if fcacheObj.key == field then
-					-- with keyed-field matching key
-					results[#results + 1] = fcacheObj
-				end
-			end
-		end
-	elseif require == 1 then
-		-- Field require
-		results = {}
-		for i=1,count,1 do
-			fcacheObj = fcache[i];
-			-- field matching id
-			if fcacheObj[field] == id then
-					-- with field matching id
-					results[#results + 1] = fcacheObj
-			end
-		end
-	else
-		-- No require
-		results = fcache
+	if required == 0 then
+		local results = CacheEntryResults(entry, true)
+		app.Sort(results, app.SortDefaults.Accessibility)
+		return allowMultiple and results or results[1]
 	end
-	-- app.PrintDebug("SFO:",field,id,require,"?>",#results)
-	-- if only 1 or no result, no point to try filtering
-	if #results <= 1 then return allowMultiple and results or results[1] end
-	-- try out accessibility sort on multiple results instead of filtering
-	app.Sort(results, app.SortDefaults.Accessibility)
+
+	local results = {}
+	for _,obj in IterateCacheEntry(entry) do
+		if (required == 1 and obj[field] == id)
+			or (required == 2 and obj[field] == id and obj.key == field)
+		then
+			results[#results + 1] = obj
+		end
+	end
+	if #results > 1 then app.Sort(results, app.SortDefaults.Accessibility) end
 	return allowMultiple and results or results[1]
+end
+
+-- Lightweight opt-in profiling. These wrappers add no result allocations unless
+-- /att profile start is active, and all later modules localize the wrapped functions.
+if app.ProfileWrap then
+	app.SearchForField = app.ProfileWrap("Search.SearchForField", app.SearchForField)
+	app.SearchForObject = app.ProfileWrap("Search.SearchForObject", app.SearchForObject)
 end
 
 -- Source Path Generation
@@ -321,14 +632,14 @@ end
 app.VerifyCache = function(cache)
 	-- Verify that the current cache does not have any recursive issues.
 	print("VerifyCache Starting...");
-	for i,keyCache in next,(cache or currentCache) do
-		print("Cache", i);
-		for k,valueCache in next,keyCache do
-			-- print("valueCache",k);
-			for o,group in next,valueCache do
-				-- print("group",o);
-				if not VerifyRecursion(group) then
-					print("Caused infinite .parent recursion",group.key,group[group.key]);
+	for field,container in next,(cache or currentCache) do
+		if type(container) == "table" and field ~= "npcID" then
+			print("Cache", field);
+			for _,entry in next,container do
+				for _,group in IterateCacheEntry(entry) do
+					if not VerifyRecursion(group) then
+						print("Caused infinite .parent recursion",group.key,group[group.key]);
+					end
 				end
 			end
 		end
@@ -340,8 +651,7 @@ do	-- Field Caching & Converters
 local function CacheField(group, field, value)
 	-- comment this in for testing if some caching issue happens
 	-- if not (field and value) then print("Attempting to cache invalid data", field, value, group.text); end
-	local c = currentCache[field][value]
-	c[#c + 1] = group
+	AddCacheEntry(currentCache, field, value, group)
 end
 local fieldConverters, runners = {}, {};
 local mapKeyUncachers;
@@ -494,14 +804,7 @@ local function zoneArtIDRunner(group, value)
 		end
 
 		-- Uncache the original mapID
-		local mapIDCache = currentCache.mapID;
-		mapIDCache = mapIDCache[originalMapID];
-		for i=#mapIDCache,1,-1 do
-			if mapIDCache[i] == group then
-				tremove(mapIDCache, i)
-				break;
-			end
-		end
+		RemoveCacheEntry(currentCache, "mapID", originalMapID, group)
 	end
 end
 local function zoneTextAreasRunner(group, value)
