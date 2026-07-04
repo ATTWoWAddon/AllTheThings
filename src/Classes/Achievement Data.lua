@@ -75,7 +75,7 @@ end
 local function GetRelatedThingsForExaltedReputations(t, objects)
 	for factionID,g in pairs(GetFieldContainer("factionID")) do
 		if not IgnoredReputationsForAchievements[factionID] then
-			for j,o in ipairs(g) do
+			for j,o in app.IterateCachedFieldResults(g) do
 				if o.key == "factionID" then
 					tinsert(objects, o);
 					break;
@@ -90,7 +90,7 @@ local function GetRelatedThingsForOwnItem(t, objects)
 end
 local function GetRelatedThingsForMounts(t, objects)
 	for spellID,spells in pairs(GetFieldContainer("mountID")) do
-		for i,spell in ipairs(spells) do
+		for i,spell in app.IterateCachedFieldResults(spells) do
 			tinsert(objects, spell);
 			break;
 		end
@@ -98,7 +98,7 @@ local function GetRelatedThingsForMounts(t, objects)
 end
 local function GetRelatedThingsForPets(t, objects)
 	for i,pets in pairs(GetFieldContainer("speciesID")) do
-		tinsert(objects, pets[1]);
+		tinsert(objects, app.GetFirstCachedFieldResult(pets));
 	end
 end
 local function GetRelatedThingsForQuest(t, objects)
@@ -144,7 +144,7 @@ local AchievementCriteriaCommands = {
 		local count = 0;
 		for factionID,g in pairs(GetFieldContainer("factionID")) do
 			if not IgnoredReputationsForAchievements[factionID] then
-				for j,o in ipairs(g) do
+				for j,o in app.IterateCachedFieldResults(g) do
 					if o.key == "factionID" and o.standing == 8 then
 						count = count + 1;
 						break;
@@ -163,7 +163,7 @@ local AchievementCriteriaCommands = {
 	CriteriaTypeForMounts = function()
 		local count = 0;
 		for i,g in pairs(GetFieldContainer("mountID")) do
-			for j,o in ipairs(g) do
+			for j,o in app.IterateCachedFieldResults(g) do
 				if o.collected then count = count + 1; end
 				break;
 			end
@@ -174,7 +174,7 @@ local AchievementCriteriaCommands = {
 	CriteriaTypeForPets = function()
 		local count = 0;
 		for i,g in pairs(GetFieldContainer("speciesID")) do
-			for j,o in ipairs(g) do
+			for j,o in app.IterateCachedFieldResults(g) do
 				if o.collected then count = count + 1; end
 				break;
 			end

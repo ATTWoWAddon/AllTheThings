@@ -968,7 +968,7 @@ app.WrapObject = function(object, baseObject)
 	});
 end
 
-local ClassDataCaches = {}
+local ClassDataCaches, AllCreatedCaches, AllCreatedCacheNames = {}, {}, {}
 -- Create a local cache table which can be used by a Type class of a Thing to easily store shared
 -- information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField, className)
@@ -999,26 +999,37 @@ app.CreateCache = function(idField, className)
 		app.PrintDebug("CACHE_MISS_ID",idField,">",id)
 	end
 	cache.GetCachedField = function(t, field, default_function)
-		--[[ -- Debug Prints
-		local _t, id = cache.GetCached(t);
-		app.PrintDebug("GetCachedField",t.hash,id,field,_t[field]);
-		--]]
-		_t = cache.GetCached(t);
-		if _t then
-			-- set a default provided cache value if any default function was provided and evalutes to a value
-			v = _t[field];
-			if v ~= nil then return v end
-
-			default_function = default_function or DefaultFunctions[field]
-			if not default_function then return end
-
-			local defVal = default_function(t, field, _t);
-			if defVal then
-				v = defVal;
-				_t[field] = v;
-			end
-			return v
+		-- Avoid allocating a permanent per-ID table for a read which has no cached or default value.
+		local id = t[idField]
+		if not id then
+			app.PrintDebug("CACHE_MISS",idField,">",id,t.__type,t.hash)
+			app.PrintTable(t)
+			return
 		end
+		local data = cache[id]
+		if data then
+			v = data[field]
+			if v ~= nil then return v end
+		end
+
+		default_function = default_function or DefaultFunctions[field]
+		if not default_function then return end
+
+		-- Store the table while evaluating the default so existing default functions which call
+		-- cache.GetCached(t) write into this same entry. Remove it afterward only if it stayed empty.
+		if not data then
+			data = {}
+			cache[id] = data
+		end
+		local defVal = default_function(t, field, data)
+		if defVal then
+			v = defVal
+			data[field] = v
+		else
+			v = nil
+			if next(data) == nil then cache[id] = nil end
+		end
+		return v
 	end
 	cache.SetCachedField = function(t, field, value)
 		--[[ Debug Prints
@@ -1033,6 +1044,8 @@ app.CreateCache = function(idField, className)
 		if _t then _t[field] = value; end
 	end
 	cache.DefaultFunctions = DefaultFunctions
+	AllCreatedCaches[#AllCreatedCaches + 1] = cache
+	AllCreatedCacheNames[#AllCreatedCacheNames + 1] = className or idField or ("Cache " .. #AllCreatedCaches)
 	if app.__perf then
 		return app.__perf.CaptureTable(cache, "ClassCache:"..(className or idField))
 	end
@@ -1047,6 +1060,61 @@ app.GetOrCreateCache = function(idField, className)
 
 	app.print("Missing className",className,"for ClassData cache with idField",idField)
 	return app.CreateCache(idField, className)
+end
+
+local function PruneEmptyClassCaches()
+	for i=1,#AllCreatedCaches do
+		local cache = AllCreatedCaches[i]
+		local defaults = cache.DefaultFunctions
+		for id,data in pairs(cache) do
+			if type(data) == "table" and data ~= defaults and next(data) == nil then
+				cache[id] = nil
+			end
+		end
+	end
+end
+app.AddEventHandler("OnMemoryCleanup", PruneEmptyClassCaches)
+
+app.GetClassCacheMemoryStats = function()
+	local entries, empty = 0, 0
+	for i=1,#AllCreatedCaches do
+		local cache = AllCreatedCaches[i]
+		local defaults = cache.DefaultFunctions
+		for _,data in pairs(cache) do
+			if type(data) == "table" and data ~= defaults then
+				entries = entries + 1
+				if next(data) == nil then empty = empty + 1 end
+			end
+		end
+	end
+	return #AllCreatedCaches, entries, empty
+end
+
+app.GetClassCacheMemoryDetailStats = function()
+	local details = {}
+	for i=1,#AllCreatedCaches do
+		local cache = AllCreatedCaches[i]
+		local defaults = cache.DefaultFunctions
+		local entries, fields, empty = 0, 0, 0
+		for _,data in pairs(cache) do
+			if type(data) == "table" and data ~= defaults then
+				entries = entries + 1
+				local hasField
+				for _ in pairs(data) do
+					fields = fields + 1
+					hasField = true
+				end
+				if not hasField then empty = empty + 1 end
+			end
+		end
+		details[#details + 1] = {
+			name = AllCreatedCacheNames[i],
+			entries = entries,
+			fields = fields,
+			empty = empty,
+		}
+	end
+	return details
 end
 
 -- Allows creating a group which is keyed based on only its 'name' field

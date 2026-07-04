@@ -872,7 +872,7 @@ local function HarvestExploration()
 				end
 
 				-- If any were found, update the content of the exploration headers.
-				for i,object in ipairs(objects) do
+				for i,object in app.IterateCachedFieldResults(objects) do
 					if object.key == "mapID" and (object.mapID == mapID or (object.maps and contains(object.maps, mapID))) then
 						-- Cache or Create the Exploration Header
 						local explorationHeader = nil;
@@ -925,7 +925,7 @@ local function HarvestExploration()
 								if #searchResults < 1 or ReportedAreas[areaID] then
 									PrintDiscordInformationForExploration(o);
 								end
-								tinsert(searchResults, o);
+								app.AddCachedFieldResult("explorationID", areaID, o);
 							end
 						end
 					end

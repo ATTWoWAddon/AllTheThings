@@ -250,7 +250,7 @@ do
 		local IsAccountCached = app.IsAccountCached
 		for id,g in pairs(app.GetRawFieldContainer(KEY)) do
 			-- Cache Spell Names
-			for i,spell in ipairs(g) do
+			for i,spell in app.IterateCachedFieldResults(g) do
 				CacheRankForSpell(id, spell.rank);
 			end
 
