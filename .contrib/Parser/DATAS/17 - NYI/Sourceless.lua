@@ -542,6 +542,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					["maps"] = 1537,	-- Alterac Valley
 					["lvl"] = 10,
 				}),
+				q(57697),	-- "doing Honeyback Harvestor in Stormsong Valley (turned in Usurper's Scent Gland)"
 			})),
 
 			-- 8.3.0

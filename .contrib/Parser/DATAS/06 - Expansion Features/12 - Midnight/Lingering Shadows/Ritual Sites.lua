@@ -179,7 +179,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					ach(62559),	-- Malevolence Shrugged
 					ach(62558),	-- Patrol Ambusher
 					ach(62941, {	-- Pinnacle Ritual Work
-						["timeline"] = { ADDED_12_0_7 },
+						["timeline"] = { ADDED_12_0_7, REMOVED_12_2_7 },
 						["groups"] = { title(771) },	-- Ritual Breaker <Name>
 					}),
 					ach(62556),	-- Quick Reflexes

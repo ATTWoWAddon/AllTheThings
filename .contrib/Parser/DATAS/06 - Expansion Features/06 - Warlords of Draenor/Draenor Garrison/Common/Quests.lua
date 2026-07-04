@@ -1019,6 +1019,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 90180,	-- Exarch Naielle
 					["coord"] = { 52.5, 9.8, GORGROND },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						o(240518, {	-- Detonator
+							["coords"] = {
+								{ 51.5, 14.3, GORGROND },
+								{ 55.4, 16.6, GORGROND },
+								{ 56.6, 11.4, GORGROND },
+							},
+							["groups"] = { i(122516) },	-- Detonator (QI!)
+						}),
+					},
 				}),
 				q(38570, {	-- Derailment (H)
 					["sourceQuest"] = 38568,	-- We Need a Shipwright

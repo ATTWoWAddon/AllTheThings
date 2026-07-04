@@ -353,7 +353,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						q(57068, {	-- Kite Surveillance
 							["sourceQuest"] = 57067,	-- Mogu at the Gates
 							["provider"] = { "n", 156297 },	-- Chen Stormstout
-							["coord"] = { 43.9, 4.9, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							["coords"] = {
+								{ 43.9, 4.9, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+								{ 55.5, 91.1, KUN_LAI_SUMMIT },
+							},
 						}),
 					}),
 					-- Dailies

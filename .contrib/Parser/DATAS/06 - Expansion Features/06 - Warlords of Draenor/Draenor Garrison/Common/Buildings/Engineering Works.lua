@@ -16,6 +16,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 						["races"] = HORDE_ONLY,
 					}),
 				}),
+				n(TREASURES, {
+					o(233899, {	-- XD-57 "Bullseye" Guided Rocket Kit
+						i(114633),	-- XD-57 "Bullseye" Guided Rocket Kit
+					}),
+				}),
 				n(VENDORS, {
 					n(88607, {	-- Engineering Follower <Engineering Entrepreneur>
 						["races"] = ALLIANCE_ONLY,

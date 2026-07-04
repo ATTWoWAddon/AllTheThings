@@ -76,9 +76,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 47.0, 83.0, THE_WAKING_SHORES },
 				["groups"] = { i(200619) },	-- Scaralesh's Special
 			}),
-			n(191135, {	-- Yries Lightfingers
+			n(191135, {	-- Yries Lightfingers <Second-Hand Supplies>
 				["coord"] = { 26.4, 55.4, THE_WAKING_SHORES },
 				["groups"] = {
+					i(194884),	-- Annoy-o-Tron Gang
+					i(193499),	-- Blacktalon Wingpack
+					i(194679),	-- BOOM-O-MATIC 90000
 					i(199326, {	-- Chip (PET!)
 						["cost"] = {
 							{ "i", 198357, 1 },	-- 1x Rock of Aegis
@@ -86,6 +89,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ "i", 199219, 3 },	-- 3x Element-Infused Blood
 						},
 					}),
+					i(194890),	-- GG-117 Micro-Jetpack
 					i(201837, {	-- Magmammoth Harness
 						["description"] = "Use it while riding the Tame Magmammoth @ 33.3, 72.2",
 						["coord"] = { 33.3, 72.2, THE_WAKING_SHORES },
@@ -96,6 +100,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 						["groups"] = { i(192601) },	-- Loyal Magmammoth (MOUNT!)
 					}),
+					i(198452),	-- Prototype F
+					i(194696),	-- Recycled Crawler Mine
+					i(194887),	-- Scrap Trap
+					i(194961),	-- Stolen Rocket Hop
+					i(198453),	-- Unstable Azerite Grenade
+					i(194889),	-- XD-57 "Bullseye" Guided Rocket Kit
 				},
 			}),
 		}),

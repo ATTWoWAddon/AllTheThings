@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(185802),	-- Breakbeat Shoulderguards
 							i(185804),	-- Harmonious Spaulders
 							i(185806, {	-- Improvisational Cinch
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+								["timeline"] = { ADDED_9_1_0 },
 							}),
 							i(246287, {	-- Improvisational Girdle
 								["timeline"] = { ADDED_11_2_0_SEASONSTART },
@@ -349,7 +349,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185800, {	-- Orbitwarp Culottes
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+								["timeline"] = { ADDED_9_1_0 },
 							}),
 							i(185798),	-- Quantum Leapers
 							i(185782),	-- Robes of Midnight Bargains
@@ -374,7 +374,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185788, {	-- Codebreaker's Cunning Sandals
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+								["timeline"] = { ADDED_9_1_0 },
 							}),
 							i(185781),	-- Drape of Titanic Dreams
 							i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
@@ -382,7 +382,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(185779),	-- Spire of Expurgation
 							i(185803),	-- Stoneflesh Spaulders
 							i(185790, {	-- Treads of Titanic Deconversion
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+								["timeline"] = { ADDED_9_1_0 },
 							}),
 						},
 					}),

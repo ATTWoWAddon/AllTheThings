@@ -78,12 +78,13 @@ root(ROOTS.Housing, {
 			}),
 			q(93647, {	-- Lumber For You
 				["qgs"] = {
-					255519,	-- Lestia Goldenstrike
-					255520,	-- Xiz'ro
+					255519,	-- Lestia Goldenstrike <Lumberjack>
+					255520,	-- Xiz'ro <Lumberjack>
 				},
 				["coords"] = {
-					{ 53.9, 39.5, FOUNDERS_POINT },	-- Lestia Goldenstrike
-					{ 54.2, 58.0, RAZORWIND_SHORES },	-- Xiz'ro
+					{ 53.9, 39.5, FOUNDERS_POINT },	-- Lestia Goldenstrike <Lumberjack>
+					{ 53.6, 56.6, RAZORWIND_SHORES },	-- Xiz'ro <Lumberjack>
+					{ 54.2, 58.0, RAZORWIND_SHORES },	-- Xiz'ro <Lumberjack>
 				},
 			}),
 			q(89450, {	-- Create a Neighborhood

@@ -1520,7 +1520,6 @@ i(192608);	-- Ancient Resin
 i(201220);	-- Ancient Tool
 i(192684);	-- Ancient War Tusk
 i(192717);	-- Animated Splinter
-i(194884);	-- Annoy-o-Tron Gang
 i(192646);	-- Aqueous Speck
 i(193450);	-- Arakkoa Doll
 i(201824);	-- Arcane Fluid
@@ -1539,11 +1538,9 @@ i(192610);	-- Beady Woodland Eye
 i(200789);	-- Beckoning Kite
 i(200782);	-- Bejeweled Horseshoes
 i(201226);	-- Big Rock
-i(193499);	-- Blacktalon Wingpack
 i(200697);	-- Blightshroom
 i(201180);	-- Bone Necklace
 i(201205);	-- Bone Toothpick
-i(194679);	-- BOOM-O-MATIC 90000
 i(200798);	-- Bottled Diseased Parasites
 i(192611);	-- Bottled Torrent
 i(202108);	-- Bouncing Bass
@@ -1637,7 +1634,6 @@ i(192700);	-- Frozen Dorsal Spike
 i(192701);	-- Frozen Eye
 i(192616);	-- Fung Eye
 i(200832);	-- Geode Splinters
-i(194890);	-- GG-117 Micro-Jetpack
 i(192654);	-- Giant Stone Eye
 i(192702);	-- Giant's Heart
 i(200692);	-- Gift of the Grove
@@ -1726,14 +1722,12 @@ i(192629);	-- Primal Beast Claw
 i(192648);	-- Pristine Beast Fur
 i(200771);	-- Projected Starmap
 i(194709);	-- Prospecting
-i(198452);	-- Prototype F
 i(201194);	-- Pumice Hand Chalk
 i(200790);	-- Pungent Soup Spices
 i(192662);	-- Pyretic Speck
 i(201428);	-- Quicksilver Sands
 i(192706);	-- Razor Quill
 i(194973);	-- Reclaim Concoctions
-i(194696);	-- Recycled Crawler Mine
 i(200765);	-- Reed Sculpture
 i(192630);	-- Reef Carapace
 i(200635);	-- Refine Dragon Isles Herbs
@@ -1754,7 +1748,6 @@ i(192719);	-- Scaled Toes
 i(192631);	-- Scale-Piercing Fang
 i(192663);	-- Scaly Wing
 i(195360);	-- Scorched Snapper Meat
-i(194887);	-- Scrap Trap
 i(201208);	-- Seer's Crystal
 i(200775);	-- Self-Luminous Orb
 i(200851);	-- Self-Trimming Bonsai
@@ -1795,7 +1788,6 @@ i(192723);	-- Springy Tongue
 i(201202);	-- Squirrel Tail
 i(202065);	-- Static Sand
 i(201970);	-- Stolen Illidari Blindfold
-i(194961);	-- Stolen Rocket Hop
 i(201167);	-- Stone Calendar
 i(200826);	-- Stored Humid Air
 i(200787);	-- Strong Exotic Spices
@@ -1831,7 +1823,6 @@ i(192729);	-- Unhinged Mandible
 i(192674);	-- Unknown Titan Mechanism
 i(200812);	-- Unmelting Crystalline Structure
 i(192730);	-- Unstable Arcane Essence
-i(198453);	-- Unstable Azerite Grenade
 i(201168);	-- Untainted Scales
 i(201424);	-- Unusable Plant Matter
 i(192731);	-- Venomous Fang
@@ -1849,7 +1840,6 @@ i(201177);	-- Wooden Eagle Statue
 i(200810);	-- Wooden Stonegrabber Figurine
 i(200807);	-- Wooden Ursine Figure
 i(200531);	-- Worn Chitin Fragment
-i(194889);	-- XD-57 "Bullseye" Guided Rocket Kit
 
 ------------------
 -- PATCH 10.0.5 --

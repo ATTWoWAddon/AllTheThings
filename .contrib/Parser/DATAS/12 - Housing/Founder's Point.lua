@@ -282,7 +282,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["coord"] = { 62.4, 80.1, FOUNDERS_POINT },
 			}),
 			n(255228, {	-- "Len" Splinthoof <Decor Vendor>
-				["coord"] = { 62.5, 80.4, FOUNDERS_POINT },
+				["coord"] = { 61.6, 79.0, FOUNDERS_POINT },
 			}),
 			n(255230, {	-- "Yen" Malone <Decor Vendor>
 				["coord"] = { 62.2, 80.3, FOUNDERS_POINT },
