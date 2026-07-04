@@ -193,38 +193,48 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_0_5, REMOVED_11_0_5 },
 			}),
 			i(228765, {	-- Gummi (PET!)
+				-- #if BEFORE 12.0.0
 				["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in any retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should receive a code to your email to redeem on battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.1.0.59466" },
 				["u"] = REAL_MONEY,
 			}),
 			i(228761, {	-- Classic Brick Tabard (COSMETIC!)
+				-- #if BEFORE 12.0.0
 				["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in |CFFFF0000Walgreens|r, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should receive a code to your email to redeem on battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.1.0.59466" },
 				["u"] = REAL_MONEY,
 			}),
 			i(228763, {	-- Classic Crimson Tabard (COSMETIC!)
+				-- #if BEFORE 12.0.0
 				["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in |CFFFF0000Circle K|r, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should receive a code to your email to redeem on battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.1.0.59466" },
 				["u"] = REAL_MONEY,
 			}),
 			i(228762, {	-- Classic Lively Tabard (COSMETIC!)
+				-- #if BEFORE 12.0.0
 				["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in |CFFFF0000Dollar General|r, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should receive a code to your email to redeem on battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.1.0.59466" },
 				["u"] = REAL_MONEY,
 			}),
 			i(228764, {	-- Classic Sunny Tabard (COSMETIC!)
+				-- #if BEFORE 12.0.0
 				["description"] = "Krogers promotional item. You have to earn points before Jan 8, 2025 and redeem before Feb 7, 2025. Can be redeemed for 1500 rewards points from pointsrewardsplus.com. With a referral link, just signing up will earn you enough points to redeem the tabard for free. Access the code from the account page and then redeem on battle.net or in the launcher.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.7.58238" },
 				["u"] = REAL_MONEY,
 			}),
 			i(225250, {	-- Startouched Furline (MOUNT!)
-				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
-				["timeline"] = { ADDED_11_0_2 },
+				["description"] = "Obtained if you set up a 12-Month WoW Subscription between Patch 11.0.2 & 11.2.7.",
+				["timeline"] = { ADDED_11_0_2, REMOVED_11_2_7 },
 				["u"] = REAL_MONEY,
 			}),
 			i(228751, {	-- Gigantic Grrloc (MOUNT!)
-				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
-				["timeline"] = { ADDED_11_0_2 },
+				["description"] = "Obtained if you set up a 12-Month WoW Subscription between Patch 11.0.2 & 11.2.7.",
+				["timeline"] = { ADDED_11_0_2, REMOVED_11_2_7 },
 				["u"] = REAL_MONEY,
 			}),
 			i(72153, {	-- Sand Scarab (PET!)
@@ -272,7 +282,9 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}),
 			i(211087, {	-- Hateforged Blazecycle (MOUNT!)
+				-- #if BEFORE 12.0.0
 				["description"] = "Available to redeem for 600 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				-- #endif
 				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58867" },
 				["u"] = REAL_MONEY,
 			}),
