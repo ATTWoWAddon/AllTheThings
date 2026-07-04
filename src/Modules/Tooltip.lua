@@ -880,7 +880,6 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 	-- 10.0.2
 	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
 	-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
-	---@diagnostic disable-next-line: deprecated
 	local Enum_TooltipDataType, TooltipUtil = Enum.TooltipDataType, TooltipUtil;
 
 	local function SafelyCheckTooltipForUnitInfo(tooltip)

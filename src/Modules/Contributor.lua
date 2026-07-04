@@ -286,8 +286,6 @@ local MapPrecisionOverrides = {
 	[2583] = 2,	-- Wit'Kalar Crypt
 	[2584] = 5,	-- Revantusk Sedge
 	[2639] = 5,	-- Crypt of the Denied, The Coiled Isle
-	[2640] = 5,	-- Blistering Terrace, The Coiled Isle
-	[2644] = 5,	-- Crypt of the Disgraced, The Coiled Isle
 }
 
 local function Check_coords(objRef, maxCoordDistance)
@@ -395,7 +393,6 @@ MobileDB.Creature = {
 	 [22818] = true,	-- Draenei Orphan
 	 [23870] = true,	-- Ember Clutch Ancient
 	 [24130] = true,	-- Winterhoof Brave
-	 [25324] = true,	-- Earthen Ring Guide
 	 [25962] = true,	-- Flame Eater [A]
 	 [25994] = true,	-- Flame Eater [H]
 	 [26206] = true,	-- Keristrasza
@@ -756,7 +753,6 @@ MobileDB.Creature = {
 	[260710] = true,	-- Jelvik
 	[263327] = true,	-- Ofi the Sly
 	[265166] = true,	-- Baraat the Longshot
-	[256674] = true,	-- Ja'bonu
 }
 -- These should be GameObjects which are mobile in that they can have completely variable coordinates in game
 -- either by following the player or having player-based decisions that cause them to have any coordinates
@@ -1368,7 +1364,6 @@ MobileDB.GameObject = {
 	[234106] = true,	-- Ogre Archaeology Find
 	[234165] = true,	-- Cache of Arakkoan Treasures [Rukhran]
 	[235331] = true,	-- Flask of Blazegrease (q:36758)
-	[235338] = true,	-- Gladiator's Shield (q:36765)
 	[235916] = true,	-- Keg of Grog (q:36566)
 	[235985] = true,	-- Gold Coins
 	[235986] = true,	-- Gold Coins
@@ -2096,7 +2091,6 @@ MobileDB.GameObject = {
 	[293446] = true,	-- Truffle
 	[293449] = true,	-- Truffle
 	[293550] = true,	-- Horde Banner (q:52479)
-	[293711] = true,	-- Sack of Booty
 	[293734] = true,	-- Horde Banner (q:52777)
 	[293883] = true,	-- Battlechest of the Horde (q:52490)
 	[294017] = true,	-- Treated Shipwood (q:52879)
@@ -2688,7 +2682,6 @@ MobileDB.GameObject = {
 	[411795] = true,	-- Arkonite Pillar (q:78069)
 	[411878] = true,	-- Intriguing Scrap (q:79205)
 	[411930] = true,	-- Blackpowder Barre
-	[412931] = true,	-- On the Nature of the Dream
 	[412967] = true,	-- Helm of Memories
 	[413046] = true,	-- Bismuth
 	[413126] = true,	-- Box of Artisanal Goods (q:78369 [A], q:78984 [H])
@@ -3273,10 +3266,7 @@ MobileDB.GameObject = {
 	[602746] = true,	-- Lady Selen'vjar Ritual Chest [Daggerspine Landing, Ritual Site]
 	[605174] = true,	-- Haunted Weapon Rack
 	[605196] = true,	-- Mature Blood Petal (q:91560)
-	[609857] = true,	-- The Classic
 	[609858] = true,	-- Budget Friendly (q:93453)
-	[609867] = true,	-- Delver's Delight
-	[611269] = true,	-- Feathered Trinket (q:93339)
 	[612079] = true,	-- Foul Carcass (q:93397)
 	[612081] = true,	-- Foul Carcass (q:93397)
 	[612102] = true,	-- Transplanted Tranquility Bloom
@@ -3310,7 +3300,6 @@ MobileDB.GameObject = {
 	[618520] = true,	-- Thalassian Lumber
 	[618844] = true,	-- Mislaid Curiosity
 	[619092] = true,	-- Flyer Crate (q:92138)
-	[619677] = true,	-- Sweetsaw Bloom (q:93842)
 	[619736] = true,	-- Netherstorm Structural Cage
 	[620105] = true,	-- Rookery Cache Key
 	[621526] = true,	-- Cache of L'ura [Seat of Triumvirate]
@@ -3331,7 +3320,6 @@ MobileDB.GameObject = {
 	[627599] = true,	-- Silver Hand Squire's Libram
 	[628381] = true,	-- Weapon Rack (Arcantina)
 	[628446] = true,	-- Jan'alai's Cinder (q:93019)
-	[628886] = true,	-- Ladder
 	[628949] = true,	-- Shadowmoon Lumber (Frostfire Ridge)
 	[628950] = true,	-- Shadowmoon Lumber (Gorgrond)
 	[628951] = true,	-- Shadowmoon Lumber (Tanaan Jungle)
@@ -3344,13 +3332,11 @@ MobileDB.GameObject = {
 	[638873] = true,	-- Orb of Translocation
 	[639875] = true,	-- Feather of Jan'alai (q:94870)
 	[641533] = true,	-- Corrupted Lantern (q:92320)
-	[649481] = true,	-- Wood Debris (q:96111)
 	[650051] = true,	-- Faithbreaker Ger'lok's Ritual Chest [Broken Throne, Ritual Site]
 	[651783] = true,	-- Pulsing Void Magicule (q:96229) [Ritual Site: Naigtal]
 	[652051] = true,	-- Belo'vir's Arcane Vault (q:96231)
 	[653416] = true,	-- Cynosure of Twilight (q:96051)
 	[653485] = true,	-- Cynosure of Twilight (q:96052)
-	[654240] = true,	-- Mound of Dirt (q:96543)
 	[654422] = true,	-- Energized Crystal Conductor (q:96569)
 	[655270] = true,	-- Dominaar Storage Vessel [Ritual Site: Val]
 	[655271] = true,	-- Hal'hadar Pocket-Storage [Ritual Site: Naigtal]
@@ -3552,11 +3538,17 @@ AddEventFunc("QUEST_COMPLETE", OnQUEST_DETAIL)
 -- PLAYER_SOFT_INTERACT_CHANGED
 -- Whenever we can't find a ObjectID in ATT data, create a cached version of it so we can keep resolved data
 -- instead of always generating new
-local UnknownObjectsCache = setmetatable({}, { __index = function(t, objectID)
-	local o = app.CreateObject(objectID)
-	t[objectID] = o
-	return o
-end})
+local UnknownObjectsCache = setmetatable({}, {
+	__mode = "v",
+	__index = function(t, objectID)
+		local o = app.CreateObject(objectID)
+		t[objectID] = o
+		return o
+	end,
+})
+app.AddEventHandler("OnMemoryCleanup", function()
+	wipe(UnknownObjectsCache)
+end)
 local LastSoftInteract = {}
 local RegisterUNIT_SPELLCAST_SENT, UnregisterUNIT_SPELLCAST_SENT
 -- Allows automatically tracking nearby ObjectID's and running check functions on them for data verification

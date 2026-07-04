@@ -85,3 +85,4 @@ app.AddEventHandler("OnThingCollected", WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", WipeSearchCache);
 app.AddEventHandler("OnSettingsRefreshed", WipeSearchCache);
 app.AddEventHandler("Fill.RefreshFillers", WipeSearchCache)
+app.AddEventHandler("OnMemoryCleanup", WipeSearchCache)

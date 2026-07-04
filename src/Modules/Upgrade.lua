@@ -505,7 +505,7 @@ local function GetNextItemUnlockBonusID(item)
 end
 api.GetNextItemUnlockBonusID = GetNextItemUnlockBonusID;
 
-local ItemSourceCache = {}
+local ItemSourceCache = setmetatable({}, { __mode = "v" })
 local function GetUpgrade(t, up)
 	local itemID = t.itemID
 	local upmodID = floor(up);
@@ -550,6 +550,9 @@ local function GetUpgrade(t, up)
 	return itemSource
 end
 api.GetUpgrade = GetUpgrade;
+app.AddEventHandler("OnMemoryCleanup", function()
+	wipe(ItemSourceCache)
+end)
 
 -- Returns the different and upgraded version of 't' (via 'up' field only)
 local function HasUpgrade(t)
