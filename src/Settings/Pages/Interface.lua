@@ -543,7 +543,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked())
 end)
-checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
+checkboxKnownBy:SetATTTooltip((L.KNOWN_BY_CHECKBOX_TOOLTIP or "") .. "\n\nAlso reports when an appearance is already known anywhere on the account.")
 checkboxKnownBy:AlignBelow(checkboxCompletedBy)
 
 local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,

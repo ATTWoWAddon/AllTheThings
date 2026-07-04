@@ -223,6 +223,86 @@ local KnownByIgnoredTypes = {
 	MountWithItem = true,
 }
 local knownBy = {};
+local UNKNOWN_RECIPE_OWNER_TEXT = "another character on this account";
+local APPEARANCE_KNOWN_ACCOUNT_TEXT = "Appearance known by a character on this account";
+
+-- Known-by tooltip results are requested repeatedly while hovering rows and links. Cache the
+-- account-character scan by generation instead of walking every character for every tooltip.
+-- Weak values allow Lua to reclaim entries under pressure, while explicit invalidation keeps
+-- profession and appearance scans immediately accurate.
+local RecipeKnownByCache = setmetatable({}, { __mode = "v" });
+local AppearanceKnownByCache = setmetatable({}, { __mode = "v" });
+local RecipeKnownByGeneration, AppearanceKnownByGeneration = 0, 0;
+
+app.InvalidateKnownByCache = function(kind)
+	if kind == "recipe" then
+		RecipeKnownByGeneration = RecipeKnownByGeneration + 1;
+	elseif kind == "appearance" then
+		AppearanceKnownByGeneration = AppearanceKnownByGeneration + 1;
+	else
+		RecipeKnownByGeneration = RecipeKnownByGeneration + 1;
+		AppearanceKnownByGeneration = AppearanceKnownByGeneration + 1;
+	end
+end
+
+local function GetRecipeKnownByInfo(recipeID)
+	local cached = RecipeKnownByCache[recipeID];
+	if cached and cached.generation == RecipeKnownByGeneration then return cached; end
+	local owners, seen = {}, {};
+	for guid,character in pairs(ATTCharacterData) do
+		local spells = character.Spells;
+		if spells and spells[recipeID] and not seen[guid] then
+			seen[guid] = true;
+			owners[#owners + 1] = character;
+		end
+	end
+	cached = {
+		generation = RecipeKnownByGeneration,
+		owners = owners,
+		accountFallback = #owners == 0 and app.IsAccountCached("Spells", recipeID) or false,
+	};
+	RecipeKnownByCache[recipeID] = cached;
+	return cached;
+end
+
+local function GetAppearanceKnownByInfo(sourceID)
+	local cached = AppearanceKnownByCache[sourceID];
+	if cached and cached.generation == AppearanceKnownByGeneration then return cached; end
+	local owners = {};
+	local isKnown = app.IsAppearanceKnown and app.IsAppearanceKnown(sourceID) or false;
+	if isKnown and app.GetAppearanceKnownCharacters then
+		app.GetAppearanceKnownCharacters(sourceID, owners);
+	end
+	cached = {
+		generation = AppearanceKnownByGeneration,
+		known = isKnown and true or false,
+		owners = owners,
+	};
+	AppearanceKnownByCache[sourceID] = cached;
+	return cached;
+end
+
+app.AddEventHandler("OnSavesUpdated", function()
+	app.InvalidateKnownByCache();
+end);
+app.AddEventHandler("OnMemoryCleanup", function()
+	wipe(RecipeKnownByCache);
+	wipe(AppearanceKnownByCache);
+end);
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Known-by tooltip ownership", function()
+		local entries, references = 0, 0;
+		for _,entry in pairs(RecipeKnownByCache) do
+			entries = entries + 1;
+			references = references + (entry.owners and #entry.owners or 0);
+		end
+		for _,entry in pairs(AppearanceKnownByCache) do
+			entries = entries + 1;
+			references = references + (entry.owners and #entry.owners or 0);
+		end
+		return entries, references, "cached recipe/appearance tooltip ownership";
+	end);
+end
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
 	if #knownBy > 0 and kind then
 		app.Sort(knownBy, app.SortDefaults.name);
@@ -382,7 +462,44 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	end
 end
 local function ProcessForKnownBy(t, reference, tooltipInfo)
-	-- This is to show which characters have this profession.
+	-- Recipes are tracked per-character in the Spells cache. Explicitly use recipeID
+	-- first since external item tooltips do not always resolve the virtual spellID field.
+	local recipeID = reference.recipeID
+	if recipeID then
+		local info = GetRecipeKnownByInfo(recipeID);
+		for i=1,#info.owners do tinsert(knownBy, info.owners[i]); end
+		-- Account cache can retain a learned recipe even if the original character
+		-- was removed, renamed, transferred, or has not refreshed professions yet.
+		if #knownBy == 0 and info.accountFallback then
+			tinsert(knownBy, { text = UNKNOWN_RECIPE_OWNER_TEXT });
+		end
+		BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
+		return
+	end
+
+	-- Retail appearances are learned account-wide and Blizzard does not retain the
+	-- character which originally unlocked them. Report the reliable account state,
+	-- including appearances learned through a different source sharing the visual.
+	local sourceID = reference.sourceID;
+	if sourceID then
+		local info = GetAppearanceKnownByInfo(sourceID);
+		if info.known then
+			for i=1,#info.owners do tinsert(knownBy, info.owners[i]); end
+			if #knownBy > 0 then
+				BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY)
+			else
+				tinsert(tooltipInfo, {
+					left = APPEARANCE_KNOWN_ACCOUNT_TEXT,
+					wrap = true,
+					color = app.Colors.TooltipDescription,
+				});
+			end
+		end
+		return
+	end
+
+	-- This is to show which characters have this profession or know another
+	-- character-specific spell/collectible.
 	local id = reference.knownByID or reference.spellID
 	if id then
 		if reference.key == "professionID" and app.IsClassic then	-- Apparently Retail doesn't use ActiveSkills
@@ -426,6 +543,10 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 			BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
 		end
 	end
+end
+if app.ProfileWrap then
+	ProcessForKnownBy = app.ProfileWrap("Tooltip.KnownBy", ProcessForKnownBy);
+	ProcessForCompletedBy = app.ProfileWrap("Tooltip.CompletedBy", ProcessForCompletedBy);
 end
 
 -- Specialization Requirements
