@@ -1187,7 +1187,7 @@ local function BuildSourceParent(group)
 		local sourceGroup = app.CreateRawText(L.SOURCES, {
 			description = L.SOURCES_DESC,
 			icon = 134441,
-			OnUpdate = app.AlwaysShowUpdate,
+			OnSetVisibility = app.ReturnTrue,
 			sourceIgnored = true,
 			skipFull = true,
 			SortPriority = -3.0,

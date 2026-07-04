@@ -1280,7 +1280,7 @@ local function BuildSourceInformationForPopout(group)
 	local appearanceGroup;
 	if #g > 0 then
 		appearanceGroup = app.CreateCustomHeader(app.HeaderConstants.SHARED_APPEARANCES, {
-			OnUpdate = app.AlwaysShowUpdate,
+			OnSetVisibility = app.ReturnTrue,
 			OnClick = app.UI.OnClick.IgnoreRightClick,
 			sourceIgnored = true,
 			skipFull = true,
@@ -1289,7 +1289,7 @@ local function BuildSourceInformationForPopout(group)
 		});
 	else
 		appearanceGroup = app.CreateCustomHeader(app.HeaderConstants.UNIQUE_APPEARANCE, {
-			OnUpdate = app.AlwaysShowUpdate,
+			OnSetVisibility = app.ReturnTrue,
 			OnClick = app.UI.OnClick.IgnoreRightClick,
 			sourceIgnored = true,
 			skipFull = true,
