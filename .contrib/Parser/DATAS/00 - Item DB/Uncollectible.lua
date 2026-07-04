@@ -2907,6 +2907,7 @@ i(276343);	-- Console Encryption Key
 i(274951);	-- Corroded Scale
 i(276353);	-- Frozen Sliver of Darkness
 i(280183);	-- Harrier Hotcakes
+i(274954);	-- Pristine Fang
 i(276357);	-- Razor-Ice Flake
 i(274953);	-- Serpentine Iris
 i(276355);	-- Shattered Frostforged Hilt

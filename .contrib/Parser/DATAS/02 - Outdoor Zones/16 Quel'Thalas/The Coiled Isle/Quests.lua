@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		n(QUESTS, {
@@ -652,8 +653,48 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 				}),
-				--header(HEADERS.AchCriteria, 63641.05, {	-- The Honored Mad'jai
-				--}),
+				header(HEADERS.AchCriteria, 63641.05, {	-- The Honored Mad'jai
+					q(95521, {	-- The Med'jai Medallion
+						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["provider"] = { "o", 641565 },	-- Faintly Glowing Gem
+						["coord"] = { 48.0, 51.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					}),
+					q(95522, {	-- Guardians of Death, Guardians in Stone
+						["sourceQuest"] = 95521,	-- The Med'jai Medallion
+						["qg"] = 261659,	-- Me'si
+						["coord"] = { 48.9, 64.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					}),
+					q(95523, {	-- Worthy of the Past
+						["sourceQuest"] = 95522,	-- Guardians of Death, Guardians in Stone
+						["qg"] = 261895,	-- Thaze'ala
+						["coord"] = { 38.4, 34.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					}),
+					q(95524, {	-- The Unremembered
+						["sourceQuest"] = 95522,	-- Guardians of Death, Guardians in Stone
+						["qg"] = 261895,	-- Thaze'ala
+						["coord"] = { 38.4, 34.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					}),
+					q(95954, {	-- An Ancient Foe
+						["sourceQuests"] = {
+							95523,	-- Worthy of the Past
+							95524,	-- The Unremembered
+						},
+						["qg"] = 262281,	-- Thaze'ala
+						["coords"] = {	-- Depends where you turn in previous quests
+							{ 39.4, 49.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- The Statue of Let'aka
+							{ 43.9, 56.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- The Statue of Gal'fon
+						},
+					}),
+					q(95525, {	-- A Worthy Vigil
+						["sourceQuest"] = 95954,	-- An Ancient Foe
+						["qg"] = 263557,	-- Thaze'ala
+						["coord"] = { 83.0, 45.2, 2636 },	-- Vault of Restless Bones
+						["groups"] = {
+							i(280278),	-- Temple Guardian's Ring
+							i(280277),	-- Weathered Med'jai Signet
+						},
+					}),
+				}),
 				header(HEADERS.AchCriteria, 63641.06, {	-- Don't be Afrayed
 					q(93841, {	-- Ghosts of the Arena
 						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog

@@ -4642,6 +4642,7 @@ i(246723, 4860);	-- Unfazed Diver
 -- PATCH 12.1.0 --
 ------------------
 i(270248, 5035);	-- Autumn Snapling
+i(270254, 5031);	-- Caustic Writhling
 i(279921, 5131);	-- Ki'clak
 i(270252, 5032);	-- Nightfur Kapara
 i(270214, 5028);	-- Poisoned Parasite
@@ -4658,7 +4659,6 @@ i(275703, 5077);	-- ArcaneGolem2 Pet - Red
 i(277318, 5116);	-- Catsramas
 i(277319, 5117);	-- Cat'Thuzad
 i(280189, 5134);	-- Cauldron Concoction
-i(270254, 5031);	-- Caustic Writhling
 i(0, 5061);		-- Crabbers
 i(275631, 5071);	-- Corrosive Writhling
 i(270249, 5029);	-- Cursed Spawn

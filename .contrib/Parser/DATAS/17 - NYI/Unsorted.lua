@@ -113,7 +113,6 @@ root(ROOTS.Unsorted, {
 			i(270211),	-- Furiostraza's Filter
 			i(270249),	-- Cursed Spawn
 			i(270253),	-- Jaundiced Slitherer
-			i(270254),	-- Caustic Writhling
 			i(270267),	-- Twilight Missive
 			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
@@ -841,7 +840,6 @@ root(ROOTS.Unsorted, {
 			i(274907),	-- Seaside Painted Surfboard
 			i(274909),	-- Seaside Murloc Tiki Totem
 			i(274921),	-- Pearl of Jubilation
-			i(274954),	-- Pristine Fang
 			i(274965),	-- Ancient Curio
 			i(274970),	-- Ancient Curio
 			i(274988),	-- Seaside Tiki Gazebo
@@ -1627,7 +1625,6 @@ root(ROOTS.Unsorted, {
 			i(279997),	-- Insidious Venomstone
 			i(280003),	-- Excising Knife
 			i(280004),	-- Corroded Key
-			i(280005),	-- Dispelling Charm
 			i(280006),	-- Spirit Loupe
 			i(280007),	-- Mask Fragment
 			i(280047),	-- Feathered Bell
@@ -1680,8 +1677,6 @@ root(ROOTS.Unsorted, {
 			i(280271),	-- Longwick Rope
 			i(280273),	-- Droopy Longwick Rope
 			i(280275),	-- Hanging Longwick Rope
-			i(280277),	-- Weathered Med'jai Signet
-			i(280278),	-- Temple Guardian's Ring
 
 			--[[ If Darkal Needs
 			n(CLASS, {

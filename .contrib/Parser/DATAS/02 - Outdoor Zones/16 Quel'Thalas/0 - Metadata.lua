@@ -60,6 +60,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["timeline"] = { ADDED_12_1_0 },
 			["maps"] = {
 				2638,	-- Profaned Mausoleum
+				2637,	-- Ruuk'jar's Clutch
 				2613,	-- The Underbelly
 				2636,	-- Vault of Restless Bones
 			},

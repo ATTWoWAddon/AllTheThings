@@ -831,7 +831,6 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 
 		-- 12.1.0
 		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
-			fp(3285),	-- Amani Foothold
 			fp(3286),	-- Eastern Entrance
 		})),
 	}),
