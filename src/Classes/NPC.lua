@@ -100,6 +100,7 @@ else
 	local ATTCNPCHarvester = CreateFrame("GameTooltip", "ATTCNPCHarvester", UIParent, "GameTooltipTemplate")
 	ATTCNPCHarvester.AllTheThingsIgnored = true;
 	setmetatable(NPCNameFromID, { __index = function(t, id)
+		id = id and tonumber(id)
 		if id > 0 then
 			ATTCNPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
 			ATTCNPCHarvester:SetHyperlink(("unit:Creature-0-0-0-0-%d-0000000000"):format(id))
