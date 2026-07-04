@@ -6265,15 +6265,42 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		-- 10.0.0
 		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			cl(DRUID, {
-				i(198145),	-- Copy Bracers of the druid name PH
-				i(198144),	-- Copy Chestguard of the druid name PH
-				i(198147),	-- Copy Cincture of the druid name PH
-				i(198149),	-- Copy Footwraps of the druid name PH
-				i(198148),	-- Copy Handwraps of the druid name PH
-				i(198142),	-- Copy Headpiece of the druid name PH
-				i(198143),	-- Copy Leggings of the druid name PH
-				i(198146),	-- Copy Shoulderpads of the druid name PH
-				i(198150),	-- Copy Wrap of the druid name PH
+				i(198145, {["sourceID"] = 181499 }),	-- Copy Bracers of the druid name PH
+				i(198145, {["sourceID"] = 181500 }),	-- Copy Bracers of the druid name PH
+				i(198145, {["sourceID"] = 181501 }),	-- Copy Bracers of the druid name PH
+				i(198145, {["sourceID"] = 181502 }),	-- Copy Bracers of the druid name PH
+				i(198144, {["sourceID"] = 181487 }),	-- Copy Chestguard of the druid name PH
+				i(198144, {["sourceID"] = 181488 }),	-- Copy Chestguard of the druid name PH
+				i(198144, {["sourceID"] = 181489 }),	-- Copy Chestguard of the druid name PH
+				i(198144, {["sourceID"] = 181490 }),	-- Copy Chestguard of the druid name PH
+				i(198147, {["sourceID"] = 181523 }),	-- Copy Cincture of the druid name PH
+				i(198147, {["sourceID"] = 181530 }),	-- Copy Cincture of the druid name PH
+				i(198147, {["sourceID"] = 181531 }),	-- Copy Cincture of the druid name PH
+				i(198147, {["sourceID"] = 181532 }),	-- Copy Cincture of the druid name PH
+				i(198149, {["sourceID"] = 181547 }),	-- Copy Footwraps of the druid name PH
+				i(198149, {["sourceID"] = 181548 }),	-- Copy Footwraps of the druid name PH
+				i(198149, {["sourceID"] = 181549 }),	-- Copy Footwraps of the druid name PH
+				i(198149, {["sourceID"] = 181550 }),	-- Copy Footwraps of the druid name PH
+				i(198148, {["sourceID"] = 181535 }),	-- Copy Handwraps of the druid name PH
+				i(198148, {["sourceID"] = 181542 }),	-- Copy Handwraps of the druid name PH
+				i(198148, {["sourceID"] = 181543 }),	-- Copy Handwraps of the druid name PH
+				i(198148, {["sourceID"] = 181544 }),	-- Copy Handwraps of the druid name PH
+				i(198142, {["sourceID"] = 181463 }),	-- Copy Headpiece of the druid name PH
+				i(198142, {["sourceID"] = 181464 }),	-- Copy Headpiece of the druid name PH
+				i(198142, {["sourceID"] = 181465 }),	-- Copy Headpiece of the druid name PH
+				i(198142, {["sourceID"] = 181466 }),	-- Copy Headpiece of the druid name PH
+				i(198143, {["sourceID"] = 181475 }),	-- Copy Leggings of the druid name PH
+				i(198143, {["sourceID"] = 181476 }),	-- Copy Leggings of the druid name PH
+				i(198143, {["sourceID"] = 181477 }),	-- Copy Leggings of the druid name PH
+				i(198143, {["sourceID"] = 181478 }),	-- Copy Leggings of the druid name PH
+				i(198146, {["sourceID"] = 181511 }),	-- Copy Shoulderpads of the druid name PH
+				i(198146, {["sourceID"] = 181512 }),	-- Copy Shoulderpads of the druid name PH
+				i(198146, {["sourceID"] = 181513 }),	-- Copy Shoulderpads of the druid name PH
+				i(198146, {["sourceID"] = 181514 }),	-- Copy Shoulderpads of the druid name PH
+				i(198150, {["sourceID"] = 181559 }),	-- Copy Wrap of the druid name PH
+				i(198150, {["sourceID"] = 181560 }),	-- Copy Wrap of the druid name PH
+				i(198150, {["sourceID"] = 181561 }),	-- Copy Wrap of the druid name PH
+				i(198150, {["sourceID"] = 181562 }),	-- Copy Wrap of the druid name PH
 			}),
 			cl(EVOKER, {
 				i(187651),	-- Evoker Tunic
@@ -6440,16 +6467,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 						i(203502),	-- Poleyns of the Walking Mountain
 					}),
-					--
-					i(202146),	-- Brawler's Earthen Cuirass [BoP]
-					i(202148),	-- Emissary's Flamewrought Seal [BoP]
-					i(202145),	-- Frozen Claw Mantle [BoP]
-					i(202150),	-- Galvanic Gaiters [BoP]
-					i(202144),	-- Greathelm of Horned Fury [BoP]
-					i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
-					i(202147),	-- Primal Seeker's Leggings [BoP]
-					i(202149),	-- Primalist Warden's Bracers [BoP]
-					i(202143),	-- Woven Stone Bracelets [BoP]
 				})),
 				d(DIFFICULTY.RAID.NORMAL, {
 					cl(DEATHKNIGHT, {
@@ -6543,16 +6560,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 						i(203502),	-- Poleyns of the Walking Mountain
 					}),
-					--
-					i(202146),	-- Brawler's Earthen Cuirass [BoP]
-					i(202148),	-- Emissary's Flamewrought Seal [BoP]
-					i(202145),	-- Frozen Claw Mantle [BoP]
-					i(202150),	-- Galvanic Gaiters [BoP]
-					i(202144),	-- Greathelm of Horned Fury [BoP]
-					i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
-					i(202147),	-- Primal Seeker's Leggings [BoP]
-					i(202149),	-- Primalist Warden's Bracers [BoP]
-					i(202143),	-- Woven Stone Bracelets [BoP]
 				}),
 				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 1 }, {
 					cl(DEATHKNIGHT, {
@@ -6646,16 +6653,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 						i(203502),	-- Poleyns of the Walking Mountain
 					}),
-					--
-					i(202146),	-- Brawler's Earthen Cuirass [BoP]
-					i(202148),	-- Emissary's Flamewrought Seal [BoP]
-					i(202145),	-- Frozen Claw Mantle [BoP]
-					i(202150),	-- Galvanic Gaiters [BoP]
-					i(202144),	-- Greathelm of Horned Fury [BoP]
-					i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
-					i(202147),	-- Primal Seeker's Leggings [BoP]
-					i(202149),	-- Primalist Warden's Bracers [BoP]
-					i(202143),	-- Woven Stone Bracelets [BoP]
 				})),
 				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 450 }, {
 					cl(DEATHKNIGHT, {
@@ -6750,9 +6747,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203502),	-- Poleyns of the Walking Mountain
 					}),
 				})),
-				-- Extra
-				i(192460),	--
-				i(194710),	--
 			}),
 			header(HEADERS.Object, 382621, {	-- Revival Catalyst Console
 				d(DIFFICULTY.RAID.LFR, {
@@ -7324,6 +7318,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(MAGE, {
 						i(203593),	-- Crystal Scholar's Beacons
 						i(203591),	-- Crystal Scholar's Cowl
+						itemsource(184158),	-- Crystal Scholar's Cowl
 					}),
 					cl(MONK, {
 						i(203539),	-- Mantle of the Waking Fist
@@ -7377,6 +7372,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(MAGE, {
 						i(203593),	-- Crystal Scholar's Beacons
 						i(203591),	-- Crystal Scholar's Cowl
+						itemsource(184159),	-- Crystal Scholar's Cowl
 					}),
 					cl(MONK, {
 						i(203539),	-- Mantle of the Waking Fist
@@ -7909,6 +7905,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205803),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
+						itemsource(186234),	-- Command of the Furnace Seraph
 						i(205855),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -7924,6 +7921,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205850),	-- Grimhorns of the Sinister Savant
 					}),
 					cl(WARRIOR, {
+						i(202440),	-- Insignia of the Onyx Crucible
 						i(205798),	-- Pauldrons of the Onyx Crucible
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
@@ -7955,6 +7953,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205803),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
+						itemsource(186235),	-- Command of the Furnace Seraph
 						i(205855),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -7970,6 +7969,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205850),	-- Grimhorns of the Sinister Savant
 					}),
 					cl(WARRIOR, {
+						i(202440),	-- Insignia of the Onyx Crucible
 						i(205798),	-- Pauldrons of the Onyx Crucible
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
@@ -8000,6 +8000,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205803),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
+						itemsource(186236),	-- Command of the Furnace Seraph
 						i(205855),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -8015,6 +8016,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205850),	-- Grimhorns of the Sinister Savant
 					}),
 					cl(WARRIOR, {
+						i(202440),	-- Insignia of the Onyx Crucible
 						i(205798),	-- Pauldrons of the Onyx Crucible
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
@@ -8045,6 +8047,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205803),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
+						itemsource(186237),	-- Command of the Furnace Seraph
 						i(205855),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -8060,6 +8063,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205850),	-- Grimhorns of the Sinister Savant
 					}),
 					cl(WARRIOR, {
+						i(202440),	-- Insignia of the Onyx Crucible
 						i(205798),	-- Pauldrons of the Onyx Crucible
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
@@ -8090,6 +8094,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205803),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
+						itemsource(186238),	-- Command of the Furnace Seraph
 						i(205855),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -8105,6 +8110,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205850),	-- Grimhorns of the Sinister Savant
 					}),
 					cl(WARRIOR, {
+						i(202440),	-- Insignia of the Onyx Crucible
 						i(205798),	-- Pauldrons of the Onyx Crucible
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
@@ -8135,6 +8141,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205803),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
+						itemsource(186239),	-- Command of the Furnace Seraph
 						i(205855),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -8150,6 +8157,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205850),	-- Grimhorns of the Sinister Savant
 					}),
 					cl(WARRIOR, {
+						i(202440),	-- Insignia of the Onyx Crucible
 						i(205798),	-- Pauldrons of the Onyx Crucible
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),

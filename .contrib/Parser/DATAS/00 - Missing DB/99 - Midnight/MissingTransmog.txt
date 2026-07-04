@@ -34979,42 +34979,6 @@ s(181375)/i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - P
 s(181376)/i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
 s(181377)/i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
 s(181378)/i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
-s(181463)/i(198142),	-- Copy Headpiece of the druid name PH
-s(181464)/i(198142),	-- Copy Headpiece of the druid name PH
-s(181465)/i(198142),	-- Copy Headpiece of the druid name PH
-s(181466)/i(198142),	-- Copy Headpiece of the druid name PH
-s(181475)/i(198143),	-- Copy Leggings of the druid name PH
-s(181476)/i(198143),	-- Copy Leggings of the druid name PH
-s(181477)/i(198143),	-- Copy Leggings of the druid name PH
-s(181478)/i(198143),	-- Copy Leggings of the druid name PH
-s(181487)/i(198144),	-- Copy Chestguard of the druid name PH
-s(181488)/i(198144),	-- Copy Chestguard of the druid name PH
-s(181489)/i(198144),	-- Copy Chestguard of the druid name PH
-s(181490)/i(198144),	-- Copy Chestguard of the druid name PH
-s(181499)/i(198145),	-- Copy Bracers of the druid name PH
-s(181500)/i(198145),	-- Copy Bracers of the druid name PH
-s(181501)/i(198145),	-- Copy Bracers of the druid name PH
-s(181502)/i(198145),	-- Copy Bracers of the druid name PH
-s(181511)/i(198146),	-- Copy Shoulderpads of the druid name PH
-s(181512)/i(198146),	-- Copy Shoulderpads of the druid name PH
-s(181513)/i(198146),	-- Copy Shoulderpads of the druid name PH
-s(181514)/i(198146),	-- Copy Shoulderpads of the druid name PH
-s(181523)/i(198147),	-- Copy Cincture of the druid name PH
-s(181530)/i(198147),	-- Copy Cincture of the druid name PH
-s(181531)/i(198147),	-- Copy Cincture of the druid name PH
-s(181532)/i(198147),	-- Copy Cincture of the druid name PH
-s(181535)/i(198148),	-- Copy Handwraps of the druid name PH
-s(181542)/i(198148),	-- Copy Handwraps of the druid name PH
-s(181543)/i(198148),	-- Copy Handwraps of the druid name PH
-s(181544)/i(198148),	-- Copy Handwraps of the druid name PH
-s(181547)/i(198149),	-- Copy Footwraps of the druid name PH
-s(181548)/i(198149),	-- Copy Footwraps of the druid name PH
-s(181549)/i(198149),	-- Copy Footwraps of the druid name PH
-s(181550)/i(198149),	-- Copy Footwraps of the druid name PH
-s(181559)/i(198150),	-- Copy Wrap of the druid name PH
-s(181560)/i(198150),	-- Copy Wrap of the druid name PH
-s(181561)/i(198150),	-- Copy Wrap of the druid name PH
-s(181562)/i(198150),	-- Copy Wrap of the druid name PH
 s(181576)/i(198342),	-- Tuskarr Expedition Pack
 s(181695)/i(198385),	-- Draconian Garden Pick
 s(181696)/i(198386),	-- Gardener's Tilling Spork
@@ -35050,111 +35014,9 @@ s(183900)/i(201775),	-- Crimson Aspirant's Wand
 s(184043)/i(201972),	-- Crimson Gladiator's Splitter
 s(184046)/i(201992),	-- [PH] BoE Ring \\ Emissary's Flamewrought Seal
 s(184133)/i(202148),	-- Emissary's Flamewrought Seal
-10.0.2.46259
-s(184158)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
-s(184159)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 10.0.5.47118
 s(184009)/i(201962),	-- Heat of Primal Winter \\ Remnant of Primal Winter
-10.0.7.47910
-s(185364)/i(203798),	-- Copy Jin'do's Bag of Whammies
-10.1.0.48480
-s(184554)/i(202581),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
-s(184581)/i(202608),	-- Power-Draining Spire
-s(184582)/i(202648),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 2
-s(184583)/i(202651),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - FEET 2
-s(184585)/i(202653),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - WRIST 2
-s(184586)/i(202654),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - FEET 2
-s(184588)/i(202656),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 2
-s(184589)/i(202657),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - FEET 2
-s(184590)/i(202658),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - WAIST 2
-s(184592)/i(202660),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - FEET 2
-s(184593)/i(202661),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WAIST 2
-s(184594)/i(202662),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WRIST 2
-s(184595)/i(202666),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 3
-s(185425)/i(204087),	-- 10.1 Cloak Test Item
-s(185531)/i(202608),	-- Power-Draining Spire
-s(185532)/i(202608),	-- Power-Draining Spire
-s(185533)/i(202608),	-- Power-Draining Spire
-s(185570)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
-s(185571)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
-s(185574)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
-s(185575)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
-s(185578)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
-s(185579)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-s(185585)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
-s(185586)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
 s(185789)/i(204387),	-- Buzzing Orb Core
-s(186234)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
-s(186235)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
-s(186236)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
-s(186237)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
-s(186238)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
-s(186239)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
-10.1.0.48537
-s(186292)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
-s(186293)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
-s(186294)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
-s(186295)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
-s(186296)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
-s(186297)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
-10.1.0.48661
-s(186478)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
-s(186480)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
-s(186496)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
-s(186498)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
-s(186505)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
-s(186506)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
-s(186507)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
-s(186517)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
-s(186519)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
-s(186532)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
-s(186533)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
-s(186534)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
-s(186544)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-s(186546)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-s(186617)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
-s(186618)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
-s(186619)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
-s(186632)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
-s(186634)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
-s(186647)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
-s(186649)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
-s(186662)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
-s(186664)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
-s(186695)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
-s(186697)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
-10.1.0.48776
-s(187719)/i(205924),	-- Obsidian Gladiator's Axe
-s(187720)/i(205915),	-- Obsidian Gladiator's Dagger
-s(187721)/i(205925),	-- Obsidian Gladiator's Knife
-s(187722)/i(205916),	-- Obsidian Gladiator's Warglaive
-s(187723)/i(205918),	-- Obsidian Gladiator's Staff
-s(187724)/i(205919),	-- Obsidian Gladiator's Rifle
-s(187726)/i(205927),	-- Obsidian Gladiator's Polearm
-s(187727)/i(205926),	-- Obsidian Gladiator's Mace
-s(187728)/i(205917),	-- Obsidian Gladiator's Spear
-s(187730)/i(205914),	-- Obsidian Gladiator's Splitter
-s(187731)/i(205921),	-- Obsidian Gladiator's Scepter
-s(187733)/i(205928),	-- Obsidian Gladiator's Claws
-s(187735)/i(205930),	-- Obsidian Gladiator's Talons
-s(187737)/i(205929),	-- Obsidian Gladiator's Bow
-s(187738)/i(205923),	-- Obsidian Gladiator's Shield
-s(187739)/i(205922),	-- Obsidian Gladiator's Rod
-10.1.0.48898
-s(187762)/i(206044),	-- Obsidian Gladiator's Axe
-10.1.5.49719
-s(188669)/i(207102),	-- TESTING ITEM DELETE ME
-10.1.5.49908
-s(189585)/i(208097),	-- Flamethrower
-10.2.0.51239
-s(192432)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
-s(192433)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
-s(192434)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
-s(192435)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
-s(192436)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
-s(192437)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
-s(192438)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
-s(192439)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 10.2.6.53840
 s(197334)/i(216027),	-- Draconic Gladiator's Silk Blouse
 12.0.0.63534

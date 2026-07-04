@@ -4153,6 +4153,81 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 		})),
 
+		-- 10.0.2
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+			header(HEADERS.LFGDungeon, 2390, {	-- Vault of the Incarnates
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 451 }, {
+					filter(CLOTH, {
+						i(202147),	-- Primal Seeker's Leggings [BoP]
+						i(202143),	-- Woven Stone Bracelets [BoP]
+					}),
+					filter(FINGER_F, {
+						i(202148),	-- Emissary's Flamewrought Seal [BoP]
+					}),
+					filter(LEATHER, {
+						i(202146),	-- Brawler's Earthen Cuirass [BoP]
+						i(202150),	-- Galvanic Gaiters [BoP]
+					}),
+					filter(MAIL, {
+						i(202145),	-- Frozen Claw Mantle [BoP]
+						i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+					}),
+					filter(PLATE, {
+						i(202144),	-- Greathelm of Horned Fury [BoP]
+						i(202149),	-- Primalist Warden's Bracers [BoP]
+					}),
+				})),
+				d(DIFFICULTY.RAID.NORMAL, {
+					filter(CLOTH, {
+						i(202147),	-- Primal Seeker's Leggings [BoP]
+						i(202143),	-- Woven Stone Bracelets [BoP]
+					}),
+					filter(FINGER_F, {
+						i(202148),	-- Emissary's Flamewrought Seal [BoP]
+					}),
+					filter(LEATHER, {
+						i(202146),	-- Brawler's Earthen Cuirass [BoP]
+						i(202150),	-- Galvanic Gaiters [BoP]
+					}),
+					filter(MAIL, {
+						i(202145),	-- Frozen Claw Mantle [BoP]
+						i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+					}),
+					filter(PLATE, {
+						i(202144),	-- Greathelm of Horned Fury [BoP]
+						i(202149),	-- Primalist Warden's Bracers [BoP]
+					}),
+				}),
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 1 }, {
+					filter(CLOTH, {
+						i(202147),	-- Primal Seeker's Leggings [BoP]
+						i(202143),	-- Woven Stone Bracelets [BoP]
+					}),
+					filter(FINGER_F, {
+						i(202148),	-- Emissary's Flamewrought Seal [BoP]
+					}),
+					filter(LEATHER, {
+						i(202146),	-- Brawler's Earthen Cuirass [BoP]
+						i(202150),	-- Galvanic Gaiters [BoP]
+					}),
+					filter(MAIL, {
+						i(202145),	-- Frozen Claw Mantle [BoP]
+						i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+					}),
+					filter(PLATE, {
+						i(202144),	-- Greathelm of Horned Fury [BoP]
+						i(202149),	-- Primalist Warden's Bracers [BoP]
+					}),
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 450 }, {
+
+				})),
+				-- Extra
+				i(192460),	--
+				i(194710),	--
+			}),
+		})),
+
 		-- 10.0.7
 		expansion(EXPANSION.DF, patch(0,7), bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 			filter(TRINKET_F, {
@@ -4165,41 +4240,85 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		expansion(EXPANSION.DF, patch(1,0), bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
 				filter(CLOAKS, {
-					i(204087),	-- 10.1 Cloak Test Item
-					i(202648),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 2
-					i(202666),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 3
+					i(204087, {["sourceID"] = 185425 }),	-- 10.1 Cloak Test Item
+					i(202648, {["sourceID"] = 184582 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 2
+					i(202666, {["sourceID"] = 184595 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 3
 				}),
 				filter(CLOTH, {
-					i(202651),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - FEET 2
-					i(202653),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - WRIST 2
+					i(202651, {["sourceID"] = 184583 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - FEET 2
+					i(202653, {["sourceID"] = 184585 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - WRIST 2
+					itemsource(185571),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
+					itemsource(186478),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
+					itemsource(186480),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
+					itemsource(185570),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
+					itemsource(186496),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
+					itemsource(186498),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
 				}),
 				filter(FINGER_F, {
 					i(202649),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - FINGER 2
 					i(202665),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - FINGER 3
 				}),
 				filter(LEATHER, {
-					i(202654),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - FEET 2
-					i(202581),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
-					i(202656),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 2
+					i(202654, {["sourceID"] = 184586 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - FEET 2
+					i(202581, {["sourceID"] = 184554 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
+					i(202656, {["sourceID"] = 184588 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 2
+					itemsource(185574),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
+					itemsource(186632),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
+					itemsource(186634),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
+					itemsource(185575),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
+					itemsource(186647),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
+					itemsource(186649),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
 				}),
 				filter(MAIL, {
-					i(202657),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - FEET 2
-					i(202658),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - WAIST 2
+					i(202657, {["sourceID"] = 184589 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - FEET 2
+					i(202658, {["sourceID"] = 184590 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - WAIST 2
+					itemsource(186544),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
+					itemsource(186546),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
+					itemsource(185579),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
+					itemsource(186517),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
+					itemsource(186519),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
+					itemsource(185578),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
 				}),
 				filter(NECK_F, {
 					i(202650),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - NECK 2
 					i(202664),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - NECK 3
 				}),
 				filter(PLATE, {
-					i(202660),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - FEET 2
-					i(202661),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WAIST 2
-					i(202662),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WRIST 2
+					i(202660, {["sourceID"] = 184592 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - FEET 2
+					i(202661, {["sourceID"] = 184593 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WAIST 2
+					i(202662, {["sourceID"] = 184594 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WRIST 2
+					itemsource(185585),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
+					itemsource(186695),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
+					itemsource(186697),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
+					itemsource(185586),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
+					itemsource(186662),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
+					itemsource(186664),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
 				}),
 				filter(TRINKET_F, {
 					i(202609),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - Trinket - INT
 					i(202611),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - Trinket - Physical DPS
 					i(204064),	-- PH 10.1 Raid - Black Dragon Labs - Boss 9 - Sarkareth - Accessory - Trinket - Omni
-					i(202608),	-- Power-Draining Spire [This was a Trinket /Braghe]
+					i(202608, {["sourceID"] = 184581 }),	-- Power-Draining Spire [This was a Trinket]
+					i(202608, {["sourceID"] = 185531 }),	-- Power-Draining Spire [This was a Trinket]
+					i(202608, {["sourceID"] = 185532 }),	-- Power-Draining Spire [This was a Trinket]
+					i(202608, {["sourceID"] = 185533 }),	-- Power-Draining Spire [This was a Trinket]
+				}),
+			}),
+			n(WORLD_BOSSES, {
+				filter(CLOTH, {
+					itemsource(186505),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
+					itemsource(186506),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
+					itemsource(186507),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
+				}),
+				filter(LEATHER, {
+					itemsource(186617),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
+					itemsource(186618),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
+					itemsource(186619),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
+				}),
+				filter(MAIL, {
+					itemsource(186532),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
+					itemsource(186533),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
+					itemsource(186534),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 				}),
 			}),
 		})),
@@ -4483,16 +4602,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				}),
 				filter(LEATHER, {
 					i(210540, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Visage of the Devouring Flame
-
-					-- These currenty don't want to take their sourceID, leaving it here uncommented
-					-- i(207129, {["sourceID"] = 192432 }),	-- Robes of the Ashen Grove
-					-- i(207129, {["sourceID"] = 192433 }),	-- Robes of the Ashen Grove
-					-- i(207129, {["sourceID"] = 192434 }),	-- Robes of the Ashen Grove
-					-- i(207129, {["sourceID"] = 192435 }),	-- Robes of the Ashen Grove
-					-- i(207129, {["sourceID"] = 192436 }),	-- Robes of the Ashen Grove
-					-- i(207129, {["sourceID"] = 192437 }),	-- Robes of the Ashen Grove
-					-- i(207129, {["sourceID"] = 192438 }),	-- Robes of the Ashen Grove
-					-- i(207129, {["sourceID"] = 192439 }),	-- Robes of the Ashen Grove
+					itemsource(192432),	-- Robes of the Ashen Grove
+					itemsource(192433),	-- Robes of the Ashen Grove
+					itemsource(192434),	-- Robes of the Ashen Grove
+					itemsource(192435),	-- Robes of the Ashen Grove
+					itemsource(192436),	-- Robes of the Ashen Grove
+					itemsource(192437),	-- Robes of the Ashen Grove
+					itemsource(192438),	-- Robes of the Ashen Grove
+					itemsource(192439),	-- Robes of the Ashen Grove
 				}),
 				filter(PLATE, {
 					i(210541, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Mask of the Unbidden Grim

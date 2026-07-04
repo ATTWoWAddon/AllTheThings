@@ -956,6 +956,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						},
 					}),
 				}),
+				ZoneDrops({
+					i(204078, {	-- Aspect's Shadowflame Crest Fragment
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+					}),
+				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },
 				},{
@@ -968,11 +973,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(204428),	-- Sanctum Guard's Forgewalkers
 					i(204420),	-- Sundered Edgelord's Breastplate
 				})),
-				ZoneDrops({
-					i(204078, {	-- Aspect's Shadowflame Crest Fragment
-						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
-					}),
-				}),
 				Boss(KAZZARA, {
 					ach(18151),	-- Mythic: Kazzara, the Hellforged
 				}),

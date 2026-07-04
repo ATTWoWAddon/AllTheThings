@@ -462,7 +462,7 @@ root(ROOTS.NeverImplemented, {
 					i(201249),	-- Dreamfire Imbued Drakehorn
 				}),
 				expansion(EXPANSION.DF, patch(0,7), bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
-					i(203798),	-- Copy Jin'do's Bag of Whammies
+					i(203798, {["sourceID"] = 185364 }),	-- Copy Jin'do's Bag of Whammies
 				})),
 			}),
 		}),
@@ -1973,6 +1973,23 @@ root(ROOTS.NeverImplemented, {
 			i(233063),	-- Brann's Boomstick
 			i(232932),	-- Brann Bronzebeard's Mace
 			i(232987),	-- Brann Bronzebeard's Shield
+			itemsource(187719),	-- Obsidian Gladiator's Axe
+			itemsource(187762),	-- Obsidian Gladiator's Axe
+			itemsource(187737),	-- Obsidian Gladiator's Bow
+			itemsource(187733),	-- Obsidian Gladiator's Claws
+			itemsource(187720),	-- Obsidian Gladiator's Dagger
+			itemsource(187721),	-- Obsidian Gladiator's Knife
+			itemsource(187727),	-- Obsidian Gladiator's Mace
+			itemsource(187726),	-- Obsidian Gladiator's Polearm
+			itemsource(187724),	-- Obsidian Gladiator's Rifle
+			itemsource(187739),	-- Obsidian Gladiator's Rod
+			itemsource(187731),	-- Obsidian Gladiator's Scepter
+			itemsource(187738),	-- Obsidian Gladiator's Shield
+			itemsource(187728),	-- Obsidian Gladiator's Spear
+			itemsource(187730),	-- Obsidian Gladiator's Splitter
+			itemsource(187723),	-- Obsidian Gladiator's Staff
+			itemsource(187735),	-- Obsidian Gladiator's Talons
+			itemsource(187722),	-- Obsidian Gladiator's Warglaive
 		})),
 
 		-- 11.1.5

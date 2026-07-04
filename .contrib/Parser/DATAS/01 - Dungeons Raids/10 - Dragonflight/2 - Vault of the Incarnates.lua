@@ -727,18 +727,19 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					}),
 				}),
 				ZoneDrops(),
-				-- Mythic Only Temp BoP Items
-				n(ZONE_DROPS, {
-					i(202146, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Brawler's Earthen Cuirass [BoP]
-					i(202148, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Emissary's Flamewrought Seal [BoP]
-					i(202145, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Frozen Claw Mantle [BoP]
-					i(202150, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Galvanic Gaiters [BoP]
-					i(202144, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Greathelm of Horned Fury [BoP]
-					i(202151, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Lavamancer's Ceremonial Waistguard [BoP]
-					i(202147, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Primal Seeker's Leggings [BoP]
-					i(202149, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Primalist Warden's Bracers [BoP]
-					i(202143, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
-				}),
+				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH },
+				},{
+					i(202146),	-- Brawler's Earthen Cuirass [BoP]
+					i(202148),	-- Emissary's Flamewrought Seal [BoP]
+					i(202145),	-- Frozen Claw Mantle [BoP]
+					i(202150),	-- Galvanic Gaiters [BoP]
+					i(202144),	-- Greathelm of Horned Fury [BoP]
+					i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+					i(202147),	-- Primal Seeker's Leggings [BoP]
+					i(202149),	-- Primalist Warden's Bracers [BoP]
+					i(202143),	-- Woven Stone Bracelets [BoP]
+				})),
 				Boss(ERANOG, {
 					ach(16346),	-- Mythic: Eranog
 				}),
