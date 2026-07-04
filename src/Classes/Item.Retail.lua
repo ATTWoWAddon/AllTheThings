@@ -16,6 +16,7 @@ local ItemEventListener = ItemEventListener
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemCount = app.WOWAPI.GetItemCount;
+local GetItemSpell = app.WOWAPI.GetItemSpell;
 local IsBoAOverride = C_Item.IsItemBindToAccountUntilEquip or app.ReturnFalse;
 
 -- CRIEVE NOTE: Add this to Classic's LocalizationDB and then remove this.

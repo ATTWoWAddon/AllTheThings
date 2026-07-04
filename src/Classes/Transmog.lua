@@ -33,7 +33,6 @@ local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local ipairs, select, tinsert, pairs, rawget,rawset
 	= ipairs, select, tinsert, pairs, rawget,rawset
 local C_Item_IsDressableItemByID, GetSlotForInventoryType
----@diagnostic disable-next-line: deprecated
 	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local L, contains, containsAny, SearchForField
@@ -527,11 +526,17 @@ app.AddRemovalTypeHandler("ItemWithAppearance", function(t)
 	app.UpdateRawID(tkey, tval)
 end)
 
-local VisualIDSourceIDsCache = setmetatable({}, { __index = function(t, visualID)
-	local sourceIDs = C_TransmogCollection_GetAllAppearanceSources(visualID)
-	t[visualID] = sourceIDs or app.EmptyTable
-	return sourceIDs
-end})
+local VisualIDSourceIDsCache = setmetatable({}, {
+	__mode = "v",
+	__index = function(t, visualID)
+		local sourceIDs = C_TransmogCollection_GetAllAppearanceSources(visualID)
+		if sourceIDs then
+			t[visualID] = sourceIDs
+			return sourceIDs
+		end
+		return app.EmptyTable
+	end,
+})
 local CurrentCharacterFilterIDSet
 local ArmorTypeMogs = {
 	[2] = true,	-- Cosmetic
@@ -1011,11 +1016,14 @@ end
 
 -- Whenever we can't find a SourceID in ATT data, create a cached version of it so we can keep resolved data
 -- instead of always generating new
-local UnknownAppearancesCache = setmetatable({}, { __index = function(t, sourceID)
-	local sourceGroup = app.CreateItemSource(sourceID)
-	t[sourceID] = sourceGroup
-	return sourceGroup
-end})
+local UnknownAppearancesCache = setmetatable({}, {
+	__mode = "v",
+	__index = function(t, sourceID)
+		local sourceGroup = app.CreateItemSource(sourceID)
+		t[sourceID] = sourceGroup
+		return sourceGroup
+	end,
+})
 local function GetLinkTooltipInfo(sourceGroup, useItemIDs, sameItem)
 	local sourceID = sourceGroup.sourceID
 	-- when the link never resolves, this link lookup triggers CanRetry prior to being checked below
@@ -1310,6 +1318,11 @@ end)
 app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_REMOVED", function(sourceID)
 	-- app.PrintDebug("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
 	app.SetThingCollected("sourceID", sourceID, true)
+end)
+
+app.AddEventHandler("OnMemoryCleanup", function()
+	wipe(VisualIDSourceIDsCache)
+	wipe(UnknownAppearancesCache)
 end)
 
 app.AddEventHandler("OnLoad", function()

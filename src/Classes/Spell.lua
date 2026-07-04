@@ -13,15 +13,53 @@ local IsQuestFlaggedCompleted, SearchForField
 
 -- WoW API Cache
 local GetSpellLink = app.WOWAPI.GetSpellLink;
-
--- TODO: some of these deprecated in 11.2, move to WOWAPI
----@diagnostic disable-next-line: deprecated
-local GetSpellTabInfo = GetSpellTabInfo
-
--- WoW API
-local GetNumSpellTabs = app.WOWAPI.GetNumSpellTabs;
 local IsSpellKnown = app.WOWAPI.IsSpellKnown;
-local IsSpellKnownOrOverridesKnown = app.WOWAPI.IsSpellKnownOrOverridesKnown;
+local IsSpellInSpellBook = app.WOWAPI.IsSpellInSpellBook;
+
+-- Iterate the player spellbook through the current C_SpellBook API on Retail.
+-- Legacy clients keep their old implementation isolated from the Midnight path.
+local IteratePlayerSpellBook
+if app.IsRetail then
+	local C_SpellBook_GetNumSpellBookSkillLines = C_SpellBook.GetNumSpellBookSkillLines
+	local C_SpellBook_GetSpellBookSkillLineInfo = C_SpellBook.GetSpellBookSkillLineInfo
+	local C_SpellBook_GetSpellBookItemInfo = C_SpellBook.GetSpellBookItemInfo
+	local PLAYER_SPELL_BANK = Enum.SpellBookSpellBank.Player
+	local SPELL_ITEM_TYPE = Enum.SpellBookItemType.Spell
+	IteratePlayerSpellBook = function(callback)
+		for skillLineIndex = 1, C_SpellBook_GetNumSpellBookSkillLines() do
+			local skillLineInfo = C_SpellBook_GetSpellBookSkillLineInfo(skillLineIndex)
+			if skillLineInfo then
+				local firstIndex = skillLineInfo.itemIndexOffset + 1
+				local lastIndex = skillLineInfo.itemIndexOffset + skillLineInfo.numSpellBookItems
+				for spellBookItemIndex = firstIndex, lastIndex do
+					local itemInfo = C_SpellBook_GetSpellBookItemInfo(spellBookItemIndex, PLAYER_SPELL_BANK)
+					if itemInfo and itemInfo.itemType == SPELL_ITEM_TYPE and itemInfo.spellID and itemInfo.name then
+						callback(itemInfo.name, itemInfo.spellID)
+					end
+				end
+			end
+		end
+	end
+else
+	---@diagnostic disable: deprecated
+	local GetSpellTabInfo = GetSpellTabInfo
+	local GetNumSpellTabs = GetNumSpellTabs
+	local GetSpellInfo = GetSpellInfo
+	local GetSpellRank = GetSpellRank
+	---@diagnostic enable: deprecated
+	IteratePlayerSpellBook = function(callback)
+		if not GetSpellTabInfo or not GetNumSpellTabs or not GetSpellInfo then return end
+		for spellTabIndex = 1, GetNumSpellTabs() do
+			local _, _, offset, numSlots = GetSpellTabInfo(spellTabIndex)
+			for spellIndex = offset + 1, offset + numSlots do
+				local spellName, _, _, _, _, _, spellID = GetSpellInfo(spellIndex, BOOKTYPE_SPELL)
+				if spellName and spellID then
+					callback(spellName, spellID, GetSpellRank and GetSpellRank(spellID))
+				end
+			end
+		end
+	end
+end
 
 local SpellQuestLinks = {
 	-- double check added Mount spells in Mount.lua [PerCharacterMountSpells/AccountWideMountSpells]
@@ -45,29 +83,32 @@ local SpellQuestOverrides = setmetatable({}, { __index = function(t,key)
 	t[key] = saved
 	return saved
 end})
--- Consolidates some spell checking
+-- Consolidates spell checking without using the deprecated global spell APIs on Retail.
 ---@param spellID number
 ---@return boolean isKnown
 local IsSpellKnownHelper
--- In 11.2 some spell checking was consolidated
-if app.GameBuildVersion >= 110200 then
+if app.IsRetail then
+	local PLAYER_SPELL_BANK = Enum.SpellBookSpellBank.Player
+	local PET_SPELL_BANK = Enum.SpellBookSpellBank.Pet
 	IsSpellKnownHelper = function(spellID)
-		if IsSpellKnown(spellID)
-			or IsSpellKnown(spellID, 1)
-			or IsSpellKnownOrOverridesKnown(spellID, 0, true)
-			or IsSpellKnownOrOverridesKnown(spellID, 1, true)
+		if IsSpellKnown(spellID, PLAYER_SPELL_BANK)
+			or IsSpellKnown(spellID, PET_SPELL_BANK)
+			or IsSpellInSpellBook(spellID, PLAYER_SPELL_BANK, true)
+			or IsSpellInSpellBook(spellID, PET_SPELL_BANK, true)
 			or SpellQuestOverrides[spellID] then
 			return true
 		end
 	end
 else
-	local IsPlayerSpell = IsPlayerSpell;
+	---@diagnostic disable: deprecated
+	local IsPlayerSpell = IsPlayerSpell
+	---@diagnostic enable: deprecated
 	IsSpellKnownHelper = function(spellID)
-		if IsPlayerSpell(spellID)
+		if (IsPlayerSpell and IsPlayerSpell(spellID))
 			or IsSpellKnown(spellID)
 			or IsSpellKnown(spellID, 1)
-			or IsSpellKnownOrOverridesKnown(spellID, 0, true)
-			or IsSpellKnownOrOverridesKnown(spellID, 1, true)
+			or IsSpellInSpellBook(spellID, 0, true)
+			or IsSpellInSpellBook(spellID, 1, true)
 			or SpellQuestOverrides[spellID] then
 			return true
 		end
@@ -182,7 +223,6 @@ do
 	function(t) return t.itemID end)
 
 	-- Spell Rank Handling
-	local GetSpellRank = GetSpellRank;
 	local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 	local function CacheRankForSpell(spellID, rank)
 		if rank then
@@ -235,33 +275,17 @@ do
 		for specID,spellID in pairs(app.SkillDB.SpecializationSpells) do
 			GetSpellName(spellID);
 		end
-		if GetSpellTabInfo then
-			local lastSpellName, currentSpellRank, lastSpellRank = "", 1, 1;
-			for spellTabIndex=1,GetNumSpellTabs() do
-				local offset, numSlots = select(3, GetSpellTabInfo(spellTabIndex));
-				for spellIndex=offset+1,offset+numSlots do
-					local spellName, _, _, _, _, _, spellID = GetSpellInfo(spellIndex, BOOKTYPE_SPELL);
-					if spellName then
-						saved[spellID] = true
-						currentSpellRank = GetSpellRank(spellID);
-						if not currentSpellRank then
-							if lastSpellName == spellName then
-								currentSpellRank = lastSpellRank + 1;
-							else
-								lastSpellName = spellName;
-								currentSpellRank = 1;
-							end
-						end
-						SpellNameToSpellID[spellName] = spellID;
-						local rankedSpell = RankedSpellNames[spellName];
-						rankedSpell[currentSpellRank] = spellID;
-						if (rankedSpell.max or 0) < currentSpellRank then
-							rankedSpell.max = currentSpellRank;
-						end
-					end
+		IteratePlayerSpellBook(function(spellName, spellID, spellRank)
+			saved[spellID] = true
+			SpellNameToSpellID[spellName] = spellID
+			if spellRank then
+				local rankedSpell = RankedSpellNames[spellName]
+				rankedSpell[spellRank] = spellID
+				if (rankedSpell.max or 0) < spellRank then
+					rankedSpell.max = spellRank
 				end
 			end
-		end
+		end)
 
 		-- If we know a higher rank of the spell, then flag all lower ranks of the spell as collected.
 		for spellName,rankedSpell in pairs(RankedSpellNames) do
