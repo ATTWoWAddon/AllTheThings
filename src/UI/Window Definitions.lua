@@ -481,19 +481,18 @@ local function HasExpandedSubgroup(group)
 		end
 	end
 end
-local function HandleExpandSelfAndMatchingSubGroups(group, expanded, progress, total)
+local function HandleExpandSelfAndMatchingSubGroups(group, expanded, remaining)
 	local g = group.g
 	local expanded = expanded or group.expanded
 	if not g or not expanded or app.IsComplete(group) then return end
 
-	progress = progress or group.progress
-	total = total or group.total
+	remaining = remaining or (group.total - group.progress)
 	local o
 	for i=1,#g do
 		o = g[i]
-		if o.progress == progress and o.total == total then
+		if remaining == (o.total - o.progress) then
 			o.expanded = expanded
-			HandleExpandSelfAndMatchingSubGroups(o, expanded, progress, total)
+			HandleExpandSelfAndMatchingSubGroups(o, expanded, remaining)
 			break
 		end
 	end
