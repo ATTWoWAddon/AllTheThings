@@ -9,7 +9,7 @@ local ipairs, rawset, tostring, tinsert = ipairs, rawset, tostring, tinsert;
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
-local GetItemSpell = GetItemSpell;
+local GetItemSpell = app.WOWAPI.GetItemSpell;
 local C_Item_GetItemInventoryTypeByID = C_Item and C_Item.GetItemInventoryTypeByID;
 
 -- Implementation

@@ -50,7 +50,7 @@ app:CreateWindow("WorldQuests", {
 		local MapContainer = app.GetFieldContainer("mapID");
 		local function CreateMapWithStyle(id)
 			local mapObject = app.CreateMap(id, { progress = 0, total = 0 });
-			for _,data in ipairs(MapContainer[id]) do
+			for _,data in app.IterateCachedFieldResults(MapContainer[id]) do
 				if data.mapID and data.icon then
 					mapObject.name = data.name;
 					mapObject.icon = data.icon;
@@ -515,7 +515,6 @@ app:CreateWindow("WorldQuests", {
 						-- common logic
 						local idType = (rewardType or "item").."ID";
 						local thing = { [idType] = itemID };
-						app.EnsureObject(thing)
 						local _cache = app.SearchForField(idType, itemID);
 						for _,data in ipairs(_cache) do
 							-- copy any sourced data for the dungeon reward into the list

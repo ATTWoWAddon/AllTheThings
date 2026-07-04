@@ -41,7 +41,7 @@ app:CreateWindow("Maps", {
 								mapInfo = C_Map_GetMapInfo(mapID),
 								collectible = true,
 								collected = true,
-								statistic = tostring(#cachedMaps),
+								statistic = tostring(app.GetCachedFieldCount(cachedMaps)),
 							});
 							mapObject.sym = {{ "select", "mapID", mapID }};
 							mapsByID[mapID] = mapObject;

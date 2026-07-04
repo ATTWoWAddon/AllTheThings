@@ -53,7 +53,7 @@ local function BuildDataFromCache()
 	-- collect valid id values
 	local ValidKeys, cacheID = {}, nil;
 	for id,groups in pairs(app.GetRawFieldContainer(DataType) or app.EmptyTable) do
-		for index,o in ipairs(groups) do
+		for index,o in app.IterateCachedFieldResults(groups) do
 			cacheID = tonumber(o.modItemID or o[DataType]) or 0;
 			if cacheID ~= 0 then ValidKeys[cacheID] = true; end
 		end

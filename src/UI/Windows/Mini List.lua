@@ -155,6 +155,8 @@ local RetailMapDataStyleMetatable = {
 			end
 			local rootMaps = rootMap and rootMap.maps
 			if rootMaps then
+				-- Never append sub-map entries directly into the central field index.
+				results = ArrayAppend({}, results)
 				local subresults, subMapID
 				for i=1,#rootMaps do
 					subMapID = rootMaps[i]
@@ -333,11 +335,7 @@ local RetailMapDataStyleMetatable = {
 				if mapData.classID then
 					mapData = app.CreateCharacterClass(mapData.classID, mapData);
 				elseif mapData.headerID then
-					if mapData.headerID > 0 then
-						mapData = app.CreateHeader(mapData.headerID, mapData)
-					else
-						mapData = app.CreateCustomHeader(mapData.headerID, mapData)
-					end
+					mapData = app.CreateHeader(mapData.headerID, mapData)
 				else
 					mapData = app.CreateMap(mapData.mapID, mapData);
 				end
@@ -395,11 +393,21 @@ local CachedMapData = setmetatable({}, RetailMapDataStyleMetatable);
 app.GetCachedDataForMapID = function(mapID)
 	return CachedMapData[mapID];
 end
-app.AddEventHandler("OnSettingsNeedsRefresh", function()
-	-- if settings change that require a refresh, wipe cached maps
-	-- TODO: technically, we might only need to completely wipe if the active Fillers are changed
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Mini List maps", function()
+		local entries, children = 0, 0
+		for _,mapData in pairs(CachedMapData) do
+			entries = entries + 1
+			if type(mapData) == "table" and type(mapData.g) == "table" then children = children + #mapData.g end
+		end
+		return entries, children, "maps / immediate child groups"
+	end)
+end
+local function WipeMiniListCache()
 	wipe(CachedMapData)
-end)
+end
+app.AddEventHandler("OnSettingsNeedsRefresh", WipeMiniListCache)
+app.AddEventHandler("OnMemoryCleanup", WipeMiniListCache)
 local function TrySwapFromCache(self)
 	local now = GetTimePreciseSec()
 	-- window to keep cached maps/not re-build & update them
@@ -476,6 +484,22 @@ app:CreateWindow("MiniList", {
 		-- don't allow bad values
 		mapID = tonumber(mapID) or 0
 		-- app.PrintDebug("SetMapID",mapID,force)
+		if app.IsRetail and not force and mapID == self.mapID then
+			self:Show();
+			return;
+		end
+		-- Multiple child/subzone map IDs can point at the exact same consolidated Mini List
+		-- object. Update the effective map ID and reuse the existing rows instead of
+		-- detaching, filling, and updating an identical tree.
+		local equivalentMapData = app.IsRetail and not force and rawget(CachedMapData, mapID);
+		if app.IsRetail and self.data and equivalentMapData == self.data then
+			self.mapID = mapID;
+			self.data.mapID = mapID;
+			self:Show();
+			self:QueueRefresh();
+			if app.ProfileCount then app.ProfileCount("MiniList.EquivalentMapReuse") end
+			return;
+		end
 		if force and mapID ~= 0 then
 			CachedMapData[mapID] = nil
 			self.mapID = nil

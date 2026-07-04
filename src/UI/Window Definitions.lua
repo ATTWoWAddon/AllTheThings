@@ -2351,13 +2351,13 @@ local function BuildWindow(suffix)
 
 	-- Some Window functions should be triggered from ATT events
 	window:AddEventHandler("OnUpdateWindows", function(...)
-		window:Update(...)
+		if app.IsRetail then window:QueueUpdate(...) else window:Update(...) end
 	end, true)
 	window:AddEventHandler("OnRefreshWindows", function(...)
-		window:Refresh(...)
+		if app.IsRetail then window:QueueRefresh(...) else window:Refresh(...) end
 	end, true)
 	window:AddEventHandler("OnRedrawWindows", function()
-		window:Redraw()
+		if app.IsRetail then window:QueueRedraw() else window:Redraw() end
 	end, true)
 	window:AddEventHandler("OnWindowCreated", function()
 		-- ugh the sequencing of things is still so wacky. windows being created before settings exist is still happening
@@ -2635,6 +2635,46 @@ local function BuildWindow(suffix)
 	function window:Redraw()
 		-- app.PrintDebug(self.Suffix,":Redraw")
 		window:DefaultRedraw();
+	end
+
+	-- Global ATT events can request the same window operation several times in one frame
+	-- (collection updates, settings, and map changes often arrive together). Collapse them
+	-- into the strongest pending operation: Update > Refresh > Redraw. Direct/manual calls
+	-- remain immediate, preserving caller expectations.
+	local queuedWindowOperation, queuedWindowForce, queuedWindowTrigger = 0, nil, nil;
+	local function RunQueuedWindowOperation()
+		local operation, force, trigger = queuedWindowOperation, queuedWindowForce, queuedWindowTrigger;
+		queuedWindowOperation, queuedWindowForce, queuedWindowTrigger = 0, nil, nil;
+		if operation == 3 then
+			window:Update(force, trigger);
+		elseif operation == 2 then
+			window:Refresh();
+		elseif operation == 1 then
+			window:Redraw();
+		end
+	end
+	function window:QueueUpdate(force, trigger)
+		if queuedWindowOperation >= 3 and app.ProfileCount then app.ProfileCount("Window.CoalescedUpdate") end
+		queuedWindowOperation = 3;
+		queuedWindowForce = queuedWindowForce or force;
+		queuedWindowTrigger = queuedWindowTrigger or trigger;
+		Callback(RunQueuedWindowOperation);
+	end
+	function window:QueueRefresh()
+		if queuedWindowOperation >= 2 then
+			if app.ProfileCount then app.ProfileCount("Window.CoalescedRefresh") end
+		else
+			queuedWindowOperation = 2;
+		end
+		Callback(RunQueuedWindowOperation);
+	end
+	function window:QueueRedraw()
+		if queuedWindowOperation >= 1 then
+			if app.ProfileCount then app.ProfileCount("Window.CoalescedRedraw") end
+		else
+			queuedWindowOperation = 1;
+		end
+		Callback(RunQueuedWindowOperation);
 	end
 
 	-- Delayed call starts two nested coroutines so that calls can chain, if necessary.

@@ -335,7 +335,14 @@ app:CreateWindow("Tradeskills", {
 						app.PrintDebug("No Missing Recipes!")
 					end
 				end
+				-- Opening a profession is the authoritative per-character recipe scan.
+				-- Invalidate cached tooltip ownership even when no account-wide recipe was new,
+				-- because the character attribution may have changed.
+				if app.InvalidateKnownByCache then app.InvalidateKnownByCache("recipe") end
 			end
+		end
+		if app.ProfileWrap then
+			UpdateLearnedRecipes = app.ProfileWrap("Profession.UpdateLearnedRecipes", UpdateLearnedRecipes)
 		end
 		-- Custom SearchValueCriteria for requireSkill searches
 		local criteria = {

@@ -181,7 +181,7 @@ app:CreateWindow("Achievements", {
 				for i,matches in next,app.GetFieldContainer("achievementID") do
 					if not data.achievements[i] then
 						local mostAccessibleSource;
-						for j,o in ipairs(matches) do
+						for j,o in app.IterateCachedFieldResults(matches) do
 							if o.key == "achievementID" or o.key == "guildAchievementID" then
 								if GetRelativeValue(o, "_hqt") or GetRelativeValue(o, "u") == 1 or o.isStatistic then
 									data.achievements[i] = true;

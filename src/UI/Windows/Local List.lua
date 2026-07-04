@@ -22,8 +22,10 @@ function LocalMapFilter(group)
 	end
 end
 local CachedLocalMapData = setmetatable({}, {
+	__mode = "v",
 	__index = function(cachedLocalMapData, mapID)
 		if mapID then
+			local requestedMapID = mapID;
 			__currentMapID = mapID;
 			local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, LocalMapFilter);
 			if results and #results > 0 then
@@ -49,12 +51,26 @@ local CachedLocalMapData = setmetatable({}, {
 					print("Path: ", mapPath);
 				end
 				print("Please report this to the ATT Discord! Thanks! ", app.Version);
-				cachedLocalMapData[mapID] = false;
+				cachedLocalMapData[requestedMapID] = false;
 				return false;
 			end
 		end
 	end
 });
+
+if app.RegisterMemoryCacheStats then
+	app.RegisterMemoryCacheStats("Local List maps", function()
+		local entries, resultRoots = 0, 0
+		for _,results in pairs(CachedLocalMapData) do
+			entries = entries + 1
+			if type(results) == "table" then resultRoots = resultRoots + #results end
+		end
+		return entries, resultRoots, "maps / result roots"
+	end)
+end
+app.AddEventHandler("OnMemoryCleanup", function()
+	wipe(CachedLocalMapData)
+end)
 
 -- Implementation
 app:CreateWindow("Local List", {

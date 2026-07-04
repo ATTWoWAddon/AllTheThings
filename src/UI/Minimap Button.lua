@@ -5,7 +5,14 @@ local appName, app = ...;
 local DESCRIPTION_SEPARATOR, L = app.DESCRIPTION_SEPARATOR, app.L;
 
 -- Global locals
-local math_floor = math.floor;
+local math_floor, math_atan, math_pi = math.floor, math.atan, math.pi;
+local function atan2(y, x)
+	if x > 0 then return math_atan(y / x); end
+	if x < 0 then return math_atan(y / x) + (y >= 0 and math_pi or -math_pi); end
+	if y > 0 then return math_pi * 0.5; end
+	if y < 0 then return math_pi * -0.5; end
+	return 0;
+end
 
 ---@class ATTGameTooltip
 local GameTooltip = GameTooltip;
@@ -117,8 +124,7 @@ local function CreateMinimapButton()
 		local mx, my = Minimap:GetCenter();
 		local px, py = GetCursorPosition();
 		local scale = Minimap:GetEffectiveScale();
-		---@diagnostic disable-next-line: deprecated
-		position = math.deg(math.atan2((py / scale) - my, (px / scale) - mx)) % 360;
+		position = math.deg(atan2((py / scale) - my, (px / scale) - mx)) % 360;
 		AllTheThingsSavedVariables.MinimapButtonAngle = position;
 		self:Raise();
 		self:update();

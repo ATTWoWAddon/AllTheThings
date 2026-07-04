@@ -91,8 +91,9 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 							local recipes = {};
 							for spellID,sources in pairs(app.GetFieldContainer("spellID")) do
 								if associatedSpellIDs[spellID] and not recipes[spellID] then
-									local count = #sources;
+									local count = app.GetCachedFieldCount(sources);
 									if count > 0 then
+										sources = app.GetCachedFieldResults(sources, true);
 										if count > 1 then
 											-- Find the most accessible version of the thing.
 											app.Sort(sources, app.SortDefaults.Accessibility);
