@@ -31,6 +31,7 @@ local lib = setmetatable({}, {
 -- Local cache
 local select,type,rawget
 	= select,type,rawget
+local allowLegacyAPIs = not app.IsRetail
 app.WOWAPI = lib;
 
 -- Priority API assigner.
@@ -54,15 +55,20 @@ end
 -- System Level APIs
 AssignAPIWrapper("issecretvalue", issecretvalue, function() return false; end);
 
+-- AddOn APIs
+local C_AddOns = C_AddOns
+---@diagnostic disable-next-line: deprecated
+AssignAPIWrapper("GetAddOnMetadata", C_AddOns and C_AddOns.GetAddOnMetadata, allowLegacyAPIs and GetAddOnMetadata);
+
 -- ChatInfo APIs
 local C_ChatInfo = C_ChatInfo
-AssignAPIWrapper("SendChatMessage", C_ChatInfo and C_ChatInfo.SendChatMessage, SendChatMessage);
-AssignAPIWrapper("SendAddonMessage", C_ChatInfo and C_ChatInfo.SendAddonMessage, SendAddonMessage);
+AssignAPIWrapper("SendChatMessage", C_ChatInfo and C_ChatInfo.SendChatMessage, allowLegacyAPIs and SendChatMessage);
+AssignAPIWrapper("SendAddonMessage", C_ChatInfo and C_ChatInfo.SendAddonMessage, allowLegacyAPIs and SendAddonMessage);
 
 -- Currency APIs
 local C_CurrencyInfo = C_CurrencyInfo;
-AssignAPIWrapper("GetCurrencyInfo", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo, GetCurrencyInfo);
-AssignAPIWrapper("GetCurrencyLink", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyLink, GetCurrencyLink);
+AssignAPIWrapper("GetCurrencyInfo", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo, allowLegacyAPIs and GetCurrencyInfo);
+AssignAPIWrapper("GetCurrencyLink", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyLink, allowLegacyAPIs and GetCurrencyLink);
 
 -- Faction APIs
 local C_Reputation = C_Reputation;
@@ -76,36 +82,36 @@ AssignAPIWrapper("GetFactionName",
 	C_Reputation and C_Reputation.GetFactionDataByID and
 	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
 	return factionData and factionData.name end,
-	GetFactionInfoByID);
+	allowLegacyAPIs and GetFactionInfoByID);
 AssignAPIWrapper("GetFactionLore",
 	C_Reputation and C_Reputation.GetFactionDataByID and
 	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
 	return factionData and factionData.description end,
-	GetFactionInfoByID and
+	allowLegacyAPIs and GetFactionInfoByID and
 	function(factionID) return select(2, GetFactionInfoByID(factionID)) end);
 AssignAPIWrapper("GetFactionBonusReputation",
 	C_Reputation and C_Reputation.GetFactionDataByID and
 	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
 	return factionData and factionData.hasBonusRepGain end,
-	GetFactionInfoByID and
+	allowLegacyAPIs and GetFactionInfoByID and
 	function(factionID) return select(15, GetFactionInfoByID(factionID)) end);
 AssignAPIWrapper("GetFactionCurrentReputation",
 	C_Reputation and C_Reputation.GetFactionDataByID and
 	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
 	return factionData and factionData.currentStanding or 0 end,
-	GetFactionInfoByID and
+	allowLegacyAPIs and GetFactionInfoByID and
 	function(factionID) return select(6, GetFactionInfoByID(factionID)) or 0 end);
 AssignAPIWrapper("GetFactionReputationCeiling",
 	C_Reputation and C_Reputation.GetFactionDataByID and
 	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
 	return factionData and (factionData.nextReactionThreshold - factionData.currentReactionThreshold) end,
-	GetFactionInfoByID and
+	allowLegacyAPIs and GetFactionInfoByID and
 	function(factionID) local _, _, _, m, ma = GetFactionInfoByID(factionID) return ma and m and (ma - m) end);
 AssignAPIWrapper("GetFactionReaction",
 	C_Reputation and C_Reputation.GetFactionDataByID and
 	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
 	return factionData and factionData.reaction end,
-	GetFactionInfoByID and
+	allowLegacyAPIs and GetFactionInfoByID and
 	function(factionID) return select(3, GetFactionInfoByID(factionID)) end);
 AssignAPIWrapper("GetFriendshipReputation", C_GossipInfo and C_GossipInfo.GetFriendshipReputation, app.EmptyFunction);
 ---@diagnostic enable: deprecated
@@ -114,15 +120,17 @@ AssignAPIWrapper("GetFriendshipReputation", C_GossipInfo and C_GossipInfo.GetFri
 local C_Item = C_Item;
 local C_ItemSocketInfo = C_ItemSocketInfo;
 ---@diagnostic disable: deprecated
-AssignAPIWrapper("GetItemCount", C_Item and C_Item.GetItemCount, GetItemCount)
-AssignAPIWrapper("GetItemClassInfo", C_Item and C_Item.GetItemClassInfo, GetItemClassInfo)
-AssignAPIWrapper("GetItemIcon", C_Item and C_Item.GetItemIconByID, GetItemIcon)
-AssignAPIWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, GetItemInfoInstant)
-AssignAPIWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant)
-AssignAPIWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, GetItemInfo)
-AssignAPIWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSpecInfo)
+AssignAPIWrapper("GetItemCount", C_Item and C_Item.GetItemCount, allowLegacyAPIs and GetItemCount)
+AssignAPIWrapper("GetItemClassInfo", C_Item and C_Item.GetItemClassInfo, allowLegacyAPIs and GetItemClassInfo)
+AssignAPIWrapper("GetItemIcon", C_Item and C_Item.GetItemIconByID, allowLegacyAPIs and GetItemIcon)
+AssignAPIWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, allowLegacyAPIs and GetItemInfoInstant)
+AssignAPIWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, allowLegacyAPIs and GetItemInfoInstant)
+AssignAPIWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, allowLegacyAPIs and GetItemInfo)
+AssignAPIWrapper("GetDetailedItemLevelInfo", C_Item and C_Item.GetDetailedItemLevelInfo, allowLegacyAPIs and GetDetailedItemLevelInfo)
+AssignAPIWrapper("GetItemSpell", C_Item and C_Item.GetItemSpell, allowLegacyAPIs and GetItemSpell)
+AssignAPIWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, allowLegacyAPIs and GetItemSpecInfo)
 if app.GameBuildVersion >= 70000 then
-	AssignAPIWrapper("IsArtifactRelicItem", C_ItemSocketInfo and C_ItemSocketInfo.IsArtifactRelicItem, IsArtifactRelicItem)
+	AssignAPIWrapper("IsArtifactRelicItem", C_ItemSocketInfo and C_ItemSocketInfo.IsArtifactRelicItem, allowLegacyAPIs and IsArtifactRelicItem)
 end
 if C_Item and C_Item.GetItemLinkByGUID then
 	lib.GetItemLinkByGUID = C_Item.GetItemLinkByGUID;
@@ -134,20 +142,21 @@ end
 ---@diagnostic enable: deprecated
 
 -- Merchant APIs
-local C_MerchantFrame = C_MerchantFrame;
----@diagnostic disable: deprecated
-AssignAPIWrapper("GetMerchantNumItems", C_MerchantFrame and C_MerchantFrame.GetNumItems, GetMerchantNumItems)
-AssignAPIWrapper("GetMerchantItemLink", C_MerchantFrame and C_MerchantFrame.GetItemLink, GetMerchantItemLink)
----@diagnostic enable: deprecated
+-- Midnight 12.0.7 exposes merchant item details through C_MerchantFrame.GetItemInfo,
+-- but item count and item links remain global APIs. C_MerchantFrame.GetNumItems and
+-- C_MerchantFrame.GetItemLink do not exist, so do not gate these valid Retail APIs
+-- behind the non-Retail legacy switch.
+AssignAPIWrapper("GetMerchantNumItems", GetMerchantNumItems)
+AssignAPIWrapper("GetMerchantItemLink", GetMerchantItemLink)
 
 -- Party APIs
 local C_PartyInfo = C_PartyInfo;
 ---@diagnostic disable: deprecated
-AssignAPIWrapper("GetLootMethod", C_PartyInfo and C_PartyInfo.GetLootMethod, GetLootMethod)
-AssignAPIWrapper("SetLootMethod", C_PartyInfo and C_PartyInfo.SetLootMethod, SetLootMethod)
-AssignAPIWrapper("ConvertToRaid", C_PartyInfo and C_PartyInfo.ConvertToRaid, ConvertToRaid)
-AssignAPIWrapper("InviteUnit", C_PartyInfo and C_PartyInfo.InviteUnit, InviteUnit)
-AssignAPIWrapper("LeaveParty", C_PartyInfo and C_PartyInfo.LeaveParty, LeaveParty)
+AssignAPIWrapper("GetLootMethod", C_PartyInfo and C_PartyInfo.GetLootMethod, allowLegacyAPIs and GetLootMethod)
+AssignAPIWrapper("SetLootMethod", C_PartyInfo and C_PartyInfo.SetLootMethod, allowLegacyAPIs and SetLootMethod)
+AssignAPIWrapper("ConvertToRaid", C_PartyInfo and C_PartyInfo.ConvertToRaid, allowLegacyAPIs and ConvertToRaid)
+AssignAPIWrapper("InviteUnit", C_PartyInfo and C_PartyInfo.InviteUnit, allowLegacyAPIs and InviteUnit)
+AssignAPIWrapper("LeaveParty", C_PartyInfo and C_PartyInfo.LeaveParty, allowLegacyAPIs and LeaveParty)
 ---@diagnostic enable: deprecated
 
 -- Quest APIs
@@ -164,13 +173,13 @@ local C_TradeSkillUI = C_TradeSkillUI;
 -- Therefore, lib.GetTradeSkillTexture will always use the implementation of C_TradeSkillUI.GetTradeSkillTexture in all cases.
 -- As a result, the fallback to GetTradeSkillTexture has not been tested and is not guaranteed to work.
 ---@diagnostic disable-next-line: deprecated, undefined-global
-AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, GetTradeSkillTexture);
+AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, allowLegacyAPIs and GetTradeSkillTexture);
 AssignAPIWrapper("GetTradeSkillDisplayName", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillDisplayName, app.EmptyFunction);
 
 -- Specialization APIs
 local C_SpecializationInfo = C_SpecializationInfo
-AssignAPIWrapper("GetSpecialization", C_SpecializationInfo and C_SpecializationInfo.GetSpecialization, GetSpecialization or GetActiveTalentGroup);
-AssignAPIWrapper("GetSpecializationInfo", C_SpecializationInfo and C_SpecializationInfo.GetSpecializationInfo, GetSpecializationInfo);
+AssignAPIWrapper("GetSpecialization", C_SpecializationInfo and C_SpecializationInfo.GetSpecialization, allowLegacyAPIs and (GetSpecialization or GetActiveTalentGroup));
+AssignAPIWrapper("GetSpecializationInfo", C_SpecializationInfo and C_SpecializationInfo.GetSpecializationInfo, allowLegacyAPIs and GetSpecializationInfo);
 
 -- Spell APIs
 local C_Spell = C_Spell;
@@ -182,7 +191,7 @@ local C_Spell = C_Spell;
 -- The C_Spell.GetSpellLink only returns SpellLink.
 -- For performance reasons, lib.GetSpellLink only returns SpellLink.
 ---@diagnostic disable: deprecated
-AssignAPIWrapper("GetSpellLink", C_Spell and C_Spell.GetSpellLink, GetSpellLink);
+AssignAPIWrapper("GetSpellLink", C_Spell and C_Spell.GetSpellLink, allowLegacyAPIs and GetSpellLink);
 
 -- Warning: The API Wrapper for GetSpellIcon is not completely equivalent.
 -- GetSpellTexture accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
@@ -192,35 +201,36 @@ AssignAPIWrapper("GetSpellLink", C_Spell and C_Spell.GetSpellLink, GetSpellLink)
 -- For performance reasons, lib.GetSpellIcon only returns iconID.
 AssignAPIWrapper("GetSpellIcon",
 	C_Spell and C_Spell.GetSpellTexture,
-	GetSpellTexture);
+	allowLegacyAPIs and GetSpellTexture);
 
 AssignAPIWrapper("GetSpellCooldown",
 C_Spell and C_Spell.GetSpellCooldown and
 	function(spellIdentifier) local t = C_Spell.GetSpellCooldown(spellIdentifier)
 	return t and t.startTime or 0 end,
-	GetSpellCooldown);
+	allowLegacyAPIs and GetSpellCooldown);
 
 -- Warning: The API Wrapper for GetSpellName is not completely equivalent.
 -- GetSpellInfo accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
 -- Currently, only the first type is implemented in C_Spell.
 -- GetSpellInfo accpet both of parameters for compatibility reasons.
 if app.AfterCata then
-	AssignAPIWrapper("GetSpellName", C_Spell and C_Spell.GetSpellName , GetSpellInfo);
+	AssignAPIWrapper("GetSpellName", C_Spell and C_Spell.GetSpellName, allowLegacyAPIs and GetSpellInfo);
 else
-	AssignAPIWrapper("GetSpellName", GetSpellInfo);
+	AssignAPIWrapper("GetSpellName", allowLegacyAPIs and GetSpellInfo);
 end
 
 -- SpellBook APIs
 local C_SpellBook = C_SpellBook
-AssignAPIWrapper("IsSpellKnown", C_SpellBook and C_SpellBook.IsSpellKnown , IsSpellKnown);
-AssignAPIWrapper("IsSpellKnownOrOverridesKnown", C_SpellBook and C_SpellBook.IsSpellInSpellBook , IsSpellKnownOrOverridesKnown);
-AssignAPIWrapper("GetNumSpellTabs", C_SpellBook and C_SpellBook.GetNumSpellBookSkillLines, GetNumSpellTabs);
+AssignAPIWrapper("IsSpellKnown", C_SpellBook and C_SpellBook.IsSpellKnown, allowLegacyAPIs and IsSpellKnown);
+AssignAPIWrapper("IsSpellKnownOrOverridesKnown", C_SpellBook and C_SpellBook.IsSpellInSpellBook, allowLegacyAPIs and IsSpellKnownOrOverridesKnown);
+AssignAPIWrapper("IsSpellInSpellBook", C_SpellBook and C_SpellBook.IsSpellInSpellBook, allowLegacyAPIs and IsSpellKnownOrOverridesKnown);
+AssignAPIWrapper("GetNumSpellTabs", C_SpellBook and C_SpellBook.GetNumSpellBookSkillLines, allowLegacyAPIs and GetNumSpellTabs);
 
 -- Aura APIs
 local C_UnitAuras = C_UnitAuras;
 AssignAPIWrapper("GetPlayerAuraBySpellID",
     C_UnitAuras and C_UnitAuras.GetPlayerAuraBySpellID,
-    GetPlayerAuraBySpellID,
+    allowLegacyAPIs and GetPlayerAuraBySpellID,
 	app.EmptyFunction);
 
 ---@diagnostic enable: deprecated
