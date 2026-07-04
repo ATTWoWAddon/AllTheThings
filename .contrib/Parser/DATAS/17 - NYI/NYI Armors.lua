@@ -4201,14 +4201,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189063),	-- 10.0 QRP Template <Descriptor> Sabatons
 				i(189080),	-- 10.0 QRP Template <Descriptor> Spaulders
 				i(189088),	-- 10.0 QRP Template <Descriptor> Vambraces
-				-- i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
-				-- i(197912),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
-				-- i(197915),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
-				-- i(197914),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
-				-- i(197913),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
-				-- i(197911),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
-				-- i(197910),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
-				-- i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
 				i(197916, {["sourceID"] = 181351 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
 				i(197916, {["sourceID"] = 181373 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
 				i(197916, {["sourceID"] = 181374 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt

@@ -195,12 +195,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						n(264865, {	-- Mercilus
 							["coord"] = { 49.7, 79.2, VAL },
 							["questID"] = 96371,
-							["groups"] = {	-- Hands
-								i(275138),	-- Spore-Handler's Handwraps
-								i(275146),	-- Spore-Membrane Gloves
-								i(275162),	-- Spore-Shined Gloves
-								i(275154),	-- Swamp Trekker's Grips
-							},
 						}),
 						n(264869, {	-- Nelgothar <The Forgotten>
 							["coord"] = { 23.2, 41.9, VAL },
@@ -366,6 +360,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(274850),	-- Mercilus's Chain Waistguard
 								i(274844),	-- Sleetlink Hauberk
 							}),
+							filter(NECK_F, {
+								i(274826),	-- Coiling Smoke Chain
+								i(274827),	-- Draenic Drive Chain
+							}),
 							filter(PLATE, {
 								i(274857),	-- Chitonous Broodmother's Spaulders
 								i(274853),	-- Creature Crushers
@@ -377,8 +375,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(274852),	-- Sleetstone Chestplate
 							}),
 							filter(TRINKET_F, {
-								i(274826),	-- Coiling Smoke Chain
-								i(274827),	-- Draenic Drive Chain
 								i(274890),	-- Enchanted Spore
 								i(274893),	-- Frosty Klaxid Stinger
 								i(274891),	-- Mk XII Gear Drive
