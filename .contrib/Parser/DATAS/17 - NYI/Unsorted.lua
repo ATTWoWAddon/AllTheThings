@@ -1834,18 +1834,6 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(275818),	-- Pinky
 			}),
-			filter(CONSUMABLES, {
-				i(245902),	-- Fleeting Potion of Recklessness
-				i(245903),	-- Fleeting Potion of Recklessness
-				i(245904),	-- Fleeting Potion of Devoured Dreams
-				i(245905),	-- Fleeting Potion of Devoured Dreams
-				i(245910),	-- Fleeting Draught of Rampant Abandon
-				i(245911),	-- Fleeting Draught of Rampant Abandon
-				i(245916),	-- Fleeting Lightfused Mana Potion
-				i(245917),	-- Fleeting Lightfused Mana Potion
-				i(245918),	-- Fleeting Silvermoon Health Potion
-				i(245919),	-- Fleeting Silvermoon Health Potion
-			}),
 			filter(COSMETIC, {
 				i(269751),	-- Artisan Sai
 				i(269752),	-- Nunchuck of the Artisan

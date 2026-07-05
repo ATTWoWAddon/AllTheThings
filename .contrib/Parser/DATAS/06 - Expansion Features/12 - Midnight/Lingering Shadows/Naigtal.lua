@@ -501,7 +501,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						o(659300, {	-- Squirming Mollusk
 							["coords"] = {
+								{ 24.7, 55.0, NAIGTAL },
 								{ 26.3, 47.1, NAIGTAL },
+								{ 37.3, 23.7, NAIGTAL },
+								{ 61.3, 72.1, NAIGTAL },
+								{ 61.5, 71.8, NAIGTAL },
+								{ 72.6, 31.3, NAIGTAL },
 								{ 76.2, 50.7, NAIGTAL },
 								{ 78.4, 68.8, NAIGTAL },
 							},
