@@ -954,9 +954,46 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(147901, {	-- Luminous Starseeker (MOUNT!)
 			["timeline"] = { ADDED_7_3_0 },
 		}),
+		-- #if ANYCLASSIC
+		mount(1224647, {	-- Meeksi Brewrobber (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
+		i(233286, {	-- Meeksi Brewthief (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568", ADDED_11_2_7 },
+		}),
+		-- #if ANYCLASSIC
+		mount(1224643, {	-- Meeksi Gentlepaw (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
+		i(233284, {	-- Meeksi Rollingpaw (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568", ADDED_11_2_7 },
+		}),
+		i(233282, {	-- Meeksi Rufflefur (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568", ADDED_11_2_7 },
+		}),
+		-- #if ANYCLASSIC
+		mount(1224645, {	-- Meeksi Rufflemane (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
+		i(233283, {	-- Meeksi Softpaw (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568", ADDED_11_2_7 },
+		}),
+		-- #if ANYCLASSIC
+		mount(1224596, {	-- Meeksi Teapuff (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
 		i(233285, {	-- Meeksi Teatuft (MOUNT!)
 			["timeline"] = { ADDED_11_1_0 },
 		}),
+		-- #if ANYCLASSIC
+		mount(1224646, {	-- Meeksi Wanderpaw (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
 		i(122469, {	-- Mystic Runesaber (MOUNT!)
 			["timeline"] = { ADDED_6_1_0 },
 		}),
@@ -1136,19 +1173,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_6_2_2, REMOVED_10_1_7 },	-- Removed Oct 31, 2023
 		}),
 		i(221270, {	-- Kickin' Kezan Waveshredder (MOUNT!)
-			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.63305" },	-- Removed September 15, 2025
-		}),
-		i(233286, {	-- Meeksi Brewthief (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
-		}),
-		i(233284, {	-- Meeksi Rollingpaw (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
-		}),
-		i(233282, {	-- Meeksi Rufflefur (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
-		}),
-		i(233283, {	-- Meeksi Softpaw (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
+			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.63305" },
 		}),
 		i(92724, {	-- Swift Windsteed (MOUNT!)
 			["timeline"] = { ADDED_5_1_0, REMOVED_8_1_0 },
