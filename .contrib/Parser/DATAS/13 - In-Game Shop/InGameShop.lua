@@ -1087,7 +1087,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #else
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
-			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
+			["timeline"] = { ADDED_10_0_2 },	-- available on 17 November 2022
 		}),
 		-- #endif
 		i(246920, {	-- Void-Razed Elekk (MOUNT!)
