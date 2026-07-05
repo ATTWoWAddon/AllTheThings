@@ -518,7 +518,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				["coord"] = { 55.7, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					anguish(1200, i(259991)),	-- Lil' Preyseeker (PET!)
-					anguish(800, i(264434)),	-- Voldy (PET!) (TODO: previously quest reward in voidstorm?)
+					anguish(800, i(264434)),	-- Voldy (PET!)
 					anguish(2000, i(257191)),	-- Preyseeker's Hubris (MOUNT!)
 					anguish(2550, i(257192)),	-- Preyseeker's Wrath (MOUNT!)
 					anguish(400, i(258022)),	-- Skilled Preyseeker's Plumed Helm (COSMETIC!)
@@ -555,9 +555,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 							{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
-					}),
-					i(264434, {	-- Voldy (PET!)
-						["cost"] = { { "c", 3392, 800 } },	-- Remnant of Anguish
 					}),
 				},
 			}),
