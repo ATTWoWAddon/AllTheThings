@@ -9,7 +9,6 @@ end
 ------------------
 --- NYI ---
 i(196984, 69184);	-- Cliffside Wylderdrake: Finned Jaw
-i(196993, 69193);	-- Cliffside Wylderdrake: Sleek Horns
 i(192523, 69590);	-- Renewed Proto-Drake: Green Scales
 i(197356, 69557);	-- Renewed Proto-Drake: Hairy Back
 i(197354, 69555);	-- Renewed Proto-Drake: Horned Back
@@ -424,10 +423,7 @@ i(197393, 69594);	-- Renewed Proto-Drake: White Scales
 i(197616, 69820);	-- Windborne Velocidrake: White Scales
 i(203354, 73845);	-- Winding Slitherdrake: White Scales
 --- NYI ---
-i(210478, 78399);	-- Flourishing Whimsydrake: Gold and Pink Armor
-i(207757, 77128);	-- Grotto Netherwing Drake: Purple and Silver Armor
 i(211381, 78878);	-- Grotto Netherwing Drake: Violet Scales
-i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
 
 ------------------
 -- PATCH 10.2.5 --
@@ -528,3 +524,12 @@ i(238181, 88820);	-- Delver's Mana-Skimmer Schematic: Energy Thrusters
 i(238182, 88819);	-- Delver's Mana-Skimmer Schematic: Hyperdrive
 i(238179, 88815);	-- Delver's Mana-Skimmer Schematic: Quad Glider
 i(238180, 88817);	-- Delver's Mana-Skimmer Schematic: Void Paint
+
+------------------
+-- PATCH 12.0.7 --
+------------------
+--- DF TIMEWALKING ---
+i(196993, 69193);	-- Cliffside Wylderdrake: Sleek Horns
+i(210478, 78399);	-- Flourishing Whimsydrake: Gold and Pink Armor
+i(207757, 77128);	-- Grotto Netherwing Drake: Purple and Silver Armor
+i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
