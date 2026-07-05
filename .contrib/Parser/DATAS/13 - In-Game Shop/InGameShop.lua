@@ -900,16 +900,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_3 },
 		}),
 		-- #endif
+		-- #if NOT ANYCLASSIC
 		i(97989, {	-- Enchanted Fey Dragon (MOUNT!)
-			["timeline"] = {
-				-- #if ANYCLASSIC
-				CREATED_5_3_0,
-				ADDED_5_5_2,	-- Likely will be released at some point during MOP Classic.
-				-- #else
-				ADDED_5_3_0,
-				-- #endif
-			},
+			["timeline"] = {ADDED_5_3_0 },
 		}),
+		-- #endif
 		mount(307932, {	-- Ensorcelled Everwyrm (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
@@ -921,15 +916,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(457485, {	-- Grizzly Hills Packmaster (MOUNT!)
 			["timeline"] = { ADDED_11_0_2 },
 		}),
+		-- #if NOT ANYCLASSIC
 		i(78924, {	-- Heart of the Aspects (MOUNT!)
-			["timeline"] = {
-				-- #if ANYCLASSIC
-				CREATED_4_3_0,
-				-- #else
-				ADDED_4_3_0,
-				-- #endif
-			},
+			["timeline"] = { ADDED_4_3_0 },
 		}),
+		-- #endif
 		i(239076, {	-- Herald of Sa'bak (MOUNT!)
 			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
 			["timeline"] = { ADDED_11_1_7 },
