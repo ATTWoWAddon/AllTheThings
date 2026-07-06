@@ -4666,6 +4666,7 @@ i(270211, 5027);	-- Furiostraza
 i(270253, 5030);	-- Jaundiced Slitherer
 i(277282, 5115);	-- Kirin Tor Cat
 i(277270, 5114);	-- Kirin Tor Kitty
+i(280540, 5137);	-- Lil' Mon
 i(270191, 5026);	-- Lil'Kruul
 i(277321, 5118);	-- Mewkahen
 i(278572, 5126);	-- Pale Hexscale

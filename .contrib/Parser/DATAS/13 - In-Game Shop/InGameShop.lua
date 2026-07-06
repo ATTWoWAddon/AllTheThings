@@ -1025,6 +1025,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(326390, {	-- Steamscale Incinerator (MOUNT!)
 			["timeline"] = { ADDED_8_3_7 },
 		}),
+		mount(1279352, {	-- Stoneforged Sentinel (MOUNT!)
+			["timeline"] = { ADDED_12_0_7 },
+		}),
 		-- #if AFTER 11.2.0
 		i(246698, {	-- Sunwarmed Furline (MOUNT!)
 			["timeline"] = { ADDED_9_1_0 },
