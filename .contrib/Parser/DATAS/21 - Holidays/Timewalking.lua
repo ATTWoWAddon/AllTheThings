@@ -105,7 +105,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(254694) },	-- Ta'readon's Mount Voucher
 			})),
-			ach(61463, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- Master of the Turbulent Timeways V (automated!)
+			ach(61463, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {	-- Master of the Turbulent Timeways V (automated!)
 				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(258884) },	-- Spawn of Vyranoth (MOUNT!)
 			})),
