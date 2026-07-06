@@ -900,16 +900,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_3 },
 		}),
 		-- #endif
+		-- #if NOT ANYCLASSIC
 		i(97989, {	-- Enchanted Fey Dragon (MOUNT!)
-			["timeline"] = {
-				-- #if ANYCLASSIC
-				CREATED_5_3_0,
-				ADDED_5_5_2,	-- Likely will be released at some point during MOP Classic.
-				-- #else
-				ADDED_5_3_0,
-				-- #endif
-			},
+			["timeline"] = { ADDED_5_3_0 },
 		}),
+		-- #endif
 		mount(307932, {	-- Ensorcelled Everwyrm (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
@@ -921,15 +916,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(457485, {	-- Grizzly Hills Packmaster (MOUNT!)
 			["timeline"] = { ADDED_11_0_2 },
 		}),
+		-- #if NOT ANYCLASSIC
 		i(78924, {	-- Heart of the Aspects (MOUNT!)
-			["timeline"] = {
-				-- #if ANYCLASSIC
-				CREATED_4_3_0,
-				-- #else
-				ADDED_4_3_0,
-				-- #endif
-			},
+			["timeline"] = { ADDED_4_3_0 },
 		}),
+		-- #endif
 		i(239076, {	-- Herald of Sa'bak (MOUNT!)
 			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
 			["timeline"] = { ADDED_11_1_7 },
@@ -963,9 +954,46 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(147901, {	-- Luminous Starseeker (MOUNT!)
 			["timeline"] = { ADDED_7_3_0 },
 		}),
+		-- #if ANYCLASSIC
+		mount(1224647, {	-- Meeksi Brewrobber (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
+		i(233286, {	-- Meeksi Brewthief (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568", ADDED_11_2_7 },
+		}),
+		-- #if ANYCLASSIC
+		mount(1224643, {	-- Meeksi Gentlepaw (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
+		i(233284, {	-- Meeksi Rollingpaw (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568", ADDED_11_2_7 },
+		}),
+		i(233282, {	-- Meeksi Rufflefur (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568", ADDED_11_2_7 },
+		}),
+		-- #if ANYCLASSIC
+		mount(1224645, {	-- Meeksi Rufflemane (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
+		i(233283, {	-- Meeksi Softpaw (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568", ADDED_11_2_7 },
+		}),
+		-- #if ANYCLASSIC
+		mount(1224596, {	-- Meeksi Teapuff (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
 		i(233285, {	-- Meeksi Teatuft (MOUNT!)
 			["timeline"] = { ADDED_11_1_0 },
 		}),
+		-- #if ANYCLASSIC
+		mount(1224646, {	-- Meeksi Wanderpaw (MOUNT!)
+			["timeline"] = { ADDED_5_5_3 },
+		}),
+		-- #endif
 		i(122469, {	-- Mystic Runesaber (MOUNT!)
 			["timeline"] = { ADDED_6_1_0 },
 		}),
@@ -1062,7 +1090,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #else
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
-			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
+			["timeline"] = { ADDED_10_0_2 },	-- available on 17 November 2022
 		}),
 		-- #endif
 		i(246920, {	-- Void-Razed Elekk (MOUNT!)
@@ -1148,19 +1176,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_6_2_2, REMOVED_10_1_7 },	-- Removed Oct 31, 2023
 		}),
 		i(221270, {	-- Kickin' Kezan Waveshredder (MOUNT!)
-			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.63305" },	-- Removed September 15, 2025
-		}),
-		i(233286, {	-- Meeksi Brewthief (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
-		}),
-		i(233284, {	-- Meeksi Rollingpaw (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
-		}),
-		i(233282, {	-- Meeksi Rufflefur (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
-		}),
-		i(233283, {	-- Meeksi Softpaw (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
+			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.63305" },
 		}),
 		i(92724, {	-- Swift Windsteed (MOUNT!)
 			["timeline"] = { ADDED_5_1_0, REMOVED_8_1_0 },

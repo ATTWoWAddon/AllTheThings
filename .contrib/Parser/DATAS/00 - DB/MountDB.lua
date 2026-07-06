@@ -90,18 +90,17 @@ i(248743, 1247596);	-- Celestial Riding Serpent
 i(248742, 1247598);	-- Celestial Riding Tiger
 i(0, 1257674);		-- Embertuft Groveglider
 i(277652, 1302506);	-- Juvenile Frostwyrm
+i(0, 1224647);		-- Meeksi Brewrobber
+i(0, 1224643);		-- Meeksi Gentlepaw
+i(0, 1224645);		-- Meeksi Rufflemane
+i(0, 1224596);		-- Meeksi Teapuff
+i(0, 1224646);		-- Meeksi Wanderpaw
 i(0, 1257676);		-- Petalbranch Groveglider
 i(0, 1229670);		-- Prophet's Great Crow
 i(0, 1257677);		-- Shadowbough Groveglider
 i(0, 1257673);		-- Snowfall Groveglider
 i(276075, 1298512);	-- Stormcrow
 i(254735, 1258573);	-- Thunderhoof Celestial (CN ONLY)
---- NYI? ---
-i(0, 1224647);	-- Meeksi Brewrobber
-i(0, 1224643);	-- Meeksi Gentlepaw
-i(0, 1224645);	-- Meeksi Rufflemane
-i(0, 1224596);	-- Meeksi Teapuff
-i(0, 1224646);	-- Meeksi Wanderpaw
 
 --- NYI ---
 i(0, 388516);		-- Hao-Yue, River Foreseer
