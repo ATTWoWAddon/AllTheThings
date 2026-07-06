@@ -902,7 +902,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		-- #endif
 		-- #if NOT ANYCLASSIC
 		i(97989, {	-- Enchanted Fey Dragon (MOUNT!)
-			["timeline"] = {ADDED_5_3_0 },
+			["timeline"] = { ADDED_5_3_0 },
 		}),
 		-- #endif
 		mount(307932, {	-- Ensorcelled Everwyrm (MOUNT!)
