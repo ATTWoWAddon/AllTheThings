@@ -7336,7 +7336,7 @@ cu(2025,{requireSkill=165})}}),
 q(66385,{isWeekly=1,providers={{"i",193913}},requireSkill=165,g={
 cu(2025,{requireSkill=165})}}),
 q(70522,{coords={
-[2022]={{79.4,32.5},{80.6,33.8}}},crs={190056,195241,196420},description="Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198975}},requireSkill=165,g={
+[2022]={{79.4,32.5},{80.6,33.8}}},crs={190056,193806,195241,196420},description="Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198975}},requireSkill=165,g={
 cu(2025,{requireSkill=165})}}),
 q(70523,{coords={
 [2025]={{31.3,76.5},{32.4,73.5},{35.4,72.8},{36.6,72.8}}},crs={188277,191203,191317},description="Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",isWeekly=1,providers={{"i",198976}},requireSkill=165,g={
@@ -8000,15 +8000,13 @@ cu(3158,{requireSkill=186})}}),
 q(88678,{isWeekly=1,providers={{"i",237506}},requireSkill=186,g={
 cu(3158,{requireSkill=186})}})}})}})}),
 prof(393,{
+x(7,{requireSkill=393,g={
 h(-12,{awp=100107,requireSkill=393,g={
 ach(18834,{requireSkill=393,g={
 crit(61487,{achID=18834,id=3,providers={{"i",139895}},requireSkill=393}),
 crit(61488,{achID=18834,id=4,providers={{"i",139896}},requireSkill=393}),
 crit(61491,{achID=18834,id=7,providers={{"i",139894}},requireSkill=393}),
 crit(61492,{achID=18834,id=8,providers={{"i",139893}},requireSkill=393})}})}}),
-x(7,{requireSkill=393,g={
-h(-12,{awp=100107,requireSkill=393,g={
-ach(18837,{requireSkill=393})}}),
 ah(247842,{awp=70300,requireSkill=393,type="s",g={
 q(48040,{lvl=45,maps={830,882,885},providers={{"i",151866}},requireSkill=393,g={
 r(247842,{requireSkill=393})}})}}),

@@ -20,7 +20,6 @@ p(248,{awp=30202,b=1,itemID=49665,npcID=36911,petTypeID=1,q=3,rwp=100002,spellID
 p(246,{awp=30302,b=1,description="This item is available only if you purchase the Plush Toy and redeem the code.",itemID=49663,npcID=36909,petTypeID=8,q=3,rwp=80300,spellID=69536,u=2})}}),
 flt(100,{u=3,g={
 mnt(440915,{awp=30403,u=3}),
-mnt(110051,{b=1,itemID=78924,lvl=20,q=4,u=1}),
 mnt(372677,{awp=30400,b=1,itemID=192455,lvl=20,q=4,u=3}),
 mnt(348459,{awp=30400,b=1,itemID=184865,lvl=20,q=4,u=3}),
 mnt(75614,{awp=30303,b=1,itemID=54811,lvl=20,q=4,rwp=100002,u=2}),

@@ -6335,6 +6335,9 @@ q(36646,{lvl=10,qgs={77365},r=2,g={
 i(111366,{b=1})}}),
 q(37571,{lvl=10,qgs={79826},r=1,g={
 i(111366,{b=1})}})}),
+h(-56,{
+o(233899,{
+i(114633,{b=1,f=55,spellID=168207})})}),
 h(-58,{
 n(88607,{r=2,g={
 i(117438,{b=1,f=53,lvl=35,spellID=172775}),
@@ -8420,7 +8423,7 @@ crit(26637,{achID=9527,providers={{"s",169029}}}),
 crit(26631,{achID=9527,id=5,providers={{"s",168343}}}),
 crit(26632,{achID=9527,id=6,providers={{"s",168362}}}),
 crit(26635,{achID=9527,id=7,providers={{"s",168551}}}),
-crit(26633,{achID=9527,id=8,providers={{"s",168207}}}),
+crit(26633,{achID=9527,id=8,providers={{"i",114633}}}),
 crit(26634,{achID=9527,id=9,providers={{"s",170526}}})}})}),
 h(-45,{
 q(37420,{description="Requires Gnomish Gearworks Rank 3.",lvl=10,qgs={84286},r=2}),
@@ -9365,7 +9368,10 @@ q(38257,{coords={
 q(38568,{coords={
 [590]={{39.2,54.9}}},lvl=40,qgs={92400},r=1,sourceQuests={38567,40417}}),
 q(38254,{coords={
-[543]={{52.5,9.8}}},lvl=40,qgs={90180},r=2,sourceQuests={38257}}),
+[543]={{52.5,9.8}}},lvl=40,qgs={90180},r=2,sourceQuests={38257},g={
+o(240518,{coords={
+[543]={{51.5,14.3},{55.4,16.6},{56.6,11.4}}},g={
+i(122516)}})}}),
 q(38570,{coords={
 [543]={{52.5,9.8}}},lvl=40,qgs={89937},r=1,sourceQuests={38568}}),
 q(38255,{coords={
@@ -24201,6 +24207,7 @@ h(-45,{
 q(57067,{coords={
 [1530]={{44.7,73.8}}},lvl=50,qgs={154444}}),
 q(57068,{coords={
+[379]={{55.5,91.1}},
 [1530]={{43.9,4.9}}},lvl=50,qgs={156297},sourceQuests={57067}}),
 q(57718,{coords={
 [1530]={{38.4,75.1}}},isDaily=1,lvl=50,qgs={158673},sourceQuests={56771},g={
@@ -26985,7 +26992,8 @@ s(114186,182498,{customCollect={"SL_COV_NEC"},description="This cloak is only aw
 s(114195,182507,{customCollect={"SL_COV_NEC"},description="This cloak is only awarded to cloth characters.",f=3,lvl=60}),
 s(114204,182516,{customCollect={"SL_COV_NEC"},description="This cloak is only awarded to mail characters.",f=3,lvl=60}),
 i(184205,{b=1,customCollect={"SL_COV_NEC"}}),
-i(184204,{b=1,customCollect={"SL_COV_NEC"}})}}),
+i(184204,{b=1,customCollect={"SL_COV_NEC"}}),
+i(183760,{b=1,customCollect={"SL_COV_NEC"}})}}),
 n(158300,{coords={
 [1536]={{54.3,68.1}}},crs={167157},customCollect={"SL_COV_NEC"},sourceQuests={57597},g={
 s(114189,182501,{customCollect={"SL_COV_NEC"},f=4,lvl=60}),
@@ -33063,10 +33071,10 @@ n(193724,{coords={
 [2022]={{26.6,88.6}}},isDaily=1,minReputation={2503,5},questID=73945})}})}}),
 h(-29,{maps={2022,2023,2024,2025},minReputation={2503,5},g={
 i(194097,{b=1,minReputation={2503,5}}),
-i(194108,{b=1,f=55,minReputation={2503,5},spellID=376438}),
+s(180922,194108,{b=1,collectible=false,f=55,minReputation={2503,5},spellID=376438}),
 i(194086,{b=1,minReputation={2503,5}}),
 i(194085,{b=1,minReputation={2503,5}}),
-i(194099,{f=55,minReputation={2503,5},spellID=389712}),
+s(180919,194099,{collectible=false,f=55,minReputation={2503,5},spellID=389712}),
 i(194092,{b=1,minReputation={2503,5}}),
 q(70906,{isWeekly=1,minReputation={2503,5},g={
 i(200468,{b=1,f=55,lvl=60,minReputation={2503,5},g={
@@ -33287,7 +33295,7 @@ q(72772,{coords={
 i(198864,{b=1,minReputation={2503,22}})}}),
 q(71089,{coords={
 [2023]={{60.4,37.7}}},lvl=10,minReputation={2503,23},qgs={196707},g={
-i(194099,{f=55,minReputation={2503,23},spellID=389712})}}),
+s(180919,194099,{collectible=false,f=55,minReputation={2503,23},spellID=389712})}}),
 q(71090,{coords={
 [2023]={{60.4,37.7}}},lvl=10,minReputation={2503,24},qgs={196707}}),
 q(72297,{coords={

@@ -7323,10 +7323,14 @@ i(50320,{awp=30302,b=1,e=9}),
 i(49641,{awp=30302,b=1,e=9}),
 i(54537,{b=1,e=9,g={
 ach(4627,{e=9,providers={{"i",50250}}}),
-hqt(74957,{awp=100005,e=9,isDaily=1}),
-hqt(86172,{awp=110007,e=9,isDaily=1}),
-hqt(79104,{awp=100205,e=9,isDaily=1}),
-hqt(93466,{awp=120000,e=9,isDaily=1}),
+hqt(74957,{awp=100005,description="This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",e=9,isDaily=1,g={
+i(211413,{b=1,e=9})}}),
+hqt(86172,{awp=110007,description="This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",e=9,isDaily=1,g={
+i(236043,{e=9})}}),
+hqt(79104,{awp=100205,description="This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",e=9,isDaily=1,g={
+s(194126,211438,{e=9,f=2})}}),
+hqt(93466,{awp=120000,description="This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",e=9,isDaily=1,g={
+i(256312,{e=9})}}),
 mnt(71342,{b=1,e=9,itemID=50250,lvl=10}),
 s(24329,49715,{e=9,f=2}),
 p(251,{b=1,e=9,itemID=50446,npcID=38374,spellID=71840}),
@@ -9293,7 +9297,7 @@ i(117394,{awp=60002,b=1,e=11,g={
 s(65955,117373,{b=1,e=11,f=28,spellID=46643}),
 p(253,{awp=30303,b=1,e=11,itemID=53641,npcID=40198,spellID=74932}),
 ill(3273,{awp=70003,b=1,e=11,itemID=138838,questID=42948}),
-hqt(83134,{awp=100207,description="Items under this group only have a chance to drop on your first kill per day for your warband.",e=11,isDaily=1,g={
+hqt(83134,{awp=100207,description="These items are only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",e=11,isDaily=1,g={
 mm(224163,{b=1,e=11,questID=82741}),
 s(292134,244356,{awp=110107,e=11,f=2}),
 s(292192,244422,{awp=110107,e=11,f=29}),
@@ -9538,8 +9542,10 @@ q(82109,{awp=100207,coords={
 [110]={{69.6,42.4}}},e=11,isDaily=1,qgs={26113},qis={34862},r=1,sourceQuests={11923},g={
 i(23247,{b=1,e=11,f=106,spellID=28806})}}),
 q(11882,{awp=20400,coords={
+[37]={{43.6,62.2}},
 [2339]={{47.2,53.6}}},e=11,qgs={25962,240483},r=2}),
 q(11915,{awp=20400,coords={
+[1]={{52.4,47.2}},
 [2339]={{47.2,53.6}}},e=11,qgs={25994,240483},r=1}),
 q(11972,{altQuests={11976},awp=20400,e=11,providers={{"i",35723}},g={
 s(16406,35279,{b=1,e=11,f=9}),
@@ -10010,7 +10016,7 @@ q(11811,{coords={
 i(23247,{b=1,f=106,spellID=28806}),
 crit(3079,{achID=1023,awp=30002,e=11,id=4,r=2})}}),
 q(11812,{coords={
-[66]={{65,17}}},e=11,isYearly=1,qgs={25894},r=2,g={
+[66]={{65,17},{66.1,17.1}}},e=11,isYearly=1,qgs={25894},r=2,g={
 i(23247,{b=1,f=106,spellID=28806}),
 crit(3080,{achID=1023,awp=30002,e=11,id=5,r=2})}}),
 q(13487,{awp=30002,coords={
@@ -10442,7 +10448,7 @@ q(11846,{coords={
 i(23247,{b=1,f=106,spellID=28806}),
 crit(3114,{achID=1026,awp=30002,e=11,id=4,r=1})}}),
 q(11847,{coords={
-[70]={{33,30}}},e=11,isYearly=1,qgs={25930},r=1,g={
+[70]={{33,30},{33.4,30.9}}},e=11,isYearly=1,qgs={25930},r=1,g={
 i(23247,{b=1,f=106,spellID=28806}),
 crit(3115,{achID=1026,awp=30002,e=11,id=5,r=1})}}),
 q(11848,{coords={
@@ -10466,7 +10472,7 @@ q(13497,{awp=30002,coords={
 i(23247,{b=1,f=106,spellID=28806}),
 crit(18182,{achID=6009,awp=40300,e=11,id=8,r=1})}}),
 q(11851,{coords={
-[100]={{55,40}}},e=11,isYearly=1,qgs={25934},r=1,g={
+[100]={{55,40},{57.1,42}}},e=11,isYearly=1,qgs={25934},r=1,g={
 i(23247,{b=1,f=106,spellID=28806}),
 crit(3125,{achID=1027,awp=30002,e=11,id=3,r=1})}}),
 q(11853,{coords={
@@ -10494,7 +10500,7 @@ q(11835,{coords={
 i(23247,{b=1,f=106,spellID=28806}),
 crit(3127,{achID=1027,awp=30002,e=11,id=5,r=1})}}),
 q(11859,{coords={
-[10]={{50,55}}},e=11,isYearly=1,qgs={25943},r=1,g={
+[10]={{50,54.7}}},e=11,isYearly=1,qgs={25943},r=1,g={
 i(23247,{b=1,f=106,spellID=28806}),
 crit(3121,{achID=1026,awp=30002,e=11,id=8,r=1})}}),
 q(28924,{awp=40001,coords={
@@ -15356,7 +15362,7 @@ e(2395,{e=1703,npcID=162691,sym={{"select","itemID",178732,178735,178733,178730,
 e(2391,{e=1703,npcID=163157,sym={{"select","itemID",178737,178742,178739,178738,178740,178741}}}),
 e(2392,{crs={162689,164578},e=1703,sym={{"select","itemID",178750,178744,178748,178772,178751,178743,178745,178749}}}),
 e(2396,{e=1703,npcID=162693,sym={{"select","itemID",178777,178778,178782,178780,178781,178783,178779}}})}})}}),
-x(10,{e=1719})}}),
+x(10,{e=1720})}}),
 h(-38,{awp=70205,e=258,["zone-text-areaID"]=8712,g={
 h(-49,{e=258,g={
 i(151134,{b=1,e=258,f=55}),
