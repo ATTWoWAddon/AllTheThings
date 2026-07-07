@@ -525,6 +525,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
 								["groups"] = { i(274577) },	-- Dark-Ley Coalescence (QI!)
 							}),
+							q(96443, {	-- Seeking Knowledge Week 4 of 5: Magical Primessence
+								["sourceQuests"] = {
+									96831,	-- Magister's Summons
+									96442,	-- Seeking Knowledge Week 3 of 5: Leyline Assaults
+								},
+								["qg"] = 264070,	-- Grand Magister Rommath
+								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+							}),
 						})),
 					}),
 				},

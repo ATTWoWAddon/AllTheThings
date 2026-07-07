@@ -833,18 +833,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(275662, {	-- Frosticus Maximus (PET!)
 							["sourceAchievement"] = 63349,	-- Ultradon Carnage
 							["sourceQuest"] = 95395,	-- Until it is Done
-							["cost"] = { { "g", 1000000 } },	-- 100g
+							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						i(275663, {	-- Silento (PET!)
 							["sourceAchievements"] = {
 								62882,	-- Showdown Success: Naigtal
 								62880,	-- Showdown Success: Val
 							},
-							["cost"] = { { "c", VOIDLIGHT_MARL, 1800 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						i(274650, {	-- Netherforged Nullframe (MOUNT!)
 							["sourceAchievement"] = 62874,	-- A Trip Through the Stars
-							["cost"] = { { "c", VOIDLIGHT_MARL, 4500 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						i(260739, {	-- Swamp Dweller's Night Staff (COSMETIC!)
 							["cost"] = {
@@ -854,11 +854,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						i(275664, {	-- Tortured Gorger (MOUNT!)
 							["sourceAchievement"] = 63264,	-- Heroic Showdowns
-							["cost"] = { { "c", VOIDLIGHT_MARL, 4500 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						i(274649, {	-- Voidmancer's Starcarver (MOUNT!)
 							["sourceAchievement"] = 62873,	-- A Trip Around the Stars
-							["cost"] = { { "c", VOIDLIGHT_MARL, 4500 } },
+							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						-- Consumables
 						i(274772, {	-- Ethereal Bandage

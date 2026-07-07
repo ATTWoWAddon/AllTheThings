@@ -260,8 +260,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 48.5, 81.9, NAIGTAL },
 							},
 							["Level"] = 90,
-							["groups"] = { i(275690) },	-- Riftstalker's Cache
 							["isWeekly"] = true,
+							["groups"] = { i(275690) },	-- Riftstalker's Cache
 						}),
 						q(96718, {	-- Showdown on Naigtal (Heroic)
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
@@ -275,8 +275,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 48.5, 81.9, NAIGTAL },
 							},
 							["Level"] = 90,
-							["groups"] = { i(275691) },	-- Riftstalker's Overflowing Cache
 							["isWeekly"] = true,
+							["groups"] = { i(275691) },	-- Riftstalker's Overflowing Cache
 						}),
 						q(97084, {	-- More Disruption: Naigtal
 							["sourceQuest"] = 96717,	-- Showdown on Naigtal

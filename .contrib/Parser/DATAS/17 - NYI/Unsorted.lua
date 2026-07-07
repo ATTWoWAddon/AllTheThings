@@ -2071,7 +2071,6 @@ root(ROOTS.Unsorted, {
 				i(274640),	-- Arcfluxion Hydrospore
 				i(274783),	-- Fel Embers
 				i(274798),	-- Remote Detonator
-				i(275667),	-- Veilcaster
 				i(275699),	-- Veraan's Soul Lattice Report
 				i(276255),	-- Forgotten Memorial Tribute
 				i(276276),	-- Mana Spore

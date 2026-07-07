@@ -1628,6 +1628,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				i(263462),	-- Thalassian Herbalist's Notes
 			},
 		},{
+			q(93701),	-- Brittle and Brilliant
 			q(93700),	-- Experience Tranquility
 			q(93702),	-- The Root of Life
 			q(93703),	-- Sin'dorei Vices

@@ -21,8 +21,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--q(XXX),	-- A Burning Path Through Time
 				q(93614, { ["timeline"] = { ADDED_12_0_7 } }),	-- A Fel Path Through Time
 				--q(XXX),	-- A Frozen Path Through Time
-				q(93613),	-- A Savage Path Through Time
-				--q(XXX),	-- A Scarred Path Through Time
+				q(93613, { ["timeline"] = { ADDED_12_0_5 } }),	-- A Savage Path Through Time
+				q(93627, { ["timeline"] = { ADDED_12_0_7 } }),	-- A Scarred Path Through Time
 				q(93628),	-- A Shadowed Path Through Time
 				q(93611),	-- A Shattered Path Through Time
 				q(93612, { ["timeline"] = { ADDED_12_0_5 } }),	-- A Shrouded Path Through Time
