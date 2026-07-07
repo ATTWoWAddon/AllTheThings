@@ -8577,4 +8577,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(92856, { ["timeline"] = { ADDED_11_2_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways IV (spellID 1258528)
 		})),
 	})),
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
+		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
+			q(93509),	-- Gain Mastery of Timeways for 4 weeks during Turbulent Timeways V (spellID 1269518)
+		})),
+	})),
 });
