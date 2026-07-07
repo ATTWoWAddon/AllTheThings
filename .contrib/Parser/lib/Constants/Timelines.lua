@@ -293,9 +293,9 @@ REMOVED_2_5_5 = "removed 2.5.5.65340";					-- The Burning Crusade Classic Pre-pa
 CREATED_2_5_5_PHASE_2 = "created 2.5.5.67511";			-- The Burning Crusade Classic 2.5.5 phase 2 launch on May 14th, 2026
 ADDED_2_5_5_PHASE_2 = "added 2.5.5.67511";				-- The Burning Crusade Classic 2.5.5 phase 2 launch on May 14th, 2026
 REMOVED_2_5_5_PHASE_2 = "removed 2.5.5.67511";			-- The Burning Crusade Classic 2.5.5 phase 2 launch on May 14th, 2026
-CREATED_2_5_6 = "created 2.5.6";						-- TODO: IN PTR
-ADDED_2_5_6 = "added 2.5.6";							-- TODO: IN PTR
-REMOVED_2_5_6 = "removed 2.5.6";						-- TODO: IN PTR
+CREATED_2_5_6 = "created 2.5.6.68502";					-- The Burning Crusade Classic 2.5.6 launch on June 7th, 2026
+ADDED_2_5_6 = "added 2.5.6.68502";						-- The Burning Crusade Classic 2.5.6 launch on June 7th, 2026
+REMOVED_2_5_6 = "removed 2.5.6.68502";					-- The Burning Crusade Classic 2.5.6 launch on June 7th, 2026
 --- DYNAMIC CLASSIC TIMELINES ---
 REMOVED_TBC_PHASE_TWO = REMOVED_2_5_5_PHASE_2;
 
