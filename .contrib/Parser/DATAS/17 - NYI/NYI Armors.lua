@@ -7077,19 +7077,16 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			})),
 			filter(CLOAKS, {
 				i(276799, {["modID"] = 4 }),	-- Riftstalker's Shade Cloak
-				i(276799, {["modID"] = 3 }),	-- Riftstalker's Shade Cloak
 				i(276799, {["modID"] = 5 }),	-- Riftstalker's Shade Cloak
 			}),
 			filter(CLOTH, {
 				i(276794, {["modID"] = 4 }),	-- Archmage's Cord of Light
-				i(276794, {["modID"] = 3 }),	-- Archmage's Cord of Light
 				i(276794, {["modID"] = 5 }),	-- Archmage's Cord of Light
 				i(276794, {["bonusID"] = 6894 }),	-- Archmage's Cord of Light
 				i(276794, {["bonusID"] = 6895 }),	-- Archmage's Cord of Light
 				i(276794, {["bonusID"] = 6896 }),	-- Archmage's Cord of Light
 				i(276794, {["bonusID"] = 6897 }),	-- Archmage's Cord of Light
 				i(276788, {["modID"] = 4 }),	-- Kifaan's Spare Bindings
-				i(276788, {["modID"] = 3 }),	-- Kifaan's Spare Bindings
 				i(276788, {["modID"] = 5 }),	-- Kifaan's Spare Bindings
 				i(276788, {["bonusID"] = 6894 }),	-- Kifaan's Spare Bindings
 				i(276788, {["bonusID"] = 6895 }),	-- Kifaan's Spare Bindings
@@ -7098,14 +7095,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			filter(LEATHER, {
 				i(276792, {["modID"] = 4 }),	-- Belt of the Illidari Vanguard
-				i(276792, {["modID"] = 3 }),	-- Belt of the Illidari Vanguard
 				i(276792, {["modID"] = 5 }),	-- Belt of the Illidari Vanguard
 				i(276792, {["bonusID"] = 6894 }),	-- Belt of the Illidari Vanguard
 				i(276792, {["bonusID"] = 6895 }),	-- Belt of the Illidari Vanguard
 				i(276792, {["bonusID"] = 6896 }),	-- Belt of the Illidari Vanguard
 				i(276792, {["bonusID"] = 6897 }),	-- Belt of the Illidari Vanguard
 				i(276790, {["modID"] = 4 }),	-- Runed Illidari Wraps
-				i(276790, {["modID"] = 3 }),	-- Runed Illidari Wraps
 				i(276790, {["modID"] = 5 }),	-- Runed Illidari Wraps
 				i(276790, {["bonusID"] = 6894 }),	-- Runed Illidari Wraps
 				i(276790, {["bonusID"] = 6895 }),	-- Runed Illidari Wraps
@@ -7114,14 +7109,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			filter(MAIL, {
 				i(276793, {["modID"] = 4 }),	-- Longshot's Fletched Girdle
-				i(276793, {["modID"] = 3 }),	-- Longshot's Fletched Girdle
 				i(276793, {["modID"] = 5 }),	-- Longshot's Fletched Girdle
 				i(276793, {["bonusID"] = 6894 }),	-- Longshot's Fletched Girdle
 				i(276793, {["bonusID"] = 6895 }),	-- Longshot's Fletched Girdle
 				i(276793, {["bonusID"] = 6896 }),	-- Longshot's Fletched Girdle
 				i(276793, {["bonusID"] = 6897 }),	-- Longshot's Fletched Girdle
 				i(276787, {["modID"] = 4 }),	-- Reinforced Expedition Bands
-				i(276787, {["modID"] = 3 }),	-- Reinforced Expedition Bands
 				i(276787, {["modID"] = 5 }),	-- Reinforced Expedition Bands
 				i(276787, {["bonusID"] = 6894 }),	-- Reinforced Expedition Bands
 				i(276787, {["bonusID"] = 6895 }),	-- Reinforced Expedition Bands
@@ -7130,14 +7123,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			filter(PLATE, {
 				i(276789, {["modID"] = 4 }),	-- Lightveil Watcher's Vambraces
-				i(276789, {["modID"] = 3 }),	-- Lightveil Watcher's Vambraces
 				i(276789, {["modID"] = 5 }),	-- Lightveil Watcher's Vambraces
 				i(276789, {["bonusID"] = 6894 }),	-- Lightveil Watcher's Vambraces
 				i(276789, {["bonusID"] = 6895 }),	-- Lightveil Watcher's Vambraces
 				i(276789, {["bonusID"] = 6896 }),	-- Lightveil Watcher's Vambraces
 				i(276789, {["bonusID"] = 6897 }),	-- Lightveil Watcher's Vambraces
 				i(276791, {["modID"] = 4 }),	-- Tala'saan's Training Belt
-				i(276791, {["modID"] = 3 }),	-- Tala'saan's Training Belt
 				i(276791, {["modID"] = 5 }),	-- Tala'saan's Training Belt
 				i(276791, {["bonusID"] = 6894 }),	-- Tala'saan's Training Belt
 				i(276791, {["bonusID"] = 6895 }),	-- Tala'saan's Training Belt

@@ -102,7 +102,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["timeline"] = { ADDED_12_0_7 },
 							["groups"] = sharedData({ ["modID"] = 6 }, {
 								i(277554),	-- Void Commander's Emblem (QI!)
-								--
+								-- Mythic appearances
 								i(276794),	-- Archmage's Cord of Light
 								i(276792),	-- Belt of the Illidari Vanguard
 								i(276788),	-- Kifaan's Spare Bindings
@@ -112,6 +112,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								i(276799),	-- Riftstalker's Shade Cloak
 								i(276790),	-- Runed Illidari Wraps
 								i(276791),	-- Tala'saan's Training Belt
+								-- Automatically rewards all Normal version appearances
+								i(276794, {["modID"] = 3 }),	-- Archmage's Cord of Light
+								i(276792, {["modID"] = 3 }),	-- Belt of the Illidari Vanguard
+								i(276788, {["modID"] = 3 }),	-- Kifaan's Spare Bindings
+								i(276789, {["modID"] = 3 }),	-- Lightveil Watcher's Vambraces
+								i(276793, {["modID"] = 3 }),	-- Longshot's Fletched Girdle
+								i(276787, {["modID"] = 3 }),	-- Reinforced Expedition Bands
+								i(276799, {["modID"] = 3 }),	-- Riftstalker's Shade Cloak
+								i(276790, {["modID"] = 3 }),	-- Runed Illidari Wraps
+								i(276791, {["modID"] = 3 }),	-- Tala'saan's Training Belt
 							}),
 						}),
 						q(97072, {	-- A Swampy Welcome to Naigtal
