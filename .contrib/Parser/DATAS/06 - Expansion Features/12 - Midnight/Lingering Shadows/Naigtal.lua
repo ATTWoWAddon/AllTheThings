@@ -736,9 +736,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(96679),	-- Completes with 'Bouncy Mushrooms' (questID 96744)
 				q(96680),	-- Completes with 'Aerospores' (questID 96745)
 				q(96681),	-- Completes with 'The Grappler' (questID 96845)
-				q(97473),	-- Looting 'Void Commander's Emblem' (itemID 277554) for 'Knocking Off the Top' (questID 97256)
 				q(95888),	-- Completes with 'Marsh Mana Spores' (questID 95888)
 				q(95889),	-- Completes with 'Forest Mana Spores' (questID 95575)
+				q(97473),	-- Looting 1st 'Void Commander's Emblem' (itemID 277554) for 'Knocking Off the Top' (questID 97256)
+				q(97474),	-- Looting 2nd 'Void Commander's Emblem' (itemID 277554) for 'Knocking Off the Top' (questID 97256)
+				q(97475),	-- Looting 3rd 'Void Commander's Emblem' (itemID 277554) for 'Knocking Off the Top' (questID 97256)
+				q(97476),	-- Looting 4th 'Void Commander's Emblem' (itemID 277554) for 'Knocking Off the Top' (questID 97256)
 			}),
 		},
 	}),

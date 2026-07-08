@@ -431,3 +431,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 		}),
 	}),
 }));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(VAL, {
+		["timeline"] = { ADDED_12_0_7 },
+		["groups"] = {
+			n(QUESTS, {
+				q(96944),	-- Completes with 'Showdown on Val' (questID 96713)
+				q(97218),	-- Completes with 'Showdown on Val (Heroic)' (questID 96714)
+			}),
+		},
+	}),
+}));
