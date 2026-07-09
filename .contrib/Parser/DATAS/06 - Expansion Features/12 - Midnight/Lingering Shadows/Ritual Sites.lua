@@ -6,16 +6,16 @@ local FIELD_ACCOLADE = 3405;
 local DARK_PARTICLE = 267051;
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
-	["groups"] = sharedData({
+	n(LINGERING_SHADOWS, {
 		["timeline"] = { ADDED_12_0_5 },
-	}, {
-		header(HEADERS.Achievement, 41052, {	-- Lingering Shadows
+		["groups"] = {
 			n(RITUAL_SITES, {
 				faction(FACTION_RITUAL_SITES),
-				m(BROKEN_THRONE, {
-					["icon"] = 7578705,
+				n(BROKEN_THRONE_RS, {
+					["description"] = "The Broken Throne, also known as Atal'Kaldan, is an Amani ruin that has been taken over by the Twilight's Blade as their base of operations in the region.",
 					["cr"] = 260104,	-- Curious Obelisk
 					["coord"] = { 29.6, 77.9, MAP.MIDNIGHT.ZULAMAN },
+					["maps"] = { BROKEN_THRONE },
 					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(62537),	-- Neighborhood Ritual Team: Broken Throne
@@ -62,10 +62,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 					},
 				}),
-				m(DAGGERSPINE_POINT, {
-					["icon"] = 3012072,
+				n(DAGGERSPINE_POINT_RS, {
+					["description"] = "Daggerspine Point is an island that has been claimed by the Daggerspine naga and serves as their base of operations. It was formerly named Shalandis Isle. ",
 					["cr"] = 260103,	-- Curious Obelisk
 					["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["maps"] = { DAGGERSPINE_POINT },
 					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(62539),	-- Neighborhood Ritual Team: Daggerspine Point
@@ -289,57 +290,55 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					q(95548, {	-- Tainted Sample
 						["provider"] = { "i", 270562 },	-- Tainted Sample (QS!/QI!)
 					}),
-					q(96728, {	-- Ritual Site Studies: Week 1 of 3
-						["qgs"] = {
-							257416, -- Lady Darkglen
-							267813, -- Image of Lady Darkglen
-						},
-						["timeline"] = { ADDED_12_0_7 },
-						["coords"] = {
-							{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
-							{ 37.5, 65.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-						},
-					}),
-					q(96729, {	-- Ritual Site Studies: Week 2 of 3
-						["sourceQuest"] = 96728,	-- Ritual Site Studies: Week 1 of 3
-						["qgs"] = {
-							257416, -- Lady Darkglen
-							267813, -- Image of Lady Darkglen
-						},
-						["timeline"] = { ADDED_12_0_7 },
-						["coords"] = {
-							{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
-							{ 37.5, 65.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-						},
-					}),
-					q(96730, {	-- Ritual Site Studies: Week 3 of 3
-						["sourceQuest"] = 96729,	-- Ritual Site Studies: Week 2 of 3
-						["qgs"] = {
-							257416, -- Lady Darkglen
-							267813, -- Image of Lady Darkglen
-						},
-						["timeline"] = { ADDED_12_0_7 },
-						["coords"] = {
-							{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
-							{ 37.5, 65.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-						},
-					}),
-					q(96731, {	-- Advanced Ritual Site Studies: Week 4 of 6
-						["sourceQuest"] = 96730,	-- Ritual Site Studies: Week 3 of 3
-						["qgs"] = {
-							257416, -- Lady Darkglen
-							267813, -- Image of Lady Darkglen
-						},
-						["timeline"] = { ADDED_12_0_7 },
-						["coords"] = {
-							{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
-							{ 37.5, 65.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-						},
-					}),
+					header(HEADERS.Achievement, 63182, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- Advanced Ritual Site Studies
+						q(96728, {	-- Ritual Site Studies: Week 1 of 3
+							["qgs"] = {
+								257416, -- Lady Darkglen
+								267813, -- Image of Lady Darkglen
+							},
+							["coords"] = {
+								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
+								{ 37.5, 65.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+						}),
+						q(96729, {	-- Ritual Site Studies: Week 2 of 3
+							["sourceQuest"] = 96728,	-- Ritual Site Studies: Week 1 of 3
+							["qgs"] = {
+								257416, -- Lady Darkglen
+								267813, -- Image of Lady Darkglen
+							},
+							["coords"] = {
+								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
+								{ 37.5, 65.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+						}),
+						q(96730, {	-- Ritual Site Studies: Week 3 of 3
+							["sourceQuest"] = 96729,	-- Ritual Site Studies: Week 2 of 3
+							["qgs"] = {
+								257416, -- Lady Darkglen
+								267813, -- Image of Lady Darkglen
+							},
+							["coords"] = {
+								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
+								{ 37.5, 65.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+						}),
+						q(96731, {	-- Advanced Ritual Site Studies: Week 4 of 6
+							["sourceQuest"] = 96730,	-- Ritual Site Studies: Week 3 of 3
+							["qgs"] = {
+								257416, -- Lady Darkglen
+								267813, -- Image of Lady Darkglen
+							},
+							["coords"] = {
+								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
+								{ 37.5, 65.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 47.7, 49.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+						}),
+					})),
 				}),
 				n(TREASURES, {	-- Most of these have the chance to spawn randomly throughout both Daggerspine Point and Broken Throne Ritual Sites, unless noted. Listed coords are only a fraction of possible locations.
 					o(645182, {	-- Crystalline Treasure
@@ -423,7 +422,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					i(DARK_PARTICLE),
 				}),
 			}),
-		}),
+		},
 	}),
 }));
 

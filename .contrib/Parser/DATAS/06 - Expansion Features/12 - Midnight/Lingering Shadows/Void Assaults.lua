@@ -25,10 +25,9 @@ local COSMETIC_AND_LEVELING_BOX_SYM = {
 }
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
-	["groups"] = sharedData({
+	n(LINGERING_SHADOWS, {
 		["timeline"] = { ADDED_12_0_5 },
-	}, {
-		header(HEADERS.Achievement, 41052, {	-- Lingering Shadows
+		["groups"] = {
 			n(VOID_ASSAULTS, {
 				["maps"] = {
 					MAP.MIDNIGHT.EVERSONG_WOODS,
@@ -537,7 +536,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 				},
 			}),
-		}),
+		},
 	}),
 }));
 

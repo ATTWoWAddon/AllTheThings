@@ -5329,6 +5329,9 @@ pn(104479,{cost={{"c",3154,1}},requireSkill=182}),
 pn(104703,{cost={{"c",3154,1}},requireSkill=182}),
 pn(104705,{cost={{"c",3154,1}},requireSkill=182})}}),
 h(-45,{requireSkill=182,sharedDescription="Requires 25 Skill.",g={
+q(93701,{coords={
+[2393]={{48.3,51.4}}},isWeekly=1,lvl=78,qgs={243355},requireSkill=182,g={
+i(263462,{b=1,requireSkill=182,spellID=1270534})}}),
 q(93700,{coords={
 [2393]={{48.3,51.4}}},isWeekly=1,lvl=78,qgs={243355},requireSkill=182,g={
 i(263462,{b=1,requireSkill=182,spellID=1270534})}}),
