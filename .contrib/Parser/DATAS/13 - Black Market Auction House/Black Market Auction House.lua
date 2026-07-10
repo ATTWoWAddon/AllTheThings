@@ -736,6 +736,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		-- #endif
 		-- #if AFTER WOD
 		n(94829, {	-- Zhang Yeoh [Garrison]
+			["skipFill"] = 1,	-- items are not actually available in the Garrison, but we can leave the NPC for tooltips
 			["aqd"] = {
 				["coord"] = { 37.2, 35.8, LUNARFALL },
 			},
