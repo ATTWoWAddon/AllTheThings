@@ -188,7 +188,6 @@ REMOVED_1_15_6 = "removed 1.15.6.58844";					-- World of Warcraft Classic 1.15.6
 CREATED_1_15_7 = "created 1.15.7.60141";					-- World of Warcraft Classic 1.15.7 launch on April 8th, 2025
 ADDED_1_15_7 = "added 1.15.7.60141";						-- World of Warcraft Classic 1.15.7 launch on April 8th, 2025
 REMOVED_1_15_7 = "removed 1.15.7.60141";					-- World of Warcraft Classic 1.15.7 launch on April 8th, 2025
--- ANNIVERSARY --
 CREATED_1_15_8 = "created 1.15.8.63829";					-- World of Warcraft Classic Anniversary 1.15.8 launch on October 21st, 2025
 ADDED_1_15_8 = "added 1.15.8.63829";						-- World of Warcraft Classic Anniversary 1.15.8 launch on October 21st, 2025
 REMOVED_1_15_8 = "removed 1.15.8.63829";					-- World of Warcraft Classic Anniversary 1.15.8 launch on October 21st, 2025
