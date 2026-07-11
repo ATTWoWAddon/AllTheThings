@@ -3,6 +3,6 @@
 ---------------------------------------------------
 --[[root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(WORLD_QUESTS, {
-		i(163036),	-- Polished Pet Charm
+		i(POLISHED_PET_CHARM),	-- Polished Pet Charm
 	}),
 })));--]]

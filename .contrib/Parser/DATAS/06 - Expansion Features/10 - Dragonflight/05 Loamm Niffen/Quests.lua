@@ -45,6 +45,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["lockCriteria"] = { 1, "questID", 75721 },	-- Bartering 101 [Renown 3]
 						["DisablePartySync"] = true,
 						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["groups"] = {
 							i(205964),	-- Small Loammian Supply Pack
 						},

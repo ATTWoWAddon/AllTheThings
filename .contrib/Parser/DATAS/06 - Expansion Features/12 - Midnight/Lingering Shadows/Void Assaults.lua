@@ -494,6 +494,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							q(96831, {	-- Magister's Summons
 								["sourceQuest"] = 96410,	-- Seeking Knowledge: The Omnium Folio
 								["description"] = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",	-- Or will it pop-up on first log-in when eligible?
+								["qg"] = 265903, -- Magister's Missive
+								["coords"] = {
+									{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+									{ 40.2, 72.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+									{ 47.8, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+									{ 50.8, 73.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+								},
 								["isBreadcrumb"] = true,
 								["isWeekly"] = true,	-- Unflags at first relog. This is a breadcrumb for all the 'Seeking Knowledge Week X of 5' quests.	-- Exo
 							}),

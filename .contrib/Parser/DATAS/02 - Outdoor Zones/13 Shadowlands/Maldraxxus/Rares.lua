@@ -136,6 +136,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(181263),	-- Shy Melvin (PET!)
 					i(184280),	-- Dapper Threads
 					i(184224),	-- Dapperling Seeds
+					i(POLISHED_PET_CHARM),
 				},
 			}),
 			n(162797, {	-- Deepscar <Pit Hound>

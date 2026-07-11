@@ -440,7 +440,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["groups"] = {
 								i(271028),	-- Amani War Spear
 								i(271037),	-- Battle Shaman's Ritual Staff
-								i(270997),	-- Blood Oath Tome
 								i(271039),	-- Curved Blade of the Drained Loa
 								i(270998),	-- Fetish of the Vanquished Foe
 								i(270999),	-- Forest Berserker's Hatchet
@@ -461,6 +460,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["cost"] = { { "i", DARK_PARTICLE, 150 } },
 							["timeline"] = { ADDED_12_0_7 },
 							["groups"] = {
+								i(270997),	-- Blood Oath Tome
 								i(271045),	-- Crystal Focus Spellslinger
 								i(271010),	-- Glistening Sin'dorei Twinblade
 								i(271016),	-- Golden Phoenix's Beak

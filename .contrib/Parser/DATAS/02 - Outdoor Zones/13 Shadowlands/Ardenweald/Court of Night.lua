@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}, {	-- Friendly
 								i(180636, {	-- Willowbreeze (PET)
 									["cost"] = {
-										{ "i", 163036, 250 },
+										{ "i", POLISHED_PET_CHARM, 250 },
 										{ "c", GRATEFUL, 5 },
 									},
 								}),
@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 									}),
 									i(182664, {	-- Stemmins (PET!)
 										["cost"] = {
-											{ "i", 163036, 250 },
+											{ "i", POLISHED_PET_CHARM, 250 },
 											{ "c", GRATEFUL, 5 },
 										},
 									}),

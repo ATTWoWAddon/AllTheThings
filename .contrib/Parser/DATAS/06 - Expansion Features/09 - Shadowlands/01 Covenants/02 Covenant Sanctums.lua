@@ -141,7 +141,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					i(182671),	-- Runelight Leaper (PET!)
 					i(180872),	-- Spirited Skyfoal (PET!)
 					-- Pet Currency
-					i(163036),	-- Polished Pet Charm
+					i(POLISHED_PET_CHARM),	-- Polished Pet Charm
 					-- Misc.
 					i(184650),	-- Adventure Campaign Progress
 					i(184631),	-- Adventurer's Enchanting Cache

@@ -2037,9 +2037,7 @@ root(ROOTS.Unsorted, {
 				i(276352),	-- Scuffed Prayer Bangle
 				i(276354),	-- Frozen Fel Core
 				i(276356),	-- Frost-Shredded Demon Cloak
-				i(276360),	-- Etched Ice Chip
 				i(276361),	-- Frost-Calloused Remains
-				i(276362),	-- Lost Glacier Climbing Hooks
 				i(276294),	-- Temporary Alliance Tabard
 				i(276295),	-- Temporary Horde Tabard
 				i(275257),	-- Manaforge Essence
@@ -4234,7 +4232,6 @@ root(ROOTS.Unsorted, {
 			i(170272),	-- War-Torn Memento
 			i(170379),	-- Sunwarmed Sand
 			i(168633),	-- Supplemental Oxygenation Device
-			i(168648),	-- Emergency Anti-Gravity Device
 			i(168913),	-- Regenerative Capacitors
 			i(170252),	-- Pouch of Gangrenous Spores
 			i(170253),	-- Poisoned Whetstone
