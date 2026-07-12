@@ -26195,6 +26195,7 @@ L.QUEST_NAMES = {
 	[97139] = "Stay awhile and listen: Grand Magister Rommath",
 	[97293] = "Stay awhile and listen: Riftblade Maella",
 	[97294] = "Stay awhile and listen: Riftblade Maella",
+	[98350] = "Garsecg weekly reputation obtained.",
 }
 L.SOURCE_NAMES = {
 	[90628] = "Monel-Hardened Breastplate",

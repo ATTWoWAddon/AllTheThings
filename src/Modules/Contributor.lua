@@ -3328,6 +3328,7 @@ MobileDB.GameObject = {
 	[618844] = true,	-- Mislaid Curiosity
 	[619092] = true,	-- Flyer Crate (q:92138)
 	[619677] = true,	-- Sweetsaw Bloom (q:93842)
+	[619683] = true,	-- Guarded Seabird Nest (wq:94574)
 	[619736] = true,	-- Netherstorm Structural Cage
 	[620105] = true,	-- Rookery Cache Key
 	[621526] = true,	-- Cache of L'ura [Seat of Triumvirate]

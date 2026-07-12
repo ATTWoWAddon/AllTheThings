@@ -41,10 +41,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				o(649085, {	-- Brine-Crusted Chest (Ancient Amani Chest)
+					-- Will need to be restructured
+					-- Found this video but it does not work for me, "There is no loot" while trying to loot Bubbling Clam
+					-- https://www.youtube.com/watch?v=Q71cuX71Shw
+					-- i(271815),	-- Luminescent Pearl
+					-- i(271881),	-- Dropped Key
 					["coord"] = { 70.6, 76.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--	["cost"] = 1x Dropped Key
+					--	["cost"] = { { "i", 271881, 1 } },	-- 1x Dropped Key
 					--	["questID"] = XXXXXX,
-					--	["groups"] = {  },
+					["groups"] = {
+						i(274921),	-- Pearl of Jubilation (TOY!)
+						i(276144),	-- Pearl of Jubilation
+					},
 				}),
 				o(642316, {	-- Cracked Skull
 					["coord"] = { 58.1, 43.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -70,13 +78,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(278003) },	-- Forgotten Mask
 				}),
 				o(645549, {	-- Grave of Someone Forgotten
+					-- Will need to be restructured
+					-- Found this video but it does not work for me, Forgotten Soldier did not disappear
+					-- https://www.youtube.com/watch?v=kOQRZnsootw
 					["coord"] = { 67.3, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["providers"] = {
 						{ "n", 263244 },	-- Forgotten Soldier
 						{ "o", 645553 },	-- Nameless Grave
 					},
 					--	["questID"] = XXXXXX,
-					--	["groups"] = {  },
+					["groups"] = {
+						i(279021),	-- Forgotten Memento (TOY!)
+						i(279049),	-- Forgotten Memento
+					},
 				}),
 				o(642071, {	-- Jaktu's Cursed Blade
 					["groups"] = {
@@ -121,7 +135,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					},
 				}),
-				-- Smoldering Incense
+				o(644813, {	-- Smoldering Incense
+					["coord"] = { 29.5, 67.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 95855,
+				}),
 				o(644681, {	-- Stinking Vessel (Intact Vase)
 					["coord"] = { 53.1, 43.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95841,
@@ -141,7 +158,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--["questID"] = XXXXXX,
 				}),
 				header(HEADERS.Object, 648564, {	-- Vul'zahn's Smuggled Treasure
-					["description"] = "Steps must be followed in order to unlock gossip options.\n\n1. Talk to Vul'zahn and ask him if you can have the treasure.\n2. Talk to Witherbark Cook and ask him for the Bowl of Stew.\3. Talk to Apothecary Dezi and ask him to give you a Potion.\n4. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n5. Talk to Vul'zahn, give him the Stew. He will give you the key.\n6. Open the treasure.",
+					["description"] = "Steps must be followed in order to unlock gossip options.\n\n1. Talk to Vul'zahn and ask him if you can have the treasure.\n2. Talk to Witherbark Cook and ask him for the Bowl of Stew.\n3. Talk to Apothecary Dezi and ask him to give you a Potion.\n4. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n5. Talk to Vul'zahn, give him the Stew. He will give you the key.\n6. Open the treasure.",
 					["groups"] = {
 						n(253837, {	-- Apothecary Dezi
 							["coord"] = { 57.2, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -211,7 +228,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 70.0, 66.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 96945,
 				}),
-				q(98307),	-- Zandalari Logbook
+				o(669314, {	-- Zandalari Logbook
+					["coord"] = { 71.9, 44.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 98307,
+				}),
 			}),
 			-- Uncertain
 			o(622048, {	-- Journal of a Literate Lich

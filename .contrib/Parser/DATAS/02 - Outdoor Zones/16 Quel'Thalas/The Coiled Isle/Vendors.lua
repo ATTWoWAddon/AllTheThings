@@ -5,6 +5,12 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		n(VENDORS, {
+			n(256688, {	-- Ata'leki <Spectral Foods Vendor>
+				["coord"] = { 69.6, 52.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["groups"] = {
+					i(280422),	-- Spirit Sprouts
+				},
+			}),
 			n(270399, {	-- Firetender Zab'ni <Decor Specialist>
 				["coord"] = { 58.6, 45.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["groups"] = {
@@ -18,6 +24,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
 					i(279285, {	-- Lost Tortollan Scroll (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					}),
+					i(248962, {	-- Mysterious Voodoo Mask (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(271851, {	-- Oozing Vilescar Barricade (DECOR!)
@@ -37,6 +46,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(266435, {	-- Ki'clak Snack
 						["cost"] = { { "i", 267085, 10 } },	-- Swirling Ectoplasm
 					}),
+				},
+			}),
+			n(258904, {	-- Ya'lami <Spectral Potions Vendor>
+				["coord"] = { 69.8, 52.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["groups"] = {
+					i(280409),	-- Potion of Liquid Undeath
 				},
 			}),
 		}),

@@ -58,7 +58,6 @@ root(ROOTS.Unsorted, {
 			i(265399),	-- Ritually-Charred Bones
 			i(265400),	-- Calcified Turtle Heart
 			i(265402),	-- Fistful of Gnat Wings
-			i(265403),	-- Speckled Seabird Egg
 			i(265620),	-- Rehydrated Zandalari Peppers
 			i(265622),	-- Knotted Swamp Stick
 			i(265626),	-- Shattered Teapot
@@ -796,6 +795,7 @@ root(ROOTS.Unsorted, {
 			i(274537),	-- Shrine of Jan'alai, Loa of Fire
 			i(274539),	-- Shrine of Halazzi, Loa of the Hunt
 			i(274579),	-- Undamaged Trap Needle
+			i(274587),	-- Spotted Killifish
 			i(274588),	-- Toxic Tlhapi
 			i(274589),	-- Ula-tek Snakehead
 			i(274590),	-- Sulfurous Sludgefish
@@ -839,7 +839,6 @@ root(ROOTS.Unsorted, {
 			i(274905),	-- Seaside Straw Umbrella
 			i(274907),	-- Seaside Painted Surfboard
 			i(274909),	-- Seaside Murloc Tiki Totem
-			i(274921),	-- Pearl of Jubilation
 			i(274965),	-- Ancient Curio
 			i(274970),	-- Ancient Curio
 			i(274988),	-- Seaside Tiki Gazebo
@@ -1012,14 +1011,12 @@ root(ROOTS.Unsorted, {
 			i(275978),	-- Delver's Starter Kit
 			i(275986),	-- Delver's Cosmetic Surprise Bag
 			i(275988),	-- Corrosive Victory
-			i(276032),	-- Bad Juju Necklace
 			i(276033),	-- Loa Watcher's Pendant
 			i(276034),	-- Entangling Brood Ring
 			i(276035),	-- Soulcoiler's Signet
 			i(276042),	-- Templetusk Shield
 			i(276043),	-- Vilefang Censer
 			i(276044),	-- Loa-Infused Battlestaff
-			i(276045),	-- Trailblazing Soulblade
 			i(276046),	-- Superclutch Smasher
 			i(276047),	-- Swamp Whomper
 			i(276049),	-- Snakeslayer's Claymore
@@ -1040,7 +1037,6 @@ root(ROOTS.Unsorted, {
 			i(276126),	-- Serpent's Feather
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
-			i(276144),	-- Pearl of Jubilation
 			i(276162),	-- Corroded Soul Crusher
 			i(276163),	-- Apophic Patagia
 			i(276164),	-- Corroded Patagia
@@ -1226,7 +1222,6 @@ root(ROOTS.Unsorted, {
 			i(278050),	-- Corrosive Bijou
 			i(278070),	-- Handful of Esoteric Ingredients
 			i(278084),	-- Handful of Esoteric Ingredients
-			i(278094),	-- Whole Uncursed Liver
 			i(278095),	-- Liver Pulp
 			i(278099),	-- Malt
 			i(278100),	-- Grain
@@ -1413,9 +1408,7 @@ root(ROOTS.Unsorted, {
 			i(279017),	-- [ph] SpiceWitch Legs - Blue
 			i(279018),	-- [ph] SpiceWitch Head - Blue
 			i(279019),	-- [ph] SpiceWitch Shoulders - Blue
-			i(279021),	-- Forgotten Memento
 			i(279022),	-- [ph] Ensemble: SpiceWitch Blue Attire
-			i(279049),	-- Forgotten Memento
 			i(279052),	-- Ancient Amani Mask
 			i(279053),	-- Ancient Amani Mask
 			i(279056),	-- [ph] SpiceWitch Chest - Green

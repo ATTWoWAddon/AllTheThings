@@ -15,6 +15,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(95381, {	-- Fire in the Sky
 					["coord"] = { 54.2, 43.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
+				q(94574, {	-- Egg Thief
+					["coord"] = { 63.2, 38.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["groups"] = {
+						o(619683, {	-- Guarded Seabird Nest
+							i(265403),	-- Speckled Seabird Egg (QI!)
+						}),
+					},
+				}),
 				q(94967, {	-- Ki'clak Snack Attack
 					--["sourceQuest"] = 93906,	-- Untethering the Two
 					["coord"] = { 69.6, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -28,6 +36,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(95429, {	-- Swift of Foot
 					["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
+				q(94573, {	-- The Floor is Larvae
+					["coord"] = { 69.5, 47.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95451, {	-- Who Ordered the Bag of Snakes?
 					["coord"] = { 58.1, 47.7, MAP.MIDNIGHT.THE_COILED_ISLE },

@@ -18,7 +18,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			ach(63640),	-- Explore the Coiled Isle
 			ach(63382),	-- It's Definitely Something
-			ach(63432),	-- Mysterious Mix Master
+			ach(63432, {	-- Mysterious Mix Master
+				i(248962),	-- Mysterious Voodoo Mask (DECOR!)
+			}),
 			skyriding(ach(63428, {	-- Skyriding Glyphs: Blistering Terrace
 				["coord"] = { 42.9, 30.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),

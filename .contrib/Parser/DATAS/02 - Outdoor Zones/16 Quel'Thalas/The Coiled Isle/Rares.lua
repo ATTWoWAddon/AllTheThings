@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(258916, {	-- Garsecg
 				["coord"] = { 69.7, 44.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["questID"] = 94619,
-				--["groups"] = {  },
+				["groups"] = { i(280714) },	-- Hull Render Hauberk
 			}),
 			n(265262, {	-- Hisstara
 				["coord"] = { 43.9, 50.8, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -64,6 +64,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 			n(RARES, {
+				q(98350, {	-- Weekly reputation: Garsecg
+					["name"] = "Garsecg weekly reputation obtained.",
+				}),
 			}),
 		}),
 	}),
