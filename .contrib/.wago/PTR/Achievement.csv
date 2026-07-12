@@ -13064,7 +13064,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Raise a companion to level 90.","Buddy System IX",,61342,-1,-1,41723,15522,0,10,131072,16,614740,0,217047,0,0,0,0
 "Remove credit and rewards for exploiting Hard Mode Delve Boss","Hotfix 99733 Tracking",,61343,-1,-1,0,15531,0,0,1048580,26,136243,0,0,0,0,0,0
 "Discover all of the lore objects found within the Legends of the Haranir relic stories.","Chronicler of the Haranir","Reward: Title: ""Chronicler of the Haranir""",61344,-1,-1,0,15553,0,10,131072,21,3717417,0,217517,0,0,0,0
-"Defeat Crown of the Cosmos after slaying a Fleshy Monstrosity and returning all of its meat to The Emptiness in The Voidspire on Normal difficulty or higher.","We Will, In Fact, See It Again",,61346,2912,-1,0,15566,0,10,0,30,801291,0,217552,0,0,0,0
+"Defeat Crown of the Cosmos after slaying a Fleshy Monstrosity and returning all of its meat to The Emptiness in The Voidspire on Normal difficulty or higher.","We Will, In Fact, See It Again",,61346,2912,-1,0,15566,0,10,0,27,801291,0,217552,0,0,0,0
 ,"<Hidden> Base 12.0 Tender [DNT]","[DNT] 500 Tender Rewarded for Base",61347,-1,-1,0,81,0,0,3276804,49,4696085,0,217599,0,0,0,0
 ,"<Hidden> Heroic 12.0 Tender [DNT]","[DNT] 1000 Tender Rewarded for Heroic or 500 Tender for Upgrade to Heroic",61348,-1,-1,0,81,0,0,3276804,50,4696085,0,217601,0,0,0,0
 ,"<Hidden> Epic 12.0 Tender [DNT]","[DNT] 2000 Tender Rewarded for Epic or 500 Tender for Upgrade from Base to Epic or 500 Tender for Upgrade from Heroic to Epic",61349,-1,-1,0,81,0,0,3276804,51,4696085,0,217603,0,0,0,0
@@ -13081,9 +13081,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat the Lightblinded Vanguard in The Voidspire on Mythic difficulty.","Mythic: Lightblinded Vanguard",,61376,2912,-1,0,15566,0,10,0,17,7448211,0,217663,0,0,0,0
 "Defeat Crown of the Cosmos in The Voidspire on Mythic difficulty.","Mythic: Crown of the Cosmos","Title: Spirebane",61377,2912,-1,0,15566,0,10,0,18,7448205,0,217665,0,0,0,0
 "Defeat Belo'ren, Child of Al'ar in March on Quel'Danas on Mythic difficulty.","Mythic: Belo'ren, Child of Al'ar",,61378,2913,-1,0,15566,0,10,0,19,7448203,0,217667,0,0,0,0
-"Defeat Midnight Falls in March on Quel'Danas on Mythic difficulty.","Mythic: Midnight Falls","Title: Dawnbringer",61379,2913,-1,0,15566,0,10,0,23,7448204,0,217669,0,0,0,0
+"Defeat Midnight Falls in March on Quel'Danas on Mythic difficulty.","Mythic: Midnight Falls","Title: Dawnbringer",61379,2913,-1,0,15566,0,10,0,20,7448204,0,217669,0,0,0,0
 "Complete the raid achievements listed below.","Glory of the Midnight Raider","Mount: Tenebrous Harrower",61380,-1,-1,0,168,0,25,143360,68,7454100,260887,217671,0,0,0,0
-"Defeat Belo'ren, Child of Al'ar after infusing the Sunwell Egg with Light and Void magic in March on Quel'Danas on Normal difficulty or higher.","Eggsistential Crisis",,61381,-1,-1,0,15566,0,10,0,32,135980,0,217673,0,0,0,0
+"Defeat Belo'ren, Child of Al'ar after infusing the Sunwell Egg with Light and Void magic in March on Quel'Danas on Normal difficulty or higher.","Eggsistential Crisis",,61381,-1,-1,0,15566,0,10,0,29,135980,0,217673,0,0,0,0
 "Defeat 15 of the following Prey targets on Normal difficulty.","Prey: Normal Mode II",,61386,-1,-1,61387,15605,0,10,131072,3,3565724,0,217693,0,0,0,0
 "Defeat one of the following Prey targets on Normal difficulty.","Prey: Normal Mode I",,61387,-1,-1,0,15605,0,10,131072,1,3565724,0,217724,0,0,0,0
 "Defeat 15 of the following Prey targets on Hard difficulty. Completing this achievement will also grant the Normal achievement of the same rank.","Prey: Hard Mode II",,61388,-1,-1,61389,15605,0,10,131072,6,3565724,0,217755,0,0,0,0
@@ -13124,7 +13124,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Chase down the mysteries within (and without) Azeroth by completing the following achievements.",Worldsoul-Searching,"Mount Reward: Geargrinder Mk. 11; Decor Reward: Drained Dark Heart of Galakrond",61451,-1,-1,0,15301,0,100,230400,8,5770811,258188,218471,0,0,0,0
 "Complete the optional Zul'Aman storylines listed below.","Sojourner of Zul'Aman",,61452,-1,-1,0,15547,0,10,131072,18,7210235,0,218492,0,0,0,0
 "Complete all of the Zul'Aman achievements listed below.","Making an Amani Out of You",,61453,-1,-1,0,15553,0,25,131072,9,7127505,0,218513,0,0,0,0
-"Defeat Chimaerus after plucking all Corrupted Feathers from Sergeant Quackers and rescuing him from the Aln in The Dreamrift on Normal difficulty or higher.","Falling Between The Quacks",,61454,2939,-1,0,15566,0,10,0,31,4048814,0,218528,0,0,0,0
+"Defeat Chimaerus after plucking all Corrupted Feathers from Sergeant Quackers and rescuing him from the Aln in The Dreamrift on Normal difficulty or higher.","Falling Between The Quacks",,61454,2939,-1,0,15566,0,10,0,28,4048814,0,218528,0,0,0,0
 "Find all of the Shadowpine Songseekers in Zul'aman.","Shadowpine Scattered",,61455,-1,-1,0,15553,0,5,131072,63,6119037,0,218534,0,0,0,0
 ,"Die in Lordaeron or Undercity",,61456,-1,-1,0,15522,0,0,1048576,2,136243,0,218541,0,0,0,0
 "Gain Mastery of Timeways for 4 weeks during the Turbulent Timeways V event.","Master of the Turbulent Timeways V","Mount: Spawn of Vyranoth",61463,-1,-1,0,15454,0,0,131072,4,609811,258884,218588,0,0,0,0
@@ -13154,7 +13154,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Charonus kills (Normal Voidscar Arena)",,61511,2923,-1,0,15542,0,0,1,19,7439626,0,219329,0,0,0,0
 ,"Charonus kills (Heroic Voidscar Arena)",,61512,2923,-1,0,15542,0,0,1,20,7439626,0,219331,0,0,0,0
 ,"Charonus kills (Mythic Voidscar Arena)",,61513,2923,-1,0,15542,0,0,1,21,7439626,0,219333,0,0,0,0
-"Defeat Fallen-King Salhadaar after everyone /kneels to him before the battle starts in The Voidspire on Normal difficulty or higher.","It's Treason Then",,61514,2912,-1,0,15566,0,10,0,27,7137559,0,219335,0,0,0,0
+"Defeat Fallen-King Salhadaar after everyone /kneels to him before the battle starts in The Voidspire on Normal difficulty or higher.","It's Treason Then",,61514,2912,-1,0,15566,0,10,0,24,7137559,0,219335,0,0,0,0
 "Participated in the chorus of the Great Song.","Radiant Singer",,61516,-1,-1,0,81,0,0,133120,274,458228,0,219374,0,0,0,0
 "Unlocked your class set bonuses during Midnight Season 1.","Midnight Season 1: Catalyst Unbound","Reward: Dawnlight Manaflux can drop from additional sources.",61519,-1,-1,0,81,0,0,2048,1,4622294,0,219376,0,0,34,0
 "Explore Harandar, revealing the covered areas of the world map.","Explore Harandar",,61520,-1,-1,0,15553,0,10,131072,6,7385004,0,219433,0,0,0,0
@@ -13403,13 +13403,13 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Find and open all Sturdy Chests hidden throughout Midnight delves.","Midnight: Leave No Treasure Unfound","Title: Treasure Seeker",61901,-1,-1,0,15571,0,25,131072,49,4203076,0,221058,0,0,0,0
 "Complete the Midnight delve achievements listed below.","Glory of the Midnight Delver","Mount: Giganto Manis",61906,-1,-1,0,15571,0,25,143360,50,6025441,257199,221069,0,0,0,0
 "Complete the storylines involving King Mrgl-Mrgl in Borean Tundra, Highmountain, and Zul'Aman.","Mrglgrgl of Grglmrgl","Title: Mrglgrgl of Grglmrgl",61910,-1,-1,0,15547,0,5,131072,12,134169,0,221077,0,0,0,0
-"Defeat Vaelgor & Ezzorak after all players break each Nullzone's tethers within 3 seconds in The Voidspire on Normal difficulty or higher.","Ready, Set, Snap!",,61911,2912,-1,0,15566,0,10,0,28,615099,0,221094,0,0,0,0
+"Defeat Vaelgor & Ezzorak after all players break each Nullzone's tethers within 3 seconds in The Voidspire on Normal difficulty or higher.","Ready, Set, Snap!",,61911,2912,-1,0,15566,0,10,0,25,615099,0,221094,0,0,0,0
 "Construct one of each of the following defenses for the Stormarion Assault.","Anchoring the Defense",,61912,-1,-1,0,15553,0,5,0,45,7431083,0,221137,0,0,0,0
 "Complete all three waves of the Stormarion Assault.","A Singular Problem",,61913,-1,-1,0,15553,0,10,0,46,3610524,0,221142,0,0,0,0
 "Complete the Rage of the Ren'dorei storyline.","Rage of the Ren'dorei","Reward: Void Elf Demon Hunter Unlocked",61916,-1,-1,0,15547,0,10,131072,11,1305156,0,221170,0,0,0,0
 "Get killed by a Fungal Strider.","""Hold aggro, I got this""",,61917,-1,-1,0,81,0,0,133120,5,464342,0,221182,0,0,0,0
 "Finish Stormarion Assault with the Singularity Anchor at 90 percent health or higher.","Ninety Percent is Good Enough",,61922,-1,-1,0,15553,0,10,0,47,464068,0,221224,0,0,0,0
-"Defeat the Lightblinded Vanguard while your entire raid has Maximum Aura in The Voidspire on Normal difficulty or higher.","Aura Farming",,61936,2912,-1,0,15566,0,10,0,29,135872,0,221315,0,0,0,0
+"Defeat the Lightblinded Vanguard while your entire raid has Maximum Aura in The Voidspire on Normal difficulty or higher.","Aura Farming",,61936,2912,-1,0,15566,0,10,0,26,135872,0,221315,0,0,0,0
 "Earn 250,000 Abundance at the Watha'nan Crypts in Eversong Woods.","Abundance: Artisan of Mausoloa",,61937,-1,-1,0,15553,0,5,0,77,132853,0,221291,0,0,0,0
 "Earn 250,000 Abundance at the Loaknit Den in Zul'Aman.","Abundance: Artisan of Loaknit",,61938,-1,-1,0,15553,0,5,0,80,4620680,0,221295,0,0,0,0
 "Earn 250,000 Abundance at the Floaret Grotto in Harandar.","Abundance: Artisan of Floaret",,61939,-1,-1,0,15553,0,5,0,78,4620675,0,221297,0,0,0,0
@@ -13427,12 +13427,12 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Discover the hidden treasures across Eversong Woods.","Treasures of Eversong Woods","Pet: Sootpaw",61960,-1,-1,0,15553,0,5,131072,22,4641307,269028,221369,0,0,0,0
 "Defend all of the runestones in Eversong Woods.","Runestone Rush",,61961,-1,-1,0,15553,0,5,131072,57,134423,0,221379,0,0,0,0
 "Place telescopes on the tallest peaks in Midnight.","Midnight: The Highest Peaks",,62057,-1,-1,0,15553,0,10,131072,1,134442,0,221620,0,0,0,0
-"Defeat Vorasius after every player feeds a hatchling enough to put it to sleep in The Voidspire on Normal difficulty or higher.","Hungry Hungry Hatchlings",,62058,2912,-1,0,15566,0,10,0,26,7126992,0,221690,0,0,0,0
+"Defeat Vorasius after every player feeds a hatchling enough to put it to sleep in The Voidspire on Normal difficulty or higher.","Hungry Hungry Hatchlings",,62058,2912,-1,0,15566,0,10,0,23,7126992,0,221690,0,0,0,0
 "Obtain 600 mounts (usable by a single character).","Insurmountable Collection","Mount: Anu'shalla, Shadow's Guidance",62096,-1,0,15833,15248,0,10,131072,30,7545241,265656,221822,0,0,0,0
 "Obtain 600 mounts (usable by a single character).","Insurmountable Collection","Mount: Anu'shalla, Shadow's Guidance",62103,-1,1,15834,15248,0,10,131072,21,7545241,265656,221824,0,0,0,0
 "Discover the following lore objects across Midnight.","Midnight Lore Hunter",,62104,-1,-1,0,15553,0,5,131072,13,4549135,0,221922,0,0,0,0
 "Complete the Voidstorm world quest ""Precision Excision"" without missing a single shot.","Lysikas Would Be Proud",,62105,-1,-1,0,15547,0,5,0,22,132222,0,221934,0,0,0,0
-"Defeat Imperator Averzian after causing him to destroy your banners in the Voidspire on Normal difficulty or higher.","The Only Winning Move Is Not To Play",,62106,2912,-1,0,15566,0,10,0,25,1141394,0,221936,0,0,0,0
+"Defeat Imperator Averzian after causing him to destroy your banners in the Voidspire on Normal difficulty or higher.","The Only Winning Move Is Not To Play",,62106,2912,-1,0,15566,0,10,0,22,1141394,0,221936,0,0,0,0
 "Perform a /train emote in each of the Training Grounds maps.","Mandatory Training",,62107,-1,-1,0,15575,0,5,131072,7,1103068,0,221938,0,0,0,0
 "Win in each of the following maps in Training Grounds without dying.","Training with Patience",,62108,-1,-1,62109,15575,0,5,131072,9,136106,0,221952,0,0,0,0
 "Win in a Training Grounds without dying.","Training with Patience",,62109,-1,-1,0,15575,0,5,131072,8,136106,0,221956,0,0,0,0
@@ -13605,7 +13605,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Catch a Mythic creature 3 times from Abyss Anglers dives.","Abyss Anglers: The Finest of Fish",,62342,-1,-1,0,15553,0,5,131072,135,4777763,0,223318,0,0,0,0
 "Catch a Mythic creature 6 times from Abyss Anglers dives.","Abyss Anglers: Myths from Beneath",,62343,-1,-1,0,15553,0,5,131072,137,970811,0,223320,0,0,0,0
 "Complete the achievements listed below.","Preying For Midnight","Title: Preyseeker",62351,-1,-1,0,15605,0,30,131072,22,7493985,0,223405,0,0,0,0
-"Get consumed by the Devouring Host in The Voidspire or March on Quel'Danas.","Nothing to See Here",,62352,-1,-1,0,15566,0,10,0,24,4914666,0,223416,0,0,0,0
+"Get consumed by the Devouring Host in The Voidspire or March on Quel'Danas.","Nothing to See Here",,62352,-1,-1,0,15566,0,10,0,21,4914666,0,223416,0,0,0,0
 "Harvest 250 Ironwood Lumber","Classically Trained Lumberjack","Reward: Mounted Lumber Harvesting in Classic Zones",62357,-1,-1,0,15606,0,5,131072,26,7467227,0,223403,0,0,0,0
 "Harvest 250 Olemba Lumber","Outlandish Lumberjack","Reward: Mounted Lumber Harvesting in Burning Crusade Zones",62358,-1,-1,0,15606,0,5,131072,27,7467218,0,223473,0,0,0,0
 "Harvest 250 Coldwind Lumber","Wrathful Lumberjack","Reward: Mounted Lumber Harvesting in Wrath of the Lich King Zones",62359,-1,-1,0,15606,0,5,131072,28,7467230,0,223478,0,0,0,0
@@ -13626,13 +13626,13 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect 5000 Community Coupons.","A Fist Full of Coupons",,62377,-1,-1,62376,15606,0,10,131072,21,466723,0,223509,0,0,0,0
 "Collect 10000 Community Coupons.","A Few Coupons More",,62378,-1,-1,62377,15606,0,10,131072,22,351042,0,223511,0,0,0,0
 "Defeat all of the following Prey targets on any difficulty.","Gotta Hunt Them All",,62383,-1,-1,0,15605,0,10,131072,11,3565724,0,223523,0,0,0,0
-"Fully unlock the Research Console in Voidstorm.","Staring Into The Void","Mount: Lab-grown Stormray",62385,-1,-1,0,15547,0,10,0,2,4914666,260697,224708,0,0,0,0
+"Fully unlock the Research Console in Voidstorm.","Staring Into The Void","Mount: Lab-Grown Stormray",62385,-1,-1,0,15547,0,10,0,2,4914666,260697,224708,0,0,0,0
 "Rally your forces against Xal'atath by completing the achievements below.","Light Up the Night","Mount: Brilliant Petalwing",62386,-1,-1,0,15553,0,40,131072,61,7636523,252011,223795,0,0,0,0
 "Log in during the events heralding the launch of Midnight.","It's Nearly Midnight","Decor Reward: Miniature Replica Dark Portal",62387,-1,-1,0,15274,0,0,10617856,97,7476681,0,223807,0,0,0,0
 "Earn a Five Star Review for your services at the Illicit Rain.","Illicit Rain: Five Stars","Toy: Feeling Fielder Mk. 7",62388,-1,-1,0,15272,0,0,133120,195,3750310,263975,223810,0,0,0,0
 "Proud owner of a Pin-o-Matic Camera.","Craft Your World",,62400,-1,-1,0,15268,0,0,133120,109,7704166,268695,0,0,0,0,0
 "Complete a Prey Hunt in Nightmare Mode while suffering from Lord Viscera's Cat Scratch.","'Tis But A Scratch",,62403,-1,-1,0,15605,0,5,0,2,132140,0,225579,0,0,0,0
-"Defeat Midnight Falls after returning 12 Memories of Alleria back to L'ura in March on Quel'Danas on Normal difficulty or higher.","All the Things She Said",,62406,-1,-1,0,15566,0,10,0,33,7549165,0,223987,0,0,0,0
+"Defeat Midnight Falls after returning 12 Memories of Alleria back to L'ura in March on Quel'Danas on Normal difficulty or higher.","All the Things She Said",,62406,-1,-1,0,15566,0,10,0,30,7549165,0,223987,0,0,0,0
 "Outgrow the use of Adventurer Mistcrests during Midnight Season 2.","Adventurer of the Mist","Character Unlock: Trade Adventurer for Veteran Mistcrests",62410,-1,-1,0,81,0,0,2048,216,7734055,0,224051,0,0,0,0
 "Outgrow the use of Veteran Mistcrests during Midnight Season 2.","Veteran of the Mist","Character Unlock: Trade Veteran for Champion Mistcrests",62411,-1,-1,62410,81,0,0,2048,219,7734063,0,224055,0,0,0,0
 "Outgrow the use of Champion Mistcrests during Midnight Season 2.","Champion of the Mist","Character Unlock: Trade Champion for Hero Mistcrests",62412,-1,-1,62411,81,0,0,2048,222,7734057,0,224059,0,0,0,0
@@ -13909,12 +13909,12 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 ,"Rotmire (Normal Sporefall)",,63234,1592,-1,0,15542,0,0,1,51,0,0,229013,0,0,0,0
 ,"Rotmire (Heroic Sporefall)",,63235,1592,-1,0,15542,0,0,1,52,0,0,229011,0,0,0,0
 ,"Rotmire (Mythic Sporefall)",,63236,1592,-1,0,15542,0,0,1,53,0,0,229019,0,0,0,0
-"Defeat Rotmire in Sporefall on any difficulty.",Rotmire,,63237,1592,-1,0,15566,0,10,131072,34,7852823,0,229023,0,0,0,0
-"Defeat Rotmire in Sporefall on Heroic difficulty.","Heroic: Rotmire",,63240,1592,-1,0,15566,0,10,131072,35,7852823,0,229025,0,0,0,0
-"Defeat Rotmire in Sporefall on Mythic difficulty.","Mythic: Rotmire",,63241,1592,-1,0,15566,0,10,131072,36,7852823,0,229027,0,0,0,0
+"Defeat Rotmire in Sporefall on any difficulty.",Rotmire,,63237,1592,-1,0,15566,0,10,131072,31,7852823,0,229023,0,0,0,0
+"Defeat Rotmire in Sporefall on Heroic difficulty.","Heroic: Rotmire",,63240,1592,-1,0,15566,0,10,131072,32,7852823,0,229025,0,0,0,0
+"Defeat Rotmire in Sporefall on Mythic difficulty.","Mythic: Rotmire",,63241,1592,-1,0,15566,0,10,131072,33,7852823,0,229027,0,0,0,0
 "Defeat Rotmire in Sporefall on Heroic difficulty while in a guild group.","Heroic: Rotmire Guild Run",,63246,1592,-1,0,15570,0,10,61440,11,7852823,0,229033,0,0,0,0
 "Defeat Rotmire in Sporefall on Mythic difficulty while in a guild group.","Mythic: Rotmire Guild Run",,63247,1592,-1,0,15570,0,10,61440,12,7852823,0,229035,0,0,0,0
-"Defeat the Entombed Sentinels after each Sentinel uses Vitriolic Stasis to restore more than half its total health in The Venomous Abyss on Normal difficulty or higher.","Is Venom Stasis A Joke To You?",,63250,3004,-1,0,15566,0,10,0,52,6866618,0,229086,0,0,0,0
+"Defeat the Entombed Sentinels after each Sentinel uses Vitriolic Stasis to restore more than half its total health in The Venomous Abyss on Normal difficulty or higher.","Is Venom Stasis A Joke To You?",,63250,3004,-1,0,15566,0,10,0,49,6866618,0,229086,0,0,0,0
 "Donate to Bar Tab Barrels at taverns and inns in Midnight zones.","A Round on the House in Midnight",,63253,-1,-1,0,162,0,10,131072,14,132622,0,229102,0,0,0,0
 "Complete the raid achievements listed below.","Glory of the Venomous Raider","Mount: Crimson Venomfang",63254,-1,-1,0,168,0,25,143360,69,8039569,275652,229101,0,0,0,0
 ,"[DNT]Midnight Keystone Myth: Season 1 Personal Achievement",,63263,-1,-1,0,15272,0,0,9437188,236,136243,0,228514,0,0,0,0
@@ -13928,7 +13928,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Score a goal with the Kickable Practice Ball in Silvermoon while wearing a Tabard of Participation.",Goal!,"Decor Reward: Prized Orb of Azeroth, Framed Horde Pride and Framed Alliance Pride",63343,-1,-1,0,15268,0,0,131072,120,660531,0,229492,0,0,0,0
 "Defeat 15 rare creatures found in Val or Naigtal on Heroic World Tier.","Heroic Slugger",,63348,-1,-1,0,15610,0,5,131072,39,4554456,0,229606,0,0,0,0
 "Kill 100 enemies while controlling the Ultradon Slayer on the World Quest Until it is Done on Val.","Ultradon Carnage","Pet Reward: Unlock Frosticus Maximus for purchase",63349,-1,-1,0,15610,0,10,131072,31,7388252,0,229776,0,0,0,0
-"Defeat all of the rare creatures found on the Coiled Isle.","Coiled to Strike","Decor Reward: Amani Forge",63358,-1,-1,0,15553,0,10,131072,18,132211,0,229657,0,0,0,0
+"Defeat all of the rare creatures found on the Coiled Isle.","Coiled to Strike","Decor Reward: Amani Forge",63358,-1,-1,0,15553,0,10,132096,18,132211,0,229657,0,0,0,0
 "Discover the hidden treasures across the Coiled Isle.","Treasures of the Coiled Isle","Mount: Auriferous Venomfang",63359,-1,-1,0,15553,0,10,131072,26,7956752,275656,229674,0,0,0,0
 "Defeat 300 Curse Surges on the Coiled Isle.",Cursebreaker,"Title: The Cursebreaker",63381,-1,-1,0,15553,0,10,131072,42,5764919,0,229949,0,0,0,0
 "Become a mother on the Coiled Isle.","It's Definitely Something",,63382,-1,-1,0,15553,0,5,131072,43,136182,0,229813,0,0,0,0
@@ -13937,14 +13937,14 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Complete the following quest lines on Naigtal.","A Hal'hadar Walks into a Swamp",,63385,-1,-1,0,15610,0,10,0,34,1711338,0,229872,0,0,0,0
 "Complete the following quest lines on Val.","Frosty Domanaar Politics",,63386,-1,-1,0,15610,0,10,0,35,6994479,0,229883,0,0,0,0
 "Defeat each of the Curse Surges on the Coiled Isles.","Turn the Surge",,63390,-1,-1,0,15553,0,10,131072,41,5764921,0,229799,0,0,0,0
-"Defeat Sszorak while jumping through each ring that appears in The Venomous Abyss on Normal difficulty or higher.","Jumping Through Hoops",,63391,3004,-1,0,15566,0,10,0,55,1392558,0,229963,0,0,0,0
+"Defeat Sszorak while jumping through each ring that appears in The Venomous Abyss on Normal difficulty or higher.","Jumping Through Hoops",,63391,3004,-1,0,15566,0,10,0,52,1392558,0,229963,0,0,0,0
 "Collect the Skyriding Glyph at the Fangs in the Coiled Isles.","Skyriding Glyphs: The Fangs",,63394,-1,-1,0,15462,0,0,1179648,1827,5926319,0,0,0,0,0,0
 "Discover the following Skyriding Glyphs in the Coiled Isles:","The Coiled Isles Glyph Hunter",,63395,-1,-1,0,15462,0,10,131072,1836,5926319,0,229975,0,0,0,0
-"Defeat Vashnik after killing the Solidified Snake Venom in The Venomous Abyss on Normal difficulty or higher.","Kept You Waiting Huh?",,63397,3004,-1,0,15566,0,0,0,54,133693,0,229980,0,0,0,0
+"Defeat Vashnik after killing the Solidified Snake Venom in The Venomous Abyss on Normal difficulty or higher.","Kept You Waiting Huh?",,63397,3004,-1,0,15566,0,0,0,51,133693,0,229980,0,0,0,0
 "Visit the Candy Buckets in the Midnight zones.","Tricks and Treats of Midnight",,63400,-1,-1,0,158,0,10,131072,31,5222578,0,230071,0,0,0,0
 "Defeat all of the following Prey targets from the Coiled Isle.","Prey: Coiled Nightmares",,63415,-1,-1,0,15605,0,5,131072,53,132211,0,230235,0,0,0,0
 "Complete a Prey Hunt in the Coiled Isle.","That's a Wrap",,63416,-1,-1,0,15605,0,5,131072,54,2399272,0,230240,0,0,0,0
-"Defeat Nek'zali, the Soulcoiler after returning Kupamanduka to the Soulcoil Well in The Venomous Abyss on Normal difficulty or higher.","Well, Well, Little Sky",,63418,3004,-1,0,15566,0,10,0,51,804967,0,230261,0,0,0,0
+"Defeat Nek'zali, the Soulcoiler after returning Kupamanduka to the Soulcoil Well in The Venomous Abyss on Normal difficulty or higher.","Well, Well, Little Sky",,63418,3004,-1,0,15566,0,10,0,48,804967,0,230261,0,0,0,0
 "Collect the Skyriding Glyph at the Forum in the Coiled Isles.","Skyriding Glyphs: The Forum",,63420,-1,-1,0,15462,0,0,1179648,1874,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Forum in the Coiled Isles.","Skyriding Glyphs: The Wreck of Sethralis's Scales",,63421,-1,-1,0,15462,0,0,1179648,1875,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Southern Island in the Coiled Isles.","Skyriding Glyphs: Southern Island",,63422,-1,-1,0,15462,0,0,1179648,1876,5926319,0,0,0,0,0,0
@@ -13955,7 +13955,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Collect the Skyriding Glyph at The Serpent's Tail in the Coiled Isles.","Skyriding Glyphs: The Serpent's Tail",,63427,-1,-1,0,15462,0,0,1179648,1881,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Blistering Terrace in the Coiled Isles.","Skyriding Glyphs: Blistering Terrace",,63428,-1,-1,0,15462,0,0,1179648,1882,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Gate of the Serpent's Eye in the Coiled Isles.","Skyriding Glyphs: Gate of the Serpent's Eye",,63430,-1,-1,0,15462,0,0,1179648,1883,5926319,0,0,0,0,0,0
-"Collect all of the following types of offerings from Ofi's Cauldron.","Mysterious Mix Master",,63432,-1,-1,0,15553,0,5,131072,44,133778,0,230409,0,0,0,0
+"Collect all of the following types of offerings from Ofi's Cauldron.","Mysterious Mix Master","Decor Reward: Mysterious Voodoo Mask",63432,-1,-1,0,15553,0,5,132096,44,133778,0,230409,0,0,0,0
 "Complete the Delver's Journey before Midnight: Season 2 ends.","Midnight: Journey's End (Season 2)",,63433,-1,-1,0,15531,0,0,133120,30,6025441,0,230426,0,0,0,0
 "Raise delve companion Valeera to level 70.","Buddy System VII: Valeera",,63434,-1,-1,40461,15571,0,10,131072,51,236568,0,230430,0,0,0,0
 "Raise delve companion Valeera to level 80.","Buddy System VIII: Valeera",,63435,-1,-1,41537,15571,0,10,131072,52,236569,0,230428,0,0,0,0
@@ -13972,22 +13972,22 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Loot 100 Ossified Relics.","Let Sleeping Skulls Lie",,63457,-1,-1,0,15605,0,5,131072,60,8097232,0,230711,0,0,0,0
 "Collect the appearances of a class set from Midnight Season 2.","Fang Fatale",,63472,-1,-1,0,15259,0,10,131072,60,8039569,0,230749,0,0,0,0
 "Complete one of the achievements or feats of strength listed below:",Sssensational!,"Reward: Insidious Venomstone",63473,-1,-1,0,15259,0,10,131072,61,7966624,0,230751,0,0,0,0
-"Defeat Ula'tek in the Venomous Abyss on Mythic difficulty.","Mythic: Ula'tek","Title: Venom's End",63476,3004,-1,0,15566,0,10,131072,50,7966624,0,230755,0,0,0,0
+"Defeat Ula'tek in the Venomous Abyss on Mythic difficulty.","Mythic: Ula'tek","Title: Venom's End",63476,3004,-1,0,15566,0,10,131072,47,7966624,0,230755,0,0,0,0
 "Reach 2500 Midnight Anglin' Score in the Fishing Journal.","The Briny Best","Title: Briny",63510,-1,-1,0,171,0,10,131072,100,236575,0,230757,0,0,0,0
 "Fish up all 10 artifacts from Tokka's departed crewmates on the Coiled Isle.","Treasures of the Damned",,63512,-1,-1,0,171,0,10,131072,101,1542849,0,230825,0,0,0,0
-"Defeat the following bosses on Heroic difficulty.","Heroic: The Venomous Abyss",,63520,3004,-1,63521,15566,0,10,131072,41,8039569,0,230855,0,0,0,0
-"Defeat the following bosses on any difficulty.","The Venomous Abyss",,63521,3004,-1,0,15566,0,10,131072,40,8039569,0,230864,0,0,0,0
-"Defeat the following bosses on Mythic difficulty.","Mythic: The Venomous Abyss",,63522,3004,-1,63520,15566,0,10,131072,42,8039569,0,230873,0,0,0,0
-"Defeat Nek'zali the Soulcoiler in The Venomous Abyss on Mythic difficulty.","Mythic: Nek'zali the Soulcoiler",,63523,3004,-1,0,15566,0,10,0,43,7966621,0,230882,0,0,0,0
-"Defeat the Entombed Sentinels in The Venomous Abyss on Mythic difficulty.","Mythic: Entombed Sentinels",,63524,3004,-1,0,15566,0,10,0,44,7966620,0,230884,0,0,0,0
-"Defeat The Lost Explorers in The Venomous Abyss on Mythic difficulty.","Mythic: The Lost Explorers",,63525,3004,-1,0,15566,0,10,0,45,7966622,0,230886,0,0,0,0
-"Defeat Vashnik the Malignant in The Venomous Abyss on Mythic difficulty.","Mythic: Vashnik the Malignant",,63526,3004,-1,0,15566,0,10,0,46,7966618,0,230888,0,0,0,0
-"Defeat Sszorak in The Venomous Abyss on Mythic difficulty.","Mythic: Sszorak",,63527,3004,-1,0,15566,0,10,0,47,7966619,0,230890,0,0,0,0
-"Defeat The Twin Fangs in The Venomous Abyss on Mythic difficulty.","Mythic: The Twin Fangs",,63528,3004,-1,0,15566,0,10,0,48,7966623,0,230892,0,0,0,0
-"Defeat The Coiled Altar in The Venomous Abyss on Mythic difficulty.","Mythic: The Coiled Altar",,63529,3004,-1,0,15566,0,10,0,49,7966625,0,230894,0,0,0,0
-"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Essence of Ula'tek",,63530,3004,-1,0,15566,0,10,131072,37,7956740,0,230896,0,0,0,0
-"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Beasts of Ula'tek",,63531,3004,-1,0,15566,0,10,131072,38,7956734,0,230900,0,0,0,0
-"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Ula'tek",,63532,3004,-1,0,15566,0,10,131072,39,7966624,0,230904,0,0,0,0
+"Defeat the following bosses on Heroic difficulty.","Heroic: The Venomous Abyss",,63520,3004,-1,63521,15566,0,10,131072,38,8039569,0,230855,0,0,0,0
+"Defeat the following bosses on any difficulty.","The Venomous Abyss",,63521,3004,-1,0,15566,0,10,131072,37,8039569,0,230864,0,0,0,0
+"Defeat the following bosses on Mythic difficulty.","Mythic: The Venomous Abyss",,63522,3004,-1,63520,15566,0,10,131072,39,8039569,0,230873,0,0,0,0
+"Defeat Nek'zali the Soulcoiler in The Venomous Abyss on Mythic difficulty.","Mythic: Nek'zali the Soulcoiler",,63523,3004,-1,0,15566,0,10,0,40,7966621,0,230882,0,0,0,0
+"Defeat the Entombed Sentinels in The Venomous Abyss on Mythic difficulty.","Mythic: Entombed Sentinels",,63524,3004,-1,0,15566,0,10,0,41,7966620,0,230884,0,0,0,0
+"Defeat The Lost Explorers in The Venomous Abyss on Mythic difficulty.","Mythic: The Lost Explorers",,63525,3004,-1,0,15566,0,10,0,42,7966622,0,230886,0,0,0,0
+"Defeat Vashnik the Malignant in The Venomous Abyss on Mythic difficulty.","Mythic: Vashnik the Malignant",,63526,3004,-1,0,15566,0,10,0,43,7966618,0,230888,0,0,0,0
+"Defeat Sszorak in The Venomous Abyss on Mythic difficulty.","Mythic: Sszorak",,63527,3004,-1,0,15566,0,10,0,44,7966619,0,230890,0,0,0,0
+"Defeat The Twin Fangs in The Venomous Abyss on Mythic difficulty.","Mythic: The Twin Fangs",,63528,3004,-1,0,15566,0,10,0,45,7966623,0,230892,0,0,0,0
+"Defeat The Coiled Altar in The Venomous Abyss on Mythic difficulty.","Mythic: The Coiled Altar",,63529,3004,-1,0,15566,0,10,0,46,7966625,0,230894,0,0,0,0
+"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Essence of Ula'tek",,63530,3004,-1,0,15566,0,10,131072,34,7956740,0,230896,0,0,0,0
+"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Beasts of Ula'tek",,63531,3004,-1,0,15566,0,10,131072,35,7956734,0,230900,0,0,0,0
+"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Ula'tek",,63532,3004,-1,0,15566,0,10,131072,36,7966624,0,230904,0,0,0,0
 ,"Nek'zali the Soulcoiler (Raid Finder The Venomous Abyss)",,63533,3004,-1,0,15542,0,0,1,68,0,0,230907,0,0,0,0
 ,"Nek'zali the Soulcoiler (Normal The Venomous Abyss)",,63534,3004,-1,0,15542,0,0,1,69,0,0,230909,0,0,0,0
 ,"Nek'zali the Soulcoiler (Heroic The Venomous Abyss)",,63535,3004,-1,0,15542,0,0,1,70,0,0,230911,0,0,0,0
@@ -14026,7 +14026,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "During the Vacation Season endeavor, find every Secret Souvenir in your Founder's Point neighborhood.","Souvenir Seeker, Founder's Point",,63605,2736,-1,0,15606,0,0,131072,3,136243,0,231200,0,0,0,0
 "Complete the Souvenir Seeker achievements for both Razorwind Shores and Founder's Point.","Superlative Souvenir Seeker",,63606,-1,-1,0,15606,0,0,133120,4,136243,0,231261,0,0,0,0
 "Collect any armor set from Midnight PvP Season 2.","Venomous Vestments",,63608,-1,-1,0,15259,0,10,131072,97,7871829,0,231279,0,0,0,0
-"Defeat Ula'tek before the Greasy Hatchling breaks in The Venomous Abyss on Normal difficulty or higher.","No Egg Scramble","Companion Pet: Ula'took",63609,3004,-1,0,15566,0,10,0,58,236999,279387,231281,0,0,0,0
+"Defeat Ula'tek before the Greasy Hatchling breaks in The Venomous Abyss on Normal difficulty or higher.","No Egg Scramble","Companion Pet: Ula'took",63609,3004,-1,0,15566,0,10,0,55,236999,279387,231281,0,0,0,0
 "Discover the Funerary Inscriptions throughout the Vaults of Atal'Utek","The Honored Dead",,63610,-1,-1,0,15553,0,5,0,37,7253129,0,231283,0,0,0,0
 "Complete the Preyhunter's Journey before Midnight: Season 2 ends.","Big Prey Hunter (Season 2)",,63611,-1,-1,0,81,0,0,133120,3,7493985,0,231296,0,0,0,0
 ,"Nymrissa Wavecaller (World The Tidebound Grotto)",,63613,2987,-1,0,15542,0,0,1,100,0,0,231302,0,0,0,0
@@ -14054,10 +14054,10 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Conquer the Coiled Isle by completing the achievements below.","Ula'tek Uncoiled",,63639,-1,-1,0,15553,0,20,131072,19,7636668,0,231485,0,0,0,0
 "Explore the Coiled Isle, revealing the covered areas of the world map.","Explore the Coiled Isle",,63640,-1,-1,0,15553,0,10,131072,20,7488399,0,231502,0,0,0,0
 "Complete the optional Coiled Isle storylines listed below.","Snake Charmed, I'm Sure",,63641,-1,-1,0,15547,0,10,131072,5,8032874,0,231490,0,0,0,0
-"Survive 100 Toxic Snare barrages on Hard or Nightmare Mode.","Sashay Away",,63642,-1,-1,0,15605,0,5,131200,57,1305155,0,231513,0,0,0,0
-"Kill 150 Pack Scouts on Hard or Nightmare Mode.","You Guys, Again?",,63643,-1,-1,0,15605,0,5,131200,59,643249,0,231515,0,0,0,0
-"Kill 200 Venom-Bloated Python while in Hard or Nightmare Mode.","Kill Me Now",,63644,-1,-1,0,15605,0,5,131200,58,132211,0,231517,0,0,0,0
-"Defeat The Lost Explorers including Hoji in The Venomous Abyss on Normal difficulty or higher.","Accidental Inclusion",,63645,3004,-1,0,15566,0,10,0,53,7966622,0,231546,0,0,0,0
+"Survive 100 Toxic Snare barrages on Hard or Nightmare Mode.","Sashay Away",,63642,-1,-1,0,15605,0,5,131072,57,1305155,0,231513,0,0,0,0
+"Kill 150 Pack Scouts on Hard or Nightmare Mode.","You Guys, Again?",,63643,-1,-1,0,15605,0,5,131072,59,643249,0,231515,0,0,0,0
+"Kill 200 Venom-Bloated Python while in Hard or Nightmare Mode.","Kill Me Now",,63644,-1,-1,0,15605,0,5,131072,58,132211,0,231517,0,0,0,0
+"Defeat The Lost Explorers including Hoji in The Venomous Abyss on Normal difficulty or higher.","Accidental Inclusion",,63645,3004,-1,0,15566,0,10,0,50,7966622,0,231546,0,0,0,0
 "Defeat the following bosses in The Venomous Abyss on Normal difficulty or higher while in a guild group.","The Venomous Abyss Guild Run",,63646,3004,-1,0,15570,0,10,61440,13,8039569,0,231548,0,0,0,0
 "Defeat the following bosses in The Venomous Abyss on Heroic difficulty or higher while in a guild group.","Heroic: The Venomous Abyss Guild Run",,63647,3004,-1,0,15570,0,10,61440,14,8039569,0,231559,0,0,0,0
 "Defeat Ula'tek in The Venomous Abyss on Mythic difficulty while in a guild group.","Mythic: Ula'tek Guild Run",,63648,3004,-1,0,15570,0,10,61440,15,7966624,0,231568,0,0,0,0
@@ -14065,11 +14065,14 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Defeat Ula'tek in The Venomous Abyss on Mythic difficulty, before the release of the next raid tier.","Cutting Edge: Ula'tek",,63651,3004,-1,63650,15271,0,0,6144,102,7966624,0,231574,0,0,0,0
 "Among the first two hundred guilds worldwide to defeat Ula'tek on Mythic difficulty.","Hall of Fame: Ula'tek","Title: Famed Slayer of Ula'tek",63652,3004,-1,0,15093,0,0,4258304,55,7966624,0,231576,0,0,0,0
 "Complete 250 patrols within the Vaults of Atal'Utek.","Pro Poison Patroller","Mount: Emerald Skyfang",63653,-1,-1,0,15553,0,10,131072,40,7474744,276553,231595,0,0,0,0
-"Defeat the Twin Fangs after feeding Ithraz the following slimes in order during Ravenous Feast in The Venomous Abyss on Normal difficulty or higher.","Taking a Bite out of Slime",,63656,3004,-1,0,15566,0,10,0,56,3459153,0,231621,0,0,0,0
+"Defeat the Twin Fangs after feeding Ithraz the following slimes in order during Ravenous Feast in The Venomous Abyss on Normal difficulty or higher.","Taking a Bite out of Slime",,63656,3004,-1,0,15566,0,10,0,53,3459153,0,231621,0,0,0,0
 "Discover all of the lore objects found on the Coiled Isle.","Student of Hissstory","Reward: Cursed Badge of the Soulcoilers",63662,-1,-1,0,15553,0,10,131072,27,8032876,280419,231730,0,0,0,0
-"Defeat The Coiled Altar while all players are afflicted by Unnerving Fixation in The Venomous Abyss on Normal difficulty or higher.","Watch Out Behind You",,63669,3004,-1,0,15566,0,10,0,57,841382,0,0,0,0,0,0
-"Experience an Ancestral Vision and comfort the trapped spirits scattered within in The Venomous Abyss on Normal difficulty or higher.","Comforting Da Spirits",,63670,3004,-1,0,15566,0,10,0,59,7874491,0,231912,0,0,0,0
+"Defeat The Coiled Altar while all players are afflicted by Unnerving Fixation in The Venomous Abyss on Normal difficulty or higher.","Watch Out Behind You",,63669,3004,-1,0,15566,0,10,0,54,841382,0,0,0,0,0,0
+"Experience an Ancestral Vision and comfort the trapped spirits scattered within in The Venomous Abyss on Normal difficulty or higher.","Comforting Da Spirits",,63670,3004,-1,0,15566,0,10,0,56,7874491,0,231912,0,0,0,0
 "Reversed the ritual performed on Slitherfang in the Altar of Fangs.","In Case Of Emergency",,63679,-1,-1,0,15274,0,0,2048,98,7746469,0,231948,0,0,0,0
-"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Heroic difficulty.","Heroic: Nymrissa Wavecaller",,63681,2987,-1,0,15566,0,10,0,22,3012069,0,232081,0,0,0,0
-"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Mythic difficulty.","Mythic: Nymrissa Wavecaller",,63682,2987,-1,0,15566,0,10,0,20,3012069,0,232087,0,0,0,0
-"Defeat Nymrissa Wavecaller in The Tidebound Grotto on any difficulty.","Nymrissa Wavecaller",,63683,2987,-1,0,15566,0,10,0,21,3012069,0,232089,0,0,0,0
+"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Heroic difficulty.","Heroic: Nymrissa Wavecaller",,63681,2987,-1,0,15566,0,10,0,58,3012069,0,232081,0,0,0,0
+"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Mythic difficulty.","Mythic: Nymrissa Wavecaller",,63682,2987,-1,0,15566,0,10,0,59,3012069,0,232087,0,0,0,0
+"Defeat Nymrissa Wavecaller in The Tidebound Grotto on any difficulty.","Nymrissa Wavecaller",,63683,2987,-1,0,15566,0,10,0,57,3012069,0,232089,0,0,0,0
+"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Normal difficulty or higher while in a guild group.","Nymrissa Wavecaller Guild Run",,63686,2987,-1,0,15570,0,10,28672,16,3012069,0,232202,0,0,0,0
+"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Heroic difficulty while in a guild group.","Heroic: Nymrissa Wavecaller Guild Run",,63687,2987,-1,0,15570,0,10,28672,17,3012069,0,232204,0,0,0,0
+"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Mythic difficulty while in a guild group.","Mythic: Nymrissa Wavecaller Guild Run",,63688,2987,-1,0,15570,0,10,28672,18,3012069,0,232206,0,0,0,0
