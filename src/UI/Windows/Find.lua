@@ -29,10 +29,12 @@ app:CreateWindow("ItemFinder", {
 					end
 				end
 			});
-			local CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
+			-- This class is also defined in Item.Retail though it is extremely different
+			local CreateItemHarvester = app.ExtendClass("Item", "ItemFinder.ItemHarvester", "itemID", {
 				IsClassIsolated = true,
 				collectible = app.ReturnTrue,
 				collected = app.ReturnFalse,
+				RefreshCollectionOnly = true,
 				text = function(t)
 					local itemID = t.itemID;
 					if GetItemID(itemID) then
@@ -303,6 +305,7 @@ app:CreateWindow("QuestFinder", {
 				IsClassIsolated = true,
 				collectible = app.ReturnFalse,
 				collected = app.ReturnTrue,
+				RefreshCollectionOnly = true,
 			},
 			"AsPending", {
 				collectible = app.ReturnTrue,
