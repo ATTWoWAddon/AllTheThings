@@ -35113,7 +35113,7 @@ i(205982,{b=1,minReputation={2564,1},spellID=411553}),
 i(202172,{b=1,minReputation={2564,1}}),
 i(204717,{b=1,minReputation={2564,1},spellID=406381})}})}}),
 q(76025,{coords={
-[2133]={{56.4,56.7}}},DisablePartySync=1,lc={1,"questID",75721},lvl=60,minReputation={2564,2},qgs={205127},g={
+[2133]={{56.4,56.7}}},DisablePartySync=1,lc={1,"questID",75721},lvl=60,minReputation={2564,2},qgs={205127},rwp=110000,u=2,g={
 i(205964,{b=1,minReputation={2564,2}})}}),
 q(75720,{coords={
 [2133]={{56.4,56.7}}},isBreadcrumb=1,lvl=10,minReputation={2564,3},nextQuests={75721},qgs={205127}}),

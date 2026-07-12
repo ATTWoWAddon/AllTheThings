@@ -383,5 +383,5 @@ n(94829,_.ResolveQuestData({aqd=
 {coords={
 [582]={{37.2,35.8}}}},hqd=
 {coords={
-[590]={{44.96,50.07}}}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}))}})}});
+[590]={{44.96,50.07}}}},skipFill=1,sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}))}})}});
 end);
