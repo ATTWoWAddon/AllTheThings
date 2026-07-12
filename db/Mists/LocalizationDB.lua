@@ -36410,6 +36410,7 @@ end
 -- Add a Header & Filter debugger
 setmetatable(_.FilterConstants, {
     __index = function(t, key)
+		if key == "ToDebugString" then return end
         _.print("MISSING FilterConstant:", key);
         rawset(t, key, -9999999999);
         return -9999999999;
@@ -36417,6 +36418,7 @@ setmetatable(_.FilterConstants, {
 });
 setmetatable(_.HeaderConstants, {
     __index = function(t, key)
+		if key == "ToDebugString" then return end
         _.print("MISSING HeaderConstant:", key);
         rawset(t, key, -9999999999);
         return -9999999999;
