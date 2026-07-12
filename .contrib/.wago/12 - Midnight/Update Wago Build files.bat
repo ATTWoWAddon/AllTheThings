@@ -13,14 +13,14 @@ call :download GlyphProperties
 call :downloadrenamed Holiday Holidays
 call :download HouseDecor
 call :download Item
-call :download ItemBonus
+call :downloadcleaned ItemBonus
 call :download ItemEffect
 call :download ItemModifiedAppearance
 call :download ItemXItemEffect
 call :download ItemSearchName
 call :download ModifierTree
 call :download SkillLineAbility
-call :download SpellEffect
+call :downloadcleaned SpellEffect
 call :download TaxiNodes
 call :download TransmogSet
 call :download TransmogSetItem
@@ -33,10 +33,6 @@ pushd "%~dp0localized"
 call "Update Wago Build Files.bat"
 popd
 
-@REM Cleanup the ItemBonus file
-call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\ItemBonus.%BUILD%.csv" "..\ItemBonus.regex"
-@REM Cleanup the SpellEffect file
-call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\SpellEffect.%BUILD%.csv" "..\SpellEffect.regex"
 exit /b
 
 :download
@@ -57,4 +53,10 @@ if not exist "%1.%BUILD%.csv" (
 	)
 	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%"
 )
+exit /b
+
+:downloadcleaned
+call :download %1
+echo Cleaning %1...
+call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "..\%1.regex"
 exit /b
