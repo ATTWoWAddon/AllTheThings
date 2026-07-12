@@ -282,7 +282,7 @@ end
 local function ClassError(...)
 	local params = {...}
 	local err = app.TableConcat(params, nil, "", " ")
-	error(err)
+	app.report("ClassError",err)
 end
 -- Generates a metatable to use for the given class name based on the provided field functions
 local CreateClassMeta = not app.__perf and function(fields, className)
