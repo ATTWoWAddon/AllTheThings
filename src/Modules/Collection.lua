@@ -165,8 +165,14 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		currentCharacter.TimeStamps = timeStamps;
 	end
 	for key,value in pairs(currentCharacter) do
-		if type(value) == "table" and not timeStamps[key] then
+		if type(value) == "table" and key:sub(1, 2) ~= "__" and not timeStamps[key] then
 			timeStamps[key] = now;
+		end
+	end
+	-- clean out any bad/old keys
+	for key,value in pairs(timeStamps) do
+		if key:sub(1, 2) == "__" then
+			timeStamps[key] = nil
 		end
 	end
 	currentCharacter.lastPlayed = now;
