@@ -3024,7 +3024,7 @@ OnInitForPopout = function(self, group)
 	if not group.isBaseSearchResult then
 		local skipFull = app.GetRelativeValue(group, "skipFull")
 		-- clone/search initially so as to not let popout operations modify the source data
-		group = app.CloneClassInstance(group);
+		group = app.__CreateObject(group);
 		self:SetData(group);
 		group.visible = true;
 		group.skipFull = skipFull
