@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}, {
 			-- Season 1
 			q(94835, {	-- Early Morning Training
-				["timeline"] = { ADDED_12_0_1, REMOVED_12_1_0 },
+				["timeline"] = { ADDED_12_0_1, REMOVED_12_0_5 },	-- removed on 7th week of season
 				["groups"] = { i(267076) },	-- Novice Combatant's Medallion
 			}),
 			q(94836, {	-- Late Night Training: Week 1 of 3
