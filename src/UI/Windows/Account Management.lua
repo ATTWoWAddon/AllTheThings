@@ -316,7 +316,9 @@ local function AddCharacterLookup(characterByInfo, character)
 	if identifier then
 		characterByInfo[identifier] = character
 	end
-	characterByInfo[character.guid] = character
+	if character.guid then
+		characterByInfo[character.guid] = character
+	end
 end
 local function IsLinkedCharacter(identifier)
 	if LinkedCharacters[identifier] then return true end

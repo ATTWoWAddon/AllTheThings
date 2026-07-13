@@ -5,9 +5,9 @@ local L = app.L;
 -- Global locals
 local ipairs, pairs, setmetatable, tinsert, math_floor, wipe
 	= ipairs, pairs, setmetatable, tinsert, math.floor, wipe;
-local C_Map_GetMapInfo, C_Map_GetPlayerMapPosition, GetRealZoneText, GetSubZoneText, IsInInstance
-	= C_Map.GetMapInfo, C_Map.GetPlayerMapPosition, GetRealZoneText, GetSubZoneText, IsInInstance;
-local contains, containsValue = app.contains, app.containsValue;
+local C_Map_GetMapInfo,GetRealZoneText, GetSubZoneText, IsInInstance
+	= C_Map.GetMapInfo,GetRealZoneText, GetSubZoneText, IsInInstance;
+local contains = app.contains
 local wipearray, ArrayAppend, CreateObject, MergeObject, MergeProperties, NestObjects, IsQuestFlaggedCompleted
 	= app.wipearray, app.ArrayAppend, app.__CreateObject, app.MergeObject, app.MergeProperties, app.NestObjects, app.IsQuestFlaggedCompleted
 local GetRelativeGroup = app.GetRelativeGroup;
@@ -17,9 +17,6 @@ local function BuildDiscordMapInfoTable(id, mapInfo)
 	-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
 	mapInfo = mapInfo or C_Map_GetMapInfo(id)
 	local info = {
-		"### missing-map"..":"..id,
-		"```elixir",	-- discord fancy box start
-		"L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")",
 		id and ("mapID:"..id.." ("..(mapInfo.name or ("Map ID #" .. id))..")") or "mapID:??",
 		"real-name:"..(GetRealZoneText() or "?"),
 		"sub-name:"..(GetSubZoneText() or "?"),
@@ -35,13 +32,6 @@ local function BuildDiscordMapInfoTable(id, mapInfo)
 		end
 	end
 
-	local position, coord = id and C_Map_GetPlayerMapPosition(id, "player"), nil;
-	if position then
-		local x,y = position:GetXY();
-		coord = (math_floor(x * 1000) / 10) .. ", " .. (math_floor(y * 1000) / 10);
-	end
-	tinsert(info, coord and ("coord:"..coord) or "coord:??");
-
 	if app.GameBuildVersion >= 100000 then	-- Only include this after Dragonflight
 		local acctUnlocks = {
 			IsQuestFlaggedCompleted(72366) and "DF_CA" or "N",	-- Dragonflight Campaign Complete
@@ -54,15 +44,10 @@ local function BuildDiscordMapInfoTable(id, mapInfo)
 
 	local inInstance, instanceType = IsInInstance()
 	tinsert(info, "instance:"..(inInstance and "true" or "false")..":"..(instanceType or ""))
-	tinsert(info, "ver:"..app.Version);
-	tinsert(info, "build:"..app.GameBuildVersion);
-	tinsert(info, "```");	-- discord fancy box end
 	return info
 end
 local function ShowDiscordReportPopupForMapID(mapID)
-	local popupID = "map-" .. mapID
-	app:SetupReportDialog(popupID, "Missing Map: " .. mapID, BuildDiscordMapInfoTable(mapID, mapInfo))
-	app.report(app:Linkify(app.Version.." (Click to Report) No data found for this Location!", app.Colors.ChatLinkError, "dialog:" .. popupID));
+	app.report("No data found for this Location!", app.UnpackTable(BuildDiscordMapInfoTable(mapID)))
 end
 
 -- Retail Style Mini List
@@ -325,8 +310,6 @@ local RetailMapDataStyleMetatable = {
 				end
 			end
 
-			mapData.u = nil;
-			mapData.e = nil;
 			if mapData.instanceID then
 				mapData = app.CreateInstance(mapData.instanceID, mapData);
 			else
@@ -346,9 +329,6 @@ local RetailMapDataStyleMetatable = {
 			end
 
 			-- TODO: This is dumb, but apparently its required. (for now?)
-			mapData.visible = true;
-			mapData.back = 1;
-			mapData.indent = 0;
 
 			-- Cache all of the Current Maps with the same data.
 			for id,_ in pairs(currentMaps) do

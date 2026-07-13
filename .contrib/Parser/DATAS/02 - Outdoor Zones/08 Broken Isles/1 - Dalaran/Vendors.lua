@@ -564,7 +564,7 @@ root(ROOTS.Zones, {
 									["timeline"] = { REMOVED_10_2_5 },
 								}),
 								-- #if AFTER 10.2.5
-								i(163036),	-- Polished Pet Charm
+								i(POLISHED_PET_CHARM),	-- Polished Pet Charm
 								-- #endif
 							}),
 						}),

@@ -46746,13 +46746,14 @@ p(2675,{npcID=154796,pb=1}),
 p(2668,{npcID=154781,pb=1}),
 p(2674,{npcID=154794,pb=1})}}),
 h(-63,{
+i(168648,{b=1,lvl=50}),
+i(168756,{b=1,lvl=50}),
 r(301392,{b=1,itemID=170212,lvl=10,requireSkill=185,skillID=2541}),
 r(297107,{b=1,itemID=170211,lvl=10,requireSkill=185,skillID=2541}),
 r(301312,{b=1,itemID=170210,lvl=10,requireSkill=171,skillID=2478}),
 r(300751,{b=1,itemID=170208,lvl=10,requireSkill=171,skillID=2478}),
 r(300754,{b=1,itemID=170209,lvl=10,requireSkill=171,skillID=2478}),
 i(168632,{b=1,lvl=50}),
-i(168756,{b=1,lvl=50}),
 i(168798,{b=1,lvl=50})}),
 d(104,{difficulties={2,23},g={
 h(-374,{awp=110200,g={

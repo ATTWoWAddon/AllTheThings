@@ -44,7 +44,7 @@ i(93226);	-- Grand Commendation of the Tillers
 
 -- BoA Cost Items
 i(137642);	-- Mark of Honor
-i(163036);	-- Polished Pet Charm
+i(POLISHED_PET_CHARM);	-- Polished Pet Charm
 i(116415);	-- Shiny Pet Charm
 i(190189);	-- Sandworn Relic	(became BoA 2022-07-29)
 

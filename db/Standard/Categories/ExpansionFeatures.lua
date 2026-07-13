@@ -35114,7 +35114,7 @@ i(205982,{b=1,minReputation={2564,1},spellID=411553}),
 i(202172,{b=1,minReputation={2564,1}}),
 i(204717,{b=1,minReputation={2564,1},spellID=406381})}})}}),
 q(76025,{coords={
-[2133]={{56.4,56.7}}},DisablePartySync=1,lc={1,"questID",75721},lvl=60,minReputation={2564,2},qgs={205127},g={
+[2133]={{56.4,56.7}}},DisablePartySync=1,lc={1,"questID",75721},lvl=60,minReputation={2564,2},qgs={205127},rwp=110000,u=2,g={
 i(205964,{b=1,minReputation={2564,2}})}}),
 q(75720,{coords={
 [2133]={{56.4,56.7}}},isBreadcrumb=1,lvl=10,minReputation={2564,3},nextQuests={75721},qgs={205127}}),
@@ -41415,7 +41415,6 @@ n(255476,{coords={
 i(278022,{awp=120007,cost={{"i",267051,150}},f=55,g={
 s(306333,271028,{f=29}),
 s(306342,271037,{f=28}),
-s(306302,270997,{f=1}),
 s(306344,271039,{f=25}),
 s(306303,270998,{f=1}),
 s(306304,270999,{f=21}),
@@ -41431,6 +41430,7 @@ s(306338,271033,{f=28}),
 s(306337,271032,{f=28}),
 s(306351,271046,{f=27})}}),
 i(278021,{awp=120007,cost={{"i",267051,150}},f=55,g={
+s(306302,270997,{f=1}),
 s(306350,271045,{f=27}),
 s(306315,271010,{f=20}),
 s(306321,271016,{f=34}),
@@ -41805,7 +41805,8 @@ q(96233,{coords={
 ah(63325,{awp=120007,type="a",g={
 q(96410,{coords={
 [2649]={{60.4,10.4}}},qgs={264069},sourceQuests={96233}}),
-q(96831,{description="You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",isBreadcrumb=1,isWeekly=1,nextQuests={96441,96442,96443},sourceQuests={96410}}),
+q(96831,{coords={
+[2393]={{38.6,59.6},{40.2,72.2},{47.8,51.4},{50.8,73.4}}},description="You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",isBreadcrumb=1,isWeekly=1,nextQuests={96441,96442,96443},qgs={265903},sourceQuests={96410}}),
 q(96441,{coords={
 [2649]={{60.4,10.4}}},qgs={264069},sourceQuests={96410,96831},g={
 i(274576)}}),

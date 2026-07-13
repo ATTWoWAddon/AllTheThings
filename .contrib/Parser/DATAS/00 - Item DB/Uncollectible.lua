@@ -2885,22 +2885,24 @@ i(272116);	-- Water-Logged Transaction Scroll
 -- PATCH 12.0.7 --
 ------------------
 i(276349);	-- Bulbous Leyshroom
+i(276343);	-- Console Encryption Key
+i(276360);	-- Etched Ice Chip
+i(276353);	-- Frozen Sliver of Darkness
+i(276362);	-- Lost Glacier Climbing Hooks
 i(276345);	-- Malfunctioning Holoprint
 i(276344);	-- Overgrown Spore Extractor
+i(276357);	-- Razor-Ice Flake
+i(276355);	-- Shattered Frostforged Hilt
+i(276358);	-- Shattered Shadowgraft
 i(276350);	-- Shimmering Algae
+i(276359);	-- Twisted Domanaar Armament
 
 ------------------
 -- PATCH 12.1.0 --
 ------------------
 i(280182);	-- Coiled Curry
-i(276343);	-- Console Encryption Key
 i(274951);	-- Corroded Scale
-i(276353);	-- Frozen Sliver of Darkness
 i(280183);	-- Harrier Hotcakes
 i(274954);	-- Pristine Fang
-i(276357);	-- Razor-Ice Flake
 i(274953);	-- Serpentine Iris
-i(276355);	-- Shattered Frostforged Hilt
-i(276358);	-- Shattered Shadowgraft
 i(280184);	-- Sweetsaw Surprise
-i(276359);	-- Twisted Domanaar Armament

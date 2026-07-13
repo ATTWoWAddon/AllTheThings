@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						}),
 					},
 				}),
-				i(163036, {["races"]=IGNORED_VALUE}),	-- Polished Pet Charm
+				i(POLISHED_PET_CHARM, {["races"]=IGNORED_VALUE}),	-- Polished Pet Charm
 				i(149503, {["races"]=IGNORED_VALUE}),	-- Stolen Gift
 				mission(2078),	-- Azeroth Bleeds
 				mission(2087),	-- Explore the Roost

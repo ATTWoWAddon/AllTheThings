@@ -20,20 +20,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						title(789),	-- Bloodsworn Mariner <Name>
 					}),
 					ach(63632),	-- Toxic Trophies
-					ach(63634),	-- Where Did You Get That? (automated)
+					ach(63634, {	-- Where Did You Get That?
+						["cost"] = { { "i", 244790, 1 } },	-- The Coiled Huntress [Fishing Tool]
+					}),
 				}),
-				n(QUESTS, sharedDataSelf({
+				n(QUESTS, sharedDataSelf({	-- Second Mate Sluggs
+					["qg"] = 257598,	-- Second Mate Sluggs
+					["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["isDaily"] = true,
 				}, {
-					q(94804, {	-- A Collection of Rot
-						["qg"] = 257598,	-- Second Mate Sluggs
-						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+					q(94804),	-- A Collection of Rot
+					q(94796, {	-- Curing Curse Resistance
+						i(278094),	-- Whole Uncursed Liver (QI!)
 					}),
-					q(97562, {	-- Culling the Killifish
-						["qg"] = 268394,	-- Brinedrinker Gills
-						["coord"] = { 51.7, 50.2, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(274587) },	-- Spotted Killifish (QI!)
-					}),
+				})),
+				n(QUESTS, sharedDataSelf({	-- Brinedrinker Gills
+					["qg"] = 268394,	-- Brinedrinker Gills
+					["coord"] = { 51.7, 50.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["isDaily"] = true,
+				}, {
+					q(97562),	-- Culling the Killifish
+					q(97571),	-- Dogging the Darters
 				})),
 				n(VENDORS, {
 					n(257598, {	-- Second Mate Sluggs

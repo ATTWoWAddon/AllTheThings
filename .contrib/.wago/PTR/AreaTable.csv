@@ -9725,7 +9725,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16531,DreamriftRaid,"The Dreamrift",2939,0,0,75,0,3354,0,3264,0,0,0,0,0,15,-1,0,0,0,3607,268451840,136,0,0,0,0
 16533,DONOTDISTURB,"[DO NOT DISTURB]",2863,0,0,96,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,128,0,0,0,0
 16534,LairOfPredaxas,"Lair of Predaxas",2771,15458,12993,0,0,3059,2708,3512,0,0,0,0,0,15,-1,0,0,0,3084,1073741888,0,0,0,0,0
-16535,VaultsofAtalUtek,"Vaults of Atal'Utek",2916,0,0,75,0,3527,3400,0,0,0,0,0,0,13,-1,0,0,0,5381,64,128,0,0,0,0
+16535,VaultsofAtalUtek,"Vaults of Atal'Utek",2916,0,0,75,0,3527,3400,0,0,0,0,0,0,15,-1,0,0,0,5381,16448,128,0,0,0,0
 16536,ValdekarsSunbath,"Solaarian Sunbath",0,15968,13096,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8192,0,0,0,0
 16538,CourtyardSunwell,"Isle of Quel'Danas",2858,16182,0,0,0,351,675,0,0,0,0,0,0.15000000596,13,-1,0,0,0,0,1073741888,128,0,0,0,0
 16539,DelvesEtherealBoss,"Voidrazor Sanctuary",2951,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,2677,268441600,128,0,0,0,0
@@ -9951,7 +9951,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 17688,TheVenomducts,"The Venomducts",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
 17689,HallsoftheMalignant,"Halls of the Malignant",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
 17701,TheCoiledAltar,"The Coiled Altar",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
-17702,TheTombofUlatek,"The Tomb of Ula'tek",3004,16915,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
+17702,TheTombofUlatek,"The Tomb of Ula'tek",3004,16915,0,75,0,3481,3496,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
 17710,AltarofFangsDungeonBoss1Arena,"The Carnage Pit",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
 17711,AltarofFangsDungeonBoss3Arena,"The Altar of Fangs",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
 17712,AltarofFangsDungeonTrash1,"Sacrificial Approach",2993,16865,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-805306368,136,0,0,0,0
@@ -9961,8 +9961,8 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 17718,121CoiledIsleGreatSea,"The Great Sea",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,5381,1073741888,128,0,0,0,0
 17719,121CoiledIsleTheForbiddingSea,"The Forbidding Sea",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,5381,1073741888,128,0,0,0,0
 17720,121ZulAmanTheForbiddingSea,"The Forbidding Sea",0,15947,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3086,1073741888,128,0,0,0,0
-17729,UnderlevelCaves,"North Amani Outpost",2916,16535,0,75,0,3527,0,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
-17730,UnderlevelCaves,"East Amani Outpost",2916,16535,0,75,0,3527,0,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
+17729,NorthAmaniBulwarkHub,"Northern Amani Bulwark",2916,16535,0,75,0,3527,0,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
+17730,EastAmaniOutpostHub,"Eastern Amani Outpost",2916,16535,0,75,0,3527,0,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
 16310,NewQuelDanas12CampaignFinaleScenario,"Isle of Quel'Danas",2907,0,0,96,0,3009,675,0,0,0,0,0,0,15,-1,0,0,0,3320,4160,128,0,0,0,0
 16311,SilvermoonEasternKingdoms12CampaignFinaleScenario,"Silvermoon City",2907,0,0,96,0,3249,0,3404,0,0,0,0,0,15,-1,0,0,0,3320,4096,128,0,0,0,0
 16312,EversongWoodsEasternKingdoms12CampaignFinaleScenario,"Eversong Woods",2907,0,0,96,0,3250,0,0,0,0,0,0,0,15,-1,0,0,0,3320,4160,128,0,0,0,0

@@ -147,6 +147,17 @@ local function DoReport(reporttype, id)
 	-- the first report of a given ID for now
 	reportData.REPORTED = true
 end
+local function DoAllReports()
+	local Runner = app.CreateRunner("contributor")
+	local type = type
+	for reporttype,reporttypereports in pairs(Reports) do
+		for id,idreport in pairs(reporttypereports) do
+			if id ~= "__type" and type(idreport) == "table" and not idreport.REPORTED then
+				Runner.Run(DoReport, reporttype, id)
+			end
+		end
+	end
+end
 
 local function BuildGenericReportData(objRef, id)
 	return {
@@ -202,9 +213,9 @@ local function AddReportData(reporttype, id, data, chatlink)
 	end
 
 	reportData.CHATLINK = chatlink
-	-- after adding data for a report, we will trigger that report shortly afterwards in case more data is added elsewhere within
-	-- that timeframe
-	DelayedCallback(DoReport, 0.25, reporttype, id)
+	-- after adding data for a report, we will trigger all reports shortly afterwards in case more data is added elsewhere within
+	-- that timeframe or for other report types/ids
+	DelayedCallback(DoAllReports, 0.5)
 end
 
 api.DoReport = function(id, text)
@@ -3317,6 +3328,7 @@ MobileDB.GameObject = {
 	[618844] = true,	-- Mislaid Curiosity
 	[619092] = true,	-- Flyer Crate (q:92138)
 	[619677] = true,	-- Sweetsaw Bloom (q:93842)
+	[619683] = true,	-- Guarded Seabird Nest (wq:94574)
 	[619736] = true,	-- Netherstorm Structural Cage
 	[620105] = true,	-- Rookery Cache Key
 	[621526] = true,	-- Cache of L'ura [Seat of Triumvirate]

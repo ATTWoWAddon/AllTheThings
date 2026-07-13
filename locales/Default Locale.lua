@@ -118,6 +118,7 @@ local L = {
 	},
 };
 L = setmetatable(L, { __index = function(t, k)
+	if k == "ToDebugString" then return end
 	app.report("MISSING LOCALE",k)
 	rawset(t, k, UNKNOWN)
 	return UNKNOWN

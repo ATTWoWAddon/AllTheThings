@@ -55,6 +55,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(276021),	-- Flamebeak Spaulders
 					i(276005),	-- Flamebeak Treads
 				}),
+				filter(NECK_F, {
+					i(276032),	-- Bad Juju Necklace
+				}),
 				filter(PLATE, {
 					i(276016),	-- Stonehide Casque
 					i(276012),	-- Stonehide Chestguard
@@ -64,7 +67,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(276020),	-- Stonehide Pauldrons
 					i(276004),	-- Stonehide Sabatons
 					i(276000),	-- Stonehide Vambraces
-					
 				}),
 				filter(TRINKET_F, {
 					i(274493),	-- Effigy of Ula'Tek's Faithful
@@ -73,6 +75,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(WEAPONS, {
 				i(276059),	-- Headhunter's Hacker
+				i(276045),	-- Trailblazing Soulblade
 				i(276048),	-- Vipersbane Dagger
 			}),
 		}),
