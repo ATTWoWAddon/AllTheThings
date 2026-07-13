@@ -74,7 +74,7 @@ p(333,{b=1,itemID=72134,npcID=54730,q=3,spellID=102317,u=3})),(function(t)if Get
 toy(72159,{b=1,q=3,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(79769,{b=1,q=3,u=3}))}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(235378,{awp=50502,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(267279,{f=55,u=3}))}}))}}),
+i(267279,{b=1,f=55,q=4,u=3}))}}))}}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=20001,u=2,g={
@@ -114,11 +114,11 @@ toy(184871,{b=1,q=3,u=2}),
 toy(38233,{b=1,q=3,u=2}),
 mnt(348459,{b=1,itemID=184865,lvl=20,q=4,u=2})}})}}),
 h(-694,{awp=50502,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",u=3,g={
-mnt(1266345,{itemID=260438,lvl=30,u=3}),
-toy(260622,{u=3}),
-toy(260221,{u=3}),
-mnt(1266866,{itemID=260759,lvl=70,u=3}),
-p(4962,{itemID=260433,npcID=255820,u=3})}}),
+mnt(1266345,{b=1,itemID=260438,lvl=30,q=4,u=3}),
+toy(260622,{b=1,q=3,u=3}),
+toy(260221,{b=1,q=3,u=3}),
+mnt(1266866,{b=1,itemID=260759,lvl=70,q=4,u=3}),
+p(4962,{b=1,itemID=260433,npcID=255820,q=3,u=3})}}),
 x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(683,{providers={{"i",39286}},rwp=30305,u=2}),
 p(188,{b=1,itemID=39286,npcID=28883,q=3,rwp=30305,spellID=52615,u=2,g={
@@ -157,7 +157,7 @@ h(-527,{awp=40402,rwp=60002,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 i(235561,{b=1,f=101,q=3,u=3}),
 toy(235464,{b=1,q=3,u=3}),
-en(267294,{u=3}),
+en(267294,{b=1,q=4,u=3}),
 mnt(473487,{u=3}),
 mnt(473478,{u=3})}})}}),
 h(-530,{description="These rewards are available to anyone who purchases Diablo 3 Collection.",u=1,g={

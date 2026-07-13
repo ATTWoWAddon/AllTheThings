@@ -9493,7 +9493,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753948800,
+		release = 1753981200,
 		state = 2,
 	},
 	[5002] = {
@@ -9502,7 +9502,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1754985600,
+		release = 1755018000,
 		state = 2,
 	},
 	[5003] = {
@@ -9511,7 +9511,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755763200,
+		release = 1755795600,
 		state = 2,
 	},
 	[5004] = {
@@ -9520,7 +9520,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756195200,
+		release = 1756227600,
 		state = 2,
 	},
 	[5005] = {
@@ -9529,7 +9529,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756800000,
+		release = 1756832400,
 		state = 2,
 	},
 	[5006] = {
@@ -9538,7 +9538,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756972800,
+		release = 1757005200,
 		state = 2,
 	},
 	[5007] = {
@@ -9547,7 +9547,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758009600,
+		release = 1758042000,
 		state = 2,
 	},
 	[51] = {
@@ -9572,7 +9572,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765958400,
+		release = 1765994400,
 		state = 2,
 	},
 	[53] = {
@@ -9597,7 +9597,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781596800,
+		release = 1781629200,
 		state = 2,
 	},
 };

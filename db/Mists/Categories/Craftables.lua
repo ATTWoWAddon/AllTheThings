@@ -6505,7 +6505,7 @@ i(74725,{q=3,u=50}),
 i(74724,{q=3,u=50}),
 i(74728,{q=3,u=50}),
 i(74723,{q=3,u=50}),
-i(254314,{awp=50501,b=1,q=3,u=52})}})}}),
+i(254314,{awp=50501,q=3,u=52})}})}}),
 prof(202,{awp=50004,u=50,g={
 prof(20219,{description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",u=50,g={
 flt(100,{u=50,g={
