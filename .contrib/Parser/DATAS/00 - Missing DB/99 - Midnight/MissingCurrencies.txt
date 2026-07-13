@@ -1,0 +1,1256 @@
+12.1.0.68301
+currency(42),	-- Badge of Justice
+currency(101),	-- Emblem of Heroism
+currency(102),	-- Emblem of Valor
+currency(103),	-- Arena Points
+currency(121),	-- Alterac Valley Mark of Honor
+currency(122),	-- Arathi Basin Mark of Honor
+currency(123),	-- Eye of the Storm Mark of Honor
+currency(124),	-- Strand of the Ancients Mark of Honor
+currency(125),	-- Warsong Gulch Mark of Honor
+currency(126),	-- Wintergrasp Mark of Honor
+currency(201),	-- Venture Coin
+currency(221),	-- Emblem of Conquest
+currency(301),	-- Emblem of Triumph
+currency(321),	-- Isle of Conquest Mark of Honor
+currency(341),	-- Emblem of Frost
+currency(483),	-- Conquest Arena Meta
+currency(484),	-- Conquest Rated BG Meta
+currency(692),	-- Conquest Random BG Meta
+currency(698),	-- Zen Jewelcrafter's Token
+currency(810),	-- Black Iron Fragment
+currency(830),	-- n/a
+currency(897),	-- UNUSED
+currency(910),	-- Secret of Draenor Alchemy
+currency(944),	-- Artifact Fragment
+currency(980),	-- Dingy Iron Coins
+currency(999),	-- Secret of Draenor Tailoring
+currency(1008),	-- Secret of Draenor Jewelcrafting
+currency(1017),	-- Secret of Draenor Leatherworking
+currency(1020),	-- Secret of Draenor Blacksmithing
+currency(1101),	-- Oil
+currency(1149),	-- Sightless Eye
+currency(1154),	-- Shadowy Coins
+currency(1155),	-- Ancient Mana
+currency(1171),	-- Artifact Knowledge
+currency(1191),	-- Valor
+currency(1268),	-- Timeworn Artifact
+currency(1275),	-- Curious Coin
+currency(1299),	-- Brawler's Gold
+currency(1314),	-- Lingering Soul Fragment
+currency(1324),	-- Horde Qiraji Commendation
+currency(1325),	-- Alliance Qiraji Commendation
+currency(1342),	-- Legionfall War Supplies
+currency(1347),	-- Legionfall Building - Personal Tracker - Mage Tower (Hidden)
+currency(1349),	-- Legionfall Building - Personal Tracker - Command Tower (Hidden)
+currency(1350),	-- Legionfall Building - Personal Tracker - Nether Tower (Hidden)
+currency(1355),	-- Felessence
+currency(1356),	-- Echoes of Battle
+currency(1357),	-- Echoes of Domination
+currency(1379),	-- Trial of Style Token
+currency(1388),	-- Armor Scraps
+currency(1401),	-- Stronghold Supplies
+currency(1416),	-- Coins of Air
+currency(1501),	-- Writhing Essence
+currency(1506),	-- Argus Waystone
+currency(1533),	-- Wakening Essence
+currency(1534),	-- Zandalari Archaeology Fragment
+currency(1535),	-- Drust Archaeology Fragment
+currency(1540),	-- Wood
+currency(1541),	-- Iron
+currency(1553),	-- Azerite
+currency(1559),	-- Essence of Storms
+currency(1560),	-- War Resources
+currency(1565),	-- Rich Azerite Fragment
+currency(1579),	-- Champions of Azeroth
+currency(1585),	-- Warband Wide Honor
+currency(1586),	-- Honor Level
+currency(1587),	-- War Supplies
+currency(1592),	-- Order of Embers
+currency(1593),	-- Proudmoore Admiralty
+currency(1594),	-- Storm's Wake
+currency(1595),	-- Talanji's Expedition
+currency(1596),	-- Voldunai
+currency(1597),	-- Zandalari Empire
+currency(1598),	-- Tortollan Seekers
+currency(1599),	-- 7th Legion
+currency(1600),	-- Honorbound
+currency(1602),	-- Conquest
+currency(1703),	-- PVP Season Rated Participation Currency
+currency(1705),	-- Warfronts - Personal Tracker - Iron in Chest (Hidden)
+currency(1714),	-- Warfronts - Personal Tracker - Wood in Chest (Hidden)
+currency(1715),	-- Progenitor Shard
+currency(1716),	-- Honorbound Service Medal
+currency(1717),	-- 7th Legion Service Medal
+currency(1718),	-- Titan Residuum
+currency(1722),	-- Azerite Ore
+currency(1723),	-- Lumber
+currency(1728),	-- Phantasma
+currency(1738),	-- Unshackled
+currency(1739),	-- Ankoan
+currency(1740),	-- Rustbolt Resistance (Hidden)
+currency(1742),	-- Rustbolt Resistance
+currency(1743),	-- Fake Anima for Quest Tracking
+currency(1744),	-- Corrupted Memento
+currency(1745),	-- Nazjatar Ally - Neri Sharpfin
+currency(1746),	-- Nazjatar Ally - Vim Brineheart
+currency(1747),	-- Nazjatar Ally - Poen Gillbrack
+currency(1748),	-- Nazjatar Ally - Bladesman Inowari
+currency(1749),	-- Nazjatar Ally - Hunter Akana
+currency(1750),	-- Nazjatar Ally - Farseer Ori
+currency(1752),	-- Honeyback Hive
+currency(1754),	-- Argent Commendation
+currency(1757),	-- Uldum Accord
+currency(1758),	-- Rajani
+currency(1761),	-- Enemy Damage
+currency(1762),	-- Enemy Health
+currency(1763),	-- Deaths
+currency(1769),	-- Quest Experience (Standard, Hidden)
+currency(1794),	-- Atonement Anima
+currency(1802),	-- Shadowlands PvP Weekly Reward Progress
+currency(1803),	-- Echoes of Ny'alotha
+currency(1804),	-- Ascended
+currency(1805),	-- Undying Army
+currency(1806),	-- Wild Hunt
+currency(1807),	-- Court of Harvesters
+currency(1808),	-- Channeled Anima
+currency(1810),	-- Redeemed Soul
+currency(1811),	-- zzoldSanctum Architect
+currency(1812),	-- zzoldSanctum Anima Weaver
+currency(1820),	-- Infused Ruby
+currency(1822),	-- Renown
+currency(1829),	-- Renown-Kyrian
+currency(1830),	-- Renown-Venthyr
+currency(1831),	-- Renown-NightFae
+currency(1832),	-- Renown-Necrolord
+currency(1837),	-- The Ember Court
+currency(1838),	-- The Countess
+currency(1839),	-- Rendle and Cudgelface
+currency(1840),	-- Stonehead
+currency(1841),	-- Cryptkeeper Kassir
+currency(1842),	-- Baroness Vashj
+currency(1843),	-- Plague Deviser Marileth
+currency(1844),	-- Grandmaster Vole
+currency(1845),	-- Alexandros Mograine
+currency(1846),	-- Sika
+currency(1847),	-- Kleia and Pelegos
+currency(1848),	-- Polemarch Adrestes
+currency(1849),	-- Mikanikos
+currency(1850),	-- Choofa
+currency(1851),	-- Droman Aliothe
+currency(1852),	-- Hunt-Captain Korayn
+currency(1853),	-- Lady Moonberry
+currency(1859),	-- Reservoir Anima-Kyrian
+currency(1860),	-- Reservoir Anima-Venthyr
+currency(1861),	-- Reservoir Anima-Night Fae
+currency(1862),	-- Reservoir Anima-Necrolord
+currency(1863),	-- Redeemed Soul-Kyrian
+currency(1864),	-- Redeemed Soul-Venthyr
+currency(1865),	-- Redeemed Soul-Night Fae
+currency(1866),	-- Redeemed Soul-Necrolord
+currency(1867),	-- Sanctum Architect-Kyrian
+currency(1868),	-- Sanctum Architect-Venthyr
+currency(1869),	-- Sanctum Architect-Night Fae
+currency(1870),	-- Sanctum Architect-Necrolord
+currency(1871),	-- Sanctum Anima Weaver-Kyrian
+currency(1872),	-- Sanctum Anima Weaver-Venthyr
+currency(1873),	-- Sanctum Anima Weaver-Night Fae
+currency(1874),	-- Sanctum Anima Weaver-Necrolord
+currency(1877),	-- Bonus Experience
+currency(1878),	-- Stitchmasters
+currency(1880),	-- Ve'nari
+currency(1883),	-- Soulbind Conduit Energy
+currency(1884),	-- The Avowed
+currency(1887),	-- Court of Night
+currency(1888),	-- Marasmius
+currency(1889),	-- Adventure Campaign Progress
+currency(1891),	-- Honor from Rated
+currency(1902),	-- 9.1 - Torghast XP - Prototype - LJS
+currency(1903),	-- Invisible Reward
+currency(1904),	-- Tower Knowledge
+currency(1906),	-- Soul Cinders
+currency(1907),	-- Death's Advance
+currency(1909),	-- Torghast - Scoreboard - Clear Percent
+currency(1910),	-- Torghast - Scoreboard - Souls Percent
+currency(1911),	-- Torghast - Scoreboard - Urns Percent
+currency(1912),	-- Torghast - Scoreboard - Hot Streak Percent
+currency(1913),	-- Torghast - Scoreboard - Total Time
+currency(1914),	-- Torghast - Scoreboard - Par Time
+currency(1915),	-- Torghast - Scoreboard - Deaths Excess Count
+currency(1916),	-- Torghast - Scoreboard - Deaths Start Count
+currency(1917),	-- Torghast - Scoreboard - Floor Reached
+currency(1918),	-- Torghast - Scoreboard - Toast Display - Time Score
+currency(1919),	-- Torghast - Scoreboard - Toast Display - Hot Streak Score
+currency(1920),	-- Torghast - Scoreboard - Toast Display - Deaths Excess Score
+currency(1921),	-- Torghast - Scoreboard - Toast Display - Total Score
+currency(1922),	-- Torghast - Scoreboard - Toast Display - Total Rewards
+currency(1923),	-- Torghast - Scoreboard - Toast Display - Bonus - Souls Rescued
+currency(1924),	-- Torghast - Scoreboard - Toast Display - Bonus - Urns Broken
+currency(1925),	-- Torghast - Scoreboard - Toast Display - Deaths Zero
+currency(1926),	-- Torghast - Scoreboard - Toast Display - Stars
+currency(1932),	-- Torghast - Scoreboard - Toast Display - Boss Killed
+currency(1933),	-- Torghast - Scoreboard - Toast Display - Bonus - Chests Opened
+currency(1934),	-- Torghast - Scoreboard - Toast Display - Bonus - Escorts Complete
+currency(1935),	-- Torghast - Scoreboard - Toast Display - Bonus - No Trap Damage
+currency(1936),	-- Torghast - Scoreboard - Toast Display - Bonus - Kill Boss Fast
+currency(1937),	-- Torghast - Scoreboard - Toast Display - Bonus - Single Stacks
+currency(1938),	-- Torghast - Scoreboard - Toast Display - Bonus - 5 Stacks
+currency(1939),	-- Torghast - Scoreboard - Toast Display - Bonus - Broker Killer
+currency(1940),	-- Torghast - Scoreboard - Toast Display - Bonus - Elite Slayer
+currency(1941),	-- Torghast - Scoreboard - Toast Display - Bonus - 1000 Phantasma
+currency(1942),	-- Torghast - Scoreboard - Toast Display - Bonus - 500 Phant Left
+currency(1943),	-- Torghast - Scoreboard - Toast Display - Bonus - No Deaths
+currency(1944),	-- Torghast - Scoreboard - Toast Display - Bonus - No Epics
+currency(1945),	-- Torghast - Scoreboard - Toast Display - Bonus - Elite Unnatural
+currency(1946),	-- Torghast - Scoreboard - Toast Display - Total Rewards - AV Bonus
+currency(1947),	-- Bonus Valor
+currency(1948),	-- Torghast - Scoreboard - Toast Display - Bonus - Kill Boss Faster
+currency(1949),	-- Torghast - Scoreboard - Toast Display - Bonus - 30+ Count
+currency(1950),	-- Torghast - Scoreboard - Toast Display - 1 Star Value
+currency(1951),	-- Torghast - Scoreboard - Toast Display - 2 Star Value
+currency(1952),	-- Torghast - Scoreboard - Toast Display - 3 Star Value
+currency(1953),	-- Torghast - Scoreboard - Toast Display - 4 Star Value
+currency(1954),	-- Torghast - Scoreboard - Toast Display - 5 Star Value
+currency(1955),	-- Torghast - Scoreboard - Toast Display - Points While Empowered
+currency(1956),	-- Torghast - Scoreboard - Toast Display - Points Empowered Score
+currency(1957),	-- Torghast - Scoreboard - Floor Clear Percent Floor 1
+currency(1958),	-- Torghast - Scoreboard - Floor Clear Percent Floor 2
+currency(1959),	-- Torghast - Scoreboard - Floor Clear Percent Floor 3
+currency(1960),	-- Torghast - Scoreboard - Floor Clear Percent Floor 4
+currency(1961),	-- Torghast - Scoreboard - Floor Empowered Percent Floor 1
+currency(1962),	-- Torghast - Scoreboard - Floor Empowered Percent Floor 2
+currency(1963),	-- Torghast - Scoreboard - Floor Empowered Percent Floor 3
+currency(1964),	-- Torghast - Scoreboard - Floor Empowered Percent Floor 4
+currency(1965),	-- Torghast - Scoreboard - Floor Time Floor 1
+currency(1966),	-- Torghast - Scoreboard - Floor Time Floor 2
+currency(1967),	-- Torghast - Scoreboard - Floor Time Floor 3
+currency(1968),	-- Torghast - Scoreboard - Floor Time Floor 4
+currency(1969),	-- Torghast - Scoreboard - Floor Par Time Floor 1
+currency(1970),	-- Torghast - Scoreboard - Floor Par Time Floor 2
+currency(1971),	-- Torghast - Scoreboard - Floor Par Time Floor 3
+currency(1972),	-- Torghast - Scoreboard - Floor Par Time Floor 4
+currency(1976),	-- Torghast - Scoreboard - Toast Display - Bonus - Phant Left Group
+currency(1977),	-- Stygian Ember
+currency(1980),	-- Torghast - Scoreboard - Run Layer
+currency(1981),	-- Torghast - Scoreboard - Run ID
+currency(1982),	-- The Enlightened
+currency(1986),	-- Players Remaining
+currency(1997),	-- Archivists' Codex
+currency(2000),	-- Motes of Fate
+currency(2001),	-- Paden Test Currency
+currency(2002),	-- Renown-Maruuk Centaur
+currency(2003),	-- Dragon Isles Supplies
+currency(2005),	-- Druid Talent Points (DNT)
+currency(2006),	-- Restoration Talent Points (DNT)
+currency(2011),	-- Effigy Adornments
+currency(2012),	-- Death Knight Talent Points (DNT)
+currency(2013),	-- Frost Talent Points (DNT)
+currency(2014),	-- Unholy Talent Points (DNT)
+currency(2015),	-- Blood Talent Points (DNT)
+currency(2016),	-- Dragon Racing - Scoreboard - Race Complete Time
+currency(2017),	-- Dragon Racing - Scoreboard - Race Complete Time - Fraction 1
+currency(2018),	-- Dragon Racing - Temp Storage - Race Quest ID
+currency(2019),	-- Dragon Racing - Scoreboard - Race Complete Time - Silver
+currency(2020),	-- Dragon Racing - Scoreboard - Race Complete Time - Gold
+currency(2021),	-- Renown-Dragonscale Expedition
+currency(2022),	-- Dragon Racing - Multiplayer Race Placement
+currency(2031),	-- Dragonscale Expedition
+currency(2032),	-- Trader's Tender
+currency(2036),	-- Ancient Waygate Energy
+currency(2037),	-- Dragon Racing - Scoreboard - Race Complete Time -Silver Fract 1
+currency(2038),	-- Dragon Racing - Scoreboard - Race Complete Time - Gold Fract 1
+currency(2039),	-- Dragon Racing - Scoreboard - Personal Best - Waking Shores 1
+currency(2040),	-- Dragon Racing - Scoreboard - Personal Best Time
+currency(2041),	-- Dragon Racing - Scoreboard - Personal Best Time - Fraction 1
+currency(2042),	-- Dragon Racing - Personal Best Record - Waking Shores 01 Easy
+currency(2043),	-- Dragon Racing - Personal Best Record - Waking Shores 01 Medium
+currency(2044),	-- Dragon Racing - Personal Best Record - Waking Shores 01 Hard
+currency(2045),	-- Dragon Glyph Embers
+currency(2046),	-- Dragon Racing - Personal Best Record - Waking Shores 07 Easy
+currency(2047),	-- Dragon Racing - Personal Best Record - Waking Shores 07 Hard
+currency(2048),	-- Dragon Racing - Personal Best Record - Waking Shores 02 Easy
+currency(2049),	-- Dragon Racing - Personal Best Record - Waking Shores 02 Hard
+currency(2050),	-- Dragon Racing - Personal Best Record - Waking Shores 08 Easy
+currency(2051),	-- Dragon Racing - Personal Best Record - Waking Shores 08 Hard
+currency(2052),	-- Dragon Racing - Personal Best Record - Waking Shores 03 Easy
+currency(2053),	-- Dragon Racing - Personal Best Record - Waking Shores 03 Hard
+currency(2054),	-- Dragon Racing - Personal Best Record - Waking Shores 04 Easy
+currency(2055),	-- Dragon Racing - Personal Best Record - Waking Shores 04 Hard
+currency(2056),	-- Dragon Racing - Personal Best Record - Waking Shores 05 Easy
+currency(2057),	-- Dragon Racing - Personal Best Record - Waking Shores 05 Hard
+currency(2058),	-- Dragon Racing - Personal Best Record - Waking Shores 06 Easy
+currency(2059),	-- Dragon Racing - Personal Best Record - Waking Shores 06 Hard
+currency(2060),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 01 Easy
+currency(2061),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 01 Hard
+currency(2062),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 02 Easy
+currency(2063),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 02 Hard
+currency(2064),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 03 Easy
+currency(2065),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 03 Hard
+currency(2066),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 04 Easy
+currency(2067),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 04 Hard
+currency(2069),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains D05 Easy
+currency(2070),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains D06 Easy
+currency(2074),	-- Dragon Racing - Personal Best Record - Azure Span 01 Easy
+currency(2075),	-- Dragon Racing - Personal Best Record - Azure Span 01 Hard
+currency(2076),	-- Dragon Racing - Personal Best Record - Azure Span 02 Easy
+currency(2077),	-- Dragon Racing - Personal Best Record - Azure Span 02 Hard
+currency(2078),	-- Dragon Racing - Personal Best Record - Azure Span 03 Easy
+currency(2079),	-- Dragon Racing - Personal Best Record - Azure Span 03 Hard
+currency(2080),	-- Dragon Racing - Personal Best Record - Thaldraszus 01 Easy
+currency(2081),	-- Dragon Racing - Personal Best Record - Thaldraszus 01 Hard
+currency(2082),	-- Dragon Racing - Personal Best Record - Waking Shores MP 1
+currency(2083),	-- Dragon Racing - Personal Best Record - Azure Span 04 Easy
+currency(2084),	-- Dragon Racing - Personal Best Record - Azure Span 04 Hard
+currency(2085),	-- Dragon Racing - Personal Best Record - Azure Span 05 Easy
+currency(2086),	-- Dragon Racing - Personal Best Record - Azure Span 05 Hard
+currency(2087),	-- Renown-Iskaara Tuskarr
+currency(2088),	-- Renown-Valdrakken
+currency(2089),	-- Dragon Racing - Personal Best Record - Azure Span 06 Easy
+currency(2090),	-- Dragon Racing - Personal Best Record - Azure Span 06 Hard
+currency(2091),	-- Dragon Racing - Tracking [DNT]
+currency(2092),	-- Dragon Racing - Personal Best Record - Thaldraszus 02 Easy
+currency(2093),	-- Dragon Racing - Personal Best Record - Thaldraszus 02 Hard
+currency(2094),	-- [DNT] AC Major Faction Test Renown
+currency(2095),	-- Dragon Racing - Personal Best Record - Thaldraszus MP 1
+currency(2096),	-- Dragon Racing - Personal Best Record - Thaldraszus 03 Easy
+currency(2097),	-- Dragon Racing - Personal Best Record - Thaldraszus 03 Hard
+currency(2098),	-- Dragon Racing - Personal Best Record - Thaldraszus 04 Easy
+currency(2099),	-- Dragon Racing - Personal Best Record - Thaldraszus 04 Hard
+currency(2100),	-- Dragon Racing - Versioning [DNT]
+currency(2101),	-- Dragon Racing - Personal Best Record - Thaldraszus 05 Easy
+currency(2102),	-- Dragon Racing - Personal Best Record - Thaldraszus 05 Hard
+currency(2103),	-- Dragon Racing - Personal Best Record - Thaldraszus 06 Easy
+currency(2104),	-- Dragon Racing - Personal Best Record - Thaldraszus 06 Hard
+currency(2105),	-- Purified Arcane Energy
+currency(2106),	-- Valdrakken Accord
+currency(2107),	-- Artisan's Consortium - Dragon Isles Branch
+currency(2108),	-- Maruuk Centaur
+currency(2109),	-- Iskaara Tuskarr
+currency(2110),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains MP 1
+currency(2111),	-- Dragon Racing - Personal Best Record - Azure Span MP 1
+currency(2113),	-- Tuskarr - Fishing Net - Location 01 - Net 01 - Loot
+currency(2114),	-- Tuskarr - Fishing Net - Location 01 - Net 04 (Quest) - Loot
+currency(2115),	-- Tuskarr - Fishing Net - Location 01 - Net 02 - Loot
+currency(2116),	-- Tuskarr - Fishing Net - Location 01 - Net 03 - Loot
+currency(2119),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 07 Easy
+currency(2120),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 07 Hard
+currency(2124),	-- Dragon Racing - Scoreboard - Race Complete Time - Fraction 10
+currency(2125),	-- Dragon Racing - Scoreboard - Race Complete Time - Fraction 100
+currency(2126),	-- Dragon Racing - Scoreboard - Race Complete Time -Silver Fract 10
+currency(2128),	-- Dragon Racing - Scoreboard - Race Complete Time -Silver Fract100
+currency(2129),	-- Dragon Racing - Scoreboard - Race Complete Time - Gold Fract 10
+currency(2130),	-- Dragon Racing - Scoreboard - Race Complete Time - Gold Fract 100
+currency(2131),	-- Dragon Racing - Scoreboard - Personal Best Time - Fraction 10
+currency(2132),	-- Dragon Racing - Scoreboard - Personal Best Time - Fraction 100
+currency(2133),	-- Dragonriding - Accepting Passengers [DNT]
+currency(2134),	-- Cobalt Assembly
+currency(2135),	-- Tuskarr - Fishing Net - Location 02 - Net 01 - Loot
+currency(2136),	-- Tuskarr - Fishing Net - Location 02 - Net 02 - Loot
+currency(2137),	-- Tuskarr - Fishing Net - Location 03 - Net 01 - Loot
+currency(2138),	-- Tuskarr - Fishing Net - Location 03 - Net 02 - Loot
+currency(2139),	-- Tuskarr - Fishing Net - Location 04 - Net 01 - Loot
+currency(2140),	-- Tuskarr - Fishing Net - Location 04 - Net 02 - Loot
+currency(2141),	-- Tuskarr - Fishing Net - Location 05 - Net 01 - Loot
+currency(2142),	-- Tuskarr - Fishing Net - Location 05 - Net 02 - Loot
+currency(2148),	-- Red Whelp (Fire Shot)
+currency(2149),	-- Red Whelp (Lobbing Fire Nova)
+currency(2150),	-- Red Whelp (Curing Whiff)
+currency(2151),	-- Red Whelp (Mending Breath)
+currency(2152),	-- Red Whelp (Sleepy Ruby Warmth)
+currency(2153),	-- Red Whelp (Under Red Wings)
+currency(2154),	-- Dragon Racing - Personal Best Record - Waking Shores 01 Reverse
+currency(2155),	-- Dragon Racing - Best Time Display - Whole
+currency(2156),	-- Dragon Racing - Best Time Display - Fraction 1
+currency(2157),	-- Dragon Racing - Best Time Display - Fraction 10
+currency(2158),	-- Dragon Racing - Best Time Display - Fraction 100
+currency(2159),	-- Dragon Racing - Best Time Display - Advanced - Whole
+currency(2160),	-- Dragon Racing - Best Time Display - Advanced - Fraction 1
+currency(2161),	-- Dragon Racing - Best Time Display - Advanced - Fraction 10
+currency(2162),	-- Dragon Racing - Best Time Display - Advanced - Fraction 100
+currency(2165),	-- Profession - Public Order Capacity - Blacksmithing
+currency(2167),	-- Catalyst Charges
+currency(2169),	-- Profession - Public Order Capacity - Leatherworking
+currency(2170),	-- Profession - Public Order Capacity - Alchemy
+currency(2171),	-- Profession - Public Order Capacity - Tailoring
+currency(2172),	-- Profession - Public Order Capacity - Engineering
+currency(2173),	-- Profession - Public Order Capacity - Enchanting
+currency(2174),	-- Profession - Public Order Capacity - Jewelcrafting
+currency(2175),	-- Profession - Public Order Capacity - Inscription
+currency(2176),	-- Dragon Racing - Personal Best Record - Waking Shores 02 Reverse
+currency(2177),	-- Dragon Racing - Personal Best Record - Waking Shores 03 Reverse
+currency(2178),	-- Dragon Racing - Personal Best Record - Waking Shores 04 Reverse
+currency(2179),	-- Dragon Racing - Personal Best Record - Waking Shores 05 Reverse
+currency(2180),	-- Dragon Racing - Personal Best Record - Waking Shores 06 Reverse
+currency(2181),	-- Dragon Racing - Personal Best Record - Waking Shores 07 Reverse
+currency(2182),	-- Dragon Racing - Personal Best Record - Waking Shores 08 Reverse
+currency(2183),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains01Reverse
+currency(2184),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains02Reverse
+currency(2185),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains03Reverse
+currency(2186),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains04Reverse
+currency(2187),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains07Reverse
+currency(2188),	-- Dragon Racing - Personal Best Record - Azure Span 01 Reverse
+currency(2189),	-- Dragon Racing - Personal Best Record - Azure Span 02 Reverse
+currency(2190),	-- Dragon Racing - Personal Best Record - Azure Span 03 Reverse
+currency(2191),	-- Dragon Racing - Personal Best Record - Azure Span 04 Reverse
+currency(2192),	-- Dragon Racing - Personal Best Record - Azure Span 05 Reverse
+currency(2193),	-- Dragon Racing - Personal Best Record - Azure Span 06 Reverse
+currency(2194),	-- Dragon Racing - Personal Best Record - Thaldraszus 01 Reverse
+currency(2195),	-- Dragon Racing - Personal Best Record - Thaldraszus 02 Reverse
+currency(2196),	-- Dragon Racing - Personal Best Record - Thaldraszus 03 Reverse
+currency(2197),	-- Dragon Racing - Personal Best Record - Thaldraszus 04 Reverse
+currency(2198),	-- Dragon Racing - Personal Best Record - Thaldraszus 05 Reverse
+currency(2199),	-- Dragon Racing - Personal Best Record - Thaldraszus 06 Reverse
+currency(2201),	-- Dragon Racing - Personal Best Record - F Reach 01
+currency(2202),	-- Dragon Racing - Personal Best Record - F Reach 02
+currency(2203),	-- Dragon Racing - Personal Best Record - F Reach 03
+currency(2204),	-- Dragon Racing - Personal Best Record - F Reach 04
+currency(2205),	-- Dragon Racing - Personal Best Record - F Reach 05
+currency(2206),	-- Dragon Racing - Personal Best Record - F Reach 06
+currency(2207),	-- Dragon Racing - Personal Best Record - F Reach 01 Advanced
+currency(2208),	-- Dragon Racing - Personal Best Record - F Reach 02 Advanced
+currency(2209),	-- Dragon Racing - Personal Best Record - F Reach 03 Advanced
+currency(2210),	-- Dragon Racing - Personal Best Record - F Reach 04 Advanced
+currency(2211),	-- Dragon Racing - Personal Best Record - F Reach 05 Advanced
+currency(2212),	-- Dragon Racing - Personal Best Record - F Reach 06 Advanced
+currency(2213),	-- Dragon Racing - Personal Best Record - F Reach 01 Reverse
+currency(2214),	-- Dragon Racing - Personal Best Record - F Reach 02 Reverse
+currency(2215),	-- Dragon Racing - Personal Best Record - F Reach 03 Reverse
+currency(2216),	-- Dragon Racing - Personal Best Record - F Reach 04 Reverse
+currency(2217),	-- Dragon Racing - Personal Best Record - F Reach 05 Reverse
+currency(2218),	-- Dragon Racing - Personal Best Record - F Reach 06 Reverse
+currency(2224),	-- Dragon Racing - Best Time Display - Reverse - Whole
+currency(2225),	-- Dragon Racing - Best Time Display - Reverse - Fraction 1
+currency(2226),	-- Dragon Racing - Best Time Display - Reverse - Fraction 10
+currency(2227),	-- Dragon Racing - Best Time Display - Reverse - Fraction 100
+currency(2228),	-- Tuskarr - Fishing Net - Location 06 - Net 01 - Loot
+currency(2230),	-- Darkmoon Prize Ticket (Void)
+currency(2231),	-- Players
+currency(2235),	-- 10.0 Dragonrider PVP - Whirling Surge Dismounts 10.0.2 [DNT]
+currency(2236),	-- Dragon Racing - Scoreboard - Race Complete Time MS
+currency(2237),	-- 10.0 Dragonrider PVP - Whirling Surge Dismounts 10.0.5 [DNT]
+currency(2244),	-- Forbidden Reach Return - Renown Dailies Completed
+currency(2245),	-- Flightstones
+currency(2246),	-- Dragon Racing - Personal Best Record - Z Cavern 01
+currency(2247),	-- Dragon Racing - Personal Best Record - Z Cavern 02
+currency(2248),	-- Dragon Racing - Personal Best Record - Z Cavern 03
+currency(2249),	-- Dragon Racing - Personal Best Record - Z Cavern 04
+currency(2250),	-- Dragon Racing - Personal Best Record - Z Cavern 05
+currency(2251),	-- Dragon Racing - Personal Best Record - Z Cavern 06
+currency(2252),	-- Dragon Racing - Personal Best Record - Z Cavern 01 Advanced
+currency(2253),	-- Dragon Racing - Personal Best Record - Z Cavern 02 Advanced
+currency(2254),	-- Dragon Racing - Personal Best Record - Z Cavern 03 Advanced
+currency(2255),	-- Dragon Racing - Personal Best Record - Z Cavern 04 Advanced
+currency(2256),	-- Dragon Racing - Personal Best Record - Z Cavern 05 Advanced
+currency(2257),	-- Dragon Racing - Personal Best Record - Z Cavern 06 Advanced
+currency(2258),	-- Dragon Racing - Personal Best Record - Z Cavern 01 Reverse
+currency(2259),	-- Dragon Racing - Personal Best Record - Z Cavern 02 Reverse
+currency(2260),	-- Dragon Racing - Personal Best Record - Z Cavern 03 Reverse
+currency(2261),	-- Dragon Racing - Personal Best Record - Z Cavern 04 Reverse
+currency(2262),	-- Dragon Racing - Personal Best Record - Z Cavern 05 Reverse
+currency(2263),	-- Dragon Racing - Personal Best Record - Z Cavern 06 Reverse
+currency(2264),	-- Account HWM - Helm [DNT]
+currency(2265),	-- Account HWM - Neck [DNT]
+currency(2266),	-- Account HWM - Shoulders [DNT]
+currency(2267),	-- Account HWM - Chest [DNT]
+currency(2268),	-- Account HWM - Waist [DNT]
+currency(2269),	-- Account HWM - Legs [DNT]
+currency(2270),	-- Account HWM - Feet [DNT]
+currency(2271),	-- Account HWM - Wrist [DNT]
+currency(2272),	-- Account HWM - Hands [DNT]
+currency(2273),	-- Account HWM - Ring [DNT]
+currency(2274),	-- Account HWM - Trinket [DNT]
+currency(2275),	-- Account HWM - Cloak [DNT]
+currency(2276),	-- Account HWM - Two Hand [DNT]
+currency(2277),	-- Account HWM - Main Hand [DNT]
+currency(2278),	-- Account HWM - One Hand [DNT]
+currency(2279),	-- Account HWM - One Hand (Second) [DNT]
+currency(2280),	-- Account HWM - Off Hand [DNT]
+currency(2281),	-- Dragon Racing - Personal Best Record - Test
+currency(2312),	-- Dragon Racing - Personal Best Record - Kalimdor 01
+currency(2313),	-- Dragon Racing - Personal Best Record - Kalimdor 02
+currency(2314),	-- Dragon Racing - Personal Best Record - Kalimdor 03
+currency(2315),	-- Dragon Racing - Personal Best Record - Kalimdor 04
+currency(2316),	-- Dragon Racing - Personal Best Record - Kalimdor 05
+currency(2317),	-- Dragon Racing - Personal Best Record - Kalimdor 06
+currency(2318),	-- Dragon Racing - Personal Best Record - Kalimdor 07
+currency(2319),	-- Dragon Racing - Personal Best Record - Kalimdor 08
+currency(2320),	-- Dragon Racing - Personal Best Record - Kalimdor 09
+currency(2321),	-- Dragon Racing - Personal Best Record - Kalimdor 10
+currency(2322),	-- Dragon Racing - Personal Best Record - Kalimdor 11
+currency(2323),	-- Dragon Racing - Personal Best Record - Kalimdor 12
+currency(2324),	-- Dragon Racing - Personal Best Record - Kalimdor 13
+currency(2325),	-- Dragon Racing - Personal Best Record - Kalimdor 14
+currency(2326),	-- Dragon Racing - Personal Best Record - Kalimdor 15
+currency(2327),	-- Dragon Racing - Personal Best Record - Kalimdor 16
+currency(2328),	-- Dragon Racing - Personal Best Record - Kalimdor 17
+currency(2329),	-- Dragon Racing - Personal Best Record - Kalimdor 18
+currency(2330),	-- Dragon Racing - Personal Best Record - Kalimdor 19
+currency(2331),	-- Dragon Racing - Personal Best Record - Kalimdor 20
+currency(2332),	-- Dragon Racing - Personal Best Record - Kalimdor 21
+currency(2333),	-- Dragon Racing - Personal Best Record - Kalimdor 22
+currency(2334),	-- Dragon Racing - Personal Best Record - Kalimdor 23
+currency(2335),	-- Dragon Racing - Personal Best Record - Kalimdor 24
+currency(2336),	-- Dragon Racing - Personal Best Record - Kalimdor 25
+currency(2337),	-- Dragon Racing - Personal Best Record - Kalimdor 26
+currency(2338),	-- Dragon Racing - Personal Best Record - Kalimdor 27
+currency(2339),	-- Dragon Racing - Personal Best Record - Kalimdor 28
+currency(2340),	-- Dragon Racing - Personal Best Record - Kalimdor 29
+currency(2341),	-- Dragon Racing - Personal Best Record - Kalimdor 30
+currency(2342),	-- Dragon Racing - Personal Best Record - Kalimdor 01 Advanced
+currency(2343),	-- Dragon Racing - Personal Best Record - Kalimdor 02 Advanced
+currency(2344),	-- Dragon Racing - Personal Best Record - Kalimdor 03 Advanced
+currency(2345),	-- Dragon Racing - Personal Best Record - Kalimdor 04 Advanced
+currency(2346),	-- Dragon Racing - Personal Best Record - Kalimdor 05 Advanced
+currency(2347),	-- Dragon Racing - Personal Best Record - Kalimdor 06 Advanced
+currency(2348),	-- Dragon Racing - Personal Best Record - Kalimdor 07 Advanced
+currency(2349),	-- Dragon Racing - Personal Best Record - Kalimdor 08 Advanced
+currency(2350),	-- Dragon Racing - Personal Best Record - Kalimdor 09 Advanced
+currency(2351),	-- Dragon Racing - Personal Best Record - Kalimdor 10 Advanced
+currency(2352),	-- Dragon Racing - Personal Best Record - Kalimdor 11 Advanced
+currency(2353),	-- Dragon Racing - Personal Best Record - Kalimdor 12 Advanced
+currency(2354),	-- Dragon Racing - Personal Best Record - Kalimdor 13 Advanced
+currency(2355),	-- Dragon Racing - Personal Best Record - Kalimdor 14 Advanced
+currency(2356),	-- Dragon Racing - Personal Best Record - Kalimdor 15 Advanced
+currency(2357),	-- Dragon Racing - Personal Best Record - Kalimdor 16 Advanced
+currency(2358),	-- Dragon Racing - Personal Best Record - Kalimdor 17 Advanced
+currency(2359),	-- Dragon Racing - Personal Best Record - Kalimdor 18 Advanced
+currency(2360),	-- Dragon Racing - Personal Best Record - Kalimdor 19 Advanced
+currency(2361),	-- Dragon Racing - Personal Best Record - Kalimdor 20 Advanced
+currency(2362),	-- Dragon Racing - Personal Best Record - Kalimdor 21 Advanced
+currency(2363),	-- Dragon Racing - Personal Best Record - Kalimdor 22 Advanced
+currency(2364),	-- Dragon Racing - Personal Best Record - Kalimdor 23 Advanced
+currency(2365),	-- Dragon Racing - Personal Best Record - Kalimdor 24 Advanced
+currency(2366),	-- Dragon Racing - Personal Best Record - Kalimdor 25 Advanced
+currency(2367),	-- Dragon Racing - Personal Best Record - Kalimdor 26 Advanced
+currency(2368),	-- Dragon Racing - Personal Best Record - Kalimdor 27 Advanced
+currency(2369),	-- Dragon Racing - Personal Best Record - Kalimdor 28 Advanced
+currency(2370),	-- Dragon Racing - Personal Best Record - Kalimdor 29 Advanced
+currency(2371),	-- Dragon Racing - Personal Best Record - Kalimdor 30 Advanced
+currency(2372),	-- Dragon Racing - Personal Best Record - Kalimdor 01 Reverse
+currency(2373),	-- Dragon Racing - Personal Best Record - Kalimdor 02 Reverse
+currency(2374),	-- Dragon Racing - Personal Best Record - Kalimdor 03 Reverse
+currency(2375),	-- Dragon Racing - Personal Best Record - Kalimdor 04 Reverse
+currency(2376),	-- Dragon Racing - Personal Best Record - Kalimdor 05 Reverse
+currency(2377),	-- Dragon Racing - Personal Best Record - Kalimdor 06 Reverse
+currency(2378),	-- Dragon Racing - Personal Best Record - Kalimdor 07 Reverse
+currency(2379),	-- Dragon Racing - Personal Best Record - Kalimdor 08 Reverse
+currency(2380),	-- Dragon Racing - Personal Best Record - Kalimdor 09 Reverse
+currency(2381),	-- Dragon Racing - Personal Best Record - Kalimdor 10 Reverse
+currency(2382),	-- Dragon Racing - Personal Best Record - Kalimdor 11 Reverse
+currency(2383),	-- Dragon Racing - Personal Best Record - Kalimdor 12 Reverse
+currency(2384),	-- Dragon Racing - Personal Best Record - Kalimdor 13 Reverse
+currency(2385),	-- Dragon Racing - Personal Best Record - Kalimdor 14 Reverse
+currency(2386),	-- Dragon Racing - Personal Best Record - Kalimdor 15 Reverse
+currency(2387),	-- Dragon Racing - Personal Best Record - Kalimdor 16 Reverse
+currency(2388),	-- Dragon Racing - Personal Best Record - Kalimdor 17 Reverse
+currency(2389),	-- Dragon Racing - Personal Best Record - Kalimdor 18 Reverse
+currency(2390),	-- Dragon Racing - Personal Best Record - Kalimdor 19 Reverse
+currency(2391),	-- Dragon Racing - Personal Best Record - Kalimdor 20 Reverse
+currency(2392),	-- Dragon Racing - Personal Best Record - Kalimdor 21 Reverse
+currency(2393),	-- Dragon Racing - Personal Best Record - Kalimdor 22 Reverse
+currency(2394),	-- Dragon Racing - Personal Best Record - Kalimdor 23 Reverse
+currency(2395),	-- Dragon Racing - Personal Best Record - Kalimdor 24 Reverse
+currency(2396),	-- Dragon Racing - Personal Best Record - Kalimdor 25 Reverse
+currency(2397),	-- Dragon Racing - Personal Best Record - Kalimdor 26 Reverse
+currency(2398),	-- Dragon Racing - Personal Best Record - Kalimdor 27 Reverse
+currency(2399),	-- Dragon Racing - Personal Best Record - Kalimdor 28 Reverse
+currency(2400),	-- Dragon Racing - Personal Best Record - Kalimdor 29 Reverse
+currency(2401),	-- Dragon Racing - Personal Best Record - Kalimdor 30 Reverse
+currency(2402),	-- Renown - Loamm Niffen
+currency(2408),	-- Bonus Flightstones
+currency(2409),	-- Whelpling Crest Fragment Tracker [DNT]
+currency(2410),	-- Drake Crest Fragment Tracker [DNT]
+currency(2411),	-- Wyrm Crest Fragment Tracker [DNT]
+currency(2412),	-- Aspect Crest Fragment Tracker [DNT]
+currency(2413),	-- 10.1 Professions - Personal Tracker - S2 Spark Drops (Hidden)
+currency(2414),	-- 10.1.5 Whelp Daycare - Whelp Racing - Black - 001 (OJF)
+currency(2415),	-- 10.1.5 Whelp Daycare - Whelp Racing - Blue - 001 (OJF)
+currency(2416),	-- 10.1.5 Whelp Daycare - Whelp Racing - Bronze - 001 (OJF)
+currency(2417),	-- 10.1.5 Whelp Daycare - Whelp Racing - Green - 001 (OJF)
+currency(2418),	-- 10.1.5 Whelp Daycare - Whelp Racing - Red - 001 (OJF)
+currency(2419),	-- Test Currency Main [DNT]
+currency(2420),	-- Loamm Niffen
+currency(2421),	-- Dragon Racing - Personal Best Record - Waking Shores 01 Challeng
+currency(2422),	-- Dragon Racing - Personal Best Record - Waking Shores 01 ChallenR
+currency(2423),	-- Dragon Racing - Personal Best Record - Waking Shores 02 Challeng
+currency(2424),	-- Dragon Racing - Personal Best Record - Waking Shores 02 ChallenR
+currency(2425),	-- Dragon Racing - Personal Best Record - Waking Shores 03 Challeng
+currency(2426),	-- Dragon Racing - Personal Best Record - Waking Shores 03 ChallenR
+currency(2427),	-- Dragon Racing - Personal Best Record - Waking Shores 04 Challeng
+currency(2428),	-- Dragon Racing - Personal Best Record - Waking Shores 04 ChallenR
+currency(2429),	-- Dragon Racing - Personal Best Record - Waking Shores 05 Challeng
+currency(2430),	-- Dragon Racing - Personal Best Record - Waking Shores 05 ChallenR
+currency(2431),	-- Dragon Racing - Personal Best Record - Waking Shores 06 Challeng
+currency(2432),	-- Dragon Racing - Personal Best Record - Waking Shores 06 ChallenR
+currency(2433),	-- Dragon Racing - Personal Best Record - Waking Shores 07 Challeng
+currency(2434),	-- Dragon Racing - Personal Best Record - Waking Shores 07 ChallenR
+currency(2435),	-- Dragon Racing - Personal Best Record - Waking Shores 08 Challeng
+currency(2436),	-- Dragon Racing - Personal Best Record - Waking Shores 08 ChallenR
+currency(2437),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 01 Chall
+currency(2439),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 01 ChalR
+currency(2440),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 02 Chall
+currency(2441),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 02 ChalR
+currency(2442),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 03 Chall
+currency(2443),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 03 ChalR
+currency(2444),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 04 Chall
+currency(2445),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 04 ChalR
+currency(2446),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 05 Chall
+currency(2447),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 06 Chall
+currency(2448),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 07 Chall
+currency(2449),	-- Dragon Racing - Personal Best Record - Ohn'ahran Plains 07 ChalR
+currency(2450),	-- Dragon Racing - Personal Best Record - Azure Span 01 Challenge
+currency(2451),	-- Dragon Racing - Personal Best Record - Azure Span 01 Challenge R
+currency(2452),	-- Dragon Racing - Personal Best Record - Azure Span 02 Challenge
+currency(2453),	-- Dragon Racing - Personal Best Record - Azure Span 02 Challenge R
+currency(2454),	-- Dragon Racing - Personal Best Record - Azure Span 03 Challenge
+currency(2455),	-- Dragon Racing - Personal Best Record - Azure Span 03 Challenge R
+currency(2456),	-- Dragon Racing - Personal Best Record - Azure Span 04 Challenge
+currency(2457),	-- Dragon Racing - Personal Best Record - Azure Span 04 Challenge R
+currency(2458),	-- Dragon Racing - Personal Best Record - Azure Span 05 Challenge
+currency(2459),	-- Dragon Racing - Personal Best Record - Azure Span 05 Challenge R
+currency(2460),	-- Dragon Racing - Personal Best Record - Azure Span 06 Challenge
+currency(2461),	-- Dragon Racing - Personal Best Record - Azure Span 06 Challenge R
+currency(2462),	-- Dragon Racing - Personal Best Record - Thaldraszus 01 Challenge
+currency(2463),	-- Dragon Racing - Personal Best Record - Thaldraszus 01 ChallengeR
+currency(2464),	-- Dragon Racing - Personal Best Record - Thaldraszus 02 Challenge
+currency(2465),	-- Dragon Racing - Personal Best Record - Thaldraszus 02 ChallengeR
+currency(2466),	-- Dragon Racing - Personal Best Record - Thaldraszus 03 Challenge
+currency(2467),	-- Dragon Racing - Personal Best Record - Thaldraszus 03 ChallengeR
+currency(2468),	-- Dragon Racing - Personal Best Record - Thaldraszus 04 Challenge
+currency(2469),	-- Dragon Racing - Personal Best Record - Thaldraszus 04 ChallengeR
+currency(2470),	-- Dragon Racing - Personal Best Record - Thaldraszus 05 Challenge
+currency(2471),	-- Dragon Racing - Personal Best Record - Thaldraszus 05 ChallengeR
+currency(2472),	-- Dragon Racing - Personal Best Record - Thaldraszus 06 Challenge
+currency(2473),	-- Dragon Racing - Personal Best Record - Thaldraszus 06 ChallengeR
+currency(2474),	-- Dragon Racing - Personal Best Record - F Reach 01 Challenge
+currency(2475),	-- Dragon Racing - Personal Best Record - F Reach 01 Challenge R
+currency(2476),	-- Dragon Racing - Personal Best Record - F Reach 02 Challenge
+currency(2477),	-- Dragon Racing - Personal Best Record - F Reach 02 Challenge R
+currency(2478),	-- Dragon Racing - Personal Best Record - F Reach 03 Challenge
+currency(2479),	-- Dragon Racing - Personal Best Record - F Reach 03 Challenge R
+currency(2480),	-- Dragon Racing - Personal Best Record - F Reach 04 Challenge
+currency(2481),	-- Dragon Racing - Personal Best Record - F Reach 04 Challenge R
+currency(2482),	-- Dragon Racing - Personal Best Record - F Reach 05 Challenge
+currency(2483),	-- Dragon Racing - Personal Best Record - F Reach 05 Challenge R
+currency(2484),	-- Dragon Racing - Personal Best Record - F Reach 06 Challenge
+currency(2485),	-- Dragon Racing - Personal Best Record - F Reach 06 Challenge R
+currency(2486),	-- Dragon Racing - Personal Best Record - Z Cavern 01 Challenge
+currency(2487),	-- Dragon Racing - Personal Best Record - Z Cavern 01 Challenge R
+currency(2488),	-- Dragon Racing - Personal Best Record - Z Cavern 02 Challenge
+currency(2489),	-- Dragon Racing - Personal Best Record - Z Cavern 02 Challenge R
+currency(2490),	-- Dragon Racing - Personal Best Record - Z Cavern 03 Challenge
+currency(2491),	-- Dragon Racing - Personal Best Record - Z Cavern 03 Challenge R
+currency(2492),	-- Dragon Racing - Personal Best Record - Z Cavern 04 Challenge
+currency(2493),	-- Dragon Racing - Personal Best Record - Z Cavern 04 Challenge R
+currency(2494),	-- Dragon Racing - Personal Best Record - Z Cavern 05 Challenge
+currency(2495),	-- Dragon Racing - Personal Best Record - Z Cavern 05 Challenge R
+currency(2496),	-- Dragon Racing - Personal Best Record - Z Cavern 06 Challenge
+currency(2497),	-- Dragon Racing - Personal Best Record - Z Cavern 06 Challenge R
+currency(2498),	-- Dragon Racing - Personal Best Record - Kalimdor 01 Challenge
+currency(2499),	-- Dragon Racing - Personal Best Record - Kalimdor 01 Challenge R
+currency(2500),	-- Dragon Racing - Personal Best Record - Kalimdor 02 Challenge
+currency(2501),	-- Dragon Racing - Personal Best Record - Kalimdor 02 Challenge R
+currency(2502),	-- Dragon Racing - Personal Best Record - Kalimdor 03 Challenge
+currency(2503),	-- Dragon Racing - Personal Best Record - Kalimdor 03 Challenge R
+currency(2504),	-- Dragon Racing - Personal Best Record - Kalimdor 04 Challenge
+currency(2505),	-- Dragon Racing - Personal Best Record - Kalimdor 04 Challenge R
+currency(2506),	-- Dragon Racing - Personal Best Record - Kalimdor 05 Challenge
+currency(2507),	-- Dragon Racing - Personal Best Record - Kalimdor 05 Challenge R
+currency(2508),	-- Dragon Racing - Personal Best Record - Kalimdor 06 Challenge
+currency(2509),	-- Dragon Racing - Personal Best Record - Kalimdor 06 Challenge R
+currency(2510),	-- Dragon Racing - Personal Best Record - Kalimdor 07 Challenge
+currency(2511),	-- Dragon Racing - Personal Best Record - Kalimdor 07 Challenge R
+currency(2512),	-- Dragon Racing - Personal Best Record - Kalimdor 08 Challenge
+currency(2513),	-- Dragon Racing - Personal Best Record - Kalimdor 08 Challenge R
+currency(2514),	-- Dragon Racing - Personal Best Record - Kalimdor 09 Challenge
+currency(2515),	-- Dragon Racing - Personal Best Record - Kalimdor 09 Challenge R
+currency(2516),	-- Dragon Racing - Personal Best Record - Kalimdor 10 Challenge
+currency(2517),	-- Dragon Racing - Personal Best Record - Kalimdor 10 Challenge R
+currency(2518),	-- Dragon Racing - Personal Best Record - Kalimdor 11 Challenge
+currency(2519),	-- Dragon Racing - Personal Best Record - Kalimdor 11 Challenge R
+currency(2520),	-- Dragon Racing - Personal Best Record - Kalimdor 12 Challenge
+currency(2521),	-- Dragon Racing - Personal Best Record - Kalimdor 12 Challenge R
+currency(2522),	-- Dragon Racing - Personal Best Record - Kalimdor 13 Challenge
+currency(2523),	-- Dragon Racing - Personal Best Record - Kalimdor 13 Challenge R
+currency(2524),	-- Dragon Racing - Personal Best Record - Kalimdor 14 Challenge
+currency(2525),	-- Dragon Racing - Personal Best Record - Kalimdor 14 Challenge R
+currency(2526),	-- Dragon Racing - Personal Best Record - Kalimdor 15 Challenge
+currency(2527),	-- Dragon Racing - Personal Best Record - Kalimdor 15 Challenge R
+currency(2528),	-- Dragon Racing - Personal Best Record - Kalimdor 16 Challenge
+currency(2529),	-- Dragon Racing - Personal Best Record - Kalimdor 16 Challenge R
+currency(2531),	-- zzOLD Delving Gems
+currency(2533),	-- Renascent Shadowflame
+currency(2536),	-- Dragon Racing - Personal Best Record - E Kingdoms 01
+currency(2537),	-- Dragon Racing - Personal Best Record - E Kingdoms 02
+currency(2538),	-- Dragon Racing - Personal Best Record - E Kingdoms 03
+currency(2539),	-- Dragon Racing - Personal Best Record - E Kingdoms 04
+currency(2540),	-- Dragon Racing - Personal Best Record - E Kingdoms 05
+currency(2541),	-- Dragon Racing - Personal Best Record - E Kingdoms 06
+currency(2542),	-- Dragon Racing - Personal Best Record - E Kingdoms 07
+currency(2543),	-- Dragon Racing - Personal Best Record - E Kingdoms 08
+currency(2544),	-- Dragon Racing - Personal Best Record - E Kingdoms 09
+currency(2545),	-- Dragon Racing - Personal Best Record - E Kingdoms 10
+currency(2546),	-- Dragon Racing - Personal Best Record - E Kingdoms 11
+currency(2547),	-- Dragon Racing - Personal Best Record - E Kingdoms 12
+currency(2548),	-- Dragon Racing - Personal Best Record - E Kingdoms 13
+currency(2549),	-- Dragon Racing - Personal Best Record - E Kingdoms 14
+currency(2550),	-- Dragon Racing - Personal Best Record - E Kingdoms 15
+currency(2551),	-- Dragon Racing - Personal Best Record - E Kingdoms 16
+currency(2552),	-- Dragon Racing - Personal Best Record - E Kingdoms 01 Advanced
+currency(2553),	-- Dragon Racing - Personal Best Record - E Kingdoms 02 Advanced
+currency(2554),	-- Dragon Racing - Personal Best Record - E Kingdoms 03 Advanced
+currency(2555),	-- Dragon Racing - Personal Best Record - E Kingdoms 04 Advanced
+currency(2556),	-- Dragon Racing - Personal Best Record - E Kingdoms 05 Advanced
+currency(2557),	-- Dragon Racing - Personal Best Record - E Kingdoms 06 Advanced
+currency(2558),	-- Dragon Racing - Personal Best Record - E Kingdoms 07 Advanced
+currency(2559),	-- Dragon Racing - Personal Best Record - E Kingdoms 08 Advanced
+currency(2560),	-- Dragon Racing - Personal Best Record - E Kingdoms 09 Advanced
+currency(2561),	-- Dragon Racing - Personal Best Record - E Kingdoms 10 Advanced
+currency(2562),	-- Dragon Racing - Personal Best Record - E Kingdoms 11 Advanced
+currency(2563),	-- Dragon Racing - Personal Best Record - E Kingdoms 12 Advanced
+currency(2564),	-- Dragon Racing - Personal Best Record - E Kingdoms 13 Advanced
+currency(2565),	-- Dragon Racing - Personal Best Record - E Kingdoms 14 Advanced
+currency(2566),	-- Dragon Racing - Personal Best Record - E Kingdoms 15 Advanced
+currency(2567),	-- Dragon Racing - Personal Best Record - E Kingdoms 16 Advanced
+currency(2568),	-- Dragon Racing - Personal Best Record - E Kingdoms 01 Reverse
+currency(2569),	-- Dragon Racing - Personal Best Record - E Kingdoms 02 Reverse
+currency(2570),	-- Dragon Racing - Personal Best Record - E Kingdoms 03 Reverse
+currency(2571),	-- Dragon Racing - Personal Best Record - E Kingdoms 04 Reverse
+currency(2572),	-- Dragon Racing - Personal Best Record - E Kingdoms 05 Reverse
+currency(2573),	-- Dragon Racing - Personal Best Record - E Kingdoms 06 Reverse
+currency(2574),	-- Dragon Racing - Personal Best Record - E Kingdoms 07 Reverse
+currency(2575),	-- Dragon Racing - Personal Best Record - E Kingdoms 08 Reverse
+currency(2576),	-- Dragon Racing - Personal Best Record - E Kingdoms 09 Reverse
+currency(2577),	-- Dragon Racing - Personal Best Record - E Kingdoms 10 Reverse
+currency(2578),	-- Dragon Racing - Personal Best Record - E Kingdoms 11 Reverse
+currency(2579),	-- Dragon Racing - Personal Best Record - E Kingdoms 12 Reverse
+currency(2580),	-- Dragon Racing - Personal Best Record - E Kingdoms 13 Reverse
+currency(2581),	-- Dragon Racing - Personal Best Record - E Kingdoms 14 Reverse
+currency(2582),	-- Dragon Racing - Personal Best Record - E Kingdoms 15 Reverse
+currency(2583),	-- Dragon Racing - Personal Best Record - E Kingdoms 16 Reverse
+currency(2590),	-- Lost Transcripts
+currency(2591),	-- 11.0 Delves - Score Inside
+currency(2592),	-- 11.0 Delves - Reputation Score
+currency(2595),	-- Dragon Racing - Medal Widget - Normal [DNT]
+currency(2596),	-- Dragon Racing - Medal Widget - Advanced [DNT]
+currency(2597),	-- Dragon Racing - Medal Widget - Reverse [DNT]
+currency(2598),	-- Dragon Racing - Medal Widget - Temp [DNT]
+currency(2599),	-- Dragon Racing - Medal Widget - Temp2 [DNT]
+currency(2600),	-- Dragon Racing - Personal Best Record - Outland 01
+currency(2601),	-- Dragon Racing - Personal Best Record - Outland 02
+currency(2602),	-- Dragon Racing - Personal Best Record - Outland 03
+currency(2603),	-- Dragon Racing - Personal Best Record - Outland 04
+currency(2604),	-- Dragon Racing - Personal Best Record - Outland 05
+currency(2605),	-- Dragon Racing - Personal Best Record - Outland 06
+currency(2606),	-- Dragon Racing - Personal Best Record - Outland 07
+currency(2607),	-- Dragon Racing - Personal Best Record - Outland 08
+currency(2608),	-- Dragon Racing - Personal Best Record - Outland 09
+currency(2609),	-- Dragon Racing - Personal Best Record - Outland 10
+currency(2610),	-- Dragon Racing - Personal Best Record - Outland 11
+currency(2611),	-- Dragon Racing - Personal Best Record - Outland 12
+currency(2612),	-- Dragon Racing - Personal Best Record - Outland 13
+currency(2613),	-- Dragon Racing - Personal Best Record - Outland 14
+currency(2614),	-- Dragon Racing - Personal Best Record - Outland 15
+currency(2615),	-- Dragon Racing - Personal Best Record - Outland 01 Advanced
+currency(2616),	-- Dragon Racing - Personal Best Record - Outland 02 Advanced
+currency(2617),	-- Dragon Racing - Personal Best Record - Outland 03 Advanced
+currency(2618),	-- Dragon Racing - Personal Best Record - Outland 04 Advanced
+currency(2619),	-- Dragon Racing - Personal Best Record - Outland 05 Advanced
+currency(2620),	-- Dragon Racing - Personal Best Record - Outland 06 Advanced
+currency(2621),	-- Dragon Racing - Personal Best Record - Outland 07 Advanced
+currency(2622),	-- Dragon Racing - Personal Best Record - Outland 08 Advanced
+currency(2623),	-- Dragon Racing - Personal Best Record - Outland 09 Advanced
+currency(2624),	-- Dragon Racing - Personal Best Record - Outland 10 Advanced
+currency(2625),	-- Dragon Racing - Personal Best Record - Outland 11 Advanced
+currency(2626),	-- Dragon Racing - Personal Best Record - Outland 12 Advanced
+currency(2627),	-- Dragon Racing - Personal Best Record - Outland 13 Advanced
+currency(2628),	-- Dragon Racing - Personal Best Record - Outland 14 Advanced
+currency(2629),	-- Dragon Racing - Personal Best Record - Outland 15 Advanced
+currency(2630),	-- Dragon Racing - Personal Best Record - Outland 01 Reverse
+currency(2631),	-- Dragon Racing - Personal Best Record - Outland 02 Reverse
+currency(2632),	-- Dragon Racing - Personal Best Record - Outland 03 Reverse
+currency(2633),	-- Dragon Racing - Personal Best Record - Outland 04 Reverse
+currency(2634),	-- Dragon Racing - Personal Best Record - Outland 05 Reverse
+currency(2635),	-- Dragon Racing - Personal Best Record - Outland 06 Reverse
+currency(2636),	-- Dragon Racing - Personal Best Record - Outland 07 Reverse
+currency(2637),	-- Dragon Racing - Personal Best Record - Outland 08 Reverse
+currency(2638),	-- Dragon Racing - Personal Best Record - Outland 09 Reverse
+currency(2639),	-- Dragon Racing - Personal Best Record - Outland 10 Reverse
+currency(2640),	-- Dragon Racing - Personal Best Record - Outland 11 Reverse
+currency(2641),	-- Dragon Racing - Personal Best Record - Outland 12 Reverse
+currency(2642),	-- Dragon Racing - Personal Best Record - Outland 13 Reverse
+currency(2643),	-- Dragon Racing - Personal Best Record - Outland 14 Reverse
+currency(2644),	-- Dragon Racing - Personal Best Record - Outland 15 Reverse
+currency(2649),	-- [DNT] The Currency Formerly Named Dream Ephemera
+currency(2651),	-- Seedbloom
+currency(2652),	-- Dream Wardens
+currency(2653),	-- Renown - Dream Wardens
+currency(2654),	-- Dragon Racing - Kalimdor Cup Preferred Mount
+currency(2655),	-- Revives
+currency(2658),	-- Dragon Racing - Personal Best Record - Outland 16
+currency(2659),	-- Dragon Racing - Personal Best Record - Outland 17
+currency(2660),	-- Dragon Racing - Personal Best Record - Outland 18
+currency(2661),	-- Dragon Racing - Personal Best Record - Outland 19
+currency(2662),	-- Dragon Racing - Personal Best Record - Outland 20
+currency(2663),	-- Dragon Racing - Personal Best Record - Outland 21
+currency(2664),	-- Dragon Racing - Personal Best Record - Outland 16 Advanced
+currency(2665),	-- Dragon Racing - Personal Best Record - Outland 17 Advanced
+currency(2666),	-- Dragon Racing - Personal Best Record - Outland 18 Advanced
+currency(2667),	-- Dragon Racing - Personal Best Record - Outland 19 Advanced
+currency(2668),	-- Dragon Racing - Personal Best Record - Outland 20 Advanced
+currency(2669),	-- Dragon Racing - Personal Best Record - Outland 21 Advanced
+currency(2670),	-- Dragon Racing - Personal Best Record - Outland 16 Reverse
+currency(2671),	-- Dragon Racing - Personal Best Record - Outland 17 Reverse
+currency(2672),	-- Dragon Racing - Personal Best Record - Outland 18 Reverse
+currency(2673),	-- Dragon Racing - Personal Best Record - Outland 19 Reverse
+currency(2674),	-- Dragon Racing - Personal Best Record - Outland 20 Reverse
+currency(2675),	-- Dragon Racing - Personal Best Record - Outland 21 Reverse
+currency(2676),	-- Dragon Racing - Personal Best Record - Emerald Dream 01
+currency(2677),	-- Dragon Racing - Personal Best Record - Emerald Dream 02
+currency(2678),	-- Dragon Racing - Personal Best Record - Emerald Dream 03
+currency(2679),	-- Dragon Racing - Personal Best Record - Emerald Dream 04
+currency(2680),	-- Dragon Racing - Personal Best Record - Emerald Dream 05
+currency(2681),	-- Dragon Racing - Personal Best Record - Emerald Dream 06
+currency(2682),	-- Dragon Racing - Personal Best Record - Emerald Dream 01 Advanced
+currency(2683),	-- Dragon Racing - Personal Best Record - Emerald Dream 02 Advanced
+currency(2684),	-- Dragon Racing - Personal Best Record - Emerald Dream 03 Advanced
+currency(2685),	-- Dragon Racing - Personal Best Record - Emerald Dream 04 Advanced
+currency(2686),	-- Dragon Racing - Personal Best Record - Emerald Dream 05 Advanced
+currency(2687),	-- Dragon Racing - Personal Best Record - Emerald Dream 06 Advanced
+currency(2688),	-- Dragon Racing - Personal Best Record - Emerald Dream 01 Reverse
+currency(2689),	-- Dragon Racing - Personal Best Record - Emerald Dream 02 Reverse
+currency(2690),	-- Dragon Racing - Personal Best Record - Emerald Dream 03 Reverse
+currency(2691),	-- Dragon Racing - Personal Best Record - Emerald Dream 04 Reverse
+currency(2692),	-- Dragon Racing - Personal Best Record - Emerald Dream 05 Reverse
+currency(2693),	-- Dragon Racing - Personal Best Record - Emerald Dream 06 Reverse
+currency(2694),	-- Dragon Racing - Personal Best Record - ED 01 Challenge
+currency(2695),	-- Dragon Racing - Personal Best Record - ED 01 Challenge R
+currency(2696),	-- Dragon Racing - Personal Best Record - ED 02 Challenge
+currency(2697),	-- Dragon Racing - Personal Best Record - ED 02 Challenge R
+currency(2698),	-- Dragon Racing - Personal Best Record - ED 03 Challenge
+currency(2699),	-- Dragon Racing - Personal Best Record - ED 03 Challenge R
+currency(2700),	-- Dragon Racing - Personal Best Record - ED 04 Challenge
+currency(2701),	-- Dragon Racing - Personal Best Record - ED 04 Challenge R
+currency(2702),	-- Dragon Racing - Personal Best Record - ED 05 Challenge
+currency(2703),	-- Dragon Racing - Personal Best Record - ED 05 Challenge R
+currency(2704),	-- Dragon Racing - Personal Best Record - ED 06 Challenge
+currency(2705),	-- Dragon Racing - Personal Best Record - ED 06 Challenge R
+currency(2710),	-- Study of Shadowflame
+currency(2715),	-- Whelpling's Dreaming Crests
+currency(2716),	-- Drake's Dreaming Crests
+currency(2717),	-- Wyrm's Dreaming Crests
+currency(2718),	-- Aspect's Dreaming Crests
+currency(2720),	-- Dragon Racing - Personal Best Record - Northrend 01
+currency(2721),	-- Dragon Racing - Personal Best Record - Northrend 02
+currency(2722),	-- Dragon Racing - Personal Best Record - Northrend 03
+currency(2723),	-- Dragon Racing - Personal Best Record - Northrend 04
+currency(2724),	-- Dragon Racing - Personal Best Record - Northrend 05
+currency(2725),	-- Dragon Racing - Personal Best Record - Northrend 06
+currency(2726),	-- Dragon Racing - Personal Best Record - Northrend 07
+currency(2727),	-- Dragon Racing - Personal Best Record - Northrend 08
+currency(2728),	-- Dragon Racing - Personal Best Record - Northrend 09
+currency(2729),	-- Dragon Racing - Personal Best Record - Northrend 10
+currency(2730),	-- Dragon Racing - Personal Best Record - Northrend 11
+currency(2731),	-- Dragon Racing - Personal Best Record - Northrend 12
+currency(2732),	-- Dragon Racing - Personal Best Record - Northrend 13
+currency(2733),	-- Dragon Racing - Personal Best Record - Northrend 14
+currency(2734),	-- Dragon Racing - Personal Best Record - Northrend 15
+currency(2735),	-- Dragon Racing - Personal Best Record - Northrend 16
+currency(2736),	-- Dragon Racing - Personal Best Record - Northrend 17
+currency(2737),	-- Dragon Racing - Personal Best Record - Northrend 18
+currency(2738),	-- Dragon Racing - Personal Best Record - Northrend 01 Advanced
+currency(2739),	-- Dragon Racing - Personal Best Record - Northrend 02 Advanced
+currency(2740),	-- Dragon Racing - Personal Best Record - Northrend 03 Advanced
+currency(2741),	-- Dragon Racing - Personal Best Record - Northrend 04 Advanced
+currency(2742),	-- Dragon Racing - Personal Best Record - Northrend 05 Advanced
+currency(2743),	-- Dragon Racing - Personal Best Record - Northrend 06 Advanced
+currency(2744),	-- Dragon Racing - Personal Best Record - Northrend 07 Advanced
+currency(2745),	-- Dragon Racing - Personal Best Record - Northrend 08 Advanced
+currency(2746),	-- Dragon Racing - Personal Best Record - Northrend 09 Advanced
+currency(2747),	-- Dragon Racing - Personal Best Record - Northrend 10 Advanced
+currency(2748),	-- Dragon Racing - Personal Best Record - Northrend 11 Advanced
+currency(2749),	-- Dragon Racing - Personal Best Record - Northrend 12 Advanced
+currency(2750),	-- Dragon Racing - Personal Best Record - Northrend 13 Advanced
+currency(2751),	-- Dragon Racing - Personal Best Record - Northrend 14 Advanced
+currency(2752),	-- Dragon Racing - Personal Best Record - Northrend 15 Advanced
+currency(2753),	-- Dragon Racing - Personal Best Record - Northrend 16 Advanced
+currency(2754),	-- Dragon Racing - Personal Best Record - Northrend 17 Advanced
+currency(2755),	-- Dragon Racing - Personal Best Record - Northrend 18 Advanced
+currency(2756),	-- Dragon Racing - Personal Best Record - Northrend 01 Reverse
+currency(2757),	-- Dragon Racing - Personal Best Record - Northrend 02 Reverse
+currency(2758),	-- Dragon Racing - Personal Best Record - Northrend 03 Reverse
+currency(2759),	-- Dragon Racing - Personal Best Record - Northrend 04 Reverse
+currency(2760),	-- Dragon Racing - Personal Best Record - Northrend 05 Reverse
+currency(2761),	-- Dragon Racing - Personal Best Record - Northrend 06 Reverse
+currency(2762),	-- Dragon Racing - Personal Best Record - Northrend 07 Reverse
+currency(2763),	-- Dragon Racing - Personal Best Record - Northrend 08 Reverse
+currency(2764),	-- Dragon Racing - Personal Best Record - Northrend 09 Reverse
+currency(2765),	-- Dragon Racing - Personal Best Record - Northrend 10 Reverse
+currency(2766),	-- Dragon Racing - Personal Best Record - Northrend 11 Reverse
+currency(2767),	-- Dragon Racing - Personal Best Record - Northrend 12 Reverse
+currency(2768),	-- Dragon Racing - Personal Best Record - Northrend 13 Reverse
+currency(2769),	-- Dragon Racing - Personal Best Record - Northrend 14 Reverse
+currency(2770),	-- Dragon Racing - Personal Best Record - Northrend 15 Reverse
+currency(2771),	-- Dragon Racing - Personal Best Record - Northrend 16 Reverse
+currency(2772),	-- Dragon Racing - Personal Best Record - Northrend 17 Reverse
+currency(2773),	-- Dragon Racing - Personal Best Record - Northrend 18 Reverse
+currency(2774),	-- 10.2 Professions - Personal Tracker - S3 Spark Drops (Hidden)
+currency(2778),	-- Bronze
+currency(2780),	-- Echoed Ephemera Tracker [DNT]
+currency(2784),	-- 10.2 Legendary - Progressive Advance - Tracker
+currency(2796),	-- Renascent Dream
+currency(2799),	-- [DNT] Beetle Ranch Invisible Currency
+currency(2805),	-- Whelpling's Awakened Crest
+currency(2808),	-- Drake's Awakened Crest
+currency(2810),	-- Wyrm's Awakened Crest
+currency(2811),	-- Aspect's Awakened Crest
+currency(2813),	-- Harmonized Silk
+currency(2814),	-- Renown-Keg Leg's Crew
+currency(2822),	-- [DNT] Corgi Cache
+currency(2839),	-- [DNT] Awakening Currency
+currency(2878),	-- 10.2 Professions - Personal Tracker - Legendary - Restored Leaf
+currency(2897),	-- Council of Dornogal
+currency(2898),	-- Renown - The Assembly of the Deeps
+currency(2899),	-- Hallowfall Arathi
+currency(2900),	-- Renown - Council of Dornogal
+currency(2901),	-- Renown - Hallowfall Arathi
+currency(2902),	-- The Assembly of the Deeps
+currency(2903),	-- The Severed Threads
+currency(2904),	-- Renown - The Severed Threads
+currency(2906),	-- Plunder
+currency(2907),	-- Pirate Booty Visual
+currency(2908),	-- Dominance Offensive
+currency(2909),	-- Operation: Shieldwall
+currency(2910),	-- The Klaxxi
+currency(2911),	-- Order of the Cloud Serpent
+currency(2912),	-- Renascent Awakening
+currency(2913),	-- Shado-Pan
+currency(2918),	-- Weathered Harbinger Crest
+currency(2919),	-- Carved Harbinger Crest
+currency(2920),	-- Runed Harbinger Crest
+currency(2921),	-- Gilded Harbinger Crest
+currency(2922),	-- Plunder
+currency(2923),	-- Dragon Racing - Personal Best Record - 11 Z1 R1 Easy
+currency(2924),	-- Dragon Racing - Personal Best Record - 11 Z1 R2 Easy
+currency(2925),	-- Dragon Racing - Personal Best Record - 11 Z1 R3 Easy
+currency(2926),	-- Dragon Racing - Personal Best Record - 11 Z1 R4 Easy
+currency(2927),	-- Dragon Racing - Personal Best Record - 11 Z1 R5 Easy
+currency(2928),	-- Dragon Racing - Personal Best Record - 11 Z1 R6 Easy
+currency(2929),	-- Dragon Racing - Personal Best Record - 11 Z1 R1 Advanced
+currency(2930),	-- Dragon Racing - Personal Best Record - 11 Z1 R2 Advanced
+currency(2931),	-- Dragon Racing - Personal Best Record - 11 Z1 R3 Advanced
+currency(2932),	-- Dragon Racing - Personal Best Record - 11 Z1 R4 Advanced
+currency(2933),	-- Dragon Racing - Personal Best Record - 11 Z1 R5 Advanced
+currency(2934),	-- Dragon Racing - Personal Best Record - 11 Z1 R6 Advanced
+currency(2935),	-- Dragon Racing - Personal Best Record - 11 Z1 R1 Reverse
+currency(2936),	-- Dragon Racing - Personal Best Record - 11 Z1 R2 Reverse
+currency(2937),	-- Dragon Racing - Personal Best Record - 11 Z1 R3 Reverse
+currency(2938),	-- Dragon Racing - Personal Best Record - 11 Z1 R4 Reverse
+currency(2939),	-- Dragon Racing - Personal Best Record - 11 Z1 R5 Reverse
+currency(2940),	-- Dragon Racing - Personal Best Record - 11 Z1 R6 Reverse
+currency(2941),	-- Dragon Racing - Personal Best Record - 11 Z2 R1 Easy
+currency(2942),	-- Dragon Racing - Personal Best Record - 11 Z2 R2 Easy
+currency(2943),	-- Dragon Racing - Personal Best Record - 11 Z2 R3 Easy
+currency(2944),	-- Dragon Racing - Personal Best Record - 11 Z2 R4 Easy
+currency(2945),	-- Dragon Racing - Personal Best Record - 11 Z2 R5 Easy
+currency(2946),	-- Dragon Racing - Personal Best Record - 11 Z2 R6 Easy
+currency(2947),	-- Dragon Racing - Personal Best Record - 11 Z2 R1 Advanced
+currency(2948),	-- Dragon Racing - Personal Best Record - 11 Z2 R2 Advanced
+currency(2949),	-- Dragon Racing - Personal Best Record - 11 Z2 R3 Advanced
+currency(2950),	-- Dragon Racing - Personal Best Record - 11 Z2 R4 Advanced
+currency(2951),	-- Dragon Racing - Personal Best Record - 11 Z2 R5 Advanced
+currency(2952),	-- Dragon Racing - Personal Best Record - 11 Z2 R6 Advanced
+currency(2953),	-- Dragon Racing - Personal Best Record - 11 Z2 R1 Reverse
+currency(2954),	-- Dragon Racing - Personal Best Record - 11 Z2 R2 Reverse
+currency(2955),	-- Dragon Racing - Personal Best Record - 11 Z2 R3 Reverse
+currency(2956),	-- Dragon Racing - Personal Best Record - 11 Z2 R4 Reverse
+currency(2957),	-- Dragon Racing - Personal Best Record - 11 Z2 R5 Reverse
+currency(2958),	-- Dragon Racing - Personal Best Record - 11 Z2 R6 Reverse
+currency(2959),	-- Dragon Racing - Personal Best Record - 11 Z3 R1 Easy
+currency(2960),	-- Dragon Racing - Personal Best Record - 11 Z3 R2 Easy
+currency(2961),	-- Dragon Racing - Personal Best Record - 11 Z3 R3 Easy
+currency(2962),	-- Dragon Racing - Personal Best Record - 11 Z3 R4 Easy
+currency(2963),	-- Dragon Racing - Personal Best Record - 11 Z3 R5 Easy
+currency(2964),	-- Dragon Racing - Personal Best Record - 11 Z3 R6 Easy
+currency(2965),	-- Dragon Racing - Personal Best Record - 11 Z3 R1 Advanced
+currency(2966),	-- Dragon Racing - Personal Best Record - 11 Z3 R2 Advanced
+currency(2967),	-- Dragon Racing - Personal Best Record - 11 Z3 R3 Advanced
+currency(2968),	-- Dragon Racing - Personal Best Record - 11 Z3 R4 Advanced
+currency(2969),	-- Dragon Racing - Personal Best Record - 11 Z3 R5 Advanced
+currency(2970),	-- Dragon Racing - Personal Best Record - 11 Z3 R6 Advanced
+currency(2971),	-- Dragon Racing - Personal Best Record - 11 Z3 R1 Reverse
+currency(2972),	-- Dragon Racing - Personal Best Record - 11 Z3 R2 Reverse
+currency(2973),	-- Dragon Racing - Personal Best Record - 11 Z3 R3 Reverse
+currency(2974),	-- Dragon Racing - Personal Best Record - 11 Z3 R4 Reverse
+currency(2975),	-- Dragon Racing - Personal Best Record - 11 Z3 R5 Reverse
+currency(2976),	-- Dragon Racing - Personal Best Record - 11 Z3 R6 Reverse
+currency(2977),	-- Dragon Racing - Personal Best Record - 11 Z5 R1 Easy
+currency(2978),	-- Dragon Racing - Personal Best Record - 11 Z5 R2 Easy
+currency(2979),	-- Dragon Racing - Personal Best Record - 11 Z5 R3 Easy
+currency(2980),	-- Dragon Racing - Personal Best Record - 11 Z5 R4 Easy
+currency(2981),	-- Dragon Racing - Personal Best Record - 11 Z5 R5 Easy
+currency(2982),	-- Dragon Racing - Personal Best Record - 11 Z5 R6 Easy
+currency(2983),	-- Dragon Racing - Personal Best Record - 11 Z5 R1 Advanced
+currency(2984),	-- Dragon Racing - Personal Best Record - 11 Z5 R2 Advanced
+currency(2985),	-- Dragon Racing - Personal Best Record - 11 Z5 R3 Advanced
+currency(2986),	-- Dragon Racing - Personal Best Record - 11 Z5 R4 Advanced
+currency(2987),	-- Dragon Racing - Personal Best Record - 11 Z5 R5 Advanced
+currency(2988),	-- Dragon Racing - Personal Best Record - 11 Z5 R6 Advanced
+currency(2989),	-- Dragon Racing - Personal Best Record - 11 Z5 R1 Reverse
+currency(2990),	-- Dragon Racing - Personal Best Record - 11 Z5 R2 Reverse
+currency(2991),	-- Dragon Racing - Personal Best Record - 11 Z5 R3 Reverse
+currency(2992),	-- Dragon Racing - Personal Best Record - 11 Z5 R4 Reverse
+currency(2993),	-- Dragon Racing - Personal Best Record - 11 Z5 R5 Reverse
+currency(2994),	-- Dragon Racing - Personal Best Record - 11 Z5 R6 Reverse
+currency(3008),	-- Valorstones
+currency(3111),	-- Weathered Undermine Crest
+currency(3112),	-- Carved Undermine Crest
+currency(3113),	-- Runed Undermine Crest
+currency(3114),	-- Gilded Undermine Crest
+currency(3116),	-- Essence of Kaja'mite
+currency(3118),	-- The Cartels of Undermine
+currency(3119),	-- Dragon Racing - Personal Best Record - 11 Z6 R1 Easy
+currency(3120),	-- The Cartels of Undermine
+currency(3121),	-- Dragon Racing - Personal Best Record - 11 Z6 R1 Reverse
+currency(3122),	-- Dragon Racing - Personal Best Record - 11 Z6 R2 Easy
+currency(3123),	-- Dragon Racing - Personal Best Record - 11 Z6 R2 Reverse
+currency(3124),	-- Dragon Racing - Personal Best Record - 11 Z6 R3 Easy
+currency(3125),	-- Dragon Racing - Personal Best Record - 11 Z6 R3 Reverse
+currency(3126),	-- Dragon Racing - Personal Best Record - 11 Z6 R4 Easy
+currency(3127),	-- Dragon Racing - Personal Best Record - 11 Z6 R4 Reverse
+currency(3128),	-- Renown - The K'aresh Trust
+currency(3129),	-- The K'aresh Trust
+currency(3130),	-- Renown - Season 2 Delves
+currency(3131),	-- Delver's Journey
+currency(3132),	-- 11.1 Professions - Personal Tracker - S2 Spark Drops (Hidden)
+currency(3135),	-- 11.1 Delves - Personal Tracker - S2 Weekly Elise Turn-In(Hidden)
+currency(3136),	-- Gallagio Loyalty Rewards Club
+currency(3137),	-- Renown - Gallagio Loyalty Rewards Club
+currency(3140),	-- 11.1.5 Arathi - Renown Rank
+currency(3141),	-- Starlight Spark Dust
+currency(3147),	-- 11.0 Delves - Vendor - Bountiful Key Tracker - Cap
+currency(3161),	-- Alchemy Concentration
+currency(3162),	-- Blacksmithing Concentration
+currency(3163),	-- Enchanting Concentration
+currency(3164),	-- Engineering Concentration
+currency(3165),	-- Inscription Concentration
+currency(3166),	-- Jewelcrafting Concentration
+currency(3167),	-- Leatherworking Concentration
+currency(3168),	-- Tailoring Concentration
+currency(3169),	-- The Bilgewater Cartel
+currency(3170),	-- The Bilgewater Cartel
+currency(3171),	-- The Blackwater Cartel
+currency(3172),	-- The Blackwater Cartel
+currency(3173),	-- The Steamwheedle Cartel
+currency(3174),	-- The Steamwheedle Cartel
+currency(3175),	-- The Venture Company
+currency(3176),	-- Venture Company
+currency(3178),	-- Darkfuse Solutions
+currency(3181),	-- Dragon Racing - Personal Best Record - 11 Z6 R5 Easy
+currency(3182),	-- Dragon Racing - Personal Best Record - 11 Z6 R5 Reverse
+currency(3183),	-- Dragon Racing - Personal Best Record - 11 Z6 R6 Easy
+currency(3184),	-- Dragon Racing - Personal Best Record - 11 Z6 R6 Reverse
+currency(3185),	-- Dragon Racing - Personal Best Record - 11 Z6 R7 Easy
+currency(3186),	-- Dragon Racing - Personal Best Record - 11 Z6 R7 Reverse
+currency(3187),	-- Dragon Racing - Personal Best Record - 11 Z6 R8 Easy
+currency(3188),	-- Dragon Racing - Personal Best Record - 11 Z6 R8 Reverse
+currency(3189),	-- 12.x Professions - Tracker - Weekly Alchemy Knowledge
+currency(3190),	-- 12.x Professions - Tracker - Weekly Tailoring Knowledge
+currency(3191),	-- 12.x Professions - Tracker - Weekly Skinning Knowledge
+currency(3192),	-- 12.x Professions - Tracker - Weekly Mining Knowledge
+currency(3193),	-- 12.x Professions - Tracker - Weekly Leatherworking Knowledge
+currency(3194),	-- 12.x Professions - Tracker - Weekly Jewelcrafting Knowledge
+currency(3195),	-- 12.x Professions - Tracker - Weekly Inscription Knowledge
+currency(3196),	-- 12.x Professions - Tracker - Weekly Herbalism Knowledge
+currency(3197),	-- 12.x Professions - Tracker - Weekly Engineering Knowledge
+currency(3198),	-- 12.x Professions - Tracker - Weekly Enchanting Knowledge
+currency(3199),	-- 12.x Professions - Tracker - Weekly Blacksmithing Knowledge
+currency(3200),	-- 12.x Professions - Tracker - Insc Book - Tailoring Knowledge
+currency(3201),	-- 12.x Professions - Tracker - Insc Book - Skinning Knowledge
+currency(3202),	-- 12.x Professions - Tracker - Insc Book - Mining Knowledge
+currency(3203),	-- 12.x Professions - Tracker - Insc Book - Leatherworking Know.
+currency(3204),	-- 12.x Professions - Tracker - Insc Book - Jewelcrafting Knowledge
+currency(3205),	-- 12.x Professions - Tracker - Insc Book - Inscription Knowledge
+currency(3206),	-- 12.x Professions - Tracker - Insc Book - Inscription Knowledge
+currency(3207),	-- 12.x Professions - Tracker - Insc Book - Herbalism Knowledge
+currency(3208),	-- 12.x Professions - Tracker - Insc Book - Engineering Knowledge
+currency(3209),	-- 12.x Professions - Tracker - Insc Book - Enchanting Knowledge
+currency(3210),	-- 12.x Professions - Tracker - Insc Book - Blacksmithing Knowledge
+currency(3211),	-- 12.x Professions - Tracker - Insc Book - Alchemy Knowledge
+currency(3212),	-- Radiant Spark Dust
+currency(3213),	-- Dragon Racing - Personal Best Record - 112 Hope's R1 Easy
+currency(3214),	-- Dragon Racing - Personal Best Record - 112 Hope's R1 Advanced
+currency(3215),	-- Dragon Racing - Personal Best Record - 112 Hope's R1 Reverse
+currency(3216),	-- Bounty's Remnants
+currency(3221),	-- Goblin Cartels Reputation
+currency(3223),	-- Titan Disc
+currency(3224),	-- [DNT] NAK Test Currency
+currency(3225),	-- Blacksmithing Specialization Reset
+currency(3227),	-- Alchemy Specialization Reset
+currency(3228),	-- Enchanting Specialization Reset
+currency(3229),	-- Engineering Specialization Reset
+currency(3230),	-- Herbalism Specialization Reset
+currency(3231),	-- Inscription Specialization Reset
+currency(3232),	-- Jewelcrafting Specialization Reset
+currency(3233),	-- Leatherworking Specialization Reset
+currency(3234),	-- Mining Specialization Reset
+currency(3235),	-- Skinning Specialization Reset
+currency(3236),	-- Tailoring Specialization Reset
+currency(3238),	-- Alchemy Specialization Reset
+currency(3239),	-- Enchanting Specialization Reset
+currency(3240),	-- Engineering Specialization Reset
+currency(3241),	-- Herbalism Specialization Reset
+currency(3242),	-- Inscription Specialization Reset
+currency(3243),	-- Jewelcrafting Specialization Reset
+currency(3244),	-- Leatherworking Specialization Reset
+currency(3245),	-- Mining Specialization Reset
+currency(3246),	-- Skinning Specialization Reset
+currency(3247),	-- Tailoring Specialization Reset
+currency(3248),	-- Blacksmithing Specialization Reset
+currency(3251),	-- Felforged Bronze
+currency(3253),	-- EVERGREEN Delves - Tracker - Mislaid Curiosity - Weekly Cap
+currency(3254),	-- Chase's Test Currency [DNT]
+currency(3256),	-- Artisan Alchemist's Moxie
+currency(3257),	-- Artisan Blacksmith's Moxie
+currency(3258),	-- Artisan Enchanter's Moxie
+currency(3259),	-- Artisan Engineer's Moxie
+currency(3260),	-- Artisan Herbalist's Moxie
+currency(3261),	-- Artisan Scribe's Moxie
+currency(3262),	-- Artisan Jewelcrafter's Moxie
+currency(3263),	-- Artisan Leatherworker's Moxie
+currency(3264),	-- Artisan Miner's Moxie
+currency(3265),	-- Artisan Skinner's Moxie
+currency(3266),	-- Artisan Tailor's Moxie
+currency(3267),	-- Felforged Bronze
+currency(3269),	-- Ethereal Voidsplinter
+currency(3270),	-- 11.2 Delves - Personal Tracker - S3 Weekly Elise Turn-In(Hidden)
+currency(3271),	-- Renown - Season 3 Delves
+currency(3272),	-- Delver's Journey
+currency(3279),	-- 11. Raid Renown - Gallagio - Raid Buff Acct Tracker
+currency(3280),	-- 11. Raid Renown - Gallagio - Speed Buff Acct Tracker
+currency(3282),	-- Gallagio Loyalty Rewards Club
+currency(3283),	-- Flame's Radiance
+currency(3285),	-- Weathered Ethereal Crest
+currency(3287),	-- Carved Ethereal Crest
+currency(3289),	-- Runed Ethereal Crest
+currency(3291),	-- Gilded Ethereal Crest
+currency(3293),	-- Epoch Memento
+currency(3304),	-- Manaforge Vandals
+currency(3305),	-- Renown - Manaforge Vandals
+currency(3306),	-- Manaforge Vandals
+currency(3307),	-- 11.2 Raid Renown - Manaforge - Raid Buff Acct Tracker
+currency(3308),	-- 11.2 Raid Renown - Manaforge Speed Buff Acct Tracker
+currency(3313),	-- 11. Raid Renown - Gallagio - Raid Buff Acct Tracker
+currency(3314),	-- 11. Raid Renown - Gallagio - Speed Buff Acct Tracker
+currency(3315),	-- Renown - Gallagio Loyalty Rewards Club
+currency(3317),	-- Renown - Season 1 Delves
+currency(3318),	-- Delver's Journey
+currency(3342),	-- Veteran Dawncrest
+currency(3344),	-- Champion Dawncrest
+currency(3346),	-- Hero Dawncrest
+currency(3348),	-- Myth Dawncrest
+currency(3349),	-- [DNT] [PH] Evergreen Initiative Currency
+currency(3351),	-- Social Meter
+currency(3352),	-- Party Favor
+currency(3354),	-- The Amani Tribe
+currency(3355),	-- Renown - The Amani Tribe
+currency(3356),	-- Untainted Mana-Crystals
+currency(3360),	-- [DNT] 11.1.5 Midseason - Turbo-Boost Quest Turn-In Tracker
+currency(3364),	-- [DNT] 11.2.5 Midseason - Turbo-Boost Quest Turn-In Tracker
+currency(3365),	-- Silvermoon Court
+currency(3369),	-- Renown - The Hara'ti
+currency(3370),	-- The Hara'ti
+currency(3371),	-- Renown - Silvermoon Court
+currency(3372),	-- Bronze
+currency(3375),	-- [DNT] Moth Hunt Tracking Currency
+currency(3376),	-- Shard of Dundun
+currency(3377),	-- Unalloyed Abundance
+currency(3378),	-- Dawnlight Manaflux
+currency(3383),	-- Adventurer Dawncrest
+currency(3386),	-- Renown - Prey
+currency(3387),	-- Preyseeker's Journey
+currency(3388),	-- Renown - The Singularity
+currency(3389),	-- The Singularity
+currency(3390),	-- Farstriders
+currency(3391),	-- Adventurer Dawncrest
+currency(3396),	-- Shades of the Row
+currency(3397),	-- Magisters
+currency(3398),	-- Blood Knights
+currency(3401),	-- 12.0 Delves - Personal Tracker - S1 Weekly Turn-In (Hidden)
+currency(3409),	-- [DNT] 12.0 Midseason - Voidforge Unlock - Turn-In Tracker
+currency(3410),	-- Slayer's Duellum
+currency(3418),	-- Nebulous Voidcore
+currency(3419),	-- [DNT] 12.0.5 Midseason - Voidforge Upgrade - Turn-In Tracker
+currency(3420),	-- [DNT] Nebulous Voidcore Turn-In Tracker
+currency(3428),	-- Renown - Ritual Sites
+currency(3431),	-- Housing - Going Postal - Personal Best Record - Alliance - Rt1
+currency(3432),	-- Housing - Going Postal - Personal Best Record - Alliance - Rt2
+currency(3433),	-- Housing - Going Postal - Personal Best Record - Alliance - Rt3
+currency(3434),	-- Housing - Going Postal - Personal Best Record - Horde - Rt1
+currency(3435),	-- Housing - Going Postal - Personal Best Record - Horde - Rt2
+currency(3436),	-- Housing - Going Postal - Personal Best Record - Horde - Rt3
+currency(3437),	-- Adventurer Mistcrest
+currency(3438),	-- Veteran Mistcrest
+currency(3439),	-- Champion Mistcrest
+currency(3440),	-- Hero Mistcrest
+currency(3441),	-- Myth Mistcrest
+currency(3442),	-- Adventurer Mistcrest
+currency(3443),	-- Veteran Mistcrest
+currency(3444),	-- Champion Mistcrest
+currency(3445),	-- Hero Mistcrest
+currency(3446),	-- Myth Mistcrest
+currency(3448),	-- Corrosive Coin
+currency(3449),	-- Total Score
+currency(3450),	-- Sites Tier
+currency(3451),	-- Sites Treasure
+currency(3452),	-- Total Multiplier
+currency(3453),	-- Tier Multiplier
+currency(3454),	-- Challenge - Tendrils
+currency(3455),	-- Challenge - Manifestations
+currency(3456),	-- Challenge - Magical Alarm Bells
+currency(3457),	-- Challenge - Shrines Portals Obelisks
+currency(3458),	-- Challenge - Tainted Corpses
+currency(3459),	-- Challenge - Reinforced
+currency(3460),	-- Challenge - Patrols
+currency(3461),	-- Challenge - Banners
+currency(3462),	-- Sites Bosses
+currency(3464),	-- Renown - Season 2 Delves
+currency(3465),	-- Venomblight Manaflux
+currency(3466),	-- Sites Deaths
+currency(3467),	-- Sites Deaths Dues
+currency(3471),	-- Renown - Zul'jarra's Forces
+currency(3474),	-- Bonus Experience
+currency(3477),	-- Sites Rares
+currency(3479),	-- Spoils
+currency(3480),	-- Deaths
+currency(3481),	-- Sites Death Percent
+currency(3482),	-- Sites Subtotal
+currency(3483),	-- Delver's Journey
+currency(3487),	-- Tailoring Specialization Reset
+currency(3488),	-- Skinning Specialization Reset
+currency(3489),	-- Mining Specialization Reset
+currency(3490),	-- Leatherworking Specialization Reset
+currency(3491),	-- Jewelcrafting Specialization Reset
+currency(3492),	-- Inscription Specialization Reset
+currency(3493),	-- Herbalism Specialization Reset
+currency(3494),	-- Engineering Specialization Reset
+currency(3495),	-- Enchanting Specialization Reset
+currency(3496),	-- Blacksmithing Specialization Reset
+currency(3497),	-- Alchemy Specialization Reset
+currency(3504),	-- Zul'jarra's Forces
+currency(3505),	-- [DNT] Diver Score
+currency(3506),	-- [DNT] Diver Display Currency
+currency(3508),	-- Salty Pet Charms
+currency(3509),	-- Tidal Spark Dust
+currency(3511),	-- [DNT, Unused] Venomous Voidcore
+currency(3513),	-- Nebulous Voidcore
+currency(3514),	-- Renown - Prey Season 2
+currency(3515),	-- Preyseeker's Journey
+currency(3532),	-- 12.1 Delves - Personal Tracker - S2 Weekly Turn-In (Hidden)
+currency(3540),	-- Captain Tokka
+currency(3543),	-- Test Myth Dawncrest
+currency(3545),	-- Renown - Season 3 Delves
+currency(3546),	-- Coiled Filament
+currency(3568),	-- Contained Corruption
+currency(3569),	-- Cleansing Multiplier
+currency(3570),	-- Wave Multiplier

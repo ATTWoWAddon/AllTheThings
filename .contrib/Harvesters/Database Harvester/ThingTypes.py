@@ -127,6 +127,34 @@ class Campsites(Thing):
         return ["id", "name"]
 
 
+class Currencies(Thing):
+    @staticmethod
+    def table() -> str:
+        return "currencytypes"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
+        return "currency"
+
+    @staticmethod
+    def existing_prefixes() -> tuple[str, ...]:
+        return ("cu(",)
+
+    @staticmethod
+    def new_prefix() -> str:
+        return "currency("
+
+    @staticmethod
+    def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
+        # Currencies have names in the same db
+        title = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+        return f"{row['ID']}{DELIMITER}{row[title]}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
+
+
 class Decors(Thing):
     @staticmethod
     def table() -> str:

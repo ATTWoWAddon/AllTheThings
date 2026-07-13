@@ -18,6 +18,7 @@ from ThingTypes import (
     FLAVOR_FOLDERS,
     Achievements,
     Campsites,
+    Currencies,
     Decors,
     Explorations,
     Factions,
@@ -45,6 +46,8 @@ def things_version(build: str) -> list[type[Thing]]:
     thing_list: list[type[Thing]] = Thing.__subclasses__()
     if version.parse(build) < version.parse("1.14.0.39802"):
         thing_list.remove(Achievements)
+    if version.parse(build) < version.parse("2.5.1.38043"):
+        thing_list.remove(Currencies)
     if version.parse(build) < version.parse("6.0.1.18179"):
         thing_list.remove(Followers)
     if version.parse(build) < version.parse("9.0.1.34365"):
@@ -139,6 +142,7 @@ def pre_process(thing: type[Thing], current_patch: str, id: str, flavor: str) ->
     # Fallback: handle old IDs that still belong to Retail
     if flavor == "Retail" and (
         (thing == Achievements and id_int < 15000) or
+        (thing == Currencies and id_int < 1900) or
         (thing == Explorations and id_int < 13649) or
         (thing == Factions and id_int < 2400) or
         (thing == FlightPaths and id_int < 2900) or
@@ -508,6 +512,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
     if thing in (
         Achievements,
         Campsites,
+        Currencies,
         Decors,
         Explorations,
         Factions,
@@ -703,7 +708,7 @@ def create_missing_files(flavor: str) -> None:
 """Step 2b: If new items has been detected. They will be in FastItem.txt please add them to unsorted."""
 
 """How to generate Missing Files"""
-"""Step 1: Delete questDB.json in DATAS/00 - Item Database folder"""
+"""Step 1: Delete questDB.json in DATAS/00 - Item DB folder"""
 """Step 2: Parse Retail with Debug Mode. Change parser config to a PTR patch if you want to account for PTR things."""
 """Step 3: Run create_missing_files(flavor) and (you have to uncomment it)"""
 # create_missing_files("Retail")
