@@ -106,7 +106,6 @@ root(ROOTS.Unsorted, {
 			i(269861),	-- A Tattered Amani Scroll
 			i(269868),	-- Miniature Hand-Crafted Mask
 			i(269918),	-- Venom-Corroded Gallstone
-			i(269935),	-- Forgotten Trinket
 			i(270191),	-- Lil'Kruul's Hilt
 			i(270210),	-- Bird Feathers
 			i(270211),	-- Furiostraza's Filter
@@ -742,10 +741,6 @@ root(ROOTS.Unsorted, {
 			i(273838),	-- Spirit of Tok'jara
 			i(273848),	-- Snake Scales
 			i(273881),	-- Anti-Venom Shell
-			i(274145),	-- Sheaf of Papers
-			i(274146),	-- Tortollan Belongings
-			i(274147),	-- Bottle of Sand
-			i(274148),	-- Packet of Fishing Lures
 			i(274272),	-- Amani Equipment Chest
 			i(274372),	-- Big ol' Bag of Polished Pet Charms
 			i(274374),	-- Trovehunter's Bounty
@@ -779,8 +774,6 @@ root(ROOTS.Unsorted, {
 			i(274481),	-- Keepsake Corruption
 			i(274494),	-- Chiral Marrowgrafter
 			i(274495),	-- Pulse Seeker's Oculus
-			i(274497),	-- Spirit-Rending Poison
-			i(274498),	-- Spirit Ward
 			i(274499),	-- Toxiferous Transfusion
 			i(274505),	-- Shrine of Akil'zon, Loa of Victory
 			i(274518),	-- Amani Decorative Plinth
@@ -884,7 +877,6 @@ root(ROOTS.Unsorted, {
 			i(275276),	-- Alchemy
 			i(275278),	-- Alchemy
 			i(275280),	-- Gamey Flank
-			i(275281),	-- Folded Wing
 			i(275282),	-- Smooth Loin
 			i(275284),	-- Slobbery Tongue
 			i(275285),	-- Malleable Root
@@ -1021,12 +1013,10 @@ root(ROOTS.Unsorted, {
 			i(276047),	-- Swamp Whomper
 			i(276049),	-- Snakeslayer's Claymore
 			i(276050),	-- Victorious Spiritstaff
-			i(276051),	-- Fangmouth Warspear
 			i(276052),	-- Venomshot Greatbow
 			i(276053),	-- Snakehunter's Warglaive
 			i(276054),	-- Serpentvine Machete
 			i(276055),	-- Soulweaver's Curseblade
-			i(276057),	-- Cryptbound Scepter
 			i(276058),	-- Ruinous Slitherslicer
 			i(276060),	-- Hexxer's Blastin' Rod
 			i(276061),	-- Witch Doctor's Bloodletter
