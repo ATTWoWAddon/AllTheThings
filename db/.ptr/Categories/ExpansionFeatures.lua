@@ -11026,7 +11026,6 @@ s(66660,118771,{b=1,f=3,lvl=35})}})}),
 h(-63,{
 p(1563,{description="Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",itemID=118675,npcID=7546,spellID=10699})})}})}),
 x(7,{
-h(-12),
 h(-214,{awp=70003,description="\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",g={
 cl(1,{
 ah(128910,{type="i",g={
@@ -36424,7 +36423,6 @@ ach(17830,{rwp=110002,u=2,g={
 i(204195,{awp=100100,b=1,rwp=100200,u=2}),
 i(210770,{awp=100200,b=1,lvl=70,rwp=100206,spellID=426966,u=2}),
 i(211952,{awp=100206,b=1,lvl=70,spellID=433790,u=2})}})}}),
-h(-45,{awp=100007}),
 h(-187,{awp=100107,g={
 h(-45,{
 q(77423,{coords={
