@@ -234,9 +234,11 @@ namespace ATT
             ProcessContainers();
             RunCurrentParseStageHandlers();
 
+            // Clean out any temporary containers
+            Objects.AllContainers.Keys.Where(k => k[0] == '_').ToArray().Select(k => Objects.AllContainers.Remove(k)).Count();
+
             // Capture Conditional DB data into the global DBs, and then merge that data into the respective Objects
             CurrentParseStage = ParseStage.ConditionalData;
-            AdditionalProcessing();
             ProcessingFunction = DataConditionalMerge;
             ProcessContainers();
             RunCurrentParseStageHandlers();
@@ -597,15 +599,6 @@ namespace ATT
 
             Dictionary<string, object> fakeRoot = new Dictionary<string, object>();
             Process(container.Value, fakeRoot);
-        }
-
-        /// <summary>
-        /// Does additional processing after the first pass of processing has completed
-        /// </summary>
-        private static void AdditionalProcessing()
-        {
-            // Clean out any temporary containers
-            Objects.AllContainers.Keys.Where(k => k[0] == '_').ToArray().Select(k => Objects.AllContainers.Remove(k)).Count();
         }
 
         /// <summary>
@@ -1026,11 +1019,11 @@ namespace ATT
                     return false;
                 }
                 // headers with nothing in them and no relevant data shouldn't be included
-                //if (data.TryGetValue("headerID", out long headerID) && headerID < 0 && !data.ContainsKey("sym") && !data.ContainsKey("questID"))
-                //{
-                //    LogDebug($"INFO: Sourced Header {headerID} contained no content after Parsing", data);
-                //    return false;
-                //}
+                if (data.TryGetValue("headerID", out long headerID) && headerID < 0 && !data.ContainsKey("sym") && !data.ContainsKey("questID"))
+                {
+                    LogDebug($"INFO: Sourced Header {headerID} contained no content after Parsing", data);
+                    return false;
+                }
             }
 
             // during consolidation we may realize that data is not useful, and can mark it to be removed before further steps take place

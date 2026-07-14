@@ -90,81 +90,39 @@ namespace ATT
         private static void ExportCompressedLua<KEY, VALUE>(Exporter builder, IDictionary<KEY, VALUE> data)
         {
             // If the dictionary doesn't have any content, then return immediately.
-            if (data.Any())
+            if (!data.Any())
             {
-                // If there is no most signficant type, then we write it generically.
-                // Open Bracket for beginning of the Dictionary.
-                builder.Append('{');
-
-                // Export Fields
-                int fieldCount = 0;
-                var keys = data.Keys.ToList();
-                keys.Sort(Framework.Compare);
-                foreach (var key in keys)
-                {
-                    // If this is NOT the first field, append a comma.
-                    if (fieldCount++ > 0) builder.Append(',');
-
-                    if (AddTableNewLines)
-                        builder.Append(Environment.NewLine);
-
-                    // Append the Sub-Indent and the Field Name
-                    builder.Append("[");
-                    ExportCompressedLua(builder, key);
-                    builder.Append("]=");
-
-                    // Append the undetermined object's format to the builder.
-                    ExportCompressedLua(builder, data[key]);
-                }
-
-                // Close Bracket for the end of the Dictionary.
-                builder.Append('}');
+                builder.Append("{}");
+                return;
             }
-            else builder.Append("{}");
-        }
 
+            // If there is no most signficant type, then we write it generically.
+            // Open Bracket for beginning of the Dictionary.
+            builder.Append('{');
 
-        /// <summary>
-        /// Export the contents of the dictionary to the builder in a compressed, minified format.
-        /// Only whitelisted fields will be written in order to preserve memory and filesize.
-        /// </summary>
-        /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
-        /// <param name="builder">The builder.</param>
-        /// <param name="data">The data dictionary.</param>
-        private static void ExportCompressedLua<VALUE>(Exporter builder, IDictionary<string, VALUE> data)
-        {
-            // If the dictionary doesn't have any content, then return immediately.
-            if (data.Any())
+            // Export Fields
+            int fieldCount = 0;
+            var keys = data.Keys.ToList();
+            keys.Sort(Framework.Compare);
+            foreach (var key in keys)
             {
-                // If there is no most signficant type, then we write it generically.
-                // Open Bracket for beginning of the Dictionary.
-                builder.Append('{');
+                // If this is NOT the first field, append a comma.
+                if (fieldCount++ > 0) builder.Append(',');
 
-                // Export Fields
-                int fieldCount = 0;
-                var keys = data.Keys.ToList();
-                keys.Sort(Framework.Compare);
-                foreach (var key in keys)
-                {
-                    // If this is NOT the first field, append a comma.
-                    if (fieldCount++ > 0) builder.Append(',');
+                if (AddTableNewLines)
+                    builder.Append(Environment.NewLine);
 
-                    if (AddTableNewLines)
-                        builder.Append(Environment.NewLine);
+                // Append the Sub-Indent and the Field Name
+                builder.Append("[");
+                ExportCompressedLua(builder, key);
+                builder.Append("]=");
 
-                    // Append the Sub-Indent and the Field Name
-                    builder.Append("[");
-                    ExportCompressedLua(builder, key);
-                    builder.Append("]=");
-
-                    // Append the undetermined object's format to the builder.
-                    ExportCompressedLua(builder, data[key]);
-                }
-
-                // Close Bracket for the end of the Dictionary.
-                builder.Append('}');
+                // Append the undetermined object's format to the builder.
+                ExportCompressedLua(builder, data[key]);
             }
-            else builder.Append("{}");
+
+            // Close Bracket for the end of the Dictionary.
+            builder.Append('}');
         }
 
         /// <summary>
