@@ -987,10 +987,12 @@ root(ROOTS.Zones, {
 							33160,	-- Time Keeper Kairoz
 						},
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 					}),
 					q(33337, {	-- A Vision in Time
 						["sourceQuests"] = { 33338 },	-- Empowering the Hourglass
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["groups"] = {
 							i(105930),	-- Vision of Time
 						},
@@ -998,6 +1000,7 @@ root(ROOTS.Zones, {
 					q(33378, {	-- Courting Destiny
 						["sourceQuests"] = { 33377 },	-- Hidden Threads
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["groups"] = {
 							i(105934),	-- Vision of Time
 						},
@@ -1009,6 +1012,7 @@ root(ROOTS.Zones, {
 					q(33338, {	-- Empowering the Hourglass
 						["sourceQuests"] = { 33336 },	-- The Essence of Time
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["isWeekly"] = true,
 						["groups"] = {
 							i(105715),	-- Epoch Stone (QI!)
@@ -1017,6 +1021,7 @@ root(ROOTS.Zones, {
 					q(33377, {	-- Hidden Threads
 						["sourceQuests"] = { 33376 },	-- Seeking Fate
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["groups"] = {
 							i(105933),	-- Vision of Time
 						},
@@ -1024,6 +1029,7 @@ root(ROOTS.Zones, {
 					q(33332, {	-- Hints From The Past
 						["sourceQuests"] = { 33228 },	-- Time In Your Hands
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 					}),
 					q(33231, {	-- Journey to the Timeless Isle (A)
 						["sourceQuests"] = {
@@ -1055,6 +1061,7 @@ root(ROOTS.Zones, {
 					q(33379, {	-- One Final Turn
 						["sourceQuests"] = { 33378 },	-- Courting Destiny
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["groups"] = {
 							i(105935),	-- Vision of Time
 						},
@@ -1062,6 +1069,7 @@ root(ROOTS.Zones, {
 					q(33374, {	-- Path of the Mistwalker
 						["sourceQuests"] = { 33341 },	-- Wayshrines Of The Celestials
 						["qg"] = 73303,	-- Emperor Shaohao
+						["coord"] = { 42.8, 55.6, TIMELESS_ISLE },
 						["isDaily"] = true,
 						["groups"] = {
 							i(103642),	-- Book of the Ages
@@ -1072,6 +1080,7 @@ root(ROOTS.Zones, {
 					q(33375, {	-- Refining The Vision
 						["sourceQuests"] = { 33337 },	-- A Vision in Time
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["groups"] = {
 							i(105931),	-- Vision of Time
 						},
@@ -1108,6 +1117,7 @@ root(ROOTS.Zones, {
 					q(33376, {	-- Seeking Fate
 						["sourceQuests"] = { 33375 },	-- Refining The Vision
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["groups"] = {
 							i(105932),	-- Vision of Time
 						},
@@ -1115,6 +1125,7 @@ root(ROOTS.Zones, {
 					q(33334, {	-- Strong Enough To Survive
 						["sourceQuests"] = { 33333 },	-- Timeless Treasures
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["isWeekly"] = true,
 					}),
 					q(33343, {	-- The Archiereus Of Flame
@@ -1130,6 +1141,7 @@ root(ROOTS.Zones, {
 					q(33336, {	-- The Essence of Time
 						["sourceQuests"] = { 33161 },	-- A Timeless Tour
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["groups"] = {
 							i(105715),	-- Epoch Stone (QI!)
 						},
@@ -1137,6 +1149,7 @@ root(ROOTS.Zones, {
 					q(33335, {	-- The Last Emperor
 						["sourceQuests"] = { 33228 },	-- Time In Your Hands
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 					}),
 					q(33228, {	-- Time In Your Hands
 						["sourceQuests"] = {
@@ -1144,6 +1157,7 @@ root(ROOTS.Zones, {
 							33160,	-- Time Keeper Kairoz
 						},
 						["qg"] = 72870,	-- Kairoz
+						["coords"] = { 34.6, 53.6, TIMELESS_ISLE },
 						["groups"] = {
 							i(104013),	-- Timeless Cloth Armor Cache
 							i(104012),	-- Timeless Leather Armor Cache
@@ -1653,7 +1667,10 @@ root(ROOTS.Zones, {
 						["description"] = "Coordinates are for the side of the hill, where you start to jump across the pillars toward the treasure.",
 						["isWeekly"] = true,
 						["questID"] = 32969,
-						["coord"] = { 51.5, 73.4, TIMELESS_ISLE },
+						["coords"] = {
+							{ 49.7, 69.5, TIMELESS_ISLE },
+							{ 51.5, 73.4, TIMELESS_ISLE },
+						},
 					}),
 					o(221036, {	-- Gleaming Treasure Satchel
 						["description"] = "Starting at around |cFFFFFFFF71.5, 79.8|r, mount up and do a running jump off the corner of the back platform. Landing successfully on the beam may take a couple tries, depending on the angle and the point at which you jump. Once you're on the beam, dismount and walk carefully toward the treasure.",

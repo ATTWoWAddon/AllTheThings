@@ -2052,11 +2052,8 @@ root(ROOTS.Unsorted, {
 				i(274640),	-- Arcfluxion Hydrospore
 				i(274783),	-- Fel Embers
 				i(274798),	-- Remote Detonator
-				i(275699),	-- Veraan's Soul Lattice Report
-				i(276255),	-- Forgotten Memorial Tribute
 				i(276276),	-- Mana Spore
 				i(277116),	-- Warmonger's Voidplate
-				i(276342),	-- Fragmented Soul Lattice
 			}),
 			filter(TOYS, {
 				i(264368),	-- ??
@@ -4173,7 +4170,6 @@ root(ROOTS.Unsorted, {
 			i(169987),	-- Inert Dragonscale
 			i(170000),	-- Battered Bastion
 			i(170002),	-- Split Differential
-			i(170003),	-- Grinding Gearbox
 			i(170004),	-- Cracked Turbo
 			i(170009),	-- Fading Memento
 			i(170010),	-- Crumbling Memento

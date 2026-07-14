@@ -539,6 +539,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								["qg"] = 264070,	-- Grand Magister Rommath
 								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
 							}),
+							q(96444, {	-- Seeking Knowledge Week 5 of 5: Off-World Magic
+								["sourceQuests"] = {
+									96831,	-- Magister's Summons
+									96443,	-- Seeking Knowledge Week 4 of 5: Magical Primessence
+								},
+								["qg"] = 264070,	-- Grand Magister Rommath
+								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+							}),
 						})),
 					}),
 				},

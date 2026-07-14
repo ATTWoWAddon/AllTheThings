@@ -241,6 +241,46 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["provider"] = { "i", 275520 },	-- Technoseer's Communique (QS!)
 							["coord"] = { 74.2, 73.5, NAIGTAL },
 						}),
+						q(96573, {	-- Soul Lattice Revealed
+							["qg"] = 265558, -- Veraan
+							["coord"] = { 48.1, 81.5, NAIGTAL },
+							["groups"] = { i(275699) },	-- Veraan's Soul Lattice Report (QI!)
+						}),
+						q(96574, {	-- Cryptside Rendezvous
+							["sourceQuest"] = 96573,	-- Soul Lattice Revealed
+							["qg"] = 265950, -- Commander Tala'saan
+							["coord"] = { 47.5, 82.0, NAIGTAL },
+						}),
+						q(96576, {	-- Mementos of the Dead
+							["sourceQuest"] = 96574,	-- Cryptside Rendezvous
+							["qg"] = 266829, -- Allari the Souleater
+							["coord"] = { 75.5, 44.7, 2646 },	-- Vilaldoun
+							["groups"] = { i(276255) },	-- Forgotten Memorial Tribute (QI!)
+						}),
+						q(96575, {	-- Cages of the Soul
+							["sourceQuest"] = 96574,	-- Cryptside Rendezvous
+							["qg"] = 266541, -- Archmage Y'mera
+							["coord"] = { 75.3, 43.8, 2646 },	-- Vilaldoun
+						}),
+						q(97031, {	-- Vilaldoun VValediction
+							["sourceQuest"] = 96574,	-- Cryptside Rendezvous
+							["provider"] = { "o", 658789 },	-- Dust-Covered Hologem
+							["coord"] = { 67.4, 79.5, 2646 },	-- Vilaldoun
+						}),
+						q(96577, {	-- The Soul Architect
+							["sourceQuests"] = {
+								96575,	-- Cages of the Soul
+								96576,	-- Mementos of the Dead
+							},
+							["qg"] = 266540, -- Commander Tala'saan
+							["coord"] = { 36.7, 73.1, 2646 },	-- Vilaldoun
+							["groups"] = { i(276342) },	-- Fragmented Soul Lattice (QI!)
+						}),
+						q(96578, {	-- Cryptic Departure
+							["sourceQuest"] = 96577,	-- The Soul Architect
+							["qg"] = 266540, -- Commander Tala'saan
+							["coord"] = { 36.7, 73.1, 2646 },	-- Vilaldoun
+						}),
 						-- Repeatable
 						q(96720, {	-- Showdown on Naigtal (Low Level)
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
