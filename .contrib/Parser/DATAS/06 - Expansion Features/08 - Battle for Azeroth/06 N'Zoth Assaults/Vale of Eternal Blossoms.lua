@@ -677,7 +677,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						q(56647, {	-- The Mantid Threat
 							["sourceQuest"] = 56645,	-- Heart of the Swarm
 							["provider"] = { "n", 155487 },	-- Taoshi
-							["coord"] = { 12.2, 95.3, DREAD_WASTES },
+							["coords"] = {
+								{ 12.2, 95.3, DREAD_WASTES },
+								{ 11.8, 93.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							},
 							["lvl"] = 120,
 						}),
 					}),

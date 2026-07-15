@@ -364,12 +364,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					o(579180, {	-- Ways of the Roots--Part 1: Serving
 						["sourceQuest"] = 88998,	-- Root of the World
 						["questID"] = 93488,
-						["coord"] = { 40.8, 36.2, MAP.MIDNIGHT.HARANDAR },
+						["coord"] = { 40.8, 36.3, MAP.MIDNIGHT.HARANDAR },
 					}),
 					o(579182, {	-- Ways of the Roots--Part 2: Growing
 						["sourceQuest"] = 88998,	-- Root of the World
 						["questID"] = 93487,
-						["coord"] = { 41.5, 34.2, MAP.MIDNIGHT.HARANDAR },
+						["coord"] = { 41.5, 34.1, MAP.MIDNIGHT.HARANDAR },
 					}),
 					o(579183, {	-- Ways of the Roots--Part 3: Pruning
 						["sourceQuest"] = 88998,	-- Root of the World

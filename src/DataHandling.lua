@@ -921,10 +921,6 @@ app.MergeProperties = MergeProperties
 -- TODO: this priority-based object creation will move to Classes/base.lua -- CloneClassInstance does not suffice in its current state
 local function CreateObject(t, rootOnly)
 	-- app.PrintDebug("CO",t);
-	-- Commented this part out because there aren't enough class definitions exposed to the logic yet
-	-- Retail class design is still wildin' and doesn't use the CreateClass functionality
-	--local object = app.CloneClassInstance(t, rootOnly);
-	--if object and getmetatable(object) then return object; end
 	if not t then return {}; end
 	-- already an object, so need to create a new instance of the same data
 	if t.key then

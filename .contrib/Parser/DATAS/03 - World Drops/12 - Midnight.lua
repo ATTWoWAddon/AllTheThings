@@ -132,19 +132,20 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	}),
 	filter(REAGENTS, {
 		i(275283, { ["timeline"] = { ADDED_12_1_0 } }),	-- Amphibious Scrap
-		i(236963),	-- Bright Linen+
-		i(236965),	-- Bright Linen++
-		i(237015),	-- Sunfire Silk+
-		i(237016),	-- Sunfire Silk++
 		i(237017),	-- Arcanoweave+
 		i(237018),	-- Arcanoweave++
-		i(251285),	-- Petrified Root (TODO: probably delves only)
-		i(242640),	-- Plant Protein
-		i(242639),	-- Practically Pork
+		i(236963),	-- Bright Linen+
+		i(236965),	-- Bright Linen++
+		i(275281, { ["timeline"] = { ADDED_12_1_0 } }),	-- Folded Wing
 		i(236949),	-- Mote of Light
 		i(236950),	-- Mote of Primal Energy
 		i(236952),	-- Mote of Pure Void
 		i(236951),	-- Mote of Wild Magic
+		i(251285),	-- Petrified Root (TODO: probably delves only)
+		i(242640),	-- Plant Protein
+		i(242639),	-- Practically Pork
+		i(237015),	-- Sunfire Silk+
+		i(237016),	-- Sunfire Silk++
 		i(251923),	-- Thalassian Essence of the Faire
 		--Darkmoon cards (doesn't require Inscription on character)
 		i(245856),	-- Ace of Blood

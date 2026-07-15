@@ -820,7 +820,10 @@ root(ROOTS.Zones, {
 						39985,	-- Khadgar's Discovery
 						44555,	-- Khadgar's Discovery
 					},
-					["provider"] = { "n", 90417 },	-- Archmage Khadgar
+					["qgs"] = {
+						90417,	-- Archmage Khadgar
+						91172,	-- Archmage Khadgar
+					},
 					["coords"] = {
 						{ 28.8, 48.4, LEGION_DALARAN },
 						{ 70.9, 45.0, LEGION_DALARAN },

@@ -394,7 +394,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						q(58639, {	-- Buried History
 							["sourceQuest"] = 58638,	-- A Deeper Dive
-							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["qgs"] = {
+								155102,	-- High Explorer Dellorah
+								161938,	-- High Explorer Dellorah
+							},
 							["coord"] = { 68.9, 57.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
 							["groups"] = {
@@ -403,7 +406,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						q(58646, {	-- Chew On This!
 							["sourceQuest"] = 58638,	-- A Deeper Dive
-							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["qgs"] = {
+								155102,	-- High Explorer Dellorah
+								161938,	-- High Explorer Dellorah
+							},
 							["coord"] = { 68.9, 57.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
 						}),
@@ -412,28 +418,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								58639,	-- Buried History
 								58646,	-- Chew On This!
 							},
-							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["qgs"] = {
+								155102,	-- High Explorer Dellorah
+								161938,	-- High Explorer Dellorah
+							},
 							["coord"] = { 68.9, 57.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
 						}),
 						q(58641, {	-- Seekers of Corruption
 							["sourceQuest"] = 58640,	-- A Crack in the Armor
-							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["qgs"] = {
+								155102,	-- High Explorer Dellorah
+								161938,	-- High Explorer Dellorah
+							},
 							["coord"] = { 72.9, 48.4, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								i(174451),	-- Sun King's Decree (QI!)
-							},
+							["groups"] = { i(174451) },	-- Sun King's Decree (QI!)
 						}),
 						q(58642, {	-- Shared Goals
 							["sourceQuest"] = 58641,	-- Seekers of Corruption
-							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["qgs"] = {
+								155102,	-- High Explorer Dellorah
+								161938,	-- High Explorer Dellorah
+							},
 							["coord"] = { 72.9, 48.4, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
 						}),
 						q(58643, {	-- Mutually Assured Destruction
 							["sourceQuest"] = 58642,	-- Shared Goals
-							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["qgs"] = {
+								155102,	-- High Explorer Dellorah
+								161938,	-- High Explorer Dellorah
+							},
 							["coord"] = { 72.9, 48.4, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
 						}),

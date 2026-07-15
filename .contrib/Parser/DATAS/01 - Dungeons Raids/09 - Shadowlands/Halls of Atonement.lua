@@ -9,6 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1663,	-- Halls of Atonement
 			1664,	-- The Nave of Pain
 			1665,	-- Sanctury of Souls
+			1734,	--
 		},
 		["groups"] = {
 			n(QUESTS, {}),	-- Do Not Remove

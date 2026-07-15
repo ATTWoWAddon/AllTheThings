@@ -257,7 +257,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 					n(SPECIAL, {	-- Move to Treasures if objectid is found
 						header(HEADERS.Spell, 1300397, {	-- Testament
-							["description"] = "Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. Return to the hilt again to claim your rwward.",
+							["description"] = "Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. Return to the hilt again to claim your reward.",
 							["coords"] = {
 								{ 61.4, 78.8, VAL },	-- Cave
 								{ 70.5, 84.3, VAL },	-- Enchanted Hilt

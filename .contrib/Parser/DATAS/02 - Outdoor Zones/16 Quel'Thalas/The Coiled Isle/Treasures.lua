@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- i(271881),	-- Dropped Key
 					["coord"] = { 70.6, 76.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					--	["cost"] = { { "i", 271881, 1 } },	-- 1x Dropped Key
-					--	["questID"] = XXXXXX,
+					--	["questID"] = 95995,
 					["groups"] = {
 						i(274921),	-- Pearl of Jubilation (TOY!)
 						i(276144),	-- Pearl of Jubilation
@@ -86,22 +86,33 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ "n", 263244 },	-- Forgotten Soldier
 						{ "o", 645553 },	-- Nameless Grave
 					},
-					--	["questID"] = XXXXXX,
+					--	["questID"] = 95956,
 					["groups"] = {
 						i(279021),	-- Forgotten Memento (TOY!)
 						i(279049),	-- Forgotten Memento
 					},
 				}),
 				o(642071, {	-- Jaktu's Cursed Blade
+					--["questID"] = 95566,
 					["groups"] = {
 						i(277954),	-- Jaktu's Cursed Blade (TOY!)
 						i(277961),	-- Jaktu's Cursed Blade
 					},
 				}),
-				-- Lost Spirit
-					--["cr"] = 261867,	-- Lost Spirit
-					--["coord"] = { 68.1, 65.9, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--["questID"] = 95571,
+				header(HEADERS.NPC, 261867, {	-- Lost Spirit
+					["description"] = "Translated from Zandali language:\n'Can you help me? I have lost something. A family heirloom. It must be somewhere nearby. Please bring it to me if you find it.'\nYou can find a 'Forgotten Trinket' on the left side of the base of |cFFFFD700The Altar of Wrath|r.",
+					["coord"] = { 68.1, 65.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["cr"] = 261867,	-- Lost Spirit
+					["questID"] = 95571,
+					["groups"] = {
+						o(642210, {	-- Forgotten Trinket
+							["coord"] = { 70.2, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["groups"] = { i(269935) },	-- Forgotten Trinket
+						}),
+						o(642205),	-- Forgotten Treasure	// Contains nothing. Will have to test after next PTR update
+						q(95574, { ["name"] = "Lost Spirit freed", }),	-- Triggered when Forgotten Trinket is given to the Lost Spirit
+					},
+				}),
 				o(629421, {	-- Malfunctioning Staff
 					["coord"] = { 75.4, 57.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95164,
@@ -146,7 +157,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(645208, {	-- Sunken Diver's Chest
 					["coord"] = { 65.4, 5.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					--["cost"] = 1x Diver's Key
-					--["questID"] = XXXXXX,
+					--["questID"] = 95907,
 				}),
 				o(642021, {	-- Tarnished Amani Glaive
 					["coord"] = { 55.2, 38.0, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -155,7 +166,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				o(644654, {	-- Venomjade Necklace
 					["coord"] = { 64.7, 36.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--["questID"] = XXXXXX,
+					--["questID"] = 95835,
 				}),
 				header(HEADERS.Object, 648564, {	-- Vul'zahn's Smuggled Treasure
 					["description"] = "Steps must be followed in order to unlock gossip options.\n\n1. Talk to Vul'zahn and ask him if you can have the treasure.\n2. Talk to Witherbark Cook and ask him for the Bowl of Stew.\n3. Talk to Apothecary Dezi and ask him to give you a Potion.\n4. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n5. Talk to Vul'zahn, give him the Stew. He will give you the key.\n6. Open the treasure.",

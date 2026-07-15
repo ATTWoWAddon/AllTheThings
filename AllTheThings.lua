@@ -35,8 +35,8 @@ BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L.TOGGLE_RANDOM
 BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 -- Performance Cache
-local print,rawget,rawset,tostring,ipairs,pairs,tonumber,wipe,select,setmetatable,getmetatable,tinsert,tremove,type,math_floor,GetTime
-	= print,rawget,rawset,tostring,ipairs,pairs,tonumber,wipe,select,setmetatable,getmetatable,tinsert,tremove,type,math.floor,GetTime
+local print,rawget,rawset,tostring,ipairs,pairs,tonumber,select,setmetatable,getmetatable,tinsert,type,math_floor,GetTime
+	= print,rawget,rawset,tostring,ipairs,pairs,tonumber,select,setmetatable,getmetatable,tinsert,type,math.floor,GetTime
 
 -- Global WoW API Cache
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
@@ -52,21 +52,18 @@ local GetRelativeValue = app.GetRelativeValue
 
 local
 CreateObject,
-MergeObject,
 NestObject,
 MergeObjects,
 NestObjects,
 PriorityNestObjects
 =
 app.__CreateObject,
-app.MergeObject,
 app.NestObject,
 app.MergeObjects,
 app.NestObjects,
 app.PriorityNestObjects
 
 -- Coroutine Helper Functions
-local Callback = app.CallbackHandlers.Callback;
 app.FillRunner = app.CreateRunner("fill");
 
 -- Data Lib

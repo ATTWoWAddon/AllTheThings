@@ -5411,6 +5411,11 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["groups"] = {
+					o(398829, {	-- Infused Proclamation
+						i(205124),	-- Infused Proclamation (QI!)
+					}),
+				},
 			}),
 			-- Patch 10.2.0
 			q(77889, {	-- A Fiery Proposal

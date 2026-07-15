@@ -491,6 +491,7 @@ i(169138);	-- Fractured Personality Module
 i(169962);	-- Frayed Fetish
 i(169123);	-- Functional Fiddleswitch
 i(169122);	-- Gibraltian Monkey Wrench
+i(170003);	-- Grinding Gearbox
 i(170013);	-- Inanimate Rock
 i(169988);	-- Inert Mineral Dust
 i(168792);	-- Kobold's Candle

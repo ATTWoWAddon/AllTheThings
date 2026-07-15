@@ -443,9 +443,9 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		q(54186, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Pet Battle Challenge: Gnomeregan
 			["sourceQuest"] = 54185,	-- Gnomeregan's New Guardians
 			["provider"] = { "n", 147070 },	-- Micro Zoox
-			["coord"] = { 31.2, 37.4, NEW_TINKERTOWN },
+			["coord"] = { 31.2, 37.4, NEW_TINKERTOWN_LOWER },
 			["maps"] = {
-				NEW_TINKERTOWN_LOWER,
+				NEW_TINKERTOWN,
 				840,	-- Pet Dungeon
 				841,	-- Pet Dungeon
 				842,	-- Pet Dungeon
@@ -580,7 +580,10 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		q(45539, {	-- Pet Battle Challenge: Wailing Caverns
 			["sourceQuest"] = 45423,	-- Wailing Critters
 			["provider"] = { "n", 116781 },	-- Muyani
-			["coord"] = { 38.8, 68.2, NORTHERN_BARRENS },
+			["coords"] = {
+				{ 38.8, 68.2, NORTHERN_BARRENS },
+				{ 23.2, 81.8, 11 },	-- Wailing Caverns
+			},
 			["maps"] = {
 				825,	-- Pet Dungeon
 			},
@@ -997,3 +1000,10 @@ root(ROOTS.NeverImplemented, {
 	}),
 });
 -- #endif
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+	n(PET_BATTLES, {
+		q(81957),	-- Complete the Blackrock Pet Battle Dungeon for the first time.
+		q(81958),	-- Joining their team
+	})
+})));

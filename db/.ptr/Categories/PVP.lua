@@ -48520,7 +48520,6 @@ ach(12568,{pvp=1,r=1})}}),
 h(-487,{pvp=1,g={
 i(163825,{b=1,pvp=1}),
 i(170539,{awp=80200,b=1,pvp=1})}}),
-h(-56,{description="Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",pvp=1}),
 h(-45,{pvp=1,g={
 q(58274,{awp=80300,description="Granted upon killing 10 Horde players without dying after you became an Assassin.",lvl=80,pvp=1,r=2,rwp=90001,u=2,g={
 title(414,{pvp=1,u=2}),
