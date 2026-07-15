@@ -2453,8 +2453,9 @@ i(274650, 1294663);	-- Netherforged Nullframe
 i(192778, 350220);	-- Liquid Hot Magma Slug
 i(269240, 1284973);	-- Luminous Sporeglider
 i(258884, 1264184);	-- Spawn of Vyranoth
-i(0, 1279352);	-- Stoneforged Sentinel
+i(267078, 1279352);	-- Stoneforged Sentinel
 i(275464, 1298439);	-- Sun Festival's Painted Roc
+i(0, 1292356);	-- Sunflare Driftmoth
 i(275664, 1297427);	-- Tortured Gorger
 i(274649, 1294648);	-- Voidmancer's Starcarver
 --- UNSORTED ---
