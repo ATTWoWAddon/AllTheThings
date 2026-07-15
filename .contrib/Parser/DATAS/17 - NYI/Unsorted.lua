@@ -570,7 +570,6 @@ root(ROOTS.Unsorted, {
 			i(270871),	-- Jan'alai's Breath
 			i(270898),	-- Snakeskin Lining
 			i(270899),	-- Snakeskin Lining
-			i(270900),	-- Pattern: Snakeskin Lining
 			i(271053),	-- Cleansing Water
 			i(271130),	-- Venom Infusion
 			i(271131),	-- Test Weapon
@@ -704,29 +703,6 @@ root(ROOTS.Unsorted, {
 			i(273312),	-- Large Exodar Crystal
 			i(273313),	-- Stormstout Brewery Lantern
 			i(273649),	-- Stormbound Emblem of Dazar
-			i(273773),	-- Handwraps of Blasphemous Rites
-			i(273774),	-- Snakeskin Spaulders
-			i(273775),	-- Hydra Scale Wristguards
-			i(273776),	-- Ancient General's Obsidian Pillars
-			i(273777),	-- Poison-Proof Stompers
-			i(273778),	-- Polished Lightwood Channeler
-			i(273779),	-- Nocuous Focal Fang
-			i(273780),	-- Venom-Etched Crescent
-			i(273781),	-- Strand of Warding Fangs
-			i(273782),	-- Vile Writhefang Glaive
-			i(273783),	-- Toxin-Coated Warstaff
-			i(273784),	-- Ancestral Amani Recurve
-			i(273785),	-- Primordial Robe of Rites
-			i(273786),	-- Leggings of Entwined Serpents
-			i(273787),	-- Aged Interwoven Scaleplate
-			i(273789),	-- Chestguard of Corroded Scales
-			i(273791),	-- Spare Speaker's Hood
-			i(273792),	-- Band of the Amani Warlord
-			i(273793),	-- Hydraspine Twinblade
-			i(273794),	-- Knot of Writhing Serpents
-			i(273795),	-- Coiled Fangstone
-			i(273796),	-- Vile Vial of Volatile Venom
-			i(273797),	-- Tattered Amani War Banner
 			i(273818),	-- [DNT] Knowledge Tome: Midnight Herbalism
 			i(273838),	-- Spirit of Tok'jara
 			i(273848),	-- Snake Scales
@@ -840,7 +816,6 @@ root(ROOTS.Unsorted, {
 			i(275065),	-- [PH] Taretha Axe - Purple
 			i(275066),	-- [PH] Taretha Axe - White
 			i(275068),	-- Venomous Legend's Pennant
-			i(275070),	-- Sharpened Lightwood Slasher
 			i(275230),	-- Azure Bracelet of Friendship
 			i(275231),	-- Obsidian Bracelet of Friendship
 			i(275232),	-- Leafy Bracelet of Friendship
@@ -1106,7 +1081,6 @@ root(ROOTS.Unsorted, {
 			i(276749),	-- Scroll of the Salty Souvenir: South
 			i(276800),	-- [PH]Writhes Mount - Yellow
 			i(276803),	-- [PH]Writhes Mount - Pink
-			i(276804),	-- The Writhing Brood
 			i(276881),	-- Breath of Blight
 			i(276882),	-- Breath of Ruin
 			i(277121),	-- Cozy Bird Nest
@@ -1477,7 +1451,6 @@ root(ROOTS.Unsorted, {
 			i(279207),	-- Blackened Sludgefish
 			i(279209),	-- Plainsrunner's Sun Tunic
 			i(279210),	-- Explosive Tlhapi
-			i(279211),	-- Pillar of the Fanged Altar
 			i(279217),	-- Venom-Cursed Eagle's Shroud
 			i(279220),	-- Venom-Cursed Lynx's Mane
 			i(279222),	-- Venom-Cursed Dragonhawk's Mantle

@@ -20,6 +20,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						title(789),	-- Bloodsworn Mariner <Name>
 					}),
 					ach(63632),	-- Toxic Trophies
+					ach(63512),	-- Treasures of the Damned
 					ach(63634, {	-- Where Did You Get That?
 						["cost"] = { { "i", 244790, 1 } },	-- The Coiled Huntress [Fishing Tool]
 					}),

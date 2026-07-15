@@ -3382,6 +3382,7 @@ MobileDB.GameObject = {
 	[658802] = true,	-- Ancient Crypt Reliquary
 	[659301] = true,	-- Highland Redcap [Ritual Site: Naigtal]
 	[659898] = true,	-- Spongy Sporebat Nest [Ritual Site: Naigtal]
+	[660768] = true,	-- Zul'jan's Strongbox [Altar of Fangs]
 }
 
 -- Represents content which will trigger the 'not in game' contrib check, but only because it is available from a 'not in game' source (i.e. an NPC spawned from a removed Item used by a Player; an Object which spawns during a Quest which is removed but accessible if a Player still has it, etc.) Or perhaps an object/npc which is actually in the game but whose entire use has been made obsolete and is thus marked in ATT

@@ -15492,7 +15492,8 @@ x(9,{e=1703,g={
 h(-34,{awp=110207,e=1703,g={
 i(253517,{b=1,description="Drops from the last boss of any 'Shadowlands Timewalking' dungeon.",e=1703,spellID=1256534})}}),
 h(-45,{awp=110207,e=1703,g={
-q(92647,{e=1703,isWeekly=1,lc={1,"lvl",80},g={
+q(92647,{coords={
+[1670]={{56,63.9}}},e=1703,isWeekly=1,lc={1,"lvl",80},qgs={252687},g={
 i(232877,{b=1,e=1703,lvl=10,modID=22})}}),
 q(92650,{e=1703,isWeekly=1,providers={{"i",253517}},g={
 cu(1166,{e=1703})}})}}),

@@ -4378,6 +4378,7 @@ _.FlightPathNames = {
 	[3280] = "Extraction Coast",
 	[3285] = "Amani Foothold",
 	[3286] = "Eastern Entrance",
+	[3288] = "Amani Foothold, Vaults of Atal'Utek",
 }
 -- Glyphs Database Module
 _.GlyphDB = {

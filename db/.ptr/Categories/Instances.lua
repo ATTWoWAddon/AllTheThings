@@ -65816,7 +65816,47 @@ s(307727,271874,{f=4,modID=6}),
 i(270175,{f=53,modID=6,spellID=1297761}),
 s(306393,271093,{f=20,modID=6,spellID=1298023})}})})}}),
 h(-19,{awp=120001,g={
-i(258839,{b=1,description="Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes."})}})}),
+i(258839,{b=1,description="Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes."})}}),
+inst(1322,{awp=120100,coords={
+[2509]={{47.2,68.5}}},maps={2588,2589,2590},g={
+d(101,{difficulties={1,2,23},g={
+e(2878,{npcID=259445,g={
+i(273795,{f=53,spellID=1293311}),
+s(308581,273775,{f=6}),
+s(308597,273793,{f=35}),
+s(308583,273777,{f=7}),
+s(308590,273785,{f=4}),
+s(308586,273780,{f=21}),
+i(273796,{f=53,spellID=1293316})}}),
+e(2879,{npcID=259446,g={
+s(308592,273787,{f=7}),
+i(273794,{f=53,spellID=1293304}),
+s(308591,273786,{f=4}),
+s(308585,273779,{f=1}),
+s(308580,273774,{f=5}),
+i(273781,{f=51}),
+s(308588,273783,{f=28}),
+s(308587,273782,{f=29})}}),
+e(2880,{npcID=259447,g={
+ach(62282),
+i(270900,{f=200,spellID=1288335}),
+de(25293,{itemID=279211,spellID=1306276}),
+mnt(1300776,{itemID=276804}),
+s(308589,273784,{f=32}),
+s(308582,273776,{f=7}),
+i(273792,{f=52}),
+s(308594,273789,{f=6}),
+s(308579,273773,{f=4}),
+s(308584,273778,{f=20,spellID=1296874}),
+s(309133,275070,{f=20,spellID=1296732}),
+s(308596,273791,{f=5}),
+i(273797,{f=53,spellID=1293326})}})}}),
+d(104,{difficulties={2,23},g={
+e(2880,{npcID=259447,g={
+ach(62283)}})}}),
+d(23,{
+e(2880,{npcID=259447,g={
+ach(62284)}})})}})}),
 h(-68,{awp=120001,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 flt(110,{(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 title(756)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(

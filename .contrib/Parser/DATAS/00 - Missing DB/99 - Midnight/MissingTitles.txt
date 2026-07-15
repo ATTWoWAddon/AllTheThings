@@ -68,7 +68,6 @@ title(770),	-- Venomous Warlord %s
 title(774),	-- Snake Eater %s
 title(775),	-- %s the Poisonous
 title(776),	-- %s, Fabled Vanquisher of Azta'rec
-title(779),	-- Briny %s
 title(781),	-- %s, Voice of the Fangs
 title(782),	-- %s, Nalorakk's Favored
 title(783),	-- Street Sovereign %s

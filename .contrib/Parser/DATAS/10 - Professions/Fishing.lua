@@ -877,6 +877,11 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 				["groups"] = { i(264002) },	-- Midnight Fisher's Shop Sign (DECOR!)
 			}),
+			ach(63510, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {	-- The Briny Best
+				["groups"] = {
+					title(779),	-- Briny <Name>
+				},
+			})),
 		}),
 		filter(RECIPES, {
 			i(244791),	-- Recipe: Amani Angler's Ward
