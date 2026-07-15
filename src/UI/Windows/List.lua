@@ -24,7 +24,7 @@ local function GetPopulatedQuestObject(questID)
 	-- 	app.Debugging = debug
 	-- end
 	-- Try populating quest rewards
-	app.TryPopulateQuestRewards(questObject);
+	-- app.TryPopulateQuestRewards(questObject);
 	return questObject;
 end
 local BaseObjectTypeFuncs = {
