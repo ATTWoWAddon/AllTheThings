@@ -2198,7 +2198,6 @@ root(ROOTS.Unsorted, {
 				i(267472),	-- Gnomatic Projector (TOY!)
 			}),
 			i(274427),	-- Sha Loot Box
-			i(274578),	-- Offering of Unalloyed Abundance
 		})),
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
 			n(WEAPONS, {

@@ -67,6 +67,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				ach(62325),	-- Abundance: Treasures Aplenty
 				ach(61681),	-- Abundance: You Should See Him in a Crown
 			}),
+			n(MAILBOX, {
+				i(274578, {	-- Offering of Unalloyed Abundance
+					["description"] = "Granted at the start of 12.0.5 to players who did not receive appropriate amounts of Unalloyed Abundance for their efforts prior to that point.",
+					["timeline"] = { ADDED_12_0_5 },
+				}),
+			}),
 			n(QUESTS, {
 				q(91930, {	-- The Abundant Lands
 					--["sourceQuest"] = XXXXX,	-- Finished Midnight Campaign
