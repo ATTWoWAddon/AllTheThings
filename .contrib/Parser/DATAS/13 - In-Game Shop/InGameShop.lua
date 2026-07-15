@@ -218,6 +218,15 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(248073, {	-- Smoldering Valor
 			["timeline"] = { ADDED_11_2_7 },
 		}),
+		i(78916, {	-- Soul of the Aspects (PET!)
+			["timeline"] = {
+				-- #if ANYCLASSIC
+				CREATED_4_3_0,
+				-- #else
+				ADDED_4_3_0,
+				-- #endif
+			},
+		}),
 		i(208751, {	-- Squally (PET!)
 			["timeline"] = { ADDED_11_2_7 },
 			["groups"] = {
@@ -232,14 +241,8 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 				})),
 			},
 		}),
-		i(78916, {	-- Soul of the Aspects (PET!)
-			["timeline"] = {
-				-- #if ANYCLASSIC
-				CREATED_4_3_0,
-				-- #else
-				ADDED_4_3_0,
-				-- #endif
-			},
+		i(272956, {	-- Sunflicker Driftmoth (PET!)
+			["timeline"] = { ADDED_12_0_7 },
 		}),
 		-- #if ANYCLASSIC
 		i(224002, {	-- Swoopy
@@ -1056,7 +1059,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(267078, {	-- Stoneforged Sentinel (MOUNT!)
 			["timeline"] = { ADDED_12_0_7 },
 		}),
-		mount(1292356, {	-- Sunflare Driftmoth (MOUNT!)
+		i(273655, {	-- Sunflare Driftmoth (MOUNT!)
 			["timeline"] = { ADDED_12_0_7 },
 		}),
 		-- #if AFTER 11.2.0

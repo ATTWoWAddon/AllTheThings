@@ -7495,8 +7495,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 		}),
 		n(QUESTS, {
 			q(92647, {	-- A Shadowed Journey Through Time
-				--["qg"] = ,	--
-				--["coord"] = {  },
+				["qg"] = 252687, -- Collector Ta'steld
+				["coord"] = { 56.0, 63.9, ORIBOS },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
 				["groups"] = { i(232877) },	-- Timely Goodie Bag

@@ -2003,7 +2003,6 @@ root(ROOTS.Unsorted, {
 				i(270273),	-- Viny Lasso
 				i(276346),	-- Fel-Singed Salvage
 				i(276347),	-- Cracked Legion Communicator
-				i(276348),	-- Marsh Wrangler's Vinewhip
 				i(276351),	-- Muckfaded Crystalline Figure
 				i(276352),	-- Scuffed Prayer Bangle
 				i(276354),	-- Frozen Fel Core

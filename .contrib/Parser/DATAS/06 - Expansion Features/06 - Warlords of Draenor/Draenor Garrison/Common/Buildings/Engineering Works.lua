@@ -26,16 +26,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(117438),	-- Gnomish Net Launcher
+							i(109574),	-- GUMM-E
 							i(117403),	-- Gyro-Radiant Reflector
 							i(117402),	-- Ultra-Electrified Reflector
+							i(109644),	-- Walter
 						},
 					}),
 					n(88610, {	-- Engineering Follower <Engineering Entrepreneur>
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(117438),	-- Gnomish Net Launcher
+							i(109574),	-- GUMM-E
 							i(117403),	-- Gyro-Radiant Reflector
 							i(117402),	-- Ultra-Electrified Reflector
+							i(109644),	-- Walter
 						},
 					}),
 					n(79826, {	-- Pozzlow

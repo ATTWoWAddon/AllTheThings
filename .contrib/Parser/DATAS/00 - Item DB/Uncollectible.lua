@@ -2891,6 +2891,7 @@ i(276360);	-- Etched Ice Chip
 i(276353);	-- Frozen Sliver of Darkness
 i(276362);	-- Lost Glacier Climbing Hooks
 i(276345);	-- Malfunctioning Holoprint
+i(276348);	-- Marsh Wrangler's Vinewhip
 i(276344);	-- Overgrown Spore Extractor
 i(276357);	-- Razor-Ice Flake
 i(276355);	-- Shattered Frostforged Hilt

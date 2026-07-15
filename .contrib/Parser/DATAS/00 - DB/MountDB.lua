@@ -2455,7 +2455,7 @@ i(269240, 1284973);	-- Luminous Sporeglider
 i(258884, 1264184);	-- Spawn of Vyranoth
 i(267078, 1279352);	-- Stoneforged Sentinel
 i(275464, 1298439);	-- Sun Festival's Painted Roc
-i(0, 1292356);	-- Sunflare Driftmoth
+i(273655, 1292356);	-- Sunflare Driftmoth
 i(275664, 1297427);	-- Tortured Gorger
 i(274649, 1294648);	-- Voidmancer's Starcarver
 --- UNSORTED ---
@@ -2464,6 +2464,8 @@ i(0, 1261369);	-- Amani Hex Bear
 i(274681, 1294767);	-- Badlands Buzzard
 i(273650, 1292342);	-- Green Rocket Mount [PH]
 i(273652, 1292345);	-- Pink Rocket Mount [PH]
+i(276245, 1299156);	-- Shadow Spirehawk
+i(272920, 1291315);	-- Spring Panda
 
 ------------------
 -- PATCH 12.1.0 --
