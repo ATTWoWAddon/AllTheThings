@@ -2592,6 +2592,7 @@ MobileDB.GameObject = {
 	[398758] = true,	-- Saxifrage
 	[398761] = true,	-- Titan-Touched Hochenblume
 	[398818] = true,	-- Challenger's Cache (Neltharion's Lair)
+	[398829] = true,	-- Infused Proclamation (q:75573)
 	[401814] = true,	-- Void-Touched Chest [Sarkareth]
 	[401844] = true,	-- Smelly Trash Pile
 	[402602] = true,	-- Inconspicuous Crystal
