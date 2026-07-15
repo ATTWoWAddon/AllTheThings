@@ -243,7 +243,7 @@ app:CreateWindow("List", {
 					end
 
 					-- info about the Window
-					local DGU, DGR = app.DirectGroupUpdate, app.DirectGroupRefresh;
+					local DGU, DGR = app.DirectGroupUpdate, app.DirectGroupRedraw;
 					local overrides = {
 						visible = not IsHarvesting and true or nil,
 						collectibleAsCost = false,

@@ -219,7 +219,7 @@ if ItemEventListener then
 		if _t.__Retrieved then return end
 
 		_t.__Retrieved = true
-		-- app.PrintDebug("RetrievalFunc",t.hash)
+		-- app.PrintDebug("ItemAsyncRefreshFunc",t.hash)
 		-- app.PrintDebug("Item Callback", id)
 		ItemEventListener:AddCallback(math_floor(id), function()
 			-- app.PrintDebug("Item Loaded", id)

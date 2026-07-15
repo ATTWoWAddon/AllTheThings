@@ -9,6 +9,7 @@ local CreateFrame,GetCursorPosition,IsModifierKeyDown
 	= CreateFrame,GetCursorPosition,IsModifierKeyDown;
 local C_AddOns_GetAddOnMetadata
 	= C_AddOns.GetAddOnMetadata;
+local wipearray = app.wipearray
 
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
@@ -1982,7 +1983,7 @@ local function UpdateWindow(self, force)
 			rowData = {};
 			self.rowData = rowData
 		else
-			wipe(rowData)
+			wipearray(rowData)
 		end
 
 		local didUpdate

@@ -500,7 +500,7 @@ end
 -- For directly applying the full Update operation at the specified group, and propagating the difference upwards in the parent hierarchy,
 -- then triggering a delayed soft-update of the Window containing the group if any. 'got' indicates that this group was 'gotten'
 -- and was the cause for the update
-local function DirectGroupUpdate(group, got)
+local function DirectGroupUpdate(group)
 	-- DGU OnUpdate needs to run regardless of filtering
 	if group.DGUOnUpdate then
 		-- app.PrintDebug("DGU:OnUpdate",group.hash)
@@ -541,7 +541,7 @@ local function DirectGroupUpdate(group, got)
 			app.FillGroups(group)
 		end
 		-- app.PrintDebug("DGU:Update",app:SearchLink(group),">",DGUDelay,window.Suffix,window.Update,window.isQuestChain)
-		DelayedCallback(window.Update, DGUDelay, window, window.isQuestChain, got)
+		DelayedCallback(window.Update, DGUDelay, window, window.isQuestChain)
 		window:ToggleExtraFilters()
 	elseif group.DGU_Fill then
 		-- group wants to fill, but isn't yet in a window... so do a delayed DGU again
@@ -578,16 +578,16 @@ local function DirectGroupRefresh(group, immediate)
 			DelayedCallback(window.Update, DGUDelay, window)
 		end
 	else
-		-- app.PrintDebug("DGR:Refresh",group.hash,">",DGUDelay,"No window!")
+		-- app.PrintDebug("DGR:Refresh",group.hash,">",DGUDelay,"No window!",app:SearchLink(group),app.GenerateSourceHash(group))
 		-- app.PrintTable(group)
 		-- this scenario happens when the meta-group of a DLO used in /att list triggers a DGR on itself
 		-- due to it being completely detached from the actual 'list' window
 		-- perhaps this is niche enough of an occurrence that we can just try to refresh the 'list' window
 		-- in this situation
-		local window = app.Windows.list
-		if window then
-			DelayedCallback(window.Update, DGUDelay, window)
-		end
+		-- local window = app.Windows.List
+		-- if window and window:IsVisible() then
+		-- 	DelayedCallback(window.Update, DGUDelay, window)
+		-- end
 	end
 end
 app.DirectGroupRefresh = DirectGroupRefresh
