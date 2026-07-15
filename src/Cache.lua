@@ -938,7 +938,11 @@ fieldConverters.qis = function(group, value)		-- Referenced in Modules/Search
 end
 
 -- These are used to provide sourcePaths for the various types:
+-- Also prevents these Things from thinking they are 'missing' since it allows searching for themselves
 -- If some day we want sourcePath to be more dynamic, we can do that in the InformationType.
+fieldConverters.criteriaID = function(group, value)
+	CacheField(group, "criteriaID", value);
+end
 fieldConverters.decorID = function(group, value)
 	CacheField(group, "decorID", value);
 end
@@ -965,9 +969,6 @@ end
 do	-- Chopping Block
 fieldConverters.achievementCategoryID = function(group, value)
 	CacheField(group, "achievementCategoryID", value);
-end
-fieldConverters.criteriaID = function(group, value)
-	CacheField(group, "criteriaID", value);
 end
 fieldConverters.heirloomUnlockID = function(group, value)
 	CacheField(group, "heirloomUnlockID", value);
