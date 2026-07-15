@@ -435,7 +435,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(4014),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_BeanBag01_Destroyed.m2
 			rawdecor(4426),	-- [DNT] Stack of Kafa Mugs
 			rawdecor(4430),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Structure_Statue02.m2
-			rawdecor(5130),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask02.m2
 			rawdecor(5131),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask03.m2
 			rawdecor(5649),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Crafting_Tool03.m2
 			rawdecor(5650),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Storage_Barrel01.m2

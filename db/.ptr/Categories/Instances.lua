@@ -51558,7 +51558,7 @@ crit(53469,{achID=15651,awp=90205,id=7})}),
 gach(14379)}})}),
 d(24,{sym={{"sub","tw_instance",1188}}})}}),
 inst(1185,{awp=90002,coords={
-[1525]={{78.4,48.9}}},maps={1663,1664,1665},savedInstanceID=2287,g={
+[1525]={{78.4,48.9}}},maps={1663,1664,1665,1734},savedInstanceID=2287,g={
 d(101,{difficulties={1,2,23},g={
 e(2406,{npcID=165408,g={
 rfl(179,{b=1,c={1},itemID=183380,spellID=342040}),
@@ -64745,7 +64745,8 @@ ach(63522),
 ach(63254,{
 mnt(1297220,{itemID=275652}),
 crit(116808,{achID=63254,id=7})}),
-ach(63472),
+ach(63472,{
+crit(116986,{achID=11761,awp=70200,id=75})}),
 gach(63646),
 gach(63647)}),
 o(532226,{catalystID=12,coords={

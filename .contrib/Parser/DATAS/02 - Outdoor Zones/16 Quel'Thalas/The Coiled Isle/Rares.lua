@@ -4,13 +4,11 @@
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
-		n(RARES, {
+		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(256631, {	-- Big Mon <Ancient Amani Warband>
 				["coord"] = { 69.8, 63.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["questID"] = 93829,
-				["groups"] = {
-					i(276051),	-- Fangmouth Warspear	// Possible Zone Drop
-				},
+				["groups"] = { i(280689) },	-- Big Mon's Big Spear
 			}),
 			n(257906, {	-- Coin-Eye Skully
 			--	["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -19,7 +17,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(261142, {	-- Destra
 				["coord"] = { 52.1, 32.3, MAP.MIDNIGHT.THE_COILED_ISLE },
-				--["questID"] = 95452,
+				["questID"] = 95452,
 				--["groups"] = {  },
 			}),
 			n(264854, {	-- Farthik the Plunderer
@@ -50,8 +48,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(258920, {	-- Nar'zira <The Omnilegent>
 				["coord"] = { 63.2, 62.4, 2642 },	-- Tomb of the Lost Priest
-				--["questID"] = 94860,
-				--["groups"] = {  },
+				["questID"] = 94860,
+				["groups"] = { i(280716) },	-- Locket of the Omnilegent
 			}),
 			n(268049, {	-- Siltmouth <The Unflappable>
 				["coord"] = { 50.2, 69.0, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -72,7 +70,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--	["questID"] = 96030,
 			--	["groups"] = {  },
 			}),
-		}),
+		})),
 	}),
 }));
 
@@ -94,6 +92,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				}),
 				q(98347, {	-- Weekly reputation: Lockjaw
 					["name"] = "Lockjaw weekly reputation obtained.",
+				}),
+				q(98351, {	-- Weekly reputation: Nar'zira
+					["name"] = "Nar'zira weekly reputation obtained.",
 				}),
 				q(98345, {	-- Weekly reputation: Siltmouth
 					["name"] = "Siltmouth weekly reputation obtained.",

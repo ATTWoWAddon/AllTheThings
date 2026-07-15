@@ -393,6 +393,16 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(165731),	-- Cache of Dazar'alor Treasures
 			i(165732),	-- Cache of Dazar'alor Treasures
 			i(166680),	-- Echo of Elune
+			i(166383),	-- Set Keystone Map: Atal'dazar
+			i(166390),	-- Set Keystone Map: Freehold
+			i(166391),	-- Set Keystone Map: Kings' Rest
+			i(166392),	-- Set Keystone Map: Shrine of the Storm
+			i(166393),	-- Set Keystone Map: Siege of Boralus
+			i(166394),	-- Set Keystone Map: Temple of Sethraliss
+			i(166395),	-- Set Keystone Map: The MOTHERLODE!!
+			i(166396),	-- Set Keystone Map: The Underrot
+			i(166397),	-- Set Keystone Map: Tol Dagor
+			i(166398),	-- Set Keystone Map: Waycrest Manor
 			i(165904),	-- Treasure Map of Havenswood
 			i(165905),	-- Treasure Map of Jorundall
 			i(165884),	-- Treasure Map of Molten Cay
@@ -2292,6 +2302,16 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		-- 12.0.7
 		expansion(EXPANSION.MID, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_7 } }, {
 			i(277124),	-- Warbound Cache of Void-Touched Armaments (Champion)
+		})),
+
+		-- 12.1.0
+		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+			i(271679),	-- Set Keystone Level: 2
+			i(271944),	-- Set Keystone Map: Altar of Fangs
+			i(271958),	-- Set Keystone Map: Den of Nalorakk
+			i(271947),	-- Set Keystone Map: Murder Row
+			i(271960),	-- Set Keystone Map: The Blinding Vale
+			i(271952),	-- Set Keystone Map: Voidscar Arena
 		})),
 	}),
 }));

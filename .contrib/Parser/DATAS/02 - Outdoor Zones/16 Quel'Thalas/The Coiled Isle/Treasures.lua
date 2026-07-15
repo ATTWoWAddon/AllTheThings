@@ -9,7 +9,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				header(HEADERS.Object, 619906, {	-- Abandoned Amani Privateer's Cache
 					["description"] = "1. Fish out a 'Grisly Morsel' from 'Grisly Cod Pool'.\n2. Feed the 'Hungry Dolphin' to gain it as your companion.\n3. Dive down and swim around the bay area until the Dolphin helps you find both pieces of the key. DO NOT RESURFACE!\n4. Combine both halves of the key.\n5. Loot the treasure.",
 					["coord"] = { 72.5, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },	-- General area where everything related to the treasure happens
-					["cr"] = 258076,	-- Hungry Dolphin
+					["crs"] = {
+						258076,	-- Hungry Dolphin
+						258255,	-- Helpful Dolphin
+					},
 					["groups"] = {
 						o(619768, {	-- Grisly Cod Pool
 							["coord"] = { 73.4, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -40,18 +43,30 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					},
 				}),
-				o(649085, {	-- Brine-Crusted Chest (Ancient Amani Chest)
-					-- Will need to be restructured
-					-- Found this video but it does not work for me, "There is no loot" while trying to loot Bubbling Clam
-					-- https://www.youtube.com/watch?v=Q71cuX71Shw
-					-- i(271815),	-- Luminescent Pearl
-					-- i(271881),	-- Dropped Key
-					["coord"] = { 70.6, 76.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--	["cost"] = { { "i", 271881, 1 } },	-- 1x Dropped Key
-					--	["questID"] = 95995,
-					["groups"] = {
-						i(274921),	-- Pearl of Jubilation (TOY!)
-						i(276144),	-- Pearl of Jubilation
+				header(HEADERS.Object, 649085, {	-- Brine-Crusted Chest
+					["description"] = "1. Find a 'Bubbling Clam' under water to the south of the Cave and obtain a 'Luminescent Pearl'.\n2. Go to the cave and present the Pearl to 'Nacretta'. It will give you the Key in exchange.\n3. Loot the 'Dropped Key' and open the treasure.",
+					["coord"] = { 70.2, 77.0, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Cave Entrance
+					["cr"] = 263347,	-- Nacretta <the Pearl Hoarder>
+					["groups"] = {	-- Progress order
+						o(648981, {	-- Bubbling Clam
+							["coord"] = { 69.6, 82.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["groups"] = { i(271815) },	-- Luminescent Pearl
+						}),
+						q(96001, { ["name"] = "Nacretta has taken the Luminescent Pearl.", }),	-- Triggered after Nacretta spots the Luminescent Pearl
+						q(96002, { ["name"] = "Nacretta has Dropped the Key.", }),	-- Triggered after the Dropped Key spawns
+						o(649082, {	-- Dropped Key
+							["coord"] = { 70.6, 77.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["groups"] = { i(271881) },	-- Dropped Key
+						}),
+						o(649085, {	-- Brine-Crusted Chest (Ancient Amani Chest)
+							["coord"] = { 70.6, 76.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["cost"] = { { "i", 271881, 1 } },	-- 1x Dropped Key
+							["questID"] = 95995,
+							["groups"] = {
+								i(274921),	-- Pearl of Jubilation (TOY!)
+								i(276144),	-- Pearl of Jubilation
+							},
+						}),
 					},
 				}),
 				o(642316, {	-- Cracked Skull
@@ -62,6 +77,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(641984, {	-- Crumbling Urn (Broken Amani Urn)
 					["coord"] = { 73.5, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95558,
+					["groups"] = {
+						i(269861, {	-- A Tattered Amani Scroll
+							["lore"] = "Translated from Zandali language:\n'May the loas of the land protect us and bless us. May the spirits of our ancestors have mercy on our house and guide our hand in fortune.'",
+						}),
+						i(269868),	-- Miniature Hand-Crafted Mask
+					},
 				}),
 				o(642322, {	-- Damaged Loa Trinket
 					["coord"] = { 46.9, 29.6, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -77,40 +98,54 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 95591,
 					["groups"] = { i(278003) },	-- Forgotten Mask
 				}),
-				o(645549, {	-- Grave of Someone Forgotten
-					-- Will need to be restructured
-					-- Found this video but it does not work for me, Forgotten Soldier did not disappear
+				header(HEADERS.Object, 645549, {	-- Grave of Someone Forgotten
 					-- https://www.youtube.com/watch?v=kOQRZnsootw
-					["coord"] = { 67.3, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					-- Found this video but it does not work for me, Forgotten Soldier did not disappear. It's like a step is missing...
+					["description"] = "1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n3. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n4. Go to Ata'leki <Spectral Foods Vendor>, ask about spectral food and then buy Spirit Sprouts.\n5. Go back to the Forgotten Soldier and commit sudoku (*wink, wink*) in his vicinity.\n6. Release your spirit and eat Spirit Sprouts. Remain seating, at least 10 seconds, until you get a buff.\n7. Talk to Spirit Healer and accept the Resurrection.\n8. Go back to the Nameless Grave.",
 					["providers"] = {
 						{ "n", 263244 },	-- Forgotten Soldier
 						{ "o", 645553 },	-- Nameless Grave
 					},
-					--	["questID"] = 95956,
 					["groups"] = {
-						i(279021),	-- Forgotten Memento (TOY!)
-						i(279049),	-- Forgotten Memento
+						n(263242, {	-- Zan'ja
+							["coord"] = { 70.4, 58.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+						}),
+						n(263243, {	-- Ru'ko
+							["coord"] = { 66.4, 57.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+						}),
+						o(645549, {	-- Grave of Someone Forgotten
+							["coord"] = { 67.3, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+							--	["questID"] = 95956,
+							["groups"] = {
+								i(279021),	-- Forgotten Memento (TOY!)
+								i(279049),	-- Forgotten Memento
+							},
+						}),
 					},
 				}),
 				o(642071, {	-- Jaktu's Cursed Blade
-					--["questID"] = 95566,
+					["coord"] = { 60.4, 59.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["questID"] = 95566,
 					["groups"] = {
 						i(277954),	-- Jaktu's Cursed Blade (TOY!)
 						i(277961),	-- Jaktu's Cursed Blade
 					},
 				}),
 				header(HEADERS.NPC, 261867, {	-- Lost Spirit
-					["description"] = "Translated from Zandali language:\n'Can you help me? I have lost something. A family heirloom. It must be somewhere nearby. Please bring it to me if you find it.'\nYou can find a 'Forgotten Trinket' on the left side of the base of |cFFFFD700The Altar of Wrath|r.",
+					["lore"] = "Translated from Zandali language:\n'Can you help me? I have lost something. A family heirloom. It must be somewhere nearby. Please bring it to me if you find it.'",
+					["description"] = "You can find a 'Forgotten Trinket' on the left side of the base of |cFFFFD700The Altar of Wrath|r.",
 					["coord"] = { 68.1, 65.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["cr"] = 261867,	-- Lost Spirit
-					["questID"] = 95571,
 					["groups"] = {
 						o(642210, {	-- Forgotten Trinket
 							["coord"] = { 70.2, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(269935) },	-- Forgotten Trinket
 						}),
-						o(642205),	-- Forgotten Treasure	// Contains nothing. Will have to test after next PTR update
-						q(95574, { ["name"] = "Lost Spirit freed", }),	-- Triggered when Forgotten Trinket is given to the Lost Spirit
+						o(642205, {	-- Forgotten Treasure
+							["questID"] = 95571,
+							["groups"] = { i(251783) },	-- Lost Idol of the Hash'ey
+						}),
+						q(95574, { ["name"] = "Lost Spirit freed.", }),	-- Triggered when Forgotten Trinket is given to the Lost Spirit
 					},
 				}),
 				o(629421, {	-- Malfunctioning Staff
@@ -156,7 +191,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				o(645208, {	-- Sunken Diver's Chest
 					["coord"] = { 65.4, 5.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--["cost"] = 1x Diver's Key
+					--["cost"] = { { "i", 271423, 1 } },	-- 1x Diver's Key
 					--["questID"] = 95907,
 				}),
 				o(642021, {	-- Tarnished Amani Glaive
@@ -166,7 +201,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				o(644654, {	-- Venomjade Necklace
 					["coord"] = { 64.7, 36.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--["questID"] = 95835,
+					["questID"] = 95835,
+					["groups"] = {
+						i(279011),	-- Venomjade Necklace
+						i(271175),	-- Venomjade Necklace (DECOR!)
+					},
 				}),
 				header(HEADERS.Object, 648564, {	-- Vul'zahn's Smuggled Treasure
 					["description"] = "Steps must be followed in order to unlock gossip options.\n\n1. Talk to Vul'zahn and ask him if you can have the treasure.\n2. Talk to Witherbark Cook and ask him for the Bowl of Stew.\n3. Talk to Apothecary Dezi and ask him to give you a Potion.\n4. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n5. Talk to Vul'zahn, give him the Stew. He will give you the key.\n6. Open the treasure.",
@@ -243,11 +282,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 71.9, 44.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 98307,
 				}),
-			}),
-			-- Uncertain
-			o(622048, {	-- Journal of a Literate Lich
-				-- Exo Note: I don't know if this one will matter or not. It sparkles as if it is important. Currently has no HQT. Will remove if it turns out it is related to a quest or something.
-				["coord"] = { 51.4, 26.1, 2642 },	-- Tomb of the Lost Priest
 			}),
 			-- Decrepit Caches, there's a number of them throughout the Isle and crypts however they are locked and each of them require i(275048), -- Decrepit Key to open
 			-- Repeatables

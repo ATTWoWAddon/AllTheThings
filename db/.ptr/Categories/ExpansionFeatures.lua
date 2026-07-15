@@ -23642,19 +23642,19 @@ q(58636,{coords={
 q(58638,{coords={
 [1527]={{54.9,32.9}}},lvl=50,qgs={155102},sourceQuests={58636}}),
 q(58639,{coords={
-[1527]={{68.9,57.9}}},lvl=50,qgs={155102},sourceQuests={58638},g={
+[1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},sourceQuests={58638},g={
 i(174450)}}),
 q(58646,{coords={
-[1527]={{68.9,57.9}}},lvl=50,qgs={155102},sourceQuests={58638}}),
+[1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},sourceQuests={58638}}),
 q(58640,{coords={
-[1527]={{68.9,57.9}}},lvl=50,qgs={155102},sourceQuests={58639,58646}}),
+[1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},sourceQuests={58639,58646}}),
 q(58641,{coords={
-[1527]={{72.9,48.4}}},lvl=50,qgs={155102},sourceQuests={58640},g={
+[1527]={{72.9,48.4}}},lvl=50,qgs={155102,161938},sourceQuests={58640},g={
 i(174451)}}),
 q(58642,{coords={
-[1527]={{72.9,48.4}}},lvl=50,qgs={155102},sourceQuests={58641}}),
+[1527]={{72.9,48.4}}},lvl=50,qgs={155102,161938},sourceQuests={58641}}),
 q(58643,{coords={
-[1527]={{72.9,48.4}}},lvl=50,qgs={155102},sourceQuests={58642}}),
+[1527]={{72.9,48.4}}},lvl=50,qgs={155102,161938},sourceQuests={58642}}),
 q(58645,{coords={
 [1527]={{71.6,52}}},lvl=50,qgs={161031},sourceQuests={58643}}),
 q(58287,{coords={
@@ -24325,7 +24325,8 @@ q(56574,{crs={160810,160825,160826,160867,160868,160872,160874,160922,160930},de
 q(56575,{coords={
 [1530]={{13.9,77.2}}},lvl=50,qgs={155487},sourceQuests={56574}}),
 q(56647,{coords={
-[422]={{12.2,95.3}}},lvl=50,qgs={155487},sourceQuests={56645}}),
+[422]={{12.2,95.3}},
+[1530]={{11.8,93.8}}},lvl=50,qgs={155487},sourceQuests={56645}}),
 q(58760,{coords={
 [1530]={{43.8,71.8}}},isDaily=1,lvl=50,qgs={154677},sourceQuests={56771},g={
 i(174762)}}),
@@ -40653,6 +40654,8 @@ crit(112532,{achID=62325,id=3,providers={{"n",259996}}}),
 crit(112533,{achID=62325,id=4,providers={{"n",259997}}}),
 crit(112550,{achID=62332,id=1})}),
 ach(61681)}),
+h(-39,{
+i(274578,{awp=120005,description="Granted at the start of 12.0.5 to players who did not receive appropriate amounts of Unalloyed Abundance for their efforts prior to that point.",f=55})}),
 h(-45,{
 q(91930,{coords={
 [2437]={{45.1,67.6}}},lvl=80,qgs={241924}}),
@@ -41059,7 +41062,6 @@ i(271644),
 i(272128,{crs={257827,257828,257829},description="Has a chance to drop from any Naga-type creature within the Ritual Site.",spellID=1290269})})}}),
 h(-12,{
 ach(63182,{awp=120007,maps={2585,2594},g={
-crit(114822,{achID=63182,id=5,questID=96732}),
 crit(114823,{achID=63182,id=6,questID=96733})}}),
 ach(62547,{maps={2585,2594}}),
 ach(62544,{maps={2585,2594}}),
@@ -41166,7 +41168,12 @@ q(96731,{coords={
 [2393]={{47.7,49.6}},
 [2395]={{37.5,65.1}},
 [2437]={{29.5,77.9}}},qgs={257416,267813},sourceQuests={96730},g={
-crit(114821,{achID=63182,id=4})}})}})}),
+crit(114821,{achID=63182,id=4})}}),
+q(96732,{coords={
+[2393]={{47.7,49.6}},
+[2395]={{37.5,65.1}},
+[2437]={{29.5,77.9}}},qgs={257416,267813},sourceQuests={96731},g={
+crit(114822,{achID=63182,id=5})}})}})}),
 h(-56,{
 o(645182,{coords={
 [2594]={{45.5,55.5},{46,58.4},{50.6,53.5},{51.4,73.3},{62.9,38.9}}},g={
@@ -41811,7 +41818,7 @@ ah(63325,{awp=120007,type="a",g={
 q(96410,{coords={
 [2649]={{60.4,10.4}}},qgs={264069},sourceQuests={96233}}),
 q(96831,{coords={
-[2393]={{38.6,59.6},{40.2,72.2},{47.8,51.4},{50.8,73.4}}},description="You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",isBreadcrumb=1,isWeekly=1,nextQuests={96441,96442,96443},qgs={265903},sourceQuests={96410}}),
+[2393]={{38.6,59.6},{40.2,72.2},{47.8,51.4},{50.8,73.4}}},description="You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",isBreadcrumb=1,isWeekly=1,nextQuests={96441,96442,96443,96444},qgs={265903},sourceQuests={96410}}),
 q(96441,{coords={
 [2649]={{60.4,10.4}}},qgs={264069},sourceQuests={96410,96831},g={
 i(274576)}}),
@@ -41821,7 +41828,9 @@ q(96442,{coords={
 [2649]={{59.7,10.9}}},qgs={264070},sourceQuests={96441,96831},g={
 i(274577)}}),
 q(96443,{coords={
-[2649]={{59.7,10.9}}},qgs={264070},sourceQuests={96442,96831}})}})})}})}}),
+[2649]={{59.7,10.9}}},qgs={264070},sourceQuests={96442,96831}}),
+q(96444,{coords={
+[2649]={{59.7,10.9}}},qgs={264070},sourceQuests={96443,96831}})}})})}})}}),
 h(-671,{awp=120001,g={
 h(-12,{
 ach(63164,{awp=120007}),
@@ -42822,7 +42831,6 @@ m(2600,{coords={
 [2405]={{51.4,71.3}}},crs={264322},icon=775461,maps={2646},g={
 h(-12,{
 ach(63385,{
-crit(115430,{achID=63385,id=3,questID=96578}),
 crit(115482,{achID=62874,id=3})}),
 ach(62904,{
 crit(115483,{achID=62874,id=4})}),
@@ -42924,6 +42932,24 @@ i(275689)}})}}),
 q(96572,{coords={
 [2600]={{74.2,73.5}}},providers={{"i",275520}},sourceQuests={96567,96568,96569},g={
 crit(115429,{achID=63385,id=2})}}),
+q(96573,{coords={
+[2600]={{48.1,81.5}}},qgs={265558},g={
+i(275699)}}),
+q(96574,{coords={
+[2600]={{47.5,82}}},qgs={265950},sourceQuests={96573}}),
+q(96576,{coords={
+[2646]={{75.5,44.7}}},qgs={266829},sourceQuests={96574},g={
+i(276255)}}),
+q(96575,{coords={
+[2646]={{75.3,43.8}}},qgs={266541},sourceQuests={96574}}),
+q(97031,{coords={
+[2646]={{67.4,79.5}}},providers={{"o",658789}},sourceQuests={96574}}),
+q(96577,{coords={
+[2646]={{36.7,73.1}}},qgs={266540},sourceQuests={96575,96576},g={
+i(276342)}}),
+q(96578,{coords={
+[2646]={{36.7,73.1}}},qgs={266540},sourceQuests={96577},g={
+crit(115430,{achID=63385,id=3})}}),
 q(96720,{coords={
 [2393]={{47.7,51.1}},
 [2600]={{48.2,81.2},{48.5,81.9}}},isWeekly=1,qgs={263531,265303},sourceQuests={96052},g={
@@ -43376,7 +43402,7 @@ i(276096,{spellID=1298541}),
 i(276098,{spellID=1298543})}),
 h(-55,{
 ah(1300397,{coords={
-[2599]={{61.4,78.8},{70.5,84.3}}},description="Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. Return to the hilt again to claim your rwward.",type="s",g={
+[2599]={{61.4,78.8},{70.5,84.3}}},description="Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. Return to the hilt again to claim your reward.",type="s",g={
 s(309642,276290,{f=25})}})}),
 h(-56,{
 o(655270,{description="Spawns randomly throughout the zone."})}),

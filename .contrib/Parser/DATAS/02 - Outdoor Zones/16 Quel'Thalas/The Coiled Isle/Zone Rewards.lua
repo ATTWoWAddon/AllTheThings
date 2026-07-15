@@ -75,7 +75,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 			n(WEAPONS, {
+				i(276051),	-- Fangmouth Warspear
 				i(276059),	-- Headhunter's Hacker
+				i(276044),	-- Loa-Infused Battlestaff
 				i(276045),	-- Trailblazing Soulblade
 				i(276048),	-- Vipersbane Dagger
 			}),

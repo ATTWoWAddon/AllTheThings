@@ -103,14 +103,11 @@ root(ROOTS.Unsorted, {
 			i(269578),	-- Poison Dart Frog Gland
 			i(269637),	-- Serpent-Caller Spike
 			i(269720),	-- Corrosive Hekte
-			i(269861),	-- A Tattered Amani Scroll
-			i(269868),	-- Miniature Hand-Crafted Mask
 			i(269918),	-- Venom-Corroded Gallstone
 			i(270191),	-- Lil'Kruul's Hilt
 			i(270210),	-- Bird Feathers
 			i(270211),	-- Furiostraza's Filter
 			i(270249),	-- Cursed Spawn
-			i(270253),	-- Jaundiced Slitherer
 			i(270267),	-- Twilight Missive
 			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
@@ -592,12 +589,10 @@ root(ROOTS.Unsorted, {
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice
 			i(271445),	-- Fanged Brute's Greatbelt
 			i(271638),	-- Bound Serpent's Jade Eye
-			i(271679),	-- Set Keystone Level: 2
 			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
 			i(271693),	-- Congealed Venom
 			i(271717),	-- Cup of Kafa
-			i(271815),	-- Luminescent Pearl
 			i(271850),	-- Venomous Tendril
 			i(271863),	-- Ophidian Bile
 			i(271864),	-- Rotten Pneuma
@@ -613,11 +608,6 @@ root(ROOTS.Unsorted, {
 			i(271888),	-- Recipe: Liquid Luster
 			i(271889),	-- Alluring Nostrum
 			i(271890),	-- Alluring Nostrum
-			i(271944),	-- Set Keystone Map: Altar of Fangs
-			i(271947),	-- Set Keystone Map: Murder Row
-			i(271952),	-- Set Keystone Map: Voidscar Arena
-			i(271958),	-- Set Keystone Map: Den of Nalorakk
-			i(271960),	-- Set Keystone Map: The Blinding Vale
 			i(271991),	-- Venomous Equipment Chest
 			i(271996),	-- Crumpled Scroll
 			i(271997),	-- Abused Relic
@@ -1008,7 +998,6 @@ root(ROOTS.Unsorted, {
 			i(276035),	-- Soulcoiler's Signet
 			i(276042),	-- Templetusk Shield
 			i(276043),	-- Vilefang Censer
-			i(276044),	-- Loa-Infused Battlestaff
 			i(276046),	-- Superclutch Smasher
 			i(276047),	-- Swamp Whomper
 			i(276049),	-- Snakeslayer's Claymore
@@ -1389,7 +1378,6 @@ root(ROOTS.Unsorted, {
 			i(278994),	-- Big Green Armageddon
 			i(279001),	-- Big Dark Armageddon
 			i(279002),	-- Big Red Armageddon
-			i(279011),	-- Venomjade Necklace
 			i(279012),	-- Cracked Keystone
 			i(279013),	-- [ph] SpiceWitch Chest - Blue
 			i(279014),	-- [ph] SpiceWitch Feet - Blue
@@ -3892,16 +3880,6 @@ root(ROOTS.Unsorted, {
 			i(166253),	-- Mana Crystal
 			i(166281),	-- Page of Dark Magic
 			i(166382),	-- Add Keystone Affix: Infested
-			i(166383),	-- Set Keystone Map: Atal'dazar
-			i(166390),	-- Set Keystone Map: Freehold
-			i(166391),	-- Set Keystone Map: Kings' Rest
-			i(166392),	-- Set Keystone Map: Shrine of the Storm
-			i(166393),	-- Set Keystone Map: Siege of Boralus
-			i(166394),	-- Set Keystone Map: Temple of Sethraliss
-			i(166395),	-- Set Keystone Map: The MOTHERLODE!!
-			i(166396),	-- Set Keystone Map: The Underrot
-			i(166397),	-- Set Keystone Map: Tol Dagor
-			i(166398),	-- Set Keystone Map: Waycrest Manor
 			i(166399),	-- Add Keystone Affix: Infested
 			i(166421),	-- PH Alliance Warfront Skullcleaver
 			i(166423),	-- PH Horde Warfront Claymore

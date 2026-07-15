@@ -20,8 +20,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(263873, {	-- Amani Forge (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
+					i(281582, {	-- Atal'Utek Ivy (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					}),
 					i(279452, {	-- Forgotten Amani Mural (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+					}),
+					i(244345, {	-- Forgotten Amani Urn (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(279285, {	-- Lost Tortollan Scroll (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
@@ -32,7 +38,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(271851, {	-- Oozing Vilescar Barricade (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
+					i(281580, {	-- Pungent Atal-Utek Shroom (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
 					i(280218, {	-- Tortollan Scholar Satchel (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					}),
+					i(271175, {	-- Venomjade Necklace (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(279292, {	-- Zul'Aman Pine Tree (DECOR!)

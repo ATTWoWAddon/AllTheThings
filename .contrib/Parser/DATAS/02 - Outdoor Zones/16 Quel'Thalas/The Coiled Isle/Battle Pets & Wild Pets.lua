@@ -11,6 +11,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					{ 67.9, 81.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
 			}),
+			i(270253, {	-- Jaundiced Slitherer (PET!)
+				["crs"] = { 262246 },	-- Jaundiced Slitherer
+				["coords"] = {
+					{ 53.8, 34.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+				},
+			}),
 			i(270252, {	-- Nightfur Kapara (PET!)
 				["crs"] = { 262245 },	-- Nightfur Kapara
 				["coords"] = {
