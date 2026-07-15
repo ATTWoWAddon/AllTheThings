@@ -2951,7 +2951,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete Stage 2 of Unga Ingoo in less than four minutes.","The Keg Runner",,7232,1048,-1,0,15302,0,10,0,64,132621,0,24284,0,0,0,0
 "Explore the Vale of Eternal Blossoms, revealing the covered areas of the world map.","Explore Vale of Eternal Blossoms",,6979,-1,-1,0,15113,0,10,2228224,7,618798,0,23517,0,0,0,0
 "Hold four Orbs of Power and kill four enemies who are holding an Orb of Power in a single Temple of Kotmogu match.","Temple of Kotmogu All-Star",,6980,998,-1,0,15163,0,10,0,9,236320,0,27253,0,0,0,0
-"Complete the Temple of Kotmogu achievements listed below.","Master of Temple of Kotmogu","Decor Rewards: Kotmogu Orb of Power, Kotmogu Pedestal",6981,998,-1,0,15163,0,10,131072,10,623704,0,24555,0,0,0,0
+"Complete the Temple of Kotmogu achievements listed below.","Master of Temple of Kotmogu","Decor Rewards: Kotmogu Orb of Power, Kotmogu Pedestal",6981,998,-1,0,15163,0,10,132096,10,623704,0,24555,0,0,0,0
 ,"Stone Guard kills (LFR Mogu'shan Vaults)",,6983,1008,-1,0,15164,0,0,1,16,136243,0,23225,0,0,0,0
 ,"Feng the Accursed kills (LFR Mogu'shan Vaults)",,6984,1008,-1,0,15164,0,0,1,21,136243,0,23227,0,0,0,0
 ,"Gara'jal the Spiritbinder kills (LFR Mogu'shan Vaults)",,6985,1008,-1,0,15164,0,0,1,26,136243,0,23229,0,0,0,0
@@ -5011,7 +5011,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Owner of the Overwatch Origins Edition and Collector's Edition pet, Baby Winston.","Collector's Edition: Baby Winston",,11064,-1,-1,0,15268,1,0,133120,33,1303199,0,51282,0,0,0,0
 "Collect all 12 pamphlets from doomsayers during the Legion pre-launch events.","It All Makes Sense Now",,11065,-1,-1,0,15274,0,0,133120,52,134329,0,51324,0,0,0,0
 "Loot 20,000 Sightless Eyes in Dalaran's Underbelly.","Underbelly Tycoon","Mount: Ratstallion",11066,-1,-1,0,15257,0,10,131072,11,236693,138387,51337,0,0,0,0
-"Complete the Suramar storylines listed below.","Good Suramaritan","Decor Reward: ""Night on the Jeweled Estate"" Painting",11124,-1,-1,0,15252,0,10,131072,25,1409002,0,51582,0,0,0,0
+"Complete the Suramar storylines listed below.","Good Suramaritan","Decor Reward: ""Night on the Jeweled Estate"" Painting",11124,-1,-1,0,15252,0,10,132096,25,1409002,0,51582,0,0,0,0
 "Activate all teleporters in Suramar.","Now You're Thinking With Portals",,11125,-1,-1,0,15252,0,10,131200,37,1405806,0,51601,0,0,0,0
 "Complete 50 World Quests.","50 World Quests Completed",,11126,-1,-1,0,96,0,5,131072,19,236664,0,53570,0,0,0,0
 "Complete 200 World Quests.","200 World Quests Completed",,11127,-1,-1,11126,96,0,5,131072,20,236665,0,53572,0,0,0,0
@@ -12999,7 +12999,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "End Midnight Mythic+ Season 1 with a Mythic+ Rating in the top 0.1% of all players in your region.","Umbral Hero: Midnight Season 1","Title: The Umbral Hero",61259,-1,-1,0,15272,0,0,14336,192,648760,0,216634,0,0,0,0
 "Complete Windrunner Spire at Mythic Level 10 or higher, within the time limit.","Keystone Hero: Windrunner Spire","Max Level Unlock: Teleport to Windrunner Spire",61262,2805,-1,0,15272,0,0,264192,58,7266215,0,216637,0,0,0,0
 "Discover the hidden treasures across Harandar.","Treasures of Harandar","Mount: Vivacious Chloroceros",61263,-1,-1,0,15553,0,5,131072,25,1029751,263579,216639,0,0,0,0
-"Defeat all of the rare creatures found in Harandar.","Leaf None Behind","Decor Reward: Lightbloom Moss Mound",61264,-1,-1,0,15553,0,10,131072,17,614747,0,216648,0,0,0,0
+"Defeat all of the rare creatures found in Harandar.","Leaf None Behind","Decor Reward: Lightbloom Moss Mound",61264,-1,-1,0,15553,0,10,132096,17,614747,0,216648,0,0,0,0
 "Open a Spectral Battle Chest in Slayer's Rise.","Spectral Capture",,61265,-1,-1,0,15283,0,5,131072,7,1542848,0,216673,0,0,0,0
 "Complete Magisters' Terrace at Mythic Level 10 or higher, within the time limit.","Keystone Hero: Magisters' Terrace","Max Level Unlock: Teleport to Magisters' Terrace",61267,2811,-1,0,15272,0,0,264192,59,7439625,0,216680,0,0,0,0
 "Complete Nexus-Point Xenas at Mythic Level 10 or higher, within the time limit.","Keystone Hero: Nexus-Point Xenas","Max Level Unlock: Teleport to Nexus-Point Xenas",61268,2915,-1,0,15272,0,0,264192,60,7553062,0,216682,0,0,0,0
@@ -13112,7 +13112,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Raise two primary professions within the Midnight category to maximum skill.","Thalassian Artisan",,61439,-1,-1,61438,169,2,10,131072,27,132281,0,218285,0,0,0,0
 "Raise five primary professions within the Midnight category to maximum skill.","Thalassian Polymath","Reward: Finery Funds",61440,-1,-1,61439,169,5,30,136192,28,3622200,0,218297,0,0,0,0
 "Raise all primary professions within the Midnight category to maximum skill.","Working WAY Past Midnight",,61441,-1,-1,61440,169,0,50,143360,29,7548930,0,218309,0,0,0,0
-"Complete the Loa Lorewalking Campaign.","Lorewalking: The Loa","Decor Reward: Tome of Kings",61442,-1,-1,0,15552,0,5,131072,2,2446017,0,218328,0,0,0,0
+"Complete the Loa Lorewalking Campaign.","Lorewalking: The Loa","Decor Reward: Tome of Kings",61442,-1,-1,0,15552,0,5,132096,2,2446017,0,218328,0,0,0,0
 "Earn 2500 Conquest on this character during Midnight Season 1.","Galactic Weapons of Conquest","Item Reward: Galactic Gladiator's Weapon Token (x2)",61443,-1,-1,0,15270,0,0,33554432,536,1594747,0,218352,0,0,0,0
 ,"Vicious Saddle (43)",,61444,-1,1,42123,15270,0,0,1179648,143,1379171,103533,218377,0,0,0,0
 ,"Vicious Saddle (43)",,61445,-1,0,42124,15270,0,0,1179648,73,1379171,103533,218379,0,0,0,0
@@ -13147,7 +13147,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Slayer's Rise victories","Slayer's Rise victories",,61495,-1,-1,0,153,0,0,1,25,136243,0,219109,0,0,0,0
 "Complete the final chapter of the War Within campaign.","Ready for Midnight","Title: Azeroth's Vanguard",61498,-1,-1,0,15506,0,10,131072,65,1392543,0,219129,0,0,0,0
 "Complete the Midnight storylines listed below.","Allied Race: Haranir","Reward: Haranir Race Unlocked",61506,-1,-1,0,15547,0,10,131072,14,7448213,246736,219288,0,0,0,0
-"Defeat all of the rare creatures found in Eversong Woods.","A Bloody Song","Decor Reward: Silvermoon Energy Focus",61507,-1,-1,0,15553,0,10,131072,14,7214192,0,219307,0,0,0,0
+"Defeat all of the rare creatures found in Eversong Woods.","A Bloody Song","Decor Reward: Silvermoon Energy Focus",61507,-1,-1,0,15553,0,10,132096,14,7214192,0,219307,0,0,0,0
 "Defeat Charonus in Voidscar Arena.","Voidscar Arena",,61508,2923,-1,0,15541,0,10,0,23,7439626,0,219323,0,0,0,0
 "Defeat Charonus in Voidscar Arena on Heroic difficulty or higher.","Heroic: Voidscar Arena",,61509,2923,-1,61508,15541,0,10,0,24,7439626,0,219325,0,0,0,0
 "Defeat Charonus in Voidscar Arena on Mythic or Mythic Keystone difficulty.","Mythic: Voidscar Arena",,61510,2923,-1,61509,15541,0,10,0,25,7439626,0,219327,0,0,0,0
@@ -13448,10 +13448,10 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect 50 fish from Abyss Bubbles while on Abyss Angler dives, and acquire the Murkskimmer Meat upgrade.","Abyss Anglers: Murkskimmer Meat","Reward: Unlock Murkskimmer Meat for purchase from Depthdiver Jeju",62119,-1,-1,0,15553,0,10,131072,109,351505,0,222420,0,0,0,0
 "Develop bonds with all Loa and unlock them for worship at the Altar of Blessings.","Altar of Blessings: The Penitent Troll",,62120,-1,-1,0,15553,0,5,131072,99,1850548,0,222483,0,0,0,0
 "Trigger each of the Blessing effects listed.","Altar of Blessings: Sacred Buffet Devotee",,62121,-1,-1,0,15553,0,5,131072,100,135876,0,222493,0,0,0,0
-"Defeat all of the rare creatures found in Zul'Aman.","Tallest Tree in the Forest","Decor Reward: Colossal Amani Stone Visage",62122,-1,-1,0,15553,0,10,131072,16,463283,0,222024,0,0,0,0
+"Defeat all of the rare creatures found in Zul'Aman.","Tallest Tree in the Forest","Decor Reward: Colossal Amani Stone Visage",62122,-1,-1,0,15553,0,10,132096,16,463283,0,222024,0,0,0,0
 "Discover the hidden treasures across Zul'Aman.","Treasures of Zul'Aman","Toy: Pango Plating",62125,-1,-1,0,15553,0,5,131072,24,1519429,268717,222041,0,0,0,0
 "Discover the hidden treasures across Voidstorm","Treasures of Voidstorm","Toy: Interdimensional Parcel Signal",62126,-1,-1,0,15553,0,5,131072,23,7137586,264695,222052,0,0,0,0
-"Defeat all of the rare creatures found in Voidstorm.","The Ultimate Predator","Decor Reward: Opened Domanaar Storage Crate",62130,-1,-1,0,15553,0,10,131072,15,7448210,0,222082,0,0,0,0
+"Defeat all of the rare creatures found in Voidstorm.","The Ultimate Predator","Decor Reward: Opened Domanaar Storage Crate",62130,-1,-1,0,15553,0,10,132096,15,7448210,0,222082,0,0,0,0
 "Evade the Hungering Presence's grasp in Voidstorm for at least 60 seconds.","Thrill of the Chase",,62133,-1,-1,0,15553,0,5,131072,51,4622488,0,222101,0,0,0,0
 "Complete 5 Prey Hunts in War Mode.","The Deadliest of Prey",,62134,-1,-1,0,15605,0,5,131072,12,1450139,0,222107,0,0,0,0
 "Complete a Nightmare Hunt while in War Mode.","Now It's A Party",,62135,-1,-1,0,15605,0,5,131072,13,132295,0,222108,0,0,0,0
@@ -13502,7 +13502,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Thornspeaker Edgath or Thorn-Witch Liset on Nightmare mode.","Prey: A Thorn in the Side (Nightmare)","Decor Reward: Preyseeker's Thornspeaker Effigy",62183,-1,-1,0,15605,0,5,132096,51,3565724,0,222259,0,0,0,0
 "Defeat Grothoz, the Burning Shadow or Dengzag, the Darkened Blaze on Nightmare mode.","Prey: Breaking the Blade (Nightmare)","Decor Reward: Preyseeker's Twilight Effigy",62184,-1,-1,0,15605,0,5,132096,52,3565724,0,222262,0,0,0,0
 "Discover all painter's easels found outdoors in Eversong Woods.","Ever Painting","Decor Reward: Silvermoon Painter's Cushion",62185,-1,-1,0,15553,0,5,132096,59,7549082,0,222267,0,0,0,0
-"Invite all four factions to Saltheril's Haven in Eversong Woods.","The Party Must Go On","Decor Reward: Eversong Feast Platter",62186,-1,-1,0,15553,0,5,131072,58,133460,0,222151,0,0,0,0
+"Invite all four factions to Saltheril's Haven in Eversong Woods.","The Party Must Go On","Decor Reward: Eversong Feast Platter",62186,-1,-1,0,15553,0,5,132096,58,133460,0,222151,0,0,0,0
 "Sample every drink available for Grand Magister Rommath in Eversong Woods.","Grand Magister's Sommelier",,62187,-1,-1,0,15553,0,5,131072,60,132809,0,222265,0,0,0,0
 "Listen to the stories of the Haranir who went to the surface, seeking the world trees.","More Than Just Their Roots",,62188,-1,-1,0,15553,0,5,131072,3,236160,0,222268,0,0,0,0
 "Joined the secretive cabal of the Mind-Seekers.",Mind-Seeker,,62189,-1,-1,0,81,0,0,133120,275,6035316,0,222284,0,0,0,0
@@ -13579,9 +13579,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Zul'jan kills (Heroic Altar of Fangs)",,62286,2993,-1,0,15542,0,0,1,63,7956175,0,223167,0,0,0,0
 ,"Zul'jan kills (Mythic Altar of Fangs)",,62287,2993,-1,0,15542,0,0,1,66,7956175,0,223169,0,0,0,0
 "Place telescopes on the tallest peaks in Eversong Woods.","Eversong Woods: The Highest Peaks","Decor Reward: ""Eversong Lantern"" Painting",62288,-1,-1,0,15553,0,5,132096,69,134442,0,223171,0,0,0,0
-"Place telescopes on the tallest peaks in Zul'Aman.","Zul'Aman: The Highest Peaks","Decor Reward: Amani Spearhunter's Spit",62289,-1,-1,0,15553,0,5,131072,70,134442,0,223177,0,0,0,0
-"Place telescopes on the tallest peaks in Harandar.","Harandar: The Highest Peaks","Decor Reward: Fungarian Vine Fence",62290,-1,-1,0,15553,0,5,131072,71,134442,0,223183,0,0,0,0
-"Place telescopes on the tallest peaks in Voidstorm.","Voidstorm: The Highest Peaks","Decor Reward: Void Elf Weapon Rack",62291,-1,-1,0,15553,0,5,131072,72,134442,0,223189,0,0,0,0
+"Place telescopes on the tallest peaks in Zul'Aman.","Zul'Aman: The Highest Peaks","Decor Reward: Amani Spearhunter's Spit",62289,-1,-1,0,15553,0,5,132096,70,134442,0,223177,0,0,0,0
+"Place telescopes on the tallest peaks in Harandar.","Harandar: The Highest Peaks","Decor Reward: Fungarian Vine Fence",62290,-1,-1,0,15553,0,5,132096,71,134442,0,223183,0,0,0,0
+"Place telescopes on the tallest peaks in Voidstorm.","Voidstorm: The Highest Peaks","Decor Reward: Void Elf Weapon Rack",62291,-1,-1,0,15553,0,5,132096,72,134442,0,223189,0,0,0,0
 ,"Adventurer Dawncrests earned",,62292,-1,-1,0,15176,0,0,1,41,136243,0,223201,0,0,0,0
 ,"Veteran Dawncrests earned",,62293,-1,-1,0,15176,0,0,1,42,136243,0,223203,0,0,0,0
 ,"Champion Dawncrests earned",,62294,-1,-1,0,15176,0,0,1,43,136243,0,223205,0,0,0,0
@@ -13638,7 +13638,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Outgrow the use of Champion Mistcrests during Midnight Season 2.","Champion of the Mist","Character Unlock: Trade Champion for Hero Mistcrests",62412,-1,-1,62411,81,0,0,2048,222,7734057,0,224059,0,0,0,0
 "Outgrow the use of Hero Mistcrests during Midnight Season 2.","Hero of the Mist","Character Unlock: Trade Hero for Myth Mistcrests",62414,-1,-1,62412,81,0,0,2048,224,7734059,0,224069,0,0,0,0
 ,"[DNT] Trading Post - Jan26 - Make Good",,62415,-1,-1,0,92,0,0,3276800,142,136243,0,224082,0,0,0,0
-"Obtain an average item level of 324 during Midnight Season 2.","Myth of the Mist",,62416,-1,-1,62414,81,0,0,2048,228,7734061,0,224073,0,0,0,0
+"Obtain an average item level of 331 during Midnight Season 2.","Myth of the Mist",,62416,-1,-1,62414,81,0,0,2048,228,7734061,0,224073,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 12 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 12","Keystones will no longer deplete below level 12 during Midnight Season 2.",62417,-1,-1,0,15272,0,0,2048,251,648754,0,224251,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 13 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 13","Keystones will no longer deplete below level 13 during Midnight Season 2.",62418,-1,-1,0,15272,0,0,2048,252,648754,0,224260,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 14 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 14","Keystones will no longer deplete below level 14 during Midnight Season 2.",62419,-1,-1,0,15272,0,0,2048,253,648754,0,224269,0,0,0,0
@@ -13920,11 +13920,11 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 ,"[DNT]Midnight Keystone Myth: Season 1 Personal Achievement",,63263,-1,-1,0,15272,0,0,9437188,236,136243,0,228514,0,0,0,0
 "Complete the following achievements:","Heroic Showdowns","Reward: Unlock the Tortured Gorger for purchase",63264,-1,-1,0,15610,0,15,196608,37,255347,0,229642,0,0,0,0
 "Defeat a world boss in Naigtal or Val.","Heroic Tendencies","Unlocks Heroic World Tier for Naigtal and Val",63323,-1,-1,0,15610,0,0,1179652,36,236497,0,229215,0,0,0,0
-"Earn 5 Motes of Omnial Inquiry to use in the Omnium Folio.","Omnium Folio Studies","Decor Reward: Sunstrider Omnium Simulacrum",63325,-1,-1,0,15610,0,10,131072,49,7549225,0,229349,0,0,0,0
-"Defeat Azta'rec in his lair before the release of the next season of delves.","My Venomous Nemesis","Reward: Apophic Patagia",63326,-1,-1,0,15531,0,0,14336,12,7876113,0,229398,0,0,0,0
-"Defeat Azta'rec in his lair on Tier ?? before the release of the next season of delves.","Purging the Poison","Title: the Poisonous",63332,-1,-1,0,15531,0,0,14336,17,136070,0,229401,0,0,0,0
-"Defeat Azta'rec in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: Azta'rec","Reward: Apophic Soul Crusher",63333,-1,-1,0,15531,0,0,14336,22,7939993,0,229403,0,0,0,0
-"Defeat Azta'rec in his lair on Tier ?? without any other players in your party, whithin the first week of the season.","Fabled Let Me Solo Him: Azta'rec","Title: Fabled Vanquisher of Azta'rec",63334,-1,-1,0,15531,0,0,145408,25,1398085,0,229405,0,0,0,0
+"Earn 5 Motes of Omnial Inquiry to use in the Omnium Folio.","Omnium Folio Studies","Decor Reward: Sunstrider Omnium Simulacrum",63325,-1,-1,0,15610,0,10,132096,49,7549225,0,229349,0,0,0,0
+"Defeat Azta'rec in his lair during Midnight Season 2.","My Venomous Nemesis","Reward: Apophic Patagia",63326,-1,-1,0,15531,0,0,14336,12,7876113,0,229398,0,0,0,0
+"Defeat Azta'rec in his lair on Tier ?? during Midnight Season 2.","Purging the Poison","Title: the Poisonous",63332,-1,-1,0,15531,0,0,14336,17,136070,0,229401,0,0,0,0
+"Defeat Azta'rec in his lair on Tier ?? without any other players in your party during Midnight Season 2.","Let Me Solo Him: Azta'rec","Reward: Apophic Soul Crusher",63333,-1,-1,0,15531,0,0,14336,22,7939993,0,229403,0,0,0,0
+"Defeat Azta'rec in his lair on Tier ?? without any other players in your party, within the first week of Midnight Season 2.","Fabled Let Me Solo Him: Azta'rec","Title: Fabled Vanquisher of Azta'rec",63334,-1,-1,0,15531,0,0,145408,25,1398085,0,229405,0,0,0,0
 "Score a goal with the Kickable Practice Ball in Silvermoon while wearing a Tabard of Participation.",Goal!,"Decor Reward: Prized Orb of Azeroth, Framed Horde Pride and Framed Alliance Pride",63343,-1,-1,0,15268,0,0,131072,120,660531,0,229492,0,0,0,0
 "Defeat 15 rare creatures found in Val or Naigtal on Heroic World Tier.","Heroic Slugger",,63348,-1,-1,0,15610,0,5,131072,39,4554456,0,229606,0,0,0,0
 "Kill 100 enemies while controlling the Ultradon Slayer on the World Quest Until it is Done on Val.","Ultradon Carnage","Pet Reward: Unlock Frosticus Maximus for purchase",63349,-1,-1,0,15610,0,10,131072,31,7388252,0,229776,0,0,0,0
@@ -14027,7 +14027,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Complete the Souvenir Seeker achievements for both Razorwind Shores and Founder's Point.","Superlative Souvenir Seeker",,63606,-1,-1,0,15606,0,0,133120,4,136243,0,231261,0,0,0,0
 "Collect any armor set from Midnight PvP Season 2.","Venomous Vestments",,63608,-1,-1,0,15259,0,10,131072,97,7871829,0,231279,0,0,0,0
 "Defeat Ula'tek before the Greasy Hatchling breaks in The Venomous Abyss on Normal difficulty or higher.","No Egg Scramble","Companion Pet: Ula'took",63609,3004,-1,0,15566,0,10,0,55,236999,279387,231281,0,0,0,0
-"Discover the Funerary Inscriptions throughout the Vaults of Atal'Utek","The Honored Dead",,63610,-1,-1,0,15553,0,5,0,37,7253129,0,231283,0,0,0,0
+"Discover the Funerary Inscriptions throughout the Vaults of Atal'Utek","The Honored Dead",,63610,-1,-1,0,15553,0,5,131072,37,7253129,0,231283,0,0,0,0
 "Complete the Preyhunter's Journey before Midnight: Season 2 ends.","Big Prey Hunter (Season 2)",,63611,-1,-1,0,81,0,0,133120,3,7493985,0,231296,0,0,0,0
 ,"Nymrissa Wavecaller (World The Tidebound Grotto)",,63613,2987,-1,0,15542,0,0,1,100,0,0,231302,0,0,0,0
 ,"Nymrissa Wavecaller (Normal The Tidebound Grotto)",,63614,2987,-1,0,15542,0,0,1,101,0,0,231304,0,0,0,0
@@ -14061,13 +14061,13 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Defeat the following bosses in The Venomous Abyss on Normal difficulty or higher while in a guild group.","The Venomous Abyss Guild Run",,63646,3004,-1,0,15570,0,10,61440,13,8039569,0,231548,0,0,0,0
 "Defeat the following bosses in The Venomous Abyss on Heroic difficulty or higher while in a guild group.","Heroic: The Venomous Abyss Guild Run",,63647,3004,-1,0,15570,0,10,61440,14,8039569,0,231559,0,0,0,0
 "Defeat Ula'tek in The Venomous Abyss on Mythic difficulty while in a guild group.","Mythic: Ula'tek Guild Run",,63648,3004,-1,0,15570,0,10,61440,15,7966624,0,231568,0,0,0,0
-"Defeat Ula'tek in The Venomous Abyss on Heroic difficulty or higher, before the release of the next raid tier.","Ahead of the Curve: Ula'tek",,63650,3004,-1,0,15271,0,0,6144,101,7966624,0,231570,0,0,0,0
-"Defeat Ula'tek in The Venomous Abyss on Mythic difficulty, before the release of the next raid tier.","Cutting Edge: Ula'tek",,63651,3004,-1,63650,15271,0,0,6144,102,7966624,0,231574,0,0,0,0
+"Defeat Ula'tek in The Venomous Abyss on Heroic difficulty or higher, during Midnight Season 2.","Ahead of the Curve: Ula'tek",,63650,3004,-1,0,15271,0,0,6144,101,7966624,0,231570,0,0,0,0
+"Defeat Ula'tek in The Venomous Abyss on Mythic difficulty, during Midnight Season 2.","Cutting Edge: Ula'tek",,63651,3004,-1,63650,15271,0,0,6144,102,7966624,0,231574,0,0,0,0
 "Among the first two hundred guilds worldwide to defeat Ula'tek on Mythic difficulty.","Hall of Fame: Ula'tek","Title: Famed Slayer of Ula'tek",63652,3004,-1,0,15093,0,0,4258304,55,7966624,0,231576,0,0,0,0
 "Complete 250 patrols within the Vaults of Atal'Utek.","Pro Poison Patroller","Mount: Emerald Skyfang",63653,-1,-1,0,15553,0,10,131072,40,7474744,276553,231595,0,0,0,0
 "Defeat the Twin Fangs after feeding Ithraz the following slimes in order during Ravenous Feast in The Venomous Abyss on Normal difficulty or higher.","Taking a Bite out of Slime",,63656,3004,-1,0,15566,0,10,0,53,3459153,0,231621,0,0,0,0
 "Discover all of the lore objects found on the Coiled Isle.","Student of Hissstory","Reward: Cursed Badge of the Soulcoilers",63662,-1,-1,0,15553,0,10,131072,27,8032876,280419,231730,0,0,0,0
-"Defeat The Coiled Altar while all players are afflicted by Unnerving Fixation in The Venomous Abyss on Normal difficulty or higher.","Watch Out Behind You",,63669,3004,-1,0,15566,0,10,0,54,841382,0,0,0,0,0,0
+"Defeat The Coiled Altar while all players are afflicted by Unnerving Fixation in The Venomous Abyss on Normal difficulty or higher.","Watch Out Behind You",,63669,3004,-1,0,15566,0,10,0,54,841382,0,232335,0,0,0,0
 "Experience an Ancestral Vision and comfort the trapped spirits scattered within in The Venomous Abyss on Normal difficulty or higher.","Comforting Da Spirits",,63670,3004,-1,0,15566,0,10,0,56,7874491,0,231912,0,0,0,0
 "Reversed the ritual performed on Slitherfang in the Altar of Fangs.","In Case Of Emergency",,63679,-1,-1,0,15274,0,0,2048,98,7746469,0,231948,0,0,0,0
 "Defeat Nymrissa Wavecaller in The Tidebound Grotto on Heroic difficulty.","Heroic: Nymrissa Wavecaller",,63681,2987,-1,0,15566,0,10,0,58,3012069,0,232081,0,0,0,0
