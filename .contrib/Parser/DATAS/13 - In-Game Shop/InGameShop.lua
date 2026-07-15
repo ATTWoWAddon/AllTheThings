@@ -1056,7 +1056,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(267078, {	-- Stoneforged Sentinel (MOUNT!)
 			["timeline"] = { ADDED_12_0_7 },
 		}),
-		mount(1292356, {	-- Sunflare Driftmoth (MOUNT!)
+		i(273655, {	-- Sunflare Driftmoth (MOUNT!)
 			["timeline"] = { ADDED_12_0_7 },
 		}),
 		-- #if AFTER 11.2.0
