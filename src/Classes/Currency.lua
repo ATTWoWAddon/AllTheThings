@@ -119,7 +119,8 @@ local CreateCostCurrency = app.CreateClass("CostCurrency", KEY, {
 	end,
 	-- progress is how much you have
 	progress = function(t)
-		return GetCurrencyInfo(t.currencyID).quantity or 0;
+		local info = GetCurrencyInfo(t.currencyID)
+		return (info and info.quantity) or 0;
 	end,
 	collectible = app.ReturnFalse,
 	trackable = app.ReturnTrue,
