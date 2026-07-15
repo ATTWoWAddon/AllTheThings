@@ -1059,6 +1059,8 @@ app.CreateRawText = app.CreateClass("RawText", "strKey", {
 
 local DLOBaseOverrides = {
 	visible = true,
+	total = 0,
+	progress = 0,
 }
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
