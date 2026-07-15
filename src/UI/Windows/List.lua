@@ -305,7 +305,7 @@ app:CreateWindow("List", {
 						app.SetDGUDelay(0);
 						if OnlyMissing then
 							overrides.visible = function(o, key)
-								if o._missing and o.collected then
+								if o._missing then
 									return o.collected;
 								end
 							end
@@ -326,7 +326,7 @@ app:CreateWindow("List", {
 							partitionG = {};
 							g[#g + 1] = app.CreateRawText(index .. "+", {
 								icon = app.asset("Interface_Quest_header"),
-								OnUpdate = app.AlwaysShowUpdate,
+								OnSetVisibility = app.ReturnTrue,
 								visible = true,
 								g = partitionG,
 							});
