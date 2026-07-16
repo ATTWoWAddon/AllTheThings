@@ -872,7 +872,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 34.0, 84.6, ORGRIMMAR },
 						-- #endif
 					},
-					["timeline"] = { REMOVED_7_3_5 },
+					["timeline"] = {
+						-- #if ANYCLASSIC
+						-- CRIEVE NOTE: This was removed before it was supposed to in Classic.
+						REMOVED_4_0_3,
+						-- #endif
+						REMOVED_7_3_5
+					},
 					["requireSkill"] =
 						-- #if AFTER BFA
 						TAILORING,

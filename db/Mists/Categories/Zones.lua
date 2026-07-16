@@ -26992,7 +26992,7 @@ q(661,{coords={
 s(127379,15455,{b=1,f=4,q=2,u=2}),
 s(127380,15456,{b=1,f=5,q=2,u=2})}}),
 q(6623,{coords={
-[85]={{36.9,87.5}}},isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6622},qgs={45540},r=1,requireSkill=129,rwp=70305}),
+[85]={{36.9,87.5}}},isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6622},qgs={45540},r=1,requireSkill=129,rwp=40003,u=2}),
 q(26110,{awp=40003,coords={
 [14]={{54.8,55.3}}},qgs={2712},r=2,sourceQuests={26113},g={
 qo(1,{coords={
