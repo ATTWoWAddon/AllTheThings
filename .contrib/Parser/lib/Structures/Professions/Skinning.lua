@@ -71,12 +71,12 @@ WRATH_SKINNING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = 
 		-- #endif
 		["rank"] = 6,
 	}),
-	r(53125, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }}),	-- Master of Anatomy (Apprentice)
-	r(53662, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }}),	-- Master of Anatomy (Journeyman)
-	r(53663, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }}),	-- Master of Anatomy (Expert)
-	r(53664, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }}),	-- Master of Anatomy (Artisan)
-	r(53665, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }}),	-- Master of Anatomy (Master)
-	r(53666, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }}),	-- Master of Anatomy (Grand Master)
+	r(53125, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }, ["rank"] = 1}),	-- Master of Anatomy (Apprentice)
+	r(53662, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }, ["rank"] = 2}),	-- Master of Anatomy (Journeyman)
+	r(53663, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }, ["rank"] = 3}),	-- Master of Anatomy (Expert)
+	r(53664, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }, ["rank"] = 4}),	-- Master of Anatomy (Artisan)
+	r(53665, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }, ["rank"] = 5}),	-- Master of Anatomy (Master)
+	r(53666, {["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }, ["rank"] = 6}),	-- Master of Anatomy (Grand Master)
 	r(194174, {["timeline"] = {ADDED_7_0_3}}),	-- Skinning Journal
 	applyclassicphase(BFA_PHASE_ONE, r(265859, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Skinning (Northrend)
 }));
@@ -88,7 +88,7 @@ CATA_SKINNING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 		-- #endif
 		["rank"] = 7,
 	}),
-	r(74495, {["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }}),	-- Master of Anatomy (Cataclysm)
+	r(74495, {["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }, ["rank"] = 7}),	-- Master of Anatomy (Cataclysm)
 	r(194174, {["timeline"] = {ADDED_7_0_3}}),	-- Skinning Journal
 	applyclassicphase(BFA_PHASE_ONE, r(265861, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Skinning (Cataclysm)
 }));
@@ -107,7 +107,7 @@ MOP_SKINNING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] =
 		-- #endif
 		["rank"] = 8,
 	}),
-	r(102219, {["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Master of Anatomy (Pandaria)
+	r(102219, {["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 }, ["rank"] = 8}),	-- Master of Anatomy (Pandaria)
 	r(194174, {["timeline"] = {ADDED_7_0_3}}),	-- Skinning Journal
 	applyclassicphase(BFA_PHASE_ONE, r(265863, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Skinning (Pandaria)
 }));

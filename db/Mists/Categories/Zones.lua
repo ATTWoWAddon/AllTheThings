@@ -2564,7 +2564,7 @@ prof(393,{
 n(7088,{coords={
 [85]={{61,54.6}}},r=1,g={
 r(74522,{awp=40003,learnedAt=425,rank=7,requireSkill=393,rwp=80001,u=40}),
-r(74495,{awp=40003,requireSkill=393,rwp=60002,u=40}),
+r(74495,{awp=40003,rank=7,requireSkill=393,rwp=60002,u=40}),
 r(8613,{lvl=5,rank=1,requireSkill=393}),
 r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
 r(8618,{learnedAt=125,lvl=20,rank=3,requireSkill=393,rwp=80001}),
@@ -23970,7 +23970,7 @@ prof(393,{
 n(1292,{coords={
 [84]={{72.6,62}}},r=2,g={
 r(74522,{awp=40003,learnedAt=425,rank=7,requireSkill=393,rwp=80001,u=40}),
-r(74495,{awp=40003,requireSkill=393,rwp=60002,u=40}),
+r(74495,{awp=40003,rank=7,requireSkill=393,rwp=60002,u=40}),
 r(8613,{lvl=5,rank=1,requireSkill=393}),
 r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
 r(8618,{learnedAt=125,lvl=20,rank=3,requireSkill=393,rwp=80001}),
@@ -53774,12 +53774,12 @@ prof(393,{u=30,g={
 n(28696,{coords={
 [125]={{35.2,28.4}}},u=30,g={
 r(50305,{awp=30003,learnedAt=350,rank=6,requireSkill=393,rwp=80001,u=30}),
-r(53125,{awp=30003,requireSkill=393,rwp=60002,u=30}),
-r(53662,{awp=30003,requireSkill=393,rwp=60002,u=30}),
-r(53663,{awp=30003,requireSkill=393,rwp=60002,u=30}),
-r(53664,{awp=30003,requireSkill=393,rwp=60002,u=30}),
-r(53665,{awp=30003,requireSkill=393,rwp=60002,u=30}),
-r(53666,{awp=30003,requireSkill=393,rwp=60002,u=30})}})}}),
+r(53125,{awp=30003,rank=1,requireSkill=393,rwp=60002,u=30}),
+r(53662,{awp=30003,rank=2,requireSkill=393,rwp=60002,u=30}),
+r(53663,{awp=30003,rank=3,requireSkill=393,rwp=60002,u=30}),
+r(53664,{awp=30003,rank=4,requireSkill=393,rwp=60002,u=30}),
+r(53665,{awp=30003,rank=5,requireSkill=393,rwp=60002,u=30}),
+r(53666,{awp=30003,rank=6,requireSkill=393,rwp=60002,u=30})}})}}),
 prof(197,{u=30,g={
 n(28699,{coords={
 [125]={{36.3,33.4}}},requireSkill=197,u=30,g={
@@ -69501,7 +69501,7 @@ prof(393,_.ResolveQuestData({aqd=
 {coords={
 [371]={{27.8,15.4}}},crs={66981}},u=50,g={
 r(102216,{rank=8,requireSkill=393,rwp=80001,u=51}),
-r(102219,{requireSkill=393,rwp=60002,u=51})}}))}}),
+r(102219,{rank=8,requireSkill=393,rwp=60002,u=51})}}))}}),
 h(-45,{u=50,g={
 q(29619,{coords={
 [371]={{44.9,24.9}}},qgs={54913},sourceQuests={29618},u=50,g={
