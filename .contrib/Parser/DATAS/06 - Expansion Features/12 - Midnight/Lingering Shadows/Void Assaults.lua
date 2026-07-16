@@ -544,8 +544,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									96831,	-- Magister's Summons
 									96443,	-- Seeking Knowledge Week 4 of 5: Magical Primessence
 								},
-								["qg"] = 264070,	-- Grand Magister Rommath
-								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+								["qg"] = 264096,	-- Magister Umbric
+								["coord"] = { 50.4, 10.5, 2649 },	-- The Lycaneum, Magister's Terrace
 							}),
 						})),
 					}),
