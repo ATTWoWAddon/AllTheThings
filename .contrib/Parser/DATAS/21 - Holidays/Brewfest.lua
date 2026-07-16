@@ -73,12 +73,16 @@ local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
 			end
 		end
 -- #else
-		t.description = "You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";
+	-- #if AFTER 3.0.2
+		t.description = "You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest.";
+	-- #else
+		t.description = "You are unable to purchase the rams from this vendor yet as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT DONE!";
 		if t.g then
 			for i,item in ipairs(t.g) do
-				item.u = ]] .. EVENTS.BREWFEST .. [[;
+				item.u = nil;
 			end
 		end
+	-- #endif
 -- #endif
 	else
 -- #if NOT ANYCLASSIC
@@ -88,7 +92,7 @@ local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
 -- #endif
 		if t.g then
 			for i,item in ipairs(t.g) do
-				item.u = ]] .. EVENTS.BREWFEST .. [[;
+				item.u = nil;
 			end
 		end
 	end
