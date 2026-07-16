@@ -261,6 +261,7 @@ local BlockedDisplayID = {
 	[27823] = 0,	-- empty blue thing
 	[28016] = 0,	-- empty blue thing
 	[52318] = 0,	-- generic bunny
+	[54893] = 0,	-- nothing
 	[56187] = 0,	-- generic bunny
 	[64062] = 0,	-- generic bunny
 	[110046] = 0,	-- nothing
