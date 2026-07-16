@@ -571,6 +571,7 @@ local AccountWideDataHandlers = setmetatable({
 	IGNORE_QUEST_PRINT = app.EmptyFunction,
 	AzeriteEssenceRanks = RankSyncCharacterData,
 	Quests = PartialSyncCharacterData,
+	Toys = PartialSyncCharacterData,	-- CRIEVE NOTE: Prior to Legion, many items are stored as "ToyEventually".
 }, {
 	__index = function(t, key)
 		return whiteListedFields[key] and DefaultAccountWideDataHandler or app.EmptyFunction;
@@ -584,7 +585,6 @@ else
 	whiteListedFields.Achievements = true;
 	whiteListedFields.BattlePets = true;
 	whiteListedFields.Mounts = true;
-	whiteListedFields.Toys = true;
 end
 local function RecalculateAccountWideData(doPrints)
 	if doPrints then app.print("Recalculating Account Data..."); end
