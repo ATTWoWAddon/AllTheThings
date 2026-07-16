@@ -507,6 +507,11 @@ local function ForceExpandGroupsRecursively(group, expanded)
 		ForceExpandGroupsRecursively(g[i], expanded);
 	end
 end
+local IgnoreSavedExpansionTypes = {
+	Instance = true,
+	Difficulty = true,
+	DifficultyGroup = true,
+}
 -- Only considers the default rules for ignoring expansion and does not check any skip conditions
 local function PassivelyExpandGroupsRecursively(group, expanded)
 	local g = group.g
@@ -515,7 +520,7 @@ local function PassivelyExpandGroupsRecursively(group, expanded)
 		-- incomplete things actually exist below itself
 		((group.total or 0) > (group.progress or 0)) and
 		-- account/debug mode is active or it is not a 'saved' thing for this character
-		(app.MODE_DEBUG_OR_ACCOUNT or not group.saved)
+		(app.MODE_DEBUG_OR_ACCOUNT or not group.saved or IgnoreSavedExpansionTypes[group.__type])
 	then
 		group.expanded = expanded
 		if not expanded then return end
@@ -531,7 +536,7 @@ local function ConditionallyExpandGroupsRecursively(group, expanded)
 		-- incomplete things actually exist below itself
 		((group.total or 0) > (group.progress or 0)) and
 		-- account/debug mode is active or it is not a 'saved' thing for this character
-		(app.MODE_DEBUG_OR_ACCOUNT or not group.saved)
+		(app.MODE_DEBUG_OR_ACCOUNT or not group.saved or IgnoreSavedExpansionTypes[group.__type])
 	then
 		-- check the skip condition for this group
 		local doSkipType = ShouldSkipAutoExpandForKey[group.key or "KEYLESS"](group)
