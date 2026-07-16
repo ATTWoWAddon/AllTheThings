@@ -380,6 +380,9 @@ i(104302);	-- Blackflame Daggers
 i(103685);	-- Celestial Defender's Medallion
 i(102467);	-- Censer of Eternal Agony
 i(104318);	-- Crashin' Thrashin' Flyer Controller
+-- #if BEFORE 7.0.3
+i(104038);	-- Cursed Swabby Helmet
+-- #endif
 i(104309);	-- Eternal Kiln
 i(104324);	-- Foot Ball
 i(101571);	-- Moonfang Shroud

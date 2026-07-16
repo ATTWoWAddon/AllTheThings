@@ -4551,7 +4551,6 @@ h(-356,{coords={
 [69]={{62.48,24.48}}},mapID=235,u=1101,g={
 h(-63,{u=1101,g={
 i(18250,{awp=100105,b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},q=2,rwp=40003,u=2})}}),
-h(-45,{u=1101}),
 h(-19,{crs={14321,14323,14326},description="The following items can drop from any of the guards.",u=1101,g={
 s(129407,18462,{b=1,f=34,lvl=44,q=3,u=1101}),
 s(129408,18463,{b=1,f=25,lvl=44,q=3,u=1101}),
@@ -9133,7 +9132,6 @@ i(33831,{b=1,f=53,lvl=70,modID=1,q=4,u=2}),
 i(33466,{b=1,f=51,lvl=70,modID=1,q=4,u=2})}})}})}}),
 inst(752,{awp=20400,coords={
 [122]={{44.28,45.71}}},isLockoutShared=1,isRaid=1,lore="Nearly seven thousand years ago, the Highborne were exiled from Kalimdor for refusing to give up arcane magic. Led by Dath'Remar Sunstrider, these elves founded their own kingdom of Quel'Thalas. For millennia the mystical pool of energy known as the Sunwell fueled the potent magic of the exiled high elves. Now, the remnants of this ancient fountain have become the Burning Legion's latest target as the demons prepare to summon their commander, Kil'jaeden, with the Sunwell's energy.",lvl=68,maps={335,336},savedInstanceID=580,u=21,g={
-h(-12,{u=21}),
 h(-63,{u=21,g={
 r(46126,{itemID=35202,learnedAt=365,q=4,requireSkill=755,u=21}),
 r(46124,{b=1,itemID=35200,learnedAt=365,q=4,requireSkill=755,u=21}),

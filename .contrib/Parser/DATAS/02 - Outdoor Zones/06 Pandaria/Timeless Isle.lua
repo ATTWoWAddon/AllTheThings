@@ -1956,7 +1956,12 @@ root(ROOTS.Zones, {
 							crit(24021, {	-- Sunken Treasure
 								["achievementID"] = 8727,	-- Where There's Pirates, There's Booty
 							}),
-							i(134024),	-- Cursed Swabby Helmet (TOY!)
+							i(134024, {	-- Cursed Swabby Helmet (TOY!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+							i(104038, {	-- Cursed Swabby Helmet (TOY!)
+								["timeline"] = { ADDED_5_4_0, DELETED_7_0_3 },
+							}),
 						},
 					}),
 				}),

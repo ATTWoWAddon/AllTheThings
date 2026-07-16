@@ -347,8 +347,7 @@ i(34028,{awp=20001,b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=2,rwp=20403,u=2})
 flt(102,{e=7,g={
 toy(71137,{awp=40200,b=1,cost={{"i",37829,200}},e=7,q=3}),
 toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3}),
-toy(90427,{awp=50004,b=1,cost={{"i",37829,100}},e=7,q=3})}}),
-h(-219,{e=7})}}),
+toy(90427,{awp=50004,b=1,cost={{"i",37829,100}},e=7,q=3})}})}}),
 n(207496,{coords={
 [2112]={{29.8,56.6}}},e=7,sym={{"sub","common_vendor",23710}}}),
 n(23605,{awp=20202,coords={
@@ -386,8 +385,7 @@ i(33978,{awp=20001,b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=1,rwp=20403,u=2})
 flt(102,{e=7,g={
 toy(71137,{awp=40200,b=1,cost={{"i",37829,200}},e=7,q=3}),
 toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3}),
-toy(90427,{awp=50004,b=1,cost={{"i",37829,100}},e=7,q=3})}}),
-h(-219,{e=7})}}),
+toy(90427,{awp=50004,b=1,cost={{"i",37829,100}},e=7,q=3})}})}}),
 n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=1,sourceQuests={11419},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=40,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=20,q=3,rwp=20403,u=2})}}),
@@ -1196,7 +1194,6 @@ p(335,{awp=40300,b=1,e=1,itemID=73765,npcID=54487,q=3,spellID=103074}),
 toy(90899,{awp=50100,b=1,e=1,q=3}),
 p(339,{awp=40300,b=1,e=1,itemID=73905,npcID=55367,q=3,spellID=103549}),
 i(97987,{awp=50300,b=1,e=1,lvl=90,q=1,rwp=70003,u=53})}})}}),
-h(-56,{e=1}),
 h(-58,{e=1,g={
 n(55072,{awp=40300,coords={
 [407]={{47.5,66.3}}},description="This vendor sells additional ensembles which are only visible to those who completed the original T0.5 questline. If you do not see them, you don't meet the requirements, and they can no longer be unlocked as the questline was removed from the game.",e=1,g={
@@ -3254,7 +3251,6 @@ i(69194,{awp=40001,b=1,e=16,f=55,q=1}),
 i(69195,{awp=40001,b=1,e=16,f=55,q=1}),
 i(49215,{awp=40001,b=1,e=16,f=55,q=1}),
 i(49216,{awp=40001,b=1,e=16,f=55,q=1})}}),
-h(-56,{e=16}),
 h(-58,{awp=40202,e=16,g={
 n(53757,{coords={
 [18]={{62.1,66.4}}},e=16,r=1,g={

@@ -618,7 +618,6 @@ flt(100,{u=51,g={
 mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,q=4,rwp=70105,u=53})}}),
 flt(101,{u=51,g={
 p(1142,{awp=50300,b=1,description="Available after reaching Rank 4.",itemID=93025,npcID=68601,q=1,rwp=90002,spellID=135156,u=51})}}),
-h(-679,{u=51}),
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=276259,u=51}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=275683,u=51}),
 s(279121,98085,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
@@ -640,7 +639,6 @@ n(68363,{coords={
 flt(100,{u=51,g={
 mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,q=4,rwp=70105,u=53})}}),
 flt(101,{u=51}),
-h(-679,{u=51}),
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=276259,u=51}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=275683,u=51}),
 s(279121,98085,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),

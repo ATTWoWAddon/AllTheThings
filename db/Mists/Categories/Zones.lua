@@ -71696,30 +71696,39 @@ q(33229,{coords={
 q(33230,{coords={
 [390]={{80.6,33}}},isBreadcrumb=1,nextQuests={33231,33232},qgs={73691},r=1,rwp=110000,u=54}),
 q(33211,{isDaily=1,qgs={73570},u=54}),
-q(33161,{qgs={72870},sourceQuests={33156,33160},u=54}),
-q(33337,{qgs={72870},sourceQuests={33338},u=54,g={
+q(33161,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33156,33160},u=54}),
+q(33337,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33338},u=54,g={
 i(105930,{q=4,u=54})}}),
-q(33378,{qgs={72870},sourceQuests={33377},u=54,g={
+q(33378,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33377},u=54,g={
 i(105934,{q=4,u=54})}}),
 q(33342,{qgs={73303},sourceQuests={33341},u=54}),
-q(33338,{isWeekly=1,qgs={72870},sourceQuests={33336},u=54,g={
+q(33338,{coords={
+[554]={{34.6,53.6}}},isWeekly=1,qgs={72870},sourceQuests={33336},u=54,g={
 i(105715,{q=1,u=54})}}),
-q(33377,{qgs={72870},sourceQuests={33376},u=54,g={
+q(33377,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33376},u=54,g={
 i(105933,{q=4,u=54})}}),
-q(33332,{qgs={72870},sourceQuests={33228},u=54}),
+q(33332,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33228},u=54}),
 q(33231,{coords={
 [390]={{80.6,33}}},isBreadcrumb=1,nextQuests={33160},qgs={73691},r=2,sourceQuests={33229,33230},u=54}),
 q(33232,{coords={
 [390]={{80.6,33}}},isBreadcrumb=1,nextQuests={33156},qgs={73691},r=1,sourceQuests={33229,33230},u=54,g={
 i(104110,{lvl=90,q=1,u=54})}}),
 q(33222,{isDaily=1,qgs={73626},u=54}),
-q(33379,{qgs={72870},sourceQuests={33378},u=54,g={
+q(33379,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33378},u=54,g={
 i(105935,{q=4,u=54})}}),
-q(33374,{isDaily=1,qgs={73303},sourceQuests={33341},u=54,g={
+q(33374,{coords={
+[554]={{42.8,55.6}}},isDaily=1,qgs={73303},sourceQuests={33341},u=54,g={
 i(103642,{b=1,f=55,lvl=85,q=1,u=54}),
 i(103643,{b=1,f=55,lvl=85,q=1,u=54}),
 i(103641,{b=1,f=55,lvl=85,q=1,u=54})}}),
-q(33375,{qgs={72870},sourceQuests={33337},u=54,g={
+q(33375,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33337},u=54,g={
 i(105931,{q=4,u=54})}}),
 q(32974,{description="The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",providers={{"i",102225},{"o",222684}},u=54}),
 q(32975,{coords={
@@ -71731,15 +71740,20 @@ i(104013,{b=2,q=4,u=54}),
 i(104012,{b=2,q=4,u=54}),
 i(104010,{b=2,q=4,u=54}),
 i(104009,{b=2,q=4,u=54})}}),
-q(33376,{qgs={72870},sourceQuests={33375},u=54,g={
+q(33376,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33375},u=54,g={
 i(105932,{q=4,u=54})}}),
-q(33334,{isWeekly=1,qgs={72870},sourceQuests={33333},u=54}),
+q(33334,{coords={
+[554]={{34.6,53.6}}},isWeekly=1,qgs={72870},sourceQuests={33333},u=54}),
 q(33343,{qgs={73303},sourceQuests={33342,33374},u=54,g={
 i(103982,{b=1,lvl=90,q=4,u=54})}}),
-q(33336,{qgs={72870},sourceQuests={33161},u=54,g={
+q(33336,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33161},u=54,g={
 i(105715,{q=1,u=54})}}),
-q(33335,{qgs={72870},sourceQuests={33228},u=54}),
-q(33228,{qgs={72870},sourceQuests={33156,33160},u=54,g={
+q(33335,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33228},u=54}),
+q(33228,{coords={
+[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33156,33160},u=54,g={
 i(104013,{b=2,q=4,u=54}),
 i(104012,{b=2,q=4,u=54}),
 i(104010,{b=2,q=4,u=54}),
@@ -71935,7 +71949,7 @@ crit(24011,{achID=8725,id=1,u=54})}}),
 o(220903,{coords={
 [554]={{58.4,60}}},description="Click the statue, and you will be thrown up into the air and given a slow-fall buff. Land on any of the platforms and loot any of the |cFFFFFFFFMist-Covered Treasure Chests|r to get credit for the achievement criteria.",u=54}),
 o(220901,{coords={
-[554]={{51.5,73.4}}},description="Coordinates are for the side of the hill, where you start to jump across the pillars toward the treasure.",isWeekly=1,questID=32969,u=54,g={
+[554]={{49.7,69.5},{51.5,73.4}}},description="Coordinates are for the side of the hill, where you start to jump across the pillars toward the treasure.",isWeekly=1,questID=32969,u=54,g={
 crit(24018,{achID=8726,id=1,u=54})}}),
 o(221036,{coords={
 [554]={{70.6,80.9}}},description="Starting at around |cFFFFFFFF71.5, 79.8|r, mount up and do a running jump off the corner of the back platform. Landing successfully on the beam may take a couple tries, depending on the angle and the point at which you jump. Once you're on the beam, dismount and walk carefully toward the treasure.",isWeekly=1,questID=32970,u=54,g={
@@ -72095,7 +72109,7 @@ crit(24119,{achID=8729,id=4,u=54})}}),
 o(220832,{coords={
 [554]={{40.4,92.9}}},cost={{"i",104015,1}},crs={71920},description="In the belly of the sunken ship.",isWeekly=1,questID=32957,u=54,g={
 crit(24021,{achID=8727,id=1,u=54}),
-toy(134024,{u=54})}})}}),
+toy(104038,{b=1,q=3,rwp=70003,u=54})}})}}),
 h(-58,{u=54,g={
 n(73656,{coords={
 [554]={{38.5,46.4}}},sym={{"select","npcID",56705},{"pop"}},u=54}),

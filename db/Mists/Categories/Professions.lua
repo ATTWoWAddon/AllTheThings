@@ -742,8 +742,7 @@ q(33026,{coords={
 q(33027,{coords={
 [376]={{53.6,51.2}}},qgs={64231},requireSkill=185,sourceQuests={33026},u=54,g={
 r(145062,{learnedAt=600,requireSkill=185,u=54})}})}})}})}})}),
-prof(333,{
-h(-12,{requireSkill=333})}),
+prof(333),
 prof(202,{
 x(1,{requireSkill=202,g={
 h(-45,{awp=40300,requireSkill=202,g={
@@ -2809,6 +2808,5 @@ q(10832,{altQuests={10831,10833},coords={
 qo(1,{cost={{"i",31742,1}},crs={22408},providers={{"i",31741}},requireSkill=197,u=2}),
 r(26797,{requireSkill=197,u=2})}})}})}}),
 x(3,{requireSkill=197}),
-x(4,{awp=40003,requireSkill=197,g={
-h(-12,{requireSkill=197})}})})}});
+x(4,{requireSkill=197})})}});
 end);
