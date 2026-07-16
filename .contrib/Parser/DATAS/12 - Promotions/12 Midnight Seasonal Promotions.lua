@@ -51,6 +51,18 @@ FANTA = createHeader({
 		mx = "Visita https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, juega un minijuego y consigue 1 premio por semana. El sorteo empieza el 1 de abril de 2026 y acaba a las 23:59 (hora del este) del 30 de julio de 2026 o cuando se hayan reclamado todos los premios, lo que ocurra primero. Hay 2392 premios de cada tipo disponibles por semana. Se reinicia semanalmente a las 00:00 (ET). No es necesario realizar ninguna compra.",
 	},
 });
+LUNARNEWYEAR = createHeader({
+	readable = "Lunar New Year Adventure",
+	icon = 7360957,
+	text = {
+		en = "Lunar New Year Adventure",
+	},
+	description = {
+		en = "Lunar New Year Adventure is a China-exclusive promotional event for World of Warcraft, taking place from 5 February to 13 March 2026. The main event functioned similar to the Treasures of Azeroth event.",
+		es = "La Aventura del Año Nuevo Lunar es un evento promocional exclusivo para China de World of Warcraft, que se llevó a cabo del 5 de febrero al 13 de marzo de 2026. El evento principal funcionó de manera similar al evento Tesoros de Azeroth.",
+		mx = "La Aventura del Año Nuevo Lunar es un evento promocional exclusivo para China de World of Warcraft, que se llevó a cabo del 5 de febrero al 13 de marzo de 2026. El evento principal funcionó de manera similar al evento Tesoros de Azeroth.",
+	},
+});
 
 root(ROOTS.Promotions, {
 	n(MIDNIGHT_SEASONAL_PROMOTIONS, {
@@ -77,65 +89,60 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "removed 12.0.1.66198" },
 				["groups"] = { i(260785) },	-- The Dark Portal (DECOR!)
 			}),
-			cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
-				-- #if AFTER 12.0.0
-				-- #if BEFORE 12.1.0
-				["description"] = "The first lottery draw costs ¥1, and the price increases progressively with each subsequent draw. A total of 13 draws costing ¥1,271 will allow you to obtain all prizes. ",
-				-- #endif
-				-- #endif
-				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 13th March 2026
+			n(LUNARNEWYEAR, sharedDataSelf({
+				["timeline"] = { ADDED_12_0_0, REMOVED_12_0_1_LAUNCH },
+				["u"] = REAL_MONEY,
+			}, {
 				["groups"] = {
-					-- 3rd Price
+					-- Board game rewards
+					cnONLY(i(257515)),	-- Lil' Coalee (PET!)
+					cnONLY(i(38311)),	-- Tabard of the Void
+					cnONLY(i(235343)),	-- Topsy Turvy Joker's Mask (COSMETIC!)
+					-- Shop rewards TODO: missing cost and the currency used
 					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
-					cnONLY(i(251542)),	-- Azure Drakefire
-					cnONLY(i(256141)),	-- Fortune's Waving Cat (TOY!)
-					cnONLY(i(253244)),	-- Lunar Celebrant's Aquarium (DECOR!)
-					cnONLY(i(253257)),	-- Lunar Celebrant's Privacy Screen (DECOR!)
-					cnONLY(i(253296)),	-- Lunar Celebrant's Tea Set (DECOR!)
-					cnONLY(i(269743)),	-- Landro's Golden Loot Box (2nd Price as well)
-					-- 2nd Price
-					cnONLY(i(258840)),	-- Gilded Fountain (TOY!)
-					cnONLY(i(253402)),	-- Scorching Polearm (COSMETIC!)
-				--	cnONLY(i(269743)),	-- Landro's Golden Loot Box
-					-- 1st Price
 					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror (COSMETIC!)
-					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
-					--[[
-				--	add cnONLY(i()),	-- Azure Dragon Soaring Flame
-					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!) 	MAYBE OTHER BOX
-				--	add cnONLY(i()),	-- Blazing Fire Sandbox Horse
-					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
-					cnONLY(i(253254)),	-- Lunar Celebrant's Cradle (DECOR!)
-					cnONLY(i(253255)),	-- Lunar Celebrant's Wide Pillow Roll (DECOR!)
-					cnONLY(i(253256)),	-- Lunar Celebrant's Pillow Roll (DECOR!)
-					cnONLY(i(253290)),	-- Lunar Celebrant's Ornate Vanity (DECOR!)
-					cnONLY(i(253291)),	-- Lunar Celebrant's Compact (DECOR!)
+					cnONLY(i(253244)),	-- Lunar Celebrant's Aquarium (DECOR!)
 					cnONLY(i(253292)),	-- Lunar Celebrant's Bamboo Canister (DECOR!)
+					cnONLY(i(253291)),	-- Lunar Celebrant's Compact (DECOR!)
+					cnONLY(i(253254)),	-- Lunar Celebrant's Cradle (DECOR!)
+					cnONLY(i(253290)),	-- Lunar Celebrant's Ornate Vanity (DECOR!)
+					cnONLY(i(253256)),	-- Lunar Celebrant's Pillow Roll (DECOR!)
+					cnONLY(i(253257)),	-- Lunar Celebrant's Privacy Screen (DECOR!)
 					cnONLY(i(253293)),	-- Lunar Celebrant's Tea Tray (DECOR!)
 					cnONLY(i(253294)),	-- Lunar Celebrant's Teacup (DECOR!)
-					cnONLY(i(253295)),	-- Lunar Celebrant's Teapot (DECOR!)--]]
-				},
-			})),
-			cnONLY(i(269743, {	-- Landro's Golden Loot Box
-				-- #if AFTER 12.0.0
-				-- #if BEFORE 12.1.0
-				["description"] = "Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",
-				-- #endif
-				-- #endif
-				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 13th March 2026
-				["groups"] = {
-					cnONLY(i(251542)),	-- Azure Drakefire
-					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!) [BoE]
-					cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!) [BoE]
-					cnONLY(i(254736)),	-- Stormgilded Celestial (MOUNT!) [BoE]
-					cnONLY(i(255973)),	-- Sandbox Horse
-					-- Old Loot
-					cnONLY(i(46779)),	-- Path of Cenarius
-					cnONLY(i(49283)),	-- Reins of the Spectral Tiger (MOUNT!)
-					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
-					cnONLY(i(49285)),	-- X-51 Nether-Rocket (MOUNT!)
-				},
-			})),
+					cnONLY(i(253295)),	-- Lunar Celebrant's Teapot (DECOR!)
+					cnONLY(i(253296)),	-- Lunar Celebrant's Tea Set (DECOR!)
+					cnONLY(i(253297)),	-- Lunar Celebrant's Vase with Maple Branch (DECOR!)
+					cnONLY(i(253255)),	-- Lunar Celebrant's Wide Pillow Roll (DECOR!)
+					cnONLY(i(258840)),	-- Gilded Fountain (TOY!)
+					cnONLY(i(253402)),	-- Scorching Polearm (COSMETIC!)
+					cnONLY(i(254735, {	-- Thunderhoof Celestial (MOUNT!)
+						["groups"] = {
+							cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
+							},
+						})),
+					-- Piramid Gacha Golden Landro box
+					cnONLY(i(269743, {	-- Landro's Golden Loot Box
+						-- #if AFTER 12.0.0
+						-- #if BEFORE 12.0.1
+						["description"] = "The loot box from 2025 was brought back with new rewards. The 2026 variant works similar where players can obtain up to 8 boxes for ¥1000 RMB (~$135 USD), while teaming up with other players and collectively spend at least ¥3000 RMB (~$405 USD), each member will receive an additional 4 boxes as a bonus.",
+						-- #endif
+						-- #endif
+						["groups"] = {
+							cnONLY(i(251542)),	-- Azure Drakefire
+							cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!) [BoE]
+							cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!) [BoE]
+							cnONLY(i(254736)),	-- Stormgilded Celestial (MOUNT!) [BoE]
+							cnONLY(i(255973)),	-- Sandbox Horse
+							-- Old Loot
+							cnONLY(i(46779)),	-- Path of Cenarius
+							cnONLY(i(49283)),	-- Reins of the Spectral Tiger (MOUNT!)
+							cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
+							cnONLY(i(49285)),	-- X-51 Nether-Rocket (MOUNT!)
+							},
+						})),
+					},
+			}));
 			i(264396, {	-- Naturally Elegant Doormat (DECOR!)
 				["description"] = "Visit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' and authorize the Account connection.",
 				["timeline"] = { "added 12.0.1.65899", "removed 12.1.0.99999" },	-- TODO: Timeline out. Available through September 30, 2026.
@@ -221,6 +228,12 @@ root(ROOTS.Promotions, {
 			i(265389, {	-- Cuddly Cotton Candy Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between June 16th, 10:00 a.m. & July 14th, 10:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_0_7, "removed 12.0.7.68453" },	-- Removed July 15th
+			}),
+			i(273655, {	-- Sunflare Driftmoth (MOUNT!)
+			["timeline"] = { ADDED_12_0_7 },
+				["description"] = "Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",
+				["timeline"] = { ADDED_12_0_7 },
+				["u"] = REAL_MONEY,
 			}),
 			i(272339, {	-- Umbral Champion's Illustrious Banner (TOY!)
 				["description"] = "Break the Meta: Midnight Season 1\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on July 14th at 8:00 AM PDT and lasts for 1 week.\nFor more details & requirements check out: raider.io/events/break-the-meta-midnight-season-1/event-info-rules",

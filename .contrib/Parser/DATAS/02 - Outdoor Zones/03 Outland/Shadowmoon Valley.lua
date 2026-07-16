@@ -325,14 +325,13 @@ root(ROOTS.Zones, {
 					}),
 					q(10708, {	-- Akama's Promise
 						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
-						-- #if AFTER WRATH
 						["altQuests"] = { 11052 },	-- Akama's Promise
-						-- #endif
 						["providers"] = {
 							{ "n", 21700 },	-- Akama
 							{ "i", 32646 },	-- Medallion of Karabor
 						},
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
+						["maps"] = { SHATTRATH_CITY },
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							i(30932),	-- Akama's Sash
@@ -343,8 +342,7 @@ root(ROOTS.Zones, {
 							i(31417),	-- Staff of the Ashtongue Deathsworn
 						},
 					}),
-					-- #if AFTER WRATH
-					q(11052, {	-- OLD Akama's Promise
+					q(11052, {	-- Akama's Promise
 						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
 						["altQuests"] = { 10708 },	-- Akama's Promise
 						["providers"] = {
@@ -352,7 +350,9 @@ root(ROOTS.Zones, {
 							{ "i", 32646 },	-- Medallion of Karabor
 						},
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
+						["maps"] = { SHATTRATH_CITY },
 						["lvl"] = lvlsquish(68, 68, 25),
+						["timeline"] = { REMOVED_3_0_2 },
 						["groups"] = {
 							i(30932),	-- Akama's Sash
 							i(30999),	-- Ashtongue Blade
@@ -362,7 +362,6 @@ root(ROOTS.Zones, {
 							i(31417),	-- Staff of the Ashtongue Deathsworn
 						},
 					}),
-					-- #endif
 					q(10640, {	-- Altruis (The Aldor)
 						["sourceQuest"] = 10637,	-- A Necessary Distraction
 						["qg"] = 21860,	-- Exarch Onaala

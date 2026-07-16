@@ -29,7 +29,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 	["description"] = "In order to collect these, you need to have the original title associated with the gear.",
 	["groups"] = {
 		n(HONOR_TITLES, {
-			["timeline"] = { ADDED_1_11_1, REMOVED_2_0_1 },
+			["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			-- #if BEFORE 2.0.1
 			["maps"] = {
 				ALTERAC_VALLEY,
@@ -56,7 +56,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 		}),
 		n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({
 			["timeline"] = {
-				ADDED_1_11_1,
+				ADDED_1_4_0,
 				-- #if NOT ANYCLASSIC
 				REMOVED_2_0_1,
 				-- #endif
@@ -1084,7 +1084,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 61.8, 83.8, ASHENVALE },
 					-- #endif
 				},
-				["timeline"] = { REMOVED_3_3_3 },
+				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
 				["cost"] = {
 					-- #if AFTER TBC
 					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
@@ -1121,7 +1121,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 61.8, 83.8, ASHENVALE },
 					-- #endif
 				},
-				["timeline"] = { REMOVED_3_3_3 },
+				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
 				["cost"] = {
 					-- #if AFTER TBC
 					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
@@ -1158,7 +1158,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 46.7, 8.4, THE_BARRENS },
 					-- #endif
 				},
-				["timeline"] = { REMOVED_3_3_3 },
+				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
 				["cost"] = {
 					-- #if AFTER TBC
 					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
@@ -1195,7 +1195,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ 46.7, 8.4, THE_BARRENS },
 					-- #endif
 				},
-				["timeline"] = { REMOVED_3_3_3 },
+				["timeline"] = { ADDED_1_8_0, REMOVED_3_3_3 },
 				["cost"] = {
 					-- #if AFTER TBC
 					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
