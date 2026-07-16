@@ -5,11 +5,12 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(SHOWDOWN, {
 		["timeline"] = { ADDED_12_0_7 },
-		["maps"] = {
-			NAIGTAL,
-			VAL,
-		},
-		["groups"] = {
+		["groups"] = sharedData({
+			["maps"] = {
+				NAIGTAL,
+				VAL,
+			},
+		},{
 			n(ACHIEVEMENTS, {
 				ach(62873),	-- A Trip Around the Stars
 				ach(62874),	-- A Trip Through the Stars
@@ -27,6 +28,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				ach(62896),	-- Power Creep
 				ach(63384),	-- Prepared for a Showdown
 			}),
-		},
+		}),
 	}),
 }));
