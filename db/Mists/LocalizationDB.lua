@@ -10269,6 +10269,7 @@ L.QUEST_NAMES = {
 	[31098] = "Founding of the Order of the Cloud Serpent",
 	[31099] = "Klaxx Attack",
 	[31101] = "Legends of the Brewfathers",
+	[31172] = "Monk Training",
 	[31218] = "FLAG - Unlocked Tenwu",
 	[31219] = "FLAG - Unlocked Nurong",
 	[31273] = "Relics of the Swarm",

@@ -800,6 +800,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(30316, { ["name"] = "Longshot", }),	-- Longshot
 			q(30377, { ["name"] = "Minimum Safe Distance", }),	-- Minimum Safe Distance
 			q(31655, { ["name"] = "Mishi Tracking 1", }),	-- Mishi Tracking 1
+			q(31172, { ["name"] = "Monk Training", }),	-- Monk Training
 			q(30009, { ["name"] = "Muster of Fort Grookin", }),	-- Muster of Fort Grookin
 			q(29696, { ["name"] = "My Stars!", }),	-- My Stars!
 			q(29814, { ["name"] = "Need a Chaser", }),	-- Need a Chaser

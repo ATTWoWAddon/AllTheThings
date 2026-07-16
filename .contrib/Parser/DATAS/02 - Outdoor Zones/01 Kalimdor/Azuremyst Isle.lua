@@ -285,11 +285,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
-						q(31172, {	-- Monk Training
-							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-							["races"] = { DRAENEI },
-							["classes"] = { MONK },
-						}),
 						q(9287, {	-- Paladin Training
 							["qg"] = 16501,	-- Aurelon
 							["coords"] = {
