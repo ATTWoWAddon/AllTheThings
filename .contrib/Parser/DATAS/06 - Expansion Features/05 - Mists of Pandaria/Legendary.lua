@@ -450,7 +450,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["maps"] = { 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570 },	-- Siege of Orgrimmar
 					["groups"] = {
 						ach(8325),	-- Chapter V: Judgment of the Black Prince
-						title(306),	-- <Name>, Legend of Pandaria
+						title(306, {	-- <Name>, Legend of Pandaria
+							["timeline"] = { ADDED_6_0_2 },
+						}),
 					},
 				}),
 			})),
