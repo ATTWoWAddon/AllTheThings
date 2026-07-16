@@ -419,6 +419,7 @@ i(158872);	-- Unstable Essence
 i(158857);	-- Untainted Wicker
 i(163851);	-- Venerated Golden Censer
 i(158796);	-- Venomous Tentacle
+i(158850);	-- Vibrant Plumage
 i(155636);	-- Viscous Ink
 i(158864);	-- Viscous Webbing
 i(163901);	-- Waterproof Flintbox
@@ -501,6 +502,7 @@ i(238810);	-- Mana-Blessed Fin
 i(170031);	-- Moldy Tome
 i(169663);	-- Muddy Chassis
 i(168795);	-- Old Boot
+i(168789);	-- Perpetual Motion Device
 i(168796);	-- Recycled Scroll
 i(169660);	-- Resistance Roller
 i(168009);	-- Rotten Direbloom Petal
@@ -2888,6 +2890,7 @@ i(272116);	-- Water-Logged Transaction Scroll
 i(276349);	-- Bulbous Leyshroom
 i(276343);	-- Console Encryption Key
 i(276360);	-- Etched Ice Chip
+i(276346);	-- Fel-Singed Salvage
 i(276353);	-- Frozen Sliver of Darkness
 i(276362);	-- Lost Glacier Climbing Hooks
 i(276345);	-- Malfunctioning Holoprint

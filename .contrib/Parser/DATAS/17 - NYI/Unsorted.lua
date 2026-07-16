@@ -1963,18 +1963,11 @@ root(ROOTS.Unsorted, {
 				i(272353),	-- Auspicious Verdant Basin
 				i(272354),	-- Auspicious Stone Lion
 			}),
-			n(FLIGHT_PATHS, {
-				fp(3270),	-- Steam Ravine
-				fp(3268),	-- The Devouring Ingress
-				fp(3267),	-- Umbral Base Camp
-				fp(3269),	-- Void Acropolis
-			}),
 			filter(MISC, {
 				-- Delve
 				i(275910),	-- Beacon of Hope
 				--
 				i(270273),	-- Viny Lasso
-				i(276346),	-- Fel-Singed Salvage
 				i(276347),	-- Cracked Legion Communicator
 				i(276351),	-- Muckfaded Crystalline Figure
 				i(276352),	-- Scuffed Prayer Bangle
@@ -3304,7 +3297,6 @@ root(ROOTS.Unsorted, {
 				i(158845),	-- PH Flavor - Unused \\ PH Flavor - Bear
 				i(158846),	-- PH Flavor - Unused \\ PH Flavor - Basilisk
 				i(158847),	-- PH Flavor - Unused \\ PH Flavor - Bog Plant
-				i(158850),	-- Vibrant Plumage \\ PH Flavor - Pig
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
 				i(158727),	-- Decayed Equipment
@@ -4023,7 +4015,6 @@ root(ROOTS.Unsorted, {
 			i(168655),	-- Greater Mystical Flask
 			i(168662),	-- Maroon Pigment
 			i(168755),	-- Unpublished Research
-			i(168789),	-- Perpetual Motion Device
 			i(168797),	-- Stack of Undeliverable Mail
 			i(168812),	-- Air Freshner
 			i(168815),	-- Kelpberry Cask

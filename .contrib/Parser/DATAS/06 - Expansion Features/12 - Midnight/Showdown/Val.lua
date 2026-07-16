@@ -32,6 +32,57 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						ach(62880),	-- Showdown Success: Val
 						ach(63349),	-- Ultradon Carnage
 					}),
+					n(createHeader({
+						readable = "Portal Bridges",
+						icon = 6994475,
+						text = {
+							en = "Portal Bridges",
+							--de = "Portal Bridges",
+							--es = "Portal Bridges",
+							--mx = "Portal Bridges",
+							--fr = "Portal Bridges",
+							--it = "Portal Bridges",
+							--ko = "Portal Bridges",
+							--pt = "Portal Bridges",
+							--ru = "Portal Bridges",
+							--cn = "Portal Bridges",
+							--tw = "Portal Bridges",
+						},
+						description = {
+							en = "Portal Bridges are teleporters used to instantly move around Val.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							-- TODO: cn = "",
+							-- TODO: tw = "",
+						},
+					}), {
+						["groups"] = sharedData({
+							["sourceQuest"] = 96497,	-- Spatial Reasoning
+						}, {
+							fp(3267, {	-- Umbral Base Camp
+								--["coord"] = { 0, 0, VAL },
+								--["cr"] = ,	-- Portal Bridge
+							}),
+							fp(3268, {	-- The Devouring Ingress
+								--["coord"] = { 0, 0, VAL },
+								--["cr"] = ,	-- Portal Bridge
+							}),
+							fp(3269, {	-- Void Acropolis
+								--["coord"] = { 0, 0, VAL },
+								--["cr"] = ,	-- Portal Bridge
+							}),
+							fp(3270, {	-- Steam Ravine
+								--["coord"] = { 0, 0, VAL },
+								--["cr"] = ,	-- Portal Bridge
+							}),
+						}),
+					}),
 					n(QUESTS, {
 						q(97215, {	-- A Secondary Strike
 							["qg"] = 263479,	-- Riftblade Maella
