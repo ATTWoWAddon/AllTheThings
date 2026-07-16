@@ -14,4 +14,5 @@ SHOWDOWN = createHeader({
 		cn = "摊牌",
 		tw = "攤牌",
 	},
+	lore = "The worlds of Naigtal and Val are distant frontiers caught in the widening shadow of the Void. Reached only through unstable portals deep within Voidstorm, these realms have become strongholds for powerful enemies directing attacks against Azeroth.",
 });

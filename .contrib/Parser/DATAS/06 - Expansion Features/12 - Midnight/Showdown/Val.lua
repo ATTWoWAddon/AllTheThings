@@ -66,19 +66,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["sourceQuest"] = 96497,	-- Spatial Reasoning
 						}, {
 							fp(3267, {	-- Umbral Base Camp
-								--["coord"] = { 0, 0, VAL },
+								["coord"] = { 60.9, 16.2, VAL },
 								--["cr"] = ,	-- Portal Bridge
 							}),
 							fp(3268, {	-- The Devouring Ingress
-								--["coord"] = { 0, 0, VAL },
+								["coord"] = { 30.5, 67.8, VAL },
 								--["cr"] = ,	-- Portal Bridge
 							}),
 							fp(3269, {	-- Void Acropolis
-								--["coord"] = { 0, 0, VAL },
+								["coord"] = { 46.5, 71.4, VAL },
 								--["cr"] = ,	-- Portal Bridge
 							}),
 							fp(3270, {	-- Steam Ravine
-								--["coord"] = { 0, 0, VAL },
+								["coord"] = { 64.4, 69.4, VAL },
 								--["cr"] = ,	-- Portal Bridge
 							}),
 						}),
