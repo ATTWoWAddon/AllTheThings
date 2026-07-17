@@ -504,6 +504,27 @@ UpdateCostGroup = function(c)
 		return
 	end
 	local refresh = app._SettingsRefresh;
+	-- update child groups (hopefully no situations where we need to update recursively nested groups...)
+	local g = c.g
+	if g then
+		local o
+		for i=1,#g do
+			o = g[i]
+			if o.itemID then
+				-- app.PrintDebug("Send sub-group cost update i",app:SearchLink(o))
+				UpdateRunner.Run(UpdateCostsByItemID, o.modItemID or o.itemID, refresh, true)
+			end
+			if o.currencyID then
+				-- app.PrintDebug("Send sub-group cost update c",app:SearchLink(o))
+				UpdateRunner.Run(UpdateCostsByCurrencyID, o.currencyID, refresh, true)
+			end
+			if o.spellID then
+				-- app.PrintDebug("Send sub-group cost update s",app:SearchLink(o))
+				UpdateRunner.Run(UpdateCostsBySpellID, o.spellID, refresh, true)
+			end
+		end
+	end
+
 	local costs, providers = c.cost, c.providers
 	-- update cost
 	if costs and type(costs) == "table" then
