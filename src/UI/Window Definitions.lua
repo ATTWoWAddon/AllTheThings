@@ -1323,14 +1323,6 @@ local function RowOnEnter(self)
 
 	-- Process all Information Types
 	if tooltip.ATT_AttachComplete == nil then
-		-- an item used for a faction which is repeatable
-		if reference.itemID and reference.factionID and reference.repeatable then
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.ITEM_GIVES_REP .. (app.WOWAPI.GetFactionName(reference.factionID) or ("Faction #" .. reference.factionID)) .. "'",
-				color = app.Colors.TooltipDescription,
-				wrap = true,
-			};
-		end
 		app.ProcessInformationTypes(tooltipInfo, reference);
 	end
 
