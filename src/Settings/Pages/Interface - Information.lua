@@ -1362,6 +1362,20 @@ local InformationTypes = {
 };
 settings.InformationTypes = InformationTypes;
 
+--[[
+-- CreateInformationType stub for use in external calls
+app.Settings.CreateInformationType("UniqueInformationTypeName", {
+	text = "VisibleInformationTypeText", -- only used if HideCheck = false / using default Process
+	priority = 9999,	-- default 100
+	HideCheckBox = true,	-- false default
+	ForceActive = true,	-- false default
+	ShouldDisplayInExternalTooltips = false, -- true default
+	IsStandaloneProperty = false, -- true default
+	Process = function(t, reference, tooltipInfo)
+	end,
+})
+]]
+
 local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {}, nil, nil;
 local function SortInformationTypesByLocalizedName(a,b)

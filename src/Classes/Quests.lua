@@ -2143,6 +2143,20 @@ app.AddEventHandler("OnLoad", function()
 			end
 		end,
 	})
+	app.Settings.CreateInformationType("timeRemaining", {
+		text = "Time Remaining",
+		priority = 2.2,
+		HideCheckBox = true,
+		ForceActive = true,
+		Process = function(t, reference, tooltipInfo)
+			local timeRemaining = reference.timeRemaining
+			if timeRemaining then
+				tooltipInfo[#tooltipInfo + 1] = {
+					left = app.GetColoredTimeRemaining(timeRemaining),
+				}
+			end
+		end,
+	})
 end);
 
 -- Game Events that trigger visual updates, but no computation updates.

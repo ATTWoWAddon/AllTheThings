@@ -1352,11 +1352,6 @@ local function RowOnEnter(self)
 	end
 
 	-- Further conditional texts that can be displayed
-	if reference.timeRemaining then
-		tooltipInfo[#tooltipInfo + 1] = {
-			left = app.GetColoredTimeRemaining(reference.timeRemaining),
-		}
-	end
 
 	-- Show info about if this Thing cannot be collected due to a custom collectibility
 	-- restriction on the Thing which this character does not meet
