@@ -488,6 +488,14 @@ local function UpdateCosts()
 	end
 end
 
+local UpdateCostTypeFunc = setmetatable({
+	i = UpdateCostsByItemID,
+	c = UpdateCostsByCurrencyID,
+	s = UpdateCostsBySpellID,
+}, { __index = function(t, key)
+	app.report("Unhandled Cost Update Type",key)
+	return app.EmptyFunction
+end})
 -- Performs a recursive update sequence and update of cost against the referenced 'cost'/'providers' table
 UpdateCostGroup = function(c)
 	-- app.PrintDebug("UCG",app:SearchLink(c),app._SettingsRefresh)
@@ -504,12 +512,8 @@ UpdateCostGroup = function(c)
 		for i=1,#costs do
 			cost = costs[i];
 			type, id = cost[1], cost[2];
-			-- app.PrintDebug("UCG:",type,id)
-			if type == "i" then
-				UpdateCostsByItemID(id, refresh, true)
-			elseif type == "c" then
-				UpdateCostsByCurrencyID(id, refresh, true)
-			end
+			-- app.PrintDebug("UCG.cost:",type,id)
+			UpdateCostTypeFunc[type](id, refresh, true)
 		end
 	end
 	-- update providers
@@ -519,14 +523,8 @@ UpdateCostGroup = function(c)
 		for i=1,#providers do
 			prov = providers[i];
 			type, id = prov[1], prov[2];
-			-- app.PrintDebug("UCG:",type,id)
-			if type == "i" then
-				UpdateCostsByItemID(id, refresh, true)
-			elseif type == "c" then
-				UpdateCostsByCurrencyID(id, refresh, true)
-			elseif type == "s" then
-				UpdateCostsBySpellID(id, refresh, true)
-			end
+			-- app.PrintDebug("UCG.providers:",type,id)
+			UpdateCostTypeFunc[type](id, refresh, true)
 		end
 	end
 	-- app.PrintDebug("UCG:Done",c.hash,app._SettingsRefresh)
