@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				q(65432, {	-- Further Research: Dealic
 					["sourceQuests"] = { 65431 },	-- Further Research: Aealic
-					["provider"] = { "n", 181397 },	-- Cypher Console
+					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
 				}),
 				q(65433, {	-- Further Research: Trebalim
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				q(64778, {	-- Rift Recon
 					["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
-					["provider"] = { "n", 18170 },	-- Olea Manu
+					["provider"] = { "n", 181170 },	-- Olea Manu
 					["coord"] = { 42.7, 31.6, ZERETH_MORTIS },
 				}),
 				q(64780, {	-- Mawsteel, Maw Problems

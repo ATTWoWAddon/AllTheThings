@@ -281,6 +281,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["qg"] = 266540, -- Commander Tala'saan
 							["coord"] = { 36.7, 73.1, 2646 },	-- Vilaldoun
 						}),
+						q(97037, {	-- Stargrim Revelations
+							["sourceQuest"] = 96578,	-- Cryptic Departure
+							["qg"] = 265950, -- Commander Tala'saan
+							["coord"] = { 47.5, 82.1, NAIGTAL },
+						}),
 						-- Repeatable
 						q(96720, {	-- Showdown on Naigtal (Low Level)
 							["sourceQuest"] = 96052,	-- Through the Mana Rift
