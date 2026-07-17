@@ -297,7 +297,7 @@ local function PrintQuestInfoCallback(questID, success, params)
 	if not success then
 		local ref = Search("questID", questID, "field")
 		if ref then
-			if IsRetrieving(ref.name) and ref.CanRetry then
+			if IsRetrieving(ref.name, true) and ref.CanRetry then
 				-- app.PrintDebug("Retry for quest name from ref",app:SearchLink(ref),questID)
 				Runner.Run(PrintQuestInfoCallback, questID, success, params)
 				return
@@ -749,7 +749,7 @@ PrintQuestInfo = function(questID, new)
 
 		-- Quest can be linked to all sorts of things...
 		text = questRef.name or hqt and UNKNOWN or QuestNameFromID[questID]
-		if IsRetrieving(text) then
+		if IsRetrieving(text, true) then
 			text = UNKNOWN
 		end
 		text = text .. " (" .. questID .. ")"
