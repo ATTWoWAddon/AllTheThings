@@ -54,6 +54,7 @@ local CostDebugIDs = {
 	-- [193215] = true,	-- Scaleseeker Mezeri
 	-- [24368] = true,	-- Coilfang Armaments
 	-- [9766] = true,	-- Coilfang Armaments (quest)
+	-- [3160] = true,	-- MID Tailoring Knowledge
 }
 local function PrintDebug(id, ...)
 	if CostDebugIDs.ALL then
@@ -345,8 +346,9 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
 	local total = CostTotals.c[currencyID] or 0
-	local owned = CurrencyAmounts[currencyID]
-	local isCost = total > owned
+	-- temporary until currency costs are accurate?
+	-- local owned = CurrencyAmounts[currencyID]
+	local isCost = total > 0 -- owned
 	-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
 	SetCostTotals(costs, isCost, refresh, currencyID)
 end
