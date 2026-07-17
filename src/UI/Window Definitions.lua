@@ -1328,30 +1328,6 @@ local function RowOnEnter(self)
 
 	-- Further conditional texts that can be displayed
 
-	-- Show info about if this Thing cannot be collected due to a custom collectibility
-	-- restriction on the Thing which this character does not meet
-	local customCollect = reference.customCollect
-	if customCollect then
-		local customCollectEx, c
-		local requires = L.REQUIRES;
-		for i=1,#customCollect do
-			c = customCollect[i]
-			customCollectEx = L.CUSTOM_COLLECTS_REASONS[c];
-			local icon_color_str = customCollectEx.icon.." |c"..customCollectEx.color..(customCollectEx.text or "[MISSING_LOCALE_KEY]");
-			if not app.CurrentCharacter.CustomCollects[c] then
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = "|cffc20000" .. requires .. ":|r " .. icon_color_str,
-					right = customCollectEx.desc or "",
-				}
-			else
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = requires .. ": " .. icon_color_str,
-					right = customCollectEx.desc or "",
-				}
-			end
-		end
-	end
-
 	if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
 		if reference.g then
 			-- If we're at the Auction House

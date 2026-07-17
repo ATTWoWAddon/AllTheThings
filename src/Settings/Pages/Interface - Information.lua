@@ -915,6 +915,37 @@ local InformationTypes = {
 			end
 		end,
 	});
+	CreateInformationType("customCollect", {
+		text = "Custom Collect Requirements",
+		HideCheckBox = true,
+		ForceActive = true,
+		priority = 2.7,
+		Process = function(t, reference, tooltipInfo)
+			-- Show info about if this Thing cannot be collected due to a custom collectibility
+			-- restriction on the Thing which this character does not meet
+			local customCollect = reference.customCollect
+			if customCollect then
+				local customCollectEx, c
+				local requires = L.REQUIRES;
+				for i=1,#customCollect do
+					c = customCollect[i]
+					customCollectEx = L.CUSTOM_COLLECTS_REASONS[c];
+					local icon_color_str = customCollectEx.icon.." |c"..customCollectEx.color..(customCollectEx.text or "[MISSING_LOCALE_KEY]");
+					if not app.CurrentCharacter.CustomCollects[c] then
+						tooltipInfo[#tooltipInfo + 1] = {
+							left = Colorize(requires, app.Colors.LockedWarning) .. "  " .. icon_color_str,
+							right = customCollectEx.desc or "",
+						}
+					else
+						tooltipInfo[#tooltipInfo + 1] = {
+							left = Colorize(requires, app.Colors.Time) .. "  " .. icon_color_str,
+							right = customCollectEx.desc or "",
+						}
+					end
+				end
+			end
+		end,
+	}),
 	CreateInformationType("u", {
 		priority = 2.7,
 		isRecursive = true,
