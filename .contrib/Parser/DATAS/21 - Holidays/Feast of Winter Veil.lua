@@ -243,14 +243,6 @@ local STOLEN_PRESENT_GROUPS = {
 		["timeline"] = { ADDED_6_0_2, REMOVED_7_1_0 },
 	}),
 	i(93625, {	-- Miniature Winter Veil Tree (Level 90)
-		["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
-	}),
-	-- #if ANYCLASSIC
-	i(268556, {	-- Miniature Winter Veil Tree (Level 90 - 502 ilvl)
-		["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
-	}),
-	-- #endif
-	i(93625, {	-- Miniature Winter Veil Tree (Level 90)
 		["timeline"] = {
 			ADDED_5_1_0,
 			-- #if ANYCLASSIC
@@ -259,6 +251,11 @@ local STOLEN_PRESENT_GROUPS = {
 			REMOVED_6_0_2
 		},
 	}),
+	-- #if ANYCLASSIC
+	i(268556, {	-- Miniature Winter Veil Tree (Level 90 - 502 ilvl)
+		["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
+	}),
+	-- #endif
 	i(66540, {	-- Miniature Winter Veil Tree (Level 85)
 		["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 },
 	}),
