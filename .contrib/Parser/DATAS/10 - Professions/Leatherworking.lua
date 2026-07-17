@@ -1336,6 +1336,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					195241,	-- Primal Proto-Drake
 					193806,	-- Primal Proto-Drake
 					190056,	-- Primal Proto-Drake
+					184869,	-- Primal Proto-Drake
 				},
 			}),
 			q(70523, {	-- DF Weekly Leatherworking Knowledgepoint #4

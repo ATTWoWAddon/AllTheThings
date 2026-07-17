@@ -281,13 +281,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91475, { ["isRepeatable"] = true }),	-- Abundance: Abundant Voidburrow
 			q(87350, { ["isRepeatable"] = true }),	-- Abundance: Loaknit Den
 			q(91457, { ["isRepeatable"] = true }),	-- Abundance: Watha'nan Crypts
-			q(88770),	-- Popped after entering Loaknit Den
-			q(94426),	-- Popped after Loaknit Den
-			q(91432),	-- Popped after entering Wath'nan Crypts
+			--
+			q(91303),	-- First time spending Shard of Dundun in Harandar (Abundant Grove)
+			q(91496),	-- First time spending Shard of Dundun in Voidstorm (Abundant Voidburrow)
+			q(90092),	-- First time spending Shard of Dundun in Zul'Aman (Loaknit Den)
+			q(91432),	-- First time spending Shard of Dundun in Eversong Woods (Watha'nan Crypts)
+			--
+			q(88770),	-- Unlocked Abundance
 			q(94952),	-- Accepted 'Abudant Offerings' (questID 89507)
-			q(90092),	-- First time spending Shard of Dundun in Zul'Aman
-			q(91303),	-- First time spending Shard of Dundun in Harandar
-			q(91496),	-- First time spending Shard of Dundun in Voidstorm
+			q(94426),	-- Popped after Abundance (unknown exact trigger, can be any zone)
 		}),
 	}),
 }));
