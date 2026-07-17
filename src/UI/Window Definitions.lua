@@ -1321,23 +1321,6 @@ local function RowOnEnter(self)
 		tooltipInfo[#tooltipInfo + 1] = { left = reference.text or RETRIEVING_DATA }
 	end
 
-	local title = reference.title;
-	if title then
-		local left, right = app.DESCRIPTION_SEPARATOR:split(title);
-		if right then
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = left,
-				right = right,
-				r = 1, g = 1, b = 1
-			};
-		else
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = title,
-				r = 1, g = 1, b = 1
-			};
-		end
-	end
-
 	-- Process all Information Types
 	if tooltip.ATT_AttachComplete == nil then
 		-- an item used for a faction which is repeatable

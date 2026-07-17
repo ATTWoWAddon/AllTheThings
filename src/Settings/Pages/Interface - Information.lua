@@ -614,6 +614,31 @@ local InformationTypes = {
 	}),
 	CreateInformationType("SocialProgress", { text = L.SOCIAL_PROGRESS, priority = 1, IsStandaloneProperty = false }),
 
+	CreateInformationType("title", {
+		text = "Title",
+		priority = 1.01,
+		HideCheckBox = true,
+		ForceActive = true,
+		Process = function(t, reference, tooltipInfo)
+			local title = reference.title;
+			if title then
+				local left, right = app.DESCRIPTION_SEPARATOR:split(title);
+				if right then
+					tooltipInfo[#tooltipInfo + 1] = {
+						left = left,
+						right = right,
+						r = 1, g = 1, b = 1
+					};
+				else
+					tooltipInfo[#tooltipInfo + 1] = {
+						left = title,
+						r = 1, g = 1, b = 1
+					};
+				end
+			end
+		end,
+	}),
+
 	-- Contextual fields
 	CreateInformationType("parent", { text = "Parent", priority = 1.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
