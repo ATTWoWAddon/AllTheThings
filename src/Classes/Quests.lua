@@ -622,6 +622,10 @@ local function GetQuestIndicator(t)
 		elseif OneTimeQuests[questID] then
 			return app.asset("Interface_Quest_Arrow");
 		end
+		local timeRemaining = t.timeRemaining
+		if timeRemaining then
+			return app.asset("Interface_Questin_grey")
+		end
 	end
 end
 
@@ -1605,7 +1609,12 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return IsQuestSaved(t.questID);
 	end,
 	timeRemaining = function(t)
-		return t.isWorldQuest and (GetQuestTimeLeftMinutes(t.questID) or 0) * 60 or nil;
+		if t.isWorldQuest then
+			local timeLeft = GetQuestTimeLeftMinutes(t.questID)
+			if timeLeft then
+				return timeLeft * 60
+			end
+		end
 	end,
 
 	-- These are Retail fields that aren't used in Classic... yet?
