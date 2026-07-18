@@ -5723,10 +5723,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		--
 		-- Sacks of Gems
 		i(17962),	-- Blue Sack of Gems
-		i(17964),	-- Gray Sack of Gems
+		-- #IF BEFORE 4.0.3
 		i(17963),	-- Green Sack of Gems
-		i(17969),	-- Red Sack of Gems
 		i(17965),	-- Yellow Sack of Gems
+		-- #ENDIF
 		-- ______________________________________
 		--
 		-- Other reagents:

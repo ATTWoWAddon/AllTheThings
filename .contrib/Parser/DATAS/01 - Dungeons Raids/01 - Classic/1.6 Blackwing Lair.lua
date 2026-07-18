@@ -458,9 +458,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
 					i(17964),	-- Gray Sack of Gems
-					i(17963),	-- Green Sack of Gems
 					i(17969),	-- Red Sack of Gems
+					-- #IF AFTER 4.0.3
+					i(17963),	-- Green Sack of Gems
 					i(17965),	-- Yellow Sack of Gems
+					-- #ENDIF
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
