@@ -1107,8 +1107,9 @@ NestObjects = function(p, g, newCreate)
 	if pg then
 		MergeObjects(pg, g, newCreate);
 	elseif #g > 0 then
-		p.g = {};
-		MergeObjects(p.g, g, newCreate);
+		pg = {}
+		p.g = pg
+		MergeObjects(pg, g, newCreate);
 	end
 end
 -- Nests multiple Objects under another Object using an optional set of functions to determine priority on the adding of objects, only creating the 'g' group if necessary
