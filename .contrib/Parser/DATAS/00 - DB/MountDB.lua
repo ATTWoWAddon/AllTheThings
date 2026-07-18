@@ -16,12 +16,17 @@ end
 -- CLASSIC WOW --
 -----------------
 -- SEASON OF DISCOVERY --
+-- #if SEASON_OF_DISCOVERY
 i(211499, 429857);	-- Trainee's Outrider Wolf
 i(211498, 429856);	-- Trainee's Sentinel Nightsaber
 
 -- Phase 2
 i(216570, 436329);	-- Reins of the Golden Sabercat
 i(216492, 436288);	-- Whistle of the Mottled Blood Raptor
+
+-- Phase 4
+i(13325, 17458);	-- Fluorescent Green Mechanostrider
+i(228746, 463005);	-- Fluorescent Green Mechanostrider (100% speed upgrade)
 
 -- Phase 6
 i(233351, 473847); -- Light Green Qiraji Resonating Crystal
@@ -39,6 +44,7 @@ i(236665, 1220568); -- Reins of Famine
 -- Phase 8
 i(239694, 1229305); -- Covenant of Light
 i(239695, 1229308); -- Scarlet Steed
+-- #endif
 
 -- TBC Classic --
 i(184865, 348459);	-- Reawakened Phase-Hunter
@@ -51,11 +57,17 @@ i(273150, 1291813); -- Voidfeather Dragonhawk
 -- #endif
 
 -- Wrath Classic --
-i(192455, 372677);	-- Kalu'ak Whalebone Glider
-i(201699, 394209);	-- Festering Emerald Drake
-i(207097, 416158);	-- Nightmarish Emerald Drake
 i(0, 440915);		-- Auspicious Arborwyrm
 i(0, 423869);		-- Avatar of Flame
+i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
+i(201699, 394209);	-- Festering Emerald Drake
+-- #if AFTER 5.5.2
+i(226805, 459486);	-- Golden Ashes of Al'ar		(CN Only)
+-- #else
+i(0, 459486);		-- Golden Ashes of Al'ar		(CN Only)
+-- #endif
+i(192455, 372677);	-- Kalu'ak Whalebone Glider
+i(207097, 416158);	-- Nightmarish Emerald Drake
 -- #if AFTER 5.5.3
 i(265937, 446902);	-- Polly Roger
 -- #else
@@ -66,7 +78,6 @@ i(232614, 471440);	-- Skybound Spectral Tiger		(CN Only)
 -- #else
 i(0, 471440);		-- Skybound Spectral Tiger		(CN Only)
 -- #endif
-i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
 -- #if AFTER 5.5.2
 i(226805, 459784);	-- Golden Ashes of Al'ar		(CN Only Classic Version)
 -- #else
@@ -77,19 +88,24 @@ i(0, 459784);		-- Golden Ashes of Al'ar		(CN Only Classic Version)
 i(0, 463045);		-- Lava Drake
 i(0, 473487);		-- Sha-Touched Cloud Serpent
 i(0, 473478);		-- Sha-Touched Riding Tiger
-i(0, 466948);	-- Chaos-Born Dreadwing
-i(0, 466983);	-- Chaos-Born Gryphon
-i(0, 466980);	-- Chaos-Born Hippogryph
-i(0, 466977);	-- Chaos-Born Wind Rider
+i(0, 466948);		-- Chaos-Born Dreadwing
+i(0, 466983);		-- Chaos-Born Gryphon
+i(0, 466980);		-- Chaos-Born Hippogryph
+i(0, 466977);		-- Chaos-Born Wind Rider
 
 --- MOP CLASSIC ---
 i(0, 1229672);		-- Archmage's Great Crow
+i(265944, 1250045);	-- Ashened Cataclysm (CN ONLY)
 i(248741, 1247591);	-- Celestial Riding Crane
 i(248744, 1247597);	-- Celestial Riding Ox
 i(248743, 1247596);	-- Celestial Riding Serpent
 i(248742, 1247598);	-- Celestial Riding Tiger
 i(0, 1257674);		-- Embertuft Groveglider
+i(275928, 1298510);	-- Fire Drake
+i(268706, 1283471);	-- Golden Ashened Cataclysm (CN ONLY)
+i(226812, 459538);	-- Harmonius Greetings Bear (CN ONLY)
 i(277652, 1302506);	-- Juvenile Frostwyrm
+i(0, 1257516);		-- Lana'thel's Sanguine Cascade
 i(0, 1224647);		-- Meeksi Brewrobber
 i(0, 1224643);		-- Meeksi Gentlepaw
 i(0, 1224645);		-- Meeksi Rufflemane
@@ -97,16 +113,26 @@ i(0, 1224596);		-- Meeksi Teapuff
 i(0, 1224646);		-- Meeksi Wanderpaw
 i(0, 1257676);		-- Petalbranch Groveglider
 i(0, 1229670);		-- Prophet's Great Crow
+i(267300, 1280068);	-- Scorching Courage
+i(268924, 1284044);	-- Scorching Imperial Quilen (CN ONLY)
+i(258883, 1249659);	-- Sha-scarred Drake
 i(0, 1257677);		-- Shadowbough Groveglider
 i(0, 1257673);		-- Snowfall Groveglider
+i(276082, 1298515);	-- Spectral Gryphon
+i(276081, 1298516);	-- Spectral Wind Rider
+i(272920, 1291315);	-- Spring Panda (CN ONLY)
 i(276075, 1298512);	-- Stormcrow
-i(254735, 1258573);	-- Thunderhoof Celestial (CN ONLY)
+i(0, 1301737);		-- Sunflash driftmoth
+i(254735, 1285725);	-- Thunderhoof Celestial (CN ONLY)
 
 --- NYI ---
-i(0, 388516);		-- Hao-Yue, River Foreseer
 i(198632, 387319);	-- Big Battle Bear
 i(198630, 387320);	-- Blazing Hippogryph
+i(199931, 388516);	-- Hao-Yue, River Foreseer
+i(264986, 1272988);	-- Inarius' Charger
 i(198631, 387308);	-- Magic Rooster
+i(245612, 1239240);	-- Orgrimmar Sentinel
+i(245584, 1239204);	-- Stormwind Skyseeker
 i(198633, 387321);	-- Wooly White Rhino
 i(198629, 387323);	-- X-51 Nether-Rocket
 i(198628, 387311);	-- X-51 Nether-Rocket X-TREME
@@ -210,7 +236,6 @@ i(5874, 6896);		-- Black Ram
 i(1041, 578);		-- Black Wolf
 i(5875, 6897);		-- Blue Ram
 i(20221, 24576);	-- Chromatic Mount [Item: Foror's Fabled Steed]
-i(13325, 17458);	-- Fluorescent Green Mechanostrider
 i(12327, 16060);	-- Golden Sabercat
 i(1134, 459);		-- Gray Wolf
 i(8589, 10795);		-- Ivory Raptor
@@ -534,8 +559,12 @@ i(46755, 65641);	-- Great Golden Kodo [TAUREN]
 i(46745, 65637);	-- Great Red Elekk [NON-DRAENEI]
 i(46756, 65637);	-- Great Red Elekk [DRAENEI]
 i(45586, 63636);	-- Ironforge Ram
+-- #if ANYCLASSIC
+i(265787, 65917);	-- Magic Rooster Egg
+-- #else
 i(46778, 65917);	-- Magic Rooster Egg [BoP]
 i(49290, 65917);	-- Magic Rooster Egg [BoE]
+-- #endif
 i(47101, 66846);	-- Ochre Skeletal Warhorse
 i(49636, 69395);	-- Onyxian Drake
 i(45595, 63640);	-- Orgrimmar Wolf
@@ -2314,7 +2343,11 @@ i(246736, 1243598);	-- Ivory Grimlynx
 i(246594, 1243003);	-- Light-Forged Mechsuit
 i(257240, 1261391);	-- Relinquished Scarlet Charger
 i(224148, 451487);	-- Retrained Skyrazor
+-- #if ANYCLASSIC
+i(254736, 1285724);	-- Stormgilded Celestial (CN ONLY)
+-- #else
 i(254736, 1258574);	-- Stormgilded Celestial (CN ONLY)
+-- #endif
 --- NYI ---
 i(0, 1252141);		-- [DNT] Jellyfish
 i(0, 1238827);		-- Swift Spectral Dragonhawk

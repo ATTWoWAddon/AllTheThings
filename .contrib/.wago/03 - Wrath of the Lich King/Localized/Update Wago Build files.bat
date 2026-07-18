@@ -1,7 +1,7 @@
 @echo off
 
 @REM Download Wrath Classic Achievement database
-SET BUILD=3.4.4.60430
+SET BUILD=3.4.5.63697
 SET FILTER=
 call :downloadlocalized Achievement
 call :downloadlocalized AchievementCategory
