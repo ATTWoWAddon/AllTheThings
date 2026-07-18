@@ -20,6 +20,37 @@ local api = {};
 app.Modules.Contributor = api;
 -- Events - a collection of Game Events which should trigger additional logic
 api.Events = {}
+do
+	local frame = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
+	local events = api.Events
+	local function OnEvent_Debugging(self, e, ...)
+		app.PrintDebug(e,...);
+		events[e](...);
+		app.PrintDebugPrior(e);
+	end
+	local function OnEvent(self, e, ...) events[e](...) end
+	frame:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
+	frame:SetSize(1, 1);
+	frame:Show();
+	local function AssignOnEvent() frame:SetScript("OnEvent", app.DebuggingEvents and OnEvent_Debugging or OnEvent) end
+	AssignOnEvent()
+	app.AddEventHandler("OnToggle-DebugEvents", AssignOnEvent)
+	function api:RegisterFuncEvent(event, func)
+		-- app.PrintDebug("Contrib.Event.+",event,func)
+		frame:RegisterEvent(event)
+		if func then
+			self.Events[event] = func
+		end
+	end
+	function api:UnregisterEvent(event)
+		-- app.PrintDebug("Contrib.Event.-",event)
+		frame:UnregisterEvent(event)
+	end
+	-- Allows adding an Event handler function for in-game events when Contributor is enabled
+	function api:AddEventFunc(event, func)
+		self.Events[event] = func
+	end
+end
 local Reports = setmetatable({}, { __index = function(t,key)
 	local reportType = setmetatable({}, { __index = function(t,key)
 		local typeIDReport = {}
@@ -31,10 +62,6 @@ local Reports = setmetatable({}, { __index = function(t,key)
 	return reportType
 end})
 
--- Allows adding an Event handler function for in-game events when Contributor is enabled
-local function AddEventFunc(event, func)
-	api.Events[event] = func
-end
 
 local function GetReportPlayerLocation()
 	local mapID, px, py, fake = app.GetPlayerPosition()
@@ -3573,9 +3600,9 @@ local function OnQUEST_DETAIL(...)
 	end
 	-- app.PrintDebug("Contributor.OnQUEST_DETAIL.Done")
 end
-AddEventFunc("QUEST_DETAIL", OnQUEST_DETAIL)
-AddEventFunc("QUEST_PROGRESS", OnQUEST_DETAIL)
-AddEventFunc("QUEST_COMPLETE", OnQUEST_DETAIL)
+api:AddEventFunc("QUEST_DETAIL", OnQUEST_DETAIL)
+api:AddEventFunc("QUEST_PROGRESS", OnQUEST_DETAIL)
+api:AddEventFunc("QUEST_COMPLETE", OnQUEST_DETAIL)
 
 -- PLAYER_SOFT_INTERACT_CHANGED
 -- Whenever we can't find a ObjectID in ATT data, create a cached version of it so we can keep resolved data
@@ -3591,11 +3618,14 @@ local RegisterUNIT_SPELLCAST_SENT, UnregisterUNIT_SPELLCAST_SENT
 local function OnPLAYER_SOFT_INTERACT_CHANGED(previousGuid, newGuid)
 	-- app.PrintDebug("PLAYER_SOFT_INTERACT_CHANGED",previousGuid,newGuid)
 
+	-- close enough to an object to open, track potential looting via mouseclick/interact for a few seconds
+	RegisterUNIT_SPELLCAST_SENT(10)
+
 	-- are these secrets because blizzard is annoying?
 	if app.WOWAPI.issecretvalue(previousGuid) or app.WOWAPI.issecretvalue(newGuid) then
 		LastSoftInteract.GuidType = nil
 		LastSoftInteract.ID = nil
-		UnregisterUNIT_SPELLCAST_SENT()
+		-- UnregisterUNIT_SPELLCAST_SENT()
 		return
 	end
 
@@ -3603,7 +3633,7 @@ local function OnPLAYER_SOFT_INTERACT_CHANGED(previousGuid, newGuid)
 	if not newGuid or previousGuid ~= newGuid then
 		LastSoftInteract.GuidType = nil
 		LastSoftInteract.ID = nil
-		UnregisterUNIT_SPELLCAST_SENT()
+		-- UnregisterUNIT_SPELLCAST_SENT()
 		return
 	end
 
@@ -3616,9 +3646,6 @@ local function OnPLAYER_SOFT_INTERACT_CHANGED(previousGuid, newGuid)
 
 	-- only check object soft-interact (for now)
 	if guidtype ~= "GameObject" then return end
-
-	-- close enough to an object to open, track potential looting via mouseclick/interact for a few seconds
-	RegisterUNIT_SPELLCAST_SENT(10)
 
 	local objRef = SearchForObject("objectID", id, "field") or SearchForObject("objectID", id)
 	-- only check sourced objects
@@ -3654,31 +3681,18 @@ local function OnPLAYER_SOFT_INTERACT_CHANGED(previousGuid, newGuid)
 		Check_ingame(objRef)
 	end
 end
-AddEventFunc("PLAYER_SOFT_INTERACT_CHANGED", OnPLAYER_SOFT_INTERACT_CHANGED)
+api:AddEventFunc("PLAYER_SOFT_INTERACT_CHANGED", OnPLAYER_SOFT_INTERACT_CHANGED)
 
 -- UNIT_SPELLCAST_SENT
+local RegisterOnLOOT_READY
 -- Allows handling some special logic in special cases for special spell casts
 local SpellIDHandlers = setmetatable({
 	-- Opening (on Objects)
 	[6478] = function(source, dest)
 		if source ~= "player" then return end
 
-		-- Verify 'Opening' cast, report ObjectID if not Sourced
-		local id = LastSoftInteract.ID
-		if not id or IgnoredChecksByType.GameObject.coord(id) then return end
-
-		local objRef = SearchForObject("objectID", id, "field") or SearchForObject("objectID", id)
-		-- if it's Sourced, we've already checked it via PLAYER_SOFT_INTERACT_CHANGED
-		if objRef then return end
-
-		local tooltipName = dest or (GameTooltipTextLeft1 and GameTooltipTextLeft1:GetText())
-		objRef = UnknownObjectsCache[id]
-		-- report openable object
-		local reportData = BuildGenericReportData(objRef, id)
-		reportData.NotSourced = "Openable Object not Sourced!"
-		reportData.Name = tooltipName or "(No Tooltip Text Available)"
-		reportData.objectID = id
-		AddReportData(objRef.__type,objRef.keyval,reportData)
+		-- Wait for the LOOT_READY event
+		RegisterOnLOOT_READY()
 	end
 }, { __index = function(t, key)
 	if DebugPrinting then
@@ -3707,14 +3721,14 @@ end
 UnregisterUNIT_SPELLCAST_SENT = function()
 	if not RegisteredUNIT_SPELLCAST_SENT then return end
 	-- app.PrintDebug("Unregister.UNIT_SPELLCAST_SENT")
-	app:UnregisterEvent("UNIT_SPELLCAST_SENT")
+	api:UnregisterEvent("UNIT_SPELLCAST_SENT")
 	RegisteredUNIT_SPELLCAST_SENT = nil
 end
 RegisterUNIT_SPELLCAST_SENT = function(secTilRemove)
 	if RegisteredUNIT_SPELLCAST_SENT then return end
 	RegisteredUNIT_SPELLCAST_SENT = true
 	-- app.PrintDebug("Register.UNIT_SPELLCAST_SENT",secTilRemove)
-	app:RegisterFuncEvent("UNIT_SPELLCAST_SENT",OnUNIT_SPELLCAST_SENT)
+	api:RegisterFuncEvent("UNIT_SPELLCAST_SENT",OnUNIT_SPELLCAST_SENT)
 	app.CallbackHandlers.DelayedCallback(UnregisterUNIT_SPELLCAST_SENT, secTilRemove or 0.5)
 end
 
@@ -3732,7 +3746,133 @@ local function OnPLAYER_SOFT_TARGET_INTERACTION()
 	-- If the player attempts to interact, hook for spell cast start event
 	RegisterUNIT_SPELLCAST_SENT()
 end
-AddEventFunc("PLAYER_SOFT_TARGET_INTERACTION", OnPLAYER_SOFT_TARGET_INTERACTION)
+api:AddEventFunc("PLAYER_SOFT_TARGET_INTERACTION", OnPLAYER_SOFT_TARGET_INTERACTION)
+
+local OnLOOT_CLOSED
+local function OnLOOT_READY()
+	api:UnregisterEvent("LOOT_READY")
+	api:RegisterFuncEvent("LOOT_CLOSED",OnLOOT_CLOSED)
+
+	local loots = api.ParseLoot(DebugPrinting)
+	local id, objectName, lootslot, loot
+
+	for i=1,#loots do
+		lootslot = loots[i]
+		-- get the first (only) objectID in the loot info
+		if lootslot.objectID then
+			id = lootslot.objectID
+			objectName = lootslot.basename
+			break
+		end
+	end
+
+	if DebugPrinting then app.print("Contrib.Loot.Object:",id) end
+	-- Verify 'Opened Object', report ObjectID if not Sourced
+	if not id or IgnoredChecksByType.GameObject.coord(id) then return end
+
+	local objRef = SearchForObject("objectID", id, "field") or SearchForObject("objectID", id)
+	-- if it's Sourced, we've already checked it via PLAYER_SOFT_INTERACT_CHANGED
+	if objRef then return end
+
+	objRef = UnknownObjectsCache[id]
+	-- capture the set of all item/currency loots for report
+	local g
+	local lootitem, lootcurrency = {}, {}
+	for i=1,#loots do
+		lootslot = loots[i]
+		g = lootslot.g
+		for j=1,#g do
+			loot = g[j]
+			id = loot.itemID
+			if id then
+				lootitem[id] = ":"
+			end
+			id = loot.currencyID
+			if id then
+				lootcurrency[id] = ":"
+			end
+		end
+	end
+
+	-- report openable object
+	local reportData = BuildGenericReportData(objRef, id)
+	reportData.NotSourced = "Lootable Object not Sourced!"
+	reportData.TooltipName = objectName or "(No Tooltip Text Available)"
+	reportData.objectID = id
+	reportData.LootItems = app.StringifyTable(lootitem)
+	reportData.LootCurrencies = app.StringifyTable(lootcurrency)
+	AddReportData(objRef.__type,objRef.keyval,reportData)
+end
+OnLOOT_CLOSED = function()
+	api:UnregisterEvent("LOOT_CLOSED")
+end
+RegisterOnLOOT_READY = function()
+	api:RegisterFuncEvent("LOOT_READY",OnLOOT_READY)
+end
+api:AddEventFunc("LOOT_READY", OnLOOT_READY)
+
+-- Should be called when a LOOT_READY event is fired to pick up and translate the raw loot into usable simple tables
+api.ParseLoot = function(doDebugPrints)
+	local loot, source, kind, lootID, info, dropLink
+	local ot, zero, server_id, instance_id, zone_uid, id, spawn_uid;
+	local CleanLink = app.Modules.Item.CleanLink
+	local GetKeyField = app.Modules.Search.GetKeyField
+	local GetItemLinkByGUID = app.WOWAPI.GetItemLinkByGUID
+	local tonumber,select,GetLootSlotLink,GetLootSourceInfo
+		= tonumber,select,GetLootSlotLink,GetLootSourceInfo
+	local slots = GetNumLootItems();
+	local tooltipName = GameTooltipTextLeft1:GetText() or UNKNOWN
+	-- technically this can be wrong in aoe-loot situations if you loot a rare and it includes loot from
+	-- regular mobs, etc.
+	local classification = UnitClassification("target") or ""
+	local returnedLoot = {}
+	for i=1,slots do
+		loot = GetLootSlotLink(i);
+		if loot then
+			-- app.PrintDebug("Loot @",i,":",loot)
+			loot = CleanLink(loot)
+			kind, lootID = (":"):split(loot);
+			kind = GetKeyField(kind)
+			if lootID then lootID = tonumber(select(1, ("|["):split(lootID)) or lootID); end
+			-- app.PrintDebug("Loot @",i,kind,lootID)
+			if lootID and kind then
+				source = { GetLootSourceInfo(i) };
+				for j=1,#source,2 do
+					info = { key = kind, [kind] = lootID, rawlink = loot };
+					dropLink = CleanLink(source[j])
+					-- app.PrintDebug("droplink",dropLink)
+					ot, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(dropLink);
+					-- get Item container link
+					if not id then
+						dropLink = CleanLink(GetItemLinkByGUID(dropLink))
+						-- app.PrintDebug("item:droplink",dropLink)
+						ot, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(dropLink);
+					end
+					ot = GetKeyField(ot)
+					-- if doDebugPrints then app.print("Add",kind,"Loot",lootID,"from",ot,id) end
+					if ot == "objectID" then
+						info = { key = ot, [ot] = tonumber(id), g = { info }, __headerID = app.HeaderConstants.TREASURES};
+						info.basename = tooltipName
+						returnedLoot[#returnedLoot + 1] = info
+						if doDebugPrints then app.print("Loot: Object:",info.objectID,"|| Name:",info.basename,"||",kind,lootID) end
+					else
+						info = { key = ot, [ot] = tonumber(id), g = { info }};
+						if classification == "rare" or classification == "rareelite" then
+							info.__headerID = app.HeaderConstants.RARES
+						elseif classification == "worldboss" then
+							info.__headerID = app.HeaderConstants.WORLD_BOSSES
+						else
+							info.__headerID = app.HeaderConstants.DROPS
+						end
+						if doDebugPrints then app.print("Loot: NPC:",info.npcID,"|| Name:",app.NPCNameFromID[info.npcID],"||",kind,lootID) end
+						returnedLoot[#returnedLoot + 1] = info
+					end
+				end
+			end
+		end
+	end
+	return returnedLoot
+end
 
 app.AddEventHandler("OnReportReset", function()
 	wipe(Reports)
@@ -3750,7 +3890,7 @@ local function Contribute(contrib)
 		if contribModule.Events then
 			for event,func in pairs(contribModule.Events) do
 				-- app.PrintDebug("Contribute.RegisterFuncEvent",event)
-				app:RegisterFuncEvent(event,func)
+				api:RegisterFuncEvent(event,func)
 			end
 		end
 	elseif not api.IgnoreFirstReport then
@@ -3758,7 +3898,7 @@ local function Contribute(contrib)
 		if contribModule.Events then
 			for event,func in pairs(contribModule.Events) do
 				-- app.PrintDebug("Contribute.UnregisterEventClean",event)
-				app:UnregisterEventClean(event)
+				api:UnregisterEvent(event)
 			end
 		end
 	end
