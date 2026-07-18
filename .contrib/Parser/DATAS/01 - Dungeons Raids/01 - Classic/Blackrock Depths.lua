@@ -3305,7 +3305,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Speak to him until he passes out, a Mug will appear on the ground",
 					["timeline"] = { ADDED_2_4_3 },
 					["groups"] = {
-						i(38320),	-- Dire Brew
+						o(190394, {	-- Mug of Dire Brew
+							i(38320),	-- Dire Brew
+						}),
 					},
 				})),
 				e(381, {	-- Phalanx

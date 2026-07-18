@@ -152,7 +152,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					q(53079, {	-- Reinforcements
 						["sourceQuests"] = { 51771 },	-- War of Shadows
 						["provider"] = { "n", 138708 },	-- Garona Halforceen
-						["coord"] = { 58.4, 62.6, ZULDAZAR },
+						["coords"] = {
+							{ 51.7, 99.7, DAZARALOR },
+							{ 58.4, 62.6, ZULDAZAR },
+						},
 						["races"] = HORDE_ONLY,
 					}),
 					q(51803, {	-- The Kul Tiras Campaign

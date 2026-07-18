@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}, {	-- RENOWN 13 --
 							}, {	-- RENOWN 14 --
 								i(263492, {	-- Blitzcreek (PET!)
-									["cost"] = { { "c", VOIDLIGHT_MARL, 3000 } },
+									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
 								}),
 							}, {	-- RENOWN 15 --
 								i(266980, {	-- Pauldrons of the Darkened Collapsed Star

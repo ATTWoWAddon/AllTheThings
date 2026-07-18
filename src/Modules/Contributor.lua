@@ -326,6 +326,7 @@ local MapPrecisionOverrides = {
 	[2639] = 5,	-- Crypt of the Denied, The Coiled Isle
 	[2640] = 5,	-- Blistering Terrace, The Coiled Isle
 	[2644] = 5,	-- Crypt of the Disgraced, The Coiled Isle
+	[2649] = 2,	-- The Lycaneum
 }
 
 local function Check_coords(objRef, maxCoordDistance)
@@ -691,6 +692,7 @@ MobileDB.Creature = {
 	[133302] = true,	-- Wardruid Loti
 	[137220] = true,	-- Awakened Tidesage (Brother Pike)
 	[137871] = true,	-- Taelia
+	[140740] = true,	-- Magister Umbric
 	[141032] = true,	-- Flynn Fairwind
 	[141602] = true,	-- Thomas Zelling
 	[145005] = true,	-- Lor'themar Theron
@@ -992,6 +994,7 @@ MobileDB.GameObject = {
 	[189992] = true,	-- Ruby Acorn (q:12417, 12449)
 	[190169] = true,	-- Tiger Lily
 	[190283] = true,	-- Talonshrike's Egg
+	[190394] = true,	-- Mug of Dire Brew
 	[190541] = true,	-- Dead Thornwood (q:12599)
 	[190542] = true,	-- Dead Thornwood (q:12599)
 	[190543] = true,	-- Dead Thornwood (q:12599)
@@ -3400,6 +3403,9 @@ MobileDB.GameObject = {
 	[641533] = true,	-- Corrupted Lantern (q:92320)
 	[649481] = true,	-- Wood Debris (q:96111)
 	[650051] = true,	-- Faithbreaker Ger'lok's Ritual Chest [Broken Throne, Ritual Site]
+	[651112] = true,	-- Omnial Anomaly
+	[651341] = true,	-- Omnial Anomaly
+	[651342] = true,	-- Omnial Anomaly
 	[651783] = true,	-- Pulsing Void Magicule (q:96229) [Ritual Site: Naigtal]
 	[652051] = true,	-- Belo'vir's Arcane Vault (q:96231)
 	[653416] = true,	-- Cynosure of Twilight (q:96051)
