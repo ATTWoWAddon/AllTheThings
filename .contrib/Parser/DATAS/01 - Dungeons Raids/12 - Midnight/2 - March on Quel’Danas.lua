@@ -140,10 +140,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(BELOREN, {
-					ach(61381),	-- Eggsistential Crisis
+					ach(61381, {	-- Eggsistential Crisis
+						["providers"] = { "n", 255969 },	-- Sunwell Egg
+					}),
 				}),
 				BossOnly(LURA, {
-					ach(62406),	-- All the Things She Said
+					ach(62406, {	-- All the Things She Said
+						["providers"] = { "n", 261683 },	-- Void Torch
+					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
