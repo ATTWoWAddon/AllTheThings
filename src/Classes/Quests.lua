@@ -119,7 +119,7 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 		if QuestsRequested[questID] then return end
 
 		QuestsRequested[questID] = true;
-		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data/CB:",questObjectRef,...)
+		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data/CB:",type(questObjectRef) == "table" and "Data" or "CB",...)
 		if questObjectRef then
 			if type(questObjectRef) == "table" then
 				QuestsToPopulate[questID] = questObjectRef
@@ -2658,11 +2658,31 @@ local function TryPopulateQuestRewards(questObject)
 		app.DirectGroupUpdate(questObject);
 		return;
 	end
+	-- filling on this will happen immediately prior to filling with API quest rewards so that merging works properly
+	questObject.skipFull = true
 	-- if we've already requested data for this quest a certain number of times, then ignore making another request
 	if not HaveQuestRewardData(questID) and questObject.CanRetry then
 		RequestLoadQuestByID(questID, questObject);
 		return;
 	end
+
+	-- before adding the API items, fill the quest immediately
+	questObject.__FillImmediate = true
+	questObject.skipFull = nil
+	app.FillGroups(questObject)
+	-- prevent the group from getting filled again at a later point
+	questObject.skipFull = true
+
+	-- local debug = questID == 91093
+
+	-- if debug then app.PrintDebug("TPQR:QuestID",questID) app.PrintTable(questObject) app.PrintTable(questObject.g) app.PrintDebug("--------STARTPOPULATE----------") end
+
+	-- extract base set of quest groups and clean the object
+	local baseQuestGroups = questObject.g
+	questObject.g = nil
+	-- get API set of quest groups
+	-- merge ATT Item data into API Items
+	-- merge API set into quest groups conditionally
 
 	-- if not HaveQuestRewardData(questID) then
 	-- 	app.PrintDebug("TPQR",questID,"Data",HaveQuestData(questID),"RewardData",HaveQuestRewardData(questID),GetNumQuestLogRewards(questID),GetNumQuestLogRewardCurrencies(questID))
@@ -2672,7 +2692,7 @@ local function TryPopulateQuestRewards(questObject)
 	local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 	for j=1,numQuestRewards,1 do
 		local itemID = select(6, GetQuestLogRewardInfo(j, questID));
-		-- app.PrintDebug("TPQR:REWARDINFO",questID,j,HaveQuestRewardData(questID),GetQuestLogRewardInfo(j, questID),"=>",itemID)
+		-- if debug then app.PrintDebug("TPQR:REWARDINFO",questID,j,HaveQuestRewardData(questID),GetQuestLogRewardInfo(j, questID),"=>",itemID) end
 		if itemID then
 			---@diagnostic disable-next-line: inject-field
 			QuestHarvester.AllTheThingsProcessing = true;
@@ -2696,11 +2716,13 @@ local function TryPopulateQuestRewards(questObject)
 						local exactItemID = app.GetGroupItemIDWithModID(item);
 						local subItems = {};
 						local refinedMatches = app.GroupBestMatchingItems(search, exactItemID);
+						-- if debug then app.PrintDebug("Merge with DB Item",exactItemID) app.PrintTable(refinedMatches) end
 						if refinedMatches then
 							-- move from depth 3 to depth 1 to find the set of items which best matches for the root
 							for depth=3,1,-1 do
 								if refinedMatches[depth] then
 									for _,o in ipairs(refinedMatches[depth]) do
+										-- if debug then app.PrintDebug("Merge",app:SearchLink(item)) end
 										app.MergeProperties(item, o, true);
 										app.NestObjects(item, o.g);	-- no clone since item is cloned later
 									end
@@ -2708,6 +2730,7 @@ local function TryPopulateQuestRewards(questObject)
 							end
 							-- any matches with depth 0 will be nested
 							if refinedMatches[0] then
+								-- if debug then app.PrintDebug("SubItems",#refinedMatches[0]) end
 								app.ArrayAppend(subItems, refinedMatches[0]);	-- no clone since item is cloned later
 							end
 						end
@@ -2722,11 +2745,14 @@ local function TryPopulateQuestRewards(questObject)
 						item.skipFull = true
 					end
 					app.EnsureObject(item)
+					-- if debug then app.PrintDebug("Merged Item",item.itemID,app:SearchLink(item)) end
 					app.NestObject(questObject, item, true);
 				end
 			end
 		end
 	end
+
+	-- if debug then app.PrintTable(questObject) app.PrintTable(questObject.g) app.PrintDebug("---------POSTITEMS---------") end
 
 	-- Add info for currency rewards as containers for their respective collectibles
 	---@diagnostic disable-next-line: redundant-parameter
@@ -2771,15 +2797,16 @@ local function TryPopulateQuestRewards(questObject)
 		if questObject.g then
 			for _,item in ipairs(questObject.g) do
 				if item.itemID then
-					-- app.PrintDebug("apiItem",app:SearchLink(item))
+					-- if debug then app.PrintDebug("apiItem",app:SearchLink(item)) end
 					apiItems[item.itemID] = item;
 				end
 			end
 		end
 		local nonItemNested = {};
+		local datag
 		-- merge in any DB data without replacing existing data
 		for _,data in ipairs(cachedQuests) do
-			-- app.PrintDebug("Q=>WQ",data.g and #data.g,app:SearchLink(data))
+			-- if debug then app.PrintDebug("Q=>WQ",data.g and #data.g,app:SearchLink(data)) end
 			-- only merge into the quest object properties from an object in cache with this questID
 			if data.questID == questID then
 				app.MergeProperties(questObject, data, true);
@@ -2787,33 +2814,42 @@ local function TryPopulateQuestRewards(questObject)
 				-- ref: quest 49675/58703
 				if data.e then questObject.e = data.e; end
 				if data.u then questObject.u = data.u; end
-				-- merge in sourced things under this quest object
-				if data.g then
-					for _,o in ipairs(data.g) do
-						-- nest cached non-items
-						if not o.itemID then
-							-- app.PrintDebug("nested-nonItem",app:SearchLink(o))
-							nonItemNested[#nonItemNested + 1] = o
-						-- cached items need to merge with corresponding API item based on simple itemID
-						elseif apiItems[o.itemID] then
-							-- app.PrintDebug("nested-merged",app:SearchLink(o))
-							app.MergeProperties(apiItems[o.itemID], o, true);
-						--  if it is not a WQ or is a 'raid' (world boss)
-						elseif questObject.isRaid or not questObject.isWorldQuest then
-							-- otherwise just get nested
-							-- app.PrintDebug("nested-item",app:SearchLink(o))
-							nonItemNested[#nonItemNested + 1] = o
-						else
-							-- app.PrintDebug("basic-nested",app:SearchLink(o))
-							nonItemNested[#nonItemNested + 1] = o
-						end
-					end
+				datag = data.g
+				if datag and #datag > 0 then
+					-- append sourced things under this quest object
+					if not baseQuestGroups then baseQuestGroups = {} end
+					app.ArrayAppend(baseQuestGroups, datag)
 				end
 			-- otherwise if this is a non-quest object flagged with this questID so it should be added under the quest
 			elseif data.key ~= "questID" then
 				nonItemNested[#nonItemNested + 1] = data
 			end
 		end
+		-- Merge in all the ATT data for groups of this quest
+		local o
+		if baseQuestGroups then
+			for i=1,#baseQuestGroups do
+				o = baseQuestGroups[i]
+				-- nest cached non-items
+				if not o.itemID then
+					-- if debug then app.PrintDebug("nested-nonItem",app:SearchLink(o)) end
+					nonItemNested[#nonItemNested + 1] = o
+				-- cached items need to merge with corresponding API item based on simple itemID
+				elseif apiItems[o.itemID] then
+					-- if debug then app.PrintDebug("nested-merged",app:SearchLink(o)) end
+					app.MergeProperties(apiItems[o.itemID], o, true);
+				--  if it is not a WQ or is a 'raid' (world boss)
+				elseif questObject.isRaid or not questObject.isWorldQuest then
+					-- otherwise just get nested
+					-- if debug then app.PrintDebug("nested-item",app:SearchLink(o)) end
+					nonItemNested[#nonItemNested + 1] = o
+				else
+					-- if debug then app.PrintDebug("basic-nested",app:SearchLink(o)) end
+					nonItemNested[#nonItemNested + 1] = o
+				end
+			end
+		end
+
 		-- Everything retrieved from API should not be related to another sourceParent
 		-- i.e. Threads of Fate Quest rewards which show up later under regular World Quests
 		for _,item in pairs(apiItems) do
@@ -2822,6 +2858,8 @@ local function TryPopulateQuestRewards(questObject)
 		app.EnsureObject(nonItemNested)
 		app.NestObjects(questObject, nonItemNested, true);
 	end
+
+	-- if debug then app.PrintTable(questObject) app.PrintDebug("---------POSTMERGE---------") end
 
 	-- Special logic for Torn Invitation... maybe can clean up sometime
 	if questObject.g and #questObject.g > 0 then
@@ -2845,6 +2883,7 @@ local function TryPopulateQuestRewards(questObject)
 	-- if debug then
 	-- 	app.Debugging = nil
 	-- end
+	-- if debug then app.PrintTable(questObject) app.PrintDebug("--------FINAL----------") end
 end
 app.TryPopulateQuestRewards = TryPopulateQuestRewards;
 
