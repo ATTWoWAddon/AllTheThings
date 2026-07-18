@@ -164,7 +164,6 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["sourceQuests"] = {
 					92520, -- Wake of the Darkwell
 					92319, -- A Favor to Axe
-					92322, -- Timear Foresees a Proof of Demise!
 				},
 				["qg"] = 240265,	-- Chief Telemancer Oculeth
 				["coord"] = { 47.4, 69.6, MAP.MIDNIGHT.SILVERMOON_CITY },
