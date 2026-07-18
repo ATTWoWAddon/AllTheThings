@@ -500,7 +500,7 @@ app.AddEventHandler("OnLoad", function()
 		explorationID = false,
 	})
 	app.Settings.CreateInformationType("SourceLocations", {
-		priority = 2.7,
+		priority = 2.799,
 		text = "Source Locations",
 		HideCheckBox = true,
 		Process = function(t, reference, tooltipInfo)
@@ -850,7 +850,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 		end
 
 		-- app.PrintDebug(group.g and #group.g,"Merge total");
-		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,app:SearchLink(group.sourceParent));
+		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,app:SearchLink(group.sourceParent),options and options.SkipFill and "SKIPFILL" or "FILL");
 		-- app.PrintDebug("Group Type",group.__type)
 
 		-- Special cases
