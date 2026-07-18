@@ -3713,6 +3713,7 @@ end})
 SpellIDHandlers[3365] = SpellIDHandlers[6478]
 SpellIDHandlers[6247] = SpellIDHandlers[6478]
 SpellIDHandlers[6477] = SpellIDHandlers[6478]
+SpellIDHandlers[1275624] = SpellIDHandlers[6478]	-- Collecting
 
 local RegisteredUNIT_SPELLCAST_SENT
 local function OnUNIT_SPELLCAST_SENT(...)

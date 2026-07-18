@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			}),
 			o(572033, {	-- Evergreen Vine
 				["sourceQuest"] = 92323,	-- Where the Fire Once Burned
-				["questID"] = 92379,	-- ??
+				["maps"] = { FIRELANDS },
 				["groups"] = { i(250876) },	-- Evergreen Vine
 			}),
 			o(572036, {	-- Heavy Anchor
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["coord"] = { 39.8, 49.7, ARCANTINA },
 			}),
 			o(572451, {	-- Evergreen Vine
-				["questID"] = 94976,	-- ??
+				["questID"] = 92379,
 				["cost"] = { { "i", 250876, 1 } },	-- Evergreen Vine
 				["coord"] = { 37.2, 29.5, ARCANTINA },
 			}),
