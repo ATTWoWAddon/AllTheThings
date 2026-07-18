@@ -621,7 +621,8 @@ local function FillGroups(group, options)
 	if skipFull then return end
 
 	-- Check if this group is inside a Window or not
-	local groupWindow = app.GetRelativeRawWithField(group, "window");
+	local groupWindow = not group.__FillImmediate and app.GetRelativeRawWithField(group, "window");
+	group.__FillImmediate = nil
 	local fillers = options and options.Fillers
 	if not fillers then
 		local fillScope = groupWindow and (groupWindow.Suffix == "MiniList" and "LIST" or "POPOUT") or "TOOLTIP"
