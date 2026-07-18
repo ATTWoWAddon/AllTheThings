@@ -1,0 +1,88 @@
+Name_lang,ID,Parent,Ui_order
+Statistics,1,-1,1
+"Player vs. Player",21,1,10
+"Feats of Strength",81,-1,11
+General,92,-1,2
+"Player vs. Player",95,-1,6
+Quests,96,-1,4
+Exploration,97,-1,5
+Deaths,122,1,4
+Arenas,123,122,1
+Battlegrounds,124,122,2
+Dungeons,125,122,3
+World,126,122,4
+Resurrection,127,122,5
+Kills,128,1,3
+Character,130,1,1
+Social,131,1,9
+Skills,132,1,7
+Quests,133,1,5
+Travel,134,1,8
+Creatures,135,128,1
+"Honorable Kills",136,128,2
+"Killing Blows",137,128,3
+Wealth,140,130,1
+Combat,141,1,2
+Consumables,145,130,2
+Reputation,147,130,3
+"Rated Arenas",152,21,1
+Battlegrounds,153,21,2
+World,154,21,3
+"World Events",155,-1,10
+"Winter Veil",156,155,9
+"Hallow's End",158,155,7
+Noblegarden,159,155,3
+"Lunar Festival",160,155,1
+Midsummer,161,155,5
+Brewfest,162,155,6
+"Children's Week",163,155,4
+Arena,165,95,1
+"Dungeons & Raids",168,-1,7
+Professions,169,-1,8
+Cooking,170,169,1
+Fishing,171,169,2
+"First Aid",172,169,3
+Professions,173,132,2
+"Secondary Skills",178,132,1
+"Love is in the Air",187,155,2
+Gear,191,130,4
+Reputation,201,-1,9
+"Eastern Kingdoms",14777,97,1
+Kalimdor,14778,97,2
+Outland,14779,97,3
+Northrend,14780,97,4
+"Alterac Valley",14801,95,2
+"Arathi Basin",14802,95,3
+"Eye of the Storm",14803,95,4
+"Warsong Gulch",14804,95,5
+"The Burning Crusade",14805,168,2
+"Lich King Dungeon",14806,168,3
+"Dungeons & Raids",14807,1,6
+Classic,14808,168,1
+Classic,14821,14807,1
+"The Burning Crusade",14822,14807,2
+"Wrath of the Lich King",14823,14807,3
+Classic,14861,96,1
+"The Burning Crusade",14862,96,2
+"Wrath of the Lich King",14863,96,3
+Classic,14864,201,1
+"The Burning Crusade",14865,201,2
+"Wrath of the Lich King",14866,201,3
+"Strand of the Ancients",14881,95,6
+Wintergrasp,14901,95,7
+"Lich King Heroic",14921,168,4
+"Lich King 10-Player Raid",14922,168,5
+"Lich King 25-Player Raid",14923,168,6
+"Argent Tournament",14941,155,10
+"Secrets of Ulduar 10-Player Raid",14961,168,7
+"Secrets of Ulduar 25-Player Raid",14962,168,8
+"Secrets of Ulduar",14963,14807,4
+"Pilgrim's Bounty",14981,155,8
+"Call of the Crusade 10-Player Raid",15001,168,9
+"Call of the Crusade 25-Player Raid",15002,168,10
+"Isle of Conquest",15003,95,8
+"Call of the Crusade",15021,14807,5
+"Fall of the Lich King 10-Player Raid",15041,168,11
+"Fall of the Lich King 25-Player Raid",15042,168,12
+"Fall of the Lich King",15062,14807,6
+BCC,15452,-1,3
