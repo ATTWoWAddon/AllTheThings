@@ -24,12 +24,13 @@ local function OnEvent_Debugging(self, e, ...)
 	app.PrintDebugPrior(e);
 end
 local function OnEvent(self, e, ...) events[e](...) end
-frame:SetScript("OnEvent", app.DebuggingEvents and OnEvent_Debugging or OnEvent);
 frame:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 frame:SetSize(1, 1);
 frame:Show();
 app.frame = frame;
 app.events = events;
+app.events.__ToggleOnEventFunc = function() frame:SetScript("OnEvent", app.DebuggingEvents and OnEvent_Debugging or OnEvent) end
+app.events.__ToggleOnEventFunc()
 app.RegisterEvent = function(self, ...)
 	frame:RegisterEvent(...);
 end
@@ -54,23 +55,6 @@ app.SetScript = function(self, ...)
 		end);
 	else
 		frame:SetScript(scriptName, nil);
-	end
-end
-local ForceDebugPrint
-app.DebugEvents = function()
-	app.DebuggingEvents = not app.DebuggingEvents
-	frame:SetScript("OnEvent", app.DebuggingEvents and OnEvent_Debugging or OnEvent);
-	-- enable/disable Debugging for prints if not already enabled
-	if app.DebuggingEvents then
-		if not app.Debugging then
-			ForceDebugPrint = true
-			app.Debugging = true
-		end
-	else
-		if ForceDebugPrint and app.Debugging then
-			ForceDebugPrint = nil
-			app.Debugging = nil
-		end
 	end
 end
 

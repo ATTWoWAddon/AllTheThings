@@ -204,7 +204,7 @@ end, {
 -- Allows a user to use /att debug-events
 -- to enable Debug Printing of Event messages
 app.ChatCommands.Add("debug-events", function(args)
-	app.DebugEvents()
+	app.HandleEvent("OnToggle-DebugEvents")
 	app.print("Debug Events:",app.DebuggingEvents and "ACTIVE" or "OFF")
 	-- debug prints may/not be toggled due to this, so print status anyway
 	app.print("Debug Printing:",app.Debugging and "ACTIVE" or "OFF")
@@ -213,6 +213,23 @@ end, {
 	"Usage : /att debug-events",
 	"Allows toggling the debug printing and monitoring of all game events that ATT handles.",
 })
+local ForceDebugPrint
+app.AddEventHandler("OnToggle-DebugEvents", function()
+	app.DebuggingEvents = not app.DebuggingEvents
+	app.events.__ToggleOnEventFunc()
+	-- enable/disable Debugging for prints if not already enabled
+	if app.DebuggingEvents then
+		if not app.Debugging then
+			ForceDebugPrint = true
+			app.Debugging = true
+		end
+	else
+		if ForceDebugPrint and app.Debugging then
+			ForceDebugPrint = nil
+			app.Debugging = nil
+		end
+	end
+end, true)
 
 -- Allows a user to open a popout window for their target via /att [t|target]
 app.ChatCommands.Add({"t", "target"}, function(args)
