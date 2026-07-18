@@ -78,11 +78,6 @@ i(232614, 471440);	-- Skybound Spectral Tiger		(CN Only)
 -- #else
 i(0, 471440);		-- Skybound Spectral Tiger		(CN Only)
 -- #endif
--- #if AFTER 5.5.2
-i(226805, 459784);	-- Golden Ashes of Al'ar		(CN Only Classic Version)
--- #else
-i(0, 459784);		-- Golden Ashes of Al'ar		(CN Only Classic Version)
--- #endif
 
 -- Cata Classic --
 i(0, 463045);		-- Lava Drake
