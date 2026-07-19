@@ -117,8 +117,10 @@ root(ROOTS.Holidays,
 				}),
 			}),
 			n(REWARDS, {
-				currency(ILLUSIONARY_COIN),
-				i(268122),	-- Dispelled Coins
+				o(621494, {	-- Prize Chest
+					currency(ILLUSIONARY_COIN),
+					i(268122),	-- Dispelled Coins
+				}),
 			}),
 			n(VENDORS, {
 				n(264056, {	-- Disguised Decor Duel Vendor <Illusionary Coin Trader>
