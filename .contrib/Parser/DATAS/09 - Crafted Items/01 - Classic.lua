@@ -3393,7 +3393,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				o(2044, {	-- Dragon's Teeth [CATA+] / Wintersbite
 					-- #if AFTER CATA
-					["coord"] = { 33.5,52.7, BADLANDS },	-- Scar of the Worldbreaker
+					["coord"] = { 33.5, 52.7, BADLANDS },	-- Scar of the Worldbreaker
 					-- #else
 					["maps"] = { ALTERAC_MOUNTAINS },
 					-- #endif
@@ -3959,23 +3959,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(8839, {	-- Blindweed
-					["_allowObjectProvider"] = true,
-					-- #if AFTER CATA
-					["coords"] = {
-						{ 75.3, 46.2, FERALAS },	-- Wildwind Lake
-						{ 72.1, 52.85, FERALAS },	-- Lower Wilds
-						{ 64.9, 58.1, FERALAS },	-- Darkmist Ruins
-						{ 62.9, 51.5, FERALAS },	-- Verdantis River
-						{ 49.35, 23.2, FERALAS },	-- The Twin Colossals
-						{ 46.65, 18.9, FERALAS },	-- The Twin Colossals
-						{ 48.05, 13.3, FERALAS },	-- Southwestern Jademir Lake
-						{ 52.8, 13.9, FERALAS },	-- Southeastern Jademir Lake
-						{ 53.5, 7.5, FERALAS },	-- Northeastern Jademir Lake
-						{ 49.2, 5.9, FERALAS },	-- Northwestern Jademir Lake
+					["maps_disp"] = {
+						-- #if AFTER CATA
+						FERALAS,
+						-- #else
+						SWAMP_OF_SORROWS,
+						-- #endif
 					},
-					-- #else
-					["maps_disp"] = { SWAMP_OF_SORROWS },
-					-- #endif
 					["provider"] = { "o", 142143 },	-- Blindweed
 				}),
 				i(108336, {	-- Blindweed Stem
@@ -4067,12 +4057,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(3819, {	-- Dragon's Teeth [CATA+] / Wintersbite
-					-- #if AFTER CATA
-					["_allowObjectProvider"] = true,
-					["coord"] = { 33.5,52.7, BADLANDS },	-- Scar of the Worldbreaker
-					-- #else
-					["maps_disp"] = { ALTERAC_MOUNTAINS },
-					-- #endif
+					["maps_disp"] = {
+						-- #if AFTER CATA
+						BADLANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						-- #endif
+					},
 					["provider"] = { "o", 2044 },	-- Dragon's Teeth [CATA+] / Wintersbite
 				}),
 				i(108329, {	-- Dragon's Teeth Stem
@@ -4190,22 +4181,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(8845, {	-- Ghost Mushroom
-					-- #if ANYCLASSIC
-					["_allowObjectProvider"] = true,
-					["coords"] = {
+					["maps_disp"] = {
 						-- #if AFTER CATA
-						{ 64.3, 16.3, UNGORO_CRATER },	-- Fungal Rock
+						UNGORO_CRATER,	-- Fungal Rock
 						-- #else
-						{ 58.0, 41.2, THE_HINTERLANDS },
-						{ 55.8, 68.1, THE_HINTERLANDS },
-						{ 57.0, 81.0, THE_HINTERLANDS },
+						THE_HINTERLANDS,
 						-- #endif
 						-- #if AFTER TBC
-						{ 74.4, 92.2, ZANGARMARSH },	-- Funggor Cavern
-						{ 17.25, 9.2, ZANGARMARSH },	-- Ango'rosh Stronghold cave
+						ZANGARMARSH,	-- Ango'rosh Stronghold cave
 						-- #endif
 					},
-					-- #endif
 					["provider"] = { "o", 142144 },	-- Ghost Mushroom
 				}),
 				i(108337, {	-- Ghost Mushroom Cap
@@ -4272,16 +4257,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(3369, {	-- Grave Moss
-					-- #if ANYCLASSIC
-					["_allowObjectProvider"] = true,
-					["coords"] = {
-						{ 20.0, 40.0, DUSKWOOD },	-- Raven Hill Cemetery
+					["maps_disp"] = {
 						-- #if BEFORE CATA
-						{ 50.0, 58.0, DESOLACE },
-						{ 80.0, 71.0, DUSKWOOD },
+						DESOLACE,
 						-- #endif
+						DUSKWOOD,
 					},
-					-- #endif
 					["provider"] = { "o", 1628 },	-- Grave Moss
 				}),
 				i(108327, {	-- Grave Moss Leaf
@@ -4292,15 +4273,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(8846, {	-- Gromsblood
-					-- #if ANYCLASSIC
-					["_allowObjectProvider"] = true,
-					["coords"] = {
-						{ 84.1, 71.65, ASHENVALE },	-- Felfire Hill
-						{ 53.5, 46.5, BLASTED_LANDS },
-						{ 50.0, 80.0, DESOLACE },
+					["maps_disp"] = {
+						ASHENVALE,
+						BLASTED_LANDS,
+						DESOLACE,
+						-- #if AFTER CATA
+						FELWOOD,
+						-- #endif
 					},
-					-- #endif
-					["maps_disp"] = { FELWOOD },
 					["providers"] = {
 						{ "o", 142145 },	-- Gromsblood
 						-- #if BEFORE CATA
@@ -4522,25 +4502,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(8831, {	-- Purple Lotus
-					["_allowObjectProvider"] = true,
-					-- #if AFTER CATA
-					["coords"] = {
-						{ 49.35, 30.85, FELWOOD },	-- Irontree Woods ruins
-						{ 42.2, 36.1, FELWOOD },	-- Shatter Scale Vale northern ruins
-						{ 39.45, 45.1, FELWOOD },	-- Shatter Scale Vale southern ruins
-						{ 38.6, 67.5, FELWOOD },	-- Ruins of Constellas
-						{ 56.95, 85.55, FELWOOD },	-- Morlos'Aran
-					},
-					-- #else
 					["maps_disp"] = {
+						-- #if AFTER CATA
+						FELWOOD,
+						-- #else
 						AZSHARA,
 						FERALAS,
 						STRANGLETHORN_VALE,
 						TANARIS,
 						THE_HINTERLANDS,
 						ZULGURUB,
+						-- #endif
 					},
-					-- #endif
 					["providers"] = {
 						{ "o", 142140 },	-- Purple Lotus
 						-- #if BEFORE CATA
