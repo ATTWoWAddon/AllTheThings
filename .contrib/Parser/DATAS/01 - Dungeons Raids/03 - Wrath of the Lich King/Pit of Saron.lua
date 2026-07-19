@@ -2,6 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+-- TODO with InstanceHelper
+-- InstanceHelper.BossObjects = {
+-- 	[MPLUS] = { 574411 },	-- Challenger's Cache
+-- }
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { ADDED_3_3_0 } }, {
 	inst(278, {	-- Pit of Saron
 		["mapID"] = PIT_OF_SARON,

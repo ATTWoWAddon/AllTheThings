@@ -256,6 +256,10 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
+InstanceHelper.BossObjects = {
+	[KYVEZA] = { 454188 },	-- Spoils of K'aresh
+}
+
 InstanceHelper.UpgradeMapping = {
 	-- #IF AFTER 11.1
 	[DIFFICULTY.RAID.LFR] = 0,

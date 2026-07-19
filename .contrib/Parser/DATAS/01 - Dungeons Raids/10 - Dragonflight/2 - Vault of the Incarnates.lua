@@ -159,6 +159,10 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
+InstanceHelper.BossObjects = {
+	[RASZAGETH] = { 378046 },	-- Stormforged Treasure Trove
+}
+
 ------ Difficulty To BonusID for those Tiers... ------
 -- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
 -- Blizzard seems to have actually fixed needing these...
