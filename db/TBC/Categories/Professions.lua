@@ -12,8 +12,7 @@ ach(116)}),
 x(2,{awp=20001,g={
 ach(733,{u=17})}})}),
 prof(171,{
-x(1,{requireSkill=171,g={
-h(-45,{requireSkill=171})}}),
+x(1,{requireSkill=171}),
 x(2,{awp=20005,requireSkill=171,g={
 q(10906,{altQuests={10905,10907},coords={
 [1944]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,lvl=68,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300}),
@@ -227,15 +226,13 @@ q(5284,{altQuests={5283,5301,5302},coords={
 q(5302,{altQuests={5283,5284,5301},coords={
 [1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003})}})}})}),
 prof(185,{
-h(-12,{requireSkill=185}),
 x(1,{requireSkill=185,g={
 ach(123,{requireSkill=185}),
 ach(122,{requireSkill=185}),
 ach(121,{requireSkill=185})}}),
 x(2,{awp=20001,requireSkill=185,g={
 ach(124,{requireSkill=185,u=17})}})}),
-prof(333,{
-h(-12,{requireSkill=333})}),
+prof(333),
 prof(202,{
 x(1,{requireSkill=202,g={
 h(-47,{requireSkill=202,g={

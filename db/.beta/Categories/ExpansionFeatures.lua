@@ -3164,7 +3164,7 @@ i(102457,{b=1,f=55,sourceAchievements={8325},spellID=146428,u=2})}}),
 q(33105,{awp=50400,coords={
 [390]={{83.2,29.6}}},lvl=35,maps={557,558,559,560,561,562,563,564,565,566,567,568,569,570},qgs={72723},sourceQuests={33104},u=2,g={
 ach(8325,{u=2}),
-title(306,{u=2})}}),
+title(306,{awp=60002})}}),
 s(54619,102248,{awp=50400,b=1,cost={{"i",102457,1},{"i",98148,1}},f=3,lvl=35,spellID=146195,u=38}),
 s(54620,102249,{awp=50400,b=1,cost={{"i",102457,1},{"i",98147,1}},f=3,lvl=35,spellID=146195,u=38}),
 s(54618,102247,{awp=50400,b=1,cost={{"i",102457,1},{"i",98149,1}},f=3,lvl=35,spellID=146199,u=38}),
@@ -6341,12 +6341,16 @@ i(114633,{b=1,f=55,spellID=168207})})}),
 h(-58,{
 n(88607,{r=2,g={
 i(117438,{b=1,f=53,lvl=35,spellID=172775}),
+i(109574,{f=55,spellID=156756}),
 i(117403,{b=1,f=53,lvl=35,spellID=172693}),
-i(117402,{b=1,f=53,lvl=35,spellID=172691})}}),
+i(117402,{b=1,f=53,lvl=35,spellID=172691}),
+i(109644,{b=1,f=55,spellID=157066})}}),
 n(88610,{r=1,g={
 i(117438,{b=1,f=53,lvl=35,spellID=172775}),
+i(109574,{f=55,spellID=156756}),
 i(117403,{b=1,f=53,lvl=35,spellID=172693}),
-i(117402,{b=1,f=53,lvl=35,spellID=172691})}}),
+i(117402,{b=1,f=53,lvl=35,spellID=172691}),
+i(109644,{b=1,f=55,spellID=157066})}}),
 n(79826,{r=1,sym={{"sub","common_vendor",87552}}}),
 n(77365,{r=2,sym={{"sub","common_vendor",87065}}})})}),
 gb(135,{requireSkill=356,g={
@@ -11026,7 +11030,6 @@ s(66660,118771,{b=1,f=3,lvl=35})}})}),
 h(-63,{
 p(1563,{description="Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",itemID=118675,npcID=7546,spellID=10699})})}})}),
 x(7,{
-h(-12),
 h(-214,{awp=70003,description="\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",g={
 cl(1,{
 ah(128910,{type="i",g={
@@ -20695,7 +20698,8 @@ q(51771,{coords={
 [862]={{58.4,62.6}},
 [1165]={{51.7,99.6}}},lvl=35,qgs={138708},r=1,sourceQuests={51770}}),
 q(53079,{coords={
-[862]={{58.4,62.6}}},lvl=35,qgs={138708},r=1,sourceQuests={51771}}),
+[862]={{58.4,62.6}},
+[1165]={{51.7,99.7}}},lvl=35,qgs={138708},r=1,sourceQuests={51771}}),
 q(51803,{coords={
 [862]={{58.4,62.6}}},lvl=35,qgs={135691},r=1}),
 q(53050,{description="Automatically starts when you finish your first Foothold in Kul Tiras.",isBreadcrumb=1,lvl=35,r=1}),
@@ -23642,19 +23646,19 @@ q(58636,{coords={
 q(58638,{coords={
 [1527]={{54.9,32.9}}},lvl=50,qgs={155102},sourceQuests={58636}}),
 q(58639,{coords={
-[1527]={{68.9,57.9}}},lvl=50,qgs={155102},sourceQuests={58638},g={
+[1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},sourceQuests={58638},g={
 i(174450)}}),
 q(58646,{coords={
-[1527]={{68.9,57.9}}},lvl=50,qgs={155102},sourceQuests={58638}}),
+[1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},sourceQuests={58638}}),
 q(58640,{coords={
-[1527]={{68.9,57.9}}},lvl=50,qgs={155102},sourceQuests={58639,58646}}),
+[1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},sourceQuests={58639,58646}}),
 q(58641,{coords={
-[1527]={{72.9,48.4}}},lvl=50,qgs={155102},sourceQuests={58640},g={
+[1527]={{72.9,48.4}}},lvl=50,qgs={155102,161938},sourceQuests={58640},g={
 i(174451)}}),
 q(58642,{coords={
-[1527]={{72.9,48.4}}},lvl=50,qgs={155102},sourceQuests={58641}}),
+[1527]={{72.9,48.4}}},lvl=50,qgs={155102,161938},sourceQuests={58641}}),
 q(58643,{coords={
-[1527]={{72.9,48.4}}},lvl=50,qgs={155102},sourceQuests={58642}}),
+[1527]={{72.9,48.4}}},lvl=50,qgs={155102,161938},sourceQuests={58642}}),
 q(58645,{coords={
 [1527]={{71.6,52}}},lvl=50,qgs={161031},sourceQuests={58643}}),
 q(58287,{coords={
@@ -24325,7 +24329,8 @@ q(56574,{crs={160810,160825,160826,160867,160868,160872,160874,160922,160930},de
 q(56575,{coords={
 [1530]={{13.9,77.2}}},lvl=50,qgs={155487},sourceQuests={56574}}),
 q(56647,{coords={
-[422]={{12.2,95.3}}},lvl=50,qgs={155487},sourceQuests={56645}}),
+[422]={{12.2,95.3}},
+[1530]={{11.8,93.8}}},lvl=50,qgs={155487},sourceQuests={56645}}),
 q(58760,{coords={
 [1530]={{43.8,71.8}}},isDaily=1,lvl=50,qgs={154677},sourceQuests={56771},g={
 i(174762)}}),
@@ -36423,7 +36428,6 @@ ach(17830,{rwp=110002,u=2,g={
 i(204195,{awp=100100,b=1,rwp=100200,u=2}),
 i(210770,{awp=100200,b=1,lvl=70,rwp=100206,spellID=426966,u=2}),
 i(211952,{awp=100206,b=1,lvl=70,spellID=433790,u=2})}})}}),
-h(-45,{awp=100007}),
 h(-187,{awp=100107,g={
 h(-45,{
 q(77423,{coords={

@@ -514,7 +514,7 @@ ach(231,{awp=30002,pvp=1,g={
 de(3884,{awp=110207,itemID=247744,pvp=1,spellID=1245229})}}),
 ach(11691,{awp=70003,pvp=1,rwp=80001,u=2})}}),
 x(1,{description="In order to collect these, you need to have the original title associated with the gear.",pvp=1,g={
-h(-298,{awp=11101,pvp=1,rwp=20001,u=2,g={
+h(-298,{awp=10400,pvp=1,rwp=20001,u=2,g={
 pvprank(1,{pvp=1,u=2}),
 pvprank(2,{pvp=1,u=2}),
 pvprank(3,{pvp=1,u=2}),
@@ -529,7 +529,7 @@ pvprank(11,{pvp=1,u=2}),
 pvprank(12,{pvp=1,u=2}),
 pvprank(13,{pvp=1,u=2}),
 pvprank(14,{pvp=1,u=2})}}),
-h(-210,{awp=11101,pvp=1,r=2,rwp=20001,sharedDescription="This item can be purchased, but without the original PvP title, it cannot be used for transmogrification and may not grant collection credit.",u=2,g={
+h(-210,{awp=10400,pvp=1,r=2,rwp=20001,sharedDescription="This item can be purchased, but without the original PvP title, it cannot be used for transmogrification and may not grant collection credit.",u=2,g={
 h(-101,{pvp=1,u=2,g={
 s(7501,18825,{b=1,cost={{"i",137642,2}},f=8,lvl=25,pvp=1,r=2,spellID=13959,u=2}),
 s(7525,18867,{b=1,cost={{"i",137642,5}},f=24,lvl=25,pvp=1,r=2,u=2}),
@@ -857,7 +857,7 @@ i(18849,{b=1,c={4},f=53,pvp=1,spellID=42292,u=2}),
 i(18845,{b=1,c={7},f=53,pvp=1,spellID=42292,u=2}),
 i(18852,{b=1,c={9},f=53,pvp=1,spellID=42292,u=2}),
 i(18834,{b=1,c={1},f=53,pvp=1,spellID=42292,u=2})}}),
-h(-45,{pvp=1,g={
+h(-45,{awp=10800,pvp=1,g={
 q(8371,{coords={
 [84]={{79.4,18}},
 [87]={{69.8,90}},

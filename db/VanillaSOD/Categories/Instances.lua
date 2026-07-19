@@ -2055,9 +2055,7 @@ i(19376,{b=1,f=52,lvl=60,q=4,u=2}),
 i(19382,{b=1,f=52,lvl=60,q=4,u=2}),
 i(19379,{b=1,f=53,lvl=60,q=4,u=2}),
 i(17964,{q=2,u=2}),
-i(17963,{q=2,u=2}),
-i(17969,{q=2,u=2}),
-i(17965,{q=2,u=2})}})}}),
+i(17969,{q=2,u=2})}})}}),
 d(201,{awp=11504,u=1609,g={
 h(-45,{u=1609,g={
 cl(11,{u=1609}),
@@ -6073,7 +6071,6 @@ mnt(1220566,{b=1,itemID=236663,lvl=60,q=4,u=1611}),
 mnt(1220567,{b=1,itemID=236664,lvl=60,q=4,u=1611}),
 mnt(1220568,{b=1,itemID=236665,lvl=60,q=4,u=1611})}})}})}})}}),
 inst(2856,{awp=11507,isRaid=1,lvl=60,u=1612,["zone-text-areaID"]=16236,g={
-h(-45,{u=1612}),
 d(201,{u=1612,g={
 ah(239301,{c={1,2,3},isRaid=1,type="i",u=1612,g={
 ah(239196,{type="i",u=1612,g={
@@ -7749,7 +7746,7 @@ i(18779,{lvl=50,q=3,rwp=40001}),
 i(12848,{b=1,description="Found on the rack behind Anvilcrack in Upper Blackrock Spire.",providers={{"o",175970}},q=1,rwp=40003}),
 r(16990,{itemID=12834,learnedAt=300,q=3,requireSkill=17039}),
 r(461735,{awp=11503,itemID=228312,learnedAt=320,q=4,requireSkill=9788,u=1608}),
-r(16746,{itemID=12728,learnedAt=300,q=4,requireSkill=9788}),
+r(16746,{crs={10162,11583},itemID=12728,learnedAt=300,q=4,requireSkill=9788}),
 r(16993,{itemID=12837,learnedAt=300,q=3,requireSkill=17040}),
 s(163423,18048,{b=1,f=23,lvl=55,q=3}),
 s(224715,228672,{awp=11503,b=1,f=7,lvl=58,q=3,u=1608}),
@@ -7925,7 +7922,7 @@ ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1
 ach(644,{maps={235,236,237,238,239},u=1608})}}),
 h(-31,{u=1608,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000);end	end,rwp=40003,u=1608,g={
-crit(8825,{achID=2336,id=1,u=1609})}}),
+crit(8825,{achID=2336,id=5,u=1609})}}),
 faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000);end	end,u=1608})}}),
 h(-45,{u=1608,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1608}),
@@ -8135,7 +8132,6 @@ h(-356,{coords={
 [1444]={{62.48,24.48}}},cost={{"i",18249,1}},mapID=235,u=1608,g={
 h(-63,{u=1608,g={
 i(18250,{awp=100105,b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},description="NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",q=2,rwp=40003,u=1608})}}),
-h(-45,{u=1608}),
 h(-19,{crs={14321,14323,14326},description="The following items can drop from any of the guards.",u=1608,g={
 s(163555,18462,{b=1,f=34,lvl=55,q=2,u=1608}),
 s(163556,18463,{b=1,f=25,lvl=55,q=2,u=1608}),
@@ -11291,6 +11287,5 @@ i(8707,{q=1}),
 s(219950,223527,{b=1,f=20,lvl=42,q=3,u=1607}),
 s(219951,223528,{b=1,f=6,lvl=43,q=3,u=1607}),
 s(159379,9467,{b=1,f=20,lvl=42,q=2,rwp=11502,u=2}),
-s(159380,9469,{b=1,f=6,lvl=43,q=3,rwp=11502,u=2})}})}}),
-h(-61,{u=1608})})}});
+s(159380,9469,{b=1,f=6,lvl=43,q=3,rwp=11502,u=2})}})}})})}});
 end);

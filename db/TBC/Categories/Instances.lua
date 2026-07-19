@@ -1096,9 +1096,7 @@ i(19376,{b=1,f=52,lvl=60,q=4,u=13}),
 i(19382,{b=1,f=52,lvl=60,q=4,u=13}),
 i(19379,{b=1,f=53,lvl=60,q=4,u=13}),
 i(17964,{q=2,u=13}),
-i(17963,{q=2,u=13}),
-i(17969,{q=2,u=13}),
-i(17965,{q=2,u=13})}})}}),
+i(17969,{q=2,u=13})}})}}),
 inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,mapID=337,maps={233},rwp=40003,savedInstanceID=309,u=14,["zone-text-areaID"]=19,g={
 h(-12,{u=14,g={
 ach(957,{maps={1434},minReputation={270,42000},u=14})}}),
@@ -3233,7 +3231,8 @@ r(23078,{itemID=18653,learnedAt=265,q=2,requireSkill=20222}),
 s(125144,12791,{b=1,f=20,lvl=50,q=3}),
 s(125146,12793,{b=1,f=5,lvl=50,q=3})}}),
 n(28067,{awp=20403,description="Speak to him until he passes out, a Mug will appear on the ground",u=20,g={
-i(38320,{b=1,f=55,q=1,u=20})}}),
+o(190394,{u=20,g={
+i(38320,{b=1,f=55,q=1,u=20})}})}}),
 e(381,{description="Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",npcID=9502,g={
 s(124423,11744,{b=1,f=34,lvl=51,q=3}),
 s(124422,11743,{awp=100107,b=1,description="This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",f=34,isBounty=1,lvl=50,q=3,rwp=20001,u=2}),
@@ -3665,7 +3664,7 @@ n(10899,{
 i(18779,{lvl=50,q=3,rwp=40001}),
 i(12848,{b=1,description="Found on the rack behind Anvilcrack in Upper Blackrock Spire.",providers={{"o",175970}},q=1,rwp=40003}),
 r(16990,{itemID=12834,learnedAt=300,q=3,requireSkill=164}),
-r(16746,{itemID=12728,learnedAt=300,q=4,requireSkill=164}),
+r(16746,{crs={10162,11583},itemID=12728,learnedAt=300,q=4,requireSkill=164}),
 r(16993,{itemID=12837,learnedAt=300,q=3,requireSkill=164}),
 s(129130,18048,{b=1,f=23,lvl=55,q=3}),
 s(125751,13502,{b=1,f=7,lvl=58,q=3}),
@@ -3747,7 +3746,7 @@ ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1
 ach(644,{maps={235,236,237,238,239},u=1101})}}),
 h(-31,{u=1101,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",500,42000);end	end,rwp=40003,u=1101,g={
-crit(8825,{achID=2336,id=1,u=13})}}),
+crit(8825,{achID=2336,id=5,u=13})}}),
 faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",350,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",75,42000);end	end,u=1101})}}),
 h(-45,{u=1101,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1101}),
@@ -3934,7 +3933,6 @@ h(-356,{coords={
 [1444]={{62.48,24.48}}},cost={{"i",18249,1}},mapID=235,u=1101,g={
 h(-63,{u=1101,g={
 i(18250,{awp=100105,b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},description="NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",q=2,rwp=40003,u=1101})}}),
-h(-45,{u=1101}),
 h(-19,{crs={14321,14323,14326},description="The following items can drop from any of the guards.",u=1101,g={
 s(129407,18462,{b=1,f=34,lvl=55,q=2,u=1101}),
 s(129408,18463,{b=1,f=25,lvl=55,q=2,u=1101}),
@@ -7432,7 +7430,6 @@ i(33831,{b=1,f=53,lvl=70,q=4,u=20}),
 i(33466,{b=1,f=51,lvl=70,q=4,u=20})}})}}),
 inst(752,{awp=20400,coords={
 [1957]={{44.28,45.71}}},isLockoutShared=1,isRaid=1,lore="Nearly seven thousand years ago, the Highborne were exiled from Kalimdor for refusing to give up arcane magic. Led by Dath'Remar Sunstrider, these elves founded their own kingdom of Quel'Thalas. For millennia the mystical pool of energy known as the Sunwell fueled the potent magic of the exiled high elves. Now, the remnants of this ancient fountain have become the Burning Legion's latest target as the demons prepare to summon their commander, Kil'jaeden, with the Sunwell's energy.",lvl=68,mapID=335,maps={336},savedInstanceID=580,u=21,["zone-text-areaID"]=4075,g={
-h(-12,{u=21}),
 h(-63,{u=21,g={
 r(46126,{itemID=35202,learnedAt=365,q=4,requireSkill=755,u=21}),
 r(46124,{b=1,itemID=35200,learnedAt=365,q=4,requireSkill=755,u=21}),

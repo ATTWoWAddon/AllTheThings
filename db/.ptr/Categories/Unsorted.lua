@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local crit,de,flt,fp,h,i,mnt,p,q,s,toy,x=_.CreateAchievementCriteria,_.CreateDecor,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
+local crit,de,flt,h,i,mnt,p,q,s,toy,x=_.CreateAchievementCriteria,_.CreateDecor,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.Unsorted={
 x(12,{
 x(12.01,{awp=120100,g={
@@ -1809,15 +1809,9 @@ de(21060,{itemID=269604,spellID=1285734}),
 de(21061,{itemID=269605,spellID=1285735}),
 de(21945,{itemID=272353,spellID=1291006}),
 de(21946,{itemID=272354,spellID=1291007})}),
-h(-32,{
-fp(3270),
-fp(3268),
-fp(3267),
-fp(3269)}),
 flt(50,{
 i(275910,{f=55,spellID=1298210}),
 i(270273,{f=55,spellID=1287466}),
-i(276346),
 i(276347),
 i(276351),
 i(276352),
@@ -3105,7 +3099,6 @@ i(158844,{spellID=278917}),
 i(158845),
 i(158846),
 i(158847),
-i(158850),
 i(158852),
 i(158854,{f=55}),
 i(158727),
@@ -3809,7 +3802,6 @@ i(168630,{b=1}),
 i(168655,{f=55,lvl=40,spellID=298859}),
 i(168662),
 i(168755),
-i(168789),
 i(168797),
 i(168812),
 i(168815),

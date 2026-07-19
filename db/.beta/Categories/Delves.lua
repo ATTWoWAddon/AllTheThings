@@ -2811,7 +2811,6 @@ q(93784,{isWeekly=1,lvl=80,providers={{"i",262586}}}),
 q(93453,{coords={
 [2393]={{52.7,77.6}}},lvl=78,providers={{"i",258738},{"n",254616}},g={
 cq(93866,{b=1,itemID=262966,spellID=1269622})}})}),
-h(-46),
 h(-56,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},g={
 o(584752,{description="Contains Chunk of Companion Experience tokens.",g={
 i(254756,{b=1,f=55,spellID=1258625}),

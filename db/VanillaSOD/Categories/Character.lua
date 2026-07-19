@@ -29,7 +29,6 @@ ach(16433,{awp=11403,OnUpdate=function(t)if t.collectible and _.Level>=60 then	l
 flt(100,{
 ach(2142),
 ach(2141)})}),
-h(-17),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{icon=374217,r=2}),
 faction(67,{icon=374221,r=1}),

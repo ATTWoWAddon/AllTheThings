@@ -53,12 +53,11 @@ qo(1,{coords={
 [1453]={{54.4,65.8}}},crs={14481},e=13,providers={{"i",7228}}})}}),
 q(915,{awp=10400,e=13,isYearly=1,lvl=10,maps={1454},providers={{"i",18597},{"n",14444}},r=1,rwp=40001,sourceQuests={910,911,1800},g={
 qo(1,{coords={
-[1454]={{52.6,69.6}}},crs={14480},e=13,providers={{"i",7228}}})}})}}),
-h(-58,{e=13})}}),
+[1454]={{52.6,69.6}}},crs={14480},e=13,providers={{"i",7228}}})}})}})}}),
 h(-37,{e=1,maps={1412,1429},g={
 h(-31,{e=1,g={
 faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerTierTurnIn=100;local tierOneMaxRep=500;if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep);else	local tierTwoMaxRep=1050;if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep);else	local tierThreeMaxRep=1700;if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep);else	local tierFourMaxRep=2500;if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep);else	local tierFiveMaxRep=5001;if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep);end	end	end	end	end	local repPerDeckTurnIn=150;addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000);end	end,g={
-crit(8823,{achID=2336,id=1,u=1609})}})}}),
+crit(8823,{achID=2336,id=8,u=1609})}})}}),
 h(-45,{e=1,g={
 q(7930,{coords={
 [1412]={{37.3,37.7}},
@@ -322,7 +321,6 @@ i(19451,{b=1,e=1,q=1}),
 i(19452,{b=1,e=1,lvl=10,q=1}),
 i(19453,{b=1,e=1,q=1}),
 i(19454,{b=1,e=1,q=1})}})}}),
-h(-56,{e=1}),
 h(-58,{e=1,g={
 n(14860,{coords={
 [1412]={{36.4,36},{37.6,39.6}},
@@ -367,7 +365,6 @@ i(19277,{cost={{"i",19284,1},{"i",19283,1},{"i",19282,1},{"i",19281,1},{"i",1928
 i(19257,{cost={{"i",19265,1},{"i",19264,1},{"i",19263,1},{"i",19262,1},{"i",19261,1},{"i",19260,1},{"i",19259,1},{"i",19258,1}},e=1,q=4,u=1609}),
 i(221272,{cost={{"i",221279,1},{"i",221278,1},{"i",221277,1},{"i",221276,1},{"i",221275,1},{"i",221274,1},{"i",221273,1},{"i",221271,1}},e=1,q=4,u=1607})}})}}),
 h(-574,{e=14,g={
-h(-12,{e=14}),
 h(-19,{e=14,g={
 s(164648,21525,{b=1,crs={1853,10899,11486},e=14,f=2,filterForRWP=2,maps={234,250,251,252,253,254,255,476},q=2}),
 s(164647,21524,{b=1,crs={9019,9237,10997},e=14,f=2,filterForRWP=2,maps={242,250,251,252,253,254,255,317},q=2})}}),
@@ -618,7 +615,6 @@ i(20567,{b=1,e=16,f=55,q=1}),
 i(20568,{b=1,e=16,f=55,q=1}),
 i(20574,{b=1,e=16,f=55,q=1}),
 i(20573,{b=1,e=16,f=55,q=1})}}),
-h(-56,{e=16}),
 h(-63,{e=16,g={
 i(20400,{b=1,e=16,f=113,q=2})}})}}),
 h(-577,{e=17,g={
@@ -1263,8 +1259,7 @@ qo(3,{coords={
 qo(4,{coords={
 [1427]={{33,73.5}}},e=11}),
 s(165276,23324,{b=1,e=11,f=4,q=1}),
-i(23247,{e=11,q=1})}})}}),
-h(-58,{e=11})}}),
+i(23247,{e=11,q=1})}})}})}}),
 h(-583,{e=15,g={
 o(113768,{description="These eggs can be found spread out in all of the starting zones.",e=15,maps={1411,1412,1420,1426,1429,1438},g={
 s(163749,19028,{e=15,f=2,q=1,rwp=70205}),

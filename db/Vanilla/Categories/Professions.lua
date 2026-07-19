@@ -11,8 +11,7 @@ ach(732),
 ach(731),
 ach(116)})}),
 prof(171,{
-x(1,{requireSkill=171,g={
-h(-45,{requireSkill=171})}})}),
+x(1,{requireSkill=171})}),
 prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,rwp=30002,g={
 r(24493,{lvl=20,rank=1}),
 r(24497,{lvl=30,rank=2}),
@@ -200,13 +199,11 @@ q(5284,{altQuests={5283,5301,5302},coords={
 q(5302,{altQuests={5283,5284,5301},coords={
 [1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003})}})}})}),
 prof(185,{
-h(-12,{requireSkill=185}),
 x(1,{requireSkill=185,g={
 ach(123,{requireSkill=185}),
 ach(122,{requireSkill=185}),
 ach(121,{requireSkill=185})}})}),
-prof(333,{
-h(-12,{requireSkill=333})}),
+prof(333),
 prof(202,{
 x(1,{requireSkill=202,g={
 h(-47,{requireSkill=202,g={
@@ -228,7 +225,6 @@ x(5,{requireSkill=129}),
 x(6,{requireSkill=129}),
 x(7,{requireSkill=129})}}),
 prof(356,{
-h(-12,{requireSkill=356}),
 x(1,{requireSkill=356,g={
 ach(126,{requireSkill=356}),
 ach(127,{requireSkill=356}),

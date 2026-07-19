@@ -594,7 +594,7 @@ i(37816,{awp=20403,b=1,cost={{"i",37829,20}},e=7,f=106,lvl=10,spellID=62062})}})
 n(153574,{awp=80200,coords={
 [27]={{54.8,38.6}}},e=7,r=2,g={
 toy(169865,{b=1,cost={{"i",169599,5}},e=7})}}),
-n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(";if t.g then	for i,item in ipairs(t.g)do	item.u=2;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest?! BUY THE RAMS RIGHT NOW!\n\nAlso kinda jealous...\n - Crieve";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=1,sourceQuests={11419},g={
+n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(";if t.g then	for i,item in ipairs(t.g)do	item.u=2;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest?! BUY THE RAMS RIGHT NOW!\n\nAlso kinda jealous...\n - Crieve";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	end	end,r=1,sourceQuests={11419},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=10}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=10,rwp=20403,u=2})}}),
 n(24501,{awp=20202,coords={
@@ -657,7 +657,7 @@ i(34064,{e=7,f=55,lvl=11,spellID=5007}),
 i(33026,{e=7,f=55,lvl=26,spellID=35271}),
 i(138884,{awp=70003,e=7,spellID=217685})}}),
 n(24468,{awp=20202,coords={
-[27]={{53.6,38.6}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(";if t.g then	for i,item in ipairs(t.g)do	item.u=2;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest?! BUY THE RAMS RIGHT NOW!\n\nAlso kinda jealous...\n - Crieve";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=2,sourceQuests={11400},g={
+[27]={{53.6,38.6}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(";if t.g then	for i,item in ipairs(t.g)do	item.u=2;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest?! BUY THE RAMS RIGHT NOW!\n\nAlso kinda jealous...\n - Crieve";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	end	end,r=2,sourceQuests={11400},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=10}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=10,rwp=20403,u=2})}}),
 n(241300,{awp=110200,coords={
@@ -2890,8 +2890,9 @@ q(96242,{coords={
 q(93870,{coords={
 [2393]={{31.5,76.4}}},isDaily=1,qgs={256697},sourceQuests={93719}})}),
 h(-47,{
+o(621494,{
 cu(3393),
-i(268122)}),
+i(268122)})}),
 h(-58,{
 n(264056,{coords={
 [2393]={{31.6,76.7}}},g={

@@ -1198,8 +1198,8 @@ i(19376,{b=1,f=52,lvl=60,q=4,u=13}),
 i(19382,{b=1,f=52,lvl=60,q=4,u=13}),
 i(19379,{b=1,f=53,lvl=60,q=4,u=13}),
 i(17964,{q=2,u=13}),
-i(17963,{q=2,u=13}),
 i(17969,{q=2,u=13}),
+i(17963,{q=2,u=13}),
 i(17965,{q=2,u=13})}})}}),
 inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,maps={233,337},rwp=40003,savedInstanceID=859,u=2,g={
 h(-12,{u=2,g={
@@ -3552,7 +3552,8 @@ r(23078,{itemID=18653,learnedAt=265,q=2,requireSkill=20222}),
 s(125144,12791,{b=1,f=20,lvl=51,q=3}),
 s(125146,12793,{b=1,f=5,lvl=51,q=3})}}),
 n(28067,{awp=20403,description="Speak to him until he passes out, a Mug will appear on the ground",u=20,g={
-i(38320,{b=1,f=55,q=1,u=20})}}),
+o(190394,{u=20,g={
+i(38320,{b=1,f=55,q=1,u=20})}})}}),
 e(381,{description="Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",npcID=9502,g={
 s(124423,11744,{b=1,f=34,lvl=51,q=3}),
 s(124422,11743,{awp=100107,b=1,description="This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",f=34,isBounty=1,lvl=51,q=3,rwp=20001,u=2}),
@@ -4014,7 +4015,7 @@ n(10899,{
 i(18779,{q=3,rwp=40001,u=2}),
 i(12848,{b=1,providers={{"o",175970}},q=1,rwp=40003,u=2}),
 r(16990,{itemID=12834,learnedAt=300,q=3,requireSkill=164}),
-r(16746,{itemID=12728,learnedAt=300,q=4,requireSkill=164}),
+r(16746,{crs={10162,11583},itemID=12728,learnedAt=300,q=4,requireSkill=164}),
 r(16993,{itemID=12837,learnedAt=300,q=3,requireSkill=164}),
 s(129130,18048,{b=1,f=23,lvl=55,q=3}),
 s(125751,13502,{b=1,f=7,lvl=55,q=3}),
@@ -4339,7 +4340,6 @@ h(-356,{coords={
 [1444]={{62.48,24.48}}},mapID=235,u=1101,g={
 h(-63,{u=1101,g={
 i(18250,{awp=100105,b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},q=2,rwp=40003,u=2})}}),
-h(-45,{u=1101}),
 h(-19,{crs={14321,14323,14326},description="The following items can drop from any of the guards.",u=1101,g={
 s(129407,18462,{b=1,f=34,lvl=44,q=3,u=1101}),
 s(129408,18463,{b=1,f=25,lvl=44,q=3,u=1101}),
@@ -8636,7 +8636,6 @@ i(33831,{b=1,f=53,lvl=70,q=4,u=2}),
 i(33466,{b=1,f=51,lvl=70,q=4,u=2})}})}})}}),
 inst(752,{awp=20400,coords={
 [1957]={{44.28,45.71}}},isLockoutShared=1,isRaid=1,lore="Nearly seven thousand years ago, the Highborne were exiled from Kalimdor for refusing to give up arcane magic. Led by Dath'Remar Sunstrider, these elves founded their own kingdom of Quel'Thalas. For millennia the mystical pool of energy known as the Sunwell fueled the potent magic of the exiled high elves. Now, the remnants of this ancient fountain have become the Burning Legion's latest target as the demons prepare to summon their commander, Kil'jaeden, with the Sunwell's energy.",lvl=68,maps={335,336},savedInstanceID=580,u=21,g={
-h(-12,{u=21}),
 h(-63,{u=21,g={
 r(46126,{itemID=35202,learnedAt=365,q=4,requireSkill=755,u=21}),
 r(46124,{b=1,itemID=35200,learnedAt=365,q=4,requireSkill=755,u=21}),

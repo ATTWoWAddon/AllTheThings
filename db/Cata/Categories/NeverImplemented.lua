@@ -1114,7 +1114,6 @@ i(73157,{b=1,f=53,lvl=80,q=2}),
 i(73160,{b=1,f=53,lvl=80,q=2}),
 i(73155,{b=1,f=53,lvl=80,q=2}),
 i(73154,{b=1,f=53,lvl=80,q=2})})}})})}),
-h(-214),
 flt(113,{
 x(1,{
 h(-232,{
@@ -1956,7 +1955,7 @@ mnt(6896,{displayID=2784,itemID=5874,lvl=30,q=1,races={1,2,3,4,5,7,8,9}}),
 mnt(578,{displayID=207,itemID=1041,lvl=20,q=1,r=1}),
 mnt(6897,{displayID=2787,itemID=5875,lvl=30,q=1,races={1,2,3,4,5,7,8,9}}),
 mnt(24576,{displayID=18164,itemID=20221}),
-mnt(17458,{b=1,displayID=9475,itemID=13325,lvl=20,q=3,r=2}),
+i(13325,{b=1,displayID=9475,f=100,lvl=20,q=3,r=2}),
 mnt(16060,{b=1,displayID=9714,itemID=12327,lvl=20,q=3,r=2}),
 mnt(459,{displayID=2320,itemID=1134,lvl=30,q=1,r=1}),
 mnt(10795,{displayID=6471,itemID=8589,lvl=30,q=1,races={1,2,3,4,5,7,8}}),
@@ -2048,7 +2047,7 @@ mnt(66124,{displayID=29379})}}),
 x(3.0303,{awp=30303,g={
 mnt(75387,{displayID=31837})}}),
 x(3.04,{awp=30400,g={
-mnt(388516),
+mnt(388516,{b=1,itemID=199931,lvl=30,q=4}),
 mnt(387319,{b=1,displayID=25335,itemID=198632,lvl=40,q=4}),
 mnt(387320,{b=1,displayID=31803,itemID=198630,lvl=60,q=4}),
 mnt(387308,{b=1,displayID=29344,itemID=198631,lvl=40,q=4}),
@@ -2348,7 +2347,6 @@ x(3,{awp=30002,g={
 x(3.0002,{
 r(51801,{requireSkill=129})})}})})}),
 prof(356,{
-h(-23),
 flt(200,{
 x(1,{
 h(-232,{
@@ -2362,7 +2360,6 @@ i(46055,{f=200,q=1,requireSkill=356}),
 i(46054,{f=200,q=1,requireSkill=356})})}})})}),
 prof(182,{
 flt(50),
-h(-23),
 flt(200,{
 x(1,{
 h(-232,{
@@ -2612,7 +2609,6 @@ i(67019,{b=1,f=200,q=1,requireSkill=165})})}})})}),
 prof(186,{
 flt(57),
 flt(50),
-h(-23),
 flt(200,{
 x(1,{
 h(-232,{
@@ -2651,7 +2647,6 @@ r(5395),
 r(6651,{itemID=5657,q=1})})})})}),
 prof(393,{
 flt(50),
-h(-23),
 flt(200,{awp=30001,g={
 x(3,{
 x(3.0001,{
@@ -5145,7 +5140,6 @@ toy(72224,{lvl=79,q=0,sourceID=213762}),
 toy(72232,{lvl=79,q=0,sourceID=213770}),
 toy(72225,{lvl=79,q=0,sourceID=213763}),
 toy(72233,{lvl=79,q=0,sourceID=213771})})})}}),
-h(-56),
 h(-101,{
 flt(32,{
 x(1,{

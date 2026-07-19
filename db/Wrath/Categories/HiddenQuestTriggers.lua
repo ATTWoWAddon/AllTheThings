@@ -5,7 +5,7 @@ local ah,h,hqt,inst,m,prof,x=_.CreateHeader,_.CreateCustomHeader,_.CreateHQT,_.C
 categories.HiddenQuestTriggers={
 x(1,{
 inst(760,{isRaid=1,savedInstanceID=249,g={
-hqt(76175)}}),
+hqt(76175,{repeatable=1})}}),
 m(1414,{maps={1464},g={
 m(1413,{
 hqt(55296)})}}),
@@ -75,8 +75,8 @@ h(-413,{
 h(-45,{
 hqt(13700),
 hqt(13701),
-hqt(13686),
-hqt(13687)})})}})}}),
+hqt(13686,{repeatable=1}),
+hqt(13687,{repeatable=1})})})}})}}),
 h(-34,{awp=30300,g={
 hqt(24887),
 hqt(24895)}}),

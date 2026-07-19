@@ -19,8 +19,7 @@ ach(116,{awp=30000}),
 ach(730,{awp=30003,rwp=80001,sym={{"meta_achievement",125,130,135}}}),
 ach(735,{awp=30003})})}),
 prof(171,{
-x(1,{requireSkill=171,g={
-h(-45,{requireSkill=171})}}),
+x(1,{requireSkill=171}),
 x(2,{awp=20005,requireSkill=171,g={
 q(10906,{altQuests={10905,10907},coords={
 [1944]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,lvl=68,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300}),
@@ -211,8 +210,7 @@ crit(6499,{achID=1779,id=1,providers={{"s",45562}},u=30}),
 crit(6502,{achID=1779,id=1,providers={{"s",45560}},u=30}),
 crit(9421,{achID=1779,id=1,providers={{"i",44954}},u=30}),
 crit(6593,{achID=1779,id=1,providers={{"i",43034}},u=30})}})}})}),
-prof(333,{
-h(-12,{requireSkill=333})}),
+prof(333),
 prof(202,{
 x(1,{requireSkill=202,g={
 h(-47,{requireSkill=202,g={

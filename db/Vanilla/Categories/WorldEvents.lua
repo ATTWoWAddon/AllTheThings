@@ -5,7 +5,6 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,h,i,mnt,n,q,qo,r,s=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
-h(-103),
 h(-723,{awp=10400,lvl=60,rwp=40003,u=12,g={
 h(-19,{awp=10600,crs={14454,14457,14461,14464},u=13,g={
 i(19268,{q=3,u=13})}}),

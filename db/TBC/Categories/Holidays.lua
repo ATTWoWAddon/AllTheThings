@@ -195,8 +195,7 @@ i(37571,{b=1,cost={{"i",37829,200}},e=7,q=1,r=2,u=1}),
 i(37736,{b=1,cost={{"i",37829,200}},e=7,q=1,r=2}),
 i(34028,{awp=20001,b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=2,rwp=30002})}}),
 flt(102,{e=7,g={
-toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3})}}),
-h(-219,{e=7})}}),
+toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3})}})}}),
 n(207496,{coords={
 [2112]={{29.8,56.6}}},e=7,sym={{"sub","common_vendor",23710}}}),
 n(23605,{awp=20202,coords={
@@ -230,9 +229,8 @@ i(37599,{b=1,cost={{"i",37829,200}},e=7,q=1,r=1,u=1}),
 i(37737,{b=1,cost={{"i",37829,200}},e=7,q=1,r=1}),
 i(33978,{awp=20001,b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=1,rwp=30002})}}),
 flt(102,{e=7,g={
-toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3})}}),
-h(-219,{e=7})}}),
-n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=1,sourceQuests={11419},g={
+toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3})}})}}),
+n(24510,{awp=20202,e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor yet as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT DONE!";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	end	end,r=1,sourceQuests={11419},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=60,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=30,q=3,rwp=20403,u=2})}}),
 n(24501,{awp=20202,coords={
@@ -255,7 +253,7 @@ i(33025,{e=7,f=55,lvl=55,q=1}),
 i(34064,{e=7,f=55,lvl=25,q=1}),
 i(33026,{e=7,f=55,lvl=65,q=1})}}),
 n(24468,{awp=20202,coords={
-[1426]={{46.4,40.3}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=7;end	end	end	end,r=2,sourceQuests={11400},g={
+[1426]={{46.4,40.3}}},e=7,OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.sourceQuests[1]))then	t.description="You are unable to purchase the rams from this vendor yet as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT DONE!";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	else	t.description="You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";if t.g then	for i,item in ipairs(t.g)do	item.u=nil;end	end	end	end,r=2,sourceQuests={11400},g={
 mnt(43900,{awp=20001,b=1,cost=1000000,e=7,itemID=33977,lvl=60,q=4}),
 mnt(43899,{awp=20001,b=1,cost=100000,e=7,itemID=33976,lvl=30,q=3,rwp=20403,u=2})}}),
 n(23533,{awp=20202,coords={
@@ -375,12 +373,11 @@ qo(1,{coords={
 [1453]={{54.4,65.8}}},crs={14481},e=13,providers={{"i",7228}}})}}),
 q(915,{awp=10400,e=13,isYearly=1,lvl=10,maps={1454},providers={{"i",18597},{"n",14444}},r=1,rwp=40001,sourceQuests={910,911,1800},g={
 qo(1,{coords={
-[1454]={{52.6,69.6}}},crs={14480},e=13,providers={{"i",7228}}})}})}}),
-h(-58,{e=13})}}),
+[1454]={{52.6,69.6}}},crs={14480},e=13,providers={{"i",7228}}})}})}})}}),
 h(-37,{e=1,maps={1412,1429,1952},g={
 h(-31,{e=1,g={
 faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerTierTurnIn=250;local tierOneMaxRep=500;if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep);else	local tierTwoMaxRep=1050;if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep);else	local tierThreeMaxRep=1700;if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep);else	local tierFourMaxRep=2500;if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep);else	local tierFiveMaxRep=5001;if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep);end	end	end	end	end	local repPerDeckTurnIn=350;addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000);end	end,g={
-crit(8823,{achID=2336,id=1,u=13})}})}}),
+crit(8823,{achID=2336,id=8,u=13})}})}}),
 h(-45,{e=1,g={
 q(7930,{coords={
 [1412]={{37.3,37.7}},
@@ -659,7 +656,6 @@ i(19451,{b=1,e=1,q=1}),
 i(19452,{b=1,e=1,lvl=10,q=1}),
 i(19453,{b=1,e=1,q=1}),
 i(19454,{b=1,e=1,q=1})}})}}),
-h(-56,{e=1}),
 h(-58,{e=1,g={
 n(14860,{coords={
 [1412]={{36.4,36},{37.6,39.6}},
@@ -1331,7 +1327,6 @@ i(20567,{b=1,e=16,f=55,q=1}),
 i(20568,{b=1,e=16,f=55,q=1}),
 i(20574,{b=1,e=16,f=55,q=1}),
 i(20573,{b=1,e=16,f=55,q=1})}}),
-h(-56,{e=16}),
 h(-63,{e=16,g={
 i(33117,{awp=20203,b=1,e=16,f=113,lvl=60,q=3}),
 i(20400,{b=1,e=16,f=113,q=2})}})}}),

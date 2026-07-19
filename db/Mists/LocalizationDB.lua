@@ -1760,7 +1760,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=7,["monthDay"]=12,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=19,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=7,["monthDay"]=19,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=26,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=7,["monthDay"]=26,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026}),
@@ -1812,7 +1811,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=20,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=6,["monthDay"]=20,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=27,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=6,["monthDay"]=27,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=4,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=4,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=11,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=11,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=18,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=18,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -4388,6 +4388,7 @@ local ObjectNames = {
 	[190172] = "Icethorn",
 	[190189] = "Onslaught Map",
 	[190354] = "Scythe of Antiok",
+	[190394] = "Mug of Dire Brew",
 	[190447] = "Flying Machine Engine",
 	[190453] = "Venture Co. Spare Parts",
 	[190454] = "Venture Co. Spare Parts",
@@ -7733,6 +7734,7 @@ local ObjectModels = {
 	[190172] = 219467,
 	[190189] = 198457,
 	[190354] = 243356,
+	[190394] = 198361,
 	[190447] = 219382,
 	[190453] = 197759,
 	[190454] = 197757,
@@ -9493,7 +9495,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753981200,
+		release = 1753956000,
 		state = 2,
 	},
 	[5002] = {
@@ -9502,7 +9504,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755018000,
+		release = 1754992800,
 		state = 2,
 	},
 	[5003] = {
@@ -9511,7 +9513,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755795600,
+		release = 1755770400,
 		state = 2,
 	},
 	[5004] = {
@@ -9520,7 +9522,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756227600,
+		release = 1756202400,
 		state = 2,
 	},
 	[5005] = {
@@ -9529,7 +9531,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756832400,
+		release = 1756807200,
 		state = 2,
 	},
 	[5006] = {
@@ -9538,7 +9540,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1757005200,
+		release = 1756980000,
 		state = 2,
 	},
 	[5007] = {
@@ -9547,7 +9549,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758042000,
+		release = 1758016800,
 		state = 2,
 	},
 	[51] = {
@@ -9572,7 +9574,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765994400,
+		release = 1765969200,
 		state = 2,
 	},
 	[53] = {
@@ -9597,7 +9599,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781629200,
+		release = 1781604000,
 		state = 2,
 	},
 };
@@ -12123,6 +12125,7 @@ localize(ObjectNames, {
 	[190172] = "Eisdorn",
 	[190189] = "Karte des Scharlachroten Ansturms",
 	[190354] = "Antioks Sense",
+	[190394] = "Krug mit Düsterbräu",
 	[190447] = "Motor einer Flugmaschine",
 	[190453] = "Ersatzteile der Venture Co.",
 	[190454] = "Ersatzteile der Venture Co.",
@@ -15210,6 +15213,7 @@ localize(ObjectNames, {
 	[190172] = "Glacépine",
 	[190189] = "Carte de l'Assaut",
 	[190354] = "Faux d'Antiok",
+	[190394] = "Chope de navre-bière",
 	[190447] = "Moteur de machine volante",
 	[190453] = "Pièces détachées de la KapitalRisk",
 	[190454] = "Pièces détachées de la KapitalRisk",
@@ -17547,6 +17551,7 @@ localize(ObjectNames, {
 	[190172] = "Gelaspina",
 	[190189] = "Mappa della Furia",
 	[190354] = "Falce di Antiok",
+	[190394] = "Boccale di Birra Nera",
 	[190447] = "Motore della Macchina Volante",
 	[190453] = "Pezzi di Ricambio della S.P.R. &amp; Co.",
 	[190454] = "Pezzi di Ricambio della S.P.R. &amp; Co.",
@@ -20253,6 +20258,7 @@ localize(ObjectNames, {
 	[190172] = "Gelocardo",
 	[190189] = "Mapa da Ofensiva",
 	[190354] = "Foice de Antiok",
+	[190394] = "Caneco de Cerveja Atroz",
 	[190447] = "Motor de Máquina Voadora",
 	[190453] = "Peças Sobressalentes da Empreendimentos S.A.",
 	[190454] = "Peças Sobressalentes da Empreendimentos S.A.",
@@ -23717,6 +23723,7 @@ localize(ObjectNames, {
 	[190172] = "Ледошип",
 	[190189] = "Карта Натиска",
 	[190354] = "Коса Антиока",
+	[190394] = "Кружка худого варева",
 	[190447] = "Двигатель ветролета",
 	[190453] = "Запчасти Торговой компании",
 	[190454] = "Запчасти Торговой компании",
@@ -30085,6 +30092,7 @@ localize(ObjectNames, {
 	[190172] = "Espina de hielo",
 	[190189] = "Mapa del Embate",
 	[190354] = "Guadaña de Antiok",
+	[190394] = "Jarra de cerveza temible",
 	[190447] = "Motor de máquina voladora",
 	[190453] = "Recambios de Ventura y Cía.",
 	[190454] = "Recambios de Ventura y Cía.",

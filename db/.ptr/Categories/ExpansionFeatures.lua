@@ -3164,7 +3164,7 @@ i(102457,{b=1,f=55,sourceAchievements={8325},spellID=146428,u=2})}}),
 q(33105,{awp=50400,coords={
 [390]={{83.2,29.6}}},lvl=35,maps={557,558,559,560,561,562,563,564,565,566,567,568,569,570},qgs={72723},sourceQuests={33104},u=2,g={
 ach(8325,{u=2}),
-title(306,{u=2})}}),
+title(306,{awp=60002})}}),
 s(54619,102248,{awp=50400,b=1,cost={{"i",102457,1},{"i",98148,1}},f=3,lvl=35,spellID=146195,u=38}),
 s(54620,102249,{awp=50400,b=1,cost={{"i",102457,1},{"i",98147,1}},f=3,lvl=35,spellID=146195,u=38}),
 s(54618,102247,{awp=50400,b=1,cost={{"i",102457,1},{"i",98149,1}},f=3,lvl=35,spellID=146199,u=38}),
@@ -20699,7 +20699,8 @@ q(51771,{coords={
 [862]={{58.4,62.6}},
 [1165]={{51.7,99.6}}},lvl=35,qgs={138708},r=1,sourceQuests={51770}}),
 q(53079,{coords={
-[862]={{58.4,62.6}}},lvl=35,qgs={138708},r=1,sourceQuests={51771}}),
+[862]={{58.4,62.6}},
+[1165]={{51.7,99.7}}},lvl=35,qgs={138708},r=1,sourceQuests={51771}}),
 q(51803,{coords={
 [862]={{58.4,62.6}}},lvl=35,qgs={135691},r=1}),
 q(53050,{description="Automatically starts when you finish your first Foothold in Kul Tiras.",isBreadcrumb=1,lvl=35,r=1}),
@@ -41834,7 +41835,7 @@ i(274577)}}),
 q(96443,{coords={
 [2649]={{59.7,10.9}}},qgs={264070},sourceQuests={96442,96831}}),
 q(96444,{coords={
-[2649]={{59.7,10.9}}},qgs={264070},sourceQuests={96443,96831}})}})})}})}}),
+[2649]={{50.4,10.5}}},qgs={264096},sourceQuests={96443,96831}})}})})}})}}),
 h(-671,{awp=120001,g={
 h(-12,{
 ach(63164,{awp=120007}),
@@ -42733,8 +42734,8 @@ q(91594,{coords={
 q(91595,{coords={
 [2437]={{41.2,30}}},isWorldQuest=1}),
 q(91596,{isWorldQuest=1})})}}),
-h(-759,{awp=120007,description="Val is a planet of nothing but ice-covered valleys and billowing storms; even the Legion loathed it. The planet is protected by enormous hailstorms capable of tearing through the hulls of Legion ships, and even after the demons established outposts, the soldiers sent there were usually done so as punishment.",maps={2599,2600},g={
-h(-12,{
+h(-759,{awp=120007,description="Val is a planet of nothing but ice-covered valleys and billowing storms; even the Legion loathed it. The planet is protected by enormous hailstorms capable of tearing through the hulls of Legion ships, and even after the demons established outposts, the soldiers sent there were usually done so as punishment.",g={
+h(-12,{maps={2599,2600},g={
 ach(62873),
 ach(62874),
 ach(62899,{
@@ -42830,7 +42831,7 @@ crit(115047,{achID=62896,id=10,providers={{"n",267639}}}),
 crit(115048,{achID=62896,id=11,providers={{"n",267636}}})}),
 ach(63384,{
 crit(115478,{achID=62873,id=2}),
-crit(115478,{achID=62874,id=2})})}),
+crit(115478,{achID=62874,id=2})})}}),
 m(2600,{coords={
 [2405]={{51.4,71.3}}},crs={264322},icon=775461,maps={2646},g={
 h(-12,{
@@ -42954,6 +42955,8 @@ i(276342)}}),
 q(96578,{coords={
 [2646]={{36.7,73.1}}},qgs={266540},sourceQuests={96577},g={
 crit(115430,{achID=63385,id=3})}}),
+q(97037,{coords={
+[2600]={{47.5,82.1}}},qgs={265950},sourceQuests={96578}}),
 q(96720,{coords={
 [2393]={{47.7,51.1}},
 [2600]={{48.2,81.2},{48.5,81.9}}},isWeekly=1,qgs={263531,265303},sourceQuests={96052},g={
@@ -43286,6 +43289,15 @@ crit(113984,{achID=62880,id=4,questID=95402}),
 crit(113992,{achID=62880,id=12,questID=95394}),
 crit(115481,{achID=62873,id=6})}),
 ach(63349)}),
+h(-761,{
+fp(3267,{coords={
+[2599]={{60.9,16.2}}},sourceQuests={96497}}),
+fp(3268,{coords={
+[2599]={{30.5,67.8}}},sourceQuests={96497}}),
+fp(3269,{coords={
+[2599]={{46.5,71.4}}},sourceQuests={96497}}),
+fp(3270,{coords={
+[2599]={{64.4,69.4}}},sourceQuests={96497}})}),
 h(-45,{
 q(97215,{coords={
 [2393]={{47.6,51}}},qgs={263479}}),

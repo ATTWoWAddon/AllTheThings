@@ -3992,6 +3992,7 @@ local ObjectNames = {
 	[190172] = "Icethorn",
 	[190189] = "Onslaught Map",
 	[190354] = "Scythe of Antiok",
+	[190394] = "Mug of Dire Brew",
 	[190447] = "Flying Machine Engine",
 	[190453] = "Venture Co. Spare Parts",
 	[190454] = "Venture Co. Spare Parts",
@@ -6768,6 +6769,7 @@ local ObjectModels = {
 	[190172] = 219467,
 	[190189] = 198457,
 	[190354] = 243356,
+	[190394] = 198361,
 	[190447] = 219382,
 	[190453] = 197759,
 	[190454] = 197757,
@@ -10174,6 +10176,7 @@ localize(ObjectNames, {
 	[190172] = "Eisdorn",
 	[190189] = "Karte des Scharlachroten Ansturms",
 	[190354] = "Antioks Sense",
+	[190394] = "Krug mit Düsterbräu",
 	[190447] = "Motor einer Flugmaschine",
 	[190453] = "Ersatzteile der Venture Co.",
 	[190454] = "Ersatzteile der Venture Co.",
@@ -12699,6 +12702,7 @@ localize(ObjectNames, {
 	[190172] = "Glacépine",
 	[190189] = "Carte de l'Assaut",
 	[190354] = "Faux d'Antiok",
+	[190394] = "Chope de navre-bière",
 	[190447] = "Moteur de machine volante",
 	[190453] = "Pièces détachées de la KapitalRisk",
 	[190454] = "Pièces détachées de la KapitalRisk",
@@ -14481,6 +14485,7 @@ localize(ObjectNames, {
 	[190172] = "Gelaspina",
 	[190189] = "Mappa della Furia",
 	[190354] = "Falce di Antiok",
+	[190394] = "Boccale di Birra Nera",
 	[190447] = "Motore della Macchina Volante",
 	[190453] = "Pezzi di Ricambio della S.P.R. &amp; Co.",
 	[190454] = "Pezzi di Ricambio della S.P.R. &amp; Co.",
@@ -16638,6 +16643,7 @@ localize(ObjectNames, {
 	[190172] = "Gelocardo",
 	[190189] = "Mapa da Ofensiva",
 	[190354] = "Foice de Antiok",
+	[190394] = "Caneco de Cerveja Atroz",
 	[190447] = "Motor de Máquina Voadora",
 	[190453] = "Peças Sobressalentes da Empreendimentos S.A.",
 	[190454] = "Peças Sobressalentes da Empreendimentos S.A.",
@@ -19537,6 +19543,7 @@ localize(ObjectNames, {
 	[190172] = "Ледошип",
 	[190189] = "Карта Натиска",
 	[190354] = "Коса Антиока",
+	[190394] = "Кружка худого варева",
 	[190447] = "Двигатель ветролета",
 	[190453] = "Запчасти Торговой компании",
 	[190454] = "Запчасти Торговой компании",
@@ -24762,6 +24769,7 @@ localize(ObjectNames, {
 	[190172] = "Espina de hielo",
 	[190189] = "Mapa del Embate",
 	[190354] = "Guadaña de Antiok",
+	[190394] = "Jarra de cerveza temible",
 	[190447] = "Motor de máquina voladora",
 	[190453] = "Recambios de Ventura y Cía.",
 	[190454] = "Recambios de Ventura y Cía.",
@@ -29880,6 +29888,7 @@ end
 -- Add a Header & Filter debugger
 setmetatable(_.FilterConstants, {
     __index = function(t, key)
+	    if key == "ToDebugString" then return end
         _.print("MISSING FilterConstant:", key);
         rawset(t, key, -9999999999);
         return -9999999999;
@@ -29887,6 +29896,7 @@ setmetatable(_.FilterConstants, {
 });
 setmetatable(_.HeaderConstants, {
     __index = function(t, key)
+	    if key == "ToDebugString" then return end
         _.print("MISSING HeaderConstant:", key);
         rawset(t, key, -9999999999);
         return -9999999999;

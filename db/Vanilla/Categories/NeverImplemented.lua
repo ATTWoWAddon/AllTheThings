@@ -68,7 +68,6 @@ i(18355,{b=1,c={3},f=53,lvl=55,q=3}),
 i(20084,{b=1,f=53,q=3}),
 i(12805,{b=1,f=53,q=2}),
 i(18438,{b=1,f=53,lvl=35,q=3})})})})}),
-h(-214),
 flt(113,{
 x(1,{
 h(-232,{
@@ -295,7 +294,6 @@ fp(54),
 fp(59),
 fp(60),
 fp(78)})})}),
-h(-40),
 flt(50,{
 x(1,{
 h(-232,{
@@ -338,7 +336,7 @@ mnt(6896,{displayID=2784,itemID=5874,lvl=40,q=1,races={1,2,3,4,5,7,8}}),
 mnt(578,{displayID=207,itemID=1041,lvl=40,q=1,r=1}),
 mnt(6897,{displayID=2787,itemID=5875,lvl=40,q=1,races={1,2,3,4,5,7,8}}),
 mnt(24576,{b=1,displayID=18164,itemID=20221,lvl=60,q=5}),
-mnt(17458,{b=1,displayID=9475,itemID=13325,lvl=40,q=3}),
+i(13325,{b=1,displayID=9475,lvl=40,q=3}),
 mnt(16060,{displayID=9714,itemID=12327,lvl=40,q=3,r=2}),
 mnt(459,{displayID=2320,itemID=1134,lvl=40,q=1,r=1}),
 mnt(10795,{displayID=6471,itemID=8589,lvl=40,q=1,races={1,2,3,4,5,7,8}}),
@@ -428,7 +426,6 @@ r(30047,{b=1,itemID=23690,q=1,requireSkill=185}),
 i(16073,{f=200,q=1,requireSkill=185}),
 i(6891,{f=200,q=1,requireSkill=185})})})})}),
 prof(333,{
-h(-23),
 flt(200,{
 x(1,{
 h(-232,{
@@ -476,14 +473,12 @@ r(10844,{itemID=8547,q=2,requireSkill=129}),
 r(30021,{b=1,itemID=23689,q=1,requireSkill=129}),
 i(16085,{f=200,q=1,requireSkill=129})})})})}),
 prof(356,{
-h(-23),
 flt(200,{
 x(1,{
 h(-232,{
 i(16082,{f=200,lvl=35,q=1,requireSkill=356})})})})}),
 prof(182,{
 flt(50),
-h(-23),
 flt(200,{
 x(1,{
 h(-232,{
@@ -491,7 +486,6 @@ r(8387,{requireSkill=182}),
 r(2369,{requireSkill=182}),
 r(2371,{requireSkill=182})})})})}),
 prof(755,{
-h(-23),
 flt(200)}),
 prof(165,{
 h(-23,{
@@ -514,7 +508,6 @@ i(22692,{b=1,f=200,minReputation={529,42000},q=1,requireSkill=165})})})})}),
 prof(186,{
 flt(57),
 flt(50),
-h(-23),
 flt(200,{
 x(1,{
 h(-232,{
@@ -543,7 +536,6 @@ r(5395),
 r(6651,{itemID=5657,q=1})})})})}),
 prof(393,{
 flt(50),
-h(-23),
 flt(200)}),
 prof(197,{
 h(-23,{
@@ -1164,12 +1156,10 @@ i(32164),
 i(32165),
 i(32166),
 i(32167)})})})})}),
-h(-229),
 flt(102,{
 x(1,{
 h(-232,{
 toy(37460)})})}),
-h(-56),
 h(-101,{
 flt(32,{
 x(1,{

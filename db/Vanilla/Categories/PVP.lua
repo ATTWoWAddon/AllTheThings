@@ -31,7 +31,7 @@ ach(700,{providers={{"i",18834},{"i",18845},{"i",18846},{"i",18849},{"i",18850},
 ach(714,{pvp=1,r=1,u=12}),
 ach(907,{pvp=1,r=2,u=12})}}),
 x(1,{description="In order to collect these, you need to have the original title associated with the gear.",pvp=1,g={
-h(-298,{awp=11101,maps={1459,1460,1461},pvp=1,rwp=20001,g={
+h(-298,{awp=10400,maps={1459,1460,1461},pvp=1,rwp=20001,g={
 pvprank(1,{pvp=1}),
 pvprank(2,{pvp=1}),
 pvprank(3,{pvp=1}),
@@ -46,7 +46,7 @@ pvprank(11,{pvp=1}),
 pvprank(12,{pvp=1}),
 pvprank(13,{pvp=1}),
 pvprank(14,{pvp=1})}}),
-h(-210,{awp=11101,pvp=1,r=2,g={
+h(-210,{awp=10400,pvp=1,r=2,g={
 h(-101,{pvp=1,g={
 s(163703,18825,{b=1,f=8,lvl=60,pvp=1,q=4}),
 s(163727,18867,{b=1,f=24,lvl=60,pvp=1,q=4}),
@@ -374,7 +374,7 @@ i(18849,{b=1,c={4},f=53,pvp=1,q=3}),
 i(18845,{b=1,c={7},f=53,pvp=1,q=3}),
 i(18852,{b=1,c={9},f=53,pvp=1,q=3}),
 i(18834,{b=1,c={1},f=53,pvp=1,q=3})}}),
-h(-45,{pvp=1,g={
+h(-45,{awp=10800,pvp=1,g={
 q(8371,{coords={
 [1416]={{39.4,82.2}},
 [1417]={{45.6,45.8}},

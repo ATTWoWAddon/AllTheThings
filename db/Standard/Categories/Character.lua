@@ -8892,7 +8892,7 @@ p(2041,{b=1,cost={{"i",151191,3}},itemID=150739,npcID=119794,pb=1,spellID=244345
 i(146317,{b=1,cost={{"i",151191,1}},f=55,pb=1})}}),
 i(151191)}}),
 q(54186,{awp=80100,coords={
-[469]={{31.2,37.4}}},isDaily=1,isWeekly=1,lvl=50,maps={30,840,841,842},pb=1,qgs={147070},sourceQuests={54185},g={
+[30]={{31.2,37.4}}},isDaily=1,isWeekly=1,lvl=50,maps={469,840,841,842},pb=1,qgs={147070},sourceQuests={54185},g={
 ach(13269,{pb=1,g={
 p(2534,{b=1,itemID=165894,npcID=147838,pb=1,spellID=286790}),
 crit(46839,{achID=14021,awp=80300,id=3,pb=1})}}),
@@ -8937,7 +8937,8 @@ p(2747,{b=1,cost={{"i",169665,3}},itemID=169679,npcID=155240,pb=1,spellID=301985
 p(2750,{b=1,cost={{"i",169665,3}},itemID=169676,npcID=155248,pb=1,spellID=302003})}}),
 i(169665)}}),
 q(45539,{coords={
-[10]={{38.8,68.2}}},isDaily=1,isWeekly=1,lvl=45,maps={825},pb=1,qgs={116781},sourceQuests={45423},g={
+[10]={{38.8,68.2}},
+[11]={{23.2,81.8}}},isDaily=1,isWeekly=1,lvl=45,maps={825},pb=1,qgs={116781},sourceQuests={45423},g={
 ach(11765,{pb=1,g={
 p(2049,{b=1,itemID=147543,npcID=121317,pb=1,spellID=242047}),
 crit(46837,{achID=14021,awp=80300,id=1,pb=1})}}),

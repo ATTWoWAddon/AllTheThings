@@ -34,7 +34,7 @@ title(34,{pvp=1,r=1,u=17})}}),
 ach(907,{awp=20001,pvp=1,r=2,u=12,g={
 title(35,{pvp=1,r=2,u=17})}})}}),
 x(1,{description="In order to collect these, you need to have the original title associated with the gear.",pvp=1,g={
-h(-298,{awp=11101,pvp=1,rwp=20001,u=2,g={
+h(-298,{awp=10400,pvp=1,rwp=20001,u=2,g={
 pvprank(1,{pvp=1,u=2}),
 pvprank(2,{pvp=1,u=2}),
 pvprank(3,{pvp=1,u=2}),
@@ -49,7 +49,7 @@ pvprank(11,{pvp=1,u=2}),
 pvprank(12,{pvp=1,u=2}),
 pvprank(13,{pvp=1,u=2}),
 pvprank(14,{pvp=1,u=2})}}),
-h(-210,{awp=11101,pvp=1,r=2,g={
+h(-210,{awp=10400,pvp=1,r=2,g={
 h(-101,{pvp=1,g={
 s(129729,18825,{b=1,f=8,lvl=60,pvp=1,q=4}),
 s(129771,18867,{b=1,f=24,lvl=60,pvp=1,q=4}),
@@ -377,7 +377,7 @@ i(18849,{b=1,c={4},f=53,pvp=1,q=3}),
 i(18845,{b=1,c={7},f=53,pvp=1,q=3}),
 i(18852,{b=1,c={9},f=53,pvp=1,q=3}),
 i(18834,{b=1,c={1},f=53,pvp=1,q=3})}}),
-h(-45,{pvp=1,g={
+h(-45,{awp=10800,pvp=1,g={
 q(8371,{coords={
 [1453]={{79.4,18}},
 [1455]={{69.8,90}},
@@ -2188,8 +2188,8 @@ i(20071,{b=1,f=53,lvl=58,pvp=1,q=3}),
 i(21117,{b=1,f=53,lvl=48,pvp=1,q=3}),
 i(21118,{b=1,f=53,lvl=38,pvp=1,q=3}),
 i(21119,{b=1,f=53,lvl=28,pvp=1,q=3})}})}})}}),
-m(1956,{pvp=1,u=17,g={
-h(-47,{awp=20003,pvp=1,u=17,g={
+m(1956,{awp=20003,pvp=1,u=17,g={
+h(-47,{pvp=1,u=17,g={
 i(29024,{b=1,f=55,pvp=1,q=2,rwp=30303,u=17})}})}}),
 m(1460,{lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},pvp=1,g={
 h(-12,{pvp=1,g={

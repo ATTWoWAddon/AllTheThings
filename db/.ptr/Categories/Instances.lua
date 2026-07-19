@@ -1159,8 +1159,8 @@ i(19376,{b=1,f=52,lvl=25}),
 i(19382,{b=1,f=52,lvl=25}),
 i(19379,{b=1,f=53,lvl=25}),
 i(17964),
-i(17963),
 i(17969),
+i(17963),
 i(17965)}})}}),
 inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",maps={233,337},rwp=40003,savedInstanceID=859,u=2,g={
 h(-12,{u=2,g={
@@ -3486,7 +3486,8 @@ s(4544,12791,{b=1,f=20,lvl=22,spellID=248260}),
 s(4546,12793,{b=1,f=5,lvl=22}),
 i(151410,{awp=70300,b=1,f=52,lvl=22})}}),
 n(28067,{awp=20403,description="Speak to him until he passes out, a Mug will appear on the ground",g={
-i(38320,{b=1,f=55,spellID=51010})}}),
+o(190394,{
+i(38320,{b=1,f=55,spellID=51010})})}}),
 e(381,{description="Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",npcID=9502,g={
 s(4232,11744,{b=1,f=34,lvl=22,spellID=248257}),
 s(4231,11743,{awp=100107,b=1,f=34,lvl=22}),
@@ -4700,7 +4701,7 @@ n(10899,{u=2,g={
 i(18779,{rwp=40001,u=2}),
 i(12848,{b=1,providers={{"o",175970}},rwp=40003,spellID=17048,u=2}),
 r(16990,{itemID=12834,requireSkill=164,skillID=2477,u=2}),
-r(16746,{itemID=12728,requireSkill=164,skillID=2477,u=2}),
+r(16746,{crs={10162,11583},itemID=12728,requireSkill=164,skillID=2477,u=2}),
 r(16993,{b=1,itemID=12837,requireSkill=164,skillID=2477,u=2}),
 s(7224,18048,{b=1,f=23,lvl=23,u=2}),
 s(4890,13502,{b=1,f=7,lvl=23,u=2}),
@@ -41874,7 +41875,7 @@ s(78972,134465,{b=1,f=6,lvl=40,modID=1}),
 s(77540,134256,{b=1,f=6,lvl=40,modID=1}),
 s(77544,134260,{b=1,f=4,lvl=40,modID=1}),
 s(78973,134508,{b=1,f=7,lvl=40,modID=1}),
-i(137373,{b=1,f=53,lvl=40,modID=1,spellID=358933}),
+i(137373,{b=1,f=53,lvl=40,modID=1,spellID=215745}),
 s(78971,134438,{b=1,f=5,lvl=40,modID=1}),
 s(78970,137372,{b=1,f=4,lvl=40,modID=1}),
 i(137375,{b=1,f=54,lvl=40,modID=1}),
@@ -41937,7 +41938,7 @@ s(80125,134465,{b=1,f=6,lvl=40,modID=2}),
 s(77540,134256,{b=1,f=6,lvl=40,modID=2}),
 s(77544,134260,{b=1,f=4,lvl=40,modID=2}),
 s(79950,134508,{b=1,f=7,lvl=40,modID=2}),
-i(137373,{b=1,f=53,lvl=40,modID=2,spellID=358933}),
+i(137373,{b=1,f=53,lvl=40,modID=2,spellID=215745}),
 s(80063,134438,{b=1,f=5,lvl=40,modID=2}),
 s(80036,137372,{b=1,f=4,lvl=40,modID=2}),
 i(137375,{b=1,f=54,lvl=40,modID=2}),
@@ -42006,7 +42007,7 @@ s(78972,134465,{b=1,f=6,lvl=40,modID=23}),
 s(77540,134256,{b=1,f=6,lvl=40,modID=23}),
 s(77544,134260,{b=1,f=4,lvl=40,modID=23}),
 s(78973,134508,{b=1,f=7,lvl=40,modID=23}),
-i(137373,{b=1,f=53,lvl=40,modID=23,spellID=358933}),
+i(137373,{b=1,f=53,lvl=40,modID=23,spellID=215745}),
 s(78971,134438,{b=1,f=5,lvl=40,modID=23}),
 s(78970,137372,{b=1,f=4,lvl=40,modID=23}),
 i(137375,{b=1,f=54,lvl=40,modID=23}),
@@ -43749,7 +43750,7 @@ s(98953,160631,{b=1,f=6,lvl=50,modID=4}),
 s(98861,160714,{b=1,f=4,lvl=50,modID=4}),
 i(160652,{b=1,f=53,lvl=50,modID=4,spellID=278067}),
 i(160651,{b=1,f=53,lvl=50,modID=4,spellID=278053})}}),
-e(2167,{crs={135452,136429,137022,137023},g={
+e(2167,{crs={135452,136429,137022,137023},providers={{"o",291079}},g={
 s(99090,160681,{b=1,f=35,lvl=50,modID=4}),
 s(99125,160683,{b=1,f=20,lvl=50,modID=4}),
 s(99112,160682,{b=1,f=23,lvl=50,modID=4}),
@@ -43881,7 +43882,7 @@ s(96580,160631,{b=1,f=6,lvl=50,modID=3}),
 s(96691,160714,{b=1,f=4,lvl=50,modID=3}),
 i(160652,{b=1,f=53,lvl=50,modID=3,spellID=278067}),
 i(160651,{b=1,f=53,lvl=50,modID=3,spellID=278053})}}),
-e(2167,{crs={135452,136429,137022,137023},g={
+e(2167,{crs={135452,136429,137022,137023},providers={{"o",291079}},g={
 s(96634,160681,{b=1,f=35,lvl=50,modID=3}),
 s(96640,160683,{b=1,f=20,lvl=50,modID=3}),
 s(96637,160682,{b=1,f=23,lvl=50,modID=3}),
@@ -43988,7 +43989,7 @@ s(96581,160631,{b=1,f=6,lvl=50,modID=5}),
 s(98862,160714,{b=1,f=4,lvl=50,modID=5}),
 i(160652,{b=1,f=53,lvl=50,modID=5,spellID=278067}),
 i(160651,{b=1,f=53,lvl=50,modID=5,spellID=278053})}}),
-e(2167,{crs={135452,136429,137022,137023},g={
+e(2167,{crs={135452,136429,137022,137023},providers={{"o",291079}},g={
 s(96635,160681,{b=1,f=35,lvl=50,modID=5}),
 s(96641,160683,{b=1,f=20,lvl=50,modID=5}),
 s(96638,160682,{b=1,f=23,lvl=50,modID=5}),
@@ -44093,7 +44094,7 @@ s(96582,160631,{b=1,f=6,lvl=50,modID=6}),
 s(98863,160714,{b=1,f=4,lvl=50,modID=6}),
 i(160652,{b=1,f=53,lvl=50,modID=6,spellID=278067}),
 i(160651,{b=1,f=53,lvl=50,modID=6,spellID=278053})}}),
-e(2167,{crs={135452,136429,137022,137023},g={
+e(2167,{crs={135452,136429,137022,137023},providers={{"o",291079}},g={
 ach(12526),
 s(96636,160681,{b=1,f=35,lvl=50,modID=6}),
 s(96642,160683,{b=1,f=20,lvl=50,modID=6}),
@@ -48475,7 +48476,7 @@ s(115194,182985,{b=1,f=6,lvl=60,modID=4}),
 i(184025,{b=1,f=53,lvl=60,modID=4,spellID=344662}),
 i(183037,{b=1,f=52,lvl=60,modID=4})}})}}),
 h(-377,{awp=100105,g={
-e(2418,{npcID=166644,g={
+e(2418,{npcID=166644,providers={{"o",357751}},g={
 i(183888,{awp=90205,b=2,c={1,2,5,10,13},lvl=60,modID=90,nomerge=1,rwp=100002,skipFill=1,sym={{"select","itemID",183888.004},{"groupfill"}},u=2}),
 i(183888,{b=2,c={1,2,5,10,13},lvl=60,modID=4}),
 s(115233,182987,{b=1,f=7,lvl=60,modID=4}),
@@ -48626,7 +48627,7 @@ i(184019,{b=1,f=53,lvl=60,modID=3,spellID=345251}),
 i(184018,{b=1,f=53,lvl=60,modID=3,spellID=344900}),
 s(114538,183025,{b=1,f=7,lvl=60,modID=3}),
 i(184020,{b=1,f=53,lvl=60,modID=3,spellID=344916})}}),
-e(2418,{npcID=166644,g={
+e(2418,{npcID=166644,providers={{"o",357751}},g={
 i(183888,{awp=90205,b=2,c={1,2,5,10,13},lvl=60,modID=89,nomerge=1,rwp=100002,skipFill=1,sym={{"select","itemID",183888.003},{"groupfill"}},u=2}),
 i(183888,{b=2,c={1,2,5,10,13},lvl=60,modID=3}),
 s(114500,182987,{b=1,f=7,lvl=60,modID=3}),
@@ -48773,7 +48774,7 @@ i(184018,{b=1,f=53,lvl=60,modID=5,spellID=344900}),
 s(115261,183025,{b=1,f=7,lvl=60,modID=5}),
 i(184020,{b=1,f=53,lvl=60,modID=5,spellID=344916}),
 crit(48974,{achID=14717})}}),
-e(2418,{npcID=166644,g={
+e(2418,{npcID=166644,providers={{"o",357751}},g={
 i(183888,{awp=90205,b=2,c={1,2,5,10,13},lvl=60,modID=91,nomerge=1,rwp=100002,skipFill=1,sym={{"select","itemID",183888.005},{"groupfill"}},u=2}),
 i(183888,{b=2,c={1,2,5,10,13},lvl=60,modID=5}),
 s(115234,182987,{b=1,f=7,lvl=60,modID=5}),
@@ -48910,7 +48911,7 @@ i(184018,{b=1,f=53,lvl=60,modID=6,spellID=344900}),
 s(115262,183025,{b=1,f=7,lvl=60,modID=6}),
 i(184020,{b=1,f=53,lvl=60,modID=6,spellID=344916}),
 crit(53536,{achID=15665,awp=90205,rwp=100002,u=2})}}),
-e(2418,{npcID=166644,g={
+e(2418,{npcID=166644,providers={{"o",357751}},g={
 ach(14359,{
 crit(49682,{achID=14718,id=4})}),
 i(183888,{awp=90205,b=2,c={1,2,5,10,13},lvl=60,modID=92,nomerge=1,rwp=100002,skipFill=1,sym={{"select","itemID",183888.006},{"groupfill"}},u=2}),
@@ -49336,7 +49337,7 @@ s(145789,186336,{b=1,f=5,lvl=60,modID=4}),
 s(145845,186350,{b=1,f=7,lvl=60,modID=4}),
 s(145849,186351,{b=1,f=7,lvl=60,modID=4})}})}}),
 ah(15125,{awp=100105,type="a",g={
-e(2441,{npcID=175732,g={
+e(2441,{npcID=175732,providers={{"o",369898}},g={
 s(145999,186439,{b=1,c={3},f=3,lvl=60,modID=4,spellID=353513}),
 s(145737,186321,{b=1,f=4,lvl=60,modID=4}),
 s(145813,186342,{b=1,f=6,lvl=60,modID=4}),
@@ -49516,7 +49517,7 @@ s(145740,186322,{b=1,f=4,lvl=60,modID=3}),
 s(145788,186336,{b=1,f=5,lvl=60,modID=3}),
 s(145844,186350,{b=1,f=7,lvl=60,modID=3}),
 s(145848,186351,{b=1,f=7,lvl=60,modID=3})}}),
-e(2441,{npcID=175732,g={
+e(2441,{npcID=175732,providers={{"o",369898}},g={
 i(199181,{awp=90205,b=1,f=55,modID=3,rwp=100002,spellID=388400,u=2}),
 s(145998,186439,{b=1,c={3},f=3,lvl=60,modID=3,spellID=353513}),
 s(145736,186321,{b=1,f=4,lvl=60,modID=3}),
@@ -49695,7 +49696,7 @@ s(145790,186336,{b=1,f=5,lvl=60,modID=5}),
 s(145846,186350,{b=1,f=7,lvl=60,modID=5}),
 s(145850,186351,{b=1,f=7,lvl=60,modID=5}),
 crit(52352,{achID=15127})}}),
-e(2441,{npcID=175732,g={
+e(2441,{npcID=175732,providers={{"o",369898}},g={
 i(187592,{b=1,f=55,modID=5,spellID=358958}),
 i(199182,{awp=90205,b=1,f=55,modID=5,rwp=100002,spellID=388403,u=2}),
 s(146000,186439,{b=1,c={3},f=3,lvl=60,modID=5,spellID=353513}),
@@ -49872,7 +49873,7 @@ s(145791,186336,{b=1,f=5,lvl=60,modID=6}),
 s(145847,186350,{b=1,f=7,lvl=60,modID=6}),
 s(145851,186351,{b=1,f=7,lvl=60,modID=6}),
 crit(53577,{achID=15669,awp=90205,rwp=100002,u=2})}}),
-e(2441,{npcID=175732,g={
+e(2441,{npcID=175732,providers={{"o",369898}},g={
 ach(15121,{
 title(447),
 crit(52363,{achID=15128,id=10})}),
@@ -52988,7 +52989,7 @@ s(181597,195524,{b=1,f=7,lvl=70,modID=4}),
 s(183423,195521,{b=1,f=20,lvl=70,modID=4}),
 s(181185,195526,{b=1,collectible=false,f=52,lvl=70,modID=4,spellID=394455}),
 s(181645,195522,{b=1,f=6,lvl=70,modID=4})}}),
-e(2499,{crs={189492,193909},g={
+e(2499,{crs={189492,193909},providers={{"o",378046}},g={
 i(196590,{b=2,c={6,9,12},lvl=70,modID=4,spellID=380187,g={
 s(182820,200408,{b=1,c={6},f=7,lvl=70,modID=4}),
 s(182568,200345,{b=1,c={12},f=5,lvl=70,modID=4}),
@@ -53200,7 +53201,7 @@ s(181183,195524,{b=1,f=7,lvl=70,modID=3}),
 s(181180,195521,{b=1,f=20,lvl=70,modID=3}),
 s(181185,195526,{b=1,collectible=false,f=52,lvl=70,modID=3,spellID=394455}),
 s(181181,195522,{b=1,f=6,lvl=70,modID=3})}}),
-e(2499,{crs={189492,193909},g={
+e(2499,{crs={189492,193909},providers={{"o",378046}},g={
 i(196590,{b=2,c={6,9,12},lvl=70,modID=3,spellID=380187,g={
 s(182819,200408,{b=1,c={6},f=7,lvl=70,modID=3}),
 s(182567,200345,{b=1,c={12},f=5,lvl=70,modID=3}),
@@ -53411,7 +53412,7 @@ s(181595,195524,{b=1,f=7,lvl=70,modID=5}),
 s(183421,195521,{b=1,f=20,lvl=70,modID=5}),
 s(181185,195526,{b=1,collectible=false,f=52,lvl=70,modID=5,spellID=394455}),
 s(181643,195522,{b=1,f=6,lvl=70,modID=5})}}),
-e(2499,{crs={189492,193909},g={
+e(2499,{crs={189492,193909},providers={{"o",378046}},g={
 i(196590,{b=2,c={6,9,12},lvl=70,modID=5,spellID=380187,g={
 s(182821,200408,{b=1,c={6},f=7,lvl=70,modID=5}),
 s(182569,200345,{b=1,c={12},f=5,lvl=70,modID=5}),
@@ -53622,7 +53623,7 @@ s(183422,195521,{b=1,f=20,lvl=70,modID=6}),
 s(181185,195526,{b=1,collectible=false,f=52,lvl=70,modID=6,spellID=394455}),
 s(181644,195522,{b=1,f=6,lvl=70,modID=6}),
 crit(64951,{achID=19566,awp=100206,rwp=110002,u=2})}}),
-e(2499,{crs={189492,193909},g={
+e(2499,{crs={189492,193909},providers={{"o",378046}},g={
 ach(16353,{
 title(488),
 crit(55144,{achID=16354,id=8}),
@@ -58543,7 +58544,7 @@ i(220305,{b=1,f=53,lvl=80,modID=4,spellID=445560}),
 s(221145,225588,{b=1,f=5,lvl=80,modID=4}),
 s(221204,212389,{b=1,f=28,lvl=80,modID=4}),
 i(225576,{b=1,f=52,lvl=80,modID=4})}}),
-e(2601,{npcID=217748,g={
+e(2601,{npcID=217748,providers={{"o",454188}},g={
 i(225626,{b=1,c={6,9,12},lvl=80,modID=4,spellID=456502,g={
 s(222563,212001,{b=1,c={6},f=7,lvl=80,modID=4}),
 s(222018,212064,{b=1,c={12},f=5,lvl=80,modID=4}),
@@ -58765,7 +58766,7 @@ i(220305,{b=1,f=53,lvl=80,modID=3,spellID=445560}),
 s(221144,225588,{b=1,f=5,lvl=80,modID=3}),
 s(194734,212389,{b=1,f=28,lvl=80,modID=3}),
 i(225576,{b=1,f=52,lvl=80,modID=3})}}),
-e(2601,{npcID=217748,g={
+e(2601,{npcID=217748,providers={{"o",454188}},g={
 i(225626,{b=1,c={6,9,12},lvl=80,modID=3,spellID=456502,g={
 s(194511,212001,{b=1,c={6},f=7,lvl=80,modID=3}),
 s(194574,212064,{b=1,c={12},f=5,lvl=80,modID=3}),
@@ -58979,7 +58980,7 @@ i(220305,{b=1,f=53,lvl=80,modID=5,spellID=445560}),
 s(221146,225588,{b=1,f=5,lvl=80,modID=5}),
 s(221205,212389,{b=1,f=28,lvl=80,modID=5}),
 i(225576,{b=1,f=52,lvl=80,modID=5})}}),
-e(2601,{npcID=217748,g={
+e(2601,{npcID=217748,providers={{"o",454188}},g={
 i(225626,{b=1,c={6,9,12},lvl=80,modID=5,spellID=456502,g={
 s(222564,212001,{b=1,c={6},f=7,lvl=80,modID=5}),
 s(222019,212064,{b=1,c={12},f=5,lvl=80,modID=5}),
@@ -59184,7 +59185,7 @@ i(220305,{b=1,f=53,lvl=80,modID=6,spellID=445560}),
 s(221147,225588,{b=1,f=5,lvl=80,modID=6}),
 s(221206,212389,{b=1,f=28,lvl=80,modID=6}),
 i(225576,{b=1,f=52,lvl=80,modID=6})}}),
-e(2601,{npcID=217748,g={
+e(2601,{npcID=217748,providers={{"o",454188}},g={
 ach(40241,{
 crit(67585,{achID=40246,id=6})}),
 i(225626,{b=1,c={6,9,12},lvl=80,modID=6,spellID=456502,g={
@@ -62702,8 +62703,8 @@ s(297850,250452,{f=25,lvl=90}),
 s(297847,250449,{f=20,lvl=90})}}),
 q(92034,{coords={
 [2413]={{38.8,66.6}}},crs={249776},isRaid=1,isWeekly=1,isWorldQuest=1,sym={{"select","encounterID",2829},{"pop"}}}),
-n(260875,{awp=120007,coords={
-[2600]={{78.4,69.2}}},isRaid=1,isWeekly=1,g={
+h(-759,{awp=120007,g={
+h(-19,{crs={260833,260875,261072},g={
 d(111,{difficulties={14,15},g={
 s(309213,275216,{f=35}),
 s(309214,275217,{f=25}),
@@ -62727,38 +62728,14 @@ h(-57,{rwp=120100,u=2,g={
 s(309224,275224,{f=4,modID=6,u=2}),
 s(309232,275225,{f=5,modID=6,u=2}),
 s(309240,275226,{f=6,modID=6,u=2}),
-s(309248,275227,{f=7,modID=6,u=2})}})}),
+s(309248,275227,{f=7,modID=6,u=2})}})})}})}}),
+n(260875,{awp=120007,coords={
+[2600]={{78.4,69.2}}},isRaid=1,isWeekly=1,g={
 crit(114969,{achID=62905,id=2}),
 crit(114969,{achID=63323,id=2}),
 crit(115079,{achID=62909,id=2})}}),
-n(260833,{awp=120007,coords={
-[2600]={{76.2,68.8}}},isRaid=1,isWeekly=1,sym={{"select","npcID",260875},{"pop"}}}),
 n(261072,{awp=120007,coords={
 [2618]={{40.2,77.5}}},isRaid=1,isWeekly=1,g={
-d(111,{difficulties={14,15},g={
-s(309213,275216,{f=35}),
-s(309214,275217,{f=25}),
-s(309215,275218,{f=27}),
-s(309216,275219,{f=28}),
-s(309217,275220,{f=25}),
-s(309218,275221,{f=23}),
-s(309219,275222,{f=26}),
-s(309220,275223,{f=31})}}),
-d(14,{
-s(309221,275224,{f=4,modID=3}),
-s(309229,275225,{f=5,modID=3}),
-s(309237,275226,{f=6,modID=3}),
-s(309245,275227,{f=7,modID=3})}),
-d(15,{
-s(309223,275224,{f=4,modID=5}),
-s(309231,275225,{f=5,modID=5}),
-s(309239,275226,{f=6,modID=5}),
-s(309247,275227,{f=7,modID=5}),
-h(-57,{rwp=120100,u=2,g={
-s(309224,275224,{f=4,modID=6,u=2}),
-s(309232,275225,{f=5,modID=6,u=2}),
-s(309240,275226,{f=6,modID=6,u=2}),
-s(309248,275227,{f=7,modID=6,u=2})}})}),
 crit(114968,{achID=62905,id=1}),
 crit(114968,{achID=63323,id=1}),
 crit(115078,{achID=62909,id=1})}})}}),
@@ -62825,11 +62802,11 @@ s(296341,249912,{b=1,f=4,lvl=90,modID=4,up=3}),
 i(249810,{b=1,f=53,lvl=90,modID=4,spellID=1259518,up=3})}})}})}),
 d(110,{difficulties={14,15,16},g={
 e(2739,{npcID=249637,g={
-ach(61381,{
-crit(109386,{achID=61380,id=9})})}}),
+ach(61381,{providers={{"n",255969}},g={
+crit(109386,{achID=61380,id=9})}})}}),
 e(2740,{npcID=214650,g={
-ach(62406,{
-crit(113120,{achID=61380,id=10})})}})}}),
+ach(62406,{providers={{"n",261683}},g={
+crit(113120,{achID=61380,id=10})}})}})}}),
 d(14,{
 h(-19,{crs={214650,249637},g={
 cu(3343,{rwp=120100,u=2})}}),
@@ -63568,7 +63545,7 @@ i(249808,{b=1,f=53,lvl=90,modID=4,spellID=1258283,up=3}),
 s(296049,249303,{b=1,f=6,lvl=90,modID=4,up=3}),
 s(296157,249330,{b=1,f=4,lvl=90,modID=4,up=3})}})}}),
 ah(3160,{type="d",g={
-e(2738,{npcID=244761,g={
+e(2738,{npcID=244761,providers={{"o",546729}},g={
 s(303935,260423,{b=1,f=25,lvl=90,modID=4,up=3}),
 s(296229,249382,{b=1,f=5,lvl=90,modID=4,up=3}),
 i(249368,{b=1,f=51,lvl=90,modID=4,spellID=1271211,up=3}),
@@ -63752,7 +63729,7 @@ s(296080,249311,{b=1,f=7,lvl=90,modID=3,up=5}),
 i(249808,{b=1,f=53,lvl=90,modID=3,spellID=1258283,up=5}),
 s(296048,249303,{b=1,f=6,lvl=90,modID=3,up=5}),
 s(296156,249330,{b=1,f=4,lvl=90,modID=3,up=5})}}),
-e(2738,{npcID=244761,g={
+e(2738,{npcID=244761,providers={{"o",546729}},g={
 s(302174,260423,{b=1,f=25,lvl=90,modID=3,up=5}),
 s(296228,249382,{b=1,f=5,lvl=90,modID=3,up=5}),
 i(249368,{b=1,f=51,lvl=90,modID=3,spellID=1271211,up=5}),
@@ -63932,7 +63909,7 @@ s(296082,249311,{b=1,f=7,lvl=90,modID=5,up=6}),
 i(249808,{b=1,f=53,lvl=90,modID=5,spellID=1258283,up=6}),
 s(296050,249303,{b=1,f=6,lvl=90,modID=5,up=6}),
 s(296158,249330,{b=1,f=4,lvl=90,modID=5,up=6})}}),
-e(2738,{npcID=244761,g={
+e(2738,{npcID=244761,providers={{"o",546729}},g={
 s(303936,260423,{b=1,f=25,lvl=90,modID=5,up=6}),
 s(296230,249382,{b=1,f=5,lvl=90,modID=5,up=6}),
 i(249368,{b=1,f=51,lvl=90,modID=5,spellID=1271211,up=6}),
@@ -64110,7 +64087,7 @@ s(296083,249311,{b=1,f=7,lvl=90,modID=6}),
 i(249808,{b=1,f=53,lvl=90,modID=6,spellID=1258283}),
 s(296051,249303,{b=1,f=6,lvl=90,modID=6}),
 s(296159,249330,{b=1,f=4,lvl=90,modID=6})}}),
-e(2738,{npcID=244761,g={
+e(2738,{npcID=244761,providers={{"o",546729}},g={
 ach(61377,{
 title(690)}),
 ach(61625,{rwp=120100,u=2}),

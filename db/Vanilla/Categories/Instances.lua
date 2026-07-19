@@ -1063,9 +1063,7 @@ i(19376,{b=1,f=52,lvl=60,q=4,u=13}),
 i(19382,{b=1,f=52,lvl=60,q=4,u=13}),
 i(19379,{b=1,f=53,lvl=60,q=4,u=13}),
 i(17964,{q=2,u=13}),
-i(17963,{q=2,u=13}),
-i(17969,{q=2,u=13}),
-i(17965,{q=2,u=13})}})}}),
+i(17969,{q=2,u=13})}})}}),
 inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,mapID=337,maps={233},rwp=40003,savedInstanceID=309,u=14,["zone-text-areaID"]=19,g={
 h(-12,{u=14,g={
 ach(957,{maps={1434},minReputation={270,42000},u=14})}}),
@@ -3626,7 +3624,7 @@ n(10899,{
 i(18779,{lvl=50,q=3,rwp=40001}),
 i(12848,{b=1,description="Found on the rack behind Anvilcrack in Upper Blackrock Spire.",providers={{"o",175970}},q=1,rwp=40003}),
 r(16990,{itemID=12834,learnedAt=300,q=3,requireSkill=17039}),
-r(16746,{itemID=12728,learnedAt=300,q=4,requireSkill=9788}),
+r(16746,{crs={10162,11583},itemID=12728,learnedAt=300,q=4,requireSkill=9788}),
 r(16993,{itemID=12837,learnedAt=300,q=3,requireSkill=17040}),
 s(163423,18048,{b=1,f=23,lvl=55,q=3}),
 s(160992,13502,{b=1,f=7,lvl=58,q=3}),
@@ -3708,7 +3706,7 @@ ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1
 ach(644,{maps={235,236,237,238,239},u=1101})}}),
 h(-31,{u=1101,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000);end	end,rwp=40003,u=1101,g={
-crit(8825,{achID=2336,id=1,u=13})}}),
+crit(8825,{achID=2336,id=5,u=13})}}),
 faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000);end	end,u=1101})}}),
 h(-45,{u=1101,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1101}),
@@ -3895,7 +3893,6 @@ h(-356,{coords={
 [1444]={{62.48,24.48}}},cost={{"i",18249,1}},mapID=235,u=1101,g={
 h(-63,{u=1101,g={
 i(18250,{awp=100105,b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},description="NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",q=2,rwp=40003,u=1101})}}),
-h(-45,{u=1101}),
 h(-19,{crs={14321,14323,14326},description="The following items can drop from any of the guards.",u=1101,g={
 s(163555,18462,{b=1,f=34,lvl=55,q=2,u=1101}),
 s(163556,18463,{b=1,f=25,lvl=55,q=2,u=1101}),
