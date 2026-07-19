@@ -997,7 +997,6 @@ root(ROOTS.Unsorted, {
 			i(276229),	-- Preyhunter's Trophy Stand
 			i(276230),	-- Pepe
 			i(276234),	-- Vibrant Venomfang
-			i(276246),	-- Mechanically Indistinguishable Pepe
 			i(276258),	-- Companion Command Crystal
 			i(276286),	-- Gnarled Heart
 			i(276297),	-- Rustbolt Jetpack
@@ -1065,15 +1064,8 @@ root(ROOTS.Unsorted, {
 			i(276803),	-- [PH]Writhes Mount - Pink
 			i(276881),	-- Breath of Blight
 			i(276882),	-- Breath of Ruin
-			i(277121),	-- Cozy Bird Nest
 			i(277137),	-- Wriggling Venom-Soaked Satchel
-			i(277138),	-- Silvermoon Dragonhawk Incubator
-			i(277142),	-- Westfall Pet Cage
-			i(277144),	-- Crossroads Pet Cage
-			i(277149),	-- Crude Pet Cage
 			i(277157),	-- Barnacle-Encrusted Chest
-			i(277160),	-- Cozy Lightbloom Lilypad
-			i(277163),	-- Loyal Companion's Plinth
 			i(277192),	-- Umbral Ashes
 			i(277261),	-- [PH] Pygmy Owl
 			i(277266),	-- The First Troll Legend
@@ -1561,18 +1553,6 @@ root(ROOTS.Unsorted, {
 			i(280118),	-- Venomous Aspirant's Medallion
 			i(280123),	-- Sharp Axe Holster
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280142),	-- Small Wooden Floor Tile
-			i(280144),	-- Large Wooden Floor Tile
-			i(280146),	-- Small Triangular Tile
-			i(280148),	-- Large Triangular Tile
-			i(280150),	-- Tall Round Column
-			i(280152),	-- Short Round Column
-			i(280154),	-- Short Square Column
-			i(280156),	-- Tall Square Column
-			i(280158),	-- Small Wooden Wall Tile
-			i(280160),	-- Large Wooden Wall Tile
-			i(280162),	-- Wide Wooden Staircase
-			i(280164),	-- Spiraling Wooden Stairs
 			i(280178),	-- Poison Dart Frog
 			i(280189),	-- Cauldron Concoction
 			i(280215),	-- Tortollan Tarp Tent

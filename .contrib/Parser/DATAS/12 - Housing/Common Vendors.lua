@@ -535,6 +535,47 @@ root(ROOTS.Housing, {
 			}),
 		},
 	}),
+	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
+		["crs"] = {
+			257332,	-- Devin Slatesmith <Decor Vendor> [Founder's Point]
+			257257,	-- Merki <Decor Vendor> [Razorwind Shores]
+		},
+		["groups"] = {
+			i(280148),	-- Large Triangular Wooden Tile (DECOR!)
+			i(280144),	-- Large Wooden Floor Tile (DECOR!)
+			i(280160),	-- Large Wooden Wall Tile (DECOR!)
+			i(280152),	-- Short Round Wooden Column (DECOR!)
+			i(280154),	-- Short Square Wooden Column (DECOR!)
+			i(280146),	-- Small Triangular Wooden Tile (DECOR!)
+			i(280142),	-- Small Wooden Floor Tile (DECOR!)
+			i(280158),	-- Small Wooden Wall Tile (DECOR!)
+			i(280164),	-- Spiral Wooden Stairs (DECOR!)
+			i(280150),	-- Tall Round Wooden Column (DECOR!)
+			i(280156),	-- Tall Square Wooden Column (DECOR!)
+			i(280162),	-- Wide Wooden Staircase (DECOR!)
+		},
+	}),
+	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
+		["crs"] = {
+			267795,	-- Perry Winkles <Pet Decor Vendor> [Founder's Point]
+			267794,	-- Agratha <Pet Decor Vendor> [Razorwind Shores]
+		},
+		["groups"] = {
+			i(277121),	-- Cozy Bird Nest (DECOR!)
+			i(277160),	-- Cozy Lightbloom Lilypad (DECOR!)
+			i(277144),	-- Crossroads Pet Cage (DECOR!)
+			i(277149),	-- Crude Pet Cage (DECOR!)
+			i(277163),	-- Loyal Companion's Plinth (DECOR!)
+			i(276246, {	-- Mechanically Indistinguishable Pepe (DECOR!)
+				-- There should be a Pepe, sitting atop one of the Bulletin Board pillars. You interact with it and then go to the vendors to buy a Mechanical version.
+				["cost"] = { { "c", 3363, 10 } },	-- 10x Community Coupons
+			}),
+			i(277138),	-- Silvermoon Dragonhawk Incubator (DECOR!)
+			i(277142),	-- Westfall Pet Cage (DECOR!)
+		},
+	}),
 	n(VENDORS, {
 		n(255654, {	-- Lorisin
 			["coord"] = { 41.6, 61.8, FOUNDERS_POINT },
