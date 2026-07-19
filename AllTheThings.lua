@@ -552,13 +552,15 @@ local function GetSearchResults(method, paramA, paramB, options)
 		if #group > 0 then
 			-- For Creatures, Objects and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 			if paramA == "npcID" or paramA == "creatureID" or paramA == "encounterID" or paramA == "objectID" then
-				local subgroup = {};
-				for _,j in ipairs(group) do
-					if not j.ShouldExcludeFromTooltip then
-						tinsert(subgroup, j);
+				local subgroup = {}
+				local o
+				for i=1,#group do
+					o = group[i]
+					if not o.ShouldExcludeFromTooltip then
+						subgroup[#subgroup + 1] = o
 					end
 				end
-				group = subgroup;
+				group = subgroup
 			elseif paramA == "azeriteessenceID" then
 				local regroup = {};
 				local rank = options and options.Rank
