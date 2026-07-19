@@ -504,6 +504,7 @@ local UpdateCostTypeFunc = setmetatable({
 	s = UpdateCostsBySpellID,
 	o = app.EmptyFunction,	-- objects are not costs, but can be providers
 	n = app.EmptyFunction,	-- NPCs are not costs but can be providers
+	g = app.EmptyFunction,	-- gold sometimes defined as a cost type
 }, { __index = function(t, key)
 	app.report("Unhandled Cost Update Type",key)
 	return app.EmptyFunction
