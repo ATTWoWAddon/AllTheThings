@@ -2560,6 +2560,7 @@ local AccountWideQuestsDB = {
 	93008,	-- Decor Treasure Hunt
 	93009,	-- Decor Treasure Hunt
 	93033,	-- Triggers when you spawn in Bazaar for the first time [Remix: Legion]
+	93042,	-- Golden Cloud Serpent Treasure Chest
 	93057,	-- A House For You
 	93073,	-- Decor Treasure Hunt
 	93074,	-- Decor Treasure Hunt
@@ -2635,6 +2636,7 @@ local AccountWideQuestsDB = {
 	93489,	-- Awe'ohna's Path--Part 3: The Cradle
 	93490,	-- Awe'ohna's Path--Part 2: Answers
 	93491,	-- Awe'ohna's Path--Part 1: Questions
+	93509,	-- Quest #93509*
 	93515,	-- Quest #93515*
 	93548,	-- A Trove of Voidlight Marl
 	93549,	-- A Cluster of Voidlight Marl
@@ -2644,16 +2646,26 @@ local AccountWideQuestsDB = {
 	93558,	-- Forgotten Mural
 	93687,	-- Taste True Power
 	93784,	-- A Gnawing Void of Curiosity
+	93804,	-- "Dispelling Leap" Kit
+	93805,	-- "Swift" Kit
+	93806,	-- "Nullification Field" Kit
+	93807,	-- "Riftwalk" Kit
+	93808,	-- "Clockwork Sentinel" Kit
+	93809,	-- "Stealth" Kit
 	93817,	-- Quest #93817*
 	93818,	-- Quest #93818*
 	93819,	-- Amani Rep
 	93820,	-- The Singularity Rep
 	93821,	-- Silvermoon Court Rep
 	93822,	-- Hara'ti Rep
+	93838,	-- "Make Decoy" Enhancement
+	93839,	-- "Eccentro-Magic Pulse" Enhancement
 	93859,	-- Sin'dorei Gravestone
 	93866,	-- Quest #93866*
 	93867,	-- Delver's Delight
 	93868,	-- Death's Hope
+	93869,	-- Pious Memorial
+	93870,	-- The Ephemeron Masquerade
 	93872,	-- Prey Complete - Normal #1
 	93873,	-- ??
 	93874,	-- Prey Complete - Hard #2
@@ -2661,6 +2673,7 @@ local AccountWideQuestsDB = {
 	93880,	-- Delver's Starter Kit
 	93881,	-- Delver's Cosmetic Surprise Bag
 	93907,	-- Edification of the Worthy
+	93914,	-- Quest #93914*
 	93922,	-- A Singular Focus Unleashed
 	93923,	-- Tenacity of the Shul'ka
 	93924,	-- An Unrelenting March
@@ -2809,12 +2822,14 @@ local AccountWideQuestsDB = {
 	95001,	-- Quest #95001*
 	95002,	-- Quest #95002*
 	95003,	-- Quest #95003*
+	95044,	-- Quest #95044*
 	95166,	-- Pet the Dog (245551)
 	95268,	-- New Tools, New Heights
 	95271,	-- The Ascendant Nilhammer
 	95324,	-- The War Beyond the Roots
 	95373,	-- A Nebulous Endeavour
 	95375,	-- Quest #95375*
+	95405,	-- Quest #95405*
 	95406,	-- Lost Animals
 	95413,	-- Community Engagement
 	95416,	-- Going Postal
@@ -2837,6 +2852,7 @@ local AccountWideQuestsDB = {
 	95552,	-- Dark Obelisk Investigation
 	95553,	-- Manifested Destiny
 	95554,	-- Questionable Power
+	96100,	-- Quest #96100*
 	96114,	-- A Small Pouch of Crystals
 	96115,	-- A Small Pouch of Crystals
 	96116,	-- A Cache of Crystals
@@ -2848,9 +2864,11 @@ local AccountWideQuestsDB = {
 	96124,	-- A Small Bundle of Goods
 	96214,	-- Tracking Quest
 	96215,	-- Tracking Quest
+	96534,	-- Preparing for Threats
 	96744,	-- Bouncy Mushrooms
 	96745,	-- Aerospores
 	96790,	-- ??
+	96791,	-- Quest #96791*
 	96845,	-- The Grappler
 	96936,	-- Accolades for the Umbral Contender
 	97111,	-- ??
