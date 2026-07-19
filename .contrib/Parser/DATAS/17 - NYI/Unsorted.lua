@@ -30,7 +30,6 @@ root(ROOTS.Unsorted, {
 			i(253473),	-- Unearthed Sarcophagus Base
 			i(253481),	-- Masterful Sin'dorei Gravestone
 			i(254561),	-- Ogre Champion's Prized Skull
-			i(255649),	-- Amani Water Well
 			i(255702),	-- [PH] Snake Corpse
 			i(258027),	-- Vaunted Preyhunter's Shoulder-Spikes
 			i(258029),	-- Vaunted Preyhunter's Plumed Helm
@@ -46,9 +45,7 @@ root(ROOTS.Unsorted, {
 			i(260426),	-- Bloodied Whetstone
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
-			i(263317),	-- Amani Wicker Crate
 			i(263520),	-- Ensemble: Sprawling Garb
-			i(263708),	-- Amani Anvil
 			i(263874),	-- Emerald-Encrusted Amani Ritual Skull
 			i(263875),	-- Griftah's Resizing Hex-Skull
 			i(263880),	-- Cherished Pet's Rug
@@ -99,13 +96,11 @@ root(ROOTS.Unsorted, {
 			i(268964),	-- Familiar Amani Headdress
 			i(268965),	-- Familiar Threshadon Tooth Necklace
 			i(268968),	-- Hastily Written Note
-			i(269029),	-- Bag of Totally Legitimate Amani Goods
 			i(269578),	-- Poison Dart Frog Gland
 			i(269637),	-- Serpent-Caller Spike
 			i(269720),	-- Corrosive Hekte
 			i(269918),	-- Venom-Corroded Gallstone
 			i(270191),	-- Lil'Kruul's Hilt
-			i(270210),	-- Bird Feathers
 			i(270211),	-- Furiostraza's Filter
 			i(270249),	-- Cursed Spawn
 			i(270267),	-- Twilight Missive
@@ -737,22 +732,9 @@ root(ROOTS.Unsorted, {
 			i(274474),	-- White Housing Dye
 			i(274475),	-- Yellow Housing Dye
 			i(274476),	-- Spark of Tides
-			i(274481),	-- Keepsake Corruption
 			i(274494),	-- Chiral Marrowgrafter
 			i(274495),	-- Pulse Seeker's Oculus
 			i(274499),	-- Toxiferous Transfusion
-			i(274505),	-- Shrine of Akil'zon, Loa of Victory
-			i(274518),	-- Amani Decorative Plinth
-			i(274521),	-- Amani Road Marker
-			i(274523),	-- Woven Forest Troll Rug
-			i(274525),	-- Steamy Romance Tablet
-			i(274527),	-- Amani Building Peg
-			i(274529),	-- Forest Troll Fence
-			i(274531),	-- Forest Troll Fencepost
-			i(274533),	-- Witch Doctor's Punch Bowl
-			i(274535),	-- Shrine of Nalorakk, Loa of War
-			i(274537),	-- Shrine of Jan'alai, Loa of Fire
-			i(274539),	-- Shrine of Halazzi, Loa of the Hunt
 			i(274579),	-- Undamaged Trap Needle
 			i(274587),	-- Spotted Killifish
 			i(274588),	-- Toxic Tlhapi

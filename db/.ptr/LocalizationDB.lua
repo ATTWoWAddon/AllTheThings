@@ -1743,6 +1743,7 @@ localize(L.HEADER_NAMES, {
 	[-759] = "Showdown",
 	[-760] = "Lunar New Year Adventure",
 	[-761] = "Portal Bridges",
+	[-762] = "Amani Endeavor",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2482,6 +2483,7 @@ localize(L.HEADER_ICONS, {
 	[-759] = 7649260,
 	[-760] = 7360957,
 	[-761] = 6994475,
+	[-762] = 7672957,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

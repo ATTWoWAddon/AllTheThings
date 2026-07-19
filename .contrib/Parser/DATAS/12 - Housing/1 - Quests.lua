@@ -96,8 +96,8 @@ root(ROOTS.Housing, {
 					{ 53.1, 40.1, FOUNDERS_POINT },	-- Lyssabel Dawnpetal
 					{ 55.3, 57.6, RAZORWIND_SHORES },	-- Tocho Couldhide
 				},
-				["groups"] = { i(239098) },	-- Neighborhood Charter
 				["timeline"] = { ADDED_12_0_0 },
+				["groups"] = { i(239098) },	-- Neighborhood Charter
 			}),
 			q(94995, {	-- To Dye For
 				["qgs"] = {
@@ -121,6 +121,23 @@ root(ROOTS.Housing, {
 				["isWeekly"] = true,
 				["timeline"] = { ADDED_12_0_7 },
 				["groups"] = { i(269010) },	-- Essence of Lumber
+			}),
+			q(98204, {	-- Cursed Keepsake
+				["description"] = "You can complete and obtain only 1 of 2 offered Decor Scenarios per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",
+				-- Exo Note: Not sure if this is the Amani Endeavor related or not. Placing here for now.
+				["qg"] = 262726,	-- Cursed Keepsake
+				["coords"] = {
+					{ 52.7, 37.6, FOUNDERS_POINT },	-- Cursed Kaldorei Candle
+					{ 53.7, 57.4, RAZORWIND_SHORES },	-- Cursed Elven Mirror
+				},
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = {
+					i(274481),	-- Keepsake Corruption (QI!)
+					--
+					i(267355),	-- Purified Elven Mirror (DECOR!)
+					i(267435),	-- Purified Kaldorei Candle (DECOR!)
+				},
 			}),
 		},
 	}),
@@ -237,7 +254,7 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(93629),	-- Triggered after completing 'Time to Decorate'
 				q(94392),	-- Triggered after talking to flora decor
 				-- q(91029),	-- Triggered after talking to Xiz'ro <Lumberjack> (added in 11.1.7, probably not housing related?)
-				q(95166,{isDaily=true}),	-- Pet the Dog (245551)
+				q(95166,{isDaily=true}),	-- Pet the Dog (245551) or Cat (235461)
 			},
 		}),
 	}),

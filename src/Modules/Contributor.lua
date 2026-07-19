@@ -3401,6 +3401,7 @@ MobileDB.GameObject = {
 	[638873] = true,	-- Orb of Translocation
 	[639875] = true,	-- Feather of Jan'alai (q:94870)
 	[641533] = true,	-- Corrupted Lantern (q:92320)
+	[642704] = true,	-- Seagull Feather (q:95673)
 	[649481] = true,	-- Wood Debris (q:96111)
 	[650051] = true,	-- Faithbreaker Ger'lok's Ritual Chest [Broken Throne, Ritual Site]
 	[651112] = true,	-- Omnial Anomaly

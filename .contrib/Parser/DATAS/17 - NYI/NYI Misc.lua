@@ -2306,6 +2306,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 12.1.0
 		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+			i(281540),	-- Roomy McRommerson (DECOR!)
 			i(271679),	-- Set Keystone Level: 2
 			i(271944),	-- Set Keystone Map: Altar of Fangs
 			i(271958),	-- Set Keystone Map: Den of Nalorakk

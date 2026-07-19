@@ -77,7 +77,6 @@ ach(63437),	-- Gnarldor Isle Stories
 ach(63438),	-- Gnarldor Isle clears
 ach(63439),	-- The Ring of Glory clears
 ach(63440),	-- Tox'Atal clears
-ach(63441),	-- Souvenir Seeker, Razorwind Shores
 ach(63451),	-- Scales for Days
 ach(63452),	-- Fangs for the Memories
 ach(63453),	-- One, Two, Ral'kala's Coming for You
@@ -85,8 +84,6 @@ ach(63454),	-- Nine, Ten, Never Sleep Again
 ach(63457),	-- Let Sleeping Skulls Lie
 ach(63472),	-- Fang Fatale
 ach(63473),	-- Sssensational!
-ach(63605),	-- Souvenir Seeker, Founder's Point
-ach(63606),	-- Superlative Souvenir Seeker
 ach(63608),	-- Venomous Vestments
 ach(63611),	-- Big Prey Hunter (Season 2)
 ach(63621),	-- Keystone Victor: Altar of Fangs

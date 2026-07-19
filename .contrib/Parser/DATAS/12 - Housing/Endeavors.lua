@@ -58,6 +58,13 @@ MECHAGNOME_ENDEAVOR = createHeader({
 		cn = "机械侏儒文化",
 	},
 });
+AMANI_ENDEAVOR = createHeader({
+	readable = "Amani Endeavor",
+	icon = 7672957,	-- TEMP: Update once Ui_endeavor_amani gets implemented
+	text = {
+		en = "Amani Endeavor",
+	},
+});
 
 local EndeavorVendorCoords = {
 	{ 53.1, 38.3, FOUNDERS_POINT },
@@ -77,8 +84,68 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 		n(REWARDS, {
 			currency(COMMUNITY_COUPONS),
 		}),
-		-- n(TREASURES, {
-		-- }),
+		n(AMANI_ENDEAVOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+			n(260485, {	-- Griftah <Endeavor Trader>
+				["coords"] = EndeavorVendorCoords,
+				["groups"] = {
+					i_DecorCoupons(263708, 15),	-- Amani Anvil (DECOR!)
+					i_DecorCoupons(274527, 2),	-- Amani Building Peg (DECOR!)
+					i_DecorCoupons(274518, 20),	-- Amani Decorative Plinth (DECOR!)
+					i_DecorCoupons(274521, 15),	-- Amani Road Marker (DECOR!)
+					i_DecorCoupons(255649, 15),	-- Amani Water Well (DECOR!)
+					i_DecorCoupons(263317, 10),	-- Amani Wicker Crate (DECOR!)
+					i(269029, {	-- Bag of Totally Legitimate Amani Goods (DECOR!)
+						["cost"] = { { "i", 269994, 1 } },	-- 1x Griftah's Token of Appreciation
+					}),
+					i_DecorCoupons(274529, 15),	-- Forest Troll Fence (DECOR!)
+					i_DecorCoupons(274531, 10),	-- Forest Troll Fencepost (DECOR!)
+					i_DecorCoupons(274505, 30),	-- Shrine of Akil'zon, Loa of Victory (DECOR!)
+					i_DecorCoupons(274539, 30),	-- Shrine of Halazzi, Loa of the Hunt (DECOR!)
+					i_DecorCoupons(274537, 30),	-- Shrine of Jan'alai, Loa of Fire (DECOR!)
+					i_DecorCoupons(274535, 30),	-- Shrine of Nalorakk, Loa of War (DECOR!)
+					i_DecorCoupons(274525, 10),	-- Steamy Romance Tablet (DECOR!)
+					i_DecorCoupons(274533, 15),	-- Witch Doctor's Punch Bowl (DECOR!)
+					i_DecorCoupons(274523, 15),	-- Woven Forest Troll Rug (DECOR!)
+				},
+			}),
+			n(QUESTS, sharedData({
+				["isWeekly"] = true,
+			}, {
+				q(95336, {	-- Frenzied Fossicking
+					["qg"] = 263442,	-- Tol'anja
+					["coords"] = {
+						{ 52.7, 38.4, FOUNDERS_POINT },
+						{ 54.2, 56.8, RAZORWIND_SHORES },
+					},
+				}),
+				q(95768, {	-- My Stuff's Better Than Your Stuff
+					["qgs"] = {
+						262669,	-- Garben Rockfist
+						262240,	-- Arnold Guyvere
+					},
+					["coords"] = {
+						{ 53.0, 37.5, FOUNDERS_POINT },
+						{ 54.4, 56.0, RAZORWIND_SHORES },
+					},
+				}),
+				q(95673, {	-- Suspicious Scare-gull
+					["qg"] = 262234,	-- Calada
+					["coords"] = {
+						{ 52.5, 38.6, FOUNDERS_POINT },
+						{ 54.3, 57.1, RAZORWIND_SHORES },
+					},
+					["groups"] = {
+						o(642704, {	-- Seagull Feather
+							i(270210),	-- Bird Feathers (QI!)
+						}),
+					},
+				}),
+			})),
+			n(EVENT_COMPLETION, {
+				-- I think this goes here. Though there are indications that this item can be "found" somewhere on the Coiled Isle
+				i(269994),	-- Griftah's Token of Appreciation
+			}),
+		})),
 		n(DRACONIC_ENDEAVOR, {
 			n(250820, {	-- Hordranin <Endeavor Trader>
 				["coords"] = EndeavorVendorCoords,
@@ -310,7 +377,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 						{ 53.0, 37.2, FOUNDERS_POINT },	-- Founder's Point
 						{ 53.8, 55.6, RAZORWIND_SHORES },	-- Razorwind Shores
 					},
-					["groups"] = { i(253316) },	-- Scoped Max Falcon Stealth Dragon 90 (QI!)
+					["groups"] = { i(253316) },	-- Scoped Max Falcon Stealth Dragon 90 (PQI!)
 				}),
 			})),
 		}),

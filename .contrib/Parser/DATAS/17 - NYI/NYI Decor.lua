@@ -473,7 +473,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(10784),	-- [DNT] [AUTOGEN] 12XP_Generic_Furniture_Canvas01.m2
 			rawdecor(10788),	-- [DNT] [AUTOGEN] 12XP_Generic_Furniture_Canvas04.m2
 			rawdecor(10790),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Special_EnergyFocus01.m2
-			rawdecor(10859),	-- [DNT] [AUTOGEN] 12TR_Amani_Structure_Fountain02.m2
 			rawdecor(10861),	-- [DNT] [AUTOGEN] 12PM_Primitive_Cooking_Bowl01.m2
 			rawdecor(10862),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack04.m2
 			rawdecor(10863),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack05.m2
@@ -559,7 +558,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(15067),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_LargeTent01.m2
 			rawdecor(15068),	-- [DNT] [AUTOGEN] 12PM_Primitive_Storage_Gourd03.m2
 			rawdecor(15154),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack11.M2
-			rawdecor(15157),	-- [DNT] [AUTOGEN] 12TR_Amani_Storage_Crate02.m2
 			rawdecor(15159),	-- [DNT] [AUTOGEN] 12TR_Amani_Storage_Basket02.m2
 			rawdecor(15161),	-- [DNT] [AUTOGEN] 12TR_Amani_Storage_Basket05.m2
 			rawdecor(15162),	-- [DNT] [AUTOGEN] 11WE_WildElves_Cooking_Ladle01.m2
@@ -569,7 +567,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(15257),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_WeaponrackEmpty01.m2
 			rawdecor(15258),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Structure_Statue04.M2
 			rawdecor(15259),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_LargeTent02.m2
-			rawdecor(15265),	-- [DNT] [AUTOGEN] 12TR_Amani_Crafting_Anvil01.m2
 			rawdecor(15266),	-- [DNT] [AUTOGEN] 12TR_Amani_Crafting_WorkBench01.m2
 			rawdecor(15284),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_Skull01.m2
 			rawdecor(15285),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_Skull02.m2

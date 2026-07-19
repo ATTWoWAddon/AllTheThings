@@ -2,6 +2,10 @@
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
 root(ROOTS.Housing, n(ACHIEVEMENTS, {
+	["maps"] = {
+		FOUNDERS_POINT,
+		RAZORWIND_SHORES,
+	},
 	["timeline"] = { ADDED_11_2_7 },
 	["groups"] = {
 		-- Collecting
@@ -17,6 +21,17 @@ root(ROOTS.Housing, n(ACHIEVEMENTS, {
 		ach(61317),	-- Domicile Designer				(450)
 		ach(61318, {	-- Fully Furnished				(500)
 			title(657),	-- <Name> the Furnished
+		}),
+		ach(63605, {	-- Souvenir Seeker, Founder's Point
+			["maps"] = { FOUNDERS_POINT },
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		ach(63441, {	-- Souvenir Seeker, Razorwind Shores
+			["maps"] = { RAZORWIND_SHORES },
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		ach(63606, {	-- Superlative Souvenir Seeker
+			["timeline"] = { ADDED_12_1_0 },
 		}),
 		-- Couponing
 		ach(62371, {	-- Couponing for Beginners

@@ -14,6 +14,7 @@ HeaderAssignments = {
 	["All Roles"] = -311,
 	["Alliance"] = -210,
 	["Allied Races"] = -6,
+	["Amani Endeavor"] = -762,
 	["Amateur Hunters"] = -395,
 	["Amazon Prime Gaming"] = -519,
 	["Ancient Waygates"] = -459,
@@ -741,4 +742,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -762;
+NextHeaderID = -763;
