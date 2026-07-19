@@ -85,8 +85,9 @@ is(22739, 28271, MAGE);				-- Tome of Polymorph: Turtle
 -----------------
 -- PATCH 3.0.3 --
 -----------------
-is(44714, 61316, MAGE);				-- Tome of Dalaran Brilliance [REMOVED]
+-- #if BEFORE CATA
 is(44602, 61024, MAGE);				-- Tome of Dalaran Intellect [REMOVED]
+-- #endif
 is(44709, 61305, MAGE);				-- Tome of Polymorph: Black Cat
 --- NYI ---
 is(44600, 61025, MAGE);				-- Tome of Polymorph: Serpent
@@ -99,8 +100,15 @@ is(44793, 61721, MAGE);				-- Tome of Polymorph: Rabbit
 -----------------
 -- PATCH 3.3.5 --
 -----------------
---- NYI ---
 is(44811, 61780, MAGE);				-- Tome of Polymorph: Turkey
+
+-----------------
+-- PATCH 4.0.1 --
+-----------------
+-- #if AFTER CATA
+is(44602, 61316, MAGE);				-- Tome of Dalaran Brilliance (Tome of Dalaran Intellect existing copies replaced with this) [REMOVED]
+is(44714, 61316, MAGE);				-- Tome of Dalaran Brilliance (Vendor version) [REMOVED]
+-- #endif
 
 -----------------
 -- PATCH 5.0.4 --
