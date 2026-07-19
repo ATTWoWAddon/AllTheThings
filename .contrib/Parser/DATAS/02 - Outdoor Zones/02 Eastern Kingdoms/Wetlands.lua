@@ -978,6 +978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 11.0, 57.7, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["_drop"] = { "g" },	-- Healing Potion in API data
 				}),
 				q(473, {	-- Report to Captain Stoutfist
 					["sourceQuest"] = 455,	-- The Algaz Gauntlet
