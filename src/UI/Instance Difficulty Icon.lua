@@ -37,5 +37,5 @@ local function CallbackDifficultyIconUpdate()
 end
 
 -- when this event fires, the difficultyID can still be detected as 0
-app.AddEventRegistration("UPDATE_INSTANCE_INFO", CallbackDifficultyIconUpdate)
+app.AddEventHandler("OnSavesUpdated", CallbackDifficultyIconUpdate)
 app.AddEventRegistration("RAID_INSTANCE_WELCOME", CallbackDifficultyIconUpdate)
