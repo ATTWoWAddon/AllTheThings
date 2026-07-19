@@ -141,8 +141,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 			})),
-			n(EVENT_COMPLETION, {
-				-- I think this goes here. Though there are indications that this item can be "found" somewhere on the Coiled Isle
+			n(REWARDS, {
 				i(269994),	-- Griftah's Token of Appreciation
 			}),
 		})),
