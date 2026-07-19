@@ -519,6 +519,8 @@ local function PassivelyExpandGroupsRecursively(group, expanded)
 	if g and
 		-- incomplete things actually exist below itself
 		((group.total or 0) > (group.progress or 0)) and
+		-- not something Filled
+		not (group.filledReagent or group.filledCost or group.filledUpgrade) and
 		-- account/debug mode is active or it is not a 'saved' thing for this character
 		(app.MODE_DEBUG_OR_ACCOUNT or not group.saved or IgnoreSavedExpansionTypes[group.__type])
 	then
@@ -535,6 +537,8 @@ local function ConditionallyExpandGroupsRecursively(group, expanded)
 	if g and
 		-- incomplete things actually exist below itself
 		((group.total or 0) > (group.progress or 0)) and
+		-- not something Filled
+		not (group.filledReagent or group.filledCost or group.filledUpgrade) and
 		-- account/debug mode is active or it is not a 'saved' thing for this character
 		(app.MODE_DEBUG_OR_ACCOUNT or not group.saved or IgnoreSavedExpansionTypes[group.__type])
 	then
