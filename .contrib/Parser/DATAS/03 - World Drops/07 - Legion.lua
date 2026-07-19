@@ -183,6 +183,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 			}),
 			i(141918),	-- Formula: Enchant Neck - Mark of the Trained Soldier [Rank 3] (RECIPE!)
 		}),
+		prof(FISHING, {
+			i(137695, {	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
+				["description"] = "Fished from Coastal Pools.",
+				["maps"] = {
+					AZSUNA,
+					BROKEN_SHORE,
+					HIGHMOUNTAIN,
+					STORMHEIM,
+					SURAMAR,
+					VALSHARAH,
+				},
+			}),
+		}),
 		prof(INSCRIPTION, {
 			i(137729),	-- Technique: Codex of the Tranquil Mind [Rank 1] (RECIPE!)
 			i(141043),	-- Technique: Glyph of Arachnophobia (RECIPE!)

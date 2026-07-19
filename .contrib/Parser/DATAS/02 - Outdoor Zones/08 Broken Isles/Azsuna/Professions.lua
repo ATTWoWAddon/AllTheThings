@@ -40,7 +40,6 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
 					i(137775, {	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3] (RECIPE!)
 						["description"] = "Cursed Queenfish pools are recommended, as they can give access to Ghostly Queenfish pools which do not deplete so long as the buff lasts.",
 						["timeline"] = { ADDED_7_1_0 },

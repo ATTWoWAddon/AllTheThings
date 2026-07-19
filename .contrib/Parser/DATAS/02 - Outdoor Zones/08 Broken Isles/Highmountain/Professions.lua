@@ -39,7 +39,6 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
 				}),
 				prof(TAILORING, {
 					i(137681, {	-- Pattern: Bloodtotem Saddle Blanket
