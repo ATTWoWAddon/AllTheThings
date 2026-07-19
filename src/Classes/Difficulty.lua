@@ -171,8 +171,8 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["ignoreSourceLookup"] = app.ReturnTrue,
 	["ShouldExcludeFromTooltip"] = function(t)
 		local difficultyID = app.GetCurrentDifficultyID();
+		-- app.PrintDebug(difficultyID, t.text, t.difficultyHash[difficultyID]);
 		if difficultyID > 0 then
-			-- print(difficultyID, t.text, t.difficultyHash[difficultyID]);
 			return not t.difficultyHash[difficultyID];
 		end
 		return app.BaseClass.__class.ShouldExcludeFromTooltip(t)

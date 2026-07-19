@@ -842,7 +842,11 @@ local function GetSearchResults(method, paramA, paramB, options)
 		group = root;
 		-- Ensure some specific relative values are captured in the base group
 		-- can make this a loop if there ends up being more needed...
-		group.difficultyID = GetRelativeValue(group, "difficultyID");
+		if options and options.ForceDifficulty then
+			group.difficultyID = app.GetCurrentDifficultyID()
+		else
+			group.difficultyID = GetRelativeValue(group, "difficultyID")
+		end
 		-- Ensure no weird parent references attached to the base search result if there were multiple search results
 		group.parent = nil;
 		if clearSourceParent then

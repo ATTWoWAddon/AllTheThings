@@ -814,7 +814,7 @@ end
 local AttachTypicalSearchResults
 do
 	local DefaultSearchOptions = { AppendSearchParams = { "field", true }}
-	local NPCSearchOptions = { AppendSearchParams = { "none", true }}
+	local NPCSearchOptions = { AppendSearchParams = { "none", true }, ForceDifficulty = true }
 	local SearchOptionByField = setmetatable({
 		-- TODO: still need this for provider-types which don't translate into Cost...
 		-- will have to adjust how NPC-linked data is Filled so we can consistently
