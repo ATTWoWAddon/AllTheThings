@@ -61,10 +61,17 @@ end
 -- Most of the time, there's no reason for ATT to try handling game events until it's even ready to do anything with it
 -- So instead of individually adding a bazillion OnReady event registrations, let's just have one method do that all for us
 local OnReadyEventRegistrations = {}
+local function CheckDuplicateRootEventRegistration(event)
+	if rawget(app.events, event) or OnReadyEventRegistrations[event] then
+		app.report("Duplicate Root Event Registration!",event)
+	end
+end
 app.AddEventRegistration = function(event, func, doNotPreRegister)
 	if not event or not func then
-		app.print("AddEventRegistration invalid call",event,func)
+		app.report("AddEventRegistration invalid call",event,tostring(func))
+		return
 	end
+	CheckDuplicateRootEventRegistration(event)
 	if doNotPreRegister then
 		app.events[event] = func
 	else
@@ -91,8 +98,10 @@ app.AddEventHandler("OnReady", function()
 	-- in case future events are registered, they need to directly be registered
 	app.AddEventRegistration = function(event, func)
 		if not event or not func then
-			app.print("AddEventRegistration invalid call",event,func)
+			app.report("AddEventRegistration invalid call",event,tostring(func))
+			return
 		end
+		CheckDuplicateRootEventRegistration(event)
 		app:RegisterFuncEvent(event, func)
 	end
 end)
