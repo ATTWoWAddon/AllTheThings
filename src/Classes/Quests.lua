@@ -1056,7 +1056,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		end
 		app.Sort(CompleteQuestSequence)
 	end)
-	app.AddEventRegistration("LOOT_OPENED", RefreshAllQuestInfo)
+	app.AddEventRegistration("LOOT_READY", RefreshAllQuestInfo)
 	app.AddEventHandler("OnPlayerLevelUp", RefreshAllQuestInfo);
 else	-- no C_QuestLog_GetAllCompletedQuestIDs
 	local UpdateQuestIDs = {}
