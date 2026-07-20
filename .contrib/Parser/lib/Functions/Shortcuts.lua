@@ -1836,6 +1836,19 @@ do
 	DATAGROUP = SelfAutoTable({})
 	IDGROUP = SelfAutoTable({})
 	SYM = SelfAutoTable({})
+	local symselector = 0
+	local NextSymSelector = function()
+		symselector = symselector + 1
+		return symselector
+	end
+	-- Provides a Unique value for each unique Key referenced on the table
+	SymSelector = setmetatable({}, {
+		__index = function(t, key)
+			local s = NextSymSelector()
+			t[key] = s
+			return s
+		end
+	});
 end
 
 -- Temporary function to force Items to use the Misc filter so that they do not get turned into Recipes by the Parser

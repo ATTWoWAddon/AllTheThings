@@ -963,6 +963,10 @@ end
 fieldConverters.expansionID = function(group, value)
 	CacheField(group, "expansionID", value);
 end
+-- symselector will make it easier to select specific headers when many share the same ID without having to traverse huge grouping selections
+fieldConverters.symselector = function(group, value)
+	CacheField(group, "symselector", value);
+end
 end
 
 --[[
