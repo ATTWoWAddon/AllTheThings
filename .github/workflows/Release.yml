@@ -16,6 +16,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Prevent alpha, manual, and tagged releases from publishing at the same time.
+concurrency:
+  group: release-publishing
+  cancel-in-progress: false
+
 jobs:
   # Check for changes since last tag
   check-changes:
