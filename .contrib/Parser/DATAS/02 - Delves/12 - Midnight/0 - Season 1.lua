@@ -54,7 +54,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 		["groups"] = {
 			-- MID Season 1 Boss
 			m(TORMENTS_RISE, {
-				-- ["icon"] = [[~_.asset("Delves_Nerubian")]],
+				["icon"] = 7452103,
 				["coord"] = { 61.2, 71.4, MAP.MIDNIGHT.VOIDSTORM },
 				["groups"] = {
 					-- n(DELVE_COMPLETION, {	-- TODO: check if still available in 12.1

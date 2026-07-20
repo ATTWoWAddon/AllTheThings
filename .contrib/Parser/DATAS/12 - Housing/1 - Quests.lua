@@ -254,7 +254,17 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(93629),	-- Triggered after completing 'Time to Decorate'
 				q(94392),	-- Triggered after talking to flora decor
 				-- q(91029),	-- Triggered after talking to Xiz'ro <Lumberjack> (added in 11.1.7, probably not housing related?)
-				q(95166,{isDaily=true}),	-- Pet the Dog (245551) or Cat (235461)
+				q(95166, {	-- Pet the Pet
+					["name"] = "Pet the Pet",
+					["qgs"] = {
+						-- Add more Pets as you discover them!
+						235461,	-- Cat
+						245551,	-- Dog
+						256523,	-- Raptor Hatchling
+						256522,	-- Wolf Pup
+					},
+					["isDaily"] = true,
+				}),
 			},
 		}),
 	}),

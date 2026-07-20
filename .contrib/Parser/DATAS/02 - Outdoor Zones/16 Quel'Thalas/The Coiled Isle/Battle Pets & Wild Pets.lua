@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(270253, {	-- Jaundiced Slitherer (PET!)
 				["crs"] = { 262246 },	-- Jaundiced Slitherer
 				["coords"] = {
+					{ 49.9, 55.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 53.8, 34.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
 			}),

@@ -8527,7 +8527,8 @@ q(75544,{awp=100105,c={9},coords={
 [36]={{8.4,36}}},lvl=30,qgs={205575},sourceQuests={75543},g={
 sp(417884),
 i(208108,{b=1})}}),
-q(76163,{awp=100105,c={9},description="You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",lvl=30,providers={{"i",206681}},sourceQuests={75544},g={
+q(76163,{awp=100105,c={9},coords={
+[86]={{39.7,53.9}}},description="You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",lvl=30,providers={{"i",206681},{"o",405945}},sourceQuests={75544},g={
 i(207101,{b=1,c={9},f=111,lvl=11,spellID=416229})}})}}),
 h(-88,{
 s(264,1396,{f=4,rwp=90105,u=2}),

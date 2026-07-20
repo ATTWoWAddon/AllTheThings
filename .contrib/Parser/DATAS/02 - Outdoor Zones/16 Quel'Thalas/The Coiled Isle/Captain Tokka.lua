@@ -34,6 +34,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(94796, {	-- Curing Curse Resistance
 						i(278094),	-- Whole Uncursed Liver (QI!)
 					}),
+					q(94803, {	-- Going for the Crown
+						i(277920),	-- Vibrant Crownfeather (QI!)
+					}),
 				})),
 				n(QUESTS, sharedDataSelf({	-- Brinedrinker Gills
 					["qg"] = 268394,	-- Brinedrinker Gills

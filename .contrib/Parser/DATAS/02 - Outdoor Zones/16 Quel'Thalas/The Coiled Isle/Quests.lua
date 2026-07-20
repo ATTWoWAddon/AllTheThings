@@ -1025,6 +1025,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 			}),
+			-- Curse Surges
+			-- Exo Note: It may require a separate file. Depends on the content. From what I can see, they work in the same way as Void Assaults
+			q(96995, {	-- Turn Back the Surge
+				["qg"] = 267635,	-- Talon Commander Zela
+				["coord"] = { 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["isWeekly"] = true,	-- Assumption
+			}),
 		}),
 	}),
 }));

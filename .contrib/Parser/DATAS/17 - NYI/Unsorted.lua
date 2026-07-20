@@ -674,7 +674,6 @@ root(ROOTS.Unsorted, {
 			i(272358),	-- Seaside Firefly Jar
 			i(272360),	-- Ula'tek Ritual Stone
 			i(272362),	-- Venombound Ropes
-			i(273000),	-- Corrosive Soul
 			i(273004),	-- Corrosive Reroll
 			i(273056),	-- Odious Alloy
 			i(273057),	-- Odious Alloy
@@ -1113,7 +1112,6 @@ root(ROOTS.Unsorted, {
 			i(277847),	-- Unbroken Trap Hinge
 			i(277848),	-- Untouched Crab Lure
 			i(277849),	-- Mushed Crab
-			i(277920),	-- Vibrant Crownfeather
 			i(277935),	-- Pungent Leech Leg
 			i(277937),	-- Balanced Offering
 			i(277938),	-- Virulent Offering
@@ -1198,7 +1196,6 @@ root(ROOTS.Unsorted, {
 			i(278376),	-- Preyhunter's Terror Effigy
 			i(278378),	-- Preyhunter's Scaled Bust
 			i(278380),	-- Preyhunter's Terror Bust
-			i(278470),	-- Malefic Venom
 			i(278472),	-- Noxious Corrosive Coin
 			i(278517),	-- Lost Med'jai Amulet
 			i(278523),	-- Feather of Tok'jara
@@ -1458,7 +1455,6 @@ root(ROOTS.Unsorted, {
 			i(279374),	-- Rolled Bed Linens
 			i(279375),	-- Tortollan Slingsack
 			i(279376),	-- Opalescent Amani Peridot
-			i(279382),	-- Venom-Cursed Fragment
 			i(279384),	-- Bonemail Gauntlet
 			i(279428),	-- Midnight Gloomcap
 			i(279429),	-- Azure Gloomcap
