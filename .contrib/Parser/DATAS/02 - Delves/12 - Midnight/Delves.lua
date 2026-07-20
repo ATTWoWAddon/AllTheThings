@@ -508,28 +508,36 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			-- Distinguishing by color may be possible for some of the 'special' objects, but would need to be determined how to do it
 			o(584514, {	-- Bountiful Coffer
 				["provider"] = { "i", 254250 },	-- Bountiful Coffer
+				["VerifyLoot"] = true,
 			}),
 			o(623258, {	-- Pilfered Trunk
+				["VerifyLoot"] = true,
 			}),
 			o(584517, {	-- Heavy Trunk
 				["provider"] = { "i", 257386 },	-- Heavy Trunk
+				["VerifyLoot"] = true,
 			}),
 			o(584515, {	-- Bountiful Heavy Trunk
 				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
+				["VerifyLoot"] = true,
 			}),
 			o(623259, {	-- Pilfered Trunk
+				["VerifyLoot"] = true,
 			}),
 			o(584519, {	-- Heavy Trunk
 				["provider"] = { "i", 257386 },	-- Heavy Trunk
+				["VerifyLoot"] = true,
 			}),
 			o(584518, {	-- Bountiful Heavy Trunk
 				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
+				["VerifyLoot"] = true,
 				["groups"] = {
 					i(262390),	-- Sporbie (PET!)
 				},
 			}),
 			o(584504, {	-- Sanctified Spoils
 				["provider"] = { "n", 256593 },	-- Sanctified Banner
+				["VerifyLoot"] = true,
 				["groups"] = {
 					i(254983),	-- Assassin's Subtle Tea
 				},
@@ -537,6 +545,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			o(584503, {	-- Grand Sanctified Spoils
 				["description"] = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
 				["provider"] = { "n", 256593 },	-- Sanctified Banner
+				["VerifyLoot"] = true,
 				["sym"] = {{"select","itemID",
 					264971,	-- Annihilation Rod (COSMETIC!)
 					264970,	-- Oblivion's Edge (COSMETIC!)
@@ -548,15 +557,23 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					i(254983),	-- Assassin's Subtle Tea
 				},
 			}),
-			o(584512),	-- Nemesis Strongbox (Poor)
-			o(584511),	-- Nemesis Strongbox (Uncommon)
-			o(584509),	-- Nemesis Strongbox (Rare)
+			o(584512, {	-- Nemesis Strongbox (Poor)
+				["VerifyLoot"] = true,
+			}),
+			o(584511, {	-- Nemesis Strongbox (Uncommon)
+				["VerifyLoot"] = true,
+			}),
+			o(584509, {	-- Nemesis Strongbox (Rare)
+				["VerifyLoot"] = true,
+			}),
 			o(584508, {	-- Nemesis Strongbox (Epic)
+				["VerifyLoot"] = true,
 				["groups"] = {
 					i(254869),	-- Chunk of Companion Experience (Epic)
 				},
 			}),
 			o(581922, {	-- Hidden Trove
+				["VerifyLoot"] = true,
 				["provider"] = { "i", 265714 },	-- Trovehunter's Bounty
 			}),
 			o(506498, {	-- Gilded Stash
