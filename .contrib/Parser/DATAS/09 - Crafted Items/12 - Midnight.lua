@@ -909,7 +909,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(90273, 1229888);	-- Quel'dorei Bracelets
 			FirstCraft(90285, 1229892);	-- Quel'dorei Clonkers
 			FirstCraft(90277, 1229884);	-- Quel'dorei Mail Shroud
-			fc(1261492),	-- Thalassian Competitor's Mail Footlinks (12.0.1 questID 90258 & 90281 | 12.0.5 questID 95581)
+			FirstCraft(95581, 1261492),	-- Thalassian Competitor's Mail Footlinks (12.0.1 questID 90258 & 90281 | 12.0.5 questID 95581) (confirmed 95581 in #errors 13.07.2026)
 			FirstCraft(90257, 1229914);	-- Thalassian Competitor's Mail Links
 			FirstCraft(90253, 1229910);	-- Thalassian Competitor's Mail Visor
 			-- Plate Equipment
