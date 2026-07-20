@@ -188,29 +188,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 			})),
 			mapped(n(TREASURES, {
-				o(584752, {	-- Mislaid Curiosity
-					["groups"] = {
-						-- Let's figure out if there will be some pre-seasonal IDs for experience / different per season stuff
-						-- Alpha items (NYI?)
-						--i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
-						--i(254675),	-- Ancient Curio (QS!)
-						--i(260910),	-- Boon of Vitality (Rare) // alpha
-						-- Boons (Renown 1)
-						i(260911),	-- Boon of Fortitude (Rare)
-						i(267240),	-- Boon of Fortitude (Epic)
-						i(260878),	-- Boon of Possibilities (Rare)
-						i(267239),	-- Boon of Possibilities (Epic)
-						i(260882),	-- Boon of Potency (Rare)
-						i(267238),	-- Boon of Potency (Epic)
-						i(260879),	-- Boon of Power (Rare)
-						i(267237),	-- Boon of Power (Epic)
-						i(260884),	-- Boon of Temperance (Rare)
-						i(267241),	-- Boon of Temperance (Epic)
-						i(267647),	-- Boon of Vigor (Uncommon)
-						i(267649),	-- Boon of Vigor (Rare)
-						i(267648),	-- Boon of Vigor (Epic)
-					},
-				}),
 				o(618495, {	-- Nullaeus Cache
 					["questID"] = 92887,
 					["isWeekly"] = true,
@@ -226,49 +203,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(262391),	-- Ominous Domanus (PET!)
 						i(264971),	-- Annihilation Rod (COSMETIC!)
 						i(264970),	-- Oblivion's Edge (COSMETIC!)
-					},
-				}),
-				--TODO Should these really be in the seasonal file vs the midnight delves file? Since when to objects change per season
-				o(584514, {	-- Bountiful Coffer
-					["groups"] = {
-					},
-				}),
-				o(584515, {	-- Bountiful Heavy Trunk
-					["groups"] = {
-					},
-				}),
-				o(584518, {	-- Bountiful Heavy Trunk
-					["groups"] = {
-					},
-				}),
-				o(584517, {	-- Heavy Trunk
-					["groups"] = {
-					},
-				}),
-				o(584519, {	-- Heavy Trunk
-					["groups"] = {
-					},
-				}),
-				o(584512),	-- Nemesis Strongbox (Poor)
-				o(584511),	-- Nemesis Strongbox (Uncommon)
-				o(584509),	-- Nemesis Strongbox (Rare)
-				o(584508, {	-- Nemesis Strongbox (Epic)
-					["groups"] = {
-						i(254869),	-- Chunk of Companion Experience (Epic)
-						-- TODO: Don't ask me, ask Blizzard.
-						i(264342),	-- Cosmic Void Cache (DECOR!)
-					},
-				}),
-				o(623258),	-- Pilfered Trunk
-				o(581922),	-- Hidden Trove
-				o(584503, {	-- Grand Sanctified Spoils (Rare, if it has different version of it)
-					["groups"] = {
-						i(254983),	-- Assassin's Subtle Tea
-					},
-				}),
-				o(584504, {	-- Sanctified Spoils
-					["groups"] = {
-						i(254983),	-- Assassin's Subtle Tea
 					},
 				}),
 			})),

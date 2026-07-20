@@ -98,15 +98,63 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			title(691),	-- Treasure Seeker <Name>
 		}),
 	}),
+	-- WIP Rough estimate providers based on quick wowhead scans, it seems some weapons/armor may be exclusive to a specific object(s)
+	-- Certain objects have 2 versions, with one ID having many loots of a given Item and 0 on the alternate object
+	-- i.e. Spormilian 71 times from 584515 and 0 times from 584518
+	-- So perhaps only 1 of those objects can drop certain Items?
+	-- Other Items seems to be equivalent from both versions of an Object, so it seems only the "first" Object opened gives from the
+	-- set of rewards?
+	n(DELVE_COMPLETION, {["symselector"]=SymSelector.MID_DelveCompletion}),
 	mapped(n(DELVE_COMPLETION, {
 		filter(BATTLE_PETS, {
-			i(262395),	-- Hexed Bunny (PET!)
-			i(262396),	-- Lost Star (PET!)
-			i(262392),	-- Nibblesworth (PET!)
-			i(262343),	-- Treja'saka (PET!)
-			i(262390),	-- Sporbie (PET!)
-			i(262342),	-- Spormilian (PET!)
-			i(262394),	-- Ziorg'pharon (PET!)
+			i(262395, {	-- Hexed Bunny (PET!)
+				["providers"] = {
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",623258}, -- Pilfered Trunk
+				},
+			}),
+			i(262396, {	-- Lost Star (PET!)
+				["providers"] = {
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584511}, -- Nemesis Strongbox
+				},
+			}),
+			i(262392, {	-- Nibblesworth (PET!)
+				["providers"] = {
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584511}, -- Nemesis Strongbox
+					{"o",623259}, -- Pilfered Trunk
+				},
+			}),
+			i(262343, {	-- Treja'saka (PET!)
+				["providers"] = {
+					{"o",584514}, -- Bountiful Coffer
+					{"o",581922}, -- Hidden Trove
+				},
+			}),
+			i(262342, {	-- Spormilian (PET!)
+				["providers"] = {
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584508}, -- Nemesis Strongbox
+				},
+			}),
+			i(262394, {	-- Ziorg'pharon (PET!)
+				["providers"] = {
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584512}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584508}, -- Nemesis Strongbox
+				},
+			}),
 		}),
 		filter(CONSUMABLES, {
 		}),
@@ -125,197 +173,394 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(257379),	-- Player Experience (Epic)
 			i(265714),	-- Trovehunter's Bounty
 			-- Items and different things
-			i(262586),	-- Primeval Arcane Remnant (QI!/QS!)
+			i(262586, {	-- Primeval Arcane Remnant (QI!/QS!)
+				["providers"] = {
+					{ "o", 623258 },	-- Pilfered Trunk
+					{ "o", 584517 },	-- Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+				},
+			}),
 			currency(2803, {	-- Undercoin
 				["timeline"] = { REMOVED_13_0_0 },
 			}),
 		}),
 		filter(RECIPES, {
-			i(259366),	-- Design: Replica Haranir Mural (RECIPE!)
-			i(256718),	-- Design: Stabilizing Gemstone Bandolier (RECIPE!)
-			i(256747),	-- Formula: Enchant Boots - Shaladrassil's Roots (RECIPE!)
-			i(256738),	-- Formula: Enchant Helm - Empowered Hex of Leeching (RECIPE!)
-			i(256753),	-- Formula: Enchant Helm - Empowered Rune of Avoidance (RECIPE!)
-			i(256752),	-- Formula: Enchant Ring - Nature's Fury (RECIPE!)
-			i(256748),	-- Formula: Enchant Shoulders - Amirdrassil's Grace (RECIPE!)
-			i(256740),	-- Formula: Enchant Shoulders - Akil'zon's Swiftness (RECIPE!)
-			i(259370),	-- Formula: Rootflame Campfire (RECIPE!)
-			i(258126),	-- Pattern: Arcanoweave Cord (RECIPE!)
-			i(256637),	-- Pattern: Axe-Flingin' Bands (RECIPE!)
-			i(259365),	-- Pattern: Plush Haranir Leather Pillow (RECIPE!)
-			i(256638),	-- Pattern: Row Walker's Swiftgrips (RECIPE!)
-			i(258025),	-- Pattern: Sunfire Silk Lining (RECIPE!)
-			i(256650),	-- Pattern: World Tender's Rootslippers (RECIPE!)
-			i(247425),	-- Recipe: Riftstone (RECIPE!)
-			i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)
+			["providers"] = {
+				-- no Wowhead data to confirm these in Delves, only a few confirmed drops by word of mouth
+				-- added based on respective Item tooltips of what can contain Recipes in Delve UI
+				{"o",584518}, -- Bountiful Heavy Trunk
+				{"o",584515}, -- Bountiful Heavy Trunk
+				{"o",584517}, -- Heavy Trunk
+				{"o",584519}, -- Heavy Trunk
+			},
+			["groups"] = {
+				i(259366),	-- Design: Replica Haranir Mural (RECIPE!)
+				i(256718),	-- Design: Stabilizing Gemstone Bandolier (RECIPE!)
+				i(256747),	-- Formula: Enchant Boots - Shaladrassil's Roots (RECIPE!)
+				i(256738),	-- Formula: Enchant Helm - Empowered Hex of Leeching (RECIPE!)
+				i(256753),	-- Formula: Enchant Helm - Empowered Rune of Avoidance (RECIPE!)
+				i(256752),	-- Formula: Enchant Ring - Nature's Fury (RECIPE!)
+				i(256748),	-- Formula: Enchant Shoulders - Amirdrassil's Grace (RECIPE!)
+				i(256740),	-- Formula: Enchant Shoulders - Akil'zon's Swiftness (RECIPE!)
+				i(259370),	-- Formula: Rootflame Campfire (RECIPE!)
+				i(258126),	-- Pattern: Arcanoweave Cord (RECIPE!)
+				i(256637),	-- Pattern: Axe-Flingin' Bands (RECIPE!)
+				i(259365),	-- Pattern: Plush Haranir Leather Pillow (RECIPE!)
+				i(256638),	-- Pattern: Row Walker's Swiftgrips (RECIPE!)
+				i(258025),	-- Pattern: Sunfire Silk Lining (RECIPE!)
+				i(256650),	-- Pattern: World Tender's Rootslippers (RECIPE!)
+				i(247425),	-- Recipe: Riftstone (RECIPE!)
+				i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)
+			},
 		}),
 		n(ARMOR, {
 			filter(BACK_F, {
-				i(249625),	-- Elder Mossveil
-				i(249624),	-- Osseoclad Paledrape
-				i(249628),	-- Rampant Bramblecloack
-				i(249619),	-- Sprawling Mycoshroud
+				["providers"] = {
+					{"o",584514},	-- Bountiful Coffer
+					{"o",584518},	-- Bountiful Heavy Trunk
+					{"o",584503},	-- Grand Sanctified Spoils
+					{"o",584519},	-- Heavy Trunk
+					{"o",581922},	-- Hidden Trove
+					{"o",618495},	-- Nullaeus Cache
+					{"o",623259},	-- Pilfered Trunk
+				},
+				["groups"] = {
+					i(249625),	-- Elder Mossveil
+					i(249624),	-- Osseoclad Paledrape
+					i(249628),	-- Rampant Bramblecloack
+					i(249619),	-- Sprawling Mycoshroud
+				},
 			}),
 			filter(CLOTH, {
-				i(249634),	-- Sprawling Fibershells
-				i(249635),	-- Sprawling Rhizomecord
-				i(249630),	-- Sprawling Rootpads
-				i(249633),	-- Sprawling Rootstockings
-				i(249629),	-- Sprawling Rootunic
-				i(249632),	-- Sprawling Stoloncollar
-				i(249631),	-- Sprawling Tendrils
-				i(249636),	-- Sprawling Wristroots
+				["providers"] = {
+					{"o",584514}, -- Bountiful Coffer
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584519}, -- Heavy Trunk
+					{"o",581922}, -- Hidden Trove
+					{"o",584511}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",584512}, -- Nemesis Strongbox
+					{"o",618495}, -- Nullaeus Cache
+					{"o",623259}, -- Pilfered Trunk
+					{"o",623258}, -- Pilfered Trunk
+				},
+				["groups"] = {
+					i(249634),	-- Sprawling Fibershells
+					i(249635),	-- Sprawling Rhizomecord
+					i(249630),	-- Sprawling Rootpads
+					i(249633),	-- Sprawling Rootstockings
+					i(249629),	-- Sprawling Rootunic
+					i(249632),	-- Sprawling Stoloncollar
+					i(249631),	-- Sprawling Tendrils
+					i(249636),	-- Sprawling Wristroots
+				},
 			}),
 			filter(FINGER_F, {
-				i(249623),	-- Blooming Leafcoil
-				i(249622),	-- Spiritseal Ring
-				i(249621),	-- Voodoo Band
-				i(249620),	-- Vibrant Wilderloop
+				["providers"] = {
+					{"o",584514}, -- Bountiful Coffer
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584503}, -- Grand Sanctified Spoils
+					{"o",584519}, -- Heavy Trunk
+					{"o",581922}, -- Hidden Trove
+					{"o",618495}, -- Nullaeus Cache
+					{"o",623259}, -- Pilfered Trunk
+				},
+				["groups"] = {
+					i(249623),	-- Blooming Leafcoil
+					i(249622),	-- Spiritseal Ring
+					i(249621),	-- Voodoo Band
+					i(249620),	-- Vibrant Wilderloop
+				},
 			}),
 			filter(LEATHER, {
-				i(249638),	-- Osseoclad Bonecrushers
-				i(249641),	-- Osseoclad Bonesteppers
-				i(249644),	-- Osseoclad Ivory Wrist
-				i(249637),	-- Osseoclad Marrowvest
-				i(249642),	-- Osseoclad Razorspaulders
-				i(249640),	-- Osseoclad Saberteeth
-				i(249639),	-- Osseoclad Spinegrapplers
-				i(249643),	-- Osseoclad Waistbone
+				["providers"] = {
+					{"o",584514}, -- Bountiful Coffer
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584519}, -- Heavy Trunk
+					{"o",581922}, -- Hidden Trove
+					{"o",584511}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",584512}, -- Nemesis Strongbox
+					{"o",618495}, -- Nullaeus Cache
+					{"o",623259}, -- Pilfered Trunk
+					{"o",623258}, -- Pilfered Trunk
+				},
+				["groups"] = {
+					i(249638),	-- Osseoclad Bonecrushers
+					i(249641),	-- Osseoclad Bonesteppers
+					i(249644),	-- Osseoclad Ivory Wrist
+					i(249637),	-- Osseoclad Marrowvest
+					i(249642),	-- Osseoclad Razorspaulders
+					i(249640),	-- Osseoclad Saberteeth
+					i(249639),	-- Osseoclad Spinegrapplers
+					i(249643),	-- Osseoclad Waistbone
+				},
 			}),
 			filter(MAIL, {
-				i(249652),	-- Elder Mossbands
-				i(249651),	-- Elder Mosscinch
-				i(249646),	-- Elder Mossclogs
-				i(249647),	-- Elder Mossfeelers
-				i(249648),	-- Elder Mosshorns
-				i(249645),	-- Elder Mossmail
-				i(249649),	-- Elder Mossvein Breeches
-				i(249650),	-- Elder Mossvein Greatleaves
+				["providers"] = {
+					{"o",584514}, -- Bountiful Coffer
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584519}, -- Heavy Trunk
+					{"o",581922}, -- Hidden Trove
+					{"o",584511}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",584512}, -- Nemesis Strongbox
+					{"o",618495}, -- Nullaeus Cache
+					{"o",623259}, -- Pilfered Trunk
+					{"o",623258}, -- Pilfered Trunk
+				},
+				["groups"] = {
+					i(249652),	-- Elder Mossbands
+					i(249651),	-- Elder Mosscinch
+					i(249646),	-- Elder Mossclogs
+					i(249647),	-- Elder Mossfeelers
+					i(249648),	-- Elder Mosshorns
+					i(249645),	-- Elder Mossmail
+					i(249649),	-- Elder Mossvein Breeches
+					i(249650),	-- Elder Mossvein Greatleaves
+				},
 			}),
 			filter(NECK_F, {
-				i(249627),	-- Arboreal Vine Collar
-				i(249626),	-- Nocturnal Thorncharm
+				["providers"] = {
+					{"o",584514}, -- Bountiful Coffer
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584503}, -- Grand Sanctified Spoils
+					{"o",584519}, -- Heavy Trunk
+					{"o",581922}, -- Hidden Trove
+					{"o",618495}, -- Nullaeus Cache
+					{"o",623259}, -- Pilfered Trunk
+				},
+				["groups"] = {
+					i(249627),	-- Arboreal Vine Collar
+					i(249626),	-- Nocturnal Thorncharm
+				},
 			}),
 			filter(PLATE, {
-				i(249657),	-- Rampant Bramblegreaves
-				i(249653),	-- Rampant Brambleplate
-				i(249660),	-- Rampant Briarcuffs
-				i(249656),	-- Rampant Briarhelm
-				i(249655),	-- Rampant Creepers
-				i(249654),	-- Rampant Thistlestompers
-				i(249658),	-- Rampant Thornmantles
-				i(249659),	-- Rampant Thornstrap
+				["providers"] = {
+					{"o",584514}, -- Bountiful Coffer
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584519}, -- Heavy Trunk
+					{"o",581922}, -- Hidden Trove
+					{"o",584511}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",584512}, -- Nemesis Strongbox
+					{"o",618495}, -- Nullaeus Cache
+					{"o",623259}, -- Pilfered Trunk
+					{"o",623258}, -- Pilfered Trunk
+				},
+				["groups"] = {
+					i(249657),	-- Rampant Bramblegreaves
+					i(249653),	-- Rampant Brambleplate
+					i(249660),	-- Rampant Briarcuffs
+					i(249656),	-- Rampant Briarhelm
+					i(249655),	-- Rampant Creepers
+					i(249654),	-- Rampant Thistlestompers
+					i(249658),	-- Rampant Thornmantles
+					i(249659),	-- Rampant Thornstrap
+				},
 			}),
 			filter(TRINKET_F, {
-				i(264878),	-- Astalor's Anguish Agitator
-				i(251789),	-- Consecrated Chalice
-				i(251790),	-- Desecrated Chalice
-				i(251792),	-- Glorious Crusader's Keepsake
-				i(251791),	-- Holy Retributor's Order
-				i(251787),	-- Sealed Chaos Urn
-				i(251785),	-- Void-Reaper's Libram
+				["groups"] = sharedData({
+					{"o",584514}, -- Bountiful Coffer
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584503}, -- Grand Sanctified Spoils
+					{"o",584519}, -- Heavy Trunk
+					{"o",581922}, -- Hidden Trove
+					{"o",584512}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",584511}, -- Nemesis Strongbox
+					{"o",618495}, -- Nullaeus Cache
+					{"o",623259}, -- Pilfered Trunk
+					{"o",623258}, -- Pilfered Trunk
+				},{
+					i(264878, {	-- Astalor's Anguish Agitator
+						["providers"] = {
+							{ "o", 581922 },	-- Hidden Trove
+						},
+					}),
+					i(251789),	-- Consecrated Chalice
+					i(251790),	-- Desecrated Chalice
+					i(251792),	-- Glorious Crusader's Keepsake
+					i(251791),	-- Holy Retributor's Order
+					i(251787),	-- Sealed Chaos Urn
+					i(251785),	-- Void-Reaper's Libram
+				}),
 			}),
 		}),
 		filter(COSMETIC, {
-			i(262983),	-- Archival Magnimace (COSMETIC!)
-			i(264852),	-- Bladed Twilight Spaulder (COSMETIC!)
-			i(264847),	-- Dozing Vinepouch (COSMETIC!)
-			i(262992),	-- Myth Maker's Brush (COSMETIC!)
-			i(262970),	-- Ominous Tome (COSMETIC!)
-			i(263286),	-- Repurposed Fungarian Gong (COSMETIC!)
-			i(264848),	-- Sunlit Vinepouch (COSMETIC!)
-			i(264857),	-- Twilight Fanatic's Cowl (COSMETIC!)
-			i(264859),	-- Twilight Follower's Cowl (COSMETIC!)
-			i(262991),	-- Two Thousand and Two Nights (COSMETIC!)
-			i(264855),	-- Vilebranch Deathseer (COSMETIC!)
-			i(264854),	-- Vilebranch Soulseer (COSMETIC!)
-			i(263442),	-- Voidridden Domaneye (COSMETIC!)
-			i(264851),	-- Voidtouched Twilight Spaulder (COSMETIC!)
+			["providers"] = {
+				{"o",623259}, -- Pilfered Trunk
+				{"o",623258}, -- Pilfered Trunk
+				{"o",584518}, -- Bountiful Heavy Trunk
+				{"o",584515}, -- Bountiful Heavy Trunk
+				{"o",584512}, -- Nemesis Strongbox
+				{"o",584511}, -- Nemesis Strongbox
+				{"o",584508}, -- Nemesis Strongbox
+				{"o",584509}, -- Nemesis Strongbox
+			},
+			["groups"] = {
+				i(262983),	-- Archival Magnimace (COSMETIC!)
+				i(264852),	-- Bladed Twilight Spaulder (COSMETIC!)
+				i(264847),	-- Dozing Vinepouch (COSMETIC!)
+				i(262992),	-- Myth Maker's Brush (COSMETIC!)
+				i(262970),	-- Ominous Tome (COSMETIC!)
+				i(263286),	-- Repurposed Fungarian Gong (COSMETIC!)
+				i(264848),	-- Sunlit Vinepouch (COSMETIC!)
+				i(264857),	-- Twilight Fanatic's Cowl (COSMETIC!)
+				i(264859),	-- Twilight Follower's Cowl (COSMETIC!)
+				i(262991),	-- Two Thousand and Two Nights (COSMETIC!)
+				i(264855),	-- Vilebranch Deathseer (COSMETIC!)
+				i(264854),	-- Vilebranch Soulseer (COSMETIC!)
+				i(263442),	-- Voidridden Domaneye (COSMETIC!)
+				i(264851),	-- Voidtouched Twilight Spaulder (COSMETIC!)
+			},
 		}),
 		n(DECOR, {
-			i(264329),	-- Amani Dining Table (DECOR!)
-			i(264330),	-- Amani Hanging Brazier (DECOR!)
-			i(267009),	-- Amani Training Dummy (DECOR!)
-			i(264258),	-- Blossoming Forge (DECOR!)
-			i(264342),	-- Cosmic Void Cache (DECOR!)
-			i(251967),	-- Fungarian Banner (DECOR!)
-			i(263036),	-- Hanging Dawnflower (DECOR!)
-			i(263042),	-- Rootlight Lamppost (DECOR!)
-			i(263233),	-- Sin'dorei Spinning Library (DECOR!)
+			["providers"] = {
+				{"o",584518}, -- Bountiful Heavy Trunk
+				{"o",584515}, -- Bountiful Heavy Trunk
+				{"o",584517}, -- Heavy Trunk
+				{"o",584519}, -- Heavy Trunk
+				{"o",584512}, -- Nemesis Strongbox
+				{"o",584511}, -- Nemesis Strongbox
+				{"o",584508}, -- Nemesis Strongbox
+				{"o",584509}, -- Nemesis Strongbox
+				{"o",623259}, -- Pilfered Trunk
+				{"o",623258}, -- Pilfered Trunk
+			},
+			["groups"] = {
+				i(264329),	-- Amani Dining Table (DECOR!)
+				i(264330),	-- Amani Hanging Brazier (DECOR!)
+				i(267009),	-- Amani Training Dummy (DECOR!)
+				i(264258),	-- Blossoming Forge (DECOR!)
+				i(264342),	-- Cosmic Void Cache (DECOR!)
+				i(251967),	-- Fungarian Banner (DECOR!)
+				i(263036),	-- Hanging Dawnflower (DECOR!)
+				i(263042),	-- Rootlight Lamppost (DECOR!)
+				i(263233),	-- Sin'dorei Spinning Library (DECOR!)
+			},
 		}),
 		n(WEAPONS, {
-			i(251884),	-- Abyss Sabre
-			i(249667),	-- Barbed Rootwand
-			i(249665),	-- Blooming Seedpod
-			i(249676),	-- Bramblebarricade
-			i(249672),	-- Elderbloom Lantern
-			i(249670),	-- Elderoot Spire
-			i(249664),	-- Gnarled Thornmace
-			i(249671),	-- Gnarlroot Spinecleaver
-			i(262729),	-- Hand of the Rootkeeper
-			i(262732),	-- Heavy Bramblebolter
-			i(251935),	-- Lightgrasp Worldroot
-			i(249669),	-- Organ Piercer's Briarspear
-			i(251885),	-- Radiant Foil
-			i(249610),	-- Resinous Blossomblade
-			i(249661),	-- Root Sculptor's Verdaxe
-			i(260189),	-- Rootkeeper's Dancing Needle
-			i(260188),	-- Savage Briaredge
-			i(259462),	-- Thorneedle
-			i(249677),	-- Twinthorn Wildglaive
-			i(260187),	-- Underbrush Render
-			i(249662),	-- Wild Fiberknife
-			i(262731),	-- Wildthorn Razorfang
+			["groups"] = sharedData({
+				["providers"] = {
+					{"o",584514}, -- Bountiful Coffer
+					{"o",584518}, -- Bountiful Heavy Trunk
+					{"o",584515}, -- Bountiful Heavy Trunk
+					{"o",584503}, -- Grand Sanctified Spoils
+					{"o",584519}, -- Heavy Trunk
+					{"o",581922}, -- Hidden Trove
+					{"o",584512}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",584511}, -- Nemesis Strongbox
+					{"o",618495}, -- Nullaeus Cache
+					{"o",623259}, -- Pilfered Trunk
+					{"o",623258}, -- Pilfered Trunk
+				},
+			},{
+				-- Set
+				i(251884, {	-- Abyss Sabre
+					["providers"] = {
+						{"o",618495}, -- Nullaeus Cache
+						{"o",584518}, -- Bountiful Heavy Trunk
+					},
+				}),
+				i(251885, {	-- Radiant Foil
+					["providers"] = {
+						{"o",584508}, -- Nemesis Strongbox
+					},
+				}),
+				-- Basic
+				i(249667),	-- Barbed Rootwand
+				i(249665),	-- Blooming Seedpod
+				i(249676),	-- Bramblebarricade
+				i(249672),	-- Elderbloom Lantern
+				i(249670),	-- Elderoot Spire
+				i(249664),	-- Gnarled Thornmace
+				i(249671),	-- Gnarlroot Spinecleaver
+				i(262729),	-- Hand of the Rootkeeper
+				i(262732),	-- Heavy Bramblebolter
+				i(251935),	-- Lightgrasp Worldroot
+				i(249669),	-- Organ Piercer's Briarspear
+				i(249610),	-- Resinous Blossomblade
+				i(249661),	-- Root Sculptor's Verdaxe
+				i(260189),	-- Rootkeeper's Dancing Needle
+				i(260188),	-- Savage Briaredge
+				i(259462),	-- Thorneedle
+				i(249677),	-- Twinthorn Wildglaive
+				i(260187),	-- Underbrush Render
+				i(249662),	-- Wild Fiberknife
+				i(262731),	-- Wildthorn Razorfang
+			}),
 		}),
 		n(TREASURES, {
+			-- Currently ATT tooltips cannot distinguish one object from the other due to identical name
+			-- Distinguishing by color may be possible for some of the 'special' objects, but would need to be determined how to do it
+			o(584514, {	-- Bountiful Coffer
+				["provider"] = { "i", 254250 },	-- Bountiful Coffer
+			}),
+			o(623258, {	-- Pilfered Trunk
+			}),
+			o(584517, {	-- Heavy Trunk
+				["provider"] = { "i", 257386 },	-- Heavy Trunk
+			}),
+			o(584515, {	-- Bountiful Heavy Trunk
+				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
+			}),
+			o(623259, {	-- Pilfered Trunk
+			}),
+			o(584519, {	-- Heavy Trunk
+				["provider"] = { "i", 257386 },	-- Heavy Trunk
+			}),
+			o(584518, {	-- Bountiful Heavy Trunk
+				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
+				["groups"] = {
+					i(262390),	-- Sporbie (PET!)
+				},
+			}),
+			o(584504, {	-- Sanctified Spoils
+				["provider"] = { "n", 256593 },	-- Sanctified Banner
+				["groups"] = {
+					i(254983),	-- Assassin's Subtle Tea
+				},
+			}),
 			o(584503, {	-- Grand Sanctified Spoils
 				["description"] = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
-				["coords"] = {
-					-- Atal'Aman
-					{40.57, 57.84, ATAL_AMAN},
-					{57.38, 83.09, ATAL_AMAN},
-					{43.12, 65.28, ATAL_AMAN},
-					{44.41, 46.27, ATAL_AMAN},
-					-- Collegiate Calamity
-					{81.36, 39.86, COLLEGIATE_CALAMITY},
-					{46.60, 84.29, COLLEGIATE_CALAMITY},
-					{30.00, 22.00, COLLEGIATE_CALAMITY},
-					-- Parhelion Plaza
-					{24.13, 88.14, PARHELION_PLAZA},
-					{64.70, 63.50, PARHELION_PLAZA},
-					{23.03, 15.09, PARHELION_PLAZA},
-					-- Shadowguard Point
-					{49.47, 55.11, SHADOWGUARD_POINT},
-					{57.17, 33.16, SHADOWGUARD_POINT},
-					{37.98, 44.75, SHADOWGUARD_POINT},
-					-- Sunkiller Sanctum
-					{65.58, 38.55, SUNKILLER_SANCTUM},
-					{43.23, 46.23, SUNKILLER_SANCTUM},
-					{53.35, 37.61, SUNKILLER_SANCTUM},
-					-- The Darkway
-					{49.61, 37.52, THE_DARKWAY},
-					{53.66, 49.89, THE_DARKWAY},
-					-- The Gulf of Memory
-					{56.51, 46.52, THE_GULF_OF_MEMORY},
-					{42.00, 23.90, THE_GULF_OF_MEMORY},
-					-- The Grudge Pit
-					{55.22, 64.39, THE_GRUDGE_PIT},
-					{43.30, 22.68, THE_GRUDGE_PIT},
-					-- The Shadow Enclave
-					{46.00, 22.00, THE_SHADOW_ENCLAVE},
-					{47.94, 57.33, THE_SHADOW_ENCLAVE},
-					-- Twilight Crypts
-					{44.91, 54.72, TWILIGHT_CRYPTS},
-					{39.45, 84.72, TWILIGHT_CRYPTS},
-					{20.85, 62.86, TWILIGHT_CRYPTS},
-				},
+				["provider"] = { "n", 256593 },	-- Sanctified Banner
+				["sym"] = {{"select","itemID",
+					264971,	-- Annihilation Rod (COSMETIC!)
+					264970,	-- Oblivion's Edge (COSMETIC!)
+				}},
 				["groups"] = {
-				--	i(264971),	-- Annihilation Rod (COSMETIC!)
-				--	i(264970),	-- Oblivion's Edge (COSMETIC!)
 					i(265368),	-- Twilight Destroyer (COSMETIC!)
 					i(265366),	-- Twilight Executioner (COSMETIC!)
 					i(265367),	-- Twilight Fang (COSMETIC!)
+					i(254983),	-- Assassin's Subtle Tea
 				},
+			}),
+			o(584512),	-- Nemesis Strongbox (Poor)
+			o(584511),	-- Nemesis Strongbox (Uncommon)
+			o(584509),	-- Nemesis Strongbox (Rare)
+			o(584508, {	-- Nemesis Strongbox (Epic)
+				["groups"] = {
+					i(254869),	-- Chunk of Companion Experience (Epic)
+				},
+			}),
+			o(581922, {	-- Hidden Trove
+				["provider"] = { "i", 265714 },	-- Trovehunter's Bounty
+			}),
+			o(506498, {	-- Gilded Stash
+				["timeline"] = { ADDED_12_0_1_SEASONSTART },
 			}),
 		}),
 	})),
@@ -410,15 +655,75 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		--n(253304),	-- Paingolin
 		--n(253267),	-- Wailing Spirit
 	}),
+	mapped(n(SPECIAL, {
+		n(256593, {	-- Sanctified Banner
+			["coords"] = {
+				-- Atal'Aman
+				{40.57, 57.84, ATAL_AMAN},
+				{57.38, 83.09, ATAL_AMAN},
+				{43.12, 65.28, ATAL_AMAN},
+				{44.41, 46.27, ATAL_AMAN},
+				-- Collegiate Calamity
+				{81.36, 39.86, COLLEGIATE_CALAMITY},
+				{46.60, 84.29, COLLEGIATE_CALAMITY},
+				{30.00, 22.00, COLLEGIATE_CALAMITY},
+				-- Parhelion Plaza
+				{24.13, 88.14, PARHELION_PLAZA},
+				{64.70, 63.50, PARHELION_PLAZA},
+				{23.03, 15.09, PARHELION_PLAZA},
+				-- Shadowguard Point
+				{49.47, 55.11, SHADOWGUARD_POINT},
+				{57.17, 33.16, SHADOWGUARD_POINT},
+				{37.98, 44.75, SHADOWGUARD_POINT},
+				-- Sunkiller Sanctum
+				{65.58, 38.55, SUNKILLER_SANCTUM},
+				{43.23, 46.23, SUNKILLER_SANCTUM},
+				{53.35, 37.61, SUNKILLER_SANCTUM},
+				-- The Darkway
+				{49.61, 37.52, THE_DARKWAY},
+				{53.66, 49.89, THE_DARKWAY},
+				-- The Gulf of Memory
+				{56.51, 46.52, THE_GULF_OF_MEMORY},
+				{42.00, 23.90, THE_GULF_OF_MEMORY},
+				-- The Grudge Pit
+				{55.22, 64.39, THE_GRUDGE_PIT},
+				{43.30, 22.68, THE_GRUDGE_PIT},
+				-- The Shadow Enclave
+				{46.00, 22.00, THE_SHADOW_ENCLAVE},
+				{47.94, 57.33, THE_SHADOW_ENCLAVE},
+				-- Twilight Crypts
+				{44.91, 54.72, TWILIGHT_CRYPTS},
+				{39.45, 84.72, TWILIGHT_CRYPTS},
+				{20.85, 62.86, TWILIGHT_CRYPTS},
+			},
+		}),
+	})),
 	mapped(n(TREASURES, {
 		o(584752, {	-- Mislaid Curiosity
 			["description"] = "Contains Chunk of Companion Experience tokens.",
 			["timeline"] = { ADDED_12_0_1_LAUNCH },
 			["groups"] = {
-				-- Let's figure out if there will be some pre-seasonal IDs for experience
+				-- Let's figure out if there will be some pre-seasonal IDs for experience / different per season stuff
+				-- Alpha items (NYI?)
+				--i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
+				--i(260910),	-- Boon of Vitality (Rare) // alpha
 				i(254756),	-- Chunk of Companion Experience (Uncommon)
 				i(254757),	-- Chunk of Companion Experience (Rare)
 				i(254748),	-- Chunk of Companion Experience (Epic)
+				-- Boons (Renown 1)
+				i(260911),	-- Boon of Fortitude (Rare)
+				i(267240),	-- Boon of Fortitude (Epic)
+				i(260878),	-- Boon of Possibilities (Rare)
+				i(267239),	-- Boon of Possibilities (Epic)
+				i(260882),	-- Boon of Potency (Rare)
+				i(267238),	-- Boon of Potency (Epic)
+				i(260879),	-- Boon of Power (Rare)
+				i(267237),	-- Boon of Power (Epic)
+				i(260884),	-- Boon of Temperance (Rare)
+				i(267241),	-- Boon of Temperance (Epic)
+				i(267647),	-- Boon of Vigor (Uncommon)
+				i(267649),	-- Boon of Vigor (Rare)
+				i(267648),	-- Boon of Vigor (Epic)
 			},
 		}),
 	})),
