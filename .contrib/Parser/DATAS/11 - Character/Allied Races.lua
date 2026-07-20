@@ -392,13 +392,13 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 			["sourceQuest"] = 90961,	-- Stranger in a New Land
 			["qg"] = 133407,	-- Ambassador Blackguard
 			["coord"] = { 39.5, 79.4, ORGRIMMAR },
-			["races"] = HARANIR_HORDE,
+			["races"] = { HARANIR_HORDE },
 		}),
 		q(94445, {	-- Choose a Path [A]
 			["sourceQuest"] = 90961,	-- Stranger in a New Land
 			["qg"] = 133362,	-- Ambassador Moorgard
 			["coord"] = { 53.1, 15.3, STORMWIND_CITY },
-			["races"] = HARANIR_ALLIANCE,
+			["races"] = { HARANIR_ALLIANCE },
 		}),
 	})),
 	race(HIGHMOUNTAIN_TAUREN, {
