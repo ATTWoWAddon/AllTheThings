@@ -470,6 +470,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					})),
 					filter(MISC, sharedData({
 						["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						["modID"] = 0,
 					}, {
 						i(224567),	-- Commendation of the Argent Dawn
 						i(224558),	-- Commendation of the Brood of Nozdormu
