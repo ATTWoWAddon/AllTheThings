@@ -507,7 +507,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		}),
 	}),
 	m(ATAL_AMAN, {
-		--["icon"] = ,
+		["icon"] = 7389674,
 		["coord"] = { 63.8, 80.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -541,7 +541,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(COLLEGIATE_CALAMITY, {
-		--["icon"] = ,
+		["icon"] = 7137586,
 		["coord"] = { 40.5, 53.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 		["maps"] = {
 			2577,	-- Thalassian Library
@@ -578,7 +578,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(PARHELION_PLAZA, {
-		--["icon"] = ,
+		["icon"] = 252996,
 		["coord"] = { 47.5, 41.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -612,7 +612,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(SHADOWGUARD_POINT, {
-		--["icon"] = ,
+		["icon"] = 6999168,
 		["coord"] = { 37.3, 48.3, MAP.MIDNIGHT.VOIDSTORM },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -654,7 +654,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(SUNKILLER_SANCTUM, {
-		--["icon"] = ,
+		["icon"] = 7137506,
 		["coord"] = { 54.8, 47.0, MAP.MIDNIGHT.VOIDSTORM },
 		["maps"] = { 2571 },	-- Lower Sanctum
 		["groups"] = {
@@ -702,8 +702,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(THE_DARKWAY, {
-		--["icon"] = ,
-		--["coord"] = { X, Y, MAPID },
+		["icon"] = 132299,
+		["coord"] = { 39.3, 31.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -736,7 +736,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(THE_GULF_OF_MEMORY, {
-		--["icon"] = ,
+		["icon"] = 7355375,
 		["coord"] = { 36.6, 49.1, MAP.MIDNIGHT.HARANDAR },
 		["maps"] = { 2575 },
 		["groups"] = {
@@ -777,8 +777,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(THE_GRUDGE_PIT, {
-		--["icon"] = ,
-		--["coord"] = { X, Y, MAPID },
+		["icon"] = 5789324,
+		["coord"] = { 71.0, 65.6, MAP.MIDNIGHT.HARANDAR },
 		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -823,7 +823,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(THE_SHADOW_ENCLAVE, {
-		--["icon"] = ,
+		["icon"] = 132291,
 		["coord"] = { 45.4, 85.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -869,7 +869,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		},
 	}),
 	m(TWILIGHT_CRYPTS, {
-		--["icon"] = ,
+		["icon"] = 1373907,
 		["coord"] = { 25.4, 84.0, MAP.MIDNIGHT.ZULAMAN },
 		["maps"] = { 2504 },	-- Twilight Crypts
 		["groups"] = {

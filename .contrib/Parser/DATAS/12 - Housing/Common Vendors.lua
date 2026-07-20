@@ -535,6 +535,7 @@ root(ROOTS.Housing, {
 			}),
 		},
 	}),
+	-- #if AFTER 12.1.0
 	n_CommonVendorItems({
 		["timeline"] = { ADDED_12_1_0 },
 		["crs"] = {
@@ -576,6 +577,7 @@ root(ROOTS.Housing, {
 			i(277142),	-- Westfall Pet Cage (DECOR!)
 		},
 	}),
+	-- #endif
 	n(VENDORS, {
 		n(255654, {	-- Lorisin
 			["coord"] = { 41.6, 61.8, FOUNDERS_POINT },

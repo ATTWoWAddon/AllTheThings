@@ -859,7 +859,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 64.5, 77.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
 							o(649453, {	-- Ruma's Satchel
-								["coord"] = { 25.4, 34.8, 2635 },	-- Gnarldor Isle
+								["coord"] = { 25.4, 34.8, GNARLDOR_ISLE },
 								["groups"] = { i(274486) },	-- Ruma's Satchel (QI!)
 							}),
 						},
