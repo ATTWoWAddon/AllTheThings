@@ -121,6 +121,8 @@ RaceIDs[HIGHMOUNTAIN_TAUREN].icon = 1786419
 RaceIDs[ZANDALARI].icon = 1851465
 RaceIDs[VULPERA].icon = 3208033
 RaceIDs[MAGHAR].icon = 1989713
+RaceIDs[HARANIR_ALLIANCE].icon = 7448213
+RaceIDs[HARANIR_HORDE].icon = 7448213
 -- female
 RaceIDs[HUMAN].gender[female].icon = 236447
 RaceIDs[DWARF].gender[female].icon = 236443
@@ -173,6 +175,8 @@ RaceIDs[DRACTHYR_ALLIANCE].faction = alliance
 RaceIDs[DRACTHYR_HORDE].faction = horde
 RaceIDs[EARTHEN_ALLIANCE].faction = alliance
 RaceIDs[EARTHEN_HORDE].faction = horde
+RaceIDs[HARANIR_ALLIANCE].faction = alliance
+RaceIDs[HARANIR_HORDE].faction = horde
 RaceIDs[NIGHTBORNE].faction = horde
 RaceIDs[HARANIR_ALLIANCE].faction = alliance
 RaceIDs[HARANIR_HORDE].faction = horde
