@@ -1538,7 +1538,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				q(76163, {	-- A Lighter Shade of Fel
 					["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
 					["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
-					["provider"] = { "i", 206681 },	-- Letter from Oman (QI!)
+					["providers"] = {
+						{ "i", 206681 },	-- Letter from Oman (QI!)
+						{ "o", 405945 },	-- Mysterious Letter
+					},
+					["coord"] = { 39.7, 53.9, 86 },	-- The Cleft of Shadows
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
 					["groups"] = {

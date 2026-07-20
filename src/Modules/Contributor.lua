@@ -326,6 +326,7 @@ local MapPrecisionOverrides = {
 	[2639] = 5,	-- Crypt of the Denied, The Coiled Isle
 	[2640] = 5,	-- Blistering Terrace, The Coiled Isle
 	[2644] = 5,	-- Crypt of the Disgraced, The Coiled Isle
+	[2646] = 2,	-- Vilaldoun
 	[2649] = 2,	-- The Lycaneum
 }
 
@@ -3417,6 +3418,7 @@ MobileDB.GameObject = {
 	[655271] = true,	-- Hal'hadar Pocket-Storage [Ritual Site: Naigtal]
 	[656044] = true,	-- Singing Shell [The Coiled Isle]
 	[656135] = true,	-- Slumbering Starfish [The Coiled Isle]
+	[657959] = true,	-- Crate of Pilfered Tributes
 	[658802] = true,	-- Ancient Crypt Reliquary
 	[659301] = true,	-- Highland Redcap [Ritual Site: Naigtal]
 	[659898] = true,	-- Spongy Sporebat Nest [Ritual Site: Naigtal]

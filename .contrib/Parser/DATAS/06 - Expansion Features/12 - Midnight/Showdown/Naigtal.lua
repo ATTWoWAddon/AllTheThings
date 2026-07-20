@@ -265,7 +265,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(97031, {	-- Vilaldoun VValediction
 							["sourceQuest"] = 96574,	-- Cryptside Rendezvous
 							["provider"] = { "o", 658789 },	-- Dust-Covered Hologem
-							["coord"] = { 67.4, 79.5, 2646 },	-- Vilaldoun
+							["coords"] = {
+								{ 25.1, 79.1, 2646 },	-- Vilaldoun
+								{ 67.4, 79.5, 2646 },	-- Vilaldoun
+							},
 						}),
 						q(96577, {	-- The Soul Architect
 							["sourceQuests"] = {
