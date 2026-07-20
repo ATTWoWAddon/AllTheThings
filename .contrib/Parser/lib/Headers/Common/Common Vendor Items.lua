@@ -39,6 +39,16 @@ n_CommonVendorItems = function(t)
 	for i = 1,#groups do
 		groups[i].crs = t.crs
 	end
+	-- copy the timeline table to each item in the group
+	local timeline = t.timeline
+	if timeline then
+		for i = 1, #groups do
+			local group = groups[i]
+			if not group.timeline then
+				group.timeline = timeline
+			end
+		end
+	end
 	return n(COMMON_VENDOR_ITEMS, {
 		groups = groups,
 	})
