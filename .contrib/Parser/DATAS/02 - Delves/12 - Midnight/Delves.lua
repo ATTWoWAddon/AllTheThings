@@ -369,19 +369,21 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			filter(TRINKET_F, {
 				["groups"] = sharedData({
-					{"o",584514}, -- Bountiful Coffer
-					{"o",584518}, -- Bountiful Heavy Trunk
-					{"o",584515}, -- Bountiful Heavy Trunk
-					{"o",584503}, -- Grand Sanctified Spoils
-					{"o",584519}, -- Heavy Trunk
-					{"o",581922}, -- Hidden Trove
-					{"o",584512}, -- Nemesis Strongbox
-					{"o",584509}, -- Nemesis Strongbox
-					{"o",584508}, -- Nemesis Strongbox
-					{"o",584511}, -- Nemesis Strongbox
-					{"o",618495}, -- Nullaeus Cache
-					{"o",623259}, -- Pilfered Trunk
-					{"o",623258}, -- Pilfered Trunk
+					["providers"] = {
+						{"o",584514}, -- Bountiful Coffer
+						{"o",584518}, -- Bountiful Heavy Trunk
+						{"o",584515}, -- Bountiful Heavy Trunk
+						{"o",584503}, -- Grand Sanctified Spoils
+						{"o",584519}, -- Heavy Trunk
+						{"o",581922}, -- Hidden Trove
+						{"o",584512}, -- Nemesis Strongbox
+						{"o",584509}, -- Nemesis Strongbox
+						{"o",584508}, -- Nemesis Strongbox
+						{"o",584511}, -- Nemesis Strongbox
+						{"o",618495}, -- Nullaeus Cache
+						{"o",623259}, -- Pilfered Trunk
+						{"o",623258}, -- Pilfered Trunk
+					},
 				},{
 					i(264878, {	-- Astalor's Anguish Agitator
 						["providers"] = {
