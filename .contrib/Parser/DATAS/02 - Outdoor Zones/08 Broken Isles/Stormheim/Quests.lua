@@ -603,6 +603,7 @@ root(ROOTS.Zones, {
 								{ 70.7, 42.0, STORMHEIM },
 								{ 71.2, 45.6, STORMHEIM },
 								{ 71.4, 44.5, STORMHEIM },
+								{ 72.2, 43.2, STORMHEIM },
 								{ 72.9, 43.9, STORMHEIM },
 							},
 							["groups"] = {

@@ -26,8 +26,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93628),	-- A Shadowed Path Through Time
 				q(93611),	-- A Shattered Path Through Time
 				q(93612, { ["timeline"] = { ADDED_12_0_5 } }),	-- A Shrouded Path Through Time
-				q(93497, { ["timeline"] = { ADDED_12_1_0 } }),	-- A Soaring Path Through Time
-				--q(XXX),	-- An Original Path Through Time
+				q(93497, { ["timeline"] = { ADDED_12_0_7 } }),	-- A Soaring Path Through Time
+				q(93607, { ["timeline"] = { ADDED_12_0_7 } }),	-- An Original Path Through Time
 			})),
 			n(QUESTS, sharedData({			-- No Cache Quests
 				["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreaver

@@ -1433,7 +1433,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 178802 },	-- Messenger Mnemis
 				["coord"] = { 61.4, 22.4, KORTHIA },
 				["groups"] = {
-					i(186164),	-- Stolen Message (QI!)
+					o(368601, {	-- Stolen Message
+						["coords"] = {
+							{ 56.3, 37.7, KORTHIA },
+							{ 56.8, 35.0, KORTHIA },
+							{ 57.3, 38.4, KORTHIA },
+							{ 57.3, 38.6, KORTHIA },
+							{ 57.5, 38.7, KORTHIA },
+							{ 58.2, 37.5, KORTHIA },
+							{ 58.3, 37.2, KORTHIA },
+							{ 59.2, 33.2, KORTHIA },
+							{ 60.0, 38.2, KORTHIA },
+							{ 60.1, 38.5, KORTHIA },
+							{ 60.9, 33.3, KORTHIA },
+							{ 60.9, 35.1, KORTHIA },
+							{ 61.0, 33.5, KORTHIA },
+							{ 61.3, 37.7, KORTHIA },
+							{ 61.5, 37.8, KORTHIA },
+						},
+						["groups"] = { i(186164) },	-- Stolen Message (QI!)
+					}),
 				},
 			}),
 			q(63793, {	-- Broker's Bounty: Ensydius the Defiler

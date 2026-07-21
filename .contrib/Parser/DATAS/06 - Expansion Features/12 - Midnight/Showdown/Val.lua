@@ -67,19 +67,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}, {
 							fp(3267, {	-- Umbral Base Camp
 								["coord"] = { 60.9, 16.2, VAL },
-								--["cr"] = ,	-- Portal Bridge
+								["cr"] = 265448,	-- Portal Bridge
 							}),
 							fp(3268, {	-- The Devouring Ingress
 								["coord"] = { 30.5, 67.8, VAL },
-								--["cr"] = ,	-- Portal Bridge
+								["cr"] = 265450,	-- Portal Bridge
 							}),
 							fp(3269, {	-- Void Acropolis
 								["coord"] = { 46.5, 71.4, VAL },
-								--["cr"] = ,	-- Portal Bridge
+								["cr"] = 265451,	-- Portal Bridge
 							}),
 							fp(3270, {	-- Steam Ravine
 								["coord"] = { 64.4, 69.4, VAL },
-								--["cr"] = ,	-- Portal Bridge
+								["cr"] = 265449,	-- Portal Bridge
 							}),
 						}),
 					}),
@@ -180,6 +180,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["sourceQuest"] = 96389,	-- A Place to Negotiate
 							["qg"] = 267877, -- Leona Darkstrider
 							["coord"] = { 61.2, 70.0, VAL },
+						}),
+						q(97034, {	-- Vanquish the Warmonger
+							["qg"] = 264879, -- Decimus
+							["coord"] = { 59.8, 22.2, VAL },
+							["groups"] = { i(277116) },	-- Warmonger's Voidplate (QI!)
+						}),
+						q(97035, {	-- Depose the Deranged
+							["sourceQuest"] = 97034,	-- Vanquish the Warmonger
+							["qg"] = 264941, -- Impotus
+							["coord"] = { 62.3, 21.8, VAL },
+						}),
+						q(97036, {	-- Umbral Title Bout
+							["sourceQuest"] = 97035,	-- Depose the Deranged
+							["qg"] = 264941, -- Impotus
+							["coord"] = { 62.3, 21.8, VAL },
 						}),
 						-- Repeatable
 						q(96716, {	-- Showdown on Val (Low Level)

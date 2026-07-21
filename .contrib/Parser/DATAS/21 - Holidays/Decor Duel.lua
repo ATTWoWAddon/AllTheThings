@@ -37,7 +37,7 @@ local ILLUSIONARY_COIN = 3393;
 
 root(ROOTS.Holidays,
 	--applyevent(EVENTS.DECOR_DUEL,	-- DO NOT TOUCH! (for now) It is placed among 'World Events' in-game under Achievements but there is no EventID on Wago. Maybe move to World Events?	-- Exo
-	bubbleDown({ ["timeline"] = { ADDED_12_0_5 } }, {
+	bubbleDown({ ["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 } }, {
 	n(DECOR_DUEL, {
 		["maps"] = { MAP.MIDNIGHT.SILVERMOON_CITY },	-- Silvermoon City
 		["cr"] = 257125,	-- Fieldweaver Amolenne <Match Coordinator>

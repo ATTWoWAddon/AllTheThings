@@ -1964,7 +1964,6 @@ root(ROOTS.Unsorted, {
 				i(274783),	-- Fel Embers
 				i(274798),	-- Remote Detonator
 				i(276276),	-- Mana Spore
-				i(277116),	-- Warmonger's Voidplate
 			}),
 			filter(TOYS, {
 				i(264368),	-- ??
