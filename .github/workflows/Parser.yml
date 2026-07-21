@@ -5,12 +5,9 @@ on:
   # Triggers the workflow on each push event
   push:
     branches:
-      - '*' # Trigger on all branches
+      - '**' # Trigger on all branches, including names containing '/'
     tags-ignore:
       - '*' # Ignore all tags
-    paths:
-      - '.contrib/Parser/**'
-      - '.github/workflows/Parser.yml'
   # Triggers the workflow on each pull request event
   pull_request:
     paths:
@@ -124,8 +121,33 @@ jobs:
             exit 1
           }
 
-      - uses: actions/upload-artifact@v7
+      - name: Generate DB checksums
+        shell: pwsh
+        run: |
+          $dbRoot = (Resolve-Path 'db').Path
+          $manifest = Join-Path $env:RUNNER_TEMP 'db.sha256'
+
+          Get-ChildItem $dbRoot -File -Recurse |
+            Sort-Object FullName |
+            ForEach-Object {
+              $hash = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+              $relativePath = [System.IO.Path]::GetRelativePath($dbRoot, $_.FullName).Replace('\', '/')
+              "$hash  $relativePath"
+            } |
+            Set-Content $manifest -Encoding utf8NoBOM
+
+      - name: Upload DB artifact
+        uses: actions/upload-artifact@v7
         with:
-          name: db  # Artifact name
+          # Include the source commit so a local checkout can request the exact DB.
+          name: db-${{ github.sha }}
           path: db/  # File path to upload
+          include-hidden-files: true
+          retention-days: 7
+
+      - name: Upload DB checksum artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: db-${{ github.sha }}-checksums
+          path: ${{ runner.temp }}/db.sha256
           retention-days: 7

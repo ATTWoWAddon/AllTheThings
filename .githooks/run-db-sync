@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Git hooks must never make checkout, pull, merge, or rebase fail.
+root=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
+script="$root/.contrib/db-sync/sync_db.py"
+
+if command -v python3 >/dev/null 2>&1; then
+  python3 "$script" || true
+elif command -v python >/dev/null 2>&1; then
+  python "$script" || true
+elif command -v py >/dev/null 2>&1; then
+  py -3 "$script" || true
+else
+  echo "db sync: Python 3 is not installed; skipping." >&2
+fi
+
+exit 0

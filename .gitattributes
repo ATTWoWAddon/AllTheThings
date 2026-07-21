@@ -2,6 +2,9 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
+# executable developer tooling
+.githooks/* text eol=lf
+.contrib/db-sync/*.py text eol=lf
 # lua script
 *.lua       text eol=crlf
 # project config / tool config
