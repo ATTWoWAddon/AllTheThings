@@ -192,9 +192,9 @@ REMOVED_1_15_7 = "removed 1.15.7.60141";					-- World of Warcraft Classic 1.15.7
 CREATED_1_15_8 = "created 1.15.8.63829";					-- World of Warcraft Classic Anniversary 1.15.8 launch on October 21st, 2025
 ADDED_1_15_8 = "added 1.15.8.63829";						-- World of Warcraft Classic Anniversary 1.15.8 launch on October 21st, 2025
 REMOVED_1_15_8 = "removed 1.15.8.63829";					-- World of Warcraft Classic Anniversary 1.15.8 launch on October 21st, 2025
-CREATED_1_15_9 = "created 1.15.9";							-- World of Warcraft Classic 1.15.9
-ADDED_1_15_9 = "added 1.15.9";								-- World of Warcraft Classic 1.15.9
-REMOVED_1_15_9 = "removed 1.15.9";							-- World of Warcraft Classic 1.15.9
+CREATED_1_15_9 = "created 1.15.9.68808";					-- World of Warcraft Classic 1.15.9 launch on July 21st, 2026
+ADDED_1_15_9 = "added 1.15.9.68808";						-- World of Warcraft Classic 1.15.9 launch on July 21st, 2026
+REMOVED_1_15_9 = "removed 1.15.9.68808";					-- World of Warcraft Classic 1.15.9 launch on July 21st, 2026
 --- AFTER SEASON OF DISCOVERY ---
 REMOVED_SOD_END = "removed 1.16.0";
 
