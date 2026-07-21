@@ -12,12 +12,17 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import urllib.error
+import urllib.request
+import zipfile
 from pathlib import Path
+from pathlib import PurePosixPath
 from typing import Iterable, NoReturn
 
 
 WORKFLOW = "Parser.yml"
 CANONICAL_REPOSITORY = "ATTWoWAddon/AllTheThings"
+PUBLIC_RELEASE_TAG = "db-artifacts"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 CHECKSUM_RE = re.compile(r"^([0-9a-fA-F]{64})  (.+)$")
 
@@ -162,6 +167,74 @@ def find_run(root: Path, repository: str, commit: str) -> int | None:
     return int(latest["databaseId"])
 
 
+def github_cli_authenticated(root: Path) -> bool:
+    if shutil.which("gh") is None:
+        return False
+    result = run(
+        ["gh", "auth", "token", "--hostname", "github.com"],
+        root,
+        check=False,
+    )
+    return result.returncode == 0 and bool(result.stdout.strip())
+
+
+def download_public_file(url: str, destination: Path) -> bool:
+    request = urllib.request.Request(
+        url,
+        headers={"User-Agent": "AllTheThings-db-sync/1"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            with destination.open("wb") as output:
+                shutil.copyfileobj(response, output, length=1024 * 1024)
+    except urllib.error.HTTPError as error:
+        if error.code == 404:
+            return False
+        raise SyncError(f"Public DB download failed with HTTP {error.code}") from error
+    except urllib.error.URLError as error:
+        raise SyncError(f"Public DB download failed: {error.reason}") from error
+    return True
+
+
+def extract_zip_safely(archive: Path, destination: Path) -> None:
+    destination_root = destination.resolve()
+    try:
+        with zipfile.ZipFile(archive) as bundle:
+            for member in bundle.infolist():
+                relative = PurePosixPath(member.filename)
+                if relative.is_absolute() or ".." in relative.parts:
+                    raise SyncError(f"Unsafe path in DB archive: {member.filename}")
+                target = destination.joinpath(*relative.parts).resolve()
+                if not target.is_relative_to(destination_root):
+                    raise SyncError(f"Unsafe path in DB archive: {member.filename}")
+            bundle.extractall(destination)
+    except zipfile.BadZipFile as error:
+        raise SyncError("The public DB asset is not a valid ZIP archive") from error
+
+
+def download_public_release(
+    repository: str,
+    commit: str,
+    temporary_root: Path,
+    downloaded_db: Path,
+    downloaded_checksums: Path,
+) -> bool:
+    asset_prefix = f"db-{commit}"
+    base_url = (
+        f"https://github.com/{repository}/releases/download/"
+        f"{PUBLIC_RELEASE_TAG}"
+    )
+    archive = temporary_root / f"{asset_prefix}.zip"
+    manifest = downloaded_checksums / "db.sha256"
+    if not download_public_file(f"{base_url}/{asset_prefix}.zip", archive):
+        return False
+    if not download_public_file(f"{base_url}/{asset_prefix}.sha256", manifest):
+        archive.unlink(missing_ok=True)
+        return False
+    extract_zip_safely(archive, downloaded_db)
+    return True
+
+
 def download_artifact(
     root: Path,
     repository: str,
@@ -262,12 +335,23 @@ def replace_db(root: Path, downloaded_db: Path) -> None:
         shutil.rmtree(backup)
 
 
-def write_stamp(root: Path, commit: str, repository: str, run_id: int) -> None:
+def write_stamp(
+    root: Path,
+    commit: str,
+    repository: str,
+    channel: str,
+    run_id: int | None,
+) -> None:
     path = stamp_path(root)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         json.dumps(
-            {"commit": commit, "repository": repository, "run_id": run_id},
+            {
+                "commit": commit,
+                "repository": repository,
+                "channel": channel,
+                "run_id": run_id,
+            },
             indent=2,
         )
         + "\n",
@@ -287,47 +371,60 @@ def synchronize(root: Path, repositories: Iterable[str], force: bool) -> str:
         )
 
     selected_repository: str | None = None
+    channel: str | None = None
     run_id: int | None = None
-    query_errors: list[str] = []
-    for repository in repository_list:
-        try:
-            run_id = find_run(root, repository, commit)
-        except SyncError as error:
-            query_errors.append(f"{repository}: {error}")
-            continue
-        if run_id is not None:
-            selected_repository = repository
-            break
-    if selected_repository is None or run_id is None:
-        if query_errors and len(query_errors) == len(repository_list):
-            raise SyncError("Unable to query GitHub Actions: " + query_errors[0])
-        raise SyncError(
-            f"No successful {WORKFLOW} artifact is available for {commit[:12]} yet. "
-            "Retry later."
-        )
-
-    artifact_name = f"db-{commit}"
-    checksum_name = f"{artifact_name}-checksums"
     with tempfile.TemporaryDirectory(prefix=".db-sync-", dir=root) as temporary:
         temporary_root = Path(temporary)
         downloaded_db = temporary_root / "downloaded-db"
         downloaded_checksums = temporary_root / "downloaded-checksums"
         downloaded_db.mkdir()
         downloaded_checksums.mkdir()
-        download_artifact(
-            root,
-            selected_repository,
-            run_id,
-            artifact_name,
-            downloaded_db,
-        )
-        download_artifact(
-            root,
-            selected_repository,
-            run_id,
-            checksum_name,
-            downloaded_checksums,
-        )
+
+        for repository in repository_list:
+            if download_public_release(
+                repository,
+                commit,
+                temporary_root,
+                downloaded_db,
+                downloaded_checksums,
+            ):
+                selected_repository = repository
+                channel = "release"
+                break
+
+        if selected_repository is None and github_cli_authenticated(root):
+            for repository in repository_list:
+                try:
+                    run_id = find_run(root, repository, commit)
+                except SyncError:
+                    continue
+                if run_id is not None:
+                    selected_repository = repository
+                    channel = "actions"
+                    break
+            if selected_repository is not None and run_id is not None:
+                artifact_name = f"db-{commit}"
+                download_artifact(
+                    root,
+                    selected_repository,
+                    run_id,
+                    artifact_name,
+                    downloaded_db,
+                )
+                download_artifact(
+                    root,
+                    selected_repository,
+                    run_id,
+                    f"{artifact_name}-checksums",
+                    downloaded_checksums,
+                )
+
+        if selected_repository is None or channel is None:
+            raise SyncError(
+                f"No public DB release is available for {commit[:12]} yet. "
+                "Retry after the Parser workflow finishes."
+            )
+
         file_count = verify_db(
             downloaded_db, downloaded_checksums / "db.sha256"
         )
@@ -338,10 +435,13 @@ def synchronize(root: Path, repositories: Iterable[str], force: bool) -> str:
             raise SyncError("Local db changed while downloading; db was not replaced")
         replace_db(root, downloaded_db)
 
-    write_stamp(root, commit, selected_repository, run_id)
+    write_stamp(root, commit, selected_repository, channel, run_id)
+    source = f"{selected_repository} {channel}"
+    if run_id is not None:
+        source += f" run {run_id}"
     return (
         f"Synchronized {file_count} db files for {commit[:12]} "
-        f"from {selected_repository} (run {run_id})."
+        f"from {source}."
     )
 
 
