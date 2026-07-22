@@ -10,9 +10,11 @@ local function GenerateRewardsSymlinkForModID(factionHeader, modID, ...)
 		{"extract","sourceID"},	-- Extract Sources
 		{"modID", modID},	-- Apply specific modID
 	};
-	if select("#",...) > 0 then
-		table.insert(sym, 5, {"pop"})
-		table.insert(sym, 6, {"whereany","headerID",...})
+	local valcount = select("#",...)
+	if valcount > 0 then
+		local symconditional = valcount == 1 and "where" or "whereany"
+		table.insert(sym, 3, {"pop"})
+		table.insert(sym, 4, {symconditional,"headerID",...})
 	end
 	return sym
 end
@@ -25,8 +27,10 @@ local function GenerateSharedRewardsSymlinkForModID(modID, ...)
 		{"extract","sourceID"},	-- Extract Sources
 		{"modID", modID},	-- Apply specific modID
 	};
-	if select("#",...) > 0 then
-		table.insert(sym, 6, {"whereany","headerID",...})
+	local valcount = select("#",...)
+	if valcount > 0 then
+		local symconditional = valcount == 1 and "where" or "whereany"
+		table.insert(sym, 4, {symconditional,"headerID",...})
 	end
 	return sym
 end
