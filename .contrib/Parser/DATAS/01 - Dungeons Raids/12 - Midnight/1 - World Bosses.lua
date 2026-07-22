@@ -103,67 +103,69 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				["questID"] = 92129,
 			}),
 			BossWorldQuest(THORMBELAN, 92034),	-- Thormbelan WQ
-			n(SHOWDOWN, {
-				["timeline"] = { ADDED_12_0_7 },
-				["groups"] = {
-					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
-							260875,	-- Nexus-Captain Leth'ir
-							260833,	-- Adjutant Mertei
-							261072,	-- Imperator Pertinax
-						},
-						["groups"] = {
-							d(DIFFICULTY.RAID.MULTI.NORMAL_HEROIC, {
-								-- Shared appearances
-								i(275216),	-- Phaseblade's Edges
-								i(275217),	-- Nexus-Captain's Phaseblade
-								i(275218),	-- Mertei's Command Baton
-								i(275219),	-- Pertinax's Beast Prod
-								i(275220),	-- Imperator's Voidedged Cutlass
-								i(275221),	-- Beast Collector's Cudgel
-								i(275222),	-- Base Commander's Decapitator
-								i(275223),	-- Phasebolt Thrower
-							}),
-							d(DIFFICULTY.RAID.NORMAL, {
-								-- Normal appearances
-								i(275224),	-- Mertei's Adjutant Leggings
-								i(275225),	-- Toxic Voidscythe Spaulders
-								i(275226),	-- Shredclaw Handler's Grips
-								i(275227),	-- Leth'ir's Dress Sabatons
-							}),
-							d(DIFFICULTY.RAID.HEROIC, {
-								["groups"] = {
-									-- Heroic appearances
-									i(275224),	-- Mertei's Adjutant Leggings
-									i(275225),	-- Toxic Voidscythe Spaulders
-									i(275226),	-- Shredclaw Handler's Grips
-									i(275227),	-- Leth'ir's Dress Sabatons
-									n(UPGRADE, bubbleDownSelf({ ["modID"] = 6, ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
-										-- Mythic appearances
-										i(275224),	-- Mertei's Adjutant Leggings
-										i(275225),	-- Toxic Voidscythe Spaulders
-										i(275226),	-- Shredclaw Handler's Grips
-										i(275227),	-- Leth'ir's Dress Sabatons
-									})),
-								},
-							}),
-						},
-					}),
-				},
-			}),
 			n(260875, {	-- Nexus-Captain Leth'ir
 				["timeline"] = { ADDED_12_0_7 },
 				["isRaid"] = true,
 				["isWeekly"] = true,
 				["coord"] = { 78.4, 69.2, NAIGTAL },
-				-- any determined unqiue loot can be moved here from above CBD
+				["crs"] = { 260833 },	-- Adjutant Mertei
+				["groups"] = {
+					d(DIFFICULTY.RAID.MULTI.NORMAL_HEROIC, {
+						-- Shared appearances
+						i(275216),	-- Phaseblade's Edges
+						i(275217),	-- Nexus-Captain's Phaseblade
+						i(275218),	-- Mertei's Command Baton
+						i(275223),	-- Phasebolt Thrower
+					}),
+					d(DIFFICULTY.RAID.NORMAL, {
+						-- Normal appearances
+						i(275224),	-- Mertei's Adjutant Leggings
+						i(275227),	-- Leth'ir's Dress Sabatons
+					}),
+					d(DIFFICULTY.RAID.HEROIC, {
+						["groups"] = {
+							-- Heroic appearances
+							i(275224),	-- Mertei's Adjutant Leggings
+							i(275227),	-- Leth'ir's Dress Sabatons
+							n(UPGRADE, bubbleDownSelf({ ["modID"] = 6, ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
+								-- Mythic appearances
+								i(275224),	-- Mertei's Adjutant Leggings
+								i(275227),	-- Leth'ir's Dress Sabatons
+							})),
+						},
+					}),
+				},
 			}),
 			n(261072, {	-- Imperator Pertinax
 				["timeline"] = { ADDED_12_0_7 },
 				["isRaid"] = true,
 				["isWeekly"] = true,
 				["coord"] = { 40.2, 77.5, 2618 },	-- Void Acropolis (Lower)
-				-- any determined unqiue loot can be moved here from above CBD
+				["groups"] = {
+					d(DIFFICULTY.RAID.MULTI.NORMAL_HEROIC, {
+						-- Shared appearances
+						i(275219),	-- Pertinax's Beast Prod
+						i(275220),	-- Imperator's Voidedged Cutlass
+						i(275221),	-- Beast Collector's Cudgel
+						i(275222),	-- Base Commander's Decapitator
+					}),
+					d(DIFFICULTY.RAID.NORMAL, {
+						-- Normal appearances
+						i(275225),	-- Toxic Voidscythe Spaulders
+						i(275226),	-- Shredclaw Handler's Grips
+					}),
+					d(DIFFICULTY.RAID.HEROIC, {
+						["groups"] = {
+							-- Heroic appearances
+							i(275225),	-- Toxic Voidscythe Spaulders
+							i(275226),	-- Shredclaw Handler's Grips
+							n(UPGRADE, bubbleDownSelf({ ["modID"] = 6, ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
+								i(275225),	-- Toxic Voidscythe Spaulders
+								i(275226),	-- Shredclaw Handler's Grips
+							})),
+						},
+					}),
+				},
 			}),
 		}),
 	}),
