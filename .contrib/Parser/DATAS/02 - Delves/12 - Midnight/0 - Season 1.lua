@@ -72,7 +72,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["isDaily"] = true,
 						["groups"] = {
 							ach(61797, {	-- My Shady Nemesis
-								i(263413),	-- Nullaeus Domaneye
+								i(263413),	-- Nullaeus Domaneye (COSMETIC!)
 							}),
 							i(262391),	-- Ominous Domanus (PET!)
 						},

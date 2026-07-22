@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(QUESTS, {
-		q(94993, {	-- Adventuring in Midnight  (Horde only?)
+		q(94993, {	-- Adventuring in Midnight (Horde only?)
 			["description"] = "Pops up on Alts the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",
 			["coord"] = { 45.7, 67.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["lockCriteria"] = { 1, "lvl", 80 },	-- Added because this quest pops up only on Alts and can't be completed on a Main Character.	-- Exo

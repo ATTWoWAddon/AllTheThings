@@ -385,11 +385,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						{"o",623258}, -- Pilfered Trunk
 					},
 				},{
-					i(264878, {	-- Astalor's Anguish Agitator
-						["providers"] = {
-							{ "o", 581922 },	-- Hidden Trove
-						},
-					}),
+					i(264878),	-- Astalor's Anguish Agitator
 					i(251789),	-- Consecrated Chalice
 					i(251790),	-- Desecrated Chalice
 					i(251792),	-- Glorious Crusader's Keepsake
