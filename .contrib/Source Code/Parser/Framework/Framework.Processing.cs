@@ -1948,6 +1948,14 @@ namespace ATT
                                 return;
                             }
                             break;
+                        case "whereany":
+                            // whereany is only necessary instead of 'where' if there are > 1 value
+                            if (command.Count == 3)
+                            {
+                                LogWarn($"'sym: {ToJSON(command)} can be cleaned up (use 'where' when only matching on one 'value')", data);
+                                return;
+                            }
+                            break;
                     }
 
                     // checks for the previous command
