@@ -6172,8 +6172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						{ "merge" }, { "pop" }, { "where", "headerID", WEAPONS }, { "pop" },
 						-- #else
-						{ "select", "expansionID", EXPANSION.CLASSIC },
-						{ "find", "headerID", FACTION_HEADER_ALLIANCE },
+						SymSelector.select("CLASSIC_PVP_ALLIANCE"),
 						{ "find", "headerID", WEAPONS },	-- Grand Marshal Weapons
 						{ "pop" },
 						-- #endif
@@ -6230,8 +6229,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 					-- #if ANYCLASSIC
 					["sym"] = {
-						{ "select", "expansionID", EXPANSION.TBC },	{ "pop" },
-						{ "contains", "headerID", SEASON_BRUTAL, SEASON_VENGEFUL, SEASON_MERCILESS, SEASON_GLADIATOR }, { "pop" },
+						SymSelector.select("TBC_PVP_SEASON_GLADIATOR"),
+						SymSelector.select("TBC_PVP_SEASON_MERCILESS"),
+						SymSelector.select("TBC_PVP_SEASON_VENGEFUL"),
+						SymSelector.select("TBC_PVP_SEASON_BRUTAL"), { "pop" },
 						{ "where", "headerID", PVP_GLADIATOR }, { "pop" },
 					},
 					-- #endif
