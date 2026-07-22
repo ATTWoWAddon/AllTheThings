@@ -39,10 +39,14 @@ namespace ATT
             else if (data is string str) ExportPureStringValue(builder, str);
             else if (data is IExportableField field) ExportPureLua(builder, field.AsExportType());
             else if (data is IEnumerable<long> longlist) ExportPureLua(builder, longlist, indent);
+            else if (data is IEnumerable<decimal> declist) ExportPureLua(builder, declist, indent);
             else if (data is IEnumerable<string> strlist) ExportPureLua(builder, strlist, indent);
             else if (data is IEnumerable<List<object>> listObjects) ExportPureLua(builder, listObjects, indent);
             else if (data is IEnumerable<object> objlist) ExportPureLua(builder, objlist, indent);
             else if (data is IDictionary<string, List<object>> listdict) ExportPureLua(builder, listdict, indent);
+            else if (data is IDictionary<string, HashSet<decimal>> hashdict) ExportPureLua(builder, hashdict, indent);
+            else if (data is IDictionary<string, HashSet<long>> longhashdict) ExportPureLua(builder, longhashdict, indent);
+            else if (data is IDictionary<decimal, object> decdict) ExportPureLua(builder, decdict, indent);
             else if (data is IDictionary<string, object> dict) ExportPureLua(builder, dict, indent);
             else if (data is IDictionary<long, long> longLongDict) ExportPureLua(builder, longLongDict, indent);
             else if (data is IDictionary<long, string> strdict) ExportPureLua(builder, strdict, indent);

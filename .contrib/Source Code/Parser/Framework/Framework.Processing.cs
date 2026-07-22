@@ -88,6 +88,8 @@ namespace ATT
             new ConcurrentDictionary<long, string>();
         public static ConcurrentDictionary<long, int> NewConcurrentDictionary_long_int(string _) =>
             new ConcurrentDictionary<long, int>();
+        public static ConcurrentDictionary<decimal, object> NewConcurrentDictionary_decimal_object(string _) =>
+            new ConcurrentDictionary<decimal, object>();
         public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(object _) =>
             new ConcurrentDictionary<string, object>();
         public static ConcurrentDictionary<string, object> NewConcurrentDictionary_string_object(decimal _) =>
@@ -136,47 +138,8 @@ namespace ATT
                 }
             }
 
-            // ItemConversionDB
-            var ItemConversionDB = WagoData.GetAll<ItemBonus>().Values.Where(i => i.Type == 37).ToArray();
-            if (ItemConversionDB.Length > 0)
-            {
-                var itemConversionDB = Exports.GetOrAdd("ItemConversionDB", _ => new Dictionary<string, object>()) as IDictionary<string, object>;
-                if (Exports.TryGetValue("_Compressed", out IDictionary<string, object> compressed))
-                {
-                    compressed.Add("ItemConversionDB", true);
-                }
-
-                var bonusCatalysts = new Dictionary<long, long>();
-                var catalystBonusIDs = new Dictionary<long, long>();
-                itemConversionDB["BonusCatalysts"] = bonusCatalysts;
-                itemConversionDB["BonusUpgradeTracks"] = catalystBonusIDs;
-
-                foreach (var obj in ItemConversionDB)
-                {
-                    bonusCatalysts[obj.ParentItemBonusListID] = obj.Value_0;
-
-                    // probably not worth having a configurable mapping... unless blizz adds more naming/ids for upgrade levels >_>
-                    switch (obj.Value_1)
-                    {
-                        // LFR
-                        case 4:
-                            catalystBonusIDs[obj.ParentItemBonusListID] = 972;
-                            break;
-                        // N
-                        case 0:
-                            catalystBonusIDs[obj.ParentItemBonusListID] = 973;
-                            break;
-                        // H
-                        case 1:
-                            catalystBonusIDs[obj.ParentItemBonusListID] = 974;
-                            break;
-                        // M
-                        case 3:
-                            catalystBonusIDs[obj.ParentItemBonusListID] = 978;
-                            break;
-                    }
-                }
-            }
+            BuildItemConversionDB();
+            SetupProviderDB();
 
             // take out the Uncollectible container as we will handle it specially
             if (Objects.AllContainers.TryGetValue("Uncollectible", out List<object> uncollectible))
@@ -226,6 +189,7 @@ namespace ATT
             {
                 AddHandlerAction(ParseStage.Consolidation, data => data.ContainsKey("spellID"), Consolidate_ConvertManualRecipe);
             }
+            AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_PopulateProviderDB);
 
             // Merge the Item Data into the Containers.
             CurrentParseStage = ParseStage.Validation;
@@ -563,6 +527,74 @@ namespace ATT
 
             // Notify of Post-Process Merge data which failed to merge...
             Objects.NotifyPostProcessMergeFailures();
+        }
+
+        private static void Consolidate_PopulateProviderDB(Data data)
+        {
+            if (data.TryGetValue(out Providers providers))
+            {
+                // DB[pType][pID][cType]{cID,cID,...}
+                var providerDB = Exports["ProviderDB"] as ConcurrentDictionary<string, object>;
+                // incorporate the object's Provider Data into the DB
+                providers.DBMerge(providerDB);
+
+                // remove the providers field from this object
+                data.Remove(Providers.Field);
+            }
+        }
+
+        private static void BuildItemConversionDB()
+        {
+            var ItemConversionDB = WagoData.GetAll<ItemBonus>().Values.Where(i => i.Type == 37).ToArray();
+            if (ItemConversionDB.Length > 0)
+            {
+                var itemConversionDB = Exports.GetOrAdd("ItemConversionDB", _ => new Dictionary<string, object>()) as IDictionary<string, object>;
+                if (Exports.TryGetValue("_Compressed", out IDictionary<string, object> compressed))
+                {
+                    compressed.Add("ItemConversionDB", true);
+                }
+
+                var bonusCatalysts = new Dictionary<long, long>();
+                var catalystBonusIDs = new Dictionary<long, long>();
+                itemConversionDB["BonusCatalysts"] = bonusCatalysts;
+                itemConversionDB["BonusUpgradeTracks"] = catalystBonusIDs;
+
+                foreach (var obj in ItemConversionDB)
+                {
+                    bonusCatalysts[obj.ParentItemBonusListID] = obj.Value_0;
+
+                    // probably not worth having a configurable mapping... unless blizz adds more naming/ids for upgrade levels >_>
+                    switch (obj.Value_1)
+                    {
+                        // LFR
+                        case 4:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 972;
+                            break;
+                        // N
+                        case 0:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 973;
+                            break;
+                        // H
+                        case 1:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 974;
+                            break;
+                        // M
+                        case 3:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 978;
+                            break;
+                    }
+                }
+            }
+        }
+
+        private static void SetupProviderDB()
+        {
+            const string Name = "ProviderDB";
+            Exports.GetOrAdd(Name, _ => new ConcurrentDictionary<string, object>());
+            //if (Exports.TryGetValue("_Compressed", out Data compressed))
+            //{
+            //    compressed.Add(Name, true);
+            //}
         }
 
         private static void ProcessContainers()
@@ -1840,6 +1872,25 @@ namespace ATT
         {
             data.TryGetValue("npcID", out long npcID);
             data.TryGetValue("creatureID", out long creatureID);
+
+            // certain data types will simply convert a direct npc assignment into 'providers'
+            if ((npcID > 0 || creatureID > 0) && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectType, out _))
+            {
+                switch (objectType.ObjectType)
+                {
+                    case "questID":
+                        if (npcID > 0)
+                            Providers.Merge(data, "n", npcID);
+                        if (creatureID > 0)
+                            Providers.Merge(data, "n", creatureID);
+
+                        data.Remove("npcID");
+                        data.Remove("creatureID");
+                        // NPCS_WITH_REFERENCES for providers handled later
+                        return;
+                }
+            }
+
             if (npcID > 0)
             {
                 NPCS_WITH_REFERENCES[npcID] = true;
@@ -2160,23 +2211,33 @@ namespace ATT
 
             data.TryGetValue("type", out string type);
             // Convert any 'n' providers into 'qgs' for data simplicity, if not an item listed first
-            if (type != "hqt" && data.TryGetValue(out Providers providers)
-                // if not an item listed first
-                && providers.FirstItemProvider == 0
-                && providers.GetProviderType("n", true) != null)
-            {
-                var npcProviders = providers.GetProviderType("n").ToList();
-                List<long> quest_qgs = new List<long>(npcProviders.Count);
-                foreach (var npcID in npcProviders)
-                {
-                    quest_qgs.Add((long)npcID);
-                    providers.Remove("n", npcID);
-                    //LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
-                }
+            //if (type != "hqt" && data.TryGetValue(out Providers providers)
+            //    // if not an item listed first
+            //    && providers.FirstItemProvider == 0
+            //    && providers.GetProviderType("n", true) != null)
+            //{
+            //    var npcProviders = providers.GetProviderType("n").ToList();
+            //    List<long> quest_qgs = new List<long>(npcProviders.Count);
+            //    foreach (var npcID in npcProviders)
+            //    {
+            //        quest_qgs.Add((long)npcID);
+            //        providers.Remove("n", npcID);
+            //        //LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
+            //    }
 
-                // merge the 'qgs' back into the data if anything was converted
-                if (quest_qgs.Count > 0)
-                    Objects.Merge(data, "qgs", quest_qgs);
+            //    // merge the 'qgs' back into the data if anything was converted
+            //    if (quest_qgs.Count > 0)
+            //        Objects.Merge(data, "qgs", quest_qgs);
+            //}
+
+            // Convert any raw 'qgs' into 'providers' to share in ProviderDB consolidation
+            if (data.TryGetValue("qgs", out List<object> qgs))
+            {
+                foreach (var qg in qgs.AsTypedEnumerable<decimal>())
+                {
+                    Providers.Merge(data, "n", qg);
+                }
+                data.Remove("qgs");
             }
 
             // Not quite able to have this as a normal warning yet, some situations are still quite uncertain

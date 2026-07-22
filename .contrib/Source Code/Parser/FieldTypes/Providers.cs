@@ -1,6 +1,8 @@
 ﻿using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using static ATT.Export;
 using static ATT.Framework;
 
@@ -69,6 +71,46 @@ namespace ATT.FieldTypes
             else
             {
                 providers.Merge(value);
+            }
+        }
+
+        /// <summary>
+        /// Merges this <see cref="Providers"/> data into the database data
+        /// </summary>
+        /// <param name="dbData"></param>
+        public void DBMerge(ConcurrentDictionary<string, object> providerDB)
+        {
+            if (!HasData)
+                return;
+
+            if (!ObjectData.TryGetMostSignificantObjectType(_data, out ObjectData objectData, out object objKeyValue))
+            {
+                LogWarn($"Failed to determine the most significant object type for provider-based data!", _data);
+                return;
+            }
+
+            objKeyValue.TryConvert(out long id);
+            string objKey = objectData.ConvertedKey ?? objectData.ObjectType;
+
+            // certain Types are not 'Things' and should not consolidate to providersDB
+            if (objKey == "headerID" || !objKey.EndsWith("ID"))
+                return;
+
+            var providerSetsForObject = new Dictionary<string, HashSet<decimal>>();
+            foreach (var providerTypeData in _providerTypes)
+            {
+                var providerTypeDB = providerDB.GetOrAdd(providerTypeData.Key, NewConcurrentDictionary_decimal_object) as ConcurrentDictionary<decimal, object>;
+
+                foreach (var providerTypeID in providerTypeData.Value)
+                {
+                    var providerTypeIDDB = providerTypeDB.GetOrAdd(providerTypeID, _ => new ConcurrentDictionary<string, HashSet<long>>()) as ConcurrentDictionary<string, HashSet<long>>;
+
+                    providerTypeIDDB.AddOrUpdate(objKey, new HashSet<long> { id }, (key, oldValue) =>
+                    {
+                        oldValue.Add(id);
+                        return oldValue;
+                    });
+                }
             }
         }
 

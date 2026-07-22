@@ -149,6 +149,13 @@ local function SearchForFieldRecursively(group, field, value)
 end
 app.SearchForFieldRecursively = SearchForFieldRecursively;
 
+local FieldToProviderType = {
+	itemID = "i",
+	modItemID = "i",
+	objectID = "o",
+	spellID = "s",
+	npcID = "n",
+}
 -- Search for a thing that matches some requirements
 app.SearchForObject = function(field, id, require, allowMultiple)
 	-- app.PrintDebug("SFO",field,id,require,allowMultiple)
@@ -187,6 +194,20 @@ app.SearchForObject = function(field, id, require, allowMultiple)
 		end
 	end
 	fcache = fcache or GetRawField(field, id)
+	local providerSearch = FieldToProviderType[field]
+	if providerSearch then
+		app.PrintDebug("SFO.asProvider",field,providerSearch,fcache and #fcache)
+		local providerType = app.ProviderDB[providerSearch]
+		local providerTypeId = providerType and providerType[id]
+		if providerTypeId then
+			for objKey,objIds in next,providerTypeId do
+				for i=1,#objIds do
+					fcache = app.ArrayAppend(fcache, app.SearchForObject(objKey, objIds[i], "key", true))
+				end
+			end
+			app.PrintDebug("SFO.asProvider.fcache",fcache and #fcache)
+		end
+	end
 	count = fcache and #fcache or 0;
 	if count == 0 then
 		-- app.PrintDebug("SFO:",field,id,require,"0~")

@@ -269,39 +269,36 @@ local DefaultFields = {
 		end
 		return canretry
 	end,
-	-- Future ProviderDB implementation for global object 'provider' content
-	-- providerinfo = function(t)
-	-- 	local k = t.key
-	-- 	local id = t[k]
-	-- 	local providersByType = app.ProviderDB[k]
-	-- 	return providersByType and providersByType[id] or nil
-	-- end,
 	-- Legacy Shim to handle code references to 'providers' after ProviderDB implementation
-	-- providers = function(t)
-	-- 	-- If cached, return immediately
-	-- 	local providers = t._providers
-	-- 	if providers ~= nil then return providers or nil end
+	providers = function(t)
+		-- Cached?
+		local cached = t._providers
+		if cached ~= nil then
+			return cached or nil
+		end
 
-	-- 	local info = t.providerinfo
-	-- 	if not info then
-	-- 		t._providers = false	-- sentinel
-	-- 		return
-	-- 	end
+		local consumerType = t.key
+		local consumerID = t[consumerType]
 
-	-- 	-- Build synthetic legacy provider list
-	-- 	providers = {}
+		-- Scan provider-oriented ProviderDB
+		local result, list
+		for providerType, providers in pairs(app.ProviderDB) do
+			for providerID, consumerTypes in pairs(providers) do
+				list = consumerTypes[consumerType]
+				if list then
+					for i=1,#list do
+						if list[i] == consumerID then
+							if not result then result = {} end
+							result[#result+1] = { providerType, providerID }
+						end
+					end
+				end
+			end
+		end
 
-	-- 	for providerType,idList in pairs(info) do
-	-- 		for i=1,#idList do
-	-- 			providers[#providers+1] = { providerType, idList[i] }
-	-- 		end
-	-- 	end
-
-	-- 	-- Cache it
-	-- 	t._providers = providers
-
-	-- 	return providers
-	-- end,
+		t._providers = result or false
+		return result
+	end,
 };
 
 

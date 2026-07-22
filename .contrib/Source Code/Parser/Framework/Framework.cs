@@ -4175,6 +4175,11 @@ setmetatable(_.HeaderConstants, {
                                     CleanupExportDictionaryValue(exports);
                                     referenceDB.Append(ExportPureLua(exports).Insert(0, $"_.{exportDB.Key}=\n").ToString()).AppendLine();
                                 }
+                                else if (exportDB.Value is ConcurrentDictionary<string, object> concExports)
+                                {
+                                    CleanupExportDictionaryValue(concExports);
+                                    referenceDB.Append(ExportPureLua(concExports).Insert(0, $"_.{exportDB.Key}=\n").ToString()).AppendLine();
+                                }
                                 else
                                 {
                                     referenceDB.Append(ExportPureLua(exportDB.Value).Insert(0, $"_.{exportDB.Key}=\n").ToString()).AppendLine();
@@ -4213,7 +4218,7 @@ setmetatable(_.HeaderConstants, {
             }
         }
 
-        private static void CleanupExportDictionaryValue(Dictionary<string, object> exports, IEnumerable<string> allowedKeys = null)
+        private static void CleanupExportDictionaryValue(IDictionary<string, object> exports, IEnumerable<string> allowedKeys = null)
         {
             string[] allKeys = exports.Keys.ToArray();
             // remove unreferenced keys
