@@ -2351,7 +2351,6 @@ i(260896, 1267004);	-- Accented Pseudoshell
 i(250921, 1251665);	-- Amani Blessed Bear
 i(262707, 1269279);	-- Blooded Snapvine
 i(260894, 1266997);	-- Cabbage Pseudoshell
-i(262496, 1268919);	-- Delver's Arcane Golem
 i(264273, 1271549);	-- Fel Spirehawk
 i(262706, 1269277);	-- Ferocious Snapvine
 i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
@@ -2521,12 +2520,14 @@ i(278574, 1305206);	-- Crested Aqua Leafmimic
 i(278573, 1305204);	-- Crested Ember Leafmimic
 i(278575, 1305207);	-- Crested Verdant Leafmimic
 i(278576, 1305209);	-- Crested Violet Leafmimic
+i(262496, 1268919);	-- Delver's Arcane Golem
 i(275659, 1297407);	-- Hexflame Reaver
 i(275571, 1296986);	-- Moonlit Witchwick's Rider
 i(275570, 1296985);	-- Mossy Witchwick's Rider
 i(275660, 1297408);	-- Preyhunter's Fury
 i(276803, 1300779);	-- Ruby Writhe
 i(275572, 1296987);	-- Scarlet Witchwick's Rider
+i(275653, 1297216);	-- Sea-Dwelling Isle Serpent
 i(273838, 1292668);	-- Spirit of Tok'jara
 i(0, 1295958);	-- Swift Spectral Eagle
 i(276549, 1299961);	-- Topaz Skyfang

@@ -215,4 +215,26 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = REAL_MONEY,
 	}),
+
+	-- Blizzcon 2026 Collection
+	--Ensemble: Garb of the Dawnfire Phoenix (COSMETIC!)
+	--["description"] = "Received after buying the Blizzcon 2026 World of Warcraft Bundle.",
+	--["timeline"] = { ADDED_12_0_7, "removed 12.1.7.99999" },
+	--["u"] = REAL_MONEY,
+
+	--Murk'atath (PET!)
+	--["description"] = "Received after buying the Blizzcon 2026 Ultimate Bundle.",
+	--["timeline"] = { ADDED_12_0_7, "removed 12.1.7.99999" },
+	--["u"] = REAL_MONEY,
+
+	--Perch of the Dawnfire Phoenix (DECOR!)
+	--["description"] = "Received after buying the Blizzcon 2026 World of Warcraft Bundle.",
+	--["timeline"] = { ADDED_12_0_7, "removed 12.1.7.99999" },
+	--["u"] = REAL_MONEY,
+
+	--Rabbit'ath (MOUNT!)
+	--["description"] = "Received after buying the Blizzcon 2026 World of Warcraft Bundle.",
+	--["timeline"] = { ADDED_12_0_7, "removed 12.1.7.99999" },
+	--["u"] = REAL_MONEY,
+
 })));
