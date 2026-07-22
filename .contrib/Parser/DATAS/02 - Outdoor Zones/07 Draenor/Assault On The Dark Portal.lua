@@ -172,6 +172,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.6, 14.2, 577 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							o_repeated({	-- Iron Horde Weapon
+								["groups"] = {
+									i(112337),	-- Blackrock Weapon (QI!)
+									o(231160),	-- Iron Horde Weapon Rack
+									o(231163),	-- Iron Horde Weapon Rack
+									o(231164),	-- Iron Horde Weapon Rack
+									o(231166),	-- Iron Horde Weapon
+									o(231167),	-- Iron Horde Weapon
+									o(231168),	-- Iron Horde Weapon
+									o(231815),	-- Iron Horde Weapon Rack
+									o(231816),	-- Iron Horde Weapon Rack
+									o(231817),	-- Iron Horde Weapon Rack
+									o(231818),	-- Iron Horde Weapon
+									o(231819),	-- Iron Horde Weapon
+									o(231820),	-- Iron Horde Weapon
+								},
+							}),
+							--
 							i(112670),	-- Quarrier's Mantle
 							i(112671),	-- Quarrier's Pauldrons
 							i(112669),	-- Quarrier's Shoulderplates
@@ -184,6 +202,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 50.0, 13.3, 577 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							o_repeated({	-- Iron Horde Weapon
+								["groups"] = {
+									i(112337),	-- Blackrock Weapon (QI!)
+									o(231160),	-- Iron Horde Weapon Rack
+									o(231163),	-- Iron Horde Weapon Rack
+									o(231164),	-- Iron Horde Weapon Rack
+									o(231166),	-- Iron Horde Weapon
+									o(231167),	-- Iron Horde Weapon
+									o(231168),	-- Iron Horde Weapon
+									o(231815),	-- Iron Horde Weapon Rack
+									o(231816),	-- Iron Horde Weapon Rack
+									o(231817),	-- Iron Horde Weapon Rack
+									o(231818),	-- Iron Horde Weapon
+									o(231819),	-- Iron Horde Weapon
+									o(231820),	-- Iron Horde Weapon
+								},
+							}),
+							--
 							i(112670),	-- Quarrier's Mantle
 							i(112671),	-- Quarrier's Pauldrons
 							i(112669),	-- Quarrier's Shoulderplates

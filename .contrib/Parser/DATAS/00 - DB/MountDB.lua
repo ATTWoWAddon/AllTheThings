@@ -2479,6 +2479,7 @@ i(246731, 1243582);	-- Dusk Grimlynx
 i(274650, 1294663);	-- Netherforged Nullframe
 i(192778, 350220);	-- Liquid Hot Magma Slug
 i(269240, 1284973);	-- Luminous Sporeglider
+i(0, 1293456);	-- Rabbit'ath
 i(258884, 1264184);	-- Spawn of Vyranoth
 i(267078, 1279352);	-- Stoneforged Sentinel
 i(275464, 1298439);	-- Sun Festival's Painted Roc
