@@ -921,7 +921,6 @@ root(ROOTS.Unsorted, {
 			i(275634),	-- Artisan's Consortium Flyer
 			i(275654),	-- Caustic Venomfang
 			i(275655),	-- Venom Serpent - White
-			i(275657),	-- Apophic Soul Crusher
 			i(275659),	-- Hexflame Reaver
 			i(275660),	-- Preyhunter's Courser
 			i(275676),	-- R0CKY-To-Go
@@ -973,7 +972,6 @@ root(ROOTS.Unsorted, {
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
 			i(276162),	-- Corroded Soul Crusher
-			i(276163),	-- Apophic Patagia
 			i(276164),	-- Corroded Patagia
 			i(276165),	-- Ophidian Patagia
 			i(276166),	-- Twin-Headed Twinblade
