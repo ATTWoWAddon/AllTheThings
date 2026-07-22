@@ -38,7 +38,7 @@ BLACK_MARKET_AUCTION_HOUSE = createHeader({
 		-- #endif
 	},
 });
-assignRootCategoryHeader(80, ROOTS.BlackMarket, BLACK_MARKET_AUCTION_HOUSE);
+assignRootCategoryHeader(80, ROOTS.BlackMarket, BLACK_MARKET_AUCTION_HOUSE, {symselector=SymSelector.BMAH});
 root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLACK_MARKET }, {
 	n(ARMOR, {
 		header(HEADERS.NPC, 72057, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 }, }, {	-- Ordos
@@ -613,7 +613,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		["timeline"] = { ADDED_8_2_5 },
 		["skipFill"] = true,
 		["sym"] = {
-			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
+			SymSelector.select("BMAH"),		-- Select BMAH header
 			{"pop"},							-- Pop the header
 			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			{"not", "itemID", 169430, 141995, 127995, 110592, 102137, 97565 },	-- Unclaimed Black Market Containers
@@ -624,7 +624,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		-- #if BEFORE 8.2.5
 		["skipFill"] = true,
 		["sym"] = {
-			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
+			SymSelector.select("BMAH"),		-- Select BMAH header
 			{"pop"},							-- Pop the header
 			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			{"not", "itemID", 141995, 127995, 110592, 102137, 97565 },	-- Unclaimed Black Market Containers
@@ -636,7 +636,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		-- #if BEFORE 7.0.3
 		["skipFill"] = true,
 		["sym"] = {
-			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
+			SymSelector.select("BMAH"),		-- Select BMAH header
 			{"pop"},							-- Pop the header
 			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			{"not", "itemID", 127995, 110592, 102137, 97565 },	-- Unclaimed Black Market Containers
@@ -648,7 +648,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		-- #if BEFORE 6.2.0
 		["skipFill"] = true,
 		["sym"] = {
-			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
+			SymSelector.select("BMAH"),		-- Select BMAH header
 			{"pop"},							-- Pop the header
 			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			{"not", "itemID", 110592, 102137, 97565 },	-- Unclaimed Black Market Containers
@@ -660,7 +660,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		-- #if BEFORE 6.0.2
 		["skipFill"] = true,
 		["sym"] = {
-			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
+			SymSelector.select("BMAH"),		-- Select BMAH header
 			{"pop"},							-- Pop the header
 			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			{"not", "itemID", 102137, 97565 },	-- Unclaimed Black Market Containers
@@ -672,7 +672,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		-- #if BEFORE 5.4.0
 		["skipFill"] = true,
 		["sym"] = {
-			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
+			SymSelector.select("BMAH"),		-- Select BMAH header
 			{"pop"},							-- Pop the header
 			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			{"not", "itemID", 97565 },	-- Unclaimed Black Market Containers
@@ -681,7 +681,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 	}),
 	n(VENDORS, bubbleDown({
 		["sym"] = {
-			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
+			SymSelector.select("BMAH"),		-- Select BMAH header
 			{"pop"},							-- Pop the header
 			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 		},

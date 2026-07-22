@@ -198,6 +198,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				}),
 			}),
 		}),
+		n(PVP_GLADIATOR, {symselector=SymSelector.SL_PVP_SEASON_ETERNAL_GLADIATOR}),
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },

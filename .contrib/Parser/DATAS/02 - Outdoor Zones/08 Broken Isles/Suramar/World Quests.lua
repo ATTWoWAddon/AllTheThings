@@ -24,15 +24,15 @@ root(ROOTS.Zones, {
 				q(45068),	-- Barrels o' Fun
 				q(41493, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+					["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41492, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+					["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41491, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+					["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41447, {	-- Burning Felslate Deposits
 					["requireSkill"] = MINING,

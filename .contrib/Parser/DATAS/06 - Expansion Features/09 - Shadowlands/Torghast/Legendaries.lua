@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(TORGHAST, {
-		n(LEGENDARIES, {
+		LegionLegiondaries({
 			["description"] = "These memories only drop from Layer 3 or above, except for Phantasma Lure.",
 			["groups"] = {
 				i(183247, {	-- Memory of a Stable Phantasma Lure

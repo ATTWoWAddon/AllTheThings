@@ -371,6 +371,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 		}),
 	}),
 	n(SEASON_GLADIATOR, {
+		symselector=SymSelector.TBC_PVP_SEASON_GLADIATOR,
 		["timeline"] = { ADDED_2_0_1 },
 		["groups"] = {
 			n(ACHIEVEMENTS, bubbleDown({
@@ -1008,6 +1009,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 		},
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
+		symselector=SymSelector.TBC_PVP_SEASON_MERCILESS,
 		["timeline"] = { ADDED_2_1_2 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -1342,6 +1344,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 		},
 	})),
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
+		symselector=SymSelector.TBC_PVP_SEASON_VENGEFUL,
 		["timeline"] = { ADDED_2_3_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -1703,6 +1706,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 		},
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, n(SEASON_BRUTAL, {
+		symselector=SymSelector.TBC_PVP_SEASON_BRUTAL,
 		["timeline"] = { ADDED_2_4_3 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {

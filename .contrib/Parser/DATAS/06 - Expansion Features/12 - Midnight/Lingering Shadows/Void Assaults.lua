@@ -5,22 +5,19 @@
 local FIELD_ACCOLADE = 3405;
 local DARK_PARTICLE = 267051;
 local LEVELING_BOX_SYM = {
-	{"select","headerID",VOID_ASSAULTS},{"pop"},
-	{"where","headerID",EVENT_COMPLETION},{"pop"},
+	SymSelector.select("MIDNIGHT_VOID_ASSAULTS_EVENT_COMPLETION"),{"pop"},
 	{"where","headerID",LEVELING_CHARACTERS},{"pop"},
 }
 local COSMETIC_BOX_SYM = {
-	{"select","headerID",VOID_ASSAULTS},{"pop"},
-	{"where","headerID",EVENT_COMPLETION},{"pop"},
+	SymSelector.select("MIDNIGHT_VOID_ASSAULTS_EVENT_COMPLETION"),{"pop"},
 	{"where","filterID",COSMETIC},{"pop"},
 }
 local COSMETIC_AND_LEVELING_BOX_SYM = {
-	{"select","headerID",VOID_ASSAULTS},{"pop"},
-	{"where","headerID",EVENT_COMPLETION},{"pop"},
-	{"where","filterID",COSMETIC},{"finalize"},
+	SymSelector.select("MIDNIGHT_VOID_ASSAULTS_EVENT_COMPLETION"),{"pop"},
+	{"where","filterID",COSMETIC},{"pop"},
+	{"finalize"},
 
-	{"select","headerID",VOID_ASSAULTS},{"pop"},
-	{"select","headerID",EVENT_COMPLETION},{"pop"},
+	SymSelector.select("MIDNIGHT_VOID_ASSAULTS_EVENT_COMPLETION"),{"pop"},
 	{"where","headerID",LEVELING_CHARACTERS},{"pop"},
 }
 
@@ -114,6 +111,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(268808),	-- Permafrosted Keystone (QS!)
 						i(268807),	-- Torn Twilight Missive (QS!)
 					}),
+					n(EVENT_COMPLETION, {symselector=SymSelector.MIDNIGHT_VOID_ASSAULTS_EVENT_COMPLETION}),
 					n(EVENT_COMPLETION, {
 						filter(BATTLE_PETS, {
 							i(270990, {	-- Curious Lynx Kitten (PET!)

@@ -437,8 +437,7 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 -- Common Symlink Drops
-local SYM_ALL_BRD_DROPS = {{"select","headerID",WOW_ANNIVERSARY_TWENTY},{"pop"},
-{"where","instanceID",1301},{"pop"},
+local SYM_ALL_BRD_DROPS = {SymSelector.select("WOW_ANNIVERSARY_20_BRD"),{"pop"},
 {"where","headerID",VENDORS},{"extract","itemID"}}
 
 local function RelicCofferKeyPurchase(itemID)
@@ -2650,6 +2649,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 			}),
 			inst(1301, {	-- Blackrock Depths
+				symselector=SymSelector.WOW_ANNIVERSARY_20_BRD,
 				["maps"] = {
 					2362,	-- Shadowforge City
 					2363,	-- Detention Block

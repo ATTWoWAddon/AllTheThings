@@ -33,15 +33,15 @@ root(ROOTS.Zones, {
 				}),
 				q(41490, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+					["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41489, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+					["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41488, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+					["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41938),	-- Brothers of Skovald
 				q(46011),	-- Colossal Infernal (Invasion wq)

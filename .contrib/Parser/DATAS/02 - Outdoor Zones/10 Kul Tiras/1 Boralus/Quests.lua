@@ -41,9 +41,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						i(167100, {	-- Alliance Champion's Cache
 							["modID"] = 53,	-- iLvl 415
 							["sym"] = {
-								{"select", "headerID", WAR_EFFORT },	-- Find the War Effort Header
-								{"find", "mapID", ARATHI_HIGHLANDS },	-- Find Arathi Highlands
-								{"find", "headerID", COMMON_BOSS_DROPS},	-- Find the Common Boss Drop Header.
+								SymSelector.select("BFA_WARFRONT_ARATHI_CBD"),	-- Find the Warfront/Arathi/Common Boss Drop Header.
 								{"find", "headerID", FACTION_HEADER_ALLIANCE},	-- Select the Faction Header.
 								{"extract","sourceID"},	-- Extract Sources
 								{"modID", 53},	-- Apply specific modID

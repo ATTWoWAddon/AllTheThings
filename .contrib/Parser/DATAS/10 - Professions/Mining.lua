@@ -164,6 +164,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 		}),
 		header(HEADERS.Spell, 191970, {	-- Infernal Brimstone [Rank 3]
+			symselector=SymSelector.LEGION_MINING_INFERNAL_BRIMSTONE_R3,
 			["crs"] = { 93237 },	-- Brimstone Destroyer
 			["maps"] = {
 				AZSUNA,

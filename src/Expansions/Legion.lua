@@ -338,7 +338,7 @@ local function legion_relinquished_base(ResolveFunctions)
 		-- PVP Gear
 		--[[
 		-- Demonic Combatant & Gladiator Season 7 Gear
-		{"select", "headerID", -688},	-- Demonic Gladiator Season 7
+		{use symselector if adding this, -688},	-- Demonic Gladiator Season 7
 		{"pop"},	-- Remove Season Header and push the children into the processing queue.
 		{"pop"},	-- Remove Faction Header and push the children into the processing queue.
 		{"contains", "headerID", app.HeaderConstants.PVP_COMBATANT, app.HeaderConstants.PVP_GLADIATOR},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.

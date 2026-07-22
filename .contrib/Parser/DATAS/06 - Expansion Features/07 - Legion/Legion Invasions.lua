@@ -127,9 +127,7 @@ root(ROOTS.ExpansionFeatures,
 						118975,	-- Xeritas
 					},
 					["sym"] = {
-						{"select", "headerID", LEGION_INVASIONS},
-						{"pop"},	-- Push all of the groups contained to the processing layer.
-						{"where", "headerID", WORLD_QUESTS },
+						SymSelector.select("LEGION_INVASIONS_WORLD_QUESTS"),
 						{"pop"},	-- Push all of the groups contained to the processing layer.
 						{"select", "itemID",
 							147216,	-- Dauntless Hood
@@ -162,6 +160,7 @@ root(ROOTS.ExpansionFeatures,
 						i(139166),	-- Soulstealer's Barrier
 					},
 				}),
+				n(WORLD_QUESTS, {symselector=SymSelector.LEGION_INVASIONS_WORLD_QUESTS}),
 				n(WORLD_QUESTS, {
 					i(146766),	-- Nethercaller Cloak
 					i(146786),	-- Vileweave Cap

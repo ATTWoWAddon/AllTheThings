@@ -44,11 +44,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = { { "c", CONQUEST, 375 } },
 						-- #IF BEFORE 9.2.0
 						["skipFill"] = true,
-						["sym"] = {
-							{"select", "headerID", SEASON_UNCHAINED },	-- Select Unchained Gladiator: Shadowlands Season 2
-							{"find", "headerID", PVP_GLADIATOR },		-- Gladiator Header
-							{"pop"},									-- Discard the Header and acquire all of the children.
-						},
+						["sym"] = { SymSelector.select("SL_PVP_SEASON_UNCHAINED_GLADIATOR"),{"pop"}},	-- SEASON_UNCHAINED/Gladiator Header
 						-- #ENDIF
 						-- #IF AFTER 9.2.0
 						["groups"] = {
@@ -61,11 +57,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = { { "c", CONQUEST, 375 } },
 						-- #IF BEFORE 9.2.5
 						["skipFill"] = true,
-						["sym"] = {
-							{"select", "headerID", SEASON_COSMIC },	-- Select Cosmic Gladiator: Shadowlands Season 3
-							{"find", "headerID", PVP_GLADIATOR },	-- Gladiator Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-						},
+						["sym"] = { SymSelector.select("SL_PVP_SEASON_COSMIC_GLADIATOR"),{"pop"}},	-- SEASON_COSMIC/Gladiator Header
 						-- #ENDIF
 					}),
 					i(201355, {	-- Eternal Equipment Chest [PvP S4]
@@ -73,11 +65,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = { { "c", CONQUEST, 375 } },
 						-- #IF BEFORE 10.0.2
 						["skipFill"] = true,
-						["sym"] = {
-							{"select", "headerID", SEASON_ETERNAL },	-- Select Eternal Gladiator: Shadowlands Season 4
-							{"find", "headerID", PVP_GLADIATOR },		-- Gladiator Header
-							{"pop"},									-- Discard the Header and acquire all of the children.
-						},
+						["sym"] = { SymSelector.select("SL_PVP_SEASON_ETERNAL_GLADIATOR"),{"pop"}},	-- SEASON_ETERNAL/Gladiator Header
 						-- #ENDIF
 					}),
 					i(188173, {	-- Valorous Equipment Cache [M+ S2]

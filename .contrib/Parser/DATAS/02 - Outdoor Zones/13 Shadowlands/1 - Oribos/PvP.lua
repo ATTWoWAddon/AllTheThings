@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
 					["groups"] = {
-						n(LEGENDARIES, sharedData({ ["cost"] = { { "c", HONOR, 1500 } }, }, {
+						LegionLegiondaries(sharedData({ ["cost"] = { { "c", HONOR, 1500 } }, }, {
 							i(183246),	-- Memory of Sephuz
 							i(183252, {	-- Memory of a Trapping Apparatus
 								["classes"] = { HUNTER },

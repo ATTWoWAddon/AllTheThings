@@ -20,15 +20,15 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(42075),	-- Botanical Backlash
 			q(41484, {	-- Brimstone Destroyer
 				["requireSkill"] = MINING,
-				["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+				["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 			}),
 			q(41486, {	-- Brimstone Destroyer
 				["requireSkill"] = MINING,
-				["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+				["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 			}),
 			q(41487, {	-- Brimstone Destroyer
 				["requireSkill"] = MINING,
-				["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+				["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 			}),
 			q(41336, {	-- Bristly Musken Hide
 				["requireSkill"] = SKINNING,

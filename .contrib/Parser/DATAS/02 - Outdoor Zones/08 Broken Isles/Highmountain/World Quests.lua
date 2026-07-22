@@ -31,15 +31,15 @@ root(ROOTS.Zones, {
 				}),
 				q(41208, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+					["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41209, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+					["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41210, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
+					["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41706),	-- Briny Waters
 				q(41233, {	-- Bristled Bear Skin

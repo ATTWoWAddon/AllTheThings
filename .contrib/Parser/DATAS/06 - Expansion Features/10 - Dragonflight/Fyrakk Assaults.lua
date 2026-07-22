@@ -202,6 +202,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				i(203683),	-- Ward of Fyrakk
 			})),
 			n(EVENT_COMPLETION, {
+				symselector=SymSelector.DRAGONFLIGHT_FYRAKK_EVENT_COMPLETION,
 				["crs"] = {
 					201673,	-- Kretchenwrath
 					203411,	-- Shadeisethal
@@ -297,7 +298,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(TREASURES, {
 				o_repeated({	-- Secured Shipment
 					["cost"] = { { "i", 203710, 3 } },	-- 3x Everburning Key
-					["sym"] = {{"select","headerID",FYRAKK_ASSAULTS},{"pop"},{"where","headerID",EVENT_COMPLETION},{"pop"}},	-- add Fyrakk Assault Rewards
+					["sym"] = {SymSelector.select("DRAGONFLIGHT_FYRAKK_EVENT_COMPLETION"),{"pop"}},	-- add Fyrakk Assault Rewards
 					["groups"] = {
 						-- Rewards
 						filter(BATTLE_PETS, {

@@ -34,7 +34,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					["description"] = "Rewarded at 15 and 24 Renown.",
 				}),
 				WISPS_OF_MEMORY,
-				n(LEGENDARIES, {
+				LegionLegiondaries({
 					["description"] = "Requires Renown 48.",
 					["groups"] = {
 						i(186565),	-- Memory of Rampant Transference

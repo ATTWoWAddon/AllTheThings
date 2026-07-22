@@ -660,13 +660,18 @@ end
 Sym_PvPWeaponsArsenal = function(TIER, SEASON, PVPSET)
 	return {{"sub","pvp_weapons_ensemble",TIER,SEASON,PVPSET}}
 end
+LegionLegiondaries = function(t)
+	t = n(LEGENDARIES, t)
+	t.symselector = SymSelector.LEGION_LEGENDARY_HEADERS
+	return t
+end
 ChronicleOfLostMemories = function(t)
 	t = t or {}
 	-- TODO: revise this, don't rely on a header containing all legendaries
 	-- also, Covenant legendaries are not rewarded by the Chronicle since they require a specific renown and are rewarded automatically
 	-- so also need to exclude those with custom collect
 	t.sym = {
-		{ "select", "headerID", LEGENDARIES },	-- Legendary header
+		SymSelector.select("LEGION_LEGENDARY_HEADERS"),	-- Legendary header
 		{ "extract", "runeforgepowerID" },	-- extract all Legendaries into a direct list
 		{ "exclude", "itemID",
 			190584,	-- Memory of Unity (DK)

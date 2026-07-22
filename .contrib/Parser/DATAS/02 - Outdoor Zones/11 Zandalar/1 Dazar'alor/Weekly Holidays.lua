@@ -104,11 +104,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				pvp(i(154992, {	-- Brawler's Footlocker
 					["u"] = REMOVED_FROM_GAME,
-					["sym"] = {
-						{"select", "headerID", SEASON_CORRUPTED},	-- BFA Season 4
-						{"find", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-						{"pop"},	-- Discard the header and acquire the children.
-					},
+					["sym"] = { SymSelector.select("BFA_PVP_SEASON_CORRUPTED_GLADIATOR"),{"pop"}},	-- SEASON_CORRUPTED/Gladiator Header
 				})),
 				pvp(i(164262,{	-- Steel Strongbox
 					["u"] = REMOVED_FROM_GAME,

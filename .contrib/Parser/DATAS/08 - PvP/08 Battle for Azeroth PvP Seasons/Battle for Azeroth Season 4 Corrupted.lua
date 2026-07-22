@@ -394,6 +394,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 			})),
 		}),
+		n(PVP_GLADIATOR, {symselector=SymSelector.BFA_PVP_SEASON_CORRUPTED_GLADIATOR}),
 		n(PVP_GLADIATOR, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
