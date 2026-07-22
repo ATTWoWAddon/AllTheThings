@@ -835,7 +835,10 @@ fieldConverters.guildAchievementID = cacheAchievementID;
 end
 do	-- HeaderID Key Cache
 -- CRIEVE NOTE: I'm not sure if this one super necessary, maybe only for debugging?
--- headerID is used by a small amount of symlinks as well currently
+-- headerID is used by many pvp sub routine symlinks still
+-- potentially could slap NPC providers on every group of Items sold by a given vendor and NPC Filler would just handle it
+-- plus it would show the Source information for the Header
+-- however it would be nice to somehow automate or batch the relationship between vendor NPCs and their provided groups
 local function cacheHeaderID(group, headerID)
 	CacheField(group, "headerID", headerID);
 end
