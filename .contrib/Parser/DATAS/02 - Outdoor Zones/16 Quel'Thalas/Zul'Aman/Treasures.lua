@@ -238,7 +238,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(583971, {	-- Stonewash Supplies
 				["description"] = "Spawns randomly around the coastal areas of the zone.",
 			}),
-			o(582179, {	-- Twilight Ordinance
+			o(582179, {	-- Twilight Ordnance
 				["description"] = "Spawns randomly (mostly) around the area of Broken Throne.",
 				["coords"] = {
 					{ 20.9, 62.5, MAP.MIDNIGHT.ZULAMAN },
