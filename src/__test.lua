@@ -748,3 +748,108 @@ function app.RunPerformanceCaptures()
 	end
 
 end
+
+
+do	-- app.ArrayAppendDistinct
+function Test_ArrayAppendDistinct()
+
+    local function assertEqual(desc, actual, expected)
+        if actual ~= expected then
+            print("FAIL:", desc, "Expected:", expected, "Got:", actual)
+        else
+            print("PASS:", desc)
+        end
+    end
+
+    local function assertTable(desc, t, expected)
+        if #t ~= #expected then
+            print("FAIL:", desc, "Length mismatch. Expected:", #expected, "Got:", #t)
+            return
+        end
+        for i=1,#t do
+            if t[i] ~= expected[i] then
+                print("FAIL:", desc, "Mismatch at index", i, "Expected:", expected[i], "Got:", t[i])
+                return
+            end
+        end
+        print("PASS:", desc)
+    end
+
+    print("Running ArrayAppendDistinct Tests...\n")
+
+    -- Test 1: Small array, no duplicates
+    local a1 = {1,2,3}
+    local a2 = {4,5}
+    local r = app.ArrayAppendDistinct(a1, a2)
+    assertTable("Test 1", r, {1,2,3,4,5})
+
+    -- Test 2: Small array, with duplicates
+    a1 = {1,2,3}
+    a2 = {2,3,4}
+    r = app.ArrayAppendDistinct(a1, a2)
+    assertTable("Test 2", r, {1,2,3,4})
+
+    -- Test 3: Large array triggers hash path
+    a1 = {}
+    for i=1,250 do a1[i] = i end
+    a2 = {100,200,300,400}
+    r = app.ArrayAppendDistinct(a1, a2)
+    assertEqual("Test 3 size", #r, 252)
+
+    -- Test 4: Multiple input arrays
+    a1 = {1,2}
+    a2 = {2,3}
+    local a3 = {3,4}
+    local a4 = {4,5}
+    r = app.ArrayAppendDistinct(a1, a2, a3, a4)
+    assertTable("Test 4", r, {1,2,3,4,5})
+
+    -- Test 5: Nil initial array
+    r = app.ArrayAppendDistinct(nil, {1,2}, {2,3})
+    assertTable("Test 5", r, {1,2,3})
+
+    -- Test 6: Nil/empty arrays
+    a1 = {1,2}
+    a2 = {}
+    a3 = nil
+    a4 = {2,3}
+    r = app.ArrayAppendDistinct(a1, a2, a3, a4)
+    assertTable("Test 6", r, {1,2,3})
+
+    -- Test 7: Table identity
+    local t1 = {x=1}
+    local t2 = {x=1}
+    local t3 = t1
+    a1 = {t1}
+    a2 = {t2, t3}
+    r = app.ArrayAppendDistinct(a1, a2)
+    assertEqual("Test 7 count", #r, 2)
+
+    -- Test 8: Stress test
+    a1 = {}
+    for i=1,500 do a1[i] = i end
+    a2 = {}
+    for i=400,600 do a2[#a2+1] = i end
+    r = app.ArrayAppendDistinct(a1, a2)
+    assertEqual("Test 8 size", #r, 600)
+
+    -- Test 9: Multiple large arrays
+    a1 = {}
+    for i=1,300 do a1[i] = i end
+    a2 = {}
+    for i=250,350 do a2[#a2+1] = i end
+    a3 = {}
+    for i=340,360 do a3[#a3+1] = i end
+    r = app.ArrayAppendDistinct(a1, a2, a3)
+    assertEqual("Test 9 size", #r, 360)
+
+    -- Test 10: Return same table
+    a1 = {1,2,3}
+    r = app.ArrayAppendDistinct(a1, {4})
+    assertEqual("Test 10 same table", r == a1, true)
+
+    print("\nAll tests completed.")
+end
+
+
+end

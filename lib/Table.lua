@@ -99,6 +99,47 @@ app.ArrayAppend = function(a1, ...)
 	end
 	return a1;
 end
+-- Allows efficiently appending the unique content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
+app.ArrayAppendDistinct = function(a1, ...)
+	local arrs = select("#", ...)
+	if arrs > 0 then
+		a1 = a1 or {}
+		-- either simply use contains checks for small counts or a temp hash table check
+		if #a1 > 200 then
+			local h = {}
+			for i=1,#a1 do
+				h[a1[i]] = true
+			end
+			local a, b
+			for n=1,arrs do
+				a = select(n, ...)
+				if a then
+					for ai=1,#a do
+						b = a[ai]
+						if not h[b] then
+							h[b] = true
+							a1[#a1 + 1] = b
+						end
+					end
+				end
+			end
+		else
+			local a, b
+			for n=1,arrs do
+				a = select(n, ...)
+				if a then
+					for ai=1,#a do
+						b = a[ai]
+						if not app.contains(a1, b) then
+							a1[#a1 + 1] = a[ai]
+						end
+					end
+				end
+			end
+		end
+	end
+	return a1
+end
 -- Allows for returning a reversed array. Will do nothing for un-ordered tables or tables with a single entry
 app.ReverseOrder = function(a)
 	if a and a[1] and a[2] then
