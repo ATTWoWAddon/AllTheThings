@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				{"select","mapID",DRAGON_ISLES},{"pop"},{"where","headerID",ZONE_REWARDS},{"pop"},
 					{"where","headerID",WEAPONS},{"finalize"},
 				-- World Drops > DF
-				{"select","expansionID",EXPANSION.DF},{"pop"},{"where","headerID",WEAPONS},
+				SymSelector.select("DRAGONFLIGHT_WORLDDROP_WEAPONS"),
 			},
 			["groups"] = {
 				i(202172),	-- Overflowing Satchel of Coins

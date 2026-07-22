@@ -1842,7 +1842,11 @@ do
 		return symselector
 	end
 	-- Provides a Unique value for each unique Key referenced on the table
-	SymSelector = setmetatable({}, {
+	SymSelector = setmetatable({
+		-- Returns the proper symlink "select" table for a given SymSelector key
+		-- e.g. {"select","symselector",SymSelector[key]}
+		select = function(key) return {"select","symselector",SymSelector[key]} end,
+	}, {
 		__index = function(t, key)
 			local s = NextSymSelector()
 			t[key] = s

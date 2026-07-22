@@ -3,6 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(CONDUITS, {symselector=SymSelector.SL_CONDUITS}),
 	n(CONDUITS, {
 		i(187507, {	-- Adaptive Armor Fragment
 			["timeline"] = { ADDED_9_1_0 },

@@ -126,10 +126,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["sourceAchievement"] = 14834,	-- Bound with Purpose
 							["timeline"] = { ADDED_9_2_0 },
 							["cost"] = { { "c", 2009, 10000 } },	-- 10,000 Cosmic Flux
-							["sym"] = {
-								{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
-								{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
-							},
+							["sym"] = SYM.SHADOWLANDS.ALL_CONDUITS,
 						}),
 					}, {	-- Friendly
 						i(177665),	-- Spectral Hankerchief

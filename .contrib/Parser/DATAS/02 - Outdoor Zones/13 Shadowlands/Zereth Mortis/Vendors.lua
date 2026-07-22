@@ -227,10 +227,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						i(190640, {	-- Font of Ephemeral Power (CI!)
 							["cost"] = { { "g", 5000000 } },	-- 500g
 							["sourceAchievement"] = 14834,	-- Bound with Purpose
-							["sym"] = {
-								{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
-								{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
-							},
+							["sym"] = SYM.SHADOWLANDS.ALL_CONDUITS,
 						}),
 					}, {	-- Honored
 						i(191701),	-- Bag of Explored Souls
@@ -282,10 +279,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						i(190956, {	-- Decanter of Untapped Potential (CI!)
 							["cost"] = { { "g", 25000000 } },	-- 2500g
 							["sourceAchievement"] = 14834,	-- Bound with Purpose
-							["sym"] = {
-								{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
-								{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
-							},
+							["sym"] = SYM.SHADOWLANDS.ALL_CONDUITS,
 						}),
 						i(189174),	-- Lens of Focused Intention
 						-- Memories

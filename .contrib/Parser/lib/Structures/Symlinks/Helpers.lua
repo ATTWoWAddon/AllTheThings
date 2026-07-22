@@ -12,3 +12,7 @@ SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS = {
 	{"where","headerID",ZONE_REWARDS},{"pop"},
 	{"whereany","headerID",ARMOR,WEAPONS},
 }
+
+SYM.SHADOWLANDS.ALL_CONDUITS = {
+	SymSelector.select("SL_CONDUITS"),{"pop"},
+}

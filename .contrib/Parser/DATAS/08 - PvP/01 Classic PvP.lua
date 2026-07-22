@@ -54,6 +54,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				pvprank(14),	-- Grand Marshal / High Warlord
 			},
 		}),
+		n(FACTION_HEADER_ALLIANCE, {symselector=SymSelector.CLASSIC_PVP_ALLIANCE}),
 		n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({
 			["timeline"] = {
 				ADDED_1_4_0,
@@ -576,6 +577,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				-- #ENDIF
 			},
 		})),
+		n(FACTION_HEADER_HORDE, {symselector=SymSelector.CLASSIC_PVP_HORDE}),
 		n(FACTION_HEADER_HORDE, bubbleDownSelf({
 			["timeline"] = {
 				ADDED_1_11_1,

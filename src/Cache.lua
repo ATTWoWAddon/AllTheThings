@@ -959,10 +959,6 @@ end
 fieldConverters.encounterID = function(group, value)
 	CacheField(group, "encounterID", value);
 end
--- expansionID is used by many items which are containers for expansion-wide content availability
-fieldConverters.expansionID = function(group, value)
-	CacheField(group, "expansionID", value);
-end
 -- symselector will make it easier to select specific headers when many share the same ID without having to traverse huge grouping selections
 fieldConverters.symselector = function(group, value)
 	CacheField(group, "symselector", value);

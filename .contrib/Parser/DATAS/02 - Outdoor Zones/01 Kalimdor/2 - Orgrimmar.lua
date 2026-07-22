@@ -2851,8 +2851,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 38.2, 72.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {	-- High Warlord Armor
-						{"select","expansionID",EXPANSION.CLASSIC},
-						{"find","headerID",FACTION_HEADER_HORDE},
+						SymSelector.select("CLASSIC_PVP_HORDE"),
 						{ "pop" },
 						{ "exclude", "headerID", WEAPONS },
 						-- #if BEFORE WRATH
@@ -5004,8 +5003,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 38.6, 72.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select","expansionID",EXPANSION.CLASSIC},
-						{"find","headerID",FACTION_HEADER_HORDE},
+						SymSelector.select("CLASSIC_PVP_HORDE"),
 						{"find","headerID",WEAPONS},	-- Grand Marshal Weapons
 						{"pop"},
 					},

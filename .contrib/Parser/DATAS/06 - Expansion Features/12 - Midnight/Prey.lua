@@ -21,14 +21,10 @@ PREY = createHeader({
 });
 
 local PREYSEEKER_BOX_SYM = {
-	{"select","expansionID",EXPANSION.MID},{"pop"},
-	{"where","headerID",PREY},{"pop"},
-	{"where","headerID",EVENT_COMPLETION},{"pop"},
+	SymSelector.select("MIDNIGHT_PREY_EVENT_COMPLETION"),{"pop"},
 	{"where","headerID",ARMOR},{"finalize"},
 
-	{"select","expansionID",EXPANSION.MID},{"pop"},
-	{"where","headerID",PREY},{"pop"},
-	{"where","headerID",EVENT_COMPLETION},{"pop"},
+	SymSelector.select("MIDNIGHT_PREY_EVENT_COMPLETION"),{"pop"},
 	{"where","headerID",WEAPONS},{"finalize"},
 
 	{"select","mapID",MAP.MIDNIGHT.QUELTHALAS},{"pop"},
@@ -175,6 +171,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			ach(62143, {["crs"]=TrapNPCs}),	-- Trapped In The Middle With You
 			ach(62138),	-- You're Trapped In Here With Me
 		}),
+		n(EVENT_COMPLETION, {symselector=SymSelector.MIDNIGHT_PREY_EVENT_COMPLETION}),
 		n(EVENT_COMPLETION, {
 			-- Bonus roll
 			i(269768, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Prey

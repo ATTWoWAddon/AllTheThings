@@ -7143,8 +7143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{ "merge" },
 						-- #endif
 						-- #ELSE
-						{"select","expansionID",EXPANSION.CLASSIC},
-						{"find","headerID",FACTION_HEADER_ALLIANCE},
+						SymSelector.select("CLASSIC_PVP_ALLIANCE"),
 						-- #ENDIF
 						{ "pop" },
 						{ "exclude", "headerID", WEAPONS },
