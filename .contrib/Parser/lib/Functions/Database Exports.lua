@@ -103,54 +103,54 @@ local female = 3
 -- table are always the same underlying type for proper handling by parser
 
 -- Non-gender specific
-RaceIDs[WORGEN].icon = 463876
-RaceIDs[VOIDELF].icon = 1786422
-RaceIDs[LIGHTFORGED].icon = 1786420
-RaceIDs[KULTIRAN].icon = 2447785
 RaceIDs[DARKIRON].icon = 1851464
-RaceIDs[MECHAGNOME].icon = 3208032
-RaceIDs[PANDAREN_NEUTRAL].icon = 626190
-RaceIDs[PANDAREN_ALLIANCE].icon = 626190
-RaceIDs[PANDAREN_HORDE].icon = 626190
 RaceIDs[DRACTHYR_ALLIANCE].icon = 4696175
 RaceIDs[DRACTHYR_HORDE].icon = 4696175
 RaceIDs[EARTHEN_ALLIANCE].icon = 5930319
 RaceIDs[EARTHEN_HORDE].icon = 5930319
-RaceIDs[NIGHTBORNE].icon = 1786421
-RaceIDs[HIGHMOUNTAIN_TAUREN].icon = 1786419
-RaceIDs[ZANDALARI].icon = 1851465
-RaceIDs[VULPERA].icon = 3208033
-RaceIDs[MAGHAR].icon = 1989713
 RaceIDs[HARANIR_ALLIANCE].icon = 7448213
 RaceIDs[HARANIR_HORDE].icon = 7448213
+RaceIDs[HIGHMOUNTAIN_TAUREN].icon = 1786419
+RaceIDs[KULTIRAN].icon = 2447785
+RaceIDs[LIGHTFORGED].icon = 1786420
+RaceIDs[MAGHAR].icon = 1989713
+RaceIDs[MECHAGNOME].icon = 3208032
+RaceIDs[NIGHTBORNE].icon = 1786421
+RaceIDs[PANDAREN_ALLIANCE].icon = 626190
+RaceIDs[PANDAREN_HORDE].icon = 626190
+RaceIDs[PANDAREN_NEUTRAL].icon = 626190
+RaceIDs[VOIDELF].icon = 1786422
+RaceIDs[VULPERA].icon = 3208033
+RaceIDs[WORGEN].icon = 463876
+RaceIDs[ZANDALARI].icon = 1851465
 -- female
-RaceIDs[HUMAN].gender[female].icon = 236447
-RaceIDs[DWARF].gender[female].icon = 236443
-RaceIDs[NIGHTELF].gender[female].icon = 236449
-RaceIDs[GNOME].gender[female].icon = 236445
-RaceIDs[DRAENEI].gender[female].icon = 236441
-RaceIDs[ORC].gender[female].icon = 236451
-RaceIDs[UNDEAD].gender[female].icon = 236457
-RaceIDs[TAUREN].gender[female].icon = 236453
-RaceIDs[TROLL].gender[female].icon = 236455
-RaceIDs[GOBLIN].gender[female].icon = 632354
 RaceIDs[BLOODELF].gender[female].icon = 236439
+RaceIDs[DRAENEI].gender[female].icon = 236441
+RaceIDs[DWARF].gender[female].icon = 236443
+RaceIDs[GNOME].gender[female].icon = 236445
+RaceIDs[GOBLIN].gender[female].icon = 632354
 RaceIDs[HARANIR_ALLIANCE].gender[female].icon = 7431080
 RaceIDs[HARANIR_HORDE].gender[female].icon = 7431080
+RaceIDs[HUMAN].gender[female].icon = 236447
+RaceIDs[NIGHTELF].gender[female].icon = 236449
+RaceIDs[ORC].gender[female].icon = 236451
+RaceIDs[TAUREN].gender[female].icon = 236453
+RaceIDs[TROLL].gender[female].icon = 236455
+RaceIDs[UNDEAD].gender[female].icon = 236457
 -- male
-RaceIDs[HUMAN].gender[male].icon = 236448
-RaceIDs[DWARF].gender[male].icon = 236444
-RaceIDs[NIGHTELF].gender[male].icon = 236450
-RaceIDs[GNOME].gender[male].icon = 236446
-RaceIDs[DRAENEI].gender[male].icon = 236442
-RaceIDs[ORC].gender[male].icon = 236452
-RaceIDs[UNDEAD].gender[male].icon = 236458
-RaceIDs[TAUREN].gender[male].icon = 236454
-RaceIDs[TROLL].gender[male].icon = 236456
-RaceIDs[GOBLIN].gender[male].icon = 463874
 RaceIDs[BLOODELF].gender[male].icon = 236440
+RaceIDs[DRAENEI].gender[male].icon = 236442
+RaceIDs[DWARF].gender[male].icon = 236444
+RaceIDs[GNOME].gender[male].icon = 236446
+RaceIDs[GOBLIN].gender[male].icon = 463874
 RaceIDs[HARANIR_ALLIANCE].gender[male].icon = 7431081
 RaceIDs[HARANIR_HORDE].gender[male].icon = 7431081
+RaceIDs[HUMAN].gender[male].icon = 236448
+RaceIDs[NIGHTELF].gender[male].icon = 236450
+RaceIDs[ORC].gender[male].icon = 236452
+RaceIDs[TAUREN].gender[male].icon = 236454
+RaceIDs[TROLL].gender[male].icon = 236456
+RaceIDs[UNDEAD].gender[male].icon = 236458
 
 -- Verify no new races have been missed from Constants
 for _,race in ipairs(ALL_RACES) do
@@ -163,44 +163,43 @@ local alliance = 1
 local horde = 2
 
 -- Assign RaceID factions directly
-RaceIDs[WORGEN].faction = alliance
-RaceIDs[VOIDELF].faction = alliance
-RaceIDs[LIGHTFORGED].faction = alliance
-RaceIDs[KULTIRAN].faction = alliance
+RaceIDs[BLOODELF].faction = horde
 RaceIDs[DARKIRON].faction = alliance
-RaceIDs[MECHAGNOME].faction = alliance
-RaceIDs[PANDAREN_ALLIANCE].faction = alliance
-RaceIDs[PANDAREN_HORDE].faction = horde
 RaceIDs[DRACTHYR_ALLIANCE].faction = alliance
 RaceIDs[DRACTHYR_HORDE].faction = horde
+RaceIDs[DRAENEI].faction = alliance
+RaceIDs[DWARF].faction = alliance
 RaceIDs[EARTHEN_ALLIANCE].faction = alliance
 RaceIDs[EARTHEN_HORDE].faction = horde
-RaceIDs[HARANIR_ALLIANCE].faction = alliance
-RaceIDs[HARANIR_HORDE].faction = horde
-RaceIDs[NIGHTBORNE].faction = horde
+RaceIDs[GNOME].faction = alliance
+RaceIDs[GOBLIN].faction = horde
 RaceIDs[HARANIR_ALLIANCE].faction = alliance
 RaceIDs[HARANIR_HORDE].faction = horde
 RaceIDs[HIGHMOUNTAIN_TAUREN].faction = horde
-RaceIDs[ZANDALARI].faction = horde
-RaceIDs[VULPERA].faction = horde
-RaceIDs[MAGHAR].faction = horde
 RaceIDs[HUMAN].faction = alliance
-RaceIDs[DWARF].faction = alliance
+RaceIDs[KULTIRAN].faction = alliance
+RaceIDs[LIGHTFORGED].faction = alliance
+RaceIDs[MAGHAR].faction = horde
+RaceIDs[MECHAGNOME].faction = alliance
+RaceIDs[NIGHTBORNE].faction = horde
 RaceIDs[NIGHTELF].faction = alliance
-RaceIDs[GNOME].faction = alliance
-RaceIDs[DRAENEI].faction = alliance
 RaceIDs[ORC].faction = horde
-RaceIDs[UNDEAD].faction = horde
+RaceIDs[PANDAREN_ALLIANCE].faction = alliance
+RaceIDs[PANDAREN_HORDE].faction = horde
 RaceIDs[TAUREN].faction = horde
 RaceIDs[TROLL].faction = horde
-RaceIDs[GOBLIN].faction = horde
-RaceIDs[BLOODELF].faction = horde
+RaceIDs[UNDEAD].faction = horde
+RaceIDs[VOIDELF].faction = alliance
+RaceIDs[VULPERA].faction = horde
+RaceIDs[WORGEN].faction = alliance
+RaceIDs[ZANDALARI].faction = horde
 
 
 -- FlightPathDB --
 -- Represents the mapID used by the game to show FlightPaths at a Flight Master
 -- Missing ones will be reported in chat by ATT when 'Debugging' is set
 local FlightPathMapIDs = {};
+ExportDB._Compressed.FlightPathDB = true
 ExportDB.FlightPathDB = {FlightPathMapIDs = FlightPathMapIDs}
 for i,mapID in ipairs({
 	-- #if ANYCLASSIC
