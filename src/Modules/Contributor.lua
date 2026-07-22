@@ -125,14 +125,8 @@ local function DoReport(reporttype, id)
 	-- common report data
 	reportData[#reportData + 1] = "### "..reporttype..":"..id
 	reportData[#reportData + 1] = "```vbnet"	-- discord fancy box start (testing: https://highlightjs.org/demo)
-	-- add ordered data
-	for i=1,#orderedReportData do
-		reportData[#reportData + 1] = orderedReportData[i]
-	end
-	-- add keyed data
-	for i=1,#keyedData do
-		reportData[#reportData + 1] = keyedData[i]
-	end
+	-- add distinct ordered/keyed data
+	app.ArrayAppendDistinct(reportData, orderedReportData, keyedData)
 	-- common report data
 	reportData[#reportData + 1] = "---- User Info ----"
 	reportData[#reportData + 1] = "PlayerLocation: "..GetReportPlayerLocation()
@@ -226,10 +220,8 @@ local function AddReportData(reporttype, id, data, chatlink)
 				reportData[k] = v
 			end
 		end
-		-- add any ordered data first
-		for i=1,#data do
-			reportData[#reportData + 1] = data[i]
-		end
+		-- add any distinct ordered data first
+		app.ArrayAppendDistinct(reportData, data)
 		app.wipearray(data)
 		-- add/replace keyed data
 		for k,v in pairs(data) do
