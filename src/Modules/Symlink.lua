@@ -1049,7 +1049,7 @@ app.AddEventHandler("OnLoad", function()
 			for i=1,#npcGroups do
 				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
-					if ThingKeys[npcGroup.key] then
+					if ThingKeys[npcGroup.key] and npcGroup.providers then
 						-- app.PrintDebug("IsThingDrop.Diff",group.hash,"<==",npcGroup.hash)
 						if groups then groups[#groups + 1] = CreateObject(npcGroup)
 						else groups = { CreateObject(npcGroup) }; end
@@ -1080,7 +1080,7 @@ app.AddEventHandler("OnLoad", function()
 			for i=1,#npcGroups do
 				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
-					if ThingKeys[npcGroup.key] then
+					if ThingKeys[npcGroup.key] and npcGroup.providers then
 						-- app.PrintDebug("IsThingDrop",group.hash,"<==",npcGroup.hash)
 						if groups then groups[#groups + 1] = CreateObject(npcGroup)
 						else groups = { CreateObject(npcGroup) }; end
