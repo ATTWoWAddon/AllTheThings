@@ -3035,6 +3035,7 @@ MobileDB.GameObject = {
 	[523283] = true,	-- Refulgent Copper Seam
 	[523286] = true,	-- Wild Refulgent Copper
 	[523287] = true,	-- Voidbound Refulgent Copper
+	[523288] = true,	-- Umbral Tin
 	[523295] = true,	-- Brilliant Silver
 	[523378] = true,	-- Portal to Nagrand
 	[523409] = true,	-- Shiny Trash Can
