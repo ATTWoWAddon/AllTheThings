@@ -8,8 +8,8 @@ local ipairs, pairs, setmetatable, tinsert, math_floor, wipe
 local C_Map_GetMapInfo,GetRealZoneText, GetSubZoneText, IsInInstance
 	= C_Map.GetMapInfo,GetRealZoneText, GetSubZoneText, IsInInstance;
 local contains = app.contains
-local wipearray, ArrayAppend, CreateObject, MergeObject, MergeProperties, NestObjects, IsQuestFlaggedCompleted
-	= app.wipearray, app.ArrayAppend, app.__CreateObject, app.MergeObject, app.MergeProperties, app.NestObjects, app.IsQuestFlaggedCompleted
+local wipearray, CreateObject, MergeObject, MergeProperties, NestObjects, IsQuestFlaggedCompleted
+	= app.wipearray, app.__CreateObject, app.MergeObject, app.MergeProperties, app.NestObjects, app.IsQuestFlaggedCompleted
 local GetRelativeGroup = app.GetRelativeGroup;
 
 -- Discord Error Reporting
@@ -116,6 +116,7 @@ local RetailMapDataStyleMetatable = {
 
 		-- Get all results for this map
 		local results = app.SearchForField("mapID", mapID)
+		-- app.PrintDebug("RetailMapDataStyleMetatable.results",mapID,results and #results)
 		if results and #results > 0 then
 			-- I tend to like this way of finding sub-maps, but it does mean we rely on Blizzard and get whatever maps they happen to claim
 			-- are children of a given map... sometimes has weird results like scenarios during quests being considered children in
@@ -130,13 +131,25 @@ local RetailMapDataStyleMetatable = {
 				-- end
 			-- end
 			-- See if there are any sub-maps we should also include by way of the 'maps' field on the 'real' map for this id
-			local rootMap, result
+			local rootMap, result, altrootmap
 			for i=1,#results do
 				result = results[i]
-				if result.key == "mapID" and result.mapID == mapID then
-					rootMap = result
-					break;
+				if result.key == "mapID" then
+					if result.mapID == mapID then
+						-- app.PrintDebug("Found Root Map Result:",mapID,app:SearchLink(result))
+						rootMap = result
+						break
+					else
+						-- app.PrintDebug("Found Alt-Root Map Result:",result.mapID,app:SearchLink(result))
+						altrootmap = result
+					end
 				end
+			end
+			-- in case we enter a sub-map without hitting the root map first (i.e. reload in a cave, certain delve maps, etc.)
+			if altrootmap and not rootMap then
+				-- make sure to add the results for the root map
+				results = app.ArrayAppendDistinct(results, app.SearchForField("mapID", altrootmap.mapID))
+				rootMap = altrootmap
 			end
 			local rootMaps = rootMap and rootMap.maps
 			if rootMaps then
@@ -146,7 +159,7 @@ local RetailMapDataStyleMetatable = {
 					if subMapID ~= mapID then
 						subresults = app.SearchForField("mapID", subMapID)
 						-- app.PrintDebug("Adding Sub-Map Results:",subMapID,#subresults)
-						results = ArrayAppend(results, subresults)
+						results = app.ArrayAppendDistinct(results, subresults)
 					end
 				end
 			end
@@ -388,16 +401,17 @@ local function TrySwapFromCache(self)
 	if mapID == 0 then return end
 
 	local header = CachedMapData[mapID]
-	local newData = header ~= self.data
 	if header._firstshow then
 		header._firstshow = nil
 		-- never built, allow rebuild
+		-- app.PrintDebug("newData:rebuild")
 		return
 	elseif header._lastshown < expired then
 		-- app.PrintDebug("Do update for cached map",mapID,header._lastshown,expired)
 		-- we don't necessarily need to wipe the data, it would just need a force update if used again
 		self.HasPendingUpdate = true
 	end
+	local newData = header ~= self.data
 	-- Update the mapID into the data for external reference in case not a real map
 	header.mapID = self.mapID;
 	self:SetData(header)
@@ -509,7 +523,7 @@ app:CreateWindow("MiniList", {
 		if IsInInstance() then
 			local mapInfo = app.CurrentMapInfo;
 			if mapInfo and mapInfo.parentMapID and (mapInfo.mapType or 0) < 3 then
-				-- app.PrintDebug("Don't load Large Maps in minilist")
+				-- app.PrintDebug("Don't load Large Maps in minilist",app.StringifyTable(mapInfo,","))
 				return;
 			end
 		end
