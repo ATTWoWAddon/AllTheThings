@@ -3628,6 +3628,15 @@ local UnknownObjectsCache = setmetatable({}, { __index = function(t, objectID)
 	t[objectID] = o
 	return o
 end})
+local FilledObjectsCache = setmetatable({}, { __index = function(t, objRef)
+	local o = app.__CreateObject(objRef)
+	o.__FillImmediate = true
+	app.SetSkipLevel(2)
+	app.FillGroups(o)
+	app.SetSkipLevel(0)
+	t[objRef] = o
+	return o
+end})
 local LastSoftInteract = {}
 local RegisterUNIT_SPELLCAST_SENT, UnregisterUNIT_SPELLCAST_SENT
 -- Allows automatically tracking nearby ObjectID's and running check functions on them for data verification
@@ -3766,12 +3775,35 @@ end
 api:AddEventFunc("PLAYER_SOFT_TARGET_INTERACTION", OnPLAYER_SOFT_TARGET_INTERACTION)
 
 local OnLOOT_CLOSED
+local function PartitionLoots(loots)
+	local g, lootid, lootslot, loot
+	local item, currency = {}, {}
+	for i=1,#loots do
+		lootslot = loots[i]
+		g = lootslot.g
+		for j=1,#g do
+			loot = g[j]
+			lootid = loot.itemID
+			if lootid then
+				item[lootid] = ":"
+			end
+			lootid = loot.currencyID
+			if lootid then
+				currency[lootid] = ":"
+			end
+		end
+	end
+	loots.item = item
+	loots.currency = currency
+end
 local function OnLOOT_READY()
-	api:UnregisterEvent("LOOT_READY")
 	api:RegisterFuncEvent("LOOT_CLOSED",OnLOOT_CLOSED)
 
 	local loots = api.ParseLoot(DebugPrinting)
-	local id, objectName, lootslot, loot
+	if #loots > 0 then
+		api:UnregisterEvent("LOOT_READY")
+	end
+	local id, objectName, lootslot
 
 	for i=1,#loots do
 		lootslot = loots[i]
@@ -3785,43 +3817,58 @@ local function OnLOOT_READY()
 
 	if DebugPrinting then app.print("Contrib.Loot.Object:",id) end
 	-- Verify 'Opened Object', report ObjectID if not Sourced
-	if not id or IgnoredChecksByType.GameObject.coord(id) then return end
+	if not id then return end
 
+	local reportData
 	local objRef = SearchForObject("objectID", id, "field") or SearchForObject("objectID", id)
-	-- if it's Sourced, we've already checked it via PLAYER_SOFT_INTERACT_CHANGED
-	if objRef then return end
 
-	objRef = UnknownObjectsCache[id]
-	-- capture the set of all item/currency loots for report
-	local g
-	local lootitem, lootcurrency = {}, {}
-	for i=1,#loots do
-		lootslot = loots[i]
-		g = lootslot.g
-		for j=1,#g do
-			loot = g[j]
-			id = loot.itemID
-			if id then
-				lootitem[id] = ":"
+	-- Check for VerifyLoot
+	if objRef and (objRef.VerifyLoot or app.Debugging) then
+		objRef = FilledObjectsCache[objRef]
+
+		local searchGroups = {objRef}
+		local drop = {g=true}
+		local missingLootItems = {}
+		PartitionLoots(loots)
+		for itemID in pairs(loots.item) do
+			if #app:BuildTargettedSearchResponse(searchGroups, "itemID", itemID, drop) == 0 then
+				-- app.PrintDebug("Missing Loot Item",itemID,"from Object",id)
+				missingLootItems[itemID] = ":"
+			else
+				-- app.PrintDebug("Existing Loot Item",itemID,"from Object",id)
 			end
-			id = loot.currencyID
-			if id then
-				lootcurrency[id] = ":"
-			end
+		end
+
+		-- report loot not linked to this object
+		if next(missingLootItems) then
+			reportData = reportData or BuildGenericReportData(objRef, id)
+			reportData.MissingLoot = "Lootable Object missing confirmed Loot!"
+			reportData.objectID = id
+			reportData.MissingLootItems = app.StringifyTable(missingLootItems)
+			reportData.LootCurrencies = app.StringifyTable(loots.currency)
+			reportData.ALLOWREPEAT = true
+			AddReportData(objRef.__type,objRef.keyval,reportData)
 		end
 	end
 
-	-- report openable object
-	local reportData = BuildGenericReportData(objRef, id)
-	reportData.NotSourced = "Lootable Object not Sourced!"
-	reportData.TooltipName = objectName or "(No Tooltip Text Available)"
-	reportData.objectID = id
-	reportData.LootItems = app.StringifyTable(lootitem)
-	reportData.LootCurrencies = app.StringifyTable(lootcurrency)
-	AddReportData(objRef.__type,objRef.keyval,reportData)
+	if not objRef and not IgnoredChecksByType.GameObject.coord(id) then
+		-- Object should be sourced
+		objRef = UnknownObjectsCache[id]
+
+		PartitionLoots(loots)
+		-- report unsourced openable object
+		reportData = reportData or BuildGenericReportData(objRef, id)
+		reportData.NotSourced = "Lootable Object not Sourced!"
+		reportData.TooltipName = objectName or "(No Tooltip Text Available)"
+		reportData.objectID = id
+		reportData.LootItems = app.StringifyTable(loots.item)
+		reportData.LootCurrencies = app.StringifyTable(loots.currency)
+		AddReportData(objRef.__type,objRef.keyval,reportData)
+	end
 end
 OnLOOT_CLOSED = function()
 	api:UnregisterEvent("LOOT_CLOSED")
+	api:UnregisterEvent("LOOT_READY")
 end
 RegisterOnLOOT_READY = function()
 	api:RegisterFuncEvent("LOOT_READY",OnLOOT_READY)
