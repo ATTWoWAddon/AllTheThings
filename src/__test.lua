@@ -546,11 +546,15 @@ end
 
 function ATTscripttimeout(source, immediatesec)
 	app.print("Script Timeout test via",source,"@",immediatesec)
-	local Success
+	local GetTimePreciseSec=GetTimePreciseSec
+	local Success,StartWait
+	local function PrintWait(sec)
+		app.print("waiting",sec,"s ... via",source)
+	end
 	local function LongRun(sec)
 		Success = nil
-		app.print("waiting",sec,"s ... via",source)
-		local done = GetTimePreciseSec() + (sec or 0)
+		StartWait = GetTimePreciseSec()
+		local done = StartWait + (sec or 0)
 		while GetTimePreciseSec() < done do
 		end
 		app.print("waited",sec,"s via",source)
@@ -564,19 +568,42 @@ function ATTscripttimeout(source, immediatesec)
 
 	local Runner = app.CreateRunner("TestScriptTimeout")
 	Runner.SetPerFrameDefault(1)
-	local function VerifyPriorSuccess()
+
+	local test = true
+	local min,max = 0,60
+	local time = max
+	local function VerifyPriorSuccess(sec)
+		local change
 		if Success then
-			app.print("Success!")
+			app.print("Success!",sec)
+			min = math.max(min,time)
+			change = (max - min) / 2
+			time = min + change
 		else
-			app.print("Script Timeout!")
+			app.print("Script Timeout!",sec)
+			max = GetTimePreciseSec() - StartWait
+			change = (max - min) / 2
+			time = max - change
+		end
+		if change < (max / 100) then
+			test = nil
 		end
 	end
-
-	for i=0,5 do
-		-- Runner.Run(LongRun, math.pow(2,i))
-		Runner.Run(LongRun, 5)
-		Runner.Run(VerifyPriorSuccess)
+	local function FinalTimeouts()
+		app.print("Longest Success",min)
+		app.print("Shortest Timeout",max)
 	end
+	local function TryNextTime()
+		if test then
+			Runner.Run(PrintWait, time)
+			Runner.Run(LongRun, time)
+			Runner.Run(VerifyPriorSuccess, time)
+			Runner.Run(TryNextTime)
+		else
+			Runner.Run(FinalTimeouts)
+		end
+	end
+	Runner.Run(TryNextTime)
 end
 
 -- ATTscripttimeout("immediate", 21)
