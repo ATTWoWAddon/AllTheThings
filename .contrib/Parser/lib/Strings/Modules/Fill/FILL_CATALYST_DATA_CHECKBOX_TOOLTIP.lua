@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = [[~"Fills the Catalyst |T" .. _.asset("Interface_Catalyst") .. ":0|t result of the current Item if one is possible and determined via ATT.\n\nNOTE: This Filler is not applied to the ATT Mini List."]],
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = [[~"Rellena el Catalizador |T" .. _.asset("Interface_Catalyst") .. ":0|t resultado del Objeto actual si es posible y se determina mediante ATT.\n\nNOTA: Este Relleno no se aplica a la Mini Lista ATT."]],
+		mx = [[~"Rellena el Catalizador |T" .. _.asset("Interface_Catalyst") .. ":0|t resultado del Objeto actual si es posible y se determina mediante ATT.\n\nNOTA: Este Relleno no se aplica a la Mini Lista ATT."]],
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

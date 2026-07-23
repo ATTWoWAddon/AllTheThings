@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = [[~"Fills any Purchases which can be made with a given Cost |T".._.asset("Currency")..":0|t\n\nNOTE: A 'Purchase' is a loose term in that it essentially means it requires/consumes/uses/depletes/etc. the 'Cost' in order to be obtained."]],
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = [[~"Rellena cualquier compra que se pueda hacer con un costo determinado |T".._.asset("Moneda")..":0|t\n\nNOTA: Una "compra" es un término amplio que esencialmente significa que requiere/consume/usa/agota/etc. el "coste" para poder obtenerse."]],
+		mx = [[~"Rellena cualquier compra que se pueda hacer con un costo determinado |T".._.asset("Moneda")..":0|t\n\nNOTA: Una "compra" es un término amplio que esencialmente significa que requiere/consume/usa/agota/etc. el "costo" para poder obtenerse."]],
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

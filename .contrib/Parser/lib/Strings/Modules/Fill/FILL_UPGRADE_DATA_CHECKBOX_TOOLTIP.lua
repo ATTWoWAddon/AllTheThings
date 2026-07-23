@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = [[~"Fills any Upgrade |T".._.asset("Interface_Upgrade")..":0|t which is available to the given Item\n\nFor an ATT List this is typically shown if available for the default state of an Item as Sourced, whereas in Tooltips it is based on the raw Item data when shown."]],
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = [[~"Rellena cualquier mejora |T".._.asset("Interface_Upgrade")..":0|t que esté disponible para el objeto dado\n\nPara una lista ATT, esto se muestra normalmente si está disponible para el estado predeterminado de un elemento como Origen, mientras que en las sugerencias se basa en los datos brutos del elemento cuando se muestra."]],
+		mx = [[~"Rellena cualquier mejora |T".._.asset("Interface_Upgrade")..":0|t que esté disponible para el objeto dado\n\nPara una lista ATT, esto se muestra normalmente si está disponible para el estado predeterminado de un elemento como Origen, mientras que en las sugerencias se basa en los datos brutos del elemento cuando se muestra."]],
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -14,5 +14,17 @@ SHOWDOWN = createHeader({
 		cn = "摊牌",
 		tw = "攤牌",
 	},
-	lore = "The worlds of Naigtal and Val are distant frontiers caught in the widening shadow of the Void. Reached only through unstable portals deep within Voidstorm, these realms have become strongholds for powerful enemies directing attacks against Azeroth.",
+	lore = {
+		en = "The worlds of Naigtal and Val are distant frontiers caught in the widening shadow of the Void. Reached only through unstable portals deep within Voidstorm, these realms have become strongholds for powerful enemies directing attacks against Azeroth.",
+		-- TODO: de = "",
+		es = "Los mundos de Naigtal y Val son fronteras lejanas atrapadas en la creciente sombra del Vacío. Accesibles únicamente a través de portales inestables en las profundidades de la Tormenta del Vacío, estos reinos se han convertido en fortalezas de poderosos enemigos que dirigen ataques contra Azeroth.",
+		mx = "Los mundos de Naigtal y Val son fronteras lejanas atrapadas en la creciente sombra del Vacío. Accesibles únicamente a través de portales inestables en las profundidades de la Tormenta del Vacío, estos reinos se han convertido en fortalezas de poderosos enemigos que dirigen ataques contra Azeroth.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
 });

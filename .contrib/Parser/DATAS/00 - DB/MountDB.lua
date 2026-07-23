@@ -117,7 +117,7 @@ i(276082, 1298515);	-- Spectral Gryphon
 i(276081, 1298516);	-- Spectral Wind Rider
 i(272920, 1291315);	-- Spring Panda (CN ONLY)
 i(276075, 1298512);	-- Stormcrow
-i(0, 1301737);		-- Sunflash driftmoth
+i(0, 1301737);		-- Sunflash Driftmoth
 i(254735, 1285725);	-- Thunderhoof Celestial (CN ONLY)
 
 --- NYI ---

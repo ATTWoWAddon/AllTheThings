@@ -1850,6 +1850,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 					},
 				})),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_FIVE, q(86674, {	-- The Perfect Poison
+					["qg"] = 16091,	-- Dirk Thunderwood
+					["coord"] = { 52.1, 39.1, SILITHUS },
+					["maps"] = { RUINS_OF_AHNQIRAJ, ZULGURUB },
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Venoxis's Venom Sac
+							["provider"] = { "i", 22216 },	-- Venoxis's Venom Sac
+						}),
+						objective(2, {	-- 0/1 Kurinnaxx's Venom Sac
+							["provider"] = { "i", 22217 },	-- Kurinnaxx's Venom Sac
+						}),
+						i(234798),	-- Doomulus Prime
+						i(234799),	-- Fahrad's Reloading Repeater
+						i(234792),	-- Ravenholdt Slicer
+						i(234793),	-- Shivsprocket's Shiv
+						i(234800),	-- Simone's Cultivating Hammer
+						i(234797),	-- The Thunderwood Poker
+					},
+				})),
+				-- #else
 				applyclassicphase(PHASE_FIVE, q(9023, {	-- The Perfect Poison
 					["qg"] = 16091,	-- Dirk Thunderwood
 					["coord"] = { 52.1, 39.1, SILITHUS },
@@ -1883,6 +1905,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				-- #endif
 				q(28856, {	-- The Sands of Silithus
 					["qg"] = 11118,	-- Innkeeper Vizzie
 					["coord"] = { 59.8, 51.1, WINTERSPRING },
