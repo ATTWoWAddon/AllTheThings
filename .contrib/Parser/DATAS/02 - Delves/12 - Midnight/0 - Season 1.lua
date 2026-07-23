@@ -238,6 +238,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						}),
 						filter(MOUNTS, {
 							i(262500, {	-- Silvermoon's Arcane Defender (MOUNT!)
+								-- Exo Note: Not sure if this one is removed in 12.1.0, I don't see it on the vendor but, at the same time I have it learned so I can't be sure
 								["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 								-- Renown 5
 							}),

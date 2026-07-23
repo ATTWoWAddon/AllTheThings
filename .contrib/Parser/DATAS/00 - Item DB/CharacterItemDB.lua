@@ -1044,6 +1044,12 @@ iq(262744, 93807);					-- "Riftwalk" Kit
 iq(262745, 93809);					-- "Stealth" Kit
 iq(262742, 93805);					-- "Swift" Kit
 
+------------------
+-- PATCH 12.1.0 --
+------------------
+ihqt(275986, 95039);				-- Delver's Cosmetic Surprise Bag
+ihqt(275978, 96975);				-- Delver's Starter Kit
+
 ------------
 -- UNUSED --
 ------------

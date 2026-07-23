@@ -1343,11 +1343,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(262842),	-- Deep Dunecloth Belt
 				i(262824),	-- Deep Dunecloth Skirt
 				i(262860),	-- Deep Dunecloth Vest
-				i(263575),	-- Ensemble: Elder Moss Outfit
-				i(263574),	-- Ensemble: Osseoclad's Wear
-				i(263576),	-- Ensemble: Rampant Thorn Armor
 				i(258032),	-- Ensemble: Skilled Preyseeker's Attire
-				i(263520),	-- Ensemble: Sprawling's Garb
 				i(262840),	-- Grassy Dunecloth Belt
 				i(262822),	-- Grassy Dunecloth Skirt
 				i(262859),	-- Grassy Dunecloth Vest
@@ -1402,10 +1398,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(258719),	-- Elaborate Golden Mageweave Shoulders
 				i(258688),	-- Elaborate Golden Mageweave Vest
 				i(258684),	-- Elaborate Golden Mageweave Vestments
-
-				------ Rootlands Weaponry ------
-				i(263577),	-- Arsenal: Rootlands Weaponry
-				q(93962),	-- Arsenal: Rootlands Weaponry
 			}),
 			n(WEAPONS, {
 				i(262734),	-- [DNT] Mace of the Great Dark

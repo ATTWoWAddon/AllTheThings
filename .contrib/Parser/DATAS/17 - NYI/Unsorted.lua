@@ -45,13 +45,10 @@ root(ROOTS.Unsorted, {
 			i(260426),	-- Bloodied Whetstone
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
-			i(263520),	-- Ensemble: Sprawling Garb
 			i(263874),	-- Emerald-Encrusted Amani Ritual Skull
 			i(263875),	-- Griftah's Resizing Hex-Skull
 			i(263880),	-- Cherished Pet's Rug
 			i(264162),	-- Enchanted Snowflake
-			i(265033),	-- Zul'Aman Brazier Post
-			i(265386),	-- Zul'Aman Amani Awning
 			i(265399),	-- Ritually-Charred Bones
 			i(265400),	-- Calcified Turtle Heart
 			i(265402),	-- Fistful of Gnat Wings
@@ -63,7 +60,6 @@ root(ROOTS.Unsorted, {
 			i(266327),	-- Pristine Spinal Barb
 			i(267045),	-- Quivering Egg
 			i(267080),	-- Amani Blueflame Chandelier
-			i(267207),	-- Amani Territorial Totem
 			i(267233),	-- Dehydrated Troll Eye Necklace
 			i(267378),	-- Venom Scholar's Focus
 			i(268095),	-- Fresh Poultice
@@ -672,7 +668,6 @@ root(ROOTS.Unsorted, {
 			i(272280),	-- Exhumed Soul-Cleaver
 			i(272283),	-- Swordsman's Emanation
 			i(272358),	-- Seaside Firefly Jar
-			i(272360),	-- Ula'tek Ritual Stone
 			i(272362),	-- Venombound Ropes
 			i(273004),	-- Corrosive Reroll
 			i(273056),	-- Odious Alloy
@@ -935,18 +930,12 @@ root(ROOTS.Unsorted, {
 			i(275728),	-- Preyhunter's Champion Sack
 			i(275822),	-- Preyhunter's Veteran Chest
 			i(275825),	-- Ula'tek's Sssacrificial Rain
-			i(275853),	-- Zul'Aman Burning Pinecone
 			i(275855),	-- Zul'Aman Swamp Palm Sprout
-			i(275857),	-- Zul'Aman Creeping Pangoroot
 			i(275899),	-- Venom-Soaked Satchel
-			i(275910),	-- Scalebound Herald's Flute
 			i(275911),	-- Venom-Covered Chest
 			i(275917),	-- Preyhunter's Veteran Sack
 			i(275918),	-- Preyhunter's Adventurer Chest
 			i(275919),	-- Preyhunter's Adventurer Sack
-			i(275936),	-- Delve-O-Bot 7001: Midnight Software Update Chip
-			i(275978),	-- Delver's Starter Kit
-			i(275986),	-- Delver's Cosmetic Surprise Bag
 			i(275988),	-- Corrosive Victory
 			i(276033),	-- Loa Watcher's Pendant
 			i(276034),	-- Entangling Brood Ring
@@ -971,9 +960,7 @@ root(ROOTS.Unsorted, {
 			i(276126),	-- Serpent's Feather
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
-			i(276162),	-- Corroded Soul Crusher
 			i(276164),	-- Corroded Patagia
-			i(276165),	-- Ophidian Patagia
 			i(276166),	-- Twin-Headed Twinblade
 			i(276167),	-- Ori'kassi's Lance
 			i(276168),	-- Fang of Ss'akrithos
@@ -986,7 +973,6 @@ root(ROOTS.Unsorted, {
 			i(276178),	-- Venom Lancer's Gauntlets
 			i(276186),	-- Totally Not Stolen Powder
 			i(276187),	-- Venomous Jeweler's Setting
-			i(276189),	-- Effigy of Dundun
 			i(276198),	-- Shellman's 195
 			i(276205),	-- Legitimate Shipment of Swivel Guns
 			i(276206),	-- Leagally Sourced Cannon Shot
@@ -1431,7 +1417,6 @@ root(ROOTS.Unsorted, {
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
 			i(279287),	-- Corroded Pouch
 			i(279288),	-- Corroded Satchel
-			i(279289),	-- Well Urned Rest
 			i(279290),	-- Fang Lover's
 			i(279345),	-- Corroded Satchel
 			i(279358),	-- Arsenal: Venom-Cursed Arms
@@ -1920,9 +1905,6 @@ root(ROOTS.Unsorted, {
 				i(272354),	-- Auspicious Stone Lion
 			}),
 			filter(MISC, {
-				-- Delve
-				i(275910),	-- Beacon of Hope
-				--
 				i(270273),	-- Viny Lasso
 				i(276347),	-- Cracked Legion Communicator
 				i(276351),	-- Muckfaded Crystalline Figure
