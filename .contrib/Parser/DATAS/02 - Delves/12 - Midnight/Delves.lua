@@ -1095,6 +1095,17 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 		},
 	}),
+	m(GNARLDOR_ISLE, {
+		--["icon"] = 132291,
+		["coord"] = { 64.4, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(63170),	-- Gnarldor Isle Discoveries
+				ach(63437),	-- Gnarldor Isle Stories
+			}),
+		},
+	}),
 	m(PARHELION_PLAZA, {
 		["icon"] = 252996,
 		["coord"] = { 47.5, 41.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },

@@ -4216,11 +4216,17 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- 12.1.0
 		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			-- 12.1.0.68209
+			-- Delves
+			ach(63438),	-- Gnarldor Isle clears
+			ach(63439),	-- The Ring of Glory clears
+			ach(63440),	-- Venomfall Deeps clears
+			-- Mistcrests
 			ach(62912),	-- Adventurer Mistcrests earned
 			ach(62913),	-- Veteran Mistcrests earned
 			ach(62914),	-- Champion Mistcrests earned
 			ach(62915),	-- Hero Mistcrests earned
 			ach(62916),	-- Myth Mistcrests earned
+			-- Raids
 			ach(63537),	-- Entombed Sentinels (Raid Finder The Venomous Abyss)
 			ach(63538),	-- Entombed Sentinels (Normal The Venomous Abyss)
 			ach(63539),	-- Entombed Sentinels (Heroic The Venomous Abyss)

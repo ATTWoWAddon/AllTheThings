@@ -1,4 +1,3 @@
--- GNARLDOR_ISLE, 64.4, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE
 DELVES_MID_S2 = createHeader({
 	readable = "Delves MID S2",
 	icon = 1604168,
