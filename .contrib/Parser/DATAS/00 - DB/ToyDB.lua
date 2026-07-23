@@ -1610,7 +1610,9 @@ i(264368);	-- ??
 -- PATCH 12.1.0 --
 ------------------
 i(280201);	-- Book of Storytime
+i(275988);	-- Corrosive Victory
 i(280419);	-- Cursed Badge of the Soulcoilers
+i(276189);	-- Effigy of Dundun
 i(279021);	-- Forgotten Memento
 i(279054);	-- Idol of Blue Water and Blue Sky
 i(276925);	-- Idol of Ula'tek
@@ -1620,8 +1622,6 @@ i(274921);	-- Pearl of Jubilation
 --- Unsorted ---
 i(279052);	-- Ancient Amani Mask
 i(276258);	-- Companion Command Crystal
-i(275988);	-- Corrosive Victory
-i(276189);	-- Effigy of Dundun
 i(275683);	-- G-00
 i(274817);	-- Gold Starfish
 i(278557);	-- Otoola's Recognition

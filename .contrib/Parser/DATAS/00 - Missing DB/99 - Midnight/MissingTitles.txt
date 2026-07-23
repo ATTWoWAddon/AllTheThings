@@ -66,8 +66,6 @@ title(768),	-- Venomous Legend %s
 title(769),	-- Venomous Marshal %s
 title(770),	-- Venomous Warlord %s
 title(774),	-- Snake Eater %s
-title(775),	-- %s the Poisonous
-title(776),	-- %s, Fabled Vanquisher of Azta'rec
 title(781),	-- %s, Voice of the Fangs
 title(782),	-- %s, Nalorakk's Favored
 title(783),	-- Street Sovereign %s

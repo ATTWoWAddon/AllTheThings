@@ -2498,7 +2498,9 @@ i(272920, 1291315);	-- Spring Panda
 ------------------
 -- PATCH 12.1.0 --
 ------------------
+i(275657, 1297404);	-- Apophic Soul Crusher
 i(275656, 1297224);	-- Auriferous Venomfang
+i(276162, 1298808);	-- Corroded Soul Crusher
 i(275652, 1297220);	-- Crimson Venomfang
 i(276553, 1299965);	-- Emerald Skyfang
 i(276802, 1300778);	-- Indigo Coiled Horror
@@ -2509,14 +2511,12 @@ i(277192, 1301775);	-- Umbral Ashes
 i(276801, 1300777);	-- Venomous Coiler
 i(276551, 1299963);	-- Violet-Backed Skyfang
 --- UNSORTED ---
-i(275657, 1297404);	-- Apophic Soul Crusher
 i(275551, 1296724);	-- Autumnal Witchwick's Rider
 i(275573, 1296988);	-- Blushing Witchwick's Rider
 i(276881, 1301070);	-- Breath of Blight
 i(276882, 1301074);	-- Breath of Ruin
 i(275574, 1296989);	-- Carmine Witchwick's Rider
 i(275654, 1297217);	-- Caustic Venomfang
-i(276162, 1298808);	-- Corroded Soul Crusher
 i(278574, 1305206);	-- Crested Aqua Leafmimic
 i(278573, 1305204);	-- Crested Ember Leafmimic
 i(278575, 1305207);	-- Crested Verdant Leafmimic

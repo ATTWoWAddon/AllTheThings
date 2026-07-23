@@ -754,22 +754,43 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					}),
 				}),
 				filter(COSMETIC, {
+					iensemble(263577, {	-- Arsenal: Rootlands Weaponry
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(263575, {	-- Ensemble: Elder Moss Outfit
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(263574, {	-- Ensemble: Osseoclad's Wear (COSMETIC!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(263576, {	-- Ensemble: Rampant Thorn Armor
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(263520, {	-- Ensemble: Sprawling Garb (COSMETIC!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
 					i(264849, {	-- Dewy Vinepouch (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
-					i(264856, {	-- Vilebranch Lifeseer (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2000 } },
-					}),
-					i(264860, {	-- Twilight Magus's Cowl (COSMETIC!)
+					-- #if BEFORE 12.1.0
+					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
+					-- #endif
 					i(264853, {	-- Gilded Twilight Spaulder (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
-					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
+					i(276165, {	-- Ophidian Patagia (COSMETIC!)
+						["timeline"] = { ADDED_12_1_0 },
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
-					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
+					-- #if BEFORE 12.1.0
+					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(262973, {	-- Reliquary Expedition Notes (COSMETIC!)
@@ -778,29 +799,69 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
+					-- #endif
+					i(264860, {	-- Twilight Magus's Cowl (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
+					i(264856, {	-- Vilebranch Lifeseer (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
 				}),
 				n(DECOR, {
+					i(246779, {	-- Hanging Mana Brazier (DECOR!)
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
 					i(250770, {	-- Silvermoon Privacy Screen (DECOR!)
 						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
-					i(246779, {	-- Hanging Mana Brazier (DECOR!)
+					i(275853, {	-- Zul'Aman Burning Pinecone (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
+					i(275857, {	-- Zul'Aman Creeping Pangoroot (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
 						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 				}),
 				filter(MISC, {
+					i(280458, {	-- Delver's Corroded Pouch of Undercoin
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "i", 273000, 1 } },	-- 1x Corrosive Soul
+					}),
+					i(264652, {	-- Delver's Pouch of Voidlight Marl
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
 					i(244193, {	-- L00T RAID-R Mini
 						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
+					-- #if BEFORE 12.1.0
 					i(262963, {	-- Pious Memorial (CI!)
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					-- #endif
+					i(263188, {	-- Restored Coffer Key
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					i(263191, {	-- Restored Coffer Key
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(233061, {	-- Rock-in-a-Bottle
 						["cost"] = { { "c", UNDERCOIN, 250 } },
 					}),
+					i(275910, {	-- Scalebound Herald's Flute
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					-- #if AFTER 12.1.0
+					i(262951, {	-- Sin'dorei Gravestone (CI!)
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					-- #endif
 					i(248755, {	-- Star-in-a-Jar
 						["cost"] = { { "c", UNDERCOIN, 250 } },
 					}),
-					i(264652, {	-- Delver's Pouch of Voidlight Marl
+					i(279289, {	-- Well Urned Rest (CI!)
+						["timeline"] = { ADDED_12_1_0 },
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 				}),
@@ -810,19 +871,156 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					}),
 				}),
 				filter(TOYS, {
-					i(267291, {	-- Coffer Key Glue (TOY!)
-						["cost"] = { { "c", UNDERCOIN, 250 } },
-					}),
+					-- #if BEFORE 12.1.0
 					i(262431, {	-- Bouncy Mushroom (TOY!)
 						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
+					-- #endif
+					i(267291, {	-- Coffer Key Glue (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 250 } },
+					}),
+					-- #if AFTER 12.1.0
+					i(265100, {	-- Corewarden's Hearthstone (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 10000 } },
+					}),
+					i(264414, {	-- Midnight Delver's Flare Gun (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					-- #endif
 				}),
 			},
 		}),
 		n(242399, {	-- Telemancer Astrandis
 			["coord"] = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["groups"] = {
-				--Rewards locked behind Seasonal Delver's Journey progress.
+				n(DECOR, {
+					i(264175, {	-- Amani Strongbox (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(267207, {	-- Amani Territorial Totem (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
+					i(264170, {	-- Ancient Kaldorei Coffer (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(264007, {	-- Corewarden's Spoils (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(263995, {	-- Delver's Bountiful Coffer (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(265386, {	-- Fortified Amani Awning (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
+					i(263994, {	-- Fungal Chest (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(264008, {	-- Root-Wrapped Reliquary (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(263996, {	-- Twilight Tabernacle (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(272360, {	-- Ula'tek Ritual Stone (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
+					i(265033, {	-- Zul'Aman Brazier Post (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
+				}),
+				-- #if AFTER 12.1.0
+				filter(COSMETIC, {
+					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 3250 } },
+					}),
+					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 3250 } },
+					}),
+					i(262973, {	-- Reliquary Expedition Notes (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 2600 } },
+					}),
+					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 2600 } },
+					}),
+				}),
+				-- #endif
+				filter(MISC, {
+					i(275936, {	-- Delve-O-Bot 7001: Midnight Software Update Chip (CI!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
+					i(275986, {	-- Delver's Cosmetic Surprise Bag (CI!)
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					-- #if AFTER 12.1.0
+					i(262963, {	-- Pious Memorial (CI!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 2000 } },
+					}),
+					-- #endif
+				}),
+				filter(MOUNTS, {
+					i(276162, {	-- Corroded Soul Crusher (MOUNT!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
+				}),
+				filter(TOYS, {
+					-- #if AFTER 12.1.0
+					i(262431, {	-- Bouncy Mushroom (TOY!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 5000 } },
+					}),
+					-- #endif
+					i(276189, {	-- Effigy of Dundun (TOY!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
+				}),
 			},
 		}),
 	}),
@@ -894,6 +1092,17 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					["coord"] = { 29.3, 54.7, COLLEGIATE_CALAMITY },
 					["questID"] = 94030,
 				}),
+			}),
+		},
+	}),
+	m(GNARLDOR_ISLE, {
+		--["icon"] = 132291,
+		["coord"] = { 64.4, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(63170),	-- Gnarldor Isle Discoveries
+				ach(63437),	-- Gnarldor Isle Stories
 			}),
 		},
 	}),
@@ -1024,7 +1233,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	m(THE_DARKWAY, {
 		["icon"] = 132299,
 		["coord"] = { 39.3, 31.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61895),	-- The Darkway Discoveries
@@ -1058,7 +1266,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	m(THE_GULF_OF_MEMORY, {
 		["icon"] = 7355375,
 		["coord"] = { 36.6, 49.1, MAP.MIDNIGHT.HARANDAR },
-		["maps"] = { 2575 },
+		["maps"] = { 2575 },	-- Lower Rootway
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61898),	-- The Gulf of Memory Discoveries
@@ -1099,7 +1307,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	m(THE_GRUDGE_PIT, {
 		["icon"] = 5789324,
 		["coord"] = { 71.0, 65.6, MAP.MIDNIGHT.HARANDAR },
-		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61897),	-- The Grudge Pit Discoveries
@@ -1139,6 +1346,17 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				i(255826, {	-- Mysterious Skyshards
 					["sourceQuest"] = 90474,	-- The Legend of Aln'sharan
 				}),
+			}),
+		},
+	}),
+	m(THE_RING_OF_GLORY, {
+		--["icon"] = 132291,
+		["coord"] = { 71.2, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(63171),	-- The Ring of Glory Discoveries
+				ach(63436),	-- The Ring of Glory Stories
 			}),
 		},
 	}),

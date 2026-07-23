@@ -1,11 +1,4 @@
 1.14.1.41077
 faction(1041),	-- Frenzy
 12.1.0.68209
-faction(2771),	-- Zul'jarra's Forces (Paragon)
-faction(2772),	-- Zul'jarra's Forces
-faction(2773),	-- Captain Tokka
-faction(2775),	-- [DEPRECATED] Ofi the Sly
-faction(2776),	-- [DEPRECATED] Untrustworthy Ghost
-faction(2796),	-- Delves: Season 2
 faction(2808),	-- Prey: Season 2
-faction(2839),	-- Delves: Season 3

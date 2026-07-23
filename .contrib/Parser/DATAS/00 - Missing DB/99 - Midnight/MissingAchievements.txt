@@ -24,14 +24,6 @@ ach(62488),	-- Undead Battler of Cataclysm
 ach(62497),	-- Venomous Weapons of Conquest
 ach(62566),	-- Vicious Saddle (44)
 ach(62567),	-- Vicious Saddle (44)
-ach(62889),	-- Midnight Delves: Tier 4 (Season 2)
-ach(62890),	-- Midnight Delves: Tier 5 (Season 2)
-ach(62891),	-- Midnight Delves: Tier 6 (Season 2)
-ach(62892),	-- Midnight Delves: Tier 7 (Season 2)
-ach(62893),	-- Midnight Delves: Tier 8 (Season 2)
-ach(62894),	-- Midnight Delves: Tier 9 (Season 2)
-ach(62895),	-- Midnight Delves: Tier 10 (Season 2)
-ach(62897),	-- Midnight Delves: Tier 11 (Season 2)
 ach(62911),	-- Rival II: Midnight Season 2
 ach(62921),	-- Battle Mender: Midnight Season 2
 ach(62922),	-- Venomous Gladiator: Midnight Season 2
@@ -54,29 +46,17 @@ ach(62955),	-- Venomous Gladiator's Goredrake
 ach(63099),	-- Venomous Combatant
 ach(63103),	-- Venomous Combatant
 ach(63167),	-- Tour of Duty: The Coiled Isle
-ach(63170),	-- Gnarldor Isle Discoveries
-ach(63171),	-- The Ring of Glory Discoveries
 ach(63250),	-- Is Venom Stasis A Joke To You?
 ach(63253),	-- A Round on the House in Midnight
 ach(63254),	-- Glory of the Venomous Abyss Raider
-ach(63326),	-- My Venomous Nemesis
-ach(63332),	-- Purging the Poison
-ach(63333),	-- Let Me Solo Him: Azta'rec
-ach(63334),	-- Fabled Let Me Solo Him: Azta'rec
 ach(63391),	-- Jumping Through Hoops
 ach(63397),	-- Kept You Waiting Huh?
 ach(63400),	-- Tricks and Treats of Midnight
 ach(63415),	-- Prey: Coiled Nightmares
 ach(63416),	-- That's a Wrap
 ach(63418),	-- Well, Well, Little Sky
-ach(63433),	-- Midnight: Journey's End (Season 2)
 ach(63434),	-- Buddy System VII: Valeera
 ach(63435),	-- Buddy System VIII: Valeera
-ach(63436),	-- The Ring of Glory Stories
-ach(63437),	-- Gnarldor Isle Stories
-ach(63438),	-- Gnarldor Isle clears
-ach(63439),	-- The Ring of Glory clears
-ach(63440),	-- Tox'Atal clears
 ach(63451),	-- Scales for Days
 ach(63452),	-- Fangs for the Memories
 ach(63453),	-- One, Two, Ral'kala's Coming for You
