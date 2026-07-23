@@ -146,7 +146,7 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 	-- app.PrintDebug("TAXIMAP_OPENED",mapID)
 	if mapID < 0 then return end
 	if app.Contributor and not contains(FlightPathDB.FlightPathMapIDs, mapID) then
-		app.report("Missing FlightPath Map:",app.GetMapName(mapID) or UNKNOWN,mapID)
+		app.report("Missing FlightPath Map",app.GetMapName(mapID) or UNKNOWN,mapID)
 	end
 	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID)
 	if allNodeData then
