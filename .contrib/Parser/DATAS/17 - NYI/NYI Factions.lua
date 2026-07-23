@@ -767,5 +767,13 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
 			faction(2793),	-- Ritual Sites (Paragon)
 		})),
+
+		-- 12.1.0
+		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+			faction(2775),	-- [DEPRECATED] Ofi the Sly
+			faction(2776),	-- [DEPRECATED] Untrustworthy Ghost
+			faction(2839),	-- Delves: Season 3
+			faction(2771),	-- Zul'jarra's Forces (Paragon)
+		})),
 	}),
 }));

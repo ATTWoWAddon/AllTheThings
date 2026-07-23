@@ -138,10 +138,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(262389),	-- Veiled Blessing
 				-- Bonus roll
 				i(268969, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Delver's Trove
-			})),
+			})),--]]
 			n(FACTIONS, {
-				faction(2742),	-- Delves: Season 1
-			}),--]]
+				faction(2796),	-- Delves: Season 2
+			}),
 			n(QUESTS, {
 				q(97454, {	-- Seasonal Refresher: Midnight
 					["qg"] = 242381,	-- Valeera Sanguinar
