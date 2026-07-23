@@ -47,7 +47,6 @@ ach(63099),	-- Venomous Combatant
 ach(63103),	-- Venomous Combatant
 ach(63167),	-- Tour of Duty: The Coiled Isle
 ach(63170),	-- Gnarldor Isle Discoveries
-ach(63171),	-- The Ring of Glory Discoveries
 ach(63250),	-- Is Venom Stasis A Joke To You?
 ach(63253),	-- A Round on the House in Midnight
 ach(63254),	-- Glory of the Venomous Abyss Raider
@@ -59,7 +58,6 @@ ach(63416),	-- That's a Wrap
 ach(63418),	-- Well, Well, Little Sky
 ach(63434),	-- Buddy System VII: Valeera
 ach(63435),	-- Buddy System VIII: Valeera
-ach(63436),	-- The Ring of Glory Stories
 ach(63437),	-- Gnarldor Isle Stories
 ach(63438),	-- Gnarldor Isle clears
 ach(63439),	-- The Ring of Glory clears

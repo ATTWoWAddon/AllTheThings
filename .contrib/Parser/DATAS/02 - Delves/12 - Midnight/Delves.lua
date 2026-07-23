@@ -1222,7 +1222,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	m(THE_DARKWAY, {
 		["icon"] = 132299,
 		["coord"] = { 39.3, 31.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61895),	-- The Darkway Discoveries
@@ -1256,7 +1255,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	m(THE_GULF_OF_MEMORY, {
 		["icon"] = 7355375,
 		["coord"] = { 36.6, 49.1, MAP.MIDNIGHT.HARANDAR },
-		["maps"] = { 2575 },
+		["maps"] = { 2575 },	-- Lower Rootway
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61898),	-- The Gulf of Memory Discoveries
@@ -1297,7 +1296,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	m(THE_GRUDGE_PIT, {
 		["icon"] = 5789324,
 		["coord"] = { 71.0, 65.6, MAP.MIDNIGHT.HARANDAR },
-		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61897),	-- The Grudge Pit Discoveries
@@ -1337,6 +1335,17 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				i(255826, {	-- Mysterious Skyshards
 					["sourceQuest"] = 90474,	-- The Legend of Aln'sharan
 				}),
+			}),
+		},
+	}),
+	m(THE_RING_OF_GLORY, {
+		--["icon"] = 132291,
+		["coord"] = { 71.2, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(63171),	-- The Ring of Glory Discoveries
+				ach(63436),	-- The Ring of Glory Stories
 			}),
 		},
 	}),
