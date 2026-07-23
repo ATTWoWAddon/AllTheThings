@@ -6,8 +6,8 @@ createLocalizationString({
 	text = {
 		en = "Fills content which has alternate & notable availability under additional Sources.\nThis concept is generally utilized to help show content which may be Sourced under a general 'Rewards' (or similar) group in the Main list but can more-clearly be shown under specific Sources (multiple Vendors, etc.) when within the Mini list or Tooltips.\n\nNOTE: Tooltips where a Symlink is available will show this text:\n%s",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Rellena el contenido que tiene disponibilidad alternativa y destacada en Fuentes adicionales.\nEste concepto se utiliza generalmente para ayudar a mostrar contenido que puede estar ubicado en un grupo general de 'Recompensas' (o similar) en la lista principal, pero que se puede mostrar más claramente en Fuentes específicas (varios proveedores, etc.) cuando se encuentra en la Mini lista o en las ventanas emergentes.\n\nNOTA: Las ventanas emergentes donde hay un enlace simbólico disponible mostrarán este texto:\n%s",
+		mx = "Rellena el contenido que tiene disponibilidad alternativa y destacada en Fuentes adicionales.\nEste concepto se utiliza generalmente para ayudar a mostrar contenido que puede estar ubicado en un grupo general de 'Recompensas' (o similar) en la lista principal, pero que se puede mostrar más claramente en Fuentes específicas (varios proveedores, etc.) cuando se encuentra en la Mini lista o en las ventanas emergentes.\n\nNOTA: Las ventanas emergentes donde hay un enlace simbólico disponible mostrarán este texto:\n%s",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

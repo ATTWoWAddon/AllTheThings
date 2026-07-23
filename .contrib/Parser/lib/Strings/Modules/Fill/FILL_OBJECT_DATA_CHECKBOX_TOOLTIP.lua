@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Fills common data which is provided by a Sourced Object (e.g. Mining/Herbalism/Fishing nodes).",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Rellena los datos comunes que proporciona un objeto de entorno como origen (por ejemplo, nodos de minería, herboristería o pesca).",
+		mx = "Rellena los datos comunes que proporciona un objeto de entorno como origen (por ejemplo, nodos de minería, herboristería o pesca).",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
