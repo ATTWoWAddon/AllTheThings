@@ -218,57 +218,23 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(263178, {	-- Delver's Starter Kit (CI!)
 							--["cost"] = { { "c", UNDERCOIN, 0 } },
 						}),
-						i(263188, {	-- Restored Coffer Key
-							["cost"] = { { "c", UNDERCOIN, 2000 } },
-						}),
-						i(263191, {	-- Restored Coffer Key
-							["cost"] = { { "c", UNDERCOIN, 2000 } },
-						}),
 					},
 				}),
 				n(242399, {	-- Telemancer Astrandis
 					["coord"] = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["timeline"] = { ADDED_12_0_1_SEASONSTART },
 					["groups"] = {
-						n(DECOR, {
-							i(264175, {	-- Amani Strongbox (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-								--Renown 3
-							}),
-							i(264170, {	-- Ancient Kaldorei Coffer (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-								--Renown 4
-							}),
-							i(264007, {	-- Corewarden's Spoils (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-								--Renown 8
-							}),
-							i(263995, {	-- Delver's Bountiful Coffer (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-								--Renown 10
-							}),
-							i(263994, {	-- Fungal Chest (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-								--Renown 2
-							}),
-							i(264008, {	-- Root-Wrapped Reliquary (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-								--Renown 7
-							}),
-							i(263996, {	-- Twilight Tabernacle (DECOR!)
-								["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-								--Renown 1
-							}),
-						}),
 						filter(MISC, {
 							i(263179, {	-- Delver's Cosmetic Surprise Bag (CI!) [Contains any unlearned cosmetic from delves]
 								-- ["cost"] = { { "c", VOIDLIGHT_MARL, 0 } },
 								-- Renown 0?
 							}),
+							-- # if BEFORE 12.1.0
 							i(262951, {	-- Sin'dorei Gravestone (CI!)
 								["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 								-- Renown 6
 							}),
+							-- #endif
 						}),
 						filter(MOUNTS, {
 							i(262500, {	-- Silvermoon's Arcane Defender (MOUNT!)
@@ -276,6 +242,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 								-- Renown 5
 							}),
 						}),
+						-- #if BEFORE 12.1.0
 						filter(TOYS, {
 							i(265100, {	-- Corewarden's Hearthstone (TOY!)
 								["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
@@ -286,6 +253,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 								-- Renown 7
 							}),
 						}),
+						-- #endif
 					},
 				}),
 			}),

@@ -766,6 +766,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					i(264853, {	-- Gilded Twilight Spaulder (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
+					-- #if BEFORE 12.1.0
 					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
@@ -778,6 +779,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
+					-- #endif
 				}),
 				n(DECOR, {
 					i(250770, {	-- Silvermoon Privacy Screen (DECOR!)
@@ -791,12 +793,25 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					i(244193, {	-- L00T RAID-R Mini
 						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
+					-- #if BEFORE 12.1.0
 					i(262963, {	-- Pious Memorial (CI!)
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					-- #endif
+					i(263188, {	-- Restored Coffer Key
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					i(263191, {	-- Restored Coffer Key
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(233061, {	-- Rock-in-a-Bottle
 						["cost"] = { { "c", UNDERCOIN, 250 } },
 					}),
+					-- #if AFTER 12.1.0
+					i(262951, {	-- Sin'dorei Gravestone (CI!)
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					-- #endif
 					i(248755, {	-- Star-in-a-Jar
 						["cost"] = { { "c", UNDERCOIN, 250 } },
 					}),
@@ -810,19 +825,119 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					}),
 				}),
 				filter(TOYS, {
-					i(267291, {	-- Coffer Key Glue (TOY!)
-						["cost"] = { { "c", UNDERCOIN, 250 } },
-					}),
+					-- #if BEFORE 12.1.0
 					i(262431, {	-- Bouncy Mushroom (TOY!)
 						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
+					-- #endif
+					i(267291, {	-- Coffer Key Glue (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 250 } },
+					}),
+					-- #if AFTER 12.1.0
+					i(265100, {	-- Corewarden's Hearthstone (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 10000 } },
+					}),
+					i(264414, {	-- Midnight Delver's Flare Gun (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					-- #endif
 				}),
 			},
 		}),
 		n(242399, {	-- Telemancer Astrandis
 			["coord"] = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["groups"] = {
-				--Rewards locked behind Seasonal Delver's Journey progress.
+				n(DECOR, {
+					i(264175, {	-- Amani Strongbox (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(264170, {	-- Ancient Kaldorei Coffer (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(264007, {	-- Corewarden's Spoils (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(263995, {	-- Delver's Bountiful Coffer (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(263994, {	-- Fungal Chest (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(264008, {	-- Root-Wrapped Reliquary (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(263996, {	-- Twilight Tabernacle (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+				}),
+				-- #if AFTER 12.1.0
+				filter(COSMETIC, {
+					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 3250 } },
+					}),
+					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 3250 } },
+					}),
+					i(262973, {	-- Reliquary Expedition Notes (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 2600 } },
+					}),
+					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 2600 } },
+					}),
+				}),
+				filter(MISC, {
+					i(262963, {	-- Pious Memorial (CI!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 2000 } },
+					}),
+				}),
+				filter(TOYS, {
+					i(262431, {	-- Bouncy Mushroom (TOY!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 5000 } },
+					}),
+				}),
+				-- #endif
 			},
 		}),
 	}),

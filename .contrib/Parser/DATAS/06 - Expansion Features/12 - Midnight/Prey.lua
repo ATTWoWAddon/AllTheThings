@@ -360,7 +360,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
 				["groups"] = {
-					i(253342),	-- Beacon of Hope
+					i(253342, {	-- Beacon of Hope
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
 				},
 			}),
 			q(91277, {	-- Preferential Killing
