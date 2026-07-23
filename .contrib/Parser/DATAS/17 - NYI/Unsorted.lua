@@ -936,7 +936,6 @@ root(ROOTS.Unsorted, {
 			i(275917),	-- Preyhunter's Veteran Sack
 			i(275918),	-- Preyhunter's Adventurer Chest
 			i(275919),	-- Preyhunter's Adventurer Sack
-			i(275988),	-- Corrosive Victory
 			i(276033),	-- Loa Watcher's Pendant
 			i(276034),	-- Entangling Brood Ring
 			i(276035),	-- Soulcoiler's Signet

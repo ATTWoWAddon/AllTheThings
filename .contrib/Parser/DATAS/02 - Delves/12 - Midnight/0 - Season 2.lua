@@ -144,45 +144,32 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			})),
 			n(FACTIONS, {
 				faction(2742),	-- Delves: Season 1
-			}),
+			}),--]]
 			n(QUESTS, {
-				q(93519, {	-- Midnight Delves! (it pop on login but after cancel it	-- didn't re-pop)
-					["description"] = "Pops on login. Do not abandon!",
-					["isBreadcrumb"] = true,
-				}),
-				q(93501, {	-- The Season Starts: Midnight
-					["sourceQuests"] = { 93519 },	-- Midnight Delves!
-					["provider"] = { "n", 242381 },	-- Valeera Sanguinar
+				q(97454, {	-- Seasonal Refresher: Midnight
+					["qg"] = 242381,	-- Valeera Sanguinar
 					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
-				q(93511, {	-- A Missing Member
-					["sourceQuests"] = { 93501 },	-- The Season Starts: Midnight
-					["provider"] = { "n", 255103 },	-- Reno Jackson
-					["coord"] = { 52.4, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
-				}),
-				q(93525, {	-- Nulling Nullaeus
-					["sourceQuests"] = { 93511 },	-- A Missing Member
-					["provider"] = { "n", 242381 },	-- Valeera Sanguinar
+				q(97321, {	-- Slithering Spoils
+					["sourceQuest"] = 97454,	-- Seasonal Refresher: Midnight
+					["qg"] = 242381,	-- Valeera Sanguinar
 					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["maps"] = { TORMENTS_RISE },
 					["groups"] = {
-						i(264413),	-- Dominating Victory (TOY!)
+						i(277949),	-- Sizzling Venom (QI!)
+						o(661347, {	-- Slithersoul Spoils
+							i(277934),	-- Slithersoul Spoils (QI!)
+						}),
 					},
 				}),
-				q(93943, {	-- Ancient Curiosity: Combat
-					["provider"] = { "i", 254675 },	-- Ancient Curio (QI!/QS!)
-					["maps"] = ALL_REGULAR_DELVES_MID,
-				}),
-				q(93945, {	-- Ancient Curiosity: Utility
-					["provider"] = { "i", 254674 },	-- Ancient Curio (QI!/QS!)
-					["maps"] = ALL_REGULAR_DELVES_MID,
-				}),
-				q(92600, {	-- Cracked Keystone
-					["provider"] = { "i", 253245 },	-- Cracked Keystone (QI!/QS!)
-					["maps"] = ALL_REGULAR_DELVES_MID,
+				q(97482, {	-- Fangs for the Memories
+					["sourceQuest"] = 97321,	-- Slithering Spoils
+					["qg"] = 242381,	-- Valeera Sanguinar
+					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["maps"] = { VENOMFALL_DEEPS },
+					["groups"] = { i(275988) },	-- Corrosive Victory (TOY!)
 				}),
 			}),
-			n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
+			--[[n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
 				i(268650, {	-- Ascendant Voidshard
 					i(268552),	-- Ascendant Voidcore
 				}),
