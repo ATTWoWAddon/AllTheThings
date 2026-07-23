@@ -765,7 +765,7 @@ local SourceSpecificFields = {
 				check = phase.state or 0
 			else
 				-- otherwise it's an invalid unobtainable filter
-				app.report("Invalid Unobtainable Filter:",u)
+				app.report("Invalid Unobtainable Filter",u)
 				return
 			end
 			-- track the highest unobtainable value, which is the most obtainable (according to PHASES)

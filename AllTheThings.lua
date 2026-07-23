@@ -374,7 +374,7 @@ do
 		-- app.PrintDebug("abbrevs",count,rep)
 	until full == rep or count > 4
 	if count > 4 then
-		app.report("Recursive Abbreviations detected! Check locale: "..GetLocale())
+		app.report("Recursive Abbreviations detected!",GetLocale())
 	end
 end
 

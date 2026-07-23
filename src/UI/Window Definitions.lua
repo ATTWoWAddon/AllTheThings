@@ -2770,7 +2770,7 @@ function app:CreateWindow(suffix, definition)
 	end
 
 	if definition.Suffix and definition.Suffix ~= suffix then
-		app.report("WARN: Window re-using Definition from another Window:",suffix,"==>",definition.Suffix)
+		app.report("Window re-using Definition from another Window",suffix,"==>",definition.Suffix)
 	end
 	definition.Suffix = suffix
 	-- Dynamic Categories are neat, but currently only a Classic Feature (for now?)
