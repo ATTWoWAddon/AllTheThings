@@ -64,6 +64,16 @@ root(ROOTS.Zones, {
 					["description"] = "These repeatable chests spawn all over the map in Suramar.",
 					["maps"] = { SURAMAR },
 				}),
+				o(251052, {	-- Protected Treasure Chest
+					["description"] = "Does not show on minimap.\nMay require dying to resurrect on the other side of the magic barrier. However it may be possible to bounce or phase through the wall when approached from the very edge at different angles or speeds.",
+					["questID"] = 44179,
+					["coord"] = { 38.1, 42.5, 683 },
+				}),
+				o(258034, {	-- Protected Treasure Chest
+					["description"] = "Does not show on minimap.",
+					["questID"] = 43416,
+					["coord"] = { 77.0, 61.9, 683 },
+				}),
 				o(252447, {	-- Shimmering Ancient Mana Cluster
 					["questID"] = 43744,
 					["coord"] = { 46.6, 26.0, SURAMAR },
