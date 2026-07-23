@@ -4633,6 +4633,7 @@ i(268557, 5007);	-- Akiki
 i(271185, 5041);	-- Emberlyn
 i(252195, 4898);	-- Fishstick Keith
 i(275662, 5073);	-- Frosticus Maximus
+i(274150, 5064);	-- Murk'atath
 i(260885, 4949);	-- Shadowflame Remnant
 i(275663, 5074);	-- Silento
 i(262768, 4965);	-- Sleepy Mandrake
