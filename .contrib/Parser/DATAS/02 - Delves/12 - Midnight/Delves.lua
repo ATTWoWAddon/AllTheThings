@@ -171,7 +171,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(257380),	-- Player Experience (Uncommon)
 			i(257381),	-- Player Experience (Rare)
 			i(257379),	-- Player Experience (Epic)
-			i(265714),	-- Trovehunter's Bounty
+			i(265714, {	-- Trovehunter's Bounty
+				["providers"] = {{"o",618495}}, -- Nullaeus Cache (verified)
+			}),
 			-- Items and different things
 			i(262586, {	-- Primeval Arcane Remnant (QI!/QS!)
 				["providers"] = {
@@ -476,6 +478,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				i(251885, {	-- Radiant Foil
 					["providers"] = {
 						{"o",584508}, -- Nemesis Strongbox
+						{"o",584518}, -- Bountiful Heavy Trunk (verified)
 					},
 				}),
 				-- Basic
