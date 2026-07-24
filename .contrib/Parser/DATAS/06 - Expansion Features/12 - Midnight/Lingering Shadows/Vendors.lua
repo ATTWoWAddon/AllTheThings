@@ -217,6 +217,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								}),
 							},
 						}),
+						-- TODO: these all have new itemIDs. also add them to accountbound items DB
 						i(263929, {	-- Cache of Void-Touched Armaments (Heroic)
 							["cost"] = { { "c", FIELD_ACCOLADE, 500 } },
 							["skipFill"] = true,
@@ -301,6 +302,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["skipFill"] = true,	-- don't fill in minilist, but it's still nice to see the available content in tooltip
 							["groups"] = { currency(FIELD_ACCOLADE), },
 						}),
+						-- TODO: add all blow items to accountbound items DB
 						i(278006, {	-- Warbound Cache of Void-Touched Armaments: Belts (Champion)
 							["cost"] = { { "c", FIELD_ACCOLADE, 100 } },
 							["timeline"] = { ADDED_12_0_7 },
