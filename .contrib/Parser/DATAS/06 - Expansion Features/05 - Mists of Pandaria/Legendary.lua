@@ -405,11 +405,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			})),
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDown({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {
 				------ Chapter 5 ------
+				-- #if NOT ANYCLASSIC
 				q(33087, {	-- Meet Me Back at the Inn
 					["sourceQuests"] = { 32805 },	-- Celestial Blessings
 					["provider"] = { "n", 71426 },	-- Wrathion <The Black Prince>
 					["coord"] = { 73.2, 79.6, THE_VEILED_STAIR },
 				}),
+				-- #endif
 				q(33088, {	-- A Timeless Discovery
 					["sourceQuests"] = {
 						-- #if BEFORE 5.4.0
