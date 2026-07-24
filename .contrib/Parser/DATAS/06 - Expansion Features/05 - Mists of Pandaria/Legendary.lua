@@ -401,6 +401,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 71426 },	-- Wrathion <The Black Prince>
 					["coord"] = { 73.2, 79.6, THE_VEILED_STAIR },
 					["isBreadcrumb"] = true,
+					-- #if NOT ANYCLASSIC
+					["altQuests"] = { 33087 },	-- Meet Me Back at the Inn
+					-- #endif
 				}),
 			})),
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDown({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {
@@ -410,13 +413,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["sourceQuests"] = { 32805 },	-- Celestial Blessings
 					["provider"] = { "n", 71426 },	-- Wrathion <The Black Prince>
 					["coord"] = { 73.2, 79.6, THE_VEILED_STAIR },
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 32870 },	-- Preparing to Strike
 				}),
 				-- #endif
 				q(33088, {	-- A Timeless Discovery
 					["sourceQuests"] = {
-						-- #if BEFORE 5.4.0
 							32870,	-- Preparing to Strike
-						-- #else
+						-- #if NOT ANYCLASSIC
 							33087,	-- Meet Me Back at the Inn
 						-- #endif
 					},
