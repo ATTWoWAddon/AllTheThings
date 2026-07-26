@@ -1115,7 +1115,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50787, {	-- Arness the Scale
-						["coord"] = { 58.7, 43.8, KRASARANG_WILDS },	-- manually verified October 19, 2020
+						["coord"] = { 56.1, 47.0, KRASARANG_WILDS },	-- manually verified July 26, 2026
 						["groups"] = {
 							i(90723),	-- Arnness's Scaled Leggings
 						},
