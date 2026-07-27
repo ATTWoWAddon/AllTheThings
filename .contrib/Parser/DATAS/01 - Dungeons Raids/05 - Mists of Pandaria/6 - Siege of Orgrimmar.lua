@@ -123,8 +123,8 @@ FLEXIBLE_BEFORE_WOD = createHeader({
 	text = {
 		en = "Flexible (5.4)",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Flexible (5.4)",
+		mx = "Flexible (5.4)",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -135,13 +135,17 @@ FLEXIBLE_BEFORE_WOD = createHeader({
 	},
 	description = {
 		en = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+		es = "Esta versión de la instancia era el modo de dificultad Flexible original. El botín tenía ID de objeto únicos para cada nivel de dificultad, así como sus variantes Forjado por la guerra, de forma similar a como se hacía en SdT. Blizzard cambió su filosofía de diseño para mejor con el parche 6.0 y optó por reutilizar el identificador de un objeto y aplicar un identificador adicional en lugar de crear un identificador de objeto completamente nuevo con las mismas estadísticas base.",
+		mx = "Esta versión de la instancia era el modo de dificultad Flexible original. El botín tenía ID de objeto únicos para cada nivel de dificultad, así como sus variantes Forjas de la guerra, de forma similar a como se hacía en SdT. Blizzard cambió su filosofía de diseño para mejor con el parche 6.0 y optó por reutilizar el identificador de un objeto y aplicar un identificador adicional en lugar de crear un identificador de objeto completamente nuevo con las mismas estadísticas base.",
 	},
 });
 -- #endif
 
 local function FLEX_RAID_HEADER(t)
+	-- #if NOT ANYCLASSIC
 	-- #if AFTER 6.0.2
 	if true then return n(FLEXIBLE_BEFORE_WOD, t); end
+	-- #endif
 	-- #endif
 	return d(DIFFICULTY.LEGACY_RAID.FLEXIBLE, t);
 end
@@ -2048,6 +2052,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					ach(8537),	-- Strike!
 				})),
 			}),
+			-- #if NOT ANYCLASSIC
 			FLEX_RAID_HEADER({							-- Flexible (Removed with Patch 6.0.2) >> Items marked "Normal" after 6.0 <<
 				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 				["ignoreBonus"] = true,
@@ -2415,6 +2420,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					})),
 				},
 			}),
+			-- #endif
 			-- #if AFTER 6.0.2
 			-- CRIEVE NOTE: This is necessary because 'Flexible' difficulty was repurposed to 'Normal', they use the same difficultyID and merge data in MOP Classic otherwise.
 			d(DIFFICULTY.RAID.NORMAL, {					-- Normal (Added with Patch 6.0.2)
@@ -4428,6 +4434,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						ig(105867),	-- Essence of the Cursed Conqueror
 						ig(105866),	-- Essence of the Cursed Protector
 						ig(105868),	-- Essence of the Cursed Vanquisher
+						i(104253),	-- Kor'kron Juggernaut (MOUNT!)
 						-- #endif
 						i(104650),	-- Belt of the Broken Pact Mythic
 						i(104652),	-- Black Blood of Y'Shaarj Mythic
