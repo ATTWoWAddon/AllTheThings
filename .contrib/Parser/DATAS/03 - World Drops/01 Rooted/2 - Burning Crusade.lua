@@ -1578,6 +1578,50 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				["itemID"] = 22146,		-- Book: Gift of the Wild III
 				["spellID"] = 26991,	-- Gift of the Wild III
 				["rank"] = 3,
+				["maps"] = {
+						AUCHINDOUN_AUCHENAI_CRYPTS,
+						AUCHINDOUN_MANA_TOMBS,
+						AUCHINDOUN_SETHEKK_HALLS,
+						AUCHINDOUN_SHADOW_LABYRINTH,
+						CAVERNS_OF_TIME_BLACK_MORASS,
+						CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
+						COILFANG_RESERVOIR_SLAVE_PENS,
+						COILFANG_RESERVOIR_STEAMVAULT,
+						COILFANG_RESERVOIR_UNDERBOG,
+						GRUULS_LAIR,
+						HELLFIRE_CITADEL_BLOOD_FURNACE,
+						HELLFIRE_CITADEL_RAMPARTS,
+						HELLFIRE_CITADEL_SHATTERED_HALLS,
+						KARAZHAN,
+						MAGTHERIDONS_LAIR,
+						SERPENTSHRINE_CAVERN,
+						TEMPEST_KEEP_ARCATRAZ,
+						TEMPEST_KEEP_BOTANICA,
+						TEMPEST_KEEP_MECHANAR,
+						TEMPEST_KEEP_THE_EYE,
+						THE_BATTLE_FOR_MOUNT_HYJAL,
+						-- #if AFTER 2.1.0
+						THE_BLACK_TEMPLE,
+						-- #endif
+						-- #if AFTER 2.3.0
+						ZULAMAN,
+						-- #endif
+						-- #if AFTER 2.4.0
+						MAGISTERS_TERRACE,
+						SUNWELL_PLATEAU,
+						-- #endif
+						-- #if AFTER 3.0.2
+						AHNKAHET_THE_OLD_KINGDOM,
+						AZJOL_NERUB,
+						BOREAN_TUNDRA,
+						DRAKTHARON_KEEP,
+						DRAGONBLIGHT,
+						HOWLING_FJORD,
+						THE_NEXUS,
+						THE_OCULUS,
+						UTGARDE_KEEP,
+						-- #endif
+					},
 			},
 		}),
 		cl(MAGE, {
