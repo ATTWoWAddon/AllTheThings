@@ -541,6 +541,14 @@ local ArmorTypeMogs = {
 	[6] = true,	-- Mail
 	[7] = true,	-- Plate
 	[10] = true,	-- Shirts
+	[40] = true,	-- Head
+	[41] = true,	-- Shoulder
+	[42] = true,	-- Chest
+	[43] = true,	-- Wrist
+	[44] = true,	-- Hands
+	[45] = true,	-- Waist
+	[46] = true,	-- Legs
+	[47] = true,	-- Feet
 }
 local function MainOnlyCanTransmogAppearanceItem(knownItem)
 	return not knownItem.nmr and not knownItem.nmc and ArmorTypeMogs[knownItem.f] and CurrentCharacterFilterIDSet[knownItem.f]
@@ -880,7 +888,7 @@ do
 	end
 	local ITEM_FILTERS_WITH_APPEARANCES = {
 		[2]  = true,	-- Cosmetic
-		[3]  = true,	-- Cloaks
+		[3]  = true,	-- Back
 		[20] = true,	-- Daggers
 		[21] = true,	-- One-Handed Axes
 		[22] = true,	-- Two-Handed Axes
@@ -895,6 +903,14 @@ do
 		[32] = true,	-- Bows
 		[33] = true,	-- Crossbows
 		[34] = true,	-- Fist Weapons
+		[40] = true,	-- Head
+		[41] = true,	-- Shoulder
+		[42] = true,	-- Chest
+		[43] = true,	-- Wrist
+		[44] = true,	-- Hands
+		[45] = true,	-- Waist
+		[46] = true,	-- Legs
+		[47] = true,	-- Feet
 	};
 
 	local KEY, CACHE, SETTING = "sourceID", "Sources", "Transmog"

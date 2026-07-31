@@ -270,6 +270,72 @@ for filterID,filterData in pairs({
 		},
 	},
 
+	-- Armor slots (insofar as we didn't have these before)
+	[40] = {
+		readable = "Head",
+		icon = 133071,
+		constant = "HEAD",
+		text = {
+			en = [[~INVTYPE_HEAD]],
+		},
+	},
+	[41] = {
+		readable = "Shoulder",
+		icon = 135040,
+		constant = "SHOULDER",
+		text = {
+			en = [[~INVTYPE_SHOULDER]],
+		},
+	},
+	[42] = {
+		readable = "Chest",
+		icon = 132624,
+		constant = "CHEST",
+		text = {
+			en = [[~INVTYPE_CHEST]],
+		},
+	},
+	[43] = {
+		readable = "Wrist",
+		icon = 132606,
+		constant = "WRIST",
+		text = {
+			en = [[~INVTYPE_WRIST]],
+		},
+	},
+	[44] = {
+		readable = "Hands",
+		icon = 132958,
+		constant = "HANDS",
+		text = {
+			en = [[~INVTYPE_HAND]],
+		},
+	},
+	[45] = {
+		readable = "Waist",
+		icon = 132515,
+		constant = "WAIST",
+		text = {
+			en = [[~INVTYPE_WAIST]],
+		},
+	},
+	[46] = {
+		readable = "Legs",
+		icon = 134589,
+		constant = "LEGS",
+		text = {
+			en = [[~INVTYPE_LEGS]],
+		},
+	},
+	[47] = {
+		readable = "Feet",
+		icon = 132539,
+		constant = "FEET",
+		text = {
+			en = [[~INVTYPE_FEET]],
+		},
+	},
+
 	-- Accessories
 	[50] = {
 		readable = "Miscellaneous",
