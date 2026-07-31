@@ -2353,5 +2353,57 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(150, i(242388)),	-- Wailing Banshee's Wand
 			}),
 		})),
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 12.0.7.68887", "removed 12.0.7.99999" } }, {	-- TODO: Timeline out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				iensemble(271603),	-- Ensemble: Midnight Outlaw
+			}),
+			filter(MOUNTS, {
+				traderstender(550, i(274681)),	-- Badlands Buzzard (MOUNT!)
+				traderstender(700, i(243591)),	-- Grandmaster's Royal Board (MOUNT!)
+				traderstender(500, i(211087)),	-- Hateforged Blazecycle (MOUNT!)
+			}),
+			filter(COSMETIC, {
+				traderstender(200, i(274403)),	-- Badlands Lawbringer's Brand
+				traderstender(200, i(274717)),	-- Badlands Lawbringer's Hand Cannon
+				traderstender(200, i(274433)),	-- Badlands Lawbringer's Knife
+				traderstender(40, i(274050)),	-- Bandit's Midnight Highboot
+				traderstender(40, i(274066)),	-- Bandit's Snowy Highboot
+				traderstender(50, i(246015)),	-- Classic Midnight Eyepatch
+				traderstender(50, i(246016)),	-- Classic Snowy Eyepatch
+				traderstender(50, i(270279)),	-- Crown of Midnight Springflowers
+				traderstender(50, i(270296)),	-- Crown of Snowy Springflowers
+				traderstender(675, iensemble(271594)),	-- Ensemble: Badlands Lawbringer
+				traderstender(550, iensemble(243277)),	-- Ensemble: Grandmaster's Royal Attire
+				traderstender(100, iensemble(242455)),	-- Ensemble: Midnight Sweatsuit
+				traderstender(100, iensemble(230152)),	-- Ensemble: Prowler's Midnight Headgear
+				traderstender(675, iensemble(271450)),	-- Ensemble: Righteous Lawbringer
+				traderstender(200, iensemble(273769)),	-- Ensemble: Slinger's Munitions
+				traderstender(100, iensemble(242489)),	-- Ensemble: Snowy Sweatsuit
+				traderstender(100, iensemble(257970)),	-- Ensemble: Sorcerer's Midnight Garb
+				traderstender(100, iensemble(258020)),	-- Ensemble: Sorcerer's Snowy Garb
+				traderstender(150, i(242527)),	-- Grandmaster's Royal Axe
+				traderstender(100, i(242374)),	-- Grandmaster's Royal Bulwark
+				traderstender(175, i(242541)),	-- Grandmaster's Royal Mace
+				traderstender(175, i(242359)),	-- Grandmaster's Royal Stave
+				traderstender(50, i(274630)),	-- Gunslinger's Carrot Lid
+				traderstender(50, i(274619)),	-- Gunslinger's Midnight Lid
+				traderstender(50, i(274636)),	-- Gunslinger's Snowy Lid
+				traderstender(30, i(262837)),	-- Midnight Dunecloth Belt
+				traderstender(35, i(262819)),	-- Midnight Dunecloth Skirt
+				traderstender(35, i(262855)),	-- Midnight Dunecloth Vest
+				traderstender(50, i(252710)),	-- Midnight Winter Toque
+				traderstender(75, i(230033)),	-- Prowler's Midnight Shoulder Cape
+				traderstender(75, i(230051)),	-- Prowler's Snowy Shoulder Cape
+				traderstender(200, i(274404)),	-- Righteous Lawbringer's Brand
+				traderstender(200, i(274716)),	-- Righteous Lawbringer's Hand Cannon
+				traderstender(200, i(274434)),	-- Righteous Lawbringer's Knife
+				traderstender(30, i(262853)),	-- Snowy Dunecloth Belt
+				traderstender(35, i(262835)),	-- Snowy Dunecloth Skirt
+				traderstender(35, i(262871)),	-- Snowy Dunecloth Vest
+				traderstender(50, i(252751)),	-- Snowy Winter Toque
+				traderstender(50, i(235019)),	-- Vigilante's Midnight Mask
+				traderstender(50, i(235035)),	-- Vigilante's Snowy Mask
+			}),
+		})),
 	}),
 }));

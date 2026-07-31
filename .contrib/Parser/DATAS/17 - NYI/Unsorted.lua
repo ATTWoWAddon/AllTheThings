@@ -1239,15 +1239,6 @@ root(ROOTS.Unsorted, {
 				i(271087),	-- Azure Petalweave Gloves
 				i(271088),	-- Azure Petalweave Cloak
 				i(271089),	-- Ensemble: Azure Petalweave
-				i(271437),	-- Righteous Lawbringer's Headgear
-				i(271439),	-- Righteous Lawbringer's Tunic
-				i(271442),	-- Righteous Lawbringer's Buckle
-				i(271443),	-- Righteous Lawbringer's Trousers
-				i(271446),	-- Righteous Lawbringer's Boots
-				i(271447),	-- Righteous Lawbringer's Epaulets
-				i(271448),	-- Righteous Lawbringer's Cloak
-				i(271449),	-- Righteous Lawbringer's Gloves
-				i(271450),	-- Ensemble: Righteous Lawbringer
 				i(271568),	-- Bloodwatch Outlaw's Headgear
 				i(271569),	-- Bloodwatch Outlaw's Tunic
 				i(271570),	-- Bloodwatch Outlaw's Buckle
@@ -1266,24 +1257,6 @@ root(ROOTS.Unsorted, {
 				i(271583),	-- Duskwatch Outlaw's Cloak
 				i(271584),	-- Duskwatch Outlaw's Gloves
 				i(271585),	-- Ensemble: Duskwatch Outlaw
-				i(271586),	-- Badlands Lawbringer's Headgear
-				i(271587),	-- Badlands Lawbringer's Tunic
-				i(271588),	-- Badlands Lawbringer's Buckle
-				i(271589),	-- Badlands Lawbringer's Trousers
-				i(271590),	-- Badlands Lawbringer's Boots
-				i(271591),	-- Badlands Lawbringer's Epaulets
-				i(271592),	-- Badlands Lawbringer's Cloak
-				i(271593),	-- Badlands Lawbringer's Gloves
-				i(271594),	-- Ensemble: Badlands Lawbringer
-				i(271595),	-- Midnight Outlaw's Headgear
-				i(271596),	-- Midnight Outlaw's Tunic
-				i(271597),	-- Midnight Outlaw's Buckle
-				i(271598),	-- Midnight Outlaw's Trousers
-				i(271599),	-- Midnight Badland Brigands Boots
-				i(271600),	-- Midnight Outlaw's Epaulets
-				i(271601),	-- Midnight Outlaw's Cloak
-				i(271602),	-- Midnight Outlaw's Gloves
-				i(271603),	-- Ensemble: Midnight Outlaw
 				i(271682),	-- Midnight Outlaw's Hat
 				i(271683),	-- Midnight Outlaw's Bandana
 				i(271684),	-- Badlands Lawbringer's Hat
@@ -1296,9 +1269,6 @@ root(ROOTS.Unsorted, {
 				i(271691),	-- Duskwatch Outlaw's Bandana
 				i(273132),	-- Stylish Violet Top Hat
 				i(273133),	-- Stylish Crimson Top Hat
-				i(273151),	-- Slinger's Shot Pouch
-				i(273768),	-- Slinger's Fur-Lined Quiver
-				i(273769),	-- Ensemble: Slinger's Munitions
 				i(273858),	-- Badlands Lawbringer's Treads
 				i(273859),	-- Badlands Lawbringer's Britches
 				i(273860),	-- Badlands Lawbringer's Undercoat
@@ -1314,7 +1284,6 @@ root(ROOTS.Unsorted, {
 				i(273870),	-- Duskwatch Outlaw's Britches
 				i(273871),	-- Duskwatch Outlaw's Treads
 				i(273872),	-- Duskwatch Outlaw's Undercoat
-				i(274050),	-- Bandit's Midnight Highboot
 				i(274051),	-- Bandit's Azure Highboot
 				i(274052),	-- Bandit's Sepia Highboot
 				i(274053),	-- Bandit's Grassy Highboot
@@ -1329,7 +1298,6 @@ root(ROOTS.Unsorted, {
 				i(274063),	-- Bandit's Crimson Highboot
 				i(274064),	-- Bandit's Violet Highboot
 				i(274065),	-- Bandit's Aquatic Highboot
-				i(274066),	-- Bandit's Snowy Highboot
 				i(274067),	-- Bandit's Sunny Highboot
 				i(274073),	-- Lively Extravaganza Rocketstaff
 				i(274074),	-- Suntouched Extravaganza Rocketstaff
@@ -1337,16 +1305,11 @@ root(ROOTS.Unsorted, {
 				i(274081),	-- Suntouched Extravaganza Rocketmace
 				i(274086),	-- Lively Extravaganza Sparkwheel
 				i(274087),	-- Suntouched Extravaganza Sparkwheel
-				i(274403),	-- Badlands Lawbringer's Brand
-				i(274404),	-- Righteous Lawbringer's Brand
 				i(274405),	-- Duskwatch Outlaw's Brand
 				i(274406),	-- Bloodwatch Outlaw's Brand
-				i(274433),	-- Badlands Lawbringer's Knife
-				i(274434),	-- Righteous Lawbringer's Knife
 				i(274435),	-- Duskwatch Outlaw's Knife
 				i(274436),	-- Bloodwatch Outlaw's Knife
 				i(274542),	-- Bloodwatch Outlaw's Hand Cannon
-				i(274619),	-- Gunslinger's Midnight Lid
 				i(274621),	-- Gunslinger's Azure Lid
 				i(274622),	-- Gunslinger's Sepia Lid
 				i(274623),	-- Gunslinger's Grassy Lid
@@ -1355,17 +1318,13 @@ root(ROOTS.Unsorted, {
 				i(274627),	-- Gunslinger's Brick Lid
 				i(274628),	-- Gunslinger's Lively Lid
 				i(274629),	-- Gunslinger's Faded Lid
-				i(274630),	-- Gunslinger's Carrot Lid
 				i(274631),	-- Gunslinger's Rosy Lid
 				i(274632),	-- Gunslinger's Plum Lid
 				i(274633),	-- Gunslinger's Crimson Lid
 				i(274634),	-- Gunslinger's Violet Lid
 				i(274635),	-- Gunslinger's Aquatic Lid
-				i(274636),	-- Gunslinger's Snowy Lid
 				i(274637),	-- Gunslinger's Sunny Lid
 				i(274715),	-- Duskwatch Outlaw's Hand Cannon
-				i(274716),	-- Righteous Lawbringer's Hand Cannon
-				i(274717),	-- Badlands Lawbringer's Hand Cannon
 				i(275999),	-- Flowering Mantle
 				i(276291),	-- Forgotten Saber of the Ice Temple
 			}),
@@ -1439,11 +1398,9 @@ root(ROOTS.Unsorted, {
 					i(270285),	-- Crown of Deep Springflowers
 					i(270283),	-- Crown of Grassy Springflowers
 					i(270288),	-- Crown of Lively Springflowers
-					i(270279),	-- Crown of Midnight Springflowers
 					i(270292),	-- Crown of Plum Springflowers
 					i(270291),	-- Crown of Rosy Springflowers
 					i(270281),	-- Crown of Sepia Springflowers
-					i(270296),	-- Crown of Snowy Springflowers
 					i(270294),	-- Crown of Violet Springflowers
 				}),
 				n(SETS, {

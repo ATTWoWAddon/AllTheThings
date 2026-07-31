@@ -518,11 +518,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(230041),	-- Prowler's Lively Shoulder Cape
 
 				------ Prowler's Midnight Set ------
-				i(230152),	-- Ensemble: Prowler's Midnight Headgear
-				q(85118),	-- Ensemble: Prowler's Midnight Headgear
 				i(230054),	-- Prowler's Midnight Cowl
 				i(230074),	-- Prowler's Midnight Mask
-				i(230033),	-- Prowler's Midnight Shoulder Cape
 
 				------ Prowler's Plum Set ------
 				i(230178),	-- Ensemble: Prowler's Plum Headgear
@@ -1026,10 +1023,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(249717),	-- Golden Food Fanatic Backpack
 				i(252713),	-- Grassy Winter Toque
 				i(250291),	-- Hot and Fresh Portable Bakery
-				i(252710),	-- Midnight Winter Toque
 				i(252747),	-- Plum Winter Toque
 				i(250293),	-- Red Hot Portable Bakery
-				i(252751),	-- Snowy Winter Toque
 				i(251669),	-- Sturdy Wearable Pot Lid
 				i(251985),	-- Trapper's Black Quiver
 				i(251986),	-- Trapper's Blue Quiver
@@ -1175,20 +1170,10 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(257782),	-- Sorcerer's Grassy Cape
 				i(257762),	-- Sorcerer's Grassy Cowl
 
-				------ Sorcerer's Midnight Garb Set ------
-				i(257970),	-- Ensemble: Sorcerer's Midnight Garb
-				i(257779),	-- Sorcerer's Midnight Cape
-				i(257759),	-- Sorcerer's Midnight Cowl
-
 				------ Sorcerer's Plum Garb Set ------
 				i(258003),	-- Ensemble: Sorcerer's Plum Garb
 				i(257791),	-- Sorcerer's Plum Cape
 				i(257772),	-- Sorcerer's Plum Cowl
-
-				------ Sorcerer's Snowy Garb Set ------
-				i(258020),	-- Ensemble: Sorcerer's Snowy Garb
-				i(257795),	-- Sorcerer's Snowy Cape
-				i(257776),	-- Sorcerer's Snowy Cowl
 
 				------ Corrupted Regalia of the Crusader Set ------
 				i(258186),	-- Ensemble: Corrupted Regalia of the Crusader
@@ -1347,9 +1332,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(262840),	-- Grassy Dunecloth Belt
 				i(262822),	-- Grassy Dunecloth Skirt
 				i(262859),	-- Grassy Dunecloth Vest
-				i(262837),	-- Midnight Dunecloth Belt
-				i(262819),	-- Midnight Dunecloth Skirt
-				i(262855),	-- Midnight Dunecloth Vest
 				i(262849),	-- Plum Dunecloth Belt
 				i(262831),	-- Plum Dunecloth Skirt
 				i(262867),	-- Plum Dunecloth Vest
@@ -1358,9 +1340,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(262830),	-- Rosy Dunecloth Skirt
 				i(262865),	-- Rosy Dunecloth Vest
 				i(262588),	-- Sack Lunch
-				i(262853),	-- Snowy Dunecloth Belt
-				i(262835),	-- Snowy Dunecloth Skirt
-				i(262871),	-- Snowy Dunecloth Vest
 				i(258031),	-- Vaunted Preyseeker's Knapsack
 				i(258029),	-- Vaunted Preyseeker's Plumed Helm
 				i(258027),	-- Vaunted Preyseeker's Shoulder-Spikes

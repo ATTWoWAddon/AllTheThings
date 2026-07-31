@@ -2472,6 +2472,7 @@ i(268834, 1283838);	-- Zothwing Deepseeker
 ------------------
 -- PATCH 12.0.7 --
 ------------------
+i(274681, 1294767);	-- Badlands Buzzard
 i(273651, 1292344);	-- Bilgewater X-TREME Firework Rocket
 i(210140, 404018);	-- Black-Furred Bakar
 i(273317, 1292102);	-- Blackwater X-TREME Firework Rocket
@@ -2489,7 +2490,6 @@ i(274649, 1294648);	-- Voidmancer's Starcarver
 --- UNSORTED ---
 i(0, 1294677);	-- [PH] Horse with Hat
 i(0, 1261369);	-- Amani Hex Bear
-i(274681, 1294767);	-- Badlands Buzzard
 i(273650, 1292342);	-- Green Rocket Mount [PH]
 i(273652, 1292345);	-- Pink Rocket Mount [PH]
 i(276245, 1299156);	-- Shadow Spirehawk
@@ -2511,6 +2511,8 @@ i(275653, 1297216);	-- Sea-Dwelling Isle Serpent
 i(276804, 1300776);	-- The Writhing Brood
 i(277192, 1301775);	-- Umbral Ashes
 i(276801, 1300777);	-- Venomous Coiler
+i(275433, 1296670);	-- Vicious Lightbloom Boar [A]
+i(275432, 1296672);	-- Vicious Lightbloom Boar [H]
 i(276551, 1299963);	-- Violet-Backed Skyfang
 --- UNSORTED ---
 i(275551, 1296724);	-- Autumnal Witchwick's Rider
@@ -2534,7 +2536,5 @@ i(0, 1295958);	-- Swift Spectral Eagle
 i(276549, 1299961);	-- Topaz Skyfang
 i(275302, 1266211);	-- Venomous Gladiator's Goredrake
 i(280599, 1309376);	-- Veteran Adventurer's Loyal Companion
-i(275433, 1296670);	-- Vicious Lightbloom Boar [A]
-i(275432, 1296672);	-- Vicious Lightbloom Boar [H]
 i(277261, 1301817);	-- Whoofle Bramblewing
 i(280581, 1309340);	-- Wintry Witchwick's Rider
