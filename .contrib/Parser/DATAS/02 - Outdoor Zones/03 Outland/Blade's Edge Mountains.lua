@@ -1218,8 +1218,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
 					q(11009, {	-- Ogre Heaven
+						-- #if ANYCLASSIC
 						-- #if BEFORE WRATH
 						["description"] = "You can pick up this quest during phase 1, but cannot turn it in until they introduce the Ogri'la faction in a later phase.",
+						-- #endif
 						-- #endif
 						["sourceQuests"] = {
 							11000,	-- Into the Soulgrinder
