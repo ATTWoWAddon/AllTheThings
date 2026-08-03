@@ -199,7 +199,7 @@ namespace ATT
             AddHandlerAction(ParseStage.Validation, Handler.AlwaysHandle, Validate_Parallel);
 
             AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignFilterID);
-			AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignLocID);
+			AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignLocFilterID);
 
             AddHandlerAction(ParseStage.Incorporation, data => data.ContainsKey("speciesID"), Incorporate_Species);
             AddHandlerAction(ParseStage.Incorporation, data => HasSpell(data) && !data.ContainsKey("_unsorted"), Incorporate_Spell);

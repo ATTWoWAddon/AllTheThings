@@ -479,8 +479,11 @@ namespace ATT
                 return Filters.Invalid;
             }
 
+            /// <summary>
+            /// Calculate the Loc Filter ID for a set of item specifiers.
+            /// </summary>
             /// <param name="inventoryType">The inventory type. (IE: Shirt, Tabard, Main Hand)</param>
-            /// <returns>The Filter ID. (Default: 0 if invalid, -1 if ignored.)</returns>
+            /// <returns>The Loc Filter ID. (Default: 0 if invalid, -1 if ignored.)</returns>
             private static Filters CalculateLoc(long inventoryType)
             {
                 // https://wow.gamepedia.com/Enum.InventoryType
@@ -955,7 +958,7 @@ namespace ATT
             {
                 // Calculate the Loc Filter ID based on Inventory Type
                 long inventoryType = -1;
-                if (data.TryGetValue("inventoryType", out temp) || data.TryGetValue("_inventoryType", out temp))
+                if (data.TryGetValue("inventoryType", out long temp) || data.TryGetValue("_inventoryType", out temp))
                 {
                     inventoryType = temp;
                 }
