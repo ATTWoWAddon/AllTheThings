@@ -872,6 +872,14 @@ local insaneFilters = {	-- Filter IDs
 	20,	-- Daggers
 	29,	-- Polearms
 	28,	-- Staves
+	40,	-- Head
+	41,	-- Shoulder
+	42,	-- Chest
+	43,	-- Wrist
+	44,	-- Hands
+	45,	-- Waist
+	46,	-- Legs
+	47,	-- Feet
 }
 settings.GetModeString = function(self)
 	local mode = L.MODE;

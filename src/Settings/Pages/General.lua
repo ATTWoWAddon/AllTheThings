@@ -214,6 +214,14 @@ local insaneFilters = {
 	[20] = true,	-- Daggers
 	[29] = true,	-- Polearms
 	[28] = true,	-- Staves
+	[40] = true,	-- Head
+	[41] = true,	-- Shoulder
+	[42] = true,	-- Chest
+	[43] = true,	-- Wrist
+	[44] = true,	-- Hands
+	[45] = true,	-- Waist
+	[46] = true,	-- Legs
+	[47] = true,	-- Feet
 }
 
 local modeButton = CreateFrame("Button", nil, child, "UIDropDownMenuButtonScriptTemplate")
