@@ -968,7 +968,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			spell(305981, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Awakened Leviathan's Eye Loop
 				i(171082),	-- Design: Peerless Leviathan's Eye Loop (RECIPE!)
 			})),
-			spell(299018, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Crushing Leviathan's Eye Loop
+			spell(299017, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Crushing Leviathan's Eye Loop
 				i(168772),	-- Design: Ascended Leviathan's Eye Loop (RECIPE!)
 			})),
 			spell(289174, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Kraken's Eye Loop
