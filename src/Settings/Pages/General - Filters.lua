@@ -97,8 +97,8 @@ local unusedFilters = {
 	113, -- Bags
 	104, -- Quest Items
 }
--- for k, v in pairs(unusedFilters) do
--- 	settings:SetFilter(v, true)
+-- for _, id in pairs(unusedFilters) do
+-- 	settings:SetFilter(id, true)
 -- end
 
 for i,filterID in ipairs({
@@ -129,7 +129,7 @@ for i, filterID in ipairs({
 	10, 9, 2,           -- Shirt, Tabard, Cosmetic
 	57,                 -- Profession Equipment
 }) do
-	local filter = child:CreateCheckBox(" " .. (itemFilterNames[filterID]), ItemFilterOnRefresh, ItemFilterOnClick)
+	local filter = child:CreateCheckBox(" " .. itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 4 then
 		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 320, -6)
