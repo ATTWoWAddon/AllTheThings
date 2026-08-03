@@ -1022,18 +1022,21 @@ local InformationTypes = {
 	}),
 	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4,
 		Process = function(t, reference, tooltipInfo)
-			local f = reference.filterID or reference.f;
+			local f = reference.f
 			if f then
+				local filterName = ConversionMethods.filterID(f, reference)
 				local filterForRWP = reference.filterForRWP;
 				if filterForRWP then
 					tinsert(tooltipInfo, {
 						left = t.text,
-						right = ConversionMethods.filterID(f, reference) .. " -> " .. ConversionMethods.filterID(filterForRWP, reference),
+						right = filterName .. " -> " .. ConversionMethods.filterID(filterForRWP, reference),
 					});
 				else
+					local loc = reference.loc
+					local locName = ConversionMethods.filterID(loc, reference)
 					tinsert(tooltipInfo, {
 						left = t.text,
-						right = ConversionMethods.filterID(f, reference),
+						right = loc and filterName.." / "..locName or filterName,
 					});
 				end
 			end
