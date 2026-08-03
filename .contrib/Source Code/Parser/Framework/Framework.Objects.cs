@@ -142,6 +142,16 @@ namespace ATT
                 Tabard = 9,
                 Shirt = 10,
 
+                // Armor Slots
+                Head = 40,
+                Shoulder = 41,
+                Chest = 42,
+                Wrist = 43,
+                Hands = 44,
+                Waist = 45,
+                Legs = 46,
+                Feet = 47,
+
                 // Weapon Types
                 Dagger = 20,
                 OneHandedAxe = 21,
@@ -462,6 +472,31 @@ namespace ATT
                     case 19: return Filters.Ignored;
 
                     // Not something where these settings would help parse it.
+                    default: break;
+                }
+
+                // Everything else is unknown
+                return Filters.Invalid;
+            }
+
+            /// <param name="inventoryType">The inventory type. (IE: Shirt, Tabard, Main Hand)</param>
+            /// <returns>The Filter ID. (Default: 0 if invalid, -1 if ignored.)</returns>
+            private static Filters CalculateLoc(long inventoryType)
+            {
+                // https://wow.gamepedia.com/Enum.InventoryType
+                // Inventory Types
+                // Some inventory types make this very very easy to calculate.
+                switch (inventoryType)
+                {
+                    case 01: return Filters.Head;
+                    case 03: return Filters.Shoulder;
+                    case 05: return Filters.Chest;
+                    case 06: return Filters.Waist;
+                    case 07: return Filters.Legs;
+                    case 08: return Filters.Feet;
+                    case 09: return Filters.Wrist;
+                    case 10: return Filters.Hands;
+                    case 20: return Filters.Chest;
                     default: break;
                 }
 
@@ -910,6 +945,23 @@ namespace ATT
                 return CalculateFilter(itemClass, itemSubClass, inventoryType);
             }
 
+            /// <summary>
+            /// Calculate the Loc Filter ID for a data dictionary.
+            /// NOTE: This function does not assign the filter ID automatically.
+            /// </summary>
+            /// <param name="data">The data dictionary.</param>
+            /// <returns>The Loc ID. (Default: 0 if invalid, -1 if ignored.)</returns>
+            private static Filters CalculateLoc(IDictionary<string, object> data)
+            {
+                // Calculate the Loc Filter ID based on Inventory Type
+                long inventoryType = -1;
+                if (data.TryGetValue("inventoryType", out temp) || data.TryGetValue("_inventoryType", out temp))
+                {
+                    inventoryType = temp;
+                }
+                return CalculateLoc(inventoryType);
+            }
+
             internal static void AddRecipe(long requiredSkill, string recipeName, long recipeID)
             {
                 // only add recipes with a name and requiredSkill
@@ -1040,6 +1092,27 @@ namespace ATT
                 // Don't set invalid filter values
                 if (f > 0)
                     data["f"] = f;
+            }
+
+            /// <summary>
+            /// Assign the Loc Filter ID for this data dictionary if a valid ID hasn't already been assigned.
+            /// </summary>
+            /// <param name="data">The data dictionary.</param>
+            public static void AssignLocFilterID(IDictionary<string, object> data)
+            {
+                // If an object already has a filter ID assigned and the ID is valid, ignore it.
+                if (data.TryGetValue("loc", out long loc) && loc > 0) return;
+
+                // Calculate the filter ID. (0 is invalid, -1 is explicitly ignored)
+                loc = (long)CalculateLoc(data);
+
+                // This may happen a lot and is kind of expected... maybe re-designed in future
+                //if (DebugMode && f == 0)
+                //    Trace.WriteLine("Invalid filter for: " + ToJSON(data));
+
+                // Don't set invalid filter values
+                if (loc > 0)
+                    data["loc"] = loc;
             }
 
             /// <summary>

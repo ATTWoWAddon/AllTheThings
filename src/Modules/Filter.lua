@@ -231,9 +231,10 @@ end)
 DefineToggleFilter("FilterID", CharacterFilters,
 function(item)
 	local f = item.f;
+	local loc = item.loc or f
 	if f then
 		-- Filter applied via Settings (character-equippable or manually set)
-		if SettingsFilterIDs[f] then
+		if SettingsFilterIDs[f] and SettingsFilterIDs[loc] then
 			return true;
 		end
 		-- don't filter Types by their FilterID in some cases
