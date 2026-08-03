@@ -1338,7 +1338,9 @@ ATTSettingsPanelMixin = {
 		self:RegisterObject(cb);
 		if OnClick then cb:SetScript("OnClick", OnClick) end
 		cb.OnRefresh = OnRefresh or cb.OnRefreshCheckedDisabled
-		cb.Text:SetText(text)
+		if text ~= "" then
+			cb.Text:SetText(" "..text)
+		end
 		cb.Text:SetScale(1.3)
 		cb.Text:SetWordWrap(false)
 		cb:SetHitRectInsets(0,0 - cb.Text:GetUnboundedStringWidth(),0,0);

@@ -104,7 +104,7 @@ for i,filterID in ipairs({
 	32, 33, 31, 36, 27,     -- Bows, Crossbows, Guns, Wands, Thrown,
 	8, 1                    -- Shields, Off-hands
 }) do
-	local filter = child:CreateCheckBox(" " .. itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
+	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 21 then
 		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", -2, -6)
@@ -126,7 +126,7 @@ for i, filterID in ipairs({
 	10, 9, 2,           -- Shirt, Tabard, Cosmetic
 	57,                 -- Profession Equipment
 }) do
-	local filter = child:CreateCheckBox(" " .. itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
+	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 4 then
 		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 300, -6)
@@ -146,7 +146,7 @@ for i, filterID in ipairs({
 	11, 54,           -- Artifacts, Artifact Relics
 	50, 55, 113, 104, -- Miscellaneous, Consumable, Bags, Quest Items
 }) do
-	local filter = child:CreateCheckBox(" " .. itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
+	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 51 then
 		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 550, -6)
