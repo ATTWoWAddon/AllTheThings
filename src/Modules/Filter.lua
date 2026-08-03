@@ -231,11 +231,21 @@ end)
 DefineToggleFilter("FilterID", CharacterFilters,
 function(item)
 	local f = item.f;
-	local loc = item.loc or f
 	if f then
 		-- Filter applied via Settings (character-equippable or manually set)
-		if SettingsFilterIDs[f] and SettingsFilterIDs[loc] then
-			return true;
+		if SettingsFilterIDs[f] then
+			-- loc is another possible FilterID value based on Equip Location
+			-- loc cannot be applied without f
+			local loc = item.loc
+			if loc then
+				-- Things with matching f and loc
+				if SettingsFilterIDs[loc] then
+					return true
+				end
+			else
+				-- Things with only matching f
+				return true
+			end
 		end
 		-- don't filter Types by their FilterID in some cases
 		if FilterFilterID_IgnoredTypes[item.__type] then
