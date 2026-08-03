@@ -84,22 +84,19 @@ local allEquipmentFilters = {	-- Filter IDs
 	9,   -- Tabard
 	2,   -- Cosmetic
 	57,  -- Profession Equipment
-}
 
-local unusedFilters = {
-	11,  -- Artifacts
-	50,  -- Miscellaneous
 	51,  -- Neck
 	52,  -- Finger
 	53,  -- Trinket
+
+	11,  -- Artifacts
 	54,  -- Artifact Relics
+
+	50,  -- Miscellaneous
 	55,  -- Consumable
 	113, -- Bags
 	104, -- Quest Items
 }
--- for _, id in pairs(unusedFilters) do
--- 	settings:SetFilter(id, true)
--- end
 
 for i,filterID in ipairs({
 	21, 22, 23, 24, 25, 26, -- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords
@@ -132,9 +129,29 @@ for i, filterID in ipairs({
 	local filter = child:CreateCheckBox(" " .. itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 4 then
-		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 320, -6)
+		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 300, -6)
 	-- Spacing
 	elseif filterID == 40 or filterID == 3 or filterID == 10 or filterID == 57 then
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
+	else
+		filter:AlignBelow(last)
+	end
+	filter.filterID = filterID
+	filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
+	last = filter
+end
+
+for i, filterID in ipairs({
+	51, 52, 53,       -- Neck, Finger, Trinket
+	11, 54,           -- Artifacts, Artifact Relics
+	50, 55, 113, 104, -- Miscellaneous, Consumable, Bags, Quest Items
+}) do
+	local filter = child:CreateCheckBox(" " .. itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
+	-- Start
+	if filterID == 51 then
+		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 550, -6)
+	-- Spacing
+	elseif filterID == 11 or filterID == 50 then
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
 	else
 		filter:AlignBelow(last)
