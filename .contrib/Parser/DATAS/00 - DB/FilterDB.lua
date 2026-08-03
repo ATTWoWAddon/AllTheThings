@@ -274,7 +274,7 @@ for filterID,filterData in pairs({
 	[40] = {
 		readable = "Head",
 		icon = 133071,
-		constant = "HEAD",
+		constant = "HEAD_F",
 		text = {
 			en = [[~INVTYPE_HEAD]],
 		},
@@ -282,7 +282,7 @@ for filterID,filterData in pairs({
 	[41] = {
 		readable = "Shoulder",
 		icon = 135040,
-		constant = "SHOULDER",
+		constant = "SHOULDER_F",
 		text = {
 			en = [[~INVTYPE_SHOULDER]],
 		},
@@ -290,7 +290,7 @@ for filterID,filterData in pairs({
 	[42] = {
 		readable = "Chest",
 		icon = 132624,
-		constant = "CHEST",
+		constant = "CHEST_F",
 		text = {
 			en = [[~INVTYPE_CHEST]],
 		},
@@ -298,7 +298,7 @@ for filterID,filterData in pairs({
 	[43] = {
 		readable = "Wrist",
 		icon = 132606,
-		constant = "WRIST",
+		constant = "WRIST_F",
 		text = {
 			en = [[~INVTYPE_WRIST]],
 		},
@@ -306,7 +306,7 @@ for filterID,filterData in pairs({
 	[44] = {
 		readable = "Hands",
 		icon = 132958,
-		constant = "HANDS",
+		constant = "HANDS_F",
 		text = {
 			en = [[~INVTYPE_HAND]],
 		},
@@ -314,7 +314,7 @@ for filterID,filterData in pairs({
 	[45] = {
 		readable = "Waist",
 		icon = 132515,
-		constant = "WAIST",
+		constant = "WAIST_F",
 		text = {
 			en = [[~INVTYPE_WAIST]],
 		},
@@ -322,7 +322,7 @@ for filterID,filterData in pairs({
 	[46] = {
 		readable = "Legs",
 		icon = 134589,
-		constant = "LEGS",
+		constant = "LEGS_F",
 		text = {
 			en = [[~INVTYPE_LEGS]],
 		},
@@ -330,7 +330,7 @@ for filterID,filterData in pairs({
 	[47] = {
 		readable = "Feet",
 		icon = 132539,
-		constant = "FEET",
+		constant = "FEET_F",
 		text = {
 			en = [[~INVTYPE_FEET]],
 		},
