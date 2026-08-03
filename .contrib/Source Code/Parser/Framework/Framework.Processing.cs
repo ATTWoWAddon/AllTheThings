@@ -1751,6 +1751,11 @@ namespace ATT
             {
                 FILTERS_WITH_REFERENCES[f] = true;
             }
+
+            if (data.TryGetValue("loc", out long loc) && loc >= 0)
+            {
+                FILTERS_WITH_REFERENCES[loc] = true;
+            }
         }
 
         private static void Validate_IProcessedFields(IDictionary<string, object> data)
