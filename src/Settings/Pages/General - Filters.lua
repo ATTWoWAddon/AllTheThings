@@ -74,12 +74,12 @@ local allEquipmentFilters = {	-- Filter IDs
 	42,  -- Chest
 	44,  -- Hands
 	46,  -- Legs
-	
+
 	3,   -- Back
 	43,  -- Wrist
 	45,  -- Waist
 	47,  -- Feet
-	
+
 	10,  -- Shirt
 	9,   -- Tabard
 	2,   -- Cosmetic
@@ -129,7 +129,7 @@ for i, filterID in ipairs({
 	10, 9, 2,           -- Shirt, Tabard, Cosmetic
 	57,                 -- Profession Equipment
 }) do
-	local filter = child:CreateCheckBox(" " .. itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
+	local filter = child:CreateCheckBox(" " .. (itemFilterNames[filterID]), ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 4 then
 		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 320, -6)
